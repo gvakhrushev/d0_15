@@ -126,6 +126,21 @@ A = connection_hessian(z)
 check("OWNER_SHAPE_24x24", A.shape == (24, 24))
 check("OWNER_NONZERO_COUNT_96", sum(value != 0 for value in A) == 96)
 
+# The separate Hodge review checker consumes this sparse Laurent table.  Bind
+# that input back to the owner reconstruction here, entry by entry, so its
+# hashes cannot silently certify a stale or altered symbol.
+review_source = Path(__file__).with_name("A_and_mixed_symbol_entries.json")
+review_data = json.loads(review_source.read_text())
+review_coordinates = sp.symbols("z0:4")
+review_A = sp.zeros(24)
+for row, col, expression in review_data["A_entries"]:
+    review_A[row, col] = sp.sympify(
+        expression, locals=dict(zip(review_data["coordinates"], review_coordinates))
+    )
+check("HODGE_REVIEW_TABLE_MATCHES_OWNER_SYMBOL",
+      all(sp.cancel(review_A[r, c] - A[r, c]) == 0
+          for r in range(24) for c in range(24)))
+
 
 def coordinate_change(sigma: tuple[int, int, int, int]) -> sp.Matrix:
     """Lift a coordinate permutation to the owned 24 link-generator basis."""

@@ -31,7 +31,7 @@ The sparse coefficient ledger is [`certificates/a4d_resonance_divisor_chiral_num
 
 The same certificate proves `P_+` irreducible over `Q(i)`. Use the determinant-one coordinate change `z_0=u`, `z_1=u+y_1`, `z_2=u+y_2`, `z_3=u+y_3`; in these variables the coefficient of `u^18` is the nonzero scalar `-1024`. Specializing `(y_1,y_2,y_3)=(1,4,8)` and reducing modulo the prime ideal `(13,i-5)` gives the degree-18 polynomial whose descending coefficients are stored in the results JSON. The common coefficient denominator is coprime to 13, and the reduced leading coefficient is `3`, so this reduction is well-defined and preserves degree. The exact Rabin irreducibility test over `F_13` succeeds. A factorization over `Q(i)` would, by Gauss's lemma and the constant leading coefficient in `u`, reduce to a nontrivial factorization of this polynomial; its irreducibility rules that out. Two coefficients (`512` and `-512 i`) have different conjugation ratios, so `P_+` and `\overline{P_+}` are nonassociate. Their product is therefore irreducible over `Q` by the quadratic Galois action. Thus, up to a Laurent unit, the rational determinant has one irreducible factor `P_+\overline{P_+}`; over `Q(i)` it splits into those two distinct conjugate factors, each with multiplicity one.
 
-At a generic point of either geometric divisor component, the corresponding 12-by-12 block has determinant valuation one, so its rank is 11 over the component function field (Smith form over the local DVR). The conjugate block is invertible there because its determinant factor is distinct. Hence the full 24-by-24 matrix has generic rank 23 on each codimension-one component. This is a generic component result, not a classification of higher-codimension intersections.
+Over `Q(i)`, the two distinct irreducible arithmetic divisor factors are `P_+` and `\overline{P_+}`. At the generic point of either arithmetic prime divisor, the corresponding 12-by-12 block has determinant valuation one, so its rank is 11 over that divisor's function field (Smith form over the local DVR); the other block is invertible there. Hence the full 24-by-24 matrix has generic rank 23 on each arithmetic codimension-one component. Irreducibility over `Q(i)` does **not** establish absolute irreducibility over `C`, so the number of geometric components after extending constants remains unproved. This is a generic component result, not a classification of higher-codimension intersections.
 
 The exact #314 control point `(-1,-1,i,i)` lies on both conjugate components: the certificate evaluates both factors to zero there, and both 12-by-12 chiral blocks have rank 11, giving full rank 22. This is one certified intersection point, not the intersection ideal or its full rank stratification.
 
@@ -90,18 +90,31 @@ not identify the irreducible factors or their multiplicities.
 
 The repeated powers in these restrictions are suggestive but do **not** establish that the global four-variable determinant is a square, nor do the slice roots identify all irreducible components. The norm representation above is consistent with the exact nonsquare witness; block ranks and determinant multiplicities alone do not classify the matrix kernel on intersections.
 
+## Hodge reduction: exact scope correction
+
+The additional exact replay is in [`certificates/a4d_hodge_structural_review_check.py`](certificates/a4d_hodge_structural_review_check.py), with its sparse input [`certificates/A_and_mixed_symbol_entries.json`](certificates/A_and_mixed_symbol_entries.json) and output [`certificates/a4d_hodge_structural_review_results.json`](certificates/a4d_hodge_structural_review_results.json). The existing owner slice checker now compares all 96 Laurent entries of that input against its independent reconstruction before the Hodge replay is run.
+
+For the constant block-diagonal Hodge map `Ω=diag(STAR,STAR,STAR,STAR)`, the replay verifies `Ω²=-I`, `Ωᵀ=-Ω`, and `AΩ+ΩA=0` as Laurent matrix identities. An explicit eigenbasis `T` (`det T=4096`) gives the similarity form `T⁻¹AT=[[0,M],[σ(M),0]]` and the congruence form `TᵀAT=diag(2σ(M),2M)`. These are different transformations, so their block layouts and determinant normalizations must not be conflated. For arbitrary complex characters the valid rank identity is `rank A=rank M+rank σ(M)`; global rank doubling is false.
+
+The exact one-variable slice `Z=(u,1,-1,2)` gives `det M=f(u)/(128u³)` for the sextic recorded in the JSON result. Exact gcd checks show `f` is squarefree, coprime to its coefficient conjugate, and nonzero at zero. At any root `α` of `f`, the simple determinant zero forces `rank M(α)=11`, while coprimality forces `rank σ(M)(α)=12`; thus `rank A(α,1,-1,2)=23`. This is an algebraic complex-torus counterexample to the proposed universal even-rank/Hodge-doubling statement, not a physical character point.
+
+On the physical torus `|z_r|=1`, coefficient conjugation together with exact reciprocal transpose identities `A(Z⁻¹)=A(Z)ᵀ` and `M(Z⁻¹)=M(Z)ᵀ` gives `σ(M)(Z)=M(Z)†`. Only there does the replay conclude `rank A=2 rank M` and `det A=|det M|²≥0`. Consequently physical resonances lie on both conjugate determinant zero sets at once. This narrows the physical rank problem to their intersection; it does not classify that intersection, prove absolute irreducibility, or address a response/stationary-metric theorem.
+
+The sparse cleared entries `2(z₀z₁z₂z₃)M` have coefficients in `Z[i]`, not uniformly in `Z`. At the diagonal quarter-wave point the replay also records `rank M=8` and first-derivative kernel-to-cokernel rank 2; with the existing order-six determinant result, this is consistent with Smith exponents `(1,1,2,2)` for each chiral block, whose multiset union is the known exponent list for `A`.
+
 ## Exact computation boundary
 
-The global Laurent factorization over `Q` and generic rank on both geometric codimension-one components are now certified. The remaining open step is the exact higher-codimension rank-drop locus: certify the ideals/strata where one chiral block drops below generic rank 11 or where both conjugate components meet, and determine the resulting full-matrix ranks. The certificate uses sparse fraction-free Bareiss elimination for one 12-by-12 block and an exact finite-field irreducibility test; it does not rely on a heuristic symbolic `factor` result.
+The global Laurent factorization over `Q` and generic rank on both arithmetic codimension-one components over `Q(i)` are now certified. The remaining open steps are the absolute geometric factor boundary and exact higher-codimension rank-drop locus: certify whether either arithmetic factor splits over `C`, then certify the ideals/strata where a chiral block drops below generic rank 11 or where the conjugate zero sets meet, and determine the resulting full-matrix ranks. The certificate uses sparse fraction-free Bareiss elimination for one 12-by-12 block and an exact finite-field irreducibility test; it does not rely on a heuristic symbolic `factor` result.
 
-The task remains open only for exact higher-codimension rank-drop ideals/strata and their ranks. The global rational Laurent factorization and generic codimension-one ranks are exact algebraic results; no finite character scan substitutes for the remaining ideal-theoretic classification.
+The task remains open for absolute geometric factorization and exact higher-codimension rank-drop ideals/strata and their ranks. The global rational Laurent factorization and generic arithmetic codimension-one ranks are exact algebraic results; no finite character scan substitutes for the remaining ideal-theoretic classification.
 
 ## Scope firewall
 
-This is the holomorphic square symbol `A(z)`. Its results do not automatically transfer to the physical conjugated slot `[A(z)|C(bar z)]`. The memo makes no response, residue, stationary-sheet, continuum, or physical-carrier claim. The rejected phase-count law is recorded only as refuted by #314; no replacement count rule is proposed.
+This is the holomorphic square symbol `A(z)`. The Hodge positivity/even-rank consequence is explicitly restricted to the physical unit torus and does not automatically transfer to the physical conjugated slot `[A(z)|C(bar z)]`. The memo makes no response, residue, stationary-sheet, continuum, or physical-carrier claim. The rejected phase-count law is recorded only as refuted by #314; no replacement count rule is proposed.
 
 ## Reproduction
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_resonance_divisor_slice_check.py
+python3 02_REGISTRY/research/certificates/a4d_hodge_structural_review_check.py
 ```
