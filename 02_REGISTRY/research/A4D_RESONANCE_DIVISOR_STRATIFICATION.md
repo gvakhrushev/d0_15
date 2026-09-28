@@ -114,6 +114,8 @@ This is the holomorphic square symbol `A(z)`. The Hodge positivity/even-rank con
 
 ## Reproduction
 
+The broader theoretical continuation is specified in [`A4D_THEORY_CLOSURE_HANDOFF.md`](A4D_THEORY_CLOSURE_HANDOFF.md). It connects the open resonance geometry to exact stationary existence, response uniformity, and the designated nonlinear Einstein limit; it does not change this task's algebraic terminal or certify those downstream steps.
+
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_resonance_divisor_slice_check.py
 python3 02_REGISTRY/research/certificates/a4d_hodge_structural_review_check.py
