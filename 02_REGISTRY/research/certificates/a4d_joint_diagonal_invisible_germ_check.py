@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# D0_CI_TIMEOUT_SECONDS=900
+# D0_CI_TIMEOUT_SECONDS=1800
 """Diagonal quarter-wave source-invisible joint germ.
 
 Consumes the orbit-4 N_0 basis certified by
@@ -924,10 +924,10 @@ def _assert_degree7(name, control, resonant, orthogonal_cols, ortho_sign):
         0, 0, sp.Rational(8, 3), 0, sp.Rational(8, 3), 0,
     ]
     ortho7 = [
-        sp.Rational(-4, 3), sp.Rational(44, 15), sp.Rational(44, 15), 4, 4, 0,
-        sp.Rational(4, 3), sp.Rational(-4, 3), sp.Rational(-4, 3), sp.Rational(-12, 5), sp.Rational(-12, 5), 0,
-        0, sp.Rational(-74, 15), sp.Rational(14, 3), sp.Rational(-74, 15), sp.Rational(14, 3), 0,
-        0, sp.Rational(14, 3), sp.Rational(-74, 15), sp.Rational(14, 3), sp.Rational(-74, 15), 0,
+        sp.Rational(-4, 3), sp.Rational(136, 45), sp.Rational(136, 45), 4, 4, 0,
+        sp.Rational(4, 3), sp.Rational(-4, 3), sp.Rational(-4, 3), sp.Rational(-104, 45), sp.Rational(-104, 45), 0,
+        0, sp.Rational(-226, 45), sp.Rational(14, 3), sp.Rational(-226, 45), sp.Rational(14, 3), 0,
+        0, sp.Rational(14, 3), sp.Rational(-226, 45), sp.Rational(14, 3), sp.Rational(-226, 45), 0,
     ]
     for direction in range(24):
         if any(control[direction][deg] != 0 for deg in range(8)):
@@ -1152,35 +1152,17 @@ check("ZERO_HESSIAN_RANK_24", _ZERO_H.rank() == 24)
 
 
 def _real_forcing(dress, target):
-    tt, ss = sp.symbols("tt ss")
-    base = [sp.zeros(4), sp.zeros(4), Ms[2], Ms[3]]
-    forcing = sp.zeros(24, 1)
-    for direction in range(24):
-        role, gen = divmod(direction, 6)
-        series = {}
-        for k in range(4):
-            eta = (1 if k % 2 == 0 else -1) if target == "minus" else 1
-            for role_r in range(4):
-                extra = eta * ss * GEN[gen] if role_r == role else sp.zeros(4)
-                series[(role_r, k)] = _exp_series(dress[k] * tt * base[role_r] + extra, 3)
-        total = 0
-        for k in range(4):
-            ks = (k + 1) % 4
-            for p, q in PAIRS:
-                hol = series[(p, k)]
-                hol = _mul_series(hol, series[(q, ks)], 3)
-                hol = _mul_series(hol, _inv_series(series[(p, ks)], 3), 3)
-                hol = _mul_series(hol, _inv_series(series[(q, k)], 3), 3)
-                hinv = _inv_series(hol, 3)
-                uu, vv = [i for i in range(4) if i not in (p, q)]
-                area = wedge_vec(basis_cols[uu], basis_cols[vv])
-                sgn = complement_orientation((p, q))
-                for deg in range(4):
-                    odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
-                    total += 64 * sgn * (area.T * G2 * STAR * bivector_of_tangent(odd))[0]
-        poly = sp.Poly(sp.expand(total), tt, ss)
-        forcing[direction] = sp.expand(poly.coeff_monomial(tt**2 * ss))
-    return forcing
+    # The probe has t-degree 0, so the coefficient t^m*s needs total jet
+    # order m+1.  The exact dual jet keeps that extra order automatically.
+    blank = sp.zeros(24, 1)
+    probe_weight = [1, -1, 1, -1] if target == "minus" else [1, 1, 1, 1]
+    columns = _degree7_channel(
+        dress, blank, blank, blank, blank, probe_weight, None, max_degree=2,
+    )
+    return sp.Matrix([
+        sp.Rational(columns[direction][2].numerator, columns[direction][2].denominator)
+        for direction in range(24)
+    ])
 
 
 def _real_corrected(dress, r_minus, r_zero):
@@ -1249,57 +1231,16 @@ def _real_corrected(dress, r_minus, r_zero):
 
 def _degree6_euler(dress, r_minus, r_zero, target):
     """Degree-6 connection Euler of the corrected real ray, one even channel."""
-    tt, ss = sp.symbols("tt ss")
-    base = [sp.zeros(4), sp.zeros(4), Ms[2], Ms[3]]
-
-    def pack(vec):
-        out = []
-        for role in range(4):
-            matrix = sp.zeros(4)
-            for j in range(6):
-                matrix += vec[6 * role + j] * GEN[j]
-            out.append(matrix)
-        return out
-
-    rm, rz = pack(r_minus), pack(r_zero)
-    forcing = sp.zeros(24, 1)
-    for direction in range(24):
-        role, gen = divmod(direction, 6)
-        series = {}
-        for k in range(4):
-            eta = 1 if k % 2 == 0 else -1
-            channel = eta if target == "minus" else 1
-            for role_r in range(4):
-                extra = channel * ss * GEN[gen] if role_r == role else sp.zeros(4)
-                log = (
-                    dress[k] * tt * base[role_r]
-                    + eta * (tt**2) * rm[role_r]
-                    + (tt**2) * rz[role_r]
-                    + extra
-                )
-                series[(role_r, k)] = _exp_series(log, 6)
-        total = 0
-        for k in range(4):
-            ks = (k + 1) % 4
-            for p, q in PAIRS:
-                hol = series[(p, k)]
-                hol = _mul_series(hol, series[(q, ks)], 6)
-                hol = _mul_series(hol, _inv_series(series[(p, ks)], 6), 6)
-                hol = _mul_series(hol, _inv_series(series[(q, k)], 6), 6)
-                hinv = _inv_series(hol, 6)
-                uu, vv = [i for i in range(4) if i not in (p, q)]
-                area = wedge_vec(basis_cols[uu], basis_cols[vv])
-                sgn = complement_orientation((p, q))
-                for deg in range(7):
-                    odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
-                    total += 64 * sgn * (
-                        area.T * G2 * STAR * bivector_of_tangent(odd)
-                    )[0]
-        poly = sp.Poly(sp.expand(total), tt, ss)
-        forcing[direction] = sp.expand(poly.coeff_monomial(tt**6 * ss))
-        if direction % 6 == 0:
-            print("DEGREE6_PROGRESS", target, direction, flush=True)
-    return forcing
+    # As above, t^6*s is total order seven; do not truncate at order six.
+    blank = sp.zeros(24, 1)
+    probe_weight = [1, -1, 1, -1] if target == "minus" else [1, 1, 1, 1]
+    columns = _degree7_channel(
+        dress, r_minus, r_zero, blank, blank, probe_weight, None, max_degree=6,
+    )
+    return sp.Matrix([
+        sp.Rational(columns[direction][6].numerator, columns[direction][6].denominator)
+        for direction in range(24)
+    ])
 
 
 def _degree6_metric(dress, r_minus, r_zero, c_minus, c_zero):
@@ -1360,48 +1301,12 @@ def _degree6_metric(dress, r_minus, r_zero, c_minus, c_zero):
 
 
 def _real_euler_clear(dress, r_minus, r_zero):
-    tt, ss = sp.symbols("tt ss")
-    base = [sp.zeros(4), sp.zeros(4), Ms[2], Ms[3]]
-
-    def pack(vec):
-        out = []
-        for role in range(4):
-            matrix = sp.zeros(4)
-            for j in range(6):
-                matrix += vec[6 * role + j] * GEN[j]
-            out.append(matrix)
-        return out
-
-    rm, rz = pack(r_minus), pack(r_zero)
-    for direction in range(24):
-        role, gen = divmod(direction, 6)
-        series = {}
-        for k in range(4):
-            eta = 1 if k % 2 == 0 else -1
-            for role_r in range(4):
-                extra = ss * dress[k] * GEN[gen] if role_r == role else sp.zeros(4)
-                log = dress[k] * tt * base[role_r] + eta * (tt**2) * rm[role_r] + (tt**2) * rz[role_r] + extra
-                series[(role_r, k)] = _exp_series(log, 5)
-        total = 0
-        for k in range(4):
-            ks = (k + 1) % 4
-            for p, q in PAIRS:
-                hol = series[(p, k)]
-                hol = _mul_series(hol, series[(q, ks)], 5)
-                hol = _mul_series(hol, _inv_series(series[(p, ks)], 5), 5)
-                hol = _mul_series(hol, _inv_series(series[(q, k)], 5), 5)
-                hinv = _inv_series(hol, 5)
-                uu, vv = [i for i in range(4) if i not in (p, q)]
-                area = wedge_vec(basis_cols[uu], basis_cols[vv])
-                sgn = complement_orientation((p, q))
-                for deg in range(6):
-                    odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
-                    total += 64 * sgn * (area.T * G2 * STAR * bivector_of_tangent(odd))[0]
-        poly = sp.Poly(sp.expand(total), tt, ss)
-        for m in (2, 3, 4, 5):
-            if sp.expand(poly.coeff_monomial(tt**m * ss)) != 0:
-                return False
-    return True
+    # The t^5*s coefficient likewise needs total order six.
+    blank = sp.zeros(24, 1)
+    columns = _degree7_channel(
+        dress, r_minus, r_zero, blank, blank, dress, None, max_degree=5,
+    )
+    return all(columns[direction][degree] == 0 for direction in range(24) for degree in (2, 3, 4, 5))
 
 
 _quarter = sp.Rational(1, 4)
@@ -1452,10 +1357,12 @@ for _name, _dress, _sign in (
     _cos_force = [
         0, sp.Rational(-20, 3), sp.Rational(-20, 3), -4, -4, 0,
         0, sp.Rational(4, 3), sp.Rational(4, 3), sp.Rational(-4, 3), sp.Rational(-4, 3), 0,
-    ] + [0] * 12
+        0, sp.Rational(8, 45), 0, sp.Rational(8, 45), 0, 0,
+        0, 0, sp.Rational(8, 45), 0, sp.Rational(8, 45), 0,
+    ]
     _cos_corr = [
-        0, sp.Rational(-1, 96), sp.Rational(-1, 96), sp.Rational(1, 96), sp.Rational(1, 96), 0,
-        0, sp.Rational(-1, 96), sp.Rational(-1, 96), sp.Rational(1, 96), sp.Rational(1, 96), 0,
+        sp.Rational(1, 1440), sp.Rational(-1, 96), sp.Rational(-1, 96), sp.Rational(1, 96), sp.Rational(1, 96), 0,
+        sp.Rational(1, 1440), sp.Rational(-1, 96), sp.Rational(-1, 96), sp.Rational(1, 96), sp.Rational(1, 96), 0,
         sp.Rational(1, 192), 0, 0, 0, 0, sp.Rational(1, 64),
         sp.Rational(1, 192), 0, 0, 0, 0, sp.Rational(-1, 64),
     ]

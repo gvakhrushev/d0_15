@@ -134,22 +134,26 @@ The real carrier of this ray uses \(\operatorname{Re}(i^{x_0+x_1+x_2+x_3})\) and
 
 The degree-5 resonant connection Euler vanishes exactly for both corrected real dressings, and the degree-5 metric Euler also vanishes.
 
-The degree-5 metric coefficient includes exponential order 5, so that vanishing is the full \(t^5\) term. At degree 6 the even forcing is supported on Roles 0 and 1. The certificate solves the even Hessian equation \(Hc+F=0\). Substituting those corrections into the metric series gives zero on all ten Gram components. For the cosine, the character-\((-1)\) forcing is
+The degree-5 metric coefficient includes exponential order 5, so that vanishing is the full \(t^5\) term. For a connection Euler coefficient \(t^m s\), the probe \(s\) has degree zero, so the exponential jet must retain total order \(m+1\). The previous calculation truncated at total order 6 while extracting \(t^6s\); the corrected certificate uses the exact rational dual jet through total order 7. This adds four nonzero forcing entries and a small correction on Roles 0 and 1. The certificate solves the even Hessian equation \(Hc+F=0\). Substituting those corrected terms into the metric series still gives zero on all ten Gram components. For the cosine, the full character-\((-1)\) forcing is
 \[
-(0,-20/3,-20/3,-4,-4,0,\ 0,4/3,4/3,-4/3,-4/3,0,\ 0,\ldots,0)
+(0,-20/3,-20/3,-4,-4,0,\ 0,4/3,4/3,-4/3,-4/3,0,\ 0,8/45,0,8/45,0,0,\ 0,0,8/45,0,8/45,0)
 \]
 and the zero-mode forcing is its negative. Both cosine corrections equal
 \[
 \begin{aligned}
-&(0,-1/96,-1/96,1/96,1/96,0),\\
-&(0,-1/96,-1/96,1/96,1/96,0),\\
+&(1/1440,-1/96,-1/96,1/96,1/96,0),\\
+&(1/1440,-1/96,-1/96,1/96,1/96,0),\\
 &(1/192,0,0,0,0,1/64),\\
 &(1/192,0,0,0,0,-1/64).
 \end{aligned}
 \]
 The sine character-\((-1)\) forcing equals the sine zero-mode forcing, and both equal the negative of the cosine character-\((-1)\) forcing. The sine character-\((-1)\) correction is the negative of the vector above; the sine zero-mode correction equals that vector. After these corrections the degree-6 metric Euler is zero on all ten Gram components.
 
-On the resonant weight the connection Euler stays zero through degree 7. On the orthogonal weight the cosine Euler is nonzero at degrees 3, 5 and 7; the sine Euler is the negative. The degree-3 piece is the vector in §0. Its pairing with \(e_0+e_1+e_2\) is \(64\) for the cosine and \(-64\) for the sine, and no degree-3 link correction changes that pairing. This is the first failure of the \(u=(0,0,1,1)\) connection jet. The quadratic solder equations of this fixed flux contain \(\det(I+\eta q/2)\), so every solder solution is degenerate. The constant root is the zero frame \(q=-2\eta\). The pure axes \(u=e_i\) have zero connection Euler through degree 6 in the four Fourier weights.
+On the resonant weight the connection Euler stays zero through degree 7. On the orthogonal weight the cosine Euler is nonzero at degrees 3, 5 and 7; the sine Euler is the negative. The degree-3 piece is the vector in §0. The corrected cosine degree-7 vector is
+\[
+(-4/3,136/45,136/45,4,4,0,\ 4/3,-4/3,-4/3,-104/45,-104/45,0,\ 0,-226/45,14/3,-226/45,14/3,0,\ 0,14/3,-226/45,14/3,-226/45,0),
+\]
+and the sine vector is its negative. The degree-3 covector pairing with \(e_0+e_1+e_2\) is \(64\) for the cosine and \(-64\) for the sine, and no degree-3 link correction changes that pairing. This remains the first failure of the \(u=(0,0,1,1)\) connection jet. The quadratic solder equations of this fixed flux contain \(\det(I+\eta q/2)\), so every solder solution is degenerate. The constant root is the zero frame \(q=-2\eta\). The pure axes \(u=e_i\) have zero connection Euler through degree 6 in the four Fourier weights.
 
 No torsion constraint, new action channel, \(\varphi\)-selector, or global Einstein equation is used. The four-space is census data on one L4 orbit. It is not a local Lorentz quotient, and the #264 coframe descent is not a gauge deletion of the regular variables.
 
