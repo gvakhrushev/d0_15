@@ -476,6 +476,7 @@ import D0.Gravity.A1RieszMismatch
 import D0.Gravity.A2CompensatorNoether
 import D0.Gravity.A4DLinearizedMetricResponse
 import D0.Gravity.A4DParentWardStressDescent
+import D0.Gravity.A4DQ0PhysicalCokernel
 import D0.Gravity.A4DSchurEinsteinDirectIdentification
 import D0.Gravity.BlackHoleCapacityA4
 import D0.Gravity.BoundaryRelaxationSpectrum
