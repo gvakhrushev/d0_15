@@ -454,6 +454,24 @@ imag_conjugation_ratio = sp.simplify(
 conjugates_nonassociate = real_conjugation_ratio != imag_conjugation_ratio
 check("CHIRAL_CONJUGATE_COMPONENTS_DISTINCT", conjugates_nonassociate)
 
+# The exact #314 hostile point lies on both conjugate components.  Record the
+# chiral rank split there as a point control, not as a full intersection locus.
+counterexample_point = (minus_one, minus_one, I, I)
+counterexample_substitution = dict(zip(z, counterexample_point))
+Pminus_expr = Pplus_expr.xreplace({I: -I})
+Pplus_at_counterexample = sp.cancel(Pplus_expr.subs(counterexample_substitution))
+Pminus_at_counterexample = sp.cancel(Pminus_expr.subs(counterexample_substitution))
+check("CHIRAL_INTERSECTION_COUNTEREXAMPLE_BOTH_COMPONENTS",
+      Pplus_at_counterexample == 0 and Pminus_at_counterexample == 0)
+Q_counterexample = T.T * A_counterexample * T
+Aplus_counterexample = Q_counterexample.extract(ip, ip)
+Aminus_counterexample = Q_counterexample.extract(im, im)
+rank_Aplus_counterexample = exact_rank(Aplus_counterexample, field_i)
+rank_Aminus_counterexample = exact_rank(Aminus_counterexample, field_i)
+check("CHIRAL_INTERSECTION_COUNTEREXAMPLE_BLOCK_RANKS_11_11",
+      rank_Aplus_counterexample == 11 and rank_Aminus_counterexample == 11
+      and rank_counterexample == 22)
+
 chiral_controls = {}
 for label, point_values in square_points.items():
     point = tuple(sp.Integer(value) for value in point_values)
@@ -497,6 +515,15 @@ chiral_norm = {
         "conclusion": "Pplus irreducible over Q(i); Pplus*conjugate(Pplus) irreducible over Q",
     },
     "codimension_one_generic_rank_over_C": 23,
+    "known_component_intersection_point_control": {
+        "point": ["-1", "-1", "i", "i"],
+        "Pplus_value": str(Pplus_at_counterexample),
+        "Pminus_value": str(Pminus_at_counterexample),
+        "rank_Aplus": rank_Aplus_counterexample,
+        "rank_Aminus": rank_Aminus_counterexample,
+        "full_rank": rank_counterexample,
+        "scope": "exact point control only; not the complete intersection locus",
+    },
     "irreducible_factorization_over_Q": "CERTIFIED_UP_TO_LAURENT_UNIT",
 }
 

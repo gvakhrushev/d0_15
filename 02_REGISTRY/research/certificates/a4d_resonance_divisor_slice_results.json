@@ -123,6 +123,20 @@
       "conclusion": "Pplus irreducible over Q(i); Pplus*conjugate(Pplus) irreducible over Q"
     },
     "codimension_one_generic_rank_over_C": 23,
+    "known_component_intersection_point_control": {
+      "point": [
+        "-1",
+        "-1",
+        "i",
+        "i"
+      ],
+      "Pplus_value": "0",
+      "Pminus_value": "0",
+      "rank_Aplus": 11,
+      "rank_Aminus": 11,
+      "full_rank": 22,
+      "scope": "exact point control only; not the complete intersection locus"
+    },
     "irreducible_factorization_over_Q": "CERTIFIED_UP_TO_LAURENT_UNIT"
   },
   "global_multivariable_factorization": "CERTIFIED_UP_TO_LAURENT_UNIT_OVER_Q",

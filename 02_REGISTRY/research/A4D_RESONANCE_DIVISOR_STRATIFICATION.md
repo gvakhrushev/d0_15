@@ -33,6 +33,8 @@ The same certificate proves `P_+` irreducible over `Q(i)`. Use the determinant-o
 
 At a generic point of either geometric divisor component, the corresponding 12-by-12 block has determinant valuation one, so its rank is 11 over the component function field (Smith form over the local DVR). The conjugate block is invertible there because its determinant factor is distinct. Hence the full 24-by-24 matrix has generic rank 23 on each codimension-one component. This is a generic component result, not a classification of higher-codimension intersections.
 
+The exact #314 control point `(-1,-1,i,i)` lies on both conjugate components: the certificate evaluates both factors to zero there, and both 12-by-12 chiral blocks have rank 11, giving full rank 22. This is one certified intersection point, not the intersection ideal or its full rank stratification.
+
 Exact univariate restrictions of the full determinant are:
 
 | Character slice | Exact determinant | Status |
