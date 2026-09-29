@@ -102,7 +102,8 @@ def pairing_delta2(area, curvature) -> sp.Expr:
     ))
 
 
-def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool = False) -> dict:
+def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool = False,
+        joint_coker_family: bool = False) -> dict:
     owner = json.loads(C.RESULT_PATH.read_text())["normalized_surviving_curvature"]
     check("OWNER_HAS_LINEAR_FIRST_CONNECTION_TANGENT",
           json.loads(C.RESULT_PATH.read_text())["normal_jet"]["surviving_first_connection_tangent_degree"] == 1)
@@ -453,6 +454,126 @@ def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool 
         print("ZERO_MODE_C2", [sp.factor(value) for value in projected_source], flush=True)
         return {"center_shift": str(first_center_shift),
                 "zero_mode_c2": [str(sp.factor(value)) for value in projected_source]}
+
+    if joint_coker_family:
+        zero_multi = (0, 0, 0, 0)
+        zero_row = 2 * jet_index[zero_multi]
+        projected_source = sp.Matrix([
+            sp.factor(connection_equations[zero_row + row, 0])
+            for row in range(connection_left.rows)
+        ])
+        check("FREE_FIRST_ORDER_Y_SHIFT_LEAVES_C2_UNCHANGED",
+              projected_source == sp.Matrix([
+                  sp.Rational(351402359, 2108160),
+                  sp.Rational(21506403637, 154949760),
+              ]))
+        # Track the already-owned xi_3^2 left witness of the joint
+        # phase-common metric equation as the first-order Y-family tangent is
+        # varied.  The cokernel row is independent of the source parameter;
+        # only its exact forcing pairing changes.
+        reduced3 = sp.zeros(31 * len(degree3), len(degree4))
+        rhs3 = sp.zeros(31 * len(degree3), 1)
+        for block, gamma in enumerate(degree3):
+            rhs3[31 * block:31 * (block + 1), :] = left * force_coeff(gamma)
+            for direction in range(4):
+                alpha = list(gamma)
+                alpha[direction] += 1
+                alpha = tuple(alpha)
+                reduced3[31 * block:31 * (block + 1), i4[alpha]] += (
+                    alpha[direction] * left * first_moments[direction] * uc
+                )
+        check("JOINT_FAMILY_DEGREE3_RANK_35", rank_exact(reduced3) == 35)
+        _, pivot_rows3 = reduced3.T.rref()
+        top3 = reduced3.extract(list(pivot_rows3), list(range(len(degree4))))
+        degree4_center = top3.inv() * (-rhs3[list(pivot_rows3), :])
+        check("JOINT_FAMILY_DEGREE3_EQUATION_SOLVED",
+              reduced3 * degree4_center == -rhs3)
+
+        _, pivot_columns = base.rref()
+        _, pivot_rows = base.T.rref()
+        range_square = base.extract(list(pivot_rows), list(pivot_columns))
+        range_inverse = range_square.inv()
+
+        def solve_base_symbolic(target):
+            values = range_inverse * target[list(pivot_rows), :]
+            solution = sp.zeros(base.cols, target.cols)
+            for index, column in enumerate(pivot_columns):
+                solution[column, :] = values[index, :]
+            check("JOINT_FAMILY_RANGE_RECONSTRUCTION",
+                  base * solution == target)
+            return solution
+
+        degree3_particular = {}
+        for gamma in degree3:
+            forcing = force_coeff(gamma)
+            for direction in range(4):
+                alpha = list(gamma)
+                alpha[direction] += 1
+                alpha = tuple(alpha)
+                forcing += alpha[direction] * first_moments[direction] * uc * degree4_center[i4[alpha]]
+            degree3_particular[gamma] = solve_base_symbolic(-forcing)
+
+        reduced2 = sp.zeros(31 * len(degree2), len(degree3))
+        rhs2 = sp.zeros(31 * len(degree2), 1)
+        for block, gamma in enumerate(degree2):
+            forcing = force_coeff(gamma)
+            for direction in range(4):
+                alpha = list(gamma)
+                alpha[direction] += 1
+                alpha = tuple(alpha)
+                forcing += alpha[direction] * first_moments[direction] * degree3_particular[alpha][:96, :]
+            for alpha in degree4:
+                nu = tuple(alpha[i] - gamma[i] for i in range(4))
+                if any(value < 0 for value in nu) or sum(nu) != 2:
+                    continue
+                factor = sp.prod(sp.binomial(alpha[i], gamma[i]) for i in range(4))
+                if 2 in nu:
+                    direction = nu.index(2)
+                    moment = second_moments[(direction, direction)]
+                else:
+                    directions = [i for i, value in enumerate(nu) if value]
+                    moment = second_moments[tuple(directions)]
+                forcing += factor * moment * uc * degree4_center[i4[alpha]]
+            rhs2[31 * block:31 * (block + 1), :] = left * forcing
+            for direction in range(4):
+                alpha = list(gamma)
+                alpha[direction] += 1
+                alpha = tuple(alpha)
+                reduced2[31 * block:31 * (block + 1), i3[alpha]] += (
+                    alpha[direction] * left * first_moments[direction] * uc
+                )
+
+        check("JOINT_FAMILY_DEGREE2_REDUCED_RANK_20", rank_exact(reduced2) == 20)
+        reduced2_rref, pivots2 = reduced2.T.rref()
+        best = None
+        for free in (j for j in range(reduced2.rows) if j not in pivots2):
+            candidate = sp.zeros(reduced2.rows, 1)
+            candidate[free] = 1
+            for row, pivot in enumerate(pivots2):
+                candidate[pivot] = -reduced2_rref[row, free]
+            pairing = sp.factor((candidate.T * rhs2)[0])
+            if pairing != 0:
+                support = sum(value != 0 for value in candidate)
+                if best is None or support < best[0]:
+                    best = (support, candidate, pairing)
+        if best is None:
+            raise AssertionError("no symbolic joint-family left witness")
+        weights = best[1]
+        first_nonzero = next(value for value in weights if value)
+        if first_nonzero < 0:
+            weights = -weights
+        denominator = sp.ilcm(*[sp.denom(value) for value in weights if value])
+        integer_weights = [int(value * denominator) for value in weights]
+        divisor = math.gcd(*[abs(value) for value in integer_weights if value])
+        integer_weights = [value // divisor for value in integer_weights]
+        pairing = sp.factor((sp.Matrix(integer_weights).T * rhs2)[0])
+        check("JOINT_PHASE_COMMON_WITNESS_UNCHANGED_BY_FIRST_ORDER_Y_SHIFT",
+              pairing == -22209)
+        print("JOINT_PHASE_COMMON_WITNESS_C2", pairing, flush=True)
+        print("JOINT_PHASE_COMMON_WITNESS_FACTORED", sp.factor(pairing), flush=True)
+        return {"center_shift": str(first_center_shift),
+                "stationary_connection_coker": [str(value) for value in projected_source],
+                "joint_phase_common_witness": str(pairing)}
 
     connection_matrix = connection_equations[:, 1:]
     connection_rhs = -connection_equations[:, 0]
@@ -877,6 +998,8 @@ if __name__ == "__main__":
                         help="exact rational value or 'symbolic' for the free first-order Y-family shift")
     parser.add_argument("--coker-only", action="store_true",
                         help="stop after extracting the exact zero-mode connection-cokernel polynomial")
+    parser.add_argument("--joint-coker-family", action="store_true",
+                        help="also project the xi3^2 joint phase-common witness for a symbolic first-order Y shift")
     args = parser.parse_args()
     shift = sp.Symbol("s") if args.first_center_shift == "symbolic" else sp.Rational(args.first_center_shift)
-    run(args.write, shift, args.coker_only)
+    run(args.write, shift, args.coker_only, args.joint_coker_family)

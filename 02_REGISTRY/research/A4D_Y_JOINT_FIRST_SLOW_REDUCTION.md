@@ -426,12 +426,17 @@ family tangent: the owner script's symbolic `s` replay returns the same
 two-vector identically. Thus this obstruction to the constant-center
 restriction cannot be tuned away by a first-order constant Y-amplitude
 retuning. The degree-four spatial center profile still cancels it locally.
+The exact joint `xi3^2` phase-common witness is likewise unchanged: after
+allowing all 20 free degree-three center coefficients, its pairing remains
+`-22209` for symbolic `s`. This only rules out repairing this finite
+phase-common normal jet by a first-order constant Y retuning; it does not
+turn the `O(h^4)` response defect into an `O(h^2)` normalized gap.
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree4_gate_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
-python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py --first-center-shift symbolic --coker-only
+python3 02_REGISTRY/research/certificates/a4d_y_stationary_center_family_coker_check.py
 ```
 
 The regular formal connection branch survives this order; the residual

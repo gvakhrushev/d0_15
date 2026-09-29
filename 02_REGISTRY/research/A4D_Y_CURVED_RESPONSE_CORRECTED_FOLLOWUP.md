@@ -118,6 +118,14 @@ with a spatially varying center jet through normal degree four. This is a
 finite germ statement only: it does not exclude an exact branch with a
 varying center or establish the refinement-uniform theorem.
 
+The new symbolic family certificate allows an arbitrary first-order constant
+retuning `z -> z + delta*s`. It proves that the two connection-cokernel
+components stay equal to the displayed nonzero vector and that the
+`xi3^2` phase-common metric witness stays `-22209`, after solving the degree-
+three range equations. Thus this local defect cannot be tuned away by that
+one center parameter. Spatially varying higher center jets and the global
+finite-lattice branch remain open.
+
 Derive and control the nonlinear **joint constrained** equations, rather than two free connection-center wave equations, then continue the surviving curved normal jet `J` to an exact stationary branch
 
 `K_h(J) = K_Y + a_h(J)`
