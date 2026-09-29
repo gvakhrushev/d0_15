@@ -148,15 +148,16 @@ statement for this one curvature direction.
 
 A generic-`z` consequence follows without knowing an explicit obstruction
 polynomial. Every fixed-degree matrix in this calculation is rational in the
-one Cayley parameter `z`. On a pivot chart through `z=1`, a 20-by-20 minor of
-the coefficient matrix and a 21-by-21 minor of its augmentation are nonzero
-at `z=1`, by the certified ranks. Those minors are nonzero rational functions.
-Away from their finite zero sets and the finite poles/rank-drop set, the
-coefficient matrix has at most 20 columns while its augmentation has rank at
-least 21. Hence the same curvature direction is obstructed at generic regular
-`z`. This proves that any exceptional regular values lie in a finite
-algebraic set, but does not identify that set or cover the singular flat point
-`z=0`.
+one Cayley parameter `z`. On a pivot chart through `z=1`, the reduced matrix
+has 20 coefficient columns, while its augmentation has rank 21 at `z=1`. Some
+21-by-21 augmented minor is therefore nonzero there. Its entries are rational
+in `z`, so it is a nonzero rational function and can vanish at only finitely
+many regular values. Away from those zeros and the finite poles/rank-drop set
+of the pivot chart, the augmented rank is at least 21 while the coefficient
+rank is at most 20. Hence the same curvature direction is obstructed at
+generic regular `z`. This proves that any exceptional regular values lie in
+a finite algebraic set, but does not identify that set or cover the singular
+flat point `z=0`.
 
 For an `h`-dependent amplitude the leading witness is
 `-22209*kappa(h)^2*h^4`. A uniform remainder `o(h^4)` would rule out a limit
