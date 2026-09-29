@@ -36,12 +36,14 @@ def ck(name,cond):
 
 
 COEFF={}
+rational_real=True
 for d,M in L.T.items():
     for (r,c),v in M.todok().items():
         if v:
             q=sp.Rational(v)
-            ck("RATIONAL_REAL_COEFFICIENT",q.is_Rational)
+            rational_real = rational_real and bool(q.is_Rational)
             COEFF[(d,r,c)]=q
+ck("ALL_LAURENT_COEFFICIENTS_RATIONAL_REAL",rational_real)
 ck("COEFFICIENT_LEDGER_NONEMPTY",len(COEFF)>0)
 
 
