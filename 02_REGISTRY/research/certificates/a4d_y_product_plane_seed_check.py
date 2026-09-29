@@ -125,6 +125,16 @@ def run(write=False):
     E.check("GENUINELY_CURVED_PROFILE", curvature_at_peak == eps*omega**2/(1+eps)**2)
     E.check("SEED_RESIDUAL_NORMALIZED_LIMIT", sp.limit(residual_at_peak/h**2, h, 0) == eps*omega**2)
 
+    # On this nonconstant periodic mode, the shift-row residual is exactly
+    # the discrete operator applied to an O(1) correction. This does not
+    # assert a uniformly bounded inverse on every mean-zero lattice mode.
+    mode = sp.cos(omega*u)
+    shift_row_mode = 3*mode-sp.cos(omega*(u-h))-sp.cos(omega*(u+h))-mode
+    shift_row_residual = 2*eps*(1-sp.cos(omega*h))*mode
+    E.check("SHIFT_ROW_COSINE_SYMBOL", sp.trigsimp(shift_row_mode-2*(1-sp.cos(omega*h))*mode) == 0)
+    E.check("SHIFT_ROW_EXACT_MEAN_ZERO_CORRECTION",
+            sp.trigsimp(eps*shift_row_mode-shift_row_residual) == 0)
+
     result = {
         "schema": "a4d-y-product-plane-seed-v1",
         "input_head": "1d257c9902168a0631b6ac601c532e0de1800379",
@@ -138,6 +148,8 @@ def run(write=False):
         "gaussian_curvature_at_peak": str(curvature_at_peak),
         "connection_residual_at_peak": str(residual_at_peak),
         "normalized_residual_limit": "eps*omega^2",
+        "shift_row_mode_identity": "L_h cos(omega*(x1-x2))=2*(1-cos(omega*h))*cos(omega*(x1-x2))",
+        "shift_row_exact_correction": "for nonconstant allowed periodic modes, L_h^-1 residual=eps*cos(omega*(x1-x2)); this is mode-specific, not a global uniform inverse bound",
         "nonclaims": ["seed is not exactly connection-stationary on nonconstant periodic f", "no restriction of the full connection space to SO(2)", "no nonlinear continuation terminal", "this obstruction does not force z to shrink"]}
     if write:
         OUT.write_text(json.dumps(result, indent=2)+"\n")

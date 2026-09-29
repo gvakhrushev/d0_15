@@ -11,6 +11,8 @@
   "gaussian_curvature_at_peak": "eps*omega**2/(eps + 1)**2",
   "connection_residual_at_peak": "2*eps*(1 - cos(h*omega))",
   "normalized_residual_limit": "eps*omega^2",
+  "shift_row_mode_identity": "L_h cos(omega*(x1-x2))=2*(1-cos(omega*h))*cos(omega*(x1-x2))",
+  "shift_row_exact_correction": "for nonconstant allowed periodic modes, L_h^-1 residual=eps*cos(omega*(x1-x2)); this is mode-specific, not a global uniform inverse bound",
   "nonclaims": [
     "seed is not exactly connection-stationary on nonconstant periodic f",
     "no restriction of the full connection space to SO(2)",

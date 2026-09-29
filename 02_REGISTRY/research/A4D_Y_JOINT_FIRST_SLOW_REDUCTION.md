@@ -27,6 +27,16 @@ response erasure. One exact connection row shows why that seed itself cannot
 be the nonlinear stationary branch. The required transverse corrections
 cannot be omitted.
 
+The owned quadratic symbols have exact characteristic polynomials. Their
+null lines are `(16/25,1,1,1)` for Y and `(16/7,1,1,1)` for the boost-dual
+mode, so neither null line lies in the stationary sector `t0=0`. On that
+stationary sector the eigenvalues are `{-1024/26901,37439/3087,37439/3087}`
+and `{-64/267,2261/48,2261/48}`, respectively. The spatial plane
+`t1+t2+t3=0` is positive for both symbols; this covers the product seed's
+covector `(1,-1,0)`, but is a restricted-sector fact and gives no full
+elliptic gap. The exact characteristic polynomials and null vectors are
+checked by `a4d_y_center_envelope_symbol_check.py`.
+
 ## 2. Five-column constraint, including the visible center
 
 Use the owned literal blocks with connection test phase lambda^(-s) and
@@ -234,6 +244,18 @@ The residual is genuine, despite exact metric-response invisibility.
 This obstruction neither excludes corrections in the full connection
 space nor forces z to shrink.
 
+For this Fourier mode alone, with `u=x1-x2`, the shift operator
+`L_h=3I-sum_i S_i` obeys
+`L_h cos(omega*u)=2(1-cos(omega*h))*cos(omega*u)`. Hence the displayed
+residual is exactly `L_h(epsilon*cos(omega*u))`, and on a nonconstant
+mean-zero periodic mode the required correction is `epsilon*cos(omega*u)`.
+More generally, on the first Brillouin zone,
+`Re m(k)=2 sum_i sin^2(k_i*h/2) >= 2 h^2 |k|^2/pi^2`; thus the mean-zero
+operator inverse has norm at most `pi^2/(2 h^2 k_min^2)`, not an h-uniform
+bound. The mode-specific O(1) correction uses the smooth fixed-frequency
+forcing and does not prove uniform control for arbitrary h-dependent data.
+The product-seed certificate checks the exact cosine identity.
+
 The companion small certificate verifies all 96 coefficients of E_K at
 orders h^0 and h^1 for arbitrary f and its two independent spatial-plane
 gradients at z=1. Thus the nonlinear seed is first-slow compatible and
@@ -344,7 +366,9 @@ python3 02_REGISTRY/research/certificates/a4d_y_product_plane_seed_check.py
 
 The first reuses a single owned face assembly and a four-column range solve;
 it does not rerun the 20-curvature or small-amplitude pipelines. The second
-uses small matrix identities and first-order dual-number arithmetic.
+uses small matrix identities, first-order dual-number arithmetic, and the
+exact Fourier-mode shift-row identity. The center-symbol certificate also
+checks exact full and stationary characteristic polynomials.
 
 The validated norms are finite Euclidean coefficient norms and the stated
 local frozen-symbol Fourier estimates. There is no owner-sum-norm nonlinear
@@ -352,3 +376,14 @@ response theorem, no all-Bloch uniformity, no z-to-zero uniformity, no new
 source or selector, no action change, and no promotion of either global
 terminal. The pure-rotation seed obstruction is explicitly not a no-go
 for the full connection space.
+
+The submitted scratch `a4d_y_joint_stationary_correction_check.py` was also
+replayed. Its exact T identities are independently owned by the 40-by-5
+certificate above; its center spectra and the seed's particular cosine-mode
+correction are now checked by the two owner scripts. Its `sigma_min` assertion
+uses a floating root (the exact inverse-Frobenius bound is the retained proof),
+and its claimed shift-symbol zero set is only tested by substituting the zero
+frequency. The Fourier identity and Brillouin-zone inequality stated above
+give the valid analytic argument. The scratch does not evaluate the proposed
+`C_2`/`O_{2,h}` cokernel forcing, so neither that coefficient nor a uniform
+nonlinear inverse follows from its `ALL EXACT CHECKS PASSED` line.
