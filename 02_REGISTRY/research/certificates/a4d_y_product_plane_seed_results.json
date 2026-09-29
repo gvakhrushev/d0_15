@@ -6,6 +6,7 @@
   "exact_response_identity": "All 16 UV solder rows vanish; E_Q with W_p(z) equals E_Q with L0=I and the same spatial links, site by site, for every h and z in the Cayley chart.",
   "first_slow_scope": "At z=1, all 96 EK coefficients at h^0 and h^1 vanish identically for arbitrary f,g1,g2; no linearization in f is used.",
   "exact_connection_row": "E_(K0,B)(x)=3 f(x)^2 - sum_(i=1)^3 f(x-h e_i)^2, B=K1+K2+K3",
+  "sitewise_center_amplitude_scope": "the B insertion in a temporal face remains exactly +/-B for independent Cayley Y parameters on every incident link; the role-0 dual row is independent of spatially varying z(x)",
   "periodic_obstruction": "The exact row can vanish at every site of a connected periodic spatial lattice only if f^2 is spatially constant (discrete maximum principle). This excludes only the commuting seed ansatz.",
   "hostile_profile": "f^2=1+eps cos(omega(x1-x2)), |eps|<1",
   "gaussian_curvature_at_peak": "eps*omega**2/(eps + 1)**2",

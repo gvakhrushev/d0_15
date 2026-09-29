@@ -90,6 +90,21 @@ def run(write=False):
     E.check("PRODUCT_PLANE_PROJECTOR", P*P == P and P.rank() == 2)
     E.check("ROTATION_AND_BOOST_HAVE_DISJOINT_SUPPORT", Y*B == ZERO and B*Y == ZERO)
     E.check("ROTATION_FIXES_DUAL_INSERTION", E.reduced(U*B-B) == ZERO and E.reduced(V*B-B) == ZERO)
+    z0, z1, t0, t1 = sp.symbols("z0 z1 t0 t1", real=True)
+    U0, U1 = E.cayley_simple(Y, 3, z0), E.cayley_simple(Y, 3, z1)
+    V0, V1 = E.cayley_simple(Y, 3, t0), E.cayley_simple(Y, 3, t1)
+    face_factors = [U0, V0, E.linv(U1), E.linv(V1)]
+    face_product = face_factors[0]*face_factors[1]*face_factors[2]*face_factors[3]
+    for position in range(4):
+        varied = face_factors.copy()
+        varied[position] = (face_factors[position]*B if position < 2
+                            else -B*face_factors[position])
+        dP = varied[0]*varied[1]*varied[2]*varied[3]
+        dC = (dP+E.linv(face_product)*dP*E.linv(face_product))/2
+        expected_sign = 1 if position < 2 else -1
+        E.check(f"INDEPENDENT_SITEWISE_Y_FACE_B_INSERTION_{position}",
+                E.reduced(dP-expected_sign*B) == ZERO and
+                E.reduced(dC-expected_sign*B) == ZERO)
     E.check("COMMUTING_SPATIAL_LINKS", E.reduced(U*V-V*U) == ZERO)
     E.check("PRODUCT_GRAM", E.reduced(S.T*E.ETA*S-(E.ETA+(1-f*f)*P)) == ZERO)
 
@@ -143,6 +158,7 @@ def run(write=False):
         "exact_response_identity": "All 16 UV solder rows vanish; E_Q with W_p(z) equals E_Q with L0=I and the same spatial links, site by site, for every h and z in the Cayley chart.",
         "first_slow_scope": "At z=1, all 96 EK coefficients at h^0 and h^1 vanish identically for arbitrary f,g1,g2; no linearization in f is used.",
         "exact_connection_row": "E_(K0,B)(x)=3 f(x)^2 - sum_(i=1)^3 f(x-h e_i)^2, B=K1+K2+K3",
+        "sitewise_center_amplitude_scope": "the B insertion in a temporal face remains exactly +/-B for independent Cayley Y parameters on every incident link; the role-0 dual row is independent of spatially varying z(x)",
         "periodic_obstruction": "The exact row can vanish at every site of a connected periodic spatial lattice only if f^2 is spatially constant (discrete maximum principle). This excludes only the commuting seed ansatz.",
         "hostile_profile": "f^2=1+eps cos(omega(x1-x2)), |eps|<1",
         "gaussian_curvature_at_peak": str(curvature_at_peak),
