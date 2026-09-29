@@ -62,7 +62,7 @@ for r in range(4):
     for s in range(4):
         if r!=s:
             d=[0]*4;d[r]=1;d[s]=-1;expected.add(tuple(d))
-ck("NEAREST_DIFFERENCE_SUPPORT",set(support)<=expected)
+ck("EXACT_NEAREST_DIFFERENCE_SUPPORT_21",len(support)==21 and set(support)==expected)
 
 # ||dQ/dtheta_j||_F <= sum_d |d_j| ||T_d||_F.
 # Store exact squared coefficient norms and a conservative rational ceiling.
@@ -78,8 +78,11 @@ for j in range(4):
     for d in support:
         if d[j]:
             n2=sp.Rational(terms[str(d)])
-            q=sp.Rational(math.isqrt(int(n2.p*10**6//n2.q))+2,1000)
-            while q*q<n2: q+=sp.Rational(1,1000)
+            # ceil(sqrt(n2)*1000)/1000 using integers only.
+            floor=math.isqrt((int(n2.p)*10**6)//int(n2.q))
+            m=floor if sp.Integer(floor)**2*int(n2.q)>=int(n2.p)*10**6 else floor+1
+            q=sp.Rational(m,1000)
+            ck("RATIONAL_SQRT_CEILING_"+str(j)+"_"+str(d),q*q>=n2)
             b+=abs(d[j])*q
     bounds.append(b)
     ck("DERIVATIVE_BOUND_POSITIVE_"+str(j),b>0)
