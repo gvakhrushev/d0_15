@@ -3,7 +3,7 @@
 """Exact quarter-wave torsion locus of the full curved z=1 joint Bloch symbol.
 
 Builds the literal 96 connection rows and 40 phase-resolved metric rows from
-the current curved-Y face Hessian owners.  All ranks are exact over Q(i).
+the current curved-Y face Hessian owners. All ranks are exact over Q(i).
 
 This is deliberately a mu_4^4 certificate, not an all-Bloch theorem.
 """
@@ -24,13 +24,16 @@ def mon(lam,d):
     for r,e in enumerate(d): out*=lam[r]**e
     return out
 
+# Assemble the literal local data once. The 256 torsion characters below only
+# change Laurent monomials; rebuilding the face Hessians would be redundant.
+_H,LABELS,FACES0=B.action_connection_hessian(sp.Integer(1))
+FACES=C.with_base_phases(FACES0)
+IDX={x:i for i,x in enumerate(LABELS)}
+UNIT=[B.I4[:,j] for j in range(4)]
+
 def joint_symbol(lam):
-    _H,labels,faces0=B.action_connection_hessian(sp.Integer(1))
-    faces=C.with_base_phases(faces0)
-    idx={x:i for i,x in enumerate(labels)}
     A=sp.zeros(96); Q=sp.zeros(40,96)
-    unit=[B.I4[:,j] for j in range(4)]
-    for phase,a,b,locs,local,Hloc,factors in faces:
+    for phase,a,b,locs,local,Hloc,factors in FACES:
         shifts=[(0,0,0,0),tuple(int(r==a) for r in range(4)),
                 tuple(int(r==b) for r in range(4)),(0,0,0,0)]
         slot=[]
@@ -43,7 +46,7 @@ def joint_symbol(lam):
         darea=[]
         for qa,qb in B.SYM:
             dS=B.metric_lift(qa,qb)
-            darea.append(B.wedge(dS[:,u],unit[v])+B.wedge(unit[u],dS[:,v]))
+            darea.append(B.wedge(dS[:,u],UNIT[v])+B.wedge(UNIT[u],dS[:,v]))
         for pos,(q,role,inverse) in enumerate(locs):
             for g,X in enumerate(B.GEN):
                 dFfactor=-X*factors[pos] if inverse else factors[pos]*X
@@ -52,7 +55,7 @@ def joint_symbol(lam):
                     dP=dP*(dFfactor if n==pos else F)
                 dF=(dP-B.linv(dP))/2
                 dFb=B.biv(dF)
-                gi=idx[(q,role,g)]
+                gi=IDX[(q,role,g)]
                 phase_factor=mon(lam,shifts[pos])
                 for mi,area in enumerate(darea):
                     val=sp.cancel(B.orientation(a,b)*(area.T*B.G2*B.STAR*dFb)[0])
@@ -68,7 +71,7 @@ for ids in product(range(4),repeat=4):
     R=exact_rank(joint_symbol(lam))
     if R<96:
         folded.append((ids,R))
-        ck("SINGULAR_IS_DIAGONAL_"+ "".join(map(str,ids)),
+        ck("SINGULAR_IS_DIAGONAL_"+"".join(map(str,ids)),
            len(set(ids))==1 and R==95)
     else:
         regular+=1
