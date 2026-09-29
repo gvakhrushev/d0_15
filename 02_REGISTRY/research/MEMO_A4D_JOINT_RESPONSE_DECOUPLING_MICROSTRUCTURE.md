@@ -591,3 +591,59 @@ full-joint singular-value scout suggests that, after the folded Y-center is
 separated, the next singular value stays near `0.1128`; that observation is
 diagnostic only.  The required next theorem is an exact all-Bloch lower bound
 on the transverse complement plus a uniform nonlinear remainder estimate.
+
+
+## Current-frontier override: corrected normal jet and folded transverse range
+
+This section is the controlling interpretation for subsequent work.  Earlier
+sections that discuss the phase-common `-22209*kappa^2` degree-two witness
+record the historical formal-jet route and must not be read as overriding the
+later corrected phase-resolved normal-jet owner.  The current owner
+`a4d_y_curved_normaljet_compatibility_check.py` leaves the single physical
+curved direction `-Y tensor Y` after the stated compatibility/phase-erasure
+conditions and matches the independently normalized Einstein response there.
+Accordingly, no task-level no-go may be inferred from the historical
+phase-common obstruction alone.
+
+The local high-Bloch transverse loophole at the four folded Y characters is
+now quantitatively reduced.  The exact owner
+`a4d_y_curved_joint_folded_range_check.py` builds one 95-by-95
+Lyapunov-Schmidt range chart for the full 136-by-96 curved joint Bloch symbol.
+It proves entrywise diagonal fourth-root covariance
+
+`Q(z,z,z,z) = D_out(z) Q(1,1,1,1) D_in(z)`,  `z^4=1`,
+
+so the same chart applies at all four folded copies.  After deleting the
+phase-0 role-0 `J13` coordinate, which is nonzero on the exact Y kernel, the
+selected minor has rank 95 and
+
+`||M_*^{-1}||_2 <= ||M_*^{-1}||_F < 31`.
+
+Together with the independently certified global unit-torus bound
+
+`||Q(theta)-Q(phi)||_2 <= (22/7) sum_j |theta_j-phi_j|`,
+
+the Neumann estimate gives, for l1 angular distance at most `7/1364` from
+any folded point,
+
+`||M(theta)^{-1}||_2 < 62`.
+
+Thus the 95 transverse connection coordinates are uniformly solvable in an
+explicit neighbourhood of every folded Y copy; the remaining equations are
+the reduced compatibility/center equations.  This is a local range theorem,
+not an all-Bloch theorem and not nonlinear reduced-center solvability.
+
+The active linear gap is therefore split cleanly into two pieces:
+
+1. folded neighbourhoods: transverse range is now exact and quantitative;
+2. compact complement of those neighbourhoods: an exact no-extra-zero /
+   positive-gap certificate is still required.
+
+After the complement is closed, the remaining nonlinear gate is the reduced
+Y-center equation on genuinely curved sampled metrics, with a
+refinement-uniform relative remainder in the owner topology.  The exact
+macroscopically-flat Y lift remains a positive all-order control but does not
+settle that genuinely curved reduced equation.
+
+Keep #310 Draft / IN_PROGRESS.  Neither task-level terminal is promoted by
+this local range theorem.
