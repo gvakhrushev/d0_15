@@ -1,0 +1,29 @@
+{
+  "schema": "a4d-y-pure-center-transport-v1",
+  "terminal": "A4D-Y-PURE-CENTER-NONLINEAR-TRANSPORT-RIGIDITY",
+  "background": "standard solder; four-phase Y Cayley ansatz; independent real amplitudes on even-phase Role-0 links",
+  "metric_face_map": {
+    "shape": [16, 3],
+    "rank": 2,
+    "kernel": ["(1,1,1)"],
+    "matrix": [[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,-1,1],[0,0,0],[0,0,0],[0,0,0],[1,0,-1],[0,0,0],[0,0,0],[0,0,0],[-1,1,0],[0,0,0],[0,0,0],[0,0,0]],
+    "interpretation": "for temporal Y-curvature scalars (r1,r2,r3), unrestricted solder Euler vanishes iff r1=r2=r3"
+  },
+  "spatial_boost_edge_row": {
+    "formula_up_to_orientation": "8*(a-b)*(a+b)/((4+3*a^2)*(4+3*b^2))",
+    "checked_phase_role_pairs": 12,
+    "fixed_sign_near_z1_consequence": "row vanishes iff a=b"
+  },
+  "transport_lattice": {
+    "moves": ["e1-e0","e1+e0","e2-e0","e2+e0","e3-e0","e3+e0"],
+    "rank": 4,
+    "index_in_Z4": 2,
+    "identified_as": "{n in Z^4 : sum_i n_i is even}"
+  },
+  "conclusion": "on a connected periodic L=4m carrier, a pure-Y stationary amplitude in a fixed-sign neighborhood of z=1 is constant",
+  "scope_fence": [
+    "does not exclude cancellation by transverse or non-Y connection corrections",
+    "does not cover a center amplitude crossing z=0 or changing sign",
+    "does not establish the task-level response-decoupling terminal"
+  ]
+}
