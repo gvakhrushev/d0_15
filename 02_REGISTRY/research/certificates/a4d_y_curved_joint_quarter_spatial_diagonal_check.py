@@ -63,12 +63,13 @@ def col_phase(col):
 # Global covariance under a common fourth-root multiplication of all Bloch
 # characters.  This is stronger than the diagonal-only use in the folded
 # range owner.
+phase_covariant=True
 for d,M in L.T.items():
     e=sum(d)%4
     for (r,c),v in M.todok().items():
-        if v:
-            ck("QUARTER_PHASE_EXPONENT_"+str(r)+"_"+str(c)+"_"+str(d),
-               e==(col_phase(c)-row_phase(r))%4)
+        if v and e!=(col_phase(c)-row_phase(r))%4:
+            phase_covariant=False
+ck("GLOBAL_QUARTER_PHASE_COVARIANCE",phase_covariant)
 
 
 # On lambda0=1, lambda1=lambda2=lambda3=x, every selected entry is Laurent
@@ -83,21 +84,22 @@ for si,rows in enumerate(ROWSETS):
     envelope=[[0]*96 for _ in range(96)]
     for d,M in L.T.items():
         exponent=sum(d[1:])
-        ck("SPATIAL_DIAGONAL_ENTRY_DEGREE_"+str(si)+"_"+str(d),
-           exponent in (-1,0,1))
+        if exponent not in (-1,0,1):
+            raise AssertionError("SPATIAL_DIAGONAL_ENTRY_DEGREE")
         selected=[]
         for (r,c),v in M.todok().items():
             if r not in rpos or not v:
                 continue
             q=sp.Rational(v)
-            ck("COMMON_DENOMINATOR_"+str(si)+"_"+str(r)+"_"+str(c)+"_"+str(d),
-               DEN%int(q.q)==0)
+            if DEN%int(q.q)!=0:
+                raise AssertionError("COMMON_DENOMINATOR")
             a=int(q*DEN)
             selected.append((rpos[r],c,a))
             envelope[rpos[r]][c]+=abs(a)
         if selected:
             raw.append((exponent,selected))
     rawsets.append(raw)
+    ck("INTEGER_LAURENT_STENCIL_"+str(si),True)
 
     # For |x|=1, |entry| is bounded by its Laurent coefficient l1 envelope.
     # Hadamard gives |det|^2 <= product(row_l2_bound^2).  Every Laurent
