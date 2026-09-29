@@ -229,6 +229,14 @@ Over the exact frozen constant-metric Y family, the same rank condition persists
 
 A second exact certificate treats the genuinely curved product-plane seed `S=I+(f-1)P_perp`, with f time independent and constant along `(1,1,1)`. Commuting spatial spin links give exact sitewise metric-response erasure for the Y carrier, and all 96 connection coefficients through first slow order vanish without linearizing in f. The new independent-parameter face check verifies that inserting the boost dual `B` into any face with four independent Cayley Y parameters returns exactly `±B`; the exact temporal boost-dual row therefore remains `3 f(x)^2-sum_i f(x-h e_i)^2` even when the center amplitude `z(x)` varies from site to site. On a connected periodic spatial lattice this excludes every nonconstant f within this commuting Y seed class, including sitewise center retuning. It is not an obstruction to the full connection space: transverse/non-Y corrections remain essential.
 
+The exact check `a4d_y_two_center_cartan_transport_check.py` adds a sitewise boost-dual center amplitude `d_x` to this transport row. For phase-0 role-0 links `C_Y(z_x) C_B(-d_x)` and phase-2 links `C_Y(z_x)^(-1) C_B(+d_x)`, the literal phase-0 `B`-variation row is
+
+```text
+E_(K0,B)(x) = (3*d_x^2+4)/(3*d_x^2-4) * (sum_i f(x-e_i)^2 - 3*f(x)^2).
+```
+
+The exact replay treats the incident temporal `z` and `d` amplitudes as independent symbols; the row loses every `z` and depends only on the boost amplitude at the tested link. Its coefficient is nonzero throughout the real Cayley chart `4-3*d_x^2 != 0`. The block split explains why arbitrary spatial Y-rotations leave this row unchanged: they act trivially on the boost-dual plane, while preserving the transverse Y-area paired with the boost variation. Because `f` is time-independent, every spatial site has a phase-0 temporal representative. On a connected periodic spatial torus, stationarity therefore makes `f^2` backward-harmonic; the finite maximum principle forces `f` constant. This rules out a curved product-plane stationary rescue within the commuting Y/dual-center ansatz, including sitewise center retuning. It does not rule out transverse/non-Y corrections or establish a task-level terminal.
+
 The exact `delta^2` normal-jet forcing has now been evaluated in
 `a4d_y_curved_normaljet_degree2_obstruction_check.py`. The 96 connection
 equations admit a rational local jet through normal degree four. Before
