@@ -149,7 +149,7 @@ ck("ZONE_MINUS_WRAP_ONLY",zone_blocks[-1]=={("A",0,3)})
 ck("ZONE_PLUS_WRAP_ONLY",zone_blocks[1]=={("A",3,0),("C",3,0)})
 
 result={
- "schema":"a4d-y-curved-joint-torus-lipschitz-v2",
+ "schema":"a4d-y-curved-joint-torus-lipschitz-v3",
  "terminal":"A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED",
  "z":"1",
  "operator_shape":[136,96],
@@ -163,7 +163,7 @@ result={
    "row_column_scaling":"phase-p rows by mu^p; phase-q connection columns by mu^-q",
    "folded_variable":"w=mu^4",
    "power_counts":{str(k):zone_counts[k] for k in (-1,0,1)},
-   "wrap_blocks":{str(k):[list(x) for x in sorted(zone_blocks[k])] for k in (-1,0,1)}
+   "wrap_blocks":{str(k):[list(x) for x in sorted(zone_blocks[k])] for k in (-1,1)}
  },
  "metric":"theta coordinates, lambda_j=exp(i theta_j)",
  "proof":"entrywise Laurent derivative envelope plus ||M||_2 <= sqrt(||M||_1 ||M||_infinity)",
