@@ -1,12 +1,29 @@
-> **STATUS CORRECTION — supersedes the finite-defect interpretation at ea6e9d0.**
+> **STATUS CORRECTION — corrected normal-jet compatibility is now exact and pinned.**
 >
-> A follow-up literal-pairing audit found that the mixed metric/connection Bloch phase in the ea6e9d0 response assembly did not follow the same test-variable placement convention as the connection block. The flat z=0 control did not detect this because the sign enters quadratically there. Therefore the exported z=1 TT defect at ea6e9d0 must **not** be used as an on-shell or physical response obstruction.
+> The historical finite TT-defect interpretation at `ea6e9d0` is superseded. The mixed metric/connection Bloch placement is
+> [
+> D_QE_K:lambda^{-s},qquad D_KE_Q:lambda^{+s},
+> ]
+> because the metric variable is attached to the face base while the connection test/input is attached to the shifted factor. The flat `z=0` control cannot detect this sign because it enters quadratically.
 >
-> After correcting that phase convention in the follow-up calculation, a phase-resolved metric Euler term appears already at first slow order and vanishes only after four-phase averaging. Solving the full normal-jet compatibility problem, rather than the one-direction ansatz, removes most of these apparent defects. In the reported 20-component geodesic-normal curvature test, the linear compatibility system leaves one physical compatible curvature component; on that surviving component the corrected response agrees exactly with the flat Einstein control.
+> The replacement exact checker
+> `certificates/a4d_y_curved_normaljet_compatibility_check.py`
+> and pinned JSON
+> `certificates/a4d_y_curved_normaljet_compatibility_results.json`
+> certify the full four-direction, 20-curvature geodesic-normal calculation at `z=1`.
 >
-> The corrected replay/certificate for this follow-up result is **not yet present in this branch**. Until it is committed and independently replayed, treat the preceding paragraph as a reviewed execution result awaiting repository certification, not as a registered theorem.
+> The one-direction averaged `q12` coefficient is corrected to
+> [
+> -186451/236250,
+> ]
+> with difference (-34163/118125) from the flat (-1/2) control. This residual is not physical by itself: after phase-resolved joint compatibility and allowed spatial center variations, the 20-dimensional algebraic-curvature space is cut to one physical curvature direction.
 >
-> Consequently the task terminal remains OPEN. The smallest live blocker is now: construct the exact nonlinear stationary branch from the compatible genuinely-curved normal jet and prove a refinement-uniform remainder estimate strong enough that the h^-2-normalized response converges to the Einstein value; or produce a corrected on-shell compatible curvature direction with a persistent exact response defect.
+> Imposing only **fast-phase erasure** of the metric Euler output (smooth-source compatibility), not its value, leaves that same one-dimensional curvature direction. On it the emergent common response equals the flat Einstein control exactly. The surviving curvature operator is proportional to
+> [
+> -Yotimes Y,qquad Y=(1,-1,1)_{(12,13,23)}.
+> ]
+>
+> Current smallest blocker: exact nonlinear stationary continuation of this compatible genuinely-curved normal jet, followed by a refinement-uniform (o(h^2)) response remainder. No global positive or negative task terminal is claimed yet.
 
 # A4D joint response decoupling — stationary-center quotient
 
@@ -49,61 +66,162 @@ Separate the stationary center from transverse range directions. Normal rescue m
 
 The decisive finite test is the slow Bloch metric symbol around a genuinely curved point of the Y branch, with a Lyapunov–Schmidt reduction at the singular zero-momentum connection Hessian. No inverse of that singular Hessian is used.
 
-## 3. Exact finite-cell response at z = 1
+## 3. Corrected exact finite normal-jet theorem at z = 1
 
-The certificate a4d_y_curved_response_quotient_check.py reconstructs the full 96 by 96 connection Hessian from the four oriented face factors using exact rational arithmetic.
+The historical checker `a4d_y_curved_response_quotient_check.py` remains a regression fixture for the exact 96-by-96 Y connection Hessian, its rank data, and the bordered Lyapunov--Schmidt machinery. Its old physical TT-defect conclusion is superseded.
 
-At z = 0, the reconstructed Hessian equals the owned #275 matrix L2/2 entry by entry. Its exact rank is 80 and its kernel has dimension 16. This is the flat assembly control.
+The corrected checker reconstructs the same finite action but rebuilds the mixed blocks with literal placement signs. It proves:
 
-At z = 1, the Hessian has two independent exact null vectors: the right-log Y tangent and the phase-0/2 boost-dual direction. Clearing denominators by 14 and reducing modulo 1,000,003 gives rank at least 94; the two exact null vectors give rank at most 94. Hence the rational rank is exactly 94 and the center dimension is exactly two.
+- flat connection rank (80), kernel dimension (16), and the owned half-Einstein control;
+- curved (z=1) connection rank (94), center dimension (2);
+- reduced center matrix
+  [
+  operatorname{diag}(-2500/8967,-49/356);
+  ]
+- corrected one-axis averaged `q12` coefficient
+  [
+  -186451/236250;
+  ]
+- 20-dimensional algebraic Riemann normal-jet input.
 
-For Bloch modulation in role direction e0, set lambda = exp(t) and use one low-color metric perturbation q shared across the four phases. The exact reduced center matrix at order t² is diagonal with entries -2500/8967 and -49/356, so it is nondegenerate. The left-center compatibility conditions at orders zero and one vanish exactly. The connection range and center corrections are solved with a bordered exact system, and the certificate checks the full range equations and the reduced center equation with zero residual. The JSON exports the exact right-kernel columns, left-cokernel rows, and the 96-entry q12 range-correction witnesses at orders t⁰ and t¹.
+At the pure quadratic phase-resolved metric layer the condition matrix has rank (10) on (40) variables and does **not** restrict curvature: the kernel still projects with rank (20) to curvature space.
 
-The flat control reproduces the owned Einstein symbol: the coefficient of t² per site agrees entry by entry with one half of the linearized Einstein symbol in the repository Gram convention. Since t = i k0, this is the required negative one-half Einstein coefficient in physical k0².
+After adding all four slow directions, the connection Fredholm equations, phase-resolved first-slow metric equations, and spatial center gradients, the combined matrix has
 
-At z = 1 the transverse-traceless q12 component for momentum e0 has these exact coefficients per site:
+[
+oxed{operatorname{rank}=43,qquad dimker=5}
+]
 
-| Quantity | Coefficient of t² |
-|---|---:|
-| Flat Einstein control | -1/2 |
-| Curved Y branch, z = 1 | 38218/13125 |
-| Difference, curved minus flat | 89561/26250 |
+on (48) variables, while its projection to the 20-dimensional Riemann space has
 
-The full TT subspace for momentum e0 is spanned by q12 and q13. Its exact per-site defect matrix is [[89561/26250, -92753/52500], [-92753/52500, 89561/26250]], with determinant 2504701/294000, so the response mismatch survives the linearized diffeomorphism quotient. The q12 diagonal witness is already nonzero by itself. In physical k0² the matrix sign is reversed. The discrepancy is an exact rational Hessian/Schur response defect, not a floating-point or rank-threshold artifact.
+[
+oxed{operatorname{rank}=1}.
+]
 
-Two independent exact Schur evaluations at lambda = 1 + 1/20 and 1 + 1/100 converge toward the computed quadratic coefficient, with the latter error smaller. They are corroborating finite controls; the Lyapunov–Schmidt coefficient calculation is the exact derivation.
+Thus full joint compatibility cuts
 
-## 4. Reproduction
+[
+20 	ext{curvature directions}longrightarrow1.
+]
+
+The constant connection Fredholm condition is automatic on this five-dimensional kernel.
+
+## 4. Smooth-source test without imposing Einstein
+
+At constant slow order, do **not** set the metric Euler vector equal to the desired Einstein source. Require only that its ten components be identical on all four fast phases. This is the non-tautological smooth-source condition.
+
+The resulting system has
+
+[
+oxed{operatorname{rank}=5,qquad dimker=2},
+]
+
+and its curvature projection still has rank one.
+
+Only after this phase-erasure solve is complete is the common response compared with the flat control. The exact difference matrix has rank zero:
+
+[
+oxed{
+E_Q^{Y,mathrm{common}}
+=
+E_Q^{mathrm{flat Einstein}}
+}
+]
+
+on the entire smooth-source kernel.
+
+One kernel direction carries the physical curvature; the other is a pure stationary-center freedom.
+
+With the curvature normalized in the spatial bivector basis ((12,13,23)), the surviving curvature operator is
+
+[
+oxed{
+R_{mathrm{sp}}
+=
+-egin{pmatrix}
+1&-1&1\
+-1&1&-1\
+1&-1&1
+end{pmatrix}
+=
+-Yotimes Y,
+qquad Y=(1,-1,1).
+}
+]
+
+The corresponding common metric-response vector in the repository ten-coordinate order
+[
+(q_{00},q_{01},q_{02},q_{03},q_{11},q_{12},q_{13},q_{22},q_{23},q_{33})
+]
+is
+
+[
+oxed{
+(3/2,0,0,0,-1/2,-1,-1,-1/2,-1,-1/2),
+}
+]
+
+and the independently constructed flat Einstein control is exactly the same vector.
+
+This is a finite **normal-jet compatibility theorem**, not merely an averaged Schur coincidence.
+
+Current finite terminal:
+
+`A4D-Y-CURVED-NORMAL-JET-RESPONSE-COMPATIBLE`.
+
+## 5. Reproduction
 
 Run:
 
-    python3 02_REGISTRY/research/certificates/a4d_y_curved_response_quotient_check.py
+```bash
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
+```
 
-The script checks the flat owner match, exact flat and curved ranks, center vectors, Fredholm compatibility, nondegenerate reduced center matrix, exact range solves, Einstein control, TT non-gauge defect, direct-lambda convergence, and a hostile wrong-phase-transpose control that fails. It also compares its result with the pinned JSON. The certified finite-cell terminal is:
+The checker compares its complete invariant ledger with the pinned JSON. The historical `ea6e9d0` artifact is retained only as a regression control demonstrating why the mixed placement must be derived literally.
 
-    A4D-Y-CURVED-RESPONSE-QUOTIENT-OBSTRUCTED-AT-Z1-TT
+## 6. What this settles
 
-The JSON records the full 10 by 10 flat and curved t² matrices, center matrix, rank evidence, exact TT defect, and the finite scope.
+The dangerous statement
 
-## 5. What this settles and what it does not
+> a nonzero finite Y microstructure automatically produces a different smooth macroscopic metric response
 
-The coefficient identity S_z^[2] = S_0^[2] fails at the curved #232 vacuum z = 1 in a physical TT component. Therefore the proposed finite stationary-center response-equivalence identity is false in this tested direction. This is a concrete response-quotient obstruction at the Hessian level.
+is false at the corrected compatible normal-jet level.
 
-It does not yet close #310 negatively. The task requires an actual smooth-background, source-compatible exact joint-critical sequence in the genuine Lorentz quotient whose normalized response gap has a nonzero limit or liminf. A Hessian defect at one curved vacuum is not that nonlinear sequence. It also does not prove global homogenization failure for every source convention or every physical branch.
+For a generic normal curvature direction, the (z=1) Y microstructure is already cut by phase-resolved joint compatibility. The sole linear curvature direction that survives is aligned with the same Y bivector and is Einstein-response compatible.
+
+This is stronger than comparing two exact solutions with an already prescribed identical metric source: only phase erasure was imposed before the Einstein comparison.
 
 The following distinctions remain binding:
 
-- #232 is an exact curved nongauge joint vacuum at the flat metric and has zero metric response there.
-- #227 is curved and connection-stationary with nonzero metric response, but is not a joint-critical metric counterexample.
-- #275 supplies an exact slow off-shell coefficient, not an on-shell response residue.
-- #317 and #315 are algebraic character and local Smith controls, not nonlinear stationary-response theorems.
-- An identical-source comparison between two exact solutions is tautological.
+- #232 remains an exact curved nongauge joint vacuum at flat metric.
+- #227 remains connection-stationary but is not a joint-critical metric counterexample.
+- Orth3 remains an off-shell obstruction control.
+- #315/#317 remain local/algebraic resonance controls.
+- the corrected finite theorem does not itself construct a nonlinear curved smooth-background exact branch.
 
-## 6. Single remaining gate
+## 7. Single remaining gate
 
-The smallest missing result is a uniform nonlinear Lyapunov–Schmidt continuation of the z = 1 Y stationary center over a genuinely curved sampled smooth metric, with the declared #216 comparator and source convention, and with a remainder that is o(1) after the h^-2 normalization. The exact TT Hessian defect supplies the candidate nonzero response gap; the continuation must show that it persists on an exact source-compatible joint-critical sequence.
+The smallest missing result is now:
 
-Until that continuation is proved or refuted, keep PR #310 Draft and Lifecycle IN_PROGRESS. Do not promote the finite certificate to either task terminal:
+[
+oxed{
+	ext{exact nonlinear stationary continuation of the }-Yotimes Y
+	ext{ compatible curved normal jet}
+}
+]
 
-- Positive: A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED.
-- Negative: A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO.
+together with a refinement-uniform estimate
+
+[
+left|
+E_Q(Q_h,K_h)-E_Q(Q_h,K_h^{sm})
+ight|
+=o(h^2).
+]
+
+A positive continuation with this remainder closes the Y microstructure threat and supplies the central response-decoupling mechanism. A negative continuation obstruction that kills the finite-amplitude Y branch on curved metrics also supports the positive Einstein route, provided shrinking-amplitude branches are controlled.
+
+PR #310 remains Draft / IN_PROGRESS. Do not promote either global task terminal until this nonlinear gate is resolved:
+
+- Positive: `A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED`.
+- Negative: `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO`.
