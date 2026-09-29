@@ -356,12 +356,11 @@ def eval_ycoeff(A,x,p):
         for a in range(A.shape[0]-1,-1,-1):
             v=(v*x+int(A[a,b]))%p
         out[b]=v
-    while len(out)>1 and out[-1]==0: out=out[:-1]
     return out
 
 def resultant_at(A,B,x,p):
     a=eval_ycoeff(A,x,p); b=eval_ycoeff(B,x,p)
-    m=len(a)-1; n=len(b)-1
+    m=A.shape[1]-1; n=B.shape[1]-1
     M=np.zeros((m+n,m+n),dtype=np.int64)
     ad=a[::-1]; bd=b[::-1]
     for r in range(n): M[r,r:r+m+1]=ad
