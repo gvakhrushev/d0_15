@@ -5,6 +5,12 @@ Execution PR: #310
 Status: `IN_PROGRESS` / nonlinear continuation open
 Action: unchanged naked star action; no added selector or torsion equation.
 
+## Work mode for the theory-closure worker
+
+Use the current head of PR #310 on `exp/a4d-joint-response-resolvent` as the source baseline; the corrected certificates and this brief are on that branch, not yet on the default branch. Prioritize a rigorous analytic derivation of the nonlinear reduction, continuation, or exact obstruction. Reuse the pinned finite certificates instead of rerunning expensive searches or large symbolic pipelines. Small checks are welcome; if a substantial exact computation is needed, specify its rational inputs, conventions, expected output, and a local replay recipe for the owner to run.
+
+Keep every claim within its proved scope. In particular, do not promote the unverified rank-4 response-by-curvature claim, the unverified site scalar `2626083/44800`, the one-witness pairing, or finite normal-jet compatibility to a nonlinear theorem. Do not mark either terminal unless its complete proof obligation below is met.
+
 ## Corrected finite result
 
 The result at `ea6e9d0` used the wrong mixed Bloch placement and its finite TT-defect interpretation is withdrawn. The corrected convention is connection equation `lambda^(-s)` and metric readout `lambda^(+s)`.
