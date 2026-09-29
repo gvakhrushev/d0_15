@@ -38,6 +38,10 @@ and
 
 where `s=t1+t2+t3` and `r_perp^2=t1^2+t2^2+t3^2-s^2/3`. These are two transported `2+1` hyperbolic envelope modes; there is no elliptic spectral gap. This is only the quadratic principal symbol. It does not prove nonlinear envelope existence or an energy estimate.
 
+The exact dual-center visibility check gives a second boundary at zero slow momentum: its finite Cayley path has zero connection Euler on all 96 rows, while its metric response alternates sign between the first and second phase pairs. The four-phase average vanishes, but requiring the metric Euler output to be equal on all four phases forces the dual amplitude to zero near the origin.
+
+The small-amplitude Schur certificate starts from the 16-dimensional flat connection kernel and gives effective ranks `(0,0,12,12,14,14,14)` through order six. After the order-two reduction, four directions remain; the order-four and order-five reduced blocks vanish, and the order-six block is `diag(0,0,9/8,3/8)`. Thus twelve transverse directions first lift at order two, two soft transverse directions at order six, and two exact center directions remain. The worst inverse loss is `O(z^-6)`, so this finite splitting does not supply the uniform estimate needed for the continuum limit.
+
 ## Site-resolved source response on the `t0/t1` compatible class
 
 The certificate `a4d_y_phase_resolved_compatible_response_check.py` independently builds the four-phase, 40-component metric source space at `z=1` for the `e0` axis. Its first two exact Fredholm conditions have ranks 1 and 2, leaving a 37-dimensional source class. The second-order averaged response defect has rank 8 on that class. The averaged first-order response has rank 4 there, although it vanishes on the ten-dimensional phase-independent source subspace. On that phase-independent subspace, the single-source defect has rank 6 and its `q12` coefficient is `-34163/118125`, matching the corrected four-axis certificate.
@@ -53,11 +57,13 @@ From the repository root:
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_dual_center_joint_visibility_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py
 ```
 
-The first checker also records the submitted report JSON as provenance; it cross-checks its aggregate four-axis fields, not the report's per-site `q12` arrays. The normal-jet checker owns the curvature normal-jet compatibility theorem. The center-symbol checker verifies the two hyperbolic principal forms. The phase-resolved source-response checker verifies the 37-dimensional `t0/t1` compatible class and its restricted second-order response; its output JSON records the projection convention and does not assert a nonlinear result.
+The first checker also records the submitted report JSON as provenance; it cross-checks its aggregate four-axis fields, not the report's per-site `q12` arrays. The normal-jet checker owns the curvature normal-jet compatibility theorem. The dual-center and center-symbol checks distinguish the staggered flat mode from the two hyperbolic principal forms. The small-amplitude checker certifies the zero-momentum splitting through order six. The phase-resolved source-response checker verifies the 37-dimensional `t0/t1` compatible class and its restricted second-order response; its output JSON records the projection convention and does not assert a nonlinear result.
 
 ## Remaining target: nonlinear continuation
 

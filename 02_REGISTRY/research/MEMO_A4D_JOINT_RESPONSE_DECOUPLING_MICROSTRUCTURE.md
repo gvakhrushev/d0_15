@@ -78,6 +78,10 @@ and
 
 These are two transported `2+1` hyperbolic envelope modes, not an elliptic range with a spectral gap. The exact symbol fixes the linear principal part only; nonlinear envelope existence, energy estimates, and uniform coupling to the transverse range remain open.
 
+## Small-amplitude splitting at zero slow momentum
+
+The exact checker `a4d_y_small_amplitude_kernel_splitting_check.py` reduces the flat 16-dimensional connection kernel twice. The effective ranks through order six are `(0,0,12,12,14,14,14)`. After the order-two block, four directions remain; the reduced order-four and order-five blocks vanish, while the order-six block is `diag(0,0,9/8,3/8)`. The final kernel consists of the exact Y and boost-dual center tangents. Twelve transverse modes lift at order two, two soft modes at order six, and the worst inverse loss is `O(z^-6)`. This exact zero-momentum splitting identifies the small-amplitude conditioning that a nonlinear uniform estimate must control; it is not itself an `h`-uniform continuation theorem.
+
 ## Site-resolved source response on a 37-dimensional compatibility class
 
 The follow-up certificate `a4d_y_phase_resolved_compatible_response_check.py` builds the 40-dimensional, four-phase metric-source problem for the `e0` axis at `z=1`. The exact zero-order and first-order Fredholm maps have ranks 1 and 2, so their common kernel has dimension 37. Solving the range and two center equations through second order gives a defect of rank 8 on this class. Its averaged first-order response has rank 4 on the full class but vanishes on the phase-independent ten-dimensional source subspace. The phase-independent second-order defect has rank 6 and reproduces the previously pinned `q12` value `-34163/118125`.
@@ -91,11 +95,13 @@ From the repository root, run:
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_dual_center_joint_visibility_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py
 ```
 
-The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies the curvature normal-jet compatibility and Einstein response. The third verifies the exact principal symbol of the two center envelopes. The fourth verifies the 37-dimensional site-resolved source-response class and its projected defect map. Each current checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
+The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The final command verifies the 37-dimensional site-resolved source-response class and its projected defect map. Each checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
 
 The submitted aggregate JSON has SHA-256 `79e6db7d96a0863a6af56e94752d080d5505a7fc47a307b752269dd092c4e230`. Its per-site `q12` arrays are not separately asserted by the aggregate checker.
 
