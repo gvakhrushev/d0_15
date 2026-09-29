@@ -88,6 +88,12 @@ The follow-up certificate `a4d_y_phase_resolved_compatible_response_check.py` bu
 
 The 10-by-40 defect matrix extends the map from the compatible class by Euclidean orthogonal projection; the checker states this convention explicitly. It is a finite source-response calculation, separate from the curvature normal-jet system, and does not alter the latter's Einstein match after spatial center-gradient and fast-phase-erasure constraints. The submitted value `2626083/44800` lacks a specified source vector/projection in the provided package and is not treated as verified.
 
+## Phase-independent single-source curvature witness
+
+The exact checker `a4d_y_singleq_curvature_witness_check.py` verifies that the phase-independent `R^10` metric source has zero order-zero and order-one connection cokernel ranks at both the flat and `z=1` curved vacua. For the `q12` source, the corrected center amplitude is `(-3311/3750,0)` and the exact second-order defect has rank 6 with coefficient `-34163/118125`.
+
+The reported sparse 10-by-10 jet matrix lies in the image of the exact 20-dimensional algebraic Riemann normal-jet map. Its Frobenius pairing with the single-source response defect is `-27247/17500`. This establishes a finite nonzero pairing for the single-axis response. The witness has not been shown to satisfy the full coupled spatial-center and fast-phase-erasure constraints; the full normal-jet certificate still leaves only `-Y tensor Y`, with the Einstein response. The pairing does not establish a physical no-go or a nonlinear branch.
+
 ## Reproduction
 
 From the repository root, run:
@@ -99,9 +105,10 @@ python3 02_REGISTRY/research/certificates/a4d_y_dual_center_joint_visibility_che
 python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_singleq_curvature_witness_check.py
 ```
 
-The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The final command verifies the 37-dimensional site-resolved source-response class and its projected defect map. Each checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
+The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The final two verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. Each current checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
 
 The submitted aggregate JSON has SHA-256 `79e6db7d96a0863a6af56e94752d080d5505a7fc47a307b752269dd092c4e230`. Its per-site `q12` arrays are not separately asserted by the aggregate checker.
 

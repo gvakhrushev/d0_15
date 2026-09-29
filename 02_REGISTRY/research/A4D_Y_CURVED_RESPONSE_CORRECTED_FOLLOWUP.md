@@ -50,6 +50,12 @@ For a 10-by-40 matrix on all source coordinates, the checker explicitly extends 
 
 The submitted scalar `2626083/44800` is not adopted: the supplied JSON does not identify the source vector or projection defining that `q12` value, and it is not the phase-independent `q12` coefficient under the pinned convention.
 
+## Leading-order phase-independent source and curvature witness
+
+The certificate `a4d_y_singleq_curvature_witness_check.py` independently verifies the latest consolidated single-source result. For one metric `q` shared across the four phases, both the curved order-zero and order-one connection cokernel maps have rank zero; the flat controls also have rank zero. The `q12` source excites the two center amplitudes by `(-3311/3750, 0)`, and its corrected second-order defect has rank 6 with `q12` coefficient `-34163/118125`.
+
+The same checker verifies the supplied 10-by-10 normal-jet matrix as an element of the 20-dimensional algebraic Riemann-jet image. Its Frobenius pairing with the single-source defect is exactly `-27247/17500`. Six generators in the checker’s deterministic Riemann basis have nonzero pairings; that count depends on basis choice, while the explicit matrix and its nonzero pairing do not. This is a finite witness for the single-axis response map. It has not been shown to satisfy the full coupled slow-center and fast-phase-erasure system; the separate full normal-jet certificate still leaves only `-Y tensor Y` and matches Einstein on that surviving direction.
+
 ## Reproduction
 
 From the repository root:
@@ -61,9 +67,10 @@ python3 02_REGISTRY/research/certificates/a4d_y_dual_center_joint_visibility_che
 python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_singleq_curvature_witness_check.py
 ```
 
-The first checker also records the submitted report JSON as provenance; it cross-checks its aggregate four-axis fields, not the report's per-site `q12` arrays. The normal-jet checker owns the curvature normal-jet compatibility theorem. The dual-center and center-symbol checks distinguish the staggered flat mode from the two hyperbolic principal forms. The small-amplitude checker certifies the zero-momentum splitting through order six. The phase-resolved source-response checker verifies the 37-dimensional `t0/t1` compatible class and its restricted second-order response; its output JSON records the projection convention and does not assert a nonlinear result.
+The first checker also records the submitted report JSON as provenance; it cross-checks its aggregate four-axis fields, not the report's per-site `q12` arrays. The normal-jet checker owns the full curvature compatibility theorem. The dual-center and center-symbol checks distinguish the staggered flat mode from the two hyperbolic principal forms. The small-amplitude checker certifies the zero-momentum splitting through order six. The phase-resolved source-response checker verifies the 37-dimensional `t0/t1` compatible class. The single-source witness checker verifies the corrected phase-independent defect and its explicit algebraic curvature pairing; neither is a nonlinear continuation result.
 
 ## Remaining target: nonlinear continuation
 
