@@ -281,15 +281,13 @@ def eval_ycoeff(C,x,p):
         for a in range(C.shape[0]-1,-1,-1):
             v=(v*x+int(C[a,b]))%p
         out[b]=v
-    while len(out)>1 and out[-1]==0:
-        out=out[:-1]
     return out
 
 def resultant_at(A,B,x,p):
     a=eval_ycoeff(A,x,p)
     b=eval_ycoeff(B,x,p)
-    m=len(a)-1
-    n=len(b)-1
+    m=A.shape[1]-1
+    n=B.shape[1]-1
     Sly=np.zeros((m+n,m+n),dtype=np.int64)
     ad=a[::-1]
     bd=b[::-1]
