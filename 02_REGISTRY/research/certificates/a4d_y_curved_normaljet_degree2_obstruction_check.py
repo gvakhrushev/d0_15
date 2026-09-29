@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# D0_CI_TIMEOUT_SECONDS=300
-"""Exact degree-two reduced cokernel obstruction in the Y curved normal jet.
+# D0_CI_TIMEOUT_SECONDS=900
+"""Exact degree-two reduced metric phase-readout defect in the Y normal jet.
 
 The check expands the literal phase-resolved Euler map through delta^2 for
 the surviving R=-kappa beta tensor beta normal jet, using the pinned first
@@ -9,10 +9,14 @@ rows, all 40 metric rows, the free degree-four Y correction, and an arbitrary
 phase-common metric source. The degree-three equations force the degree-four
 kernel correction to zero. After exact range elimination, a rational left
 witness isolates the xi_3^2 coefficient and proves that no formal smooth
-second connection normal jet solves this slice.
+second connection normal jet has an exactly phase-common metric readout on
+this slice. The 96 connection equations themselves are solved through the
+same degree-four Taylor order.
 
-This is a finite normal-jet obstruction, not a global no-go or a uniform
-refinement theorem.
+This is a finite normal-jet result, not a connection no-go or a uniform
+refinement theorem. It also extracts the exact zero-momentum connection
+cokernel source for a constant-center seed and verifies its cancellation by
+the spatially varying center jet in the connection-only solution.
 """
 from __future__ import annotations
 
@@ -44,6 +48,11 @@ def check(name: str, condition: bool) -> None:
 
 def rank_exact(matrix: sp.Matrix) -> int:
     return DomainMatrix.from_Matrix(matrix).convert_to(QQ).rank()
+
+
+def matrix_json(matrix: sp.Matrix) -> list[list[str]]:
+    return [[str(sp.factor(matrix[i, j])) for j in range(matrix.cols)]
+            for i in range(matrix.rows)]
 
 
 def smul(left, right):
@@ -328,6 +337,169 @@ def run(write: bool = False) -> dict:
         expr = monomial(exponent)
         return sp.Matrix([poly.coeff_monomial(expr) for poly in forcing_polys])
 
+    # First answer the physical branch question: can the 96 connection
+    # equations themselves be solved through this order, without imposing
+    # phase equality on the metric readout?
+    jet_monomials = [tuple(e) for e in itertools.product(range(5), repeat=4) if sum(e) <= 4]
+    jet_monomials.sort(key=lambda e: (-sum(e), e))
+    jet_index = {alpha: i for i, alpha in enumerate(jet_monomials)}
+    shift_moments = {nu: sp.zeros(96) for nu in jet_monomials}
+    for phase, a, b, locs, local, Hloc, factors in faces:
+        shifts = [(0, 0, 0, 0), tuple(int(r == a) for r in range(4)),
+                  tuple(int(r == b) for r in range(4)), (0, 0, 0, 0)]
+        slot_shifts = []
+        for position in range(4):
+            slot_shifts += [shifts[position]] * 6
+        for ii, (_pi, _gi, gi) in enumerate(local):
+            for jj, (_pj, _gj, gj) in enumerate(local):
+                difference = [slot_shifts[jj][r] - slot_shifts[ii][r] for r in range(4)]
+                for nu in jet_monomials:
+                    if not any(nu):
+                        continue
+                    coefficient = sp.prod(
+                        sp.Rational(difference[r] ** nu[r], math.factorial(nu[r]))
+                        for r in range(4)
+                    )
+                    if coefficient:
+                        shift_moments[nu][gi, gj] += Hloc[ii, jj] * coefficient
+    shift_moments[(0, 0, 0, 0)] = H
+    check("CONNECTION_SHIFT_MOMENTS_MATCH_FIRST", all(
+        shift_moments[tuple(int(i == r) for i in range(4))] == A1[r]
+        for r in range(4)
+    ))
+    check("CONNECTION_SHIFT_MOMENTS_MATCH_SECOND", all(
+        shift_moments[tuple(int(k == i) + int(k == j) for k in range(4))] == A2[(i, j)]
+        for i, j in C.DIRPAIRS
+    ))
+
+    connection_left = DomainMatrix.from_Matrix(H.T).convert_to(QQ).nullspace().to_Matrix()
+    connection_kernel = DomainMatrix.from_Matrix(H).convert_to(QQ).nullspace().to_Matrix().T
+    check("CONNECTION_ONLY_KERNEL_AND_COKERNEL_ARE_TWO",
+          connection_left.shape == (2, 96) and connection_kernel.shape == (96, 2))
+    _, h_columns = H.rref()
+    _, h_rows = H.T.rref()
+    check("CONNECTION_RANGE_PIVOTS_94", len(h_columns) == len(h_rows) == 94)
+    h_inverse = H.extract(list(h_rows), list(h_columns)).inv()
+    h_range_inverse = sp.zeros(96)
+    for i, column in enumerate(h_columns):
+        for j, row in enumerate(h_rows):
+            h_range_inverse[column, row] = h_inverse[i, j]
+    check("CONNECTION_RANGE_RIGHT_INVERSE", H * h_range_inverse * H == H)
+
+    center_count = connection_kernel.cols * len(jet_monomials)
+    center_column = lambda alpha, mode: connection_kernel.cols * jet_index[alpha] + mode
+    connection_jets = {}
+    cokernel_equations = []
+    processed_degree = None
+    for gamma in jet_monomials:
+        degree = sum(gamma)
+        if processed_degree is not None and degree != processed_degree:
+            print("BUILT_CONNECTION_JET_COEFFICIENTS_DEGREE", processed_degree, flush=True)
+        processed_degree = degree
+
+        rhs = sp.zeros(96, center_count + 1)
+        rhs[:, 0] = -sp.Matrix([poly.coeff_monomial(monomial(gamma))
+                                for poly in forcing_polys[:96]])
+        for nu in jet_monomials:
+            if not any(nu):
+                continue
+            alpha = tuple(gamma[r] + nu[r] for r in range(4))
+            if alpha not in connection_jets:
+                continue
+            derivative_factor = sp.prod(
+                math.factorial(alpha[r]) // math.factorial(gamma[r]) for r in range(4)
+            )
+            rhs -= derivative_factor * shift_moments[nu] * connection_jets[alpha]
+
+        left_equations = connection_left * rhs
+        for row in range(connection_left.rows):
+            cokernel_equations.append(left_equations[row, :])
+
+        correction = h_range_inverse * rhs
+        for mode in range(connection_kernel.cols):
+            correction[:, 1 + center_column(gamma, mode)] += connection_kernel[:, mode]
+        connection_jets[gamma] = correction
+    print("BUILT_CONNECTION_JET_COEFFICIENTS_DEGREE", processed_degree, flush=True)
+
+    connection_equations = sp.Matrix.vstack(*cokernel_equations)
+    connection_matrix = connection_equations[:, 1:]
+    connection_rhs = -connection_equations[:, 0]
+    connection_rank = rank_exact(connection_matrix)
+    connection_augmented_rank = rank_exact(connection_matrix.row_join(connection_rhs))
+    check("CONNECTION_ONLY_JET_REDUCED_RANK_30", connection_rank == 30)
+    check("CONNECTION_ONLY_JET_AUGMENTED_RANK_30", connection_augmented_rank == 30)
+    _, center_columns = connection_matrix.rref()
+    _, center_rows = connection_matrix.T.rref()
+    center_values = sp.zeros(center_count, 1)
+    if connection_rank:
+        center_square = connection_matrix.extract(list(center_rows), list(center_columns))
+        center_solution = center_square.inv() * connection_rhs[list(center_rows), :]
+        for index, column in enumerate(center_columns):
+            center_values[column] = center_solution[index]
+    check("CONNECTION_ONLY_JET_CENTER_SOLUTION", connection_matrix * center_values == connection_rhs)
+
+    # Isolate the zero-normal-momentum connection cokernel equation.  Its
+    # constant-center columns must vanish (a constant kernel shift is still
+    # in ker H); any cancellation can only come from spatially varying center
+    # coefficients transported into the constant equation by the shift
+    # moments.  This is the exact quadratic Lyapunov--Schmidt coefficient on
+    # the stationary/constant-center seed for this prescribed normal jet.
+    zero_multi = (0, 0, 0, 0)
+    zero_block = connection_equations[
+        2 * jet_index[zero_multi]:2 * (jet_index[zero_multi] + 1), :
+    ]
+    zero_source = zero_block[:, 0]
+    zero_center_map = zero_block[:, 1:]
+    constant_center_columns = [center_column(zero_multi, mode)
+                               for mode in range(connection_kernel.cols)]
+    check("ZERO_MODE_CONSTANT_CENTER_COLUMNS_VANISH",
+          all(zero_center_map[:, column] == sp.zeros(2, 1)
+              for column in constant_center_columns))
+    zero_center_only = zero_source + sum(
+        (zero_center_map[:, column] * center_values[column]
+         for column in constant_center_columns), sp.zeros(2, 1)
+    )
+    check("ZERO_MODE_CONSTANT_SEED_PROJECTED_SOURCE_EXACT",
+          zero_center_only == zero_source)
+    positive_center_columns = [column for alpha in jet_monomials if sum(alpha) > 0
+                               for mode in range(connection_kernel.cols)
+                               for column in [center_column(alpha, mode)]]
+    zero_mode_transport = zero_center_map[:, positive_center_columns] * \
+        center_values[positive_center_columns, :]
+    check("ZERO_MODE_TRANSPORT_CANCELLED_BY_FULL_CENTER_JET",
+          zero_source + zero_mode_transport == sp.zeros(2, 1))
+    print("CONSTANT_CENTER_COKERNEL_SOURCE", list(zero_source), flush=True)
+    print("SPATIALLY_VARYING_CENTER_TRANSPORT", list(zero_mode_transport), flush=True)
+
+    nonzero_center_coefficients = []
+    for alpha in jet_monomials:
+        for mode in range(connection_kernel.cols):
+            value = center_values[center_column(alpha, mode)]
+            if value:
+                nonzero_center_coefficients.append({
+                    "monomial": list(alpha), "kernel_basis_index": mode, "coefficient": str(value)
+                })
+
+    for gamma in jet_monomials:
+        value = connection_jets[gamma][:, 0] + connection_jets[gamma][:, 1:] * center_values
+        residual = H * value + sp.Matrix([
+            poly.coeff_monomial(monomial(gamma)) for poly in forcing_polys[:96]
+        ])
+        for nu in jet_monomials:
+            if not any(nu):
+                continue
+            alpha = tuple(gamma[r] + nu[r] for r in range(4))
+            if alpha not in connection_jets:
+                continue
+            derivative_factor = sp.prod(
+                math.factorial(alpha[r]) // math.factorial(gamma[r]) for r in range(4)
+            )
+            shifted_value = connection_jets[alpha][:, 0] + connection_jets[alpha][:, 1:] * center_values
+            residual += derivative_factor * shift_moments[nu] * shifted_value
+        if residual != sp.zeros(96, 1):
+            raise AssertionError(f"connection jet residual at {gamma}")
+    check("ALL_96_CONNECTION_ROWS_SOLVED_THROUGH_DEGREE_FOUR", True)
+
     # The degree-three equations solve for the only free degree-four center jet.
     reduced3 = sp.zeros(31 * len(degree3), len(degree4))
     rhs3 = sp.zeros(31 * len(degree3), 1)
@@ -484,9 +656,97 @@ def run(write: bool = False) -> dict:
     primitive_euler_pairing = (lifted_witness * effective_forcing)[0]
     check("PRIMITIVE_EULER_WITNESS_IS_NONZERO", primitive_euler_pairing != 0)
 
+    # Evaluate the complete order-delta^2 metric response of the connection
+    # solution, then separate its phase-common and phase-difference parts.
+    metric_shift_moments = {nu: sp.zeros(40, 96) for nu in jet_monomials}
+    label_index = {label: index for index, label in enumerate(labels)}
+    unit = [I4[:, j] for j in range(4)]
+    for phase, a, b, locations, local, Hloc, factors in faces:
+        shifts = [(0, 0, 0, 0), tuple(int(r == a) for r in range(4)),
+                  tuple(int(r == b) for r in range(4)), (0, 0, 0, 0)]
+        ucol, vcol = [j for j in range(4) if j not in (a, b)]
+        darea = []
+        for qa, qb in B.SYM:
+            dS = B.metric_lift(qa, qb)
+            darea.append(B.wedge(dS[:, ucol], unit[vcol]) +
+                         B.wedge(unit[ucol], dS[:, vcol]))
+        for position, (phase_link, role, inverse) in enumerate(locations):
+            offset = shifts[position]
+            for generator_index, X in enumerate(GEN):
+                varied_factor = -X * factors[position] if inverse else factors[position] * X
+                dplaquette = I4
+                for nfactor, factor in enumerate(factors):
+                    dplaquette = dplaquette * (varied_factor if nfactor == position else factor)
+                dcurvature = (dplaquette - B.linv(dplaquette)) / 2
+                dcurv_biv = B.biv(dcurvature)
+                connection_row = label_index[(phase_link, role, generator_index)]
+                for metric_index, area_variation in enumerate(darea):
+                    value = sp.cancel(B.orientation(a, b) *
+                                      (area_variation.T * G2 * STAR * dcurv_biv)[0])
+                    row = 10 * phase + metric_index
+                    for nu in jet_monomials:
+                        coefficient = sp.prod(
+                            sp.Rational(offset[r] ** nu[r], math.factorial(nu[r]))
+                            for r in range(4)
+                        )
+                        if coefficient:
+                            metric_shift_moments[nu][row, connection_row] += coefficient * value
+
+    check("METRIC_SHIFT_MOMENTS_MATCH_ZERO", metric_shift_moments[(0, 0, 0, 0)] == C0)
+    check("METRIC_SHIFT_MOMENTS_MATCH_FIRST", all(
+        metric_shift_moments[tuple(int(i == r) for i in range(4))] == C1[r]
+        for r in range(4)
+    ))
+    check("METRIC_SHIFT_MOMENTS_MATCH_SECOND", all(
+        metric_shift_moments[tuple(int(k == i) + int(k == j) for k in range(4))] == C2[(i, j)]
+        for i, j in C.DIRPAIRS
+    ))
+
+    phase_common = sp.zeros(40, 10)
+    for phase in range(4):
+        phase_common[10 * phase:10 * (phase + 1), :] = sp.eye(10)
+    phase_projector = phase_common * phase_common.T / 4
+    metric_delta2 = {}
+    phase_defect_delta2 = {}
+    for gamma in jet_monomials:
+        output = sp.Matrix([poly.coeff_monomial(monomial(gamma))
+                            for poly in forcing_polys[96:]])
+        for nu in jet_monomials:
+            alpha = tuple(gamma[r] + nu[r] for r in range(4))
+            if alpha not in connection_jets:
+                continue
+            derivative_factor = sp.prod(
+                math.factorial(alpha[r]) // math.factorial(gamma[r]) for r in range(4)
+            )
+            correction = (connection_jets[alpha][:, 0] +
+                         connection_jets[alpha][:, 1:] * center_values)
+            output += derivative_factor * metric_shift_moments[nu] * correction
+        metric_delta2[gamma] = output
+        phase_defect_delta2[gamma] = (sp.eye(40) - phase_projector) * output
+
+    metric_component_bound = max(
+        sum(abs(metric_delta2[gamma][row]) for gamma in jet_monomials)
+        for row in range(40)
+    )
+    phase_defect_bound = max(
+        sum(abs(phase_defect_delta2[gamma][row]) for gamma in jet_monomials)
+        for row in range(40)
+    )
+    phase_defect_nonzeros = sum(
+        value != 0 for gamma in jet_monomials for value in phase_defect_delta2[gamma]
+    )
+    check("CONNECTION_METRIC_PHASE_DEFECT_IS_NONZERO", phase_defect_nonzeros > 0)
+    check("METRIC_PHASE_DEFECT_CELL_BOUND_LT_11000", phase_defect_bound < 11000)
+    xi3_squared = (0, 0, 0, 2)
+    metric_coefficient_pairing = (
+        sp.Matrix([integer_witness[96:]]) * phase_defect_delta2[xi3_squared]
+    )[0]
+    check("INTEGER_JOINT_WITNESS_DETECTS_CONNECTION_METRIC_DEFECT",
+          metric_coefficient_pairing != 0)
+
     result = {
-        "schema": "a4d-y-curved-normaljet-degree2-obstruction-v1",
-        "terminal": "A4D-Y-NORMALJET-DEGREE2-FREDHOLM-OBSTRUCTION",
+        "schema": "a4d-y-curved-normaljet-degree2-phase-readout-v1",
+        "terminal": "A4D-Y-NORMALJET-DEGREE2-PHASE-READOUT-DEFECT",
         "scope": "normalized surviving Y curvature direction at z=1; exact delta^2 Euler normal jet; arbitrary phase-common metric source retained",
         "normal_jet_source": "a4d_y_curved_normaljet_compatibility_results.json",
         "forcing_degree_counts": {
@@ -504,6 +764,35 @@ def run(write: bool = False) -> dict:
             ),
             "degree0_nonzero_entries": sum(poly.coeff_monomial(1) != 0 for poly in forcing_polys),
         },
+        "connection_only_jet": {
+            "rows": 96,
+            "normal_coordinate_monomials_through_degree_four": len(jet_monomials),
+            "center_variables": center_count,
+            "reduced_cokernel_matrix_shape": list(connection_matrix.shape),
+            "reduced_rank": connection_rank,
+            "augmented_rank": connection_augmented_rank,
+            "compatible": connection_rank == connection_augmented_rank,
+            "primitive_particular_center_coefficients": nonzero_center_coefficients,
+            "all_connection_rows_solved_exactly": True,
+            "constant_center_cokernel": {
+                "left_kernel_basis_rows": matrix_json(connection_left),
+                "left_kernel_row_order": "connection row=(phase*4+role)*6+generator",
+                "stationary_seed_projected_source": [str(value) for value in zero_center_only],
+                "constant_kernel_columns_vanish": True,
+                "spatial_center_transport": [str(value) for value in zero_mode_transport],
+                "full_center_jet_cancels_zero_mode": True,
+                "stationary_seed_definition": "both center amplitudes have zero positive-degree normal-coordinate coefficients",
+                "interpretation": "the projected source is nonzero, so the constant-center restriction fails at delta^2; allowing a spatially varying center jet cancels it on this finite normal jet",
+            },
+        },
+        "metric_response_delta2": {
+            "phase_difference_nonzero_coefficients": phase_defect_nonzeros,
+            "componentwise_l1_bound_on_abs_xi_le_1": str(metric_component_bound),
+            "phase_difference_l1_bound_on_abs_xi_le_1": str(phase_defect_bound),
+            "verified_simple_phase_difference_bound": "11000",
+            "normalization": "delta^2=kappa^2*h^4; bounds are for the coefficient at delta^2",
+            "primitive_joint_witness_pairing_on_selected_coefficient": str(metric_coefficient_pairing),
+        },
         "joint_dimensions": {
             "connection_hessian_rank": 94,
             "fixed_metric_joint_rank": 95,
@@ -516,7 +805,7 @@ def run(write: bool = False) -> dict:
             "degree2_reduced_rank": rank2,
             "degree2_augmented_rank": augmented2,
         },
-        "obstruction": {
+        "phase_common_obstruction": {
             "normal_coordinate_monomial": "xi3^2",
             "reduced_basis_primitive_pairing": str(integer_pairing),
             "primitive_euler_witness_pairing": str(primitive_euler_pairing),
@@ -535,8 +824,8 @@ def run(write: bool = False) -> dict:
             },
         },
         "nonclaims": [
-            "this is a finite formal normal-jet obstruction for the declared normalized curvature slice, not a no-go for every background or nonsmooth h-dependent sequence",
-            "no all-background continuation or refinement-uniform nonlinear theorem is claimed",
+            "the phase-common metric readout condition fails at order delta^2, but this alone is not an obstruction to the 96 connection stationarity equations",
+            "this finite normal-jet result does not prove an all-background continuation or a refinement-uniform nonlinear theorem",
         ],
     }
     if write:
@@ -544,7 +833,7 @@ def run(write: bool = False) -> dict:
         print("WROTE", RESULT_PATH, flush=True)
     else:
         check("RESULTS_MATCH_PINNED_JSON", result == json.loads(RESULT_PATH.read_text()))
-    print("OBSTRUCTION_PAIRING", integer_pairing, flush=True)
+    print("PHASE_READOUT_PAIRING", integer_pairing, flush=True)
     print("TERMINAL", result["terminal"], flush=True)
     return result
 

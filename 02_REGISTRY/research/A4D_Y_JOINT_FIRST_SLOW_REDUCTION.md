@@ -308,7 +308,7 @@ negative G_h image, up to the retained kernel. If it fails, no C2 branch
 with that prescribed metric/source curve has the specified tangent.
 This is an actual reduced equation, not an off-shell response pairing.
 
-## 7. First nonlinear curved gate; one exact slice is obstructed
+## 7. First nonlinear curved gate; one exact metric readout slice is obstructed
 
 The nonlinear curved forcing on the surviving local normal-jet sector has
 now been evaluated exactly on the normalized curvature slice below. Let beta be the
@@ -350,10 +350,10 @@ For general Gram variations use the actual analytic coframe derivative
 (the Sylvester equation for the square root), not the identity-frame
 lift eta*q/2 away from Q=eta. Report the common response at the normal
 point only after compatibility. The calculation below is a formal local
-obstruction on one normalized curvature slice; it is not a global or
-refinement-uniform theorem.
+connection continuation and metric phase-readout test on one normalized
+curvature slice; it is not a global or refinement-uniform theorem.
 
-### 7.1 Exact degree-two reduced obstruction
+### 7.1 Exact connection jet and metric phase defect
 
 The normal-jet owner now verifies exactly that the normalized surviving
 first connection tangent has no quadratic term in `xi`, so it is linear in
@@ -374,20 +374,53 @@ reduction gives:
 | frozen connection Hessian `H` | 94 | connection kernel dimension 2 |
 | frozen joint derivative `[H; C0]` | 95 | fixed-metric joint kernel dimension 1 |
 | joint derivative plus ten phase-common metric-source columns | 105 | 31-dimensional remaining cokernel |
-| degree-three reduced system, 35 degree-four center coefficients | 35 / 35 augmented | unique degree-four center correction is zero |
-| degree-two reduced system, 20 free degree-three center coefficients | 20 / 21 augmented | one exact obstruction remains |
+| connection-only jet through degree four, 140 center coefficients | 140 x 140, rank 30 / 30 augmented | all 96 connection rows have an exact solution |
+| joint degree-three reduced system, 35 degree-four center coefficients | 35 / 35 augmented | degree-four center correction is zero |
+| joint degree-two system, 20 free degree-three center coefficients | 20 / 21 augmented | exact phase-common metric readout fails |
 
-The degree-two obstruction is supported on the normal-coordinate monomial
-`xi3^2`. After range elimination and allowing every free degree-three center
-coefficient, a primitive integer combination of the 31 cokernel coordinates
-has exact pairing `-22209`; its primitive integer lift to the 136 Euler rows
-has pairing `-166034484`. The JSON certificate records both witnesses, row
-order, and all annihilation checks. Thus no smooth formal second-order normal jet solves
-this declared normalized curvature slice, even with arbitrary common
-phase-metric source coefficients. This does not prove a no-go for other
-curvature directions, non-smooth `h`-dependent sequences, or general
-backgrounds. The two-dimensional kernel of `H` is not the joint cokernel.
-Reproduce with:
+The connection-only elimination has a rational solution through normal
+degree four; its 140-row cokernel system has rank and augmented rank 30, and
+the certificate verifies all 96 Taylor equations exactly. The separate
+degree-two joint defect is supported on `xi3^2`. After range elimination
+and allowing every free degree-three center coefficient, a primitive
+integer combination of the 31 joint cokernel coordinates has pairing
+`-22209`; its primitive lift to the 136 Euler rows has pairing `-166034484`.
+It proves that the order-`delta^2` metric readout cannot be made exactly
+phase-common, even after the connection equation is solved. For the exact
+rational connection solution, the full phase-resolved metric coefficient
+has a componentwise coefficient-sum bound below `11000` on
+`|xi_i|<=1`; therefore its phase defect is at most
+`11000*delta^2 = 11000*kappa^2*h^4` on this local cell. After normalization
+by `h^2`, this single coefficient contributes at most
+`11000*kappa^2*h^2`, which tends to zero for bounded curvature. This is a
+finite leading-order estimate, not a bound on the higher-order remainder or
+on a complete exact branch. The certificate records the connection
+solution, metric coefficient bound, both witnesses, row order, and all
+annihilation checks. The two-dimensional kernel of `H` is not the joint
+cokernel. Reproduce with:
+
+The same replay now also extracts the zero-normal-momentum **connection**
+cokernel equation before allowing a spatially varying center. In the
+recorded exact basis of the two rows of `ker(H^T)`, the normalized curvature
+slice has projected source
+
+\[
+\mathcal C_{2,\mathrm{const}}=
+\left(\frac{351402359}{2108160},
+      \frac{21506403637}{154949760}\right)\ne0.
+\]
+
+Both columns for a constant shift of the two center amplitudes vanish in this
+equation, as they must since those shifts lie in `ker(H)`. Thus a stationary
+seed with spatially constant center amplitudes cannot solve the connection
+Euler equation at this order. The exact degree-four normal-jet solution
+instead uses a nonconstant center profile: its transported contribution is
+the negative of the vector above, and all 96 connection rows then vanish.
+This is an actual quadratic Lyapunov--Schmidt coefficient for this one
+normalized curvature germ, not a no-go for spatially varying centers, other
+curvature germs, or the finite-lattice branch. It also does not remove the
+separate phase-resolved metric defect, whose normalized size is subleading
+at this order.
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
@@ -395,12 +428,12 @@ python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree4_gate_ch
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
 ```
 
-The selected formal Taylor branch is obstructed. The remaining theory is
-to determine whether this finite local obstruction rules out the admissible
-smooth branch in the full owner class and to establish or refute a
-refinement-uniform nonlinear continuation theorem; the connection-only
-hyperbolic symbol and an elliptic inverse assumption cannot settle those
-questions.
+The regular formal connection branch survives this order; the residual
+phase-dependent metric term is of order `h^4` and is subleading to the
+requested `h^2` normalization. The remaining theory is to continue the
+connection solution to all required orders and prove a refinement-uniform
+remainder in the owner topology; neither the connection-only hyperbolic
+symbol nor an elliptic inverse assumption settles those questions.
 
 ## 8. Replay and claim boundaries
 

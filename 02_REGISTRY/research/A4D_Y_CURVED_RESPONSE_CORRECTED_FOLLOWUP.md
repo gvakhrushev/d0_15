@@ -97,13 +97,26 @@ and forces the degree-four center correction to zero; the degree-two reduced
 system has exact ranks `20 -> 21` after retaining arbitrary common metric
 sources and every free degree-three center coefficient. Its `xi3^2` left
 witness pairs to `-22209` in the reduced cokernel basis (`-166034484` for
-the primitive integer 136-row Euler witness). This rules out a smooth formal
-second-order normal jet on that normalized slice. It does not by itself
-refute the required finite-lattice nonlinear continuation or the uniform
-remainder: the full admissible branch may have h-dependent scaling, different
-curvature directions, or nonlinear terms outside this finite normal-jet
-slice. The task remains `IN_PROGRESS` and both global terminals remain
+the primitive integer 136-row Euler witness). A separate 140-by-140
+connection-only reduced system has ranks `30/30`; the script constructs a
+rational solution and verifies all 96 connection rows through degree four.
+Thus the new defect forbids exact phase-common metric readout at order
+`delta^2`, but does not obstruct the stationary connection branch at this
+order. For bounded curvature `delta^2=O(h^4)`, below the required `h^2`
+scale. It still does not control the omitted-order remainder, h-dependent
+center growth, other curvature directions, or the full finite-lattice
+continuation. The task remains `IN_PROGRESS` and both global terminals remain
 unreached.
+
+The exact connection-only replay also extracts the zero-momentum cokernel
+coefficient for the constant-center restriction on this normalized germ. In
+the certificate's recorded `ker(H^T)` basis it is
+`(351402359/2108160, 21506403637/154949760)`, nonzero, while constant
+kernel-shift columns vanish. A constant stationary center is therefore
+obstructed at `delta^2`; the all-row connection solution cancels this source
+with a spatially varying center jet through normal degree four. This is a
+finite germ statement only: it does not exclude an exact branch with a
+varying center or establish the refinement-uniform theorem.
 
 Derive and control the nonlinear **joint constrained** equations, rather than two free connection-center wave equations, then continue the surviving curved normal jet `J` to an exact stationary branch
 
