@@ -86,6 +86,68 @@ for j in range(4):
     ledgers.append({"axis":j,"max_column_sum":str(colmax),
                     "max_row_sum":str(rowmax),"operator_upper_bound":str(op)})
 
+
+# Stronger operator bound: build the exact trigonometric Gram symbol
+# G_j=(d_j Q)^* (d_j Q), collect equal Fourier harmonics first, and then
+# apply a Gershgorin row-sum bound to the coefficientwise absolute envelope.
+# This captures cancellations lost by the direct derivative envelope.
+sparse_terms={d:{ij:sp.Rational(v) for ij,v in T[d].todok().items()} for d in support}
+gram_bounds2=[]
+for axis in range(4):
+    der={d:E for d,E in sparse_terms.items() if d[axis]}
+    gram={}
+    for d,Ed in der.items():
+        byrow_d={}
+        for (r,i),v in Ed.items():
+            byrow_d.setdefault(r,{})[i]=v*d[axis]
+        for e,Ee in der.items():
+            byrow_e={}
+            for (r,j),v in Ee.items():
+                byrow_e.setdefault(r,{})[j]=v*e[axis]
+            h=tuple(e[q]-d[q] for q in range(4))
+            H=gram.setdefault(h,{})
+            for r in set(byrow_d)&set(byrow_e):
+                for i,vi in byrow_d[r].items():
+                    for j,vj in byrow_e[r].items():
+                        H[i,j]=H.get((i,j),sp.Rational(0))+vi*vj
+    for h in list(gram):
+        gram[h]={ij:v for ij,v in gram[h].items() if v}
+        if not gram[h]: del gram[h]
+    upper={}
+    for H in gram.values():
+        for ij,v in H.items():
+            upper[ij]=upper.get(ij,sp.Rational(0))+abs(v)
+    rowsums=[sp.Rational(0)]*96
+    for (i,j),v in upper.items():
+        rowsums[i]+=v
+    gram_bounds2.append(sp.factor(max(rowsums)))
+expected_g2=[sp.Rational(503,98),sp.Rational(318,49),
+             sp.Rational(318,49),sp.Rational(318,49)]
+ck("GRAM_GERSHGORIN_OPERATOR_BOUNDS",gram_bounds2==expected_g2)
+
+# Exact zone-folding identity.  Put lambda_r=mu*rho_r.  Multiply each
+# phase-p equation row by mu^p and each phase-q connection column by mu^-q.
+# Every entry then carries mu^(p-q+sum d).  The exponent is always a multiple
+# of four, so the transformed symbol depends on the common phase only through
+# w=mu^4 and w^-1.  The two nonzero wrap sectors are localized exactly.
+zone_counts={-1:0,0:0,1:0}
+zone_blocks={-1:set(),0:set(),1:set()}
+for d in support:
+    for (i,j),v in T[d].todok().items():
+        if not v: continue
+        row_phase=(i//24) if i<96 else ((i-96)//10)
+        col_phase=j//24
+        power=row_phase-col_phase+sum(d)
+        if power%4:
+            raise AssertionError(("ZONE_POWER_NOT_DIVISIBLE_BY4",d,i,j,power))
+        k=power//4
+        if k not in (-1,0,1):
+            raise AssertionError(("ZONE_POWER_OUT_OF_RANGE",d,i,j,k))
+        zone_counts[k]+=1
+        zone_blocks[k].add(("A" if i<96 else "C",row_phase,col_phase))
+ck("ZONE_MINUS_WRAP_ONLY",zone_blocks[-1]=={("A",0,3)})
+ck("ZONE_PLUS_WRAP_ONLY",zone_blocks[1]=={("A",3,0),("C",3,0)})
+
 result={
  "schema":"a4d-y-curved-joint-torus-lipschitz-v2",
  "terminal":"A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED",
@@ -94,7 +156,15 @@ result={
  "support":[list(d) for d in support],
  "support_size":len(support),
  "coordinate_bounds":ledgers,
+ "gram_gershgorin_operator_bounds_squared":[str(x) for x in gram_bounds2],
  "global_bound":"||Q(theta)-Q(phi)||_2 <= (22/7) * sum_j |theta_j-phi_j|",
+ "zone_folding":{
+   "substitution":"lambda_r=mu*rho_r",
+   "row_column_scaling":"phase-p rows by mu^p; phase-q connection columns by mu^-q",
+   "folded_variable":"w=mu^4",
+   "power_counts":{str(k):zone_counts[k] for k in (-1,0,1)},
+   "wrap_blocks":{str(k):[list(x) for x in sorted(zone_blocks[k])] for k in (-1,0,1)}
+ },
  "metric":"theta coordinates, lambda_j=exp(i theta_j)",
  "proof":"entrywise Laurent derivative envelope plus ||M||_2 <= sqrt(||M||_1 ||M||_infinity)",
  "scope_fence":[
@@ -109,4 +179,4 @@ if "--write" in __import__("sys").argv:
     print("WROTE",OUT)
 elif OUT.exists():
     ck("RESULTS_MATCH_PINNED_JSON",json.loads(OUT.read_text())==result)
-print("TERMINAL A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED")
+print("GRAM_OPERATOR_BOUNDS2",*[str(x) for x in gram_bounds2])\nprint("ZONE_COUNTS",zone_counts)\nprint("TERMINAL A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED")
