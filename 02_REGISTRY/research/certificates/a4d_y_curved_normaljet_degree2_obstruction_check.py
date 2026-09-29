@@ -103,7 +103,8 @@ def pairing_delta2(area, curvature) -> sp.Expr:
 
 
 def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool = False,
-        joint_coker_family: bool = False) -> dict:
+        joint_coker_family: bool = False,
+        curvature_scale=sp.Integer(1)) -> dict:
     owner = json.loads(C.RESULT_PATH.read_text())["normalized_surviving_curvature"]
     check("OWNER_HAS_LINEAR_FIRST_CONNECTION_TANGENT",
           json.loads(C.RESULT_PATH.read_text())["normal_jet"]["surviving_first_connection_tangent_degree"] == 1)
@@ -112,6 +113,7 @@ def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool 
         tuple(map(int, label.split(":"))): sp.Rational(value)
         for label, value in owner["first_connection_tangent_constant_nonzero"].items()
     }
+    a0 = {label: curvature_scale * value for label, value in a0.items()}
     # A free order-delta shift along the exact flat Y family is an admissible
     # first tangent.  Keep it explicit when probing the nonlinear cokernel.
     for label, value in {
@@ -125,7 +127,7 @@ def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool 
         a0[label] = a0.get(label, 0) + first_center_shift * value
     linear = {
         direction: {
-            tuple(map(int, label.split(":"))): sp.Rational(value)
+            tuple(map(int, label.split(":"))): curvature_scale * sp.Rational(value)
             for label, value in owner["first_connection_tangent_linear_nonzero"][f"xi{direction}"].items()
         }
         for direction in range(4)
@@ -144,6 +146,10 @@ def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool 
     q1, q2 = sp.zeros(4), sp.zeros(4)
     q1[1:4, 1:4] = T
     q2[1:4, 1:4] = -sp.Rational(2, 5) * r2 * T
+    U0 = (curvature_scale * U0).applyfunc(sp.expand)
+    V0 = (curvature_scale**2 * V0).applyfunc(sp.expand)
+    q1 = (curvature_scale * q1).applyfunc(sp.expand)
+    q2 = (curvature_scale**2 * q2).applyfunc(sp.expand)
     check("NORMAL_GRAM_FIRST_COEFFICIENT",
           U0.T * ETA + ETA * U0 == q1)
     check("NORMAL_GRAM_SECOND_COEFFICIENT",
@@ -156,7 +162,7 @@ def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool 
             coefficient = sp.Rational(1, 2) if i == j else sp.Integer(1)
             factor = coefficient * XI[i] * XI[j]
             for metric_index, (qa, qb) in enumerate(B.SYM):
-                value = sp.Rational(entries[metric_index]) * factor
+                value = curvature_scale * sp.Rational(entries[metric_index]) * factor
                 q_from_owner[qa, qb] += value
                 if qa != qb:
                     q_from_owner[qb, qa] += value
@@ -447,8 +453,8 @@ def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool 
         if first_center_shift == sp.Symbol("s"):
             check("FREE_FIRST_ORDER_Y_SHIFT_LEAVES_C2_UNCHANGED",
                   projected_source == sp.Matrix([
-                      sp.Rational(351402359, 2108160),
-                      sp.Rational(21506403637, 154949760),
+                      curvature_scale**2 * sp.Rational(351402359, 2108160),
+                      curvature_scale**2 * sp.Rational(21506403637, 154949760),
                   ]))
         print("FIRST_CENTER_SHIFT", first_center_shift, flush=True)
         print("ZERO_MODE_C2", [sp.factor(value) for value in projected_source], flush=True)
@@ -464,8 +470,8 @@ def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool 
         ])
         check("FREE_FIRST_ORDER_Y_SHIFT_LEAVES_C2_UNCHANGED",
               projected_source == sp.Matrix([
-                  sp.Rational(351402359, 2108160),
-                  sp.Rational(21506403637, 154949760),
+                  curvature_scale**2 * sp.Rational(351402359, 2108160),
+                  curvature_scale**2 * sp.Rational(21506403637, 154949760),
               ]))
         # Track the already-owned xi_3^2 left witness of the joint
         # phase-common metric equation as the first-order Y-family tangent is
@@ -568,10 +574,11 @@ def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool 
         integer_weights = [value // divisor for value in integer_weights]
         pairing = sp.factor((sp.Matrix(integer_weights).T * rhs2)[0])
         check("JOINT_PHASE_COMMON_WITNESS_UNCHANGED_BY_FIRST_ORDER_Y_SHIFT",
-              pairing == -22209)
+              pairing == -22209 * curvature_scale**2)
         print("JOINT_PHASE_COMMON_WITNESS_C2", pairing, flush=True)
         print("JOINT_PHASE_COMMON_WITNESS_FACTORED", sp.factor(pairing), flush=True)
         return {"center_shift": str(first_center_shift),
+                "curvature_scale": str(curvature_scale),
                 "stationary_connection_coker": [str(value) for value in projected_source],
                 "joint_phase_common_witness": str(pairing)}
 

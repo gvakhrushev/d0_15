@@ -21,22 +21,25 @@ def check(name: str, condition: bool) -> None:
 
 
 def run(write: bool = False) -> dict:
+    kappa = sp.Symbol("kappa")
     result = owner.run(
         write=False,
         first_center_shift=sp.Symbol("s"),
         joint_coker_family=True,
+        curvature_scale=kappa,
     )
     expected = {
-        "schema": "a4d-y-stationary-center-family-coker-v1",
+        "schema": "a4d-y-stationary-center-amplitude-family-coker-v2",
         "first_order_y_center_parameter": "s",
+        "curvature_amplitude_parameter": "kappa",
         "stationary_connection_coker_C2": [
-            "351402359/2108160",
-            "21506403637/154949760",
+            str(sp.factor(kappa**2 * sp.Rational(351402359, 2108160))),
+            str(sp.factor(kappa**2 * sp.Rational(21506403637, 154949760))),
         ],
-        "joint_phase_common_xi3_squared_witness_pairing": "-22209",
-        "exact_parameter_dependence": "both outputs are independent of s",
+        "joint_phase_common_xi3_squared_witness_pairing": str(-22209 * kappa**2),
+        "exact_parameter_dependence": "both outputs are kappa^2 times the pinned values and independent of s",
         "scope": "normalized surviving Y-curvature germ at z=1; exact order-delta^2 normal jet; phase-common metric readout and arbitrary degree-three center corrections",
-        "nonclaim": "does not rule out spatially varying center corrections, other curvature germs, h-dependent nonanalytic branches, or establish the global response theorem",
+        "nonclaim": "does not rule out spatially varying higher center corrections, other curvature germs, h-dependent nonanalytic branches, or establish the global response theorem",
     }
     check("PARAMETRIC_CONNECTION_COKER_MATCHES", result["stationary_connection_coker"] ==
           expected["stationary_connection_coker_C2"])
@@ -47,7 +50,7 @@ def run(write: bool = False) -> dict:
         print("WROTE", RESULT_PATH, flush=True)
     else:
         check("RESULTS_MATCH_PINNED_JSON", expected == json.loads(RESULT_PATH.read_text()))
-    print("TERMINAL A4D-Y-STATIONARY-CENTER-C2-INVARIANT-UNDER-CONSTANT-RETUNING", flush=True)
+    print("TERMINAL A4D-Y-STATIONARY-CENTER-OBSTRUCTION-HOMOGENEOUS-AND-RETUNING-INVARIANT", flush=True)
     return expected
 
 

@@ -422,15 +422,17 @@ curvature germs, or the finite-lattice branch. It also does not remove the
 separate phase-resolved metric defect, whose normalized size is subleading
 at this order. The coefficient is unchanged if the first-order connection
 tangent is shifted by an arbitrary constant multiple of the exact flat Y
-family tangent: the owner script's symbolic `s` replay returns the same
-two-vector identically. Thus this obstruction to the constant-center
-restriction cannot be tuned away by a first-order constant Y-amplitude
-retuning. The degree-four spatial center profile still cancels it locally.
-The exact joint `xi3^2` phase-common witness is likewise unchanged: after
-allowing all 20 free degree-three center coefficients, its pairing remains
-`-22209` for symbolic `s`. This only rules out repairing this finite
-phase-common normal jet by a first-order constant Y retuning; it does not
-turn the `O(h^4)` response defect into an `O(h^2)` normalized gap.
+tangent is shifted by an arbitrary constant multiple of the exact flat Y
+family tangent, and the curvature amplitude is made symbolic at the same
+time. The exact replay gives the connection vector
+`kappa^2*(351402359/2108160, 21506403637/154949760)` and the joint
+`xi3^2` phase-common witness `-22209*kappa^2`, both independent of the
+retuning parameter `s`. Thus the nonzero obstruction covers the full
+`kappa != 0` ray and cannot be tuned away by a first-order constant Y
+retuning. The degree-four spatial center profile still cancels the
+connection-only zero mode locally. The joint phase-common defect remains a
+finite normal-jet obstruction; it does not turn the `O(h^4)` response defect
+into an `O(h^2)` normalized gap.
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
