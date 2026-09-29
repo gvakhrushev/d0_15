@@ -77,14 +77,19 @@ def joint_symbol(lam):
     Q=sum((mon(lam,d)*M for d,M in QTERMS.items()),sp.zeros(40,96))
     return A.col_join(Q)
 
-def qmod(x):
-    x=sp.cancel(x)
-    num,den=sp.fraction(x)
-    # At mu_4 points entries lie in Q(i); substitute i -> IM in F_P.
-    num=int(sp.Poly(num,sp.I,extension=sp.I).eval(IM))%P if num.has(sp.I) else int(num)%P
-    den=int(sp.Poly(den,sp.I,extension=sp.I).eval(IM))%P if den.has(sp.I) else int(den)%P
+def ratmod(q):
+    q=sp.Rational(q)
+    den=int(q.q)%P
     if den==0: raise AssertionError("bad modular denominator")
-    return num*pow(den,P-2,P)%P
+    return (int(q.p)%P)*pow(den,P-2,P)%P
+
+def qmod(x):
+    # At mu_4 points every entry lies in Q(i).  Reduce a+b*i by mapping
+    # i to the certified square root IM of -1 in F_P.
+    re,im=sp.expand_complex(sp.cancel(x)).as_real_imag()
+    if not (re.is_Rational and im.is_Rational):
+        raise AssertionError("entry not in Q(i)")
+    return (ratmod(re)+ratmod(im)*IM)%P
 
 def rank_mod(M):
     A=[[qmod(M[i,j]) for j in range(M.cols)] for i in range(M.rows)]
