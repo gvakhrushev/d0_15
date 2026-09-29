@@ -88,7 +88,27 @@ Over the exact frozen constant-metric Y family, the same rank condition persists
 
 A second small certificate treats the genuinely curved product-plane seed `S=I+(f-1)P_perp`, with f time independent and constant along `(1,1,1)`. Commuting spatial spin links give exact sitewise metric-response erasure for the Y carrier, and all 96 connection coefficients through first slow order vanish without linearizing in f. However the exact temporal boost-dual row is `3 f(x)^2-sum_i f(x-h e_i)^2`. On a connected periodic spatial lattice this excludes nonconstant f within the commuting seed ansatz. It is not an obstruction to the full connection space: the transverse corrections at the next order remain essential.
 
-The next substantial exact test is specified with rational inputs in section 7 of the follow-up: the delta^2 joint cokernel forcing for the constant-curvature product normal metric, where `delta=kappa h^2`. That test has not been executed and is not counted as a passed nonlinear continuation.
+The exact `delta^2` normal-jet forcing has now been evaluated in
+`a4d_y_curved_normaljet_degree2_obstruction_check.py`. The 96 connection
+equations admit a rational local jet through normal degree four. Before
+allowing a spatially varying center, its two zero-momentum connection-cokernel
+components are exactly
+`(351402359/2108160, 21506403637/154949760)`; the exact quartic center jet
+transports the negative vector and solves all 96 local Taylor equations.
+These components are independent of an arbitrary first-order constant Y
+retuning `s`.
+
+The same calculation gives a different, joint conclusion: after eliminating
+the connection range and allowing all 20 degree-three center coefficients,
+the `xi3^2` phase-common metric witness pairs to `-22209`. The symbolic
+family replay proves this pairing is independent of the same constant
+retuning `s`. Thus this normal jet cannot have exactly phase-common metric
+readout at order `delta^2`, even though its connection equations solve.
+For the connection-solved local profile, the phase-difference coefficient
+has the exact cell bound `11000*delta^2`; for bounded `kappa` this is
+`O(h^4)`, or `O(h^2)` after the task normalization. It is therefore a
+finite source-compatibility obstruction, not a nonzero normalized response
+gap. Neither calculation constructs an exact finite-lattice joint branch.
 
 ## Small-amplitude splitting at zero slow momentum
 
@@ -122,9 +142,11 @@ python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_respon
 python3 02_REGISTRY/research/certificates/a4d_y_singleq_curvature_witness_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_joint_first_slow_injectivity_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_product_plane_seed_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_stationary_center_family_coker_check.py
 ```
 
-The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The subsequent pair verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. The two new small checks verify joint first-slow injectivity and the nonlinear product-plane seed identities. Each current checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
+The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The subsequent pair verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. The next two verify joint first-slow injectivity and the nonlinear product-plane seed identities. The final pair verify the exact `delta^2` connection/metric normal-jet system and its invariance under arbitrary constant first-order Y retuning. Each current checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
 
 The submitted aggregate JSON has SHA-256 `79e6db7d96a0863a6af56e94752d080d5505a7fc47a307b752269dd092c4e230`. Its per-site `q12` arrays are not separately asserted by the aggregate checker.
 
@@ -137,13 +159,13 @@ The following boundaries remain:
 - #232 is still a curved nongauge joint vacuum at the flat metric.
 - #227 is connection-stationary but is not a joint-critical metric counterexample.
 - The corrected normal-jet certificate is finite and linear in the sampled curvature jet.
-- No exact nonlinear stationary branch over a genuinely curved sampled metric is constructed here.
+- No exact finite-lattice joint-stationary branch over a genuinely curved sampled metric is constructed here; only the stated local normal jet is solved on the connection side.
 - No refinement-uniform `o(h^2)` response remainder is proved here.
 - No global selector or task-level no-go is established.
 
-## Single remaining gate
+## Remaining global gate
 
-Solve the nonlinear **joint** reduced cokernel equation, retaining the first-slow metric constraints above, and continue the `-Y tensor Y` curved normal jet to an exact stationary branch with the declared #216 comparator, or prove an exact obstruction in that reduced equation. The two connection-only hyperbolic symbols must not be treated as two free joint envelopes. The first uncomputed nonlinear curved forcing and a rational replay recipe are stated in `A4D_Y_JOINT_FIRST_SLOW_REDUCTION.md`. Then prove the refinement-uniform estimate
+Globalize the reduced equations on the periodic lattice with the fixed source convention. In particular, determine whether the quartic local center correction can satisfy the global zero-mode cokernel equations together with the phase-resolved metric-source rows, or whether an h-dependent/nonanalytic center branch survives. The first-slow metric constraints must remain imposed; the two connection-only hyperbolic symbols are not free joint envelopes. Only after this global branch-or-obstruction gate can one prove the refinement-uniform estimate
 
 `|E_Q(Q_h,K_h) - E_Q(Q_h,K_h^sm)| = o(h^2)`
 
