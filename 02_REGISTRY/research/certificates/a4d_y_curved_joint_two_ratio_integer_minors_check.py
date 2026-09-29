@@ -456,11 +456,12 @@ for i,j in PAIR_LIST:
     R=resultant_mod(A,B,ELIM_PRIME,hi)
     vlo=val0(R,ELIM_PRIME); vhi=len(R)-1
     edges=(vlo==lo and vhi==hi and int(R[vlo])%ELIM_PRIME!=0 and int(R[vhi])%ELIM_PRIME!=0)
-    ck("RESULTANT_EDGE_PRESERVATION_"+str(i)+"_"+str(j),edges)
+    print("RESULTANT_EDGE_PRESERVATION_"+str(i)+"_"+str(j),edges,flush=True)
     nul=sylvester_nullity_x1(A,B)
     pair_records.append({
       "pair":[i,j],"structural_x_bounds":[lo,hi],
       "modular_x_support":[vlo,vhi],
+      "degree_preserved":bool(edges),
       "exact_sylvester_nullity_at_x1":nul,
     })
     mod_resultants.append(R[vlo:])
@@ -468,6 +469,8 @@ for i,j in PAIR_LIST:
 selection=None
 for a in range(len(PAIR_LIST)):
     for b in range(a+1,len(PAIR_LIST)):
+        if not (pair_records[a]["degree_preserved"] and pair_records[b]["degree_preserved"]):
+            continue
         g=gcd_poly(mod_resultants[a],mod_resultants[b],ELIM_PRIME)
         e,pure=pure_one_factor(g,ELIM_PRIME)
         if pure and e>0:
