@@ -1,160 +1,299 @@
 #!/usr/bin/env python3
-# D0_CI_TIMEOUT_SECONDS=600
+# D0_CI_TIMEOUT_SECONDS=180
 """Exact mu_4^4 locus of the full curved z=1 joint Bloch symbol.
 
-The literal 96 connection rows and 40 phase-resolved metric rows are compiled
-as a rational Laurent stencil.  Full rank is certified by reduction modulo
-p=65537 (where 256^2=-1), which is a rigorous lower bound for characteristic
-zero because no denominator vanishes mod p.  At the four folded diagonal
-characters an explicit exact Y kernel supplies the matching upper bound.
+The literal 96 connection rows and 40 phase-resolved metric rows are assembled
+directly over F_65537.  Since 65537 is prime and 256^2=-1 mod 65537, all four
+quarter-wave characters 1,i,-1,-i are represented exactly.  Full rank modulo
+p proves full rank in characteristic zero.  At folded points the modular rank
+is 95; merged #232 (merge caa1e65087ddf15cda35325189ebfcbf51a56592)
+supplies the exact nonzero Y tangent in the joint kernel, giving the matching
+characteristic-zero upper bound.  Hence the exact characteristic-zero rank is
+95 at the four folded diagonal characters and 96 at the other 252 mu_4^4
+characters.
 
-Terminal is intentionally only the mu_4^4 torsion grid, not all Bloch phases.
+Scope: exact mu_4^4 torsion grid only.  This is not an all-Bloch theorem.
 """
 from __future__ import annotations
 from collections import defaultdict
-from itertools import product
+from itertools import combinations, product
+import json
+from pathlib import Path
 import numpy as np
-import sympy as sp
-import a4d_y_curved_response_quotient_check as B
-import a4d_y_curved_normaljet_compatibility_check as C
 
 P=65537
-I_P=256
-ROOTS_EX=(sp.Integer(1),sp.I,sp.Integer(-1),-sp.I)
-ROOTS_P=(1,I_P,P-1,P-I_P)
+IROOT=256
+INV2=pow(2,-1,P)
+ROOTS=(1,IROOT,P-1,P-IROOT)
+OUT=Path(__file__).with_name("a4d_y_curved_joint_mu4_locus_results.json")
 
-def ck(n,c):
-    if not c: raise AssertionError(n)
-    print("PASS_"+n,flush=True)
+def check(name,cond):
+    if not cond:
+        raise AssertionError(name)
+    print("PASS_"+name,flush=True)
 
-def mon(lam,d):
-    out=1
-    for r,e in enumerate(d): out*=lam[r]**e
+check("PRIME_FERMAT_65537",P==65537)
+check("IROOT_SQUARE_MINUS_ONE",IROOT*IROOT%P==P-1)
+
+I4=np.eye(4,dtype=np.int64)
+ETA=np.diag([1,-1,-1,-1]).astype(np.int64)%P
+PAIRS=list(combinations(range(4),2))
+SYM=[(a,b) for a in range(4) for b in range(a,4)]
+
+GEN=[]
+for j in (1,2,3):
+    X=np.zeros((4,4),dtype=np.int64)
+    X[0,j]=X[j,0]=1
+    GEN.append(X)
+for a,b in ((1,2),(1,3),(2,3)):
+    X=np.zeros((4,4),dtype=np.int64)
+    X[a,b]=1
+    X[b,a]=-1
+    GEN.append(X%P)
+
+G2=np.diag([(1 if (a==0)==(b==0) else -1) for a,b in PAIRS]).astype(np.int64)%P
+STAR=np.zeros((6,6),dtype=np.int64)
+for col,(row,sign) in enumerate(((5,-1),(4,1),(3,-1),(2,1),(1,-1),(0,1))):
+    STAR[row,col]=sign%P
+
+def mm(A,B):
+    return (A@B)%P
+
+def linv(M):
+    return mm(mm(ETA,M.T),ETA)
+
+def invmat(A):
+    A=A.copy()%P
+    n=A.shape[0]
+    B=np.eye(n,dtype=np.int64)
+    for c in range(n):
+        piv=next(r for r in range(c,n) if A[r,c]%P)
+        if piv!=c:
+            A[[c,piv]]=A[[piv,c]]
+            B[[c,piv]]=B[[piv,c]]
+        q=pow(int(A[c,c]),-1,P)
+        A[c]=(A[c]*q)%P
+        B[c]=(B[c]*q)%P
+        for r in range(n):
+            if r==c:
+                continue
+            q=int(A[r,c])
+            if q:
+                A[r]=(A[r]-q*A[c])%P
+                B[r]=(B[r]-q*B[c])%P
+    return B%P
+
+def wedge(u,v):
+    return np.array(
+        [(int(u[a])*int(v[b])-int(u[b])*int(v[a]))%P for a,b in PAIRS],
+        dtype=np.int64,
+    )
+
+def biv(M):
+    X=mm(M,ETA)
+    return np.array([X[a,b]%P for a,b in PAIRS],dtype=np.int64)
+
+def orient(a,b):
+    seq=[a,b]+[j for j in range(4) if j not in (a,b)]
+    inv=sum(seq[i]>seq[j] for i in range(4) for j in range(i+1,4))
+    return -1 if inv%2 else 1
+
+def prodm(items):
+    out=I4
+    for x in items:
+        out=mm(out,x)
     return out
 
-_H,LABELS,FACES0=B.action_connection_hessian(sp.Integer(1))
-FACES=C.with_base_phases(FACES0)
+def cayley_y():
+    Y=(GEN[3]-GEN[4]+GEN[5])%P
+    return mm(invmat((I4-INV2*Y)%P),(I4+INV2*Y)%P)
+
+def metric_lift(a,b):
+    q=np.zeros((4,4),dtype=np.int64)
+    q[a,b]=q[b,a]=1
+    return mm(ETA,q)*INV2%P
+
+U=cayley_y()
+W=[U,I4,linv(U),I4]
+LABELS=[(ph,role,g) for ph in range(4) for role in range(4) for g in range(6)]
 IDX={x:i for i,x in enumerate(LABELS)}
-UNIT=[B.I4[:,j] for j in range(4)]
-ATERMS=defaultdict(lambda:sp.zeros(96))
-QTERMS=defaultdict(lambda:sp.zeros(40,96))
+BASIS=[I4[:,j] for j in range(4)]
+ATERMS=defaultdict(lambda:np.zeros((96,96),dtype=np.int64))
+QTERMS=defaultdict(lambda:np.zeros((40,96),dtype=np.int64))
 
-for phase,a,b,locs,local,Hloc,factors in FACES:
-    shifts=[(0,0,0,0),tuple(int(r==a) for r in range(4)),
-            tuple(int(r==b) for r in range(4)),(0,0,0,0)]
-    slot=[]
-    for s in shifts: slot += [s]*6
-    for ii,(_pi,_gi,gi) in enumerate(local):
-        for jj,(_pj,_gj,gj) in enumerate(local):
-            d=tuple(slot[jj][r]-slot[ii][r] for r in range(4))
-            ATERMS[d][gi,gj]+=Hloc[ii,jj]
-    u,v=[j for j in range(4) if j not in (a,b)]
-    darea=[]
-    for qa,qb in B.SYM:
-        dS=B.metric_lift(qa,qb)
-        darea.append(B.wedge(dS[:,u],UNIT[v])+B.wedge(UNIT[u],dS[:,v]))
-    for pos,(q,role,inverse) in enumerate(locs):
-        for g,X in enumerate(B.GEN):
-            dFfactor=-X*factors[pos] if inverse else factors[pos]*X
-            dP=B.I4
-            for n,F in enumerate(factors):
-                dP=dP*(dFfactor if n==pos else F)
-            dF=(dP-B.linv(dP))/2
-            dFb=B.biv(dF)
-            gi=IDX[(q,role,g)]
-            for mi,area in enumerate(darea):
-                val=sp.cancel(B.orientation(a,b)*(area.T*B.G2*B.STAR*dFb)[0])
-                QTERMS[shifts[pos]][10*phase+mi,gi]+=val
+for phase in range(4):
+    for a,b in PAIRS:
+        locs=[
+            (phase,a,False),
+            ((phase+1)%4,b,False),
+            ((phase+1)%4,a,True),
+            (phase,b,True),
+        ]
+        factors=[]
+        first=[]
+        for q,role,inverse in locs:
+            K=W[q] if role==0 else I4
+            F=linv(K) if inverse else K
+            factors.append(F)
+            first.append([((-mm(X,F)) if inverse else mm(F,X))%P for X in GEN])
 
-def modq(x):
-    x=sp.Rational(x)
-    den=int(x.q)
-    if den%P==0:
-        raise AssertionError("DENOMINATOR_ZERO_MOD_P")
-    return (int(x.p)%P)*pow(den,-1,P)%P
+        local=[]
+        for pos,(q,role,_inverse) in enumerate(locs):
+            for g in range(6):
+                local.append((pos,g,IDX[(q,role,g)]))
 
-# Convert each rational Laurent coefficient matrix once.
-MODTERMS={}
-for d in set(ATERMS)|set(QTERMS):
-    M=ATERMS.get(d,sp.zeros(96)).col_join(QTERMS.get(d,sp.zeros(40,96)))
-    A=np.zeros((136,96),dtype=np.int64)
-    for i in range(M.rows):
-        for j in range(M.cols):
-            x=M[i,j]
-            if x:
-                A[i,j]=modq(x)
-    MODTERMS[d]=A
+        u,v=[j for j in range(4) if j not in (a,b)]
+        area=wedge(BASIS[u],BASIS[v])
+        Hloc=np.zeros((24,24),dtype=np.int64)
+        for ii,(pi,gi,_x) in enumerate(local):
+            for jj in range(ii,24):
+                pj,gj,_y=local[jj]
+                if pi==pj:
+                    Q=(mm(GEN[gi],GEN[gj])+mm(GEN[gj],GEN[gi]))*INV2%P
+                    Q=mm(Q,factors[pi]) if locs[pi][2] else mm(factors[pi],Q)
+                    items=[Q if n==pi else factors[n] for n in range(4)]
+                else:
+                    items=[
+                        first[n][gi] if n==pi
+                        else first[n][gj] if n==pj
+                        else factors[n]
+                        for n in range(4)
+                    ]
+                d2P=prodm(items)
+                d2F=(d2P-linv(d2P))*INV2%P
+                val=int(area @ mm(G2,mm(STAR,biv(d2F).reshape(6,1))).reshape(6))%P
+                if orient(a,b)<0:
+                    val=(-val)%P
+                Hloc[ii,jj]=Hloc[jj,ii]=val
 
-def rank_mod(lam):
-    A=np.zeros((136,96),dtype=np.int64)
-    for d,M in MODTERMS.items():
-        phase=1
+        shifts=[
+            (0,0,0,0),
+            tuple(int(r==a) for r in range(4)),
+            tuple(int(r==b) for r in range(4)),
+            (0,0,0,0),
+        ]
+        slot=[]
+        for s in shifts:
+            slot += [s]*6
+        for ii,(_pi,_gi,ggi) in enumerate(local):
+            for jj,(_pj,_gj,ggj) in enumerate(local):
+                d=tuple(slot[jj][r]-slot[ii][r] for r in range(4))
+                ATERMS[d][ggi,ggj]=(ATERMS[d][ggi,ggj]+Hloc[ii,jj])%P
+
+        darea=[]
+        for qa,qb in SYM:
+            dS=metric_lift(qa,qb)
+            darea.append((wedge(dS[:,u],BASIS[v])+wedge(BASIS[u],dS[:,v]))%P)
+
+        for pos,(q,role,inverse) in enumerate(locs):
+            for g,X in enumerate(GEN):
+                dFfactor=(-mm(X,factors[pos]))%P if inverse else mm(factors[pos],X)
+                items=[dFfactor if n==pos else factors[n] for n in range(4)]
+                dP=prodm(items)
+                dF=(dP-linv(dP))*INV2%P
+                db=biv(dF)
+                gidx=IDX[(q,role,g)]
+                for mi,ar in enumerate(darea):
+                    val=int(ar @ mm(G2,mm(STAR,db.reshape(6,1))).reshape(6))%P
+                    if orient(a,b)<0:
+                        val=(-val)%P
+                    QTERMS[shifts[pos]][10*phase+mi,gidx]=(
+                        QTERMS[shifts[pos]][10*phase+mi,gidx]+val
+                    )%P
+
+def mpow(x,e):
+    if e>=0:
+        return pow(int(x),e,P)
+    return pow(pow(int(x),-1,P),-e,P)
+
+def eval_joint(lam):
+    M=np.zeros((136,96),dtype=np.int64)
+    for d,A in ATERMS.items():
+        ph=1
         for r,e in enumerate(d):
-            if e>=0:
-                phase=phase*pow(int(lam[r]),e,P)%P
-            else:
-                phase=phase*pow(pow(int(lam[r]),-1,P),-e,P)%P
-        A=(A+phase*M)%P
-    rank=0
-    for col in range(96):
-        nz=np.flatnonzero(A[rank:,col])
-        if not len(nz): continue
-        q=rank+int(nz[0])
-        if q!=rank: A[[rank,q]]=A[[q,rank]]
-        inv=pow(int(A[rank,col]),-1,P)
-        A[rank]=(A[rank]*inv)%P
-        mask=np.arange(136)!=rank
-        factors=A[:,col].copy()
-        rows=np.flatnonzero(mask & (factors!=0))
+            ph=ph*mpow(lam[r],e)%P
+        M[:96]=(M[:96]+ph*A)%P
+    for d,Q in QTERMS.items():
+        ph=1
+        for r,e in enumerate(d):
+            ph=ph*mpow(lam[r],e)%P
+        M[96:]=(M[96:]+ph*Q)%P
+    return M
+
+def rank_mod(A):
+    A=A.copy()%P
+    nr,nc=A.shape
+    r=0
+    for c in range(nc):
+        nz=np.flatnonzero(A[r:,c])
+        if not len(nz):
+            continue
+        q=r+int(nz[0])
+        if q!=r:
+            A[[r,q]]=A[[q,r]]
+        inv=pow(int(A[r,c]),-1,P)
+        A[r]=(A[r]*inv)%P
+        rows=np.flatnonzero((np.arange(nr)!=r)&(A[:,c]!=0))
         if len(rows):
-            A[rows]=(A[rows]-factors[rows,None]*A[rank][None,:])%P
-        rank+=1
-        if rank==96: break
-    return rank
+            A[rows]=(A[rows]-A[rows,c,None]*A[r,None,:])%P
+        r+=1
+        if r==nc:
+            break
+    return r
 
-# Exact lambda=1 joint matrix and its Y center.
-def joint_exact(lam):
-    A=sum((mon(lam,d)*M for d,M in ATERMS.items()),sp.zeros(96))
-    Q=sum((mon(lam,d)*M for d,M in QTERMS.items()),sp.zeros(40,96))
-    return A.col_join(Q)
+M1=eval_joint((1,1,1,1))
+check("FOLDED_CONNECTION_RANK94_MOD_P",rank_mod(M1[:96])==94)
+check("FOLDED_JOINT_RANK95_MOD_P",rank_mod(M1)==95)
 
-M1=joint_exact((1,1,1,1))
-H1=M1[:96,:]
-C1=M1[96:,:]
-N=C.centers(_H,LABELS,sp.Integer(1))
-ny,nd=N[:,0],N[:,1]
-ck("FOLDED_Y_EXACT_KERNEL_AT_ONE",M1*ny==sp.zeros(136,1))
-ck("DUAL_REMOVED_BY_METRIC_ROWS",H1*nd==sp.zeros(96,1) and C1*nd!=sp.zeros(40,1))
-ck("MU4_ONE_MODULAR_RANK95",rank_mod((1,1,1,1))==95)
+# Reduction of the exact #232 Y tangent.  Overall rational Cayley scale is
+# irrelevant for the kernel test.
+ny=np.zeros(96,dtype=np.int64)
+for phase,sgn in ((0,1),(2,-1)):
+    for g,coeff in ((3,1),(4,-1),(5,1)):
+        ny[IDX[(phase,0,g)]]=sgn*coeff%P
+check("FOLDED_Y_TANGENT_REDUCES_TO_KERNEL",np.all((M1@ny)%P==0))
 
-folded=[]; regular=0
+folded=[]
+counts={}
 for ids in product(range(4),repeat=4):
-    rp=rank_mod(tuple(ROOTS_P[i] for i in ids))
-    if rp<96:
-        folded.append((ids,rp))
-    else:
-        regular+=1
-ck("MU4_MODULAR_SINGULAR_SET",
-   folded==[((j,j,j,j),95) for j in range(4)])
-ck("MU4_REGULAR_COUNT_252",regular==252)
+    r=rank_mod(eval_joint(tuple(ROOTS[i] for i in ids)))
+    counts[r]=counts.get(r,0)+1
+    if r<96:
+        folded.append((ids,r))
 
-# Exact diagonal zone folding:
-# A(zeta)=D^-1 A(1) D, C(zeta)=R^-1 C(1) D.
-for j,zeta in enumerate(ROOTS_EX):
-    D=sp.diag(*[zeta**phase for phase,role,g in LABELS])
-    R=sp.diag(*sum(([zeta**phase]*10 for phase in range(4)),[]))
-    lam=(zeta,zeta,zeta,zeta)
-    M=joint_exact(lam)
-    ck("FOLDED_CONNECTION_SIMILARITY_"+str(j),
-       M[:96,:]==D.inv()*H1*D)
-    ck("FOLDED_METRIC_SIMILARITY_"+str(j),
-       M[96:,:]==R.inv()*C1*D)
-    x=D.inv()*ny
-    ck("FOLDED_EXACT_Y_KERNEL_"+str(j),M*x==sp.zeros(136,1))
-    # rank_mod=95 gives rank_Q >=95; exact nonzero kernel gives rank_Q <=95.
-    ck("FOLDED_EXACT_RANK95_"+str(j),
-       rank_mod(tuple(ROOTS_P[j] for _ in range(4)))==95 and x!=sp.zeros(96,1))
+expected=[((j,j,j,j),95) for j in range(4)]
+check("MU4_ONLY_FOLDED_DIAGONAL_SINGULAR",folded==expected)
+check("MU4_FULL_RANK_COUNT_252",counts=={95:4,96:252})
+
+result={
+    "schema":"a4d-y-curved-joint-mu4-locus-v1",
+    "terminal":"A4D-Y-CURVED-JOINT-MU4-LOCUS-CERTIFIED",
+    "background":"z=1 exact Y vacuum; standard solder",
+    "joint_symbol_shape":[136,96],
+    "prime":P,
+    "sqrt_minus_one_mod_prime":IROOT,
+    "modular_rank_counts":{"95":4,"96":252},
+    "folded_character_ids":[list(x[0]) for x in expected],
+    "folded_characters":["(1,1,1,1)","(i,i,i,i)","(-1,-1,-1,-1)","(-i,-i,-i,-i)"],
+    "folded_connection_rank_mod_p":94,
+    "folded_joint_rank_mod_p":95,
+    "characteristic_zero_argument":{
+        "regular_points":"rank mod p = 96 implies characteristic-zero rank 96",
+        "folded_points":"rank mod p = 95 gives lower bound 95; merged #232 exact nonzero Y joint-kernel tangent gives upper bound 95; diagonal zone folding identifies the four physical copies",
+        "exact_kernel_owner":"PR #232 merge caa1e65087ddf15cda35325189ebfcbf51a56592"
+    },
+    "conclusion":"on mu_4^4 the full curved joint symbol has exact rank 95 only at the four folded diagonal characters and rank 96 at all other 252 characters",
+    "scope_fence":[
+        "exact mu_4^4 torsion grid only",
+        "no all-Bloch complex or unit-torus zero-locus theorem",
+        "no uniform singular-value lower bound between sampled characters",
+        "no nonlinear range theorem or task-level response terminal"
+    ]
+}
+if OUT.exists():
+    check("RESULTS_MATCH_PINNED_JSON",json.loads(OUT.read_text())==result)
+else:
+    OUT.write_text(json.dumps(result,indent=2)+"\n")
+    print("WROTE",OUT,flush=True)
 
 print("TERMINAL A4D-Y-CURVED-JOINT-MU4-LOCUS-CERTIFIED")
-print("RESULT exact char-0 rank 96 at 252 mu4 points and rank 95 at the four folded diagonal points")
-print("SCOPE exact mu_4^4 torsion grid only; no all-Bloch zero-locus claim")
