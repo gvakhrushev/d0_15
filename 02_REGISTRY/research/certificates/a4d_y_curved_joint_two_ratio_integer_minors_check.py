@@ -202,6 +202,7 @@ def coeff_mod(terms,bounds,p):
 records=[]
 fiber_x1=[]
 fiber_y1=[]
+exact_arrays=[]
 for ci,cols in enumerate(CHARTS):
     terms,bounds,bound=chart_terms(cols)
     ck("ASSIGNMENT_BOUNDS_"+str(ci),bounds==EXPECTED_ASSIGNMENT_BOUNDS[ci])
@@ -233,6 +234,7 @@ for ci,cols in enumerate(CHARTS):
        all(abs(int(exact[a,b]))<=bound for a in range(nx) for b in range(ny)))
 
     nz=[(a,b,int(exact[a,b])) for a in range(nx) for b in range(ny) if exact[a,b]]
+    exact_arrays.append(exact.copy())
     amin=min(a for a,b,c in nz); amax=max(a for a,b,c in nz)
     bmin=min(b for a,b,c in nz); bmax=max(b for a,b,c in nz)
     supp=(amin,amax,bmin,bmax,len(nz))
@@ -292,9 +294,214 @@ for P in fiber_y1[1:]: gy=sp.gcd(gy,P)
 gy=sp.Poly(gy.monic(),xx,domain=sp.QQ)
 print("EXACT_Y1_COMMON_GCD",sp.factor(gy.as_expr()),flush=True)
 
+# Characteristic-zero elimination without reconstructing the huge integer
+# resultants.  Exact determinant supports give structural x-degree windows for
+# each Sylvester determinant.  One good modular prime certifies that both edge
+# coefficients attain those windows, hence the resultant degrees are preserved
+# under specialization.  Exact Sylvester nullity at x=1 supplies the matching
+# characteristic-zero (x-1)^e divisibility lower bound.
+
+def trim_exact(E):
+    nz=[(a,b) for a in range(E.shape[0]) for b in range(E.shape[1]) if E[a,b]]
+    a0=min(a for a,b in nz); a1=max(a for a,b in nz)
+    b0=min(b for a,b in nz); b1=max(b for a,b in nz)
+    A=np.empty((a1-a0+1,b1-b0+1),dtype=object)
+    for a in range(a0,a1+1):
+        for b in range(b0,b1+1):
+            A[a-a0,b-b0]=int(E[a,b])
+    return A,(a0,a1,b0,b1)
+
+TRIMMED=[trim_exact(E)[0] for E in exact_arrays]
+
+def coeff_x_support(A,ydeg):
+    ex=[a for a in range(A.shape[0]) if A[a,ydeg]]
+    return None if not ex else (min(ex),max(ex))
+
+def sylvester_x_bounds(A,B):
+    m=A.shape[1]-1; n=B.shape[1]-1; N=m+n; BIG=10**9
+    lo=[[BIG]*N for _ in range(N)]
+    hi=[[BIG]*N for _ in range(N)]
+    ac=[coeff_x_support(A,b) for b in range(m,-1,-1)]
+    bc=[coeff_x_support(B,b) for b in range(n,-1,-1)]
+    for r in range(n):
+        for j,sup in enumerate(ac):
+            if sup is not None:
+                lo[r][r+j]=sup[0]; hi[r][r+j]=-sup[1]
+    for r in range(m):
+        rr=n+r
+        for j,sup in enumerate(bc):
+            if sup is not None:
+                lo[rr][r+j]=sup[0]; hi[rr][r+j]=-sup[1]
+    return assignment_cost(lo),-assignment_cost(hi)
+
+def detmod_square(A,p):
+    A=np.remainder(A,p).astype(np.int64,copy=True); n=A.shape[0]; det=1
+    for c in range(n):
+        nz=np.flatnonzero(A[c:,c])
+        if not len(nz): return 0
+        r=c+int(nz[0])
+        if r!=c:
+            A[[c,r]]=A[[r,c]]; det=(-det)%p
+        pv=int(A[c,c]); det=det*pv%p; inv=pow(pv,p-2,p)
+        ids=np.arange(c+1,n); ids=ids[A[ids,c]!=0]
+        if len(ids):
+            fac=(A[ids,c].copy()*inv)%p
+            A[ids,c:]=(A[ids,c:]-fac[:,None]*A[c,c:])%p
+    return int(det%p)
+
+def eval_ycoeff(A,x,p):
+    out=np.zeros(A.shape[1],dtype=np.int64)
+    for b in range(A.shape[1]):
+        v=0
+        for a in range(A.shape[0]-1,-1,-1):
+            v=(v*x+int(A[a,b]))%p
+        out[b]=v
+    while len(out)>1 and out[-1]==0: out=out[:-1]
+    return out
+
+def resultant_at(A,B,x,p):
+    a=eval_ycoeff(A,x,p); b=eval_ycoeff(B,x,p)
+    m=len(a)-1; n=len(b)-1
+    M=np.zeros((m+n,m+n),dtype=np.int64)
+    ad=a[::-1]; bd=b[::-1]
+    for r in range(n): M[r,r:r+m+1]=ad
+    for r in range(m): M[n+r,r:r+n+1]=bd
+    return detmod_square(M,p)
+
+def interpolate_forward(values,p):
+    cur=[int(v)%p for v in values]; dif=[]
+    for _ in range(len(values)):
+        dif.append(cur[0]); cur=[(cur[i+1]-cur[i])%p for i in range(len(cur)-1)]
+    coeff=[0]*len(values); basis=[1]
+    for j,cj in enumerate(dif):
+        if cj:
+            for k,b in enumerate(basis): coeff[k]=(coeff[k]+cj*b)%p
+        if j+1<len(values):
+            inv=pow(j+1,p-2,p); nxt=[0]*(len(basis)+1)
+            for k,b in enumerate(basis):
+                nxt[k]=(nxt[k]-j*b*inv)%p
+                nxt[k+1]=(nxt[k+1]+b*inv)%p
+            basis=nxt
+    while len(coeff)>1 and coeff[-1]==0: coeff.pop()
+    return np.array(coeff,dtype=np.int64)
+
+def resultant_mod(A,B,p,hi):
+    vals=[resultant_at(A,B,x,p) for x in range(hi+1)]
+    return interpolate_forward(vals,p)
+
+def val0(a,p):
+    k=0
+    while k<len(a) and int(a[k])%p==0: k+=1
+    return k
+
+def trim_poly(a,p):
+    a=np.array(a,dtype=np.int64)%p
+    while len(a)>1 and int(a[-1])==0: a=a[:-1]
+    return a
+
+def divrem_poly(a,b,p):
+    a=trim_poly(a,p).copy(); b=trim_poly(b,p)
+    db=len(b)-1; inv=pow(int(b[-1]),p-2,p)
+    while len(a)-1>=db and not(len(a)==1 and int(a[0])==0):
+        k=len(a)-1-db; q=int(a[-1])*inv%p
+        if q: a[k:k+db+1]=(a[k:k+db+1]-q*b)%p
+        a=trim_poly(a,p)
+    return a
+
+def gcd_poly(a,b,p):
+    a=trim_poly(a,p); b=trim_poly(b,p)
+    while not(len(b)==1 and int(b[0])==0):
+        a,b=b,divrem_poly(a,b,p)
+    a=trim_poly(a,p)
+    return a*pow(int(a[-1]),p-2,p)%p
+
+def divide_x_minus_one(a,p):
+    a=trim_poly(a,p)
+    if sum(int(x) for x in a)%p: return None
+    n=len(a)-1
+    if n==0: return None
+    q=np.zeros(n,dtype=np.int64)
+    q[n-1]=a[n]%p
+    for k in range(n-1,0,-1):
+        q[k-1]=(int(a[k])+int(q[k]))%p
+    ck("SYNTHETIC_DIVISION_REMAINDER",(-int(q[0])-int(a[0]))%p==0)
+    return trim_poly(q,p)
+
+def pure_one_factor(a,p):
+    q=trim_poly(a,p); e=0
+    while True:
+        qq=divide_x_minus_one(q,p)
+        if qq is None: break
+        q=qq; e+=1
+    return e,(len(q)==1 and int(q[0])%p!=0)
+
+def sylvester_nullity_x1(A,B):
+    aa=[sum(int(A[x,b]) for x in range(A.shape[0])) for b in range(A.shape[1])]
+    bb=[sum(int(B[x,b]) for x in range(B.shape[0])) for b in range(B.shape[1])]
+    m=len(aa)-1; n=len(bb)-1
+    M=sp.zeros(m+n,m+n)
+    ad=list(reversed(aa)); bd=list(reversed(bb))
+    for r in range(n):
+        for j,v in enumerate(ad): M[r,r+j]=v
+    for r in range(m):
+        for j,v in enumerate(bd): M[n+r,r+j]=v
+    return m+n-M.to_DM().convert_to(sp.QQ).rank()
+
+ELIM_PRIME=664448401
+PAIR_LIST=[(i,j) for i in range(4) for j in range(i+1,4)]
+pair_records=[]
+mod_resultants=[]
+for i,j in PAIR_LIST:
+    A=TRIMMED[i]; B=TRIMMED[j]
+    lo,hi=sylvester_x_bounds(A,B)
+    R=resultant_mod(A,B,ELIM_PRIME,hi)
+    vlo=val0(R,ELIM_PRIME); vhi=len(R)-1
+    edges=(vlo==lo and vhi==hi and int(R[vlo])%ELIM_PRIME!=0 and int(R[vhi])%ELIM_PRIME!=0)
+    ck("RESULTANT_EDGE_PRESERVATION_"+str(i)+"_"+str(j),edges)
+    nul=sylvester_nullity_x1(A,B)
+    pair_records.append({
+      "pair":[i,j],"structural_x_bounds":[lo,hi],
+      "modular_x_support":[vlo,vhi],
+      "exact_sylvester_nullity_at_x1":nul,
+    })
+    mod_resultants.append(R[vlo:])
+
+selection=None
+for a in range(len(PAIR_LIST)):
+    for b in range(a+1,len(PAIR_LIST)):
+        g=gcd_poly(mod_resultants[a],mod_resultants[b],ELIM_PRIME)
+        e,pure=pure_one_factor(g,ELIM_PRIME)
+        if pure and e>0:
+            na=pair_records[a]["exact_sylvester_nullity_at_x1"]
+            nb=pair_records[b]["exact_sylvester_nullity_at_x1"]
+            if min(na,nb)>=e:
+                selection=(a,b,e,g)
+                break
+    if selection is not None: break
+ck("CHARZERO_ELIMINATION_PAIR_FOUND",selection is not None)
+ia,ib,eg,_g=selection
+ck("POSITIVE_COMMON_MULTIPLICITY",eg>0)
+
+# Degree preservation at ELIM_PRIME gives
+# deg gcd_Q <= deg gcd_Fp = eg.  Exact Sylvester nullities give
+# (x-1)^eg dividing both characteristic-zero resultants, so equality holds.
+# Therefore their characteristic-zero gcd on C^* is exactly (x-1)^eg.
+selected_pairs=[PAIR_LIST[ia],PAIR_LIST[ib]]
+selected_nullities=[
+ pair_records[ia]["exact_sylvester_nullity_at_x1"],
+ pair_records[ib]["exact_sylvester_nullity_at_x1"],
+]
+charzero_conclusion=(
+ "the selected exact pair-resultants have characteristic-zero gcd, after "
+ "removing Laurent x-units, equal to (x-1)^%d; hence any common torus zero "
+ "of all four minors has x=1, and the exact x=1 fiber gcd (y-1)^3 then "
+ "forces y=1" % eg
+)
+
 result={
- "schema":"a4d-y-curved-joint-two-ratio-integer-minors-v1",
- "terminal":"A4D-Y-CURVED-JOINT-TWO-RATIO-INTEGER-MINORS-CERTIFIED",
+ "schema":"a4d-y-curved-joint-two-ratio-integer-minors-v2",
+
+ "terminal":"A4D-Y-CURVED-JOINT-TWO-RATIO-CHARZERO-LOCUS-CERTIFIED",
  "background":"z=1 exact Y vacuum; 68-row zone-folded interior operator",
  "ratio_plane":"rho0=1, rho1=x, rho2=y, rho3=1",
  "integer_clear":"multiply every selected matrix entry by 14*x*y",
@@ -304,10 +511,19 @@ result={
    "x_equals_1_common_gcd":str(sp.factor(gx.as_expr())),
    "y_equals_1_common_gcd":str(sp.factor(gy.as_expr()))
  },
+ "characteristic_zero_elimination":{
+   "prime":ELIM_PRIME,
+   "pair_records":pair_records,
+   "selected_resultant_pairs":[list(selected_pairs[0]),list(selected_pairs[1])],
+   "selected_exact_nullities":selected_nullities,
+   "normalized_modular_gcd":"(x-1)^"+str(eg),
+   "conclusion":charzero_conclusion
+ },
+ "rank_conclusion":"on the representative complex two-ratio torus plane, the four certified 68-minors have common zero-set exactly (x,y)=(1,1); hence the 68-row interior operator has full row rank away from the diagonal ratio on this plane",
  "scope_fence":[
    "owns four exact characteristic-zero determinant polynomials in Z[x,y]",
-   "does not yet prove their characteristic-zero common zero-set",
-   "does not prove the full three-ratio or all-Bloch locus",
+   "characteristic-zero common zero-set is certified on the representative two-ratio plane",
+   "does not prove the genuinely three-ratio or all-Bloch locus",
    "no nonlinear response terminal"
  ]
 }
@@ -317,4 +533,5 @@ if "--write" in __import__("sys").argv:
 elif OUT.exists():
     ck("RESULTS_MATCH_PINNED_JSON",json.loads(OUT.read_text())==result)
 print("RESULT_RECORDS",json.dumps(records,sort_keys=True),flush=True)
-print("TERMINAL A4D-Y-CURVED-JOINT-TWO-RATIO-INTEGER-MINORS-CERTIFIED")
+print("CHARZERO_SELECTION",json.dumps(result["characteristic_zero_elimination"],sort_keys=True),flush=True)
+print("TERMINAL A4D-Y-CURVED-JOINT-TWO-RATIO-CHARZERO-LOCUS-CERTIFIED")
