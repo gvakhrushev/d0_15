@@ -420,12 +420,18 @@ This is an actual quadratic Lyapunov--Schmidt coefficient for this one
 normalized curvature germ, not a no-go for spatially varying centers, other
 curvature germs, or the finite-lattice branch. It also does not remove the
 separate phase-resolved metric defect, whose normalized size is subleading
-at this order.
+at this order. The coefficient is unchanged if the first-order connection
+tangent is shifted by an arbitrary constant multiple of the exact flat Y
+family tangent: the owner script's symbolic `s` replay returns the same
+two-vector identically. Thus this obstruction to the constant-center
+restriction cannot be tuned away by a first-order constant Y-amplitude
+retuning. The degree-four spatial center profile still cancels it locally.
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree4_gate_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py --first-center-shift symbolic --coker-only
 ```
 
 The regular formal connection branch survives this order; the residual

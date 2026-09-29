@@ -102,7 +102,7 @@ def pairing_delta2(area, curvature) -> sp.Expr:
     ))
 
 
-def run(write: bool = False) -> dict:
+def run(write: bool = False, first_center_shift=sp.Integer(0), coker_only: bool = False) -> dict:
     owner = json.loads(C.RESULT_PATH.read_text())["normalized_surviving_curvature"]
     check("OWNER_HAS_LINEAR_FIRST_CONNECTION_TANGENT",
           json.loads(C.RESULT_PATH.read_text())["normal_jet"]["surviving_first_connection_tangent_degree"] == 1)
@@ -111,6 +111,17 @@ def run(write: bool = False) -> dict:
         tuple(map(int, label.split(":"))): sp.Rational(value)
         for label, value in owner["first_connection_tangent_constant_nonzero"].items()
     }
+    # A free order-delta shift along the exact flat Y family is an admissible
+    # first tangent.  Keep it explicit when probing the nonlinear cokernel.
+    for label, value in {
+        (0, 0, 3): sp.Rational(4, 7),
+        (0, 0, 4): sp.Rational(-4, 7),
+        (0, 0, 5): sp.Rational(4, 7),
+        (2, 0, 3): sp.Rational(-4, 7),
+        (2, 0, 4): sp.Rational(4, 7),
+        (2, 0, 5): sp.Rational(-4, 7),
+    }.items():
+        a0[label] = a0.get(label, 0) + first_center_shift * value
     linear = {
         direction: {
             tuple(map(int, label.split(":"))): sp.Rational(value)
@@ -422,6 +433,27 @@ def run(write: bool = False) -> dict:
     print("BUILT_CONNECTION_JET_COEFFICIENTS_DEGREE", processed_degree, flush=True)
 
     connection_equations = sp.Matrix.vstack(*cokernel_equations)
+    if coker_only:
+        zero_multi = (0, 0, 0, 0)
+        zero_row = 2 * jet_index[zero_multi]
+        projected_source = sp.Matrix([
+            sp.factor(connection_equations[zero_row + row, 0])
+            for row in range(connection_left.rows)
+        ])
+        check("SYMBOLIC_CENTER_SHIFT_C2_IS_AT_MOST_QUADRATIC",
+              all(sp.Poly(value, first_center_shift).degree() <= 2
+                  for value in projected_source))
+        if first_center_shift == sp.Symbol("s"):
+            check("FREE_FIRST_ORDER_Y_SHIFT_LEAVES_C2_UNCHANGED",
+                  projected_source == sp.Matrix([
+                      sp.Rational(351402359, 2108160),
+                      sp.Rational(21506403637, 154949760),
+                  ]))
+        print("FIRST_CENTER_SHIFT", first_center_shift, flush=True)
+        print("ZERO_MODE_C2", [sp.factor(value) for value in projected_source], flush=True)
+        return {"center_shift": str(first_center_shift),
+                "zero_mode_c2": [str(sp.factor(value)) for value in projected_source]}
+
     connection_matrix = connection_equations[:, 1:]
     connection_rhs = -connection_equations[:, 0]
     connection_rank = rank_exact(connection_matrix)
@@ -841,4 +873,10 @@ def run(write: bool = False) -> dict:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--write", action="store_true")
-    run(parser.parse_args().write)
+    parser.add_argument("--first-center-shift", default="0",
+                        help="exact rational value or 'symbolic' for the free first-order Y-family shift")
+    parser.add_argument("--coker-only", action="store_true",
+                        help="stop after extracting the exact zero-mode connection-cokernel polynomial")
+    args = parser.parse_args()
+    shift = sp.Symbol("s") if args.first_center_shift == "symbolic" else sp.Rational(args.first_center_shift)
+    run(args.write, shift, args.coker_only)
