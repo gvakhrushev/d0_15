@@ -180,6 +180,35 @@ The exact checker `a4d_y_dual_center_joint_visibility_check.py` integrates the b
 
 on fast phases 0 and 1, and the negative vector on phases 2 and 3, where `f=4d/(3d^2-4)`. The four-phase average is zero, but a smooth source requires fast-phase erasure and forces `d=0` near the origin. Thus the second connection-Hessian center is not an independent smooth-source joint modulus: it is connection-stationary and staggered-metric-visible.
 
+### Fixed-solder joint tangent near the selected Y vacuum
+
+There is a sharper finite-cell statement behind that visibility test. Let
+`H(z)` be the 96-by-96 connection Hessian and `C0(z)` the full 40-by-96,
+phase-resolved derivative of the metric Euler rows with respect to the
+connection, both at the flat-solder period-four Y vacuum. The exact owner
+calculation at `z=1` gives `rank H=94` and
+`rank [H; C0]=95`. The exact Y-family tangent lies in the latter kernel, so
+the fixed-solder linearized joint-critical connection space is exactly
+one-dimensional: it is the tangent to the Y family. The boost-dual tangent
+is removed by `C0`, and there are no other constant-cell transverse joint
+tangents.
+
+This statement persists on some open interval about `z=1`. The entries of
+`[H(z); C0(z)]` are rational functions of the Cayley parameter. A 95-by-95
+minor nonzero at `z=1` stays nonzero in a neighborhood, while the exact Y
+family tangent supplies a kernel vector throughout that neighborhood;
+therefore the rank remains exactly 95 and the kernel remains precisely that
+tangent. This is an algebraic local-in-`z` consequence of the pinned ranks,
+not a uniform estimate over Bloch momentum or refinement.
+
+This also clarifies the limit of the transverse `K2` inertia result:
+indefinite connection energy alone cannot supply a joint-critical branch,
+because the full fixed-solder tangent at `z=1` has only the Y direction.
+This still does not rule out a sourced
+nonlinear continuation whose range correction has a transverse component,
+or spatially varying/high-Bloch branches; those require the nonlinear
+reduced equations and uniform remainder control.
+
 ## Quadratic symbol of the surviving center envelopes
 
 The follow-up certificate `a4d_y_center_envelope_symbol_check.py` computes the exact quadratic symbol of the two-dimensional stationary center at `z=1`. The two components decouple at principal order. With `s=t1+t2+t3` and `r_perp^2=t1^2+t2^2+t3^2-s^2/3`, their symbols are
