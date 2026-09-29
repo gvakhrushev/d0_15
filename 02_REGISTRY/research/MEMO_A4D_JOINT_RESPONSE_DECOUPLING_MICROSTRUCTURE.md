@@ -490,12 +490,16 @@ part of Bloch space they cover.
    /1525932452501592103567428379487267246378717660095190382527232
    ```
 
-   and is strictly below `31^2`.  Entrywise diagonal phase covariance
+   and is strictly below `31^2`.  A stronger exact rational Collatz
+   certificate for `H=M^{-T}M^{-1}` has maximum weighted row ratio
+   `39324659450219131318503292696502016712938627281350055258788171173083
+   /100748164243965117045935891327267332674908454790124849815977965568
+   < 400`, hence `||M^{-1}||_2 < 20`.  Entrywise diagonal phase covariance
    `Q(z,z,z,z)=D_out(z) Q(1,1,1,1) D_in(z)` for `z^4=1` transfers the
-   same bound to all four folded copies.  Combining it with the `22/7`
-   Lipschitz owner gives a uniform Neumann chart on every folded
-   `l1`-angular ball of radius `7/1364`, with transverse inverse norm
-   strictly below 62.
+   same operator bound to all four folded copies.  Combining it with the
+   `22/7` Lipschitz owner gives a uniform Neumann chart on every folded
+   `l1`-angular ball of radius `7/880`, with transverse inverse norm
+   strictly below 40.
 
 This is the first rigorous transverse range estimate around the physical
 folded center.  It is local.  The complement of those four balls on the
@@ -547,7 +551,7 @@ phase-resolved compatible jet and they do not prove a nonlinear no-go.
 
 The remaining Y-sheet problem is therefore sharper.  Near each folded
 character the 95 transverse variables now have an explicit uniform
-Lyapunov-Schmidt inverse on the certified radius `7/1364`.  The first
+Lyapunov-Schmidt inverse on the certified radius `7/880`.  The first
 missing spectral step is the exact regular-complement theorem on the rest of
 `(S^1)^4`.  The first missing nonlinear step is to solve or obstruct the
 reduced center/compatibility equations for a genuinely curved sampled metric,
@@ -620,16 +624,20 @@ so the same chart applies at all four folded copies.  After deleting the
 phase-0 role-0 `J13` coordinate, which is nonzero on the exact Y kernel, the
 selected minor has rank 95 and
 
-`||M_*^{-1}||_2 <= ||M_*^{-1}||_F < 31`.
+`||M_*^{-1}||_F < 31`.
+
+The stronger rational Collatz bound on `M_*^{-T}M_*^{-1}` gives
+
+`||M_*^{-1}||_2 < 20`.
 
 Together with the independently certified global unit-torus bound
 
 `||Q(theta)-Q(phi)||_2 <= (22/7) sum_j |theta_j-phi_j|`,
 
-the Neumann estimate gives, for l1 angular distance at most `7/1364` from
+the Neumann estimate gives, for l1 angular distance at most `7/880` from
 any folded point,
 
-`||M(theta)^{-1}||_2 < 62`.
+`||M(theta)^{-1}||_2 < 40`.
 
 Thus the 95 transverse connection coordinates are uniformly solvable in an
 explicit neighbourhood of every folded Y copy; the remaining equations are
