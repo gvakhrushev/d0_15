@@ -1,5 +1,11 @@
 {
-  "schema": "a4d-y-curved-joint-torus-lipschitz-v1",
+  "schema": "a4d-y-curved-joint-torus-lipschitz-v2",
+  "terminal": "A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED",
+  "z": "1",
+  "operator_shape": [
+    136,
+    96
+  ],
   "support": [
     [
       -1,
@@ -128,36 +134,40 @@
       0
     ]
   ],
-  "stencil_frobenius_norm2": {
-    "(-1, 0, 0, 0)": "24",
-    "(-1, 0, 0, 1)": "4",
-    "(-1, 0, 1, 0)": "4",
-    "(-1, 1, 0, 0)": "4",
-    "(0, -1, 0, 0)": "24",
-    "(0, -1, 0, 1)": "4",
-    "(0, -1, 1, 0)": "4",
-    "(0, 0, -1, 0)": "24",
-    "(0, 0, -1, 1)": "4",
-    "(0, 0, 0, -1)": "24",
-    "(0, 0, 0, 0)": "5658/49",
-    "(0, 0, 0, 1)": "1942/49",
-    "(0, 0, 1, -1)": "4",
-    "(0, 0, 1, 0)": "1942/49",
-    "(0, 1, -1, 0)": "4",
-    "(0, 1, 0, -1)": "4",
-    "(0, 1, 0, 0)": "1942/49",
-    "(1, -1, 0, 0)": "4",
-    "(1, 0, -1, 0)": "4",
-    "(1, 0, 0, -1)": "4",
-    "(1, 0, 0, 0)": "1710/49"
-  },
-  "coordinate_derivative_frobenius_upper_bounds": [
-    "22821/1000",
-    "23209/1000",
-    "23209/1000",
-    "23209/1000"
+  "support_size": 21,
+  "coordinate_bounds": [
+    {
+      "axis": 0,
+      "max_column_sum": "22/7",
+      "max_row_sum": "22/7",
+      "operator_upper_bound": "22/7"
+    },
+    {
+      "axis": 1,
+      "max_column_sum": "22/7",
+      "max_row_sum": "22/7",
+      "operator_upper_bound": "22/7"
+    },
+    {
+      "axis": 2,
+      "max_column_sum": "22/7",
+      "max_row_sum": "22/7",
+      "operator_upper_bound": "22/7"
+    },
+    {
+      "axis": 3,
+      "max_column_sum": "22/7",
+      "max_row_sum": "22/7",
+      "operator_upper_bound": "22/7"
+    }
   ],
+  "global_bound": "||Q(theta)-Q(phi)||_2 <= (22/7) * sum_j |theta_j-phi_j|",
   "metric": "theta coordinates, lambda_j=exp(i theta_j)",
-  "use": "||Q(theta)-Q(phi)||_2 <= sum_j L_j |theta_j-phi_j|",
-  "scope": "global exact-rational upper bounds; no torus-cover completeness claim"
+  "proof": "entrywise Laurent derivative envelope plus ||M||_2 <= sqrt(||M||_1 ||M||_infinity)",
+  "scope_fence": [
+    "global on the physical unit torus",
+    "does not prove the all-Bloch zero locus",
+    "does not itself give a positive transverse gap",
+    "intended as the perturbation constant for local and finite-cover estimates"
+  ]
 }
