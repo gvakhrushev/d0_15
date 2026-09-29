@@ -1,0 +1,144 @@
+{
+  "owner": "a4d_resonance_divisor_counterexample_check.py connection_hessian convention",
+  "symbol_shape": [
+    24,
+    24
+  ],
+  "nonzero_entries": 96,
+  "max_entry_numerator_terms": 4,
+  "max_entry_numerator_total_degree": 2,
+  "entry_denominators": [
+    "1",
+    "2*z0",
+    "2*z1",
+    "2*z2",
+    "2*z3"
+  ],
+  "exact_determinant_symmetries": [
+    "permutation symmetry on spatial coordinates z1,z2,z3 (two exact generators)",
+    "simultaneous inversion z_r -> z_r^-1 for all four characters"
+  ],
+  "role_block_generic_ranks_over_Q(z)": [
+    [
+      4,
+      4,
+      4,
+      4
+    ],
+    [
+      4,
+      4,
+      4,
+      4
+    ],
+    [
+      4,
+      4,
+      4,
+      4
+    ],
+    [
+      4,
+      4,
+      4,
+      4
+    ]
+  ],
+  "exact_slice_determinants": {
+    "(x,1,1,1)": "(3*x**4 - 22*x**2 + 3)**2/x**4",
+    "(x,x,1,1)": "256",
+    "(x,1/x,1,1)": "(x**4 - 2*x**3 - 2*x**2 - 2*x + 1)**4/x**8",
+    "(x,x,x,1)": "(x**8 + 6*x**6 + 18*x**4 + 6*x**2 + 1)**2/(4*x**8)",
+    "(x,-1,1,1)": "(x**6 - 3*x**5 - x**4 - 10*x**3 - x**2 - 3*x + 1)**2/x**6",
+    "(y,x,x,x)": "(x*y - x + y + 1)**2*(x*y + x - y + 1)**2*(3*x**8*y**2 - x**6*y**4 + 8*x**6*y**2 - x**6 + 4*x**5*y**3 - 4*x**5*y - 4*x**4*y**4 + 22*x**4*y**2 - 4*x**4 - 4*x**3*y**3 + 4*x**3*y - x**2*y**4 + 8*x**2*y**2 - x**2 + 3*y**2)**2/(64*x**10*y**6)"
+  },
+  "negative_controls": {
+    "rank_at_(1,1,1,1)": 24,
+    "rank_at_(-1,-1,i,i)_over_Q(i)": 22
+  },
+  "square_character_specializations": {
+    "determinants": {
+      "(4,9,16,25)": "55489071565690103131701193700501/19349176320000000000",
+      "(1,4,9,16)": "82681547376902231521/1761205026816",
+      "(4,1,25,9)": "117428711891945882503513/147622500000000"
+    },
+    "ratios": {
+      "(4,9,16,25) / (1,4,9,16)": "443912572525520825053609549604008/7266932874923047692275390625",
+      "(4,9,16,25) / (4,1,25,9)": "55489071565690103131701193700501/15391616125101130711500455936",
+      "(1,4,9,16) / (4,1,25,9)": "7266932874923047692275390625/123132929000809045692003647488"
+    },
+    "conclusion": "global determinant is not a rational Laurent unit times a square"
+  },
+  "chiral_determinant_norm": {
+    "basis_change_determinant": "4096",
+    "plus_block": "Pplus(z0,z1,z2,z3)/(z0*z1*z2*z3)^3",
+    "minus_block": "conjugate(Pplus)(z0,z1,z2,z3)/(z0*z1*z2*z3)^3",
+    "full_determinant": "Pplus*conjugate(Pplus)/(4096^2*(z0*z1*z2*z3)^6)",
+    "plus_numerator_field": "Q(i)",
+    "plus_numerator_degree": 18,
+    "plus_numerator_term_count": 671,
+    "plus_numerator_ledger": "a4d_resonance_divisor_chiral_numerator.json",
+    "exact_full_determinant_controls": {
+      "(4,9,16,25)": "55489071565690103131701193700501/19349176320000000000",
+      "(1,4,9,16)": "82681547376902231521/1761205026816",
+      "(4,1,25,9)": "117428711891945882503513/147622500000000"
+    },
+    "irreducibility_certificate": {
+      "substitution": "z0=u; z1=u+y1; z2=u+y2; z3=u+y3",
+      "coordinate_change_determinant": "1",
+      "leading_u_coefficient": "-1024",
+      "coefficient_denominator_cleared": 1,
+      "specialization": "y1=1, y2=4, y3=8 over F13 with i mapped to 5",
+      "specialized_coefficients_descending": [
+        3,
+        0,
+        11,
+        7,
+        5,
+        12,
+        0,
+        10,
+        5,
+        10,
+        0,
+        4,
+        2,
+        9,
+        11,
+        5,
+        0,
+        6,
+        7
+      ],
+      "degree_preserved": 18,
+      "irreducible_mod_prime": true,
+      "conjugate_nonassociation_witnesses": {
+        "real_coefficient": "512",
+        "imaginary_coefficient": "-512*I",
+        "conjugation_ratios": [
+          "1",
+          "-1"
+        ]
+      },
+      "conclusion": "Pplus irreducible over Q(i); Pplus*conjugate(Pplus) irreducible over Q"
+    },
+    "codimension_one_generic_rank_over_C": 23,
+    "known_component_intersection_point_control": {
+      "point": [
+        "-1",
+        "-1",
+        "i",
+        "i"
+      ],
+      "Pplus_value": "0",
+      "Pminus_value": "0",
+      "rank_Aplus": 11,
+      "rank_Aminus": 11,
+      "full_rank": 22,
+      "scope": "exact point control only; not the complete intersection locus"
+    },
+    "irreducible_factorization_over_Q": "CERTIFIED_UP_TO_LAURENT_UNIT"
+  },
+  "global_multivariable_factorization": "CERTIFIED_UP_TO_LAURENT_UNIT_OVER_Q",
+  "complete_rank_stratification": "OPEN"
+}

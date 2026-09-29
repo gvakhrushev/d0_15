@@ -32,6 +32,8 @@ Produce the determinant as an exact Laurent polynomial and factor it over `Q` up
 
 The phase-count formula proposed before PR #314 is already refuted and must not be revived. The goal is its exact replacement (or a proof that no formula depending only on those counts can classify the owned `A` rank), with the actual algebraic rank strata recorded.
 
+Scope correction from the exact Hodge replay: `rank A = 2 rank M` is not a theorem for arbitrary complex characters. The valid identity is `rank A = rank M + rank σ(M)`; rank doubling and determinant nonnegativity follow only on the physical unit torus after using transpose reciprocity. The exact complex rank-23 witness is recorded in the primary memo/certificate. Irreducibility over `Q(i)` must not be described as absolute irreducibility over `C`; the latter remains open unless separately proved.
+
 ## Required checks
 
 1. Pin the exact source owner, coordinate ordering, and matrix convention for `A`; derive the Laurent determinant from that owner rather than importing an archive or a floating scan.
