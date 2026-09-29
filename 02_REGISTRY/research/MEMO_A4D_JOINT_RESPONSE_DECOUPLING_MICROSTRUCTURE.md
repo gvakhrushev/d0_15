@@ -446,6 +446,7 @@ python3 02_REGISTRY/research/certificates/a4d_y_joint_first_slow_injectivity_che
 python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_mu4_locus_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_torus_lipschitz_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_folded_range_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_quarter_spatial_diagonal_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_product_plane_seed_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_stationary_center_family_coker_check.py
@@ -584,9 +585,10 @@ periodic spatial carrier.  Replay with
 `python3 02_REGISTRY/research/certificates/a4d_y_temporal_spin_transport_check.py`.
 
 This is not a full transverse theorem: spatial links are fixed to identity
-in this certificate.  Together with the 96-variable degree-two normal-jet
-obstruction, it leaves singular/refinement-dependent high-Bloch
-spatial-transverse corrections as the relevant local loophole.  A numerical
+in this certificate.  Under the corrected phase-resolved normal-jet owner,
+the remaining loophole is singular/refinement-dependent high-Bloch
+spatial-transverse correction, not the historical restricted degree-two
+obstruction.  A numerical
 full-joint singular-value scout suggests that, after the folded Y-center is
 separated, the next singular value stays near `0.1128`; that observation is
 diagnostic only.  The required next theorem is an exact all-Bloch lower bound
@@ -632,6 +634,38 @@ Thus the 95 transverse connection coordinates are uniformly solvable in an
 explicit neighbourhood of every folded Y copy; the remaining equations are
 the reduced compatibility/center equations.  This is a local range theorem,
 not an all-Bloch theorem and not nonlinear reduced-center solvability.
+
+A further exact stratum theorem removes the continuous metric-block rank-drop
+line that passes through these folded points.  The owner
+`a4d_y_curved_joint_quarter_spatial_diagonal_check.py` considers
+
+```text
+lambda0 = zeta in mu4,
+lambda1 = lambda2 = lambda3 = x in C^*.
+```
+
+For `zeta=1`, augmenting the 95 folded-range rows by connection rows 4 and
+15 gives two 96-by-96 minors.  After clearing the common denominator 14,
+their Laurent determinants are reconstructed exactly by 256-root finite-field
+DFT and 25-prime CRT.  A Hadamard/Cauchy coefficient bound makes the centered
+CRT reconstruction unique; after removing Laurent units and integer contents,
+both primitive polynomials have degree 94 and their exact gcd in `Z[x]` is
+
+```text
+x - 1.
+```
+
+Therefore the full joint symbol has rank 96 for every complex `x != 1` on
+this entire stratum.  The entrywise fourth-root covariance is actually global,
+
+```text
+Q(zeta * lambda) = D_out(zeta) Q(lambda) D_in(zeta),  zeta^4 = 1,
+```
+
+so the result transfers to every quarter-temporal copy: the unique rank drop
+on `lambda0=zeta, lambda1=lambda2=lambda3=x` is `x=zeta`.  This removes a
+whole continuous exceptional layer, not merely sampled characters.  It still
+does not classify the rest of the four-dimensional unit torus.
 
 The active linear gap is therefore split cleanly into two pieces:
 
