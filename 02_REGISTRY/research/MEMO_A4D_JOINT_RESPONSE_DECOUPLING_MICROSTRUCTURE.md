@@ -110,6 +110,54 @@ has the exact cell bound `11000*delta^2`; for bounded `kappa` this is
 finite source-compatibility obstruction, not a nonzero normalized response
 gap. Neither calculation constructs an exact finite-lattice joint branch.
 
+### Candidate periodic mean obstruction for a regular Y-sheet branch
+
+The local geometric input to a possible periodic Fredholm test is now
+certified independently in
+`a4d_y_variable_curvature_normal_jet_check.py`. For the product's two-
+dimensional factor, the radial Jacobi equation gives, in geodesic-normal
+coordinates and the pinned convention `K=3*kappa`,
+
+```text
+Q_h-eta = h^2*kappa*T(xi)
+        + h^3*(grad(kappa) dot xi)*T(xi)/2
+        + h^4*[-2*kappa^2*|xi|^2/5
+              + 3*Hess(kappa)(xi,xi)/20]*T(xi)
+        + O(h^5),
+T(xi)=|xi|^2 I-xi xi^T.
+```
+
+The exact Jacobi recurrence and its constant-curvature specialization pass;
+this closes the local metric-jet expansion. The local normal charts have not
+yet been transported to the sampled periodic stencil or its cokernel basis.
+If that transport produces the stated uniform Taylor expansion, sum the
+connection Euler equations over periodic sites against a transported
+zero-momentum left-kernel row. The flat linearized term in the unknown second
+correction sums to zero exactly: periodic shifts preserve the site sum and
+`ell^T H=0`. At order `h^4`, the geometric metric jet has a `kappa^2` term
+and a term linear in `Hess(kappa)`; the latter has zero periodic mean. In the
+certificate convention `H a^(2) = -F^(2)`, the exact constant-curvature
+right-hand-side coefficient is
+`(351402359/2108160, 21506403637/154949760)`. The symbolic family check leaves
+it unchanged under every first-order constant Y retuning.
+
+If the required global transport and remainder estimates hold, the periodic
+mean equation would contain a nonzero multiple of `mean(kappa^2)` for any
+nonflat periodic two-dimensional factor, ruling out a regular second-order
+continuation on this `z=1` Y sheet. This remains conditional: the geometric
+normal-jet formula alone does not prove that the discrete cokernel expansion
+has no additional order-`h^4` terms or that its remainder is uniform. The
+candidate is not an exact sequence of joint-critical configurations and gives
+no response gap for the task-level NOGO.
+
+The phase-common metric obstruction itself is homogeneous in the curvature
+amplitude: the exact `-22209` and `-166034484` pairings become those constants
+times `kappa^2`. At generic regular `z`, the exact rank jump at `z=1` also
+implies a degree-two obstruction outside a finite algebraic exceptional set,
+because the reduced matrices are rational in `z`. Neither deduction
+identifies exceptional `z` values or rules out a singular `h`-dependent
+center correction of the same order.
+
 ## Small-amplitude splitting at zero slow momentum
 
 The exact checker `a4d_y_small_amplitude_kernel_splitting_check.py` reduces the flat 16-dimensional connection kernel twice. The effective ranks through order six are `(0,0,12,12,14,14,14)`. After the order-two block, four directions remain; the reduced order-four and order-five blocks vanish, while the order-six block is `diag(0,0,9/8,3/8)`. The final kernel consists of the exact Y and boost-dual center tangents. Twelve transverse modes lift at order two, two soft modes at order six, and the worst inverse loss is `O(z^-6)`. This exact zero-momentum splitting identifies the small-amplitude conditioning that a nonlinear uniform estimate must control; it is not itself an `h`-uniform continuation theorem.
@@ -144,9 +192,10 @@ python3 02_REGISTRY/research/certificates/a4d_y_joint_first_slow_injectivity_che
 python3 02_REGISTRY/research/certificates/a4d_y_product_plane_seed_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_stationary_center_family_coker_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_variable_curvature_normal_jet_check.py
 ```
 
-The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The subsequent pair verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. The next two verify joint first-slow injectivity and the nonlinear product-plane seed identities. The final pair verify the exact `delta^2` connection/metric normal-jet system and its invariance under arbitrary constant first-order Y retuning. Each current checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
+The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The subsequent pair verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. The next two verify joint first-slow injectivity and the nonlinear product-plane seed identities. The following pair verify the exact `delta^2` connection/metric normal-jet system and its invariance under arbitrary constant first-order Y retuning. The final command derives the variable-curvature Riemann-normal metric jet and checks its constant-curvature specialization against that owner. Each checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
 
 The submitted aggregate JSON has SHA-256 `79e6db7d96a0863a6af56e94752d080d5505a7fc47a307b752269dd092c4e230`. Its per-site `q12` arrays are not separately asserted by the aggregate checker.
 
@@ -165,7 +214,7 @@ The following boundaries remain:
 
 ## Remaining global gate
 
-Globalize the reduced equations on the periodic lattice with the fixed source convention. In particular, determine whether the quartic local center correction can satisfy the global zero-mode cokernel equations together with the phase-resolved metric-source rows, or whether an h-dependent/nonanalytic center branch survives. The first-slow metric constraints must remain imposed; the two connection-only hyperbolic symbols are not free joint envelopes. Only after this global branch-or-obstruction gate can one prove the refinement-uniform estimate
+First certify the variable-curvature derivative-jet reduction behind the periodic mean test. If it passes, the regular `z=1` branch is cut; the remaining gate is to control or construct nonanalytic h-dependent center/transverse branches under the fixed source convention, with the phase-resolved metric equations retained. The first-slow metric constraints must remain imposed; the two connection-only hyperbolic symbols are not free joint envelopes. Only after this global branch-or-obstruction gate can one prove the refinement-uniform estimate
 
 `|E_Q(Q_h,K_h) - E_Q(Q_h,K_h^sm)| = o(h^2)`
 

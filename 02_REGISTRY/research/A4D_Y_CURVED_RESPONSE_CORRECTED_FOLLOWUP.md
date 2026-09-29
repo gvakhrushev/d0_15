@@ -126,6 +126,49 @@ three range equations. Thus this local defect cannot be tuned away by that
 one center parameter. Spatially varying higher center jets and the global
 finite-lattice branch remain open.
 
+### Amplitude and parameter consequences of the degree-two witness
+
+The phase-common degree-two obstruction is homogeneous in the curvature
+amplitude on this normal-jet slice. With `delta=kappa*h^2`, the first metric
+and connection tangents scale as `kappa`, and the quadratic normal-jet forcing
+scales as `kappa^2`. The reduced matrix for the 20 free degree-three center
+coefficients is built from the flat Hessian and its shift moments, so it does
+not depend on `kappa`. The exact ranks therefore remain `20 -> 21` for every
+nonzero `kappa`, and the pinned pairings scale to
+
+```text
+reduced cokernel witness:        -22209 * kappa^2
+primitive 136-row Euler witness: -166034484 * kappa^2
+```
+
+Thus at `z=1`, on `R=kappa*R_Y`, no phase-common joint formal normal-jet
+continuation through degree two exists when `kappa != 0`. This extends the
+unit-amplitude certificate to the full nonzero ray; it remains a finite-jet
+statement for this one curvature direction.
+
+A generic-`z` consequence follows without knowing an explicit obstruction
+polynomial. Every fixed-degree matrix in this calculation is rational in the
+one Cayley parameter `z`. On a pivot chart through `z=1`, a 20-by-20 minor of
+the coefficient matrix and a 21-by-21 minor of its augmentation are nonzero
+at `z=1`, by the certified ranks. Those minors are nonzero rational functions.
+Away from their finite zero sets and the finite poles/rank-drop set, the
+coefficient matrix has at most 20 columns while its augmentation has rank at
+least 21. Hence the same curvature direction is obstructed at generic regular
+`z`. This proves that any exceptional regular values lie in a finite
+algebraic set, but does not identify that set or cover the singular flat point
+`z=0`.
+
+For an `h`-dependent amplitude the leading witness is
+`-22209*kappa(h)^2*h^4`. A uniform remainder `o(h^4)` would rule out a limit
+`kappa(h)->kappa_0 != 0`. A stronger estimate
+`|R_h| <= C*h^(4+epsilon)` would imply
+`|kappa(h)| <= sqrt(C/22209)*h^(epsilon/2)`. Neither estimate is available
+for the full finite-lattice center/range system, so the witness alone does
+not force a general `h`-dependent branch to shrink. A singular center
+correction of the same order may still cancel it. The quadratic witness also
+does not automatically rule out branches whose first nonzero curvature jet
+occurs at a higher order.
+
 Derive and control the nonlinear **joint constrained** equations, rather than two free connection-center wave equations, then continue the surviving curved normal jet `J` to an exact stationary branch
 
 `K_h(J) = K_Y + a_h(J)`
