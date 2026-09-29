@@ -58,6 +58,52 @@ The common metric response in coordinate order `(q00,q01,q02,q03,q11,q12,q13,q22
 
 The independently assembled flat Einstein control is exactly the same vector. The finite terminal is `A4D-Y-CURVED-NORMAL-JET-RESPONSE-COMPATIBLE`.
 
+## Nonlinear status of the second connection-center mode
+
+The exact checker `a4d_y_dual_center_joint_visibility_check.py` integrates the boost-dual connection-kernel tangent to a finite Cayley path at the (z=1) flat Y vacuum.
+
+All 96 connection Euler rows vanish identically on that path. Its ten Gram-response components, however, are
+
+[
+(0,0,0,0,-f,f,f,-f,f,-f),
+qquad f=rac{4d}{3d^2-4},
+]
+
+on fast phases (0,1), and exactly the negative vector on phases (2,3).
+
+The four-phase average is therefore zero, but a smooth source requires fast-phase erasure and forces (d=0) near the origin. Thus the second connection Hessian center is not an independent smooth-source joint modulus. The genuine nonlinear flat stationary modulus is the Y amplitude; the dual direction is connection-stationary but staggered metric-visible.
+
+## Center-envelope principal symbol
+
+The exact checker `a4d_y_center_envelope_symbol_check.py` eliminates the 94 range directions at (z=1). At quadratic principal order the Y tangent and boost-dual center decouple.
+
+With
+
+[
+s=t_1+t_2+t_3,qquad
+r_perp^2=t_1^2+t_2^2+t_3^2-rac{s^2}{3},
+]
+
+the Y tangent has principal form
+
+[
+-rac{2}{188307}left[
+26250left(t_0-rac{16}{75}sight)^2-rac{2283779}{2}r_perp^2
+ight],
+]
+
+while the boost-dual tangent has
+
+[
+-rac{1}{6408}left[
+882left(t_0-rac{16}{21}sight)^2-rac{603687}{2}r_perp^2
+ight].
+]
+
+The center is therefore a transported (2+1) hyperbolic envelope sector, not an elliptically isolated kernel. A uniform spectral-gap rescue is structurally inappropriate. The correct nonlinear architecture is range elimination plus hyperbolic center evolution, followed by smooth-source removal of the dual branch.
+
+Independent exact rational reruns at (z=1/2), (z=1/4), and (z=1/10) preserve the normal-jet ranks (10), (43), curvature projection (20	o1), smooth-source rank (5), and exact emergent Einstein equality. These are supporting amplitude-family checks, not yet a symbolic-in-(z) theorem.
+
 ## Reproduction
 
 From the repository root, run:
