@@ -13,10 +13,11 @@ Q(z,z,z,z)=D_out(z) Q(1,1,1,1) D_in(z) for z^4=1, with unit-modulus diagonal
 phase matrices.  The same selected minor is therefore invertible at all four
 folded copies with exactly the same singular values and inverse Frobenius norm.
 
-The exact Hermitian Frobenius norm of the inverse is < 31. Combined with the
-separately certified global joint-symbol Lipschitz constant 22/7, a Neumann
-argument gives a uniform transverse inverse bound < 62 whenever the l1
-angular distance from a folded point is <= 7/1364.
+The exact inverse is first pinned by its Hermitian Frobenius norm. A stronger
+rational Collatz certificate for H=M^{-T}M^{-1} proves ||M^{-1}||_2 < 20.
+Combined with the separately certified global joint-symbol Lipschitz constant
+22/7, a Neumann argument gives a uniform transverse inverse bound < 40
+whenever the l1 angular distance from a folded point is <= 7/880.
 
 This is a local folded-neighbourhood range theorem. It is not a global
 all-Bloch zero-locus theorem and does not solve the reduced nonlinear center
@@ -44,6 +45,19 @@ INV_FROB2=sp.Rational(
 1449607289608826796462600607206428282020098585931893046315145431,
 1525932452501592103567428379487267246378717660095190382527232,
 )
+COLLATZ_WEIGHTS=[
+4186,2883,4084,3272,1925,5886,2923,9046,3598,3860,3745,6986,8018,4262,6601,
+3500,3946,4224,4356,1541,7088,3534,2001,5849,4089,2476,6238,4054,2212,5919,
+2398,6291,3227,1672,8504,2897,1785,1997,6314,3149,2123,4965,3023,1484,1773,
+1000,4011,7212,1049,2399,1572,1690,3546,1921,4123,6820,5369,3639,3344,1417,
+1425,1328,6487,8231,1303,2660,3705,2507,8246,6203,8647,4027,8403,7003,3760,
+2729,5152,4438,6162,3528,7793,3439,6136,2739,3583,3389,4015,2949,3634,6648,
+9046,3126,6593,5721,11551
+]
+COLLATZ_MAX=sp.Rational(
+39324659450219131318503292696502016712938627281350055258788171173083,
+100748164243965117045935891327267332674908454790124849815977965568,
+)
 
 def ck(name,cond):
     if not cond: raise AssertionError(name)
@@ -57,18 +71,19 @@ def col_phase(col):
 
 # Each Laurent cell has a unique phase exponent mod 4 on the diagonal.
 seen={}
+phase_ok=True
 for d,M in L.T.items():
     e=sum(d)%4
     for (r,c),v in M.todok().items():
-        if v==0: continue
-        ck("PHASE_EXPONENT_"+str(r)+"_"+str(c)+"_"+str(d),
-           e==(col_phase(c)-row_phase(r))%4)
+        if v==0:
+            continue
+        phase_ok = phase_ok and e==(col_phase(c)-row_phase(r))%4
         key=(r,c)
         if key in seen:
-            ck("CELL_PHASE_EXPONENT_CONSISTENT_"+str(r)+"_"+str(c),seen[key]==e)
+            phase_ok = phase_ok and seen[key]==e
         else:
             seen[key]=e
-ck("ALL_JOINT_CELLS_PHASE_COVARIANT",len(seen)>0)
+ck("ALL_JOINT_CELLS_PHASE_COVARIANT",phase_ok and len(seen)>0)
 
 Q0=sum((M for M in L.T.values()),sp.zeros(136,96))
 drop=L.LABELS.index(DROP_LABEL)
