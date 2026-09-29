@@ -9,7 +9,7 @@ Pinned live inputs at dispatch time:
 
 - main: `e80a3b1ccf615fb4f70bf5900181592604928497`
 - resonance / structural lane #317: reviewed base head `727a3bd36aed3083c8584232a93922521d44465e`
-- response lane #310: correction head `95f13a22ef9fbd9165dec18e415eb149b0652d1f`; historical finite-defect head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b` is superseded for physical interpretation
+- response lane #310: integrated corrected finite head `b259dc57efe2b8dc84dbc38a847630a3681c87b4`; historical finite-defect head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b` is superseded for physical interpretation
 
 Always refresh before execution. Reuse merged/live owners; do not recompute whole censuses unless a narrow consistency check requires it.
 
@@ -280,26 +280,30 @@ A sourced version may then compare the common geometric response with the prescr
 
 ---
 
-## 4. Superseded finite defect and corrected compatibility frontier
+## 4. Corrected finite normal-jet result — certified
 
-PR #310 contains the historical exact artifact at head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b`. Its flat controls, connection ranks, kernel/cokernel data and bordered Lyapunov--Schmidt machinery remain useful regression inputs. However a follow-up literal-pairing audit found that the mixed metric/connection Bloch phase in the response assembly did not follow the same test-variable placement convention as the connection block. The flat z=0 control did not detect this because the sign enters quadratically there.
+The historical `ea6e9d0` finite TT-defect interpretation is superseded because its mixed metric/connection Bloch phases were swapped. The corrected placement is connection RHS `lambda^(-s)` and metric readout `lambda^(+s)`. Do not use the old TT matrix as a physical or on-shell no-go witness.
 
-Therefore the exported z=1 TT defect from `ea6e9d0` is **superseded for physical interpretation**. It must not be used as an on-shell no-go witness.
+The corrected response lane is integrated at #310 head `b259dc57efe2b8dc84dbc38a847630a3681c87b4`:
 
-The follow-up calculation reported the corrected qualitative structure:
+- `a4d_y_curved_response_phase_corrected_check.py` checks the exact 10-component aggregate for all four Bloch axes, including the supplied `q12` values and exact defect ranks;
+- `a4d_y_curved_normaljet_compatibility_check.py` checks the full phase-resolved 40-row equations, all four slow directions and the 20-dimensional Riemann normal-jet compatibility system;
+- both certificates compare against pinned exact JSON results.
 
-- after fixing the mixed phase, the full 40-component phase-resolved metric Euler contains a first-slow-order contribution that disappears only after averaging over the four supercell phases;
-- one-direction slow ansätze are too restrictive, because spatial variations of the stationary-center amplitudes cancel part of the apparent obstruction;
-- in the full 20-component geodesic-normal curvature compatibility problem, the linear reduced equations leave one compatible physical curvature component;
-- on that surviving compatible component, the corrected metric response agrees exactly with the flat Einstein control.
+The corrected aggregate table is:
 
-The corrected replay is not yet committed as an exact checker/JSON. Thus these follow-up statements are a reviewed execution result awaiting repository certification, not a registered theorem.
+| Axis | Curved `q12` | Defect vs flat | Defect rank |
+|---|---:|---:|---:|
+| `e0` | `-186451/236250` | `-34163/118125` | 6 |
+| `e1` | `-2665927/85127280` | `-2665927/85127280` | 8 |
+| `e2` | `-2665927/85127280` | `-2665927/85127280` | 8 |
+| `e3` | `177811967/340509120` | `7557407/340509120` | 8 |
 
-The live #310 correction brief is
-`02_REGISTRY/research/A4D_Y_CURVED_RESPONSE_CORRECTED_FOLLOWUP.md`
-at head `95f13a22ef9fbd9165dec18e415eb149b0652d1f`.
+The full first-slow compatibility system has rank 43/nullity 5 and curvature projection rank 1. Requiring only fast-phase erasure of the metric Euler gives rank 5/nullity 2 and preserves that one-dimensional curvature projection. Einstein is compared only after this non-tautological source-compatibility solve; the exact response difference then has rank zero. The surviving normalized curvature is `-Y tensor Y`, with `Y=(1,-1,1)` in spatial bivector basis `(12,13,23)`.
 
-The immediate finite target is now to certify the full 20-curvature compatibility matrix, its physical surviving subspace, and the metric response restricted to that subspace.
+Finite terminal: `A4D-Y-CURVED-NORMAL-JET-RESPONSE-COMPATIBLE`.
+
+This closes the finite phase/normal-curvature gate. The per-site `q12` arrays in the submitted report are retained as provenance; the aggregate checker does not assert those arrays individually. No nonlinear smooth-background continuation or refinement-uniform response estimate is certified yet.
 
 ## 5. Next gate: curved normal-jet realization and on-shell continuation
 
@@ -475,19 +479,16 @@ A closure argument must explicitly survive all of the following:
 
 A successful integrated execution should leave:
 
-### Certificate A — corrected Y supercell / normal-curvature compatibility (pending)
+### Certificate A — corrected Y supercell / normal-curvature compatibility (complete)
 
-Historical ea6 artifacts retain the exact flat controls, connection rank/kernel/cokernel data and bordered solve as regression fixtures, but their physical TT-defect interpretation is superseded by the mixed-phase audit. The replacement certificate must contain:
+Exact checker and pinned JSON are integrated in PR #310:
 
-- the corrected literal mixed-block phase convention;
-- phase-resolved 40-component metric Euler;
-- flat owner reconstruction and Einstein control;
-- exact right kernel and left cokernel at z=1;
-- all four slow modulation directions;
-- the full 20-component geodesic-normal curvature compatibility matrix;
-- exact basis of the compatible physical curvature subspace;
-- metric response restricted to that subspace;
-- hostile regression showing the historical phase convention fails the corrected guard.
+- `02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_check.py`
+- `02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_results.json`
+- `02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py`
+- `02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_results.json`
+
+The former `ea6e9d0` artifact is retained only as a historical wrong-phase regression fixture.
 
 
 ### Certificate B — curved normal-jet continuation
@@ -521,11 +522,11 @@ It must state separately:
 
 ## 11. Parallel worker decomposition for powerful models
 
-A single executor should first certify the corrected phase/normal-curvature result. If independent models are available, they may attack the remaining subproblems below.
+The corrected phase/normal-curvature result is already certified in #310. The next executor should begin with nonlinear continuation; independent models may attack the remaining subproblems below.
 
-### Worker 1 — corrected Y response compatibility
+### Worker 1 — corrected Y response compatibility (complete)
 
-Reuse the historical ea6 connection Hessian/rank/center machinery, but rebuild the mixed blocks with the corrected literal phase convention. Certify the phase-resolved metric Euler and the full 20-curvature normal-jet compatibility subspace. Do not reuse the old TT defect as a physical conclusion.
+Consume the pinned four-axis and normal-jet certificates in PR #310. Do not redo this census or revive the historical `ea6e9d0` TT-defect interpretation.
 
 ### Worker 2 — nonlinear curved normal-jet continuation
 
