@@ -166,7 +166,7 @@ result={
    "wrap_blocks":{str(k):[list(x) for x in sorted(zone_blocks[k])] for k in (-1,1)}
  },
  "metric":"theta coordinates, lambda_j=exp(i theta_j)",
- "proof":"entrywise Laurent derivative envelope plus ||M||_2 <= sqrt(||M||_1 ||M||_infinity)",
+ "proof":"entrywise Laurent derivative envelope plus ||M||_2 <= sqrt(||M||_1 ||M||_infinity); exact Gram-harmonic cancellation/Gershgorin bound; coefficient-level zone-folding exponent check",
  "scope_fence":[
    "global on the physical unit torus",
    "does not prove the all-Bloch zero locus",
