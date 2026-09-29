@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Exact structural data for a rigorous torus cover of curved joint Bloch Q.
+"""Exact unit-torus Lipschitz bound for the curved z=1 joint Bloch symbol.
 
-This owner does not claim the cover is complete.  It certifies the finite
-Laurent support and computes rational upper bounds for coordinate derivative
-Frobenius norms on (S^1)^4.  These bounds are the perturbation constants used
-by the subsequent rational-center cover certificate.
+The literal 136-by-96 symbol is compiled into its exact 21-term Laurent
+stencil.  For each theta-coordinate, the derivative coefficient envelope is
+formed entrywise.  On the unit torus,
+
+  ||d_j Q(theta)||_2 <= sqrt(||E_j||_1 ||E_j||_infinity) = 22/7.
+
+All arithmetic is rational.  This is a global perturbation bound, not by
+itself an all-Bloch rank theorem.
 """
 from __future__ import annotations
 from collections import defaultdict
-import json, math
+import json
 from pathlib import Path
 import sympy as sp
 import a4d_y_curved_response_quotient_check as B
@@ -64,43 +68,45 @@ for r in range(4):
             d=[0]*4;d[r]=1;d[s]=-1;expected.add(tuple(d))
 ck("EXACT_NEAREST_DIFFERENCE_SUPPORT_21",len(support)==21 and set(support)==expected)
 
-# ||dQ/dtheta_j||_F <= sum_d |d_j| ||T_d||_F.
-# Store exact squared coefficient norms and a conservative rational ceiling.
 bounds=[]
-terms={}
-for d in support:
-    n2=sp.factor(sum(x*x for x in T[d]))
-    ck("STENCIL_NORM2_RATIONAL_"+str(d),n2.is_Rational)
-    terms[str(d)]=str(n2)
+ledgers=[]
 for j in range(4):
-    # ceil each sqrt(n2) to 1/1000, keeping a fully rational upper bound.
-    b=sp.Rational(0)
+    # Entrywise envelope for |d_j Q| on |lambda_r|=1.
+    E=sp.zeros(136,96)
     for d in support:
         if d[j]:
-            n2=sp.Rational(terms[str(d)])
-            # ceil(sqrt(n2)*1000)/1000 using integers only.
-            floor=math.isqrt((int(n2.p)*10**6)//int(n2.q))
-            m=floor if sp.Integer(floor)**2*int(n2.q)>=int(n2.p)*10**6 else floor+1
-            q=sp.Rational(m,1000)
-            ck("RATIONAL_SQRT_CEILING_"+str(j)+"_"+str(d),q*q>=n2)
-            b+=abs(d[j])*q
-    bounds.append(b)
-    ck("DERIVATIVE_BOUND_POSITIVE_"+str(j),b>0)
+            E += abs(d[j])*T[d].applyfunc(lambda x: abs(sp.Rational(x)))
+    colmax=max(sum(E[i,k] for i in range(E.rows)) for k in range(E.cols))
+    rowmax=max(sum(E[i,k] for k in range(E.cols)) for i in range(E.rows))
+    ck("COLUMN_SUM_BOUND_"+str(j),colmax==sp.Rational(22,7))
+    ck("ROW_SUM_BOUND_"+str(j),rowmax==sp.Rational(22,7))
+    op=sp.sqrt(colmax*rowmax)
+    ck("OPERATOR_BOUND_"+str(j),op==sp.Rational(22,7))
+    bounds.append(op)
+    ledgers.append({"axis":j,"max_column_sum":str(colmax),
+                    "max_row_sum":str(rowmax),"operator_upper_bound":str(op)})
 
 result={
- "schema":"a4d-y-curved-joint-torus-lipschitz-v1",
+ "schema":"a4d-y-curved-joint-torus-lipschitz-v2",
+ "terminal":"A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED",
+ "z":"1",
+ "operator_shape":[136,96],
  "support":[list(d) for d in support],
- "stencil_frobenius_norm2":terms,
- "coordinate_derivative_frobenius_upper_bounds":[str(x) for x in bounds],
+ "support_size":len(support),
+ "coordinate_bounds":ledgers,
+ "global_bound":"||Q(theta)-Q(phi)||_2 <= (22/7) * sum_j |theta_j-phi_j|",
  "metric":"theta coordinates, lambda_j=exp(i theta_j)",
- "use":"||Q(theta)-Q(phi)||_2 <= sum_j L_j |theta_j-phi_j|",
- "scope":"global exact-rational upper bounds; no torus-cover completeness claim"
+ "proof":"entrywise Laurent derivative envelope plus ||M||_2 <= sqrt(||M||_1 ||M||_infinity)",
+ "scope_fence":[
+   "global on the physical unit torus",
+   "does not prove the all-Bloch zero locus",
+   "does not itself give a positive transverse gap",
+   "intended as the perturbation constant for local and finite-cover estimates"
+ ]
 }
 if "--write" in __import__("sys").argv:
     OUT.write_text(json.dumps(result,indent=2)+"\n")
     print("WROTE",OUT)
 elif OUT.exists():
     ck("RESULTS_MATCH_PINNED_JSON",json.loads(OUT.read_text())==result)
-print("SUPPORT_SIZE",len(support))
-print("L_BOUNDS",*[str(x) for x in bounds])
 print("TERMINAL A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED")
