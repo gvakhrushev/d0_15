@@ -1,0 +1,81 @@
+{
+  "schema": "a4d-y-curved-joint-quarter-spatial-diagonal-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-QUARTER-SPATIAL-DIAGONAL-CERTIFIED",
+  "stratum": "lambda0=zeta in mu4; lambda1=lambda2=lambda3=x in C^*",
+  "operator_shape": [
+    136,
+    96
+  ],
+  "common_denominator": 14,
+  "determinant_minors": [
+    {
+      "extra_row": 4,
+      "x96_integer_support": [
+        43,
+        137
+      ],
+      "removed_x_power": 43,
+      "primitive_degree": 94,
+      "primitive_content": "27635005720308159951508407797462765040410670166523739373568",
+      "primitive_coefficients_sha256": "4d256b569d0b3e36f1a3dd2b82a29a7b1899dcc5d62c176354c27cb4d22aa91f",
+      "folded_root_multiplicity": 1
+    },
+    {
+      "extra_row": 15,
+      "x96_integer_support": [
+        44,
+        138
+      ],
+      "removed_x_power": 44,
+      "primitive_degree": 94,
+      "primitive_content": "3947857960044022850215486828208966434344381452360534196224",
+      "primitive_coefficients_sha256": "d228958874852c417272330645de261b1acd97d1e462a45c9b3a32a32f239f77",
+      "folded_root_multiplicity": 1
+    }
+  ],
+  "crt": {
+    "prime_count": 25,
+    "primes": [
+      600577,
+      600833,
+      605953,
+      606721,
+      610817,
+      613633,
+      613889,
+      614657,
+      616961,
+      617473,
+      619009,
+      620033,
+      622337,
+      622849,
+      623617,
+      625409,
+      626177,
+      628993,
+      629249,
+      630017,
+      630529,
+      632321,
+      636673,
+      638977,
+      642049
+    ],
+    "modulus_bits": 482,
+    "hadamard_square_bound_bits": [
+      923,
+      923
+    ],
+    "unique_centered_reconstruction": true
+  },
+  "exact_primitive_gcd": "x - 1",
+  "conclusion": "for lambda0=1 and lambda1=lambda2=lambda3=x, joint rank is 96 for every complex x!=1; quarter-phase covariance gives the unique rank drop x=zeta for each zeta in mu4",
+  "phase_covariance": "Q(zeta*lambda)=D_out(zeta) Q(lambda) D_in(zeta) for zeta^4=1",
+  "scope_fence": [
+    "entire complex one-dimensional quarter-temporal spatial-diagonal stratum",
+    "not the full four-dimensional unit torus",
+    "no nonlinear reduced-center theorem",
+    "no task-level response terminal"
+  ]
+}
