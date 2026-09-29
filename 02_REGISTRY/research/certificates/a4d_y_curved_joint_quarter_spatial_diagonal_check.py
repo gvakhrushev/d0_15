@@ -282,9 +282,6 @@ if "--write" in __import__("sys").argv:
     OUT.write_text(json.dumps(result,indent=2)+"\n")
     print("WROTE",OUT)
 elif OUT.exists():
-    pinned=json.loads(OUT.read_text())
-    if pinned!=result:
-        print("PINNED_RESULT_MISMATCH_COMPUTED",json.dumps(result,sort_keys=True),flush=True)
-    ck("RESULTS_MATCH_PINNED_JSON",pinned==result)
+    ck("RESULTS_MATCH_PINNED_JSON",json.loads(OUT.read_text())==result)
 
 print("TERMINAL A4D-Y-CURVED-JOINT-QUARTER-SPATIAL-DIAGONAL-CERTIFIED")
