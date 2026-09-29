@@ -170,13 +170,26 @@ ck("UNFOLDED_CENTER_IS_Y",
 
 result={
  "schema":"a4d-y-curved-joint-mu4-locus-v1",
+ "terminal":"A4D-Y-CURVED-JOINT-MU4-LOCUS-CERTIFIED",
+ "background":"z=1 exact Y vacuum; standard solder",
  "z":"1","operator_shape":[136,96],"laurent_support_size":21,
  "modulus":P,"sqrt_minus_one_mod_p":IM,
  "mu4_character_count":256,"full_rank_character_count":252,
+ "modular_rank_counts":{"95":4,"96":252},
  "singular_characters":folded_records,
  "unfolded_physical_kernel":"constant Y center",
+ "characteristic_zero_argument":{
+   "regular_points":"rank mod p = 96 gives a nonzero characteristic-zero 96-minor after denominator clearing",
+   "folded_points":"direct DomainMatrix rank over Q(i) is 95 with exact one-dimensional nullspace",
+   "unfolding":"multiplying phase-p connection amplitudes by lambda^(-p) identifies all four kernels with the same constant Y center"
+ },
  "conclusion":"on mu_4^4 the only joint rank drops are the four diagonal folded copies of the same physical constant Y center",
- "scope":"exact mu_4^4 torsion grid; no all-Bloch zero-locus or uniform transverse gap claim"
+ "scope_fence":[
+   "exact mu_4^4 torsion grid only",
+   "no all-Bloch complex or unit-torus zero-locus theorem",
+   "no uniform singular-value lower bound between sampled characters",
+   "no nonlinear range theorem or task-level response terminal"
+ ]
 }
 if "--write" in __import__("sys").argv:
     OUT.write_text(json.dumps(result,indent=2)+"\n")
