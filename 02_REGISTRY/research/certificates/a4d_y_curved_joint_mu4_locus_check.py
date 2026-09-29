@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # D0_CI_TIMEOUT_SECONDS=600
-"""Exact quarter-wave torsion locus of the full curved z=1 joint Bloch symbol.
+"""Certified mu_4^4 locus of the full curved z=1 joint Bloch symbol.
 
-Builds the literal 96 connection rows and 40 phase-resolved metric rows from
-the current curved-Y face Hessian owners, compiles their finite Laurent
-stencil once, then evaluates all 256 characters of mu_4^4. All ranks are
-exact over Q(i).
+Literal 96 connection + 40 metric rows are compiled as a Laurent stencil.
+Full column rank is certified modulo a good Gaussian prime; rank 95 and the
+kernel at the four diagonal folded characters are then checked exactly over
+Q(i).  Modular full rank is rigorous: a nonzero 96-minor modulo p is a
+nonzero characteristic-zero minor after denominator clearing.
 
-This is deliberately a mu_4^4 certificate, not an all-Bloch theorem.
+Scope: mu_4^4 only, not an all-Bloch theorem.
 """
 from __future__ import annotations
 from collections import defaultdict
@@ -17,17 +18,21 @@ import a4d_y_curved_response_quotient_check as B
 import a4d_y_curved_normaljet_compatibility_check as C
 
 ROOTS=(sp.Integer(1),sp.I,sp.Integer(-1),-sp.I)
+P=1_000_033  # P == 1 mod 4, so sqrt(-1) exists in F_P.
+I_MOD=pow(P-1,(P+1)//4,P) if False else None
 
 def ck(n,c):
     if not c: raise AssertionError(n)
     print("PASS_"+n,flush=True)
 
-def mon(lam,d):
-    out=sp.Integer(1)
-    for r,e in enumerate(d): out*=lam[r]**e
-    return out
+# Find an exact square root of -1 modulo P without external dependencies.
+def sqrt_minus_one(p):
+    for g in range(2,100):
+        x=pow(g,(p-1)//4,p)
+        if x*x%p==p-1: return x
+    raise AssertionError("no sqrt(-1) found")
+IM=sqrt_minus_one(P)
 
-# Compile Q(lambda)=[A(lambda);C(lambda)] as a finite Laurent stencil.
 _H,LABELS,FACES0=B.action_connection_hessian(sp.Integer(1))
 FACES=C.with_base_phases(FACES0)
 IDX={x:i for i,x in enumerate(LABELS)}
@@ -62,35 +67,64 @@ for phase,a,b,locs,local,Hloc,factors in FACES:
                 val=sp.cancel(B.orientation(a,b)*(area.T*B.G2*B.STAR*dFb)[0])
                 QTERMS[shifts[pos]][10*phase+mi,gi]+=val
 
+def mon(lam,d):
+    out=1
+    for r,e in enumerate(d): out*=lam[r]**e
+    return out
+
 def joint_symbol(lam):
     A=sum((mon(lam,d)*M for d,M in ATERMS.items()),sp.zeros(96))
     Q=sum((mon(lam,d)*M for d,M in QTERMS.items()),sp.zeros(40,96))
     return A.col_join(Q)
 
-def exact_rank(M):
-    return M.to_DM(extension=True).rank()
+def qmod(x):
+    x=sp.cancel(x)
+    num,den=sp.fraction(x)
+    # At mu_4 points entries lie in Q(i); substitute i -> IM in F_P.
+    num=int(sp.Poly(num,sp.I,extension=sp.I).eval(IM))%P if num.has(sp.I) else int(num)%P
+    den=int(sp.Poly(den,sp.I,extension=sp.I).eval(IM))%P if den.has(sp.I) else int(den)%P
+    if den==0: raise AssertionError("bad modular denominator")
+    return num*pow(den,P-2,P)%P
+
+def rank_mod(M):
+    A=[[qmod(M[i,j]) for j in range(M.cols)] for i in range(M.rows)]
+    row=0
+    for col in range(M.cols):
+        pivot=next((r for r in range(row,M.rows) if A[r][col]),None)
+        if pivot is None: continue
+        A[row],A[pivot]=A[pivot],A[row]
+        inv=pow(A[row][col],P-2,P)
+        A[row]=[(v*inv)%P for v in A[row]]
+        for r in range(row+1,M.rows):
+            if A[r][col]:
+                q=A[r][col]
+                A[r]=[(u-q*v)%P for u,v in zip(A[r],A[row])]
+        row+=1
+        if row==M.cols: break
+    return row
 
 ck("JOINT_SHAPE",joint_symbol(ROOTS).shape==(136,96))
-folded=[]; regular=0
+candidates=[]; regular=0
 for ids in product(range(4),repeat=4):
-    lam=tuple(ROOTS[i] for i in ids)
-    R=exact_rank(joint_symbol(lam))
-    if R<96:
-        folded.append((ids,R))
-        ck("SINGULAR_IS_DIAGONAL_"+"".join(map(str,ids)),
-           len(set(ids))==1 and R==95)
-    else:
-        regular+=1
-
-ck("MU4_EXACT_SINGULAR_SET",
-   folded==[((j,j,j,j),95) for j in range(4)])
-ck("MU4_REGULAR_COUNT_252",regular==252)
-
-for ids,_ in folded:
     M=joint_symbol(tuple(ROOTS[i] for i in ids))
+    r=rank_mod(M)
+    if r==96:
+        regular+=1
+    else:
+        candidates.append((ids,r))
+
+expected=[((j,j,j,j),95) for j in range(4)]
+ck("MODULAR_CANDIDATES_ONLY_FOLDED",candidates==expected)
+ck("MODULAR_FULL_RANK_COUNT_252",regular==252)
+
+for ids,_ in candidates:
+    M=joint_symbol(tuple(ROOTS[i] for i in ids))
+    r=M.to_DM(extension=True).rank()
+    ck("FOLDED_EXACT_RANK95_"+str(ids[0]),r==95)
     ns=M.nullspace()
-    ck("FOLDED_KERNEL_DIM1_"+str(ids[0]),
+    ck("FOLDED_EXACT_KERNEL_DIM1_"+str(ids[0]),
        len(ns)==1 and M*ns[0]==sp.zeros(136,1))
 
 print("TERMINAL A4D-Y-CURVED-JOINT-MU4-LOCUS-CERTIFIED")
+print("MODULUS",P,"I_MOD",IM)
 print("SCOPE exact mu_4^4 torsion grid only; no all-Bloch zero-locus claim")
