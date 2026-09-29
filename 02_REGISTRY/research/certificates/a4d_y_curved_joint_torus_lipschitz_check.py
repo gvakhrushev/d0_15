@@ -179,4 +179,6 @@ if "--write" in __import__("sys").argv:
     print("WROTE",OUT)
 elif OUT.exists():
     ck("RESULTS_MATCH_PINNED_JSON",json.loads(OUT.read_text())==result)
-print("GRAM_OPERATOR_BOUNDS2",*[str(x) for x in gram_bounds2])\nprint("ZONE_COUNTS",zone_counts)\nprint("TERMINAL A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED")
+print("GRAM_OPERATOR_BOUNDS2",*[str(x) for x in gram_bounds2])
+print("ZONE_COUNTS",zone_counts)
+print("TERMINAL A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED")
