@@ -229,15 +229,23 @@ controlled or constructed.
 The owned joint low-frequency symbol explains the singular scale. On a fixed
 periodic domain with `h=1/L`, the first nonzero slow mode has `|k|~h`; the
 injective first-order reduced symbol therefore has inverse size `~h^-1`.
-Smooth normal-chart forcing of size `h^2` yields a center correction of size
-`h`, while a generic quadratic remainder is again `h^2` and is sent back to
-size `h` by that inverse. The ordinary contraction argument is thus not
-uniform. The next missing estimate is a projected nonlinear gain (such as
-`O(h^3)` forcing on admissible `O(h)` center modes), or a tame alternative
-that controls resonant mode interactions and the zero-mode cokernel. This
-identifies why the exact regular mean obstruction alone does not dispose of
-the singular branch; it does not assert that the nonlinear term actually
-attains the generic bound.
+Smooth normal-chart forcing of size `h^2` can require a center correction of
+size `h`. A norm-only quadratic remainder bound would be `h^2` and its image
+under that inverse would again be `h`, so a contraction cannot be concluded
+from sizes alone. However, the exact frozen family can force additional
+momentum factors. The new `a4d_y_center_wave_cubic_vertex_check.py` computes
+one such coefficient exactly: for every shift pair, the `Y,Y` wave
+interaction has zero projection onto the dual constant-center cokernel.
+This removes the nominal `h^4` contribution from that specific
+low-frequency channel, while the dual curvature source
+`351402359/2108160` remains nonzero. The dual-dual entry vanishes too; the
+mixed `Y`/dual entry is the only nonzero center pair. Under the owned
+smooth-source scaling, the visible dual amplitude has no `O(h)` term, so an
+`O(h)` Y wave couples to it only at `O(h^5)`, below the curvature source.
+Thus these flat low-frequency center pairs cannot cancel the dual `O(h^4)`
+source in that scaling. Curved vertices, high-frequency resonances, aliases,
+and higher interactions remain open; this flat low-frequency calculation is
+not a nonlinear continuation theorem.
 
 The regular periodic branch is excluded under the stated integer-power and
 uniformity hypotheses. The remaining continuation problem is therefore the

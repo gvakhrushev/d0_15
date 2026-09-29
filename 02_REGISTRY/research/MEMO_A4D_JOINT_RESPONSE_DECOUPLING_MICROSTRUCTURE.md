@@ -86,12 +86,32 @@ its smallest singular value on that mode is `Theta(h)` and its inverse is
 `Theta(h^-1)`. A normal-chart smooth forcing of size `O(h^2)` can therefore
 produce a center correction of size `O(h)`. A generic quadratic reduced
 remainder is then `O(h^2)`; applying the same near-resonant inverse returns an
-`O(h)` term, the size of the proposed correction. Thus a plain contraction
-estimate has no small factor. A continuation proof needs an additional
+`O(h)` term, the size of the proposed correction. Thus this norm-only bound
+supplies no small factor for a contraction. A continuation proof needs an additional
 projected cancellation (for example, an `O(h^3)` nonlinear forcing on these
 admissible modes), a tame estimate that closes without contraction, or a
 different exact reduction. This scaling is a proof obstruction, not a
 counterexample or evidence that a branch exists.
+
+The norm-only quadratic bound is not sharp for every interaction. The new
+exact certificate `a4d_y_center_wave_cubic_vertex_check.py` differentiates the
+quadratic reduced center symbol along the exact boost-dual
+connection-stationary path. For every shift pair `(i,j)`, the derivative of
+the `Y,Y` entry in the dual direction is exactly zero. The checker first
+reproduces the pinned two-center wave symbol and verifies that the first
+constant-center cokernel row is the dual tangent; the corresponding
+curvature-squared source remains the positive rational
+`351402359/2108160`. Therefore a pair of opposite low-frequency `Y` waves
+does not supply the leading quadratic term in that dual zero-mode equation,
+even though dimensional counting alone allows an `h^4` contribution. This
+is a real cancellation in the flat-background cubic vertex. The dual-dual
+entry also vanishes; the mixed `Y`/dual entry is the only nonzero center pair
+in this derivative. Under the owned smooth-source scaling the visible dual
+amplitude has no `O(h)` term, so for an `O(h)` Y wave its mixed flat vertex
+first contributes at `O(h^5)`, below the `O(h^4)` curvature source. This
+rules out cancellation by these flat low-frequency center pairs under that
+scaling. It does not control curved-background vertices, nonzero resonance
+strata, aliases, or higher vertices.
 
 ## Joint first-slow reduction: the connection waves are constrained
 
@@ -213,6 +233,7 @@ python3 02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_dual_center_joint_visibility_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_center_wave_cubic_vertex_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_singleq_curvature_witness_check.py
@@ -224,7 +245,7 @@ python3 02_REGISTRY/research/certificates/a4d_y_variable_curvature_normal_jet_ch
 python3 02_REGISTRY/research/certificates/a4d_y_periodic_regular_branch_mean_check.py
 ```
 
-The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The subsequent pair verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. The next two verify joint first-slow injectivity and the nonlinear product-plane seed identities. The following pair verify the exact `delta^2` connection/metric normal-jet system and its invariance under arbitrary constant first-order Y retuning. The next command derives the variable-curvature Riemann-normal metric jet and checks its constant-curvature specialization against that owner. The final command replays the exact amplitude law, first-slow injectivity, and periodic shift identities used by the regular-branch mean obstruction. Each checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
+The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next four verify dual-center source visibility, the hyperbolic center symbol, the new cubic vertex, and the zero-momentum small-amplitude splitting. The subsequent pair verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. The next two verify joint first-slow injectivity and the nonlinear product-plane seed identities. The following pair verify the exact `delta^2` connection/metric normal-jet system and its invariance under arbitrary constant first-order Y retuning. The next command derives the variable-curvature Riemann-normal metric jet and checks its constant-curvature specialization against that owner. The final command replays the exact amplitude law, first-slow injectivity, and periodic shift identities used by the regular-branch mean obstruction. Each checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
 
 The submitted aggregate JSON has SHA-256 `79e6db7d96a0863a6af56e94752d080d5505a7fc47a307b752269dd092c4e230`. Its per-site `q12` arrays are not separately asserted by the aggregate checker.
 
