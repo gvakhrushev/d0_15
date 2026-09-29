@@ -526,3 +526,32 @@ why the regular periodic mean certificate cannot be promoted to an exact
 every-period tower identity by zero-padding means or invoking M1, and why
 the #216 coupled normal rescue is not supplied by #275's macroscopically
 flat exact Y lift. Neither task-level terminal is changed.
+
+
+## Exact temporal SO(3)-spin product rigidity
+
+The scoped result in
+[`A4D_Y_TEMPORAL_SPIN_PRODUCT_RIGIDITY.md`](A4D_Y_TEMPORAL_SPIN_PRODUCT_RIGIDITY.md)
+extends the product-plane transport test from separate spin axes to an
+arbitrary simultaneous real spatial rotation
+`R=a J12+b J13+c J23` on the curved temporal links, together with the
+independent boost-dual amplitude `d`.  Exact elimination of the three
+role-0 boost Euler rows leaves the nonnegative multiplier
+
+`3*d^4*(a-b+c+3)^2 + 4*(a-b+c-4)^2`.
+
+Its only real exceptional locus is `d=0, a-b+c=4`.  There the nine
+spatial-role rotation Euler rows have exact rank 3 on
+`(f0,f1,f2,f3)` and kernel `span(1,1,1,1)`.  Hence both the generic and
+exceptional cases force the product profile to be constant on a connected
+periodic spatial carrier.  Replay with
+`python3 02_REGISTRY/research/certificates/a4d_y_temporal_spin_transport_check.py`.
+
+This is not a full transverse theorem: spatial links are fixed to identity
+in this certificate.  Together with the 96-variable degree-two normal-jet
+obstruction, it leaves singular/refinement-dependent high-Bloch
+spatial-transverse corrections as the relevant local loophole.  A numerical
+full-joint singular-value scout suggests that, after the folded Y-center is
+separated, the next singular value stays near `0.1128`; that observation is
+diagnostic only.  The required next theorem is an exact all-Bloch lower bound
+on the transverse complement plus a uniform nonlinear remainder estimate.
