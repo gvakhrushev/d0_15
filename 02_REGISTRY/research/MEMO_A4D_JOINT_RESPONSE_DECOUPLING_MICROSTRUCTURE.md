@@ -164,6 +164,13 @@ because the reduced matrices are rational in `z`. Neither deduction
 identifies exceptional `z` values or rules out a singular `h`-dependent
 center correction of the same order.
 
+Because `z=1` is itself regular and obstructed, the finite exceptional set is
+separated from `1` on this chart. Every refinement-dependent constant
+retuning `z_h -> 1` therefore remains obstructed at the same degree-two
+normal-jet level for all sufficiently small `h`, with no integer-power
+assumption on the rate. This does not cover a spatially varying center,
+nonzero Bloch modes, or the omitted-order remainder of an exact branch.
+
 ## Small-amplitude splitting at zero slow momentum
 
 The exact checker `a4d_y_small_amplitude_kernel_splitting_check.py` reduces the flat 16-dimensional connection kernel twice. The effective ranks through order six are `(0,0,12,12,14,14,14)`. After the order-two block, four directions remain; the reduced order-four and order-five blocks vanish, while the order-six block is `diag(0,0,9/8,3/8)`. The final kernel consists of the exact Y and boost-dual center tangents. Twelve transverse modes lift at order two, two soft modes at order six, and the worst inverse loss is `O(z^-6)`. This exact zero-momentum splitting identifies the small-amplitude conditioning that a nonlinear uniform estimate must control; it is not itself an `h`-uniform continuation theorem.

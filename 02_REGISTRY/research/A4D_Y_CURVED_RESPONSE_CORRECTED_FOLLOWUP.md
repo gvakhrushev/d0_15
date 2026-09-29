@@ -168,6 +168,15 @@ generic regular `z`. This proves that any exceptional regular values lie in
 a finite algebraic set, but does not identify that set or cover the singular
 flat point `z=0`.
 
+Since `z=1` itself is regular and obstructed, that finite exceptional set has
+positive distance from `1` on the fixed pivot chart. Hence there is a
+neighborhood of `1` in which the same degree-two rank obstruction holds.
+Consequently any refinement-dependent *constant* parameter `z_h -> 1` stays
+obstructed for all sufficiently small `h`, regardless of whether its rate is
+integer-power, fractional-power, or nonconvergent after rescaling. This is a
+coefficient-level normal-jet statement only; it does not control spatially
+varying `z_h(x)`, nonzero Bloch modes, or omitted orders of an exact branch.
+
 For an `h`-dependent amplitude the leading witness is
 `-22209*kappa(h)^2*h^4`. A uniform remainder `o(h^4)` would rule out a limit
 `kappa(h)->kappa_0 != 0`. A stronger estimate
