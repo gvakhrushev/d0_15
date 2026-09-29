@@ -226,6 +226,19 @@ not an exact finite-lattice continuation theorem. In particular, the global
 uniform response gate remains open until those singular branches are
 controlled or constructed.
 
+The owned joint low-frequency symbol explains the singular scale. On a fixed
+periodic domain with `h=1/L`, the first nonzero slow mode has `|k|~h`; the
+injective first-order reduced symbol therefore has inverse size `~h^-1`.
+Smooth normal-chart forcing of size `h^2` yields a center correction of size
+`h`, while a generic quadratic remainder is again `h^2` and is sent back to
+size `h` by that inverse. The ordinary contraction argument is thus not
+uniform. The next missing estimate is a projected nonlinear gain (such as
+`O(h^3)` forcing on admissible `O(h)` center modes), or a tame alternative
+that controls resonant mode interactions and the zero-mode cokernel. This
+identifies why the exact regular mean obstruction alone does not dispose of
+the singular branch; it does not assert that the nonlinear term actually
+attains the generic bound.
+
 The regular periodic branch is excluded under the stated integer-power and
 uniformity hypotheses. The remaining continuation problem is therefore the
 singular/nonanalytic or nonuniform refinement-dependent class. Derive and

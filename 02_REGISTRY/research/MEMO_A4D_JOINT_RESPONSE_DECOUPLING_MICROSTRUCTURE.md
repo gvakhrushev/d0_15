@@ -78,6 +78,21 @@ and
 
 These are two transported `2+1` hyperbolic envelope modes, not an elliptic range with a spectral gap. The exact symbol fixes the linear principal part only; nonlinear envelope existence, energy estimates, and uniform coupling to the transverse range remain open.
 
+This low-frequency estimate also quantifies why the linear calculation does
+not close the nonlinear branch. On a fixed periodic domain sampled with
+`h=1/L`, the first nonzero slow covector has `|k|` proportional to `h`. The
+one-column reduced symbol is `Gamma.k + O(|k|^2)` with `Gamma` injective, so
+its smallest singular value on that mode is `Theta(h)` and its inverse is
+`Theta(h^-1)`. A normal-chart smooth forcing of size `O(h^2)` can therefore
+produce a center correction of size `O(h)`. A generic quadratic reduced
+remainder is then `O(h^2)`; applying the same near-resonant inverse returns an
+`O(h)` term, the size of the proposed correction. Thus a plain contraction
+estimate has no small factor. A continuation proof needs an additional
+projected cancellation (for example, an `O(h^3)` nonlinear forcing on these
+admissible modes), a tame estimate that closes without contraction, or a
+different exact reduction. This scaling is a proof obstruction, not a
+counterexample or evidence that a branch exists.
+
 ## Joint first-slow reduction: the connection waves are constrained
 
 The analytic follow-up [A4D_Y_JOINT_FIRST_SLOW_REDUCTION.md](A4D_Y_JOINT_FIRST_SLOW_REDUCTION.md) retains the full metric equations before treating the connection-center wave symbols. Its exact 40-by-5 first-slow map acts on `(d0 z,d1 z,d2 z,d3 z,b_dual)`. A five-row minor has determinant `-975737200/35590023`; the inverse minor has Frobenius norm less than 8. Thus the map has lower bound `||M v||_2 >= ||v||_2/8`.
