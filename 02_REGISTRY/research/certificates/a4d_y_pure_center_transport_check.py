@@ -19,8 +19,10 @@ Hence on a connected periodic L=4m carrier, any pure-Y stationary amplitude
 remaining in a fixed-sign neighborhood of z=1 is constant. This does not
 exclude cancellation by transverse/non-Y connection corrections.
 """
+import json
 from itertools import combinations
 import math
+from pathlib import Path
 import sympy as sp
 
 ETA = sp.diag(1,-1,-1,-1)
@@ -113,36 +115,37 @@ for p in range(4):
             return I4
 
         site=(0,p,0,0)
-        generator=GEN[role-1]
-        total=sp.Integer(0)
-        for r,s in PAIRS:
-            if role==r:
-                corners=[(site,0),(shift(site,s,-1),2)]
-            elif role==s:
-                corners=[(shift(site,r,-1),1),(site,3)]
-            else:
-                continue
-            for base,corner in corners:
-                places=[
-                    (base,r,False),
-                    (shift(base,r),s,False),
-                    (shift(base,s),r,True),
-                    (base,s,True),
-                ]
-                factors=[linv(link(x,q)) if inv else link(x,q)
-                         for x,q,inv in places]
-                P=factors[0]*factors[1]*factors[2]*factors[3]
-                Pinv=linv(P)
-                varied=list(factors)
-                varied[corner]=(factors[corner]*generator if corner<2
-                                 else -generator*factors[corner])
-                dP=varied[0]*varied[1]*varied[2]*varied[3]
-                dC=(dP+Pinv*dP*Pinv)/2
-                u,v=[j for j in range(4) if j not in (r,s)]
-                area=wedge(I4[:,u],I4[:,v])
-                total += orientation(r,s)*(area.T*G2*STAR*biv(dC))[0]
+        def edge_row(generator):
+            total=sp.Integer(0)
+            for r,s in PAIRS:
+                if role==r:
+                    corners=[(site,0),(shift(site,s,-1),2)]
+                elif role==s:
+                    corners=[(shift(site,r,-1),1),(site,3)]
+                else:
+                    continue
+                for base,corner in corners:
+                    places=[
+                        (base,r,False),
+                        (shift(base,r),s,False),
+                        (shift(base,s),r,True),
+                        (base,s,True),
+                    ]
+                    factors=[linv(link(x,q)) if inv else link(x,q)
+                             for x,q,inv in places]
+                    P=factors[0]*factors[1]*factors[2]*factors[3]
+                    Pinv=linv(P)
+                    varied=list(factors)
+                    varied[corner]=(factors[corner]*generator if corner<2
+                                     else -generator*factors[corner])
+                    dP=varied[0]*varied[1]*varied[2]*varied[3]
+                    dC=(dP+Pinv*dP*Pinv)/2
+                    u,v=[j for j in range(4) if j not in (r,s)]
+                    area=wedge(I4[:,u],I4[:,v])
+                    total += orientation(r,s)*(area.T*G2*STAR*biv(dC))[0]
+            return sp.factor(total)
 
-        expr=sp.factor(total)
+        expr=edge_row(GEN[role-1])
         syms=sorted(expr.free_symbols,key=str)
         check(f"PHASE{p}_ROLE{role}_USES_TWO_EVEN_AMPLITUDES", len(syms)==2)
         a,b=sp.symbols("a b", real=True)
@@ -155,6 +158,15 @@ for p in range(4):
               sp.factor(renamed.subs(b, -a)) == 0)
         check(f"PHASE{p}_ROLE{role}_NONZERO_FOR_UNEQUAL_SQUARES",
               sp.factor(renamed.subs({a: 1, b: 0})) != 0)
+        secondary_index=role%3
+        secondary=sp.factor(edge_row(GEN[secondary_index]).subs(
+            {syms[0]:a,syms[1]:b}))
+        check(f"PHASE{p}_ROLE{role}_SECONDARY_BOOST_USES_SAME_PAIR",
+              set(secondary.free_symbols) <= {a,b})
+        sign_flip=sp.factor(secondary.subs(b,-a))
+        sign_flip_target=sp.factor(4*a*(3*a*a+4)/(4+3*a*a)**2)
+        check(f"PHASE{p}_ROLE{role}_SECONDARY_BOOST_EXCLUDES_NONZERO_SIGN_FLIP",
+              sign_flip==sign_flip_target or sign_flip==-sign_flip_target)
 
 e=[sp.eye(4)[:,j] for j in range(4)]
 moves=[]
@@ -175,10 +187,40 @@ check("TRANSPORT_LATTICE_INDEX2", index==2)
 check("ALL_TRANSPORT_MOVES_HAVE_EVEN_COORDINATE_SUM",
       all(sum(int(v) for v in G[:,j])%2==0 for j in range(G.cols)))
 
+result={
+    "schema":"a4d-y-pure-center-transport-v3",
+    "terminal":"A4D-Y-PURE-CENTER-NONLINEAR-TRANSPORT-RIGIDITY",
+    "background":"standard solder; four-phase Y Cayley ansatz; independent real amplitudes on even-phase Role-0 links",
+    "metric_face_map":{
+        "shape":[16,3],"rank":int(M.rank()),"kernel":["(1,1,1)"],
+        "matrix":[[int(M[i,j]) for j in range(3)] for i in range(16)],
+        "interpretation":"for temporal Y-curvature scalars (r1,r2,r3), unrestricted solder Euler vanishes iff r1=r2=r3"
+    },
+    "spatial_boost_edge_row":{
+        "formula_up_to_orientation":"8*(a-b)*(a+b)/((4+3*a^2)*(4+3*b^2))",
+        "checked_phase_role_pairs":12,
+        "secondary_boost_sign_flip_witness":"+/-4*a*(3*a^2+4)/(4+3*a^2)^2",
+        "real_sign_free_consequence":"the primary row forces a^2=b^2; the secondary boost row is nonzero on b=-a for a!=0, so together they force a=b",
+        "connected_carrier_consequence":"a(x) is constant on the even-sum sublattice generated by the six transport moves"
+    },
+    "transport_lattice":{
+        "moves":["e1-e0","e1+e0","e2-e0","e2+e0","e3-e0","e3+e0"],
+        "rank":int(G.rank()),"index_in_Z4":index,
+        "identified_as":"{n in Z^4 : sum_i n_i is even}"
+    },
+    "conclusion":"every real pure-Y stationary amplitude is constant on the connected even-sum carrier, with no fixed-sign or nonzero-amplitude assumption",
+    "scope_fence":[
+        "does not exclude cancellation by transverse or non-Y connection corrections",
+        "does not establish the task-level response-decoupling terminal"
+    ]
+}
+result_path=Path(__file__).with_name("a4d_y_pure_center_transport_results.json")
+check("RESULTS_MATCH_PINNED_JSON",result==json.loads(result_path.read_text()))
+
 print("EXACT_METRIC_MAP", M.tolist())
 print("TRANSPORT_LATTICE_INDEX", index)
 print("EDGE_EQUATION_CONSEQUENCE: a(x)^2=a(x+move)^2 for every transport move")
-print("CONNECTED_CARRIER_CONSEQUENCE: |a(x)| is constant on the even-sum sublattice")
-print("SIGN_SCOPE: the boost-edge rows allow sign flips; remaining Euler rows decide them")
+print("SECONDARY_BOOST_SIGN_FLIP_WITNESS: +/-4*a*(3*a^2+4)/(4+3*a^2)^2")
+print("CONNECTED_CARRIER_CONSEQUENCE: a(x)=a(x+move), so amplitude is constant on the even-sum sublattice")
 print("TERMINAL A4D-Y-PURE-CENTER-NONLINEAR-TRANSPORT-RIGIDITY")
-print("SCOPE: exact edge-row modulus rigidity for real pure-Y amplitudes; fixed-sign branches are constant; transverse/non-Y corrections remain open.")
+print("SCOPE: exact sign-free pure-Y amplitude rigidity; transverse/non-Y corrections remain open.")

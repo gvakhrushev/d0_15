@@ -93,16 +93,16 @@ admissible modes), a tame estimate that closes without contraction, or a
 different exact reduction. This scaling is a proof obstruction, not a
 counterexample or evidence that a branch exists.
 
-An exact nonlinear transport check now gives a sign-free restriction inside
-the pure-Y ansatz. Every spatial-boost edge equation factors as
-`±8(a-b)(a+b)/((4+3a^2)(4+3b^2))`. Since the denominator is positive for real
-amplitudes, stationarity forces `a^2=b^2` along each of six transport moves.
-Those moves generate the connected even-sum sublattice on periodic `L=4m`,
-so `|a|` is constant there, even if signs vary. A fixed-sign branch is thus
-constant. This closes the pure-Y amplitude variation channel more broadly
-than the earlier near-`z=1` fixed-sign statement. The remaining solder rows
-have not been used to classify sign-changing patterns, and transverse/non-Y
-corrections remain outside this ansatz result.
+An exact nonlinear transport check now proves sign-free rigidity inside the
+pure-Y ansatz. On each of the 12 phase/spatial-edge pairs, one boost equation
+factors as `±8(a-b)(a+b)/((4+3a^2)(4+3b^2))`, forcing `a^2=b^2`. A second
+boost component on the same edge evaluates at `b=-a` to
+`±4*a*(3*a^2+4)/(4+3*a^2)^2`, which cannot vanish for real `a!=0`; when
+`a=0`, the primary equation forces `b=0`. Therefore the pair forces `a=b`
+for all real values. Since the six transport moves generate the connected
+even-sum sublattice on periodic `L=4m`, every real pure-Y stationary amplitude
+is constant there, without a fixed-sign assumption. Transverse/non-Y
+corrections remain outside this exact ansatz result.
 
 The norm-only quadratic bound is not sharp for every interaction. The new
 exact certificate `a4d_y_center_wave_cubic_vertex_check.py` differentiates the
