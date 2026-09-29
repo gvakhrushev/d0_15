@@ -1,203 +1,65 @@
-# A4D Y CURVED RESPONSE — CORRECTED FOLLOW-UP CLOSURE BRIEF
+# A4D Y curved response — next closure gate
 
-Task: EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE
+Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 Execution PR: #310
-Status: IN_PROGRESS / correction lane
-Scientific scope: naked star action unchanged; no added selector or torsion equation.
+Status: `IN_PROGRESS` / nonlinear continuation open
+Action: unchanged naked star action; no added selector or torsion equation.
 
-## 0. Why this addendum exists
+## Corrected finite result
 
-The exact finite response certificate committed at ea6e9d0 established a nonzero z=1 TT defect in a one-direction Bloch reduction. A subsequent literal pairing audit found a mixed-block Bloch phase inconsistency: the metric/connection mixed term did not follow the same test-variable placement convention as the connection Hessian. The flat z=0 control did not expose this because the sign enters quadratically there.
+The result at `ea6e9d0` used the wrong mixed Bloch placement and its finite TT-defect interpretation is withdrawn. The corrected convention is connection equation `lambda^(-s)` and metric readout `lambda^(+s)`.
 
-Therefore:
+Two exact certificates are now pinned in this PR:
 
-- the ea6e9d0 TT numbers remain a useful regression fixture;
-- they are not a valid physical no-go witness;
-- the response problem must be redone with phase-resolved metric Euler output and the full geodesic-normal curvature compatibility system.
+- `a4d_y_curved_response_phase_corrected_check.py` verifies the 10-component aggregate response for all four Bloch axes, the exact flat and curved connection ranks, the center/range equations, and a hostile swapped-phase control. Its four `q12` averages and defect ranks match the submitted corrected ledger.
+- `a4d_y_curved_normaljet_compatibility_check.py` builds all 40 phase-resolved metric rows and the 20-dimensional Riemann normal-jet system. Exact ranks, kernels, curvature projection, smooth-source compatibility, and response comparison match the pinned JSON.
 
-The follow-up execution reported three important facts that now define the research frontier:
+The normal-jet result is:
 
-1. after the phase correction, the full 40-component phase-resolved metric Euler has a first-slow-order contribution that disappears under four-phase averaging;
-2. one-coordinate slow ansätze are too restrictive because spatial center variations cancel part of the apparent obstruction;
-3. in the full 20-component geodesic-normal curvature test, the linear compatibility system leaves one compatible physical curvature component, and on that surviving component the corrected response equals the flat Einstein control exactly.
+- connection ranks: flat 80, curved `z=1` 94; curved center dimension 2;
+- quadratic phase system: rank 10, nullity 30, curvature projection rank 20;
+- all-direction first-slow system: rank 43, nullity 5, curvature projection rank 1;
+- smooth-source fast-phase-erasure system: rank 5, nullity 2, curvature projection rank 1;
+- response difference from the independently built Einstein control: rank 0 on the compatible smooth-source kernel.
 
-These follow-up claims still require repository-level exact replay and must not be promoted before that replay exists.
+After normalization, the only compatible curved direction is `-Y tensor Y`, with `Y=(1,-1,1)` in spatial bivector order `(12,13,23)`. Its common response is `(3/2,0,0,0,-1/2,-1,-1,-1/2,-1,-1/2)` in metric-coordinate order `(q00,q01,q02,q03,q11,q12,q13,q22,q23,q33)`, exactly equal to the flat Einstein control.
 
-## 1. Immediate certificate target
+These are finite exact normal-jet statements. They do not construct an exact branch on a curved background or prove a refinement-uniform limit.
 
-Create a corrected exact certificate, separate from the historical ea6e9d0 artifact.
+## Reproduction
 
-Required outputs:
+From the repository root:
 
-- literal mixed-block phase convention derived from the same oriented-edge/test-variable placement used for A;
-- phase-resolved 40-component metric Euler, not only the four-phase average;
-- exact z=0 owner/Schur/Einstein control;
-- exact z=1 connection rank/kernel/cokernel;
-- all four slow modulation directions;
-- the full 20-dimensional geodesic-normal curvature basis;
-- center/range corrections allowed in every spatial direction;
-- exact compatibility matrix from normal curvature components to connection cokernel conditions;
-- rank, kernel and basis of the compatible curvature subspace;
-- exact metric response restricted to that compatible subspace;
-- comparison with the flat Einstein symbol on the same physical quotient;
-- hostile regression showing that the old mixed-phase convention reproduces the superseded defect and therefore fails the corrected assembly guard.
+```bash
+python3 02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
+```
 
-The certificate must explicitly distinguish:
+The first checker also records the submitted report JSON as provenance; it cross-checks its aggregate four-axis fields, not the report's per-site `q12` arrays. The normal-jet checker is the source of the full phase-resolved compatibility theorem.
 
-- phase-resolved local output;
-- supercell average;
-- genuine continuum tensor readout.
+## Remaining target: nonlinear continuation
 
-## 2. Decisive finite verdict
+Continue the surviving curved normal jet `J` to an exact stationary branch
 
-There are only two acceptable outcomes.
+`K_h(J) = K_Y + a_h(J)`
 
-### Positive compatibility terminal
+over sampled smooth metrics `Q_h(J)` with `q(0)=0`, `partial q(0)=0`, and `partial^2 q(0)=J`. Solve the literal finite connection Euler equation `E_K(Q_h,K_h)=0`, retaining the center variables and imposing the full cokernel equations at every order.
 
-If every physical curvature direction surviving the full joint compatibility equations satisfies
+Acceptable proof routes include analytic Lyapunov–Schmidt/Kuranishi continuation with a convergent majorant, Newton–Kantorovich on a certified range complement plus the exact reduced center equation, or another finite-dimensional analytic continuation with constants tracked in `h`. The continuation radius must support the background scaling, and omitted orders must be controlled.
 
-[
-S_{Y,mathrm{compat}}^{[2]}=S_{mathrm{Einstein}}^{[2]},
-]
+The branch must then satisfy the owner-topology estimate
 
-record:
+`|E_Q(Q_h,K_h) - E_Q(Q_h,K_h^sm)| = o(h^2)`
 
-A4D-Y-CURVED-NORMAL-JET-RESPONSE-COMPATIBLE
+uniformly under refinement. Control near-resonant complements, the allowed stationary-center amplitudes, conjugate Bloch-sector interactions, and the declared compact set of smooth background parameters.
 
-This is a finite normal-jet theorem, not yet the nonlinear continuum theorem.
+If continuation fails, return the first exact reduced center or cokernel equation that fails, its rational/polynomial obstruction, the surviving nonlinear curvature variety, and whether the obstruction forces the Y amplitude to shrink with `h`. A finite normal-jet compatibility result is not itself a nonlinear failure.
 
-### Negative compatibility terminal
+## Selector and terminal rules
 
-If there exists a curvature direction J in the exact compatible subspace with
+Do not claim a selector is required unless two exact source-compatible stationary branches over the same admissible smooth background have different normalized metric responses. The corrected finite normal-jet response agrees with Einstein on its compatible direction.
 
-[
-Delta S^{[2]}J
-e0
-]
+Keep PR #310 Draft and the lifecycle `IN_PROGRESS` until the nonlinear continuation and uniform remainder are proved or refuted. Neither global task terminal has been reached:
 
-on the physical quotient, record the exact rational witness and continue immediately to the nonlinear realization gate. Do not call it a global no-go until an exact smooth-background stationary sequence is built.
-
-## 3. Nonlinear continuation from the compatible jet
-
-Assume the corrected finite compatibility theorem is positive on a nonzero curved normal jet J.
-
-Construct an exact stationary branch
-
-[
-K_h(J)=K_Y+ a_h(J)
-]
-
-over a sampled smooth metric
-
-[
-Q_h(J)
-]
-
-with
-
-[
-q(0)=0,qquad partial q(0)=0,qquad partial^2q(0)=J.
-]
-
-The construction must solve the literal finite connection Euler equation, not only its first two formal orders.
-
-Acceptable routes:
-
-- analytic Lyapunov--Schmidt/Kuranishi continuation with a convergent majorant;
-- Newton--Kantorovich on the certified range complement plus exact reduced center equation;
-- another rigorous finite-dimensional analytic continuation with constants tracked in h.
-
-Required:
-
-1. gauge-fixed/right-complement coordinates;
-2. exact stationary center variables retained;
-3. full cokernel compatibility at every solved order;
-4. a radius of continuation that does not collapse faster than the background scaling needed for the continuum sequence;
-5. explicit control of all omitted orders.
-
-## 4. Uniform refinement estimate
-
-The nonlinear branch is useful only if the remainder survives the h^-2 response normalization.
-
-Prove, for the declared compatible branch,
-
-[
-E_K(Q_h,K_h)=0
-]
-
-exactly and
-
-[
-h^{-2}
-left[
-E_Q(Q_h,K_h)-E_Q(Q_h,K_h^{sm})
-ight]	o0
-]
-
-in the owner topology.
-
-A sufficient quantitative form is
-
-[
-left|
-E_Q(Q_h,K_h)-E_Q(Q_h,K_h^{sm})
-ight|
-le C h^{2+gamma},
-qquad gamma>0.
-]
-
-All constants must be controlled against:
-
-- lattice refinement;
-- almost-resonant complements;
-- stationary-center amplitudes allowed by the theorem;
-- interaction of conjugate Bloch sectors;
-- smooth background parameters in the declared compact set.
-
-## 5. If exact continuation fails
-
-A failure is scientifically useful only if it is located in the actual reduced nonlinear equations.
-
-Return:
-
-- the first order at which the reduced center/cokernel equation fails;
-- the exact polynomial/rational obstruction;
-- whether the compatible linear curvature subspace is cut to zero or to a smaller nonlinear variety;
-- whether the failure forces the Y amplitude to scale to zero with h.
-
-If curvature kills the Y center nonlinearly, this supports the positive Einstein route; it is not itself a no-go.
-
-## 6. Selector rule
-
-Do not claim that a selector is required unless there are two exact source-compatible stationary branches over the same admissible smooth background with different normalized metric responses.
-
-The mere existence of flat-metric nongauge Y vacua does not imply a selector is needed for the metric continuum theorem.
-
-## 7. Smallest current blocker
-
-After the phase correction, the smallest unresolved object is:
-
-[
-oxed{
-	ext{exact nonlinear continuation of the corrected compatible curved normal jet}
-+
-	ext{uniform }o(h^2)	ext{ metric-response remainder}
-}
-]
-
-Do not reopen global determinant geometry or connection uniqueness before this object is resolved.
-
-## 8. Required final report
-
-Return:
-
-1. corrected phase convention;
-2. exact compatible-curvature matrix/rank/basis;
-3. response restricted to the compatible subspace;
-4. nonlinear continuation theorem or exact obstruction;
-5. h-uniform remainder estimate or exact failure;
-6. selector verdict;
-7. Einstein verdict;
-8. one smallest blocker if still open;
-9. exact replay commands and result artifacts;
-10. nonclaims.
+- Positive: `A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED`.
+- Negative: `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO`.
