@@ -94,6 +94,8 @@ The exact checker `a4d_y_singleq_curvature_witness_check.py` verifies that the p
 
 The reported sparse 10-by-10 jet matrix lies in the image of the exact 20-dimensional algebraic Riemann normal-jet map. Its Frobenius pairing with the single-source response defect is `-27247/17500`. This establishes a finite nonzero pairing for the single-axis response. The witness has not been shown to satisfy the full coupled spatial-center and fast-phase-erasure constraints; the full normal-jet certificate still leaves only `-Y tensor Y`, with the Einstein response. The pairing does not establish a physical no-go or a nonlinear branch.
 
+The latest submitted report additionally claims rank 4 for a response-defect map over all 20 Riemann jets. Its JSON provides one witness jet and a nonzero scalar pairing, but no full response-by-curvature matrix or replayable rank certificate. The six nonzero pairings in the witness checker are basis-coordinate pairings, not that matrix rank. Treat rank 4 as unverified until its defining map is supplied; it is a different quantity from the certified rank-6 single-q defect and the rank-1 curvature projection after full normal-jet compatibility.
+
 ## Reproduction
 
 From the repository root, run:
