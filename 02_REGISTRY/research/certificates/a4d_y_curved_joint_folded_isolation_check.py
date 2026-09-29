@@ -45,7 +45,8 @@ Ginv_frob2=sp.factor(sum(x*x for x in Ginv))
 ck("TRANSVERSE_SIGMA_GT_9_OVER_100",
    Ginv_frob2 < sp.Rational(10000,81)**2)
 
-Lmax=max(sp.Rational(x) for x in LIP["coordinate_derivative_frobenius_upper_bounds"])
+Lmax=max(sp.Rational(row["operator_upper_bound"]) for row in LIP["coordinate_bounds"])
+ck("LIPSCHITZ_V2_SHARP_BOUND",Lmax==sp.Rational(22,7))
 ck("EXPLICIT_TRANSVERSE_CHART_RADIUS_1_OVER_300",
    Lmax*sp.Rational(1,300) < sp.Rational(9,100))
 
