@@ -35,6 +35,32 @@ def check(name, cond, detail=""):
     print("PASS_" + name)
 
 
+def compact_json(value, level=0):
+    """Pretty-print objects while keeping short scalar vectors on one line."""
+    pad = "  " * level
+    if isinstance(value, dict):
+        if not value:
+            return "{}"
+        rows = ["{"]
+        for index, (key, item) in enumerate(value.items()):
+            comma = "," if index + 1 < len(value) else ""
+            rows.append("  " * (level + 1) + json.dumps(key) + ": " + compact_json(item, level + 1) + comma)
+        rows.append(pad + "}")
+        return "\n".join(rows)
+    if isinstance(value, list):
+        if not value:
+            return "[]"
+        if all(not isinstance(item, (dict, list)) for item in value):
+            return "[" + ", ".join(json.dumps(item) for item in value) + "]"
+        rows = ["["]
+        for index, item in enumerate(value):
+            comma = "," if index + 1 < len(value) else ""
+            rows.append("  " * (level + 1) + compact_json(item, level + 1) + comma)
+        rows.append(pad + "]")
+        return "\n".join(rows)
+    return json.dumps(value)
+
+
 def dm_rank(M):
     return DomainMatrix.from_Matrix(M).convert_to(QQ).rank()
 
@@ -397,6 +423,19 @@ def run(write=False):
     expected_resp_norm = (scale * expected[:, phys_col]).applyfunc(sp.factor)
     check("NORMALIZED_RESPONSE_MATCH", resp_norm == expected_resp_norm)
 
+    # The first connection tangent on this normalized surviving curvature
+    # direction is linear in the normal coordinate iff every second-jet
+    # coefficient vanishes.  This degree bound is needed before isolating
+    # the homogeneous degree-four part of the order-delta^2 Euler forcing.
+    first_tangent = K1 * Ks[:5, phys_col]
+    first_connection_quadratic = [A2map48[ij] * first_tangent for ij in DIRPAIRS]
+    first_connection_constant = scale * (P0K * Ks[:5, phys_col] + N * Ks[5:, phys_col])
+    first_connection_linear = [scale * (A1map[i] * first_tangent) for i in range(4)]
+    check(
+        "SURVIVING_FIRST_CONNECTION_TANGENT_HAS_NO_QUADRATIC_PART",
+        all(T == sp.zeros(96, 1) for T in first_connection_quadratic),
+    )
+
     result = {
         "schema": "a4d-y-curved-normaljet-compatibility-v1",
         "terminal": "A4D-Y-CURVED-NORMAL-JET-RESPONSE-COMPATIBLE",
@@ -424,6 +463,7 @@ def run(write=False):
             "first_slow_system_rank": SYS1rank,
             "first_slow_kernel_dimension": K1.cols,
             "first_slow_curvature_projection_rank": K1[:20, :].rank(),
+            "surviving_first_connection_tangent_degree": 1,
             "constant_connection_fredholm_rank_on_kernel": dm_rank(G0K),
             "smooth_source_system_rank": smooth_rank,
             "smooth_source_kernel_dimension": Ks.cols,
@@ -437,6 +477,17 @@ def run(write=False):
                 f"d{c}d{d}": [str(x) for x in Jnorm[(c, d)]]
                 for c, d in DIRPAIRS if Jnorm[(c, d)] != sp.zeros(10, 1)
             },
+            "first_connection_tangent_linear_nonzero": {
+                f"xi{i}": {
+                    ":".join(str(x) for x in labels[j]): str(vector[j])
+                    for j in range(96) if vector[j]
+                }
+                for i, vector in enumerate(first_connection_linear)
+            },
+            "first_connection_tangent_constant_nonzero": {
+                ":".join(str(x) for x in labels[j]): str(first_connection_constant[j])
+                for j in range(96) if first_connection_constant[j]
+            },
             "metric_coordinate_order": [f"q{a}{b}" for a, b in SYM],
             "emergent_common_response": [str(x) for x in resp_norm],
             "flat_einstein_control": [str(x) for x in expected_resp_norm],
@@ -449,7 +500,7 @@ def run(write=False):
     }
 
     if write:
-        RESULT_PATH.write_text(json.dumps(result, indent=2) + "\n")
+        RESULT_PATH.write_text(compact_json(result) + "\n")
         print("WROTE", RESULT_PATH)
     else:
         check("RESULTS_MATCH_PINNED_JSON", result == json.loads(RESULT_PATH.read_text()))

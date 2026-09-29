@@ -308,10 +308,10 @@ negative G_h image, up to the retained kernel. If it fails, no C2 branch
 with that prescribed metric/source curve has the specified tangent.
 This is an actual reduced equation, not an off-shell response pairing.
 
-## 7. One precise next calculation; not performed here
+## 7. First nonlinear curved gate; one exact slice is obstructed
 
-The first nonlinear curved forcing on the surviving local normal-jet
-sector can be tested over Q without a large search. Let beta be the
+The nonlinear curved forcing on the surviving local normal-jet sector has
+now been evaluated exactly on the normalized curvature slice below. Let beta be the
 spatial Y two-form and choose a constant-curvature surface product with
 `R=-kappa beta tensor beta`. Its Gaussian curvature is `3 kappa`. For a
 dimensionless lattice offset xi, put `x=P_perp xi`, `r^2=x.x`,
@@ -326,12 +326,12 @@ S=I-\tfrac12\delta T+\tfrac3{40}\delta^2r^2T+O(\delta^3),
 with the spatial matrices extended by zero in the time slot. These follow
 from `sin(sqrt(3 kappa) r)/(sqrt(3 kappa) r)` and are rational Taylor inputs.
 
-An owner replay should:
+The replay uses the following exact setup:
 
 1. Extract the already-certified phase-polynomial first connection
-   tangent `a^[1]_p(xi)`, degree at most two, from the current normal-jet
-   solve. Verify its full polynomial equations. Keep its constant Y
-   freedom as a parameter or fix the parameterization z, not a selector.
+   tangent `a^[1]_p(xi)`, now checked to have degree one, from the
+   normal-jet solve. Keep its constant Y freedom as a parameter or fix
+   the parameterization z, not a selector.
 2. Substitute `K=K_Y exp(delta a^[1]+delta^2 a^[2])` into the literal
    Euler map, with all 96 components of `a^[2]_p(n)` allowed and all
    monomials in four coordinates through degree four. Every incoming
@@ -349,13 +349,58 @@ An owner replay should:
 For general Gram variations use the actual analytic coframe derivative
 (the Sylvester equation for the square root), not the identity-frame
 lift eta*q/2 away from Q=eta. Report the common response at the normal
-point only after compatibility. This computation is not asserted to
-have passed. A single successful order would still need a convergent
-majorant or another h-uniform nonlinear argument.
+point only after compatibility. The calculation below is a formal local
+obstruction on one normalized curvature slice; it is not a global or
+refinement-uniform theorem.
 
-The unresolved object is precisely this nonlinear joint cokernel
-forcing, followed by control of its exact zero set; the connection-only
-hyperbolic symbol and an elliptic inverse assumption cannot settle it.
+### 7.1 Exact degree-two reduced obstruction
+
+The normal-jet owner now verifies exactly that the normalized surviving
+first connection tangent has no quadratic term in `xi`, so it is linear in
+the normal coordinate. At order `delta^2`, its products with the quadratic
+first metric jet have degree at most three. The homogeneous degree-four
+forcing therefore comes only from the exact second-order Gram coframe
+displayed above.
+
+`a4d_y_curved_normaljet_degree2_obstruction_check.py` assembles the full
+136-row order-`delta^2` Euler polynomial with the pinned first connection
+tangent, exact Gram coframe, and right-trivialized inverse-link variation.
+It includes all common phase-metric source coefficients. The homogeneous
+degree-four forcing vanishes identically. The exact triangular cokernel
+reduction gives:
+
+| reduced map | rank | consequence |
+|---|---:|---|
+| frozen connection Hessian `H` | 94 | connection kernel dimension 2 |
+| frozen joint derivative `[H; C0]` | 95 | fixed-metric joint kernel dimension 1 |
+| joint derivative plus ten phase-common metric-source columns | 105 | 31-dimensional remaining cokernel |
+| degree-three reduced system, 35 degree-four center coefficients | 35 / 35 augmented | unique degree-four center correction is zero |
+| degree-two reduced system, 20 free degree-three center coefficients | 20 / 21 augmented | one exact obstruction remains |
+
+The degree-two obstruction is supported on the normal-coordinate monomial
+`xi3^2`. After range elimination and allowing every free degree-three center
+coefficient, a primitive integer combination of the 31 cokernel coordinates
+has exact pairing `-22209`; its primitive integer lift to the 136 Euler rows
+has pairing `-166034484`. The JSON certificate records both witnesses, row
+order, and all annihilation checks. Thus no smooth formal second-order normal jet solves
+this declared normalized curvature slice, even with arbitrary common
+phase-metric source coefficients. This does not prove a no-go for other
+curvature directions, non-smooth `h`-dependent sequences, or general
+backgrounds. The two-dimensional kernel of `H` is not the joint cokernel.
+Reproduce with:
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree4_gate_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
+```
+
+The selected formal Taylor branch is obstructed. The remaining theory is
+to determine whether this finite local obstruction rules out the admissible
+smooth branch in the full owner class and to establish or refute a
+refinement-uniform nonlinear continuation theorem; the connection-only
+hyperbolic symbol and an elliptic inverse assumption cannot settle those
+questions.
 
 ## 8. Replay and claim boundaries
 
@@ -384,6 +429,8 @@ correction are now checked by the two owner scripts. Its `sigma_min` assertion
 uses a floating root (the exact inverse-Frobenius bound is the retained proof),
 and its claimed shift-symbol zero set is only tested by substituting the zero
 frequency. The Fourier identity and Brillouin-zone inequality stated above
-give the valid analytic argument. The scratch does not evaluate the proposed
-`C_2`/`O_{2,h}` cokernel forcing, so neither that coefficient nor a uniform
-nonlinear inverse follows from its `ALL EXACT CHECKS PASSED` line.
+give the valid analytic argument. The new exact obstruction certificate
+evaluates the selected order-`delta^2` normal jet through its decisive
+degree-two cokernel equation. It does not establish a uniform nonlinear
+inverse or classify all curved branches, so those remain open beyond this
+finite slice.

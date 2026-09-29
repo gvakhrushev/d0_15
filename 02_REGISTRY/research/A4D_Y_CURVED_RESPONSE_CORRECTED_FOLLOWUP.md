@@ -78,6 +78,8 @@ python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_respon
 python3 02_REGISTRY/research/certificates/a4d_y_singleq_curvature_witness_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_joint_first_slow_injectivity_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_product_plane_seed_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree4_gate_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
 ```
 
 The first checker also records the submitted report JSON as provenance; it cross-checks its aggregate four-axis fields, not the report's per-site `q12` arrays. The normal-jet checker owns the full curvature compatibility theorem. The dual-center and center-symbol checks distinguish the staggered flat mode from the two hyperbolic principal forms. The small-amplitude checker certifies the zero-momentum splitting through order six. The phase-resolved source-response checker verifies the 37-dimensional `t0/t1` compatible class. The single-source witness checker verifies the corrected phase-independent defect and its explicit algebraic curvature pairing; neither is a nonlinear continuation result.
@@ -87,6 +89,21 @@ The first checker also records the submitted report JSON as provenance; it cross
 The follow-up `A4D_Y_JOINT_FIRST_SLOW_REDUCTION.md` proves a new boundary before the connection-only wave equations: the complete first-slow metric constraint has rank 5 on four derivatives of the Y amplitude and the visible dual correction. Its exact minor determinant is `-975737200/35590023`, with inverse Frobenius norm less than 8. A regular leading Y envelope on the flat metric is therefore constant under the smooth-source condition. The stacked fixed-metric joint symbol has an injective first-order center symbol and a local `c|k|` lower bound; this is not a global gap or a z-to-zero estimate.
 
 The same follow-up derives the analytic constrained first-order reduction near `(eta,1)`, an exact finite-lattice nonlinear range/cokernel reduction with explicit contraction hypotheses, and a genuinely curved commuting seed with exact response erasure. An exact connection row rules out that seed as a nonflat periodic stationary branch, so full transverse corrections must be retained. Two small companion certificates verify these new finite/algebraic inputs. No nonlinear terminal is claimed.
+
+The follow-up now also contains an exact second-order normal-jet obstruction
+on the normalized surviving `-Y tensor Y` curvature slice. The homogeneous
+degree-four forcing vanishes; the degree-three reduced system is compatible
+and forces the degree-four center correction to zero; the degree-two reduced
+system has exact ranks `20 -> 21` after retaining arbitrary common metric
+sources and every free degree-three center coefficient. Its `xi3^2` left
+witness pairs to `-22209` in the reduced cokernel basis (`-166034484` for
+the primitive integer 136-row Euler witness). This rules out a smooth formal
+second-order normal jet on that normalized slice. It does not by itself
+refute the required finite-lattice nonlinear continuation or the uniform
+remainder: the full admissible branch may have h-dependent scaling, different
+curvature directions, or nonlinear terms outside this finite normal-jet
+slice. The task remains `IN_PROGRESS` and both global terminals remain
+unreached.
 
 Derive and control the nonlinear **joint constrained** equations, rather than two free connection-center wave equations, then continue the surviving curved normal jet `J` to an exact stationary branch
 
