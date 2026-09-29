@@ -170,6 +170,44 @@ correction of the same order may still cancel it. The quadratic witness also
 does not automatically rule out branches whose first nonzero curvature jet
 occurs at a higher order.
 
+### Periodic mean obstruction for regular branches
+
+There is now a sharper conditional theorem for the regular branch, recorded
+in `a4d_y_periodic_regular_branch_mean_check.py` and its pinned JSON. Assume a
+periodic spatial product background with real `C^4` Gaussian curvature
+`kappa(x)`, the owner's global product framing and `z=1` Y sheet, and a joint
+stationary family with a uniform integer-power expansion through `h^4`,
+bounded `C^4` coefficient fields, and an `O(h^5)` remainder. The first-slow
+joint equations and their exact nonzero-covector injectivity force the
+order-`h` homogeneous Y-center envelope to be constant and its visible dual
+component to vanish. At curvature order `h^2`, the local Y retuning may vary
+with `x`, but its pointwise value is the parameter `s` in the amplitude-family
+certificate, whose projected source is independent of every `s`; its spatial
+derivatives first enter one order later.
+
+Sum the two zero-momentum connection-cokernel equations over the periodic
+sites. Every flat range term vanishes under the left-kernel rows. Every
+transport term from a higher center correction is a linear combination of
+periodic shift differences and has zero sum. In the variable-curvature normal
+jet, the linear order-`h^4` Hessian term also has zero mean. Products of the
+leading order-`h^2` curvature tangents contribute only `kappa^2` at order
+`h^4`; gradient corrections first enter one order later. The exact amplitude
+family certificate gives the remaining mean source, independently of `s`,
+as
+
+```text
+(351402359/2108160) * mean(kappa^2) = 0
+(21506403637/154949760) * mean(kappa^2) = 0.
+```
+
+Both coefficients are positive, so this regular periodic branch requires
+`kappa == 0`. This closes the periodic-mean route for uniformly regular
+integer-power branches on the stated Y sheet. It does not exclude a
+nonanalytic or nonuniform refinement-dependent center correction, and it is
+not an exact finite-lattice continuation theorem. In particular, the global
+uniform response gate remains open until those singular branches are
+controlled or constructed.
+
 Derive and control the nonlinear **joint constrained** equations, rather than two free connection-center wave equations, then continue the surviving curved normal jet `J` to an exact stationary branch
 
 `K_h(J) = K_Y + a_h(J)`
