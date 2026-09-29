@@ -447,6 +447,7 @@ python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_mu4_locus_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_torus_lipschitz_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_folded_range_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_quarter_spatial_diagonal_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_symmetry_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_product_plane_seed_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_stationary_center_family_coker_check.py
@@ -666,6 +667,24 @@ so the result transfers to every quarter-temporal copy: the unique rank drop
 on `lambda0=zeta, lambda1=lambda2=lambda3=x` is `x=zeta`.  This removes a
 whole continuous exceptional layer, not merely sampled characters.  It still
 does not classify the rest of the four-dimensional unit torus.
+
+The exact symmetry owner
+`a4d_y_curved_joint_symmetry_check.py` further reduces any global physical
+cover.  It certifies, entry by entry on all 2,988 nonzero Laurent
+coefficients:
+
+- common quarter covariance
+  `Q(zeta*lambda)=D_out(zeta) Q(lambda) D_in(zeta)`, `zeta^4=1`;
+- the full spatial `S3`: the even generator is the cycle
+  `1->2->3->1`, while the odd generator `2<->3` is accompanied by
+  fast-phase `p->p+2`, which restores the background after `Y->-Y`;
+- physical inversion `theta->-theta`, since all Laurent coefficients are
+  rational-real.
+
+Rank and singular values are therefore constant on a generic physical orbit
+of size 48.  This does not itself supply the missing compact-complement
+certificate, but it reduces the domain that such a certificate must cover by
+the exact discrete symmetry group rather than by heuristic identification.
 
 The active linear gap is therefore split cleanly into two pieces:
 
