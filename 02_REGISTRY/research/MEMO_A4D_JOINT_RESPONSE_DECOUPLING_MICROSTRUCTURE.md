@@ -60,49 +60,29 @@ The independently assembled flat Einstein control is exactly the same vector. Th
 
 ## Nonlinear status of the second connection-center mode
 
-The exact checker `a4d_y_dual_center_joint_visibility_check.py` integrates the boost-dual connection-kernel tangent to a finite Cayley path at the (z=1) flat Y vacuum.
+The exact checker `a4d_y_dual_center_joint_visibility_check.py` integrates the boost-dual connection-kernel tangent to a finite Cayley path at the `z=1` flat Y vacuum. All 96 connection Euler rows vanish identically on this path. Its ten Gram-response components are
 
-All 96 connection Euler rows vanish identically on that path. Its ten Gram-response components, however, are
+`(0,0,0,0,-f,f,f,-f,f,-f)`
 
-[
-(0,0,0,0,-f,f,f,-f,f,-f),
-qquad f=rac{4d}{3d^2-4},
-]
+on fast phases 0 and 1, and the negative vector on phases 2 and 3, where `f=4d/(3d^2-4)`. The four-phase average is zero, but a smooth source requires fast-phase erasure and forces `d=0` near the origin. Thus the second connection-Hessian center is not an independent smooth-source joint modulus: it is connection-stationary and staggered-metric-visible.
 
-on fast phases (0,1), and exactly the negative vector on phases (2,3).
+## Quadratic symbol of the surviving center envelopes
 
-The four-phase average is therefore zero, but a smooth source requires fast-phase erasure and forces (d=0) near the origin. Thus the second connection Hessian center is not an independent smooth-source joint modulus. The genuine nonlinear flat stationary modulus is the Y amplitude; the dual direction is connection-stationary but staggered metric-visible.
+The follow-up certificate `a4d_y_center_envelope_symbol_check.py` computes the exact quadratic symbol of the two-dimensional stationary center at `z=1`. The two components decouple at principal order. With `s=t1+t2+t3` and `r_perp^2=t1^2+t2^2+t3^2-s^2/3`, their symbols are
 
-## Center-envelope principal symbol
+`S_Y(t) = -2/188307 * [26250*(t0-16*s/75)^2 - (2283779/2)*r_perp^2]`
 
-The exact checker `a4d_y_center_envelope_symbol_check.py` eliminates the 94 range directions at (z=1). At quadratic principal order the Y tangent and boost-dual center decouple.
+and
 
-With
+`S_dual(t) = -1/6408 * [882*(t0-16*s/21)^2 - (603687/2)*r_perp^2]`.
 
-[
-s=t_1+t_2+t_3,qquad
-r_perp^2=t_1^2+t_2^2+t_3^2-rac{s^2}{3},
-]
+These are two transported `2+1` hyperbolic envelope modes, not an elliptic range with a spectral gap. The exact symbol fixes the linear principal part only; nonlinear envelope existence, energy estimates, and uniform coupling to the transverse range remain open.
 
-the Y tangent has principal form
+## Site-resolved source response on a 37-dimensional compatibility class
 
-[
--rac{2}{188307}left[
-26250left(t_0-rac{16}{75}sight)^2-rac{2283779}{2}r_perp^2
-ight],
-]
+The follow-up certificate `a4d_y_phase_resolved_compatible_response_check.py` builds the 40-dimensional, four-phase metric-source problem for the `e0` axis at `z=1`. The exact zero-order and first-order Fredholm maps have ranks 1 and 2, so their common kernel has dimension 37. Solving the range and two center equations through second order gives a defect of rank 8 on this class. Its averaged first-order response has rank 4 on the full class but vanishes on the phase-independent ten-dimensional source subspace. The phase-independent second-order defect has rank 6 and reproduces the previously pinned `q12` value `-34163/118125`.
 
-while the boost-dual tangent has
-
-[
--rac{1}{6408}left[
-882left(t_0-rac{16}{21}sight)^2-rac{603687}{2}r_perp^2
-ight].
-]
-
-The center is therefore a transported (2+1) hyperbolic envelope sector, not an elliptically isolated kernel. A uniform spectral-gap rescue is structurally inappropriate. The correct nonlinear architecture is range elimination plus hyperbolic center evolution, followed by smooth-source removal of the dual branch.
-
-Independent exact rational reruns at (z=1/2), (z=1/4), and (z=1/10) preserve the normal-jet ranks (10), (43), curvature projection (20	o1), smooth-source rank (5), and exact emergent Einstein equality. These are supporting amplitude-family checks, not yet a symbolic-in-(z) theorem.
+The 10-by-40 defect matrix extends the map from the compatible class by Euclidean orthogonal projection; the checker states this convention explicitly. It is a finite source-response calculation, separate from the curvature normal-jet system, and does not alter the latter's Einstein match after spatial center-gradient and fast-phase-erasure constraints. The submitted value `2626083/44800` lacks a specified source vector/projection in the provided package and is not treated as verified.
 
 ## Reproduction
 
@@ -111,9 +91,11 @@ From the repository root, run:
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py
 ```
 
-The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies the phase-resolved normal-jet compatibility and Einstein response. Both compare their results with pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
+The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies the curvature normal-jet compatibility and Einstein response. The third verifies the exact principal symbol of the two center envelopes. The fourth verifies the 37-dimensional site-resolved source-response class and its projected defect map. Each current checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
 
 The submitted aggregate JSON has SHA-256 `79e6db7d96a0863a6af56e94752d080d5505a7fc47a307b752269dd092c4e230`. Its per-site `q12` arrays are not separately asserted by the aggregate checker.
 
@@ -132,7 +114,7 @@ The following boundaries remain:
 
 ## Single remaining gate
 
-Continue the `-Y tensor Y` compatible curved normal jet to an exact nonlinear stationary branch with the declared #216 comparator, or prove an exact obstruction in the reduced nonlinear center equations. Then prove the refinement-uniform estimate
+Derive the nonlinear reduced equations for the two compatible center envelopes and continue the `-Y tensor Y` curved normal jet to an exact stationary branch with the declared #216 comparator, or prove an exact obstruction in those reduced equations. The continuation must control the hyperbolic principal symbols without assuming an elliptic spectral gap. Then prove the refinement-uniform estimate
 
 `|E_Q(Q_h,K_h) - E_Q(Q_h,K_h^sm)| = o(h^2)`
 
