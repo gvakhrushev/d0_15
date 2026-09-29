@@ -9,7 +9,7 @@ Pinned live inputs at dispatch time:
 
 - main: `e80a3b1ccf615fb4f70bf5900181592604928497`
 - resonance / structural lane #317: reviewed base head `727a3bd36aed3083c8584232a93922521d44465e`
-- response lane #310: integrated corrected finite head `b259dc57efe2b8dc84dbc38a847630a3681c87b4`; historical finite-defect head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b` is superseded for physical interpretation
+- response lane #310: certified normal-jet/envelope head `87d7636ead521aef9b891b266a37f11eeccff4d3`; historical finite-defect head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b` is retained only as a regression fixture
 
 Always refresh before execution. Reuse merged/live owners; do not recompute whole censuses unless a narrow consistency check requires it.
 
@@ -304,6 +304,40 @@ The full first-slow compatibility system has rank 43/nullity 5 and curvature pro
 Finite terminal: `A4D-Y-CURVED-NORMAL-JET-RESPONSE-COMPATIBLE`.
 
 This closes the finite phase/normal-curvature gate. The per-site `q12` arrays in the submitted report are retained as provenance; the aggregate checker does not assert those arrays individually. No nonlinear smooth-background continuation or refinement-uniform response estimate is certified yet.
+
+### 4.1 Certified center-envelope principal symbol
+
+The response lane additionally owns `a4d_y_center_envelope_symbol_check.py` and its pinned JSON. After exact elimination of the 94 range directions at (z=1), the two stationary-center amplitudes decouple at quadratic principal order.
+
+Let
+[
+s=t_1+t_2+t_3,qquad
+r_perp^2=t_1^2+t_2^2+t_3^2-rac{s^2}{3}.
+]
+
+The Y-tangent center has principal form
+[
+-rac{2}{188307}left[
+26250left(t_0-rac{16}{75}sight)^2
+-rac{2283779}{2}r_perp^2
+ight],
+]
+and the boost-dual center has
+[
+-rac{1}{6408}left[
+882left(t_0-rac{16}{21}sight)^2
+-rac{603687}{2}r_perp^2
+ight].
+]
+
+Thus the residual center is a pair of decoupled transported (2+1) hyperbolic envelope sectors, not an elliptically isolated kernel. A global spectral-gap rescue is therefore the wrong mechanism. The correct nonlinear architecture is
+[
+94 	ext{range directions: analytic elimination}
+quad+quad
+2 	ext{center envelopes: hyperbolic evolution/energy control}.
+]
+
+Independent exact rational reruns at (z=1/2) and (z=1/4) preserve the finite compatibility ranks (10), (43), curvature projection (20	o1), smooth-source rank (5), and zero emergent-minus-Einstein rank. They support, but do not yet certify symbolically in (z), a full amplitude-family theorem.
 
 ## 5. Next gate: curved normal-jet realization and on-shell continuation
 
