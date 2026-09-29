@@ -123,7 +123,7 @@ for lam in (sp.Integer(1),sp.I,sp.Integer(-1),-sp.I):
 
 lip=json.loads(LIP.read_text())
 ck("PINNED_GLOBAL_DERIVATIVE_BOUND",
-   lip["schema"]=="a4d-y-curved-joint-torus-lipschitz-v2"
+   lip["schema"]=="a4d-y-curved-joint-torus-lipschitz-v3"
    and all(x["operator_upper_bound"]=="22/7" for x in lip["coordinate_bounds"]))
 
 # Quantitative Weyl estimate.  ||Bperp||=sqrt(3)<7/4, hence
