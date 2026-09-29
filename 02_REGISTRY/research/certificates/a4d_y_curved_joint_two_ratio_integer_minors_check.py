@@ -91,7 +91,7 @@ def chart_terms(cols):
     for data,rowoff in ((S.ATERMS,0),(S.QTERMS,48)):
         for d,E in data.items():
             a,b=d[1]+1,d[2]+1
-            ck("ENTRY_EXPONENT_RANGE_"+str(d),0<=a<=2 and 0<=b<=2)
+            if not (0<=a<=2 and 0<=b<=2): raise AssertionError(("ENTRY_EXPONENT_RANGE",d))
             for (row,col),v0 in E.items():
                 if data is S.ATERMS:
                     if not (24<=row<72): continue
@@ -101,7 +101,7 @@ def chart_terms(cols):
                     rr=48+(row-10)
                 if col not in cpos: continue
                 q=F(v0)*DEN
-                ck("DENOMINATOR_CLEAR",q.denominator==1)
+                if q.denominator!=1: raise AssertionError(("DENOMINATOR_CLEAR",d,row,col))
                 cc=cpos[col]
                 terms[rr][cc][(a,b)]=terms[rr][cc].get((a,b),0)+q.numerator
     for i in range(68):
@@ -126,7 +126,7 @@ def chart_terms(cols):
         total=0
         for j in range(68):
             total+=sum(abs(v) for v in terms[i][j].values())
-        ck("NONZERO_ROW_L1",total>0)
+        if total<=0: raise AssertionError(("ZERO_ROW_L1",i))
         row_bounds.append(total)
     coeff_bound=math.prod(row_bounds)
     return terms,tuple(bounds),coeff_bound
@@ -199,7 +199,7 @@ def coeff_mod(terms,bounds,p):
             out[a,b]=sum(int(ty[ix,b])*powers[ix] for ix in range(nx))%p*invx%p
     return out
 
-records=[]; sparse_ledgers=[]
+records=[]
 for ci,cols in enumerate(CHARTS):
     terms,bounds,bound=chart_terms(cols)
     ck("ASSIGNMENT_BOUNDS_"+str(ci),bounds==EXPECTED_ASSIGNMENT_BOUNDS[ci])
@@ -227,7 +227,8 @@ for ci,cols in enumerate(CHARTS):
         for b in range(ny):
             z=int(residues[a,b])
             exact[a,b]=z if z<=modulus//2 else z-modulus
-            ck("COEFFICIENT_BOUND_"+str(ci),abs(int(exact[a,b]))<=bound)
+    ck("ALL_COEFFICIENTS_WITHIN_BOUND_"+str(ci),
+       all(abs(int(exact[a,b]))<=bound for a in range(nx) for b in range(ny)))
 
     nz=[(a,b,int(exact[a,b])) for a in range(nx) for b in range(ny) if exact[a,b]]
     amin=min(a for a,b,c in nz); amax=max(a for a,b,c in nz)
@@ -253,7 +254,6 @@ for ci,cols in enumerate(CHARTS):
     ledger=[[a+xmin,b+ymin,c] for a,b,c in nz]
     payload=";".join(f"{a},{b},{c}" for a,b,c in ledger)
     h=hashlib.sha256(payload.encode()).hexdigest()
-    sparse_ledgers.append(ledger)
     records.append({
       "chart_index":ci,
       "assignment_bounds":[list(bounds[0]),list(bounds[1])],
@@ -274,7 +274,6 @@ result={
  "integer_clear":"multiply every selected matrix entry by 14*x*y",
  "charts":[list(c) for c in CHARTS],
  "records":records,
- "exact_sparse_coefficients":sparse_ledgers,
  "scope_fence":[
    "owns four exact characteristic-zero determinant polynomials in Z[x,y]",
    "does not yet prove their characteristic-zero common zero-set",
@@ -287,4 +286,5 @@ if "--write" in __import__("sys").argv:
     print("WROTE",OUT)
 elif OUT.exists():
     ck("RESULTS_MATCH_PINNED_JSON",json.loads(OUT.read_text())==result)
+print("RESULT_RECORDS",json.dumps(records,sort_keys=True),flush=True)
 print("TERMINAL A4D-Y-CURVED-JOINT-TWO-RATIO-INTEGER-MINORS-CERTIFIED")
