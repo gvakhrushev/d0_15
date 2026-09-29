@@ -46,6 +46,12 @@ where `s=t1+t2+t3` and `r_perp^2=t1^2+t2^2+t3^2-s^2/3`. These are two transporte
 
 The exact dual-center visibility check gives a second boundary at zero slow momentum: its finite Cayley path has zero connection Euler on all 96 rows, while its metric response alternates sign between the first and second phase pairs. The four-phase average vanishes, but requiring the metric Euler output to be equal on all four phases forces the dual amplitude to zero near the origin.
 
+The exact pure-Y transport certificate `a4d_y_pure_center_transport_check.py` sharpens the fixed-sign rigidity without assuming that the amplitude never changes sign. Each of the 12 phase/spatial-boost Euler rows factors, up to orientation, as
+
+`8*(a-b)*(a+b)/((4+3*a^2)*(4+3*b^2))`.
+
+For real amplitudes the denominator is strictly positive, so every such row forces `a^2=b^2`. The six transport moves generate the even-sum sublattice of `Z^4` (index two); hence any pure-Y stationary candidate on a connected periodic `L=4m` carrier must have constant `|a|` on that sublattice. This includes amplitudes crossing zero and arbitrary sign patterns at the level of these edge equations. In a fixed-sign neighborhood of `z=1`, it reduces to a constant amplitude. The edge rows alone do not classify which sign patterns also satisfy the remaining solder/connection rows, and they do not control transverse or non-Y corrections. This is a stronger exact restriction on the pure-Y ansatz, not a task-level continuation theorem.
+
 The small-amplitude Schur certificate starts from the 16-dimensional flat connection kernel and gives effective ranks `(0,0,12,12,14,14,14)` through order six. After the order-two reduction, four directions remain; the order-four and order-five reduced blocks vanish, and the order-six block is `diag(0,0,9/8,3/8)`. Thus twelve transverse directions first lift at order two, two soft transverse directions at order six, and two exact center directions remain. The worst inverse loss is `O(z^-6)`, so this finite splitting does not supply the uniform estimate needed for the continuum limit.
 
 ## Site-resolved source response on the `t0/t1` compatible class
@@ -72,6 +78,7 @@ From the repository root:
 python3 02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_dual_center_joint_visibility_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_pure_center_transport_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py

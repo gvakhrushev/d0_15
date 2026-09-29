@@ -93,6 +93,17 @@ admissible modes), a tame estimate that closes without contraction, or a
 different exact reduction. This scaling is a proof obstruction, not a
 counterexample or evidence that a branch exists.
 
+An exact nonlinear transport check now gives a sign-free restriction inside
+the pure-Y ansatz. Every spatial-boost edge equation factors as
+`±8(a-b)(a+b)/((4+3a^2)(4+3b^2))`. Since the denominator is positive for real
+amplitudes, stationarity forces `a^2=b^2` along each of six transport moves.
+Those moves generate the connected even-sum sublattice on periodic `L=4m`,
+so `|a|` is constant there, even if signs vary. A fixed-sign branch is thus
+constant. This closes the pure-Y amplitude variation channel more broadly
+than the earlier near-`z=1` fixed-sign statement. The remaining solder rows
+have not been used to classify sign-changing patterns, and transverse/non-Y
+corrections remain outside this ansatz result.
+
 The norm-only quadratic bound is not sharp for every interaction. The new
 exact certificate `a4d_y_center_wave_cubic_vertex_check.py` differentiates the
 quadratic reduced center symbol along the exact boost-dual
@@ -232,6 +243,7 @@ From the repository root, run:
 python3 02_REGISTRY/research/certificates/a4d_y_curved_response_phase_corrected_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_compatibility_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_dual_center_joint_visibility_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_pure_center_transport_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_center_wave_cubic_vertex_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting_check.py

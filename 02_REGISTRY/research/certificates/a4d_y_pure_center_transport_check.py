@@ -150,6 +150,11 @@ for p in range(4):
         target=sp.factor(8*(a-b)*(a+b)/((4+3*a*a)*(4+3*b*b)))
         check(f"PHASE{p}_ROLE{role}_EXACT_DIFFERENCE_FACTOR",
               sp.factor(renamed-target)==0 or sp.factor(renamed+target)==0)
+        check(f"PHASE{p}_ROLE{role}_VANISHES_FOR_EQUAL_SQUARES",
+              sp.factor(renamed.subs(b, a)) == 0 and
+              sp.factor(renamed.subs(b, -a)) == 0)
+        check(f"PHASE{p}_ROLE{role}_NONZERO_FOR_UNEQUAL_SQUARES",
+              sp.factor(renamed.subs({a: 1, b: 0})) != 0)
 
 e=[sp.eye(4)[:,j] for j in range(4)]
 moves=[]
@@ -172,5 +177,8 @@ check("ALL_TRANSPORT_MOVES_HAVE_EVEN_COORDINATE_SUM",
 
 print("EXACT_METRIC_MAP", M.tolist())
 print("TRANSPORT_LATTICE_INDEX", index)
+print("EDGE_EQUATION_CONSEQUENCE: a(x)^2=a(x+move)^2 for every transport move")
+print("CONNECTED_CARRIER_CONSEQUENCE: |a(x)| is constant on the even-sum sublattice")
+print("SIGN_SCOPE: the boost-edge rows allow sign flips; remaining Euler rows decide them")
 print("TERMINAL A4D-Y-PURE-CENTER-NONLINEAR-TRANSPORT-RIGIDITY")
-print("SCOPE: pure-Y connection ansatz near fixed-sign z=1; transverse/non-Y corrections remain open.")
+print("SCOPE: exact edge-row modulus rigidity for real pure-Y amplitudes; fixed-sign branches are constant; transverse/non-Y corrections remain open.")
