@@ -1,0 +1,25 @@
+{
+  "schema": "a4d-y-curved-joint-mu4-locus-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-MU4-LOCUS-CERTIFIED",
+  "background": "z=1 exact Y vacuum; standard solder",
+  "joint_symbol_shape": [136, 96],
+  "prime": 65537,
+  "sqrt_minus_one_mod_prime": 256,
+  "modular_rank_counts": {"95": 4, "96": 252},
+  "folded_character_ids": [[0,0,0,0],[1,1,1,1],[2,2,2,2],[3,3,3,3]],
+  "folded_characters": ["(1,1,1,1)","(i,i,i,i)","(-1,-1,-1,-1)","(-i,-i,-i,-i)"],
+  "folded_connection_rank_mod_p": 94,
+  "folded_joint_rank_mod_p": 95,
+  "characteristic_zero_argument": {
+    "regular_points": "rank mod p = 96 implies characteristic-zero rank 96",
+    "folded_points": "rank mod p = 95 gives lower bound 95; merged #232 exact nonzero Y joint-kernel tangent gives upper bound 95; diagonal zone folding identifies the four physical copies",
+    "exact_kernel_owner": "PR #232 merge caa1e65087ddf15cda35325189ebfcbf51a56592"
+  },
+  "conclusion": "on mu_4^4 the full curved joint symbol has exact rank 95 only at the four folded diagonal characters and rank 96 at all other 252 characters",
+  "scope_fence": [
+    "exact mu_4^4 torsion grid only",
+    "no all-Bloch complex or unit-torus zero-locus theorem",
+    "no uniform singular-value lower bound between sampled characters",
+    "no nonlinear range theorem or task-level response terminal"
+  ]
+}
