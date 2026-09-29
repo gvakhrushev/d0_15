@@ -78,6 +78,18 @@ and
 
 These are two transported `2+1` hyperbolic envelope modes, not an elliptic range with a spectral gap. The exact symbol fixes the linear principal part only; nonlinear envelope existence, energy estimates, and uniform coupling to the transverse range remain open.
 
+## Joint first-slow reduction: the connection waves are constrained
+
+The analytic follow-up [A4D_Y_JOINT_FIRST_SLOW_REDUCTION.md](A4D_Y_JOINT_FIRST_SLOW_REDUCTION.md) retains the full metric equations before treating the connection-center wave symbols. Its exact 40-by-5 first-slow map acts on `(d0 z,d1 z,d2 z,d3 z,b_dual)`. A five-row minor has determinant `-975737200/35590023`; the inverse minor has Frobenius norm less than 8. Thus the map has lower bound `||M v||_2 >= ||v||_2/8`.
+
+For a flat metric and raw smooth source O(h^2), this forces a regular leading Y envelope to be constant and removes the order-h visible dual correction. Equivalently, the fixed-metric stacked joint Bloch derivative has an injective first-order center symbol in every nonzero real slow covector. Analytic range elimination yields `sigma_min J(i k) >= c |k|` locally near zero momentum. This is a derived local joint estimate, not an assumed elliptic connection gap and not a global Bloch bound. It does not extend to z=0 without another estimate.
+
+Over the exact frozen constant-metric Y family, the same rank condition persists near `(eta,1)`. The leading nonlinear joint equations reduce to a constrained first-order system for the Y amplitude and metric gradients, with all residual compatibility equations retained. The follow-up also states an exact finite-lattice analytic range-reduction theorem with explicit contraction hypotheses and the first nonlinear joint cokernel equation. Those hypotheses have not been proved uniform under refinement.
+
+A second small certificate treats the genuinely curved product-plane seed `S=I+(f-1)P_perp`, with f time independent and constant along `(1,1,1)`. Commuting spatial spin links give exact sitewise metric-response erasure for the Y carrier, and all 96 connection coefficients through first slow order vanish without linearizing in f. However the exact temporal boost-dual row is `3 f(x)^2-sum_i f(x-h e_i)^2`. On a connected periodic spatial lattice this excludes nonconstant f within the commuting seed ansatz. It is not an obstruction to the full connection space: the transverse corrections at the next order remain essential.
+
+The next substantial exact test is specified with rational inputs in section 7 of the follow-up: the delta^2 joint cokernel forcing for the constant-curvature product normal metric, where `delta=kappa h^2`. That test has not been executed and is not counted as a passed nonlinear continuation.
+
 ## Small-amplitude splitting at zero slow momentum
 
 The exact checker `a4d_y_small_amplitude_kernel_splitting_check.py` reduces the flat 16-dimensional connection kernel twice. The effective ranks through order six are `(0,0,12,12,14,14,14)`. After the order-two block, four directions remain; the reduced order-four and order-five blocks vanish, while the order-six block is `diag(0,0,9/8,3/8)`. The final kernel consists of the exact Y and boost-dual center tangents. Twelve transverse modes lift at order two, two soft modes at order six, and the worst inverse loss is `O(z^-6)`. This exact zero-momentum splitting identifies the small-amplitude conditioning that a nonlinear uniform estimate must control; it is not itself an `h`-uniform continuation theorem.
@@ -108,9 +120,11 @@ python3 02_REGISTRY/research/certificates/a4d_y_center_envelope_symbol_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_singleq_curvature_witness_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_joint_first_slow_injectivity_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_product_plane_seed_check.py
 ```
 
-The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The final two verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. Each current checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
+The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next three verify dual-center source visibility, the hyperbolic center symbol, and the zero-momentum small-amplitude splitting. The subsequent pair verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. The two new small checks verify joint first-slow injectivity and the nonlinear product-plane seed identities. Each current checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
 
 The submitted aggregate JSON has SHA-256 `79e6db7d96a0863a6af56e94752d080d5505a7fc47a307b752269dd092c4e230`. Its per-site `q12` arrays are not separately asserted by the aggregate checker.
 
@@ -129,7 +143,7 @@ The following boundaries remain:
 
 ## Single remaining gate
 
-Derive the nonlinear reduced equations for the two compatible center envelopes and continue the `-Y tensor Y` curved normal jet to an exact stationary branch with the declared #216 comparator, or prove an exact obstruction in those reduced equations. The continuation must control the hyperbolic principal symbols without assuming an elliptic spectral gap. Then prove the refinement-uniform estimate
+Solve the nonlinear **joint** reduced cokernel equation, retaining the first-slow metric constraints above, and continue the `-Y tensor Y` curved normal jet to an exact stationary branch with the declared #216 comparator, or prove an exact obstruction in that reduced equation. The two connection-only hyperbolic symbols must not be treated as two free joint envelopes. The first uncomputed nonlinear curved forcing and a rational replay recipe are stated in `A4D_Y_JOINT_FIRST_SLOW_REDUCTION.md`. Then prove the refinement-uniform estimate
 
 `|E_Q(Q_h,K_h) - E_Q(Q_h,K_h^sm)| = o(h^2)`
 
