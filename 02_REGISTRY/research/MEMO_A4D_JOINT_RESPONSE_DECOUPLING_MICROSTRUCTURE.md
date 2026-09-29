@@ -443,6 +443,9 @@ python3 02_REGISTRY/research/certificates/a4d_y_small_amplitude_kernel_splitting
 python3 02_REGISTRY/research/certificates/a4d_y_phase_resolved_compatible_response_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_singleq_curvature_witness_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_joint_first_slow_injectivity_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_mu4_locus_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_torus_lipschitz_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_curved_joint_folded_range_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_product_plane_seed_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_curved_normaljet_degree2_obstruction_check.py
 python3 02_REGISTRY/research/certificates/a4d_y_stationary_center_family_coker_check.py
@@ -453,6 +456,50 @@ python3 02_REGISTRY/research/certificates/a4d_y_periodic_regular_branch_mean_che
 The first command verifies the four-axis aggregate, exact center/range solves, three direct rational Schur controls, and a hostile swapped-phase control. The second verifies full curvature normal-jet compatibility and Einstein response. The next four verify dual-center source visibility, the hyperbolic center symbol, the new cubic vertex, and the zero-momentum small-amplitude splitting. The subsequent pair verify the 37-dimensional site-resolved class and the phase-independent single-source curvature witness. The next two verify joint first-slow injectivity and the nonlinear product-plane seed identities. The following pair verify the exact `delta^2` connection/metric normal-jet system and its invariance under arbitrary constant first-order Y retuning. The next command derives the variable-curvature Riemann-normal metric jet and checks its constant-curvature specialization against that owner. The final command replays the exact amplitude law, first-slow injectivity, and periodic shift identities used by the regular-branch mean obstruction. Each checker compares its result with a pinned JSON. The old `a4d_y_curved_response_quotient_check.py` and its output remain historical regression material; its `ea6e9d0` TT-defect interpretation must not be used.
 
 The submitted aggregate JSON has SHA-256 `79e6db7d96a0863a6af56e94752d080d5505a7fc47a307b752269dd092c4e230`. Its per-site `q12` arrays are not separately asserted by the aggregate checker.
+
+## Exact curved joint Bloch control near the folded Y locus
+
+Three exact owners now replace the earlier numerical full-joint scout in the
+part of Bloch space they cover.
+
+1. `a4d_y_curved_joint_mu4_locus_check.py` evaluates the literal
+   `136 x 96` joint symbol on all 256 characters of `mu_4^4`.  Exactly
+   252 have full column rank 96.  The only rank drops are the four diagonal
+   folded points `(lambda,lambda,lambda,lambda)`,
+   `lambda in {1,i,-1,-i}`; each has exact rank 95 and nullity one, and
+   phase unfolding identifies all four kernels with the same constant
+   Y-center.
+
+2. `a4d_y_curved_joint_torus_lipschitz_check.py` certifies the exact
+   21-term nearest-difference Laurent support and the global unit-torus bound
+
+   ```text
+   ||Q(theta)-Q(phi)||_2 <= (22/7) sum_j |theta_j-phi_j|.
+   ```
+
+3. `a4d_y_curved_joint_folded_range_check.py` fixes a 95-dimensional
+   transverse Lyapunov-Schmidt chart at the folded point.  Deleting the
+   phase-0 Role-0 `J13` coordinate and selecting the pinned 95 output rows
+   gives an invertible `95 x 95` minor.  Its exact inverse Frobenius norm
+   squared is
+
+   ```text
+   1449607289608826796462600607206428282020098585931893046315145431
+   /1525932452501592103567428379487267246378717660095190382527232
+   ```
+
+   and is strictly below `31^2`.  Entrywise diagonal phase covariance
+   `Q(z,z,z,z)=D_out(z) Q(1,1,1,1) D_in(z)` for `z^4=1` transfers the
+   same bound to all four folded copies.  Combining it with the `22/7`
+   Lipschitz owner gives a uniform Neumann chart on every folded
+   `l1`-angular ball of radius `7/1364`, with transverse inverse norm
+   strictly below 62.
+
+This is the first rigorous transverse range estimate around the physical
+folded center.  It is local.  The complement of those four balls on the
+physical unit torus is still missing an exact full-rank cover or equivalent
+algebraic certificate, and the reduced nonlinear Y-center equation on a
+genuinely curved metric remains open.
 
 ## What is and is not settled
 
@@ -480,42 +527,31 @@ Keep PR #310 Draft and the task `IN_PROGRESS` until the nonlinear continuation a
 - Positive: `A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED`.
 - Negative: `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO`.
 
-### Consolidated terminal logic for the surviving Y sheet
+### Supersession note on the historical degree-two obstruction
 
-The degree-two witness is `-22209*kappa^2` for every nonzero curvature
-amplitude at `z=1`. It excludes an **exactly phase-common order-`h^4`
-metric readout in the specified formal normal jet**, not all exact
-joint-critical branches under every source convention. For bounded
-curvature its certified phase defect is `O(h^4)`, subleading after the
-task's `h^-2` normalization, subject to an uncontrolled remainder. The
-positive periodic mean identity excludes a uniformly regular joint branch
-on a fixed nonflat product background with the stated global framing and
-expansion. Neither statement supplies the exact joint-critical sequence
-with a nonzero normalized response gap required by the task's negative
-terminal.
+The older `-22209*kappa^2` and related phase-common degree-two obstruction
+belongs to a more restrictive formal continuation ansatz and must not be
+used as the current terminal for the surviving Y curvature.  The corrected
+phase placement in the full 40-row, four-direction normal-jet owner leaves
+one curvature direction, `-Y tensor Y`, and after imposing only
+fast-phase erasure its common metric response is exactly the independent
+Einstein control.  Thus the current finite terminal is
 
-The rational-in-`z` augmented-minor argument above **already proves** the
-formal obstruction for generic regular `z`, outside a finite algebraic
-exceptional set, and in a neighborhood of `1`. Computing its numerator
-would locate the exceptions; it is not a prerequisite for the generic
-claim. The exact pure-Y transport theorem additionally excludes all real
-spatially varying amplitudes inside its pure-Y ansatz without any sign or
-refinement-regularity assumption. The flat cubic-vertex certificate
-eliminates the leading `Y,Y` center-wave cancellation in the dual
-zero-mode under its scaling, but neither result controls transverse/non-Y
-corrections or every Bloch stratum.
+`A4D-Y-CURVED-NORMAL-JET-RESPONSE-COMPATIBLE`.
 
-The first missing task-level step is a full phase-resolved nonlinear
-reduction with a refinement-uniform **relative** remainder and range
-control in the owner topology, or an explicit admissible joint-critical
-counterexample. In a vanishing-amplitude family `kappa_h`, a remainder
-merely `o(h^4)` need not be smaller than `kappa_h^2 h^4`; a projected lower
-bound must specify its projector, admissible correction class, and
-uniformity as `kappa_h -> 0`. Even if such a bound excludes all nonflat
-branches in that class, it does not by itself prove the task's negative
-terminal, whose definition requires a response-gap sequence. The full
-task also covers backgrounds and parameter regimes outside this Y-sheet
-calculation.
+The historical obstruction certificates remain useful regression data for
+their declared restricted ansatz, but they do not exclude the corrected
+phase-resolved compatible jet and they do not prove a nonlinear no-go.
+
+The remaining Y-sheet problem is therefore sharper.  Near each folded
+character the 95 transverse variables now have an explicit uniform
+Lyapunov-Schmidt inverse on the certified radius `7/1364`.  The first
+missing spectral step is the exact regular-complement theorem on the rest of
+`(S^1)^4`.  The first missing nonlinear step is to solve or obstruct the
+reduced center/compatibility equations for a genuinely curved sampled metric,
+with estimates uniform under refinement.  Only after those steps can the
+owner-topology `o(h^2)` response statement, or an admissible response-gap
+counterexample, be promoted to a task-level terminal.
 
 The exact [designated-germ normalization and tower audit](A4D_DESIGNATED_GERM_SCHUR_NORMALIZATION_AUDIT.md)
 contracts #273's independent Schur/Einstein symbol with the **same** normal
