@@ -87,7 +87,15 @@ ck("FOLDED_RANGE_MINOR_RANK95",M0.to_DM().rank()==95)
 Minv=M0.inv()
 n2=sp.factor(sum(x*x for x in Minv))
 ck("PINNED_INVERSE_FROBENIUS_NORM",n2==INV_FROB2)
-ck("INVERSE_OPERATOR_BOUND_31",n2<31**2)
+H=Minv.T*Minv
+ck("COLLATZ_WEIGHT_DIMENSION",len(COLLATZ_WEIGHTS)==95 and min(COLLATZ_WEIGHTS)>0)
+collatz=[
+    sp.factor(sum(abs(H[i,j])*COLLATZ_WEIGHTS[j] for j in range(95))
+              /COLLATZ_WEIGHTS[i])
+    for i in range(95)
+]
+ck("PINNED_COLLATZ_MAX",max(collatz)==COLLATZ_MAX)
+ck("INVERSE_OPERATOR_BOUND_20",COLLATZ_MAX<20**2)
 
 # For z^4=1, diagonal phase covariance is implemented by unitary diagonal
 # row/column factors. Therefore the selected minor has identical singular
@@ -100,14 +108,14 @@ for z in (sp.Integer(1),sp.I,sp.Integer(-1),-sp.I):
        Qz.extract(ROWS,cols)==Dr*M0*Dc)
 
 # If ||theta-theta_*||_1 <= r, then ||delta M||_2 <= (22/7) r.
-# At r=7/1364 this is <=1/62, hence ||M_*^-1 delta M||<31/62=1/2.
-radius=sp.Rational(7,1364)
+# At r=7/880 this is <=1/40, hence ||M_*^-1 delta M||<20/40=1/2.
+radius=sp.Rational(7,880)
 delta=sp.Rational(22,7)*radius
-ck("NEUMANN_DELTA_BOUND",delta==sp.Rational(1,62))
-ck("NEUMANN_PRODUCT_STRICT_HALF",sp.sqrt(INV_FROB2)*delta<sp.Rational(1,2))
+ck("NEUMANN_DELTA_BOUND",delta==sp.Rational(1,40))
+ck("NEUMANN_PRODUCT_STRICT_HALF",sp.sqrt(COLLATZ_MAX)*delta<sp.Rational(1,2))
 
 result={
- "schema":"a4d-y-curved-joint-folded-range-v2",
+ "schema":"a4d-y-curved-joint-folded-range-v3",
  "terminal":"A4D-Y-CURVED-JOINT-FOLDED-TRANSVERSE-RANGE-CERTIFIED",
  "z":"1",
  "operator_shape":[136,96],
@@ -125,12 +133,14 @@ result={
  },
  "minor_rank":95,
  "common_inverse_frobenius_norm_squared":str(INV_FROB2),
- "folded_inverse_operator_bound":"<31",
+ "folded_inverse_frobenius_bound":"<31",
+ "collatz_max_ratio":str(COLLATZ_MAX),
+ "folded_inverse_operator_bound":"<20",
  "global_joint_lipschitz_per_coordinate":"22/7",
  "angular_metric":"l1 in theta coordinates, lambda_j=exp(i theta_j)",
  "certified_neighbourhood_radius":str(radius),
- "perturbation_bound_at_radius":"1/62",
- "neighbourhood_inverse_operator_bound":"<62",
+ "perturbation_bound_at_radius":"1/40",
+ "neighbourhood_inverse_operator_bound":"<40",
  "lyapunov_schmidt_use":"the 95 selected equations solve uniquely for the 95 transverse connection coordinates; the remaining equations are reduced compatibility/center equations",
  "scope_fence":[
    "uniform over all four folded copies",
