@@ -68,16 +68,18 @@ def row_phase(row):
 
 # Zone-folded exponent m=(sum d+p_row-p_col)/4 is integral coefficientwise.
 Qm={-1:sp.zeros(136,96),0:sp.zeros(136,96),1:sp.zeros(136,96)}
+zone_fold_ok=True
+zone_degree_ok=True
 for d,Td in T.items():
     for (row,col),value in Td.todok().items():
         if not value: continue
         exponent=sum(d)+row_phase(row)-LABELS[col][0]
-        ck("ZONE_FOLD_MULTIPLE_OF_FOUR_"+str(d)+"_"+str(row)+"_"+str(col),
-           exponent%4==0)
+        zone_fold_ok = zone_fold_ok and exponent%4==0
         m=exponent//4
-        ck("ZONE_FOLD_DEGREE_AT_MOST_ONE_"+str(d)+"_"+str(row)+"_"+str(col),
-           m in (-1,0,1))
+        zone_degree_ok = zone_degree_ok and m in (-1,0,1)
         Qm[m][row,col]+=value
+ck("ZONE_FOLD_MULTIPLE_OF_FOUR_COEFFICIENTWISE",zone_fold_ok)
+ck("ZONE_FOLD_DEGREE_AT_MOST_ONE",zone_degree_ok)
 
 a=sp.symbols("a")
 P=Qm[-1][:96,:]+a*Qm[0][:96,:]+a**2*Qm[1][:96,:]
@@ -94,15 +96,23 @@ ck("RECIPROCAL_QUARTIC_PAIR",sp.expand(Frev-a**4*F.subs(a,1/a))==0)
 # real part is in [-2,2].
 ck("QUADRATIC_UNIT_CIRCLE_EXCLUDED",sp.Integer(258)>2)
 
-x=sp.symbols("x", real=True)
-# Imag(F(e^{i theta})/e^{2 i theta}) =
-# sin(theta)*(345072-87024*cos(theta)).
-ck("QUARTIC_IMAG_COEFFICIENT_POSITIVE_ON_UNIT_INTERVAL",
-   345072-87024>0 and 345072+87024>0)
-ck("QUARTIC_ENDPOINT_A_PLUS_ONE_NONZERO",sp.expand(F.subs(a,1))!=0)
-ck("QUARTIC_ENDPOINT_A_MINUS_ONE_NONZERO",sp.expand(F.subs(a,-1))!=0)
-# The reciprocal partner has the same unit-circle zero set.
-ck("RECIPROCAL_PARTNER_UNIT_CIRCLE_EXCLUDED",True)
+c,s=sp.symbols("c s", real=True)
+aa=c+sp.I*s
+# On c^2+s^2=1, F(a)/a^2 = F(a)*(conj a)^2.  Reduce the
+# imaginary part modulo s^2-(1-c^2).
+unit_im=sp.expand(F.subs(a,aa)*(c-sp.I*s)**2)
+unit_im=sp.expand(sp.im(unit_im))
+unit_im_reduced=sp.rem(
+    sp.Poly(unit_im,s),sp.Poly(s**2-(1-c**2),s)
+).as_expr()
+ck("QUARTIC_UNIT_IMAG_IDENTITY",
+   sp.factor(unit_im_reduced+336*s*(259*c-1027))==0)
+ck("QUARTIC_NONENDPOINT_UNIT_ROOT_EXCLUDED",sp.Integer(1027)>sp.Integer(259))
+ck("QUARTIC_ENDPOINT_A_PLUS_ONE",sp.expand(F.subs(a,1))==49152)
+ck("QUARTIC_ENDPOINT_A_MINUS_ONE",sp.expand(F.subs(a,-1))==1811472)
+# Frev=a^4 F(1/a), so on |a|=1 it has the conjugate zero set.
+ck("RECIPROCAL_PARTNER_UNIT_CIRCLE_EXCLUDED",
+   sp.expand(Frev-a**4*F.subs(a,1/a))==0)
 
 mu4=json.loads(MU4.read_text())
 ck("FOLDED_JOINT_KERNEL_OWNER",
