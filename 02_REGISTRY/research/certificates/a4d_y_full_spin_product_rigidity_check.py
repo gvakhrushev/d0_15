@@ -14,9 +14,10 @@ nonnegative multiplier times
     lap = 3 f0^2 - f1^2 - f2^2 - f3^2.
 For real parameters in the B-Cayley chart the multiplier vanishes only on
     d=0, a-b+c=4.
-On that entire exceptional plane the reciprocal four-phase completion
-[K,I,K^-1,I] has spatial-role rotation rows whose linear system has kernel
-span(1,1,1,1), hence f1=f2=f3=f0.
+On that entire exceptional plane the spatial-role transport is identical for
+both the reciprocal completion [K,I,K^-1,I] and the alternative phase-2
+ordering C_Y(1)^-1 C_R with the same spin factor.  In either convention the
+rotation-row linear system has kernel span(1,1,1,1), hence f1=f2=f3=f0.
 
 This is a necessary-row no-go for temporal spatial-spin rescue on the z=1
 product-plane seed. It does not exclude arbitrary transverse corrections on
@@ -209,6 +210,22 @@ def run(write=False):
     check("EXCEPTIONAL_KERNEL_IS_CONSTANT_PROFILE",
           len(ns)==1 and ns[0]==sp.Matrix([1,1,1,1]))
 
+    # Hostile phase-order control: keep the same spin factor on phase 2
+    # instead of inverting the full phase-0 link.  On the exceptional plane
+    # the nine spatial transport rows must remain exactly the same.
+    CRex=cayley_simple(Rex,r2ex,sp.Integer(1))
+    wave_alt=[Kex,I4,sp.simplify(linv(CY)*CRex),I4]
+    def link_alt(site,role):
+        if role!=0:
+            return I4
+        return wave_alt[sum(site)%4]
+    exceptional_alt=[]
+    for role in (1,2,3):
+        for j in (3,4,5):
+            exceptional_alt.append(edge_euler(solder_ex,link_alt,origin,role,GEN[j]))
+    check("EXCEPTIONAL_PHASE2_SPIN_ORDER_INDEPENDENT",
+          exceptional_alt==exceptional)
+
     result={
         "schema":"a4d-y-full-spin-product-rigidity-v1",
         "terminal":"A4D-Y-FULL-SPIN-PRODUCT-PLANE-RIGIDITY",
@@ -217,7 +234,8 @@ def run(write=False):
         "role0_boost_combination":"C1*E_K1+C2*E_K2+C3*E_K3 = -2*(3*d^2+4)/(3*d^2-4) * Mspin * (3*f0^2-f1^2-f2^2-f3^2)",
         "spin_multiplier":"Mspin=3*d^4*(a-b+c+3)^2+4*(a-b+c-4)^2",
         "real_multiplier_zero_locus":"d=0 and a-b+c=4",
-        "exceptional_plane_control":"with reciprocal four-phase completion [K,I,K^-1,I], the 9 spatial-role rotation rows are linear in (f0,f1,f2,f3), have rank 3, and kernel span(1,1,1,1)",
+        "exceptional_plane_control":"the 9 spatial-role rotation rows are linear in (f0,f1,f2,f3), have rank 3, and kernel span(1,1,1,1)",
+        "phase2_spin_convention_control":"the exceptional transport rows are identical for reciprocal [K,I,K^-1,I] and same-spin phase2 C_Y^-1 C_R conventions",
         "conclusion":"for every real d,a,b,c in the B-Cayley chart 3*d^2!=4, stationarity inside this temporal full-SO(3)-spin ansatz forces the product profile f to be spatially constant on a connected periodic carrier",
         "scope_fence":[
             "necessary-row no-go for general spatial-rotation Cayley correction on temporal curved edges at z=1",
