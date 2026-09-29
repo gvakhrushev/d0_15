@@ -200,6 +200,8 @@ def coeff_mod(terms,bounds,p):
     return out
 
 records=[]
+fiber_x1=[]
+fiber_y1=[]
 for ci,cols in enumerate(CHARTS):
     terms,bounds,bound=chart_terms(cols)
     ck("ASSIGNMENT_BOUNDS_"+str(ci),bounds==EXPECTED_ASSIGNMENT_BOUNDS[ci])
@@ -254,6 +256,19 @@ for ci,cols in enumerate(CHARTS):
     ledger=[[a+xmin,b+ymin,c] for a,b,c in nz]
     payload=";".join(f"{a},{b},{c}" for a,b,c in ledger)
     h=hashlib.sha256(payload.encode()).hexdigest()
+    # Exact coordinate-fiber specializations. Assignment-minimum monomials
+    # are units on the torus; strip any remaining coordinate monomial before gcd.
+    yy=sp.symbols("yy")
+    cy=[sum(int(exact[a,b]) for a in range(nx)) for b in range(ny)]
+    while len(cy)>1 and cy[0]==0: cy=cy[1:]
+    Py=sp.Poly(sum(sp.Integer(c)*yy**k for k,c in enumerate(cy)),yy,domain=sp.ZZ)
+    fiber_x1.append(Py.primitive()[1])
+    xx=sp.symbols("xx")
+    cx=[sum(int(exact[a,b]) for b in range(ny)) for a in range(nx)]
+    while len(cx)>1 and cx[0]==0: cx=cx[1:]
+    Px=sp.Poly(sum(sp.Integer(c)*xx**k for k,c in enumerate(cx)),xx,domain=sp.ZZ)
+    fiber_y1.append(Px.primitive()[1])
+
     records.append({
       "chart_index":ci,
       "assignment_bounds":[list(bounds[0]),list(bounds[1])],
@@ -266,6 +281,17 @@ for ci,cols in enumerate(CHARTS):
       "coefficient_ledger_sha256":h,
     })
 
+gx=fiber_x1[0]
+for P in fiber_x1[1:]: gx=sp.gcd(gx,P)
+gx=sp.Poly(gx.monic(),yy,domain=sp.QQ)
+ck("EXACT_X1_COMMON_GCD_Y_MINUS_1_CUBED",
+   gx==sp.Poly((yy-1)**3,yy,domain=sp.QQ))
+
+gy=fiber_y1[0]
+for P in fiber_y1[1:]: gy=sp.gcd(gy,P)
+gy=sp.Poly(gy.monic(),xx,domain=sp.QQ)
+print("EXACT_Y1_COMMON_GCD",sp.factor(gy.as_expr()),flush=True)
+
 result={
  "schema":"a4d-y-curved-joint-two-ratio-integer-minors-v1",
  "terminal":"A4D-Y-CURVED-JOINT-TWO-RATIO-INTEGER-MINORS-CERTIFIED",
@@ -274,6 +300,10 @@ result={
  "integer_clear":"multiply every selected matrix entry by 14*x*y",
  "charts":[list(c) for c in CHARTS],
  "records":records,
+ "exact_coordinate_fibers":{
+   "x_equals_1_common_gcd":str(sp.factor(gx.as_expr())),
+   "y_equals_1_common_gcd":str(sp.factor(gy.as_expr()))
+ },
  "scope_fence":[
    "owns four exact characteristic-zero determinant polynomials in Z[x,y]",
    "does not yet prove their characteristic-zero common zero-set",
