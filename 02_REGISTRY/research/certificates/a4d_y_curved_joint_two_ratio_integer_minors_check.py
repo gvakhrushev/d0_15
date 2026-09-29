@@ -529,11 +529,11 @@ result={
    "no nonlinear response terminal"
  ]
 }
+print("RESULT_RECORDS",json.dumps(records,sort_keys=True),flush=True)
+print("CHARZERO_SELECTION",json.dumps(result["characteristic_zero_elimination"],sort_keys=True),flush=True)
 if "--write" in __import__("sys").argv:
     OUT.write_text(json.dumps(result,indent=2)+"\n")
     print("WROTE",OUT)
 elif OUT.exists():
     ck("RESULTS_MATCH_PINNED_JSON",json.loads(OUT.read_text())==result)
-print("RESULT_RECORDS",json.dumps(records,sort_keys=True),flush=True)
-print("CHARZERO_SELECTION",json.dumps(result["characteristic_zero_elimination"],sort_keys=True),flush=True)
 print("TERMINAL A4D-Y-CURVED-JOINT-TWO-RATIO-CHARZERO-LOCUS-CERTIFIED")
