@@ -708,3 +708,47 @@ settle that genuinely curved reduced equation.
 
 Keep #310 Draft / IN_PROGRESS.  Neither task-level terminal is promoted by
 this local range theorem.
+
+
+### Exact three-prime modular elimination on the representative two-ratio plane
+
+The zone-folding reduction has now been pushed beyond one-ratio slices.  On
+
+`rho0=1, rho1=x, rho2=y, rho3=1`
+
+the owner
+`a4d_y_curved_joint_two_ratio_modular_check.py` uses the 68 interior
+(connection+metric) rows in fast phases 1 and 2 and four fixed 68-column
+charts.  After multiplying each selected entry by `14*x*y`, every matrix
+entry has bidegree at most two.  Integer assignment bounds certify finite DFT
+windows for each determinant before any interpolation is performed.
+
+For each of the three independent good primes
+
+`664448401, 996672601, 1328896801`
+
+the four bivariate determinants are reconstructed exactly over `F_p`.
+Pairwise Sylvester elimination in `y` gives resultants of degrees
+`2576` and `2742`.  Their exact polynomial gcd is
+
+`x^229 * (x-1)^11`.
+
+The factor `x^229` is a Laurent-clearing unit on the algebraic torus.
+At `x=1`, the exact gcd of all four determinant restrictions in `y` is
+
+`(y-1)^3`.
+
+Hence for every pinned prime, on `(Fbar_p^*)^2` the common zero-set of
+these four interior minors is exactly `(x,y)=(1,1)`.  This agrees with the
+owned first-slow projective isolation and the exact one-ratio slices, but is
+strictly stronger than either finite torsion sampling or a local Taylor
+statement.
+
+The scope fence is important: agreement at three good primes is an exact
+finite-field terminal, not yet a characteristic-zero elimination theorem.
+The next algebraic gate is to lift this two-ratio resultant/gcd statement to
+`Q` (for example by a degree/leading-coefficient preservation plus modular
+coprimeness argument, or by a bounded CRT reconstruction of the needed
+univariate resultant cofactors).  Only after that should the genuinely
+three-ratio interior locus be attacked.  No all-Bloch or task-level response
+terminal is promoted here.
