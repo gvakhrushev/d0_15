@@ -28,7 +28,7 @@
       ],
       "removed_x_power": 44,
       "primitive_degree": 94,
-      "primitive_content": "3947857960044022850215486828208966434344381452360534196224",
+      "primitive_content": "-3947857960044022850215486828208966434344381452360534196224",
       "primitive_coefficients_sha256": "d228958874852c417272330645de261b1acd97d1e462a45c9b3a32a32f239f77",
       "folded_root_multiplicity": 1
     }
