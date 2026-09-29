@@ -195,6 +195,17 @@ of the retuning, giving
 `(351402359/2108160, 21506403637/154949760) * mean(kappa^2) = (0,0)`.
 The positive coefficients force `kappa == 0` for any branch satisfying those
 regularity hypotheses.
+The replay checker verifies the pinned local coefficients, the normal-metric
+jet, and the periodic shift identity; the global identification of all
+order-`h^4` transport terms with shift differences is the analytic step in
+this memo, not a separate full finite-lattice Euler assembly in the JSON.
+Here `kappa` is the fixed, h-independent curvature profile of the sampled
+background. If the background itself is a family `kappa_h` with an
+integer-power expansion, the order-`h^4` mean equation constrains its
+leading curvature coefficient only. For example, `kappa_h=h*kappa_1` is not
+excluded at order `h^4` by this identity. The exact-zero conclusion must
+not be applied to every h-dependent background merely because its expansion
+uses integer powers.
 
 This closes the periodic-mean route for regular integer-power branches on the
 `z=1` Y sheet. It is not an exact finite-lattice continuation theorem: a
@@ -286,3 +297,40 @@ Keep PR #310 Draft and the task `IN_PROGRESS` until the nonlinear continuation a
 
 - Positive: `A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED`.
 - Negative: `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO`.
+
+### Consolidated terminal logic for the surviving Y sheet
+
+The degree-two witness is `-22209*kappa^2` for every nonzero curvature
+amplitude at `z=1`. It excludes an **exactly phase-common order-`h^4`
+metric readout in the specified formal normal jet**, not all exact
+joint-critical branches under every source convention. For bounded
+curvature its certified phase defect is `O(h^4)`, subleading after the
+task's `h^-2` normalization, subject to an uncontrolled remainder. The
+positive periodic mean identity excludes a uniformly regular joint branch
+on a fixed nonflat product background with the stated global framing and
+expansion. Neither statement supplies the exact joint-critical sequence
+with a nonzero normalized response gap required by the task's negative
+terminal.
+
+The rational-in-`z` augmented-minor argument above **already proves** the
+formal obstruction for generic regular `z`, outside a finite algebraic
+exceptional set, and in a neighborhood of `1`. Computing its numerator
+would locate the exceptions; it is not a prerequisite for the generic
+claim. The exact pure-Y transport theorem additionally excludes all real
+spatially varying amplitudes inside its pure-Y ansatz without any sign or
+refinement-regularity assumption. The flat cubic-vertex certificate
+eliminates the leading `Y,Y` center-wave cancellation in the dual
+zero-mode under its scaling, but neither result controls transverse/non-Y
+corrections or every Bloch stratum.
+
+The first missing task-level step is a full phase-resolved nonlinear
+reduction with a refinement-uniform **relative** remainder and range
+control in the owner topology, or an explicit admissible joint-critical
+counterexample. In a vanishing-amplitude family `kappa_h`, a remainder
+merely `o(h^4)` need not be smaller than `kappa_h^2 h^4`; a projected lower
+bound must specify its projector, admissible correction class, and
+uniformity as `kappa_h -> 0`. Even if such a bound excludes all nonflat
+branches in that class, it does not by itself prove the task's negative
+terminal, whose definition requires a response-gap sequence. The full
+task also covers backgrounds and parameter regimes outside this Y-sheet
+calculation.
