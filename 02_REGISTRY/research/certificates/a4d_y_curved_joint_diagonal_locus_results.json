@@ -1,0 +1,34 @@
+{
+  "schema": "a4d-y-curved-joint-diagonal-locus-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-DIAGONAL-BLOCH-LOCUS-CERTIFIED",
+  "background": "z=1 exact Y vacuum; standard solder",
+  "diagonal_bloch": "lambda0=lambda1=lambda2=lambda3=zeta",
+  "determinant_zero_polynomial_up_to_nonzero_rational_unit": "R(zeta^4)^2",
+  "R_monic_degree12": [
+    "1",
+    "-1882182356/6799975",
+    "237616643554/47599825",
+    "-12444399281988/333198775",
+    "13785586047815/93295657",
+    "-765415626241816/2332391425",
+    "141967660183684/333198775",
+    "-765415626241816/2332391425",
+    "13785586047815/93295657",
+    "-12444399281988/333198775",
+    "237616643554/47599825",
+    "-1882182356/6799975",
+    "1"
+  ],
+  "R_factorization": "(y - 1)^2*(y^2 - 258*y + 1)*(31213*y^4 - 268044*y^3 + 824374*y^2 - 613116*y + 74725)*(74725*y^4 - 613116*y^3 + 824374*y^2 - 268044*y + 31213)/2332391425",
+  "palindromic_reduction": "(x - 258)*(x - 2)*(2332391425*x^4 - 39166777608*x^3 + 242345032216*x^2 - 663086611488*x + 635224971280)/2332391425",
+  "unit_circle_sturm_count": 1,
+  "unit_circle_root": "y=1",
+  "diagonal_unit_torus_conclusion": "det A(zeta,zeta,zeta,zeta)=0 iff zeta^4=1",
+  "reconstruction_primes": [1000193,1301249,1700353,2200321,2901761,3801857],
+  "independent_verification_prime": 4700161,
+  "scope_fence": [
+    "exact diagonal Bloch line only",
+    "does not prove transverse-to-diagonal joint injectivity",
+    "does not prove the global all-Bloch locus or nonlinear range theorem"
+  ]
+}
