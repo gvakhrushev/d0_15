@@ -102,8 +102,15 @@ The same calculation gives a different, joint conclusion: after eliminating
 the connection range and allowing all 20 degree-three center coefficients,
 the `xi3^2` phase-common metric witness pairs to `-22209`. The symbolic
 family replay proves this pairing is independent of the same constant
-retuning `s`. Thus this normal jet cannot have exactly phase-common metric
-readout at order `delta^2`, even though its connection equations solve.
+retuning `s`. Since this is an exact identity in `s`, it covers any bounded
+sequence `s_h`, including nonconvergent and nonanalytic dependence on
+refinement: the tracked order-`delta^2` source is unchanged at each `h`.
+Constant center drift on this scale therefore cannot cancel the obstruction.
+This does not cover unbounded retunings, whose higher powers may change the
+asymptotic ordering, spatially varying center fields, nonzero Bloch modes, or
+the global finite-lattice branch. Thus this normal jet cannot have exactly
+phase-common metric readout at order `delta^2`, even though its connection
+equations solve.
 For the connection-solved local profile, the phase-difference coefficient
 has the exact cell bound `11000*delta^2`; for bounded `kappa` this is
 `O(h^4)`, or `O(h^2)` after the task normalization. It is therefore a

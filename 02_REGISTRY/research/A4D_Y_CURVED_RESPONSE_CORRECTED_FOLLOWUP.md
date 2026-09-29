@@ -126,6 +126,15 @@ three range equations. Thus this local defect cannot be tuned away by that
 one center parameter. Spatially varying higher center jets and the global
 finite-lattice branch remain open.
 
+The replay is an exact identity in the indeterminate `s`, so it also covers a
+bounded, nonconvergent or nonanalytic sequence of constant retunings
+`s=s_h`: at every refinement the tracked order-`delta^2` coefficient remains
+exactly the same. Such a scalar drift cannot cancel the curvature source by
+choosing a special subsequence or fractional-power dependence on `h`. This
+does not extend to unbounded `s_h` (where higher powers can reorder the
+expansion), spatially varying center fields, or nonzero Bloch modes; those
+remain the singular branch gate.
+
 ### Amplitude and parameter consequences of the degree-two witness
 
 The phase-common degree-two obstruction is homogeneous in the curvature
