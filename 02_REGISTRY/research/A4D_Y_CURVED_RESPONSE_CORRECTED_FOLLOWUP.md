@@ -208,7 +208,12 @@ not an exact finite-lattice continuation theorem. In particular, the global
 uniform response gate remains open until those singular branches are
 controlled or constructed.
 
-Derive and control the nonlinear **joint constrained** equations, rather than two free connection-center wave equations, then continue the surviving curved normal jet `J` to an exact stationary branch
+The regular periodic branch is excluded under the stated integer-power and
+uniformity hypotheses. The remaining continuation problem is therefore the
+singular/nonanalytic or nonuniform refinement-dependent class. Derive and
+control the nonlinear **joint constrained** equations, rather than two free
+connection-center wave equations, then either continue the surviving curved
+normal jet `J` to an exact stationary branch
 
 `K_h(J) = K_Y + a_h(J)`
 
@@ -222,7 +227,7 @@ The branch must then satisfy the owner-topology estimate
 
 uniformly under refinement. Control near-resonant complements, the allowed stationary-center amplitudes, conjugate Bloch-sector interactions, and the declared compact set of smooth background parameters.
 
-If continuation fails, return the first exact reduced center or cokernel equation that fails, its rational/polynomial obstruction, the surviving nonlinear curvature variety, and whether the obstruction forces the Y amplitude to shrink with `h`. A finite normal-jet compatibility result is not itself a nonlinear failure.
+For the regular class, the exact mean equation and its nonzero `mean(kappa^2)` coefficient are now the first reduced obstruction. For the remaining singular class, return the first exact reduced center or cokernel equation that fails, its rational/polynomial obstruction, the surviving nonlinear curvature variety, and whether the obstruction forces the Y amplitude to shrink with `h`. A finite normal-jet compatibility result alone is not a nonlinear failure.
 
 ## Selector and terminal rules
 

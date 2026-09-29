@@ -214,7 +214,7 @@ The following boundaries remain:
 
 ## Remaining global gate
 
-First certify the variable-curvature derivative-jet reduction behind the periodic mean test. If it passes, the regular `z=1` branch is cut; the remaining gate is to control or construct nonanalytic h-dependent center/transverse branches under the fixed source convention, with the phase-resolved metric equations retained. The first-slow metric constraints must remain imposed; the two connection-only hyperbolic symbols are not free joint envelopes. Only after this global branch-or-obstruction gate can one prove the refinement-uniform estimate
+The variable-curvature derivative-jet reduction and the regular periodic-mean obstruction are now certified. The regular integer-power `z=1` branch is excluded for nonflat periodic product curvature under the stated uniform `C^4`/`O(h^5)` hypotheses. The remaining gate is to control or construct nonanalytic or nonuniform h-dependent center/transverse branches under the fixed source convention, with the phase-resolved metric equations retained. The first-slow metric constraints must remain imposed; the two connection-only hyperbolic symbols are not free joint envelopes. Only after this singular branch-or-obstruction gate can one prove the refinement-uniform estimate
 
 `|E_Q(Q_h,K_h) - E_Q(Q_h,K_h^sm)| = o(h^2)`
 
