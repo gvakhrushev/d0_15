@@ -429,3 +429,13 @@ branches in that class, it does not by itself prove the task's negative
 terminal, whose definition requires a response-gap sequence. The full
 task also covers backgrounds and parameter regimes outside this Y-sheet
 calculation.
+
+The exact [designated-germ normalization and tower audit](A4D_DESIGNATED_GERM_SCHUR_NORMALIZATION_AUDIT.md)
+contracts #273's independent Schur/Einstein symbol with the **same** normal
+Hessian as this task's pinned #310 response. On that input the response is
+`K_G[J]/2 = -K_Schur[J]`, so an unqualified equation
+`E_Q=G=-2*K_Schur` is not the owner normalization. The audit also identifies
+why the regular periodic mean certificate cannot be promoted to an exact
+every-period tower identity by zero-padding means or invoking M1, and why
+the #216 coupled normal rescue is not supplied by #275's macroscopically
+flat exact Y lift. Neither task-level terminal is changed.
