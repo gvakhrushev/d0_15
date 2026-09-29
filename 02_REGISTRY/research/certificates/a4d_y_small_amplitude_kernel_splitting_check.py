@@ -22,6 +22,34 @@ def check(n,c):
 
 def mj(M): return [[str(sp.factor(M[i,j])) for j in range(M.cols)] for i in range(M.rows)]
 
+def symmetric_inertia(M):
+    """Exact congruence inertia over QQ, with 1x1 and 2x2 pivots."""
+    if M.rows == 0:
+        return (0, 0, 0)
+    diagonal = next((i for i in range(M.rows) if M[i, i] != 0), None)
+    if diagonal is not None:
+        if diagonal:
+            permutation = [diagonal] + [i for i in range(M.rows) if i != diagonal]
+            M = M.permute_rows(permutation).permute_cols(permutation)
+        pivot = M[0, 0]
+        column = M[1:, 0]
+        reduced = (M[1:, 1:] - column * column.T / pivot).applyfunc(sp.cancel)
+        pos, neg, zero = symmetric_inertia(reduced)
+        return (pos + int(bool(pivot.is_positive)),
+                neg + int(bool(pivot.is_negative)), zero)
+    off_diagonal = next(((i, j) for i in range(M.rows)
+                         for j in range(i + 1, M.cols) if M[i, j] != 0), None)
+    if off_diagonal is None:
+        return (0, 0, M.rows)
+    i, j = off_diagonal
+    permutation = [i, j] + [k for k in range(M.rows) if k not in (i, j)]
+    M = M.permute_rows(permutation).permute_cols(permutation)
+    pivot = M[:2, :2]
+    coupling = M[:2, 2:]
+    reduced = (M[2:, 2:] - coupling.T * pivot.inv() * coupling).applyfunc(sp.cancel)
+    pos, neg, zero = symmetric_inertia(reduced)
+    return (pos + 1, neg + 1, zero)
+
 def run(write=False):
     Hz,labels,_=B.action_connection_hessian(z)
     Pk=[sp.zeros(96) for _ in range(5)]
@@ -72,6 +100,9 @@ def run(write=False):
         Ks.append(K.applyfunc(sp.factor))
     ranks=[K.rank() for K in Ks]
     check("FIRST_SCHUR_RANKS",ranks==[0,0,12,12,14,14,14])
+    check("K2_SYMMETRIC",Ks[2]==Ks[2].T)
+    K2_inertia=symmetric_inertia(Ks[2])
+    check("K2_EXACT_INERTIA",K2_inertia==(4,8,4))
 
     V=sp.Matrix.hstack(*Ks[2].nullspace())
     check("K2_KERNEL_DIM4",V.cols==4)
@@ -119,6 +150,7 @@ def run(write=False):
       "hessian_rational_form":{"common_denominator":"4+3*z^2","common_numerator_degree_at_most":4},
       "flat_kernel_dimension":16,
       "effective_series_ranks":{f"K{i}":ranks[i] for i in range(7)},
+      "K2_inertia":{"positive":K2_inertia[0],"negative":K2_inertia[1],"zero":K2_inertia[2]},
       "after_K2_kernel_dimension":4,
       "proper_degenerate_reduction":{"E4":mj(Es[0]),"E5":mj(Es[1]),"E6":mj(Es[2]),"E6_rank":2,"final_kernel_dimension":2},
       "final_kernel_contains":["Y tangent","boost-dual tangent"],

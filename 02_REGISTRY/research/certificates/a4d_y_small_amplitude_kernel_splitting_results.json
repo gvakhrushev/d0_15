@@ -15,6 +15,7 @@
     "K5": 14,
     "K6": 14
   },
+  "K2_inertia": {"positive": 4, "negative": 8, "zero": 4},
   "after_K2_kernel_dimension": 4,
   "proper_degenerate_reduction": {
     "E4": [["0","0","0","0"],["0","0","0","0"],["0","0","0","0"],["0","0","0","0"]],
