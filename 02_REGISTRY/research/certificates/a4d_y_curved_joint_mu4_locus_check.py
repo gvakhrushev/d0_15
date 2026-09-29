@@ -69,7 +69,8 @@ for phase,a,b,locs,local,Hloc,factors in FACES:
 def modq(x):
     x=sp.Rational(x)
     den=int(x.q)
-    ck("DENOMINATOR_NONZERO_MOD_P",den%P!=0)
+    if den%P==0:
+        raise AssertionError("DENOMINATOR_ZERO_MOD_P")
     return (int(x.p)%P)*pow(den,-1,P)%P
 
 # Convert each rational Laurent coefficient matrix once.
@@ -77,10 +78,11 @@ MODTERMS={}
 for d in set(ATERMS)|set(QTERMS):
     M=ATERMS.get(d,sp.zeros(96)).col_join(QTERMS.get(d,sp.zeros(40,96)))
     A=np.zeros((136,96),dtype=np.int64)
-    for i,j in zip(*M.todok().keys()) if False else []:
-        pass
-    for (i,j),x in M.todok().items():
-        A[i,j]=modq(x)
+    for i in range(M.rows):
+        for j in range(M.cols):
+            x=M[i,j]
+            if x:
+                A[i,j]=modq(x)
     MODTERMS[d]=A
 
 def rank_mod(lam):
