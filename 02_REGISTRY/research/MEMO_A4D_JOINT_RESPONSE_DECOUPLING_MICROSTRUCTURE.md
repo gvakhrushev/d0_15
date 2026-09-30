@@ -6,6 +6,14 @@
 >
 > The corrected four-direction, 20-curvature normal-jet certificate now passes exactly. Full joint compatibility leaves one curved spatial direction, and imposing only fast-phase erasure makes its common metric response equal the independently constructed flat Einstein response. This is a finite normal-jet theorem, not a nonlinear or refinement-uniform theorem.
 
+> A designated-sheet recentering audit now separates the proved IR inverse
+> from a false full spectral-gap premise. The literal flat quarter symbol
+> has rank 16 and a physical Y vector in both connection and metric kernels.
+> A localized normal-chart packet excludes an h-uniform full inverse even
+> about a smooth curved comparison connection. Numerical L=8,12 Hessians
+> on one fixed curved metric are included as controls, not joint witnesses.
+> See [designated full-gap obstruction](A4D_DESIGNATED_FULL_GAP_OBSTRUCTION.md).
+
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 Execution: PR #310
 Lifecycle: `IN_PROGRESS`; PR remains Draft
