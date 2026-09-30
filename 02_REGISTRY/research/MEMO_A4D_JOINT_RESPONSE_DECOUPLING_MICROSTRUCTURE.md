@@ -33,6 +33,18 @@ pure-Y interaction. It does not prove curved reduced-center solvability or
 the required transverse size, and the actual owner sum-norm scaling must
 still be discharged.
 
+The [folded center-gradient module theorem](A4D_Y_CURVED_JOINT_CENTER_GRADIENT_MODULE.md)
+recovers the 94 physical complement coordinates and the actual six center
+graph differences by analytic combinations of the full joint rows near
+every folded character. The local holomorphic module is 95 invertible
+coordinates plus the four-character maximal ideal. If the joint symbol
+has no other physical torus zeros, these identities glue to a smooth
+multiplier with absolutely summable Fourier coefficients. This would
+supply the unweighted owner sum-norm estimate and flat local nonlinear
+joint rigidity modulo constant Y amplitudes, uniformly in L. The local
+identity is proved; the all-torus rank premise and curved continuation
+are not. Four short Laurent inverse templates are excluded over Q.
+
 ## Subsequence response law for small link-log deviations
 
 There is a useful conditional homogenized statement before the global
@@ -866,3 +878,35 @@ The first continuation obligation remains a refinement-uniform estimate for
 the genuinely curved range and reduced compatibility equations. The full
 Bloch compact complement remains open, and neither physical task terminal
 is promoted. Keep #310 Draft / IN_PROGRESS.
+
+## Current frontier: local joint module and the sum-norm bridge
+
+The center-gradient module owner proves a local analytic normal form for
+the entire joint symbol: 95 invertible coordinates plus the four-character
+maximal ideal. It divides the physical target containing all 94 complement
+coordinates and all 12 phase-resolved graph rows by the full joint symbol.
+The target has complex rank 96 except at the four folded characters, where
+it has rank 95 and the same Y kernel.
+
+Under the open all-torus rank premise, gluing the divisions gives a smooth
+multiplier with an absolutely summable Fourier kernel. Periodization
+proves a component-sum l^p estimate for the complement and center gradient,
+including the unweighted owner sum norm at p=1, independently of L. The
+derivative remainder then yields flat local joint rigidity modulo constant
+Y amplitudes in a fixed chart. These global and nonlinear conclusions are
+conditional; the torus premise is not verified.
+
+The exact checker excludes inverse supports of 9 and 21 monomials and the
+full l1 shift balls of radii two and three. The last exclusion uses only
+the phase-0 sector; no rank for its other sectors is asserted. Full modular
+column rank and maximal augmented rank prove the exclusions over Q.
+They do not refute a longer inverse or an analytic physical estimate.
+
+The checks and repository guards passed locally before the execution
+environment disconnected during publication. The recovered source and
+compact ledger require independent replay by CI at the published head.
+First remaining linear premise: full joint rank on the physical compact
+complement of the four folded points. Curved reduced compatibility and
+the actual owner sum-norm response remain the subsequent obligation.
+No physical terminal, selector, action modification, or claim promotion.
+Keep PR #310 Draft and IN_PROGRESS.
