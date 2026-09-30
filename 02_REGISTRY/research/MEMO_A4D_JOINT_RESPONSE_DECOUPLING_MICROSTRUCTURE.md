@@ -976,3 +976,14 @@ first-prime gcd. Therefore the full joint symbol has rank 96 for every
 defect is globally rescued on this line. This does not settle three
 independent ratios or the full physical torus; the nonlinear curved
 response and owner sum-norm estimate remain open.
+
+The exact line theorem plus the owned folded analytic module also yields
+an unconditional refinement-uniform `l^p` inverse on the physical
+fourfold spatial-diagonal symmetry sector, including the unweighted
+owner sum norm. `A4D_Y_SPATIAL_DIAGONAL_UNIFORM_SECTOR.md` proves this
+by smooth one-circle division and absolutely summable Fourier kernels.
+The same estimate and the owned nonlinear remainder give flat local
+joint rigidity in that sector modulo the constant nongauge Y amplitude,
+with a chart radius independent of `L`. Smooth nonconstant metrics break
+the sector symmetry; neither H_TORUS nor the curved response terminal is
+deduced from this restricted theorem.
