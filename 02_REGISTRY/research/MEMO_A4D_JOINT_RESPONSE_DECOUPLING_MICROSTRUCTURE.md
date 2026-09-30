@@ -23,6 +23,16 @@ for exact joint-critical sequences, with the #216 smooth branch evaluated on the
 
 The exact #232 period-four Y family is a curved nongauge joint vacuum at the flat metric. It rules out a universal claim that every zero-residual connection lies in one smooth/LC-like fiber. The response question is whether its stationary center can remain compatible with a genuinely curved metric background.
 
+The [quantitative pure-Y transport theorem](A4D_Y_PURE_CENTER_QUANTITATIVE_TRANSPORT.md)
+now derives a nonlinear gradient estimate directly from two literal boost
+Euler rows on each graph edge. It also reconstructs all 136 joint Euler rows
+as fixed difference operators on two Cayley scalar functions and proves
+`||R_Y(c)||_(p,comp) <= 1152 ||c||_infinity ||D_G c||_p`, with no lattice-size
+constant. This refines the norm-only quadratic scaling objection for the
+pure-Y interaction. It does not prove curved reduced-center solvability or
+the required transverse size, and the actual owner sum-norm scaling must
+still be discharged.
+
 ## Subsequence response law for small link-log deviations
 
 There is a useful conditional homogenized statement before the global
@@ -812,3 +822,47 @@ the four folded points. This closes the nonfolded common-phase boundary
 question on that line only. Genuinely three-ratio characters, the compact
 regular complement, nonlinear center equations and response remainder
 remain open.
+
+### Quantitative nonlinear Y transport and the center remainder
+
+The new owner
+`a4d_y_pure_center_quantitative_transport_check.py` establishes the exact
+all-row identity
+
+`E_Y(a)=T_u u(a)+T_v v(a)`, `T_u 1=T_v 1=0`,
+
+where `u(a)=4a/(4+3a^2)` and `v(a)=2a^2/(4+3a^2)`. The rational ledgers
+have 84 and 108 nonzero coefficients, with total absolute sums 42 and 72.
+All 136 derivative components agree coefficientwise with the existing
+Bloch owner. An independent nonconstant rational field reproduces every
+component using literal inverse-plaquette and unrestricted solder variation.
+
+On each of the six even-carrier graph moves, two boost rows satisfy
+`du^2+3dv^2=16(a-b)^2/[(4+3a^2)(4+3b^2)]` and control this chord by six
+times their squared Euclidean norm. Hence for `|a|,|b|<=3/2`,
+
+`|a-b| <= 7 sqrt(e_P^2+e_S^2)`.
+
+On a periodic `L in 4N` carrier this yields
+`osc(a) <= 28 L max_selected_pair sqrt(e_P^2+e_S^2)`. Thus a pure-Y
+sitewise connection residual O(h^2), h=1/L, forces amplitude oscillation
+O(h), without first imposing a smooth envelope.
+
+The exact coefficient sums give the nonlinear derivative cancellation:
+
+`||E_Y(z0+c)-D E_Y(z0)c||_(p,comp) <= 1152 ||c||_infinity ||D_G c||_p`.
+
+For the metric rows the constant is 81. The statement holds in physical
+space for `1<=p<=infinity`, with or without constant site weights, on the
+fixed compact amplitude chart. If the actual gradient norm is O(h^2) and
+the amplitude is O(h), this remainder is O(h^3). A pointwise scaling cannot
+be substituted for the unweighted owner sum-norm hypothesis. The accompanying
+memo also gives the analytic mixed bound with arbitrary small connection
+corrections, but does not prove that those corrections are O(h^2) on curved
+sampled metrics.
+
+Finite terminal: `A4D-Y-PURE-CENTER-QUANTITATIVE-TRANSPORT-CERTIFIED`.
+The first continuation obligation remains a refinement-uniform estimate for
+the genuinely curved range and reduced compatibility equations. The full
+Bloch compact complement remains open, and neither physical task terminal
+is promoted. Keep #310 Draft / IN_PROGRESS.
