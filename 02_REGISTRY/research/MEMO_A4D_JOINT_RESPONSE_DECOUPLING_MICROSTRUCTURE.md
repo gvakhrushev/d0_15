@@ -752,3 +752,37 @@ coprimeness argument, or by a bounded CRT reconstruction of the needed
 univariate resultant cofactors).  Only after that should the genuinely
 three-ratio interior locus be attacked.  No all-Bloch or task-level response
 terminal is promoted here.
+
+### Characteristic-zero two-ratio lift: exact structural divisor and reduction
+
+The characteristic-zero gate in the preceding modular section is now closed
+for that same representative plane. The integer-minors owner reconstructs
+and saves all four exact coefficient ledgers, using 15 CRT primes per chart
+and an independent prime replay. The new owner
+`a4d_y_curved_joint_two_ratio_charzero_check.py` proves
+
+`gcd_Q[x](R_01,R_23) = x^229*(x-1)^11`.
+
+This is a reduction-lemma proof, not an inference from three matching primes.
+Exact assignment duals give x=0 orders at least 229 and 259. Rational local
+Sylvester Schur complements at x=1 have pivot orders `(1,2,3,5)` and
+`(3,5,7)`, so both resultants have the required exact common divisor.
+An infinity assignment normalization, constant rank 71, and zero first
+null-vector pairing prove `deg R_01 <= 2576`; the nonzero modular degree
+2576 then certifies degree preservation. The modular gcd at just one prime
+now bounds the primitive characteristic-zero gcd degree by 240, equal to
+the already proved structural divisor degree.
+
+The exact x=1 fiber gcd is `(y-1)^3`, and the independent y=1 fiber gcd is
+`(x-1)^3`. Consequently the four-minor common zero-set on `(C*)^2` is
+exactly `(1,1)`. The literal interior operator has rank 65 at that point
+and full row rank 68 elsewhere on this plane.
+
+The detailed proof is in
+`A4D_Y_CURVED_JOINT_TWO_RATIO_CHARACTERISTIC_ZERO.md`; the exact ledger and
+lift results are pinned in their certificate JSONs. The new terminal is
+`A4D-Y-CURVED-JOINT-TWO-RATIO-CHARACTERISTIC-ZERO-ELIMINATION-CERTIFIED`.
+The genuine three-ratio interior locus, remaining boundary equations, and
+the quantitative all-Bloch gap remain open. Nonlinear reduced-center
+solvability and the normalized owner-topology response estimate are also
+open. Keep #310 Draft / IN_PROGRESS.

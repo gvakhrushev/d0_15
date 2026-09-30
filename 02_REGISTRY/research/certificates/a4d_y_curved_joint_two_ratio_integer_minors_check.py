@@ -17,8 +17,11 @@ For each chart:
 * center the CRT lift, trim exact zero borders, and verify the pinned support;
 * replay the exact integer polynomial at an independent good prime.
 
-No floating arithmetic enters.  This certificate owns the exact four
-characteristic-zero minors, but does not itself prove their common zero-set.
+No floating arithmetic enters. This owner reconstructs the exact four minors
+and supplies them directly to the companion charzero checker, which proves
+the common zero-set and the original R_01/R_23 gcd. Assignment-only degree
+preservation for all six pair-resultants is retained as a diagnostic; it
+does not provide two usable pairs on this input.
 """
 from __future__ import annotations
 from fractions import Fraction as F
@@ -30,6 +33,12 @@ from pathlib import Path
 import numpy as np
 import sympy as sp
 import a4d_y_curved_joint_rational_stencil as S
+
+try:
+    from flint import nmod_mat, nmod_mpoly_ctx
+except ImportError:
+    nmod_mat = None
+    nmod_mpoly_ctx = None
 
 HERE=Path(__file__).resolve().parent
 OUT=HERE/"a4d_y_curved_joint_two_ratio_integer_minors_results.json"
@@ -132,6 +141,11 @@ def chart_terms(cols):
     return terms,tuple(bounds),coeff_bound
 
 def detmod(A,p):
+    # Optional exact C backend; the NumPy path remains the dependency-free
+    # fallback beyond this owner's existing NumPy/SymPy requirements.
+    if nmod_mat is not None:
+        n = A.shape[0]
+        return int(nmod_mat(n, n, A.reshape(-1).tolist(), p).det())
     A=np.remainder(A,p).astype(np.int64,copy=True)
     det=1; n=A.shape[0]
     for c in range(n):
@@ -275,12 +289,15 @@ for ci,cols in enumerate(CHARTS):
       "chart_index":ci,
       "assignment_bounds":[list(bounds[0]),list(bounds[1])],
       "coefficient_bound_digits":len(str(bound)),
+      "coefficient_bound":str(bound),
       "crt_prime_count":len(primes),
       "crt_primes":primes,
       "crt_modulus_digits":len(str(modulus)),
+      "crt_modulus":str(modulus),
       "verification_prime":vp,
       "exact_support":[amin+xmin,amax+xmin,bmin+ymin,bmax+ymin,len(nz)],
       "coefficient_ledger_sha256":h,
+      "coefficient_ledger":ledger,
     })
 
 gx=fiber_x1[0]
@@ -335,19 +352,7 @@ def sylvester_x_bounds(A,B):
     return assignment_cost(lo),-assignment_cost(hi)
 
 def detmod_square(A,p):
-    A=np.remainder(A,p).astype(np.int64,copy=True); n=A.shape[0]; det=1
-    for c in range(n):
-        nz=np.flatnonzero(A[c:,c])
-        if not len(nz): return 0
-        r=c+int(nz[0])
-        if r!=c:
-            A[[c,r]]=A[[r,c]]; det=(-det)%p
-        pv=int(A[c,c]); det=det*pv%p; inv=pow(pv,p-2,p)
-        ids=np.arange(c+1,n); ids=ids[A[ids,c]!=0]
-        if len(ids):
-            fac=(A[ids,c].copy()*inv)%p
-            A[ids,c:]=(A[ids,c:]-fac[:,None]*A[c,c:])%p
-    return int(det%p)
+    return detmod(A,p)
 
 def eval_ycoeff(A,x,p):
     out=np.zeros(A.shape[1],dtype=np.int64)
@@ -385,6 +390,24 @@ def interpolate_forward(values,p):
     return np.array(coeff,dtype=np.int64)
 
 def resultant_mod(A,B,p,hi):
+    if nmod_mpoly_ctx is not None:
+        context=nmod_mpoly_ctx.get(names=("x","y"),ordering="lex",modulus=p)
+        def polynomial(C):
+            return context.from_dict({
+                (a,b):int(C[a,b])%p
+                for a in range(C.shape[0]) for b in range(C.shape[1])
+                if int(C[a,b])%p
+            })
+        ap,bp=polynomial(A),polynomial(B)
+        # Polynomial resultants commute with reduction when both global
+        # y-degrees survive. Otherwise retain the fixed-degree Sylvester path.
+        if ap.degrees()[1]==A.shape[1]-1 and bp.degrees()[1]==B.shape[1]-1:
+            R=ap.resultant(bp,"y")
+            out=np.zeros(int(R.degrees()[0])+1,dtype=np.int64)
+            for (a,b),c in R.to_dict().items():
+                if b: raise AssertionError("RESULTANT_RETAINED_Y_VARIABLE")
+                out[int(a)]=int(c)
+            return out
     vals=[resultant_at(A,B,x,p) for x in range(hi+1)]
     return interpolate_forward(vals,p)
 
@@ -480,24 +503,31 @@ for a in range(len(PAIR_LIST)):
                 selection=(a,b,e,g)
                 break
     if selection is not None: break
-ck("CHARZERO_ELIMINATION_PAIR_FOUND",selection is not None)
-ia,ib,eg,_g=selection
-ck("POSITIVE_COMMON_MULTIPLICITY",eg>0)
+print("ASSIGNMENT_ONLY_TWO_PAIR_ROUTE_AVAILABLE",selection is not None,flush=True)
+selected_pairs=[]
+selected_nullities=[]
+if selection is not None:
+    ia,ib,eg,_g=selection
+    selected_pairs=[list(PAIR_LIST[ia]),list(PAIR_LIST[ib])]
+    selected_nullities=[pair_records[ia]["exact_sylvester_nullity_at_x1"],
+                        pair_records[ib]["exact_sylvester_nullity_at_x1"]]
 
-# Degree preservation at ELIM_PRIME gives
-# deg gcd_Q <= deg gcd_Fp = eg.  Exact Sylvester nullities give
-# (x-1)^eg dividing both characteristic-zero resultants, so equality holds.
-# Therefore their characteristic-zero gcd on C^* is exactly (x-1)^eg.
-selected_pairs=[PAIR_LIST[ia],PAIR_LIST[ib]]
-selected_nullities=[
- pair_records[ia]["exact_sylvester_nullity_at_x1"],
- pair_records[ib]["exact_sylvester_nullity_at_x1"],
-]
+# Supply the just-reconstructed integer ledgers in memory, before constructing
+# the final characteristic-zero result. This has no dependency on a cached
+# elimination claim or output JSON. The companion proves the structural
+# divisor and the missing infinity degree bound directly in characteristic zero.
+import a4d_y_curved_joint_two_ratio_charzero_check as L
+original_pair_lift=L.certify({
+    "terminal":"A4D-Y-CURVED-JOINT-TWO-RATIO-INTEGER-MINORS-CERTIFIED",
+    "charts":[list(c) for c in CHARTS],
+    "records":records,
+})
 charzero_conclusion=(
- "the selected exact pair-resultants have characteristic-zero gcd, after "
- "removing Laurent x-units, equal to (x-1)^%d; hence any common torus zero "
- "of all four minors has x=1, and the exact x=1 fiber gcd (y-1)^3 then "
- "forces y=1" % eg
+ "the original exact pair-resultants R_01 and R_23 have monic gcd over Q[x] "
+ "equal to x^229*(x-1)^11; exact structural divisibility, a rational infinity "
+ "degree bound for R_01, and one good modular gcd prove the lift; hence every "
+ "common torus zero of the four minors has x=1, and the exact fiber gcd "
+ "(y-1)^3 forces y=1"
 )
 
 result={
@@ -516,9 +546,11 @@ result={
  "characteristic_zero_elimination":{
    "prime":ELIM_PRIME,
    "pair_records":pair_records,
-   "selected_resultant_pairs":[list(selected_pairs[0]),list(selected_pairs[1])],
+   "selected_resultant_pairs":selected_pairs,
    "selected_exact_nullities":selected_nullities,
-   "normalized_modular_gcd":"(x-1)^"+str(eg),
+   "proof_method":"exact structural divisor plus infinity degree preservation",
+   "normalized_modular_gcd":"x^229*(x-1)^11",
+   "original_pair_lift":original_pair_lift,
    "conclusion":charzero_conclusion
  },
  "rank_conclusion":"on the representative complex two-ratio torus plane, the four certified 68-minors have common zero-set exactly (x,y)=(1,1); hence the 68-row interior operator has full row rank away from the diagonal ratio on this plane",
@@ -529,7 +561,10 @@ result={
    "no nonlinear response terminal"
  ]
 }
-print("RESULT_RECORDS",json.dumps(records,sort_keys=True),flush=True)
+print("RESULT_RECORDS",json.dumps([
+    {k:v for k,v in row.items() if k!="coefficient_ledger"}
+    for row in records
+],sort_keys=True),flush=True)
 print("CHARZERO_SELECTION",json.dumps(result["characteristic_zero_elimination"],sort_keys=True),flush=True)
 if "--write" in __import__("sys").argv:
     OUT.write_text(json.dumps(result,indent=2)+"\n")
