@@ -45,6 +45,22 @@ joint rigidity modulo constant Y amplitudes, uniformly in L. The local
 identity is proved; the all-torus rank premise and curved continuation
 are not. Four short Laurent inverse templates are excluded over Q.
 
+The [current mixed-current probe](A4D_H_NORMAL_RESCUE_CURRENT_PROBE.md)
+organizes the remaining estimate around
+`X_(h,p)=||w_tr||_(p,comp)+||D_G c||_p`.
+The exact three-ratio finite convolution has only the folded interior
+rank drop on periods 8, 12, 16 and 24, including every genuine
+three-ratio character on those grids. A full-row-rank interior still
+leaves 28 right-kernel directions. The continuous torus and full joint
+boundary are not closed by this finite calculation.
+Under the open torus premise, finite-stencil metric perturbation and
+nonlinear absorption give
+`X_(h,p) <= 2C [h^2||tau_h||_p + C_g||g-eta||_p]`
+on a fixed small chart, in the actual specified norm. No separate
+inverse loss acts on the center gradient. The numerical mixed fields
+fail the necessary equations and are not joint witnesses.
+Neither task terminal follows.
+
 ## Subsequence response law for small link-log deviations
 
 There is a useful conditional homogenized statement before the global
@@ -902,11 +918,37 @@ the phase-0 sector; no rank for its other sectors is asserted. Full modular
 column rank and maximal augmented rank prove the exclusions over Q.
 They do not refute a longer inverse or an analytic physical estimate.
 
-The checks and repository guards passed locally before the execution
-environment disconnected during publication. The recovered source and
-compact ledger require independent replay by CI at the published head.
+The recovered source and compact ledger were independently replayed
+locally. GitHub guards at `14bdb90` completed with success in run
+`36718097905`, including the research certificates.
 First remaining linear premise: full joint rank on the physical compact
 complement of the four folded points. Curved reduced compatibility and
 the actual owner sum-norm response remain the subsequent obligation.
 No physical terminal, selector, action modification, or claim promotion.
 Keep PR #310 Draft and IN_PROGRESS.
+
+## Current execution focus: H-NORMAL-RESCUE
+
+The first remaining object is the size of the genuinely mixed transverse
+current on the sampled smooth metric, with the source and unweighted
+owner topology fixed. Pure Y is an exactly controlled difference current;
+its derivative remainder does not justify a separate new branch.
+The finite three-ratio convolution and residual-qualified numerical
+probe are recorded in `A4D_H_NORMAL_RESCUE_CURRENT_PROBE.md`.
+
+The convolution has left nullity three at each tested period, coming
+only from the common zero-frequency fold. It does not establish the
+continuous three-ratio/full-joint rank theorem. The weak-metric estimate
+is conditional on the torus premise and does not replace normal-chart
+gluing on a fixed nonconstant smooth g. A pointwise O(h^2) metric or
+current field is not O(h^2) in the unweighted sum over L^4 sites.
+
+All recorded searches fail the necessary connection and phase-erasure
+equations, including the c~h envelope with its linear range correction.
+Their X values belong to rejected candidates. They prove neither success
+nor failure of H-NORMAL-RESCUE on exact joint fields, and no candidate-
+dependent source turns them into a response counterexample.
+
+The environment disconnected during publication. Recovered executable
+sources require independent replay as documented in the probe note.
+Keep #310 Draft / IN_PROGRESS; no new physical terminal.
