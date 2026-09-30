@@ -786,3 +786,16 @@ The genuine three-ratio interior locus, remaining boundary equations, and
 the quantitative all-Bloch gap remain open. Nonlinear reduced-center
 solvability and the normalized owner-topology response estimate are also
 open. Keep #310 Draft / IN_PROGRESS.
+
+### Explicit folded isolation radius
+
+The local folded graph chart now has a conservative quantitative radius.
+`A4D_Y_CURVED_JOINT_FOLDED_EXPLICIT_RADIUS.md` proves, for any of the four
+folded characters and angular `L1` distance `0<delta<=10^-8`, that
+`sigma_min Q(theta)>delta/20150`. This combines the owned chart inverse
+and reduced four-angle derivative inverse with the global Laurent
+derivative envelope; the new lightweight certificate checks the exact
+kernel, phase covariance, and all rational constants. This excludes
+additional joint zeros in four explicit punctured neighborhoods only. The
+compact complement, nonlinear center equation and response remainder
+remain open.
