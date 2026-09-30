@@ -994,3 +994,19 @@ this symmetry, the previously conditional mixed-current estimate is now
 unconditional in the sector: `X_(h,p) <= 2C[h^2||tau_h||_p +
 C_g||g_h-eta||_p]` in a fixed small chart. Its `p=1` consequence keeps
 the unweighted hypothesis and does not follow from sitewise powers.
+
+### Opposite-parity common-phase line
+
+`A4D_Y_OPPOSITE_PARITY_UNIFORM_SECTOR.md` proves a second exact complex-line
+theorem: the full joint symbol has rank 96 at every
+`lambda=(mu,-mu,-mu,-mu)` with `mu != 0`. Two reconstructed integer
+determinants have degrees 144 and 118 and exact characteristic-zero gcd
+`mu^48`; the only common zero is outside the character torus. Joining
+this line with the previously certified common-phase line gives an
+unconditional refinement-uniform `l^p` inverse, flat small-chart joint
+rigidity, and the corresponding weak-metric size estimate on the physical
+two-parity subgroup `Psi_L={(mu,epsilon*mu,epsilon*mu,epsilon*mu):
+mu^L=1, epsilon=+/-1}`. This subgroup is closed under nonlinear products;
+the union with the spatial-diagonal subgroup is not. The rank theorem
+does not classify their generated two-dimensional surface, let alone the
+full three-ratio torus or fixed-curved normalized response.
