@@ -952,3 +952,14 @@ dependent source turns them into a response counterexample.
 The environment disconnected during publication. Recovered executable
 sources require independent replay as documented in the probe note.
 Keep #310 Draft / IN_PROGRESS; no new physical terminal.
+
+### Spatial-diagonal interior rank and boundary rescue
+
+`A4D_Y_CURVED_JOINT_SPATIAL_DIAGONAL_INTERIOR.md` classifies the 68-row
+interior operator on `lambda=(1,r,r,r)`, `r in C*`. Two direct exact minors
+have gcd `r^45*(r-1)^3*(r-4/21)`. The interior ranks are 65 at `r=1`, 67
+at `r=4/21`, and 68 elsewhere on that line. The full joint rank at
+`r=4/21` is 96, demonstrating exact boundary rescue; `4/21` is off the
+physical unit circle. This is a hostile control against assuming that the
+two-ratio interior theorem extends unchanged to three ratios. It does
+not classify three independent ratios or prove the all-torus gap.
