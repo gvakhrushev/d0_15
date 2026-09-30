@@ -98,6 +98,36 @@ The even-carrier graph is connected, so `c` is constant. Conversely a
 constant Y amplitude is the owned exact nongauge joint vacuum. Thus the
 local flat stationary set in this sector is exactly the Y family.
 
+## Exact joint fields on a weak metric in the same sector
+
+There is a direct nonlinear size consequence with a metric/source
+specified independently of the candidate. Let `g_L` and `tau_L` have
+the same Fourier symmetry, remain in a fixed compact Gram chart, and
+let a small-chart field `K_L=K_Y(1+c_L) exp(Bw_L)` solve all 136 rows
+`E_K(g_L,K_L)=0`, `E_Q(g_L,K_L)=h^2 tau_L`, `h=1/L`. Finite-stencil
+analyticity and the sector estimate give, for each `1<=p<=infinity`,
+
+\[
+X_{L,p}:=\|w_L\|_{p,\mathrm{comp}}+\|D_{\mathcal G}c_L\|_p
+\le 2C\bigl(h^2\|\tau_L\|_p+C_g\|g_L-\eta\|_{p,\mathrm{comp}}\bigr)
+\]
+
+once the chart radius is chosen independently of `L` so that the owned
+pure-Y and mixed remainder is absorbed. The constant `C_g` comes from
+bounded derivatives of the fixed local stencil and is independent of
+refinement. This is the [previously conditional mixed-current bound]
+(A4D_H_NORMAL_RESCUE_CURRENT_PROBE.md) with its all-torus premise
+discharged on this exact symmetry sector.
+
+In particular, a bounded sitewise source and
+`||g_L-eta||_infinity=O(h^2)` imply `X_(L,infinity)=O(h^2)`.
+For the **unweighted** owner sum norm the same order requires
+`h^2||tau_L||_1+||g_L-eta||_1=O(h^2)`; a sitewise `O(h^2)` metric
+perturbation over `L^4` sites does not meet that requirement. A fixed
+smooth nonconstant background is not globally `eta+O(h^2)`, and this
+sector may be broken by its coefficients. Thus this size theorem does
+not prove the requested normalized response convergence.
+
 This does not classify general four-dimensional Fourier fields. For a
 fixed smooth nonconstant sampled metric, its coefficients break the
 sector symmetry and the mixed current requires a separate uniform

@@ -989,3 +989,8 @@ joint rigidity in that sector modulo the constant nongauge Y amplitude,
 with a chart radius independent of `L`. Smooth nonconstant metrics break
 the sector symmetry; neither H_TORUS nor the curved response terminal is
 deduced from this restricted theorem.
+For exact joint fields whose weak metric and prescribed source retain
+this symmetry, the previously conditional mixed-current estimate is now
+unconditional in the sector: `X_(h,p) <= 2C[h^2||tau_h||_p +
+C_g||g_h-eta||_p]` in a fixed small chart. Its `p=1` consequence keeps
+the unweighted hypothesis and does not follow from sitewise powers.
