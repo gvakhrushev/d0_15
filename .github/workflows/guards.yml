@@ -60,7 +60,9 @@ jobs:
 
       - name: Execute changed research certificates
         if: github.event_name != 'workflow_dispatch'
-        timeout-minutes: 35
+        # Individual scripts retain their own limits below. A broad research PR
+        # can contain many independently bounded certificates in this serial step.
+        timeout-minutes: 60
         shell: bash
         run: |
           set -euo pipefail
