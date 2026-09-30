@@ -963,3 +963,16 @@ at `r=4/21`, and 68 elsewhere on that line. The full joint rank at
 physical unit circle. This is a hostile control against assuming that the
 two-ratio interior theorem extends unchanged to three ratios. It does
 not classify three independent ratios or prove the all-torus gap.
+
+### Full joint spatial-diagonal line
+
+`A4D_Y_CURVED_JOINT_SPATIAL_DIAGONAL_FULL.md` strengthens the preceding
+interior result to all 136 joint rows on the same complex line. Two
+integer-polynomial 96-row determinant charts have exact
+characteristic-zero gcd `r^56*(r-1)^4`, established by complete signed
+CRT reconstruction with a Leibniz coefficient bound and a degree-preserving
+first-prime gcd. Therefore the full joint symbol has rank 96 for every
+`r in C*` except `r=1`, where its exact rank is 95. The `4/21` interior
+defect is globally rescued on this line. This does not settle three
+independent ratios or the full physical torus; the nonlinear curved
+response and owner sum-norm estimate remain open.
