@@ -799,3 +799,16 @@ kernel, phase covariance, and all rational constants. This excludes
 additional joint zeros in four explicit punctured neighborhoods only. The
 compact complement, nonlinear center equation and response remainder
 remain open.
+
+### Exact common-phase boundary line
+
+`A4D_Y_CURVED_JOINT_COMMON_PHASE_BOUNDARY.md` now proves the full joint
+rank on `lambda0=lambda1=lambda2=lambda3=mu in C*`, not just on a finite
+torsion grid or the physical circle. Zone folding leaves a 68-row
+phase-1/2 interior block of rank 65 and a 31-column boundary reduction
+over `Q[w]`, `w=mu^4`. Two exact 31-by-31 minors have monic gcd
+`w^23*(w-1)`. Therefore the joint rank is 96 for `mu^4!=1` and 95 at
+the four folded points. This closes the nonfolded common-phase boundary
+question on that line only. Genuinely three-ratio characters, the compact
+regular complement, nonlinear center equations and response remainder
+remain open.
