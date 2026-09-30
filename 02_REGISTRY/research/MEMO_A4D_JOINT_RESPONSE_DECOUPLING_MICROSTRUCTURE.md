@@ -982,6 +982,8 @@ an unconditional refinement-uniform `l^p` inverse on the physical
 fourfold spatial-diagonal symmetry sector, including the unweighted
 owner sum norm. `A4D_Y_SPATIAL_DIAGONAL_UNIFORM_SECTOR.md` proves this
 by smooth one-circle division and absolutely summable Fourier kernels.
+Compactness also extends the linear estimate to some open Fourier tube
+around that sector, with no explicit tube radius yet.
 The same estimate and the owned nonlinear remainder give flat local
 joint rigidity in that sector modulo the constant nongauge Y amplitude,
 with a chart radius independent of `L`. Smooth nonconstant metrics break

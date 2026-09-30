@@ -62,6 +62,22 @@ phase-supported fields gives the displayed estimate. No continuum
 limit, finite-grid extrapolation, or unproved all-torus rank assertion
 enters this argument.
 
+The same proof gives a broader **linear** result. Regard the continuous
+fourfold line `Omega` as a compact subset of the physical torus. Away
+from its four folded points, full joint rank is an open condition. At
+those points the owned local analytic division gives `T=MQ` on an open
+neighborhood. A finite cover and partition of unity therefore produce
+an open neighborhood `U` of all of `Omega` with a smooth exact division
+`T=MQ` on `U`. There is some `epsilon>0` such that the torus
+`epsilon`-tube around `Omega` lies inside `U`. Multiply `M` by a smooth
+cutoff equal to one on a smaller tube and extend it by zero. Its
+four-dimensional Fourier coefficients are absolutely summable.
+Consequently the displayed refinement-uniform `l^p` estimate also
+holds for fields whose Fourier support lies in that smaller tube.
+Neither `epsilon` nor the operator constant is numerically certified.
+Nonlinear products need not stay in the tube; the flat nonlinear
+consequence below uses the exact subgroup `Omega_L`.
+
 ## Flat nonlinear consequence in the same sector
 
 For the exact flat chart `K=K_Y(1+c) exp(Bw)`, the owned all-row
