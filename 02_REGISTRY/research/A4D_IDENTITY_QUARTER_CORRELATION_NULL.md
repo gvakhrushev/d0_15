@@ -72,6 +72,12 @@ stronger sum-norm residual estimate; it cannot be applied cell by cell
 across varying envelopes without bounding cross-cell Euler rows. The
 global curved joint-response terminal remains open.
 
+The later [generic-coframe theorem]
+(A4D_IDENTITY_QUARTER_GENERIC_COFRAME_RESPONSE.md) proves this full
+quarter-kernel **quadratic** identity for all constant coframes near
+`eta`; the nonlinear eight-axis classification still belongs only to
+the flat repeated four-phase chart.
+
 Replay of the exact input:
 
 ```sh

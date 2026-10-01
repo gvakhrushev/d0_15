@@ -210,6 +210,23 @@ hypotheses this yields **distributional** normalized response
 decoupling in that microlocal class. It does not cover other kernel
 directions, finite-amplitude microstructure or the owner sum norm.
 
+The [generic-coframe identity-quarter theorem]
+(A4D_IDENTITY_QUARTER_GENERIC_COFRAME_RESPONSE.md) strengthens the
+frozen result from the Y line to the **whole** four-complex-dimensional
+joint quarter kernel for coframes near `eta`. Four rolewise triangle
+bivectors lie in all 24 connection and 16 unrestricted coframe rows as
+identities in the 16 coframe entries; the owned rank-20 joint block at
+`eta` proves that these span the full kernel throughout a neighborhood.
+The exact phase-mean second-curvature identity is half the difference
+of within-role cosine/sine commutators. These vanish on the four lines,
+so the Hermitian quadratic metric-response form is zero on the entire
+kernel for every frozen metric in that neighborhood. Under the primary
+conditional correlation-law hypotheses, a measure supported in that
+quarter block has zero normalized response defect **distributionally**
+even for a genuinely curved smooth sampled metric. This does not prove
+nonlinear realizability, arbitrary-Bloch decoupling, finite-amplitude
+response, or the owner-sum limit.
+
 ## Corrected finite response across the four Bloch axes
 
 `a4d_y_curved_response_phase_corrected_check.py` independently reconstructs the 96-by-96 connection Hessian and the 10-component low-color response with the corrected mixed phase convention. It verifies the submitted aggregate ledger in `a4d_y_curved_response_corrected_report.json` and writes `a4d_y_curved_response_phase_corrected_results.json`.

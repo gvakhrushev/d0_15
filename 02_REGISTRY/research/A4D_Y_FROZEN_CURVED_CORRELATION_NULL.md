@@ -71,6 +71,11 @@ holds for every `Q` in the stated coframe chart, not only for `eta`.
 The [flat all-center corollary](A4D_IDENTITY_QUARTER_CORRELATION_NULL.md)
 annihilates the whole four-complex-dimensional quarter kernel at `eta`;
 the present curved-frozen theorem claims only its transported Y line.
+The later [symbolic generic-coframe theorem]
+(A4D_IDENTITY_QUARTER_GENERIC_COFRAME_RESPONSE.md) proves the quadratic
+mean cancellation for the **entire** four-line quarter kernel on a
+coframe neighborhood of `eta`. The exact Y family here still gives the
+stronger all-phase identity along one line.
 
 ## What it says about a smooth curved background
 
