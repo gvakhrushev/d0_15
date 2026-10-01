@@ -1,4 +1,4 @@
-# A4D joint response decoupling — corrected Y normal-jet result
+# A4D stationary response memory and continuum collapse boundary
 
 > **2026-10-01 literal Euler correction.** The identity physical symbol in
 > the canonical `flat_symbols` convention is `(A^T;C)`. The former full
@@ -23,6 +23,15 @@
 > estimate is o(h^2) in the unweighted owner norm for the difference of these
 > projected curvature currents. Defining the quotient does not supply that
 > estimate or an automatic faithful interpretation of the full Euler theory.
+>
+> The negative result is universal over proposed quotients: the exact boost
+> family with t=a*h^2 has normalized origin q11 -> -a for every real a,
+> while Q_h=eta and K_h(a)->I. Every response-sufficient continuum forgetting
+> map must separate those values. Thus the full EK=0 fiber has at least
+> continuum many asymptotic observable classes; its singleton quotient is
+> impossible. The complete degree-eight denominator-cleared Euler identity
+> is independently certified. This is not the original smooth-source joint
+> no-go; that admissibility boundary remains essential.
 >
 > [The all-period pure-circle cubic gate](A4D_IDENTITY_CIRCLE_SIGN_CUBIC_GATE.md)
 > is now an exact input: a finite Laurent left witness sends every Boolean
@@ -1526,6 +1535,18 @@ zero response memory as I but 36 nonzero connection Euler components. Thus
 response sufficiency is not automatic preservation/reflection of the full
 stationarity grammar. The admissible joint domain and source conditions must
 remain explicit.
+
+The response-memory owner further proves a universal negative continuum
+theorem: for every real a, the exact family t_h=a*h^2 tends to the same flat
+connection endpoint, but h^-2 Xi_11(0) tends to -a. The asymptotic observable
+quotient on the full EK=0 domain therefore contains an injected copy of R.
+Any sufficient forgetting map must distinguish these classes, regardless of
+its candidate type or presentation. The normalized projected-curvature scale
+is irreducible approach memory for that protocol. Its exact parametric family
+is replayed through the COMPLETE degree-eight numerator after clearing the
+same Cayley denominator on every link; it is not inferred from a Taylor jet
+or finite parameter samples. No such separation is asserted on the independent
+smooth-source joint domain, which excludes this fast metric readout.
 
 The single main response obligation is now the literal-current estimate
 ||D_(S_h)[C(K_h)-C(K_h^sm)]||_1=o(h^2) on that independently specified domain,

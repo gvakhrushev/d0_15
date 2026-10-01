@@ -2178,6 +2178,32 @@
       "curvature": "nonzero"
     }
   ],
+  "full_boost_family_polynomial": {
+    "denominator": "D=4-3*t^2",
+    "link_numerator_degree": 2,
+    "full_Euler_numerator_degree_bound": 8,
+    "all_connection_numerator_coefficients": "zero",
+    "metric_numerator": "4*t*D^3*sigma_p*(0,0,0,0,-1,1,1,-1,1,-1)",
+    "scalar_nonzero_coefficients": [
+      [
+        1,
+        256
+      ],
+      [
+        3,
+        -576
+      ],
+      [
+        5,
+        432
+      ],
+      [
+        7,
+        -108
+      ]
+    ],
+    "method": "exact literal degree-eight denominator-cleared polynomial, not a Taylor extrapolation"
+  },
   "phase_average_forgetting": "not sufficient for full sitewise metric readout, even on EK=0",
   "stationarity_forgetting_control": {
     "Role0_Cayley_Y_parameters": [
@@ -2195,9 +2221,12 @@
     "amplitude": "t=h^2",
     "sitewise_normalized_q11": "-4/(4-3*h^4) -> -1 at the origin",
     "unweighted_normalized_owner1": "24*L^4/(4-3*h^4)",
+    "arbitrary_real_scale": "t=a*h^2 gives normalized origin q11 -> -a for every real a",
+    "universal_class_separation": "a!=b implies distinct asymptotic response classes; any sufficient continuum quotient has at least continuum many classes on the full EK=0 domain",
+    "same_endpoint": "Q_h=eta and K_h(a)->I for every a; normalized current scale is irreducible approach memory for the full response protocol",
     "weak_phase_mean": "zero; not a counterexample to only weak smooth-test readout"
   },
-  "analytic_consequence": "all-frequency exact response-memory factorization and coarsest sufficient quotient; all-EK stationary singleton collapse is false by owned #227",
+  "analytic_consequence": "all-frequency exact response-memory factorization and coarsest sufficient quotient; universal singleton-continuum-quotient no-go on the full EK=0 domain, with a real family of separated normalized-current classes",
   "nonclaims": [
     "no smooth-independent-source joint response no-go",
     "no proof of one continuum memory class on the admissible joint fiber",

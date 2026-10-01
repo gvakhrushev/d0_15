@@ -227,6 +227,49 @@ sitewise readouts; it fails (8). For a protocol containing only weak smooth
 tests this particular staggered control has zero limit, and (11) is not a
 counterexample to that weaker claim.
 
+### Universal negative continuum theorem on the full EK fiber
+
+This is stronger than checking two representatives. For every real a, take
+the same exact boost family with `t_h=a h^2` on sufficiently fine meshes.
+It remains in the fixed compact logarithm chart, with log size `O_a(h^2)`,
+has the same fixed smooth metric eta, and is exactly connection stationary.
+All these connections tend to the identical endpoint I. Nevertheless
+
+\[
+\rho_h(a):=h^{-2}\Xi_{11}(0)
+=-\frac{4a}{4-3a^2h^4}\longrightarrow-a.
+\tag{11a}
+\]
+
+Define asymptotic observational equivalence of stationary sequences by
+vanishing normalized response difference in the declared full owner protocol.
+For a!=b, even the fixed-origin component of the difference tends to `b-a`,
+so the sequences are not equivalent. Thus
+
+\[
+\boxed{\mathbb R\hookrightarrow
+\mathscr S^{\rm seq}(\eta)/\!\sim_{\rm obs}.}
+\tag{11b}
+\]
+
+For **any** target type Y and any continuum forgetting map sufficient for
+that protocol, equal forgotten classes must imply observational equivalence.
+By (11b) the map must separate all values of a. Therefore there is no
+response-sufficient singleton continuum quotient on the full `EK=0` domain.
+This is a universal no-go for every proposed sufficient quotient, not a
+candidate census. It also identifies unavoidable approach memory: the scale
+of the projected curvature current divided by h^2 survives while the
+pointwise connection and curvature approach the same flat endpoint.
+
+The complete parametric identity is independently replayed without SymPy.
+With `B^3=3B` and `D=4-3t^2`, the Cayley link numerator is
+`D I+4t B+2t^2 B^2`. Give **every** link the same denominator D, including
+inactive identities. Every literal Euler term contains four link factors;
+its full numerator has degree at most eight. All connection coefficients
+vanish, and the entire metric numerator is `4t D^3 sigma_p V`. Exact
+coefficient equality therefore proves the rational family for all parameters
+in the real chart; degree eight is not a truncated jet.
+
 Equation (10) is not an independently prescribed smooth metric source.
 Therefore #227 refutes unrestricted **connection-stationary** collapse, but
 does not establish the original #310 joint-source no-go. Assigning its metric
@@ -265,7 +308,9 @@ from 4x4 face matrices. Exact controls check the ranks, right inverses,
 stationary Ward reconstruction, independent symmetric-tensor formula,
 Lorentz covariance, scalar-memory failure, actual shared-link Euler equations
 on three rational parameters of each already owned family, and the
-same-response/different-stationarity deletion control. The all-coframe and
+same-response/different-stationarity deletion control. It also verifies every
+coefficient of the full denominator-cleared degree-eight boost Euler family.
+The all-coframe and
 arbitrary-type proofs are the analytic arguments above, not finite-sample
 extrapolations.
 
@@ -274,5 +319,7 @@ python3 02_REGISTRY/research/certificates/a4d_stationary_response_memory_check.p
 ```
 
 Verdict: `STATIONARY_RESPONSE_MEMORY_FACTORIZATION_CERTIFIED`;
-`JOINT_CONTINUUM_COLLAPSE_OPEN`. The all-EK singleton proposal is classified
-negative by #227. No claim/BOOK/CORE promotion or full task terminal is made.
+`ALL_EK_SINGLETON_CONTINUUM_QUOTIENT_NOGO`;
+`JOINT_CONTINUUM_COLLAPSE_OPEN`. The all-EK singleton proposal is terminally
+negative, with a real family of distinguishable classes. No claim/BOOK/CORE
+promotion or original joint-source task terminal is made.

@@ -90,6 +90,31 @@ def rows(values):
     return [[str(F(x)) for x in row] for row in values]
 
 
+def full_boost_polynomial():
+    # Clear the SAME D=4-3*t^2 on every link, including identities.
+    # Each literal Euler term has four link factors. Degree eight is
+    # therefore the complete D^4 numerator, not a truncated Taylor test.
+    b=N.G[0]+N.G[1]+N.G[2]
+    assert np.array_equal(b@b@b,3*b)
+    links=np.array([[N.jconst(4*I,8) for _ in range(4)] for _ in range(4)])
+    links[:,:,2]=-3*I
+    links[0,0,1]=4*b;links[2,0,1]=-4*b
+    links[0,0,2]=links[2,0,2]=2*b@b-3*I
+    ek,eq=N.euler_links(links)
+    assert not np.any(ek)
+    visible=np.array([0,0,0,0,-1,1,1,-1,1,-1],dtype=object)
+    expected=np.zeros_like(eq)
+    for power,c in ((1,256),(3,-576),(5,432),(7,-108)):
+        for p,sign in enumerate((1,1,-1,-1)):expected[power,p]=sign*c*visible
+    assert np.array_equal(eq,expected)
+    print('PASS_FULL_CAYLEY_BOOST_EULER_NUMERATOR_ALL_DEGREE8_COEFFICIENTS',flush=True)
+    return {'denominator':'D=4-3*t^2','link_numerator_degree':2,'full_Euler_numerator_degree_bound':8,
+            'all_connection_numerator_coefficients':'zero',
+            'metric_numerator':'4*t*D^3*sigma_p*(0,0,0,0,-1,1,1,-1,1,-1)',
+            'scalar_nonzero_coefficients':[[1,256],[3,-576],[5,432],[7,-108]],
+            'method':'exact literal degree-eight denominator-cleared polynomial, not a Taylor extrapolation'}
+
+
 def run_checks():
     coframes=[I,np.diag(list(map(F,(2,3,5,7)))),
               np.array([[F(1),F(1,7),0,0],[0,1,F(1,5),0],
@@ -180,6 +205,7 @@ def run_checks():
     bad_ek,bad_eq=N.euler_links(nonsolution[:,:,None])
     assert not np.any(bad_eq) and np.any(bad_ek)
     print('PASS_SAME_RESPONSE_MEMORY_DIFFERENT_STATIONARITY_CONTROL',flush=True)
+    full_family=full_boost_polynomial()
     for L in (8,12,16):
         h=F(1,L);t=h*h;factor=4*t/(4-3*t*t)
         raw_owner=6*L**4*abs(factor)
@@ -195,6 +221,7 @@ def run_checks():
             'stationary_Ward':'six Lorentz vertical current components vanish on EK=0; Xi reconstructs H on that annihilator',
             'scalar_forgetting_witness':{'curvature_column':scalar_bad,'density':'zero','metric_memory':list(map(str,d[:,scalar_bad]))},
             'stationary_controls':family_results,
+            'full_boost_family_polynomial':full_family,
             'phase_average_forgetting':'not sufficient for full sitewise metric readout, even on EK=0',
             'stationarity_forgetting_control':{'Role0_Cayley_Y_parameters':list(map(str,slow_parameters)),
                                                'metric_memory':'zero, equal to I',
@@ -203,8 +230,11 @@ def run_checks():
             'existing_B_refinement_obstruction':{'source':'connection source zero; no smooth joint metric source claimed',
                 'amplitude':'t=h^2','sitewise_normalized_q11':'-4/(4-3*h^4) -> -1 at the origin',
                 'unweighted_normalized_owner1':'24*L^4/(4-3*h^4)',
+                'arbitrary_real_scale':'t=a*h^2 gives normalized origin q11 -> -a for every real a',
+                'universal_class_separation':'a!=b implies distinct asymptotic response classes; any sufficient continuum quotient has at least continuum many classes on the full EK=0 domain',
+                'same_endpoint':'Q_h=eta and K_h(a)->I for every a; normalized current scale is irreducible approach memory for the full response protocol',
                 'weak_phase_mean':'zero; not a counterexample to only weak smooth-test readout'},
-            'analytic_consequence':'all-frequency exact response-memory factorization and coarsest sufficient quotient; all-EK stationary singleton collapse is false by owned #227',
+            'analytic_consequence':'all-frequency exact response-memory factorization and coarsest sufficient quotient; universal singleton-continuum-quotient no-go on the full EK=0 domain, with a real family of separated normalized-current classes',
             'nonclaims':['no smooth-independent-source joint response no-go',
                          'no proof of one continuum memory class on the admissible joint fiber',
                          'not a minimal quotient for other mandatory holonomy or history observables',
