@@ -11,6 +11,26 @@
 > inverse is also certified. These are scoped results. General full4D curved
 > Target D and unrestricted Target U remain PARTIAL/OPEN.
 
+> **2026-10-01 architecture revision: the stationary response quotient is the main route.**
+> [The new response-memory owner](A4D_STATIONARY_RESPONSE_MEMORY.md) derives
+> the symmetric solder current from the literal plaquette curvature, proves
+> its all-coframe rank-ten projection and coarsest-sufficient universal
+> property for arbitrary microscopic candidate types, and retains the genuine
+> Lorentz quotient and all sitewise Gram readouts. This closes finite readout
+> factorization without a torus census or connection selector. The all-EK
+> stationary singleton is already false by #227; the independently sourced
+> admissible joint continuum image remains unclassified. Its first missing
+> estimate is o(h^2) in the unweighted owner norm for the difference of these
+> projected curvature currents. Defining the quotient does not supply that
+> estimate or an automatic faithful interpretation of the full Euler theory.
+>
+> [The all-period pure-circle cubic gate](A4D_IDENTITY_CIRCLE_SIGN_CUBIC_GATE.md)
+> is now an exact input: a finite Laurent left witness sends every Boolean
+> sign-cone cubic residual to i*T*epsilon/4 while killing all linear normal
+> corrections. It closes arbitrary-sign third-order compatibility and fixed-L
+> pure-circle tangent accumulation; coupled centers and curved transfer remain
+> outside that scoped result.
+
 > **Finite normal-jet compatibility is certified; the nonlinear continuum gate remains open.**
 >
 > The physical TT-defect interpretation at `ea6e9d0` is superseded. Its mixed metric/connection Bloch placement was swapped. The corrected convention is connection-side `lambda^(-s)` and metric-readout `lambda^(+s)`, derived from the actual face-base and shifted-link placement. The flat `z=0` control could not detect the sign error.
@@ -1443,9 +1463,10 @@ vanishes only on Z=0 or Z_n=t*epsilon_n*i^n (and its i multiple), with constant
 positive modulus t and arbitrary signs epsilon_n. This follows from the exact
 pointwise axis constraint Im(Z_n^2)=0 and the definite neighboring-pair
 constraint Re(Z_(n+1)^2-Z_(n+1)*Z_(n+2)+Z_(n+2)^2)=0. All coefficients,
-actual boundary links and the even normal correction are retained. General
-sign sequences have not passed the cubic gate; multiple circles, additional
-quarter coordinates and their varying-coframe coupling remain open.
+actual boundary links and the even normal correction are retained. The new all-period cubic owner below excludes every arbitrary sign sequence
+as a pure-circle third-order compatible tangent. Multiple circles, additional
+quarter coordinates, uniform nonlinear refinement control and their
+varying-coframe coupling remain open.
 
 The attached finite-amplitude Y replay is also repaired independently. Its
 metric covariance test used a connection-row phase for 783 metric entries.
@@ -1469,3 +1490,69 @@ python3 02_REGISTRY/research/certificates/a4d_y_joint_symbol_independent_replay.
 Overall status remains PARTIAL/OPEN; no full4D exact continuation,
 unrestricted response limit, independent-source counterexample, selector,
 action change or BOOK/CORE promotion is made.
+
+
+## Stationary response memory: architectural frontier
+
+[A4D_STATIONARY_RESPONSE_MEMORY.md](A4D_STATIONARY_RESPONSE_MEMORY.md) restores
+the task's original response-quotient objective. At each nondegenerate solder
+S, the actual six based plaquette odd curvatures give a 36-coordinate carrier.
+The literal solder Euler current H has sixteen components and the canonical
+metric memory is Xi=sym(Q^-1 S^T H)/2, packed in the owner ten-slot convention.
+This is an explicit linear curvature projection, with rank ten for every
+invertible S and an ambient 26-dimensional invisible kernel. The proof uses
+injectivity of the exterior-square differential and does not extrapolate from
+finite coframe controls. On EK=0, the six exact Lorentz Ward components vanish,
+and Xi reconstructs the complete solder Euler current on that annihilator.
+
+The quotient identifies stationary fields exactly when all mandatory sitewise
+Gram readouts agree. For any sufficient map to any candidate type, Xi factors
+uniquely through its image. The arrow runs from finer sufficient data to Xi;
+no microscopic type enumeration or selector is used. An arbitrary additional
+label at fixed Xi cannot change the original response protocol. A change in
+response changes Xi and is already an old observable distinction. This is a
+universal readout statement, not proof of a singleton stationary image or a
+new formal M1 grammar theorem. Other holonomy/history protocols are not erased.
+
+The mandatory controls decide two failure modes exactly. The #232 curved
+nongauge joint Y vacuum has Xi=0 and is correctly identified with I. The #227
+connection-stationary boost curve has nonzero Xi, even for t=h^2 at fixed eta:
+the origin's normalized q11 tends to -1 and its normalized unweighted owner1
+norm is 24*L^4/(4-3*h^4). Its phase mean is zero, so phase forgetting is not
+sufficient for the full sitewise response. This refutes the all-EK singleton
+proposal; it is not a smooth-independent-source joint counterexample.
+A separate exact Role-0 Y field with parameters (1/5,1/7,1/11,1/13) has the same
+zero response memory as I but 36 nonzero connection Euler components. Thus
+response sufficiency is not automatic preservation/reflection of the full
+stationarity grammar. The admissible joint domain and source conditions must
+remain explicit.
+
+The single main response obligation is now the literal-current estimate
+||D_(S_h)[C(K_h)-C(K_h^sm)]||_1=o(h^2) on that independently specified domain,
+or an exact admissible separation. The #216 comparison response and residual
+handle reconstruction and off-shell section terms. Neither a quotient defined
+by readout equality nor a projected range solve proves this estimate.
+
+[A4D_IDENTITY_CIRCLE_SIGN_CUBIC_GATE.md](A4D_IDENTITY_CIRCLE_SIGN_CUBIC_GATE.md)
+records the completed all-period pure-circle cubic input. In the Boolean
+algebra of independent signs the unique even quadratic graph simplifies to
+constant K1/2 on Roles 0,1 at even phases. Every connection and metric row
+vanishes through degree two; the cubic metric rows vanish, but the cubic
+connection source has an exact finite left obstruction. Its 58-entry radius-two
+Laurent row L has coefficient envelope 36, satisfies L J=0 and L S=i*T/4, and
+gives ||S3+J*w3||_p >= t^3||epsilon||_p/18 on every unnormalized lp space and
+period. All sign sequences are excluded at third order; fixed-period pure
+circle tangent accumulation is excluded by normal reduction and parity.
+No uniform isolation radius or coupled-center/curved theorem is inferred.
+
+Both new certificates replay their pinned ledgers and hostile controls.
+The preceding head 909ad048 has a fully successful GitHub D0 guards run
+36873158253, including every changed research certificate. The next-head CI
+result is recorded separately. Overall PARTIAL/OPEN, Draft/IN_PROGRESS;
+no action/source change, independent-source response no-go, full4D exact
+continuation, selector or claim/BOOK/CORE promotion is made.
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_stationary_response_memory_check.py
+python3 02_REGISTRY/research/certificates/a4d_identity_circle_sign_cubic_gate_check.py
+```

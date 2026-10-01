@@ -172,11 +172,16 @@ Z_n=i t\epsilon_n i^n,
 
 This classifies all frequencies of a pure circle envelope at quadratic order.
 It does not construct the sign sequences as exact roots. Constant signs and
-alternating signs are tested by the prior diagonal-quarter owner and the
-mixed-carrier cubic gate above; general sign sequences still need their
-cubic/complete nonlinear compatibility. Additional quarter coordinates and
-coupled circles are also outside this pure-circle calculation. The common
-metric response of a varying envelope is not asserted to cancel.
+alternating signs were tested by the prior diagonal-quarter owner and the
+mixed-carrier cubic gate above. The subsequent
+[all-period sign-cubic owner](A4D_IDENTITY_CIRCLE_SIGN_CUBIC_GATE.md) now
+excludes every arbitrary sign sequence as a third-order compatible pure-circle
+tangent: its finite left witness kills the whole physical linear range and
+sends the cubic source to i*T*epsilon/4. This also excludes fixed-period
+pure-circle tangent accumulation. Additional quarter coordinates, coupled
+circles, a uniform nonlinear radius and curved transfer remain open. The
+common quadratic and cubic metric readouts vanish on that exact sign cone;
+no general varying-envelope common-response cancellation is asserted.
 
 ## Verification and boundary
 
