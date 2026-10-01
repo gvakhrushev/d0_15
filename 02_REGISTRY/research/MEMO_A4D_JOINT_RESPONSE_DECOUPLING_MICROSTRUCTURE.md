@@ -1059,3 +1059,23 @@ Its character support lies on the **different**, product-closed torus
 `lambda=(1,a,b,(ab)^-1)`. This is the first rank surface aligned with
 the surviving curved normal jet. The continuous full-joint rank there,
 let alone nonlinear continuation and response, remains open.
+
+
+### Nonlinear identity-quarter center and phase-common response
+
+`A4D_IDENTITY_QUARTER_NONLINEAR_RESPONSE.md` now closes the full small
+four-phase joint center through the identity at constant eta. Exact
+quadratic/cubic reduction, ten real quadratic-cone planes and eight
+rank-seven blow-up derivatives prove that every sufficiently small
+connection-stationary field with phase-common metric response is one of
+eight exact one-role/parity families. All have zero full metric response.
+This is a local nonlinear classification, not just a tangent calculation.
+The same proof gives `||mean E_Q|| <= C ||log K|| ||(E_K, Pi_nonzero E_Q)||`.
+For strictly repeated four-phase fields it has an L-independent version
+in every l^p norm, including the unweighted owner sum; declared residual
+O(h^2) and log amplitude tending to zero suppress the normalized common
+response. The exact certificate reconstructs all quadratic/cubic coefficients
+and checks all-amplitude axis identities in all 136 rows. Varying envelopes,
+other physical frequencies and fixed-curved gluing remain open. This
+supplies a nonlinear readout estimate without reinstating the disproved
+full linear inverse; no physical terminal is promoted.
