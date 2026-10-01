@@ -183,6 +183,19 @@ sum-norm limit. The result narrows the closure problem but is not either
 task-level terminal and does not cover sequences outside the `O(h)` log
 chart.
 
+For the flat identity background, the
+[quarter-correlation null theorem](A4D_IDENTITY_QUARTER_CORRELATION_NULL.md)
+strengthens one part of this law. The exact identity-quarter certificate
+annihilates every phase-mean quadratic metric coefficient on the full
+four-complex-dimensional joint kernel at the diagonal quarter character.
+Polarization makes the Hermitian defect operator zero on that entire
+kernel, so **any** positive correlation measure supported at the quarter
+pair has zero quadratic response defect, including incoherent mixtures
+and slowly modulated envelopes. Under the strong-residual hypotheses
+above this gives a distributional zero normalized response on `eta`.
+It does not control other resonances, a fixed curved metric or the owner
+sum norm.
+
 ## Corrected finite response across the four Bloch axes
 
 `a4d_y_curved_response_phase_corrected_check.py` independently reconstructs the 96-by-96 connection Hessian and the 10-component low-color response with the corrected mixed phase convention. It verifies the submitted aggregate ledger in `a4d_y_curved_response_corrected_report.json` and writes `a4d_y_curved_response_phase_corrected_results.json`.
