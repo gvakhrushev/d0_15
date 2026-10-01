@@ -1,0 +1,82 @@
+{
+  "schema": "a4d-coupled-boost-curved-realizability-v1",
+  "input_head": "3708ccddc9f249760eab7ca7aa3d7108850a427e",
+  "arithmetic": "exact rational, complete polynomial and direct action differentiation",
+  "predeclared_data": {
+    "mesh": "h=1/L, L in 4*N",
+    "coframe": "S_h(x)=diag(1,1,f(h*x1),f(h*x1))",
+    "profile": "f(y)=1+(1-cos(2*pi*y))/50",
+    "fixed_metric_source": "tau(y)=0 in all ten owner slots; E_Q=h^2*tau_h",
+    "connection_source": "zero",
+    "comparator": "the #216 smooth comparator on the same fixed g=S^T*eta*S",
+    "owner_norm": "unweighted sum over all sites and ten packed metric slots"
+  },
+  "candidate": "B=K1+K2+K3; U=(I-t*B/2)^(-1)*(I+t*B/2); Role0=(U,I,U^-1,I); other links=I",
+  "real_chart": "0<abs(t)<2/sqrt(3)",
+  "selected_row": "right variation L_(x,0)*exp(epsilon*J12), sum(x)=0 mod 4",
+  "exact_identity": "E_(K0,J12)(x)=-2*t*(f_n^2-f_(n-1)^2)/(4-3*t^2)",
+  "cleared_denominator": "(4-3*t^2)^4",
+  "numerator": "-2*t*(4-3*t^2)^3*(f_n^2-f_(n-1)^2)",
+  "f_n_squared_coefficients_degrees_0_to_8": [
+    0,
+    -128,
+    0,
+    288,
+    0,
+    -216,
+    0,
+    54,
+    0
+  ],
+  "f_previous_squared_coefficients_degrees_0_to_8": [
+    0,
+    128,
+    0,
+    -288,
+    0,
+    216,
+    0,
+    -54,
+    0
+  ],
+  "f_n_linear_coefficients_degrees_0_to_8": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "direct_action_controls": [
+    {
+      "t": "-1/7",
+      "literal_global_action_derivative": "-707/241250",
+      "wrong_inverse_sign": "707/241250",
+      "frozen_coframe": "0"
+    },
+    {
+      "t": "1/5",
+      "literal_global_action_derivative": "101/24250",
+      "wrong_inverse_sign": "-101/24250",
+      "frozen_coframe": "0"
+    },
+    {
+      "t": "1/4",
+      "literal_global_action_derivative": "202/38125",
+      "wrong_inverse_sign": "-202/38125",
+      "frozen_coframe": "0"
+    }
+  ],
+  "origin_value": "2*t*((1+(1-cos(2*pi/L))/50)^2-1)/(4-3*t^2)",
+  "all_mesh_conclusion": "nonzero at the origin for every L in 4*N and every nonzero t in the real chart",
+  "analytic_extension": "every positive nonconstant sampled profile has an unequal adjacent pair; choose phase 0 there",
+  "source_independence": "the failed connection row is unaffected by any independently prescribed metric source",
+  "requested_outcome": "1: coupled boost fails exact E_K=0 on the declared nonconstant coframe",
+  "gate": "JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL: COUPLED_BOOST_EXCLUDED",
+  "scope": "original coupled-boost family, not arbitrary corrected or independently coupled links",
+  "parent_task_status": "PARTIAL / OPEN; Draft / IN_PROGRESS",
+  "verdict": "COUPLED_BOOST_CURVED_REALIZABILITY_EXCLUDED"
+}

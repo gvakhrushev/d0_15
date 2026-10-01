@@ -23,3 +23,17 @@ The opposite type is already owned. The #227 family uses `B=K1+K2+K3`, not a sim
 Prescribed-source collapse is no longer a census of Y amplitudes, signs, wavelengths or common-column envelopes. Those are inside the flat class. A curved gap, if it exists, has to be coupled-role / non-simple joint structure, realized with a source fixed before the candidate. #227 is the model of the holonomy, not the witness: its response is not an independent source.
 
 Verdict: simple commuting planes removed from the closure search. Coupled joint structure remains the carrier. Lane stays `PARTIAL / OPEN`.
+
+## Exact follow-up: the original coupled boost is excluded on the curved warp
+
+The [coupled-boost realizability identity](A4D_COUPLED_BOOST_CURVED_REALIZABILITY.md)
+now tests the original #227 family itself on the fixed nonconstant
+`S_h=diag(1,1,f(hx1),f(hx1))`, with `tau=0` specified before the candidate.
+At phase zero,
+`E_(K0,J12)=-2t*(f_n^2-f_(n-1)^2)/(4-3t^2)`.
+For `f(y)=1+(1-cos(2*pi*y))/50`, this is nonzero at the origin for every
+admissible mesh and every nonzero t in the real Cayley chart. The requested
+candidate check ends at outcome 1: `COUPLED_BOOST_EXCLUDED`. The flat #227
+readout cannot be used as a curved joint-source witness by simply retaining
+those links. This does not quantify over arbitrary different coupled fields;
+the parent task remains `PARTIAL / OPEN`.

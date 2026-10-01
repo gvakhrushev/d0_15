@@ -1,5 +1,22 @@
 # A4D stationary response memory and continuum collapse boundary
 
+> **2026-10-01 coupled-boost realizability: outcome 1.**
+> [The exact shared-link identity](A4D_COUPLED_BOOST_CURVED_REALIZABILITY.md)
+> tests the original `B=K1+K2+K3`, `Role0=(Cayley(tB),I,Cayley(-tB),I)`
+> family on the fixed nonconstant coframe
+> `S_h=diag(1,1,f(hx1),f(hx1))`, `f(y)=1+(1-cos(2*pi*y))/50`, with the
+> independent source `tau=0` declared first. At phase zero the literal row is
+> `E_(K0,J12)=-2t*(f_n^2-f_(n-1)^2)/(4-3t^2)`.
+> It is nonzero at the origin for every `L in 4*N` and every nonzero t in
+> the real Cayley chart, including arbitrary nonzero t_h tending to zero.
+> Thus the requested `JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL`
+> check closes for this family by `COUPLED_BOOST_EXCLUDED`; a failed
+> connection equation cannot be repaired by assigning a metric source.
+> The complete degree-eight numerator and an independent full-action
+> derivative replay pass. The parent universal joint-response task remains
+> `PARTIAL / OPEN`, Draft / `IN_PROGRESS`; no general Einstein/no-go
+> terminal follows from excluding this candidate.
+
 > **2026-10-01 literal Euler correction.** The identity physical symbol in
 > the canonical `flat_symbols` convention is `(A^T;C)`. The former full
 > quarter first-slow injectivity and isolated rank-23 parabolic claims used
