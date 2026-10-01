@@ -923,6 +923,18 @@ refinement-uniform relative remainder in the owner topology.  The exact
 macroscopically-flat Y lift remains a positive all-order control but does not
 settle that genuinely curved reduced equation.
 
+A separate exact forcing now kills the tempting one-mode Orth3 rescue before
+any coupled-center claim is made.  The certificate
+`a4d_orth3_slow_t3h2_check.py` reconstructs the full periodic action jet and
+finds a nonzero \(t^3h\) Fredholm pairing against the exact 16-dimensional
+left kernel (`PASS_T3H_NONZERO_FREDHOLM_PAIRING`).  Thus the displayed
+`t^3 h^2` metric coefficient is only a raw uncorrected coefficient: the
+connection equation already obstructs continuation at the preceding order.
+The same replay gives `PASS_T3H2_RAW_METRIC_ZERO`, but that zero cannot be
+used as a response theorem because the required stationary range correction
+is unavailable.  This is a no-go for the one-mode Orth3 rescue, not a
+joint-critical counterexample and not a universal terminal.
+
 Keep #310 Draft / IN_PROGRESS.  Neither task-level terminal is promoted by
 this local range theorem.
 
