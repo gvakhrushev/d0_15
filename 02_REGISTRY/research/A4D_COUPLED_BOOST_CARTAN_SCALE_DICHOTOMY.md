@@ -162,7 +162,7 @@ A proof beyond this memo must recenter at that (O(h)) transport and control
 only the rough remainder.  Replacing it by identity links would reintroduce
 the background mismatch that (3) measures.
 
-## 5. Closure consequence
+## 6. Closure consequence
 
 For the temporal-(B) response-memory route, the next honest terminal object
 is now:
