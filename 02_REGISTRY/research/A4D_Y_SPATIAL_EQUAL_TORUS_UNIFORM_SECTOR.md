@@ -128,3 +128,11 @@ symmetry. Sitewise O(h^2) data also do not automatically meet the
 unweighted sum-norm hypothesis over L^4 sites. The full three-ratio
 physical torus, nonlinear curved compatibility and normalized
 comparison-response limit remain open.
+
+There is a further exact scope boundary: the
+[spatial-equal curvature-tangent theorem]
+(A4D_Y_SPATIAL_EQUAL_CURVATURE_TANGENT.md) proves that every smooth
+metric tangent in this symmetry sector has zero contraction with the
+surviving `-Y tensor Y` normal-jet curvature direction. After the owned
+joint compatibility conditions, its linearized curvature is therefore
+zero. The sector inverse cannot alone continue that nonflat normal jet.

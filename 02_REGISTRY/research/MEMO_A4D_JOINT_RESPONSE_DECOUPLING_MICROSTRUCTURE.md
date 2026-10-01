@@ -1036,3 +1036,26 @@ two-dimensional symmetry subgroup. This supersedes the preceding two
 one-dimensional sector bounds, but still leaves independent spatial
 ratios, genuinely curved joint continuation and the normalized response
 terminal open.
+
+The [spatial-equal curvature-tangent theorem]
+(A4D_Y_SPATIAL_EQUAL_CURVATURE_TANGENT.md) identifies a separate limit
+of this otherwise strong sector result. A smooth spatial-equal metric
+tangent has wave covector `(k0,ks,ks,ks)`, which annihilates the Y
+bivector. Its linearized Riemann tensor has zero `Y tensor Y` contraction
+for every symmetric metric component. The owned full normal-jet
+compatibility leaves only `-Y tensor Y`; their intersection is zero.
+This rules out a nonflat *first-order curvature tangent* to a regular
+joint branch within the spatial-equal sector at `z=1, Q=eta`. It is not
+a finite-amplitude curved-Euler no-go. A fixed nonflat comparison metric
+requires the general independent-spatial-ratio analysis or a separate
+nonlinear argument.
+
+The same theorem applies differential Bianchi to the surviving curvature
+`-kappa(x) Y tensor Y`: a smooth periodic metric tangent requires
+`partial_0 kappa=0`, `sum_i partial_i kappa=0` and `mean(kappa)=0`.
+Conversely, every smooth mean-zero transverse profile is realized by
+the geometric tangent `q=2 phi P_perp`, `Delta_perp phi=3 kappa`.
+Its character support lies on the **different**, product-closed torus
+`lambda=(1,a,b,(ab)^-1)`. This is the first rank surface aligned with
+the surviving curved normal jet. The continuous full-joint rank there,
+let alone nonlinear continuation and response, remains open.
