@@ -417,6 +417,15 @@ This is openness within the one-coordinate metric class. Adding
 dependence on a second spatial coordinate destroys the invariant sector
 and is not covered by this argument.
 
+The later [generic physical-gradient theorem]
+(A4D_ONE_COORDINATE_GENERIC_RESPONSE_ISOLATION.md) supplies an exact
+shared-link coframe derivative for which the compatibility matrix has
+full complex rank four. A nonzero polynomial minor then makes the
+present isolation conclusion hold on an **open dense** class of small
+one-coordinate metrics, including explicit genuinely curved profiles.
+This strengthens the neighborhood-of-one-warp assertion above; it does
+not extend the invariant sector to full four-dimensional metrics.
+
 ## 9. Boundaries of this closure and hostile controls
 
 The nonregular gap is removed **in the declared product-closed sector**.

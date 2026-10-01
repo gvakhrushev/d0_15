@@ -93,6 +93,17 @@ Action: unchanged naked star action; no selector, torsion equation, spectral fil
 > This also persists on a C1-open class of small one-coordinate coframes
 > with all ten metric components. General four-dimensional Target D and
 > unrestricted Target U remain open.
+>
+> The [generic one-coordinate response-isolation theorem]
+> (A4D_ONE_COORDINATE_GENERIC_RESPONSE_ISOLATION.md) strengthens this
+> scoped result. A new exact physical Gram derivative makes the literal
+> shared-link first-slow compatibility map injective on all four complex
+> quarter amplitudes: a selected minor is `(24575+18625i)/32`. Its
+> polynomial dependence on the metric derivative gives an open dense
+> class of small smooth one-coordinate metrics, including genuinely
+> curved profiles, on which nonregular `c_g*sqrt(h)` isolation and the
+> unweighted owner-sum comparator-response agreement hold. The full
+> four-dimensional joint-source task remains open.
 
 ## Inputs and response convention
 
