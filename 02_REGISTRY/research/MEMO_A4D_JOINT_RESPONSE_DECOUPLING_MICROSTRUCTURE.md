@@ -28,6 +28,12 @@ Action: unchanged naked star action; no selector, torsion equation, spectral fil
 > Target D in its nonlinear invariant one-coordinate sector. General
 > four-dimensional Target D and extra-center Target U remain open.
 > A projected range solve alone does not dispose of the center equations.
+> The [regular warped-quarter theorem]
+> (A4D_WARPED_QUARTER_REGULAR_RESPONSE.md) now also excludes every
+> regular integer-h center coefficient on sufficiently small nonconstant
+> warps: the computed shared-link compatibility misses all ten real
+> quadratic-cone planes. It gives raw owner-sum response agreement in
+> that class. Nonanalytic and nonuniform extra-center families remain open.
 
 ## Inputs and response convention
 
@@ -1202,3 +1208,56 @@ satisfy the remaining center equations exactly. Target U separately
 requires the varying-coframe response commutator and exact extra-center
 branch control with raw o(h^2), not O(h^2). No full theory, universal
 response, selector or BOOK/CORE claim is promoted. Keep Draft/IN_PROGRESS.
+
+
+## Warped regular quarter response: exact shared-link compatibility and cone exclusion
+
+[A4D_WARPED_QUARTER_REGULAR_RESPONSE.md](A4D_WARPED_QUARTER_REGULAR_RESPONSE.md)
+is a scoped Target-U theorem on fixed sufficiently small nonconstant
+one-coordinate warps. The fields retain all 24 coordinates at each of four
+fast phases, with arbitrary smooth y1 envelopes admitting a regular
+integer-h expansion beginning at h. The literal equations are E_K=0
+and all 30 nonconstant-phase metric equations; an independently prescribed
+source depending only on y1 satisfies this necessary source condition.
+No candidate-dependent source or extra-branch existence is assigned.
+
+Exact shared-link assembly includes face bases 0,-e_r,-e_s, transported
+role triangles at the shifted coframes, and the actual first smooth
+comparison log. The 20-column quarter range chart has determinant 4.
+Its remaining first-slow equation is D_f alpha'+f' B_f alpha=0 on all
+four complex role lines. At f=1, rank D=4 and rank(B,D)=6; the compatible
+amplitude plane has alpha3=-alpha2 and
+2alpha2=(1+i)alpha0-(1-i)alpha1. Thus the first-slow equation alone
+does not remove the center.
+
+The new exact checker realifies that compatibility and proves rank three
+on every one of the ten owned real quadratic-cone planes. Their common
+nonzero amplitude is therefore empty. Compact-sphere transversality
+persists in one coframe neighborhood; no numerical radius is asserted.
+For the first nonzero regular coefficient h^m, the quarter equation at
+h^(m+1) supplies first-slow compatibility, and the alternating metric
+equation at h^(2m) supplies the quadratic gate. The cubic quarter term is
+later for m>=1. The two gates force the coefficient to vanish wherever
+f'!=0, and the induced linear ODE propagates zero across the circle.
+Induction kills every regular coefficient.
+
+Consequently these exact families have delta=O(h^infinity), and
+h^-2||E_Q(K)-E_Q(K_h^sm)||_1=O(h^infinity) in the full unweighted
+owner sum, after the explicit L^4 cardinality factor. This proves
+response equivalence on the declared regular class, beyond frozen
+cellwise statements.
+
+The same certificate rejects unconditional boundary cancellation: the
+frozen-quadratic-compatible cosine pair a1=a2=1 has formal normal-graph
+h*t^2 mean readout (3/8,1/8,-1/8,-1/2,0,0,1/4,0,0,1/8), with nonzero
+remaining first-slow center rows. It is an off-shell control, not a
+stationary response counterexample. The proof uses the exact center
+equations to remove this field; it does not transplant the flat constant 81.
+The exact ledger replay and Python syntax pass.
+
+Overall PARTIAL/OPEN. The next object in this warped quarter class is a
+refinement-uniform version of this mixed-gate estimate for exact envelopes
+without a regular h expansion. General four-dimensional Target D still
+needs its actual connection inverse and exact center compatibility.
+No universal Einstein, nonlinear existence for extra center branches,
+selector, connection uniqueness or BOOK/CORE claim is promoted.

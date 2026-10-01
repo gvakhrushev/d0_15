@@ -446,6 +446,16 @@ with exact center compatibility for the actual full four-dimensional
 connection operator at `K_h^sm(g)`. Target-U additionally requires the
 varying-coframe response commutator on exact extra-center branches.
 
+The subsequent [warped regular-quarter theorem]
+(A4D_WARPED_QUARTER_REGULAR_RESPONSE.md) now addresses one part of
+Target U. Its literal first-slow shared-link compatibility and the owned
+real quadratic metric cone have no nonzero common amplitude near f=1.
+Every regular integer-h four-phase envelope on a fixed sufficiently small
+nonconstant warp is therefore flat to all orders relative to this
+comparator, with the same owner-sum response agreement. This does not
+cover nonanalytic or nonuniform exact center families, and its existential
+coframe radius is not identified with the numerical epsilon=1/50 probe.
+
 ## Reproduction
 
 ```bash
