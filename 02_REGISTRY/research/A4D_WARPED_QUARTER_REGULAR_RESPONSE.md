@@ -275,6 +275,11 @@ mixed compatibility/quadratic coercivity to exact families without the
 regular expansion assumption, with a refinement-uniform remainder in
 the actual owner topology. General Target D separately needs the
 full variable-background connection inverse and center compatibility.
+The subsequent [continuous four-phase circle theorem]
+(A4D_IDENTITY_FOURPHASE_CIRCLE_CONTROL.md) now supplies all-frequency
+joint normal/gradient control on the actual varying comparator in this
+sector. Its h*center term remains; the nonlinear mixed-gate remainder
+needed to remove the regularity assumption is still open.
 Overall PR #310 remains `PARTIAL/OPEN`, Draft / `IN_PROGRESS`; no
 BOOK/CORE, selector or task-level Einstein claim is promoted.
 

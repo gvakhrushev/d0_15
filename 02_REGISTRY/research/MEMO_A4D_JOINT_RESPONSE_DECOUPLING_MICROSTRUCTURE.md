@@ -34,6 +34,13 @@ Action: unchanged naked star action; no selector, torsion equation, spectral fil
 > warps: the computed shared-link compatibility misses all ten real
 > quadratic-cone planes. It gives raw owner-sum response agreement in
 > that class. Nonanalytic and nonuniform extra-center families remain open.
+> The [continuous four-phase circle control]
+> (A4D_IDENTITY_FOURPHASE_CIRCLE_CONTROL.md) now covers every frequency
+> of the product-closed one-envelope sector. Exact maximal-minor gcds and
+> local division give a varying-comparator joint normal/gradient estimate
+> with its explicit h*center error retained. A separate connection-only
+> perturbation bound constructs the exact designated branch for arbitrary
+> small one-coordinate coframes, with all ten metric components allowed.
 
 ## Inputs and response convention
 
@@ -1261,3 +1268,48 @@ without a regular h expansion. General four-dimensional Target D still
 needs its actual connection inverse and exact center compatibility.
 No universal Einstein, nonlinear existence for extra center branches,
 selector, connection uniqueness or BOOK/CORE claim is promoted.
+
+
+## Continuous four-phase circle and arbitrary small one-coordinate coframes
+
+[A4D_IDENTITY_FOURPHASE_CIRCLE_CONTROL.md](A4D_IDENTITY_FOURPHASE_CIRCLE_CONTROL.md)
+removes the frozen all-frequency gap on the product-closed sector
+lambda=(mu,z,mu,mu), mu^4=1, |z|=1. Two exact Gaussian-integer
+fraction-free 24-row determinant charts have gcd z^20 on the mu=-1 line
+and z^18(z-i)^6 on the mu=i line. Coefficient conjugation covers -i;
+the owned whole-circle connection inverse covers mu=1. The only physical
+zeros are the two diagonal quarter points of joint rank20.
+Exact Schur differentiation has rank4 there, so the minor gcd exponent6
+does not represent an order6 principal loss.
+
+Holomorphic one-circle division and a smooth compact-complement inverse
+produce a multiplier recovering every normal coordinate and the actual
+envelope difference. Its absolutely summable kernel and first moment,
+uniform over a small coframe family, retain all shared links on a
+varying comparator and give
+||w||_p+||D1 a||_p <= C_g (||D F_h(0) u||_p+h||u||_p)
+for every p including unweighted owner1, with no period constant.
+On a=0 this is a uniform joint normal estimate after absorption.
+The h*center term remains explicitly; no false full inverse or response
+remainder is deduced. The nonlinear nonregular mixed-gate estimate
+remains the next object in this sector.
+
+A separate connection-only perturbation proves exact designated
+continuation for every fixed smooth S(y1) with operator distance <=1/10000
+from I, allowing all ten metric components. Nuclear face-weight
+differences <=2epsilon+epsilon^2 and the 144-incidence/log count give
+||DF_h(A_sm)-H_eta||_p <=144(2epsilon+epsilon^2)+8192M_Ah.
+The owned eta inverse has norm <=35/6; both Neumann errors are <1/4
+when M_Ah<=1/200000. The actual connection derivative therefore has
+inverse norm <12, and contraction gives an exact full-carrier
+connection root with ||u||_p<=24||E_K(K_h^sm)||_p.
+Its raw h^-2 response difference is O(h^infinity) in the full owner sum.
+The coframe radius is fixed in h, and this is a recentered residual solve,
+not the weak forcing estimate involving ||g-eta||.
+
+Exact determinant/gcd, held-out polynomial evaluation, four-center
+derivative, rational rescue bounds and pinned-ledger replay pass.
+General four-dimensional metrics still break the invariant sector.
+Target D for those metrics and Target U for unrestricted nonregular
+branches remain PARTIAL/OPEN. No independent-source witness, selector,
+connection-uniqueness claim or BOOK/CORE promotion is made.
