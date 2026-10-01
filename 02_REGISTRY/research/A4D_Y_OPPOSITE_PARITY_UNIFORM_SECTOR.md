@@ -90,11 +90,13 @@ norm.
 
 The subgroup generated jointly by `Psi_L` and the previously proved
 spatial-diagonal sector contains the full two-dimensional surface
-`(mu,mu*r,mu*r,mu*r)`. Full rank on that surface has **not** been proved;
-the two sector theorems cannot be combined into a nonlinear theorem on
-their union. A fixed smooth nonconstant sampled metric generally breaks
-both symmetries. The genuinely three-ratio all-torus premise, curved
-compatibility, and normalized response limit remain open.
+`(mu,mu*r,mu*r,mu*r)`. The two one-dimensional certificates alone do
+not prove rank there; the separate
+[two-dimensional theorem](A4D_Y_SPATIAL_EQUAL_TORUS_UNIFORM_SECTOR.md)
+does and yields a uniform inverse on the generated subgroup. A fixed
+smooth nonconstant sampled metric generally breaks this symmetry. The
+genuinely three-ratio all-torus premise, curved compatibility, and
+normalized response limit remain open.
 
 Replay from the repository root:
 

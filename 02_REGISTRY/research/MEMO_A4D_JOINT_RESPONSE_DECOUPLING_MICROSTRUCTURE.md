@@ -1016,5 +1016,23 @@ rigidity, and the corresponding weak-metric size estimate on the physical
 two-parity subgroup `Psi_L={(mu,epsilon*mu,epsilon*mu,epsilon*mu):
 mu^L=1, epsilon=+/-1}`. This subgroup is closed under nonlinear products;
 the union with the spatial-diagonal subgroup is not. The rank theorem
-does not classify their generated two-dimensional surface, let alone the
+by itself does not classify their generated two-dimensional surface or the
 full three-ratio torus or fixed-curved normalized response.
+
+### Full spatial-equal physical two-torus
+
+`A4D_Y_SPATIAL_EQUAL_TORUS_UNIFORM_SECTOR.md` now classifies that
+generated surface on the **continuous physical two-torus**:
+`lambda=(mu,mu*r,mu*r,mu*r)`, `|mu|=|r|=1`. The full joint rank is 96
+except at `r=1, mu^4=1`, where it is 95 with the owned Y center.
+Exact S3 equivariance reduces 96 columns to trivial/sign/standard tests
+of 16/16/32 columns. Two determinant charts for each block, reciprocal
+gcds, a degree-120 reduced resultant with reciprocal gcd one, and three
+exact complex-line minor gcds close the full physical surface. No finite
+grid or floating singular-value extrapolation enters. The rank theorem
+and folded analytic module yield an unconditional refinement-uniform
+`l^p` inverse and flat small-chart rigidity on the nonlinear-invariant
+two-dimensional symmetry subgroup. This supersedes the preceding two
+one-dimensional sector bounds, but still leaves independent spatial
+ratios, genuinely curved joint continuation and the normalized response
+terminal open.
