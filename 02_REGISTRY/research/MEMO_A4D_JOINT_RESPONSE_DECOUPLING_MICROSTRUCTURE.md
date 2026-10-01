@@ -12,6 +12,10 @@
 > Thus the requested `JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL`
 > check closes for this family by `COUPLED_BOOST_EXCLUDED`; a failed
 > connection equation cannot be repaired by assigning a metric source.
+> The same identity also gives the full unweighted connection-residual bound
+> `||E_K||_(owner,1) >= 51*|t|*L^3/[625*(4-3t^2)]` on that profile.
+> This retains the actual phase-zero site count; it is not an averaged
+> metric-response bound or a claim that the rejected candidate is joint.
 > The complete degree-eight numerator and an independent full-action
 > derivative replay pass. The parent universal joint-response task remains
 > `PARTIAL / OPEN`, Draft / `IN_PROGRESS`; no general Einstein/no-go

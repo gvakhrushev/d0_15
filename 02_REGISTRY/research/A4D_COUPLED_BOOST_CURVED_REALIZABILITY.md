@@ -150,6 +150,42 @@ the original coupled boost is removed from the admissible joint class on
 the declared nonconstant coframe. No owner-norm claim is required for
 this rejected candidate, and tau has never been fitted to Xi.
 
+### Owner-sum consequence of the same identity
+
+Retain the full unweighted connection residual norm
+`||E_K||_(owner,1)=sum_x sum_(r=0)^3 sum_(a=0)^5 |(E_K)_(x,r;a)|`.
+Keeping only the nonnegative contributions of the selected J12 row at phase
+zero, each fixed x1=n has exactly `L^3/4` such sites: for every pair x2,x3,
+there are `L/4` possible x0 of the required residue. Thus (1) gives
+
+\[
+\|E_K(S_h,K(t))\|_{\rm owner,1}
+\ge \frac{2|t|}{4-3t^2}\frac{L^3}{4}
+\sum_{n=0}^{L-1}|f_n^2-f_{n-1}^2|.
+\tag{7}
+\]
+
+For the fixed profile (2), its sampled positive square is monotone on each
+half-circle, with minimum 1 and maximum `(26/25)^2`. For every `L in 4*N`
+these extrema are sampled, so its total variation is exactly
+`2[(26/25)^2-1]=102/625`. Consequently
+
+\[
+\boxed{
+\|E_K(S_h,K(t))\|_{\rm owner,1}
+\ge \frac{51|t|L^3}{625(4-3t^2)}.
+}
+\tag{8}
+\]
+
+The `L^3/4` factor counts the selected physical sites; it is not an average
+or a norm normalized by the lattice volume. This is a connection-residual
+bound, not a claim about the metric response gap. It may tend to zero if t_h
+does so sufficiently fast, but (6) still forbids **exact** stationarity at
+every mesh with nonzero t_h. Outcome 1 therefore has no small-amplitude
+exception. The all-L bound follows from the same identity; it introduces no
+additional family or sector.
+
 ## 5. Replay and scope
 
 ```sh
@@ -163,6 +199,10 @@ itself, enumerates every based face, and detects both an inverse-variation
 sign mutation and replacement of neighboring coframes by the origin's
 coframe. The continuum/all-mesh conclusion is (6), not extrapolation from
 those rational controls.
+The owner-sum control additionally differentiates the full action at each
+of the four slow-coordinate values, counts every phase-zero site at L=4,
+and checks the coefficient `51/625`. The all-mesh count and variation
+formula are the analytic arguments above, not a finite-grid extrapolation.
 
 Verdict: `COUPLED_BOOST_CURVED_REALIZABILITY_EXCLUDED`.
 The requested `JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL` check for

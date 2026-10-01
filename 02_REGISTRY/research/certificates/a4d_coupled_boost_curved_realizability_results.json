@@ -74,6 +74,29 @@
   "all_mesh_conclusion": "nonzero at the origin for every L in 4*N and every nonzero t in the real chart",
   "analytic_extension": "every positive nonconstant sampled profile has an unequal adjacent pair; choose phase 0 there",
   "source_independence": "the failed connection row is unaffected by any independently prescribed metric source",
+  "connection_owner_sum": {
+    "norm": "sum over all sites, four roles and six Lorentz Euler components; no site-count normalization",
+    "phase_zero_multiplicity_at_each_x1": "L^3/4 for L in 4*N",
+    "sampled_profile_total_variation": "102/625 for every L in 4*N",
+    "lower_bound": "||E_K||_owner1 >= 51*abs(t)*L^3/(625*(4-3*t^2))",
+    "L4_direct_action_control": {
+      "t": "1/5",
+      "four_slow_site_derivatives": [
+        "101/24250",
+        "-101/24250",
+        "-103/24250",
+        "103/24250"
+      ],
+      "multiplicities": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "selected_phase_zero_sum": "3264/12125"
+    },
+    "all_mesh_proof": "analytic residue counting and monotonicity; the finite control checks coefficient and normalization"
+  },
   "requested_outcome": "1: coupled boost fails exact E_K=0 on the declared nonconstant coframe",
   "gate": "JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL: COUPLED_BOOST_EXCLUDED",
   "scope": "original coupled-boost family, not arbitrary corrected or independently coupled links",

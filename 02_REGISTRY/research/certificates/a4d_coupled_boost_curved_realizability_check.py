@@ -82,16 +82,17 @@ def cayley(t):
     return u
 
 
-def direct_lattice_derivative(t, *, wrong_inverse_sign=False,
+def direct_lattice_derivative(t, *, varied_site=(0, 0, 0, 0), wrong_inverse_sign=False,
                               freeze_face_coframe=False):
-    """Differentiate the full L=4 periodic action at the origin's link.
+    """Differentiate the full L=4 periodic action at one phase-zero link.
 
     Enumerating all based faces independently checks the local incidence
     placement. The only varying link is L_(0,0), with right variation L*J12.
     Rational f samples are the exact samples of the declared cosine warp.
     """
     L = 4
-    origin = (0, 0, 0, 0)
+    origin = tuple(varied_site)
+    assert sum(origin) % 4 == 0
     samples = (F(1), F(51, 50), F(26, 25), F(51, 50))
     u = cayley(t)
     ui = adjoint(u)
@@ -180,6 +181,27 @@ def run_checks():
     print("PASS_INDEPENDENT_FULL_PERIODIC_ACTION_DERIVATIVE", flush=True)
     print("PASS_INVERSE_SIGN_AND_FROZEN_FACE_HOSTILE_CONTROLS", flush=True)
 
+    # The same selected row gives an unweighted owner-sum lower bound.
+    # The all-L counting/monotonicity argument is written in the proof owner.
+    # Here all four slow-coordinate values are checked by independent full
+    # action derivatives; the multiplicity is the actual phase-zero count.
+    t = F(1, 5)
+    samples = (F(1), F(51, 50), F(26, 25), F(51, 50))
+    total_variation = sum(abs(samples[n]**2-samples[n-1]**2) for n in range(4))
+    assert total_variation == F(102, 625)
+    derivatives = []
+    for n in range(4):
+        site = ((-n) % 4, n, 0, 0)
+        value = direct_lattice_derivative(t, varied_site=site)
+        assert value == -2*t*(samples[n]**2-samples[n-1]**2)/(4-3*t*t)
+        derivatives.append(value)
+    multiplicities = [sum(1 for x in product(range(4), repeat=4)
+                          if x[1] == n and sum(x) % 4 == 0) for n in range(4)]
+    assert multiplicities == [4**3//4]*4
+    selected_sum = sum(m*abs(value) for m,value in zip(multiplicities,derivatives))
+    assert selected_sum == F(51, 625)*abs(t)*4**3/(4-3*t*t)
+    print("PASS_UNWEIGHTED_OWNER_SUM_FROM_THE_SAME_IDENTITY", flush=True)
+
     return {
         "schema": "a4d-coupled-boost-curved-realizability-v1",
         "input_head": INPUT_HEAD,
@@ -199,6 +221,17 @@ def run_checks():
         "all_mesh_conclusion": "nonzero at the origin for every L in 4*N and every nonzero t in the real chart",
         "analytic_extension": "every positive nonconstant sampled profile has an unequal adjacent pair; choose phase 0 there",
         "source_independence": "the failed connection row is unaffected by any independently prescribed metric source",
+        "connection_owner_sum": {
+            "norm": "sum over all sites, four roles and six Lorentz Euler components; no site-count normalization",
+            "phase_zero_multiplicity_at_each_x1": "L^3/4 for L in 4*N",
+            "sampled_profile_total_variation": "102/625 for every L in 4*N",
+            "lower_bound": "||E_K||_owner1 >= 51*abs(t)*L^3/(625*(4-3*t^2))",
+            "L4_direct_action_control": {"t": str(t),
+                                         "four_slow_site_derivatives": list(map(str,derivatives)),
+                                         "multiplicities": multiplicities,
+                                         "selected_phase_zero_sum": str(selected_sum)},
+            "all_mesh_proof": "analytic residue counting and monotonicity; the finite control checks coefficient and normalization",
+        },
         "requested_outcome": "1: coupled boost fails exact E_K=0 on the declared nonconstant coframe",
         "gate": "JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL: COUPLED_BOOST_EXCLUDED",
         "scope": "original coupled-boost family, not arbitrary corrected or independently coupled links",
