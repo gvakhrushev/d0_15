@@ -1,0 +1,68 @@
+{
+  "schema": "a4d-identity-rank23-parabolic-resonance-v1",
+  "terminal": "A4D-IDENTITY-RANK23-RESONANCE-PARABOLIC-ORDER2",
+  "representative": [
+    "1",
+    "1",
+    "i",
+    "i"
+  ],
+  "joint_rank": 23,
+  "center_complex_dimension": 1,
+  "range_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    26
+  ],
+  "range_determinant": "-16*I*(-1 - I)",
+  "first_slow_real_rank": 3,
+  "first_slow_real_kernel": [
+    0,
+    0,
+    -1,
+    1
+  ],
+  "row30_first_derivative": [
+    "-1/2-I/2",
+    "-1/2-I/2",
+    "0",
+    "0"
+  ],
+  "characteristic_x_second_row30": "-4 + 4*I",
+  "characteristic_angular_second_cokernel_pairing": "-8",
+  "literal_rank23_points": [
+    ["1","I","I","1"],
+    ["1","-I","-I","1"],
+    ["1","I","1","I"],
+    ["1","-I","1","-I"],
+    ["1","1","I","I"],
+    ["1","1","-I","-I"]
+  ],
+  "local_consequence": "after range elimination the center residual is linear in three transverse real detunings and quadratic in the unique characteristic detuning; local inverse loss is at worst distance^-2",
+  "scope_fence": [
+    "local identity-sheet resonance only",
+    "does not classify the full physical torus singular set",
+    "does not prove the varying-background nonlinear stationary correspondence",
+    "does not by itself prove a global h^-2 inverse bound"
+  ]
+}
