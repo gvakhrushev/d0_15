@@ -45,6 +45,13 @@
 > The physical TT-defect interpretation at `ea6e9d0` is superseded. Its mixed metric/connection Bloch placement was swapped. The corrected convention is connection-side `lambda^(-s)` and metric-readout `lambda^(+s)`, derived from the actual face-base and shifted-link placement. The flat `z=0` control could not detect the sign error.
 >
 > The corrected four-direction, 20-curvature normal-jet certificate now passes exactly. Full joint compatibility leaves one curved spatial direction, and imposing only fast-phase erasure makes its common metric response equal the independently constructed flat Einstein response. This is a finite normal-jet theorem, not a nonlinear or refinement-uniform theorem.
+>
+> The [two-shear coframe certificate](A4D_TWO_SHEAR_FLAT_CIRCLE_LIFT.md)
+> proves that all six continuous **flat** physical resonance circles are
+> lifted away from the diagonal quarter points at one nonorthogonal frozen
+> coframe, using exact determinant polynomials and unit-root exclusion.
+> This does not classify new off-circle zeros or establish a varying-metric
+> owner-sum response theorem.
 
 > A designated-sheet recentering audit now separates the proved IR inverse
 > from a false full spectral-gap premise. The literal flat quarter symbol
