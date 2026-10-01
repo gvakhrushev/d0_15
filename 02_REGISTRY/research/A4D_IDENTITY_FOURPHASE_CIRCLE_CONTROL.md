@@ -75,9 +75,11 @@ There are 4L characters. This subgroup is closed under products, hence
 the field sector is closed under the literal nonlinear equation. It
 allows arbitrary n dependence; no slow-frequency support is imposed.
 The only frozen physical zeros are `(i,i,i,i)` and its conjugate.
-The six rank-23 identity resonances from the other owner are outside
-this sector, because their temporal character is 1 and their three
-transverse characters are not equal.
+The six continuous physical rank-23 circles certified in
+[A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md](A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md)
+meet this sector only at its diagonal quarter pair. Substituting
+`lambda=(mu,z,mu,mu)` in each circle forces all four phases to i or -i.
+Thus no additional circle character enters the present estimate.
 
 On the quarter channels decompose u into the four role-center columns
 N and the fixed twenty-column complement B:

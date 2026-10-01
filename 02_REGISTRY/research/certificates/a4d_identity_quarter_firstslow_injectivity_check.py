@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
-"""Exact first-slow injectivity of the full identity-quarter joint center.
+"""Quarantined exact algebra of the wrong-placement stack (A;C).
 
-At the flat identity connection and diagonal quarter character (i,i,i,i),
-the literal stacked joint symbol J=(A;C) has complex nullity four, one
-role-supported physical line per role. This checker eliminates an exact
-20-column range chart and computes the first angular derivative of the
-reduced 4-center symbol. It certifies that the reduced symbol has complex
-column rank four for every nonzero real slow covector.
-
-This is a frozen flat first-slow theorem. It is not a varying-coframe
-nonlinear continuation or a full-Bloch H_TORUS theorem.
+This is a negative control, not the literal Euler symbol (A^T;C).
+Its algebraic ranks/derivatives are retained to reproduce the placement
+error. Physical conclusions are superseded by the resonance-circle audit.
 """
 from __future__ import annotations
 from itertools import combinations
@@ -84,7 +78,7 @@ def flat_symbols(phase):
 
 def joint(phase):
     A,C=flat_symbols(phase)
-    return A.col_join(C)
+    return A.col_join(C)  # intentional wrong-placement control
 
 quarter=[I]*4
 J0=joint(quarter)
@@ -198,8 +192,8 @@ gamma_hash=hashlib.sha256("|".join(matrix_text(x)
                                     for x in Gammas).encode()).hexdigest()
 
 result={
- "schema":"a4d-identity-quarter-firstslow-injectivity-v1",
- "terminal":"A4D-IDENTITY-QUARTER-FULL-CENTER-FIRSTSLOW-INJECTIVE",
+ "schema":"a4d-identity-quarter-firstslow-placement-control-v2",
+ "terminal":"A4D-IDENTITY-WRONG-PLACEMENT-FIRSTSLOW-CONTROL",
  "background":"flat identity connection and solder",
  "quarter_character":["i","i","i","i"],
  "joint_shape":[34,24],
@@ -215,7 +209,10 @@ result={
  "groebner_real_minor_count":len(polys),
  "resultant":str(P),
  "resultant_sos":"(b^2+b-1/2)^2 + 4(b-3/8)^2 + 3/16",
+ "operator":"NONPHYSICAL CONTROL J_wrong=(A;C); literal Euler is (A^T;C)",
+ "physical_interpretation_superseded_by":"A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md",
  "scope_fence":[
+   "wrong-placement algebra only; no physical injectivity, isolation, or inverse-loss claim",
    "frozen flat identity-quarter first-slow symbol only",
    "does not prove a varying-coframe nonlinear branch",
    "does not prove H_TORUS or an all-Bloch range inverse",

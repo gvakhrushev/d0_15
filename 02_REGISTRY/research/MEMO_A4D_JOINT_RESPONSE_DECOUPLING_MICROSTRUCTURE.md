@@ -1,5 +1,16 @@
 # A4D joint response decoupling — corrected Y normal-jet result
 
+> **2026-10-01 literal Euler correction.** The identity physical symbol in
+> the canonical `flat_symbols` convention is `(A^T;C)`. The former full
+> quarter first-slow injectivity and isolated rank-23 parabolic claims used
+> `(A;C)` and are withdrawn as physical conclusions. Independent literal
+> face differentiation certifies six continuous identity-sheet resonance
+> circles. See [the corrected owner](A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md).
+> New exact quadratic/cubic gates exclude small phase-erased nonlinear roots
+> at three four-phase circle carriers; an all-frequency even-range Laurent
+> inverse is also certified. These are scoped results. General full4D curved
+> Target D and unrestricted Target U remain PARTIAL/OPEN.
+
 > **Finite normal-jet compatibility is certified; the nonlinear continuum gate remains open.**
 >
 > The physical TT-defect interpretation at `ea6e9d0` is superseded. Its mixed metric/connection Bloch placement was swapped. The corrected convention is connection-side `lambda^(-s)` and metric-readout `lambda^(+s)`, derived from the actual face-base and shifted-link placement. The flat `z=0` control could not detect the sign error.
@@ -1218,8 +1229,8 @@ validated finite-mesh roots or a prescribed joint-source witness.
 The two-sided polynomial certificate, pinned JSON and syntax replay pass.
 
 This is a scoped exact curved continuation theorem, beyond the already
-owned IR-only estimate. All diagonal-quarter and six rank-23 transverse
-joint characters are outside its invariant sector. General Target D
+owned IR-only estimate. The diagonal quarter fibers and all six continuous physical rank-23
+circles are outside this phase-common invariant sector. General Target D
 still requires an inverse/compatibility theorem for the actual full
 four-dimensional connection operator at K_h^sm(g); joint principal-symbol
 rank is not by itself that theorem. A range solve with delta_C=0 must also
@@ -1376,3 +1387,74 @@ four-dimensional metrics, the remaining identity torus resonances,
 other carriers and finite-amplitude branches are outside this theorem.
 The full task therefore remains PARTIAL/OPEN, Draft/IN_PROGRESS;
 no independent-source existence, selector or BOOK/CORE claim is promoted.
+
+
+## Literal identity circles and nonlinear gates: Euler-placement correction
+
+The independent literal Hessian/readout audit proves coefficientwise that the
+physical identity `34x24` symbol is `(A^T;C)`, by all 81 Laurent interpolation
+nodes. At `(a,a,i,i)`, `a=(3+4i)/5`, its rank is 23 while `(A;C)` has rank 24.
+The earlier identity first-slow and rank-23 parabolic memos now quarantine
+that wrong-placement algebra. Their scripts and ledgers preserve its exact
+numbers solely as negative controls. The all-real-covector physical
+injectivity and eight-isolated-points premise are withdrawn.
+
+The [new circle owner](A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md) gives a
+polynomial kernel on every `(a,a,i,i)`, and maximal-minor gcd
+`a^15(a-i)^4`. Two spatial permutations and conjugation give six physical
+circles; all have rank 23 off their diagonal quarter intersection, which has
+rank 20. Their kernel coordinates grow with the lattice period. At the
+quarter point, the physical first opening on `(1,1,0,0)` has rank three and
+kills `(0,0,1,1)`. At `(1,1,i,i)` the physical real first derivative has rank
+two with kernel spanned by `(1,1,0,0)` and `(0,0,1,-1)`. No full torus zero
+classification or finite polynomial inverse loss follows.
+
+The [nonlinear gate owner](A4D_IDENTITY_RESONANCE_CIRCLE_NONLINEAR_GATES.md)
+retains all 96 real log coordinates in each of the three invariant phase
+sectors with increments `(0,0,1,1)`, `(2,2,1,1)`, `(3,3,1,1)`. Exact normal
+elimination reconstructs all ten quadratic metric slots. On the first two
+carriers their sup norm is at least `(a^2+b^2)/2`. On the third the quadratic
+gate leaves `ab=0`, but the first reduced cubic row on the axes is
+`(-1+i)a^3/8` and `(1+i)b^3/8`. Normal IFT and fast parity therefore exclude
+all sufficiently small nonzero exact EK-stationary fields whose noncommon
+metric response vanishes in each of these fixed sectors, uniformly in L.
+This proof does not assume a center-only candidate or an h-expansion.
+
+The further even-range certificate proves `H(b)B(b)=B(b)H(b)=I24` for every
+nonzero complex b at `(b,b,-1,-1)`. Its determinant is exactly 256; B has
+radius three and coefficient row/column envelopes 9/2. Finite convolution
+therefore gives the same bound on all lp spaces and periods, including the
+unweighted owner sum. This controls all even output frequencies generated
+by a circle envelope. It does not invert the odd circle center or the full
+curved Hessian. The new two-frequency Laurent vertex goes further: the full
+alternating quadratic metric gate for an arbitrary complex circle envelope Z
+vanishes only on Z=0 or Z_n=t*epsilon_n*i^n (and its i multiple), with constant
+positive modulus t and arbitrary signs epsilon_n. This follows from the exact
+pointwise axis constraint Im(Z_n^2)=0 and the definite neighboring-pair
+constraint Re(Z_(n+1)^2-Z_(n+1)*Z_(n+2)+Z_(n+2)^2)=0. All coefficients,
+actual boundary links and the even normal correction are retained. General
+sign sequences have not passed the cubic gate; multiple circles, additional
+quarter coordinates and their varying-coframe coupling remain open.
+
+The attached finite-amplitude Y replay is also repaired independently. Its
+metric covariance test used a connection-row phase for 783 metric entries.
+Using the true metric phase `r//10` gives zero violations. Exact reciprocity,
+four rank-95 folds, three rational rank-96 controls and derivative envelope
+22/7 on all axes are replayed. Characteristic-zero lower ranks are witnessed
+by nonzero minors modulo the independently verified good prime 65521;
+coefficientwise kernels/covariance supply the folded upper bound. This is the
+different Y `136x96` symbol and does not classify its continuous torus.
+
+New replays (all compare the pinned ledger by default):
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_identity_physical_resonance_circles_check.py
+python3 02_REGISTRY/research/certificates/a4d_identity_resonance_circle_nonlinear_gates_check.py
+python3 02_REGISTRY/research/certificates/a4d_identity_circle_even_inverse_check.py
+python3 02_REGISTRY/research/certificates/a4d_identity_circle_bilinear_gate_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_joint_symbol_independent_replay.py
+```
+
+Overall status remains PARTIAL/OPEN; no full4D exact continuation,
+unrestricted response limit, independent-source counterexample, selector,
+action change or BOOK/CORE promotion is made.

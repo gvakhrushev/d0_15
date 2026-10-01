@@ -1,6 +1,6 @@
 {
-  "schema": "a4d-identity-quarter-firstslow-injectivity-v1",
-  "terminal": "A4D-IDENTITY-QUARTER-FULL-CENTER-FIRSTSLOW-INJECTIVE",
+  "schema": "a4d-identity-quarter-firstslow-placement-control-v2",
+  "terminal": "A4D-IDENTITY-WRONG-PLACEMENT-FIRSTSLOW-CONTROL",
   "background": "flat identity connection and solder",
   "quarter_character": [
     "i",
@@ -70,9 +70,12 @@
   "resultant": "b**4 + 2*b**3 + 4*b**2 - 4*b + 1",
   "resultant_sos": "(b^2+b-1/2)^2 + 4(b-3/8)^2 + 3/16",
   "scope_fence": [
+    "wrong-placement algebra only; no physical injectivity, isolation, or inverse-loss claim",
     "frozen flat identity-quarter first-slow symbol only",
     "does not prove a varying-coframe nonlinear branch",
     "does not prove H_TORUS or an all-Bloch range inverse",
     "does not by itself give the h^-2 metric-response limit"
-  ]
+  ],
+  "operator": "NONPHYSICAL CONTROL J_wrong=(A;C); literal Euler is (A^T;C)",
+  "physical_interpretation_superseded_by": "A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md"
 }

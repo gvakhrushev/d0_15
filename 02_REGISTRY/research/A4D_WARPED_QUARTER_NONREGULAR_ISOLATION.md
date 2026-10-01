@@ -437,8 +437,10 @@ Several scope restrictions remain essential:
   unequal to the designated readout can have no root in this neighborhood;
   no general source-existence claim has been made.
 * The continuous circle covers Sigma_L, not the full four-dimensional
-  frequency torus. The additional rank-23 identity resonances and other
-  possible torus components are outside this sector. The finite-amplitude
+  frequency torus. The six continuous physical rank-23 circles enter Sigma_L only
+  at its quarter pair; their remaining characters and other possible
+  torus components are outside this sector. The physical circle audit
+  supersedes the former isolated-points interpretation. The finite-amplitude
   Y H_TORUS problem is also a separate symbol.
 * For a general fixed four-dimensional g, exact designated center
   compatibility and a sufficient range estimate remain unproved. The

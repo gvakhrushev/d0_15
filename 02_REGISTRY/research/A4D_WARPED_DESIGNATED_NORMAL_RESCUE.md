@@ -87,8 +87,9 @@ curved comparator, not a forcing estimate involving `||g-eta||`.
 The solution is locally unique in a sufficiently small X_L neighborhood. No
 uniqueness among arbitrary four-dimensional connection fields is asserted.
 All fields in X_L have transverse characters `(z0,z2,z3)=(1,1,1)`;
-the diagonal quarter center and the six subsequently owned rank-23 joint
-resonances are absent from this sector. Its correction therefore has zero
+the diagonal quarter center and all six continuous physical rank-23
+circles are absent from this sector. See the corrected
+[A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md](A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md). Its correction therefore has zero
 coordinate on those resonant fibers without a nonlinear Fourier cutoff.
 The sector is preserved by the full equation, and the construction solves
 all its connection rows rather than only a projected range equation.

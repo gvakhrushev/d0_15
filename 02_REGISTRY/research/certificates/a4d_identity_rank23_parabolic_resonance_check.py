@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Exact parabolic unfolding of the rank-23 identity joint resonance."""
+"""Quarantined exact algebra of the wrong-placement stack (A;C).
+
+This is a negative control, not the literal Euler symbol (A^T;C).
+Its algebraic ranks/derivatives are retained to reproduce the placement
+error. Physical conclusions are superseded by the resonance-circle audit.
+"""
 from __future__ import annotations
 import json, runpy, sys
 from pathlib import Path
@@ -73,7 +78,7 @@ ck("ROW30_FIRST_DERIVATIVE",
    [sp.simplify(g[r30]) for g in gam]
    ==[-sp.Rational(1,2)-I/2,-sp.Rational(1,2)-I/2,0,0])
 
-# Physical characteristic path:
+# Characteristic path of the wrong-placement control:
 # z2=i exp(i s), z3=i exp(-i s).
 # Put x=exp(i s), so z2=i x, z3=i/x. Since the first derivative
 # vanishes, the angular second derivative is minus the x-second derivative.
@@ -109,8 +114,8 @@ for pair in ((1,2),(1,3),(2,3)):
 ck("SIX_LITERAL_RANK23_POINTS",all(J(p).rank()==23 for p in pts))
 
 result={
- "schema":"a4d-identity-rank23-parabolic-resonance-v1",
- "terminal":"A4D-IDENTITY-RANK23-RESONANCE-PARABOLIC-ORDER2",
+ "schema":"a4d-identity-rank23-parabolic-placement-control-v2",
+ "terminal":"A4D-IDENTITY-WRONG-PLACEMENT-PARABOLIC-CONTROL",
  "representative":["1","1","i","i"],
  "joint_rank":23,
  "center_complex_dimension":1,
@@ -123,7 +128,10 @@ result={
  "characteristic_angular_second_cokernel_pairing":str(ell),
  "literal_rank23_points":[[str(x) for x in p] for p in pts],
  "local_consequence":"after range elimination the center residual is linear in three transverse real detunings and quadratic in the unique characteristic detuning; local inverse loss is at worst distance^-2",
+ "operator":"NONPHYSICAL CONTROL J_wrong=(A;C); literal Euler is (A^T;C)",
+ "physical_interpretation_superseded_by":"A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md",
  "scope_fence":[
+   "wrong-placement algebra only; no physical injectivity, isolation, or inverse-loss claim",
    "local identity-sheet resonance only",
    "does not classify the full physical torus singular set",
    "does not prove the varying-background nonlinear stationary correspondence",

@@ -1,6 +1,6 @@
 {
-  "schema": "a4d-identity-rank23-parabolic-resonance-v1",
-  "terminal": "A4D-IDENTITY-RANK23-RESONANCE-PARABOLIC-ORDER2",
+  "schema": "a4d-identity-rank23-parabolic-placement-control-v2",
+  "terminal": "A4D-IDENTITY-WRONG-PLACEMENT-PARABOLIC-CONTROL",
   "representative": [
     "1",
     "1",
@@ -51,18 +51,51 @@
   "characteristic_x_second_row30": "-4 + 4*I",
   "characteristic_angular_second_cokernel_pairing": "-8",
   "literal_rank23_points": [
-    ["1","I","I","1"],
-    ["1","-I","-I","1"],
-    ["1","I","1","I"],
-    ["1","-I","1","-I"],
-    ["1","1","I","I"],
-    ["1","1","-I","-I"]
+    [
+      "1",
+      "I",
+      "I",
+      "1"
+    ],
+    [
+      "1",
+      "-I",
+      "-I",
+      "1"
+    ],
+    [
+      "1",
+      "I",
+      "1",
+      "I"
+    ],
+    [
+      "1",
+      "-I",
+      "1",
+      "-I"
+    ],
+    [
+      "1",
+      "1",
+      "I",
+      "I"
+    ],
+    [
+      "1",
+      "1",
+      "-I",
+      "-I"
+    ]
   ],
   "local_consequence": "after range elimination the center residual is linear in three transverse real detunings and quadratic in the unique characteristic detuning; local inverse loss is at worst distance^-2",
   "scope_fence": [
+    "wrong-placement algebra only; no physical injectivity, isolation, or inverse-loss claim",
     "local identity-sheet resonance only",
     "does not classify the full physical torus singular set",
     "does not prove the varying-background nonlinear stationary correspondence",
     "does not by itself prove a global h^-2 inverse bound"
-  ]
+  ],
+  "operator": "NONPHYSICAL CONTROL J_wrong=(A;C); literal Euler is (A^T;C)",
+  "physical_interpretation_superseded_by": "A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md"
 }
