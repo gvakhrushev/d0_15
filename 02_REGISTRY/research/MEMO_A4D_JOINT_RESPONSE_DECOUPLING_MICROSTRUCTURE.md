@@ -196,6 +196,20 @@ above this gives a distributional zero normalized response on `eta`.
 It does not control other resonances, a fixed curved metric or the owner
 sum norm.
 
+The [frozen curved Y-line theorem](A4D_Y_FROZEN_CURVED_CORRELATION_NULL.md)
+extends the quadratic cancellation to one transported quarter-kernel
+direction for every constant coframe in the owner's spacelike-plane
+chart. The exact moving-plane joint family can be reparametrized as a
+straight exponential-log line through the identity; differentiating its
+all-row metric Euler identity twice makes the quadratic readout zero
+on that Y tangent. Translation by one phase removes the cosine/sine
+cross term, so every positive correlation measure supported on the
+frozen Y line has zero defect integrand pointwise even for a smooth
+varying `g(x)`. Under the conditional law's strong-residual and source
+hypotheses this yields **distributional** normalized response
+decoupling in that microlocal class. It does not cover other kernel
+directions, finite-amplitude microstructure or the owner sum norm.
+
 ## Corrected finite response across the four Bloch axes
 
 `a4d_y_curved_response_phase_corrected_check.py` independently reconstructs the 96-by-96 connection Hessian and the 10-component low-color response with the corrected mixed phase convention. It verifies the submitted aggregate ledger in `a4d_y_curved_response_corrected_report.json` and writes `a4d_y_curved_response_phase_corrected_results.json`.
