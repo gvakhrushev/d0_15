@@ -227,6 +227,19 @@ even for a genuinely curved smooth sampled metric. This does not prove
 nonlinear realizability, arbitrary-Bloch decoupling, finite-amplitude
 response, or the owner-sum limit.
 
+The [generic-coframe nonlinear quarter theorem]
+(A4D_IDENTITY_QUARTER_GENERIC_COFRAME_NONLINEAR.md) also extends the flat
+eight-axis classification and the phase-common response gain to every
+**constant** coframe in a sufficiently small neighborhood of `eta`.
+Exact role permutation plus polynomial continuation make each of the
+eight axes a full joint vacuum at such a coframe; stability of the flat
+quadratic/cubic gates excludes other nearby four-phase stationary
+branches. Uniformly on compact coframe families,
+`||M_S(l)|| <= C||l||||F_S(l)||`. An exact nonorthogonal rational control
+checks all 96 connection and 64 unrestricted solder rows on every
+axis. The theorem still does not glue varying coframes or supply the
+owner-sum `o(h^2)` response difference for the task's full sequences.
+
 ## Corrected finite response across the four Bloch axes
 
 `a4d_y_curved_response_phase_corrected_check.py` independently reconstructs the 96-by-96 connection Hessian and the 10-component low-color response with the corrected mixed phase convention. It verifies the submitted aggregate ledger in `a4d_y_curved_response_corrected_report.json` and writes `a4d_y_curved_response_phase_corrected_results.json`.

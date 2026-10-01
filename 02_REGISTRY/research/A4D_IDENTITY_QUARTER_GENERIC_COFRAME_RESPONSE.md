@@ -103,8 +103,10 @@ quarter kernel `W_Q`, at every `Q` in the stated chart. The real
 conjugate character obeys the same identity. This explains the exact
 zero of all 36 flat quadratic mean coefficients in the separate
 identity-quarter nonlinear owner, and extends that **quadratic** zero
-to nearby nonflat constant coframes. It does not extend that owner's
-eight-axis nonlinear classification to variable `Q`.
+to nearby nonflat constant coframes. The subsequent
+[generic-coframe nonlinear theorem](A4D_IDENTITY_QUARTER_GENERIC_COFRAME_NONLINEAR.md)
+does extend the eight-axis classification and local response gain to
+constant coframes near the identity. It does not glue a varying `Q`.
 
 ## Conditional curved response consequence
 
