@@ -236,6 +236,16 @@ def run_checks():
 
     constant, linear, coordinate = circle_kernel(1)
     n = ((constant+linear)/(constant[coordinate])).reshape(24, 1)
+    mixed_point = [QI.of(1), QI.of(1), Q, Q]
+    assert not np.any(joint(mixed_point)@n)
+    # Face (0,2): dF=(1-lambda2)u0+(lambda0-1)u2.
+    # Here u0=-K1, so dF=(i-1)K1 !=0. A pure gauge at I
+    # has u_r=(lambda_r-1)theta and zero linear plaquette curvature.
+    assert n[0, 0] == QI.of(-1)
+    linear_curvature_coefficient = (1-Q)*n[0, 0]
+    assert linear_curvature_coefficient == Q-1 and linear_curvature_coefficient
+    assert mixed_point not in ([Q]*4, [-Q]*4)
+    print('PASS_NONGAUGE_EXACT_KERNEL_OUTSIDE_DIAGONAL_QUARTER_FIBERS', flush=True)
     complement = [j for j in range(24) if j != coordinate]
     _, r23, rest23, g23 = reduce_gamma([QI.of(1), QI.of(1), Q, Q], n, complement)
     real = np.array([[g[row, 0].re for g in g23] for row in range(11)]
@@ -265,6 +275,16 @@ def run_checks():
         'rank23_other_firstslow_null_direction': second_direction,
         'rank23_firstslow_real_matrix': [[str(x) for x in row] for row in real],
         'rank23_schur_along_circle': 'identically zero, by the global polynomial kernel with a nonzero constant center coordinate',
+        'quarter_only_complement_counterexample': {
+            'metric': 'eta; smooth comparator I', 'periods': 'every L divisible by 4',
+            'real_field': 'Re(i^(x2+x3) v(1))',
+            'characters': ['(1,1,i,i)', '(1,1,-i,-i)'],
+            'connection_and_metric_linear_residual': 'exactly zero',
+            'diagonal_quarter_projection': 'exactly zero by distinct discrete Fourier characters',
+            'linear_plaquette_curvature_face_0_2': '(i-1)K1 !=0',
+            'nongauge_reason': 'pure gauge at I has zero linear plaquette curvature',
+            'consequence': 'no inverse with any finite h loss on a complement that removes only the diagonal quarter fibers',
+            'scope': 'refutes that linear range-inverse premise, not existence of the designated flat root or continuum response universality'},
         'superseded_physical_claims': ['full first-slow injectivity of the quarter center for all real k !=0',
                                        'isolated parabolic rank23 points and an eight-point physical torus premise'],
         'one_coordinate_owners': 'unchanged: their physical (A^T;C) circle is different and has only the two quarter folds',

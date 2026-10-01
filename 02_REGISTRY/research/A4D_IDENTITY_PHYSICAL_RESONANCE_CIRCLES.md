@@ -95,6 +95,39 @@ circle vanishes to every order. No higher-order transverse classification is
 claimed. The former eight-point physical torus premise cannot supply an
 inverse or a finite polynomial range-loss theorem.
 
+## Exact failure of a quarter-only range inverse
+
+For every `L in 4N`, set `g=eta`, `K_sm=I` and
+
+\[
+u_x=\operatorname{Re}\bigl[i^{x_2+x_3}v(1)\bigr].
+\]
+
+This nonzero real lattice field has only characters `(1,1,i,i)` and its
+conjugate. Both its linear connection residual and its linear metric readout
+vanish exactly. Its projection on the diagonal quarter pair is zero, since
+those discrete Fourier characters are distinct. Thus a complement removing
+only the diagonal quarter fibers still contains an exact kernel, even for
+each fixed mesh. No inverse on that complement can have any finite `h^-p`
+bound.
+
+This is not a gauge direction. In face `(0,2)` its linear curvature is
+
+\[
+(1-i)u_0+(1-1)u_2=(i-1)K_1\ne0.
+\]
+
+An infinitesimal pure gauge at I has
+`u_r=(lambda_r-1)theta` and zero linear plaquette curvature. The certificate
+checks the nonzero curvature coefficient exactly.
+
+This refutes the proposed universal quarter-only linear range-inverse lemma.
+It does not refute the designated flat root, which exists exactly, and does
+not construct a nonlinear Einstein-response counterexample. A full Target-D
+proof must enlarge the transported resonant center or use a different exact
+solvability argument. For a strictly curved fixed metric, lifting of these
+centers and the remaining connection equations still require proof.
+
 ## Nonlinear meaning and scope
 
 A frozen kernel is not an exact nonlinear joint branch. The separate

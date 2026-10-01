@@ -3217,6 +3217,21 @@
     ]
   ],
   "rank23_schur_along_circle": "identically zero, by the global polynomial kernel with a nonzero constant center coordinate",
+  "quarter_only_complement_counterexample": {
+    "metric": "eta; smooth comparator I",
+    "periods": "every L divisible by 4",
+    "real_field": "Re(i^(x2+x3) v(1))",
+    "characters": [
+      "(1,1,i,i)",
+      "(1,1,-i,-i)"
+    ],
+    "connection_and_metric_linear_residual": "exactly zero",
+    "diagonal_quarter_projection": "exactly zero by distinct discrete Fourier characters",
+    "linear_plaquette_curvature_face_0_2": "(i-1)K1 !=0",
+    "nongauge_reason": "pure gauge at I has zero linear plaquette curvature",
+    "consequence": "no inverse with any finite h loss on a complement that removes only the diagonal quarter fibers",
+    "scope": "refutes that linear range-inverse premise, not existence of the designated flat root or continuum response universality"
+  },
   "superseded_physical_claims": [
     "full first-slow injectivity of the quarter center for all real k !=0",
     "isolated parabolic rank23 points and an eight-point physical torus premise"

@@ -1409,6 +1409,17 @@ kills `(0,0,1,1)`. At `(1,1,i,i)` the physical real first derivative has rank
 two with kernel spanned by `(1,1,0,0)` and `(0,0,1,-1)`. No full torus zero
 classification or finite polynomial inverse loss follows.
 
+There is also an exact counterexample to the quarter-only inverse premise,
+not merely a small singular-value sequence: on eta at every L divisible by
+four, Re(i^(x2+x3)*v(1)) has zero linear connection and metric residual and
+zero diagonal-quarter projection. Its face-(0,2) linear curvature is
+(i-1)K1 !=0, so it is nongauge. Removing only the diagonal quarter fibers
+therefore leaves a genuine kernel; no finite h^-p range inverse exists on
+that complement. This kills that proposed linear rescue lemma. It does not
+kill the exact flat designated root or prove a nonlinear response no-go.
+Full curved Target D needs an enlarged transported center and its exact
+compatibility, or a different solvability argument.
+
 The [nonlinear gate owner](A4D_IDENTITY_RESONANCE_CIRCLE_NONLINEAR_GATES.md)
 retains all 96 real log coordinates in each of the three invariant phase
 sectors with increments `(0,0,1,1)`, `(2,2,1,1)`, `(3,3,1,1)`. Exact normal
