@@ -232,6 +232,13 @@ theorem covers a substantially larger explicitly parameterized range.
 
 ## 5. Scope
 
+The subsequent [nonregular isolation theorem](A4D_WARPED_QUARTER_NONREGULAR_ISOLATION.md)
+uses (3), exact fast parity and the computed first-slow/quadratic gates
+to close the nonlinear step on small nonconstant warps and an open
+one-coordinate coframe class. It proves exact isolation in a
+c_g*sqrt(h) ball without any candidate h-expansion. The linear theorem
+here remains an input; the h*center term is handled, not discarded.
+
 The continuous circle theorem removes a genuine all-frequency gap in
 the four-phase/one-envelope sector. The actual-background estimate (3)
 is linear and retains its h*center error. It does not, by itself, prove
@@ -243,8 +250,8 @@ The new general designated result (7)--(8) still concerns metrics
 depending on one coordinate. It cannot be tiled into a general g whose
 other coordinate dependence breaks the invariant sector. Full
 four-dimensional Target D still requires an actual connection inverse
-with exact center compatibility. Full Target U still requires a nonlinear
-refinement-uniform remainder for nonregular extra branches. The finite
+with exact center compatibility. Full Target U outside the scoped nonlinear isolation class still
+requires control of extra branches on general four-dimensional metrics. The finite
 Y H_TORUS symbol remains a separate broader-microstructure problem.
 
 No selector, source redefinition, uniqueness among all connections,

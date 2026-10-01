@@ -33,7 +33,8 @@ Action: unchanged naked star action; no selector, torsion equation, spectral fil
 > regular integer-h center coefficient on sufficiently small nonconstant
 > warps: the computed shared-link compatibility misses all ten real
 > quadratic-cone planes. It gives raw owner-sum response agreement in
-> that class. Nonanalytic and nonuniform extra-center families remain open.
+> that class. The subsequent nonregular theorem below removes this
+> expansion assumption in the same one-envelope sector.
 > The [continuous four-phase circle control]
 > (A4D_IDENTITY_FOURPHASE_CIRCLE_CONTROL.md) now covers every frequency
 > of the product-closed one-envelope sector. Exact maximal-minor gcds and
@@ -41,6 +42,17 @@ Action: unchanged naked star action; no selector, torsion equation, spectral fil
 > with its explicit h*center error retained. A separate connection-only
 > perturbation bound constructs the exact designated branch for arbitrary
 > small one-coordinate coframes, with all ten metric components allowed.
+>
+> The [nonregular warped-quarter isolation theorem]
+> (A4D_WARPED_QUARTER_NONREGULAR_ISOLATION.md) now removes the regular
+> h-expansion assumption. Arbitrary exact four-phase lattice fields with
+> phase-erased metric response coincide with the designated branch in a
+> c_g*sqrt(h) sup neighborhood on fixed small nonconstant warps. Exact
+> parity, the all-frequency estimate and two normalized weak limits prove
+> isolation; a new rational quartic identity certifies the mixed gate.
+> This also persists on a C1-open class of small one-coordinate coframes
+> with all ten metric components. General four-dimensional Target D and
+> unrestricted Target U remain open.
 
 ## Inputs and response convention
 
@@ -1262,12 +1274,12 @@ stationary response counterexample. The proof uses the exact center
 equations to remove this field; it does not transplant the flat constant 81.
 The exact ledger replay and Python syntax pass.
 
-Overall PARTIAL/OPEN. The next object in this warped quarter class is a
-refinement-uniform version of this mixed-gate estimate for exact envelopes
-without a regular h expansion. General four-dimensional Target D still
-needs its actual connection inverse and exact center compatibility.
-No universal Einstein, nonlinear existence for extra center branches,
-selector, connection uniqueness or BOOK/CORE claim is promoted.
+The subsequent nonregular isolation theorem below discharges the
+regular-expansion limitation in this warped quarter class and proves
+scoped exact uniqueness. General four-dimensional Target D still needs
+its actual connection estimate and exact center compatibility. Overall
+PARTIAL/OPEN: no universal Einstein, extra-source existence, selector,
+or BOOK/CORE claim is promoted.
 
 
 ## Continuous four-phase circle and arbitrary small one-coordinate coframes
@@ -1291,8 +1303,9 @@ varying comparator and give
 for every p including unweighted owner1, with no period constant.
 On a=0 this is a uniform joint normal estimate after absorption.
 The h*center term remains explicitly; no false full inverse or response
-remainder is deduced. The nonlinear nonregular mixed-gate estimate
-remains the next object in this sector.
+remainder is deduced from this linear result alone. The subsequent
+nonregular isolation theorem below supplies its nonlinear mixed-gate step
+on sufficiently small nonconstant warps and an open one-coordinate class.
 
 A separate connection-only perturbation proves exact designated
 continuation for every fixed smooth S(y1) with operator distance <=1/10000
@@ -1310,6 +1323,56 @@ not the weak forcing estimate involving ||g-eta||.
 Exact determinant/gcd, held-out polynomial evaluation, four-center
 derivative, rational rescue bounds and pinned-ledger replay pass.
 General four-dimensional metrics still break the invariant sector.
-Target D for those metrics and Target U for unrestricted nonregular
-branches remain PARTIAL/OPEN. No independent-source witness, selector,
-connection-uniqueness claim or BOOK/CORE promotion is made.
+Target D for those metrics and Target U outside the subsequent scoped
+nonregular isolation class remain PARTIAL/OPEN. No independent-source
+witness, selector, global connection uniqueness or BOOK/CORE promotion
+is made.
+
+
+## Nonregular exact isolation on curved one-coordinate backgrounds
+
+[A4D_WARPED_QUARTER_NONREGULAR_ISOLATION.md](A4D_WARPED_QUARTER_NONREGULAR_ISOLATION.md)
+supersedes the regular-expansion limitation in the preceding warped
+quarter section. Fix a sufficiently small nonconstant smooth warp,
+independent of refinement. Every exact connection-stationary four-phase
+field with all nonconstant-phase metric rows zero and relative-log sup
+size <=c_g*sqrt(h) equals the already constructed designated exact branch.
+The lattice fields can have arbitrary dependence on the envelope index
+and on L; no expansion or normalized derivative bound is assumed.
+
+The proof recenters at the exact phase-common root, so no residual is
+divided by an arbitrarily tiny amplitude. The involution p->p+2 splits
+u=e+o. All-frequency joint normal control and exact parity give
+||e||_infinity<=C_g A^2 and
+||w||_infinity+||Delta a||_infinity<=C_g(h*A+A^3), A=||o||_infinity.
+A hypothetical nonzero u=o(sqrt(h)) therefore has a nonzero uniformly
+convergent normalized center. The odd equations divided by h*A give
+D_f alpha'+f'B_f alpha=0, while the even equations divided by A^2 give
+Q2_f(c)=0. Bounded normal fields need only weak-* limits: summation by
+parts handles their shifts, so no unproved smoothness bootstrap occurs.
+The two gates force zero on an interval where f'!=0, and ODE uniqueness
+propagates it around the circle, contradicting the normalized limit.
+
+A new exact finite certificate rebuilds the literal quadratic gate on
+the entire first-slow compatible four-real-dimensional plane. Rational
+elimination gives five quadratic forms and a 35-coefficient quartic
+identity. It proves ||Q2(c)||_infinity>=||c||_2^2/14847 on that plane at
+eta. This finite input replaces reliance on the older cubic-axis
+classification in the new proof. A dense literal readout and a sign
+mutation check the conventions and identity. The analytic compactness
+and refinement argument are recorded separately from the certificate.
+
+Consequently all exact O(h) families in the stated sector equal the
+exact designated root for sufficiently fine meshes, including nonregular
+and mesh-concentrated candidate sequences. The already owned designated
+O(h^infinity) correction gives raw h^-2||Delta E_Q||_1=O(h^infinity)
+in the full owner sum. A C1-open neighborhood of any sufficiently small
+nonconstant warped coframe retains the gates, so the conclusion also
+covers an open one-coordinate class with all ten metric components.
+No numerical coframe radius or finite L threshold is asserted.
+
+This closes scoped Targets D and U in that class. General fixed
+four-dimensional metrics, the remaining identity torus resonances,
+other carriers and finite-amplitude branches are outside this theorem.
+The full task therefore remains PARTIAL/OPEN, Draft/IN_PROGRESS;
+no independent-source existence, selector or BOOK/CORE claim is promoted.

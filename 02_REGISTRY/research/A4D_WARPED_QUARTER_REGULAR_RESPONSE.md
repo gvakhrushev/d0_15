@@ -256,32 +256,27 @@ on the frozen quadratic cone. The positive regular result instead uses
 the exact center compatibility (5), the quadratic metric equations,
 and the all-orders consequence. No flat constant 81 is transplanted.
 
-## 6. Scope and next object
+## 6. Scope and subsequent nonregular closure
 
-This closes regular quarter-envelope response on fixed sufficiently
-small nonconstant warps. It complements the exact designated existence
-theorem; it neither reopens the owned IR statement nor duplicates the
-finite-amplitude Y torus problem.
+The subsequent [nonregular isolation theorem](A4D_WARPED_QUARTER_NONREGULAR_ISOLATION.md)
+removes the expansion assumption for these small nonconstant warped
+backgrounds and the full product-closed one-envelope sector. Exact roots
+with phase-erased metric response coincide with the designated exact branch
+in a c_g*sqrt(h) sup ball, hence for every O(h) family. It uses exact parity,
+the [all-frequency circle estimate](A4D_IDENTITY_FOURPHASE_CIRCLE_CONTROL.md),
+and two separately normalized weak limits. Candidate expansions, normalized
+derivative bounds, and envelope smoothness are no longer required there.
+The theorem also persists on a C1-open class of one-coordinate coframes.
+The regular theorem above and its finite certificate remain valid inputs.
 
-It does not cover general four-dimensional g, other resonant carriers,
-integer-h expansion failure, fractional or mesh-concentrated amplitudes,
-or arbitrary stationary branches with only a sup bound. The first-slow
-and quadratic gates do not manufacture the missing uniform remainder
-estimate for those fields. A true negative terminal still requires an
-exact independently sourced joint witness.
-
-Smallest next object for this warped quarter class: transfer the
-mixed compatibility/quadratic coercivity to exact families without the
-regular expansion assumption, with a refinement-uniform remainder in
-the actual owner topology. General Target D separately needs the
-full variable-background connection inverse and center compatibility.
-The subsequent [continuous four-phase circle theorem]
-(A4D_IDENTITY_FOURPHASE_CIRCLE_CONTROL.md) now supplies all-frequency
-joint normal/gradient control on the actual varying comparator in this
-sector. Its h*center term remains; the nonlinear mixed-gate remainder
-needed to remove the regularity assumption is still open.
-Overall PR #310 remains `PARTIAL/OPEN`, Draft / `IN_PROGRESS`; no
-BOOK/CORE, selector or task-level Einstein claim is promoted.
+General four-dimensional g, other resonant carriers, and arbitrary
+finite-amplitude stationary branches remain outside both results.
+The fixed nonconstant metric, exact phase-erasure equations and shrinking
+neighborhood are essential. The full Target D separately needs its actual
+variable-background connection estimate and exact center compatibility.
+A negative terminal would require an exact independently sourced joint
+witness. PR #310 remains PARTIAL/OPEN, Draft/IN_PROGRESS; no BOOK/CORE,
+selector or task-level Einstein claim is promoted.
 
 ## Replay
 
