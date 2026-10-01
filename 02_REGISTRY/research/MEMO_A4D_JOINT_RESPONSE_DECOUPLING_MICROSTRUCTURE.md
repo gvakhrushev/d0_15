@@ -19,6 +19,16 @@ Execution: PR #310
 Lifecycle: `IN_PROGRESS`; PR remains Draft
 Action: unchanged naked star action; no selector, torsion equation, spectral filter, or added term.
 
+> **2026-10-01 v2 frontier: designated continuation and universality are
+> separate targets.** The [warped designated rescue]
+> (A4D_WARPED_DESIGNATED_NORMAL_RESCUE.md) now constructs an exact
+> connection-stationary branch on a fixed genuinely curved smooth metric,
+> controls intercell links and all longitudinal frequencies, and proves
+> comparator-response agreement in the unweighted owner sum. This closes
+> Target D in its nonlinear invariant one-coordinate sector. General
+> four-dimensional Target D and extra-center Target U remain open.
+> A projected range solve alone does not dispose of the center equations.
+
 ## Inputs and response convention
 
 The calculation consumes merged #216, #223, #226, #227, #232, #237, and #275. The exact merge commits are pinned in the execution history and task brief.
@@ -1136,3 +1146,59 @@ and checks all-amplitude axis identities in all 136 rows. Varying envelopes,
 other physical frequencies and fixed-curved gluing remain open. This
 supplies a nonlinear readout estimate without reinstating the disproved
 full linear inverse; no physical terminal is promoted.
+
+
+## Exact fixed-curved designated continuation: all frequencies in a symmetry sector
+
+The 2026-10-01 authoritative v2 handoff is applied. Target D constructs the
+designated exact branch; Target U compares other exact center branches.
+They have different proof obligations.
+
+[A4D_WARPED_DESIGNATED_NORMAL_RESCUE.md](A4D_WARPED_DESIGNATED_NORMAL_RESCUE.md)
+proves Target D for a fixed smooth periodic warp
+S=diag(1,1,f(x1),f(x1)), 1<=f<=26/25, including the fixed epsilon=1/50
+curved normal metric from the previous probe. All 24 connection coordinates
+per x1 are retained. The product-closed translation-invariant sector
+contains every x1 frequency; no low-frequency truncation is used.
+
+The exact certificate reconstructs a Laurent matrix P_f and proves both
+polynomial identities H_f P_f=P_f H_f=f^2 D_f I_24, with
+D_f=18-4f^2+(2f^2-1)(z^2+z^-2). The entire physical character circle has
+D_f>0 for 0<f<sqrt(5/2). On [1,26/25] the inverse-kernel mass is <9,
+its first absolute moment <40 and the frozen coefficient derivative
+envelope is 129/25. Left quantization on the actual varying f keeps every
+boundary link and gives a commutator bound 207h||f'||_infinity.
+The difference of the derivative at the actual O(h)-log smooth comparator
+from the frozen coefficient operator is bounded by
+h(300||f'||_infinity+8192 M_A) in every l^p endpoint/component convention.
+Consequently its inverse norm is <=18 on sufficiently fine meshes.
+
+Contraction with the #216 super-algebraic residual yields a real exact
+solution K_h^*=exp(A_h^sm+u_h), with
+||u_h||_p<=36||E_K(Q_h,K_h^sm)||_p for every 1<=p<=infinity.
+Translation invariance makes the zero gradient in this 24L-variable
+system the zero gradient against arbitrary independent full-carrier link
+variations. It does not make the transverse Hessian invertible.
+Both sides of the estimate acquire the same L^3 multiplicity on lifting.
+Thus h^-2||E_Q(K_h^*)-E_Q(K_h^sm)||_1=O(h^infinity) in the unweighted
+physical owner sum. The #216 reconstruction then supplies -G[g]/2+O(h).
+
+An independent opposite-phase mixed-forcing check and ten-column
+normal-Hessian calculation retain the owned raw Gram-dual
+r=G_standard/2=-K_Schur[J] convention; no action sign is changed.
+Optional numerical full-connection controls at L=8,12,16,24,32 on the
+same fixed curved metric have residuals below 9e-16 and converge to that
+independently specified normal-point response. These are controls, not
+validated finite-mesh roots or a prescribed joint-source witness.
+The two-sided polynomial certificate, pinned JSON and syntax replay pass.
+
+This is a scoped exact curved continuation theorem, beyond the already
+owned IR-only estimate. All diagonal-quarter and six rank-23 transverse
+joint characters are outside its invariant sector. General Target D
+still requires an inverse/compatibility theorem for the actual full
+four-dimensional connection operator at K_h^sm(g); joint principal-symbol
+rank is not by itself that theorem. A range solve with delta_C=0 must also
+satisfy the remaining center equations exactly. Target U separately
+requires the varying-coframe response commutator and exact extra-center
+branch control with raw o(h^2), not O(h^2). No full theory, universal
+response, selector or BOOK/CORE claim is promoted. Keep Draft/IN_PROGRESS.
