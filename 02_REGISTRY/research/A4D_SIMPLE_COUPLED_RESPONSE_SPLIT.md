@@ -37,3 +37,14 @@ candidate check ends at outcome 1: `COUPLED_BOOST_EXCLUDED`. The flat #227
 readout cannot be used as a curved joint-source witness by simply retaining
 those links. This does not quantify over arbitrary different coupled fields;
 the parent task remains `PARTIAL / OPEN`.
+
+The same owner now removes arbitrary temporal-amplitude retuning as well.
+For independent links `L_(x,0)=Cayley(a_x B)` and identity spatial links,
+three actual metric components determine the three boost plaquette
+coefficients with determinant `-1/4`. Their exact joint flux identity gives
+`||E_K||_owner1 >= (102/625)L^3-90M^2` when
+`Xi_diag=h^2 tau_diag`, `||tau_diag||_infinity<=M`.
+Thus no sign, wavelength, large common rapidity or arbitrary amplitude array
+rescues this B family on the fixed warp with a bounded independent source
+as the mesh is refined. This is a single whole-profile exclusion; it does
+not address different generators or nonidentity spatial links.

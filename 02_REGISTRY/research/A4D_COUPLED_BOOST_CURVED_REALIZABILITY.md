@@ -5,6 +5,15 @@ Input head: `3708ccddc9f249760eab7ca7aa3d7108850a427e`.
 Requested gate: `JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL`.  
 Result: **outcome 1, `COUPLED_BOOST_EXCLUDED`**, for the original family below.
 
+The continuation in Sections 6--8 removes the amplitude-pattern restriction:
+every temporal link may have its own independent real B amplitude. A single
+joint flux identity expresses the necessary connection row through three
+metric readouts. On the same fixed coframe it gives
+`||E_K||_owner1 >= (102/625)*L^3-90*M^2` whenever
+`||Xi_diag||_infinity <= h^2*M`. Thus no amplitude retuning of this same
+temporal B family is joint-admissible for a uniformly bounded prescribed
+source on sufficiently fine meshes; tau=0 is excluded at every mesh.
+
 The exact identity is
 
 \[
@@ -211,3 +220,188 @@ task still quantifies over arbitrary exact joint fields, including fields
 different from (4); this one identity does not prove its universal terminal.
 Its status remains `PARTIAL / OPEN`, Draft / `IN_PROGRESS`. No additional
 sector, selector, action term, or BOOK/CORE claim is introduced.
+
+## 6. Remove every amplitude-pattern assumption in the same B family
+
+Follow-up input: `0c7cce3b6e69cb39d638eb5d57c9bc37794f2ced`.
+Keep the coframe (2), the same generator B, and the identity spatial links.
+Allow every temporal link to have its own independent amplitude:
+
+\[
+L_{x,0}=U(a_x),\qquad |a_x|<2/\sqrt3,\qquad L_{x,i}=I\ (i=1,2,3).
+\tag{9}
+\]
+
+The original four-phase field is included. No sign pattern, slow envelope,
+regularity, phase decomposition, or uniform distance from the Cayley-chart
+boundary is imposed. This tests all amplitude retunings of the same
+candidate family, without introducing a frequency sector. The fixed source
+tau=0 remains the primary case. The theorem below additionally permits any
+source specified before the candidate with uniformly bounded diagonal
+components `|tau_ii(x)|<=M`.
+
+For independent real a,b in the chart, put
+
+\[
+\begin{split}
+D(a)&=4-3a^2,\\
+z(a,b)&=\frac{4(a-b)(4-3ab)}{D(a)D(b)},\\
+c(a,b)&=1+\frac{24(a-b)^2}{D(a)D(b)}.
+\end{split}
+\tag{10}
+\]
+
+Direct multiplication using `B^3=3B` gives
+
+\[
+\frac{U(a)U(b)^{-1}-U(b)U(a)^{-1}}2=z(a,b)B,
+\qquad c(a,b)^2-3z(a,b)^2=1.
+\tag{11}
+\]
+
+Because `D(a)D(b)>0`, we have `c>=1`, so the branch is exactly
+`c=sqrt(1+3z^2)`. These identities hold at arbitrary amplitude, not only
+near a=b or zero. The temporal plaquettes of (9) therefore have
+`C_0i(x)=z_i(x) B`, with `z_i(x)=z(a_x,a_(x+e_i))`; spatial plaquettes
+are identity. All curvatures here are made from shared links.
+
+Let `m=(Xi_11,Xi_22,Xi_33)^T`, where Xi is the actual Gram memory of the
+action. True Gram differentiation at `S=diag(1,1,f,f)` gives
+
+\[
+m=\begin{pmatrix}
+0&-f/2&-f/2\\
+-1/2&0&-1/(2f)\\
+-1/2&-1/(2f)&0
+\end{pmatrix}z,
+\qquad \det=-\frac14.
+\tag{12}
+\]
+
+In particular the three actual plaquette coefficients are determined by
+these three existing response components:
+
+\[
+\boxed{
+z=T_fm,\qquad
+T_f=\begin{pmatrix}
+f^{-2}&-1&-1\\
+-f^{-1}&f&-f\\
+-f^{-1}&-f&f
+\end{pmatrix}.}
+\tag{13}
+\]
+
+The remaining seven source equations are retained in the joint system;
+three necessary equations already suffice for exclusion. For a putative
+exact stationary field, the genuine descended metric Euler equals Xi by
+the Ward/section argument in the response-memory owner. Hence a prescribed
+joint source implies `m=h^2*(tau_11,tau_22,tau_33)`.
+
+## 7. One joint flux identity, with all neighboring coframes
+
+For each temporal face, right variation of its outgoing temporal link
+along B gives `w_i c_i`, and variation of its incoming link gives its
+negative at the incoming face base. Here
+
+`w_1=f^2`, `w_2=w_3=f`, and `c_i=sqrt(1+3z_i^2)`.
+
+Indeed B commutes with both links, the literal star weight annihilates
+the eta-symmetric B^2 term, and its pairing with B is w_i. Summing the
+six actual face incidences yields the exact necessary joint identity
+
+\[
+\boxed{
+E_K(x,0)[B]
+=\sum_{i=1}^3D_i^-\!left[
+w_i\sqrt{1+3\bigl((T_f\Xi_{\rm diag})_i\bigr)^2}\right](x),
+\quad D_i^-F(x)=F(x)-F(x-e_i).
+}
+\tag{14}
+\]
+
+This identity is independent of the temporal-link amplitudes once their
+metric readout is known. It uses no solution selection and no replacement
+of neighboring cells by a frozen vacuum.
+
+For the prescribed vacuum `tau=0`, (13) forces z=0 for every actual face;
+(14) then reduces exactly to
+
+\[
+E_K(x,0)[B]=f_n^2-f_{n-1}^2.
+\tag{15}
+\]
+
+There is no compatible joint root on the nonconstant profile, regardless
+of the choice of the amplitudes a_x. The implication used the true metric
+equations; it did not assign their values as a new source.
+
+## 8. Uniformly bounded independent sources: raw owner-sum exclusion
+
+More generally suppose the three diagonal source equations hold with
+`||tau_diag||_infinity<=M`. Since `1<=f<=26/25`, (13) gives
+
+\[
+|z_1|\le3h^2M,\qquad |z_2|,|z_3|\le\frac{77}{25}h^2M.
+\tag{16}
+\]
+
+Write (14) as `E_K(x,0)[B]=F(x)+R(x)`, with
+`F=D_1^-(f^2)` and `R=sum_i D_i^-[w_i(c_i-1)]`.
+The bound
+
+\[
+0\le\sqrt{1+3z^2}-1
+=\frac{3z^2}{\sqrt{1+3z^2}+1}\le\frac32z^2
+\tag{17}
+\]
+
+and periodic translation invariance of the **unweighted** sum give
+
+\[
+\begin{split}
+\|R\|_1
+&\le3\sum_{x,i}w_i(x)z_i(x)^2\\
+&\le3\frac{1976}{625}\left(\frac{77}{25}\right)^2
+   h^4 L^4 M^2
+=\frac{35147112}{390625}M^2<90M^2.
+\end{split}
+\tag{18}
+\]
+
+Here `h^4 L^4=1` comes from the squared source scale; no lattice-volume
+factor has been removed from the norm. All L^3 sites above each slow
+coordinate contribute, so the same exact sampled variation as before gives
+`||F||_1=(102/625)L^3`.
+Since B is the sum of the three boost basis generators, the triangle
+inequality bounds its Euler evaluation by the component owner norm.
+Consequently
+
+\[
+\boxed{
+\|E_K\|_{\rm owner,1}
+\ge\frac{102}{625}L^3-90M^2.
+}
+\tag{19}
+\]
+
+An exact joint member of (9) is therefore impossible whenever
+`L^3>(9375/17)M^2`. In particular the independently prescribed vacuum
+M=0 is excluded at **every** mesh. No upper bound on any rapidity or
+amplitude derivative was used. The conclusion covers arbitrary
+refinement-dependent amplitude arrays and every bounded smooth source
+specified before them.
+
+The existing certificate now verifies all coefficients of (11), the
+full Laurent identities (12)--(13), and independent based-face action
+assembly at all 256 sites for an arbitrary four-coordinate amplitude
+array and for arbitrary time-only links. It checks the raw owner count
+in the zero-curvature control and the exact constant in (18).
+All-period and continuum conclusions follow from (14)--(19), not from
+the finite replay.
+
+Follow-up verdict: `COUPLED_BOOST_ALL_AMPLITUDE_JOINT_EXCLUSION`.
+The possible rescue by amplitude retuning is removed as a whole class.
+Nonidentity spatial links or other Lorentz generators are outside (9);
+no universal statement about those fields is inferred. The parent PR
+remains Draft / `IN_PROGRESS`, with task status `PARTIAL / OPEN`.

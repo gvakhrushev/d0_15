@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""One exact shared-link Euler identity for the original coupled boost.
+"""Exact shared-link and joint flux identities for the same coupled boost.
 
 The smooth coframe and independent zero metric source are declared before
 the candidate.  The degree-eight numerator is complete, not a Taylor jet.
-This rejects this candidate on that curved coframe; it does not assert a
-response estimate for other stationary fields or a general task terminal.
+The joint flux identity also excludes all independent temporal B amplitudes
+under a bounded prescribed source. Spatial links remain identities; no
+response estimate for other fields or general task terminal is asserted.
 """
 from fractions import Fraction as F
-from itertools import product
+from itertools import product, permutations
 from pathlib import Path
 import argparse
 import json
@@ -15,7 +16,7 @@ import numpy as np
 import a4d_identity_quarter_nonlinear_response_check as N
 
 
-INPUT_HEAD = "3708ccddc9f249760eab7ca7aa3d7108850a427e"
+INPUT_HEAD = "0c7cce3b6e69cb39d638eb5d57c9bc37794f2ced"
 DEGREE = 8
 I = N.I
 B = N.G[0] + N.G[1] + N.G[2]
@@ -136,6 +137,201 @@ def direct_lattice_derivative(t, *, varied_site=(0, 0, 0, 0), wrong_inverse_sign
     return value
 
 
+def pclean(p):
+    return {k: v for k, v in p.items() if np.any(v)}
+
+
+def padd(*polys):
+    out = {}
+    for p in polys:
+        for k, v in p.items():
+            out[k] = out.get(k, 0) + v
+    return pclean(out)
+
+
+def pscale(p, c):
+    return pclean({k: c * v for k, v in p.items()})
+
+
+def pmul(a, b, matrix=False):
+    out = {}
+    for i, v in a.items():
+        for j, w in b.items():
+            k = tuple(x + y for x, y in zip(i, j)) if isinstance(i, tuple) else i + j
+            term = v @ w if matrix else v * w
+            out[k] = out.get(k, 0) + term
+    return pclean(out)
+
+
+def generic_face_flux_identity():
+    """Complete two-variable polynomials; a,b are independent link parameters."""
+    da = {(0, 0): 4, (2, 0): -3}
+    db = {(0, 0): 4, (0, 2): -3}
+    den = pmul(da, db)
+    difference = {(1, 0): 1, (0, 1): -1}
+    znum = pscale(pmul(difference, {(0, 0): 4, (1, 1): -3}), 4)
+    cnum = padd(den, pscale(pmul(difference, difference), 24))
+    un = {(0, 0): 4 * I, (1, 0): 4 * B, (2, 0): 2 * B @ B - 3 * I}
+    vin = {(0, 0): 4 * I, (0, 1): -4 * B, (0, 2): 2 * B @ B - 3 * I}
+    plaquette = pmul(un, vin, matrix=True)
+    odd = pclean({k: (v - adjoint(v)) * F(1, 2) for k, v in plaquette.items()})
+    assert not padd(odd, {k: -v * B for k, v in znum.items()})
+    for weight in N.WEIGHT[:3]:
+        forward = pclean({k: np.sum(weight * (B @ v)) for k, v in plaquette.items()})
+        assert not padd(forward, pscale(cnum, -1))
+    assert not padd(pmul(cnum, cnum), pscale(pmul(znum, znum), -3),
+                    pscale(pmul(den, den), -1))
+    print("PASS_ALL_PROFILE_FACE_CURVATURE_AND_BOOST_FLUX_POLYNOMIALS", flush=True)
+    return {"D(a)": "4-3*a^2", "z(a,b)": "4*(a-b)*(4-3*a*b)/(D(a)*D(b))",
+            "c(a,b)": "1+24*(a-b)^2/(D(a)*D(b))",
+            "complete_polynomial_identity": "c_num^2-3*z_num^2=(D(a)*D(b))^2",
+            "real_chart_consequence": "c>=1 and c=sqrt(1+3*z^2)",
+            "face_forward_B_derivative": "w_i*c; incoming derivative is -w_i*c"}
+
+
+def generic_diagonal_memory_inverse():
+    """Derive all Laurent coefficients of the metric map from Gram lifts."""
+    solder = {0: np.diag([F(1), F(1), F(0), F(0)]),
+              1: np.diag([F(0), F(0), F(1), F(1)])}
+    metric_map = {}
+    for row, j in enumerate((1, 2, 3)):
+        ds = np.zeros((4, 4), dtype=object)
+        ds[j, j] = F(-1, 2)
+        exponent = 0 if j == 1 else -1
+        for face, (r, s) in enumerate(N.PAIRS[:3]):
+            a, b = [k for k in range(4) if k not in (r, s)]
+            for e, coframe in solder.items():
+                weight = N.orient(r, s) * N.weight(
+                    N.wedge(ds[:, a], coframe[:, b]) + N.wedge(coframe[:, a], ds[:, b]))
+                k = e + exponent
+                metric_map.setdefault(k, np.zeros((3, 3), dtype=object))
+                metric_map[k][row, face] += np.sum(weight * B)
+    metric_map = pclean(metric_map)
+    expected = {
+        1: np.array([[0, F(-1, 2), F(-1, 2)], [0, 0, 0], [0, 0, 0]], dtype=object),
+        0: np.array([[0, 0, 0], [F(-1, 2), 0, 0], [F(-1, 2), 0, 0]], dtype=object),
+        -1: np.array([[0, 0, 0], [0, 0, F(-1, 2)], [0, F(-1, 2), 0]], dtype=object),
+    }
+    assert not padd(metric_map, pscale(expected, -1))
+    inverse = {
+        -2: np.array([[1, 0, 0], [0, 0, 0], [0, 0, 0]], dtype=object),
+        -1: np.array([[0, 0, 0], [-1, 0, 0], [-1, 0, 0]], dtype=object),
+        0: np.array([[0, -1, -1], [0, 0, 0], [0, 0, 0]], dtype=object),
+        1: np.array([[0, 0, 0], [0, 1, -1], [0, -1, 1]], dtype=object),
+    }
+    identity = {0: np.eye(3, dtype=object)}
+    assert not padd(pmul(metric_map, inverse, matrix=True), pscale(identity, -1))
+    assert not padd(pmul(inverse, metric_map, matrix=True), pscale(identity, -1))
+    determinant = {}
+    for p in permutations(range(3)):
+        term = {0: F(1)}
+        for r in range(3):
+            term = pmul(term, pclean({e: v[r, p[r]] for e, v in metric_map.items()}))
+        sign = (-1) ** sum(p[i] > p[j] for i in range(3) for j in range(i + 1, 3))
+        determinant = padd(determinant, pscale(term, sign))
+    assert determinant == {0: F(-1, 4)}
+    print("PASS_ALL_COFRAME_LAURENT_DIAGONAL_MEMORY_INVERSE", flush=True)
+    return {"diagonal_slots": ["Xi11", "Xi22", "Xi33"], "determinant": "-1/4",
+            "inverse_rows": [["f^-2", "-1", "-1"], ["-f^-1", "f", "-f"],
+                             ["-f^-1", "-f", "f"]],
+            "coefficient_check": "complete Laurent coefficients, not coframe sampling"}
+
+
+def all_profile_action_replay(spatially_constant):
+    """Independent based-face assembly on all 256 sites, without a phase ansatz."""
+    L = 4
+    sites = list(product(range(L), repeat=4))
+    samples = (F(1), F(51, 50), F(26, 25), F(51, 50))
+    params = {x: F(2 * x[0] - 3, 20) if spatially_constant else
+              F((3*x[0] + 5*x[1] + 7*x[2] + 11*x[3]) % 11 - 5, 20) for x in sites}
+    links = {x: cayley(params[x]) for x in sites}
+    ek = {x: F(0) for x in sites}
+    eq = {x: np.zeros(3, dtype=object) for x in sites}
+    z = {x: np.zeros(3, dtype=object) for x in sites}
+
+    def shift(x, i, direction=1):
+        return tuple((v + direction * (j == i)) % L for j, v in enumerate(x))
+
+    def c(a, b):
+        return 1 + 24*(a-b)**2 / ((4-3*a*a)*(4-3*b*b))
+
+    for x in sites:
+        f = samples[x[1]]
+        solder = np.diag([F(1), F(1), f, f])
+        qi = N.inverse(solder.T @ ETA @ solder)
+        for i in (1, 2, 3):
+            y = shift(x, i)
+            face = i - 1
+            a, b = [j for j in range(4) if j not in (0, i)]
+            weight = N.orient(0, i) * N.weight(N.wedge(solder[:, a], solder[:, b]))
+            factors = [links[x], I, adjoint(links[y]), I]
+            p = factors[0] @ factors[1] @ factors[2] @ factors[3]
+            curvature = (p - adjoint(p)) * F(1, 2)
+            z[x][face] = curvature[0, 1]
+            assert np.array_equal(curvature, z[x][face] * B)
+            for pos, target in ((0, x), (2, y)):
+                derivative = I.copy()
+                for k, factor in enumerate(factors):
+                    df = factor @ B if k == 0 else -B @ factor
+                    derivative = derivative @ (df if pos == k else factor)
+                dc = (derivative - adjoint(derivative)) * F(1, 2)
+                ek[target] += np.sum(weight * dc)
+            for j, q in enumerate((1, 2, 3)):
+                dq = np.zeros((4, 4), dtype=object)
+                dq[q, q] = 1
+                ds = solder @ qi @ dq * F(1, 2)
+                dw = N.orient(0, i) * N.weight(
+                    N.wedge(ds[:, a], solder[:, b]) + N.wedge(solder[:, a], ds[:, b]))
+                eq[x][j] += np.sum(dw * curvature)
+
+    for x in sites:
+        f = samples[x[1]]
+        expected = F(0)
+        for i in (1, 2, 3):
+            y, prev = shift(x, i), shift(x, i, -1)
+            fp = samples[prev[1]]
+            w, wp = (f*f, fp*fp) if i == 1 else (f, fp)
+            expected += w*c(params[x], params[y]) - wp*c(params[prev], params[x])
+        assert ek[x] == expected
+        inverse = np.array([[1/f**2, -1, -1], [-1/f, f, -f], [-1/f, -f, f]], dtype=object)
+        assert np.array_equal(inverse @ eq[x], z[x])
+    norm = sum(abs(v) for v in ek.values())
+    if spatially_constant:
+        assert all(not np.any(z[x]) and not np.any(eq[x]) for x in sites)
+        assert norm == F(102, 625) * L**3
+    else:
+        assert any(np.any(z[x]) for x in sites)
+    return {"profile": "spatially constant, arbitrary time links" if spatially_constant else
+                       "independent non-four-phase values in all four coordinates",
+            "physical_sites": L**4, "temporal_face_checks": 3*L**4,
+            "literal_B_Euler_rows_checked": L**4, "Gram_inverse_rows_checked": 3*L**4,
+            "origin_B_Euler": str(ek[(0, 0, 0, 0)]),
+            "vacuum_B_Euler_owner_sum": str(norm) if spatially_constant else None}
+
+
+def arbitrary_amplitude_joint_exclusion():
+    face = generic_face_flux_identity()
+    inverse = generic_diagonal_memory_inverse()
+    replays = [all_profile_action_replay(False), all_profile_action_replay(True)]
+    print("PASS_ALL_PROFILE_FULL_ACTION_AND_UNWEIGHTED_COUNT_REPLAYS", flush=True)
+    bound = 3 * F(1976, 625) * F(77, 25)**2
+    assert bound == F(35147112, 390625) and bound < 90
+    return {
+        "family": "every Role0 link is an independent real Cayley(t_x*B); Roles1,2,3 are I",
+        "restrictions": "no phase, period-four envelope, amplitude-size margin, or regularity assumption",
+        "face_identity": face, "metric_inverse": inverse,
+        "single_joint_flux_identity": "E_K(x,0)[B]=sum_i D_i^-[w_i*sqrt(1+3*(T_f*Xi_diag)_i^2)], w=(f^2,f,f)",
+        "source_hypothesis": "Xi_diag=h^2*tau_diag, ||tau_diag||_infinity<=M fixed independently of candidates",
+        "raw_connection_owner_bound": "||E_K||_owner1 >= (102/625)*L^3 - 90*M^2",
+        "exact_remainder_constant": str(bound),
+        "vacuum_consequence": "tau=0 excludes every amplitude profile at every admissible mesh",
+        "bounded_source_consequence": "no exact joint member for L^3>(9375/17)*M^2",
+        "direct_action_controls": replays,
+        "scope": "all amplitude retunings of the same temporal B family; no claim for nonidentity spatial links or other generators",
+        "verdict": "COUPLED_BOOST_ALL_AMPLITUDE_JOINT_EXCLUSION",
+    }
+
+
 def run_checks():
     # These declarations precede candidate construction and readout.
     data = {
@@ -202,8 +398,10 @@ def run_checks():
     assert selected_sum == F(51, 625)*abs(t)*4**3/(4-3*t*t)
     print("PASS_UNWEIGHTED_OWNER_SUM_FROM_THE_SAME_IDENTITY", flush=True)
 
+    all_amplitudes = arbitrary_amplitude_joint_exclusion()
+
     return {
-        "schema": "a4d-coupled-boost-curved-realizability-v1",
+        "schema": "a4d-coupled-boost-curved-realizability-v2",
         "input_head": INPUT_HEAD,
         "arithmetic": "exact rational, complete polynomial and direct action differentiation",
         "predeclared_data": data,
@@ -234,9 +432,10 @@ def run_checks():
         },
         "requested_outcome": "1: coupled boost fails exact E_K=0 on the declared nonconstant coframe",
         "gate": "JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL: COUPLED_BOOST_EXCLUDED",
-        "scope": "original coupled-boost family, not arbitrary corrected or independently coupled links",
+        "scope": "original coupled boost and all its temporal amplitude retunings; identity spatial links and the same fixed generator B",
+        "arbitrary_amplitude_joint_exclusion": all_amplitudes,
         "parent_task_status": "PARTIAL / OPEN; Draft / IN_PROGRESS",
-        "verdict": "COUPLED_BOOST_CURVED_REALIZABILITY_EXCLUDED",
+        "verdict": "COUPLED_BOOST_ALL_AMPLITUDE_JOINT_EXCLUSION",
     }
 
 

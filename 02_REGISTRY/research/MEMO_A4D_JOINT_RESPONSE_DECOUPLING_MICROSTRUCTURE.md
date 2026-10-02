@@ -1,5 +1,23 @@
 # A4D stationary response memory and continuum collapse boundary
 
+> **Coupled boost: all amplitude retunings now excluded under bounded sources.**
+> Sections 6--8 of [the same proof owner](A4D_COUPLED_BOOST_CURVED_REALIZABILITY.md)
+> let every temporal link be an independent `Cayley(a_x B)`, with the same
+> `B=K1+K2+K3` and identity spatial links. The literal diagonal Gram readout
+> determines all three actual temporal plaquette coefficients `z=T_f Xi_diag`;
+> its local determinant is exactly `-1/4` for every positive f. One shared-link
+> joint identity then reads `E_K(x,0)[B]=sum_i D_i^-[w_i sqrt(1+3z_i^2)]`,
+> `w=(f^2,f,f)`. For any predeclared source with `||tau_diag||_infinity<=M`
+> and `Xi_diag=h^2 tau_diag`, this implies the unweighted bound
+> `||E_K||_owner1 >= (102/625)L^3-90M^2` on the same fixed curved warp.
+> Thus arbitrary amplitude retuning cannot yield a joint root: vacuum is
+> excluded at every mesh, and bounded sources at sufficiently fine meshes.
+> This conclusion needs no phase pattern, amplitude regularity or frequency
+> classification. Exact two-variable face polynomials, all Laurent coefficients
+> of the Gram inverse, and full-grid literal derivative controls pass.
+> Other generators and nonidentity spatial links remain outside this theorem;
+> the parent universal task stays `PARTIAL / OPEN`, Draft / `IN_PROGRESS`.
+
 > **2026-10-01 coupled-boost realizability: outcome 1.**
 > [The exact shared-link identity](A4D_COUPLED_BOOST_CURVED_REALIZABILITY.md)
 > tests the original `B=K1+K2+K3`, `Role0=(Cayley(tB),I,Cayley(-tB),I)`

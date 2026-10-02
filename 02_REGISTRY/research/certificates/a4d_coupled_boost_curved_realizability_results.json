@@ -1,6 +1,6 @@
 {
-  "schema": "a4d-coupled-boost-curved-realizability-v1",
-  "input_head": "3708ccddc9f249760eab7ca7aa3d7108850a427e",
+  "schema": "a4d-coupled-boost-curved-realizability-v2",
+  "input_head": "0c7cce3b6e69cb39d638eb5d57c9bc37794f2ced",
   "arithmetic": "exact rational, complete polynomial and direct action differentiation",
   "predeclared_data": {
     "mesh": "h=1/L, L in 4*N",
@@ -99,7 +99,73 @@
   },
   "requested_outcome": "1: coupled boost fails exact E_K=0 on the declared nonconstant coframe",
   "gate": "JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL: COUPLED_BOOST_EXCLUDED",
-  "scope": "original coupled-boost family, not arbitrary corrected or independently coupled links",
+  "scope": "original coupled boost and all its temporal amplitude retunings; identity spatial links and the same fixed generator B",
+  "arbitrary_amplitude_joint_exclusion": {
+    "family": "every Role0 link is an independent real Cayley(t_x*B); Roles1,2,3 are I",
+    "restrictions": "no phase, period-four envelope, amplitude-size margin, or regularity assumption",
+    "face_identity": {
+      "D(a)": "4-3*a^2",
+      "z(a,b)": "4*(a-b)*(4-3*a*b)/(D(a)*D(b))",
+      "c(a,b)": "1+24*(a-b)^2/(D(a)*D(b))",
+      "complete_polynomial_identity": "c_num^2-3*z_num^2=(D(a)*D(b))^2",
+      "real_chart_consequence": "c>=1 and c=sqrt(1+3*z^2)",
+      "face_forward_B_derivative": "w_i*c; incoming derivative is -w_i*c"
+    },
+    "metric_inverse": {
+      "diagonal_slots": [
+        "Xi11",
+        "Xi22",
+        "Xi33"
+      ],
+      "determinant": "-1/4",
+      "inverse_rows": [
+        [
+          "f^-2",
+          "-1",
+          "-1"
+        ],
+        [
+          "-f^-1",
+          "f",
+          "-f"
+        ],
+        [
+          "-f^-1",
+          "-f",
+          "f"
+        ]
+      ],
+      "coefficient_check": "complete Laurent coefficients, not coframe sampling"
+    },
+    "single_joint_flux_identity": "E_K(x,0)[B]=sum_i D_i^-[w_i*sqrt(1+3*(T_f*Xi_diag)_i^2)], w=(f^2,f,f)",
+    "source_hypothesis": "Xi_diag=h^2*tau_diag, ||tau_diag||_infinity<=M fixed independently of candidates",
+    "raw_connection_owner_bound": "||E_K||_owner1 >= (102/625)*L^3 - 90*M^2",
+    "exact_remainder_constant": "35147112/390625",
+    "vacuum_consequence": "tau=0 excludes every amplitude profile at every admissible mesh",
+    "bounded_source_consequence": "no exact joint member for L^3>(9375/17)*M^2",
+    "direct_action_controls": [
+      {
+        "profile": "independent non-four-phase values in all four coordinates",
+        "physical_sites": 256,
+        "temporal_face_checks": 768,
+        "literal_B_Euler_rows_checked": 256,
+        "Gram_inverse_rows_checked": 768,
+        "origin_B_Euler": "-1334127135437/5897868722500",
+        "vacuum_B_Euler_owner_sum": null
+      },
+      {
+        "profile": "spatially constant, arbitrary time links",
+        "physical_sites": 256,
+        "temporal_face_checks": 768,
+        "literal_B_Euler_rows_checked": 256,
+        "Gram_inverse_rows_checked": 768,
+        "origin_B_Euler": "-101/2500",
+        "vacuum_B_Euler_owner_sum": "6528/625"
+      }
+    ],
+    "scope": "all amplitude retunings of the same temporal B family; no claim for nonidentity spatial links or other generators",
+    "verdict": "COUPLED_BOOST_ALL_AMPLITUDE_JOINT_EXCLUSION"
+  },
   "parent_task_status": "PARTIAL / OPEN; Draft / IN_PROGRESS",
-  "verdict": "COUPLED_BOOST_CURVED_REALIZABILITY_EXCLUDED"
+  "verdict": "COUPLED_BOOST_ALL_AMPLITUDE_JOINT_EXCLUSION"
 }
