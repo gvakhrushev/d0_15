@@ -111,9 +111,10 @@ def run():
     for spatial in (1, 2, 3):
         c, l = circle_vectors(spatial)
         held = sp.Rational(3, 5) + sp.I * sp.Rational(4, 5)
+        held_qi = P.QI(F(3, 5), F(4, 5))
         v = c + held * l
-        phase = [sp.I] * 4
-        phase[0] = phase[spatial] = held
+        phase = [P.Q] * 4
+        phase[0] = phase[spatial] = held_qi
         J = P.joint(phase)
         # Convert the owner's Q(i) matrix only for this held-out kernel control.
         Jsp = sp.Matrix([[qitosp(x) for x in row] for row in J])
