@@ -30,7 +30,7 @@ def main() -> None:
     u = sp.Matrix([0, a, b, 0])
     v = sp.Matrix([0, c, d, 0])
 
-    ds = [sp.Matrix(sp.symbols(f"d{r}0:4", real=True)) for r in (1, 2, 3)]
+    ds = [sp.Matrix(sp.symbols(f"d{r}_0:4", real=True)) for r in (1, 2, 3)]
     site = (0, 0, 0, 0)
 
     def S(w):
