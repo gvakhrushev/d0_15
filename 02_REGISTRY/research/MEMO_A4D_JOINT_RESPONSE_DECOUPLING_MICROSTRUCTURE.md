@@ -1,3 +1,23 @@
+> **2026-10-02 finite-current/correlation architecture.**
+> [The finite current-memory owner](A4D_FINITE_CURRENT_CORRELATION_MEMORY.md)
+> rewrites the literal connection Euler equation as the exact adjoint of
+> shared-face momenta and, more importantly, removes the open-ended nonlinear
+> hierarchy by changing from log coordinates to relative Lorentz matrices
+> \`R=I+U\`. Because \`R^-1=eta R^T eta\` and every plaquette contains four
+> link factors, both \`E_K\` and the Gram memory \`Xi\` are exact polynomials
+> of degree at most four in \`U\`; there are no independent degree-five or
+> higher interactions in the original finite equations. Any higher reduced
+> obstruction is an elimination consequence of this same quartic system.
+> The physical quadratic symbol has the already certified 21-shift support,
+> so the homogenized quadratic response depends only on 21 matrix correlation
+> moments; one multiplication by the joint stencil enlarges this to 131
+> shifts. Thus the remaining universality question can be posed as one finite
+> degree-2/3/4 correlation-realizability/dual-certificate problem rather than
+> a Bloch census or an unbounded Taylor ladder. A single scalar harmonic flux
+> is too coarse: the flat coupled-boost control has an even transport factor
+> under \`t -> -t\` while \`Xi\` changes sign. The exact structural checker
+> passes. This is a class reduction, not yet the task terminal.
+>
 # A4D stationary response memory and continuum collapse boundary
 
 > **Full-field stationary trace identity and vacuum source obstruction.**
