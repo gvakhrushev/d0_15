@@ -233,3 +233,79 @@ Verdict:
 The task remains open because (7) has not yet been proved in the full declared
 topology, but its quantifiers no longer range over separately classified
 microstructure families.
+
+
+## 8. Two exact source-image collapses already owned
+
+### 8.1 Small real four-phase flat chart
+
+The full nonlinear owner
+\`A4D_IDENTITY_QUARTER_NONLINEAR_RESPONSE.md\` does not merely classify the
+linear center.  In the complete 96-real-dimensional four-phase link chart it
+sets
+
+\[
+F(l)=\bigl(E_K(\eta,e^l),\Pi_{\ne0}E_Q(\eta,e^l)\bigr)
+\]
+
+and proves that every sufficiently small zero of \(F\) lies on one of eight
+explicit exact axis families.  Every one of those families has the **full**
+metric Euler equal to zero.  Therefore, with a phase-common prescribed source,
+
+\[
+\boxed{
+\mathscr T_h^{\rm fourphase,small}(\eta)=\{0\}.
+}
+\tag{19}
+\]
+
+This is a nonlinear source-image theorem.  It includes all mixed quarter-center
+directions in that local chart; it is not a statement that the connection is
+unique.
+
+The same owner proves the quantitative readout gain
+
+\[
+\|\overline E_Q(l)\|
+\le C\|l\|_\infty
+\bigl(\|E_K(l)\|+\|\Pi_{\ne0}E_Q(l)\|\bigr),
+\tag{20}
+\]
+
+with an \(L\)-independent repeated-cell version in every componentwise
+\(\ell^p\), including the unweighted \(p=1\) sum.  Thus the singleton image is
+stable under the exact residual topology used by that restricted sector.
+
+### 8.2 Moving simple-plane current class
+
+The moving-current owner
+\`A4D_MOVING_SIMPLE_PLANE_CURRENT_RIGIDITY.md\` treats two neighboring
+simple-plane layers before a Bloch decomposition.  It proves
+
+\[
+E_Q\equiv0
+\]
+
+throughout the class, while the shared spatial-link Euler equations force
+conservation of the complete spatial difference-plane Gram and of the Cayley
+amplitude magnitude.  The only opposite-sign transition is the corresponding
+internal Lorentz rotation of the spatial triad.
+
+Hence this class contributes no new source value:
+
+\[
+\boxed{
+\mathscr T_h^{\rm simple\text{-}plane,current}
+\subseteq\{0\},
+}
+\tag{21}
+\]
+
+and exact stationarity prevents the response-null packet from carrying a
+genuinely changing spatial Gram.  In the one-coordinate continuum reduction,
+after frame alignment, the surviving metric has constant spatial metric and
+only time-dependent lapse/shift, hence is flat.
+
+Equations (19)--(21) are examples of the intended proof architecture:
+collapse whole realizability images instead of cataloguing their microscopic
+representatives.
