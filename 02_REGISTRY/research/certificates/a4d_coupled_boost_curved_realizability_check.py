@@ -16,7 +16,7 @@ import numpy as np
 import a4d_identity_quarter_nonlinear_response_check as N
 
 
-INPUT_HEAD = "0c7cce3b6e69cb39d638eb5d57c9bc37794f2ced"
+INPUT_HEAD = "31f0f79ef41393e08f56a068650473dbbca20e60"
 DEGREE = 8
 I = N.I
 B = N.G[0] + N.G[1] + N.G[2]
@@ -296,6 +296,23 @@ def all_profile_action_replay(spatially_constant):
         inverse = np.array([[1/f**2, -1, -1], [-1/f, f, -f], [-1/f, -f, f]], dtype=object)
         assert np.array_equal(inverse @ eq[x], z[x])
     norm = sum(abs(v) for v in ek.values())
+    # Sum the independently assembled literal Euler rows, retaining all L^3
+    # transverse sites.  The two transverse divergences cancel exactly.
+    planes = [[x for x in sites if x[1] == n] for n in range(L)]
+    assert [len(xs) for xs in planes] == [L**3] * L
+    plane_flux = [sum(samples[n]**2*c(params[x], params[shift(x, 1)])
+                      for x in xs) for n, xs in enumerate(planes)]
+    plane_euler = [sum(ek[x] for x in xs) for xs in planes]
+    assert plane_euler == [plane_flux[n]-plane_flux[n-1] for n in range(L)]
+    assert sum(plane_euler) == 0
+    assert all(plane_flux[n] >= L**3*samples[n]**2 for n in range(L))
+    # An exact consequence of periodic total variation gives a residual /
+    # response tradeoff.  Check it without introducing floating square roots.
+    diagonal_owner = sum(abs(q) for x in sites for q in eq[x])
+    max_square = max(samples)**2
+    mean_square = sum(f*f for f in samples)/L
+    gap = (max_square-mean_square)*L**4 - F(L, 2)*norm
+    assert gap <= 0 or 3*(max_square*diagonal_owner)**2 >= gap**2
     if spatially_constant:
         assert all(not np.any(z[x]) and not np.any(eq[x]) for x in sites)
         assert norm == F(102, 625) * L**3
@@ -306,7 +323,48 @@ def all_profile_action_replay(spatially_constant):
             "physical_sites": L**4, "temporal_face_checks": 3*L**4,
             "literal_B_Euler_rows_checked": L**4, "Gram_inverse_rows_checked": 3*L**4,
             "origin_B_Euler": str(ek[(0, 0, 0, 0)]),
-            "vacuum_B_Euler_owner_sum": str(norm) if spatially_constant else None}
+            "vacuum_B_Euler_owner_sum": str(norm) if spatially_constant else None,
+            "transverse_planes": {"physical_sites_per_plane": L**3,
+                                  "literal_Euler_plane_sums": list(map(str, plane_euler)),
+                                  "unweighted_flux_plane_sums": list(map(str, plane_flux)),
+                                  "identity": "sum_(x1=n) E_K(x,0)[B] = Q_n-Q_(n-1)",
+                                  "residual_response_tradeoff": "PASS exact rational squared check"}}
+
+
+def stationary_flux_response_barrier():
+    """Exact constants in the analytic all-mesh conservation consequence.
+
+    Stationarity makes the transverse flux constant.  The positivity branch
+    c>=1 therefore enforces a nonvanishing diagonal response.  The proof
+    owner supplies the inequalities and all-L cosine sums; this finite
+    check pins their coefficients and the literal replay pins their count.
+    """
+    samples = (F(1), F(51, 50), F(26, 25), F(51, 50))
+    high = max(samples)**2
+    mean = sum(f*f for f in samples)/4
+    assert high == F(676, 625) and mean == F(5203, 5000)
+    assert high-mean == F(41, 1000)
+    sup_square = (high**2-1)/27
+    assert sup_square == F(22117, 1875**2)
+    owner_coefficient_without_sqrt3 = (high-mean)/high
+    assert owner_coefficient_without_sqrt3 == F(205, 5408)
+    # A constant coframe must remove both geometric barriers.  The fixed
+    # flat stationary controls are not excluded by this curved identity.
+    assert (F(1)**2-1)/27 == 0
+    assert (F(1)-F(1))/F(1) == 0
+    print("PASS_STATIONARY_FLUX_SUP_AND_RAW_OWNER_RESPONSE_BARRIERS", flush=True)
+    return {"necessary_equation": "E_K=0 in the same temporal B family",
+            "conserved_flux": "J_n=f_n^2*mean_(x0,x2,x3) sqrt(1+3*z_1(x)^2); J_n is constant",
+            "positivity": "J >= max_n f_n^2 = 676/625",
+            "diagonal_response_sup_lower_bound": "sqrt(22117)/1875",
+            "sup_lower_bound_squared": str(sup_square),
+            "diagonal_response_raw_owner_lower_bound": "(205/(5408*sqrt(3)))*L^4",
+            "all_mesh_mean_f_squared": str(mean),
+            "source_necessary_condition": "h^2*M >= sqrt(22117)/1875",
+            "residual_response_tradeoff": "sqrt(3)*(676/625)*||Xi_diag||_owner1 + (L/2)*||E_K||_owner1 >= (41/1000)*L^4",
+            "norm": "full physical L^4 sum; the normalized flux average does not replace the owner norm",
+            "flat_coframe_control": "both geometric barriers vanish at f=1",
+            "proof_scope": "analytic conservation and inequalities; exact constants and literal plane counts replayed"}
 
 
 def arbitrary_amplitude_joint_exclusion():
@@ -314,6 +372,7 @@ def arbitrary_amplitude_joint_exclusion():
     inverse = generic_diagonal_memory_inverse()
     replays = [all_profile_action_replay(False), all_profile_action_replay(True)]
     print("PASS_ALL_PROFILE_FULL_ACTION_AND_UNWEIGHTED_COUNT_REPLAYS", flush=True)
+    barrier = stationary_flux_response_barrier()
     bound = 3 * F(1976, 625) * F(77, 25)**2
     assert bound == F(35147112, 390625) and bound < 90
     return {
@@ -327,6 +386,7 @@ def arbitrary_amplitude_joint_exclusion():
         "vacuum_consequence": "tau=0 excludes every amplitude profile at every admissible mesh",
         "bounded_source_consequence": "no exact joint member for L^3>(9375/17)*M^2",
         "direct_action_controls": replays,
+        "stationarity_forced_response_barrier": barrier,
         "scope": "all amplitude retunings of the same temporal B family; no claim for nonidentity spatial links or other generators",
         "verdict": "COUPLED_BOOST_ALL_AMPLITUDE_JOINT_EXCLUSION",
     }
@@ -401,7 +461,7 @@ def run_checks():
     all_amplitudes = arbitrary_amplitude_joint_exclusion()
 
     return {
-        "schema": "a4d-coupled-boost-curved-realizability-v2",
+        "schema": "a4d-coupled-boost-curved-realizability-v3",
         "input_head": INPUT_HEAD,
         "arithmetic": "exact rational, complete polynomial and direct action differentiation",
         "predeclared_data": data,

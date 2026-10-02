@@ -313,7 +313,7 @@ six actual face incidences yields the exact necessary joint identity
 \[
 \boxed{
 E_K(x,0)[B]
-=\sum_{i=1}^3D_i^-\!left[
+=\sum_{i=1}^3D_i^-\!\left[
 w_i\sqrt{1+3\bigl((T_f\Xi_{\rm diag})_i\bigr)^2}\right](x),
 \quad D_i^-F(x)=F(x)-F(x-e_i).
 }
@@ -405,3 +405,137 @@ The possible rescue by amplitude retuning is removed as a whole class.
 Nonidentity spatial links or other Lorentz generators are outside (9);
 no universal statement about those fields is inferred. The parent PR
 remains Draft / `IN_PROGRESS`, with task status `PARTIAL / OPEN`.
+
+## 9. Stationarity of the same flux forces an order-one response
+
+The same identity (14) gives a stronger necessary condition, without
+introducing any new connection family. Define the normalized transverse
+flux at slow coordinate n by
+
+\[
+J_n=f_n^2\,\frac1{L^3}\sum_{x_0,x_2,x_3}
+          \sqrt{1+3z_1(x_0,n,x_2,x_3)^2}.
+\tag{20}
+\]
+
+Summing the literal B Euler row over that full physical plane cancels
+the i=2,3 divergences by periodicity, leaving exactly
+
+\[
+\sum_{x_1=n}E_K(x,0)[B]=L^3(J_n-J_{n-1}).
+\tag{21}
+\]
+
+Hence exact connection stationarity makes J_n a constant J. Since the
+actual branch has c_1>=1, at every n it obeys J>=f_n^2, and therefore
+
+\[
+J\ge f_{\max}^2=\frac{676}{625}.
+\tag{22}
+\]
+
+Both the minimum f_0=1 and the maximum f_(L/2)=26/25 are sampled for
+every allowed L. On the minimum plane, put
+M_0=max_(x_1=0) max_(j=1,2,3)|Xi_jj(x)|. The already certified inverse
+(13) gives |z_1|<=3M_0 there. Equations (20)--(22) imply
+
+\[
+\frac{676}{625}\le J
+\le\sqrt{1+27M_0^2},\qquad
+\boxed{\|\Xi_{\rm diag}\|_\infty
+\ge M_0\ge\frac{\sqrt{22117}}{1875}.}
+\tag{23}
+\]
+
+The inequality in (23) is a necessary consequence of E_K=0 for the same
+temporal B field, before testing any metric source. For a predeclared
+bounded source Xi_diag=h^2 tau_diag with ||tau_diag||_infinity<=M,
+a joint member would consequently require
+
+\[
+h^2M\ge\frac{\sqrt{22117}}{1875}.
+\tag{24}
+\]
+
+This is still outcome 1: for sufficiently fine meshes the exact metric
+source equations cannot coexist with E_K=0. The vacuum is excluded at
+every mesh. No source has been inferred from a candidate, and the bound
+does not rely on a small amplitude, a uniform rapidity bound, or a phase
+pattern. In particular, any temporal B array whose diagonal metric
+memory tends uniformly to zero fails exact stationarity on this coframe.
+
+### The full physical owner sum
+
+The average in (20) is only a device for summing the equation. It does
+not change the response norm. From
+
+\[
+c_1-1\le\sqrt3\,|z_1|,\qquad
+|z_1|\le|\Xi_{11}|+|\Xi_{22}|+|\Xi_{33}|
+\quad(f\ge1),
+\tag{25}
+\]
+
+stationarity gives on each plane
+
+\[
+\sum_{x_1=n}\sum_{j=1}^3|\Xi_{jj}(x)|
+\ge\frac{L^3}{\sqrt3}\left(\frac{f_{\max}^2}{f_n^2}-1\right).
+\tag{26}
+\]
+
+For the fixed profile, summing cos(2*pi*n/L) gives zero, and summing its
+square gives L/2. Thus for every allowed L,
+
+\[
+\frac1L\sum_n f_n^2=\frac{5203}{5000},\qquad
+f_{\max}^2-\frac1L\sum_n f_n^2=\frac{41}{1000}.
+\tag{27}
+\]
+
+Using f_n^2<=f_max^2 in (26) and keeping all L^3 sites per plane yields
+
+\[
+\boxed{\|\Xi_{\rm diag}\|_{\rm owner,1}
+\ge\frac{205}{5408\sqrt3}\,L^4\quad\text{if }E_K=0.}
+\tag{28}
+\]
+
+This is a necessary response bound for a hypothetically stationary member
+of the rejected family. It is not a constructed admissible field or a
+response gap relative to the smooth comparator. In particular it cannot
+be called outcome 2.
+
+There is also an exact residual/response tradeoff for every amplitude
+array, whether stationary or not. Set Q_n=L^3 J_n and
+e_n=sum_(x_1=n) E_K(x,0)[B]. Periodicity and (21) show that the total
+variation of Q is at most ||E_K||_owner1. The oscillation of a periodic
+scalar sequence is at most half its total variation. At a maximum-f
+plane, Q>=L^3 f_max^2, so
+
+\[
+Q_n\ge L^3 f_{\max}^2-\tfrac12\|E_K\|_{\rm owner,1}.
+\tag{29}
+\]
+
+Since Q_n-L^3 f_n^2>=0, (25), (27), and (29) give
+
+\[
+\boxed{
+\sqrt3\,\frac{676}{625}\|\Xi_{\rm diag}\|_{\rm owner,1}
++\frac L2\|E_K\|_{\rm owner,1}
+\ge\frac{41}{1000}L^4.}
+\tag{30}
+\]
+
+This retains both raw physical sums. At E_K=0 it reproduces (28).
+All geometric barriers vanish for a constant coframe, so the flat
+stationary controls are not excluded by this argument.
+
+The existing certificate now sums the independently assembled Euler
+rows on each of the four L=4 transverse planes and checks (21), the
+actual L^3 multiplicity, and (30) in exact rational squared form for
+both existing amplitude controls. It also pins every rational constant
+in (23), (27), and (28). The all-mesh conservation and inequalities are
+the analytic proof above, rather than an extrapolation from those controls.
+The parent joint-response task remains **PARTIAL / OPEN**.

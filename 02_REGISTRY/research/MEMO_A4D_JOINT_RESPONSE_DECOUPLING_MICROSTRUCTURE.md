@@ -1,5 +1,21 @@
 # A4D stationary response memory and continuum collapse boundary
 
+> **Conservation consequence of the same coupled-B flux.**
+> Section 9 of [the existing boost owner](A4D_COUPLED_BOOST_CURVED_REALIZABILITY.md)
+> sums the literal Euler row over each full transverse plane. Exact
+> stationarity makes `J_n=f_n^2 mean(sqrt(1+3 z_1^2))` constant; positivity
+> forces `J>=676/625`. The certified diagonal Gram inverse then gives
+> `||Xi_diag||_infinity>=sqrt(22117)/1875` for every stationary temporal-B
+> member, and the full physical sum obeys
+> `||Xi_diag||_owner1 >=205 L^4/(5408 sqrt(3))`.
+> A predeclared bounded source therefore requires
+> `h^2 M>=sqrt(22117)/1875`, so cannot coexist with connection stationarity
+> on fine meshes. This strengthens outcome 1 within the same family;
+> it is not a constructed joint field or an outcome-2 response gap.
+> The exact certificate retains every L^3 site per transverse plane and
+> verifies the literal conservation sums and residual/response tradeoff.
+> The unrestricted owner-response target remains `PARTIAL / OPEN`.
+
 > **Exact mean-response reduction and source-transfer correction.**
 > [The transverse-mean owner](A4D_WARPED_TRANSVERSE_MEAN_REDUCTION.md) now
 > eliminates the mean connection for arbitrary small full-four-dimensional
