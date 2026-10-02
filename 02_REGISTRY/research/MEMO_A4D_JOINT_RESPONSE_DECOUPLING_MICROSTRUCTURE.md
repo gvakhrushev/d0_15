@@ -18,6 +18,36 @@
 > under \`t -> -t\` while \`Xi\` changes sign. The exact structural checker
 > passes. This is a class reduction, not yet the task terminal.
 >
+> **2026-10-02 source-image and current-rigidity reduction.**
+> [The source-image owner](A4D_SOURCE_IMAGE_COLLAPSE.md) rewrites the
+> non-tautological target exactly as collapse of
+> \(\mathscr T_h(Q_h)=\{\tau_h:\exists K_h,\ E_K=0,\ E_Q=h^2\tau_h\}\)
+> onto the designated response.  [Regular stationary sheets](A4D_REGULAR_STATIONARY_CRITICAL_VALUE_QUOTIENT.md)
+> contribute only one critical-value germ per horizontal connected component,
+> so microscopic multiplicity inside such a sheet is not response memory.
+> The complete small real four-phase flat chart already has singleton source
+> image \(\{0\}\) by the nonlinear quarter owner.  Separately,
+> [all six flat physical resonance circles](A4D_IDENTITY_RESONANCE_CIRCLES_RESPONSE_NULL.md)
+> have identically zero Hermitian quadratic source moment as Laurent
+> polynomials, not merely at fourth-root samples.
+>
+> [The moving simple-plane current theorem](A4D_MOVING_SIMPLE_PLANE_CURRENT_RIGIDITY.md)
+> now performs the first genuine gluing calculation without freezing the
+> incoming cell.  Its metric Euler is identically zero before stationarity.
+> The shared spatial-link Euler transports the two plane-difference vectors
+> by one conformal \(2\times2\) map and has an independent oriented-area row.
+> On a nondegenerate layer these equations force equal neighboring amplitude
+> squares; the conformal map becomes \(SO(2)\).  The opposite-sign transition
+> is exactly the corresponding internal Lorentz rotation of the complete
+> spatial triad.  Hence exact stationarity preserves the spatial Gram:
+> a response-null simple-plane packet either leaves the connection equations
+> or propagates isometrically.  In the one-coordinate continuum reduction
+> the surviving lapse/shift freedom with constant spatial metric is flat.
+> This removes a varying-plane microstructure class by conservation rather
+> than by a frequency census.  General coupled centers and genuinely
+> four-dimensional varying planes remain in the finite degree-2/3/4
+> correlation/source-image problem.
+>
 # A4D stationary response memory and continuum collapse boundary
 
 > **Full-field stationary trace identity and vacuum source obstruction.**
