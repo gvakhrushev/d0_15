@@ -1,0 +1,107 @@
+{
+  "schema": "a4d-harmonic-sign-candidate-audit-v1",
+  "input_head": "f3b6b24e8d8ab00c9aa0e3496bc367a542cb5b8f",
+  "arithmetic": "exact Q; full Cayley Euler numerators; coefficientwise rational current identity",
+  "controls_consumed": [
+    "mandatory #232/Y joint vacuum",
+    "mandatory #227/B connection-stationary response"
+  ],
+  "Y_source_null_harmonic_counterexample": {
+    "face_order": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "delta_harmonic_temporal_boost_block": [
+      [
+        -2,
+        1,
+        1
+      ],
+      [
+        1,
+        -2,
+        1
+      ],
+      [
+        1,
+        1,
+        -2
+      ]
+    ],
+    "block_multiplier": "t^2/(4+3*t^2)",
+    "all_other_harmonic_entries": "zero",
+    "ordinary_codifferential_witness": "(p=0,role=1,generator=K2): -4*t/(4+3*t^2)",
+    "h2_normalized_harmonic_limit_t_ah": "(face01,K1): -a^2/2",
+    "both_source_equations": "E_K=0, Xi=h^2*tau=0 exactly; tau=0 prescribed before links",
+    "metric_response_gap": "zero exactly"
+  },
+  "B_global_sign_insufficiency_control": {
+    "original_signs": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "translated_signs": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "same_harmonic_momentum": true,
+    "same_positive_amplitude": true,
+    "same_origin_Xi11": "-20/97",
+    "domain": "full E_K fiber, not two solutions with the same prescribed smooth source",
+    "consequence": "one global amplitude sign is not full sitewise sign memory"
+  },
+  "transport_and_raw_norm_obstructions": {
+    "covariant_difference_identity": "[T_r-I,T_s-I]=(Ad_P_rs-I) T_s T_r",
+    "curved_Y_commutator_nonzero_components": 6,
+    "period_four_flux": [
+      1,
+      0,
+      -1,
+      0
+    ],
+    "period_four_divergence": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "signed_divergence_sum": 0,
+    "unweighted_divergence_l1": 4,
+    "repeated_h2_divergence_normalized_owner1": "L^4, despite zero signed mean",
+    "norm_control_scope": "algebraic norm obstruction, not an asserted realizable joint response"
+  },
+  "generic_same_source_identity": "Xi(K1)-Xi(K2)=(Xi(K1)-h^2*tau)-(Xi(K2)-h^2*tau)=0",
+  "correct_negative_target": "predeclare tau, solve full admissible joint equations, separate h^2*tau from designated Xi in the declared norm",
+  "nonclaims": [
+    "no A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO",
+    "no rejection of every possible finite sufficient invariant",
+    "ordinary Hodge projection of the literal momentum is not a transported cohomology theorem"
+  ],
+  "verdict": "CANONICAL-HARMONIC-SIGN-TERMINAL-DICHOTOMY-INVALID"
+}

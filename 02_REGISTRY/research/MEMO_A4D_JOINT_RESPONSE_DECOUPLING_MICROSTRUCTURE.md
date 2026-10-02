@@ -1,3 +1,21 @@
+> **2026-10-02 harmonic/sign invariant audit.**
+> [Section 9 of the source-image owner](A4D_SOURCE_IMAGE_COLLAPSE.md)
+> checks the proposed single `(J_harm,sigma)` terminal with the mandatory
+> controls. Two exact roots with the same fixed Q and tau have the same Xi
+> by the source equation; their current-memory nonuniqueness cannot be a
+> response NO-GO. The exact #232/Y vacuum has source tau=0 and Xi=0, yet its
+> canonical ordinary harmonic momentum changes by a nonzero h^2-scaled
+> vector when t=a*h. The complete numerator and current identity replay
+> exactly. The same stationary field has nonzero ordinary codifferential
+> of its face momenta: the actual incidence operator retains transport.
+> A signed divergence cancellation also leaves the raw owner norm
+> uncontrolled. These facts close the audit of the proposed criterion,
+> while preserving the single general target: a refinement-uniform bound
+> for the realizable source image in the exact quartic shared-link system,
+> or a predeclared source separated from the designated response. A new
+> family certificate cannot substitute for that terminal; no joint-response
+> NO-GO or full closure is claimed.
+>
 > **2026-10-02 full-link B current theorem.**
 > [The full-link current owner](A4D_COMMUTING_B_FULL_LINK_CURRENT_RIGIDITY.md)
 > removes the identity-spatial-link assumption from the commuting B class.

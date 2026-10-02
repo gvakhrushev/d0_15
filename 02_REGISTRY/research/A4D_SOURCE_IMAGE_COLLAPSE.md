@@ -331,3 +331,163 @@ therefore excludes the whole bounded-source image on fine meshes, with the
 same raw Euler lower bound `(102/625)L^3-90 M^2`. Noncommuting spatial links
 add the explicit adjoint-transport torque of that owner; its control is
 still required for the unrestricted source image.
+
+## 9. Audit of the proposed harmonic-plus-sign terminal
+
+The instruction to use one object rather than another family census is
+retained. The proposed `(J_harm,sigma)` first needs a precise definition,
+a sufficient readout map and a valid terminal implication. This audit uses
+only the mandatory #232 and #227 controls already owned by the task.
+
+### 9.1 Same-source response separation is impossible here
+
+Fix the same sampled Q_h and the same independently prescribed tau_h. Two
+exact joint/source roots obey
+
+\[
+\Xi(K_1)=h^2\tau_h=\Xi(K_2),\qquad\Xi(K_1)-\Xi(K_2)=0.
+\tag{22}
+\]
+
+Thus a pair with one tau and different Xi cannot satisfy the exact equations.
+Nonuniqueness of a finer current memory at fixed tau does not establish
+`A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO`.
+The valid negative terminal is a predeclared source and an exact admissible
+sequence separated from the designated response:
+
+\[
+E_K(Q_h,K_h)=0,\quad\Xi(K_h)=h^2\tau_h,\quad
+\liminf h^{-2}\|h^2\tau_h-\Xi(K_h^{\rm sm})\|_{\mathrm{owner},1}>0.
+\tag{23}
+\]
+
+The comparator need not solve the same metric-source equation. If it does,
+(23) is zero by substitution, as required by the task brief.
+
+### 9.2 Literal harmonic momentum is not determined by the source
+
+Use the right face momentum of the finite-current owner,
+
+\[
+\Pi_{rs}(x)[X]=\frac12\langle W_{rs}(S_x),P_{rs}X+XP_{rs}^{-1}\rangle.
+\tag{24}
+\]
+
+At S=I its ordinary periodic harmonic projection is the 36-component
+constant two-cochain `bar Pi_rs=mean_x Pi_rs(x)`. This is the natural
+ordinary-Hodge interpretation of the proposed current. For other local
+Lorentz frames at the same Q=eta, pull each covector back by its solder:
+evaluate it on `S_x X S_x^-1`. This gives the same components in the S=I
+representative and retains the genuine Lorentz quotient.
+
+The mandatory #232/Y joint vacuum has
+
+\[
+Y=J_{12}-J_{13}+J_{23},\quad Y^3=-3Y,\quad
+U_Y(t)=I+\frac{4tY+2t^2Y^2}{4+3t^2},
+\]
+
+with Role0 links `(U_Y(t),I,U_Y(t)^-1,I)` in the repeated four-phase cell
+and identity spatial links. Its **complete** Euler numerator is identically
+zero: `E_K=0`, `Xi=0`. The source tau=0 is fixed before choosing t. The
+designated I root has the same source and response. The Y field has
+nonzero curvature `4tY/(4+3t^2)` for t!=0 and is nongauge.
+
+The exact harmonic difference has temporal-face/boost block
+
+\[
+\boxed{\overline\Pi(Y_t)-\overline\Pi(I)
+=\frac{t^2}{4+3t^2}
+\begin{pmatrix}-2&1&1\\1&-2&1\\1&1&-2\end{pmatrix},}
+\tag{25}
+\]
+
+where rows are faces 01,02,03 and columns K1,K2,K3; all other entries are
+zero. This is a coefficientwise identity from (24). For t=ah, a>0,
+
+\[
+h^{-2}(\overline\Pi(Y_{ah})-\overline\Pi(I))_{01,K1}
+\longrightarrow-\frac{a^2}{2},\qquad\Delta\Xi=0.
+\tag{26}
+\]
+
+Thus the log-O(h) admissible joint vacuum has continuously variable harmonic
+current memory at one smooth source and one designated sheet. A sign label
+cannot make that varying component a function of the fixed source. This is
+response-invisible current memory. It falsifies the proposed implication
+from undetermined current memory to a response NO-GO.
+
+### 9.3 The canonical stationary current is transported
+
+On the same Y vacuum the ordinary codifferential of (24) is nonzero. One
+literal row at phase zero is
+
+\[
+(D^*\Pi)_{\mathrm{Role1},K2}=-\frac{4t}{4+3t^2},\qquad E_K=0.
+\tag{27}
+\]
+
+The exact current formula retains every tail adjoint transport. With
+`T_r v(x)=Ad_(L_xr) v(x+e_r)`, direct multiplication gives
+
+\[
+[T_r-I,T_s-I]=(\operatorname{Ad}_{P_{rs}}-I)T_sT_r.
+\tag{28}
+\]
+
+This commutator is nonzero on the curved Y control. A flat cochain complex
+and its fixed harmonic dimension therefore cannot be assumed for the
+transported operator. A different J or transported harmonic quotient needs
+an explicit construction and its readout proof. Equations (25)--(27)
+concern the canonical momentum's ordinary Hodge projection; they do not
+reject every possible finite sufficient invariant.
+
+The mandatory #227 control also tests one amplitude sign on the full E_K
+fiber. A phase translate changes response signs from `(+,+,-,-)` to
+`(+,-,-,+)` while preserving the entire harmonic momentum and the positive
+amplitude, including the origin response sign. Xi changes sitewise.
+These fields need different fast sources; they are not two roots of one
+smooth joint/source problem. A sitewise sign field has a number of entries
+growing with L, rather than one global bit.
+
+### 9.4 Divergence cancellation does not bound the owner norm
+
+A divergence telescopes in signed summation. The period-four flux
+`(1,0,-1,0)` has divergence `(1,-1,-1,1)`, zero signed mean and unweighted
+l1 norm four. Repeated at amplitude h^2 on `(Z/LZ)^4`, its normalized raw
+norm is L^4. This is an algebraic norm control, not an asserted joint field.
+Deleting curls/divergences requires an estimate in the actual owner norm;
+weak smooth-test cancellation does not prove the required raw `o(h^2)`.
+
+### 9.5 The single terminal object
+
+The response-sufficient object remains the realizable source image (1),
+with the exact degree-four shared-link constraint system as its algebraic
+presentation. A current invariant V must provide a map `Xi=R(V)`; V itself
+may vary at fixed Xi, as (25) proves. Positive closure needs the uniform
+image bound (4) in the unweighted norm; negative closure needs (23).
+
+Finite stencil and degree mean a fixed list of local equation types. They
+do not prove that one fixed global vector parameterizes every refinement:
+physical sites, overlap constraints and sitewise sign entries grow with L.
+A refinement-uniform dual identity/inequality for the source image remains
+required. Subsequent family certificates do not replace that obligation
+or count as the terminal.
+
+The [quadratic bracket-memory owner](A4D_QUADRATIC_BRACKET_MEMORY.md),
+at `a60378f7c8d7f08435838ddb67a3c3b093fafb8d`, provides an exact 36-component
+local projection for the leading odd-curvature interaction. It is consumed
+as a coefficient input to this same image problem. Its quadratic order
+alone does not control the cubic/quartic physical sums in the raw norm.
+
+The audit checks the complete degree-eight Y Euler numerator, every
+coefficient of (25), the existing B phase controls, the transport
+commutator and the exact norm control:
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_harmonic_sign_candidate_audit_check.py
+```
+
+Verdict: `CANONICAL-HARMONIC-SIGN-TERMINAL-DICHOTOMY-INVALID`.
+This closes the audit of that proposed criterion. The parent response
+theorem remains `PARTIAL / OPEN`; no new family or task-level NO-GO is added.

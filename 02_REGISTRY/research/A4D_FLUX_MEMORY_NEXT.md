@@ -18,4 +18,6 @@ E_K,0[B] = sum_i D_i^-(w_i sqrt(1+3 z_i^2))
 
 Stationarity is conservation of a flux built from the response slots in that subgroup. Beyond it, both the torque and the response projection must be controlled on the exact joint/source equations; dropping the torque or keeping only a scalar harmonic flux is insufficient.
 
-Verdict: the full-link commuting B smooth-source image collapses at eta and is infeasible for bounded sources on the fixed warp. Noncommuting spatial compensation remains open. No Einstein terminal.
+[The harmonic/sign audit](A4D_SOURCE_IMAGE_COLLAPSE.md#9-audit-of-the-proposed-harmonic-plus-sign-terminal) now fixes the next terminal. At fixed Q, one exact prescribed source fixes Xi, although finer harmonic current memory can vary: the mandatory Y vacuum provides the exact source-null witness. Ordinary divergence also does not control the raw owner norm. The next obligation is one refinement-uniform source-image bound for the full quartic shared-link constraints, or one predeclared admissible source separated from the designated response. A further family certificate does not meet that obligation.
+
+Verdict: the full-link commuting B smooth-source image collapses at eta and is infeasible for bounded sources on the fixed warp. The proposed harmonic/sign terminal implication is invalid; the unrestricted source-image estimate remains open. No Einstein terminal.
