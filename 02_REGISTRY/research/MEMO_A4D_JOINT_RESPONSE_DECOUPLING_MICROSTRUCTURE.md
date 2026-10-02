@@ -1,3 +1,24 @@
+> **2026-10-02 full-link B current theorem.**
+> [The full-link current owner](A4D_COMMUTING_B_FULL_LINK_CURRENT_RIGIDITY.md)
+> removes the identity-spatial-link assumption from the commuting B class.
+> Every role may contain arbitrary `exp(alpha_r(x) B)` links, with no
+> amplitude, envelope or period-four restriction. At eta the full Lorentz
+> Ward equations make the metric response `Xi=z*m`; the invisible spatial
+> circulation is retained. The actual shared-link B currents then force
+> `|z|` constant on the connected four-torus. A predeclared uniformly C5
+> smooth source gives the original unweighted bound
+> `h^-2 ||Xi||_owner1 <= 3 M5 h`; C-infinity sources give O(h-infinity).
+> On the fixed curved warp, the three diagonal response slots still
+> determine all temporal plaquette coefficients despite arbitrary spatial
+> B holonomies. The same flux identity and all-mesh raw lower bound
+> `(102/625)L^3-90 M^2` exclude every bounded-source full-B member.
+> Thus spatial compensation must leave the common subgroup. A new exact
+> all-field identity displays what is added there: ordinary divergence
+> plus a spatial adjoint-transport torque. The certificate verifies all
+> literal Ward/current rows and rejects deletion of that torque on a
+> noncommuting control. This closes a nonlinear source-image class,
+> not the unrestricted noncommuting task, which stays PARTIAL / OPEN.
+>
 > **2026-10-02 finite-current/correlation architecture.**
 > [The finite current-memory owner](A4D_FINITE_CURRENT_CORRELATION_MEMORY.md)
 > rewrites the literal connection Euler equation as the exact adjoint of

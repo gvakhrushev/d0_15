@@ -8,12 +8,14 @@ The periodic commuting `B` theorem already is the laser-spot cut for this class.
 
 The microscopic pattern is not the transported object. The shared-face current sees only the increments. Even and odd parts must not be confused: `gamma` is odd, so `t` and `-t` share no response class.
 
-What this does not cover is the next identity, not a new circle census. On a varying coframe the face weight `w_i` multiplies the flux, and spatial-link compensation can add a current that is not a function of `delta_p` alone. The owned temporal-`B` divergence
+The [full-link current theorem](A4D_COMMUTING_B_FULL_LINK_CURRENT_RIGIDITY.md) now retains arbitrary spatial links in the same B subgroup. At eta, the full Ward equations and shared-link conservation make the magnitude of `Xi=z*m` constant; independently prescribed uniformly C5 sources give the unweighted normalized bound `3 M5 h`. On the fixed curved warp, spatial B plaquettes do not enter the three diagonal source slots, so every bounded-source full-B completion is excluded on fine meshes.
+
+What remains is noncommuting spatial compensation, not a new circle census. The same owner derives the exact all-field identity `E_K,0[B]=sum_i D_i^- J_i+sum_i T_i(x-e_i)`, with `T_i` the spatial adjoint-transport torque. The common-subgroup torque is zero and its constitutive current is the owned divergence
 
 ```text
 E_K,0[B] = sum_i D_i^-(w_i sqrt(1+3 z_i^2))
 ```
 
-is the model: stationarity is conservation of a flux built from the response slots. Extending that conservation off identity spatial links is the remaining object. If the harmonic part of that flux is fixed by `Xi`, the remaining pattern is not a new continuum degree of freedom.
+Stationarity is conservation of a flux built from the response slots in that subgroup. Beyond it, both the torque and the response projection must be controlled on the exact joint/source equations; dropping the torque or keeping only a scalar harmonic flux is insufficient.
 
-Verdict: commuting temporal `B` phase-common source is vacuum. Coupled spatial compensation remains open. No Einstein terminal.
+Verdict: the full-link commuting B smooth-source image collapses at eta and is infeasible for bounded sources on the fixed warp. Noncommuting spatial compensation remains open. No Einstein terminal.

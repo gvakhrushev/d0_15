@@ -309,3 +309,25 @@ only time-dependent lapse/shift, hence is flat.
 Equations (19)--(21) are examples of the intended proof architecture:
 collapse whole realizability images instead of cataloguing their microscopic
 representatives.
+
+### 8.3 Full-link commuting B, including spatial compensation
+
+[The full-link current owner](A4D_COMMUTING_B_FULL_LINK_CURRENT_RIGIDITY.md)
+now allows arbitrary full-four-dimensional links in `exp(R B)` on all four
+roles. On eta, unrestricted connection stationarity makes `Xi=z*m` and
+conserves `|z|` over the entire torus, while allowing an invisible spatial
+current. Independent uniformly C5 sampled sources then imply
+
+\[
+h^{-2}\|\Xi\|_{\mathrm{owner},1}\le3M_5h\longrightarrow0.
+\]
+
+This is the original unweighted topology; for a fixed C-infinity source the
+bound is super-algebraic. The microscopic links and signs are not classified.
+
+On the fixed warped background, arbitrary spatial B holonomies leave the
+three diagonal source-to-flux relations unchanged. The exact common current
+therefore excludes the whole bounded-source image on fine meshes, with the
+same raw Euler lower bound `(102/625)L^3-90 M^2`. Noncommuting spatial links
+add the explicit adjoint-transport torque of that owner; its control is
+still required for the unrestricted source image.
