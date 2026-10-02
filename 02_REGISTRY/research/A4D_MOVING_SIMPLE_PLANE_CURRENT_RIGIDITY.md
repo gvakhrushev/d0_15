@@ -195,6 +195,20 @@ R(z,-z)=
 The checker substitutes both alternatives into **every** spatial-link Euler
 row and obtains zero exactly.
 
+For the opposite-sign branch it also restores an arbitrary common spatial
+base (w_-) and arbitrary incoming (u_-,v_-).  If
+(G(z)) is the four-dimensional Lorentz matrix whose spatial (12)-block is
+(10), then setting the whole outgoing spatial triad to
+
+[
+(s_1,s_2,s_3)=G(z)(s^-_1,s^-_2,s^-_3)
+]
+
+makes all eighteen spatial-link Euler rows vanish symbolically.  Its complete
+(3	imes3) spatial Gram equals the incoming one exactly.  Thus the
+opposite-sign solution is literally internal Lorentz transport of the
+spatial triad, not a second physical geometry.
+
 Therefore an exact stationary transition preserves
 
 \[
