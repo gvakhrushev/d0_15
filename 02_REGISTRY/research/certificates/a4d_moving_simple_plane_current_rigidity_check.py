@@ -149,6 +149,32 @@ def main():
         ck(f"{label}_SPATIAL_DIFFERENCE_GRAM_PRESERVED",
            sp.simplify(Gcur-Gprev)==sp.zeros(2))
 
+
+    # The opposite-sign transition is exactly the same internal Cayley
+    # rotation applied to the whole spatial triad, not a new physical Gram.
+    qbase=sp.Matrix(sp.symbols("q0:4", real=True))
+    prev_general=sp.Matrix.hstack(e0,qbase,qbase+U0,qbase+V0)
+    G4=sp.eye(4)
+    G4[1,1],G4[1,2]=Rminus[0,0],Rminus[0,1]
+    G4[2,1],G4[2,2]=Rminus[1,0],Rminus[1,1]
+    current_general=sp.simplify(G4*prev_general)
+    Cyminus=Y.cayley_simple(J,1,-z)
+    wave_minus=[Cyminus,I4,Y.linv(Cyminus),I4]
+    def link_general(x,role):
+        if role != 0:
+            return I4
+        wave=wave_z if x[0] >= 0 else wave_minus
+        return wave[sum(x)%4]
+    def solder_general(x):
+        return current_general if x[0] >= 0 else prev_general
+    ck("OPPOSITE_SIGN_IS_FULL_SPATIAL_LORENTZ_TRANSPORT",
+       all(sp.factor(Y.edge_euler(solder_general,link_general,(0,0,0,0),role,g))==0
+           for role in (1,2,3) for g in GEN))
+    Gprev=sp.simplify(prev_general[:,1:].T*Y.ETA*prev_general[:,1:])
+    Gcurr=sp.simplify(current_general[:,1:].T*Y.ETA*current_general[:,1:])
+    ck("OPPOSITE_SIGN_FULL_SPATIAL_GRAM_PRESERVED",
+       sp.simplify(Gcurr-Gprev)==sp.zeros(3))
+
     print("RESULT A4D-MOVING-SIMPLE-PLANE-CURRENT-RIGIDITY-CERTIFIED",flush=True)
     print("SCOPE canonical one-coordinate spacelike difference-plane family; "
           "arbitrary neighbouring time columns remain free by the parent theorem.",flush=True)
