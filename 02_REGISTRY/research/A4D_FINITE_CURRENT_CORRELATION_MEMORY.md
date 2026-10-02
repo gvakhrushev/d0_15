@@ -425,3 +425,17 @@ Verdicts:
 The parent response-decoupling task remains open only at the finite
 degree-2/3/4 correlation realizability identity (18), not at an unlimited
 space of new nonlinear proof levels.
+
+
+## 10. Replay
+
+The structural checker verifies the exact support counts, matrix-link degree
+bound, inverse-factor variation degree, a fifth-factor hostile control, and
+the odd/even temporal-B constitutive parity:
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_finite_current_correlation_memory_check.py
+```
+
+The polynomial-degree argument itself is the analytic Lorentz-matrix proof in
+Sections 2--3; the checker is an independent exact algebra/control replay.
