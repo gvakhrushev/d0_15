@@ -238,3 +238,209 @@ Verdict: `WARPED-FULL4D-EXACT-MEAN-SCHUR-RESPONSE-REDUCTION`.
 This is an analytic consequence of the owned one-coordinate inverse,
 finite-stencil derivative bounds, and Taylor's integral identity. It is
 not a machine-certified continuum closure or a universal response theorem.
+
+## 7. An exact stationary action identity for the full four-dimensional field
+
+This step uses the same naked action and the same fixed coframe, and does
+not restrict the candidate to a connection sector. Let
+
+\[
+\mathscr A_h(S,K)=\sum_x\ell(S_x,C(K)_x),\qquad
+Q:\Xi=\sum_{a\le b}Q_{ab}\,(\operatorname{pack}\Xi)_{ab}.
+\tag{17}
+\]
+
+The off-diagonal factor is already in pack Xi; it is not inserted again.
+Each cell action is homogeneous of degree two in S. For the true Gram
+variation dot Q=Q, the lift is dot S=S/2. Therefore, exactly and even
+before imposing connection stationarity,
+
+\[
+\boxed{\mathscr A_h(S,K)=\sum_x Q_x:\Xi(S,K)_x.}
+\tag{18}
+\]
+
+This follows from the literal complementary wedge weights, not from an
+assumed continuum Einstein equation. On E_K=0, Xi is the genuine descended
+metric Euler, as proved by the response-memory owner.
+
+Take any second exact full connection root K=K_h^* exp u and put
+a_h(t)=mathscr A_h(S,K_h^* exp(tu)). Every one of the 24 L^4 independent
+connection Euler rows is assumed zero at both endpoints. Hence
+a_h'(0)=a_h'(1)=0. Two integrations by parts give, for any C^3 scalar a,
+
+\[
+a(1)-a(0)=\tfrac12[a'(0)+a'(1)]
+-\tfrac12\int_0^1t(1-t)a'''(t)\,dt.
+\tag{19}
+\]
+
+Using the stationary endpoints and (18) yields the all-order identity
+
+\[
+\boxed{
+\sum_xQ_x:\bigl[\Xi(S,K)_x-\Xi(S,K_h^*)_x\bigr]
+=-\tfrac12\int_0^1t(1-t)a_h'''(t)\,dt.}
+\tag{20}
+\]
+
+No quadratic truncation, transverse inverse, translation invariance of
+the candidate, or source assignment is used in (20). Only the comparator
+comes from the already owned designated construction.
+
+### A uniform bound in the original physical sum
+
+Write A_star=||log K_h^*||_infinity and A=||u||_infinity in the six-generator
+coordinate sup norm, and assume A_star+A<=1/48. For the fixed warp,
+each literal face weight has nuclear norm at most 676/625. Along the
+relative-log path, a third face derivative is bounded by
+
+\[
+\frac{676}{625}e^{24(A_\star+A)}
+\left(\sum_{\text{four face positions}}\|u_{\text{link}}\|_{\rm op}\right)^3.
+\]
+
+Every generator has operator norm one, so the parenthesized sum is at
+most 24 A. Each independent physical link occurs in exactly six based
+faces. Summing all positions, using e^(1/2)<2, gives
+
+\[
+|a_h'''(t)|
+\le 6912\frac{676}{625}A^2\|u\|_{\rm owner,1}
+<8192 A^2\|u\|_{\rm owner,1}.
+\tag{21}
+\]
+
+The inverse factors in the odd plaquette have the same bound, and their
+factor 1/2 is retained. The count is over the full L^4 carrier, regardless
+of roughness or frequency. Since integral_0^1 t(1-t) dt=1/6, (20) implies
+
+\[
+\left|\sum_xQ_x:[\Xi(K)-\Xi(K_h^*)]_x\right|
+\le\frac{8192}{12}A^2\|u\|_{\rm owner,1}.
+\tag{22}
+\]
+
+In particular, if A<=M_u h, then ||u||_owner1<=24 L^4 M_u h and
+
+\[
+\left|h^4\sum_xQ_x:h^{-2}[\Xi(K)-\Xi(K_h^*)]_x\right|
+\le16384 M_u^3 h.
+\tag{23}
+\]
+
+This proves convergence of one integrated scalar trace for every exact
+full-lattice log-O(h) connection-stationary family. It is not convergence
+of the full tensor or of the raw owner norm.
+
+An exact comparator root is not needed for this one observable. With
+an approximate comparator K_bar, residual r_h=E_K(S,K_bar), and exact
+stationarity only at K=K_bar exp u, (19) instead gives exactly
+
+\[
+\sum_xQ_x:[\Xi(K)-\Xi(K_{\rm bar})]_x
+=\tfrac12\langle r_h,u\rangle
+-\tfrac12\int_0^1t(1-t)a_h'''(t)\,dt.
+\tag{23a}
+\]
+
+The first pairing uses all independent physical link coordinates. Its
+absolute value is at most ||r_h||_infinity ||u||_owner1. Thus a log-O(h)
+candidate and comparator with ||r_h||_infinity=O(h^2) still give an O(h)
+normalized integrated trace difference. The owned super-algebraic smooth
+comparator residual is more than sufficient. For any other fixed
+nondegenerate coframe in a compact solder chart, the same argument holds
+with its finite weight constant in place of 8192. This conditional
+full-field lemma needs no connection inverse or proof of an exact
+four-dimensional comparator root. It supplies neither that existence
+theorem nor a tensor owner-norm estimate.
+
+### The designated action on the same nonconstant warp
+
+The owned one-coordinate inverse determines the first smooth log
+coefficient uniquely. With p=f' and q=f'', direct shared-face assembly
+gives the leading forcing
+
+\[
+F^{(1)}_{0,K_1}=2fp,\qquad
+F^{(1)}_{2,J_{12}}=F^{(1)}_{3,J_{13}}=-p
+\]
+
+and the leading smooth logs
+
+\[
+\log K^{\rm sm}_2=-hpJ_{12}+O(h^2),\qquad
+\log K^{\rm sm}_3=-hpJ_{13}+O(h^2);
+\quad \log K^{\rm sm}_{0,1}=O(h^2).
+\tag{24}
+\]
+
+The complete h^2 curvature/action calculation keeps all 24 arbitrary
+second log coefficients. They cancel from this coefficient. The six
+literal face action coefficients in face order are
+
+\[
+(0,0,0,-fq,-fq,-p^2),\qquad
+\ell_h(K_h^{\rm sm})=h^2[-2ff''-(f')^2]+O(h^3).
+\tag{25}
+\]
+
+Thus no global Hilbert-density normalization is being inferred merely
+from a metric-normal point. Periodicity gives
+
+\[
+\int_0^1[-2ff''-(f')^2]\,dy
+=\int_0^1(f')^2\,dy=\frac{\pi^2}{1250}
+\tag{26}
+\]
+
+for f(y)=1+(1-cos(2*pi*y))/50. The leading sampled average is also exactly
+pi^2/1250 for every allowed L: its only trigonometric terms have degrees
+one and two. The super-algebraic rescue from K_h^sm to K_h^* preserves this
+leading coefficient in the actual physical sum. Consequently
+
+\[
+h^2\mathscr A_h(S,K_h^*)=\frac{\pi^2}{1250}+O(h).
+\tag{27}
+\]
+
+The [existing response-memory certificate](certificates/a4d_stationary_response_memory_check.py)
+now verifies the complete literal first 24-row equation and (25) with
+independent symbolic f,p,q and all 24 second log coefficients. It also
+checks the endpoint kernel, its sign/factor controls, and all normalization
+constants. The uniform analytic remainder and exact-root comparison use
+the already owned smooth-comparator and designated-rescue results.
+
+### A necessary condition on a source specified before the field
+
+For an exact joint field with the predeclared source Xi=h^2 tau_h,
+equations (18), (23), and (27) require
+
+\[
+\boxed{h^4\sum_xQ_h(x):\tau_h(x)
+=\frac{\pi^2}{1250}+O(h).}
+\tag{28}
+\]
+
+If a fixed smooth tau is sampled, this gives
+integral Q(y):tau(y) dy=pi^2/1250. For tau=0, (28) is impossible.
+Therefore, for every fixed log-O(h) bound, sufficiently fine meshes have
+no exact joint vacuum on this same nonconstant warp, even with all
+generators, all spatial links, and arbitrary four-dimensional patterns.
+The usual absolute-log O(h) condition is equivalent here to relative-log
+O(h), since the designated root itself has logarithm O(h).
+
+This is a source-feasibility obstruction, not a response-gap witness.
+It excludes the independently declared vacuum class; it does not close
+the task by a vacuous response statement. Sources satisfying the trace
+condition still require the full owner estimate (14), or an admissible
+counterexample. The integral trace controls neither sitewise trace
+oscillations nor the other metric readouts. The existing flat boost
+control has zero integrated trace and nonzero owner response; its
+connection-only status still cannot establish a joint negative terminal.
+The flat response-null control also remains consistent: when f is
+constant, the geometric integral (26) is zero.
+
+Additional verdict: **FULL4D-LOG-O(h)-STATIONARY-TRACE-COMPATIBILITY**.
+The independent vacuum on this fixed warp is unrealizable in that class.
+The general task and its raw owner-sum target remain **PARTIAL / OPEN**.

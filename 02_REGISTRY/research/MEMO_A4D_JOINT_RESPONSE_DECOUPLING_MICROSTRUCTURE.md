@@ -1,5 +1,29 @@
 # A4D stationary response memory and continuum collapse boundary
 
+> **Full-field stationary trace identity and vacuum source obstruction.**
+> [Section 7 of the existing mean-response owner](A4D_WARPED_TRANSVERSE_MEAN_REDUCTION.md)
+> uses homogeneity of the actual action and stationarity at both endpoints:
+> `sum_x Q:[Xi(K)-Xi(K*)]=-1/2 integral t(1-t) a'''(t) dt`,
+> `a(t)=A(S,K* exp(tu))`. The complete cubic derivative bound retains the
+> full physical sum and gives one normalized integrated trace error O(h)
+> for every full-lattice relative-log-O(h) stationary field. No candidate
+> sector, frequency support, envelope regularity or transverse inverse is
+> assumed. The same identity works directly with an approximate comparator,
+> retaining its `1/2 <E_K,u>` endpoint term; an O(h^2) sup residual suffices
+> for this scalar agreement, without constructing an exact full4D root.
+> Literal six-face expansion gives the designated action density
+> `h^2[-2 f f''-(f')^2]+O(h^3)`, with all second log coefficients cancelling.
+> Its fixed-warp normalized action limit is `pi^2/1250>0`. Thus an independently
+> prescribed joint source must obey
+> `h^4 sum_x Q_h:tau_h=pi^2/1250+O(h)`. The preset vacuum tau=0 has no exact
+> joint log-O(h) sequence on this same nonconstant warp, now allowing every
+> generator and nonidentity spatial links. This is source infeasibility,
+> not an admissible response-gap witness or a vacuous task closure.
+> Trace-compatible sources still require the full raw owner estimate;
+> the parent task remains `PARTIAL / OPEN`, Draft / `IN_PROGRESS`.
+> The response-memory certificate pins the literal jet, endpoint kernel
+> and normalization while retaining the existing exact hostile controls.
+
 > **Conservation consequence of the same coupled-B flux.**
 > Section 9 of [the existing boost owner](A4D_COUPLED_BOOST_CURVED_REALIZABILITY.md)
 > sums the literal Euler row over each full transverse plane. Exact

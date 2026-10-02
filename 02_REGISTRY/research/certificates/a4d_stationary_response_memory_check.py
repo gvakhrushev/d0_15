@@ -4,6 +4,9 @@
 All linear coefficients are derived from the action's 4x4 face matrices.
 The all-coframe rank and arbitrary-quotient universal properties are proved
 in A4D_STATIONARY_RESPONSE_MEMORY.md, separately from these finite inputs.
+The full-field stationary trace identity and independent-vacuum obstruction
+are proved in A4D_WARPED_TRANSVERSE_MEAN_REDUCTION.md, Section 7; their
+literal smooth action jet and exact endpoint constants are checked here.
 No new action, source, or stationary-connection selector is introduced.
 """
 from fractions import Fraction as F
@@ -115,6 +118,119 @@ def full_boost_polynomial():
             'method':'exact literal degree-eight denominator-cleared polynomial, not a Taylor extrapolation'}
 
 
+def global_stationary_trace_checks():
+    """Exact finite inputs for the all-field stationary trace identity.
+
+    The all-order integral identity and its mesh-uniform derivative bound
+    are proved analytically in the transverse-mean owner. This check pins
+    the kernel, literal smooth-branch action jet, and its normalization;
+    it does not construct a joint vacuum or prove a full owner-norm limit.
+    """
+    import sympy as sp
+
+    n=sp.Symbol('n',integer=True,positive=True)
+    remainder=n*(n-1)*(n-2)*(1/(n-1)-1/n)
+    assert sp.cancel(n/2-remainder/2-1)==0
+    for power in (0,1,2):
+        start=1 if power==1 else 0
+        end=power
+        difference=0 if power==0 else 1
+        assert F(start+end,2)==difference
+    # a(t)=-3*t^2+2*t^3 has both endpoint derivatives zero. Its
+    # difference is -1; the third derivative is 12 everywhere.
+    assert -F(1,2)*F(1,6)*12==-1
+    assert F(1,2)*F(1,6)*12!= -1
+    assert -F(1,6)*12!= -1
+
+    f=sp.Symbol('f',positive=True)
+    p,q=sp.symbols('p q',real=True)
+    solder=np.diag([1,1,f,f]).astype(object)
+    ds=np.diag([0,0,p,p]).astype(object)
+    weights=[];derivatives=[]
+    for r,s in N.PAIRS:
+        a,b=[j for j in range(4) if j not in (r,s)]
+        weights.append(N.orient(r,s)*N.weight(N.wedge(solder[:,a],solder[:,b])))
+        derivatives.append(N.orient(r,s)*N.weight(
+            N.wedge(ds[:,a],solder[:,b])+N.wedge(solder[:,a],ds[:,b])))
+
+    # Literal constant-link action Hessian and shared-face coframe forcing.
+    # This is the whole leading 24-row equation, not a symbol census.
+    hessian=np.zeros((24,24),dtype=object)
+    forcing=np.zeros(24,dtype=object)
+    for face,(r,s) in enumerate(N.PAIRS):
+        for i in range(6):
+            if r==1:forcing[6*s+i]-=np.sum(derivatives[face]*N.G[i])
+            if s==1:forcing[6*r+i]+=np.sum(derivatives[face]*N.G[i])
+            for j in range(6):
+                bracket=N.G[i]@N.G[j]-N.G[j]@N.G[i]
+                value=np.sum(weights[face]*bracket)
+                hessian[6*r+i,6*s+j]+=value
+                hessian[6*s+j,6*r+i]+=value
+    first=np.zeros(24,dtype=object)
+    first[15]=first[22]=-p
+    assert all(sp.expand(x)==0 for x in hessian@first+forcing)
+    assert [(i,sp.expand(x)) for i,x in enumerate(forcing) if x!=0]==[
+        (0,2*f*p),(15,-p),(22,-p)]
+
+    a=[np.zeros((4,4),dtype=object) for _ in range(4)]
+    da=[x.copy() for x in a]
+    a[2]=-p*N.G[3];a[3]=-p*N.G[4]
+    da[2]=-q*N.G[3];da[3]=-q*N.G[4]
+    second_symbols=sp.symbols('c0:24',real=True)
+    second=[sum((second_symbols[6*r+g]*N.G[g] for g in range(6)),
+                np.zeros((4,4),dtype=object)) for r in range(4)]
+
+    def link(role,offset,inverse=False):
+        logs=N.jconst(np.zeros((4,4),dtype=object),2)
+        logs[1]=a[role]
+        logs[2]=second[role]+offset*da[role]
+        out=N.jexp(logs)
+        return N.jinv(out) if inverse else out
+
+    cells=[]
+    for face,(r,s) in enumerate(N.PAIRS):
+        factors=[link(r,0),link(s,int(r==1)),
+                 link(r,int(s==1),True),link(s,0,True)]
+        plaquette=N.jconst(I,2)
+        for fac in factors:plaquette=N.jmul(plaquette,fac)
+        curvature=(plaquette-N.jinv(plaquette))*F(1,2)
+        assert not np.any(curvature[:2])
+        cells.append(sp.expand(np.sum(weights[face]*curvature[2])))
+    assert cells==[0,0,0,-f*q,-f*q,-p**2]
+    coefficient=sp.expand(sum(cells))
+    assert coefficient==-2*f*q-p**2
+    assert not coefficient.free_symbols.intersection(second_symbols)
+
+    samples=(F(1),F(51,50),F(26,25),F(51,50))
+    p_samples=(0,sp.pi/25,0,-sp.pi/25)
+    q_samples=(2*sp.pi**2/25,0,-2*sp.pi**2/25,0)
+    sampled_trace=sp.expand(sum(-2*ff*qq-pp**2
+                              for ff,pp,qq in zip(samples,p_samples,q_samples))/4)
+    assert sampled_trace==sp.pi**2/1250
+    c3=F(6912)*F(676,625)
+    assert c3==F(4672512,625) and c3<8192
+    print('PASS_GLOBAL_STATIONARY_TRACE_KERNEL_AND_LITERAL_WARP_ACTION_JET',flush=True)
+    return {
+        'input_head':'918d2c977165703c975f92ed1b437392b948a60d',
+        'proof_owner':'A4D_WARPED_TRANSVERSE_MEAN_REDUCTION.md, Section 7',
+        'independent_source':'tau=0 is prescribed before candidates; the general tau_h in the compatibility condition is also predeclared',
+        'identity':"sum_x Q_x:(Xi(K)-Xi(K*)) = -1/2 integral_0^1 t*(1-t)*a_h'''(t) dt, a_h(t)=A_h(S,K* exp(t*u))",
+        'hypothesis':'both connections solve every E_K row; fixed coframe and independent source convention',
+        'third_derivative_bound':'8192*||u||_infinity^2*||u||_owner1 in the stated compact chart',
+        'raw_trace_difference_bound':'(8192/12)*||u||_infinity^2*||u||_owner1',
+        'approximate_comparator_identity':'same identity plus 1/2*<E_K(K_bar),u> when only the candidate endpoint is exactly stationary',
+        'approximate_comparator_trace_bound':'log-O(h) fields and ||E_K(K_bar)||_infinity=O(h^2) give O(h) normalized integrated trace error; no connection inverse needed',
+        'leading_connection_logs':'h*(-f_prime*J12) in Role2 and h*(-f_prime*J13) in Role3; Roles0,1 have zero first coefficient',
+        'literal_leading_24_row_forcing':[[0,'2*f*f_prime'],[15,'-f_prime'],[22,'-f_prime']],
+        'complete_action_h2_coefficient':'-2*f*f_second - f_prime^2; all 24 second log coefficients cancel',
+        'fixed_warp_normalized_action_limit':'pi^2/1250',
+        'source_necessary_condition':'h^4 sum_x Q_x:tau_h = pi^2/1250 + O(h) for full-lattice log-O(h) stationary fields',
+        'independent_vacuum_consequence':'tau=0 has no exact joint log-O(h) sequence on this fixed nonconstant warp',
+        'scope':'every generator, role and full-lattice pattern in the log-O(h) class; no transverse inverse or smoothness of the candidate',
+        'nonclaim':'the single integrated trace does not prove the raw owner response target or construct a negative-terminal joint sequence',
+    }
+
+
 def run_checks():
     coframes=[I,np.diag(list(map(F,(2,3,5,7)))),
               np.array([[F(1),F(1,7),0,0],[0,1,F(1,5),0],
@@ -206,11 +322,12 @@ def run_checks():
     assert not np.any(bad_eq) and np.any(bad_ek)
     print('PASS_SAME_RESPONSE_MEMORY_DIFFERENT_STATIONARITY_CONTROL',flush=True)
     full_family=full_boost_polynomial()
+    trace_identity=global_stationary_trace_checks()
     for L in (8,12,16):
         h=F(1,L);t=h*h;factor=4*t/(4-3*t*t)
         raw_owner=6*L**4*abs(factor)
         assert raw_owner/h**2==24*L**4/(4-3*h**4)
-    return {'schema':'a4d-stationary-response-memory-v1',
+    return {'schema':'a4d-stationary-response-memory-v2',
             'input_head':'909ad048d25de2def8875290c41bf9475e9180e6',
             'arithmetic':'exact Q, literal face products and true Gram lift, no spectral census',
             'curvature':'C_rs=(P_rs-P_rs^(-1))/2 in so(1,3)',
@@ -222,6 +339,7 @@ def run_checks():
             'scalar_forgetting_witness':{'curvature_column':scalar_bad,'density':'zero','metric_memory':list(map(str,d[:,scalar_bad]))},
             'stationary_controls':family_results,
             'full_boost_family_polynomial':full_family,
+            'global_stationary_trace_compatibility':trace_identity,
             'phase_average_forgetting':'not sufficient for full sitewise metric readout, even on EK=0',
             'stationarity_forgetting_control':{'Role0_Cayley_Y_parameters':list(map(str,slow_parameters)),
                                                'metric_memory':'zero, equal to I',
