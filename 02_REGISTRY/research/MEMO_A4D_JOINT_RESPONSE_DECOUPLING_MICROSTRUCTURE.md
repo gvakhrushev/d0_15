@@ -1,5 +1,24 @@
 # A4D stationary response memory and continuum collapse boundary
 
+> **Exact mean-response reduction and source-transfer correction.**
+> [The transverse-mean owner](A4D_WARPED_TRANSVERSE_MEAN_REDUCTION.md) now
+> eliminates the mean connection for arbitrary small full-four-dimensional
+> relative-log fields using only the owned one-coordinate inverse. Its
+> exact all-order response is
+> `R_h(v)=P N_G(m;v)-C_m A_m^-1 P N_F(m;v)`, `m=Gamma_h(v)`, `Pv=0`.
+> On exact fields with a transverse-invariant independent source, this is
+> the full response difference from the exact designated root. The actual
+> owner target remains `||R_h(v_h)||_owner1=o(h^2)` on the remaining exact
+> equations; vanishing of a leading quadratic correlation does not prove it.
+> [The Cartan-scale perturbation owner](A4D_COUPLED_BOOST_CARTAN_SCALE_DICHOTOMY.md)
+> now transfers the metric source to the temporal template as well as the
+> connection residual, retaining `Mhat=M+C_Q L^2 epsilon` and a uniform
+> compact temporal-link chart. Its corrected inequality still excludes
+> spatial compensation `epsilon=o(h)`. No full joint terminal is claimed.
+> The two Y-plane CI checkers now create twelve independent 4x1 difference
+> coordinates explicitly; both complete symbolic replays pass after fixing
+> the empty SymPy-range error.
+
 > **Coupled boost: all amplitude retunings now excluded under bounded sources.**
 > Sections 6--8 of [the same proof owner](A4D_COUPLED_BOOST_CURVED_REALIZABILITY.md)
 > let every temporal link be an independent `Cayley(a_x B)`, with the same

@@ -30,7 +30,13 @@ def main() -> None:
     u = sp.Matrix([0, a, b, 0])
     v = sp.Matrix([0, c, d, 0])
 
-    ds = [sp.Matrix(sp.symbols(f"d{r}_0:4", real=True)) for r in (1, 2, 3)]
+    # "d10:4" denotes the empty numeric range 10..3 in SymPy.  Name each
+    # coordinate explicitly so the three neighbouring differences stay 4x1.
+    ds = [sp.Matrix([sp.Symbol(f"d{r}_{j}", real=True) for j in range(4)])
+          for r in (1, 2, 3)]
+    check("INDEPENDENT_INCOMING_DIFFERENCE_COORDINATES",
+          all(vec.shape == (4, 1) for vec in ds)
+          and len({q for vec in ds for q in vec}) == 12)
     site = (0, 0, 0, 0)
 
     def S(w):

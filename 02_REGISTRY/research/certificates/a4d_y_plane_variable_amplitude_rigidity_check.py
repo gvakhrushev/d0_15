@@ -23,7 +23,12 @@ def ck(name: str, condition: bool) -> None:
 def main() -> None:
     aa, bb, cc, dd = sp.symbols("aa bb cc dd", real=True)
     W = sp.Matrix(sp.symbols("W0:4", real=True))
-    dvec = [sp.Matrix(sp.symbols(f"d{r}0:4", real=True)) for r in (1, 2, 3)]
+    # Avoid SymPy's empty numeric ranges "d10:4", "d20:4", "d30:4".
+    dvec = [sp.Matrix([sp.Symbol(f"d{r}_{j}", real=True) for j in range(4)])
+            for r in (1, 2, 3)]
+    ck("INDEPENDENT_INCOMING_DIFFERENCE_COORDINATES",
+       all(vec.shape == (4, 1) for vec in dvec)
+       and len({q for vec in dvec for q in vec}) == 12)
     Delta = sp.expand(aa*dd-bb*cc)
 
     e0 = sp.Matrix([1,0,0,0])
