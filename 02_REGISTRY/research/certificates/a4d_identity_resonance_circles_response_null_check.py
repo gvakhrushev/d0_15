@@ -78,7 +78,7 @@ def laurent_coefficients(forms, spatial):
     actual = dconnection(forms, spatial, held)
     predicted = negative / held + zero + positive * held
     ck(f"HELD_OUT_DQA_LAURENT_SPATIAL_{spatial}",
-       actual == predicted)
+       (actual - predicted).applyfunc(sp.simplify) == sp.zeros(24))
     return {-1: negative, 0: zero, 1: positive}
 
 
