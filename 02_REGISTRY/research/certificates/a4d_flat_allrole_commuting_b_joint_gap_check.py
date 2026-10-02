@@ -41,14 +41,15 @@ CB=sp.Matrix([
  [(d1+d2)/2,-d0/2,-d0/2,0],
 ])
 
-ck("METRIC_MOVING_LINE_CB_D_ZERO", CB*d==sp.zeros(10,1))
+ck("METRIC_MOVING_LINE_CB_D_ZERO",
+   (CB*d).applyfunc(sp.simplify)==sp.zeros(10,1))
 minor=sp.factor(CB.extract([4,5,6],[1,2,3]).det())
 ck("D0_CHART_RANK3_MINOR", sp.factor(minor-d0**3/4)==0)
 
 N=2*CB.extract([1,2,3],[1,2,3])
 dsp=sp.Matrix([d1,d2,d3])
 ck("D0_ZERO_SPATIAL_BLOCK_D_ONE_MINUS_SI",
-   sp.simplify(N-(dsp*sp.ones(1,3)-s*sp.eye(3)))==sp.zeros(3))
+   (N-(dsp*sp.ones(1,3)-s*sp.eye(3))).applyfunc(sp.simplify)==sp.zeros(3))
 
 # On s=0 != dsp, N=dsp*1^T has rank one.  The lower first column contains
 # -(d1), -(d2), -(d3) up to row choice, so it adds one independent direction.
