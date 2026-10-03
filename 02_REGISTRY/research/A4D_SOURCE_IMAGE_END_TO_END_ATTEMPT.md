@@ -181,6 +181,9 @@ existing finite-current structural checker passes; it certifies local
 degree and support, not the corrected global quotient claim. Repository
 architecture, generated Lean/work views, task protocol, claim strength,
 formalization-debt non-growth, certificate freshness and whitespace checks
-pass locally. The actual Draft/BLOCKED PR contract is validated at
-publication. Full-head CI is reported separately; no mathematical terminal
-is inferred from a green implementation check.
+pass locally. The actual published Draft/BLOCKED PR metadata passes the
+contract validator. The initial CI event (run 37147474382) captured the old
+IN_PROGRESS body before the metadata update and rejected the lifecycle
+mismatch. This validation-note revision supplies a fresh synchronized event
+with the published BLOCKED body. Full-head CI is reported separately; no
+mathematical terminal is inferred from a green implementation check.
