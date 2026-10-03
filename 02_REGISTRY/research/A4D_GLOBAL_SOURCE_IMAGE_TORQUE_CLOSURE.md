@@ -771,7 +771,9 @@ q_f,r=a_r*b_r+alpha_r, where
 \tag{E9}
 \]
 
-A small full fast source does not separately control the spatial products.
+These three full fast coefficients alone do not separately control the
+spatial products. Section 13 uses all ten coefficients and the real source
+image to obtain a uniform bound on every quadratic gate moment.
 Define the homogeneous quartic polynomial
 
 \[
@@ -846,3 +848,257 @@ GitHub D0 guards run 37109272782. The local execution service is unavailable,
 so fresh local Python and guard execution is not claimed. The Python replay
 and new-head guards are submitted to existing CI; their execution status
 must be tracked separately.
+## 13. The real source image removes the false quadratic null direction
+
+Input head: `5eda55851f67b81060c1b9b75bb36cf45b031b8e`.
+Certificate: `certificates/a4d_full_quartic_source_quotient_check.py` and its
+pinned ledger. This increment uses all eight owned center amplitudes and
+all ten fast metric coefficients. It identifies the actual quartic mean
+readout before choosing a coercive moment; no new carrier or stationary
+family is classified.
+
+### All ten fast coefficients control the real quadratic image
+
+Retain the owned eight-vector t(c) from the nonlinear quarter owner:
+
+\[
+\begin{aligned}
+t_0&=a_0(a_1-a_2+a_3)-b_0(b_1-b_2+b_3),&
+t_1&=a_0b_0,\\
+t_2&=a_1b_1,&t_3&=a_2b_2,&t_4&=a_3b_3,\\
+t_5&=a_0b_1+a_1b_0,&t_6&=a_0b_2+a_2b_0,&
+t_7&=a_0b_3+a_3b_0 .
+\end{aligned}
+\]
+
+The full fast quadratic metric gate is q=Q_2(c)=M_2 t(c).
+M_2 has rank seven and kernel spanned by
+xi=(3,1,1,1,1,1,-1,1). Its apparent null direction is not a realizable
+nonzero **real** quadratic image. The exact identity
+
+\[
+(a_0b_1-a_1b_0)^2=t_5^2-4t_1t_2
+\tag{R1}
+\]
+
+makes the right side nonnegative, whereas it equals \(-3s^2\) at t=s*xi.
+This yields a quantitative statement, rather than just zero-set isolation.
+
+The ledger gives an 8 by 10 rational L such that
+`L M_2=I-xi e_1^T`, where e_1 selects t1 in zero-based indexing.
+Set w=Lq and s=t1. Then t=s*xi+w, w1=0, and (R1) implies
+
+\[
+3s^2\le2s(w_5-2w_2)+w_5^2,\qquad
+|s|\le\frac43(|w_5|+|w_2|).
+\tag{R2}
+\]
+
+For the second inequality, solve the scalar quadratic inequality, use
+`sqrt(B^2+3*w5^2)<=B+2*|w5|` for B=|w5-2*w2|,
+then the triangle inequality. Since ||xi||1=10, the exact weighted column
+norms of L give
+
+\[
+\boxed{\|t(c)\|_1\le\frac{110}{3}\|Q_2(c)\|_1}
+\tag{R3}
+\]
+
+for **every real c**, without a small-amplitude assumption. Summing (R3)
+over any finite grid preserves its constant and uses no volume factor.
+
+Consequently all three spatial parity products, a0*b0 and all temporal
+cross-phase sums are controlled by the ten-component source gate.
+Section 12's three selected coefficients alone do not give this conclusion.
+The alpha terms in (E9) equal
+`(t1+t6-t7, t1-t5-t7, t1-t5+t6)` and are now bounded by the full gate.
+A nonzero temporal single-parity amplitude can still be invisible; its
+spatial derivative is not bounded by (R3).
+
+There is also a stronger statement about individual phase products. For
+j=1,2,3 set u=a0*bj and v=aj*b0. Then
+
+\[
+(u-v)^2=t_{j+4}^2-4t_1t_{j+1},\qquad
+|u|+|v|=\max(|u+v|,|u-v|)
+ \le |t_{j+4}|+|t_1|+|t_{j+1}|.
+\]
+
+Using (R2) and the exact column bounds of L gives
+
+\[
+\boxed{
+\mathcal C(c):=
+ \sum_{i=j\ {\rm or}\ i=0\ {\rm or}\ j=0}|a_i b_j|
+ \le\frac{140}{3}\|Q_2(c)\|_1 .}
+\tag{R4}
+\]
+
+The sum has ten terms. This proves that the full real source image
+controls every temporal cross-phase product individually, even though
+the linear map on the formal eight-vector has a kernel.
+
+### The true quartic readout includes the cubic normal correction
+
+Let W(c) be the owned analytic normal graph and let
+`m(c)=mean_p Xi(eta,exp(V(c)+W(c)))`. Its degree-four term R4 is now
+computed as a polynomial in **all eight amplitudes**.
+
+Start with the pinned quadratic correction W2. Assemble every literal
+Euler degree-three coefficient and apply the owned row transform B.
+Its first twenty complex rows determine the cubic normal correction W3.
+The lower fourteen rows reproduce all 120 owned cubic coefficient vectors.
+Insert W3 before computing the degree-four metric mean. A still-unsolved
+W4 cannot affect that mean because the zero-frequency linear metric
+block C(1) vanishes. Thus the computed R4 is the Taylor coefficient of
+the actual normal-graph readout, rather than the response of V+W2.
+
+For \(c=e_{a_1}+e_{b_2}\), in the established packed-slot order,
+
+\[
+Q_2(c)=0,\qquad
+\boxed{R_4(c)=(1/16,0,0,-1/8,0,0,0,0,0,1/16).}
+\tag{R5}
+\]
+
+Its quarter-translation partner \(c=e_{a_2}-e_{b_1}\) has the same mean readout.
+Omitting W3 instead produces
+`(0,3/32,3/32,0,0,0,-3/32,0,-3/32,0)`.
+The two vectors differ, so a W2-only quartic calculation cannot be used
+as this observable's coefficient. These source-zero quadratic controls
+still have a nonzero cubic joint gate; they are not exact joint fields
+and do not produce a prescribed-source witness.
+
+For \(c=e_{a_2}-e_{a_3}\) and \(c=e_{b_2}-e_{b_3}\), R4 is exactly zero even though the spatial
+mixing moment D_s of Section 12 equals one. More generally, the complete
+quartic mean readout vanishes on both pure-parity spaces b=0 and a=0.
+This is an identity at degree four, not an all-order assertion that
+these mixed fields are stationary or response-null. A bound forcing
+every D_s to vanish would therefore control more than this observable
+requires.
+
+### Observable phase correlations and a uniform raw readout bound
+
+Every nonzero monomial of R4 contains an a and a b amplitude. The ledger
+factors it coefficientwise as
+
+\[
+R_{4,j}(c)=\sum_{r,s=0}^3 a_r b_s\,F_{j,rs}(c),
+\tag{R6}
+\]
+
+with quadratic F_j,rs. The assignment is deterministic: prefer a
+controlled pair from (R4), then the lexicographically first available
+pair. It is verified on the complete polynomial, including all ten
+metric slots. For the resulting witness,
+
+\[
+\max_{r\ne s,\ r,s>0}\sum_{j,m}|(F_{j,rs})_m|=\frac{99}{8},
+\quad
+\max_{r=s\ {\rm or}\ r=0\ {\rm or}\ s=0}
+ \sum_{j,m}|(F_{j,rs})_m|=\frac{459}{4}.
+\]
+
+Define the six remaining products
+`Z_s=(a1*b2,a1*b3,a2*b1,a2*b3,a3*b1,a3*b2)`.
+For any field of amplitudes on any finite grid, with
+rho=max_x,j |c_j(x)|, equations (R4),(R6) give
+
+\[
+\boxed{
+\|R_4(c)\|_{\mathrm{raw},1}
+ \le\rho^2\left(\frac{99}{8}\|Z_s(c)\|_{\mathrm{raw},1}
+                       +5355\|Q_2(c)\|_{\mathrm{raw},1}\right).
+}
+\tag{R7}
+\]
+
+Here 5355=(459/4)*(140/3). Every norm is the unweighted site/component
+sum. All eight amplitudes and the temporal carrier remain permitted;
+there is no amplitude derivative or grid-size loss in this frozen
+polynomial estimate. The exact 256-site control uses arbitrary rational
+site values and verifies both source bounds and (R7).
+
+Equation (R6) does not define a sufficient memory of six numbers alone.
+The observable contains the **joint fourth-order correlations**
+`a_r*b_s*F_j,rs(c)`. Averaging the products and the quadratic factors
+separately would lose them.
+
+### Why first/second moments and averaged cubic gates are insufficient
+
+An exact probability-law control makes that loss visible. Let \(c=e_{a_1}+e_{b_2}\),
+v=R4(c), and take
+
+\[
+\nu_1=\tfrac12(\delta_c+\delta_{-c}),\qquad
+\nu_2=\tfrac18(\delta_{2c}+\delta_{-2c})+\tfrac34\delta_0.
+\tag{R8}
+\]
+
+Both have zero first moments and the identical full covariance
+`integral z*z^T dnu=c*c^T`. Both have zero averaged quadratic fast source
+and zero averaged cubic joint gate. Nevertheless homogeneity and (R5)
+give
+
+\[
+\int R_4\,d\nu_1=v,\qquad \int R_4\,d\nu_2=4v .
+\tag{R9}
+\]
+
+The same calculation works after multiplying all atoms by any small
+positive amplitude. Thus a description retaining only first/second
+moments and averaged gates through degree three cannot reconstruct this
+quartic metric mean. The checker verifies the rational weights, every
+covariance entry, every averaged gate and both readouts exactly.
+
+These are algebraic amplitude laws. No stationary lattice field with
+either law is constructed, and no full shared-link correlation or source
+realizability is inferred. In particular, (R9) is a memory-obligation
+control, not a fixed-source counterexample or parent NO-GO.
+
+### What remains and validation
+
+The source-image kernel and the temporal **quadratic products** in the
+frozen reduction are now controlled by (R3)-(R4). The observable obligation
+is narrower: control the six cross-phase correlations in (R6), together
+with their shared-link transport, and pull that control through the exact
+varying-coframe source equations and the #216 comparator in the raw owner
+norm. Averages of the gates do not supply this step, as (R8)-(R9) prove.
+
+The freezing, frequency extraction and normal-graph remainder are still
+uncontrolled on the full admissible class. Even the analytic remainder
+`m(c)=R4(c)+O(|c|6)` is not enough in the task norm: at rho=O(h), its
+naive bound \(h^{-2}L^4\rho^6\) is only O(1). The next obligation remains one
+estimate on the **exact full-link quartic source/current memory**, rather
+than an extrapolation of Taylor coefficients or another carrier census.
+Neither Q2 nor R4 may simply be substituted for the prescribed tau or
+full Xi in (R7).
+
+Scoped verdict:
+`REAL-FAST-SOURCE-COERCIVITY-AND-QUARTIC-READOUT-QUOTIENT-CERTIFIED`.
+Parent: `PARTIAL / OPEN`, Draft / `IN_PROGRESS`.
+No action, selector, source convention, Lean owner or public/CORE claim is
+changed.
+
+Replay:
+
+```sh
+python 02_REGISTRY/research/certificates/a4d_full_quartic_source_quotient_check.py
+```
+
+The complete symbolic rational jet agrees coefficientwise with the owned
+cubic ledger and with independent Fraction/Q(i) literal Euler evaluations,
+including a dense rational input. Source inverse identities, discriminants,
+both uniform raw bounds, the two-law control and the omitted-W3 negative
+control pass. The preceding head 5eda5585 has successful D0 guards run
+37114124025, including its Python entropy certificate. New-head validation
+is tracked separately.
+
+
+Local validation of this increment: the new pinned quartic/source checker,
+the retained spatial transport detector, all-role current/transport and
+stationary response-memory controls pass. Canonical architecture, generated
+views, active-work, agent-protocol, claim-strength, formalization-debt,
+actual Draft PR contract, artifact freshness/semantic mutations, new Python
+compilation and whitespace checks pass. No Lean source changes require a
+full Lean rebuild. New-head CI is reported separately.

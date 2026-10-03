@@ -65,9 +65,22 @@ residual and three fast metric coefficients, in unweighted sums with
 mesh-independent constants. Six exact rank-five derivatives give a
 corresponding frozen-readout bound while retaining invisible axes.
 The full eight-amplitude balance explicitly keeps nonzero temporal
-transport and mixed source terms. Its uniform pullback through the full
-shared-link quartic equations and varying coframe remains unproved;
+transport and mixed source terms; Section 13 now controls its quadratic
+source products using all ten fast coefficients. Its uniform pullback through
+the full shared-link quartic equations and varying coframe remains unproved;
 this reduced certificate does not change the fixed-source verdict.
+
+[Section 13](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md#13-the-real-source-image-removes-the-false-quadratic-null-direction)
+now proves, in the owned identity reduction, that all ten fast metric
+coefficients uniformly control all eight realizable quadratic gate moments,
+despite the formal matrix kernel. The frozen degree-four mean readout includes the cubic normal
+correction. Its raw bound retains six cross-phase spatial products and
+their quadratic correlations, while temporal phase products are controlled
+by the full fast source. Two exact amplitude laws have identical first and
+second moments and averaged quadratic/cubic gates, but different quartic
+metric means; those data cannot replace fourth-order response memory.
+The remaining estimate must control these observable correlations through
+the exact shared-link quartic equations, varying coframe and comparator.
 
 The [exact weak-source obstruction](A4D_SOURCE_IMAGE_COLLAPSE.md#10-scoped-obstruction-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm)
 is retained with its checker and pinned results. Its prescribed source
