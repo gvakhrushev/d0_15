@@ -56,6 +56,19 @@ source, so it is not a fixed-source witness. The missing uniform estimate
 must use all fast metric source constraints together with stationary
 cubic/quartic moment completion and varying-coframe transport.
 
+
+[Section 12](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md#12-a-pointwise-transport-detector-controls-a-reduced-mixing-moment)
+now gives a rational detector of the owned cubic first-slow joint reduction.
+It annihilates every spatial transport column pointwise and controls the
+positive quartic moment \(\sum_{r<s}|z_r|^2|z_s|^2\) by the reduced joint
+residual and three fast metric coefficients, in unweighted sums with
+mesh-independent constants. Six exact rank-five derivatives give a
+corresponding frozen-readout bound while retaining invisible axes.
+The full eight-amplitude balance explicitly keeps nonzero temporal
+transport and mixed source terms. Its uniform pullback through the full
+shared-link quartic equations and varying coframe remains unproved;
+this reduced certificate does not change the fixed-source verdict.
+
 The [exact weak-source obstruction](A4D_SOURCE_IMAGE_COLLAPSE.md#10-scoped-obstruction-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm)
 is retained with its checker and pinned results. Its prescribed source
 `tau_h=h^4*sigma*m` converges to zero in C3, and exact joint fields have raw

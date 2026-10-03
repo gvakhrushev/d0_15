@@ -620,3 +620,229 @@ Euler and wrong-placement controls. Canonical repository, generated views,
 work, agent-protocol, claim-strength, formalization-debt, actual Draft PR
 contract, certificate artifact freshness, compilation and whitespace checks
 pass locally. No Lean source or task lifecycle state changes.
+
+
+## 12. A pointwise transport detector controls a reduced mixing moment
+
+Input head: `b3bae8fe54cf8fd88d8eb46d45728ad741c0962a`.
+Certificate: `certificates/a4d_spatial_transport_entropy_check.py` and its
+pinned result ledger. It consumes the owned quarter nonlinear reduction
+and literal physical incidence stencil, pinned by Git blob SHA. It does
+not search for carriers, enumerate periods, or construct another family.
+
+Section 11 leaves a slow interaction after quadratic connection completion
+and excludes its chosen packet by a fast metric-source gate. Here a positive
+interaction moment is controlled by an exact polynomial consequence of
+the reduced joint gates. This yields a mesh-independent raw estimate for
+the **cubic first-slow reduction**. Its identification with the full
+fixed-source lattice problem remains unproved.
+
+### Exact pointwise detector
+
+Use real amplitudes c=(a0,a1,a2,a3,b0,b1,b2,b3),
+c_s=(a1,a2,a3,b1,b2,b3), and c_t=(a0,b0).
+The leading four-phase logs are `(a_r,b_r,-a_r,-b_r)*T_r`; their quarter
+Fourier coefficient is `(a_r-i*b_r)/2`. Let B be the owned lower fourteen
+complex row projection after eliminating the twenty normal columns,
+and T insert the four center vectors. For the physical joint symbol
+J=(A^T;C), set
+
+\[
+\Gamma_\mu=B(\partial_{\theta_\mu}J)T,\qquad
+G_\mu=\frac12
+\begin{pmatrix}
+\operatorname{Im}\Gamma_\mu&-\operatorname{Re}\Gamma_\mu\\
+-\operatorname{Re}\Gamma_\mu&-\operatorname{Im}\Gamma_\mu
+\end{pmatrix}.
+\tag{E1}
+\]
+
+The factor -i turning Fourier theta into an envelope derivative is included.
+All 24 connection and ten packed metric rows, and all Laurent incidences,
+are retained before B. The checker reconstructs the derivative from the
+literal face Hessians; the incorrect Euler placement A is a negative control.
+
+Let Q_3(c) be the owned 28-component real cubic projected joint forcing
+after the quadratic normal solve, and Q_3^s its restriction to c_t=0.
+The ledger supplies a rational 6 by 28 matrix P and quadratic R_r such that
+
+\[
+\boxed{P G_{\mu,s}=0\quad(\mu=0,1,2,3)}
+\tag{E2}
+\]
+
+and
+
+\[
+\boxed{c_s^TPQ_3^s(c_s)=D_s(c_s)+\sum_{r=1}^3 a_rb_rR_r(c_s),\quad
+D_s=\sum_{r<s}(a_r^2+b_r^2)(a_s^2+b_s^2).}
+\tag{E3}
+\]
+
+All 144 entries in (E2) vanish; all 126 degree-four coefficients in (E3)
+agree over Q. This is coefficientwise verification, without extrapolation
+from a numerical positivity test. On this spatial restriction the products
+a1*b1, a2*b2, a3*b3 are exactly the fast quadratic metric coefficients
+at packed slots 23, 13, 12, including the normal correction. The bounds are
+
+\[
+\|P\|_{1\to1}=\frac{3209848}{5565}<577,\qquad
+\max_r\sum_m |(R_r)_m|=\frac{7585775}{4452}<1704.
+\tag{E4}
+\]
+
+### Uniform raw estimate for arbitrary reduced fields
+
+On any finite periodic grid, take any field c_s(x) and any componentwise
+difference operators D_mu. Define
+
+\[
+\mathcal R_3^s=\sum_\mu G_{\mu,s}D_\mu c_s+Q_3^s(c_s).
+\]
+
+Equation (E2) gives `P R_3^s=P Q_3^s` **at every site**. No boundary
+flux, amplitude regularity or sum cancellation is needed for this algebraic
+statement. With rho=max_x,j |(c_s)_j(x)|, (E3)-(E4) give
+
+\[
+\boxed{\sum_xD_s(c_s(x))
+\le577\rho\|\mathcal R_3^s\|_{\mathrm{raw},1}
+ +1704\rho^2\sum_r\|a_rb_r\|_{\mathrm{raw},1}.}
+\tag{E5}
+\]
+
+These are unweighted site/component sums, without h4 volume normalization.
+The estimate controls a correlated quartic mixing moment, rather than just
+an averaged trace. An unrestricted rational field on a 4 by 4 by 4 by 4
+grid with forward differences verifies the pointwise and summed identities.
+That replay checks the implementation; (E2)-(E3) prove all-grid validity.
+
+Invisible oscillations along one axis are retained. If the three products
+and P Q_3^s vanish, (E3) allows at most one spatial role; its fast product
+allows at most one parity. The common zero set is therefore the six spatial
+amplitude axes A_s. The derivative of
+`c_s -> (a1*b1,a2*b2,a3*b3,P Q_3^s(c_s))` has rank five at each unit
+axis, as verified exactly. Compactness on the unit sphere, those injective
+tangent derivatives, and the absence of other zeros imply a kappa>0 with
+
+\[
+\|s(c_s)\|_1+\|P Q_3^s(c_s)\|_1
+\ge\kappa |c_s|^2\operatorname{dist}(c_s,A_s),\qquad |c_s|\le1.
+\tag{E6}
+\]
+
+For c_s=r*omega, quadratic and cubic homogeneity bound the left side below
+by r3 times its angular counterpart, while distance scales by r. This
+explains the exponent and does not impose connection uniqueness.
+
+The owned local analytic normal graph has even mean readout m=O(|c_s|4),
+Dm=O(|c_s|3), and exact zero readout on A_s. Thus
+`|m(c_s)|<=C*|c_s|3*dist(c_s,A_s)`. Equations (E2),(E6) yield
+
+\[
+\sum_x\|m(c_s(x))\|_1
+\le C\rho\left(\|\mathcal R_3^s\|_{\mathrm{raw},1}
+                    +\sum_r\|a_rb_r\|_{\mathrm{raw},1}\right).
+\tag{E7}
+\]
+
+This is a bound on the frozen analytic readout, not its identification with
+the full varying-coframe Xi.
+
+### Full eight-amplitude balance retains the temporal carrier
+
+Set B_mu=P G_mu,t. Each of the four 6 by 2 matrices has ten nonzero
+entries. Their exact ledger gives
+
+\[
+\max_{\mu,j}\sum_i |(B_\mu)_{ij}|=\frac{304751}{1113}<274.
+\tag{E8}
+\]
+
+The full fast coefficients q_f=(Q2,23,Q2,13,Q2,12) equal
+q_f,r=a_r*b_r+alpha_r, where
+
+\[
+\begin{aligned}
+\alpha_1&=a_0b_0+a_0b_2+a_2b_0-a_0b_3-a_3b_0,\\
+\alpha_2&=a_0b_0-a_0b_1-a_1b_0-a_0b_3-a_3b_0,\\
+\alpha_3&=a_0b_0-a_0b_1-a_1b_0+a_0b_2+a_2b_0 .
+\end{aligned}
+\tag{E9}
+\]
+
+A small full fast source does not separately control the spatial products.
+Define the homogeneous quartic polynomial
+
+\[
+T(c)=c_s^TPQ_3(c)-D_s(c_s)-\sum_r a_rb_rR_r(c_s).
+\]
+
+Its 179 nonzero monomials each contain temporal and spatial amplitudes.
+Their absolute coefficient sum is 43759468/5565<7864. For component
+suprema rho_s, rho_t and rho=||c||_infty,
+
+\[
+|T(c)|\le7864\rho_s\rho_t\rho^2.
+\tag{E10}
+\]
+
+For the full reduced residual R_3=sum_mu G_mu D_mu c+Q_3(c),
+the exact balance is
+
+\[
+D_s=c_s^TP\mathcal R_3-\sum_\mu c_s^TB_\mu D_\mu c_t
+ -T(c)-\sum_r(q_{f,r}-\alpha_r)R_r(c_s).
+\tag{E11}
+\]
+
+It implies the all-grid raw bound
+
+\[
+\begin{aligned}
+\sum_xD_s\le{}&
+577\rho_s\|\mathcal R_3\|_{\mathrm{raw},1}
++1704\rho_s^2\|q_f\|_{\mathrm{raw},1}\\
+&+274\rho_s\sum_\mu\|D_\mu c_t\|_{\mathrm{raw},1}
++\|T(c)\|_{\mathrm{raw},1}
++1704\rho_s^2\sum_r\|\alpha_r(c)\|_{\mathrm{raw},1}.
+\end{aligned}
+\tag{E12}
+\]
+
+No bound on these temporal terms follows from response invisibility. The
+latent carrier is explicitly retained in the proposed quotient.
+
+### Full-field gap and validation
+
+The first missing estimate is a **uniform pullback of this moment balance
+and readout to the full realizable source image**, controlling temporal
+terms, varying-coframe transport, shared-link quartic correlations and
+the remainder outside the frozen graph in the original raw owner norm.
+Arbitrary rapidly varying amplitudes do not justify spectral separation
+or a truncated first-slow expansion of actual lattice equations. Pointwise
+cancellation in the reduction supplies no bound on its omitted lattice terms.
+
+The fixed smooth source, including the uniform-C5 option, and the #216
+comparator remain required. Replacing R_3 by E_K or the fast coefficients
+by tau in (E5)-(E7) without that pullback would be invalid. No exact negative
+witness, terminal, selector, action term, Lean or public/CORE promotion is
+asserted. Scoped verdict:
+`SPATIAL-REDUCED-TRANSPORT-ENTROPY-CERTIFIED`.
+Parent: `PARTIAL / OPEN`, Draft / `IN_PROGRESS`.
+
+Replay:
+
+```sh
+python 02_REGISTRY/research/certificates/a4d_spatial_transport_entropy_check.py
+```
+
+Preparation validation: an independent exact BigInt-rational replay verified
+the literal first-slow matrices, all 126 quartic coefficients and 144 zero
+transport entries, six rank-five derivatives, the 256-site raw balance and
+the temporal coefficients/bounds. Removing a detector coefficient or
+omitting the fast terms fails the controls. Input head b3bae8fe passed
+GitHub D0 guards run 37109272782. The local execution service is unavailable,
+so fresh local Python and guard execution is not claimed. The Python replay
+and new-head guards are submitted to existing CI; their execution status
+must be tracked separately.
