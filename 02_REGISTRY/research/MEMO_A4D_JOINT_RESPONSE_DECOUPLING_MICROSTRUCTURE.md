@@ -1,63 +1,51 @@
-# A4D joint response: exact prescribed-source owner-norm NO-GO
+# A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
-Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, PR #310.
-Current mathematical terminal, 2026-10-03:
-`A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO`.
-The terminal uses the original independently prescribed source-sequence
-convention, fixed explicitly on 2026-10-03. GitHub review and merge remain required
-for operational completion.
+Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
+Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
+is withdrawn: it closed a weaker source convention, not the theory target.
 
-For `h=1/L`, `L in 4N`, fix the smooth background `Q_h=eta` and the
-designated flat comparator `K_h^sm=I`. Use the ten metric covector slots
-`(00,01,02,03,11,12,13,22,23,33)`, including their existing off-diagonal dual
-weights, and the physical unweighted norm
-`||R||_owner1=sum_x sum_j |R_j(x)|`. Prescribe, before solving the links,
+Fix one smooth nondegenerate nonconstant background `g` and one smooth source
+`tau` before choosing the connections. Set `Q_h=g(hx)` and take the declared
+exact source samples `tau_h=tau(hx)`, with the existing component conventions.
+No candidate-dependent source or shrinking oscillatory substitute is allowed.
+A positive bound for the full admissible class under uniform C5 source bounds
+would also cover this fixed-source requirement.
 
-\[
-\tau_h(x)=h^4\sigma_{\sum_r x_r}\,m,\quad
-\sigma=(1,1,-1,-1),\quad
-m=(0,0,0,0,-1,1,1,-1,1,-1).
-\]
-
-The explicitly prescribed smooth periodic interpolants converge to the
-fixed smooth source `tau=0` in C3 and are uniformly C4. They satisfy the
-original bounded-source/weak smooth-limit convention. They are not exact
-samples of one h-independent source and are not uniformly C5.
-
-Invert the owned constitutive law with `z=h^6`, `c=sqrt(1+3z^2)` and
-`U=I+zB+(c-1)B^2/3`, where `B=K1+K2+K3`. The existing phase pattern
-`(U,I,U^-1,I)` on Role0, with identity spatial links, then gives
+The finite response has ten Gram covector slots
+`(00,01,02,03,11,12,13,22,23,33)`, with the existing off-diagonal dual weights.
+The physical owner norm is `||R||_owner1=sum_x sum_j |R_j(x)|`, without an h4
+volume factor. For exact joint/source fields, the outstanding target is
 
 \[
-E_K=0,\qquad\Xi=h^2\tau_h,\qquad
-\boxed{h^{-2}\|\Xi-\Xi(K_h^{\rm sm})\|_{\mathrm{owner},1}=6}
+E_K(Q_h,K_h)=0,\quad\Xi(Q_h,K_h)=h^2\tau_h,\qquad
+h^{-2}\|\Xi(Q_h,K_h)-\Xi(Q_h,K_h^{\rm sm})\|_{\mathrm{owner},1}\to0.
 \]
 
-for **every** allowed L. The complete degree-eight Euler numerator proves
-stationarity in every shared-link direction. All links belong to
-`SO^+(1,3)`, their logarithms are O(h6), and their nonzero plaquettes make
-the microstructure nongauge. This is an exact joint/source sequence, not a
-source assigned by evaluating a candidate response. The comparator has
-zero response and does not solve this nonzero discrete source equation,
-so the comparison is non-tautological.
+The comparator is the #216 smooth sheet on the same background, with its
+owned residual and reconstruction conventions. Two exact roots of one
+metric-source equation have equal Xi by substitution; this does not supply
+the comparator estimate. Once that estimate holds, the owned reconstruction
+identifies the continuum response with `-G[g]/2` in its stated topology.
+A negative terminal must keep the same fixed source and nonconstant background
+and produce an admissible exact sequence with a nonzero normalized gap.
 
-[Complete all-mesh proof and source-first construction](A4D_SOURCE_IMAGE_COLLAPSE.md#10-exact-terminal-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm).
-[Exact certificate](certificates/a4d_prescribed_source_owner_topology_check.py)
-and [pinned results](certificates/a4d_prescribed_source_owner_topology_results.json).
+The first missing theorem is one refinement-uniform bound on the realizable
+source image in these hypotheses. It includes noncommuting shared links and
+the full declared admissible class. Further carrier or amplitude certificates,
+a replacement topology, or a weaker source convention do not close it.
 
-This closes the positive owner-sum convergence question **negatively for
-the declared source-sequence class**. It does not prove a nonzero continuum
-stress, refute volume-normalized/weak response convergence, or decide the
-stronger fixed-smooth-source problem. The same example has volume-normalized
-gap `6h^4 -> 0`; its metric background is flat. The prior uniformly C5
-source theorem is unaffected. No selector, action term, gauge identification,
-Lean/public claim or new task is introduced.
+The [exact weak-source obstruction](A4D_SOURCE_IMAGE_COLLAPSE.md#10-scoped-obstruction-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm)
+is retained with its checker and pinned results. Its prescribed source
+`tau_h=h^4*sigma*m` converges to zero in C3, and exact joint fields have raw
+normalized gap 6. Its background is flat, it lacks uniform C5 source bounds,
+and its volume-normalized gap is `6h^4 -> 0`. These facts make it a valid
+scope control, not the fixed-source theory terminal. The prior uniform-C5
+full-B theorem remains a scoped positive input, not a full-class theorem.
 
 ## Retained intermediate evidence
 
-The material below records the earlier partial stages and their scope
-boundaries. Their `PARTIAL / OPEN` statements are historical; the current
-terminal and its source convention are stated above.
+The earlier calculations below retain their individual scopes. The current
+fixed-source task remains PARTIAL / OPEN as stated above.
 
 > **2026-10-02 harmonic/sign invariant audit.**
 > [Section 9 of the source-image owner](A4D_SOURCE_IMAGE_COLLAPSE.md)

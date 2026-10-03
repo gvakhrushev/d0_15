@@ -1,13 +1,13 @@
 # A4D source-image collapse: the non-tautological response terminal
 
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, PR #310.
-Current terminal: `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO` in the
-original unweighted owner norm for independently prescribed source sequences
-converging to a smooth limit. Section 10 gives the complete exact witness.
-This source-sequence convention was fixed explicitly for the terminal on
-2026-10-03, after distinguishing it from the fixed-source alternative. Exact
-sampling of one fixed smooth source is a stronger formulation, not decided
-by this terminal. Sections 1--9 retain the preceding reductions and audits.
+Current theory status: `PARTIAL / OPEN`, Draft / `IN_PROGRESS`.
+The target fixes one smooth nonconstant background and one smooth source
+before choosing a connection. A general uniform-C5 source-image bound is
+also sufficient. Section 10 remains an exact weaker-source topology NO-GO;
+its promotion to the parent terminal at `530a5132` was incorrect and is
+withdrawn. Its calculations and scope remain valid. The source may not be
+weakened or the owner norm changed to declare the theory closed.
 
 ## 1. Exact source image
 
@@ -129,8 +129,9 @@ Several results in #310 already have a simpler interpretation in (1).
 * The flat #227 boost family enlarges the **connection-stationary** response
   image. By itself it supplies neither a prescribed source nor a joint
   counterexample. Section 10 now fixes a source sequence first and inverts
-  the owned constitutive law; the resulting exact joint sequence is the
-  negative terminal for the source-sequence convention.
+  the owned constitutive law; the resulting exact joint sequence refutes
+  the weaker source-sequence convention. It does not close the fixed-source
+  theory target.
 * The full commuting Y-plane rigidity theorem collapses that entire nonlinear
   completion back to the flat source class.
 * The all-amplitude temporal-B current theorem proves that, on the fixed
@@ -237,9 +238,10 @@ Verdict:
 \boxed{\texttt{JOINT-RESPONSE-DECOUPLING-EQUIVALENT-TO-SOURCE-IMAGE-COLLAPSE}}
 \]
 
-At this intermediate stage (7) was open in the full declared topology.
-Section 10 resolves it negatively for the source-sequence convention. Its
-quantifiers no longer require separately classifying microstructure families.
+The fixed-smooth-source and general uniform-C5 versions of (7) remain open
+in the full declared topology. Section 10 refutes only the weaker
+source-sequence version. Their quantifiers do not require separately
+classifying microstructure families.
 
 
 ## 8. Two exact source-image collapses already owned
@@ -499,17 +501,18 @@ Verdict: `CANONICAL-HARMONIC-SIGN-TERMINAL-DICHOTOMY-INVALID`.
 This closed the audit of that proposed criterion at `162fe5ed`. At that
 stage the parent response theorem remained `PARTIAL / OPEN`; the audit
 itself added no new family or task-level NO-GO. Section 10 gives the later
-source-sequence terminal.
+source-sequence obstruction, which is not the parent terminal.
 
-## 10. Exact terminal: prescribed smooth-limit sources defeat the raw owner norm
+## 10. Scoped obstruction: prescribed smooth-limit sources defeat the raw owner norm
 
 ### 10.1 The selected source convention and theorem
 
 The primary memo originally allowed an independently prescribed sequence
 `tau_h`, bounded pointwise and converging weakly to a fixed smooth source.
 The later full-B positive theorem instead requires a fixed sampled smooth
-source or uniform C5 bounds. These are different hypotheses. The 2026-10-03
-terminal retains the original source-sequence convention explicitly.
+source or uniform C5 bounds. These are different hypotheses. Promoting this
+weaker source-sequence obstruction to the theory terminal at `530a5132` was
+incorrect. The fixed-source/nonconstant-background task remains open.
 The witness below satisfies the stronger convergence `tau_h -> 0 in C^3`
 through explicitly given smooth periodic interpolants, with a uniform C4
 bound. No source is defined by evaluating an Euler response.
@@ -541,9 +544,10 @@ E_K(Q_h,K_h)=0,\qquad \Xi(Q_h,K_h)=h^2\tau_h,
 \tag{30}
 \]
 
-Thus the source-image bound (4) is false on this declared class, even for
-fields much smaller than the previously allowed log-O(h) chart. This is a
-negative terminal, not an additional family awaiting a later certificate.
+Thus the source-image bound (4) is false on this weaker source class, even
+for fields much smaller than the previously allowed log-O(h) chart. This
+settles that convention and supplies a hostile norm control; it is not a
+negative terminal for the fixed-smooth-source theory.
 
 ### 10.2 Prescribe the source before solving the links
 
@@ -639,7 +643,7 @@ background; conjugation cannot turn a nonidentity plaquette into I. It also
 satisfies the prior normalized-deviation hypothesis: `log(K_h)/h=O(h^5)`
 converges strongly to zero.
 
-### 10.4 Exact physical owner sum and terminal
+### 10.4 Exact physical owner sum and scope
 
 There are L4 physical sites, each of which has six response slots of
 absolute value h6. The comparator response vanishes. Therefore
@@ -656,15 +660,15 @@ meshes. The comparator is stationary but does not satisfy the nonzero source
 required by the brief. No pair of exact roots at one source is assigned
 different responses.
 
-The terminal is
+The scoped verdict is
 
 \[
-\boxed{\texttt{A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO}.}
+\boxed{\texttt{WEAK-SOURCE-RAW-OWNER-RESPONSE-DECOUPLING-NOGO}.}
 \tag{39}
 \]
 
 Its declared scope is the unweighted owner topology with independently
-prescribed source sequences converging to a smooth source. The terminal
+prescribed source sequences converging to a smooth source. The obstruction
 rules out the positive theorem on that class. It does not settle the
 stronger fixed-smooth-source formulation, produce a nonzero continuum
 stress, or refute weak/volume-normalized response convergence: the latter
@@ -683,8 +687,9 @@ volume-normalized control explicitly gives a different limit.
 python3 02_REGISTRY/research/certificates/a4d_prescribed_source_owner_topology_check.py
 ```
 
-This terminal ends the current source-sequence task. The previous family
-and invariant results are retained as inputs and scope controls; they are
-not additional closure obligations. No action, Lorentz quotient, selector,
-Lean owner or public/CORE claim is changed. GitHub acceptance and merge
-remain separate from the mathematical negative result.
+This closes only the weaker source convention. The theory task remains
+Draft / IN_PROGRESS until the fixed-source, nonconstant-background response
+claim is proved or refuted, or a general uniform-C5 raw-gap theorem is proved.
+The previous family and invariant results remain scoped inputs; none
+substitutes for that single obligation. No action, Lorentz quotient,
+selector, Lean owner or public/CORE claim is changed.

@@ -2,8 +2,7 @@
 
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, PR #310.
 Input: `3a5b0e3f206a8597f8ff4a798188a1d683ef7b4d`.
-Status: retained current interpretation; the source-sequence task has the
-exact negative terminal in [Section 10 of the source-image owner](A4D_SOURCE_IMAGE_COLLAPSE.md#10-exact-terminal-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm).
+Status: retained current interpretation. The fixed-source/nonconstant-background theory remains PARTIAL / OPEN. The weak-source result in Section 10 is a scoped norm obstruction.
 
 The periodic commuting `B` theorem already is the laser-spot cut for this class. Arbitrary phase amplitudes `t_p` in the real chart produce plaquettes `exp(delta_p B)` with `sum delta_p = 0`. The Gram response is `gamma(delta_p) m` with `gamma` injective. A phase-common source forces every increment to vanish, so the source image is `{0}` before `E_K=0` is imposed. A smooth sampled source then forces the fast response in this sector to be `O(h^infty)`.
 
@@ -19,6 +18,6 @@ E_K,0[B] = sum_i D_i^-(w_i sqrt(1+3 z_i^2))
 
 Stationarity is conservation of a flux built from the response slots in that subgroup. Beyond it, both the torque and the response projection must be controlled on the exact joint/source equations; dropping the torque or keeping only a scalar harmonic flux is insufficient.
 
-[The harmonic/sign audit](A4D_SOURCE_IMAGE_COLLAPSE.md#9-audit-of-the-proposed-harmonic-plus-sign-terminal) fixed the correct terminal. At fixed Q, one exact prescribed source fixes Xi, although finer harmonic current memory can vary. Ordinary divergence also does not control the raw owner norm. [The source-first exact inverse](A4D_SOURCE_IMAGE_COLLAPSE.md#10-exact-terminal-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm) now realizes the predeclared source `tau_h=h^4*sigma*m` by exact joint links and gives a normalized raw response gap of exactly 6 from the designated identity comparator at every mesh. Its smooth interpolants tend to zero in C3. This supplies the negative terminal for the selected source-sequence convention.
+[The harmonic/sign audit](A4D_SOURCE_IMAGE_COLLAPSE.md#9-audit-of-the-proposed-harmonic-plus-sign-terminal) fixed the correct terminal. At fixed Q, one exact prescribed source fixes Xi, although finer harmonic current memory can vary. Ordinary divergence also does not control the raw owner norm. [The source-first exact inverse](A4D_SOURCE_IMAGE_COLLAPSE.md#10-scoped-obstruction-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm) now realizes the predeclared source `tau_h=h^4*sigma*m` by exact joint links and gives a normalized raw response gap of exactly 6 from the designated identity comparator at every mesh. Its smooth interpolants tend to zero in C3. This refutes the weaker source-sequence convention; it supplies no fixed-smooth-source or uniform-C5 terminal.
 
-Verdict: `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO` for the raw owner norm with independently prescribed sources converging to a smooth limit. The fixed-smooth-source problem and the physical continuum theory are not decided by this topology obstruction. Further carrier certificates are not required to close the selected task.
+Verdict: `WEAK-SOURCE-RAW-OWNER-RESPONSE-DECOUPLING-NOGO` is retained as a scoped obstruction. The theory target remains `PARTIAL / OPEN`: one fixed smooth source and one nonconstant smooth background, or a general uniform-C5 raw-gap bound. No further family census is required; no task retirement is justified.

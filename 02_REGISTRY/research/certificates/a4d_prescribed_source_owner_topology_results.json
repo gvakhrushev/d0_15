@@ -43,7 +43,7 @@
       }
     ]
   },
-  "verdict": "A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO",
+  "verdict": "WEAK-SOURCE-RAW-OWNER-RESPONSE-DECOUPLING-NOGO",
   "scope": "raw owner l1; independently prescribed mesh-dependent sources converging to a smooth limit, even in C^3",
   "exclusions": [
     "not exact samples of one fixed smooth source",

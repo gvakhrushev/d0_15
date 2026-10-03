@@ -122,7 +122,7 @@ def run_checks():
             "input_head": "162fe5edd07586dfdec060c8c99f335d806bd067",
             "arithmetic": "exact polynomial quotient c^2=1+3*z^2 and complete degree-eight owned Euler numerator",
             "source_first_inverse": inverse, "prescribed_source_and_norm": source,
-            "verdict": "A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO",
+            "verdict": "WEAK-SOURCE-RAW-OWNER-RESPONSE-DECOUPLING-NOGO",
             "scope": "raw owner l1; independently prescribed mesh-dependent sources converging to a smooth limit, even in C^3",
             "exclusions": ["not exact samples of one fixed smooth source",
                            "not the exact discrete vacuum tau_h=0",
