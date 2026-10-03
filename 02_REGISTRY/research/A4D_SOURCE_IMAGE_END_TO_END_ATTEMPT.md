@@ -187,3 +187,21 @@ IN_PROGRESS body before the metadata update and rejected the lifecycle
 mismatch. This validation-note revision supplies a fresh synchronized event
 with the published BLOCKED body. Full-head CI is reported separately; no
 mathematical terminal is inferred from a green implementation check.
+
+## 8. Subsequent exact feasibility theorem on the selected warp
+
+The separate [arithmetic source theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md)
+now proves that B(g,tau) is false on the fixed cosine warp with its
+predeclared continuum Einstein source in the owned raw Gram convention,
+for every allowed mesh. Algebraic sampled coframes give a polynomial action
+over the real algebraic numbers; every full connection-stationary critical
+value is algebraic by the field-derivation lemma. The exact metric source
+would require the transcendental value `pi^2*L^2/1250`.
+
+The new all-24-row smooth calculation also identifies a nonzero order-h
+normalized comparator bias on that warp. Since B is false there, this bias
+does not supply the B-and-not-J counterexample required by the parent task.
+The fixed-source existence attack closes with source infeasibility on this
+geometry; neither parent terminal or general source-image implication is
+claimed. The failed implication route recorded above remains historical
+evidence, and the EK-only designated rescue is unaffected.

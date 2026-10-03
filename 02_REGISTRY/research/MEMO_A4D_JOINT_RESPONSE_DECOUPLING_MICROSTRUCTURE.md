@@ -4,15 +4,31 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `BLOCKED`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
-The [bounded end-to-end attempt](A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md) at
-input `9516797f` failed to prove either original terminal. Its complete
-arrow audit identifies the unchanged full source-image implication as
-unproved. Two earlier shortcuts are corrected: unweighted global moments
-do not recover varying-coframe readout, and equality within a regular
-stationary germ does not compare different regular germs. The #216
-approximate comparator also does not supply exact fixed-source roots.
-The task is Draft / BLOCKED; this attempt has stopped without starting
-another family calculation or proposing another “last step”.
+The [fixed-source arithmetic theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md)
+now settles the requested existence attack on the fixed cosine warp
+`f=1+(1-cos(2*pi*y1))/50`. There is **no real full-link exact joint solution**
+with the predeclared continuum Einstein source in its owned packed Gram
+convention on any allowed mesh. The sampled coframe and finite-action
+coefficients are algebraic; full connection stationarity forces an
+algebraic action value. Exact source substitution would instead require
+`A_h=pi^2*L^2/1250`, which is transcendental. A field-derivation proof covers
+singular loci, nonalgebraic link entries, all shared links and every amplitude.
+The proof is independent of a transverse inverse or a response estimate.
+
+The first nonzero smooth-comparator coefficient is also explicit:
+with `p=f'`, `q=f''`, its normalized response has an order-h correction
+`(3*p*q/2,0,0,0,-p*q/2,p^3/(2*f),p^3/(2*f),0,0,0)`.
+Both independent finite checkers and the analytic argument are in the new
+owner. This establishes source infeasibility on one genuinely curved
+geometry, **not** the original response-gap NO-GO: the required exact
+sourced sequence is absent. The connection-only warped rescue remains valid.
+The parent task remains Draft / BLOCKED and PARTIAL / OPEN.
+
+The earlier [bounded end-to-end attempt](A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md)
+at input `9516797f` failed to establish a terminal. Its corrected
+varying-coframe moment and stationary-germ scopes are retained. The new
+theorem bypasses that failed route by testing exact source feasibility
+directly on the original finite action.
 
 Fix one smooth nondegenerate nonconstant background `g` and one smooth source
 `tau` before choosing the connections. Set `Q_h=g(hx)` and take the declared

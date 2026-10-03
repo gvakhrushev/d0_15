@@ -444,3 +444,19 @@ constant, the geometric integral (26) is zero.
 Additional verdict: **FULL4D-LOG-O(h)-STATIONARY-TRACE-COMPATIBILITY**.
 The independent vacuum on this fixed warp is unrealizable in that class.
 The general task and its raw owner-sum target remain **PARTIAL / OPEN**.
+
+## 8. The fixed continuum Einstein source is also exactly infeasible
+
+The subsequent [full-link arithmetic theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md)
+now excludes the predeclared continuum Einstein source on this same cosine
+warp at every allowed finite mesh, without the log-O(h) hypothesis. It uses
+the original finite action, the exact identity (18), and the algebraicity of
+every full connection-stationary critical value at an algebraic sampled
+coframe. The source would require `A_h=pi^2*L^2/1250`, a transcendental value.
+
+Thus existence of K_h^* here is existence of a connection-stationary root
+with a mesh-dependent output source. It cannot establish a joint root for
+the prescribed continuum source. On that fixed pair the admissible set
+of (13) is empty, so (14) supplies no nonvacuous closure. The new theorem
+retains the original action, sampling, physical Lorentz carrier and norm;
+it does not demand a transverse inverse or a microstructure classification.
