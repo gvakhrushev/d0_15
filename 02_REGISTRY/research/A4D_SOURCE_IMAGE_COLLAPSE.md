@@ -1,7 +1,13 @@
 # A4D source-image collapse: the non-tautological response terminal
 
-Task: \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`, Draft PR #310.  
-Status: exact reformulation of the task target; no new physical assumption.
+Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, PR #310.
+Current terminal: `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO` in the
+original unweighted owner norm for independently prescribed source sequences
+converging to a smooth limit. Section 10 gives the complete exact witness.
+This source-sequence convention was fixed explicitly for the terminal on
+2026-10-03, after distinguishing it from the fixed-source alternative. Exact
+sampling of one fixed smooth source is a stronger formulation, not decided
+by this terminal. Sections 1--9 retain the preceding reductions and audits.
 
 ## 1. Exact source image
 
@@ -121,9 +127,10 @@ Several results in #310 already have a simpler interpretation in (1).
 * The exact flat #232/Y family has \(\Xi=0\).  It adds connection
   representatives but does not enlarge the flat vacuum source image.
 * The flat #227 boost family enlarges the **connection-stationary** response
-  image, but its staggered \(\Xi\) is not an independently prescribed smooth
-  source and therefore does not by itself enlarge the admissible joint-source
-  image.
+  image. By itself it supplies neither a prescribed source nor a joint
+  counterexample. Section 10 now fixes a source sequence first and inverts
+  the owned constitutive law; the resulting exact joint sequence is the
+  negative terminal for the source-sequence convention.
 * The full commuting Y-plane rigidity theorem collapses that entire nonlinear
   completion back to the flat source class.
 * The all-amplitude temporal-B current theorem proves that, on the fixed
@@ -230,9 +237,9 @@ Verdict:
 \boxed{\texttt{JOINT-RESPONSE-DECOUPLING-EQUIVALENT-TO-SOURCE-IMAGE-COLLAPSE}}
 \]
 
-The task remains open because (7) has not yet been proved in the full declared
-topology, but its quantifiers no longer range over separately classified
-microstructure families.
+At this intermediate stage (7) was open in the full declared topology.
+Section 10 resolves it negatively for the source-sequence convention. Its
+quantifiers no longer require separately classifying microstructure families.
 
 
 ## 8. Two exact source-image collapses already owned
@@ -489,5 +496,195 @@ python3 02_REGISTRY/research/certificates/a4d_harmonic_sign_candidate_audit_chec
 ```
 
 Verdict: `CANONICAL-HARMONIC-SIGN-TERMINAL-DICHOTOMY-INVALID`.
-This closes the audit of that proposed criterion. The parent response
-theorem remains `PARTIAL / OPEN`; no new family or task-level NO-GO is added.
+This closed the audit of that proposed criterion at `162fe5ed`. At that
+stage the parent response theorem remained `PARTIAL / OPEN`; the audit
+itself added no new family or task-level NO-GO. Section 10 gives the later
+source-sequence terminal.
+
+## 10. Exact terminal: prescribed smooth-limit sources defeat the raw owner norm
+
+### 10.1 The selected source convention and theorem
+
+The primary memo originally allowed an independently prescribed sequence
+`tau_h`, bounded pointwise and converging weakly to a fixed smooth source.
+The later full-B positive theorem instead requires a fixed sampled smooth
+source or uniform C5 bounds. These are different hypotheses. The 2026-10-03
+terminal retains the original source-sequence convention explicitly.
+The witness below satisfies the stronger convergence `tau_h -> 0 in C^3`
+through explicitly given smooth periodic interpolants, with a uniform C4
+bound. No source is defined by evaluating an Euler response.
+
+Let `L in 4N`, `h=1/L`, and use the physical lattice `(Z/LZ)^4`. Fix the
+smooth nondegenerate background `Q_h=eta`, its identity solder, and the
+designated flat comparator `K_h^sm=I`. Its geometric response is exactly zero.
+The finite response uses the owner ten covector slots
+
+\[
+(00,01,02,03,11,12,13,22,23,33),\qquad
+\|R\|_{\mathrm{owner},1}=\sum_x\sum_{j=1}^{10}|R_j(x)|.
+\tag{29}
+\]
+
+The off-diagonal dual weights are already included in these slots. There
+is no volume factor in (29).
+
+**Theorem.** There is an explicitly prescribed source sequence converging
+to the smooth zero source in C3 and an exact sequence of genuine
+`SO^+(1,3)` link fields with `||log K_h||_infinity=O(h^6)` such that
+
+\[
+E_K(Q_h,K_h)=0,\qquad \Xi(Q_h,K_h)=h^2\tau_h,
+\]
+\[
+\boxed{h^{-2}\|\Xi(Q_h,K_h)-\Xi(Q_h,K_h^{\rm sm})\|_{\mathrm{owner},1}
+=6\quad\text{for every }L\in4\mathbb N.}
+\tag{30}
+\]
+
+Thus the source-image bound (4) is false on this declared class, even for
+fields much smaller than the previously allowed log-O(h) chart. This is a
+negative terminal, not an additional family awaiting a later certificate.
+
+### 10.2 Prescribe the source before solving the links
+
+Fix, with no candidate-dependent parameters,
+
+\[
+m=(0,0,0,0,-1,1,1,-1,1,-1),\qquad
+\sigma_p=(1,1,-1,-1)_{p\bmod4},
+\]
+\[
+\boxed{\tau_h(x)=h^4\sigma_{x_0+x_1+x_2+x_3}\,m.}
+\tag{31}
+\]
+
+This is the input to the metric equation. On the unit continuous torus it
+is the exact sampling of the predetermined function
+
+\[
+\widetilde\tau_h(y)=h^4\left[
+\cos\!\left(\frac{\pi}{2h}\sum_r y_r\right)+
+\sin\!\left(\frac{\pi}{2h}\sum_r y_r\right)\right]m.
+\tag{32}
+\]
+
+The functions are periodic because `L/4` is an integer. For every
+multi-index alpha of order k, componentwise,
+
+\[
+\|\partial^\alpha\widetilde\tau_h\|_\infty
+\le\sqrt2(\pi/2)^k h^{4-k}.
+\tag{33}
+\]
+
+Consequently (32) converges to zero in C3 and is uniformly bounded in C4.
+It satisfies the primary memo's bounded-source and weak smooth-limit
+conditions. It does not have uniform C5 bounds and is not sampling one
+h-independent function. In particular (31) is not the discrete vacuum
+source `tau_h=0`.
+
+### 10.3 Solve the prescribed joint equation exactly
+
+Use the already owned generator `B=K1+K2+K3`, with `B^3=3B`. The required
+geometric-response scalar is fixed by (31): `z_h=h^2 h^4=h^6`. Define
+
+\[
+c_h=\sqrt{1+3z_h^2},\qquad
+U_h=I+z_hB+\frac{c_h-1}{3}B^2.
+\tag{34}
+\]
+
+This is an explicit inverse of the existing constitutive map, not a fit of
+the source to a resulting field. Indeed, with
+
+\[
+t_h=\frac{2z_h}{1+c_h},\qquad
+4-3t_h^2=\frac8{1+c_h}>0,
+\]
+\[
+U_h=\operatorname{Cayley}(t_h B),\qquad
+\frac{4t_h}{4-3t_h^2}=z_h.
+\tag{35}
+\]
+
+Equivalently
+
+\[
+U_h=\exp\!\left[\frac{\operatorname{arsinh}(\sqrt3z_h)}{\sqrt3}B\right].
+\tag{36}
+\]
+
+Thus every link is real, in the identity component of the Lorentz group,
+and has logarithm O(h6). Set all spatial links to I, and for the Role0
+link use `(U_h,I,U_h^-1,I)` at phases `p=sum(x) mod 4`.
+
+The mandatory #227 owner's **complete degree-eight denominator-cleared
+Euler identity** gives, for every real Cayley parameter in this chart,
+
+\[
+E_K=0,\qquad
+\Xi(x)=\frac{4t_h}{4-3t_h^2}\sigma_p m
+=h^6\sigma_p m=h^2\tau_h(x).
+\tag{37}
+\]
+
+The identity checks every independent shared-link variation in all four
+roles and six Lie directions. Repeating the phase pattern on the physical
+lattice introduces no missing Euler equations. The geometric response and
+the prescribed source remain separate throughout (31)--(37).
+
+The odd temporal plaquette curvature is `+z_h B` or `-z_h B`, and is
+nonzero for each h. This is curved nongauge microstructure on a flat metric
+background; conjugation cannot turn a nonidentity plaquette into I. It also
+satisfies the prior normalized-deviation hypothesis: `log(K_h)/h=O(h^5)`
+converges strongly to zero.
+
+### 10.4 Exact physical owner sum and terminal
+
+There are L4 physical sites, each of which has six response slots of
+absolute value h6. The comparator response vanishes. Therefore
+
+\[
+h^{-2}\sum_x\sum_j|\Xi_j(x)-\Xi_j^{\rm sm}(x)|
+=h^{-2}L^4\cdot6h^6=6.
+\tag{38}
+\]
+
+This proves (30) for every refinement, rather than extrapolating from finite
+meshes. The comparator is stationary but does not satisfy the nonzero source
+(31); hence the comparison is exactly the non-tautological comparison
+required by the brief. No pair of exact roots at one source is assigned
+different responses.
+
+The terminal is
+
+\[
+\boxed{\texttt{A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO}.}
+\tag{39}
+\]
+
+Its declared scope is the unweighted owner topology with independently
+prescribed source sequences converging to a smooth source. The terminal
+rules out the positive theorem on that class. It does not settle the
+stronger fixed-smooth-source formulation, produce a nonzero continuum
+stress, or refute weak/volume-normalized response convergence: the latter
+norm of this same sequence is `6h^4 -> 0`. The background metric in this
+witness is flat, so no claim about a genuinely curved metric is inferred.
+The full-B C5 theorem remains consistent with this result because (32)
+fails its source hypothesis.
+
+The exact checker replays the existing full Euler polynomial, verifies the
+algebraic source inverse modulo `c^2=1+3z^2`, determinant and time component,
+all source derivative identities through order five, literal physical
+multiplicities and the normalization. A source-sign mutation fails, and the
+volume-normalized control explicitly gives a different limit.
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_prescribed_source_owner_topology_check.py
+```
+
+This terminal ends the current source-sequence task. The previous family
+and invariant results are retained as inputs and scope controls; they are
+not additional closure obligations. No action, Lorentz quotient, selector,
+Lean owner or public/CORE claim is changed. GitHub acceptance and merge
+remain separate from the mathematical negative result.
