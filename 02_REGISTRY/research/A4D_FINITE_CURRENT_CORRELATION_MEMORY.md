@@ -2,7 +2,8 @@
 
 Task: \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`, Draft PR #310.  
 Input head: \`d7730d1d25619ee3a46bb205c8d0c7dbdc75f1e4\`.  
-Status: exact algebraic reduction of the candidate space; not yet a task terminal.
+Status: exact local degree/stencil theorem; no refinement-uniform global quotient or task terminal.
+The global averaging claim in the original Section 4 is corrected below.
 
 ## 1. Why this note
 
@@ -22,9 +23,11 @@ This note records two consequences:
    every metric-response row is a polynomial of degree at most four in the
    matrix increments.
 
-Hence the response/homogenization problem admits a finite correlation-memory
-quotient.  At quadratic order the already certified 21-term Laurent support
-shows that only 21 two-point matrix moments are visible.
+Hence each local response row has finitely many coefficient-weighted
+correlation types. This does not give a fixed-size global realizability
+quotient on a varying background. At quadratic order the certified 21-term
+Laurent support gives 21 two-point matrix moment fields, indexed by the
+continuum position; they are not 21 unweighted global numbers.
 
 ## 2. Exact face momentum and shared-link incidence current
 
@@ -179,65 +182,75 @@ microstructure gates are not separate physical obligations in matrix-link
 coordinates.  Any such terms seen in logarithmic coordinates are
 reparameterizations of the finite quartic system (10).
 
-## 4. Exact finite local correlation memory
+## 4. Exact local polynomial memory and the averaging boundary
 
-Each row of (10) sees only the finitely many links in the incident face star.
+Each row of (10) sees only finitely many links in the incident face star.
 For a connection row, six incident faces contribute; for a metric row, six
-based faces contribute.  Thus there is one finite link-slot set
-\(\mathcal S_{\rm loc}\), independent of L, such that all candidate dependence
-is through products
+based faces contribute. There is a finite set of relative link slots
+\(\mathcal S_{\rm loc}\), independent of L, and monomials
 
 \[
-U_{\ell_1}\cdots U_{\ell_d},
-\qquad
-1\le d\le4,\qquad
-\ell_j\in\mathcal S_{\rm loc}.
+m_\alpha(U)(x)
+=\prod_{j=1}^{d_\alpha}(U_{x+\ell_j})_{a_jb_j},
+\qquad 0\le d_\alpha\le4,
+\qquad \ell_j\in\mathcal S_{\rm loc}.
 \tag{11}
 \]
 
-For any declared averaging/testing operator P, define the finite correlation
-memory
+The degree-zero term includes the comparator residual. For a linear testing
+operator P the exact averaged rows have the form
 
 \[
-\mathfrak C_P(U)
-=
-\left\{
-P\!\left[
-(U_{\ell_1})_{a_1b_1}\cdots
-(U_{\ell_d})_{a_db_d}
-\right]:
-1\le d\le4,\ \ell_j\in\mathcal S_{\rm loc}
-\right\}.
+P E_K=\sum_\alpha P[c^E_\alpha(x;S,K^*)m_\alpha(U)(x)],
+\qquad
+P\Xi=\sum_\alpha P[c^\Xi_\alpha(x;S,K^*)m_\alpha(U)(x)].
 \tag{12}
 \]
 
-Then there are fixed coefficient maps, determined by \(S,K^*\), such that
+Thus a sufficient memory for these *tested rows* consists of the
+coefficient-weighted moments
 
 \[
-P E_K=\mathcal F_{S,K^*}(\mathfrak C_P(U)),
-\qquad
-P\Xi=\mathcal G_{S,K^*}(\mathfrak C_P(U)).
+\mathfrak C_{P,S,K^*}(U)
+=\{P[c^E_\alpha m_\alpha],\ P[c^\Xi_\alpha m_\alpha]\}_\alpha.
 \tag{13}
 \]
 
-Therefore two arbitrary microscopic fields with the same memory (12) have
-the same averaged connection equations and the same averaged metric response,
-regardless of how many different Fourier carriers, sign patterns, envelopes,
-or pointwise representatives realize those moments.
+The original claim that unweighted moments \(P[m_\alpha]\) suffice for
+arbitrary P and varying \(S,K^*\) was incorrect. Coefficients cannot be
+pulled outside an average unless the testing operator commutes with their
+multiplication; constant coefficients on its averaging fibers suffice.
 
-Equation (13) is the finite M1-style quotient that the frequency census was
-missing.  It is sufficient, not asserted coarsest.
+A direct hostile control is a two-site periodic field \(u=(1,0)\) and its
+translate \(v=(0,1)\). Every unweighted cyclic shifted-monomial average is
+translation invariant, at every degree. For a fixed coefficient field
+\(c=(1,2)\), however,
 
-The realizable image of (12) still has constraints:
+\[
+P[u]=P[v]=1/2,\qquad P[cu]=1/2,\qquad P[cv]=1.
+\]
 
-* the exact quadratic Lorentz relations (9);
-* shared-link consistency;
-* positivity/Gram constraints on correlation matrices;
-* the polynomial Euler equations obtained from (10).
+This disproves the coefficient-pullout argument. It is a control of the
+proposed algebraic inference, not an exact stationary A4D counterexample.
+Translation of relative Lorentz link fields likewise preserves all global
+unweighted shifted-word averages; a fixed varying background does not
+translate with them.
 
-All of these have degree bounded independently of L.
+For a fixed finite grid, (13) factors the chosen tested rows. When P
+averages position away, this generally does not recover the pointwise
+source equations or the absolute owner norm. For P=I these outputs are
+retained as fields. In either case, defining the tested memory does not
+prove that arbitrary proposed data are realizable by shared links. Keeping the pointwise
+monomials and Lorentz/shared-link constraints yields an exact polynomial
+system with bounded degree and stencil, but its number of variables and
+constraints grows with L^4. If P keeps position, its output is itself a
+field. If P averages position away, those pointwise constraints are lost.
 
-## 5. The quadratic continuum memory is only 21 matrix moments
+Consequently finite degree does not prove that this varying-background
+system has a fixed-size globally sufficient memory or a refinement-uniform
+moment-extension theorem. Those claims require separate proofs.
+
+## 5. The quadratic continuum readout uses 21 matrix moment fields
 
 For the O(h) continuum/microstructure scaling, the leading weak response uses
 only the degree-two part.  The literal physical joint symbol has already been
@@ -280,7 +293,8 @@ the entire quadratic response defect is exactly
 \]
 
 Thus the full frequency measure is **not** response memory.  For the
-quadratic continuum readout, its 21 matrix moments are sufficient.
+quadratic continuum readout, its 21 matrix moment fields M_d(x) are sufficient.
+Their dependence on x retains correlations with the varying coframe.
 
 The exact joint support equations can likewise be tested against Laurent
 monomials.  One multiplication by the 21-term symbol enlarges the required
@@ -323,9 +337,10 @@ cannot by itself be a response-sufficient quotient.  The current equation
 controls realizability; the odd projected curvature memory \(\Xi\) controls
 the metric observation.
 
-The correct finite object is therefore not "harmonic current alone" but the
-joint finite constitutive memory (12), with (4) imposing conservation and
-\(\Xi\) selecting the observable projection.
+The local constitutive data must retain the monomials and background
+coefficients in (12), with (4) imposing the transported current equations
+and \(\Xi\) selecting the observable projection. No fixed-size global
+response-sufficient quotient follows from this observation.
 
 ## 7. Consequence for the raw owner-sum target
 
@@ -335,8 +350,8 @@ the quadratic defect-measure law and its 21-moment quotient.
 
 The unweighted owner-sum target is much stronger.  The L^4 site count can keep
 degree-three and degree-four contributions relevant even when they are
-pointwise small.  However the finite-degree theorem still removes the
-open-ended proof ladder:
+pointwise small.  The finite-degree theorem limits the degree of the *original local
+equations*:
 
 \[
 \boxed{
@@ -346,7 +361,9 @@ open-ended proof ladder:
 \tag{17}
 \]
 
-There is no independent degree-five or higher gate to discover.
+There is no degree-five or higher term in those original matrix equations.
+Elimination, normal-graph substitution and spatial realizability can still
+produce higher-order conditions; the local degree bound does not close them.
 
 Accordingly the remaining strong-topology problem can be organized as three
 finite moment layers:
@@ -356,52 +373,48 @@ finite moment layers:
 3. quartic four-point correlation;
 
 together with the exact quadratic Lorentz constraints and shared-link
-incidence.  These layers should be solved simultaneously as one finite
-polynomial realizability problem, not sequentially promoted into new
-"theory levels".
+incidence.  They form one finite-degree polynomial system on each finite grid. Its
+growing spatial dimension and varying coefficients remain part of the
+refinement problem; the degree bound supplies no global closure estimate.
 
-## 8. Finite dual-certificate target
+## 8. The realizability condition cannot be inferred from degree
 
-A positive non-census closure can now be stated algebraically.
+Let \(\mathcal M_{L}^{\rm real}(S,K^*,\tau)\) be the image of actual
+admissible shared Lorentz link fields satisfying the full pointwise
+connection and prescribed-source equations. One may retain the pointwise
+monomial fields from (11), or their coefficient-weighted tested moments
+when the desired observation factors through that testing operator.
 
-Let \(\mathcal M_{\le4}(S,K^*)\) be the finite set of correlation memories
-(12) satisfying all exact moment consequences of
-
-\[
-E_K=0,\qquad
-(I-P)\Xi=0,
-\]
-
-the Lorentz relations (9), shared-link consistency, and the declared source
-equations.  Let \(\mathcal D\) be the linear readout extracting the response
-difference from those moments.
-
-The desired finite certificate is
+For the original owner norm, the readout must retain enough spatial data
+to recover the full ten-slot normalized response difference. Denote it by
+\(\mathcal D_L\). The desired positive statement is
 
 \[
 \boxed{
-\mathcal D(M)=0
-\quad\text{for every }M\in\mathcal M_{\le4}(S,K^*).
+\sup_{M\in\mathcal M_L^{\rm real}(S,K^*,\tau)}
+\|\mathcal D_L(M)\|_{\mathrm{owner},1}\longrightarrow0.
 }
 \tag{18}
 \]
 
-It is enough to prove (18) by polynomial-ideal, real-radical,
-sum-of-squares/PSD moment, or exact elimination identities.  Such a
-certificate quantifies over every microscopic realization at once.
+An inequality on a larger moment relaxation would suffice if every exact
+root maps into it. Conversely, a point of a truncated moment relaxation
+with nonzero readout is not a negative terminal: it must be realized by
+actual shared Lorentz links under the same fixed smooth source and
+background, on a refining sequence. Bounded polynomial degree proves
+neither that realization nor a grid-independent finite relaxation exact
+for this purpose.
 
-A negative terminal instead requires one point of the same finite moment
-system that is exactified to shared Lorentz links and has \(\mathcal D(M)\ne0\)
-under a source fixed before the field.
-
-This is the appropriate replacement for further Bloch-ratio enumeration.
+Equation (18) is a reformulation of the original source-image theorem.
+No proof of it is supplied by the local polynomial degree bound.
 
 ## 9. Scope
 
 The degree-four theorem is exact for the naked-star action in Lorentz matrix
 variables.  The 21-moment statement concerns the quadratic continuum
-readout.  The full strong owner-sum closure still requires controlling the
-finite cubic and quartic moment layers.
+readout.  The full strong owner-sum closure still requires a refinement-uniform
+estimate on the actual spatially realizable source image, including its
+cubic and quartic correlations with the varying coframe.
 
 No ordinary Hodge quotient of the nonlinear transported current is claimed;
 the field-dependent adjoint transports in (4) are retained.  No connection
@@ -422,9 +435,10 @@ Verdicts:
 \boxed{\texttt{A4D-QUADRATIC-RESPONSE-HAS-21-MOMENT-M1-QUOTIENT}}
 \]
 
-The parent response-decoupling task remains open only at the finite
-degree-2/3/4 correlation realizability identity (18), not at an unlimited
-space of new nonlinear proof levels.
+The parent response-decoupling task remains open. The exact local degree
+result does not reduce it to a fixed-size global moment problem. The failed
+end-to-end use of that reduction is recorded in
+[A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md](A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md).
 
 
 ## 10. Replay

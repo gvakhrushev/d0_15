@@ -1,8 +1,18 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
-Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
+Lifecycle: `BLOCKED`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
+
+The [bounded end-to-end attempt](A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md) at
+input `9516797f` failed to prove either original terminal. Its complete
+arrow audit identifies the unchanged full source-image implication as
+unproved. Two earlier shortcuts are corrected: unweighted global moments
+do not recover varying-coframe readout, and equality within a regular
+stationary germ does not compare different regular germs. The #216
+approximate comparator also does not supply exact fixed-source roots.
+The task is Draft / BLOCKED; this attempt has stopped without starting
+another family calculation or proposing another “last step”.
 
 Fix one smooth nondegenerate nonconstant background `g` and one smooth source
 `tau` before choosing the connections. Set `Q_h=g(hx)` and take the declared
@@ -178,9 +188,11 @@ fixed-source task remains PARTIAL / OPEN as stated above.
 > The physical quadratic symbol has the already certified 21-shift support,
 > so the homogenized quadratic response depends only on 21 matrix correlation
 > moments; one multiplication by the joint stencil enlarges this to 131
-> shifts. Thus the remaining universality question can be posed as one finite
-> degree-2/3/4 correlation-realizability/dual-certificate problem rather than
-> a Bloch census or an unbounded Taylor ladder. A single scalar harmonic flux
+> shifts. These are local correlation types and continuum moment fields.
+> On a varying coframe, unweighted global averages do not retain the needed
+> coefficient correlations; the full pointwise shared-link system grows
+> with L4. Finite degree does not provide a fixed-size exact global quotient
+> or a uniform closure estimate. A single scalar harmonic flux
 > is too coarse: the flat coupled-boost control has an even transport factor
 > under \`t -> -t\` while \`Xi\` changes sign. The exact structural checker
 > passes. This is a class reduction, not yet the task terminal.
@@ -1412,7 +1424,7 @@ the actual owner sum-norm response remain the subsequent obligation.
 No physical terminal, selector, action modification, or claim promotion.
 Keep PR #310 Draft and IN_PROGRESS.
 
-## Current execution focus: H-NORMAL-RESCUE
+## Historical execution focus: H-NORMAL-RESCUE
 
 The first remaining object is the size of the genuinely mixed transverse
 current on the sampled smooth metric, with the source and unweighted

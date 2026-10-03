@@ -3,7 +3,9 @@
 Task: \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`, Draft PR #310.  
 Inputs: the exact envelope theorem in the stationary-sheet synthesis and the
 source-image formulation in \`A4D_SOURCE_IMAGE_COLLAPSE.md\`.  
-Status: exact finite-dimensional variational reduction; no task terminal.
+Status: conditional envelope theorem within each horizontal stationary
+component; distinct regular germs and singular roots remain in the full
+source-image problem. No task terminal.
 
 ## 1. Stationary components are not response classes
 
@@ -22,8 +24,10 @@ Let \(\mathcal C_\alpha(Q)\) be a connected component of the stationary fiber
 F_h(Q,a)=0
 \]
 
-which extends differentiably for all \(Q\) in one open metric neighborhood
-\(U\).
+which extends differentiably for all \(Q\) in one open neighborhood
+\(U\) of the **full finite metric-coordinate space**, with fibers joined
+by differentiable stationary paths. A family defined only at fixed Q or
+only over constant coframes does not meet this full-metric hypothesis.
 
 For any differentiable path \(a(Q,s)\) inside that component,
 
@@ -111,69 +115,70 @@ h^{-2}d_QV_{\alpha,h}(Q_h):
 \tag{5}
 \]
 
-The #216 designated sheet contributes one such germ
-\(V_{{\rm sm},h}\), with reconstructed derivative tending to
-\(-G/2\).
+The #216 smooth comparator has reconstructed response tending to
+\(-G/2\). Its connection residual is super-algebraically small; this does
+not by itself make it an exact stationary germ. Identifying it, up to the
+required error, with a derivative \(d_QV_{{\rm sm},h}\) requires a
+separate exact-stationary-germ and response-comparison theorem. The
+H-NORMAL-RESCUE contract is one sufficient route, explicitly OPEN in that
+owner; it is not asserted to be the only possible route.
 
 Positive response closure on the regular domain is therefore equivalent to
 
 \[
 d_QV_{\alpha,h}(Q_h)
 -
-d_QV_{{\rm sm},h}(Q_h)
-=o(h^2)
+E_Q(Q_h,K_h^{\rm sm})
+=o_{\mathrm{owner},1}(h^2)
 \tag{6}
 \]
 
-for all regular critical-value germs.  No statement about the number of
-connections inside each component remains.
+for every admissible regular-germ sequence whose source is the exact
+sampling of one fixed smooth tau. Equation (2) does not compare different
+germs. If an exact designated germ is supplied with sufficiently small
+response error, it may replace the comparator in (6); its existence is not
+a conclusion of the envelope theorem.
 
-## 4. Why known microstructure families collapse immediately
+## 4. Scope of the known response-null controls
 
-Several previously separate-looking families are now one-line consequences
-of (2).
+The flat #232/Y family has identically zero full metric response by its
+literal Euler certificate. The same is true of the constant-coframe quarter
+axes on their declared constant-coframe parameter domain. These facts do
+not prove that either family extends over an open neighborhood of all
+finite metric coordinates. Equation (2), when used only on a restricted
+parameter domain, identifies only the response tested along that domain.
 
-* The flat #232/Y family is an exact connected stationary family with
-  identically zero metric response.  Its connection multiplicity contributes
-  no additional critical-value derivative.
-* The exact constant-coframe quarter axes persist over a coframe neighborhood
-  and have zero full solder/Gram Euler.  Their critical-value germs are
-  locally constant, so their response is identically zero throughout that
-  regular family.
-* The full commuting Y-plane completion is already classified as a flat
-  integrable geometry.  Its entire regular completion lies in the same flat
-  response class.
-* Conversely the flat #227 coupled-boost branch has nonzero metric response
-  but fails to extend to the declared nonconstant warp: the exact shared-link
-  current identity detects precisely the failure of a horizontal stationary
-  germ.  Its flat connection-stationary existence is therefore not evidence
-  for an additional regular curved source germ.
+The commuting Y-plane completion is separately classified as flat
+integrable geometry. The flat #227 coupled-boost branch has nonzero metric
+response and fails its proposed extension to the declared nonconstant warp
+by the exact shared-link current identity. Failure of that one extension
+neither excludes other regular critical-value germs nor classifies all
+singular stationary roots on a varying background.
 
-These examples are illustrations of (3), not separate assumptions of the
-theorem.
+These scoped results remain valid independently of the envelope theorem.
+No assertion that all regular branches have equal response follows.
 
-## 5. What can still enlarge the source image
+## 5. Both distinct regular germs and singular roots remain
 
-After (3), a new microscopic construction can matter only in one of two ways:
+After (3), a microscopic construction can still enlarge the source image
+by defining a **different regular critical-value germ**, or by producing a
+stationary root without the horizontal continuation required in Section 1.
+Disconnected regular components can each possess such a germ; disconnected
+is not synonymous with singular.
 
-1. it defines a **different critical-value germ** \(V_{\alpha,h}\); or
-2. it is singular/disconnected, so no common open-neighborhood stationary
-   germ exists and the envelope reduction cannot be applied directly.
-
-Thus the remaining response problem is not “all stationary microstructures”.
-It is
+The full response question remains
 
 \[
 \boxed{
-\text{classify or exclude singular/disconnected critical-value germs
-that survive the smooth-source limit.}
+\text{control all distinct regular germs and all remaining singular roots
+that realize the prescribed fixed smooth source.}
 }
 \tag{7}
 \]
 
-A frozen joint kernel with a nonzero response moment is exactly a first-order
-signal that horizontal continuation may fail.  It is not itself a new source
-class.  This matches the owned deformation-map/Fredholm interpretation.
+The envelope theorem removes labels *inside* an eligible component. It
+does not remove that component from the comparison with the designated
+response, and it supplies no bound between different components.
 
 ## 6. Connection with the new circle identity
 
@@ -189,31 +194,24 @@ anyway.  Therefore these continuous singular carriers do not enlarge the
 quadratic flat source image before any nonlinear exactification question is
 asked.
 
-This leaves only singular carriers with a genuinely nonzero reduced response
-cohomology as possible anomalies.
+This excludes these particular quadratic flat carriers. Distinct regular
+germs, nonlinear completions and other singular roots are still subject to
+the full fixed-source test in (7).
 
-## 7. Finite-degree closure target
+## 7. What the local degree theorem does and does not imply
 
-The matrix-link equations are exact degree at most four.  Consequently the
-singular/disconnected source-image problem (7) is still the finite
-degree-2/3/4 correlation problem of
-\`A4D_FINITE_CURRENT_CORRELATION_MEMORY.md\`.
+The matrix-link equations have degree at most four and a bounded local
+stencil. On a varying coframe their coefficients depend on position. The
+corrected `A4D_FINITE_CURRENT_CORRELATION_MEMORY.md` therefore retains
+coefficient-weighted correlations or pointwise moment fields; it does not
+provide a fixed-size globally exact realizability quotient.
 
-A final positive dual certificate can be phrased as:
-
-\[
-\boxed{
-\text{every feasible singular quartic correlation has the same
-critical-value derivative as }V_{{\rm sm},h},
-}
-\tag{8}
-\]
-
-up to the declared \(o(h^2)\) topology.
-
-A negative terminal must produce one singular critical-value branch with an
-independently fixed smooth source whose derivative stays separated from the
-designated germ.
+A positive result must compare the actual response of **all** admissible
+fixed-source roots, including distinct regular germs and singular roots,
+with the smooth comparator in the original owner norm. A negative result
+may come from either a distinct regular germ or a singular root, but must
+produce an admissible refining sequence with one background and one smooth
+source fixed before the links. A singular witness is not required.
 
 Verdict:
 
@@ -221,7 +219,11 @@ Verdict:
 \boxed{\texttt{REGULAR-STATIONARY-RESPONSE-QUOTIENT-IS-CRITICAL-VALUE-GERM}}
 \]
 
-and the parent task is reduced to singular/disconnected critical-value germs.
+This is a conditional within-component quotient. It neither identifies
+all regular germs with the designated comparator nor reduces the parent
+task to singular/disconnected germs. The full attempt and its failed
+arrows are recorded in
+[A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md](A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md).
 
 No new action, selector, gauge identification, spectral cutoff, BOOK/CORE
 promotion or task-level terminal is claimed.

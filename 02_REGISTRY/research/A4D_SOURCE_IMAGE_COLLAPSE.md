@@ -1,13 +1,19 @@
 # A4D source-image collapse: the non-tautological response terminal
 
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, PR #310.
-Current theory status: `PARTIAL / OPEN`, Draft / `IN_PROGRESS`.
+Current theory status: `PARTIAL / OPEN`, Draft / `BLOCKED`.
 The target fixes one smooth nonconstant background and one smooth source
 before choosing a connection. A general uniform-C5 source-image bound is
 also sufficient. Section 10 remains an exact weaker-source topology NO-GO;
 its promotion to the parent terminal at `530a5132` was incorrect and is
 withdrawn. Its calculations and scope remain valid. The source may not be
 weakened or the owner norm changed to declare the theory closed.
+
+The [end-to-end attempt](A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md) failed to
+prove either terminal. The finite-degree formulation below retains spatial
+realizability and varying coefficients; it is not a fixed-size global
+moment quotient. Distinct regular stationary germs remain in the source
+image alongside singular roots. No further family census is started.
 
 ## 1. Exact source image
 
@@ -171,8 +177,15 @@ the projection of one finite-degree shared-link correlation system:
 \tag{6}
 \]
 
-The number of microscopic representatives may grow without bound, but the
-types of correlation data and polynomial equations in (6) do not.
+Here \(\mathfrak C_h\) must retain the pointwise monomial fields, or
+coefficient-weighted moments sufficient for the chosen observation. The
+number of local monomial and equation *types* is bounded; the number of
+spatial unknowns and constraints grows with L^4. Unweighted global moments
+do not retain correlations with the varying coframe. No fixed-size exact
+global realizability quotient follows from finite degree alone. Equation
+(6) denotes the actual shared-link system or a separately justified
+relaxation containing its image, not an automatically realizable truncated
+moment set.
 
 For the quadratic continuum limit, the response projection factors further
 through the 21 certified matrix shift moments.  Thus frequency itself is not
@@ -209,7 +222,8 @@ the designated response:
 \tag{8}
 \]
 
-with the source family declared independently before solving the links.
+with one fixed smooth source and its exact samples declared independently
+before solving the links.
 
 Equation (8) is precisely the original task's hostile sequence criterion.
 
