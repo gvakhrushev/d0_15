@@ -3,7 +3,8 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, PR #310.
 Input head: `551eba1a84fe15ebdcd100b90348f291bd109692`.
 Canonical main: `e80a3b1ccf615fb4f70bf5900181592604928497`.
-Status: exact all-field current identity and local transport theorem;
+Status: exact all-field current identity, full-eight reduced readout bound
+and scoped coframe-gradient pullback control;
 fixed-source global response closure remains `PARTIAL / OPEN`.
 Certificate: `certificates/a4d_full_current_transport_quotient_check.py`.
 
@@ -1102,3 +1103,360 @@ views, active-work, agent-protocol, claim-strength, formalization-debt,
 actual Draft PR contract, artifact freshness/semantic mutations, new Python
 compilation and whitespace checks pass. No Lean source changes require a
 full Lean rebuild. New-head CI is reported separately.
+
+## 14. The full-eight reduced quartic readout has a pointwise source bound
+
+Input head: `ac022ee01d0037ee0e8d8a89b8be1c8143bb38b2`.
+Certificate: `certificates/a4d_quartic_joint_transport_syzygy_check.py`,
+with an explicit rational ledger of all eighty identities. The input is
+the complete ten-slot quartic readout of Section 13, including W3, and
+all four physical first-slow transport matrices of Section 12. No new
+carrier, period, circle, amplitude family or source convention is introduced.
+
+The unresolved six spatial products in (R7) can be eliminated from the
+**frozen reduced readout estimate**. For the full real eight-amplitude
+field on any finite grid set
+
+\[
+\mathcal R_3=\sum_{\mu=0}^3G_\mu D_\mu c+Q_3(c),\qquad
+\rho=\max_{x,i}|c_i(x)|.
+\]
+
+There are exact rational constants, independent of the grid and of the
+amplitude field, such that
+
+\[
+\boxed{
+\|R_4(c)\|_{raw,1}
+ \le\frac{39450673}{97020}\rho\|\mathcal R_3\|_{raw,1}
+       +\frac{3526141}{99}\rho^2\|Q_2(c)\|_{raw,1}.
+}
+\tag{S1}
+\]
+
+The constants may be rounded to 407 and 35618. All ten metric components
+and both temporal amplitudes are retained. This is a bound on the observable,
+not on the unnecessary positive mixing moment D_s. In particular it imposes
+no smallness on temporal amplitude derivatives or on invisible amplitudes.
+
+### A saturated identity, rather than a signed flux balance
+
+Concatenate the four real 28 by 8 matrices G_mu. Its exact rank is twelve.
+Choose a rational basis N of its common left kernel, with sixteen rows:
+
+\[
+\boxed{NG_\mu=0\quad\text{for every }\mu=0,1,2,3.}
+\tag{S2}
+\]
+
+All 512 entries vanish. Consequently `N R3=N Q3` at each site for arbitrary
+componentwise differences D_mu. This cancellation precedes multiplication
+by an amplitude-dependent coefficient; no derivative of that coefficient
+or summation by parts is used.
+
+Let P be the ten pairs `(r,s)` with `r=s` or `r=0` or `s=0`, and let
+
+\[
+t_0=a_0(a_1-a_2+a_3)-b_0(b_1-b_2+b_3).
+\]
+
+For **every** coordinate i=0,...,7 and metric slot j=0,...,9 the checker
+constructs rational homogeneous polynomials A and B of degree three and
+H of degree two satisfying
+
+\[
+\boxed{
+c_iR_{4,j}
+ =A_{ij}t_0
+  +\sum_{(r,s)\in P}B_{ij,rs}a_rb_s
+  +\sum_{\alpha=1}^{16}H_{ij,\alpha}(NQ_3)_\alpha.
+}
+\tag{S3}
+\]
+
+These are eighty complete coefficientwise degree-five identities. They
+are identities on all real amplitudes, not a classification inferred from
+sampled points. After quotienting the ten controlled monomial products,
+172 degree-five monomials remain. The 696 columns `t0*cubic` and
+`(NQ3)*quadratic` have rank 144; adjoining all eighty `c_i R4,j` adds no
+rank. The checker lifts the solutions back to the complete polynomial
+ring and verifies (S3), including every removed source-product term.
+The degree-five multipliers do not add a new action or correlation order.
+
+At a site with c nonzero, choose i with `|c_i|=rho_x=max_k|c_k|`.
+Divide (S3) by c_i only **at that site**. The degree-two and degree-three
+coefficient bounds give factors rho_x and rho_x^2 respectively. The real
+source bounds (R3)-(R4) give
+
+\[
+|t_0|\le(110/3)\|Q_2\|_1,\qquad
+\sum_{(r,s)\in P}|a_rb_s|\le(140/3)\|Q_2\|_1.
+\]
+
+Combining H with N before taking the joint-row column norm gives the
+constant 39450673/97020. Weighting the cubic source multipliers by the
+preceding two bounds gives 3526141/99. If c=0, R4=0. Thus (S1) first
+holds pointwise with rho_x, then after summing absolute values with rho.
+The dominant-coordinate choice requires no regularity, no coherent choice
+between sites and no differentiation. All norms remain unweighted.
+
+This explains why a direct unsaturated tensor-multiplier search is
+unnecessarily restrictive: a bounded pointwise rational cover of amplitude
+space suffices. It also avoids the positive-production obstruction, whose
+two witness amplitudes have zero quartic readout.
+
+### Correlation memory and the full-field boundary
+
+The laws in (R8)-(R9) remain valid. Their **averaged** cubic gates are zero,
+but the gate `NQ3` at their visible atoms is nonzero. Estimate (S1) uses
+the absolute sum of the actual pointwise residuals. Replacing it by the
+absolute value of their signed averages would be false. First/second
+moments still do not reconstruct the observable.
+
+The previous reduced estimate (R7) leaves six spatial cross-phase products.
+Equation (S1) now controls their actual quartic **metric contribution** in
+the full-eight identity first-slow reduction. It does not bound the full
+varying-coframe response by silently identifying Q2 with tau or R3 with EK.
+The first remaining theorem is the uniform pullback of this observable
+bound through the exact shared-link equations and the designated comparator,
+including the normal-graph remainder and every coframe/adjoint shift.
+At rho=O(h), a per-site O(rho6) remainder still has normalized raw size O(1).
+It cannot be dropped. The exact matrix-link memory of degree at most four
+already includes that effect without truncating logarithmic coordinates.
+
+Validation: the checker reconstructs all eighty rational identities and
+their coefficient norms, verifies every full-eight transport cancellation,
+checks the visible atom, rejects a mutated coefficient and deletion of the
+source contribution, and checks the pointwise and absolute-sum bound on
+an unrestricted 81-site full-eight field with temporal and spatial forward
+differences. The coefficient identities prove arbitrary-grid validity;
+the finite replay checks the implementation.
+
+Scoped verdict:
+`FULL8-FROZEN-QUARTIC-READOUT-CONTROLLED-BY-REAL-JOINT-GATES`.
+The original fixed-source/nonconstant-background task remains
+`PARTIAL / OPEN`, Draft / `IN_PROGRESS`.
+
+Replay:
+
+```sh
+python 02_REGISTRY/research/certificates/a4d_quartic_joint_transport_syzygy_check.py
+```
+
+## 15. Uniform C5 sources close the fixed fast part of the full response
+
+This statement concerns the actual response, not a frozen jet. Let
+`rho_sm,h(y)` be the smooth ten-slot normalized response of the prescribed
+#216 comparator, and suppose its C5 seminorms are uniformly bounded. This
+is supplied, under that owner's smooth-realization hypotheses, by its
+asymptotic construction in every fixed smooth seminorm. Let the source
+interpolants `tau_h` be uniformly C5; one fixed smooth `tau` is included.
+For every exact source root, independently of its connection regularity,
+
+\[
+R_h(x):=h^{-2}(\Xi(Q_h,K_h)-\Xi(Q_h,K_h^{sm}))(x)
+       = f_h(hx),\qquad f_h=\tau_h-\rho_{sm,h}.
+\tag{F1}
+\]
+
+Choose any fixed smooth periodic Fourier multiplier `chi(theta)` that is
+zero in a neighborhood of the zero lattice character. With the original
+unweighted owner sum and
+`M5=max_r sup_h,y sum_j |partial_r^5 f_h,j(y)|`,
+
+\[
+\boxed{\|\chi(T)R_h\|_{owner,1}\le C_\chi M_5h.}
+\tag{F2}
+\]
+
+In particular the unscaled fast response gap is `O(h3)=o(h2)`.
+All ten packed slots, including their existing off-diagonal dual convention,
+are retained. No Fourier restriction on the connection is imposed.
+
+Here is the proof with no lattice-size-dependent inverse. Put
+`d_r(theta)=exp(i theta_r)-1` and define
+
+\[
+b_r(\theta)=\frac{\chi(\theta)\overline{d_r(\theta)}^5}
+                 {\sum_s|d_s(\theta)|^{10}}.
+\]
+
+Extend `b_r` by zero near the zero character. These are smooth on the
+four-torus, their Fourier coefficients are absolutely summable, and
+`chi=sum_r b_r d_r^5` exactly. The finite-torus convolution kernel is the
+periodization of those coefficients, so
+
+\[
+\|b_r(T)\|_{\ell^1\to\ell^1}
+ \le\sum_{k\in\mathbb Z^4}|\widehat b_r(k)|,
+\tag{F3}
+\]
+
+uniformly in L. Five successive applications of the fundamental theorem
+of calculus give
+
+\[
+D_r^5 f_h(hx)=\int_{[0,h]^5}
+ \partial_r^5f_h(hx+(t_1+\cdots+t_5)e_r)\,dt_1\cdots dt_5.
+\]
+
+Thus `||D_r^5 f_h(h dot)||owner,1 <= L4 h5 M5 = h M5`.
+Apply (F3) and the exact factorization to obtain (F2), with
+`C_chi=sum_r sum_k |hat b_r(k)|`.
+
+This proves only the part selected by a **fixed** multiplier chi.
+The remaining `(I-chi(T))R_h` includes mesoscopic and macroscopic output,
+and products of fast links can contribute to it. There is no uniform
+claim for an h-dependent shrinking cutoff. The decomposition is an analysis
+tool; it changes neither the action nor the admissible class.
+
+For example the abstract response field `f_h=h4 e_23` is uniformly smooth,
+has zero eta-trace and zero fixed fast part, but its raw sum is one on
+every grid. It is not an A4D witness because no exact shared-link root is
+constructed. It proves that C5 regularity, fast suppression and a signed
+trace constraint alone cannot bound the remaining absolute sum.
+
+## 16. The fixed-source endpoint is a finite comparator-jet gate
+
+The #216 smooth-seminorm construction supplies an expansion through each
+fixed order. Write its first five normalized response coefficients as
+
+\[
+\rho_{sm,h}(y)=\rho_0(y)+h\rho_1(y)+h^2\rho_2(y)
+                 +h^3\rho_3(y)+h^4\rho_4(y)+O(h^5),
+\qquad \rho_0=-G[g]/2.
+\tag{J1}
+\]
+
+Assume one fixed smooth source tau and a nonempty subsequence of exact
+roots on this fixed background and with this comparator. By the exact
+source equation (F1), the desired raw normalized convergence holds on
+that subsequence **if and only if**
+
+\[
+\boxed{\tau=\rho_0,\qquad \rho_1=\rho_2=\rho_3=\rho_4=0.}
+\tag{J2}
+\]
+
+To prove necessity, let k be the first nonzero coefficient of
+`tau-rho_sm,h` among orders zero through four. Uniformity of (J1) and
+Riemann sums imply
+
+\[
+\lim_{h\to0}h^{4-k}\|R_h\|_{owner,1}
+ =\int_{\mathbb T^4}\|d_k(y)\|_{owner,1}\,dy>0,
+\tag{J3}
+\]
+
+where `d_0=tau-rho_0` and `d_k=-rho_k` for k>0. Therefore the raw gap
+diverges if k<4, and has a strictly positive finite limit if k=4.
+Conversely (J2) makes the per-site normalized difference O(h5), so its
+raw sum is O(h). This proves sufficiency. The proof retains absolute
+values and works on any refining rooted subsequence, including L in 4N.
+
+The gate is a consequence of the already declared topology and exact
+sampling. It is not a replacement source convention, a source-feasibility
+theorem or a NO-GO. In particular `tau=-G/2` alone proves only the order-zero
+condition. To close the original task positively, the full shared-link
+source-image theorem must force all of (J2) on every nonempty admissible
+fixed-source class. To close negatively, exhibit an exact admissible rooted
+subsequence for which one of these coefficients is nonzero. No such
+nonconstant-background witness is asserted here.
+
+## 17. Hostile pullback control: coframe-gradient channels cannot all be discarded
+
+The positive estimate (S1) cancels envelope transport in the frozen reduction.
+The following exact control tests its proposed direct coframe extension on
+the already owned two-shear coframe path. It does not construct a new lattice
+family or a prescribed-source witness.
+
+At one point put `S=I`, `B=E10+E21`, and use the local affine jet
+`S_eps(x)=I+eps*x_mu*B` for each physical direction mu. This is a local
+smooth jet; it is not asserted to be a globally periodic metric. First
+solve the complete zero-character background connection equation
+
+\[
+H(1)k=-f_{solder},\qquad \det H(1)=256.
+\tag{P1}
+\]
+
+For each owned quarter center insert
+`exp(eps*k_r) exp(delta*i^(sum x)*T_r(S_eps(x)))`, together with its
+conjugate for real amplitudes. Assemble the eps*delta coefficient from
+all outgoing and incoming literal plaquettes. This retains the derivative
+of the face weight, the derivative of the center generator at the actual
+link base, and the background connection transport. Apply the owned
+twenty-column normal elimination and its lower fourteen complex rows;
+let `U_mu` be the resulting 28 by 8 real subprincipal map.
+
+The checker verifies that the order-eps background Euler coefficient
+vanishes, that every frozen quarter center is in the full joint kernel,
+and that its four independently reconstructed G_mu matrices agree with
+the pinned owner. Thus U_mu is the combined first-gradient term, rather
+than one isolated derivative of a frame-dependent detector.
+
+With the sixteen-row N of (S2), the exact ranks are
+
+\[
+(\operatorname{rank}(NU_0),\operatorname{rank}(NU_1),
+ \operatorname{rank}(NU_2),\operatorname{rank}(NU_3))=(4,0,4,4).
+\tag{P2}
+\]
+
+For `mu=3`, the existing identity (S3) with coordinate i=1 and metric
+slot j=00 has, at `c=e_a1+e_b2`, the exact contraction
+
+\[
+Q_2(c)=0,\qquad
+\boxed{\sum_\alpha H_{1,00,\alpha}(c)(NU_3c)_\alpha
+       =-409/1980.}
+\tag{P3}
+\]
+
+The extra coframe term in these **particular** saved multipliers therefore
+cannot be replaced by a controlled quadratic source product: (P3) is
+nonzero on the real source-zero cone. Other covariant multipliers or a
+full-field estimate are not excluded by this control.
+
+A stronger quotient control clarifies why simply projecting out every
+such gradient term would lose the observable. The real span of the columns
+of all four G_mu and all four U_mu has rank twenty. Its common left
+annihilator `N_ext` has eight rows. At both real atoms
+`c=e_a1+e_b2` and `c=e_a1+e_b3`,
+
+\[
+Q_2(c)=0,\qquad N_{ext}Q_3(c)=0,\qquad R_4(c)\ne0.
+\tag{P4}
+\]
+
+Consequently no bound of the form (S1) using only this extended projected
+gate and Q2 can hold for all real c. Multiplying those vanishing gates by
+additional polynomial coefficients or saturating by a nonzero amplitude
+coordinate cannot recover the nonzero readout. This excludes one linear
+detector that removes **all four** gradient-direction maps simultaneously;
+it does not exclude a detector depending on the actual coframe jet or a
+nonlinear full shared-link estimate.
+
+These atoms have nonzero `NQ3`, and are not exact joint roots. For mu=3,
+the real source-zero kernel of NU3 also contains `e_a1+e_b3` and
+`-e_a3+e_b1`, with
+`R4=(1/16,0,-1/8,0,0,0,0,1/16,0,0)` and nonzero NQ3. These facts prevent
+any promotion of the control to a fixed-source NO-GO. The exact physical
+equations retain the cubic gates and the coframe channels together.
+
+The remaining proof must control their actual observable contribution
+on the realizable shared-link/source set, rather than erase it before
+imposing those equations. The original task remains `PARTIAL / OPEN`.
+
+Replay and explicit local jets:
+
+```sh
+python 02_REGISTRY/research/certificates/a4d_two_shear_subprincipal_pullback_check.py
+```
+
+Local validation of Sections 14–17: both new pinned checkers pass, including
+the independent literal coframe-gradient replay (46.6 seconds). Repository
+architecture, generated views, active work, agent protocol, claim-strength,
+formalization debt, certificate freshness, actual Draft PR contract, Python
+compilation and whitespace checks pass. Input ac022ee completed D0 guards
+run 37140352047 successfully. New-head CI is reported separately.

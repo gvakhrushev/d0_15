@@ -82,6 +82,37 @@ metric means; those data cannot replace fourth-order response memory.
 The remaining estimate must control these observable correlations through
 the exact shared-link quartic equations, varying coframe and comparator.
 
+[Section 14](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md#14-the-full-eight-reduced-quartic-readout-has-a-pointwise-source-bound)
+now eliminates those six products from the full-eight **reduced observable
+bound**: all ten quartic metric slots satisfy
+`||R4||raw <= 407 rho ||R3||raw + 35618 rho^2 ||Q2||raw`.
+Eighty saturated rational identities and a common sixteen-row annihilator
+remove every spatial and temporal transport column pointwise. No signed
+summation or temporal-derivative estimate is needed. This controls the
+observable rather than all invisible mixing moments. The remaining theorem
+is its uniform pullback through the exact variable-coframe shared-link
+system, retaining the normal-graph remainder; an O(h6) local remainder is
+still only O(1) after the required raw normalization.
+
+[Section 15](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md#15-uniform-c5-sources-close-the-fixed-fast-part-of-the-full-response)
+proves the actual full-response raw O(h) bound for every fixed fast Fourier
+multiplier under uniform C5 sources and comparator seminorms. It leaves the
+slow source-visible correlations. [Section 16](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md#16-the-fixed-source-endpoint-is-a-finite-comparator-jet-gate)
+proves the fixed-source endpoint: on a nonempty exact-root subsequence,
+raw convergence is equivalent to `tau=rho0` and the first four smooth
+comparator bias coefficients vanishing. Neither statement asserts full
+source feasibility or changes the parent PARTIAL / OPEN verdict.
+
+[Section 17](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md#17-hostile-pullback-control-coframe-gradient-channels-cannot-all-be-discarded)
+checks the direct coframe extension on the existing two-shear path using
+all literal incidences and the stationary first-order background. The saved
+readout multipliers leave the exact coefficient `-409/1980` on a real
+Q2-zero atom. Projecting out all four first-gradient maps loses the readout
+entirely: the extended gates vanish while R4,00=1/16. Those atoms have
+nonzero ordinary cubic gates and are not exact roots. This is a hostile
+control of the proposed proof, not a parent NO-GO. A full observable estimate
+must retain and control these coframe channels on the realizable source image.
+
 The [exact weak-source obstruction](A4D_SOURCE_IMAGE_COLLAPSE.md#10-scoped-obstruction-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm)
 is retained with its checker and pinned results. Its prescribed source
 `tau_h=h^4*sigma*m` converges to zero in C3, and exact joint fields have raw

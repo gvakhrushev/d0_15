@@ -1,13 +1,13 @@
 # EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE
 
-Class: `EXPENSIVE`  
-State on registration: `PLANNED`  
+Class: `EXPENSIVE`
+State on registration: `PLANNED`
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
-Repository: `gvakhrushev/d0_15`  
-Base: `main`  
-Branch: `exp/a4d-joint-response-decoupling-microstructure`  
-Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`  
+Repository: `gvakhrushev/d0_15`
+Base: `main`
+Branch: `exp/a4d-joint-response-decoupling-microstructure`
+Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`
 Execution: `GitHub-first`
 
 ## Why delegated
