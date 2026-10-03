@@ -34,6 +34,19 @@ source image in these hypotheses. It includes noncommuting shared links and
 the full declared admissible class. Further carrier or amplitude certificates,
 a replacement topology, or a weaker source convention do not close it.
 
+The [all-role source/current analysis](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md)
+now gives the exact full-field identity `E_left=d_L^*A+T_C`: the even face
+momentum is antisymmetric, while the odd curvature momentum is symmetric
+under face reversal. Both and every adjoint transport are retained. It also
+proves that the local twenty-dimensional zero-solder-current curvature
+kernel is not invariant under physical adjoint transport. Ward-compatible
+first transfers populate all nine trace-free metric directions at every
+nondegenerate coframe. This is a local carrier theorem, not an exact stationary
+shared-link witness or a task NO-GO. It identifies the remaining obligation
+as a uniform joint estimate on latent-to-visible transport and its quartic
+correlations. The old identity-quarter all-direction first-slow result is
+quarantined for wrong Euler placement and cannot supply that estimate.
+
 The [exact weak-source obstruction](A4D_SOURCE_IMAGE_COLLAPSE.md#10-scoped-obstruction-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm)
 is retained with its checker and pinned results. Its prescribed source
 `tau_h=h^4*sigma*m` converges to zero in C3, and exact joint fields have raw
