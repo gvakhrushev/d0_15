@@ -1,0 +1,11 @@
+{
+  "schema": "a4d-y-boost-cayley-composition-v1",
+  "owner_generator": "B=K1+K2+K3",
+  "submitted_extra_generator": "W=K1+K2+K3",
+  "effective_parameter": "t=4*(kappa-d)/(4-3*d*kappa)",
+  "composition_identity": "C_B(-d) C_B(kappa)=C_B(t)",
+  "coefficient_identity": "submitted c(d,kappa)=(3*t^2+4)/(3*t^2-4)",
+  "discriminant": "-48*(3*d^2-4)^2",
+  "conclusion": "under the current owner definitions this is an exact reparameterization of the existing one-dimensional B Cayley subgroup, not an additional independent boost direction",
+  "scope_fence": "if a different generator was intended for C_B or W, it must be specified explicitly and this audit must be rerun"
+}

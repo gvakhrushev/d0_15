@@ -1,0 +1,26 @@
+{
+  "schema": "a4d-y-curved-joint-folded-quantitative-isolation-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-FOLDED-EXPLICIT-LOCAL-GAP",
+  "input_owners": [
+    "a4d_y_curved_joint_rational_stencil.py",
+    "a4d_y_curved_joint_torus_lipschitz_results.json",
+    "a4d_y_curved_joint_folded_isolation_results.json"
+  ],
+  "folded_characters": [
+    "1",
+    "i",
+    "-1",
+    "-i"
+  ],
+  "angular_metric": "delta=sum_j |theta_j-theta_j^*| with a local real lift",
+  "radius": "1/100000000",
+  "reduced_residual_bound": "||F(theta)||_2 > delta/20 for 0<delta<=radius",
+  "full_joint_bound": "sigma_min Q(theta) > delta/20150 for 0<delta<=radius",
+  "derivative_change_bound": "1160972",
+  "residual_row_frobenius_squared_at_center": "340/49",
+  "scope_fence": [
+    "the four explicit local neighborhoods only",
+    "not an all-torus rank classification or a compact-complement gap",
+    "not a nonlinear reduced-center equation or refinement-uniform response theorem"
+  ]
+}

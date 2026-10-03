@@ -1,0 +1,109 @@
+{
+  "schema": "a4d-fixed-cosine-critical-value-source-probe-v1",
+  "certificate_inputs": {
+    "a4d_identity_quarter_nonlinear_response_check.py": "0e5b06637359956f093e077f6172a2f4614983a3",
+    "a4d_designated_full_gap_check.py": "baf90c99a1a32a4858c900d2f35d3e3793be62f4"
+  },
+  "analytic_proof_owner": "02_REGISTRY/research/A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md",
+  "status": "ALL_EXACT_INGREDIENT_CHECKS_PASS; FIELD_DERIVATION_THEOREM_PROVED_SEPARATELY",
+  "einstein": {
+    "Q": "diag(1,-1,-f^2,-f^2)",
+    "R_standard": "2*(2*f*q + p**2)/f**2",
+    "tau_raw": [
+      "-f*q - p**2/2",
+      "0",
+      "0",
+      "0",
+      "p**2/2",
+      "0",
+      "0",
+      "q/(2*f)",
+      "0",
+      "q/(2*f)"
+    ],
+    "trace": "-2*f*q - p**2",
+    "source_convention": "density f^2 times one-half raised standard Einstein tensor, packed as the ten Gram covector slots; this is the owner reconstructed -G/2 convention"
+  },
+  "homogeneity": {
+    "symbolic_warp_face_matrix_entries_checked": 96,
+    "odd_curvature_pairing": "all face weights and all ten Gram derivatives are odd under eta-adjoint; pairings depend exactly on the owned odd plaquette curvature",
+    "all_coframes_proof": "each wedge weight is homogeneous degree two in S; Gram radial lift delta Q=Q gives delta S=S/2",
+    "exact_identity": "A_h(S,K)=sum_x Q_x:pack Xi_x before imposing E_K",
+    "hostile_offdiagonal_reweighting": "fails at general rational solder"
+  },
+  "sampling": {
+    "harmonic_trace_over_pi_squared": "6*cos_2theta*epsilon**2 - 8*cos_theta*epsilon**2 - 8*cos_theta*epsilon + 2*epsilon**2",
+    "general_amplitude_constant": "2*epsilon^2, nonzero for every nonzero rational epsilon",
+    "all_L_proof": "L>=3, z primitive L-th root: sum z^x=sum z^(2x)=0 by geometric series; conjugate sums also vanish",
+    "one_line_sum": "pi^2*L/1250",
+    "full_torus_sum": "pi^2*L^4/1250",
+    "exact_joint_action_required": "pi^2*L^2/1250",
+    "checks": [
+      {
+        "L": 3,
+        "sum_trace_over_pi_squared": "3/1250"
+      },
+      {
+        "L": 4,
+        "sum_trace_over_pi_squared": "2/625"
+      },
+      {
+        "L": 8,
+        "sum_trace_over_pi_squared": "4/625"
+      },
+      {
+        "L": 12,
+        "sum_trace_over_pi_squared": "6/625"
+      },
+      {
+        "L": 16,
+        "sum_trace_over_pi_squared": "8/625"
+      },
+      {
+        "L": 20,
+        "sum_trace_over_pi_squared": "2/125"
+      },
+      {
+        "L": 28,
+        "sum_trace_over_pi_squared": "14/625"
+      },
+      {
+        "L": 64,
+        "sum_trace_over_pi_squared": "32/625"
+      }
+    ],
+    "constant_warp_control": "epsilon=0 yields zero; the transcendental-action obstruction disappears",
+    "algebraic_frequency_control": "replace the pi^2 factor in this proposed source by any real algebraic lambda: the required action becomes algebraic; this arithmetic proof no longer excludes it, and does not thereby prove existence"
+  },
+  "controls": {
+    "symbolic_rational_noncommuting_Cayley_tangent": "U^-1*dU/dt is exactly in the span of all six physical generators",
+    "stationary_polynomial_control": {
+      "D": "4-3*t^2",
+      "full_EK_numerator": "zero coefficientwise",
+      "metric_numerator": "4*t*D^3*sigma_p*(0,0,0,0,-1,1,1,-1,1,-1)",
+      "scalar_nonzero_coefficients": [
+        [
+          1,
+          256
+        ],
+        [
+          3,
+          -576
+        ],
+        [
+          5,
+          432
+        ],
+        [
+          7,
+          -108
+        ]
+      ]
+    },
+    "boost_trace_control": "sitewise traces are nonzero, but the full stationary action/trace is exactly zero after the four-phase sum",
+    "nonclaim": "the lemma does not imply algebraic link entries or individual metric response slots",
+    "EK_only_warp_control": "owned exact designated normal rescue remains possible: its output source is h-dependent and its stationary action is algebraic, while approximating the continuum action asymptotically; exact joint equality to the preset pi^2 trace is excluded"
+  },
+  "conclusion": "No real full-link solution of E_K=0 and Xi=h^2*tau_raw exists on any L>=3 cosine-warp grid for the predeclared owner continuum source; no chart, amplitude, regularity, or normal-graph assumptions",
+  "scope": "fixed-source feasibility obstruction on one smooth nonconstant background, not a response-decoupling NO-GO or a general source-image closure"
+}

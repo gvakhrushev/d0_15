@@ -28,7 +28,7 @@
       "id": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "BLOCKED",
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],

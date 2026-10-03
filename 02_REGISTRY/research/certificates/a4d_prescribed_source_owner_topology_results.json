@@ -1,0 +1,55 @@
+{
+  "schema": "a4d-prescribed-source-owner-topology-v1",
+  "input_head": "162fe5edd07586dfdec060c8c99f335d806bd067",
+  "arithmetic": "exact polynomial quotient c^2=1+3*z^2 and complete degree-eight owned Euler numerator",
+  "source_first_inverse": {
+    "source_to_response_input": "z=h^2*h^4=h^6",
+    "positive_algebraic_root": "c=sqrt(1+3*z^2)",
+    "link": "U=I+z*B+(c-1)*B^2/3",
+    "cayley_parameter": "t=2*z/(1+c)",
+    "cayley_denominator": "4-3*t^2=8/(1+c)>0",
+    "complete_connection_Euler": "zero",
+    "complete_metric_Euler": "z*sigma_p*m",
+    "nongauge_curvature": "(U-U^(-1))/2=z*B != 0 for every h>0",
+    "component": "SO^+(1,3), connected to I along z in [0,h^6]",
+    "logarithm": "log(U)=asinh(sqrt(3)*z)*B/sqrt(3)=O(h^6)"
+  },
+  "prescribed_source_and_norm": {
+    "background": "Q_h=eta, fixed smooth nondegenerate background",
+    "designated_comparator": "K_h^sm=I, Xi(K_h^sm)=0 exactly",
+    "prescribed_source_law": "tau_h(x)=h^4*sigma_(sum(x) mod 4)*m",
+    "continuum_source_limit": "tau=0",
+    "smooth_interpolant": "h^4*(cos(pi*sum(y)/(2*h))+sin(pi*sum(y)/(2*h)))*m",
+    "derivative_bound_order_k": "sqrt(2)*(pi/2)^k*h^(4-k), componentwise",
+    "regularity": "tau_h -> 0 in C^3; uniformly C^4; not uniformly C^5",
+    "joint_equations": "E_K=0 and Xi=h^2*tau_h exactly",
+    "raw_owner_norm_gap": "h^(-2)*sum_x sum_j |Xi_j-Xi_j^sm|=6 for every L in 4N",
+    "volume_normalized_owner_gap": "6*h^4 -> 0",
+    "finite_multiplicity_controls": [
+      {
+        "L": 4,
+        "sites_per_phase": 64,
+        "raw_gap": "6"
+      },
+      {
+        "L": 8,
+        "sites_per_phase": 1024,
+        "raw_gap": "6"
+      },
+      {
+        "L": 12,
+        "sites_per_phase": 5184,
+        "raw_gap": "6"
+      }
+    ]
+  },
+  "verdict": "WEAK-SOURCE-RAW-OWNER-RESPONSE-DECOUPLING-NOGO",
+  "scope": "raw owner l1; independently prescribed mesh-dependent sources converging to a smooth limit, even in C^3",
+  "exclusions": [
+    "not exact samples of one fixed smooth source",
+    "not the exact discrete vacuum tau_h=0",
+    "not a nonzero continuum stress or a weak-response counterexample",
+    "not a genuinely curved-background witness",
+    "does not decide the stronger fixed-smooth-source formulation"
+  ]
+}

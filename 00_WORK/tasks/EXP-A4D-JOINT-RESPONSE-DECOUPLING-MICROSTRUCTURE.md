@@ -1,13 +1,13 @@
 # EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE
 
-Class: `EXPENSIVE`  
-State on registration: `PLANNED`  
+Class: `EXPENSIVE`
+State on registration: `PLANNED`
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
-Repository: `gvakhrushev/d0_15`  
-Base: `main`  
-Branch: `exp/a4d-joint-response-decoupling-microstructure`  
-Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`  
+Repository: `gvakhrushev/d0_15`
+Base: `main`
+Branch: `exp/a4d-joint-response-decoupling-microstructure`
+Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`
 Execution: `GitHub-first`
 
 ## Why delegated
@@ -31,6 +31,21 @@ continues to hold when `K_h` contains curved, nongauge, grid-scale microstructur
 The first page of the memo must make this expression well-typed: specify the finite-site metric-response object, its component convention, the spatial/testing norm or topology in which the limit is asserted, the normalization, the smooth-branch residual/source convention, and all uniformity hypotheses. Do not hide these choices behind pointwise notation.
 
 A comparison of two exact solutions satisfying the identical prescribed metric-source equation makes the displayed difference zero by substitution. Record this as an exact tautological control, not as the requested scientific theorem. The research target is a non-tautological response-decoupling statement relative to the #216 smooth comparison branch, or a counterexample under the same explicitly declared source convention. Keep the geometric Euler response and any matter/source term distinct throughout.
+
+## Fixed source and nonconstant background scope (2026-10-03)
+
+The theory target retains one fixed smooth nondegenerate nonconstant background
+`g` and one fixed smooth source `tau`, both specified before the connection.
+Their lattice data are the declared exact sampling maps; the source may not
+be replaced by a shrinking grid-scale source sequence to obtain a terminal.
+A positive theorem for the full admissible class under uniform C5 source
+bounds would also cover this source condition. The original physical
+unweighted owner norm and the designated #216 comparator are retained.
+
+The exact flat witness at `530a5132`, with `tau_h=h^4*sigma*m` and raw gap 6,
+remains a valid weaker-source topology obstruction. Its interpolants converge
+in C3 but lack uniform C5 bounds. It does not close this task, justify task
+retirement, or imply a physical continuum NO-GO. Do not resume a family census.
 
 ## Required analysis
 
