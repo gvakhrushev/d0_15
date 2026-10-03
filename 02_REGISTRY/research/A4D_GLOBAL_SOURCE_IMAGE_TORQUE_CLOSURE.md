@@ -444,3 +444,179 @@ Draft PR contract; certificate artifact freshness and semantic mutation
 controls; Python compilation and whitespace checks all pass. Lean sources
 are unchanged, so no full Lean rebuild was needed for this research increment.
 Remote current-head CI remains separately reported.
+
+## 11. Shared-link quadratic completion: a slow interaction remains visible
+
+Input head for this increment: `135d6a74cc6318bb9c4bcca0c52f6203b19f8a3a`.
+Certificate: `certificates/a4d_joint_quadratic_beat_transfer_check.py`, with
+its pinned `_results.json`. This calculation uses the already owned physical
+circle kernels. It neither searches for additional fibres nor classifies
+nonlinear connection families.
+
+Section 6 concerned an arbitrary local curvature carrier. Here the inputs
+are actual full-lattice **linear joint modes**, and every shared-link
+connection equation is retained in their quadratic completion. The result
+is a nonzero slow metric interaction after that completion. It closes the
+question whether imposing quadratic connection stationarity alone erases
+this transfer: it does not. The additional smooth-source constraints still
+matter, and the packet below fails a fast-source gate.
+
+### Two owned joint modes and their slow output
+
+Work at the identity solder. Write `H(lambda)` for the physical connection
+Hessian, with the literal input-minus-output incidence convention, and
+`C(lambda)` for the ten-slot linear metric response. Thus `H=A^T` in the
+older `flat_symbols` convention; replacing H by A is invalid. Set
+
+\[
+T_1=K_2-K_3+J_{23},\quad T_2=K_1-K_3+J_{13},\quad
+T_3=K_1-K_2+J_{12}.
+\]
+
+The first owned circle vector has role components
+
+\[
+v_1(a)=((i-a)K_1,(i-a)K_1,(1-i)T_2,(1-i)T_3).
+\]
+
+The second is its simultaneous internal/role permutation `1 <-> 2`:
+
+\[
+v_2(a)=((i-a)K_2,(1-i)T_1,(i-a)K_2,-(1-i)T_3).
+\]
+
+For a unit t near 1, use the characters
+
+\[
+\lambda_1=(it,it,i,i),\quad\lambda_2=(it,i,it,i),\qquad
+u(x)=\lambda_1^xv_1(it),\quad
+v(x)=\overline{\lambda_2^xv_2(it)}.
+\]
+
+Both satisfy all 24 linear connection and all ten linear metric equations.
+Their mixed character is
+
+\[
+z=\lambda_1\overline{\lambda_2}=(1,t,t^{-1},1).
+\]
+
+Let f(t) and q(t) be the coefficients of `epsilon*delta` in the literal
+right-trivialized E_K and packed Xi for the link logs
+`epsilon*u+delta*v`. Differentiate every direct and inverse face factor and
+scatter its covector to the actual link base. The certificate does this
+independently of the symbol assembly and proves the linear matches
+coefficientwise in Laurent t, rather than by a rank census.
+
+Add the log correction `epsilon*delta*z^x*w(t)`. Its connection equation
+and metric response are
+
+\[
+H(z)w+f=0,\qquad S(t)=q(t)+C(z)w(t).
+\tag{Q1}
+\]
+
+Since `det H(1,1,1,1)=256`, w is uniquely defined and regular near t=1.
+The checker solves (Q1) in `QQ(i)(t)` and verifies every one of its 24 rows
+as an exact rational identity. Two particularly simple corrected slots are
+
+\[
+\boxed{S_{11}(t)=i(t-1)/t,\qquad S_{22}(t)=i(t-1).}
+\tag{Q2}
+\]
+
+In the original packed-slot order, the full first derivative is
+
+\[
+S(1)=0,\qquad
+S'(1)=(0,1-i,-1-i,2i,i,0,0,i,0,-2i).
+\tag{Q3}
+\]
+
+Its metric trace vanishes. It is not the zero source. Omitting w changes
+the response, so (Q2) already includes the actual quadratic connection
+range solve. On `t=exp(i*kappa)`, these diagonal slots have nonzero terms
+linear in kappa. The exact zero mean stress of one circle mode therefore
+does **not** give higher-order suppression of interactions between circles.
+
+### Full quadratic connection stationarity, and the source limitation
+
+Adjoin the conjugates of both inputs to obtain real Lorentz link logs.
+Every quadratic product character of these four modes approaches either
+`(1,1,1,1)` or `(-1,-1,-1,-1)` as t approaches 1. Both physical Hessians
+have determinant 256. By continuity, all these finitely many output fibres
+have bounded inverses in one fixed neighbourhood. Solve each Fourier
+forcing there. This constructs a real second-order correction with
+**all** quadratic shared-link connection rows zero; its z coefficient is
+the w of (Q1). This is an analytic finite-convolution argument using two
+owned IR matrices, not a claimed gap over all characters. At higher orders
+output frequencies return to the resonant carriers, and this argument
+supplies no corresponding inverse or nonlinear compatibility theorem.
+
+Connection stationarity alone is insufficient. The first input already
+has a nonzero fast self-source. At t=1 its real part is the four-phase
+profile with roles 2 and 3 equal to `(1,1,-1,-1)*T_r`. After the complete
+second-order connection correction its phase-pi metric coefficient is
+
+\[
+b=(2,-2,-1,-1,0,1,1,0,0,0).
+\tag{Q4}
+\]
+
+The new literal mixed-jet calculation agrees exactly with the independent
+existing four-phase Euler assembly on (Q4). For t near 1 the positive
+self-product character is `(-t^2,-t^2,-1,-1)`, and its response remains
+nonzero by continuity. On fine meshes this fast character is distinct
+from the slow z and from the other quadratic products, so its coefficient
+cannot be removed by a correction at z. A fixed smooth source, or uniform
+C5 source bounds, requires its fast Fourier coefficient to be O(h5) or
+smaller after dividing Xi by h2. With leading link amplitude h, the
+coefficient in (Q4) instead has order one in that rescaled source. Thus
+this chosen leading packet cannot be used as a fixed-source witness.
+Additional leading modes could change the fast-source algebra; no general
+classification or exclusion of those combinations is claimed here.
+
+### Raw norm and the precise remaining obligation
+
+On `L in 4N`, choose `t=exp(2*pi*i/L)`. All input characters are exact
+lattice characters, and z is a macroscopic frequency. For the **quadratic
+coefficient alone**, the Fourier inequality in the original owner norm
+gives, at log amplitude epsilon,
+
+\[
+h^{-2}\|\Xi^{[2]}\|_{\mathrm{owner},1}
+\ \ge\ \epsilon^2h^{-2}L^4|t-1|.
+\tag{Q5}
+\]
+
+At epsilon=h this benchmark grows like `2*pi*L^3`, while its
+volume-normalized counterpart tends to zero. Equation (Q5) is not a
+bound on the response of an exact root: at that simultaneous scaling the
+cubic amplitude term h3 can have the same size as this slow quadratic
+term h2*(t-1). It must be retained, together with the quartic correlations.
+Moreover (Q4) already fails the required source convention. Neither this
+jet nor (Q5) is a parent NO-GO, on a nonconstant background or otherwise.
+
+The first missing estimate is now more concrete: **use the full fast metric
+source constraints and shared-link stationarity to control these corrected
+slow interaction moments, their cubic/quartic completions, and their
+transport through the fixed varying coframe, in the raw owner norm.**
+Single-mode stress nullity, Ward trace cancellation, or the quadratic
+connection equation separately cannot supply it. The result remains
+`PARTIAL / OPEN`, Draft / `IN_PROGRESS`.
+
+Replay:
+
+```sh
+python 02_REGISTRY/research/certificates/a4d_joint_quadratic_beat_transfer_check.py
+```
+
+Scoped verdict: `QUADRATIC-STATIONARY-BEAT-SOURCE-NONZERO`.
+The exact fast-source negative control is part of the certificate and is
+required when interpreting this verdict.
+
+Validation for this increment: the new pinned mixed-jet checker and the
+retained all-role current/transport checker pass, including their independent
+Euler and wrong-placement controls. Canonical repository, generated views,
+work, agent-protocol, claim-strength, formalization-debt, actual Draft PR
+contract, certificate artifact freshness, compilation and whitespace checks
+pass locally. No Lean source or task lifecycle state changes.

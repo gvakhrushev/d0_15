@@ -47,6 +47,15 @@ as a uniform joint estimate on latent-to-visible transport and its quartic
 correlations. The old identity-quarter all-direction first-slow result is
 quarantined for wrong Euler placement and cannot supply that estimate.
 
+[Section 11 of that analysis](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md#11-shared-link-quadratic-completion-a-slow-interaction-remains-visible)
+now completes an interaction of two owned linear joint modes in every
+quadratic shared-link connection row. Its corrected slow metric slots are
+exactly `S11=i*(t-1)/t` and `S22=i*(t-1)`: single-mode zero mean stress does
+not erase the coupled moment. The same packet has a certified nonzero fast
+source, so it is not a fixed-source witness. The missing uniform estimate
+must use all fast metric source constraints together with stationary
+cubic/quartic moment completion and varying-coframe transport.
+
 The [exact weak-source obstruction](A4D_SOURCE_IMAGE_COLLAPSE.md#10-scoped-obstruction-prescribed-smooth-limit-sources-defeat-the-raw-owner-norm)
 is retained with its checker and pinned results. Its prescribed source
 `tau_h=h^4*sigma*m` converges to zero in C3, and exact joint fields have raw
