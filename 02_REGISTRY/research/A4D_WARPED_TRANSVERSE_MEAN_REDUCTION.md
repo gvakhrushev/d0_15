@@ -460,3 +460,28 @@ the prescribed continuum source. On that fixed pair the admissible set
 of (13) is empty, so (14) supplies no nonvacuous closure. The new theorem
 retains the original action, sampling, physical Lorentz carrier and norm;
 it does not demand a transverse inverse or a microstructure classification.
+
+## 9. Positive closure of (14) on all uniformly regular exact fields
+
+The [canonical constitutive theorem](A4D_CANONICAL_CONSTITUTIVE_GERM_SYNTHESIS.md)
+now proves the missing response estimate on the explicitly regular part of
+the full four-dimensional class. If the physical total log links have
+uniformly bounded C7 extensions in the fixed small chart, all exact E_K
+rows imply the original raw gap to the smooth comparator is O(h).
+The owned exact K_h^* has super-algebraically close smooth extensions.
+The triangle inequality therefore gives
+
+\[
+h^{-2}\|\Xi(K_h)-\Xi(K_h^*)\|_{\mathrm{owner},1}=O(h).
+\]
+
+For transverse-invariant joint sources, the exact identity (11) identifies
+this difference with R_h(v_h); hence (14) is proved on this whole regular
+subset. Uniform bounds in every smooth seminorm strengthen the conclusion
+to O(h-infinity). No power law for the amplitude of v_h, formal expansion
+of the unknown field, or transverse UV inverse is assumed.
+
+The estimate does not prove that all admissible microstructure has such
+extensions, and it cannot create roots for the infeasible continuum source
+of Section 8. The exact connection-only regular class is nonempty by the
+owned invariant rescue. The full parent task remains PARTIAL / OPEN.

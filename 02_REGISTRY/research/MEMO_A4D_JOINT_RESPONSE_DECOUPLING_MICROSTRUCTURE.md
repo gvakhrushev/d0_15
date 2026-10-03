@@ -4,6 +4,28 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `BLOCKED`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [canonical constitutive synthesis](A4D_CANONICAL_CONSTITUTIVE_GERM_SYNTHESIS.md)
+now proves a **positive regular-sector theorem** for the unchanged full
+connection equations. In a fixed sufficiently small log chart, every
+exact mesh-stationary family with uniformly bounded C7 extensions satisfies
+$h^{-2}\|\Xi-\Xi_{\rm sm}\|_{\rm owner,1}=O(h)$.
+Uniform bounds in every smooth seminorm give O(h-infinity). Neither a power
+expansion of the unknown connection nor an inverse of the full UV operator
+is assumed. A sampled-zero interpolation estimate and a finite
+derivative-losing inverse identity prove the bound.
+The already owned exact curved warped rescue supplies a nonempty exact
+example in this class.
+
+The same assembly proves uniqueness of the complete formal stationary
+germ, its variational constitutive source, and its canonical leading
+normal-J2 Einstein readout. The recurrence determines every structural
+correction before an arbitrary finite candidate is selected. Observable
+canonicity is applied after nonemptiness and constant readout are proved.
+Native tower/condensed/phi/pi0 owners have been audited at their actual
+types; they do not yet provide a state-to-response-germ transfer retaining
+response-null UV fibers. The full parent class is not restricted to C7,
+and the parent remains PARTIAL / OPEN, Draft / BLOCKED.
+
 The [fixed-source arithmetic theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md)
 now settles the requested existence attack on the fixed cosine warp
 `f=1+(1-cos(2*pi*y1))/50`. There is **no real full-link exact joint solution**
@@ -57,8 +79,13 @@ and produce an admissible exact sequence with a nonzero normalized gap.
 
 The first missing theorem is one refinement-uniform bound on the realizable
 source image in these hypotheses. It includes noncommuting shared links and
-the full declared admissible class. Further carrier or amplitude certificates,
-a replacement topology, or a weaker source convention do not close it.
+the full declared admissible class, including UV fields without uniformly
+bounded C7 connection extensions. The new regular-sector theorem does not
+provide this full-class estimate. A revised native detector closure instead
+needs the independently proved response-fidelity/refinement interface stated
+in the synthesis; it cannot be silently substituted for this stronger task.
+Further carrier or amplitude certificates, a replacement topology, or a
+weaker source convention do not close the original target.
 
 The [all-role source/current analysis](A4D_GLOBAL_SOURCE_IMAGE_TORQUE_CLOSURE.md)
 now gives the exact full-field identity `E_left=d_L^*A+T_C`: the even face
