@@ -1,0 +1,70 @@
+{
+  "schema": "a4d-global-lorentz-fixed-source-v4-v1",
+  "input_head": "f317a3b842b2d10c5a3a381b6b03cb9850e77f66",
+  "certificate_sha256": "003af23e27984499d3689890651c0b9b0b2eeb74f469fd2656f47755240f0941",
+  "inputs_sha256": {
+    "a4d_identity_quarter_nonlinear_response_check.py": "f930d5d674b62f0c500b1aa1e28c1b3076a900899767d13b2dd2cd6a59142865",
+    "a4d_designated_full_gap_check.py": "fb76349e723ff532ef9b2222fd07cef5d7fa3e7e2b5d2c94b01ad4b056b8885d"
+  },
+  "arithmetic": "exact rationals; all actual face products and unrestricted derivatives",
+  "geometry": "f(y1)=1+(1-cos(2*pi*y1))/50; E=diag(1,1,f,f); g=E^T eta E",
+  "source": "one independently predeclared tau=0, exact on every mesh",
+  "fluxes": {
+    "(0, 1)": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "(0, 2)": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "(0, 3)": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "(1, 2)": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "(1, 3)": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "(2, 3)": [
+      1,
+      -1,
+      -1,
+      1
+    ]
+  },
+  "links": "U_r(x)=product_{s<r} P_sr^x_s; all matrices in proper-Lorentz V4",
+  "finite_replay": {
+    "L": 4,
+    "sites": 256,
+    "actual_plaquettes": 1536,
+    "shared_link_Euler_rows": 6144,
+    "unrestricted_solder_rows": 4096,
+    "Gram_metric_rows": 2560,
+    "nonidentity_links": 512,
+    "action": "0",
+    "E_K": "0",
+    "Xi": "0"
+  },
+  "all_mesh_proof": "even L; each individual face momentum and curvature are zero",
+  "holonomy": "trace 0; characteristic polynomial (z-1)^2*(z+1)^2; nongauge",
+  "continuum_gap": "h^4*(h^-2*||Xi-Xi_sm||_owner1) -> integral ||rho0||_packed1",
+  "strict_gap_lower_bound": "pi^2/2500 from the rho0_11 component",
+  "domain": "full finite proper-Lorentz nondegenerate configuration domain",
+  "excluded_domain": "identity Cayley and sufficiently small identity log chart; in particular log-O(h)",
+  "verdict": "FULL-LORENTZ-FIXED-CURVED-SOURCE-RESPONSE-NOGO; ORIGINAL-SMALL-CHART-TASK-OPEN"
+}

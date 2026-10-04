@@ -539,6 +539,14 @@ the same action-probe measurement fiber and different raw-response
 fibers. No curvature is declared gauge and no visible instantaneous
 response is set to zero by definition.
 
+The [full-Lorentz curved witness](A4D_GLOBAL_LORENTZ_FIXED_SOURCE_NOGO.md)
+supplies an exact boundary control outside (2): its prescribed source is
+zero on every mesh, while its metric has nonzero Einstein response and
+positive canonical action limit. The gauge-invariant involutive holonomy
+prevents a log-O(h) representative. An unrestricted physical-state transfer
+preserving instantaneous response is therefore false; the completed
+action-probe theorem is applied only to its stated preparation domain.
+
 This theorem proves a complete path
 
 \[

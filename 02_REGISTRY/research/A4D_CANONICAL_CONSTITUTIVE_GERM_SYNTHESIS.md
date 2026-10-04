@@ -395,6 +395,15 @@ action-probe outputs agree at a flat metric. This explicitly describes a
 coarser measured factor, rather than declaring #227 invisible in the
 original response topology.
 
+The [exact full-Lorentz witness](A4D_GLOBAL_LORENTZ_FIXED_SOURCE_NOGO.md)
+now rules out extending instantaneous-response fidelity to every state of
+the full nondegenerate Lorentz configuration domain. It has one fixed
+curved metric, one fixed smooth vacuum source and zero full Euler rows,
+but a nonzero continuum comparator gap. Its involutive plaquette spectrum
+excludes every sufficiently small identity chart, in every node gauge.
+Thus it coexists with the small-log positive construction and identifies
+the actual domain restriction an unrestricted native transfer would need.
+
 For the original fixed-source, unweighted owner theorem, the outstanding
 result remains a uniform comparator estimate on the full realizable source
 image, including UV fields without uniform C7 extensions. Constructible

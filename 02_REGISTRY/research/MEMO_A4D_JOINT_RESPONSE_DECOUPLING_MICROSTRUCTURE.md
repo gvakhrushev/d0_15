@@ -4,6 +4,21 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `BLOCKED`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [full-Lorentz fixed-curved-source witness](A4D_GLOBAL_LORENTZ_FIXED_SOURCE_NOGO.md)
+now gives an exact nonlinear refusal on the full nondegenerate configuration
+domain. On the one fixed cosine warp, with the independently prescribed
+smooth source tau=0, a periodic Klein-four rotation field has every one of
+the full shared-link and unrestricted solder Euler rows exactly zero.
+Its raw normalized comparator gap grows like C0*h^-4, with C0 at least
+pi^2/2500; the volume-normalized gap also has a positive limit. The proof
+sets every individual face momentum to zero and realizes all faces by
+actual periodic shared links. Nonidentity plaquette eigenvalues -1 prove
+both nongauge status and exclusion from a small identity chart.
+This rules out an unrestricted full-domain instantaneous response transfer.
+It does not satisfy or replace the original small-chart admissibility, so
+that parent task is not retired. The positive finite-probe result retains
+its declared log-O(h) domain.
+
 The [constructive finite action-probe synthesis](A4D_NATIVE_FINITE_PROBE_COMPLETION.md)
 now proves one finished measurement theorem on general fixed smooth metrics.
 For the unchanged full action, every log-$O(h)$ preparation with full-row
