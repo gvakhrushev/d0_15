@@ -4,6 +4,21 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `BLOCKED`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [constructive finite action-probe synthesis](A4D_NATIVE_FINITE_PROBE_COMPLETION.md)
+now proves one finished measurement theorem on general fixed smooth metrics.
+For the unchanged full action, every log-$O(h)$ preparation with full-row
+Euler residual $O(h^2)$ has normalized action within $O(h)$ of the same
+Einstein-Hilbert functional. Explicit $\exp(h\omega_{\rm LC})$ preparations
+make every metric-probe endpoint nonempty. Centered actual action readings
+have uniform error $O(h/\epsilon+\epsilon^2)$, hence $O(h^{2/3})$ at
+$\epsilon=h^{1/3}$, for arbitrary independent endpoint choices. A geometric
+measurement completion gives one Einstein response vector and, by a
+predeclared localization diagonal, its ten-component germ. Central exact
+UV states and their original Xi remain in the finite record; no smoothness
+of unknown connections or continuation of singular branches is required.
+The action-probe factor and the original raw Xi topology are distinguished
+explicitly. This positive analytic theorem does not retire the parent task.
+
 The [canonical constitutive synthesis](A4D_CANONICAL_CONSTITUTIVE_GERM_SYNTHESIS.md)
 now proves a **positive regular-sector theorem** for the unchanged full
 connection equations. In a fixed sufficiently small log chart, every
@@ -21,10 +36,11 @@ germ, its variational constitutive source, and its canonical leading
 normal-J2 Einstein readout. The recurrence determines every structural
 correction before an arbitrary finite candidate is selected. Observable
 canonicity is applied after nonemptiness and constant readout are proved.
-Native tower/condensed/phi/pi0 owners have been audited at their actual
-types; they do not yet provide a state-to-response-germ transfer retaining
-response-null UV fibers. The full parent class is not restricted to C7,
-and the parent remains PARTIAL / OPEN, Draft / BLOCKED.
+The finite action-probe construction supplies a proved measured factor
+and its catalogue-independent completion while retaining UV fibers. It does
+not identify arbitrary instantaneous Xi with that factor. The full parent
+class is not restricted to C7, and the parent remains PARTIAL / OPEN,
+Draft / BLOCKED.
 
 The [fixed-source arithmetic theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md)
 now settles the requested existence attack on the fixed cosine warp

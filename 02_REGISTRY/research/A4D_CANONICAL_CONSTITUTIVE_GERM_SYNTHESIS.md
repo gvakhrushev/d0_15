@@ -365,32 +365,48 @@ fields nevertheless retain macroscopic sup variation across threads at each
 level. A geometric response/jet map must be proved, not inferred from
 point coherence or from equal carrier cardinalities.
 
-## 6. The remaining physical arrow and the revised closure criterion
+## 6. Constructed finite-probe transfer and its exact boundary
 
-The proved target is now a canonical variational constitutive germ, with a
-positive regular realization theorem. Working backwards, the remaining
-native arrow should be **state to response germ**, allowing response-null
-UV holonomy in its fibers. Requiring a smooth connection representative
-for every native state would discard precisely the null microstructure
-the parent task requires us to retain.
+The [finite action-probe completion](A4D_NATIVE_FINITE_PROBE_COMPLETION.md)
+now supplies a complete quantitative construction of one measured response
+factor, retaining arbitrary exact log-$O(h)$ UV central states. On a fixed
+smooth metric pencil, the explicit preparations
+$\exp(h\omega_{\rm LC})$ have full connection residual $O(h^2)$.
+The full-field action secant identity gives action diameter $O(h)$ for
+every log-$O(h)$ preparation with that residual tolerance, without a
+derivative bound or a full UV inverse. The literal smooth action converges
+globally to the owned Einstein-Hilbert functional, and all ten Gram
+components of its variation are identified on general smooth coframes.
 
-A usable native transfer must provide an independently owned, nonempty
-state domain, response fidelity with the corrections computed by (12),
-compatibility with its actual bonding maps, and a uniform residue bound
-in the stated detector topology. It must allow the #232 null fiber and
-must not identify the #227 visible response with zero by definition.
+Read the central and two independently prepared endpoint actions. The
+average of the two one-sided readings is the centered action probe;
+its error is $O(h/\epsilon+\epsilon^2)$, uniformly over every endpoint
+choice. Taking $\epsilon=h^{1/3}$ gives $O(h^{2/3})$ and proves one
+catalogue-independent output from actual finite data. Geometric measurement
+intervals construct its singleton completion; predeclared localized probes
+give the pointwise canonical Einstein germ. The generic native canonicity
+interface is instantiated after this physical constancy estimate is proved.
+This analytic construction is not claimed to be a new Lean owner.
 
-This is a proposed closure architecture for the physical constitutive
-bridge, not a proof that the original raw fixed-source theorem follows.
-For that original theorem the first missing result remains a uniform
-response estimate on the full realizable source image, including UV fields
-that have no uniform $C^7$ connection extensions. The existing native tools
-do not yet prove that estimate or the weaker detector transfer automatically.
+The finite record retains the original central connection and its sitewise
+Xi. Thus the #232 curved nongauge null family is retained; the #227 visible
+family is retained too, with its raw Xi still nonzero. Their completed
+action-probe outputs agree at a flat metric. This explicitly describes a
+coarser measured factor, rather than declaring #227 invisible in the
+original response topology.
+
+For the original fixed-source, unweighted owner theorem, the outstanding
+result remains a uniform comparator estimate on the full realizable source
+image, including UV fields without uniform C7 extensions. Constructible
+approximate probe preparations do not imply exact independently sourced
+joint roots. The new experiment closes its own response completion; it is
+not substituted for the parent raw-response assertion or a proof that
+every untyped native state has an owned metric realization.
 
 Allowing canonically determined refinement corrections to the metric or
 source is a different coupled realization question. Its existence requires
-metric/gauge/source compatibility in addition to (12). It is not obtained
-by renaming the connection recurrence or choosing the source from a candidate.
+metric/gauge/source compatibility in addition to (12); neither the
+connection recurrence nor a candidate-dependent source supplies it.
 
 ## 7. Verification and exact hostile controls
 
