@@ -4,6 +4,19 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `BLOCKED`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [integrated phi/pi0 theorem](A4D_PHI_PI0_CONTINUUM_CLOSURE.md)
+now supplies a concrete golden Cauchy sequence of actual centered readings.
+The central action cancels exactly, so the centered probe allows every
+physical Lorentz central state, including the signed Q8 vacuum; only its
+endpoint preparations require log-O(h) and Euler residual O(h2).
+Separate one-sided convergence and stationary-action stability keep their
+original bounds. No identity-holonomy admission selector is added.
+Conversely the exact sampled-Einstein joint fiber on the selected warp is
+empty at every mesh, so no refinement thread or native realization map
+can supply such exact states. This closes the proposed exact-source
+realization route negatively; it does not close the original conditional
+raw-response comparison or provide its required rooted counterexample.
+
 The [full-Lorentz fixed-curved-source witness](A4D_GLOBAL_LORENTZ_FIXED_SOURCE_NOGO.md)
 now gives an exact nonlinear refusal on the full nondegenerate configuration
 domain. On the one fixed cosine warp, with the independently prescribed

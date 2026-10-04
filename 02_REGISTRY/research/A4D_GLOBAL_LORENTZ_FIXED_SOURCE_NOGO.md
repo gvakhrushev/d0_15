@@ -324,10 +324,12 @@ $\Xi=0$ in (2) into (12).
 
 For this witness the central normalized action is exactly zero on every
 mesh, while the canonical smooth limit is $I(g)=\pi^2/1250>0$.
-Small-log action stability therefore cannot apply. If a centered protocol
-keeps this central state but chooses small-log endpoints independently,
-the central action cancels algebraically. Its finite Einstein output would
-be a coarser measurement, with no fidelity to this state's instantaneous
+Small-log action stability therefore cannot apply to the central action.
+The [unrestricted-center probe theorem](A4D_NATIVE_FINITE_PROBE_COMPLETION.md#11-the-centered-theorem-extends-to-unrestricted-physical-central-states)
+now proves that keeping this central state and choosing the same small-log
+endpoints independently gives the unique centered Einstein completion.
+The central action and any common recording error cancel algebraically.
+This is a coarser measurement, with no equality to this state's instantaneous
 source. Separate one-sided readings have leading opposite terms
 $\pm I(g)/\epsilon$ and cannot both approach the same continuum response.
 

@@ -103,6 +103,34 @@ Section 8 gives a predeclared localization schedule for its ten components.
 The factor $h^2=h^4h^{-2}$ in (1) is the integral action normalization.
 It is not a change to the parent's unweighted owner norm of $\Xi$.
 
+### 1.1 The centered theorem extends to unrestricted physical central states
+
+Let \(\mathcal L_h(g)\) be all finite physical Lorentz link fields on the
+fixed sampled metric, using matrices directly when no log exists. Replace
+only the first factor of (3) by \(\mathcal L_h(g)\). The central action is
+finite for every member. Equation (4) cancels that action identically;
+the proof of (5) bounds only the two endpoint actions. Hence (5)--(6)
+hold with the same constants, uniformly over
+\[
+ \mathcal L_h(g)\times\mathcal P_h(g_{+\epsilon};R,M)
+                  \times\mathcal P_h(g_{-\epsilon};R,M).
+ \tag{6a}
+\]
+No equation, chart, derivative or amplitude bound on the central state is
+needed. This extends the centered observable only. The separate one-sided
+increments and central stationary-action stability retain their original
+hypotheses. The [signed full-Lorentz curved joint vacuum](A4D_GLOBAL_LORENTZ_FIXED_SOURCE_NOGO.md)
+therefore has a valid centered Einstein completion while retaining its
+zero instantaneous response. Reusing the same central record in both
+increments cancels its measurement error as well. If endpoint action
+records have errors \(e_+,e_-\), their added centered error is at most
+\((|e_+|+|e_-|)/(2\epsilon)\), independently of the central record.
+
+The [phi/pi0 integration](A4D_PHI_PI0_CONTINUUM_CLOSURE.md#2-an-actual-golden-cauchy-sequence-of-readings)
+gives an explicit, predeclared mesh schedule on which these actual readings
+satisfy the step premise of the owned GoldenTower Cauchy theorem. It adds
+no connection-holonomy selector and does not prove the original raw norm.
+
 ## 2. Literal action, Gram lift and curvature convention
 
 Use $\eta=\operatorname{diag}(1,-1,-1,-1)$ and $g=E^T\eta E$,
@@ -540,12 +568,14 @@ fibers. No curvature is declared gauge and no visible instantaneous
 response is set to zero by definition.
 
 The [full-Lorentz curved witness](A4D_GLOBAL_LORENTZ_FIXED_SOURCE_NOGO.md)
-supplies an exact boundary control outside (2): its prescribed source is
-zero on every mesh, while its metric has nonzero Einstein response and
+supplies an exact boundary control outside the endpoint domain (2): its
+prescribed source is zero on every mesh, while its metric has nonzero Einstein response and
 positive canonical action limit. The gauge-invariant involutive holonomy
-prevents a log-O(h) representative. An unrestricted physical-state transfer
-preserving instantaneous response is therefore false; the completed
-action-probe theorem is applied only to its stated preparation domain.
+prevents a log-O(h) representative. It is nevertheless included in the
+unrestricted central slot (6a), with its actual zero Xi retained. An
+unrestricted physical-state transfer preserving instantaneous response is
+therefore false, while the centered completed factor is proved on that
+full central domain. The endpoint preparation bounds are unchanged.
 
 This theorem proves a complete path
 
