@@ -17,6 +17,15 @@ selector. It obstructs the universal exact-source bridge; it does not
 supply the rooted counterexample or the exceptional-source-image theorem
 required by the unchanged parent terminal.
 
+Already on the single fixed cosine warp, the same synthesis excludes
+any fixed smooth source and exact refining sequence satisfying the
+original positive owner limit: that limit forces the Einstein source,
+and its exact fiber is empty. The same result holds for an arbitrarily
+small nonzero rational warp amplitude fixed once before all links. This
+concrete incompatibility needs no open-family nonemptiness premise. It
+does not assert emptiness for every other source or supply the rooted
+gap witness required for the original task NO-GO.
+
 The same [closure synthesis](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#84-what-this-decides-for-closure)
 now proves that even allowing an arbitrary fixed smooth source for each
 background cannot provide both exact refining nonemptiness and the

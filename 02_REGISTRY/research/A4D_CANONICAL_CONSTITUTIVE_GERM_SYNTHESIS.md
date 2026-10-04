@@ -351,6 +351,14 @@ can implement the native response bridge. Formal germ uniqueness and
 the proved asymptotic measurement theorem remain valid. The exceptional
 parent source-image implication is still open.
 
+Already on the one fixed cosine warp, no fixed smooth source can
+simultaneously admit an exact refining joint sequence and the original
+positive owner limit: the limit forces the owned Einstein source, whose
+exact fibers are all empty. The arbitrarily small rational-amplitude
+version puts the same fixed-background obstruction inside the original
+metric neighborhood. This is a proved obstruction to the conjunction,
+not the parent's rooted response-gap counterexample.
+
 Combining that feasibility theorem with the unchanged source equation
 also excludes a nonvacuous universal positive completion even when its
 fixed smooth source is left free in advance. Any exact refining rooted

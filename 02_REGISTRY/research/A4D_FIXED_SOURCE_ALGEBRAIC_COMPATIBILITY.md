@@ -512,6 +512,25 @@ missing closure step. This conclusion does not depend on arithmetic
 constants: \(\pi\), \(\varphi\), \(\pi_0\), a spectral circle or an amplitude
 classification never enter (21)--(27).
 
+**Concrete fixed-background corollary.** Already for the single fixed
+cosine warp (2), there is **no** fixed smooth source \(\tau\) and refining
+exact joint sequence in the original chart for which the original owner
+response converges. If such a pair existed, (29) below would force
+\(\tau=\tau_E[g]\). The arithmetic theorem in Sections 2--4 excludes
+every exact joint root for that very source on every mesh, giving a
+contradiction. This conclusion also holds for the already proved
+arbitrarily small nonzero rational-amplitude cosine warps, so the
+background can be selected once inside any prescribed sufficiently small
+metric neighborhood. Neither the metric nor its source varies with the
+mesh or with a chosen connection.
+
+Thus nonempty exact fixed-source realizability and the unchanged positive
+owner completion are incompatible even on one explicit smooth curved
+background, allowing the source to be chosen freely in advance. This is
+an obstruction to their conjunction. It does not assert that every fixed
+source fiber is empty, construct a rooted response-gap witness, or settle
+the parent's conditional implication on realizable pairs.
+
 **Synthesis theorem: nonvacuous universal response completion is impossible,
 even with arbitrary fixed smooth sources.** Let \(\mathcal P\subset\mathcal U\)
 be the backgrounds for which there exists at least one smooth source

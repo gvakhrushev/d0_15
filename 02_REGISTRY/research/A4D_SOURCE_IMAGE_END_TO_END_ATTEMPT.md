@@ -236,3 +236,11 @@ the unchanged exact-sampling prescription. This is a proved incompatibility
 between universal nonemptiness and response convergence, with the
 nonemptiness premise explicit. It does not settle B implies J on the
 exceptional image or manufacture its rooted negative witness.
+
+In particular, on the single fixed cosine warp (including its arbitrarily
+small nonzero rational-amplitude version), no choice of one fixed smooth
+source provides both exact refining roots and the original owner limit.
+The limit forces the Einstein source, whose exact mesh fibers are empty.
+This concrete obstruction to nonvacuous positive completion does not
+require open-family nonemptiness. It neither proves all other source
+fibers empty nor establishes the parent's rooted gap terminal.
