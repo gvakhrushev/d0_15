@@ -1,8 +1,8 @@
-# Exact sampled Einstein source is incompatible on the fixed cosine warp
+# Exact sampled Einstein source: arithmetic and generic infeasibility
 
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Audited input: `cfb308ed8ca4b053b680fc0385b4f8d36d66cb42`.
-Status: **exact source infeasibility on the specified curved background**.
+Status: **exact source infeasibility on the specified warp and a residual set of smooth metrics**.
 The parent response-decoupling task remains PARTIAL / OPEN.
 
 For the fixed warp below and its independently declared continuum Einstein
@@ -20,6 +20,13 @@ normal-graph, Fourier-support, inverse or refinement estimate.
 This is the second outcome of the fixed-source existence attack. It is not
 `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO`: that verdict would require
 an exact sourced sequence with a separated response, and (1) has none here.
+
+Section 8 proves the stronger general realization obstruction: in every open
+smooth metric neighborhood, a residual set of fixed metrics with their fixed
+continuum Einstein sources has no full real Lorentz joint root on any mesh.
+The proof uses finite critical values and metric two-jet freedom, with no
+arithmetic assumption. It does not establish the parent raw-response
+implication on exceptional realizable pairs.
 
 ## 1. Fixed geometry and a fully typed source
 
@@ -313,3 +320,215 @@ formalization-debt non-growth, certificate freshness, Python syntax and
 whitespace checks pass. No Lean source changed; no full release build is
 inferred from these checks. The published-head Actions run is reported
 separately in PR #310.
+
+## 8. Generic exact-source infeasibility without arithmetic hypotheses
+
+The obstruction is structural, rather than specific to algebraic cosine
+samples. Keep the unchanged action, all physical link Euler rows, and the
+same packed continuum source
+
+\[
+ \tau_E[g]=\operatorname{pack}\!\left(
+ \tfrac12\sqrt{|\det g|}\,g^{-1}G_{\rm std}[g]g^{-1}\right).
+ \tag{19}
+\]
+
+The off-diagonal entries are packed with factor two. This is the owner
+reconstruction of `-G/2` used in Sections 1--4. For a fixed metric, (19)
+is one smooth source declared before the links and retained on every
+mesh. No mesh-dependent source is introduced in this section. A continuous
+pointwise Gram section is fixed on the metric neighborhood below; another
+proper Lorentz section has the same full-fiber feasibility by node gauge
+covariance.
+
+**Theorem (generic exact sampled-Einstein infeasibility).** Let
+\(\mathcal U\) be a nonempty open set, in the usual \(C^\infty\) topology,
+of smooth periodic Lorentz metrics on \(\mathbb T^4\) in a neighborhood
+where the owned nondegenerate solder section exists. It may be chosen
+inside the original background chart and inside the open set of metrics
+with nonzero curvature somewhere. There is a residual, hence dense,
+subset \(\mathcal R\subset\mathcal U\) such that each one fixed
+\(g\in\mathcal R\), with its one fixed source (19), has **no full real
+Lorentz joint root on any allowed mesh**:
+
+\[
+ E_K(g(hx),K)=0,\qquad
+ \Xi(g(hx),K)=h^2\tau_E[g](hx),\qquad L\in4\mathbb N.
+ \tag{20}
+\]
+
+The conclusion covers the entire physical Lorentz link space, including
+all rough and nonalgebraic links and singular stationary fibers. It
+therefore also covers the original sufficiently small log chart. No
+\(C^7\) bound or expansion of an unknown connection is imposed.
+
+### 8.1 A finite critical-value set on each fixed mesh
+
+Freeze arbitrary real sampled solders \(S_h\), without assuming that their
+entries are algebraic. On
+\(\mathcal M_L=SO^+(1,3)^{4L^4}\), the literal action (10) is a polynomial
+with real coefficients of degree at most four. The physical Lorentz
+manifold is smooth and semialgebraic. Its connection-critical set is
+semialgebraic: use the six globally spanning right-invariant generators
+on every link and impose all their polynomial action derivatives equal
+to zero.
+
+There are finitely many connected components of this set. Each component
+is connected by piecewise smooth semialgebraic paths. Along every smooth
+piece, the action derivative vanishes, because the tangent lies in the
+physical Lorentz manifold and every right-invariant Euler row vanishes.
+Continuity joins the pieces. Thus the action is constant on each component:
+
+\[
+ \mathcal C_L(S_h)=\{
+ \mathscr A_h(S_h,K):E_K(S_h,K)=0\}
+ \quad\hbox{is finite}.
+ \tag{21}
+\]
+
+This also follows directly from the semialgebraic Sard theorem for a
+real-valued polynomial on a smooth semialgebraic manifold: its critical
+value set has dimension less than one. See Michel Coste,
+[An introduction to semialgebraic geometry, Theorem 4.8 and Exercise 4.9](https://perso.univ-rennes1.fr/michel.coste/polyens/SAG.pdf).
+No regularity of the critical locus or nondegenerate Hessian is required.
+The number and positions of these values may depend on the mesh and its
+sampled solder; no uniform spectral separation is asserted.
+
+The exact homogeneity identity (12) gives the necessary condition for (20)
+
+\[
+ W_L(g):=h^2\sum_x g(hx):\tau_E[g](hx)
+ =-\frac{h^2}{2}\sum_x\sqrt{|\det g(hx)|}\,R_{\rm std}[g](hx)
+ \in\mathcal C_L(S_h).
+ \tag{22}
+\]
+
+Only one necessary scalar is used to exclude all full joint roots. It is
+not treated as sufficient for the ten pointwise metric equations.
+
+### 8.2 Preserve the entire sampled metric and change its source trace
+
+Fix a mesh and one node \(y_*\). Choose a smooth periodic function \(u\)
+supported in a coordinate ball that contains no other node, with
+
+\[
+ u(y_*)=0,\quad du(y_*)=0,\quad
+ (\partial_a\partial_bu)(y_*)=\tfrac14 g_{ab}(y_*).
+ \tag{23}
+\]
+
+For example, multiply
+\(\tfrac18 g_{ab}(y_*)\xi^a\xi^b\) by a bump equal to one near the
+origin. Then \(\Box_gu(y_*)=1\). Put \(g_t=e^{2tu}g\). For all small real
+\(t\), \(g_t\in\mathcal U\), and the values and first jets of the metric
+at **every** mesh node are unchanged. Choose the solder
+\(S_t=e^{tu}S\); its samples are exactly the original \(S_h\).
+Consequently the whole finite action, all its connection equations and
+the finite set (21) are unchanged.
+
+At a node where \(u=du=0\), the Christoffel difference and its derivative
+give, exactly in \(t\),
+
+\[
+ \operatorname{Ric}_{\rm std}[g_t]-\operatorname{Ric}_{\rm std}[g]
+ =-2t\,\partial^2u-tg\,\Box_gu,
+ \qquad
+ R_{\rm std}[g_t]-R_{\rm std}[g]=-6t\,\Box_gu.
+ \tag{24}
+\]
+
+Indeed the Christoffels themselves are unchanged at the node, while
+\(\partial_b(\Gamma_t^k{}_{ij}-\Gamma^k{}_{ij})
+=t(\delta_i^k u_{jb}+\delta_j^k u_{ib}-g_{ij}g^{ka}u_{ab})\).
+The quadratic Christoffel terms therefore cancel in the Ricci difference.
+This derivation applies with arbitrary background first and second jets,
+not just in normal coordinates. It agrees with the pseudo-Riemannian
+conformal connection formula in Kuehnel and Rademacher,
+[Conformal Transformations of Pseudo-Riemannian manifolds, Proposition 2.2](https://www.math.uni-leipzig.de/~rademacher/esi.pdf).
+
+Writing \(H=\partial^2u\), the change of the raised density source (19) at
+such a node is
+
+\[
+ \delta\tau_E= t\,\operatorname{pack}\!\left(
+ \sqrt{|\det g|}\,[-g^{-1}Hg^{-1}+g^{-1}\operatorname{tr}(g^{-1}H)]
+ \right),\qquad
+ g:\delta\tau_E=3t\sqrt{|\det g|}\,\Box_gu.
+ \tag{25}
+\]
+
+All other sampled source values are unchanged, so (22) becomes
+
+\[
+ W_L(g_t)=W_L(g)+3h^2\sqrt{|\det g(y_*)|}\,t.
+ \tag{26}
+\]
+
+The slope is nonzero. The permitted source trace values (21) are finite
+and independent of \(t\); hence only finitely many \(t\) can possibly
+admit any full joint root. In every neighborhood of every fixed smooth
+metric there are therefore metrics for which (20) has no root on this
+mesh. This varies the prescribed pair before solving; it does not vary
+the source with a chosen connection.
+
+### 8.3 One fixed metric and source fail on every mesh
+
+For integers \(L\in4\mathbb N\) and \(m\ge1\), let
+\(\mathcal B_{L,m}\subset\mathcal U\) consist of metrics admitting a root
+of (20) whose physical link matrices all have Frobenius norm at most
+\(m\). This is a closed set relative to \(\mathcal U\). If
+\(g_n\to g\) in \(C^\infty\) and such roots exist, the finite product of
+bounded physical Lorentz matrices is compact. The component can be
+written with \(U^T\eta U=\eta\), \(\det U=1\), \(U_{00}\ge1\), so it is
+closed under these bounded limits. A subsequence of the roots converges;
+continuity of the finite Euler formulas and of the source's two-jet
+sampling preserves all equations in the limit.
+
+Equation (26) proves that \(\mathcal B_{L,m}\) has empty interior, so it
+is nowhere dense. Every finite real Lorentz root has some finite matrix
+bound \(m\). The \(C^\infty\) metric space is a Frechet space, and its open
+subset \(\mathcal U\) is a Baire space. Consequently
+
+\[
+ \mathcal R=\mathcal U\setminus
+ \bigcup_{L\in4\mathbb N}\bigcup_{m\ge1}\mathcal B_{L,m}
+ \tag{27}
+\]
+
+is residual and dense. Each metric selected once from \(\mathcal R\)
+and its source (19) stay fixed for **all** meshes. There is no refining
+rooted subsequence, even if one allows the full Lorentz domain. This
+proves the theorem. The Baire argument is about a single fixed pair in
+the complement of countably many feasibility sets; it is not the weaker
+convention of a sequence \(\tau_h\to\tau\).
+
+### 8.4 What this decides for closure
+
+There is no exact sampled-Einstein realization assignment on any nonempty
+open family of smooth metrics under (20), even a discontinuous assignment
+and even before imposing native carrier coherence. In particular, a
+universal native-to-exact-root bridge over such a family cannot be the
+missing closure step. This conclusion does not depend on arithmetic
+constants: \(\pi\), \(\varphi\), \(\pi_0\), a spectral circle or an amplitude
+classification never enter (21)--(27).
+
+This is a feasibility obstruction for the **exact sampling prescription**.
+It neither rules out asymptotic Einstein convergence with corrected metric
+or source samples nor supplies an exact rooted response-gap witness. It
+also does not determine the exceptional source image
+\(B(g,\tau)\) of the parent task. On that exceptional image, the unchanged
+original obligation remains \(B\Rightarrow J\), or a fixed admissible pair
+with \(B\) and not \(J\). Residual empty Einstein fibers cannot be promoted
+to either parent raw-response terminal. The task remains PARTIAL / OPEN.
+
+### 8.5 Exact check and its boundary
+
+The existing arithmetic-source checker now also derives (24)--(25) from
+Christoffel two-jets using a generic ten-parameter triangular Lorentz
+solder and all ten independent Hessian parameters. This parameterization
+covers a neighborhood of the original Gram chart. It checks every raised
+packed source slot, the nonzero direction \(H=g/4\), the action slope
+(26), and a hostile control omitting the off-diagonal packing factor.
+It certifies these algebraic identities; the finite-critical-value and
+Baire arguments above are analytic proofs, not inferred from a finite
+sample or a green guard.

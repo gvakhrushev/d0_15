@@ -205,3 +205,23 @@ The fixed-source existence attack closes with source infeasibility on this
 geometry; neither parent terminal or general source-image implication is
 claimed. The failed implication route recorded above remains historical
 evidence, and the EK-only designated rescue is unaffected.
+
+## 9. General exact-source feasibility cut
+
+[Section 8 of the feasibility owner](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#8-generic-exact-source-infeasibility-without-arithmetic-hypotheses)
+now excludes exact sampled-Einstein roots on every mesh for a residual set
+of fixed smooth metrics in every open metric neighborhood, including the
+original curved background chart. This covers all real physical links,
+not only one frozen carrier or regular connection sector. Finite stationary
+action values at fixed metric samples and freely variable continuum
+metric two-jets give the one-mesh nowhere-density result; compact matrix
+exhaustion and Baire category yield one fixed metric and one fixed source
+with no root on any mesh. No source sequence or arithmetic condition is
+used.
+
+Consequently, constructing a universal exact native-to-sampled-source lift
+on an open smooth metric family cannot close the theory: such an assignment
+does not exist. The original conditional raw-response problem is confined
+to exceptional realizable pairs. This new theorem does not establish
+B implies J there, and empty fibers are not the required B-and-not-J
+response-gap witness. Neither parent terminal, retirement or merge follows.

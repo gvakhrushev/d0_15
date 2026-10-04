@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Read-only exact ingredients for the fixed cosine source obstruction.
+"""Read-only exact ingredients for arithmetic and generic source obstructions.
 
 The field-derivation theorem is a mathematical proof, not a numerical
 certificate. This script independently checks its D0-specific assumptions:
 Gram lift/homogeneity, curvature normalization, cyclotomic sample trace,
 and controls that rule out overclaiming algebraicity of every link/readout.
+A generic metric two-jet check supports the separate finite-critical-value
+and Baire infeasibility proof; these analytic arguments are not finite tests.
 """
 from __future__ import annotations
 from fractions import Fraction as F
@@ -60,6 +62,59 @@ def einstein_source():
             'R_standard':str(scalar),'tau_raw':list(map(str,tau)),
             'trace':str(trace),
             'source_convention':'density f^2 times one-half raised standard Einstein tensor, packed as the ten Gram covector slots; this is the owner reconstructed -G/2 convention'}
+
+
+def conformal_fixed_value_jet():
+    d=sp.symbols('d0:4',positive=True)
+    a=sp.symbols('a01 a02 a03 a12 a13 a23',real=True)
+    solder=sp.Matrix([[d[0],a[0],a[1],a[2]],[0,d[1],a[3],a[4]],
+                      [0,0,d[2],a[5]],[0,0,0,d[3]]])
+    eta=sp.diag(1,-1,-1,-1)
+    q=solder.T*eta*solder
+    si=solder.inv()
+    qi=si*eta*si.T
+    slots=[(i,j) for i in range(4) for j in range(i,4)]
+    hv=sp.symbols('H00 H01 H02 H03 H11 H12 H13 H22 H23 H33',real=True)
+    H=sp.zeros(4)
+    for (i,j),v in zip(slots,hv): H[i,j]=H[j,i]=v
+    box=sp.expand(sp.trace(qi*H))
+    def dgamma(k,i,j,b):
+        # u=du=0: delta g_{ij,ab}=2 H_ab g_ij; all lower jets unchanged.
+        return sum(qi[k,l]*(H[i,b]*q[l,j]+H[j,b]*q[l,i]-H[l,b]*q[i,j])
+                   for l in range(4))
+    ric=sp.Matrix(4,4,lambda i,j: sp.cancel(sum(
+        dgamma(k,i,j,k)-dgamma(k,i,k,j) for k in range(4))))
+    expected=-2*H-q*box
+    assert all(sp.cancel(x)==0 for x in ric-expected)
+    print('PASS_ALL_10_METRIC_PARAMETERS_AND_ALL_10_HESSIAN_PARAMETERS',flush=True)
+    scalar=sp.cancel(sp.trace(qi*ric))
+    assert sp.cancel(scalar+6*box)==0
+    ein=ric-q*scalar/2
+    density=sp.prod(d)
+    tau=qi*ein*qi*density/2
+    etau=density*(-qi*H*qi+qi*box)
+    assert all(sp.cancel(x)==0 for x in tau-etau)
+    packed=[(1 if i==j else 2)*etau[i,j] for i,j in slots]
+    trace=sp.cancel(sum(q[i,j]*v for (i,j),v in zip(slots,packed)))
+    assert sp.cancel(trace-3*density*box)==0
+    wrong=sp.cancel(sum(q[i,j]*etau[i,j] for i,j in slots))
+    assert sp.cancel(wrong-3*density*box)!=0
+    print('PASS_PACKED_GRAM_SOURCE_TRACE_AND_OFFDIAGONAL_HOSTILE_CONTROL',flush=True)
+    conformal_H=q/4
+    assert sp.cancel(sp.trace(qi*conformal_H)-1)==0
+    coefficient=3*density
+    assert coefficient!=0
+    return {'metric_parameters':10,'hessian_parameters':10,
+            'unchanged_sample_jets':'delta g=delta dg=0 at every mesh node',
+            'changed_second_jet':'delta d2g_ij,ab=2*H_ab*g_ij',
+            'Ricci_change':'-2*H-g*Box_g(u)',
+            'scalar_change':'-6*Box_g(u)',
+            'raised_density_source_change':'sqrt(abs(det(g)))*(-g_inverse*H*g_inverse+g_inverse*Box_g(u))',
+            'packed_source_trace_change':'3*sqrt(abs(det(g)))*Box_g(u)',
+            'nonzero_direction':'H=g/4 gives Box_g(u)=1',
+            'full_mesh_action_slope':'3*h^2*sqrt(abs(det(g(y_star))))',
+            'hostile_unpacked_offdiagonals':'fails on the generic ten-parameter solder',
+            'analytic_scope':'universal local two-jet formula; finite-critical-value and Baire proofs are separate'}
 
 
 def literal_homogeneity():
@@ -210,21 +265,23 @@ def main():
     pins={name:hashlib.sha1((args.certificate_dir/name).read_bytes()).hexdigest()
           for name in ('a4d_identity_quarter_nonlinear_response_check.py',
                        'a4d_designated_full_gap_check.py')}
-    report = {'schema':'a4d-fixed-cosine-critical-value-source-probe-v1',
+    report = {'schema':'a4d-fixed-source-critical-value-probe-v2',
               'certificate_inputs':pins,
               'analytic_proof_owner':'02_REGISTRY/research/A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md',
               'status':'ALL_EXACT_INGREDIENT_CHECKS_PASS; FIELD_DERIVATION_THEOREM_PROVED_SEPARATELY',
               'einstein':einstein_source(),
+              'generic_fixed_sample_jet':conformal_fixed_value_jet(),
               'homogeneity':literal_homogeneity(),
               'sampling':cyclotomic_trace(),
               'controls':tangent_and_stationarity_controls(),
               'conclusion':'No real full-link solution of E_K=0 and Xi=h^2*tau_raw exists on any L>=3 cosine-warp grid for the predeclared owner continuum source; no chart, amplitude, regularity, or normal-graph assumptions',
-              'scope':'fixed-source feasibility obstruction on one smooth nonconstant background, not a response-decoupling NO-GO or a general source-image closure'}
+              'generic_conclusion':'a residual subset of every open smooth Lorentz metric neighborhood has no full joint root on any allowed mesh for its one predeclared exactly sampled continuum Einstein source; finite critical values plus two-jet freedom and Baire category prove this separately',
+              'scope':'exact-source feasibility: explicit cosine warp and generic smooth metrics; neither a rooted response-gap NO-GO nor closure of the exceptional parent source image'}
     if args.write_json is None:
         assert report == json.loads(args.expect.read_text()),'pinned replay mismatch'
     if args.write_json:
         args.write_json.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-    print('PASS_FIXED_COSINE_CRITICAL_ACTION_SOURCE_INGREDIENTS')
+    print('PASS_FIXED_SOURCE_CRITICAL_ACTION_AND_GENERIC_JET_INGREDIENTS')
 
 if __name__ == '__main__':
     main()

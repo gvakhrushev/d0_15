@@ -339,6 +339,18 @@ cosine phase as well loses one-periodicity. Neither operation supplies a
 source lift. Arbitrary Borel representatives also retain flat-in-$h$
 freedom; formal uniqueness does not make every such finite representative exact.
 
+**The exact-source bridge also fails generically, without arithmetic.**
+[The general feasibility theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#8-generic-exact-source-infeasibility-without-arithmetic-hypotheses)
+shows that a residual set of fixed smooth metrics in every open
+neighborhood has no real full-Lorentz joint root on any mesh for its
+exactly sampled continuum Einstein source. At fixed node values the
+polynomial action has finitely many critical values; a metric two-jet
+perturbation preserves those samples and changes the source trace.
+Thus no universal exact realization assignment on an open smooth family
+can implement the native response bridge. Formal germ uniqueness and
+the proved asymptotic measurement theorem remain valid. The exceptional
+parent source-image implication is still open.
+
 ### 4.1 The golden residue has enough decay for the original four-dimensional owner sum
 
 There is a useful quantitative synthesis of the two constants, without

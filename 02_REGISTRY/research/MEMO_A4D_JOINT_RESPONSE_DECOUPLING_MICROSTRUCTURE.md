@@ -1,8 +1,21 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
-Lifecycle: `BLOCKED`. The parent NO-GO/retirement announced at `530a5132`
+Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
+
+The [generic exact-source theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#8-generic-exact-source-infeasibility-without-arithmetic-hypotheses)
+now excludes an exact sampled-Einstein realization assignment on any open
+family of smooth metrics. For a residual set of fixed curved metrics in
+every such neighborhood, the full real Lorentz joint fiber is empty on
+every allowed mesh. The finite action has finitely many critical values
+at fixed samples, while a conformal two-jet perturbation changes the
+required source trace and preserves every sampled metric value. A Baire
+argument selects one fixed metric and one fixed source for all meshes.
+This needs no arithmetic hypothesis, C7 bound, UV classification or native
+selector. It obstructs the universal exact-source bridge; it does not
+supply the rooted counterexample or the exceptional-source-image theorem
+required by the unchanged parent terminal.
 
 The [integrated phi/pi0 theorem](A4D_PHI_PI0_CONTINUUM_CLOSURE.md)
 now supplies a concrete golden Cauchy sequence of actual centered readings.
@@ -81,7 +94,7 @@ The finite action-probe construction supplies a proved measured factor
 and its catalogue-independent completion while retaining UV fibers. It does
 not identify arbitrary instantaneous Xi with that factor. The full parent
 class is not restricted to C7, and the parent remains PARTIAL / OPEN,
-Draft / BLOCKED.
+Draft / IN_PROGRESS.
 
 The [fixed-source arithmetic theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md)
 now settles the requested existence attack on the fixed cosine warp
@@ -101,7 +114,7 @@ Both independent finite checkers and the analytic argument are in the new
 owner. This establishes source infeasibility on one genuinely curved
 geometry, **not** the original response-gap NO-GO: the required exact
 sourced sequence is absent. The connection-only warped rescue remains valid.
-The parent task remains Draft / BLOCKED and PARTIAL / OPEN.
+The parent task remains Draft / IN_PROGRESS and PARTIAL / OPEN.
 
 The earlier [bounded end-to-end attempt](A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md)
 at input `9516797f` failed to establish a terminal. Its corrected
