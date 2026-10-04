@@ -225,3 +225,14 @@ does not exist. The original conditional raw-response problem is confined
 to exceptional realizable pairs. This new theorem does not establish
 B implies J there, and empty fibers are not the required B-and-not-J
 response-gap witness. Neither parent terminal, retirement or merge follows.
+
+The [combined closure theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#84-what-this-decides-for-closure)
+further proves that the backgrounds admitting any fixed smooth source,
+exact refining roots and the original owner convergence form a meagre
+set. The convergence forces the source to be Einstein before the generic
+feasibility theorem applies. Therefore proving B implies J could not
+restore a nonvacuous realization on an open smooth metric family under
+the unchanged exact-sampling prescription. This is a proved incompatibility
+between universal nonemptiness and response convergence, with the
+nonemptiness premise explicit. It does not settle B implies J on the
+exceptional image or manufacture its rooted negative witness.

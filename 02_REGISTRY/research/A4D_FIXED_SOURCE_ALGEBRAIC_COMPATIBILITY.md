@@ -512,6 +512,58 @@ missing closure step. This conclusion does not depend on arithmetic
 constants: \(\pi\), \(\varphi\), \(\pi_0\), a spectral circle or an amplitude
 classification never enter (21)--(27).
 
+**Synthesis theorem: nonvacuous universal response completion is impossible,
+even with arbitrary fixed smooth sources.** Let \(\mathcal P\subset\mathcal U\)
+be the backgrounds for which there exists at least one smooth source
+\(\tau\), fixed across meshes, and a refining sequence of exact joint roots
+inside the original small log chart, satisfying the unchanged owner limit
+
+\[
+ h^{-2}\|\Xi(g(hx),K_h)-\Xi(g(hx),K_h^{\rm sm})\|_{\mathrm{owner},1}
+ \longrightarrow0.
+ \tag{28}
+\]
+
+Then \(\mathcal P\) is meagre in \(\mathcal U\); in particular it cannot
+contain a nonempty open set. This statement does not assume any regularity
+of the unknown links and does not prescribe the source to be Einstein at
+the outset.
+
+To prove it, use only the leading owned comparator limit
+\(\rho_{{\rm sm},h}=h^{-2}\Xi(g(hx),K_h^{\rm sm})
+=\tau_E[g]+O(h)\), uniformly at the nodes, in the same packed covector
+convention as (19). At an exact sourced root, the normalized difference
+is exactly \(\tau(hx)-\rho_{{\rm sm},h}(hx)\). Its nodal supremum is at
+most its unweighted owner sum. Every point lies within \(2h\) of a node;
+smoothness of the two fixed sources and the uniform comparator remainder
+therefore give
+
+\[
+ \|\tau-\tau_E[g]\|_{C^0,\mathrm{packed},1}
+ \le h^{-2}\|\Xi-\Xi_{\rm sm}\|_{\mathrm{owner},1}+C_{g,\tau} h
+ \longrightarrow0.
+ \tag{29}
+\]
+
+Thus \(\tau=\tau_E[g]\) identically. Every \(g\in\mathcal P\) consequently
+admits an exact sampled-Einstein root on at least one allowed mesh, and
+hence belongs to the countable union of closed nowhere-dense sets in
+(27). This proves the meagreness assertion.
+
+Equivalently, there is no source assignment \(g\mapsto\tau(g)\), even a
+discontinuous one and even with arbitrary choices of smooth source, for
+which **both** exact refining nonemptiness and (28) hold on an open family
+of smooth curved backgrounds. Source selection cannot evade the
+obstruction: the unchanged response limit itself forces its Einstein
+value. This rules out a nonvacuous universal positive completion of this
+exact-sampling theory. It uses the original norm, comparator and chart;
+no new selector or candidate family is introduced.
+
+The open-family nonemptiness premise is essential to that physical
+conclusion. The conditional implication on exceptional realizable pairs
+is a different statement. Neither its proof nor a rooted response-gap
+counterexample follows from meagreness; neither parent terminal is set.
+
 This is a feasibility obstruction for the **exact sampling prescription**.
 It neither rules out asymptotic Einstein convergence with corrected metric
 or source samples nor supplies an exact rooted response-gap witness. It

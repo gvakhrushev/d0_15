@@ -17,6 +17,18 @@ selector. It obstructs the universal exact-source bridge; it does not
 supply the rooted counterexample or the exceptional-source-image theorem
 required by the unchanged parent terminal.
 
+The same [closure synthesis](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#84-what-this-decides-for-closure)
+now proves that even allowing an arbitrary fixed smooth source for each
+background cannot provide both exact refining nonemptiness and the
+original owner convergence on an open smooth metric family. The owner
+limit forces that source to equal the owned Einstein source; the generic
+infeasibility theorem then excludes it. Backgrounds with any such
+nonvacuous positive completion form a meagre set. This is a universal
+realization-and-response obstruction, not a new microscopic family.
+Its open-family nonemptiness premise is explicit. The conditional
+source-image implication on exceptional pairs and both original task
+terminals remain open.
+
 The [integrated phi/pi0 theorem](A4D_PHI_PI0_CONTINUUM_CLOSURE.md)
 now supplies a concrete golden Cauchy sequence of actual centered readings.
 The central action cancels exactly, so the centered probe allows every

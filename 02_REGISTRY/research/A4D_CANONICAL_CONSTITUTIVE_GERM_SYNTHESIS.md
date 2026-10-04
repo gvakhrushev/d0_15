@@ -351,6 +351,19 @@ can implement the native response bridge. Formal germ uniqueness and
 the proved asymptotic measurement theorem remain valid. The exceptional
 parent source-image implication is still open.
 
+Combining that feasibility theorem with the unchanged source equation
+also excludes a nonvacuous universal positive completion even when its
+fixed smooth source is left free in advance. Any exact refining rooted
+sequence satisfying the original owner limit forces
+$\tau=\tau_E[g]$ by the leading comparator coefficient and density of
+mesh nodes. Thus backgrounds admitting any such completion form a
+meagre subset of every open smooth metric family. No arbitrary source
+assignment can supply both exact refining nonemptiness and that response
+limit on an open family. The complete proof and its explicit nonemptiness
+premise are in [the feasibility owner's closure synthesis](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#84-what-this-decides-for-closure).
+The conditional parent source-image problem on exceptional realizable
+pairs remains open; neither parent terminal follows.
+
 ### 4.1 The golden residue has enough decay for the original four-dimensional owner sum
 
 There is a useful quantitative synthesis of the two constants, without
