@@ -11,6 +11,7 @@ from itertools import product
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 import sys
 import numpy as np
@@ -83,6 +84,108 @@ for x in SITES:
         assert np.array_equal(u.T @ ETA @ u, ETA)
         assert u[0, 0] == 1 and np.prod(np.diag(u)) == 1
         links[INDEX[x], role] = u
+
+# Lift the very same physical field through the owned Q8 table.
+# This retains the central orientation bit; no real angle or trigonometry
+# is used to build a link. Q8 support is not full native admissibility.
+ROOT = HERE.parents[2]
+Q8_OWNER = '03_FORMALIZATION/D0/Claims/Q8DedekindMinimality.lean'
+TYPED_OWNER = '03_FORMALIZATION/D0/Representation/Omega8Q8TypedBridge.lean'
+q8_source = (ROOT / Q8_OWNER).read_text()
+q8_block = q8_source.split('def Q8 : FinGrp 8 where', 1)[1].split(
+    '/-- Symmetric group', 1)[0]
+q8_rows = re.findall(r'!\[([0-7](?:,\s*[0-7]){7})\]', q8_block.split('inv :=', 1)[0])
+assert len(q8_rows) == 8
+Q8_MUL = tuple(tuple(map(int, row.replace(' ', '').split(','))) for row in q8_rows)
+q8_inverse = re.search(r'inv := !\[([^\]]+)\]', q8_block)
+assert q8_inverse is not None
+Q8_INV = tuple(map(int, q8_inverse.group(1).replace(' ', '').split(',')))
+assert len(Q8_INV) == 8
+typed_source = (ROOT / TYPED_OWNER).read_text()
+assert 'u.1.val * v.1.val + u.2.val * v.2.val + u.2.val * v.1.val' in typed_source
+
+
+def qmul(q, t):
+    return Q8_MUL[q][t]
+
+
+def qpow(q, n):
+    result = 0
+    for _ in range(n):
+        result = qmul(result, q)
+    return result
+
+
+def qadjoint(q):
+    # Conjugation fixes time and acts on the three imaginary quaternion
+    # basis units. The sign bit is kept in q itself, not in Ad(q).
+    result = np.zeros((4, 4), dtype=object)
+    result[0, 0] = 1
+    for axis in range(1, 4):
+        t = qmul(qmul(q, 2 * axis), Q8_INV[q])
+        assert t // 2 in (1, 2, 3)
+        result[t // 2, axis] = 1 if t % 2 == 0 else -1
+    return result
+
+
+Q8_AD = tuple(qadjoint(q) for q in range(8))
+for q in range(8):
+    assert qmul(q, Q8_INV[q]) == qmul(Q8_INV[q], q) == 0
+    assert qpow(q, 4) == 0
+    for t in range(8):
+        assert np.array_equal(Q8_AD[qmul(q, t)], Q8_AD[q] @ Q8_AD[t])
+        # Dedekind index 2*role+orientation agrees with the actual typed
+        # Omega8 central-extension cocycle, for every pair of elements.
+        u, v = q // 2, t // 2
+        ua, ub, va, vb = u % 2, u // 2, v % 2, v // 2
+        sign = (q % 2 + t % 2 + ua * va + ub * vb + ub * va) % 2
+        assert qmul(q, t) == 2 * (u ^ v) + sign
+assert np.array_equal(Q8_AD[2], R1)
+assert np.array_equal(Q8_AD[4], R2)
+assert np.array_equal(Q8_AD[6], R3)
+assert {q for q in range(8) if np.array_equal(Q8_AD[q], I)} == {0, 1}
+assert qmul(qmul(qmul(2, 4), Q8_INV[2]), Q8_INV[4]) == 1
+assert all(qmul(q, q) == 1 for q in (2, 3, 4, 5, 6, 7))
+
+FACE_Q = {(0, 1): 6, (0, 2): 6, (0, 3): 4,
+          (1, 2): 4, (1, 3): 6, (2, 3): 6}
+
+
+def qlink(x, role):
+    result = 0
+    for previous in range(role):
+        result = qmul(result, qpow(FACE_Q[(previous, role)], x[previous]))
+    return result
+
+
+q_links = {(x, role): qlink(x, role) for x in SITES for role in range(4)}
+for x in SITES:
+    for role in range(4):
+        assert np.array_equal(Q8_AD[q_links[x, role]], links[INDEX[x], role])
+        for coordinate in range(4):
+            translated = list(x)
+            translated[coordinate] += L
+            assert qlink(translated, role) == q_links[x, role]
+
+q8_face_signs = {}
+for r, t in M.PAIRS:
+    counts = {'positive': 0, 'negative': 0}
+    for x in SITES:
+        factors = [q_links[x, r], q_links[shift(x, r), t],
+                   Q8_INV[q_links[shift(x, t), r]], Q8_INV[q_links[x, t]]]
+        q = 0
+        for factor in factors:
+            q = qmul(q, factor)
+        assert q // 2 == FACE_Q[(r, t)] // 2
+        assert np.array_equal(Q8_AD[q], FACE_P[(r, t)])
+        counts['negative' if q % 2 else 'positive'] += 1
+    q8_face_signs[str((r, t))] = counts
+assert sum(c['positive'] for c in q8_face_signs.values()) > 0
+assert sum(c['negative'] for c in q8_face_signs.values()) > 0
+print('PASS_OWNED_Q8_TABLE_AND_ALL_64_TYPED_OMEGA8_COCYCLE_PRODUCTS')
+print('PASS_Q8_ADJOINT_HOMOMORPHISM_WITH_CENTRAL_SIGN_KERNEL')
+print('PASS_ALL_1024_ACTUAL_Q8_LINK_LIFTS_AND_ALL_PERIODIC_SEAMS')
+print('PASS_ALL_1536_Q8_PLAQUETTE_LIFTS_WITH_RETAINED_CENTRAL_SIGNS')
 
 ek = np.zeros((len(SITES), 4, 6), dtype=object)
 es = np.zeros((len(SITES), 16), dtype=object)
@@ -190,8 +293,8 @@ for r, t in M.PAIRS:
 print('PASS_ACTUAL_NODE_GAUGE_DRESSING_PERIODIC_WRAP_AND_FULL_FACE_MOMENTA')
 
 report = {
-    'schema': 'a4d-global-lorentz-fixed-source-v4-v1',
-    'input_head': 'f317a3b842b2d10c5a3a381b6b03cb9850e77f66',
+    'schema': 'a4d-global-lorentz-fixed-source-v4-v2',
+    'input_head': '720dee65f8c1c186f5862602a4723486eff4b566',
     'certificate_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     'inputs_sha256': {name: hashlib.sha256((HERE / name).read_bytes()).hexdigest()
                       for name in ('a4d_identity_quarter_nonlinear_response_check.py',
@@ -201,6 +304,18 @@ report = {
     'source': 'one independently predeclared tau=0, exact on every mesh',
     'fluxes': {str(face): list(map(int, np.diag(p))) for face, p in FACE_P.items()},
     'links': 'U_r(x)=product_{s<r} P_sr^x_s; all matrices in proper-Lorentz V4',
+    'q8_inputs_sha256': {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+                        for name in (Q8_OWNER, TYPED_OWNER)},
+    'q8_lift': {
+        'ordering': 'owned Dedekind: +1,-1,+i,-i,+j,-j,+k,-k',
+        'typed_cocycle_products': 64,
+        'links': len(q_links),
+        'plaquettes': sum(sum(c.values()) for c in q8_face_signs.values()),
+        'face_signs': q8_face_signs,
+        'representation': 'diag(1,Ad(q)); kernel {+1,-1}; Ad(i,j,k)=(R1,R2,R3)',
+        'all_mesh_proof': 'L divisible by 4; ordered Q8 word is coordinatewise 4-periodic',
+        'scope': 'actual Q8 support and central signs; full native admissibility not asserted',
+    },
     'finite_replay': {'L': L, 'sites': len(SITES), 'actual_plaquettes': face_count,
                       'shared_link_Euler_rows': ek.size, 'unrestricted_solder_rows': es.size,
                       'Gram_metric_rows': xi.size, 'nonidentity_links': nonidentity,

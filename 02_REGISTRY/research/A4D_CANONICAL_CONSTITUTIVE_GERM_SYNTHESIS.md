@@ -339,6 +339,147 @@ cosine phase as well loses one-periodicity. Neither operation supplies a
 source lift. Arbitrary Borel representatives also retain flat-in-$h$
 freedom; formal uniqueness does not make every such finite representative exact.
 
+### 4.1 The golden residue has enough decay for the original four-dimensional owner sum
+
+There is a useful quantitative synthesis of the two constants, without
+changing the source, comparator or norm. The scale is
+$h_n=h_0\phi^{-n}$; $\phi$ itself is fixed. The scalar formula
+$\phi_{n+1}=\phi_n+1$ is not a refinement identity. The owned identities
+are the scale step in
+[PhiDiscreteRG](../../03_FORMALIZATION/D0/Bridge/PhiDiscreteRG.lean)
+and the Fibonacci/Perron recurrence in
+[FibonacciAFTower](../../03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean).
+
+The closure balance for $\pi_0$ supplies
+
+\[
+ \delta_0=\frac{3}{5\pi_0\phi}=\frac1{2\phi^3},
+ \qquad
+ \boxed{\phi^4\delta_0=\frac{\phi}{2}<1.}
+ \tag{G1}
+\]
+
+Thus a golden residue for the **normalized metric response** would
+outpace the growth of the four-dimensional site count. This is more
+than an assertion that a ladder has a limit: it fixes the exact decay
+budget needed for this owner's raw norm.
+
+Here is the complete implication, with the missing premise visible.
+For every allowed mesh put
+
+\[
+ n(h)=\left\lfloor\log_\phi\frac{L}{4}\right\rfloor,\qquad h=L^{-1},
+ \qquad
+ D_h(y)=\tau(y)-h^{-2}\Xi_h^{\rm sm}(y).
+\]
+
+The comparator has its owned continuous finite-stencil extension.
+For exact joint roots, $h^{-2}(\Xi-\Xi_{\rm sm})(x)=D_h(hx)$
+by the prescribed source equation; no extension or derivative bound
+of the unknown connection is involved. If native response descent
+proves the single uniform estimate
+
+\[
+ \sup_{\substack{L\in4\mathbb N\\ n(1/L)=n}}
+     \|D_{1/L}\|_{C^0,\mathrm{packed},1}
+ \le C\delta_0^n
+ \quad\text{on every realizable fixed-source pair},
+ \tag{G2}
+\]
+
+then the unchanged full owner sum obeys
+
+\[
+ \begin{aligned}
+ h^{-2}\|\Xi-\Xi_{\rm sm}\|_{\mathrm{owner},1}
+ &\le L^4\|D_h\|_{C^0,\mathrm{packed},1}\\
+ &\le C(4\phi)^4(\phi^4\delta_0)^{n(h)}
+ =C(4\phi)^4(\phi/2)^{n(h)}\longrightarrow0 .
+ \end{aligned}
+ \tag{G3}
+\]
+
+This covers all admitted meshes, not just a selected subsequence.
+Equivalently the rate is $O(h^\gamma)$ with
+$\gamma=\log_\phi 2-1>0$. It is a $C^7$-free sufficient
+closure estimate for the original response object. It would force
+precisely the fixed-source comparator jet gate already proved in the
+[end-to-end owner](A4D_SOURCE_IMAGE_END_TO_END_ATTEMPT.md#2-the-complete-logical-endpoint);
+it does not evade that gate.
+
+A compatible, calibrated response-error family with consecutive
+sup-norm increments bounded by $C\delta_0^n$ has a tail bounded by
+$C\delta_0^n/(1-\delta_0)$, by the actual
+[golden Cauchy owner](../../03_FORMALIZATION/D0/Geometry/GHPGoldenCauchySequence.lean).
+Calibration of the limiting error to zero and control of every mesh
+in (G2) are necessary; a subsequence step bound alone is insufficient.
+The Cauchy owner concerns a supplied step inequality and does not
+prove (G2) for gravitational responses.
+
+The normalization is load-bearing. A bound only on the
+**unnormalized** $\Xi-\Xi_{\rm sm}$ by $C\delta_0^n$ incurs both
+the site count and $h^{-2}$; its majorant has ratio
+$\phi^6\delta_0=\phi^3/2>1$ and does not imply this closure.
+Likewise the golden cylinder mass identity proves exact preservation
+of weights, rather than a contraction of metric-response error.
+Neither a phase constant nor the four scalar branch identities supplies
+the response inequality in (G2).
+
+Consequently (G1)--(G3) identify exactly where $\phi$ and $\pi_0$ could
+close the original object. The quantitative implication is proved;
+its native metric-response premise is not asserted. A finite current,
+signed record or operator refinement must derive (G2) from the original
+joint equations, rather than insert it as a new admissibility selector.
+
+### 4.2 A structural turn cannot change a fixed smooth Einstein source by relabeling its angle
+
+The machine-checked
+[pi0 forcing](../../03_FORMALIZATION/D0/Geometry/Pi0DiscreteAngle.lean)
+solves $\delta_0=3/(5p\phi)$ uniquely for $p=\pi_0$ and proves
+$2\pi_0(2-\phi)=12/5$. It does not assert that ordinary real
+sine and cosine have period $2\pi_0$.
+
+If the structural full-turn coordinate is denoted $a=2\pi_0 y$,
+a continuous faithful one-turn rotation bridge must have angular rate
+$\pi/\pi_0$ (up to orientation). Indeed a one-parameter rotation
+$R(\omega a)$ closes at $2\pi_0$ only if
+$\omega\,2\pi_0\in2\pi\mathbb Z$; faithfulness makes the degree
+$\pm1$. In positive orientation this gives
+
+\[
+ \cos_0(a):=\cos(\pi a/\pi_0),\qquad
+ \cos_0(2\pi_0y)=\cos(2\pi y).
+ \tag{G4}
+\]
+
+This is a conditional smooth bridge computation, not an additional
+CORE circle owner. It keeps both constants in their own types.
+If it describes the same fixed metric, the Gram components, volume
+element and derivative operator must transform with the coordinate.
+In particular $\partial_y=2\pi_0\partial_a$ and the factor $\pi/\pi_0$
+in (G4) restores the original $2\pi$ derivative. The Einstein tensor,
+its variational source and the finite samples are unchanged after
+conversion back to the declared $y$-coordinates.
+
+The critical-value obstruction is over all real algebraic numbers,
+not merely Q(phi), and covers arbitrary real Lorentz link entries.
+Thus the algebraic-critical-value obstruction (16) survives the
+structural phase spelling of that **same** cosine metric. Replacing
+only the derivative factor $\pi^2$ by $\pi_0^2$ prescribes a different
+source; replacing the ordinary phase by $2\pi_0y$ fails unit
+periodicity. A genuinely finite native cycle may be read without
+classical trigonometry, but its realization as this fixed smooth
+metric requires a bridge and cannot be obtained by scalar substitution.
+
+There is also a direct finite control:
+[the full-Lorentz witness, Section 3.1](A4D_GLOBAL_LORENTZ_FIXED_SOURCE_NOGO.md#31-the-same-field-has-an-actual-signed-native-q8-lift),
+has links that are integer matrices obtained from actual signed Q8
+words, with $\tau=0$ fixed in advance. No classical angle is an input
+to those links. The refusal of unrestricted instantaneous Einstein
+response therefore cannot be removed by attributing their finite-cycle
+construction to an imported value of $\pi$. Q8 support still does not
+supply full native admissibility or settle the original small-chart task.
+
 ## 5. What the native projection tests establish
 
 The [owned Role projection](../../03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseCarrier.lean)

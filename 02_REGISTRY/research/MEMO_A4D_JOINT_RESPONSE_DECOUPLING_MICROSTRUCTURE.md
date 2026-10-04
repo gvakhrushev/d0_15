@@ -19,6 +19,19 @@ It does not satisfy or replace the original small-chart admissibility, so
 that parent task is not retired. The positive finite-probe result retains
 its declared log-O(h) domain.
 
+The golden closure proposal is now integrated into
+[the constitutive synthesis, Sections 4.1--4.2](A4D_CANONICAL_CONSTITUTIVE_GERM_SYNTHESIS.md#41-the-golden-residue-has-enough-decay-for-the-original-four-dimensional-owner-sum).
+The exact balance gives phi^4*delta0=phi/2<1: a native golden residue
+bound on the normalized metric-response error would close the unchanged
+four-dimensional raw sum without C7. The required response bound is stated
+for every mesh and is not inferred from scalar identities or a Cauchy
+owner for another operator. The same existing nonlinear witness now has
+an explicit signed Q8 lift from the owned Omega8 multiplication/cocycle.
+Its links use only integer matrices, so changing the structural angle
+constant does not eliminate that obstruction. A faithful one-turn
+smooth bridge for pi0 preserves the original cosine metric and Einstein
+source after coordinate conversion.
+
 The [constructive finite action-probe synthesis](A4D_NATIVE_FINITE_PROBE_COMPLETION.md)
 now proves one finished measurement theorem on general fixed smooth metrics.
 For the unchanged full action, every log-$O(h)$ preparation with full-row

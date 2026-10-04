@@ -1,7 +1,7 @@
 # A4D full-Lorentz fixed-curved-source refusal
 
 Task: EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE, Draft PR #310.
-Input head: f317a3b842b2d10c5a3a381b6b03cb9850e77f66.
+Input head for the signed Q8 integration: 720dee65f8c1c186f5862602a4723486eff4b566.
 Status: **exact nonlinear NO-GO on the stated full configuration domain**.
 The original task's sufficiently small identity chart remains **OPEN**.
 No admissibility restriction, action term or source convention is changed.
@@ -165,6 +165,71 @@ Equations (5)--(9) prove (2) on every mesh for **any** nondegenerate
 diagonal solder field, irrespective of its spatial variation. In particular
 they prove it on the fixed curved samples (1).
 
+### 3.1 The same field has an actual signed native Q8 lift
+
+The rotations in (7) need no external angular constant to construct.
+Use the owned multiplication table
+[Q8DedekindMinimality](../../03_FORMALIZATION/D0/Claims/Q8DedekindMinimality.lean)
+and its signed Role equivalence/cocycle
+[Omega8Q8TypedBridge](../../03_FORMALIZATION/D0/Representation/Omega8Q8TypedBridge.lean).
+On the real quaternion basis, define
+
+\[
+ {\cal R}(q)=\operatorname{diag}
+       (1,\operatorname{Ad}_q|_{\operatorname{Im}\mathbb H}),
+ \qquad \operatorname{Ad}_q(v)=qvq^{-1}.
+\]
+
+Then
+
+\[
+ {\cal R}(i)=R_1,\quad {\cal R}(j)=R_2,\quad
+ {\cal R}(k)=R_3,\qquad
+ \ker{\cal R}=\{1,-1\}.
+\]
+
+All matrix entries are integers. The words use precisely the owned
+relations $i^2=j^2=k^2=-1$, $ij=k$, $ji=-k$; no value of classical
+$\pi$ or of $\pi_0$ enters them. Calling an image a half-turn is its
+smooth geometric description, not a transcendental input to the word.
+
+Set $q_{03}=q_{12}=j$ and the four remaining $q_{rs}=k$. Keep the order
+
+\[
+ u_{x,r}=\prod_{s=0}^{r-1}q_{sr}^{\,x_s},
+ \qquad U_{x,r}={\cal R}(u_{x,r}).
+\]
+
+Every factor has order four, so $u$ is genuinely periodic on
+$L\in4\mathbb N$, including each seam. The adjoint representation is
+a homomorphism and gives exactly (8). Its actual four-link quaternion
+plaquettes are
+
+\[
+ u_{x,r}u_{x+e_r,s}u_{x+e_s,r}^{-1}u_{x,s}^{-1}
+   =\sigma_{x,rs}q_{rs},\qquad \sigma_{x,rs}\in\{1,-1\}.
+\]
+
+Every lifted face is noncentral and squares to -1, retaining the
+owned anisotropic self-return of Q8 rather than a native null ray.
+These signs are computed from the noncommuting words and retained,
+not silently replaced by independent face data. The literal certificate
+checks all 64 signed Role-cocycle products against the actual owned table,
+all 1024 lifted links and all 1536 lifted faces at $L=4$, including both
+signs. Its all-mesh extension follows from the displayed words and
+order-four periodicity. The projected field is still the exact full
+stationary/source-null field (2), tested against every physical Lorentz
+tangent, not merely against the finite subgroup.
+
+This supplies an actual **Q8 carrier preimage** of the existing
+counterexample. It does not establish the remaining native admissibility,
+metric realization, gravitational-response descent or interlevel
+operator conditions for arbitrary D0 states. In particular, the central
+Q8 orientation record is not identified with every earlier response-visible
+amplitude sign. Minimality of Q8 and closure of $\pi_0$ therefore cannot
+by themselves exclude this field; an exclusion would need an actual
+native admissibility theorem beyond those carrier identities.
+
 ## 4. Gauge quotient and the unavoidable chart boundary
 
 For every face in (9),
@@ -285,6 +350,7 @@ uses exact rational arithmetic and the existing literal matrix/star owner.
 records one $L=4$ curved sample:
 1536 actual based plaquettes, 6144 shared-link Euler rows,
 4096 unrestricted solder rows and 2560 Gram rows, all exactly zero.
+The same replay now retains the owned signed Q8 lift of that field.
 It checks every face's six momenta and every transported edge contribution,
 the true Gram lift, a wrong-involution hostile control and an actual
 nonconstant Lorentz dressing. Involutions and (8)--(9) prove the all-mesh
