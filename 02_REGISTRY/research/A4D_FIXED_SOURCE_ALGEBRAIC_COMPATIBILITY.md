@@ -262,6 +262,97 @@ h^3\left[h^{-2}\|\Xi(K_h)-\Xi(K_h^{\rm sm})\|_{\rm owner,1}\right]
 But Section 4 excludes those solutions. Equation (18) is a conditional
 control, not an instantiated counterexample or parent NO-GO.
 
+## 5.1. Every nonconstant positive warp forbids the positive conjunction
+
+The formal calculation above used independent jets `f,p,q,r`, not a
+cosine identity. It therefore gives a stronger direct obstruction, with
+no arithmetic hypothesis. Fix any smooth positive nonconstant periodic
+function f for which the owned #216 comparator is defined, and put
+
+\[
+g_f=\operatorname{diag}(1,-1,-f(y_1)^2,-f(y_1)^2).
+\]
+
+In particular f may be chosen arbitrarily close to 1 in the original
+smooth background chart. Periodicity and nonconstancy imply that f''
+is nonzero somewhere, so this is a genuinely curved background. Fix any
+smooth ten-slot source tau before all links and all meshes. Retain exact
+samples, the packed off-diagonal convention, and the original unweighted
+owner sum. Define
+
+\[
+\mathcal R_h(K)=h^{-2}
+\|\Xi(Q_h,K)-\Xi(Q_h,K_h^{\rm sm})\|_{\rm owner,1}.
+\]
+
+For every connection satisfying the ten exact source rows
+`Xi(Q_h,K)=h^2*tau(hx)`, independently of stationarity, link regularity or
+UV structure, the exact identity is
+
+\[
+\mathcal R_h(K)
+=\sum_x\|\tau(hx)-\rho_{{\rm sm},h}(hx)\|_{\rm owner,1}.
+\tag{18a}
+\]
+
+The right side has no connection dependence. The owned comparator
+expansion and Riemann sums give the following two exhaustive cases on
+any refining sequence of such roots:
+
+\[
+\begin{array}{ll}
+\tau\ne\rho_0:
+&h^4\mathcal R_h\longrightarrow
+\displaystyle\int_{\mathbb T^4}\|\tau-\rho_0\|_{\rm owner,1}>0,\\[6pt]
+\tau=\rho_0:
+&h^3\mathcal R_h\longrightarrow C_f,
+\end{array}
+\tag{18b}
+\]
+
+Here the exact packed coefficient (17) gives
+
+\[
+\boxed{\quad
+C_f=\int_0^1\left(2|f'f''|+\frac{|f'|^3}{f}\right)dy_1>0.
+\quad}
+\tag{18c}
+\]
+
+The strict inequality follows directly from f>0 and nonconstancy: f'
+is nonzero on an open interval. The two off-diagonal entries in (17)
+alone contribute `|f'|^3/f`. No signed cancellation is used. Uniform
+`O(h^2)` comparator remainders contribute `O(h)` to the second scaled
+sum, and fixed smooth functions have their ordinary Riemann-sum limits.
+This proves (18b) for arbitrary subsequences of allowed meshes. If a
+mesh has no exact source root, it contributes no assertion of existence.
+
+Consequently **no nonconstant positive warp admits both an exact
+refining fixed-source sequence and the original positive owner limit,
+for any choice of one fixed smooth source**. Equivalently, for every
+such warp and every fixed source there are `c>0` and `h0>0` such that
+every exact source root at `h<h0` obeys `R_h>=c*h^-3`. For
+`tau!=rho0` the stronger rate is `h^-4`. The statement applies to the
+entire original small link chart and, conditionally on source roots,
+to the full physical Lorentz domain. It assumes no C7 extension of
+the unknown connection. Constant f has `C_f=0`, as the flat control
+requires.
+
+This is a complete obstruction to the conjunction of fixed-source
+realizability and positive raw-owner response completion on the whole
+warped class. It does **not** assert an exact rooted counterexample:
+it leaves open whether a specified source fiber is nonempty. In the
+original endpoint notation, `J(g_f,tau)` is false for every tau; any
+actual proof of `B(g_f,tau)` would therefore immediately instantiate
+the required rooted NO-GO, without any additional UV-response estimate.
+Neither the original parent terminal nor retirement is asserted here.
+
+The obstruction is independent of pi, pi0 and phi: (17)--(18c) apply to
+every such f. Replacing a circle constant, imposing scalar golden
+identities, or using the already proved coarser action probe cannot
+remove this first correction while retaining the same action,
+comparator, exact fixed source and raw owner observable.
+
 ## 6. What this resolves and what it leaves
 
 The [exact warped rescue](A4D_WARPED_DESIGNATED_NORMAL_RESCUE.md) still

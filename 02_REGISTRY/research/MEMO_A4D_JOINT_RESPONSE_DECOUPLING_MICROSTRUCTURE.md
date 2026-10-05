@@ -4,6 +4,20 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [all-warp consequence of the complete comparator jet](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#51-every-nonconstant-positive-warp-forbids-the-positive-conjunction)
+now excludes nonvacuous positive raw-owner completion on every smooth
+positive nonconstant periodic warp in the original background chart,
+for every fixed smooth source. This uses no arithmetic property or
+regularity assumption on unknown links. The exact source equation fixes
+the gap independently of the connection. If tau differs from rho0 its
+raw gap grows as h^-4; if tau equals rho0 it grows as h^-3, with exact
+positive coefficient `integral(2*|f'*f''|+|f'|^3/f)`. Thus the positive
+fixed-source/raw-owner conjunction is impossible on this entire curved
+class. Any exact refining rooted pair in this class would already be
+the original negative witness; no further readout census would be needed.
+Existence of such a pair in the original small link chart remains open,
+so the parent terminal and lifecycle are not promoted.
+
 The [generic exact-source theorem](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#8-generic-exact-source-infeasibility-without-arithmetic-hypotheses)
 now excludes an exact sampled-Einstein realization assignment on any open
 family of smooth metrics. For a residual set of fixed curved metrics in

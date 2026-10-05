@@ -244,3 +244,33 @@ The limit forces the Einstein source, whose exact mesh fibers are empty.
 This concrete obstruction to nonvacuous positive completion does not
 require open-family nonemptiness. It neither proves all other source
 fibers empty nor establishes the parent's rooted gap terminal.
+
+## 10. A direct all-warp cut at the original response object
+
+The [all-warp theorem in Section 5.1 of the feasibility owner](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#51-every-nonconstant-positive-warp-forbids-the-positive-conjunction)
+uses the already computed full comparator coefficient, not a new
+stationary family. For every smooth positive nonconstant periodic f,
+the warped background has
+
+\[
+\|\rho_1\|_{\rm owner,1}
+=2|f'f''|+|f'|^3/f,
+\qquad\int_0^1\|\rho_1\|_{\rm owner,1}>0.
+\]
+
+Hence `J(g_f,tau)` fails for every fixed smooth tau. Exact source
+substitution proves that every actual refining root sequence would
+have a divergent original raw gap: rate h^-4 when `tau!=rho0`, and
+h^-3 with the displayed positive coefficient when `tau=rho0`.
+This statement retains all ten components and the absolute owner sum;
+it covers arbitrary unknown-link regularity and the original chart.
+It is independent of the circle constant and of any microscopic carrier.
+
+This decides the positive conjunction on the entire nonconstant warped
+class: no source choice can make exact refining roots and the original
+positive owner limit hold together. It does not prove `B` for any
+specified pair and therefore does not instantiate the original rooted
+NO-GO. Within this class the sole remaining constructive obligation for
+that terminal is `B` itself. Finding an exact refining fixed-input root
+would finish the negative proof immediately; no separate quartic,
+finite-probe or C7-free readout comparison remains in that route.
