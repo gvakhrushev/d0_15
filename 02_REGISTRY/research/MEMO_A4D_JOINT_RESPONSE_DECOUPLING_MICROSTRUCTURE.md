@@ -2082,3 +2082,125 @@ continuation, selector or claim/BOOK/CORE promotion is made.
 python3 02_REGISTRY/research/certificates/a4d_stationary_response_memory_check.py
 python3 02_REGISTRY/research/certificates/a4d_identity_circle_sign_cubic_gate_check.py
 ```
+
+## Fixed-source existence: full null-shear and temporal-Y audit
+
+[A4D_NULL_SHEAR_FIXED_SOURCE_EXISTENCE_AUDIT.md](A4D_NULL_SHEAR_FIXED_SOURCE_EXISTENCE_AUDIT.md)
+tests the proposed exact nilpotent reduction against every full link
+variation. On the nondegenerate null coframe
+E=I+H(x2)*k*kflat/2, every physical link may use both commuting null
+generators with arbitrary real coefficients depending on x2, in every
+role. The exponential truncates exactly, the restricted action
+telescopes, and all ten Gram response slots are linear. Nevertheless,
+full variations outside that subgroup give nonlinear equations. Their
+complete periodic elimination forces H and all link coefficients
+constant, and Xi=0, for every period L>=3 and without a size or
+regularity hypothesis. The exact full Euler residual 1/100 with
+H=0, a=1/10, b=-1/10 demonstrates why restricted stationarity was
+insufficient.
+
+A separate complete temporal-Y calculation permits an arbitrary
+invertible spatial solder matrix M(x0). Spatial-link boost rows
+conserve both matrices Jplus=(I+R)*cof(M) and
+Jminus=(I+Rinverse)*cof(M), with opposite phase placement.
+In the small chart their exact relation
+Jminus=Rinverse*Jplus fixes R, cof(M), and M. The axial current alone
+already forces a positive transverse warp factor constant. A varying
+factor can have every Xi slot zero while retaining 72 nonzero
+connection rows, including 2009/1209. The identity time-column
+deformation left over from this obstruction is a flat coordinate
+metric and has zero formal comparator response.
+
+Both certificates retain all 24 Euler rows and ten genuine packed
+Gram slots, pin the imported finite owners by SHA256, and default to
+immutable-ledger replay. The null certificate independently checks
+the odd-curvature pairing against the full Lorentz action, metric
+variation and 144 local generator incidences. The global periodic
+and matrix-current proofs are recorded separately from finite
+controls. No unrestricted null-field or full-Lorentz classification
+is inferred.
+
+This resolves the two stated existence proposals. It does not provide
+the missing exact refining fixed-source pair in the original chart.
+The parent source-image implication and rooted response-gap terminal
+remain PARTIAL/OPEN, Draft/IN_PROGRESS. No action, source convention,
+admission rule, lifecycle, public claim or Lean owner is changed.
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_null_shear_full_euler_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_temporal_cofactor_current_check.py
+```
+
+## Constructive completed source law and actual native record arrow
+
+The [finite-probe completion](A4D_NATIVE_FINITE_PROBE_COMPLETION.md)
+now includes a fully declared positive fixed-source endpoint, with
+an explicitly revised criterion in Section 15. Fix g and one smooth
+source density sigma before links. Use the same finite source
+functional h^2*A_h-h^4*sum sigma:Q. Its independently prepared
+centered metric contrasts satisfy
+
+\[
+ W_h(V)=\int(\rho_0[g]-\sigma):V+O_V(h^{2/3})
+\]
+
+uniformly over every rough endpoint preparation in the declared
+log-O(h), full-residual-O(h^2) domain. All preparations exist explicitly,
+using h*omega_LC; the full leading Palatini equation cancels every
+order-h connection row. Thus the completed source law W_h(V)->0 for
+all smooth probes is constructively inhabited exactly when
+sigma=rho0[g], with one fixed source across meshes. This is a
+closed completed variational law, not an assertion of finite exact
+joint roots or the original raw owner comparison.
+
+The audited Section 11 also proves exact full connection-stationary
+endpoints on an open one-coordinate curved metric family, with all ten
+probe components. Its uniform inverse and crucial forcing O(h|s|)
+give the shrinking chart without a projected-Euler shortcut.
+For the fixed nonlinear warp path f_t=f+t(f-1), the exact endpoint
+experiment at t=+/-1/2 has nonzero limit pi^2/625+O(h), uniformly
+over every admitted rough exact endpoint root.
+
+Sections 12--13 construct finite algebraic stationary-value quotients,
+binary rounded record sets, and positive trace-class detector limits.
+There is now an actual compatible surjection from native golden
+support S_(k+2) to k-record histories: two initialization letters
+are ignored and each later A/B letter selects the ordered min/max
+record, with singleton collapse. No unknown coding arrow is assumed.
+The pulled-back operator families retain exact prefix compression.
+The one-record response obeys
+||R(z)-R(w)||op=|z-w|(|z+w|+2), preserving its signed record injectively.
+At archive depth j its separation is attenuated by p^(2j); no
+depth-independent inverse precision is claimed.
+
+The [full stationary cotangent relation](A4D_STATIONARY_SOURCE_COTANGENT_RELATION.md)
+identifies the remaining mathematical distinction. On every smooth
+stationary stratum, pullback of Xi*dQ equals d(A restricted to that
+stratum). At singular metric projections, source directions need
+not be determined by critical action values. The actual #232
+vacuum has a rank-four frozen metric-normal Hessian despite all
+24 connection, 10 metric and 16 solder rows vanishing. An exact
+trace-free polynomial hostile protects against replacing the full
+source relation by its scalar action trace.
+
+The [expanded null proof](A4D_NULL_MULTIDIMENSIONAL_FIXED_SOURCE_OBSTRUCTION.md)
+now excludes arbitrary UV dependence in all four coordinates of that
+subgroup on a nonconstant fixed pp profile, in coefficient chart
+delta<=1/288. Its finite Laurent inverse has row bound 3 and derives
+||V||<=3h*C1 from full stationarity; the exact averaged CR energy gives
+C1<=h*(2*C2+5184*C1^2), so a refining fixed profile must be constant.
+This remains a subgroup result.
+
+The completed probe law and the source-relation theorem are distinct
+finished research results. The original exact-source/raw-owner
+terminal and physical Role/action-gate realization remain OPEN;
+Draft/IN_PROGRESS is retained.
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_finite_probe_palatini_check.py
+python3 02_REGISTRY/research/certificates/a4d_finite_probe_stationary_action_check.py
+python3 02_REGISTRY/research/certificates/a4d_finite_probe_golden_detector_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_record_arrow_check.py
+python3 02_REGISTRY/research/certificates/a4d_stationary_source_conormal_check.py
+python3 02_REGISTRY/research/certificates/a4d_null_multidimensional_full_euler_check.py
+```

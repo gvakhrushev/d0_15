@@ -2,6 +2,9 @@
 
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Input head: `aed0db1782184e8318cf9b150e5134be6800b177`.
+Exact-endpoint and detector extension input:
+`f317a3b842b2d10c5a3a381b6b03cb9850e77f66`; independently audited
+on `f4f88161325574e4c5750e0af4a8cc14a2f4b48e`.
 Status: **analytic theorem for the explicitly defined action-probe observable**.
 This is a completed construction, not a conjectured constant-readout premise
 and not a new Lean owner. The original fixed-source, raw-owner response task
@@ -613,3 +616,515 @@ parent terminal, task retirement, nor public/formal claim promotion follows.
 The analytic estimates above are the proof. Existing exact finite input
 certificates and repository guards check their owned inputs and integration;
 they are not advertised as a finite certification of all smooth fields.
+
+## 11. Exact preparations on an open curved metric family
+
+The preparation theorem in Section 3 applies to general smooth metrics
+with a controlled full-row residual. On an open family around the original
+curved cosine warp, the endpoints can instead be exactly stationary.
+This is a stronger existence statement on a smaller geometric domain.
+
+Let
+\[
+ E_0=\operatorname{diag}(1,1,f,f),\quad
+ f=1+(1-\cos(2\pi y_1))/50,\quad Q_0=E_0^T\eta E_0.
+\]
+Fix finitely many arbitrary smooth symmetric probes $V_j(y_1)$, with
+all ten Gram components allowed. There are $r,h_0>0$, independent of the
+mesh, such that every pencil
+\[
+ Q(s)=Q_0+\sum_j s_jV_j,\qquad |s|<r,
+ \tag{26}
+\]
+has a real exact full-connection-stationary solution $K_h^*(s)$ for every
+allowed $h<h_0$. Its logs lie in the invariant 24L-dimensional sector
+(dependence on $x_1$, all four link directions and six generators), are
+uniformly $O(h)$, and are analytic in the finite parameters $s$.
+Every fixed parameter derivative is $O(h)$ on smaller parameter balls.
+There is no frequency restriction within the invariant sector.
+
+Here is the uniform implicit argument, including the forcing estimate
+needed to stay in the shrinking log chart. Use
+\[
+ E(s)=E_0\sqrt{I+Q_0^{-1}(Q(s)-Q_0)}.
+\]
+The self-adjointness relative to $Q_0$ proves its exact Gram identity.
+The convergent square-root series gives a common complex parameter
+neighborhood and uniform smooth spatial seminorms there.
+
+Write $F_h(s,A)$ for the full Euler rows restricted to invariant fields.
+The [owned curved rescue](A4D_WARPED_DESIGNATED_NORMAL_RESCUE.md),
+Sections 4--5, gives $F_h(0,A_0)=0$, $\|A_0\|_\infty=O(h)$ and
+\[
+ H_0=D_AF_h(0,A_0),\qquad \|H_0^{-1}\|_{p\to p}\le36,
+ \quad1\le p\le\infty,                                      \tag{27}
+\]
+after increasing the mesh threshold. Indeed its inverse at the smooth
+comparator is at most 18 and the exact rescue changes that derivative
+super-algebraically. Uniform finite-face analytic estimates give
+\[
+ \|D_AF_h(s,A_0)-H_0\|_{p\to p}\le C|s|,
+ \qquad \|F_h(s,A_0)\|_\infty\le Ch|s|.                    \tag{28}
+\]
+For the second estimate split the parameter increment as
+\[
+ [F_h(s,0)-F_h(0,0)]
+ +[F_h(s,A_0)-F_h(s,0)-F_h(0,A_0)+F_h(0,0)].
+\]
+At identity links, opposite incident-face contributions cancel for
+constant area weights. Their remaining differences, and their parameter
+increments, are $O(h)$ by the fixed spatial $C^1$ bounds. The first
+bracket is therefore $O(h|s|)$. The second is $O(|s|\|A_0\|_\infty)$
+by a mixed analytic derivative bound. An $O(|s|)$ forcing without this
+extra factor $h$ would not establish the theorem.
+
+For $A=A_0+u$, let $N_h(s,u)$ be the quadratic remainder. Its Lipschitz
+bound on a ball is $C(\|u\|_\infty+\|v\|_\infty)\|u-v\|_\infty$,
+independent of mesh population. The equation is equivalent to
+\[
+ u=-H_0^{-1}\{F_h(s,A_0)
+       +[D_AF_h(s,A_0)-H_0]u+N_h(s,u)\}.                 \tag{29}
+\]
+Choose $r$ so $36Cr<1/4$, then $h_0$ so the nonlinear Lipschitz factor
+is below $1/4$ on a ball $\|u\|_\infty\le C_1hr$. Increasing $C_1$
+makes the ball invariant. This proves uniform contraction. Translation
+invariance of both the solution and background makes the complete Euler
+covector invariant: solving these rows solves every full-carrier row,
+including derivatives against noninvariant variations. No projected
+Euler equation has replaced full stationarity.
+
+The same contraction on a smaller complex polydisc is holomorphic;
+uniform convergence and Cauchy estimates give the asserted parameter
+derivatives. Real inputs give real fixed points. The coefficientwise
+recurrence and the same inverse, applied to any finite truncation, yield
+\[
+ \partial_s^\alpha(A_h^*(s)-A_h^{[N]}(s))=O(h^{N+1})
+ \tag{30}
+\]
+on still smaller parameter balls, for every fixed $\alpha,N$.
+Thus the exact family realizes the entire canonical asymptotic germ.
+In particular its exact envelope identity is
+\[
+ \partial_{s_j} I_h(Q(s),K_h^*(s))
+ =h^2\sum_x\Xi_h(Q(s),K_h^*(s))_x:V_j(hx_1).          \tag{31}
+\]
+The connection derivative term vanishes exactly. The leading limit is
+the same Einstein pairing (21), with the same packed Gram convention.
+
+Consequently all endpoint sets for the exact-root version of (4) are
+nonempty throughout (26). Estimate (5) remains uniform over every exact
+endpoint root in the declared log bound, including noninvariant rough
+roots; only the existence witness uses the invariant construction.
+No competing root is required to lie on $K_h^*(s)$ or continue through
+the pencil. These exact probes test all ten components against functions
+of $y_1$; they do not give exact endpoint existence for arbitrary
+four-dimensional localized probes. Section 8 continues to use the
+general residual-controlled preparations for that purpose.
+
+This theorem solves the connection equation at the endpoints. Its
+finite metric source is an output. It does not solve the incompatible
+joint equation with the exactly sampled continuum Einstein source.
+
+### 11.1 A fixed-width exact experiment with a nonzero output
+
+The original curved warp admits a particularly concrete experiment which
+does not require the probe width to tend to zero. Set
+\[
+ \psi=(1-\cos(2\pi y_1))/50=f-1,\quad f_t=f+t\psi,
+ \qquad t\in[-1/2,1/2].
+\]
+Every $f_t$ lies in $[1,53/50]$. Section 5 of the owned curved rescue
+extends its construction to any compact interval $0<a\le f\le b<\sqrt{5/2}$.
+Here $b=53/50$ and the frozen scalar denominator has the uniform gap
+$20-8b^2=6882/625>0$. Its finite kernel and first-moment bounds, followed
+by the same parametrix and contraction, are uniform in $t$.
+Thus both endpoint metrics have exact full stationary preparations for
+every sufficiently fine allowed mesh.
+
+The continuum action is exactly quadratic on this coframe path:
+\[
+ I(t)=\int_0^1(f_t')^2\,dy_1
+     =\frac{\pi^2}{1250}(1+t)^2.
+\]
+Consequently, for arbitrary exact endpoint roots in a fixed log-$O(h)$
+bound, including arbitrary four-dimensional UV patterns,
+\[
+ \boxed{
+ T_h=I_h(f_{1/2},K_+)-I_h(f_{-1/2},K_-)
+       =\frac{\pi^2}{625}+O(h).
+ }                                                        \tag{32}
+\]
+The denominator $2\epsilon$ equals one. The two endpoint errors in
+(20) give the stated bound uniformly; the continuum secant error is
+exactly zero. Its nonzero limit is $I'(0)$, the Einstein pairing with
+the tangent Gram variation of this declared path.
+
+This path is affine in $f$ and nonlinear in the Gram metric. Quadratic
+action along it does not imply a zero secant error for an arbitrary
+affine Gram pencil. Equation (32) is a nonempty exact experiment with
+fixed endpoints, rather than an assertion about the instantaneous
+response of every central root. Its algebraic finite readings may
+converge to $\pi^2/625$; the fixed-source arithmetic obstruction forbids
+an exact source equality at a mesh, not this measured limit.
+
+## 12. A finite exact quotient of all stationary action values
+
+The exact experiment has a finite algebraic record before any completion.
+For this statement, restrict Section 11 to trigonometric-polynomial probes
+with algebraic coefficients and algebraic endpoint parameters. The fixed
+endpoints of (32) satisfy this hypothesis. Sampled coframes in the
+declared square-root section are real algebraic.
+
+Fix a rational $M$ before choosing roots and use the polynomial chart
+bound $\|U_\ell-I\|_F^2\le M^2h^2$ on every physical link. Together with
+$U_\ell^T\eta U_\ell=\eta$ and all physical Euler equations, it defines
+a bounded semialgebraic set $Z_h^\pm$. For small $h$ the matrix bound
+implies the required log bound, and every family with a fixed log-$O(h)$
+bound is included after increasing $M$. Fix $M$ large enough to contain
+the exact existence witnesses. An inequality involving unevaluated
+matrix logarithms would not provide this semialgebraic description.
+
+On the Lorentz variety $U^{-1}=\eta U^T\eta$, so the literal action and
+physical Euler rows are polynomials with algebraic coefficients. Define
+\[
+ \Sigma_h^\pm=\{h^2\mathscr A_h(Q^\pm,U):U\in Z_h^\pm\},\qquad
+ S_h=\{(a-b)/(2\epsilon):a\in\Sigma_h^+,b\in\Sigma_h^-\}.
+ \tag{33}
+\]
+Each set in (33) is **finite and nonempty**, and every element is real
+algebraic. Indeed the [stationary-value arithmetic theorem](
+A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md) already proves algebraicity
+of every full stationary action value, even at transcendental link
+entries. Polynomial projection makes its image semialgebraic over the
+real-algebraic field. A semialgebraic subset of the line is a finite
+union of intervals and points; an image consisting only of algebraic
+numbers has no interval. Alternatively, stationarity makes the action
+constant along each of the finitely many piecewise smooth connected
+components. Section 11 supplies nonemptiness.
+
+Real quantifier elimination and algebraic root isolation compute an
+ordered finite description of (33) from the input polynomials. The
+projection/algorithm used here is the standard real-field theorem, for
+example [Parrilo, MIT 6.972, Lecture 18, Theorems 2 and 4](
+https://ocw.mit.edu/courses/6-972-algebraic-techniques-and-semidefinite-optimization-spring-2006/resources/lecture_18/).
+This is a terminating construction theorem, not a reported enumeration
+of the large D0 critical locus or a practical complexity bound.
+
+For a requested $\kappa_k=\varphi^{-k}$ choose a dyadic $d_k$ with
+$\kappa_k/8<d_k\le\kappa_k/4$. Using the proved error bound with a
+certified constant, fix a sufficiently fine mesh so every $s\in S_{h_k}$
+satisfies $|s-b|\le d_k/4$, where $b$ denotes the analytically proved
+limit, not a value supplied to the algorithm. The choice uses the error
+majorant and the existence threshold; it never compares with digits of
+$b$. For (32) the error majorant is $Ch$; for affine probes it is
+$Ch^{2/3}$. Constants and thresholds belong to the declared protocol.
+No efficient numerical implementation of their bounds is claimed here.
+
+Quantize by the fixed rule
+\[
+ z_k(s)=d_k\lfloor s/d_k\rfloor,\qquad
+ B_k=z_k(S_{h_k}).
+ \tag{34}
+\]
+Algebraic comparisons decide ties exactly. The image $B_k$ has at most
+two adjacent rational values, since $\operatorname{diam}S_{h_k}\le d_k/2$.
+Moreover
+\[
+ |z_k-b|\le5d_k/4\le5\kappa_k/16.                       \tag{35}
+\]
+A singleton is a trivial binary quotient; otherwise one binary letter
+codes the ordered pair. No root, branch, or minimum-action solution is
+selected. The quotient is for this scalar experiment only.
+
+Define finite histories $X_k=\prod_{j=1}^k B_j$ with projections deleting
+the last record. They are nonempty, their projections are surjective
+and compose exactly. Every independent sequence of admitted endpoint
+roots produces a history. The newest scalar obeys
+$|z_{k+1}-z_k|\le5(\kappa_{k+1}+\kappa_k)/16$, rather than an exact
+pullback identity. All histories have completed readout $b$ by (35).
+This constructs the constant completion used in Section 7 directly
+from finite algebraic value quotients.
+
+The algorithm computes the possible value codes and rounds a given
+algebraic value code. It is not an algorithm for extracting an exact
+code from an arbitrary unknown transcendental link array. The physical
+state-to-measurement interface is a separate obligation in Section 14.
+
+## 13. Positive detector operators on the golden prefix tower
+
+There is also an explicit operator realization of these finite records,
+with exactly compatible operators, not merely compatible scalar limits.
+This realization is a detector for the signed action contrast; it does
+not replace that action by a positive square.
+
+For a rational record $z$, set
+\[
+ D(z)=\operatorname{diag}(1,z+1,z-1,0),\quad
+ R(z)=D(z)^\dagger D(z),\quad \operatorname{Tr}R(z)=2z^2+3>0.
+ \tag{36}
+\]
+With coordinate effects $E_0,E_+,E_-,E_\emptyset$ and Born weights
+$P_i=\operatorname{Tr}(E_iR)/\operatorname{Tr}R$, the exact decoder is
+\[
+ \frac{P_+-P_-}{4P_0}=z.                              \tag{37}
+\]
+The rational single-block frame instantiates the finite positive-response
+arithmetic in [BornFiniteEffects](../../03_FORMALIZATION/D0/Core/BornFiniteEffects.lean).
+The four channel names in (36) are detector coordinates; their cardinality
+does not identify them with the physical four Role maps.
+
+Let $p=\varphi^{-1}$, $p+p^2=1$, and use the actual BOOK_01 support
+$S_n=\{A,B\}^n$ with cylinder probabilities $p,p^2$. On
+$H_n=L^2(S_n,\mu_\varphi)$ the prefix pullback and its adjoint are
+\[
+ J_nf(wA)=J_nf(wB)=f(w),\qquad
+ P_ng(w)=p\,g(wA)+p^2g(wB),\qquad P_nJ_n=I.
+ \tag{38}
+\]
+Thus the native golden closure is exactly the isometry condition.
+Its weight identities are owned by
+[DetectorSupportGoldenWeight](../../03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean).
+In orthonormal coordinates put $u=(\sqrt p,p)$ and
+$v=(p,-\sqrt p)$. They are orthonormal, $J_n=I\otimes u$,
+$V_n=I\otimes v$, and $H_{n+1}=J_nH_n\oplus V_nH_n$.
+
+At step $k=n-1\ge1$, let $E_n(z_k)$ be (36) on the first four address
+modes of $H_n$ and zero on the remaining modes. Set $D_2=0$ and use the
+fixed archive attenuation $\alpha_k=p^k$:
+\[
+ D_{n+1}(x)=J_nD_n(\operatorname{prefix}x)J_n^\dagger
+       +\alpha_k V_nE_n(z_k)V_n^\dagger,\qquad R_n=D_n^2.
+ \tag{39}
+\]
+Every finite detector matrix is self-adjoint. Orthogonality proves
+\[
+ P_nD_{n+1}=D_nP_n,\qquad
+ R_{n+1}=J_nR_nJ_n^\dagger+
+       \alpha_k^2V_nE_n(z_k)^2V_n^\dagger,\qquad
+ P_nR_{n+1}P_n^\dagger=R_n.                           \tag{40}
+\]
+All historical channel projectors lift with $J_n$, preserving their
+raw positive traces exactly. New normalization changes all old channel
+probabilities by one common factor, which cancels in (37).
+The factor $\alpha_k^2$ also cancels. There is one dimensionless unit
+reference, not a new physical calibration at each stage.
+
+Square roots in the orthonormal presentation are optional. In the
+weighted value basis define $W_nf(wA)=p f(w)$ and
+$W_nf(wB)=-f(w)$. Then $J_n^\dagger W_n=0$ and
+$W_n^\dagger W_n=pI$. Replace the second term of (39) by
+$\alpha_kp^{-1}W_nE_n(z_k)W_n^\dagger$. Its entries belong to
+$\mathbb Q(\varphi)$; all finite weights have algebraic codes. The full
+weighted matrix is not literally the rational-only Lean frame above;
+its conditional distribution within a record block is that rational
+frame. Equations (38)--(40) supply the additional linear algebra.
+
+For a fixed experiment, (35) bounds all recorded $|z_k|\le Z$ uniformly.
+Embed the finite Hilbert spaces using $J_n$ and let $\widehat D_{k+2}$
+act by zero on later detail spaces. Distinct updates are orthogonal
+blocks. Hence a self-adjoint compact operator $D_\infty(x)$ exists and
+\[
+ \|D_\infty-\widehat D_{k+2}\|
+       \le(1+Z)p^{k+1},\qquad
+ \operatorname{Tr}(D_\infty^2)
+       \le(2Z^2+3)\frac{p^2}{1-p^2}<\infty.            \tag{41}
+\]
+The trace of the omitted response is at most
+$(2Z^2+3)p^{2(k+1)}/(1-p^2)$. This is a genuine norm-convergent
+operator construction and a positive trace-class response. Attenuation
+is a fixed detector representation choice; it changes neither the
+decoded record nor the gravitational action. Without attenuation
+compatibility still holds and the bounded operators converge strongly,
+but the infinitely many unit reference channels give infinite trace.
+
+Different finite histories generally give different $D_\infty$.
+Only their completed newest-record readout is forced to be the same
+$b$; no microscopic or operator uniqueness is inferred from (35).
+The decoder divides by the selected block's positive reference weight,
+so no uniform probability-precision bound independent of depth follows
+from norm convergence. Each finite encoded channel and its precision
+remain part of the declared experiment.
+
+### 13.1 Exact binary support-to-record realization and separation
+
+The support-to-record arrow is explicit; it need not remain a missing
+coding premise. For each finite nonempty ordered set $B_i$ of (34), put
+$f_i(A)=\min B_i$ and $f_i(B)=\max B_i$. When $B_i$ is a singleton,
+both letters have its one value. For the actual golden support
+$S_{k+2}=\{A,B\}^{k+2}$ define
+\[
+ \widehat\rho_k(w)
+   =(f_1(w_3),\ldots,f_k(w_{k+2}))\in X_k.             \tag{41a}
+\]
+The two initial letters match $D_2=0$. Each coordinate map is
+surjective, so $\widehat\rho_k$ is surjective, and
+\[
+ \widehat\rho_k\circ\operatorname{prefix}
+  =\operatorname{prefix}\circ\widehat\rho_{k+1}.        \tag{41b}
+\]
+Every infinite native binary word therefore gives an actual admitted
+finite-record history. Equation (35), rather than an assumed constant
+output, makes every such history's newest-record limit equal to $b$.
+Pulling the detector family back along (41a) preserves (40) for
+state words with the same prefix. Matrix addresses in $H_n$ and the
+state word selecting a history are independent variables; they are
+not identified by this pullback.
+
+The positive detector also preserves the signed record injectively.
+For its one-record block,
+\[
+ \|R(z)-R(w)\|_{\rm op}
+ =|z-w|(|z+w|+2)\ge2|z-w|.                            \tag{41c}
+\]
+This follows directly from the two nonzero diagonal differences
+$(z-w)(z+w+2)$ and $(z-w)(z+w-2)$.
+Two different histories differing in record $j$ have
+$\|R_\infty(x)-R_\infty(y)\|_{\rm op}
+ \ge2p^{2j}|z_j-w_j|$ on that retained detail block.
+The factor decays with depth. Thus the map is injective on retained
+finite histories and has no depth-independent inverse bound.
+The unique completed Einstein readout does not identify their
+distinct finite records or detector operators.
+
+The [arrow checker](certificates/a4d_native_record_arrow_check.py)
+replays the shifted surjection, both prefix identities, generic
+decoder and response difference, six exact golden tail identities
+and 192 pulled-back finite operator identities.
+Its JSON ledger is immutable by default.
+
+## 14. What the native construction closes, and its remaining map
+
+Sections 11--13 now provide exact endpoint nonemptiness on an open curved
+family, finite algebraic readout quotients, terminal rational records,
+positive operators, and exact prefix compression. The fixed-width
+example (32) gives a nonzero Einstein output, with no branch selector
+and with all rough exact endpoint roots retained. The quantitative
+limit, rather than an assumed uniqueness axiom, supplies M1 canonicity.
+
+The linear family (40) is an explicit proof of compatibility. The owner
+[OperatorNaturality](../../03_FORMALIZATION/D0/Condensed/OperatorNaturality.lean)
+has a set-endomorphism type; it is not advertised as a preexisting Lean
+formalization of these weighted Hilbert operators.
+
+This is a finite **record** tower on the native weighted support, with
+the actual compatible surjection (41a). The remaining map is therefore
+not the coding of finite records on the golden support. The weighted
+support has not been identified with the independently fixed physical
+Role-coordinate state space and sector gate. That physical transfer
+must provide maps
+\[
+ \rho_k:X_k^{\rm native}\longrightarrow X_k,\qquad
+ \rho_k\circ p^{\rm native}_{k+1,k}
+       =\operatorname{prefix}\circ\rho_{k+1},          \tag{42}
+\]
+or a separately proved controlled version, together with the
+action/readout and calibration identities. Full $E_K=0$ at our
+endpoints is not by itself an identification with another native gate.
+The retained/detail split of (39) is likewise an explicit readout
+split, not an already proved physical archive identification.
+BOOK_00 Section 00.4 and the comment preceding the finite-factorization
+owner specifically retain these obligations. Coding alone cannot
+discharge them.
+
+The exact centered variation in
+[ArchiveVariation](../../03_FORMALIZATION/D0/Geometry/ArchiveVariation.lean)
+shows that finite secants are native variational objects. It concerns
+the seam Hilbert--Schmidt action, however; (36) does not prove that this
+positive seam action equals the signed A4D action. Such an identity
+requires an action-preserving map, not a change of terminology.
+
+In particular (42) and an identification with instantaneous raw $\Xi$
+have not been supplied by the new positive detector theorem. The
+original fixed-source/raw-owner terminal remains open, and the exact
+cosine-source infeasibility result is unchanged.
+
+## 15. Constructive fixed-source closure in the completed variational criterion
+
+This section explicitly revises the closure criterion. It proves a
+nonvacuous fixed-source theorem for completed metric probes, rather than
+claiming either original exact-source/raw-owner terminal.
+
+Fix one smooth $g$ with the owned smooth oriented Lorentz solder and
+one smooth packed Gram dual density $\sigma$, both before any links.
+The density has exactly the ten-slot convention of (22).
+The scalar functional corresponding to the original prescribed source is
+\[
+ J_h(g_s,A)=h^2\mathscr A_h(g_s,A)
+       -h^4\sum_x \sigma(hx):g_s(hx).                  \tag{43}
+\]
+This records the already declared external source: its local metric
+Euler equation is exactly
+$h^2\Xi_x-h^4\sigma(hx)=0$, or $\Xi_x=h^2\sigma(hx)$.
+No new gravitational density or connection-selection principle is
+introduced.
+
+For each fixed smooth metric probe $V$, use the independent endpoint
+preparations of (2), predeclare $\epsilon=h^{1/3}$, and read the
+centered contrast of (43):
+\[
+ W_h(V)
+  =T_{h,h^{1/3}}(V)-h^4\sum_x\sigma(hx):V(hx).          \tag{44}
+\]
+The completed source law means
+\[
+ \lim_{h\to0}W_h(V)=0
+       \quad\hbox{for every smooth symmetric probe }V. \tag{45}
+\]
+Equation (45) is a completed variational equation. It does not demand
+that any endpoint solve the finite metric equation of (43).
+Connection preparations retain all 24 finite Euler rows with the
+explicit residual bound (2). In Section 11's one-coordinate curved
+class, exact full connection-stationary endpoints can be used.
+
+**Theorem.** The completed source law has constructive finite
+preparations on every sufficiently fine mesh, and it holds uniformly
+over every allowed endpoint choice if and only if
+\[
+ \boxed{\sigma=\rho_0[g]
+   =-\tfrac12\sqrt{|g|}\operatorname{pack}(G^{\mu\nu}[g]).} \tag{46}
+\]
+The metric, source and probe are fixed across the mesh sequence.
+The source in (46) is specified from $g$ before preparing links.
+No mesh-dependent source output is substituted for it.
+
+**Proof.** The explicit rule $B_h=h\omega_{\rm LC}[g_s]$
+inhabits every preparation set by (13). For every arbitrary
+rough endpoint pair within the predeclared bounds, (5) and the smooth
+Riemann-sum estimate give
+\[
+ W_h(V)=\int_{\mathbb T^4}(\rho_0[g]-\sigma):V\,dy
+                         +O_V(h^{2/3}).               \tag{47}
+\]
+The estimate is uniform in the unknown endpoint choices. If (46)
+holds, it proves (45) with an explicit vanishing majorant. Conversely,
+(45) and (47) imply that the smooth density $\rho_0[g]-\sigma$
+annihilates every smooth component and bump probe. The fundamental
+lemma, with the existing off-diagonal packing, forces (46).
+Thus both existence and the source characterization are proved.
+
+Each fixed finite collection of probes has its own predeclared
+finite bounds $R,M$ and constants. No bounded constants over the
+unbounded set of all smooth probes are assumed. The same explicit
+LC preparation rule supplies all experiments. A single sequential
+realization can use a countable dense list of smooth probes: at stage
+$n$ retain its first $n$ probes and choose a mesh below all their
+finitely many thresholds, with every error at most $\delta_0^n/4$.
+These stages exist independently of endpoint choices. Each fixed
+probe then has the owned golden Cauchy completion. Continuity of
+the limiting smooth-density pairing extends the countable tests to
+all smooth probes.
+
+Finite source-record errors can be included in the same precision
+majorant. Source readings need not be algebraic: rational outward
+recording at predeclared accuracy suffices, as in the general
+GoldenTower construction. The exact finite algebraic quotients of
+Sections 11--13 concern the separate gravitational endpoint actions.
+
+This theorem closes the **completed metric-probe source law** with
+one fixed smooth source on a genuinely inhabited class. It retains
+arbitrary central physical states and rough endpoint preparations;
+its general endpoint assumption is the declared residual bound,
+not exact joint criticality. The original condition
+$\Xi=h^2\sigma$ at every mesh and its unweighted raw owner comparison
+remain distinct and OPEN. The physical Role/action-gate realization
+of Section 14 is likewise not supplied by (46).

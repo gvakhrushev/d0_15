@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "scope": "finite exact controls; analytic proof and remainder hypotheses are in A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+  "owner": "02_REGISTRY/research/certificates/a4d_j2_fixed_realization_ir_check.py",
+  "owner_sha256": "83ab02b6fffdc504ed0685fb1be0a3ccfccca5074e753825a383318b86546296",
+  "checks": [
+    {
+      "name": "G2_STAR_IS_MINUS_EPSILON",
+      "passed": true
+    },
+    {
+      "name": "OWNER_LORENTZ_GENERATORS",
+      "passed": true
+    },
+    {
+      "name": "PLAQUETTE_ORDER_ONE_ZERO",
+      "passed": true
+    },
+    {
+      "name": "PLAQUETTE_ORDER_TWO_CURVATURE",
+      "passed": true
+    },
+    {
+      "name": "SECOND_LOG_COEFFICIENTS_CANCEL",
+      "passed": true
+    },
+    {
+      "name": "ODD_CURVATURE_HAS_NO_EXTRA_HALF",
+      "passed": true
+    },
+    {
+      "name": "ALL_COFRAME_DENSITY_COEFFICIENTS",
+      "passed": true,
+      "detail": "36 identities polynomial in all 16 coframe entries; det(E)*L + adj(E) adj(E) F = 0"
+    },
+    {
+      "name": "PALATINI_CONNECTION_HESSIAN_IS_OWNER_H0",
+      "passed": true
+    },
+    {
+      "name": "PALATINI_CONNECTION_HESSIAN_DETERMINANT_256",
+      "passed": true
+    },
+    {
+      "name": "HOSTILE_ALL_PHASE_CONGRUENCE_FAILS",
+      "passed": true,
+      "detail": "z=(1,i,1,1), E=diag(1,1,s,s): entry(12,13)=-i*s^2*(s-1), 8 nonzero polynomial entries"
+    },
+    {
+      "name": "PALATINI_TORSION_MAP_INVERTIBLE",
+      "passed": true,
+      "detail": "determinant=16"
+    },
+    {
+      "name": "ARBITRARY_FIRST_JET_LC_IS_LORENTZ",
+      "passed": true
+    },
+    {
+      "name": "ARBITRARY_FIRST_JET_LC_SOLVES_ALL_24_ROWS",
+      "passed": true,
+      "detail": "all 24x64 first-jet coefficients checked"
+    },
+    {
+      "name": "WARP_LITERAL_LEADING_CELL",
+      "passed": true
+    },
+    {
+      "name": "WARP_STANDARD_SCALAR",
+      "passed": true
+    },
+    {
+      "name": "WARP_MINUS_HALF_EH",
+      "passed": true
+    },
+    {
+      "name": "WARP_INTEGRATION_BY_PARTS_DENSITY",
+      "passed": true
+    },
+    {
+      "name": "WARP_RAW_RESPONSE_ALL_TEN_SLOTS",
+      "passed": true
+    },
+    {
+      "name": "SHEARED_WARP_RAW_RESPONSE_ALL_TEN_SLOTS",
+      "passed": true
+    },
+    {
+      "name": "HOSTILE_NO_OFFDIAGONAL_FACTOR_FAILS",
+      "passed": true
+    },
+    {
+      "name": "HOSTILE_WRONG_ACTION_SIGN_FAILS",
+      "passed": true
+    },
+    {
+      "name": "NEGATIVE_ORIENTATION_FLIPS_DENSITY",
+      "passed": true
+    }
+  ],
+  "formulas": {
+    "leading_density": "-det(E)*R_standard/2",
+    "warp_leading_density": "-2*f*q - p**2",
+    "warp_scalar": "2*(2*f*q + p**2)/f**2",
+    "warp_raw_response": [
+      "-f*q - p**2/2",
+      "0",
+      "0",
+      "0",
+      "p**2/2",
+      "0",
+      "0",
+      "q/(2*f)",
+      "0",
+      "q/(2*f)"
+    ],
+    "torsion_map_determinant": "16"
+  }
+}
