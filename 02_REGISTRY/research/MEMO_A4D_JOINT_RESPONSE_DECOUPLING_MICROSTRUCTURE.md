@@ -4,6 +4,25 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [conformal forward-response theorem](A4D_CONFORMAL_FORWARD_SOURCE_BRIDGE.md)
+now transfers the completed action limit to the actual metric derivative of
+each retained exact connection-stationary root. Without any unknown-field
+derivative bound, amplitudes `r_h^3/h^2 -> 0` give the local fixed-source
+constraint `g:(tau-rho0[g])=0`, with tested error `O(r_h^2/h^(4/3))`.
+This includes every rough log-O(h) family. It leaves the traceless source
+channels and the parent's fixed small-amplitude chart open.
+
+The [native archive bridge](A4D_NATIVE_ARCHIVE_RECORD_BRIDGE.md) explicitly
+realizes the completed finite records on the existing flattened archive
+stages, with compatible quotient and section maps. Its constructed golden
+measure carries the positive detector and its exact refinement identities.
+This is a record/operator realization, not an identification of physical
+Role fields or their action gate. The [seam-action audit](A4D_NATIVE_SEAM_ACTION_GATE_BOUNDARY.md)
+proves that the direct fixed-fine action-preserving stationary transfer is
+impossible: the actual seam action is strictly convex, while the literal
+Palatini action has both signs through its stationary flat base. Varying
+fine fields or independent doubled sectors is not excluded by that proof.
+
 The [all-warp consequence of the complete comparator jet](A4D_FIXED_SOURCE_ALGEBRAIC_COMPATIBILITY.md#51-every-nonconstant-positive-warp-forbids-the-positive-conjunction)
 now excludes nonvacuous positive raw-owner completion on every smooth
 positive nonconstant periodic warp in the original background chart,

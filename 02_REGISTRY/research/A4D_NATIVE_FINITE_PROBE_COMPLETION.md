@@ -1007,10 +1007,11 @@ has a set-endomorphism type; it is not advertised as a preexisting Lean
 formalization of these weighted Hilbert operators.
 
 This is a finite **record** tower on the native weighted support, with
-the actual compatible surjection (41a). The remaining map is therefore
-not the coding of finite records on the golden support. The weighted
-support has not been identified with the independently fixed physical
-Role-coordinate state space and sector gate. That physical transfer
+the actual compatible surjection (41a). Section 16 below now supplies
+the additional concrete realization on existing flattened archive stages.
+The weighted support and archive records have not been identified with
+the independently fixed physical Role-field state space and sector gate.
+That physical transfer
 must provide maps
 \[
  \rho_k:X_k^{\rm native}\longrightarrow X_k,\qquad
@@ -1033,8 +1034,9 @@ the seam Hilbert--Schmidt action, however; (36) does not prove that this
 positive seam action equals the signed A4D action. Such an identity
 requires an action-preserving map, not a change of terminology.
 
-In particular (42) and an identification with instantaneous raw $\Xi$
-have not been supplied by the new positive detector theorem. The
+The record version of (42) is supplied by Section 16. Its physical-field
+interpretation and an identification with instantaneous raw $\Xi$
+have not been supplied by the positive detector theorem. The
 original fixed-source/raw-owner terminal remains open, and the exact
 cosine-source infeasibility result is unchanged.
 
@@ -1128,3 +1130,106 @@ not exact joint criticality. The original condition
 $\Xi=h^2\sigma$ at every mesh and its unweighted raw owner comparison
 remain distinct and OPEN. The physical Role/action-gate realization
 of Section 14 is likewise not supplied by (46).
+
+## 16. Concrete archive record and positive-operator realization
+
+The [native archive bridge](A4D_NATIVE_ARCHIVE_RECORD_BRIDGE.md) now
+constructs the record version of (42) on the existing
+`ArchivePoints n=Fin((n+2)^4)` tower, using its actual successive modulo
+maps. It does not flatten the distinct coordinatewise Role projection.
+For selected levels `n_0=2`, `n_(k+1)=(n_k+2)^2+2`, let `pi_k` be the
+actual composite native projection and `c_k=(n_(k+1)+1)^4`.
+Every old native point y has two explicit children `y` and `y+c_k`.
+Their first projection is y and all remaining intermediate maps fix y.
+
+The bit `chi_k(x)=A` for `x<c_k`, B otherwise gives
+`beta_(k+1)(x)=(beta_k(pi_k x),chi_k(x))`. These compatible quotients
+are surjective, with a compatible section built from the two children.
+Compose beta with (41a), on the stated two-initial-letter shifted indices,
+to obtain actual native archive maps onto the admitted record histories.
+The newest-record limit is the already proved scalar b on every address.
+
+There is also a full-support projective golden measure. Let `N_(k,y,b)`
+count the actual native children of y with bit b; both counts are positive.
+The transition probability `p_b/N_(k,y,b)` gives each bit its mass
+`p_A=p`, `p_B=p^2`, for every old y. Starting from uniform positive base
+mass constructs compatible full-support measures mu_k with
+`(beta_k)_*mu_k=mu_phi`. This is a specified construction; it is not an
+identity with a previously fixed native physical measure.
+
+The pullback `T_k f=f composed with beta_k` is an isometry from golden
+prefix Hilbert space to actual measured native archive Hilbert space.
+Native pullback/conditional expectation `J^A,P^A` and golden `J^B,P^B`
+satisfy
+\[
+ J_k^A T_k=T_{k+1}J_k^B,\qquad
+ P_k^A T_{k+1}=T_kP_k^B,\qquad
+ T_k^\dagger P_k^A=P_k^B T_{k+1}^\dagger.
+ \tag{48}
+\]
+The first identity is pointwise compatibility. The second follows because
+the new bit has the same conditional golden mass at every old point;
+the third is the adjoint of the first. Thus the transported operators
+`Dtilde_k=T_k D_k T_k^dagger`, `Rtilde_k=T_k R_k T_k^dagger` obey
+\[
+ P_k^A\widetilde D_{k+1}=\widetilde D_kP_k^A,\qquad
+ P_k^A\widetilde R_{k+1}(P_k^A)^\dagger=\widetilde R_k.
+ \tag{49}
+\]
+Positivity, trace-class tails, signed-record decoding and record separation
+are preserved. Operators vanish on the orthogonal complement of the
+isometry image; that complement is not identified with a physical sector.
+The [immutable native checker](certificates/a4d_native_archive_binary_bridge_check.py)
+replays all first selected archive points, the golden transition kernels,
+conditional expectations, sections and actual modulo projections.
+
+This closes the archive record/operator construction. The independently
+specified physical Role-field gate, action and calibration still need one
+typed realization. The [actual seam-action audit](A4D_NATIVE_SEAM_ACTION_GATE_BOUNDARY.md)
+already excludes the direct fixed-fine action-preserving stationary map:
+its coarse action is strictly convex, whereas literal Palatini paths
+through the flat stationary base have both signs. Varying fine fields or
+independent doubled sectors is outside that restricted obstruction.
+
+## 17. The actual forward response in conformal directions
+
+The [conformal forward-source bridge](A4D_CONFORMAL_FORWARD_SOURCE_BRIDGE.md)
+now identifies a part of the retained root's original Xi, rather than
+only its independently re-prepared action readings. Let every full
+connection Euler row of A_h vanish, with `||A_h||_infinity<=r_h`, `r_h>=h`
+and `r_h^3/h^2 -> 0`. There is no unknown-field derivative or phase bound.
+For every fixed smooth scalar psi,
+\[
+ \left|h^2\sum_x\Xi_x:(\psi g)(hx)
+       -\int\rho_0[g]:(\psi g)\right|
+ \le C_\psi\frac{r_h^2}{h^{4/3}}\longrightarrow0.
+ \tag{50}
+\]
+In particular the error is O(h^(2/3)) for r_h=Rh.
+
+The proof constructs a continuation through the retained central root:
+`A_h(s)=A_h-h omega_LC[g]+h omega_LC[(1+s psi)g]`.
+Conformal face weights multiply by the same scalar at each face base.
+The full weighted Hessian therefore differs from local scalar times the
+old Hessian by an operator of sup norm O(h). This supplies approximate
+stationary endpoints, with residual O(r_h^2+h r_h+h^2), without an inverse.
+The full action secant identity gives action error O(r_h^3/h^2).
+Because those face weights are exactly linear in s, the dangerous pure
+rough-field terms have zero third parameter derivative. A uniform third
+derivative bound and `epsilon=(r_h^3/h^2)^(1/3)` prove (50).
+At the central root the connection chain-rule term vanishes exactly, so
+this secant estimates its actual forward Gram derivative.
+
+If that root sequence also satisfies the original exact equation with
+one independently fixed smooth source, `Xi_x=h^2 tau(hx)`, then
+\[
+ \boxed{g:(\tau-\rho_0[g])=0\quad\hbox{pointwise}.}       \tag{51}
+\]
+Thus an exact vacuum in this amplitude class requires scalar-flat g.
+The theorem leaves traceless source components and fixed nonshrinking
+small amplitudes open. The exact Weyl-spin hostile control in the linked
+owner shows why the ordinary right/left/symmetric correction is insufficient
+for fixed-amplitude #232 fields: one full Euler row retains the first term
+`epsilon*t/4`. This does not exclude a UV-dependent correction.
+Neither (50) nor the native archive construction proves the original raw
+owner terminal, and the parent remains Draft / IN_PROGRESS.

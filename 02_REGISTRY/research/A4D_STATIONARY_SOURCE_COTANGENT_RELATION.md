@@ -188,6 +188,15 @@ horizontal continuation on the chosen nonconstant metric is still required.
 
 ## 7. Native finite-action completion needs the forward metric derivative
 
+The [conformal forward bridge](A4D_CONFORMAL_FORWARD_SOURCE_BRIDGE.md)
+now supplies that additional variation theorem in scalar metric directions.
+It builds approximate horizontal endpoints through every retained exact
+root with amplitudes `r_h^3/h^2 -> 0`, without a derivative bound on the
+unknown links. The actual forward response has tested error
+`O(r_h^2/h^(4/3))`; a fixed smooth exact source therefore obeys
+`g:(tau-rho0[g])=0` pointwise. This determines the trace, while the
+traceless conormal channels and fixed-amplitude parent chart remain open.
+
 The [completed metric-probe source law](A4D_NATIVE_FINITE_PROBE_COMPLETION.md#15-constructive-fixed-source-closure-in-the-completed-variational-criterion)
 is constructively solvable with one prior smooth Einstein source.
 Its criterion uses independently prepared finite metric contrasts.

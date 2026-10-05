@@ -562,6 +562,23 @@ give the pointwise canonical Einstein germ. The generic native canonicity
 interface is instantiated after this physical constancy estimate is proved.
 This analytic construction is not claimed to be a new Lean owner.
 
+The [actual archive bridge](A4D_NATIVE_ARCHIVE_RECORD_BRIDGE.md) now
+realizes those records and positive detectors on existing flattened native
+archive stages. A concrete cofinal quotient, compatible section and
+full-support golden transition kernel give exact native conditional
+expectation and response-compression identities. The measure is explicitly
+constructed; the physical Role-field action/gate is not identified by it.
+The [seam-action audit](A4D_NATIVE_SEAM_ACTION_GATE_BOUNDARY.md) excludes
+the direct fixed-fine action-preserving stationary transfer, while retaining
+the distinct possibilities of varying fine fields or independent sectors.
+
+The [conformal forward theorem](A4D_CONFORMAL_FORWARD_SOURCE_BRIDGE.md)
+also connects this completion to the actual Xi of each retained exact
+stationary root in amplitudes `r_h^3/h^2 -> 0`. It proves the local
+fixed-source trace law `g:(tau-rho0[g])=0`, with no unknown-field derivative
+bound. The remaining traceless directions and fixed nonshrinking chart are
+not inferred from this scalar horizontal transport.
+
 The finite record retains the original central connection and its sitewise
 Xi. Thus the #232 curved nongauge null family is retained; the #227 visible
 family is retained too, with its raw Xi still nonzero. Their completed
