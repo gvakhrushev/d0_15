@@ -261,7 +261,7 @@
         "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#3",
         "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
       ],
-      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold.",
+      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed.",
       "status": "OPEN_NONAFFINE_NATIVE_ARROW",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -441,11 +441,47 @@
         "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
         "02_REGISTRY/research/certificates/a4d_native_owner_diagnostics.lean"
       ],
-      "verification": "Compiled environment lookups, actual propositions, transitive D0 source hashes and printed axioms.",
+      "verification": "Compiled environment lookups, actual propositions, transitive D0 source hashes and printed axioms. Four finite operator/formula dispositions now have concrete research follow-up; old supported-owner names are not silently rebound.",
       "status": "DIAGNOSTICS_RECONCILED_STRONGER_OBLIGATIONS_OPEN",
       "terminal_class": null,
       "required_terminal": "CONTROL_ACCEPTED_SCOPE_OR_ACTUAL_PROOF",
       "depends_on": []
+    },
+    {
+      "id": "cochain_refinement_construction",
+      "scope": "Explicit frozen B0/B1 and all-sector tensor maps; unscaled versus literal L-scaled differential; full counting Gram and all-grade metric-measure algebra.",
+      "hypotheses": [
+        "Counting pairings and the existing modulo vertex projection; oriented cycle incidence, with C2 graph exception.",
+        "Fin/ZMod site identification and actual fixed CAR signs; no physical action or metric uniqueness is inferred."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md",
+        "02_REGISTRY/research/certificates/a4d_native_cochain_refinement.lean"
+      ],
+      "verification": "Twelve compiled generic propositions, 37 D0 pins, all-size analytic tensor proof and 92 grouped exact controls; all 16 sectors at sizes 2,3,4.",
+      "status": "PROVED_FINITE_CONSTRUCTION_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_FINITE_CORE_SCOPE",
+      "depends_on": []
+    },
+    {
+      "id": "composed_frozen_readout",
+      "scope": "Actual composition of adjacent frozen cochain maps with scale-corrected component readout on a fixed unit torus, including L to 2L.",
+      "hypotheses": [
+        "Physical fields are ordinary fixed smooth component samples.",
+        "Refinement uses the frozen maps and their actual composition; uniformly vanishing component corrections do not change the counterexamples."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#5-one-step-estimates-and-composed-fixed-torus-failure",
+        "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_check.py"
+      ],
+      "verification": "All-size composition formula; constant one-form exact L1 and squared L2 error 1, nonzero smooth-testing limit; fixed conformal scalar tail squared error 1/400.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THIS_READOUT_CLASS",
+      "depends_on": [
+        "cochain_refinement_construction"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -467,5 +503,6 @@
   ],
   "followup_input_head": "a30408721a3804e3d0c97fe2a210a556dbff4b67",
   "weighted_followup_input_head": "0af401558deca37468c077c40b53ac670a7ccaf3",
-  "volume_fiber_input_head": "ff5baf86642fca81714843b8ab48bed50939fe54"
+  "volume_fiber_input_head": "ff5baf86642fca81714843b8ab48bed50939fe54",
+  "cochain_refinement_input_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764"
 }

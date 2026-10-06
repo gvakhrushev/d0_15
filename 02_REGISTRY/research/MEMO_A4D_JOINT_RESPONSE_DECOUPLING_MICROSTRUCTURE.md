@@ -4,6 +4,15 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [native cochain construction](A4D_NATIVE_COCHAIN_REFINEMENT.md) now
+constructs the documented refinement maps, proves their 1D operator identities
+and computes all 16 Gram sectors. The literal L-scaled forward differential
+requires the degree factor ((L+1)/L)^k. Full counting trace at L=2 is 625;
+the old 256 arithmetic has only a partially normalized trace interpretation.
+Composing the frozen maps from L to 2L fails physical resampling even on a
+constant one-form: normalized L1 and squared L2 errors stay exactly 1.
+This is a scoped readout obstruction, not an action-transfer or parent terminal.
+
 The [native affine-profile theorem](A4D_NATIVE_AFFINE_PROBE_NOGO.md)
 now excludes the weak completed metric-contrast transfer for fixed positive
 quadratic seam actions with affine actual metric fibers and full auxiliary
