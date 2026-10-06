@@ -517,6 +517,26 @@
       "depends_on": [
         "reference_weight_lorentz"
       ]
+    },
+    {
+      "id": "spectral_flux_descent",
+      "scope": "Spectral functions of the literal native flux matrix with the actual scalar/exterior frame action; the owned squaredFluxEnergy at that explicit candidate binding.",
+      "hypotheses": [
+        "Exact arbitrary-function classification admits the two full nondegenerate raw frame orbits and the constant scalar sector.",
+        "The quantitative curved obstruction admits the two fixed smooth conformal raw solders and their fixed proper boost, with normalized counting energy and arbitrary alpha_h.",
+        "No claim is made that the independent kernel owner already selected this H(e), or that arbitrary refinement-dependent nonlinear functions cannot collapse."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_SPECTRAL_FRAME_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_spectral_frame.lean"
+      ],
+      "verification": "Fourteen compiled propositions with 58 transitive pins; literal matrix/energy square form, arbitrary scalar descent theorem, all-size curved action defect >=1/8, and 57 exact grouped controls with a protected collapsing-response counterexample.",
+      "status": "PROVED_SCOPED_ACTION_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THIS_SPECTRAL_BINDING",
+      "depends_on": [
+        "reference_weight_lorentz"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -540,5 +560,6 @@
   "weighted_followup_input_head": "0af401558deca37468c077c40b53ac670a7ccaf3",
   "volume_fiber_input_head": "ff5baf86642fca81714843b8ab48bed50939fe54",
   "cochain_refinement_input_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
-  "reference_weight_input_head": "75527846bf3603a1c51acf445f8354e3254341be"
+  "reference_weight_input_head": "75527846bf3603a1c51acf445f8354e3254341be",
+  "spectral_frame_input_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b"
 }

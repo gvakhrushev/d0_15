@@ -4,6 +4,15 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [spectral-frame boundary](A4D_NATIVE_SPECTRAL_FRAME_BOUNDARY.md) now
+tests the existing nonlinear quadratic spectral energy at the literal flux
+matrix. Its normalized action changes by at least 1/8 across one of two
+fixed genuinely curved frame orbits, for every coefficient and every L in
+4N. A generic Lean theorem also forces any exactly frame-descending scalar
+spectral function to be constant on the full declared class. Refinement-
+dependent collapsing functions are a protected exception to that broader
+asymptotic inference. No physical gate or action is added.
+
 The [shape-sensitive reference-weight classification](A4D_NATIVE_REFERENCE_WEIGHT_BOUNDARY.md)
 now excludes every coefficient of the actual `I+H+c M_q` family from raw
 Lorentz scalar descent. The sharp two-orbit defect 5/86 persists even for
