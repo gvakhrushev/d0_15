@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `a4a0ee1ce0a48fe07da0da036e122262e8cc7d44` through
+#310 at `32e7a1da7c191ef8567647d56d69995b475a84bb` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -69,5 +69,12 @@ frame obstruction, preserving arbitrary refinement-dependent collapsing
 functions as an exception to broader asymptotic claims. These results add
 no native action or physical on-shell gate.
 The receipt preserves the previous input head
-080cb15ceb6b273f1f4bb5ccaae50251307d257b. Do not promote
+606d8774bcaf4684d8caac60cb73912a8827091a. The intake also includes the literal vector/source and
+mixed-parent/source classifications with their exact range, kernel and
+residual exceptions, plus the actual verification/process and phase-refinement
+classification. Formal verifiability and the existing positive class-level
+M1 result do not select physical dynamics. The actual four-Role source
+quotient/range construction and separate canonical phase variational-source
+obstruction are included with their carrier and normalization boundaries; full-phase rigidity, sparse-level
+exceptions and composed errors keep their stated scopes. Do not promote
 claims/BOOK/Lean, merge or retire #310, or replace #202/#317 terminals.

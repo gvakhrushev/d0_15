@@ -36,9 +36,11 @@
       "owners": [
         "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
         "03_FORMALIZATION/D0/Foundation/PhysicalComparisonRepresentation.lean",
-        "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean"
+        "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean",
+        "03_FORMALIZATION/D0/Synthesis/ConcretePhysicalDetectorRepresentation.lean",
+        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md"
       ],
-      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers.",
+      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -259,9 +261,10 @@
       ],
       "owners": [
         "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#3",
-        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md"
       ],
-      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed.",
+      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed. Actual phase half-turn permutations have adjacent error 1/L but composed error 1/2. Exact phase rigidity only applies on all consecutive levels; sparse subsequences and four-Role/flattened carriers remain distinct.",
       "status": "OPEN_NONAFFINE_NATIVE_ARROW",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -285,9 +288,10 @@
         "03_FORMALIZATION/D0/Geometry/A4DDiscreteEnergyKernel.lean",
         "02_REGISTRY/research/A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md#3",
         "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md",
-        "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md"
+        "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md",
+        "02_REGISTRY/research/A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md"
       ],
-      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient. The literal flux coframe source is now derived; its nonlinear Lorentz gate fails on the scalar sector. Metric stress/Ward for a physical combined system remains OPEN. The actual real-skew vector action now has compiled first variations and joint conjugation Ward, but its freely stationary field has zero background response; a supplied skew current is not physical metric stress. The existing mixed parent now has compiled actual field derivatives and zero full constitutive source for its positive scalar-form class; its invertible indefinite source relation and genuine radical exceptions are classified. No physical star or Ward premise is selected by that result.",
+      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient. The literal flux coframe source is now derived; its nonlinear Lorentz gate fails on the scalar sector. Metric stress/Ward for a physical combined system remains OPEN. The actual real-skew vector action now has compiled first variations and joint conjugation Ward, but its freely stationary field has zero background response; a supplied skew current is not physical metric stress. The existing mixed parent now has compiled actual field derivatives and zero full constitutive source for its positive scalar-form class; its invertible indefinite source relation and genuine radical exceptions are classified. No physical star or Ward premise is selected by that result. The actual four-Role local source quotient is now compiled and its finite source representation inverse is constructed with sharp counting norm bounds. It represents supplied edge responses; it neither generates the matter action nor proves the physical Ward identity. Canonical phase anomaly-sum sources fail even two local variational tests.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -330,7 +334,7 @@
         "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md#5-exact-range-obstruction-with-bounded-nonsingular-backgrounds",
         "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md#3-invertible-indefinite-form-exact-kernel-and-source-relation"
       ],
-      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol. The mixed-parent field Hessian has rank 2n+rank(K^T M^-1 K), with source-capable quotient ker(K^T M^-1 K)/ker K equal to the image radical; no physical gauge identification is inferred.",
+      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol. The mixed-parent field Hessian has rank 2n+rank(K^T M^-1 K), with source-capable quotient ker(K^T M^-1 K)/ker K equal to the image radical; no physical gauge identification is inferred. The separate source-readout Gram has a sharp inverse bound 1/(2L^4), but this is explicitly not the joint Euler operator; its raw observable kernel is retained.",
       "status": "OPEN_FOR_NATIVE_SYSTEM",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -583,6 +587,69 @@
       "depends_on": [
         "homogeneous_parent_bridge"
       ]
+    },
+    {
+      "id": "verification_process_refinement",
+      "scope": "Actual formal verifiability and literal point-test process runs; exact reversible point processes on the one-dimensional native phase tower, with full subsequence classification.",
+      "hypotheses": [
+        "Classical formal representation is distinguished from an effective or physical equality apparatus.",
+        "Point tests, all consecutive levels and exact commutation are real hypotheses of the respective Lean theorems.",
+        "Subsequence, approximate, four-Role and flattened-archive exceptions are retained; a point process is not silently treated as a physical variation."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+        "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean",
+        "03_FORMALIZATION/D0/Synthesis/ConcretePhysicalDetectorRepresentation.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean",
+        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_verification_refinement.lean"
+      ],
+      "verification": "Fourteen new proof declarations and two existing owner propositions checked in Lean, 32 transitive D0 pins; formal verifiability iff nontrivial empirical quotient, point-test runs iff bijections, exact all-level phase rigidity and literal native energy countercontrol. Analytical all-subsequence birth-block group and adjacent-versus-composed error theorem have independent exact finite controls.",
+      "status": "PROVED_SCOPED_INTERFACE_CLASSIFICATION_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_SCOPED_CLASSIFICATION",
+      "depends_on": []
+    },
+    {
+      "id": "local_source_quotient_range",
+      "scope": "Actual four-Role local variation space and symmetric-source edge quotient, with counting Riesz reconstruction and full finite spectrum.",
+      "hypotheses": [
+        "Actual simple nearest-neighbor graph and owned positive scale c=L^2; L=2 duplicate-neighbor exception is retained.",
+        "Symmetric raw sources, counting pairings and the full stated local variation space.",
+        "Readout-kernel is not identified with physical gauge, and source representation is not matter generation or the physical Euler range problem."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveStressEdgeReadout.lean",
+        "02_REGISTRY/research/A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md",
+        "02_REGISTRY/research/certificates/a4d_native_edge_source.lean"
+      ],
+      "verification": "Ten new compiled propositions and the actual local-variation isomorphism, 35 transitive source pins; full readout equivalence on the actual submodule. All-size analytical Gram c^2(2I+A^T A), sharp 2L^4 lower bound, source recovery, raw kernel and full Fourier spectrum; 59 grouped exact controls include all V=256/E=1024 integer matrices, factor/sign and nonzero conserved-kernel controls.",
+      "status": "PROVED_FINITE_CONSTRUCTION_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_FINITE_SCOPE",
+      "depends_on": []
+    },
+    {
+      "id": "canonical_phase_variational_source",
+      "scope": "Fixed canonical phase cycles L>=3 and the actual anomaly-sum source alpha C_L, even at the weaker variational equation restricted to two true cycle-edge perturbations.",
+      "hypotheses": [
+        "The original canonical fine/coarse cycle operators and modulo lift are fixed.",
+        "The actual source is proportional to the canonical coarse Laplacian; arbitrary signed reconstructed sources are outside this class.",
+        "The sharp residual is unscaled and is not promoted to a normalized continuum obstruction."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveFieldEquation.lean",
+        "03_FORMALIZATION/D0/Matter/ArchiveStressCoupling.lean",
+        "02_REGISTRY/research/A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md#5-separate-phase-source-obstruction-at-the-weaker-variational-gate"
+      ],
+      "verification": "All-size two-row seam and edge-pairing calculation gives gradient responses 6,0 versus source responses 6 alpha,6 alpha; squared residual is 18+72(alpha-1/2)^2. Exact native matrix controls preserve signed local recovery and existing conserved projection, preventing an all-weak-source no-go.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THIS_SOURCE_CLASS",
+      "depends_on": [
+        "canonical_archive_gate"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -608,5 +675,7 @@
   "cochain_refinement_input_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
   "reference_weight_input_head": "75527846bf3603a1c51acf445f8354e3254341be",
   "spectral_frame_input_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
-  "parent_source_input_head": "8b96338505395dabf509e13422089d89685483b8"
+  "parent_source_input_head": "8b96338505395dabf509e13422089d89685483b8",
+  "verification_refinement_input_head": "606d8774bcaf4684d8caac60cb73912a8827091a",
+  "edge_source_input_head": "2cba34623e346eb75a7a9ae42a550e4a52178a54"
 }

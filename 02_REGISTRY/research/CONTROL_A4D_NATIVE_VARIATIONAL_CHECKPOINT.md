@@ -2,16 +2,16 @@
 
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
-Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published
-`606d8774bcaf4684d8caac60cb73912a8827091a`, following
-`8b96338505395dabf509e13422089d89685483b8`.
+Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
+`32e7a1da7c191ef8567647d56d69995b475a84bb`, following
+`606d8774bcaf4684d8caac60cb73912a8827091a`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-fifty-seven byte-identical artifacts, with source Git blobs and SHA256 hashes:
+sixty-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -48,14 +48,25 @@ fifty-seven byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and compiled actual-action/derivative/source capsule
   with output and transitive-source receipt.
 
-The source head and mathematical artifact blob were checked against GitHub.
+* [Verification, process admissibility and exact phase refinement](A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md),
+  exact checker/ledger and compiled interface/phase/native-energy capsule
+  with output and transitive-source receipt.
+
+* [Actual local-source quotient, range and phase-source boundary](A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md),
+  exact checker/ledger and actual local-variation/source-equivalence capsule
+  with output and transitive-source receipt.
+
+The published source head and both new proof blobs were independently verified
+against GitHub before this intake commit.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
 actual flux proof capsule, the six pins of the new weighted-owner capsule,
 the 52 pins of the null-Gram/auxiliary-gate capsule, the 37 pins of the
 cochain refinement capsule, the 56 pins of the reference-weight capsule,
 the 58 pins of the spectral-frame capsule, the nine pins of the literal
 vector source capsule, the 12 pins of the mixed-parent source capsule,
-the registry snapshot and all nine native certificates' input hashes match
+the 32 pins of the verification/refinement capsule, and the 35 pins of
+the actual local-source quotient capsule,
+the registry snapshot and all eleven native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
@@ -201,15 +212,41 @@ local file or an implicitly merged scientific parent.
     failures of the quantitative uniform bounds remain protected. A positive
     scalar Hodge formula does not select the physical supplied star.
 
+16. **Verification and phase refinement:** the actual formal verification
+    interface is equivalent to nontriviality of the empirical quotient;
+    literal point-test process runs are precisely bijections. The existing
+    concrete class-level M1 representation is preserved. Exact reversible
+    permutations on every consecutive one-dimensional phase level are
+    identities, while subsequences have the complete birth-block group.
+    Sparse L in 4N can retain macroscopic motion. A half-turn has adjacent
+    defect 1/L and composed defect 1/2. Native Dirichlet energy separates
+    two verified preparations. These statements do not select a physical
+    action, metric variation or process, and do not identify phase points
+    with four-Role sites or flattened archive points.
+
+17. **Actual local source quotient:** source equivalence under every real
+    four-Role local variation is exactly equality of its edge readouts,
+    proved in Lean. The counting Gram c^2(2I+A^T A) gives a constructive
+    local representative, sharp lower bound 2L^4, condition number 9 for
+    L>=3 and the explicit L=2 simple-graph exception. The nonzero conserved
+    raw-source kernel is retained. This finite source representation
+    inverse does not solve the coupled physical Euler range problem.
+
+18. **Weaker canonical phase source gate:** the actual alpha C_L source
+    fails two true local phase-edge variational tests at every L>=3,
+    with sharp unscaled squared residual 18. Signed reconstructed local
+    sources and the owned conserved projection remain positive controls
+    against extending this obstruction to all weak source fibers.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The fifty-seven imported files
+labels, Lean owners and BOOK text are unchanged. The sixty-nine imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The nine self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51 and 45 exact controls without
+The eleven self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76 and 59 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -257,6 +294,19 @@ relation, pairing scope and continuous-critical-root source theorem. Its
 45 controls cover exact signs/packing, six Hessian/radical strata, residual
 sharpness and the protected exceptions. Falsifying either the zero positive
 source or the residual exponent in the ledger is rejected.
+The verification/refinement capsule checks fourteen new proof declarations
+and two existing M1 propositions with five printed actual types and 32
+transitive D0 pins. Thirteen declarations use only the three standard axioms;
+three are axiom-free. The full infinite-phase result is compiled, while the
+subsequence group/counts and quantitative parity proof are analytical with
+independent exact controls. Seventy-six controls pass; ledgers changing the
+full-phase terminal or composed defect are rejected.
+The actual local-source capsule compiles ten new generic/owner propositions
+and the existing local-variation isomorphism with 35 source pins and standard
+axioms only. Three actual types are printed. The complete source quotient is
+compiled; its all-size Gram, spectrum, kernel dimensions and phase-source
+obstruction have analytical proofs and 59 exact controls. Falsifying either
+the sharp Riesz lower bound or the two-probe source gap is rejected.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -280,6 +330,8 @@ python3 02_REGISTRY/research/certificates/a4d_native_reference_weight_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_spectral_frame_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_vector_source_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_parent_source_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_verification_refinement_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_edge_source_check.py
 ```
 
 ## Preserved original obligations

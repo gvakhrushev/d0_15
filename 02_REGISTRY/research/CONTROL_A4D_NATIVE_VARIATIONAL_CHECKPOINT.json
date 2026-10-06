@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "97e5eb24d2377b24c7bb64bea06347b4d86a93301e72eabfd95b0e395ad0f12c",
-      "source_blob": "5b7ff2c29354002d39514bcc11be7a39c10c98f7"
+      "sha256": "d4e48d60ac4ce007a0407dd993a9d568154149a0c49ce756996e8f58fba141a7",
+      "source_blob": "0b859ad122abe697b621a8a7499b3336c11bc6e6"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "d717409f7f2bbc0b25b471329843fc7b6de4bf6665b590eb5a25626a3707e0e7",
-      "source_blob": "26565c21c80c1f327b9d9b74d3786c0a73c43d19"
+      "sha256": "2e7394d6242b9661c58486c8cfb89d0afb47bdbb403ce865c02533f6019a962e",
+      "source_blob": "a7ad115c4d300ddd6cc8190ac150ff5e04868976"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -286,6 +286,66 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_results.json",
       "sha256": "8b574cd62699ade134c0ac019feba8231736b9365b177b30f3ee42ac3bbe0dcd",
       "source_blob": "40497f32333a4960f96fc7b3dfeb2175cbfea65f"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
+      "sha256": "cc7e3ad2f2fa4567e238151414d84022a2078446acfbd76a48b4164d4fe2afa4",
+      "source_blob": "17bafc5e955c5fbdad306ac4e0001e1b8ce00f6d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_verification_refinement.lean",
+      "sha256": "b0e550b64eeca0bdf3f92adfaf432ce542b0973d9b8ff89e891a2bcdefa24d6b",
+      "source_blob": "5c0c103364bb5248ac7ec1315f74664059cb5d54"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_verification_refinement_check.py",
+      "sha256": "98098435694bb1d89ab9a1b82a0d7920758a8d7c82be4b962948a5d6da8e3453",
+      "source_blob": "d63e56dd3314adba14aee4dd5285826c43846c72"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_verification_refinement_certificate.json",
+      "sha256": "a2aa185e1825ffe573c7a16aa9f2b3575eb05d200e095a99e1f30a605314b087",
+      "source_blob": "f3401a2e9f64c50c1865e6c3ead5a09bda62633f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_verification_refinement_output.txt",
+      "sha256": "71f1d0c0b865229eab1a5ef16377f17aa357ecf80b78c9e5ed85de1c197648c5",
+      "source_blob": "0fcaeb082bb1ac64e70a697c25bfc6676dad7ac2"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_verification_refinement_results.json",
+      "sha256": "c0402c6a4a5a434da876fe794bd2fb79c3513dea6728ef0d22f519e37a3a27d8",
+      "source_blob": "cbc0444f1c501c8a1eb8e2956d377d6592f1b0dc"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md",
+      "sha256": "0cd2f87227c0f8f8b638e66e9133e26eb02a1fdd3379447b5f9182ec6b8cd590",
+      "source_blob": "79b9e5db7c25a2429ed4804897077cee6d1f614e"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_edge_source.lean",
+      "sha256": "eae0147033487393d4771dc657f7393334d9841a0659676936e6e7ff245ca8bf",
+      "source_blob": "3bd8d2325b9083f7c3deff7e5abfb01c0a9f7a4a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_edge_source_check.py",
+      "sha256": "ebafcd406184d7cb653ea893b41150e23df908d41dd765c13346ede1bd0de8c4",
+      "source_blob": "ec5b65897468f6ea548703145a279a1ba7f4f520"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_edge_source_certificate.json",
+      "sha256": "0ede06b32225632e6bf9ab96ab4d59bd58909392331b38ed3ce4ea0437dabe8b",
+      "source_blob": "1354cdd206e0cb5120b3efcc495a9da53412e7c3"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_edge_source_output.txt",
+      "sha256": "16b9a414fa5865cea205388db5db9282b22f2ff0dcf62d2d82f8339b277cb0b4",
+      "source_blob": "e08f877107e41af946de866f5cb6fdda66af2998"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_edge_source_results.json",
+      "sha256": "9a0b1f20ee0e88ec14a261135065059b25b206ebf8ac8af10251f1bbee71735a",
+      "source_blob": "584f32e667f53bfbaa6448892c228f8ca39d36f8"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -294,7 +354,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "8b96338505395dabf509e13422089d89685483b8",
+  "previous_source_head": "606d8774bcaf4684d8caac60cb73912a8827091a",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -311,11 +371,14 @@
     "Existing shape-sensitive referenceCellWeight family: all-coefficient raw Lorentz scalar obstruction, sharp uniform two-probe defect 5/86, literal scalar/exterior binding, coefficient-dependent full Fourier kernel/range classification at one nondegenerate constant coframe. Seventeen compiled propositions, 56 transitive source pins and 40 exact controls. No native action or physical gate is introduced.",
     "Literal-flux spectral binding: arbitrary fixed scalar function descent forces constancy; existing quadratic spectral energy has normalized frame defect at least 1/8 on two fixed genuinely curved smooth metrics at every L in 4N and every alpha_h. Fourteen compiled propositions, 58 transitive pins, 57 exact controls and a protected collapsing-function counterexample. No action or physical gate is added.",
     "Literal real-skew vector kinetic action: actual field/background derivatives, full free commutant gate, complete finite supplied-source Fredholm alternative and derived simultaneous-conjugation Ward. Twenty compiled propositions with nine transitive pins and 51 exact controls. A bounded nonsingular constant-rank fixed-source family has inverse delta^-2 and response 4 delta^-3; genuine kernel directions, source compatibility tangents and indefinite/constrained exceptions are retained. No physical D(g), metric stress, action or refinement is added.",
-    "Existing mixed primal/dual parent: literal supplied-pairing binding, actual three-field derivatives, full positive-form pointwise source annihilation, complete invertible indefinite kernel/source relation and image radical. Sixteen compiled propositions with 12 transitive pins include continuous-critical-root source vanishing; all-size analytic constant-rank and sharp square-root residual bounds retain their precise hypotheses. Forty-five exact controls and hostile ledgers protect indefinite, constrained, degenerate and unbounded exceptions. No physical star, action or constraint is added."
+    "Existing mixed primal/dual parent: literal supplied-pairing binding, actual three-field derivatives, full positive-form pointwise source annihilation, complete invertible indefinite kernel/source relation and image radical. Sixteen compiled propositions with 12 transitive pins include continuous-critical-root source vanishing; all-size analytic constant-rank and sharp square-root residual bounds retain their precise hypotheses. Forty-five exact controls and hostile ledgers protect indefinite, constrained, degenerate and unbounded exceptions. No physical star, action or constraint is added.",
+    "Actual verification/process interfaces and one-dimensional native phase refinement: formal verifiability iff nontrivial empirical quotient, point-test runs iff bijections, exact all-level phase rigidity, full subsequence birth-block group and adjacent-versus-composed error separation. Fourteen new proof declarations plus two existing M1 propositions checked with 32 transitive source pins; 76 exact controls and hostile ledgers. Concrete class-level M1 representation is retained; sparse, approximate, four-Role, flattened and physical-apparatus exceptions are explicit. No action, physical process or variation is selected.",
+    "Actual four-Role local stress quotient: complete source-readout equivalence compiled against the real local variation space, with ten new propositions plus the existing isomorphism and 35 source pins. All-simple-graph counting Gram c^2(2I+A^T A), sharp full four-Role spectrum, uniform finite source-representation inverse and retained conserved raw-source kernel. Fifty-nine exact controls including L=4 V=256/E=1024 integer matrices and hostile ledgers. This is not a matter action, physical gauge or the coupled GR range solve.",
+    "Canonical phase anomaly-sum source alpha C_L fails even two true local variational tests at every L>=3, with sharp unscaled squared residual 18. Signed local recovery and the existing conserved projection protect nonempty general weak-source fibers. Phase and four-Role carriers and their normalizations remain distinct."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "606d8774bcaf4684d8caac60cb73912a8827091a",
+  "source_head": "32e7a1da7c191ef8567647d56d69995b475a84bb",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "8b96338505395dabf509e13422089d89685483b8",
+  "source_parent": "2cba34623e346eb75a7a9ae42a550e4a52178a54",
   "source_pr": 310
 }

@@ -58,6 +58,26 @@ indefinite class instead has a completely specified kernel/source relation
 and image radical. An approximate-root estimate is sharp at square-root
 residual order under its stated uniform bounds. No physical star is selected.
 
+The [verification/process and phase-refinement classification](A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md)
+now determines the strength of the actual formal verification interface:
+verifiability is equivalent to a nontrivial empirical quotient, and literal
+point-test process runs are precisely bijections. Exact reversible processes
+on every level of the one-dimensional phase tower are identities. The full
+subsequence classification retains nontrivial sparse-level processes; a
+half-turn family has adjacent error 1/L but composed error 1/2. These results
+specify constraints on proposed native arrows without supplying a physical
+action or identifying phase points with spacetime sites.
+
+The [actual local-source quotient and range construction](A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md)
+now proves the full stress-readout equivalence on the real four-Role local
+variation space. The source representation Gram is c^2(2I+A^T A), with
+sharp lower bound 2L^4 and condition number 9 for L>=3. Its retained raw
+kernel is explicit. This finite source-representation inverse is not the
+coupled physical Euler inverse. Separately, two phase edge tests exclude
+every actual anomaly-sum source alpha C_L at even the weaker variational
+gate, with sharp unscaled squared residual 18. Signed reconstructed sources
+are a protected exception; the native matter action is still missing.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
@@ -65,14 +85,17 @@ than treating comments or theorem names as physical equations.
 
 | Owner | Independently defined data and variations | Actual equation/result | Source and refinement | Missing physical arrow |
 |---|---|---|---|---|
+| `Foundation.VerifiabilityNecessity`, `EmpiricalTheoryFactorization` | Supplied empirical observations and verified equality protocol; actual `run` and `pullTest` compatibility | Formal verifiability iff nontrivial empirical quotient; point-test runs iff bijections, with generic Lean proofs | Full predicate tests instead admit arbitrary runs; exact all-level phase permutations are rigid, while subsequences and approximate composites have classified exceptions | A physical equality apparatus, state preparation and allowed physical variations are not selected by these interfaces. The actual native Dirichlet energy separates two verified preparations. |
+| `Synthesis.ConcretePhysicalDetectorRepresentation`, `M1ClassAdmissibility` | Concrete member/value/history observations and independent two-sided catalogue histories | The class-level physical representation is constructed; admissible comparisons factor through both current inputs; primitive capability profiles are membership/value | Actual propositions and transitive axioms printed in the verification capsule | This existing result must be preserved. It is not a physical metric/action/source map or the stronger old faithful-capability representation of every comparison object. |
 | `D0.Geometry.ArchiveSeamCurvature`, `ArchiveVariation` | Fixed canonical fine/coarse cycle Laplacians and fixed cyclic lift; coarse symmetric row-sum-zero `LaplacianVariation` | $D=L_fJ-JL_c$; $S=\|D\|^2$; $\delta D=-J\delta L_c$; `ArchiveStationary` quantifies over those variations | `J` comes from `archiveRGPhaseProjection`; its phase index is not the four-Role product | No variable metric/coframe/link sector is constructed here. The old `local_support : Prop` field does not enforce a support equation. |
-| `ArchiveLocalLaplacianVariation` | Genuine edge conductance variations, with off-diagonal support zero away from adjacency | Exact conductance/local-Laplacian variation equivalence | Same cyclic phase carrier | This fixes locality of a variation, not an Einstein action or physical Role readout. |
+| `ArchiveLocalLaplacianVariation` | Genuine undirected edge conductance variations on `ArchiveRolePhasePoint n`, with off-diagonal support zero away from Role-product adjacency | Exact conductance/local-Laplacian variation equivalence | Four-Role product carrier; this is distinct from the one-dimensional phase carrier of `ArchiveVariation` | This fixes locality on its actual carrier. The isomorphism cannot silently be used as a phase-seam or physical metric variation map. |
 | `ArchiveFieldEquation` | Gradient $G_h=-2J^TD$ and supplied symmetric conserved `ArchiveStressSource` | `SourcedArchiveEquation` is $G_h=T$; it implies its variational pairing form | $T$ is a structure argument; no matter Euler action is defined by the implication | The unprojected canonical gradient is nonsymmetric; Section 2 excludes its equality with every such $T$. |
 | `Matter.GeneratedMatterSource` | `MatterRep` is supplied | The generated scalar source is identically zero by definition | Anomaly-free neutrality follows; the record of a localization no-go consists of `True` fields | It does not derive a nonzero local matter source or a dynamical coupling. |
-| `Matter.ArchiveStressCoupling` | Supplied `MatterRep` | $T=\mathrm{anomalySum}(R)L_c$; symmetry/conservation; anomaly-free $T=0$ | No native matter action, metric variation or physical ten-component stress map | A zero archive matrix is not a nonlinear matter-source realization on the Role carrier. It does not exclude curved Ricci-flat vacuum solutions in a different owned system. |
+| `Matter.ArchiveStressCoupling` | Supplied `MatterRep` | $T=\mathrm{anomalySum}(R)L_c$; symmetry/conservation; anomaly-free $T=0$ | No native matter action, metric variation or physical ten-component stress map. For fixed canonical phase cycles L>=3, two genuine local tests exclude every alpha C_L at the weaker variational gate | A zero archive matrix is not a nonlinear matter-source realization on the Role carrier. It does not exclude curved Ricci-flat vacuum solutions in a different owned system. |
 | `Matter.LocalTraceSource` | Supplied operator with `trace_eq_anomaly` | Diagonal density sums to its supplied trace; trace zero implies neutrality | The operator's localization is an input | No canonical local operator or metric Euler stress is constructed. |
 | `Matter.MatterLocalizationNonuniquenessNoGo` | Neutral completions on `Fin 2`; two explicit different local sources | Total zero readout is `M1Forced`; local neutrality does not choose a local distribution | Completion relation already requires total zero | This owns total neutrality, not a local source or its metric derivative. |
 | `Frozen.ConservedStressProjection` | Supplied matrix with divergence hypothesis | Symmetric conserved projection is pairing-equivalent on constrained variations | No matter action supplied | Projection cannot replace the derivation of stress or turn the stronger full matrix equation into a theorem. |
+| `Geometry.ArchiveStressEdgeReadout`, `ArchiveLocalLaplacianVariation` | Actual four-Role simple graph, local conductance equivalence and counting matrix pairing; c=L^2 | Full source-readout quotient equivalence now compiled. Counting Gram c^2(2I+A^T A) is invertible; all-size sharp spectrum and finite source recovery proved analytically | Nonzero conserved raw-source kernel is retained; L=2 has different simple-graph edge count | This constructs the finite local representative of supplied edge data. It does not generate matter from its own action, identify kernel with physical gauge, or solve the joint metric-connection-matter range problem. |
 | `Geometry.ArchivePrimalDualMovingAction` | Supplied perfect pairing, primal equivalence and map $S$ | Dual action is inverse transpose; passive moving $S$ is unchanged precisely on its stabilizer | Operator covariance | Neither the pairing nor $S$ is selected as a physical metric Hodge law by this theorem. |
 | `FinitePrimalDualHodgeParent`, `A4DPathWordParentWard` | Supplied primal/dual differentials, stars, pairing and independent fields $\psi,\chi,\lambda$ | Actual three-field derivatives compiled after literal linear-pairing binding. Positive scalar form forces $\chi=\lambda=0$, $K\psi=0$; invertible indefinite form has the complete $K^T M^{-1}K$ kernel relation | Full constitutive source is zero in the positive class; indefinite source radical and sharp approximate-root estimate are classified. A degenerate pairing enforces only its visible constraint | A physical star, same-carrier metric pullback and coupled Ward hypotheses remain unconstructed. Scalar Hodge positivity applies only when the actual supplied composition is that form; the old weighted-Hodge capstone is still numerical/Boolean. |
 | `Gravity.A4DParentWardStressDescent` | Supplied `df`, `readout`, coframe Euler and auxiliary Ward terms | Divergence zero follows **if** parent Ward, auxiliary EOM, coframe EOM and readout constraint all hold | Exact finite centered-gradient adjoint is owned | The physical parent Ward and EOM hypotheses are not proved by the descent theorem. |
@@ -224,6 +247,13 @@ uses `PhysicalComparisonRepresentation.Representation`. Its faithful laws,
 injectivity and realization of proper subcomparisons then need their own
 construction. The raw toy representation and abstract transport theorem do
 not discharge that physical instantiation.
+The separate class-level representation on the concrete observation carrier
+has already been constructed in `ConcretePhysicalDetectorRepresentation`;
+its actual proposition is checked by the new verification capsule. Neither
+that positive finite result nor formal operational verifiability alone
+constructs the requested native metric/variation/refinement maps. Their
+precise strengths and the full-phase versus subsequence distinction are
+now classified in the linked follow-up.
 
 The constant-rank hypothesis of the cited PDE-constrained Young-measure
 theorem must be proved for the chosen operator/class if that theorem is
