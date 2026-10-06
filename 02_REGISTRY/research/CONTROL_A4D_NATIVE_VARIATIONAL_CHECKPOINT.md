@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published
-`0af401558deca37468c077c40b53ac670a7ccaf3`, following
-`a30408721a3804e3d0c97fe2a210a556dbff4b67`.
+`ff5baf86642fca81714843b8ab48bed50939fe54`, following
+`0af401558deca37468c077c40b53ac670a7ccaf3`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-fifteen byte-identical artifacts, with source Git blobs and SHA256 hashes:
+twenty-one byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -22,11 +22,15 @@ fifteen byte-identical artifacts, with source Git blobs and SHA256 hashes:
 * [Signed quadratic Gram and actual flux boundary](A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md),
   its exact checker/ledger and a compiled Lean capsule with output and
   transitive-source receipt.
+* [Weighted trace, moving lift and compensator boundary](A4D_NATIVE_WEIGHTED_TRACE_LIFT_BOUNDARY.md),
+  its exact checker/ledger and the compiled literal-owner Lean capsule,
+  output and transitive-source receipt.
 
 The source head and mathematical artifact blob were checked against GitHub.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
-new actual flux proof capsule, the registry snapshot and both native
-certificates' input hashes match this main-based intake exactly.
+actual flux proof capsule, the six pins of the new weighted-owner capsule,
+the registry snapshot and all three native certificates' input hashes match
+this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
 local file or an implicitly merged scientific parent.
@@ -71,16 +75,35 @@ local file or an implicitly merged scientific parent.
    sector action and field equation under the owned exterior lift. These
    statements concern the standalone action and specified field sector;
    combined actions and additional native constraints are not excluded.
+7. **Weighted traces:** the actual archive volume coordinate is inverse
+   density. On the admitted sitewise physical-volume map and curved Gram
+   pencil it is affine. All uniformly bounded polynomial moment families
+   of a fixed operator therefore have bounded-degree centered secants,
+   whereas the literal Einstein action has nonzero derivatives of every
+   order at least two. Finite-anchor interpolation gives a general contrast
+   obstruction. Increasing degree, variable operators, other volume maps
+   and variable-coefficient auxiliary elimination remain outside the class.
+8. **Moving lift:** every exact linear intertwiner between adjacent
+   canonical cycles has rank at most one. Full independent unital-lift
+   stationarity gives the unique constant projector. This enlarged
+   continuous-variation class is not attributed to the existing fixed
+   modulo owner. An exact local full-rank stationary lift with action 3/4
+   and injective approximate lifts with degenerating inverse preserve
+   essential exceptions; no uniform approximation obstruction is claimed.
+9. **Compensator:** the existing positive-weight A2 action has zero
+   residual, action and diagonal response under its complete edge gate.
+   Seven literal identities compile in Lean. Its vertex-only gate is
+   weaker: an exact root with action 48 has nonzero edge response.
 
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The fifteen imported files
+labels, Lean owners and BOOK text are unchanged. The twenty-one imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The two self-contained checkers replay 71 and 60 exact controls without
+The three self-contained checkers replay 71, 60 and 86 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -89,6 +112,9 @@ The diagnostic capsule compiled and replayed against the consumed source
 tree. The new flux capsule compiled separately: its actual first-variation
 and gate propositions and six transitive axiom reports are retained,
 using only propext, Classical.choice and Quot.sound, with no sorryAx.
+The weighted-owner capsule also compiled, printing seven axiom reports
+with those same standard axioms. Immutable replay rejects a deliberately
+falsified local-lift rank in its ledger.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -105,6 +131,7 @@ Python setup and must pass on this intake head before acceptance.
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_quadratic_gram_flux_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_weighted_trace_lift_check.py
 ```
 
 ## Preserved original obligations
@@ -116,7 +143,8 @@ It remains Draft/IN_PROGRESS. #202's full-affine stationary terminal and
 tasks are neither retired nor relabeled by this checkpoint.
 
 The next gravity arrow is a core-owned state/variation/action realization
-outside the excluded quadratic and standalone homogeneous/flux classes,
+outside the excluded quadratic, bounded-degree volume-faithful trace and
+standalone full-gate classes,
 or a complete scoped obstruction for the remaining owners.
 Native source/Ward, nonlinear joint existence, soundness, recovery and
 physical constraints remain explicit obligations. A revision of the core

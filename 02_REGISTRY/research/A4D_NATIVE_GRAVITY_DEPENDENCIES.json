@@ -136,6 +136,65 @@
       "depends_on": []
     },
     {
+      "id": "weighted_trace_volume_bridge",
+      "scope": "Fixed native operator, uniformly bounded-degree polynomial in inverse-density volume coordinates, stated sitewise physical volume readout on the curved Gram pencil.",
+      "hypotheses": [
+        "Degree is bounded independently of refinement; all coefficients and sampled sites are independent of the pencil parameter.",
+        "Physical inverse-density volume identification is a candidate hypothesis, not inferred from a global volume identity.",
+        "No variable-coefficient auxiliary elimination or arbitrary nonlinear matter subtraction is included."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ConformalLaplacianTrace.lean",
+        "03_FORMALIZATION/D0/Geometry/HeatTraceEHProxy.lean",
+        "03_FORMALIZATION/D0/Geometry/HeatTraceA2Decomposition.lean",
+        "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_TRACE_LIFT_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_weighted_gate.lean"
+      ],
+      "verification": "All-degree polynomial trace and finite-anchor secant-limit proofs; Einstein derivatives of every order k>=2 are strictly nonzero. Literal proxy identities compiled in Lean; increasing-degree exception retained.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THIS_CLASS",
+      "depends_on": []
+    },
+    {
+      "id": "free_linear_lift_gate",
+      "scope": "All independently variable unital linear lifts between fixed adjacent canonical cycles, with a fixed positive seam norm.",
+      "hypotheses": [
+        "Full unital tangent directions, including descent toward the constant projector, are admitted.",
+        "No local support or other nonlinear constraint removes that direction.",
+        "Exact stationarity is distinguished from small seam residual and from a uniform inverse estimate."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveSeamCurvature.lean",
+        "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_TRACE_LIFT_BOUNDARY.md"
+      ],
+      "verification": "All-size Fourier/root-of-unity proof classifies every intertwiner; Euler descent gives the unique unital rank-one root. Exact local full-rank stationary and degenerating approximate countercontrols preserve exceptions.",
+      "status": "PROVED_SCOPED_SOLUTION_SET_CLASSIFICATION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_INJECTIVE_FULL_GATE_IN_THIS_CLASS",
+      "depends_on": []
+    },
+    {
+      "id": "weighted_compensator_full_gate",
+      "scope": "Existing positive-weight A2 compensator action with independent edge variations at fixed external geometry.",
+      "hypotheses": [
+        "All edge Euler equations are imposed, not only the vertex normal equation.",
+        "Weights are positive and not functions of the edge field whose derivative is being taken.",
+        "No additional coupled term changes the stated full gate."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Gravity/A2CompensatorNoether.lean",
+        "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_TRACE_LIFT_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_weighted_gate.lean"
+      ],
+      "verification": "Lean full edge gate iff residual zero, zero action and diagonal response, and zero weight variation. Exact auxiliary-only root has action 48 and nonzero edge response.",
+      "status": "PROVED_SCOPED_OWNER_CLASSIFICATION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_STANDALONE_FULL_GATE_CONTRAST_TRANSFER",
+      "depends_on": []
+    },
+    {
       "id": "probe_law",
       "scope": "Literal naked-star action on T4, smooth nondegenerate metric pencils, log-O(h) endpoint preparations with all 24 residual rows O(h^2).",
       "hypotheses": [
@@ -385,5 +444,6 @@
       "terminal": "Absolute complex divisor factorization and all higher-codimension rank strata remain separate."
     }
   ],
-  "followup_input_head": "a30408721a3804e3d0c97fe2a210a556dbff4b67"
+  "followup_input_head": "a30408721a3804e3d0c97fe2a210a556dbff4b67",
+  "weighted_followup_input_head": "0af401558deca37468c077c40b53ac670a7ccaf3"
 }

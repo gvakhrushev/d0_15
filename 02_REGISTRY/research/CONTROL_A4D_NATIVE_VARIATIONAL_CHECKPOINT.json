@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "072f327d40b76c7203723c731e47253addc464e2c86c83a66a8d4c749d86cbf5",
-      "source_blob": "4aadd6c0c3b8fc6e0dfcb561ce923ce71f42f638"
+      "sha256": "feea908987a0cef44ec25c94a9784b2fbf7c3305d2dbc02568f7d7ea756ccbe9",
+      "source_blob": "99e7cb0a40f59b54c71a14ba71b78a6028141442"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "911cd514cdc960d8f5f046cf97715abd48427de32845841044c8a0afbc701311",
-      "source_blob": "12802abd438ff8f939dd958b8003949e771e48fc"
+      "sha256": "1e078897b2651f8454b8e336dff54d3d3d4b9ebf5c266315c52d4d6312ecb318",
+      "source_blob": "53b678a04ec683d7c221422479e95967049ba2c7"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -76,6 +76,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_quadratic_gram_flux_results.json",
       "sha256": "8e239b9dd82d1760646319ca2b935b1e5339645821ad2c039002a50eed3ee0f1",
       "source_blob": "49a93540da243711a2d21083dc83cc9a0c4f3718"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_TRACE_LIFT_BOUNDARY.md",
+      "sha256": "36ca09057ea0542310a85290e914c21e7b8eb1d589c3afa7061877077b5ff271",
+      "source_blob": "d2d476d7d7f403a440e4ecf8c53eee5325cd2b81"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_weighted_gate.lean",
+      "sha256": "c2669179117c8528622648c2d6fed2eab4681bae66391d7628f2e65a774a606d",
+      "source_blob": "a7a171ecbd3ad9fee6fe17498e3da8317865473d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_weighted_gate_output.txt",
+      "sha256": "9f5d34e66fa40580e7cadee36307b22dadcd6e388a4bdedd0b97a42fd5025785",
+      "source_blob": "b6e16fdb6ccb6d6cae866d67262bedfa202fd17e"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_weighted_gate_results.json",
+      "sha256": "7506e98d33ece222236dfc81d0c749ebc5f3272d2b0b6688bb384194d8fa6b8f",
+      "source_blob": "b475a9e78ecd789fc99af836a83a9ed9a7d93ca1"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_weighted_trace_lift_check.py",
+      "sha256": "996a8e65bd1d5c4913003fb840a8a7d32ff5b813ecf47a711980c4ca4a63f4a9",
+      "source_blob": "68d9bad5c5672ef6ef9642e960f007f48eb512bc"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_weighted_trace_lift_results.json",
+      "sha256": "ff2fab5b40d6c7245092791ba0b983660430807b585da26ff098d1bb4bc1a2a2",
+      "source_blob": "4dbf66b43f1c13dbda2c8fdd014cdb8af8da80fb"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -84,7 +114,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "a30408721a3804e3d0c97fe2a210a556dbff4b67",
+  "previous_source_head": "0af401558deca37468c077c40b53ac670a7ccaf3",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -92,11 +122,14 @@
     "Compiled 12-reference diagnostic and semantic dispositions; stronger proof obligations remain open.",
     "Native owner inventory and minimal gravity dependencies.",
     "Signed quadratic stationary profiles and the exactly affine curved Gram pencil with nonzero Einstein third variation.",
-    "Actual flux first variations, full joint gate classification, local coframe source and nonlinear Lorentz scalar-sector obstruction."
+    "Actual flux first variations, full joint gate classification, local coframe source and nonlinear Lorentz scalar-sector obstruction.",
+    "Uniformly bounded-degree fixed-operator traces with the stated sitewise physical volume map; all-order Einstein derivative obstruction and growing-degree exception.",
+    "All-size adjacent-cycle linear intertwiner and full unital-lift gate classification, with local constrained and degenerating approximate countercontrols.",
+    "Literal positive-weight A2 compensator full edge gate versus auxiliary-only elimination; seven compiled identities and 86 new exact controls."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "0af401558deca37468c077c40b53ac670a7ccaf3",
+  "source_head": "ff5baf86642fca81714843b8ab48bed50939fe54",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "a30408721a3804e3d0c97fe2a210a556dbff4b67",
+  "source_parent": "0af401558deca37468c077c40b53ac670a7ccaf3",
   "source_pr": 310
 }
