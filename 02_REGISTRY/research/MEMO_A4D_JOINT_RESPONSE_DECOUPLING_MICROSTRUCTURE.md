@@ -4,6 +4,22 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [positive point-state refinement result](A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md)
+now classifies every compatible positive normalized state of the actual
+coordinatewise Role-point diagram, allowing arbitrary correlations. They
+are summable mixtures on the countable address histories. Arbitrary point
+placements and shrinking positive local kernels have only atomic weak
+limits, also under a vanishing total composed TV error. For direct nodal
+placement, even consistency on each fixed smooth doubling probe permits
+only delta_0: a smooth density bounded between m and M has a fixed smooth
+probe with gap at least m/32. Actual curved metric volumes and uniformly
+vanishing metric/readout corrections remain obstructed in this class.
+Twenty-five compiled propositions, 25 transitive D0 pins and 92 exact
+controls retain diffuse families with merely small adjacent errors,
+different refinement maps, nonlocal kernels and field-state exceptions.
+This is a physical-volume-arrow classification, not an inference from the
+action-contrast estimate or a completeness theorem for all native states.
+
 The [nonlinear log-det source result](A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md)
 now proves an all-size finite source-image theorem for the explicitly tested
 signed local-conductance binding: positive definite centered completion of
