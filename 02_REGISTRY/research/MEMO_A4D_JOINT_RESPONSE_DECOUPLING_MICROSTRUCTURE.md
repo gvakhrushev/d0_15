@@ -4,6 +4,25 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [nonlinear log-det source result](A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md)
+now proves an all-size finite source-image theorem for the explicitly tested
+signed local-conductance binding: positive definite centered completion of
+scaled edge data is necessary and sufficient, and the sourced root is unique.
+An exact three-vertex family proves inverse degeneration at bounded positive
+source. Twenty-three compiled propositions and 91 exact controls bind actual real
+variations, native edge normalization, both coupling signs and protected
+constraints. The full unsourced edge gate is empty; arbitrary supplied
+profiles can encode any action and do not select the native physical law.
+The prepared-contrast obstruction now covers every full jointly convex
+profile on affine metric fibers, including nonquadratic log-det terms.
+The direct coordinate readout fails a genuinely curved weak operator test
+with gap pi^2/20. An exact full-cell corrector with O(h) field amplitude and
+mixed response -9/20 protects prepared-readout exceptions. The bare positive
+log-det class with bounded endpoint sensitivity also fails calibrated
+curved transfer if its two stated uniform flat preparations are admitted;
+this argument allows nonlinear maps and arbitrary mesh couplings.
+The physical source, metric map and original parent terminal remain open.
+
 The [local source quotient and range theorem](A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md)
 now proves actual source equivalence for every four-Role local variation,
 with ten new compiled propositions and 35 transitive source pins. The finite
