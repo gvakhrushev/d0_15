@@ -48,15 +48,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
-      "id": "CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "REVIEW",
-      "affected_claims": [],
-      "exit_condition": "The finite operational-cut question, its state/cut/allowed-operation/record separation, its two-outcome terminal, and interpretation firewall are recorded; one bounded WORKER task is registered; generated work views match the manifest.",
-      "brief": "00_WORK/tasks/CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE.md"
-    },
-    {
       "id": "EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",

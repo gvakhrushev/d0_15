@@ -51,7 +51,9 @@ jobs:
         run: python 03_FORMALIZATION/tools/check_no_sorry_in_core.py --all
 
       - name: Check generated Lean views
-        run: python tools/generate_lean_views.py --check
+        run: |
+          python tools/test_generate_lean_views.py
+          python tools/generate_lean_views.py --check
 
       - name: Active work control
         run: |

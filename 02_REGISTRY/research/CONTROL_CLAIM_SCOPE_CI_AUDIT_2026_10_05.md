@@ -31,3 +31,7 @@ These remain review obligations, not completed changes. The audit PR stays Draft
 ## Validation limits
 
 The newly reconstructed validator and its 25 fixture tests ran locally. The complete repository was not available in the local execution environment; the full registry, full no-shortcuts scan and remote guards must be assessed on the new GitHub head. No full Lean build or current-head CI PASS is claimed by this document.
+
+## Follow-up implementation in CONTROL #321
+
+The deferred README Yukawa/Pisot/Fibonacci corrections, independent proof/release metadata, open-target precedence, generated-view regeneration and regression suite are now implemented in the #321 change set. The detailed owner is [CONTROL_AUDIT_TAIL_CLOSURE.md](CONTROL_AUDIT_TAIL_CLOSURE.md); acceptance still requires its actual current-head CI. Exact claim-to-declaration reconciliation is separately enumerated in [CONTROL_CLAIM_REFERENCE_AUDIT.md](CONTROL_CLAIM_REFERENCE_AUDIT.md), not passed off as string validation. Historical recovery limitations above describe the earlier #318 execution, not a loss of its now-published files.
