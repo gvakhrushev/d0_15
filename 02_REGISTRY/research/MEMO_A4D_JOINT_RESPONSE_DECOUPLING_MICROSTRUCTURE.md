@@ -4,6 +4,16 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [native verification and phase-process classification](A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md)
+now proves the exact formal scope of verifiability and admissible point-test
+runs, with a literal native Dirichlet-energy countercontrol. Exact reversible
+processes on all one-dimensional phase levels are identities. The complete
+subsequence group retains sparse-level macroscopic processes; adjacent
+O(1/L) commutation can have composed error 1/2. Fourteen new proof declarations
+and two existing M1 owner propositions are checked with 32 transitive source
+pins. The concrete class-level M1 representation is preserved. This result
+does not select native physical variations or complete any parent terminal.
+
 The [mixed-parent pointwise source result](A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md)
 binds the actual supplied bilinear action to all three independent field
 derivatives. A positive scalar form forces every full root's entire

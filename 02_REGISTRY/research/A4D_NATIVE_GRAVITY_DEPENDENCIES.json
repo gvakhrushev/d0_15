@@ -36,9 +36,11 @@
       "owners": [
         "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
         "03_FORMALIZATION/D0/Foundation/PhysicalComparisonRepresentation.lean",
-        "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean"
+        "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean",
+        "03_FORMALIZATION/D0/Synthesis/ConcretePhysicalDetectorRepresentation.lean",
+        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md"
       ],
-      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers.",
+      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -259,9 +261,10 @@
       ],
       "owners": [
         "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#3",
-        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md"
       ],
-      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed.",
+      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed. Actual phase half-turn permutations have adjacent error 1/L but composed error 1/2. Exact phase rigidity only applies on all consecutive levels; sparse subsequences and four-Role/flattened carriers remain distinct.",
       "status": "OPEN_NONAFFINE_NATIVE_ARROW",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -583,6 +586,28 @@
       "depends_on": [
         "homogeneous_parent_bridge"
       ]
+    },
+    {
+      "id": "verification_process_refinement",
+      "scope": "Actual formal verifiability and literal point-test process runs; exact reversible point processes on the one-dimensional native phase tower, with full subsequence classification.",
+      "hypotheses": [
+        "Classical formal representation is distinguished from an effective or physical equality apparatus.",
+        "Point tests, all consecutive levels and exact commutation are real hypotheses of the respective Lean theorems.",
+        "Subsequence, approximate, four-Role and flattened-archive exceptions are retained; a point process is not silently treated as a physical variation."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+        "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean",
+        "03_FORMALIZATION/D0/Synthesis/ConcretePhysicalDetectorRepresentation.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean",
+        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_verification_refinement.lean"
+      ],
+      "verification": "Fourteen new proof declarations and two existing owner propositions checked in Lean, 32 transitive D0 pins; formal verifiability iff nontrivial empirical quotient, point-test runs iff bijections, exact all-level phase rigidity and literal native energy countercontrol. Analytical all-subsequence birth-block group and adjacent-versus-composed error theorem have independent exact finite controls.",
+      "status": "PROVED_SCOPED_INTERFACE_CLASSIFICATION_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_SCOPED_CLASSIFICATION",
+      "depends_on": []
     }
   ],
   "preserved_parent_tasks": [
@@ -608,5 +633,6 @@
   "cochain_refinement_input_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
   "reference_weight_input_head": "75527846bf3603a1c51acf445f8354e3254341be",
   "spectral_frame_input_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
-  "parent_source_input_head": "8b96338505395dabf509e13422089d89685483b8"
+  "parent_source_input_head": "8b96338505395dabf509e13422089d89685483b8",
+  "verification_refinement_input_head": "606d8774bcaf4684d8caac60cb73912a8827091a"
 }
