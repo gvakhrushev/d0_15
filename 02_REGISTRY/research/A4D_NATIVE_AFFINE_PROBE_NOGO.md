@@ -235,6 +235,12 @@ requested here. It also does not exclude the nonlinear coframe Gram map
 or a core-owned moving-lift sector. No completeness theorem is supplied
 for those alternatives.
 
+The [subsequent signed-quadratic/Gram theorem](A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md)
+removes positivity and supplies an exactly affine coframe/metric Gram
+pencil with a nonzero Einstein third variation. Its explicit affine-fiber
+scope includes that Gram mechanism; it still does not cover arbitrary
+nonlinear constraints or moving-lift couplings.
+
 ## 6. Hostile controls and stationarity boundary
 
 * **Gate substitution:** choosing off-shell auxiliary data $y=g^2$ for

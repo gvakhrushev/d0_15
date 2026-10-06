@@ -3,6 +3,7 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published
+`0af401558deca37468c077c40b53ac670a7ccaf3`, following
 `a30408721a3804e3d0c97fe2a210a556dbff4b67`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
@@ -10,7 +11,7 @@ CONTROL review; this record does not announce a completed original parent.
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
+fifteen byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -18,10 +19,14 @@ nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
   and minimal gravity dependency graph.
 * [Kernel/semantic binding audit](A4D_NATIVE_OWNER_BINDING_AUDIT.md), compiled
   diagnostic capsule, output and transitive-source ledger.
+* [Signed quadratic Gram and actual flux boundary](A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md),
+  its exact checker/ledger and a compiled Lean capsule with output and
+  transitive-source receipt.
 
 The source head and mathematical artifact blob were checked against GitHub.
-All 103 consumed transitive D0 source hashes, the registry snapshot and the
-native certificate's input hashes match this main-based intake exactly.
+The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
+new actual flux proof capsule, the registry snapshot and both native
+certificates' input hashes match this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
 local file or an implicitly merged scientific parent.
@@ -51,25 +56,45 @@ local file or an implicitly merged scientific parent.
    Numeric refinement/trace facts are not substituted for stronger operator
    equations. All twelve diagnostics have explicit dispositions, while
    their stronger scientific/metadata obligations remain where specified.
+5. **Signed quadratic Gram profile:** the full auxiliary Euler system has
+   one quadratic stationary value even with indefinite saddles and kernels.
+   A null rank-one raw-coframe pencil makes its Gram metric exactly affine,
+   while the literal Einstein action has strictly negative third variation.
+   Pointwise limits of affine secants cannot reproduce it. No error is
+   differentiated, no positivity is needed, and no curved-path transfer
+   is substituted for the specified straight metric probes.
+6. **Actual flux source/gate:** the local 16-component coframe source is
+   derived from the literal energy. Lean proves exact field/coframe first
+   variations and the full unsourced joint gate iff psi=0, with arbitrary
+   coframe. Curved zero-field states have nonzero Einstein variation.
+   A proper rational boost preserves the raw Gram but changes the scalar
+   sector action and field equation under the owned exterior lift. These
+   statements concern the standalone action and specified field sector;
+   combined actions and additional native constraints are not excluded.
 
-Neither obstruction exhausts all nonlinear native readouts, constraints,
+These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The nine imported files
-are a reviewed research slice, not a new CORE promotion.
+labels, Lean owners and BOOK text are unchanged. The fifteen imported files
+are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The new self-contained checker replays 71 exact controls without writing
-its ledger. The source run also replayed the consumed Palatini controls
+The two self-contained checkers replay 71 and 60 exact controls without
+writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
 
 The diagnostic capsule compiled and replayed against the consumed source
-tree. One final **actual** `D0.All` compilation completed 4,545 jobs in
+tree. The new flux capsule compiled separately: its actual first-variation
+and gate propositions and six transitive axiom reports are retained,
+using only propext, Classical.choice and Quot.sound, with no sorryAx.
+One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
-not being used as that evidence.
+not being used as that evidence. The subsequent build helper confirmed
+the exact same supported Lean-source digest; no duplicate integration
+build is represented as new compilation.
 
 Repository/work/protocol, claim-strength/debt/coverage, generated-view,
 no-sorry and freshness mutation guards passed locally. Modern annotation
@@ -79,6 +104,7 @@ Python setup and must pass on this intake head before acceptance.
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_quadratic_gram_flux_check.py
 ```
 
 ## Preserved original obligations
@@ -89,8 +115,9 @@ It remains Draft/IN_PROGRESS. #202's full-affine stationary terminal and
 #317's complete complex stratification terminal remain independent. Their
 tasks are neither retired nor relabeled by this checkpoint.
 
-The next gravity arrow is a core-owned non-affine state/variation/action
-realization or a complete scoped obstruction for the remaining owners.
+The next gravity arrow is a core-owned state/variation/action realization
+outside the excluded quadratic and standalone homogeneous/flux classes,
+or a complete scoped obstruction for the remaining owners.
 Native source/Ward, nonlinear joint existence, soundness, recovery and
 physical constraints remain explicit obligations. A revision of the core
 would require a separate discussion; no new action or postulate is added.

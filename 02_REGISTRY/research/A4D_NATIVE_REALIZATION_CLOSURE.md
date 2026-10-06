@@ -12,6 +12,10 @@ The implementation follows the user's explicit closure plan. Its first
 completed result is the [affine prepared-contrast obstruction](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
 which is stronger than direct action nonidentification but has its own
 explicit class. A complete D0-core obstruction has not been proved.
+The [signed-quadratic/Gram and literal flux follow-up](A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md)
+removes the positivity assumption for quadratic profiles, supplies an
+exactly affine curved Gram pencil, and derives the actual flux action's
+local coframe source and full joint gate.
 
 ## 1. State, action, variation and source are separate owners
 
@@ -33,6 +37,10 @@ than treating comments or theorem names as physical equations.
 | `Gravity.A4DParentWardStressDescent` | Supplied `df`, `readout`, coframe Euler and auxiliary Ward terms | Divergence zero follows **if** parent Ward, auxiliary EOM, coframe EOM and readout constraint all hold | Exact finite centered-gradient adjoint is owned | The physical parent Ward and EOM hypotheses are not proved by the descent theorem. |
 | `Gravity.VariationalCarrierAudit` | Supplied graph Laplacian satisfying `IsGraphLaplacian` | Response defined as $2L$ is symmetric and has zero row divergence | Finite matrix identity | The capstone does not quantify over all variational carriers or identify $2L$ with a physical Einstein tensor. |
 | `Geometry.SpectralActionAdmissibility` | Supplied `ArchiveHeatTrace4D`; cutoff and stable-signature hypotheses | Named expansion/curvature slots are conjunctions of the supplied dimension condition and exponent equalities | Structural admissibility | No actual heat expansion coefficient, nonlinear metric variation or curvature-action equality is proved. |
+| `Geometry.HeatTraceEHProxy`, `HeatTraceA2Decomposition` | Supplied symmetric `L` and positive site weights `rho` | Actual off-diagonal sum of `L_ij^2/(rho_i rho_j)`; the second owner's convention has factor 1/2 | Exact trace-square decomposition and positivity | Variable weights make a genuinely nonlinear family. These trace identities do not supply its metric map, physical Euler gate or native source; this family is not dismissed by a fixed-norm proof. |
+| `Geometry.A4DDiscreteEnergyKernel` | Actual counting cochain field and uncentered coframe; full free variations in both | `E=<psi,(1+H(e))psi>/2`; complete joint unsourced gate iff `psi=0`, arbitrary coframe | Exact local 16-slot coframe source derived in the follow-up; no separate physical connection variable | Curved zero-field joint roots fail Einstein stationarity; literal scalar-sector action/field gate fails the owned nonlinear Lorentz quotient. Additional combined actions or restricted sectors need independent owners. |
+| `Geometry.A4DConstitutiveKernelClassification` | Supplied symmetric `H`, field and unselected `alpha`; `Q=1+H+alpha H^2` | Existing strict positivity for `alpha>1/4` forces zero field at its full field gate; at `alpha=1/4` kernel fields have zero first operator source | No coefficient or physical matter law is selected | This does not construct propagating native matter stress. Below the positivity range, field-only stationary values cannot be used to infer zero source. |
+| `Gravity.A4DLinearizedMetricResponse` | Finite Euclidean symmetric tensor seed and literal linear response | Quadratic action, exact first variation and gauge nullity | Algebraic finite construction, explicitly not an Einstein tensor | A standalone quadratic affine metric profile cannot reproduce the nonlinear third variation of the curved Gram pencil. |
 | `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001` owners | Supplied reference weight, second jet and covariance/composition hypotheses | Exact second-order identities and explicit coefficient nonselection | Finite algebraic covariance | The registry's current notes correctly retain the supplied Hessian, unselected coefficient and absent physical Einstein/stress interpretation. |
 | `A4D_NATIVE_FINITE_PROBE_COMPLETION.md` | Physical coframe/links and the naked-star action; independent endpoint preparations with full 24-row residual bound | $T_{h,h^{1/3}}=DI(g)[V]+O_V(h^{2/3})$, all ten slots, owner curvature sign | Constructed archive record/operator refinement; independently fixed affine source | A measured action law is not native on-shell stationarity, a native source or physical state/variation mapping. |
 
@@ -103,14 +111,18 @@ a nonvacuous positive realization or as #310's required exact hostile family.
 | Flattened archive number/record section | Constructed | Compatible records/operators and a specified golden measure; no physical Role-state action/Euler identification |
 | Direct fixed-fine seam/Palatini action transfer | Scoped obstruction | Actual coarse seam variations versus literal flat stationary Palatini sign paths |
 | Joint affine fine/coarse with fixed $J$, affine metric fibers, full auxiliary gate | Scoped obstruction | Completed contrast transfer with one calibration is impossible on the two smooth probes at the same explicit curved metric; null directions and arbitrary refinement dimension are allowed |
+| Arbitrary signed quadratic action with full affine auxiliary gate, over the specified metric or raw-coframe pencil | Stronger scoped obstruction | Every stationary value is quadratic even at indefinite saddles and with kernels. A curved pencil has affine raw coframe and affine Gram metric but a strictly nonzero Einstein third variation; no positivity or differentiation of errors is used |
 | Merely small native Euler residual | Insufficient | Requires a proved profile-value/range estimate; the exact checker exhibits an $O(h^2)$ residual and value gap one |
 | Nonlinear metric readout, constraints or moving $J$ | OPEN | The convexity argument does not exclude these. A compatible physical action/variation owner and quantitative refinement map are not supplied by a record encoding or passive covariance law |
 | Existing homogeneous mixed-parent action with bilinear pairing and full field gate | Scoped obstruction | Even arbitrary nonlinear metric dependence of the supplied operators leaves every stationary action value zero; this blocks its standalone completed-contrast realization. A singular-root control prevents inferring pointwise metric stress zero. |
+| Existing standalone cochain `fluxEnergy` with full free coframe/field gate | Exact solution-set classification | All and only `(e,0)` are joint solutions at every stage. Explicit curved Gram readouts have zero native source but nonzero Einstein variation. A proper rational boost also changes the scalar-sector action and field equation at fixed Gram metric |
 | Native matter metric variation and joint Ward identity | OPEN | Existing total neutrality/zero-source/conditional Ward results do not construct this system |
 
-The smallest remaining first-stage obligation is a typed non-affine native
-physical state/variation/action realization, or a completeness theorem
-excluding the remaining core-owned mechanisms. A map must precede a native
+The smallest remaining first-stage obligation is a typed native physical
+state/variation/action realization outside the now excluded quadratic and
+standalone homogeneous/flux classes, or a completeness theorem for the
+remaining core-owned mechanisms. Nonlinearity of the Gram readout alone
+does not discharge it. A map must precede a native
 solver: solving the independently declared naked-star physical system alone
 would not prove this native arrow.
 
