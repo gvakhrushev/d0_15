@@ -21,18 +21,40 @@ def module_from_file(f:str)->str:
 def esc(s:str)->str:
     return s.replace('\\','\\\\').replace('"','\\"').replace('\n',' ')
 
+# Summary status is a UI/ledger classification, never a proof of a claim.
+# Preserve the two independent registry axes verbatim in every emitted entry.
+OPEN_RELEASE_STATUSES = {
+    'FRONTIER', 'PROOF-TARGET', 'CERT-CANDIDATE',
+    'OPERATOR-SCAFFOLD-COMPLETE', 'OPERATOR-SCAFFOLD-CERTIFIED',
+    'SPIN-FLAVOUR-TRANSFER-CERTIFIED', 'EMPIRICAL-PASSPORT-CANDIDATE',
+    'LOWER-BOUND-TARGET', 'THEOREM-TARGET-SHARPENED',
+    'PROOF-OBLIGATION-EXPOSED',
+}
+CORE_RELEASE_STATUSES = {'CORE-FORMALIZED', 'CORE_FORMALIZED'}
+
+
 def claim_status(r):
     ls=r.get('lean_status','').strip()
     rs=r.get('release_status','').strip()
     bridge=r.get('uses_bridge_assumptions','').strip().lower()=='true' or 'BRIDGE' in ls
     if ls=='DEPRECATED' or rs=='DEPRECATED': return 'deprecated'
-    if not r.get('lean_module','').strip(): return 'notInLeanScope'
-    if rs in {'NO-GO','NO_GO_PROVED'}: return 'leanNoGoProved' if ls.startswith('LEAN_') else 'pythonCertClosed'
-    if bridge: return 'leanBridgeAssumptionsExplicit'
-    if ls=='LEAN_PROVED': return 'leanCoreProved'
+    if ls in {'OPEN', 'UNPROVED'} or rs in OPEN_RELEASE_STATUSES:
+        return 'openObligation'
+    if rs=='EMPIRICAL-PASSPORT' or ls=='EMPIRICAL_PASSPORT':
+        return 'empiricalDataRequired'
+    if bridge:
+        if ls=='LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS':
+            return 'leanBridgeAssumptionsExplicit'
+        if ls=='PYTHON_CERTIFIED': return 'pythonCertClosed'
+        return 'openObligation'
+    if rs in {'NO-GO','NO_GO_PROVED'}:
+        if ls=='LEAN_PROVED': return 'leanNoGoProved'
+        if ls=='PYTHON_CERTIFIED': return 'pythonCertClosed'
+        return 'openObligation'
+    if ls=='LEAN_PROVED':
+        return 'leanCoreProved' if rs in CORE_RELEASE_STATUSES else 'leanFactProved'
     if ls=='PYTHON_CERTIFIED': return 'pythonCertClosed'
-    if rs=='EMPIRICAL-PASSPORT': return 'empiricalDataRequired'
-    if ls=='OPEN' or rs=='PROOF-TARGET': return 'openObligation'
+    if not r.get('lean_module','').strip(): return 'notInLeanScope'
     return 'pythonCertRequired'
 
 def render_all():
@@ -55,14 +77,17 @@ def render_claimmap():
     cr=rows('claims.csv')
     body=['-- AUTO-GENERATED from 02_REGISTRY/claims.csv by tools/generate_lean_views.py.',
           '-- Do not edit by hand; run `python tools/generate_lean_views.py`.', '',
+          '-- Names below are metadata, not elaborated references to Lean declarations.',
+          '-- Only rows with a lean_module are emitted; claims.csv remains the full registry.',
           'namespace D0','',
           'inductive ClaimStatus where',
-          '  | leanCoreProved','  | leanBridgeAssumptionsExplicit','  | pythonCertRequired',
+          '  | leanCoreProved','  | leanFactProved','  | leanBridgeAssumptionsExplicit','  | pythonCertRequired',
           '  | pythonCertClosed','  | empiricalDataRequired','  | leanNoGoProved',
           '  | openObligation','  | deprecated','  | notInLeanScope',
           '  deriving DecidableEq, Repr','',
           'structure ClaimMapEntry where','  claimId : String','  moduleName : String',
-          '  theoremName : String','  status : ClaimStatus','',
+          '  theoremName : String','  leanStatus : String','  releaseStatus : String',
+          '  status : ClaimStatus','',
           'def claimMap : List ClaimMapEntry :=','  [']
     entries=[]
     for r in cr:
@@ -70,7 +95,10 @@ def render_claimmap():
         if not m: continue
         entries.append(
           f'    {{ claimId := "{esc(r["claim_id"])}", moduleName := "{esc(m)}",\n'
-          f'      theoremName := "{esc(r.get("lean_theorem", "").strip())}", status := ClaimStatus.{claim_status(r)} }}')
+          f'      theoremName := "{esc(r.get("lean_theorem", "").strip())}",\n'
+          f'      leanStatus := "{esc(r.get("lean_status", "").strip())}", '
+          f'releaseStatus := "{esc(r.get("release_status", "").strip())}", '
+          f'status := ClaimStatus.{claim_status(r)} }}' )
     body.append(',\n'.join(entries))
     body += ['  ]','',
              'theorem claimMap_nonempty : claimMap ≠ [] := by',

@@ -42,8 +42,18 @@ jobs:
           python tools/lint_claim_strength.py --self-test
           python tools/lint_claim_strength.py
 
+      - name: Claim metadata coverage and hostile controls
+        run: |
+          python tools/test_claim_map_coverage.py
+          python 03_FORMALIZATION/tools/check_claim_map_coverage.py
+
+      - name: No proof shortcuts in core, bridges or support modules
+        run: python 03_FORMALIZATION/tools/check_no_sorry_in_core.py --all
+
       - name: Check generated Lean views
-        run: python tools/generate_lean_views.py --check
+        run: |
+          python tools/test_generate_lean_views.py
+          python tools/generate_lean_views.py --check
 
       - name: Active work control
         run: |

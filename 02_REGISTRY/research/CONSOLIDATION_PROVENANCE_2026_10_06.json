@@ -1,0 +1,23 @@
+{
+  "schema": "d0-published-history/1",
+  "snapshot_workflow_run": 37444931354,
+  "snapshot_artifact_id": 11402139000,
+  "bundle_sha256": "70b02e91e215350abeadb8c55f2877fd46457bb00d1cfebc6e504d49c78229b7",
+  "published_commit_count": 3520,
+  "pr_head_count": 315,
+  "source_pins": {
+    "pr202": "2d8278887ad52525da2c7b569aa90bd0dbebe11b",
+    "pr310_analytic": "1857d4a3c1a5bf7802ed1d0ce7830b1855d8734f",
+    "pr310_observed": "3d16b3e19c0cbe0d6b2907f3140e6e3eb1e7486b",
+    "pr317": "6853ce4c0563392f78a6c5ee6cf898941e8d448a",
+    "pr318": "3a4116fba618b53e9f66e0c93daf347c5beddff7"
+  },
+  "unpublished_chat_shas_not_present_in_snapshot": [
+    "ea2315f5",
+    "1df6fcc6",
+    "402abb58",
+    "5026a87a",
+    "40c07555"
+  ],
+  "scope": "Snapshot of published heads, tags and open/closed PR head histories; not proof that an absent commit never existed in another local repository. No scientific status promotion."
+}
