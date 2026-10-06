@@ -1,0 +1,54 @@
+name: D0 published history checkpoint
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review]
+    paths:
+      - '.github/workflows/research-history-checkpoint.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: history-checkpoint-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checkpoint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          show-progress: false
+      - name: Fetch historical PR heads from the public repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --no-recurse-submodules origin '+refs/pull/*/head:refs/remotes/pull-head/*'
+      - name: Bundle and verify published Git objects
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/d0-published-history"
+          mkdir -p "$OUT"
+          git for-each-ref --format='%(objectname) %(refname)' | sort > "$OUT/published-refs.txt"
+          git rev-parse HEAD > "$OUT/checkout-head.txt"
+          git bundle create "$OUT/d0-published-history.bundle" --all
+          git bundle verify "$OUT/d0-published-history.bundle" 2>&1 | tee "$OUT/bundle-verification.txt"
+          git bundle list-heads "$OUT/d0-published-history.bundle" > "$OUT/bundle-heads.txt"
+          (cd "$OUT" && sha256sum d0-published-history.bundle > SHA256SUMS)
+          printf '%s\n' \
+            'Contains published branches, tags and open/closed PR head histories visible to the read-only checkout.' \
+            'Does not include .git/config, credentials, secrets, working-tree caches, or unpushed local commits.' \
+            'Artifact retention is finite; the source branches and commits remain the primary record.' \
+            'Restore with: git clone --mirror d0-published-history.bundle d0_15.git' > "$OUT/README.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: d0-published-history-${{ github.event.pull_request.head.sha || github.sha }}
+          path: ${{ runner.temp }}/d0-published-history/
+          if-no-files-found: error
+          retention-days: 90
