@@ -2310,3 +2310,28 @@ a singular-projection root has zero value but nonzero parameter Euler
 response, so no pointwise metric-source law is inferred from the value.
 Nonhomogeneous constraints, extra metric-only terms and nonquadratic
 actions remain outside the explicit class and require their own owners.
+
+## Native follow-up: signed quadratic Gram profiles and literal flux gates
+
+The [new boundary theorem](A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md)
+removes positivity from the affine auxiliary-profile argument. All full
+stationary values remain quadratic, including indefinite saddles and
+auxiliary kernels. An explicit curved raw-coframe pencil has an exactly
+affine Gram metric but a strictly nonzero Einstein third variation.
+Thus a nonlinear Gram readout alone does not repair that class.
+
+For the literal `fluxEnergy`, the local 16-slot coframe source is now
+derived from the existing action. A compiled research Lean capsule proves
+its exact field/coframe first variations and the complete unsourced joint
+gate iff `psi=0`, with arbitrary coframe at every finite stage. Curved
+zero-field roots have nonzero Einstein variation. A proper rational boost
+preserves the raw Gram but changes the scalar-sector action and field
+equation under the existing exterior lift. Sixty exact controls replay
+with 66 transitive Lean owner source pins.
+
+These are completed parts of the native investigation, with no new action,
+coefficient selection, physical postulate or release promotion. Combined
+native actions, genuinely nonlinear constraints/profiles, moving-lift
+couplings and covariant matter sectors still need their own physical and
+refinement maps. Original #310 fixed-source/raw-owner obligations remain
+OPEN; #202 and #317 are unchanged.
