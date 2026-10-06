@@ -2358,3 +2358,30 @@ a research Lean capsule. An auxiliary-only root of action 48 retains
 nonzero edge response and protects that remaining nonlinear mechanism.
 These are research proof parts; the original #310 terminal, native
 refinement/soundness/recovery, positive GR and global closure remain OPEN.
+
+## Native follow-up: all volume-only nonlinear preparation mechanisms
+
+The [volume-fiber theorem](A4D_NATIVE_VOLUME_FIBER_OBSTRUCTION.md) removes
+the fixed-degree and fixed-operator assumptions inside the explicitly
+defined volume-only information class. A smooth curved raw-coframe/Gram
+pencil has pointwise volume independent of its parameter but literal
+Einstein action `(3*pi^2/50)*(1+s)`. Every native action value factoring
+through that density has zero contrast. The prescribed O(h) recording and
+refinement error cannot compensate at epsilon=h^(1/3).
+
+This includes arbitrary nonlinear density-dependent operators, spectral
+functions and uniquely valued auxiliary-stationary preparations. The
+existing A2 compensator has exactly such a nonempty unique action value
+over each positive-weight input, proved from its actual normal equation
+and residual uniqueness. Its density profile can nonetheless be genuinely
+rational: an exact four-cycle example gives `(1+s)/(2+s)`. Thus the new
+obstruction uses lost shape information, not an invalid polynomial bound.
+
+The physical pencil's complete Ricci/Einstein calculation, all ten packed
+volume derivatives, explicit spin connection and all 24 continuum torsion
+rows are checked exactly. Finite all-24-row O(h^2) endpoint preparations
+come from the already published general probe theorem, not from an
+assertion of exact joint stationarity. Six Lean propositions compile with
+52 transitive owner pins. Native shape-sensitive data and their actual
+variation/refinement maps remain the first open arrow; no full-core
+completeness or original-parent terminal is declared.

@@ -195,6 +195,27 @@
       "depends_on": []
     },
     {
+      "id": "volume_only_native_bridge",
+      "scope": "Arbitrary nonlinear native geometric inputs factoring through the full physical volume density, with a deterministic or nonempty unique auxiliary-stationary action value, on the admitted curved fixed-volume Gram pencil.",
+      "hypotheses": [
+        "Equality of pointwise volume fields gives equality of all native geometric input data; the global archiveVolume identity alone does not prove this physical map.",
+        "The symmetric shape probe is admitted by the proposed native variation map.",
+        "Auxiliary action-value uniqueness is proved for the actual positive-weight compensator; arbitrary multivalued nonlinear gates are not assumed unique.",
+        "Recording/refinement errors are bounded at half-contrast level, not merely at input-coordinate level."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_VOLUME_FIBER_OBSTRUCTION.md",
+        "03_FORMALIZATION/D0/Gravity/A2CompensatorNoether.lean",
+        "02_REGISTRY/research/certificates/a4d_native_volume_fiber.lean",
+        "02_REGISTRY/research/certificates/a4d_native_volume_fiber_check.py"
+      ],
+      "verification": "Literal affine Gram pencil with exactly constant pointwise volume, nonzero Einstein contrast 3*pi^2/50, all ten packed determinant derivatives and 24 continuum torsion rows. Lean actual nonempty unique auxiliary-stationary value; exact rational nonlinear profile and hostile information/branch controls.",
+      "status": "PROVED_SCOPED_INFORMATION_CLASS_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THE_DECLARED_VOLUME_ONLY_CLASS",
+      "depends_on": []
+    },
+    {
       "id": "probe_law",
       "scope": "Literal naked-star action on T4, smooth nondegenerate metric pencils, log-O(h) endpoint preparations with all 24 residual rows O(h^2).",
       "hypotheses": [
@@ -445,5 +466,6 @@
     }
   ],
   "followup_input_head": "a30408721a3804e3d0c97fe2a210a556dbff4b67",
-  "weighted_followup_input_head": "0af401558deca37468c077c40b53ac670a7ccaf3"
+  "weighted_followup_input_head": "0af401558deca37468c077c40b53ac670a7ccaf3",
+  "volume_fiber_input_head": "ff5baf86642fca81714843b8ab48bed50939fe54"
 }
