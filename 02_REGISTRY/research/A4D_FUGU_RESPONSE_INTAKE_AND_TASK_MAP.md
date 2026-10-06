@@ -155,3 +155,36 @@ Use it only as an algebraic/nodal reparameterization at present: the two
 half-angle sign changes cancel, so \(d_r\) and \(q_0=dd^T\) remain
 single-valued on the original torus. Spinor and Kerr--Schild language is
 interpretive until separate null/representation theorems are certified.
+
+
+## CONTROL synthesis update — harmonic tower / N0 odd gate
+
+The follow-up packet
+[A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md](A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md)
+separates the moving q0 carrier, frozen/cross-character residual, the bare
+harmonic operator `B_n=C(d(z^n))q0`, the full #296 Gram-lift coefficient,
+and the independent N0 nonlinear connection-amplitude sector.
+
+Key reconciliation: the bare operator can have universal leading
+`B_n=binom(n,2)M2+O(h^5)=O(h^4)`, while the actual #296 coefficient restores
+`sigma^(n-1)=O(h^(2n-2))` and therefore scales as `O(h^(2n+2))`. These are
+not contradictory statements; the earlier prose reused one symbol for both.
+
+Current execution consequences:
+
+- merged #290 remains the physical same-carrier/cross-character owner;
+  `8/5` is not reused as moving-germ stress;
+- `WRK-A4D-Q0-GERM-TOWER-COLLAPSE-CERT` certifies the typed bare/full
+  harmonic factorization and maximal justified physical-cokernel statement;
+- latest #260 supersedes the earlier “odd degree-7 only” map: an orthogonal
+  odd weight is already nonzero at degree 3, so its next gate is the
+  degree-3 orthogonal correction; the degree-7 resonant source must be
+  re-evaluated after that correction;
+- #275 may prepare its same-source slow-response pipeline in parallel and
+  block only final substitutions that require the corrected #260 odd chain;
+- #240 must no longer cite degree-6 even correction as the live prerequisite;
+- #299 remains a proof-cost/heartbeat task only;
+- #202 must not use either harmonic scaling as a nonlinear bridge.
+
+This is a dependency/ownership refinement only. No Einstein, stress,
+continuum, BOOK, ClaimMap, or release-status promotion is made.

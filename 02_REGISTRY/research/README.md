@@ -27,7 +27,11 @@ Current gravity packets:
 - `MEMO_A4D_GOLDEN_ROLE_PHASE_REFINEMENT_WELD.md` — terminal inter-level audit: golden trace/scale is owned internally to Tower C; a defect-bearing RG residual interface is available, but no canonical Tower-C→Tower-B carrier/operator weld is selected.
 - `A4D_ELIN_ESP_EXECUTABLE_OWNER.md` — exact executable recovery of the two-dimensional Lorentz E-LIN response family and deterministic purely spatial `E_sp` owner; no #262/#265 fitting.
 
-- `MEMO_A4D_Q0_STATIONARY_SHEET_STRESS.md` — exact two-mode real q0 sheet: mode B is an identity-link joint vacuum; mode A's order-ε² repair is metric-silent and its selected branch stops at an order-ε³ connection obstruction.
+- `MEMO_A4D_Q0_STATIONARY_SHEET_STRESS.md` — exact two-mode real q0 sheet: mode B is an identity-link joint vacuum; on mode A the whole complex metric-silent line, after the unique even order-ε² repair, keeps an order-ε³ connection obstruction. The odd kernel at that order does not move the class.
+- `A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md` — separates moving-germ, frozen cross-character, physical cokernel and N0 nonlinear carriers; records the harmonic-tower collapse as a bounded certificate target and narrows the live nonlinear gate to #260 degree-7 odd resonance.
+- `A4D_RESONANCE_DIVISOR_RANK_LAW.md` — exact counterexample to the proposed phase-count nullity law, with the full character determinant still a nonempty proper divisor.
+- `A4D_ORTH3_NONFLAT_T3H_RESPONSE.md` — full #275 Orth3 (t^3h) source has a Fredholm obstruction; the direct nonflat-solder metric coefficient is nonzero but is not a stationary-sheet residue.
+- `MEMO_A4D_WARD_DIVISOR_SMITH_POLE.md` — exact diagonal local Smith exponents `(1,1,1,1,2,2,2,2)`; finite coordinate-column pole fits are separated from invariant factors, and stationary response remains open.
 
 ## Pending control intake
 

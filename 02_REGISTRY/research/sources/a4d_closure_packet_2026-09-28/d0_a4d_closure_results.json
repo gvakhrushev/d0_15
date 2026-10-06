@@ -1,0 +1,46 @@
+{
+  "A_260_degree3_gate": {
+    "COS": {
+      "ranks": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "joint": 16,
+      "augmented": 17,
+      "ell": 1,
+      "pairing": 64
+    },
+    "SIN": {
+      "ranks": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "joint": 16,
+      "augmented": 17,
+      "ell": 1,
+      "pairing": -64
+    }
+  },
+  "B_imC_all_k": {
+    "n_checks": 48,
+    "nonconforming": 0,
+    "identity": "M_k = ((a^(k-1)-b^(k-1))/(a-b)) * M_2",
+    "orbits": [
+      5,
+      7
+    ],
+    "carriers": [
+      "C(x)",
+      "C(conj x)"
+    ],
+    "k": [
+      1,
+      12
+    ]
+  },
+  "verdict": "A: ортогональный degree-3 Euler вне образа (обе реальные одежды). B: M_k in im C для всех k>=1 на орбитах 5/7, оба носителя."
+}
