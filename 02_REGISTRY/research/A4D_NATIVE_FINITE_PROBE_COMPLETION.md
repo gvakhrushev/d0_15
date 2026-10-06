@@ -1191,6 +1191,13 @@ its coarse action is strictly convex, whereas literal Palatini paths
 through the flat stationary base have both signs. Varying fine fields or
 independent doubled sectors is outside that restricted obstruction.
 
+The separate [affine stationary-profile theorem](A4D_NATIVE_AFFINE_PROBE_NOGO.md)
+now addresses weak completed contrasts, including joint affine fine/coarse
+variation at fixed lift and affine actual metric fibers. It excludes one
+fixed calibration on two smooth probe pencils at the same curved metric.
+Non-affine metric maps, moving lift and independently owned signed sectors
+remain outside that class. This does not replace the physical native map.
+
 ## 17. The actual forward response in conformal directions
 
 The [conformal forward-source bridge](A4D_CONFORMAL_FORWARD_SOURCE_BRIDGE.md)

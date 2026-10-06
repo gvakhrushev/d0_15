@@ -245,3 +245,16 @@ The checker pins every imported owner by SHA256 and defaults to immutable
 ledger replay. Exact finite checks PASS. The report proves a restricted
 fixed-fine transfer obstruction and concrete signed-readout gate failures;
 it does not claim the original theory or the enlarged native bridge closed.
+
+## Subsequent weak-contrast result
+
+The [affine profile obstruction](A4D_NATIVE_AFFINE_PROBE_NOGO.md) separately
+tests the weaker completed metric contrasts. Its general proof includes
+joint affine fine/coarse variables at fixed lift, affine actual metric
+fibers, full auxiliary stationarity and arbitrary kernels/refinement
+dimensions. At one explicit curved metric, the Einstein action has two
+probe Hessians of opposite signs, while stationary native profiles are
+convex. Neither sign of one fixed calibration can preserve the contrast
+limit. This is a larger **specified affine class**, not a no-go for all
+positive actions or all native nonlinear mappings. The present direct
+action theorem and its original scope remain as proved.

@@ -4,6 +4,20 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [native affine-profile theorem](A4D_NATIVE_AFFINE_PROBE_NOGO.md)
+now excludes the weak completed metric-contrast transfer for fixed positive
+quadratic seam actions with affine actual metric fibers and full auxiliary
+stationarity, including joint affine fine/coarse variations at fixed lift.
+At one explicitly curved periodic conformal metric, two genuine probes have
+Einstein Hessians $-12\pi^2$ and $+12\pi^2$; no single nonzero calibration
+can transport both from a convex stationary profile. This is a scoped
+native-realization obstruction, not the original fixed-source/raw terminal.
+The [owner inventory and gravity graph](A4D_NATIVE_REALIZATION_CLOSURE.md)
+also retain the remaining non-affine native, source, soundness and recovery
+arrows. The [compiled binding audit](A4D_NATIVE_OWNER_BINDING_AUDIT.md)
+reconciles all 12 declaration diagnostics without promoting numeric or
+Boolean scaffolds to physical operator theorems.
+
 The [conformal forward-response theorem](A4D_CONFORMAL_FORWARD_SOURCE_BRIDGE.md)
 now transfers the completed action limit to the actual metric derivative of
 each retained exact connection-stationary root. Without any unknown-field
@@ -2231,3 +2245,68 @@ python3 02_REGISTRY/research/certificates/a4d_native_record_arrow_check.py
 python3 02_REGISTRY/research/certificates/a4d_stationary_source_conormal_check.py
 python3 02_REGISTRY/research/certificates/a4d_null_multidimensional_full_euler_check.py
 ```
+
+## Native variational realization: a completed affine obstruction
+
+Input research SHA: `af221e2fed92821c52afc88a5500774de8cd9a93`.
+Inspected main: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
+
+The first native variational gate now has a whole-class result in
+[A4D_NATIVE_AFFINE_PROBE_NOGO.md](A4D_NATIVE_AFFINE_PROBE_NOGO.md).
+For arbitrary finite refinement dimensions and auxiliary kernels, a fixed
+positive quadratic seam norm on affine actual metric fibers has a convex
+stationary profile. Centered secants are monotone. A proposed O(h)
+unnormalized native/physical contrast transfer, including O(h) record and
+refinement errors, would force the calibrated secants to converge to the
+Einstein action derivative with O(h^(2/3)) error. The two explicit curved-base
+conformal pencils have opposite strictly signed second derivatives, which
+excludes either sign of one fixed calibration. No action-value equality,
+uniform inverse or derivative of an asymptotic remainder is assumed.
+
+This separately addresses the weak prepared contrasts left outside the
+earlier direct action-identification no-go. Nonlinear metric readouts,
+constraints, metric-dependent norms, moving lift and independently owned
+signed sectors remain outside the theorem. No completeness claim for the
+whole D0 core is made. Off-shell preparation and small residual controls
+protect the independent native gate.
+
+The [native equation inventory](A4D_NATIVE_REALIZATION_CLOSURE.md#2)
+also proves, at every canonical cycle stage n>=1, a local seam variation
+equal to six and a nonsymmetric full source gradient. The actual canonical
+vacuum gate and its stronger equality to any symmetric archive source are
+therefore uninhabited in that explicit class. This is an actual owner
+obstruction, not a #310 exact physical hostile sequence or positive theorem.
+
+The [12-reference kernel audit](A4D_NATIVE_OWNER_BINDING_AUDIT.md) prints
+real propositions and transitive axioms. A real forward cubical differential
+does have an owned square-zero theorem; the old Boolean capstone does not
+prove it. The named 1D and graded refinement capstones still prove arithmetic
+cardinality/trace facts rather than their advertised operator equations.
+The matter owners prove total neutrality or a generated zero source;
+the stress-Ward descent retains its explicit physical EOM/Ward hypotheses.
+
+The [dependency graph](A4D_NATIVE_GRAVITY_DEPENDENCIES.json) has no positive
+GR terminal until native transfer, independent on-shell stationarity,
+joint native matter/source/Ward, nonlinear existence, soundness, recovery
+and physical constraints are proved. #202 and #317 retain separate terminals.
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py
+```
+
+The next first-stage arrow is a core-owned non-affine physical
+state/variation/action realization or a complete exclusion of the remaining
+core owners. No new physical postulate is introduced. This artifact slice
+is reviewable independently; the parent remains Draft / IN_PROGRESS.
+
+Section 8 of the same native memo investigates the existing mixed
+primal/dual parent separately. With bilinear pairing and full field
+stationarity, simultaneous field scaling gives the exact Euler identity
+sum(z_i E_i)=2B, hence every stationary action value is zero. This blocks
+its standalone completed contrast realization even for arbitrarily
+nonlinear metric dependence of the supplied stars/differentials. It uses
+no positivity or inverse. A nonzero-kernel control retains distinct roots;
+a singular-projection root has zero value but nonzero parameter Euler
+response, so no pointwise metric-source law is inferred from the value.
+Nonhomogeneous constraints, extra metric-only terms and nonquadratic
+actions remain outside the explicit class and require their own owners.
