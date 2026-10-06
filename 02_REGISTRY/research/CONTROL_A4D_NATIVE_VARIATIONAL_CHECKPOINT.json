@@ -9,13 +9,13 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "286e4c82324da599ec20ef3f14d5cf44ae5ea9106f72bcb90fd6235fa159b3d4",
-      "source_blob": "14af70e09a16d11b7ceb3913d8694cebbe8a3521"
+      "sha256": "ffed0c666b38e921f0abbc53554bb95bc4b812075bc1f2af67bf42385cf25dd6",
+      "source_blob": "39f5197ffb3621abd5aaa25adac375769f953b7b"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
-      "sha256": "00f79b2a28eced2bbc3797c38b0801bc6f501a2c0386eca970c641d5d15c860a",
-      "source_blob": "aabc6af85559f868c7b9233eaf6e77a9de76684d"
+      "sha256": "39610e4eb6c3a12c1e9517a7fe29d42ae44dfc6315bcfa5f104da8eb682b1bd5",
+      "source_blob": "0b65cb75ac3f51d74505de7f5c9350e71fc6f80e"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
@@ -136,6 +136,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_volume_fiber_results.json",
       "sha256": "d86ff07cea805a6bebff2996379de9ecc077490d8eda171d6e442edc742c6fe5",
       "source_blob": "07557701b6534feb8a5a9e2f93267f278c98abd5"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md",
+      "sha256": "12c28b87c188492256b6bc2e435e642ff2b2deec5d6b88a81923f693a96f9a36",
+      "source_blob": "c216f19daebc9a6b2a9e732d277350dd2d69f88c"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cochain_refinement.lean",
+      "sha256": "c07153c478ab7ebafd361107d848a45be47650d93fceaad2c5c67bd052f96515",
+      "source_blob": "46b2f43d1e8823947ecd29f0be81b68f3558278a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_check.py",
+      "sha256": "e0579f6130dd62b6b6fa6358250cc7473251be32b4e4da93849a198346f26378",
+      "source_blob": "27de32fb0697b4f334a1cf1f439e5fee65762dc3"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_certificate.json",
+      "sha256": "75a59691122bbe2d2843892e1417acc8d3da7b14de77fb08c6ae9d474b74fbbd",
+      "source_blob": "764be0f2537a2e9f53f01098d6fe47a86573a63b"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_output.txt",
+      "sha256": "e8f32ea93d99c197db69ce4132a6c3a55003d213cae254287212a2aba9c22791",
+      "source_blob": "ab252803368e8ebff40ee441e1b89406ca9e56be"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_results.json",
+      "sha256": "be6878744d08c29d085a41f3c8cc7ef65e3225f9b46192bf7c8826e7abf8c635",
+      "source_blob": "e0af8e04e1a666e885e3e701ed9f36fbd5011559"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -144,7 +174,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "ff5baf86642fca81714843b8ab48bed50939fe54",
+  "previous_source_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -156,11 +186,12 @@
     "Uniformly bounded-degree fixed-operator traces with the stated sitewise physical volume map; all-order Einstein derivative obstruction and growing-degree exception.",
     "All-size adjacent-cycle linear intertwiner and full unital-lift gate classification, with local constrained and degenerating approximate countercontrols.",
     "Literal positive-weight A2 compensator full edge gate versus auxiliary-only elimination; seven compiled identities and 86 new exact controls.",
-    "General volume-only information obstruction with nonpolynomial and uniquely auxiliary-stationary profiles; exact curved volume-preserving Gram pencil, 72 controls and six compiled statements including actual compensator nonempty unique action value."
+    "General volume-only information obstruction with nonpolynomial and uniquely auxiliary-stationary profiles; exact curved volume-preserving Gram pencil, 72 controls and six compiled statements including actual compensator nonempty unique action value.",
+    "Explicit native cochain refinement operators, scale-corrected chain construction, full 16-sector Gram normalization and all-grade actual metric-measure formula; scoped failure of composed fixed-torus component readout. Twelve generic compiled propositions and 92 exact grouped controls."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
+  "source_head": "75527846bf3603a1c51acf445f8354e3254341be",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "ff5baf86642fca81714843b8ab48bed50939fe54",
+  "source_parent": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
   "source_pr": 310
 }

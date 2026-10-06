@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `227c1609c41b720dcfb7517a8e57f0e8d76cb764` through
+#310 at `75527846bf3603a1c51acf445f8354e3254341be` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -60,7 +60,9 @@ obstructions, canonical archive boundary, literal flux source/gate/Lorentz
 classification, bounded-degree weighted-trace obstruction, full linear-lift
 and compensator gate classifications with their protected exceptions,
 the general volume-only information obstruction including nonlinear
-unique-value auxiliary preparation, and compiled owner diagnostics.
+unique-value auxiliary preparation, actual cochain/refinement operators and
+normalization with the scoped composed-readout obstruction, and compiled
+owner diagnostics.
 The receipt preserves the previous input head
-ff5baf86642fca81714843b8ab48bed50939fe54. Do not promote
+227c1609c41b720dcfb7517a8e57f0e8d76cb764. Do not promote
 claims/BOOK/Lean, merge or retire #310, or replace #202/#317 terminals.

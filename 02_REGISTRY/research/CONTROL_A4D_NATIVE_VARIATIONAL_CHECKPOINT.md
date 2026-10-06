@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published
-`227c1609c41b720dcfb7517a8e57f0e8d76cb764`, following
-`ff5baf86642fca81714843b8ab48bed50939fe54`.
+`75527846bf3603a1c51acf445f8354e3254341be`, following
+`227c1609c41b720dcfb7517a8e57f0e8d76cb764`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-twenty-seven byte-identical artifacts, with source Git blobs and SHA256 hashes:
+thirty-three byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -29,11 +29,16 @@ twenty-seven byte-identical artifacts, with source Git blobs and SHA256 hashes:
   its exact checker/ledger and the compiled null-Gram/auxiliary-gate capsule,
   output and transitive-source receipt.
 
+* [Cochain operators, Gram normalization and composed-readout boundary](A4D_NATIVE_COCHAIN_REFINEMENT.md),
+  exact checker/ledger and compiled generic cochain capsule with its output
+  and transitive-source receipt.
+
 The source head and mathematical artifact blob were checked against GitHub.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
 actual flux proof capsule, the six pins of the new weighted-owner capsule,
-the 52 pins of the null-Gram/auxiliary-gate capsule, the registry snapshot
-and all four native certificates' input hashes match
+the 52 pins of the null-Gram/auxiliary-gate capsule, the 37 pins of the
+cochain refinement capsule, the registry snapshot
+and all five native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
@@ -112,15 +117,26 @@ local file or an implicitly merged scientific parent.
     concern the continuum spin connection; finite all-row O(h^2) endpoint
     preparations are consumed from the published probe theorem.
 
+11. **Actual cochain refinement:** generic B0/B1 operators bind to the real
+    archive vertex lift and satisfy exact unscaled chain and counting Gram
+    identities. The literal L-scaled dForward requires degree factor
+    ((L+1)/L)^k. The complete counting trace at L=2 is 625; 256 has only an
+    occupied-direction-normalized trace interpretation. All-grade actual
+    metric-measure algebra compiles. Full tensor proofs are analytic with
+    exact finite matrix controls, not represented as a compiled supported
+    4D dForward owner. Actual composition from L to 2L has constant-one-form
+    L1 and squared L2 error 1 against physical component resampling. This
+    excludes that readout class; it is not a general action-transfer NO-GO.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The twenty-seven imported files
+labels, Lean owners and BOOK text are unchanged. The thirty-three imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The four self-contained checkers replay 71, 60, 86 and 72 exact controls without
+The five self-contained checkers replay 71, 60, 86, 72 and 92 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -137,6 +153,11 @@ factorization identity; the others use the same three standard axioms.
 Its immutable ledger rejects replacement of the nonzero Einstein contrast
 by zero. The new certificate recomputes all Christoffels/Ricci entries,
 metric packing, Lorentz spin connection and 24 continuum torsion components.
+The cochain capsule compiles twelve generic propositions with standard
+axioms only. Its exact checker covers every sector and all graded blocks
+at L=2,3,4, and independently computes complete L=2 tensor Gram matrices.
+The immutable ledger rejects replacing an actual counting trace with its
+partially normalized value. No older arithmetic theorem is silently promoted.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -155,6 +176,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_quadratic_gram_flux_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_weighted_trace_lift_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_volume_fiber_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_cochain_refinement_check.py
 ```
 
 ## Preserved original obligations

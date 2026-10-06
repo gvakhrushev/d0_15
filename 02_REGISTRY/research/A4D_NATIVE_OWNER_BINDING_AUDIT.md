@@ -87,3 +87,22 @@ This import/type audit does not validate every registry row, derive every
 physical premise, or replace the final `D0.All`/current-head CI gates. Those
 results are recorded separately when actually run. In particular a build
 of `ClaimMap` strings alone would not perform these lookups.
+
+## Subsequent operator construction, input 227c1609 (2026-10-06)
+
+[A4D_NATIVE_COCHAIN_REFINEMENT](A4D_NATIVE_COCHAIN_REFINEMENT.md) now supplies
+actual generic research proofs for the earlier missing operator clauses.
+This updates the scientific disposition, without claiming that the old exact
+names now resolve or that supported owners/registry bindings were edited.
+
+| Earlier diagnostic | New concrete disposition |
+|---|---|
+| `b1_isometry` | Generic compiled `NativeCochainRefinement.b1_isometry` proves the full bilinear isometry for the explicitly constructed edge map. `b0_literal_matrix` binds the vertex map to the real archive lift. Ready for finite-scope CONTROL review. |
+| `intertwining_d_b0_eq_b1_d` | Generic compiled `incidence_chain` proves the unscaled equation. The actual owner uses L-scaled differences; `scaled_incidence_chain` proves its required degree factor. The all-16-sector tensor proof and exact matrix controls are retained separately; no full typed `dForward` Lean theorem is claimed. |
+| `hodge_mass_trace_sum` | Full Gram construction gives 625 at L=2, not 256. The latter is an occupied-direction-normalized trace. The old arithmetic theorem remains true, but its full-operator-trace interpretation requires correction in a future supported-owner change. |
+| `metric_measure_hodge_lift_owner` | `metric_measure_all_degrees` and `metric_measure_refinement_weight` now prove the actual formula for every finite occupied subset, with explicit nonzero mass hypotheses. They do not prove physical constitutive uniqueness. |
+
+The refinement's composed fixed-torus readout fails on a constant one-form,
+so these positive finite proofs do not close the physical refinement arrow.
+The other eight diagnostic dispositions and the original source-hashed
+lookup transcript remain unchanged.
