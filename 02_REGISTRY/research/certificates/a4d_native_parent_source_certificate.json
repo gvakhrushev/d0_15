@@ -1,0 +1,372 @@
+{
+  "checks": [
+    "COMPILED_ACTUAL_PARENT_VARIATION_AND_SOURCE_BINDINGS",
+    "ALL_FIELD_EULER_ROWS",
+    "ALL_AUXILIARY_EULER_ROWS",
+    "ALL_MULTIPLIER_EULER_ROWS",
+    "FIELD_EXACT_AFFINE_VARIATION",
+    "AUXILIARY_EXACT_QUADRATIC_VARIATION",
+    "MULTIPLIER_EXACT_AFFINE_VARIATION",
+    "ALL_CONSTITUTIVE_DERIVATIVES_WITH_SIGNS",
+    "COERCIVE_EULER_BALANCE_WITHOUT_RANGE_INVERSE",
+    "ON_SHELL_CONSTITUTIVE_RELATION",
+    "POSITIVE_ROOT_ZERO_SOURCE_FOR_EVERY_OPERATOR_VARIATION",
+    "INDEPENDENT_IDENTITY_DIRECTION_DETECTS_AUXILIARY",
+    "RECTANGULAR_LITERAL_PAIRING_AND_OPERATOR_BINDING",
+    "EXACT_ELIMINATION_INTO_SQUARED_OPERATOR",
+    "ELIMINATED_FIELD_OPERATOR_IS_K_TRANSPOSE_M_INV_K",
+    "ELIMINATED_ACTION_VALUE_IS_POSITIVE_SQUARE_WHEN_M_POSITIVE",
+    "SYMMETRIC_CONSTITUTIVE_PACKED_FACTOR_TWO",
+    "COMPLETE_PARENT_HESSIAN_KERNEL_positive_full_rank",
+    "IMAGE_RADICAL_CLASSIFICATION_positive_full_rank",
+    "COMPLETE_PARENT_HESSIAN_KERNEL_positive_kernel",
+    "IMAGE_RADICAL_CLASSIFICATION_positive_kernel",
+    "COMPLETE_PARENT_HESSIAN_KERNEL_indefinite_regular",
+    "IMAGE_RADICAL_CLASSIFICATION_indefinite_regular",
+    "COMPLETE_PARENT_HESSIAN_KERNEL_indefinite_radical",
+    "IMAGE_RADICAL_CLASSIFICATION_indefinite_radical",
+    "COMPLETE_PARENT_HESSIAN_KERNEL_indefinite_three",
+    "IMAGE_RADICAL_CLASSIFICATION_indefinite_three",
+    "COMPLETE_PARENT_HESSIAN_KERNEL_positive_four",
+    "IMAGE_RADICAL_CLASSIFICATION_positive_four",
+    "INDEFINITE_NONZERO_POINTWISE_SOURCE_IS_REAL",
+    "INDEFINITE_SOURCE_ROOT_HAS_NO_NEIGHBORING_CONTINUATION",
+    "INDIVIDUAL_BACKGROUND_DIRECTION_MAY_MISS_SOURCE",
+    "CONTINUING_INDEFINITE_ROOT_HAS_ZERO_TANGENTIAL_RESPONSE",
+    "SHARP_SQUARE_ROOT_RESIDUAL_SOURCE",
+    "VANISHING_COERCIVITY_BREAKS_SOURCE_BOUND",
+    "UNBOUNDED_FIELD_BREAKS_SOURCE_BOUND",
+    "UNBOUNDED_CONSTITUTIVE_VARIATION_BREAKS_SOURCE_BOUND",
+    "DIMENSION_FREE_RESIDUAL_CONTROL_1",
+    "DIMENSION_FREE_RESIDUAL_CONTROL_2",
+    "DIMENSION_FREE_RESIDUAL_CONTROL_3",
+    "DIMENSION_FREE_RESIDUAL_CONTROL_4",
+    "DEGENERATE_PAIRING_PROTECTS_RAW_CONSTRAINT_SCOPE",
+    "SEMIDEFINITE_IS_NOT_STRICT_POSITIVE",
+    "NORMALIZATION_CONSTRAINT_PRESERVES_NONZERO_SOURCE",
+    "AUXILIARY_ONLY_GATE_IS_INSUFFICIENT"
+  ],
+  "finite_strata": {
+    "indefinite_radical": {
+      "K": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "M": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "-1"
+        ]
+      ],
+      "Q": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "rank_K": 1,
+      "rank_Q": 0,
+      "rank_parent_Hessian": 4,
+      "source_visible_kernel_quotient_dimension": 1
+    },
+    "indefinite_regular": {
+      "K": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "M": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "-1"
+        ]
+      ],
+      "Q": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "-1"
+        ]
+      ],
+      "rank_K": 2,
+      "rank_Q": 2,
+      "rank_parent_Hessian": 6,
+      "source_visible_kernel_quotient_dimension": 0
+    },
+    "indefinite_three": {
+      "K": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "M": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "Q": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "rank_K": 2,
+      "rank_Q": 1,
+      "rank_parent_Hessian": 7,
+      "source_visible_kernel_quotient_dimension": 1
+    },
+    "positive_four": {
+      "K": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "3"
+        ]
+      ],
+      "M": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "4"
+        ]
+      ],
+      "Q": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "4/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "9/4"
+        ]
+      ],
+      "rank_K": 3,
+      "rank_Q": 3,
+      "rank_parent_Hessian": 11,
+      "source_visible_kernel_quotient_dimension": 0
+    },
+    "positive_full_rank": {
+      "K": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "M": [
+        [
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "3"
+        ]
+      ],
+      "Q": [
+        [
+          "1/2",
+          "1"
+        ],
+        [
+          "1",
+          "7/3"
+        ]
+      ],
+      "rank_K": 2,
+      "rank_Q": 2,
+      "rank_parent_Hessian": 6,
+      "source_visible_kernel_quotient_dimension": 0
+    },
+    "positive_kernel": {
+      "K": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "M": [
+        [
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "3"
+        ]
+      ],
+      "Q": [
+        [
+          "5/6",
+          "5/6"
+        ],
+        [
+          "5/6",
+          "5/6"
+        ]
+      ],
+      "rank_K": 1,
+      "rank_Q": 1,
+      "rank_parent_Hessian": 5,
+      "source_visible_kernel_quotient_dimension": 0
+    }
+  },
+  "indefinite_neighbor_determinant": "-q^4",
+  "indefinite_pointwise_source": "1",
+  "indefinite_reduced_operator": [
+    [
+      "0",
+      "q**2"
+    ],
+    [
+      "q**2",
+      "2*q"
+    ]
+  ],
+  "input_head": "8b96338505395dabf509e13422089d89685483b8",
+  "inputs_sha256": {
+    "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean": "cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296",
+    "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean": "a4be98cfb6d3e08bc873ff31d93b9669533d19fb641b1cb81e871be4af79f863"
+  },
+  "lean_receipt_sha256": "8b574cd62699ade134c0ac019feba8231736b9365b177b30f3ee42ac3bbe0dcd",
+  "positive_source": "0",
+  "protected_exceptions": [
+    "Indefinite or degenerate scalar form",
+    "Missing field equation or normalized constraints",
+    "Degenerate raw pairing",
+    "Unbounded fields, inverse scalar form or variations",
+    "Additional native action terms with their own owners"
+  ],
+  "quantitative_hypotheses": [
+    "uniform positive scalar-form lower bound",
+    "bounded full field norm",
+    "bounded constitutive variation norms",
+    "all three Euler residuals controlled in matching norms"
+  ],
+  "residual_source_exponent": "1/2",
+  "scope": "Existing homogeneous mixed parent, actual supplied linear pairing, symmetric scalar form. Complete positive pointwise source classification; nondegenerate indefinite source relation and image radical; no selected metric or matter action.",
+  "status": "PASS"
+}

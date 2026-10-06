@@ -1,0 +1,55 @@
+'D0.Research.NativeParentSource.literal_owner_binding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.field_first_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.auxiliary_first_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.multiplier_first_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.actual_gate_equations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.coercive_euler_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.positive_full_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.constitutive_exact_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.constitutive_first_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.positive_source_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.invertible_full_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.on_shell_constitutive_relation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeParentSource.literal_scalar_hodge_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeParentSource.independent_identity_response_detects_auxiliary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeParentSource.actual_constraint_of_injective_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeParentSource.continuous_critical_root_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeParentSource.continuous_critical_root_source.{u_2} {n : Type u_2} [Fintype n] (H : ℝ → n → n → ℝ)
+  (H' : n → n → ℝ) (z : ℝ → n → ℝ) (hd : ∀ (i j : n), HasDerivAt (fun q => H q i j) (H' i j) 0)
+  (hz : ∀ (i : n), ContinuousAt (fun q => z q i) 0) (hs : ∀ (i j : n), H 0 i j = H 0 j i)
+  (hr0 : ∀ (i : n), ∑ j, H 0 i j * z 0 j = 0) (hr : ∀ᶠ (q : ℝ) in 𝓝[≠] 0, ∀ (i : n), ∑ j, H q i j * z q j = 0) :
+  ∑ i, ∑ j, z 0 i * H' i j * z 0 j = 0
+D0.Research.NativeParentSource.literal_owner_binding.{u_1, u_2, u_3, u_4} {n : Type u_1} [Fintype n] {p : Type u_2}
+  {q : Type u_3} {r : Type u_4} [Fintype p] [Fintype q] [Fintype r] (A : FinitePrimalDualHodgeData n p q r)
+  (R : (r → ℝ) →ₗ[ℝ] n → ℝ) (ψ χ lm : n → ℝ) :
+  mixedPrimalDualAction (fun x y => D0.Research.NativeParentSource.pair x (R y)) A ψ χ lm =
+    D0.Research.NativeParentSource.parentForm (R ∘ₗ A.star0) (R ∘ₗ A.dD ∘ₗ A.star1 ∘ₗ A.dP) ψ χ lm
+D0.Research.NativeParentSource.actual_gate_equations.{u_1} {n : Type u_1} [Fintype n]
+  (M K : D0.Research.NativeParentSource.End n) (hM : D0.Research.NativeParentSource.Symmetric M) (ψ χ lm : n → ℝ) :
+  D0.Research.NativeParentSource.FullFieldGate M K ψ χ lm ↔
+    (∀ (v : n → ℝ), D0.Research.NativeParentSource.pair lm (K v) = 0) ∧ M (χ + lm) = 0 ∧ M χ = K ψ
+D0.Research.NativeParentSource.positive_full_gate.{u_1} {n : Type u_1} [Fintype n]
+  (M K : D0.Research.NativeParentSource.End n) (hM : D0.Research.NativeParentSource.Symmetric M)
+  (hpos : D0.Research.NativeParentSource.StrictPositive M) (ψ χ lm : n → ℝ) :
+  D0.Research.NativeParentSource.FullFieldGate M K ψ χ lm ↔ χ = 0 ∧ lm = 0 ∧ K ψ = 0
+D0.Research.NativeParentSource.positive_source_zero.{u_1} {n : Type u_1} [Fintype n]
+  (M K U V : D0.Research.NativeParentSource.End n) (hM : D0.Research.NativeParentSource.Symmetric M)
+  (hpos : D0.Research.NativeParentSource.StrictPositive M) (ψ χ lm : n → ℝ)
+  (h : D0.Research.NativeParentSource.FullFieldGate M K ψ χ lm) :
+  D0.Research.NativeParentSource.constitutiveResponse U V ψ χ lm = 0
+D0.Research.NativeParentSource.invertible_full_gate.{u_1} {n : Type u_1} [Fintype n] (M : (n → ℝ) ≃ₗ[ℝ] n → ℝ)
+  (K : D0.Research.NativeParentSource.End n) (hM : D0.Research.NativeParentSource.Symmetric ↑M) (ψ χ lm : n → ℝ) :
+  D0.Research.NativeParentSource.FullFieldGate (↑M) K ψ χ lm ↔
+    χ = M.symm (K ψ) ∧ lm = -M.symm (K ψ) ∧ ∀ (v : n → ℝ), D0.Research.NativeParentSource.pair (M.symm (K ψ)) (K v) = 0
+D0.Geometry.archive_weighted_hodge_dirac_owner :
+  formDegreeCount4D = 5 ∧ Fintype.card CubicalCellType = 16 ∧ DegreePreservingLaplacian true ∧ Fintype.card D0.Role = 4

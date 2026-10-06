@@ -4,6 +4,17 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [mixed-parent pointwise source result](A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md)
+binds the actual supplied bilinear action to all three independent field
+derivatives. A positive scalar form forces every full root's entire
+constitutive source to vanish, even for nonlinear geometry dependence of
+the operators. The invertible indefinite class has a complete kernel/source
+relation; its nonzero-source counterexample is preserved and cannot continue
+to neighboring backgrounds. A sharp approximate-root source estimate states
+the uniform bounds that any native preparation would still have to supply.
+Sixteen compiled propositions and 45 exact controls support this scoped result.
+No physical star, new action, constraint or parent terminal is installed.
+
 The [spectral-frame boundary](A4D_NATIVE_SPECTRAL_FRAME_BOUNDARY.md) now
 tests the existing nonlinear quadratic spectral energy at the literal flux
 matrix. Its normalized action changes by at least 1/8 across one of two
