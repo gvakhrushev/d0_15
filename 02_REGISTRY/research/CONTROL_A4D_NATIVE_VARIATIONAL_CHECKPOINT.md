@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published
-`a4a0ee1ce0a48fe07da0da036e122262e8cc7d44`, following
-`080cb15ceb6b273f1f4bb5ccaae50251307d257b`.
+`8b96338505395dabf509e13422089d89685483b8`, following
+`a4a0ee1ce0a48fe07da0da036e122262e8cc7d44`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-forty-five byte-identical artifacts, with source Git blobs and SHA256 hashes:
+fifty-one byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -40,13 +40,18 @@ forty-five byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and compiled actual flux/eigenvector/square-form
   capsule with output and transitive-source receipt.
 
+* [Literal vector action, source range and background response](A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md),
+  exact checker/ledger and compiled actual derivative/Fredholm/Ward capsule
+  with output and transitive-source receipt.
+
 The source head and mathematical artifact blob were checked against GitHub.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
 actual flux proof capsule, the six pins of the new weighted-owner capsule,
 the 52 pins of the null-Gram/auxiliary-gate capsule, the 37 pins of the
 cochain refinement capsule, the 56 pins of the reference-weight capsule,
-the 58 pins of the spectral-frame capsule, the registry snapshot and all
-seven native certificates' input hashes match
+the 58 pins of the spectral-frame capsule, the nine pins of the literal
+vector source capsule, the registry snapshot and all
+eight native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
@@ -163,15 +168,31 @@ local file or an implicitly merged scientific parent.
     preserve the flat first jet and collapse uniformly; that explicit
     countercontrol blocks an overgeneralized asymptotic NO-GO.
 
+14. **Literal vector action/source:** the existing finite real-skew kinetic
+    action's actual first variations give the owned negative double
+    commutator and background response. The full free field gate is exactly
+    the commutant, with zero action/response. A supplied skew current is
+    solvable iff orthogonal to that commutant; sufficiency is compiled on
+    the actual finite skew subspace. The derived joint identity concerns
+    simultaneous conjugation, not a physical metric divergence. A bounded
+    nonsingular, constant-rank background family with one fixed source has
+    range inverse delta^-2 and response norm 4 delta^-3. Kernel shifts can
+    preserve a sourced value but change the full background derivative;
+    differentiable compatible fibers are required before an envelope
+    derivative. Kernel is not identified with gauge. Independent field
+    constraints, indefinite Lie trace forms and additional coupled actions
+    remain protected exceptions. No native physical D(g) or metric source
+    is manufactured from the supplied current.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The forty-five imported files
+labels, Lean owners and BOOK text are unchanged. The fifty-one imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The seven self-contained checkers replay 71, 60, 86, 72, 92, 40 and 57 exact controls without
+The eight self-contained checkers replay 71, 60, 86, 72, 92, 40, 57 and 51 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -206,6 +227,12 @@ L=4,8,12,16, all 64 Christoffels and 16 Ricci entries for each curved metric,
 and the protected nonlinear/collapsing-response exceptions. Nested radical
 comparisons use exact algebraic number fields, not numeric tolerances. A
 false zero normalized-action-gap ledger is rejected.
+The vector-source capsule compiles twenty generic propositions, including
+actual derivatives and the complete finite source solvability equivalence,
+with nine transitive D0 pins and standard axioms only. Its 51 exact controls
+verify all skew field/background coordinates, factor/sign normalization,
+full six-dimensional spectrum and supplied-source/indefinite exceptions.
+A ledger replacing the divergent range inverse by one is rejected.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -227,6 +254,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_volume_fiber_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_cochain_refinement_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_reference_weight_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_spectral_frame_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_vector_source_check.py
 ```
 
 ## Preserved original obligations

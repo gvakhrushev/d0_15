@@ -283,9 +283,10 @@
         "03_FORMALIZATION/D0/Matter/MatterLocalizationNonuniquenessNoGo.lean",
         "03_FORMALIZATION/D0/Gravity/A4DParentWardStressDescent.lean",
         "03_FORMALIZATION/D0/Geometry/A4DDiscreteEnergyKernel.lean",
-        "02_REGISTRY/research/A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md#3"
+        "02_REGISTRY/research/A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md#3",
+        "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md"
       ],
-      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient. The literal flux coframe source is now derived; its nonlinear Lorentz gate fails on the scalar sector. Metric stress/Ward for a physical combined system remains OPEN.",
+      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient. The literal flux coframe source is now derived; its nonlinear Lorentz gate fails on the scalar sector. Metric stress/Ward for a physical combined system remains OPEN. The actual real-skew vector action now has compiled first variations and joint conjugation Ward, but its freely stationary field has zero background response; a supplied skew current is not physical metric stress.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -324,9 +325,10 @@
       ],
       "owners": [
         "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-        "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
+        "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md",
+        "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md#5-exact-range-obstruction-with-bounded-nonsingular-backgrounds"
       ],
-      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here.",
+      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol.",
       "status": "OPEN_FOR_NATIVE_SYSTEM",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -537,6 +539,26 @@
       "depends_on": [
         "reference_weight_lorentz"
       ]
+    },
+    {
+      "id": "vector_commutator_source",
+      "scope": "Existing finite real-skew commutator kinetic action, full free field gate, independently supplied source, actual background derivative and simultaneous-conjugation identity.",
+      "hypotheses": [
+        "Nonzero coefficient and all skew field variations; free background variation is a separate explicitly stated gate.",
+        "The source is declared before solving, and no native physical D(g), local metric stress or refinement map is inferred.",
+        "Indefinite Lie trace forms, constrained field sectors and additional coupled actions remain outside the standalone free gate."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Algebra/GaugeKineticPositivity.lean",
+        "03_FORMALIZATION/D0/Matter/VectorOperatorOrigin.lean",
+        "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_vector_source.lean"
+      ],
+      "verification": "Twenty generic compiled propositions with nine transitive source pins: actual first variation, free gate iff commutator zero, complete finite source Fredholm alternative, real joint conjugation identity and source/kernel response distinction. Exact symbolic fixed-source family proves failure of uniform inverse despite bounded nonsingular constant-rank backgrounds; kernel is not silently removed as gauge.",
+      "status": "PROVED_SCOPED_OWNER_CLASSIFICATION_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_FINITE_SCOPE",
+      "depends_on": []
     }
   ],
   "preserved_parent_tasks": [

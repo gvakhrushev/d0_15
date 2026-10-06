@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "7a317fa881e01c265658bd5aaca4b0eef1a5fb07f433256ee3c0af74da169747",
-      "source_blob": "1e627d65e66db15e364266e70ddf14888230cdf5"
+      "sha256": "d0ca8631cae37b595aae0c308790d60a6514b3c886de9491f828d002e04413b7",
+      "source_blob": "388d914bd970f729af3696726008e0e7961ba366"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "188138159108b20f9495cc45d21036fed5eaaae1d521818e440408b05deb064d",
-      "source_blob": "9a91793aa863b49c43bca6e1788783f18ec51508"
+      "sha256": "3c8f1da756d4bfa70f1c449a8fa999dbfd5ce93ff9855fd93d67e09057f5487b",
+      "source_blob": "8537bf176e0127db1afc7a4c51e1359e9bb1af2f"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -226,6 +226,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_spectral_frame_results.json",
       "sha256": "9a7a63e3e2e0aa6825afbd9c5809eda6af90d74e3e52aa26254d8a049caa01fb",
       "source_blob": "3a9af3d6097f72568f9954429fcf8811952e6763"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md",
+      "sha256": "df0e3b783fa1968c1b4a110d80f2e40edb4ee048e3e76a26143c17cbf45fd0e7",
+      "source_blob": "13e86a6b010c0b1caf13d9fe3970ec0d2e33e050"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_vector_source.lean",
+      "sha256": "9d61a29f93d017285b9d9d7a7baf476d9099ec9e38e3c59d4ab95b68c55cb280",
+      "source_blob": "71cd52d6ec8df75c41427b4bbfc4202cb3989b7a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_vector_source_check.py",
+      "sha256": "0488901afa1f6b983ef102a80b3357d9626c46b98eb24390e6f941bb200cbfbf",
+      "source_blob": "4e79f8f3d20d670a2bea711a08ad4afb91632505"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_vector_source_certificate.json",
+      "sha256": "8c38087293a4ac6db2beba476b8db1fe5974c0c89b099eda8c4c05b414956a97",
+      "source_blob": "4a917acad66b37ff7ceeffde0c14abdaa4b850aa"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_vector_source_output.txt",
+      "sha256": "237492c60cd80b93416be781ed1aeec47dc8c2bb76ae425babd26d9c8508fa3d",
+      "source_blob": "ae2e24ea5297552b07490512536c1eb449a861ba"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_vector_source_results.json",
+      "sha256": "da6cdc66682f2bca2558ab60a3f37a0e32a289d3515e3f6e87ff8eb65c7f6d71",
+      "source_blob": "9863691a299244a24c0ec2ebc38a25bebfbbbda9"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -234,7 +264,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
+  "previous_source_head": "a4a0ee1ce0a48fe07da0da036e122262e8cc7d44",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -249,11 +279,12 @@
     "General volume-only information obstruction with nonpolynomial and uniquely auxiliary-stationary profiles; exact curved volume-preserving Gram pencil, 72 controls and six compiled statements including actual compensator nonempty unique action value.",
     "Explicit native cochain refinement operators, scale-corrected chain construction, full 16-sector Gram normalization and all-grade actual metric-measure formula; scoped failure of composed fixed-torus component readout. Twelve generic compiled propositions and 92 exact grouped controls.",
     "Existing shape-sensitive referenceCellWeight family: all-coefficient raw Lorentz scalar obstruction, sharp uniform two-probe defect 5/86, literal scalar/exterior binding, coefficient-dependent full Fourier kernel/range classification at one nondegenerate constant coframe. Seventeen compiled propositions, 56 transitive source pins and 40 exact controls. No native action or physical gate is introduced.",
-    "Literal-flux spectral binding: arbitrary fixed scalar function descent forces constancy; existing quadratic spectral energy has normalized frame defect at least 1/8 on two fixed genuinely curved smooth metrics at every L in 4N and every alpha_h. Fourteen compiled propositions, 58 transitive pins, 57 exact controls and a protected collapsing-function counterexample. No action or physical gate is added."
+    "Literal-flux spectral binding: arbitrary fixed scalar function descent forces constancy; existing quadratic spectral energy has normalized frame defect at least 1/8 on two fixed genuinely curved smooth metrics at every L in 4N and every alpha_h. Fourteen compiled propositions, 58 transitive pins, 57 exact controls and a protected collapsing-function counterexample. No action or physical gate is added.",
+    "Literal real-skew vector kinetic action: actual field/background derivatives, full free commutant gate, complete finite supplied-source Fredholm alternative and derived simultaneous-conjugation Ward. Twenty compiled propositions with nine transitive pins and 51 exact controls. A bounded nonsingular constant-rank fixed-source family has inverse delta^-2 and response 4 delta^-3; genuine kernel directions, source compatibility tangents and indefinite/constrained exceptions are retained. No physical D(g), metric stress, action or refinement is added."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "a4a0ee1ce0a48fe07da0da036e122262e8cc7d44",
+  "source_head": "8b96338505395dabf509e13422089d89685483b8",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
+  "source_parent": "a4a0ee1ce0a48fe07da0da036e122262e8cc7d44",
   "source_pr": 310
 }
