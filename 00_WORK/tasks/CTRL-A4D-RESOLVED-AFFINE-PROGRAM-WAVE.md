@@ -35,3 +35,14 @@ Do not self-merge execution PRs.
 The integration memo and task briefs are in the repository, stale control
 tracking is retired, repository status views agree, and at least the two
 formalization tasks based only on merged #180/#181 are launch-ready.
+
+
+## User-authorized reviewed checkpoint intake — 2026-10-06
+
+CONTROL may integrate the enumerated finite/arithmetic artifact slice of #317
+through `control/a4d-resonance-reviewed-checkpoint`, with primary acceptance
+record `02_REGISTRY/research/CONTROL_A4D_RESONANCE_CHECKPOINT.md` and current-head
+CI. This is not a merge, relabeling or retirement of the scientific EXPENSIVE
+execution. Its absolute-C/higher-stratum obligation stays in the manifest and
+original PR. Preserve exact source blobs, retain historical dispatches as
+non-theorem provenance, and do not promote claims, BOOK text or Lean results.

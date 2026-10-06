@@ -213,13 +213,31 @@ The repository strictly separates internal theorems, mathematical operators, and
 
 ---
 
-## 5. Spectral Rigidity: The Golden Ratio $\varphi$ and Zero-Parameter Mass Sectors
+## 5. Spectral Rigidity: The Golden Ratio $\varphi$ and Mass-Sector Boundaries
 
-In standard continuous field theory, Yukawa couplings $y_f \sim \sqrt{2} m_f / v$ are free parameters fitted by hand to match experimental particle masses. In D0, the logical sequence is strictly inverted:
+The finite spectral results, coefficient-selection problem and physical mass
+interpretation have different proof obligations. In the owned equivariant
+Yukawa class $Y(a,b,c;\lambda)=a+b\lambda+c\lambda^2$, the qualitative
+profile does **not** determine a unique coefficient triple.
 
-- **Ban on Arbitrary Couplings:** Theorem `YukawaQualitativeSelectorNoGo.lean` proves that on a discrete carrier the interaction matrix cannot be chosen freely; it is forced to be a spectral projector of the scene.
-- **Analytical Origin of Mass Hierarchies:** Fermion masses emerge as resolvent poles across scene defects (`LeptonGreenPuiseuxOwner.lean`). Puiseux series expansions proceed in integer powers of the deformation scale $\varepsilon = \varphi^{-n}$ as an analytical consequence of hyperbolic Pisot contraction on the underlying torus (`Time2DPisot.lean`, `CanonicalPuiseuxShellTransfer.lean`).
-- **Zero Parametric Freedom:** The theory contains zero continuous tunable parameters in its mass and mixing sectors. The fundamental ratio $\varphi = \frac{1+\sqrt{5}}{2}$ is locked at the foundational level (`BOOK_00`–`BOOK_02`) as the algebraic root $x^2 - x - 1 = 0$. Route strength is the audited inventory in the next section.
+- **What the selector no-go proves:**
+  [`YukawaQualitativeSelectorNoGo.lean`](03_FORMALIZATION/D0/Synthesis/YukawaQualitativeSelectorNoGo.lean)
+  proves that all non-scalar triples share the owned equality/rationality
+  profile. The injective family $(0,1,t)$ has that same profile. A unique
+  selector needs additional coefficient-sensitive information; this theorem
+  does not force a spectral projector.
+- **What the analytic owners supply:**
+  [`LeptonGreenPuiseuxOwner.lean`](03_FORMALIZATION/D0/Matter/LeptonGreenPuiseuxOwner.lean)
+  and the registered shell-transfer owners concern their specified resolvent
+  and expansion constructions. Their assumptions and the separate physical
+  identification must be checked in their actual statements. The quadratic
+  facts in `Time2DPisot.lean` do not by themselves derive those constructions
+  or a physical torus of time.
+- **Parameter-selection boundary:** $\varphi=(1+\sqrt5)/2$ satisfies
+  $x^2-x-1=0$. Fixing that number does not also select all Yukawa coefficients,
+  masses or mixing parameters. A zero-free-parameter conclusion requires the
+  separate selector and physical-identification obligations; it is not a
+  consequence of the qualitative no-go.
 
 ### Audited Mathematical Routes to $\varphi$
 
@@ -227,8 +245,18 @@ The routes below are an inventory of golden-ratio appearances/forcing attempts, 
 
 1. **Diophantine Extremality and KAM Stability (Dynamical Systems):**
    The continued fraction $\varphi = [1; 1, 1, \dots]$ possesses the maximal Hurwitz constant $c = \sqrt{5}$, providing the worst rational approximation among all real numbers. In `HurwitzMinimaxPhi.lean` and `HurwitzPhi.lean`, this maximal irrationality prevents mode-locking and phase resonance, ensuring KAM stability of cyclic discrete detector ticks.
-2. **Hyperbolic Toral Automorphisms and Pisot Contraction (Ergodic Theory):**
-   The discrete monodromy on the 2-torus $\begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix} \in \mathrm{SL}_2(\mathbb{Z})$ has eigenvalues $\{\varphi, -\varphi^{-1}\}$. Because $\varphi$ is a quadratic Pisot unit ($|\lambda_1| > 1 > |\lambda_2|$), it generates an intrinsic thermodynamic arrow of time: phase space expands along the unstable direction and contracts exponentially along the stable direction while strictly preserving symplectic measure (`Time2DPisot.lean`, `PisotContraction.lean`).
+2. **Quadratic Roots and the Fibonacci Matrix:**
+   The integer matrix $F=\begin{pmatrix}1&1\\1&0\end{pmatrix}$ has
+   determinant $-1$, so $F\in\mathrm{GL}_2(\mathbb Z)$, not
+   $\mathrm{SL}_2(\mathbb Z)$. Its characteristic polynomial is
+   $x^2-x-1$, with eigenvalues $\varphi$ and $-\varphi^{-1}$. It preserves
+   unoriented area and reverses the standard area form; $F^2$ has determinant
+   $+1$. The actual
+   [`Time2DPisot.lean`](03_FORMALIZATION/D0/Claims/Time2DPisot.lean)
+   statement bundles root identities, brackets, a discriminant calculation,
+   a bounded integer nonsquare check and the degree of a coefficient list.
+   It constructs neither a time torus nor a thermodynamic arrow. Those
+   interpretations require separate dynamical/physical owners.
 3. **Von Neumann Factors and Fibonacci Tensor Categories (Operator Algebras):**
    In Jones' classification of $\mathrm{II}_1$ subfactor indices $[M : N] = 4 \cos^2(\pi/n)$, the primitive torsion index $n = 5$ evaluates to $[M : N] = 4 \cos^2(\pi/5) = \frac{3+\sqrt{5}}{2} = \varphi^2 = \varphi + 1$ (`JonesIndexPhi.lean`). In the category of boundary braid representations, the unique non-abelian solution to the pentagon equation is the Fibonacci fusion ring $\tau \otimes \tau = \mathbf{1} \oplus \tau$, whose fundamental anyonic quantum dimension is identically $d_\tau = \varphi$ (`FibonacciFusionRing.lean`, `FibonacciAnyonUniqueness.lean`).
 4. **Projective Quasicrystals and the $E_8$ Root Lattice (Discrete Geometry):**
@@ -238,9 +266,12 @@ The routes below are an inventory of golden-ratio appearances/forcing attempts, 
 
 ### Scientific Falsifiability
 
-Because D0 possesses zero free parameters in this sector, empirical comparison is an unyielding test of structural validity:
-- Any statistically significant deviation between the derived Puiseux mass series and high-precision experimental measurements (PDG, lepton g-2, neutrino oscillation bounds) falsifies the entire 3-partite scene topology, rather than an isolated fitting parameter.
-- Under `alternative_burden` (`D0-POPPERIAN-BOOTSTRAP-001`), any alternative discrete model that admits an empirical killing test carries the same functional tuple and must demonstrate its own endogenous stability against mode-locking and measure loss.
+Empirical tests apply to the exact selected model, its declared assumptions,
+calibrations and measurement passport. A disagreement can reject that tested
+combination. It does not by itself refute every three-partite scene or close
+an unresolved coefficient selector. Consult `claims.csv`, the actual theorem
+statements and the relevant empirical passports before making a stronger
+physical conclusion.
 
 ---
 
@@ -366,9 +397,9 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Work Queue & Control Plane
 
-- **Tracked Queue/Control Tasks**: CONTROL: 2, EXPENSIVE: 3, WORKER: 0 (Total: 5)
+- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 0 (Total: 4)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
-- **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 1/3, WORKER: 0/5
+- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 1/3, WORKER: 0/5
 - **Legacy Scaffolds Remaining**: 0
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
 <!-- D0-WORK-STATUS:END -->

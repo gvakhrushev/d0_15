@@ -171,3 +171,24 @@ Keep explicit distinctions among:
 Do not call spatial stiffness a wave equation, a Role direction physical time,
 or a Palatini-like density Einstein gravity until the required downstream
 variation/constraint/dynamics theorems exist.
+
+## 8. Reviewed checkpoints and response-memory scope
+
+Read `02_REGISTRY/research/CONTROL_RESPONSE_MEMORY_CONSOLIDATION.md` before
+resuming the consolidation / response-memory program. A CONTROL checkpoint may
+integrate a reviewed artifact slice while its original EXPENSIVE parent remains
+open. Do not change an executable task's class or retire it merely to bypass a
+lifecycle gate. Keep the unresolved obligation and its original PR discoverable.
+
+On one fixed exact metric source, Xi(K1)=h^2*tau=Xi(K2). A negative response
+terminal must compare an admitted exact refining sequence with the designated
+comparator; two exact roots of one source cannot have different Xi. A finite
+stencil does not by itself prove finite-dimensional sufficient memory, and
+undetermined current memory can be response-invisible. Do not revive these
+rejected shortcuts from a chat summary.
+
+A local commit is not a publication. Before reporting a result as stored in
+GitHub, verify its remote head and artifact blob. Preserve the source SHA and
+checker/ledger pair in checkpoint intake. The read-only history workflow exports
+published branch/tag/PR histories; its artifact has finite retention and cannot
+recover a commit that was never sent to a published ref.
