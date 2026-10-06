@@ -482,6 +482,41 @@
       "depends_on": [
         "cochain_refinement_construction"
       ]
+    },
+    {
+      "id": "reference_weight_lorentz",
+      "scope": "The existing standalone referenceCellWeight family with literal raw solder Lorentz action and exterior field lift, including arbitrary coefficients varying with refinement.",
+      "hypotheses": [
+        "The uniform 5/86 bound uses the two explicit nondegenerate constant frame orbits; exact descent also fails on every open flat coframe neighborhood by the separate small-boost argument.",
+        "Scalar readout is retained; it is not replaced by a different pairing, added term or supplied physical gate."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REFERENCE_WEIGHT_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_reference_weight.lean"
+      ],
+      "verification": "Seventeen generic/literal compiled propositions; sharp defect 5/86, actual scalar exterior-unit binding, all 16 symbols, ten-component metric covector obstruction and 40 exact controls.",
+      "status": "PROVED_SCOPED_OPERATOR_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THIS_CONSTITUTIVE_FAMILY",
+      "depends_on": []
+    },
+    {
+      "id": "reference_weight_range",
+      "scope": "Full finite spectrum of actual W_c at e=-I/2, over the complete four-Role cochain carrier.",
+      "hypotheses": [
+        "Counting inner product, unscaled owner operator and periodic native carrier.",
+        "Kernel classification at c=1 and uniform positivity at c>1 are not an Einstein or causal dynamics claim."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REFERENCE_WEIGHT_BOUNDARY.md#4-exact-coefficient-dependent-kernel-and-range"
+      ],
+      "verification": "Exact all-size Fourier symbol: c=1 one nongauge scalar kernel and gap min(1/4,sin^2(pi/L)); c=2 sharp gap 1/2. Independent real-space L=2 control.",
+      "status": "PROVED_FINITE_FAMILY_CLASSIFICATION_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_FINITE_SCOPE",
+      "depends_on": [
+        "reference_weight_lorentz"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -504,5 +539,6 @@
   "followup_input_head": "a30408721a3804e3d0c97fe2a210a556dbff4b67",
   "weighted_followup_input_head": "0af401558deca37468c077c40b53ac670a7ccaf3",
   "volume_fiber_input_head": "ff5baf86642fca81714843b8ab48bed50939fe54",
-  "cochain_refinement_input_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764"
+  "cochain_refinement_input_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
+  "reference_weight_input_head": "75527846bf3603a1c51acf445f8354e3254341be"
 }

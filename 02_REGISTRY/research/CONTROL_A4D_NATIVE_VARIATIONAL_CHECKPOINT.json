@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "ffed0c666b38e921f0abbc53554bb95bc4b812075bc1f2af67bf42385cf25dd6",
-      "source_blob": "39f5197ffb3621abd5aaa25adac375769f953b7b"
+      "sha256": "876fe1efe8cb1df0e4c39b881fe3caed0638be0f0264bd86226fc441c16a7399",
+      "source_blob": "2803be0bf5fb28aff7eb545f8ba61395c86e7dec"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "c274e275d0213a15fed061b187f5783fc22e214f4aba62de6e6c5ea0104fdbe2",
-      "source_blob": "40387656ff9140a2ef75c365dff689a270ed31db"
+      "sha256": "6b1ffa5a4fe67a80b1920d3b6bf98d6e1ccc049ba1150d5eac311c8fc6e8d311",
+      "source_blob": "b438e792f978729b95305d0fdc77361b617f7523"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -166,6 +166,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_results.json",
       "sha256": "be6878744d08c29d085a41f3c8cc7ef65e3225f9b46192bf7c8826e7abf8c635",
       "source_blob": "e0af8e04e1a666e885e3e701ed9f36fbd5011559"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_REFERENCE_WEIGHT_BOUNDARY.md",
+      "sha256": "4f623f7514780232dadc752f1db1bb31b850924a3005445c6b809a7059591d36",
+      "source_blob": "cfc66a000934bd4f561223f861283e1cc712a2ac"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_weight.lean",
+      "sha256": "9be03c6a0fcb7a80f63ef57f468cbe616e27158094ec792bf755fc1a2778679c",
+      "source_blob": "2fc119eb2e784a63e92879c441462107e9ac5185"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_weight_check.py",
+      "sha256": "bca0398f206aed8174a1aa88b08cbacb4cc1b55539be99383dbfe5f90dd30505",
+      "source_blob": "0ffa05b1063de2e5128da8bfd16e5b9a427e2b97"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_weight_certificate.json",
+      "sha256": "a7d6c0b38e73a9c56868f80c0a3f2cd67690fc3d8f2ac7de59eab20ceddf789b",
+      "source_blob": "07daff1e2fcb82dc254f18e398cac466c4358f69"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_weight_output.txt",
+      "sha256": "2062b8611bbefbe47b8ac9721594985548e82b65dd4379bd52bf9b836afc121a",
+      "source_blob": "5c3a544e924f562be85dda26f6dfe9e17d9f9c57"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_weight_results.json",
+      "sha256": "ccb329ad17a23c7ee19b7cea465fb7e42d83bfa872931d2c96741c31487c69cf",
+      "source_blob": "024c298afd415b7bbff2e45a328b87794ed67747"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -174,7 +204,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
+  "previous_source_head": "75527846bf3603a1c51acf445f8354e3254341be",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -187,11 +217,12 @@
     "All-size adjacent-cycle linear intertwiner and full unital-lift gate classification, with local constrained and degenerating approximate countercontrols.",
     "Literal positive-weight A2 compensator full edge gate versus auxiliary-only elimination; seven compiled identities and 86 new exact controls.",
     "General volume-only information obstruction with nonpolynomial and uniquely auxiliary-stationary profiles; exact curved volume-preserving Gram pencil, 72 controls and six compiled statements including actual compensator nonempty unique action value.",
-    "Explicit native cochain refinement operators, scale-corrected chain construction, full 16-sector Gram normalization and all-grade actual metric-measure formula; scoped failure of composed fixed-torus component readout. Twelve generic compiled propositions and 92 exact grouped controls."
+    "Explicit native cochain refinement operators, scale-corrected chain construction, full 16-sector Gram normalization and all-grade actual metric-measure formula; scoped failure of composed fixed-torus component readout. Twelve generic compiled propositions and 92 exact grouped controls.",
+    "Existing shape-sensitive referenceCellWeight family: all-coefficient raw Lorentz scalar obstruction, sharp uniform two-probe defect 5/86, literal scalar/exterior binding, coefficient-dependent full Fourier kernel/range classification at one nondegenerate constant coframe. Seventeen compiled propositions, 56 transitive source pins and 40 exact controls. No native action or physical gate is introduced."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "75527846bf3603a1c51acf445f8354e3254341be",
+  "source_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
+  "source_parent": "75527846bf3603a1c51acf445f8354e3254341be",
   "source_pr": 310
 }
