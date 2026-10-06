@@ -38,9 +38,10 @@
         "03_FORMALIZATION/D0/Foundation/PhysicalComparisonRepresentation.lean",
         "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean",
         "03_FORMALIZATION/D0/Synthesis/ConcretePhysicalDetectorRepresentation.lean",
-        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md"
+        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
+        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md"
       ],
-      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used.",
+      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used. The nonlinear feedback formula does not select its supplied profile: an exact exponential encoding realizes arbitrary input actions. Its old Boolean source and finite Higgs capstones are not completeness theorems.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -262,10 +263,11 @@
       "owners": [
         "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#3",
         "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md"
+        "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
+        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md"
       ],
-      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed. Actual phase half-turn permutations have adjacent error 1/L but composed error 1/2. Exact phase rigidity only applies on all consecutive levels; sparse subsequences and four-Role/flattened carriers remain distinct.",
-      "status": "OPEN_NONAFFINE_NATIVE_ARROW",
+      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed. Actual phase half-turn permutations have adjacent error 1/L but composed error 1/2. Exact phase rigidity only applies on all consecutive levels; sparse subsequences and four-Role/flattened carriers remain distinct. The full convex affine-metric-fiber class, including nonlinear log-det terms with affine operator inputs, is now excluded on the same two curved probes. The actual coordinate-edge operator with direct nodal fields has a curved weak mixed-response obstruction; exact O(h) periodic correctors protect broader field preparation. Bare positive log-det also fails for bounded positive conductances with controlled probe sensitivity and two actual flat comparison maps, including nonlinear and oscillating preparation. Those extra map/bound hypotheses are explicit and are not inferred from the core.",
+      "status": "OPEN_REMAINING_NATIVE_ARROW",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
       "depends_on": [
@@ -291,7 +293,7 @@
         "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md",
         "02_REGISTRY/research/A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md"
       ],
-      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient. The literal flux coframe source is now derived; its nonlinear Lorentz gate fails on the scalar sector. Metric stress/Ward for a physical combined system remains OPEN. The actual real-skew vector action now has compiled first variations and joint conjugation Ward, but its freely stationary field has zero background response; a supplied skew current is not physical metric stress. The existing mixed parent now has compiled actual field derivatives and zero full constitutive source for its positive scalar-form class; its invertible indefinite source relation and genuine radical exceptions are classified. No physical star or Ward premise is selected by that result. The actual four-Role local source quotient is now compiled and its finite source representation inverse is constructed with sharp counting norm bounds. It represents supplied edge responses; it neither generates the matter action nor proves the physical Ward identity. Canonical phase anomaly-sum sources fail even two local variational tests.",
+      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient. The literal flux coframe source is now derived; its nonlinear Lorentz gate fails on the scalar sector. Metric stress/Ward for a physical combined system remains OPEN. The actual real-skew vector action now has compiled first variations and joint conjugation Ward, but its freely stationary field has zero background response; a supplied skew current is not physical metric stress. The existing mixed parent now has compiled actual field derivatives and zero full constitutive source for its positive scalar-form class; its invertible indefinite source relation and genuine radical exceptions are classified. No physical star or Ward premise is selected by that result. The actual four-Role local source quotient is now compiled and its finite source representation inverse is constructed with sharp counting norm bounds. It represents supplied edge responses; it neither generates the matter action nor proves the physical Ward identity. Canonical phase anomaly-sum sources fail even two local variational tests. The nonlinear log-det candidate now has an exact finite source-image/uniqueness theorem and finite conjugation Ward; its operator substitution, independent matter law and physical variation/refinement map are still unselected.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -334,7 +336,7 @@
         "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md#5-exact-range-obstruction-with-bounded-nonsingular-backgrounds",
         "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md#3-invertible-indefinite-form-exact-kernel-and-source-relation"
       ],
-      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol. The mixed-parent field Hessian has rank 2n+rank(K^T M^-1 K), with source-capable quotient ker(K^T M^-1 K)/ker K equal to the image radical; no physical gauge identification is inferred. The separate source-readout Gram has a sharp inverse bound 1/(2L^4), but this is explicitly not the joint Euler operator; its raw observable kernel is retained.",
+      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol. The mixed-parent field Hessian has rank 2n+rank(K^T M^-1 K), with source-capable quotient ker(K^T M^-1 K)/ker K equal to the image radical; no physical gauge identification is inferred. The separate source-readout Gram has a sharp inverse bound 1/(2L^4), but this is explicitly not the joint Euler operator; its raw observable kernel is retained. The supplied-source log-det inverse is quantitatively bounded only under its explicit resolvent/coupling bounds; bounded source alone fails in an exact nonempty three-vertex family. This is not the coupled physical range operator.",
       "status": "OPEN_FOR_NATIVE_SYSTEM",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -650,6 +652,91 @@
       "depends_on": [
         "canonical_archive_gate"
       ]
+    },
+    {
+      "id": "logdet_source_class",
+      "scope": "Existing feedback functional tested at the real signed local-conductance operator, with c>0, nonzero z and positive definite I-zF; scalar-profile selection is analyzed separately.",
+      "hypotheses": [
+        "Every signed edge variation is allowed on the positive domain.",
+        "The operator substitution is an analyzed candidate, not an already selected physical map.",
+        "A prescribed source is tested by independent linear positive-definite completion, never fitted from a desired Einstein response.",
+        "Uniform inverse bounds require the stated preparation bounds on the resolvent and coupling."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Matter/HiggsLogdetStationary.lean",
+        "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean",
+        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md"
+      ],
+      "verification": "Twenty-three compiled real-calculus/similarity/edge-source propositions with 33 transitive source pins; 91 exact controls. All-size analytical source-image iff positive definite centered completion, uniqueness and range bounds. Exact bounded-source inverse degeneration; both coupling signs, constrained and indefinite controls. Supplied profiles encode arbitrary actions, so the formula does not select a native law.",
+      "status": "PROVED_SCOPED_FINITE_SOURCE_CLASSIFICATION_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "FINITE_SOURCE_IMAGE_AND_EXPLICIT_PHYSICAL_BOUNDARY",
+      "depends_on": [
+        "local_source_quotient_range"
+      ]
+    },
+    {
+      "id": "convex_profile_bridge",
+      "scope": "Any jointly convex differentiable action on a convex domain, affine actual metric fibers, full auxiliary Euler gate, both published curved pencils and one fixed nonzero calibration.",
+      "hypotheses": [
+        "Full auxiliary stationary fibers are inhabited at every required pencil point and endpoint.",
+        "Metric readout and fiber constraints are affine in the actual covariant metric data.",
+        "Total endpoint record/refinement errors are O(h), or o(epsilon) for qualitative monotonicity.",
+        "The completed-contrast estimate holds at every fixed base parameter along both pencils."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md#6-convex-prepared-contrast-obstruction-beyond-quadratic-actions",
+        "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#3"
+      ],
+      "verification": "Full-gate convex fiber minima imply a convex value function; every centered secant is monotone. Pointwise convergence contradicts one of the two existing opposite curved Einstein Hessians for either calibration sign. Includes nonquadratic positive log-det terms with affine inputs; nonlinear profiles and constrained/nonconvex exceptions remain protected.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO_GO_FOR_FULL_CONVEX_AFFINE_METRIC_PROFILE_CLASS",
+      "depends_on": [
+        "affine_profile_bridge"
+      ]
+    },
+    {
+      "id": "direct_coordinate_local_operator",
+      "scope": "Actual four-Role local conductance operator and direct nodal scalar-field readout in the fixed coordinate placement.",
+      "hypotheses": [
+        "The operator is the actual nearest-neighbor Role stencil.",
+        "Physical scalar fields are directly sampled; no correction with nonnegligible derivative energy is absorbed into this readout."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean",
+        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md#7-local-coordinate-support-obstruction-and-a-corrector-exception"
+      ],
+      "verification": "Compiled all-size pointwise mixed-coordinate annihilation. Exact all-six-pair controls and curved weak gap pi^2/20. A full periodic cell solution with O(h) field correction and mixed response -9/20 is a protected exception, not a physical root or a native preparation theorem.",
+      "status": "PROVED_SCOPED_OPERATOR_OBSTRUCTION_WITH_CORRECTOR_EXCEPTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO_GO_FOR_DIRECT_COORDINATE_OPERATOR_READOUT",
+      "depends_on": [
+        "local_source_quotient_range"
+      ]
+    },
+    {
+      "id": "bounded_logdet_flat_transfer",
+      "scope": "Bare log-det on the positive resolvent domain, uniformly positive bounded conductances, O(epsilon) probe endpoint difference, and actual uniform flat preparation intervals above and below the curved weight box.",
+      "hypotheses": [
+        "Both flat experiments belong to the stated physical metric class and their native preparation maps realize the required uniform intervals.",
+        "The curved and flat experiments use the same mesh coupling, normalization and fixed nonzero calibration.",
+        "No additional geometry-dependent action subtraction is inserted.",
+        "Total O(h) record/refinement errors and uniform probe bounds are explicit hypotheses."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md#8-flat-calibration-excludes-a-broader-bounded-nonlinear-preparation-class",
+        "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#3"
+      ],
+      "verification": "All-size inverse-order proof for both coupling signs: vanishing normalized flat contrasts force all curved contrasts to vanish. Nonlinear preparation and spatially oscillating weights are allowed. Signed weights, uncontrolled sensitivity and absent flat comparison maps remain outside the theorem.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO_GO_FOR_BOUNDED_POSITIVE_LOGDET_CLASS_WITH_FLAT_MAPS",
+      "depends_on": [
+        "logdet_source_class",
+        "probe_law"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -677,5 +764,6 @@
   "spectral_frame_input_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
   "parent_source_input_head": "8b96338505395dabf509e13422089d89685483b8",
   "verification_refinement_input_head": "606d8774bcaf4684d8caac60cb73912a8827091a",
-  "edge_source_input_head": "2cba34623e346eb75a7a9ae42a550e4a52178a54"
+  "edge_source_input_head": "2cba34623e346eb75a7a9ae42a550e4a52178a54",
+  "logdet_source_input_head": "32e7a1da7c191ef8567647d56d69995b475a84bb"
 }

@@ -78,6 +78,28 @@ every actual anomaly-sum source alpha C_L at even the weaker variational
 gate, with sharp unscaled squared residual 18. Signed reconstructed sources
 are a protected exception; the native matter action is still missing.
 
+The [nonlinear log-det source classification](A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md)
+now derives the real scalar variation and complete finite source image for the
+specified signed local-conductance binding on its positive resolvent domain.
+A prescribed source is realizable exactly when its scaled edge data admit a
+positive definite centered completion; its root is unique. A three-vertex
+exact family has bounded positive source and diverging inverse response.
+Both nonzero coupling signs are classified, including a uniform finite
+negative-coupling control on the unit four-Role family. The full unsourced
+edge gate is empty. Arbitrary supplied profiles can encode arbitrary actions,
+so this finite source theorem does not select a native physical law. More
+generally every full convex affine-metric-fiber profile fails the two curved
+Einstein probes, extending the earlier quadratic obstruction.
+The actual coordinate-edge operator with direct nodal field readout also has
+a weak mixed-response gap `pi^2/20` on an explicit curved Lorentz metric.
+An exact periodic corrector with field size O(h) and mixed response `-9/20`
+protects the broader prepared-field class from that obstruction. Separately,
+the bare positive log-det class with uniformly bounded positive conductances,
+controlled probe sensitivity and two specified flat preparation maps cannot
+retain a nonzero curved contrast after the required flat calibration. This
+last result permits nonlinear preparation and spatially oscillating weights;
+its flat-map and uniform-bound hypotheses are not inferred from the core.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
@@ -100,6 +122,8 @@ than treating comments or theorem names as physical equations.
 | `FinitePrimalDualHodgeParent`, `A4DPathWordParentWard` | Supplied primal/dual differentials, stars, pairing and independent fields $\psi,\chi,\lambda$ | Actual three-field derivatives compiled after literal linear-pairing binding. Positive scalar form forces $\chi=\lambda=0$, $K\psi=0$; invertible indefinite form has the complete $K^T M^{-1}K$ kernel relation | Full constitutive source is zero in the positive class; indefinite source radical and sharp approximate-root estimate are classified. A degenerate pairing enforces only its visible constraint | A physical star, same-carrier metric pullback and coupled Ward hypotheses remain unconstructed. Scalar Hodge positivity applies only when the actual supplied composition is that form; the old weighted-Hodge capstone is still numerical/Boolean. |
 | `Gravity.A4DParentWardStressDescent` | Supplied `df`, `readout`, coframe Euler and auxiliary Ward terms | Divergence zero follows **if** parent Ward, auxiliary EOM, coframe EOM and readout constraint all hold | Exact finite centered-gradient adjoint is owned | The physical parent Ward and EOM hypotheses are not proved by the descent theorem. |
 | `Gravity.VariationalCarrierAudit` | Supplied graph Laplacian satisfying `IsGraphLaplacian` | Response defined as $2L$ is symmetric and has zero row divergence | Finite matrix identity | The capstone does not quantify over all variational carriers or identify $2L$ with a physical Einstein tensor. |
+| `Matter.HiggsLogdetStationary`, `Cosmology.FeedbackPartitionFunction` | Existing scalar/matrix feedback formula with supplied profile/operator/coupling; actual old source owner is Boolean | Real derivative and rank-two normalization now compiled. Arbitrary profile input encodes any real action; every similarity orbit has constant determinant, even when the orbit is nonconstant | The tested local-conductance binding has an all-size exact source-image and uniqueness theorem, inverse bounds with explicit preparation hypotheses, and an exact boundary degeneration | A selected native physical operator, independent matter fields, physical metric source and refinement remain absent. The finite conjugation Ward is not physical divergence. |
+| `Matter.HiggsRadialInstabilityBoundary` | Owned rank-one representatives, gauge orbit, noncommutation and carrier projector | The actual capstone contains those finite matrix facts; its type is printed | No radial action is quantified over in that capstone | Its name or comments cannot provide a complete physical radial-dynamics NO-GO. Log-det encoding counterprofiles preserve the distinction between available formula and selected native profile. |
 | `Geometry.SpectralActionAdmissibility` | Supplied `ArchiveHeatTrace4D`; cutoff and stable-signature hypotheses | Named expansion/curvature slots are conjunctions of the supplied dimension condition and exponent equalities | Structural admissibility | No actual heat expansion coefficient, nonlinear metric variation or curvature-action equality is proved. |
 | `Geometry.HeatTraceEHProxy`, `HeatTraceA2Decomposition` | Supplied symmetric `L` and positive site weights `rho`; actual volume coordinate is `mu=1/rho` | Exact off-diagonal sum quadratic in `mu`; second owner's convention has factor 1/2 | Exact trace-square decomposition and positivity | Bounded-degree fixed-operator profiles fail the earlier pencil. The stronger volume-fiber result excludes arbitrary nonlinear volume-only operators/profiles too, when the explicitly tested physical-volume readout and shape probe are admitted. Additional shape data remain outside that class. |
 | `Geometry.ArchiveHeatTrace` | Fixed archive cardinality/eigenvalue `x.val` and supplied heat time `u` | A positive finite exponential sum and point-lift compatibility | No density or metric argument in its actual definition | At fixed `u` the metric contrast is zero. This is not a heat trace of a variable weighted Laplacian. |
@@ -191,6 +215,10 @@ a nonvacuous positive realization or as #310's required exact hostile family.
 | Existing positive-weight A2 compensator with full independent edge gate | Exact solution-set classification | Residual, action and diagonal response vanish. Auxiliary-only stationarity does not give this conclusion and is not excluded as a nonlinear profile mechanism |
 | Spectral functions of the literal flux matrix with the actual scalar/exterior sector | Scoped obstruction | Exact scalar frame descent forces a fixed spectral function to be constant. The existing quadratic spectral action retains normalized defect at least 1/8 on two fixed curved conformal metrics for every coefficient and every L in 4N. Arbitrary refinement-dependent spectral functions may collapse while preserving a flat first jet; they are not covered by the uniform quadratic bound. |
 | Literal real-skew vector kinetic action, full free field and supplied-source range | Scoped finite classification | Derivative, full commutant kernel and finite source sufficiency are proved. Unsourced background response is zero; the exact conjugation Ward is not yet a metric divergence identity. Uniform inverse fails on an explicit bounded nonsingular family. |
+| Nonlinear log-det on the tested real local-conductance family, positive resolvent and nonzero coupling | Complete finite source-image classification | Every edge derivative has the coupling sign, so the full free unsourced gate is empty. A supplied source has one root iff its scaled data have a positive definite centered completion. Uniformity requires the stated resolvent bounds. All source signs, indefinite/constrained exceptions and arbitrary-profile nonselection stay explicit. |
+| Any jointly convex action with affine metric fibers and full auxiliary gate | Stronger scoped contrast obstruction | If both curved-pencil fibers are inhabited, their stationary values are convex; pointwise limits of centered secants cannot match the two opposite Einstein curvatures under one calibration. Nonquadratic positive-domain log-det terms with affine operator inputs are included. Nonlinear metric maps and nonconvex gates remain outside this class. |
+| Actual coordinate-edge operator with direct nodal scalar-field readout | Scoped operator obstruction with a corrector exception | All mixed-coordinate bilinear pairings vanish for arbitrary conductances. An explicit curved metric has pairing `pi^2/20`. A complete periodic cell solution has O(h) field corrections but mixed response `-9/20`, so small field values alone do not extend this obstruction to prepared fields. |
+| Bare positive log-det action with bounded positive conductances and two specified flat preparation maps | Stronger scoped contrast obstruction | For either coupling sign and arbitrary normalization, vanishing flat contrasts force vanishing curved contrasts under the explicit uniform endpoint probe bound. Nonlinear and spatially oscillating preparation is allowed. Missing flat maps, signed weights, uncontrolled sensitivity and geometry-dependent subtractions remain outside the theorem. |
 | Native matter metric variation and joint Ward identity | OPEN | Existing total neutrality/zero-source/conditional Ward results do not construct this system |
 
 The smallest remaining first-stage obligation is a typed native physical

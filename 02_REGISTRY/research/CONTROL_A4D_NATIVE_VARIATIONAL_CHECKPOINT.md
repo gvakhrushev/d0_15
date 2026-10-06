@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`32e7a1da7c191ef8567647d56d69995b475a84bb`, following
-`606d8774bcaf4684d8caac60cb73912a8827091a`.
+`60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5`, following
+`32e7a1da7c191ef8567647d56d69995b475a84bb`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-sixty-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
+seventy-five byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -56,7 +56,11 @@ sixty-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and actual local-variation/source-equivalence capsule
   with output and transitive-source receipt.
 
-The published source head and both new proof blobs were independently verified
+* [Nonlinear log-det source, contrast and direct-readout boundaries](A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md),
+  exact checker/ledger and real-calculus/similarity/edge-source/mixed-readout
+  capsule with output and transitive-source receipt.
+
+The published source head and new proof/capsule blobs were independently verified
 against GitHub before this intake commit.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
 actual flux proof capsule, the six pins of the new weighted-owner capsule,
@@ -65,8 +69,8 @@ cochain refinement capsule, the 56 pins of the reference-weight capsule,
 the 58 pins of the spectral-frame capsule, the nine pins of the literal
 vector source capsule, the 12 pins of the mixed-parent source capsule,
 the 32 pins of the verification/refinement capsule, and the 35 pins of
-the actual local-source quotient capsule,
-the registry snapshot and all eleven native certificates' input hashes match
+the actual local-source quotient capsule, and the 33 pins of the nonlinear
+log-det capsule, the registry snapshot and all twelve native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
@@ -238,15 +242,51 @@ local file or an implicitly merged scientific parent.
     sources and the owned conserved projection remain positive controls
     against extending this obstruction to all weak source fibers.
 
+19. **Nonlinear log-det source:** actual real scalar derivatives, rational-profile
+    binding, rank-two normalization and arbitrary-profile encoding compile.
+    Similarity alone leaves the determinant unchanged. The tested signed
+    local-conductance binding has a complete source-image theorem: scaled
+    edge data must and suffice to admit a positive definite centered
+    completion, and the root is unique. Its full free unsourced gate is
+    empty. Bounded positive sources do not ensure a uniform inverse, as an
+    exact three-vertex family proves. Resolvent/coupling bounds, both signs,
+    constrained and indefinite exceptions stay explicit. The supplied
+    profile and operator slot do not select a physical action or source.
+
+20. **Convex prepared profiles:** every jointly convex action with affine
+    actual metric fibers and a full auxiliary gate has convex stationary
+    values on inhabited fibers. Centered-secant monotonicity excludes the
+    two opposite curved Einstein Hessians under one calibration, including
+    nonlinear log-det with affine inputs. No asymptotic error is
+    differentiated; nonempty fibers and total errors are hypotheses.
+
+21. **Direct coordinate readout:** the actual local operator kills all
+    mixed-coordinate direct nodal probes and has zero separated-coordinate
+    bilinear pairing, for arbitrary conductances. A specified smooth
+    curved Lorentz metric has weak pairing pi^2/20. The exact full periodic
+    cell corrector has O(h) field amplitude but mixed response -9/20, so
+    small field values do not extend the obstruction to prepared fields.
+    The cell problem is not a native preparation map or physical root.
+
+22. **Bounded positive log-det and flat calibration:** if actual flat maps
+    realize two uniform comparison intervals, vanishing normalized flat
+    contrasts force all curved contrasts to vanish under the stated
+    positive weight bounds and O(epsilon) endpoint sensitivity. The
+    all-size inverse-order proof allows nonlinear preparation, spatial
+    oscillation and either sign of arbitrary mesh coupling/normalization.
+    The map and bound hypotheses are not inferred from the core; signed
+    weights, uncontrolled sensitivity, missing flat maps and additional
+    geometry-dependent subtractions remain outside the theorem.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The sixty-nine imported files
+labels, Lean owners and BOOK text are unchanged. The seventy-five imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The eleven self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76 and 59 exact controls without
+The twelve self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59 and 91 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -307,6 +347,15 @@ axioms only. Three actual types are printed. The complete source quotient is
 compiled; its all-size Gram, spectrum, kernel dimensions and phase-source
 obstruction have analytical proofs and 59 exact controls. Falsifying either
 the sharp Riesz lower bound or the two-probe source gap is rejected.
+The log-det capsule compiles twenty-three generic/actual-owner propositions,
+prints six actual types and pins 33 transitive D0 sources with standard
+axioms only. Its matrix calculus, complete source image, quantitative range,
+convex profile, weak readout, exact corrector and flat-calibration theorems
+are analytical proofs with 91 exact controls, not compiled continuum
+existence claims. False ledgers erasing the source-image boundary, inverse
+degeneration or mixed corrector response are rejected. All 75 artifact blobs
+and 228 distinct artifact/input hashes are verified, including the explicit
+published prerequisite used by the earlier probe certificate.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -332,6 +381,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_vector_source_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_parent_source_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_verification_refinement_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_edge_source_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_logdet_source_check.py
 ```
 
 ## Preserved original obligations
