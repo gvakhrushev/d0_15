@@ -1,6 +1,8 @@
 name: D0 published history checkpoint
 
 on:
+  push:
+    branches: ["main"]
   pull_request:
     types: [opened, synchronize, ready_for_review]
     paths:
