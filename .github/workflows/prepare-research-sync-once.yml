@@ -1,0 +1,101 @@
+name: Prepare reviewed research synchronization objects
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['.github/workflows/prepare-research-sync-once.yml']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    if: github.repository == 'gvakhrushev/d0_15' && github.event.pull_request.number == 317 && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'exp/a4d-resonance-divisor-stratification'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Build and validate exact merge trees, then publish objects only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python - <<'PY'
+          import base64, json, os, pathlib, subprocess, urllib.request
+          root = pathlib.Path.cwd()
+          main = 'fa2b04b9c8aae5a0b8470322d6091712ce56567a'
+          cases = [
+              (317, '3b75c11ac4dec7687801ee559fa7fc7687ccdfaf', '5e005d52c58b539a11431205402cbecfa0e3d076'),
+              (202, '2d8278887ad52525da2c7b569aa90bd0dbebe11b', '126c9bae843726098621bed98b208aa7b9966e61'),
+              (310, '3d16b3e19c0cbe0d6b2907f3140e6e3eb1e7486b', 'a8ad46b1d851afa2a6aded5cae80c8821ce30cec'),
+          ]
+          def git(*args, cwd=root):
+              return subprocess.check_output(['git', *args], cwd=cwd, text=True).strip()
+          def post(endpoint, payload):
+              request = urllib.request.Request(
+                  'https://api.github.com/repos/gvakhrushev/d0_15/git/' + endpoint,
+                  data=json.dumps(payload).encode(), method='POST',
+                  headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+                           'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json',
+                           'X-GitHub-Api-Version': '2022-11-28'})
+              with urllib.request.urlopen(request, timeout=60) as response:
+                  return json.load(response)
+          for number, head, expected in cases:
+              work = pathlib.Path(os.environ['RUNNER_TEMP']) / ('sync-' + str(number))
+              subprocess.run(['git', 'worktree', 'add', '--detach', str(work), head], cwd=root, check=True)
+              result = subprocess.run(['git', 'merge', '--no-commit', '--no-ff', main], cwd=work)
+              conflicts = set(git('diff', '--name-only', '--diff-filter=U', cwd=work).splitlines())
+              assert result.returncode in (0, 1)
+              assert conflicts <= {'README.md', '00_WORK/STATUS.md'}, conflicts
+              subprocess.run(['python', 'tools/render_work_status.py'], cwd=work, check=True)
+              subprocess.run(['git', 'add', 'README.md', '00_WORK/STATUS.md'], cwd=work, check=True)
+              if number == 202:
+                  path = work / '02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_support7_order1_check.py'
+                  text = path.read_text()
+                  changes = [
+                      ('from itertools import combinations\n', 'from itertools import combinations\nfrom functools import lru_cache\n'),
+                      ('class MJet:\n', '@lru_cache(maxsize=128)\ndef _inverse_value(value: sp.ImmutableMatrix) -> sp.ImmutableMatrix:\n    """Memoize exact base inverses only; immutable keys/values avoid aliasing."""\n    return sp.ImmutableMatrix(value.inv())\n\n\nclass MJet:\n'),
+                      ('        vi = self.v.inv()\n', '        vi = _inverse_value(sp.ImmutableMatrix(self.v))\n'),
+                  ]
+                  for old, new in changes:
+                      assert text.count(old) == 1, old
+                      text = text.replace(old, new)
+                  old = '    for r, s in PAIRS:\n        ur, us = role[r], role[s]\n'
+                  new = '    for r, s in PAIRS:\n        # This homogeneous face depends only on links r and s. A variation\n        # of another role is identically zero, including its full first jet.\n        # Keep every incident face and all 24 tested Euler components.\n        if role_index not in (r, s):\n            continue\n        ur, us = role[r], role[s]\n'
+                  assert old in text
+                  text = text.replace(old, new, 1)
+                  path.write_text(text)
+                  subprocess.run(['git', 'add', str(path)], cwd=work, check=True)
+              actual = git('write-tree', cwd=work)
+              assert actual == expected, (number, actual, expected)
+              assert not (work / '.github/workflows/prepare-research-sync-once.yml').exists()
+              for script in ('tools/validate_repo.py', 'tools/validate_work.py', 'tools/validate_agent_protocol.py', 'tools/test_generate_lean_views.py', 'tools/test_claim_map_coverage.py', '03_FORMALIZATION/tools/check_claim_map_coverage.py', 'tools/lint_claim_strength.py'):
+                  subprocess.run(['python', script], cwd=work, check=True)
+              subprocess.run(['python', 'tools/generate_lean_views.py', '--check'], cwd=work, check=True)
+              known = set()
+              for parent in (head, main):
+                  for line in git('ls-tree', '-r', parent, cwd=work).splitlines():
+                      known.add(line.split()[2])
+              entries = []
+              raw = git('diff-tree', '--no-commit-id', '--raw', '--no-abbrev', '-r', head, actual, cwd=work)
+              for line in raw.splitlines():
+                  metadata, path = line.split('\t', 1)
+                  oldmode, mode, oldsha, sha, status = metadata.split()
+                  if status == 'D':
+                      entries.append({'path': path, 'mode': oldmode[1:], 'type': 'blob', 'sha': None})
+                      continue
+                  if sha not in known:
+                      data = subprocess.check_output(['git', 'cat-file', 'blob', sha], cwd=work)
+                      uploaded = post('blobs', {'content': base64.b64encode(data).decode(), 'encoding': 'base64'})
+                      assert uploaded['sha'] == sha
+                      known.add(sha)
+                  entries.append({'path': path, 'mode': mode, 'type': 'blob', 'sha': sha})
+              uploaded = post('trees', {'base_tree': git('rev-parse', head + '^{tree}', cwd=work), 'tree': entries})
+              assert uploaded['sha'] == actual
+              print('PUBLISHED_VERIFIED_TREE', number, actual, flush=True)
+          # This job does not move any branch, create any commit, or merge a PR.
+          # CONTROL publishes only after checking the exact tree and fresh ref leases.
+          PY
