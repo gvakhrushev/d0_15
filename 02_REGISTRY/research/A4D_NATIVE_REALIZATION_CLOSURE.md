@@ -1,0 +1,194 @@
+# Native realization: owned equations, scoped obstructions and gravity dependencies
+
+Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
+Research input: `af221e2fed92821c52afc88a5500774de8cd9a93`.
+Control baseline: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
+Status: first native variational gate investigated; **positive GR and global
+closure remain OPEN**. This artifact does not promote claims or retire tasks.
+
+The October 6 audit report and the chat summaries were investigative inputs,
+not instructions to change a mathematical definition or a release status.
+The implementation follows the user's explicit closure plan. Its first
+completed result is the [affine prepared-contrast obstruction](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
+which is stronger than direct action nonidentification but has its own
+explicit class. A complete D0-core obstruction has not been proved.
+
+## 1. State, action, variation and source are separate owners
+
+The following inventory records the actual definitions/propositions, rather
+than treating comments or theorem names as physical equations.
+
+| Owner | Independently defined data and variations | Actual equation/result | Source and refinement | Missing physical arrow |
+|---|---|---|---|---|
+| `D0.Geometry.ArchiveSeamCurvature`, `ArchiveVariation` | Fixed canonical fine/coarse cycle Laplacians and fixed cyclic lift; coarse symmetric row-sum-zero `LaplacianVariation` | $D=L_fJ-JL_c$; $S=\|D\|^2$; $\delta D=-J\delta L_c$; `ArchiveStationary` quantifies over those variations | `J` comes from `archiveRGPhaseProjection`; its phase index is not the four-Role product | No variable metric/coframe/link sector is constructed here. The old `local_support : Prop` field does not enforce a support equation. |
+| `ArchiveLocalLaplacianVariation` | Genuine edge conductance variations, with off-diagonal support zero away from adjacency | Exact conductance/local-Laplacian variation equivalence | Same cyclic phase carrier | This fixes locality of a variation, not an Einstein action or physical Role readout. |
+| `ArchiveFieldEquation` | Gradient $G_h=-2J^TD$ and supplied symmetric conserved `ArchiveStressSource` | `SourcedArchiveEquation` is $G_h=T$; it implies its variational pairing form | $T$ is a structure argument; no matter Euler action is defined by the implication | The unprojected canonical gradient is nonsymmetric; Section 2 excludes its equality with every such $T$. |
+| `Matter.GeneratedMatterSource` | `MatterRep` is supplied | The generated scalar source is identically zero by definition | Anomaly-free neutrality follows; the record of a localization no-go consists of `True` fields | It does not derive a nonzero local matter source or a dynamical coupling. |
+| `Matter.ArchiveStressCoupling` | Supplied `MatterRep` | $T=\mathrm{anomalySum}(R)L_c$; symmetry/conservation; anomaly-free $T=0$ | No native matter action, metric variation or physical ten-component stress map | A zero archive matrix is not a nonlinear matter-source realization on the Role carrier. It does not exclude curved Ricci-flat vacuum solutions in a different owned system. |
+| `Matter.LocalTraceSource` | Supplied operator with `trace_eq_anomaly` | Diagonal density sums to its supplied trace; trace zero implies neutrality | The operator's localization is an input | No canonical local operator or metric Euler stress is constructed. |
+| `Matter.MatterLocalizationNonuniquenessNoGo` | Neutral completions on `Fin 2`; two explicit different local sources | Total zero readout is `M1Forced`; local neutrality does not choose a local distribution | Completion relation already requires total zero | This owns total neutrality, not a local source or its metric derivative. |
+| `Frozen.ConservedStressProjection` | Supplied matrix with divergence hypothesis | Symmetric conserved projection is pairing-equivalent on constrained variations | No matter action supplied | Projection cannot replace the derivation of stress or turn the stronger full matrix equation into a theorem. |
+| `Geometry.ArchivePrimalDualMovingAction` | Supplied perfect pairing, primal equivalence and map $S$ | Dual action is inverse transpose; passive moving $S$ is unchanged precisely on its stabilizer | Operator covariance | Neither the pairing nor $S$ is selected as a physical metric Hodge law by this theorem. |
+| `FinitePrimalDualHodgeParent`, `A4DPathWordParentWard` | Supplied primal/dual differentials, stars, pairing and fields $\psi,\chi,\lambda$; all operator variations retained | A concrete mixed quadratic/constraint action and its Ward identity under the declared covariance hypotheses | Moving differentials and constitutive variations are inputs to the hypotheses | A physical metric-dependent star, matter interpretation and coupled Euler/source law remain to be derived. This action is not covered by assuming a fixed positive seam norm. |
+| `Gravity.A4DParentWardStressDescent` | Supplied `df`, `readout`, coframe Euler and auxiliary Ward terms | Divergence zero follows **if** parent Ward, auxiliary EOM, coframe EOM and readout constraint all hold | Exact finite centered-gradient adjoint is owned | The physical parent Ward and EOM hypotheses are not proved by the descent theorem. |
+| `Gravity.VariationalCarrierAudit` | Supplied graph Laplacian satisfying `IsGraphLaplacian` | Response defined as $2L$ is symmetric and has zero row divergence | Finite matrix identity | The capstone does not quantify over all variational carriers or identify $2L$ with a physical Einstein tensor. |
+| `Geometry.SpectralActionAdmissibility` | Supplied `ArchiveHeatTrace4D`; cutoff and stable-signature hypotheses | Named expansion/curvature slots are conjunctions of the supplied dimension condition and exponent equalities | Structural admissibility | No actual heat expansion coefficient, nonlinear metric variation or curvature-action equality is proved. |
+| `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001` owners | Supplied reference weight, second jet and covariance/composition hypotheses | Exact second-order identities and explicit coefficient nonselection | Finite algebraic covariance | The registry's current notes correctly retain the supplied Hessian, unselected coefficient and absent physical Einstein/stress interpretation. |
+| `A4D_NATIVE_FINITE_PROBE_COMPLETION.md` | Physical coframe/links and the naked-star action; independent endpoint preparations with full 24-row residual bound | $T_{h,h^{1/3}}=DI(g)[V]+O_V(h^{2/3})$, all ten slots, owner curvature sign | Constructed archive record/operator refinement; independently fixed affine source | A measured action law is not native on-shell stationarity, a native source or physical state/variation mapping. |
+
+The inventory is limited to the gravity arrows actually consumed here. It is
+not an exhaustive classification of every action or nonlinear representation
+in all of D0. The precise hypotheses are part of the result, not a claim that
+a nearby comment supplies them.
+
+## 2. An actual canonical archive on-shell obstruction at every nontrivial stage
+
+This is a separate, completely specified native-owner class. It is not a
+negative terminal for the physical #310 source problem.
+
+Put $m=n+2\ge3$. The canonical coarse/fine cycles have lengths $m,m+1$;
+$J_{ij}=1_{j=i\bmod m}$. Computing each row gives
+
+\[
+ D_{0,*}=-e_0^T+e_{m-1}^T,\qquad
+ D_{m,*}=-e_0^T+e_1^T,\qquad D_{i,*}=0\ (0<i<m).          \tag{1}
+\]
+
+For interior rows both transports have the same neighbors and degree two.
+At the two end rows their difference is exactly as displayed. The argument
+also covers $m=3$: the two nonzero columns remain distinct. Thus
+$\|D\|^2=4$ at every $n\ge1$.
+
+The legitimate local edge variation $\delta L=(e_0-e_1)(e_0-e_1)^T$ is
+symmetric, row-sum zero and supported on the edge $\{0,1\}$. Its first
+variation is
+
+\[
+ -2\langle D,J\delta L\rangle=-2(-1-2)=6.                  \tag{2}
+\]
+
+The $-1$ term is the first end row, the $-2$ term the last end row; all
+other rows of $D$ vanish. Therefore the **actually defined canonical**
+`ArchiveStationary n` and `VacuumArchiveEquation n` are false for every
+$n\ge1$. This does not exclude variable-Laplacian sectors.
+
+There is an independent obstruction to the stronger sourced matrix equation.
+By (1), $G=-2J^TD$ has only row zero nonzero:
+
+\[
+ G_{00}=4,\quad G_{01}=G_{0,m-1}=-2,\quad G_{10}=0.         \tag{3}
+\]
+
+It has row sums zero but is **not symmetric**. Every `ArchiveStressSource`
+has a symmetric matrix. Consequently no such source satisfies the owned
+canonical `SourcedArchiveEquation n T` for any $n\ge1$, even before
+anomaly cancellation is used. In particular the anomaly-free generated
+source, which is zero, cannot make these canonical stages on shell.
+
+The variational equation only tests $G$ on its allowed tangent space and
+is weaker than $G=T$. Its symmetric conserved representative may differ
+as a matrix. Replacing the full equation by that quotient equation would
+change a definition; this implementation does not do so.
+
+Equations (1)--(3) are a general analytic proof at all $n\ge1$.
+The [affine checker](certificates/a4d_native_affine_probe_nogo_check.py)
+replays selected stages only as exact algebraic controls. Empty canonical
+on-shell fibers are recorded as an obstruction to this owner, **never** as
+a nonvacuous positive realization or as #310's required exact hostile family.
+
+## 3. Which mechanism has actually passed or failed
+
+| Mechanism | Outcome | Extent |
+|---|---|---|
+| Flattened archive number/record section | Constructed | Compatible records/operators and a specified golden measure; no physical Role-state action/Euler identification |
+| Direct fixed-fine seam/Palatini action transfer | Scoped obstruction | Actual coarse seam variations versus literal flat stationary Palatini sign paths |
+| Joint affine fine/coarse with fixed $J$, affine metric fibers, full auxiliary gate | Scoped obstruction | Completed contrast transfer with one calibration is impossible on the two smooth probes at the same explicit curved metric; null directions and arbitrary refinement dimension are allowed |
+| Merely small native Euler residual | Insufficient | Requires a proved profile-value/range estimate; the exact checker exhibits an $O(h^2)$ residual and value gap one |
+| Nonlinear metric readout, constraints or moving $J$ | OPEN | The convexity argument does not exclude these. A compatible physical action/variation owner and quantitative refinement map are not supplied by a record encoding or passive covariance law |
+| Existing homogeneous mixed-parent action with bilinear pairing and full field gate | Scoped obstruction | Even arbitrary nonlinear metric dependence of the supplied operators leaves every stationary action value zero; this blocks its standalone completed-contrast realization. A singular-root control prevents inferring pointwise metric stress zero. |
+| Native matter metric variation and joint Ward identity | OPEN | Existing total neutrality/zero-source/conditional Ward results do not construct this system |
+
+The smallest remaining first-stage obligation is a typed non-affine native
+physical state/variation/action realization, or a completeness theorem
+excluding the remaining core-owned mechanisms. A map must precede a native
+solver: solving the independently declared naked-star physical system alone
+would not prove this native arrow.
+
+## 4. Minimal dependency graph for the positive gravity conclusion
+
+The companion [graph](A4D_NATIVE_GRAVITY_DEPENDENCIES.json) records scopes,
+hypotheses, owners, verification and intended terminal class. Its OPEN nodes
+are proof obligations, not externally closed passports. The graph is a
+gravity critical path, not an asserted complete graph of all 889 registry
+rows. No independent blocker count is inferred from its number of nodes.
+
+```mermaid
+flowchart TD
+  N[Native physical sector and variation maps] --> T[Calibrated contrast and refinement transfer]
+  C[Owned constitutive and coefficient laws] --> N
+  N --> M[Native matter metric source and joint Ward]
+  T --> S[Native on-shell contrast stationarity]
+  M --> S
+  N --> Q[Gauge quotient and uniform range estimate]
+  M --> Q
+  Q --> E[Coupled nonlinear native solutions]
+  E --> H[Soundness of native limits]
+  S --> H
+  E --> R[Recovery of a stated curved continuum class]
+  T --> R
+  H --> GR[Positive GR in the stated class]
+  R --> GR
+  M --> GR
+  P[Physical coefficients, constraints and causal readouts] --> GR
+```
+
+After the maps are owned, the solver must permit corrected metrics
+$Q_h=g(hx)+\delta Q_h$, $\delta Q_h\to0$, and solve the full
+metric--connection--matter system. It must distinguish genuine gauge from
+response-null directions, split the range and kernel/cokernel, bound the
+needed range uniformly, and solve the remaining nonlinear equation. No
+exact-sampling obstruction is substituted for this corrected-metric problem.
+
+Soundness must use actual native on-shell sequences. Recovery must construct
+such a sequence for every solution in the stated continuum class, including
+at least one truly curved physical realization. The curved probe base of
+the present no-go is an off-shell geometric test, not that realization.
+
+M1 physical representation assumptions enter only if the chosen native map
+uses `PhysicalComparisonRepresentation.Representation`. Its faithful laws,
+injectivity and realization of proper subcomparisons then need their own
+construction. The raw toy representation and abstract transport theorem do
+not discharge that physical instantiation.
+
+The constant-rank hypothesis of the cited PDE-constrained Young-measure
+theorem must be proved for the chosen operator/class if that theorem is
+used. The present no-go uses finite orthogonal projection and direct
+smooth differentiation, not that theorem. It supplies no constant-rank
+assertion at the resonance divisor.
+
+## 5. Preserved parent terminals and scientific status
+
+* **#310**, input `af221e2fed92821c52afc88a5500774de8cd9a93`:
+  original fixed independently declared smooth source, exact samples,
+  refining full joint/source roots, designated comparator and unweighted
+  raw norm remain its terminal. The completed probes and native scoped
+  obstructions are separate finished research parts. Parent remains Draft.
+* **#202**, inspected `224ccb2c66ed4e64cb29c24f2845eb383f2ae8f0`:
+  separate four-channel full-affine curved stationary witness/scoped no-go.
+  Its inspected failed CI run `37458519329` timed out during a research
+  certificate; timeout does not refute its mathematics. No new result here
+  consumes or replaces its terminal.
+* **#317**, inspected `745bb0739b105e21c28d4dc5d4675726fce3deae`:
+  complete absolute complex divisor/rank-stratum obligation remains open.
+  Main contains the reviewed arithmetic/Hodge slice. Full complex
+  stratification enters the GR path only if an actual map/solver uses it.
+
+The twelve declaration diagnostics are reconciled separately in
+[the kernel/semantic audit](A4D_NATIVE_OWNER_BINDING_AUDIT.md). A proved
+numeric scaffold cannot be upgraded by a same-named alias into an operator
+refinement or curvature theorem.
+
+Under the [canonical closure contract](../CLOSURE_CONTRACT.md), the present
+scoped obstruction is a research boundary theorem awaiting CONTROL intake.
+It closes its explicit affine mechanism. Global zero-unclassified-ambiguity
+closure and positive GR are not claimed. The core is unchanged.

@@ -46,3 +46,15 @@ CI. This is not a merge, relabeling or retirement of the scientific EXPENSIVE
 execution. Its absolute-C/higher-stratum obligation stays in the manifest and
 original PR. Preserve exact source blobs, retain historical dispatches as
 non-theorem provenance, and do not promote claims, BOOK text or Lean results.
+
+## User-authorized native variational checkpoint intake — 2026-10-06
+
+The approved native/GR closure plan authorizes CONTROL intake of finished
+proof parts while preserving their parents. Review the enumerated slice of
+#310 at `a30408721a3804e3d0c97fe2a210a556dbff4b67` through
+`control/a4d-native-variational-checkpoint`, with primary record
+`02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
+byte/blob receipt alongside it. Require current-head CI. Scope is the
+explicit affine and homogeneous-parent contrast obstructions, canonical
+archive gate boundary and compiled owner diagnostics. Do not promote
+claims/BOOK/Lean, merge or retire #310, or replace #202/#317 terminals.

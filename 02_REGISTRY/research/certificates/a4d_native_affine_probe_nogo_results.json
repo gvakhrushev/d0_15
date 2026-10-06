@@ -1,0 +1,692 @@
+{
+  "checks": [
+    "GENERIC_AFFINE_SECOND_REMAINDER",
+    "GENERIC_WEIGHTED_JENSEN_IDENTITY",
+    "CANONICAL_TWO_ROW_SEAM_3",
+    "CANONICAL_LOCAL_DERIVATIVE_SIX_3",
+    "CANONICAL_FULL_SOURCE_GRADIENT_IS_NOT_SYMMETRIC_3",
+    "JOINT_FINE_COARSE_EXACT_REMAINDER_3",
+    "CANONICAL_TWO_ROW_SEAM_4",
+    "CANONICAL_LOCAL_DERIVATIVE_SIX_4",
+    "CANONICAL_FULL_SOURCE_GRADIENT_IS_NOT_SYMMETRIC_4",
+    "JOINT_FINE_COARSE_EXACT_REMAINDER_4",
+    "CANONICAL_TWO_ROW_SEAM_7",
+    "CANONICAL_LOCAL_DERIVATIVE_SIX_7",
+    "CANONICAL_FULL_SOURCE_GRADIENT_IS_NOT_SYMMETRIC_7",
+    "JOINT_FINE_COARSE_EXACT_REMAINDER_7",
+    "CANONICAL_TWO_ROW_SEAM_10",
+    "CANONICAL_LOCAL_DERIVATIVE_SIX_10",
+    "CANONICAL_FULL_SOURCE_GRADIENT_IS_NOT_SYMMETRIC_10",
+    "JOINT_FINE_COARSE_EXACT_REMAINDER_10",
+    "WEIGHTED_PROJECTION_WITH_AUXILIARY_KERNEL",
+    "FULL_AUXILIARY_GATE_AND_KERNEL_INDEPENDENT_PROFILE",
+    "ALL_STATIONARY_POINTS_ARE_GLOBAL_MINIMA",
+    "PROFILE_HESSIAN_EXACT_GRAM",
+    "CENTERED_PROFILE_SECANT_IS_DERIVATIVE",
+    "FIXED_SOURCE_DOES_NOT_CHANGE_SECANT_SLOPE",
+    "ALL_COMPONENT_CONFORMAL_RICCI_SIGN_0",
+    "CONFORMAL_EH_DENSITY_MOD_PERIODIC_DIVERGENCE_0",
+    "ALL_COMPONENT_CONFORMAL_RICCI_SIGN_1",
+    "CONFORMAL_EH_DENSITY_MOD_PERIODIC_DIVERGENCE_1",
+    "ALL_COMPONENT_CONFORMAL_RICCI_SIGN_2",
+    "CONFORMAL_EH_DENSITY_MOD_PERIODIC_DIVERGENCE_2",
+    "ALL_COMPONENT_CONFORMAL_RICCI_SIGN_3",
+    "CONFORMAL_EH_DENSITY_MOD_PERIODIC_DIVERGENCE_3",
+    "PACKED_ALL_TEN_COMPONENT_HESSIAN_SYMMETRY_0",
+    "GENUINE_METRIC_GAUGE_NULL_0_0",
+    "GENUINE_METRIC_GAUGE_NULL_0_1",
+    "GENUINE_METRIC_GAUGE_NULL_0_2",
+    "GENUINE_METRIC_GAUGE_NULL_0_3",
+    "CONFORMAL_SECOND_VARIATION_NORMALIZATION_0",
+    "PACKED_ALL_TEN_COMPONENT_HESSIAN_SYMMETRY_1",
+    "GENUINE_METRIC_GAUGE_NULL_1_0",
+    "GENUINE_METRIC_GAUGE_NULL_1_1",
+    "GENUINE_METRIC_GAUGE_NULL_1_2",
+    "GENUINE_METRIC_GAUGE_NULL_1_3",
+    "CONFORMAL_SECOND_VARIATION_NORMALIZATION_1",
+    "PACKED_ALL_TEN_COMPONENT_HESSIAN_SYMMETRY_2",
+    "GENUINE_METRIC_GAUGE_NULL_2_0",
+    "GENUINE_METRIC_GAUGE_NULL_2_1",
+    "GENUINE_METRIC_GAUGE_NULL_2_2",
+    "GENUINE_METRIC_GAUGE_NULL_2_3",
+    "CONFORMAL_SECOND_VARIATION_NORMALIZATION_2",
+    "PACKED_ALL_TEN_COMPONENT_HESSIAN_SYMMETRY_3",
+    "GENUINE_METRIC_GAUGE_NULL_3_0",
+    "GENUINE_METRIC_GAUGE_NULL_3_1",
+    "GENUINE_METRIC_GAUGE_NULL_3_2",
+    "GENUINE_METRIC_GAUGE_NULL_3_3",
+    "CONFORMAL_SECOND_VARIATION_NORMALIZATION_3",
+    "NONLINEAR_AFFINE_CONFORMAL_SECOND_VARIATION",
+    "CURVED_BASE_TWO_SIGN_AFFINE_PENCILS",
+    "EXACT_PERIODIC_HESSIANS_OPPOSITE_SIGNS",
+    "BASE_IS_GENUINELY_CURVED",
+    "NONLINEAR_READOUT_OR_CONSTRAINT_ESCAPES_CONVEXITY",
+    "OFF_SHELL_PREPARATION_CANNOT_REPLACE_NATIVE_GATE",
+    "SMALL_RESIDUAL_WITHOUT_UNIFORM_RANGE_ESTIMATE_IS_INSUFFICIENT",
+    "BOTH_FIXED_CALIBRATION_SIGNS_FAIL",
+    "ERROR_COMPOSITION_H_OVER_EPS_PLUS_EPS_SQUARED",
+    "LITERAL_MIXED_PARENT_GENERIC_EULER_IDENTITY",
+    "MIXED_PARENT_FULL_FIELD_HOMOGENEITY",
+    "MIXED_PARENT_PREPARATION_FIBERS_ARE_NONEMPTY",
+    "MIXED_PARENT_NONZERO_KERNEL_ROOTS_RETAINED",
+    "MIXED_PARENT_SINGULAR_SOURCE_NOT_RECOVERED_FROM_ZERO_VALUE",
+    "MIXED_PARENT_BILINEAR_PAIRING_HYPOTHESIS_IS_NECESSARY"
+  ],
+  "conformal_curvature_controls": [
+    {
+      "R_standard": "3*(p**2 - 2*q*r2)/(2*q**3)",
+      "coordinate": 0,
+      "literal_owner_density": "3*(-p**2 + 2*q*r2)/(4*q)"
+    },
+    {
+      "R_standard": "3*(-p**2 + 2*q*r2)/(2*q**3)",
+      "coordinate": 1,
+      "literal_owner_density": "3*(p**2 - 2*q*r2)/(4*q)"
+    },
+    {
+      "R_standard": "3*(-p**2 + 2*q*r2)/(2*q**3)",
+      "coordinate": 2,
+      "literal_owner_density": "3*(p**2 - 2*q*r2)/(4*q)"
+    },
+    {
+      "R_standard": "3*(-p**2 + 2*q*r2)/(2*q**3)",
+      "coordinate": 3,
+      "literal_owner_density": "3*(p**2 - 2*q*r2)/(4*q)"
+    }
+  ],
+  "consumed_published_probe_inputs": {
+    "02_REGISTRY/research/certificates/a4d_finite_probe_palatini_check.py": {
+      "sha256": "7f2d1c58fa4d4a8c52b2b3c76b9ca1369297f3c169d4216cbc5b7434ac787d6d",
+      "source_head": "af221e2fed92821c52afc88a5500774de8cd9a93"
+    },
+    "02_REGISTRY/research/certificates/a4d_finite_probe_palatini_results.json": {
+      "sha256": "e749641cef57f7dfa75c648dec773fdd88e2b682d339867f1f5760bb0669f98e",
+      "source_head": "af221e2fed92821c52afc88a5500774de8cd9a93"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_seam_action_gate_check.py": {
+      "sha256": "215b85bd0f3bd508d2c8c792d0a57c987447392eee491d7b6cbe87a3c93fea7c",
+      "source_head": "af221e2fed92821c52afc88a5500774de8cd9a93"
+    }
+  },
+  "curved_base": {
+    "R_owner_y1_zero": "120*pi**2/121",
+    "min_q": "9/10",
+    "q": "1+cos(2*pi*y1)/10",
+    "space_Hessian": "12*pi**2",
+    "time_Hessian": "-12*pi**2"
+  },
+  "input_head": "af221e2fed92821c52afc88a5500774de8cd9a93",
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveFieldEquation.lean": "9bbb068e712ad0aebdc0c2c9e89f5ed1be99a0021e69e284ece817ab0b83ae2b",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean": "591b39b7c7f618c08ada52713f8ce490d4e7973a8f54a0991523c2f04d260108",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean": "511f40788d047494419ab9263edd3e82446085bbb2a483f58d5ff66d04d00a42",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseDistance.lean": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707",
+    "03_FORMALIZATION/D0/Geometry/ArchiveSeamCurvature.lean": "a86bd7c015d8d87cf1125a6287b9937343cf8cbb51d11211c7e2752672e204e8",
+    "03_FORMALIZATION/D0/Geometry/ArchiveVariation.lean": "58224658cc1d53e4fc21403633f708ed47838ce1a1c5b911bf3149445dbfc4c8",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedGraph.lean": "a25daa836eacf57042dd96793da6447098fc85895d464b10f0f1804d2249081d",
+    "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean": "a4be98cfb6d3e08bc873ff31d93b9669533d19fb641b1cb81e871be4af79f863",
+    "03_FORMALIZATION/D0/Matter/ArchiveStressCoupling.lean": "850b71489de8b9ef6383fd51b6f1f59b06badf61bc2f3d540139da0c9c31316c"
+  },
+  "metric_controls": [
+    {
+      "conformal_u_u_second_derivative_coefficient": 6,
+      "coordinate": 0,
+      "packed_response_matrix": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "conformal_u_u_second_derivative_coefficient": -6,
+      "coordinate": 1,
+      "packed_response_matrix": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/4",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "conformal_u_u_second_derivative_coefficient": -6,
+      "coordinate": 2,
+      "packed_response_matrix": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/4"
+        ],
+        [
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "-1/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "conformal_u_u_second_derivative_coefficient": -6,
+      "coordinate": 3,
+      "packed_response_matrix": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/4",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "-1/4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    }
+  ],
+  "mixed_parent_controls": {
+    "assumptions": "Bilinear pairing; all three fields freely varied; no additional metric-only or inhomogeneous action term.",
+    "full_field_Euler_identity": "sum(z_i*E_i)=2*B",
+    "full_field_stationary_action": "0",
+    "generic_action": "chi0**2*s0/2 + chi0*chi1*s1/2 + chi0*chi1*s2/2 + chi0*lam0*s0 + chi0*lam1*s2 + chi1**2*s3/2 + chi1*lam0*s1 + chi1*lam1*s3 - k0*lam0*psi0 - k1*lam0*psi1 - k2*lam1*psi0 - k3*lam1*psi1",
+    "singular_on_shell_metric_response": "1"
+  },
+  "profile_auxiliary_kernel_dimension": 1,
+  "profile_fixture": "247*g0**2/70 + 94*g0*g1/35 + 1082*g0/35 + 494*g1**2/35 + 1364*g1/35 + 2846/35",
+  "profile_fixture_hessian": [
+    [
+      "247/35",
+      "94/35"
+    ],
+    [
+      "94/35",
+      "988/35"
+    ]
+  ],
+  "scope": "Exact finite algebraic controls. General affine-profile and homogeneous-parent contrast obstructions are proved analytically in the memo; no all-native completeness or positive GR assertion.",
+  "seam_controls": [
+    {
+      "coarse_size": 3,
+      "edge_derivative": 6,
+      "gradient_01": "-2",
+      "gradient_10": "0",
+      "joint_remainder_coefficient": "8",
+      "seam_action": "4"
+    },
+    {
+      "coarse_size": 4,
+      "edge_derivative": 6,
+      "gradient_01": "-2",
+      "gradient_10": "0",
+      "joint_remainder_coefficient": "8",
+      "seam_action": "4"
+    },
+    {
+      "coarse_size": 7,
+      "edge_derivative": 6,
+      "gradient_01": "-2",
+      "gradient_10": "0",
+      "joint_remainder_coefficient": "8",
+      "seam_action": "4"
+    },
+    {
+      "coarse_size": 10,
+      "edge_derivative": 6,
+      "gradient_01": "-2",
+      "gradient_10": "0",
+      "joint_remainder_coefficient": "8",
+      "seam_action": "4"
+    }
+  ],
+  "status": "PASS"
+}

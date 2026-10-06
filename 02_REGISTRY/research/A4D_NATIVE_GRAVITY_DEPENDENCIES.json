@@ -1,0 +1,350 @@
+{
+  "schema": "d0-native-gravity-dependencies/1",
+  "source_head": "af221e2fed92821c52afc88a5500774de8cd9a93",
+  "control_baseline": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
+  "scope": "Minimal dependency graph for native positive GR, not an exhaustive global claim impact graph.",
+  "global_closure": "OPEN_NOT_CERTIFIED",
+  "positive_gr": "OPEN_NOT_CERTIFIED",
+  "acceptance": "RESEARCH_PENDING_CONTROL",
+  "nodes": [
+    {
+      "id": "constitutive",
+      "scope": "A core-derived metric/star/action coefficient law for the chosen physical state sector.",
+      "hypotheses": [
+        "An actual native physical sector is specified.",
+        "Passive covariance of a supplied map is distinguished from constitutive selection."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchivePrimalDualMovingAction.lean",
+        "03_FORMALIZATION/D0/Geometry/A4DLocatedMatterCellEnergy.lean",
+        "02_REGISTRY/claims.csv#D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "verification": "Printed owner types and transitive axioms; exact supplied-weight separation in the existing owner.",
+      "status": "OPEN_PHYSICAL_REALIZATION",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": []
+    },
+    {
+      "id": "native_sector",
+      "scope": "Independently defined states/action/variations to physical coframe, links and matter, including actual variation maps.",
+      "hypotheses": [
+        "No new action, selector or physical postulate.",
+        "Every supplied physical law used by a Representation is constructed if that interface is consumed.",
+        "The class's nonempty fibers and allowable symmetric metric probes are specified."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+        "03_FORMALIZATION/D0/Foundation/PhysicalComparisonRepresentation.lean",
+        "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean"
+      ],
+      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers.",
+      "status": "OPEN",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": [
+        "constitutive"
+      ]
+    },
+    {
+      "id": "canonical_archive_gate",
+      "scope": "Canonical cycle stages n>=1, actual ArchiveStationary and SourcedArchiveEquation with symmetric archive stress.",
+      "hypotheses": [
+        "Canonical cycle Laplacians and cyclic modulo lift are used unchanged."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveVariation.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveFieldEquation.lean",
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md#2"
+      ],
+      "verification": "All-size two-row seam calculation, derivative six and nonsymmetric gradient; exact finite controls in a4d_native_affine_probe_nogo_check.py.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THIS_CLASS",
+      "depends_on": []
+    },
+    {
+      "id": "affine_profile_bridge",
+      "scope": "Fixed positive quadratic seam norm, fixed lift, affine actual metric fibers, full auxiliary Euler gate, two specified curved-base probes, one nonzero calibration.",
+      "hypotheses": [
+        "Fibers are nonempty on both pencils and their endpoints.",
+        "Native endpoint values differ from the stationary profiles by o(epsilon_h), if errors are allowed."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md",
+        "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
+        "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_results.json"
+      ],
+      "verification": "General finite projection/convexity and pointwise secant-limit proof; nonlinear conformal Hessians of opposite signs at the same curved base; 71 exact algebraic controls.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THIS_CLASS",
+      "depends_on": []
+    },
+    {
+      "id": "homogeneous_parent_bridge",
+      "scope": "The actual standalone mixed primal/dual action with bilinear pairing and full freely rescalable field Euler gate; supplied operators may depend nonlinearly on geometry.",
+      "hypotheses": [
+        "All three field rescalings are admitted at fixed geometry.",
+        "No inhomogeneous field or additional metric-only action term.",
+        "A function called pairing is proved bilinear for its actual instantiation."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean",
+        "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#8"
+      ],
+      "verification": "General degree-two Euler identity; all stationary values zero; nonempty zero and nonzero kernel roots; singular-root source control.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_THIS_CLASS",
+      "depends_on": []
+    },
+    {
+      "id": "probe_law",
+      "scope": "Literal naked-star action on T4, smooth nondegenerate metric pencils, log-O(h) endpoint preparations with all 24 residual rows O(h^2).",
+      "hypotheses": [
+        "Owned orientation, solder, sign and ten-slot packed Gram convention.",
+        "Fixed finite R,M; constants depend on the smooth experiment."
+      ],
+      "owners": [
+        "https://github.com/gvakhrushev/d0_15/blob/af221e2fed92821c52afc88a5500774de8cd9a93/02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+        "https://github.com/gvakhrushev/d0_15/blob/af221e2fed92821c52afc88a5500774de8cd9a93/02_REGISTRY/research/certificates/a4d_finite_probe_palatini_check.py"
+      ],
+      "verification": "Analytic uniform action/contrast theorem and all 24x64 connection first-jet coefficients, all ten metric slots, signs/packing controls.",
+      "status": "PROVED_ANALYTIC_OBSERVABLE_LAW",
+      "terminal_class": null,
+      "required_terminal": "CORE_WITHIN_OBSERVABLE_SCOPE_AFTER_INTAKE",
+      "depends_on": []
+    },
+    {
+      "id": "record_arrow",
+      "scope": "Compatible records and positive detector operators on the flattened native archive, with its explicitly constructed golden measure.",
+      "hypotheses": [
+        "No identification of the flattened modulo tower with the Role-product tower.",
+        "No depth-independent inverse precision is inferred from attenuated record separation."
+      ],
+      "owners": [
+        "https://github.com/gvakhrushev/d0_15/blob/af221e2fed92821c52afc88a5500774de8cd9a93/02_REGISTRY/research/A4D_NATIVE_ARCHIVE_RECORD_BRIDGE.md",
+        "https://github.com/gvakhrushev/d0_15/blob/af221e2fed92821c52afc88a5500774de8cd9a93/02_REGISTRY/research/certificates/a4d_native_archive_binary_bridge_check.py"
+      ],
+      "verification": "Actual compatible quotient/section maps and operator compression identities.",
+      "status": "PROVED_RECORD_CONSTRUCTION_ONLY",
+      "terminal_class": null,
+      "required_terminal": "CORE_WITHIN_RECORD_SCOPE_AFTER_INTAKE",
+      "depends_on": []
+    },
+    {
+      "id": "contrast_refinement_transfer",
+      "scope": "Native half-contrast to physical half-contrast with a fixed a!=0 and O_V(h) total writing/refinement error.",
+      "hypotheses": [
+        "Physical state and variation maps are owned.",
+        "Actual native refinement maps commute with physical readouts to the declared error.",
+        "epsilon_h=h^(1/3); all source and record errors are included."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#3",
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+      ],
+      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold.",
+      "status": "OPEN_NONAFFINE_NATIVE_ARROW",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": [
+        "native_sector",
+        "probe_law"
+      ]
+    },
+    {
+      "id": "matter_source_ward",
+      "scope": "Local stress from native matter action on the same carrier, metric variation and joint Ward identity.",
+      "hypotheses": [
+        "Source is specified independently of unknown solutions.",
+        "Parent Ward and all used auxiliary/coframe EOM are derived, not assumed as the desired conclusion."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Matter/ArchiveStressCoupling.lean",
+        "03_FORMALIZATION/D0/Matter/LocalTraceSource.lean",
+        "03_FORMALIZATION/D0/Matter/MatterLocalizationNonuniquenessNoGo.lean",
+        "03_FORMALIZATION/D0/Gravity/A4DParentWardStressDescent.lean"
+      ],
+      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient.",
+      "status": "OPEN",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": [
+        "native_sector",
+        "constitutive"
+      ]
+    },
+    {
+      "id": "on_shell_stationarity",
+      "scope": "Native on-shell equations imply vanishing of the source-subtracted contrast for every smooth symmetric probe.",
+      "hypotheses": [
+        "Gate is defined independently of contrast vanishing.",
+        "Native variations admit the required physical metric probes."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+        "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#6"
+      ],
+      "verification": "A separate implication from native Euler equations; no definitional gate substitution.",
+      "status": "OPEN",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": [
+        "contrast_refinement_transfer",
+        "matter_source_ward"
+      ]
+    },
+    {
+      "id": "gauge_range",
+      "scope": "Genuine gauge quotient, needed range bound and remaining kernel/cokernel of the joint metric-connection-matter system.",
+      "hypotheses": [
+        "Response-null directions are retained unless proved genuine gauge.",
+        "Uniform bound applies to the operator on the chosen class, including its used resonance strata.",
+        "Any external PDE-constrained Young-measure theorem has its constant-rank hypothesis proved for that operator."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+        "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
+      ],
+      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here.",
+      "status": "OPEN_FOR_NATIVE_SYSTEM",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": [
+        "native_sector",
+        "matter_source_ward"
+      ]
+    },
+    {
+      "id": "joint_nonlinear_solve",
+      "scope": "Nonempty refining native joint solutions allowing Q_h=g(hx)+delta Q_h with delta Q_h->0.",
+      "hypotheses": [
+        "All metric, connection and matter equations hold.",
+        "Nonlinear kernel/cokernel equation is solved.",
+        "Empty fibers, off-shell examples and output-fitted sources do not count."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+      ],
+      "verification": "Quantitative coupled existence proof in the declared class.",
+      "status": "OPEN",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": [
+        "gauge_range"
+      ]
+    },
+    {
+      "id": "soundness",
+      "scope": "Every admitted native on-shell limit solves the nonlinear sourced continuum Einstein system.",
+      "hypotheses": [
+        "Actual native solutions, sufficient compactness/testing and error bounds.",
+        "No replacement by independently re-prepared endpoints."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+      ],
+      "verification": "Limit passage through the full nonlinear Euler/source equations.",
+      "status": "OPEN",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": [
+        "joint_nonlinear_solve",
+        "on_shell_stationarity"
+      ]
+    },
+    {
+      "id": "recovery",
+      "scope": "Native on-shell recovery for every continuum solution in an explicit nonempty class with a genuinely curved member.",
+      "hypotheses": [
+        "Joint fields may be corrected on each mesh.",
+        "The curved member is a physical native realization, not only a geometric probe."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+      ],
+      "verification": "Constructive recovery and uniform quantitative bounds.",
+      "status": "OPEN",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
+      "depends_on": [
+        "joint_nonlinear_solve",
+        "contrast_refinement_transfer"
+      ]
+    },
+    {
+      "id": "physical_constraints",
+      "scope": "Coefficient dependence, extra observable modes, physical constraints and causal-time readout on the recovered class.",
+      "hypotheses": [
+        "Time orientation of a test metric alone is not a native causal-time derivation.",
+        "Different action families are compared after their true equation/gauge quotient."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+        "02_REGISTRY/claims.csv"
+      ],
+      "verification": "Owned physical transitions and parameter/observable classification.",
+      "status": "OPEN_FOR_RECOVERED_CLASS",
+      "terminal_class": null,
+      "required_terminal": "CORE_OR_TYPED_PASSPORT",
+      "depends_on": [
+        "native_sector"
+      ]
+    },
+    {
+      "id": "positive_gr",
+      "scope": "Nonlinear sourced Einstein dynamics as a consequence of unchanged native D0 in the stated curved class.",
+      "hypotheses": [
+        "All preceding physical arrows are proved and accepted; no conditional input is silently promoted."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+      ],
+      "verification": "All prerequisites, integration build and current-head CI; at least one curved native physical realization.",
+      "status": "OPEN",
+      "terminal_class": null,
+      "required_terminal": "CORE_FOR_POSITIVE_GR",
+      "depends_on": [
+        "soundness",
+        "recovery",
+        "matter_source_ward",
+        "physical_constraints"
+      ]
+    },
+    {
+      "id": "binding_diagnostics",
+      "scope": "All 12 previously lexical declaration diagnostics and actual gravity capstone premises.",
+      "hypotheses": [
+        "A kernel binding is distinct from adequacy of its proposition for registry prose."
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
+        "02_REGISTRY/research/certificates/a4d_native_owner_diagnostics.lean"
+      ],
+      "verification": "Compiled environment lookups, actual propositions, transitive D0 source hashes and printed axioms.",
+      "status": "DIAGNOSTICS_RECONCILED_STRONGER_OBLIGATIONS_OPEN",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_SCOPE_OR_ACTUAL_PROOF",
+      "depends_on": []
+    }
+  ],
+  "preserved_parent_tasks": [
+    {
+      "pr": 310,
+      "sha": "af221e2fed92821c52afc88a5500774de8cd9a93",
+      "terminal": "Original fixed-source exact-root unweighted raw-owner comparator terminal remains OPEN."
+    },
+    {
+      "pr": 202,
+      "sha": "224ccb2c66ed4e64cb29c24f2845eb383f2ae8f0",
+      "terminal": "Independent full-affine curved stationary witness or scoped no-go remains separate."
+    },
+    {
+      "pr": 317,
+      "sha": "745bb0739b105e21c28d4dc5d4675726fce3deae",
+      "terminal": "Absolute complex divisor factorization and all higher-codimension rank strata remain separate."
+    }
+  ]
+}
