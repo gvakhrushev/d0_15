@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "876fe1efe8cb1df0e4c39b881fe3caed0638be0f0264bd86226fc441c16a7399",
-      "source_blob": "2803be0bf5fb28aff7eb545f8ba61395c86e7dec"
+      "sha256": "7a317fa881e01c265658bd5aaca4b0eef1a5fb07f433256ee3c0af74da169747",
+      "source_blob": "1e627d65e66db15e364266e70ddf14888230cdf5"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "6b1ffa5a4fe67a80b1920d3b6bf98d6e1ccc049ba1150d5eac311c8fc6e8d311",
-      "source_blob": "b438e792f978729b95305d0fdc77361b617f7523"
+      "sha256": "188138159108b20f9495cc45d21036fed5eaaae1d521818e440408b05deb064d",
+      "source_blob": "9a91793aa863b49c43bca6e1788783f18ec51508"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -196,6 +196,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_reference_weight_results.json",
       "sha256": "ccb329ad17a23c7ee19b7cea465fb7e42d83bfa872931d2c96741c31487c69cf",
       "source_blob": "024c298afd415b7bbff2e45a328b87794ed67747"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_SPECTRAL_FRAME_BOUNDARY.md",
+      "sha256": "e4c0ecb6dd77ab6883e2ea763dc139b498154b34e40efa43016876e28ebc6982",
+      "source_blob": "959cb0ccc5523c886b3a6a8c165394d1d58636b2"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_spectral_frame.lean",
+      "sha256": "d0f39c7629386fb6efe0d7dbf220970d03eaa3cead50ccb48eb38e113d3312af",
+      "source_blob": "8f19a55f88442327a8f50ad3ffd5ac59c37ca2a3"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_spectral_frame_check.py",
+      "sha256": "b9e94e42787aea3969a1094bba5eec8c7252f57175a55ce41e647ef63cd6827c",
+      "source_blob": "5ab3091ae51dd0058127f066e978f71fe71e8322"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_spectral_frame_certificate.json",
+      "sha256": "61ff37fd6d66243061bae448e454f6e30d08b04afcd2c45dbdf13b477e1b8eae",
+      "source_blob": "0924a7f28a441b24ff014f3e72547cad780ec9db"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_spectral_frame_output.txt",
+      "sha256": "c46ffd115ace0374fe275955bfb333a707f09bb09364d292a3fd85af59a17096",
+      "source_blob": "4428922109dcc2658979f43cdefc3812a4f095c8"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_spectral_frame_results.json",
+      "sha256": "9a7a63e3e2e0aa6825afbd9c5809eda6af90d74e3e52aa26254d8a049caa01fb",
+      "source_blob": "3a9af3d6097f72568f9954429fcf8811952e6763"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -204,7 +234,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "75527846bf3603a1c51acf445f8354e3254341be",
+  "previous_source_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -218,11 +248,12 @@
     "Literal positive-weight A2 compensator full edge gate versus auxiliary-only elimination; seven compiled identities and 86 new exact controls.",
     "General volume-only information obstruction with nonpolynomial and uniquely auxiliary-stationary profiles; exact curved volume-preserving Gram pencil, 72 controls and six compiled statements including actual compensator nonempty unique action value.",
     "Explicit native cochain refinement operators, scale-corrected chain construction, full 16-sector Gram normalization and all-grade actual metric-measure formula; scoped failure of composed fixed-torus component readout. Twelve generic compiled propositions and 92 exact grouped controls.",
-    "Existing shape-sensitive referenceCellWeight family: all-coefficient raw Lorentz scalar obstruction, sharp uniform two-probe defect 5/86, literal scalar/exterior binding, coefficient-dependent full Fourier kernel/range classification at one nondegenerate constant coframe. Seventeen compiled propositions, 56 transitive source pins and 40 exact controls. No native action or physical gate is introduced."
+    "Existing shape-sensitive referenceCellWeight family: all-coefficient raw Lorentz scalar obstruction, sharp uniform two-probe defect 5/86, literal scalar/exterior binding, coefficient-dependent full Fourier kernel/range classification at one nondegenerate constant coframe. Seventeen compiled propositions, 56 transitive source pins and 40 exact controls. No native action or physical gate is introduced.",
+    "Literal-flux spectral binding: arbitrary fixed scalar function descent forces constancy; existing quadratic spectral energy has normalized frame defect at least 1/8 on two fixed genuinely curved smooth metrics at every L in 4N and every alpha_h. Fourteen compiled propositions, 58 transitive pins, 57 exact controls and a protected collapsing-function counterexample. No action or physical gate is added."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
+  "source_head": "a4a0ee1ce0a48fe07da0da036e122262e8cc7d44",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "75527846bf3603a1c51acf445f8354e3254341be",
+  "source_parent": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
   "source_pr": 310
 }

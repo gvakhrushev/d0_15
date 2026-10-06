@@ -34,6 +34,13 @@ Every coefficient fails raw Lorentz scalar descent, with uniform defect
 5/86 on two fixed probes. The two owned coefficients have different kernels
 and range bounds; this is an operator classification, not a new native action.
 
+The [spectral-frame result](A4D_NATIVE_SPECTRAL_FRAME_BOUNDARY.md) excludes
+nonconstant scalar spectral repair of the literal flux operator on the
+declared full frame class. The existing quadratic spectral energy has a
+sharp normalized frame defect at least 1/8 on two fixed genuinely curved
+metrics, uniformly in its coefficient and every L in 4N. General functions
+that vary with refinement retain an explicit collapsing-response exception.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
@@ -60,7 +67,7 @@ than treating comments or theorem names as physical equations.
 | `Gravity.A2CompensatorNoether` | Unsigned incidence, positive weights, independent edge and vertex fields; rational finite owner | Full edge gate iff residual zero. Auxiliary-only gate is always nonempty with a unique action value, despite kernel roots; both statements compiled in Lean | Off-shell Ward and auxiliary normal equation are owned | Auxiliary elimination can give a rational, nonquadratic profile. If all external geometry inputs depend only on volume density, its unique value is nevertheless blind to the exact volume-preserving shape probe. A shape-sensitive edge/incident input needs a separate physical map. |
 | `Geometry.A4DDiscreteEnergyKernel` | Actual counting cochain field and uncentered coframe; full free variations in both | `E=<psi,(1+H(e))psi>/2`; complete joint unsourced gate iff `psi=0`, arbitrary coframe | Exact local 16-slot coframe source derived in the follow-up; no separate physical connection variable | Curved zero-field joint roots fail Einstein stationarity; literal scalar-sector action/field gate fails the owned nonlinear Lorentz quotient. Additional combined actions or restricted sectors need independent owners. |
 | `Geometry.A4DLocatedMatterCellEnergy` | Existing supplied weights `W_c=I+H(e)+c M_q(e)` on full uncentered coframes; no independent action added here | Generic scalar block and actual exterior-unit binding; all c fail raw Lorentz descent with sharp two-probe defect 5/86 | At `e=-I/2`, c=1 has one constant scalar kernel and range gap O(L^-2); c=2 has uniform gap 1/2 | A shape-sensitive weight need not descend to physical metric data. Coefficient dependence changes kernel/range, but neither coefficient supplies a physical source/Ward or native action. |
-| `Geometry.A4DConstitutiveKernelClassification` | Supplied symmetric `H`, field and unselected `alpha`; `Q=1+H+alpha H^2` | Existing strict positivity for `alpha>1/4` forces zero field at its full field gate; at `alpha=1/4` kernel fields have zero first operator source | No coefficient or physical matter law is selected | This does not construct propagating native matter stress. Below the positivity range, field-only stationary values cannot be used to infer zero source. |
+| `Geometry.A4DConstitutiveKernelClassification` | Supplied symmetric `H`, field and unselected `alpha`; `Q=1+H+alpha H^2` | Existing strict positivity for `alpha>1/4` forces zero field at its full field gate; at `alpha=1/4` kernel fields have zero first operator source | No coefficient or physical matter law is selected | The candidate binding H=actual flux matrix fails raw Lorentz action descent for every alpha, even on two fixed curved backgrounds. Other maps into supplied H remain open. Field-only roots do not imply a zero pointwise source. |
 | `Gravity.A4DLinearizedMetricResponse` | Finite Euclidean symmetric tensor seed and literal linear response | Quadratic action, exact first variation and gauge nullity | Algebraic finite construction, explicitly not an Einstein tensor | A standalone quadratic affine metric profile cannot reproduce the nonlinear third variation of the curved Gram pencil. |
 | `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001` owners | Supplied reference weight, second jet and covariance/composition hypotheses | Exact second-order identities and explicit coefficient nonselection | Finite algebraic covariance | The registry's current notes correctly retain the supplied Hessian, unselected coefficient and absent physical Einstein/stress interpretation. |
 | `A4D_NATIVE_FINITE_PROBE_COMPLETION.md` | Physical coframe/links and the naked-star action; independent endpoint preparations with full 24-row residual bound | $T_{h,h^{1/3}}=DI(g)[V]+O_V(h^{2/3})$, all ten slots, owner curvature sign | Constructed archive record/operator refinement; independently fixed affine source | A measured action law is not native on-shell stationarity, a native source or physical state/variation mapping. |
@@ -141,11 +148,12 @@ a nonvacuous positive realization or as #310's required exact hostile family.
 | Existing homogeneous mixed-parent action with bilinear pairing and full field gate | Scoped obstruction | Even arbitrary nonlinear metric dependence of the supplied operators leaves every stationary action value zero; this blocks its standalone completed-contrast realization. A singular-root control prevents inferring pointwise metric stress zero. |
 | Existing standalone cochain `fluxEnergy` with full free coframe/field gate | Exact solution-set classification | All and only `(e,0)` are joint solutions at every stage. Explicit curved Gram readouts have zero native source but nonzero Einstein variation. A proper rational boost also changes the scalar-sector action and field equation at fixed Gram metric |
 | Existing positive-weight A2 compensator with full independent edge gate | Exact solution-set classification | Residual, action and diagonal response vanish. Auxiliary-only stationarity does not give this conclusion and is not excluded as a nonlinear profile mechanism |
+| Spectral functions of the literal flux matrix with the actual scalar/exterior sector | Scoped obstruction | Exact scalar frame descent forces a fixed spectral function to be constant. The existing quadratic spectral action retains normalized defect at least 1/8 on two fixed curved conformal metrics for every coefficient and every L in 4N. Arbitrary refinement-dependent spectral functions may collapse while preserving a flat first jet; they are not covered by the uniform quadratic bound. |
 | Native matter metric variation and joint Ward identity | OPEN | Existing total neutrality/zero-source/conditional Ward results do not construct this system |
 
 The smallest remaining first-stage obligation is a typed native physical
 state/variation/action realization outside the now excluded quadratic,
-volume-only information and standalone full-gate classes, or
+volume-only information, standalone full-gate and literal-flux spectral classes, or
 a completeness theorem for the remaining core-owned mechanisms.
 Nonlinearity of the Gram readout alone
 does not discharge it. A map must precede a native

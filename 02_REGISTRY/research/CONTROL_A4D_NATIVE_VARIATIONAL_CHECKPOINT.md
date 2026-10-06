@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published
-`080cb15ceb6b273f1f4bb5ccaae50251307d257b`, following
-`75527846bf3603a1c51acf445f8354e3254341be`.
+`a4a0ee1ce0a48fe07da0da036e122262e8cc7d44`, following
+`080cb15ceb6b273f1f4bb5ccaae50251307d257b`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-thirty-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
+forty-five byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -36,12 +36,17 @@ thirty-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and compiled literal scalar/raw-frame/exterior capsule
   with its output and transitive-source receipt.
 
+* [Spectral frame descent and curved action obstruction](A4D_NATIVE_SPECTRAL_FRAME_BOUNDARY.md),
+  exact checker/ledger and compiled actual flux/eigenvector/square-form
+  capsule with output and transitive-source receipt.
+
 The source head and mathematical artifact blob were checked against GitHub.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
 actual flux proof capsule, the six pins of the new weighted-owner capsule,
 the 52 pins of the null-Gram/auxiliary-gate capsule, the 37 pins of the
 cochain refinement capsule, the 56 pins of the reference-weight capsule,
-the registry snapshot and all six native certificates' input hashes match
+the 58 pins of the spectral-frame capsule, the registry snapshot and all
+seven native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
@@ -144,15 +149,29 @@ local file or an implicitly merged scientific parent.
     weight/operator classification, not a new action, matter stress or
     physical on-shell gate; the Laplacian is not a Lorentzian wave operator.
 
+13. **Literal-flux spectral completion:** two complete nondegenerate raw
+    frame orbits force any exactly descending scalar function f(H) to be
+    constant, without a polynomial or regularity hypothesis. The existing
+    quadratic spectral energy, evaluated at the actual flux matrix, has
+    normalized frame defect at least 1/8 for every alpha_h, on two fixed
+    smooth genuinely curved conformal metrics at every L in 4N. Its actual
+    square form and matrix symmetry compile, so the curved calculation
+    does not assume a constant-eigenvalue scalar field. All ten metric rows
+    and the complete curvature calculation have exact controls. This tests
+    one candidate map into the independently supplied H slot; it does not
+    assert that the core selected it. A refinement-dependent function can
+    preserve the flat first jet and collapse uniformly; that explicit
+    countercontrol blocks an overgeneralized asymptotic NO-GO.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The thirty-nine imported files
+labels, Lean owners and BOOK text are unchanged. The forty-five imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The six self-contained checkers replay 71, 60, 86, 72, 92 and 40 exact controls without
+The seven self-contained checkers replay 71, 60, 86, 72, 92, 40 and 57 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -181,6 +200,12 @@ all 16 coframe derivatives and ten packed metric rows, plus independent
 real-space spectra. A falsely zero frame-gap ledger is rejected. The full
 Fourier completeness and all-size spectral classification are proved
 analytically; they are not advertised as a compiled Fourier theorem.
+The spectral-frame capsule compiles fourteen propositions with standard
+axioms only. Fifty-seven controls include exact curved site samples at
+L=4,8,12,16, all 64 Christoffels and 16 Ricci entries for each curved metric,
+and the protected nonlinear/collapsing-response exceptions. Nested radical
+comparisons use exact algebraic number fields, not numeric tolerances. A
+false zero normalized-action-gap ledger is rejected.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -201,6 +226,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_weighted_trace_lift_check.p
 python3 02_REGISTRY/research/certificates/a4d_native_volume_fiber_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_cochain_refinement_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_reference_weight_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_spectral_frame_check.py
 ```
 
 ## Preserved original obligations
@@ -213,7 +239,7 @@ tasks are neither retired nor relabeled by this checkpoint.
 
 The next gravity arrow is a core-owned state/variation/action realization
 outside the excluded quadratic, volume-only information and
-standalone full-gate and reference-weight classes,
+standalone full-gate, reference-weight and literal-flux spectral classes,
 or a complete scoped obstruction for the remaining owners.
 Native source/Ward, nonlinear joint existence, soundness, recovery and
 physical constraints remain explicit obligations. A revision of the core
