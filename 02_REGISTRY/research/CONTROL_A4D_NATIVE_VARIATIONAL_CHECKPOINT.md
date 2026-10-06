@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published
-`ff5baf86642fca81714843b8ab48bed50939fe54`, following
-`0af401558deca37468c077c40b53ac670a7ccaf3`.
+`227c1609c41b720dcfb7517a8e57f0e8d76cb764`, following
+`ff5baf86642fca81714843b8ab48bed50939fe54`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-twenty-one byte-identical artifacts, with source Git blobs and SHA256 hashes:
+twenty-seven byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -25,11 +25,15 @@ twenty-one byte-identical artifacts, with source Git blobs and SHA256 hashes:
 * [Weighted trace, moving lift and compensator boundary](A4D_NATIVE_WEIGHTED_TRACE_LIFT_BOUNDARY.md),
   its exact checker/ledger and the compiled literal-owner Lean capsule,
   output and transitive-source receipt.
+* [Volume-fiber information obstruction](A4D_NATIVE_VOLUME_FIBER_OBSTRUCTION.md),
+  its exact checker/ledger and the compiled null-Gram/auxiliary-gate capsule,
+  output and transitive-source receipt.
 
 The source head and mathematical artifact blob were checked against GitHub.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
 actual flux proof capsule, the six pins of the new weighted-owner capsule,
-the registry snapshot and all three native certificates' input hashes match
+the 52 pins of the null-Gram/auxiliary-gate capsule, the registry snapshot
+and all four native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
@@ -94,16 +98,29 @@ local file or an implicitly merged scientific parent.
    residual, action and diagonal response under its complete edge gate.
    Seven literal identities compile in Lean. Its vertex-only gate is
    weaker: an exact root with action 48 has nonzero edge response.
+10. **Volume-fiber information:** a smooth curved affine raw-coframe/Gram
+    pencil has the same full pointwise volume at every parameter but
+    Einstein contrast `3*pi^2/50`. All native geometric information that
+    factors through that density is identical, even for nonlinear
+    operators, spectra, refinements and unique-value auxiliary preparation.
+    The actual compensator auxiliary gate has a nonempty unique action
+    value, proved from its normal equation and residual uniqueness. An
+    explicit rational profile protects the fact that elimination can be
+    nonlinear. Additional native metric-shape inputs are outside this
+    class; the archive's global volume identity alone does not imply its
+    physical factorization hypothesis. The 24 new exact torsion controls
+    concern the continuum spin connection; finite all-row O(h^2) endpoint
+    preparations are consumed from the published probe theorem.
 
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The twenty-one imported files
+labels, Lean owners and BOOK text are unchanged. The twenty-seven imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The three self-contained checkers replay 71, 60 and 86 exact controls without
+The four self-contained checkers replay 71, 60, 86 and 72 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -115,6 +132,11 @@ using only propext, Classical.choice and Quot.sound, with no sorryAx.
 The weighted-owner capsule also compiled, printing seven axiom reports
 with those same standard axioms. Immutable replay rejects a deliberately
 falsified local-lift rank in its ledger.
+The volume-fiber capsule compiled six propositions, including one axiom-free
+factorization identity; the others use the same three standard axioms.
+Its immutable ledger rejects replacement of the nonzero Einstein contrast
+by zero. The new certificate recomputes all Christoffels/Ricci entries,
+metric packing, Lorentz spin connection and 24 continuum torsion components.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -132,6 +154,7 @@ Python setup and must pass on this intake head before acceptance.
 python3 02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_quadratic_gram_flux_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_weighted_trace_lift_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_volume_fiber_check.py
 ```
 
 ## Preserved original obligations
@@ -143,7 +166,7 @@ It remains Draft/IN_PROGRESS. #202's full-affine stationary terminal and
 tasks are neither retired nor relabeled by this checkpoint.
 
 The next gravity arrow is a core-owned state/variation/action realization
-outside the excluded quadratic, bounded-degree volume-faithful trace and
+outside the excluded quadratic, volume-only information and
 standalone full-gate classes,
 or a complete scoped obstruction for the remaining owners.
 Native source/Ward, nonlinear joint existence, soundness, recovery and

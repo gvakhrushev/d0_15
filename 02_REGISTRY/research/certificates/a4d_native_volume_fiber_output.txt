@@ -1,0 +1,10 @@
+'D0.Research.NativeVolumeFiber.null_gram_pencil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVolumeFiber.null_pencil_raw_solder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVolumeFiber.literal_site_gram_null_pencil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVolumeFiber.factorized_readout_constant_on_fiber' does not depend on any axioms
+'D0.Research.NativeVolumeFiber.auxiliary_stationary_action_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVolumeFiber.auxiliary_gate_has_unique_action_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
