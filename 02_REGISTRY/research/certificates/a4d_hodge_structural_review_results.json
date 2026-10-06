@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "baseline_main": "e80a3b1ccf615fb4f70bf5900181592604928497",
+  "live_PR317_head": "bfe9e28d4f424851085260d8ca7ec0f1403961d8",
+  "A_source_sha256": "2ea7e71d2ab0aafb447daf075e5d304eed8fe24eb89be8a40c6cb3457d87c516",
+  "P_plus_ledger_sha256": "f4e97cfb2458d47bc3d3605687eb2297742d25ff88bb8f9e360552f6202e5f35",
+  "checks": {
+    "OMEGA_SQUARED_MINUS_ID": true,
+    "OMEGA_SKEW": true,
+    "ANTICOMMUTATOR_ZERO": true,
+    "SIMILARITY_OFF_DIAGONAL": true,
+    "CONGRUENCE_DIAGONAL": true,
+    "CONSTANT_T_DETERMINANT_4096": true,
+    "COEFFICIENT_CONJUGATE_BLOCKS": true,
+    "A_TRANSPOSE_RECIPROCITY": true,
+    "M_TRANSPOSE_RECIPROCITY": true,
+    "ALL_3_BY_3_ROLE_BLOCKS_SKEW": true,
+    "CLEARED_M_GAUSSIAN_INTEGER_COEFFICIENTS": true,
+    "CLEARED_M_NOT_OVER_REAL_INTEGERS": true,
+    "EXPLICIT_SEXTIC_DETERMINANT": true,
+    "SEXTIC_ALL_ROOTS_SIMPLE": true,
+    "SEXTIC_CONJUGATE_ROOTS_DISJOINT": true,
+    "SEXTIC_NO_ZERO_ROOT": true,
+    "M_QUARTER_WAVE_RANK_8": true,
+    "M_QUARTER_WAVE_FIRST_DERIVATIVE_RANK_2": true,
+    "P_PLUS_NUMERATOR_RECIPROCITY": true
+  },
+  "cleared_M_nonzero_entries": 48,
+  "cleared_M_distinct_monomials": 21,
+  "cleared_M_total_terms": 144,
+  "rank_23_counterexample": {
+    "characters": [
+      "alpha",
+      "1",
+      "-1",
+      "2"
+    ],
+    "alpha_definition": "any complex root of f; all are nonzero and simple",
+    "f": "151*z0**6 - 48*I*z0**6 - 396*z0**5 - 178*z0**4 + 252*I*z0**4 - 2216*z0**3 - 97*z0**2 - 252*I*z0**2 - 876*z0 + 124 + 48*I",
+    "det_M": "(z0**6*(151 - 48*I) - 396*z0**5 + z0**4*(-178 + 252*I) - 2216*z0**3 + z0**2*(-97 - 252*I) - 876*z0 + 124 + 48*I)/(128*z0**3)",
+    "rank_M": 11,
+    "rank_coefficient_conjugate_M": 12,
+    "rank_A": 23,
+    "reason": "simple determinant root and coprime conjugate determinant"
+  },
+  "theorem_on_physical_torus": {
+    "N_equals_M_adjoint": true,
+    "rank_A_equals_2_rank_M": true,
+    "det_A_equals_abs_det_M_squared_nonnegative": true,
+    "physical_resonance_in_both_conjugate_factor_zero_loci": true,
+    "derivation": "coefficient conjugation plus simultaneous-inversion transpose reciprocity"
+  },
+  "scope": "Exact Hodge structural identities and one algebraic rank-23 counterexample; not complete complex rank strata, absolute irreducibility or a stationary metric-response theorem.",
+  "terminal": "A4D_HODGE_REDUCTION_SCOPE_AND_ODD_COMPLEX_RANK_VERIFIED"
+}

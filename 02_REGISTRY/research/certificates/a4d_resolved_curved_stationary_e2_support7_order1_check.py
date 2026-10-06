@@ -17,6 +17,7 @@ does not promote this computation to a branch obstruction or finite witness.
 from __future__ import annotations
 
 from itertools import combinations
+from functools import lru_cache
 
 import sympy as sp
 from sympy import Matrix, Rational, eye, zeros
@@ -44,6 +45,12 @@ STAR_MAP = {
 }
 for p, (q, sign) in STAR_MAP.items():
     STAR[PINDEX[q], PINDEX[p]] = sign
+
+
+@lru_cache(maxsize=128)
+def _inverse_value(value: sp.ImmutableMatrix) -> sp.ImmutableMatrix:
+    """Memoize exact base inverses only; immutable keys/values avoid aliasing."""
+    return sp.ImmutableMatrix(value.inv())
 
 
 class MJet:
@@ -85,7 +92,7 @@ class MJet:
         return MJet(self.v / scalar, self.d / scalar)
 
     def inv(self):
-        vi = self.v.inv()
+        vi = _inverse_value(sp.ImmutableMatrix(self.v))
         return MJet(vi, -vi * self.d * vi)
 
 
@@ -124,6 +131,11 @@ def d_star_jet(role, generators, role_index: int, h: Matrix):
     coframe = [ETA[:, r] for r in range(4)]
     site_value, site_deriv = sp.S.Zero, sp.S.Zero
     for r, s in PAIRS:
+        # This homogeneous face depends only on links r and s. A variation
+        # of another role is identically zero, including its full first jet.
+        # Keep every incident face and all 24 tested Euler components.
+        if role_index not in (r, s):
+            continue
         ur, us = role[r], role[s]
         uri, usi = ur.inv(), us.inv()
         dur = du if r == role_index else constant_jet(zeros(4))

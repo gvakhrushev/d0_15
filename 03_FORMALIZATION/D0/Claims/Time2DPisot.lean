@@ -1,25 +1,19 @@
 import D0.Core.Phi
 
 /-!
-# D0-TIME-2D-PISOT-001 — time = T^2 forced by quadratic Pisot-minimality of phi
+# D0-TIME-2D-PISOT-001 — finite quadratic-root and conjugate facts
 
-The certificate `04_CERTIFICATES/vp_time_2d_pisot.py` asserts the EXACT finite/algebraic facts:
+The declaration names are historical. Read the proposition `time_2d_pisot`
+itself as the owner: it bundles the two root equations, root brackets, Vieta
+identities, the discriminant calculation, a bounded `Fin 6` nonsquare check,
+and the degree of the explicit coefficient list. It reuses `D0.Core.Phi`.
 
-* [1] `phi` is a root of the monic integer polynomial `x^2 - x - 1` and lies in `(1, 2)`
-      (so it is an algebraic integer).
-* [2] EXACT: the discriminant of `x^2 - x - 1` is `5`, which is not a perfect square,
-      hence the polynomial is irreducible over `Q` and `deg Q(phi) = 2`.
-* [3] EXACT: the Galois conjugate `psi = 1 - phi` is the other root, satisfies the Vieta
-      relations `phi + psi = 1` and `phi * psi = -1`, and lies strictly in `(-1, 0)`, so
-      `|psi| < 1`.  One conjugate outside, the other strictly inside the unit disk
-      => `phi` is a Pisot number.
-* [4] The minimal `M1`-admissible field is `Q(phi)` of degree `2`, forcing the time layer
-      to be the 2-torus `T^2` (degree 1 would be a forbidden rational capture).
-
-This is a leaf per-claim module: it imports only the (frozen, proved) `D0.Core.Phi`
-and reuses its theorems `phi_sq`, `psi_sq`, `phi_add_psi`, `phi_mul_psi`, so it builds in
-seconds.  The purely-integer facts (discriminant = 5, not a square; degree = 2) are closed
-by `decide`; the analytic brackets are closed from `Real.sqrt 5 ∈ (2, 3)`.
+This module does not construct a time torus, a physical time variable, an
+entropy law, a KAM result, or a coefficient selector. In particular the list
+length calculation is not a formal proof that a specified polynomial is a
+minimal polynomial or that a number-field extension has degree two. Such
+identifications require separate statements. No mathematical declaration or
+proof is changed by this scope clarification.
 -/
 
 namespace D0.Claims
@@ -30,7 +24,7 @@ open D0
 its coefficient list `[c0, c1, c2] = [-1, -1, 1]` so that `p(x) = c2*x^2 + c1*x + c0`. -/
 def pisotCoeffs : List Int := [-1, -1, 1]
 
-/-- EXACT [1]: `p` is monic (leading coefficient `1`) — `phi` is an algebraic integer. -/
+/-- The last entry of the specified coefficient list is `1`. -/
 theorem pisot_monic : pisotCoeffs.getLast! = 1 := by decide
 
 /-- EXACT [2]: the discriminant `b^2 - 4ac` of `x^2 - x - 1` equals `5`. -/
@@ -38,12 +32,11 @@ theorem pisot_discriminant_eq_five :
     ((-1 : Int))^2 - 4 * 1 * (-1) = 5 := by decide
 
 /-- EXACT [2]: `5` is not a perfect square — no integer in `0..5` squares to it.
-This is the decidable kernel of "irreducible over `Q`", hence `deg Q(phi) = 2`. -/
+This statement is bounded to `Fin 6`; it is not an irreducibility declaration. -/
 theorem five_not_perfect_square :
     ∀ n : Fin 6, (n : Int) ^ 2 ≠ 5 := by decide
 
-/-- EXACT [2/4]: the degree of the minimal polynomial (and so of the time layer `Q(phi)`)
-is `2`, the forced value: not `1` (a rational capture, forbidden by `M1`). -/
+/-- The explicit coefficient list has length minus one equal to `2`, not `1`. -/
 theorem pisot_degree_eq_two : pisotCoeffs.length - 1 = 2 ∧ (2 : Nat) ≠ 1 := by decide
 
 /-- [1] `phi` is a root of `x^2 - x - 1`, i.e. `phi^2 - phi - 1 = 0`. -/
@@ -93,18 +86,12 @@ theorem psi_abs_lt_one : |psi| < 1 := by
   rw [abs_lt]
   constructor <;> linarith
 
-/-- **D0-TIME-2D-PISOT-001** (master theorem): the time layer is `T^2`, forced by the
-quadratic Pisot-minimality of `phi`. Bundles the exact finite content of the certificate:
-
-* `phi` is the root of the monic `x^2 - x - 1` (`phi^2 = phi + 1`), lying in `(1, 2)`;
-* the discriminant is `5`, not a perfect square => `deg Q(phi) = 2` (forced, `≠ 1`);
-* the conjugate `psi = 1 - phi` is the other root, with Vieta relations `phi+psi = 1`,
-  `phi*psi = -1`, lying in `(-1, 0)` so `|psi| < 1` — i.e. `phi` is Pisot;
-* `1 < phi` and `|psi| < 1` is exactly the Pisot condition at degree `2`. -/
+/-- Bundle of the displayed finite/algebraic root facts. The conclusion contains
+no time torus or physical-time construction. -/
 theorem time_2d_pisot :
-    -- [1] minimal polynomial: phi root of monic x^2 - x - 1, in (1,2)
+    -- [1] phi root equation and bracket
     (phi ^ 2 - phi - 1 = 0 ∧ 1 < phi ∧ phi < 2) ∧
-    -- [2] discriminant = 5, not a square, degree forced to 2 (≠ 1)
+    -- [2] discriminant, bounded nonsquare test and coefficient-list degree
     (((-1 : Int))^2 - 4 * 1 * (-1) = 5 ∧
       (∀ n : Fin 6, (n : Int) ^ 2 ≠ 5) ∧
       pisotCoeffs.length - 1 = 2 ∧ (2 : Nat) ≠ 1) ∧
