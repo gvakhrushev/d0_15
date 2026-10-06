@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5`, following
-`32e7a1da7c191ef8567647d56d69995b475a84bb`.
+`dae0ec13f9f885ff945c45613ae38becbc097d18`, following
+`60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -60,6 +60,10 @@ seventy-five byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and real-calculus/similarity/edge-source/mixed-readout
   capsule with output and transitive-source receipt.
 
+* [Positive point states and smooth physical-volume refinement](A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md),
+  exact checker/ledger and actual history/finite-state/readout capsule with
+  output and transitive-source receipt.
+
 The published source head and new proof/capsule blobs were independently verified
 against GitHub before this intake commit.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
@@ -70,7 +74,8 @@ the 58 pins of the spectral-frame capsule, the nine pins of the literal
 vector source capsule, the 12 pins of the mixed-parent source capsule,
 the 32 pins of the verification/refinement capsule, and the 35 pins of
 the actual local-source quotient capsule, and the 33 pins of the nonlinear
-log-det capsule, the registry snapshot and all twelve native certificates' input hashes match
+log-det capsule, and the 25 pins of the positive-state/refinement capsule,
+the registry snapshot and all thirteen native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
@@ -278,15 +283,32 @@ local file or an implicitly merged scientific parent.
     weights, uncontrolled sensitivity, missing flat maps and additional
     geometry-dependent subtractions remain outside the theorem.
 
+23. **Complete positive point-state refinement class:** every compatible
+    positive normalized state on the actual coordinatewise Role-point
+    diagram is a probability mixture on countable address histories, with
+    arbitrary correlations. Any deterministic or shrinking positive local
+    physical readout has only atomic weak limits; vanishing total composed
+    TV errors preserve the result. For direct or uniformly nearby nodal
+    placement, vanishing composed error on each fixed smooth doubling
+    probe already forces delta_0. A smooth density bounded between m and M
+    has a fixed smooth witness with gap at least m/32. Actual curved metric
+    volume and small metric/readout corrections remain obstructed in this
+    class. Merely small adjacent errors, alternative refinement maps,
+    macroscopic kernels, signed/field states and other diagrams remain
+    outside it. No action-contrast estimate is silently strengthened to a
+    state/volume condition, and no native measure is selected. The literal
+    eight-atom archive measure remains distinct from the Role-grid and
+    golden flattened-record measures.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The seventy-five imported files
+labels, Lean owners and BOOK text are unchanged. The eighty-one imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The twelve self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59 and 91 exact controls without
+The thirteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91 and 92 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -353,8 +375,17 @@ axioms only. Its matrix calculus, complete source image, quantitative range,
 convex profile, weak readout, exact corrector and flat-calibration theorems
 are analytical proofs with 91 exact controls, not compiled continuum
 existence claims. False ledgers erasing the source-image boundary, inverse
-degeneration or mixed corrector response are rejected. All 75 artifact blobs
-and 228 distinct artifact/input hashes are verified, including the explicit
+degeneration or mixed corrector response are rejected.
+The positive-state capsule compiles 25 propositions with 25 transitive D0
+source pins and standard axioms only: actual composite histories and their
+countability, finite positive-state/pushforward and scalar mass identities,
+the doubled physical readout and the smooth-peak recurrence bound. Infinite
+positive-state classification, atomic limits and the smooth-test obstruction
+are analytical proofs, not compiled measure-theoretic limit theorems.
+Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
+class, curved gap, adjacent-error boundary and direct smooth-test terminal
+are rejected. All 81 artifact blobs and 236 distinct artifact/input hashes
+are verified, including the explicit
 published prerequisite used by the earlier probe certificate.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
@@ -382,6 +413,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_parent_source_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_verification_refinement_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_edge_source_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_logdet_source_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_measure_refinement_check.py
 ```
 
 ## Preserved original obligations

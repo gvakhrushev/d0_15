@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5` through
+#310 at `dae0ec13f9f885ff945c45613ae38becbc097d18` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -69,7 +69,7 @@ frame obstruction, preserving arbitrary refinement-dependent collapsing
 functions as an exception to broader asymptotic claims. These results add
 no native action or physical on-shell gate.
 The receipt preserves the previous input head
-32e7a1da7c191ef8567647d56d69995b475a84bb. The intake also includes the literal vector/source and
+60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5. The intake also includes the literal vector/source and
 mixed-parent/source classifications with their exact range, kernel and
 residual exceptions, plus the actual verification/process and phase-refinement
 classification. Formal verifiability and the existing positive class-level
@@ -85,7 +85,17 @@ real scalar variation and profile nonselection, the full convex-profile
 contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
-propositions and 91 controls pin 33 transitive sources. The 75-artifact slice
-has 228 verified distinct artifact/input hashes; the gravity graph has
-37 scoped nodes and is not a global ambiguity census. Independent matter,
+propositions and 91 controls pin 33 transitive sources. The expanded 81-artifact slice
+has 236 verified distinct artifact/input hashes; the gravity graph has
+38 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
+
+The positive point-state/refinement follow-up classifies all compatible
+positive normalized states on the actual coordinatewise Role diagram and
+proves its local physical-volume obstruction. Arbitrary point placements
+use exact or vanishing total-TV consistency; direct/nearby nodal placement
+needs only fixed smooth doubling-test consistency and then has only delta_0
+as a limit. Twenty-five compiled propositions, 25 source pins, 92 exact
+controls and four hostile ledgers preserve adjacent-error, nonlocal-kernel,
+signed/field-state and other-diagram exceptions. No physical measure is
+selected or state consistency inferred from the Einstein contrast estimate.

@@ -39,9 +39,10 @@
         "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean",
         "03_FORMALIZATION/D0/Synthesis/ConcretePhysicalDetectorRepresentation.lean",
         "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
-        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md"
+        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md",
+        "02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md"
       ],
-      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used. The nonlinear feedback formula does not select its supplied profile: an exact exponential encoding realizes arbitrary input actions. Its old Boolean source and finite Higgs capstones are not completeness theorems.",
+      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used. The nonlinear feedback formula does not select its supplied profile: an exact exponential encoding realizes arbitrary input actions. Its old Boolean source and finite Higgs capstones are not completeness theorems. The complete positive point-state class under actual coordinatewise Role refinement has an atomic local-volume limit; direct physical placement needs only fixed smooth doubling-test consistency for the obstruction. These state/volume hypotheses are conditional on using that physical arrow, not inferred from the action-contrast bound or imposed on all field states.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -264,9 +265,10 @@
         "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md#3",
         "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
         "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
-        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md"
+        "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md",
+        "02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md"
       ],
-      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed. Actual phase half-turn permutations have adjacent error 1/L but composed error 1/2. Exact phase rigidity only applies on all consecutive levels; sparse subsequences and four-Role/flattened carriers remain distinct. The full convex affine-metric-fiber class, including nonlinear log-det terms with affine operator inputs, is now excluded on the same two curved probes. The actual coordinate-edge operator with direct nodal fields has a curved weak mixed-response obstruction; exact O(h) periodic correctors protect broader field preparation. Bare positive log-det also fails for bounded positive conductances with controlled probe sensitivity and two actual flat comparison maps, including nonlinear and oscillating preparation. Those extra map/bound hypotheses are explicit and are not inferred from the core.",
+      "verification": "Concrete quantitative estimate; the error-composition lemma gives O_V(h^(2/3)) only after those inputs hold. Frozen graded chain compatibility alone is insufficient: the composed fixed-torus sampling readout fails. An alternative owned physical arrow or proved observable factorization is needed. Actual phase half-turn permutations have adjacent error 1/L but composed error 1/2. Exact phase rigidity only applies on all consecutive levels; sparse subsequences and four-Role/flattened carriers remain distinct. The full convex affine-metric-fiber class, including nonlinear log-det terms with affine operator inputs, is now excluded on the same two curved probes. The actual coordinate-edge operator with direct nodal fields has a curved weak mixed-response obstruction; exact O(h) periodic correctors protect broader field preparation. Bare positive log-det also fails for bounded positive conductances with controlled probe sensitivity and two actual flat comparison maps, including nonlinear and oscillating preparation. Those extra map/bound hypotheses are explicit and are not inferred from the core. The complete positive point-state class under actual coordinatewise Role refinement has an atomic local-volume limit; direct physical placement needs only fixed smooth doubling-test consistency for the obstruction. These state/volume hypotheses are conditional on using that physical arrow, not inferred from the action-contrast bound or imposed on all field states.",
       "status": "OPEN_REMAINING_NATIVE_ARROW",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -391,9 +393,10 @@
         "The curved member is a physical native realization, not only a geometric probe."
       ],
       "owners": [
-        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md"
+        "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+        "02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md"
       ],
-      "verification": "Constructive recovery and uniform quantitative bounds.",
+      "verification": "Constructive recovery and uniform quantitative bounds. The complete positive point-state class under actual coordinatewise Role refinement has an atomic local-volume limit; direct physical placement needs only fixed smooth doubling-test consistency for the obstruction. These state/volume hypotheses are conditional on using that physical arrow, not inferred from the action-contrast bound or imposed on all field states.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -737,6 +740,33 @@
         "logdet_source_class",
         "probe_law"
       ]
+    },
+    {
+      "id": "native_point_volume_recovery",
+      "scope": "All positive normalized linear states on the actual coordinatewise Role-point observable diagram, and their deterministic or shrinking positive local physical-volume readouts.",
+      "hypotheses": [
+        "The actual composite phase maps act coordinatewise on Role points; the flattened archive and field-configuration space are different objects.",
+        "Exact state compatibility or vanishing total composed TV error is required for arbitrary point placements; correlations among coordinates are unrestricted.",
+        "For direct nodal placement or uniformly vanishing coordinate/cell corrections, vanishing composed error on each fixed smooth physical doubling test suffices.",
+        "The target normalized volume has a smooth nondegenerate metric density on the compact periodic carrier. Corrected metrics recovering that same volume are allowed.",
+        "Neither a contrast bound on another observable nor positivity of a nonlocal quadratic form is asserted to imply positive point-state consistency."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseProductCarrier.lean",
+        "03_FORMALIZATION/D0/Geometry/A4DGoldenAFCommutativeTargetBoundary.lean",
+        "03_FORMALIZATION/D0/Probability/FiniteArchiveMeasure.lean",
+        "02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_measure_refinement.lean",
+        "02_REGISTRY/research/certificates/a4d_native_measure_refinement_check.py"
+      ],
+      "verification": "Twenty-five compiled propositions, 25 transitive source pins and 92 exact grouped controls. All compatible positive states are summable mixtures on countable address histories; all weak limits under point/shrinking local positive readouts are atomic, including the total-TV extension. For direct placement the only smooth-test-compatible weak limit is delta_0, with fixed smooth positive-density gap at least m/32. Infinite measure/weak-limit proofs are analytical; history, finite state/Hodge, readout and peak-bound owners compile. Four false ledgers are rejected. Merely adjacent small errors, alternative projections, macroscopic kernels, signed/field states and the distinct actual eight-atom/flattened measures retain their explicit scopes.",
+      "status": "PROVED_SCOPED_POSITIVE_STATE_REFINEMENT_OBSTRUCTION_PENDING_CONTROL",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_STATED_POSITIVE_POINT_VOLUME_CLASS",
+      "depends_on": [
+        "cochain_refinement_construction"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -765,5 +795,6 @@
   "parent_source_input_head": "8b96338505395dabf509e13422089d89685483b8",
   "verification_refinement_input_head": "606d8774bcaf4684d8caac60cb73912a8827091a",
   "edge_source_input_head": "2cba34623e346eb75a7a9ae42a550e4a52178a54",
-  "logdet_source_input_head": "32e7a1da7c191ef8567647d56d69995b475a84bb"
+  "logdet_source_input_head": "32e7a1da7c191ef8567647d56d69995b475a84bb",
+  "measure_refinement_input_head": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5"
 }

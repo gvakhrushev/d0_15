@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "3507de991e9adf9a1a1d6e7b04895bb06070257d9772acdb066b64600bb44548",
-      "source_blob": "9575b8d87db0a0f9e964c5c1762b5d0887350972"
+      "sha256": "0aa16053d511740e562792d96ff62ae1f4fb0a32c292fdf58fbd602bb2754b56",
+      "source_blob": "2bab3988f3724618dffb5e99dbc4513df854d6b0"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "15ab8bcd8e1a6b531f99c615a89c78e111bbdac278f9903f34d75f6132d3db92",
-      "source_blob": "4577e2e4f3638822d3d460639c949b380418a1a6"
+      "sha256": "3552f8ea179514422c22f314fabf22ca11aa79e295ca8d697478acb64aa985b6",
+      "source_blob": "66067f20ded0d42183989075141042e4fb6d2061"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -376,6 +376,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_logdet_source_results.json",
       "sha256": "cb7829834d170297015257935633e89d810470829bfaeb55ff03b3396e5f5e66",
       "source_blob": "669044c4e60162ec9c85433a65c6aad2b559936d"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md",
+      "sha256": "cf5c9910bfea340f3ebe90c015886d28aa44db0799a8490ec9d0dad6029eff1c",
+      "source_blob": "fadc86d7e164b113acfd44c3231601932647b348"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_measure_refinement.lean",
+      "sha256": "14a9d0a561297f801aee679e6de95373b62fa8bb0d7bd80978d77c7c7f6943d9",
+      "source_blob": "7929ccbc83bfde552cad8b87253d85fb9bb74f54"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_measure_refinement_certificate.json",
+      "sha256": "ff1a580dc14850ec6fef2908869d71e5109879e3e0cb5509599f765dd9297c92",
+      "source_blob": "ef0c6468bcc20a66da53986e1f8f40dbcdc93435"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_measure_refinement_check.py",
+      "sha256": "87721f50f7bc96d0b16a236fa69cdd0478ce9a7638b9955ebe3e9162d4256876",
+      "source_blob": "77cb19ea09e7a627670daadf26bc836375c3ea56"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_measure_refinement_output.txt",
+      "sha256": "87fb213aeb1a02fa61b3a958d855727fa1399983995f2c83b6df11ba3a00ebdb",
+      "source_blob": "d06ed5facd90297f787cd0072ba73f078943d827"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_measure_refinement_results.json",
+      "sha256": "8da2eef43e5eedffb6bd4af163e7b5a29896954a12a35dddf1e7f686a51a7957",
+      "source_blob": "1807d2b479cc38739ae8ef1511de6b51b56f42c0"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -384,7 +414,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "32e7a1da7c191ef8567647d56d69995b475a84bb",
+  "previous_source_head": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -408,11 +438,12 @@
     "Nonlinear log-det candidate: actual scalar derivatives and rank-two normalization, arbitrary-profile encoding, all-size determinant similarity and finite conjugation Ward. Complete signed-conductance source image iff scaled data admit a positive definite centered completion, uniqueness, quantitative range bounds and an exact bounded-source inverse degeneration. Twenty-three compiled propositions, 33 source pins and 91 exact controls; full unsourced gate empty, both signs and constrained/indefinite exceptions retained. The operator binding and supplied profile are not installed as a physical law.",
     "Every jointly convex full auxiliary profile on affine actual metric fibers fails the two opposite curved Einstein Hessians under one calibration. All-size analytical argument, including nonlinear positive-domain log-det terms with affine inputs; nonempty fibers and all total record/refinement errors are explicit.",
     "Actual coordinate-edge operator with direct nodal fields has exact mixed-coordinate annihilation and a curved weak bilinear gap pi^2/20. A full periodic cell corrector has O(h) field amplitude but mixed response -9/20, protecting prepared-field exceptions; this cell problem is not a physical root or a native preparation theorem.",
-    "Bare positive log-det with uniformly bounded positive conductances, controlled endpoint sensitivity and two actual uniform flat comparison maps cannot retain nonzero curved contrast after flat calibration. Both signs, arbitrary mesh couplings/normalizations, nonlinear maps and spatial oscillation are allowed. Missing flat maps, signed weights, unbounded sensitivity and geometry-dependent subtractions stay outside the theorem."
+    "Bare positive log-det with uniformly bounded positive conductances, controlled endpoint sensitivity and two actual uniform flat comparison maps cannot retain nonzero curved contrast after flat calibration. Both signs, arbitrary mesh couplings/normalizations, nonlinear maps and spatial oscillation are allowed. Missing flat maps, signed weights, unbounded sensitivity and geometry-dependent subtractions stay outside the theorem.",
+    "All positive normalized states on the actual coordinatewise Role-point diagram are summable mixtures on countable address histories, including arbitrary correlations. Exact compatibility or vanishing total composed TV error forces atomic weak limits under arbitrary point/shrinking positive local volume readouts. For direct or uniformly nearby nodal placement, consistency on each fixed smooth doubling test alone permits only delta_0; a smooth positive density has an explicit fixed probe gap at least m/32. Twenty-five compiled propositions, 25 transitive source pins, 92 exact controls and four hostile ledgers. Infinite measure/limit theorems are analytical. Adjacent smallness, different projections, macroscopic kernels, signed/field states and the distinct flattened/eight-atom measures retain their scopes. State consistency is not inferred from the Einstein contrast estimate; no physical measure or action is selected."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
+  "source_head": "dae0ec13f9f885ff945c45613ae38becbc097d18",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "32e7a1da7c191ef8567647d56d69995b475a84bb",
+  "source_parent": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
   "source_pr": 310
 }

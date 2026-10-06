@@ -1,0 +1,246 @@
+{
+  "adjacent_smallness": "INSUFFICIENT; UNIFORM_DIFFUSE_STATES_HAVE_O(1/L)_STEP_DEFECT",
+  "approximate_extension": "TOTAL_COMPOSED_TV_ERROR_TENDS_TO_ZERO; SUMMABLE_STEP_ERROR_SUFFICES",
+  "checks": [
+    "COMPILED_ACTUAL_HISTORY_STATE_AND_MASS_BINDINGS",
+    "ACTUAL_COMPOSITE_AND_ALL_POINT_HISTORIES_2_3",
+    "ACTUAL_COMPOSITE_AND_ALL_POINT_HISTORIES_3_4",
+    "ACTUAL_COMPOSITE_AND_ALL_POINT_HISTORIES_3_7",
+    "ACTUAL_COMPOSITE_AND_ALL_POINT_HISTORIES_4_8",
+    "ACTUAL_COMPOSITE_AND_ALL_POINT_HISTORIES_4_12",
+    "ACTUAL_COMPOSITE_AND_ALL_POINT_HISTORIES_8_16",
+    "ACTUAL_COMPOSITE_AND_ALL_POINT_HISTORIES_12_24",
+    "ACTUAL_COMPOSITE_AND_ALL_POINT_HISTORIES_16_64",
+    "LONG_JUMP_SINGLE_MODULO_IS_NOT_NATIVE",
+    "FULL_ROLE_COMPOSITE_IS_COORDINATEWISE",
+    "ACTUAL_DOUBLED_PHYSICAL_READOUT_4",
+    "ACTUAL_DOUBLED_PHYSICAL_READOUT_8",
+    "ACTUAL_DOUBLED_PHYSICAL_READOUT_12",
+    "ACTUAL_DOUBLED_PHYSICAL_READOUT_16",
+    "COLLAPSE_IS_CONTINUOUS_TORUS_LIPSCHITZ_CONTROL",
+    "EVERY_RATIONAL_CONTROL_IS_ABSORBED",
+    "ALL_SIZE_SMOOTH_PEAK_RECURRENCE_POLYNOMIAL",
+    "EXACT_SMOOTH_PEAK_MEAN_BOUND_1",
+    "EXACT_SMOOTH_PEAK_MEAN_BOUND_3",
+    "EXACT_SMOOTH_PEAK_MEAN_BOUND_6",
+    "EXACT_SMOOTH_PEAK_MEAN_BOUND_12",
+    "EXACT_SMOOTH_PEAK_MEAN_BOUND_24",
+    "EXACT_SMOOTH_PEAK_MEAN_BOUND_48",
+    "FIXED_SMOOTH_VOLUME_WITNESS_QUANTITATIVE_LOWER_BOUND",
+    "FINITE_PREFIXES_MATCH_BIRTH_CODES_3",
+    "FINITE_PREFIXES_MATCH_BIRTH_CODES_4",
+    "FINITE_PREFIXES_MATCH_BIRTH_CODES_8",
+    "FINITE_PREFIXES_MATCH_BIRTH_CODES_12",
+    "POSITIVE_STATE_DUAL_AND_SCALAR_MASS_2",
+    "ALL_BASIS_WEIGHTS_AND_QUADRATIC_PULLBACK_2",
+    "POSITIVE_STATE_DUAL_AND_SCALAR_MASS_3",
+    "ALL_BASIS_WEIGHTS_AND_QUADRATIC_PULLBACK_3",
+    "POSITIVE_STATE_DUAL_AND_SCALAR_MASS_4",
+    "ALL_BASIS_WEIGHTS_AND_QUADRATIC_PULLBACK_4",
+    "POSITIVE_STATE_DUAL_AND_SCALAR_MASS_8",
+    "ALL_BASIS_WEIGHTS_AND_QUADRATIC_PULLBACK_8",
+    "POSITIVE_STATE_DUAL_AND_SCALAR_MASS_16",
+    "ALL_BASIS_WEIGHTS_AND_QUADRATIC_PULLBACK_16",
+    "POSITIVE_QUADRATIC_MATRIX_NEED_NOT_GIVE_POSITIVE_POINT_STATE",
+    "INFINITE_SUPPORT_COMPATIBLE_POSITIVE_PROFILE_2",
+    "DIRECT_PLACEMENT_ATOMIC_CONCENTRATION_BOUND_2",
+    "INFINITE_SUPPORT_COMPATIBLE_POSITIVE_PROFILE_4",
+    "DIRECT_PLACEMENT_ATOMIC_CONCENTRATION_BOUND_4",
+    "INFINITE_SUPPORT_COMPATIBLE_POSITIVE_PROFILE_8",
+    "DIRECT_PLACEMENT_ATOMIC_CONCENTRATION_BOUND_8",
+    "INFINITE_SUPPORT_COMPATIBLE_POSITIVE_PROFILE_12",
+    "DIRECT_PLACEMENT_ATOMIC_CONCENTRATION_BOUND_12",
+    "INFINITE_SUPPORT_COMPATIBLE_POSITIVE_PROFILE_16",
+    "DIRECT_PLACEMENT_ATOMIC_CONCENTRATION_BOUND_16",
+    "INFINITE_SUPPORT_COMPATIBLE_POSITIVE_PROFILE_32",
+    "DIRECT_PLACEMENT_ATOMIC_CONCENTRATION_BOUND_32",
+    "CORRELATED_BIRTH_MIXTURE_FULL_ROLE_COMPATIBILITY_2_4",
+    "CORRELATED_BIRTH_MIXTURE_FULL_ROLE_COMPATIBILITY_4_8",
+    "CORRELATED_BIRTH_MIXTURE_FULL_ROLE_COMPATIBILITY_8_12",
+    "CORRELATED_BIRTH_MIXTURE_FULL_ROLE_COMPATIBILITY_12_16",
+    "NO_COORDINATE_INDEPENDENCE_ASSUMED",
+    "STRICTLY_POSITIVE_CORRELATED_FIBERS_ARE_NONEMPTY",
+    "EXACT_ONE_COORDINATE_TOTAL_VARIATION_2_3",
+    "FULL_ROLE_TV_FORMULA_ENUMERATION_2_3",
+    "EXACT_ONE_COORDINATE_TOTAL_VARIATION_3_4",
+    "FULL_ROLE_TV_FORMULA_ENUMERATION_3_4",
+    "EXACT_ONE_COORDINATE_TOTAL_VARIATION_4_5",
+    "FULL_ROLE_TV_FORMULA_ENUMERATION_4_5",
+    "EXACT_ONE_COORDINATE_TOTAL_VARIATION_4_8",
+    "FULL_ROLE_TV_FORMULA_ENUMERATION_4_8",
+    "EXACT_ONE_COORDINATE_TOTAL_VARIATION_8_16",
+    "EXACT_ONE_COORDINATE_TOTAL_VARIATION_12_24",
+    "EXACT_ONE_COORDINATE_TOTAL_VARIATION_16_32",
+    "SHARP_COMPOSED_FOUR_ROLE_DEFECT_16",
+    "EXACT_ONE_COORDINATE_TOTAL_VARIATION_64_128",
+    "SHARP_COMPOSED_FOUR_ROLE_DEFECT_64",
+    "ADJACENT_SMALLNESS_DOES_NOT_CONTROL_COMPOSITION_4",
+    "ADJACENT_SMALLNESS_DOES_NOT_CONTROL_COMPOSITION_8",
+    "ADJACENT_SMALLNESS_DOES_NOT_CONTROL_COMPOSITION_16",
+    "ADJACENT_SMALLNESS_DOES_NOT_CONTROL_COMPOSITION_32",
+    "ADJACENT_SMALLNESS_DOES_NOT_CONTROL_COMPOSITION_64",
+    "FINITE_HORIZON_UNIFORM_TOP_IS_NOT_ONE_INFINITE_STATE",
+    "EXACT_CYCLOTOMIC_SMOOTH_AND_CURVED_VOLUME_SUMS_4",
+    "EXACT_CYCLOTOMIC_SMOOTH_AND_CURVED_VOLUME_SUMS_8",
+    "EXACT_CYCLOTOMIC_SMOOTH_AND_CURVED_VOLUME_SUMS_12",
+    "EXACT_CYCLOTOMIC_SMOOTH_AND_CURVED_VOLUME_SUMS_16",
+    "EXACT_CYCLOTOMIC_SMOOTH_AND_CURVED_VOLUME_SUMS_20",
+    "EXACT_CYCLOTOMIC_SMOOTH_AND_CURVED_VOLUME_SUMS_24",
+    "FIXED_SMOOTH_FULL_ROLE_COMPOSED_GAP",
+    "ACTUAL_CURVED_VOLUME_FULL_ROLE_COMPOSED_GAP",
+    "ALL_CURVED_SECOND_JET_RICCI_AND_OWNER_SIGN",
+    "SMALL_NONSEPARABLE_METRIC_CORRECTION_DOES_NOT_REMOVE_GAP",
+    "DIFFERENT_DYADIC_RULE_HAS_COMPATIBLE_DIFFUSE_RECOVERY",
+    "DYADIC_RULE_IS_NOT_ACTUAL_NATIVE_COMPOSITE",
+    "MACROSCOPIC_KERNEL_CAN_IMPORT_ANY_DIFFUSE_TARGET",
+    "LITERAL_EIGHT_ATOM_MEASURE_REMAINS_DISTINCT"
+  ],
+  "compatible_state_class": "all nonnegative summable mixtures on N^Role with total mass one",
+  "curved_metric_R_owner": "-120 pi^2 / 121",
+  "curved_metric_total_volume": "201 / 200",
+  "curved_volume_weak_gap": "1 / 2",
+  "direct_smooth_compatibility": "ONLY_DELTA0_LIMIT_UNDER_ALL_FIXED_SMOOTH_DOUBLING_TESTS",
+  "exact_trig_controls": {
+    "12": {
+      "smooth_sum": "12",
+      "volume": "201/200"
+    },
+    "16": {
+      "smooth_sum": "16",
+      "volume": "201/200"
+    },
+    "20": {
+      "smooth_sum": "20",
+      "volume": "201/200"
+    },
+    "24": {
+      "smooth_sum": "24",
+      "volume": "201/200"
+    },
+    "4": {
+      "smooth_sum": "4",
+      "volume": "201/200"
+    },
+    "8": {
+      "smooth_sum": "8",
+      "volume": "201/200"
+    }
+  },
+  "geometric_positive_controls": {
+    "12": {
+      "bound": "1/6",
+      "coordinate_mean": "502769/3188646",
+      "origin_mass": "181243/531441"
+    },
+    "16": {
+      "bound": "1/8",
+      "coordinate_mean": "4717433/38263752",
+      "origin_mass": "14414443/43046721"
+    },
+    "2": {
+      "bound": "1",
+      "coordinate_mean": "1/9",
+      "origin_mass": "7/9"
+    },
+    "32": {
+      "bound": "1/16",
+      "coordinate_mean": "1852947174407809/29648323021629456",
+      "origin_mass": "617677691251243/1853020188851841"
+    },
+    "4": {
+      "bound": "1/2",
+      "coordinate_mean": "11/54",
+      "origin_mass": "43/81"
+    },
+    "8": {
+      "bound": "1/4",
+      "coordinate_mean": "5281/26244",
+      "origin_mass": "2443/6561"
+    }
+  },
+  "history_class": "countable actual coordinatewise Role histories; not the flattened archive",
+  "input_head": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
+  "inputs_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md": "12c28b87c188492256b6bc2e435e642ff2b2deec5d6b88a81923f693a96f9a36",
+    "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md": "614ecabece11c2dd1657ea73757c1c083b150076cf94f37df302060f990529bc",
+    "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md": "cc7e3ad2f2fa4567e238151414d84022a2078446acfbd76a48b4164d4fe2afa4",
+    "03_FORMALIZATION/D0/Geometry/A4DGoldenAFCommutativeTargetBoundary.lean": "1427e71b52ed2e278f0b0af067cfa206a4a85c953d88b5c42f4e21c9be01f203",
+    "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean": "4588589d0e7f018e3f036e2f42a0f002ad9256fdc5792a3c7d4f2026ca68c20e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean": "591b39b7c7f618c08ada52713f8ce490d4e7973a8f54a0991523c2f04d260108",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseDistance.lean": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementHodgeWeights.lean": "5d15086e27397d4dccf7bc1675e85aba086bcd2f61811a7fc0ef96203a6d8f8b",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseProductCarrier.lean": "f307f30401d4110ab7bb2874e62f84e43e0e35eb7fb9fb7b7844c63f59b97d33",
+    "03_FORMALIZATION/D0/Probability/FiniteArchiveMeasure.lean": "2c9772b66ef8a2e800677f3cf5fde84b8c35653374435cecefa935a88ae50b8b"
+  },
+  "lean_receipt_sha256": "8da2eef43e5eedffb6bd4af163e7b5a29896954a12a35dddf1e7f686a51a7957",
+  "protected_exceptions": [
+    "Only adjacent errors tend to zero",
+    "Finite compatible prefixes with changing top state",
+    "Different nested-grid projections",
+    "Macroscopic nonlocal probability kernels",
+    "Field-state configurations and signed or nonpositive point functionals",
+    "Distinct flattened archive and its already constructed golden record measure"
+  ],
+  "scope": "Complete positive point-state class on the actual coordinatewise refinement diagram. No claim that action-contrast estimates imply TV, no native physical measure selection, no field-state or full-core no-go.",
+  "small_metric_correction_gap_control": "4647980947/10612751044",
+  "smooth_positive_density_gap_bound": "m / 32 with (N+1)^2 >= 32 M/m",
+  "state_controls": {
+    "16": {
+      "positive_total": "1",
+      "zero_weight": "2/17"
+    },
+    "2": {
+      "positive_total": "1",
+      "zero_weight": "2/3"
+    },
+    "3": {
+      "positive_total": "1",
+      "zero_weight": "1/2"
+    },
+    "4": {
+      "positive_total": "1",
+      "zero_weight": "2/5"
+    },
+    "8": {
+      "positive_total": "1",
+      "zero_weight": "2/9"
+    }
+  },
+  "status": "PASS",
+  "total_variation_controls": {
+    "12_24": {
+      "four": "78529/110592",
+      "one": "11/24"
+    },
+    "16_32": {
+      "four": "759375/1048576",
+      "one": "15/32"
+    },
+    "2_3": {
+      "four": "121/432",
+      "one": "1/6"
+    },
+    "3_4": {
+      "four": "121/432",
+      "one": "1/6"
+    },
+    "4_5": {
+      "four": "42093/160000",
+      "one": "3/20"
+    },
+    "4_8": {
+      "four": "2403/4096",
+      "one": "3/8"
+    },
+    "64_128": {
+      "four": "236294415/268435456",
+      "one": "63/128"
+    },
+    "8_16": {
+      "four": "45619/65536",
+      "one": "7/16"
+    }
+  },
+  "uniform_smooth_composed_gap": "15 / 16",
+  "weak_limit_class": "PURELY_ATOMIC_FOR_ARBITRARY_POINT_AND_SHRINKING_POSITIVE_KERNEL_READOUTS"
+}
