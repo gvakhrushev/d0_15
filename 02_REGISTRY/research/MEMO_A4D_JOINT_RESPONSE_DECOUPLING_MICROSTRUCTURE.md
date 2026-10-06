@@ -4,6 +4,16 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [local source quotient and range theorem](A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md)
+now proves actual source equivalence for every four-Role local variation,
+with ten new compiled propositions and 35 transitive source pins. The finite
+source representation has a sharp positive Gram bound 2L^4; its full counting
+spectrum and raw-source kernel are classified. This is not the coupled GR
+range solve. Separately, the literal canonical phase source alpha C_L fails
+even two local variational tests, with sharp unscaled squared residual 18.
+Fifty-nine exact controls retain signed/source-fitting and carrier exceptions.
+No matter action, physical gauge or original terminal is introduced.
+
 The [native verification and phase-process classification](A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md)
 now proves the exact formal scope of verifiability and admissible point-test
 runs, with a literal native Dirichlet-energy countercontrol. Exact reversible
