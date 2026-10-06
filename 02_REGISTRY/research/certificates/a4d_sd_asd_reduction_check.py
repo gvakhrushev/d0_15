@@ -69,7 +69,9 @@ def build_A():
     return A
 
 def main():
+    print('REBUILD_OWNED_A', flush=True)
     A = build_A()
+    print('OWNED_A_REBUILT', flush=True)
     here = Path(__file__).resolve().parent
     source_path = here / 'A_and_mixed_symbol_entries.json'
     source = json.loads(source_path.read_text())
@@ -144,8 +146,9 @@ def main():
           '(x,x,x,1)': (x, x, x, 1), '(x,-1,1,1)': (x, -1, 1, 1), '(x,x,x,x)': (x, x, x, x)}
     ok['det_factorization'] = {}
     for nm, sub in sl.items():
-        dA = sp.factor(sp.simplify(A.subs(dict(zip(z, sub))).det()))
-        dM = sp.factor(sp.simplify(M.subs(dict(zip(z, sub))).det()))
+        print('EXACT_DETERMINANT_SLICE', nm, flush=True)
+        dA = sp.factor(sp.simplify(A.subs(dict(zip(z, sub))).det(method='domain-ge')))
+        dM = sp.factor(sp.simplify(M.subs(dict(zip(z, sub))).det(method='domain-ge')))
         ok['det_factorization'][nm] = bool(sp.simplify(dA - dM*conj(dM)) == 0)
 
     # Exact diagonal chiral determinant. Clearing a denominator from every
@@ -206,7 +209,9 @@ def main():
         'terminal': 'A4D_SD_ASD_REDUCTION_WITH_COMPLEX_RANK_SCOPE_CERTIFIED',
     }
     result_path = here / 'a4d_sd_asd_reduction_results.json'
-    result_path.write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n')
+    expected = json.loads(result_path.read_text(encoding='utf-8'))
+    if result != expected:
+        raise AssertionError('immutable SD/ASD ledger mismatch; do not overwrite the expected result')
     print('PASS', len(ok), 'exact checks')
     print('A4D-SD-ASD-REDUCTION-WITH-SCOPE-CERTIFIED')
 
