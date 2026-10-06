@@ -2412,3 +2412,33 @@ assertion of exact joint stationarity. Six Lean propositions compile with
 52 transitive owner pins. Native shape-sensitive data and their actual
 variation/refinement maps remain the first open arrow; no full-core
 completeness or original-parent terminal is declared.
+
+
+## Native follow-up: literal vector action, source and range
+
+Input `a4a0ee1ce0a48fe07da0da036e122262e8cc7d44`. The
+[vector source boundary](A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md) derives the
+ordinary first variation of the existing real-skew commutator kinetic
+action and binds it to the actual negative double commutator. Its full
+free field gate is exactly `[D,A]=0`; both action and full background
+response then vanish. A supplied current is solvable exactly when it is
+orthogonal to the commutant. The finite sufficiency theorem, actual joint
+conjugation Ward, kernel classification and background derivative compile
+in twenty generic propositions with nine transitive D0 source pins.
+
+A fixed compatible source on a bounded nonsingular four-dimensional
+background family has exact range inverse delta^-2, field norm 2 delta^-2
+and background response norm 4 delta^-3. Rank is constant along the
+positive-parameter sequence and the algebraic Ward holds. Neither gives
+the missing uniform bound. A sourced commutant shift can preserve the
+reduced value but change the full background response; admissible
+neighboring source fibers must precede reduced-action differentiation.
+Non-gauge kernel directions and indefinite/constrained exceptions are
+explicitly preserved.
+
+This is a completed finite owner classification, not a native metric
+stress construction, spacetime Ward, or A4D connection-symbol theorem.
+No selected D(g), new action or physical gate is added. Native realization,
+curved soundness/recovery and original #310 fixed-source/raw-owner terminal
+remain OPEN. The published spectral/reference/cochain parts retain their
+own scopes and source receipts through the linked native inventory.
