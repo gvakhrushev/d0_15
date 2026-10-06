@@ -4,6 +4,15 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [shape-sensitive reference-weight classification](A4D_NATIVE_REFERENCE_WEIGHT_BOUNDARY.md)
+now excludes every coefficient of the actual `I+H+c M_q` family from raw
+Lorentz scalar descent. The sharp two-orbit defect 5/86 persists even for
+mesh-dependent coefficients. At one nondegenerate flat Gram, the two owned
+coefficients have different kernels and inverse bounds. Seventeen Lean
+propositions bind this analysis to the real scalar block, raw frame action
+and scalar exterior unit. This is an operator result; no new native action
+or on-shell gate is introduced.
+
 The [native cochain construction](A4D_NATIVE_COCHAIN_REFINEMENT.md) now
 constructs the documented refinement maps, proves their 1D operator identities
 and computes all 16 Gram sectors. The literal L-scaled forward differential
