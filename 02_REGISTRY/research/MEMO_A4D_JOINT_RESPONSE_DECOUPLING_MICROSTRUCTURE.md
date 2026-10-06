@@ -2335,3 +2335,26 @@ native actions, genuinely nonlinear constraints/profiles, moving-lift
 couplings and covariant matter sectors still need their own physical and
 refinement maps. Original #310 fixed-source/raw-owner obligations remain
 OPEN; #202 and #317 are unchanged.
+
+## Native follow-up: weighted traces and moving lift gates
+
+The [weighted-trace and lift boundary](A4D_NATIVE_WEIGHTED_TRACE_LIFT_BOUNDARY.md)
+uses the actual inverse-density archive volume. With the explicitly tested
+sitewise physical volume map and a fixed operator, all uniformly bounded
+polynomial moment families fail the native Einstein contrast transfer:
+the same curved Gram pencil has affine volume but nonzero Einstein
+derivatives of every order at least two. This does not cover increasing
+degree, moving operators or nonlinear auxiliary elimination.
+
+For adjacent canonical cycles, all linear exact intertwiners are now
+classified. The only unital full-lift stationary root is the rank-one
+constant projector. A strictly local, exact rank-three stationary lift
+with action 3/4 and an injective small-residual degenerating family are
+retained as hostile controls against expanding that no-go.
+
+The existing weighted A2 compensator is also classified under its full
+independent edge gate. Seven literal finite identities are compiled in
+a research Lean capsule. An auxiliary-only root of action 48 retains
+nonzero edge response and protects that remaining nonlinear mechanism.
+These are research proof parts; the original #310 terminal, native
+refinement/soundness/recovery, positive GR and global closure remain OPEN.
