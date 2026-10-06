@@ -284,9 +284,10 @@
         "03_FORMALIZATION/D0/Gravity/A4DParentWardStressDescent.lean",
         "03_FORMALIZATION/D0/Geometry/A4DDiscreteEnergyKernel.lean",
         "02_REGISTRY/research/A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md#3",
-        "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md"
+        "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md",
+        "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md"
       ],
-      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient. The literal flux coframe source is now derived; its nonlinear Lorentz gate fails on the scalar sector. Metric stress/Ward for a physical combined system remains OPEN. The actual real-skew vector action now has compiled first variations and joint conjugation Ward, but its freely stationary field has zero background response; a supplied skew current is not physical metric stress.",
+      "verification": "Actual matter action, full metric derivative and joint on-shell Ward proof. Total neutrality, identically zero generated sources and conditional descent are insufficient. The literal flux coframe source is now derived; its nonlinear Lorentz gate fails on the scalar sector. Metric stress/Ward for a physical combined system remains OPEN. The actual real-skew vector action now has compiled first variations and joint conjugation Ward, but its freely stationary field has zero background response; a supplied skew current is not physical metric stress. The existing mixed parent now has compiled actual field derivatives and zero full constitutive source for its positive scalar-form class; its invertible indefinite source relation and genuine radical exceptions are classified. No physical star or Ward premise is selected by that result.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -326,9 +327,10 @@
       "owners": [
         "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
         "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md",
-        "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md#5-exact-range-obstruction-with-bounded-nonsingular-backgrounds"
+        "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md#5-exact-range-obstruction-with-bounded-nonsingular-backgrounds",
+        "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md#3-invertible-indefinite-form-exact-kernel-and-source-relation"
       ],
-      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol.",
+      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol. The mixed-parent field Hessian has rank 2n+rank(K^T M^-1 K), with source-capable quotient ker(K^T M^-1 K)/ker K equal to the image radical; no physical gauge identification is inferred.",
       "status": "OPEN_FOR_NATIVE_SYSTEM",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -559,6 +561,28 @@
       "terminal_class": null,
       "required_terminal": "CONTROL_ACCEPTED_FINITE_SCOPE",
       "depends_on": []
+    },
+    {
+      "id": "mixed_parent_pointwise_source",
+      "scope": "Existing mixed primal/dual action with actual supplied linear pairing, symmetric scalar form and the full independently defined three-field Euler gate; arbitrary constitutive operator dependence.",
+      "hypotheses": [
+        "Positive scalar form for universal pointwise source annihilation; invertible symmetric form for the separate indefinite classification.",
+        "All three field directions are varied. A degenerate pairing enforces only its visible constraint; no physical star is inferred from a numerical/Boolean capstone.",
+        "Approximate source control additionally requires uniform scalar coercivity, full-field and constitutive-variation bounds in matching norms."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean",
+        "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_parent_source.lean"
+      ],
+      "verification": "Sixteen compiled propositions with 12 transitive source pins; literal owner binding, actual derivatives, positive full-root/source theorem, invertible indefinite root and source relation, raw-constraint scope and continuous-critical-root source theorem. All-size analytic Hessian/image-radical classification, constant-rank continuation corollary and sharp square-root residual bound; 45 grouped exact controls and immutable-ledger hostile mutations.",
+      "status": "PROVED_SCOPED_OWNER_CLASSIFICATION_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_FINITE_SCOPE",
+      "depends_on": [
+        "homogeneous_parent_bridge"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -583,5 +607,6 @@
   "volume_fiber_input_head": "ff5baf86642fca81714843b8ab48bed50939fe54",
   "cochain_refinement_input_head": "227c1609c41b720dcfb7517a8e57f0e8d76cb764",
   "reference_weight_input_head": "75527846bf3603a1c51acf445f8354e3254341be",
-  "spectral_frame_input_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b"
+  "spectral_frame_input_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
+  "parent_source_input_head": "8b96338505395dabf509e13422089d89685483b8"
 }

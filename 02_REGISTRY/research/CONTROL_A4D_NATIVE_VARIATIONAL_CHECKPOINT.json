@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "d0ca8631cae37b595aae0c308790d60a6514b3c886de9491f828d002e04413b7",
-      "source_blob": "388d914bd970f729af3696726008e0e7961ba366"
+      "sha256": "97e5eb24d2377b24c7bb64bea06347b4d86a93301e72eabfd95b0e395ad0f12c",
+      "source_blob": "5b7ff2c29354002d39514bcc11be7a39c10c98f7"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "3c8f1da756d4bfa70f1c449a8fa999dbfd5ce93ff9855fd93d67e09057f5487b",
-      "source_blob": "8537bf176e0127db1afc7a4c51e1359e9bb1af2f"
+      "sha256": "d717409f7f2bbc0b25b471329843fc7b6de4bf6665b590eb5a25626a3707e0e7",
+      "source_blob": "26565c21c80c1f327b9d9b74d3786c0a73c43d19"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -256,6 +256,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_vector_source_results.json",
       "sha256": "da6cdc66682f2bca2558ab60a3f37a0e32a289d3515e3f6e87ff8eb65c7f6d71",
       "source_blob": "9863691a299244a24c0ec2ebc38a25bebfbbbda9"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md",
+      "sha256": "f1073938404f33d250a282c4c91c7c91966c0d7e558b1e79fb1dd3ccaa841f83",
+      "source_blob": "76acd2b43fc3356f25f4a7d676881b5370878043"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_source.lean",
+      "sha256": "6ce3c4427c9b5316608e686a959a999b06053f3e634d30515a5b9b3d58a1a440",
+      "source_blob": "09193af09c8899a3c37e99d34a69e1b04cba82fe"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_check.py",
+      "sha256": "4cae2c6856b366a4208042d77a05786aaef67a39c4387ac3d0f8e85937e5b848",
+      "source_blob": "74a4e8650327e5cbcc2ea591ab54773dc1f58676"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_certificate.json",
+      "sha256": "0d00b3574650e49bbcc70c189dfb062f113d300773622f76a087742d58b77ea3",
+      "source_blob": "67bd7f6c16680d9f33cb573221b411ca31d07bf8"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_output.txt",
+      "sha256": "f7534638525f0b9585ae871dacae67c054d9cd1db94bc1f79109057cbd39b751",
+      "source_blob": "604ea71385d04a36f67c978edb499244de67609d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_results.json",
+      "sha256": "8b574cd62699ade134c0ac019feba8231736b9365b177b30f3ee42ac3bbe0dcd",
+      "source_blob": "40497f32333a4960f96fc7b3dfeb2175cbfea65f"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -264,7 +294,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "a4a0ee1ce0a48fe07da0da036e122262e8cc7d44",
+  "previous_source_head": "8b96338505395dabf509e13422089d89685483b8",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -280,11 +310,12 @@
     "Explicit native cochain refinement operators, scale-corrected chain construction, full 16-sector Gram normalization and all-grade actual metric-measure formula; scoped failure of composed fixed-torus component readout. Twelve generic compiled propositions and 92 exact grouped controls.",
     "Existing shape-sensitive referenceCellWeight family: all-coefficient raw Lorentz scalar obstruction, sharp uniform two-probe defect 5/86, literal scalar/exterior binding, coefficient-dependent full Fourier kernel/range classification at one nondegenerate constant coframe. Seventeen compiled propositions, 56 transitive source pins and 40 exact controls. No native action or physical gate is introduced.",
     "Literal-flux spectral binding: arbitrary fixed scalar function descent forces constancy; existing quadratic spectral energy has normalized frame defect at least 1/8 on two fixed genuinely curved smooth metrics at every L in 4N and every alpha_h. Fourteen compiled propositions, 58 transitive pins, 57 exact controls and a protected collapsing-function counterexample. No action or physical gate is added.",
-    "Literal real-skew vector kinetic action: actual field/background derivatives, full free commutant gate, complete finite supplied-source Fredholm alternative and derived simultaneous-conjugation Ward. Twenty compiled propositions with nine transitive pins and 51 exact controls. A bounded nonsingular constant-rank fixed-source family has inverse delta^-2 and response 4 delta^-3; genuine kernel directions, source compatibility tangents and indefinite/constrained exceptions are retained. No physical D(g), metric stress, action or refinement is added."
+    "Literal real-skew vector kinetic action: actual field/background derivatives, full free commutant gate, complete finite supplied-source Fredholm alternative and derived simultaneous-conjugation Ward. Twenty compiled propositions with nine transitive pins and 51 exact controls. A bounded nonsingular constant-rank fixed-source family has inverse delta^-2 and response 4 delta^-3; genuine kernel directions, source compatibility tangents and indefinite/constrained exceptions are retained. No physical D(g), metric stress, action or refinement is added.",
+    "Existing mixed primal/dual parent: literal supplied-pairing binding, actual three-field derivatives, full positive-form pointwise source annihilation, complete invertible indefinite kernel/source relation and image radical. Sixteen compiled propositions with 12 transitive pins include continuous-critical-root source vanishing; all-size analytic constant-rank and sharp square-root residual bounds retain their precise hypotheses. Forty-five exact controls and hostile ledgers protect indefinite, constrained, degenerate and unbounded exceptions. No physical star, action or constraint is added."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "8b96338505395dabf509e13422089d89685483b8",
+  "source_head": "606d8774bcaf4684d8caac60cb73912a8827091a",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "a4a0ee1ce0a48fe07da0da036e122262e8cc7d44",
+  "source_parent": "8b96338505395dabf509e13422089d89685483b8",
   "source_pr": 310
 }

@@ -1,0 +1,38 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_parent_source.lean",
+  "capsule_sha256": "6ce3c4427c9b5316608e686a959a999b06053f3e634d30515a5b9b3d58a1a440",
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_parent_source.lean",
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "output": "02_REGISTRY/research/certificates/a4d_native_parent_source_output.txt",
+  "output_sha256": "f7534638525f0b9585ae871dacae67c054d9cd1db94bc1f79109057cbd39b751",
+  "owner_input_head": "8b96338505395dabf509e13422089d89685483b8",
+  "printed_axiom_dependencies": 16,
+  "scope": "Literal existing mixed-parent action; actual full field derivatives; positive pointwise source annihilation; invertible indefinite kernel/source; continuous critical-root source theorem; scalar Hodge and pairing scope.",
+  "sorryAx": false,
+  "status": "PASS",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+    "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+    "03_FORMALIZATION/D0/Foundation/M1Predicate.lean": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+    "03_FORMALIZATION/D0/Foundation/ObservableCompletionCanonicity.lean": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCoboundary.lean": "c3a5e0cc7e48a5e46eb6c7f46f5af50787d302d87f1fe71449b8643ff8ccc6d0",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCochainCarrier.lean": "ccfda1cb587c23dc98837c6a78490046e26dc606c0777804a4d7a10b0eddda5a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean": "cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296",
+    "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean": "a4be98cfb6d3e08bc873ff31d93b9669533d19fb641b1cb81e871be4af79f863",
+    "03_FORMALIZATION/D0/Matter/FiniteSelector.lean": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2"
+  }
+}

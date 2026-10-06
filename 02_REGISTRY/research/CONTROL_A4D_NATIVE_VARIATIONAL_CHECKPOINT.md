@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published
-`8b96338505395dabf509e13422089d89685483b8`, following
-`a4a0ee1ce0a48fe07da0da036e122262e8cc7d44`.
+`606d8774bcaf4684d8caac60cb73912a8827091a`, following
+`8b96338505395dabf509e13422089d89685483b8`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-fifty-one byte-identical artifacts, with source Git blobs and SHA256 hashes:
+fifty-seven byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -44,14 +44,18 @@ fifty-one byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and compiled actual derivative/Fredholm/Ward capsule
   with output and transitive-source receipt.
 
+* [Mixed-parent pointwise source and critical-root continuation](A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md),
+  exact checker/ledger and compiled actual-action/derivative/source capsule
+  with output and transitive-source receipt.
+
 The source head and mathematical artifact blob were checked against GitHub.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
 actual flux proof capsule, the six pins of the new weighted-owner capsule,
 the 52 pins of the null-Gram/auxiliary-gate capsule, the 37 pins of the
 cochain refinement capsule, the 56 pins of the reference-weight capsule,
 the 58 pins of the spectral-frame capsule, the nine pins of the literal
-vector source capsule, the registry snapshot and all
-eight native certificates' input hashes match
+vector source capsule, the 12 pins of the mixed-parent source capsule,
+the registry snapshot and all nine native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93` source, rather than an absent
@@ -184,15 +188,28 @@ local file or an implicitly merged scientific parent.
     remain protected exceptions. No native physical D(g) or metric source
     is manufactured from the supplied current.
 
+15. **Mixed-parent pointwise source:** the literal supplied linear pairing
+    binds to the existing action and its three independent field derivatives.
+    A positive scalar form forces zero auxiliary/multiplier fields and zero
+    full constitutive source, with arbitrary differential operator and no
+    range gap assumption. The invertible indefinite class has a complete
+    reduced kernel/source relation and image-radical quotient. The generic
+    continuous-critical-root source theorem is compiled; constant-rank local
+    continuation and the sharp square-root residual estimate have explicit
+    all-size proofs. A real nonzero-source root without neighboring
+    continuation, semidefinite/degenerate pairings, constrained fields and
+    failures of the quantitative uniform bounds remain protected. A positive
+    scalar Hodge formula does not select the physical supplied star.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The fifty-one imported files
+labels, Lean owners and BOOK text are unchanged. The fifty-seven imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The eight self-contained checkers replay 71, 60, 86, 72, 92, 40, 57 and 51 exact controls without
+The nine self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51 and 45 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -233,6 +250,13 @@ with nine transitive D0 pins and standard axioms only. Its 51 exact controls
 verify all skew field/background coordinates, factor/sign normalization,
 full six-dimensional spectrum and supplied-source/indefinite exceptions.
 A ledger replacing the divergent range inverse by one is rejected.
+The mixed-parent capsule compiles sixteen generic propositions with twelve
+transitive D0 pins and standard axioms only, including the actual field and
+constitutive derivatives, complete positive source theorem, indefinite root
+relation, pairing scope and continuous-critical-root source theorem. Its
+45 controls cover exact signs/packing, six Hessian/radical strata, residual
+sharpness and the protected exceptions. Falsifying either the zero positive
+source or the residual exponent in the ledger is rejected.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -255,6 +279,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_cochain_refinement_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_reference_weight_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_spectral_frame_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_vector_source_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_parent_source_check.py
 ```
 
 ## Preserved original obligations
