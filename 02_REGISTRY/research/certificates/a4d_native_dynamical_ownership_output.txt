@@ -28,6 +28,91 @@
 'D0.Research.NativeDynamicalOwnership.metric_translation_symbol_injective' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_gap_eventually_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_gap_continuity_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_gap_hasDerivAt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.nonconstant_germ_no_primitive_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.affine_field_germ_not_locally_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.faithful_affine_field_cost_not_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.faithful_native_coframe_cost_not_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.calibrated_gap_continuity_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.primitive_nondifferentiable_deriv_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.shrinking_gap_exact_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.shrinking_gap_uniform_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.canonical_centered_probe_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.squared_reading_centered_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.every_centered_readout_has_primitive_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeDynamicalOwnership.action_gap_eventually_constant {P : VerificationProtocol} (A : ActionProtocol P)
+  (x : ℝ → P.State) (t0 : ℝ) (h : ContinuousAt (fun t => A.action (x t0) (x t)) t0) : ∀ᶠ (t : ℝ) in nhds t0, x t = x t0
+D0.Research.NativeDynamicalOwnership.action_gap_continuity_iff {P : VerificationProtocol} (A : ActionProtocol P)
+  (x : ℝ → P.State) (t0 : ℝ) : ContinuousAt (fun t => A.action (x t0) (x t)) t0 ↔ ∀ᶠ (t : ℝ) in nhds t0, x t = x t0
+D0.Research.NativeDynamicalOwnership.action_gap_hasDerivAt_zero {P : VerificationProtocol} (A : ActionProtocol P)
+  (x : ℝ → P.State) (t0 a : ℝ) (h : HasDerivAt (fun t => A.action (x t0) (x t)) a t0) : a = 0
+D0.Research.NativeDynamicalOwnership.nonconstant_germ_no_primitive_derivative {P : VerificationProtocol}
+  (A : ActionProtocol P) (x : ℝ → P.State) (t0 : ℝ) (hx : ¬∀ᶠ (t : ℝ) in nhds t0, x t = x t0) :
+  ¬DifferentiableAt ℝ (fun t => A.action (x t0) (x t)) t0
+D0.Research.NativeDynamicalOwnership.affine_field_germ_not_locally_constant.{u_1} {V : Type u_1} [AddCommGroup V]
+  [Module ℝ V] (u v : V) (hv : v ≠ 0) : ¬∀ᶠ (t : ℝ) in nhds 0, u + t • v = u
+D0.Research.NativeDynamicalOwnership.faithful_affine_field_cost_not_differentiable.{u_1} {P : VerificationProtocol}
+  (A : ActionProtocol P) {V : Type u_1} [AddCommGroup V] [Module ℝ V] (encode : V → P.State)
+  (he : Function.Injective encode) (u v : V) (hv : v ≠ 0) :
+  ¬DifferentiableAt ℝ (fun t => A.action (encode u) (encode (u + t • v))) 0
+D0.Research.NativeDynamicalOwnership.faithful_native_coframe_cost_not_differentiable {P : VerificationProtocol}
+  (A : ActionProtocol P) (N : ℕ) (encode : LocalCoframeField N → P.State) (he : Function.Injective encode)
+  (e v : LocalCoframeField N) (hv : v ≠ 0) : ¬DifferentiableAt ℝ (fun t => A.action (encode e) (encode (e + t • v))) 0
+D0.Research.NativeDynamicalOwnership.calibrated_gap_continuity_iff {P : VerificationProtocol} (A : ActionProtocol P)
+  (x : ℝ → P.State) (t0 a : ℝ) (ha : a ≠ 0) :
+  ContinuousAt (fun t => a * A.action (x t0) (x t)) t0 ↔ ∀ᶠ (t : ℝ) in nhds t0, x t = x t0
+D0.Research.NativeDynamicalOwnership.primitive_nondifferentiable_deriv_zero {P : VerificationProtocol}
+  (A : ActionProtocol P) (x : ℝ → P.State) (t0 : ℝ) (hx : ¬∀ᶠ (t : ℝ) in nhds t0, x t = x t0) :
+  deriv (fun t => A.action (x t0) (x t)) t0 = 0
+D0.Research.NativeDynamicalOwnership.shrinking_gap_exact_error (P : VerificationProtocol) (epsilon : ℝ)
+  (he : 0 < epsilon) (F : P.State → P.State → ℝ) (hF : ∀ (x y : P.State), 0 ≤ F x y)
+  (hdiag : ∀ (x : P.State), F x x = 0) (x y : P.State) :
+  epsilon * (shrinkingGapAction P epsilon he F hF).action x y - F x y = if x = y then 0 else epsilon
+D0.Research.NativeDynamicalOwnership.shrinking_gap_uniform_error (P : VerificationProtocol) (epsilon : ℝ)
+  (he : 0 < epsilon) (F : P.State → P.State → ℝ) (hF : ∀ (x y : P.State), 0 ≤ F x y)
+  (hdiag : ∀ (x : P.State), F x x = 0) (x y : P.State) :
+  |epsilon * (shrinkingGapAction P epsilon he F hF).action x y - F x y| ≤ epsilon
+D0.Research.NativeDynamicalOwnership.canonical_centered_probe_zero (P : VerificationProtocol)
+  (center plus minus : P.State) (hp : center ≠ plus) (hm : center ≠ minus) (epsilon : ℝ) :
+  ((canonicalActionProtocol P).action center plus - (canonicalActionProtocol P).action center minus) / (2 * epsilon) = 0
+D0.Research.NativeDynamicalOwnership.squared_reading_centered_value (P : VerificationProtocol) (q : P.State → ℝ)
+  (k epsilon : ℝ) (he : epsilon ≠ 0) (center plus minus : P.State) (hp : q plus - q center = epsilon)
+  (hm : q minus - q center = -epsilon) :
+  ((squaredReadingAction P q k).action center plus - (squaredReadingAction P q k).action center minus) / (2 * epsilon) =
+    2 * k
+D0.Research.NativeDynamicalOwnership.every_centered_readout_has_primitive_completion (P : VerificationProtocol)
+  (q : P.State → ℝ) (c epsilon : ℝ) (he : epsilon ≠ 0) (center plus minus : P.State) (hp : q plus - q center = epsilon)
+  (hm : q minus - q center = -epsilon) : ∃ A, (A.action center plus - A.action center minus) / (2 * epsilon) = c
 structure D0.Foundation.EndogenousActionQuantum.ActionProtocol (P : VerificationProtocol) : Type
 number of parameters: 1
 fields:

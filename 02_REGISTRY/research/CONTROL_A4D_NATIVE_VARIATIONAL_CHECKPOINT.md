@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`fe116b56f9413cc2cd4e80f375cff1cc50d337f7`, following
-`41ae2916bd1676c45209ea7f347e084c31ae7f09`.
+`a2a2ccae43ec4812ade33db7b0610245e173f4b9`, following
+`fe116b56f9413cc2cd4e80f375cff1cc50d337f7`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -469,6 +469,8 @@ local file or an implicitly merged scientific parent.
 
 31. **Full background source under field frames:** Complete field-frame consumer of one fixed literal mixed-parent family on arbitrary backgrounds. All four owner slots and the rectangular pairing bind to congruent visible operators. The source defect equals minus the contraction of all three actual Euler residuals with the frame generator; full roots, all independent background covectors and joint roots with the same geometric action correspond. Every fixed seed transported solely by invertible field frames has zero full source, even for indefinite or singular M. This closes that source class without selecting a physical gauge or a native action. Distinct transverse seed jets retain an exact source difference one on the same full matter root. The bound norm(A)*norm(r)*norm(z) has an exact vanishing-residual/nonvanishing-defect control. 32 compiled declarations pin 12 D0 sources; 75 exact controls and 17 false-scope mutations pass. Native readout/refinement, transformed constraints, a physical seed law and the independent geometric action remain separate obligations. No physical D0 nonuniqueness, whole-core obstruction, native-Einstein transfer, G0 closure or parent retirement is claimed.
 
+32. **Whole primitive-cost variation boundary:** The direct primitive-cost variation is classified for every actual ActionProtocol and every real state germ: continuity of the identity-based cost is equivalent to local state constancy. A faithful nonzero affine coframe encoding therefore has no genuine derivative; a fixed nonzero calibration does not repair it. Lean totalized deriv equals zero at the nondifferentiable point and cannot itself define an Euler gate. The canonical centered reading is zero, while one fixed squared-reading cost realizes every real centered value on its entire supplied pencil. Arbitrary nonnegative zero-diagonal profiles admit actual primitive completions with shrinking effective gap and uniform error at most delta. This preserves finite-probe and continuum constructions without selecting their profile. The accepted A-PARENT missing history-composition law is consumed, not reopened as a finite-selector search. The full G0 capsule has 75 compiled declarations, 83 transitive D0 pins, 154 exact controls and 43 rejected false-scope ledgers. The independent native history-to-field action, variations, normalization and refinement remain unconstructed. No physical action, physical response nonuniqueness, whole-core NO-GO, native contrast, G0 closure, GR or parent retirement is inferred.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
@@ -477,7 +479,7 @@ are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The nineteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107 and 128 exact controls without
+The nineteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107 and 154 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -553,7 +555,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 117 artifact blobs and 291 distinct artifact/input hashes
+are rejected. All 117 artifact blobs and 292 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -602,9 +604,9 @@ Fourteen false scope ledgers are rejected. All-size Fourier/kernel/heat
 proofs remain analytic. The supported D0 source tree is unchanged;
 the prior successful integration build is reused, and the new capsule
 compiled separately.
-The G0 ownership capsule compiles 61 declarations with 83 transitive D0
+The G0 ownership capsule compiles 75 declarations with 83 transitive D0
 source pins and standard axioms only, with no warnings or sorryAx. Its
-128 exact controls and 32 rejected false scope ledgers preserve the
+154 exact controls and 43 rejected false scope ledgers preserve the
 canonical representative, four actual map premises, and open physical
 response/completeness question. The actual exact-polynomial composition
 premise is fully classified, with a native-cycle counterexample and a
@@ -665,4 +667,6 @@ Native source/Ward, nonlinear joint existence, soundness, recovery and
 physical constraints remain explicit obligations. A revision of the core
 would require a separate discussion; no new action or postulate is added.
 
-The extended existing parent-source capsule now has 32 compiled declarations, 12 transitive D0 pins, 75 exact controls and 17 rejected scope ledgers. The separate G0 transport capsule retains its 61 declarations, 83 pins, 128 controls and 32 scope guards; its updated consumer proof is hash-bound. CONTROL acceptance requires current-head CI and review.
+The extended existing parent-source capsule now has 32 compiled declarations, 12 transitive D0 pins, 75 exact controls and 17 rejected scope ledgers. The existing G0 capsule now has 75 declarations, 83 pins, 154 controls and 43 scope guards; its updated consumer proof is hash-bound. CONTROL acceptance requires current-head CI and review.
+
+The direct-cost result in item 32 consumes the accepted A-PARENT premise and preserves its missing independent history-composition law. The older item 30 counts refer to its previous source slice. Current summary counts are bound to the compiler receipt; stale older ledger summary fields 51/80 were corrected, without changing the valid earlier compiler receipt 61/83.

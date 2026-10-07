@@ -888,6 +888,202 @@ theorem metric_translation_symbol_injective (q v : Role → ℂ)
 #print axioms metric_translation_symbol_injective
 
 
+/-! The actual primitive gap and the existence of native field variations. -/
+
+theorem action_gap_eventually_constant {P : VerificationProtocol} (A : ActionProtocol P)
+    (x : ℝ → P.State) (t0 : ℝ)
+    (h : ContinuousAt (fun t => A.action (x t0) (x t)) t0) :
+    ∀ᶠ t in nhds t0, x t=x t0 := by
+  have hf : ∀ᶠ t in nhds t0, A.action (x t0) (x t)<1 :=
+    h.eventually (gt_mem_nhds (by simpa only [A.action_refl] using (zero_lt_one : (0:ℝ)<1)))
+  filter_upwards [hf] with t ht
+  by_contra hn
+  exact (not_lt_of_ge (A.action_nontrivial _ _ (Ne.symm hn))) ht
+
+/-- Complete classification for every actual ActionProtocol, without smoothness
+or finite-dimensional assumptions on the state type. -/
+theorem action_gap_continuity_iff {P : VerificationProtocol} (A : ActionProtocol P)
+    (x : ℝ → P.State) (t0 : ℝ) :
+    ContinuousAt (fun t => A.action (x t0) (x t)) t0 ↔
+      ∀ᶠ t in nhds t0, x t=x t0 := by
+  constructor
+  · exact action_gap_eventually_constant A x t0
+  · intro h
+    have heq : (fun t => A.action (x t0) (x t)) =ᶠ[nhds t0] fun _ => (0:ℝ) := by
+      filter_upwards [h] with t ht
+      rw [ht,A.action_refl]
+    exact continuousAt_const.congr_of_eventuallyEq heq
+
+/-- A genuine derivative of an identity-based primitive cost can only be zero.
+No conclusion is drawn merely from Lean's totalized `deriv` value. -/
+theorem action_gap_hasDerivAt_zero {P : VerificationProtocol} (A : ActionProtocol P)
+    (x : ℝ → P.State) (t0 a : ℝ)
+    (h : HasDerivAt (fun t => A.action (x t0) (x t)) a t0) : a=0 := by
+  have hc := action_gap_eventually_constant A x t0 h.continuousAt
+  have heq : (fun t => A.action (x t0) (x t)) =ᶠ[nhds t0] fun _ => (0:ℝ) := by
+    filter_upwards [hc] with t ht
+    rw [ht,A.action_refl]
+  have hz : HasDerivAt (fun t => A.action (x t0) (x t)) 0 t0 :=
+    (hasDerivAt_const t0 (0:ℝ)).congr_of_eventuallyEq heq
+  exact h.unique hz
+
+theorem nonconstant_germ_no_primitive_derivative {P : VerificationProtocol}
+    (A : ActionProtocol P) (x : ℝ → P.State) (t0 : ℝ)
+    (hx : ¬ ∀ᶠ t in nhds t0, x t=x t0) :
+    ¬ DifferentiableAt ℝ (fun t => A.action (x t0) (x t)) t0 := by
+  intro hd
+  exact hx (action_gap_eventually_constant A x t0 hd.continuousAt)
+
+/-- The owned primitive action quantum applies to a faithful field-state
+embedding only if that embedding exists. Every nonzero affine field germ
+then violates differentiability of the identity-based transition cost. -/
+theorem affine_field_germ_not_locally_constant {V : Type*}
+    [AddCommGroup V] [Module ℝ V] (u v : V) (hv : v≠0) :
+    ¬ ∀ᶠ t in nhds (0:ℝ), u+t • v=u := by
+  intro h
+  have hz : ∀ᶠ t in nhds (0:ℝ), t=0 := by
+    filter_upwards [h] with t ht
+    have htv : t • v=0 := add_left_cancel (show u+t • v=u+0 by simpa using ht)
+    exact (smul_eq_zero.mp htv).resolve_right hv
+  have hi : HasDerivAt (fun t : ℝ => t) 0 0 :=
+    (hasDerivAt_const (0:ℝ) (0:ℝ)).congr_of_eventuallyEq hz
+  have hn := (hasDerivAt_id (0:ℝ)).unique hi
+  norm_num at hn
+
+
+theorem faithful_affine_field_cost_not_differentiable {P : VerificationProtocol}
+    (A : ActionProtocol P) {V : Type*} [AddCommGroup V] [Module ℝ V]
+    (encode : V → P.State) (he : Function.Injective encode)
+    (u v : V) (hv : v≠0) :
+    ¬ DifferentiableAt ℝ (fun t : ℝ => A.action (encode u) (encode (u+t • v))) 0 := by
+  have hx : ¬ ∀ᶠ t in nhds (0:ℝ), encode (u+t • v)=encode (u+(0:ℝ) • v) := by
+    intro h
+    apply affine_field_germ_not_locally_constant u v hv
+    filter_upwards [h] with t ht
+    simpa using he ht
+  simpa using nonconstant_germ_no_primitive_derivative A (fun t => encode (u+t • v)) 0 hx
+
+theorem faithful_native_coframe_cost_not_differentiable {P : VerificationProtocol}
+    (A : ActionProtocol P) (N : ℕ) (encode : LocalCoframeField N → P.State)
+    (he : Function.Injective encode) (e v : LocalCoframeField N) (hv : v≠0) :
+    ¬ DifferentiableAt ℝ (fun t : ℝ => A.action (encode e) (encode (e+t • v))) 0 :=
+  faithful_affine_field_cost_not_differentiable A encode he e v hv
+
+theorem calibrated_gap_continuity_iff {P : VerificationProtocol} (A : ActionProtocol P)
+    (x : ℝ → P.State) (t0 a : ℝ) (ha : a≠0) :
+    ContinuousAt (fun t => a*A.action (x t0) (x t)) t0 ↔
+      ∀ᶠ t in nhds t0, x t=x t0 := by
+  rw [← action_gap_continuity_iff A x t0]
+  constructor
+  · intro h
+    have h' := h.const_mul a⁻¹
+    simpa only [← mul_assoc, inv_mul_cancel₀ ha, one_mul] using h'
+  · intro h
+    exact h.const_mul a
+
+/-- A zero `deriv` at a discontinuous cost is Lean's totalization, not an
+Euler equation. The non-differentiability premise is proved, not supplied. -/
+theorem primitive_nondifferentiable_deriv_zero {P : VerificationProtocol}
+    (A : ActionProtocol P) (x : ℝ → P.State) (t0 : ℝ)
+    (hx : ¬ ∀ᶠ t in nhds t0, x t=x t0) :
+    deriv (fun t => A.action (x t0) (x t)) t0=0 :=
+  deriv_zero_of_not_differentiableAt (nonconstant_germ_no_primitive_derivative A x t0 hx)
+
+/-- Explicit shrinking-gap countercontrol for arbitrary nonnegative target
+profiles. This is a completion of the primitive interface, not a selected
+native physical action or a native refinement law. -/
+def shrinkingGapAction (P : VerificationProtocol) (epsilon : ℝ) (he : 0<epsilon)
+    (F : P.State → P.State → ℝ) (hF : ∀ x y, 0≤F x y) : ActionProtocol P :=
+  actionFromExcess P (fun xy => ⟨F xy.val.1 xy.val.2 / epsilon,
+    div_nonneg (hF _ _) (le_of_lt he)⟩)
+
+theorem shrinking_gap_exact_error (P : VerificationProtocol)
+    (epsilon : ℝ) (he : 0<epsilon) (F : P.State → P.State → ℝ)
+    (hF : ∀ x y, 0≤F x y) (hdiag : ∀ x, F x x=0) (x y : P.State) :
+    epsilon*(shrinkingGapAction P epsilon he F hF).action x y-F x y =
+      if x=y then 0 else epsilon := by
+  by_cases hxy : x=y
+  · subst y
+    simp [ActionProtocol.action_refl,hdiag]
+  · simp only [shrinkingGapAction,actionFromExcess,dif_neg hxy,if_neg hxy]
+    field_simp [ne_of_gt he]
+    ring
+
+theorem shrinking_gap_uniform_error (P : VerificationProtocol)
+    (epsilon : ℝ) (he : 0<epsilon) (F : P.State → P.State → ℝ)
+    (hF : ∀ x y, 0≤F x y) (hdiag : ∀ x, F x x=0) (x y : P.State) :
+    |epsilon*(shrinkingGapAction P epsilon he F hF).action x y-F x y|≤epsilon := by
+  rw [shrinking_gap_exact_error P epsilon he F hF hdiag]
+  split_ifs <;> simp [abs_of_pos he,le_of_lt he]
+
+/-- Centered finite readings can exist without an infinitesimal primitive
+derivative: the canonical profile gives exactly zero at two distinct ends. -/
+theorem canonical_centered_probe_zero (P : VerificationProtocol)
+    (center plus minus : P.State) (hp : center≠plus) (hm : center≠minus)
+    (epsilon : ℝ) :
+    ((canonicalActionProtocol P).action center plus-
+      (canonicalActionProtocol P).action center minus)/(2*epsilon)=0 := by
+  simp [canonicalActionProtocol,hp,hm]
+
+def squaredReadingAction (P : VerificationProtocol) (q : P.State → ℝ) (k : ℝ) :
+    ActionProtocol P := actionFromExcess P
+  (fun xy => ⟨(1+k*(q xy.val.2-q xy.val.1))^2,sq_nonneg _⟩)
+
+/-- One fixed cost profile realizes this centered value at every separation;
+the action is not fitted separately at each epsilon. -/
+theorem squared_reading_centered_value (P : VerificationProtocol)
+    (q : P.State → ℝ) (k epsilon : ℝ) (he : epsilon≠0)
+    (center plus minus : P.State)
+    (hp : q plus-q center=epsilon) (hm : q minus-q center= -epsilon) :
+    ((squaredReadingAction P q k).action center plus-
+      (squaredReadingAction P q k).action center minus)/(2*epsilon)=2*k := by
+  have hcp : center≠plus := by
+    intro hc; subst plus; simp at hp; exact he hp.symm
+  have hcm : center≠minus := by
+    intro hc; subst minus; simp at hm; exact he hm
+  simp only [squaredReadingAction,actionFromExcess,dif_neg hcp,dif_neg hcm,hp,hm]
+  field_simp [he]
+  ring
+
+theorem every_centered_readout_has_primitive_completion (P : VerificationProtocol)
+    (q : P.State → ℝ) (c epsilon : ℝ) (he : epsilon≠0)
+    (center plus minus : P.State)
+    (hp : q plus-q center=epsilon) (hm : q minus-q center= -epsilon) :
+    ∃ A : ActionProtocol P,
+      (A.action center plus-A.action center minus)/(2*epsilon)=c := by
+  refine ⟨squaredReadingAction P q (c/2),?_⟩
+  rw [squared_reading_centered_value P q (c/2) epsilon he center plus minus hp hm]
+  ring
+
+#print axioms action_gap_eventually_constant
+#print axioms action_gap_continuity_iff
+#print axioms action_gap_hasDerivAt_zero
+#print axioms nonconstant_germ_no_primitive_derivative
+#print axioms affine_field_germ_not_locally_constant
+#print axioms faithful_affine_field_cost_not_differentiable
+#print axioms faithful_native_coframe_cost_not_differentiable
+#print axioms calibrated_gap_continuity_iff
+#print axioms primitive_nondifferentiable_deriv_zero
+#print axioms shrinking_gap_exact_error
+#print axioms shrinking_gap_uniform_error
+#print axioms canonical_centered_probe_zero
+#print axioms squared_reading_centered_value
+#print axioms every_centered_readout_has_primitive_completion
+#check action_gap_eventually_constant
+#check action_gap_continuity_iff
+#check action_gap_hasDerivAt_zero
+#check nonconstant_germ_no_primitive_derivative
+#check affine_field_germ_not_locally_constant
+#check faithful_affine_field_cost_not_differentiable
+#check faithful_native_coframe_cost_not_differentiable
+#check calibrated_gap_continuity_iff
+#check primitive_nondifferentiable_deriv_zero
+#check shrinking_gap_exact_error
+#check shrinking_gap_uniform_error
+#check canonical_centered_probe_zero
+#check squared_reading_centered_value
+#check every_centered_readout_has_primitive_completion
+
 #print ActionProtocol
 #print VerificationContract
 #print physicalMovingWard_of_constitutiveAction
