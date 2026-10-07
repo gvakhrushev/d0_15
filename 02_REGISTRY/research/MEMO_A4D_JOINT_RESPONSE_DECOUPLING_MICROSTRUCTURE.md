@@ -4,6 +4,32 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [actual weighted Hodge–Dirac follow-up](A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md)
+constructs the documented weighted adjoint on the real D0 cochains instead
+of relying on the old Boolean owner. Thirty-four propositions compile
+with 49 transitive D0 pins and standard axioms only; the two finite CAR
+leaves and actual nilpotencies are rebuilt by kernel reduction. The full
+mixed metric binding and all ten derivatives are retained. Its direct
+flat Lorentz continuation has nonconstant null modes and negative spatial
+modes, so neither positive Hilbert self-adjointness nor the counting
+constant-only kernel transfers. At L=4 the Dirac and square kernels have
+dimensions 232 and 448. At each fixed t>0 the normalized ordinary heat
+trace is at least 4608*t^3*L^2 and diverges. 107 exact controls
+include full periodic cochain matrices at L=2,4,8 and all 24 Role orders.
+The actual supplied spectral-power owner now binds to the full geometric
+operator moments. Every fixed finite degree with arbitrary scale-invariant
+mesh/shape/link coefficients and a separate arbitrary common volume profile
+fails the paired Einstein contrast. A binomial annihilator at p+2 fixed
+metric scales kills all native moment terms exactly but leaves the physical
+anchor 1/(p+2). The maximum total transfer error is at least
+9*pi^2*h^(1/3)/(400*(p+2)*2^(p+2)) eventually, including O(h) recording
+and refinement errors. Coefficients need no boundedness assumption.
+Unbounded degree, scale-dependent coefficients, density insertions inside
+traces and independently owned domains excluding the probes are protected.
+Fourteen false scope ledgers are rejected.
+These operator statements do not select physical matter or an action,
+exclude every alternative spectral prescription, or close any parent.
+
 The [coframe-coupled Hodge follow-up](A4D_NATIVE_COUPLED_HODGE_SCALE_BOUNDARY.md)
 now treats a genuine exception to coframe blindness. Actual degree-two
 Hodge weights and dressed links are invariant under uniform raw scaling,
