@@ -42,9 +42,10 @@
         "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md",
         "02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md",
         "02_REGISTRY/research/A4D_NATIVE_CENTERED_METRIC_LIFT.md",
-        "02_REGISTRY/research/A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md"
+        "02_REGISTRY/research/A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md",
+        "02_REGISTRY/research/A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md"
       ],
-      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used. The nonlinear feedback formula does not select its supplied profile: an exact exponential encoding realizes arbitrary input actions. Its old Boolean source and finite Higgs capstones are not completeness theorems. The complete positive point-state class under actual coordinatewise Role refinement has an atomic local-volume limit; direct physical placement needs only fixed smooth doubling-test consistency for the obstruction. These state/volume hypotheses are conditional on using that physical arrow, not inferred from the action-contrast bound or imposed on all field states. The actual centered coframe-to-Gram map now has explicit smooth metric and all-ten-probe lifts with O(h^2) corrections and bounds derived from the declared smooth preparation. The transported extension now supplies an actual affine Lorentz link readout, exact joint raw/link variations and complete cycle-holonomy fiber classification. Smooth native data map to corrected physical coframes/links and all ten metric plus 24 connection variations. Action/source/refinement transfer, native interlevel admission and coupled on-shell equations remain open.",
+      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used. The nonlinear feedback formula does not select its supplied profile: an exact exponential encoding realizes arbitrary input actions. Its old Boolean source and finite Higgs capstones are not completeness theorems. The complete positive point-state class under actual coordinatewise Role refinement has an atomic local-volume limit; direct physical placement needs only fixed smooth doubling-test consistency for the obstruction. These state/volume hypotheses are conditional on using that physical arrow, not inferred from the action-contrast bound or imposed on all field states. The actual centered coframe-to-Gram map now has explicit smooth metric and all-ten-probe lifts with O(h^2) corrections and bounds derived from the declared smooth preparation. The transported extension now supplies an actual affine Lorentz link readout, exact joint raw/link variations and complete cycle-holonomy fiber classification. Smooth native data map to corrected physical coframes/links and all ten metric plus 24 connection variations. Action/source/refinement transfer, native interlevel admission and coupled on-shell equations remain open. The existing connection scalar functionals cannot complete this arrow under coframe-blind argument bindings: the corrected homothetic experiment has exact native zero contrast and nonzero Einstein contrast. The scoped class explicitly retains coframe-dependent and constraint exceptions.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -836,6 +837,32 @@
         "native_centered_metric_lift",
         "probe_law"
       ]
+    },
+    {
+      "id": "native_connection_action",
+      "scope": "All explicitly coframe-blind native scalar factorizations I_N(F,R,z)=Phi_h(R,z) admitting the displayed transported homothetic probes; actual connection action instances and Lorentz positivity boundary.",
+      "hypotheses": [
+        "The native scalar and its retained argument binding are independent of the free raw coframe.",
+        "Uniform positive coframe scaling with fixed links and retained variables is an admitted native probe.",
+        "The physical comparison uses the pinned corrected smooth Cayley/half-transport preparation, not an asserted native root.",
+        "Total calibrated recording/refinement error is O(h)."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Gauge/YangMillsKillingPositivity.lean",
+        "03_FORMALIZATION/D0/Gauge/MatrixRepGaugeTransform.lean",
+        "03_FORMALIZATION/D0/Gauge/NonAbelianSeamObstructionGap.lean",
+        "02_REGISTRY/research/A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_connection_action.lean",
+        "02_REGISTRY/research/certificates/a4d_native_connection_action_check.py"
+      ],
+      "verification": "Twenty compiled propositions and 43 transitive source pins bind the actual action instances, all-size polarization/derivative and transported homothety. Analytically native contrast is zero while physical contrast is -3*pi^2*h^(1/3)/50+O(h^(4/3)), for arbitrary Phi and coefficients. Existing positivity requires Euclidean skew or a nonpositive supplied diagonal; Lorentz trace has signature (3,3). Native on-shell, coframe-dependent exceptions, refinement and full-core completeness remain open. The specifically tested matrix-action/odd-plaquette binding has exact identity-link levelwise roots for every coframe. A curved native midpoint metric limit is non-Einstein and has a physical Euler row/h tending to -2*pi/5, so native stationarity does not imply physical O(h^2) preparation in this class. All Lorentz-invariant symmetric quadratic curvature forms are classified by rank-19 conditions on 21 coefficients; every nonzero form has signature (3,3). A general continuous simultaneous-Lorentz-invariant connection-only scalar takes its flat value on every common-null-generator link field, including curved fields and nonlocal scalars. Criticality needs the extra differentiable global-minimum premise, which the indefinite trace action does not satisfy. The actual indefinite matrix action has a complete full-gate classification on the common-N sector: E=-2 Tr(NG) D^T D a, hence stationarity exactly for zero scalar curl; all transverse variations are retained. Eighty-four exact controls include 2304 finite factor tangents. The all-size analytic proof is separate from the L=2 rank-45 replay.",
+      "status": "PROVED_SCOPED_CONTRAST_OBSTRUCTION_PENDING_CONTROL",
+      "terminal_class": "NO-GO_FOR_SPECIFIED_COFRAME_BLIND_CLASS",
+      "required_terminal": "CONTROL_ACCEPTED_SCOPED_OBSTRUCTION",
+      "depends_on": [
+        "native_transported_connection",
+        "probe_law"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -867,5 +894,6 @@
   "logdet_source_input_head": "32e7a1da7c191ef8567647d56d69995b475a84bb",
   "measure_refinement_input_head": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
   "centered_metric_lift_input_head": "98269b4ffbd19338a2b162d4e14ea8c4ec08609a",
-  "transported_connection_input_head": "fc12fc7800eff1a0fb74d73c9d920128cbc9450f"
+  "transported_connection_input_head": "fc12fc7800eff1a0fb74d73c9d920128cbc9450f",
+  "connection_action_input_head": "59fef13f804d4c5706ef86fe6df01a53f214c565"
 }

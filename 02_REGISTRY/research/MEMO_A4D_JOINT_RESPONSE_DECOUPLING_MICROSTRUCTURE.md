@@ -4,6 +4,39 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [connection-action boundary](A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md)
+now tests the existing native matrix Yang-Mills, supplied Killing and seam
+functionals after the actual native link construction. Every coframe-blind
+factorization I_N(F,R,z)=Phi_h(R,z) admitting the stated homothetic probes
+has zero native contrast against physical
+-3*pi^2*h^(1/3)/50+O(h^(4/3)). The result permits arbitrary nonlinear Phi
+and mesh coefficients; O(h) recording/refinement errors cannot remove it.
+It does not assert native stationarity of the prepared Levi-Civita links
+or exclude independently owned coframe dependence and constraints.
+Twenty compiled propositions with 43 transitive source pins bind actual
+scalar definitions, transported Gram scaling and Lorentz trace signature.
+For the explicitly tested matrix-action binding to odd plaquette curvature,
+identity links and arbitrary raw coframes are exact full levelwise roots.
+The curved midpoint readout is non-Einstein and one physical connection
+Euler row/h tends to -2*pi/5, excluding the required O(h^2) preparation.
+This does not include additional native or interlevel constraints.
+Euclidean positivity cannot be applied after silently discarding boosts;
+the Bianchi-named owner proves skewness closure, not physical divergence.
+The native action/source/solution bridge and all parent terminals stay open.
+
+The full Lorentz-invariant symmetric quadratic curvature family is also
+classified: all nonzero coefficients have signature (3,3). More generally,
+continuity and simultaneous Lorentz invariance force every connection-only
+scalar to take its flat value on an entire curved common-null-generator
+link sector. Only an additional differentiable global-minimum hypothesis
+makes that sector stationary; zero indefinite action value is not enough.
+This applies to nonlocal functions but not to coupled coframe/observer data.
+For the actual indefinite matrix action, the complete common-null-generator
+sector instead satisfies the full link gate exactly when its scalar curl
+is zero. The transverse rows E=-2 Tr(NG) D^T D a are retained; zero action
+alone never substitutes for the complete equations. The new package has
+84 exact controls, including all 2304 factor tangents of the L=2 lattice.
+
 The [native transported connection realization](A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md)
 now binds actual affine Lorentz pull links to physical link matrices and
 classifies every finite transported-center fiber by its cycle holonomy.

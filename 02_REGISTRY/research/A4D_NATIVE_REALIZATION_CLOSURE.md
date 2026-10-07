@@ -165,6 +165,39 @@ The exact flat joint differential also distinguishes metric-only reachability
 from independently prescribed metric/link targets; the latter retains the
 even-grid cokernel 4L^3+6L^2. Smooth approximate lifts do not remove it.
 
+The [connection-action classification](A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md)
+now excludes every explicitly coframe-blind factorization I_N(F,R,z)=Phi_h(R,z)
+that admits the displayed smooth homothetic probes. Actual transported Gram
+scaling realizes Q_h(t)=(1+t)Q_h(0) at fixed Levi-Civita links. Its native
+contrast is zero for arbitrary Phi and coefficients, while the physical
+half-contrast is -3*pi^2*h^(1/3)/50+O(h^(4/3)). O(h) recording/refinement
+errors cannot repair the gap. The existing matrix Yang-Mills, supplied
+Killing and seam functionals enter this class only under the explicitly
+stated coframe-independent argument binding. Prepared links are not
+declared native roots. Own coframe dependence and independently owned
+constraints remain protected exceptions. The literal Lorentz trace square
+has signature (3,3); the Euclidean-skew positivity premise discards all
+boosts, and a fixed Frobenius replacement fails Lorentz invariance.
+
+For the explicitly tested matrix-action binding to odd plaquette curvature,
+identity links and arbitrary raw coframes are exact full levelwise roots.
+The curved midpoint readout is non-Einstein and one physical connection
+Euler row/h tends to -2*pi/5, excluding the required O(h^2) preparation.
+This does not include additional native or interlevel constraints.
+
+The full Lorentz-invariant symmetric quadratic curvature family is also
+classified: all nonzero coefficients have signature (3,3). More generally,
+continuity and simultaneous Lorentz invariance force every connection-only
+scalar to take its flat value on an entire curved common-null-generator
+link sector. Only an additional differentiable global-minimum hypothesis
+makes that sector stationary; zero indefinite action value is not enough.
+This applies to nonlocal functions but not to coupled coframe/observer data.
+For the actual indefinite matrix action, the complete common-null-generator
+sector instead satisfies the full link gate exactly when its scalar curl
+is zero. The transverse rows E=-2 Tr(NG) D^T D a are retained; zero action
+alone never substitutes for the complete equations. The new package has
+84 exact controls, including all 2304 factor tangents of the L=2 lattice.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
@@ -202,6 +235,7 @@ than treating comments or theorem names as physical equations.
 | `Geometry.A4DLocatedMatterCellEnergy` | Existing supplied weights `W_c=I+H(e)+c M_q(e)` on full uncentered coframes; no independent action added here | Generic scalar block and actual exterior-unit binding; all c fail raw Lorentz descent with sharp two-probe defect 5/86 | At `e=-I/2`, c=1 has one constant scalar kernel and range gap O(L^-2); c=2 has uniform gap 1/2 | A shape-sensitive weight need not descend to physical metric data. Coefficient dependence changes kernel/range, but neither coefficient supplies a physical source/Ward or native action. |
 | `Geometry.A4DConstitutiveKernelClassification` | Supplied symmetric `H`, field and unselected `alpha`; `Q=1+H+alpha H^2` | Existing strict positivity for `alpha>1/4` forces zero field at its full field gate; at `alpha=1/4` kernel fields have zero first operator source | No coefficient or physical matter law is selected | The candidate binding H=actual flux matrix fails raw Lorentz action descent for every alpha, even on two fixed curved backgrounds. Other maps into supplied H remain open. Field-only roots do not imply a zero pointwise source. |
 | `Algebra.GaugeKineticPositivity`, `Matter.GaugeCurvatureOrigin`, `Matter.VectorOperatorOrigin` | Existing `-c Tr([D,A]^2)` on finite real skew matrices, nonzero c, full independent field variations | Actual first variations and supplied-source gate compiled; full free gate iff `[D,A]=0`; its background response `[A,[D,A]]` is zero | Supplied skew J is solvable iff orthogonal to the commutant; actual simultaneous-conjugation Ward proved. No physical refinement is defined | A physical D(g) and local metric source are not selected. Constant rank and bounded/nonsingular D do not yield a uniform inverse: exact fixed-source family has inverse delta^-2. Kernel shifts may change background response without changing sourced value and need not be gauge. |
+| `Gauge.YangMillsKillingPositivity`, `MatrixRepGaugeTransform`, `NonAbelianSeamObstructionGap` | Supplied curvature/pairing or seam matrix; existing scalar actions, with their actual positivity hypotheses printed | Literal trace instance, all-size polarization/derivative and transported homothety compile. Coframe-independent bindings fail the curved prepared contrast for every coefficient/function in the stated class | No native physical curvature binding, matter law or interlevel admission is selected. The Lorentz trace square is indefinite; Euclidean skew removes 12 of the 24 link directions | Coframe dependence must be independently constructed. Zero curvature-action value is not stationarity, and the Bianchi-named actual proposition proves skewness closure rather than physical divergence. |
 | `Gravity.A4DLinearizedMetricResponse` | Finite Euclidean symmetric tensor seed and literal linear response | Quadratic action, exact first variation and gauge nullity | Algebraic finite construction, explicitly not an Einstein tensor | A standalone quadratic affine metric profile cannot reproduce the nonlinear third variation of the curved Gram pencil. |
 | `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001` owners | Supplied reference weight, second jet and covariance/composition hypotheses | Exact second-order identities and explicit coefficient nonselection | Finite algebraic covariance | The registry's current notes correctly retain the supplied Hessian, unselected coefficient and absent physical Einstein/stress interpretation. |
 | `A4D_NATIVE_FINITE_PROBE_COMPLETION.md` | Physical coframe/links and the naked-star action; independent endpoint preparations with full 24-row residual bound | $T_{h,h^{1/3}}=DI(g)[V]+O_V(h^{2/3})$, all ten slots, owner curvature sign | Constructed archive record/operator refinement; independently fixed affine source | A measured action law is not native on-shell stationarity, a native source or physical state/variation mapping. |
