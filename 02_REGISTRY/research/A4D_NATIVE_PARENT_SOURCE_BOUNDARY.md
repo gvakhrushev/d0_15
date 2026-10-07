@@ -1,7 +1,8 @@
-# Existing mixed parent: full source, indefinite radical and approximate roots
+# Existing mixed parent: full source, field-frame universality and transverse seed boundary
 
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, PR #310.
-Input: `8b96338505395dabf509e13422089d89685483b8`.
+Initial source classification: `8b96338505395dabf509e13422089d89685483b8`.
+Field-frame continuation input: `41ae2916bd1676c45209ea7f347e084c31ae7f09`.
 Status: **scoped owner/source classification; physical matter, positive GR
 and global closure remain OPEN**. No native action or constraint is added.
 
@@ -275,10 +276,240 @@ The older homogeneous identity still independently bounds
 and the pointwise source error (12) are different estimates. Neither proves
 the requested native-to-Einstein contrast transfer.
 
-## 6. Verification and remaining physical arrow
+## 6. Complete field-frame class: full background source and joint roots
 
-The [Lean capsule](certificates/a4d_native_parent_source.lean) prints 16
-propositions' transitive axioms and seven actual types, with only `propext`,
+This section resolves a physical-consumer question left by the complete
+[flat transport classification](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md#6-complete-flat-translation-lift-family-including-its-stabilizer):
+when does changing the representation of the fields change the background
+equations? The result applies on **any differentiable background domain**,
+including independent coframe and link directions. It does not require that
+the background lie on the flat translation orbit. Its complete declared
+class consists of invertible linear reparametrizations of one fixed family
+of the existing mixed-parent action. It does not classify all D0 actions.
+
+### 6.1 Literal transport of every supplied owner slot
+
+Let the background be \(b\), and let \(Q_0(b),Q_1(b),T_3(b),T_4(b)\)
+be invertible maps on the four finite owner slots. Write \(Q=Q_0\),
+\(P=Q^{-1}\). Transform the existing data by
+
+\[
+\begin{aligned}
+ d'_P&=Q_1d_PP,&d'_D&=T_4d_DT_3^{-1},\\
+ S'_0&=T_4S_0P,&S'_1&=T_3S_1Q_1^{-1},&R'&=P^TRT_4^{-1}.
+\end{aligned}                                                       \tag{13}
+\]
+
+Multiplying the actual owner compositions gives, with no inverse of a star,
+no positive-definiteness assumption, and possibly rectangular \(R\),
+
+\[
+ M'=R'S'_0=P^TMP,\qquad
+ K'=R'd'_DS'_1d'_P=P^TKP.                                      \tag{14}
+\]
+
+Thus all intermediate frame choices cancel. The Lean definitions
+`reframeData`, `reframePairing` and theorem `reframed_visible_operators`
+establish (13)–(14) for the literal `FinitePrimalDualHodgeData` in every
+finite dimension. `literal_reframed_owner` proves
+
+\[
+ F(M',K';Q\psi,Q\chi,Q\lambda)=F(M,K;\psi,\chi,\lambda).       \tag{15}
+\]
+
+This is a change of coordinates in an existing action. It does not install
+(13) as a new native transport or assert its physical admissibility. If a
+native pairing is fixed, (13) is admissible only when its transformed
+pairing coincides with that fixed pairing, or an existing rule admits its
+transformation. Holding an arbitrary \(R\) fixed can break (15).
+
+### 6.2 Complete field roots and the off-shell source defect
+
+At corresponding field states \(z'=(Q\psi,Q\chi,Q\lambda)\), the three
+actual Euler covectors obey \(r'_i=P^T r_i\). Equivalently, their values on
+an arbitrary test \(v'\) equal the old covectors on \(Pv'\). Invertibility
+therefore gives a bijection of **all full field roots**. This is compiled
+as `full_gate_congruence` using `FullFieldGate`, which was defined by the
+three independent derivatives before any source assertion. Symmetric
+\(M\) may be positive, indefinite or singular.
+
+For any background tangent \(v\), put
+
+\[
+ U=D_bM[v],\quad V=D_bK[v],\quad A=P\,D_bQ[v].
+\]
+
+Differentiating \(QP=1\) gives \(D_bP[v]=-AP\), so the actual fixed-new-field
+operator derivatives are
+
+\[
+ D_bM'[v]=P^T(U-A^TM-MA)P,\quad
+ D_bK'[v]=P^T(V-A^TK-KA)P.                                    \tag{16}
+\]
+
+Substitution into (4), retaining all three field residuals, gives the exact
+off-shell identity
+
+\[
+ \boxed{\sigma'_v(z')-\sigma_v(z)=
+   -r_\psi^TA\psi-r_\chi^TA\chi-r_\lambda^TA\lambda.}          \tag{17}
+\]
+
+Proof: the first new kinetic term is
+\(-\tfrac12\chi^T(A^TM+MA)\chi=-(A\chi)^TM\chi\), since \(M\)
+is symmetric. The remaining terms are
+\(-\lambda^TA^TM\chi-\lambda^TMA\chi+
+\lambda^TA^TK\psi+\lambda^TKA\psi\). Grouping them with (2)
+gives exactly (17), including its minus signs. The generic Lean theorem
+`frame_off_shell_defect` proves this equality; `response_congruence`
+handles arbitrary frame values, not only \(Q=1\).
+
+The source is an actual background derivative. In addition to the earlier
+`constitutive_first_variation`, `simultaneous_background_first_variation`
+compiles the derivative of the literal parent under simultaneous operator
+and field variations. In (16), taking the old-coordinate field variation
+\((-A\psi,-A\chi,-A\lambda)\) recovers (17). General differentiable
+\(Q(b)\) uses the ordinary finite-dimensional chain rule and the explicitly
+derived inverse derivative above; that analytic passage is not claimed as
+a separately compiled global calculus theorem.
+
+### 6.3 All background equations, not only a Ward direction
+
+On the full field gate, (17) implies
+
+\[
+                     \sigma'_v(z')=\sigma_v(z)\quad\text{for every }v.\tag{18}
+\]
+
+The quantifier includes all independent admitted coframe, connection and
+other background variations. It does not come from a divergence identity
+or from checking only gauge directions. `full_gate_background_source`
+is the compiled pointwise statement. Thus no extra contribution to the
+source can be obtained solely from the background derivative of a field
+frame. No smooth choice of roots as \(b\) varies is needed for this result;
+isolated indefinite full roots are included.
+
+For the **same** geometric action \(G(b)\), combine the full matter gate
+with the independently derived equations
+\(D_bG[v]+\sigma_v=0\) for every admitted \(v\). The map
+\((b,z)\mapsto(b,Q(b)z)\) bijects the complete joint root sets. Its
+projection to background states is identical. This is the content of
+`joint_gate_frame_equivalence`, which takes the actual geometric derivative
+as a fixed input; it neither assumes matter-response vanishing nor invents
+a native gate. If the metric readout is an unchanged function of \(b\),
+the projected metric solution set and its source are the same.
+
+**Complete fixed-seed corollary.** If the seed operators \(M,K\) are
+independent of the background and all its dependence is the field-frame
+transport (13), then \(U=V=0\). Equation (18) gives zero source in **every**
+background direction at every full field root. This is compiled as
+`transported_fixed_seed_source_zero`, with no positivity or invertibility
+of \(M\). The full matter gate therefore contributes no background Euler
+condition beyond those of the unchanged geometric action. In the standalone
+parent, every admitted background has at least its zero-field joint root;
+this family cannot select Einstein backgrounds. This is a complete conclusion
+for the fixed-seed field-frame class, not all nonlinear constitutive laws,
+additional action terms or constrained native matter sectors.
+
+Equation (15) also makes the action difference between any two corresponding
+endpoint states exactly equal, even off shell and even with different
+frames at the endpoints. `corresponding_endpoint_contrast` proves this
+finite identity. A probe with fields held fixed in the new coordinates
+need not hold them fixed in the old coordinates. Equality for corresponding
+states does not prove the native-to-Einstein contrast estimate or manufacture
+an admitted probe/refinement map.
+
+For two transport presentations with a common seed action and corresponding
+isotropy data, an intertwiner which reparametrizes **all** fields, four
+operators, pairing and constraints as above contributes no new background
+Euler equation on the full matter gate. Hence this frame freedom in the
+action presentation disappears from the joint background equations. It is
+not a proof that every transport/intertwiner is an owned physical gauge or
+that all free native actions have the same physical operators.
+
+### 6.4 Approximate roots and the required uniform estimate
+
+In matching Euclidean block norms, (17) gives
+
+\[
+ |\sigma'_v-\sigma_v|
+ \le \|r\|\,\|\operatorname{diag}(A,A,A)z\|
+ \le \|A\|\,\|r\|\,\|z\|.                                  \tag{19}
+\]
+
+This is Cauchy–Schwarz and the operator norm inequality; positivity and an
+inverse of \(M\) are unnecessary. Normalized lattice norms require the
+same normalization on action and residual covectors. To replace the norms
+in (19) by new-frame norms uniformly in \(h\), bounds on \(Q_h,P_h\)
+are also needed. None is supplied by pointwise invertibility.
+
+The missing logarithmic-derivative bound is a real obstruction: take
+\(M=1,K=h,z=(1,h,-h)\), and the smooth everywhere invertible scalar frame
+\(Q_h(q)=\exp(q/h^2)\). At \(q=0\), \(Q_h=1\),
+\(r=(h^2,0,0)\to0\), fields are bounded, and \(A_h=h^{-2}\).
+With seed background derivatives zero, (17) gives
+\(\sigma'_q-\sigma_q=-1\). Thus vanishing residuals and bounded frame
+values at a point do not imply convergence of the source. The exact checker
+reproduces the sign and the sharp contraction in (19). This bound is an
+analytic finite-dimensional estimate, not a compiled uniform refinement
+theorem.
+
+### 6.5 What remains physically significant, with an exact control
+
+A transverse constitutive law is not determined by (13). Two fixed seed
+families can have the same values and the same complete field root at one
+background while having distinct background Euler covectors there. Take
+
+\[
+ M=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad
+ K_a(q)=\begin{pmatrix}0&0\\0&1\end{pmatrix},\quad
+ K_b(q)=\begin{pmatrix}0&q\\q&1\end{pmatrix},\quad
+ \psi=(0,1)^T,\quad\chi=(1,0)^T,\quad\lambda=-\chi.
+\]
+
+At \(q=0\), both actions have exactly the same \(M,K,z\) and all three
+field residuals vanish. But \(\sigma_a(\partial_q)=0\) and
+\(\sigma_b(\partial_q)=1\). Every smooth invertible field frame leaves
+this difference equal to one, by (18). For a common geometric derivative
+zero, this particular full matter root is a joint background root only in
+the first family. The second family has the rank-change feature already
+classified in Section 4; no smooth family of its nonzero roots is assumed.
+
+These are realizations of the **supplied-data parent interface**, for example
+\(R=d_P=d_D=1,S_0=M,S_1=K\) on equal two-dimensional slots. They are exact
+controls on input sufficiency, not two asserted physical D0 matter theories.
+The parameter \(q\) has not been identified with an owned transverse metric
+variation. If one wants that physical identification, its native map and
+admission theorem must first be supplied. Consequently this result distinguishes
+Euler families at the interface and does not assert physical D0 nonuniqueness.
+
+The controls additionally retain:
+
+* A noninvertible frame can create spurious full roots.
+* Omitting the field equation leaves a nonzero defect even if both auxiliary
+  equations hold.
+* An external term \(-J^T\psi\) must become \(-(P^TJ)^T\psi'\);
+  keeping the same numerical \(J\) is generally a different problem. Its
+  background variation must also be included when \(P\) varies.
+* A norm constraint must become \(\|P\psi'\|=1\), including its background
+  derivative and multiplier terms; it cannot silently remain \(\|\psi'\|=1\).
+* A physical field readout and a refinement map require their own commuting
+  diagrams. Replacing a refinement map by \(Q_H R_{hH}P_h\) gives algebraic
+  conjugacy, but does not prove that this replacement is native-admissible.
+
+**Next unresolved proposition:** derive the transverse seed operators,
+geometric action, full independent variations and admissible refinement from
+native ownership, or classify a complete native family and test its remaining
+Euler/physical parameters. Repeating the choice of \(U\) or its Hessian as
+a field-frame representation cannot supply that missing law. The positive
+form source theorem, the indefinite rank-change exception, the original
+fixed-source/raw-owner #310 problem, and the independent #202/#317 terminals
+all retain their stated scope and status.
+
+## 7. Verification and remaining physical arrow
+
+The [Lean capsule](certificates/a4d_native_parent_source.lean) prints 32
+propositions' transitive axioms and 18 actual types, with only `propext`,
 `Classical.choice`, `Quot.sound`. Its
 [output](certificates/a4d_native_parent_source_output.txt) and
 [receipt](certificates/a4d_native_parent_source_results.json) pin 12 D0
@@ -287,19 +518,24 @@ above from the all-size manual linear algebra and analytic estimate (12).
 
 The [checker](certificates/a4d_native_parent_source_check.py) and
 [immutable ledger](certificates/a4d_native_parent_source_certificate.json)
-have 45 grouped exact controls: all three field gradients, full constitutive
+have 75 grouped exact controls: all three field gradients, full constitutive
 variation, symmetric off-diagonal packing, literal rectangular pairing,
 elimination, six complete Hessian/radical strata, both indefinite transport
 examples, the sharp exponent and missing-hypothesis controls. They also
 protect semidefinite forms, normalized constraints, degenerate pairing and
-auxiliary-only gates. The default replay does not rewrite expected output:
+auxiliary-only gates. The 30 new controls bind arbitrary frame values, all
+four owner slots, every field equation, the source defect, endpoint contrasts,
+34 independent background jets (10 plus 24 abstract coordinates), the mesh
+counterexample and transformed constraints. These coordinate controls do not
+assert a constructed physical metric/connection map. The default replay does not rewrite expected output:
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_native_parent_source_check.py
 ```
 
-Changing the ledger's zero positive-form source or its residual exponent is
-rejected. These controls do not certify all 24 A4D connection equations or
+Seventeen hostile ledger changes are rejected: the two earlier source/exponent
+controls plus fifteen changes erasing the full gate, frame scope, constraint
+transformation, residual bound hypotheses or open physical obligations. These controls do not certify all 24 A4D connection equations or
 ten physical metric equations for an unspecified map. Those equations still
 belong to the existing finite-probe construction and the open realization
 arrow. A real source for GR must be derived from an independently owned

@@ -53,3 +53,118 @@ D0.Research.NativeParentSource.invertible_full_gate.{u_1} {n : Type u_1} [Fintyp
     χ = M.symm (K ψ) ∧ lm = -M.symm (K ψ) ∧ ∀ (v : n → ℝ), D0.Research.NativeParentSource.pair (M.symm (K ψ)) (K v) = 0
 D0.Geometry.archive_weighted_hodge_dirac_owner :
   formDegreeCount4D = 5 ∧ Fintype.card CubicalCellType = 16 ∧ DegreePreservingLaplacian true ∧ Fintype.card D0.Role = 4
+'D0.Research.NativeParentSource.pair_transposed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.congruence_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.parent_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.response_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.actual_gate_variations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.full_gate_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.frame_off_shell_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.full_gate_frame_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.full_gate_background_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.joint_gate_frame_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.corresponding_endpoint_contrast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeParentSource.reframed_visible_operators' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.literal_reframed_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.simultaneous_exact_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentSource.simultaneous_background_first_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeParentSource.full_gate_congruence.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (P : (n → ℝ) ≃ₗ[ℝ] n → ℝ) (M K : D0.Research.NativeParentSource.End n)
+  (hM : D0.Research.NativeParentSource.Symmetric M) (ψ χ lm : n → ℝ) :
+  D0.Research.NativeParentSource.FullFieldGate (D0.Research.NativeParentSource.congruence (↑P) M)
+      (D0.Research.NativeParentSource.congruence (↑P) K) ψ χ lm ↔
+    D0.Research.NativeParentSource.FullFieldGate M K (P ψ) (P χ) (P lm)
+D0.Research.NativeParentSource.frame_off_shell_defect.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A M K U V : D0.Research.NativeParentSource.End n) (hM : D0.Research.NativeParentSource.Symmetric M)
+  (ψ χ lm : n → ℝ) :
+  D0.Research.NativeParentSource.constitutiveResponse (D0.Research.NativeParentSource.frameJet A M U)
+      (D0.Research.NativeParentSource.frameJet A K V) ψ χ lm =
+    D0.Research.NativeParentSource.constitutiveResponse U V ψ χ lm -
+          D0.Research.NativeParentSource.fieldVariation K lm (A ψ) -
+        D0.Research.NativeParentSource.auxiliaryVariation M χ lm (A χ) -
+      D0.Research.NativeParentSource.multiplierVariation M K ψ χ (A lm)
+D0.Research.NativeParentSource.full_gate_frame_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A M K U V : D0.Research.NativeParentSource.End n) (hM : D0.Research.NativeParentSource.Symmetric M) (ψ χ lm : n → ℝ)
+  (h : D0.Research.NativeParentSource.FullFieldGate M K ψ χ lm) :
+  D0.Research.NativeParentSource.constitutiveResponse (D0.Research.NativeParentSource.frameJet A M U)
+      (D0.Research.NativeParentSource.frameJet A K V) ψ χ lm =
+    D0.Research.NativeParentSource.constitutiveResponse U V ψ χ lm
+D0.Research.NativeParentSource.full_gate_background_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (P : (n → ℝ) ≃ₗ[ℝ] n → ℝ) (A M K U V : D0.Research.NativeParentSource.End n)
+  (hM : D0.Research.NativeParentSource.Symmetric M) (ψ χ lm : n → ℝ)
+  (h : D0.Research.NativeParentSource.FullFieldGate M K (P ψ) (P χ) (P lm)) :
+  D0.Research.NativeParentSource.constitutiveResponse
+      (D0.Research.NativeParentSource.congruence (↑P) (D0.Research.NativeParentSource.frameJet A M U))
+      (D0.Research.NativeParentSource.congruence (↑P) (D0.Research.NativeParentSource.frameJet A K V)) ψ χ lm =
+    D0.Research.NativeParentSource.constitutiveResponse U V (P ψ) (P χ) (P lm)
+D0.Research.NativeParentSource.joint_gate_frame_equivalence.{u_1, u_2} {n : Type u_1} [Fintype n] [DecidableEq n]
+  {B : Type u_2} (P : (n → ℝ) ≃ₗ[ℝ] n → ℝ) (M K : D0.Research.NativeParentSource.End n)
+  (hM : D0.Research.NativeParentSource.Symmetric M) (A U V : B → D0.Research.NativeParentSource.End n)
+  (geometryVariation : B → ℝ) (ψ χ lm : n → ℝ) :
+  (D0.Research.NativeParentSource.FullFieldGate (D0.Research.NativeParentSource.congruence (↑P) M)
+        (D0.Research.NativeParentSource.congruence (↑P) K) ψ χ lm ∧
+      ∀ (b : B),
+        geometryVariation b +
+            D0.Research.NativeParentSource.constitutiveResponse
+              (D0.Research.NativeParentSource.congruence (↑P) (D0.Research.NativeParentSource.frameJet (A b) M (U b)))
+              (D0.Research.NativeParentSource.congruence (↑P) (D0.Research.NativeParentSource.frameJet (A b) K (V b))) ψ
+              χ lm =
+          0) ↔
+    D0.Research.NativeParentSource.FullFieldGate M K (P ψ) (P χ) (P lm) ∧
+      ∀ (b : B),
+        geometryVariation b + D0.Research.NativeParentSource.constitutiveResponse (U b) (V b) (P ψ) (P χ) (P lm) = 0
+D0.Research.NativeParentSource.corresponding_endpoint_contrast.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (P0 P1 M0 M1 K0 K1 : D0.Research.NativeParentSource.End n) (ψ0 χ0 lm0 ψ1 χ1 lm1 : n → ℝ) :
+  D0.Research.NativeParentSource.parentForm (D0.Research.NativeParentSource.congruence P1 M1)
+        (D0.Research.NativeParentSource.congruence P1 K1) ψ1 χ1 lm1 -
+      D0.Research.NativeParentSource.parentForm (D0.Research.NativeParentSource.congruence P0 M0)
+        (D0.Research.NativeParentSource.congruence P0 K0) ψ0 χ0 lm0 =
+    D0.Research.NativeParentSource.parentForm M1 K1 (P1 ψ1) (P1 χ1) (P1 lm1) -
+      D0.Research.NativeParentSource.parentForm M0 K0 (P0 ψ0) (P0 χ0) (P0 lm0)
+D0.Research.NativeParentSource.reframed_visible_operators.{u_1, u_2, u_3, u_4} {n : Type u_1} [Fintype n]
+  [DecidableEq n] {p : Type u_2} {q : Type u_3} {r : Type u_4} [Fintype p] [Fintype q] [Fintype r]
+  (D : FinitePrimalDualHodgeData n p q r) (R : (r → ℝ) →ₗ[ℝ] n → ℝ) (Q0 : (n → ℝ) ≃ₗ[ℝ] n → ℝ)
+  (Q1 : (p → ℝ) ≃ₗ[ℝ] p → ℝ) (T3 : (q → ℝ) ≃ₗ[ℝ] q → ℝ) (T4 : (r → ℝ) ≃ₗ[ℝ] r → ℝ) :
+  have D' := D0.Research.NativeParentSource.reframeData D Q0 Q1 T3 T4;
+  have R' := D0.Research.NativeParentSource.reframePairing R Q0 T4;
+  R' ∘ₗ D'.star0 = D0.Research.NativeParentSource.congruence (↑Q0.symm) (R ∘ₗ D.star0) ∧
+    R' ∘ₗ D'.dD ∘ₗ D'.star1 ∘ₗ D'.dP =
+      D0.Research.NativeParentSource.congruence (↑Q0.symm) (R ∘ₗ D.dD ∘ₗ D.star1 ∘ₗ D.dP)
+D0.Research.NativeParentSource.literal_reframed_owner.{u_1, u_2, u_3, u_4} {n : Type u_1} [Fintype n] [DecidableEq n]
+  {p : Type u_2} {q : Type u_3} {r : Type u_4} [Fintype p] [Fintype q] [Fintype r]
+  (D : FinitePrimalDualHodgeData n p q r) (R : (r → ℝ) →ₗ[ℝ] n → ℝ) (Q0 : (n → ℝ) ≃ₗ[ℝ] n → ℝ)
+  (Q1 : (p → ℝ) ≃ₗ[ℝ] p → ℝ) (T3 : (q → ℝ) ≃ₗ[ℝ] q → ℝ) (T4 : (r → ℝ) ≃ₗ[ℝ] r → ℝ) (ψ χ lm : n → ℝ) :
+  mixedPrimalDualAction
+      (fun x y => D0.Research.NativeParentSource.pair x ((D0.Research.NativeParentSource.reframePairing R Q0 T4) y))
+      (D0.Research.NativeParentSource.reframeData D Q0 Q1 T3 T4) (Q0 ψ) (Q0 χ) (Q0 lm) =
+    mixedPrimalDualAction (fun x y => D0.Research.NativeParentSource.pair x (R y)) D ψ χ lm
+D0.Research.NativeParentSource.simultaneous_exact_variation.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (M K : D0.Research.NativeParentSource.End n) (hM : D0.Research.NativeParentSource.Symmetric M)
+  (ψ χ lm vp vc vl : n → ℝ) (t : ℝ) :
+  D0.Research.NativeParentSource.parentForm M K (ψ + t • vp) (χ + t • vc) (lm + t • vl) =
+    D0.Research.NativeParentSource.parentForm M K ψ χ lm +
+        t * D0.Research.NativeParentSource.fullFieldTangent M K ψ χ lm vp vc vl +
+      t ^ 2 * D0.Research.NativeParentSource.parentForm M K vp vc vl
+D0.Research.NativeParentSource.simultaneous_background_first_variation.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (M K U V : D0.Research.NativeParentSource.End n) (hM : D0.Research.NativeParentSource.Symmetric M)
+  (hU : D0.Research.NativeParentSource.Symmetric U) (ψ χ lm vp vc vl : n → ℝ) :
+  HasDerivAt
+    (fun t => D0.Research.NativeParentSource.parentForm (M + t • U) (K + t • V) (ψ + t • vp) (χ + t • vc) (lm + t • vl))
+    (D0.Research.NativeParentSource.constitutiveResponse U V ψ χ lm +
+      D0.Research.NativeParentSource.fullFieldTangent M K ψ χ lm vp vc vl)
+    0
+'D0.Research.NativeParentSource.transported_fixed_seed_source_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeParentSource.transported_fixed_seed_source_zero.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (P : (n → ℝ) ≃ₗ[ℝ] n → ℝ) (A M K : D0.Research.NativeParentSource.End n)
+  (hM : D0.Research.NativeParentSource.Symmetric M) (ψ χ lm : n → ℝ)
+  (h : D0.Research.NativeParentSource.FullFieldGate M K (P ψ) (P χ) (P lm)) :
+  D0.Research.NativeParentSource.constitutiveResponse
+      (D0.Research.NativeParentSource.congruence (↑P) (D0.Research.NativeParentSource.frameJet A M 0))
+      (D0.Research.NativeParentSource.congruence (↑P) (D0.Research.NativeParentSource.frameJet A K 0)) ψ χ lm =
+    0

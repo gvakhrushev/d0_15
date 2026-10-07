@@ -656,6 +656,23 @@ physical metric variations and independent Euler equations on the full
 coframe/link carrier. No further spectral
 candidate or coefficient sweep is needed to establish this conclusion.
 
+The [complete mixed-parent field-frame consumer](A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md#6-complete-field-frame-class-full-background-source-and-joint-roots)
+now removes one genuine redundancy from this target. For any smooth invertible
+field reparametrization of a fixed parent family, with the four operator slots
+and pairing transformed, the actual source defect is exactly the contraction
+of the three full field residuals with the frame generator. It vanishes on the
+full matter gate in every background direction, including transverse coframe
+and link directions. Joint background roots with the same geometric action
+therefore coincide. In the entire fixed-seed field-frame class, every full
+root has zero background source, even for indefinite or singular forms.
+This is not a physical gauge assertion: constraints,
+readout and refinement need their own admission. Distinct transverse seed jets
+can still give different Euler covectors on the same full matter root; their
+source difference survives every such frame. The actual seed/background law,
+rather than another representation U or Hessian choice, remains the next
+physical input to derive. The proof has 32 compiled declarations and 75 exact
+controls in its own existing source package; no new dependency node is added.
+
 **Remaining G0 proposition:** construct from independently owned native
 primitives/composition rules the complete admitted family
 \((X_h,I^N_{h,\theta},\mathcal V_{h,\theta},E^N_{h,\theta},P_h,R_h)\),
