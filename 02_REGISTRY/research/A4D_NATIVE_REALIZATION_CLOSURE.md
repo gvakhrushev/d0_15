@@ -564,3 +564,33 @@ Under the [canonical closure contract](../CLOSURE_CONTRACT.md), the present
 scoped obstruction is a research boundary theorem awaiting CONTROL intake.
 It closes its explicit affine mechanism. Global zero-unclassified-ambiguity
 closure and positive GR are not claimed. The core is unchanged.
+
+
+The [complete supplied parent law](A4D_NATIVE_PARENT_LAW_COMPLETENESS.md)
+consumes the joint quotient, field-frame source theorem and positive source
+boundary. Covariance is exactly the transport of independently supplied seed
+maps; the literal action sees M and K=dD star1 dP. Genuine derivatives retain
+the nonsymmetric star. Full stationary/source comparison is the common Hessian
+kernel with all restricted symmetric background jets; a weaker psi-only
+readout instead compares projected quadratic source relations. An invertible
+auxiliary change can identify distinct coefficients, so an action-level
+selector is not required merely by off-shell differences.
+
+The entire joint gate of a fixed sixteen-component native seed family is
+now classified in both directions and for every site count. Theta=0 admits
+all matter readings. Every theta!=0 admits only eight even response-null
+components, with both auxiliaries zero, including the singular-star case.
+This projected joint-root distinction survives eliminating the auxiliaries.
+Twenty-three propositions, 52 D0 pins, 139 exact controls, the ten metric
+components, all 24 Lorentz link directions and 21 false-scope rejections pass.
+All-site covariance/descent and projected quadratic-image assembly retain
+their explicit analytic scope. The supplied maps are not identified with
+the actual cubical differential or a selected physical four-grade carrier.
+
+The remaining G0 lemma derives the observable parent law from native
+history/record composition, with actual preparation, variations and
+refinement. For stationary predictions this law may be a proved physical
+equivalence class; the subsequent finite-contrast transfer still needs an
+owned action or a native equivalence preserving those actual probes.
+No physical Ward, selected native dynamics, G0, GR, global closure or original
+#310/#202/#317 terminal is promoted by this complete interface classification.
