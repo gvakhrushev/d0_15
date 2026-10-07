@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`27175008f7dbba9a98bc739f6cde0958a53858e8`, following
-`a2a2ccae43ec4812ade33db7b0610245e173f4b9`.
+`7c8ee6851dc343927c04f971f0b0de7a10be7b04`, following
+`27175008f7dbba9a98bc739f6cde0958a53858e8`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -19,7 +19,7 @@ The plan remains CONTROL metadata; the proof and certificates are source artifac
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-129 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+143 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -111,7 +111,7 @@ the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
 capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 83 pins of the G0
 ownership capsule and the two pins of the separate external-review capsule, the registry snapshot
-and all twenty exact certificates' input hashes match
+and all twenty-two exact certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -473,15 +473,19 @@ local file or an implicitly merged scientific parent.
 
 33. **Independent external G0 review:** PARTIAL ACCEPTANCE WITH CORRECTIONS of the four preserved external G0 inputs. T4 now proves the nonzero cube of the literal constant scalarCycleG for every n >= 3. T5 and T8 proofs are repaired; T9 distinguishes parameter and background derivatives; T11 concerns the homogeneous difference of mixed-jet solutions; T15 single-direction Hessian evaluation is surjective but generally noninjective. Both directions of T16 are rejected by explicit interface countermodels: isotropy covariance does not imply frame/readout compatibility, and noncovariance does not imply distinguishable values. The submitted certificate replays 50 PASS but has a wrong C10a predicate and a literal True placeholder C14c. A separate review capsule compiles 20 declarations with 2 transitive D0 pins, 38 independent exact controls and 8 rejected false-scope ledgers. Abstract countermodels are not native physical solutions. The new external task targets the independently owned history-to-field action, full admitted variations/Euler/readout and refinement chain, followed by source and the gravitational transfer. The existing G0 75/83/154/43 and parent-source 32/12/75/17 packages are unchanged. G0, positive GR, global closure and all original parent terminals remain OPEN.
 
+34. **Complete native scene-history scalar consumer:** Every additive real scalar valuation on the actual all-walks scene carrier is uniquely its edge-weight sum. The complete primitive unit-gap edge restriction is all independent weights >=1; the canonical extension counts length and cannot descend to the endpoint pair cost. The actual endpoint-average decomposition is ker(C1) plus im(Jt-Js) plus the constant reading, with dimensions 685+32+1. Positive automorphism-invariant weights share C1 yet differ on equal-length equal-endpoint paths. The unique nonnegative infinite endpoint-central trace is proved analytically using an explicit 67/100 oscillation contraction; finite horizons and noncentral cylinder laws retain exact counterexamples. The literal Perron logarithmic conditional reading is length plus endpoint boundary, proved in Lean. Twenty declarations pin 48 D0 sources; 54 exact controls and 16 false-scope mutations pass. Additivity, logarithmic reading, centrality, physical gauge and field-dependent readout are not silently derived. The field-dependent history-to-coframe/link/matter action and refinement law remain open.
+
+35. **Supplementary external intake:** The four unchanged supplementary external inputs replay 49 PASS but include an unconditional-success S1d, arithmetic-only S5 claims and symbol-only S6j. T16 is explicitly withdrawn; T9/T15 corrections are consistent with the previous review. Existing full rank owners imply dim(ker R intersect im d) =60 for even L and zero for odd L; the correctly typed ker R/(ker R intersect im d) has dimension 1828 at L=4. The exact witness has raw curl +8 and is outside the forward image; this does not exclude all physical gauge or prove physical curvature/on-shell admission. The supplied patch does not match the current script, and extra_dim.json has one-dimensional sizes, not the four-dimensional carrier. Thirty-one independent controls and 13 false-scope mutations pass. No G0, physical source, positive GR, global closure, whole-core no-go or original parent terminal is promoted.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The 129 imported files
+labels, Lean owners and BOOK text are unchanged. The 143 imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The twenty self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154 and 38 exact controls without
+The twenty-two self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54 and 31 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -557,7 +561,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 129 artifact blobs and 304 distinct artifact/input hashes
+are rejected. All 143 artifact blobs and 342 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -681,3 +685,13 @@ review and the current source/CONTROL boundaries. Its 20 compiled declarations,
 2 native pins, 38 exact controls and 8 hostile ledgers are a separate capsule;
 they do not replace the current G0 or parent-source counts. Full history/action
 ownership remains the next proof obligation; isotropy covariance cannot close it.
+
+The [history action proof](A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md) resolves the
+actual additive path interface and its Perron consumer without asserting a
+physical action. Its all-depth endpoint-central uniqueness and dimension
+decomposition are analytic, with exact controls; logarithmic telescoping and
+the complete additive fiber are compiled. The
+[supplementary review](A4D_EXTERNAL_G0_SUPPLEMENT_REVIEW_2026-10-07.md)
+keeps the submitted 49 PASS separate from 31 independent controls and rejects
+the unrestricted physical-gauge inference. Current G0, parent-source and
+first external-review capsules remain unchanged.

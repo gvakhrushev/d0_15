@@ -63,6 +63,23 @@ do not make abstract frame freedom native gauge or prove physical D0
 nonuniqueness. The [next theory specification](D0_THEORY_TASK_NEXT_2026-10-07.md)
 retains the complete owned state/action/variation/readout/refinement target.
 
+The [complete scene-history consumer](A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md)
+now classifies every additive scalar on the literal all-walks carrier and
+its full unit-gap edge restriction. It separates the 32-dimensional endpoint
+boundary space from the 685-dimensional kernel of actual C1 averaging and
+proves their complete decomposition with the constant reading. Positive,
+automorphism-invariant controls preserve C1 while changing equal-length,
+equal-endpoint action values. The unique infinite nonnegative endpoint-central
+trace is proved analytically with an explicit contraction, and its literal
+Perron logarithmic reading telescopes exactly to length plus boundary in Lean.
+These are complete history-interface results; own field-dependent composition,
+physical source, admitted variations and refinement remain to be constructed.
+The [supplementary external review](A4D_EXTERNAL_G0_SUPPLEMENT_REVIEW_2026-10-07.md)
+accepts corrected prior formulas and the exact 1828-dimensional coframe
+quotient at L=4 from existing full rank theorems. Its 49 PASS include a hidden
+unconditional-success check. Raw curl excludes forward translations, not all
+physical gauge. No G0, GR or original parent status is changed.
+
 The October 6 audit report and the chat summaries were investigative inputs,
 not instructions to change a mathematical definition or a release status.
 The implementation follows the user's explicit closure plan. Its first
