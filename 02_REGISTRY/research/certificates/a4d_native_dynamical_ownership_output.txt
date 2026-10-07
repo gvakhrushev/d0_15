@@ -155,3 +155,313 @@ D0.Geometry.movingHodge_comp.{u_1, u_2, u_3} {K : Type u_1} {P : Type u_2} {D : 
 'D0.Research.NativeDynamicalOwnership.actual_ward_needs_only_map_covariance' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+theorem D0.Geometry.actionGroupoid_secondJet.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι]
+  (G Dg K : Matrix ι ι ℚ),
+  (∀ (s t : ℚ), groupoidMoved G Dg K s t * groupoidBase G K t = groupoidSum G K s t) → K = G * G + Dg :=
+fun {ι} [Fintype ι] [DecidableEq ι] G Dg K hcomp =>
+  have hdiff := fun s t =>
+    let R :=
+      (s * t) • (G * G + Dg - K) + (s * t ^ 2) • ((1 / 2) • (G * K) + Dg * G) + (s * t ^ 3) • (1 / 2) • (Dg * K) +
+          (s ^ 2 * t) • (1 / 2) • (K * G) +
+        (s ^ 2 * t ^ 2) • (1 / 4) • (K * K);
+    have hexp := groupoidProduct_expansion G Dg K s t;
+    have hgoal :=
+      Eq.mpr
+        (id
+          (congrArg (Eq (groupoidSum G K s t))
+            (Eq.trans
+              (Eq.trans
+                (congrArg (HAdd.hAdd (groupoidSum G K s t))
+                  (Eq.trans
+                    (add_assoc
+                      ((s * t) • (G * G + Dg - K) + (s * t ^ 2) • ((1 / 2) • (G * K) + Dg * G) +
+                        (s * t ^ 3) • (1 / 2) • (Dg * K))
+                      ((s ^ 2 * t) • (1 / 2) • (K * G)) ((s ^ 2 * t ^ 2) • (1 / 4) • (K * K)))
+                    (Eq.trans
+                      (Eq.trans
+                        (congr
+                          (congrArg HAdd.hAdd
+                            (Eq.trans
+                              (Eq.trans
+                                (congr
+                                  (congrArg HAdd.hAdd
+                                    (congr
+                                      (congrArg HAdd.hAdd
+                                        (congrArg (HSMul.hSMul (s * t))
+                                          (congrFun' (congrArg HSub.hSub (add_comm (G * G) Dg)) K)))
+                                      (Eq.trans
+                                        (congrArg (HSMul.hSMul (s * t ^ 2))
+                                          (Eq.trans
+                                            (congrFun'
+                                              (congrArg HAdd.hAdd
+                                                (congrFun' (congrArg HSMul.hSMul (one_div 2)) (G * K)))
+                                              (Dg * G))
+                                            (add_comm (2⁻¹ • (G * K)) (Dg * G))))
+                                        (smul_add (s * t ^ 2) (Dg * G) (2⁻¹ • (G * K))))))
+                                  (congrArg (HSMul.hSMul (s * t ^ 3))
+                                    (congrFun' (congrArg HSMul.hSMul (one_div 2)) (Dg * K))))
+                                (add_assoc ((s * t) • (Dg + G * G - K))
+                                  ((s * t ^ 2) • (Dg * G) + (s * t ^ 2) • 2⁻¹ • (G * K))
+                                  ((s * t ^ 3) • 2⁻¹ • (Dg * K))))
+                              (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                                (add_assoc ((s * t ^ 2) • (Dg * G)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                                  ((s * t ^ 3) • 2⁻¹ • (Dg * K))))))
+                          (congr
+                            (congrArg HAdd.hAdd
+                              (congrArg (HSMul.hSMul (s ^ 2 * t))
+                                (congrFun' (congrArg HSMul.hSMul (one_div 2)) (K * G))))
+                            (congrArg (HSMul.hSMul (s ^ 2 * t ^ 2))
+                              (congrFun' (congrArg HSMul.hSMul (one_div 4)) (K * K)))))
+                        (add_assoc ((s * t) • (Dg + G * G - K))
+                          ((s * t ^ 2) • (Dg * G) + ((s * t ^ 2) • 2⁻¹ • (G * K) + (s * t ^ 3) • 2⁻¹ • (Dg * K)))
+                          ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))))
+                      (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                        (Eq.trans
+                          (add_assoc ((s * t ^ 2) • (Dg * G))
+                            ((s * t ^ 2) • 2⁻¹ • (G * K) + (s * t ^ 3) • 2⁻¹ • (Dg * K))
+                            ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))
+                          (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                            (add_assoc ((s * t ^ 2) • 2⁻¹ • (G * K)) ((s * t ^ 3) • 2⁻¹ • (Dg * K))
+                              ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))))))))
+                (add_comm (groupoidSum G K s t)
+                  ((s * t) • (Dg + G * G - K) +
+                    ((s * t ^ 2) • (Dg * G) +
+                      ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                        ((s * t ^ 3) • 2⁻¹ • (Dg * K) +
+                          ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))))))))
+              (Eq.trans
+                (add_assoc ((s * t) • (Dg + G * G - K))
+                  ((s * t ^ 2) • (Dg * G) +
+                    ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                      ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))))
+                  (groupoidSum G K s t))
+                (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                  (Eq.trans
+                    (add_assoc ((s * t ^ 2) • (Dg * G))
+                      ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                        ((s * t ^ 3) • 2⁻¹ • (Dg * K) +
+                          ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))))
+                      (groupoidSum G K s t))
+                    (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                      (Eq.trans
+                        (add_assoc ((s * t ^ 2) • 2⁻¹ • (G * K))
+                          ((s * t ^ 3) • 2⁻¹ • (Dg * K) +
+                            ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))
+                          (groupoidSum G K s t))
+                        (congrArg (HAdd.hAdd ((s * t ^ 2) • 2⁻¹ • (G * K)))
+                          (Eq.trans
+                            (add_assoc ((s * t ^ 3) • 2⁻¹ • (Dg * K))
+                              ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) (groupoidSum G K s t))
+                            (congrArg (HAdd.hAdd ((s * t ^ 3) • 2⁻¹ • (Dg * K)))
+                              (add_assoc ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))
+                                (groupoidSum G K s t)))))))))))))
+        (Eq.mp
+          (congrArg (Eq (groupoidSum G K s t))
+            (Eq.trans
+              (Eq.trans
+                (congr
+                  (congrArg HAdd.hAdd
+                    (Eq.trans
+                      (Eq.trans
+                        (congr
+                          (congrArg HAdd.hAdd
+                            (Eq.trans
+                              (Eq.trans
+                                (congr
+                                  (congrArg HAdd.hAdd
+                                    (Eq.trans
+                                      (Eq.trans
+                                        (congr
+                                          (congrArg HAdd.hAdd
+                                            (Eq.trans
+                                              (congrArg (HAdd.hAdd (groupoidSum G K s t))
+                                                (congrArg (HSMul.hSMul (s * t))
+                                                  (congrFun' (congrArg HSub.hSub (add_comm (G * G) Dg)) K)))
+                                              (add_comm (groupoidSum G K s t) ((s * t) • (Dg + G * G - K)))))
+                                          (Eq.trans
+                                            (congrArg (HSMul.hSMul (s * t ^ 2))
+                                              (Eq.trans
+                                                (congrFun'
+                                                  (congrArg HAdd.hAdd
+                                                    (congrFun' (congrArg HSMul.hSMul (one_div 2)) (G * K)))
+                                                  (Dg * G))
+                                                (add_comm (2⁻¹ • (G * K)) (Dg * G))))
+                                            (smul_add (s * t ^ 2) (Dg * G) (2⁻¹ • (G * K)))))
+                                        (add_comm ((s * t) • (Dg + G * G - K) + groupoidSum G K s t)
+                                          ((s * t ^ 2) • (Dg * G) + (s * t ^ 2) • 2⁻¹ • (G * K))))
+                                      (Eq.trans
+                                        (add_left_comm ((s * t ^ 2) • (Dg * G) + (s * t ^ 2) • 2⁻¹ • (G * K))
+                                          ((s * t) • (Dg + G * G - K)) (groupoidSum G K s t))
+                                        (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                                          (add_assoc ((s * t ^ 2) • (Dg * G)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                                            (groupoidSum G K s t))))))
+                                  (congrArg (HSMul.hSMul (s * t ^ 3))
+                                    (congrFun' (congrArg HSMul.hSMul (one_div 2)) (Dg * K))))
+                                (add_comm
+                                  ((s * t) • (Dg + G * G - K) +
+                                    ((s * t ^ 2) • (Dg * G) + ((s * t ^ 2) • 2⁻¹ • (G * K) + groupoidSum G K s t)))
+                                  ((s * t ^ 3) • 2⁻¹ • (Dg * K))))
+                              (Eq.trans
+                                (add_left_comm ((s * t ^ 3) • 2⁻¹ • (Dg * K)) ((s * t) • (Dg + G * G - K))
+                                  ((s * t ^ 2) • (Dg * G) + ((s * t ^ 2) • 2⁻¹ • (G * K) + groupoidSum G K s t)))
+                                (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                                  (Eq.trans
+                                    (add_left_comm ((s * t ^ 3) • 2⁻¹ • (Dg * K)) ((s * t ^ 2) • (Dg * G))
+                                      ((s * t ^ 2) • 2⁻¹ • (G * K) + groupoidSum G K s t))
+                                    (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                                      (add_left_comm ((s * t ^ 3) • 2⁻¹ • (Dg * K)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                                        (groupoidSum G K s t))))))))
+                          (congrArg (HSMul.hSMul (s ^ 2 * t)) (congrFun' (congrArg HSMul.hSMul (one_div 2)) (K * G))))
+                        (add_comm
+                          ((s * t) • (Dg + G * G - K) +
+                            ((s * t ^ 2) • (Dg * G) +
+                              ((s * t ^ 2) • 2⁻¹ • (G * K) + ((s * t ^ 3) • 2⁻¹ • (Dg * K) + groupoidSum G K s t))))
+                          ((s ^ 2 * t) • 2⁻¹ • (K * G))))
+                      (Eq.trans
+                        (add_left_comm ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s * t) • (Dg + G * G - K))
+                          ((s * t ^ 2) • (Dg * G) +
+                            ((s * t ^ 2) • 2⁻¹ • (G * K) + ((s * t ^ 3) • 2⁻¹ • (Dg * K) + groupoidSum G K s t))))
+                        (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                          (Eq.trans
+                            (add_left_comm ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s * t ^ 2) • (Dg * G))
+                              ((s * t ^ 2) • 2⁻¹ • (G * K) + ((s * t ^ 3) • 2⁻¹ • (Dg * K) + groupoidSum G K s t)))
+                            (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                              (Eq.trans
+                                (add_left_comm ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                                  ((s * t ^ 3) • 2⁻¹ • (Dg * K) + groupoidSum G K s t))
+                                (congrArg (HAdd.hAdd ((s * t ^ 2) • 2⁻¹ • (G * K)))
+                                  (add_left_comm ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s * t ^ 3) • 2⁻¹ • (Dg * K))
+                                    (groupoidSum G K s t))))))))))
+                  (congrArg (HSMul.hSMul (s ^ 2 * t ^ 2)) (congrFun' (congrArg HSMul.hSMul (one_div 4)) (K * K))))
+                (add_comm
+                  ((s * t) • (Dg + G * G - K) +
+                    ((s * t ^ 2) • (Dg * G) +
+                      ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                        ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t)))))
+                  ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))))
+              (Eq.trans
+                (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s * t) • (Dg + G * G - K))
+                  ((s * t ^ 2) • (Dg * G) +
+                    ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                      ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t)))))
+                (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                  (Eq.trans
+                    (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s * t ^ 2) • (Dg * G))
+                      ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                        ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t))))
+                    (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                      (Eq.trans
+                        (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                          ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t)))
+                        (congrArg (HAdd.hAdd ((s * t ^ 2) • 2⁻¹ • (G * K)))
+                          (Eq.trans
+                            (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s * t ^ 3) • 2⁻¹ • (Dg * K))
+                              ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t))
+                            (congrArg (HAdd.hAdd ((s * t ^ 3) • 2⁻¹ • (Dg * K)))
+                              (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s ^ 2 * t) • 2⁻¹ • (K * G))
+                                (groupoidSum G K s t))))))))))))
+          (Eq.mp
+            (congrArg
+              (fun _a =>
+                _a =
+                  groupoidSum G K s t + (s * t) • (G * G + Dg - K) + (s * t ^ 2) • ((1 / 2) • (G * K) + Dg * G) +
+                        (s * t ^ 3) • (1 / 2) • (Dg * K) +
+                      (s ^ 2 * t) • (1 / 2) • (K * G) +
+                    (s ^ 2 * t ^ 2) • (1 / 4) • (K * K))
+              (hcomp s t))
+            hexp));
+    have hsub := congrArg (fun M => M - groupoidSum G K s t) hgoal;
+    Eq.mpr
+      (id
+        (congrFun'
+          (congrArg Eq
+            (congr
+              (congrArg HAdd.hAdd
+                (congr
+                  (congrArg HAdd.hAdd
+                    (congr
+                      (congrArg HAdd.hAdd
+                        (congrArg (HAdd.hAdd ((s * t) • (G * G + Dg - K)))
+                          (Eq.trans
+                            (congrArg (HSMul.hSMul (s * t ^ 2))
+                              (congrFun' (congrArg HAdd.hAdd (congrFun' (congrArg HSMul.hSMul (one_div 2)) (G * K)))
+                                (Dg * G)))
+                            (smul_add (s * t ^ 2) (2⁻¹ • (G * K)) (Dg * G)))))
+                      (congrArg (HSMul.hSMul (s * t ^ 3)) (congrFun' (congrArg HSMul.hSMul (one_div 2)) (Dg * K)))))
+                  (congrArg (HSMul.hSMul (s ^ 2 * t)) (congrFun' (congrArg HSMul.hSMul (one_div 2)) (K * G)))))
+              (congrArg (HSMul.hSMul (s ^ 2 * t ^ 2)) (congrFun' (congrArg HSMul.hSMul (one_div 4)) (K * K)))))
+          0))
+      (Eq.mp
+        (congr
+          (congrArg Eq
+            (Eq.trans
+              (congrFun'
+                (congrArg HSub.hSub
+                  (congrArg (HAdd.hAdd (groupoidSum G K s t))
+                    (congr
+                      (congrArg HAdd.hAdd
+                        (congr
+                          (congrArg HAdd.hAdd
+                            (congr
+                              (congrArg HAdd.hAdd
+                                (congrArg (HAdd.hAdd ((s * t) • (G * G + Dg - K)))
+                                  (Eq.trans
+                                    (congrArg (HSMul.hSMul (s * t ^ 2))
+                                      (congrFun'
+                                        (congrArg HAdd.hAdd (congrFun' (congrArg HSMul.hSMul (one_div 2)) (G * K)))
+                                        (Dg * G)))
+                                    (smul_add (s * t ^ 2) (2⁻¹ • (G * K)) (Dg * G)))))
+                              (congrArg (HSMul.hSMul (s * t ^ 3))
+                                (congrFun' (congrArg HSMul.hSMul (one_div 2)) (Dg * K)))))
+                          (congrArg (HSMul.hSMul (s ^ 2 * t)) (congrFun' (congrArg HSMul.hSMul (one_div 2)) (K * G)))))
+                      (congrArg (HSMul.hSMul (s ^ 2 * t ^ 2)) (congrFun' (congrArg HSMul.hSMul (one_div 4)) (K * K))))))
+                (groupoidSum G K s t))
+              (add_sub_cancel_left (groupoidSum G K s t)
+                ((s * t) • (G * G + Dg - K) + ((s * t ^ 2) • 2⁻¹ • (G * K) + (s * t ^ 2) • (Dg * G)) +
+                      (s * t ^ 3) • 2⁻¹ • (Dg * K) +
+                    (s ^ 2 * t) • 2⁻¹ • (K * G) +
+                  (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))))
+          (sub_self (groupoidSum G K s t)))
+        (Eq.symm hsub));
+  let X := G * G + Dg - K;
+  let A := (1 / 2) • (G * K) + Dg * G;
+  let E := (1 / 2) • (Dg * K);
+  let B := (1 / 2) • (K * G);
+  let C := (1 / 4) • (K * K);
+  have hX :=
+    Matrix.ext fun i j =>
+      D0.Geometry.isolate_cross_entry✝ (X i j) (A i j) (E i j) (B i j) (C i j) fun s t =>
+        have h0 := congr_fun (congr_fun (hdiff s t) i) j;
+        h0;
+  Eq.symm (sub_eq_zero.mp hX)
+'D0.Research.NativeDynamicalOwnership.exact_polynomial_composition_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.frozen_exact_composition_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.product_with_exact_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.order_two_composition_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.order_two_fiber_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_constant_displacement_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_cycle4_generator_cube' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_cycle4_exact_quadratic_premise_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_cycle4_order_two_premise_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.real_flow_composes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.real_flow_first_two_derivatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
