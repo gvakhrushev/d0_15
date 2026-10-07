@@ -1,10 +1,10 @@
 {
   "G0": "OPEN_PHYSICAL_SYSTEM_AND_COMPLETENESS",
   "canonical_action": "exists and is uniquely pointwise least",
-  "checker_sha256": "63fc0966c5800db777563b9debcbcfad1fe97992755b54c64b5e731154db9ecd",
+  "checker_sha256": "6168f3052c1bacd3046a18e63814a627b3cb742e1d9425663b2e2755737af37a",
   "checks": [
     "ACTUAL_COMPILED_DECLARATIONS",
-    "ALL_23_D0_SOURCE_PINS",
+    "ALL_COMPOSITION_D0_SOURCE_PINS",
     "CLEAN_DIAGNOSTICS",
     "BOUND_completeActionFiber",
     "BOUND_least_action_iff_canonical",
@@ -15,6 +15,13 @@
     "BOUND_invariant_iff_constant_on_symmetry_orbits",
     "BOUND_passive_hodge_seed_injective",
     "BOUND_actual_ward_needs_only_map_covariance",
+    "BOUND_exact_polynomial_composition_iff",
+    "BOUND_frozen_exact_composition_iff",
+    "BOUND_order_two_composition_iff",
+    "BOUND_native_cycle4_exact_quadratic_premise_empty",
+    "BOUND_native_cycle4_order_two_premise_nonempty",
+    "BOUND_real_flow_composes",
+    "BOUND_real_flow_first_two_derivatives",
     "ACTION_PROTOCOL_canonical",
     "SYMMETRY_canonical",
     "ALL_TRIANGLES_canonical",
@@ -39,13 +46,39 @@
     "SAME_BASE_VALUE_DIFFERENT_VARIATIONS",
     "ACTUAL_PASSIVE_SEED_RECOVERY",
     "SEED_DIFFERENCE_SURVIVES_TRANSPORT",
-    "WRONG_INVERSE_TRANSPORT_REJECTED"
+    "WRONG_INVERSE_TRANSPORT_REJECTED",
+    "COMPLETE_COEFFICIENT_EXTRACTION_DET",
+    "FIVE_GENERIC_EXTRACTION_IDENTITIES",
+    "ACTUAL_SCALAR_CYCLE4_CUBE",
+    "CONSTANT_NATIVE_DISPLACEMENT_ZERO",
+    "EXACT_QUADRATIC_GATE_FAILS",
+    "CORRECT_ORDER_TWO_REMAINDER",
+    "REMAINDER_HAS_ONLY_DEGREES_THREE_FOUR",
+    "EXACT_GATE_IS_NOT_GLOBALLY_EMPTY",
+    "NONZERO_BACKGROUND_DERIVATIVE_EXCEPTION",
+    "ALL_NONCOMMUTATIVE_PRODUCT_COEFFICIENTS"
   ],
-  "compiled_declarations": 22,
+  "compiled_declarations": 33,
   "complete_fibers": [
     "every ActionProtocol P, arbitrary state cardinality",
     "every real invariant scalar on a specified symmetry quotient"
   ],
+  "composition": {
+    "background_derivative_Dg_constructed": false,
+    "exact_polynomial_class": "all five residual coefficient matrices vanish",
+    "exact_polynomial_premise_is_ordinary_jet_composition": false,
+    "frozen_exact_class": "Dg=0: K=G squared and G cubed=0",
+    "full_real_flow_control_compiled": true,
+    "native_cycle4_cube_01": -32,
+    "order_two_class": "K=G squared+Dg; no cubic nilpotency assumption",
+    "remainder_total_degrees": [
+      3,
+      4
+    ],
+    "simultaneous_native_groupoid_action_constructed": false,
+    "supported_owner_false": false,
+    "uniform_in_refinement_remainder_bound_proved": false
+  },
   "core_family_completeness_proved": false,
   "cost_countermodels": {
     "A0": [
@@ -90,11 +123,11 @@
   "cost_quotient": "distinction survives every state permutation and common unit calibration",
   "geometry_action_premise": "eliminated from the actual conditional Ward conclusion",
   "global_closure": "OPEN",
-  "input_head": "c8e3811a4650075736dbc591fc00a04222eecdf6",
+  "input_head": "7743910de8e8914f06b68f63aca917997344d1ae",
   "inputs_sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md": "b64d5992f28ce0d4bd56ebeb717bebf659ffe506ed30b3f9a8c2e11fc02e8753"
+    "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md": "952ec1a4e8c5d23813e661063be7ba8945af6abf4c3b65dd33e403e1f06502c0"
   },
-  "lean_receipt_sha256": "c16ac71520406d3a3d07ff04bef64c93c3977f68a7d00adb32dd262007471e7b",
+  "lean_receipt_sha256": "4e1f8850188888fda4c0d782c20628095b462edc2472ba5e106e77d656e1d26f",
   "physical_action_selected": false,
   "physical_response_nonuniqueness_proved": false,
   "positive_gr": "OPEN",
@@ -111,6 +144,6 @@
   ],
   "remaining_proposition": "derive the complete native state/action/variation/readout/refinement family or its complete stated boundary",
   "status": "PASS_PRIMITIVE_INTERFACE_BOUNDARY",
-  "transitive_d0_pins": 23,
+  "transitive_d0_pins": 26,
   "ward_required_map_premises": 4
 }

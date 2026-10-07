@@ -175,21 +175,22 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "7743910de8e8914f06b68f63aca917997344d1ae",
+    "source_head": "c9668dca8a900310cf49dbf56a8bcd8f51d872ab",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
       "native_sector"
     ],
-    "result": "Complete named primitive-interface fibers and actual Ward premise boundary proved.",
+    "result": "Complete primitive-interface fibers and Ward boundary; complete exact-polynomial composition premise and a genuine order-two replacement with native/full-flow controls.",
     "G0": "OPEN_PHYSICAL_SYSTEM_AND_COMPLETENESS",
     "closed_original_open_nodes": 0,
     "added_graph_nodes": 0,
-    "compiled_declarations": 22,
-    "transitive_d0_source_pins": 23,
-    "exact_controls": 37,
-    "rejected_false_scope_ledgers": 11,
+    "compiled_declarations": 33,
+    "transitive_d0_source_pins": 26,
+    "exact_controls": 54,
+    "rejected_false_scope_ledgers": 17,
     "remaining_proposition": "Derive the complete independently owned native state/action/variation/readout/refinement family, or a complete boundary for its declared admitted class.",
-    "action_level_nonuniqueness_is_physical_nonuniqueness": false
+    "action_level_nonuniqueness_is_physical_nonuniqueness": false,
+    "composition_disposition": "Use the proved order-two remainder statement for jet arguments; exact quadratic polynomial composition is stronger and can have an empty native fiber. Derive Dg rather than set it to zero without an owned zero direction."
   }
 }

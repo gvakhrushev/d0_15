@@ -17,6 +17,12 @@ Ward theorem. These are complete statements for those interfaces. A complete
 native physical state/action/variation/readout/refinement family, or its
 complete boundary, is still the single remaining G0 target. Physical response
 nonuniqueness and full-core impossibility are not inferred from cost freedom.
+The same G0 package now completely classifies the actual polynomial
+composition premise. Its Dg=0 slice requires G cubed zero, excluding the
+owned length-four constant generator. The compiled order-two replacement
+retains the explicit higher-order remainder and requires only K=G squared+Dg.
+A full real exponential flow is a control for this distinction. No Dg law,
+simultaneous native groupoid or constitutive action is thereby constructed.
 
 The October 6 audit report and the chat summaries were investigative inputs,
 not instructions to change a mathematical definition or a release status.

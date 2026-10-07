@@ -1,7 +1,9 @@
 # G0: complete primitive action fibers and the actual Ward input boundary
 
 Research continuation of #310. Input head:
-`c8e3811a4650075736dbc591fc00a04222eecdf6`.
+`7743910de8e8914f06b68f63aca917997344d1ae`.
+The first primitive-interface result was published at that head; this
+continuation tests the actual composition rule needed by the same G0 chain.
 Consumer: G0 (`constitutive`, `native_sector`) of the
 [CONTROL critical plan](https://github.com/gvakhrushev/d0_15/blob/7beb7cb196c4db3304b87d607815c235877bee8e/02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md).
 
@@ -13,7 +15,11 @@ unique pointwise least representative. The entire invariant background
 action fiber consists of arbitrary functions on the symmetry quotient.
 The actual conditional moving Ward conclusion needs only its four map
 covariance premises; its `geometryAction` premise can be eliminated.
-Passive Hodge transport is injective in the supplied seed.
+Passive Hodge transport is injective in the supplied seed. The literal
+polynomial groupoid-composition premise is now completely classified and
+distinguished from a genuine total-degree-two composition law. The corrected
+order-two implication admits every supplied generator; the stronger exact
+polynomial premise excludes an actual native constant generator.
 
 This discharges the G0 premise audit for these named interfaces. It does
 **not** classify every composition or physical realization of the D0 core.
@@ -172,13 +178,135 @@ also retains its compatibility, parent-Ward, auxiliary-EOM and coframe-EOM
 hypotheses. Equation (4) does not discharge those EOM hypotheses or turn
 passive covariance into a physical conservation/Einstein theorem.
 
-## 5. What this closes inside G0, and the remaining proposition
+## 5. Complete composition-premise classification and an order-two repair
+
+The next G0 arrow consumes `A4DActionGroupoidSecondJet`. Its owner is a
+correct conditional theorem, but its `hcomp` is **exact polynomial equality
+for all s,t**, not equality modulo terms of total degree at least three.
+The comments' jet terminology cannot weaken that actual hypothesis.
+
+Use the owner's literal matrices, with D denoting its supplied `Dg`:
+
+\[
+R_m(s,t)=I+sG+stD+\tfrac12s^2K,\quad
+R_b(t)=I+tG+\tfrac12t^2K,\quad
+R_\Sigma(s,t)=I+(s+t)G+\tfrac12(s+t)^2K.
+\]
+
+Their complete product residual, already expanded by the actual owner, is
+
+\[
+R_mR_b-R_\Sigma=stX+st^2A+st^3E+s^2tB+s^2t^2C,
+\tag{5}
+\]
+
+where
+\(X=G^2+D-K\), \(A=GK/2+DG\), \(E=DK/2\),
+\(B=KG/2\), \(C=K^2/4\).
+The new generic Lean theorem proves the exact equivalence
+
+\[
+\texttt{hcomp}\quad\Longleftrightarrow\quad X=A=E=B=C=0.
+\tag{6}
+\]
+
+This classifies **every** rational finite matrix tuple (G,D,K) satisfying
+that premise. It is not a restriction to a tested dressing or weight
+ansatz. Necessity follows entrywise from five evaluations at
+(1,1), (-1,1), (1,-1), (-1,-1), (1,2); their coefficient matrix has
+nonzero determinant -96. Sufficiency uses the actual full expansion.
+Thus a finite extraction proves a generic polynomial statement; no
+finite sampling is substituted for an unrestricted functional identity.
+
+For D=0, the complete specialization is
+
+\[
+\texttt{hcomp}\quad\Longleftrightarrow\quad K=G^2\ \text{and}\ G^3=0.
+\tag{7}
+\]
+
+The cubic condition is an extra demand of exact composition of the
+quadratic *polynomials*. It is not a condition for existence of an
+order-two jet or of an actual one-parameter flow. In particular the
+real finite-matrix family U(t)=exp(tG) obeys U(s+t)=U(s)U(t), with
+U'(0)=G and U''(0)=G², for arbitrary G. These statements are compiled
+from Mathlib's actual matrix-exponential theorem with commutation of
+scalar multiples proved; the real finite-matrix completeness/norm
+instances discharge its analytic hypotheses. The norm supplies the usual
+finite-dimensional topology, not a physical positive-energy assumption.
+This flow is a mathematical control, not a selected D0 matter evolution.
+It does not assert a simultaneous additive representation for different,
+noncommuting displacement generators.
+
+### The mismatch occurs on the actual scalar-cycle owner
+
+For the actual `scalarOnes 4`, `scalarDisplacement` is zero and
+`scalarCycleG` is the skew cycle difference
+
+\[
+G=\begin{pmatrix}
+0&2&0&-2\\-2&0&2&0\\0&-2&0&2\\2&0&-2&0
+\end{pmatrix},\qquad (G^3)_{01}=-32.
+\]
+
+The zero displacement and cube entry compile on the literal definitions;
+the rational entry is checked by exact kernel-checked normalization. Therefore no K satisfies
+the exact polynomial `hcomp` for this G and D=0. Nevertheless its
+order-two law is satisfied by K=G², and the full real exponential control
+has those same derivatives. This is an input-premise counterexample in
+the owned scalar reduction. It is not an assertion that this flow already
+has a native matter action, physical readout, refinement or joint roots.
+
+If D is interpreted as a derivative of a background function along this
+zero displacement, D=0 follows. An independently varied extra background
+would require its own direction and is outside that specialization.
+The D=0 qualifier is essential: a four-by-four nilpotent Jordan G with
+G³ nonzero, K=2E_{1,3} in zero-based indices, and D=K−G² satisfies all five
+conditions in (6). Nonzero D must not be silently discarded.
+
+### A usable order-two implication
+
+Define H(s,t) to be the four terms in (5) after stX. The new capsule binds
+this exact remainder to the actual product and proves
+
+\[
+R_mR_b-H=R_\Sigma\ \text{for all }s,t
+\quad\Longleftrightarrow\quad K=G^2+D.
+\tag{8}
+\]
+
+Every monomial in H has total degree three or four. In any fixed
+finite-dimensional norm, for rho=|s|+|t|<=1,
+\(\|H\|\le(\|A\|+\|B\|+\|C\|+\|E\|)\rho^3\).
+This elementary analytic bound gives the intended Taylor meaning; the
+exact decomposition and equivalence (8) are compiled. No uniform bound
+as the carrier size grows is asserted.
+
+For every supplied G,D, the order-two fiber is nonempty with K=G²+D.
+Thus (8) is the research replacement to consume for an order-two argument;
+(6) is used only if exact polynomial composition is independently intended.
+The supported owner is preserved, with a CONTROL review disposition to
+clarify/extend its interface. No theorem is declared false and no native
+gate is redefined. The original background-independent noncommuting-delta
+obstruction remains separate and valid.
+
+**Remaining derivation:** (8) still does not construct D=(D_e g)[h],
+integrate a background-dependent groupoid action, choose its constitutive
+seed, or tie its Euler equations to the physical response/refinement map.
+The absent native constitutive law cannot be replaced by setting D=0
+without a proved zero background direction. This check removes an
+incorrectly strong premise from the prospective G0 argument; it does not
+turn a conditional two-jet family into the full native system.
+
+## 6. What this closes inside G0, and the remaining proposition
 
 **Discharged input question:** neither arbitrary transition costs nor
 background constitutive maps become determined merely by citing the
 verification/action-quantum contract and conditional passive Ward owner.
 The canonical least transition cost, full cost fiber, full invariant-action
-fiber and exact Ward premise boundary now have proofs. No further spectral
+fiber and exact Ward premise boundary now have proofs. The complete exact-polynomial premise and its genuine
+order-two replacement are also proved, with a native counterexample
+showing why they must not be confused. No further spectral
 candidate or coefficient sweep is needed to establish this conclusion.
 
 **Remaining G0 proposition:** construct from independently owned native
@@ -199,7 +327,7 @@ universality could remove remaining action parameters. Both possibilities
 remain protected. G0 stays OPEN; source, contrast transfer, stationarity,
 curved roots, soundness and recovery are not declared complete.
 
-## 6. Replay and negative controls
+## 7. Replay and negative controls
 
 The generic statements compile in the [capsule](certificates/a4d_native_dynamical_ownership.lean),
 with the real input types and Ward proof printed in its
@@ -209,7 +337,10 @@ no `sorryAx`, evaluation axiom or new physical axiom is accepted.
 
 The [exact checker](certificates/a4d_native_dynamical_ownership_check.py)
 replays the normalized cost matrices, all six relabelings, the independent
-symmetry/variation witness and a nontrivial seed-transport example. Its
+symmetry/variation witness and a nontrivial seed-transport example. It also
+checks the complete five-coefficient extraction, the actual length-four
+scalar generator, the nonzero-D exception, and the explicit cubic/quartic
+remainder, rejecting the exact-polynomial-as-jet substitution. Its
 immutable [ledger](certificates/a4d_native_dynamical_ownership_certificate.json)
 also preserves the scope and remaining G0 premise. These finite controls
 are not used as substitutes for the generic equivalences.
@@ -220,6 +351,10 @@ lake env lean ../02_REGISTRY/research/certificates/a4d_native_dynamical_ownershi
 # From the repository root:
 python3 02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py
 ```
+
+The extended capsule compiles 33 declarations with 26 transitive D0
+source pins. Its checker replays 54 exact controls. Eleven prior scope
+mutations and six composition-specific mutations are rejected.
 
 Hostile ledger mutations must reject a full-core NO-GO, positive GR,
 physical-response nonuniqueness, canonical-action nonexistence, a selected

@@ -1,8 +1,13 @@
 import D0.Foundation.EndogenousActionQuantum
 import D0.Foundation.ObservableCompletionCanonicity
 import D0.Geometry.A4DPathWordParentWard
+import D0.Geometry.A4DActionGroupoidSecondJet
+import D0.Geometry.A4DScalarDeltaSecondJet
+import Mathlib.Analysis.Normed.Algebra.MatrixExponential
+import Mathlib.Analysis.SpecialFunctions.Exponential
 import Mathlib.Analysis.Calculus.Deriv.Pow
 import Mathlib.Analysis.Calculus.Deriv.Add
+import Mathlib.Analysis.Calculus.Deriv.Mul
 import Mathlib.Tactic
 
 /-! G0: complete fibers of the actual primitive action interface and of
@@ -301,6 +306,169 @@ theorem actual_ward_needs_only_map_covariance
   exact physicalMovingWard_of_constitutiveAction (fun _ => 0) symmetry b
     e0 e1 Q0 Q1 dPof dDof S0of S1of psi chi lambda ⟨rfl,hMaps⟩
 
+
+/-! Actual composition premise versus a genuine order-two law. -/
+section Composition
+variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+
+private theorem five_coefficients (x a e b c : ℚ)
+    (h : ∀ s t : ℚ, s*t*x + s*t^2*a + s*t^3*e + s^2*t*b + s^2*t^2*c = 0) :
+    x = 0 ∧ a = 0 ∧ e = 0 ∧ b = 0 ∧ c = 0 := by
+  have h1 := h 1 1
+  have h2 := h (-1) 1
+  have h3 := h 1 (-1)
+  have h4 := h (-1) (-1)
+  have h5 := h 1 2
+  refine ⟨?_,?_,?_,?_,?_⟩
+  · linear_combination (3/4:ℚ)*h1-(1/4:ℚ)*h2-(1/12:ℚ)*h3+(1/4:ℚ)*h4-(1/6:ℚ)*h5
+  · linear_combination (1/4:ℚ)*h1-(1/4:ℚ)*h2+(1/4:ℚ)*h3-(1/4:ℚ)*h4
+  · linear_combination -(1/2:ℚ)*h1-(1/6:ℚ)*h3+(1/6:ℚ)*h5
+  · linear_combination (1/4:ℚ)*h1+(1/4:ℚ)*h2-(1/4:ℚ)*h3-(1/4:ℚ)*h4
+  · linear_combination (1/4:ℚ)*h1+(1/4:ℚ)*h2+(1/4:ℚ)*h3+(1/4:ℚ)*h4
+
+/-- Full classification of the literal polynomial-composition premise. -/
+theorem exact_polynomial_composition_iff (G D K : Matrix ι ι ℚ) :
+    (∀ s t, groupoidMoved G D K s t * groupoidBase G K t = groupoidSum G K s t) ↔
+      G*G+D-K = 0 ∧ (1/2:ℚ) • (G*K)+D*G = 0 ∧
+      (1/2:ℚ) • (D*K) = 0 ∧ (1/2:ℚ) • (K*G) = 0 ∧
+      (1/4:ℚ) • (K*K) = 0 := by
+  constructor
+  · intro h
+    have hc (i j : ι) := five_coefficients ((G*G+D-K) i j)
+      (((1/2:ℚ) • (G*K)+D*G) i j) (((1/2:ℚ) • (D*K)) i j)
+      (((1/2:ℚ) • (K*G)) i j) (((1/4:ℚ) • (K*K)) i j) (by
+        intro s t
+        have he := congrArg (fun M : Matrix ι ι ℚ => M i j)
+          (groupoidProduct_expansion G D K s t)
+        rw [h s t] at he
+        simp only [Matrix.add_apply, Matrix.smul_apply, smul_eq_mul] at he ⊢
+        linarith)
+    refine ⟨?_,?_,?_,?_,?_⟩
+    · ext i j; exact (hc i j).1
+    · ext i j; exact (hc i j).2.1
+    · ext i j; exact (hc i j).2.2.1
+    · ext i j; exact (hc i j).2.2.2.1
+    · ext i j; exact (hc i j).2.2.2.2
+  · rintro ⟨hx,ha,he,hb,hc⟩ s t
+    rw [groupoidProduct_expansion,hx,ha,he,hb,hc]
+    simp
+
+/-- In the zero-background-derivative slice, the extra condition is G³=0. -/
+theorem frozen_exact_composition_iff (G K : Matrix ι ι ℚ) :
+    (∀ s t, groupoidMoved G 0 K s t * groupoidBase G K t = groupoidSum G K s t) ↔
+      K = G*G ∧ (G*G)*G = 0 := by
+  constructor
+  · intro h
+    have hk : K = G*G := by simpa using actionGroupoid_secondJet G 0 K h
+    have hb := ((exact_polynomial_composition_iff G 0 K).mp h).2.2.2.1
+    have hkg : K*G = 0 := (smul_eq_zero.mp hb).resolve_left (by norm_num)
+    exact ⟨hk,by simpa [hk] using hkg⟩
+  · rintro ⟨rfl,h3⟩
+    apply (exact_polynomial_composition_iff G 0 (G*G)).mpr
+    have h4 : (G*G)*(G*G) = 0 := by
+      simpa [Matrix.mul_assoc] using congrArg (fun M : Matrix ι ι ℚ => M*G) h3
+    have h3' : G*(G*G) = 0 := by simpa only [Matrix.mul_assoc] using h3
+    simp [h3,h3',h4]
+
+/-- All the terms discarded by total-degree-two truncation are explicit. -/
+def groupoidRemainder (G D K : Matrix ι ι ℚ) (s t : ℚ) : Matrix ι ι ℚ :=
+  (s*t^2) • ((1/2:ℚ) • (G*K)+D*G) +
+  (s*t^3) • ((1/2:ℚ) • (D*K)) +
+  (s^2*t) • ((1/2:ℚ) • (K*G)) +
+  (s^2*t^2) • ((1/4:ℚ) • (K*K))
+
+theorem product_with_exact_remainder (G D K : Matrix ι ι ℚ) (s t : ℚ) :
+    groupoidMoved G D K s t * groupoidBase G K t - groupoidRemainder G D K s t =
+      groupoidSum G K s t + (s*t) • (G*G+D-K) := by
+  rw [groupoidProduct_expansion]
+  unfold groupoidRemainder
+  abel
+
+/-- Equality of total-degree-two jets, not equality of the truncated polynomials. -/
+def ComposesToOrderTwo (G D K : Matrix ι ι ℚ) : Prop :=
+  ∀ s t, groupoidMoved G D K s t * groupoidBase G K t -
+    groupoidRemainder G D K s t = groupoidSum G K s t
+
+theorem order_two_composition_iff (G D K : Matrix ι ι ℚ) :
+    ComposesToOrderTwo G D K ↔ K = G*G+D := by
+  constructor
+  · intro h
+    have hh := h 1 1
+    rw [product_with_exact_remainder] at hh
+    have hz : G*G+D-K = 0 := by
+      simpa using hh
+    exact (sub_eq_zero.mp hz).symm
+  · intro hk s t
+    rw [product_with_exact_remainder,hk]
+    simp
+
+theorem order_two_fiber_nonempty (G D : Matrix ι ι ℚ) :
+    ComposesToOrderTwo G D (G*G+D) :=
+  (order_two_composition_iff _ _ _).mpr rfl
+
+end Composition
+
+/-- The actual native scalar translation is constant in its coframe direction. -/
+theorem native_constant_displacement_zero (n : ℕ) [NeZero n] :
+    scalarDisplacement (scalarOnes n) = 0 := by
+  funext i
+  simp [scalarDisplacement,scalarOnes]
+
+theorem native_cycle4_generator_cube :
+    ((scalarCycleG (scalarOnes 4)*scalarCycleG (scalarOnes 4))*
+      scalarCycleG (scalarOnes 4)) (0 : Fin 4) (1 : Fin 4) = -32 := by
+  have hM : scalarCycleMul (scalarOnes 4) = (1 : Matrix (Fin 4) (Fin 4) ℚ) := by
+    ext i j
+    simp [scalarCycleMul,scalarOnes,Matrix.diagonal,Matrix.one_apply]
+  have hG : scalarCycleG (scalarOnes 4) = scalarCycleD 4 := by
+    rw [scalarCycleG,hM,Matrix.one_mul]
+  have hD : scalarCycleD 4 = !![0,2,0,-2; -2,0,2,0; 0,-2,0,2; 2,0,-2,0] := by
+    ext i j
+    fin_cases i <;> fin_cases j <;>
+      norm_num [scalarCycleD,scalarCycleShift,Matrix.transpose_apply,Fin.ext_iff,Fin.val_add]
+  rw [hG,hD]
+  norm_num [Matrix.mul_apply,Fin.sum_univ_succ]
+
+theorem native_cycle4_exact_quadratic_premise_empty :
+    ¬ ∃ K : Matrix (Fin 4) (Fin 4) ℚ, ∀ s t,
+      groupoidMoved (scalarCycleG (scalarOnes 4)) 0 K s t *
+        groupoidBase (scalarCycleG (scalarOnes 4)) K t =
+          groupoidSum (scalarCycleG (scalarOnes 4)) K s t := by
+  rintro ⟨K,h⟩
+  have hz := ((frozen_exact_composition_iff _ K).mp h).2
+  have he := congrArg (fun M : Matrix (Fin 4) (Fin 4) ℚ => M 0 1) hz
+  change ((scalarCycleG (scalarOnes 4)*scalarCycleG (scalarOnes 4))*
+      scalarCycleG (scalarOnes 4)) 0 1 = 0 at he
+  rw [native_cycle4_generator_cube] at he
+  norm_num at he
+
+theorem native_cycle4_order_two_premise_nonempty :
+    ComposesToOrderTwo (scalarCycleG (scalarOnes 4)) 0
+      (scalarCycleG (scalarOnes 4)*scalarCycleG (scalarOnes 4)) := by
+  simpa using order_two_fiber_nonempty (scalarCycleG (scalarOnes 4)) 0
+
+section RealFlowControl
+open scoped Matrix.Norms.Operator
+variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+
+/-- A full mathematical flow is a control against confusing Taylor truncation
+with exact finite composition. This does not select native dynamics. -/
+def realFlow (G : Matrix ι ι ℝ) (t : ℝ) := NormedSpace.exp (t • G)
+
+theorem real_flow_composes (G : Matrix ι ι ℝ) (s t : ℝ) :
+    realFlow G (s+t) = realFlow G s * realFlow G t := by
+  unfold realFlow
+  rw [add_smul]
+  exact Matrix.exp_add_of_commute _ _ (((Commute.refl G).smul_left s).smul_right t)
+
+theorem real_flow_first_two_derivatives (G : Matrix ι ι ℝ) :
+    HasDerivAt (realFlow G) G 0 ∧
+      HasDerivAt (fun t => realFlow G t * G) (G*G) 0 := by
+  constructor
+  · simpa [realFlow] using hasDerivAt_exp_smul_const G (0 : ℝ)
+  · simpa [realFlow] using (hasDerivAt_exp_smul_const G (0 : ℝ)).mul_const G
+end RealFlowControl
+
 #print ActionProtocol
 #print VerificationContract
 #print physicalMovingWard_of_constitutiveAction
@@ -328,5 +496,18 @@ theorem actual_ward_needs_only_map_covariance
 #print axioms passive_hodge_recovers_seed
 #print axioms passive_hodge_seed_injective
 #print axioms actual_ward_needs_only_map_covariance
+#print actionGroupoid_secondJet
+#print axioms exact_polynomial_composition_iff
+#print axioms frozen_exact_composition_iff
+#print axioms product_with_exact_remainder
+#print axioms order_two_composition_iff
+#print axioms order_two_fiber_nonempty
+#print axioms native_constant_displacement_zero
+#print axioms native_cycle4_generator_cube
+#print axioms native_cycle4_exact_quadratic_premise_empty
+#print axioms native_cycle4_order_two_premise_nonempty
+#print axioms real_flow_composes
+#print axioms real_flow_first_two_derivatives
+
 end
 end D0.Research.NativeDynamicalOwnership
