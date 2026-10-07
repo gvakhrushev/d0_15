@@ -84,11 +84,16 @@
     "ALL_RICCI_AND_EINSTEIN_COMPONENTS_NONZERO_VACUUM_LIMIT",
     "OWNER_CURVATURE_SIGN_RETAINED",
     "OWNED_HALF_ACTION_AND_STRAIGHT_SCALING_CONTRAST",
+    "GENERIC_CORRECTED_METRIC_ALL_CONNECTION_AND_RICCI_COMPONENTS",
+    "PERIODIC_ACTION_DIVERGENCE_AND_EXPLICIT_CORRECTION_BOUNDS",
     "FULL_RAW_SOLDER_SCALING_EQUALS_SQUARED_METRIC_SCALE",
     "NO_EXACT_LIFT_OF_DIAGONAL_NYQUIST_TARGET",
     "CENTERING_KERNEL_NOT_RAW_ZERO",
     "OFF_SHELL_NONZERO_FLAT_FIELD_IS_REJECTED"
   ],
+  "corrected_metric_owner_action_absolute_lower_bound": "27 pi^2 / 550",
+  "corrected_metric_owner_action_error_bound": "pi^4 h^2 / 300",
+  "corrected_metric_periodic_owner_action": "-3 integral s (s')^2 / s_h",
   "curved_exact_controls": {
     "12": {
       "corrected_component": "Q_AA=s_h^2",

@@ -178,6 +178,35 @@ def main():
  mean_slope_square=Q(1,100)*4*sp.pi**2/2;action=-3*mean_slope_square
  check('OWNED_HALF_ACTION_AND_STRAIGHT_SCALING_CONTRAST',action==-3*sp.pi**2/50
        and sp.expand(((1+t)*action-(1-t)*action)/2-t*action)==0)
+ # Recompute every Christoffel/Ricci component for the actual corrected smooth
+ # metric diag(a^2,-s^2,-s^2,-s^2), allowing nonzero first and second jets.
+ aa,ss,a1,s1,a2,s2=sp.symbols('aa ss a1 s1 a2 s2',real=True,nonzero=True)
+ gm=sp.diag(aa**2,-ss**2,-ss**2,-ss**2);inv=gm.inv()
+ dg=sp.diag(2*aa*a1,-2*ss*s1,-2*ss*s1,-2*ss*s1)
+ ddg=sp.diag(2*(a1*a1+aa*a2),*([-2*(s1*s1+ss*s2)]*3))
+ dinv=-inv*dg*inv
+ jet=lambda i,j,k:dg[i,j] if k==0 else 0
+ jet2=lambda i,j,k,c:ddg[i,j] if k==c==0 else 0
+ gamma=lambda i,j,k:sp.simplify(sum(inv[i,m]*(jet(m,k,j)+jet(m,j,k)-jet(j,k,m)) for m in range(4))/2)
+ Gamma={(i,j,k):gamma(i,j,k) for i,j,k in product(range(4),repeat=3)}
+ def dgamma(i,j,k,c):
+  if c!=0:return sp.Integer(0)
+  return sp.simplify(sum(dinv[i,m]*(jet(m,k,j)+jet(m,j,k)-jet(j,k,m))
+     +inv[i,m]*(jet2(m,k,j,c)+jet2(m,j,k,c)-jet2(j,k,m,c)) for m in range(4))/2)
+ ric=sp.Matrix(4,4,lambda j,k:sp.simplify(sum(dgamma(i,j,k,i)-dgamma(i,j,i,k)
+     +sum(Gamma[i,i,m]*Gamma[m,j,k]-Gamma[i,k,m]*Gamma[m,j,i] for m in range(4)) for i in range(4))))
+ spatial=(aa*ss*s2+2*aa*s1*s1-a1*ss*s1)/aa**3
+ rstd=-6*(s2/(aa*aa*ss)+s1*s1/(aa*aa*ss*ss)-a1*s1/(aa**3*ss))
+ check('GENERIC_CORRECTED_METRIC_ALL_CONNECTION_AND_RICCI_COMPONENTS',
+       all(sp.simplify(v)==0 for v in ric-sp.diag((-3*aa*s2+3*a1*s1)/(aa*ss),spatial,spatial,spatial))
+       and sp.simplify(sp.trace(inv*ric)-rstd)==0)
+ density=-aa*ss**3*rstd/2
+ total_derivative=(2*ss*s1*s1+ss*ss*s2)/aa-ss*ss*s1*a1/aa**2
+ b=Q(1,10)
+ check('PERIODIC_ACTION_DIVERGENCE_AND_EXPLICIT_CORRECTION_BOUNDS',
+       sp.simplify(density-3*total_derivative+3*ss*s1*s1/aa)==0
+       and 3*b**3/(1-b)==Q(1,300)
+       and (1-b)/(1+b)*Q(3,50)==Q(27,550))
  check('FULL_RAW_SOLDER_SCALING_EQUALS_SQUARED_METRIC_SCALE',zero((t*Theta)*ETA*(t*Theta).T-t*t*G))
  # Exceptions: finite Nyquist targets are outside the linear range, even though
  # smooth continuum probes have the midpoint approximate lift.
@@ -198,6 +227,9 @@ def main():
   'smooth_metric_and_variation_error':'O_V(h^2) via row midpoint preparation, without a frequency selector',
   'curved_metric_error_bound':'11 pi^2 h^2 / 100',
   'owner_einstein_action':'-3 pi^2 / 50','native_half_contrast':'0',
+  'corrected_metric_periodic_owner_action':'-3 integral s (s\u0027)^2 / s_h',
+  'corrected_metric_owner_action_absolute_lower_bound':'27 pi^2 / 550',
+  'corrected_metric_owner_action_error_bound':'pi^4 h^2 / 300',
   'calibrated_contrast_gap_lower_bound':'3 pi^2 h^(1/3) / 100 for sufficiently small h',
   'vacuum_owner_scalar':'-2400 pi^2 / 1331','vacuum_owner_spatial_einstein':'-8 pi^2 / 11',
   'literal_flux_root_family':'EXACT_FULL_ZERO_FIELD_ROOTS_WITH_NON_EINSTEIN_CENTERED_METRIC_LIMIT',

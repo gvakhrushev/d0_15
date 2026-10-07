@@ -282,7 +282,28 @@ In the completed probe owner's sign and normalization,
         =-3 integral (s')^2=-3 pi^2/50,
     I((1+t)g)=(1+t)I(g).                                   (22)
 
-The factor one-half is retained. The [published finite-probe theorem](https://github.com/gvakhrushev/d0_15/blob/dae0ec13f9f885ff945c45613ae38becbc097d18/02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md),
+The factor one-half is retained. The action correction can also be bounded
+directly, without differentiating an asymptotic estimate. For a smooth
+periodic metric diag(a^2,-s^2,-s^2,-s^2), with a,s>0, the complete
+Christoffel/Ricci contraction gives
+
+    R_std=-6[s''/(a^2 s)+(s')^2/(a^2 s^2)-a's'/(a^3 s)],
+    (1/2) a s^3 R_owner = 3(s^2 s'/a)' - 3s(s')^2/a.
+
+Consequently the smooth interpolant of the exact corrected metric (19)
+has
+
+    I(Q_L)=-3 integral s(s')^2/s_h,
+    |I(Q_L)| >= 27 pi^2/550,
+    |I(Q_L)-I(g)| <= pi^4 h^2/300.                         (22a)
+
+For the lower bound use s/s_h>=9/11 and integral (s')^2=pi^2/50.
+For the error use |s/s_h-1|<=b(1-cos(pi/L))/(1-b), then
+1-cos(pi/L)<=pi^2 h^2/2. Periodicity kills the displayed total derivative.
+This calculation retains every nonzero first-jet contribution and is
+independently checked in all 64 connection and 16 Ricci slots.
+
+The [published finite-probe theorem](https://github.com/gvakhrushev/d0_15/blob/dae0ec13f9f885ff945c45613ae38becbc097d18/02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md),
 with all 24 connection residual rows, now gives for epsilon=h^(1/3)
 
     Delta I_h(V)=epsilon I(g)+O(h),   Delta I_h^N(V)=0.       (23)
@@ -337,8 +358,9 @@ Five actual declaration types are printed. The older nonzero-H Nyquist
 declaration is only type-checked here; its separate native_decide evaluation
 dependency is not disguised as a new standard-axiom proof. The earlier full
 flux-gate derivation and the published physical-probe proof are separately
-pinned. The checker replays 86 grouped exact controls, including every
+pinned. The checker replays 88 grouped exact controls, including every
 metric slot, its factor-two packing, variable-background adjoint, midpoint
-samples, full Ricci/Einstein second-jet contraction and half-action sign.
+samples, full Ricci/Einstein jet contraction, half-action sign and the
+explicit action bound for the corrected finite metrics.
 Five hostile ledgers falsify the inverse bound, Einstein source, action
 normalization, global GR status or interlevel compatibility; each is rejected.

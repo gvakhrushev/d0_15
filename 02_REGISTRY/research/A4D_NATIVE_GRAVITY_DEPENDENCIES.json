@@ -794,7 +794,7 @@
         "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift.lean",
         "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_check.py"
       ],
-      "verification": "Seventeen new and two existing propositions compile with 53 transitive D0 pins; five actual types are printed. Full centering/Fourier range and nonlinear fiber arguments, O(h^2) smooth midpoint lifts and the explicit corrected curved limit are analytical. Eighty-six exact controls and five false ledgers retain packing, half-action normalization, raw kernel, off-shell and interlevel boundaries. The native zero-field branch has physical half-contrast -(3*pi^2/50)h^(1/3)+O(h) versus exactly zero native contrast; the original #310 terminal is unchanged.",
+      "verification": "Seventeen new and two existing propositions compile with 53 transitive D0 pins; five actual types are printed. Full centering/Fourier range and nonlinear fiber arguments, O(h^2) smooth midpoint lifts and the explicit corrected curved limit are analytical. Eighty-eight exact controls and five false ledgers retain packing, half-action normalization, raw kernel, off-shell and interlevel boundaries. The native zero-field branch has physical half-contrast -(3*pi^2/50)h^(1/3)+O(h) versus exactly zero native contrast, with explicit corrected-action error at most pi^4 h^2/300; the original #310 terminal is unchanged.",
       "status": "PROVED_KINEMATIC_LIFT_AND_SCOPED_LEVELWISE_GATE_OBSTRUCTION_PENDING_CONTROL",
       "terminal_class": null,
       "required_terminal": "CONTROL_ACCEPTED_KINEMATIC_SCOPE_AND_STATED_STANDALONE_NOGO",

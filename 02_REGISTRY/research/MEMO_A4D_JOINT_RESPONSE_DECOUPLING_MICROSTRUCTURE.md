@@ -11,7 +11,7 @@ without a frequency selector or a uniform inverse on all grid modes.
 The full centering range inverse, retained kernel and constrained nonlinear
 Gram fibers are explicit. The previous rank theorem is reused. Seventeen
 new propositions and two actual owner propositions compile with 53 source
-pins; 86 exact controls verify the packed metric normalization and curved
+pins; 88 exact controls verify the packed metric normalization and curved
 source/action constants. The existing standalone flux gate then has exact
 levelwise zero-field roots with curved non-Einstein centered-metric limits.
 Its native half-contrast is zero against physical
