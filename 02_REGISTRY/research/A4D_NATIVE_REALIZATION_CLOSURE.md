@@ -140,6 +140,31 @@ measure if applied to the full solder, and only eta if applied to its
 perturbation. These exact composed classes do not yield curved recovery;
 no L1 convergence or exclusion of concentrated energy is asserted.
 
+The [native transported connection realization](A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md)
+now binds actual affine Lorentz pull links to physical link matrices and
+classifies every finite transported-center fiber by its cycle holonomy.
+The full joint raw/link variation is explicit, including its mixed term.
+A half-transport midpoint construction gives corrected smooth metrics and
+all ten metric and 24 connection variations, without a uniform grid inverse.
+When the continuum connection is Levi-Civita, the actual corrected readout
+enters the existing all-24-row O(h^2) physical preparation domain. This is
+kinematic realization, not a native action identity or an on-shell solution.
+Even nontrivial holonomy cannot supply a mesh-independent full inverse for
+even near-identity cycles; all affine shifts and raw kernels are retained.
+Twenty compiled propositions with 50 transitive source pins and 162 exact
+controls keep action/source/refinement transfer and the physical Ward open.
+The standalone flux gate with unconstrained spectator links still has exact
+curved zero-field roots: transported readout alone cannot change its zero
+native contrast into the nonzero physical Einstein contrast. This scoped
+levelwise result does not assume additional connection/interlevel gates.
+For the already specified scalar/graded native arrows, near-identity links
+do not remove the refinement obstruction: scalar smooth limits stay constant,
+and graded full/perturbation limits stay zero/eta in measure. The bounded-raw
+L2 version has explicit transported Gram error at most (Ch+C^2h^2/4)B^2.
+The exact flat joint differential also distinguishes metric-only reachability
+from independently prescribed metric/link targets; the latter retains the
+even-grid cokernel 4L^3+6L^2. Smooth approximate lifts do not remove it.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
@@ -151,6 +176,7 @@ than treating comments or theorem names as physical equations.
 | `Synthesis.ConcretePhysicalDetectorRepresentation`, `M1ClassAdmissibility` | Concrete member/value/history observations and independent two-sided catalogue histories | The class-level physical representation is constructed; admissible comparisons factor through both current inputs; primitive capability profiles are membership/value | Actual propositions and transitive axioms printed in the verification capsule | This existing result must be preserved. It is not a physical metric/action/source map or the stronger old faithful-capability representation of every comparison object. |
 | `D0.Geometry.ArchiveSeamCurvature`, `ArchiveVariation` | Fixed canonical fine/coarse cycle Laplacians and fixed cyclic lift; coarse symmetric row-sum-zero `LaplacianVariation` | $D=L_fJ-JL_c$; $S=\|D\|^2$; $\delta D=-J\delta L_c$; `ArchiveStationary` quantifies over those variations | `J` comes from `archiveRGPhaseProjection`; its phase index is not the four-Role product | No variable metric/coframe/link sector is constructed here. The old `local_support : Prop` field does not enforce a support equation. |
 | `A4DCoframeParentConstraint`, `A4DSolderMetricCompletion`, `A4DRawSolderFrameAction` | Actual free raw coframe field, directional average and centered nonlinear Gram map | Explicit smooth metric/probe lifts with O(h^2) corrections; complete linear centering range inverse and exact constrained nonlinear fiber criterion | Full finite raw kernel is retained. High-frequency inverse grows with L; smooth midpoint lifts have uniform bounds. The literal standalone flux gate has exact levelwise curved non-Einstein root families under this readout | Kinematic existence is not native interlevel admission, physical gauge, action transfer or a successful joint Euler solve. Arbitrary finite Gram-fiber feasibility is not asserted. |
+| `ArchiveChainConnection`, `ArchiveAffineCartanConnection`, `ArchiveAffineExteriorLink`, `A4DRawSolderFrameAction` | Actual Lorentz affine pull links, free raw solder, transported center and independent shifts | Exact matrix/holonomy/torsion and joint-variation bindings; complete periodic transported-center range and fibers; smooth all-ten/all-24 geometry preparation | Even near-identity injective centering has full inverse at least 2/(Ch). Corrected physical connection residual is O(h^2) under the published probe premise; no physical refinement arrow is selected | Kinematic readout is not a native action law, source, joint stationary solution or centered-Cartan connection/Ward law. All raw/affine invisible directions are retained. |
 | `ArchiveLocalLaplacianVariation` | Genuine undirected edge conductance variations on `ArchiveRolePhasePoint n`, with off-diagonal support zero away from Role-product adjacency | Exact conductance/local-Laplacian variation equivalence | Four-Role product carrier; this is distinct from the one-dimensional phase carrier of `ArchiveVariation` | This fixes locality on its actual carrier. The isomorphism cannot silently be used as a phase-seam or physical metric variation map. |
 | `ArchiveLaplacianRG`, `ArchiveRolePhaseProductCarrier`, `A4DGoldenAFCommutativeTargetBoundary` | Actual phase projection, coordinatewise Role points and pointwise observable algebra; all positive normalized linear point states | Full compatible-state class is the countable-history probability simplex; point/local positive physical readouts cannot recover smooth volume. Finite state/pushforward and scalar Hodge-isometry equivalences compile | Exact compatibility or vanishing total TV error suffices for arbitrary point placements. Near direct placement, vanishing composed error on fixed smooth tests alone forces delta_0 | A state on point observables is not a field-configuration state. Neither action-contrast bounds nor nonlocal quadratic positivity imply these positive-state hypotheses. No native physical measure is selected. |
 | `Probability.FiniteArchiveMeasure` | The literal rational eight-point cross with weights 1/8 | `archiveStageMeasure n` is independent of n and has eight atoms; both facts compile | Distinct from uniform Role-grid volume and the existing golden flattened-record measure | The actual finite measure does not by itself supply physical spacetime volume or its metric variation. |
@@ -264,6 +290,7 @@ a nonvacuous positive realization or as #310's required exact hostile family.
 | Bare positive log-det action with bounded positive conductances and two specified flat preparation maps | Stronger scoped contrast obstruction | For either coupling sign and arbitrary normalization, vanishing flat contrasts force vanishing curved contrasts under the explicit uniform endpoint probe bound. Nonlinear and spatially oscillating preparation is allowed. Missing flat maps, signed weights, uncontrolled sensitivity and geometry-dependent subtractions remain outside the theorem. |
 | All positive point states of the actual coordinatewise Role-refinement diagram | Complete state class and scoped volume-recovery obstruction | Exact compatible states are arbitrary probability mixtures on countable histories. Arbitrary deterministic/shrinking positive local readouts have atomic limits, also with vanishing total composed TV error. Direct or nearby placement requires only fixed smooth doubling-test consistency to force delta_0; positive smooth metric volume has a fixed probe gap at least m/32. Adjacent smallness, nonlocal kernels, signed/field states and other diagrams remain separate. |
 | Actual centered Gram map and smooth symmetric variations | Constructive kinematic range and scoped full-gate obstruction | Midpoint samples lift smooth metrics and all ten probes with O(h^2) error. The actual standalone zero-field flux branch has non-Einstein curved limits and a nonzero physical versus zero native contrast. This class uses the levelwise free Euler equations; the literal componentwise scalar pullback has only constant smooth metric limits, also under bounded-raw/vanishing-composed-error preparation. Other native transition classes require their own admission proof. |
+| Actual native affine links and transported coframe readout | Constructive kinematic map and complete finite fiber criterion | Cycle holonomy classifies every row range/kernel. Half-transport midpoint preparation realizes smooth metric and independent connection variations with explicit corrections. Joint native equations, action/source/refinement transfer and physical Ward remain open. |
 | Native matter metric variation and joint Ward identity | OPEN | Existing total neutrality/zero-source/conditional Ward results do not construct this system |
 
 The smallest remaining first-stage obligation is a typed native physical

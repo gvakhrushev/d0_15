@@ -41,14 +41,16 @@
         "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
         "02_REGISTRY/research/A4D_NATIVE_LOGDET_SOURCE_BOUNDARY.md",
         "02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md",
-        "02_REGISTRY/research/A4D_NATIVE_CENTERED_METRIC_LIFT.md"
+        "02_REGISTRY/research/A4D_NATIVE_CENTERED_METRIC_LIFT.md",
+        "02_REGISTRY/research/A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md"
       ],
-      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used. The nonlinear feedback formula does not select its supplied profile: an exact exponential encoding realizes arbitrary input actions. Its old Boolean source and finite Higgs capstones are not completeness theorems. The complete positive point-state class under actual coordinatewise Role refinement has an atomic local-volume limit; direct physical placement needs only fixed smooth doubling-test consistency for the obstruction. These state/volume hypotheses are conditional on using that physical arrow, not inferred from the action-contrast bound or imposed on all field states. The actual centered coframe-to-Gram map now has explicit smooth metric and all-ten-probe lifts with O(h^2) corrections and bounds derived from the declared smooth preparation. This constructs one kinematic part; it supplies no connection, action/source/refinement map or interlevel admission.",
+      "verification": "Typed concrete maps and equations, not an archive encoding of action numbers. The concrete class-level detector representation is already constructed. Formal verification and point-test process classification do not by themselves supply the physical maps; the precise interface and carrier must be stated if used. The nonlinear feedback formula does not select its supplied profile: an exact exponential encoding realizes arbitrary input actions. Its old Boolean source and finite Higgs capstones are not completeness theorems. The complete positive point-state class under actual coordinatewise Role refinement has an atomic local-volume limit; direct physical placement needs only fixed smooth doubling-test consistency for the obstruction. These state/volume hypotheses are conditional on using that physical arrow, not inferred from the action-contrast bound or imposed on all field states. The actual centered coframe-to-Gram map now has explicit smooth metric and all-ten-probe lifts with O(h^2) corrections and bounds derived from the declared smooth preparation. The transported extension now supplies an actual affine Lorentz link readout, exact joint raw/link variations and complete cycle-holonomy fiber classification. Smooth native data map to corrected physical coframes/links and all ten metric plus 24 connection variations. Action/source/refinement transfer, native interlevel admission and coupled on-shell equations remain open.",
       "status": "OPEN",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
       "depends_on": [
-        "constitutive"
+        "constitutive",
+        "native_transported_connection"
       ]
     },
     {
@@ -340,9 +342,10 @@
         "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md",
         "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md#5-exact-range-obstruction-with-bounded-nonsingular-backgrounds",
         "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md#3-invertible-indefinite-form-exact-kernel-and-source-relation",
-        "02_REGISTRY/research/A4D_NATIVE_CENTERED_METRIC_LIFT.md"
+        "02_REGISTRY/research/A4D_NATIVE_CENTERED_METRIC_LIFT.md",
+        "02_REGISTRY/research/A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md"
       ],
-      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol. The mixed-parent field Hessian has rank 2n+rank(K^T M^-1 K), with source-capable quotient ker(K^T M^-1 K)/ker K equal to the image radical; no physical gauge identification is inferred. The separate source-readout Gram has a sharp inverse bound 1/(2L^4), but this is explicitly not the joint Euler operator; its raw observable kernel is retained. The supplied-source log-det inverse is quantitatively bounded only under its explicit resolvent/coupling bounds; bounded source alone fails in an exact nonempty three-vertex family. This is not the coupled physical range operator. The actual linear centered metric readout has a complete range inverse with sharp Frobenius norm 1/(sqrt(2)sin(pi/L)) for even L; its raw kernel is retained. Fixed smooth probes instead have a uniformly bounded midpoint lift with O(h^2) readout error. Neither calculation is a joint Euler inverse or physical gauge theorem.",
+      "verification": "Range estimate and finite/analytic quotient proof. Full #317 complex stratification is required only if consumed here. The literal finite vector owner has a complete compiled range/commutant classification and an exact bounded nonsingular constant-rank family with inverse delta^-2; this is not the A4D connection symbol. The mixed-parent field Hessian has rank 2n+rank(K^T M^-1 K), with source-capable quotient ker(K^T M^-1 K)/ker K equal to the image radical; no physical gauge identification is inferred. The separate source-readout Gram has a sharp inverse bound 1/(2L^4), but this is explicitly not the joint Euler operator; its raw observable kernel is retained. The supplied-source log-det inverse is quantitatively bounded only under its explicit resolvent/coupling bounds; bounded source alone fails in an exact nonempty three-vertex family. This is not the coupled physical range operator. The actual linear centered metric readout has a complete range inverse with sharp Frobenius norm 1/(sqrt(2)sin(pi/L)) for even L; its raw kernel is retained. Fixed smooth probes instead have a uniformly bounded midpoint lift with O(h^2) readout error. Neither calculation is a joint Euler inverse or physical gauge theorem. The transported-center range has a complete cycle-holonomy criterion and conditional explicit inverse bound; every injective even near-identity instance has full inverse norm at least 2/(Ch). This does not imply a least-positive singular bound in the singular case and is not the coupled Euler operator.",
       "status": "OPEN_FOR_NATIVE_SYSTEM",
       "terminal_class": null,
       "required_terminal": "CORE_OR_COMPLETE_SCOPED_NOGO",
@@ -802,6 +805,37 @@
         "literal_flux_joint_gate",
         "probe_law"
       ]
+    },
+    {
+      "id": "native_transported_connection",
+      "scope": "Actual affine Lorentz pull-link readout, complete finite transported-center fibers, and simultaneous smooth coframe/link/variation preparation on the periodic carrier.",
+      "hypotheses": [
+        "Stored native links pull vectors from x+r to x; raw rows use R=U and the actual transported center.",
+        "Finite classification permits every invertible cycle link; raw nondegeneracy is retained as a separate condition outside the smooth preparation class.",
+        "Smooth periodic invertible solder and eta-skew connection have declared C^(k+2) and inverse bounds; all constants are derived from that preparation.",
+        "The all-24-row O(h^2) physical residual uses the independently published finite-probe theorem and its bounded-stencil estimate.",
+        "No native action, physical refinement arrow, matter/source law, gauge quotient or on-shell gate is selected.",
+        "The separate contrast obstruction admits exactly the standalone free flux equations with unconstrained spectator links; no additional native connection or interlevel gate is included.",
+        "Refinement conclusions test the previous explicitly specified scalar/graded raw-field arrows under uniform near-identity links; no alternative physical arrow is selected."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveChainConnection.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveChainCurvature.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean",
+        "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean",
+        "02_REGISTRY/research/A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md",
+        "02_REGISTRY/research/certificates/a4d_native_transported_connection.lean",
+        "02_REGISTRY/research/certificates/a4d_native_transported_connection_check.py"
+      ],
+      "verification": "Eighteen new and two reused owner propositions compile with 50 transitive D0 pins and five printed actual types. Complete cycle-holonomy range/kernel/determinant classification, conditional inverse bound and smooth half-transport midpoint O(h^2) preparation are analytical. 162 exact controls check full finite cycle operators/fibers, noncommuting order, all ten metric and 24 connection directions, joint raw/link variations and all curvature/torsion slots. Full even-grid inverse growth, singular quotient exception, unselected action/refinement and retained invisible shifts/raw kernels are explicit. The standalone flux gate with unconstrained spectator links has exact curved zero-field roots with physical half-contrast -3*pi^2*h^(1/3)/50+O(h) and native zero, excluding O(h) transfer in that class. Additional native connection/interlevel gates are not assumed satisfied. For the previously specified actual scalar/graded arrows and R_h=I+O(h), transport preserves the constant/zero/eta metric-limit classes. Bounded raw L2 preparation gives transported Gram difference at most (Ch+C^2h^2/4)B^2; the old composed-error extension retains its premises. No general approximate graded or concentration claim is made. At the flat point the complete metric-only joint rank is 10L^4-4L^3 on even grids, but independently prescribing metric and all links retains cokernel 4L^3+6L^2; all three L=2 real-space ranks 104/128/488 are checked exactly. Smooth approximate preparation is not arbitrary finite joint surjectivity.",
+      "status": "PROVED_KINEMATIC_CONNECTION_AND_COMPLETE_TRANSPORTED_FIBER_CLASS_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_KINEMATIC_CLASS_AND_EXPLICIT_DYNAMIC_BOUNDARY",
+      "depends_on": [
+        "native_centered_metric_lift",
+        "probe_law"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -832,5 +866,6 @@
   "edge_source_input_head": "2cba34623e346eb75a7a9ae42a550e4a52178a54",
   "logdet_source_input_head": "32e7a1da7c191ef8567647d56d69995b475a84bb",
   "measure_refinement_input_head": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
-  "centered_metric_lift_input_head": "98269b4ffbd19338a2b162d4e14ea8c4ec08609a"
+  "centered_metric_lift_input_head": "98269b4ffbd19338a2b162d4e14ea8c4ec08609a",
+  "transported_connection_input_head": "fc12fc7800eff1a0fb74d73c9d920128cbc9450f"
 }

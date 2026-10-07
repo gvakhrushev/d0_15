@@ -4,6 +4,31 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [native transported connection realization](A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md)
+now binds actual affine Lorentz pull links to physical link matrices and
+classifies every finite transported-center fiber by its cycle holonomy.
+The full joint raw/link variation is explicit, including its mixed term.
+A half-transport midpoint construction gives corrected smooth metrics and
+all ten metric and 24 connection variations, without a uniform grid inverse.
+When the continuum connection is Levi-Civita, the actual corrected readout
+enters the existing all-24-row O(h^2) physical preparation domain. This is
+kinematic realization, not a native action identity or an on-shell solution.
+Even nontrivial holonomy cannot supply a mesh-independent full inverse for
+even near-identity cycles; all affine shifts and raw kernels are retained.
+Twenty compiled propositions with 50 transitive source pins and 162 exact
+controls keep action/source/refinement transfer and the physical Ward open.
+The standalone flux gate with unconstrained spectator links still has exact
+curved zero-field roots: transported readout alone cannot change its zero
+native contrast into the nonzero physical Einstein contrast. This scoped
+levelwise result does not assume additional connection/interlevel gates.
+For the already specified scalar/graded native arrows, near-identity links
+do not remove the refinement obstruction: scalar smooth limits stay constant,
+and graded full/perturbation limits stay zero/eta in measure. The bounded-raw
+L2 version has explicit transported Gram error at most (Ch+C^2h^2/4)B^2.
+The exact flat joint differential also distinguishes metric-only reachability
+from independently prescribed metric/link targets; the latter retains the
+even-grid cokernel 4L^3+6L^2. Smooth approximate lifts do not remove it.
+
 The [actual centered metric lift](A4D_NATIVE_CENTERED_METRIC_LIFT.md)
 now constructs native coframe fields and variations realizing every metric
 and symmetric probe in the declared smooth solder class up to O(h^2),
