@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b`, following
-`20928b17563fc1d840bbc204ced7c3fd28610175`.
+`af3658e09762860e1e38820fd8bc11de54403cff`, following
+`9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -19,7 +19,7 @@ The plan remains CONTROL metadata; the proof and certificates are source artifac
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-161 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+167 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -111,7 +111,7 @@ the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
 capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 83 pins of the G0
 ownership capsule and the two pins of the separate external-review capsule, the registry snapshot
-and all twenty-five exact certificates' input hashes match
+and all twenty-six exact certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -483,15 +483,17 @@ local file or an implicitly merged scientific parent.
 
 38. **Complete nonnegative homogeneous source class and positive jets:** Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.
 
+39. **Complete supplied parent and observable stationary/source class:** The complete supplied covariant linear four-slot parent interface is classified by seed maps on the actual constrained joint quotient. Its visible action uses M and K=dD star1 dP; pointwise K rank is bounded by the middle dimension, with global smooth factorization retained separately. Genuine nonsymmetric field/source derivatives give the full Hessian kernel and its restricted background jets. Complete stationary/source comparison uses the entire kernel for a full readout, or the projected quadratic source relation when auxiliaries are omitted. Distinct M,K can be equivalent by an invertible auxiliary change; off-shell coefficient differences alone do not establish physical differences. A fixed sixteen-component native seed family has its entire joint gate classified: theta=0 admits every physical matter field, while every theta!=0, including a singular star, allows only the eight even components with both auxiliaries zero. All nondegenerate backgrounds remain allowed. Ten actual uniform metric probes, packed weights and all 24 admitted Lorentz link directions are checked. Twenty-three all-size propositions, 52 D0 pins, 139 exact controls and 21 false-scope rejections pass. This is the explicitly supplied parent interface, not a selected physical differential, native history action, refinement, physical Ward or whole-core obstruction. The next G0 lemma must derive the observable parent law from owned native histories; stationary equivalence alone does not transfer finite off-shell contrasts. G0 and every original terminal stay open.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The 161 imported files
+labels, Lean owners and BOOK text are unchanged. The 167 imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The twenty-five self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41 and 114 exact controls without
+The twenty-six self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41, 114 and 139 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -567,7 +569,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 161 artifact blobs and 361 distinct artifact/input hashes
+are rejected. All 167 artifact blobs and 367 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -731,3 +733,17 @@ remain exceptions. The full native coupled action/refinement is still required.
 The exact rational control has point source one and normalized h^(1/3)
 contrast tending to zero, preventing an unsupported derivative/limit exchange.
 No nonzero physical source, physical Ward or Einstein equation is selected.
+
+
+The [complete supplied parent law](A4D_NATIVE_PARENT_LAW_COMPLETENESS.md)
+is imported with its 23 compiled propositions, 15 actual theorem types,
+52 transitive D0 pins, 139 exact controls and 21 false-scope rejections.
+The all-size joint seed gate is proved in both directions, including the
+zero parameter and singular star. Its projected physical-root distinction
+survives elimination of both auxiliaries. Conversely an explicit invertible
+auxiliary action equivalence shows why unequal off-shell M,K are insufficient.
+All-site covariance/descent and projected quadratic-image assembly have
+explicit analytic scope; the structure's arbitrary slots are not identified
+with selected physical differentials. G0 must derive the observable law and
+native refinement from owned histories. Stationary/source equivalence does
+not by itself preserve finite probes or prove the gravitational transfer.

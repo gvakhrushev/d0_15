@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "dec2b55c8c452c7c5e04644f911b1f3384fa0c1dd38210345380b0ea94d9bdd0",
-      "source_blob": "736879249f48ea70810337af74494f145557e369"
+      "sha256": "ade245a7278fa518f3f909d5b65f0c610ac767754fddfe983704f9f60a979142",
+      "source_blob": "6091b91920ecb8cf9069306ce928f5865eb85982"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "7a22f45166d5747bc1a94622996555d44d5dc36e88d154d13f6b9985c6b7ba5a",
-      "source_blob": "49a4fa08e9a7d4a8c8a350cbdb9be52cf768acfc"
+      "sha256": "efc6e911488a9684f7a27fcb15729c6eaf85e50d9409cfa5f6d8054e9b4e437d",
+      "source_blob": "d21546195e13467d9d776ef95c6ab15c9bb462d7"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -806,6 +806,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_positive_source_certificate.json",
       "sha256": "492ec37d90c4ca27efa5d308fef5035f424a785b74251a6f4a47f92ac83d95bf",
       "source_blob": "f3090b3eb7cc272d4e3507dfbaf1b5a501f48018"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
+      "sha256": "ae2dd05c99ee8932f74478b054b7fbc1e171d81ef2fdb8ab5d730fd18cd17a78",
+      "source_blob": "fae91463b48443dfe8dff4f5b9d6a502b9dcfee5"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_law.lean",
+      "sha256": "8a243a4baa6fb0865cdd9c721709aa0311c579478287eceb1e97dc7e0681ee1a",
+      "source_blob": "39f440dc2751993a4f07ae078835c12d0413e30a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_law_output.txt",
+      "sha256": "f43a9409230267ef5d38ec736ad52843a64a6dee089fb1d7c7a75a761922f506",
+      "source_blob": "1b65e9971002e6c16a73f2e2cb5390fec6719f15"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_law_results.json",
+      "sha256": "1f8ab4b8598f3c3fdc8952dbe8654efc092dd6b49938b28506898469781ac39e",
+      "source_blob": "cede07129193a1ae5aa7ad8de71e5705326bee9f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_law_check.py",
+      "sha256": "cf703031ed71fbe426b333a32565f899419585269921a523cc09945ff0a974b8",
+      "source_blob": "75e65c754a3607427f06c2ceb7365d046f406a99"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_parent_law_certificate.json",
+      "sha256": "c8c3a740ee104c54304f53a43c78717feececaf463eb409f0e6a74d83a0b39df",
+      "source_blob": "8b9f83d654c7fe846bc8cfc36d90ea353a278321"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -814,7 +844,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "20928b17563fc1d840bbc204ced7c3fd28610175",
+  "previous_source_head": "9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -855,11 +885,12 @@
     "The four unchanged supplementary external inputs replay 49 PASS but include an unconditional-success S1d, arithmetic-only S5 claims and symbol-only S6j. T16 is explicitly withdrawn; T9/T15 corrections are consistent with the previous review. Existing full rank owners imply dim(ker R intersect im d) =60 for even L and zero for odd L; the correctly typed ker R/(ker R intersect im d) has dimension 1828 at L=4. The exact witness has raw curl +8 and is outside the forward image; this does not exclude all physical gauge or prove physical curvature/on-shell admission. The supplied patch does not match the current script, and extra_dim.json has one-dimensional sizes, not the four-dimensional carrier. Thirty-one independent controls and 13 false-scope mutations pass. No G0, physical source, positive GR, global closure, whole-core no-go or original parent terminal is promoted.",
     "The full scalar total-affine-transport class is derived from actual native path concatenation using two independent stored links. It is exactly the affine character class. Translation blindness, inverse/append/gauge laws and all-word linear-factor dependence are compiled. The complete real four-dimensional class is an additive function of log absolute determinant, with a single coefficient under continuity. The affine Lorentz-only class is identically zero even without a GL extension or continuity, by the analytic boost/rotation/translation proof. All 24 link, 16 raw-coframe and ten metric rows are checked. If the already proved nonzero metric pencil is admitted, the O(h) contrast transfer fails for every nonzero calibration. Context-dependent path weights, retained coframe/matter data, nonadditive joint actions and native refinement/admission remain outside that no-go. Twenty-one Lean declarations, 36 transitive native pins, 49 exact controls and 17 rejected false-scope mutations preserve G0 and every original terminal as open.",
     "The complete joint nondegenerate raw-solder/Lorentz-link/affine-shift/full-exterior-matter quotient is (q,D,b,m), with exactly D q_target D^T=q_source and no further b or m constraints. Explicit reconstruction proves orbit and tangent completeness analytically. Only the actual 6v local Lorentz gauge directions are removed; the quotient has dimension 66v. The literal transported center is exactly B(D)F, compiled for every N. Where B is invertible, (centered metric, raw dressed links, b, m) remains complete. Replacing raw dressed links by centered-frame links loses an explicit nongauge Nyquist family. The full four-sector internal Lorentz Ward identity retains coframe, link, shift and matter terms. Ambient metric derivatives can differ for identical native actions by an arbitrary extension of the metric-isometry constraint; genuine derivative counterexamples are compiled. Path blocking is compatible if independently specified, without selecting native refinement or an action. Fifteen compiled declarations, 51 transitive native pins and 41 exact controls retain the native action/source/physical-Ward/contrast and recovery obligations. Finite ranks certify one full star, not the all-size analytic theorem. Nineteen false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
-    "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open."
+    "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
+    "The complete supplied covariant linear four-slot parent interface is classified by seed maps on the actual constrained joint quotient. Its visible action uses M and K=dD star1 dP; pointwise K rank is bounded by the middle dimension, with global smooth factorization retained separately. Genuine nonsymmetric field/source derivatives give the full Hessian kernel and its restricted background jets. Complete stationary/source comparison uses the entire kernel for a full readout, or the projected quadratic source relation when auxiliaries are omitted. Distinct M,K can be equivalent by an invertible auxiliary change; off-shell coefficient differences alone do not establish physical differences. A fixed sixteen-component native seed family has its entire joint gate classified: theta=0 admits every physical matter field, while every theta!=0, including a singular star, allows only the eight even components with both auxiliaries zero. All nondegenerate backgrounds remain allowed. Ten actual uniform metric probes, packed weights and all 24 admitted Lorentz link directions are checked. Twenty-three all-size propositions, 52 D0 pins, 139 exact controls and 21 false-scope rejections pass. This is the explicitly supplied parent interface, not a selected physical differential, native history action, refinement, physical Ward or whole-core obstruction. The next G0 lemma must derive the observable parent law from owned native histories; stationary equivalence alone does not transfer finite off-shell contrasts. G0 and every original terminal stay open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b",
+  "source_head": "af3658e09762860e1e38820fd8bc11de54403cff",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "20928b17563fc1d840bbc204ced7c3fd28610175",
+  "source_parent": "9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b",
   "source_pr": 310
 }

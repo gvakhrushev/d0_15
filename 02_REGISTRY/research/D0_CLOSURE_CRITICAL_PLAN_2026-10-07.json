@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "dec2b55c8c452c7c5e04644f911b1f3384fa0c1dd38210345380b0ea94d9bdd0",
+    "sha256": "ade245a7278fa518f3f909d5b65f0c610ac767754fddfe983704f9f60a979142",
     "global_census": false
   },
   "history_diagnosis": {
@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b",
+    "source_head": "af3658e09762860e1e38820fd8bc11de54403cff",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -189,7 +189,7 @@
     "transitive_d0_source_pins": 83,
     "exact_controls": 154,
     "rejected_false_scope_ledgers": 43,
-    "remaining_proposition": "Derive the independently owned joint history/record field action on the explicit complete constrained (q,D,b,m) carrier, or justify another native carrier. Prove its complete admitted family, genuine constrained variations, Euler equations and native refinement. The complete locally nonnegative positive-degree homogeneous full-free-field class has zero genuine source at all full roots; a nonzero source must therefore use an independently owned feature outside that class, rather than another positive moving weight. This does not exclude curved vacuum Einstein solutions or select the geometric action. Primitive cost positivity is not effective action positivity. Lorentz indefinite actions, nonhomogeneous potentials and independently owned constraints excluding the radial variation remain unclassified native exceptions. Prove actual uniform action-jet bounds or a direct finite-contrast estimate at epsilon=h^(1/3); small fields/operator values/residuals alone permit point source one and normalized contrast zero. No arbitrary off-constraint extension defines native stress. A physical source and physical Ward, calibrated contrast, joint curved solutions and soundness/recovery remain required. All original goal and parent terminal criteria are preserved.",
+    "remaining_proposition": "Derive the independent native history/record-to-parent law on the constrained (q,D,b,m) carrier, or justify another owned native carrier. The complete supplied covariant four-slot interface and its genuine field/source equations are now classified. Do not demand unique raw operators before comparing the actual physical readout: use full kernel/restricted jets or the projected stationary/source relation when auxiliaries are omitted. Prove which visible M,K or observable class follows from the existing histories/composition and all admitted constraints; covariance alone permits different full joint gates, including a singular star. Supply the actual finite action, allowed variations, native preparation/refinement and their commutation. On-shell equivalence alone is insufficient for finite-probe transfer. The complete positive homogeneous source theorem remains consumed; a nonzero source must use an independently owned exception. Prove actual uniform action/probe bounds at epsilon=h^(1/3). Physical Ward, calibrated contrast, joint curved solutions, soundness/recovery, physical restrictions and all original terminals remain required.",
     "action_level_nonuniqueness_is_physical_nonuniqueness": false,
     "composition_disposition": "Use the genuine order-two law and the complete simultaneous flat fiber, retaining isotropy. Its mathematical Dg family is classified on im d; transverse/curved physical admission is not supplied.",
     "flat_metric_disposition": "Translation tests are exactly divergence zero. The full metric annihilator and strong-coframe smooth flat limit are classified; do not promote them to whole-core impossibility, physical gauge, or metric-only compactness.",
@@ -271,21 +271,37 @@
     },
     "next_proof_packet": {
       "stage": "G0",
-      "carrier_input": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md",
-      "positive_source_input": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_SOURCE_JETS.md",
-      "source_head": "9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b",
+      "source_head": "af3658e09762860e1e38820fd8bc11de54403cff",
       "no_new_registered_task": true,
       "no_new_physical_postulate": true,
+      "carrier_input": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md",
+      "parent_law_input": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
+      "positive_source_input": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_SOURCE_JETS.md",
+      "single_first_lemma": "Owned native history/record-to-visible-parent factorization, with the actual physical comparison.",
       "outputs": [
-        "Owned action and complete admitted family on genuine native histories/states.",
-        "Actual Euler equations, physical background variation and native refinement.",
-        "Positive construction, or a complete typed derivability obstruction; no inference from missing definitions.",
-        "Quantitative action/probe control when proceeding to the gravitational transfer."
+        "Owned finite action law derived from histories/records/composition, with every free native datum and its hypotheses.",
+        "Complete admissible family and actual stationary/source comparison after the appropriate physical readout.",
+        "Actual constrained variations, Euler equations, preparation and commuting native refinement.",
+        "Finite-probe action control before the gravitational transfer; stationary equivalence alone is insufficient.",
+        "Positive construction or complete typed derivability obstruction, retaining all original terminals."
       ],
       "do_not_repeat": [
-        "Joint quotient or finite rank census.",
-        "Positive-weight nonzero-source search inside the excluded complete class."
+        "Joint quotient or rank census.",
+        "Four-slot covariance and nonsymmetric parent derivative classification.",
+        "Off-shell coefficient inequality as physical nonuniqueness.",
+        "Auxiliary matching for a readout which omits auxiliaries.",
+        "Positive moving-weight nonzero-source search inside the excluded class."
       ]
+    },
+    "parent_law_completeness_consumer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
+      "compiled_declarations": 23,
+      "actual_theorem_types": 15,
+      "transitive_d0_source_pins": 52,
+      "exact_controls": 139,
+      "rejected_false_scope_ledgers": 21,
+      "result": "The complete supplied covariant linear four-slot parent interface is classified by seed maps on the actual constrained joint quotient. Its visible action uses M and K=dD star1 dP; pointwise K rank is bounded by the middle dimension, with global smooth factorization retained separately. Genuine nonsymmetric field/source derivatives give the full Hessian kernel and its restricted background jets. Complete stationary/source comparison uses the entire kernel for a full readout, or the projected quadratic source relation when auxiliaries are omitted. Distinct M,K can be equivalent by an invertible auxiliary change; off-shell coefficient differences alone do not establish physical differences. A fixed sixteen-component native seed family has its entire joint gate classified: theta=0 admits every physical matter field, while every theta!=0, including a singular star, allows only the eight even components with both auxiliaries zero. All nondegenerate backgrounds remain allowed. Ten actual uniform metric probes, packed weights and all 24 admitted Lorentz link directions are checked. Twenty-three all-size propositions, 52 D0 pins, 139 exact controls and 21 false-scope rejections pass. This is the explicitly supplied parent interface, not a selected physical differential, native history action, refinement, physical Ward or whole-core obstruction. The next G0 lemma must derive the observable parent law from owned native histories; stationary equivalence alone does not transfer finite off-shell contrasts. G0 and every original terminal stay open.",
+      "g0_closed": false
     }
   }
 }
