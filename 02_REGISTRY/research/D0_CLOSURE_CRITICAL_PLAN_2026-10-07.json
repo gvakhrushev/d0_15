@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "c30ab89fb5472db6f4aa1e5063b643e542ab0dbd856f14d4954a7bc162015869",
+    "sha256": "dec2b55c8c452c7c5e04644f911b1f3384fa0c1dd38210345380b0ea94d9bdd0",
     "global_census": false
   },
   "history_diagnosis": {
@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "20928b17563fc1d840bbc204ced7c3fd28610175",
+    "source_head": "9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -189,7 +189,7 @@
     "transitive_d0_source_pins": 83,
     "exact_controls": 154,
     "rejected_false_scope_ledgers": 43,
-    "remaining_proposition": "Derive the independently owned joint field-dependent history/record action on the now explicit complete constrained (q,D,b,m) carrier, or justify another native carrier. Prove its admitted family, genuine constrained variations, Euler equations and native refinement. The quotient image and local Lorentz tangent kernel are classified, but kinematic invariance does not select an action or a source. An arbitrary extension off D q_target D^T=q_source cannot define a native metric source; raw information cannot be discarded through centered readout alone. The actual action and a justified physical variation/splitting must supply the source and physical Ward identity before contrast transfer, joint curved solutions and soundness/recovery. All original goal and parent terminal criteria are preserved.",
+    "remaining_proposition": "Derive the independently owned joint history/record field action on the explicit complete constrained (q,D,b,m) carrier, or justify another native carrier. Prove its complete admitted family, genuine constrained variations, Euler equations and native refinement. The complete locally nonnegative positive-degree homogeneous full-free-field class has zero genuine source at all full roots; a nonzero source must therefore use an independently owned feature outside that class, rather than another positive moving weight. This does not exclude curved vacuum Einstein solutions or select the geometric action. Primitive cost positivity is not effective action positivity. Lorentz indefinite actions, nonhomogeneous potentials and independently owned constraints excluding the radial variation remain unclassified native exceptions. Prove actual uniform action-jet bounds or a direct finite-contrast estimate at epsilon=h^(1/3); small fields/operator values/residuals alone permit point source one and normalized contrast zero. No arbitrary off-constraint extension defines native stress. A physical source and physical Ward, calibrated contrast, joint curved solutions and soundness/recovery remain required. All original goal and parent terminal criteria are preserved.",
     "action_level_nonuniqueness_is_physical_nonuniqueness": false,
     "composition_disposition": "Use the genuine order-two law and the complete simultaneous flat fiber, retaining isotropy. Its mathematical Dg family is classified on im d; transverse/curved physical admission is not supplied.",
     "flat_metric_disposition": "Translation tests are exactly divergence zero. The full metric annihilator and strong-coframe smooth flat limit are classified; do not promote them to whole-core impossibility, physical gauge, or metric-only compactness.",
@@ -259,6 +259,33 @@
       "rejected_false_scope_ledgers": 19,
       "result": "The complete joint nondegenerate raw-solder/Lorentz-link/affine-shift/full-exterior-matter quotient is (q,D,b,m), with exactly D q_target D^T=q_source and no further b or m constraints. Explicit reconstruction proves orbit and tangent completeness analytically. Only the actual 6v local Lorentz gauge directions are removed; the quotient has dimension 66v. The literal transported center is exactly B(D)F, compiled for every N. Where B is invertible, (centered metric, raw dressed links, b, m) remains complete. Replacing raw dressed links by centered-frame links loses an explicit nongauge Nyquist family. The full four-sector internal Lorentz Ward identity retains coframe, link, shift and matter terms. Ambient metric derivatives can differ for identical native actions by an arbitrary extension of the metric-isometry constraint; genuine derivative counterexamples are compiled. Path blocking is compatible if independently specified, without selecting native refinement or an action. Fifteen compiled declarations, 51 transitive native pins and 41 exact controls retain the native action/source/physical-Ward/contrast and recovery obligations. Finite ranks certify one full star, not the all-size analytic theorem. Nineteen false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
+    },
+    "positive_source_jets_consumer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_SOURCE_JETS.md",
+      "compiled_declarations": 18,
+      "transitive_d0_source_pins": 40,
+      "exact_controls": 114,
+      "rejected_false_scope_ledgers": 22,
+      "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
+      "g0_closed": false
+    },
+    "next_proof_packet": {
+      "stage": "G0",
+      "carrier_input": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md",
+      "positive_source_input": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_SOURCE_JETS.md",
+      "source_head": "9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b",
+      "no_new_registered_task": true,
+      "no_new_physical_postulate": true,
+      "outputs": [
+        "Owned action and complete admitted family on genuine native histories/states.",
+        "Actual Euler equations, physical background variation and native refinement.",
+        "Positive construction, or a complete typed derivability obstruction; no inference from missing definitions.",
+        "Quantitative action/probe control when proceeding to the gravitational transfer."
+      ],
+      "do_not_repeat": [
+        "Joint quotient or finite rank census.",
+        "Positive-weight nonzero-source search inside the excluded complete class."
+      ]
     }
   }
 }

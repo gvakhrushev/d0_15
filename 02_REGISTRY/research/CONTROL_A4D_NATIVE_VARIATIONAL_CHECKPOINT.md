@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`20928b17563fc1d840bbc204ced7c3fd28610175`, following
-`00aa52091ae004fac6c1dc11964be3fa191b75b8`.
+`9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b`, following
+`20928b17563fc1d840bbc204ced7c3fd28610175`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -19,7 +19,7 @@ The plan remains CONTROL metadata; the proof and certificates are source artifac
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-155 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+161 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -111,7 +111,7 @@ the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
 capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 83 pins of the G0
 ownership capsule and the two pins of the separate external-review capsule, the registry snapshot
-and all twenty-four exact certificates' input hashes match
+and all twenty-five exact certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -481,15 +481,17 @@ local file or an implicitly merged scientific parent.
 
 37. **Complete joint field quotient and admissible source variations:** The complete joint nondegenerate raw-solder/Lorentz-link/affine-shift/full-exterior-matter quotient is (q,D,b,m), with exactly D q_target D^T=q_source and no further b or m constraints. Explicit reconstruction proves orbit and tangent completeness analytically. Only the actual 6v local Lorentz gauge directions are removed; the quotient has dimension 66v. The literal transported center is exactly B(D)F, compiled for every N. Where B is invertible, (centered metric, raw dressed links, b, m) remains complete. Replacing raw dressed links by centered-frame links loses an explicit nongauge Nyquist family. The full four-sector internal Lorentz Ward identity retains coframe, link, shift and matter terms. Ambient metric derivatives can differ for identical native actions by an arbitrary extension of the metric-isometry constraint; genuine derivative counterexamples are compiled. Path blocking is compatible if independently specified, without selecting native refinement or an action. Fifteen compiled declarations, 51 transitive native pins and 41 exact controls retain the native action/source/physical-Ward/contrast and recovery obligations. Finite ranks certify one full star, not the all-size analytic theorem. Nineteen false-scope ledger mutations are rejected. G0 and every original terminal remain open.
 
+38. **Complete nonnegative homogeneous source class and positive jets:** Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The 155 imported files
+labels, Lean owners and BOOK text are unchanged. The 161 imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The twenty-four self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49 and 41 exact controls without
+The twenty-five self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41 and 114 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -565,7 +567,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 155 artifact blobs and 355 distinct artifact/input hashes
+are rejected. All 161 artifact blobs and 361 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -715,3 +717,17 @@ or source is inferred from quotient invariance. A source must respect the
 actual constrained variations, and the internal Lorentz identity is not a
 physical stress-divergence law. The 41 controls pass; all 19 false-scope
 ledgers are rejected. Own dynamics and native refinement remain required.
+
+The [complete positive source theorem and jets](A4D_NATIVE_POSITIVE_SOURCE_JETS.md)
+consumes the previous fixed-frame and mixed-parent boundaries. The source
+theorem uses actual two-sided derivatives and an independent field gate;
+the entire positive first/second jet classes retain cross blocks, nonzero
+kernels and rank changes. Eighteen propositions compile with 40 D0 pins;
+114 exact controls and all 22 false-scope rejections pass. All-rank jet
+completeness and C2 preparation estimates have explicit analytic proofs;
+the first-jet inverse is additionally compiled. Locally indefinite actions,
+nonhomogeneous potentials and independently owned radial-excluding constraints
+remain exceptions. The full native coupled action/refinement is still required.
+The exact rational control has point source one and normalized h^(1/3)
+contrast tending to zero, preventing an unsupported derivative/limit exchange.
+No nonzero physical source, physical Ward or Einstein equation is selected.
