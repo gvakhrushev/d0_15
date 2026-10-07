@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "0aa16053d511740e562792d96ff62ae1f4fb0a32c292fdf58fbd602bb2754b56",
-      "source_blob": "2bab3988f3724618dffb5e99dbc4513df854d6b0"
+      "sha256": "8fc5a1110313295676ab2785f30c33a4de2b43678f47ea3591d8a4f09d511841",
+      "source_blob": "4e0b68e1613d77c139fe99a59d53b256b53880eb"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "3552f8ea179514422c22f314fabf22ca11aa79e295ca8d697478acb64aa985b6",
-      "source_blob": "66067f20ded0d42183989075141042e4fb6d2061"
+      "sha256": "9b731ba5870ed7032084ace13150f929dbe80db20f91d27bdd6c000b348a3ed7",
+      "source_blob": "6d9c0537f537211cc525dbf04abad6787606c70d"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -406,6 +406,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_measure_refinement_results.json",
       "sha256": "8da2eef43e5eedffb6bd4af163e7b5a29896954a12a35dddf1e7f686a51a7957",
       "source_blob": "1807d2b479cc38739ae8ef1511de6b51b56f42c0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CENTERED_METRIC_LIFT.md",
+      "sha256": "e154e8030327004ec6fae66380de012727cfedb98d239f41e1abffcf496be6bb",
+      "source_blob": "75689741ac443f6577d0e257f59f9b683cba9866"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift.lean",
+      "sha256": "e6a8f3608a9de3ea705d73a026c8ba493a77974df4dc7d8801b8b0e35c37debf",
+      "source_blob": "fb59430f18d0187628b81e94dd950974f2131d0f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_output.txt",
+      "sha256": "619132add1e03cbb84d4029f96da3023e46702f00b4569a6e885f1247b98cf21",
+      "source_blob": "357e2fe263be9ea2c85e6312210f22a18e10ff3d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_results.json",
+      "sha256": "86ee5a209cf6c2ea7146fa24a6cf6bc22f198e3b445c64edf46662a220bc8bf8",
+      "source_blob": "6c0e806ef4cd440d11439e41df6cfec3b71fec5e"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_check.py",
+      "sha256": "cf5755af28ddc79702c2332bcc8fe0f3ac5ab3e8422ba8a99e7528dcc19b65cc",
+      "source_blob": "33044c9ce104923d41611faadbb0e5a0b123ed2d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_certificate.json",
+      "sha256": "78eb61f67d9be3c5eedf43042bb24a89870775f9ae2c1d91a49d48b6be41a63f",
+      "source_blob": "95e6d8a55412ccb61dfb90d8291d07a47715f3b2"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -414,7 +444,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
+  "previous_source_head": "dae0ec13f9f885ff945c45613ae38becbc097d18",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -439,11 +469,12 @@
     "Every jointly convex full auxiliary profile on affine actual metric fibers fails the two opposite curved Einstein Hessians under one calibration. All-size analytical argument, including nonlinear positive-domain log-det terms with affine inputs; nonempty fibers and all total record/refinement errors are explicit.",
     "Actual coordinate-edge operator with direct nodal fields has exact mixed-coordinate annihilation and a curved weak bilinear gap pi^2/20. A full periodic cell corrector has O(h) field amplitude but mixed response -9/20, protecting prepared-field exceptions; this cell problem is not a physical root or a native preparation theorem.",
     "Bare positive log-det with uniformly bounded positive conductances, controlled endpoint sensitivity and two actual uniform flat comparison maps cannot retain nonzero curved contrast after flat calibration. Both signs, arbitrary mesh couplings/normalizations, nonlinear maps and spatial oscillation are allowed. Missing flat maps, signed weights, unbounded sensitivity and geometry-dependent subtractions stay outside the theorem.",
-    "All positive normalized states on the actual coordinatewise Role-point diagram are summable mixtures on countable address histories, including arbitrary correlations. Exact compatibility or vanishing total composed TV error forces atomic weak limits under arbitrary point/shrinking positive local volume readouts. For direct or uniformly nearby nodal placement, consistency on each fixed smooth doubling test alone permits only delta_0; a smooth positive density has an explicit fixed probe gap at least m/32. Twenty-five compiled propositions, 25 transitive source pins, 92 exact controls and four hostile ledgers. Infinite measure/limit theorems are analytical. Adjacent smallness, different projections, macroscopic kernels, signed/field states and the distinct flattened/eight-atom measures retain their scopes. State consistency is not inferred from the Einstein contrast estimate; no physical measure or action is selected."
+    "All positive normalized states on the actual coordinatewise Role-point diagram are summable mixtures on countable address histories, including arbitrary correlations. Exact compatibility or vanishing total composed TV error forces atomic weak limits under arbitrary point/shrinking positive local volume readouts. For direct or uniformly nearby nodal placement, consistency on each fixed smooth doubling test alone permits only delta_0; a smooth positive density has an explicit fixed probe gap at least m/32. Twenty-five compiled propositions, 25 transitive source pins, 92 exact controls and four hostile ledgers. Infinite measure/limit theorems are analytical. Adjacent smallness, different projections, macroscopic kernels, signed/field states and the distinct flattened/eight-atom measures retain their scopes. State consistency is not inferred from the Einstein contrast estimate; no physical measure or action is selected.",
+    "Actual centered coframe/Gram readout: complete linear centering range inverse and exact nonlinear Lorentz-fiber criterion; smooth metric and all symmetric probe lifts with O(h^2) corrections and explicit preparation bounds. Twenty-two new and two existing propositions compile with 53 source pins; 94 exact controls and nine hostile ledgers retain full raw kernels, packing and high-frequency inverse loss. Exact levelwise standalone flux roots have a curved non-Einstein centered-metric limit, zero native contrast and physical half-contrast -(3*pi^2/50)h^(1/3)+O(h), with corrected continuum-action error at most pi^4 h^2/300. Native interlevel admission is not asserted. The finite fiber criterion does not assert feasibility for arbitrary finite metrics; no action, matter source, connection or physical gauge is added. Original #310 and global native GR remain OPEN. For the separately specified componentwise actual scalar pullback, the complete smooth nondegenerate metric-limit class is constant Lorentz metrics. Its approximate extension consumes bounded raw L2 preparation and vanishing composed L2 defects. The curved midpoint family fails both doubling and fixed-coarse composed consistency, despite vanishing adjacent errors. This transition is not selected as a physical native law. The separate graded one-form B1/B0 lift, in either owned normalization, gives a zero metric limit in measure for full solder transport and only eta for perturbation transport. The former has empty nondegenerate fine fibers; the latter has an actual flat zero-field realization. This is not an L1/concentration or approximate-graded theorem."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "dae0ec13f9f885ff945c45613ae38becbc097d18",
+  "source_head": "fc12fc7800eff1a0fb74d73c9d920128cbc9450f",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
+  "source_parent": "a2172a09179a4f829be88862bfd62d772ab485e3",
   "source_pr": 310
 }
