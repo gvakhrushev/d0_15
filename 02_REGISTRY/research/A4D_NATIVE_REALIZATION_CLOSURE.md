@@ -198,6 +198,25 @@ is zero. The transverse rows E=-2 Tr(NG) D^T D a are retained; zero action
 alone never substitutes for the complete equations. The new package has
 84 exact controls, including all 2304 factor tangents of the L=2 lattice.
 
+The [coupled Hodge and exact scale-fiber result](A4D_NATIVE_COUPLED_HODGE_SCALE_BOUNDARY.md)
+now treats actual coframe-dependent weights and dressed-link data outside
+the coframe-blind class. Their uniform scale invariance remains exact.
+Two curved metrics have exactly equal pointwise volume and explicit native
+transported Gram fibers at every L in 4N, with different physical action
+values. Hence any scale-invariant native coframe/link scalar plus an
+arbitrary separate volume-density profile fails calibrated contrast
+transfer; the paired gap is -9*pi^2*h^(1/3)/200+O(h^(4/3)). Neither bounded
+volume sensitivity nor a polynomial profile is assumed. Eighteen compiled
+propositions have 56 source pins. The all-size construction and smooth
+contrast obstruction are analytical, with all ten metric components and
+all 24 physical and native connection directions retained in exact controls.
+The full coframe-dependent curvature-quadratic gate has exact identity-link
+roots with curved metric readout; a nonzero separate constant volume term
+instead makes its source-free full scale gate empty. The latter conclusion
+does not extend to arbitrary nonlinear volume terms. Genuine mixed
+scale/shape dynamics, probe restrictions and interlevel/matter equations
+remain independent obligations; no new action is selected.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
@@ -236,6 +255,7 @@ than treating comments or theorem names as physical equations.
 | `Geometry.A4DConstitutiveKernelClassification` | Supplied symmetric `H`, field and unselected `alpha`; `Q=1+H+alpha H^2` | Existing strict positivity for `alpha>1/4` forces zero field at its full field gate; at `alpha=1/4` kernel fields have zero first operator source | No coefficient or physical matter law is selected | The candidate binding H=actual flux matrix fails raw Lorentz action descent for every alpha, even on two fixed curved backgrounds. Other maps into supplied H remain open. Field-only roots do not imply a zero pointwise source. |
 | `Algebra.GaugeKineticPositivity`, `Matter.GaugeCurvatureOrigin`, `Matter.VectorOperatorOrigin` | Existing `-c Tr([D,A]^2)` on finite real skew matrices, nonzero c, full independent field variations | Actual first variations and supplied-source gate compiled; full free gate iff `[D,A]=0`; its background response `[A,[D,A]]` is zero | Supplied skew J is solvable iff orthogonal to the commutant; actual simultaneous-conjugation Ward proved. No physical refinement is defined | A physical D(g) and local metric source are not selected. Constant rank and bounded/nonsingular D do not yield a uniform inverse: exact fixed-source family has inverse delta^-2. Kernel shifts may change background response without changing sourced value and need not be gauge. |
 | `Gauge.YangMillsKillingPositivity`, `MatrixRepGaugeTransform`, `NonAbelianSeamObstructionGap` | Supplied curvature/pairing or seam matrix; existing scalar actions, with their actual positivity hypotheses printed | Literal trace instance, all-size polarization/derivative and transported homothety compile. Coframe-independent bindings fail the curved prepared contrast for every coefficient/function in the stated class | No native physical curvature binding, matter law or interlevel admission is selected. The Lorentz trace square is indefinite; Euclidean skew removes 12 of the 24 link directions | Coframe dependence must be independently constructed. Zero curvature-action value is not stationarity, and the Bianchi-named actual proposition proves skewness closure rather than physical divergence. |
+| `ArchiveMetricMeasureHodgeLift`, `A4DMetricStarSignatureBoundary`, `A4DStarFiniteLorentzQuotient` | Actual graded weight formula and dressed-link map; explicitly tested metric/curvature binding of the old supplied-pairing scalar action | All-degree scale law, middle compound invariance, exact special transported fibers and full variable-weight zero-curvature derivative | Scale-invariant coframe/link functionals plus arbitrary separate volume profiles fail the exact equal-volume paired contrast. The Hodge owner proves degree identities/cardinalities, not generic uniqueness or Lorentz positivity | Genuine mixed scale/shape response, selection of a physical pairing/action, matter and interlevel admission remain open. Exact special fibers do not imply general finite surjectivity. |
 | `Gravity.A4DLinearizedMetricResponse` | Finite Euclidean symmetric tensor seed and literal linear response | Quadratic action, exact first variation and gauge nullity | Algebraic finite construction, explicitly not an Einstein tensor | A standalone quadratic affine metric profile cannot reproduce the nonlinear third variation of the curved Gram pencil. |
 | `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001` owners | Supplied reference weight, second jet and covariance/composition hypotheses | Exact second-order identities and explicit coefficient nonselection | Finite algebraic covariance | The registry's current notes correctly retain the supplied Hessian, unselected coefficient and absent physical Einstein/stress interpretation. |
 | `A4D_NATIVE_FINITE_PROBE_COMPLETION.md` | Physical coframe/links and the naked-star action; independent endpoint preparations with full 24-row residual bound | $T_{h,h^{1/3}}=DI(g)[V]+O_V(h^{2/3})$, all ten slots, owner curvature sign | Constructed archive record/operator refinement; independently fixed affine source | A measured action law is not native on-shell stationarity, a native source or physical state/variation mapping. |
@@ -325,6 +345,7 @@ a nonvacuous positive realization or as #310's required exact hostile family.
 | All positive point states of the actual coordinatewise Role-refinement diagram | Complete state class and scoped volume-recovery obstruction | Exact compatible states are arbitrary probability mixtures on countable histories. Arbitrary deterministic/shrinking positive local readouts have atomic limits, also with vanishing total composed TV error. Direct or nearby placement requires only fixed smooth doubling-test consistency to force delta_0; positive smooth metric volume has a fixed probe gap at least m/32. Adjacent smallness, nonlocal kernels, signed/field states and other diagrams remain separate. |
 | Actual centered Gram map and smooth symmetric variations | Constructive kinematic range and scoped full-gate obstruction | Midpoint samples lift smooth metrics and all ten probes with O(h^2) error. The actual standalone zero-field flux branch has non-Einstein curved limits and a nonzero physical versus zero native contrast. This class uses the levelwise free Euler equations; the literal componentwise scalar pullback has only constant smooth metric limits, also under bounded-raw/vanishing-composed-error preparation. Other native transition classes require their own admission proof. |
 | Actual native affine links and transported coframe readout | Constructive kinematic map and complete finite fiber criterion | Cycle holonomy classifies every row range/kernel. Half-transport midpoint preparation realizes smooth metric and independent connection variations with explicit corrections. Joint native equations, action/source/refinement transfer and physical Ward remain open. |
+| Coframe-coupled scale-invariant scalar plus any separate volume-density profile | Complete stated-class contrast obstruction and exact special fibers | Two exact transported native metric fibers have identical volume vectors but physical action difference -9*pi^2/200. Their native half-contrasts agree exactly for arbitrary nonlinear/nonlocal volume terms, violating O(h) transfer at epsilon=h^(1/3). Full quadratic-curvature roots and the constant-volume empty-gate exception retain their separate scopes. Mixed scale/shape terms remain outside. |
 | Native matter metric variation and joint Ward identity | OPEN | Existing total neutrality/zero-source/conditional Ward results do not construct this system |
 
 The smallest remaining first-stage obligation is a typed native physical

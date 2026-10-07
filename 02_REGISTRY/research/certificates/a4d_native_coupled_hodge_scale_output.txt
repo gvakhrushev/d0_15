@@ -1,0 +1,56 @@
+theorem D0.Geometry.archive_metric_measure_hodge_lift_owner : ∀ (mu c_r : ℝ),
+  hodgeMetricMeasureWeight 0 mu 1 = mu ∧
+    hodgeMetricMeasureWeight 1 mu c_r = c_r ∧ Fintype.card CubicalCellType = 16 ∧ Fintype.card Role = 4 :=
+fun mu c_r => ⟨hodge_weight_0_eq_mu mu, ⟨hodge_weight_1_eq_conductance mu c_r, ⟨card_archive_fock_state, card_role⟩⟩⟩
+def D0.Geometry.hodgeMetricMeasureWeight : ℕ → ℝ → ℝ → ℝ :=
+fun k mu prod_c => mu ^ muExponent k * prod_c
+D0.Geometry.a4dDressedLink (Θx L Θy : Matrix Role Role ℝ) : Matrix Role Role ℝ
+D0.Gauge.discreteYangMillsAction {ι κidx g : Type} [Fintype ι] [Fintype κidx] (Killing : g → g → ℝ)
+  (K : Matrix ι κidx g) : ℝ
+D0.Gauge.discreteYangMillsAction_nonnegative_of_killing_nonpos {ι κidx g : Type} [Fintype ι] [Fintype κidx]
+  (Killing : g → g → ℝ) (K : Matrix ι κidx g) (hKilling : ∀ (x : g), Killing x x ≤ 0) :
+  discreteYangMillsAction Killing K ≥ 0
+'D0.Research.NativeCoupledHodgeScale.actual_hodge_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.actual_hodge_middle_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.actual_hodge_all_degrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.actual_transport_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.actual_transport_gram_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.actual_dressed_link_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.actual_supplied_hodge_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.middle_compound_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.variable_weight_zero_curvature_stationary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.scale_invariant_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.volume_scale_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.volume_term_full_gate_forces_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.equal_volume_scale_contrasts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.paired_physical_contrast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.paired_error_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.exact_temporal_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.exact_spatial_cayley_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCoupledHodgeScale.exact_equal_volume_solder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

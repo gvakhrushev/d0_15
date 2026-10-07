@@ -4,6 +4,26 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+The [coframe-coupled Hodge follow-up](A4D_NATIVE_COUPLED_HODGE_SCALE_BOUNDARY.md)
+now treats a genuine exception to coframe blindness. Actual degree-two
+Hodge weights and dressed links are invariant under uniform raw scaling,
+although they depend on metric shape. Two explicit curved metrics have
+exact native transported readouts and exactly equal volume vectors at
+every L in 4N, while their physical actions differ by -9*pi^2/200.
+Consequently every scale-invariant coframe/link scalar plus an arbitrary
+separate volume-density functional fails the common calibrated contrast
+test. No bound on the volume functional's sensitivity is needed. The
+physical contrast difference is -9*pi^2*h^(1/3)/200+O(h^(4/3)); O(h)
+record/refinement errors cannot remove it. Genuine mixed scale/shape
+dependence and independent constraints remain outside this class.
+The exact special fibers do not assert general finite surjectivity,
+native on-shell status, or interlevel admission. Eighteen compiled
+propositions with 56 source pins bind the actual Hodge, supplied action,
+transported center and dressed-link definitions. Full coframe-dependent
+quadratic-curvature gates retain exact curved flat-link native roots;
+a separate nonzero constant volume coefficient instead makes the free
+source-free scale gate empty. Neither outcome yields positive GR.
+
 The [connection-action boundary](A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md)
 now tests the existing native matrix Yang-Mills, supplied Killing and seam
 functionals after the actual native link construction. Every coframe-blind
