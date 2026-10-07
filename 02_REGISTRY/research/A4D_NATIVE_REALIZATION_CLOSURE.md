@@ -594,3 +594,30 @@ equivalence class; the subsequent finite-contrast transfer still needs an
 owned action or a native equivalence preserving those actual probes.
 No physical Ward, selected native dynamics, G0, GR, global closure or original
 #310/#202/#317 terminal is promoted by this complete interface classification.
+
+
+The [metric-only compactness and link resonance theorem](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md)
+closes the earlier coframe-compactness exception on the entire small native
+centered-gradient chart. An exact native Korn identity gives nonlinear
+metric inverse square constant 4/3; the explicit analytic compactness and
+regularity argument forces every stated smooth metric limit to be flat.
+The actual transported extension requires delta_link times raw-field L2 to
+vanish. Small proper links alone and bounded primitive potentials do not
+supply this bound: a literal Nyquist native gradient and O(h) Lorentz links
+produce a smooth curved transported metric with a noncompact, nongauge raw
+quotient. Its exact curvature, packed metric, all 24 link directions and
+coordinate constraints are certified. This is a kinematic realization,
+not an admitted coupled physical solution or a fitted source.
+
+The exponential companion bonds geometric link subdivisions exactly;
+coframes do not follow from link bonding. The actual frozen native B0 and
+its degree-aware cochain composition have centered-gradient square 4*K on
+the lifted bounded Nyquist potential, whereas the newly constructed even
+level has zero center. Twenty-one propositions, 13 actual types, 36 D0 pins,
+171 controls and 21 false-scope rejections preserve the original terminals.
+The next G0 consumer must derive native admission, the history-to-action law
+and full refinement on this raw/transported carrier, and decide whether
+these resonant states are retained or excluded by independently owned laws.
+A small-link assumption cannot supply that decision. Genuine geometric
+stationarity, own source/Ward, contrast bounds, curved physical solutions,
+soundness/recovery and causal constraints remain open.
