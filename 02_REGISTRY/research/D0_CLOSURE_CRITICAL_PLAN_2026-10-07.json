@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "497249187575b5c2e0320150cc568f9678c0eb8512272b519c8ea11b9879a727",
+    "sha256": "c30ab89fb5472db6f4aa1e5063b643e542ab0dbd856f14d4954a7bc162015869",
     "global_census": false
   },
   "history_diagnosis": {
@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "00aa52091ae004fac6c1dc11964be3fa191b75b8",
+    "source_head": "20928b17563fc1d840bbc204ced7c3fd28610175",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -189,7 +189,7 @@
     "transitive_d0_source_pins": 83,
     "exact_controls": 154,
     "rejected_false_scope_ledgers": 43,
-    "remaining_proposition": "Derive the owned joint field-dependent history/record functional retaining coframe/link/matter information beyond a scalar of total affine transport. Its complete family, admitted variations, Euler equations, source and refinement are still required. The actual path composition selects neither a nonadditive joint functional nor the retained field data; every additive total-affine scalar has now been classified and is identically zero on affine Lorentz data. This does not exclude context-dependent path weights or an independently owned coupled action, and it does not supply physical probe admission. Preserve the source, transfer, curved solution and soundness/recovery obligations in the original goal.",
+    "remaining_proposition": "Derive the independently owned joint field-dependent history/record action on the now explicit complete constrained (q,D,b,m) carrier, or justify another native carrier. Prove its admitted family, genuine constrained variations, Euler equations and native refinement. The quotient image and local Lorentz tangent kernel are classified, but kinematic invariance does not select an action or a source. An arbitrary extension off D q_target D^T=q_source cannot define a native metric source; raw information cannot be discarded through centered readout alone. The actual action and a justified physical variation/splitting must supply the source and physical Ward identity before contrast transfer, joint curved solutions and soundness/recovery. All original goal and parent terminal criteria are preserved.",
     "action_level_nonuniqueness_is_physical_nonuniqueness": false,
     "composition_disposition": "Use the genuine order-two law and the complete simultaneous flat fiber, retaining isotropy. Its mathematical Dg family is classified on im d; transverse/curved physical admission is not supplied.",
     "flat_metric_disposition": "Translation tests are exactly divergence zero. The full metric annihilator and strong-coframe smooth flat limit are classified; do not promote them to whole-core impossibility, physical gauge, or metric-only compactness.",
@@ -249,6 +249,15 @@
       "exact_controls": 49,
       "rejected_false_scope_ledgers": 17,
       "result": "The full scalar total-affine-transport class is derived from actual native path concatenation using two independent stored links. It is exactly the affine character class. Translation blindness, inverse/append/gauge laws and all-word linear-factor dependence are compiled. The complete real four-dimensional class is an additive function of log absolute determinant, with a single coefficient under continuity. The affine Lorentz-only class is identically zero even without a GL extension or continuity, by the analytic boost/rotation/translation proof. All 24 link, 16 raw-coframe and ten metric rows are checked. If the already proved nonzero metric pencil is admitted, the O(h) contrast transfer fails for every nonzero calibration. Context-dependent path weights, retained coframe/matter data, nonadditive joint actions and native refinement/admission remain outside that no-go. Twenty-one Lean declarations, 36 transitive native pins, 49 exact controls and 17 rejected false-scope mutations preserve G0 and every original terminal as open.",
+      "g0_closed": false
+    },
+    "joint_field_quotient_consumer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md",
+      "compiled_declarations": 15,
+      "transitive_d0_source_pins": 51,
+      "exact_controls": 41,
+      "rejected_false_scope_ledgers": 19,
+      "result": "The complete joint nondegenerate raw-solder/Lorentz-link/affine-shift/full-exterior-matter quotient is (q,D,b,m), with exactly D q_target D^T=q_source and no further b or m constraints. Explicit reconstruction proves orbit and tangent completeness analytically. Only the actual 6v local Lorentz gauge directions are removed; the quotient has dimension 66v. The literal transported center is exactly B(D)F, compiled for every N. Where B is invertible, (centered metric, raw dressed links, b, m) remains complete. Replacing raw dressed links by centered-frame links loses an explicit nongauge Nyquist family. The full four-sector internal Lorentz Ward identity retains coframe, link, shift and matter terms. Ambient metric derivatives can differ for identical native actions by an arbitrary extension of the metric-isometry constraint; genuine derivative counterexamples are compiled. Path blocking is compatible if independently specified, without selecting native refinement or an action. Fifteen compiled declarations, 51 transitive native pins and 41 exact controls retain the native action/source/physical-Ward/contrast and recovery obligations. Finite ranks certify one full star, not the all-size analytic theorem. Nineteen false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     }
   }

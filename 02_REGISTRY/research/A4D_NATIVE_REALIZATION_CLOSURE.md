@@ -307,6 +307,20 @@ remain independent obligations; no new action is selected.
 
 The [complete affine history scalar classification](A4D_NATIVE_AFFINE_HISTORY_SCALAR_BOUNDARY.md) consumes the actual field-path composition owner. A scalar depending only on total affine transport respects every native concatenation exactly when it is an affine character; the two-link realization and translation blindness are compiled. The whole real four-dimensional class is an additive function of log absolute determinant, with one logarithmic coefficient under continuity. On the full affine Lorentz group every such scalar vanishes, also proved without a GL extension. All 24 connection, 16 raw-coframe and ten metric rows vanish; the existing nonzero metric contrast therefore cannot transfer through this interface when its pencil is admitted. Context-dependent history weights, retained coframe/matter observables and nonadditive joint actions remain separate routes requiring their own native owners. This narrows the field-action construction without claiming G0 or whole-core closure.
 
+The [complete joint field quotient](A4D_NATIVE_JOINT_FIELD_QUOTIENT.md)
+now retains raw coframes, Lorentz links, affine shifts and all sixteen
+exterior matter components. Its exact image and tangent space are constrained
+by metric isometry across each dressed link, with explicit inverse formulas.
+The actual transported center factors through these coordinates in Lean.
+A full centered metric/link reading loses a nongauge Nyquist family; raw
+information is therefore retained. A source must differentiate the owned
+action along genuine constrained variations: arbitrary ambient extensions
+can manufacture a nonzero metric derivative of a zero native action.
+This is a constructive kinematic and variational interface result, with
+15 compiled declarations, 51 transitive D0 pins and 41 exact controls.
+It does not supply the missing field law, physical source/Ward or refinement,
+and changes neither the 44 graph terminals nor the original parent goals.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
