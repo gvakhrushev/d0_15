@@ -1,0 +1,84 @@
+'D0.Research.NativeMetricCompactness.matrixSquare_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.matrixSquare_add_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.signedGram_square_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.metric_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.metricError_small_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.korn_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.korn_coercive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.nonlinear_inverse_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.native_centered_binding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.native_centered_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.native_centered_curl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.native_korn_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.native_metric_binding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.native_metric_inverse_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.native_nyquist_raw_translation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.native_nyquist_center_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.raw4_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.boostAD_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.boostAC_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.resonance_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.resonance_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeMetricCompactness.signedGram_square_le.{u_1} {i : Type u_1} [Fintype i] (sign : i → ℝ)
+  (hsign : ∀ (r : i), sign r ^ 2 = 1) (A B : i → i → ℝ) :
+  matrixSquare (signedGram sign A B) ≤ matrixSquare A * matrixSquare B
+D0.Research.NativeMetricCompactness.metricError_small_chart.{u_1} {i : Type u_1} [Fintype i] (sign : i → ℝ)
+  (hsign : ∀ (r : i), sign r ^ 2 = 1) (A B : i → i → ℝ) (hA : matrixSquare A ≤ 1 / 16) (hB : matrixSquare B ≤ 1 / 16) :
+  matrixSquare (metricError sign A B) ≤ matrixSquare (A - B) / 4
+D0.Research.NativeMetricCompactness.korn_identity.{u_1, u_2} {i : Type u_1} {s : Type u_2} [Fintype i] [Fintype s]
+  (D : i → (s → ℝ) →ₗ[ℝ] s → ℝ) (hskew : ∀ (r : i) (x y : s → ℝ), pair ((D r) x) y = -pair x ((D r) y))
+  (hcomm : ∀ (r a : i) (x : s → ℝ), (D r) ((D a) x) = (D a) ((D r) x)) (w : i → s → ℝ) :
+  fieldSquare (symField (gradient D w)) = 2 * fieldSquare (gradient D w) + 2 * pair (divergence D w) (divergence D w)
+D0.Research.NativeMetricCompactness.nonlinear_inverse_square.{u_1, u_2} {i : Type u_1} {s : Type u_2} [Fintype i]
+  [Fintype s] (sign : i → ℝ) (hsign : ∀ (r : i), sign r ^ 2 = 1) (A B : s → i → i → ℝ)
+  (hA : ∀ (x : s), matrixSquare (A x) ≤ 1 / 16) (hB : ∀ (x : s), matrixSquare (B x) ≤ 1 / 16)
+  (hk : 2 * fieldSquare (A - B) ≤ fieldSquare (symField (A - B))) :
+  fieldSquare (A - B) ≤ 4 / 3 * fieldSquare fun x => metric sign (A x) - metric sign (B x)
+D0.Research.NativeMetricCompactness.native_centered_binding (N : ℕ) (xi : D0.Geometry.LocalRoleVector N) :
+  nativeCentered N xi = gradient (D0.Geometry.centeredDifference N) fun a x => xi x a
+D0.Research.NativeMetricCompactness.native_korn_identity (N : ℕ) (xi : D0.Geometry.LocalRoleVector N) :
+  fieldSquare (symField (nativeCentered N xi)) =
+    2 * fieldSquare (nativeCentered N xi) +
+      2 *
+        pair (divergence (D0.Geometry.centeredDifference N) fun a x => xi x a)
+          (divergence (D0.Geometry.centeredDifference N) fun a x => xi x a)
+D0.Research.NativeMetricCompactness.native_metric_binding (N : ℕ) (xi : D0.Geometry.LocalRoleVector N)
+  (x : D0.Geometry.ArchiveRolePhaseGroup N) :
+  D0.Geometry.solderMetricMatrix N (D0.Geometry.forwardGaugeCoframe N xi) x =
+    metric D0.Geometry.roleLorentzSign (nativeCentered N xi x)
+D0.Research.NativeMetricCompactness.native_metric_inverse_square (N : ℕ) (xi psi : D0.Geometry.LocalRoleVector N)
+  (hxi : ∀ (x : D0.Geometry.ArchiveRolePhaseGroup N), matrixSquare (nativeCentered N xi x) ≤ 1 / 16)
+  (hpsi : ∀ (x : D0.Geometry.ArchiveRolePhaseGroup N), matrixSquare (nativeCentered N psi x) ≤ 1 / 16) :
+  fieldSquare (nativeCentered N xi - nativeCentered N psi) ≤
+    4 / 3 *
+      fieldSquare fun x =>
+        D0.Geometry.solderMetricMatrix N (D0.Geometry.forwardGaugeCoframe N xi) x -
+          D0.Geometry.solderMetricMatrix N (D0.Geometry.forwardGaugeCoframe N psi) x
+D0.Research.NativeMetricCompactness.native_nyquist_raw_translation (N : ℕ) (z : D0.Geometry.ArchiveRolePhaseGroup N → ℝ)
+  (v : D0.Role → ℝ)
+  (hp : ∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), z (D0.Geometry.roleTranslatePlus N r x) = -z x) :
+  (D0.Geometry.forwardGaugeCoframe N fun x a => -z x * v a / 2) = fun x _r a => ↑(D0.archiveFibers N) * z x * v a
+D0.Research.NativeMetricCompactness.native_nyquist_center_zero (N : ℕ) (z : D0.Geometry.ArchiveRolePhaseGroup N → ℝ)
+  (v : D0.Role → ℝ)
+  (hp : ∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), z (D0.Geometry.roleTranslatePlus N r x) = -z x)
+  (hm : ∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N), z (D0.Geometry.roleTranslateMinus N r x) = -z x) :
+  (nativeCentered N fun x a => -z x * v a / 2) = 0
+D0.Research.NativeMetricCompactness.raw4_det (a : ℝ) : (raw4 a).det = -1
+D0.Research.NativeMetricCompactness.resonance_center (z h f : ℝ) (hh : h ≠ 0) (hd : 1 - h ^ 2 * f ^ 2 ≠ 0) :
+  (fun r a => (raw4 (z / h) r a + (raw4 (-z / h) * pull4 h f r) r a) / 2) = read4 z h f
+D0.Research.NativeMetricCompactness.resonance_gram (z h f : ℝ) (hz : z ^ 2 = 1) (hd : 1 - h ^ 2 * f ^ 2 ≠ 0) :
+  read4 z h f * eta4 * (read4 z h f).transpose =
+    !![1, 0, -z * h * f ^ 2 / (1 - h ^ 2 * f ^ 2), -z * h * f ^ 2 / (1 - h ^ 2 * f ^ 2);
+      0, -1, 0, 0;
+      -z * h * f ^ 2 / (1 - h ^ 2 * f ^ 2), 0, -1 - f ^ 2 / (1 - h ^ 2 * f ^ 2),
+        h ^ 2 * f ^ 4 / (1 - h ^ 2 * f ^ 2) ^ 2;
+      -z * h * f ^ 2 / (1 - h ^ 2 * f ^ 2), 0, h ^ 2 * f ^ 4 / (1 - h ^ 2 * f ^ 2) ^ 2,
+        -1 - f ^ 2 / (1 - h ^ 2 * f ^ 2)]

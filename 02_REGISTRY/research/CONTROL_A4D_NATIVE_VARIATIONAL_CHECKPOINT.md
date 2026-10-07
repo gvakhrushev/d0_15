@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`af3658e09762860e1e38820fd8bc11de54403cff`, following
-`9e37e008ba89cfaa9a1a70f1d0ffaede6b5aab0b`.
+`9488c133312768580bdad43bb570a0bed836432f`, following
+`af3658e09762860e1e38820fd8bc11de54403cff`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -19,7 +19,7 @@ The plan remains CONTROL metadata; the proof and certificates are source artifac
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-167 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+173 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -111,7 +111,7 @@ the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
 capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 83 pins of the G0
 ownership capsule and the two pins of the separate external-review capsule, the registry snapshot
-and all twenty-six exact certificates' input hashes match
+and all twenty-seven exact certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -485,15 +485,17 @@ local file or an implicitly merged scientific parent.
 
 39. **Complete supplied parent and observable stationary/source class:** The complete supplied covariant linear four-slot parent interface is classified by seed maps on the actual constrained joint quotient. Its visible action uses M and K=dD star1 dP; pointwise K rank is bounded by the middle dimension, with global smooth factorization retained separately. Genuine nonsymmetric field/source derivatives give the full Hessian kernel and its restricted background jets. Complete stationary/source comparison uses the entire kernel for a full readout, or the projected quadratic source relation when auxiliaries are omitted. Distinct M,K can be equivalent by an invertible auxiliary change; off-shell coefficient differences alone do not establish physical differences. A fixed sixteen-component native seed family has its entire joint gate classified: theta=0 admits every physical matter field, while every theta!=0, including a singular star, allows only the eight even components with both auxiliaries zero. All nondegenerate backgrounds remain allowed. Ten actual uniform metric probes, packed weights and all 24 admitted Lorentz link directions are checked. Twenty-three all-size propositions, 52 D0 pins, 139 exact controls and 21 false-scope rejections pass. This is the explicitly supplied parent interface, not a selected physical differential, native history action, refinement, physical Ward or whole-core obstruction. The next G0 lemma must derive the observable parent law from owned native histories; stationary equivalence alone does not transfer finite off-shell contrasts. G0 and every original terminal stay open.
 
+40. **Native metric-only compactness and small-link resonance:** The entire small native centered-gradient chart (pointwise positive Frobenius norm at most one-quarter) has the exact Korn identity and a mesh-independent nonlinear metric inverse with squared constant 4/3. Metric-only strong L2 convergence to a smooth metric supplies coframe compactness and forces a flat limit; its compactness/regularity proof is analytic. For the actual transported center, delta_link times raw-field L2 tending to zero suffices for the same flatness. O(h) proper Lorentz links or bounded native potentials alone do not: a literal bounded native Nyquist potential with raw determinant -1, raw square 4+8/h^2 and two active proper links has a transported metric tending uniformly with O(h) error to diag(1,-1,-1-f^2,-1-f^2), f=(2+cos(2*pi*t))/32. Its Ric_AA and G_BB at zero are 24*pi^2/1033. Coframe variance is 9/1024 and the link/raw product square limit is 9/32. The full raw quotient stays noncompact and is not gauge; exact dressed-link constraints and the nonuniform transported coordinate change are checked. The exponential companion has exact geometric two-edge link bonding, separately from the actual frozen native lift. Neither geometric potential decimation nor frozen B0/cochain composition bonds the coframes: the former has squared potential defect one, while the latter has centered-gradient square 4*K. All 24 admitted link directions, ten packed metric components, 21 compiled propositions, 13 actual types, 36 transitive D0 pins, 171 exact controls and 21 false-scope rejections pass. Native preparation/admission, history-to-action law, genuine geometric Euler equations, source, physical Ward, commuting full refinement, soundness/recovery and causal constraints remain required. No new action, selector, physical gate, G0/GR/global closure or original parent terminal is introduced. The next single consumer must decide admission/action/refinement of this full raw/transported resonant family using independently owned laws, not small links alone.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The 167 imported files
+labels, Lean owners and BOOK text are unchanged. The 173 imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The twenty-six self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41, 114 and 139 exact controls without
+The twenty-seven self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41, 114, 139 and 171 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -569,7 +571,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 167 artifact blobs and 367 distinct artifact/input hashes
+are rejected. All 173 artifact blobs and 373 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -747,3 +749,19 @@ explicit analytic scope; the structure's arbitrary slots are not identified
 with selected physical differentials. G0 must derive the observable law and
 native refinement from owned histories. Stationary/source equivalence does
 not by itself preserve finite probes or prove the gravitational transfer.
+
+
+The [native metric-only compactness and small-link resonance theorem](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md)
+is imported with 21 compiled propositions, 13 actual types, 36 transitive D0
+pins, 171 exact controls, 21 rejected scope extensions and three arithmetic
+mutation rejections. Its all-size finite inverse constant is 4/3; continuum
+compactness and smooth flatness have explicit analytic proofs. The literal
+bounded native potential and proper O(h) links instead give a curved
+transported metric when raw fields are unbounded. This does not give a
+smooth full raw quotient, native admission or a coupled physical solution.
+Exact exponential geometric link bonding is retained as positive evidence;
+the existing frozen native cochain lift has a separate coframe defect 4*K.
+The next G0 proof must derive the native preparation/action/refinement law
+and decide this displayed resonant family's admission. Small links alone
+cannot exclude it. Genuine equations, own source/Ward, contrast control,
+curved physical recovery, causal restrictions and all parent terminals remain.

@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "ade245a7278fa518f3f909d5b65f0c610ac767754fddfe983704f9f60a979142",
+    "sha256": "621048c069bcf7ecd846b3601dc6461f9cbd0c10f0492cfbfd0e1b766fcccaa6",
     "global_census": false
   },
   "history_diagnosis": {
@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "af3658e09762860e1e38820fd8bc11de54403cff",
+    "source_head": "9488c133312768580bdad43bb570a0bed836432f",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -189,7 +189,7 @@
     "transitive_d0_source_pins": 83,
     "exact_controls": 154,
     "rejected_false_scope_ledgers": 43,
-    "remaining_proposition": "Derive the independent native history/record-to-parent law on the constrained (q,D,b,m) carrier, or justify another owned native carrier. The complete supplied covariant four-slot interface and its genuine field/source equations are now classified. Do not demand unique raw operators before comparing the actual physical readout: use full kernel/restricted jets or the projected stationary/source relation when auxiliaries are omitted. Prove which visible M,K or observable class follows from the existing histories/composition and all admitted constraints; covariance alone permits different full joint gates, including a singular star. Supply the actual finite action, allowed variations, native preparation/refinement and their commutation. On-shell equivalence alone is insufficient for finite-probe transfer. The complete positive homogeneous source theorem remains consumed; a nonzero source must use an independently owned exception. Prove actual uniform action/probe bounds at epsilon=h^(1/3). Physical Ward, calibrated contrast, joint curved solutions, soundness/recovery, physical restrictions and all original terminals remain required.",
+    "remaining_proposition": "Derive the own native preparation/admission, history-to-visible-action law and commuting refinement on the constrained full raw/transported (q,D,b,m) carrier. The small native centered-gradient chart now has a complete metric-only compactness/flatness theorem with inverse square constant 4/3. Proper O(h) links and bounded native potentials admit a curved transported kinematic limit when the raw field diverges, so they cannot be used alone to assert flatness or raw compactness. Decide whether this explicit resonant family is retained or excluded by independently owned native laws; any exclusion needs an actual raw/refinement consequence. Exact geometric exponential link bonding does not identify the frozen native arrow or give coframe bonding. Compare genuine physical stationary/source predictions using the supplied-parent kernel/jet or projected relation theorem, retaining the whole constrained quotient. No arbitrary action, selector or prepared-state restriction may be introduced. If the family is retained, prove native action/probe bounds at epsilon=h^(1/3), complete joint equations with own matter source, and physical refinement. O(h) metric corrections are allowed in the positive criterion without replacing the original exact #310 terminal. Physical Ward, stationarity, soundness/recovery and causal constraints remain required.",
     "action_level_nonuniqueness_is_physical_nonuniqueness": false,
     "composition_disposition": "Use the genuine order-two law and the complete simultaneous flat fiber, retaining isotropy. Its mathematical Dg family is classified on im d; transverse/curved physical admission is not supplied.",
     "flat_metric_disposition": "Translation tests are exactly divergence zero. The full metric annihilator and strong-coframe smooth flat limit are classified; do not promote them to whole-core impossibility, physical gauge, or metric-only compactness.",
@@ -271,26 +271,29 @@
     },
     "next_proof_packet": {
       "stage": "G0",
-      "source_head": "af3658e09762860e1e38820fd8bc11de54403cff",
+      "source_head": "9488c133312768580bdad43bb570a0bed836432f",
       "no_new_registered_task": true,
       "no_new_physical_postulate": true,
       "carrier_input": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md",
       "parent_law_input": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
+      "metric_and_refinement_input": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md",
       "positive_source_input": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_SOURCE_JETS.md",
-      "single_first_lemma": "Owned native history/record-to-visible-parent factorization, with the actual physical comparison.",
+      "single_first_lemma": "Owned admission/history-to-visible-action/refinement on the full joint carrier, deciding the explicit UV-link resonant family.",
       "outputs": [
-        "Owned finite action law derived from histories/records/composition, with every free native datum and its hypotheses.",
-        "Complete admissible family and actual stationary/source comparison after the appropriate physical readout.",
-        "Actual constrained variations, Euler equations, preparation and commuting native refinement.",
-        "Finite-probe action control before the gravitational transfer; stationary equivalence alone is insufficient.",
-        "Positive construction or complete typed derivability obstruction, retaining all original terminals."
+        "Complete native prepared-state/action/variation/refinement family from independently owned histories and composition.",
+        "Decision on the bounded-potential small-link resonant family, with an actual quantitative native consequence if excluded.",
+        "Physical stationary/source comparison and whole quotient constraints; finite contrast requires the owned off-shell action law.",
+        "Genuine joint equations, own source/Ward and action/probe bounds if the family is retained; exact geometric link bonding is insufficient.",
+        "Positive construction or fully scoped derivability obstruction, preserving every original parent terminal."
       ],
       "do_not_repeat": [
-        "Joint quotient or rank census.",
-        "Four-slot covariance and nonsymmetric parent derivative classification.",
-        "Off-shell coefficient inequality as physical nonuniqueness.",
-        "Auxiliary matching for a readout which omits auxiliaries.",
-        "Positive moving-weight nonzero-source search inside the excluded class."
+        "Fourier rank or joint quotient census.",
+        "Four-slot covariance/source derivative classification.",
+        "A chosen U or Dg inside the already classified flat orbit.",
+        "Small links or bounded potentials as an unproved raw compactness bound.",
+        "Geometric edge bonding as a native full-refinement theorem.",
+        "Off-shell coefficient inequality or raw auxiliary mismatch as physical nonuniqueness.",
+        "Positive homogeneous nonzero-source search inside the excluded class."
       ]
     },
     "parent_law_completeness_consumer": {
@@ -301,6 +304,17 @@
       "exact_controls": 139,
       "rejected_false_scope_ledgers": 21,
       "result": "The complete supplied covariant linear four-slot parent interface is classified by seed maps on the actual constrained joint quotient. Its visible action uses M and K=dD star1 dP; pointwise K rank is bounded by the middle dimension, with global smooth factorization retained separately. Genuine nonsymmetric field/source derivatives give the full Hessian kernel and its restricted background jets. Complete stationary/source comparison uses the entire kernel for a full readout, or the projected quadratic source relation when auxiliaries are omitted. Distinct M,K can be equivalent by an invertible auxiliary change; off-shell coefficient differences alone do not establish physical differences. A fixed sixteen-component native seed family has its entire joint gate classified: theta=0 admits every physical matter field, while every theta!=0, including a singular star, allows only the eight even components with both auxiliaries zero. All nondegenerate backgrounds remain allowed. Ten actual uniform metric probes, packed weights and all 24 admitted Lorentz link directions are checked. Twenty-three all-size propositions, 52 D0 pins, 139 exact controls and 21 false-scope rejections pass. This is the explicitly supplied parent interface, not a selected physical differential, native history action, refinement, physical Ward or whole-core obstruction. The next G0 lemma must derive the observable parent law from owned native histories; stationary equivalence alone does not transfer finite off-shell contrasts. G0 and every original terminal stay open.",
+      "g0_closed": false
+    },
+    "metric_compactness_and_link_resonance_consumer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md",
+      "compiled_declarations": 21,
+      "actual_theorem_types": 13,
+      "transitive_d0_source_pins": 36,
+      "exact_controls": 171,
+      "rejected_false_scope_ledgers": 21,
+      "rejected_exact_mutations": 3,
+      "result": "The entire small native centered-gradient chart (pointwise positive Frobenius norm at most one-quarter) has the exact Korn identity and a mesh-independent nonlinear metric inverse with squared constant 4/3. Metric-only strong L2 convergence to a smooth metric supplies coframe compactness and forces a flat limit; its compactness/regularity proof is analytic. For the actual transported center, delta_link times raw-field L2 tending to zero suffices for the same flatness. O(h) proper Lorentz links or bounded native potentials alone do not: a literal bounded native Nyquist potential with raw determinant -1, raw square 4+8/h^2 and two active proper links has a transported metric tending uniformly with O(h) error to diag(1,-1,-1-f^2,-1-f^2), f=(2+cos(2*pi*t))/32. Its Ric_AA and G_BB at zero are 24*pi^2/1033. Coframe variance is 9/1024 and the link/raw product square limit is 9/32. The full raw quotient stays noncompact and is not gauge; exact dressed-link constraints and the nonuniform transported coordinate change are checked. The exponential companion has exact geometric two-edge link bonding, separately from the actual frozen native lift. Neither geometric potential decimation nor frozen B0/cochain composition bonds the coframes: the former has squared potential defect one, while the latter has centered-gradient square 4*K. All 24 admitted link directions, ten packed metric components, 21 compiled propositions, 13 actual types, 36 transitive D0 pins, 171 exact controls and 21 false-scope rejections pass. Native preparation/admission, history-to-action law, genuine geometric Euler equations, source, physical Ward, commuting full refinement, soundness/recovery and causal constraints remain required. No new action, selector, physical gate, G0/GR/global closure or original parent terminal is introduced. The next single consumer must decide admission/action/refinement of this full raw/transported resonant family using independently owned laws, not small links alone.",
       "g0_closed": false
     }
   }
