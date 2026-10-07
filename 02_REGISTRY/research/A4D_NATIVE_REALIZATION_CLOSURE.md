@@ -52,6 +52,17 @@ The independently owned history-composition/normalization law is therefore
 the remaining premise; finite probes and continuum limits are not ruled out.
 This consumes the accepted A-PARENT boundary and adds no new action or task.
 
+The [external G0 result review](A4D_EXTERNAL_G0_RESULT_REVIEW_2026-10-07.md)
+extends the literal constant scalar-cycle cubic obstruction to every n>=3.
+It corrects the report's derivative variable and single-probe injectivity
+claim, and refutes both implications of its proposed isotropy/readout
+dichotomy. All 50 submitted PASS records replay, but are not accepted as
+proof of that dichotomy. The independent package compiles 20 propositions
+with two D0 source pins and replays 38 exact controls. The accepted results
+do not make abstract frame freedom native gauge or prove physical D0
+nonuniqueness. The [next theory specification](D0_THEORY_TASK_NEXT_2026-10-07.md)
+retains the complete owned state/action/variation/readout/refinement target.
+
 The October 6 audit report and the chat summaries were investigative inputs,
 not instructions to change a mathematical definition or a release status.
 The implementation follows the user's explicit closure plan. Its first
