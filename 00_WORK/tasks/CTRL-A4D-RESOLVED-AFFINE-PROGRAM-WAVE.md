@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `7c8ee6851dc343927c04f971f0b0de7a10be7b04` through
+#310 at `00aa52091ae004fac6c1dc11964be3fa191b75b8` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -85,8 +85,8 @@ real scalar variation and profile nonselection, the full convex-profile
 contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
-propositions and 91 controls pin 33 transitive sources. The expanded 143-artifact slice
-has 342 verified distinct artifact/input hashes; the gravity graph has
+propositions and 91 controls pin 33 transitive sources. The expanded 149-artifact slice
+has 348 verified distinct artifact/input hashes; the gravity graph has
 44 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
 
@@ -183,3 +183,5 @@ execution or permission to create/retire a repository task.
 The complete history consumer adds: Every additive real scalar valuation on the actual all-walks scene carrier is uniquely its edge-weight sum. The complete primitive unit-gap edge restriction is all independent weights >=1; the canonical extension counts length and cannot descend to the endpoint pair cost. The actual endpoint-average decomposition is ker(C1) plus im(Jt-Js) plus the constant reading, with dimensions 685+32+1. Positive automorphism-invariant weights share C1 yet differ on equal-length equal-endpoint paths. The unique nonnegative infinite endpoint-central trace is proved analytically using an explicit 67/100 oscillation contraction; finite horizons and noncentral cylinder laws retain exact counterexamples. The literal Perron logarithmic conditional reading is length plus endpoint boundary, proved in Lean. Twenty declarations pin 48 D0 sources; 54 exact controls and 16 false-scope mutations pass. Additivity, logarithmic reading, centrality, physical gauge and field-dependent readout are not silently derived. The field-dependent history-to-coframe/link/matter action and refinement law remain open.
 
 The user-supplied supplementary certificate is integrated with these boundaries: The four unchanged supplementary external inputs replay 49 PASS but include an unconditional-success S1d, arithmetic-only S5 claims and symbol-only S6j. T16 is explicitly withdrawn; T9/T15 corrections are consistent with the previous review. Existing full rank owners imply dim(ker R intersect im d) =60 for even L and zero for odd L; the correctly typed ker R/(ker R intersect im d) has dimension 1828 at L=4. The exact witness has raw curl +8 and is outside the forward image; this does not exclude all physical gauge or prove physical curvature/on-shell admission. The supplied patch does not match the current script, and extra_dim.json has one-dimensional sizes, not the four-dimensional carrier. Thirty-one independent controls and 13 false-scope mutations pass. No G0, physical source, positive GR, global closure, whole-core no-go or original parent terminal is promoted.
+
+The actual affine field-history consumer adds: The full scalar total-affine-transport class is derived from actual native path concatenation using two independent stored links. It is exactly the affine character class. Translation blindness, inverse/append/gauge laws and all-word linear-factor dependence are compiled. The complete real four-dimensional class is an additive function of log absolute determinant, with a single coefficient under continuity. The affine Lorentz-only class is identically zero even without a GL extension or continuity, by the analytic boost/rotation/translation proof. All 24 link, 16 raw-coframe and ten metric rows are checked. If the already proved nonzero metric pencil is admitted, the O(h) contrast transfer fails for every nonzero calibration. Context-dependent path weights, retained coframe/matter data, nonadditive joint actions and native refinement/admission remain outside that no-go. Twenty-one Lean declarations, 36 transitive native pins, 49 exact controls and 17 rejected false-scope mutations preserve G0 and every original terminal as open.

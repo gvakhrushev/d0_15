@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`7c8ee6851dc343927c04f971f0b0de7a10be7b04`, following
-`27175008f7dbba9a98bc739f6cde0958a53858e8`.
+`00aa52091ae004fac6c1dc11964be3fa191b75b8`, following
+`7c8ee6851dc343927c04f971f0b0de7a10be7b04`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -19,7 +19,7 @@ The plan remains CONTROL metadata; the proof and certificates are source artifac
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-143 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+149 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -111,7 +111,7 @@ the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
 capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 83 pins of the G0
 ownership capsule and the two pins of the separate external-review capsule, the registry snapshot
-and all twenty-two exact certificates' input hashes match
+and all twenty-three exact certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -477,15 +477,17 @@ local file or an implicitly merged scientific parent.
 
 35. **Supplementary external intake:** The four unchanged supplementary external inputs replay 49 PASS but include an unconditional-success S1d, arithmetic-only S5 claims and symbol-only S6j. T16 is explicitly withdrawn; T9/T15 corrections are consistent with the previous review. Existing full rank owners imply dim(ker R intersect im d) =60 for even L and zero for odd L; the correctly typed ker R/(ker R intersect im d) has dimension 1828 at L=4. The exact witness has raw curl +8 and is outside the forward image; this does not exclude all physical gauge or prove physical curvature/on-shell admission. The supplied patch does not match the current script, and extra_dim.json has one-dimensional sizes, not the four-dimensional carrier. Thirty-one independent controls and 13 false-scope mutations pass. No G0, physical source, positive GR, global closure, whole-core no-go or original parent terminal is promoted.
 
+36. **Complete native affine-history scalar boundary:** The full scalar total-affine-transport class is derived from actual native path concatenation using two independent stored links. It is exactly the affine character class. Translation blindness, inverse/append/gauge laws and all-word linear-factor dependence are compiled. The complete real four-dimensional class is an additive function of log absolute determinant, with a single coefficient under continuity. The affine Lorentz-only class is identically zero even without a GL extension or continuity, by the analytic boost/rotation/translation proof. All 24 link, 16 raw-coframe and ten metric rows are checked. If the already proved nonzero metric pencil is admitted, the O(h) contrast transfer fails for every nonzero calibration. Context-dependent path weights, retained coframe/matter data, nonadditive joint actions and native refinement/admission remain outside that no-go. Twenty-one Lean declarations, 36 transitive native pins, 49 exact controls and 17 rejected false-scope mutations preserve G0 and every original terminal as open.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The 143 imported files
+labels, Lean owners and BOOK text are unchanged. The 149 imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The twenty-two self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54 and 31 exact controls without
+The twenty-three self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31 and 49 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -561,7 +563,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 143 artifact blobs and 342 distinct artifact/input hashes
+are rejected. All 149 artifact blobs and 348 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -695,3 +697,10 @@ the complete additive fiber are compiled. The
 keeps the submitted 49 PASS separate from 31 independent controls and rejects
 the unrestricted physical-gauge inference. Current G0, parent-source and
 first external-review capsules remain unchanged.
+
+The [affine history scalar classification](A4D_NATIVE_AFFINE_HISTORY_SCALAR_BOUNDARY.md)
+uses the actual archive field-path carrier, separately from the scene paths.
+Its universal scalar-interface reduction and translation blindness are
+compiled; the determinant and Lorentz-only classifications are analytic.
+The source remains a research boundary with explicit exceptions, not a
+physical whole-core no-go or a replacement for independently owned matter.

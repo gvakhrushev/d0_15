@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "ac1a812be8d56cc5084f0985a5a88061ec36bac841e25118c06fe56ac5be9379",
+    "sha256": "497249187575b5c2e0320150cc568f9678c0eb8512272b519c8ea11b9879a727",
     "global_census": false
   },
   "history_diagnosis": {
@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "7c8ee6851dc343927c04f971f0b0de7a10be7b04",
+    "source_head": "00aa52091ae004fac6c1dc11964be3fa191b75b8",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -189,7 +189,7 @@
     "transitive_d0_source_pins": 83,
     "exact_controls": 154,
     "rejected_false_scope_ledgers": 43,
-    "remaining_proposition": "Derive the owned field-dependent history/record readout and composition law into the full coframe/link/matter action, with a complete admissible family, independently admitted variations, genuine Euler equations, source and refinement. Scene path completeness, canonical endpoint-central Perron trace and additive scalar valuations are now classified in their stated interfaces. Their existence does not select field-dependent edge weights or observables; a logarithmic reading alone has only length and boundary terms. Prove physical response equivalence or a full typed derivability boundary instead of promoting this mathematical action freedom to physical nonuniqueness.",
+    "remaining_proposition": "Derive the owned joint field-dependent history/record functional retaining coframe/link/matter information beyond a scalar of total affine transport. Its complete family, admitted variations, Euler equations, source and refinement are still required. The actual path composition selects neither a nonadditive joint functional nor the retained field data; every additive total-affine scalar has now been classified and is identically zero on affine Lorentz data. This does not exclude context-dependent path weights or an independently owned coupled action, and it does not supply physical probe admission. Preserve the source, transfer, curved solution and soundness/recovery obligations in the original goal.",
     "action_level_nonuniqueness_is_physical_nonuniqueness": false,
     "composition_disposition": "Use the genuine order-two law and the complete simultaneous flat fiber, retaining isotropy. Its mathematical Dg family is classified on im d; transverse/curved physical admission is not supplied.",
     "flat_metric_disposition": "Translation tests are exactly divergence zero. The full metric annihilator and strong-coframe smooth flat limit are classified; do not promote them to whole-core impossibility, physical gauge, or metric-only compactness.",
@@ -240,6 +240,15 @@
       "independent_exact_controls": 31,
       "rejected_false_scope_ledgers": 13,
       "result": "The four unchanged supplementary external inputs replay 49 PASS but include an unconditional-success S1d, arithmetic-only S5 claims and symbol-only S6j. T16 is explicitly withdrawn; T9/T15 corrections are consistent with the previous review. Existing full rank owners imply dim(ker R intersect im d) =60 for even L and zero for odd L; the correctly typed ker R/(ker R intersect im d) has dimension 1828 at L=4. The exact witness has raw curl +8 and is outside the forward image; this does not exclude all physical gauge or prove physical curvature/on-shell admission. The supplied patch does not match the current script, and extra_dim.json has one-dimensional sizes, not the four-dimensional carrier. Thirty-one independent controls and 13 false-scope mutations pass. No G0, physical source, positive GR, global closure, whole-core no-go or original parent terminal is promoted.",
+      "g0_closed": false
+    },
+    "affine_history_scalar_consumer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_AFFINE_HISTORY_SCALAR_BOUNDARY.md",
+      "compiled_declarations": 21,
+      "transitive_d0_source_pins": 36,
+      "exact_controls": 49,
+      "rejected_false_scope_ledgers": 17,
+      "result": "The full scalar total-affine-transport class is derived from actual native path concatenation using two independent stored links. It is exactly the affine character class. Translation blindness, inverse/append/gauge laws and all-word linear-factor dependence are compiled. The complete real four-dimensional class is an additive function of log absolute determinant, with a single coefficient under continuity. The affine Lorentz-only class is identically zero even without a GL extension or continuity, by the analytic boost/rotation/translation proof. All 24 link, 16 raw-coframe and ten metric rows are checked. If the already proved nonzero metric pencil is admitted, the O(h) contrast transfer fails for every nonzero calibration. Context-dependent path weights, retained coframe/matter data, nonadditive joint actions and native refinement/admission remain outside that no-go. Twenty-one Lean declarations, 36 transitive native pins, 49 exact controls and 17 rejected false-scope mutations preserve G0 and every original terminal as open.",
       "g0_closed": false
     }
   }
