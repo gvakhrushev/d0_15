@@ -40,6 +40,18 @@ the native action and independent Euler equations on the full existing
 coframe/link carrier, including transverse metric variations and physical
 refinement. No new graph node or parent terminal is introduced.
 
+The [primitive cost variation theorem](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md#21-the-whole-primitive-cost-fiber-has-an-exact-infinitesimal-boundary)
+now classifies the entire direct ActionProtocol-to-field-derivative route.
+An identity-based primitive cost is continuous exactly when the state germ
+is locally constant; a faithful nonzero coframe variation cannot provide a
+genuine derivative at fixed nonzero calibration. Lean's zero totalized
+`deriv` at a nondifferentiable point is explicitly excluded as stationarity.
+All real centered finite readings remain possible, and a shrinking-gap family
+approximates any nonnegative target profile with uniform error delta.
+The independently owned history-composition/normalization law is therefore
+the remaining premise; finite probes and continuum limits are not ruled out.
+This consumes the accepted A-PARENT boundary and adds no new action or task.
+
 The October 6 audit report and the chat summaries were investigative inputs,
 not instructions to change a mathematical definition or a release status.
 The implementation follows the user's explicit closure plan. Its first
@@ -272,6 +284,7 @@ than treating comments or theorem names as physical equations.
 
 | Owner | Independently defined data and variations | Actual equation/result | Source and refinement | Missing physical arrow |
 |---|---|---|---|---|
+| `Foundation.EndogenousActionQuantum.ActionProtocol` | Every actual transition-cost assignment, with identity cost zero and nonidentity cost at least one | Complete continuity iff locally constant state theorem; genuine derivatives only on trivial germs. A faithful affine coframe encoding, if supplied, has no identity-cost derivative | All centered finite values are possible; shrinking-gap completions converge uniformly to arbitrary nonnegative profiles. No native history/refinement law is selected | A composition/normalization law must turn primitive histories into the field action before its Euler gate is used. Zero totalized `deriv` is not such a law. |
 | `Foundation.VerifiabilityNecessity`, `EmpiricalTheoryFactorization` | Supplied empirical observations and verified equality protocol; actual `run` and `pullTest` compatibility | Formal verifiability iff nontrivial empirical quotient; point-test runs iff bijections, with generic Lean proofs | Full predicate tests instead admit arbitrary runs; exact all-level phase permutations are rigid, while subsequences and approximate composites have classified exceptions | A physical equality apparatus, state preparation and allowed physical variations are not selected by these interfaces. The actual native Dirichlet energy separates two verified preparations. |
 | `Synthesis.ConcretePhysicalDetectorRepresentation`, `M1ClassAdmissibility` | Concrete member/value/history observations and independent two-sided catalogue histories | The class-level physical representation is constructed; admissible comparisons factor through both current inputs; primitive capability profiles are membership/value | Actual propositions and transitive axioms printed in the verification capsule | This existing result must be preserved. It is not a physical metric/action/source map or the stronger old faithful-capability representation of every comparison object. |
 | `D0.Geometry.ArchiveSeamCurvature`, `ArchiveVariation` | Fixed canonical fine/coarse cycle Laplacians and fixed cyclic lift; coarse symmetric row-sum-zero `LaplacianVariation` | $D=L_fJ-JL_c$; $S=\|D\|^2$; $\delta D=-J\delta L_c$; `ArchiveStationary` quantifies over those variations | `J` comes from `archiveRGPhaseProjection`; its phase index is not the four-Role product | No variable metric/coframe/link sector is constructed here. The old `local_support : Prop` field does not enforce a support equation. |

@@ -1,7 +1,7 @@
 {
   "G0": "OPEN_PHYSICAL_SYSTEM_AND_COMPLETENESS",
   "canonical_action": "exists and is uniquely pointwise least",
-  "checker_sha256": "5e3758570ab1ada6532858ab7fa6f72d0b5edb9fd38f8f695f71b7472f151fcf",
+  "checker_sha256": "46fbae34008b1d84264e859d95a48ac5d7ae61e48c90c884f0c4dcd9446b0573",
   "checks": [
     "ACTUAL_COMPILED_DECLARATIONS",
     "ALL_COMPOSITION_D0_SOURCE_PINS",
@@ -46,6 +46,20 @@
     "BOUND_native_constant_metric_probe_has_coframe_lift",
     "BOUND_native_translation_tests_not_all_metric_tests",
     "BOUND_metric_translation_symbol_injective",
+    "BOUND_action_gap_eventually_constant",
+    "BOUND_action_gap_continuity_iff",
+    "BOUND_action_gap_hasDerivAt_zero",
+    "BOUND_nonconstant_germ_no_primitive_derivative",
+    "BOUND_affine_field_germ_not_locally_constant",
+    "BOUND_faithful_affine_field_cost_not_differentiable",
+    "BOUND_faithful_native_coframe_cost_not_differentiable",
+    "BOUND_calibrated_gap_continuity_iff",
+    "BOUND_primitive_nondifferentiable_deriv_zero",
+    "BOUND_shrinking_gap_exact_error",
+    "BOUND_shrinking_gap_uniform_error",
+    "BOUND_canonical_centered_probe_zero",
+    "BOUND_squared_reading_centered_value",
+    "BOUND_every_centered_readout_has_primitive_completion",
     "ACTION_PROTOCOL_canonical",
     "SYMMETRY_canonical",
     "ALL_TRIANGLES_canonical",
@@ -130,9 +144,21 @@
     "CENTERED_KERNEL_COUNT_AND_ALLSIZE_FORMULA_CONTROL_2",
     "CENTERED_KERNEL_COUNT_AND_ALLSIZE_FORMULA_CONTROL_4",
     "CENTERED_KERNEL_COUNT_AND_ALLSIZE_FORMULA_CONTROL_5",
-    "CENTERED_KERNEL_COUNT_AND_ALLSIZE_FORMULA_CONTROL_8"
+    "CENTERED_KERNEL_COUNT_AND_ALLSIZE_FORMULA_CONTROL_8",
+    "DIRECT_PRIMITIVE_GAP_FOR_EVERY_EXCESS",
+    "FIXED_CALIBRATION_RETAINS_POSITIVE_GAP",
+    "NONTRIVIAL_AFFINE_SECANT_DIVERGES",
+    "CALIBRATED_AFFINE_SECANT_DIVERGES",
+    "CONTINUOUS_BACKGROUND_SUBTRACTION_DOES_NOT_REMOVE_JUMP",
+    "CANONICAL_CENTERED_VALUE_IS_ZERO_WITHOUT_DERIVATIVE",
+    "ALL_CENTERED_VALUES_ONE_FIXED_ACTION_PER_PENCIL",
+    "CENTERED_NONZERO_VALUE_COEXISTS_WITH_IDENTITY_JUMP",
+    "SHRINKING_GAP_EXACT_ALL_PROFILE_ERROR",
+    "SMOOTH_NONZERO_QUADRATIC_LIMIT_CONTROL",
+    "SHRINKING_GAP_ALL_FINITE_PROFILE_TABLES",
+    "PRIMITIVE_BOUND_DOES_NOT_SELECT_LIMIT_SHAPE"
   ],
-  "compiled_declarations": 51,
+  "compiled_declarations": 75,
   "complete_fibers": [
     "every ActionProtocol P, arbitrary state cardinality",
     "every real invariant scalar on a specified symmetry quotient"
@@ -195,6 +221,20 @@
     ]
   },
   "cost_quotient": "distinction survives every state permutation and common unit calibration",
+  "direct_cost_variation": {
+    "all_continuum_variational_limits_excluded": false,
+    "arbitrary_target_is_selected_native_action": false,
+    "centered_values": "all real values; one fixed squared-reading profile works on the whole pencil",
+    "complete_class": "Every actual ActionProtocol and every real-parameter identity-based state germ",
+    "continuity_iff": "state is locally constant",
+    "faithful_native_field_encoding_constructed": false,
+    "fixed_nonzero_calibration_repairs_gap": false,
+    "genuine_derivative": "zero, with local state constancy required",
+    "native_history_composition_law_derived": false,
+    "native_refinement_of_costs_derived": false,
+    "shrinking_gap_uniform_error": "delta",
+    "totalized_deriv_zero_is_stationarity": false
+  },
   "flat_translation_fiber": {
     "abstract_intertwiner_is_owned_physical_gauge": false,
     "all_U_are_quadratic_exponentials": false,
@@ -213,11 +253,12 @@
   },
   "geometry_action_premise": "eliminated from the actual conditional Ward conclusion",
   "global_closure": "OPEN",
-  "input_head": "c9668dca8a900310cf49dbf56a8bcd8f51d872ab",
+  "input_head": "fe116b56f9413cc2cd4e80f375cff1cc50d337f7",
   "inputs_sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md": "f953f80bb4b65c84daa03fb3f111c32cc46692d8816bfb861d1a7da4cc4db738"
+    "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md": "08ecf984cdcb39fd9c5d5e8ed5d8e5b6f61ffc9dac51cacf1d4f10a714b35428",
+    "02_REGISTRY/research/APARENT_FINITE_GRAVITY_COMMON_ACTION_SELECTOR.md": "b95d5f631fb9c5936fe61964e73c3f373ea3f9deefb0fae037c7a760d6535ff5"
   },
-  "lean_receipt_sha256": "306fb276ea8442bc6e6ff11ee04734a0afd9939afc204ff484f5820962238353",
+  "lean_receipt_sha256": "405081f6453df4850f2dfd3766dcbb4615aa0ef80cd58ae00378d15e7f40c4f3",
   "physical_action_selected": false,
   "physical_response_nonuniqueness_proved": false,
   "positive_gr": "OPEN",
@@ -234,7 +275,7 @@
   ],
   "remaining_proposition": "derive the complete native state/action/variation/readout/refinement family or its complete stated boundary",
   "status": "PASS_PRIMITIVE_INTERFACE_BOUNDARY",
-  "transitive_d0_pins": 80,
+  "transitive_d0_pins": 83,
   "translation_metric_consumer": {
     "all_finite_lattice_curvatures_zero": false,
     "allsize_rank_proof": "analytic complete Fourier decomposition; generic symbol injectivity compiled",

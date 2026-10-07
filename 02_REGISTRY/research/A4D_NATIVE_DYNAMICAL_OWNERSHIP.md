@@ -1,10 +1,11 @@
 # G0: complete primitive action fibers and the actual Ward input boundary
 
 Research continuation of #310. Input head:
-`c9668dca8a900310cf49dbf56a8bcd8f51d872ab`.
-The prior primitive-interface and order-two results are retained; this
-continuation classifies simultaneous flat translation lifts and their
-background derivatives within the same G0 chain.
+`fe116b56f9413cc2cd4e80f375cff1cc50d337f7`.
+The primitive-interface, transport and field-frame results are retained.
+This continuation classifies the direct primitive-cost variational arrow
+for the whole ActionProtocol fiber, including finite-probe and shrinking-gap
+countercontrols, in the same G0 chain.
 Consumer: G0 (`constitutive`, `native_sector`) of the
 [CONTROL critical plan](https://github.com/gvakhrushev/d0_15/blob/7beb7cb196c4db3304b87d607815c235877bee8e/02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md).
 
@@ -25,6 +26,11 @@ simultaneous flat transport fiber is now classified with its isotropy. Its
 actual metric image and Ward annihilator are computed: translation tests
 are not all metric tests. Every strongly coframe-convergent smooth
 nondegenerate continuum limit of this flat orbit has zero Riemann curvature.
+
+The direct identity-based primitive cost is continuous exactly on locally
+constant state germs. Every real centered finite reading is nevertheless
+attainable, and shrinking effective gaps can converge uniformly to arbitrary
+nonnegative profiles; the unit cost does not select those profiles.
 
 This discharges the G0 premise audit for these named interfaces. It does
 **not** classify every composition or physical realization of the D0 core.
@@ -108,6 +114,147 @@ not an Einstein metric response. The physical readout map has not been
 constructed, so no conclusion that these parameters survive the physical
 quotient is drawn. The countermodels are mathematical completions used to
 test implication, not new physical actions selected for D0.
+
+### 2.1 The whole primitive cost fiber has an exact infinitesimal boundary
+
+The accepted [A-PARENT result](APARENT_FINITE_GRAVITY_COMMON_ACTION_SELECTOR.md)
+already proves that a common type-I finite generator exists throughout its
+four-modulus family. Existence is therefore not a selector. It also observes
+that a homogeneous quadratic cost on a divisible field carrier cannot obey
+the primitive unit lower bound at every nonzero displacement. The following
+result closes the direct variation question for **every** actual
+`ActionProtocol`, with no quadratic or finite-dimensional restriction.
+
+Let \(A\) be any member of (1), let \(x:\mathbb R\to P.\mathrm{State}\),
+and fix \(t_0\). Define the identity-based transition reading
+\(f(t)=A(x(t_0),x(t))\). Then
+
+\[
+ f\text{ is continuous at }t_0
+ \quad\Longleftrightarrow\quad
+ x(t)=x(t_0)\text{ throughout some neighborhood of }t_0.       \tag{1a}
+\]
+
+Proof: \(f(t_0)=0\). Continuity makes \(f(t)<1\) near \(t_0\);
+the literal `action_nontrivial` axiom then forces equality of states.
+Conversely, local equality makes \(f=0\) locally. No topology on the
+protocol's state type and no continuity of the state map are assumed.
+`action_gap_continuity_iff` compiles the equivalence for every protocol and
+every real-parameter state family.
+
+Consequently a genuine `HasDerivAt f a t0` implies \(a=0\) and local
+constancy of the state. For every non-locally-constant state germ, \(f\)
+is not differentiable. Both implications are compiled. Multiplication by
+any fixed nonzero calibration \(a\) preserves (1a); division by \(a\)
+proves the reverse implication. A constant subtraction or subtraction of
+a continuous background function cannot remove the jump either, because
+adding that function back would restore continuity of \(f\).
+
+For any real vector space and \(v\ne0\), the affine germ \(u+tv\) is not
+locally constant at zero. Thus every **injective** encoding of such field
+states into a verification protocol makes its identity-based primitive cost
+non-differentiable along that germ. The generic affine theorem and its
+specialization to the actual `LocalCoframeField N` are compiled. The
+encoding is an explicit hypothesis, not a constructed native representation.
+Rounding or a detector with locally constant records does not satisfy this
+faithfulness condition; it needs a separate physical readout/limit theorem.
+
+This is a complete boundary for the literal map
+`ActionProtocol cost → identity-based field derivative`. It does not state
+that no variational action can be constructed from finite histories, sums,
+constraints, statistical data or a refining limit. Such a construction must
+be independently defined and its variation theorem proved.
+
+### 2.2 A zero totalized derivative is not a native Euler equation
+
+In Lean, `deriv` is a total function: at a point where the function is not
+differentiable it returns zero. The capsule therefore proves both
+
+\[
+ \neg\operatorname{DifferentiableAt}(f,t_0),\qquad
+                    \operatorname{deriv}(f,t_0)=0             \tag{1b}
+\]
+
+for every nontrivial germ in (1a). The second equality cannot be used as
+stationarity. It would admit a gate solely because the true variation does
+not exist. A native Euler gate built this way must first carry the genuine
+variation/differentiability theorem. This is not an allegation that the
+existing polynomial parent or flux gates have this defect: those already
+have separately proved actual first variations.
+
+### 2.3 Finite probes and shrinking gaps remain separate possibilities
+
+Failure of a derivative at one finite level does not exclude a finite
+centered reading. For the canonical action, if both endpoints differ from
+the center, both costs are exactly one and their centered difference is
+exactly zero. `canonical_centered_probe_zero` proves this directly without
+a derivative premise. An arbitrary excess-cost profile can give a different
+centered reading. Neither case supplies native on-shell equations or a
+native-to-Einstein contrast transfer.
+
+More strongly, for any real readout \(q\) on the protocol states and fixed
+\(k\in\mathbb R\), the off-diagonal excess
+\(c(x,y)=(1+k(q(y)-q(x)))^2\) is nonnegative. Its corresponding primitive
+action has, whenever \(q(x_\pm)-q(x_0)=\pm\epsilon\ne0\),
+
+\[
+ \frac{A_k(x_0,x_+)-A_k(x_0,x_-)}{2\epsilon}=2k.             \tag{1c}
+\]
+
+Thus **every real centered value is attained** within the complete primitive
+fiber. One fixed action realizes the value for every separation on the same
+readout pencil; no endpoint-by-endpoint fitting is used. The two generic
+Lean theorems `squared_reading_centered_value` and
+`every_centered_readout_has_primitive_completion` prove this. The scalar
+readout and its pencil are explicit inputs, not an asserted metric or native
+refinement map. This is a nonselection theorem for the primitive finite
+reading, not a counterexample of native on-shell Einstein solutions.
+
+There is also an exact countercontrol against turning (1a) into a continuum
+NO-GO. For any nonnegative profile \(F(x,y)\) with \(F(x,x)=0\), and any
+\(\delta>0\), define a mathematical completion of the primitive interface:
+
+\[
+ A_{\delta,F}(x,y)=
+ \begin{cases}0,&x=y,\\1+F(x,y)/\delta,&x\ne y.\end{cases}     \tag{1d}
+\]
+
+Every such \(A_{\delta,F}\) is an actual `ActionProtocol`. Nevertheless,
+
+\[
+ \delta A_{\delta,F}(x,y)-F(x,y)
+       =\delta\,1_{x\ne y},\qquad
+ \sup_{x,y}|\delta A_{\delta,F}(x,y)-F(x,y)|\le\delta.         \tag{1e}
+\]
+
+`shrinkingGapAction`, `shrinking_gap_exact_error` and
+`shrinking_gap_uniform_error` compile this construction for arbitrary state
+sets and profiles. On a real field carrier, choosing \(F(x,y)=(x-y)^2\)
+gives uniform convergence to a smooth nonzero quadratic profile as
+\(\delta\to0\), although every finite-level identity cost along a faithful
+nonzero affine germ still fails differentiability. The limits and derivatives
+cannot be interchanged merely from (1e).
+
+This construction is a control, not a new selected D0 action or refinement
+law. The effective gap \(\delta_h\) is distinct from the fixed calibration
+in (1a) and from the physical probe separation \(\epsilon_h=h^{1/3}\).
+A native normalization such as \(h^2\), sums over states or recording rules
+could produce a shrinking effective gap; that must be derived from their
+own definitions. Conversely the primitive bound alone admits (1d) for
+**every** nonnegative target profile and hence does not select its continuum
+shape. No parameter in these controls is claimed physically admissible solely because
+the `ActionProtocol` fields type-check.
+
+**Consumed G0 premise.** The bare action quantum and verification contract
+cannot themselves be used as the differentiable native field action. Their
+entire direct infinitesimal fiber is classified by (1a), while (1e) prevents
+an unjustified prohibition of continuum constructions. The next needed law
+is the independently owned composition of primitive histories/records into
+the coframe/link/matter action, its admitted variations and refinement, with
+any normalization and limit interchange proved. This is the same missing
+law named by A-PARENT, now with its exact continuous-field boundary. The
+accepted finite selector terminals are not reopened and no new graph node
+or physical action is introduced.
 
 ## 3. Full symmetry fiber and seed retention
 
@@ -719,9 +866,12 @@ lake env lean ../02_REGISTRY/research/certificates/a4d_native_dynamical_ownershi
 python3 02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py
 ```
 
-The extended capsule compiles 61 declarations with 83 transitive D0
-source pins. Its checker replays 128 exact controls. The 25 earlier scope
-mutations and seven metric-consumer scope mutations are rejected.
+The extended capsule compiles 75 declarations with 83 transitive D0
+source pins. Its checker replays 154 exact controls. The 25 earlier scope
+mutations, seven metric-consumer mutations and eleven direct-cost boundary
+mutations are rejected (43 total). The summary counts are read from the
+compiler receipt, replacing the earlier stale summary values 51/80; the
+earlier receipt itself correctly recorded 61 declarations and 83 source pins.
 
 Hostile ledger mutations must reject a full-core NO-GO, positive GR,
 physical-response nonuniqueness, canonical-action nonexistence, a selected

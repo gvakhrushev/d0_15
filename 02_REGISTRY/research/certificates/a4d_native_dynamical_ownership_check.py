@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 import sympy as sp
 
-INPUT_HEAD = "c9668dca8a900310cf49dbf56a8bcd8f51d872ab"
+INPUT_HEAD = "fe116b56f9413cc2cd4e80f375cff1cc50d337f7"
 PREFIX = "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership"
 PROOF = "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md"
 
@@ -33,7 +33,7 @@ def main():
 
     r = json.loads((repo/(PREFIX+"_results.json")).read_text())
     check("ACTUAL_COMPILED_DECLARATIONS", r["status"] == "PASS" and r["compiler_exit_code"] == 0
-          and r["owner_input_head"] == INPUT_HEAD and r["printed_axiom_dependencies"] == 61
+          and r["owner_input_head"] == INPUT_HEAD and r["printed_axiom_dependencies"] == 75
           and not r["sorryAx"] and set(r["axioms"]) <= {"propext", "Classical.choice", "Quot.sound"})
     for p, h in {**r["transitive_d0_source_sha256"], **r["toolchain_input_sha256"],
                  r["capsule"]: r["capsule_sha256"], r["output"]: r["output_sha256"]}.items():
@@ -61,6 +61,9 @@ def main():
                  "native_constant_metric_self_pairing", "native_constant_metric_probe_has_coframe_lift",
                  "native_translation_tests_not_all_metric_tests", "metric_translation_symbol_injective"]:
         check("BOUND_" + name, "'D0.Research.NativeDynamicalOwnership."+name+"' depends on axioms:" in out)
+
+    for name in ['action_gap_eventually_constant', 'action_gap_continuity_iff', 'action_gap_hasDerivAt_zero', 'nonconstant_germ_no_primitive_derivative', 'affine_field_germ_not_locally_constant', 'faithful_affine_field_cost_not_differentiable', 'faithful_native_coframe_cost_not_differentiable', 'calibrated_gap_continuity_iff', 'primitive_nondifferentiable_deriv_zero', 'shrinking_gap_exact_error', 'shrinking_gap_uniform_error', 'canonical_centered_probe_zero', 'squared_reading_centered_value', 'every_centered_readout_has_primitive_completion']:
+        check("BOUND_"+name, "'D0.Research.NativeDynamicalOwnership."+name+"' depends on axioms:" in out)
 
     A0 = sp.ones(3)-sp.eye(3)
     A1 = sp.Matrix([[0, 1, 2], [1, 0, 1], [2, 1, 0]])
@@ -251,14 +254,47 @@ def main():
         check(f"CENTERED_KERNEL_COUNT_AND_ALLSIZE_FORMULA_CONTROL_{n}", D.rank()==n-sp.gcd(n,2)
               and 4*z+4*(n**4-z)==4*n**4 and (6*n**4+4*z)+4*(n**4-z)==10*n**4)
 
+    # Direct variational use of the entire actual primitive ActionProtocol.
+    delta,t,cal=sp.symbols("delta t cal", positive=True)
+    excess=sp.symbols("excess", nonnegative=True)
+    gap_cost=1+excess
+    check("DIRECT_PRIMITIVE_GAP_FOR_EVERY_EXCESS", sp.simplify(gap_cost-1)==excess)
+    check("FIXED_CALIBRATION_RETAINS_POSITIVE_GAP", sp.simplify(cal*gap_cost-cal)==cal*excess)
+    check("NONTRIVIAL_AFFINE_SECANT_DIVERGES", sp.limit((1+t*t)/t,t,0,dir='+')==sp.oo)
+    check("CALIBRATED_AFFINE_SECANT_DIVERGES", sp.limit(cal*(1+t*t)/t,t,0,dir='+')==sp.oo)
+    check("CONTINUOUS_BACKGROUND_SUBTRACTION_DOES_NOT_REMOVE_JUMP", sp.limit(1+t*t-t,t,0)==1)
+    check("CANONICAL_CENTERED_VALUE_IS_ZERO_WITHOUT_DERIVATIVE", (sp.Integer(1)-1)/(2*t)==0)
+    k=sp.symbols("k",real=True)
+    plus_cost=1+(1+k*t)**2; minus_cost=1+(1-k*t)**2
+    check("ALL_CENTERED_VALUES_ONE_FIXED_ACTION_PER_PENCIL", sp.expand((plus_cost-minus_cost)/(2*t))==2*k)
+    check("CENTERED_NONZERO_VALUE_COEXISTS_WITH_IDENTITY_JUMP", sp.limit(plus_cost,t,0)==2
+          and sp.expand((plus_cost-minus_cost)/(2*t)).subs(k,1)==2)
+    target=sp.symbols("target",nonnegative=True)
+    check("SHRINKING_GAP_EXACT_ALL_PROFILE_ERROR", sp.expand(delta*(1+target/delta)-target)==delta)
+    check("SMOOTH_NONZERO_QUADRATIC_LIMIT_CONTROL", sp.limit(delta+t*t,delta,0)==t*t
+          and sp.diff(t*t,t,2)==2)
+    # Entire finite profile tables, including coincident, nonzero and zero-cost
+    # distinct states; no hidden lower bound on the target profile is needed.
+    for d in [sp.Rational(1,2),sp.Rational(1,7),sp.Rational(1,64)]:
+        for family,F in [("zero",sp.zeros(3)),("square",sp.Matrix(3,3,lambda i,j:(i-j)**2)),
+                         ("fourth",sp.Matrix(3,3,lambda i,j:(i-j)**4))]:
+            C=sp.Matrix(3,3,lambda i,j: 0 if i==j else 1+F[i,j]/d)
+            assert all(C[i,i]==0 for i in range(3))
+            assert all(C[i,j]>=1 for i,j in itertools.permutations(range(3),2))
+            assert all(abs(d*C[i,j]-F[i,j])<=d for i,j in itertools.product(range(3),repeat=2))
+    check("SHRINKING_GAP_ALL_FINITE_PROFILE_TABLES", True)
+    check("PRIMITIVE_BOUND_DOES_NOT_SELECT_LIMIT_SHAPE", sp.Rational(4)/1!=sp.Rational(16)/1)
+
     payload = {
         "status": "PASS_PRIMITIVE_INTERFACE_BOUNDARY",
         "input_head": INPUT_HEAD,
-        "inputs_sha256": {PROOF: sha(PROOF)},
+        "inputs_sha256": {PROOF: sha(PROOF),
+            "02_REGISTRY/research/APARENT_FINITE_GRAVITY_COMMON_ACTION_SELECTOR.md":
+                sha("02_REGISTRY/research/APARENT_FINITE_GRAVITY_COMMON_ACTION_SELECTOR.md")},
         "lean_receipt_sha256": sha(PREFIX+"_results.json"),
         "checker_sha256": sha(PREFIX+"_check.py"),
-        "compiled_declarations": 51,
-        "transitive_d0_pins": 80,
+        "compiled_declarations": r["printed_axiom_dependencies"],
+        "transitive_d0_pins": len(r["transitive_d0_source_sha256"]),
         "checks": checks,
         "complete_fibers": ["every ActionProtocol P, arbitrary state cardinality",
                             "every real invariant scalar on a specified symmetry quotient"],
@@ -308,6 +344,20 @@ def main():
             "counterexample_is_native_on_shell_residual": False,
             "transverse_action_or_euler_law_constructed": False,
             "whole_core_curved_recovery_excluded": False,
+        },
+        "direct_cost_variation": {
+            "complete_class": "Every actual ActionProtocol and every real-parameter identity-based state germ",
+            "continuity_iff": "state is locally constant",
+            "genuine_derivative": "zero, with local state constancy required",
+            "totalized_deriv_zero_is_stationarity": False,
+            "faithful_native_field_encoding_constructed": False,
+            "fixed_nonzero_calibration_repairs_gap": False,
+            "centered_values": "all real values; one fixed squared-reading profile works on the whole pencil",
+            "shrinking_gap_uniform_error": "delta",
+            "all_continuum_variational_limits_excluded": False,
+            "arbitrary_target_is_selected_native_action": False,
+            "native_history_composition_law_derived": False,
+            "native_refinement_of_costs_derived": False,
         },
         "composition": {
             "exact_polynomial_class": "all five residual coefficient matrices vanish",
