@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "53e073d4f1829b28ea6ab8d0e4fc5127ecdec12f03ca6774c2eba8dc96fffca3",
-      "source_blob": "753eb6f3b25604c3d393691ad73ba251425beb6a"
+      "sha256": "b084e2ecb50e3ea33624378bb6ed107a467a46dbe672a6fe65b691072b820d35",
+      "source_blob": "4f6e717ec754532ec9618e57cdd8cc707426b291"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "03371deda32f82dce8eeb01598770591c5d4cb007dc46d71304264e2b2ab6c77",
-      "source_blob": "c71f81e6ac8a5820fdcdbfbddaf80a54ef020703"
+      "sha256": "960e22ac1a7d4b67a7fb44fb11f56c87160c9fbf1bfe031c1088a3100e963c17",
+      "source_blob": "60513fe5c4a8f90b7cbcad79289c358459120e20"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -559,33 +559,33 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
-      "sha256": "952ec1a4e8c5d23813e661063be7ba8945af6abf4c3b65dd33e403e1f06502c0",
-      "source_blob": "7159a5412f77d2e876f8446ed9446b4fe96592c4"
+      "sha256": "ac7751f1d98b9180f478d98bc78ca4023c8e5dbf9049c3b7d8b7b42004eb53be",
+      "source_blob": "a1b2a93096e2b52f34ccaf6943ea80eaa354d8d8"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership.lean",
-      "sha256": "6ceb62a97cf2d99e63a0684b6a62c3e73d74061bafbc1220c3c75aebe27bf51e",
-      "source_blob": "127a450ac04d726fe7fe7024c256bbd1c120bef9"
+      "sha256": "eaec648ad39734fb451ca746a228a34ddd38d52acf5a617dd43aaabacbdf13b0",
+      "source_blob": "7a61eb1ff2a493eecab779c1a29ef296e97af931"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_output.txt",
-      "sha256": "c3ef7936fe324c82f1939e188f02351a3a7b19cff09cc5dd1d71d3cd03314490",
-      "source_blob": "c65e85ea58d919649843a1ec589e580deb214e85"
+      "sha256": "2c94e93577b37578422c729d6a3f677722407cf1f3e4998a155e0345f66e694a",
+      "source_blob": "4513f66cc6bd0fd9c94c3336cbca10c5d8109c41"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_results.json",
-      "sha256": "4e1f8850188888fda4c0d782c20628095b462edc2472ba5e106e77d656e1d26f",
-      "source_blob": "373259597af4336728367eb5d639d79ed8025e17"
+      "sha256": "306fb276ea8442bc6e6ff11ee04734a0afd9939afc204ff484f5820962238353",
+      "source_blob": "c4b8d0483c343cf1e59f7fecaf665a177efec4c9"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py",
-      "sha256": "6168f3052c1bacd3046a18e63814a627b3cb742e1d9425663b2e2755737af37a",
-      "source_blob": "f44f11e773f97df8f851166520f6311ffafad3ab"
+      "sha256": "5e3758570ab1ada6532858ab7fa6f72d0b5edb9fd38f8f695f71b7472f151fcf",
+      "source_blob": "b37090a1ff698ed2b558ccffa608bcded4f2d818"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_certificate.json",
-      "sha256": "068c60f1940fed6594add961eca9b3d71e679e61cb6e48dba95deb7acf970f56",
-      "source_blob": "dcd010388a5c232aeedf669c3fd654c1f5220c2e"
+      "sha256": "63290805998edbca25155f23563810b61e5e2a830d65573eced398a6a4f12cba",
+      "source_blob": "a2e0d0dcad25ecd27ba7cb174aa5cc00f641f318"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -594,7 +594,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "7743910de8e8914f06b68f63aca917997344d1ae",
+  "previous_source_head": "c9668dca8a900310cf49dbf56a8bcd8f51d872ab",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -626,11 +626,12 @@
     "Actual coframe-coupled Hodge weights and dressed links preserve uniform scale while retaining shape dependence. Two curved metric families have exact native transported readouts and identical volume vectors at every L in 4N, but physical action difference -9*pi^2/200. Every scale-invariant coframe/link scalar plus an arbitrary separate volume profile fails the common calibrated contrast test; the paired physical gap is -9*pi^2*h^(1/3)/200+O(h^(4/3)). Completeness is proved within the C1 volume-only radial-response class by integration, not for the whole core. The tested variable-weight curvature-quadratic binding has exact curved flat-link native roots; a nonzero constant volume coefficient instead makes its free source-free scale gate empty. Arbitrary nonlinear volume profiles are not included in that empty-fiber claim. Eighteen compiled propositions, 56 transitive pins, 103 exact controls and nine false scope ledgers retain all ten metric derivatives, packed weights and all 24 physical/native connection directions, including the transported-weight derivative. Exact special fibers are not general finite surjectivity, native on-shell preparation or interlevel admission. Mixed scale/shape dependence, smaller independently owned domains, matter, physical Ward, source/refinement transfer, soundness/recovery and positive GR remain open; no action is selected and #310/#202/#317 original terminals remain unchanged.",
     "The documented weighted adjoint is constructed on actual D0 cochains. Thirty-four propositions and 49 source pins have standard axioms only: two literal CAR leaves and actual nilpotencies are rebuilt by kernel reduction. Full mixed metric dependence, all grades, all 24 Role orders and all ten metric derivatives with packed weights are retained in 107 exact controls. The direct flat Lorentz binding has negative spatial modes and nonconstant null modes; no positive inner product makes its spatial block self-adjoint. At L=4 ker D has dimension 232 and ker Delta dimension 448. For one fixed t>0 the normalized ordinary heat trace is at least 4608*t^3*L^2 and diverges. All-size symbol/kernel/heat arguments are analytic, not compiled continuum statements. Fourteen false scope ledgers are rejected. Positive Euclidean/observer pairings, mesh-dependent heat times and independently specified renormalized/oscillatory laws remain outside the boundary. No physical matter/action/source, causal or gauge prescription, interlevel admission, soundness/recovery or positive GR is asserted. #310/#202/#317 original terminals and global closure remain open.",
     "G0 consumed premise: complete actual ActionProtocol fiber equals arbitrary nonnegative excess costs; canonical action uniquely pointwise least; one verified normalized metric-cost pair differs modulo every state relabeling and common calibration. The real M1 completion criterion applies to transition costs, not to physical Einstein response. Complete invariant-action fiber is arbitrary functions on the symmetry quotient. Passive Hodge transport retains its seed; the actual conditional Ward conclusion follows from its four map covariance hypotheses alone. Twenty-two declarations compile with 23 transitive D0 pins and standard axioms only; 37 exact controls and 11 rejected scope mutations. This does not prove complete native physical-system ownership, physical-response nonuniqueness, full-core no-go or GR. The 44 graph nodes and all original open terminals are retained; no new candidate node is added.",
-    "The same G0 package now completely classifies the actual exact polynomial composition premise as five zero coefficient matrices. At Dg=0 it is equivalent to K=G squared and G cubed=0; the actual scalar length-four constant generator has cube entry -32 and admits no such exact quadratic polynomial gate. The repaired total-degree-two statement retains its explicit cubic/quartic remainder and is equivalent only to K=G squared+Dg, with a nonempty fiber for every G,Dg. A full real matrix exponential and its first two derivatives compile as a control, not as selected native dynamics or a simultaneous multi-generator action. The supported conditional theorem remains true. Thirty-three declarations, 26 transitive D0 pins, 54 exact controls and 17 rejected scope mutations. Dg, the constitutive law, joint native dynamics/refinement and GR remain open. No graph node or original terminal changes."
+    "The same G0 package now completely classifies the actual exact polynomial composition premise as five zero coefficient matrices. At Dg=0 it is equivalent to K=G squared and G cubed=0; the actual scalar length-four constant generator has cube entry -32 and admits no such exact quadratic polynomial gate. The repaired total-degree-two statement retains its explicit cubic/quartic remainder and is equivalent only to K=G squared+Dg, with a nonempty fiber for every G,Dg. A full real matrix exponential and its first two derivatives compile as a control, not as selected native dynamics or a simultaneous multi-generator action. The supported conditional theorem remains true. Thirty-three declarations, 26 transitive D0 pins, 54 exact controls and 17 rejected scope mutations. Dg, the constitutive law, joint native dynamics/refinement and GR remain open. No graph node or original terminal changes.",
+    "The complete flat translation transport fiber is normalized U plus the full isotropy representation; smooth flat-tangent integrability requires commuting isotropy generators, not all local generators. All compatible second jets have one arbitrary symmetric background Hessian. The literal four-role/Fock isotropy commutation and raw translation kernel bind directly to the native owners with standard axioms. The exact metric image is the centered symmetric gradient: rank 4*(L^4-gcd(L,2)^4), with the full transverse complement. Its Ward annihilator is exactly centered divergence zero; a constant identity covector has all translation pairings zero but nonzero normalized pairing 4 with an actual coframe-lifted smooth metric probe. Every strong L2 centered-solder limit of the entire flat orbit that is C2 and nondegenerate has zero Levi-Civita curvature. The Fourier/continuum arguments are analytic, not compiled continuum theorems. The 61 compiled declarations pin 83 D0 files; 128 exact controls and 32 false-scope mutations pass. Abstract intertwiners are not declared physical gauge, metric-only convergence is insufficient, and no whole-core or arbitrary finite-curvature conclusion is made. G0 must now supply the transverse action and independent Euler equations on the full coframe/link carrier, with native readout/refinement admission; every original parent remains OPEN."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "c9668dca8a900310cf49dbf56a8bcd8f51d872ab",
+  "source_head": "41ae2916bd1676c45209ea7f347e084c31ae7f09",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "7743910de8e8914f06b68f63aca917997344d1ae",
+  "source_parent": "c9668dca8a900310cf49dbf56a8bcd8f51d872ab",
   "source_pr": 310
 }

@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `c9668dca8a900310cf49dbf56a8bcd8f51d872ab` through
+#310 at `41ae2916bd1676c45209ea7f347e084c31ae7f09` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -86,7 +86,7 @@ contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
 propositions and 91 controls pin 33 transitive sources. The expanded 117-artifact slice
-has 288 verified distinct artifact/input hashes; the gravity graph has
+has 291 verified distinct artifact/input hashes; the gravity graph has
 44 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
 
@@ -164,3 +164,5 @@ status change, lifecycle retirement or authorization for new physical data.
 The first executed G0 premise package adds: G0 consumed premise: complete actual ActionProtocol fiber equals arbitrary nonnegative excess costs; canonical action uniquely pointwise least; one verified normalized metric-cost pair differs modulo every state relabeling and common calibration. The real M1 completion criterion applies to transition costs, not to physical Einstein response. Complete invariant-action fiber is arbitrary functions on the symmetry quotient. Passive Hodge transport retains its seed; the actual conditional Ward conclusion follows from its four map covariance hypotheses alone. Twenty-two declarations compile with 23 transitive D0 pins and standard axioms only; 37 exact controls and 11 rejected scope mutations. This does not prove complete native physical-system ownership, physical-response nonuniqueness, full-core no-go or GR. The 44 graph nodes and all original open terminals are retained; no new candidate node is added.
 
 The G0 composition-premise continuation adds: The same G0 package now completely classifies the actual exact polynomial composition premise as five zero coefficient matrices. At Dg=0 it is equivalent to K=G squared and G cubed=0; the actual scalar length-four constant generator has cube entry -32 and admits no such exact quadratic polynomial gate. The repaired total-degree-two statement retains its explicit cubic/quartic remainder and is equivalent only to K=G squared+Dg, with a nonempty fiber for every G,Dg. A full real matrix exponential and its first two derivatives compile as a control, not as selected native dynamics or a simultaneous multi-generator action. The supported conditional theorem remains true. Thirty-three declarations, 26 transitive D0 pins, 54 exact controls and 17 rejected scope mutations. Dg, the constitutive law, joint native dynamics/refinement and GR remain open. No graph node or original terminal changes.
+
+The complete flat transport and metric-consumer continuation adds: The complete flat translation transport fiber is normalized U plus the full isotropy representation; smooth flat-tangent integrability requires commuting isotropy generators, not all local generators. All compatible second jets have one arbitrary symmetric background Hessian. The literal four-role/Fock isotropy commutation and raw translation kernel bind directly to the native owners with standard axioms. The exact metric image is the centered symmetric gradient: rank 4*(L^4-gcd(L,2)^4), with the full transverse complement. Its Ward annihilator is exactly centered divergence zero; a constant identity covector has all translation pairings zero but nonzero normalized pairing 4 with an actual coframe-lifted smooth metric probe. Every strong L2 centered-solder limit of the entire flat orbit that is C2 and nondegenerate has zero Levi-Civita curvature. The Fourier/continuum arguments are analytic, not compiled continuum theorems. The 61 compiled declarations pin 83 D0 files; 128 exact controls and 32 false-scope mutations pass. Abstract intertwiners are not declared physical gauge, metric-only convergence is insufficient, and no whole-core or arbitrary finite-curvature conclusion is made. G0 must now supply the transverse action and independent Euler equations on the full coframe/link carrier, with native readout/refinement admission; every original parent remains OPEN.

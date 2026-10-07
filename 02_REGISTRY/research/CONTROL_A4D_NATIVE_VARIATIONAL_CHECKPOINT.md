@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`c9668dca8a900310cf49dbf56a8bcd8f51d872ab`, following
-`7743910de8e8914f06b68f63aca917997344d1ae`.
+`41ae2916bd1676c45209ea7f347e084c31ae7f09`, following
+`c9668dca8a900310cf49dbf56a8bcd8f51d872ab`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -465,6 +465,8 @@ local file or an implicitly merged scientific parent.
     cubic/quartic remainder and a full real exponential control. The
     background derivative Dg and native constitutive law remain inputs.
 
+30. **Complete flat transport and its metric consumer:** The complete flat translation transport fiber is normalized U plus the full isotropy representation; smooth flat-tangent integrability requires commuting isotropy generators, not all local generators. All compatible second jets have one arbitrary symmetric background Hessian. The literal four-role/Fock isotropy commutation and raw translation kernel bind directly to the native owners with standard axioms. The exact metric image is the centered symmetric gradient: rank 4*(L^4-gcd(L,2)^4), with the full transverse complement. Its Ward annihilator is exactly centered divergence zero; a constant identity covector has all translation pairings zero but nonzero normalized pairing 4 with an actual coframe-lifted smooth metric probe. Every strong L2 centered-solder limit of the entire flat orbit that is C2 and nondegenerate has zero Levi-Civita curvature. The Fourier/continuum arguments are analytic, not compiled continuum theorems. The 61 compiled declarations pin 83 D0 files; 128 exact controls and 32 false-scope mutations pass. Abstract intertwiners are not declared physical gauge, metric-only convergence is insufficient, and no whole-core or arbitrary finite-curvature conclusion is made. G0 must now supply the transverse action and independent Euler equations on the full coframe/link carrier, with native readout/refinement admission; every original parent remains OPEN.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
@@ -473,7 +475,7 @@ are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The nineteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162, 84, 103, 107 and 54 exact controls without
+The nineteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162, 84, 103, 107 and 128 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -549,7 +551,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 117 artifact blobs and 288 distinct artifact/input hashes
+are rejected. All 117 artifact blobs and 291 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -598,16 +600,16 @@ Fourteen false scope ledgers are rejected. All-size Fourier/kernel/heat
 proofs remain analytic. The supported D0 source tree is unchanged;
 the prior successful integration build is reused, and the new capsule
 compiled separately.
-The G0 ownership capsule compiles 33 declarations with 26 transitive D0
+The G0 ownership capsule compiles 61 declarations with 83 transitive D0
 source pins and standard axioms only, with no warnings or sorryAx. Its
-54 exact controls and 17 rejected false scope ledgers preserve the
+128 exact controls and 32 rejected false scope ledgers preserve the
 canonical representative, four actual map premises, and open physical
 response/completeness question. The actual exact-polynomial composition
 premise is fully classified, with a native-cycle counterexample and a
 compiled genuine order-two replacement. The full exponential control
 has a composition law and the first two derivatives; it is not a selected
 native evolution or a simultaneous multi-generator action. The package
-updates the existing G0 consumers without adding a graph node. The unchanged supported D0 tree reuses the
+updates the existing G0 consumers without adding a graph node. The complete simultaneous flat transport, actual metric image and smooth flat-orbit recovery boundary are imported in item 30; the full native physical system remains open. The unchanged supported D0 tree reuses the
 previous integration result; the new research capsule is separately compiled.
 
 One final **actual** `D0.All` compilation completed 4,545 jobs in

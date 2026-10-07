@@ -1,3 +1,33 @@
+'D0.Research.NativeDynamicalOwnership.native_full_translation_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_centered_translation_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_centered_translation_curl_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_metric_translation_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_translation_annihilator_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_constant_metric_probe_has_coframe_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_constant_metric_divergence_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_constant_metric_self_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_translation_tests_not_all_metric_tests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.metric_translation_symbol_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 structure D0.Foundation.EndogenousActionQuantum.ActionProtocol (P : VerificationProtocol) : Type
 number of parameters: 1
 fields:
@@ -463,5 +493,49 @@ fun {ι} [Fintype ι] [DecidableEq ι] G Dg K hcomp =>
  Quot.sound]
 'D0.Research.NativeDynamicalOwnership.real_flow_composes' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.NativeDynamicalOwnership.real_flow_first_two_derivatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.splitTransport_ext' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.split_transport_factorization' depends on axioms: [propext]
+'D0.Research.NativeDynamicalOwnership.completeSplitTransportFiber' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.split_transport_intertwiner' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.transported_section_covariant_iff' depends on axioms: [propext]
+'D0.Research.NativeDynamicalOwnership.native_scalar_displacement_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_scalar_centered_same_displacement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_scalar_mean_centered_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_scalar_centered_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.split_mixed_integrability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.split_diagonal_second_jet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_mixed_fiber_iff_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_symmetric_correction_is_mixed_cocycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_car_mixed_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_cartan_expansion_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_flat_orbit_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_a4d_constant_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_a4d_constant_tangents_commute' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
