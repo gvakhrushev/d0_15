@@ -69,7 +69,7 @@ frame obstruction, preserving arbitrary refinement-dependent collapsing
 functions as an exception to broader asymptotic claims. These results add
 no native action or physical on-shell gate.
 The receipt preserves the previous input head
-dae0ec13f9f885ff945c45613ae38becbc097d18. The intake also includes the literal vector/source and
+fc12fc7800eff1a0fb74d73c9d920128cbc9450f. The intake also includes the literal vector/source and
 mixed-parent/source classifications with their exact range, kernel and
 residual exceptions, plus the actual verification/process and phase-refinement
 classification. Formal verifiability and the existing positive class-level
@@ -85,9 +85,9 @@ real scalar variation and profile nonselection, the full convex-profile
 contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
-propositions and 91 controls pin 33 transitive sources. The expanded 87-artifact slice
-has 245 verified distinct artifact/input hashes; the gravity graph has
-39 scoped nodes and is not a global ambiguity census. Independent matter,
+propositions and 91 controls pin 33 transitive sources. The expanded 93-artifact slice
+has 252 verified distinct artifact/input hashes; the gravity graph has
+40 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
 
 The positive point-state/refinement follow-up classifies all compatible
@@ -110,7 +110,7 @@ contrast. Native interlevel admission remains open. Twenty-four checked
 propositions, 53 source pins, 94 controls and nine hostile ledgers preserve
 these boundaries. No action, selector, source or physical gauge is added.
 The receipt distinguishes this published checkpoint's actual parent from
-the previous reviewed source and verifies both published probe versions.
+the previous reviewed source and verifies all three published probe versions.
 
 The actual scalar pullback, tested componentwise on the raw solder, has
 exactly constant smooth nondegenerate metric limits in the fixed readout.
@@ -125,3 +125,17 @@ perturbation transport. Empty nondegenerate fine fibers in the first case
 are not counted as a physical Einstein realization; the second has an
 inhabited flat zero-field branch. No L1/concentration or general approximate
 graded-refinement claim is made.
+
+The transported-connection follow-up constructs actual native Lorentz
+pull links and smooth joint coframe/link variations, including the full
+mixed readout derivative. Cycle holonomy gives a complete finite fiber
+criterion; near-identity full inverse loss and singular exceptions are
+retained. Twenty propositions, 50 source pins, 162 exact controls and
+thirteen hostile ledgers preserve all action/source/refinement/on-shell and
+physical-gauge boundaries. The standalone flux action with unconstrained
+spectator links still fails calibrated contrast transfer on exact curved
+zero-field roots of that stated levelwise gate. No further native
+connection or interlevel constraint is assumed satisfied. Near-identity
+transport preserves the previously specified scalar/graded refinement
+obstructions, with explicit bounded-raw Gram error (Ch+C^2h^2/4)B^2.
+No general approximate graded or concentration result is claimed.

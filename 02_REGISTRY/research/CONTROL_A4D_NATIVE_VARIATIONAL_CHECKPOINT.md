@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`fc12fc7800eff1a0fb74d73c9d920128cbc9450f`, following
-`dae0ec13f9f885ff945c45613ae38becbc097d18`.
+`59fef13f804d4c5706ef86fe6df01a53f214c565`, following
+`fc12fc7800eff1a0fb74d73c9d920128cbc9450f`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-eighty-seven byte-identical artifacts, with source Git blobs and SHA256 hashes:
+ninety-three byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -68,6 +68,10 @@ eighty-seven byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and actual centering/metric/zero-field capsule with
   output and transitive-source receipt.
 
+* [Native links, transported-center fibers and smooth simultaneous variations](A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md),
+  exact checker/ledger and compiled native-link/periodic-recurrence/Cayley
+  capsule with output and transitive-source receipt.
+
 The published source head and new proof/capsule blobs were independently verified
 against GitHub before this intake commit.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
@@ -79,12 +83,14 @@ vector source capsule, the 12 pins of the mixed-parent source capsule,
 the 32 pins of the verification/refinement capsule, and the 35 pins of
 the actual local-source quotient capsule, and the 33 pins of the nonlinear
 log-det capsule, the 25 pins of the positive-state/refinement capsule,
-and the 53 pins of the centered-metric capsule,
-the registry snapshot and all fourteen native certificates' input hashes match
+the 53 pins of the centered-metric capsule, and the 50 pins of the
+transported-connection capsule,
+the registry snapshot and all fifteen native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
-`af221e2fed92821c52afc88a5500774de8cd9a93` and
-`98269b4ffbd19338a2b162d4e14ea8c4ec08609a` versions, rather than an absent
+`af221e2fed92821c52afc88a5500774de8cd9a93`,
+`98269b4ffbd19338a2b162d4e14ea8c4ec08609a` and
+`fc12fc7800eff1a0fb74d73c9d920128cbc9450f` versions, rather than an absent
 local file or an implicitly merged scientific parent.
 
 ## Scientific review boundaries
@@ -334,15 +340,40 @@ local file or an implicitly merged scientific parent.
     This retains both owned normalizations. Concentrated weak energy, L1
     convergence and approximate graded compatibility are not classified.
 
+25. **Native transported connection:** the actual affine Lorentz matrix
+    readout is surjective, with arbitrary affine shifts retained. The
+    transported center has a complete finite holonomy range/kernel/fiber
+    criterion, including singular compatibility and arbitrary-target
+    reconstruction in the invertible case. Half-transport midpoint data
+    realize smooth corrected coframes, all ten metric and 24 connection
+    directions. The finite joint variation retains its mixed raw/link
+    term. The published physical probe premise gives all-row O(h^2)
+    connection residuals on the actual corrected readout, not native
+    stationarity. Every injective even near-identity instance has full
+    inverse at least 2/(Ch); no quotient bound is inferred when singular.
+    The standalone free flux gate with unconstrained spectator links
+    still has exact curved zero-field roots and zero native contrast
+    against physical -3*pi^2*h^(1/3)/50+O(h). Additional native connection
+    and interlevel equations are outside this scoped obstruction.
+    No action, source, refinement law or physical gauge is added; ordinary
+    node gauge does not close the centered-Cartan/Ward obligation.
+    Under R_h=I+O(h), the previously specified scalar/graded arrows retain
+    constant/zero/eta metric limits; the bounded-raw transported Gram error
+    is at most (Ch+C^2h^2/4)B^2. No concentration or general approximate
+    graded theorem is asserted. The exact flat joint metric-only image is
+    larger than the image with prescribed links; the latter retains
+    cokernel 4L^3+6L^2 on even grids. Smooth approximate lifts do not
+    imply arbitrary finite target feasibility.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The eighty-seven imported files
+labels, Lean owners and BOOK text are unchanged. The ninety-three imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The fourteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92 and 94 exact controls without
+The fifteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94 and 162 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -418,8 +449,8 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 87 artifact blobs and 245 distinct artifact/input hashes
-are verified, including two explicit published prerequisite versions of the
+are rejected. All 93 artifact blobs and 252 distinct artifact/input hashes
+are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
 with 53 transitive D0 source pins, five actual types and 24 standard-axiom
@@ -431,6 +462,14 @@ metric pullback, packing, midpoint readout and generic corrected-metric
 curvature/action calculation. Nine hostile ledgers falsifying the inverse, source, normalization, global
 status, interlevel admission, constant-limit class, approximate-error
 hypotheses and either graded terminal are rejected.
+The transported-connection capsule checks eighteen new propositions and
+reuses two actual owner theorems, with 50 transitive source pins and five
+printed types. Standard axioms only; the all-size determinant/range and
+smooth asymptotic results remain analytical. Its 162 exact controls and
+thirteen hostile ledgers retain orientation, finite feasibility, inverse
+loss, all variation directions and every action/on-shell/refinement/Ward
+boundary, including the precisely stated spectator-link flux class.
+The original 24x64-row/ten-metric physical certificate was replayed unchanged.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -459,6 +498,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_edge_source_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_logdet_source_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_measure_refinement_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_transported_connection_check.py
 ```
 
 ## Preserved original obligations

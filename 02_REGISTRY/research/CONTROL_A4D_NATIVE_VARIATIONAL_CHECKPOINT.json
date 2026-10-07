@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "8fc5a1110313295676ab2785f30c33a4de2b43678f47ea3591d8a4f09d511841",
-      "source_blob": "4e0b68e1613d77c139fe99a59d53b256b53880eb"
+      "sha256": "562ac75a8c29ec1875db2fe6830f17d958e5f08e3d253099fe81bebca137db5c",
+      "source_blob": "9d13426e48ba5760d3bbbd61336a4f502b762b85"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "9b731ba5870ed7032084ace13150f929dbe80db20f91d27bdd6c000b348a3ed7",
-      "source_blob": "6d9c0537f537211cc525dbf04abad6787606c70d"
+      "sha256": "a4120ea21b8efbe15b2c37a8a5115fabfb85b915f106dfbea785e1a4c5a4c1ff",
+      "source_blob": "fba97d279e9bf10f926b1b2ecba58bafe91d3528"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -436,6 +436,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_certificate.json",
       "sha256": "78eb61f67d9be3c5eedf43042bb24a89870775f9ae2c1d91a49d48b6be41a63f",
       "source_blob": "95e6d8a55412ccb61dfb90d8291d07a47715f3b2"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md",
+      "sha256": "898487236c81acf7de4fa232bcb86e039d9d9725141a2bc4dc4af050db4f84f7",
+      "source_blob": "a5f52bd35ee9bead7b5a30c4208087a29c41c0af"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_transported_connection.lean",
+      "sha256": "419dd89ae8d5a54f6c0b30fff1ff54914406ac4cbaa0f3a03877eec8e424dcc5",
+      "source_blob": "26280e52488e7e19eb229af8bcb333c043977d35"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_transported_connection_output.txt",
+      "sha256": "38eab1f61d347a9acc12f3a85f873cce5473676bc0570b67eb1632e47e92928d",
+      "source_blob": "271c123a895cc26b4e129780f6c5ca48d304ccc7"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_transported_connection_results.json",
+      "sha256": "9ef5c18e453a84c66425bf4581c055b3921990bc04692ef6b6e9a0591001c2d9",
+      "source_blob": "da6ce55a16642f764d2beaba602e7c29cc594658"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_transported_connection_check.py",
+      "sha256": "e28de89eff76fd8ae360cc2a012b147c31d4f93e7b320817e72e3ac10d08a95d",
+      "source_blob": "09818093ad8bc479c4b20f7e4d770d4216cf445b"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_transported_connection_certificate.json",
+      "sha256": "f2868b94843c474d504afbcdeb9b23126dd992e8d9a6249d3a488e8a7d248868",
+      "source_blob": "957b954527931311170032ee2ba117a5be68bf0d"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -444,7 +474,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "dae0ec13f9f885ff945c45613ae38becbc097d18",
+  "previous_source_head": "fc12fc7800eff1a0fb74d73c9d920128cbc9450f",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -470,11 +500,12 @@
     "Actual coordinate-edge operator with direct nodal fields has exact mixed-coordinate annihilation and a curved weak bilinear gap pi^2/20. A full periodic cell corrector has O(h) field amplitude but mixed response -9/20, protecting prepared-field exceptions; this cell problem is not a physical root or a native preparation theorem.",
     "Bare positive log-det with uniformly bounded positive conductances, controlled endpoint sensitivity and two actual uniform flat comparison maps cannot retain nonzero curved contrast after flat calibration. Both signs, arbitrary mesh couplings/normalizations, nonlinear maps and spatial oscillation are allowed. Missing flat maps, signed weights, unbounded sensitivity and geometry-dependent subtractions stay outside the theorem.",
     "All positive normalized states on the actual coordinatewise Role-point diagram are summable mixtures on countable address histories, including arbitrary correlations. Exact compatibility or vanishing total composed TV error forces atomic weak limits under arbitrary point/shrinking positive local volume readouts. For direct or uniformly nearby nodal placement, consistency on each fixed smooth doubling test alone permits only delta_0; a smooth positive density has an explicit fixed probe gap at least m/32. Twenty-five compiled propositions, 25 transitive source pins, 92 exact controls and four hostile ledgers. Infinite measure/limit theorems are analytical. Adjacent smallness, different projections, macroscopic kernels, signed/field states and the distinct flattened/eight-atom measures retain their scopes. State consistency is not inferred from the Einstein contrast estimate; no physical measure or action is selected.",
-    "Actual centered coframe/Gram readout: complete linear centering range inverse and exact nonlinear Lorentz-fiber criterion; smooth metric and all symmetric probe lifts with O(h^2) corrections and explicit preparation bounds. Twenty-two new and two existing propositions compile with 53 source pins; 94 exact controls and nine hostile ledgers retain full raw kernels, packing and high-frequency inverse loss. Exact levelwise standalone flux roots have a curved non-Einstein centered-metric limit, zero native contrast and physical half-contrast -(3*pi^2/50)h^(1/3)+O(h), with corrected continuum-action error at most pi^4 h^2/300. Native interlevel admission is not asserted. The finite fiber criterion does not assert feasibility for arbitrary finite metrics; no action, matter source, connection or physical gauge is added. Original #310 and global native GR remain OPEN. For the separately specified componentwise actual scalar pullback, the complete smooth nondegenerate metric-limit class is constant Lorentz metrics. Its approximate extension consumes bounded raw L2 preparation and vanishing composed L2 defects. The curved midpoint family fails both doubling and fixed-coarse composed consistency, despite vanishing adjacent errors. This transition is not selected as a physical native law. The separate graded one-form B1/B0 lift, in either owned normalization, gives a zero metric limit in measure for full solder transport and only eta for perturbation transport. The former has empty nondegenerate fine fibers; the latter has an actual flat zero-field realization. This is not an L1/concentration or approximate-graded theorem."
+    "Actual centered coframe/Gram readout: complete linear centering range inverse and exact nonlinear Lorentz-fiber criterion; smooth metric and all symmetric probe lifts with O(h^2) corrections and explicit preparation bounds. Twenty-two new and two existing propositions compile with 53 source pins; 94 exact controls and nine hostile ledgers retain full raw kernels, packing and high-frequency inverse loss. Exact levelwise standalone flux roots have a curved non-Einstein centered-metric limit, zero native contrast and physical half-contrast -(3*pi^2/50)h^(1/3)+O(h), with corrected continuum-action error at most pi^4 h^2/300. Native interlevel admission is not asserted. The finite fiber criterion does not assert feasibility for arbitrary finite metrics; no action, matter source, connection or physical gauge is added. Original #310 and global native GR remain OPEN. For the separately specified componentwise actual scalar pullback, the complete smooth nondegenerate metric-limit class is constant Lorentz metrics. Its approximate extension consumes bounded raw L2 preparation and vanishing composed L2 defects. The curved midpoint family fails both doubling and fixed-coarse composed consistency, despite vanishing adjacent errors. This transition is not selected as a physical native law. The separate graded one-form B1/B0 lift, in either owned normalization, gives a zero metric limit in measure for full solder transport and only eta for perturbation transport. The former has empty nondegenerate fine fibers; the latter has an actual flat zero-field realization. This is not an L1/concentration or approximate-graded theorem.",
+    "Actual native affine Lorentz link readout and complete transported-center cycle-holonomy range/kernel/fiber classification. Smooth half-transport midpoint preparation realizes corrected coframes and all ten metric plus 24 independent connection directions, with physical all-row O(h^2) residual under the explicit probe prerequisite. Twenty compiled propositions, 50 transitive source pins, 162 exact controls and thirteen hostile ledgers. Native action/source/refinement and on-shell stationarity remain open; all invisible shifts/raw kernels are retained. Even injective near-identity even cycles have full inverse norm at least 2/(Ch); no singular quotient bound is inferred. The standalone free flux gate with unconstrained spectator links still has exact curved zero-field roots, native zero contrast and physical half-contrast -3*pi^2*h^(1/3)/50+O(h), excluding transfer only in that stated levelwise class. Additional native connection/interlevel equations, centered-Cartan Ward, all original parent terminals and global GR remain open. For the previously specified scalar/graded native arrows, R_h=I+O(h) preserves the constant/zero/eta metric-limit classes. The bounded-raw estimate is (Ch+C^2h^2/4)B^2; no general approximate graded or concentration theorem is claimed. The exact flat joint metric-only differential has even-grid rank 10L^4-4L^3, whereas independently prescribed metric/link output retains cokernel 4L^3+6L^2. Full L=2 ranks 104/128/488 are checked; no finite arbitrary-target surjectivity is claimed."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "fc12fc7800eff1a0fb74d73c9d920128cbc9450f",
+  "source_head": "59fef13f804d4c5706ef86fe6df01a53f214c565",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "a2172a09179a4f829be88862bfd62d772ab485e3",
+  "source_parent": "fc12fc7800eff1a0fb74d73c9d920128cbc9450f",
   "source_pr": 310
 }
