@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "188b9db02b9c3c6a575512d7f1198856ed8b5599beb0f37af23ad98a53b0d5e5",
+    "sha256": "8019b5938456d56a40722c82a937b8111944c4a2ade5f10086d473c48f4235d2",
     "global_census": false
   },
   "history_diagnosis": {
@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "a2a2ccae43ec4812ade33db7b0610245e173f4b9",
+    "source_head": "27175008f7dbba9a98bc739f6cde0958a53858e8",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -210,6 +210,19 @@
       "direct_identity_cost_is_differentiable_native_action": false,
       "all_continuum_constructions_excluded": false,
       "native_history_composition_derived": false,
+      "g0_closed": false
+    },
+    "external_result_review": {
+      "proof": "02_REGISTRY/research/A4D_EXTERNAL_G0_RESULT_REVIEW_2026-10-07.md",
+      "next_task": "02_REGISTRY/research/D0_THEORY_TASK_NEXT_2026-10-07.md",
+      "verdict": "PARTIAL_ACCEPTANCE_WITH_CORRECTIONS",
+      "compiled_declarations": 20,
+      "transitive_d0_source_pins": 2,
+      "independent_exact_controls": 38,
+      "rejected_false_scope_ledgers": 8,
+      "submitted_replay_pass_count": 50,
+      "submitted_pass_count_proves_T16": false,
+      "result": "PARTIAL ACCEPTANCE WITH CORRECTIONS of the four preserved external G0 inputs. T4 now proves the nonzero cube of the literal constant scalarCycleG for every n >= 3. T5 and T8 proofs are repaired; T9 distinguishes parameter and background derivatives; T11 concerns the homogeneous difference of mixed-jet solutions; T15 single-direction Hessian evaluation is surjective but generally noninjective. Both directions of T16 are rejected by explicit interface countermodels: isotropy covariance does not imply frame/readout compatibility, and noncovariance does not imply distinguishable values. The submitted certificate replays 50 PASS but has a wrong C10a predicate and a literal True placeholder C14c. A separate review capsule compiles 20 declarations with 2 transitive D0 pins, 38 independent exact controls and 8 rejected false-scope ledgers. Abstract countermodels are not native physical solutions. The new external task targets the independently owned history-to-field action, full admitted variations/Euler/readout and refinement chain, followed by source and the gravitational transfer. The existing G0 75/83/154/43 and parent-source 32/12/75/17 packages are unchanged. G0, positive GR, global closure and all original parent terminals remain OPEN.",
       "g0_closed": false
     }
   }

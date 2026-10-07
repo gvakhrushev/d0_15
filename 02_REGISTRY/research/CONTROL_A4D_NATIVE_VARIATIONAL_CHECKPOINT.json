@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "188b9db02b9c3c6a575512d7f1198856ed8b5599beb0f37af23ad98a53b0d5e5",
-      "source_blob": "9b45f7133099702ee3aa9d54265a1c266a330e1e"
+      "sha256": "8019b5938456d56a40722c82a937b8111944c4a2ade5f10086d473c48f4235d2",
+      "source_blob": "3cd1d6b4f6c91763749f1a5151cfb7d5de83cca5"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "be5092cd8d5acc14648bc3bfe486e5b9f0ef5394d5778fe8422976c3b1e19011",
-      "source_blob": "015d597dd09d68620264a293b8adcbdec15ad77b"
+      "sha256": "84d47e4b7e14aa65172432eaf450f610f193a9bb27de2efd7b413254571f567c",
+      "source_blob": "323d9d700473c5ca300d9d7260e54681abd54dc8"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -586,6 +586,66 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_certificate.json",
       "sha256": "cc6b3024f98e36694c3193229fa83cfd16cb7e0accb9427badf8971ecd5c113e",
       "source_blob": "34d2b144d0db83b32bbc68bb39237b6ab5b8d84b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXTERNAL_G0_RESULT_REVIEW_2026-10-07.md",
+      "sha256": "0355d5c489b703b2974d27c6e2ad5ce74d5c7432e92381d5b6e674fbe9e7b571",
+      "source_blob": "5ead87f08f446ca386cb0cb02fd17bcc941eb32c"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_THEORY_TASK_NEXT_2026-10-07.md",
+      "sha256": "c423f5451e95b5c9ba42456340916d5a4f89b0dadf3acbab25953240ffc5a53f",
+      "source_blob": "a224e49aabfe67545efc78cc992a5e985174c478"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_external_g0_review.lean",
+      "sha256": "1bc7f359923b68fb45a2e0d71ddb3c4da723edd867ee7a81430287e52495acd3",
+      "source_blob": "771878625a68e39e7a83b9210eeda91212088af9"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_external_g0_review_output.txt",
+      "sha256": "7dd777076f9d01b525a694c000245ada11fc399eaa7000c8023a2cb919fc2106",
+      "source_blob": "ece5747530c05f54b2cb6f8d02ce4cc25f3d218c"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_external_g0_review_results.json",
+      "sha256": "79a23e61643a4996191f15fdb5c705484b55383914e029b32a3e22fa074d8000",
+      "source_blob": "f0f5853ac4014cc50ecb36da08d0593967844c5f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_external_g0_review_check.py",
+      "sha256": "2a4a870f7cad7e8ad505385e6b7e47c90db7607ecbef50d8bb72535990381228",
+      "source_blob": "968131a82776e1e51dc79117aae0dafe3c4290f5"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_external_g0_review_certificate.json",
+      "sha256": "bc1a6a84907280c33e7b4a901535075f5383581183d74eaa574c249732e447ac",
+      "source_blob": "1b3d52740cd4ade06d0c96d4774e8ca6694e132b"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_external_g0_review_submitted_replay.json",
+      "sha256": "75fb729490e4d6beca458d44c78d5b6e4fe348ce606e194b9880bcb51c9c9d7c",
+      "source_blob": "6de7dc8556ce89ff7016e2425920667f99e3884f"
+    },
+    {
+      "path": "02_REGISTRY/research/inputs/2026-10-07_external_g0/00_RESULT.md",
+      "sha256": "9221d8ece88f5cb42cbd7e052876b0a7674cfe1c9f9cb1649ba75b45e1e73db3",
+      "source_blob": "089d4db7c245d0bc4aec3dc976525609998ed880"
+    },
+    {
+      "path": "02_REGISTRY/research/inputs/2026-10-07_external_g0/01_MAIN_PROOF.md",
+      "sha256": "84125a80b57e2b3b91c2f7a7c3f787e70a9fb564a635125c7a9b66e75243edfb",
+      "source_blob": "adac07b428185cc5f64c2d72ef11c55adb7089a1"
+    },
+    {
+      "path": "02_REGISTRY/research/inputs/2026-10-07_external_g0/03_EXACT_CERTIFICATE.py",
+      "sha256": "f7e6b52fa69f006705282bf0c95afba6f46e3b330cc8cfb07158dc2d0378a073",
+      "source_blob": "98b2025afb36d7126c8a89fa00c0733fd1dea0e0"
+    },
+    {
+      "path": "02_REGISTRY/research/inputs/2026-10-07_external_g0/03_certificate_results.json",
+      "sha256": "8f1a91c65e655cfdf89d66b2020d3c0219caf8a2ddaed53b436c5c9057eef7d7",
+      "source_blob": "1b68aef54ee169a2f6d8d43000fda8ec782ac3ce"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -594,7 +654,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "fe116b56f9413cc2cd4e80f375cff1cc50d337f7",
+  "previous_source_head": "a2a2ccae43ec4812ade33db7b0610245e173f4b9",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -629,11 +689,12 @@
     "The same G0 package now completely classifies the actual exact polynomial composition premise as five zero coefficient matrices. At Dg=0 it is equivalent to K=G squared and G cubed=0; the actual scalar length-four constant generator has cube entry -32 and admits no such exact quadratic polynomial gate. The repaired total-degree-two statement retains its explicit cubic/quartic remainder and is equivalent only to K=G squared+Dg, with a nonempty fiber for every G,Dg. A full real matrix exponential and its first two derivatives compile as a control, not as selected native dynamics or a simultaneous multi-generator action. The supported conditional theorem remains true. Thirty-three declarations, 26 transitive D0 pins, 54 exact controls and 17 rejected scope mutations. Dg, the constitutive law, joint native dynamics/refinement and GR remain open. No graph node or original terminal changes.",
     "The complete flat translation transport fiber is normalized U plus the full isotropy representation; smooth flat-tangent integrability requires commuting isotropy generators, not all local generators. All compatible second jets have one arbitrary symmetric background Hessian. The literal four-role/Fock isotropy commutation and raw translation kernel bind directly to the native owners with standard axioms. The exact metric image is the centered symmetric gradient: rank 4*(L^4-gcd(L,2)^4), with the full transverse complement. Its Ward annihilator is exactly centered divergence zero; a constant identity covector has all translation pairings zero but nonzero normalized pairing 4 with an actual coframe-lifted smooth metric probe. Every strong L2 centered-solder limit of the entire flat orbit that is C2 and nondegenerate has zero Levi-Civita curvature. The Fourier/continuum arguments are analytic, not compiled continuum theorems. The 61 compiled declarations pin 83 D0 files; 128 exact controls and 32 false-scope mutations pass. Abstract intertwiners are not declared physical gauge, metric-only convergence is insufficient, and no whole-core or arbitrary finite-curvature conclusion is made. G0 must now supply the transverse action and independent Euler equations on the full coframe/link carrier, with native readout/refinement admission; every original parent remains OPEN.",
     "Complete field-frame consumer of one fixed literal mixed-parent family on arbitrary backgrounds. All four owner slots and the rectangular pairing bind to congruent visible operators. The source defect equals minus the contraction of all three actual Euler residuals with the frame generator; full roots, all independent background covectors and joint roots with the same geometric action correspond. Every fixed seed transported solely by invertible field frames has zero full source, even for indefinite or singular M. This closes that source class without selecting a physical gauge or a native action. Distinct transverse seed jets retain an exact source difference one on the same full matter root. The bound norm(A)*norm(r)*norm(z) has an exact vanishing-residual/nonvanishing-defect control. 32 compiled declarations pin 12 D0 sources; 75 exact controls and 17 false-scope mutations pass. Native readout/refinement, transformed constraints, a physical seed law and the independent geometric action remain separate obligations. No physical D0 nonuniqueness, whole-core obstruction, native-Einstein transfer, G0 closure or parent retirement is claimed.",
-    "The direct primitive-cost variation is classified for every actual ActionProtocol and every real state germ: continuity of the identity-based cost is equivalent to local state constancy. A faithful nonzero affine coframe encoding therefore has no genuine derivative; a fixed nonzero calibration does not repair it. Lean totalized deriv equals zero at the nondifferentiable point and cannot itself define an Euler gate. The canonical centered reading is zero, while one fixed squared-reading cost realizes every real centered value on its entire supplied pencil. Arbitrary nonnegative zero-diagonal profiles admit actual primitive completions with shrinking effective gap and uniform error at most delta. This preserves finite-probe and continuum constructions without selecting their profile. The accepted A-PARENT missing history-composition law is consumed, not reopened as a finite-selector search. The full G0 capsule has 75 compiled declarations, 83 transitive D0 pins, 154 exact controls and 43 rejected false-scope ledgers. The independent native history-to-field action, variations, normalization and refinement remain unconstructed. No physical action, physical response nonuniqueness, whole-core NO-GO, native contrast, G0 closure, GR or parent retirement is inferred."
+    "The direct primitive-cost variation is classified for every actual ActionProtocol and every real state germ: continuity of the identity-based cost is equivalent to local state constancy. A faithful nonzero affine coframe encoding therefore has no genuine derivative; a fixed nonzero calibration does not repair it. Lean totalized deriv equals zero at the nondifferentiable point and cannot itself define an Euler gate. The canonical centered reading is zero, while one fixed squared-reading cost realizes every real centered value on its entire supplied pencil. Arbitrary nonnegative zero-diagonal profiles admit actual primitive completions with shrinking effective gap and uniform error at most delta. This preserves finite-probe and continuum constructions without selecting their profile. The accepted A-PARENT missing history-composition law is consumed, not reopened as a finite-selector search. The full G0 capsule has 75 compiled declarations, 83 transitive D0 pins, 154 exact controls and 43 rejected false-scope ledgers. The independent native history-to-field action, variations, normalization and refinement remain unconstructed. No physical action, physical response nonuniqueness, whole-core NO-GO, native contrast, G0 closure, GR or parent retirement is inferred.",
+    "PARTIAL ACCEPTANCE WITH CORRECTIONS of the four preserved external G0 inputs. T4 now proves the nonzero cube of the literal constant scalarCycleG for every n >= 3. T5 and T8 proofs are repaired; T9 distinguishes parameter and background derivatives; T11 concerns the homogeneous difference of mixed-jet solutions; T15 single-direction Hessian evaluation is surjective but generally noninjective. Both directions of T16 are rejected by explicit interface countermodels: isotropy covariance does not imply frame/readout compatibility, and noncovariance does not imply distinguishable values. The submitted certificate replays 50 PASS but has a wrong C10a predicate and a literal True placeholder C14c. A separate review capsule compiles 20 declarations with 2 transitive D0 pins, 38 independent exact controls and 8 rejected false-scope ledgers. Abstract countermodels are not native physical solutions. The new external task targets the independently owned history-to-field action, full admitted variations/Euler/readout and refinement chain, followed by source and the gravitational transfer. The existing G0 75/83/154/43 and parent-source 32/12/75/17 packages are unchanged. G0, positive GR, global closure and all original parent terminals remain OPEN."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "a2a2ccae43ec4812ade33db7b0610245e173f4b9",
+  "source_head": "27175008f7dbba9a98bc739f6cde0958a53858e8",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "fe116b56f9413cc2cd4e80f375cff1cc50d337f7",
+  "source_parent": "a2a2ccae43ec4812ade33db7b0610245e173f4b9",
   "source_pr": 310
 }

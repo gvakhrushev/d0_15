@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `a2a2ccae43ec4812ade33db7b0610245e173f4b9` through
+#310 at `27175008f7dbba9a98bc739f6cde0958a53858e8` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -85,8 +85,8 @@ real scalar variation and profile nonselection, the full convex-profile
 contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
-propositions and 91 controls pin 33 transitive sources. The expanded 117-artifact slice
-has 292 verified distinct artifact/input hashes; the gravity graph has
+propositions and 91 controls pin 33 transitive sources. The expanded 129-artifact slice
+has 304 verified distinct artifact/input hashes; the gravity graph has
 44 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
 
@@ -170,3 +170,12 @@ The complete flat transport and metric-consumer continuation adds: The complete 
 The existing mixed-parent consumer is extended at the verified source head above: Complete field-frame consumer of one fixed literal mixed-parent family on arbitrary backgrounds. All four owner slots and the rectangular pairing bind to congruent visible operators. The source defect equals minus the contraction of all three actual Euler residuals with the frame generator; full roots, all independent background covectors and joint roots with the same geometric action correspond. Every fixed seed transported solely by invertible field frames has zero full source, even for indefinite or singular M. This closes that source class without selecting a physical gauge or a native action. Distinct transverse seed jets retain an exact source difference one on the same full matter root. The bound norm(A)*norm(r)*norm(z) has an exact vanishing-residual/nonvanishing-defect control. 32 compiled declarations pin 12 D0 sources; 75 exact controls and 17 false-scope mutations pass. Native readout/refinement, transformed constraints, a physical seed law and the independent geometric action remain separate obligations. No physical D0 nonuniqueness, whole-core obstruction, native-Einstein transfer, G0 closure or parent retirement is claimed.
 
 The complete direct primitive-variation continuation adds: The direct primitive-cost variation is classified for every actual ActionProtocol and every real state germ: continuity of the identity-based cost is equivalent to local state constancy. A faithful nonzero affine coframe encoding therefore has no genuine derivative; a fixed nonzero calibration does not repair it. Lean totalized deriv equals zero at the nondifferentiable point and cannot itself define an Euler gate. The canonical centered reading is zero, while one fixed squared-reading cost realizes every real centered value on its entire supplied pencil. Arbitrary nonnegative zero-diagonal profiles admit actual primitive completions with shrinking effective gap and uniform error at most delta. This preserves finite-probe and continuum constructions without selecting their profile. The accepted A-PARENT missing history-composition law is consumed, not reopened as a finite-selector search. The full G0 capsule has 75 compiled declarations, 83 transitive D0 pins, 154 exact controls and 43 rejected false-scope ledgers. The independent native history-to-field action, variations, normalization and refinement remain unconstructed. No physical action, physical response nonuniqueness, whole-core NO-GO, native contrast, G0 closure, GR or parent retirement is inferred.
+
+## User-directed external result integration — 2026-10-07
+
+PARTIAL ACCEPTANCE WITH CORRECTIONS of the four preserved external G0 inputs. T4 now proves the nonzero cube of the literal constant scalarCycleG for every n >= 3. T5 and T8 proofs are repaired; T9 distinguishes parameter and background derivatives; T11 concerns the homogeneous difference of mixed-jet solutions; T15 single-direction Hessian evaluation is surjective but generally noninjective. Both directions of T16 are rejected by explicit interface countermodels: isotropy covariance does not imply frame/readout compatibility, and noncovariance does not imply distinguishable values. The submitted certificate replays 50 PASS but has a wrong C10a predicate and a literal True placeholder C14c. A separate review capsule compiles 20 declarations with 2 transitive D0 pins, 38 independent exact controls and 8 rejected false-scope ledgers. Abstract countermodels are not native physical solutions. The new external task targets the independently owned history-to-field action, full admitted variations/Euler/readout and refinement chain, followed by source and the gravitational transfer. The existing G0 75/83/154/43 and parent-source 32/12/75/17 packages are unchanged. G0, positive GR, global closure and all original parent terminals remain OPEN.
+
+Review: `02_REGISTRY/research/A4D_EXTERNAL_G0_RESULT_REVIEW_2026-10-07.md`.
+Next external assignment: `02_REGISTRY/research/D0_THEORY_TASK_NEXT_2026-10-07.md`.
+The next assignment is an external proof specification, not a new registered
+execution or permission to create/retire a repository task.

@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`a2a2ccae43ec4812ade33db7b0610245e173f4b9`, following
-`fe116b56f9413cc2cd4e80f375cff1cc50d337f7`.
+`27175008f7dbba9a98bc739f6cde0958a53858e8`, following
+`a2a2ccae43ec4812ade33db7b0610245e173f4b9`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -19,7 +19,7 @@ The plan remains CONTROL metadata; the proof and certificates are source artifac
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-one hundred seventeen byte-identical artifacts, with source Git blobs and SHA256 hashes:
+129 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -109,9 +109,9 @@ the actual local-source quotient capsule, and the 33 pins of the nonlinear
 log-det capsule, the 25 pins of the positive-state/refinement capsule,
 the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
-capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 26 pins of the G0
-ownership capsule, the registry snapshot
-and all nineteen native certificates' input hashes match
+capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 83 pins of the G0
+ownership capsule and the two pins of the separate external-review capsule, the registry snapshot
+and all twenty exact certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -471,15 +471,17 @@ local file or an implicitly merged scientific parent.
 
 32. **Whole primitive-cost variation boundary:** The direct primitive-cost variation is classified for every actual ActionProtocol and every real state germ: continuity of the identity-based cost is equivalent to local state constancy. A faithful nonzero affine coframe encoding therefore has no genuine derivative; a fixed nonzero calibration does not repair it. Lean totalized deriv equals zero at the nondifferentiable point and cannot itself define an Euler gate. The canonical centered reading is zero, while one fixed squared-reading cost realizes every real centered value on its entire supplied pencil. Arbitrary nonnegative zero-diagonal profiles admit actual primitive completions with shrinking effective gap and uniform error at most delta. This preserves finite-probe and continuum constructions without selecting their profile. The accepted A-PARENT missing history-composition law is consumed, not reopened as a finite-selector search. The full G0 capsule has 75 compiled declarations, 83 transitive D0 pins, 154 exact controls and 43 rejected false-scope ledgers. The independent native history-to-field action, variations, normalization and refinement remain unconstructed. No physical action, physical response nonuniqueness, whole-core NO-GO, native contrast, G0 closure, GR or parent retirement is inferred.
 
+33. **Independent external G0 review:** PARTIAL ACCEPTANCE WITH CORRECTIONS of the four preserved external G0 inputs. T4 now proves the nonzero cube of the literal constant scalarCycleG for every n >= 3. T5 and T8 proofs are repaired; T9 distinguishes parameter and background derivatives; T11 concerns the homogeneous difference of mixed-jet solutions; T15 single-direction Hessian evaluation is surjective but generally noninjective. Both directions of T16 are rejected by explicit interface countermodels: isotropy covariance does not imply frame/readout compatibility, and noncovariance does not imply distinguishable values. The submitted certificate replays 50 PASS but has a wrong C10a predicate and a literal True placeholder C14c. A separate review capsule compiles 20 declarations with 2 transitive D0 pins, 38 independent exact controls and 8 rejected false-scope ledgers. Abstract countermodels are not native physical solutions. The new external task targets the independently owned history-to-field action, full admitted variations/Euler/readout and refinement chain, followed by source and the gravitational transfer. The existing G0 75/83/154/43 and parent-source 32/12/75/17 packages are unchanged. G0, positive GR, global closure and all original parent terminals remain OPEN.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The one hundred seventeen imported files
+labels, Lean owners and BOOK text are unchanged. The 129 imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The nineteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107 and 154 exact controls without
+The twenty self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154 and 38 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -555,7 +557,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 117 artifact blobs and 292 distinct artifact/input hashes
+are rejected. All 129 artifact blobs and 304 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -670,3 +672,12 @@ would require a separate discussion; no new action or postulate is added.
 The extended existing parent-source capsule now has 32 compiled declarations, 12 transitive D0 pins, 75 exact controls and 17 rejected scope ledgers. The existing G0 capsule now has 75 declarations, 83 pins, 154 controls and 43 scope guards; its updated consumer proof is hash-bound. CONTROL acceptance requires current-head CI and review.
 
 The direct-cost result in item 32 consumes the accepted A-PARENT premise and preserves its missing independent history-composition law. The older item 30 counts refer to its previous source slice. Current summary counts are bound to the compiler receipt; stale older ledger summary fields 51/80 were corrected, without changing the valid earlier compiler receipt 61/83.
+
+The external result and its complete theorem-by-theorem disposition are recorded in
+[the independent review](A4D_EXTERNAL_G0_RESULT_REVIEW_2026-10-07.md).
+The four unchanged submissions are provenance inputs, not accepted theorem files.
+[The next theoretical task](D0_THEORY_TASK_NEXT_2026-10-07.md) consumes the
+review and the current source/CONTROL boundaries. Its 20 compiled declarations,
+2 native pins, 38 exact controls and 8 hostile ledgers are a separate capsule;
+they do not replace the current G0 or parent-source counts. Full history/action
+ownership remains the next proof obligation; isotropy covariance cannot close it.
