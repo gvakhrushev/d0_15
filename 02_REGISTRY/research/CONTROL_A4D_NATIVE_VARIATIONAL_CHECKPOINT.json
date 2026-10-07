@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "9a1e7a15e3cc3aafb87ccab5362cf85f7ddfed4f250cce9d1cf7af028afc98f9",
-      "source_blob": "2f750bed9ef7b48eeee2a2ab4a9f58fbd2c2cc5b"
+      "sha256": "ba32b105e313571519a3180b2bcb8153d5658072428c10465a5f4bbe6119e1e5",
+      "source_blob": "9563cd948e41350b97748269409f4c11c8433e8a"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "1d05022106d57a7fdb377649901a892f3b7b4c662748c3fa1e8cd8d03a5d7386",
-      "source_blob": "ee7825bf6aad977ebc71ec14d0cbf7d0f784196d"
+      "sha256": "1680dd40586179d2e670459c5c354450a95e3a115a96b50d224128ae82d635ce",
+      "source_blob": "82da6e0b5067dc96c94648cce99b998d3c32f0c7"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -496,6 +496,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_connection_action_certificate.json",
       "sha256": "8937b4c56413cad240472586162dc1d4e662abcec756028370edd24feebd30d4",
       "source_blob": "94dd6712be51f7c4c55625c88fe27ac7069847ba"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COUPLED_HODGE_SCALE_BOUNDARY.md",
+      "sha256": "268b6b3321e68746bef138212398afdcdba0b9257a86f211a21d5c59ee26f591",
+      "source_blob": "dcbcfcb000590e2cffb1eb1fc3c6f51695098598"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale.lean",
+      "sha256": "2108ae8a0c4d85dfdd367a1fb515fd66c2422c1550e668ace7202c54795144e4",
+      "source_blob": "9e587c559cd4ac40479aab991535042c0377b7ad"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale_output.txt",
+      "sha256": "6c543e7b0f0b346566fd09ab6b7280d7161220a9bf8e8b32d1b3601460112ba7",
+      "source_blob": "47c4a633992c8b31f4c8a78880fe925fcbafb34b"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale_results.json",
+      "sha256": "7758f2271c4bd2ff21241a90ebf9630f51d732dad02d128278a8616ab3047d6d",
+      "source_blob": "d7debe6cbc3e72aa6665e2672b14b001b93b9101"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale_check.py",
+      "sha256": "9c5d0d18116e28718106a7d848578371b3cd0e9cd20356cd787e7140a48542fd",
+      "source_blob": "764df785c957b46277a295a8096179aea6e914b4"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale_certificate.json",
+      "sha256": "367ec6f16cdbc24d241a0577cb0d45577a845dcb7936086ea061323c2c8d56b6",
+      "source_blob": "bc648c284ab99675f85940d03a8f10f0f1d53107"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -504,7 +534,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "59fef13f804d4c5706ef86fe6df01a53f214c565",
+  "previous_source_head": "2d3f5fff0273ae5c028c07343a72b27b54374602",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -532,11 +562,12 @@
     "All positive normalized states on the actual coordinatewise Role-point diagram are summable mixtures on countable address histories, including arbitrary correlations. Exact compatibility or vanishing total composed TV error forces atomic weak limits under arbitrary point/shrinking positive local volume readouts. For direct or uniformly nearby nodal placement, consistency on each fixed smooth doubling test alone permits only delta_0; a smooth positive density has an explicit fixed probe gap at least m/32. Twenty-five compiled propositions, 25 transitive source pins, 92 exact controls and four hostile ledgers. Infinite measure/limit theorems are analytical. Adjacent smallness, different projections, macroscopic kernels, signed/field states and the distinct flattened/eight-atom measures retain their scopes. State consistency is not inferred from the Einstein contrast estimate; no physical measure or action is selected.",
     "Actual centered coframe/Gram readout: complete linear centering range inverse and exact nonlinear Lorentz-fiber criterion; smooth metric and all symmetric probe lifts with O(h^2) corrections and explicit preparation bounds. Twenty-two new and two existing propositions compile with 53 source pins; 94 exact controls and nine hostile ledgers retain full raw kernels, packing and high-frequency inverse loss. Exact levelwise standalone flux roots have a curved non-Einstein centered-metric limit, zero native contrast and physical half-contrast -(3*pi^2/50)h^(1/3)+O(h), with corrected continuum-action error at most pi^4 h^2/300. Native interlevel admission is not asserted. The finite fiber criterion does not assert feasibility for arbitrary finite metrics; no action, matter source, connection or physical gauge is added. Original #310 and global native GR remain OPEN. For the separately specified componentwise actual scalar pullback, the complete smooth nondegenerate metric-limit class is constant Lorentz metrics. Its approximate extension consumes bounded raw L2 preparation and vanishing composed L2 defects. The curved midpoint family fails both doubling and fixed-coarse composed consistency, despite vanishing adjacent errors. This transition is not selected as a physical native law. The separate graded one-form B1/B0 lift, in either owned normalization, gives a zero metric limit in measure for full solder transport and only eta for perturbation transport. The former has empty nondegenerate fine fibers; the latter has an actual flat zero-field realization. This is not an L1/concentration or approximate-graded theorem.",
     "Actual native affine Lorentz link readout and complete transported-center cycle-holonomy range/kernel/fiber classification. Smooth half-transport midpoint preparation realizes corrected coframes and all ten metric plus 24 independent connection directions, with physical all-row O(h^2) residual under the explicit probe prerequisite. Twenty compiled propositions, 50 transitive source pins, 162 exact controls and thirteen hostile ledgers. Native action/source/refinement and on-shell stationarity remain open; all invisible shifts/raw kernels are retained. Even injective near-identity even cycles have full inverse norm at least 2/(Ch); no singular quotient bound is inferred. The standalone free flux gate with unconstrained spectator links still has exact curved zero-field roots, native zero contrast and physical half-contrast -3*pi^2*h^(1/3)/50+O(h), excluding transfer only in that stated levelwise class. Additional native connection/interlevel equations, centered-Cartan Ward, all original parent terminals and global GR remain open. For the previously specified scalar/graded native arrows, R_h=I+O(h) preserves the constant/zero/eta metric-limit classes. The bounded-raw estimate is (Ch+C^2h^2/4)B^2; no general approximate graded or concentration theorem is claimed. The exact flat joint metric-only differential has even-grid rank 10L^4-4L^3, whereas independently prescribed metric/link output retains cokernel 4L^3+6L^2. Full L=2 ranks 104/128/488 are checked; no finite arbitrary-target surjectivity is claimed.",
-    "The actual supplied Killing, matrix Yang-Mills and seam action definitions are bound to their propositions. Every coframe-blind scalar factorization admitting the displayed transported homothetic probes fails O(h) calibrated contrast transfer: native zero versus -3*pi^2*h^(1/3)/50+O(h^(4/3)). The specified matrix-action/odd-plaquette binding has exact identity-link full levelwise roots with arbitrary coframe, a curved non-Einstein metric limit and a physical Euler row/h tending to -2*pi/5; additional native/interlevel constraints are excluded from that scope. All Lorentz-invariant symmetric quadratic forms are classified; every nonzero coefficient has signature (3,3). Continuity and Lorentz invariance force arbitrary connection-only scalars, including nonlocal ones, to take their flat value on all common-null-generator link fields. Stationarity needs an extra differentiable global-minimum premise. The existing indefinite action instead has complete full criticality on that sector exactly at zero scalar curl, by E=-2 Tr(NG) D^T D a; transverse variations cannot be omitted. Twenty compiled propositions, 43 source pins, 84 exact controls and eight false scope ledgers. No action or gate is selected; native positive GR, source, physical Ward, refinement, recovery and original #310/#202/#317 remain OPEN."
+    "The actual supplied Killing, matrix Yang-Mills and seam action definitions are bound to their propositions. Every coframe-blind scalar factorization admitting the displayed transported homothetic probes fails O(h) calibrated contrast transfer: native zero versus -3*pi^2*h^(1/3)/50+O(h^(4/3)). The specified matrix-action/odd-plaquette binding has exact identity-link full levelwise roots with arbitrary coframe, a curved non-Einstein metric limit and a physical Euler row/h tending to -2*pi/5; additional native/interlevel constraints are excluded from that scope. All Lorentz-invariant symmetric quadratic forms are classified; every nonzero coefficient has signature (3,3). Continuity and Lorentz invariance force arbitrary connection-only scalars, including nonlocal ones, to take their flat value on all common-null-generator link fields. Stationarity needs an extra differentiable global-minimum premise. The existing indefinite action instead has complete full criticality on that sector exactly at zero scalar curl, by E=-2 Tr(NG) D^T D a; transverse variations cannot be omitted. Twenty compiled propositions, 43 source pins, 84 exact controls and eight false scope ledgers. No action or gate is selected; native positive GR, source, physical Ward, refinement, recovery and original #310/#202/#317 remain OPEN.",
+    "Actual coframe-coupled Hodge weights and dressed links preserve uniform scale while retaining shape dependence. Two curved metric families have exact native transported readouts and identical volume vectors at every L in 4N, but physical action difference -9*pi^2/200. Every scale-invariant coframe/link scalar plus an arbitrary separate volume profile fails the common calibrated contrast test; the paired physical gap is -9*pi^2*h^(1/3)/200+O(h^(4/3)). Completeness is proved within the C1 volume-only radial-response class by integration, not for the whole core. The tested variable-weight curvature-quadratic binding has exact curved flat-link native roots; a nonzero constant volume coefficient instead makes its free source-free scale gate empty. Arbitrary nonlinear volume profiles are not included in that empty-fiber claim. Eighteen compiled propositions, 56 transitive pins, 103 exact controls and nine false scope ledgers retain all ten metric derivatives, packed weights and all 24 physical/native connection directions, including the transported-weight derivative. Exact special fibers are not general finite surjectivity, native on-shell preparation or interlevel admission. Mixed scale/shape dependence, smaller independently owned domains, matter, physical Ward, source/refinement transfer, soundness/recovery and positive GR remain open; no action is selected and #310/#202/#317 original terminals remain unchanged."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "2d3f5fff0273ae5c028c07343a72b27b54374602",
+  "source_head": "139ba614c85381a0b2c2cdf432d2912e852a92c3",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "59fef13f804d4c5706ef86fe6df01a53f214c565",
+  "source_parent": "2d3f5fff0273ae5c028c07343a72b27b54374602",
   "source_pr": 310
 }

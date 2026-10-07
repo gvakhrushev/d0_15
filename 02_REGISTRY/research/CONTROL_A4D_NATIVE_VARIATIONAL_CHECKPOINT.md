@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`2d3f5fff0273ae5c028c07343a72b27b54374602`, following
-`59fef13f804d4c5706ef86fe6df01a53f214c565`.
+`139ba614c85381a0b2c2cdf432d2912e852a92c3`, following
+`2d3f5fff0273ae5c028c07343a72b27b54374602`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-ninety-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
+one hundred five byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -76,6 +76,10 @@ ninety-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and compiled actual-action/variation/continuity
   capsule with output and transitive-source receipt.
 
+* [Coframe-coupled Hodge response and exact equal-volume metric fibers](A4D_NATIVE_COUPLED_HODGE_SCALE_BOUNDARY.md),
+  exact checker/ledger and compiled actual Hodge/action/variation/inverse
+  capsule with output and transitive-source receipt.
+
 The published source head and new proof/capsule blobs were independently verified
 against GitHub before this intake commit.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
@@ -89,7 +93,8 @@ the actual local-source quotient capsule, and the 33 pins of the nonlinear
 log-det capsule, the 25 pins of the positive-state/refinement capsule,
 the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
-capsule, the registry snapshot and all sixteen native certificates' input hashes match
+capsule, and the 56 pins of the coupled-Hodge capsule, the registry snapshot
+and all seventeen native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -389,6 +394,23 @@ local file or an implicitly merged scientific parent.
     Transverse variations and flat global holonomies are retained. This
     is not a classification of all Lorentz link roots or the full D0 core.
 
+27. **Coframe-coupled scale response:** actual middle-degree Hodge weights
+    and dressed links are scale invariant but can depend on shape. Two
+    curved metrics have exact transported native readouts and identical
+    volume vectors at every L in 4N. Their physical action difference is
+    -9*pi^2/200. Thus every scale-invariant coframe/link scalar plus an
+    arbitrary separate volume-density profile fails the common calibrated
+    contrast test, without any sensitivity bound on that profile. The
+    paired gap is -9*pi^2*h^(1/3)/200+O(h^(4/3)). A complete decomposition
+    is proved within the C1 volume-only radial-response class, not for all
+    native functionals. The variable-weight quadratic-curvature gate has
+    exact flat-link roots with curved readout. A nonzero constant volume
+    term instead makes the free source-free scale gate empty; arbitrary
+    nonlinear volume terms retain their different scope. All 24 native
+    link rows retain the transported-weight derivative. Mixed scale/shape
+    dependence, independent constraints, matter and interlevel equations
+    remain outside the excluded class. No new action is selected.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
@@ -397,7 +419,7 @@ are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The sixteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162 and 84 exact controls without
+The seventeen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162, 84 and 103 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -473,7 +495,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 99 artifact blobs and 262 distinct artifact/input hashes
+are rejected. All 105 artifact blobs and 269 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -501,6 +523,16 @@ Gram slots, all 24 directions, 2304 full finite factor tangents, complete
 rank-19 quadratic classification, Lorentz contraction and complete null
 sector Euler identities. Eight false scope ledgers are rejected. Smooth
 and all-size analytic claims are not presented as compiled theorems.
+The coupled-Hodge follow-up compiles eighteen propositions with 56
+transitive D0 source pins and standard axioms only. Its 103 exact controls
+retain local Lorentz covariance, all graded weights, all ten metric
+derivatives and packed dual weights, the exact special fibers, and all
+24 physical and native connection directions. Nine false scope ledgers
+are rejected. The arbitrary volume profile is controlled by exact equality
+of its inputs, not a hidden regularity assumption. All-size and continuum
+arguments remain analytic. The preceding source run 37562943755 passed
+at 2d3f5fff0273ae5c028c07343a72b27b54374602 before this new source push;
+its result is not substituted for the new current-head CI.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -531,6 +563,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_measure_refinement_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_transported_connection_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_connection_action_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale_check.py
 ```
 
 ## Preserved original obligations

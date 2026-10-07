@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `59fef13f804d4c5706ef86fe6df01a53f214c565` through
+#310 at `139ba614c85381a0b2c2cdf432d2912e852a92c3` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -69,7 +69,7 @@ frame obstruction, preserving arbitrary refinement-dependent collapsing
 functions as an exception to broader asymptotic claims. These results add
 no native action or physical on-shell gate.
 The receipt preserves the previous input head
-59fef13f804d4c5706ef86fe6df01a53f214c565. The intake also includes the literal vector/source and
+2d3f5fff0273ae5c028c07343a72b27b54374602. The intake also includes the literal vector/source and
 mixed-parent/source classifications with their exact range, kernel and
 residual exceptions, plus the actual verification/process and phase-refinement
 classification. Formal verifiability and the existing positive class-level
@@ -85,9 +85,9 @@ real scalar variation and profile nonselection, the full convex-profile
 contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
-propositions and 91 controls pin 33 transitive sources. The expanded 99-artifact slice
-has 262 verified distinct artifact/input hashes; the gravity graph has
-41 scoped nodes and is not a global ambiguity census. Independent matter,
+propositions and 91 controls pin 33 transitive sources. The expanded 105-artifact slice
+has 269 verified distinct artifact/input hashes; the gravity graph has
+42 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
 
 The positive point-state/refinement follow-up classifies all compatible
@@ -141,3 +141,5 @@ obstructions, with explicit bounded-raw Gram error (Ch+C^2h^2/4)B^2.
 No general approximate graded or concentration result is claimed.
 
 The connection-action follow-up adds: The actual supplied Killing, matrix Yang-Mills and seam action definitions are bound to their propositions. Every coframe-blind scalar factorization admitting the displayed transported homothetic probes fails O(h) calibrated contrast transfer: native zero versus -3*pi^2*h^(1/3)/50+O(h^(4/3)). The specified matrix-action/odd-plaquette binding has exact identity-link full levelwise roots with arbitrary coframe, a curved non-Einstein metric limit and a physical Euler row/h tending to -2*pi/5; additional native/interlevel constraints are excluded from that scope. All Lorentz-invariant symmetric quadratic forms are classified; every nonzero coefficient has signature (3,3). Continuity and Lorentz invariance force arbitrary connection-only scalars, including nonlocal ones, to take their flat value on all common-null-generator link fields. Stationarity needs an extra differentiable global-minimum premise. The existing indefinite action instead has complete full criticality on that sector exactly at zero scalar curl, by E=-2 Tr(NG) D^T D a; transverse variations cannot be omitted. Twenty compiled propositions, 43 source pins, 84 exact controls and eight false scope ledgers. No action or gate is selected; native positive GR, source, physical Ward, refinement, recovery and original #310/#202/#317 remain OPEN.
+
+The coupled-Hodge follow-up adds: Actual coframe-coupled Hodge weights and dressed links preserve uniform scale while retaining shape dependence. Two curved metric families have exact native transported readouts and identical volume vectors at every L in 4N, but physical action difference -9*pi^2/200. Every scale-invariant coframe/link scalar plus an arbitrary separate volume profile fails the common calibrated contrast test; the paired physical gap is -9*pi^2*h^(1/3)/200+O(h^(4/3)). Completeness is proved within the C1 volume-only radial-response class by integration, not for the whole core. The tested variable-weight curvature-quadratic binding has exact curved flat-link native roots; a nonzero constant volume coefficient instead makes its free source-free scale gate empty. Arbitrary nonlinear volume profiles are not included in that empty-fiber claim. Eighteen compiled propositions, 56 transitive pins, 103 exact controls and nine false scope ledgers retain all ten metric derivatives, packed weights and all 24 physical/native connection directions, including the transported-weight derivative. Exact special fibers are not general finite surjectivity, native on-shell preparation or interlevel admission. Mixed scale/shape dependence, smaller independently owned domains, matter, physical Ward, source/refinement transfer, soundness/recovery and positive GR remain open; no action is selected and #310/#202/#317 original terminals remain unchanged.
