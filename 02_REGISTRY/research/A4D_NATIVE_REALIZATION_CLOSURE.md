@@ -24,6 +24,22 @@ retains the explicit higher-order remainder and requires only K=G squared+Dg.
 A full real exponential flow is a control for this distinction. No Dg law,
 simultaneous native groupoid or constitutive action is thereby constructed.
 
+The same [G0 ownership proof](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md#6-complete-flat-translation-lift-family-including-its-stabilizer)
+now classifies the complete simultaneous flat-translation transport fiber,
+including isotropy and arbitrary symmetric second jets. It binds the
+integrability criterion directly to the literal four-role/Fock constant
+generators. Different normalized transports have an explicit abstract
+intertwiner; it is not automatically an owned physical gauge map.
+The complete metric consumer is now determined: the literal flat metric
+image has rank 4(L^4-16) for every L in 4N; testing it is exactly centered
+divergence zero, with a compiled nonzero smooth metric covector proving
+that this is not full metric stationarity. The entire flat orbit has only
+flat smooth nondegenerate limits under strong L2 coframe convergence.
+Further U/Hessian choices cannot repair either limitation. G0 must supply
+the native action and independent Euler equations on the full existing
+coframe/link carrier, including transverse metric variations and physical
+refinement. No new graph node or parent terminal is introduced.
+
 The October 6 audit report and the chat summaries were investigative inputs,
 not instructions to change a mathematical definition or a release status.
 The implementation follows the user's explicit closure plan. Its first

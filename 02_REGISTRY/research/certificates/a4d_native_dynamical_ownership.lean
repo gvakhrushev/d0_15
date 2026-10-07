@@ -3,12 +3,18 @@ import D0.Foundation.ObservableCompletionCanonicity
 import D0.Geometry.A4DPathWordParentWard
 import D0.Geometry.A4DActionGroupoidSecondJet
 import D0.Geometry.A4DScalarDeltaSecondJet
+import D0.Geometry.A4DScalarAdvectiveGroupoidObstruction
+import D0.Geometry.A4DDiscreteEnergyKernel
+import D0.Geometry.A4DAffineMatterLiftObstruction
+import D0.Geometry.A4DCellHessianTransverseModulus
+import D0.Gravity.A4DParentWardStressDescent
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential
 import Mathlib.Analysis.SpecialFunctions.Exponential
 import Mathlib.Analysis.Calculus.Deriv.Pow
 import Mathlib.Analysis.Calculus.Deriv.Add
 import Mathlib.Analysis.Calculus.Deriv.Mul
 import Mathlib.Tactic
+import Lean
 
 /-! G0: complete fibers of the actual primitive action interface and of
 passive/invariant action data. No new physical action is selected. -/
@@ -19,6 +25,7 @@ open D0.Foundation.PopperianBootstrap
 open D0.Foundation.EndogenousActionQuantum
 open D0.Foundation.ObservableCompletionCanonicity
 open D0.Geometry
+open D0.Gravity
 noncomputable section
 
 abbrev DistinctPair (P : VerificationProtocol) :=
@@ -469,6 +476,418 @@ theorem real_flow_first_two_derivatives (G : Matrix ι ι ℝ) :
   · simpa [realFlow] using (hasDerivAt_exp_smul_const G (0 : ℝ)).mul_const G
 end RealFlowControl
 
+open D0
+open scoped BigOperators
+
+section SplitGroupoid
+variable {X H K : Type*} [Group H] [Group K]
+
+/-- Pair groupoid times the full stabilizer, with no isotropy erased. -/
+structure SplitTransport (X H K : Type*) [Group H] [Group K] where
+  map : X → X → H → K
+  identity : ∀ x, map x x 1 = 1
+  composition : ∀ x y z h k, map x y h * map y z k = map x z (h*k)
+
+@[ext] theorem splitTransport_ext (T S : SplitTransport X H K)
+    (h : ∀ x y k, T.map x y k = S.map x y k) : T = S := by
+  cases T with
+  | mk t ti tc =>
+    cases S with
+    | mk s si sc =>
+      have hs : t=s := funext fun x => funext fun y => funext (h x y)
+      cases hs
+      rfl
+
+def transportFromData (U : X → K) (rho : H →* K) : SplitTransport X H K where
+  map x y h := U x * rho h * (U y)⁻¹
+  identity := by intro x; simp
+  composition := by intro x y z h k; simp [map_mul, mul_assoc]
+
+def transportIsotropy (b : X) (T : SplitTransport X H K) : H →* K where
+  toFun h := T.map b b h
+  map_one' := T.identity b
+  map_mul' h k := (T.composition b b b h k).symm
+
+theorem split_transport_factorization (b : X) (T : SplitTransport X H K)
+    (x y : X) (h : H) :
+    T.map x y h = T.map x b 1 * (transportIsotropy b T) h * (T.map y b 1)⁻¹ := by
+  have hi : T.map b y 1 = (T.map y b 1)⁻¹ := by
+    apply eq_inv_of_mul_eq_one_left
+    simpa [T.identity] using T.composition b y b 1 1
+  have h1 := T.composition x b b 1 h
+  have h2 := T.composition x b y h 1
+  change T.map x y h = T.map x b 1 * T.map b b h * (T.map y b 1)⁻¹
+  rw [← hi]
+  simp only [one_mul,mul_one] at h1 h2
+  rw [h1,h2]
+
+/-- Every strict transport on this entire split groupoid, with unique normalized data. -/
+def completeSplitTransportFiber (b : X) :
+    SplitTransport X H K ≃ ({U : X → K // U b = 1} × (H →* K)) where
+  toFun T := (⟨fun x => T.map x b 1,T.identity b⟩,transportIsotropy b T)
+  invFun p := transportFromData p.1.val p.2
+  left_inv T := by
+    apply splitTransport_ext
+    intro x y h
+    exact (split_transport_factorization b T x y h).symm
+  right_inv p := by
+    rcases p with ⟨⟨U,hU⟩,rho⟩
+    apply Prod.ext
+    · apply Subtype.ext
+      funext x
+      simp [transportFromData,hU]
+    · ext h
+      simp [transportIsotropy,transportFromData,hU]
+
+/-- Normalized trivialization freedom has an explicit intertwiner; this is
+not a declaration of native physical gauge or readout equivalence. -/
+theorem split_transport_intertwiner (U V : X → K) (rho : H →* K)
+    (x y : X) (h : H) :
+    (V x * (U x)⁻¹) * (transportFromData U rho).map x y h =
+      (transportFromData V rho).map x y h * (V y * (U y)⁻¹) := by
+  simp [transportFromData,mul_assoc]
+
+/-- Full classification of covariant sections for the given group action:
+a value at the base must be invariant under every isotropy element. -/
+theorem transported_section_covariant_iff {Y : Type*} [MulAction K Y]
+    (b : X) (U : X → K) (hU : U b=1) (rho : H →* K) (v : Y) :
+    (∀ x y h, (transportFromData U rho).map x y h • (U y • v) = U x • v) ↔
+      (∀ h, rho h • v = v) := by
+  constructor
+  · intro hc h
+    simpa [transportFromData,hU] using hc b b h
+  · intro hv x y h
+    simp [transportFromData,mul_smul,hv]
+end SplitGroupoid
+
+section NativeKernel
+open scoped BigOperators
+variable {n : ℕ} [NeZero n]
+
+theorem native_scalar_displacement_kernel (v : Fin n → ℚ) :
+    scalarDisplacement v = 0 ↔ ∃ c : ℚ, ∀ i, v i = c := by
+  constructor
+  · intro hz
+    have hn : n ≠ 0 := NeZero.ne n
+    have step : ∀ i : Fin n, v (i+1)=v i := by
+      intro i
+      have h := congrFun hz i
+      change (n:ℚ)*(v (i+1)-v i)=0 at h
+      exact sub_eq_zero.mp ((mul_eq_zero.mp h).resolve_left (Nat.cast_ne_zero.mpr hn))
+    obtain ⟨m,rfl⟩ := Nat.exists_eq_succ_of_ne_zero hn
+    refine ⟨v 0,?_⟩
+    intro i
+    induction i using Fin.induction with
+    | zero => rfl
+    | succ i ih =>
+      have hi := i.isLt
+      have he : (i.castSucc : Fin (m+1))+1=i.succ := by
+        apply Fin.ext
+        change (i.val + 1 % (m+1)) % (m+1) = i.val+1
+        rw [Nat.mod_eq_of_lt (by omega : 1 < m+1),
+          Nat.mod_eq_of_lt (by omega : i.val+1 < m+1)]
+      rw [← he,step,ih]
+  · rintro ⟨c,hc⟩
+    funext i
+    simp [scalarDisplacement,hc]
+
+def scalarMean (v : Fin n → ℚ) : ℚ := (∑ i,v i)/(n:ℚ)
+def scalarCentered (v : Fin n → ℚ) : Fin n → ℚ := fun i => v i-scalarMean v
+
+theorem native_scalar_centered_same_displacement (v : Fin n → ℚ) :
+    scalarDisplacement (scalarCentered v) = scalarDisplacement v := by
+  funext i
+  simp [scalarDisplacement,scalarCentered]
+
+theorem native_scalar_mean_centered_zero (v : Fin n → ℚ) :
+    scalarMean (scalarCentered v)=0 := by
+  have hn : (n:ℚ)≠0 := Nat.cast_ne_zero.mpr (NeZero.ne n)
+  simp only [scalarMean,scalarCentered,Finset.sum_sub_distrib,Finset.sum_const,
+    Finset.card_univ,Fintype.card_fin,nsmul_eq_mul]
+  field_simp
+  ring
+
+theorem native_scalar_centered_unique (v w : Fin n → ℚ)
+    (hd : scalarDisplacement v=scalarDisplacement w)
+    (hv : scalarMean v=0) (hw : scalarMean w=0) : v=w := by
+  have hd0 : scalarDisplacement (v-w)=0 := by
+    funext i
+    have hh := congrFun hd i
+    simp only [scalarDisplacement,Pi.sub_apply] at hh ⊢
+    change (n:ℚ)*((v (i+1)-w (i+1))-(v i-w i))=0
+    linarith
+  obtain ⟨c,hc⟩ := (native_scalar_displacement_kernel (v-w)).mp hd0
+  have hm : scalarMean (v-w)=0 := by
+    change ((∑ i, (v i-w i))/(n:ℚ))=0
+    rw [Finset.sum_sub_distrib,sub_div]
+    change scalarMean v-scalarMean w=0
+    rw [hv,hw,sub_self]
+  have hn : (n:ℚ)≠0 := Nat.cast_ne_zero.mpr (NeZero.ne n)
+  have hc0 : c=0 := by
+    simpa [scalarMean,hc,hn] using hm
+  funext i
+  have hh := hc i
+  exact sub_eq_zero.mp (by simpa [Pi.sub_apply,hc0] using hh)
+end NativeKernel
+
+
+section JetAlgebra
+variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+def splitMixed (H A : Matrix ι ι ℚ) (B E : Matrix ι ι ℚ) : Matrix ι ι ℚ :=
+  H + (1/2:ℚ) • (A*B-B*A) + (A*E-E*A)
+
+theorem split_mixed_integrability (H A C B E : Matrix ι ι ℚ)
+    (hCE : C*E=E*C) :
+    splitMixed H A B E - splitMixed H B A C +
+      ((B+E)*(A+C)-(A+C)*(B+E)) = 0 := by
+  simp only [splitMixed,add_mul,mul_add]
+  rw [hCE]
+  module
+
+theorem split_diagonal_second_jet (H A C : Matrix ι ι ℚ) :
+    (A+C)*(A+C)+splitMixed H A A C =
+      A*A+(2:ℚ) • (A*C)+C*C+H := by
+  simp only [splitMixed,add_mul,mul_add]
+  module
+
+/-- This is the complete flat mixed equation on the actual scalar interface;
+values on transverse backgrounds are intentionally not constrained. -/
+theorem native_mixed_fiber_iff_symmetric {n : ℕ} [NeZero n] (hn : 3≤n)
+    (B : (Fin n → ℚ) → (Fin n → ℚ) → Matrix (Fin n) (Fin n) ℚ) :
+    (∀ ξ ζ, B ζ (scalarDisplacement ξ)-B ξ (scalarDisplacement ζ)+
+      (scalarCycleG ζ*scalarCycleG ξ-scalarCycleG ξ*scalarCycleG ζ)=0) ↔
+    (∀ ξ ζ, B ζ (scalarDisplacement ξ)-
+      advectiveBackgroundDerivative ζ (scalarDisplacement ξ) =
+      B ξ (scalarDisplacement ζ)-
+      advectiveBackgroundDerivative ξ (scalarDisplacement ζ)) := by
+  constructor
+  · intro h ξ ζ
+    exact flatComparison_difference_symmetric B advectiveBackgroundDerivative ξ ζ
+      (h ξ ζ) (advective_mixedCocycle hn ξ ζ)
+  · intro h ξ ζ
+    have hc := advective_mixedCocycle hn ξ ζ
+    have hs := h ξ ζ
+    calc
+      _ = (B ζ (scalarDisplacement ξ)-advectiveBackgroundDerivative ζ (scalarDisplacement ξ)-
+          (B ξ (scalarDisplacement ζ)-advectiveBackgroundDerivative ξ (scalarDisplacement ζ))) +
+          (advectiveBackgroundDerivative ζ (scalarDisplacement ξ)-
+          advectiveBackgroundDerivative ξ (scalarDisplacement ζ)+
+          (scalarCycleG ζ*scalarCycleG ξ-scalarCycleG ξ*scalarCycleG ζ)) := by abel
+      _ = 0 := by rw [hs,sub_self,hc,zero_add]
+
+/-- An arbitrary symmetric background Hessian supplies every free correction
+along the native exact-translation orbit. -/
+theorem native_symmetric_correction_is_mixed_cocycle {n : ℕ} [NeZero n] (hn : 3≤n)
+    (S : (Fin n → ℚ) → (Fin n → ℚ) → Matrix (Fin n) (Fin n) ℚ)
+    (hS : ∀ h k, S h k=S k h) :
+    ∀ ξ ζ,
+      (advectiveBackgroundDerivative ζ (scalarDisplacement ξ)+
+        S (scalarDisplacement ζ) (scalarDisplacement ξ)) -
+      (advectiveBackgroundDerivative ξ (scalarDisplacement ζ)+
+        S (scalarDisplacement ξ) (scalarDisplacement ζ)) +
+      (scalarCycleG ζ*scalarCycleG ξ-scalarCycleG ξ*scalarCycleG ζ)=0 := by
+  intro ξ ζ
+  rw [hS (scalarDisplacement ζ) (scalarDisplacement ξ)]
+  have hc := advective_mixedCocycle hn ξ ζ
+  convert hc using 1; abel
+end JetAlgebra
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+theorem native_car_mixed_kernel : ∀ r s : Role, ∀ bra ket : ArchiveFockState,
+    anticommutatorInt (carAnnihilateInt r) (carCreateInt s) bra ket =
+      roleDeltaInt r s * fockIdentityInt bra ket := by
+  decide +kernel
+
+/-- Replays the source proof through the kernel after replacing its finite
+native-decide CAR leaf by the proposition-identical kernel proof above.
+Only D0 theorem bodies are unfolded. The result is checked as a new theorem;
+this elaborator cannot add an axiom or modify an imported owner. -/
+private partial def kernelCARProof (env : Lean.Environment) (e : Lean.Expr) : Lean.Expr :=
+  e.replace fun t => match t with
+  | .const n ls =>
+      if n == ``car_mixed_anticommutator_int then
+        some (.const ``native_car_mixed_kernel ls)
+      else if (`D0).isPrefixOf n || "_private.D0.".isPrefixOf n.toString then
+        match env.find? n with
+        | some (.thmInfo v) => some (kernelCARProof env (v.value.instantiateLevelParams v.levelParams ls))
+        | _ => none
+      else none
+  | _ => none
+
+open Lean Elab Term in
+elab "kernelCartanExpansion" : term => do
+  let env ← getEnv
+  let some (.thmInfo v) := env.find? ``cartanGenerator_exact_expansion
+    | throwError "owned Cartan expansion theorem not found"
+  return kernelCARProof env v.value
+
+theorem native_cartan_expansion_kernel : ∀ (N : ℕ) (ξ : LocalRoleVector N)
+    (ψ : ArchiveCochain N),
+    a4dCartanGenerator N ξ ψ = cartanGeneratorExpansion N ξ ψ := kernelCartanExpansion
+
+
+section A4DBinding
+/-- The same d is the actual affine owner's flat coframe orbit. -/
+theorem native_flat_orbit_binding (N : ℕ) (t : ℝ) (ξ : LocalRoleVector N)
+    (x : ArchiveRolePhaseGroup N) (r a : Role) :
+    (affineGauge (translationGauge N (t • ξ)) (flatAffineConnection N) x r).shift a =
+      t * forwardGaugeCoframe N ξ x r a := ownedFlatTranslation_is_linear N t ξ x r a
+
+/-- Literal four-role/Fock owner, without a scalar-embedding assumption. -/
+theorem native_a4d_constant_tangent (N : ℕ) (c : Role → ℝ) (ψ : ArchiveCochain N) :
+    a4dCartanGenerator N (fun _ => c) ψ =
+      fun p => ∑ r, c r * centeredDifference N r (fun x => ψ (x,p.2)) p.1 := by
+  rw [native_cartan_expansion_kernel]
+  funext p
+  simp only [cartanGeneratorExpansion,Pi.add_apply,Finset.sum_apply,
+    cochainMultiply,forwardDifference_const,Pi.zero_apply,zero_mul,
+    Finset.sum_const_zero,add_zero]
+  apply Finset.sum_congr rfl
+  intro r _
+  congr 1
+  exact (congrFun (centeredDifference_eq_average_forward N r (fun x => ψ (x,p.2))) p.1).symm
+
+/-- These are the actual isotropy generators; their commutation is required
+for integrating the full additive stabilizer, not all local translations. -/
+theorem native_a4d_constant_tangents_commute (N : ℕ) (c b : Role → ℝ)
+    (ψ : ArchiveCochain N) :
+    a4dCartanGenerator N (fun _ => c) (a4dCartanGenerator N (fun _ => b) ψ) =
+      a4dCartanGenerator N (fun _ => b) (a4dCartanGenerator N (fun _ => c) ψ) := by
+  simp_rw [native_a4d_constant_tangent]
+  funext p
+  have hsum (r : Role) (b : Role → ℝ) :
+      centeredDifference N r (fun x => ∑ s, b s *
+        centeredDifference N s (fun y => ψ (y,p.2)) x) p.1 =
+      ∑ s, b s * centeredDifference N r
+        (centeredDifference N s (fun y => ψ (y,p.2))) p.1 := by
+    simp only [centeredDifference_apply]
+    rw [← Finset.sum_sub_distrib,Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro s _
+    ring
+  simp_rw [hsum,Finset.mul_sum]
+  rw [Finset.sum_comm]
+  apply Finset.sum_congr rfl
+  intro s _
+  apply Finset.sum_congr rfl
+  intro r _
+  rw [centeredDifference_comm]
+  ring
+end A4DBinding
+
+
+/-- Bind the full raw kernel to the existing all-size owner, not a new rank census. -/
+theorem native_full_translation_kernel (N : ℕ) (xi : LocalRoleVector N) :
+    forwardGaugeCoframe N xi = 0 ↔ ∀ x a, xi x a = xi 0 a :=
+  coframeDifferential_ker_constant N xi
+
+theorem native_centered_translation_entry (N : ℕ) (xi : LocalRoleVector N)
+    (x : ArchiveRolePhaseGroup N) (r a : Role) :
+    centeredCoframeMatrix N (forwardGaugeCoframe N xi) x r a =
+      centeredDifference N r (fun y => xi y a) x := by
+  exact (congrFun (centeredDifference_eq_average_forward N r (fun y => xi y a)) x).symm
+
+/-- Exact closure is retained by the actual row-centered readout. -/
+theorem native_centered_translation_curl_zero (N : ℕ) (xi : LocalRoleVector N)
+    (x : ArchiveRolePhaseGroup N) (r s a : Role) :
+    centeredDifference N r
+        (fun y => centeredCoframeMatrix N (forwardGaugeCoframe N xi) y s a) x -
+      centeredDifference N s
+        (fun y => centeredCoframeMatrix N (forwardGaugeCoframe N xi) y r a) x = 0 := by
+  simp_rw [native_centered_translation_entry]
+  rw [centeredDifference_comm]
+  exact sub_self _
+
+/-- This tangent is the existing metric readout, not an independently chosen operator. -/
+theorem native_metric_translation_tangent (N : ℕ) (xi : LocalRoleVector N)
+    (t : ℝ) (x : ArchiveRolePhaseGroup N) :
+    solderMetricMatrix N (t • forwardGaugeCoframe N xi) x - roleLorentzMetric =
+      t • (symmetricRoleGradient N xi x).toMatrix + t^2 •
+        (centeredCoframeMatrix N (forwardGaugeCoframe N xi) x * roleLorentzMetric *
+          (centeredCoframeMatrix N (forwardGaugeCoframe N xi) x).transpose) :=
+  solderMetric_forwardGauge_flat_tangent N xi t x
+
+/-- Testing every native flat translation is exactly divergence zero; it is
+not testing every independent symmetric metric variation. -/
+theorem native_translation_annihilator_iff (N : ℕ) (T : LocalSymRoleField N) :
+    (∀ xi, tensorInnerProduct N T
+      (coframeMetricReadout N (forwardGaugeCoframe N xi)) = 0) ↔
+      divergenceVector N T = 0 := by
+  simp_rw [coframeMetricReadout_forwardGauge]
+  constructor
+  · exact centeredRoleDivergence_zero_of_metric_pairing N T
+  · intro h xi
+    rw [tensorInnerProduct_symm, symmetricRoleGradient_adjoint, h]
+    simp [roleVectorInnerProduct, scalarInnerProduct]
+
+def constantMetricIdentity (N : ℕ) : LocalSymRoleField N :=
+  fun _ => ⟨1, by intro a b; simp [Matrix.one_apply, eq_comm]⟩
+
+
+/-- The separating smooth metric probe has a literal raw-coframe lift. -/
+theorem native_constant_metric_probe_has_coframe_lift (N : ℕ) :
+    coframeMetricReadout N (fun _ r a => if r=a then (1/2:ℝ) else 0) =
+      constantMetricIdentity N := by
+  funext x
+  apply SymRoleTensor.ext
+  funext a b
+  by_cases hab : a=b
+  · subst b
+    norm_num [coframeMetricReadout, backwardAverage, constantMetricIdentity]
+  · simp [coframeMetricReadout, backwardAverage, constantMetricIdentity,
+      hab, Ne.symm hab]
+
+theorem native_constant_metric_divergence_zero (N : ℕ) :
+    divergenceVector N (constantMetricIdentity N) = 0 := by
+  funext x b
+  simp [divergenceVector, roleDivergence, tensorEntry, constantMetricIdentity]
+
+theorem native_constant_metric_self_pairing (N : ℕ) :
+    tensorInnerProduct N (constantMetricIdentity N) (constantMetricIdentity N) =
+      4 * (archiveModes N : ℝ) := by
+  simp [tensorInnerProduct, scalarInnerProduct, tensorEntry, constantMetricIdentity,
+    Matrix.one_apply, archiveModes]
+
+/-- An actual nonzero symmetric covector obeys all translation tests but
+fails a smooth constant metric test. No source or action is selected. -/
+theorem native_translation_tests_not_all_metric_tests (N : ℕ) :
+    (∀ xi, tensorInnerProduct N (constantMetricIdentity N)
+      (coframeMetricReadout N (forwardGaugeCoframe N xi)) = 0) ∧
+    tensorInnerProduct N (constantMetricIdentity N) (constantMetricIdentity N) ≠ 0 := by
+  constructor
+  · exact (native_translation_annihilator_iff N _).mpr
+      (native_constant_metric_divergence_zero N)
+  · rw [native_constant_metric_self_pairing]
+    simp only [archiveModes, archiveFibers, Nat.cast_pow, Nat.cast_add, Nat.cast_ofNat]
+    positivity
+
+/-- Generic nonzero-frequency symbol injectivity over C. Fourier completeness,
+the real dimension count and the smooth-limit theorem are proved in the memo. -/
+theorem metric_translation_symbol_injective (q v : Role → ℂ)
+    (hq : ∃ r, q r ≠ 0)
+    (h : ∀ r a, q r * v a + q a * v r = 0) : v = 0 := by
+  obtain ⟨r,hr⟩ := hq
+  have hrr : (2:ℂ) * (q r * v r) = 0 := by linear_combination h r r
+  have hv : v r = 0 := (mul_eq_zero.mp
+    ((mul_eq_zero.mp hrr).resolve_left (by norm_num))).resolve_left hr
+  funext a
+  have ha := h r a
+  rw [hv,mul_zero,add_zero] at ha
+  exact (mul_eq_zero.mp ha).resolve_left hr
+
+#print axioms native_full_translation_kernel
+#print axioms native_centered_translation_entry
+#print axioms native_centered_translation_curl_zero
+#print axioms native_metric_translation_tangent
+#print axioms native_translation_annihilator_iff
+#print axioms native_constant_metric_probe_has_coframe_lift
+#print axioms native_constant_metric_divergence_zero
+#print axioms native_constant_metric_self_pairing
+#print axioms native_translation_tests_not_all_metric_tests
+#print axioms metric_translation_symbol_injective
+
+
 #print ActionProtocol
 #print VerificationContract
 #print physicalMovingWard_of_constitutiveAction
@@ -508,6 +927,25 @@ end RealFlowControl
 #print axioms native_cycle4_order_two_premise_nonempty
 #print axioms real_flow_composes
 #print axioms real_flow_first_two_derivatives
+
+#print axioms splitTransport_ext
+#print axioms split_transport_factorization
+#print axioms completeSplitTransportFiber
+#print axioms split_transport_intertwiner
+#print axioms transported_section_covariant_iff
+#print axioms native_scalar_displacement_kernel
+#print axioms native_scalar_centered_same_displacement
+#print axioms native_scalar_mean_centered_zero
+#print axioms native_scalar_centered_unique
+#print axioms split_mixed_integrability
+#print axioms split_diagonal_second_jet
+#print axioms native_mixed_fiber_iff_symmetric
+#print axioms native_symmetric_correction_is_mixed_cocycle
+#print axioms native_car_mixed_kernel
+#print axioms native_cartan_expansion_kernel
+#print axioms native_flat_orbit_binding
+#print axioms native_a4d_constant_tangent
+#print axioms native_a4d_constant_tangents_commute
 
 end
 end D0.Research.NativeDynamicalOwnership
