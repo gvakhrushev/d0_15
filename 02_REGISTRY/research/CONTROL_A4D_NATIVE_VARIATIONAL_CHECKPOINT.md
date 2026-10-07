@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`139ba614c85381a0b2c2cdf432d2912e852a92c3`, following
-`2d3f5fff0273ae5c028c07343a72b27b54374602`.
+`c8e3811a4650075736dbc591fc00a04222eecdf6`, following
+`139ba614c85381a0b2c2cdf432d2912e852a92c3`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-one hundred five byte-identical artifacts, with source Git blobs and SHA256 hashes:
+one hundred eleven byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -80,6 +80,10 @@ one hundred five byte-identical artifacts, with source Git blobs and SHA256 hash
   exact checker/ledger and compiled actual Hodge/action/variation/inverse
   capsule with output and transitive-source receipt.
 
+* [Actual weighted Hodge–Dirac and flat Lorentz spectral boundary](A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md),
+  compiled actual-cochain construction, exact full periodic matrices, immutable
+  spectrum/metric ledger and kernel-reduced CAR/nilpotency proof receipt.
+
 The published source head and new proof/capsule blobs were independently verified
 against GitHub before this intake commit.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
@@ -93,8 +97,8 @@ the actual local-source quotient capsule, and the 33 pins of the nonlinear
 log-det capsule, the 25 pins of the positive-state/refinement capsule,
 the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
-capsule, and the 56 pins of the coupled-Hodge capsule, the registry snapshot
-and all seventeen native certificates' input hashes match
+capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the registry snapshot
+and all eighteen native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -411,15 +415,33 @@ local file or an implicitly merged scientific parent.
     dependence, independent constraints, matter and interlevel equations
     remain outside the excluded class. No new action is selected.
 
+28. **Actual weighted Dirac and Lorentz boundary:** the documented
+    weighted adjoint is constructed on the literal frozen differential.
+    Its nilpotency and square compile, with the finite CAR leaves and
+    actual nilpotencies rebuilt by kernel reduction. The supplied mixed
+    metric operator and all ten derivatives are retained. Its direct
+    Lorentz binding has eight negative Fock weights, negative spatial
+    modes and nonconstant null modes. At L=4 Dirac and square kernels
+    have dimensions 232 and 448. A positive self-adjoint pairing cannot
+    exist on the explicit spatial block. At fixed t>0 its normalized
+    ordinary heat trace is at least 4608*t^3*L^2 and diverges. Other
+    spectral prescriptions and independently owned positive pairings
+    remain outside this boundary. No physical matter/action/source,
+    gauge quotient, causal prescription or native refinement is selected.
+    Finite mixed spectral moments plus separate volume also fail the
+    quantitative paired Einstein contrast by a binomial annihilator;
+    density insertion, scale-dependent coefficients and unbounded
+    degree retain their separate scope.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The ninety-nine imported files
+labels, Lean owners and BOOK text are unchanged. The one hundred eleven imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The seventeen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162, 84 and 103 exact controls without
+The eighteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162, 84, 103 and 107 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -495,7 +517,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 105 artifact blobs and 269 distinct artifact/input hashes
+are rejected. All 111 artifact blobs and 277 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -533,6 +555,17 @@ of its inputs, not a hidden regularity assumption. All-size and continuum
 arguments remain analytic. The preceding source run 37562943755 passed
 at 2d3f5fff0273ae5c028c07343a72b27b54374602 before this new source push;
 its result is not substituted for the new current-head CI.
+The weighted-Dirac follow-up compiles thirty-four propositions with
+49 transitive D0 source pins and standard axioms only. Its 107 exact
+controls include all grades, 24 Role orders, ten full metric derivatives
+and packed weights, full integer periodic matrices at L=2,4,8,
+and degree 0..8 exact spectral annihilators. The all-degree contrast
+proof allows arbitrary mesh coefficients and includes recording/refinement
+errors; density insertion and scale-dependent coefficients are exceptions.
+Fourteen false scope ledgers are rejected. All-size Fourier/kernel/heat
+proofs remain analytic. The supported D0 source tree is unchanged;
+the prior successful integration build is reused, and the new capsule
+compiled separately.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -564,6 +597,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_check.
 python3 02_REGISTRY/research/certificates/a4d_native_transported_connection_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_connection_action_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_check.py
 ```
 
 ## Preserved original obligations

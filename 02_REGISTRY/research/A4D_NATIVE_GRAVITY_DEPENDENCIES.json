@@ -892,6 +892,58 @@
         "native_connection_action",
         "probe_law"
       ]
+    },
+    {
+      "id": "native_weighted_dirac",
+      "scope": "Actual-cochain construction for supplied invertible graded weights and the complete flat direct-Lorentz spectral/kernel/ordinary-heat boundary.",
+      "hypotheses": [
+        "The frozen differential and counting adjoint are the literal dForward and hodgeCodifferential on the four-Role carrier.",
+        "Invertibility, gradedness, symmetry and positive definiteness of the supplied weight are distinct hypotheses; physical selection is not assumed.",
+        "The flat Lorentz binding uses eta=(+---), full Fock compound Hodge weights and periodic L=N+2; L in 4N is included.",
+        "The ordinary heat-trace obstruction uses one fixed real t>0 and normalization L^-4.",
+        "No physical action, matter source, gauge quotient, causal prescription or interlevel admission is introduced."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean",
+        "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean",
+        "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+        "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_check.py"
+      ],
+      "verification": "Thirty-four compiled propositions, 49 transitive source pins, standard axioms only; kernel reduction rebuilds the actual finite CAR leaves and both nilpotencies. 107 exact controls check all grades, 24 Role orders, ten full metric derivatives with packed weights, and full integer periodic matrices at L=2,4,8. Analytic all-size Fourier classification gives negative spatial modes and nonconstant null modes, with ker D dimension 232 and ker Delta dimension 448 at L=4. Ordinary fixed-t>0 heat trace has normalized lower bound 4608*t^3*L^2. Fourteen false ledgers are rejected. The old weighted capstone is explicitly Boolean; positive Euclidean/observer pairings, mesh-dependent times, separate renormalized/oscillatory laws and alternative independently owned physical sectors remain outside this boundary.",
+      "status": "PROVED_WEIGHTED_OPERATOR_AND_SCOPED_LORENTZ_BOUNDARY_PENDING_CONTROL",
+      "terminal_class": null,
+      "required_terminal": "CONTROL_ACCEPTED_OPERATOR_CONSTRUCTION_AND_STATED_BOUNDARIES",
+      "depends_on": [
+        "cochain_refinement_construction"
+      ]
+    },
+    {
+      "id": "native_mixed_spectral_contrast",
+      "scope": "Any one fixed finite polynomial in the constructed full geometric Hodge Laplacian moments, with arbitrary scale-invariant mesh/shape/link coefficients and a separate common volume profile on the stated exact two-fiber probe domain.",
+      "hypotheses": [
+        "The tested full compound Hodge binding has Delta_(sQ)=s^-1 Delta_Q; the actual spectralTracePower owner is bound at rho=1.",
+        "The finite degree p is fixed; coefficients and a separate scale-invariant term may depend arbitrarily on scale-invariant shape/link/matter data and on the mesh.",
+        "The same arbitrary B_h(mu,z) sees the exactly equal full volume vectors and common fixed z in both experiments; experiment-specific link/shape arguments are not inserted into B.",
+        "The independently constructed c=1,2 exact native metric fibers and their p+2 fixed homothetic probes are admitted; they are off-shell comparison preparations, not asserted coupled native solutions.",
+        "One nonzero fixed calibration and the declared O(h) recording/refinement errors are used."
+      ],
+      "owners": [
+        "03_FORMALIZATION/D0/Geometry/SpectralActionLadder.lean",
+        "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+        "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+        "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_check.py"
+      ],
+      "verification": "The generic actual weighted-operator homogeneity, supplied spectral-power binding, matrix trace-power homogeneity, finite coefficient annihilation and error inequality compile. An analytic all-degree binomial finite-difference proof uses scales 1/(r+1), weights (-1)^r choose(p+1,r), zero inverse moments, physical scale anchor 1/(p+2) and L1 weight 2^(p+1). The exact equal-volume native fibers make the arbitrary B profile cancel. The maximum total contrast error is at least 9*pi^2*h^(1/3)/(400*(p+2)*2^(p+2)) eventually. Finite degree controls p=0..8 are not promoted to the all-degree proof. Coefficients may diverge with the mesh. Unbounded degree, nonpolynomial laws, scale-dependent coefficients, density insertion inside a trace and independent domain restrictions are explicit exceptions; no new action is selected.",
+      "status": "PROVED_SCOPED_ANALYTIC_MIXED_SPECTRAL_OBSTRUCTION_PENDING_CONTROL",
+      "terminal_class": "NO-GO",
+      "required_terminal": "NO-GO_FOR_STATED_FIXED_DEGREE_MOMENT_CLASS",
+      "depends_on": [
+        "native_weighted_dirac",
+        "native_coupled_hodge_scale",
+        "probe_law"
+      ]
     }
   ],
   "preserved_parent_tasks": [
@@ -925,5 +977,6 @@
   "centered_metric_lift_input_head": "98269b4ffbd19338a2b162d4e14ea8c4ec08609a",
   "transported_connection_input_head": "fc12fc7800eff1a0fb74d73c9d920128cbc9450f",
   "connection_action_input_head": "59fef13f804d4c5706ef86fe6df01a53f214c565",
-  "coupled_hodge_scale_input_head": "2d3f5fff0273ae5c028c07343a72b27b54374602"
+  "coupled_hodge_scale_input_head": "2d3f5fff0273ae5c028c07343a72b27b54374602",
+  "weighted_dirac_input_head": "139ba614c85381a0b2c2cdf432d2912e852a92c3"
 }
