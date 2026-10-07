@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `c8e3811a4650075736dbc591fc00a04222eecdf6` through
+#310 at `7743910de8e8914f06b68f63aca917997344d1ae` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -69,7 +69,7 @@ frame obstruction, preserving arbitrary refinement-dependent collapsing
 functions as an exception to broader asymptotic claims. These results add
 no native action or physical on-shell gate.
 The receipt preserves the previous input head
-139ba614c85381a0b2c2cdf432d2912e852a92c3. The intake also includes the literal vector/source and
+c8e3811a4650075736dbc591fc00a04222eecdf6. The intake also includes the literal vector/source and
 mixed-parent/source classifications with their exact range, kernel and
 residual exceptions, plus the actual verification/process and phase-refinement
 classification. Formal verifiability and the existing positive class-level
@@ -85,8 +85,8 @@ real scalar variation and profile nonselection, the full convex-profile
 contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
-propositions and 91 controls pin 33 transitive sources. The expanded 111-artifact slice
-has 277 verified distinct artifact/input hashes; the gravity graph has
+propositions and 91 controls pin 33 transitive sources. The expanded 117-artifact slice
+has 285 verified distinct artifact/input hashes; the gravity graph has
 44 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
 
@@ -160,3 +160,5 @@ Further density/spectral variants are deferred until consumed by that
 packet. Preserve all original research parents, native physical source,
 soundness/recovery and global obligations. This is a plan, not a scientific
 status change, lifecycle retirement or authorization for new physical data.
+
+The first executed G0 premise package adds: G0 consumed premise: complete actual ActionProtocol fiber equals arbitrary nonnegative excess costs; canonical action uniquely pointwise least; one verified normalized metric-cost pair differs modulo every state relabeling and common calibration. The real M1 completion criterion applies to transition costs, not to physical Einstein response. Complete invariant-action fiber is arbitrary functions on the symmetry quotient. Passive Hodge transport retains its seed; the actual conditional Ward conclusion follows from its four map covariance hypotheses alone. Twenty-two declarations compile with 23 transitive D0 pins and standard axioms only; 37 exact controls and 11 rejected scope mutations. This does not prove complete native physical-system ownership, physical-response nonuniqueness, full-core no-go or GR. The 44 graph nodes and all original open terminals are retained; no new candidate node is added.

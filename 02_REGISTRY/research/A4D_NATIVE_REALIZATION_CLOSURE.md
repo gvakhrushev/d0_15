@@ -6,6 +6,18 @@ Control baseline: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Status: first native variational gate investigated; **positive GR and global
 closure remain OPEN**. This artifact does not promote claims or retire tasks.
 
+The [G0 primitive-interface proof](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)
+now answers a necessary ownership question directly, without adding another
+candidate family or graph node. It classifies every actual `ActionProtocol`,
+proves the canonical representative uniquely pointwise least, and exhibits
+normalized relative costs that differ under every relabeling and calibration.
+It also classifies every invariant background scalar on a symmetry quotient
+and eliminates the unused geometric-action premise of the actual conditional
+Ward theorem. These are complete statements for those interfaces. A complete
+native physical state/action/variation/readout/refinement family, or its
+complete boundary, is still the single remaining G0 target. Physical response
+nonuniqueness and full-core impossibility are not inferred from cost freedom.
+
 The October 6 audit report and the chat summaries were investigative inputs,
 not instructions to change a mathematical definition or a release status.
 The implementation follows the user's explicit closure plan. Its first

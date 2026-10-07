@@ -3,21 +3,23 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`c8e3811a4650075736dbc591fc00a04222eecdf6`, following
-`139ba614c85381a0b2c2cdf432d2912e852a92c3`.
+`7743910de8e8914f06b68f63aca917997344d1ae`, following
+`c8e3811a4650075736dbc591fc00a04222eecdf6`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
 next research decision to the complete native-system/derivability packet
-G0. The 111-artifact scientific receipt below remains unchanged; the plan
-is CONTROL-only planning metadata, not a new scientific source artifact.
+G0. Its first scientific result is now imported below: the complete
+primitive-action and conditional-Ward interface boundary. It discharges a
+named input audit while leaving complete physical-system ownership OPEN.
+The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-one hundred eleven byte-identical artifacts, with source Git blobs and SHA256 hashes:
+one hundred seventeen byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -90,6 +92,10 @@ one hundred eleven byte-identical artifacts, with source Git blobs and SHA256 ha
   compiled actual-cochain construction, exact full periodic matrices, immutable
   spectrum/metric ledger and kernel-reduced CAR/nilpotency proof receipt.
 
+* [G0 complete primitive action fibers and actual Ward input boundary](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md),
+  generic compiled equivalences, actual-owner premise elimination, normalized
+  countermodels, exact checker, output and source-hash receipt.
+
 The published source head and new proof/capsule blobs were independently verified
 against GitHub before this intake commit.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
@@ -103,8 +109,9 @@ the actual local-source quotient capsule, and the 33 pins of the nonlinear
 log-det capsule, the 25 pins of the positive-state/refinement capsule,
 the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
-capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the registry snapshot
-and all eighteen native certificates' input hashes match
+capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 23 pins of the G0
+ownership capsule, the registry snapshot
+and all nineteen native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -439,15 +446,27 @@ local file or an implicitly merged scientific parent.
     density insertion, scale-dependent coefficients and unbounded
     degree retain their separate scope.
 
+29. **G0 primitive ownership:** every actual transition-cost assignment
+    is represented by nonnegative excess costs. The canonical action is
+    uniquely pointwise least, while normalized metric-cost ratios need
+    not be M1-forced, even after all relabelings and common calibration.
+    Every invariant background scalar is a function on the symmetry
+    quotient. Passive Hodge transport is injective in its seed; the real
+    conditional Ward result needs only its four map covariance premises.
+    These complete interface statements discharge a G0 input question,
+    not the complete physical-system question. A native linking theorem
+    or physical-response universality remains possible. The same 44
+    dependency nodes and all 11 original open obligations are retained.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The one hundred eleven imported files
+labels, Lean owners and BOOK text are unchanged. The one hundred seventeen imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The eighteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162, 84, 103 and 107 exact controls without
+The nineteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162, 84, 103, 107 and 37 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -523,7 +542,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 111 artifact blobs and 277 distinct artifact/input hashes
+are rejected. All 117 artifact blobs and 285 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -572,6 +591,14 @@ Fourteen false scope ledgers are rejected. All-size Fourier/kernel/heat
 proofs remain analytic. The supported D0 source tree is unchanged;
 the prior successful integration build is reused, and the new capsule
 compiled separately.
+The G0 ownership capsule compiles 22 declarations with 23 transitive D0
+source pins and standard axioms only, with no warnings or sorryAx. Its
+37 exact controls and 11 rejected false scope ledgers preserve the
+canonical representative, four actual map premises, and open physical
+response/completeness question. It updates the existing G0 consumers
+without adding a graph node. The unchanged supported D0 tree reuses the
+previous integration result; the new research capsule is separately compiled.
+
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -604,6 +631,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_transported_connection_chec
 python3 02_REGISTRY/research/certificates/a4d_native_connection_action_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py
 ```
 
 ## Preserved original obligations

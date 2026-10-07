@@ -162,16 +162,34 @@
       "terminal": "Full complex divisor/rank stratification remains OPEN."
     }
   ],
-  "scientific_receipt_unchanged": {
-    "source_head": "c8e3811a4650075736dbc591fc00a04222eecdf6",
-    "artifacts": 111,
-    "distinct_artifact_input_hashes": 277
-  },
   "positive_gr": "OPEN_NOT_CERTIFIED",
   "global_closure": "OPEN_NOT_CERTIFIED",
   "changes_supported_owners": false,
   "changes_claims_or_book": false,
   "adds_physical_postulates": false,
   "creates_or_retires_tasks": false,
-  "self_merge": false
+  "self_merge": false,
+  "planning_baseline_receipt": {
+    "source_head": "c8e3811a4650075736dbc591fc00a04222eecdf6",
+    "artifacts": 111,
+    "distinct_artifact_input_hashes": 277
+  },
+  "execution_progress": {
+    "source_head": "7743910de8e8914f06b68f63aca917997344d1ae",
+    "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
+    "consumers": [
+      "constitutive",
+      "native_sector"
+    ],
+    "result": "Complete named primitive-interface fibers and actual Ward premise boundary proved.",
+    "G0": "OPEN_PHYSICAL_SYSTEM_AND_COMPLETENESS",
+    "closed_original_open_nodes": 0,
+    "added_graph_nodes": 0,
+    "compiled_declarations": 22,
+    "transitive_d0_source_pins": 23,
+    "exact_controls": 37,
+    "rejected_false_scope_ledgers": 11,
+    "remaining_proposition": "Derive the complete independently owned native state/action/variation/readout/refinement family, or a complete boundary for its declared admitted class.",
+    "action_level_nonuniqueness_is_physical_nonuniqueness": false
+  }
 }

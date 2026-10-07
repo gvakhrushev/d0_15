@@ -1,0 +1,157 @@
+structure D0.Foundation.EndogenousActionQuantum.ActionProtocol (P : VerificationProtocol) : Type
+number of parameters: 1
+fields:
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol.action : P.State → P.State → ℝ
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol.action_refl : ∀ (x : P.State), self.action x x = 0
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol.action_nontrivial : ∀ (x y : P.State),
+      x ≠ y → 1 ≤ self.action x y
+constructor:
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol.mk {P : VerificationProtocol} (action : P.State → P.State → ℝ)
+    (action_refl : ∀ (x : P.State), action x x = 0) (action_nontrivial : ∀ (x y : P.State), x ≠ y → 1 ≤ action x y) :
+    ActionProtocol P
+structure D0.Foundation.VerifiabilityNecessity.VerificationContract (P : VerificationProtocol) : Prop
+number of parameters: 1
+fields:
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.state_nontrivial : Nontrivial P.State
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.line_nontrivial : Nontrivial P.Line
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.catalogue_nonempty : Nonempty P.Catalogue
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.correct : ∀ (l : P.Line) (c : P.Catalogue) (x y : P.State),
+      P.compare l c (P.record x) (P.record y) = decide (x ≠ y)
+constructor:
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.mk {P : VerificationProtocol}
+    (state_nontrivial : Nontrivial P.State) (line_nontrivial : Nontrivial P.Line)
+    (catalogue_nonempty : Nonempty P.Catalogue)
+    (correct :
+      ∀ (l : P.Line) (c : P.Catalogue) (x y : P.State), P.compare l c (P.record x) (P.record y) = decide (x ≠ y)) :
+    VerificationContract P
+theorem D0.Geometry.physicalMovingWard_of_constitutiveAction.{u_1, u_2, u_3, u_4, u_5} : ∀ {P0 : Type u_1}
+  {P1 : Type u_2} {D3 : Type u_3} {D4 : Type u_4} [inst : Fintype P0] [inst_1 : Fintype P1] [inst_2 : Fintype D3]
+  [inst_3 : Fintype D4] [DecidableEq P0] [DecidableEq P1] [DecidableEq D3] [DecidableEq D4] {Background : Type u_5}
+  (geometryAction : Background → ℝ) (symmetry : Background → Background) (b : Background)
+  (e0 : FiniteRealCarrier P0 ≃ₗ[ℝ] Module.Dual ℝ (FiniteRealCarrier D4))
+  (e1 : FiniteRealCarrier P1 ≃ₗ[ℝ] Module.Dual ℝ (FiniteRealCarrier D3))
+  (Q0 : FiniteRealCarrier P0 ≃ₗ[ℝ] FiniteRealCarrier P0) (Q1 : FiniteRealCarrier P1 ≃ₗ[ℝ] FiniteRealCarrier P1)
+  (dPof : Background → FiniteRealCarrier P0 →ₗ[ℝ] FiniteRealCarrier P1)
+  (dDof : Background → FiniteRealCarrier D3 →ₗ[ℝ] FiniteRealCarrier D4)
+  (S0of : Background → FiniteRealCarrier P0 →ₗ[ℝ] FiniteRealCarrier D4)
+  (S1of : Background → FiniteRealCarrier P1 →ₗ[ℝ] FiniteRealCarrier D3) (psi chi lambda : FiniteRealCarrier P0),
+  geometryAction (symmetry b) = geometryAction b ∧
+      dPof (symmetry b) = movedPrimalDifferential Q0 Q1 (dPof b) ∧
+        dDof (symmetry b) = movedDualDifferential (dualAction e1 Q1) (dualAction e0 Q0) (dDof b) ∧
+          S0of (symmetry b) = movedStar (dualAction e0 Q0) Q0 (S0of b) ∧
+            S1of (symmetry b) = movedStar (dualAction e1 Q1) Q1 (S1of b) →
+    have pairing := fun p d => (e0 p) d;
+    have A := { dP := dPof b, dD := dDof b, star0 := S0of b, star1 := S1of b };
+    have A' :=
+      { dP := dPof (symmetry b), dD := dDof (symmetry b), star0 := S0of (symmetry b), star1 := S1of (symmetry b) };
+    mixedPrimalDualAction pairing A' (Q0 psi) (Q0 chi) (Q0 lambda) = mixedPrimalDualAction pairing A psi chi lambda :=
+fun {P0} {P1} {D3} {D4} [Fintype P0] [Fintype P1] [Fintype D3] [Fintype D4] [DecidableEq P0] [DecidableEq P1]
+    [DecidableEq D3] [DecidableEq D4] {Background} geometryAction symmetry b e0 e1 Q0 Q1 dPof dDof S0of S1of psi chi
+    lambda hDerived =>
+  let pairing := fun p d => (e0 p) d;
+  let A := { dP := dPof b, dD := dDof b, star0 := S0of b, star1 := S1of b };
+  let A' :=
+    { dP := dPof (symmetry b), dD := dDof (symmetry b), star0 := S0of (symmetry b), star1 := S1of (symmetry b) };
+  And.casesOn hDerived fun left right =>
+    And.casesOn right fun hdP right =>
+      And.casesOn right fun hdD right =>
+        And.casesOn right fun hS0 hS1 =>
+          have hdata :=
+            of_eq_true
+              (Eq.trans
+                (congrFun' (congrArg Eq (congr (congr (congr (congrArg FinitePrimalDualHodgeData.mk hdP) hdD) hS0) hS1))
+                  { dP := movedPrimalDifferential Q0 Q1 (dPof b),
+                    dD := movedDualDifferential (dualAction e1 Q1) (dualAction e0 Q0) (dDof b),
+                    star0 := movedStar (dualAction e0 Q0) Q0 (S0of b),
+                    star1 := movedStar (dualAction e1 Q1) Q1 (S1of b) })
+                (eq_self
+                  { dP := movedPrimalDifferential Q0 Q1 (dPof b),
+                    dD := movedDualDifferential (dualAction e1 Q1) (dualAction e0 Q0) (dDof b),
+                    star0 := movedStar (dualAction e0 Q0) Q0 (S0of b),
+                    star1 := movedStar (dualAction e1 Q1) Q1 (S1of b) }));
+          Eq.mpr
+            (id
+              (congrFun'
+                (congrArg Eq
+                  (congrFun'
+                    (congrFun' (congrFun' (congrArg (mixedPrimalDualAction fun p d => (e0 p) d) hdata) (Q0 psi))
+                      (Q0 chi))
+                    (Q0 lambda)))
+                (mixedPrimalDualAction (fun p d => (e0 p) d) A psi chi lambda)))
+            (mixedAction_transform e0 e1 Q0 Q1 A psi chi lambda)
+D0.Geometry.mixedAction_transform.{u_1, u_2, u_3, u_4} {P0 : Type u_1} {P1 : Type u_2} {D3 : Type u_3} {D4 : Type u_4}
+  [Fintype P0] [Fintype P1] [Fintype D3] [Fintype D4] [DecidableEq P0] [DecidableEq P1] [DecidableEq D3]
+  [DecidableEq D4] (e0 : FiniteRealCarrier P0 ≃ₗ[ℝ] Module.Dual ℝ (FiniteRealCarrier D4))
+  (e1 : FiniteRealCarrier P1 ≃ₗ[ℝ] Module.Dual ℝ (FiniteRealCarrier D3))
+  (Q0 : FiniteRealCarrier P0 ≃ₗ[ℝ] FiniteRealCarrier P0) (Q1 : FiniteRealCarrier P1 ≃ₗ[ℝ] FiniteRealCarrier P1)
+  (A : FinitePrimalDualHodgeData P0 P1 D3 D4) (psi chi lambda : FiniteRealCarrier P0) :
+  have R4 := dualAction e0 Q0;
+  have R3 := dualAction e1 Q1;
+  have A' :=
+    { dP := movedPrimalDifferential Q0 Q1 A.dP, dD := movedDualDifferential R3 R4 A.dD,
+      star0 := movedStar R4 Q0 A.star0, star1 := movedStar R3 Q1 A.star1 };
+  have pairing := fun p d => (e0 p) d;
+  mixedPrimalDualAction pairing A' (Q0 psi) (Q0 chi) (Q0 lambda) = mixedPrimalDualAction pairing A psi chi lambda
+D0.Geometry.movingHodge_comp.{u_1, u_2, u_3} {K : Type u_1} {P : Type u_2} {D : Type u_3} [Field K] [AddCommGroup P]
+  [Module K P] [AddCommGroup D] [Module K D] (QD RD : D ≃ₗ[K] D) (QP RP : P ≃ₗ[K] P) (S : P →ₗ[K] D) :
+  movingHodge (QD ≪≫ₗ RD) S (QP ≪≫ₗ RP) = movingHodge RD (movingHodge QD S QP) RP
+'D0.Research.NativeDynamicalOwnership.action_ext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.excess_action_left_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.excess_action_right_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.completeActionFiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.canonical_action_has_zero_excess' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.canonical_action_is_least' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.least_action_iff_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.threeState_killing_test' depends on axioms: [propext]
+'D0.Research.NativeDynamicalOwnership.canonical_normalized_metric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.second_normalized_metric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.distinct_normalized_action_ratios' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_ratio_not_m1_forced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_cost_difference_survives_calibration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_cost_difference_survives_all_relabelings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.completeInvariantActionFiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.invariant_iff_constant_on_symmetry_orbits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.arbitrary_profile_of_invariant_observable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.two_profiles_same_nontrivial_symmetry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.invariant_profiles_different_variations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.passive_hodge_recovers_seed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.passive_hodge_seed_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.actual_ward_needs_only_map_covariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,49 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership.lean",
+  "capsule_sha256": "adf0a37b38c58429f32e66bb7d12810e5069af353a51479c702262fe58800cd5",
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_dynamical_ownership.lean",
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "output": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_output.txt",
+  "output_sha256": "47022d2a1fbd8c903910354fef1a64a77c307af4104444bfa61e2ed0239468f8",
+  "owner_input_head": "c8e3811a4650075736dbc591fc00a04222eecdf6",
+  "printed_axiom_dependencies": 22,
+  "scope": "G0 complete actual ActionProtocol and invariant-action fibers; canonical least representative; normalized calibrated/relabelled countermodels; passive seed transport; actual Ward premise elimination. No full-core no-go or physical action/gate is selected.",
+  "sorryAx": false,
+  "status": "PASS",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Foundation/CurrentDataFactorization.lean": "e4b9e32348f295a21450784a50516b8547dc9ac75afaf9dc097321e053b3aaf8",
+    "03_FORMALIZATION/D0/Foundation/DetectionCapabilityBoundary.lean": "43e0a6a3715fdf9414b22a80d4a7f96a3562ef0809e4e8e3b4babc30f1fccb19",
+    "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean": "2097ab79c64fa719fe066a5545ca0f8b0f8944f9a4900268d0630643bb2618fd",
+    "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": "692f2b5929b001361a2f22d7dc224fba46a80738036f26a1ff7bdd5175fc80c4",
+    "03_FORMALIZATION/D0/Foundation/GeneralComparisonGrammar.lean": "9ac672c6e7d431747cfbd1b80bf09904cc1510c1fa60a67cd41c47dda6656593",
+    "03_FORMALIZATION/D0/Foundation/InformationConnectivity.lean": "1203c5d50a6c085324708efd06f24ced4439466eb8fb732a4831a5a1e7fff427",
+    "03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean": "abb9ed9de2de239299b8fc64fdadff86945597b71fcc4c107af4d894648ce6a5",
+    "03_FORMALIZATION/D0/Foundation/M1Predicate.lean": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+    "03_FORMALIZATION/D0/Foundation/ObservableCompletionCanonicity.lean": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+    "03_FORMALIZATION/D0/Foundation/PopperianBootstrap.lean": "df0a80b6c90b515dcadc206bfe4afc02f45aba89012b223acfbfe66fdb8a86a5",
+    "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean": "e851960cf5ed7c3abdb488dc70a2ed098d9a6bfb2ca0a60d2cbecda9f93da48d",
+    "03_FORMALIZATION/D0/Geometry/A4DPathWordParentWard.lean": "5b993f7372a6adc46f37f8cc9beeaa1c9dc45a48cfc020c16f013ce6593fbcce",
+    "03_FORMALIZATION/D0/Geometry/ArchiveMovingDifferential.lean": "180b0529f4a89d4745cf3fe73aa8788358203abc9b6f05dac3758c4d08fd1811",
+    "03_FORMALIZATION/D0/Geometry/ArchivePrimalDualMovingAction.lean": "d4f30f228a1dae214427e2299716f7e1db6d86abde3d4f32d26b44967635cb73",
+    "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean": "a4be98cfb6d3e08bc873ff31d93b9669533d19fb641b1cb81e871be4af79f863",
+    "03_FORMALIZATION/D0/Matter/FiniteSelector.lean": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2",
+    "03_FORMALIZATION/D0/Synthesis/DetectionSceneBoundEquivalence.lean": "123c0b0b95bdd6f11b011f17cc99fe71cb076d08346e349758fb4d4a0a92894a",
+    "03_FORMALIZATION/D0/Synthesis/DetectorCatalogueFreedom.lean": "0d4655a8f2a8ef04b2c2f0cf69da4936ec3f8910d181353d073522aa59619956",
+    "03_FORMALIZATION/D0/Synthesis/DetectorLayerEquivalence.lean": "c310fd6c4ed1a9b69715aa1c88ba10d815c65471d10781f2c63bf3b86420ba57",
+    "03_FORMALIZATION/D0/Tower/DetectionQuadratic.lean": "b635a47a4116d1032eeca657efe0aebce22057255d35dcf0bc476ae6aadbb9d2",
+    "03_FORMALIZATION/D0/Tower/NoExtension.lean": "8a5278c1d56e493e51f0c76a981ba2f11d844be62bc61d24b701fef3e29ae631",
+    "03_FORMALIZATION/D0/Tower/PortPowerExhaustion.lean": "99122fc0bfce868a9031c897ee79166db21af0c0e09e919b97099b058979a59c"
+  }
+}
