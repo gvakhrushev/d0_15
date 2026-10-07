@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`41ae2916bd1676c45209ea7f347e084c31ae7f09`, following
-`c9668dca8a900310cf49dbf56a8bcd8f51d872ab`.
+`fe116b56f9413cc2cd4e80f375cff1cc50d337f7`, following
+`41ae2916bd1676c45209ea7f347e084c31ae7f09`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -467,6 +467,8 @@ local file or an implicitly merged scientific parent.
 
 30. **Complete flat transport and its metric consumer:** The complete flat translation transport fiber is normalized U plus the full isotropy representation; smooth flat-tangent integrability requires commuting isotropy generators, not all local generators. All compatible second jets have one arbitrary symmetric background Hessian. The literal four-role/Fock isotropy commutation and raw translation kernel bind directly to the native owners with standard axioms. The exact metric image is the centered symmetric gradient: rank 4*(L^4-gcd(L,2)^4), with the full transverse complement. Its Ward annihilator is exactly centered divergence zero; a constant identity covector has all translation pairings zero but nonzero normalized pairing 4 with an actual coframe-lifted smooth metric probe. Every strong L2 centered-solder limit of the entire flat orbit that is C2 and nondegenerate has zero Levi-Civita curvature. The Fourier/continuum arguments are analytic, not compiled continuum theorems. The 61 compiled declarations pin 83 D0 files; 128 exact controls and 32 false-scope mutations pass. Abstract intertwiners are not declared physical gauge, metric-only convergence is insufficient, and no whole-core or arbitrary finite-curvature conclusion is made. G0 must now supply the transverse action and independent Euler equations on the full coframe/link carrier, with native readout/refinement admission; every original parent remains OPEN.
 
+31. **Full background source under field frames:** Complete field-frame consumer of one fixed literal mixed-parent family on arbitrary backgrounds. All four owner slots and the rectangular pairing bind to congruent visible operators. The source defect equals minus the contraction of all three actual Euler residuals with the frame generator; full roots, all independent background covectors and joint roots with the same geometric action correspond. Every fixed seed transported solely by invertible field frames has zero full source, even for indefinite or singular M. This closes that source class without selecting a physical gauge or a native action. Distinct transverse seed jets retain an exact source difference one on the same full matter root. The bound norm(A)*norm(r)*norm(z) has an exact vanishing-residual/nonvanishing-defect control. 32 compiled declarations pin 12 D0 sources; 75 exact controls and 17 false-scope mutations pass. Native readout/refinement, transformed constraints, a physical seed law and the independent geometric action remain separate obligations. No physical D0 nonuniqueness, whole-core obstruction, native-Einstein transfer, G0 closure or parent retirement is claimed.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
@@ -475,7 +477,7 @@ are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The nineteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162, 84, 103, 107 and 128 exact controls without
+The nineteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107 and 128 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -516,11 +518,11 @@ with nine transitive D0 pins and standard axioms only. Its 51 exact controls
 verify all skew field/background coordinates, factor/sign normalization,
 full six-dimensional spectrum and supplied-source/indefinite exceptions.
 A ledger replacing the divergent range inverse by one is rejected.
-The mixed-parent capsule compiles sixteen generic propositions with twelve
+The mixed-parent capsule compiles thirty-two generic propositions with twelve
 transitive D0 pins and standard axioms only, including the actual field and
 constitutive derivatives, complete positive source theorem, indefinite root
 relation, pairing scope and continuous-critical-root source theorem. Its
-45 controls cover exact signs/packing, six Hessian/radical strata, residual
+75 controls cover exact signs/packing, six Hessian/radical strata, residual
 sharpness and the protected exceptions. Falsifying either the zero positive
 source or the residual exponent in the ledger is rejected.
 The verification/refinement capsule checks fourteen new proof declarations
@@ -662,3 +664,5 @@ or a complete scoped obstruction for the remaining owners.
 Native source/Ward, nonlinear joint existence, soundness, recovery and
 physical constraints remain explicit obligations. A revision of the core
 would require a separate discussion; no new action or postulate is added.
+
+The extended existing parent-source capsule now has 32 compiled declarations, 12 transitive D0 pins, 75 exact controls and 17 rejected scope ledgers. The separate G0 transport capsule retains its 61 declarations, 83 pins, 128 controls and 32 scope guards; its updated consumer proof is hash-bound. CONTROL acceptance requires current-head CI and review.

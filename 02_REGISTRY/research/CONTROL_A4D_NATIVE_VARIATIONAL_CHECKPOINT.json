@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "b084e2ecb50e3ea33624378bb6ed107a467a46dbe672a6fe65b691072b820d35",
-      "source_blob": "4f6e717ec754532ec9618e57cdd8cc707426b291"
+      "sha256": "0b2394bdea5d2bb70f5a87f6a1a27eaefab038ae05c9231342cc75c29e17dfd2",
+      "source_blob": "343be167243b446affe7a254795486cf382b4540"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "960e22ac1a7d4b67a7fb44fb11f56c87160c9fbf1bfe031c1088a3100e963c17",
-      "source_blob": "60513fe5c4a8f90b7cbcad79289c358459120e20"
+      "sha256": "b82a06140d9a4b35c47c46bbda6a4f95e432162f4616852c6c47ce960f603c77",
+      "source_blob": "3b49465d74fedc5cda1e5071c88c43bbad0f62c2"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -259,33 +259,33 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md",
-      "sha256": "f1073938404f33d250a282c4c91c7c91966c0d7e558b1e79fb1dd3ccaa841f83",
-      "source_blob": "76acd2b43fc3356f25f4a7d676881b5370878043"
+      "sha256": "9095f5a4c3c6e7e77b6ef05061ddd657a07c27f87877e31f8703785c119dba46",
+      "source_blob": "5bf2e629d0152bb37332f67b77acb8e4e6539b6f"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_parent_source.lean",
-      "sha256": "6ce3c4427c9b5316608e686a959a999b06053f3e634d30515a5b9b3d58a1a440",
-      "source_blob": "09193af09c8899a3c37e99d34a69e1b04cba82fe"
+      "sha256": "64d14e6a4ea43062187f9bde681aa6a8bce65b2742e53c43321e35b17701134e",
+      "source_blob": "321ee6375a5b06930335645fe7c0649cd9b02c1a"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_check.py",
-      "sha256": "4cae2c6856b366a4208042d77a05786aaef67a39c4387ac3d0f8e85937e5b848",
-      "source_blob": "74a4e8650327e5cbcc2ea591ab54773dc1f58676"
+      "sha256": "3e9f328afd1936cfc5d5e1408b107658471e4dd04dcc8a88a9765eea67da4433",
+      "source_blob": "9bc870ef48cde7a0a6c6e93e128dbfdd8fd8074f"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_certificate.json",
-      "sha256": "0d00b3574650e49bbcc70c189dfb062f113d300773622f76a087742d58b77ea3",
-      "source_blob": "67bd7f6c16680d9f33cb573221b411ca31d07bf8"
+      "sha256": "fae5ac19760a37ececa3e96a139f7ea70f6c9360123545be9de7d5b9ddc82675",
+      "source_blob": "4a430386465cee07edfdca1ddf888e98f5eebc47"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_output.txt",
-      "sha256": "f7534638525f0b9585ae871dacae67c054d9cd1db94bc1f79109057cbd39b751",
-      "source_blob": "604ea71385d04a36f67c978edb499244de67609d"
+      "sha256": "edcb657f825dc740e449afa0f16b5c18521bc0364e98192b4e93773d5b1479ac",
+      "source_blob": "a5870dac3de4885ad7da1a5f3a8ca09d9e645099"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_parent_source_results.json",
-      "sha256": "8b574cd62699ade134c0ac019feba8231736b9365b177b30f3ee42ac3bbe0dcd",
-      "source_blob": "40497f32333a4960f96fc7b3dfeb2175cbfea65f"
+      "sha256": "c64436e6632b7e01bfbbcada5af88cc7bf8a35bd2bc199d6a199dddee0371a57",
+      "source_blob": "ac86c65901253a913309111a4aba24f382cdd15d"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md",
@@ -559,8 +559,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
-      "sha256": "ac7751f1d98b9180f478d98bc78ca4023c8e5dbf9049c3b7d8b7b42004eb53be",
-      "source_blob": "a1b2a93096e2b52f34ccaf6943ea80eaa354d8d8"
+      "sha256": "f953f80bb4b65c84daa03fb3f111c32cc46692d8816bfb861d1a7da4cc4db738",
+      "source_blob": "46a45be5b0a12bd4ddca9880f2b0b5755a865430"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership.lean",
@@ -584,8 +584,8 @@
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_certificate.json",
-      "sha256": "63290805998edbca25155f23563810b61e5e2a830d65573eced398a6a4f12cba",
-      "source_blob": "a2e0d0dcad25ecd27ba7cb174aa5cc00f641f318"
+      "sha256": "f25ce7027045543da575c737dfe9707e56e8effd4716a74304546d04dc0ea958",
+      "source_blob": "beac7017c9e39991b65647c4e72ca07d2c4f93c0"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -594,7 +594,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "c9668dca8a900310cf49dbf56a8bcd8f51d872ab",
+  "previous_source_head": "41ae2916bd1676c45209ea7f347e084c31ae7f09",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -627,11 +627,12 @@
     "The documented weighted adjoint is constructed on actual D0 cochains. Thirty-four propositions and 49 source pins have standard axioms only: two literal CAR leaves and actual nilpotencies are rebuilt by kernel reduction. Full mixed metric dependence, all grades, all 24 Role orders and all ten metric derivatives with packed weights are retained in 107 exact controls. The direct flat Lorentz binding has negative spatial modes and nonconstant null modes; no positive inner product makes its spatial block self-adjoint. At L=4 ker D has dimension 232 and ker Delta dimension 448. For one fixed t>0 the normalized ordinary heat trace is at least 4608*t^3*L^2 and diverges. All-size symbol/kernel/heat arguments are analytic, not compiled continuum statements. Fourteen false scope ledgers are rejected. Positive Euclidean/observer pairings, mesh-dependent heat times and independently specified renormalized/oscillatory laws remain outside the boundary. No physical matter/action/source, causal or gauge prescription, interlevel admission, soundness/recovery or positive GR is asserted. #310/#202/#317 original terminals and global closure remain open.",
     "G0 consumed premise: complete actual ActionProtocol fiber equals arbitrary nonnegative excess costs; canonical action uniquely pointwise least; one verified normalized metric-cost pair differs modulo every state relabeling and common calibration. The real M1 completion criterion applies to transition costs, not to physical Einstein response. Complete invariant-action fiber is arbitrary functions on the symmetry quotient. Passive Hodge transport retains its seed; the actual conditional Ward conclusion follows from its four map covariance hypotheses alone. Twenty-two declarations compile with 23 transitive D0 pins and standard axioms only; 37 exact controls and 11 rejected scope mutations. This does not prove complete native physical-system ownership, physical-response nonuniqueness, full-core no-go or GR. The 44 graph nodes and all original open terminals are retained; no new candidate node is added.",
     "The same G0 package now completely classifies the actual exact polynomial composition premise as five zero coefficient matrices. At Dg=0 it is equivalent to K=G squared and G cubed=0; the actual scalar length-four constant generator has cube entry -32 and admits no such exact quadratic polynomial gate. The repaired total-degree-two statement retains its explicit cubic/quartic remainder and is equivalent only to K=G squared+Dg, with a nonempty fiber for every G,Dg. A full real matrix exponential and its first two derivatives compile as a control, not as selected native dynamics or a simultaneous multi-generator action. The supported conditional theorem remains true. Thirty-three declarations, 26 transitive D0 pins, 54 exact controls and 17 rejected scope mutations. Dg, the constitutive law, joint native dynamics/refinement and GR remain open. No graph node or original terminal changes.",
-    "The complete flat translation transport fiber is normalized U plus the full isotropy representation; smooth flat-tangent integrability requires commuting isotropy generators, not all local generators. All compatible second jets have one arbitrary symmetric background Hessian. The literal four-role/Fock isotropy commutation and raw translation kernel bind directly to the native owners with standard axioms. The exact metric image is the centered symmetric gradient: rank 4*(L^4-gcd(L,2)^4), with the full transverse complement. Its Ward annihilator is exactly centered divergence zero; a constant identity covector has all translation pairings zero but nonzero normalized pairing 4 with an actual coframe-lifted smooth metric probe. Every strong L2 centered-solder limit of the entire flat orbit that is C2 and nondegenerate has zero Levi-Civita curvature. The Fourier/continuum arguments are analytic, not compiled continuum theorems. The 61 compiled declarations pin 83 D0 files; 128 exact controls and 32 false-scope mutations pass. Abstract intertwiners are not declared physical gauge, metric-only convergence is insufficient, and no whole-core or arbitrary finite-curvature conclusion is made. G0 must now supply the transverse action and independent Euler equations on the full coframe/link carrier, with native readout/refinement admission; every original parent remains OPEN."
+    "The complete flat translation transport fiber is normalized U plus the full isotropy representation; smooth flat-tangent integrability requires commuting isotropy generators, not all local generators. All compatible second jets have one arbitrary symmetric background Hessian. The literal four-role/Fock isotropy commutation and raw translation kernel bind directly to the native owners with standard axioms. The exact metric image is the centered symmetric gradient: rank 4*(L^4-gcd(L,2)^4), with the full transverse complement. Its Ward annihilator is exactly centered divergence zero; a constant identity covector has all translation pairings zero but nonzero normalized pairing 4 with an actual coframe-lifted smooth metric probe. Every strong L2 centered-solder limit of the entire flat orbit that is C2 and nondegenerate has zero Levi-Civita curvature. The Fourier/continuum arguments are analytic, not compiled continuum theorems. The 61 compiled declarations pin 83 D0 files; 128 exact controls and 32 false-scope mutations pass. Abstract intertwiners are not declared physical gauge, metric-only convergence is insufficient, and no whole-core or arbitrary finite-curvature conclusion is made. G0 must now supply the transverse action and independent Euler equations on the full coframe/link carrier, with native readout/refinement admission; every original parent remains OPEN.",
+    "Complete field-frame consumer of one fixed literal mixed-parent family on arbitrary backgrounds. All four owner slots and the rectangular pairing bind to congruent visible operators. The source defect equals minus the contraction of all three actual Euler residuals with the frame generator; full roots, all independent background covectors and joint roots with the same geometric action correspond. Every fixed seed transported solely by invertible field frames has zero full source, even for indefinite or singular M. This closes that source class without selecting a physical gauge or a native action. Distinct transverse seed jets retain an exact source difference one on the same full matter root. The bound norm(A)*norm(r)*norm(z) has an exact vanishing-residual/nonvanishing-defect control. 32 compiled declarations pin 12 D0 sources; 75 exact controls and 17 false-scope mutations pass. Native readout/refinement, transformed constraints, a physical seed law and the independent geometric action remain separate obligations. No physical D0 nonuniqueness, whole-core obstruction, native-Einstein transfer, G0 closure or parent retirement is claimed."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "41ae2916bd1676c45209ea7f347e084c31ae7f09",
+  "source_head": "fe116b56f9413cc2cd4e80f375cff1cc50d337f7",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "c9668dca8a900310cf49dbf56a8bcd8f51d872ab",
+  "source_parent": "41ae2916bd1676c45209ea7f347e084c31ae7f09",
   "source_pr": 310
 }

@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "b084e2ecb50e3ea33624378bb6ed107a467a46dbe672a6fe65b691072b820d35",
+    "sha256": "0b2394bdea5d2bb70f5a87f6a1a27eaefab038ae05c9231342cc75c29e17dfd2",
     "global_census": false
   },
   "history_diagnosis": {
@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "41ae2916bd1676c45209ea7f347e084c31ae7f09",
+    "source_head": "fe116b56f9413cc2cd4e80f375cff1cc50d337f7",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -189,9 +189,18 @@
     "transitive_d0_source_pins": 83,
     "exact_controls": 128,
     "rejected_false_scope_ledgers": 32,
-    "remaining_proposition": "Derive the complete native physical action and independent Euler equations on the full coframe/link carrier, including transverse metric variations and compatible readout/refinement; flat-orbit U or Hessian choices cannot replace that arrow.",
+    "remaining_proposition": "Derive the native transverse constitutive seed and geometric action on the full coframe/link carrier, with independent variations and admitted readout/refinement. Pure fixed-seed field frames have zero full source; general frame choices preserve joint background roots and cannot select the missing law.",
     "action_level_nonuniqueness_is_physical_nonuniqueness": false,
     "composition_disposition": "Use the genuine order-two law and the complete simultaneous flat fiber, retaining isotropy. Its mathematical Dg family is classified on im d; transverse/curved physical admission is not supplied.",
-    "flat_metric_disposition": "Translation tests are exactly divergence zero. The full metric annihilator and strong-coframe smooth flat limit are classified; do not promote them to whole-core impossibility, physical gauge, or metric-only compactness."
+    "flat_metric_disposition": "Translation tests are exactly divergence zero. The full metric annihilator and strong-coframe smooth flat limit are classified; do not promote them to whole-core impossibility, physical gauge, or metric-only compactness.",
+    "parent_field_frame_consumer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md",
+      "compiled_declarations": 32,
+      "transitive_d0_source_pins": 12,
+      "exact_controls": 75,
+      "rejected_false_scope_ledgers": 17,
+      "result": "Complete field-frame consumer of one fixed literal mixed-parent family on arbitrary backgrounds. All four owner slots and the rectangular pairing bind to congruent visible operators. The source defect equals minus the contraction of all three actual Euler residuals with the frame generator; full roots, all independent background covectors and joint roots with the same geometric action correspond. Every fixed seed transported solely by invertible field frames has zero full source, even for indefinite or singular M. This closes that source class without selecting a physical gauge or a native action. Distinct transverse seed jets retain an exact source difference one on the same full matter root. The bound norm(A)*norm(r)*norm(z) has an exact vanishing-residual/nonvanishing-defect control. 32 compiled declarations pin 12 D0 sources; 75 exact controls and 17 false-scope mutations pass. Native readout/refinement, transformed constraints, a physical seed law and the independent geometric action remain separate obligations. No physical D0 nonuniqueness, whole-core obstruction, native-Einstein transfer, G0 closure or parent retirement is claimed.",
+      "g0_closed": false
+    }
   }
 }

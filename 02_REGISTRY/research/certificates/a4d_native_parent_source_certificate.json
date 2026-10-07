@@ -1,4 +1,5 @@
 {
+  "checker_sha256": "3e9f328afd1936cfc5d5e1408b107658471e4dd04dcc8a88a9765eea67da4433",
   "checks": [
     "COMPILED_ACTUAL_PARENT_VARIATION_AND_SOURCE_BINDINGS",
     "ALL_FIELD_EULER_ROWS",
@@ -44,8 +45,58 @@
     "DEGENERATE_PAIRING_PROTECTS_RAW_CONSTRAINT_SCOPE",
     "SEMIDEFINITE_IS_NOT_STRICT_POSITIVE",
     "NORMALIZATION_CONSTRAINT_PRESERVES_NONZERO_SOURCE",
-    "AUXILIARY_ONLY_GATE_IS_INSUFFICIENT"
+    "AUXILIARY_ONLY_GATE_IS_INSUFFICIENT",
+    "FRAME_OFF_SHELL_DEFECT_ALL_THREE_RESIDUALS",
+    "FRAME_SKEW_GENERATOR_NOT_REQUIRED",
+    "FRAME_FINITE_PARENT_IDENTITY",
+    "FRAME_EULER_COVECTORS_PULL_BACK",
+    "FRAME_BACKGROUND_DERIVATIVE_AT_NONIDENTITY_FRAME",
+    "FRAME_ACTUAL_FIXED_FIELD_SOURCE_CHAIN_RULE",
+    "FRAME_ALL_FOUR_MAPS_AND_RECTANGULAR_PAIRING_CANCEL",
+    "FRAME_FROZEN_PAIRING_CAN_CHANGE_ACTION",
+    "FRAME_FULL_ROOT_BIJECTION_positive",
+    "FRAME_EVERY_BACKGROUND_COVECTOR_ON_FULL_ROOT_positive",
+    "FRAME_FIXED_SEED_ZERO_SOURCE_positive",
+    "FRAME_FULL_ROOT_BIJECTION_indefinite",
+    "FRAME_EVERY_BACKGROUND_COVECTOR_ON_FULL_ROOT_indefinite",
+    "FRAME_FIXED_SEED_ZERO_SOURCE_indefinite",
+    "FRAME_FULL_ROOT_BIJECTION_singular",
+    "FRAME_EVERY_BACKGROUND_COVECTOR_ON_FULL_ROOT_singular",
+    "FRAME_FIXED_SEED_ZERO_SOURCE_singular",
+    "FRAME_34_INDEPENDENT_BACKGROUND_JET_CONTROLS",
+    "FRAME_FINITE_CORRESPONDING_ENDPOINT_CONTRAST",
+    "FRAME_VANISHING_RESIDUAL_NONVANISHING_DEFECT",
+    "FRAME_RESIDUAL_NORM_BOUND_SHARP",
+    "FRAME_AUXILIARY_ONLY_GATE_FAILS",
+    "FRAME_NONINVERTIBLE_MAP_CREATES_SPURIOUS_ROOT",
+    "FRAME_EXTERNAL_SOURCE_MUST_TRANSFORM",
+    "FRAME_NORMALIZATION_CONSTRAINT_MUST_TRANSFORM",
+    "FRAME_READOUT_NOT_AUTOMATICALLY_PRESERVED",
+    "FRAME_REFINEMENT_REQUIRES_INTERTWINING",
+    "TRANSVERSE_SEED_SAME_VALUES_AND_FULL_ROOT",
+    "TRANSVERSE_SEED_DIFFERENT_FULL_BACKGROUND_EULER",
+    "TRANSVERSE_SEED_DISTINCTION_SURVIVES_ANY_FRAME_JET"
   ],
+  "field_frame_scope": {
+    "background_directions": "All independent admitted background directions; not only translations",
+    "complete_class": "All invertible linear field reparametrizations of one fixed mixed-parent family, with all owner slots and pairing transformed",
+    "fixed_external_source_may_be_left_unchanged": false,
+    "fixed_seed_transported_full_source": "0",
+    "full_field_gate_required": true,
+    "g0_closed": false,
+    "native_einstein_contrast_transfer_established": false,
+    "native_readout_refinement_admission_established": false,
+    "on_shell_source_difference": "0",
+    "pairing_and_constraints_must_transform": true,
+    "physical_d0_nonuniqueness_established": false,
+    "physical_gauge_established": false,
+    "positive_gr_closed": false,
+    "residual_bound": "abs(source_defect) <= norm(A) * norm(r) * norm(z)",
+    "transverse_seed_determined": false,
+    "transverse_seed_source_difference": "1",
+    "uniform_mesh_bound_from_pointwise_invertibility": false,
+    "whole_core_nogo": false
+  },
   "finite_strata": {
     "indefinite_radical": {
       "K": [
@@ -345,14 +396,15 @@
       "2*q"
     ]
   ],
-  "input_head": "8b96338505395dabf509e13422089d89685483b8",
+  "input_head": "41ae2916bd1676c45209ea7f347e084c31ae7f09",
   "inputs_sha256": {
     "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
     "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean": "cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296",
     "03_FORMALIZATION/D0/Geometry/FinitePrimalDualHodgeParent.lean": "a4be98cfb6d3e08bc873ff31d93b9669533d19fb641b1cb81e871be4af79f863"
   },
-  "lean_receipt_sha256": "8b574cd62699ade134c0ac019feba8231736b9365b177b30f3ee42ac3bbe0dcd",
+  "lean_receipt_sha256": "c64436e6632b7e01bfbbcada5af88cc7bf8a35bd2bc199d6a199dddee0371a57",
   "positive_source": "0",
+  "proof_sha256": "9095f5a4c3c6e7e77b6ef05061ddd657a07c27f87877e31f8703785c119dba46",
   "protected_exceptions": [
     "Indefinite or degenerate scalar form",
     "Missing field equation or normalized constraints",
@@ -367,6 +419,6 @@
     "all three Euler residuals controlled in matching norms"
   ],
   "residual_source_exponent": "1/2",
-  "scope": "Existing homogeneous mixed parent, actual supplied linear pairing, symmetric scalar form. Complete positive pointwise source classification; nondegenerate indefinite source relation and image radical; no selected metric or matter action.",
+  "scope": "Existing homogeneous mixed parent, actual supplied linear pairing, symmetric scalar form. Complete positive pointwise source classification; nondegenerate indefinite source relation and image radical; arbitrary-background joint Euler universality under invertible field frames, exact residual source defect, and transverse seed boundary; no selected metric or matter action.",
   "status": "PASS"
 }

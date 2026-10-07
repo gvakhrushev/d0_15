@@ -92,6 +92,20 @@ indefinite class instead has a completely specified kernel/source relation
 and image radical. An approximate-root estimate is sharp at square-root
 residual order under its stated uniform bounds. No physical star is selected.
 
+The same [parent proof, Section 6](A4D_NATIVE_PARENT_SOURCE_BOUNDARY.md#6-complete-field-frame-class-full-background-source-and-joint-roots)
+now classifies its complete invertible field-frame freedom on arbitrary
+backgrounds. The exact off-shell source defect contains all three actual
+matter residuals; it vanishes on the full gate for every background direction.
+All joint roots with the same geometric action correspond. Fixed seeds
+transported solely by field frames have zero full source, including singular
+and indefinite forms. This removes a
+representation parameter without erasing transverse seed dependence: equal
+operator values with distinct transverse first jets have an exact surviving
+source difference one. No native gauge/refinement admission or physical
+nonuniqueness is inferred. Uniform approximate-source control additionally
+requires a bound on the frame's logarithmic derivative. The parent package
+has 32 compiled declarations and 75 exact controls; G0 stays open.
+
 The [verification/process and phase-refinement classification](A4D_NATIVE_VERIFICATION_REFINEMENT_BOUNDARY.md)
 now determines the strength of the actual formal verification interface:
 verifiability is equivalent to a nontrivial empirical quotient, and literal
