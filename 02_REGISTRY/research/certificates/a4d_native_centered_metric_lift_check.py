@@ -234,7 +234,7 @@ def main():
  L=2;M=16;small=list(product(range(L),repeat=4))
  fields={x:[[((11*x[0]+7*x[1]+5*x[2]+3*x[3]+13*r-17*a)%29-14) for a in range(4)] for r in range(4)] for x in small}
  K2=sum(max(sum(fields[x][r][a]**2 for a in range(4)) for x in small) for r in range(4))
- T0=fields[(0,0,0,0)];bulk=0
+ T0=fields[(0,0,0,0)];bulk=0;graded_bulk=0
  for x in product(range(M),repeat=4):
   at=fields[tuple(j if j<L else 0 for j in x)];twice=[]
   for r in range(4):
@@ -244,8 +244,16 @@ def main():
   assert sum(v*v for row in twice for v in row)<=4*K2
   if all(j>=L+1 for j in x):
    assert twice==[[2*v for v in row] for row in T0];bulk+=1
+   graded=[]
+   for r in range(4):
+    y=list(x);y[r]=(y[r]-1)%M
+    back=fields[tuple(j if j<L else 0 for j in y)]
+    graded.append([int(x[r]<L)*at[r][a]+int(y[r]<L)*back[r][a] for a in range(4)])
+   assert graded==[[0]*4 for _ in range(4)];graded_bulk+=1
  check('ALL_CENTERED_COMPOSED_BULK_ROWS_AND_ROW_ENVELOPE',bulk==(M-L-1)**4
        and Q(M**4-bulk,M**4)<=Q(4*(L+1),M))
+ check('GRADED_ONEFORM_FULL_SOLDER_AND_PERTURBATION_BULK_LIMITS',graded_bulk==(M-L-1)**4
+       and ETA*ETA*ETA.T==ETA and sp.zeros(4)*ETA*sp.zeros(4)==sp.zeros(4))
  xx=sp.symbols('xx',real=True);b=Q(1,10)
  fine=sp.cos(2*sp.pi*xx);coarse=sp.cos(4*sp.pi*xx)
  field_gap=sp.integrate((b*(fine-coarse))**2,(xx,0,Q(1,2)))+sp.integrate((b*(fine-1))**2,(xx,Q(1,2),1))
@@ -279,6 +287,9 @@ def main():
   'interlevel_admission':'Curved midpoint roots fail actual componentwise composed pullback; other native interlevel gates remain unproved',
   'componentwise_refinement_smooth_limit_class':'EXACTLY_CONSTANT_LORENTZ_METRICS for exact raw componentwise pullback and fixed physical readout',
   'approximate_refinement_bound':'L1 distance to constant G_L at most (2B+rho_L)rho_L; consumes bounded raw L2 preparation and vanishing composed L2 errors',
+  'graded_full_solder_refinement_limit':'ZERO_IN_MEASURE; no smooth nondegenerate metric recovery',
+  'graded_perturbation_refinement_limit':'ETA_IN_MEASURE; flat zero perturbation realizes the sole smooth limit',
+  'graded_refinement_scope':'Exact composed B1/B0 row maps with either gamma=1 or gamma=M/L; no L1 or concentration claim',
   'curved_composed_field_gap_squared':'1/80',
   'curved_composed_metric_gap_squared':'1617/32000',
   'curved_fixed_coarse_then_fine_field_gap_squared':'3/200 at every fixed coarse level',

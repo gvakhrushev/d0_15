@@ -93,6 +93,7 @@
     "OFF_SHELL_NONZERO_FLAT_FIELD_IS_REJECTED",
     "ACTUAL_COMPOSED_FIELD_PROJECTIONS_AND_FALSE_MODULO_SHORTCUT",
     "ALL_CENTERED_COMPOSED_BULK_ROWS_AND_ROW_ENVELOPE",
+    "GRADED_ONEFORM_FULL_SOLDER_AND_PERTURBATION_BULK_LIMITS",
     "EXACT_CURVED_FIELD_AND_METRIC_COMPOSED_DOUBLING_GAPS",
     "POINTWISE_FROBENIUS_CONTRACTION_IS_FALSE",
     "UNBOUNDED_RAW_FRAME_DEFEATS_METRIC_ONLY_STABILITY"
@@ -216,6 +217,9 @@
     }
   },
   "global_native_gr": "OPEN; metric/variation preparation is not action or refinement transfer",
+  "graded_full_solder_refinement_limit": "ZERO_IN_MEASURE; no smooth nondegenerate metric recovery",
+  "graded_perturbation_refinement_limit": "ETA_IN_MEASURE; flat zero perturbation realizes the sole smooth limit",
+  "graded_refinement_scope": "Exact composed B1/B0 row maps with either gamma=1 or gamma=M/L; no L1 or concentration claim",
   "input_head": "98269b4ffbd19338a2b162d4e14ea8c4ec08609a",
   "inputs_sha256": {
     "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md": "a8ca4517ee01fb4460ed266cd3864896a6ba6b1e47345f685a51f00f838e5459",

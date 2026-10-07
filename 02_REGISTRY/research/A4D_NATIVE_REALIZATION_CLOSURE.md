@@ -135,6 +135,10 @@ extension requires bounded raw L2 preparation and vanishing composed L2
 defects. The curved midpoint family fails that compatibility with squared
 field gap 1/80 and metric gap 1617/32000 although adjacent errors vanish.
 This does not select that transition as a physical native gate.
+The separate owned graded one-form lift yields a zero metric limit in
+measure if applied to the full solder, and only eta if applied to its
+perturbation. These exact composed classes do not yield curved recovery;
+no L1 convergence or exclusion of concentrated energy is asserted.
 
 ## 1. State, action, variation and source are separate owners
 

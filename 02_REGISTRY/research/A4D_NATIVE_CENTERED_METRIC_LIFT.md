@@ -443,6 +443,44 @@ hypotheses above. Native cochain, transported-frame, nonlinear transition
 and other physical readout classes are not exhausted by this theorem.
 The general native interlevel/action/source arrow remains OPEN.
 
+### The owned graded one-form lift is a different candidate
+
+The existing cochain construction must not be confused with scalar pullback.
+For the one-form row r its actual composed tensor lift is
+
+    (B_r,L,M F_L)_ra(x)=1_[x_r<L] F_L,ra(c_L(x)).
+
+In integrated cochain coordinates this has scale gamma=1; in the actual
+physical component convention that commutes with the owned dForward, the
+scale is gamma=M/L. Both formulas follow by composing the existing B1 in
+the occupied direction and B0 in the other directions. The statement below
+allows either scale and, in fact, any finite scalar scale at each M.
+
+If the full raw solder E is transported by gamma B_r, each centered row
+vanishes when x_r>=L+1. On the same bulk of (M-L-1)^4 sites, the actual
+centered metric is therefore zero. It converges to the zero matrix in
+measure as M tends to infinity from one fixed coarse L, regardless of
+amplitudes on the shrinking exceptional set. It cannot converge in measure,
+L1 or uniformly to a smooth nondegenerate metric. The nondegenerate
+full-solder fiber is already empty on those fine stages; this is an
+obstruction to that candidate transition, not an Einstein solution.
+
+If that graded lift is instead applied to the perturbation e and the eta
+background is added at each level, the bulk centered solder is eta and its
+metric is eta. Its only possible smooth metric limit in measure is the
+constant eta; e=0, psi=0 realizes this limit at every level. Thus the two
+interpretations have distinct terminals: a degenerate metric limit for the
+full solder, and only the flat background for the perturbation convention.
+The generic compiled raw-solder/metric bulk lemmas apply with T=0 or eta.
+
+This conclusion does not require an L2 bound and permits unbounded amplitudes
+on the shrinking exceptional set. It asserts convergence in measure, not
+L1 convergence or absence of concentrated weak action/energy limits. Merely
+small adjacent errors, approximate graded compatibility, transported-frame
+or nonlinear transition laws and nonlocal physical readouts stay separate.
+The theorem tests these two explicitly described uses of the owned cochain
+operator; it does not select either as the physical refinement law.
+
 ## 8. Remaining arrow and verification boundary
 
 The field-to-metric and smooth-variation parts are now constructive for the
@@ -471,12 +509,13 @@ Five actual declaration types are printed. The older nonzero-H Nyquist
 declaration is only type-checked here; its separate native_decide evaluation
 dependency is not disguised as a new standard-axiom proof. The earlier full
 flux-gate derivation and the published physical-probe proof are separately
-pinned. The checker replays 93 grouped exact controls, including every
+pinned. The checker replays 94 grouped exact controls, including every
 metric slot, its factor-two packing, variable-background adjoint, midpoint
 samples, full Ricci/Einstein jet contraction, half-action sign and the
 explicit action bound for the corrected finite metrics. Additional exact
 controls check every bulk row on 65,536 sites, actual composed projections,
 the two nonzero doubling gaps and the raw-frame/row-envelope exceptions.
-Seven hostile ledgers falsify the inverse bound, Einstein source, action
+Nine hostile ledgers falsify the inverse bound, Einstein source, action
 normalization, global GR status, interlevel admission, the constant-limit
-class or its approximate-error hypotheses; each is rejected.
+class, its approximate-error hypotheses or either graded interpretation
+terminal; each is rejected.

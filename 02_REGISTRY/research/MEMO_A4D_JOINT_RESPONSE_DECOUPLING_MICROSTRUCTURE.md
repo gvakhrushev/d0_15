@@ -11,7 +11,7 @@ without a frequency selector or a uniform inverse on all grid modes.
 The full centering range inverse, retained kernel and constrained nonlinear
 Gram fibers are explicit. The previous rank theorem is reused. Twenty-two
 new propositions and two actual owner propositions compile with 53 source
-pins; 93 exact controls verify the packed metric normalization and curved
+pins; 94 exact controls verify the packed metric normalization and curved
 source/action constants. The existing standalone flux gate then has exact
 levelwise zero-field roots with curved non-Einstein centered-metric limits.
 Its native half-contrast is zero against physical
@@ -24,6 +24,10 @@ extension consumes bounded raw L2 preparation and vanishing composed errors.
 The curved midpoint family has composed squared field gap 1/80 and metric
 gap 1617/32000, despite vanishing adjacent defects. No physical transition
 is selected by that scoped classification.
+The separate owned graded one-form lift yields a zero metric limit in
+measure if applied to the full solder, and only eta if applied to its
+perturbation. These exact composed classes do not yield curved recovery;
+no L1 convergence or exclusion of concentrated energy is asserted.
 
 The [positive point-state refinement result](A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md)
 now classifies every compatible positive normalized state of the actual
