@@ -305,6 +305,8 @@ does not extend to arbitrary nonlinear volume terms. Genuine mixed
 scale/shape dynamics, probe restrictions and interlevel/matter equations
 remain independent obligations; no new action is selected.
 
+The [complete affine history scalar classification](A4D_NATIVE_AFFINE_HISTORY_SCALAR_BOUNDARY.md) consumes the actual field-path composition owner. A scalar depending only on total affine transport respects every native concatenation exactly when it is an affine character; the two-link realization and translation blindness are compiled. The whole real four-dimensional class is an additive function of log absolute determinant, with one logarithmic coefficient under continuity. On the full affine Lorentz group every such scalar vanishes, also proved without a GL extension. All 24 connection, 16 raw-coframe and ten metric rows vanish; the existing nonzero metric contrast therefore cannot transfer through this interface when its pencil is admitted. Context-dependent history weights, retained coframe/matter observables and nonadditive joint actions remain separate routes requiring their own native owners. This narrows the field-action construction without claiming G0 or whole-core closure.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
