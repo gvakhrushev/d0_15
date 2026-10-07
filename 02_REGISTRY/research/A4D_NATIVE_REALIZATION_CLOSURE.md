@@ -321,6 +321,22 @@ This is a constructive kinematic and variational interface result, with
 It does not supply the missing field law, physical source/Ward or refinement,
 and changes neither the 44 graph terminals nor the original parent goals.
 
+The [complete nonnegative homogeneous source theorem](A4D_NATIVE_POSITIVE_SOURCE_JETS.md)
+now eliminates arbitrary nonlinear positive-weight changes as a mechanism
+for a nonzero source at full freely varied field roots in that stated class.
+Its complete positive quadratic first/second jets retain cross blocks,
+nonzero matter kernels and rank changes. The literal supplied squared-flux
+action is bound to the theorem with its proved positivity hypotheses.
+A bounded positive rational family disproves source control from small
+Euler residuals alone. Its point source remains one while the normalized
+h^(1/3) half-contrast tends to zero, so the joint limit cannot be replaced
+by that point derivative. Uniform action-derivative bounds remain an actual
+preparation obligation. This consumes earlier fixed-frame and positive-parent
+results while preserving indefinite actions, nonhomogeneous potentials and
+owned constraints as exceptions. Eighteen Lean propositions, 40 D0 pins and
+114 exact controls do not select the required coupled action or refinement;
+physical source/Ward, GR and all original terminals stay open.
+
 ## 1. State, action, variation and source are separate owners
 
 The following inventory records the actual definitions/propositions, rather
