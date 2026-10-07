@@ -8,6 +8,12 @@ Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
+The user's October 7 strategic replanning is recorded separately in
+[the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
+next research decision to the complete native-system/derivability packet
+G0. The 111-artifact scientific receipt below remains unchanged; the plan
+is CONTROL-only planning metadata, not a new scientific source artifact.
+
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates

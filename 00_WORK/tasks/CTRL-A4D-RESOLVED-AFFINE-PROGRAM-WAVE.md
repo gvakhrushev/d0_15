@@ -145,3 +145,18 @@ The connection-action follow-up adds: The actual supplied Killing, matrix Yang-M
 The coupled-Hodge follow-up adds: Actual coframe-coupled Hodge weights and dressed links preserve uniform scale while retaining shape dependence. Two curved metric families have exact native transported readouts and identical volume vectors at every L in 4N, but physical action difference -9*pi^2/200. Every scale-invariant coframe/link scalar plus an arbitrary separate volume profile fails the common calibrated contrast test; the paired physical gap is -9*pi^2*h^(1/3)/200+O(h^(4/3)). Completeness is proved within the C1 volume-only radial-response class by integration, not for the whole core. The tested variable-weight curvature-quadratic binding has exact curved flat-link native roots; a nonzero constant volume coefficient instead makes its free source-free scale gate empty. Arbitrary nonlinear volume profiles are not included in that empty-fiber claim. Eighteen compiled propositions, 56 transitive pins, 103 exact controls and nine false scope ledgers retain all ten metric derivatives, packed weights and all 24 physical/native connection directions, including the transported-weight derivative. Exact special fibers are not general finite surjectivity, native on-shell preparation or interlevel admission. Mixed scale/shape dependence, smaller independently owned domains, matter, physical Ward, source/refinement transfer, soundness/recovery and positive GR remain open; no action is selected and #310/#202/#317 original terminals remain unchanged.
 
 The actual weighted-Dirac follow-up adds: The documented weighted adjoint is constructed on actual D0 cochains. Thirty-four propositions and 49 source pins have standard axioms only: two literal CAR leaves and actual nilpotencies are rebuilt by kernel reduction. Full mixed metric dependence, all grades, all 24 Role orders and all ten metric derivatives with packed weights are retained in 107 exact controls. The direct flat Lorentz binding has negative spatial modes and nonconstant null modes; no positive inner product makes its spatial block self-adjoint. At L=4 ker D has dimension 232 and ker Delta dimension 448. For one fixed t>0 the normalized ordinary heat trace is at least 4608*t^3*L^2 and diverges. All-size symbol/kernel/heat arguments are analytic, not compiled continuum statements. Fourteen false scope ledgers are rejected. Positive Euclidean/observer pairings, mesh-dependent heat times and independently specified renormalized/oscillatory laws remain outside the boundary. No physical matter/action/source, causal or gauge prescription, interlevel admission, soundness/recovery or positive GR is asserted. #310/#202/#317 original terminals and global closure remain open.
+
+## User-directed strategic replanning — 2026-10-07
+
+The user requested a smarter plan to avoid repeated bounded-class research
+without terminal progress. Follow
+`02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md` and its JSON
+contract. The next substantive gravity step is the G0 decision packet:
+derive a complete owned native variational system/family up to physical
+response equivalence, or prove a precise boundary of its derivation.
+Require an independently defined family and completeness argument; a
+catalogue of tested candidates does not define all admitted core models.
+Further density/spectral variants are deferred until consumed by that
+packet. Preserve all original research parents, native physical source,
+soundness/recovery and global obligations. This is a plan, not a scientific
+status change, lifecycle retirement or authorization for new physical data.

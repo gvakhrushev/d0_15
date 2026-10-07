@@ -1,0 +1,177 @@
+{
+  "schema": "D0_CLOSURE_CRITICAL_PLAN_V1",
+  "date": "2026-10-07",
+  "status": "EXECUTION_PLAN_NOT_PROOF",
+  "task": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+  "user_direction": "Replan to avoid repeated scoped-class research and reach closure faster.",
+  "input_main": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
+  "input_research_head": "c8e3811a4650075736dbc591fc00a04222eecdf6",
+  "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
+  "graph_input": {
+    "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
+    "sha256": "e2d0cebacc87d068197095330bf306520b3872ef59d631c04ed0f215cca9bdc8",
+    "global_census": false
+  },
+  "history_diagnosis": {
+    "first_graph_head": "a30408721a3804e3d0c97fe2a210a556dbff4b67",
+    "first_graph_nodes": 17,
+    "current_graph_nodes": 44,
+    "initial_open_nodes": {
+      "constitutive": "OPEN_PHYSICAL_REALIZATION",
+      "native_sector": "OPEN",
+      "contrast_refinement_transfer": "OPEN_NONAFFINE_NATIVE_ARROW",
+      "matter_source_ward": "OPEN",
+      "on_shell_stationarity": "OPEN",
+      "gauge_range": "OPEN_FOR_NATIVE_SYSTEM",
+      "joint_nonlinear_solve": "OPEN",
+      "soundness": "OPEN",
+      "recovery": "OPEN",
+      "physical_constraints": "OPEN_FOR_RECOVERED_CLASS",
+      "positive_gr": "OPEN"
+    },
+    "current_open_nodes": {
+      "constitutive": "OPEN_PHYSICAL_REALIZATION",
+      "native_sector": "OPEN",
+      "contrast_refinement_transfer": "OPEN_REMAINING_NATIVE_ARROW",
+      "matter_source_ward": "OPEN",
+      "on_shell_stationarity": "OPEN",
+      "gauge_range": "OPEN_FOR_NATIVE_SYSTEM",
+      "joint_nonlinear_solve": "OPEN",
+      "soundness": "OPEN",
+      "recovery": "OPEN",
+      "physical_constraints": "OPEN_FOR_RECOVERED_CLASS",
+      "positive_gr": "OPEN"
+    },
+    "principal_open_nodes_terminally_closed": []
+  },
+  "next_decision": {
+    "stage": "G0",
+    "question": "Do the frozen native constructions determine a complete owned physical variational system or family up to proved physical-response equivalence?",
+    "required_outputs": [
+      "Actual independently defined state/action/variation/Euler/readout/refinement chain with typed owners and complete hypotheses.",
+      "Completeness of the admitted family in the stated native sector, or a proved precise derivability boundary.",
+      "Parameter dependence assessed on physical equations/response; no action selector is imposed."
+    ],
+    "outcomes": {
+      "owned_complete_system": "Proceed to G1.",
+      "complete_family_obstruction": "Classify NO-GO in its proved full scope.",
+      "proved_free_physical_input": "Name and type the external interface; continue global classification without inserting a new core postulate.",
+      "unproved": "Retain one exact missing lemma; do not launch a neighbouring candidate class."
+    },
+    "forbidden_shortcuts": [
+      "Admitted class equals the catalogue of already excluded candidates.",
+      "Theorem input becomes a derived native principle.",
+      "Failure to find a definition becomes a no-go theorem.",
+      "Observable parameter nonuniqueness is asserted from action parameter nonuniqueness alone.",
+      "A new physical action, selector or source prescription is silently added."
+    ]
+  },
+  "groups": [
+    {
+      "id": "G0",
+      "members": [
+        "constitutive",
+        "native_sector"
+      ],
+      "prerequisites": [],
+      "status": "OPEN_PLANNED"
+    },
+    {
+      "id": "G1",
+      "members": [
+        "matter_source_ward"
+      ],
+      "prerequisites": [
+        "G0"
+      ],
+      "status": "OPEN_PLANNED"
+    },
+    {
+      "id": "G2",
+      "members": [
+        "contrast_refinement_transfer",
+        "on_shell_stationarity"
+      ],
+      "prerequisites": [
+        "G0",
+        "G1"
+      ],
+      "status": "OPEN_PLANNED"
+    },
+    {
+      "id": "G3",
+      "members": [
+        "gauge_range",
+        "joint_nonlinear_solve"
+      ],
+      "prerequisites": [
+        "G0",
+        "G1",
+        "G2"
+      ],
+      "status": "OPEN_PLANNED"
+    },
+    {
+      "id": "G4",
+      "members": [
+        "soundness",
+        "recovery",
+        "physical_constraints",
+        "positive_gr"
+      ],
+      "prerequisites": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "status": "OPEN_PLANNED"
+    }
+  ],
+  "global_classification": {
+    "status": "OPEN_NOT_CERTIFIED",
+    "method": "Exhaustive independent load-bearing input frontier from canonical contract, registry, ledger and actual primary propositions; downstream consumers grouped without changing terminals.",
+    "new_empirical_or_extension_debt": false
+  },
+  "research_admission": {
+    "required_fields": [
+      "existing open node or independent input",
+      "exact proof consumer",
+      "independently owned or to-be-proved hypotheses",
+      "terminal and protected exceptions"
+    ],
+    "two_stagnant_checkpoints": "Review method after two substantive checkpoints without a newly proved necessary premise; stagnation is not a no-go proof."
+  },
+  "deferred": [
+    {
+      "route": "density_inside_spectral_trace",
+      "status": "UNVERIFIED_SCRATCH_NOT_CERTIFIED",
+      "resume_only_if": "Consumed by the G0 complete-system or complete-family proof."
+    }
+  ],
+  "preserved_parents": [
+    {
+      "pr": 310,
+      "terminal": "Original fixed-source exact-root raw-owner comparator terminal remains OPEN."
+    },
+    {
+      "pr": 202,
+      "terminal": "Independent full-affine curved stationary witness or scoped no-go remains OPEN."
+    },
+    {
+      "pr": 317,
+      "terminal": "Full complex divisor/rank stratification remains OPEN."
+    }
+  ],
+  "scientific_receipt_unchanged": {
+    "source_head": "c8e3811a4650075736dbc591fc00a04222eecdf6",
+    "artifacts": 111,
+    "distinct_artifact_input_hashes": 277
+  },
+  "positive_gr": "OPEN_NOT_CERTIFIED",
+  "global_closure": "OPEN_NOT_CERTIFIED",
+  "changes_supported_owners": false,
+  "changes_claims_or_book": false,
+  "adds_physical_postulates": false,
+  "creates_or_retires_tasks": false,
+  "self_merge": false
+}
