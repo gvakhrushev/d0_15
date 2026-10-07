@@ -9,15 +9,21 @@ now constructs native coframe fields and variations realizing every metric
 and symmetric probe in the declared smooth solder class up to O(h^2),
 without a frequency selector or a uniform inverse on all grid modes.
 The full centering range inverse, retained kernel and constrained nonlinear
-Gram fibers are explicit. The previous rank theorem is reused. Seventeen
+Gram fibers are explicit. The previous rank theorem is reused. Twenty-two
 new propositions and two actual owner propositions compile with 53 source
-pins; 88 exact controls verify the packed metric normalization and curved
+pins; 93 exact controls verify the packed metric normalization and curved
 source/action constants. The existing standalone flux gate then has exact
 levelwise zero-field roots with curved non-Einstein centered-metric limits.
 Its native half-contrast is zero against physical
 `-(3*pi^2/50)*h^(1/3)+O(h)`, excluding O(h) calibrated transfer in that class.
 This does not assert native interlevel compatibility, introduce a connection
 or matter action, or close the original physical parent terminal.
+The separately tested actual scalar pullback on raw coframe components
+has exactly constant smooth nondegenerate metric limits. Its approximate
+extension consumes bounded raw L2 preparation and vanishing composed errors.
+The curved midpoint family has composed squared field gap 1/80 and metric
+gap 1617/32000, despite vanishing adjacent defects. No physical transition
+is selected by that scoped classification.
 
 The [positive point-state refinement result](A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md)
 now classifies every compatible positive normalized state of the actual

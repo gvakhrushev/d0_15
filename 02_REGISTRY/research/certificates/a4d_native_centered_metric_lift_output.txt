@@ -46,3 +46,12 @@ D0.Geometry.centeredNyquist_nonzero_H_oneForm :
     (∀ (t : ℝ) (x : ArchiveRolePhaseGroup 0),
         solderMetricMatrix 0 (t • periodTwoNyquistCoframe) x = roleLorentzMetric) ∧
       flatStaggeredH 0 periodTwoNyquistCoframe periodTwoOneFormProbe (0, singletonFockState A) = 2
+'D0.Research.NativeCenteredMetricLift.square_average_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCenteredMetricLift.actual_average_square_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCenteredMetricLift.actual_centered_square_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCenteredMetricLift.actual_raw_solder_bulk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCenteredMetricLift.actual_metric_bulk' depends on axioms: [propext, Classical.choice, Quot.sound]

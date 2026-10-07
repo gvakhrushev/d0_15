@@ -12,7 +12,7 @@ import hashlib
 import json
 import sympy as sp
 
-INPUT_HEAD='dae0ec13f9f885ff945c45613ae38becbc097d18'
+INPUT_HEAD='98269b4ffbd19338a2b162d4e14ea8c4ec08609a'
 INPUTS=[
  '03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean',
  '03_FORMALIZATION/D0/Geometry/A4DCoframeParentConstraint.lean',
@@ -26,6 +26,9 @@ INPUTS=[
  '02_REGISTRY/research/certificates/a4d_native_flux_gate.lean',
  '02_REGISTRY/research/certificates/a4d_native_flux_gate_results.json',
  '02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md',
+ '02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md',
+ '02_REGISTRY/research/certificates/a4d_native_measure_refinement.lean',
+ '02_REGISTRY/research/certificates/a4d_native_measure_refinement_results.json',
 ]
 PROBE_PREREQUISITE={
  'path': '02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md',
@@ -57,7 +60,7 @@ def main():
  receipt_path='02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_results.json'
  receipt=json.loads((repo/receipt_path).read_text())
  assert receipt['status']=='PASS' and receipt['compiler_exit_code']==0 and not receipt['sorryAx']
- assert receipt['printed_axiom_dependencies']==19
+ assert receipt['printed_axiom_dependencies']==24
  assert set(receipt['axioms'])<={'propext','Classical.choice','Quot.sound'}
  for p,d in {**receipt['transitive_d0_source_sha256'],**receipt['toolchain_input_sha256'],
              receipt['capsule']:receipt['capsule_sha256'],receipt['output']:receipt['output_sha256']}.items():
@@ -218,6 +221,45 @@ def main():
  flat_field=[sp.Integer(1)]+[sp.Integer(0)]*(16*4**4-1)
  check('OFF_SHELL_NONZERO_FLAT_FIELD_IS_REJECTED',sum(v*v for v in flat_field)==1
        and any(v!=0 for v in flat_field))
+ # Actual scalar composites; the long-jump modulo shortcut is different.
+ for L in range(2,12):
+  for M in range(L,2*L+3):
+   for j in range(M):
+    k=j
+    for level in range(M-1,L-1,-1):k%=level
+    assert k==(j if j<L else 0)
+ check('ACTUAL_COMPOSED_FIELD_PROJECTIONS_AND_FALSE_MODULO_SHORTCUT',5%4!=0)
+ # Independent literal full four-torus centering, all 65,536 sites. Integer
+ # twice-centered matrices avoid rational overhead; no site is sampled away.
+ L=2;M=16;small=list(product(range(L),repeat=4))
+ fields={x:[[((11*x[0]+7*x[1]+5*x[2]+3*x[3]+13*r-17*a)%29-14) for a in range(4)] for r in range(4)] for x in small}
+ K2=sum(max(sum(fields[x][r][a]**2 for a in range(4)) for x in small) for r in range(4))
+ T0=fields[(0,0,0,0)];bulk=0
+ for x in product(range(M),repeat=4):
+  at=fields[tuple(j if j<L else 0 for j in x)];twice=[]
+  for r in range(4):
+   y=list(x);y[r]=(y[r]-1)%M
+   back=fields[tuple(j if j<L else 0 for j in y)]
+   twice.append([at[r][a]+back[r][a] for a in range(4)])
+  assert sum(v*v for row in twice for v in row)<=4*K2
+  if all(j>=L+1 for j in x):
+   assert twice==[[2*v for v in row] for row in T0];bulk+=1
+ check('ALL_CENTERED_COMPOSED_BULK_ROWS_AND_ROW_ENVELOPE',bulk==(M-L-1)**4
+       and Q(M**4-bulk,M**4)<=Q(4*(L+1),M))
+ xx=sp.symbols('xx',real=True);b=Q(1,10)
+ fine=sp.cos(2*sp.pi*xx);coarse=sp.cos(4*sp.pi*xx)
+ field_gap=sp.integrate((b*(fine-coarse))**2,(xx,0,Q(1,2)))+sp.integrate((b*(fine-1))**2,(xx,Q(1,2),1))
+ metric_gap=sp.integrate(((1+b*fine)**2-(1+b*coarse)**2)**2,(xx,0,Q(1,2)))+sp.integrate(((1+b*fine)**2-(1+b)**2)**2,(xx,Q(1,2),1))
+ fixed_field_gap=sp.integrate((b*(fine-1))**2,(xx,0,1))
+ fixed_metric_gap=sp.integrate(((1+b*fine)**2-(1+b)**2)**2,(xx,0,1))
+ check('EXACT_CURVED_FIELD_AND_METRIC_COMPOSED_DOUBLING_GAPS',field_gap==Q(1,80) and metric_gap==Q(1617,32000)
+       and fixed_field_gap==Q(3,200) and fixed_metric_gap==Q(4963,80000))
+ check('POINTWISE_FROBENIUS_CONTRACTION_IS_FALSE',4*Q(3,4)**2==Q(9,4)>1)
+ kk=sp.symbols('kk',positive=True);c=(kk+1/kk)/2;z=(kk-1/kk)/2
+ boost=sp.Matrix([[c,z],[z,c]]);eta2=sp.diag(1,-1);perturbed=boost+sp.eye(2)/kk
+ check('UNBOUNDED_RAW_FRAME_DEFEATS_METRIC_ONLY_STABILITY',
+       sp.simplify(boost*eta2*boost.T)==eta2
+       and sp.simplify(perturbed*eta2*perturbed.T)==(2+2/kk**2)*eta2)
  payload={'status':'PASS','input_head':INPUT_HEAD,'inputs_sha256':{p:sha(p) for p in INPUTS},
   'lean_receipt_sha256':sha(receipt_path),'published_probe_prerequisite':PROBE_PREREQUISITE,'checks':checks,'finite_ranks':ranks,'curved_exact_controls':trig,
   'existing_rank_result':'REUSED_A4D_STAGGERED_PRIMAL_DUAL_HODGE_CARRIER',
@@ -234,7 +276,13 @@ def main():
   'vacuum_owner_scalar':'-2400 pi^2 / 1331','vacuum_owner_spatial_einstein':'-8 pi^2 / 11',
   'literal_flux_root_family':'EXACT_FULL_ZERO_FIELD_ROOTS_WITH_NON_EINSTEIN_CENTERED_METRIC_LIMIT',
   'global_native_gr':'OPEN; metric/variation preparation is not action or refinement transfer',
-  'interlevel_admission':'NOT_ASSERTED; exact finite Euler roots do not by themselves satisfy a native interlevel field constraint',
+  'interlevel_admission':'Curved midpoint roots fail actual componentwise composed pullback; other native interlevel gates remain unproved',
+  'componentwise_refinement_smooth_limit_class':'EXACTLY_CONSTANT_LORENTZ_METRICS for exact raw componentwise pullback and fixed physical readout',
+  'approximate_refinement_bound':'L1 distance to constant G_L at most (2B+rho_L)rho_L; consumes bounded raw L2 preparation and vanishing composed L2 errors',
+  'curved_composed_field_gap_squared':'1/80',
+  'curved_composed_metric_gap_squared':'1617/32000',
+  'curved_fixed_coarse_then_fine_field_gap_squared':'3/200 at every fixed coarse level',
+  'curved_fixed_coarse_then_fine_metric_gap_squared':'4963/80000 at every fixed coarse level',
   'protected_exceptions':['Finite Nyquist targets are not all exactly liftable','Raw kernel is not declared physical gauge',
    'Pointwise metric submersion does not invert centering','Quantitative smooth bounds belong to declared preparation',
    'Other native actions, constrained sectors, connections, and original #310 terminal remain separate']}

@@ -794,7 +794,7 @@
         "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift.lean",
         "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_check.py"
       ],
-      "verification": "Seventeen new and two existing propositions compile with 53 transitive D0 pins; five actual types are printed. Full centering/Fourier range and nonlinear fiber arguments, O(h^2) smooth midpoint lifts and the explicit corrected curved limit are analytical. Eighty-eight exact controls and five false ledgers retain packing, half-action normalization, raw kernel, off-shell and interlevel boundaries. The native zero-field branch has physical half-contrast -(3*pi^2/50)h^(1/3)+O(h) versus exactly zero native contrast, with explicit corrected-action error at most pi^4 h^2/300; the original #310 terminal is unchanged.",
+      "verification": "Twenty-two new and two existing propositions compile with 53 transitive D0 pins; five actual types are printed. Full centering/Fourier range and nonlinear fiber arguments, O(h^2) smooth midpoint lifts and the explicit corrected curved limit are analytical. Ninety-three exact controls and seven false ledgers retain packing, half-action normalization, raw kernel, off-shell and interlevel boundaries. The native zero-field branch has physical half-contrast -(3*pi^2/50)h^(1/3)+O(h) versus exactly zero native contrast, with explicit corrected-action error at most pi^4 h^2/300; the original #310 terminal is unchanged. For the separately specified componentwise actual scalar pullback, the complete smooth nondegenerate metric-limit class is constant Lorentz metrics. The approximate extension consumes a uniform raw L2 bound and vanishing composed L2 defects; neither premise is inferred from contrast bounds. The curved midpoint family has squared composed field gap 1/80 and metric gap 1617/32000 despite vanishing adjacent errors.",
       "status": "PROVED_KINEMATIC_LIFT_AND_SCOPED_LEVELWISE_GATE_OBSTRUCTION_PENDING_CONTROL",
       "terminal_class": null,
       "required_terminal": "CONTROL_ACCEPTED_KINEMATIC_SCOPE_AND_STATED_STANDALONE_NOGO",
@@ -832,5 +832,5 @@
   "edge_source_input_head": "2cba34623e346eb75a7a9ae42a550e4a52178a54",
   "logdet_source_input_head": "32e7a1da7c191ef8567647d56d69995b475a84bb",
   "measure_refinement_input_head": "60ebc9b6832ee2c12d08b5b3fdb3d3725e6feba5",
-  "centered_metric_lift_input_head": "dae0ec13f9f885ff945c45613ae38becbc097d18"
+  "centered_metric_lift_input_head": "98269b4ffbd19338a2b162d4e14ea8c4ec08609a"
 }

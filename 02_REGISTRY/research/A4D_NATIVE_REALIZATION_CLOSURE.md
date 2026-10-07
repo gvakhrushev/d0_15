@@ -128,6 +128,13 @@ limit, zero native contrast and physical half-contrast
 class. Native interlevel admission is not proved or built into that gate.
 The constructive kinematics therefore does not complete the joint native
 metric-connection-matter or refinement/action/source arrows.
+For the separately specified componentwise actual scalar pullback, all
+smooth nondegenerate metric limits are constant Lorentz matrices; constant
+zero-field flux roots realize the whole stated limit class. The approximate
+extension requires bounded raw L2 preparation and vanishing composed L2
+defects. The curved midpoint family fails that compatibility with squared
+field gap 1/80 and metric gap 1617/32000 although adjacent errors vanish.
+This does not select that transition as a physical native gate.
 
 ## 1. State, action, variation and source are separate owners
 
@@ -252,7 +259,7 @@ a nonvacuous positive realization or as #310's required exact hostile family.
 | Actual coordinate-edge operator with direct nodal scalar-field readout | Scoped operator obstruction with a corrector exception | All mixed-coordinate bilinear pairings vanish for arbitrary conductances. An explicit curved metric has pairing `pi^2/20`. A complete periodic cell solution has O(h) field corrections but mixed response `-9/20`, so small field values alone do not extend this obstruction to prepared fields. |
 | Bare positive log-det action with bounded positive conductances and two specified flat preparation maps | Stronger scoped contrast obstruction | For either coupling sign and arbitrary normalization, vanishing flat contrasts force vanishing curved contrasts under the explicit uniform endpoint probe bound. Nonlinear and spatially oscillating preparation is allowed. Missing flat maps, signed weights, uncontrolled sensitivity and geometry-dependent subtractions remain outside the theorem. |
 | All positive point states of the actual coordinatewise Role-refinement diagram | Complete state class and scoped volume-recovery obstruction | Exact compatible states are arbitrary probability mixtures on countable histories. Arbitrary deterministic/shrinking positive local readouts have atomic limits, also with vanishing total composed TV error. Direct or nearby placement requires only fixed smooth doubling-test consistency to force delta_0; positive smooth metric volume has a fixed probe gap at least m/32. Adjacent smallness, nonlocal kernels, signed/field states and other diagrams remain separate. |
-| Actual centered Gram map and smooth symmetric variations | Constructive kinematic range and scoped full-gate obstruction | Midpoint samples lift smooth metrics and all ten probes with O(h^2) error. The actual standalone zero-field flux branch has non-Einstein curved limits and a nonzero physical versus zero native contrast. This class uses the levelwise free Euler equations; a stricter native refinement-compatible class requires its own admission proof. |
+| Actual centered Gram map and smooth symmetric variations | Constructive kinematic range and scoped full-gate obstruction | Midpoint samples lift smooth metrics and all ten probes with O(h^2) error. The actual standalone zero-field flux branch has non-Einstein curved limits and a nonzero physical versus zero native contrast. This class uses the levelwise free Euler equations; the literal componentwise scalar pullback has only constant smooth metric limits, also under bounded-raw/vanishing-composed-error preparation. Other native transition classes require their own admission proof. |
 | Native matter metric variation and joint Ward identity | OPEN | Existing total neutrality/zero-source/conditional Ward results do not construct this system |
 
 The smallest remaining first-stage obligation is a typed native physical

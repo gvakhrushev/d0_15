@@ -1,6 +1,7 @@
 # Native centered metric fibers, smooth variations and the literal vacuum boundary
 
-Input: `dae0ec13f9f885ff945c45613ae38becbc097d18`.
+Input: `98269b4ffbd19338a2b162d4e14ea8c4ec08609a`; initial metric-lift input
+`dae0ec13f9f885ff945c45613ae38becbc097d18`.
 Parent: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft #310.
 Status: constructive metric/variation part and exact stated finite-fiber
 criterion, pending CONTROL. **Native action transfer, independent matter,
@@ -331,7 +332,118 @@ readout or the original #310 fixed-source/raw-owner terminal. A connection
 variable is absent from this standalone action; it is not supplied by this
 metric construction.
 
-## 7. Remaining arrow and verification boundary
+## 7. Scoped completion of the componentwise refinement question
+
+The existing archive projection has a literal scalar pullback. Test that
+same pullback on each full raw solder component and retain the existing
+centered Gram readout. This specifies one candidate arrow; it does not
+assert that the core selected it as the physical interlevel gate. The
+[cochain proof](A4D_NATIVE_COCHAIN_REFINEMENT.md) binds the scalar lift to
+its actual matrix, and the [point-diagram proof](A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md)
+proves its actual compositions. The following theorem concerns raw fields,
+including signed components; it requires no positive point-state premise.
+
+Write E=eta+e (full raw solder), C_M its rowwise backward average,
+Gamma_M(E)=C_M(E) eta C_M(E)^T (literal centered metric). On X_M={0,...,M-1}^4,
+the actual composed scalar pullback from L is
+
+    (P_LM E_L)(x) = E_L(c_L(x)),
+    c_L(j)=j for j<L, and 0 otherwise, coordinatewise.
+
+This is not j mod L for a long jump. Compose the actual adjacent modulo maps.
+The formula holds also on the cofinal sizes L in 4N.
+
+### Exact compatibility: complete smooth limit class
+
+Fix L. At every site with all x_r>=L+1, both x and every x-r project to 0.
+Therefore Gamma_M(P_LM E_L)(x) equals the one constant matrix
+G_L=E_L(0) eta E_L(0)^T on at least (M-L-1)^4 sites (M>=L+2).
+The exceptional fraction is at most 4(L+1)/M. Row averaging preserves the
+row-envelope bound K_L^2=sum_r max_x sum_a |E_L(x)_ra|^2, and every
+metric has Frobenius norm at most K_L^2. (A maximum of the full sitewise
+Frobenius norm alone is not preserved with constant one by rowwise
+averaging from different sites.) Consequently
+
+    ||Gamma_M(P_LM E_L)-G_L||_L1 <= 8 K_L^2 (L+1)/M.
+
+Here grid values are extended constantly on physical cubes of side 1/M;
+all norms use normalized counting (unit volume). For an exactly compatible
+family, choose its first level L0: the above is its actual readout at every M.
+Every L1/smooth metric limit is the constant G_L0. Conversely every constant
+nondegenerate Lorentz metric Theta eta Theta^T is realized by E_M=Theta at
+all levels. In the literal standalone flux sector psi_M=0 these are actual
+native full Euler roots. Thus the smooth nondegenerate limit class for this
+fixed physical readout and exactly componentwise-refining sector is exactly
+the constant Lorentz metrics, not any genuinely curved metric.
+
+This class has nonempty root fibers. It does not admit the previously
+constructed curved levelwise family, and does not imply an obstruction for
+all other native field transitions, nonlocal readouts or transported frames.
+
+### Vanishing composed errors with bounded raw preparation
+
+Allow a family E_M with sup_M ||E_M||_L2 <= B and actual native composed
+defects limsup_(M->infty) ||E_M-P_LM E_L||_L2 <= rho_L, with rho_L->0 along
+cofinal L. Assume its literal centered metrics have an L1 limit g.
+Row centering is an L2 contraction. For any two raw fields E,F,
+
+    ||Gamma_M(E)-Gamma_M(F)||_L1
+      <= (||E||_L2+||F||_L2) ||E-F||_L2.
+
+Proof: expand A eta A^T-B eta B^T=(A-B)eta A^T+B eta(A-B)^T;
+use ||eta||op=1, the Frobenius product bound and Cauchy-Schwarz. For fixed L,
+F=P_LM E_L satisfies limsup ||F||_L2<=B+rho_L. The preceding exact fixed-L
+estimate gives Gamma_M(F)->G_L in L1. Thus
+
+    ||g-G_L||_L1 <= (2B+rho_L)rho_L,
+    ||g-integral g||_L1 <= 2(2B+rho_L)rho_L ->0.
+
+Therefore g is constant a.e., hence everywhere if smooth. No exact physical
+sampling, positive state, volume measure, Fourier cutoff or field equation
+was used. The raw L2 preparation bound is explicitly consumed; neither it
+nor composed field consistency is inferred from an Einstein contrast bound.
+An unbounded Lorentz frame can amplify a small raw perturbation, so the
+stability proof must not silently replace this premise by metric bounds.
+
+### The curved family rejects composed consistency
+
+For (18), the component E_BB=-s is independent of its B-midpoint shift.
+At M=2L its pulled coarse component has the limiting value
+-[1+b cos(4pi y_A)] below y_A=1/2 and -(1+b) above it. Direct integration,
+with b=1/10, gives
+
+    lim ||E_(2L),BB - (P_L,2L E_L)_BB||_L2^2 = 1/80,
+    lim ||Gamma_(2L)(E_(2L))_BB
+           - Gamma_(2L)(P_L,2L E_L)_BB||_L2^2 = 1617/32000.
+
+The sums converge to these integrals by the piecewise smooth Riemann-sum
+criterion. Both metric B rows are unaffected by A-row averaging. The weaker
+iterated limit used in the approximate theorem also fails: at every fixed
+coarse L, letting M tend to infinity gives squared field defect 3/200 and
+squared metric defect 4963/80000 in that same B component. Its pulled coarse
+value tends to -(1+b) off a shrinking slab. These constants are the full
+period integrals of [b(cos(2pi y_A)-1)]^2 and
+[(1+b cos(2pi y_A))^2-(1+b)^2]^2, respectively. Thus even the stated
+limsup-at-fixed-L premise cannot have rho_L tending to zero. The curved
+levelwise family fails this candidate's composed consistency. Its adjacent defects
+nevertheless tend to zero at O(1/L), by smooth periodic sampling, including
+the new wrap site. Adjacent smallness cannot replace composed consistency.
+
+A separate hostile control explains the raw bound in the approximate
+statement: a Lorentz boost E_K has constant Gram eta, but adding K^(-1)I
+to its two-dimensional boost block changes that Gram block to
+(2+2/K^2)eta. The raw perturbation tends to zero while the metric change
+does not. This is a counterexample to a metric-stability estimate based
+only on metric bounds, not a claimed refining family outside the theorem.
+
+Exact raw compatibility already forces constant limits without additional
+uniform bounds, since one fixed finite level determines the family. The
+approximate extension has the explicit L2 bound and composed-error
+hypotheses above. Native cochain, transported-frame, nonlinear transition
+and other physical readout classes are not exhausted by this theorem.
+The general native interlevel/action/source arrow remains OPEN.
+
+## 8. Remaining arrow and verification boundary
 
 The field-to-metric and smooth-variation parts are now constructive for the
 specified existing readout and smooth class. This removes an existence
@@ -342,7 +454,8 @@ refinement obstructions keep their exact scopes; midpoint sampling does
 not change the native transition law or prove commuting readouts.
 
 The actual centering kernel/adjoint, metric polynomial/tangent bindings,
-raw scaling and literal zero-field Euler controls are compiled where indicated in the
+raw scaling, literal zero-field Euler controls, actual L2 centering
+contraction and constant-bulk metric binding are compiled where indicated in the
 accompanying capsule. The all-size Fourier classification, nonlinear fiber
 criterion and quantitative smooth preparation/limit proofs above are
 analytical; exact finite checks do not substitute for them. The previous
@@ -351,16 +464,19 @@ source pins. The exact nonlinear fiber criterion retains the explicit
 Lorentz representative constraints; it does not claim to solve their
 feasibility for every arbitrary finite metric.
 
-The capsule checks 17 new propositions and two existing packed-metric/raw
-Nyquist propositions, with 53 transitive D0 source pins. Their 19 printed
+The capsule checks 22 new propositions and two existing packed-metric/raw
+Nyquist propositions, with 53 transitive D0 source pins. Their 24 printed
 axiom reports contain only propext, Classical.choice and Quot.sound.
 Five actual declaration types are printed. The older nonzero-H Nyquist
 declaration is only type-checked here; its separate native_decide evaluation
 dependency is not disguised as a new standard-axiom proof. The earlier full
 flux-gate derivation and the published physical-probe proof are separately
-pinned. The checker replays 88 grouped exact controls, including every
+pinned. The checker replays 93 grouped exact controls, including every
 metric slot, its factor-two packing, variable-background adjoint, midpoint
 samples, full Ricci/Einstein jet contraction, half-action sign and the
-explicit action bound for the corrected finite metrics.
-Five hostile ledgers falsify the inverse bound, Einstein source, action
-normalization, global GR status or interlevel compatibility; each is rejected.
+explicit action bound for the corrected finite metrics. Additional exact
+controls check every bulk row on 65,536 sites, actual composed projections,
+the two nonzero doubling gaps and the raw-frame/row-envelope exceptions.
+Seven hostile ledgers falsify the inverse bound, Einstein source, action
+normalization, global GR status, interlevel admission, the constant-limit
+class or its approximate-error hypotheses; each is rejected.

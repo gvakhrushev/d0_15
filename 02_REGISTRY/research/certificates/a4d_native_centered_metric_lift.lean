@@ -194,6 +194,56 @@ noncomputable section
   rw [flatStaggeredH_zero]
   simp
 
+theorem square_average_le (a b : ℝ) :
+    ((a+b)/2)^2 ≤ (a^2+b^2)/2 := by
+  nlinarith [sq_nonneg (a-b)]
+
+theorem actual_average_square_contraction (N : ℕ) (r : Role)
+    (f : ArchiveRolePhaseGroup N → ℝ) :
+    (∑ x, (backwardAverage N r f x)^2) ≤ ∑ x, (f x)^2 := by
+  have hs : (∑ x, (f (roleTranslateMinus N r x))^2) = ∑ x, (f x)^2 := by
+    simpa only [roleTranslateMinus_apply, sub_eq_add_neg] using
+      (sum_translate N (-roleStep N r) (fun x => (f x)^2))
+  calc
+    (∑ x, (backwardAverage N r f x)^2) ≤
+        ∑ x, ((f x)^2+(f (roleTranslateMinus N r x))^2)/2 := by
+      apply Finset.sum_le_sum
+      intro x _
+      exact square_average_le _ _
+    _ = ((∑ x, (f x)^2)+(∑ x, (f (roleTranslateMinus N r x))^2))/2 := by
+      rw [← Finset.sum_div, Finset.sum_add_distrib]
+    _ = ∑ x, (f x)^2 := by rw [hs]; ring
+
+theorem actual_centered_square_contraction (N : ℕ) (e : LocalCoframeField N) :
+    (∑ r : Role, ∑ a : Role, ∑ x, (centeredCoframeMatrix N e x r a)^2) ≤
+      ∑ r : Role, ∑ a : Role, ∑ x, (e x r a)^2 := by
+  apply Finset.sum_le_sum
+  intro r _
+  apply Finset.sum_le_sum
+  intro a _
+  exact actual_average_square_contraction N r (fun x => e x r a)
+
+theorem actual_raw_solder_bulk (N : ℕ) (e : LocalCoframeField N)
+    (x : ArchiveRolePhaseGroup N) (T : Matrix Role Role ℝ)
+    (hhere : rawSolderMatrix N e x = T)
+    (hback : ∀ r a, rawSolderMatrix N e (roleTranslateMinus N r x) r a = T r a) :
+    solderMatrix N e x = T := by
+  ext r a
+  have hh := congrFun (congrFun hhere r) a
+  have hb := hback r a
+  simp only [rawSolderMatrix] at hh hb
+  change roleLorentzMetric r a + (e x r a + e (roleTranslateMinus N r x) r a)/2 = T r a
+  linarith
+
+theorem actual_metric_bulk (N : ℕ) (e : LocalCoframeField N)
+    (x : ArchiveRolePhaseGroup N) (T : Matrix Role Role ℝ)
+    (hhere : rawSolderMatrix N e x = T)
+    (hback : ∀ r a, rawSolderMatrix N e (roleTranslateMinus N r x) r a = T r a) :
+    solderMetricMatrix N e x = T * roleLorentzMetric * T.transpose := by
+  unfold solderMetricMatrix
+  rw [actual_raw_solder_bulk N e x T hhere hback]
+
+
 #print axioms average_kernel_iff
 #print axioms actual_average_adjoint
 #print axioms actual_centered_add
@@ -220,4 +270,10 @@ noncomputable section
 #check D0.Geometry.centeredNyquist_nonzero_H_oneForm
 
 end
+#print axioms square_average_le
+#print axioms actual_average_square_contraction
+#print axioms actual_centered_square_contraction
+#print axioms actual_raw_solder_bulk
+#print axioms actual_metric_bulk
+
 end D0.Research.NativeCenteredMetricLift

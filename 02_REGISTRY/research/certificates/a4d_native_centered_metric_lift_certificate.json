@@ -1,5 +1,6 @@
 {
   "all_grid_uniform_inverse": "FALSE; grows linearly with L",
+  "approximate_refinement_bound": "L1 distance to constant G_L at most (2B+rho_L)rho_L; consumes bounded raw L2 preparation and vanishing composed L2 errors",
   "calibrated_contrast_gap_lower_bound": "3 pi^2 h^(1/3) / 100 for sufficiently small h",
   "checks": [
     "COMPILED_ACTUAL_CENTERING_METRIC_AND_ZERO_FIELD_BINDINGS",
@@ -89,11 +90,19 @@
     "FULL_RAW_SOLDER_SCALING_EQUALS_SQUARED_METRIC_SCALE",
     "NO_EXACT_LIFT_OF_DIAGONAL_NYQUIST_TARGET",
     "CENTERING_KERNEL_NOT_RAW_ZERO",
-    "OFF_SHELL_NONZERO_FLAT_FIELD_IS_REJECTED"
+    "OFF_SHELL_NONZERO_FLAT_FIELD_IS_REJECTED",
+    "ACTUAL_COMPOSED_FIELD_PROJECTIONS_AND_FALSE_MODULO_SHORTCUT",
+    "ALL_CENTERED_COMPOSED_BULK_ROWS_AND_ROW_ENVELOPE",
+    "EXACT_CURVED_FIELD_AND_METRIC_COMPOSED_DOUBLING_GAPS",
+    "POINTWISE_FROBENIUS_CONTRACTION_IS_FALSE",
+    "UNBOUNDED_RAW_FRAME_DEFEATS_METRIC_ONLY_STABILITY"
   ],
+  "componentwise_refinement_smooth_limit_class": "EXACTLY_CONSTANT_LORENTZ_METRICS for exact raw componentwise pullback and fixed physical readout",
   "corrected_metric_owner_action_absolute_lower_bound": "27 pi^2 / 550",
   "corrected_metric_owner_action_error_bound": "pi^4 h^2 / 300",
   "corrected_metric_periodic_owner_action": "-3 integral s (s')^2 / s_h",
+  "curved_composed_field_gap_squared": "1/80",
+  "curved_composed_metric_gap_squared": "1617/32000",
   "curved_exact_controls": {
     "12": {
       "corrected_component": "Q_AA=s_h^2",
@@ -124,6 +133,8 @@
       "other_diagonal": "-s^2"
     }
   },
+  "curved_fixed_coarse_then_fine_field_gap_squared": "3/200 at every fixed coarse level",
+  "curved_fixed_coarse_then_fine_metric_gap_squared": "4963/80000 at every fixed coarse level",
   "curved_metric_error_bound": "11 pi^2 h^2 / 100",
   "even_least_norm_inverse": "1 / (sqrt(2) sin(pi/L))",
   "existing_rank_result": "REUSED_A4D_STAGGERED_PRIMAL_DUAL_HODGE_CARRIER",
@@ -205,14 +216,17 @@
     }
   },
   "global_native_gr": "OPEN; metric/variation preparation is not action or refinement transfer",
-  "input_head": "dae0ec13f9f885ff945c45613ae38becbc097d18",
+  "input_head": "98269b4ffbd19338a2b162d4e14ea8c4ec08609a",
   "inputs_sha256": {
     "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md": "a8ca4517ee01fb4460ed266cd3864896a6ba6b1e47345f685a51f00f838e5459",
     "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md": "12c28b87c188492256b6bc2e435e642ff2b2deec5d6b88a81923f693a96f9a36",
+    "02_REGISTRY/research/A4D_NATIVE_MEASURE_REFINEMENT_BOUNDARY.md": "cf5c9910bfea340f3ebe90c015886d28aa44db0799a8490ec9d0dad6029eff1c",
     "02_REGISTRY/research/A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md": "b4224373b6e30632075b612feea65e2a585430d13b40742646e6d3b80ebc9e93",
     "02_REGISTRY/research/A4D_STAGGERED_PRIMAL_DUAL_HODGE_CARRIER.md": "68f7431c481e23a506f5ae5755916a73dc56917368485716bccfe133cff84b14",
     "02_REGISTRY/research/certificates/a4d_native_flux_gate.lean": "1b29ca4a4e8463771d3b4f4b391365f17d7f28bd81ec6bc4f0c4b1f6e4a0e3fc",
     "02_REGISTRY/research/certificates/a4d_native_flux_gate_results.json": "a8c1efd9ecce9ccfd3865522df4e61ce96cb31c2c79dedd23d0b69e2b8fb8172",
+    "02_REGISTRY/research/certificates/a4d_native_measure_refinement.lean": "14a9d0a561297f801aee679e6de95373b62fa8bb0d7bd80978d77c7c7f6943d9",
+    "02_REGISTRY/research/certificates/a4d_native_measure_refinement_results.json": "8da2eef43e5eedffb6bd4af163e7b5a29896954a12a35dddf1e7f686a51a7957",
     "03_FORMALIZATION/D0/Geometry/A4DCoframeParentConstraint.lean": "23bbc1405ae48cbcc1b73f5472140e26397e5508fd7c980fae5fe562f5f7e537",
     "03_FORMALIZATION/D0/Geometry/A4DDiscreteEnergyKernel.lean": "e5adf60c7d97b700cc276aab736667bc1d8eac078f15fa84206feb6c04c4f9a6",
     "03_FORMALIZATION/D0/Geometry/A4DMetricStressInterface.lean": "448778b98cfee2a6b017b62a68f9c9fbb09b0c2b09c757dfa3926ac0a61a8adf",
@@ -220,8 +234,8 @@
     "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
     "03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2"
   },
-  "interlevel_admission": "NOT_ASSERTED; exact finite Euler roots do not by themselves satisfy a native interlevel field constraint",
-  "lean_receipt_sha256": "7d93b86930e783a020fba142d31416200ba1e038fc5b5e63660d30f1ee83a6e8",
+  "interlevel_admission": "Curved midpoint roots fail actual componentwise composed pullback; other native interlevel gates remain unproved",
+  "lean_receipt_sha256": "86ee5a209cf6c2ea7146fa24a6cf6bc22f198e3b445c64edf46662a220bc8bf8",
   "literal_flux_root_family": "EXACT_FULL_ZERO_FIELD_ROOTS_WITH_NON_EINSTEIN_CENTERED_METRIC_LIMIT",
   "native_half_contrast": "0",
   "nonlinear_fiber": "Lorentz representatives satisfying literal row Nyquist constraints, plus full raw centering kernel",
@@ -237,7 +251,7 @@
   "published_probe_prerequisite": {
     "path": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
     "sha256": "77079fb2fa8da001ca259ebef432ae7001a15d18f73cde04b8ba3380b9b1cbcf",
-    "source_head": "dae0ec13f9f885ff945c45613ae38becbc097d18"
+    "source_head": "98269b4ffbd19338a2b162d4e14ea8c4ec08609a"
   },
   "smooth_metric_and_variation_error": "O_V(h^2) via row midpoint preparation, without a frequency selector",
   "status": "PASS",
