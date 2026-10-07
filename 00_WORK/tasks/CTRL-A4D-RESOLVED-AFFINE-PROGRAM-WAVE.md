@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `fc12fc7800eff1a0fb74d73c9d920128cbc9450f` through
+#310 at `59fef13f804d4c5706ef86fe6df01a53f214c565` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -69,7 +69,7 @@ frame obstruction, preserving arbitrary refinement-dependent collapsing
 functions as an exception to broader asymptotic claims. These results add
 no native action or physical on-shell gate.
 The receipt preserves the previous input head
-fc12fc7800eff1a0fb74d73c9d920128cbc9450f. The intake also includes the literal vector/source and
+59fef13f804d4c5706ef86fe6df01a53f214c565. The intake also includes the literal vector/source and
 mixed-parent/source classifications with their exact range, kernel and
 residual exceptions, plus the actual verification/process and phase-refinement
 classification. Formal verifiability and the existing positive class-level
@@ -85,9 +85,9 @@ real scalar variation and profile nonselection, the full convex-profile
 contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
-propositions and 91 controls pin 33 transitive sources. The expanded 93-artifact slice
-has 252 verified distinct artifact/input hashes; the gravity graph has
-40 scoped nodes and is not a global ambiguity census. Independent matter,
+propositions and 91 controls pin 33 transitive sources. The expanded 99-artifact slice
+has 262 verified distinct artifact/input hashes; the gravity graph has
+41 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
 
 The positive point-state/refinement follow-up classifies all compatible
@@ -139,3 +139,5 @@ connection or interlevel constraint is assumed satisfied. Near-identity
 transport preserves the previously specified scalar/graded refinement
 obstructions, with explicit bounded-raw Gram error (Ch+C^2h^2/4)B^2.
 No general approximate graded or concentration result is claimed.
+
+The connection-action follow-up adds: The actual supplied Killing, matrix Yang-Mills and seam action definitions are bound to their propositions. Every coframe-blind scalar factorization admitting the displayed transported homothetic probes fails O(h) calibrated contrast transfer: native zero versus -3*pi^2*h^(1/3)/50+O(h^(4/3)). The specified matrix-action/odd-plaquette binding has exact identity-link full levelwise roots with arbitrary coframe, a curved non-Einstein metric limit and a physical Euler row/h tending to -2*pi/5; additional native/interlevel constraints are excluded from that scope. All Lorentz-invariant symmetric quadratic forms are classified; every nonzero coefficient has signature (3,3). Continuity and Lorentz invariance force arbitrary connection-only scalars, including nonlocal ones, to take their flat value on all common-null-generator link fields. Stationarity needs an extra differentiable global-minimum premise. The existing indefinite action instead has complete full criticality on that sector exactly at zero scalar curl, by E=-2 Tr(NG) D^T D a; transverse variations cannot be omitted. Twenty compiled propositions, 43 source pins, 84 exact controls and eight false scope ledgers. No action or gate is selected; native positive GR, source, physical Ward, refinement, recovery and original #310/#202/#317 remain OPEN.

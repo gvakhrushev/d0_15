@@ -3,15 +3,15 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`59fef13f804d4c5706ef86fe6df01a53f214c565`, following
-`fc12fc7800eff1a0fb74d73c9d920128cbc9450f`.
+`2d3f5fff0273ae5c028c07343a72b27b54374602`, following
+`59fef13f804d4c5706ef86fe6df01a53f214c565`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-ninety-three byte-identical artifacts, with source Git blobs and SHA256 hashes:
+ninety-nine byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -72,6 +72,10 @@ ninety-three byte-identical artifacts, with source Git blobs and SHA256 hashes:
   exact checker/ledger and compiled native-link/periodic-recurrence/Cayley
   capsule with output and transitive-source receipt.
 
+* [Connection actions, homothetic contrast and Lorentz gate boundaries](A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md),
+  exact checker/ledger and compiled actual-action/variation/continuity
+  capsule with output and transitive-source receipt.
+
 The published source head and new proof/capsule blobs were independently verified
 against GitHub before this intake commit.
 The 103 transitive D0 source pins of the diagnostic and the 66 pins of the
@@ -84,8 +88,8 @@ the 32 pins of the verification/refinement capsule, and the 35 pins of
 the actual local-source quotient capsule, and the 33 pins of the nonlinear
 log-det capsule, the 25 pins of the positive-state/refinement capsule,
 the 53 pins of the centered-metric capsule, and the 50 pins of the
-transported-connection capsule,
-the registry snapshot and all fifteen native certificates' input hashes match
+transported-connection capsule, and the 43 pins of the connection-action
+capsule, the registry snapshot and all sixteen native certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -365,15 +369,35 @@ local file or an implicitly merged scientific parent.
     cokernel 4L^3+6L^2 on even grids. Smooth approximate lifts do not
     imply arbitrary finite target feasibility.
 
+26. **Existing connection actions:** for every explicitly coframe-blind
+    factorization with the admitted transported homothetic probes, native
+    contrast is zero while the physical value is
+    -3*pi^2*h^(1/3)/50+O(h^(4/3)). Coefficients and nonlinear Phi do not
+    repair the gap. Additional coframe dependence and owned constraints
+    are protected exceptions. The specifically tested matrix-action/odd
+    curvature binding has exact identity-link full levelwise roots with
+    arbitrary raw solder and curved non-Einstein metric limits. Its
+    physical row/h tends to -2*pi/5, so native criticality does not imply
+    O(h^2) physical preparation in that class. Every nonzero invariant
+    symmetric quadratic curvature form has signature (3,3); a fixed
+    positive Frobenius replacement fails Lorentz invariance. All continuous
+    Lorentz-invariant connection-only scalars have their flat value on
+    the common-null-generator link sector, including curved fields.
+    Only an extra differentiable global-minimum premise yields criticality.
+    The actual indefinite matrix action has a different full gate on
+    that entire sector: E=-2 Tr(NG) D^T D a, hence zero scalar curl.
+    Transverse variations and flat global holonomies are retained. This
+    is not a classification of all Lorentz link roots or the full D0 core.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The ninety-three imported files
+labels, Lean owners and BOOK text are unchanged. The ninety-nine imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The fifteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94 and 162 exact controls without
+The sixteen self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 45, 76, 59, 91, 92, 94, 162 and 84 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -449,7 +473,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 93 artifact blobs and 252 distinct artifact/input hashes
+are rejected. All 99 artifact blobs and 262 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -470,6 +494,13 @@ thirteen hostile ledgers retain orientation, finite feasibility, inverse
 loss, all variation directions and every action/on-shell/refinement/Ward
 boundary, including the precisely stated spectator-link flux class.
 The original 24x64-row/ten-metric physical certificate was replayed unchanged.
+The connection-action follow-up compiles twenty propositions with 43
+transitive D0 source pins and prints the actual supplied-input/positivity
+and Bianchi-named propositions. Its 84 exact controls include all ten
+Gram slots, all 24 directions, 2304 full finite factor tangents, complete
+rank-19 quadratic classification, Lorentz contraction and complete null
+sector Euler identities. Eight false scope ledgers are rejected. Smooth
+and all-size analytic claims are not presented as compiled theorems.
 One final **actual** `D0.All` compilation completed 4,545 jobs in
 372.8 seconds. This formalization tree is byte-identical to the current
 intake's formalization tree; a skipped Draft/unchanged Lean workflow is
@@ -499,6 +530,7 @@ python3 02_REGISTRY/research/certificates/a4d_native_logdet_source_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_measure_refinement_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_check.py
 python3 02_REGISTRY/research/certificates/a4d_native_transported_connection_check.py
+python3 02_REGISTRY/research/certificates/a4d_native_connection_action_check.py
 ```
 
 ## Preserved original obligations
