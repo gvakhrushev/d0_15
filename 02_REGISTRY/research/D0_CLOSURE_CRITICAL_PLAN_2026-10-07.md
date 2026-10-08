@@ -727,7 +727,7 @@ law и реальное spectral refinement, решающие полученно
 fine solutions, искривлённые решения, soundness/recovery и ОТО открыты.
 
 
-## Собственная цепочка источника и basis Ward — текущий шаг
+## Собственная цепочка источника и basis Ward — предыдущий шаг
 
 Источник: #310 на `45f19d1399829b284f15b41899b49ee9961ea394`, вход `e74df7d999ae04a667d4de08625b8ec77bcdab5a`.
 [Доказательство §6.7](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) связывает
@@ -760,3 +760,33 @@ Laplacian. Физические подготовка/readout, равномерн
 негейджевые null направления, local metric/matter Ward, контраст, curved
 roots, soundness/recovery, физические ограничения и ОТО остаются открытыми.
 Новый action, trace, temperature rule, selector или источник не выбирается.
+
+
+## Спектр двух собственных историй — текущий шаг
+
+Источник: #310 на `915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`, вход `45f19d1399829b284f15b41899b49ee9961ea394`.
+[Доказательство §6.8](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) исчерпывает
+конечный класс spectral operators, сохраняющих оба J/GJ intertwining:
+он равен буквальному удвоению. Полный дефект восстанавливает изменение
+сцены, а второй дефект равен scene/tick commutator при естественном J.
+Passivity не выведена из M1; этот класс не объявляется всем ядром.
+
+Условные настоящие thermal/bootstrap derivatives и точная первая вариация
+дают проверку недостающего spectral-memory source. Совпадение операторов
+в точке не определяет источник. Response-null дефекты сохраняются.
+Полный self-adjoint one-history класс и количественные нижние оценки
+размера дефекта доказаны аналитически; их общий статус не подменяется
+счётчиком Lean. 215 propositions, 17 D0 pins, 670 exact controls;
+104 ложных scope и 77 ложных exact ledger отвергнуты настоящим checker.
+CONTROL содержит 198 дословных source artifacts и 416 verified
+artifact/input hash versions (323 current input versions).
+Исторические proof slices, 44 полных контракта/статуса графа и terminal
+сохранены. Current-head CI и CONTROL review требуются отдельно.
+
+Следующая одна стрелка — собственный совместный primitive/history domain,
+полные Delta/P/word variations и уточнение. Из них вычислить оба spectral
+history defects и их jets, проверить fineHeat=2*heat на полном tangent
+image и вывести настоящие native on-shell equations. Дефект не подгоняется;
+новый action, trace, temperature, selector, coupling или postulate не вводится.
+Физические подготовка/операции/readout, uniform bounds, local source/Ward,
+контраст, curved roots, soundness/recovery, ограничения и ОТО открыты.

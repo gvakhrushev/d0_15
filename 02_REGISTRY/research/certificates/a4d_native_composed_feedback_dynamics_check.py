@@ -8,7 +8,7 @@ from pathlib import Path
 
 import sympy as s
 
-HEAD = 'e74df7d999ae04a667d4de08625b8ec77bcdab5a'
+HEAD = '45f19d1399829b284f15b41899b49ee9961ea394'
 BASE = '02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics'
 PROOF = '02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md'
 SCOPE = {
@@ -78,6 +78,12 @@ SCOPE = {
     'general_matrix_heat_and_Jacobi_derivatives_fully_Lean_formalized': False,
     'whole_basis_Ward_genuine_Lean_formalized': True,
     'basis_Ward_identified_with_physical_metric_matter_Ward': False,
+    'both_native_history_intertwining_spectral_class_complete_Lean_formalized': True,
+    'actual_history_scene_commutator_defect_Lean_formalized': True,
+    'doubled_heat_source_defect_contraction_Lean_formalized': True,
+    'two_history_stationarity_derived_as_native_admission_gate': False,
+    'scene_passivity_under_golden_history_forced_by_M1': False,
+    'all_native_refinements_exhausted_by_two_history_spectral_naturality': False,
     'source_port_polynomials_admit_arbitrary_spectrum': False,
     'arbitrary_primitive_matrix_curve_physically_admitted': False,
     'quotient_degree_squared_identified_with_scene_Laplacian': False,
@@ -137,7 +143,7 @@ def main():
     check('CAPSULE_AND_TRANSCRIPT_FRESH', receipt['capsule_sha256'] == sha(BASE+'.lean')
           and receipt['output_sha256'] == sha(BASE+'_output.txt'))
     check('ALL_ACTUAL_PROPOSITIONS_AND_DEPENDENCIES', declarations == receipt['declarations']
-          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 199)
+          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 215)
     check('NO_PLACEHOLDER_OR_COMPILER_ERROR', 'sorryAx' not in transcript
           and re.search(r'\berror(?:\(|:)', transcript) is None
           and re.search(r'\b(sorry|admit|axiom)\b', lean) is None)
@@ -172,6 +178,10 @@ def main():
     check('ACTUAL_MATRIX_EXPONENTIAL_AND_WHOLE_WARD_PROPOSITIONS', all(x in transcript for x in
           ['matrixHeat', 'matrixBootstrap', 'sourceConj', 'movedMetric', 'movedInverseMetric',
            'actual_matrix_heat_derivative', 'genuine_whole_basis_ward']))
+    check('ACTUAL_TWO_HISTORY_SCENE_AND_FIRST_JET_PROPOSITIONS', all(x in transcript for x in
+          ['historySpectralDefect', 'nativePreparationFrameInverse',
+           'two_history_spectral_naturality_iff', 'second_history_defect_is_commutator',
+           'genuine_two_history_bootstrap_source', 'fine_thermal_source_defect_identity']))
     pins = dict(receipt['transitive_d0_source_sha256'])
     pins.update(receipt['toolchain_input_sha256'])
     for path, digest in pins.items():
@@ -899,6 +909,87 @@ def main():
     jacobi_source = s.trace(N0.inv()*Vfeedback)/2
     check('SOURCE_FEEDBACK_JACOBI_ACTUAL_DETERMINANT_JET', s.cancel(actual_logdet_jet-jacobi_source) == 0)
 
+    # The same owned J and next history GJ resolve the whole spectral layer.
+    spectral_history_cases = []
+    for dim in (1,2,3):
+        ii, oo = s.eye(dim), s.zeros(dim)
+        gg = s.BlockMatrix([[a*ii,-p*ii],[p*ii,a*ii]]).as_explicit()
+        tt = s.BlockMatrix([[ii,a*ii],[oo,p*ii]]).as_explicit()
+        tti = s.BlockMatrix([[ii,-a/p*ii],[oo,ii/p]]).as_explicit()
+        bb, bbi = gg*tt, tti*gg.T
+        jj = s.Matrix.vstack(a*ii,p*ii)
+        jj1 = gg*jj
+        dd = s.diag(*range(dim))
+        archive = dd+ii
+        passive = lift(dd)
+        first_only = (gg*s.diag(dd,archive)*gg.T).applyfunc(golden)
+        check('HISTORY_SPECTRAL_FRAME_BOTH_INVERSES_'+str(dim),
+              gzero(bb*bbi-s.eye(2*dim)) and gzero(bbi*bb-s.eye(2*dim)))
+        check('HISTORY_SPECTRAL_FRAME_ACTUAL_COLUMNS_'+str(dim),
+              gzero(bb[:,0:dim]-jj) and gzero(bb[:,dim:]-jj1))
+        check('HISTORY_SPECTRAL_COMPLETE_PASSIVE_INTERTWINING_'+str(dim),
+              gzero(passive*jj-jj*dd) and gzero(passive*jj1-jj1*dd))
+        check('HISTORY_SPECTRAL_ONE_PREPARATION_DOES_NOT_FIX_SCENE_'+str(dim),
+              gzero(first_only*jj-jj*dd) and not gzero(first_only-passive))
+        e0,e1 = first_only*jj-jj*dd, first_only*jj1-jj1*dd
+        defect = first_only*bb-bb*passive
+        check('HISTORY_SPECTRAL_SECOND_PREPARATION_DETECTS_COMPLEMENT_'+str(dim),
+              not gzero(e1) and gzero(defect-s.Matrix.hstack(e0,e1)))
+        check('HISTORY_SPECTRAL_DEFECT_RECONSTRUCTS_FULL_SCENE_'+str(dim),
+              gzero(defect*bbi-(first_only-passive)))
+        check('HISTORY_SPECTRAL_SECOND_DEFECT_IS_ACTUAL_COMMUTATOR_'+str(dim),
+              gzero(e1-(first_only*gg-gg*first_only)*jj))
+        check('HISTORY_SPECTRAL_NONPASSIVE_COMPLETE_ONE_HISTORY_CLASS_'+str(dim),
+              gzero(first_only.T-first_only) and not gzero(first_only*gg-gg*first_only))
+        # Generic arbitrary full matrices also obey the complete reconstruction.
+        generic = s.Matrix(2*dim,2*dim,lambda i,j:s.Rational((i+2*j)%7,5))
+        generic_defect = generic*bb-bb*passive
+        check('HISTORY_SPECTRAL_ARBITRARY_FULL_OPERATOR_DEFECT_'+str(dim),
+              gzero(generic_defect*bbi-(generic-passive)))
+        rr = s.diag(*[s.Rational(i+1,dim*(dim+1)//2) for i in range(dim)])
+        ddd = s.diag(*[i+1 for i in range(dim)])
+        ev = s.diag(*range(2*dim))
+        dfine = lift(ddd)+ev
+        coarse_covector = -s.trace(rr*ddd)
+        fine_covector = -s.trace(lift(rr)*dfine)/2
+        check('HISTORY_SPECTRAL_GIBBS_DEFECT_CONTRACTION_'+str(dim),
+              s.cancel(fine_covector-coarse_covector+s.trace(lift(rr)*ev)/2)==0)
+        cross_null = s.BlockMatrix([[oo,ii],[ii,oo]]).as_explicit()
+        check('HISTORY_SPECTRAL_NONZERO_RESPONSE_NULL_DEFECT_RETAINED_'+str(dim),
+              cross_null != s.zeros(2*dim) and s.trace(lift(rr)*cross_null)==0)
+        check('HISTORY_SPECTRAL_FALSE_NORMALIZER_OMISSION_REJECTED_'+str(dim),
+              -s.trace(lift(rr)*lift(ddd))==2*coarse_covector and coarse_covector != 0)
+        # At t=0 both intertwinings hold, but their jets need not hold.
+        dcurve = dd+t*ddd
+        fullcurve = (gg*s.diag(dcurve,dcurve+t*ii)*gg.T).applyfunc(golden)
+        historycurve = fullcurve*bb-bb*lift(dcurve)
+        check('HISTORY_SPECTRAL_POINT_COMPATIBILITY_DOES_NOT_FIX_SOURCE_'+str(dim),
+              gzero(historycurve.subs(t,0)) and not gzero(historycurve.diff(t).subs(t,0)))
+        fine_jet = fullcurve.diff(t).subs(t,0)
+        check('HISTORY_SPECTRAL_POINT_DEFECT_GENUINE_FIRST_JET_RECONSTRUCTION_'+str(dim),
+              gzero(historycurve.diff(t).subs(t,0)*bbi-(fine_jet-lift(ddd))))
+        partition_coarse = sum(s.exp(-beta*(i+t*(i+1))) for i in range(dim))
+        partition_archive = sum(s.exp(-beta*(i+t*(i+2))) for i in range(dim))
+        hcoarse = s.diff(s.log(partition_coarse)/beta,t).subs(t,0)
+        hfine = s.diff(s.log(partition_coarse+partition_archive)/beta,t).subs(t,0)
+        check('HISTORY_SPECTRAL_POINT_GENUINE_THERMAL_SOURCE_DIFFERS_'+str(dim),
+              s.simplify(hfine-hcoarse+s.Rational(1,2))==0)
+        spectral_history_cases.append(dim)
+
+    # Actual 33-coordinate scene profile, with its zero mode and multiplicities.
+    profile = [(0,1),(20,12),(22,10),(24,8),(33,2)]
+    moment_poly = sum(mult*level*t**level for level,mult in profile)
+    check('HISTORY_SPECTRAL_ACTUAL_SCENE_GIBBS_NORMALIZATION33',
+          sum(mult for _,mult in profile)==33 and
+          s.expand(sum(mult*t**level for level,mult in profile)-heat_poly)==0 and
+          s.expand(moment_poly-t*s.diff(heat_poly,t))==0)
+    check('HISTORY_SPECTRAL_SCENE_ZERO_MODE_RETAINED_IN_SCALE_JET',
+          profile[0]==(0,1) and moment_poly.subs(t,0)==0 and heat_poly.subs(t,0)==1)
+    check('HISTORY_SPECTRAL_COARSE_TANGENT_DOUBLING_CONTRACTION_NECESSARY',
+          s.solve(s.Eq(hs- s.Rational(1,2)*s.Symbol('trace_defect'),2*hs),
+                  s.Symbol('trace_defect'))==[-2*hs])
+
+
     payload = {
         'status': 'PASS', 'owner_input_head': HEAD, 'scope': SCOPE, 'checks': checks,
         'input_sha256': pins, 'proof_sha256': sha(PROOF),
@@ -971,6 +1062,14 @@ def main():
             'false_frozen_normalizer_response': '9/16',
             'false_frozen_pairing_source': str(false_frame_source),
             'noncommutative_power_jet_controls': power_cases,
+            'two_history_passive_spectral_class': 'DeltaPlus=L(Delta) iff both J and GJ intertwine',
+            'full_history_spectral_defect_reconstruction': 'DeltaPlus-L(Delta)=EH*B^(-1)',
+            'second_history_scene_defect': 'e1=[DeltaPlus,G]J when e0=0',
+            'spectral_history_fixture_dimensions': spectral_history_cases,
+            'required_spectral_jet_contraction': 'trace(L(rho)*EV)=-2*heat',
+            'pointwise_history_compatibility_implies_source_compatibility': False,
+            'nonzero_thermal_response_null_defects_retained': True,
+            'native_spectral_passivity_forced_by_M1': False,
             'general_heat_Jacobi_formal_status': 'ANALYTIC_PROOF; finite jets and declared moving spectral factorization compiled',
 
         },

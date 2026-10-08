@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`45f19d1399829b284f15b41899b49ee9961ea394`, following
-`e74df7d999ae04a667d4de08625b8ec77bcdab5a`.
+`915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`, following
+`45f19d1399829b284f15b41899b49ee9961ea394`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -47,8 +47,8 @@ All-size analytic bounds quantify action error with the required rank,
 resolvent, preparation and full-word factors. Uniform native O(h) bounds
 and metric/link variation maps remain to be derived.
 
-This packet now has 199 compiled propositions, seventeen transitive D0 pins and
-605 exact controls; 98 false scope and 69 false exact ledgers are rejected.
+This packet now has 215 compiled propositions, seventeen transitive D0 pins and
+670 exact controls; 104 false scope and 77 false exact ledgers are rejected.
 Two owned native preparations J and GJ span the complete new factor.
 All four signed cross-return blocks uniquely reconstruct every full operator,
 its literal cylinder action and genuine source, including the prior hidden
@@ -89,13 +89,24 @@ genuine basis Ward. Exact hostile controls reject the false sources obtained
 by freezing normalization or pairing. Physical metric/matter Ward, native
 on-shell equations and complete physical tangent admission remain open.
 
+The two actual histories J and GJ now classify the whole passive spectral
+operator class: preserving both intertwinings forces literal replication.
+The complete history defect reconstructs every spectral change. With the
+first intertwining, the second defect is the scene/golden-tick commutator.
+Conditional genuine thermal/bootstrap derivatives and exact first-jet
+contractions show what spectral-memory response must be checked. Pointwise
+operator compatibility does not imply source compatibility. Nonzero
+response-null defects are retained. Passivity is not derived from M1,
+and this declared finite class does not exhaust native physical refinements.
+
 The next single G0b input is the owned joint primitive state/tangent and full
-scene spectral refinement law, determining Delta and chronological stages
-from the same admitted history data. Use the derived constituent source
-chain and test fineHeat=2*heat on that actual tangent image. The full scene
-is distinct from the zone degree quotient. Physical pair preparation,
-actuation/readout and uniform native error bounds retain their owners.
-No new action, thermal trace, temperature law, selector or fitted source is used.
+scene refinement law. Compute both actual spectral history defects and
+first jets from the same history data that determine P and every retained
+word stage; evaluate the required doubled thermal covector on the complete
+admitted tangent image, then derive actual native on-shell equations.
+Physical preparation, actuation/readout and uniform error bounds keep their
+owners. No fitted spectral defect, new action, trace, temperature law,
+selector, source or physical postulate replaces that arrow.
 
 The [regular time-field intertwiner classification](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
 is included with its 20 compiled propositions and 163 exact controls as a
@@ -105,10 +116,9 @@ remain unchanged. Supported D0 owners, claims, books and task lifecycles
 are unchanged. All 416 current artifact/input hash versions match (323 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
-The preceding source `e74df7d9` passed CI `37791774212`; preceding
-CONTROL `c7977e38` passed CI `37792745139`. The new source and CONTROL
-heads require their own CI and CONTROL review; previous successful heads
-do not substitute for current checks.
+The preceding CONTROL `9e4705b8` passed CI `37813768322`.
+The new source and CONTROL heads require their own CI and CONTROL review;
+previous successful heads do not substitute for current checks.
 
 ## Enumerated artifact slice
 

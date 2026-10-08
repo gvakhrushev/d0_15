@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "a2d017c276fbd11ab56de6b058950f4c44300ded0666aa5c719638a76ef1094e",
-      "source_blob": "a9b67f6cf014c5ef1e1320829837e7bcfdeeaf88"
+      "sha256": "eef57222c765b35dd491789c040d0ea11b63457e538f515d6fadd7edd26a2cad",
+      "source_blob": "4e9c07988bcdc64509f5b349f54d3092d1975270"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "b625b7356fb3e992f6838b68cc55b1be0c0b35b66325c1f68842e62fb35de509",
-      "source_blob": "4d9ab2807842b5a898426558871cdfd2397290bf"
+      "sha256": "4561eac0f36d896d8e73a56cdd630e7749a51a43ebabf72bd7389d1764b4ce24",
+      "source_blob": "4ab66334eb77abf72cbeb1820d9e9aaf3dbe0fe2"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -909,8 +909,8 @@
     },
     {
       "path": "02_REGISTRY/research/D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md",
-      "sha256": "cc55e714db64aa78a3bab43604a9cd136b8b2507d10552750e43ec4a936e931a",
-      "source_blob": "4ad88971c49b5944a1d2bbb1cf1def4bc14171ce"
+      "sha256": "f4b3ddc41f07cdd255a155e4bdee4c14f0137098cca88a368635487eb7a2a213",
+      "source_blob": "f3ed00873a4972bb97b676f749461edbfbb769b1"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent.lean",
@@ -919,8 +919,8 @@
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_certificate.json",
-      "sha256": "b49be12a8abb147653f43ab170c5a1d8a05a1fdd1a78edbc1c70495c891f8842",
-      "source_blob": "0f42bedb8f273ed6190bd0aec7ae096aeaee000c"
+      "sha256": "5fb1e7ad21515b68de8d947a4fb80e395a9b80075c86fa35665eae8ab4613847",
+      "source_blob": "2c0096982fc023bfb896f99a82e3d3b5960be085"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_check.py",
@@ -964,33 +964,33 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
-      "sha256": "3c1ac70adb183d00564cd0d9567a1fb9edc9a50390547f6177797ddc70ddad36",
-      "source_blob": "e079ad6754b0c61e126214f6e1aa69c8cc031382"
+      "sha256": "d41aad51b9072c7a0b8415ed7baa7bce06c24110e7082137ee8c588eae419fcd",
+      "source_blob": "bd06bf12a7142d591737227a219bff043684afb7"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean",
-      "sha256": "6fad04ecc784e208b565140cc202df182c58e6d181f097637517857c4b4f5e34",
-      "source_blob": "9e335401669a80948f50a0009bab5ad063dbe8c0"
+      "sha256": "ad8176fa236ae59110bf6df96d7263f4902dfb84d0f177dc59e917a2a81c78c9",
+      "source_blob": "02ff197e419c5f76799c8daca920e34d0fdee704"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_certificate.json",
-      "sha256": "ddeac2dd3ed9ac33ad46f31db1032d61788debee537b4a97c5a8eff2c73af57e",
-      "source_blob": "5bc36aa29d6befc1f2a62acbd59405d4f5437783"
+      "sha256": "c189971f5e1d3590a0bfeda585855ca6adb86768bce3ddbba5dbdc3d00dc9fb0",
+      "source_blob": "507c22b9fb95894366dfb912745eceb49bec39a8"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_check.py",
-      "sha256": "7d34a026f5901278d82b72114c8a90f00b5d29105681c78780777577b4ade7e2",
-      "source_blob": "2aae53056bbde6b2860e86446a5f443834d1f97e"
+      "sha256": "4fe026c66efa509b75c85bcccc8640b986f1c3ea0948ed732ecad3575476b4b8",
+      "source_blob": "4e72ad18adf6dd06b5d714911ff6442aa1ab934d"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_output.txt",
-      "sha256": "715d588a7974b9ee500301eb3eaf4cc1ec0befaf8f7eca56411dee24015d9dbc",
-      "source_blob": "f5f0c1bbe111ba155e54e550e2daa635a0ed9fba"
+      "sha256": "8ccd18d67235cf7bcd0f9bd7857f91668eaa10c3e16e57392521388f2388da18",
+      "source_blob": "c41fd6fe4636e12e69b37e8310615c0ff74ed331"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_results.json",
-      "sha256": "e19589b1a7ba1b49d8a4318cd7c459a9f3a854e0184dbe73c347a200942514cb",
-      "source_blob": "cf322fc99c0d584137ca6b8c1e8d14b049ce572c"
+      "sha256": "18b05faaab91a40e89b982f6e0d759a66dc2d30e8bec24e7dbd5285cc4f501c8",
+      "source_blob": "d91199721638009d421b60d8aefa5bbd03f709bc"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -999,7 +999,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "e74df7d999ae04a667d4de08625b8ec77bcdab5a",
+  "previous_source_head": "45f19d1399829b284f15b41899b49ee9961ea394",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1054,11 +1054,12 @@
     "Two native golden histories J and GJ span the complete declared new factor. All four signed cross-return blocks uniquely reconstruct any full operator, the literal cylinder feedback action and its genuine moving derivative. The earlier complementary extensions are distinguished by the second preparation; a constant first return I has a genuine full complement source 216/455 at t=1/3,z=1/4. The all-size analytic reconstruction error includes 1/(1-|a|), with tensor conditioning retained at deeper factors. The packet has 87 compiled propositions, four D0 source pins, 315 exact controls and 62 false-scope plus 31 false-exact rejections. Diagonal probabilities alone are insufficient. Native joint scene law, physical controlled routing/inverse/interference access, admitted metric/link/matter variations and uniform preparation bounds remain open. No action, readout, complementary selector, physical postulate, G0/GR/global closure or original parent terminal is changed.",
     "The owned recorded golden comparer reconstructs the complete quadratic feedback from event probabilities, with a retained preparation flag and both comparison records. Explicit complete orthogonal stages compile into the existing internal clock and read exactly the feedback event. The fixed normalized mixed-event factor is two. Selective controlled-U, inverse-U and signed full-U amplitudes are not required by this feedback route. A genuine moving action derivative is transported; analytic error bounds retain calibration, dimension, rank, resolvent and golden conditioning. 115 compiled propositions, five D0 source pins and 421 exact controls. Physical coherent pair preparation, common scene-word actuation, cylinder event readout, admitted variations and uniform native bounds remain open; the heat-trace bootstrap term retains its own obligation. No physical action, source, selector, postulate, G0/GR/global closure or parent terminal is changed. All 74 false-scope and 41 false-exact ledgers were rejected by the actual checker.",
     "The whole BOOK_03 bootstrap now has a genuine finite spectral covector bound to the actual scene heat coefficients. Literal binary replication leaves the thermal covector unchanged and doubles feedback. A coarse stationary variation transfers exactly when the fine thermal covector equals twice the coarse covector. A fixed connected two-vertex Laplacian and fixed Cayley operation have a compiled nonempty stationary coupled slice with a nonstationary replicated image; this is not a whole native root. Uniform-shift exclusion is conditional on admitting that variation and protects native zero-mode constraints. 147 compiled propositions, seven D0 source pins and 488 exact controls. The owned joint Delta/P/U law, complete admitted variations, actual spectral transition, physical preparation/readout and native error bounds remain open. No action, trace, temperature law, selector, source prescription, postulate, G0/GR/global closure or original parent terminal is changed. All 86 false-scope and 56 false-exact ledgers were rejected by the actual checker.",
-    "The actual SourcePortPreparation chain is differentiated from shared degree/adjacency data through the commutator, active plane, degree compression, trace normalizer, both ports and coupled Q8 interaction. All retained native word stages and all seven weighted feedback terms have genuine derivative proofs; the canonical pairing and its inverse move together. The actual matrix exponential heat derivative covers every declared differentiable spectral factorization with moving noncommuting eigenvectors. General C1 finite operator heat/Jacobi source calculus has a self-contained analytic proof, with finite noncommutative power jets compiled. Whole bootstrap covariance gives a genuine basis Ward identity; it is not a physical metric/matter Ward or native stationarity. Kernel-checked bindings consume actual source definitions without native_decide leaves. The packet has 199 compiled propositions, 17 D0 source pins and 605 exact controls. Dropping port normalization or freezing the pairing creates exact false responses. The owned joint primitive state/tangent law, full scene spectral coupling/refinement, physical preparation/readout and uniform native bounds remain open. No action, trace, temperature rule, source prescription, selector, postulate, G0/GR/global closure or original parent terminal is changed. All 98 false-scope and 69 false-exact ledgers were rejected by the actual checker."
+    "The actual SourcePortPreparation chain is differentiated from shared degree/adjacency data through the commutator, active plane, degree compression, trace normalizer, both ports and coupled Q8 interaction. All retained native word stages and all seven weighted feedback terms have genuine derivative proofs; the canonical pairing and its inverse move together. The actual matrix exponential heat derivative covers every declared differentiable spectral factorization with moving noncommuting eigenvectors. General C1 finite operator heat/Jacobi source calculus has a self-contained analytic proof, with finite noncommutative power jets compiled. Whole bootstrap covariance gives a genuine basis Ward identity; it is not a physical metric/matter Ward or native stationarity. Kernel-checked bindings consume actual source definitions without native_decide leaves. The packet has 199 compiled propositions, 17 D0 source pins and 605 exact controls. Dropping port normalization or freezing the pairing creates exact false responses. The owned joint primitive state/tangent law, full scene spectral coupling/refinement, physical preparation/readout and uniform native bounds remain open. No action, trace, temperature rule, source prescription, selector, postulate, G0/GR/global closure or original parent terminal is changed. All 98 false-scope and 69 false-exact ledgers were rejected by the actual checker.",
+    "Both actual golden histories J and GJ determine the complete passive spectral class: their two intertwining defects vanish iff the full fine operator is the literal two-copy lift. The full defect reconstructs every spectral change; with first-history naturality the second defect is exactly the golden-tick/scene commutator. Conditional genuine matrix-heat and whole-bootstrap derivatives show that a passive spectral family with literal feedback cannot transfer a nonzero coarse thermal source. At a replicated spectral value, the exact first-jet thermal contraction and response-null kernel are compiled; pointwise compatibility does not imply source compatibility. The complete self-adjoint first-history class and necessary defect lower bounds are analytically proved. The current package has 215 compiled propositions, 17 D0 source pins and 670 exact controls. This is a complete declared finite spectral class, not exhaustion or physical admission of the D0 core. Scene passivity is not derived from M1; no spectral complement or source is fitted. The actual joint primitive/tangent/refinement owner, physical actuation/readout, uniform bounds, native on-shell equations and local metric/matter Ward remain open. No action, trace, temperature rule, selector, coupling, postulate, G0/GR/global closure or parent terminal is changed. All 104 false-scope and 77 false-exact ledgers were rejected by the actual checker."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "45f19d1399829b284f15b41899b49ee9961ea394",
+  "source_head": "915f4ff8fdb5950e69a3cdd6d443033ca55fa32e",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "e74df7d999ae04a667d4de08625b8ec77bcdab5a",
+  "source_parent": "45f19d1399829b284f15b41899b49ee9961ea394",
   "source_pr": 310
 }
