@@ -5,6 +5,7 @@ Input research head: `609e7daa7c801254ee671874750c5bc61f4efc71`.
 Input main: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Prepared-readout follow-up input: `58407f912e6f4cedfff3625cdd4e7ba09c6e7951`.
 Two-native-preparation follow-up input: `7479dbcb5970b4450912cc848a53e1622e9524af`.
+Recorded-quadratic follow-up input: `7c204c9d0e6a405216f9762ddd4d4d55ba57dab4`.
 Consumer: G0b in `D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md`.
 Status: proved finite operator/action/refinement slice; G0--G4 remain open.
 
@@ -573,24 +574,152 @@ readout implementation, with errors controlled through (27). The result does
 not prove that this class exhausts all D0 physical states, or derive the
 metric/coframe/link/matter dynamics by supplying them as matrix parameters.
 
+### 6.5. Direct feedback reconstruction by the owned recorded comparer
+
+Follow-up input: 7c204c9d0e6a405216f9762ddd4d4d55ba57dab4.
+The feedback consumer need not reconstruct signed U amplitudes first.
+Set \(A=(I-P)UP\), with P an orthogonal projector. Then
+\[
+A^TA=PU^T(I-P)UP=F(P,U).
+\]
+For complete target vectors x,y the actual owned fullStep on a comparison
+port and a blank comparison record gives
+\[
+(Ax,0,Ay,0)\longmapsto(aAx-pAy,0,0,pAx+aAy).       \tag{29}
+\]
+The old target record belongs to x,y and to the entire composed U. It is
+never replaced between operations of that word. The comparison record
+in (29) is a separate apparatus register. Retain both output records.
+Writing \(q_x=\|Ax\|^2,\ q_y=\|Ay\|^2,\ q_{xy}=\|aAx-pAy\|^2\), one obtains
+\[
+\langle Ax,Ay\rangle=
+ {a^2q_x+p^2q_y-q_{xy}\over2ap},\qquad ap\ne0.     \tag{30}
+\]
+This is a fixed native golden calibration, not a fitted source. The sum
+of the two recorded responses is \(q_x+q_y\), by \(a^2+p^2=1\).
+Both (29)--(30) and their all-size Gram reconstruction are compiled.
+
+The active preparation is implemented without discarding its complement.
+On a retained preparation flag define the reversible operator
+\[
+W_P=\begin{pmatrix}P&I-P\\I-P&P\end{pmatrix},\quad
+W_P^TW_P=W_P^2=I,\quad
+W_P(x,0)=(Px,(I-P)x).                            \tag{31}
+\]
+This matrix does not assert physical actuation of every abstract P. For
+a literal Boolean cylinder event f its flag is the already owned reversible
+basis registration \((i,b)\mapsto(i,b\mathbin{\mathrm{xor}}\neg f(i))\).
+Its linear permutation extension gives (31), up to flag ordering, for
+the corresponding diagonal projector. Injectivity and blank registration
+are bound in Lean to FiniteProtocolClock.register. A basis-label
+permutation is not a cloning map on unknown superpositions.
+
+The complete retained operator is explicitly
+\[
+\mathcal U_{\rm cmp}=
+ (W\otimes I)(I_4\otimes L(U))(I_4\otimes W_P)
+ =W\otimes(L(U)W_P),                             \tag{32}
+\]
+where W is the owned recorded golden matrix and L(U)=diag(U,U).
+Its detector event is comparison record/port 0, active preparation flag,
+and target event I-P. Its amplitude is
+\((I-P)(aUPx-pUPy)=aAx-pAy\). All other branches remain in (32).
+The complete orthogonality, operator factorization and event reading are
+compiled for arbitrary finite target dimension. Common execution of the
+whole U on both arms suffices: selective controlled-U or an inverse-U
+oracle is not used by this feedback reconstruction.
+
+flaggedComparisonProgram is the explicit three-stage program of (32)
+on the existing internal stage register: flag preparation, common full
+word, recorded comparison. Lean proves that its owned autonomous
+FiniteProtocolClock.run gives exactly (32) after the first three stages
+and that the complete transition is injective. These are operations of
+the internal program; no independent physical time coordinate is added.
+The compiler consumes the declared reversible operations. It does not
+derive their physical availability, a blank apparatus, or unbounded
+history capacity from M1.
+
+Use the existing complete preparation frame B=[J,GJ]=GT. Each column
+\(b_i\) has unit norm. A single-arm query has total input norm one, and
+its detector union over both comparison output records reads q_i.
+A pair query \((b_i,0,b_j,0)\) has total norm squared two, independently
+of the overlap between b_i,b_j or the moving projector P. The measured
+normalized mixed probability is therefore \(m_{ij}=q_{ij}/2\).
+Consequently there is **one fixed factor two**, with no postselection:
+\[
+K_{ij}={a^2q_i+p^2q_j-2m_{ij}\over2ap},\quad
+K=B^TF(L(P),U)B,\quad
+F=GT^{-T}KT^{-1}G^T.                             \tag{33}
+\]
+The existing action is exactly \(S_z(T^{-T}KT^{-1})\), by orthogonal
+conjugacy. It does not become a new measurement-based action. Lean proves
+this identity and transports a genuine derivative along moving P(s),U(s),
+retaining both projector derivatives. A derivative of the recorded action
+is an explicit premise of that transport; stationarity and physical
+metric/matter variations are not inferred from the reconstruction.
+
+For two exact preparations/experiments with each of q_i and m_ij changed
+by at most epsilon, (30) gives
+\[
+|\delta K_{ij}|\le {3\epsilon\over2|ap|},\quad
+\|\delta K\|_{op}\le m\max_{ij}|\delta K_{ij}|,\quad
+\|\delta F\|_{op}\le {\|\delta K\|_{op}\over1-|a|}. \tag{34}
+\]
+Here m=2n is the number of full-frame columns. The matrix bound follows
+from the Frobenius norm. The factor three includes the normalized pair
+calibration; its omission fails the exact control. For fixed readout
+L(P) of rank 2r, orthogonal full processes and 0<z<1, both feedback
+operators are positive contractions supported on that readout. Integrate
+the log-determinant derivative on their convex segment to obtain
+\[
+|\delta S_z|\le {2rz\over(1-z)(1-|a|)}\|\delta K\|_{op}. \tag{35}
+\]
+The trace is over the common active range. Thus rank, dimension, resolvent
+gap and golden conditioning remain explicit. An arbitrary noisy K ledger
+need not reconstruct a positive contraction; (35) is not asserted for it
+without checking the positive-pencil domain and its gap. No projection
+or renormalization of that ledger is introduced as a physical rule.
+Moving readouts additionally retain the projector error terms of §6.3.
+Tensor conditioning at greater depth is still required. Uniform native
+O(h) input and the fixed physical continuum calibration remain open.
+
+Exact controls use both actual native words of lengths one through three
+and complete flagged operators in target dimensions one, two and three.
+Dephasing before the owned comparer loses a nonzero Gram entry. Dropping
+the fixed factor two changes that entry. Normalizing only the active
+preparation branch changes a moving query and its genuine source; the
+retained complementary branch keeps total norm constant. These controls
+do not claim that every tested abstract orthogonal curve is M1-admitted.
+
+The physical input has been narrowed to coherent pair preparation, common
+execution of the actual full scene word, retained cylinder registration
+and event readout, together with admitted variations and their error law.
+Availability of this coupled experiment has not been proved merely by
+matrix orthogonality. The full scene law and the separate bootstrap
+heat-trace term retain their own owners. No new action, physical source,
+complementary selector or metric field law is supplied.
+
+
 ## 7. Verification and next load-bearing input
 
-`certificates/a4d_native_composed_feedback_dynamics.lean` contains 87
+`certificates/a4d_native_composed_feedback_dynamics.lean` contains 115
 compiled propositions, with each actual type and transitive axiom list
-printed in its transcript. The receipt pins all four transitively imported
+printed in its transcript. The receipt pins all five transitively imported
 D0 sources and the actual toolchain inputs. Standard logical axioms only;
-no new axiom or placeholder. The companion exact checker passes 315 controls and binds the book,
+no new axiom or placeholder. The companion exact checker passes 421 controls and binds the book,
 native matrices, complete-block identities, delayed archive control,
 composed source, joint projection refinement, determinant scaling and
 immutable result ledger. Finite controls do not replace the all-size proofs.
 
-The remaining single G0b input is now the **joint scene process under its
-actual finite readout and full cross-return preparations**. The cylinder
-branch fixes L(P); two owned golden histories reconstruct its entire
-operator from all four return blocks. Derive those blocks and their
-admitted variations from the scene law, including physical preparation,
-controlled routing and readout access. Apply (20)--(22), (27)--(28) with
-native rank/normalization and recording bounds.
+The remaining single G0b input is the **joint scene process with its admitted
+coherent pair preparations, retained flag registration, common full-word
+execution and quadratic event readings**. For the feedback component,
+(29)--(35) replace a requirement for signed U tomography or inverse access.
+The compiler and fixed calibration are constructed; physical actuation,
+native admitted variations and uniform preparation bounds must follow from
+their owners. The scene contribution to the full bootstrap, including its
+heat-trace term, is still required. Apply the proved bounds with actual
+native rank, normalization and recording errors.
 For the distinct image-supported preparation test, all completion effects
 are already exhausted by (16)--(17); one need not choose its unobservable
 coordinates. Equating these two experiments is explicitly rejected. This

@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "07f79610042b03f037dac35201f84d09bacdb2c23e01023b449f81b721351904",
+    "sha256": "a7f90c282b4b09069e874b837b464f8c8fa84d96bd0092f96f4805631fdfc92b",
     "global_census": false
   },
   "history_diagnosis": {
@@ -269,7 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": "Derive the native joint scene/record operation, all four signed cross-return blocks, physical preparation/readout implementation and admitted variations. The two owned golden histories already reconstruct every full new-factor operator and its literal cylinder action/source; no extra complementary selector is required once those data are supplied. Apply reconstruction/action bounds with native rank, normalization and recording errors. Metric source/Ward, calibrated continuum transfer and GR remain open.",
+    "next_proof_packet": "G0b: derive the actual joint scene/record process, its admitted coherent pair preparations, retained cylinder registration, common full-word execution and quadratic event readout, together with independent variations and native error bounds. The feedback component already has an explicit internal-clock compiler, fixed calibration and direct quadratic reconstruction; it needs no signed-U or inverse oracle. The full bootstrap, including its heat-trace term, and the metric/link/matter variation map remain required before G1--G4.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -406,6 +406,24 @@
       "quantitative_norm_bounds": "All-size analytic proof, including tensor conditioning; native uniform O(h) input remains open.",
       "remaining": "Derive the native joint scene/record operation, all four signed cross-return blocks, physical preparation/readout implementation and admitted variations. The two owned golden histories already reconstruct every full new-factor operator and its literal cylinder action/source; no extra complementary selector is required once those data are supplied. Apply reconstruction/action bounds with native rank, normalization and recording errors. Metric source/Ward, calibrated continuum transfer and GR remain open.",
       "G0_closed": false
+    },
+    "recorded_quadratic_feedback": {
+      "source_head": "bbd81c495ea6fcea683f78872b392015c9407401",
+      "input_head": "7c204c9d0e6a405216f9762ddd4d4d55ba57dab4",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "compiled_propositions": 115,
+      "transitive_d0_source_pins": 5,
+      "exact_controls": 421,
+      "false_scope_rejections": 74,
+      "false_exact_rejections": 41,
+      "result": "The owned recorded golden comparer reconstructs the complete quadratic feedback from event probabilities, with a retained preparation flag and both comparison records. Explicit complete orthogonal stages compile into the existing internal clock and read exactly the feedback event. The fixed normalized mixed-event factor is two. Selective controlled-U, inverse-U and signed full-U amplitudes are not required by this feedback route. A genuine moving action derivative is transported; analytic error bounds retain calibration, dimension, rank, resolvent and golden conditioning. 115 compiled propositions, five D0 source pins and 421 exact controls. Physical coherent pair preparation, common scene-word actuation, cylinder event readout, admitted variations and uniform native bounds remain open; the heat-trace bootstrap term retains its own obligation. No physical action, source, selector, postulate, G0/GR/global closure or parent terminal is changed.",
+      "remaining": "G0b: derive the actual joint scene/record process, its admitted coherent pair preparations, retained cylinder registration, common full-word execution and quadratic event readout, together with independent variations and native error bounds. The feedback component already has an explicit internal-clock compiler, fixed calibration and direct quadratic reconstruction; it needs no signed-U or inverse oracle. The full bootstrap, including its heat-trace term, and the metric/link/matter variation map remain required before G1--G4.",
+      "fixed_normalized_mixed_reading_calibration": 2,
+      "physical_pair_preparation_and_readout_admission_derived": false,
+      "G0_closed": false,
+      "intake_artifacts": 198,
+      "verified_artifact_input_hash_versions": 405,
+      "verified_current_input_hash_versions": 312
     }
   }
 }

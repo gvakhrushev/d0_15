@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`7c204c9d0e6a405216f9762ddd4d4d55ba57dab4`, following
-`7479dbcb5970b4450912cc848a53e1622e9524af`.
+`bbd81c495ea6fcea683f78872b392015c9407401`, following
+`7c204c9d0e6a405216f9762ddd4d4d55ba57dab4`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -47,31 +47,42 @@ All-size analytic bounds quantify action error with the required rank,
 resolvent, preparation and full-word factors. Uniform native O(h) bounds
 and metric/link variation maps remain to be derived.
 
-This packet now has 87 compiled propositions, four transitive D0 pins and
-315 exact controls; 62 false scope and 31 false exact ledgers are rejected.
+This packet now has 115 compiled propositions, five transitive D0 pins and
+421 exact controls; 74 false scope and 41 false exact ledgers are rejected.
 Two owned native preparations J and GJ span the complete new factor.
 All four signed cross-return blocks uniquely reconstruct every full operator,
 its literal cylinder action and genuine source, including the prior hidden
 complement. The analytic error bound has factor 1/(1-|a|), with deeper tensor
 conditioning retained. Diagonal probabilities alone do not suffice.
 
-The next G0b input is the joint scene/record law, full cross returns and
-admitted variations, with native controlled routing, inverse and interference
-access. No native readout, action, complementary selector or physical
-postulate is changed to obtain these identities.
+The owned recorded comparer now reconstructs quadratic feedback directly
+from normalized event readings. The complete preparation flag, both comparison
+records and the old target memory are retained. Orthogonality, detector event
+binding and an explicit three-stage program on the existing internal clock
+compile. One fixed factor two calibrates the mixed reading; signed U
+amplitudes, selective controlled-U and inverse-U access are unnecessary for
+this feedback component. Genuine moving-source transport and analytic error
+bounds retain calibration, dimension, rank, resolvent and golden conditioning.
+
+The next G0b input is the actual joint scene law and the physical admission
+of coherent pair preparation, common full-word execution, cylinder registration
+and event readout, with independent variations and native error bounds. The
+separate bootstrap heat-trace term remains required. The internal compiler
+does not itself derive primitive actuation or a blank apparatus from M1.
+No physical action, source, complementary selector or postulate is introduced.
 
 The [regular time-field intertwiner classification](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
 is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 404 current artifact/input hash versions match.
+are unchanged. All 405 current artifact/input hash versions match (312 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
-The preceding CONTROL `1044e6fb` passed CI `37776187229`. Current source
-`7c204c9d` CI `37778650030` is running at this intake. The superseded source
-`7479dbcb` run `37775818295` was cancelled and supplies no successful
-current-head result. New-head CI and CONTROL review remain required.
+The preceding source `7c204c9d` passed CI `37778650030`, and preceding
+CONTROL `98fc56ad` passed CI `37779154354`. New source `bbd81c49`
+CI `37785674835` is running at intake. New-head CONTROL CI and review remain
+required; the successful preceding heads do not substitute for current CI.
 
 ## Enumerated artifact slice
 

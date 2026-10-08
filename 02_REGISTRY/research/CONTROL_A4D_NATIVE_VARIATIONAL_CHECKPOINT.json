@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "13225bec349b30f80739914309b9686c76cb3c2de3e931bb22b9d75d516bee73",
-      "source_blob": "61cac8cf00cb653aa3a33afa4ad676b7dae18eae"
+      "sha256": "a7f90c282b4b09069e874b837b464f8c8fa84d96bd0092f96f4805631fdfc92b",
+      "source_blob": "6aba2b4cabcacc0917e7aa03b8e5540b84924079"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "e3559123c738387fbeb79521a2d72c14063ea080d070f6fadcebd32402e1d10b",
-      "source_blob": "dabc6179fb4abaff929a019d338dc3c7df4e8f94"
+      "sha256": "ec340f271aebedecad07d7e5ac077e1caf3df353e0e6cceea6a6180d6457c109",
+      "source_blob": "8405956fccc21f2954830f2d04b92af051af9b83"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -909,8 +909,8 @@
     },
     {
       "path": "02_REGISTRY/research/D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md",
-      "sha256": "4be7ebbfd3458a9d675ff1faaa3983f0d505b455b11f29bf5c41c871263ca0e7",
-      "source_blob": "7bf515d990cda4830a4e7881a2ff2dc33677c027"
+      "sha256": "cca1d4de99ec44ed919409596f570dba693eeb6acd916c5e8c7c47b2e021f66d",
+      "source_blob": "3615340c5079a05965c445623171e913c39ef3bb"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent.lean",
@@ -919,8 +919,8 @@
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_certificate.json",
-      "sha256": "ee7281b74a1de03d741c7de29ca9bb454e552cac8d5c07cd5dfa45434dd841de",
-      "source_blob": "9b9da847b17571923778a6b8a2de4b6518c60f40"
+      "sha256": "e47cdc99a737ccb09c477764d8716cbc98150f88e23e2aa990e699c19355e092",
+      "source_blob": "c2e68a724c869e3832a76b62750f6f10a960bde1"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_check.py",
@@ -964,33 +964,33 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
-      "sha256": "7d6630243f1794448c6f8f4a2d9c50234efb88ea29ffdcfce710306aa3ceac52",
-      "source_blob": "22c5e502cf5c673ed25657acc1f8e64e2400d79d"
+      "sha256": "f093a5ecf71d573d1c0e0f205d54c2b09900316d14a2ed03ee71674e336e0a99",
+      "source_blob": "10d8bd544f77d5a843c5c3ed5798d1306b2f210b"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean",
-      "sha256": "98081c6244d469a15f3d49afa1815444a774e0572a799f66fe34f0a409af4463",
-      "source_blob": "4be29f7643e894e4f6c377a239783910490e8ddc"
+      "sha256": "2e3e1ccd5fc12fdd63515251f9bde2b51db6a1b08074849b4eeef890dab33dd6",
+      "source_blob": "e64635df1d313dfdf965922ba7a864a9e2c7fe27"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_certificate.json",
-      "sha256": "b4c3eae57e1d2d3b26979e32765c2ec379fafe10d42c7236398c104856f348c3",
-      "source_blob": "09ad5cfd356316f9b5430b23998899deddf00920"
+      "sha256": "cdd2d0112be291038be8d2204854abd94f10968c25ca4ec33702726b22c0a5aa",
+      "source_blob": "1cc33e16ab54fd64c4d10f648bb9b5b4418a64e9"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_check.py",
-      "sha256": "dd288a187aeea8af21fba5717c1defc4c10557580cd21baae1e5e84b02830777",
-      "source_blob": "de80bfd9863916302ccba549c339eefccefc147a"
+      "sha256": "6cb4e5b2a308cf30562fc054c4535f5850f5d64978e8db66dcc21ab8c6929852",
+      "source_blob": "c3f4592f713111bccc1b3c1472811db021a27be2"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_output.txt",
-      "sha256": "d5af45c6a28777b2d2a59d4192a0fe1054807484a04ab5e878a5ea7a5b5791e9",
-      "source_blob": "8b334be9f30bc8b6e6ec2408a2d24a28d1fd8643"
+      "sha256": "7546caa20ce38ffb17dfa5de5087ddc7e2e685c5b3e8b0bc75425c7aac746397",
+      "source_blob": "4d7db1f826338551a66cc06f5654022171e564e3"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_results.json",
-      "sha256": "73f0318e0efdf25b6f889f7aa0a7b39f75ce5273932c438c8114b356b01bb60d",
-      "source_blob": "8cd0539854439b064c70133f2999f489a15afee0"
+      "sha256": "5504c9f72d845033b1e61ebe1704149f53113d126d7390867d74d954391aea89",
+      "source_blob": "bea4733b775ab9dfbc637c39d0cc9543536bbcac"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -999,7 +999,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "7479dbcb5970b4450912cc848a53e1622e9524af",
+  "previous_source_head": "7c204c9d0e6a405216f9762ddd4d4d55ba57dab4",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1051,11 +1051,12 @@
     "Native full-future equivalence and the realized response tower are constructed with actual surjective truncations and process naturality. The whole locally constant finite-depth response consumes the actual profinite finite-factorization owner; compactness proves realization of compatible histories. Golden cylinder expectations, cylindrical Hilbert pairing and arbitrary-linear-operator naturality are preserved; the refined golden factor has an explicit reversible blank preparation. The owned recorded golden operator distinguishes two states with both present marginals equal by the exact two-return Z gap -8*p^6, without a fresh record between reuses. All archive history, independent sources and both feedback determinant variations are retained. Forty-two compiled propositions, five D0 source pins and 189 exact controls pass; 41 false scope and 13 false exact ledgers are rejected. Point processes and amplitude processes retain distinct types. Joint admitted history/record dynamics and action/variation binding to the inclusions is the next G0b arrow; no full G0, GR or parent terminal is promoted.",
     "Complete real orthogonal golden-active-block completions with arbitrary archive; actual native one-step feedback equality and two-step action gap; genuine matrix-derived completion-coordinate derivative; joint golden operator/projection/history refinement and exact raw action/source doubling; exact golden complement freedom with identical prepared inclusion. 56 compiled propositions, four transitive D0 pins, 177 exact controls and 39 false-scope plus 13 false-exact rejections. Physical preparation/admission of complement variations, full bootstrap, native metric source/Ward, GR and original parent terminals remain open.",
     "Full prepared feedback is derived for every real orthogonal joint operator, including the exact missing-norm term, every complete history return and genuine moving-preparation source transport. Every compatible fine projector is classified. The actual golden preparation is bound to its native gate; literal cylinder multiplication pulls back as the replicated readout L(P), which remains distinct from the image-supported test JPJ^T. Explicit all-size analytic action-error bounds retain rank, resolvent, preparation and full-word errors. Native O(h) preparation and physical metric source/stationarity are not premises or conclusions. The expanded packet has 76 compiled propositions, four native source pins, 275 exact controls and 54 false-scope plus 25 false-exact rejections. The next G0b input is the joint native scene process under its actual readout, with all complementary active returns and admitted variations. No physical readout, action, postulate, G0/GR/global closure or original parent terminal is changed.",
-    "Two native golden histories J and GJ span the complete declared new factor. All four signed cross-return blocks uniquely reconstruct any full operator, the literal cylinder feedback action and its genuine moving derivative. The earlier complementary extensions are distinguished by the second preparation; a constant first return I has a genuine full complement source 216/455 at t=1/3,z=1/4. The all-size analytic reconstruction error includes 1/(1-|a|), with tensor conditioning retained at deeper factors. The packet has 87 compiled propositions, four D0 source pins, 315 exact controls and 62 false-scope plus 31 false-exact rejections. Diagonal probabilities alone are insufficient. Native joint scene law, physical controlled routing/inverse/interference access, admitted metric/link/matter variations and uniform preparation bounds remain open. No action, readout, complementary selector, physical postulate, G0/GR/global closure or original parent terminal is changed."
+    "Two native golden histories J and GJ span the complete declared new factor. All four signed cross-return blocks uniquely reconstruct any full operator, the literal cylinder feedback action and its genuine moving derivative. The earlier complementary extensions are distinguished by the second preparation; a constant first return I has a genuine full complement source 216/455 at t=1/3,z=1/4. The all-size analytic reconstruction error includes 1/(1-|a|), with tensor conditioning retained at deeper factors. The packet has 87 compiled propositions, four D0 source pins, 315 exact controls and 62 false-scope plus 31 false-exact rejections. Diagonal probabilities alone are insufficient. Native joint scene law, physical controlled routing/inverse/interference access, admitted metric/link/matter variations and uniform preparation bounds remain open. No action, readout, complementary selector, physical postulate, G0/GR/global closure or original parent terminal is changed.",
+    "The owned recorded golden comparer reconstructs the complete quadratic feedback from event probabilities, with a retained preparation flag and both comparison records. Explicit complete orthogonal stages compile into the existing internal clock and read exactly the feedback event. The fixed normalized mixed-event factor is two. Selective controlled-U, inverse-U and signed full-U amplitudes are not required by this feedback route. A genuine moving action derivative is transported; analytic error bounds retain calibration, dimension, rank, resolvent and golden conditioning. 115 compiled propositions, five D0 source pins and 421 exact controls. Physical coherent pair preparation, common scene-word actuation, cylinder event readout, admitted variations and uniform native bounds remain open; the heat-trace bootstrap term retains its own obligation. No physical action, source, selector, postulate, G0/GR/global closure or parent terminal is changed. All 74 false-scope and 41 false-exact ledgers were rejected by the actual checker."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "7c204c9d0e6a405216f9762ddd4d4d55ba57dab4",
+  "source_head": "bbd81c495ea6fcea683f78872b392015c9407401",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "7479dbcb5970b4450912cc848a53e1622e9524af",
+  "source_parent": "7c204c9d0e6a405216f9762ddd4d4d55ba57dab4",
   "source_pr": 310
 }

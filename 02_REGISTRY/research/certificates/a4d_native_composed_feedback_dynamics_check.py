@@ -8,7 +8,7 @@ from pathlib import Path
 
 import sympy as s
 
-HEAD = '7479dbcb5970b4450912cc848a53e1622e9524af'
+HEAD = '7c204c9d0e6a405216f9762ddd4d4d55ba57dab4'
 BASE = '02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics'
 PROOF = '02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md'
 SCOPE = {
@@ -45,6 +45,18 @@ SCOPE = {
     'actual_two_preparation_source_transport_Lean_formalized': True,
     'one_layer_reconstruction_error_bound': 'ANALYTIC_WITH_FACTOR_1_OVER_1_MINUS_ABS_A',
     'all_cross_return_physical_readout_availability_derived': False,
+    'owned_recorded_quadratic_feedback_reconstruction_Lean_formalized': True,
+    'both_comparison_records_and_preparation_flag_retained_Lean_formalized': True,
+    'literal_cylinder_flag_bound_to_owned_reversible_registration_Lean_formalized': True,
+    'full_flagged_comparison_orthogonality_Lean_formalized': True,
+    'comparison_compiled_into_owned_internal_clock_Lean_formalized': True,
+    'actual_recorded_feedback_action_and_source_transport_Lean_formalized': True,
+    'normalized_mixed_response_fixed_calibration': 2,
+    'direct_feedback_reconstruction_requires_signed_U_or_inverse_oracle': False,
+    'common_full_word_reuses_old_target_memory_without_reset': True,
+    'native_physical_pair_preparation_and_readout_admission_derived': False,
+    'internal_clock_compiler_derives_physical_primitives_from_M1': False,
+    'quadratic_reading_to_feedback_bound': 'ALL_SIZE_ANALYTIC_WITH_CALIBRATION_DIMENSION_AND_CONDITIONING',
     'diagonal_return_probabilities_determine_full_operator': False,
     'whole_native_scene_process_selected_by_tomography': False,
     'full_return_equals_power_of_one_step_compression': False,
@@ -101,7 +113,7 @@ def main():
     check('CAPSULE_AND_TRANSCRIPT_FRESH', receipt['capsule_sha256'] == sha(BASE+'.lean')
           and receipt['output_sha256'] == sha(BASE+'_output.txt'))
     check('ALL_ACTUAL_PROPOSITIONS_AND_DEPENDENCIES', declarations == receipt['declarations']
-          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 87)
+          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 115)
     check('NO_PLACEHOLDER_OR_COMPILER_ERROR', 'sorryAx' not in transcript
           and re.search(r'\berror(?:\(|:)', transcript) is None
           and re.search(r'\b(sorry|admit|axiom)\b', lean) is None)
@@ -115,7 +127,10 @@ def main():
         check('ACTUAL_DECLARATION_'+name, full in transcript and "'"+full+"'" in transcript)
     check('REAL_OPERATOR_AND_DERIVATIVE_PROPOSITIONS', all(x in transcript for x in
           ['Function.Injective', 'HasDerivAt', 'minimalJoint', 'fullStep', 'directStep',
-           'joint', 'goldenInclusion', 'fullFeedback', 'feedbackAction', 'liftOperator']))
+           'joint', 'goldenInclusion', 'fullFeedback', 'feedbackAction', 'liftOperator',
+           'recordedQuadraticKernel', 'fullFlaggedComparison', 'FiniteProtocolClock.run']))
+    check('FIVE_TRANSITIVE_NATIVE_SOURCE_PINS', len(receipt['transitive_d0_source_sha256']) == 5
+          and '03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean' in receipt['transitive_d0_source_sha256'])
     pins = dict(receipt['transitive_d0_source_sha256'])
     pins.update(receipt['toolchain_input_sha256'])
     for path, digest in pins.items():
@@ -465,6 +480,127 @@ def main():
           gzero(s.diag(*(left_reads-right_reads).diagonal())) and not gzero(left_reads-right_reads))
     check('ZERO_BRANCH_BREAKS_TWO_PREPARATION_COMPLETENESS', T.subs({a:1,p:0}).rank() == 2)
 
+    # The owned recorded gate supplies cross RESPONSE terms without an amplitude oracle for U.
+    def norm_sq(v):
+        return (v.T*v)[0]
+
+    def recovered_pairing(A, x, y):
+        ax, ay = A*x, A*y
+        qx, qy = norm_sq(ax), norm_sq(ay)
+        mixed = norm_sq(a*ax-p*ay)
+        return golden((a*a*qx+p*p*qy-mixed)/(2*a*p))
+
+    recorded_response_cases = []
+    for label, native_U in [('direct', direct), ('recorded', recorded)]:
+        for power in (1, 2, 3):
+            word = (native_U**power).applyfunc(golden)
+            Aread = ((s.eye(4)-Pg)*word*Pg*B).applyfunc(golden)
+            kernel = s.Matrix(4, 4, lambda i,j: recovered_pairing(
+                Aread, s.eye(4)[:,i], s.eye(4)[:,j]))
+            Fword = feedback(Pg, word).applyfunc(golden)
+            Frecovered = (Qg*Ti.T*kernel*Ti*Qg.T).applyfunc(golden)
+            tag = f'{label}_{power}'
+            check('RECORDED_QUADRATIC_READINGS_RECONSTRUCT_COMPLETE_GRAM_'+tag,
+                  gzero(kernel-B.T*Fword*B))
+            check('RECORDED_QUADRATIC_READINGS_RECONSTRUCT_LITERAL_FEEDBACK_'+tag,
+                  gzero(Frecovered-Fword))
+            check('RECORDED_QUADRATIC_READINGS_RECONSTRUCT_OWNED_ACTION_'+tag,
+                  golden((s.eye(4)-z*Frecovered).det()-(s.eye(4)-z*Fword).det()) == 0)
+            for i in range(4):
+                check(f'UNIT_NATIVE_PREPARATION_{tag}_{i}', golden(norm_sq(B[:,i])-1) == 0)
+            recorded_response_cases.append(tag)
+
+    # Exact complete carrier: comparison port/record, preparation flag, old target.
+    def flagged(P):
+        dim = P.rows
+        Q = s.eye(dim)-P
+        return s.BlockMatrix([[P,Q],[Q,P]]).as_explicit()
+
+    native_recorded = recorded
+    complete_operational_cases = []
+    for dim in (1,2,3):
+        old_U = reflection(dim,1)
+        pframe = reflection(dim,2)
+        old_P = pframe*s.diag(*([1]*((dim+1)//2)+[0]*(dim//2)))*pframe.T
+        flag_op = flagged(old_P)
+        common_op = s.diag(old_U,old_U)
+        prep_stage = s.kronecker_product(s.eye(4),flag_op)
+        word_stage = s.kronecker_product(s.eye(4),common_op)
+        record_stage = s.kronecker_product(native_recorded,s.eye(2*dim))
+        full_op = record_stage*word_stage*prep_stage
+        check(f'FLAGGED_PREPARATION_RETAINS_ALL_BRANCHES_{dim}',
+              flag_op*flag_op == s.eye(2*dim) and flag_op.T*flag_op == s.eye(2*dim))
+        check(f'COMPLETE_COMPARISON_OPERATOR_FACTORIZATION_{dim}',
+              gzero(full_op-s.kronecker_product(native_recorded,common_op*flag_op)))
+        check(f'COMPLETE_COMPARISON_ORTHOGONAL_{dim}', gzero(full_op.T*full_op-s.eye(8*dim)))
+        x,y = s.eye(dim)[:,0],s.eye(dim)[:,-1]
+        blank_x,blank_y = x.col_join(s.zeros(dim,1)),y.col_join(s.zeros(dim,1))
+        pair = blank_x.col_join(s.zeros(2*dim,1)).col_join(blank_y).col_join(s.zeros(2*dim,1))
+        result = full_op*pair
+        active_arm = result[:dim,0]
+        returned = (s.eye(dim)-old_P)*active_arm
+        reading_A = (s.eye(dim)-old_P)*old_U*old_P
+        check(f'ACTUAL_JOINT_EVENT_IS_FEEDBACK_QUADRATIC_{dim}',
+              gzero(returned-a*reading_A*x+p*reading_A*y))
+        check(f'FIXED_FULL_INPUT_AND_OUTPUT_MASS_TWO_{dim}', norm_sq(pair) == 2 and golden(norm_sq(result)-2) == 0)
+        check(f'RECORDED_AND_COMPLEMENT_BRANCHES_NOT_ERASED_{dim}',
+              golden(norm_sq(result[:2*dim,0])+norm_sq(result[6*dim:8*dim,0])-2) == 0)
+        clock,state = 0,pair
+        stages = [prep_stage,word_stage,record_stage]+[s.eye(8*dim)]*13
+        for _ in range(3):
+            state = stages[clock]*state
+            clock = (clock+1) % 16
+        check(f'OWNED_INTERNAL_THREE_STAGE_PROGRAM_{dim}', clock == 3 and state == result)
+        complete_operational_cases.append(dim)
+    for event in (False,True):
+        for record in (False,True):
+            registered = (event, bool((not event) ^ record))
+            inverse = (registered[0],bool((not registered[0]) ^ registered[1]))
+            check(f'LITERAL_CYLINDER_FLAG_XOR_IS_REVERSIBLE_{event}_{record}', inverse == (event,record))
+
+    test_P = s.diag(1,1,0,0)
+    test_A = ((s.eye(4)-test_P)*recorded**2*test_P).applyfunc(golden)
+    test_x,test_y = s.eye(4)[:,0],s.eye(4)[:,1]
+    test_pair = golden(((test_A*test_x).T*(test_A*test_y))[0])
+    qx,qy = norm_sq(test_A*test_x),norm_sq(test_A*test_y)
+    qm = norm_sq(a*test_A*test_x-p*test_A*test_y)
+    check('DEPHASING_BEFORE_RECORDING_FALSE_GRAM_REJECTED', test_pair != 0
+          and golden((a*a*qx+p*p*qy-(a*a*qx+p*p*qy))/(2*a*p)-test_pair) != 0)
+    check('DROPPING_FIXED_NORMALIZED_MIXED_FACTOR_TWO_REJECTED',
+          golden((a*a*qx+p*p*qy-qm/2)/(2*a*p)-test_pair) != 0)
+    check('BOTH_RECORDS_PRESERVE_QUADRATIC_RESPONSE',
+          golden(norm_sq(a*test_A*test_x-p*test_A*test_y)
+                 +norm_sq(p*test_A*test_x+a*test_A*test_y)-qx-qy) == 0)
+    # The retained preparation is not postselection: its branch mass varies with P.
+    basis_curve = s.Matrix([[ct,-st],[st,ct]])
+    Pcurve = basis_curve*s.diag(1,0)*basis_curve.T
+    Ureflect = s.diag(1,-1)
+    Acurve = ((I2-Pcurve)*Ureflect*Pcurve).applyfunc(s.cancel)
+    Fcurve = (Acurve.T*Acurve).applyfunc(s.cancel)
+    initial = s.Matrix([1,0,0,0])
+    prepared_state = flagged(Pcurve)*initial
+    branch_mass = norm_sq(prepared_state[:2,0])
+    physical_q = norm_sq(Acurve*s.Matrix([1,0]))
+    postselected_q = s.cancel(physical_q/branch_mass)
+    exact_det = s.factor((I2-z*Fcurve).det())
+    wrong_det = s.factor(1-z*postselected_q)
+    check('MOVING_FLAG_COMPLEMENT_RETAINS_FULL_NORM', s.cancel(norm_sq(prepared_state)-1) == 0
+          and s.diff(branch_mass,t) != 0)
+    check('POSTSELECTION_CHANGES_PREPARED_QUADRATIC_RESPONSE', s.cancel(physical_q-postselected_q) != 0)
+    physical_query_source = s.cancel(-s.diff(1-z*physical_q,t)/(1-z*physical_q))
+    postselect_query_source = s.cancel(-s.diff(wrong_det,t)/wrong_det)
+    source_gap = s.cancel(physical_query_source-postselect_query_source).subs({t:s.Rational(1,3),z:s.Rational(1,4)})
+    check('POSTSELECTION_CHANGES_GENUINE_QUERY_SOURCE', source_gap != 0)
+    curve_kernel = s.Matrix(2,2,lambda i,j:s.cancel(((Acurve*s.eye(2)[:,i]).T*(Acurve*s.eye(2)[:,j]))[0]))
+    check('MOVING_NATIVE_RECORDED_KERNEL_RETAINS_ACTUAL_SOURCE', zero(curve_kernel-Fcurve)
+          and s.cancel(-s.diff((I2-z*curve_kernel).det(),t)/(I2-z*curve_kernel).det()
+                       +s.diff(exact_det,t)/exact_det) == 0)
+    e1,e2,e3 = s.symbols('e1 e2 e3', real=True)
+    calibration_error = (a*a*e1+p*p*e2-2*e3)/(2*a*p)
+    check('FIXED_READING_ERROR_FORMULA',
+          s.expand(calibration_error*2*a*p-a*a*e1-p*p*e2+2*e3) == 0)
+    check('ENTRYWISE_ERROR_NEEDS_MATRIX_DIMENSION_FACTOR', s.ones(3).eigenvals() == {3:1,0:2})
+
     payload = {
         'status': 'PASS', 'owner_input_head': HEAD, 'scope': SCOPE, 'checks': checks,
         'input_sha256': pins, 'proof_sha256': sha(PROOF),
@@ -500,6 +636,16 @@ def main():
             'native_two_preparation_word_cases': two_preparation_cases,
             'two_preparation_inverse_squared_norm': '1/(1-abs(a))',
             'full_complement_genuine_source_control': str(complement_source_value),
+            'recorded_response_native_word_cases': recorded_response_cases,
+            'complete_operational_fixture_dimensions': complete_operational_cases,
+            'recorded_pairing_formula': '(a^2*qx+p^2*qy-2*normalized_mixed_reading)/(2*a*p)',
+            'full_flagged_comparison': '(fullStep tensor I)*(I4 tensor L(U))*(I4 tensor flagged(P))',
+            'fixed_comparison_input_norm_squared': 2,
+            'native_recorded_action': 'S(F(L(P),U))=S(T^(-T) K T^(-1)); K=B^T F B',
+            'quadratic_entry_error_bound': '3*epsilon/(2*abs(a*p))',
+            'feedback_error_bound': 'm*3*epsilon/(2*abs(a*p)*(1-abs(a)))',
+            'direct_feedback_action_bound': '2*r*z/((1-z)*(1-abs(a)))*norm(K-Khat)',
+            'postselection_query_source_gap_control': str(source_gap),
         },
     }
     if args.output:
