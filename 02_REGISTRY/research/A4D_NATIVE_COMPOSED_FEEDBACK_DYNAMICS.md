@@ -6,6 +6,7 @@ Input main: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Prepared-readout follow-up input: `58407f912e6f4cedfff3625cdd4e7ba09c6e7951`.
 Two-native-preparation follow-up input: `7479dbcb5970b4450912cc848a53e1622e9524af`.
 Recorded-quadratic follow-up input: `7c204c9d0e6a405216f9762ddd4d4d55ba57dab4`.
+Whole-bootstrap follow-up input: `bbd81c495ea6fcea683f78872b392015c9407401`.
 Consumer: G0b in `D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md`.
 Status: proved finite operator/action/refinement slice; G0--G4 remain open.
 
@@ -29,6 +30,14 @@ the owned preparation J and its next native history GJ span the entire new
 factor. All four cross-return operators reconstruct the full joint operator,
 including complementary dynamics, and hence its literal feedback action and
 actual derivative. Reconstruction does not select the physical scene law.
+
+The whole-bootstrap follow-up in §6.6 now derives the actual thermal
+covector and its coupling to feedback. Literal binary replication retains
+the heat covector and doubles the feedback covector. A coarse stationary
+variation transfers precisely when the fine thermal covector also doubles.
+An independent connected-Laplacian control has a genuinely stationary
+coupled slice and a nonstationary replicated image. Native scene constraints
+and their actual spectral transition are not replaced by that control.
 
 This result uses the actual entries of
 `D0.Representation.GoldenOrderInterferometer.gate` and
@@ -700,25 +709,154 @@ heat-trace term retain their own owners. No new action, physical source,
 complementary selector or metric field law is supplied.
 
 
+### 6.6. Whole bootstrap: joint thermal source and refinement balance
+
+BOOK_03 §03.25 uses both contributions, with ordinary finite traces:
+
+\[
+ \mathcal B_\beta(\Delta,P,U)
+ =\beta^{-1}\log\operatorname{Tr}e^{-\beta\Delta}
+  -\log\det(I-zF(P,U)),\qquad
+ F=P U^T(I-P)UP.                                               \tag{29}
+\]
+
+The feedback reconstruction in §6.5 does not supply the joint spectral
+law for \(\Delta,P,U\). Here fix \(\beta\ne0\) and a nonempty finite real
+spectral profile \(\lambda_i(t)\), differentiable at the tested parameter.
+This spectral formula applies to a real self-adjoint finite operator
+with the declared profile; no Lorentz heat trace or variable spectral
+decomposition is assumed. Set
+
+\[
+ Z=\sum_i e^{-\beta\lambda_i},\quad H=\beta^{-1}\log Z,\quad
+ h(v)=-\frac{\sum_i e^{-\beta\lambda_i}v_i}{Z}.                 \tag{30}
+\]
+
+The partition is strictly positive. The compiled `genuine_thermal_source`
+differentiates the exponential sum and logarithm, proving that \(h\) is
+the genuine derivative of \(H\). Adding an actual feedback derivative
+\(f\) gives the genuine whole derivative \(h+f\). Neither contribution
+is prescribed from a desired root. The capsule also binds the real
+coefficient extension directly to `SceneHeatKernel.zoneHeat`. Its three
+zone traces sum to the existing combinatorial-scene polynomial
+\(1+12x^{20}+10x^{22}+8x^{24}+2x^{33}\). This binding does not identify
+the combinatorial scene Laplacian with the separately normalized default
+operator or derive a varied physical scene from the frozen polynomial.
+
+**Complete raw replication calculation.** For the already defined
+\(L(A)=\operatorname{diag}(A,A)\), use the literal cylinder projector
+\(L(P)\), the full process \(L(U)\), the replicated spectrum, and the
+same fixed \(\beta,z\). This is an explicitly declared refinement;
+its physical admission and completeness in the core are not hypotheses
+that have been proved. Direct trace and determinant identities give
+
+\[
+ Z_+=2Z,\quad H_+=H+\beta^{-1}\log2,\quad S_+=2S,
+ \quad d\mathcal B_+=h+2f.                                  \tag{31}
+\]
+
+The last identity is compiled as a `HasDerivAt` proposition, using the
+actual heat derivative and the actual feedback derivative. The added
+constant has zero variation; it is not a selected counterterm. Thus
+
+\[
+ h+f=0\ \Longrightarrow\ d\mathcal B_+=f,
+ \qquad (h+f=0\ \wedge\ h+2f=0)\iff(h=f=0).                 \tag{32}
+\]
+
+For a different independently owned fine spectral transition, with its
+genuine thermal covector \(h_+\), the exact condition on a coarse
+stationary variation is instead
+
+\[
+          h_++2f=0\iff h_+=2h.                              \tag{33}
+\]
+
+Apply this equality to every admitted tangent direction of the actual
+joint family. Independently varying heat and feedback would be stronger
+than that family; the capsule does not assert that independence is native.
+For all independent real \(h,f\), a single calibration obeying
+\(h+kf=c(h+f)\) exists only for \(k=c=1\). This excludes a universal
+single normalization of raw replication, not a constrained native
+variation class. Iteration of (31) gives
+\(H_d=H+d\beta^{-1}\log2\), \(S_d=2^dS\), and
+\(d\mathcal B_d=h+2^df\). These follow by induction from the same
+dimension-independent identities, rather than by a finite depth search.
+For each native stage (33), not a new action, is the next compatibility
+condition to prove or classify from its own spectral/variation owner.
+
+**Nonempty independent stationary-slice control.** The formulas are fixed
+before solving the equation. On a connected two-vertex graph take
+
+\[
+ \Delta(t)=t\begin{pmatrix}1&-1\\-1&1\end{pmatrix},\quad
+ P=\operatorname{diag}(1,0),\quad
+ U(t)=\frac1{1+t^2}
+       \begin{pmatrix}1-t^2&-2t\\2t&1-t^2\end{pmatrix},
+ \quad \beta=1,\quad z=\tfrac12.                            \tag{34}
+\]
+
+This is a control in the finite spectral/orthogonal class, not a newly
+selected physical scene. For \(t>0\), the Laplacian has its exact zero
+mode and positive mode \(2t\); its quadratic form is
+\(t(x_0-x_1)^2\). The readout is an orthogonal projector and \(U\)
+is orthogonal for every real \(t\). The pencil is exactly
+\(\operatorname{diag}((1+t^4)/(1+t^2)^2,1)\), hence positive definite.
+No empty determinant fiber or lost zero mode is used. The sources are
+
+\[
+ h(t)=-\frac{2e^{-2t}}{1+e^{-2t}},\qquad
+ f(t)=\frac{4t(1-t^2)}{(1+t^2)(1+t^4)}.                     \tag{35}
+\]
+
+Both actual derivatives are compiled and bound to (29), including the
+matrix determinant. The continuous coupled-slice source \(h+f\) is
+\(-1\) at zero. At \(1/2\), \(f=96/85\) and \(h\ge-1\), giving
+\(h+f\ge11/85>0\). The compiled intermediate-value argument therefore
+gives a root \(t_*\in(0,1/2)\). Since \(f(t_*)>0\), its actual
+replicated derivative equals \(f(t_*)>0\). This is stationarity along
+the declared coupled curve, not a full joint root for all independent
+matrix variations and not an admitted native physical solution. It
+refutes unconditional slice-stationarity transfer for raw replication;
+it neither fits a source nor proves a whole-core obstruction.
+
+**Why the admissible tangent class matters.** An independent uniform
+spectral shift has the exact identity
+\(\mathcal B(\lambda+t,P,U)=\mathcal B(\lambda,P,U)-t\), with source
+\(-1\). The capsule proves that it cannot be stationary whenever that
+variation is allowed. A native Laplacian's zero-mode constraint can
+exclude the shift; the control (34) keeps its zero mode. This statement
+cannot be promoted to a native no-go by silently enlarging the domain.
+
+The remaining single constitutive arrow is the owned joint
+\(\Delta/P/U\) state and tangent law and its real spectral refinement.
+It must decide (33) on its complete admitted domain while preserving
+the recorded experiment and its normalization. An independently supplied
+thermal tower, a selected temperature rescaling or a replacement trace
+would not prove this arrow. No physical source/Ward, metric contrast,
+Einstein stationarity, soundness or curved recovery is inferred here.
+
 ## 7. Verification and next load-bearing input
 
-`certificates/a4d_native_composed_feedback_dynamics.lean` contains 115
+`certificates/a4d_native_composed_feedback_dynamics.lean` contains 147
 compiled propositions, with each actual type and transitive axiom list
-printed in its transcript. The receipt pins all five transitively imported
+printed in its transcript. The receipt pins all seven transitively imported
 D0 sources and the actual toolchain inputs. Standard logical axioms only;
-no new axiom or placeholder. The companion exact checker passes 421 controls and binds the book,
+no new axiom or placeholder. The companion exact checker passes 488 controls and binds the book,
 native matrices, complete-block identities, delayed archive control,
 composed source, joint projection refinement, determinant scaling and
 immutable result ledger. Finite controls do not replace the all-size proofs.
 
 The remaining single G0b input is the **joint scene process with its admitted
 coherent pair preparations, retained flag registration, common full-word
-execution and quadratic event readings**. For the feedback component,
+execution and quadratic event readings, together with the owned joint
+Delta/P/U tangent law and spectral refinement satisfying (33)**. For the feedback component,
 (29)--(35) replace a requirement for signed U tomography or inverse access.
 The compiler and fixed calibration are constructed; physical actuation,
 native admitted variations and uniform preparation bounds must follow from
-their owners. The scene contribution to the full bootstrap, including its
-heat-trace term, is still required. Apply the proved bounds with actual
+their owners. The thermal covector is now derived for the declared finite
+spectral family; its native state/variation/refinement admission is still
+required. Apply the proved bounds with actual
 native rank, normalization and recording errors.
 For the distinct image-supported preparation test, all completion effects
 are already exhausted by (16)--(17); one need not choose its unobservable

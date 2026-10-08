@@ -685,7 +685,7 @@ self-merge. CONTROL принимает проверенные части по SH
 поддерживаемые Lean owners, BOOK или исходные terminal contracts.
 
 
-## Импортирован записанный квадратичный feedback — текущий шаг
+## Импортирован записанный квадратичный feedback — предыдущий шаг
 
 Источник: #310 на `bbd81c495ea6fcea683f78872b392015c9407401`, вход `7c204c9d0e6a405216f9762ddd4d4d55ba57dab4`.
 [Доказательство §6.5](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) закрывает
@@ -701,3 +701,27 @@ versions. Исторические части, 44 статуса графа и �
 Одна следующая стрелка — совместный native scene process, его admitted
 experiment/variation/error law и полный bootstrap. Метрический источник/Ward,
 контраст, stationarity, curved recovery и global closure остаются открытыми.
+
+
+## Совместный bootstrap и условие переноса stationarity — текущий шаг
+
+Источник: #310 на `e74df7d999ae04a667d4de08625b8ec77bcdab5a`, вход `bbd81c495ea6fcea683f78872b392015c9407401`.
+[Доказательство §6.6](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) выводит
+тепловой covector полного собственного действия и совместную производную.
+При буквальном удвоении сохранён thermal source и удвоен feedback source;
+на coarse stationary variation перенос равносилен `fineHeat=2*heat`.
+Фиксированный connected Laplacian/Cayley контроль имеет доказанный
+стационарный coupled slice, чей удвоенный образ нестационарен. Он сохраняет
+нулевую моду и не считается полным native joint root. Независимый spectral
+shift исключает stationarity только при своём действительном допуске.
+
+147 propositions Lean, семь D0 pins, 488 exact controls; 86 ложных scope
+и 56 ложных exact ledger отвергнуты настоящим checker. CONTROL содержит
+198 дословных source artifacts и проверенные 407 artifact/input hash
+versions (314 current input versions). Исторический 115/421 результат,
+44 полных контракта графа и все исходные terminal сохранены.
+Одна следующая стрелка — собственный совместный Delta/P/U domain/tangent
+law и реальное spectral refinement, решающие полученное условие на полном
+допускаемом классе. Не выбирать новое действие, trace, temperature rule
+или источник ради stationarity. Native source/Ward, контраст, исправленные
+fine solutions, искривлённые решения, soundness/recovery и ОТО открыты.

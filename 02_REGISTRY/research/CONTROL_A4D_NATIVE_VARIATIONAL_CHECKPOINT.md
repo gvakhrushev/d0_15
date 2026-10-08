@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`bbd81c495ea6fcea683f78872b392015c9407401`, following
-`7c204c9d0e6a405216f9762ddd4d4d55ba57dab4`.
+`e74df7d999ae04a667d4de08625b8ec77bcdab5a`, following
+`bbd81c495ea6fcea683f78872b392015c9407401`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -47,8 +47,8 @@ All-size analytic bounds quantify action error with the required rank,
 resolvent, preparation and full-word factors. Uniform native O(h) bounds
 and metric/link variation maps remain to be derived.
 
-This packet now has 115 compiled propositions, five transitive D0 pins and
-421 exact controls; 74 false scope and 41 false exact ledgers are rejected.
+This packet now has 147 compiled propositions, seven transitive D0 pins and
+488 exact controls; 86 false scope and 56 false exact ledgers are rejected.
 Two owned native preparations J and GJ span the complete new factor.
 All four signed cross-return blocks uniquely reconstruct every full operator,
 its literal cylinder action and genuine source, including the prior hidden
@@ -64,10 +64,23 @@ amplitudes, selective controlled-U and inverse-U access are unnecessary for
 this feedback component. Genuine moving-source transport and analytic error
 bounds retain calibration, dimension, rank, resolvent and golden conditioning.
 
+The whole bootstrap now has its genuine thermal covector and joint source,
+with binding to the existing combinatorial scene heat coefficients. Raw
+binary replication leaves the thermal covector unchanged and doubles
+feedback; on a coarse stationary variation, transfer holds exactly when
+the fine thermal covector doubles. A connected-Laplacian/Cayley control
+has a compiled stationary coupled slice and nonstationary replicated
+image, retaining the zero mode. It is not a full native root. Uniform-shift
+exclusion applies only where that variation is actually admitted.
+The native joint Delta/P/U law and actual spectral transition must decide
+this condition on their complete admitted tangent class. No new trace,
+temperature law, source prescription or physical action is selected.
+
 The next G0b input is the actual joint scene law and the physical admission
 of coherent pair preparation, common full-word execution, cylinder registration
 and event readout, with independent variations and native error bounds. The
-separate bootstrap heat-trace term remains required. The internal compiler
+heat covector is proved on the declared finite spectral family; its native
+state, variations and refinement admission remain required. The internal compiler
 does not itself derive primitive actuation or a blank apparatus from M1.
 No physical action, source, complementary selector or postulate is introduced.
 

@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "a7f90c282b4b09069e874b837b464f8c8fa84d96bd0092f96f4805631fdfc92b",
+    "sha256": "76a180ca40b314f40cde93d2f54fc3d623fead2130ac902e2bd6843098310d5e",
     "global_census": false
   },
   "history_diagnosis": {
@@ -424,6 +424,26 @@
       "intake_artifacts": 198,
       "verified_artifact_input_hash_versions": 405,
       "verified_current_input_hash_versions": 312
+    },
+    "whole_bootstrap": {
+      "source_head": "e74df7d999ae04a667d4de08625b8ec77bcdab5a",
+      "input_head": "bbd81c495ea6fcea683f78872b392015c9407401",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "compiled_propositions": 147,
+      "transitive_d0_source_pins": 7,
+      "exact_controls": 488,
+      "false_scope_rejections": 86,
+      "false_exact_rejections": 56,
+      "result": "The whole BOOK_03 bootstrap now has a genuine finite spectral covector bound to the actual scene heat coefficients. Literal binary replication leaves the thermal covector unchanged and doubles feedback. A coarse stationary variation transfers exactly when the fine thermal covector equals twice the coarse covector. A fixed connected two-vertex Laplacian and fixed Cayley operation have a compiled nonempty stationary coupled slice with a nonstationary replicated image; this is not a whole native root. Uniform-shift exclusion is conditional on admitting that variation and protects native zero-mode constraints. 147 compiled propositions, seven D0 source pins and 488 exact controls. The owned joint Delta/P/U law, complete admitted variations, actual spectral transition, physical preparation/readout and native error bounds remain open. No action, trace, temperature law, selector, source prescription, postulate, G0/GR/global closure or original parent terminal is changed.",
+      "remaining": "G0b: derive the existing native joint Delta/P/U state and tangent law and its actual spectral refinement. On every admitted coarse stationary variation, prove the fine thermal covector equals twice the coarse covector under the established cylinder/feedback transition, or classify the precise complete-domain boundary from the actual owner. Preserve zero modes, coherent pair preparation, recorded full-word execution/readout, fixed normalization and native error bounds. No new action, thermal trace, temperature scaling or chosen coupling may replace this arrow. Native metric/link/matter variations, source/Ward, contrast, joint curved solutions and soundness/recovery remain required.",
+      "raw_replication_thermal_source_factor": 1,
+      "raw_replication_feedback_source_factor": 2,
+      "stationary_control_is_whole_native_root": false,
+      "native_joint_Delta_P_U_law_derived": false,
+      "G0_closed": false,
+      "intake_artifacts": 198,
+      "verified_artifact_input_hash_versions": 407,
+      "verified_current_input_hash_versions": 314
     }
   }
 }

@@ -22,7 +22,7 @@ the exact action/source scaling. The full physical complement law remains open. 
 intertwiner classification remains a scoped control, not the route owner.
 
 The [composed-feedback proof](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
-now has 115 compiled propositions and 421 exact controls. In addition to the
+now has 147 compiled propositions and 488 exact controls. In addition to the
 complete golden-active-block joint class and native composed-action gap,
 it classifies every compatible fine readout projector as `JPJ^T+S`, with S
 an orthogonal projector on the preparation complement. For the image-supported
@@ -53,6 +53,17 @@ The true moving derivative and dimension/rank/resolvent-sensitive action
 bounds are retained. The next physical input is the joint scene law and
 its admitted pair preparation/common execution/readout/variation interface,
 including the separate bootstrap heat-trace term. No G0 or GR closure follows.
+
+The whole-bootstrap follow-up now derives the genuine thermal covector
+and the coupled first variation, with direct binding to the existing scene
+heat coefficients. Raw binary replication keeps the heat covector and
+doubles feedback; a coarse stationary variation transfers exactly when the
+fine heat covector doubles. A fixed connected-Laplacian/Cayley slice has a
+proved stationary point and nonstationary replicated image. This control
+keeps its zero mode and is not a full native joint root. The next arrow is
+the owned joint Delta/P/U tangent law and actual spectral transition that
+decide this condition on the complete admitted domain. No thermal trace,
+temperature rule, source prescription or physical action is selected.
 
 The [G0 primitive-interface proof](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)
 now answers a necessary ownership question directly, without adding another
