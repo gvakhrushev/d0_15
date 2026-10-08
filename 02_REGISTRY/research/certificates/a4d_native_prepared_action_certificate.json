@@ -394,7 +394,7 @@
   "input_sha256": {
     "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_certificate.json": "75a59691122bbe2d2843892e1417acc8d3da7b14de77fb08c6ae9d474b74fbbd",
     "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_certificate.json": "8807a418e67a4b2ac89495b7f80ab7e2924349067dea3f1aab5b8addf5b29f89",
-    "02_REGISTRY/research/certificates/a4d_native_metric_compactness_certificate.json": "e7e3eda53226fdb4ed6e92603dac2c2bc431ff29897a59adecb78f0749dd1196",
+    "02_REGISTRY/research/certificates/a4d_native_metric_compactness_certificate.json": "7f96917c07fcaa1aed30f7d8a14ce52185f8a989567eced62912e5086ba04baf",
     "02_REGISTRY/research/certificates/a4d_native_prepared_action.lean": "2e6731a70fe3b42da87acba14c78aaee23c6654a4738a46aded6a3c2850190d9",
     "02_REGISTRY/research/certificates/a4d_native_prepared_action_output.txt": "659e806ac4742257decc65d4f1d1148dad5f439cbfafcbf09e37c27082114dd9",
     "03_FORMALIZATION/D0/Algebra/RoleSignature.lean": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf",

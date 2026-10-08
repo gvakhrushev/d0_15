@@ -490,6 +490,194 @@ admission into D0, own dynamics and #310's fixed-source/raw terminal remain
 open. The next preparation/composition law must explicitly address this
 state-domain and metric-refinement boundary.
 
+### 6.2 Full Lorentz-orbit obstruction and complete affine raw intertwiners
+
+Section 6.1 tests the refinement domain and its metric limit. There is a
+separate obstruction even on an arbitrarily small **proper gauge orbit of
+the flat state**. No curved root, equation, source or admitted physical
+selector is assumed in this test. The candidate is still the existing
+composed frozen one-form block, interpreted as refinement of e=F-eta.
+The required covariance is preservation of the actual raw-solder Lorentz
+orbits. It is necessary for a full-state transition on the existing joint
+quotient; a different weaker physical reading has its own proof obligation.
+
+Write p(x)=c_L(x), rho=K/L and d_r(x)=rho*1_[x_r<L]. The literal owner gives
+
+```text
+F_f(x)=eta+diag(d(x))*(F_L(p(x))-eta).                   (17)
+```
+
+This full sixteen-entry binding is compiled as
+`frozen_native_pointwise_affine_binding`. Occupancy is an external row
+weight; internal frame columns are all retained.
+
+**An exact nonempty gauge test.** Let Lambda(u) be the constant proper
+rotation of the internal B,C plane, fixing A,D, with its spatial block
+
+```text
+[ c(u)  s(u) ],   c(u)=(1-u^2)/(1+u^2),
+[-s(u)  c(u) ],   s(u)=2u/(1+u^2).
+```
+
+The coarse states F_L=eta and F_L=eta Lambda(u), with identity links,
+zero shifts and zero sixteen-component matter, are related by the owned
+full raw/link/matter node frame action. The constant conjugation leaves
+identity links unchanged. Both raw and transported coarse Gram metrics are
+exactly eta, and their raw determinants are -1. The rotation has determinant
+one and future component one; it is connected to identity for every small u.
+This is a full kinematic gauge test, not an assertion of a native physical root.
+
+The two active rows of (17) have the exact form
+
+```text
+F_BB=-1+d_B*(1-c),    F_BC=-d_B*s,
+F_CB=d_C*s,           F_CC=-1+d_C*(1-c).
+```
+
+Direct multiplication, with no expansion or smallness approximation, gives
+
+```text
+(F_f eta F_f^T)_BC=(d_C-d_B)*s.                         (18)
+```
+
+At a fine point with x_B<L and x_C>=L this is -rho*s, whereas the
+refinement of F_L=eta has raw Gram eta. Such points exist already at
+K=L+1. Therefore the two refined fields cannot be related by **any** fine
+Lorentz frame: raw Gram is invariant under the entire owned frame action.
+No choice of fine links, shifts or matter can erase this raw invariant.
+This is stronger than failure of the guessed pulled-back frame law.
+
+These are nondegenerate full fine states for sufficiently small nonzero u.
+The four B,C occupancy sectors have raw determinants respectively
+
+```text
+-1,    -1+rho*(1-c),    -1+rho*(1-c),
+-[1+2*rho*(rho-1)*(1-c)].                               (19)
+```
+
+For any fixed rho>1, (2*rho-1)*u^2<1 suffices. All remaining rows are
+unchanged. Thus excluding singular states or requiring a small neighborhood
+of flatness does not remove (18). A gauge-saturated admitted neighborhood
+containing the flat state cannot use (17) as a full quotient transition.
+Gauge fixing before applying (17), or admitting only one representative,
+would require an independently owned preparation and transition law.
+
+**Entire first-jet class, including nonlinear completions.** For any raw
+Lorentz tangent A, put S=eta*A; the Lorentz equation gives S^T=-S.
+Conversely every antisymmetric S is obtained from A=eta*S and has a proper
+Lorentz one-parameter curve. At the flat raw field, the metric derivative
+of eta+t*H is H+H^T. A proposed row-weighted first derivative H=diag(d)*S
+therefore gives the complete gauge metric jet
+
+```text
+(delta q)_ra=(d_r-d_a)*S_ra.                           (20)
+```
+
+It vanishes for **all six** independent internal Lorentz directions iff
+all four d_r are equal. Necessity follows by the elementary antisymmetric
+matrix in each pair; equality of the row weights is sufficient by
+antisymmetry. This all-size equivalence and the genuine raw Gram derivative
+are compiled. In every partial prefix mask of (17) the row weights are
+unequal. For the B,C rotation at a B-only mask, (18) has genuine derivative
+-2*rho at u=0.
+
+Consequently no differentiable full-state refinement with flat raw output
+eta and **this same full coframe first derivative on the stated gauge
+curve** can preserve the coarse Lorentz orbit. This includes nonlocal,
+link-dependent or nonlinear completions with an o(u) raw correction at
+that fine point. The scalar raw Gram derivative is still -2*rho; a curve
+inside one fine Lorentz orbit has identically zero metric derivative.
+`nonzero_metric_jet_not_orbit_constant` checks the local derivative argument;
+no zero totalized derivative is substituted for a genuine derivative.
+A correction of order u, a different first jet, raw reconstruction or a
+new gauge law is outside this class and must have its own native owner.
+
+**The discrepancy survives composed metric observations.** For K=rho L
+with fixed integer rho>=2, the two partial occupancy regions each occupy
+fraction (L/K)*(1-L/K). Equation (18) gives the exact raw packed-norm bound
+
+```text
+K^-4 sum_x ||q_f^rot(x)-q_f^flat(x)||_F^2
+  >= 4*(rho-1)*s(u)^2.                                (21)
+```
+
+The factor two for the symmetric BC slot is retained. All fine states are
+nondegenerate under (19). For identity fine links, the literal transported
+center equals the same constant masked raw field away from the B,C prefix
+boundaries. Restricting to 1<=x_B<L, L+1<=x_C<K and the reversed region
+preserves both actual incoming active rows. The other two coordinates are
+unrestricted. Their exact total cardinality is
+2*(L-1)*(K-L-1)*K^2, giving the transported lower bound
+
+```text
+4*rho^2*((L-1)*(K-L-1)/K^2)*s(u)^2
+  -> 4*(rho-1)*s(u)^2 > 0.                             (22)
+```
+
+For rho=2,u=1/16 the limit lower bound is 4096/66049. This is a
+**refinement covariance** discrepancy between two gauge-equivalent coarse
+flat states, not curvature of a physical fine solution. On each fixed-ratio
+family the raw fields are bounded, so arbitrary proper comparison links
+with sup|R-I|->0 change the transported metric by o(1). Vanishing normalized
+L2 metric recording/correction errors cannot remove (22). A fixed smooth
+nonnegative probe supported inside x_B in (0,1/rho), x_C in (1/rho,1)
+also has BC pairing limit -rho*s(u)*integral(chi), which is nonzero. One
+adjacent step can have a small volume norm even though it already fails the
+exact orbit law; composed fixed ratios cannot be inferred from that error.
+
+**Complete affine alternative, with no selected replacement lift.** Fix a
+finite coarse-to-fine vertex map p. Consider *all* real affine maps from
+all coarse raw matrix entries to fine raw entries, independent of links,
+shifts and matter. Require covariance under every independent proper
+coarse Lorentz node frame, with fine frame Lambda(p(x)). The whole class is
+
+```text
+T(F)(x)=C_x*F(p(x)),                                  (23)
+```
+
+with arbitrary real 4x4 C_x. Here is a complete proof. Expand an affine map
+into its bias and linear coefficients for each input site and row. Affine
+identities valid on the open product of nondegenerate raw matrices extend
+to all entries. For y!=p(x), varying only the frame at y forces every input
+covector coefficient to be fixed by all proper Lorentz matrices, hence zero.
+For y=p(x), each output-row/input-row coefficient is a 4x4 commutant of the
+standard Lorentz representation, hence a scalar multiple of identity. The
+bias is also a fixed row covector and is zero. These scalars form C_x.
+Conversely (23) is covariant under every node frame.
+
+No unproved representation theorem is needed for those two finite facts.
+The three proper spatial half-turns have distinct sign characters on A,B,C,D,
+so a commuting matrix is diagonal. The three proper rational boosts in AB,
+AC,AD force its four diagonal values to agree. A row fixed by the half-turns
+has only its A entry left, and any one of those boosts kills that entry.
+Thus this finite set is already sufficient; scalar matrices and zero rows
+satisfy the entire group requirement. Exact controls certify commutant
+rank 15, fixed-row rank 4, and the 16-dimensional full raw intertwiner space.
+This is an analytic universal proof, not a numerical-rank extrapolation.
+
+The class (23) preserves **every** nondegenerate coarse raw field iff each
+C_x is invertible. Requiring the fixed raw reference eta to map to eta
+forces C_x=I, hence the unique affine map in this precisely stated class is
+raw B0 pullback. For a composed family the full law is
+C_(K,M)(x)=C_(K,L)(x)*C_(L,M)(p_(K,L)(x)); reference preservation fixes all
+these factors to identity. Raw B0 pullback, however, is not the exact
+scale-corrected one-form chain block. Already at the newly added point of
+an adjacent cycle, the forward difference of B0 f is zero while B0 of the
+coarse forward difference can be nonzero. Exact controls retain this
+counterexample and the true B1 chain identity. Formula (23) is a
+classification, **not a replacement arrow introduced into D0**.
+
+The result closes the complete fixed-background frozen row-jet orbit class
+and the complete affine connection-independent intertwiner class. It does
+not exhaust nonlinear maps with a different first jet, covariant link
+reconstruction, a different diagram/readout, constraints with an owned
+gauge preparation, or all native dynamics. Lorentz naturality alone does
+not select an action, source, Ward identity, independent physical gate,
+curved solution, action-contrast transfer, soundness or recovery. G0/GR and
+all original parent terminals remain open. The single next owned
+history/preparation/composition law must now account for this gauge-orbit
+failure as well as the earlier state-domain and weak-metric boundary.
+
 ## 7. Verification and the single remaining consumer
 
 The companion [exact checker](certificates/a4d_native_metric_compactness_check.py)
@@ -500,14 +688,17 @@ curvature, raw norm/product threshold, gauge control and actual refinement
 defects. The stored [ledger](certificates/a4d_native_metric_compactness_certificate.json)
 is compared in full; false scope extensions are rejected. The recorded
 compiler receipt distinguishes the finite propositions from every analytic
-continuum or phase-construction step above. The capsule prints 29 propositions
-and 21 actual theorem types, with 36 transitive D0 source pins and only
-standard axioms. The extended checker has 326 exact controls, including
+continuum or phase-construction step above. The capsule prints 38 propositions
+and 30 actual theorem types, with 36 transitive D0 source pins and only
+standard axioms. The extended checker has 543 exact controls, including
 all composed graded rows, full-carrier preservation failures, the flat bulk,
-complete Lorentz gauge and nonempty resonant comparison. Twenty-nine false
-scope ledgers and six falsified exact-result ledgers must be rejected.
+complete Lorentz gauge and nonempty resonant comparison. Thirty-seven false
+scope ledgers and ten falsified exact-result ledgers must be rejected.
 The all-ratio and fixed-smooth-test limit arguments are analytic, not
-compiled continuum theorems.
+compiled continuum theorems. The full affine intertwiner classification
+is analytic; the exact proper group witnesses force its full commutant and
+fixed-vector claims. The new proper gauge curve and its nonzero metric jet
+have genuine compiled derivatives, including the local nonconstancy test.
 
 **Closed:** the metric-only loophole for the complete stated small centered-
 gradient chart, its product-bounded transported extension, and the alleged
@@ -516,6 +707,10 @@ explicit countersequence proves that last implication false.
 Section 6.1 adds the full frozen-coframe state-domain and weak-metric
 boundary. Its curved-resonance gap persists under complete Lorentz gauge,
 arbitrary small comparison links and vanishing metric correctors.
+Section 6.2 additionally excludes every differentiable completion retaining
+the frozen row first jet on the flat gauge orbit, and completely classifies
+the specified affine raw intertwiners. Fine Lorentz frames and links cannot
+remove the raw Gram defect.
 
 **Next single G0 consumer:** derive native admission, the history-to-action
 law and commuting refinement on the full raw/transported joint carrier,
