@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `9488c133312768580bdad43bb570a0bed836432f` through
+#310 at `ff8fbe88ba3d981f19b3be71f84f5c3103e30859` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -85,8 +85,8 @@ real scalar variation and profile nonselection, the full convex-profile
 contrast obstruction, the direct coordinate weak gap with its exact
 small-field corrector exception, and the bounded-positive flat-calibration
 obstruction under its specified native-map hypotheses. Twenty-three compiled
-propositions and 91 controls pin 33 transitive sources. The expanded 173-artifact slice
-has 373 verified distinct artifact/input hashes; the gravity graph has
+propositions and 91 controls pin 33 transitive sources. The expanded 179-artifact slice
+has 380 verified distinct artifact/input hashes; the gravity graph has
 44 scoped nodes and is not a global ambiguity census. Independent matter,
 physical Ward, native metric/refinement maps and positive GR remain OPEN.
 
@@ -200,3 +200,12 @@ the unproved physical admission/action/Euler obligations. A smooth curved
 transported readout or exact geometric link bonding does not promote G0,
 GR, source/Ward, recovery or the original #310/#202/#317 terminals. No new
 physical action, selector or registered research task is introduced.
+
+
+The complete prepared-pair action follow-up is included in the same review
+intake, with the updated source theory assignment. Its genuine full-matter
+stationary-output distinction, common-geometry premises, owned affine-frame
+invariance and scalar-block refinement are retained exactly. The mathematical
+verified payload countermodel is not a native history preparation or physical
+action. Full raw/link refinement, resonant admission, source/Ward, physical
+joint solutions and all G0/GR/original terminal obligations remain open.

@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`9488c133312768580bdad43bb570a0bed836432f`, following
-`af3658e09762860e1e38820fd8bc11de54403cff`.
+`ff8fbe88ba3d981f19b3be71f84f5c3103e30859`, following
+`9488c133312768580bdad43bb570a0bed836432f`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -19,7 +19,7 @@ The plan remains CONTROL metadata; the proof and certificates are source artifac
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-173 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+179 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
@@ -111,7 +111,7 @@ the 53 pins of the centered-metric capsule, and the 50 pins of the
 transported-connection capsule, and the 43 pins of the connection-action
 capsule, and the 56 pins of the coupled-Hodge capsule, the 49 pins of the actual weighted-Dirac capsule, the 83 pins of the G0
 ownership capsule and the two pins of the separate external-review capsule, the registry snapshot
-and all twenty-seven exact certificates' input hashes match
+and all twenty-eight exact certificates' input hashes match
 this main-based intake exactly.
 Links to unmerged completed-probe prerequisites use the immutable published
 `af221e2fed92821c52afc88a5500774de8cd9a93`,
@@ -487,15 +487,17 @@ local file or an implicitly merged scientific parent.
 
 40. **Native metric-only compactness and small-link resonance:** The entire small native centered-gradient chart (pointwise positive Frobenius norm at most one-quarter) has the exact Korn identity and a mesh-independent nonlinear metric inverse with squared constant 4/3. Metric-only strong L2 convergence to a smooth metric supplies coframe compactness and forces a flat limit; its compactness/regularity proof is analytic. For the actual transported center, delta_link times raw-field L2 tending to zero suffices for the same flatness. O(h) proper Lorentz links or bounded native potentials alone do not: a literal bounded native Nyquist potential with raw determinant -1, raw square 4+8/h^2 and two active proper links has a transported metric tending uniformly with O(h) error to diag(1,-1,-1-f^2,-1-f^2), f=(2+cos(2*pi*t))/32. Its Ric_AA and G_BB at zero are 24*pi^2/1033. Coframe variance is 9/1024 and the link/raw product square limit is 9/32. The full raw quotient stays noncompact and is not gauge; exact dressed-link constraints and the nonuniform transported coordinate change are checked. The exponential companion has exact geometric two-edge link bonding, separately from the actual frozen native lift. Neither geometric potential decimation nor frozen B0/cochain composition bonds the coframes: the former has squared potential defect one, while the latter has centered-gradient square 4*K. All 24 admitted link directions, ten packed metric components, 21 compiled propositions, 13 actual types, 36 transitive D0 pins, 171 exact controls and 21 false-scope rejections pass. Native preparation/admission, history-to-action law, genuine geometric Euler equations, source, physical Ward, commuting full refinement, soundness/recovery and causal constraints remain required. No new action, selector, physical gate, G0/GR/global closure or original parent terminal is introduced. The next single consumer must decide admission/action/refinement of this full raw/transported resonant family using independently owned laws, not small links alone.
 
+41. **Complete prepared-pair action and genuine stationary-output boundary:** The entire prepared-pair action fiber is classified for every fixed actual VerificationProtocol and independently supplied endpoint maps: identity-zero, unit-gap and complete record-pair fiber consistency are necessary and sufficient. Actual native vacuum scalar readouts at two persistent phase anchors give two nonzero positive costs with different genuine full matter stationary outputs, preserving the owned affine node-frame action and literal scalar B0 refinement. A generic joint-gate equivalence is derived from actual differentiable actions, retaining variation curves through the declared background, independent full matter directions and a genuine stationary common geometry action as explicit premises. Full raw nondegenerate coframe, Lorentz affine links including shifts and all sixteen matter components are retained in verified mathematical payload countermodels. These are not the actual scene histories or a derived physical native preparation. The all-PSD two-anchor quadratic stationary-output kernel classification is analytic; thirty compiled propositions, twenty actual types, 68 transitive native pins and 367 exact controls pass. No action, selector, physical source/Ward, full raw/link refinement, resonant admission decision, G0/GR/global closure or original parent terminal is selected. The single remaining G0 law must derive native history/record preparation with composition and full refinement and explain its restriction of this complete prepared-action fiber; arbitrary new cost readings and off-shell examples do not answer it.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
-labels, Lean owners and BOOK text are unchanged. The 173 imported files
+labels, Lean owners and BOOK text are unchanged. The 179 imported files
 are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The twenty-seven self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41, 114, 139 and 171 exact controls without
+The twenty-eight self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41, 114, 139, 171 and 367 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -571,7 +573,7 @@ positive-state classification, atomic limits and the smooth-test obstruction
 are analytical proofs, not compiled measure-theoretic limit theorems.
 Ninety-two exact controls pass. Four hostile ledgers falsifying the atomic
 class, curved gap, adjacent-error boundary and direct smooth-test terminal
-are rejected. All 173 artifact blobs and 373 distinct artifact/input hashes
+are rejected. All 179 artifact blobs and 380 distinct artifact/input hashes
 are verified, including three explicit published prerequisite versions of the
 completed-probe proof.
 The centered-metric capsule checks 22 new and two existing propositions
@@ -765,3 +767,27 @@ The next G0 proof must derive the native preparation/action/refinement law
 and decide this displayed resonant family's admission. Small links alone
 cannot exclude it. Genuine equations, own source/Ward, contrast control,
 curved physical recovery, causal restrictions and all parent terminals remain.
+
+
+The [complete prepared action theorem](A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md)
+is imported with thirty compiled propositions, twenty actual theorem/definition
+types, 68 transitive D0 source pins, 367 exact controls, 22 rejected false-scope
+ledgers and three rejected root/derivative/codimension mutations. Every fixed
+actual protocol and independently supplied preparation has the exact
+identity/gap/record-fiber characterization. Two nonzero positive native scalar
+readings have different genuine full matter stationary outputs, preserved
+by the owned affine node-frame action and the literal scalar B0 block.
+The joint-gate equivalence retains curves through the stated background,
+geometry differentiability, independent full matter directions and a genuine
+common stationary background. No empty fiber or off-shell-only distinction
+is promoted to physical inequivalence.
+
+The verified raw/coframe/Lorentz-affine-link/matter payload models are
+countermodels of the primitive interface; they are not the literal scene
+histories, a derived native preparation, selected physical action, source/Ward
+or full background refinement. The [updated theory assignment](D0_THEORY_TASK_NEXT_2026-10-07.md)
+requires the single owned preparation/composition/full-refinement law and its
+actual restriction of the complete cost fiber. Admission of the existing
+curved raw/link resonance, own source/Ward, physical joint roots and all
+soundness/recovery/causal obligations remain. G0, GR, global closure and
+every original parent terminal are unchanged.
