@@ -1195,6 +1195,179 @@ primitive/tangent/refinement law, physical source/Ward, contrast, genuine
 native on-shell system, curved roots, soundness/recovery and GR remain open.
 
 
+### 6.9. Owned scene histories give an actual nonpassive return law
+
+Input: `915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`. The previous passive
+spectral classification does not exhaust retained histories. Here the
+operator and both readouts are taken from the actual native scene-history
+owner, rather than supplying an arbitrary matrix completion. The carrier is
+`LevelOneSceneHistory`, the 718 ordered adjacent pairs (u,v) of the full
+33-vertex scene. `SceneEndpointReynoldsExpectation` already defines endpoint
+and source, their lifts J=Jt and Js, the endpoint average C=C1, and the actual
+reversal r(u,v)=(v,u). Its matrix R is now constructed without extra data.
+
+The complete finite preparation/readout maps are
+
+\[
+ J_{(u,v),b}=\mathbf1_{v=b},\quad
+ C_{b,(u,v)}=d_b^{-1}\mathbf1_{v=b},\quad
+ Rf(u,v)=f(v,u),\quad d_b=\sum_a A_{ba}.             \tag{50}
+\]
+
+They are defined on all history amplitudes; no blank reset, selective branch
+or external clock is introduced. A generic edge-sum theorem proves the
+actual maps, their degree normalization and their left inverse directly:
+
+\[
+ J^TJ=D,\quad C=D^{-1}J^T,\quad CJ=I,\quad
+ RJ=J_s,\quad T=CRJ=D^{-1}A.                       \tag{51}
+\]
+
+The capsule re-proves (51) on the **literal D0 definitions**. It does not
+depend on the older native-decide proofs of the owner. R^T=R and R^2=I,
+and P=JC is a genuine counting-Hilbert orthogonal projection. On vertex
+amplitudes the inherited pairing is D, not the unweighted identity: T is
+D-self-adjoint. Thus ordinary endpoint averaging is a mathematical
+projection whose discarded information must remain in the full state.
+The constructions provide finite representations; physical preparation,
+readout and actuation admission remain their independent obligations.
+
+**Full feedback is forced by these owned operations.** Put Q=I-P, retaining
+the entire 685-dimensional endpoint complement. The same existing feedback
+formula, with no substitute determinant action, gives
+
+\[
+ F=P R^T Q R P=J F_c C,\qquad
+ F_c=I-T^2=2\Delta-\Delta^2,\quad\Delta=I-T.        \tag{52}
+\]
+
+Delta is exactly the existing `fullNormalizedLaplacian`, not the frozen
+three-zone degree square or the combinatorial scene Laplacian used in the
+separate heat-polynomial control. Expansion using R^2=I and CJ=I proves
+(52) at all finite sizes. This is an actual operator coupling supplied by
+one native history representation. It does not assert that every physical
+native state uses this representation, that the reversal is the whole D0
+tick, or that the coarse Delta is the heat operator on all 718 coordinates.
+
+The Weinstein--Aronszajn identity preserves the **ordinary** action pencil:
+
+\[
+ \det(I_{718}-zF)=\det(I_{33}-zF_c).               \tag{53}
+\]
+
+This equality is compiled generically; no trace normalization or archive
+counterterm is inserted. The whole return process differs from iterating
+its average. For every k>=0,
+
+\[
+ CR^{2k}J=I,\qquad CR^{2k+1}J=T,\qquad
+ F(R^{2k})=0.                                    \tag{54}
+\]
+
+All three statements are compiled at arbitrary sizes. For every nonzero
+zone-balanced x in the owned 30-dimensional adjacency kernel,
+
+\[
+ Tx=0,\quad F_cx=x,\quad CRJx=0,\quad CR^2Jx=x.  \tag{55}
+\]
+
+The entire balanced class is consumed, rather than one fitted input. A
+kernel-checked nonzero witness x=e_0-e_1 makes the actual F nonzero and
+proves CR^2J != T^2. Its full prepared norm squared is 48, and all 48 is
+retained in QRJx at the first return. Replacing R^2 by T^2 erases it. The
+other 29 independent balanced directions have their exact norm/return
+controls as well. The scene adjacency kernel (dimension 30) and the
+endpoint-history complement (dimension 685) are distinct spaces; neither
+is silently identified with a physical dark component.
+
+**Feshbach history kernels are now computed from an owned operator.** With
+E=QRJ, D_Q=QRQ and B=CRQ, the full archive satisfies
+
+\[
+ D_QE=-ET,\qquad D_Q^kE=E(-T)^k,\qquad
+ B D_Q^k E=(I-T^2)(-T)^k.                         \tag{56}
+\]
+
+These are generic compiled identities, explicitly bound to the native R,
+J and C for every delay k. They retain the complete initial archive domain;
+they only determine the return kernel of the reachable part. For z^2!=1
+the full inverse and its retained readout are
+
+\[
+ (I-zR)^{-1}=\frac{I+zR}{1-z^2},\qquad
+ C(I-zR)^{-1}J=\frac{I+zT}{1-z^2}.                \tag{57}
+\]
+
+Both inverse directions and the compression are compiled. This resolvent
+of R is a history calculation, not a replacement of the feedback pencil
+in (53). When I+zT and the archive pencil are invertible, ordinary Schur
+elimination gives the effective transition
+
+\[
+ W_{\rm eff}(z)=(T+zI)(I+zT)^{-1}.                 \tag{58}
+\]
+
+Indeed the inverse of (57) equals I-z W_eff; substituting (58) checks the
+identity. On the whole balanced archive Tx=0, W_eff(z)x=zx. A nontrivial
+return can therefore exist without importing a coupling into the frozen
+rank-3/rank-30 scene split: the actual state has retained the source vertex.
+Formula (58) is an analytic consequence of (56)--(57), not separately
+claimed as a new fully formalized physical transition.
+
+**Covariance retains the record.** Every graph automorphism sigma acts on
+both vertices, (u,v)->(sigma u,sigma v). This action commutes with r and
+transports both readouts; the generic identities are compiled. Therefore
+this history interaction is compatible with simultaneous relabeling. The
+vertex-only `EquivariantSeamNoGo` theorem remains valid on its declared
+33-dimensional carrier. Its hypothesis cannot be applied to a retained
+record transforming with the scene: the history space is a different
+representation. Relabeling only the endpoint gives an explicit negative
+control. No M1 uniqueness or physical actuation claim is inferred from
+this covariance.
+
+For the actual full scene, exact rational characteristic polynomials give
+
+\[
+ \chi_T(t)=t^{30}(t-1)(t^2+t+39/160),
+\]
+\[
+ \chi_{F_c}(t)=t(t-1)^{30}
+     (t^2-119t/80+14001/25600),
+\]
+\[
+ \det(I-zF)=(1-z)^{30}
+     (1-119z/80+14001z^2/25600).                  \tag{59}
+\]
+
+F_c has rank 32, trace 2519/80, one protected constant mode, and unit
+feedback on all 30 balanced directions. At z=1/4, (59) lies strictly
+between zero and one, whereas the two-return feedback determinant is one.
+This is a nonempty finite action contrast of owned operations, not a
+field-stationary physical solution or a source fitted to one.
+
+The generated Hilbert subspace span(J,RJ) has dimension 65. To see this,
+normalize J by D^{-1/2}; the two-history Gram matrix is
+[[I,M],[M,I]] with M=D^{1/2}TD^{-1/2}. Only T's simple eigenvalue 1 has
+absolute value one, so this Gram matrix has exactly one null direction.
+Exact rational rank verification gives the same 65. Its orthogonal
+653-dimensional complement is R-invariant and invisible to this endpoint
+readout; it is **retained**, not declared physical gauge or removed from
+the heat trace. These dimension/Gram consequences are analytic and exact
+certificate results; no separate Lean rank theorem is claimed.
+
+The new standalone capsule has 60 compiled propositions, 30 D0 source pins
+and standard logical axioms only. It closes the finite history/readout
+arrow (50)--(57) and supplies the actual spectral/feedback relation (52).
+The next single G0b input is the independently owned **admission, full
+spectral operator and refinement of this joint scene/history state**,
+compatible with the golden cylinder process. Its complete tangent image
+must come from that state law. Apply the already proved source calculus
+to it, including the retained complement; do not promote (52) alone to
+whole-bootstrap stationarity or choose a heat operator to force (48).
+Native physical time/geometry, local source/Ward, quantitative contrast,
+curved joint roots, soundness/recovery and all original terminals stay open.
+
+
 ## 7. Verification and next load-bearing input
 
 `certificates/a4d_native_composed_feedback_dynamics.lean` contains 215
@@ -1206,20 +1379,28 @@ native matrices, complete-block identities, delayed archive control,
 composed source, joint projection refinement, determinant scaling and
 immutable result ledger. Finite controls do not replace the all-size proofs.
 
-The remaining single G0b input is the **joint scene process with its admitted
-coherent pair preparations, retained flag registration, common full-word
-execution and quadratic event readings, together with the owned joint
-Delta/P/U tangent law and spectral refinement satisfying (33)**. For the feedback component,
-(29)--(35) replace a requirement for signed U tomography or inverse access.
-The compiler and fixed calibration are constructed; physical actuation,
-native admitted variations and uniform preparation bounds must follow from
-their owners. The thermal covector now includes moving eigenvectors on the declared
-spectral family. Source-dependent stages are differentiated from the actual
-shared primitive chain, including their normalizer and pairing. The all-size
-operator heat/Jacobi formula is analytic; its general infinite differentiation
-is not mislabeled fully Lean-formalized. Native state/tangent admission, the
-full scene spectral coupling and its actual refinement are still required. Apply the proved bounds with actual
-native rank, normalization and recording errors.
+The new `certificates/a4d_native_scene_history_feedback.lean` separately
+contains 60 compiled actual propositions, 30 transitive D0 source pins and
+246 exact controls. Its kernel proofs bind actual Jt/Js/C1/reverseEdge,
+all word returns, every archive-delay kernel and the existing normalized
+scene Laplacian. Ordinary determinant reduction is generic; exact ranks
+and characteristic polynomials are independent certificate/analytic
+results. No compiler-trust axiom enters the new capsule.
+
+The remaining single G0b input is the independently owned admission,
+full spectral operator and refinement of the **joint native scene/history
+state**, compatible with the golden cylinders. The actual one-step
+history return and coarse spectral/feedback polynomial are now constructed
+in §6.9. The full carrier has a retained complement whose heat contribution
+cannot be erased. Determine the complete admitted tangent image and all
+retained word stages from that state law, then use the existing source
+calculus and test the required full-bootstrap refinement condition.
+Physical preparation, actuation/readout, native rank/normalization/recording
+bounds and native on-shell equations keep their explicit owners. No
+choice of a heat operator, source or variation can substitute for that
+arrow. The genuine moving-eigenvector/basis Ward proofs remain scoped;
+they do not supply the physical metric/matter Ward.
+
 For the distinct image-supported preparation test, all completion effects
 are already exhausted by (16)--(17); one need not choose its unobservable
 coordinates. Equating these two experiments is explicitly rejected. This

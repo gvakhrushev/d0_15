@@ -302,3 +302,33 @@ image. Passivity не предполагается, дефект не подго
 Физические подготовка/операции/readout, uniform bounds, local Ward,
 контраст, curved roots, soundness/recovery и ОТО остаются открытыми.
 Все исходные terminal и 44 контракта/статуса графа сохранены.
+
+
+## Собственная сцена вместе с сохраняемой историей — текущий шаг
+
+Вход: `915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`. В §6.9
+[того же исследования](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) построен
+оператор из существующего carrier 718 ориентированных историй и actual
+reverseEdge. Jt/Js/C1 связаны собственными kernel proofs без зависимости
+от старых native_decide leaves. Полный возврат памяти имеет CRJ=T,
+CR^2J=I и все delay kernels (I-T^2)(-T)^k. Собственный feedback теперь
+связан со сценой: J(I-T^2)C, а на существующем нормированном Delta он
+равен 2*Delta-Delta^2. Все 30 сбалансированных направлений возвращаются.
+Повторное усреднение T^2 теряет их; это явно исключено.
+
+Это actual конечная конструкция совместной истории и отклика, а не
+универсальная физическая динамика. При совместном переименовании обеих
+вершин сцена и запись согласованы; no-go на одном vertex carrier не
+исчерпывает retained histories. Обычный determinant сохранён. Kernel
+Lean проверил 60 propositions и 30 D0 pins; 246 exact controls прошли.
+Generated subspace имеет dimension 65, complement 653 сохранён;
+эти ranks доказаны аналитически и точным сертификатом.
+
+**Следующая одна стрелка G0b:** независимый собственный допуск full
+scene/history state, его спектральный оператор на полном сохраняемом
+носителе и согласованное с золотыми цилиндрами уточнение. Построить
+полный native tangent/word law, сохранить thermal вклад дополнения и
+применить уже доказанные genuine source formulas. Обращение шага не
+назначено всей физической динамикой; coarse polynomial не подменяет
+полный bootstrap. Новый action, trace, temperature, selector, coupling,
+source или postulate не вводится. G0--G4 и исходные terminal открыты.
