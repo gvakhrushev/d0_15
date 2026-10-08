@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "07f79610042b03f037dac35201f84d09bacdb2c23e01023b449f81b721351904",
-      "source_blob": "f35c26bb27aba5e3dae955235dda0e5df54f9d0f"
+      "sha256": "a3b1c69a2d1f1bb7ba5c1f3edd8478b9b43bec708ca897639a0042a2a6c0f353",
+      "source_blob": "495414b1174a7a4fb8936e12243df96a91103318"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "caaa8dcc758b42011f04668b843f44494e78cf7ea86ed0500c67c7030a36b4c9",
-      "source_blob": "144ac18473357641ed4d847a3272008e3e5e6858"
+      "sha256": "a3c5292b7a9d06e7331d3e34f3d1a25e27cf51a72bd655075d33986acda5d90b",
+      "source_blob": "7b959fc1e8329ff41a4205a0f81b6535160944b7"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -896,6 +896,71 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_prepared_action_certificate.json",
       "sha256": "58f6de320a59fedae0765ee6a5a183349cc2cb301862d6af94d5c559f60ee5cb",
       "source_blob": "a316e79196185b4f7e23caf24575e9f938564106"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md",
+      "sha256": "21309824974421b2f3ce3295e4f0f4da5116263d0c35de2f73c19486fba9fbfe",
+      "source_blob": "a1cd92cc00a7140a1c7c7f8c3dc3fd8009161f7a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_TIME_FIELD_INTERTWINER.md",
+      "sha256": "20de13976f231bf47aae0ed3e7101af0403ebe44f0c9435613e6e409b22d0485",
+      "source_blob": "540ef985bdbf7b6982c59b2d00486e88d0b89f5b"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md",
+      "sha256": "17c7f0f9a9dab36b9dcfb276be148c7862bd2094f116096dd7ca11e6b106336b",
+      "source_blob": "98a8aa758e5240e221d7f1baf686792acc36ba1f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent.lean",
+      "sha256": "a0e9b9b166fa6d863bb02192300afe91b685334a5f4a2663cab3c03c48807a3e",
+      "source_blob": "f263a31d517eaeab24e2c29f9a2f9b0a19c7d71c"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_certificate.json",
+      "sha256": "29131a88c8b1b81dd2cee260ec1cf3e783e593b86b85f1ddc45ef17517b6d1f8",
+      "source_blob": "8b47cdbd4f81ed180b8f941a1f9b14caba2015e9"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_check.py",
+      "sha256": "731c206674d999e5da9ee85affab6b6c11db4d380bacc1553d108832cc539bf7",
+      "source_blob": "eeb7fc44dada39f80b0ab1cc9cee9ed79abcf0cb"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_output.txt",
+      "sha256": "996be5a6ee25f2ed0cc8b4655ba300d2b5d014a7349b2c3a97e60fc29aa96a90",
+      "source_blob": "a35772c476eaf84d9de8916f0d28d5ea0ac62b6a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_results.json",
+      "sha256": "55e3da21f9dae491ff2973d8a15f183084115884ed8d8219b1f64aaa04341353",
+      "source_blob": "df047144417a3ae1247a263088202ff0e586e61d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner.lean",
+      "sha256": "afb659f0b585cb6f5f8c592214f701114d118d8ac40c5a9636f8a5d92089db0d",
+      "source_blob": "148130464a71b6ef721cd7657a13b9d4446b6b8e"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_certificate.json",
+      "sha256": "3c20786ecbaf59c45a57a0e9194854ead70cc337398fdfdd9325eedfbb07a22b",
+      "source_blob": "cca9321cf01b1730254de38469dbcc1377cf3318"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_check.py",
+      "sha256": "28114a40266fc9ecb49320f76f7256c006c9f0475b6085f5c4294a10c96100be",
+      "source_blob": "ecd084d48330554ccea2ae61268eb5a63c8db11f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_output.txt",
+      "sha256": "959d88cc6d6cd52cc00a82410e181be5da42b3ffc201a23430a11d63c1d66402",
+      "source_blob": "00043fe31a7abd4ce7591034b711772412bc9adc"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_results.json",
+      "sha256": "ce9132e5dbf308dcdee26417c24512927929c430544a81c2c3837820ab0a3d8e",
+      "source_blob": "13da7dfedc729b18181917efc64be77eebbfa8df"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -904,7 +969,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "9a724dc37520fd042c00b0a5b330ceae0b563da7",
+  "previous_source_head": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -951,11 +1016,13 @@
     "The entire prepared-pair action fiber is classified for every fixed actual VerificationProtocol and independently supplied endpoint maps: identity-zero, unit-gap and complete record-pair fiber consistency are necessary and sufficient. Actual native vacuum scalar readouts at two persistent phase anchors give two nonzero positive costs with different genuine full matter stationary outputs, preserving the owned affine node-frame action and literal scalar B0 refinement. A generic joint-gate equivalence is derived from actual differentiable actions, retaining variation curves through the declared background, independent full matter directions and a genuine stationary common geometry action as explicit premises. Full raw nondegenerate coframe, Lorentz affine links including shifts and all sixteen matter components are retained in verified mathematical payload countermodels. These are not the actual scene histories or a derived physical native preparation. The all-PSD two-anchor quadratic stationary-output kernel classification is analytic; thirty compiled propositions, twenty actual types, 68 transitive native pins and 367 exact controls pass. No action, selector, physical source/Ward, full raw/link refinement, resonant admission decision, G0/GR/global closure or original parent terminal is selected. The single remaining G0 law must derive native history/record preparation with composition and full refinement and explain its restriction of this complete prepared-action fiber; arbitrary new cost readings and off-shell examples do not answer it.",
     "The complete specified composed frozen one-form refinement/readout class is now resolved for every coarse coframe with all sixteen entries, arbitrary affine shifts and matter, and comparison links in a vanishing identity chart. Homogeneous raw prolongation loses nondegeneracy immediately; fixed-background perturbation prolongation also fails to preserve the whole nondegenerate raw carrier. Its exact new bulk has (K-L-1)^4 sites and transported metric entry error at most delta+delta^2 without a coarse raw bound. Composed compatibility against fixed smooth metric tests at every unbounded fixed ratio forces any smooth metric limit to equal eta. The existing curved resonance fails even one doubled weak metric interval, with squared L2 gap liminf at least 1/8388608 and a nonzero fixed smooth metric test; its full raw/link comparison is nonempty. The complete owned local Lorentz action and vanishing metric correctors preserve this boundary. Twenty-nine compiled propositions, twenty-one actual types, 36 native source pins, 326 exact controls and 422144 full graded composed row equations pass; 29 false-scope and six false-exact ledgers are rejected. The weak continuum assembly is analytic. Metric-readout compatibility is not inferred from an action-contrast bound. The typed physical native history/preparation/composition law remains required; this does not select an action, admit or exclude the resonance in the whole core, derive a physical source/Ward, change G0/GR/global closure, or replace any original #310/#202/#317 terminal.",
     "The full frozen raw refinement fails preservation of proper Lorentz orbits even on an arbitrarily small nondegenerate flat gauge orbit. Every differentiable full-state completion retaining the same row-weighted coframe first jet at the flat reference has the same nonzero raw Gram derivative; fine Lorentz frames and links cannot erase that invariant. All six Lorentz tangent directions are retained and zero gauge metric jet is equivalent to equality of all four row weights. The full coarse/fine gauge test is nonempty in all sixteen prefix masks. Fixed doubled ratios have transported squared metric-gap liminf at least 4096/66049 for a fixed small proper rotation; vanishing metric errors and small comparison links preserve it. All connection-independent affine raw intertwiners under independent proper pullback node frames are C_x F(p(x)); invertibility of C_x is exactly full raw-domain preservation, while the fixed raw reference eta forces C_x=I. This unique normalized raw B0 map fails the actual graded one-form chain identity. The complete affine classification is analytic. Thirty-eight compiled propositions, thirty actual types, 36 D0 source pins and 543 exact controls pass; 37 false-scope and ten false-exact ledgers are rejected. Prepared-action prerequisite digest is refreshed with all 367 controls and unchanged mathematics. This derives no other physical refinement, action, source, native root, weaker readout law, G0/GR/global closure or original parent terminal.",
-    "The literal fixed-reference frozen raw block cannot descend to the full raw Lorentz quotient on any nonempty nondegenerate full-state admission closed under the owned proper frame action. This includes isolated and nonlinear solution classes and requires no flat state, open domain, EOM, link smallness or continuum limit. Every strict native refinement has a B-prefix/C-tail point; its fine Gram BC equals rho F_BC for every coarse F. Four fixed connected proper frames force the entire B row to vanish if that component is orbit constant, contradicting nondegeneracy. Raw binding, gauge closure, nondegeneracy and the necessary fine metric invariance remain explicit premises of the compiled generic full-state theorem. Other state sectors and fine Lorentz frames cannot erase the raw invariant. Homogeneous full-raw B1 instead has a zero row at the same point. The prior nonempty full coarse/fine controls are retained. Forty-five compiled propositions, 37 actual types, 36 D0 pins and 593 exact controls pass; 41 false scopes and 13 false exact ledgers are rejected. Prepared-action mathematics and all 367 controls remain unchanged. This class does not exhaust other native laws, select a gauge preparation, derive a physical action/source/root or close G0/GR/global closure or any original parent terminal."
+    "The literal fixed-reference frozen raw block cannot descend to the full raw Lorentz quotient on any nonempty nondegenerate full-state admission closed under the owned proper frame action. This includes isolated and nonlinear solution classes and requires no flat state, open domain, EOM, link smallness or continuum limit. Every strict native refinement has a B-prefix/C-tail point; its fine Gram BC equals rho F_BC for every coarse F. Four fixed connected proper frames force the entire B row to vanish if that component is orbit constant, contradicting nondegeneracy. Raw binding, gauge closure, nondegeneracy and the necessary fine metric invariance remain explicit premises of the compiled generic full-state theorem. Other state sectors and fine Lorentz frames cannot erase the raw invariant. Homogeneous full-raw B1 instead has a zero row at the same point. The prior nonempty full coarse/fine controls are retained. Forty-five compiled propositions, 37 actual types, 36 D0 pins and 593 exact controls pass; 41 false scopes and 13 false exact ledgers are rejected. Prepared-action mathematics and all 367 controls remain unchanged. This class does not exhaust other native laws, select a gauge preparation, derive a physical action/source/root or close G0/GR/global closure or any original parent terminal.",
+    "The earlier regular native-time-to-common-parent readout classification is retained as a scoped control, not the active route. Twenty compiled propositions, three D0 source pins and 163 exact controls classify every real linear readout for arbitrary linear spatial A, including the nonlinear first jet and exact defect identity. It does not exclude independent native memory, other admitted preparations or the full core.",
+    "Native full-future equivalence and the realized response tower are constructed with actual surjective truncations and process naturality. The whole locally constant finite-depth response consumes the actual profinite finite-factorization owner; compactness proves realization of compatible histories. Golden cylinder expectations, cylindrical Hilbert pairing and arbitrary-linear-operator naturality are preserved; the refined golden factor has an explicit reversible blank preparation. The owned recorded golden operator distinguishes two states with both present marginals equal by the exact two-return Z gap -8*p^6, without a fresh record between reuses. All archive history, independent sources and both feedback determinant variations are retained. Forty-two compiled propositions, five D0 source pins and 189 exact controls pass; 41 false scope and 13 false exact ledgers are rejected. Point processes and amplitude processes retain distinct types. Joint admitted history/record dynamics and action/variation binding to the inclusions is the next G0b arrow; no full G0, GR or parent terminal is promoted."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
+  "source_head": "609e7daa7c801254ee671874750c5bc61f4efc71",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "9a724dc37520fd042c00b0a5b330ceae0b563da7",
+  "source_parent": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
   "source_pr": 310
 }

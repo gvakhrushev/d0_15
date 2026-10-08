@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
+    "source_head": "609e7daa7c801254ee671874750c5bc61f4efc71",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -270,51 +270,25 @@
       "g0_closed": false
     },
     "next_proof_packet": {
-      "stage": "G0",
-      "source_head": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
-      "no_new_registered_task": true,
-      "no_new_physical_postulate": true,
-      "carrier_input": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md",
-      "parent_law_input": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
-      "metric_and_refinement_input": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md",
-      "positive_source_input": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_SOURCE_JETS.md",
-      "single_first_lemma": "Owned native history/record preparation, composition-action and full refinement, restricting the complete prepared-pair fiber and deciding the resonant family.",
-      "outputs": [
-        "Complete own history/record preparation with composition-action, admitted variation image and full raw/link/matter refinement, explaining the primary restriction of the already complete prepared price fiber.",
-        "Decision on the bounded-potential small-link resonant family, with an actual quantitative native consequence if excluded.",
-        "Physical stationary/source comparison and whole quotient constraints; finite contrast requires the owned off-shell action law.",
-        "Genuine joint equations, own source/Ward and action/probe bounds if the family is retained; exact geometric link bonding is insufficient.",
-        "Positive construction or fully scoped derivability obstruction, preserving every original parent terminal."
+      "stage": "G0b",
+      "plan": "02_REGISTRY/research/D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md",
+      "target": "Derive the joint native history/record dynamics and its action/variation compatibility with the proved golden inclusions, using actual admitted preparations and operations.",
+      "already_proved": [
+        "canonical future-response quotient and tower",
+        "profinite finite factorization of complete finite-depth responses",
+        "compact compatible-history realization",
+        "golden expectation and Hilbert pairing preservation",
+        "explicit inverse-gate blank-factor preparation",
+        "full archive source-preserving elimination"
       ],
-      "do_not_repeat": [
-        "Fourier rank or joint quotient census.",
-        "Four-slot covariance/source derivative classification.",
-        "A chosen U or Dg inside the already classified flat orbit.",
-        "Small links or bounded potentials as an unproved raw compactness bound.",
-        "Geometric edge bonding as a native full-refinement theorem.",
-        "Off-shell coefficient inequality or raw auxiliary mismatch as physical nonuniqueness.",
-        "Positive homogeneous nonzero-source search inside the excluded class.",
-        "Primitive cost ratios or arbitrary scalar encodings after full prepared-pair completeness.",
-        "The persistent-bit payload verification countermodel as positive native history preparation.",
-        "Point-anchor scalar B0 compatibility as full coframe/link/background refinement.",
-        "An exact finite-history-to-all-real-values cardinality obstruction as a continuum contrast NO-GO.",
-        "Linear frozen cochain compatibility as preservation of the whole nondegenerate raw carrier.",
-        "The old 4*K defect as the full answer after the weak-metric bulk/gauge/corrector theorem.",
-        "Weak metric-probe compatibility inferred from O(h) action contrast without a linking theorem.",
-        "One doubled metric interval as global flatness without the unbounded composed-ratio premise.",
-        "A nonlinear higher-order raw correction with the same frozen gauge first jet as an orbit-law repair.",
-        "Fine link or Lorentz frame changes as erasure of a nonzero raw Gram invariant.",
-        "Covariance alone as selection of B0 without the fixed raw reference and connection-independent affine hypotheses.",
-        "The classified raw B0 intertwiner as an installed native one-form chain transition.",
-        "Restricting the same literal frozen raw block to isolated/nonlinear gauge-closed nondegenerate roots as a repair.",
-        "Treating one selected raw representative as an owned gauge preparation without deriving that preparation.",
-        "Promoting the two stated frozen raw interpretations to an exhaustion of all native transitions."
+      "preserved_downstream": [
+        "native metric/connection/matter preparation",
+        "source and Ward",
+        "calibrated contrast and native stationarity",
+        "curved existence, soundness and recovery",
+        "original fixed-source/raw-owner terminal"
       ],
-      "prepared_action_input": "02_REGISTRY/research/A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md",
-      "theory_assignment": "02_REGISTRY/research/D0_THEORY_TASK_NEXT_2026-10-07.md",
-      "frozen_full_metric_refinement_boundary": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#61-complete-frozen-coframe-refinement-class-and-its-metric-boundary",
-      "frozen_full_gauge_refinement_boundary": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#62-full-lorentz-orbit-obstruction-and-complete-affine-raw-intertwiners",
-      "frozen_full_admission_boundary": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#63-exact-admission-boundary-without-a-flat-state-or-open-domain-premise"
+      "new_physical_postulates": false
     },
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
@@ -388,6 +362,28 @@
       "physical_EOM_or_small_link_required": false,
       "native_preparation_or_other_transition_selected": false,
       "whole_core_admission_exhausted": false,
+      "G0_closed": false
+    },
+    "native_history_response_descent_consumer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md",
+      "source_head": "609e7daa7c801254ee671874750c5bc61f4efc71",
+      "result": "Native full-future equivalence and the realized response tower are constructed with actual surjective truncations and process naturality. The whole locally constant finite-depth response consumes the actual profinite finite-factorization owner; compactness proves realization of compatible histories. Golden cylinder expectations, cylindrical Hilbert pairing and arbitrary-linear-operator naturality are preserved; the refined golden factor has an explicit reversible blank preparation. The owned recorded golden operator distinguishes two states with both present marginals equal by the exact two-return Z gap -8*p^6, without a fresh record between reuses. All archive history, independent sources and both feedback determinant variations are retained. Forty-two compiled propositions, five D0 source pins and 189 exact controls pass; 41 false scope and 13 false exact ledgers are rejected. Point processes and amplitude processes retain distinct types. Joint admitted history/record dynamics and action/variation binding to the inclusions is the next G0b arrow; no full G0, GR or parent terminal is promoted.",
+      "compiled_propositions": 42,
+      "transitive_d0_source_pins": 5,
+      "exact_controls": 189,
+      "rejected_false_scope_ledgers": 41,
+      "rejected_false_exact_ledgers": 13,
+      "next": "One joint admitted history/record operator and action/variation binding to the derived golden cylindrical inclusions.",
+      "G0_closed": false,
+      "whole_core_obstruction": false,
+      "intake_artifacts": 192,
+      "verified_artifact_input_hash_versions": 397
+    },
+    "time_field_intertwiner_control": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_TIME_FIELD_INTERTWINER.md",
+      "source_head": "609e7daa7c801254ee671874750c5bc61f4efc71",
+      "result": "The earlier regular native-time-to-common-parent readout classification is retained as a scoped control, not the active route. Twenty compiled propositions, three D0 source pins and 163 exact controls classify every real linear readout for arbitrary linear spatial A, including the nonlinear first jet and exact defect identity. It does not exclude independent native memory, other admitted preparations or the full core.",
+      "active_route": false,
       "G0_closed": false
     }
   }

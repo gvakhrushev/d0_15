@@ -1,0 +1,748 @@
+D0.Research.NativeHistoryResponseDescent.future_keeps_present.{u_1, u_2, u_3} {S : Type u_1} {O : Type u_2}
+  {L : Type u_3} (T : L → S → S) (read : S → O) {x y : S}
+  (h : D0.Research.NativeHistoryResponseDescent.FutureEq T read x y) : read x = read y
+'D0.Research.NativeHistoryResponseDescent.future_keeps_present' does not depend on any axioms
+D0.Research.NativeHistoryResponseDescent.future_stable.{u_1, u_2, u_3} {S : Type u_1} {O : Type u_2} {L : Type u_3}
+  (T : L → S → S) (read : S → O) {x y : S} (h : D0.Research.NativeHistoryResponseDescent.FutureEq T read x y) (a : L) :
+  D0.Research.NativeHistoryResponseDescent.FutureEq T read (T a x) (T a y)
+'D0.Research.NativeHistoryResponseDescent.future_stable' does not depend on any axioms
+D0.Research.NativeHistoryResponseDescent.quotient_retains_every_future.{u_1, u_2, u_3} {S : Type u_1} {O : Type u_2}
+  {L : Type u_3} (T : L → S → S) (read : S → O) (w : List L) (x : S) :
+  D0.Research.NativeHistoryResponseDescent.quotientRead T read
+      (D0.Research.NativeHistoryResponseDescent.run (D0.Research.NativeHistoryResponseDescent.quotientStep T read) w
+        ⟦x⟧) =
+    read (D0.Research.NativeHistoryResponseDescent.run T w x)
+'D0.Research.NativeHistoryResponseDescent.quotient_retains_every_future' depends on axioms: [Quot.sound]
+D0.Research.NativeHistoryResponseDescent.complete_history_quotient.{u_1, u_2, u_3} {S : Type u_1} {O : Type u_2}
+  {L : Type u_3} (T : L → S → S) (read : S → O) (x y : S) :
+  ⟦x⟧ = ⟦y⟧ ↔ D0.Research.NativeHistoryResponseDescent.FutureEq T read x y
+'D0.Research.NativeHistoryResponseDescent.complete_history_quotient' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeHistoryResponseDescent.any_exact_factor_preserves_future.{u_1, u_2, u_3, u_4} {S : Type u_1}
+  {O : Type u_2} {L : Type u_3} {C : Type u_4} (T : L → S → S) (read : S → O) (q : S → C) (next : L → C → C)
+  (out : C → O) (step : ∀ (a : L) (x : S), q (T a x) = next a (q x)) (obs : ∀ (x : S), read x = out (q x)) {x y : S}
+  (h : q x = q y) : D0.Research.NativeHistoryResponseDescent.FutureEq T read x y
+'D0.Research.NativeHistoryResponseDescent.any_exact_factor_preserves_future' does not depend on any axioms
+D0.Research.NativeHistoryResponseDescent.tower_keeps_present.{u, u_1} {S : Type u_1} {O L : Type u} (T : L → S → S)
+  (read : S → O) (n : ℕ) (x : S) :
+  D0.Research.NativeHistoryResponseDescent.presentTree n
+      (D0.Research.NativeHistoryResponseDescent.responseTree T read n x) =
+    read x
+'D0.Research.NativeHistoryResponseDescent.tower_keeps_present' does not depend on any axioms
+D0.Research.NativeHistoryResponseDescent.canonical_truncation.{u, u_1} {S : Type u_1} {O L : Type u} (T : L → S → S)
+  (read : S → O) (n : ℕ) (x : S) :
+  D0.Research.NativeHistoryResponseDescent.trimTree n
+      (D0.Research.NativeHistoryResponseDescent.responseTree T read (n + 1) x) =
+    D0.Research.NativeHistoryResponseDescent.responseTree T read n x
+'D0.Research.NativeHistoryResponseDescent.canonical_truncation' depends on axioms: [Quot.sound]
+D0.Research.NativeHistoryResponseDescent.canonical_process_descent.{u, u_1} {S : Type u_1} {O L : Type u}
+  (T : L → S → S) (read : S → O) (n : ℕ) (a : L) (x : S) :
+  D0.Research.NativeHistoryResponseDescent.childTree n a
+      (D0.Research.NativeHistoryResponseDescent.responseTree T read (n + 1) x) =
+    D0.Research.NativeHistoryResponseDescent.responseTree T read n (T a x)
+'D0.Research.NativeHistoryResponseDescent.canonical_process_descent' does not depend on any axioms
+D0.Research.NativeHistoryResponseDescent.process_truncation_naturality.{u} {O L : Type u} (n : ℕ) (a : L)
+  (r : D0.Research.NativeHistoryResponseDescent.ResponseTree O L (n + 2)) :
+  D0.Research.NativeHistoryResponseDescent.trimTree n (D0.Research.NativeHistoryResponseDescent.childTree (n + 1) a r) =
+    D0.Research.NativeHistoryResponseDescent.childTree n a (D0.Research.NativeHistoryResponseDescent.trimTree (n + 1) r)
+'D0.Research.NativeHistoryResponseDescent.process_truncation_naturality' does not depend on any axioms
+D0.Research.NativeHistoryResponseDescent.realized_process_naturality.{u, u_1} {S : Type u_1} {O L : Type u}
+  (T : L → S → S) (read : S → O) (n : ℕ) (a : L)
+  (r : ↑(D0.Research.NativeHistoryResponseDescent.RealizedResponse T read (n + 2))) :
+  D0.Research.NativeHistoryResponseDescent.truncateRealized T read n
+      (D0.Research.NativeHistoryResponseDescent.advanceRealized T read (n + 1) a r) =
+    D0.Research.NativeHistoryResponseDescent.advanceRealized T read n a
+      (D0.Research.NativeHistoryResponseDescent.truncateRealized T read (n + 1) r)
+'D0.Research.NativeHistoryResponseDescent.realized_process_naturality' depends on axioms: [Quot.sound]
+D0.Research.NativeHistoryResponseDescent.realized_truncation_surjective.{u, u_1} {S : Type u_1} {O L : Type u}
+  (T : L → S → S) (read : S → O) (n : ℕ) :
+  Function.Surjective (D0.Research.NativeHistoryResponseDescent.truncateRealized T read n)
+'D0.Research.NativeHistoryResponseDescent.realized_truncation_surjective' depends on axioms: [Quot.sound]
+D0.Research.NativeHistoryResponseDescent.future_determines_every_depth.{u, u_1} {S : Type u_1} {O L : Type u}
+  (T : L → S → S) (read : S → O) {x y : S} (h : D0.Research.NativeHistoryResponseDescent.FutureEq T read x y) (n : ℕ) :
+  D0.Research.NativeHistoryResponseDescent.responseTree T read n x =
+    D0.Research.NativeHistoryResponseDescent.responseTree T read n y
+'D0.Research.NativeHistoryResponseDescent.future_determines_every_depth' depends on axioms: [Quot.sound]
+D0.Research.NativeHistoryResponseDescent.depth_retains_its_experiments.{u, u_1} {S : Type u_1} {O L : Type u}
+  (T : L → S → S) (read : S → O) (w : List L) {x y : S}
+  (h :
+    D0.Research.NativeHistoryResponseDescent.responseTree T read w.length x =
+      D0.Research.NativeHistoryResponseDescent.responseTree T read w.length y) :
+  read (D0.Research.NativeHistoryResponseDescent.run T w x) = read (D0.Research.NativeHistoryResponseDescent.run T w y)
+'D0.Research.NativeHistoryResponseDescent.depth_retains_its_experiments' does not depend on any axioms
+D0.Research.NativeHistoryResponseDescent.all_depths_iff_full_history.{u, u_1} {S : Type u_1} {O L : Type u}
+  (T : L → S → S) (read : S → O) (x y : S) :
+  (∀ (n : ℕ),
+      D0.Research.NativeHistoryResponseDescent.responseTree T read n x =
+        D0.Research.NativeHistoryResponseDescent.responseTree T read n y) ↔
+    D0.Research.NativeHistoryResponseDescent.FutureEq T read x y
+'D0.Research.NativeHistoryResponseDescent.all_depths_iff_full_history' depends on axioms: [Quot.sound]
+D0.Research.NativeHistoryResponseDescent.finite_depth_autonomy_forces_full_history.{u, u_1} {S : Type u_1}
+  {O L : Type u} (T : L → S → S) (read : S → O) (n : ℕ)
+  (next :
+    L →
+      D0.Research.NativeHistoryResponseDescent.ResponseTree O L n →
+        D0.Research.NativeHistoryResponseDescent.ResponseTree O L n)
+  (owned :
+    ∀ (a : L) (x : S),
+      D0.Research.NativeHistoryResponseDescent.responseTree T read n (T a x) =
+        next a (D0.Research.NativeHistoryResponseDescent.responseTree T read n x))
+  {x y : S}
+  (h :
+    D0.Research.NativeHistoryResponseDescent.responseTree T read n x =
+      D0.Research.NativeHistoryResponseDescent.responseTree T read n y) :
+  D0.Research.NativeHistoryResponseDescent.FutureEq T read x y
+'D0.Research.NativeHistoryResponseDescent.finite_depth_autonomy_forces_full_history' does not depend on any axioms
+D0.Research.NativeHistoryResponseDescent.realized_depth_finite.{u, u_1} {S : Type u_1} {O L : Type u} [Finite O]
+  [Finite L] (T : L → S → S) (read : S → O) (n : ℕ) :
+  Finite ↑(D0.Research.NativeHistoryResponseDescent.RealizedResponse T read n)
+'D0.Research.NativeHistoryResponseDescent.realized_depth_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.finite_family_locally_constant.{u, u_1} {X : Type u_1} [TopologicalSpace X]
+  {O L : Type u} [Finite L] (f : L → X → O) (hf : ∀ (l : L), IsLocallyConstant (f l)) :
+  IsLocallyConstant fun x l => f l x
+'D0.Research.NativeHistoryResponseDescent.finite_family_locally_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.complete_response_locally_constant.{u, u_1} {X : Type u_1} [TopologicalSpace X]
+  {O L : Type u} [Finite L] (T : L → X → X) (read : X → O) (hT : ∀ (l : L), Continuous (T l))
+  (hr : IsLocallyConstant read) (n : ℕ) :
+  IsLocallyConstant (D0.Research.NativeHistoryResponseDescent.responseTree T read n)
+'D0.Research.NativeHistoryResponseDescent.complete_response_locally_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.compact_response_range_finite.{u, u_1} {X : Type u_1} [TopologicalSpace X]
+  {O L : Type u} [Finite L] [CompactSpace X] (T : L → X → X) (read : X → O) (hT : ∀ (l : L), Continuous (T l))
+  (hr : IsLocallyConstant read) (n : ℕ) :
+  (Set.range (D0.Research.NativeHistoryResponseDescent.responseTree T read n)).Finite
+'D0.Research.NativeHistoryResponseDescent.compact_response_range_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.complete_response_owned_finite_factorization.{u, u_2} {O L : Type u} [Finite L]
+  (S : Profinite)
+  (T :
+    L →
+      ↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S) →
+        ↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+  (read : ↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S) → O)
+  (hT :
+    ∀ (l : L),
+      @Continuous (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str
+        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str (T l))
+  (hr :
+    @IsLocallyConstant (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S)) O
+      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str read)
+  (n : Nat) :
+  ∃ j g,
+    @Eq
+      (@LocallyConstant (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+        (D0.Research.NativeHistoryResponseDescent.ResponseTree O L n)
+        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+      (@LocallyConstant.mk (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+        (D0.Research.NativeHistoryResponseDescent.ResponseTree O L n)
+        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str
+        (@D0.Research.NativeHistoryResponseDescent.responseTree
+          (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S)) O L T read n)
+        ⋯)
+      (@LocallyConstant.comap
+        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str)
+            (@CategoryTheory.Functor.obj
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+              (@CategoryTheory.Functor.obj Profinite
+                (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+                (@CategoryTheory.Functor
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.category
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.const
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Limits.Cone.pt
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram
+                  S.asLimitCone))
+              j)))
+        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str)
+            (@CategoryTheory.Functor.obj
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram j)))
+        (D0.Research.NativeHistoryResponseDescent.ResponseTree O L n)
+        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str)
+            (@CategoryTheory.Functor.obj
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+              (@CategoryTheory.Functor.obj Profinite
+                (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+                (@CategoryTheory.Functor
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.category
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.const
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Limits.Cone.pt
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram
+                  S.asLimitCone))
+              j)).str
+        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str)
+            (@CategoryTheory.Functor.obj
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram j)).str
+        (@TopCat.Hom.hom
+          (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str)
+            (@CategoryTheory.Functor.obj
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+              (@CategoryTheory.Functor.obj Profinite
+                (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+                (@CategoryTheory.Functor
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.category
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.const
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Limits.Cone.pt
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram
+                  S.asLimitCone))
+              j))
+          (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str)
+            (@CategoryTheory.Functor.obj
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram j))
+          (@CategoryTheory.InducedCategory.Hom.hom (CompHausLike fun X => @TotallyDisconnectedSpace (↑X) X.str) TopCat
+            TopCat.instCategory (@CompHausLike.toTop fun X => @TotallyDisconnectedSpace (↑X) X.str)
+            (@CategoryTheory.Functor.obj
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+              (@CategoryTheory.Functor.obj Profinite
+                (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+                (@CategoryTheory.Functor
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.category
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.const
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Limits.Cone.pt
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram
+                  S.asLimitCone))
+              j)
+            (@CategoryTheory.Functor.obj
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram j)
+            (@CategoryTheory.NatTrans.app
+              (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+              (@Preorder.smallCategory
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@PartialOrder.toPreorder
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@DiscreteQuotient.instPartialOrder
+                    (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+              Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+              (@CategoryTheory.Functor.obj Profinite
+                (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str)
+                (@CategoryTheory.Functor
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.category
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Functor.const
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str))
+                (@CategoryTheory.Limits.Cone.pt
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@Preorder.smallCategory
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@PartialOrder.toPreorder
+                      (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                      (@DiscreteQuotient.instPartialOrder
+                        (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                        (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                  Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram
+                  S.asLimitCone))
+              S.diagram
+              (@CategoryTheory.Limits.Cone.π
+                (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                  (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                (@Preorder.smallCategory
+                  (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                    (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                  (@PartialOrder.toPreorder
+                    (@DiscreteQuotient (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)
+                    (@DiscreteQuotient.instPartialOrder
+                      (↑(@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S))
+                      (@CompHausLike.toTop (fun X => @TotallyDisconnectedSpace (↑X) X.str) S).str)))
+                Profinite (CompHausLike.category fun X => @TotallyDisconnectedSpace (↑X) X.str) S.diagram S.asLimitCone)
+              j)))
+        g)
+'D0.Research.NativeHistoryResponseDescent.complete_response_owned_finite_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.compact_compatible_history_realized.{u, u_1} {X : Type u_1}
+  [TopologicalSpace X] {O L : Type u} [Finite L] [CompactSpace X] (T : L → X → X) (read : X → O)
+  (hT : ∀ (l : L), Continuous (T l)) (hr : IsLocallyConstant read)
+  (c : (n : ℕ) → ↑(D0.Research.NativeHistoryResponseDescent.RealizedResponse T read n))
+  (hc : ∀ (n : ℕ), D0.Research.NativeHistoryResponseDescent.truncateRealized T read n (c (n + 1)) = c n) :
+  ∃ x, ∀ (n : ℕ), D0.Research.NativeHistoryResponseDescent.responseTree T read n x = ↑(c n)
+'D0.Research.NativeHistoryResponseDescent.compact_compatible_history_realized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.golden_cylinder_expectation_descent (w : List Bool) (v : ℝ) :
+  D0.CondensedAnchor.cylWeight (w.concat true) * v + D0.CondensedAnchor.cylWeight (w.concat false) * v =
+    D0.CondensedAnchor.cylWeight w * v
+'D0.Research.NativeHistoryResponseDescent.golden_cylinder_expectation_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.golden_partition_expectation_descent (W : Finset (List Bool))
+  (f : List Bool → ℝ) :
+  ∑ w ∈ W, (D0.CondensedAnchor.cylWeight (w.concat true) * f w + D0.CondensedAnchor.cylWeight (w.concat false) * f w) =
+    ∑ w ∈ W, D0.CondensedAnchor.cylWeight w * f w
+'D0.Research.NativeHistoryResponseDescent.golden_partition_expectation_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.owned_cylinder_amplitude_weights (a : ℝ) (ha : a ^ 2 = Real.goldenRatio⁻¹) :
+  a ^ 2 = D0.CondensedAnchor.cylWeight [true] ∧ Real.goldenRatio⁻¹ ^ 2 = D0.CondensedAnchor.cylWeight [false]
+'D0.Research.NativeHistoryResponseDescent.owned_cylinder_amplitude_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.golden_refinement_preserves_pairing.{u_1} {I : Type u_1} [Fintype I] (a p : ℝ)
+  (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (f g : I → ℝ) :
+  ∑ i, (a * f i * (a * g i) + p * f i * (p * g i)) = ∑ i, f i * g i
+'D0.Research.NativeHistoryResponseDescent.golden_refinement_preserves_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.golden_operator_refinement_natural.{u_1, u_2} {E : Type u_1} {F : Type u_2}
+  [AddCommGroup E] [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : E →ₗ[ℝ] F) (a p : ℝ) (x : E) :
+  D0.Research.NativeHistoryResponseDescent.goldenRefine a p (A x) =
+    (A (D0.Research.NativeHistoryResponseDescent.goldenRefine a p x).1,
+      A (D0.Research.NativeHistoryResponseDescent.goldenRefine a p x).2)
+'D0.Research.NativeHistoryResponseDescent.golden_operator_refinement_natural' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.golden_refinement_factor_to_blank (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) : (D0.Representation.GoldenOrderInterferometer.gate a p).transpose.mulVec ![a, p] = ![1, 0]
+'D0.Research.NativeHistoryResponseDescent.golden_refinement_factor_to_blank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.current_factor_iff.{u_1, u_2} {E : Type u_1} {F : Type u_2} [AddCommGroup E]
+  [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : E →ₗ[ℝ] E) (B : F →ₗ[ℝ] E) :
+  (∃ f, ∀ (x : E) (y : F), A x + B y = f x) ↔ B = 0
+'D0.Research.NativeHistoryResponseDescent.current_factor_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeHistoryResponseDescent.full_archive_history.{u_1, u_2} {E : Type u_1} {F : Type u_2} [AddCommGroup E]
+  [Module ℝ E] [AddCommGroup F] [Module ℝ F] (C : E →ₗ[ℝ] F) (D : F →ₗ[ℝ] F) (x : ℕ → E) (y : ℕ → F)
+  (hy : ∀ (n : ℕ), y (n + 1) = C (x n) + D (y n)) (n : ℕ) :
+  y n =
+    D0.Research.NativeHistoryResponseDescent.archiveHom D (y 0) n +
+      D0.Research.NativeHistoryResponseDescent.archiveForced C D x n
+'D0.Research.NativeHistoryResponseDescent.full_archive_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.complete_active_memory_equation.{u_1, u_2} {E : Type u_1} {F : Type u_2}
+  [AddCommGroup E] [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : E →ₗ[ℝ] E) (B : F →ₗ[ℝ] E) (C : E →ₗ[ℝ] F)
+  (D : F →ₗ[ℝ] F) (x : ℕ → E) (y : ℕ → F) (hx : ∀ (n : ℕ), x (n + 1) = A (x n) + B (y n))
+  (hy : ∀ (n : ℕ), y (n + 1) = C (x n) + D (y n)) (n : ℕ) :
+  x (n + 1) =
+    A (x n) + B (D0.Research.NativeHistoryResponseDescent.archiveHom D (y 0) n) +
+      B (D0.Research.NativeHistoryResponseDescent.archiveForced C D x n)
+'D0.Research.NativeHistoryResponseDescent.complete_active_memory_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.joint_source_schur_iff.{u_1, u_2} {E : Type u_1} {F : Type u_2}
+  [AddCommGroup E] [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : E →ₗ[ℝ] E) (B : F →ₗ[ℝ] E) (C : E →ₗ[ℝ] F)
+  (D V : F →ₗ[ℝ] F) (left : ∀ (y : F), V (D y) = y) (right : ∀ (y : F), D (V y) = y) (f x : E) (g y : F) :
+  A x + B y = f ∧ C x + D y = g ↔ y = V (g - C x) ∧ A x - B (V (C x)) = f - B (V g)
+'D0.Research.NativeHistoryResponseDescent.joint_source_schur_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.archive_reconstruction_unique.{u_2} {F : Type u_2} [AddCommGroup F]
+  [Module ℝ F] (D V : F →ₗ[ℝ] F) (left : ∀ (y : F), V (D y) = y) (b y₁ y₂ : F) (h₁ : D y₁ = b) (h₂ : D y₂ = b) : y₁ = y₂
+'D0.Research.NativeHistoryResponseDescent.archive_reconstruction_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.full_feedback_determinant.{u_1, u_2} {m : Type u_1} {n : Type u_2} [Fintype m]
+  [Fintype n] [DecidableEq m] [DecidableEq n] (A : Matrix m m ℝ) (B : Matrix m n ℝ) (C : Matrix n m ℝ)
+  (D : Matrix n n ℝ) [Invertible D] : (Matrix.fromBlocks A B C D).det = D.det * (A - B * ⅟D * C).det
+'D0.Research.NativeHistoryResponseDescent.full_feedback_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.full_feedback_action.{u_1, u_2} {m : Type u_1} {n : Type u_2} [Fintype m]
+  [Fintype n] [DecidableEq m] [DecidableEq n] (A : Matrix m m ℝ) (B : Matrix m n ℝ) (C : Matrix n m ℝ)
+  (D : Matrix n n ℝ) [Invertible D] (hD : D.det ≠ 0) (hS : (A - B * ⅟D * C).det ≠ 0) :
+  -Real.log (Matrix.fromBlocks A B C D).det = -Real.log D.det - Real.log (A - B * ⅟D * C).det
+'D0.Research.NativeHistoryResponseDescent.full_feedback_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.full_feedback_source {u v : ℝ → ℝ} {u' v' t : ℝ} (hu : HasDerivAt u u' t)
+  (hv : HasDerivAt v v' t) (hun : u t ≠ 0) (hvn : v t ≠ 0) :
+  HasDerivAt (fun s => -Real.log (u s * v s)) (-u' / u t - v' / v t) t
+'D0.Research.NativeHistoryResponseDescent.full_feedback_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.same_present_both_marginals (a p : ℝ) :
+  D0.Research.NativeHistoryResponseDescent.retainedMarginal
+        (D0.Research.NativeHistoryResponseDescent.remembered a p 1) =
+      D0.Research.NativeHistoryResponseDescent.retainedMarginal
+        (D0.Research.NativeHistoryResponseDescent.remembered a p (-1)) ∧
+    D0.Research.NativeHistoryResponseDescent.archiveMarginal
+        (D0.Research.NativeHistoryResponseDescent.remembered a p 1) =
+      D0.Research.NativeHistoryResponseDescent.archiveMarginal
+        (D0.Research.NativeHistoryResponseDescent.remembered a p (-1))
+'D0.Research.NativeHistoryResponseDescent.same_present_both_marginals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.normalized_joint_histories (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  ∑ i, D0.Research.NativeHistoryResponseDescent.remembered a p 1 i ^ 2 = 1 ∧
+    ∑ i, D0.Research.NativeHistoryResponseDescent.remembered a p (-1) i ^ 2 = 1
+'D0.Research.NativeHistoryResponseDescent.normalized_joint_histories' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.owned_recorded_state (a p : ℝ) :
+  (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec ![1, 0, 0, 0] =
+    D0.Research.NativeHistoryResponseDescent.remembered a p 1
+'D0.Research.NativeHistoryResponseDescent.owned_recorded_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.native_two_return_gap_raw (a p : ℝ) :
+  D0.Research.NativeHistoryResponseDescent.readZ
+        ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+          ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+            (D0.Research.NativeHistoryResponseDescent.remembered a p 1))) -
+      D0.Research.NativeHistoryResponseDescent.readZ
+        ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+          ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+            (D0.Research.NativeHistoryResponseDescent.remembered a p (-1)))) =
+    8 * a ^ 2 * p ^ 2 * (p ^ 2 - a ^ 2)
+'D0.Research.NativeHistoryResponseDescent.native_two_return_gap_raw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.native_two_return_gap (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.NativeHistoryResponseDescent.readZ
+        ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+          ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+            (D0.Research.NativeHistoryResponseDescent.remembered a p 1))) -
+      D0.Research.NativeHistoryResponseDescent.readZ
+        ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+          ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+            (D0.Research.NativeHistoryResponseDescent.remembered a p (-1)))) =
+    -8 * p ^ 6
+'D0.Research.NativeHistoryResponseDescent.native_two_return_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.actual_native_future_distinguishes (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hpos : 0 < p) :
+  D0.Research.NativeHistoryResponseDescent.readZ
+      ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+        ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+          (D0.Research.NativeHistoryResponseDescent.remembered a p 1))) ≠
+    D0.Research.NativeHistoryResponseDescent.readZ
+      ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+        ((D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec
+          (D0.Research.NativeHistoryResponseDescent.remembered a p (-1))))
+'D0.Research.NativeHistoryResponseDescent.actual_native_future_distinguishes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHistoryResponseDescent.actual_native_depth_two_separates (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hpos : 0 < p) :
+  D0.Research.NativeHistoryResponseDescent.responseTree
+      (fun x => (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec)
+      D0.Research.NativeHistoryResponseDescent.readZ 2 (D0.Research.NativeHistoryResponseDescent.remembered a p 1) ≠
+    D0.Research.NativeHistoryResponseDescent.responseTree
+      (fun x => (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec)
+      D0.Research.NativeHistoryResponseDescent.readZ 2 (D0.Research.NativeHistoryResponseDescent.remembered a p (-1))
+'D0.Research.NativeHistoryResponseDescent.actual_native_depth_two_separates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

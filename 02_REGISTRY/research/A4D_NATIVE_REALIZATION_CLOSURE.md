@@ -6,6 +6,22 @@ Control baseline: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Status: first native variational gate investigated; **positive GR and global
 closure remain OPEN**. This artifact does not promote claims or retire tasks.
 
+The active route is now the [native-core execution plan](D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md).
+Its first [history/response result](A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md)
+constructs the full-future quotient and the realized observation tower with
+actual surjective truncations and commuting process maps. The owned golden
+recording gate proves that identical system AND archive marginals can give
+a two-return Z gap of `-8*p^6`, without inserting another blank record.
+Complete archive return, all-source Schur reconstruction and the archive
+determinant variation are retained. The package also consumes the
+actual profinite finite-factorization owner for the full response, proves
+compact realization of compatible histories, and constructs the isometric
+golden cylindrical inclusion with reversible blank-factor preparation.
+Forty-two propositions compile and 189 exact controls pass. The next G0b
+obligation is the joint history/record operator and action binding to these
+owned inclusions; an arbitrary field candidate is not the next consumer. The earlier regular time-field
+intertwiner classification remains a scoped control, not the route owner.
+
 The [G0 primitive-interface proof](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)
 now answers a necessary ownership question directly, without adding another
 candidate family or graph node. It classifies every actual `ActionProtocol`,
@@ -714,3 +730,30 @@ The extended package has 45 compiled propositions, 37 actual types,
 must be rejected. Own history/preparation/action/refinement, source/Ward,
 G0/GR/global closure and all original parents remain open. The 44 graph
 statuses and dependencies are unchanged.
+
+
+## Native time preparation: complete regular readout boundary (2026-10-08)
+
+The [native time-to-field theorem](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
+consumes the actual integer/rational two-tick evolution and the already
+constructed common-parent transfer M_A. Every real linear intertwiner is
+exactly P=[[U,V],[V,U-V]], with AU=AV=0; its image is the full retained
+spatial kernel. The nonlinear first-jet version follows from the actual
+chain rule at the native fixed state. A surjective first jet forces A=0.
+No self-adjointness or diagonalizability is assumed in the classification.
+
+The exact defect identity D_A P=-E+M_A^-1 E B^-1 yields an explicit
+approximation bound; a vanishing error cannot retain a uniformly regular
+right inverse on a uniformly separated coupled mode. These norm and limit
+corollaries remain analytic. Nonconstant polynomial and smooth elliptic
+factors with zero first jet protect the nonlinear scope. Integer native
+states are not claimed to supply continuous variations or physical time.
+
+Twenty propositions and actual types compile with standard logical axioms;
+163 exact controls check full Sylvester spaces, kernel retention, symbolic
+signs and necessary hypotheses against three D0 source pins. This resolves
+the direct regular two-tick preparation class, not every coupled native
+history law. No action, selector, field lift or physical equation is added.
+G0 and source/Ward, contrast, curved solutions, soundness/recovery and the
+original #310/#202/#317 terminals remain open. Work proceeds in the existing
+execution; no external-model assignment or waiting prerequisite is created.

@@ -1,10 +1,10 @@
-# CONTROL intake: native variational obstruction and owner audit
+# CONTROL intake: native history, golden refinement and variational owners
 
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`ad2e43f4eae418d6fe7386d37c7ee4c76400ed42`, following
-`9a724dc37520fd042c00b0a5b330ceae0b563da7`.
+`609e7daa7c801254ee671874750c5bc61f4efc71`, following
+`ad2e43f4eae418d6fe7386d37c7ee4c76400ed42`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -16,10 +16,34 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Current native-core execution, 2026-10-08
+
+The [active execution plan](D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md)
+consumes the full native history and golden/profinite refinement mechanisms.
+The [new proof](A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md) compiles 42 genuine
+propositions and passes 189 exact controls, with 41 false scope and 13 false
+exact ledgers rejected. It constructs full-future descent, realized response
+towers, actual profinite factorization and compact history realization,
+golden expectation/pairing preservation and a reversible blank-factor
+preparation. The existing recorded golden gate gives the exact two-return
+Z gap `-8*p^6` despite equal system and archive marginals. Complete archive
+history, all-source Schur reconstruction and both determinant variations
+are preserved. The remaining G0b arrow is the joint admitted history/record
+dynamics and action/variation binding to the proved golden inclusions.
+
+The [regular time-field intertwiner classification](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
+is included with its 20 compiled propositions and 163 exact controls as a
+scoped control. It does not determine this active route or exhaust the core.
+All 44 existing graph statuses, dependencies and original parent terminals
+remain unchanged. Supported D0 owners, claims, books and task lifecycles
+are unchanged. All 397 current artifact/input hash versions match.
+This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
+
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-179 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+192 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
