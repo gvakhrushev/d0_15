@@ -8,7 +8,7 @@ from pathlib import Path
 
 import sympy as s
 
-HEAD = 'bbd81c495ea6fcea683f78872b392015c9407401'
+HEAD = 'e74df7d999ae04a667d4de08625b8ec77bcdab5a'
 BASE = '02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics'
 PROOF = '02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md'
 SCOPE = {
@@ -69,6 +69,18 @@ SCOPE = {
     'native_Delta_P_U_coupling_or_fine_spectral_law_derived': False,
     'native_zero_mode_constraints_removed': False,
     'single_calibration_obstruction_exhausts_constrained_native_variations': False,
+    'actual_source_port_constituent_map_Lean_formalized': True,
+    'actual_source_definitions_bound_with_standard_axioms': True,
+    'normalizer_and_canonical_pairing_jet_retained_Lean_formalized': True,
+    'all_retained_word_jets_genuine_Lean_formalized': True,
+    'moving_eigenvector_matrix_heat_derivative_Lean_formalized': True,
+    'noncommuting_heat_source_all_C1_finite_curves': 'ANALYTIC_WITH_UNIFORM_SERIES_REMAINDER',
+    'general_matrix_heat_and_Jacobi_derivatives_fully_Lean_formalized': False,
+    'whole_basis_Ward_genuine_Lean_formalized': True,
+    'basis_Ward_identified_with_physical_metric_matter_Ward': False,
+    'source_port_polynomials_admit_arbitrary_spectrum': False,
+    'arbitrary_primitive_matrix_curve_physically_admitted': False,
+    'quotient_degree_squared_identified_with_scene_Laplacian': False,
     'diagonal_return_probabilities_determine_full_operator': False,
     'whole_native_scene_process_selected_by_tomography': False,
     'full_return_equals_power_of_one_step_compression': False,
@@ -125,7 +137,7 @@ def main():
     check('CAPSULE_AND_TRANSCRIPT_FRESH', receipt['capsule_sha256'] == sha(BASE+'.lean')
           and receipt['output_sha256'] == sha(BASE+'_output.txt'))
     check('ALL_ACTUAL_PROPOSITIONS_AND_DEPENDENCIES', declarations == receipt['declarations']
-          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 147)
+          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 199)
     check('NO_PLACEHOLDER_OR_COMPILER_ERROR', 'sorryAx' not in transcript
           and re.search(r'\berror(?:\(|:)', transcript) is None
           and re.search(r'\b(sorry|admit|axiom)\b', lean) is None)
@@ -141,15 +153,25 @@ def main():
           ['Function.Injective', 'HasDerivAt', 'minimalJoint', 'fullStep', 'directStep',
            'joint', 'goldenInclusion', 'fullFeedback', 'feedbackAction', 'liftOperator',
            'recordedQuadraticKernel', 'fullFlaggedComparison', 'FiniteProtocolClock.run']))
-    check('SEVEN_TRANSITIVE_NATIVE_SOURCE_PINS', len(receipt['transitive_d0_source_sha256']) == 7
+    check('SEVENTEEN_TRANSITIVE_NATIVE_SOURCE_PINS', len(receipt['transitive_d0_source_sha256']) == 17
           and all(x in receipt['transitive_d0_source_sha256'] for x in
                   ['03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean',
                    '03_FORMALIZATION/D0/Synthesis/SceneHeatKernel.lean',
-                   '03_FORMALIZATION/D0/Spectral/DarkArchiveStructure.lean']))
+                   '03_FORMALIZATION/D0/Spectral/DarkArchiveStructure.lean',
+                   '03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean',
+                   '03_FORMALIZATION/D0/Integration/V15/RawZone.lean',
+                   '03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean']))
     check('ACTUAL_THERMAL_AND_JOINT_DERIVATIVE_PROPOSITIONS', all(x in transcript for x in
           ['thermalPartition', 'thermalSource', 'bootstrapAction', 'replicatedSpectrum',
            'sceneZoneHeatReal', 'controlLaplacian', 'controlSpectrum', 'controlFeedbackSource',
            'control_slice_stationary_refinement_failure']))
+    check('ACTUAL_SHARED_PRIMITIVE_SOURCE_AND_WORD_PROPOSITIONS', all(x in transcript for x in
+          ['sourcePort', 'sourceActive', 'compressionJet', 'portJet', 'sourceCoupled',
+           'weightedFeedbackJet', 'genuine_native_interaction_from_primitives',
+           'genuine_whole_native_word_derivative', 'matrixPowerJet']))
+    check('ACTUAL_MATRIX_EXPONENTIAL_AND_WHOLE_WARD_PROPOSITIONS', all(x in transcript for x in
+          ['matrixHeat', 'matrixBootstrap', 'sourceConj', 'movedMetric', 'movedInverseMetric',
+           'actual_matrix_heat_derivative', 'genuine_whole_basis_ward']))
     pins = dict(receipt['transitive_d0_source_sha256'])
     pins.update(receipt['toolchain_input_sha256'])
     for path, digest in pins.items():
@@ -697,6 +719,186 @@ def main():
     check('CONTROL_FEEDBACK_NONZERO_ON_OPEN_ROOT_INTERVAL',
           s.factor(feedback_source) == -4*t*(t-1)*(t+1)/((t*t+1)*(t**4+1)))
 
+    # Actual source-port data; the degree operator is not a Dirac square.
+    native_D = s.diag(24,22,20)
+    native_A = s.Matrix([[0,11,13],[9,0,13],[9,11,0]])
+    native_G = s.diag(9,11,13)
+    native_GI = native_G.inv()
+    native_K = native_D*native_A-native_A*native_D
+    native_PA = -native_K*native_K/2840
+    degree_port = (native_D-22*s.eye(3))*(native_D-20*s.eye(3))/8
+    native_M = native_PA*degree_port*native_PA
+    native_tau = s.trace(native_M)
+    native_R = native_M/native_tau
+    native_Q = native_PA-native_R
+    Li = s.Matrix([[0,-1,0,0],[1,0,0,0],[0,0,0,-1],[0,0,1,0]])
+    Lj = s.Matrix([[0,0,-1,0],[0,0,0,1],[1,0,0,0],[0,-1,0,0]])
+    native_X = s.kronecker_product(s.eye(3)-native_R,s.eye(4))+s.kronecker_product(native_R,Li)
+    native_Y = s.kronecker_product(s.eye(3),Lj)
+    native_G12 = s.kronecker_product(native_G,s.eye(4))
+    check('SOURCE_ACTUAL_DEGREE_COMMUTATOR_BINDING',
+          native_K == s.Matrix([[0,22,52],[-18,0,26],[-36,-22,0]]))
+    check('SOURCE_ACTUAL_ACTIVE_PLANE_ANCHOR', zero(native_PA*native_PA-native_PA)
+          and s.trace(native_PA) == 2 and zero(native_PA.T*native_G-native_G*native_PA))
+    check('SOURCE_ACTUAL_MAX_DEGREE_POLYNOMIAL', degree_port == s.diag(1,0,0))
+    check('SOURCE_ACTUAL_PORT_NORMALIZER_POSITIVE', native_tau == s.Rational(567,710))
+    check('SOURCE_ACTUAL_TWO_PORTS_RETAIN_FULL_ACTIVE_PLANE',
+          zero(native_R*native_R-native_R) and zero(native_Q*native_Q-native_Q)
+          and zero(native_R*native_Q) and native_R+native_Q == native_PA)
+    check('SOURCE_ACTUAL_METRIC_ORTHOGONAL_PORTS', zero(native_R.T*native_G-native_G*native_R)
+          and zero(native_Q.T*native_G-native_G*native_Q))
+    check('SOURCE_ACTUAL_SPIN_TWO_AND_FOUR_CONVENTION', Li*Li == -s.eye(4)
+          and Lj*Lj == -s.eye(4) and Li*Lj == -Lj*Li)
+    check('SOURCE_ACTUAL_COUPLED_MATRIX_ANCHOR',
+          s.cancel(native_X[0,0]*native_X[4,5]-native_X[0,1]*native_X[4,4]) == s.Rational(5657,8946))
+    check('SOURCE_ACTUAL_COUPLED_PAIRING', zero(native_X.T*native_G12*native_X-native_G12))
+    check('SOURCE_CHRONOLOGICAL_Q8_ORDER_RETAINED', not zero(native_X*native_Y-native_Y*native_X))
+
+    # Genuine primitive chain jets; the curve is a calculus control, not admitted M1 data.
+    cancel_matrix = lambda X: X.applyfunc(s.cancel)
+    Dt = native_D+t*s.diag(1,0,0)
+    At = native_A
+    Kt = Dt*At-At*Dt
+    Pt = cancel_matrix(-Kt*Kt/2840)
+    Et = cancel_matrix((Dt-22*s.eye(3))*(Dt-20*s.eye(3))/8)
+    Mt = cancel_matrix(Pt*Et*Pt)
+    Rt = cancel_matrix(Mt/s.cancel(s.trace(Mt)))
+    Qt = Pt-Rt
+    at0 = lambda X: X.subs(t,0)
+    HD,HA = s.diag(1,0,0),s.zeros(3)
+    dK = HD*native_A-native_A*HD+native_D*HA-HA*native_D
+    dPA = -(dK*native_K+native_K*dK)/2840
+    dE = (HD*(native_D-20*s.eye(3))+(native_D-22*s.eye(3))*HD)/8
+    dM = dPA*degree_port*native_PA+native_PA*dE*native_PA+native_PA*degree_port*dPA
+    dR = dM/native_tau-native_M*s.trace(dM)/native_tau**2
+    check('SOURCE_COMMUTATOR_JET_FROM_SHARED_PRIMITIVES', zero(at0(Kt.diff(t))-dK))
+    check('SOURCE_ACTIVE_JET_FROM_SHARED_PRIMITIVES', zero(at0(Pt.diff(t))-dPA))
+    check('SOURCE_COMPRESSION_JET_FROM_SHARED_PRIMITIVES', zero(at0(Mt.diff(t))-dM))
+    check('SOURCE_PORT_JET_INCLUDES_ACTUAL_NORMALIZER', zero(at0(Rt.diff(t))-dR))
+    check('SOURCE_INPUT_JET_FROM_SAME_TWO_PRIMITIVES', zero(at0(Qt.diff(t))-(dPA-dR)))
+    Xt = s.kronecker_product(s.eye(3)-Rt,s.eye(4))+s.kronecker_product(Rt,Li)
+    dX = s.kronecker_product(dR,Li-s.eye(4))
+    check('SOURCE_ACTUAL_INTERACTION_JET_FROM_SHARED_PRIMITIVES', zero(at0(Xt.diff(t))-dX))
+    stages = [native_X,native_Y,native_X,native_Y]
+    jets = [dX,s.zeros(12),dX,s.zeros(12)]
+    word,jet = s.eye(12),s.zeros(12)
+    for stage,variation in zip(stages,jets):
+        word,jet = stage*word,variation*word+stage*jet
+    # Exact tensor expansion keeps R^2, including curves leaving the projector class.
+    Cmemory = Li-s.eye(4)
+    linear_memory = Lj*Cmemory*Lj+Lj*Lj*Cmemory
+    quadratic_memory = Lj*Cmemory*Lj*Cmemory
+    expanded_word = s.kronecker_product(s.eye(3),Lj*Lj)+s.kronecker_product(native_R,linear_memory)+s.kronecker_product(native_R*native_R,quadratic_memory)
+    check('SOURCE_FULL_WORD_EXACT_TENSOR_EXPANSION', zero(word-expanded_word))
+    actual_word_jet = s.kronecker_product(at0(Rt.diff(t)),linear_memory)+s.kronecker_product(at0((Rt*Rt).diff(t)),quadratic_memory)
+    check('SOURCE_FULL_WORD_JET_REUSES_ALL_PRIOR_STAGES', zero(actual_word_jet-jet))
+    check('SOURCE_PRIMITIVE_CURVE_NOT_PROMOTED_TO_PROJECTOR_CLASS',
+          not zero(at0((Pt*Pt-Pt).diff(t))))
+    check('SOURCE_FROZEN_NORMALIZER_FALSE_JET_REJECTED', not zero(dM/native_tau-dR))
+
+    # Strong cancellation control: a compression changes by scalar, its normalized port does not.
+    scale_M = cancel_matrix(native_PA*Et*native_PA)
+    scale_R = cancel_matrix(scale_M/s.cancel(s.trace(scale_M)))
+    scale_dM = at0(scale_M.diff(t))
+    scale_dR = scale_dM/native_tau-native_M*s.trace(scale_dM)/native_tau**2
+    check('SOURCE_SCALAR_COMPRESSION_ACTUAL_TRACE_JET', s.trace(scale_dM) == s.Rational(1701,2840))
+    check('SOURCE_NORMALIZED_PORT_EXACT_CANCELLATION', zero(at0(scale_R.diff(t))) and zero(scale_dR))
+    check('SOURCE_OMITTED_NORMALIZER_PRODUCES_FALSE_NONZERO_RESPONSE',
+          s.trace((scale_dM/native_tau)**2) == s.Rational(9,16))
+    check('SOURCE_OMITTED_NORMALIZER_CHANGES_INTERACTION_JET',
+          not zero(s.kronecker_product(scale_dM/native_tau,Li-s.eye(4))))
+
+    # Shared basis covariance, with the canonical pairing and inverse moved together.
+    frame = s.Matrix([[1,t,0],[0,1,t],[0,0,1]])
+    frame_inv = frame.inv()
+    conj = lambda X: frame*X*frame_inv
+    Gframe = frame_inv.T*native_G*frame_inv
+    GIframe = frame*native_GI*frame.T
+    O = at0(frame.diff(t))
+    frame_D,frame_A = cancel_matrix(conj(native_D)),cancel_matrix(conj(native_A))
+    frame_K = cancel_matrix(frame_D*frame_A-frame_A*frame_D)
+    frame_PA = cancel_matrix(-frame_K*frame_K/2840)
+    frame_E = cancel_matrix((frame_D-22*s.eye(3))*(frame_D-20*s.eye(3))/8)
+    frame_M = cancel_matrix(frame_PA*frame_E*frame_PA)
+    frame_R = cancel_matrix(frame_M/s.cancel(s.trace(frame_M)))
+    frame_Q = frame_PA-frame_R
+    frame_joint = s.kronecker_product(frame,s.eye(4))
+    frame_joint_inv = s.kronecker_product(frame_inv,s.eye(4))
+    frame_X = s.kronecker_product(s.eye(3)-frame_R,s.eye(4))+s.kronecker_product(frame_R,Li)
+    check('SOURCE_BASIS_HAS_TRUE_INVERSE_AND_POSITIVE_PAIRING', frame.det() == 1
+          and zero(Gframe*GIframe-s.eye(3)))
+    check('SOURCE_SHARED_ACTIVE_DEGREE_COMPRESSION_COVARIANCE', zero(frame_PA-conj(native_PA))
+          and zero(frame_E-conj(degree_port)) and zero(frame_M-conj(native_M)))
+    check('SOURCE_SHARED_NORMALIZED_TWO_PORT_COVARIANCE', zero(frame_R-conj(native_R))
+          and zero(frame_Q-conj(native_Q)) and s.cancel(s.trace(frame_M)-native_tau) == 0)
+    check('SOURCE_COUPLED_TENSOR_COVARIANCE', zero(frame_X-frame_joint*native_X*frame_joint_inv))
+    frame_word = frame_joint*word*frame_joint_inv
+    check('SOURCE_COMPLETE_WORD_COVARIANCE', zero(frame_word-
+          (frame_joint*native_Y*frame_joint_inv)*frame_X*
+          (frame_joint*native_Y*frame_joint_inv)*frame_X))
+    weighted_F = lambda gram,gi,pp,uu: pp*gi*uu.T*gram*(s.eye(pp.rows)-pp)*uu*pp
+    reversal = s.eye(3)-2*native_R
+    F0 = weighted_F(native_G,native_GI,degree_port,reversal)
+    frame_F = cancel_matrix(weighted_F(Gframe,GIframe,conj(degree_port),conj(reversal)))
+    false_frame_F = cancel_matrix(weighted_F(native_G,native_GI,conj(degree_port),conj(reversal)))
+    check('SOURCE_WEIGHTED_FEEDBACK_TRUE_COVARIANCE', zero(frame_F-conj(F0)))
+    check('SOURCE_WEIGHTED_FEEDBACK_FRAME_JET', zero(at0(frame_F.diff(t))-(O*F0-F0*O)))
+    check('SOURCE_METRIC_FRAME_JET_RETAINED', zero(at0(Gframe.diff(t))+O.T*native_G+native_G*O))
+    check('SOURCE_INVERSE_METRIC_FRAME_JET_RETAINED', zero(at0(GIframe.diff(t))-O*native_GI-native_GI*O.T))
+    check('SOURCE_INVERSE_METRIC_DERIVED_FROM_TWO_SIDED_IDENTITY',
+          zero(at0(GIframe.diff(t))+native_GI*at0(Gframe.diff(t))*native_GI))
+    native_det = (s.eye(3)-F0/2).det()
+    frame_det = (s.eye(3)-frame_F/2).det()
+    false_frame_det = (s.eye(3)-false_frame_F/2).det()
+    false_frame_source = s.cancel(-s.diff(false_frame_det,t).subs(t,0)/false_frame_det.subs(t,0))
+    check('SOURCE_WHOLE_FRAME_DETERMINANT_GENUINELY_CONSTANT',
+          s.cancel(frame_det-native_det) == 0 and native_det == s.Rational(170969,252050))
+    check('SOURCE_FREEZING_NATIVE_PAIRING_FALSE_WARD_REJECTED',
+          false_frame_source == s.Rational(42588,170969) and false_frame_source != 0)
+
+    # Actual moving eigenvectors: zero mode fixed, noncommuting jet, exact matrix exponential.
+    beta0 = s.Rational(2,3)
+    lambda0 = s.diag(0,20,33)
+    lambda_jet = s.diag(0,1,-1)
+    delta_curve = frame*(lambda0+t*lambda_jet)*frame_inv
+    delta_jet = at0(delta_curve.diff(t))
+    eig_exp = s.diag(1,s.exp(-beta0*20),s.exp(-beta0*33))
+    heat_matrix = frame*s.diag(1,s.exp(-beta0*(20+t)),s.exp(-beta0*(33-t)))*frame_inv
+    Z0 = s.trace(eig_exp)
+    rho0 = eig_exp/Z0
+    heat_operator_source = -s.trace(rho0*delta_jet)
+    heat_curve_source = at0(s.trace(heat_matrix).diff(t))/(beta0*Z0)
+    check('SOURCE_HEAT_CURVE_RETAINS_ZERO_MODE_AND_MOVING_EIGENVECTORS',
+          delta_curve.det() == 0 and not zero(lambda0*delta_jet-delta_jet*lambda0))
+    check('SOURCE_HEAT_JET_SPLITS_SPECTRUM_AND_FRAME', zero(delta_jet-lambda_jet-O*lambda0+lambda0*O))
+    check('SOURCE_ACTUAL_MATRIX_EXPONENTIAL_HEAT_DERIVATIVE',
+          s.simplify(heat_curve_source-heat_operator_source) == 0)
+    check('SOURCE_HEAT_FRAME_WARD_IS_CYCLIC_TRACE', s.simplify(s.trace(rho0*(O*lambda0-lambda0*O))) == 0)
+    check('SOURCE_HEAT_AND_FEEDBACK_WHOLE_BASIS_WARD',
+          s.simplify(s.trace(rho0*(O*lambda0-lambda0*O))) == 0
+          and s.cancel(s.diff(frame_det,t)) == 0)
+    check('SOURCE_SPECTRAL_COEFFICIENT_HEAT_JET_NONZERO', heat_operator_source != 0)
+
+    # Arbitrary finite noncommutative powers; all-size identities are proved in Lean.
+    power_A = native_D-native_A
+    power_V = s.Matrix([[0,1,2],[3,0,1],[0,-1,2]])
+    power_cases = []
+    power_jet = s.zeros(3)
+    for m in range(1,6):
+        power_jet = power_jet*power_A+power_A**(m-1)*power_V
+        actual_power = (power_A+t*power_V)**m
+        check('SOURCE_NONCOMMUTATIVE_POWER_GENUINE_JET_'+str(m), zero(at0(actual_power.diff(t))-power_jet))
+        check('SOURCE_NONCOMMUTATIVE_POWER_CYCLIC_TRACE_'+str(m),
+              s.trace(power_jet) == m*s.trace(power_A**(m-1)*power_V))
+        power_cases.append(m)
+    # Jacobi holds for arbitrary invertible pencils; this exact affine test is not the proof.
+    Vfeedback = s.Matrix([[0,1,0],[1,0,2],[0,0,1]])
+    N0 = s.eye(3)-F0/2
+    Nt = N0-t*Vfeedback/2
+    actual_logdet_jet = -at0(s.diff(Nt.det(),t))/N0.det()
+    jacobi_source = s.trace(N0.inv()*Vfeedback)/2
+    check('SOURCE_FEEDBACK_JACOBI_ACTUAL_DETERMINANT_JET', s.cancel(actual_logdet_jet-jacobi_source) == 0)
+
     payload = {
         'status': 'PASS', 'owner_input_head': HEAD, 'scope': SCOPE, 'checks': checks,
         'input_sha256': pins, 'proof_sha256': sha(PROOF),
@@ -757,6 +959,20 @@ def main():
             'stationary_control_heat_source': str(heat_source),
             'stationary_control_endpoint_sources': ['-1','at least 11/85'],
             'stationary_control_refined_source_on_root': 'feedbackSource(t)>0',
+            'actual_source_port_chain': 'D,A -> [D,A] -> Pact,degreePort -> compressed,trace -> signalPort,inputPort -> coupled',
+            'actual_source_port_normalizer': str(native_tau),
+            'actual_source_port_jet': 'dR=dM/tau-trace(dM)*M/tau^2',
+            'actual_source_interaction_jet': 'dR tensor (spin(2)-I)',
+            'full_retained_word_jet': 'sum_j U_m...U_(j+1)*dU_j*U_(j-1)...U_1',
+            'moving_native_pairing': 'G+=T^(-T)*G*T^(-1); GI+=T*GI*T^T',
+            'whole_operator_source': '-trace(rho*dDelta)+trace(z*(I-zF)^(-1)*dF)',
+            'whole_operator_basis_Ward': 'actual whole action invariant; genuine derivative zero',
+            'source_normalizer_cancellation_trace_jet': '1701/2840',
+            'false_frozen_normalizer_response': '9/16',
+            'false_frozen_pairing_source': str(false_frame_source),
+            'noncommutative_power_jet_controls': power_cases,
+            'general_heat_Jacobi_formal_status': 'ANALYTIC_PROOF; finite jets and declared moving spectral factorization compiled',
+
         },
     }
     if args.output:

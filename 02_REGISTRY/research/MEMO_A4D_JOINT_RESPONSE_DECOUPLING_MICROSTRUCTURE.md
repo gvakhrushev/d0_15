@@ -22,7 +22,7 @@ action/source scaling, retaining the physical complement-law obligation. G0, phy
 terminal remain open; the earlier time-field result is a scoped control.
 
 The [composed-feedback proof](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
-now has 147 compiled propositions and 488 exact controls. In addition to the
+now has 199 compiled propositions and 605 exact controls. In addition to the
 complete golden-active-block joint class and native composed-action gap,
 it classifies every compatible fine readout projector as `JPJ^T+S`, with S
 an orthogonal projector on the preparation complement. For the image-supported
@@ -64,6 +64,19 @@ keeps its zero mode and is not a full native joint root. The next arrow is
 the owned joint Delta/P/U tangent law and actual spectral transition that
 decide this condition on the complete admitted domain. No thermal trace,
 temperature rule, source prescription or physical action is selected.
+
+The operator/source follow-up binds the actual source-port definitions and
+differentiates the shared degree/adjacency chain through active plane,
+compression, trace normalizer, both ports and the Q8 interaction. Complete
+retained word jets and all weighted feedback terms are derived. The native
+pairing and its inverse move together. Actual matrix heat differentiation
+includes moving noncommuting eigenvectors; general C1 finite operator
+heat/Jacobi calculus has a self-contained analytic proof. Whole-action
+covariance gives a genuine basis Ward, with exact controls rejecting a
+frozen normalizer or frozen pairing. This does not supply a physical
+metric/matter Ward or native on-shell gate. The next input is the owned
+joint primitive state/tangent and full scene spectral refinement law,
+using these derived source arrows. No physical variable or source is fitted.
 
 The [actual weighted Hodge–Dirac follow-up](A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md)
 constructs the documented weighted adjoint on the real D0 cochains instead
