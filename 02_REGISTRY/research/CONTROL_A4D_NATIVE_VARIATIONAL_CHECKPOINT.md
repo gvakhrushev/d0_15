@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`7479dbcb5970b4450912cc848a53e1622e9524af`, following
-`58407f912e6f4cedfff3625cdd4e7ba09c6e7951`.
+`7c204c9d0e6a405216f9762ddd4d4d55ba57dab4`, following
+`7479dbcb5970b4450912cc848a53e1622e9524af`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -47,11 +47,18 @@ All-size analytic bounds quantify action error with the required rank,
 resolvent, preparation and full-word factors. Uniform native O(h) bounds
 and metric/link variation maps remain to be derived.
 
-This packet has 76 compiled propositions, four transitive D0 pins and 275
-exact controls; 54 false scope and 25 false exact ledgers are rejected.
-The next G0b input is the joint scene process under its actual readout,
-including complementary active returns and admitted variations. No native
-readout, action or physical postulate is changed to obtain these identities.
+This packet now has 87 compiled propositions, four transitive D0 pins and
+315 exact controls; 62 false scope and 31 false exact ledgers are rejected.
+Two owned native preparations J and GJ span the complete new factor.
+All four signed cross-return blocks uniquely reconstruct every full operator,
+its literal cylinder action and genuine source, including the prior hidden
+complement. The analytic error bound has factor 1/(1-|a|), with deeper tensor
+conditioning retained. Diagonal probabilities alone do not suffice.
+
+The next G0b input is the joint scene/record law, full cross returns and
+admitted variations, with native controlled routing, inverse and interference
+access. No native readout, action, complementary selector or physical
+postulate is changed to obtain these identities.
 
 The [regular time-field intertwiner classification](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
 is included with its 20 compiled propositions and 163 exact controls as a
@@ -61,9 +68,10 @@ remain unchanged. Supported D0 owners, claims, books and task lifecycles
 are unchanged. All 404 current artifact/input hash versions match.
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
-The previous source `58407f91` and previous CONTROL `6180d5d8` both have
-verified successful CI (runs `37769924135` and `37770338573`). New-head CI
-and CONTROL review remain required.
+The preceding CONTROL `1044e6fb` passed CI `37776187229`. Current source
+`7c204c9d` CI `37778650030` is running at this intake. The superseded source
+`7479dbcb` run `37775818295` was cancelled and supplies no successful
+current-head result. New-head CI and CONTROL review remain required.
 
 ## Enumerated artifact slice
 

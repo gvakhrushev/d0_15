@@ -797,6 +797,161 @@ theorem literal_cylinder_observable_pullback (f : n → ℝ) :
     simp [Matrix.diagonal,liftOperator,Matrix.fromBlocks]
 
 end OwnedPreparedEmbedding
+
+section GoldenTwoPreparations
+variable {n : Type*} [Fintype n] [DecidableEq n]
+open D0.Representation.GoldenOrderInterferometer
+
+/-- The owned gate acting on the new factor, with every old coordinate retained. -/
+def ownedGoldenFactor (a p : ℝ) : Matrix (n ⊕ n) (n ⊕ n) ℝ :=
+  fromBlocks (gate a p 0 0 • 1) (gate a p 0 1 • 1)
+    (gate a p 1 0 • 1) (gate a p 1 1 • 1)
+
+def preparationCoordinates (a p : ℝ) : Matrix (n ⊕ n) (n ⊕ n) ℝ :=
+  fromBlocks 1 (a • 1) 0 (p • 1)
+
+def preparationCoordinatesInverse (a p : ℝ) : Matrix (n ⊕ n) (n ⊕ n) ℝ :=
+  fromBlocks 1 ((-a/p) • 1) 0 (p⁻¹ • 1)
+
+/-- Columns are J and GJ: two complete native histories, not powers of JᵀGJ. -/
+def nativePreparationFrame (a p : ℝ) : Matrix (n ⊕ n) (n ⊕ n) ℝ :=
+  ownedGoldenFactor a p * preparationCoordinates a p
+
+/-- The four full cross-return operators, bundled without discarding their blocks. -/
+def nativeCrossReturns (a p : ℝ) (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) :=
+  (nativePreparationFrame a p).transpose * U * nativePreparationFrame a p
+
+def recoverGoldenCoordinates (a p : ℝ) (R : Matrix (n ⊕ n) (n ⊕ n) ℝ) :=
+  (preparationCoordinatesInverse a p).transpose * R * preparationCoordinatesInverse a p
+
+theorem golden_factor_owned_blocks (a p : ℝ) :
+    ownedGoldenFactor (n:=n) a p = minimalJoint a p 1 := by
+  simp [ownedGoldenFactor,gate,minimalJoint]
+
+theorem golden_factor_orthogonal (a p : ℝ) (h : a^2+p^2=1) :
+    (ownedGoldenFactor (n:=n) a p).transpose*ownedGoldenFactor a p=1 := by
+  rw [golden_factor_owned_blocks]
+  exact minimal_orthogonal a p 1 h (by simp)
+
+theorem two_native_preparation_columns (a p : ℝ) :
+    (∀ i j, nativePreparationFrame (n:=n) a p i (Sum.inl j)=ownedGoldenEmbedding a p i j) ∧
+    (∀ i j, nativePreparationFrame (n:=n) a p i (Sum.inr j)=
+      (ownedGoldenFactor (n:=n) a p*ownedGoldenEmbedding (n:=n) a p) i j) := by
+  constructor
+  · intro i j
+    rcases i with i|i <;>
+      simp [nativePreparationFrame,ownedGoldenFactor,preparationCoordinates,
+        ownedGoldenEmbedding,gate,Matrix.mul_apply,Fintype.sum_sum_type,Matrix.one_apply]
+  · intro i j
+    rcases i with i|i <;>
+      simp [nativePreparationFrame,ownedGoldenFactor,preparationCoordinates,
+        ownedGoldenEmbedding,gate,Matrix.mul_apply,Fintype.sum_sum_type,Matrix.one_apply]
+
+theorem preparation_coordinates_inverse (a p : ℝ) (hp : p≠0) :
+    preparationCoordinates (n:=n) a p*preparationCoordinatesInverse a p=1 ∧
+    preparationCoordinatesInverse (n:=n) a p*preparationCoordinates a p=1 := by
+  have first : preparationCoordinates (n:=n) a p*preparationCoordinatesInverse a p=1 := by
+    rw [preparationCoordinates,preparationCoordinatesInverse,Matrix.fromBlocks_multiply,
+      ← Matrix.fromBlocks_one (l:=n) (m:=n)]
+    apply Matrix.fromBlocks_inj.mpr
+    simp [Matrix.mul_smul,Matrix.smul_mul,smul_smul,hp]
+    field_simp
+    module
+  exact ⟨first,mul_eq_one_comm.mp first⟩
+
+theorem all_four_returns_reconstruct_coordinates (a p : ℝ)
+    (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (hp : p≠0) :
+    recoverGoldenCoordinates a p (nativeCrossReturns a p U)=
+      (ownedGoldenFactor a p).transpose*U*ownedGoldenFactor a p := by
+  have hi := (preparation_coordinates_inverse (n:=n) a p hp).1
+  have ht : (preparationCoordinatesInverse (n:=n) a p).transpose*
+      (preparationCoordinates a p).transpose=1 := by
+    simpa only [Matrix.transpose_mul,Matrix.transpose_one] using congrArg Matrix.transpose hi
+  simp only [recoverGoldenCoordinates,nativeCrossReturns,nativePreparationFrame,Matrix.transpose_mul]
+  calc
+    _ = ((preparationCoordinatesInverse a p).transpose*(preparationCoordinates a p).transpose)*
+      ((ownedGoldenFactor a p).transpose*U*ownedGoldenFactor a p)*
+      (preparationCoordinates a p*preparationCoordinatesInverse a p) := by
+        simp [Matrix.mul_assoc]
+    _ = _ := by rw [hi,ht,Matrix.one_mul,Matrix.mul_one]
+
+theorem all_four_returns_reconstruct_full_operator (a p : ℝ)
+    (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (hp : p≠0) (h : a^2+p^2=1) :
+    ownedGoldenFactor a p*recoverGoldenCoordinates a p (nativeCrossReturns a p U)*
+      (ownedGoldenFactor a p).transpose=U := by
+  have hg := mul_eq_one_comm.mp (golden_factor_orthogonal (n:=n) a p h)
+  rw [all_four_returns_reconstruct_coordinates a p U hp]
+  calc
+    _ = (ownedGoldenFactor a p*(ownedGoldenFactor a p).transpose)*U*
+      (ownedGoldenFactor a p*(ownedGoldenFactor a p).transpose) := by simp [Matrix.mul_assoc]
+    _ = U := by rw [hg,Matrix.one_mul,Matrix.mul_one]
+
+theorem native_cross_returns_injective (a p : ℝ) (hp : p≠0) (h : a^2+p^2=1) :
+    Function.Injective (nativeCrossReturns (n:=n) a p) := by
+  intro U V he
+  have eq := congrArg (fun R => ownedGoldenFactor a p*recoverGoldenCoordinates a p R*
+    (ownedGoldenFactor a p).transpose) he
+  simpa only [all_four_returns_reconstruct_full_operator a p _ hp h] using eq
+
+theorem golden_factor_commutes_literal_readout (a p : ℝ) (P : Matrix n n ℝ) :
+    ownedGoldenFactor a p*liftOperator P=liftOperator P*ownedGoldenFactor a p := by
+  simp only [ownedGoldenFactor,liftOperator,Matrix.fromBlocks_multiply,
+    Matrix.mul_smul,Matrix.smul_mul,Matrix.mul_one,Matrix.one_mul,
+    Matrix.mul_zero,Matrix.zero_mul,smul_zero,add_zero,zero_add]
+
+theorem full_literal_feedback_coordinates (a p : ℝ) (P : Matrix n n ℝ)
+    (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (h : a^2+p^2=1) :
+    fullFeedback (liftOperator P) ((ownedGoldenFactor a p).transpose*U*ownedGoldenFactor a p)=
+      (ownedGoldenFactor a p).transpose*fullFeedback (liftOperator P) U*ownedGoldenFactor a p := by
+  let G : Matrix (n ⊕ n) (n ⊕ n) ℝ := ownedGoldenFactor a p
+  let R := liftOperator P
+  have hgl : G.transpose*G=1 := golden_factor_orthogonal a p h
+  have hg : G*G.transpose=1 := mul_eq_one_comm.mp hgl
+  have hc : G*R=R*G := golden_factor_commutes_literal_readout a p P
+  have hct : R*G.transpose=G.transpose*R := by
+    calc
+      R*G.transpose = (G.transpose*G)*R*G.transpose := by rw [hgl,Matrix.one_mul]
+      _ = G.transpose*(G*R)*G.transpose := by simp [Matrix.mul_assoc]
+      _ = G.transpose*(R*G)*G.transpose := by rw [hc]
+      _ = G.transpose*R := by
+        calc
+          _ = G.transpose*R*(G*G.transpose) := by simp [Matrix.mul_assoc]
+          _ = _ := by rw [hg,Matrix.mul_one]
+  have hcq : G*(1-R)*G.transpose=1-R := by
+    rw [Matrix.mul_sub,Matrix.mul_one,Matrix.sub_mul,hg,hc]
+    simp [Matrix.mul_assoc,hg]
+  change fullFeedback R (G.transpose*U*G)=G.transpose*fullFeedback R U*G
+  simp only [fullFeedback,Matrix.transpose_mul,Matrix.transpose_transpose]
+  calc
+    _ = (R*G.transpose)*U.transpose*(G*(1-R)*G.transpose)*U*(G*R) := by
+      simp [Matrix.mul_assoc]
+    _ = (G.transpose*R)*U.transpose*(1-R)*U*(R*G) := by rw [hct,hcq,hc]
+    _ = _ := by simp [Matrix.mul_assoc]
+
+theorem literal_action_from_all_four_returns (a p z : ℝ) (P : Matrix n n ℝ)
+    (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (hp : p≠0) (h : a^2+p^2=1) :
+    feedbackAction z (fullFeedback (liftOperator P) U)=
+      feedbackAction z (fullFeedback (liftOperator P)
+        (recoverGoldenCoordinates a p (nativeCrossReturns a p U))) := by
+  rw [all_four_returns_reconstruct_coordinates a p U hp,full_literal_feedback_coordinates a p P U h]
+  have hg := mul_eq_one_comm.mp (golden_factor_orthogonal (n:=n) a p h)
+  exact (transported_feedback_action (ownedGoldenFactor a p).transpose _ z (by simpa using hg)).symm
+
+theorem genuine_two_preparation_source (a p z t source : ℝ)
+    (P : ℝ → Matrix n n ℝ) (U : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ)
+    (hp : p≠0) (h : a^2+p^2=1)
+    (hd : HasDerivAt (fun s => feedbackAction z (fullFeedback (liftOperator (P s))
+      (recoverGoldenCoordinates a p (nativeCrossReturns a p (U s))))) source t) :
+    HasDerivAt (fun s => feedbackAction z (fullFeedback (liftOperator (P s)) (U s))) source t := by
+  have he : (fun s => feedbackAction z (fullFeedback (liftOperator (P s)) (U s))) =
+      (fun s => feedbackAction z (fullFeedback (liftOperator (P s))
+        (recoverGoldenCoordinates a p (nativeCrossReturns a p (U s))))) := by
+    funext s
+    exact literal_action_from_all_four_returns a p z (P s) (U s) hp h
+  rw [he]
+  exact hd
+
+end GoldenTwoPreparations
 end
 end D0.Research.NativeComposedFeedbackDynamics
 
@@ -953,3 +1108,25 @@ end D0.Research.NativeComposedFeedbackDynamics
 #print axioms D0.Research.NativeComposedFeedbackDynamics.owned_golden_embedding_realizes_inclusion
 #check D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_observable_pullback
 #print axioms D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_observable_pullback
+#check D0.Research.NativeComposedFeedbackDynamics.golden_factor_owned_blocks
+#print axioms D0.Research.NativeComposedFeedbackDynamics.golden_factor_owned_blocks
+#check D0.Research.NativeComposedFeedbackDynamics.golden_factor_orthogonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.golden_factor_orthogonal
+#check D0.Research.NativeComposedFeedbackDynamics.two_native_preparation_columns
+#print axioms D0.Research.NativeComposedFeedbackDynamics.two_native_preparation_columns
+#check D0.Research.NativeComposedFeedbackDynamics.preparation_coordinates_inverse
+#print axioms D0.Research.NativeComposedFeedbackDynamics.preparation_coordinates_inverse
+#check D0.Research.NativeComposedFeedbackDynamics.all_four_returns_reconstruct_coordinates
+#print axioms D0.Research.NativeComposedFeedbackDynamics.all_four_returns_reconstruct_coordinates
+#check D0.Research.NativeComposedFeedbackDynamics.all_four_returns_reconstruct_full_operator
+#print axioms D0.Research.NativeComposedFeedbackDynamics.all_four_returns_reconstruct_full_operator
+#check D0.Research.NativeComposedFeedbackDynamics.native_cross_returns_injective
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_cross_returns_injective
+#check D0.Research.NativeComposedFeedbackDynamics.golden_factor_commutes_literal_readout
+#print axioms D0.Research.NativeComposedFeedbackDynamics.golden_factor_commutes_literal_readout
+#check D0.Research.NativeComposedFeedbackDynamics.full_literal_feedback_coordinates
+#print axioms D0.Research.NativeComposedFeedbackDynamics.full_literal_feedback_coordinates
+#check D0.Research.NativeComposedFeedbackDynamics.literal_action_from_all_four_returns
+#print axioms D0.Research.NativeComposedFeedbackDynamics.literal_action_from_all_four_returns
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_two_preparation_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_two_preparation_source
