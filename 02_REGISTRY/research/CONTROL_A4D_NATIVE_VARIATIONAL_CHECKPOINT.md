@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`609e7daa7c801254ee671874750c5bc61f4efc71`, following
-`ad2e43f4eae418d6fe7386d37c7ee4c76400ed42`.
+`58407f912e6f4cedfff3625cdd4e7ba09c6e7951`, following
+`609e7daa7c801254ee671874750c5bc61f4efc71`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -29,22 +29,41 @@ golden expectation/pairing preservation and a reversible blank-factor
 preparation. The existing recorded golden gate gives the exact two-return
 Z gap `-8*p^6` despite equal system and archive marginals. Complete archive
 history, all-source Schur reconstruction and both determinant variations
-are preserved. The remaining G0b arrow is the joint admitted history/record
-dynamics and action/variation binding to the proved golden inclusions.
+are preserved. The subsequent operator/action binding is now imported below.
+
+The [composed-feedback follow-up](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
+classifies every real orthogonal completion of a fixed golden active block
+with arbitrary archive size. The actual native direct and recorded gates
+have identical one-transition actions and a two-transition action gap
+`-log(1-4*z*p^3)`. A genuine completion-coordinate derivative is proved.
+Joint golden replication preserves the full operator, projection and all
+internal powers, with exact raw action/source factor two. An exact control
+at the golden value shows that the prepared inclusion alone does not fix
+the complement's full determinant contribution. The remaining G0b input
+is the native preparation/admission rule for that complement and its
+variations in the existing full bootstrap. This packet has 56 compiled
+propositions, four transitive D0 pins, 177 exact controls, and rejects 39
+false scope plus 13 false exact ledgers. No physical completion law follows
+from orthogonality alone.
 
 The [regular time-field intertwiner classification](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
 is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 397 current artifact/input hash versions match.
+are unchanged. All 404 current artifact/input hash versions match.
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
+
+The previous source `609e7daa` and previous CONTROL `d10ad30b` both have
+verified successful CI. New-head CI and CONTROL review remain required.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-192 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+198 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
+* [Composed native feedback and joint golden refinement](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md),
+  its exact checker/ledger and compiled capsule, transcript and source receipt.
 * [General affine and homogeneous-parent obstructions](A4D_NATIVE_AFFINE_PROBE_NOGO.md),
   its exact checker and immutable ledger.
 * [Native action/variation/source inventory](A4D_NATIVE_REALIZATION_CLOSURE.md)

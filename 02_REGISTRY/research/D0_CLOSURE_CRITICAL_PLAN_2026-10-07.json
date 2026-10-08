@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "609e7daa7c801254ee671874750c5bc61f4efc71",
+    "source_head": "58407f912e6f4cedfff3625cdd4e7ba09c6e7951",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -269,27 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": {
-      "stage": "G0b",
-      "plan": "02_REGISTRY/research/D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md",
-      "target": "Derive the joint native history/record dynamics and its action/variation compatibility with the proved golden inclusions, using actual admitted preparations and operations.",
-      "already_proved": [
-        "canonical future-response quotient and tower",
-        "profinite finite factorization of complete finite-depth responses",
-        "compact compatible-history realization",
-        "golden expectation and Hilbert pairing preservation",
-        "explicit inverse-gate blank-factor preparation",
-        "full archive source-preserving elimination"
-      ],
-      "preserved_downstream": [
-        "native metric/connection/matter preparation",
-        "source and Ward",
-        "calibrated contrast and native stationarity",
-        "curved existence, soundness and recovery",
-        "original fixed-source/raw-owner terminal"
-      ],
-      "new_physical_postulates": false
-    },
+    "next_proof_packet": "Derive the physically admitted complement preparation/dynamics/variations and full bootstrap contribution from native scene rules. No new field, gate, action, normalization or physical postulate is selected.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -384,6 +364,19 @@
       "source_head": "609e7daa7c801254ee671874750c5bc61f4efc71",
       "result": "The earlier regular native-time-to-common-parent readout classification is retained as a scoped control, not the active route. Twenty compiled propositions, three D0 source pins and 163 exact controls classify every real linear readout for arbitrary linear spatial A, including the nonlinear first jet and exact defect identity. It does not exclude independent native memory, other admitted preparations or the full core.",
       "active_route": false,
+      "G0_closed": false
+    },
+    "composed_feedback": {
+      "source_head": "58407f912e6f4cedfff3625cdd4e7ba09c6e7951",
+      "input_head": "609e7daa7c801254ee671874750c5bc61f4efc71",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "compiled_propositions": 56,
+      "transitive_d0_source_pins": 4,
+      "exact_controls": 177,
+      "false_scope_rejections": 39,
+      "false_exact_rejections": 13,
+      "result": "Complete all-archive real orthogonal golden-active-block family; actual native composed-action gap, genuine derivative and joint golden refinement with exact raw action/source factor two. Prepared inclusion alone leaves determinant-relevant complementary dynamics.",
+      "remaining": "Derive the physically admitted complement preparation/dynamics/variations and full bootstrap contribution from native scene rules. No new field, gate, action, normalization or physical postulate is selected.",
       "G0_closed": false
     }
   }
