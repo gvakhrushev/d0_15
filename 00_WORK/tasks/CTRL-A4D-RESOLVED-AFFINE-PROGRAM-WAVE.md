@@ -51,7 +51,7 @@ non-theorem provenance, and do not promote claims, BOOK text or Lean results.
 
 The approved native/GR closure plan authorizes CONTROL intake of finished
 proof parts while preserving their parents. Review the enumerated slice of
-#310 at `ff8fbe88ba3d981f19b3be71f84f5c3103e30859` through
+#310 at `113efe7d8ccd6a49bdba15385fec11c9789813f1` through
 `control/a4d-native-variational-checkpoint`, with primary record
 `02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.md` and
 byte/blob receipt alongside it. Require current-head CI. Scope is the
@@ -209,3 +209,16 @@ invariance and scalar-block refinement are retained exactly. The mathematical
 verified payload countermodel is not a native history preparation or physical
 action. Full raw/link refinement, resonant admission, source/Ward, physical
 joint solutions and all G0/GR/original terminal obligations remain open.
+
+
+The verified frozen-coframe metric continuation is imported from published
+#310 at `113efe7d8ccd6a49bdba15385fec11c9789813f1` with 29 compiled propositions, 326 exact controls,
+29 rejected false-scope ledgers and six rejected false exact results. The
+full nondegenerate state-domain and composed weak-metric class are resolved
+at their explicit scope, retaining small comparison-link/fixed-torus
+hypotheses and a nonempty curved-resonance comparator. Metric correctors
+and complete Lorentz gauge preserve the positive metric gap. This is not
+a selected physical native transition or an action-contrast theorem. The
+updated canonical theory assignment demands the own preparation/composition
+law that addresses this boundary. Source/core/claim/terminal ownership and
+the existing review lifecycle remain unchanged.

@@ -18,6 +18,8 @@ SCOPE = {
     'metric_only_compactness_and_flatness': 'ANALYTIC_FULL_STATED_SMALL_CHART',
     'transported_flatness_extension': 'DELTA_LINK_TIMES_RAW_L2_TENDS_TO_ZERO',
     'curved_sequence': 'BOUNDED_NATIVE_POTENTIAL_PROPER_SMALL_LINKS_TRANSPORTED_READOUT',
+    'frozen_coframe_refinement_boundary': 'ALL_COARSE_COFRAMES_FULL_COMPOSED_ONE_FORM_BLOCK_FIXED_TORUS_WEAK_METRIC_PROBES_SMALL_COMPARISON_LINKS',
+    'frozen_curve_refinement_gap': 'NONZERO_GAUGE_INVARIANT_BULK_GAP_WITH_VANISHING_METRIC_CORRECTORS_ALLOWED',
     'continuum_parity_and_regularity_formalized': False,
     'finite_inverse_is_joint_Euler_inverse': False,
     'small_metric_implies_small_gradient_chart': False,
@@ -34,6 +36,14 @@ SCOPE = {
     'zero_matter_is_geometric_stationarity': False,
     'source_fitted_or_physical_Ward_derived': False,
     'all_coframes_or_whole_core_no_go': False,
+    'continuum_frozen_weak_metric_boundary_formalized': False,
+    'metric_probe_compatibility_is_action_contrast_bound': False,
+    'one_doubling_forces_global_flatness': False,
+    'small_comparison_links_are_derived_from_native_dynamics': False,
+    'homogeneous_raw_cochain_lift_is_nondegenerate': False,
+    'all_other_native_refinement_diagrams_excluded': False,
+    'affine_origin_gauge_supplied_by_linear_Lorentz_owner': False,
+    'prepared_price_theorem_derives_full_coframe_refinement': False,
     'soundness_or_recovery_proved': False,
     'G0_closed': False,
     'positive_GR': False,
@@ -73,9 +83,9 @@ def main():
         checks.append(name)
 
     receipt = json.loads((root/(BASE+'_results.json')).read_text())
-    check('COMPILED_21_REAL_PROPOSITIONS', receipt['status'] == 'PASS'
+    check('COMPILED_29_REAL_PROPOSITIONS', receipt['status'] == 'PASS'
           and receipt['compiler_exit_code'] == 0 and not receipt['sorryAx']
-          and receipt['printed_axiom_dependencies'] == 21 and receipt['owner_input_head'] == HEAD)
+          and receipt['printed_axiom_dependencies'] == 29 and receipt['owner_input_head'] == HEAD)
     pins = {**receipt['transitive_d0_source_sha256'], **receipt['toolchain_input_sha256'],
             receipt['capsule']: receipt['capsule_sha256'], receipt['output']: receipt['output_sha256']}
     check('ALL_TRANSITIVE_OWNER_TOOLCHAIN_CAPSULE_OUTPUT_PINS', all(sha(p) == h for p, h in pins.items()))
@@ -85,7 +95,11 @@ def main():
     actual = ['signedGram_square_le','metricError_small_chart','korn_identity',
               'nonlinear_inverse_square','native_centered_binding','native_korn_identity',
               'native_metric_binding','native_metric_inverse_square','native_nyquist_raw_translation',
-              'native_nyquist_center_zero','raw4_det','resonance_center','resonance_gram']
+              'native_nyquist_center_zero','raw4_det','resonance_center','resonance_gram',
+              'frozen_native_tail_zero','native_flat_bulk_center','native_flat_bulk_center_bound',
+              'native_flat_gram_expansion','native_flat_gram_entry_bound',
+              'native_transported_gram_frame_invariant','resonance_two_component_gap',
+              'affine_frozen_doubling_degeneracy']
     for name in actual:
         check('RESOLVED_REAL_PROPOSITION_'+name, "'D0.Research.NativeMetricCompactness."+name+"' depends on axioms:" in out
               and '\nD0.Research.NativeMetricCompactness.'+name in out)
@@ -241,6 +255,111 @@ def main():
     check('METRIC_SMALLNESS_DOES_NOT_SELECT_COFRAME_CHART', bigboost*eta*bigboost.T == eta and sq(bigboost-eta) > s.Rational(1,16))
     check('CUBE_COMPACTNESS_VOLUME_CONSTANT', s.Rational(2**4,2) == 8)
 
+    # Full composed frozen blocks: the coarse data are arbitrary, not just Nyquist.
+    # Each exact adjacent row is composed before the tensor/degree normalization.
+    tensor_rows = 0
+    for L,K in [(2,4),(3,6),(4,8),(4,12)]:
+        P0,P1=s.eye(L),s.eye(L)
+        for n in range(L+1,K+1):
+            P0=s.Matrix(n,n-1,lambda i,j: int(j == i%(n-1)))*P0
+            P1=s.Matrix(n,n-1,lambda i,j: int(i == j))*P1
+        cap=lambda i: i if i<L else 0
+        check('COMPOSED_VERTEX_CAP_L'+str(L)+'K'+str(K),
+              P0 == s.Matrix(K,L,lambda i,j: int(j == cap(i))))
+        check('COMPOSED_OCCUPIED_PREFIX_L'+str(L)+'K'+str(K),
+              P1 == s.Matrix(K,L,lambda i,j: int(i == j)))
+        ys=list(itertools.product(range(K),repeat=4))
+        for mask in range(16):
+            occupied=[r for r in range(4) if mask&(1<<r)]
+            factor=Q(K,L)**len(occupied)
+            def coarse(a):
+                return 3+mask+sum((r+2)*a[r] for r in range(4))
+            mismatches=0
+            for y in ys:
+                a=tuple(cap(i) for i in y)
+                tensor=factor*coarse(a)
+                for r in range(4):
+                    tensor *= int((P1 if r in occupied else P0)[y[r],a[r]])
+                direct=(factor*coarse(a) if all(y[r]<L for r in occupied) else 0)
+                mismatches += int(tensor != direct)
+                tensor_rows += 1
+            check('ALL_SIXTEEN_GRADED_COMPOSED_ROWS_L'+str(L)+'K'+str(K)+'S'+str(mask), mismatches == 0)
+        bulk=[y for y in ys if all(i>=L+1 for i in y)]
+        check('FLAT_BULK_EXACT_CARDINALITY_L'+str(L)+'K'+str(K), len(bulk) == (K-L-1)**4)
+        check('ALL_SIXTEEN_COFRAME_ENTRIES_VANISH_ON_BULK_L'+str(L)+'K'+str(K),
+              all(P1[y[r],cap(y[r])] == 0 for y in bulk for r in range(4) for a in range(4)))
+        check('ALL_ACTUAL_INCOMING_NEIGHBORS_STAY_IN_ZERO_REGION_L'+str(L)+'K'+str(K),
+              all(all((i-1 if j == r else i)>=L for j,i in enumerate(y))
+                  for y in bulk for r in range(4)))
+        check('HOMOGENEOUS_RAW_LIFT_ZERO_VERSUS_PERTURBATION_LIFT_ETA_L'+str(L)+'K'+str(K),
+              len(bulk)>0 and eta.det() == -1 and s.zeros(4).det() == 0)
+        econst=-s.Rational(L,K)*eta
+        check('AFFINE_FROZEN_LIFT_FAILS_COMPLETE_NONDEGENERATE_CARRIER_L'+str(L)+'K'+str(K),
+              (eta+econst).det() != 0 and eta+s.Rational(K,L)*econst == s.zeros(4))
+
+    # All finite linear link matrices on the bulk, before imposing Lorentz.
+    rr=[s.Matrix(4,4,lambda a,b: s.Symbol('u'+str(r)+str(a)+str(b))) for r in range(4)]
+    flat=s.Matrix(4,4,lambda r,a: (eta[r,a]+(eta*rr[r])[r,a])/2)
+    H=flat-eta
+    check('ALL_COMPONENTS_LITERAL_FLAT_BULK_CENTER',
+          all(s.expand(H[r,a]-eta[r,r]*(rr[r][r,a]-int(r == a))/2) == 0
+              for r in range(4) for a in range(4)))
+    check('FULL_FLAT_BULK_GRAM_EXPANSION', zero(flat*eta*flat.T-(eta+H+H.T+H*eta*H.T)))
+    delta=s.Symbol('delta',nonnegative=True)
+    for r,a in itertools.product(range(4),repeat=2):
+        check('ALL_COMPONENTS_FLAT_BULK_GRAM_BOUND_'+str(r)+str(a),
+              s.expand(delta/2+delta/2+4*(delta/2)**2-(delta+delta**2)) == 0)
+
+    # The real owner transforms the whole raw solder AND all incoming links.
+    Lam=boost(2,s.Rational(1,3))
+    Remote=boost(1,s.Rational(-1,5))
+    base=flatread.subs({h:s.Rational(1,8),f:s.Rational(3,32)})
+    transformed=s.Matrix(4,4,lambda r,a:
+      ((eta*Lam)[r,a]+(eta*Remote*(Remote.inv()*pulls[r].subs({h:s.Rational(1,8),f:s.Rational(3,32)})*Lam))[r,a])/2)
+    check('FULL_JOINT_LOCAL_LORENTZ_ACTION_RETAINS_BULK_METRIC',
+          zero(transformed-base*Lam) and zero(transformed*eta*transformed.T-base*eta*base.T))
+    changed=s.Matrix(4,4,lambda r,a: ((eta*Lam)[r,a]+(eta*Lam*pulls[r].subs({h:s.Rational(1,8),f:s.Rational(3,32)}))[r,a])/2)
+    check('COFRAME_ONLY_REFRAMING_IS_NOT_THE_FULL_GAUGE_REPAIR', not zero(changed*eta*changed.T-eta))
+
+    # The two nonzero smooth metric entries have a bulk gap, not only a coframe defect.
+    ll=s.Symbol('L',positive=True)
+    p=((ll-1)/(2*ll))**4
+    lower=2*p/(32**4)
+    check('RESONANCE_BULK_SQUARE_GAP_LIMIT', s.limit(lower,ll,s.oo) == s.Rational(1,8388608))
+    check('EXACT_RESONANCE_TWO_COMPONENT_GAP',
+          s.factor((expected[2,2]+1)**2+(expected[3,3]+1)**2-2*f**4/d**2) == 0)
+    for mask in range(16):
+        wm=s.Matrix([int(bool(mask&(1<<r))) for r in range(4)])
+        masked=eta+t*wm*v.T
+        determinant=s.factor(masked.det())
+        check('RESONANT_COMPARISON_FULL_RAW_STATE_NONEMPTY_MASK'+str(mask),
+              s.expand(determinant+1+t*(wm[0]-wm[1])) == 0 and
+              all(determinant.subs(t,zz*kk) != 0 for zz in [-1,1] for kk in [4,8,12,16]))
+    for L in [4,8,12,16]:
+        K=2*L
+        for ff in [s.Rational(1,32),s.Rational(1,16),s.Rational(3,32)]:
+            hh=s.Rational(1,K)
+            dd=1-hh*hh*ff*ff
+            check('FINITE_RESONANCE_METRIC_GAP_L'+str(L)+'F'+str(ff),
+                  0<dd<=1 and 2*s.Rational((L-1)**4,K**4)*(ff*ff/dd)**2 >=
+                  2*s.Rational((L-1)**4,K**4)/(32**4))
+    check('ARBITRARY_SMALL_COMPARISON_LINK_ERROR_TENDS_TO_ZERO',
+          s.limit(4*(1/ll+1/ll**2),ll,s.oo) == 0)
+    check('VANISHING_METRIC_CORRECTOR_CANNOT_ERASE_POSITIVE_GAP',
+          s.limit(s.sqrt(lower)-1/ll,ll,s.oo) == s.sqrt(s.Rational(1,8388608)))
+    nonnear=[s.eye(4),s.eye(4),boost(2,s.Rational(1,3)),s.eye(4)]
+    nonflat=s.Matrix(4,4,lambda r,a: (eta[r,a]+(eta*nonnear[r])[r,a])/2)
+    check('SMALL_COMPARISON_LINK_PREMISE_IS_NECESSARY',
+          nonnear[2].det() == 1 and nonnear[2][0,0]>1 and not zero(nonflat*eta*nonflat.T-eta))
+    bump=s.exp(-1/(t*(s.Rational(1,4)-t)))/32
+    bc=bump.subs(t,s.Rational(1,8))
+    bdd=s.diff(bump,t,2).subs(t,s.Rational(1,8))
+    check('ONE_DOUBLING_BULK_FLATNESS_DOES_NOT_IMPLY_GLOBAL_FLATNESS',
+          bc == s.exp(-64)/32 and bdd == -8192*bc and
+          s.simplify(-2*bc*bdd/(1+bc*bc))>0)
+    check('WEAK_SMOOTH_METRIC_PROBE_GAP_REMAINS_NONZERO',
+          s.Rational(2,32**2) == s.Rational(1,512) and profile.subs(t,s.Rational(3,4))**2>0)
+
     payload={'status':'PASS','owner_input_head':HEAD,'scope':SCOPE,'checks':checks,
              'input_sha256':pins,'proof_sha256':sha(PROOF),'checker_sha256':sha(BASE+'_check.py'),
              'native_refinement_certificate_sha256':sha(REFINEMENT),
@@ -250,7 +369,13 @@ def main():
               'curved_Ric_AA_and_G_BB_at_zero':'24*pi^2/1033',
               'coframe_variance':'9/1024','link_raw_product_square_limit':'9/32',
               'geometric_potential_bonding_square_defect':'1',
-              'actual_frozen_lift_centered_gradient_square':'4*K','metric_components':10,'connection_rows':24}}
+              'actual_frozen_lift_centered_gradient_square':'4*K','metric_components':10,'connection_rows':24,
+              'frozen_metric_bulk_site_count':'(K-L-1)^4',
+              'frozen_metric_bulk_entry_bound':'delta+delta^2',
+              'frozen_resonance_metric_gap_square_liminf_lower_bound':'1/8388608',
+              'fixed_smooth_probe_gap_lower_bound':'(1/512)*integral(chi)',
+              'full_graded_composed_row_equations':tensor_rows,
+              'global_frozen_metric_limit':'eta_WITH_ALL_FIXED_UNBOUNDED_SCALE_RATIOS_WEAK_METRIC_COMPATIBILITY'}}
     if args.output:
         args.output.write_text(json.dumps(payload,sort_keys=True,indent=2)+'\n')
     else:

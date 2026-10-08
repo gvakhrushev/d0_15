@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`ff8fbe88ba3d981f19b3be71f84f5c3103e30859`, following
-`9488c133312768580bdad43bb570a0bed836432f`.
+`113efe7d8ccd6a49bdba15385fec11c9789813f1`, following
+`ff8fbe88ba3d981f19b3be71f84f5c3103e30859`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -489,6 +489,8 @@ local file or an implicitly merged scientific parent.
 
 41. **Complete prepared-pair action and genuine stationary-output boundary:** The entire prepared-pair action fiber is classified for every fixed actual VerificationProtocol and independently supplied endpoint maps: identity-zero, unit-gap and complete record-pair fiber consistency are necessary and sufficient. Actual native vacuum scalar readouts at two persistent phase anchors give two nonzero positive costs with different genuine full matter stationary outputs, preserving the owned affine node-frame action and literal scalar B0 refinement. A generic joint-gate equivalence is derived from actual differentiable actions, retaining variation curves through the declared background, independent full matter directions and a genuine stationary common geometry action as explicit premises. Full raw nondegenerate coframe, Lorentz affine links including shifts and all sixteen matter components are retained in verified mathematical payload countermodels. These are not the actual scene histories or a derived physical native preparation. The all-PSD two-anchor quadratic stationary-output kernel classification is analytic; thirty compiled propositions, twenty actual types, 68 transitive native pins and 367 exact controls pass. No action, selector, physical source/Ward, full raw/link refinement, resonant admission decision, G0/GR/global closure or original parent terminal is selected. The single remaining G0 law must derive native history/record preparation with composition and full refinement and explain its restriction of this complete prepared-action fiber; arbitrary new cost readings and off-shell examples do not answer it.
 
+42. **Complete frozen-coframe domain and weak-metric consumer:** The complete specified composed frozen one-form refinement/readout class is now resolved for every coarse coframe with all sixteen entries, arbitrary affine shifts and matter, and comparison links in a vanishing identity chart. Homogeneous raw prolongation loses nondegeneracy immediately; fixed-background perturbation prolongation also fails to preserve the whole nondegenerate raw carrier. Its exact new bulk has (K-L-1)^4 sites and transported metric entry error at most delta+delta^2 without a coarse raw bound. Composed compatibility against fixed smooth metric tests at every unbounded fixed ratio forces any smooth metric limit to equal eta. The existing curved resonance fails even one doubled weak metric interval, with squared L2 gap liminf at least 1/8388608 and a nonzero fixed smooth metric test; its full raw/link comparison is nonempty. The complete owned local Lorentz action and vanishing metric correctors preserve this boundary. Twenty-nine compiled propositions, twenty-one actual types, 36 native source pins, 326 exact controls and 422144 full graded composed row equations pass; 29 false-scope and six false-exact ledgers are rejected. The weak continuum assembly is analytic. Metric-readout compatibility is not inferred from an action-contrast bound. The typed physical native history/preparation/composition law remains required; this does not select an action, admit or exclude the resonance in the whole core, derive a physical source/Ward, change G0/GR/global closure, or replace any original #310/#202/#317 terminal.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
@@ -497,7 +499,7 @@ are a research slice prepared for review, not a new CORE promotion.
 
 ## Reproducible verification
 
-The twenty-eight self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41, 114, 139, 171 and 367 exact controls without
+The twenty-eight self-contained checkers replay 71, 60, 86, 72, 92, 40, 57, 51, 75, 76, 59, 91, 92, 94, 162, 84, 103, 107, 154, 38, 54, 31, 49, 41, 114, 139, 326 and 367 exact controls without
 writing their ledgers. The source run also replayed the consumed Palatini controls
 for all 24x64 connection coefficients and all ten metric response slots,
 including off-diagonal packing/sign controls, plus the actual seam audit.
@@ -791,3 +793,28 @@ actual restriction of the complete cost fiber. Admission of the existing
 curved raw/link resonance, own source/Ward, physical joint roots and all
 soundness/recovery/causal obligations remain. G0, GR, global closure and
 every original parent terminal are unchanged.
+
+
+The [full frozen-coframe metric consumer](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#61-complete-frozen-coframe-refinement-class-and-its-metric-boundary)
+is imported as an extension of the existing exact-coherent cochain boundary,
+not a new selected refinement. Homogeneous and fixed-background affine lifts
+fail to preserve the whole nondegenerate raw carrier. Its vanishing-link
+transported bulk estimate holds for arbitrary changing coarse coframes, with
+no raw bound. Composed weak metric probes at every unbounded fixed ratio
+force the smooth limit to be eta. The curved resonance fails even one doubled
+interval, with a nonempty full raw/link comparison and squared metric-gap
+liminf >=1/8388608. Complete owned Lorentz gauge and vanishing metric
+correctors do not repair that gap. Small comparison links and fixed-torus
+weak metric compatibility are explicit hypotheses, not consequences of an
+action contrast or a derived physical admission gate.
+
+The extension has 29 compiled propositions, 21 actual types, 36 D0 source
+pins, 326 exact controls, 422144 all-grade composed row equations, 29
+false-scope rejections and six falsified exact-result rejections. The full
+continuum weak-test proof remains analytic. The [theory assignment](D0_THEORY_TASK_NEXT_2026-10-07.md)
+now requires the actual owned preparation/composition/full-refinement law
+to address this complete state-domain and metric boundary. A different
+already owned reconstruction must be proved, not installed as a new arrow.
+Physical admission in the whole core, own source/Ward, G0/GR/global closure
+and the original parent terminals remain open. The 44 graph statuses,
+required terminals and dependency edges are unchanged.

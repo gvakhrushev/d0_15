@@ -335,6 +335,143 @@ theorem resonance_gram (z h f : ℝ) (hz : z^2=1) (hd : 1-h^2*f^2≠0) :
     norm_num [read4,eta4,Matrix.mul_apply,Fin.sum_univ_succ] <;>
     field_simp [hd] <;> ring_nf <;> simp only [hz] <;> ring
 
+/-- Coordinate formula for the already classified composed frozen vertex map.
+This is a research construction, not a newly selected physical refinement. -/
+def frozenPhaseCap (Nc Nf : ℕ)
+    (y : ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint Nf) :
+    ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint Nc :=
+  fun r => if h : (y r).val < Nc+2 then ⟨(y r).val,h⟩ else 0
+
+/-- The scale-corrected composed one-form block, in the literal point/group
+coordinates. Internal frame columns are not discarded. -/
+def frozenNativeCoframe (Nc Nf : ℕ) (e : LocalCoframeField Nc) :
+    LocalCoframeField Nf :=
+  fun x r a =>
+    let y := (archiveRolePhasePointGroupEquiv Nf).symm x
+    if (y r).val < Nc+2 then
+      ((Nf+2 : ℝ)/(Nc+2 : ℝ)) *
+        e (archiveRolePhasePointGroupEquiv Nc (frozenPhaseCap Nc Nf y)) r a
+    else 0
+
+theorem frozen_native_tail_zero (Nc Nf : ℕ) (e : LocalCoframeField Nc)
+    (x : ArchiveRolePhaseGroup Nf)
+    (hx : ∀ r, Nc+2 ≤ (((archiveRolePhasePointGroupEquiv Nf).symm x) r).val) :
+    rawSolderMatrix Nf (frozenNativeCoframe Nc Nf e) x = roleLorentzMetric := by
+  ext r a
+  simp [rawSolderMatrix,frozenNativeCoframe,not_lt_of_ge (hx r)]
+
+/-- All incoming rows use the actual native transported-center owner. -/
+theorem native_flat_bulk_center (N : ℕ)
+    (E : ArchiveRolePhaseGroup N → Matrix Role Role ℝ)
+    (R : ArchiveRolePhaseGroup N → Role → Matrix Role Role ℝ)
+    (x : ArchiveRolePhaseGroup N) (hx : E x=roleLorentzMetric)
+    (hm : ∀ r, E (roleTranslateMinus N r x)=roleLorentzMetric) (r a : Role) :
+    transportedSolderCenter N E R x r a-roleLorentzMetric r a =
+      roleLorentzSign r *
+        (R (roleTranslateMinus N r x) r r a-(1 : Matrix Role Role ℝ) r a)/2 := by
+  simp only [transportedSolderCenter,hx,hm,roleLorentzMetric,Matrix.diagonal_mul]
+  by_cases hra : r=a
+  · simp [Matrix.one_apply,hra]; ring
+  · simp [hra]
+
+private lemma native_sign_abs (r : Role) : |roleLorentzSign r|=1 := by
+  have h := roleLorentzSign_mul_self r
+  nlinarith [sq_abs (roleLorentzSign r),abs_nonneg (roleLorentzSign r)]
+
+theorem native_flat_bulk_center_bound (N : ℕ)
+    (E : ArchiveRolePhaseGroup N → Matrix Role Role ℝ)
+    (R : ArchiveRolePhaseGroup N → Role → Matrix Role Role ℝ)
+    (x : ArchiveRolePhaseGroup N) (hx : E x=roleLorentzMetric)
+    (hm : ∀ r, E (roleTranslateMinus N r x)=roleLorentzMetric)
+    (δ : ℝ) (hR : ∀ r a,
+      |R (roleTranslateMinus N r x) r r a-(1 : Matrix Role Role ℝ) r a|≤δ)
+    (r a : Role) :
+    |transportedSolderCenter N E R x r a-roleLorentzMetric r a|≤δ/2 := by
+  rw [native_flat_bulk_center N E R x hx hm r a,abs_div,abs_mul,native_sign_abs]
+  norm_num only [abs_of_pos (by norm_num : (0:ℝ)<2),one_mul]
+  exact div_le_div_of_nonneg_right (hR r a) (by norm_num)
+
+/-- Exact expansion at the flat bulk, with every matrix component retained. -/
+theorem native_flat_gram_expansion (H : Matrix Role Role ℝ) :
+    (roleLorentzMetric+H)*roleLorentzMetric*(roleLorentzMetric+H).transpose=
+      metric roleLorentzSign H := by
+  rw [Matrix.transpose_add,roleLorentzMetric_transpose]
+  simp only [Matrix.add_mul,Matrix.mul_add,roleLorentzMetric_sq,Matrix.one_mul]
+  rw [Matrix.mul_assoc H roleLorentzMetric roleLorentzMetric,
+    roleLorentzMetric_sq,Matrix.mul_one]
+  ext r a
+  simp [metric,signedGram,Matrix.mul_apply,roleLorentzMetric,Matrix.diagonal_apply]
+  ring
+
+theorem native_flat_gram_entry_bound (H : Matrix Role Role ℝ) (δ : ℝ)
+    (hδ : 0≤δ) (hH : ∀ r a, |H r a|≤δ/2) (r a : Role) :
+    |((roleLorentzMetric+H)*roleLorentzMetric*(roleLorentzMetric+H).transpose)
+       r a-roleLorentzMetric r a| ≤ δ+δ^2 := by
+  rw [native_flat_gram_expansion]
+  have hterm (k : Role) : |H r k*roleLorentzSign k*H a k|≤δ^2/4 := by
+    rw [abs_mul,abs_mul,native_sign_abs,mul_one]
+    have hh := mul_le_mul (hH r k) (hH a k) (abs_nonneg (H a k))
+      (by positivity : 0≤δ/2)
+    nlinarith
+  have hsum : |signedGram roleLorentzSign H H r a|≤δ^2 := by
+    calc
+      _ ≤ ∑ k : Role, |H r k*roleLorentzSign k*H a k| := by
+        exact Finset.abs_sum_le_sum_abs _ _
+      _ ≤ ∑ _k : Role, δ^2/4 := Finset.sum_le_sum fun k _ => hterm k
+      _ = δ^2 := by simp;ring
+  have hmetric : metric roleLorentzSign H r a-roleLorentzMetric r a=
+      H r a+H a r+signedGram roleLorentzSign H H r a := by
+    simp [metric,roleLorentzMetric,Matrix.diagonal_apply]
+    ring
+  rw [hmetric]
+  calc
+    _ ≤ |H r a+H a r|+|signedGram roleLorentzSign H H r a| := abs_add_le _ _
+    _ ≤ (|H r a|+|H a r|)+|signedGram roleLorentzSign H H r a| := by
+      linarith [abs_add_le (H r a) (H a r)]
+    _ ≤ δ+δ^2 := by linarith [hH r a,hH a r]
+
+theorem native_transported_gram_frame_invariant (N : ℕ)
+    (E : ArchiveRolePhaseGroup N → Matrix Role Role ℝ)
+    (Λ : ArchiveRolePhaseGroup N → Matrix Role Role ℝ)
+    (R R' : ArchiveRolePhaseGroup N → Role → Matrix Role Role ℝ)
+    (x : ArchiveRolePhaseGroup N) (hΛ : ∀ y, IsUnit (Λ y).det)
+    (hL : IsRoleLorentz (Λ x))
+    (hR : ∀ r, R' (roleTranslateMinus N r x) r=
+      (Λ (roleTranslateMinus N r x))⁻¹*R (roleTranslateMinus N r x) r*Λ x) :
+    transportedSolderCenter N (fun y => E y*Λ y) R' x*roleLorentzMetric*
+      (transportedSolderCenter N (fun y => E y*Λ y) R' x).transpose=
+    transportedSolderCenter N E R x*roleLorentzMetric*
+      (transportedSolderCenter N E R x).transpose := by
+  rw [transportedSolderCenter_covariance N E Λ R R' x hΛ hR]
+  exact rawSolderGram_frame_invariant _ _ hL
+
+theorem resonance_two_component_gap (f d : ℝ) (hf : (1/32:ℝ)≤f)
+    (hd : 0<d) (hd1 : d≤1) :
+    2/(32:ℝ)^4 ≤ 2*(f^2/d)^2 := by
+  have hs : (1/1024:ℝ)≤f^2 := by nlinarith
+  have hg : f^2≤f^2/d := by
+    apply (le_div_iff₀ hd).mpr
+    exact mul_le_of_le_one_right (sq_nonneg f) hd1
+  nlinarith [sq_nonneg (f^2/d-1/1024)]
+
+/-- The fixed-background affine version of doubling also fails to preserve
+the full nondegenerate raw carrier. This is an input-state witness, not an
+on-shell counterexample. -/
+theorem affine_frozen_doubling_degeneracy :
+    (roleLorentzMetric+(-1/2:ℝ) • roleLorentzMetric).det≠0 ∧
+    roleLorentzMetric+(2:ℝ) • ((-1/2:ℝ) • roleLorentzMetric)=0 := by
+  have hd : roleLorentzMetric.det≠0 := by
+    intro h
+    have hh := congrArg Matrix.det roleLorentzMetric_sq
+    rw [Matrix.det_mul,h,zero_mul,Matrix.det_one] at hh
+    norm_num at hh
+  have hm : roleLorentzMetric+(-1/2:ℝ) • roleLorentzMetric=
+      (1/2:ℝ) • roleLorentzMetric := by ext r a;simp;ring
+  refine ⟨?_,?_⟩
+  · rw [hm,Matrix.det_smul]
+    exact mul_ne_zero (pow_ne_zero _ (by norm_num)) hd
+  · ext r a;simp;ring
+
 end
 end D0.Research.NativeMetricCompactness
 open D0.Research.NativeMetricCompactness
@@ -359,6 +496,14 @@ open D0.Research.NativeMetricCompactness
 #print axioms boostAC_lorentz
 #print axioms resonance_center
 #print axioms resonance_gram
+#print axioms frozen_native_tail_zero
+#print axioms native_flat_bulk_center
+#print axioms native_flat_bulk_center_bound
+#print axioms native_flat_gram_expansion
+#print axioms native_flat_gram_entry_bound
+#print axioms native_transported_gram_frame_invariant
+#print axioms resonance_two_component_gap
+#print axioms affine_frozen_doubling_degeneracy
 #check signedGram_square_le
 #check metricError_small_chart
 #check korn_identity
@@ -372,3 +517,11 @@ open D0.Research.NativeMetricCompactness
 #check raw4_det
 #check resonance_center
 #check resonance_gram
+#check frozen_native_tail_zero
+#check native_flat_bulk_center
+#check native_flat_bulk_center_bound
+#check native_flat_gram_expansion
+#check native_flat_gram_entry_bound
+#check native_transported_gram_frame_invariant
+#check resonance_two_component_gap
+#check affine_frozen_doubling_degeneracy

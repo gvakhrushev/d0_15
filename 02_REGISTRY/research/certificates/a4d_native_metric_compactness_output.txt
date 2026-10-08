@@ -1,3 +1,15 @@
+Try this:
+  [apply] ring_nf
+
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
 'D0.Research.NativeMetricCompactness.matrixSquare_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.NativeMetricCompactness.matrixSquare_add_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.NativeMetricCompactness.signedGram_square_le' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -27,6 +39,26 @@
 'D0.Research.NativeMetricCompactness.boostAC_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.NativeMetricCompactness.resonance_center' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.NativeMetricCompactness.resonance_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.frozen_native_tail_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.native_flat_bulk_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMetricCompactness.native_flat_bulk_center_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.native_flat_gram_expansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.native_flat_gram_entry_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.native_transported_gram_frame_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.resonance_two_component_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMetricCompactness.affine_frozen_doubling_degeneracy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 D0.Research.NativeMetricCompactness.signedGram_square_le.{u_1} {i : Type u_1} [Fintype i] (sign : i → ℝ)
   (hsign : ∀ (r : i), sign r ^ 2 = 1) (A B : i → i → ℝ) :
   matrixSquare (signedGram sign A B) ≤ matrixSquare A * matrixSquare B
@@ -82,3 +114,48 @@ D0.Research.NativeMetricCompactness.resonance_gram (z h f : ℝ) (hz : z ^ 2 = 1
         h ^ 2 * f ^ 4 / (1 - h ^ 2 * f ^ 2) ^ 2;
       -z * h * f ^ 2 / (1 - h ^ 2 * f ^ 2), 0, h ^ 2 * f ^ 4 / (1 - h ^ 2 * f ^ 2) ^ 2,
         -1 - f ^ 2 / (1 - h ^ 2 * f ^ 2)]
+D0.Research.NativeMetricCompactness.frozen_native_tail_zero (Nc Nf : ℕ) (e : D0.Geometry.LocalCoframeField Nc)
+  (x : D0.Geometry.ArchiveRolePhaseGroup Nf)
+  (hx : ∀ (r : D0.Role), Nc + 2 ≤ ↑((D0.Geometry.archiveRolePhasePointGroupEquiv Nf).symm x r)) :
+  D0.Geometry.rawSolderMatrix Nf (frozenNativeCoframe Nc Nf e) x = D0.Geometry.roleLorentzMetric
+D0.Research.NativeMetricCompactness.native_flat_bulk_center (N : ℕ)
+  (E : D0.Geometry.ArchiveRolePhaseGroup N → Matrix D0.Role D0.Role ℝ)
+  (R : D0.Geometry.ArchiveRolePhaseGroup N → D0.Role → Matrix D0.Role D0.Role ℝ)
+  (x : D0.Geometry.ArchiveRolePhaseGroup N) (hx : E x = D0.Geometry.roleLorentzMetric)
+  (hm : ∀ (r : D0.Role), E (D0.Geometry.roleTranslateMinus N r x) = D0.Geometry.roleLorentzMetric) (r a : D0.Role) :
+  D0.Geometry.transportedSolderCenter N E R x r a - D0.Geometry.roleLorentzMetric r a =
+    D0.Geometry.roleLorentzSign r * (R (D0.Geometry.roleTranslateMinus N r x) r r a - 1 r a) / 2
+D0.Research.NativeMetricCompactness.native_flat_bulk_center_bound (N : ℕ)
+  (E : D0.Geometry.ArchiveRolePhaseGroup N → Matrix D0.Role D0.Role ℝ)
+  (R : D0.Geometry.ArchiveRolePhaseGroup N → D0.Role → Matrix D0.Role D0.Role ℝ)
+  (x : D0.Geometry.ArchiveRolePhaseGroup N) (hx : E x = D0.Geometry.roleLorentzMetric)
+  (hm : ∀ (r : D0.Role), E (D0.Geometry.roleTranslateMinus N r x) = D0.Geometry.roleLorentzMetric) (δ : ℝ)
+  (hR : ∀ (r a : D0.Role), |R (D0.Geometry.roleTranslateMinus N r x) r r a - 1 r a| ≤ δ) (r a : D0.Role) :
+  |D0.Geometry.transportedSolderCenter N E R x r a - D0.Geometry.roleLorentzMetric r a| ≤ δ / 2
+D0.Research.NativeMetricCompactness.native_flat_gram_expansion (H : Matrix D0.Role D0.Role ℝ) :
+  (D0.Geometry.roleLorentzMetric + H) * D0.Geometry.roleLorentzMetric * (D0.Geometry.roleLorentzMetric + H).transpose =
+    metric D0.Geometry.roleLorentzSign H
+D0.Research.NativeMetricCompactness.native_flat_gram_entry_bound (H : Matrix D0.Role D0.Role ℝ) (δ : ℝ) (hδ : 0 ≤ δ)
+  (hH : ∀ (r a : D0.Role), |H r a| ≤ δ / 2) (r a : D0.Role) :
+  |((D0.Geometry.roleLorentzMetric + H) * D0.Geometry.roleLorentzMetric * (D0.Geometry.roleLorentzMetric + H).transpose)
+          r a -
+        D0.Geometry.roleLorentzMetric r a| ≤
+    δ + δ ^ 2
+D0.Research.NativeMetricCompactness.native_transported_gram_frame_invariant (N : ℕ)
+  (E Λ : D0.Geometry.ArchiveRolePhaseGroup N → Matrix D0.Role D0.Role ℝ)
+  (R R' : D0.Geometry.ArchiveRolePhaseGroup N → D0.Role → Matrix D0.Role D0.Role ℝ)
+  (x : D0.Geometry.ArchiveRolePhaseGroup N) (hΛ : ∀ (y : D0.Geometry.ArchiveRolePhaseGroup N), IsUnit (Λ y).det)
+  (hL : D0.Geometry.IsRoleLorentz (Λ x))
+  (hR :
+    ∀ (r : D0.Role),
+      R' (D0.Geometry.roleTranslateMinus N r x) r =
+        (Λ (D0.Geometry.roleTranslateMinus N r x))⁻¹ * R (D0.Geometry.roleTranslateMinus N r x) r * Λ x) :
+  D0.Geometry.transportedSolderCenter N (fun y => E y * Λ y) R' x * D0.Geometry.roleLorentzMetric *
+      (D0.Geometry.transportedSolderCenter N (fun y => E y * Λ y) R' x).transpose =
+    D0.Geometry.transportedSolderCenter N E R x * D0.Geometry.roleLorentzMetric *
+      (D0.Geometry.transportedSolderCenter N E R x).transpose
+D0.Research.NativeMetricCompactness.resonance_two_component_gap (f d : ℝ) (hf : 1 / 32 ≤ f) (hd : 0 < d) (hd1 : d ≤ 1) :
+  2 / 32 ^ 4 ≤ 2 * (f ^ 2 / d) ^ 2
+D0.Research.NativeMetricCompactness.affine_frozen_doubling_degeneracy :
+  (D0.Geometry.roleLorentzMetric + (-1 / 2) • D0.Geometry.roleLorentzMetric).det ≠ 0 ∧
+    D0.Geometry.roleLorentzMetric + 2 • (-1 / 2) • D0.Geometry.roleLorentzMetric = 0
