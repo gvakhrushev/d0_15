@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`e7ef84c680910b36ee0cf9a030d6e0780d0302dd`, following
-`915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`.
+`0cc2bc2711234dfced8b815fc23e9c67181234a9`, following
+`e7ef84c680910b36ee0cf9a030d6e0780d0302dd`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -99,6 +99,28 @@ operator compatibility does not imply source compatibility. Nonzero
 response-null defects are retained. Passivity is not derived from M1,
 and this declared finite class does not exhaust native physical refinements.
 
+The new §6.10 completely classifies the declared selfadjoint extension
+class that retains both owned scene-history readouts. The actual rational
+inverse, full generated projector/operator, unique supported parameter,
+cardinality/traces 718/65/653, nonempty complement, reversal covariance
+and genuine scalar heat derivative compile. All simultaneous scene
+relabelings leave 19 parameters, or 13 with reversal symmetry, by exact
+orbital equations on all 718² pairs. These are complete finite classes,
+not an asserted complete physical D0 state/tangent family. A complementary
+scalar variation affects the full heat source while both readouts and
+feedback remain unchanged; its native admission is not proved.
+
+The new standalone packet has 158 compiled propositions, 30 D0 pins and
+246 exact controls. All 30 false-scope and 22 false-exact ledgers are
+rejected. Book 03's default scene heat trace is retained; no full history
+trace, temperature law or scalar variation is installed as native. The
+next owned input is the primitive p0/golden state/admission, actual heat
+carrier and complete operator/tangent/refinement law. Condensed operator
+naturality remains a supplied premise. Own source/Ward, contrast, native
+stationarity, curved roots, soundness/recovery and all parent criteria
+stay open. Historical proof slices and every graph contract/status remain
+intact.
+
 The new §6.9 constructs a finite native history process directly from the
 owned 718 oriented histories, Jt/Js/C1 and reverseEdge. Its complete
 orthogonal operator preserves the record: CRJ=T, CR^2J=I and all delay
@@ -117,10 +139,12 @@ rejected. Its actual left-inverse/degree/readout bindings are re-proved by
 the kernel and consume only standard logical axioms. The historical
 215/670 and 42/189 packets remain intact.
 
-The next single G0b input is independent native admission, full-carrier
-spectral law and golden-compatible refinement of this same joint state.
-Determine its complete primitive tangent and retained word law, retain
-the unobserved complement in the heat trace, and apply the genuine
+The next single G0b input is independent native admission, the actual
+heat carrier and spectral law, and golden-compatible refinement of this
+same joint state.
+Determine its complete primitive tangent and retained word law. If a
+full-history heat carrier is independently owned, retain its complement
+in that trace and apply the genuine
 source calculus before deriving native stationarity. A fitted heat
 operator, new action, trace, temperature law, selector, coupling, source
 or physical postulate cannot replace that arrow. Physical preparation,
@@ -132,19 +156,21 @@ is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 421 current artifact/input hash versions match (325 input versions).
+are unchanged. All 427 current artifact/input hash versions match (328 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
-The preceding source `915f4ff8` passed CI `37821005140` and CONTROL
-`7883340b` passed CI `37821557054`. The new source and CONTROL heads
+The preceding source `e7ef84c6` passed CI `37829415818` and CONTROL
+`89f72d7a` passed CI `37830256885`. The new source and CONTROL heads
 require their own CI and CONTROL review; prior-head successes do not
 substitute for current validation.
 
 ## Enumerated artifact slice
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-203 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+208 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
+* [Complete joint-readout spectral extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance),
+  its standalone exact checker/ledger and compiled capsule, transcript and source receipt.
 * [Owned scene-history feedback (§6.9)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#69-owned-scene-histories-give-an-actual-nonpassive-return-law),
   its standalone exact checker/ledger and compiled capsule, transcript and source receipt.
 * [Composed native feedback and joint golden refinement](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md),

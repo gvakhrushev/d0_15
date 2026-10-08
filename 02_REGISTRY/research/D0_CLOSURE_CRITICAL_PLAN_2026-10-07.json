@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "1dcf959b13931f653070f9d0f78aa67679a4b7b3577495616f301fbe1ebd413f",
+    "sha256": "df62de4b2423a208f81e1e91fa77c4cd31fb2b4093b6a8df3944315be16bbe09",
     "global_census": false
   },
   "history_diagnosis": {
@@ -269,7 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": "Derive independently the admitted full joint scene/history state, its spectral operator on the retained complete carrier and golden-compatible refinement. The actual Jt/Js/C1/reversal return law and coarse coupling are already constructed. Determine its complete primitive tangent and retained word law, keep the 653-dimensional unobserved complement in the thermal action, and apply the genuine source calculus before native stationarity. Do not fit a spectral operator or declare mathematical readout/actuation physically admitted. Full G0, source/Ward, contrast, curved roots, soundness/recovery and original terminals remain open.",
+    "next_proof_packet": "G0b: derive the native primitive state/admission and its actual heat carrier, spectral operator and complete tangent/refinement law from p0/golden/recording owners. Book 03 default scene heat remains intact. Apply the finite joint-history return construction; if a full history heat law is independently owned, use the complete extension constraints and source condition instead of fitting its spectrum. Condensed operator naturality is still a supplied premise. Retain all nongauge record directions; derive physical source/Ward, quantitative contrast, genuine native stationarity, curved roots, soundness/recovery and physical constraints with no new action or postulate.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -506,6 +506,25 @@
       "intake_artifacts": 203,
       "verified_artifact_input_hash_versions": 421,
       "verified_current_input_hash_versions": 325
+    },
+    "history_spectral_completion": {
+      "source_head": "0cc2bc2711234dfced8b815fc23e9c67181234a9",
+      "input_head": "e7ef84c680910b36ee0cf9a030d6e0780d0302dd",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance",
+      "compiled_propositions": 158,
+      "transitive_d0_source_pins": 30,
+      "exact_controls": 246,
+      "false_scope_rejections": 30,
+      "false_exact_rejections": 22,
+      "result": "Complete declared finite selfadjoint joint-readout extension class on the owned 718 histories: a constructed rational inverse and projector K, generated heat block A0, unique entire parameter B with BK=KB=0, kernel cardinality/traces 718/65/653 and a nonzero rectangle witness. All simultaneous graph relabelings leave 19 symmetric extension parameters, or 13 when reversal commutation is required, by complete exact orbital equations. The scalar complementary family keeps both readouts and reversal but has genuine nonzero heat-action derivative; full and scene sources agree precisely when Zscene*dZB=(ZB-1)*dZscene. 158 actual compiled propositions, 30 D0 pins and 246 exact controls. No full history heat trace is installed as native, scalar admission or condensed refinement is derived, and no G0, source/Ward, physical stationarity, GR or parent terminal is promoted.",
+      "remaining": "G0b: derive the native primitive state/admission and its actual heat carrier, spectral operator and complete tangent/refinement law from p0/golden/recording owners. Book 03 default scene heat remains intact. Apply the finite joint-history return construction; if a full history heat law is independently owned, use the complete extension constraints and source condition instead of fitting its spectrum. Condensed operator naturality is still a supplied premise. Retain all nongauge record directions; derive physical source/Ward, quantitative contrast, genuine native stationarity, curved roots, soundness/recovery and physical constraints with no new action or postulate.",
+      "declared_completion_class_only": true,
+      "native_heat_carrier_scalar_admission_and_refinement_derived": false,
+      "native_whole_bootstrap_stationarity_derived": false,
+      "G0_closed": false,
+      "intake_artifacts": 208,
+      "verified_artifact_input_hash_versions": 427,
+      "verified_current_input_hash_versions": 328
     }
   }
 }

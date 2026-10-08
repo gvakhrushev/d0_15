@@ -792,7 +792,7 @@ image и вывести настоящие native on-shell equations. Дефек
 контраст, curved roots, soundness/recovery, ограничения и ОТО открыты.
 
 
-## Собственная сцена вместе с сохраняемой историей — текущий шаг
+## Собственная сцена вместе с сохраняемой историей — предыдущий шаг
 
 Источник #310: `e7ef84c680910b36ee0cf9a030d6e0780d0302dd`, вход `915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`.
 В §6.9 того же proof получена actual совместная конечная конструкция:
@@ -820,3 +820,33 @@ operator relation не заменяет full-bootstrap stationarity. Новый 
 trace, temperature, selector, coupling, source или postulate не вводится.
 G0--G4, local source/Ward, contrast, curved roots, soundness/recovery,
 ограничения, ОТО и исходные terminal открыты.
+
+
+## Полный класс совместного спектрального дополнения — текущий шаг
+
+Источник #310: `0cc2bc2711234dfced8b815fc23e9c67181234a9`, вход `e7ef84c680910b36ee0cf9a030d6e0780d0302dd`.
+§6.10 того же исследования строит actual full projector K и generated
+operator A0, полный симметричный two-readout fiber A=A0+B с BK=KB=0,
+уникальность B, cardinality/traces 718/65/653 и непустое дополнение.
+Reversal covariance и настоящая scalar heat derivative проверены в Lean.
+Все совместные graph relabelings оставляют 19 параметров, с reversal —
+13; полный класс получен точными orbital equations. Действие может
+меняться при тех же readouts и feedback. Source agreement требует
+Zscene*dZB=(ZB-1)*dZscene, а не только совпадения feedback.
+
+Standalone пакет: 158 actual compiled propositions, 30 D0 pins,
+246 exact controls, 30 false-scope и 22 false-exact rejections.
+Это declared finite completion class. Book 03 scene heat carrier
+сохранён; full history heat carrier и scalar tangent не назначены
+native. Condensed naturality ещё должна следовать из собственного
+уточнения. CONTROL содержит 208 byte-identical artifacts и 427 verified
+artifact/input hash versions (328 current input versions).
+Все исторические entries и 44 graph contracts/statuses сохранены.
+
+Следующая одна стрелка — собственный p0/golden primitive admission,
+реальный heat carrier и полный operator/tangent/refinement law. После
+неё применять уже доказанные readout/feedback/source formulas, без
+подбора action, trace, temperature, spectrum или нового постулата.
+G0--G4, source/Ward, contrast, native stationarity, curved roots,
+soundness/recovery, физические ограничения, ОТО и родители открыты.
+Новые source/CONTROL головы требуют собственного CI и CONTROL review.
