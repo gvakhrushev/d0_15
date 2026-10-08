@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "cda3ff2c71e6e0e3131b1e9cb052955b21a6b95260d8145459e22d14db7e26c1",
+    "sha256": "f4c657375e03bfcf37c73d8c15eb246d515934e2372176ea0f285fb8659b892c",
     "global_census": false
   },
   "history_diagnosis": {
@@ -269,7 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": "G0b: construct actual admitted Boolean/address and relative-phase control, or prove readout/operator covariance for the derived per-vertex phase, from the p0/golden/recording owners. Bind the literal preparation cost to the independently owned native MDL/kappa/refinement budget and actual heat carrier/tangent/action law. Use the complete retained record and exact cylinder extension, never scalar stopping or a new fine singleton as native preparation. Then own source/Ward, quantitative contrast, genuine native stationarity, curved joint roots, soundness/recovery and physical constraints. No new action, temperature, selector, coupling/source prescription or physical postulate.",
+    "next_proof_packet": "G0b: derive the physical admission of the same complete state/preparation/controller/readout program from the existing p0/golden/recording owners and bind its actual native MDL/kappa/refinement budget and joint heat/tangent/action law. The fixed full-state and all-real-projector estimates are now available; keep the derived per-vertex target phase and complete memory, and prove any physical readout/operator covariance rather than declaring it gauge. The native law must compute both thermal-memory defects and genuine source jets from that same admitted state. Then own metric/matter source/Ward, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints. No new action, angle, temperature, selector, coupling/source prescription or postulate.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -551,6 +551,25 @@
       "intake_artifacts": 214,
       "verified_artifact_input_hash_versions": 435,
       "verified_current_input_hash_versions": 334
+    },
+    "golden_fixed_calibration": {
+      "source_head": "66d51fbad02e683561c938b71ba728eb9b25bf03",
+      "input_head": "353fbbde33be5437b9be3d432e6ef5451afe56c1",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_FIXED_CALIBRATION.md",
+      "compiled_propositions": 86,
+      "transitive_d0_source_pins": 12,
+      "exact_controls": 154,
+      "false_scope_rejections": 34,
+      "false_exact_rejections": 13,
+      "result": "Fixed complete golden preparation target derived from the literal retained seed/word: unique unit success scalar limit, whole unconditional squared state error <=16^(-k)/8 with no archive-cardinality factor, faithful injective real full-state/operator transfer, all real orthogonal-projector squared reading errors <=16^(-k)/2, literal p0/all-33-scene binding, and the same fixed target/rate at every golden pair-history depth. Common unspin is the owned inverse G^(16*k) on one pointer. Complex phase cancellation is restricted to its complex-projector class; real pointers detect the actual G^8 phase. The scoped same-carrier real-entry invariant is not a full-core no-go. 86 new compiled propositions, 12 D0 pins and 154 exact controls. Physical Boolean/address/inverse/readout admission, native budget and joint heat/tangent/action law remain open; no G0b, GR or parent terminal is promoted.",
+      "remaining": "G0b: derive the physical admission of the same complete state/preparation/controller/readout program from the existing p0/golden/recording owners and bind its actual native MDL/kappa/refinement budget and joint heat/tangent/action law. The fixed full-state and all-real-projector estimates are now available; keep the derived per-vertex target phase and complete memory, and prove any physical readout/operator covariance rather than declaring it gauge. The native law must compute both thermal-memory defects and genuine source jets from that same admitted state. Then own metric/matter source/Ward, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints. No new action, angle, temperature, selector, coupling/source prescription or postulate.",
+      "complete_fixed_target_and_all_real_projector_transfer": true,
+      "physical_controller_readout_and_native_budget_admission_derived": false,
+      "G0b_closed": false,
+      "G0_closed": false,
+      "intake_artifacts": 220,
+      "verified_artifact_input_hash_versions": 441,
+      "verified_current_input_hash_versions": 338
     }
   }
 }

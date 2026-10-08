@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`353fbbde33be5437b9be3d432e6ef5451afe56c1`, following
-`1093df6bbd2f7a0fb91204e87240ad035256d661`.
+`66d51fbad02e683561c938b71ba728eb9b25bf03`, following
+`353fbbde33be5437b9be3d432e6ef5451afe56c1`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -16,6 +16,28 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Fixed complete golden limit and real readings, 2026-10-09
+
+The [fixed-limit proof](A4D_NATIVE_GOLDEN_FIXED_CALIBRATION.md) derives a
+unique unit success scalar limit from the literal retained native word.
+Complete unconditional squared state error is <=16^(-k)/8 with no
+archive-size factor. Faithful real full-state/operator encoding preserves
+the entire word; all real orthogonal-projector squared reading errors
+are <=16^(-k)/2. The literal p0/all-33-scene corollary and all golden
+pair-history depths are bound. The common unspin is the owned inverse
+G^(16*k) on one pointer. The fixed target keeps its derived per-vertex
+phase. Complex projection cancellation cannot be generalized to real
+pointer readings or declared physical gauge. The same-carrier real-entry
+invariant is scoped and does not exhaust the whole core.
+
+86 new actual propositions compile with 12 D0 pins and standard axioms;
+154 exact controls pass. All 34 false-scope and 13 false-exact ledgers are
+rejected. Physical state/preparation/controller/readout admission, native
+MDL/kappa budget and the same joint heat/tangent/refinement/action law
+remain open. No source/Ward, contrast/stationarity, curved roots,
+soundness/recovery, GR or original parent terminal is promoted. No new
+physical action, angle, temperature, selector, coupling or source is added.
 
 ## Complete retained golden preparation, 2026-10-09
 
@@ -179,7 +201,7 @@ is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 435 current artifact/input hash versions match (334 input versions).
+are unchanged. All 441 current artifact/input hash versions match (338 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
 The preceding source `e7ef84c6` passed CI `37829415818` and CONTROL
@@ -189,11 +211,14 @@ substitute for current validation.
 
 ## Enumerated artifact slice
 
+* [Fixed complete golden target and real readings](A4D_NATIVE_GOLDEN_FIXED_CALIBRATION.md),
+  its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
+
 * [Complete retained golden preparation](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md),
   its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-214 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+220 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [Complete joint-readout spectral extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance),
   its standalone exact checker/ledger and compiled capsule, transcript and source receipt.
@@ -1041,4 +1066,9 @@ require fresh CI and CONTROL review. No failed run is counted as a pass.
 Current source `353fbbde33be5437b9be3d432e6ef5451afe56c1` and this updated CONTROL intake require their
 own current-head CI and CONTROL review. Source `1093df6b` and CONTROL
 `55ae50d2` passed CI `37843792462` and `37844116685`; those earlier
+heads do not substitute for current validation. No self-merge.
+
+Current source `66d51fbad02e683561c938b71ba728eb9b25bf03` and this updated CONTROL intake require their
+own current-head CI and CONTROL review. Source `353fbbde` and CONTROL
+`d98feff3` passed CI `37854628842` and `37854886737`; those earlier
 heads do not substitute for current validation. No self-merge.

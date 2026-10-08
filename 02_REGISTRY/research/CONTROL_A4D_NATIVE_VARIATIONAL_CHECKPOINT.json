@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "cda3ff2c71e6e0e3131b1e9cb052955b21a6b95260d8145459e22d14db7e26c1",
-      "source_blob": "708e37468142cdf218337d670727efecea57f5b4"
+      "sha256": "f4c657375e03bfcf37c73d8c15eb246d515934e2372176ea0f285fb8659b892c",
+      "source_blob": "bfce4dff9014926e9c8f535b9b78d4ada3ee238e"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "589c10c91053eee0f88242d6a8f3176b5a2cc15b61cbe80979f47924b9ae1107",
-      "source_blob": "91ee6d1bd07ece27d4db9a57ba51e577ae67609e"
+      "sha256": "1880fa56b170374899ec7d4feec343ba60035452f6a9e7920afd3791dcdaf244",
+      "source_blob": "cae2db0a251a7d0beba807ad5a0c84a8b09f55b3"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -1071,6 +1071,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_results.json",
       "sha256": "71e22640f12d44d8205b2b55b285f87e6db92426e26e7243cbc07022dc331716",
       "source_blob": "f8400f4cd2baedc885b08ce8e1fde7bccc850c8d"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_FIXED_CALIBRATION.md",
+      "sha256": "f13935d6d5aab12e04ff7506e86298884a4c0263becb1cf73be586fbeeeea84d",
+      "source_blob": "0fccc0e971812abd7fcd054a53c77adac693ea31"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean",
+      "sha256": "696a06c93ef4cbdb6ad22056bf300928c61f12ebdcb3f7cd0b74ecd36abef604",
+      "source_blob": "961f647e860df06d8a6bb4ed886a1a75e5c6f9a9"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_certificate.json",
+      "sha256": "1f84101bc78578841031cc6a846ecfbcf3af21def1b9b0cfaefcdd312a8aa3e1",
+      "source_blob": "7a721c86a725e0a9bcb214c2512b7e3d8af62e73"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_check.py",
+      "sha256": "be205aa580a14ef3c66c23ada1177e7fc480c3f0b625aba5ce33ec5e12861c2c",
+      "source_blob": "80556dbb870348ce878905ffee89c7a6fd288810"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_output.txt",
+      "sha256": "cfe2440251ef37c6d06eff33f3578ce6b693db2699903e32c6275d5a0dc2dc3f",
+      "source_blob": "93f1fd0e3ddb322a2fbd159b5f6755ab0a5a5e50"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_results.json",
+      "sha256": "2bb3c415e3d46d6a8fbe332ddd9b491a12eab91b5808d47389a0e0ce5d577277",
+      "source_blob": "d1d9abe7fcf7d13b5b2983cbd459e7578ca45e0b"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1079,7 +1109,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "1093df6bbd2f7a0fb91204e87240ad035256d661",
+  "previous_source_head": "353fbbde33be5437b9be3d432e6ef5451afe56c1",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1139,11 +1169,12 @@
     "Owned one-step scene-history realization: the actual 718 oriented histories, endpoint/source lifts Jt/Js, normalized average C1 and native reverseEdge produce a full orthogonal reversal with CRJ=T and CR^2J=I. Its exact feedback is J(I-T^2)C, compressed I-T^2=2*Delta-Delta^2 for the existing normalized scene Delta. All archive-delay kernels are (I-T^2)(-T)^k; the full retained resolvent is (I+zT)/(1-z^2). All 30 balanced directions leave the endpoint readout at one return and are recovered at two. Full-history covariance preserves both source and endpoint, so the vertex-only equivariant no-go is not a whole-history obstruction. The ordinary feedback determinant reduces exactly; its native rank is 32, generated history dimension 65 and retained complement 653. The new standalone package has 60 compiled propositions, 30 D0 source pins and 246 exact controls. Physical admission, full-history heat/refinement, complete tangent law, local source/Ward, native stationarity, contrast, curved roots, soundness/recovery, GR and original terminals remain open. No action, trace, temperature law, selector, coupling, source or postulate is added. All 32 false-scope and 24 false-exact ledgers were rejected by the actual checker.",
     "Complete declared finite selfadjoint joint-readout extension class on the owned 718 histories: a constructed rational inverse and projector K, generated heat block A0, unique entire parameter B with BK=KB=0, kernel cardinality/traces 718/65/653 and a nonzero rectangle witness. All simultaneous graph relabelings leave 19 symmetric extension parameters, or 13 when reversal commutation is required, by complete exact orbital equations. The scalar complementary family keeps both readouts and reversal but has genuine nonzero heat-action derivative; full and scene sources agree precisely when Zscene*dZB=(ZB-1)*dZscene. 158 actual compiled propositions, 30 D0 pins and 246 exact controls. No full history heat trace is installed as native, scalar admission or condensed refinement is derived, and no G0, source/Ward, physical stationarity, GR or parent terminal is promoted. All 30 false-scope and 22 false-exact ledgers were rejected by the actual checker.",
     "Certificate freshness repair at 1093df6bbd2f7a0fb91204e87240ad035256d661: the retained-history descent ledger plan_sha256 now binds the current execution plan. Its 42 propositions, 189 exact controls, proof, source/toolchain pins and scientific scope are unchanged; all 208 copies match source. Failed runs 37842211412/37843183722 detected the stale plan pin and do not count as successful current-head CI.",
-    "Complete finite retained phi preparation from the owned golden and recording definitions: literal 2^45 seed unitary, full recursive words, every-coordinate retained coefficients, actual 33-vertex incoming fibers and degrees 20/22/24, native G^8 phase, two-stage failure <=16^(-k)/10 and complete-vector squared error <=16^(-k)/5 against an explicitly phase-preserving normalized successful target. Exact expanded word cost gives an inverse-square failure bound. Whole-cylinder prefix extensions intertwine at every depth and preserve the error; singleton fine-blank phases fail. The actual 20/24 successful phase area is nonzero, so a common phase cannot supply the physical isometry. 151 compiled propositions, 12 transitive D0 pins and 239 exact controls. Boolean/address/relative-phase physical admission, native MDL/kappa and heat/tangent ownership remain open; no G0b, source/Ward, stationarity, GR or parent terminal is promoted. All 32 false-scope and 15 false-exact ledgers were rejected by the actual checker."
+    "Complete finite retained phi preparation from the owned golden and recording definitions: literal 2^45 seed unitary, full recursive words, every-coordinate retained coefficients, actual 33-vertex incoming fibers and degrees 20/22/24, native G^8 phase, two-stage failure <=16^(-k)/10 and complete-vector squared error <=16^(-k)/5 against an explicitly phase-preserving normalized successful target. Exact expanded word cost gives an inverse-square failure bound. Whole-cylinder prefix extensions intertwine at every depth and preserve the error; singleton fine-blank phases fail. The actual 20/24 successful phase area is nonzero, so a common phase cannot supply the physical isometry. 151 compiled propositions, 12 transitive D0 pins and 239 exact controls. Boolean/address/relative-phase physical admission, native MDL/kappa and heat/tangent ownership remain open; no G0b, source/Ward, stationarity, GR or parent terminal is promoted. All 32 false-scope and 15 false-exact ledgers were rejected by the actual checker.",
+    "Fixed complete golden preparation target derived from the literal retained seed/word: unique unit success scalar limit, whole unconditional squared state error <=16^(-k)/8 with no archive-cardinality factor, faithful injective real full-state/operator transfer, all real orthogonal-projector squared reading errors <=16^(-k)/2, literal p0/all-33-scene binding, and the same fixed target/rate at every golden pair-history depth. Common unspin is the owned inverse G^(16*k) on one pointer. Complex phase cancellation is restricted to its complex-projector class; real pointers detect the actual G^8 phase. The scoped same-carrier real-entry invariant is not a full-core no-go. 86 new compiled propositions, 12 D0 pins and 154 exact controls. Physical Boolean/address/inverse/readout admission, native budget and joint heat/tangent/action law remain open; no G0b, GR or parent terminal is promoted. All 34 false-scope and 13 false-exact ledgers were rejected by the actual checker."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "353fbbde33be5437b9be3d432e6ef5451afe56c1",
+  "source_head": "66d51fbad02e683561c938b71ba728eb9b25bf03",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "1093df6bbd2f7a0fb91204e87240ad035256d661",
+  "source_parent": "353fbbde33be5437b9be3d432e6ef5451afe56c1",
   "source_pr": 310
 }

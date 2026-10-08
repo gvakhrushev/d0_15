@@ -892,3 +892,36 @@ native stationarity, curved roots, soundness/recovery, физические
 не подменять их stopped retry, новым fine blank или новой action/phase
 angle/temperature/coupling/source prescription. Новые source/CONTROL
 головы требуют собственного CI и CONTROL review.
+
+
+## Фиксированный полный φ-предел и реальные показания — текущий шаг
+
+Источник #310: `66d51fbad02e683561c938b71ba728eb9b25bf03`, вход `353fbbde33be5437b9be3d432e6ef5451afe56c1`.
+[Доказательство](A4D_NATIVE_GOLDEN_FIXED_CALIBRATION.md) выводит единственный
+единичный предел успешного коэффициента из actual seed/word. Полный
+безусловный squared state error <=16^(-k)/8 без множителя размера архива.
+Faithful real encoding переносит всё состояние, оператор и полный word;
+для каждого real orthogonal projector squared reading error <=16^(-k)/2.
+Связаны literal p0, все 33 scene fibers и каждый золотой pair-history
+depth. Общий unspin — обратный собственный G^(16*k) на одном pointer.
+Фиксированный target сохраняет derived per-vertex phase. Complex
+projection cancellation не является универсальным physical gauge.
+Real-entry boundary ограничен finite products/adjoints на том же carrier.
+
+86 новых actual compiled propositions, 12 D0 pins, 154 exact controls;
+34 false-scope и 13 false-exact ledgers отвергнуты. CONTROL содержит
+220 byte-identical artifacts, 441 artifact/input hash versions и
+338 current input versions. Все 44 graph contracts/statuses/dependencies
+и исторические entries сохранены. Перенос к fixed full target в этом
+полном experiment теперь доказан. Следующий один вход G0b — собственный
+допуск того же state/preparation/controller/readout процесса, native
+budget и joint heat/tangent/refinement/action law. Физическую covariance
+нужно выводить, а не назначать phase gauge. Оба thermal-memory defects
+и их genuine source jets должны происходить из того же admitted state.
+
+Затем остаются own metric/matter source/Ward, quantitative metric
+contrast, native stationarity, curved joint roots, soundness/recovery,
+physical constraints и ОТО. G0b/G0/global closure и исходные terminals
+открыты. Новый action/angle/temperature/selector/coupling/source/postulate
+не добавляется. Новые source/CONTROL heads требуют собственного CI и
+CONTROL review; прежний зелёный CI не подменяет текущую проверку.
