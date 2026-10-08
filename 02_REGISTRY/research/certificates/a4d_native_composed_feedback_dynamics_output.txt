@@ -1,0 +1,572 @@
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:21:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_on_incoming`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:26:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_transpose_on_outgoing`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:39:38: warning: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  simp [̵a̵r̵c̵h̵i̵v̵e̵B̵l̵o̵c̵k̵,̵M̵a̵t̵r̵i̵x̵.̵a̵d̵d̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵h̵S̵V̵]̵[̲a̲r̲c̲h̲i̲v̲e̲B̲l̲o̲c̲k̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲a̲d̲d̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲ ̲h̲S̲V̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:56:38: warning: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  simp [̵a̵r̵c̵h̵i̵v̵e̵B̵l̵o̵c̵k̵,̵M̵a̵t̵r̵i̵x̵.̵a̵d̵d̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵h̵r̵v̵]̵[̲a̲r̲c̲h̲i̲v̲e̲B̲l̲o̲c̲k̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲a̲d̲d̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲ ̲h̲r̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:85:64: warning: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵a̵t̵r̵i̵x̵.̵t̵r̵a̵n̵s̵p̵o̵s̵e̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵t̵r̵a̵n̵s̵p̵o̵s̵e̵_̵t̵r̵a̵n̵s̵p̵o̵s̵e̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵o̵n̵e̵,̵s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵h̵d̵]̵[̲M̲a̲t̲r̲i̲x̲.̲t̲r̲a̲n̲s̲p̲o̲s̲e̲_̲s̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲t̲r̲a̲n̲s̲p̲o̲s̲e̲_̲t̲r̲a̲n̲s̲p̲o̲s̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲h̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:108:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.reconstruct_all_raw_blocks`:
+  [Fintype m]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:166:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.joint_transpose`:
+  [Fintype m]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:191:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_embedding_injective`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:211:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.one_return_feedback`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:215:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.joint_two_step_retained`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:296:34: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [Matrix.transpose_sub, ̲Matrix.transpose_smul, ̲Matrix.transpose_one,
+  ̵  ̵ ̵ ̵Matrix.sub_mul,
+  ̲ ̲ ̲ ̲ ̲Matrix.mul_sub, ̲Matrix.smul_mul, ̲Matrix.mul_smul,
+  ̵  ̵ ̵ ̵Matrix.one_mul, ̲Matrix.mul_one,s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵ ̲hH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:492:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_lift_intertwines`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:497:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_inclusion_preserves_pairing`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:513:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_one`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:515:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_transpose`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:519:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_sub`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:524:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_smul`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+D0.Research.NativeComposedFeedbackDynamics.archive_on_incoming.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) (hR : R.transpose * R = 1)
+  (hV : V * R = 0) : D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V * R = a • S
+'D0.Research.NativeComposedFeedbackDynamics.archive_on_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.archive_transpose_on_outgoing.{u_1, u_2} {n : Type u_1} {m : Type u_2}
+  [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] (a : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ)
+  (hS : S.transpose * S = 1) (hV : S.transpose * V = 0) :
+  (D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V).transpose * S = a • R
+'D0.Research.NativeComposedFeedbackDynamics.archive_transpose_on_outgoing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.archive_left_gram.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) (hS : S.transpose * S = 1)
+  (hSV : S.transpose * V = 0) :
+  (D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V).transpose *
+      D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V =
+    a ^ 2 • (R * R.transpose) + V.transpose * V
+'D0.Research.NativeComposedFeedbackDynamics.archive_left_gram' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.archive_right_gram.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) (hR : R.transpose * R = 1)
+  (hVR : V * R = 0) :
+  D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V *
+      (D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V).transpose =
+    a ^ 2 • (S * S.transpose) + V * V.transpose
+'D0.Research.NativeComposedFeedbackDynamics.archive_right_gram' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.joint_left_orthogonal.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) (h : a ^ 2 + p ^ 2 = 1)
+  (hS : S.transpose * S = 1) (hSV : S.transpose * V = 0) (hVV : V.transpose * V = 1 - R * R.transpose) :
+  (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V).transpose *
+      D0.Research.NativeComposedFeedbackDynamics.joint a p R S V =
+    1
+'D0.Research.NativeComposedFeedbackDynamics.joint_left_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.full_left_block_equations.{u_1, u_2} {n : Type u_1} {m : Type u_2}
+  [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] (A : Matrix n n ℝ) (B : Matrix n m ℝ) (C : Matrix m n ℝ)
+  (D : Matrix m m ℝ) (hU : (Matrix.fromBlocks A B C D).transpose * Matrix.fromBlocks A B C D = 1) :
+  A.transpose * A + C.transpose * C = 1 ∧
+    A.transpose * B + C.transpose * D = 0 ∧
+      B.transpose * A + D.transpose * C = 0 ∧ B.transpose * B + D.transpose * D = 1
+'D0.Research.NativeComposedFeedbackDynamics.full_left_block_equations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.reconstruct_all_raw_blocks.{u_1, u_2} {n : Type u_1} {m : Type u_2}
+  [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] (a p : ℝ) (hp : p ≠ 0) (B : Matrix n m ℝ) (C : Matrix m n ℝ)
+  (D : Matrix m m ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.joint a p ((-p)⁻¹ • B.transpose) (p⁻¹ • C)
+      (D - a • (p⁻¹ • C * ((-p)⁻¹ • B.transpose).transpose)) =
+    Matrix.fromBlocks (a • 1) B C D
+'D0.Research.NativeComposedFeedbackDynamics.reconstruct_all_raw_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.joint_orthogonality_iff.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) (h : a ^ 2 + p ^ 2 = 1)
+  (hp : p ≠ 0) :
+  (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V).transpose *
+        D0.Research.NativeComposedFeedbackDynamics.joint a p R S V =
+      1 ↔
+    S.transpose * S = 1 ∧ S.transpose * V = 0 ∧ V.transpose * V = 1 - R * R.transpose
+'D0.Research.NativeComposedFeedbackDynamics.joint_orthogonality_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.joint_transpose.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V).transpose =
+    D0.Research.NativeComposedFeedbackDynamics.joint a (-p) S R V.transpose
+'D0.Research.NativeComposedFeedbackDynamics.joint_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.joint_right_orthogonal.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ)
+  (hU :
+    (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V).transpose *
+        D0.Research.NativeComposedFeedbackDynamics.joint a p R S V =
+      1) :
+  D0.Research.NativeComposedFeedbackDynamics.joint a p R S V *
+      (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V).transpose =
+    1
+'D0.Research.NativeComposedFeedbackDynamics.joint_right_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.all_archive_completion_constraints.{u_1, u_2} {n : Type u_1} {m : Type u_2}
+  [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ)
+  (h : a ^ 2 + p ^ 2 = 1) (hp : p ≠ 0)
+  (hU :
+    (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V).transpose *
+        D0.Research.NativeComposedFeedbackDynamics.joint a p R S V =
+      1) :
+  R.transpose * R = 1 ∧
+    S.transpose * S = 1 ∧
+      V * R = 0 ∧ S.transpose * V = 0 ∧ V.transpose * V = 1 - R * R.transpose ∧ V * V.transpose = 1 - S * S.transpose
+'D0.Research.NativeComposedFeedbackDynamics.all_archive_completion_constraints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.archive_embedding_injective.{u_1, u_2} {n : Type u_1} {m : Type u_2}
+  [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] (S : Matrix m n ℝ) (hS : S.transpose * S = 1) :
+  Function.Injective S.mulVec
+'D0.Research.NativeComposedFeedbackDynamics.archive_embedding_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.feedback_owner_binding.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (A : Matrix n n ℝ) (B : Matrix n m ℝ) (C : Matrix m n ℝ)
+  (D : Matrix m m ℝ) :
+  Matrix.fromBlocks 1 0 0 0 * (Matrix.fromBlocks A B C D).transpose * Matrix.fromBlocks 0 0 0 1 *
+        Matrix.fromBlocks A B C D *
+      Matrix.fromBlocks 1 0 0 0 =
+    Matrix.fromBlocks (D0.Research.NativeComposedFeedbackDynamics.activeFeedback (Matrix.fromBlocks A B C D)) 0 0 0
+'D0.Research.NativeComposedFeedbackDynamics.feedback_owner_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.one_return_feedback.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ)
+  (hS : S.transpose * S = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+      (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V) =
+    p ^ 2 • 1
+'D0.Research.NativeComposedFeedbackDynamics.one_return_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.joint_two_step_retained.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
+  [Fintype m] [DecidableEq n] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V *
+        D0.Research.NativeComposedFeedbackDynamics.joint a p R S V).toBlocks₁₁ =
+    a ^ 2 • 1 - p ^ 2 • (R.transpose * S)
+'D0.Research.NativeComposedFeedbackDynamics.joint_two_step_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.feedback_from_retained_block.{u_1, u_2} {n : Type u_1} {m : Type u_2}
+  [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] (U : Matrix (n ⊕ m) (n ⊕ m) ℝ) (hU : U.transpose * U = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.activeFeedback U = 1 - U.toBlocks₁₁.transpose * U.toBlocks₁₁
+'D0.Research.NativeComposedFeedbackDynamics.feedback_from_retained_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.minimal_is_joint.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] (a p : ℝ)
+  (H : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H =
+    D0.Research.NativeComposedFeedbackDynamics.joint a p 1 H 0
+'D0.Research.NativeComposedFeedbackDynamics.minimal_is_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.minimal_orthogonal.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] (a p : ℝ)
+  (H : Matrix n n ℝ) (h : a ^ 2 + p ^ 2 = 1) (hH : H.transpose * H = 1) :
+  (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H).transpose *
+      D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H =
+    1
+'D0.Research.NativeComposedFeedbackDynamics.minimal_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.minimal_archive_tail_zero.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (a p : ℝ) (R S V : Matrix n n ℝ) (h : a ^ 2 + p ^ 2 = 1) (hp : p ≠ 0)
+  (hU :
+    (D0.Research.NativeComposedFeedbackDynamics.joint a p R S V).transpose *
+        D0.Research.NativeComposedFeedbackDynamics.joint a p R S V =
+      1) :
+  V = 0
+'D0.Research.NativeComposedFeedbackDynamics.minimal_archive_tail_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.orthogonal_composition.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (U W : Matrix n n ℝ) (hU : U.transpose * U = 1) (hW : W.transpose * W = 1) : (U * W).transpose * (U * W) = 1
+'D0.Research.NativeComposedFeedbackDynamics.orthogonal_composition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.all_composed_histories_orthogonal.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (U : Matrix n n ℝ) (hU : U.transpose * U = 1) (k : ℕ) : (U ^ k).transpose * U ^ k = 1
+'D0.Research.NativeComposedFeedbackDynamics.all_composed_histories_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.minimal_two_step_retained.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (a p : ℝ) (H : Matrix n n ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H *
+        D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H).toBlocks₁₁ =
+    a ^ 2 • 1 - p ^ 2 • H
+'D0.Research.NativeComposedFeedbackDynamics.minimal_two_step_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.two_steps_recover_full_minimal_memory.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (H₁ H₂ : Matrix n n ℝ) (hp : p ≠ 0)
+  (he :
+    (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H₁ *
+          D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H₁).toBlocks₁₁ =
+      (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H₂ *
+          D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H₂).toBlocks₁₁) :
+  H₁ = H₂
+'D0.Research.NativeComposedFeedbackDynamics.two_steps_recover_full_minimal_memory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.minimal_two_step_feedback.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (a p : ℝ) (H : Matrix n n ℝ) (h : a ^ 2 + p ^ 2 = 1) (hH : H.transpose * H = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+      (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H *
+        D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H) =
+    (a ^ 2 * p ^ 2) • (2 • 1 + H + H.transpose)
+'D0.Research.NativeComposedFeedbackDynamics.minimal_two_step_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.golden_two_step_feedback.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (a p : ℝ) (H : Matrix n n ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hH : H.transpose * H = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+      (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H *
+        D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p H) =
+    p ^ 3 • (2 • 1 + H + H.transpose)
+'D0.Research.NativeComposedFeedbackDynamics.golden_two_step_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.swapBit_orthogonal :
+  D0.Research.NativeComposedFeedbackDynamics.swapBit.transpose * D0.Research.NativeComposedFeedbackDynamics.swapBit = 1
+'D0.Research.NativeComposedFeedbackDynamics.swapBit_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.directStep_owned_blocks (a p : ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.asBlocks (D0.Research.NativeComposedFeedbackDynamics.directStep a p) =
+    D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p 1
+'D0.Research.NativeComposedFeedbackDynamics.directStep_owned_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.recordedStep_owned_blocks (a p : ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.asBlocks (D0.Representation.GoldenCoherentMemory.fullStep a p) =
+    D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p D0.Research.NativeComposedFeedbackDynamics.swapBit
+'D0.Research.NativeComposedFeedbackDynamics.recordedStep_owned_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.actual_composition_binding (U W : Matrix (Fin 4) (Fin 4) ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.asBlocks (U * W) =
+    D0.Research.NativeComposedFeedbackDynamics.asBlocks U * D0.Research.NativeComposedFeedbackDynamics.asBlocks W
+'D0.Research.NativeComposedFeedbackDynamics.actual_composition_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.same_native_single_return (a p : ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+        (D0.Research.NativeComposedFeedbackDynamics.asBlocks
+          (D0.Research.NativeComposedFeedbackDynamics.directStep a p)) =
+      p ^ 2 • 1 ∧
+    D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+        (D0.Research.NativeComposedFeedbackDynamics.asBlocks (D0.Representation.GoldenCoherentMemory.fullStep a p)) =
+      p ^ 2 • 1
+'D0.Research.NativeComposedFeedbackDynamics.same_native_single_return' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.direct_two_feedback (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+      (D0.Research.NativeComposedFeedbackDynamics.asBlocks
+        (D0.Research.NativeComposedFeedbackDynamics.directStep a p *
+          D0.Research.NativeComposedFeedbackDynamics.directStep a p)) =
+    (4 * p ^ 3) • 1
+'D0.Research.NativeComposedFeedbackDynamics.direct_two_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.recorded_two_feedback (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+      (D0.Research.NativeComposedFeedbackDynamics.asBlocks
+        (D0.Representation.GoldenCoherentMemory.fullStep a p * D0.Representation.GoldenCoherentMemory.fullStep a p)) =
+    (2 * p ^ 3) • (1 + D0.Research.NativeComposedFeedbackDynamics.swapBit)
+'D0.Research.NativeComposedFeedbackDynamics.recorded_two_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.direct_two_determinant (a p z : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  (1 -
+        z •
+          D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+            (D0.Research.NativeComposedFeedbackDynamics.asBlocks
+              (D0.Research.NativeComposedFeedbackDynamics.directStep a p *
+                D0.Research.NativeComposedFeedbackDynamics.directStep a p))).det =
+    (1 - 4 * z * p ^ 3) ^ 2
+'D0.Research.NativeComposedFeedbackDynamics.direct_two_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.recorded_two_determinant (a p z : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  (1 -
+        z •
+          D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+            (D0.Research.NativeComposedFeedbackDynamics.asBlocks
+              (D0.Representation.GoldenCoherentMemory.fullStep a p *
+                D0.Representation.GoldenCoherentMemory.fullStep a p))).det =
+    1 - 4 * z * p ^ 3
+'D0.Research.NativeComposedFeedbackDynamics.recorded_two_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.native_composed_action_gap (a p z : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+        (D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+          (D0.Research.NativeComposedFeedbackDynamics.asBlocks
+            (D0.Research.NativeComposedFeedbackDynamics.directStep a p *
+              D0.Research.NativeComposedFeedbackDynamics.directStep a p))) -
+      D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+        (D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+          (D0.Research.NativeComposedFeedbackDynamics.asBlocks
+            (D0.Representation.GoldenCoherentMemory.fullStep a p *
+              D0.Representation.GoldenCoherentMemory.fullStep a p))) =
+    -Real.log (1 - 4 * z * p ^ 3)
+'D0.Research.NativeComposedFeedbackDynamics.native_composed_action_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.native_composed_action_gap_positive (p z : ℝ) (hp : 0 < p) (hz : 0 < z)
+  (hd : 0 < 1 - 4 * z * p ^ 3) : 0 < -Real.log (1 - 4 * z * p ^ 3)
+'D0.Research.NativeComposedFeedbackDynamics.native_composed_action_gap_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.cayleyAxis_orthogonal (t : ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t).transpose *
+      D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t =
+    1
+'D0.Research.NativeComposedFeedbackDynamics.cayleyAxis_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.cayley_two_feedback (a p t : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+      (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p
+          (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t) *
+        D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p
+          (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t)) =
+    (4 * p ^ 3 / (1 + t ^ 2)) • 1
+'D0.Research.NativeComposedFeedbackDynamics.cayley_two_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_cayley_composed_source (p z t : ℝ)
+  (hd : 1 + t ^ 2 - 4 * z * p ^ 3 ≠ 0) :
+  HasDerivAt (D0.Research.NativeComposedFeedbackDynamics.cayleyComposedAction p z)
+    (-16 * p ^ 3 * z * t / ((1 + t ^ 2) * (1 + t ^ 2 - 4 * z * p ^ 3))) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_cayley_composed_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.actual_cayley_action_binding (a p z t : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+      (D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+        (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p
+            (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t) *
+          D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p
+            (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t))) =
+    D0.Research.NativeComposedFeedbackDynamics.cayleyComposedAction p z t
+'D0.Research.NativeComposedFeedbackDynamics.actual_cayley_action_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.actual_cayley_source (a p z t : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hd : 1 + t ^ 2 - 4 * z * p ^ 3 ≠ 0) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+        (D0.Research.NativeComposedFeedbackDynamics.activeFeedback
+          (D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p
+              (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis s) *
+            D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p
+              (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis s))))
+    (-16 * p ^ 3 * z * t / ((1 + t ^ 2) * (1 + t ^ 2 - 4 * z * p ^ 3))) t
+'D0.Research.NativeComposedFeedbackDynamics.actual_cayley_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.composed_source_nonzero (p z : ℝ) (hp : 0 < p) (hz : 0 < z)
+  (hd : 0 < 2 - 4 * z * p ^ 3) : -16 * p ^ 3 * z / (2 * (2 - 4 * z * p ^ 3)) ≠ 0
+'D0.Research.NativeComposedFeedbackDynamics.composed_source_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.golden_lift_intertwines.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A : Matrix n n ℝ) (a p : ℝ) (x : n → ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.liftOperator A).mulVec
+      (D0.Research.NativeComposedFeedbackDynamics.goldenInclusion a p x) =
+    D0.Research.NativeComposedFeedbackDynamics.goldenInclusion a p (A.mulVec x)
+'D0.Research.NativeComposedFeedbackDynamics.golden_lift_intertwines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.golden_inclusion_preserves_pairing.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (x y : n → ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.goldenInclusion a p x ⬝ᵥ
+      D0.Research.NativeComposedFeedbackDynamics.goldenInclusion a p y =
+    x ⬝ᵥ y
+'D0.Research.NativeComposedFeedbackDynamics.golden_inclusion_preserves_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.lift_mul.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A B : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.liftOperator (A * B) =
+    D0.Research.NativeComposedFeedbackDynamics.liftOperator A *
+      D0.Research.NativeComposedFeedbackDynamics.liftOperator B
+'D0.Research.NativeComposedFeedbackDynamics.lift_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.lift_one.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] :
+  D0.Research.NativeComposedFeedbackDynamics.liftOperator 1 = 1
+'D0.Research.NativeComposedFeedbackDynamics.lift_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.lift_transpose.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.liftOperator A.transpose =
+    (D0.Research.NativeComposedFeedbackDynamics.liftOperator A).transpose
+'D0.Research.NativeComposedFeedbackDynamics.lift_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.lift_sub.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A B : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.liftOperator (A - B) =
+    D0.Research.NativeComposedFeedbackDynamics.liftOperator A -
+      D0.Research.NativeComposedFeedbackDynamics.liftOperator B
+'D0.Research.NativeComposedFeedbackDynamics.lift_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.lift_smul.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] (a : ℝ)
+  (A : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.liftOperator (a • A) =
+    a • D0.Research.NativeComposedFeedbackDynamics.liftOperator A
+'D0.Research.NativeComposedFeedbackDynamics.lift_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.lift_every_power.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (U : Matrix n n ℝ) (k : ℕ) :
+  D0.Research.NativeComposedFeedbackDynamics.liftOperator (U ^ k) =
+    D0.Research.NativeComposedFeedbackDynamics.liftOperator U ^ k
+'D0.Research.NativeComposedFeedbackDynamics.lift_every_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.full_feedback_refines.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (P U : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.fullFeedback (D0.Research.NativeComposedFeedbackDynamics.liftOperator P)
+      (D0.Research.NativeComposedFeedbackDynamics.liftOperator U) =
+    D0.Research.NativeComposedFeedbackDynamics.liftOperator
+      (D0.Research.NativeComposedFeedbackDynamics.fullFeedback P U)
+'D0.Research.NativeComposedFeedbackDynamics.full_feedback_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.every_history_feedback_refines.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (P U : Matrix n n ℝ) (k : ℕ) :
+  D0.Research.NativeComposedFeedbackDynamics.fullFeedback (D0.Research.NativeComposedFeedbackDynamics.liftOperator P)
+      (D0.Research.NativeComposedFeedbackDynamics.liftOperator U ^ k) =
+    D0.Research.NativeComposedFeedbackDynamics.liftOperator
+      (D0.Research.NativeComposedFeedbackDynamics.fullFeedback P (U ^ k))
+'D0.Research.NativeComposedFeedbackDynamics.every_history_feedback_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.lifted_determinant.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A : Matrix n n ℝ) : (D0.Research.NativeComposedFeedbackDynamics.liftOperator A).det = A.det ^ 2
+'D0.Research.NativeComposedFeedbackDynamics.lifted_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.actual_feedback_action_refinement.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (z : ℝ) (F : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+      (D0.Research.NativeComposedFeedbackDynamics.liftOperator F) =
+    2 * D0.Research.NativeComposedFeedbackDynamics.feedbackAction z F
+'D0.Research.NativeComposedFeedbackDynamics.actual_feedback_action_refinement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.composed_feedback_action_refinement.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (z : ℝ) (P U : Matrix n n ℝ) (k : ℕ) :
+  D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+      (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator P)
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator U ^ k)) =
+    2 *
+      D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+        (D0.Research.NativeComposedFeedbackDynamics.fullFeedback P (U ^ k))
+'D0.Research.NativeComposedFeedbackDynamics.composed_feedback_action_refinement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_refined_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (F : ℝ → Matrix n n ℝ) (z t source : ℝ)
+  (h : HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.feedbackAction z (F s)) source t) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator (F s)))
+    (2 * source) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_refined_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

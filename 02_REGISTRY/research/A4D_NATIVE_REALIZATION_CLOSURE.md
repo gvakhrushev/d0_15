@@ -17,10 +17,22 @@ determinant variation are retained. The package also consumes the
 actual profinite finite-factorization owner for the full response, proves
 compact realization of compatible histories, and constructs the isometric
 golden cylindrical inclusion with reversible blank-factor preparation.
-Forty-two propositions compile and 189 exact controls pass. The next G0b
-obligation is the joint history/record operator and action binding to these
-owned inclusions; an arbitrary field candidate is not the next consumer. The earlier regular time-field
+Forty-two propositions compile and 189 exact controls pass. The subsequent G0b slice below binds the joint feedback operator and records
+the exact action/source scaling. The full physical complement law remains open. The earlier regular time-field
 intertwiner classification remains a scoped control, not the route owner.
+
+The [composed-feedback proof](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
+now classifies every real orthogonal completion of a fixed golden active
+block, including arbitrary archive size. The actual golden gate and the
+actual recording gate have the same one-transition feedback but a compiled
+two-transition action gap `-log(1-4*z*p^3)`. A genuine completion-coordinate
+derivative is bound to that matrix action. Joint golden refinement transports
+the complete operator, projection and every internal power; the raw action
+and its source scale by exactly two. The prepared inclusion alone leaves
+a complement whose determinant contribution is not fixed. All 56 propositions
+compile; 177 exact controls pass. The next G0b input is the native preparation
+rule for this complement, its admitted variations and its role in the full
+bootstrap. No physical completion law is selected by orthogonality alone.
 
 The [G0 primitive-interface proof](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)
 now answers a necessary ownership question directly, without adding another

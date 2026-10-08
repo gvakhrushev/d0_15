@@ -17,9 +17,22 @@ response consumes the owned profinite factorization, while compactness
 proves compatible-history realization. Golden cylinder expectations and
 isometric amplitude inclusions are preserved, with explicit reversible
 blank-factor preparation. The compiler checks 42 actual propositions; the
-exact ledger checks 189 controls. The next proof must bind the full joint
-history/record operators and their action to these owned inclusions. G0, physical GR and the original fixed-source/raw-owner
+exact ledger checks 189 controls. The subsequent proof below binds joint operator replication and its actual
+action/source scaling, retaining the physical complement-law obligation. G0, physical GR and the original fixed-source/raw-owner
 terminal remain open; the earlier time-field result is a scoped control.
+
+The [composed-feedback proof](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
+now classifies every real orthogonal completion of a fixed golden active
+block, including arbitrary archive size. The actual golden gate and the
+actual recording gate have the same one-transition feedback but a compiled
+two-transition action gap `-log(1-4*z*p^3)`. A genuine completion-coordinate
+derivative is bound to that matrix action. Joint golden refinement transports
+the complete operator, projection and every internal power; the raw action
+and its source scale by exactly two. The prepared inclusion alone leaves
+a complement whose determinant contribution is not fixed. All 56 propositions
+compile; 177 exact controls pass. The next G0b input is the native preparation
+rule for this complement, its admitted variations and its role in the full
+bootstrap. No physical completion law is selected by orthogonality alone.
 
 The [actual weighted Hodge–Dirac follow-up](A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md)
 constructs the documented weighted adjoint on the real D0 cochains instead
