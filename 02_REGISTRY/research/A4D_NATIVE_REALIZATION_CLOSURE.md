@@ -90,6 +90,22 @@ defects and their jets from the same admitted primitive history as P and the
 full word, without fitting a complement or adding an action/physical postulate.
 
 
+The [complete retained golden preparation](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md)
+now constructs the literal 2^45 seed and every complete recursive word,
+with actual incoming scene histories and degrees 20/22/24. It derives
+G^8 from the owned golden gate, failure <=16^(-k)/10 after two initial
+stages, and a whole-vector squared error <=16^(-k)/5 against the explicitly
+phase-preserving normalized successful target. The expanded syntax has
+an inverse-square failure/cost bound; its identification with native
+MDL/kappa is still open. Whole-cylinder prefix extension intertwines at
+every depth and preserves the full error. Single fine-blank phases fail.
+The actual successful phases for degrees 20 and 24 have nonzero relative
+area, so a common phase cannot supply the physical isometry. The packet
+has 151 compiled actual propositions, 12 D0 pins and 239 exact controls.
+Boolean/address and relative-phase physical admission, native budget and
+heat/tangent/action ownership remain the next G0b inputs. No source/Ward,
+stationarity, G0b, GR or original terminal is promoted.
+
 The new [complete joint-history extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance)
 constructs the full generated projector and operator and classifies every
 symmetric two-readout completion as A0 plus a unique supported complement.
