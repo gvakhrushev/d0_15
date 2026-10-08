@@ -89,6 +89,22 @@ Passivity itself is not proved native. The next actual owner must compute both
 defects and their jets from the same admitted primitive history as P and the
 full word, without fitting a complement or adding an action/physical postulate.
 
+The [fixed complete golden limit](A4D_NATIVE_GOLDEN_FIXED_CALIBRATION.md)
+now derives a unique unit success limit from the same literal retained
+seed and word. Complete unconditional squared state error is <=16^(-k)/8
+without an archive-size factor. Faithful injective real state/operator
+encoding preserves the entire word and error; every real orthogonal
+projector reading has squared error <=16^(-k)/2. The actual p0/all-33-scene
+corollary and all golden pair-history depths are bound in the kernel.
+Common unspin is the existing inverse G^(16*k) on one pointer. The target
+keeps its derived per-vertex phase; it is not fitted or silently positive.
+Real pointer phase visibility and the scoped real-entry invariant reject
+a universal phase-gauge shortcut. The packet has 86 new compiled
+propositions, 12 D0 pins and 154 exact controls. Physical controller/readout
+admission, native budget and the same joint heat/tangent/action law remain
+the next G0b input. No native source/Ward, stationarity, GR or parent
+terminal is promoted.
+
 The [complete retained golden preparation](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md)
 now constructs the literal 2^45 seed and every complete recursive word,
 with actual incoming scene histories and degrees 20/22/24. It derives
