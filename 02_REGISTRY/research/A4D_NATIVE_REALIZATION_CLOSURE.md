@@ -22,17 +22,18 @@ the exact action/source scaling. The full physical complement law remains open. 
 intertwiner classification remains a scoped control, not the route owner.
 
 The [composed-feedback proof](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
-now classifies every real orthogonal completion of a fixed golden active
-block, including arbitrary archive size. The actual golden gate and the
-actual recording gate have the same one-transition feedback but a compiled
-two-transition action gap `-log(1-4*z*p^3)`. A genuine completion-coordinate
-derivative is bound to that matrix action. Joint golden refinement transports
-the complete operator, projection and every internal power; the raw action
-and its source scale by exactly two. The prepared inclusion alone leaves
-a complement whose determinant contribution is not fixed. All 56 propositions
-compile; 177 exact controls pass. The next G0b input is the native preparation
-rule for this complement, its admitted variations and its role in the full
-bootstrap. No physical completion law is selected by orthogonality alone.
+now has 76 compiled propositions and 275 exact controls. In addition to the
+complete golden-active-block joint class and native composed-action gap,
+it classifies every compatible fine readout projector as `JPJ^T+S`, with S
+an orthogonal projector on the preparation complement. For the image-supported
+test, the full return `C=J^T U_word J` determines the action with the exact
+missing-norm correction `P(I-C^T C)P`. The actual moving preparation, operator
+and readout source is transported. Analytic finite action-error bounds retain
+rank and resolvent constants. The literal cylinder pullback is replicated
+`L(P)` and includes the complementary active range; replacing it by the
+image filter changes a child-point reading by `p^2`. The remaining G0b input
+is the complete joint scene return law and its admitted variations under
+that actual readout. No new measurement, action or physical dynamics is selected.
 
 The [G0 primitive-interface proof](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)
 now answers a necessary ownership question directly, without adding another

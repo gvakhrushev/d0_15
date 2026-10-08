@@ -1,5 +1,6 @@
 import D0.Representation.GoldenCoherentMemory
 import Mathlib.Data.Matrix.Block
+import Mathlib.LinearAlgebra.Matrix.SchurComplement
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
 
 /-! Joint golden completions and the existing feedback action on composed histories.
@@ -561,6 +562,241 @@ theorem genuine_refined_source (F : ℝ → Matrix n n ℝ) (z t source : ℝ)
   simpa only [actual_feedback_action_refinement] using h.const_mul 2
 
 end CoherentRefinement
+
+section PreparedReadout
+variable {n m : Type*} [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m]
+
+/-- Compression to a specified complete preparation, without assuming autonomy. -/
+def preparedReturn (J : Matrix m n ℝ) (U : Matrix m m ℝ) : Matrix n n ℝ :=
+  J.transpose*U*J
+
+def transportReadout (J : Matrix m n ℝ) (P : Matrix n n ℝ) : Matrix m m ℝ :=
+  J*P*J.transpose
+
+def preparationLeak (J : Matrix m n ℝ) (U : Matrix m m ℝ) : Matrix m n ℝ :=
+  U*J-J*preparedReturn J U
+
+def returnFeedback (P C : Matrix n n ℝ) : Matrix n n ℝ :=
+  fullFeedback P C+P*(1-C.transpose*C)*P
+
+theorem prepared_readout_intertwines (J : Matrix m n ℝ) (P : Matrix n n ℝ)
+    (hJ : J.transpose*J=1) : transportReadout J P*J=J*P := by
+  simp [transportReadout,Matrix.mul_assoc,hJ]
+
+theorem prepared_readout_projector (J : Matrix m n ℝ) (P : Matrix n n ℝ)
+    (hJ : J.transpose*J=1) (hP : P*P=P) :
+    transportReadout J P*transportReadout J P=transportReadout J P := by
+  calc
+    transportReadout J P*transportReadout J P = J*P*(J.transpose*J)*P*J.transpose := by
+      simp [transportReadout,Matrix.mul_assoc]
+    _ = transportReadout J P := by rw [hJ,Matrix.mul_one]; simp [transportReadout,Matrix.mul_assoc,hP]
+
+theorem prepared_readout_symmetric (J : Matrix m n ℝ) (P : Matrix n n ℝ)
+    (hP : P.transpose=P) : (transportReadout J P).transpose=transportReadout J P := by
+  simp [transportReadout,Matrix.transpose_mul,hP,Matrix.mul_assoc]
+
+/-- This uniqueness has the explicit condition of no additional fine active range. -/
+theorem prepared_readout_unique (J : Matrix m n ℝ) (P : Matrix n n ℝ)
+    (Q : Matrix m m ℝ) (hQ : Q*J=J*P) (hSupport : Q*(J*J.transpose)=Q) :
+    Q=transportReadout J P := by
+  rw [← hSupport,← Matrix.mul_assoc,hQ]
+  rfl
+
+theorem leak_is_orthogonal (J : Matrix m n ℝ) (U : Matrix m m ℝ)
+    (hJ : J.transpose*J=1) : J.transpose*preparationLeak J U=0 := by
+  simp [preparationLeak,preparedReturn,Matrix.mul_sub,← Matrix.mul_assoc,hJ]
+
+/-- Exact missing norm; no reset or fresh zero archive is inserted. -/
+theorem full_preparation_defect (J : Matrix m n ℝ) (U : Matrix m m ℝ)
+    (hJ : J.transpose*J=1) (hU : U.transpose*U=1) :
+    (preparationLeak J U).transpose*preparationLeak J U =
+      1-(preparedReturn J U).transpose*preparedReturn J U := by
+  let C := preparedReturn J U
+  have h₁ : (U*J).transpose*(U*J)=1 := by
+    calc (U*J).transpose*(U*J) = J.transpose*(U.transpose*U)*J := by simp [Matrix.mul_assoc]
+         _ = 1 := by rw [hU,Matrix.mul_one,hJ]
+  have h₂ : (U*J).transpose*J=C.transpose := by simp [C,preparedReturn,Matrix.mul_assoc]
+  have h₃ : J.transpose*(U*J)=C := by simp [C,preparedReturn,Matrix.mul_assoc]
+  change (U*J-J*C).transpose*(U*J-J*C)=1-C.transpose*C
+  simp only [Matrix.transpose_sub,Matrix.sub_mul,Matrix.mul_sub]
+  have h₄ : (U*J).transpose*(J*C)=C.transpose*C := by rw [← Matrix.mul_assoc,h₂]
+  have h₅ : (J*C).transpose*(U*J)=C.transpose*C := by
+    rw [Matrix.transpose_mul,Matrix.mul_assoc,h₃]
+  have h₆ : (J*C).transpose*(J*C)=C.transpose*C := by
+    calc (J*C).transpose*(J*C)=C.transpose*(J.transpose*J)*C := by simp [Matrix.mul_assoc]
+         _ = C.transpose*C := by rw [hJ,Matrix.mul_one]
+  rw [h₁,h₄,h₅,h₆]
+  abel
+
+theorem return_feedback_expanded (P C : Matrix n n ℝ) :
+    returnFeedback P C=P*P-P*C.transpose*P*C*P := by
+  simp only [returnFeedback,fullFeedback,Matrix.mul_sub,Matrix.sub_mul,
+    Matrix.mul_one,Matrix.mul_assoc]
+  abel
+
+/-- Full fine feedback of the transported experiment depends on the compressed
+whole history and its norm defect, not a chosen extension off the preparation. -/
+theorem full_prepared_feedback (J : Matrix m n ℝ) (U : Matrix m m ℝ)
+    (P : Matrix n n ℝ) (hJ : J.transpose*J=1) (hU : U.transpose*U=1) :
+    fullFeedback (transportReadout J P) U=
+      transportReadout J (returnFeedback P (preparedReturn J U)) := by
+  let C := preparedReturn J U
+  have h₁ : J.transpose*(U.transpose*U)*J=1 := by rw [hU,Matrix.mul_one,hJ]
+  have h₂ : J.transpose*U.transpose*J=C.transpose := by simp [C,preparedReturn,Matrix.mul_assoc]
+  have h₃ : J.transpose*U*J=C := rfl
+  rw [return_feedback_expanded]
+  simp only [fullFeedback,transportReadout,Matrix.mul_sub,Matrix.sub_mul]
+  have term₁ : J*P*J.transpose*U.transpose*1*U*(J*P*J.transpose) = J*(P*P)*J.transpose := by
+    calc
+      _ = J*P*(J.transpose*(U.transpose*U)*J)*P*J.transpose := by simp [Matrix.mul_assoc]
+      _ = _ := by rw [h₁,Matrix.mul_one]; simp [Matrix.mul_assoc]
+  have term₂ : J*P*J.transpose*U.transpose*(J*P*J.transpose)*U*(J*P*J.transpose) =
+      J*(P*C.transpose*P*C*P)*J.transpose := by
+    calc
+      _ = J*P*(J.transpose*U.transpose*J)*P*(J.transpose*U*J)*P*J.transpose := by
+        simp [Matrix.mul_assoc]
+      _ = _ := by rw [h₂,h₃]; simp [Matrix.mul_assoc]
+  change J*P*J.transpose*U.transpose*1*U*(J*P*J.transpose) -
+      J*P*J.transpose*U.transpose*(J*P*J.transpose)*U*(J*P*J.transpose) = _
+  rw [term₁,term₂]
+
+theorem transported_feedback_determinant (J : Matrix m n ℝ) (F : Matrix n n ℝ)
+    (z : ℝ) (hJ : J.transpose*J=1) :
+    (1-z • transportReadout J F).det=(1-z • F).det := by
+  have h := Matrix.det_one_sub_mul_comm (z • J) (F*J.transpose)
+  simpa [transportReadout,Matrix.smul_mul,Matrix.mul_smul,Matrix.mul_assoc,hJ] using h
+
+theorem transported_feedback_action (J : Matrix m n ℝ) (F : Matrix n n ℝ)
+    (z : ℝ) (hJ : J.transpose*J=1) :
+    feedbackAction z (transportReadout J F)=feedbackAction z F := by
+  unfold feedbackAction
+  rw [transported_feedback_determinant J F z hJ]
+
+/-- The exact action uses the full return and its leakage correction. -/
+theorem full_prepared_action (J : Matrix m n ℝ) (U : Matrix m m ℝ)
+    (P : Matrix n n ℝ) (z : ℝ) (hJ : J.transpose*J=1) (hU : U.transpose*U=1) :
+    feedbackAction z (fullFeedback (transportReadout J P) U)=
+      feedbackAction z (returnFeedback P (preparedReturn J U)) := by
+  rw [full_prepared_feedback J U P hJ hU,transported_feedback_action J _ z hJ]
+
+theorem every_prepared_history_action (J : Matrix m n ℝ) (U : Matrix m m ℝ)
+    (P : Matrix n n ℝ) (z : ℝ) (k : ℕ)
+    (hJ : J.transpose*J=1) (hU : U.transpose*U=1) :
+    feedbackAction z (fullFeedback (transportReadout J P) (U^k))=
+      feedbackAction z (returnFeedback P (preparedReturn J (U^k))) :=
+  full_prepared_action J (U^k) P z hJ (all_composed_histories_orthogonal U hU k)
+
+/-- Equality of the full compressed word, not the first compressed operator. -/
+theorem full_return_determines_prepared_action
+    (J K : Matrix m n ℝ) (U V : Matrix m m ℝ) (P : Matrix n n ℝ) (z : ℝ)
+    (hJ : J.transpose*J=1) (hK : K.transpose*K=1)
+    (hU : U.transpose*U=1) (hV : V.transpose*V=1)
+    (hReturn : preparedReturn J U=preparedReturn K V) :
+    feedbackAction z (fullFeedback (transportReadout J P) U)=
+      feedbackAction z (fullFeedback (transportReadout K P) V) := by
+  rw [full_prepared_action J U P z hJ hU,full_prepared_action K V P z hK hV,hReturn]
+
+/-- Moving preparation, split and joint dynamics are all included. The derivative
+is transported from a proved scalar identity, not postulated to vanish. -/
+theorem full_prepared_source (J : ℝ → Matrix m n ℝ) (U : ℝ → Matrix m m ℝ)
+    (P : ℝ → Matrix n n ℝ) (z t source : ℝ)
+    (hJ : ∀ s, (J s).transpose*J s=1) (hU : ∀ s, (U s).transpose*U s=1)
+    (h : HasDerivAt (fun s => feedbackAction z
+      (returnFeedback (P s) (preparedReturn (J s) (U s)))) source t) :
+    HasDerivAt (fun s => feedbackAction z
+      (fullFeedback (transportReadout (J s) (P s)) (U s))) source t := by
+  have he : (fun s => feedbackAction z (fullFeedback (transportReadout (J s) (P s)) (U s))) =
+      (fun s => feedbackAction z (returnFeedback (P s) (preparedReturn (J s) (U s)))) := by
+    funext s
+    exact full_prepared_action (J s) (U s) (P s) z (hJ s) (hU s)
+  rw [he]
+  exact h
+
+/-- The scalar golden active compression itself supplies its archive feedback. -/
+theorem golden_prepared_return_feedback (a p : ℝ) (ha : a^2=p) (hp : p+p^2=1) :
+    returnFeedback (1 : Matrix n n ℝ) (a • 1)=p^2 • 1 := by
+  rw [return_feedback_expanded]
+  simp only [Matrix.one_mul,Matrix.mul_one,Matrix.transpose_smul,Matrix.transpose_one,
+    Matrix.smul_mul,Matrix.mul_smul,smul_smul]
+  have h : 1-a*a=p^2 := by nlinarith
+  calc
+    1-(a*a) • (1 : Matrix n n ℝ)=(1-a*a) • 1 := by module
+    _ = p^2 • 1 := by rw [h]
+
+/-- Complete additional active range: matching the old prepared experiment
+permits precisely an orthogonal projector on the preparation complement. -/
+theorem compatible_readout_complement (J : Matrix m n ℝ) (P : Matrix n n ℝ)
+    (R : Matrix m m ℝ) (hJ : J.transpose*J=1)
+    (hP : P*P=P) (hsP : P.transpose=P)
+    (hR : R*R=R) (hsR : R.transpose=R) (hRJ : R*J=J*P) :
+    ∃ S : Matrix m m ℝ, R=transportReadout J P+S ∧ S*J=0 ∧
+      J.transpose*S=0 ∧ S.transpose=S ∧ S*S=S := by
+  let A := transportReadout J P
+  have hA : A*A=A := prepared_readout_projector J P hJ hP
+  have hsA : A.transpose=A := prepared_readout_symmetric J P hsP
+  have hRA : R*A=A := by
+    calc R*A = R*J*P*J.transpose := by simp [A,transportReadout,Matrix.mul_assoc]
+         _ = A := by rw [hRJ]; simp [A,transportReadout,Matrix.mul_assoc,hP]
+  have hAR : A*R=A := by simpa [hsA,hsR] using congrArg Matrix.transpose hRA
+  have hSJ : (R-A)*J=0 := by
+    rw [Matrix.sub_mul,hRJ,prepared_readout_intertwines J P hJ,sub_self]
+  have hsS : (R-A).transpose=R-A := by rw [Matrix.transpose_sub,hsR,hsA]
+  refine ⟨R-A,by dsimp [A]; abel,hSJ,?_,hsS,?_⟩
+  · simpa [hsS] using congrArg Matrix.transpose hSJ
+  · simp only [Matrix.sub_mul,Matrix.mul_sub,hR,hRA,hAR,hA]
+    abel
+
+theorem compatible_readout_complement_sufficient (J : Matrix m n ℝ) (P : Matrix n n ℝ)
+    (S : Matrix m m ℝ) (hJ : J.transpose*J=1)
+    (hP : P*P=P) (hsP : P.transpose=P)
+    (hS : S*S=S) (hsS : S.transpose=S) (hSJ : S*J=0) :
+    let R := transportReadout J P+S
+    R*R=R ∧ R.transpose=R ∧ R*J=J*P := by
+  have hJS : J.transpose*S=0 := by simpa [hsS] using congrArg Matrix.transpose hSJ
+  have hAS : transportReadout J P*S=0 := by simp [transportReadout,Matrix.mul_assoc,hJS]
+  have hSA : S*transportReadout J P=0 := by simp [transportReadout,← Matrix.mul_assoc,hSJ]
+  dsimp only
+  refine ⟨?_,?_,?_⟩
+  · simp only [Matrix.add_mul,Matrix.mul_add,
+      prepared_readout_projector J P hJ hP,hS,hAS,hSA,add_zero,zero_add]
+  · rw [Matrix.transpose_add,prepared_readout_symmetric J P hsP,hsS]
+  · rw [Matrix.add_mul,prepared_readout_intertwines J P hJ,hSJ,add_zero]
+
+end PreparedReadout
+
+section OwnedPreparedEmbedding
+variable {n : Type*} [Fintype n] [DecidableEq n]
+open D0.Representation.GoldenOrderInterferometer
+
+/-- The first column of the already owned gate on the new factor. -/
+def ownedGoldenEmbedding (a p : ℝ) : Matrix (n ⊕ n) n ℝ :=
+  fun i j => Sum.elim (fun k => gate a p 0 0*(1 : Matrix n n ℝ) k j)
+    (fun k => gate a p 1 0*(1 : Matrix n n ℝ) k j) i
+
+theorem owned_golden_embedding_isometric (a p : ℝ) (ha : a^2=p) (hp : p+p^2=1) :
+    (ownedGoldenEmbedding (n:=n) a p).transpose*ownedGoldenEmbedding (n:=n) a p=1 := by
+  ext i j
+  by_cases hij : i=j
+  · subst j
+    simp [ownedGoldenEmbedding,gate,Matrix.mul_apply,Fintype.sum_sum_type,Matrix.one_apply]
+    nlinarith
+  · simp [ownedGoldenEmbedding,gate,Matrix.mul_apply,Fintype.sum_sum_type,Matrix.one_apply,hij,Ne.symm hij]
+
+theorem owned_golden_embedding_realizes_inclusion (a p : ℝ) (x : n → ℝ) :
+    (ownedGoldenEmbedding a p).mulVec x=goldenInclusion a p x := by
+  ext i
+  rcases i with i|i <;>
+    simp [ownedGoldenEmbedding,gate,Matrix.mulVec,dotProduct,Matrix.one_apply,goldenInclusion]
+
+/-- Literal pullback of a cylinder value repeats its multiplication operator on
+both child branches. It is not the image-supported coherent preparation test. -/
+theorem literal_cylinder_observable_pullback (f : n → ℝ) :
+    Matrix.diagonal (Sum.elim f f)=liftOperator (Matrix.diagonal f) := by
+  ext i j
+  rcases i with i|i <;> rcases j with j|j <;>
+    simp [Matrix.diagonal,liftOperator,Matrix.fromBlocks]
+
+end OwnedPreparedEmbedding
 end
 end D0.Research.NativeComposedFeedbackDynamics
 
@@ -677,3 +913,43 @@ end D0.Research.NativeComposedFeedbackDynamics
 #print axioms D0.Research.NativeComposedFeedbackDynamics.composed_feedback_action_refinement
 #check D0.Research.NativeComposedFeedbackDynamics.genuine_refined_source
 #print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_refined_source
+#check D0.Research.NativeComposedFeedbackDynamics.prepared_readout_intertwines
+#print axioms D0.Research.NativeComposedFeedbackDynamics.prepared_readout_intertwines
+#check D0.Research.NativeComposedFeedbackDynamics.prepared_readout_projector
+#print axioms D0.Research.NativeComposedFeedbackDynamics.prepared_readout_projector
+#check D0.Research.NativeComposedFeedbackDynamics.prepared_readout_symmetric
+#print axioms D0.Research.NativeComposedFeedbackDynamics.prepared_readout_symmetric
+#check D0.Research.NativeComposedFeedbackDynamics.prepared_readout_unique
+#print axioms D0.Research.NativeComposedFeedbackDynamics.prepared_readout_unique
+#check D0.Research.NativeComposedFeedbackDynamics.leak_is_orthogonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.leak_is_orthogonal
+#check D0.Research.NativeComposedFeedbackDynamics.full_preparation_defect
+#print axioms D0.Research.NativeComposedFeedbackDynamics.full_preparation_defect
+#check D0.Research.NativeComposedFeedbackDynamics.return_feedback_expanded
+#print axioms D0.Research.NativeComposedFeedbackDynamics.return_feedback_expanded
+#check D0.Research.NativeComposedFeedbackDynamics.full_prepared_feedback
+#print axioms D0.Research.NativeComposedFeedbackDynamics.full_prepared_feedback
+#check D0.Research.NativeComposedFeedbackDynamics.transported_feedback_determinant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.transported_feedback_determinant
+#check D0.Research.NativeComposedFeedbackDynamics.transported_feedback_action
+#print axioms D0.Research.NativeComposedFeedbackDynamics.transported_feedback_action
+#check D0.Research.NativeComposedFeedbackDynamics.full_prepared_action
+#print axioms D0.Research.NativeComposedFeedbackDynamics.full_prepared_action
+#check D0.Research.NativeComposedFeedbackDynamics.every_prepared_history_action
+#print axioms D0.Research.NativeComposedFeedbackDynamics.every_prepared_history_action
+#check D0.Research.NativeComposedFeedbackDynamics.full_return_determines_prepared_action
+#print axioms D0.Research.NativeComposedFeedbackDynamics.full_return_determines_prepared_action
+#check D0.Research.NativeComposedFeedbackDynamics.full_prepared_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.full_prepared_source
+#check D0.Research.NativeComposedFeedbackDynamics.golden_prepared_return_feedback
+#print axioms D0.Research.NativeComposedFeedbackDynamics.golden_prepared_return_feedback
+#check D0.Research.NativeComposedFeedbackDynamics.compatible_readout_complement
+#print axioms D0.Research.NativeComposedFeedbackDynamics.compatible_readout_complement
+#check D0.Research.NativeComposedFeedbackDynamics.compatible_readout_complement_sufficient
+#print axioms D0.Research.NativeComposedFeedbackDynamics.compatible_readout_complement_sufficient
+#check D0.Research.NativeComposedFeedbackDynamics.owned_golden_embedding_isometric
+#print axioms D0.Research.NativeComposedFeedbackDynamics.owned_golden_embedding_isometric
+#check D0.Research.NativeComposedFeedbackDynamics.owned_golden_embedding_realizes_inclusion
+#print axioms D0.Research.NativeComposedFeedbackDynamics.owned_golden_embedding_realizes_inclusion
+#check D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_observable_pullback
+#print axioms D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_observable_pullback

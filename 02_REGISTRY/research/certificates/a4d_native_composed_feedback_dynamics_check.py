@@ -8,7 +8,7 @@ from pathlib import Path
 
 import sympy as s
 
-HEAD = '609e7daa7c801254ee671874750c5bc61f4efc71'
+HEAD = '58407f912e6f4cedfff3625cdd4e7ba09c6e7951'
 BASE = '02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics'
 PROOF = '02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md'
 SCOPE = {
@@ -29,6 +29,21 @@ SCOPE = {
     'operator_and_projection_refined_together': True,
     'all_internal_powers_feedback_refinement_Lean_formalized': True,
     'raw_determinant_action_and_source_double_Lean_formalized': True,
+    'owned_golden_matrix_preparation_Lean_formalized': True,
+    'complete_compatible_fine_projector_class_Lean_formalized': True,
+    'image_supported_preparation_test_has_no_added_active_range': True,
+    'literal_cylinder_value_pullback_is_replicated_Lean_formalized': True,
+    'image_supported_test_substituted_for_literal_cylinder_readout': False,
+    'arbitrary_orthogonal_full_history_return_action_Lean_formalized': True,
+    'exact_preparation_norm_defect_Lean_formalized': True,
+    'actual_action_factors_through_full_return_with_leakage_Lean_formalized': True,
+    'moving_preparation_readout_and_operator_source_Lean_formalized': True,
+    'all_size_quantitative_action_stability': 'ANALYTIC_WITH_EXPLICIT_RANK_AND_RESOLVENT_FACTORS',
+    'full_return_equals_power_of_one_step_compression': False,
+    'invariant_prepared_subspace_assumed_for_full_return_identity': False,
+    'whole_physical_fine_readout_selected_as_image_projector': False,
+    'native_metric_preparation_Oh_bounds_derived': False,
+    'Palatini_contrast_or_stationarity_transferred': False,
     'arbitrary_fine_extension_determined_by_prepared_inclusion': False,
     'ordinary_determinant_invariant_under_binary_replication': False,
     'fine_independent_variations_exhausted_by_coarse_lifts': False,
@@ -78,7 +93,7 @@ def main():
     check('CAPSULE_AND_TRANSCRIPT_FRESH', receipt['capsule_sha256'] == sha(BASE+'.lean')
           and receipt['output_sha256'] == sha(BASE+'_output.txt'))
     check('ALL_ACTUAL_PROPOSITIONS_AND_DEPENDENCIES', declarations == receipt['declarations']
-          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 56)
+          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 76)
     check('NO_PLACEHOLDER_OR_COMPILER_ERROR', 'sorryAx' not in transcript
           and re.search(r'\berror(?:\(|:)', transcript) is None
           and re.search(r'\b(sorry|admit|axiom)\b', lean) is None)
@@ -273,6 +288,122 @@ def main():
           golden((s.eye(4)-z*Fag).det()-(1-z*p*p)) == 0
           and golden((s.eye(4)-z*Frg).det()-(1-z*p*p)**2) == 0)
 
+    # Transport the old readout, rather than silently activating its complement.
+    return_feedback = lambda proj, C: proj*proj-proj*C.T*proj*C*proj
+    old_projector = s.diag(1, 0)
+    image_projector = (Jg*old_projector*Jg.T).applyfunc(golden)
+    image_alt = feedback(image_projector, Ug).applyfunc(golden)
+    image_rep = feedback(image_projector, Lg).applyfunc(golden)
+    check('GOLDEN_OLD_READOUT_SAME_PREPARED_READING', gzero(image_projector*Jg-Pg*Jg))
+    check('GOLDEN_OLD_READOUT_IS_DIFFERENT_FULL_EXPERIMENT', not gzero(image_projector-Pg))
+    check('GOLDEN_OLD_READOUT_ACTION_IGNORES_INVISIBLE_COMPLETION',
+          golden((s.eye(4)-z*image_alt).det()-(1-z*p*p)) == 0
+          and golden((s.eye(4)-z*image_rep).det()-(1-z*p*p)) == 0)
+    check('GOLDEN_ADDED_ACTIVE_RANGE_RETAINED',
+          gzero((Pg-image_projector)*Jg)
+          and gzero((Pg-image_projector)**2-(Pg-image_projector))
+          and not gzero(Pg-image_projector))
+    f0, f1 = s.symbols('f0 f1', real=True)
+    check('LITERAL_CYLINDER_MULTIPLICATION_PULLBACK',
+          s.diag(f0, f1, f0, f1) == lift(s.diag(f0, f1)))
+    check('IMAGE_FILTER_CHANGES_ACTUAL_CHILD_POINT_READING',
+          Pg[0, 0] == 1 and golden(image_projector[0, 0]-p) == 0
+          and golden(Pg[0, 0]-image_projector[0, 0]-p*p) == 0)
+
+    # Actual native words, no invariance of the prepared subspace and no resets.
+    prepared_cases = []
+    for label, native_U in [('direct', direct), ('recorded', recorded)]:
+        for power in (1, 2, 3):
+            full_word = (native_U**power).applyfunc(golden)
+            C = (Jg.T*full_word*Jg).applyfunc(golden)
+            leak = (full_word*Jg-Jg*C).applyfunc(golden)
+            defect = (I2-C.T*C).applyfunc(golden)
+            tag = f'{label}_{power}'
+            check('NATIVE_FULL_WORD_ORTHOGONAL_LEAK_'+tag, gzero(Jg.T*leak))
+            check('NATIVE_FULL_WORD_EXACT_NORM_DEFECT_'+tag, gzero(leak.T*leak-defect))
+            for proj_label, proj in [('one', I2), ('proper', old_projector)]:
+                readout = (Jg*proj*Jg.T).applyfunc(golden)
+                Ffine = feedback(readout, full_word).applyfunc(golden)
+                Freturn = return_feedback(proj, C).applyfunc(golden)
+                tagp = tag+'_'+proj_label
+                check('NATIVE_FULL_PREPARED_FEEDBACK_'+tagp, gzero(Ffine-Jg*Freturn*Jg.T))
+                check('NATIVE_LEAKAGE_CORRECTION_'+tagp,
+                      gzero(Freturn-feedback(proj, C)-proj*defect*proj))
+                check('NATIVE_PREPARED_ACTION_DETERMINANT_'+tagp,
+                      golden((s.eye(4)-z*Ffine).det()-(I2-z*Freturn).det()) == 0)
+            prepared_cases.append([label, power])
+    scalar_J = s.Matrix([a, p])
+    c1 = (scalar_J.T*G*scalar_J)[0]
+    c2 = (scalar_J.T*G**2*scalar_J)[0]
+    check('OWNED_GOLDEN_PREPARED_FIRST_RETURN', golden(c1-a) == 0)
+    check('OWNED_GOLDEN_PREPARED_SECOND_RETURN', golden(c2-(a*a-p*p)) == 0)
+    check('FRESH_RESET_OR_COMPRESSED_POWER_SUBSTITUTION_REJECTED', golden(c2-c1*c1) != 0)
+    check('OMITTING_ARCHIVE_LEAKAGE_GIVES_FALSE_ZERO_FEEDBACK',
+          s.Matrix([[0]]) == feedback(s.eye(1), s.Matrix([[a]]))
+          and golden(return_feedback(s.eye(1), s.Matrix([[a]]))[0, 0]-p*p) == 0)
+
+    # All compatible readouts: image projector plus an orthogonal complementary one.
+    for n in (1, 2, 3):
+        m = n+2
+        frame = reflection(m, 2)
+        Jtest, Ktest = frame[:, :n], frame[:, n:]
+        Ptest = s.diag(*([1]+[0]*(n-1)))
+        Stest = Ktest*s.diag(1, 0)*Ktest.T
+        Atest = Jtest*Ptest*Jtest.T
+        Rtest = Atest+Stest
+        check(f'COMPLETE_PROJECTOR_EXTENSION_{n}',
+              Rtest*Rtest == Rtest and Rtest.T == Rtest and Rtest*Jtest == Jtest*Ptest
+              and Stest*Jtest == s.zeros(m, n) and Jtest.T*Stest == s.zeros(n, m))
+        check(f'EXTRA_ACTIVE_RANGE_HAS_OWN_READING_{n}',
+              Stest*Ktest[:, 0] == Ktest[:, 0] and Atest*Ktest[:, 0] == s.zeros(m, 1))
+
+    # Noncommuting moving preparation: delta J must enter the actual source.
+    q = s.symbols('q', real=True)
+    ct, st = (1-t*t)/(1+t*t), 2*t/(1+t*t)
+    cq, sq = (1-q*q)/(1+q*q), 2*q/(1+q*q)
+    moving_frame = s.Matrix([[1, 0, 0], [0, ct, -st], [0, st, ct]])
+    moving_J = moving_frame[:, :2]
+    core_U = s.Matrix([[cq, 0, -sq], [0, 1, 0], [sq, 0, cq]])
+    covariant_U = moving_frame*core_U*moving_frame.T
+    Ccov = (moving_J.T*covariant_U*moving_J).applyfunc(s.cancel)
+    check('MOVING_NONCOMMUTING_PREPARATION_FULL_RETURN', Ccov == s.diag(cq, 1)
+          and not zero(moving_frame*core_U-core_U*moving_frame))
+    Fcov = return_feedback(I2, Ccov)
+    covdet = (I2-z*Fcov).det()
+    check('MOVING_PREPARATION_FRAME_SOURCE_CANCELS', s.diff(covdet, t) == 0)
+    source_q = -2*z*cq*s.diff(cq, q)/(1-z+z*cq*cq)
+    check('GENUINE_PREPARED_RETURN_SOURCE', s.cancel(-s.diff(covdet, q)/covdet-source_q) == 0)
+    fixed_U = s.Matrix([[aa, 0, -pp], [0, 1, 0], [pp, 0, aa]])
+    Cmoving = (moving_J.T*fixed_U*moving_J).applyfunc(s.cancel)
+    Fmoving = return_feedback(I2, Cmoving)
+    moving_det = s.factor((I2-z*Fmoving).det())
+    moving_source = s.cancel(-s.diff(moving_det, t)/moving_det)
+    source_value = moving_source.subs({t: s.Rational(1, 3), z: s.Rational(1, 4)})
+    check('IGNORING_PREPARATION_DERIVATIVE_FALSE_ZERO_REJECTED', source_value != 0)
+    # Genuine differential formula for all four independent compressed entries.
+    entries = s.symbols('u0:4', real=True)
+    Csym = s.Matrix(2, 2, entries)
+    for proj_label, proj in [('one', I2), ('proper', old_projector)]:
+        FF = return_feedback(proj, Csym)
+        pencil = I2-z*FF
+        det = pencil.det()
+        for idx, entry in enumerate(entries):
+            tangent = s.zeros(2)
+            tangent[idx//2, idx % 2] = 1
+            jacobi_source = s.trace(pencil.adjugate()*z*FF.diff(entry))/det
+            native_source = -2*z*s.trace(pencil.adjugate()*proj*Csym.T*proj*tangent*proj)/det
+            check(f'ALL_COMPRESSED_SOURCE_ENTRIES_{proj_label}_{idx}',
+                  s.cancel(-s.diff(det, entry)/det-jacobi_source) == 0
+                  and s.cancel(jacobi_source-native_source) == 0)
+    # Rank and pole dependence in the proven analytic transfer cannot be dropped.
+    eps = s.symbols('eps', positive=True)
+    pole_z = 1-eps**2
+    ratio = s.cancel((1-pole_z*(1-eps**2))/(1-pole_z))
+    check('APPROACHING_POLE_DEFEATS_UNIFORM_CONTINUITY', ratio == 2-eps**2
+          and s.limit(ratio, eps, 0) == 2)
+    scalar_det = 1-z*(1-cq*cq)
+    check('ACTIVE_RANK_FACTOR_IS_REAL', s.cancel(s.diag(*([scalar_det]*3)).det()-scalar_det**3) == 0)
+
     payload = {
         'status': 'PASS', 'owner_input_head': HEAD, 'scope': SCOPE, 'checks': checks,
         'input_sha256': pins, 'proof_sha256': sha(PROOF),
@@ -290,6 +421,18 @@ def main():
             'joint_refinement': 'L(U)J=JU; F(L(P),L(U)^k)=L(F(P,U^k))',
             'raw_action_and_source_refinement_factor': 2,
             'same_prepared_inclusion_determines_full_action': False,
+            'complete_fine_readout': 'R=J P J^T+S; S^T=S; S^2=S; SJ=0',
+            'full_prepared_return': 'C_word=J^T U_word J; not a power of C_1',
+            'full_preparation_defect': 'L^T L=I-C_word^T C_word',
+            'prepared_feedback': 'F(P,C)+P(I-C^T C)P=P-PC^TPCP',
+            'prepared_action_refinement_factor': 1,
+            'literal_cylinder_value_pullback': 'L(diag f); image filter differs on child point reading by p^2',
+            'native_prepared_word_cases': prepared_cases,
+            'moving_preparation_nonzero_source_control': str(source_value),
+            'fixed_readout_action_bound': '2*r*z/(1-z)*norm(C-D)',
+            'moving_readout_action_bound': 'n*z/(1-z)*(4*norm(P-Q)+2*norm(C-D))',
+            'preparation_operator_error_bound': 'norm(U-V)+2*norm(J-K)',
+            'approaching_pole_gap_limit': 'log(2)',
         },
     }
     if args.output:

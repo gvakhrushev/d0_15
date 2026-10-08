@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`58407f912e6f4cedfff3625cdd4e7ba09c6e7951`, following
-`609e7daa7c801254ee671874750c5bc61f4efc71`.
+`7479dbcb5970b4450912cc848a53e1622e9524af`, following
+`58407f912e6f4cedfff3625cdd4e7ba09c6e7951`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -33,18 +33,25 @@ are preserved. The subsequent operator/action binding is now imported below.
 
 The [composed-feedback follow-up](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
 classifies every real orthogonal completion of a fixed golden active block
-with arbitrary archive size. The actual native direct and recorded gates
-have identical one-transition actions and a two-transition action gap
-`-log(1-4*z*p^3)`. A genuine completion-coordinate derivative is proved.
-Joint golden replication preserves the full operator, projection and all
-internal powers, with exact raw action/source factor two. An exact control
-at the golden value shows that the prepared inclusion alone does not fix
-the complement's full determinant contribution. The remaining G0b input
-is the native preparation/admission rule for that complement and its
-variations in the existing full bootstrap. This packet has 56 compiled
-propositions, four transitive D0 pins, 177 exact controls, and rejects 39
-false scope plus 13 false exact ledgers. No physical completion law follows
-from orthogonality alone.
+with arbitrary archive size, binds the actual native composed-action gap
+and its genuine derivative, and proves exact action/source doubling under
+joint golden replication. The expanded proof now classifies all compatible
+fine projectors and derives the full prepared action from complete history
+returns, including the missing norm and moving-preparation source.
+
+Literal cylinder multiplication pulls back as replicated readout L(P).
+The image-supported preparation filter JPJ^T is a different test; its exact
+action preservation does not remove the cylinder's complementary active
+sector. The native golden preparation and literal readout are bound directly.
+All-size analytic bounds quantify action error with the required rank,
+resolvent, preparation and full-word factors. Uniform native O(h) bounds
+and metric/link variation maps remain to be derived.
+
+This packet has 76 compiled propositions, four transitive D0 pins and 275
+exact controls; 54 false scope and 25 false exact ledgers are rejected.
+The next G0b input is the joint scene process under its actual readout,
+including complementary active returns and admitted variations. No native
+readout, action or physical postulate is changed to obtain these identities.
 
 The [regular time-field intertwiner classification](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
 is included with its 20 compiled propositions and 163 exact controls as a
@@ -54,8 +61,9 @@ remain unchanged. Supported D0 owners, claims, books and task lifecycles
 are unchanged. All 404 current artifact/input hash versions match.
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
-The previous source `609e7daa` and previous CONTROL `d10ad30b` both have
-verified successful CI. New-head CI and CONTROL review remain required.
+The previous source `58407f91` and previous CONTROL `6180d5d8` both have
+verified successful CI (runs `37769924135` and `37770338573`). New-head CI
+and CONTROL review remain required.
 
 ## Enumerated artifact slice
 
