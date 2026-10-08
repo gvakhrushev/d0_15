@@ -1,5 +1,7 @@
 import D0.Representation.GoldenCoherentMemory
 import D0.Representation.FiniteProtocolClock
+import D0.Synthesis.SceneHeatKernel
+import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 import Mathlib.LinearAlgebra.Matrix.Kronecker
 import Mathlib.Data.Matrix.Block
 import Mathlib.LinearAlgebra.Matrix.SchurComplement
@@ -1295,6 +1297,306 @@ theorem complete_comparison_has_internal_program (a p : ℝ) (P U : Matrix n n �
   · exact D0.Representation.FiniteProtocolClock.step_loses_no_state _
 
 end RecordedQuadraticFeedback
+
+section JointBootstrap
+variable {n : Type*} [Fintype n] [DecidableEq n] [Nonempty n]
+
+def thermalPartition (beta : ℝ) (lambda : n → ℝ) :=
+  ∑ i, Real.exp (-beta*lambda i)
+
+def heatContribution (beta : ℝ) (lambda : n → ℝ) :=
+  beta⁻¹*Real.log (thermalPartition beta lambda)
+
+def thermalSource (beta : ℝ) (lambda v : n → ℝ) :=
+  -(∑ i, Real.exp (-beta*lambda i)*v i)/thermalPartition beta lambda
+
+def replicatedSpectrum (lambda : n → ℝ) : n ⊕ n → ℝ := Sum.elim lambda lambda
+
+/-- Real coefficient extension of the actual rational scene heat readout. -/
+def sceneZoneHeatReal (z : Fin 3) (x : ℝ) :=
+  (D0.Synthesis.SceneHeatKernel.nzN z : ℝ)/33+
+    (1-(D0.Synthesis.SceneHeatKernel.nzN z : ℝ)/33)*x^33+
+    ((D0.Synthesis.SceneHeatKernel.nzN z : ℝ)-1)*x^(D0.Synthesis.SceneHeatKernel.dzN z)
+
+theorem actual_scene_zone_heat_real_extension (z : Fin 3) (x : ℚ) :
+    sceneZoneHeatReal z (x : ℝ)=(D0.Synthesis.SceneHeatKernel.zoneHeat z x : ℝ) := by
+  simp [sceneZoneHeatReal,D0.Synthesis.SceneHeatKernel.zoneHeat,
+    D0.Synthesis.SceneHeatKernel.nz]
+
+theorem actual_scene_heat_polynomial (x : ℝ) :
+    sceneZoneHeatReal 0 x+sceneZoneHeatReal 1 x+sceneZoneHeatReal 2 x=
+      1+12*x^20+10*x^22+8*x^24+2*x^33 := by
+  norm_num [sceneZoneHeatReal,D0.Synthesis.SceneHeatKernel.nzN,
+    D0.Synthesis.SceneHeatKernel.dzN,Fin.ext_iff]
+  ring
+
+theorem thermal_partition_positive (beta : ℝ) (lambda : n → ℝ) :
+    0<thermalPartition beta lambda := by
+  unfold thermalPartition
+  exact Finset.sum_pos (fun i _ => Real.exp_pos _) Finset.univ_nonempty
+
+theorem replicated_thermal_partition (beta : ℝ) (lambda : n → ℝ) :
+    thermalPartition beta (replicatedSpectrum lambda)=2*thermalPartition beta lambda := by
+  simp [thermalPartition,replicatedSpectrum,Fintype.sum_sum_type,two_mul]
+
+theorem replicated_heat_contribution (beta : ℝ) (lambda : n → ℝ) :
+    heatContribution beta (replicatedSpectrum lambda)=
+      heatContribution beta lambda+beta⁻¹*Real.log 2 := by
+  unfold heatContribution
+  rw [replicated_thermal_partition,Real.log_mul (by norm_num)
+    (ne_of_gt (thermal_partition_positive beta lambda))]
+  ring
+
+theorem thermal_partition_uniform_shift (beta t : ℝ) (lambda : n → ℝ) :
+    thermalPartition beta (fun i => lambda i+t)=
+      Real.exp (-beta*t)*thermalPartition beta lambda := by
+  simp only [thermalPartition,mul_add,neg_add_rev,Real.exp_add,Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro i _
+  ring
+
+theorem thermal_heat_uniform_shift (beta t : ℝ) (lambda : n → ℝ) (hb : beta≠0) :
+    heatContribution beta (fun i => lambda i+t)=heatContribution beta lambda-t := by
+  unfold heatContribution
+  rw [thermal_partition_uniform_shift,Real.log_mul
+    (ne_of_gt (Real.exp_pos _)) (ne_of_gt (thermal_partition_positive beta lambda)),Real.log_exp]
+  field_simp
+  ring
+
+theorem genuine_thermal_source (beta t : ℝ) (lambda : ℝ → n → ℝ) (v : n → ℝ)
+    (hb : beta≠0) (h : ∀ i, HasDerivAt (fun s => lambda s i) (v i) t) :
+    HasDerivAt (fun s => heatContribution beta (lambda s)) (thermalSource beta (lambda t) v) t := by
+  have hz : HasDerivAt (fun s => thermalPartition beta (lambda s))
+      (∑ i,Real.exp (-beta*lambda t i)*(-beta*v i)) t := by
+    exact HasDerivAt.fun_sum (fun i _ => (h i |>.const_mul (-beta)).exp)
+  have hp := (hz.log (ne_of_gt (thermal_partition_positive beta (lambda t)))).const_mul beta⁻¹
+  convert hp using 1
+  unfold thermalSource
+  rw [show (∑ i,Real.exp (-beta*lambda t i)*(-beta*v i))=
+      (-beta)*(∑ i,Real.exp (-beta*lambda t i)*v i) by
+    rw [Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro i _
+    ring]
+  field_simp
+
+theorem replicated_thermal_source (beta : ℝ) (lambda v : n → ℝ) :
+    thermalSource beta (replicatedSpectrum lambda) (replicatedSpectrum v)=thermalSource beta lambda v := by
+  unfold thermalSource
+  rw [replicated_thermal_partition]
+  simp only [replicatedSpectrum,Fintype.sum_sum_type,Sum.elim_inl,Sum.elim_inr]
+  ring
+
+def bootstrapAction (beta z : ℝ) (lambda : n → ℝ) (P U : Matrix n n ℝ) :=
+  heatContribution beta lambda+feedbackAction z (fullFeedback P U)
+
+theorem bootstrap_replication (beta z : ℝ) (lambda : n → ℝ) (P U : Matrix n n ℝ) :
+    bootstrapAction beta z (replicatedSpectrum lambda) (liftOperator P) (liftOperator U)=
+      heatContribution beta lambda+beta⁻¹*Real.log 2+2*feedbackAction z (fullFeedback P U) := by
+  rw [bootstrapAction,replicated_heat_contribution,full_feedback_refines,actual_feedback_action_refinement]
+
+theorem genuine_bootstrap_source (beta z t source : ℝ)
+    (lambda : ℝ → n → ℝ) (v : n → ℝ) (P U : ℝ → Matrix n n ℝ)
+    (hb : beta≠0) (h : ∀ i, HasDerivAt (fun s => lambda s i) (v i) t)
+    (hf : HasDerivAt (fun s => feedbackAction z (fullFeedback (P s) (U s))) source t) :
+    HasDerivAt (fun s => bootstrapAction beta z (lambda s) (P s) (U s))
+      (thermalSource beta (lambda t) v+source) t :=
+  (genuine_thermal_source beta t lambda v hb h).add hf
+
+theorem genuine_replicated_bootstrap_source (beta z t source : ℝ)
+    (lambda : ℝ → n → ℝ) (v : n → ℝ) (P U : ℝ → Matrix n n ℝ)
+    (hb : beta≠0) (h : ∀ i, HasDerivAt (fun s => lambda s i) (v i) t)
+    (hf : HasDerivAt (fun s => feedbackAction z (fullFeedback (P s) (U s))) source t) :
+    HasDerivAt (fun s => bootstrapAction beta z (replicatedSpectrum (lambda s))
+      (liftOperator (P s)) (liftOperator (U s)))
+      (thermalSource beta (lambda t) v+2*source) t := by
+  have hh := (genuine_thermal_source beta t lambda v hb h).add_const (beta⁻¹*Real.log 2)
+  simpa only [bootstrap_replication] using hh.add (hf.const_mul 2)
+
+theorem joint_stationarity_transfer_iff (heat feedback : ℝ) :
+    (heat+feedback=0 ∧ heat+2*feedback=0) ↔ (heat=0 ∧ feedback=0) := by
+  constructor
+  · rintro ⟨h0,h1⟩
+    constructor <;> linarith
+  · rintro ⟨rfl,rfl⟩
+    norm_num
+
+theorem coarse_onshell_refined_residual (heat feedback : ℝ) (h : heat+feedback=0) :
+    heat+2*feedback=feedback := by linarith
+
+theorem compatible_refined_thermal_source_iff (heat feedback fineHeat : ℝ)
+    (h : heat+feedback=0) :
+    fineHeat+2*feedback=0 ↔ fineHeat=2*heat := by constructor <;> intro hh <;> linarith
+
+theorem universal_single_calibration_obstruction (copies calibration : ℝ) :
+    (∀ heat feedback : ℝ, heat+copies*feedback=calibration*(heat+feedback)) ↔
+      (copies=1 ∧ calibration=1) := by
+  constructor
+  · intro h
+    have hH := h 1 0
+    have hF := h 0 1
+    constructor <;> norm_num at hH hF ⊢ <;> linarith
+  · rintro ⟨rfl,rfl⟩
+    intro heat feedback
+    ring
+
+theorem bootstrap_uniform_spectral_shift (beta z t : ℝ) (lambda : n → ℝ)
+    (P U : Matrix n n ℝ) (hb : beta≠0) :
+    bootstrapAction beta z (fun i => lambda i+t) P U=
+      bootstrapAction beta z lambda P U-t := by
+  rw [bootstrapAction,thermal_heat_uniform_shift beta t lambda hb,bootstrapAction]
+  ring
+
+theorem genuine_bootstrap_uniform_shift_source (beta z t : ℝ) (lambda : n → ℝ)
+    (P U : Matrix n n ℝ) (hb : beta≠0) :
+    HasDerivAt (fun s => bootstrapAction beta z (fun i => lambda i+s) P U) (-1) t := by
+  simpa only [bootstrap_uniform_spectral_shift beta z _ lambda P U hb] using
+    (hasDerivAt_id t).const_sub (bootstrapAction beta z lambda P U)
+
+theorem uniform_spectral_shift_cannot_be_stationary (beta z t : ℝ) (lambda : n → ℝ)
+    (P U : Matrix n n ℝ) (hb : beta≠0) :
+    ¬ HasDerivAt (fun s => bootstrapAction beta z (fun i => lambda i+s) P U) 0 t := by
+  intro h
+  have he := (genuine_bootstrap_uniform_shift_source beta z t lambda P U hb).unique h
+  norm_num at he
+
+/-- An independent finite control. Its coupled one-parameter variation is not
+    asserted to be the physical scene variation, or the whole joint root gate. -/
+def controlProjection : Matrix (Fin 2) (Fin 2) ℝ := Matrix.diagonal ![1,0]
+def controlLaplacian (t : ℝ) : Matrix (Fin 2) (Fin 2) ℝ := t • !![1,-1;-1,1]
+def controlSpectrum (t : ℝ) : Fin 2 → ℝ := ![0,2*t]
+def controlFeedbackAction (t : ℝ) := 2*Real.log (1+t^2)-Real.log (1+t^4)
+def controlFeedbackSource (t : ℝ) := 4*t*(1-t^2)/((1+t^2)*(1+t^4))
+def controlHeatSource (t : ℝ) := -(2*Real.exp (-2*t))/(1+Real.exp (-2*t))
+def controlJointSource (t : ℝ) := controlHeatSource t+controlFeedbackSource t
+
+theorem control_projection_is_orthogonal :
+    controlProjection.transpose=controlProjection ∧ controlProjection*controlProjection=controlProjection := by
+  constructor <;> ext i j <;> fin_cases i <;> fin_cases j <;>
+    norm_num [controlProjection,Matrix.mul_apply,Fin.sum_univ_succ]
+
+theorem control_laplacian_has_declared_spectrum (t : ℝ) :
+    (controlLaplacian t).mulVec ![1,1]=0 ∧
+      (controlLaplacian t).mulVec ![1,-1]=(2*t) • ![1,-1] := by
+  constructor <;> ext i <;> fin_cases i <;>
+    simp [controlLaplacian,Matrix.mulVec,Fin.sum_univ_succ,Matrix.vecHead,Matrix.vecTail] <;> ring
+
+theorem control_feedback_determinant (t : ℝ) :
+    (1-(1/2 : ℝ) • fullFeedback controlProjection (cayleyAxis t)).det=
+      (1+t^4)/(1+t^2)^2 := by
+  have hn : 1+t^2≠0 := ne_of_gt (by positivity)
+  simp [fullFeedback,controlProjection,cayleyAxis,Matrix.det_fin_two,
+    Matrix.mul_apply,Fin.sum_univ_succ]
+  field_simp
+  ring
+
+theorem control_feedback_pencil_positive (t : ℝ) :
+    0<(1-(1/2 : ℝ) • fullFeedback controlProjection (cayleyAxis t)).det := by
+  rw [control_feedback_determinant]
+  positivity
+
+theorem control_actual_feedback_action (t : ℝ) :
+    feedbackAction (1/2) (fullFeedback controlProjection (cayleyAxis t))=controlFeedbackAction t := by
+  unfold feedbackAction controlFeedbackAction
+  rw [control_feedback_determinant,Real.log_div
+    (ne_of_gt (by positivity : 0<(1+t^4 : ℝ)))
+    (pow_ne_zero 2 (ne_of_gt (by positivity : 0<(1+t^2 : ℝ)))),Real.log_pow]
+  ring
+
+theorem control_genuine_feedback_source (t : ℝ) :
+    HasDerivAt (fun s => feedbackAction (1/2) (fullFeedback controlProjection (cayleyAxis s)))
+      (controlFeedbackSource t) t := by
+  have h2 := (((hasDerivAt_id t).pow 2).const_add 1).log
+    (ne_of_gt (by positivity : 0<(1+t^2 : ℝ)))
+  have h4 := (((hasDerivAt_id t).pow 4).const_add 1).log
+    (ne_of_gt (by positivity : 0<(1+t^4 : ℝ)))
+  have h := (h2.const_mul 2).sub h4
+  simp only [control_actual_feedback_action]
+  convert h using 1
+  unfold controlFeedbackSource
+  simp only [Pi.pow_apply,id_eq,Nat.reduceSub,Nat.cast_ofNat,one_mul,mul_one]
+  field_simp
+  ring
+
+theorem control_actual_heat_source (t : ℝ) :
+    thermalSource 1 (controlSpectrum t) ![0,2]=controlHeatSource t := by
+  simp [thermalSource,thermalPartition,controlSpectrum,controlHeatSource,Fin.sum_univ_succ]
+  ring
+
+theorem control_spectrum_derivative (t : ℝ) (i : Fin 2) :
+    HasDerivAt (fun s => controlSpectrum s i) (![0,2] i) t := by
+  fin_cases i
+  · simpa [controlSpectrum] using hasDerivAt_const t (0 : ℝ)
+  · simpa [controlSpectrum] using (hasDerivAt_id t).const_mul (2 : ℝ)
+
+theorem control_genuine_joint_source (t : ℝ) :
+    HasDerivAt (fun s => bootstrapAction 1 (1/2) (controlSpectrum s)
+      controlProjection (cayleyAxis s)) (controlJointSource t) t := by
+  simpa only [control_actual_heat_source,controlJointSource] using
+    genuine_bootstrap_source 1 (1/2) t (controlFeedbackSource t)
+      controlSpectrum ![0,2] (fun _ => controlProjection) cayleyAxis
+      (by norm_num) (control_spectrum_derivative t) (control_genuine_feedback_source t)
+
+theorem control_genuine_refined_source (t : ℝ) :
+    HasDerivAt (fun s => bootstrapAction 1 (1/2) (replicatedSpectrum (controlSpectrum s))
+      (liftOperator controlProjection) (liftOperator (cayleyAxis s)))
+      (controlHeatSource t+2*controlFeedbackSource t) t := by
+  simpa only [control_actual_heat_source] using
+    genuine_replicated_bootstrap_source 1 (1/2) t (controlFeedbackSource t)
+      controlSpectrum ![0,2] (fun _ => controlProjection) cayleyAxis
+      (by norm_num) (control_spectrum_derivative t) (control_genuine_feedback_source t)
+
+theorem control_joint_source_continuous : Continuous controlJointSource := by
+  unfold controlJointSource controlHeatSource controlFeedbackSource
+  have he : ∀ t : ℝ, 1+Real.exp (-2*t)≠0 := fun t => ne_of_gt (by positivity)
+  have hq : ∀ t : ℝ, (1+t^2)*(1+t^4)≠0 := fun t => ne_of_gt (by positivity)
+  fun_prop
+
+theorem control_feedback_source_positive (t : ℝ) (ht : 0<t) (hb : t<1/2) :
+    0<controlFeedbackSource t := by
+  unfold controlFeedbackSource
+  have h : 0<1-t^2 := by nlinarith
+  positivity
+
+theorem control_slice_stationary_refinement_failure :
+    ∃ t : ℝ, 0<t ∧ t<1/2 ∧
+      HasDerivAt (fun s => bootstrapAction 1 (1/2) (controlSpectrum s)
+        controlProjection (cayleyAxis s)) 0 t ∧
+      HasDerivAt (fun s => bootstrapAction 1 (1/2) (replicatedSpectrum (controlSpectrum s))
+        (liftOperator controlProjection) (liftOperator (cayleyAxis s)))
+        (controlFeedbackSource t) t ∧ 0<controlFeedbackSource t := by
+  have h0 : controlJointSource 0=-1 := by
+    norm_num [controlJointSource,controlHeatSource,controlFeedbackSource]
+  have h1 : 0<controlJointSource (1/2) := by
+    have he : Real.exp (-1 : ℝ)≤1 := Real.exp_le_one_iff.mpr (by norm_num)
+    have hp : 0<1+Real.exp (-1 : ℝ) := by positivity
+    have hheat : -(2*Real.exp (-1 : ℝ))/(1+Real.exp (-1 : ℝ))≥-1 := by
+      apply (le_div_iff₀ hp).2
+      linarith
+    have hf : controlFeedbackSource (1/2)=96/85 := by norm_num [controlFeedbackSource]
+    have hh : controlHeatSource (1/2)=-(2*Real.exp (-1 : ℝ))/(1+Real.exp (-1 : ℝ)) := by
+      norm_num [controlHeatSource]
+    unfold controlJointSource
+    rw [hh,hf]
+    linarith
+  obtain ⟨t,ht,hroot⟩ := intermediate_value_Icc (by norm_num : (0 : ℝ)≤1/2)
+    control_joint_source_continuous.continuousOn (show (0 : ℝ) ∈ Set.Icc
+      (controlJointSource 0) (controlJointSource (1/2)) from by
+        constructor <;> linarith)
+  have hleft : 0<t := lt_of_le_of_ne ht.1 (by intro he; subst t; rw [h0] at hroot; norm_num at hroot)
+  have hright : t<1/2 := lt_of_le_of_ne ht.2 (by
+    intro he
+    rw [he] at hroot
+    linarith)
+  have hcoarse := control_genuine_joint_source t
+  rw [hroot] at hcoarse
+  have hbalance : controlHeatSource t+controlFeedbackSource t=0 := hroot
+  have hfine := control_genuine_refined_source t
+  rw [coarse_onshell_refined_residual _ _ hbalance] at hfine
+  exact ⟨t,hleft,hright,hcoarse,hfine,control_feedback_source_positive t hleft hright⟩
+
+end JointBootstrap
+
 end
 end D0.Research.NativeComposedFeedbackDynamics
 
@@ -1529,3 +1831,67 @@ end D0.Research.NativeComposedFeedbackDynamics
 #print axioms D0.Research.NativeComposedFeedbackDynamics.three_stage_run_is_internal
 #check D0.Research.NativeComposedFeedbackDynamics.complete_comparison_has_internal_program
 #print axioms D0.Research.NativeComposedFeedbackDynamics.complete_comparison_has_internal_program
+#check D0.Research.NativeComposedFeedbackDynamics.actual_scene_zone_heat_real_extension
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_scene_zone_heat_real_extension
+#check D0.Research.NativeComposedFeedbackDynamics.actual_scene_heat_polynomial
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_scene_heat_polynomial
+#check D0.Research.NativeComposedFeedbackDynamics.thermal_partition_positive
+#print axioms D0.Research.NativeComposedFeedbackDynamics.thermal_partition_positive
+#check D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_partition
+#print axioms D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_partition
+#check D0.Research.NativeComposedFeedbackDynamics.replicated_heat_contribution
+#print axioms D0.Research.NativeComposedFeedbackDynamics.replicated_heat_contribution
+#check D0.Research.NativeComposedFeedbackDynamics.thermal_partition_uniform_shift
+#print axioms D0.Research.NativeComposedFeedbackDynamics.thermal_partition_uniform_shift
+#check D0.Research.NativeComposedFeedbackDynamics.thermal_heat_uniform_shift
+#print axioms D0.Research.NativeComposedFeedbackDynamics.thermal_heat_uniform_shift
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source
+#check D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_source
+#check D0.Research.NativeComposedFeedbackDynamics.bootstrap_replication
+#print axioms D0.Research.NativeComposedFeedbackDynamics.bootstrap_replication
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_bootstrap_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_bootstrap_source
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_replicated_bootstrap_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_replicated_bootstrap_source
+#check D0.Research.NativeComposedFeedbackDynamics.joint_stationarity_transfer_iff
+#print axioms D0.Research.NativeComposedFeedbackDynamics.joint_stationarity_transfer_iff
+#check D0.Research.NativeComposedFeedbackDynamics.coarse_onshell_refined_residual
+#print axioms D0.Research.NativeComposedFeedbackDynamics.coarse_onshell_refined_residual
+#check D0.Research.NativeComposedFeedbackDynamics.compatible_refined_thermal_source_iff
+#print axioms D0.Research.NativeComposedFeedbackDynamics.compatible_refined_thermal_source_iff
+#check D0.Research.NativeComposedFeedbackDynamics.universal_single_calibration_obstruction
+#print axioms D0.Research.NativeComposedFeedbackDynamics.universal_single_calibration_obstruction
+#check D0.Research.NativeComposedFeedbackDynamics.bootstrap_uniform_spectral_shift
+#print axioms D0.Research.NativeComposedFeedbackDynamics.bootstrap_uniform_spectral_shift
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_bootstrap_uniform_shift_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_bootstrap_uniform_shift_source
+#check D0.Research.NativeComposedFeedbackDynamics.uniform_spectral_shift_cannot_be_stationary
+#print axioms D0.Research.NativeComposedFeedbackDynamics.uniform_spectral_shift_cannot_be_stationary
+#check D0.Research.NativeComposedFeedbackDynamics.control_projection_is_orthogonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_projection_is_orthogonal
+#check D0.Research.NativeComposedFeedbackDynamics.control_laplacian_has_declared_spectrum
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_laplacian_has_declared_spectrum
+#check D0.Research.NativeComposedFeedbackDynamics.control_feedback_determinant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_feedback_determinant
+#check D0.Research.NativeComposedFeedbackDynamics.control_feedback_pencil_positive
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_feedback_pencil_positive
+#check D0.Research.NativeComposedFeedbackDynamics.control_actual_feedback_action
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_actual_feedback_action
+#check D0.Research.NativeComposedFeedbackDynamics.control_genuine_feedback_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_genuine_feedback_source
+#check D0.Research.NativeComposedFeedbackDynamics.control_actual_heat_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_actual_heat_source
+#check D0.Research.NativeComposedFeedbackDynamics.control_spectrum_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_spectrum_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.control_genuine_joint_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_genuine_joint_source
+#check D0.Research.NativeComposedFeedbackDynamics.control_genuine_refined_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_genuine_refined_source
+#check D0.Research.NativeComposedFeedbackDynamics.control_joint_source_continuous
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_joint_source_continuous
+#check D0.Research.NativeComposedFeedbackDynamics.control_feedback_source_positive
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_feedback_source_positive
+#check D0.Research.NativeComposedFeedbackDynamics.control_slice_stationary_refinement_failure
+#print axioms D0.Research.NativeComposedFeedbackDynamics.control_slice_stationary_refinement_failure

@@ -1,30 +1,30 @@
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:24:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_on_incoming`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:26:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_on_incoming`:
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:29:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_transpose_on_outgoing`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:31:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_transpose_on_outgoing`:
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:42:38: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:44:38: warning: This simp argument is unused:
   Matrix.smul_mul
 
 Hint: Omit it from the simp argument list.
   simp [̵a̵r̵c̵h̵i̵v̵e̵B̵l̵o̵c̵k̵,̵M̵a̵t̵r̵i̵x̵.̵a̵d̵d̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵h̵S̵V̵]̵[̲a̲r̲c̲h̲i̲v̲e̲B̲l̲o̲c̲k̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲a̲d̲d̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲ ̲h̲S̲V̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:59:38: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:61:38: warning: This simp argument is unused:
   Matrix.smul_mul
 
 Hint: Omit it from the simp argument list.
   simp [̵a̵r̵c̵h̵i̵v̵e̵B̵l̵o̵c̵k̵,̵M̵a̵t̵r̵i̵x̵.̵a̵d̵d̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵h̵r̵v̵]̵[̲a̲r̲c̲h̲i̲v̲e̲B̲l̲o̲c̲k̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲a̲d̲d̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲ ̲h̲r̲v̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:88:64: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:90:64: warning: This simp argument is unused:
   Matrix.smul_mul
 
 Hint: Omit it from the simp argument list.
@@ -33,39 +33,39 @@ Hint: Omit it from the simp argument list.
   ̲ ̲ ̲ ̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲h̲d̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:111:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.reconstruct_all_raw_blocks`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:113:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.reconstruct_all_raw_blocks`:
   [Fintype m]
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype m] [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:169:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.joint_transpose`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:171:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.joint_transpose`:
   [Fintype m]
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype m] [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:194:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_embedding_injective`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:196:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.archive_embedding_injective`:
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:214:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.one_return_feedback`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:216:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.one_return_feedback`:
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:218:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.joint_two_step_retained`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:220:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.joint_two_step_retained`:
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:299:34: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:301:34: warning: This simp argument is unused:
   smul_smul
 
 Hint: Omit it from the simp argument list.
@@ -75,58 +75,58 @@ Hint: Omit it from the simp argument list.
   ̵  ̵ ̵ ̵Matrix.one_mul, ̲Matrix.mul_one,s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵ ̲hH]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:495:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_lift_intertwines`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:497:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_lift_intertwines`:
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:500:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_inclusion_preserves_pairing`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:502:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_inclusion_preserves_pairing`:
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:516:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_one`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:518:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_one`:
   [Fintype n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:518:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_transpose`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:520:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_transpose`:
   [Fintype n]
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype n] [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:522:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_sub`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:524:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_sub`:
   [Fintype n]
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype n] [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:527:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_smul`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:529:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lift_smul`:
   [Fintype n]
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype n] [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:584:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.prepared_readout_intertwines`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:586:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.prepared_readout_intertwines`:
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:588:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.prepared_readout_projector`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:590:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.prepared_readout_projector`:
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:596:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.prepared_readout_symmetric`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:598:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.prepared_readout_symmetric`:
   [Fintype m]
   [DecidableEq n]
   [DecidableEq m]
@@ -134,20 +134,20 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [Fintype m] [DecidableEq n] [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:601:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.prepared_readout_unique`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:603:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.prepared_readout_unique`:
   [DecidableEq n]
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq n] [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:607:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.leak_is_orthogonal`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:609:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.leak_is_orthogonal`:
   [DecidableEq m]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq m] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:721:13: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:723:13: warning: This simp argument is unused:
   Matrix.one_mul
 
 Hint: Omit it from the simp argument list.
@@ -156,7 +156,7 @@ Hint: Omit it from the simp argument list.
   ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:722:4: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:724:4: warning: This simp argument is unused:
   Matrix.smul_mul
 
 Hint: Omit it from the simp argument list.
@@ -164,33 +164,33 @@ Hint: Omit it from the simp argument list.
       Matrix.s̵mul_m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵smul, ̲smul_smul]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:795:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_observable_pullback`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:797:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_observable_pullback`:
   [Fintype n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:829:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_factor_owned_blocks`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:831:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_factor_owned_blocks`:
   [Fintype n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:859:10: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:861:10: warning: This simp argument is unused:
   Matrix.mul_smul
 
 Hint: Omit it from the simp argument list.
   simp [̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵h̵p̵]̵[̲M̲a̲t̲r̲i̲x̲.̲s̲m̲u̲l̲_̲m̲u̲l̲,̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲h̲p̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:859:26: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:861:26: warning: This simp argument is unused:
   Matrix.smul_mul
 
 Hint: Omit it from the simp argument list.
   simp [̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵h̵p̵]̵[̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲h̲p̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:902:20: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:904:20: warning: This simp argument is unused:
   Matrix.zero_mul
 
 Hint: Omit it from the simp argument list.
@@ -200,45 +200,86 @@ Hint: Omit it from the simp argument list.
   ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲s̲m̲u̲l̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲o̲n̲e̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲s̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:983:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.norm_of_native_mix`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:985:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.norm_of_native_mix`:
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:993:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.owned_recorded_response_coordinates`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:995:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.owned_recorded_response_coordinates`:
   [Fintype n]
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype n] [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1071:43: warning: This simp argument is unused:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1073:43: warning: This simp argument is unused:
   Matrix.mul_apply
 
 Hint: Omit it from the simp argument list.
   simp [̵f̵l̵a̵g̵g̵e̵d̵P̵r̵e̵p̵a̵r̵a̵t̵i̵o̵n̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵V̵e̵c̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵F̵i̵n̵t̵y̵p̵e̵.̵s̵u̵m̵_̵s̵u̵m̵_̵t̵y̵p̵e̵]̵[̲f̲l̲a̲g̲g̲e̲d̲P̲r̲e̲p̲a̲r̲a̲t̲i̲o̲n̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲V̲e̲c̲,̲ ̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲F̲i̲n̲t̲y̲p̲e̲.̲s̲u̲m̲_̲s̲u̲m̲_̲t̲y̲p̲e̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1080:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_registration`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1082:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_registration`:
   [Fintype n]
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype n] [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1177:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.tensor_reads_complete_blank_pair`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1179:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.tensor_reads_complete_blank_pair`:
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1190:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.blank_pair_has_fixed_norm`:
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1192:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.blank_pair_has_fixed_norm`:
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1333:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.thermal_partition_positive`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1338:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_partition`:
+  [DecidableEq n]
+  [Nonempty n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] [Nonempty n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1350:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.thermal_partition_uniform_shift`:
+  [DecidableEq n]
+  [Nonempty n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] [Nonempty n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1353:38: warning: This simp argument is unused:
+  neg_add_rev
+
+Hint: Omit it from the simp argument list.
+  simp only [̵t̵h̵e̵r̵m̵a̵l̵P̵a̵r̵t̵i̵t̵i̵o̵n̵,̵m̵u̵l̵_̵a̵d̵d̵,̵n̵e̵g̵_̵a̵d̵d̵_̵r̵e̵v̵,̵R̵e̵a̵l̵.̵e̵x̵p̵_̵a̵d̵d̵,̵F̵i̵n̵s̵e̵t̵.̵m̵u̵l̵_̵s̵u̵m̵]̵[̲t̲h̲e̲r̲m̲a̲l̲P̲a̲r̲t̲i̲t̲i̲o̲n̲,̲ ̲m̲u̲l̲_̲a̲d̲d̲,̲ ̲R̲e̲a̲l̲.̲e̲x̲p̲_̲a̲d̲d̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲u̲l̲_̲s̲u̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1482:41: warning: This simp argument is unused:
+  Fin.sum_univ_succ
+
+Hint: Omit it from the simp argument list.
+  simp [̵c̵o̵n̵t̵r̵o̵l̵L̵a̵p̵l̵a̵c̵i̵a̵n̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵V̵e̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵H̵e̵a̵d̵,̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵T̵a̵i̵l̵]̵[̲c̲o̲n̲t̲r̲o̲l̲L̲a̲p̲l̲a̲c̲i̲a̲n̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲V̲e̲c̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲v̲e̲c̲H̲e̲a̲d̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲v̲e̲c̲T̲a̲i̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:1517:61: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.pow_apply, ̲id_eq, ̲Nat.reduceSub, ̲Nat.cast_ofNat,o̵n̵e̵_̵ ̲mul,̵m̵u̵l̵_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 D0.Research.NativeComposedFeedbackDynamics.archive_on_incoming.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
   [Fintype m] [DecidableEq n] [DecidableEq m] (a : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) (hR : R.transpose * R = 1)
   (hV : V * R = 0) : D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V * R = a • S
@@ -1254,5 +1295,286 @@ D0.Research.NativeComposedFeedbackDynamics.complete_comparison_has_internal_prog
       ⇑(D0.Representation.FiniteProtocolClock.step
           (D0.Research.NativeComposedFeedbackDynamics.flaggedComparisonProgram a p P U ha hp hP hsP hU))
 'D0.Research.NativeComposedFeedbackDynamics.complete_comparison_has_internal_program' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.actual_scene_zone_heat_real_extension (z : Fin 3) (x : ℚ) :
+  D0.Research.NativeComposedFeedbackDynamics.sceneZoneHeatReal z ↑x = ↑(D0.Synthesis.SceneHeatKernel.zoneHeat z x)
+'D0.Research.NativeComposedFeedbackDynamics.actual_scene_zone_heat_real_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.actual_scene_heat_polynomial (x : ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.sceneZoneHeatReal 0 x +
+        D0.Research.NativeComposedFeedbackDynamics.sceneZoneHeatReal 1 x +
+      D0.Research.NativeComposedFeedbackDynamics.sceneZoneHeatReal 2 x =
+    1 + 12 * x ^ 20 + 10 * x ^ 22 + 8 * x ^ 24 + 2 * x ^ 33
+'D0.Research.NativeComposedFeedbackDynamics.actual_scene_heat_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.thermal_partition_positive.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta : ℝ) (lambda : n → ℝ) : 0 < D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta lambda
+'D0.Research.NativeComposedFeedbackDynamics.thermal_partition_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_partition.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta : ℝ) (lambda : n → ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta
+      (D0.Research.NativeComposedFeedbackDynamics.replicatedSpectrum lambda) =
+    2 * D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta lambda
+'D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.replicated_heat_contribution.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta : ℝ) (lambda : n → ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.heatContribution beta
+      (D0.Research.NativeComposedFeedbackDynamics.replicatedSpectrum lambda) =
+    D0.Research.NativeComposedFeedbackDynamics.heatContribution beta lambda + beta⁻¹ * Real.log 2
+'D0.Research.NativeComposedFeedbackDynamics.replicated_heat_contribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.thermal_partition_uniform_shift.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] [Nonempty n] (beta t : ℝ) (lambda : n → ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta fun i => lambda i + t) =
+    Real.exp (-beta * t) * D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta lambda
+'D0.Research.NativeComposedFeedbackDynamics.thermal_partition_uniform_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.thermal_heat_uniform_shift.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta t : ℝ) (lambda : n → ℝ) (hb : beta ≠ 0) :
+  (D0.Research.NativeComposedFeedbackDynamics.heatContribution beta fun i => lambda i + t) =
+    D0.Research.NativeComposedFeedbackDynamics.heatContribution beta lambda - t
+'D0.Research.NativeComposedFeedbackDynamics.thermal_heat_uniform_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta t : ℝ) (lambda : ℝ → n → ℝ) (v : n → ℝ) (hb : beta ≠ 0)
+  (h : ∀ (i : n), HasDerivAt (fun s => lambda s i) (v i) t) :
+  HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.heatContribution beta (lambda s))
+    (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta (lambda t) v) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta : ℝ) (lambda v : n → ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.thermalSource beta
+      (D0.Research.NativeComposedFeedbackDynamics.replicatedSpectrum lambda)
+      (D0.Research.NativeComposedFeedbackDynamics.replicatedSpectrum v) =
+    D0.Research.NativeComposedFeedbackDynamics.thermalSource beta lambda v
+'D0.Research.NativeComposedFeedbackDynamics.replicated_thermal_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.bootstrap_replication.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta z : ℝ) (lambda : n → ℝ) (P U : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.bootstrapAction beta z
+      (D0.Research.NativeComposedFeedbackDynamics.replicatedSpectrum lambda)
+      (D0.Research.NativeComposedFeedbackDynamics.liftOperator P)
+      (D0.Research.NativeComposedFeedbackDynamics.liftOperator U) =
+    D0.Research.NativeComposedFeedbackDynamics.heatContribution beta lambda + beta⁻¹ * Real.log 2 +
+      2 *
+        D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+          (D0.Research.NativeComposedFeedbackDynamics.fullFeedback P U)
+'D0.Research.NativeComposedFeedbackDynamics.bootstrap_replication' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_bootstrap_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta z t source : ℝ) (lambda : ℝ → n → ℝ) (v : n → ℝ) (P U : ℝ → Matrix n n ℝ) (hb : beta ≠ 0)
+  (h : ∀ (i : n), HasDerivAt (fun s => lambda s i) (v i) t)
+  (hf :
+    HasDerivAt
+      (fun s =>
+        D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+          (D0.Research.NativeComposedFeedbackDynamics.fullFeedback (P s) (U s)))
+      source t) :
+  HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.bootstrapAction beta z (lambda s) (P s) (U s))
+    (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta (lambda t) v + source) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_bootstrap_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_replicated_bootstrap_source.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] [Nonempty n] (beta z t source : ℝ) (lambda : ℝ → n → ℝ) (v : n → ℝ) (P U : ℝ → Matrix n n ℝ)
+  (hb : beta ≠ 0) (h : ∀ (i : n), HasDerivAt (fun s => lambda s i) (v i) t)
+  (hf :
+    HasDerivAt
+      (fun s =>
+        D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+          (D0.Research.NativeComposedFeedbackDynamics.fullFeedback (P s) (U s)))
+      source t) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeComposedFeedbackDynamics.bootstrapAction beta z
+        (D0.Research.NativeComposedFeedbackDynamics.replicatedSpectrum (lambda s))
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator (P s))
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator (U s)))
+    (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta (lambda t) v + 2 * source) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_replicated_bootstrap_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.joint_stationarity_transfer_iff (heat feedback : ℝ) :
+  heat + feedback = 0 ∧ heat + 2 * feedback = 0 ↔ heat = 0 ∧ feedback = 0
+'D0.Research.NativeComposedFeedbackDynamics.joint_stationarity_transfer_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.coarse_onshell_refined_residual (heat feedback : ℝ)
+  (h : heat + feedback = 0) : heat + 2 * feedback = feedback
+'D0.Research.NativeComposedFeedbackDynamics.coarse_onshell_refined_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.compatible_refined_thermal_source_iff (heat feedback fineHeat : ℝ)
+  (h : heat + feedback = 0) : fineHeat + 2 * feedback = 0 ↔ fineHeat = 2 * heat
+'D0.Research.NativeComposedFeedbackDynamics.compatible_refined_thermal_source_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.universal_single_calibration_obstruction (copies calibration : ℝ) :
+  (∀ (heat feedback : ℝ), heat + copies * feedback = calibration * (heat + feedback)) ↔ copies = 1 ∧ calibration = 1
+'D0.Research.NativeComposedFeedbackDynamics.universal_single_calibration_obstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.bootstrap_uniform_spectral_shift.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] [Nonempty n] (beta z t : ℝ) (lambda : n → ℝ) (P U : Matrix n n ℝ) (hb : beta ≠ 0) :
+  D0.Research.NativeComposedFeedbackDynamics.bootstrapAction beta z (fun i => lambda i + t) P U =
+    D0.Research.NativeComposedFeedbackDynamics.bootstrapAction beta z lambda P U - t
+'D0.Research.NativeComposedFeedbackDynamics.bootstrap_uniform_spectral_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_bootstrap_uniform_shift_source.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] [Nonempty n] (beta z t : ℝ) (lambda : n → ℝ) (P U : Matrix n n ℝ) (hb : beta ≠ 0) :
+  HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.bootstrapAction beta z (fun i => lambda i + s) P U)
+    (-1) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_bootstrap_uniform_shift_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.uniform_spectral_shift_cannot_be_stationary.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] [Nonempty n] (beta z t : ℝ) (lambda : n → ℝ) (P U : Matrix n n ℝ) (hb : beta ≠ 0) :
+  ¬HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.bootstrapAction beta z (fun i => lambda i + s) P U) 0
+      t
+'D0.Research.NativeComposedFeedbackDynamics.uniform_spectral_shift_cannot_be_stationary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_projection_is_orthogonal :
+  D0.Research.NativeComposedFeedbackDynamics.controlProjection.transpose =
+      D0.Research.NativeComposedFeedbackDynamics.controlProjection ∧
+    D0.Research.NativeComposedFeedbackDynamics.controlProjection *
+        D0.Research.NativeComposedFeedbackDynamics.controlProjection =
+      D0.Research.NativeComposedFeedbackDynamics.controlProjection
+'D0.Research.NativeComposedFeedbackDynamics.control_projection_is_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_laplacian_has_declared_spectrum (t : ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.controlLaplacian t).mulVec ![1, 1] = 0 ∧
+    (D0.Research.NativeComposedFeedbackDynamics.controlLaplacian t).mulVec ![1, -1] = (2 * t) • ![1, -1]
+'D0.Research.NativeComposedFeedbackDynamics.control_laplacian_has_declared_spectrum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_feedback_determinant (t : ℝ) :
+  (1 -
+        (1 / 2) •
+          D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+            D0.Research.NativeComposedFeedbackDynamics.controlProjection
+            (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t)).det =
+    (1 + t ^ 4) / (1 + t ^ 2) ^ 2
+'D0.Research.NativeComposedFeedbackDynamics.control_feedback_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_feedback_pencil_positive (t : ℝ) :
+  0 <
+    (1 -
+        (1 / 2) •
+          D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+            D0.Research.NativeComposedFeedbackDynamics.controlProjection
+            (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t)).det
+'D0.Research.NativeComposedFeedbackDynamics.control_feedback_pencil_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_actual_feedback_action (t : ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.feedbackAction (1 / 2)
+      (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+        D0.Research.NativeComposedFeedbackDynamics.controlProjection
+        (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis t)) =
+    D0.Research.NativeComposedFeedbackDynamics.controlFeedbackAction t
+'D0.Research.NativeComposedFeedbackDynamics.control_actual_feedback_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_genuine_feedback_source (t : ℝ) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeComposedFeedbackDynamics.feedbackAction (1 / 2)
+        (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+          D0.Research.NativeComposedFeedbackDynamics.controlProjection
+          (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis s)))
+    (D0.Research.NativeComposedFeedbackDynamics.controlFeedbackSource t) t
+'D0.Research.NativeComposedFeedbackDynamics.control_genuine_feedback_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_actual_heat_source (t : ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.thermalSource 1
+      (D0.Research.NativeComposedFeedbackDynamics.controlSpectrum t) ![0, 2] =
+    D0.Research.NativeComposedFeedbackDynamics.controlHeatSource t
+'D0.Research.NativeComposedFeedbackDynamics.control_actual_heat_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_spectrum_derivative (t : ℝ) (i : Fin 2) :
+  HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.controlSpectrum s i) (![0, 2] i) t
+'D0.Research.NativeComposedFeedbackDynamics.control_spectrum_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_genuine_joint_source (t : ℝ) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeComposedFeedbackDynamics.bootstrapAction 1 (1 / 2)
+        (D0.Research.NativeComposedFeedbackDynamics.controlSpectrum s)
+        D0.Research.NativeComposedFeedbackDynamics.controlProjection
+        (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis s))
+    (D0.Research.NativeComposedFeedbackDynamics.controlJointSource t) t
+'D0.Research.NativeComposedFeedbackDynamics.control_genuine_joint_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_genuine_refined_source (t : ℝ) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeComposedFeedbackDynamics.bootstrapAction 1 (1 / 2)
+        (D0.Research.NativeComposedFeedbackDynamics.replicatedSpectrum
+          (D0.Research.NativeComposedFeedbackDynamics.controlSpectrum s))
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator
+          D0.Research.NativeComposedFeedbackDynamics.controlProjection)
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator
+          (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis s)))
+    (D0.Research.NativeComposedFeedbackDynamics.controlHeatSource t +
+      2 * D0.Research.NativeComposedFeedbackDynamics.controlFeedbackSource t)
+    t
+'D0.Research.NativeComposedFeedbackDynamics.control_genuine_refined_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_joint_source_continuous :
+  Continuous D0.Research.NativeComposedFeedbackDynamics.controlJointSource
+'D0.Research.NativeComposedFeedbackDynamics.control_joint_source_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_feedback_source_positive (t : ℝ) (ht : 0 < t) (hb : t < 1 / 2) :
+  0 < D0.Research.NativeComposedFeedbackDynamics.controlFeedbackSource t
+'D0.Research.NativeComposedFeedbackDynamics.control_feedback_source_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.control_slice_stationary_refinement_failure :
+  ∃ t,
+    0 < t ∧
+      t < 1 / 2 ∧
+        HasDerivAt
+            (fun s =>
+              D0.Research.NativeComposedFeedbackDynamics.bootstrapAction 1 (1 / 2)
+                (D0.Research.NativeComposedFeedbackDynamics.controlSpectrum s)
+                D0.Research.NativeComposedFeedbackDynamics.controlProjection
+                (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis s))
+            0 t ∧
+          HasDerivAt
+              (fun s =>
+                D0.Research.NativeComposedFeedbackDynamics.bootstrapAction 1 (1 / 2)
+                  (D0.Research.NativeComposedFeedbackDynamics.replicatedSpectrum
+                    (D0.Research.NativeComposedFeedbackDynamics.controlSpectrum s))
+                  (D0.Research.NativeComposedFeedbackDynamics.liftOperator
+                    D0.Research.NativeComposedFeedbackDynamics.controlProjection)
+                  (D0.Research.NativeComposedFeedbackDynamics.liftOperator
+                    (D0.Research.NativeComposedFeedbackDynamics.cayleyAxis s)))
+              (D0.Research.NativeComposedFeedbackDynamics.controlFeedbackSource t) t ∧
+            0 < D0.Research.NativeComposedFeedbackDynamics.controlFeedbackSource t
+'D0.Research.NativeComposedFeedbackDynamics.control_slice_stationary_refinement_failure' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]

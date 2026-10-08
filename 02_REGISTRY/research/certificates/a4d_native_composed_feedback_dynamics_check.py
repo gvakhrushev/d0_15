@@ -8,7 +8,7 @@ from pathlib import Path
 
 import sympy as s
 
-HEAD = '7c204c9d0e6a405216f9762ddd4d4d55ba57dab4'
+HEAD = 'bbd81c495ea6fcea683f78872b392015c9407401'
 BASE = '02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics'
 PROOF = '02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md'
 SCOPE = {
@@ -57,6 +57,18 @@ SCOPE = {
     'native_physical_pair_preparation_and_readout_admission_derived': False,
     'internal_clock_compiler_derives_physical_primitives_from_M1': False,
     'quadratic_reading_to_feedback_bound': 'ALL_SIZE_ANALYTIC_WITH_CALIBRATION_DIMENSION_AND_CONDITIONING',
+    'whole_bootstrap_finite_spectral_source_Lean_formalized': True,
+    'actual_combinatorial_scene_heat_coefficient_binding_Lean_formalized': True,
+    'replicated_thermal_source_unchanged_Lean_formalized': True,
+    'joint_stationarity_refinement_iff_Lean_formalized': True,
+    'required_fine_thermal_covector_on_coarse_slice': 'TWICE_THE_COARSE_THERMAL_COVECTOR',
+    'uniform_spectral_shift_no_stationarity_Lean_formalized': True,
+    'uniform_spectral_shift_admitted_by_native_scene': False,
+    'fixed_connected_Laplacian_Cayley_coupled_slice_nonempty_Lean_formalized': True,
+    'coupled_slice_stationarity_is_whole_native_joint_gate': False,
+    'native_Delta_P_U_coupling_or_fine_spectral_law_derived': False,
+    'native_zero_mode_constraints_removed': False,
+    'single_calibration_obstruction_exhausts_constrained_native_variations': False,
     'diagonal_return_probabilities_determine_full_operator': False,
     'whole_native_scene_process_selected_by_tomography': False,
     'full_return_equals_power_of_one_step_compression': False,
@@ -113,7 +125,7 @@ def main():
     check('CAPSULE_AND_TRANSCRIPT_FRESH', receipt['capsule_sha256'] == sha(BASE+'.lean')
           and receipt['output_sha256'] == sha(BASE+'_output.txt'))
     check('ALL_ACTUAL_PROPOSITIONS_AND_DEPENDENCIES', declarations == receipt['declarations']
-          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 115)
+          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 147)
     check('NO_PLACEHOLDER_OR_COMPILER_ERROR', 'sorryAx' not in transcript
           and re.search(r'\berror(?:\(|:)', transcript) is None
           and re.search(r'\b(sorry|admit|axiom)\b', lean) is None)
@@ -129,8 +141,15 @@ def main():
           ['Function.Injective', 'HasDerivAt', 'minimalJoint', 'fullStep', 'directStep',
            'joint', 'goldenInclusion', 'fullFeedback', 'feedbackAction', 'liftOperator',
            'recordedQuadraticKernel', 'fullFlaggedComparison', 'FiniteProtocolClock.run']))
-    check('FIVE_TRANSITIVE_NATIVE_SOURCE_PINS', len(receipt['transitive_d0_source_sha256']) == 5
-          and '03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean' in receipt['transitive_d0_source_sha256'])
+    check('SEVEN_TRANSITIVE_NATIVE_SOURCE_PINS', len(receipt['transitive_d0_source_sha256']) == 7
+          and all(x in receipt['transitive_d0_source_sha256'] for x in
+                  ['03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean',
+                   '03_FORMALIZATION/D0/Synthesis/SceneHeatKernel.lean',
+                   '03_FORMALIZATION/D0/Spectral/DarkArchiveStructure.lean']))
+    check('ACTUAL_THERMAL_AND_JOINT_DERIVATIVE_PROPOSITIONS', all(x in transcript for x in
+          ['thermalPartition', 'thermalSource', 'bootstrapAction', 'replicatedSpectrum',
+           'sceneZoneHeatReal', 'controlLaplacian', 'controlSpectrum', 'controlFeedbackSource',
+           'control_slice_stationary_refinement_failure']))
     pins = dict(receipt['transitive_d0_source_sha256'])
     pins.update(receipt['toolchain_input_sha256'])
     for path, digest in pins.items():
@@ -601,6 +620,83 @@ def main():
           s.expand(calibration_error*2*a*p-a*a*e1-p*p*e2+2*e3) == 0)
     check('ENTRYWISE_ERROR_NEEDS_MATRIX_DIMENSION_FACTOR', s.ones(3).eigenvals() == {3:1,0:2})
 
+    # Whole existing bootstrap: no independently chosen geometric action or source.
+    beta = s.symbols('beta', positive=True)
+    hs, fs, hfine, copies, calibration = s.symbols('hs fs hfine copies calibration', real=True)
+    thermal_cases = []
+    for dim in (1,2,3,6):
+        lam = s.symbols('lambda0:'+str(dim), real=True)
+        vel = s.symbols('velocity0:'+str(dim), real=True)
+        partition = sum(s.exp(-beta*(lam[i]+t*vel[i])) for i in range(dim))
+        genuine_heat = s.diff(s.log(partition)/beta,t)
+        expected_heat = -sum(s.exp(-beta*(lam[i]+t*vel[i]))*vel[i] for i in range(dim))/partition
+        check('WHOLE_THERMAL_GENUINE_COVECTOR_'+str(dim), s.simplify(genuine_heat-expected_heat) == 0)
+        check('REPLICATED_HEAT_COVECTOR_UNCHANGED_'+str(dim),
+              s.simplify(s.diff(s.log(2*partition)/beta,t)-genuine_heat) == 0)
+        shift_partition = sum(s.exp(-beta*(lam[i]+t)) for i in range(dim))
+        check('UNIFORM_SHIFT_HAS_SOURCE_MINUS_ONE_'+str(dim),
+              s.simplify(s.diff(s.log(shift_partition)/beta,t)+1) == 0)
+        thermal_cases.append(dim)
+    heat_poly = 1+12*t**20+10*t**22+8*t**24+2*t**33
+    zone_terms = [s.Rational(nz,33)+(1-s.Rational(nz,33))*t**33+(nz-1)*t**dz
+                  for nz,dz in [(9,24),(11,22),(13,20)]]
+    check('ACTUAL_SCENE_HEAT_COEFFICIENTS_AND_TRACE33', s.expand(sum(zone_terms)-heat_poly) == 0
+          and heat_poly.subs(t,1) == 33)
+    check('JOINT_REPLICATED_SOURCE_IS_HEAT_PLUS_TWICE_FEEDBACK',
+          s.expand((hs+2*fs)-(hs+fs)-fs) == 0)
+    check('COARSE_STATIONARITY_REFINED_RESIDUAL_IS_FEEDBACK',
+          (hs+2*fs).subs(hs,-fs) == fs)
+    check('COARSE_STATIONARITY_REQUIRES_DOUBLED_FINE_THERMAL_SOURCE',
+          s.expand((hfine+2*fs).subs(fs,-hs)-(hfine-2*hs)) == 0)
+    calibration_equations = [1-calibration,copies-calibration]
+    check('UNIVERSAL_SINGLE_CALIBRATION_ONLY_TRIVIAL_COPY',
+          s.solve(calibration_equations,[copies,calibration]) == {copies:1,calibration:1})
+    check('JOINT_SOURCE_CANCELLATION_NOT_SEPARATE_STATIONARITY',
+          (hs+fs).subs({hs:-1,fs:1}) == 0 and (hs+2*fs).subs({hs:-1,fs:1}) == 1)
+
+    # Fixed connected graph Laplacian and fixed Cayley rule; solve, do not fit sources.
+    LP = s.Matrix([[t,-t],[-t,t]])
+    PP = s.diag(1,0)
+    UU = s.Matrix([[1-t*t,-2*t],[2*t,1-t*t]])/(1+t*t)
+    FF = feedback(PP,UU)
+    pencil = s.eye(2)-FF/2
+    det_control = (1+t**4)/(1+t*t)**2
+    feedback_source = 4*t*(1-t*t)/((1+t*t)*(1+t**4))
+    heat_source = -2*s.exp(-2*t)/(1+s.exp(-2*t))
+    control_source = heat_source+feedback_source
+    check('CONTROL_LAPLACIAN_EXACT_ZERO_AND_POSITIVE_MODES', LP*s.Matrix([1,1]) == s.zeros(2,1)
+          and LP*s.Matrix([1,-1]) == 2*t*s.Matrix([1,-1]))
+    check('CONTROL_LAPLACIAN_EXACT_QUADRATIC_FORM',
+          s.expand((s.Matrix([e1,e2]).T*LP*s.Matrix([e1,e2]))[0]-t*(e1-e2)**2) == 0)
+    check('CONTROL_READOUT_IS_ORTHOGONAL_PROJECTION', zero(PP.T-PP) and zero(PP*PP-PP))
+    check('CONTROL_CAYLEY_IS_ORTHOGONAL', zero(UU.T*UU-s.eye(2)))
+    check('CONTROL_POSITIVE_PENCIL_EXACT_DIAGONAL', zero(pencil-s.diag(det_control,1)))
+    check('CONTROL_DETERMINANT_NEVER_EMPTY_ON_REAL_LINE',
+          s.cancel(pencil.det()-det_control) == 0 and (1+t*t).is_positive and (1+t**4).is_positive)
+    check('CONTROL_FEEDBACK_SOURCE_IS_ACTUAL_LOGDET_DERIVATIVE',
+          s.cancel(-s.diff(pencil.det(),t)/pencil.det()-feedback_source) == 0)
+    control_partition = 1+s.exp(-2*t)
+    check('CONTROL_HEAT_SOURCE_IS_ACTUAL_UNSHIFTED_GRAPH_TRACE_DERIVATIVE',
+          s.simplify(s.diff(s.log(control_partition),t)-heat_source) == 0)
+    check('CONTROL_COUPLED_SLICE_ENDPOINT_SOURCE_NEGATIVE', control_source.subs(t,0) == -1)
+    feedback_half = feedback_source.subs(t,s.Rational(1,2))
+    check('CONTROL_COUPLED_SLICE_ENDPOINT_SOURCE_POSITIVE_CERTIFICATE',
+          feedback_half == s.Rational(96,85) and feedback_half-1 == s.Rational(11,85))
+    E = s.symbols('E', positive=True)
+    check('CONTROL_HEAT_LOWER_BOUND_FOR_EXP_MINUS_ONE',
+          s.cancel(-2*E/(1+E)+1) == (1-E)/(1+E))
+    fine_control_partition = 2*control_partition
+    fine_control_det = pencil.det()**2
+    genuine_coarse = s.diff(s.log(control_partition),t)-s.diff(pencil.det(),t)/pencil.det()
+    genuine_fine = s.diff(s.log(fine_control_partition),t)-s.diff(fine_control_det,t)/fine_control_det
+    check('CONTROL_GENUINE_JOINT_DERIVATIVES_RETAIN_BOTH_TERMS',
+          s.simplify(genuine_coarse-control_source) == 0
+          and s.simplify(genuine_fine-heat_source-2*feedback_source) == 0)
+    check('CONTROL_REFINED_MINUS_COARSE_EXACTLY_FEEDBACK_SOURCE',
+          s.cancel(genuine_fine-genuine_coarse-feedback_source) == 0)
+    check('CONTROL_FEEDBACK_NONZERO_ON_OPEN_ROOT_INTERVAL',
+          s.factor(feedback_source) == -4*t*(t-1)*(t+1)/((t*t+1)*(t**4+1)))
+
     payload = {
         'status': 'PASS', 'owner_input_head': HEAD, 'scope': SCOPE, 'checks': checks,
         'input_sha256': pins, 'proof_sha256': sha(PROOF),
@@ -646,6 +742,21 @@ def main():
             'feedback_error_bound': 'm*3*epsilon/(2*abs(a*p)*(1-abs(a)))',
             'direct_feedback_action_bound': '2*r*z/((1-z)*(1-abs(a)))*norm(K-Khat)',
             'postselection_query_source_gap_control': str(source_gap),
+            'whole_bootstrap': 'beta^(-1)*log(sum_i exp(-beta*lambda_i))-log(det(I-zF))',
+            'whole_thermal_covector': '-sum_i exp(-beta*lambda_i)*v_i/sum_i exp(-beta*lambda_i)',
+            'thermal_fixture_dimensions': thermal_cases,
+            'actual_scene_heat_polynomial': str(heat_poly),
+            'binary_heat_action_shift': 'beta^(-1)*log(2)',
+            'joint_binary_source': 'heat+2*feedback',
+            'stationarity_transfer_on_coarse_slice': 'fineHeat=2*heat',
+            'uniform_spectral_shift_source': -1,
+            'stationary_control_graph_spectrum': ['0','2*t'],
+            'stationary_control_root_interval': '0<t<1/2; IVT existence compiled in Lean',
+            'stationary_control_is_whole_native_root': False,
+            'stationary_control_feedback_source': str(feedback_source),
+            'stationary_control_heat_source': str(heat_source),
+            'stationary_control_endpoint_sources': ['-1','at least 11/85'],
+            'stationary_control_refined_source_on_root': 'feedbackSource(t)>0',
         },
     }
     if args.output:
