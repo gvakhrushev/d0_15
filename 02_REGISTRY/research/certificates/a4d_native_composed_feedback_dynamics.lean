@@ -1,7 +1,10 @@
 import D0.Representation.GoldenCoherentMemory
 import D0.Representation.FiniteProtocolClock
 import D0.Synthesis.SceneHeatKernel
+import D0.Representation.SourcePortPreparation
 import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Mathlib.Analysis.Normed.Algebra.MatrixExponential
+import Mathlib.Analysis.SpecialFunctions.Exponential
 import Mathlib.LinearAlgebra.Matrix.Kronecker
 import Mathlib.Data.Matrix.Block
 import Mathlib.LinearAlgebra.Matrix.SchurComplement
@@ -1597,6 +1600,474 @@ theorem control_slice_stationary_refinement_failure :
 
 end JointBootstrap
 
+section CoupledSourceAlgebra
+open scoped Kronecker
+variable {n : Type*} [Fintype n] [DecidableEq n]
+variable {k : Type*} [Field k]
+
+def sourceConj (T : (Matrix n n k)ˣ) (A : Matrix n n k) :=
+  (T : Matrix n n k)*A*(↑T⁻¹ : Matrix n n k)
+def matrixBracket (A B : Matrix n n k) := A*B-B*A
+def sourceActive (D A : Matrix n n k) :=
+  (-1/2840 : k) • (matrixBracket D A * matrixBracket D A)
+def sourceDegree (D : Matrix n n k) :=
+  (1/8 : k) • ((D-(22 : k) • 1)*(D-(20 : k) • 1))
+def sourceCompression (D P : Matrix n n k) := P*sourceDegree D*P
+def sourcePort (D P : Matrix n n k) :=
+  (sourceCompression D P).trace⁻¹ • sourceCompression D P
+def sourceInput (D P : Matrix n n k) := P-sourcePort D P
+def sourceCoupled (R : Matrix n n k) (L : Matrix (Fin 4) (Fin 4) k) :=
+  (1-R) ⊗ₖ 1+R ⊗ₖ L
+
+theorem source_conj_mul (T : (Matrix n n k)ˣ) (A B : Matrix n n k) :
+    sourceConj T (A*B)=sourceConj T A*sourceConj T B := by
+  simp [sourceConj,Matrix.mul_assoc]
+
+theorem source_conj_one (T : (Matrix n n k)ˣ) : sourceConj T 1=1 := by
+  simp [sourceConj]
+
+theorem source_conj_sub (T : (Matrix n n k)ˣ) (A B : Matrix n n k) :
+    sourceConj T (A-B)=sourceConj T A-sourceConj T B := by
+  simp [sourceConj,Matrix.mul_sub,Matrix.sub_mul]
+
+theorem source_conj_smul (T : (Matrix n n k)ˣ) (c : k) (A : Matrix n n k) :
+    sourceConj T (c • A)=c • sourceConj T A := by
+  simp [sourceConj,Matrix.mul_smul,Matrix.smul_mul]
+
+theorem source_conj_trace (T : (Matrix n n k)ˣ) (A : Matrix n n k) :
+    (sourceConj T A).trace=A.trace := by
+  rw [sourceConj,Matrix.trace_mul_cycle]
+  simp
+
+theorem source_conj_det (T : (Matrix n n k)ˣ) (A : Matrix n n k) :
+    (sourceConj T A).det=A.det := by
+  rw [sourceConj,Matrix.det_mul,Matrix.det_mul]
+  calc
+    _ = A.det*((T : Matrix n n k)*(↑T⁻¹ : Matrix n n k)).det := by
+      rw [Matrix.det_mul]; ring
+    _ = A.det := by simp
+
+theorem source_commutator_covariant (T : (Matrix n n k)ˣ) (D A : Matrix n n k) :
+    matrixBracket (sourceConj T D) (sourceConj T A)=sourceConj T (matrixBracket D A) := by
+  simp [matrixBracket,source_conj_sub,source_conj_mul]
+
+theorem source_active_covariant (T : (Matrix n n k)ˣ) (D A : Matrix n n k) :
+    sourceActive (sourceConj T D) (sourceConj T A)=sourceConj T (sourceActive D A) := by
+  simp [sourceActive,source_commutator_covariant,source_conj_smul,source_conj_mul]
+
+theorem source_degree_covariant (T : (Matrix n n k)ˣ) (D : Matrix n n k) :
+    sourceDegree (sourceConj T D)=sourceConj T (sourceDegree D) := by
+  simp [sourceDegree,source_conj_smul,source_conj_mul,source_conj_sub,source_conj_one]
+
+theorem source_compression_covariant (T : (Matrix n n k)ˣ) (D P : Matrix n n k) :
+    sourceCompression (sourceConj T D) (sourceConj T P)=sourceConj T (sourceCompression D P) := by
+  simp [sourceCompression,source_degree_covariant,source_conj_mul]
+
+theorem source_port_covariant (T : (Matrix n n k)ˣ) (D P : Matrix n n k) :
+    sourcePort (sourceConj T D) (sourceConj T P)=sourceConj T (sourcePort D P) := by
+  simp [sourcePort,source_compression_covariant,source_conj_trace,source_conj_smul]
+
+theorem source_input_covariant (T : (Matrix n n k)ˣ) (D P : Matrix n n k) :
+    sourceInput (sourceConj T D) (sourceConj T P)=sourceConj T (sourceInput D P) := by
+  simp [sourceInput,source_port_covariant,source_conj_sub]
+
+def sourceJointUnits (T : (Matrix n n k)ˣ) : (Matrix (n × Fin 4) (n × Fin 4) k)ˣ where
+  val := (T : Matrix n n k) ⊗ₖ 1
+  inv := (↑T⁻¹ : Matrix n n k) ⊗ₖ 1
+  val_inv := by rw [← Matrix.mul_kronecker_mul]; simp
+  inv_val := by rw [← Matrix.mul_kronecker_mul]; simp
+
+theorem source_coupled_covariant (T : (Matrix n n k)ˣ) (R : Matrix n n k)
+    (L : Matrix (Fin 4) (Fin 4) k) :
+    sourceCoupled (sourceConj T R) L=sourceConj (sourceJointUnits T) (sourceCoupled R L) := by
+  unfold sourceCoupled sourceConj sourceJointUnits
+  simp only [Units.val_mk,Units.inv_mk,Matrix.mul_add,Matrix.add_mul]
+  rw [← Matrix.mul_kronecker_mul,← Matrix.mul_kronecker_mul,
+    ← Matrix.mul_kronecker_mul,← Matrix.mul_kronecker_mul]
+  simp [Matrix.mul_sub,Matrix.sub_mul,Matrix.mul_assoc]
+
+def operatorWord : List (Matrix n n k) → Matrix n n k
+  | [] => 1
+  | U::word => operatorWord word*U
+
+theorem whole_source_word_covariant (T : (Matrix n n k)ˣ) (word : List (Matrix n n k)) :
+    operatorWord (word.map (sourceConj T))=sourceConj T (operatorWord word) := by
+  induction word with
+  | nil => simp [operatorWord,source_conj_one]
+  | cons U word ih => simp [operatorWord,ih,source_conj_mul]
+
+def weightedAdjoint (G GI U : Matrix n n k) := GI*U.transpose*G
+def movedMetric (T : (Matrix n n k)ˣ) (G : Matrix n n k) :=
+  (↑T⁻¹ : Matrix n n k).transpose*G*(↑T⁻¹ : Matrix n n k)
+def movedInverseMetric (T : (Matrix n n k)ˣ) (GI : Matrix n n k) :=
+  (T : Matrix n n k)*GI*(T : Matrix n n k).transpose
+def weightedFeedback (G GI P U : Matrix n n k) := P*weightedAdjoint G GI U*(1-P)*U*P
+
+theorem weighted_adjoint_covariant (T : (Matrix n n k)ˣ) (G GI U : Matrix n n k) :
+    weightedAdjoint (movedMetric T G) (movedInverseMetric T GI) (sourceConj T U)=
+      sourceConj T (weightedAdjoint G GI U) := by
+  unfold weightedAdjoint movedMetric movedInverseMetric sourceConj
+  simp only [Matrix.transpose_mul]
+  have h : (T : Matrix n n k).transpose*(↑T⁻¹ : Matrix n n k).transpose=1 := by
+    rw [← Matrix.transpose_mul]; simp
+  calc
+    _ = (T : Matrix n n k)*GI*((T : Matrix n n k).transpose*(↑T⁻¹ : Matrix n n k).transpose)*
+      U.transpose*((T : Matrix n n k).transpose*(↑T⁻¹ : Matrix n n k).transpose)*G*(↑T⁻¹ : Matrix n n k) := by
+        noncomm_ring
+    _ = _ := by rw [h]; simp [Matrix.mul_assoc]
+
+theorem weighted_feedback_covariant (T : (Matrix n n k)ˣ) (G GI P U : Matrix n n k) :
+    weightedFeedback (movedMetric T G) (movedInverseMetric T GI)
+      (sourceConj T P) (sourceConj T U)=sourceConj T (weightedFeedback G GI P U) := by
+  have hc : 1-sourceConj T P=sourceConj T (1-P) := by
+    rw [source_conj_sub,source_conj_one]
+  unfold weightedFeedback
+  rw [weighted_adjoint_covariant,hc,← source_conj_mul,← source_conj_mul,
+    ← source_conj_mul,← source_conj_mul]
+
+theorem weighted_feedback_euclidean (P U : Matrix n n ℝ) :
+    weightedFeedback 1 1 P U=fullFeedback P U := by
+  simp [weightedFeedback,weightedAdjoint,fullFeedback]
+
+def compressionJet (D P dD dP : Matrix n n k) :=
+  dP*sourceDegree D*P+P*((1/8 : k) • (dD*(D-(20 : k) • 1)+(D-(22 : k) • 1)*dD))*P+
+    P*sourceDegree D*dP
+def portJet (M dM : Matrix n n k) := M.trace⁻¹ • dM-((M.trace^2)⁻¹*dM.trace) • M
+
+theorem source_commutator_first_jet (D A dD dA : Matrix n n k) :
+    (dD*A+D*dA)-(dA*D+A*dD)=matrixBracket dD A+matrixBracket D dA := by
+  unfold matrixBracket
+  noncomm_ring
+
+theorem source_compression_frame_jet (D P O : Matrix n n k) :
+    compressionJet D P (matrixBracket O D) (matrixBracket O P)=
+      matrixBracket O (sourceCompression D P) := by
+  unfold compressionJet sourceCompression sourceDegree matrixBracket
+  simp only [Matrix.smul_mul,Matrix.mul_smul]
+  rw [← smul_add,← smul_add,← smul_sub]
+  congr 1
+  simp only [← Algebra.algebraMap_eq_smul_one,map_ofNat]
+  noncomm_ring
+
+theorem trace_frame_jet_zero (O M : Matrix n n k) : (matrixBracket O M).trace=0 := by
+  rw [matrixBracket,Matrix.trace_sub,Matrix.trace_mul_comm O M]
+  simp
+
+theorem source_port_frame_jet (M O : Matrix n n k) :
+    portJet M (matrixBracket O M)=matrixBracket O (M.trace⁻¹ • M) := by
+  rw [portJet,trace_frame_jet_zero]
+  simp [matrixBracket,Matrix.mul_smul,Matrix.smul_mul,smul_sub]
+
+end CoupledSourceAlgebra
+
+section OperatorBootstrapWard
+variable {n : Type*} [Fintype n] [DecidableEq n]
+
+def matrixHeat (beta : ℝ) (Delta : Matrix n n ℝ) :=
+  beta⁻¹*Real.log (NormedSpace.exp ((-beta) • Delta)).trace
+def matrixBootstrap (beta z : ℝ) (Delta G GI P U : Matrix n n ℝ) :=
+  matrixHeat beta Delta+feedbackAction z (weightedFeedback G GI P U)
+
+theorem matrix_heat_similarity (beta : ℝ) (T : (Matrix n n ℝ)ˣ) (Delta : Matrix n n ℝ) :
+    matrixHeat beta (sourceConj T Delta)=matrixHeat beta Delta := by
+  unfold matrixHeat
+  rw [← source_conj_smul T (-beta) Delta]
+  have he : NormedSpace.exp (sourceConj T ((-beta) • Delta))=
+      sourceConj T (NormedSpace.exp ((-beta) • Delta)) := by
+    exact Matrix.exp_units_conj T _
+  rw [he,source_conj_trace]
+
+theorem matrix_heat_diagonal (beta : ℝ) (lambda : n → ℝ) :
+    matrixHeat beta (Matrix.diagonal lambda)=heatContribution beta lambda := by
+  unfold matrixHeat heatContribution thermalPartition
+  rw [← Matrix.diagonal_smul,Matrix.exp_diagonal]
+  simp [Matrix.trace,← Real.exp_eq_exp_ℝ]
+
+theorem actual_matrix_heat_derivative (beta t : ℝ) (lambda : ℝ → n → ℝ)
+    (frame : ℝ → (Matrix n n ℝ)ˣ) (v : n → ℝ) [Nonempty n]
+    (hb : beta≠0) (h : ∀ i, HasDerivAt (fun s => lambda s i) (v i) t) :
+    HasDerivAt (fun s => matrixHeat beta (sourceConj (frame s) (Matrix.diagonal (lambda s))))
+      (thermalSource beta (lambda t) v) t := by
+  simpa only [matrix_heat_similarity,matrix_heat_diagonal] using
+    genuine_thermal_source beta t lambda v hb h
+
+theorem feedback_action_similarity (z : ℝ) (T : (Matrix n n ℝ)ˣ) (F : Matrix n n ℝ) :
+    feedbackAction z (sourceConj T F)=feedbackAction z F := by
+  unfold feedbackAction
+  have hc : 1-z • sourceConj T F=sourceConj T (1-z • F) := by
+    rw [source_conj_sub,source_conj_one,source_conj_smul]
+  rw [hc,source_conj_det]
+
+theorem whole_operator_bootstrap_covariant (beta z : ℝ) (T : (Matrix n n ℝ)ˣ)
+    (Delta G GI P U : Matrix n n ℝ) :
+    matrixBootstrap beta z (sourceConj T Delta) (movedMetric T G) (movedInverseMetric T GI)
+      (sourceConj T P) (sourceConj T U)=matrixBootstrap beta z Delta G GI P U := by
+  simp [matrixBootstrap,matrix_heat_similarity,weighted_feedback_covariant,feedback_action_similarity]
+
+theorem genuine_whole_basis_ward (beta z t : ℝ) (T : ℝ → (Matrix n n ℝ)ˣ)
+    (Delta G GI P U : Matrix n n ℝ) :
+    HasDerivAt (fun s => matrixBootstrap beta z (sourceConj (T s) Delta)
+      (movedMetric (T s) G) (movedInverseMetric (T s) GI)
+      (sourceConj (T s) P) (sourceConj (T s) U)) 0 t := by
+  simpa only [whole_operator_bootstrap_covariant] using
+    hasDerivAt_const t (matrixBootstrap beta z Delta G GI P U)
+
+end OperatorBootstrapWard
+
+section NativeSourceBinding
+open D0.Representation.SourcePortPreparation
+open D0.Integration.V15.RawZone (DW AW Pact)
+
+theorem actual_source_active_binding :
+    sourceActive (DW.map (fun z : ℤ => (z : ℚ))) (AW.map (fun z : ℤ => (z : ℚ)))=Pact := by
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    norm_num [sourceActive,matrixBracket,DW,AW,Pact,Matrix.mul_apply,Fin.sum_univ_succ]
+
+theorem actual_source_degree_binding : sourceDegree D=degreePort := rfl
+
+theorem actual_source_compression_binding : sourceCompression D Pact=compressed := rfl
+
+theorem actual_source_compression_positive : (sourceCompression D Pact).trace=567/710 := by
+  have hD : D=(!![24,0,0;0,22,0;0,0,20] : Matrix (Fin 3) (Fin 3) ℚ) := by
+    ext i j
+    fin_cases i <;> fin_cases j <;> norm_num [D,DW]
+  have hI : (1 : Matrix (Fin 3) (Fin 3) ℚ)=!![1,0,0;0,1,0;0,0,1] := by
+    ext i j
+    fin_cases i <;> fin_cases j <;> rfl
+  have hE : sourceDegree D=(!![1,0,0;0,0,0;0,0,0] : Matrix (Fin 3) (Fin 3) ℚ) := by
+    rw [sourceDegree,hD,hI]
+    ext i j
+    fin_cases i <;> fin_cases j <;>
+      norm_num [Matrix.mul_apply,Fin.sum_univ_succ]
+  rw [sourceCompression,hE]
+  norm_num [Pact,Matrix.trace,Matrix.mul_apply,Fin.sum_univ_succ]
+
+theorem actual_source_signal_binding : sourcePort D Pact=signalPort := by
+  rw [sourcePort,actual_source_compression_positive]
+  norm_num [signalPort,actual_source_compression_binding]
+
+theorem actual_source_input_binding : sourceInput D Pact=inputPort := by
+  rw [sourceInput,actual_source_signal_binding]
+  rfl
+
+theorem actual_source_interaction_binding :
+    sourceCoupled signalPort (D0.Representation.OrderMemoryReadout.spin 2)=coupled := rfl
+
+end NativeSourceBinding
+
+section NativeOperatorDifferentiation
+open scoped Matrix.Norms.Operator
+variable {n : Type*} [Fintype n] [DecidableEq n] [Nonempty n]
+
+def matrixPowerJet (A V : Matrix n n ℝ) : ℕ → Matrix n n ℝ
+  | 0 => 0
+  | m+1 => matrixPowerJet A V m*A+A^m*V
+
+theorem genuine_matrix_power_derivative (A : ℝ → Matrix n n ℝ) (V : Matrix n n ℝ) (t : ℝ)
+    (h : HasDerivAt A V t) (m : ℕ) :
+    HasDerivAt (fun s => A s^m) (matrixPowerJet (A t) V m) t := by
+  induction m with
+  | zero => simpa [matrixPowerJet] using hasDerivAt_const t (1 : Matrix n n ℝ)
+  | succ m ih => simpa only [pow_succ,matrixPowerJet] using ih.mul h
+
+theorem matrix_power_jet_trace (A V : Matrix n n ℝ) (m q : ℕ) :
+    (matrixPowerJet A V m*A^q).trace=(m : ℝ)*(A^(m+q-1)*V).trace := by
+  induction m generalizing q with
+  | zero => simp [matrixPowerJet]
+  | succ m ih =>
+    have hc : (A^m*V*A^q).trace=(A^(m+q)*V).trace := by
+      rw [Matrix.trace_mul_cycle,← pow_add,Nat.add_comm]
+    simp only [matrixPowerJet,Matrix.add_mul,Matrix.trace_add,Matrix.mul_assoc]
+    rw [← pow_succ',ih,← Matrix.mul_assoc (A^m) V (A^q),hc]
+    have he : m+(q+1)-1=m+q := by omega
+    have he2 : m+1+q-1=m+q := by omega
+    rw [he,he2]
+    push_cast
+    ring
+
+theorem genuine_trace_derivative (A : ℝ → Matrix n n ℝ) (V : Matrix n n ℝ) (t : ℝ)
+    (h : HasDerivAt A V t) : HasDerivAt (fun s => (A s).trace) V.trace t := by
+  let tr : Matrix n n ℝ →L[ℝ] ℝ := (Matrix.traceLinearMap n ℝ ℝ).toContinuousLinearMap
+  exact tr.hasFDerivAt.comp_hasDerivAt t h
+
+theorem genuine_source_compression_derivative (D P : ℝ → Matrix n n ℝ)
+    (dD dP : Matrix n n ℝ) (t : ℝ)
+    (hD : HasDerivAt D dD t) (hP : HasDerivAt P dP t) :
+    HasDerivAt (fun s => sourceCompression (D s) (P s))
+      (compressionJet (D t) (P t) dD dP) t := by
+  have hE := ((hD.sub_const ((22 : ℝ) • (1 : Matrix n n ℝ))).mul
+    (hD.sub_const ((20 : ℝ) • (1 : Matrix n n ℝ)))).const_smul (1/8 : ℝ)
+  have h := (hP.mul hE).mul hP
+  convert h using 1 <;> dsimp [sourceCompression,compressionJet,sourceDegree] <;> noncomm_ring
+
+theorem genuine_source_port_derivative (D P : ℝ → Matrix n n ℝ)
+    (dD dP : Matrix n n ℝ) (t : ℝ)
+    (hD : HasDerivAt D dD t) (hP : HasDerivAt P dP t)
+    (hn : (sourceCompression (D t) (P t)).trace≠0) :
+    HasDerivAt (fun s => sourcePort (D s) (P s))
+      (portJet (sourceCompression (D t) (P t)) (compressionJet (D t) (P t) dD dP)) t := by
+  have hM := genuine_source_compression_derivative D P dD dP t hD hP
+  have ht := genuine_trace_derivative _ _ t hM
+  have h := (ht.inv hn).smul hM
+  convert h using 1
+  unfold portJet
+  module
+
+def wordJet : List (Matrix n n ℝ × Matrix n n ℝ) → Matrix n n ℝ
+  | [] => 0
+  | (U,V)::word => wordJet word*U+operatorWord (word.map Prod.fst)*V
+
+theorem genuine_whole_native_word_derivative
+    (stages : List ((ℝ → Matrix n n ℝ) × Matrix n n ℝ)) (t : ℝ)
+    (h : ∀ stage ∈ stages, HasDerivAt stage.1 stage.2 t) :
+    HasDerivAt (fun s => operatorWord (stages.map (fun stage => stage.1 s)))
+      (wordJet (stages.map (fun stage => (stage.1 t,stage.2)))) t := by
+  induction stages with
+  | nil => simpa [operatorWord,wordJet] using hasDerivAt_const t (1 : Matrix n n ℝ)
+  | cons stage stages ih =>
+    have hs := h stage (by simp)
+    have hr := ih (fun x hx => h x (by simp [hx]))
+    simpa [operatorWord,wordJet,List.map_map,Function.comp_def] using hr.mul hs
+
+
+def activeJet (D A dD dA : Matrix n n ℝ) :=
+  let K := matrixBracket D A
+  let dK := matrixBracket dD A+matrixBracket D dA
+  (-1/2840 : ℝ) • (dK*K+K*dK)
+
+theorem genuine_native_commutator_derivative (D A : ℝ → Matrix n n ℝ)
+    (dD dA : Matrix n n ℝ) (t : ℝ) (hD : HasDerivAt D dD t) (hA : HasDerivAt A dA t) :
+    HasDerivAt (fun s => matrixBracket (D s) (A s))
+      (matrixBracket dD (A t)+matrixBracket (D t) dA) t := by
+  convert (hD.mul hA).sub (hA.mul hD) using 1
+  dsimp [matrixBracket]
+  noncomm_ring
+
+theorem genuine_native_active_derivative (D A : ℝ → Matrix n n ℝ)
+    (dD dA : Matrix n n ℝ) (t : ℝ) (hD : HasDerivAt D dD t) (hA : HasDerivAt A dA t) :
+    HasDerivAt (fun s => sourceActive (D s) (A s)) (activeJet (D t) (A t) dD dA) t := by
+  have hK := genuine_native_commutator_derivative D A dD dA t hD hA
+  exact (hK.mul hK).const_smul (-1/2840 : ℝ)
+
+theorem genuine_native_port_from_primitives (D A : ℝ → Matrix n n ℝ)
+    (dD dA : Matrix n n ℝ) (t : ℝ) (hD : HasDerivAt D dD t) (hA : HasDerivAt A dA t)
+    (hn : (sourceCompression (D t) (sourceActive (D t) (A t))).trace≠0) :
+    HasDerivAt (fun s => sourcePort (D s) (sourceActive (D s) (A s)))
+      (portJet (sourceCompression (D t) (sourceActive (D t) (A t)))
+        (compressionJet (D t) (sourceActive (D t) (A t)) dD (activeJet (D t) (A t) dD dA))) t := by
+  exact genuine_source_port_derivative D (fun s => sourceActive (D s) (A s)) dD
+    (activeJet (D t) (A t) dD dA) t hD (genuine_native_active_derivative D A dD dA t hD hA) hn
+
+theorem native_active_frame_jet (D A O : Matrix n n ℝ) :
+    activeJet D A (matrixBracket O D) (matrixBracket O A)=matrixBracket O (sourceActive D A) := by
+  unfold activeJet sourceActive matrixBracket
+  dsimp
+  simp only [Matrix.smul_mul,Matrix.mul_smul]
+  rw [← smul_sub]
+  congr 1
+  noncomm_ring
+
+theorem genuine_transpose_derivative (U : ℝ → Matrix n n ℝ)
+    (dU : Matrix n n ℝ) (t : ℝ) (hU : HasDerivAt U dU t) :
+    HasDerivAt (fun s => (U s).transpose) dU.transpose t := by
+  let tr : Matrix n n ℝ →L[ℝ] Matrix n n ℝ :=
+    (Matrix.transposeLinearEquiv n n ℝ ℝ).toLinearMap.toContinuousLinearMap
+  exact tr.hasFDerivAt.comp_hasDerivAt t hU
+
+def weightedFeedbackJet (G GI P U dG dGI dP dU : Matrix n n ℝ) :=
+  dP*GI*U.transpose*G*(1-P)*U*P+
+  P*dGI*U.transpose*G*(1-P)*U*P+
+  P*GI*dU.transpose*G*(1-P)*U*P+
+  P*GI*U.transpose*dG*(1-P)*U*P-
+  P*GI*U.transpose*G*dP*U*P+
+  P*GI*U.transpose*G*(1-P)*dU*P+
+  P*GI*U.transpose*G*(1-P)*U*dP
+
+theorem genuine_weighted_feedback_derivative (G GI P U : ℝ → Matrix n n ℝ)
+    (dG dGI dP dU : Matrix n n ℝ) (t : ℝ)
+    (hG : HasDerivAt G dG t) (hGI : HasDerivAt GI dGI t)
+    (hP : HasDerivAt P dP t) (hU : HasDerivAt U dU t) :
+    HasDerivAt (fun s => weightedFeedback (G s) (GI s) (P s) (U s))
+      (weightedFeedbackJet (G t) (GI t) (P t) (U t) dG dGI dP dU) t := by
+  have ht := genuine_transpose_derivative U dU t hU
+  have h := ((((((hP.mul hGI).mul ht).mul hG).mul
+    ((hasDerivAt_const t (1 : Matrix n n ℝ)).sub hP)).mul hU).mul hP)
+  convert h using 1
+  · funext s
+    dsimp [weightedFeedback,weightedAdjoint]
+    noncomm_ring
+  · dsimp [weightedFeedbackJet]
+    noncomm_ring
+
+theorem genuine_inverse_metric_jet (G GI : ℝ → Matrix n n ℝ)
+    (dG dGI : Matrix n n ℝ) (t : ℝ) (hG : HasDerivAt G dG t) (hGI : HasDerivAt GI dGI t)
+    (h : ∀ s, G s*GI s=1) (hleft : GI t*G t=1) : dGI= -GI t*dG*GI t := by
+  have hf : G*GI=(fun _ => (1 : Matrix n n ℝ)) := by
+    funext s
+    exact h s
+  have hz : dG*GI t+G t*dGI=0 :=
+    (hG.mul hGI).unique (by rw [hf]; exact hasDerivAt_const t (1 : Matrix n n ℝ))
+  have hz' := congrArg (fun X => GI t*X) hz
+  simp only [Matrix.mul_add,← Matrix.mul_assoc,hleft,one_mul,mul_zero] at hz'
+  have he : dGI= -(GI t*dG*GI t) := eq_neg_iff_add_eq_zero.mpr (by simpa [add_comm] using hz')
+  simpa only [Matrix.neg_mul] using he
+
+theorem whole_weighted_feedback_frame_jet (G GI P U O : Matrix n n ℝ) :
+    weightedFeedbackJet G GI P U (-(O.transpose*G+G*O))
+      (O*GI+GI*O.transpose) (matrixBracket O P) (matrixBracket O U)=
+      matrixBracket O (weightedFeedback G GI P U) := by
+  unfold weightedFeedbackJet weightedFeedback weightedAdjoint matrixBracket
+  simp only [Matrix.transpose_sub,Matrix.transpose_mul,Matrix.transpose_transpose]
+  noncomm_ring
+
+
+theorem genuine_kronecker_right_derivative (R : ℝ → Matrix n n ℝ)
+    (L : Matrix (Fin 4) (Fin 4) ℝ) (dR : Matrix n n ℝ) (t : ℝ) (hR : HasDerivAt R dR t) :
+    HasDerivAt (fun s => Matrix.kronecker (R s) L) (Matrix.kronecker dR L) t := by
+  let lin : Matrix n n ℝ →ₗ[ℝ] Matrix (n × Fin 4) (n × Fin 4) ℝ :=
+    { toFun := fun X => Matrix.kronecker X L
+      map_add' := fun X Y => Matrix.add_kronecker X Y L
+      map_smul' := fun c X => Matrix.smul_kronecker c X L }
+  let cl : Matrix n n ℝ →L[ℝ] Matrix (n × Fin 4) (n × Fin 4) ℝ := lin.toContinuousLinearMap
+  exact cl.hasFDerivAt.comp_hasDerivAt t hR
+
+theorem genuine_native_coupled_derivative (R : ℝ → Matrix n n ℝ)
+    (L : Matrix (Fin 4) (Fin 4) ℝ) (dR : Matrix n n ℝ) (t : ℝ) (hR : HasDerivAt R dR t) :
+    HasDerivAt (fun s => sourceCoupled (R s) L) (Matrix.kronecker dR (L-1)) t := by
+  have hleft := genuine_kronecker_right_derivative (fun s => 1-R s) 1 (-dR) t
+    (by simpa using (hasDerivAt_const t (1 : Matrix n n ℝ)).sub hR)
+  have hright := genuine_kronecker_right_derivative R L dR t hR
+  have he : Matrix.kronecker dR (L-1)=Matrix.kronecker (-dR) 1+Matrix.kronecker dR L := by
+    ext i j
+    simp [Matrix.kroneckerMap,Matrix.kronecker]
+    ring
+  rw [he]
+  exact hleft.add hright
+
+theorem genuine_native_input_from_primitives (D A : ℝ → Matrix n n ℝ)
+    (dD dA : Matrix n n ℝ) (t : ℝ) (hD : HasDerivAt D dD t) (hA : HasDerivAt A dA t)
+    (hn : (sourceCompression (D t) (sourceActive (D t) (A t))).trace≠0) :
+    HasDerivAt (fun s => sourceInput (D s) (sourceActive (D s) (A s)))
+      (activeJet (D t) (A t) dD dA-
+        portJet (sourceCompression (D t) (sourceActive (D t) (A t)))
+          (compressionJet (D t) (sourceActive (D t) (A t)) dD (activeJet (D t) (A t) dD dA))) t := by
+  exact (genuine_native_active_derivative D A dD dA t hD hA).sub
+    (genuine_native_port_from_primitives D A dD dA t hD hA hn)
+
+theorem genuine_native_interaction_from_primitives (D A : ℝ → Matrix n n ℝ)
+    (L : Matrix (Fin 4) (Fin 4) ℝ) (dD dA : Matrix n n ℝ) (t : ℝ)
+    (hD : HasDerivAt D dD t) (hA : HasDerivAt A dA t)
+    (hn : (sourceCompression (D t) (sourceActive (D t) (A t))).trace≠0) :
+    HasDerivAt (fun s => sourceCoupled (sourcePort (D s) (sourceActive (D s) (A s))) L)
+      (Matrix.kronecker
+        (portJet (sourceCompression (D t) (sourceActive (D t) (A t)))
+          (compressionJet (D t) (sourceActive (D t) (A t)) dD (activeJet (D t) (A t) dD dA))) (L-1)) t := by
+  exact genuine_native_coupled_derivative _ L _ t
+    (genuine_native_port_from_primitives D A dD dA t hD hA hn)
+
+end NativeOperatorDifferentiation
+
 end
 end D0.Research.NativeComposedFeedbackDynamics
 
@@ -1895,3 +2366,107 @@ end D0.Research.NativeComposedFeedbackDynamics
 #print axioms D0.Research.NativeComposedFeedbackDynamics.control_feedback_source_positive
 #check D0.Research.NativeComposedFeedbackDynamics.control_slice_stationary_refinement_failure
 #print axioms D0.Research.NativeComposedFeedbackDynamics.control_slice_stationary_refinement_failure
+#check D0.Research.NativeComposedFeedbackDynamics.source_conj_mul
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_conj_mul
+#check D0.Research.NativeComposedFeedbackDynamics.source_conj_one
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_conj_one
+#check D0.Research.NativeComposedFeedbackDynamics.source_conj_sub
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_conj_sub
+#check D0.Research.NativeComposedFeedbackDynamics.source_conj_smul
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_conj_smul
+#check D0.Research.NativeComposedFeedbackDynamics.source_conj_trace
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_conj_trace
+#check D0.Research.NativeComposedFeedbackDynamics.source_conj_det
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_conj_det
+#check D0.Research.NativeComposedFeedbackDynamics.source_commutator_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_commutator_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.source_active_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_active_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.source_degree_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_degree_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.source_compression_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_compression_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.source_port_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_port_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.source_input_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_input_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.source_coupled_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_coupled_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.whole_source_word_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.whole_source_word_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.weighted_adjoint_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.weighted_adjoint_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.weighted_feedback_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.weighted_feedback_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.weighted_feedback_euclidean
+#print axioms D0.Research.NativeComposedFeedbackDynamics.weighted_feedback_euclidean
+#check D0.Research.NativeComposedFeedbackDynamics.source_commutator_first_jet
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_commutator_first_jet
+#check D0.Research.NativeComposedFeedbackDynamics.source_compression_frame_jet
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_compression_frame_jet
+#check D0.Research.NativeComposedFeedbackDynamics.trace_frame_jet_zero
+#print axioms D0.Research.NativeComposedFeedbackDynamics.trace_frame_jet_zero
+#check D0.Research.NativeComposedFeedbackDynamics.source_port_frame_jet
+#print axioms D0.Research.NativeComposedFeedbackDynamics.source_port_frame_jet
+#check D0.Research.NativeComposedFeedbackDynamics.matrix_heat_similarity
+#print axioms D0.Research.NativeComposedFeedbackDynamics.matrix_heat_similarity
+#check D0.Research.NativeComposedFeedbackDynamics.matrix_heat_diagonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.matrix_heat_diagonal
+#check D0.Research.NativeComposedFeedbackDynamics.actual_matrix_heat_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_matrix_heat_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.feedback_action_similarity
+#print axioms D0.Research.NativeComposedFeedbackDynamics.feedback_action_similarity
+#check D0.Research.NativeComposedFeedbackDynamics.whole_operator_bootstrap_covariant
+#print axioms D0.Research.NativeComposedFeedbackDynamics.whole_operator_bootstrap_covariant
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_whole_basis_ward
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_whole_basis_ward
+#check D0.Research.NativeComposedFeedbackDynamics.actual_source_active_binding
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_source_active_binding
+#check D0.Research.NativeComposedFeedbackDynamics.actual_source_degree_binding
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_source_degree_binding
+#check D0.Research.NativeComposedFeedbackDynamics.actual_source_compression_binding
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_source_compression_binding
+#check D0.Research.NativeComposedFeedbackDynamics.actual_source_compression_positive
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_source_compression_positive
+#check D0.Research.NativeComposedFeedbackDynamics.actual_source_signal_binding
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_source_signal_binding
+#check D0.Research.NativeComposedFeedbackDynamics.actual_source_input_binding
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_source_input_binding
+#check D0.Research.NativeComposedFeedbackDynamics.actual_source_interaction_binding
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_source_interaction_binding
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_matrix_power_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_matrix_power_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.matrix_power_jet_trace
+#print axioms D0.Research.NativeComposedFeedbackDynamics.matrix_power_jet_trace
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_trace_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_trace_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_source_compression_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_source_compression_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_source_port_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_source_port_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_whole_native_word_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_whole_native_word_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_native_commutator_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_native_commutator_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_native_active_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_native_active_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_native_port_from_primitives
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_native_port_from_primitives
+#check D0.Research.NativeComposedFeedbackDynamics.native_active_frame_jet
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_active_frame_jet
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_transpose_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_transpose_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_weighted_feedback_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_weighted_feedback_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_inverse_metric_jet
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_inverse_metric_jet
+#check D0.Research.NativeComposedFeedbackDynamics.whole_weighted_feedback_frame_jet
+#print axioms D0.Research.NativeComposedFeedbackDynamics.whole_weighted_feedback_frame_jet
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_kronecker_right_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_kronecker_right_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_native_coupled_derivative
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_native_coupled_derivative
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_native_input_from_primitives
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_native_input_from_primitives
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_native_interaction_from_primitives
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_native_interaction_from_primitives

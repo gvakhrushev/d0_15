@@ -7,6 +7,7 @@ Prepared-readout follow-up input: `58407f912e6f4cedfff3625cdd4e7ba09c6e7951`.
 Two-native-preparation follow-up input: `7479dbcb5970b4450912cc848a53e1622e9524af`.
 Recorded-quadratic follow-up input: `7c204c9d0e6a405216f9762ddd4d4d55ba57dab4`.
 Whole-bootstrap follow-up input: `bbd81c495ea6fcea683f78872b392015c9407401`.
+Operator/source follow-up input: `e74df7d999ae04a667d4de08625b8ec77bcdab5a`.
 Consumer: G0b in `D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md`.
 Status: proved finite operator/action/refinement slice; G0--G4 remain open.
 
@@ -38,6 +39,14 @@ variation transfers precisely when the fine thermal covector also doubles.
 An independent connected-Laplacian control has a genuinely stationary
 coupled slice and a nonstationary replicated image. Native scene constraints
 and their actual spectral transition are not replaced by that control.
+
+The operator/source follow-up in §6.7 differentiates the actual source-port
+chain from shared D/A primitives, retains the trace normalizer and canonical
+pairing, and derives complete-word/feedback jets. Moving eigenvectors are
+included in the actual matrix heat derivative. Whole bootstrap covariance
+proves a genuine basis Ward identity. General finite operator heat/Jacobi
+calculus is proved analytically; physical metric/matter Ward and the complete
+native state/tangent/refinement law remain independent requirements.
 
 This result uses the actual entries of
 `D0.Representation.GoldenOrderInterferometer.gate` and
@@ -836,13 +845,232 @@ thermal tower, a selected temperature rescaling or a replacement trace
 would not prove this arrow. No physical source/Ward, metric contrast,
 Einstein stationarity, soundness or curved recovery is inferred here.
 
+### 6.7. Actual source-port chain, moving eigenvectors and basis Ward
+
+Operator/source follow-up input: `e74df7d999ae04a667d4de08625b8ec77bcdab5a`.
+This follows the single G0b arrow from the native owners. In particular,
+`SourcePortPreparation` already defines an interaction from the frozen
+zone degree and adjacency data. Its port, projector and normalizer cannot
+be varied independently and then called the same native preparation.
+The calculation below differentiates those actual polynomial/rational
+operations and the complete retained word. It neither selects a new scene
+nor asserts that every smooth matrix curve is physically admitted by M1.
+
+**The owned constituent map.** Use D for the degree matrix of `RawZone`,
+A for its equitable adjacency, and G for the canonical part-size pairing.
+D is a degree operator, not the physical Dirac operator. The polynomial
+coefficients below are the existing source's fixed coefficients:
+
+\[
+ K=[D,A],\quad P_a=-K^2/2840,\quad
+ E=(D-22I)(D-20I)/8,\quad M=P_a E P_a,
+ \quad\tau=\operatorname{Tr}M,\quad R=M/\tau,\quad Q=P_a-R.
+                                                               \tag{36}
+\]
+
+At the actual source D=diag(24,22,20), A=[[0,11,13],[9,0,13],
+[9,11,0]], G=diag(9,11,13), the compiled bindings give exactly
+`RawZone.Pact`, `degreePort`, `compressed`, `signalPort`, `inputPort`,
+and \(\tau=567/710>0\). They rebuild the required equalities from the
+matrix definitions with kernel-checked arithmetic; none consumes a
+`native_decide` theorem. With the existing Q8 matrix L=spin(2),
+
+\[
+ X=(I-R)\otimes I+R\otimes L                                \tag{37}
+\]
+
+is exactly the owned `coupled` interaction. The max-degree port remains
+the owner's declared source-internal choice; this does not prove M1
+uniqueness of max degree over other intrinsic choices.
+
+For every differentiable D(s), A(s) through this constituent map with
+\(\tau\ne0\), the following are genuine derivatives, not independently
+supplied source covectors:
+
+\[
+ \begin{aligned}
+ dK&=[dD,A]+[D,dA],\\
+ dP_a&=-(dK\,K+K\,dK)/2840,\\
+ dE&=\{dD(D-20I)+(D-22I)dD\}/8,\\
+ dM&=dP_a E P_a+P_a dE P_a+P_a E dP_a,\\
+ d\tau&=\operatorname{Tr}(dM),\\
+ dR&=\tau^{-1}dM-\tau^{-2}\operatorname{Tr}(dM)M,\\
+ dQ&=dP_a-dR,\qquad dX=dR\otimes(L-I).
+ \end{aligned}                                               \tag{38}
+\]
+
+All arrows in (38), including their composition from D,A to X, are
+compiled `HasDerivAt` propositions. The normalizer derivative is required
+by the actual port definition. Dropping it changes the interaction jet.
+The algebraic formulas still exist for curves that leave the projector
+or spectral class; those curves are **not** thereby admitted native states.
+In particular the fixed 2840/22/20 coefficients must not be advertised
+as a projector calculus for an arbitrary changed spectrum. Physical
+state/tangent admission and the full scene Laplacian retain their owners.
+The three-dimensional zone quotient is not substituted for the full
+33-dimensional scene heat operator. In graph coordinates its combinatorial
+Laplacian is D-A, whereas the bootstrap's separately normalized physical
+operator requires its own identification.
+
+**The full word and the native pairing.** For a fixed retained carrier,
+let \(W=U_m\cdots U_1\) be the actual chronological product. Its derivative is
+
+\[
+ dW=\sum_{j=1}^{m}U_m\cdots U_{j+1}\,dU_j\,
+                      U_{j-1}\cdots U_1.                    \tag{39}
+\]
+
+The recursive `wordJet` and its genuine derivative theorem cover every
+finite list of differentiable stages. This retains all earlier records;
+no compression power, reset, external time variable or inverse oracle
+is inserted. A change of word length/carrier is a refinement transition,
+not an extra differentiable parameter justified by (39).
+
+In native quotient coordinates the adjoint is
+\(W^{\dagger_G}=G^{-1}W^T G\). Thus the same feedback action, written
+in those coordinates, uses
+
+\[
+ F=P G^{-1}W^T G(I-P)WP.                                    \tag{40}
+\]
+
+This is the existing adjoint action, not a new metric-dependent action.
+Write GI=G^{-1}. The compiled seven-term `weightedFeedbackJet` is
+
+\[
+\begin{aligned}
+ dF={}&dP\,GI W^TG(I-P)WP+P\,dGI W^TG(I-P)WP\\
+ &+P GI\,dW^TG(I-P)WP+P GI W^T\,dG(I-P)WP\\
+ &-P GI W^TG\,dP WP+P GI W^TG(I-P)\,dW P\\
+ &+P GI W^TG(I-P)W\,dP,\qquad dGI=-GI\,dG\,GI .
+\end{aligned}                                               \tag{41}
+\]
+
+The inverse jet follows from differentiating G(s)GI(s)=I, with both
+pointwise inverse identities checked. The actual `HasDerivAt` theorem
+for (41) differentiates the products and transpose. A port/scene law must
+supply the stages and their admitted primitive jets; it cannot supply dF
+as an unrelated covector fitted to stationarity.
+
+**Full operator heat/source calculation.** Fix a nonempty finite real
+carrier, \(\beta\ne0\), fixed z, a positive-definite G, a G-self-adjoint
+\(\Delta\), a G-orthogonal P, and a G-isometric W. For \(0<z<1\),
+F is G-positive with spectrum in [0,1], so the heat trace Z is positive
+and \(N=I-zF\) has positive determinant. These are sufficient conditions;
+the derivative formula only needs Z>0 and det N>0 along the tested curve.
+Define \(\rho=e^{-\beta\Delta}/Z\) and \(\Pi=zN^{-1}\). Then the actual
+BOOK_03 functional has the derivative
+
+\[
+ d\mathcal B=-\operatorname{Tr}(\rho\,d\Delta)
+                +\operatorname{Tr}(\Pi\,dF).                \tag{42}
+\]
+
+Here dF is (41), and any source-dependent stage uses (38)--(39).
+There is no prescribed matter source or stationarity gate in (42).
+
+For completeness, the heat derivative holds even for a noncommuting
+matrix variation and at spectral collisions. A proof that assumes
+eigenvalue derivatives is unnecessary. For a finite matrix A and tangent V,
+termwise differentiation of the exponential series gives
+
+\[
+ d(A^k)[V]=\sum_{j=0}^{k-1}A^j V A^{k-1-j},\quad
+ \operatorname{Tr}(d(A^k)[V])=k\operatorname{Tr}(A^{k-1}V).
+                                                               \tag{43}
+\]
+
+The finite power jets, genuine curve derivatives and cyclic-trace identity
+in (43) are compiled for arbitrary matrix size. To justify the infinite
+sum, on \(\|A\|\le M\), in a submultiplicative operator norm, the derivative
+remainder after degree m obeys
+
+\[
+ \|d e^A[V]-dE_m(A)[V]\|
+ \le\|V\|\sum_{r=m}^{\infty}\frac{M^r}{r!}
+ \le\|V\|e^M\frac{M^m}{m!},\quad
+ E_m(A)=\sum_{k=0}^{m}A^k/k!.                               \tag{44}
+\]
+
+Uniform convergence of the series and its derivatives on every bounded
+ball proves differentiability. Taking traces in (43), passing to the
+convergent sum and putting A=-beta*Delta, V=-beta*dDelta gives
+\(dZ=-\beta\operatorname{Tr}(e^{-\beta\Delta}d\Delta)\), hence the
+first term of (42). The determinant term follows by factoring
+N+t*dN=N(I+t*N^{-1}*dN). In the column-multilinear determinant expansion,
+the linear coefficient at I is Tr(N^{-1}*dN), and all other terms have
+degree at least two. Therefore d log det N=Tr(N^{-1}*dN);
+dN=-z*dF gives the second term. This proves (42) for every C1 finite
+operator curve on the stated domain, without requiring [Delta,dDelta]=0.
+
+Proof status is explicit: (42), its infinite-series passage (44) and the
+general Jacobi step have a self-contained analytic proof here. Lean
+currently proves their finite noncommutative power/word/feedback jets,
+the previously established scalar thermal derivative, and the **actual
+matrix exponential** thermal derivative on every declared differentiable
+spectral factorization \(T(s)\operatorname{diag}\lambda(s)T(s)^{-1}\).
+The latter allows moving, noncommuting eigenvectors. General matrix
+heat/Jacobi differentiation is not labeled fully Lean-formalized by
+that restricted theorem. Exact controls test noncommuting frames and
+normalizer jets; they do not replace the analytic proof.
+
+**Genuine basis Ward from the whole action.** For any invertible T,
+transport every owned datum and pairing together:
+
+\[
+ D'=TDT^{-1},\ A'=TAT^{-1},\ P'=TPT^{-1},\ W'=TWT^{-1},
+ \quad \Delta'=T\Delta T^{-1},\quad
+ G'=T^{-T}GT^{-1},\quad GI'=TGI T^T.                        \tag{45}
+\]
+
+The compiled covariance theorems prove (36)--(37) transform by the same
+conjugation, including the joint tensor carrier and every complete word.
+They also prove F'=TFT^{-1}, actual matrix heat invariance and determinant
+invariance. Consequently the **whole** bootstrap is constant along any
+such frame curve. `genuine_whole_basis_ward` proves its actual derivative
+is zero, even without assuming a differentiable frame: scalar action
+constancy suffices. At T(0)=I, the corresponding jets are
+
+\[
+ dD=[\Omega,D],\ dA=[\Omega,A],\ dP=[\Omega,P],\
+ dW=[\Omega,W],\ d\Delta=[\Omega,\Delta],\quad
+ dG=-\Omega^T G-G\Omega,\quad dGI=\Omega GI+GI\Omega^T,
+ \quad dF=[\Omega,F].                                     \tag{46}
+\]
+
+The constituent and full feedback jet identities are compiled.
+Since rho commutes with Delta and Pi with F, both contractions in (42)
+vanish by cyclic trace. This is a proved **basis Ward identity** of the
+existing finite joint action and its owned source operations. It does
+not remove non-gauge response-null directions, make an off-shell state
+stationary on physical variations, or prove the local metric/matter Ward
+identity. Freezing G while shearing the other data creates a different
+adjoint and a false source; an exact hostile control detects it.
+
+Quantitative consequences preserve their domains. For example,
+\(\|dR\|\le(|\tau|^{-1}+n\|M\|/\tau^2)\|dM\|\), and
+\(\|dW\|\le\sum_j\|dU_j\|\prod_{i\ne j}\|U_i\|\).
+The first follows from (38) and |Tr(dM)|<=n*norm(dM), the second from
+(39). Uniform native normalizer, condition, rank and resolvent bounds
+still have to be obtained from the preparation/refinement owner. No
+uniform physical O(h) estimate is inferred from the frozen positive tau.
+
+The next single constitutive input is now narrower: the **owned joint
+primitive state/tangent and spectral refinement law** must determine
+Delta and the chronological stages from the same admitted history data.
+Equations (38)--(42) then compute its source rather than leaving the
+port, normalizer, metric and stages as independently supplied hypotheses.
+On that actual tangent image, test the refinement condition (33), derive
+native on-shell equations, and preserve non-gauge null directions.
+No new action, temperature law, selector or physical postulate is used.
+
 ## 7. Verification and next load-bearing input
 
-`certificates/a4d_native_composed_feedback_dynamics.lean` contains 147
+`certificates/a4d_native_composed_feedback_dynamics.lean` contains 199
 compiled propositions, with each actual type and transitive axiom list
-printed in its transcript. The receipt pins all seven transitively imported
+printed in its transcript. The receipt pins all seventeen transitively imported
 D0 sources and the actual toolchain inputs. Standard logical axioms only;
-no new axiom or placeholder. The companion exact checker passes 488 controls and binds the book,
+no new axiom or placeholder. The companion exact checker passes 605 controls and binds the book,
 native matrices, complete-block identities, delayed archive control,
 composed source, joint projection refinement, determinant scaling and
 immutable result ledger. Finite controls do not replace the all-size proofs.
@@ -854,9 +1082,12 @@ Delta/P/U tangent law and spectral refinement satisfying (33)**. For the feedbac
 (29)--(35) replace a requirement for signed U tomography or inverse access.
 The compiler and fixed calibration are constructed; physical actuation,
 native admitted variations and uniform preparation bounds must follow from
-their owners. The thermal covector is now derived for the declared finite
-spectral family; its native state/variation/refinement admission is still
-required. Apply the proved bounds with actual
+their owners. The thermal covector now includes moving eigenvectors on the declared
+spectral family. Source-dependent stages are differentiated from the actual
+shared primitive chain, including their normalizer and pairing. The all-size
+operator heat/Jacobi formula is analytic; its general infinite differentiation
+is not mislabeled fully Lean-formalized. Native state/tangent admission, the
+full scene spectral coupling and its actual refinement are still required. Apply the proved bounds with actual
 native rank, normalization and recording errors.
 For the distinct image-supported preparation test, all completion effects
 are already exhausted by (16)--(17); one need not choose its unobservable

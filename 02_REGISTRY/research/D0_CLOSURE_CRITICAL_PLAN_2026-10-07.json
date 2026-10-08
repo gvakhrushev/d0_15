@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "76a180ca40b314f40cde93d2f54fc3d623fead2130ac902e2bd6843098310d5e",
+    "sha256": "a2d017c276fbd11ab56de6b058950f4c44300ded0666aa5c719638a76ef1094e",
     "global_census": false
   },
   "history_diagnosis": {
@@ -269,7 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": "G0b: derive the actual joint scene/record process, its admitted coherent pair preparations, retained cylinder registration, common full-word execution and quadratic event readout, together with independent variations and native error bounds. The feedback component already has an explicit internal-clock compiler, fixed calibration and direct quadratic reconstruction; it needs no signed-U or inverse oracle. The full bootstrap, including its heat-trace term, and the metric/link/matter variation map remain required before G1--G4.",
+    "next_proof_packet": "G0b: derive the owned joint primitive state and admitted tangent law, determining the full scene Delta and chronological stages from the same native history/refinement data. Use the proved source-port, normalizer, pairing and full-word derivative chain rather than independently supplied P/U/source jets. On its complete admitted tangent image, derive native on-shell equations and decide fineHeat=2*heat under the established cylinder/feedback transition. Keep the full scene distinct from the zone degree quotient, preserve zero modes and non-gauge null directions, and derive physical preparation/readout plus uniform error bounds from their owners. No new action, thermal trace, temperature law, selector, coupling or fitted source may replace this arrow. Metric/matter Ward, quantitative contrast, joint curved roots and GR soundness/recovery remain required.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -444,6 +444,27 @@
       "intake_artifacts": 198,
       "verified_artifact_input_hash_versions": 407,
       "verified_current_input_hash_versions": 314
+    },
+    "operator_source_chain_and_basis_ward": {
+      "source_head": "45f19d1399829b284f15b41899b49ee9961ea394",
+      "input_head": "e74df7d999ae04a667d4de08625b8ec77bcdab5a",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "compiled_propositions": 199,
+      "transitive_d0_source_pins": 17,
+      "exact_controls": 605,
+      "false_scope_rejections": 98,
+      "false_exact_rejections": 69,
+      "result": "The actual SourcePortPreparation chain is differentiated from shared degree/adjacency data through the commutator, active plane, degree compression, trace normalizer, both ports and coupled Q8 interaction. All retained native word stages and all seven weighted feedback terms have genuine derivative proofs; the canonical pairing and its inverse move together. The actual matrix exponential heat derivative covers every declared differentiable spectral factorization with moving noncommuting eigenvectors. General C1 finite operator heat/Jacobi source calculus has a self-contained analytic proof, with finite noncommutative power jets compiled. Whole bootstrap covariance gives a genuine basis Ward identity; it is not a physical metric/matter Ward or native stationarity. Kernel-checked bindings consume actual source definitions without native_decide leaves. The packet has 199 compiled propositions, 17 D0 source pins and 605 exact controls. Dropping port normalization or freezing the pairing creates exact false responses. The owned joint primitive state/tangent law, full scene spectral coupling/refinement, physical preparation/readout and uniform native bounds remain open. No action, trace, temperature rule, source prescription, selector, postulate, G0/GR/global closure or original parent terminal is changed.",
+      "remaining": "G0b: derive the owned joint primitive state and admitted tangent law, determining the full scene Delta and chronological stages from the same native history/refinement data. Use the proved source-port, normalizer, pairing and full-word derivative chain rather than independently supplied P/U/source jets. On its complete admitted tangent image, derive native on-shell equations and decide fineHeat=2*heat under the established cylinder/feedback transition. Keep the full scene distinct from the zone degree quotient, preserve zero modes and non-gauge null directions, and derive physical preparation/readout plus uniform error bounds from their owners. No new action, thermal trace, temperature law, selector, coupling or fitted source may replace this arrow. Metric/matter Ward, quantitative contrast, joint curved roots and GR soundness/recovery remain required.",
+      "genuine_source_constituent_chain_derived": true,
+      "genuine_whole_basis_Ward_derived": true,
+      "general_matrix_heat_Jacobi_fully_Lean_formalized": false,
+      "physical_metric_matter_Ward_derived": false,
+      "native_joint_Delta_primitive_tangent_law_derived": false,
+      "G0_closed": false,
+      "intake_artifacts": 198,
+      "verified_artifact_input_hash_versions": 416,
+      "verified_current_input_hash_versions": 323
     }
   }
 }

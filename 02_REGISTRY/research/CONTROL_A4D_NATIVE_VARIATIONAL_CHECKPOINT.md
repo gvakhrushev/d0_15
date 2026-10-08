@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`e74df7d999ae04a667d4de08625b8ec77bcdab5a`, following
-`bbd81c495ea6fcea683f78872b392015c9407401`.
+`45f19d1399829b284f15b41899b49ee9961ea394`, following
+`e74df7d999ae04a667d4de08625b8ec77bcdab5a`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -47,8 +47,8 @@ All-size analytic bounds quantify action error with the required rank,
 resolvent, preparation and full-word factors. Uniform native O(h) bounds
 and metric/link variation maps remain to be derived.
 
-This packet now has 147 compiled propositions, seven transitive D0 pins and
-488 exact controls; 86 false scope and 56 false exact ledgers are rejected.
+This packet now has 199 compiled propositions, seventeen transitive D0 pins and
+605 exact controls; 98 false scope and 69 false exact ledgers are rejected.
 Two owned native preparations J and GJ span the complete new factor.
 All four signed cross-return blocks uniquely reconstruct every full operator,
 its literal cylinder action and genuine source, including the prior hidden
@@ -76,26 +76,39 @@ The native joint Delta/P/U law and actual spectral transition must decide
 this condition on their complete admitted tangent class. No new trace,
 temperature law, source prescription or physical action is selected.
 
-The next G0b input is the actual joint scene law and the physical admission
-of coherent pair preparation, common full-word execution, cylinder registration
-and event readout, with independent variations and native error bounds. The
-heat covector is proved on the declared finite spectral family; its native
-state, variations and refinement admission remain required. The internal compiler
-does not itself derive primitive actuation or a blank apparatus from M1.
-No physical action, source, complementary selector or postulate is introduced.
+The actual source-port chain is now bound to shared native degree/adjacency
+primitives and differentiated through compression, trace normalizer, both
+ports and coupled interaction. Every retained word stage and all seven
+weighted feedback terms have genuine derivative proofs. Native pairing and
+inverse move together. Actual matrix heat differentiation includes moving
+noncommuting eigenvectors on the declared spectral factorization class.
+General finite C1 heat/Jacobi source calculus is analytically proved, with
+finite power/word/feedback jets compiled; general infinite differentiation
+is not labeled fully Lean-formalized. Whole bootstrap covariance gives a
+genuine basis Ward. Exact hostile controls reject the false sources obtained
+by freezing normalization or pairing. Physical metric/matter Ward, native
+on-shell equations and complete physical tangent admission remain open.
+
+The next single G0b input is the owned joint primitive state/tangent and full
+scene spectral refinement law, determining Delta and chronological stages
+from the same admitted history data. Use the derived constituent source
+chain and test fineHeat=2*heat on that actual tangent image. The full scene
+is distinct from the zone degree quotient. Physical pair preparation,
+actuation/readout and uniform native error bounds retain their owners.
+No new action, thermal trace, temperature law, selector or fitted source is used.
 
 The [regular time-field intertwiner classification](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
 is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 405 current artifact/input hash versions match (312 input versions).
+are unchanged. All 416 current artifact/input hash versions match (323 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
-The preceding source `7c204c9d` passed CI `37778650030`, and preceding
-CONTROL `98fc56ad` passed CI `37779154354`. New source `bbd81c49`
-CI `37785674835` is running at intake. New-head CONTROL CI and review remain
-required; the successful preceding heads do not substitute for current CI.
+The preceding source `e74df7d9` passed CI `37791774212`; preceding
+CONTROL `c7977e38` passed CI `37792745139`. The new source and CONTROL
+heads require their own CI and CONTROL review; previous successful heads
+do not substitute for current checks.
 
 ## Enumerated artifact slice
 

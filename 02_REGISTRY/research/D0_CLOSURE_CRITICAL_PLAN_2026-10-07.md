@@ -703,7 +703,7 @@ experiment/variation/error law и полный bootstrap. Метрический
 контраст, stationarity, curved recovery и global closure остаются открытыми.
 
 
-## Совместный bootstrap и условие переноса stationarity — текущий шаг
+## Совместный bootstrap и условие переноса stationarity — предыдущий шаг
 
 Источник: #310 на `e74df7d999ae04a667d4de08625b8ec77bcdab5a`, вход `bbd81c495ea6fcea683f78872b392015c9407401`.
 [Доказательство §6.6](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) выводит
@@ -725,3 +725,38 @@ law и реальное spectral refinement, решающие полученно
 допускаемом классе. Не выбирать новое действие, trace, temperature rule
 или источник ради stationarity. Native source/Ward, контраст, исправленные
 fine solutions, искривлённые решения, soundness/recovery и ОТО открыты.
+
+
+## Собственная цепочка источника и basis Ward — текущий шаг
+
+Источник: #310 на `45f19d1399829b284f15b41899b49ee9961ea394`, вход `e74df7d999ae04a667d4de08625b8ec77bcdab5a`.
+[Доказательство §6.7](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) связывает
+собственные degree/adjacency-данные с активной плоскостью, портом,
+trace-нормировкой и взаимодействием; доказаны настоящие производные
+этой цепочки, всех стадий сохранённого слова и weighted feedback.
+Собственная pairing и её обратное переносятся вместе с данными.
+
+Настоящая matrix heat производная включает движение собственных векторов
+на заявленном дифференцируемом спектральном классе. Общая конечная C1
+heat/Jacobi-формула доказана аналитически; конечные power/word/feedback jets
+проверяет Lean, а общая бесконечная дифференциация не называется законченной
+Lean-формализацией. Из полного действия выведена настоящая basis Ward,
+с точными отрицательными контролями ошибочной нормировки и pairing.
+Она не подменяет физическую metric/matter Ward или native on-shell gate.
+
+199 propositions, 17 D0 pins, 605 exact controls; 98 ложных scope и 69
+ложных exact ledger отвергнуты настоящим checker. CONTROL содержит
+198 дословных source artifacts и проверенные 416 artifact/input hash
+versions (323 current input versions). Все исторические части,
+44 полных контракта/статуса графа и исходные terminal сохранены.
+
+Одна следующая стрелка — собственный совместный primitive state/tangent law
+и полный scene spectral refinement, определяющие Delta и стадии процесса
+из одних допускаемых history-данных. Использовать выведенную цепочку
+источника и на её полном касательном образе решить `fineHeat=2*heat`, затем
+вывести настоящие native on-shell уравнения. Произвольная матричная кривая
+не получает физический допуск; quotient degree не заменяет full scene
+Laplacian. Физические подготовка/readout, равномерные ошибки, zero modes,
+негейджевые null направления, local metric/matter Ward, контраст, curved
+roots, soundness/recovery, физические ограничения и ОТО остаются открытыми.
+Новый action, trace, temperature rule, selector или источник не выбирается.
