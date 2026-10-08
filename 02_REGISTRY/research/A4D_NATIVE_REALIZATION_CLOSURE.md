@@ -621,3 +621,30 @@ these resonant states are retained or excluded by independently owned laws.
 A small-link assumption cannot supply that decision. Genuine geometric
 stationarity, own source/Ward, contrast bounds, curved physical solutions,
 soundness/recovery and causal constraints remain open.
+
+
+The [complete prepared action theorem](A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md)
+now classifies every pullback of the actual ActionProtocol through fixed,
+independently given endpoint maps: zero identities, the unit gap and complete
+record-pair fiber consistency are necessary and sufficient. This consumes
+the primitive cost classification without selecting a new field law. Two
+nonzero positive readings of the actual native vacuum component have
+different genuine full-cochain stationary outputs, invariant under the
+owned affine node-frame action and preserved by the literal scalar B0 block.
+The joint gate is derived from actual derivatives with common geometry,
+background-curve, differentiability and stationary-root premises retained.
+It is not an auxiliary-only or empty-fiber distinction.
+
+The mathematical verification countermodels retain nondegenerate raw
+coframes, complete Lorentz affine links with shifts and all sixteen matter
+components. They are not the owned scene histories, effective physical
+apparatus or derived native prepared-state/action system. Their sources are
+equal and zero; no physical stress or spacetime Ward is supplied. Full
+raw/link refinement and admission of the existing curved link resonance
+remain unresolved. Thirty compiled propositions, twenty actual types,
+68 D0 source pins and the exact ledger preserve every original terminal.
+The updated theory specification now demands the single missing owned
+history/record preparation, composition-action and full-refinement law,
+including the restrictions it actually imposes on the complete price fiber.
+Another arbitrary reading, scalar cost ratio or off-shell example is not
+that result. G0 physical ownership and all downstream GR obligations remain.
