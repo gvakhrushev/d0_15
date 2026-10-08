@@ -144,8 +144,8 @@ transported metric gap имеет squared L2 liminf >=4096/66049; фиксиро
 T(F)(x)=C_x F(p(x)). Сохранение фиксированного raw reference eta вынуждает
 C_x=I. Полученный единственный B0 raw-переход не является graded one-form
 chain map. Это классификация, а не установленная новая физическая стрелка.
-Полная классификация аналитическая; в пакете 38 compiled propositions,
-30 фактических типов, 543 exact controls, 37 ложных scopes и 10 подмен
+Полная классификация аналитическая; в пакете 45 compiled propositions,
+37 фактических типов, 593 exact controls, 41 ложный scope и 13 подмен
 точных результатов. G0, ОТО и родительские terminals остаются открыты.
 
 **Что требуется от одного ближайшего закона:** вывести используемый
@@ -155,6 +155,30 @@ chain map. Это классификация, а не установленная
 «нелинейным исправлением» уже недостаточно. Другой first jet или новый
 закон нельзя вводить без собственного владельца. Proof scope полного raw
 quotient не переносить на иной слабый readout без его linking theorem.
+
+## Полный допуск literal frozen raw-перехода теперь решён
+
+[Раздел 6.3](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#63-exact-admission-boundary-without-a-flat-state-or-open-domain-premise)
+доказывает: **ни один непустой невырожденный полный класс состояний,
+замкнутый по собственной proper Lorentz gauge, не допускает literal
+fixed-reference frozen raw-переход на полном quotient.** Плоское состояние,
+open neighborhood, гладкость, small links, continuum limit и физические
+уравнения для этого результата не нужны. В любой strict refinement есть
+B-prefix/C-tail точка; там fine Gram BC=rho F_BC для любого coarse F.
+Четыре proper frames заставили бы всю B-строку F исчезнуть, что противоречит
+невырожденности. Generic full-state admission theorem собран Lean; все
+секторы X, raw binding, gauge closure и необходимое metric orbit условие
+сохраняются в его типе как явные гипотезы.
+
+**Не повторять:** ограничить тот же переход только isolated/nonlinear
+roots и считать это исправлением. При полном gauge-closed допуске такой
+класс пуст. Homogeneous raw B1 версия имеет нулевую строку в добавленной
+области. Gauge preparation, выбирающая raw representative перед переходом,
+меняет задачу и должна быть независимо выведена; новый full raw law тоже
+требует своего владельца. Этот результат решает именно описанные frozen
+интерпретации, а не допуск резонансной семьи во всём ядре или ОТО.
+Один следующий результат по-прежнему — собственный history/preparation/
+composition/action закон с его реальным gauge-compatible уточнением.
 
 ## 1. Что изменилось после предыдущего задания
 

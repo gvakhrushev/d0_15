@@ -678,6 +678,128 @@ all original parent terminals remain open. The single next owned
 history/preparation/composition law must now account for this gauge-orbit
 failure as well as the earlier state-domain and weak-metric boundary.
 
+### 6.3 Exact admission boundary without a flat-state or open-domain premise
+
+The previous flat orbit is an explicit nondegenerate test, but it leaves a
+logical question: could a sparse, nonlinear or isolated physical root class
+avoid that orbit and make the **same literal transition (17)** descend to
+the full raw Lorentz quotient? The answer is no for **every nonempty
+nondegenerate full-state class closed under the owned proper frame action**.
+No equation, source, weak metric limit, link smallness, differentiability,
+flat state or open admission neighborhood is needed for this statement.
+This resolves admission for this specified raw transition, rather than
+constructing or excluding the other native transitions.
+
+At every strict refinement K>L, take a fine point with x_B=0, x_C=L and
+x_A=x_D=0. It is an actual fine phase point, even for K=L+1. The B row
+weight in (17) is rho=K/L>0 and the C row weight is zero. The other row
+weights are irrelevant. For an **arbitrary** coarse raw matrix F at p(x),
+not the flat representative, the exact fine raw Gram component is
+
+```text
+q_f(F)_BC = rho F_BC,
+q_f(F Lambda)_BC-q_f(F)_BC = rho [(F Lambda)_BC-F_BC].   (24)
+```
+
+Indeed the inactive C row is the fixed eta row, so its metric pairing
+selects the C column of the active B row. This is compiled as
+`frozen_partial_metric_reads_any_raw_row`; the strict-refinement point
+exists at every native size by `native_partial_mask_exists`. The already
+compiled full sixteen-entry binding to (17) remains the consumed owner.
+The actual `rawFullSolderFrameAction_matrix` acts on the entire raw matrix
+F by right multiplication, including its background, rather than acting
+only on its perturbation coordinates.
+
+Here is a finite complete test of (24). Write w_a=F_Ba. Use the two B,C
+rotations with sine +s and -s, the A,C boost, and the C,D rotation with
+sine s. For any 0<t<1 put
+
+```text
+c=(1-t^2)/(1+t^2),  s=2t/(1+t^2),
+ch=(1+t^2)/(1-t^2), sh=2t/(1-t^2).
+```
+
+All four matrices are connected proper Lorentz matrices: their Lorentz
+identity, determinant one and future component hold along the continuous
+curves from t=0. Constancy of (F Lambda)_BC for these four frames gives
+exactly the four independent equations
+
+```text
+ s w_B+(c-1)w_C=0,       -s w_B+(c-1)w_C=0,
+sh w_A+(ch-1)w_C=0,     (c-1)w_C-s w_D=0.              (25)
+```
+
+Adding and subtracting the first two equations forces w_C=w_B=0, since
+c-1 and s are nonzero. The last two then force w_A=w_D=0, since sh and
+s are nonzero. Thus the entire B row is zero and det(F)=0. Conversely a
+zero B row passes this single-component test, which is why the actual
+nondegeneracy hypothesis is retained. No finite-rank extrapolation or
+generic/open-set argument is used: the four displayed equations prove the
+implication for **every** real F.
+
+The fixed t=1/16 instance is compiled as
+`four_proper_frames_force_raw_row_zero` and
+`nondegenerate_raw_orbit_has_frozen_metric_defect`. Its constants are
+c=255/257, s=32/257, ch=257/255 and sh=32/255. The checker also verifies the
+symbolic determinant and all proper-group properties, and supplies exact
+nonzero-row controls when any one frame is omitted. The argument works
+for arbitrarily small nonzero t; it is not dependent on that finite test
+radius or on the conditioning of F.
+
+**Full admission theorem.** Let X be any stated full-state carrier, with
+arbitrary links, affine shifts, all matter grades, constraints and other
+data. At the chosen coarse point let raw:X→Mat(4,R) be its actual raw
+solder. Let A⊆X satisfy the following three hypotheses, without inserting
+any stationarity conclusion into its definition:
+
+1. A is closed under the owned proper full-state frame changes, whose raw
+   binding is raw(act_Lambda x)=raw(x)Lambda.
+2. Every x∈A has det(raw(x))!=0.
+3. A proposed full refinement has precisely the literal raw block (17),
+   and sends gauge-related admitted coarse states into one fine raw
+   Lorentz orbit.
+
+Then **A is empty**. If x∈A existed, gauge closure admits all four frames
+above. Fine orbit descent requires equality of their fine raw Gram BC
+entries, by the owned raw Gram invariant. Equations (24)--(25) imply a
+zero coarse B row, contradicting hypothesis 2. The generic full-state
+statement is compiled as `frozen_gauge_saturated_admission_empty`, with
+raw binding, gauge closure, nondegeneracy and the necessary fine metric
+invariance printed explicitly as premises. The primary raw frame owner
+supplies the binding when this theorem is applied to the existing joint
+carrier; the preparation/admission of a physical X remains independent.
+
+This excludes restricting (17) to an isolated or nonlinear on-shell subset
+as a repair **when that subset must respect the complete owned gauge**.
+It does not assume that any particular state is a physical root. If some
+gauge representative instead has a singular fine output, refinement
+already fails its state-domain requirement; if all outputs are valid,
+their raw Gram defect rules out every fine Lorentz frame. Arbitrary fine
+links, shifts and matter cannot alter this raw invariant. The nonempty
+all-mask coarse/fine flat controls in §6.2 are retained, so the conclusion
+is not obtained from a vacuous comparison fiber.
+
+Selecting one raw representative before applying (17) changes hypothesis
+1 and needs its own derived gauge preparation/reconstruction. A different
+raw law changes hypothesis 3. Homogeneous full-raw B1 prolongation avoids
+the fixed affine bias but has a zero C row at the same fine point, hence
+never preserves a nondegenerate full raw state. Together these statements
+exhaust the two **explicitly stated** full-raw and fixed-reference
+perturbation interpretations of this composed frozen block. They do not
+exhaust the entire native core, other diagrams/readouts, link-dependent
+reconstructions or nonlinear raw laws with a different first jet.
+
+**Next consumer:** an owned history/preparation/composition law must
+therefore supply a different full gauge-compatible transition, or derive
+the gauge preparation that changes this admission problem. It cannot
+repair the literal block solely by restricting to a gauge-closed set of
+solutions, changing fine links or removing nongauge response-null modes.
+No replacement action, lift, selector or physical postulate is installed.
+G0, own source/Ward, action-contrast transfer, curved joint roots,
+soundness/recovery, positive GR, global closure and the original parent
+terminals remain open.
+
+
 ## 7. Verification and the single remaining consumer
 
 The companion [exact checker](certificates/a4d_native_metric_compactness_check.py)
@@ -688,12 +810,12 @@ curvature, raw norm/product threshold, gauge control and actual refinement
 defects. The stored [ledger](certificates/a4d_native_metric_compactness_certificate.json)
 is compared in full; false scope extensions are rejected. The recorded
 compiler receipt distinguishes the finite propositions from every analytic
-continuum or phase-construction step above. The capsule prints 38 propositions
-and 30 actual theorem types, with 36 transitive D0 source pins and only
-standard axioms. The extended checker has 543 exact controls, including
+continuum or phase-construction step above. The capsule prints 45 propositions
+and 37 actual theorem types, with 36 transitive D0 source pins and only
+standard axioms. The extended checker has 593 exact controls, including
 all composed graded rows, full-carrier preservation failures, the flat bulk,
-complete Lorentz gauge and nonempty resonant comparison. Thirty-seven false
-scope ledgers and ten falsified exact-result ledgers must be rejected.
+complete Lorentz gauge and nonempty resonant comparison. Forty-one false
+scope ledgers and thirteen falsified exact-result ledgers must be rejected.
 The all-ratio and fixed-smooth-test limit arguments are analytic, not
 compiled continuum theorems. The full affine intertwiner classification
 is analytic; the exact proper group witnesses force its full commutant and
@@ -710,7 +832,11 @@ arbitrary small comparison links and vanishing metric correctors.
 Section 6.2 additionally excludes every differentiable completion retaining
 the frozen row first jet on the flat gauge orbit, and completely classifies
 the specified affine raw intertwiners. Fine Lorentz frames and links cannot
-remove the raw Gram defect.
+remove the raw Gram defect. Section 6.3 completes admission for the literal
+fixed-reference raw block: every nonempty nondegenerate gauge-closed
+full-state class fails its quotient law, including isolated or nonlinear
+solution classes. The hypothesis is the full raw quotient, not an unproved
+weak physical readout or selected preparation.
 
 **Next single G0 consumer:** derive native admission, the history-to-action
 law and commuting refinement on the full raw/transported joint carrier,

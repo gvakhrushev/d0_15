@@ -695,3 +695,22 @@ and weaker readouts need their own laws. The first native history/preparation/
 composition theorem must supply that full law; G0, source/Ward, GR and all
 original parent terminals remain open. The 44 graph statuses and edges are
 unchanged.
+
+
+The [complete frozen admission consumer](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#63-exact-admission-boundary-without-a-flat-state-or-open-domain-premise)
+removes the flat-state/open-domain loophole in the same raw transition.
+For every invertible coarse raw matrix, one of four fixed proper frames
+changes the partial-mask fine raw Gram. A generic compiled theorem rules
+out every nonempty gauge-closed nondegenerate full-state admission for this
+literal fixed-reference block, including isolated and nonlinear root
+classes. No EOM or physical admission is assumed; all actual binding,
+gauge closure and quotient premises remain explicit. Every strict native
+refinement contains the required partial point. Homogeneous raw B1 has
+instead a zero row there. The prior nonempty coarse/fine controls remain.
+This consumes the admission question for these two stated interpretations,
+without exhausting other native laws or installing gauge preparation.
+The extended package has 45 compiled propositions, 37 actual types,
+36 D0 pins and 593 exact controls; 41 false scopes and 13 false exact ledgers
+must be rejected. Own history/preparation/action/refinement, source/Ward,
+G0/GR/global closure and all original parents remain open. The 44 graph
+statuses and dependencies are unchanged.

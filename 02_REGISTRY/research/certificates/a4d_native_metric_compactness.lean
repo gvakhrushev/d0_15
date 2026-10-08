@@ -619,6 +619,119 @@ theorem nonzero_metric_jet_not_orbit_constant (f : ℝ → ℝ) (v : ℝ)
     (hasDerivAt_const (0:ℝ) (f 0))
   exact hv hh
 
+/-- The same literal fixed-reference raw formula, in the certificate's
+four-index order. No replacement transition is selected. -/
+def frozenAffineRaw4 (d : Fin 4 → ℝ) (F : Matrix (Fin 4) (Fin 4) ℝ) :
+    Matrix (Fin 4) (Fin 4) ℝ :=
+  fun r a => eta4 r a+d r*(F r a-eta4 r a)
+
+/-- At a B-active/C-inactive prefix point, the entire fine raw metric's
+BC entry reads the coarse BC entry. Other rows and all links are arbitrary. -/
+theorem frozen_partial_metric_reads_any_raw_row
+    (d : Fin 4 → ℝ) (F : Matrix (Fin 4) (Fin 4) ℝ)
+    (rho : ℝ) (hb : d 1=rho) (hc : d 2=0) :
+    (frozenAffineRaw4 d F*eta4*(frozenAffineRaw4 d F).transpose) 1 2 =
+      rho*F 1 2 := by
+  simp [frozenAffineRaw4,eta4,Matrix.mul_apply,Matrix.transpose_apply,
+    Fin.sum_univ_four,hb,hc]
+
+def rotationCD4 (c z : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
+  !![1,0,0,0;0,1,0,0;0,0,c,z;0,0,-z,c]
+
+/-- Four fixed connected proper frames suffice; no open admission domain
+or continuum family is assumed. -/
+def columnCFrames4 : Fin 4 → Matrix (Fin 4) (Fin 4) ℝ :=
+  ![rotationBC4 (255/257) (32/257),
+    rotationBC4 (255/257) (-32/257),
+    boostAC (1/16),rotationCD4 (255/257) (32/257)]
+
+theorem rotationCD4_lorentz (c z : ℝ) (h : c^2+z^2=1) :
+    rotationCD4 c z*eta4*(rotationCD4 c z).transpose=eta4 := by
+  ext r a
+  fin_cases r <;> fin_cases a <;>
+    norm_num [rotationCD4,eta4,Matrix.mul_apply,Fin.sum_univ_succ] <;>
+    nlinarith [h]
+
+theorem columnCFrames4_lorentz (j : Fin 4) :
+    columnCFrames4 j*eta4*(columnCFrames4 j).transpose=eta4 := by
+  fin_cases j
+  · exact rotationBC4_lorentz _ _ (by norm_num)
+  · exact rotationBC4_lorentz _ _ (by norm_num)
+  · exact boostAC_lorentz _ (by norm_num)
+  · exact rotationCD4_lorentz _ _ (by norm_num)
+
+/-- Constancy of a single row's C component under these four actual
+Lorentz changes forces every component of that row to vanish. -/
+theorem four_proper_frames_force_raw_row_zero
+    (F : Matrix (Fin 4) (Fin 4) ℝ) (r : Fin 4)
+    (h : ∀ j, (F*columnCFrames4 j) r 2=F r 2) :
+    ∀ a, F r a=0 := by
+  have h0 := h 0
+  have h1 := h 1
+  have h2 := h 2
+  have h3 := h 3
+  norm_num [columnCFrames4,rotationBC4,rotationCD4,boostAC,
+    Matrix.mul_apply,Fin.sum_univ_four,vec_four_two,vec_four_three,vec_three_two] at h0 h1 h2 h3
+  have hC : F r 2=0 := by linarith
+  have hB : F r 1=0 := by linarith
+  have hA : F r 0=0 := by linarith
+  have hD : F r 3=0 := by linarith
+  intro a
+  fin_cases a <;> assumption
+
+/-- Universal admission obstruction: no invertible coarse raw matrix can
+have a frozen partial-mask output whose Gram stays constant on its entire
+proper Lorentz orbit. The finite four-frame test already contradicts det≠0. -/
+theorem nondegenerate_raw_orbit_has_frozen_metric_defect
+    (d : Fin 4 → ℝ) (F : Matrix (Fin 4) (Fin 4) ℝ) (rho : ℝ)
+    (hb : d 1=rho) (hc : d 2=0) (hrho : rho≠0) (hF : F.det≠0) :
+    ∃ j, (frozenAffineRaw4 d (F*columnCFrames4 j)*eta4*
+        (frozenAffineRaw4 d (F*columnCFrames4 j)).transpose) 1 2 ≠
+      (frozenAffineRaw4 d F*eta4*(frozenAffineRaw4 d F).transpose) 1 2 := by
+  by_contra hn
+  have heq : ∀ j, (F*columnCFrames4 j) 1 2=F 1 2 := by
+    intro j
+    have he := not_not.mp ((not_exists.mp hn) j)
+    rw [frozen_partial_metric_reads_any_raw_row d _ rho hb hc,
+      frozen_partial_metric_reads_any_raw_row d _ rho hb hc] at he
+    exact mul_left_cancel₀ hrho he
+  have hz := four_proper_frames_force_raw_row_zero F 1 heq
+  exact hF (Matrix.det_eq_zero_of_row_eq_zero (1:Fin 4) hz)
+
+/-- The obstruction also rules out isolated or nonlinear solution sets:
+any claimed full-state admission that is gauge closed and has the literal
+raw frame binding must be empty if this frozen Gram descends to its orbits.
+Links, shifts and matter may be arbitrary fields inside X. -/
+theorem frozen_gauge_saturated_admission_empty
+    {X : Type*} (raw : X → Matrix (Fin 4) (Fin 4) ℝ)
+    (act : Fin 4 → X → X) (admit : X → Prop)
+    (d : Fin 4 → ℝ) (rho : ℝ) (hb : d 1=rho) (hc : d 2=0) (hrho : rho≠0)
+    (hraw : ∀ j x, raw (act j x)=raw x*columnCFrames4 j)
+    (hclosed : ∀ j x, admit x → admit (act j x))
+    (hnondeg : ∀ x, admit x → (raw x).det≠0)
+    (hGram : ∀ j x, admit x → admit (act j x) →
+      (frozenAffineRaw4 d (raw (act j x))*eta4*
+        (frozenAffineRaw4 d (raw (act j x))).transpose) 1 2 =
+      (frozenAffineRaw4 d (raw x)*eta4*(frozenAffineRaw4 d (raw x)).transpose) 1 2) :
+    ¬ ∃ x, admit x := by
+  rintro ⟨x,hx⟩
+  obtain ⟨j,hj⟩ := nondegenerate_raw_orbit_has_frozen_metric_defect
+    d (raw x) rho hb hc hrho (hnondeg x hx)
+  have he := hGram j x hx (hclosed j x hx)
+  rw [hraw] at he
+  exact hj he
+
+/-- Every strict native cycle refinement has an actual B-prefix/C-tail
+point. This is not a flat-state or large-scale hypothesis. -/
+theorem native_partial_mask_exists (Nc Nf : ℕ) (h : Nc<Nf) :
+    ∃ x : ArchiveRolePhaseGroup Nf,
+      let y := (archiveRolePhasePointGroupEquiv Nf).symm x
+      (y (0,1)).val<Nc+2 ∧ Nc+2≤(y (1,0)).val := by
+  let y : ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint Nf :=
+    fun r => if r=(1,0) then ⟨Nc+2,by change Nc+2<Nf+2; omega⟩ else 0
+  refine ⟨archiveRolePhasePointGroupEquiv Nf y,?_⟩
+  simp [y]
+
 end
 end D0.Research.NativeMetricCompactness
 open D0.Research.NativeMetricCompactness
@@ -692,3 +805,18 @@ open D0.Research.NativeMetricCompactness
 
 #print axioms cayley_rotation_actual_metric_derivative
 #check cayley_rotation_actual_metric_derivative
+
+#print axioms frozen_partial_metric_reads_any_raw_row
+#check frozen_partial_metric_reads_any_raw_row
+#print axioms rotationCD4_lorentz
+#check rotationCD4_lorentz
+#print axioms columnCFrames4_lorentz
+#check columnCFrames4_lorentz
+#print axioms four_proper_frames_force_raw_row_zero
+#check four_proper_frames_force_raw_row_zero
+#print axioms nondegenerate_raw_orbit_has_frozen_metric_defect
+#check nondegenerate_raw_orbit_has_frozen_metric_defect
+#print axioms frozen_gauge_saturated_admission_empty
+#check frozen_gauge_saturated_admission_empty
+#print axioms native_partial_mask_exists
+#check native_partial_mask_exists
