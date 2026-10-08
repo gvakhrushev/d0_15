@@ -235,3 +235,16 @@ prepared-action dependency are verified. The native preparation/action/
 refinement law and its actual first jet remain the single G0 target; no
 physical postulate, replacement lift, scientific parent retirement, claim
 promotion or task registration is introduced. Review lifecycle is unchanged.
+
+
+The complete literal frozen gauge-saturated admission continuation is
+imported from #310 at `ad2e43f4eae418d6fe7386d37c7ee4c76400ed42`. Any nonempty nondegenerate full-state
+class closed under the owned proper Lorentz frame action fails this raw
+quotient transition, even for isolated/nonlinear roots. No flat-state,
+open-domain, physical EOM, small-link or continuum premise is assumed.
+The generic full-state theorem and every-size partial point are compiled,
+with all binding/gauge/quotient hypotheses retained. Its 45 propositions,
+593 controls, 41 false scopes and 13 false-exact rejections are checked.
+The own history/preparation/action/refinement law remains the one G0 target;
+no alternative lift, gauge preparation, physical postulate, claim promotion,
+parent retirement or task registration is introduced. Lifecycle is REVIEW.

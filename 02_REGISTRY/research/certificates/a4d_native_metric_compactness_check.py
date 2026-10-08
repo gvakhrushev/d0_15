@@ -20,6 +20,7 @@ SCOPE = {
     'curved_sequence': 'BOUNDED_NATIVE_POTENTIAL_PROPER_SMALL_LINKS_TRANSPORTED_READOUT',
     'frozen_coframe_refinement_boundary': 'ALL_COARSE_COFRAMES_FULL_COMPOSED_ONE_FORM_BLOCK_FIXED_TORUS_WEAK_METRIC_PROBES_SMALL_COMPARISON_LINKS',
     'frozen_raw_gauge_orbit_boundary': 'ANY_DIFFERENTIABLE_FULL_STATE_REFINEMENT_WITH_FLAT_RAW_REFERENCE_AND_SAME_FROZEN_ROW_FIRST_JET',
+    'frozen_gauge_saturated_admission': 'EMPTY_FOR_ANY_NONDEGENERATE_FULL_STATE_ADMISSION_WITH_LITERAL_FIXED_REFERENCE_RAW_BLOCK_AND_FULL_PROPER_LORENTZ_ORBIT_DESCENT',
     'affine_raw_intertwiners': 'COMPLETE_CONNECTION_INDEPENDENT_AFFINE_CLASS_FOR_PULLBACK_NODE_FRAMES_WITH_REFERENCE_CONDITION_EXPLICIT',
     'frozen_curve_refinement_gap': 'NONZERO_GAUGE_INVARIANT_BULK_GAP_WITH_VANISHING_METRIC_CORRECTORS_ALLOWED',
     'continuum_parity_and_regularity_formalized': False,
@@ -54,6 +55,10 @@ SCOPE = {
     'affine_intertwiner_universal_class_Lean_formalized': False,
     'raw_quotient_naturality_derived_for_any_weaker_readout': False,
     'flat_gauge_test_proves_native_physical_root': False,
+    'isolated_roots_can_restore_frozen_orbit_descent': False,
+    'full_native_admission_exhausted': False,
+    'gauge_preparation_derived': False,
+    'gauge_admission_obstruction_needs_flat_state': False,
     'soundness_or_recovery_proved': False,
     'G0_closed': False,
     'positive_GR': False,
@@ -93,9 +98,9 @@ def main():
         checks.append(name)
 
     receipt = json.loads((root/(BASE+'_results.json')).read_text())
-    check('COMPILED_38_REAL_PROPOSITIONS', receipt['status'] == 'PASS'
+    check('COMPILED_45_REAL_PROPOSITIONS', receipt['status'] == 'PASS'
           and receipt['compiler_exit_code'] == 0 and not receipt['sorryAx']
-          and receipt['printed_axiom_dependencies'] == 38 and receipt['owner_input_head'] == HEAD)
+          and receipt['printed_axiom_dependencies'] == 45 and receipt['owner_input_head'] == HEAD)
     pins = {**receipt['transitive_d0_source_sha256'], **receipt['toolchain_input_sha256'],
             receipt['capsule']: receipt['capsule_sha256'], receipt['output']: receipt['output_sha256']}
     check('ALL_TRANSITIVE_OWNER_TOOLCHAIN_CAPSULE_OUTPUT_PINS', all(sha(p) == h for p, h in pins.items()))
@@ -118,7 +123,14 @@ def main():
               'masked_rotation_partial_det',
               'masked_rotation_genuine_metric_derivative',
               'nonzero_metric_jet_not_orbit_constant',
-              'cayley_rotation_actual_metric_derivative']
+              'cayley_rotation_actual_metric_derivative',
+              'frozen_partial_metric_reads_any_raw_row',
+              'rotationCD4_lorentz',
+              'columnCFrames4_lorentz',
+              'four_proper_frames_force_raw_row_zero',
+              'nondegenerate_raw_orbit_has_frozen_metric_defect',
+              'frozen_gauge_saturated_admission_empty',
+              'native_partial_mask_exists']
     for name in actual:
         check('RESOLVED_REAL_PROPOSITION_'+name, "'D0.Research.NativeMetricCompactness."+name+"' depends on axioms:" in out
               and '\nD0.Research.NativeMetricCompactness.'+name in out)
@@ -470,6 +482,73 @@ def main():
             center=s.Matrix(4,4,lambda r,a:(ff[r,a]+ff[r,a])/2)
             check('LITERAL_IDENTITY_LINK_TRANSPORTED_GAUGE_DEFECT_L'+str(L)+'K'+str(K)+'S'+str(mask),
                   center == ff and (center*eta*center.T)[1,2] != 0 and ff.det() != 0)
+    # Entire gauge-saturated admission class, without a flat/open/root premise.
+    # Symbolic identities below cover every matrix, not an interpolation grid.
+    weights=s.symbols('wd0:4',real=True)
+    for r,a in itertools.permutations(range(4),2):
+        ww=list(weights);ww[r]=rho;ww[a]=0
+        frozen_any=eta+s.diag(*ww)*(opaque-eta)
+        check('ANY_RAW_PARTIAL_MASK_METRIC_READS_ROW_'+str(r)+str(a),
+              s.expand((frozen_any*eta*frozen_any.T)[r,a]-rho*opaque[r,a]) == 0)
+    rotminus=rot.subs(uu,-uu)
+    rotcd=s.eye(4)
+    rotcd[2,2]=rotcd[3,3]=co
+    rotcd[2,3]=si;rotcd[3,2]=-si
+    admission_frames=[rot,rotminus,boost(2,uu),rotcd]
+    admission_columns=s.Matrix.hstack(*[(M-s.eye(4))[:,2] for M in admission_frames])
+    admission_det=s.factor(admission_columns.det())
+    check('SYMBOLIC_FOUR_FRAME_COLUMNS_SPAN_ALL_RAW_ROW_COMPONENTS',
+          admission_det != 0 and admission_det ==
+          s.factor(-2*si**2*(co-1)*(2*uu/(1-uu**2))))
+    check('FOUR_FRAMES_ARBITRARILY_CLOSE_TO_IDENTITY',
+          all(M.subs(uu,0) == s.eye(4) for M in admission_frames))
+    for i,M in enumerate(admission_frames):
+        check('ADMISSION_FRAME_SYMBOLIC_PROPER_LORENTZ_'+str(i),
+              zero(M*eta*M.T-eta) and s.factor(M.det()) == 1)
+        fany=eta+s.diag(0,rho,0,0)*(opaque*M-eta)
+        fbase=eta+s.diag(0,rho,0,0)*(opaque-eta)
+        check('FULL_SYMBOLIC_RAW_ORBIT_METRIC_DIFFERENCE_'+str(i),
+              s.expand((fany*eta*fany.T-fbase*eta*fbase.T)[1,2]-
+                       rho*(opaque*M-opaque)[1,2]) == 0)
+    for radius in [s.Rational(1,16),s.Rational(1,32),s.Rational(1,256)]:
+        cols=admission_columns.subs(uu,radius)
+        check('NONZERO_ROW_CONTRADICTION_WITH_TINY_PROPER_FRAMES_'+str(radius),
+              cols.det() != 0 and cols.rank() == 4 and not cols.T.nullspace())
+        check('ALL_FOUR_TINY_FRAMES_DETERMINANT_FUTURE_AND_SIGNATURE_'+str(radius),
+              all(M.subs(uu,radius).det() == 1 and M.subs(uu,radius)[0,0]>=1
+                  and zero(M.subs(uu,radius)*eta*M.subs(uu,radius).T-eta)
+                  for M in admission_frames))
+    fixedcols=admission_columns.subs(uu,s.Rational(1,16))
+    for omitted in range(4):
+        kept=[j for j in range(4) if j != omitted]
+        null=fixedcols[:,kept].T.nullspace()
+        check('OMITTED_FRAME_LEAVES_NONZERO_ADMISSION_ROW_'+str(omitted),
+              len(null) == 1 and not zero(null[0])
+              and not zero(fixedcols[:,omitted].T*null[0]))
+        row=null[0].T
+        candidates=[]
+        for triple in itertools.combinations(range(4),3):
+            F=s.Matrix.vstack(s.eye(4)[triple[0],:],row,
+                              s.eye(4)[triple[1],:],s.eye(4)[triple[2],:])
+            if F.det() != 0:candidates.append(F)
+        check('OMITTED_FRAME_CONTROL_HAS_NONDEGENERATE_FULL_RAW_STATE_'+str(omitted),
+              bool(candidates) and all((F*admission_frames[j].subs(uu,s.Rational(1,16)))[1,2] == F[1,2]
+                  for F in candidates for j in kept))
+    singular=s.eye(4);singular[1,:]=s.zeros(1,4)
+    check('NONDEGENERACY_PREMISE_REQUIRED_FOR_RAW_ROW_TEST',
+          singular.det() == 0 and all(zero(singular[1,:]*(M-s.eye(4))) for M in admission_frames))
+    for L,K in [(2,3),(3,4),(4,5),(4,8),(8,9)]:
+        fine_point=[0,0,L,0]
+        coarse_point=[v if v<L else 0 for v in fine_point]
+        mask=[s.Rational(K,L)*int(v<L) for v in fine_point]
+        check('ACTUAL_STRICT_REFINEMENT_PARTIAL_POINT_L'+str(L)+'K'+str(K),
+              all(0<=v<K for v in fine_point) and coarse_point == [0]*4
+              and mask[1] == s.Rational(K,L)>0 and mask[2] == 0)
+    check('NONEMPTY_FULL_FINE_GAUGE_CONTROL_RETAINED_FOR_ADMISSION_THEOREM',
+          all((eta+s.diag(*[2*int(bool(mask&(1<<r))) for r in range(4)])*
+               (eta*rot.subs(uu,s.Rational(1,16))-eta)).det() != 0
+              for mask in range(16)))
+
     # Proper finite witnesses completely force the standard commutant and fixed rows.
     halfturns=[s.diag(1,-1,-1,1),s.diag(1,-1,1,-1),s.diag(1,1,-1,-1)]
     witnesses=halfturns+[boost(j,s.Rational(1,2)) for j in [1,2,3]]
@@ -528,6 +607,9 @@ def main():
               'fixed_smooth_probe_gap_lower_bound':'(1/512)*integral(chi)',
               'gauge_orbit_metric_BC_first_jet':'2*(d_C-d_B)',
               'gauge_orbit_doubled_transported_gap_square_liminf_lower_bound':'4096/66049',
+              'frozen_gauge_saturated_admission':'EMPTY_FOR_SPECIFIED_RAW_QUOTIENT_TRANSITION',
+              'frozen_admission_four_frame_column_determinant':str(fixedcols.det()),
+              'frozen_admission_without_flat_open_or_root_hypothesis':True,
               'affine_standard_commutant_rank':15,
               'affine_raw_intertwiner_dimension':16,
               'full_graded_composed_row_equations':tensor_rows,

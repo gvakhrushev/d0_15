@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "348fa47116b0af76c7ad36072bcd26736b971bec98c9a29fb7087b5fec574e22",
+    "sha256": "07f79610042b03f037dac35201f84d09bacdb2c23e01023b449f81b721351904",
     "global_census": false
   },
   "history_diagnosis": {
@@ -175,7 +175,7 @@
     "distinct_artifact_input_hashes": 277
   },
   "execution_progress": {
-    "source_head": "9a724dc37520fd042c00b0a5b330ceae0b563da7",
+    "source_head": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
     "proof": "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md",
     "consumers": [
       "constitutive",
@@ -189,7 +189,7 @@
     "transitive_d0_source_pins": 83,
     "exact_controls": 154,
     "rejected_false_scope_ledgers": 43,
-    "remaining_proposition": "Derive the own native history/record preparation with composition-action and commuting full raw/link/matter refinement. For every fixed actual protocol and independently given preparation the whole cost fiber is already exactly classified by identity zero, unit gap and complete record-pair fibers. Faithful readout alone does not select action; two nonzero positive actual native scalar readings can change genuine full stationary outputs while preserving the owned frame gauge and scalar B0 block. This statement is a primitive-interface countermodel, not a native physical action or admission theorem. Identify which primary law restricts that complete fiber and compare real physical stationary/source predictions on a nonempty full admitted class. Decide the existing bounded-potential proper-small-link curved resonant family using the same owned law, reconciling the frozen coframe defect 4*K. No new cost reading, marker, selector, raw bound, geometric action or physical postulate may replace the missing law. Finite native words and quantitative endpoint probes are allowed; countability alone does not exclude action-contrast limits. Then prove the required O(h) calibrated contrast including recording/composed-refinement errors, own source/Ward and actual joint equations. Soundness/recovery, causal restrictions and all original parent terminals remain required. The complete frozen one-form/fixed-torus/small-comparison-link/weak-composed-metric class is now resolved: full raw-state-domain failures, flat bulk and a positive resonance metric gap. It cannot be reused as the unproved physical state transition; derive the actual native admitted domain and law, preserving the metric/action distinction. Other independently owned diagrams/reconstructions remain open without a whole-core no-go. The full frozen coframe first jet is incompatible with raw Lorentz-orbit descent even at a nondegenerate flat gauge orbit. Derive the actual owned gauge-compatible state transition/first jet or its own gauge preparation; nonlinear o(u) repairs with the same jet and arbitrary fine link/frame choices cannot restore the missing raw orbit law. The complete affine connection-independent pullback-frame class is resolved with its fixed raw reference premise; no replacement lift is selected.",
+    "remaining_proposition": "Derive the own native history/record preparation with composition-action and commuting full raw/link/matter refinement. For every fixed actual protocol and independently given preparation the whole cost fiber is already exactly classified by identity zero, unit gap and complete record-pair fibers. Faithful readout alone does not select action; two nonzero positive actual native scalar readings can change genuine full stationary outputs while preserving the owned frame gauge and scalar B0 block. This statement is a primitive-interface countermodel, not a native physical action or admission theorem. Identify which primary law restricts that complete fiber and compare real physical stationary/source predictions on a nonempty full admitted class. Decide the existing bounded-potential proper-small-link curved resonant family using the same owned law, reconciling the frozen coframe defect 4*K. No new cost reading, marker, selector, raw bound, geometric action or physical postulate may replace the missing law. Finite native words and quantitative endpoint probes are allowed; countability alone does not exclude action-contrast limits. Then prove the required O(h) calibrated contrast including recording/composed-refinement errors, own source/Ward and actual joint equations. Soundness/recovery, causal restrictions and all original parent terminals remain required. The complete frozen one-form/fixed-torus/small-comparison-link/weak-composed-metric class is now resolved: full raw-state-domain failures, flat bulk and a positive resonance metric gap. It cannot be reused as the unproved physical state transition; derive the actual native admitted domain and law, preserving the metric/action distinction. Other independently owned diagrams/reconstructions remain open without a whole-core no-go. The full frozen coframe first jet is incompatible with raw Lorentz-orbit descent even at a nondegenerate flat gauge orbit. Derive the actual owned gauge-compatible state transition/first jet or its own gauge preparation; nonlinear o(u) repairs with the same jet and arbitrary fine link/frame choices cannot restore the missing raw orbit law. The complete affine connection-independent pullback-frame class is resolved with its fixed raw reference premise; no replacement lift is selected. The literal fixed-reference frozen raw block has no nonempty gauge-closed nondegenerate full-state admission, including isolated/nonlinear root classes, at every strict native size. The next owned law must derive another full gauge-compatible transition or its own gauge preparation; restricting the same block to roots is not a repair.",
     "action_level_nonuniqueness_is_physical_nonuniqueness": false,
     "composition_disposition": "Use the genuine order-two law and the complete simultaneous flat fiber, retaining isotropy. Its mathematical Dg family is classified on im d; transverse/curved physical admission is not supplied.",
     "flat_metric_disposition": "Translation tests are exactly divergence zero. The full metric annihilator and strong-coframe smooth flat limit are classified; do not promote them to whole-core impossibility, physical gauge, or metric-only compactness.",
@@ -271,7 +271,7 @@
     },
     "next_proof_packet": {
       "stage": "G0",
-      "source_head": "9a724dc37520fd042c00b0a5b330ceae0b563da7",
+      "source_head": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
       "no_new_registered_task": true,
       "no_new_physical_postulate": true,
       "carrier_input": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md",
@@ -305,12 +305,16 @@
         "A nonlinear higher-order raw correction with the same frozen gauge first jet as an orbit-law repair.",
         "Fine link or Lorentz frame changes as erasure of a nonzero raw Gram invariant.",
         "Covariance alone as selection of B0 without the fixed raw reference and connection-independent affine hypotheses.",
-        "The classified raw B0 intertwiner as an installed native one-form chain transition."
+        "The classified raw B0 intertwiner as an installed native one-form chain transition.",
+        "Restricting the same literal frozen raw block to isolated/nonlinear gauge-closed nondegenerate roots as a repair.",
+        "Treating one selected raw representative as an owned gauge preparation without deriving that preparation.",
+        "Promoting the two stated frozen raw interpretations to an exhaustion of all native transitions."
       ],
       "prepared_action_input": "02_REGISTRY/research/A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md",
       "theory_assignment": "02_REGISTRY/research/D0_THEORY_TASK_NEXT_2026-10-07.md",
       "frozen_full_metric_refinement_boundary": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#61-complete-frozen-coframe-refinement-class-and-its-metric-boundary",
-      "frozen_full_gauge_refinement_boundary": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#62-full-lorentz-orbit-obstruction-and-complete-affine-raw-intertwiners"
+      "frozen_full_gauge_refinement_boundary": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#62-full-lorentz-orbit-obstruction-and-complete-affine-raw-intertwiners",
+      "frozen_full_admission_boundary": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#63-exact-admission-boundary-without-a-flat-state-or-open-domain-premise"
     },
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
@@ -324,12 +328,12 @@
     },
     "metric_compactness_and_link_resonance_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md",
-      "compiled_declarations": 38,
-      "actual_theorem_types": 30,
+      "compiled_declarations": 45,
+      "actual_theorem_types": 37,
       "transitive_d0_source_pins": 36,
-      "exact_controls": 543,
-      "rejected_false_scope_ledgers": 37,
-      "rejected_exact_mutations": 10,
+      "exact_controls": 593,
+      "rejected_false_scope_ledgers": 41,
+      "rejected_exact_mutations": 13,
       "result": "The entire small native centered-gradient chart (pointwise positive Frobenius norm at most one-quarter) has the exact Korn identity and a mesh-independent nonlinear metric inverse with squared constant 4/3. Metric-only strong L2 convergence to a smooth metric supplies coframe compactness and forces a flat limit; its compactness/regularity proof is analytic. For the actual transported center, delta_link times raw-field L2 tending to zero suffices for the same flatness. O(h) proper Lorentz links or bounded native potentials alone do not: a literal bounded native Nyquist potential with raw determinant -1, raw square 4+8/h^2 and two active proper links has a transported metric tending uniformly with O(h) error to diag(1,-1,-1-f^2,-1-f^2), f=(2+cos(2*pi*t))/32. Its Ric_AA and G_BB at zero are 24*pi^2/1033. Coframe variance is 9/1024 and the link/raw product square limit is 9/32. The full raw quotient stays noncompact and is not gauge; exact dressed-link constraints and the nonuniform transported coordinate change are checked. The exponential companion has exact geometric two-edge link bonding, separately from the actual frozen native lift. Neither geometric potential decimation nor frozen B0/cochain composition bonds the coframes: the former has squared potential defect one, while the latter has centered-gradient square 4*K. All 24 admitted link directions, ten packed metric components, 21 compiled propositions, 13 actual types, 36 transitive D0 pins, 171 exact controls and 21 false-scope rejections pass. Native preparation/admission, history-to-action law, genuine geometric Euler equations, source, physical Ward, commuting full refinement, soundness/recovery and causal constraints remain required. No new action, selector, physical gate, G0/GR/global closure or original parent terminal is introduced. The next single consumer must decide admission/action/refinement of this full raw/transported resonant family using independently owned laws, not small links alone.",
       "g0_closed": false
     },
@@ -371,6 +375,19 @@
       "affine_universal_class_Lean_formalized": false,
       "actual_native_first_jet_or_action_selected": false,
       "raw_naturality_derived_for_other_weaker_readouts": false,
+      "G0_closed": false
+    },
+    "frozen_gauge_saturated_admission_consumer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#63-exact-admission-boundary-without-a-flat-state-or-open-domain-premise",
+      "source_input_head": "9a724dc37520fd042c00b0a5b330ceae0b563da7",
+      "result": "The literal fixed-reference frozen raw block cannot descend to the full raw Lorentz quotient on any nonempty nondegenerate full-state admission closed under the owned proper frame action. This includes isolated and nonlinear solution classes and requires no flat state, open domain, EOM, link smallness or continuum limit. Every strict native refinement has a B-prefix/C-tail point; its fine Gram BC equals rho F_BC for every coarse F. Four fixed connected proper frames force the entire B row to vanish if that component is orbit constant, contradicting nondegeneracy. Raw binding, gauge closure, nondegeneracy and the necessary fine metric invariance remain explicit premises of the compiled generic full-state theorem. Other state sectors and fine Lorentz frames cannot erase the raw invariant. Homogeneous full-raw B1 instead has a zero row at the same point. The prior nonempty full coarse/fine controls are retained. Forty-five compiled propositions, 37 actual types, 36 D0 pins and 593 exact controls pass; 41 false scopes and 13 false exact ledgers are rejected. Prepared-action mathematics and all 367 controls remain unchanged. This class does not exhaust other native laws, select a gauge preparation, derive a physical action/source/root or close G0/GR/global closure or any original parent terminal.",
+      "generic_full_state_admission_theorem_Lean_formalized": true,
+      "strict_native_refinement_partial_point_Lean_formalized": true,
+      "specified_gauge_closed_nondegenerate_admission": "EMPTY",
+      "flat_state_or_open_domain_required": false,
+      "physical_EOM_or_small_link_required": false,
+      "native_preparation_or_other_transition_selected": false,
+      "whole_core_admission_exhausted": false,
       "G0_closed": false
     }
   }

@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`9a724dc37520fd042c00b0a5b330ceae0b563da7`, following
-`113efe7d8ccd6a49bdba15385fec11c9789813f1`.
+`ad2e43f4eae418d6fe7386d37c7ee4c76400ed42`, following
+`9a724dc37520fd042c00b0a5b330ceae0b563da7`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -493,6 +493,8 @@ local file or an implicitly merged scientific parent.
 
 43. **Full Lorentz-orbit/first-jet boundary and affine raw completeness:** The full frozen raw refinement fails preservation of proper Lorentz orbits even on an arbitrarily small nondegenerate flat gauge orbit. Every differentiable full-state completion retaining the same row-weighted coframe first jet at the flat reference has the same nonzero raw Gram derivative; fine Lorentz frames and links cannot erase that invariant. All six Lorentz tangent directions are retained and zero gauge metric jet is equivalent to equality of all four row weights. The full coarse/fine gauge test is nonempty in all sixteen prefix masks. Fixed doubled ratios have transported squared metric-gap liminf at least 4096/66049 for a fixed small proper rotation; vanishing metric errors and small comparison links preserve it. All connection-independent affine raw intertwiners under independent proper pullback node frames are C_x F(p(x)); invertibility of C_x is exactly full raw-domain preservation, while the fixed raw reference eta forces C_x=I. This unique normalized raw B0 map fails the actual graded one-form chain identity. The complete affine classification is analytic. Thirty-eight compiled propositions, thirty actual types, 36 D0 source pins and 543 exact controls pass; 37 false-scope and ten false-exact ledgers are rejected. Prepared-action prerequisite digest is refreshed with all 367 controls and unchanged mathematics. This derives no other physical refinement, action, source, native root, weaker readout law, G0/GR/global closure or original parent terminal.
 
+44. **Complete literal frozen gauge-saturated admission:** The literal fixed-reference frozen raw block cannot descend to the full raw Lorentz quotient on any nonempty nondegenerate full-state admission closed under the owned proper frame action. This includes isolated and nonlinear solution classes and requires no flat state, open domain, EOM, link smallness or continuum limit. Every strict native refinement has a B-prefix/C-tail point; its fine Gram BC equals rho F_BC for every coarse F. Four fixed connected proper frames force the entire B row to vanish if that component is orbit constant, contradicting nondegeneracy. Raw binding, gauge closure, nondegeneracy and the necessary fine metric invariance remain explicit premises of the compiled generic full-state theorem. Other state sectors and fine Lorentz frames cannot erase the raw invariant. Homogeneous full-raw B1 instead has a zero row at the same point. The prior nonempty full coarse/fine controls are retained. Forty-five compiled propositions, 37 actual types, 36 D0 pins and 593 exact controls pass; 41 false scopes and 13 false exact ledgers are rejected. Prepared-action mathematics and all 367 controls remain unchanged. This class does not exhaust other native laws, select a gauge preparation, derive a physical action/source/root or close G0/GR/global closure or any original parent terminal.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
@@ -835,3 +837,16 @@ The new 38-proposition/543-control snapshot and all 179 byte-identical source
 artifacts have coherent dependency hashes. Current-head CI and CONTROL review
 remain required. G0/GR/global closure, the 44 graph statuses and edges and all
 original scientific parents remain open.
+
+
+The [all-state frozen admission continuation](02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#63-exact-admission-boundary-without-a-flat-state-or-open-domain-premise)
+settles this literal block without a flat-state or open-domain premise.
+The generic full-state admission theorem and actual strict-refinement point
+are compiled; the four proper frame tests force a zero coarse raw row.
+Restricting to isolated/nonlinear gauge-closed roots cannot repair this block.
+Other native transitions, weaker readouts and derived gauge preparation
+remain distinct obligations. The 45-proposition/593-control snapshot and
+all 179 byte-identical source artifacts have coherent dependency hashes.
+Current-head CI and CONTROL review remain required. The 44 graph statuses,
+dependencies, required terminals and all original scientific parents remain
+open and unchanged; no physical action or preparation is installed.

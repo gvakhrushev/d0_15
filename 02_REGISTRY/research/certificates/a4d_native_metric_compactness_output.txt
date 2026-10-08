@@ -226,3 +226,50 @@ D0.Research.NativeMetricCompactness.cayley_rotation_actual_metric_derivative (b 
           (maskedRotation4 b k ((1 - t ^ 2) / (1 + t ^ 2)) (2 * t / (1 + t ^ 2))).transpose)
         1 2)
     (2 * (k - b)) 0
+'D0.Research.NativeMetricCompactness.frozen_partial_metric_reads_any_raw_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.frozen_partial_metric_reads_any_raw_row (d : Fin 4 → ℝ)
+  (F : Matrix (Fin 4) (Fin 4) ℝ) (rho : ℝ) (hb : d 1 = rho) (hc : d 2 = 0) :
+  (frozenAffineRaw4 d F * eta4 * (frozenAffineRaw4 d F).transpose) 1 2 = rho * F 1 2
+'D0.Research.NativeMetricCompactness.rotationCD4_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeMetricCompactness.rotationCD4_lorentz (c z : ℝ) (h : c ^ 2 + z ^ 2 = 1) :
+  rotationCD4 c z * eta4 * (rotationCD4 c z).transpose = eta4
+'D0.Research.NativeMetricCompactness.columnCFrames4_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeMetricCompactness.columnCFrames4_lorentz (j : Fin 4) :
+  columnCFrames4 j * eta4 * (columnCFrames4 j).transpose = eta4
+'D0.Research.NativeMetricCompactness.four_proper_frames_force_raw_row_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.four_proper_frames_force_raw_row_zero (F : Matrix (Fin 4) (Fin 4) ℝ) (r : Fin 4)
+  (h : ∀ (j : Fin 4), (F * columnCFrames4 j) r 2 = F r 2) (a : Fin 4) : F r a = 0
+'D0.Research.NativeMetricCompactness.nondegenerate_raw_orbit_has_frozen_metric_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.nondegenerate_raw_orbit_has_frozen_metric_defect (d : Fin 4 → ℝ)
+  (F : Matrix (Fin 4) (Fin 4) ℝ) (rho : ℝ) (hb : d 1 = rho) (hc : d 2 = 0) (hrho : rho ≠ 0) (hF : F.det ≠ 0) :
+  ∃ j,
+    (frozenAffineRaw4 d (F * columnCFrames4 j) * eta4 * (frozenAffineRaw4 d (F * columnCFrames4 j)).transpose) 1 2 ≠
+      (frozenAffineRaw4 d F * eta4 * (frozenAffineRaw4 d F).transpose) 1 2
+'D0.Research.NativeMetricCompactness.frozen_gauge_saturated_admission_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.frozen_gauge_saturated_admission_empty.{u_3} {X : Type u_3}
+  (raw : X → Matrix (Fin 4) (Fin 4) ℝ) (act : Fin 4 → X → X) (admit : X → Prop) (d : Fin 4 → ℝ) (rho : ℝ)
+  (hb : d 1 = rho) (hc : d 2 = 0) (hrho : rho ≠ 0)
+  (hraw : ∀ (j : Fin 4) (x : X), raw (act j x) = raw x * columnCFrames4 j)
+  (hclosed : ∀ (j : Fin 4) (x : X), admit x → admit (act j x)) (hnondeg : ∀ (x : X), admit x → (raw x).det ≠ 0)
+  (hGram :
+    ∀ (j : Fin 4) (x : X),
+      admit x →
+        admit (act j x) →
+          (frozenAffineRaw4 d (raw (act j x)) * eta4 * (frozenAffineRaw4 d (raw (act j x))).transpose) 1 2 =
+            (frozenAffineRaw4 d (raw x) * eta4 * (frozenAffineRaw4 d (raw x)).transpose) 1 2) :
+  ¬∃ x, admit x
+'D0.Research.NativeMetricCompactness.native_partial_mask_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.native_partial_mask_exists (Nc Nf : ℕ) (h : Nc < Nf) :
+  ∃ x,
+    have y := (D0.Geometry.archiveRolePhasePointGroupEquiv Nf).symm x;
+    ↑(y (0, 1)) < Nc + 2 ∧ Nc + 2 ≤ ↑(y (1, 0))

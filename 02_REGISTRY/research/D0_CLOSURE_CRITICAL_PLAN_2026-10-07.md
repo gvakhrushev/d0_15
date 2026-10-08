@@ -15,7 +15,7 @@
 ## Выполнено по G0
 
 [Первый доказательный пакет](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md) опубликован
-в #310 на `9a724dc37520fd042c00b0a5b330ceae0b563da7` и принят в текущий
+в #310 на `ad2e43f4eae418d6fe7386d37c7ee4c76400ed42` и принят в текущий
 набор артефактов CONTROL для review. Доказана полнота настоящего
 `ActionProtocol`: все цены задаются произвольными неотрицательными
 добавками на различимых парах. Канонический представитель существует
@@ -538,6 +538,27 @@ gauge-compatible переход и первый jet либо вывести св
 Другие first jets, covariant reconstructions, слабые readouts и все цели
 ОТО остаются открыты и требуют собственных владельцев.
 
+### Ограничение frozen-перехода только решениями не устраняет дефект
+
+[Раздел 6.3](02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#63-exact-admission-boundary-without-a-flat-state-or-open-domain-premise)
+решает полный допуск literal fixed-reference frozen raw block: при полной
+proper gauge closure и невырожденности допустимый класс пуст. Это включает
+isolated/nonlinear roots и не требует плоского состояния, open neighborhood,
+EOM, small links или continuum limit. В любой strict refinement есть
+B-prefix/C-tail точка; fine Gram BC=rho F_BC. Четыре proper frames вынудили
+бы нулевую B-строку coarse F, вопреки невырожденности. Generic full-state
+admission theorem и существование native partial point собраны Lean;
+raw binding, gauge closure и необходимая metric orbit law явно сохранены.
+Ранее проверенные непустые coarse/fine controls тоже сохранены.
+
+Homogeneous raw B1 версия имеет нулевую fine строку на той же точке.
+Другой raw-переход или gauge preparation требуют собственных законов и
+не устанавливаются этим результатом. Пакет: 45 propositions, 37 фактических
+типов, 36 D0 pins, 593 controls, 41 ложный scope и 13 подмен точных результатов.
+Следующий единый history/preparation/composition/action закон должен
+предъявить именно реальный gauge-compatible переход или вывести свою
+gauge preparation. Допуск во всём ядре, источник/Ward и цели ОТО открыты.
+
 ## 7. Один ближайший deliverable и следующий отчёт
 
 Ближайший deliverable — G0: замкнутая схема собственного действия,
@@ -547,7 +568,7 @@ gauge-compatible переход и первый jet либо вывести св
 
 ### Уточнённое ТЗ на следующий доказательный пакет — 8 октября
 
-Вход: опубликованный #310 на `9a724dc37520fd042c00b0a5b330ceae0b563da7`,
+Вход: опубликованный #310 на `ad2e43f4eae418d6fe7386d37c7ee4c76400ed42`,
 [полный совместный quotient](A4D_NATIVE_JOINT_FIELD_QUOTIENT.md),
 [классификация parent](A4D_NATIVE_PARENT_LAW_COMPLETENESS.md),
 [метрическая компактность и UV–link конструкция](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md),
