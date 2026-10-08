@@ -1,0 +1,113 @@
+../02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner.lean:118:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner.lean:189:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner.lean:189:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner.lean:189:26: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner.lean:251:56: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D0.Research.NativeTimeFieldIntertwiner.owned_integer_update (z : Core.TimeState) :
+  nativeStep (↑(z 0), ↑(z 1)) = (↑(Core.evolveState 2 z 0), ↑(Core.evolveState 2 z 1))
+D0.Research.NativeTimeFieldIntertwiner.owned_rational_update (q p : ℚ) :
+  nativeStep (↑q, ↑p) = (↑(Dynamics.updateQ q p), ↑(Dynamics.updateP q p))
+D0.Research.NativeTimeFieldIntertwiner.native_inverse_right.{u_1} {E : Type u_1} [AddCommGroup E] [Module ℝ E]
+  (z : E × E) : nativeStep (nativeInverse z) = z
+D0.Research.NativeTimeFieldIntertwiner.native_inverse_left.{u_1} {E : Type u_1} [AddCommGroup E] [Module ℝ E]
+  (z : E × E) : nativeInverse (nativeStep z) = z
+D0.Research.NativeTimeFieldIntertwiner.native_quadratic.{u_1} {E : Type u_1} [AddCommGroup E] [Module ℝ E] (z : E × E) :
+  nativeStep (nativeStep z) - 3 • nativeStep z + z = 0
+D0.Research.NativeTimeFieldIntertwiner.parent_inverse_right.{u_2} {F : Type u_2} [AddCommGroup F] [Module ℝ F]
+  (A : F →ₗ[ℝ] F) (z : F × F) : parentStep A (parentInverse A z) = z
+D0.Research.NativeTimeFieldIntertwiner.parent_inverse_left.{u_2} {F : Type u_2} [AddCommGroup F] [Module ℝ F]
+  (A : F →ₗ[ℝ] F) (z : F × F) : parentInverse A (parentStep A z) = z
+D0.Research.NativeTimeFieldIntertwiner.parent_quadratic_defect.{u_2} {F : Type u_2} [AddCommGroup F] [Module ℝ F]
+  (A : F →ₗ[ℝ] F) (z : F × F) :
+  parentStep A (parentStep A z) - 3 • parentStep A z + z = (-A (parentStep A z).1, -A (parentStep A z).2)
+D0.Research.NativeTimeFieldIntertwiner.intertwiner_range_in_kernel.{u_1, u_2} {E : Type u_1} {F : Type u_2}
+  [AddCommGroup E] [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : F →ₗ[ℝ] F) (P : E × E →ₗ[ℝ] F × F)
+  (h : Intertwines A P) (z : E × E) : A (P z).1 = 0 ∧ A (P z).2 = 0
+D0.Research.NativeTimeFieldIntertwiner.complete_linear_readout.{u_1, u_2} {E : Type u_1} {F : Type u_2} [AddCommGroup E]
+  [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : F →ₗ[ℝ] F) (P : E × E →ₗ[ℝ] F × F) :
+  Intertwines A P ↔ ∃ U V, (∀ (x : E), A (U x) = 0) ∧ (∀ (x : E), A (V x) = 0) ∧ ∀ (z : E × E), P z = reading U V z
+D0.Research.NativeTimeFieldIntertwiner.injective_spatial_operator_forces_zero.{u_1, u_2} {E : Type u_1} {F : Type u_2}
+  [AddCommGroup E] [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : F →ₗ[ℝ] F) (hA : Function.Injective ⇑A)
+  (P : E × E →ₗ[ℝ] F × F) (h : Intertwines A P) : P = 0
+D0.Research.NativeTimeFieldIntertwiner.surjective_readout_forces_zero_spatial_operator.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [AddCommGroup E] [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : F →ₗ[ℝ] F) (P : E × E →ₗ[ℝ] F × F)
+  (h : Intertwines A P) (hs : Function.Surjective ⇑P) : A = 0
+D0.Research.NativeTimeFieldIntertwiner.derivative_of_equivariant_readout.{u_1, u_2} {X : Type u_1} {Y : Type u_2}
+  [NormedAddCommGroup X] [NormedSpace ℝ X] [NormedAddCommGroup Y] [NormedSpace ℝ Y] (B : X →L[ℝ] X) (M : Y →L[ℝ] Y)
+  (f : X → Y) (P : X →L[ℝ] Y) (hf : HasFDerivAt f P 0) (he : ∀ (x : X), f (B x) = M (f x)) : P ∘SL B = M ∘SL P
+D0.Research.NativeTimeFieldIntertwiner.quantitative_defect_identity.{u_1, u_2} {E : Type u_1} {F : Type u_2}
+  [AddCommGroup E] [Module ℝ E] [AddCommGroup F] [Module ℝ F] (A : F →ₗ[ℝ] F) (P : E × E →ₗ[ℝ] F × F) (z : E × E) :
+  (A (P z).1, A (P z).2) = -defect A P z + parentInverse A (defect A P (nativeInverse z))
+D0.Research.NativeTimeFieldIntertwiner.native_continuous_binding.{u_1} {X : Type u_1} [NormedAddCommGroup X]
+  [NormedSpace ℝ X] (z : X × X) : nativeContinuous z = nativeStep z
+D0.Research.NativeTimeFieldIntertwiner.parent_continuous_binding.{u_2} {Y : Type u_2} [NormedAddCommGroup Y]
+  [NormedSpace ℝ Y] (A : Y →L[ℝ] Y) (z : Y × Y) : (parentContinuous A) z = parentStep (↑A) z
+D0.Research.NativeTimeFieldIntertwiner.nonlinear_readout_derivative_range.{u_1, u_2} {X : Type u_1} {Y : Type u_2}
+  [NormedAddCommGroup X] [NormedSpace ℝ X] [NormedAddCommGroup Y] [NormedSpace ℝ Y] (A : Y →L[ℝ] Y) (f : X × X → Y × Y)
+  (P : X × X →L[ℝ] Y × Y) (hf : HasFDerivAt f P 0) (he : ∀ (z : X × X), f (nativeStep z) = parentStep (↑A) (f z))
+  (z : X × X) : A (P z).1 = 0 ∧ A (P z).2 = 0
+D0.Research.NativeTimeFieldIntertwiner.nonlinear_submersive_readout_forces_zero.{u_1, u_2} {X : Type u_1} {Y : Type u_2}
+  [NormedAddCommGroup X] [NormedSpace ℝ X] [NormedAddCommGroup Y] [NormedSpace ℝ Y] (A : Y →L[ℝ] Y) (f : X × X → Y × Y)
+  (P : X × X →L[ℝ] Y × Y) (hf : HasFDerivAt f P 0) (he : ∀ (z : X × X), f (nativeStep z) = parentStep (↑A) (f z))
+  (hs : Function.Surjective ⇑P) : A = 0
+D0.Research.NativeTimeFieldIntertwiner.nonlinear_zero_jet_control (z : ℝ × ℝ) :
+  invariantReading (nativeStep z) = parentStep LinearMap.id (invariantReading z)
+D0.Research.NativeTimeFieldIntertwiner.nonlinear_control_nonconstant : invariantReading (1, 0) ≠ invariantReading (0, 0)
+'D0.Research.NativeTimeFieldIntertwiner.owned_integer_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.owned_rational_update' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.native_inverse_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.native_inverse_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.native_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.parent_inverse_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.parent_inverse_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.parent_quadratic_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.intertwiner_range_in_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.complete_linear_readout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.injective_spatial_operator_forces_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.surjective_readout_forces_zero_spatial_operator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.derivative_of_equivariant_readout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.quantitative_defect_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.native_continuous_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.parent_continuous_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.nonlinear_readout_derivative_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.nonlinear_submersive_readout_forces_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.nonlinear_zero_jet_control' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTimeFieldIntertwiner.nonlinear_control_nonconstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

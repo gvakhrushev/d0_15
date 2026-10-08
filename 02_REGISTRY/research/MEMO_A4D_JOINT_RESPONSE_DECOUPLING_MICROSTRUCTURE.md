@@ -4,6 +4,23 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+Current execution follows the [native-core plan](D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md).
+The [history/response proof](A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md) builds
+the canonical operational quotient and an actual realized response tower,
+including process naturality and the criterion for a fixed depth to be
+autonomous. On `GoldenCoherentMemory.fullStep`, two normalized states with
+both present marginals equal have the exact two-return Z difference
+`-8*p^6`; no fresh record is inserted between these transitions. Full
+archive history and source-preserving elimination retain both determinant
+variations of the existing feedback action. The whole finite-depth
+response consumes the owned profinite factorization, while compactness
+proves compatible-history realization. Golden cylinder expectations and
+isometric amplitude inclusions are preserved, with explicit reversible
+blank-factor preparation. The compiler checks 42 actual propositions; the
+exact ledger checks 189 controls. The next proof must bind the full joint
+history/record operators and their action to these owned inclusions. G0, physical GR and the original fixed-source/raw-owner
+terminal remain open; the earlier time-field result is a scoped control.
+
 The [actual weighted Hodge–Dirac follow-up](A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md)
 constructs the documented weighted adjoint on the real D0 cochains instead
 of relying on the old Boolean owner. Thirty-four propositions compile
@@ -2637,3 +2654,30 @@ No selected D(g), new action or physical gate is added. Native realization,
 curved soundness/recovery and original #310 fixed-source/raw-owner terminal
 remain OPEN. The published spectral/reference/cochain parts retain their
 own scopes and source receipts through the linked native inventory.
+
+
+## Native time preparation: complete regular readout boundary (2026-10-08)
+
+The [native time-to-field theorem](A4D_NATIVE_TIME_FIELD_INTERTWINER.md)
+consumes the actual integer/rational two-tick evolution and the already
+constructed common-parent transfer M_A. Every real linear intertwiner is
+exactly P=[[U,V],[V,U-V]], with AU=AV=0; its image is the full retained
+spatial kernel. The nonlinear first-jet version follows from the actual
+chain rule at the native fixed state. A surjective first jet forces A=0.
+No self-adjointness or diagonalizability is assumed in the classification.
+
+The exact defect identity D_A P=-E+M_A^-1 E B^-1 yields an explicit
+approximation bound; a vanishing error cannot retain a uniformly regular
+right inverse on a uniformly separated coupled mode. These norm and limit
+corollaries remain analytic. Nonconstant polynomial and smooth elliptic
+factors with zero first jet protect the nonlinear scope. Integer native
+states are not claimed to supply continuous variations or physical time.
+
+Twenty propositions and actual types compile with standard logical axioms;
+163 exact controls check full Sylvester spaces, kernel retention, symbolic
+signs and necessary hypotheses against three D0 source pins. This resolves
+the direct regular two-tick preparation class, not every coupled native
+history law. No action, selector, field lift or physical equation is added.
+G0 and source/Ward, contrast, curved solutions, soundness/recovery and the
+original #310/#202/#317 terminals remain open. Work proceeds in the existing
+execution; no external-model assignment or waiting prerequisite is created.
