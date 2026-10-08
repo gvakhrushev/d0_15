@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "df62de4b2423a208f81e1e91fa77c4cd31fb2b4093b6a8df3944315be16bbe09",
-      "source_blob": "252441b7747b926142db0385b92ae40f10bf616c"
+      "sha256": "cda3ff2c71e6e0e3131b1e9cb052955b21a6b95260d8145459e22d14db7e26c1",
+      "source_blob": "708e37468142cdf218337d670727efecea57f5b4"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "a5e7e79a5298668db24827e3c0ef1a0a5f0dd9e52811975dc49d99f55a56f8bd",
-      "source_blob": "c40328a2968b6d34b052861629ad4ddc880d2644"
+      "sha256": "589c10c91053eee0f88242d6a8f3176b5a2cc15b61cbe80979f47924b9ae1107",
+      "source_blob": "91ee6d1bd07ece27d4db9a57ba51e577ae67609e"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -1041,6 +1041,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_results.json",
       "sha256": "e2518ca7c2ce53e24dd70dcea3e3fd7dc864317719e071412234ba06c0bcebc7",
       "source_blob": "321e3cdc9c976ad9b9aaf0bef2c2ee661144469b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md",
+      "sha256": "f15fe957c6c9d7029d9b1a3faa61baa6aa04f15a81eeeeabc847b4b0e7870220",
+      "source_blob": "c70e070d55c7e8aa73fb5588a9eb4d7712b20bfb"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean",
+      "sha256": "c9a07f7402eb7da9fa8eb4c795e7f3195c2d5050b7246cfc4c9e845567e30525",
+      "source_blob": "f387150f5efde3321f6a9d150df1cbb1312c875f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_certificate.json",
+      "sha256": "48eb529def8b152f96c967a08ce2e2f9b1cd8ea11bc39dd2cf47b015d1d6beec",
+      "source_blob": "c395d5894972b2a6adea304c1022b6a594ee7d93"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_check.py",
+      "sha256": "d076821b312fd66247deb636048398362477cf5d4586489affc20f462815836b",
+      "source_blob": "809d85821fe1be1715eb30a13975765e287d10b4"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_output.txt",
+      "sha256": "2fee4c695c9421226728c5f9ba2d30c22d9f413f00a234ebea529b184aaa2fd9",
+      "source_blob": "b635f8f7ac9c5e4bb7c6d917a1aaf3f3680cacb0"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_results.json",
+      "sha256": "71e22640f12d44d8205b2b55b285f87e6db92426e26e7243cbc07022dc331716",
+      "source_blob": "f8400f4cd2baedc885b08ce8e1fde7bccc850c8d"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1049,7 +1079,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "0cc2bc2711234dfced8b815fc23e9c67181234a9",
+  "previous_source_head": "1093df6bbd2f7a0fb91204e87240ad035256d661",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1108,11 +1138,12 @@
     "Both actual golden histories J and GJ determine the complete passive spectral class: their two intertwining defects vanish iff the full fine operator is the literal two-copy lift. The full defect reconstructs every spectral change; with first-history naturality the second defect is exactly the golden-tick/scene commutator. Conditional genuine matrix-heat and whole-bootstrap derivatives show that a passive spectral family with literal feedback cannot transfer a nonzero coarse thermal source. At a replicated spectral value, the exact first-jet thermal contraction and response-null kernel are compiled; pointwise compatibility does not imply source compatibility. The complete self-adjoint first-history class and necessary defect lower bounds are analytically proved. The current package has 215 compiled propositions, 17 D0 source pins and 670 exact controls. This is a complete declared finite spectral class, not exhaustion or physical admission of the D0 core. Scene passivity is not derived from M1; no spectral complement or source is fitted. The actual joint primitive/tangent/refinement owner, physical actuation/readout, uniform bounds, native on-shell equations and local metric/matter Ward remain open. No action, trace, temperature rule, selector, coupling, postulate, G0/GR/global closure or parent terminal is changed. All 104 false-scope and 77 false-exact ledgers were rejected by the actual checker.",
     "Owned one-step scene-history realization: the actual 718 oriented histories, endpoint/source lifts Jt/Js, normalized average C1 and native reverseEdge produce a full orthogonal reversal with CRJ=T and CR^2J=I. Its exact feedback is J(I-T^2)C, compressed I-T^2=2*Delta-Delta^2 for the existing normalized scene Delta. All archive-delay kernels are (I-T^2)(-T)^k; the full retained resolvent is (I+zT)/(1-z^2). All 30 balanced directions leave the endpoint readout at one return and are recovered at two. Full-history covariance preserves both source and endpoint, so the vertex-only equivariant no-go is not a whole-history obstruction. The ordinary feedback determinant reduces exactly; its native rank is 32, generated history dimension 65 and retained complement 653. The new standalone package has 60 compiled propositions, 30 D0 source pins and 246 exact controls. Physical admission, full-history heat/refinement, complete tangent law, local source/Ward, native stationarity, contrast, curved roots, soundness/recovery, GR and original terminals remain open. No action, trace, temperature law, selector, coupling, source or postulate is added. All 32 false-scope and 24 false-exact ledgers were rejected by the actual checker.",
     "Complete declared finite selfadjoint joint-readout extension class on the owned 718 histories: a constructed rational inverse and projector K, generated heat block A0, unique entire parameter B with BK=KB=0, kernel cardinality/traces 718/65/653 and a nonzero rectangle witness. All simultaneous graph relabelings leave 19 symmetric extension parameters, or 13 when reversal commutation is required, by complete exact orbital equations. The scalar complementary family keeps both readouts and reversal but has genuine nonzero heat-action derivative; full and scene sources agree precisely when Zscene*dZB=(ZB-1)*dZscene. 158 actual compiled propositions, 30 D0 pins and 246 exact controls. No full history heat trace is installed as native, scalar admission or condensed refinement is derived, and no G0, source/Ward, physical stationarity, GR or parent terminal is promoted. All 30 false-scope and 22 false-exact ledgers were rejected by the actual checker.",
-    "Certificate freshness repair at 1093df6bbd2f7a0fb91204e87240ad035256d661: the retained-history descent ledger plan_sha256 now binds the current execution plan. Its 42 propositions, 189 exact controls, proof, source/toolchain pins and scientific scope are unchanged; all 208 copies match source. Failed runs 37842211412/37843183722 detected the stale plan pin and do not count as successful current-head CI."
+    "Certificate freshness repair at 1093df6bbd2f7a0fb91204e87240ad035256d661: the retained-history descent ledger plan_sha256 now binds the current execution plan. Its 42 propositions, 189 exact controls, proof, source/toolchain pins and scientific scope are unchanged; all 208 copies match source. Failed runs 37842211412/37843183722 detected the stale plan pin and do not count as successful current-head CI.",
+    "Complete finite retained phi preparation from the owned golden and recording definitions: literal 2^45 seed unitary, full recursive words, every-coordinate retained coefficients, actual 33-vertex incoming fibers and degrees 20/22/24, native G^8 phase, two-stage failure <=16^(-k)/10 and complete-vector squared error <=16^(-k)/5 against an explicitly phase-preserving normalized successful target. Exact expanded word cost gives an inverse-square failure bound. Whole-cylinder prefix extensions intertwine at every depth and preserve the error; singleton fine-blank phases fail. The actual 20/24 successful phase area is nonzero, so a common phase cannot supply the physical isometry. 151 compiled propositions, 12 transitive D0 pins and 239 exact controls. Boolean/address/relative-phase physical admission, native MDL/kappa and heat/tangent ownership remain open; no G0b, source/Ward, stationarity, GR or parent terminal is promoted. All 32 false-scope and 15 false-exact ledgers were rejected by the actual checker."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "1093df6bbd2f7a0fb91204e87240ad035256d661",
+  "source_head": "353fbbde33be5437b9be3d432e6ef5451afe56c1",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "0cc2bc2711234dfced8b815fc23e9c67181234a9",
+  "source_parent": "1093df6bbd2f7a0fb91204e87240ad035256d661",
   "source_pr": 310
 }

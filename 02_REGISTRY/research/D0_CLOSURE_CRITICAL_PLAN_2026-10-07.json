@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "df62de4b2423a208f81e1e91fa77c4cd31fb2b4093b6a8df3944315be16bbe09",
+    "sha256": "cda3ff2c71e6e0e3131b1e9cb052955b21a6b95260d8145459e22d14db7e26c1",
     "global_census": false
   },
   "history_diagnosis": {
@@ -269,7 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": "G0b: derive the native primitive state/admission and its actual heat carrier, spectral operator and complete tangent/refinement law from p0/golden/recording owners. Book 03 default scene heat remains intact. Apply the finite joint-history return construction; if a full history heat law is independently owned, use the complete extension constraints and source condition instead of fitting its spectrum. Condensed operator naturality is still a supplied premise. Retain all nongauge record directions; derive physical source/Ward, quantitative contrast, genuine native stationarity, curved roots, soundness/recovery and physical constraints with no new action or postulate.",
+    "next_proof_packet": "G0b: construct actual admitted Boolean/address and relative-phase control, or prove readout/operator covariance for the derived per-vertex phase, from the p0/golden/recording owners. Bind the literal preparation cost to the independently owned native MDL/kappa/refinement budget and actual heat carrier/tangent/action law. Use the complete retained record and exact cylinder extension, never scalar stopping or a new fine singleton as native preparation. Then own source/Ward, quantitative contrast, genuine native stationarity, curved joint roots, soundness/recovery and physical constraints. No new action, temperature, selector, coupling/source prescription or physical postulate.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -532,6 +532,25 @@
       "changed_field": "retained_history_descent.plan_sha256",
       "scientific_proof_scope_unchanged": true,
       "current_head_CI_required": true
+    },
+    "golden_history_preparation": {
+      "source_head": "353fbbde33be5437b9be3d432e6ef5451afe56c1",
+      "input_head": "1093df6bbd2f7a0fb91204e87240ad035256d661",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md",
+      "compiled_propositions": 151,
+      "transitive_d0_source_pins": 12,
+      "exact_controls": 239,
+      "false_scope_rejections": 32,
+      "false_exact_rejections": 15,
+      "result": "Complete finite retained phi preparation from the owned golden and recording definitions: literal 2^45 seed unitary, full recursive words, every-coordinate retained coefficients, actual 33-vertex incoming fibers and degrees 20/22/24, native G^8 phase, two-stage failure <=16^(-k)/10 and complete-vector squared error <=16^(-k)/5 against an explicitly phase-preserving normalized successful target. Exact expanded word cost gives an inverse-square failure bound. Whole-cylinder prefix extensions intertwine at every depth and preserve the error; singleton fine-blank phases fail. The actual 20/24 successful phase area is nonzero, so a common phase cannot supply the physical isometry. 151 compiled propositions, 12 transitive D0 pins and 239 exact controls. Boolean/address/relative-phase physical admission, native MDL/kappa and heat/tangent ownership remain open; no G0b, source/Ward, stationarity, GR or parent terminal is promoted.",
+      "remaining": "G0b: construct actual admitted Boolean/address and relative-phase control, or prove readout/operator covariance for the derived per-vertex phase, from the p0/golden/recording owners. Bind the literal preparation cost to the independently owned native MDL/kappa/refinement budget and actual heat carrier/tangent/action law. Use the complete retained record and exact cylinder extension, never scalar stopping or a new fine singleton as native preparation. Then own source/Ward, quantitative contrast, genuine native stationarity, curved joint roots, soundness/recovery and physical constraints. No new action, temperature, selector, coupling/source prescription or physical postulate.",
+      "complete_declared_finite_experiment_and_cylinder_extension": true,
+      "physical_Boolean_relative_phase_and_native_budget_admission_derived": false,
+      "G0b_closed": false,
+      "G0_closed": false,
+      "intake_artifacts": 214,
+      "verified_artifact_input_hash_versions": 435,
+      "verified_current_input_hash_versions": 334
     }
   }
 }

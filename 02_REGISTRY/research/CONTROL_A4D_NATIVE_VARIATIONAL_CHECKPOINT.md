@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`1093df6bbd2f7a0fb91204e87240ad035256d661`, following
-`0cc2bc2711234dfced8b815fc23e9c67181234a9`.
+`353fbbde33be5437b9be3d432e6ef5451afe56c1`, following
+`1093df6bbd2f7a0fb91204e87240ad035256d661`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -16,6 +16,29 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Complete retained golden preparation, 2026-10-09
+
+The [new preparation proof](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md)
+constructs a complete 2^45 seed and literal recursive words with all raw
+records retained. Actual 33-vertex incoming fibers and degrees 20/22/24
+are bound. The native G^8 phase gives, after two initial stages, failure
+<=16^(-k)/10 and a whole-vector squared error <=16^(-k)/5 against an
+explicit phase-preserving normalized successful target. The literal
+expanded syntax has an inverse-square failure/cost bound. Whole-cylinder
+prefix extension intertwines at every depth; singleton fine-blank phases
+fail. The actual successful relative phase of degrees 20 and 24 is nonzero,
+so a common phase does not provide the physical history isometry.
+
+There are 151 actual compiled propositions, 12 transitive D0 pins and
+239 exact controls. The actual checker rejects all 32 false-scope and
+15 false-exact ledgers. Physical Boolean/address/relative-phase admission,
+native MDL/kappa/refinement budget and actual heat/tangent/action ownership
+remain open. Cylinder naturality is constructed for this prefix program;
+M1 does not thereby force or classify all native operators. Own source/Ward,
+contrast/stationarity, curved roots, soundness/recovery, GR and parent
+criteria remain open. No new action, phase angle, temperature, selector,
+coupling/source prescription or physical postulate is installed.
 
 ## Current native-core execution, 2026-10-08
 
@@ -156,7 +179,7 @@ is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 427 current artifact/input hash versions match (328 input versions).
+are unchanged. All 435 current artifact/input hash versions match (334 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
 The preceding source `e7ef84c6` passed CI `37829415818` and CONTROL
@@ -166,8 +189,11 @@ substitute for current validation.
 
 ## Enumerated artifact slice
 
+* [Complete retained golden preparation](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md),
+  its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
+
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-208 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+214 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [Complete joint-readout spectral extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance),
   its standalone exact checker/ledger and compiled capsule, transcript and source receipt.
@@ -1011,3 +1037,8 @@ certificate plan pin. Its 42 propositions and 189 controls, the new
 158-proposition proof and every scientific scope are unchanged. Runs
 37842211412/37843183722 detected the stale plan binding; repaired heads
 require fresh CI and CONTROL review. No failed run is counted as a pass.
+
+Current source `353fbbde33be5437b9be3d432e6ef5451afe56c1` and this updated CONTROL intake require their
+own current-head CI and CONTROL review. Source `1093df6b` and CONTROL
+`55ae50d2` passed CI `37843792462` and `37844116685`; those earlier
+heads do not substitute for current validation. No self-merge.

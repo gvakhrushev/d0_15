@@ -857,3 +857,38 @@ plan_sha256 исторического history-response descent после из�
 execution plan. Proof, 42/189, новый 158/246 и scientific scope сохранены.
 Предыдущие CI 37842211412/37843183722 остановились на stale plan pin;
 новые головы требуют своих успешных CI и CONTROL review.
+
+
+## Полная сохраняемая φ-подготовка и цилиндрическое уточнение — текущий шаг
+
+Источник #310: `353fbbde33be5437b9be3d432e6ef5451afe56c1`, вход `1093df6bbd2f7a0fb91204e87240ad035256d661`.
+[Доказательство](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md) строит actual
+2^45 seed, каждое полное recursive word и его покоординатные коэффициенты.
+Связаны входящие histories всех 33 вершин и собственные degrees 20/22/24.
+Фаза — восьмая степень собственного G. После двух начальных стадий
+failure<=16^(-k)/10, полный squared state error<=16^(-k)/5 до явно
+фазосохраняющей normalized successful части. Полная word syntax даёт
+inverse-square failure/cost bound. Весь coarse blank cylinder, а не
+одна новая fine-точка, должен получать ту же фазу: только этот prefix
+extension согласован с золотым включением на каждой стадии. Rate при
+уточнении сохраняется точно. Различие relative success phases degrees
+20/24 доказано для actual φ в kernel; одним общим phase оно не снимается.
+
+151 actual compiled propositions, 12 D0 pins, 239 exact controls;
+32 false-scope и 15 false-exact ledgers отвергнуты. CONTROL содержит
+214 byte-identical artifacts, 435 artifact/input hash versions и
+334 current input versions. Все 44 контракта/статуса, dependencies и
+исторические entries сохранены. Это полная finite preparation construction
+и её cylinder extension; physical Boolean/address/phase admission,
+native MDL/kappa/refinement budget и heat/tangent/action ownership ещё
+требуют собственных владельцев. Нормированная successful часть в оценке
+не объявлена безусловным native state. G0b/G0, source/Ward, contrast,
+native stationarity, curved roots, soundness/recovery, физические
+ограничения, ОТО и исходные родители открыты.
+
+Следующий шаг — реальный разрешённый relative-phase/readout transfer
+и Boolean controller вместе с native ресурсным/variational законом.
+Использовать уже построенный полный след памяти и cylinder naturality;
+не подменять их stopped retry, новым fine blank или новой action/phase
+angle/temperature/coupling/source prescription. Новые source/CONTROL
+головы требуют собственного CI и CONTROL review.
