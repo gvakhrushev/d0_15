@@ -170,6 +170,36 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [Fintype n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:827:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.golden_factor_owned_blocks`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:857:10: warning: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵h̵p̵]̵[̲M̲a̲t̲r̲i̲x̲.̲s̲m̲u̲l̲_̲m̲u̲l̲,̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲h̲p̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:857:26: warning: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵h̵p̵]̵[̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲h̲p̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:900:20: warning: This simp argument is unused:
+  Matrix.zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [̵o̵w̵n̵e̵d̵G̵o̵l̵d̵e̵n̵F̵a̵c̵t̵o̵r̵,̵l̵i̵f̵t̵O̵p̵e̵r̵a̵t̵o̵r̵,̵M̵a̵t̵r̵i̵x̵.̵f̵r̵o̵m̵B̵l̵o̵c̵k̵s̵_̵m̵u̵l̵t̵i̵p̵l̵y̵,̵
+  ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵z̵e̵r̵o̵_̵m̵u̵l̵,̵s̵m̵u̵l̵_̵z̵e̵r̵o̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵]̵[̲o̲w̲n̲e̲d̲G̲o̲l̲d̲e̲n̲F̲a̲c̲t̲o̲r̲,̲ ̲l̲i̲f̲t̲O̲p̲e̲r̲a̲t̲o̲r̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲f̲r̲o̲m̲B̲l̲o̲c̲k̲s̲_̲m̲u̲l̲t̲i̲p̲l̲y̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲s̲m̲u̲l̲,̲
+  ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲s̲m̲u̲l̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲o̲n̲e̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲s̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 D0.Research.NativeComposedFeedbackDynamics.archive_on_incoming.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
   [Fintype m] [DecidableEq n] [DecidableEq m] (a : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) (hR : R.transpose * R = 1)
   (hV : V * R = 0) : D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V * R = a • S
@@ -808,5 +838,124 @@ D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_observable_pullback.
   [DecidableEq n] (f : n → ℝ) :
   Matrix.diagonal (Sum.elim f f) = D0.Research.NativeComposedFeedbackDynamics.liftOperator (Matrix.diagonal f)
 'D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_observable_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.golden_factor_owned_blocks.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (a p : ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p =
+    D0.Research.NativeComposedFeedbackDynamics.minimalJoint a p 1
+'D0.Research.NativeComposedFeedbackDynamics.golden_factor_owned_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.golden_factor_orthogonal.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1) :
+  (D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p).transpose *
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p =
+    1
+'D0.Research.NativeComposedFeedbackDynamics.golden_factor_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.two_native_preparation_columns.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) :
+  (∀ (i : n ⊕ n) (j : n),
+      D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrame a p i (Sum.inl j) =
+        D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p i j) ∧
+    ∀ (i : n ⊕ n) (j : n),
+      D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrame a p i (Sum.inr j) =
+        (D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p *
+            D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p)
+          i j
+'D0.Research.NativeComposedFeedbackDynamics.two_native_preparation_columns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.preparation_coordinates_inverse.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (hp : p ≠ 0) :
+  D0.Research.NativeComposedFeedbackDynamics.preparationCoordinates a p *
+        D0.Research.NativeComposedFeedbackDynamics.preparationCoordinatesInverse a p =
+      1 ∧
+    D0.Research.NativeComposedFeedbackDynamics.preparationCoordinatesInverse a p *
+        D0.Research.NativeComposedFeedbackDynamics.preparationCoordinates a p =
+      1
+'D0.Research.NativeComposedFeedbackDynamics.preparation_coordinates_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.all_four_returns_reconstruct_coordinates.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (hp : p ≠ 0) :
+  D0.Research.NativeComposedFeedbackDynamics.recoverGoldenCoordinates a p
+      (D0.Research.NativeComposedFeedbackDynamics.nativeCrossReturns a p U) =
+    (D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p).transpose * U *
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p
+'D0.Research.NativeComposedFeedbackDynamics.all_four_returns_reconstruct_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.all_four_returns_reconstruct_full_operator.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (hp : p ≠ 0) (h : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p *
+        D0.Research.NativeComposedFeedbackDynamics.recoverGoldenCoordinates a p
+          (D0.Research.NativeComposedFeedbackDynamics.nativeCrossReturns a p U) *
+      (D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p).transpose =
+    U
+'D0.Research.NativeComposedFeedbackDynamics.all_four_returns_reconstruct_full_operator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.native_cross_returns_injective.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (hp : p ≠ 0) (h : a ^ 2 + p ^ 2 = 1) :
+  Function.Injective (D0.Research.NativeComposedFeedbackDynamics.nativeCrossReturns a p)
+'D0.Research.NativeComposedFeedbackDynamics.native_cross_returns_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.golden_factor_commutes_literal_readout.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (P : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p *
+      D0.Research.NativeComposedFeedbackDynamics.liftOperator P =
+    D0.Research.NativeComposedFeedbackDynamics.liftOperator P *
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p
+'D0.Research.NativeComposedFeedbackDynamics.golden_factor_commutes_literal_readout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.full_literal_feedback_coordinates.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (P : Matrix n n ℝ) (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (h : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.fullFeedback (D0.Research.NativeComposedFeedbackDynamics.liftOperator P)
+      ((D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p).transpose * U *
+        D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p) =
+    (D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p).transpose *
+        D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+          (D0.Research.NativeComposedFeedbackDynamics.liftOperator P) U *
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p
+'D0.Research.NativeComposedFeedbackDynamics.full_literal_feedback_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.literal_action_from_all_four_returns.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p z : ℝ) (P : Matrix n n ℝ) (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (hp : p ≠ 0) (h : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+      (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator P) U) =
+    D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+      (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator P)
+        (D0.Research.NativeComposedFeedbackDynamics.recoverGoldenCoordinates a p
+          (D0.Research.NativeComposedFeedbackDynamics.nativeCrossReturns a p U)))
+'D0.Research.NativeComposedFeedbackDynamics.literal_action_from_all_four_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_two_preparation_source.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p z t source : ℝ) (P : ℝ → Matrix n n ℝ) (U : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ) (hp : p ≠ 0)
+  (h : a ^ 2 + p ^ 2 = 1)
+  (hd :
+    HasDerivAt
+      (fun s =>
+        D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+          (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+            (D0.Research.NativeComposedFeedbackDynamics.liftOperator (P s))
+            (D0.Research.NativeComposedFeedbackDynamics.recoverGoldenCoordinates a p
+              (D0.Research.NativeComposedFeedbackDynamics.nativeCrossReturns a p (U s)))))
+      source t) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+        (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+          (D0.Research.NativeComposedFeedbackDynamics.liftOperator (P s)) (U s)))
+    source t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_two_preparation_source' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]

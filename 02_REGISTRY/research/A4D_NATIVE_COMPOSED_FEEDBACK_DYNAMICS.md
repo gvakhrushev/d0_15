@@ -4,6 +4,7 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, existing Draft #310.
 Input research head: `609e7daa7c801254ee671874750c5bc61f4efc71`.
 Input main: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Prepared-readout follow-up input: `58407f912e6f4cedfff3625cdd4e7ba09c6e7951`.
+Two-native-preparation follow-up input: `7479dbcb5970b4450912cc848a53e1622e9524af`.
 Consumer: G0b in `D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md`.
 Status: proved finite operator/action/refinement slice; G0--G4 remain open.
 
@@ -21,6 +22,12 @@ history action, transports its genuine moving source, and proves explicit
 finite action-error bounds. Literal cylinder readout is bound to replicated
 multiplication; it is kept distinct from the image-supported preparation
 filter. No physical readout is changed to obtain an action identity.
+
+The two-preparation follow-up restores the full literal-cylinder experiment:
+the owned preparation J and its next native history GJ span the entire new
+factor. All four cross-return operators reconstruct the full joint operator,
+including complementary dynamics, and hence its literal feedback action and
+actual derivative. Reconstruction does not select the physical scene law.
 
 This result uses the actual entries of
 `D0.Representation.GoldenOrderInterferometer.gate` and
@@ -469,22 +476,121 @@ nonvanishing action gap tending to `log 2` although `C-D -> 0`.
 No O(h) native metric preparation, calibrated Palatini contrast,
 source-subtracted stationarity, soundness or recovery is assumed here.
 
+### 6.4. The owned next history resolves the complete new factor
+
+The complement of one preparation need not be a permanently hidden sector.
+Apply the **same owned golden gate** G to the new factor, retaining all old
+coordinates. Put J_0=J and J_1=GJ. The native orthogonal frame gives
+
+\[
+ G=\begin{pmatrix}aI&-pI\\pI&aI\end{pmatrix},\quad
+ T=\begin{pmatrix}I&aI\\0&pI\end{pmatrix},\quad B=[J_0,J_1]=GT,
+ \quad T^{-1}=\begin{pmatrix}I&-aI/p\\0&I/p\end{pmatrix}. \tag{23}
+\]
+
+For p!=0 these two preparations span the entire new layer, at every old
+finite dimension. The second preparation is a full native history, not a
+power of a compressed scalar return. The capsule binds G to actual gate
+entries, identifies both columns and proves both inverse identities.
+
+For an arbitrary full operator U retain **all four signed cross-return
+operators**. Then
+
+\[
+ R_{ij}=J_i^TUJ_j,\quad R=B^TUB,\quad
+ C=T^{-T}RT^{-1}=G^TUG,\quad U=GCG^T.                 \tag{24}
+\]
+
+This reconstructs the unique operator from independently specified return
+data. The explicit blocks are
+
+\[
+ C_{00}=R_{00},\quad C_{01}=(R_{01}-aR_{00})/p,\quad
+ C_{10}=(R_{10}-aR_{00})/p,
+\]
+\[
+ C_{11}=(R_{11}-aR_{10}-aR_{01}+a^2R_{00})/p^2.       \tag{25}
+\]
+
+No splitter angle, complementary selector or enumeration of candidate
+dynamics is introduced. All cross blocks are essential: the exact G versus
+G^T control has identical diagonal return amplitudes but different cross
+returns. Diagonal readings or their probabilities alone are insufficient.
+Full signed amplitude readout requires controlled routing, inverse access
+and interference implementation. `GoldenOrderInterferometer` explicitly
+retains those requirements; this matrix theorem does not prove physical
+availability on every scene factor.
+
+Literal cylinder readout L(P) commutes with G for every P. Consequently
+
+\[
+ F(L(P),C)=G^TF(L(P),U)G,\qquad
+ S_z(F(L(P),U))=S_z(F(L(P),T^{-T}RT^{-1})).            \tag{26}
+\]
+
+These identities, full operator injectivity and genuine derivative transport
+for moving U,P are compiled. They need no orthogonality of U for the algebraic
+identity and no preservation of im J. Physical action still requires the
+positive-pencil domain. Golden calibration is fixed through variations.
+The prior complementary extensions are now distinguished by the second
+preparation. More sharply, U(t)=G diag(I,H(t)) G^T has first prepared return
+exactly I at every t, but the full literal determinant is
+`1-4*z*t^2/(1+t^2)^2`. Its derivative is nonzero at t=1/3. The complete
+four-return reconstruction preserves that genuine source.
+
+The analytic error bound follows from
+
+\[
+ T^TT=\begin{pmatrix}I&aI\\aI&I\end{pmatrix},\qquad
+ \|T^{-1}\|_{op}^2={1\over1-|a|}.
+\]
+
+Indeed the symmetric/antisymmetric sectors have eigenvalues 1+a and 1-a;
+a^2+p^2=1 and p!=0 give |a|<1. Hence
+
+\[
+ \|U-V\|_{op}\le {\|R_U-R_V\|_{op}\over1-|a|}.        \tag{27}
+\]
+
+For orthogonal U,V, fixed P of rank r and 0<z<1, apply (20) on the actual
+full literal readout of rank 2r:
+
+\[
+ |S_z(F(L(P),U))-S_z(F(L(P),V))|
+ \le {4rz\over(1-z)(1-|a|)}\|R_U-R_V\|_{op}.          \tag{28}
+\]
+
+These norm estimates are analytic. Independent application to d declared
+new golden factors gives the tensor preparation frame and inverse squared
+norm `(1-|a|)^(-d)`. This is an all-depth algebraic induction; literal active
+rank grows as well. The conditioning cannot be suppressed without a native
+error/normalization theorem. Its growth alone does not exclude approximation.
+
+Thus complete native cross returns determine the whole declared operator
+class without a separate arbitrary complementary selector. Remaining inputs
+are the actual joint scene law, admitted variations and physical preparation/
+readout implementation, with errors controlled through (27). The result does
+not prove that this class exhausts all D0 physical states, or derive the
+metric/coframe/link/matter dynamics by supplying them as matrix parameters.
+
 ## 7. Verification and next load-bearing input
 
-`certificates/a4d_native_composed_feedback_dynamics.lean` contains 76
+`certificates/a4d_native_composed_feedback_dynamics.lean` contains 87
 compiled propositions, with each actual type and transitive axiom list
 printed in its transcript. The receipt pins all four transitively imported
 D0 sources and the actual toolchain inputs. Standard logical axioms only;
-no new axiom or placeholder. The companion exact checker passes 275 controls and binds the book,
+no new axiom or placeholder. The companion exact checker passes 315 controls and binds the book,
 native matrices, complete-block identities, delayed archive control,
 composed source, joint projection refinement, determinant scaling and
 immutable result ledger. Finite controls do not replace the all-size proofs.
 
 The remaining single G0b input is now the **joint scene process under its
-actual finite readout**. The cylinder-value branch already fixes replicated
-readout L(P); its complementary active sector and coupled returns must be
-kept. Derive the complete native fine return blocks and their admitted
-variations, then apply (20)--(22) with the native rank/normalization law.
+actual finite readout and full cross-return preparations**. The cylinder
+branch fixes L(P); two owned golden histories reconstruct its entire
+operator from all four return blocks. Derive those blocks and their
+admitted variations from the scene law, including physical preparation,
+controlled routing and readout access. Apply (20)--(22), (27)--(28) with
+native rank/normalization and recording bounds.
 For the distinct image-supported preparation test, all completion effects
 are already exhausted by (16)--(17); one need not choose its unobservable
 coordinates. Equating these two experiments is explicitly rejected. This

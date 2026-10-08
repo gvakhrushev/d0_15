@@ -8,7 +8,7 @@ from pathlib import Path
 
 import sympy as s
 
-HEAD = '58407f912e6f4cedfff3625cdd4e7ba09c6e7951'
+HEAD = '7479dbcb5970b4450912cc848a53e1622e9524af'
 BASE = '02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics'
 PROOF = '02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md'
 SCOPE = {
@@ -39,6 +39,14 @@ SCOPE = {
     'actual_action_factors_through_full_return_with_leakage_Lean_formalized': True,
     'moving_preparation_readout_and_operator_source_Lean_formalized': True,
     'all_size_quantitative_action_stability': 'ANALYTIC_WITH_EXPLICIT_RANK_AND_RESOLVENT_FACTORS',
+    'two_owned_golden_preparations_bound_Lean_formalized': True,
+    'all_four_cross_returns_reconstruct_arbitrary_full_operator_Lean_formalized': True,
+    'literal_cylinder_action_from_all_four_returns_Lean_formalized': True,
+    'actual_two_preparation_source_transport_Lean_formalized': True,
+    'one_layer_reconstruction_error_bound': 'ANALYTIC_WITH_FACTOR_1_OVER_1_MINUS_ABS_A',
+    'all_cross_return_physical_readout_availability_derived': False,
+    'diagonal_return_probabilities_determine_full_operator': False,
+    'whole_native_scene_process_selected_by_tomography': False,
     'full_return_equals_power_of_one_step_compression': False,
     'invariant_prepared_subspace_assumed_for_full_return_identity': False,
     'whole_physical_fine_readout_selected_as_image_projector': False,
@@ -93,7 +101,7 @@ def main():
     check('CAPSULE_AND_TRANSCRIPT_FRESH', receipt['capsule_sha256'] == sha(BASE+'.lean')
           and receipt['output_sha256'] == sha(BASE+'_output.txt'))
     check('ALL_ACTUAL_PROPOSITIONS_AND_DEPENDENCIES', declarations == receipt['declarations']
-          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 76)
+          and len(declarations) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 87)
     check('NO_PLACEHOLDER_OR_COMPILER_ERROR', 'sorryAx' not in transcript
           and re.search(r'\berror(?:\(|:)', transcript) is None
           and re.search(r'\b(sorry|admit|axiom)\b', lean) is None)
@@ -404,6 +412,59 @@ def main():
     scalar_det = 1-z*(1-cq*cq)
     check('ACTIVE_RANK_FACTOR_IS_REAL', s.cancel(s.diag(*([scalar_det]*3)).det()-scalar_det**3) == 0)
 
+    # Native GJ supplies the missing direction. Keep all four signed cross returns.
+    T = s.BlockMatrix([[I2, a*I2], [s.zeros(2), p*I2]]).as_explicit()
+    Ti = s.BlockMatrix([[I2, -a/p*I2], [s.zeros(2), I2/p]]).as_explicit()
+    B = (Qg*T).applyfunc(golden)
+    check('TWO_NATIVE_PREPARATIONS_LITERAL_COLUMNS', gzero(B[:, :2]-Jg)
+          and gzero(B[:, 2:]-Qg*Jg))
+    check('NONZERO_GOLDEN_BRANCH_INVERTS_BOTH_PREPARATIONS', zero(T*Ti-s.eye(4))
+          and zero(Ti*T-s.eye(4)))
+    check('TWO_PREPARATION_GRAM_AND_EXACT_CONDITIONING',
+          gzero(B.T*B-s.BlockMatrix([[I2, a*I2], [a*I2, I2]]).as_explicit()))
+    check('LITERAL_CYLINDER_READOUT_COMMUTES_WITH_NATIVE_FACTOR', zero(Qg*Pg-Pg*Qg))
+    two_preparation_cases = []
+    for label, native_U in [('direct', direct), ('recorded', recorded)]:
+        for power in (1, 2, 3):
+            full_word = (native_U**power).applyfunc(golden)
+            returns = (B.T*full_word*B).applyfunc(golden)
+            recovered = (Ti.T*returns*Ti).applyfunc(golden)
+            tag = f'{label}_{power}'
+            check('ALL_FOUR_NATIVE_RETURNS_RECOVER_FULL_OPERATOR_'+tag,
+                  gzero(Qg*recovered*Qg.T-full_word))
+            check('ALL_FOUR_NATIVE_RETURNS_RECOVER_LITERAL_FEEDBACK_'+tag,
+                  gzero(feedback(Pg, recovered)-Qg.T*feedback(Pg, full_word)*Qg))
+            check('ALL_FOUR_NATIVE_RETURNS_RECOVER_LITERAL_ACTION_'+tag,
+                  golden((s.eye(4)-z*feedback(Pg, recovered)).det()
+                         -(s.eye(4)-z*feedback(Pg, full_word)).det()) == 0)
+            two_preparation_cases.append(tag)
+    Ralt, Rrep = (B.T*Ug*B).applyfunc(golden), (B.T*Lg*B).applyfunc(golden)
+    check('SECOND_NATIVE_PREPARATION_DETECTS_PRIOR_INVISIBLE_COMPLEMENT',
+          gzero(Ralt[:2, :2]-Rrep[:2, :2]) and not gzero(Ralt-Rrep))
+    # A true complement variation has a literal action source despite constant J return.
+    complement_curve = (Qg*s.diag(I2, H)*Qg.T).applyfunc(golden)
+    all_curve_returns = (B.T*complement_curve*B).applyfunc(golden)
+    reconstructed_curve = (Ti.T*all_curve_returns*Ti).applyfunc(golden)
+    curve_det = golden((s.eye(4)-z*feedback(Pg, complement_curve)).det())
+    expected_curve_det = 1-4*z*t*t/(1+t*t)**2
+    check('NATIVE_FIRST_PREPARATION_BLIND_TO_FULL_COMPLEMENT_VARIATION',
+          gzero(Jg.T*complement_curve*Jg-I2))
+    check('TWO_PREPARATIONS_RETAIN_FULL_COMPLEMENT_ACTION_SOURCE',
+          s.cancel(curve_det-expected_curve_det) == 0 and gzero(reconstructed_curve-s.diag(I2, H)))
+    genuine_complement_source = s.cancel(-s.diff(curve_det, t)/curve_det)
+    complement_source_value = genuine_complement_source.subs({t:s.Rational(1, 3),z:s.Rational(1, 4)})
+    check('IGNORING_SECOND_PREPARATION_FALSE_ZERO_SOURCE_REJECTED', complement_source_value != 0)
+    recovered_det = golden((s.eye(4)-z*feedback(Pg, reconstructed_curve)).det())
+    check('ALL_FOUR_RETURN_GENUINE_SOURCE_IDENTITY',
+          s.cancel(-s.diff(recovered_det, t)/recovered_det-genuine_complement_source) == 0)
+    # Even two diagonal amplitudes cannot distinguish G and G^T without cross readings.
+    one_B = s.Matrix.hstack(G[:, :1], G*G[:, :1])
+    left_reads = (one_B.T*G*one_B).applyfunc(golden)
+    right_reads = (one_B.T*G.T*one_B).applyfunc(golden)
+    check('DIAGONAL_RETURNS_ALONE_FALSE_TOMOGRAPHY_REJECTED',
+          gzero(s.diag(*(left_reads-right_reads).diagonal())) and not gzero(left_reads-right_reads))
+    check('ZERO_BRANCH_BREAKS_TWO_PREPARATION_COMPLETENESS', T.subs({a:1,p:0}).rank() == 2)
+
     payload = {
         'status': 'PASS', 'owner_input_head': HEAD, 'scope': SCOPE, 'checks': checks,
         'input_sha256': pins, 'proof_sha256': sha(PROOF),
@@ -433,6 +494,12 @@ def main():
             'moving_readout_action_bound': 'n*z/(1-z)*(4*norm(P-Q)+2*norm(C-D))',
             'preparation_operator_error_bound': 'norm(U-V)+2*norm(J-K)',
             'approaching_pole_gap_limit': 'log(2)',
+            'native_two_preparation_frame': '[J,GJ]=G[[I,aI],[0,pI]]',
+            'full_operator_from_four_returns': 'U=G T^(-T) R T^(-1) G^T',
+            'literal_action_from_four_returns': 'S(F(L(P),U))=S(F(L(P),T^(-T) R T^(-1)))',
+            'native_two_preparation_word_cases': two_preparation_cases,
+            'two_preparation_inverse_squared_norm': '1/(1-abs(a))',
+            'full_complement_genuine_source_control': str(complement_source_value),
         },
     }
     if args.output:
