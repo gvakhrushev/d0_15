@@ -2069,6 +2069,233 @@ theorem genuine_native_interaction_from_primitives (D A : ℝ → Matrix n n ℝ
 end NativeOperatorDifferentiation
 
 end
+noncomputable section HistorySpectralNaturality
+variable {n : Type*} [Fintype n] [DecidableEq n]
+
+/-- Complete native preparation frame inverse, with its two histories retained. -/
+def nativePreparationFrameInverse (a p : ℝ) : Matrix (n ⊕ n) (n ⊕ n) ℝ :=
+  preparationCoordinatesInverse (n:=n) a p*(ownedGoldenFactor (n:=n) a p).transpose
+
+/-- Both directions of the exact inverse, not a supplied inverse oracle. -/
+theorem native_preparation_frame_inverse (a p : ℝ) (hp : p≠0) (hg : a^2+p^2=1) :
+    nativePreparationFrame (n:=n) a p*nativePreparationFrameInverse (n:=n) a p=1 ∧
+    nativePreparationFrameInverse (n:=n) a p*nativePreparationFrame (n:=n) a p=1 := by
+  have ht := preparation_coordinates_inverse (n:=n) a p hp
+  have ho := golden_factor_orthogonal (n:=n) a p hg
+  have hor := mul_eq_one_comm.mp ho
+  constructor
+  · change (ownedGoldenFactor (n:=n) a p*preparationCoordinates (n:=n) a p)*
+      (preparationCoordinatesInverse (n:=n) a p*(ownedGoldenFactor (n:=n) a p).transpose)=1
+    calc
+      _ = ownedGoldenFactor (n:=n) a p*
+          (preparationCoordinates (n:=n) a p*preparationCoordinatesInverse (n:=n) a p)*
+          (ownedGoldenFactor (n:=n) a p).transpose := by simp [Matrix.mul_assoc]
+      _ = 1 := by rw [ht.1,Matrix.mul_one,hor]
+  · change (preparationCoordinatesInverse (n:=n) a p*(ownedGoldenFactor (n:=n) a p).transpose)*
+      (ownedGoldenFactor (n:=n) a p*preparationCoordinates (n:=n) a p)=1
+    calc
+      _ = preparationCoordinatesInverse (n:=n) a p*
+          ((ownedGoldenFactor (n:=n) a p).transpose*ownedGoldenFactor (n:=n) a p)*
+          preparationCoordinates (n:=n) a p := by simp [Matrix.mul_assoc]
+      _ = 1 := by rw [ho,Matrix.mul_one,ht.2]
+
+/-- Scalar golden preparation coordinates commute with every literal cylinder operator. -/
+theorem preparation_coordinates_commute_lift (a p : ℝ) (D : Matrix n n ℝ) :
+    preparationCoordinates a p*liftOperator D=liftOperator D*preparationCoordinates a p := by
+  simp only [preparationCoordinates,liftOperator,Matrix.fromBlocks_multiply,
+    Matrix.mul_smul,Matrix.smul_mul,Matrix.mul_one,Matrix.one_mul,
+    Matrix.mul_zero,Matrix.zero_mul,smul_zero,add_zero,zero_add]
+
+/-- The complete frame commutes with the old scene operator lifted to both children. -/
+theorem native_preparation_frame_commutes_lift (a p : ℝ) (D : Matrix n n ℝ) :
+    nativePreparationFrame (n:=n) a p*liftOperator D=liftOperator D*nativePreparationFrame (n:=n) a p := by
+  simp only [nativePreparationFrame,Matrix.mul_assoc]
+  rw [preparation_coordinates_commute_lift,← Matrix.mul_assoc,
+      golden_factor_commutes_literal_readout,Matrix.mul_assoc]
+
+/-- Bundled defect for both actual preparations J and GJ. Its columns are the two
+history intertwining defects; no stationarity is inserted in its definition. -/
+def historySpectralDefect (a p : ℝ) (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ)
+    (coarse : Matrix n n ℝ) :=
+  fine*nativePreparationFrame (n:=n) a p-nativePreparationFrame (n:=n) a p*liftOperator coarse
+
+/-- The full spectral change is reconstructed from the two history defects. -/
+theorem history_spectral_defect_reconstructs (a p : ℝ)
+    (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ)
+    (hp : p≠0) (hg : a^2+p^2=1) :
+    historySpectralDefect a p fine coarse*nativePreparationFrameInverse (n:=n) a p=
+      fine-liftOperator coarse := by
+  have hi := (native_preparation_frame_inverse (n:=n) a p hp hg).1
+  unfold historySpectralDefect
+  rw [native_preparation_frame_commutes_lift,Matrix.sub_mul]
+  simp [Matrix.mul_assoc,hi]
+
+/-- Complete classification of all finite operators preserving both actual history
+intertwinings. No self-adjointness, positivity, or physical admission is assumed. -/
+theorem history_spectral_zero_defect_iff (a p : ℝ)
+    (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ)
+    (hp : p≠0) (hg : a^2+p^2=1) :
+    historySpectralDefect a p fine coarse=0 ↔ fine=liftOperator coarse := by
+  constructor
+  · intro he
+    have hr := history_spectral_defect_reconstructs a p fine coarse hp hg
+    rw [he,Matrix.zero_mul] at hr
+    exact sub_eq_zero.mp hr.symm
+  · rintro rfl
+    simp [historySpectralDefect,native_preparation_frame_commutes_lift]
+
+/-- Explicit column-level naturality on J and the next retained golden history GJ. -/
+theorem two_history_spectral_naturality_iff (a p : ℝ)
+    (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ)
+    (hp : p≠0) (hg : a^2+p^2=1) :
+    (fine*ownedGoldenEmbedding (n:=n) a p=ownedGoldenEmbedding (n:=n) a p*coarse ∧
+     fine*(ownedGoldenFactor (n:=n) a p*ownedGoldenEmbedding (n:=n) a p)=
+       (ownedGoldenFactor (n:=n) a p*ownedGoldenEmbedding (n:=n) a p)*coarse) ↔
+      fine=liftOperator coarse := by
+  have hc := two_native_preparation_columns (n:=n) a p
+  have heq : historySpectralDefect a p fine coarse=0 ↔
+      (fine*ownedGoldenEmbedding (n:=n) a p=ownedGoldenEmbedding (n:=n) a p*coarse ∧
+       fine*(ownedGoldenFactor (n:=n) a p*ownedGoldenEmbedding (n:=n) a p)=
+         (ownedGoldenFactor (n:=n) a p*ownedGoldenEmbedding (n:=n) a p)*coarse) := by
+    rw [historySpectralDefect,sub_eq_zero]
+    constructor
+    · intro he
+      constructor
+      · ext i j
+        have hx := congrArg (fun M => M i (Sum.inl j)) he
+        simpa [Matrix.mul_apply,Fintype.sum_sum_type,liftOperator,hc.1] using hx
+      · ext i j
+        have hx := congrArg (fun M => M i (Sum.inr j)) he
+        simpa [Matrix.mul_apply,Fintype.sum_sum_type,liftOperator,hc.2] using hx
+    · rintro ⟨h0,h1⟩
+      ext i j
+      rcases j with j|j
+      · have hx := congrArg (fun M => M i j) h0
+        simpa [Matrix.mul_apply,Fintype.sum_sum_type,liftOperator,hc.1] using hx
+      · have hx := congrArg (fun M => M i j) h1
+        simpa [Matrix.mul_apply,Fintype.sum_sum_type,liftOperator,hc.2] using hx
+  exact heq.symm.trans (history_spectral_zero_defect_iff a p fine coarse hp hg)
+
+/-- With first-history naturality, the second defect is exactly the clock/scene
+commutator observed on the actual prepared carrier. -/
+theorem second_history_defect_is_commutator (a p : ℝ)
+    (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ)
+    (h0 : fine*ownedGoldenEmbedding (n:=n) a p=ownedGoldenEmbedding (n:=n) a p*coarse) :
+    (fine*ownedGoldenFactor (n:=n) a p-ownedGoldenFactor (n:=n) a p*fine)*ownedGoldenEmbedding (n:=n) a p=
+      fine*(ownedGoldenFactor (n:=n) a p*ownedGoldenEmbedding (n:=n) a p)-
+        (ownedGoldenFactor (n:=n) a p*ownedGoldenEmbedding (n:=n) a p)*coarse := by
+  rw [Matrix.sub_mul]
+  simp only [Matrix.mul_assoc,h0]
+
+/-- A scene commuting with the new golden tick and preserving J necessarily
+replicates; such passivity is a hypothesis to check, not a consequence of M1. -/
+theorem commuting_scene_history_forces_replication (a p : ℝ)
+    (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ)
+    (hp : p≠0) (hg : a^2+p^2=1)
+    (h0 : fine*ownedGoldenEmbedding (n:=n) a p=ownedGoldenEmbedding (n:=n) a p*coarse)
+    (hcomm : fine*ownedGoldenFactor (n:=n) a p=ownedGoldenFactor (n:=n) a p*fine) :
+    fine=liftOperator coarse := by
+  apply (two_history_spectral_naturality_iff a p fine coarse hp hg).mp
+  refine ⟨h0,?_⟩
+  rw [← Matrix.mul_assoc,hcomm,Matrix.mul_assoc,h0,← Matrix.mul_assoc]
+
+/-- Actual matrix exponential on a replicated diagonal scene, not a trace proxy. -/
+theorem matrix_heat_replicated_diagonal (beta : ℝ) (lambda : n → ℝ) [Nonempty n]
+    :
+    matrixHeat beta (liftOperator (Matrix.diagonal lambda))=
+      heatContribution beta lambda+beta⁻¹*Real.log 2 := by
+  rw [← literal_cylinder_observable_pullback,matrix_heat_diagonal]
+  exact replicated_heat_contribution beta lambda
+
+/-- A complete history-preserving fine scene curve has the genuine unchanged
+thermal covector. This transports declared native inputs; it does not establish their physical admissibility. -/
+theorem genuine_two_history_thermal_source (a p beta t : ℝ)
+    (lambda : ℝ → n → ℝ) (v : n → ℝ)
+    (fine : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ) [Nonempty n]
+    (hp : p≠0) (hg : a^2+p^2=1) (hb : beta≠0)
+    (hl : ∀ i, HasDerivAt (fun s => lambda s i) (v i) t)
+    (hn : ∀ s, historySpectralDefect a p (fine s) (Matrix.diagonal (lambda s))=0) :
+    HasDerivAt (fun s => matrixHeat beta (fine s)) (thermalSource beta (lambda t) v) t := by
+  have he : (fun s => matrixHeat beta (fine s))=
+      (fun s => heatContribution beta (lambda s)+beta⁻¹*Real.log 2) := by
+    funext s
+    rw [(history_spectral_zero_defect_iff a p (fine s) _ hp hg).mp (hn s)]
+    exact matrix_heat_replicated_diagonal beta (lambda s)
+  rw [he]
+  exact (genuine_thermal_source beta t lambda v hb hl).add_const _
+
+/-- Genuine whole bootstrap derivative when both actual scene histories preserve
+geometry and the full feedback process follows the literal cylinder lift. -/
+theorem genuine_two_history_bootstrap_source (a p beta z t source : ℝ)
+    (lambda : ℝ → n → ℝ) (v : n → ℝ)
+    (fine : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ) (P U : ℝ → Matrix n n ℝ) [Nonempty n]
+    (hp : p≠0) (hg : a^2+p^2=1) (hb : beta≠0)
+    (hl : ∀ i, HasDerivAt (fun s => lambda s i) (v i) t)
+    (hn : ∀ s, historySpectralDefect a p (fine s) (Matrix.diagonal (lambda s))=0)
+    (hf : HasDerivAt (fun s => feedbackAction z (fullFeedback (P s) (U s))) source t) :
+    HasDerivAt (fun s => matrixHeat beta (fine s)+
+      feedbackAction z (fullFeedback (liftOperator (P s)) (liftOperator (U s))))
+      (thermalSource beta (lambda t) v+2*source) t := by
+  have hh := genuine_two_history_thermal_source a p beta t lambda v fine hp hg hb hl hn
+  have hff : HasDerivAt (fun s => feedbackAction z
+      (fullFeedback (liftOperator (P s)) (liftOperator (U s)))) (2*source) t := by
+    simpa only [full_feedback_refines,actual_feedback_action_refinement] using hf.const_mul 2
+  exact hh.add hff
+
+/-- Both genuine stationary derivatives force heat and feedback to vanish separately
+on this declared tangent. These premises are not supplied as a native admission gate. -/
+theorem two_history_stationarity_forces_separate_sources_zero (a p beta z t source : ℝ)
+    (lambda : ℝ → n → ℝ) (v : n → ℝ)
+    (fine : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ) (P U : ℝ → Matrix n n ℝ) [Nonempty n]
+    (hp : p≠0) (hg : a^2+p^2=1) (hb : beta≠0)
+    (hl : ∀ i, HasDerivAt (fun s => lambda s i) (v i) t)
+    (hn : ∀ s, historySpectralDefect a p (fine s) (Matrix.diagonal (lambda s))=0)
+    (hf : HasDerivAt (fun s => feedbackAction z (fullFeedback (P s) (U s))) source t)
+    (hc : HasDerivAt (fun s => bootstrapAction beta z (lambda s) (P s) (U s)) 0 t)
+    (hplus : HasDerivAt (fun s => matrixHeat beta (fine s)+
+      feedbackAction z (fullFeedback (liftOperator (P s)) (liftOperator (U s)))) 0 t) :
+    thermalSource beta (lambda t) v=0 ∧ source=0 := by
+  have h0 := (genuine_bootstrap_source beta z t source lambda v P U hb hl hf).unique hc
+  have h1 := (genuine_two_history_bootstrap_source a p beta z t source lambda v fine P U
+    hp hg hb hl hn hf).unique hplus
+  exact (joint_stationarity_transfer_iff (thermalSource beta (lambda t) v) source).mp ⟨h0,h1⟩
+
+/-- Literal ordinary trace, retaining both child sectors. -/
+theorem lifted_ordinary_trace (A : Matrix n n ℝ) :
+    (liftOperator A).trace=2*A.trace := by
+  simp [liftOperator,Matrix.trace,Matrix.diag,Fintype.sum_sum_type,two_mul]
+
+/-- At a replicated spectral value rho_plus=L(rho)/2, this exact pairing isolates
+all missing spectral-variation directions. General heat differentiation is §6.7. -/
+theorem fine_thermal_source_defect_identity (rho dD : Matrix n n ℝ)
+    (dFine : Matrix (n ⊕ n) (n ⊕ n) ℝ) :
+    -(((1/2:ℝ) • liftOperator rho)*dFine).trace=
+      -(rho*dD).trace-(1/2:ℝ)*(liftOperator rho*(dFine-liftOperator dD)).trace := by
+  have ht : (liftOperator rho*liftOperator dD).trace=2*(rho*dD).trace := by
+    rw [← lift_mul,lifted_ordinary_trace]
+  rw [Matrix.mul_sub,Matrix.trace_sub,ht,Matrix.smul_mul,Matrix.trace_smul]
+  ring
+
+/-- The required doubled thermal source fixes one exact spectral contraction,
+not a complete physical law and not a criterion used to define allowed states. -/
+theorem doubled_thermal_source_defect_iff (rho dD : Matrix n n ℝ)
+    (dFine : Matrix (n ⊕ n) (n ⊕ n) ℝ) :
+    -(((1/2:ℝ) • liftOperator rho)*dFine).trace=2*(-(rho*dD).trace) ↔
+      (liftOperator rho*(dFine-liftOperator dD)).trace=2*(rho*dD).trace := by
+  rw [fine_thermal_source_defect_identity rho dD dFine]
+  constructor <;> intro h <;> linarith
+
+/-- Nonzero spectral defects in the contraction kernel remain response-null.
+Their vanishing is not inferred or promoted to physical gauge. -/
+theorem thermal_response_null_defect_iff (rho dD : Matrix n n ℝ)
+    (dFine : Matrix (n ⊕ n) (n ⊕ n) ℝ) :
+    -(((1/2:ℝ) • liftOperator rho)*dFine).trace=-(rho*dD).trace ↔
+      (liftOperator rho*(dFine-liftOperator dD)).trace=0 := by
+  rw [fine_thermal_source_defect_identity rho dD dFine]
+  constructor <;> intro h <;> linarith
+
+end HistorySpectralNaturality
+
 end D0.Research.NativeComposedFeedbackDynamics
 
 /-! Actual theorem types and transitive proof dependencies. -/
@@ -2470,3 +2697,51 @@ end D0.Research.NativeComposedFeedbackDynamics
 #print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_native_input_from_primitives
 #check D0.Research.NativeComposedFeedbackDynamics.genuine_native_interaction_from_primitives
 #print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_native_interaction_from_primitives
+
+#check D0.Research.NativeComposedFeedbackDynamics.native_preparation_frame_inverse
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_preparation_frame_inverse
+
+#check D0.Research.NativeComposedFeedbackDynamics.preparation_coordinates_commute_lift
+#print axioms D0.Research.NativeComposedFeedbackDynamics.preparation_coordinates_commute_lift
+
+#check D0.Research.NativeComposedFeedbackDynamics.native_preparation_frame_commutes_lift
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_preparation_frame_commutes_lift
+
+#check D0.Research.NativeComposedFeedbackDynamics.history_spectral_defect_reconstructs
+#print axioms D0.Research.NativeComposedFeedbackDynamics.history_spectral_defect_reconstructs
+
+#check D0.Research.NativeComposedFeedbackDynamics.history_spectral_zero_defect_iff
+#print axioms D0.Research.NativeComposedFeedbackDynamics.history_spectral_zero_defect_iff
+
+#check D0.Research.NativeComposedFeedbackDynamics.two_history_spectral_naturality_iff
+#print axioms D0.Research.NativeComposedFeedbackDynamics.two_history_spectral_naturality_iff
+
+#check D0.Research.NativeComposedFeedbackDynamics.second_history_defect_is_commutator
+#print axioms D0.Research.NativeComposedFeedbackDynamics.second_history_defect_is_commutator
+
+#check D0.Research.NativeComposedFeedbackDynamics.commuting_scene_history_forces_replication
+#print axioms D0.Research.NativeComposedFeedbackDynamics.commuting_scene_history_forces_replication
+
+#check D0.Research.NativeComposedFeedbackDynamics.matrix_heat_replicated_diagonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.matrix_heat_replicated_diagonal
+
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_two_history_thermal_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_two_history_thermal_source
+
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_two_history_bootstrap_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_two_history_bootstrap_source
+
+#check D0.Research.NativeComposedFeedbackDynamics.two_history_stationarity_forces_separate_sources_zero
+#print axioms D0.Research.NativeComposedFeedbackDynamics.two_history_stationarity_forces_separate_sources_zero
+
+#check D0.Research.NativeComposedFeedbackDynamics.lifted_ordinary_trace
+#print axioms D0.Research.NativeComposedFeedbackDynamics.lifted_ordinary_trace
+
+#check D0.Research.NativeComposedFeedbackDynamics.fine_thermal_source_defect_identity
+#print axioms D0.Research.NativeComposedFeedbackDynamics.fine_thermal_source_defect_identity
+
+#check D0.Research.NativeComposedFeedbackDynamics.doubled_thermal_source_defect_iff
+#print axioms D0.Research.NativeComposedFeedbackDynamics.doubled_thermal_source_defect_iff
+
+#check D0.Research.NativeComposedFeedbackDynamics.thermal_response_null_defect_iff
+#print axioms D0.Research.NativeComposedFeedbackDynamics.thermal_response_null_defect_iff

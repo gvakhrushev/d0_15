@@ -402,6 +402,12 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [DecidableEq n] [Nonempty n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean:2264:0: warning: automatically included section variable(s) unused in theorem `D0.Research.NativeComposedFeedbackDynamics.lifted_ordinary_trace`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
 D0.Research.NativeComposedFeedbackDynamics.archive_on_incoming.{u_1, u_2} {n : Type u_1} {m : Type u_2} [Fintype n]
   [Fintype m] [DecidableEq n] [DecidableEq m] (a : ℝ) (R S : Matrix m n ℝ) (V : Matrix m m ℝ) (hR : R.transpose * R = 1)
   (hV : V * R = 0) : D0.Research.NativeComposedFeedbackDynamics.archiveBlock a R S V * R = a • S
@@ -2149,5 +2155,200 @@ D0.Research.NativeComposedFeedbackDynamics.genuine_native_interaction_from_primi
       (L - 1))
     t
 'D0.Research.NativeComposedFeedbackDynamics.genuine_native_interaction_from_primitives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.native_preparation_frame_inverse.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (hp : p ≠ 0) (hg : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrame a p *
+        D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrameInverse a p =
+      1 ∧
+    D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrameInverse a p *
+        D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrame a p =
+      1
+'D0.Research.NativeComposedFeedbackDynamics.native_preparation_frame_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.preparation_coordinates_commute_lift.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (D : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.preparationCoordinates a p *
+      D0.Research.NativeComposedFeedbackDynamics.liftOperator D =
+    D0.Research.NativeComposedFeedbackDynamics.liftOperator D *
+      D0.Research.NativeComposedFeedbackDynamics.preparationCoordinates a p
+'D0.Research.NativeComposedFeedbackDynamics.preparation_coordinates_commute_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.native_preparation_frame_commutes_lift.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (D : Matrix n n ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrame a p *
+      D0.Research.NativeComposedFeedbackDynamics.liftOperator D =
+    D0.Research.NativeComposedFeedbackDynamics.liftOperator D *
+      D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrame a p
+'D0.Research.NativeComposedFeedbackDynamics.native_preparation_frame_commutes_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.history_spectral_defect_reconstructs.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ) (hp : p ≠ 0)
+  (hg : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.historySpectralDefect a p fine coarse *
+      D0.Research.NativeComposedFeedbackDynamics.nativePreparationFrameInverse a p =
+    fine - D0.Research.NativeComposedFeedbackDynamics.liftOperator coarse
+'D0.Research.NativeComposedFeedbackDynamics.history_spectral_defect_reconstructs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.history_spectral_zero_defect_iff.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ) (hp : p ≠ 0)
+  (hg : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.NativeComposedFeedbackDynamics.historySpectralDefect a p fine coarse = 0 ↔
+    fine = D0.Research.NativeComposedFeedbackDynamics.liftOperator coarse
+'D0.Research.NativeComposedFeedbackDynamics.history_spectral_zero_defect_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.two_history_spectral_naturality_iff.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ) (hp : p ≠ 0)
+  (hg : a ^ 2 + p ^ 2 = 1) :
+  fine * D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p =
+        D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p * coarse ∧
+      fine *
+          (D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p *
+            D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p) =
+        D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p *
+            D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p *
+          coarse ↔
+    fine = D0.Research.NativeComposedFeedbackDynamics.liftOperator coarse
+'D0.Research.NativeComposedFeedbackDynamics.two_history_spectral_naturality_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.second_history_defect_is_commutator.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ)
+  (h0 :
+    fine * D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p =
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p * coarse) :
+  (fine * D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p -
+        D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p * fine) *
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p =
+    fine *
+        (D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p *
+          D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p) -
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p *
+          D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p *
+        coarse
+'D0.Research.NativeComposedFeedbackDynamics.second_history_defect_is_commutator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.commuting_scene_history_forces_replication.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p : ℝ) (fine : Matrix (n ⊕ n) (n ⊕ n) ℝ) (coarse : Matrix n n ℝ) (hp : p ≠ 0)
+  (hg : a ^ 2 + p ^ 2 = 1)
+  (h0 :
+    fine * D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p =
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenEmbedding a p * coarse)
+  (hcomm :
+    fine * D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p =
+      D0.Research.NativeComposedFeedbackDynamics.ownedGoldenFactor a p * fine) :
+  fine = D0.Research.NativeComposedFeedbackDynamics.liftOperator coarse
+'D0.Research.NativeComposedFeedbackDynamics.commuting_scene_history_forces_replication' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.matrix_heat_replicated_diagonal.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (beta : ℝ) (lambda : n → ℝ) [Nonempty n] :
+  D0.Research.NativeComposedFeedbackDynamics.matrixHeat beta
+      (D0.Research.NativeComposedFeedbackDynamics.liftOperator (Matrix.diagonal lambda)) =
+    D0.Research.NativeComposedFeedbackDynamics.heatContribution beta lambda + beta⁻¹ * Real.log 2
+'D0.Research.NativeComposedFeedbackDynamics.matrix_heat_replicated_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_two_history_thermal_source.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p beta t : ℝ) (lambda : ℝ → n → ℝ) (v : n → ℝ) (fine : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ) [Nonempty n]
+  (hp : p ≠ 0) (hg : a ^ 2 + p ^ 2 = 1) (hb : beta ≠ 0) (hl : ∀ (i : n), HasDerivAt (fun s => lambda s i) (v i) t)
+  (hn :
+    ∀ (s : ℝ),
+      D0.Research.NativeComposedFeedbackDynamics.historySpectralDefect a p (fine s) (Matrix.diagonal (lambda s)) = 0) :
+  HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.matrixHeat beta (fine s))
+    (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta (lambda t) v) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_two_history_thermal_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.genuine_two_history_bootstrap_source.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (a p beta z t source : ℝ) (lambda : ℝ → n → ℝ) (v : n → ℝ) (fine : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ)
+  (P U : ℝ → Matrix n n ℝ) [Nonempty n] (hp : p ≠ 0) (hg : a ^ 2 + p ^ 2 = 1) (hb : beta ≠ 0)
+  (hl : ∀ (i : n), HasDerivAt (fun s => lambda s i) (v i) t)
+  (hn :
+    ∀ (s : ℝ),
+      D0.Research.NativeComposedFeedbackDynamics.historySpectralDefect a p (fine s) (Matrix.diagonal (lambda s)) = 0)
+  (hf :
+    HasDerivAt
+      (fun s =>
+        D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+          (D0.Research.NativeComposedFeedbackDynamics.fullFeedback (P s) (U s)))
+      source t) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeComposedFeedbackDynamics.matrixHeat beta (fine s) +
+        D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+          (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+            (D0.Research.NativeComposedFeedbackDynamics.liftOperator (P s))
+            (D0.Research.NativeComposedFeedbackDynamics.liftOperator (U s))))
+    (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta (lambda t) v + 2 * source) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_two_history_bootstrap_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.two_history_stationarity_forces_separate_sources_zero.{u_1} {n : Type u_1}
+  [Fintype n] [DecidableEq n] (a p beta z t source : ℝ) (lambda : ℝ → n → ℝ) (v : n → ℝ)
+  (fine : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ) (P U : ℝ → Matrix n n ℝ) [Nonempty n] (hp : p ≠ 0) (hg : a ^ 2 + p ^ 2 = 1)
+  (hb : beta ≠ 0) (hl : ∀ (i : n), HasDerivAt (fun s => lambda s i) (v i) t)
+  (hn :
+    ∀ (s : ℝ),
+      D0.Research.NativeComposedFeedbackDynamics.historySpectralDefect a p (fine s) (Matrix.diagonal (lambda s)) = 0)
+  (hf :
+    HasDerivAt
+      (fun s =>
+        D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+          (D0.Research.NativeComposedFeedbackDynamics.fullFeedback (P s) (U s)))
+      source t)
+  (hc :
+    HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.bootstrapAction beta z (lambda s) (P s) (U s)) 0 t)
+  (hplus :
+    HasDerivAt
+      (fun s =>
+        D0.Research.NativeComposedFeedbackDynamics.matrixHeat beta (fine s) +
+          D0.Research.NativeComposedFeedbackDynamics.feedbackAction z
+            (D0.Research.NativeComposedFeedbackDynamics.fullFeedback
+              (D0.Research.NativeComposedFeedbackDynamics.liftOperator (P s))
+              (D0.Research.NativeComposedFeedbackDynamics.liftOperator (U s))))
+      0 t) :
+  D0.Research.NativeComposedFeedbackDynamics.thermalSource beta (lambda t) v = 0 ∧ source = 0
+'D0.Research.NativeComposedFeedbackDynamics.two_history_stationarity_forces_separate_sources_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.lifted_ordinary_trace.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A : Matrix n n ℝ) : (D0.Research.NativeComposedFeedbackDynamics.liftOperator A).trace = 2 * A.trace
+'D0.Research.NativeComposedFeedbackDynamics.lifted_ordinary_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.fine_thermal_source_defect_identity.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (rho dD : Matrix n n ℝ) (dFine : Matrix (n ⊕ n) (n ⊕ n) ℝ) :
+  -((1 / 2) • D0.Research.NativeComposedFeedbackDynamics.liftOperator rho * dFine).trace =
+    -(rho * dD).trace -
+      1 / 2 *
+        (D0.Research.NativeComposedFeedbackDynamics.liftOperator rho *
+            (dFine - D0.Research.NativeComposedFeedbackDynamics.liftOperator dD)).trace
+'D0.Research.NativeComposedFeedbackDynamics.fine_thermal_source_defect_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.doubled_thermal_source_defect_iff.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (rho dD : Matrix n n ℝ) (dFine : Matrix (n ⊕ n) (n ⊕ n) ℝ) :
+  -((1 / 2) • D0.Research.NativeComposedFeedbackDynamics.liftOperator rho * dFine).trace = 2 * -(rho * dD).trace ↔
+    (D0.Research.NativeComposedFeedbackDynamics.liftOperator rho *
+          (dFine - D0.Research.NativeComposedFeedbackDynamics.liftOperator dD)).trace =
+      2 * (rho * dD).trace
+'D0.Research.NativeComposedFeedbackDynamics.doubled_thermal_source_defect_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeComposedFeedbackDynamics.thermal_response_null_defect_iff.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (rho dD : Matrix n n ℝ) (dFine : Matrix (n ⊕ n) (n ⊕ n) ℝ) :
+  -((1 / 2) • D0.Research.NativeComposedFeedbackDynamics.liftOperator rho * dFine).trace = -(rho * dD).trace ↔
+    (D0.Research.NativeComposedFeedbackDynamics.liftOperator rho *
+          (dFine - D0.Research.NativeComposedFeedbackDynamics.liftOperator dD)).trace =
+      0
+'D0.Research.NativeComposedFeedbackDynamics.thermal_response_null_defect_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]

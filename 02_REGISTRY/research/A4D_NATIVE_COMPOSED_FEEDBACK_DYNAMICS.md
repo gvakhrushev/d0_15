@@ -1064,13 +1064,144 @@ On that actual tangent image, test the refinement condition (33), derive
 native on-shell equations, and preserve non-gauge null directions.
 No new action, temperature law, selector or physical postulate is used.
 
+### 6.8. The two native histories force the passive spectral class
+
+Input: `45f19d1399829b284f15b41899b49ee9961ea394`. This uses the **same**
+owned J, GJ and complete frame B=GT of §6.4, on every old finite carrier,
+including all 33 scene coordinates and retained memory. It does not
+identify the three-zone degree operator with the full scene Laplacian.
+Fix the existing golden a,p, with a²+p²=1 and p!=0. For coarse Delta and
+an arbitrary full fine operator Delta+ define the two actual defects
+
+\[
+ e_0=\Delta_+J-J\Delta,\qquad
+ e_1=\Delta_+GJ-GJ\Delta,\qquad
+ E_H=[e_0,e_1]=\Delta_+B-BL(\Delta).
+\]
+
+These are intertwining residuals, not a native stationarity/admission gate.
+The inverse is exactly B^-1=T^-1 G^T. Because G and T commute with every
+literal L(Delta), multiplication gives
+
+\[
+ \Delta_+-L(\Delta)=E_HB^{-1},\qquad
+ (e_0=e_1=0)\iff \Delta_+=L(\Delta).                 \tag{43}
+\]
+
+Both inverse identities, reconstruction and the explicit column-level iff
+are compiled. This is the **complete class of all finite operators with
+both declared history intertwinings**, not a finite sample or a claim that
+this class exhausts native physical refinements. Neither symmetry nor
+positivity is needed for (43). In particular one cannot choose an invisible
+complement after imposing both histories. With only e_0=0,
+
+\[
+ e_1=[\Delta_+,G]J.                                \tag{44}
+\]
+
+The commutator identity is compiled. If the fine scene is passive under
+the next golden tick, meaning it commutes with G, first-history naturality
+already forces literal replication. **Passivity itself is not derived
+from M1.** The recorded golden dynamics retain correlations, so passivity
+must be checked on the actual scene law rather than presumed.
+
+For completeness, the entire self-adjoint first-history class has the
+analytic description
+
+\[
+ \Delta_+=G\begin{pmatrix}\Delta&0\\0&A\end{pmatrix}G^T,
+ \quad A=A^T,\quad
+ e_1=pG\binom{0}{A-\Delta}.                         \tag{45}
+\]
+
+Proof: J=G( I,0 )^T, so the first column of G^T Delta+ G is
+(Delta,0)^T. Self-adjointness makes the other off-diagonal block zero;
+the remaining block is uniquely A. Conversely every displayed A satisfies
+the first intertwining. Orthogonal conjugacy gives
+norm(Delta+-L(Delta))=norm(e_1)/abs(p). This full one-history class and
+its operator-norm equality are analytic; the Lean capsule claims the
+compiled (43)--(44), not a new formalized classification of physical states.
+
+**Actual thermal and whole-action consequence.** For a nonempty finite
+self-adjoint scene, ordinary heat trace is positive and
+
+\[
+ H_\beta(L(\Delta))=H_\beta(\Delta)+\beta^{-1}\log2,
+ \qquad d\mathcal B_+=h+2f.                         \tag{46}
+\]
+
+This is the same bootstrap of §6.6. Diagonalization proves the matrix-heat
+identity for the whole finite self-adjoint class. Lean binds the actual
+matrix exponential directly on declared diagonal spectra, proves its
+genuine thermal derivative for every curve satisfying (43), and adds the
+actual replicated feedback derivative. Thus genuine zero derivatives on
+both coarse and fine curves force h=f=0 separately on that tangent. These
+are explicit conditional derivative propositions; no desired native
+zero derivative is hidden in the definition of E_H. A nonzero heat source
+cannot transfer by a spectral law passive on **both** native histories.
+
+**First variation is essential.** Vanishing defects at one state do not
+imply their derivatives vanish. At a replicated spectral value let
+rho=exp(-beta Delta)/Tr exp(-beta Delta), and put
+
+\[
+ E_V=\dot\Delta_+-L(\dot\Delta),\qquad
+ h_+=h-\tfrac12\operatorname{Tr}(L(\rho)E_V),\qquad
+ h=-\operatorname{Tr}(\rho\dot\Delta).              \tag{47}
+\]
+
+The general matrix derivative is the analytic theorem of §6.7; rho+ is
+L(rho)/2. The capsule compiles the exact trace identity and both iffs:
+
+\[
+ h_+=2h\iff\operatorname{Tr}(L(\rho)E_V)=-2h,
+ \qquad h_+=h\iff\operatorname{Tr}(L(\rho)E_V)=0.     \tag{48}
+\]
+
+The last kernel can contain nonzero spectral defects. They remain
+response-null directions, not a declared physical gauge. On fixed golden
+coordinates E_V=dot(E_H)B^-1, so positivity and trace rho=1 give the
+analytic necessary lower bounds
+
+\[
+ \|E_V\|_{op}\ge |h|,\qquad
+ \|\dot E_H\|_{op}\ge\sqrt{1-|a|}\,|h|
+ \quad\hbox{whenever }h_+=2h.                      \tag{49}
+\]
+
+Indeed norm(L(rho))_trace=2 and norm(B^-1)=1/sqrt(1-|a|).
+If first-history naturality and symmetry also hold through the variation,
+(45) yields the sharper constraint
+Tr(rho(dot(A)-dot(Delta)))=-2h and
+norm(dot(e_1))>=2 abs(p) abs(h). These are quantitative **necessary**
+constraints to test against a source law derived independently; they are
+not a recipe for selecting A, its jet, a source or a new coupling.
+
+Exact controls retain both histories, a nonzero complement invisible on
+J, nonzero cross-history defects, defects with zero thermal contraction,
+and a point where e_0=e_1=0 but dot(e_1)!=0. The latter rejects the false
+inference from pointwise compatibility to compatible sources. The actual
+33-state scene polynomial fixes its Gibbs normalization and protected zero
+mode in a separate full-profile control; it is not replaced by quotient
+D-A or by a tuned thermal sector.
+
+The next G0b proof must derive Delta+ and its **history defect and first
+jet** from the same admitted primitive history as P and the retained word.
+If that owner proves passivity, apply the complete scoped obstruction;
+if it produces a coupled spectral change, evaluate (47)--(49) on its full
+native tangent image. Algebraic room for a nonzero E_V is not physical
+admission, and satisfying (48) by fitting E_V is not a proof. The full
+primitive/tangent/refinement law, physical source/Ward, contrast, genuine
+native on-shell system, curved roots, soundness/recovery and GR remain open.
+
+
 ## 7. Verification and next load-bearing input
 
-`certificates/a4d_native_composed_feedback_dynamics.lean` contains 199
+`certificates/a4d_native_composed_feedback_dynamics.lean` contains 215
 compiled propositions, with each actual type and transitive axiom list
 printed in its transcript. The receipt pins all seventeen transitively imported
 D0 sources and the actual toolchain inputs. Standard logical axioms only;
-no new axiom or placeholder. The companion exact checker passes 605 controls and binds the book,
+no new axiom or placeholder. The companion exact checker passes 670 controls and binds the book,
 native matrices, complete-block identities, delayed archive control,
 composed source, joint projection refinement, determinant scaling and
 immutable result ledger. Finite controls do not replace the all-size proofs.

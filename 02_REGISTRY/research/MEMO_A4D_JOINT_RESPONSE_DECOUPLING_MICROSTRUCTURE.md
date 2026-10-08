@@ -22,7 +22,7 @@ action/source scaling, retaining the physical complement-law obligation. G0, phy
 terminal remain open; the earlier time-field result is a scoped control.
 
 The [composed-feedback proof](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
-now has 199 compiled propositions and 605 exact controls. In addition to the
+now has 215 compiled propositions and 670 exact controls. In addition to the
 complete golden-active-block joint class and native composed-action gap,
 it classifies every compatible fine readout projector as `JPJ^T+S`, with S
 an orthogonal projector on the preparation complement. For the image-supported
@@ -77,6 +77,17 @@ frozen normalizer or frozen pairing. This does not supply a physical
 metric/matter Ward or native on-shell gate. The next input is the owned
 joint primitive state/tangent and full scene spectral refinement law,
 using these derived source arrows. No physical variable or source is fitted.
+
+The spectral-history follow-up (§6.8) classifies the complete finite operator
+class preserving both actual golden histories: it is precisely literal
+replication. The full intertwining defect reconstructs every spectral change;
+the second-history defect equals the tick/scene commutator when the first is
+natural. Conditional genuine derivatives and exact first-jet contractions
+expose the needed thermal-memory response. Pointwise spectral compatibility
+does not imply source compatibility, and nonzero response-null defects remain.
+Passivity itself is not proved native. The next actual owner must compute both
+defects and their jets from the same admitted primitive history as P and the
+full word, without fitting a complement or adding an action/physical postulate.
 
 The [actual weighted Hodge–Dirac follow-up](A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md)
 constructs the documented weighted adjoint on the real D0 cochains instead
