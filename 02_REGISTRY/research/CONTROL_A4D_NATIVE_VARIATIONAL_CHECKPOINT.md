@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`113efe7d8ccd6a49bdba15385fec11c9789813f1`, following
-`ff8fbe88ba3d981f19b3be71f84f5c3103e30859`.
+`9a724dc37520fd042c00b0a5b330ceae0b563da7`, following
+`113efe7d8ccd6a49bdba15385fec11c9789813f1`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -491,6 +491,8 @@ local file or an implicitly merged scientific parent.
 
 42. **Complete frozen-coframe domain and weak-metric consumer:** The complete specified composed frozen one-form refinement/readout class is now resolved for every coarse coframe with all sixteen entries, arbitrary affine shifts and matter, and comparison links in a vanishing identity chart. Homogeneous raw prolongation loses nondegeneracy immediately; fixed-background perturbation prolongation also fails to preserve the whole nondegenerate raw carrier. Its exact new bulk has (K-L-1)^4 sites and transported metric entry error at most delta+delta^2 without a coarse raw bound. Composed compatibility against fixed smooth metric tests at every unbounded fixed ratio forces any smooth metric limit to equal eta. The existing curved resonance fails even one doubled weak metric interval, with squared L2 gap liminf at least 1/8388608 and a nonzero fixed smooth metric test; its full raw/link comparison is nonempty. The complete owned local Lorentz action and vanishing metric correctors preserve this boundary. Twenty-nine compiled propositions, twenty-one actual types, 36 native source pins, 326 exact controls and 422144 full graded composed row equations pass; 29 false-scope and six false-exact ledgers are rejected. The weak continuum assembly is analytic. Metric-readout compatibility is not inferred from an action-contrast bound. The typed physical native history/preparation/composition law remains required; this does not select an action, admit or exclude the resonance in the whole core, derive a physical source/Ward, change G0/GR/global closure, or replace any original #310/#202/#317 terminal.
 
+43. **Full Lorentz-orbit/first-jet boundary and affine raw completeness:** The full frozen raw refinement fails preservation of proper Lorentz orbits even on an arbitrarily small nondegenerate flat gauge orbit. Every differentiable full-state completion retaining the same row-weighted coframe first jet at the flat reference has the same nonzero raw Gram derivative; fine Lorentz frames and links cannot erase that invariant. All six Lorentz tangent directions are retained and zero gauge metric jet is equivalent to equality of all four row weights. The full coarse/fine gauge test is nonempty in all sixteen prefix masks. Fixed doubled ratios have transported squared metric-gap liminf at least 4096/66049 for a fixed small proper rotation; vanishing metric errors and small comparison links preserve it. All connection-independent affine raw intertwiners under independent proper pullback node frames are C_x F(p(x)); invertibility of C_x is exactly full raw-domain preservation, while the fixed raw reference eta forces C_x=I. This unique normalized raw B0 map fails the actual graded one-form chain identity. The complete affine classification is analytic. Thirty-eight compiled propositions, thirty actual types, 36 D0 source pins and 543 exact controls pass; 37 false-scope and ten false-exact ledgers are rejected. Prepared-action prerequisite digest is refreshed with all 367 controls and unchanged mathematics. This derives no other physical refinement, action, source, native root, weaker readout law, G0/GR/global closure or original parent terminal.
+
 These obstructions do not exhaust all nonlinear native readouts, constraints,
 other owned actions or physical source sectors. The graph makes no
 positive GR or global zero-ambiguity declaration. Registry proof/release
@@ -818,3 +820,18 @@ already owned reconstruction must be proved, not installed as a new arrow.
 Physical admission in the whole core, own source/Ward, G0/GR/global closure
 and the original parent terminals remain open. The 44 graph statuses,
 required terminals and dependency edges are unchanged.
+
+
+The [proper flat gauge-orbit refinement continuation](02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#62-full-lorentz-orbit-obstruction-and-complete-affine-raw-intertwiners)
+extends the existing metric/refinement package. This obstruction includes all
+nonlinear differentiable completions with the same frozen raw first jet;
+changing the fine frame or links cannot alter its raw Gram defect. The
+complete stated affine intertwiner class and its fixed-reference condition
+are proved analytically, with exact proper Lorentz witnesses. It does not
+select raw B0, another physical first jet, native preparation or an action.
+The canonical assignment and §7 now require the actual owned gauge-compatible
+state transition/first jet or an independently derived gauge preparation.
+The new 38-proposition/543-control snapshot and all 179 byte-identical source
+artifacts have coherent dependency hashes. Current-head CI and CONTROL review
+remain required. G0/GR/global closure, the 44 graph statuses and edges and all
+original scientific parents remain open.

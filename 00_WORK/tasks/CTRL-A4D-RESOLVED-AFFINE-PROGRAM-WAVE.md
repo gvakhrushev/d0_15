@@ -222,3 +222,16 @@ a selected physical native transition or an action-contrast theorem. The
 updated canonical theory assignment demands the own preparation/composition
 law that addresses this boundary. Source/core/claim/terminal ownership and
 the existing review lifecycle remain unchanged.
+
+
+The full frozen raw gauge-orbit/first-jet continuation is imported from #310
+at `9a724dc37520fd042c00b0a5b330ceae0b563da7`. It retains nondegenerate full coarse/fine states and all
+six Lorentz tangent directions. Every nonlinear differentiable completion
+with the same frozen raw first jet fails the orbit law; fine frames and links
+cannot erase the raw Gram invariant. The complete specified affine raw
+intertwiner class is proved analytically. Its 38 compiled propositions,
+543 exact controls, 37 false-scope and ten false-exact rejections and coherent
+prepared-action dependency are verified. The native preparation/action/
+refinement law and its actual first jet remain the single G0 target; no
+physical postulate, replacement lift, scientific parent retirement, claim
+promotion or task registration is introduced. Review lifecycle is unchanged.

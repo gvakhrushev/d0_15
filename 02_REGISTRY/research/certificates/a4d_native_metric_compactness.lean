@@ -1,5 +1,9 @@
 import Mathlib.Algebra.Order.BigOperators.Ring.Finset
 import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+import Mathlib.Analysis.Calculus.Deriv.Add
+import Mathlib.Analysis.Calculus.Deriv.Inv
+import Mathlib.Analysis.Calculus.Deriv.Pow
+import Mathlib.Analysis.Calculus.Deriv.Mul
 import D0.Geometry.A4DRawSolderFrameAction
 
 /-! Finite native Korn estimate and the small centered-gradient chart.
@@ -7,7 +11,8 @@ Continuum compactness/regularity and the UV-link sequence are analytic
 assemblies in the companion proof, not imported physical axioms. -/
 namespace D0.Research.NativeMetricCompactness
 open D0 D0.Geometry
-open scoped BigOperators
+open Filter
+open scoped BigOperators Topology
 noncomputable section
 set_option linter.unusedSectionVars false
 set_option maxHeartbeats 4000000
@@ -472,6 +477,148 @@ theorem affine_frozen_doubling_degeneracy :
     exact mul_ne_zero (pow_ne_zero _ (by norm_num)) hd
   · ext r a;simp;ring
 
+/-- Pointwise full raw binding of the already owned composed frozen block.
+The phase projection and row weights are data, not selected physical arrows. -/
+theorem frozen_native_pointwise_affine_binding (Nc Nf : ℕ)
+    (e : LocalCoframeField Nc) (x : ArchiveRolePhaseGroup Nf) :
+    let y := (archiveRolePhasePointGroupEquiv Nf).symm x
+    let z := archiveRolePhasePointGroupEquiv Nc (frozenPhaseCap Nc Nf y)
+    let d : Role → ℝ := fun r => if (y r).val<Nc+2 then
+      ((Nf+2 : ℝ)/(Nc+2 : ℝ)) else 0
+    rawSolderMatrix Nf (frozenNativeCoframe Nc Nf e) x =
+      roleLorentzMetric+Matrix.diagonal d*
+        (rawSolderMatrix Nc e z-roleLorentzMetric) := by
+  dsimp
+  ext r a
+  simp only [rawSolderMatrix,frozenNativeCoframe,Matrix.add_apply,
+    Matrix.sub_apply,Matrix.diagonal_mul]
+  split_ifs <;> simp
+
+/-- The full tangent of the actual raw Gram map, with a genuine derivative. -/
+theorem native_flat_gram_curve_derivative (H : Matrix Role Role ℝ) (r a : Role) :
+    HasDerivAt (fun t : ℝ =>
+      ((roleLorentzMetric+t • H)*roleLorentzMetric*
+        (roleLorentzMetric+t • H).transpose) r a) (H r a+H a r) 0 := by
+  have hp : HasDerivAt (fun t : ℝ => roleLorentzMetric r a+
+      t*(H r a+H a r)+t^2*signedGram roleLorentzSign H H r a)
+      (H r a+H a r) 0 := by
+    simpa using ((hasDerivAt_const (0:ℝ) (roleLorentzMetric r a)).add
+      ((hasDerivAt_id 0).mul_const (H r a+H a r))).add
+      (((hasDerivAt_id 0).pow 2).mul_const (signedGram roleLorentzSign H H r a))
+  convert hp using 1
+  funext t
+  rw [native_flat_gram_expansion]
+  simp only [metric,signedGram,Matrix.smul_apply,smul_eq_mul,
+    roleLorentzMetric,Matrix.diagonal_apply]
+  simp_rw [show ∀ k, (t*H r k)*roleLorentzSign k*(t*H a k)=
+    t^2*(H r k*roleLorentzSign k*H a k) from fun k => by ring]
+  rw [Finset.mul_sum]
+  ring
+
+/-- Every infinitesimal proper Lorentz frame yields an antisymmetric raw
+coframe tangent S=eta*A. Unequal external row weights have a metric defect. -/
+theorem gauge_mask_jet_iff_constant (d : i → ℝ) :
+    (∀ S : Matrix i i ℝ, S.transpose = -S →
+      ∀ r a, d r*S r a+d a*S a r=0) ↔ ∀ r a, d r=d a := by
+  classical
+  constructor
+  · intro h r a
+    by_cases he : r=a
+    · simp [he]
+    let S : Matrix i i ℝ := fun u v =>
+      (if u=r ∧ v=a then 1 else 0)-(if u=a ∧ v=r then 1 else 0)
+    have hs : S.transpose = -S := by
+      ext u v
+      change S v u= -S u v
+      simp only [S,and_comm]
+      ring
+    have hh := h S hs r a
+    simp [S,he,Ne.symm he] at hh
+    linarith
+  · intro h S hs r a
+    have hh := congrArg (fun M : Matrix i i ℝ => M r a) hs
+    change S a r= -S r a at hh
+    rw [hh,h a r]
+    ring
+
+def rotationBC4 (c z : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
+  !![1,0,0,0;0,c,z,0;0,-z,c,0;0,0,0,1]
+def maskedRotation4 (b k c z : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
+  !![1,0,0,0;0,-1+b*(1-c),-b*z,0;
+    0,k*z,-1+k*(1-c),0;0,0,0,-1]
+
+/-- Proper spatial rotation; its future component is one. The determinant
+and connected rational path are checked independently in the exact capsule. -/
+theorem rotationBC4_lorentz (c z : ℝ) (h : c^2+z^2=1) :
+    rotationBC4 c z*eta4*(rotationBC4 c z).transpose=eta4 := by
+  ext r a
+  fin_cases r <;> fin_cases a <;>
+    norm_num [rotationBC4,eta4,Matrix.mul_apply,Fin.sum_univ_succ] <;>
+    nlinarith
+
+/-- All row masks, rather than only a selected fine point. -/
+theorem masked_rotation_metric_BC (b k c z : ℝ) :
+    (maskedRotation4 b k c z*eta4*(maskedRotation4 b k c z).transpose) 1 2=
+      (k-b)*z := by
+  norm_num [maskedRotation4,eta4,Matrix.mul_apply,Fin.sum_univ_succ,
+    vec_four_two,vec_four_three,vec_three_two]
+  ring
+
+theorem masked_rotation_partial_det (b c z : ℝ) :
+    (maskedRotation4 b 0 c z).det= -1+b*(1-c) := by
+  have hm : (maskedRotation4 b 0 c z).submatrix
+      (3:Fin 4).succAbove (3:Fin 4).succAbove=
+      !![1,0,0;0,-1+b*(1-c),-b*z;0,0,-1] := by
+    ext r a
+    fin_cases r <;> fin_cases a <;>
+      first | rfl | (change (0:ℝ)*z=0;ring) |
+        (change -1+(0:ℝ)*(1-c)= -1;ring)
+  have h0 : maskedRotation4 b 0 c z 0 3=0 := rfl
+  have h1 : maskedRotation4 b 0 c z 1 3=0 := rfl
+  have h2 : maskedRotation4 b 0 c z 2 3=0 := rfl
+  have h3 : maskedRotation4 b 0 c z 3 3= -1 := rfl
+  rw [Matrix.det_succ_column _ (3:Fin 4),Fin.sum_univ_four,h0,h1,h2,h3]
+  simp only [mul_zero,zero_mul,zero_add,add_zero]
+  rw [hm,Matrix.det_fin_three]
+  change ((-1:ℝ)^(6:ℕ))*(-1)*
+    (1*(-1+b*(1-c))*(-1)-1*(-b*z)*0-0*0*(-1)+0*(-b*z)*0+
+      0*0*0-0*(-1+b*(1-c))*0)= -1+b*(1-c)
+  ring
+
+/-- The curve may be nonlinear. Only its first sine jet is used. For the
+proper Cayley rotation z(t)=2t/(1+t^2), dz=2 at zero. -/
+theorem masked_rotation_genuine_metric_derivative (b k : ℝ) (c z : ℝ → ℝ)
+    (dz : ℝ) (hz : HasDerivAt z dz 0) :
+    HasDerivAt (fun t : ℝ =>
+      (maskedRotation4 b k (c t) (z t)*eta4*
+        (maskedRotation4 b k (c t) (z t)).transpose) 1 2)
+      ((k-b)*dz) 0 := by
+  simpa only [masked_rotation_metric_BC] using hz.const_mul (k-b)
+
+/-- Actual proper rational frame curve: the sine jet is derived, not a
+hypothesis carrying the wanted nonzero metric derivative. -/
+theorem cayley_rotation_actual_metric_derivative (b k : ℝ) :
+    HasDerivAt (fun t : ℝ =>
+      (maskedRotation4 b k ((1-t^2)/(1+t^2)) (2*t/(1+t^2))*eta4*
+        (maskedRotation4 b k ((1-t^2)/(1+t^2)) (2*t/(1+t^2))).transpose) 1 2)
+      (2*(k-b)) 0 := by
+  have hn := (hasDerivAt_id (0:ℝ)).const_mul 2
+  have hd := (hasDerivAt_const (0:ℝ) (1:ℝ)).add ((hasDerivAt_id 0).pow 2)
+  have hz : HasDerivAt (fun t : ℝ => 2*t/(1+t^2)) 2 0 := by
+    simpa using hn.div hd (by norm_num)
+  simpa only [mul_comm] using masked_rotation_genuine_metric_derivative
+    b k (fun t => (1-t^2)/(1+t^2)) (fun t => 2*t/(1+t^2)) 2 hz
+
+/-- A real nonzero metric jet cannot be the constant metric of one Lorentz
+orbit. This includes every differentiable completion with the same jet. -/
+theorem nonzero_metric_jet_not_orbit_constant (f : ℝ → ℝ) (v : ℝ)
+    (h : HasDerivAt f v 0) (hv : v≠0) :
+    ¬ f =ᶠ[𝓝 (0:ℝ)] (fun _ => f 0) := by
+  intro hc
+  have hh := (h.congr_of_eventuallyEq hc.symm).unique
+    (hasDerivAt_const (0:ℝ) (f 0))
+  exact hv hh
+
 end
 end D0.Research.NativeMetricCompactness
 open D0.Research.NativeMetricCompactness
@@ -525,3 +672,23 @@ open D0.Research.NativeMetricCompactness
 #check native_transported_gram_frame_invariant
 #check resonance_two_component_gap
 #check affine_frozen_doubling_degeneracy
+
+#print axioms frozen_native_pointwise_affine_binding
+#check frozen_native_pointwise_affine_binding
+#print axioms native_flat_gram_curve_derivative
+#check native_flat_gram_curve_derivative
+#print axioms gauge_mask_jet_iff_constant
+#check gauge_mask_jet_iff_constant
+#print axioms rotationBC4_lorentz
+#check rotationBC4_lorentz
+#print axioms masked_rotation_metric_BC
+#check masked_rotation_metric_BC
+#print axioms masked_rotation_partial_det
+#check masked_rotation_partial_det
+#print axioms masked_rotation_genuine_metric_derivative
+#check masked_rotation_genuine_metric_derivative
+#print axioms nonzero_metric_jet_not_orbit_constant
+#check nonzero_metric_jet_not_orbit_constant
+
+#print axioms cayley_rotation_actual_metric_derivative
+#check cayley_rotation_actual_metric_derivative

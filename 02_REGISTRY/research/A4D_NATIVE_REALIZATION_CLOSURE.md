@@ -673,3 +673,25 @@ closure and all original parent terminals remain open. The next native
 history/preparation/composition law must account for this state-domain and
 metric-refinement boundary, rather than cite linear chain compatibility as
 the missing physical transition.
+
+
+The [full frozen gauge-orbit consumer](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#62-full-lorentz-orbit-obstruction-and-complete-affine-raw-intertwiners)
+now proves a full-state refinement obstruction on a proper flat gauge orbit
+with all coarse and fine raw states nondegenerate. Unequal frozen row weights
+give a nonzero raw Gram first jet, invariant under every fine Lorentz frame
+and unaffected by choosing links, shifts or matter. Every differentiable
+completion retaining that first coframe jet fails the same orbit law,
+including nonlinear o(u) corrections. At fixed doubled ratio a small proper
+rotation has transported squared metric-gap liminf >=4096/66049, retained by
+vanishing metric errors and small comparison links. The complete affine raw
+intertwiner class under pullback node frames is C_x F(p(x)); invertible C_x
+preserve the whole nondegenerate domain, and fixed raw reference eta forces
+raw B0. That B0 map fails the actual graded one-form chain equation. This
+analytic classification installs no replacement transition. The extension
+has 38 compiled propositions, 30 actual types, 36 D0 source pins and 543
+exact controls, with 37 false-scope and ten false-exact rejections. Other
+first jets, covariant link-dependent reconstructions, preparation constraints
+and weaker readouts need their own laws. The first native history/preparation/
+composition theorem must supply that full law; G0, source/Ward, GR and all
+original parent terminals remain open. The 44 graph statuses and edges are
+unchanged.

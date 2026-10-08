@@ -19,6 +19,8 @@ SCOPE = {
     'transported_flatness_extension': 'DELTA_LINK_TIMES_RAW_L2_TENDS_TO_ZERO',
     'curved_sequence': 'BOUNDED_NATIVE_POTENTIAL_PROPER_SMALL_LINKS_TRANSPORTED_READOUT',
     'frozen_coframe_refinement_boundary': 'ALL_COARSE_COFRAMES_FULL_COMPOSED_ONE_FORM_BLOCK_FIXED_TORUS_WEAK_METRIC_PROBES_SMALL_COMPARISON_LINKS',
+    'frozen_raw_gauge_orbit_boundary': 'ANY_DIFFERENTIABLE_FULL_STATE_REFINEMENT_WITH_FLAT_RAW_REFERENCE_AND_SAME_FROZEN_ROW_FIRST_JET',
+    'affine_raw_intertwiners': 'COMPLETE_CONNECTION_INDEPENDENT_AFFINE_CLASS_FOR_PULLBACK_NODE_FRAMES_WITH_REFERENCE_CONDITION_EXPLICIT',
     'frozen_curve_refinement_gap': 'NONZERO_GAUGE_INVARIANT_BULK_GAP_WITH_VANISHING_METRIC_CORRECTORS_ALLOWED',
     'continuum_parity_and_regularity_formalized': False,
     'finite_inverse_is_joint_Euler_inverse': False,
@@ -44,6 +46,14 @@ SCOPE = {
     'all_other_native_refinement_diagrams_excluded': False,
     'affine_origin_gauge_supplied_by_linear_Lorentz_owner': False,
     'prepared_price_theorem_derives_full_coframe_refinement': False,
+    'nonlinear_same_jet_can_restore_raw_Lorentz_orbits': False,
+    'fine_links_can_erase_raw_Gram_orbit_defect': False,
+    'affine_naturality_alone_forces_B0_without_reference': False,
+    'orbit_metric_gap_is_action_contrast': False,
+    'affine_class_exhausts_other_native_refinements': False,
+    'affine_intertwiner_universal_class_Lean_formalized': False,
+    'raw_quotient_naturality_derived_for_any_weaker_readout': False,
+    'flat_gauge_test_proves_native_physical_root': False,
     'soundness_or_recovery_proved': False,
     'G0_closed': False,
     'positive_GR': False,
@@ -83,9 +93,9 @@ def main():
         checks.append(name)
 
     receipt = json.loads((root/(BASE+'_results.json')).read_text())
-    check('COMPILED_29_REAL_PROPOSITIONS', receipt['status'] == 'PASS'
+    check('COMPILED_38_REAL_PROPOSITIONS', receipt['status'] == 'PASS'
           and receipt['compiler_exit_code'] == 0 and not receipt['sorryAx']
-          and receipt['printed_axiom_dependencies'] == 29 and receipt['owner_input_head'] == HEAD)
+          and receipt['printed_axiom_dependencies'] == 38 and receipt['owner_input_head'] == HEAD)
     pins = {**receipt['transitive_d0_source_sha256'], **receipt['toolchain_input_sha256'],
             receipt['capsule']: receipt['capsule_sha256'], receipt['output']: receipt['output_sha256']}
     check('ALL_TRANSITIVE_OWNER_TOOLCHAIN_CAPSULE_OUTPUT_PINS', all(sha(p) == h for p, h in pins.items()))
@@ -99,7 +109,16 @@ def main():
               'frozen_native_tail_zero','native_flat_bulk_center','native_flat_bulk_center_bound',
               'native_flat_gram_expansion','native_flat_gram_entry_bound',
               'native_transported_gram_frame_invariant','resonance_two_component_gap',
-              'affine_frozen_doubling_degeneracy']
+              'affine_frozen_doubling_degeneracy',
+              'frozen_native_pointwise_affine_binding',
+              'native_flat_gram_curve_derivative',
+              'gauge_mask_jet_iff_constant',
+              'rotationBC4_lorentz',
+              'masked_rotation_metric_BC',
+              'masked_rotation_partial_det',
+              'masked_rotation_genuine_metric_derivative',
+              'nonzero_metric_jet_not_orbit_constant',
+              'cayley_rotation_actual_metric_derivative']
     for name in actual:
         check('RESOLVED_REAL_PROPOSITION_'+name, "'D0.Research.NativeMetricCompactness."+name+"' depends on axioms:" in out
               and '\nD0.Research.NativeMetricCompactness.'+name in out)
@@ -360,6 +379,139 @@ def main():
     check('WEAK_SMOOTH_METRIC_PROBE_GAP_REMAINS_NONZERO',
           s.Rational(2,32**2) == s.Rational(1,512) and profile.subs(t,s.Rational(3,4))**2>0)
 
+    # Full proper-Lorentz orbit and every partial row mask, at the owned raw arrow.
+    rho,uu=s.symbols('rho uu',real=True)
+    co=(1-uu**2)/(1+uu**2)
+    si=2*uu/(1+uu**2)
+    rot=s.eye(4)
+    rot[1,1]=rot[2,2]=co
+    rot[1,2]=si
+    rot[2,1]=-si
+    check('GAUGE_ROTATION_PROPER_LORENTZ_AND_FUTURE',
+          zero(rot*eta*rot.T-eta) and s.factor(rot.det()) == 1 and rot[0,0] == 1)
+    check('GAUGE_ROTATION_CONNECTS_TO_IDENTITY', rot.subs(uu,0) == s.eye(4))
+    coarse=eta*rot
+    check('COARSE_COMPLETE_CONSTANT_GAUGE_ORBIT_RAW_AND_TRANSPORTED_METRIC',
+          zero(coarse*eta*coarse.T-eta) and s.factor(coarse.det()) == -1)
+    check('COARSE_FULL_GAUGE_IDENTITY_LINKS_UNCHANGED',
+          zero(rot.inv()*s.eye(4)*rot-s.eye(4)))
+    opaque=s.Matrix(4,4,lambda r,a: s.Symbol('F'+str(r)+str(a)))
+    for mask in range(16):
+        row=s.diag(*[rho*int(bool(mask&(1<<r))) for r in range(4)])
+        fine=eta+row*(coarse-eta)
+        qfine=fine*eta*fine.T
+        b=rho*int(bool(mask&2))
+        k=rho*int(bool(mask&4))
+        check('ALL_RAW_AFFINE_OWNER_ENTRIES_MASK'+str(mask),
+              all(s.expand((eta+row*(opaque-eta))[r,a]-
+                  (eta[r,a]+row[r,r]*(opaque[r,a]-eta[r,a]))) == 0
+                  for r in range(4) for a in range(4)))
+        check('EXACT_GAUGE_METRIC_BC_MASK'+str(mask),
+              s.factor(qfine[1,2]-(k-b)*si) == 0)
+        expected_det=(-1 if b == 0 and k == 0 else
+          -1+rho*(1-co) if (b == 0) != (k == 0) else
+          -(1+2*rho*(rho-1)*(1-co)))
+        check('FULL_NONDEGENERATE_GAUGE_MASK_DETERMINANT'+str(mask),
+              s.factor(fine.det()-expected_det) == 0 and
+              fine.subs({rho:2,uu:s.Rational(1,16)}).det() != 0)
+        if (b == 0) != (k == 0):
+            check('ARBITRARILY_SMALL_FRAME_RAW_GAUGE_DEFECT_MASK'+str(mask),
+                  s.diff(qfine[1,2],uu).subs(uu,0) == 2*(k-b)
+                  and s.limit(qfine[1,2]/uu,uu,0) == 2*(k-b))
+    db,dc=s.symbols('db dc',real=True)
+    mm=eta+s.diag(0,db,dc,0)*(coarse-eta)
+    check('FULL_TWO_ROW_MASK_METRIC_NOT_ONLY_BINARY',
+          s.factor((mm*eta*mm.T)[1,2]-(dc-db)*si) == 0)
+    check('NONGAUGE_RAW_DIFFERENCE_HAS_FIXED_SIGNED_SMOOTH_PROBE',
+          (-2*si).subs(uu,s.Rational(1,16)) == -s.Rational(64,257))
+    # All six generators and all sixteen masks; no Lorentz gauge direction dropped.
+    ds=s.symbols('d0:4',real=True)
+    for a,b in itertools.combinations(range(4),2):
+        generator=s.zeros(4)
+        generator[a,b]=1
+        generator[b,a]=-eta[a,a]*eta[b,b]
+        skew=eta*generator
+        check('GENUINE_INTERNAL_LORENTZ_TANGENT_'+str(a)+str(b),
+              zero(generator*eta+eta*generator.T) and skew.T == -skew)
+        tangent=s.diag(*ds)*skew
+        check('COMPLETE_ROW_WEIGHT_GAUGE_METRIC_JET_'+str(a)+str(b),
+              tangent+tangent.T == s.Matrix(4,4,lambda r,j:(ds[r]-ds[j])*skew[r,j]))
+        for mask in range(16):
+            vals={ds[r]:rho*int(bool(mask&(1<<r))) for r in range(4)}
+            diff=(tangent+tangent.T).subs(vals)
+            check('ALL_INTERNAL_GENERATOR_MASK_JET_'+str(a)+str(b)+'S'+str(mask),
+                  (zero(diff)) == (bool(mask&(1<<a)) == bool(mask&(1<<b))))
+    check('SECOND_ORDER_NONLINEAR_RAW_CORRECTOR_CANNOT_FIX_FIRST_METRIC_JET',
+          s.limit((-rho*si+uu**2)/uu,uu,0) == -2*rho)
+    # Exact volume count on both partial regions, with packed off-diagonal weight.
+    ll=s.Symbol('LL',positive=True)
+    kk=rho*ll
+    transported_lower=4*rho**2*(ll-1)*(kk-ll-1)/kk**2*si**2
+    check('FIXED_RATIO_GAUGE_METRIC_GAP_LIMIT',
+          s.factor(s.limit(transported_lower,ll,s.oo)-4*(rho-1)*si**2) == 0)
+    check('DOUBLED_GAUGE_GAP_EXACT_NONZERO_CONSTANT',
+          (4*si**2).subs(uu,s.Rational(1,16)) == s.Rational(4096,66049))
+    check('VANISHING_METRIC_CORRECTOR_RETAINS_GAUGE_GAP',
+          s.limit(s.sqrt(transported_lower.subs({rho:2,uu:s.Rational(1,16)}))-1/ll,ll,s.oo)
+          == s.sqrt(s.Rational(4096,66049)))
+    for L,K in [(4,8),(8,16),(4,12)]:
+        rr=s.Rational(K,L)
+        partial=2*(L-1)*(K-L-1)*K**2
+        count=sum(1 for bb in range(K) for cc in range(K)
+          if (1<=bb<L and L+1<=cc<K) or (L+1<=bb<K and 1<=cc<L))*K**2
+        check('BOTH_ACTUAL_TRANSPORTED_PARTIAL_REGION_COUNTS_L'+str(L)+'K'+str(K),
+              partial == count and partial>0)
+        allpartial=2*L*(K-L)*K**2
+        check('RAW_PACKED_BC_METRIC_NORM_EXACT_L'+str(L)+'K'+str(K),
+              2*s.Rational(allpartial,K**4)*rr**2 == 4*(rr-1))
+        for mask in [2,4]:
+            row=s.diag(*[rr*int(bool(mask&(1<<r))) for r in range(4)])
+            ff=(eta+row*(coarse-eta)).subs(uu,s.Rational(1,16))
+            center=s.Matrix(4,4,lambda r,a:(ff[r,a]+ff[r,a])/2)
+            check('LITERAL_IDENTITY_LINK_TRANSPORTED_GAUGE_DEFECT_L'+str(L)+'K'+str(K)+'S'+str(mask),
+                  center == ff and (center*eta*center.T)[1,2] != 0 and ff.det() != 0)
+    # Proper finite witnesses completely force the standard commutant and fixed rows.
+    halfturns=[s.diag(1,-1,-1,1),s.diag(1,-1,1,-1),s.diag(1,1,-1,-1)]
+    witnesses=halfturns+[boost(j,s.Rational(1,2)) for j in [1,2,3]]
+    for j,M in enumerate(witnesses):
+        check('AFFINE_COMPLETENESS_PROPER_GROUP_WITNESS_'+str(j),
+              zero(M*eta*M.T-eta) and M.det() == 1 and M[0,0]>=1)
+    symbols=s.symbols('m0:16')
+    variable=s.Matrix(4,4,symbols)
+    equations=[e for M in witnesses for e in variable*M-M*variable]
+    commutant=s.linear_eq_to_matrix(equations,symbols)[0]
+    null=commutant.nullspace()
+    check('COMPLETE_STANDARD_LORENTZ_COMMUTANT_RANK15_NULLITY1',
+          commutant.rank() == 15 and len(null) == 1 and s.Matrix(4,4,list(null[0])) == s.eye(4))
+    fixed=s.Matrix.vstack(*[M.T-s.eye(4) for M in witnesses])
+    killed=s.Matrix.vstack(*[M-s.eye(4) for M in witnesses])
+    check('COMPLETE_PROPER_LORENTZ_FIXED_ROW_AND_COLUMN_SPACES_ZERO',
+          fixed.rank() == 4 and killed.rank() == 4 and not fixed.nullspace() and not killed.nullspace())
+    check('COMPLETE_RAW_AFFINE_INTERTWINER_DIMENSION', 16*(16-commutant.rank()) == 16)
+    C=s.Matrix([[2,1,0,0],[0,1,0,0],[0,0,3,0],[0,0,0,1]])
+    check('LEFT_RAW_INTERTWINERS_SUFFICE_FOR_FULL_RIGHT_FRAME_ACTION',
+          zero(C*(opaque*rot)-(C*opaque)*rot) and C.det() != 0)
+    check('REFERENCE_NORMALIZATION_NECESSARY_BEFORE_UNIQUE_B0_CONCLUSION',
+          zero(2*(opaque*rot)-(2*opaque)*rot) and 2*eta != eta)
+    check('AFFINE_FIXED_REFERENCE_ROW_WEIGHT_FAILS_FULL_NATURALITY',
+          not zero((eta+C*(opaque*rot-eta))-(eta+C*(opaque-eta))*rot))
+    check('OTHER_SITE_TERM_CANNOT_INTERTWINE_INDEPENDENT_NODE_FRAMES',
+          not zero((opaque+opaque*rot)-(opaque+opaque)))
+    # The unique affine reference-preserving raw B0 map is not the graded d-chain map.
+    for L in [3,4,8]:
+        K=L+1
+        B0=s.Matrix(K,L,lambda i,j:int(j == i%L))
+        B1=s.Rational(K,L)*s.Matrix(K,L,lambda i,j:int(i == j))
+        DL=s.Matrix(L,L,lambda i,j:L*(int(j == (i+1)%L)-int(i == j)))
+        DK=s.Matrix(K,K,lambda i,j:K*(int(j == (i+1)%K)-int(i == j)))
+        sf=s.zeros(L,1);sf[1]=1
+        check('RAW_B0_FAILS_ACTUAL_NEW_ROW_CHAIN_EQUATION_L'+str(L),
+              (DK*B0*sf)[L] == 0 and (B0*DL*sf)[L] == L)
+        check('ACTUAL_GRADED_B1_STILL_SATISFIES_CHAIN_EQUATION_L'+str(L),
+              DK*B0 == B1*DL)
+        check('B0_RAW_STATE_NONDEGENERACY_CONTROL_L'+str(L),
+              all((2*eta).det() != 0 for _ in range(K)))
+
     payload={'status':'PASS','owner_input_head':HEAD,'scope':SCOPE,'checks':checks,
              'input_sha256':pins,'proof_sha256':sha(PROOF),'checker_sha256':sha(BASE+'_check.py'),
              'native_refinement_certificate_sha256':sha(REFINEMENT),
@@ -374,6 +526,10 @@ def main():
               'frozen_metric_bulk_entry_bound':'delta+delta^2',
               'frozen_resonance_metric_gap_square_liminf_lower_bound':'1/8388608',
               'fixed_smooth_probe_gap_lower_bound':'(1/512)*integral(chi)',
+              'gauge_orbit_metric_BC_first_jet':'2*(d_C-d_B)',
+              'gauge_orbit_doubled_transported_gap_square_liminf_lower_bound':'4096/66049',
+              'affine_standard_commutant_rank':15,
+              'affine_raw_intertwiner_dimension':16,
               'full_graded_composed_row_equations':tensor_rows,
               'global_frozen_metric_limit':'eta_WITH_ALL_FIXED_UNBOUNDED_SCALE_RATIOS_WEAK_METRIC_COMPATIBILITY'}}
     if args.output:

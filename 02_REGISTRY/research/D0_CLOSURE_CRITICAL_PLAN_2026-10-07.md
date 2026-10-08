@@ -15,7 +15,7 @@
 ## Выполнено по G0
 
 [Первый доказательный пакет](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md) опубликован
-в #310 на `113efe7d8ccd6a49bdba15385fec11c9789813f1` и принят в текущий
+в #310 на `9a724dc37520fd042c00b0a5b330ceae0b563da7` и принят в текущий
 набор артефактов CONTROL для review. Доказана полнота настоящего
 `ActionProtocol`: все цены задаются произвольными неотрицательными
 добавками на различимых парах. Канонический представитель существует
@@ -515,6 +515,29 @@ links, fixed-torus placement и weak metric compatibility — явные гип�
 существующий владелец требует собственного доказательства своих стрелок;
 новый lift или действие не устанавливаются. G0 и все цели ОТО остаются открыты.
 
+### Уточнение обязано проходить полный Lorentz orbit
+
+[Раздел 6.2](02_REGISTRY/research/A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#62-full-lorentz-orbit-obstruction-and-complete-affine-raw-intertwiners)
+исключает весь differentiable класс с frozen coframe first jet уже на
+невырожденной proper gauge orbit плоского состояния. Raw Gram defect
+ненулевой в первом порядке; fine links и Lorentz frames его не исправляют.
+Нелинейный o(u) остаток также не помогает. При удвоении fixed-ratio
+transported metric имеет squared gap liminf >=4096/66049 для фиксированного
+малого proper rotation. Vanishing metric errors и small comparison links
+сохраняют его. Это orbit/refinement проверка, не native physical root.
+
+Полный affine connection-independent класс под independent pullback node
+frames равен C_x F(p(x)). Невырожденность всего raw-носителя требует C_x
+invertible; fixed raw reference eta вынуждает C_x=I. Этот единственный
+нормированный B0 raw-переход не является graded one-form chain map.
+Классификация аналитическая, а не новая установленная физическая стрелка.
+Проверены 38 compiled propositions, 30 фактических типов, 36 D0 pins,
+543 exact controls, 37 ложных scopes и десять подмен точных результатов.
+Следующий единый собственный закон должен предъявить реально используемый
+gauge-compatible переход и первый jet либо вывести свою gauge preparation.
+Другие first jets, covariant reconstructions, слабые readouts и все цели
+ОТО остаются открыты и требуют собственных владельцев.
+
 ## 7. Один ближайший deliverable и следующий отчёт
 
 Ближайший deliverable — G0: замкнутая схема собственного действия,
@@ -524,7 +547,7 @@ links, fixed-torus placement и weak metric compatibility — явные гип�
 
 ### Уточнённое ТЗ на следующий доказательный пакет — 8 октября
 
-Вход: опубликованный #310 на `113efe7d8ccd6a49bdba15385fec11c9789813f1`,
+Вход: опубликованный #310 на `9a724dc37520fd042c00b0a5b330ceae0b563da7`,
 [полный совместный quotient](A4D_NATIVE_JOINT_FIELD_QUOTIENT.md),
 [классификация parent](A4D_NATIVE_PARENT_LAW_COMPLETENESS.md),
 [метрическая компактность и UV–link конструкция](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md),

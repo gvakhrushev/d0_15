@@ -10,6 +10,12 @@ Try this:
   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
 
   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
 'D0.Research.NativeMetricCompactness.matrixSquare_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.NativeMetricCompactness.matrixSquare_add_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.NativeMetricCompactness.signedGram_square_le' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -159,3 +165,64 @@ D0.Research.NativeMetricCompactness.resonance_two_component_gap (f d : ℝ) (hf 
 D0.Research.NativeMetricCompactness.affine_frozen_doubling_degeneracy :
   (D0.Geometry.roleLorentzMetric + (-1 / 2) • D0.Geometry.roleLorentzMetric).det ≠ 0 ∧
     D0.Geometry.roleLorentzMetric + 2 • (-1 / 2) • D0.Geometry.roleLorentzMetric = 0
+'D0.Research.NativeMetricCompactness.frozen_native_pointwise_affine_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.frozen_native_pointwise_affine_binding (Nc Nf : ℕ)
+  (e : D0.Geometry.LocalCoframeField Nc) (x : D0.Geometry.ArchiveRolePhaseGroup Nf) :
+  have y := (D0.Geometry.archiveRolePhasePointGroupEquiv Nf).symm x;
+  have z := (D0.Geometry.archiveRolePhasePointGroupEquiv Nc) (frozenPhaseCap Nc Nf y);
+  have d := fun r => if ↑(y r) < Nc + 2 then (↑Nf + 2) / (↑Nc + 2) else 0;
+  D0.Geometry.rawSolderMatrix Nf (frozenNativeCoframe Nc Nf e) x =
+    D0.Geometry.roleLorentzMetric +
+      Matrix.diagonal d * (D0.Geometry.rawSolderMatrix Nc e z - D0.Geometry.roleLorentzMetric)
+'D0.Research.NativeMetricCompactness.native_flat_gram_curve_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.native_flat_gram_curve_derivative (H : Matrix D0.Role D0.Role ℝ) (r a : D0.Role) :
+  HasDerivAt
+    (fun t =>
+      ((D0.Geometry.roleLorentzMetric + t • H) * D0.Geometry.roleLorentzMetric *
+          (D0.Geometry.roleLorentzMetric + t • H).transpose)
+        r a)
+    (H r a + H a r) 0
+'D0.Research.NativeMetricCompactness.gauge_mask_jet_iff_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.gauge_mask_jet_iff_constant.{u_1} {i : Type u_1} [Fintype i] (d : i → ℝ) :
+  (∀ (S : Matrix i i ℝ), S.transpose = -S → ∀ (r a : i), d r * S r a + d a * S a r = 0) ↔ ∀ (r a : i), d r = d a
+'D0.Research.NativeMetricCompactness.rotationBC4_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeMetricCompactness.rotationBC4_lorentz (c z : ℝ) (h : c ^ 2 + z ^ 2 = 1) :
+  rotationBC4 c z * eta4 * (rotationBC4 c z).transpose = eta4
+'D0.Research.NativeMetricCompactness.masked_rotation_metric_BC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.masked_rotation_metric_BC (b k c z : ℝ) :
+  (maskedRotation4 b k c z * eta4 * (maskedRotation4 b k c z).transpose) 1 2 = (k - b) * z
+'D0.Research.NativeMetricCompactness.masked_rotation_partial_det' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.masked_rotation_partial_det (b c z : ℝ) :
+  (maskedRotation4 b 0 c z).det = -1 + b * (1 - c)
+'D0.Research.NativeMetricCompactness.masked_rotation_genuine_metric_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.masked_rotation_genuine_metric_derivative (b k : ℝ) (c z : ℝ → ℝ) (dz : ℝ)
+  (hz : HasDerivAt z dz 0) :
+  HasDerivAt (fun t => (maskedRotation4 b k (c t) (z t) * eta4 * (maskedRotation4 b k (c t) (z t)).transpose) 1 2)
+    ((k - b) * dz) 0
+'D0.Research.NativeMetricCompactness.nonzero_metric_jet_not_orbit_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.nonzero_metric_jet_not_orbit_constant (f : ℝ → ℝ) (v : ℝ) (h : HasDerivAt f v 0)
+  (hv : v ≠ 0) : ¬f =ᶠ[nhds 0] fun x => f 0
+'D0.Research.NativeMetricCompactness.cayley_rotation_actual_metric_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeMetricCompactness.cayley_rotation_actual_metric_derivative (b k : ℝ) :
+  HasDerivAt
+    (fun t =>
+      (maskedRotation4 b k ((1 - t ^ 2) / (1 + t ^ 2)) (2 * t / (1 + t ^ 2)) * eta4 *
+          (maskedRotation4 b k ((1 - t ^ 2) / (1 + t ^ 2)) (2 * t / (1 + t ^ 2))).transpose)
+        1 2)
+    (2 * (k - b)) 0
