@@ -648,3 +648,28 @@ history/record preparation, composition-action and full-refinement law,
 including the restrictions it actually imposes on the complete price fiber.
 Another arbitrary reading, scalar cost ratio or off-shell example is not
 that result. G0 physical ownership and all downstream GR obligations remain.
+
+
+The [full frozen-coframe consumer](A4D_NATIVE_METRIC_COMPACTNESS_AND_LINK_RESONANCE.md#61-complete-frozen-coframe-refinement-class-and-its-metric-boundary)
+now decides a complete specified refinement/readout class, beyond the earlier
+Nyquist centered-gradient defect. Homogeneous full-solder prolongation creates
+zero raw determinants; the fixed-background perturbation version also fails
+to preserve the whole nondegenerate carrier. On its exact added bulk the
+transported metric approaches eta for every coarse coframe and small comparison
+links, with no raw norm bound. Weak compatibility of fixed metric probes on
+all unbounded fixed composed ratios forces a smooth metric limit to be eta.
+The existing curved resonance fails even one doubled weak interval, with
+nonempty full raw/link comparison and squared metric-gap liminf >=1/8388608.
+Complete owned Lorentz gauge and vanishing metric correctors preserve the gap.
+
+This consumes the same primary cochain composition and center owners, with
+29 compiled propositions, 21 actual types, 36 D0 pins, 326 exact controls and
+422144 full graded composed row equations. The continuum weak-test assembly
+is analytic. Its metric-readout premise is not an action-contrast theorem.
+Another independently owned preparation/reconstruction or diagram requires
+its real law; none is installed as a repair. Actual physical admission into
+the complete core, own source/Ward, nonlinear joint dynamics, G0/GR/global
+closure and all original parent terminals remain open. The next native
+history/preparation/composition law must account for this state-domain and
+metric-refinement boundary, rather than cite linear chain compatibility as
+the missing physical transition.

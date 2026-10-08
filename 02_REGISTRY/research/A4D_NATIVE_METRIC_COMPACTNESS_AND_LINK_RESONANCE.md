@@ -4,7 +4,8 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, existing Draft #310.
 Frozen owner input: `af3658e09762860e1e38820fd8bc11de54403cff`.
 CONTROL/main baseline: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Status: **closed small centered-gradient compactness theorem and constructive
-curved transported-readout sequence, with explicit admission/refinement boundary**.
+curved transported-readout sequence, with a complete stated frozen-coframe
+weak-metric-refinement boundary**.
 No physical action or gate is selected. G0, positive GR and global closure remain OPEN.
 
 This consumes the metric-only exception in
@@ -333,6 +334,162 @@ Neither a new coframe lift nor an unproved removal of the raw UV sector is
 introduced here. O(h) metric corrections are allowed by the new positive
 criterion but do not close #310's original fixed-source/raw-owner task.
 
+### 6.1 Complete frozen-coframe refinement class and its metric boundary
+
+This consumes the actual composed maps in
+[native cochain refinement, §5](A4D_NATIVE_COCHAIN_REFINEMENT.md#5-one-step-estimates-and-composed-fixed-torus-failure).
+The precisely stated candidate diagram is the coordinatewise frozen map,
+its actual composition, the degree-one normalization K/L and fixed-torus
+placement x/K. All sixteen raw entries and internal columns are retained.
+The earlier [centered-lift boundary](A4D_NATIVE_CENTERED_METRIC_LIFT.md#the-owned-graded-one-form-lift-is-a-different-candidate)
+already gives zero/eta limits in measure for exact iterates from one fixed
+coarse field; that theorem is reused. The new consumer below covers changing,
+arbitrarily large coarse fields, role-dependent transported links, complete
+Lorentz gauge and composed weak metric probes with vanishing metric errors.
+For **every** coarse coframe e_L, with no size or gradient-image restriction,
+
+    (P1_(K<-L)e_L)_ra(x)=(K/L)1_[x_r<L]e_L(c_L(x))_ra,
+    c_L(j)=j if j<L, and 0 otherwise.                      (12)
+
+This is B1 in direction r and B0 in the other directions. The existing
+all-grade tensor composition proof gives (12) for every K>=L; a single
+modulo map would be different. The capsule's `frozenNativeCoframe` uses
+these coordinates through the actual point/group equivalence, and
+`frozen_native_tail_zero` binds its zero rows to `rawSolderMatrix`.
+The tensor-composition assembly remains the consumed analytic proof,
+not a newly supported physical-state owner.
+
+Two interpretations of the linear map have different immediate failures.
+Applied homogeneously to the whole F, it makes every row zero wherever
+all x_r>=L. Its raw determinant is zero, already at the all-L point of an
+adjacent step. Thus even a constant nondegenerate coarse raw field is sent
+outside the full nondegenerate carrier. Links, shifts, matter and Lorentz
+frames cannot repair a zero raw determinant.
+
+Applied instead to the existing perturbation e=F-eta, it gives F_fine=eta+P1 e.
+This affine proposal also fails to preserve the **whole** nondegenerate
+kinematic carrier: at K=2L take coarse F=eta/2, e=-eta/2. On the prefix cube
+x_r<L every row factor is two, so fine F=0, although coarse det F=-1/16.
+For any K>L the same witness is e=-(L/K)eta, coarse F=(1-L/K)eta.
+The doubling matrix statement is compiled as
+`affine_frozen_doubling_degeneracy`. These are input-state preservation
+facts, not purported on-shell counterexamples. A derived admissible subset
+could exclude those coarse states, but the linear chain theorem does not
+supply that subset or a full joint transition.
+
+For the affine perturbation proposal let
+B_(L,K)={x:L+1<=x_r<K for all four r}. Its exact size is (K-L-1)^4 for
+K>=L+1. At x and every actual incoming neighbor x-r, (12) is zero in every
+row, so the raw field is eta there. Let arbitrary comparison links R_(L,K)
+have delta_(L,K)=sup_(x,r,a,b)|(R_(L,K)(x,r)-I)_ab|. The actual center yields
+
+    H_ra=(ThetaHat-eta)_ra
+        =eta_rr(R_(L,K)(x-r,r)_ra-I_ra)/2,
+    |H_ra|<=delta/2,
+    |(qHat-eta)_ra|<=delta+delta^2,
+    ||qHat-eta||_F<=4(delta+delta^2) on B_(L,K).             (13)
+
+Proof: qHat-eta=H+H^T+H eta H^T; the quadratic entry has four terms,
+each bounded by delta^2/4. The native center identity, entry bound and full
+Gram expansion/bound are compiled. This retains all 24 Lorentz link
+directions; it even holds for arbitrary linear matrices. Proper O(1/K)
+comparison links suffice. Their small chart is an explicit hypothesis,
+not something derived from physical equations. Affine shifts and every
+matter grade are retained and do not enter this particular metric owner.
+
+**Complete weak-metric class.** Let metrics qHat_K of native kinematic states
+converge against all smooth periodic metric tests to smooth nondegenerate g.
+For each fixed integer rho>=2, K=rho L, L in 4N, form a comparison raw
+field eta+P1 e_L and some comparison links with delta_(L,K)->0. Its metric
+owner is defined even without raw invertibility; calling it a full native
+state additionally requires that independent admission check. Require only
+
+    K^-4 sum_x chi(x/K)[qHat_K-qHat_(L,K)^comparison]_ra->0  (14)
+
+for every fixed smooth chi supported compactly in T_rho=(1/rho,1)^4 and
+each metric slot. Include any recording/reconstruction errors used to assert
+(14). An unbounded set of fixed rho suffices. No raw or coframe closeness,
+uniform inverse-B bound, exact field equation or fitted source is assumed.
+
+For large L every tested point lies in B_(L,K). By (13), the comparison
+pairing tends to eta_ra integral chi. Metric convergence and (14) imply
+integral chi(g_ra-eta_ra)=0. Hence smooth g=eta on T_rho. The union over
+unbounded rho covers all points with positive coordinates; continuity extends
+the equality across coordinate subtori. Therefore **g=eta everywhere and
+its Levi-Civita curvature vanishes**. This is an analytic all-size theorem
+for every coarse coframe and comparison link in the declared class.
+One rho=2 gives only g=eta on T_2, not global flatness: a smooth metric
+perturbation supported in the first temporal quarter can be curved elsewhere.
+Adjacent errors do not establish the required composed intervals.
+
+For the homogeneous raw-F interpretation, both raw field and transported
+center are zero on B_(L,K), for any links. One such weak interval forces
+g=0 on an open set, contradicting nondegeneracy. Its finite raw-state
+failure already occurs earlier.
+
+The metric conclusion survives the **complete** owned local Lorentz action:
+transform the whole raw solder and incoming links together. The actual center
+then obeys ThetaHat'=ThetaHat Lambda and qHat'=qHat. This owner-bound
+invariance is compiled for arbitrary site frames. A coframe-only change is
+not that gauge action. Reconstructing another fine state after a frame change
+requires its own transition law. No affine-origin or coordinate gauge is
+provided or removed here; the complete raw Gram, dressed links, shifts and
+exterior matter remain in the joint quotient.
+
+**Existing curved resonance at one doubled interval.** Use the §5 fine
+links at K=2L for the comparison of (12). Their boost planes exclude the
+incoming row, so its metric is exactly eta on B_(L,2L). The actual resonance
+has CC and DD differences both -f(x_A/K)^2/(1-K^-2 f(x_A/K)^2). Since
+f>=1/32 and the denominator lies in (0,1],
+
+    ||qHat_(2L)^resonance-qHat_(L,2L)^comparison||_h^2
+       >=2((L-1)/(2L))^4/32^4,
+    liminf ||difference||_h^2>=1/8388608>0.                (15)
+
+Here the comparison really is a nonempty full **kinematic** raw/link state:
+its raw field is eta+K zeta(c_L(x)) w_mask v^T, with
+(w_mask)_r=1_[x_r<L]. Its determinant is
+-1-K zeta(c_L(x))((w_mask)_A-(w_mask)_B), never zero for K>=4.
+The fine links are proper; affine shifts and every matter component may
+be retained independently. All sixteen masks are exactly checked.
+Neither member is asserted to solve the unowned physical Euler equations.
+
+The scalar gap inequality is compiled. Arbitrary comparison links with
+delta_(L,2L)->0 change the bulk norm by a quantity tending to zero, by (13),
+so the same liminf remains. Normalized L2 metric correctors tending to zero
+cannot remove it, by the triangle inequality. No raw-corrector bound is
+inferred from a small metric corrector.
+
+Choose any fixed smooth nonnegative nonzero chi with support inside
+(5/8,7/8)^4. Its support lies in B_(L,2L) for L>=4. Testing the sum of CC
+and DD differences gives the limit
+
+    -2 integral chi(y) f(y_A)^2 dy
+       <=-(1/512) integral chi<0.                         (16)
+
+Thus the resonance fails even one doubled weak interval (14). Arbitrary
+small comparison links, complete Lorentz gauge and vanishing weak recording
+or metric errors preserve this defect. The exponential companion has the
+same metric limit and conclusion. Without small comparison links a proper
+constant boost gives a nonflat transported bulk metric; that hypothesis
+cannot be discarded.
+
+**Decision at this full specified interface:** frozen one-form refinement,
+fixed-torus placement, small comparison links and composed weak metric
+compatibility exclude the displayed curved resonance; all unbounded fixed
+ratios exclude every smooth curved metric limit. This is an exhaustive
+boundary of the stated diagram/readout class, not an added admission gate
+or a whole-core NO-GO. An independently owned field-dependent reconstruction,
+another diagram/readout or non-small comparison links requires its own law.
+No replacement transition, action, source or postulate is introduced.
+
+Equations (14)--(16) concern **metric readout**. They neither follow from
+nor replace the calibrated O(h) source-subtracted **action** contrast on a
+different observable. A claimed factorization needs proof. Full physical
+admission into D0, own dynamics and #310's fixed-source/raw terminal remain
+open. The next preparation/composition law must explicitly address this
+state-domain and metric-refinement boundary.
+
 ## 7. Verification and the single remaining consumer
 
 The companion [exact checker](certificates/a4d_native_metric_compactness_check.py)
@@ -343,22 +500,30 @@ curvature, raw norm/product threshold, gauge control and actual refinement
 defects. The stored [ledger](certificates/a4d_native_metric_compactness_certificate.json)
 is compared in full; false scope extensions are rejected. The recorded
 compiler receipt distinguishes the finite propositions from every analytic
-continuum or phase-construction step above. The capsule prints 21 propositions
-and 13 actual theorem types, with 36 transitive D0 source pins and only
-standard axioms. The checker has 171 exact controls; 21 false scope ledgers
-and three ledgers falsifying curvature, the raw/link product and the
-cochain defect are rejected.
+continuum or phase-construction step above. The capsule prints 29 propositions
+and 21 actual theorem types, with 36 transitive D0 source pins and only
+standard axioms. The extended checker has 326 exact controls, including
+all composed graded rows, full-carrier preservation failures, the flat bulk,
+complete Lorentz gauge and nonempty resonant comparison. Twenty-nine false
+scope ledgers and six falsified exact-result ledgers must be rejected.
+The all-ratio and fixed-smooth-test limit arguments are analytic, not
+compiled continuum theorems.
 
 **Closed:** the metric-only loophole for the complete stated small centered-
 gradient chart, its product-bounded transported extension, and the alleged
 implication from O(h) links or bounded potentials to that extension. The
 explicit countersequence proves that last implication false.
+Section 6.1 adds the full frozen-coframe state-domain and weak-metric
+boundary. Its curved-resonance gap persists under complete Lorentz gauge,
+arbitrary small comparison links and vanishing metric correctors.
 
 **Next single G0 consumer:** derive native admission, the history-to-action
 law and commuting refinement on the full raw/transported joint carrier,
 and decide whether the displayed resonant states are retained or excluded
-by those independently owned laws. Any exclusion needs its own quantitative
-raw or refinement consequence; a small-link assumption alone is insufficient.
+by those independently owned laws. The full frozen one-form/small-link
+weak-metric class is now excluded quantitatively; it must not be reused as
+the unproved physical arrow. Any other exclusion or retained preparation
+needs its own quantitative law; a small-link assumption alone is insufficient.
 If retained, prove the action/probe bounds and genuine joint equations,
 with the same source and physical readout. This consumes rather than
 repeats the supplied-parent classification. No new action, selector or
