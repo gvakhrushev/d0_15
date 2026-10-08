@@ -762,7 +762,7 @@ roots, soundness/recovery, физические ограничения и ОТО
 Новый action, trace, temperature rule, selector или источник не выбирается.
 
 
-## Спектр двух собственных историй — текущий шаг
+## Спектр двух собственных историй — предыдущий шаг
 
 Источник: #310 на `915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`, вход `45f19d1399829b284f15b41899b49ee9961ea394`.
 [Доказательство §6.8](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) исчерпывает
@@ -790,3 +790,33 @@ image и вывести настоящие native on-shell equations. Дефек
 новый action, trace, temperature, selector, coupling или postulate не вводится.
 Физические подготовка/операции/readout, uniform bounds, local source/Ward,
 контраст, curved roots, soundness/recovery, ограничения и ОТО открыты.
+
+
+## Собственная сцена вместе с сохраняемой историей — текущий шаг
+
+Источник #310: `e7ef84c680910b36ee0cf9a030d6e0780d0302dd`, вход `915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`.
+В §6.9 того же proof получена actual совместная конечная конструкция:
+718 ориентированных историй, Jt/Js/C1, reverseEdge, полные возвраты и
+все archive-delay kernels. Feedback теперь вычислен из этого оператора:
+J(I-T^2)C, а на существующем normalized Delta — 2*Delta-Delta^2.
+Сбалансированный архив из 30 направлений возвращается после двух
+операций; повторное усреднение его теряет. При совместном переименовании
+сцена и запись согласованы; vertex-only no-go не охватывает эту историю.
+
+Новый standalone packet: 60 kernel propositions, 30 D0 pins,
+246 exact controls, 32 false-scope и 24 false-exact rejection.
+Обычный determinant сохранён. Exact/analytic ranks 65 и 653 не выдаются
+за отдельные Lean rank theorems. CONTROL содержит 203 byte-identical
+artifacts и 421 verified artifact/input hash versions
+(325 current input versions). Исторические slices и
+44 полных контракта/статуса графа сохранены. Предыдущие source/CONTROL
+CI прошли; новые головы требуют своих CI и CONTROL review.
+
+Следующая одна стрелка — собственный допуск full joint scene/history
+state, его спектральный оператор на полном носителе и golden-compatible
+refinement. Построить complete native tangent/word law и применить
+genuine source calculus; тепловой вклад дополнения сохраняется. Coarse
+operator relation не заменяет full-bootstrap stationarity. Новый action,
+trace, temperature, selector, coupling, source или postulate не вводится.
+G0--G4, local source/Ward, contrast, curved roots, soundness/recovery,
+ограничения, ОТО и исходные terminal открыты.

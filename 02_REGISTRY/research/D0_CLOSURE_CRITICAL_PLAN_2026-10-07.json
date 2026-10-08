@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "eef57222c765b35dd491789c040d0ea11b63457e538f515d6fadd7edd26a2cad",
+    "sha256": "1dcf959b13931f653070f9d0f78aa67679a4b7b3577495616f301fbe1ebd413f",
     "global_census": false
   },
   "history_diagnosis": {
@@ -269,7 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": "G0b: derive the owned joint primitive state and admitted tangent/refinement law from the same native history data, determining full scene Delta, P and every retained word stage. Use the derived source-port/normalizer/pairing/word chain. Compute the two actual spectral history defects on J and GJ and their first jets; do not assume scene passivity or infer source compatibility from pointwise intertwining. On the full native tangent image, test fineHeat=2*heat by the derived contraction, derive actual native on-shell equations and retain every non-gauge response-null direction. Physical pair preparation, actuation/readout and uniform native error bounds keep their owners. Full scene Laplacian is not the quotient degree operator. No fitted defect, new action, thermal trace, temperature law, selector, coupling or physical postulate replaces this proof. Local metric/matter source/Ward, quantitative contrast, curved roots, soundness/recovery, physical constraints and positive GR remain required.",
+    "next_proof_packet": "Derive independently the admitted full joint scene/history state, its spectral operator on the retained complete carrier and golden-compatible refinement. The actual Jt/Js/C1/reversal return law and coarse coupling are already constructed. Determine its complete primitive tangent and retained word law, keep the 653-dimensional unobserved complement in the thermal action, and apply the genuine source calculus before native stationarity. Do not fit a spectral operator or declare mathematical readout/actuation physically admitted. Full G0, source/Ward, contrast, curved roots, soundness/recovery and original terminals remain open.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -486,6 +486,26 @@
       "intake_artifacts": 198,
       "verified_artifact_input_hash_versions": 416,
       "verified_current_input_hash_versions": 323
+    },
+    "scene_history_feedback_realization": {
+      "source_head": "e7ef84c680910b36ee0cf9a030d6e0780d0302dd",
+      "input_head": "915f4ff8fdb5950e69a3cdd6d443033ca55fa32e",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#69-owned-scene-histories-give-an-actual-nonpassive-return-law",
+      "compiled_propositions": 60,
+      "transitive_d0_source_pins": 30,
+      "exact_controls": 246,
+      "false_scope_rejections": 32,
+      "false_exact_rejections": 24,
+      "result": "Owned one-step scene-history realization: the actual 718 oriented histories, endpoint/source lifts Jt/Js, normalized average C1 and native reverseEdge produce a full orthogonal reversal with CRJ=T and CR^2J=I. Its exact feedback is J(I-T^2)C, compressed I-T^2=2*Delta-Delta^2 for the existing normalized scene Delta. All archive-delay kernels are (I-T^2)(-T)^k; the full retained resolvent is (I+zT)/(1-z^2). All 30 balanced directions leave the endpoint readout at one return and are recovered at two. Full-history covariance preserves both source and endpoint, so the vertex-only equivariant no-go is not a whole-history obstruction. The ordinary feedback determinant reduces exactly; its native rank is 32, generated history dimension 65 and retained complement 653. The new standalone package has 60 compiled propositions, 30 D0 source pins and 246 exact controls. Physical admission, full-history heat/refinement, complete tangent law, local source/Ward, native stationarity, contrast, curved roots, soundness/recovery, GR and original terminals remain open. No action, trace, temperature law, selector, coupling, source or postulate is added.",
+      "remaining": "Derive independently the admitted full joint scene/history state, its spectral operator on the retained complete carrier and golden-compatible refinement. The actual Jt/Js/C1/reversal return law and coarse coupling are already constructed. Determine its complete primitive tangent and retained word law, keep the 653-dimensional unobserved complement in the thermal action, and apply the genuine source calculus before native stationarity. Do not fit a spectral operator or declare mathematical readout/actuation physically admitted. Full G0, source/Ward, contrast, curved roots, soundness/recovery and original terminals remain open.",
+      "actual_native_history_return_law_constructed": true,
+      "coarse_normalized_Delta_feedback_polynomial_derived": true,
+      "physical_actuation_tangent_and_full_spectral_refinement_derived": false,
+      "native_whole_bootstrap_stationarity_derived": false,
+      "G0_closed": false,
+      "intake_artifacts": 203,
+      "verified_artifact_input_hash_versions": 421,
+      "verified_current_input_hash_versions": 325
     }
   }
 }

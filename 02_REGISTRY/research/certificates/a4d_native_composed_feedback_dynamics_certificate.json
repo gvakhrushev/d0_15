@@ -881,7 +881,7 @@
     "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
   },
   "owner_input_head": "45f19d1399829b284f15b41899b49ee9961ea394",
-  "proof_sha256": "d41aad51b9072c7a0b8415ed7baa7bce06c24110e7082137ee8c588eae419fcd",
+  "proof_sha256": "59b72bfd2ab543f31c095d1a9c41a1edf9e6ecf799d20155cfb08c881caddcaf",
   "receipt_sha256": "18b05faaab91a40e89b982f6e0d759a66dc2d30e8bec24e7dbd5285cc4f501c8",
   "scope": {
     "F2_alone_reconstructs_full_minimal_operator": false,

@@ -89,6 +89,23 @@ Passivity itself is not proved native. The next actual owner must compute both
 defects and their jets from the same admitted primitive history as P and the
 full word, without fitting a complement or adding an action/physical postulate.
 
+
+The new [owned scene-history realization (§6.9)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
+constructs the actual 718-history reversal and endpoint/source readouts.
+It derives full feedback J(I-T^2)C and the coarse polynomial
+I-T^2=2*Delta-Delta^2 for the existing normalized scene Laplacian. All
+archive-delay kernels and all full-word returns are proved; all 30
+balanced archive directions return after two operations. A joint
+relabeling preserves both scene and record, so the vertex-only equivariant
+no-go does not exhaust history dynamics. The standalone packet has 60
+compiled propositions, 30 D0 source pins and 246 exact controls, including
+the ordinary determinant reduction and a nonempty actual feedback witness.
+The unobserved 653-dimensional complement is retained. The next arrow
+is physical admission, full-carrier spectral law and golden-compatible
+refinement of this same joint state, with its complete admitted tangent
+law. No full-bootstrap stationarity, local metric/matter source/Ward,
+curved solution or GR closure follows from this finite operator relation.
+
 The [G0 primitive-interface proof](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)
 now answers a necessary ownership question directly, without adding another
 candidate family or graph node. It classifies every actual `ActionProtocol`,
