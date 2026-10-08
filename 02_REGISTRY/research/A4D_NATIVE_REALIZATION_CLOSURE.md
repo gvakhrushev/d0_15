@@ -90,6 +90,22 @@ defects and their jets from the same admitted primitive history as P and the
 full word, without fitting a complement or adding an action/physical postulate.
 
 
+The new [complete joint-history extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance)
+constructs the full generated projector and operator and classifies every
+symmetric two-readout completion as A0 plus a unique supported complement.
+The actual cardinality and traces 718/65/653, nonempty complement,
+reversal covariance and genuine scalar heat derivative are compiled.
+All joint graph relabelings leave exactly 19 complementary parameters,
+or 13 with reversal symmetry, by complete exact orbital equations.
+Those parameters can affect the full heat action while readouts and
+feedback stay fixed. The standalone packet has 158 compiled propositions,
+30 D0 pins and 246 exact controls. Book 03's default 33-vertex heat trace
+is retained; this finite completion class is not installed as a native
+heat law, scalar tangent admission or condensed refinement. The next
+owned arrow must derive the actual heat carrier and admitted state,
+tangent and refinement before source/stationarity transfer. No original
+terminal, G0 or GR is promoted.
+
 The new [owned scene-history realization (§6.9)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
 constructs the actual 718-history reversal and endpoint/source readouts.
 It derives full feedback J(I-T^2)C and the coarse polynomial
@@ -101,9 +117,9 @@ no-go does not exhaust history dynamics. The standalone packet has 60
 compiled propositions, 30 D0 source pins and 246 exact controls, including
 the ordinary determinant reduction and a nonempty actual feedback witness.
 The unobserved 653-dimensional complement is retained. The next arrow
-is physical admission, full-carrier spectral law and golden-compatible
-refinement of this same joint state, with its complete admitted tangent
-law. No full-bootstrap stationarity, local metric/matter source/Ward,
+is physical admission, the actual heat carrier and spectral law, and
+golden-compatible refinement of this same joint state, with its complete
+admitted tangent law. No full-bootstrap stationarity, local metric/matter source/Ward,
 curved solution or GR closure follows from this finite operator relation.
 
 The [G0 primitive-interface proof](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)

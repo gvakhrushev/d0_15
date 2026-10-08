@@ -1351,15 +1351,16 @@ normalize J by D^{-1/2}; the two-history Gram matrix is
 absolute value one, so this Gram matrix has exactly one null direction.
 Exact rational rank verification gives the same 65. Its orthogonal
 653-dimensional complement is R-invariant and invisible to this endpoint
-readout; it is **retained**, not declared physical gauge or removed from
-the heat trace. These dimension/Gram consequences are analytic and exact
+readout; it is **retained**, not declared physical gauge. If a full-history heat
+trace is independently owned, readout blindness alone cannot erase its
+contribution. These dimension/Gram consequences are analytic and exact
 certificate results; no separate Lean rank theorem is claimed.
 
 The new standalone capsule has 60 compiled propositions, 30 D0 source pins
 and standard logical axioms only. It closes the finite history/readout
 arrow (50)--(57) and supplies the actual spectral/feedback relation (52).
-The next single G0b input is the independently owned **admission, full
-spectral operator and refinement of this joint scene/history state**,
+The next single G0b input is the independently owned **admission, heat
+carrier, spectral operator and refinement of this joint scene/history state**,
 compatible with the golden cylinder process. Its complete tangent image
 must come from that state law. Apply the already proved source calculus
 to it, including the retained complement; do not promote (52) alone to
@@ -1367,6 +1368,171 @@ whole-bootstrap stationarity or choose a heat operator to force (48).
 Native physical time/geometry, local source/Ward, quantitative contrast,
 curved joint roots, soundness/recovery and all original terminals stay open.
 
+
+### 6.10 Complete joint-readout extensions and their actual source relevance
+
+**Question and scope.** Can the owned scene Laplacian and both retained
+history readouts determine a selfadjoint operator on the whole one-step
+history carrier? This section completely solves that finite extension
+question, including the full group of simultaneous scene relabelings.
+It does not install such an extension as the physical heat operator. Book
+03's default normalized scene Laplacian acts on the 33-vertex scene;
+§03.25 does not by itself require a 718-dimensional heat trace. Thus the
+class below is an explicitly stated mathematical completion class, not
+an independently proved class of native states or admitted variations.
+Neither its free parameters nor its scalar variation may be silently
+promoted to native physical inputs. The existing scene action is intact.
+
+Use the actual owned J=Jt, Js=RJ, C=C1, R=reverseEdge operator and
+T=CRJ from §6.9. Put δ=I−T, Pc(i,j)=d(j)/718, P=JC, Q=I−P,
+E=QRJ=Js−JT and O=CRQ. Define
+
+\[
+ H=I-T^2+P_c,\quad H_I=H^{-1},\qquad
+ K=JC+EH_IO,\qquad A_0=J\delta C+E\delta H_IO.       \tag{60}
+\]
+
+The inverse is constructed, not supplied as a theorem hypothesis. The
+actual scene factors as T=LZCz with L=Cind31, Cz the uniform average
+inside each zone and Cz L=I3. Its three-zone data are
+
+\[
+ Z=\begin{pmatrix}0&11/24&13/24\\9/22&0&13/22\\9/20&11/20&0\end{pmatrix},
+ \qquad P_{c,3}=\mathbf1(216,242,260)/718.
+\]
+
+For H3=I3−Z²+Pc,3, det H3=14001/25600. The capsule checks a literal
+rational inverse, then proves the all-size lift
+H_I=I33+L(H3^{-1}−I3)Cz. It also re-proves the zone cardinalities,
+actual degree/transport factors, Pc's fixed mode and its trace in the
+kernel. No existing compiler-trust finite assertion is consumed.
+
+The actual identities are CE=0, OJ=0, OE=H−Pc, E Pc=0 and δ Pc=0.
+They imply KJ=J, KE=E, K²=K, K*=K and A0*=A0. Symmetry uses the
+actual degree pairing: C=D^{-1}J*, O=D^{-1}E*, H_I D^{-1} is symmetric.
+The unweighted T is not selfadjoint. Moreover
+
+\[
+ A_0J=J\delta,\quad A_0J_s=J_s\delta,\quad
+ A_0K=A_0,\quad KR=RK,\quad A_0R=RA_0.             \tag{61}
+\]
+
+These are compiled actual propositions. K is the counting-Hilbert
+orthogonal projector onto span(J,Js). The capsule proves tr K=65,
+card Γ=718 and tr(I−K)=653 independently in the kernel. For a
+selfadjoint idempotent its trace counts its one-eigenspace, so the
+corresponding dimensions are 65 and 653. This last rank interpretation
+is an elementary analytic consequence; no separate Lean rank theorem
+is claimed.
+
+**Complete family, not a list of candidates.** For every rational
+selfadjoint matrix A on Γ, both readout equations hold if and only if
+
+\[
+ A=A_0+B,\qquad B^*=B,\qquad BK=KB=0.              \tag{62}
+\]
+
+The parameter B is unique. The proof is all-size algebra with actual
+native bindings: the two equations determine A on every column of J
+and E; symmetry removes both cross blocks; B=A−A0 is the entire
+remaining block. It proves completeness for precisely this declared
+class, not for the whole D0 kernel. Over the reals the same block proof
+applies, or one may extend scalars in the rational frame. A literal
+four-edge rectangle (0,9)−(1,9)−(0,10)+(1,10) is nonzero, has both
+readouts zero and is annihilated by K. Thus the complement is nonempty;
+it is not gauge and is not discarded.
+
+**Full joint relabeling narrows, but does not choose, the complement.**
+All automorphisms of K(9,11,13) preserve zones, since their degrees
+24,22,20 are distinct. They form S9×S11×S13 and act on both vertices
+of each oriented history. Orbits of pairs of histories are classified
+by their four zone labels and equality pattern within each zone: equal
+patterns extend to a permutation separately in each zone. The checker
+covers all 718²=515524 pairs and constructs the extending bijections.
+There are 96 orbitals. An equivariant operator is exactly a matrix
+constant on those orbitals.
+
+The exact rational coefficient equations impose symmetry, both zero
+readouts for B and, separately, commutation with R. They have ranks
+77 and 83 in the 96-dimensional orbital algebra, leaving respectively
+**19** and **13** parameters. These are complete finite natural
+extension classes, not eigenvalue guesses. The 13-element rational
+kernel basis and all coefficient equations are stored and rechecked.
+Here "natural" refers only to the full simultaneous graph relabeling;
+no condensed refinement naturality or M1 admission is inferred.
+As a hostile control, keeping only the endpoint equation leaves 33
+symmetric equivariant parameters, so dropping the source record changes
+the classified problem.
+
+**The surviving block is visible to the action.** The scalar family
+
+\[
+ A(s)=A_0+s(I-K)                                  \tag{63}
+\]
+
+has both readouts, is selfadjoint, commutes with reversal and joint
+relabeling, and has distinct members. Its readout, reversal, distinctness
+and nonempty-complement assertions are compiled. For s>0 the real
+extension is positive with a single protected constant zero mode.
+No scalar shift of the whole scene spectrum is used.
+
+The generated spectrum contains 0 once, 1 sixty times, and
+λ±=3/2±√10/40 twice each. This follows from the exact owned spectrum
+of T and the two-history Gram decomposition. The complement has 653
+copies of s. Consequently, in this explicitly declared full-heat class,
+
+\[
+ Z_\Gamma(s)=2Z_{\rm scene}-1+653e^{-\beta s},\quad
+ Z_{\rm scene}=1+30e^{-\beta}+e^{-\beta\lambda_-}
+                                +e^{-\beta\lambda_+}.             \tag{64}
+\]
+
+The feedback determinant remains the ordinary one from §6.9; changing
+s leaves it fixed. At a fixed nonzero β the genuine derivative, not a
+prescribed jet, is
+
+\[
+ \frac{d}{ds}\left[\beta^{-1}\log Z_\Gamma(s)
+             -\log\det(I-zF)\right]
+       =-\frac{653e^{-\beta s}}{Z_\Gamma(s)}\ne0.                 \tag{65}
+\]
+
+Real HasDerivAt and nonvanishing are compiled for the explicit scalar
+heat function. Identifying this function with the finite matrix heat
+trace uses the analytic spectral decomposition just stated; it is not
+claimed as a compiled matrix-exponential trace theorem. The derivative
+proves that the parameter is action-relevant in this completion class.
+If (63) were an independent admissible native direction, stationary
+points would be absent there. Its native admission is not proved, so
+this conditional obstruction is not a no-go for D0 and is not applied
+to Book 03's scene action.
+
+For a general complement B(V), ZΓ=2Zscene−1+ZB. Along an independently
+specified differentiable curve at fixed β, equality of full and scene
+heat sources is exactly
+
+\[
+ Z_{\rm scene}\,dZ_B=(Z_B-1)\,dZ_{\rm scene}.                     \tag{66}
+\]
+
+The algebraic equivalence is compiled; on a connected curve it means
+(ZB−1)/Zscene is constant. No value of B is chosen to force (66).
+Feedback agreement alone therefore does not provide thermal/source
+agreement, even after retaining both endpoints and all graph symmetries.
+
+**Next owned arrow.** Consult the primitive p0/golden state and actual
+operator/recording owners to decide which heat carrier and which
+variations the native action admits, and then prove its joint operator
+refinement. The condensed CompatibleOperatorFamily presently takes
+naturality as input; (62) does not discharge that input. If the native
+owner remains the 33-vertex heat trace, transfer that action with its
+retained-history feedback using its actual state law. If it independently
+owns a full history heat law, use the complete extension constraints
+(62) and (66) rather than fitting a hidden spectrum. Neither branch is
+selected here. Source/Ward, quantitative contrast, native stationarity,
+curved solutions, soundness/recovery, physical time and all parents stay
+open. This closes a finite completeness-and-parameter-relevance question
+inside G0b, without promoting G0b, G0 or GR.
 
 ## 7. Verification and next load-bearing input
 
@@ -1387,12 +1553,23 @@ scene Laplacian. Ordinary determinant reduction is generic; exact ranks
 and characteristic polynomials are independent certificate/analytic
 results. No compiler-trust axiom enters the new capsule.
 
-The remaining single G0b input is the independently owned admission,
-full spectral operator and refinement of the **joint native scene/history
-state**, compatible with the golden cylinders. The actual one-step
+The new `certificates/a4d_native_history_spectral_completion.lean` has
+158 compiled actual propositions and 30 transitive D0 pins. It constructs
+the actual full projector and generated operator, classifies every
+symmetric two-readout extension, proves cardinality/traces, nonempty
+complement, reversal covariance and genuine scalar heat differentiation.
+Complete graph-equivariant dimensions 19 and 13 are separate exact/analytic
+results. No full history heat trace or scalar variation is declared native.
+
+The remaining single G0b input is the independently owned admission, heat
+carrier, spectral operator and refinement of the **joint native scene/history
+state**, compatible with the golden cylinders. Book 03 default scene heat
+is retained; §6.10 tests a declared completion class without replacing it. The actual one-step
 history return and coarse spectral/feedback polynomial are now constructed
-in §6.9. The full carrier has a retained complement whose heat contribution
-cannot be erased. Determine the complete admitted tangent image and all
+in §6.9. In the declared full-history heat class, the complement contributes to
+the action and the complete extension family is now given by (62). The
+native owner must first determine whether this is its heat carrier and
+which directions it admits. Determine the complete admitted tangent image and all
 retained word stages from that state law, then use the existing source
 calculus and test the required full-bootstrap refinement condition.
 Physical preparation, actuation/readout, native rank/normalization/recording

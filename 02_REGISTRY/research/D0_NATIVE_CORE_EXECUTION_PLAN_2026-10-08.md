@@ -304,7 +304,7 @@ image. Passivity не предполагается, дефект не подго
 Все исходные terminal и 44 контракта/статуса графа сохранены.
 
 
-## Собственная сцена вместе с сохраняемой историей — текущий шаг
+## Собственная сцена вместе с сохраняемой историей — предыдущий шаг
 
 Вход: `915f4ff8fdb5950e69a3cdd6d443033ca55fa32e`. В §6.9
 [того же исследования](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md) построен
@@ -332,3 +332,35 @@ scene/history state, его спектральный оператор на по�
 назначено всей физической динамикой; coarse polynomial не подменяет
 полный bootstrap. Новый action, trace, temperature, selector, coupling,
 source или postulate не вводится. G0--G4 и исходные terminal открыты.
+
+
+## Полнота совместного спектрального класса — текущий шаг
+
+Вход: `e7ef84c680910b36ee0cf9a030d6e0780d0302dd`.
+В §6.10 [того же исследования](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance)
+построен actual рациональный inverse, full projector K и generated
+operator A0. Полностью доказан класс симметричных операторов,
+совместимых с обоими native readouts: A=A0+B, BK=KB=0, B уникален.
+Cardinality/traces 718/65/653, nonempty complement, reversal covariance
+и настоящая производная теплового действия проверены в kernel.
+Все совместные graph relabelings оставляют 19 параметров B; при
+согласованности с reversal — 13. Это полные exact/analytic конечные
+классы; не перебор eigenvalue candidates. Complement может менять
+heat source при неизменных readouts и feedback. Полное source agreement
+эквивалентно Zscene*dZB=(ZB-1)*dZscene.
+
+Новый standalone пакет: 158 actual kernel propositions, 30 D0 pins,
+246 exact controls. Исходный нормированный scene heat carrier из
+Book 03 не заменён full-history carrier. Допуск scalar variation и
+сам полный тепловой оператор не выведены из D0; это явно указанный
+completion experiment. Condensed naturality всё ещё должна следовать
+из собственного уточнения, а не передаваться аргументом теоремы.
+Все 44 контракта/статуса графа и исторические entries сохранены.
+
+Следующая одна стрелка G0b — собственный primitive state/admission,
+реальный heat carrier и spectral/tangent/refinement law из p0/golden
+и recording owners. После неё применить уже вычисленные readout,
+feedback и source formulas. Новое действие, тепловой trace, temperature,
+селектор или постулат не выбирается. G0--G4, собственный источник/Ward,
+контраст, native stationarity, curved roots, soundness/recovery,
+физические ограничения, ОТО и исходные terminal остаются открытыми.
