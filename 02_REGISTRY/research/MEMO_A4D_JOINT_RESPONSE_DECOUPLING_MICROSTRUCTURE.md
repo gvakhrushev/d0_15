@@ -22,7 +22,7 @@ action/source scaling, retaining the physical complement-law obligation. G0, phy
 terminal remain open; the earlier time-field result is a scoped control.
 
 The [composed-feedback proof](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md)
-now has 87 compiled propositions and 315 exact controls. In addition to the
+now has 115 compiled propositions and 421 exact controls. In addition to the
 complete golden-active-block joint class and native composed-action gap,
 it classifies every compatible fine readout projector as `JPJ^T+S`, with S
 an orthogonal projector on the preparation complement. For the image-supported
@@ -42,6 +42,17 @@ including the previously hidden complementary source. The all-size
 reconstruction bound has factor 1/(1-|a|). Full physical cross-return access,
 the joint scene law and its admitted metric/link/matter variations remain
 the next native inputs; diagonal probabilities alone are insufficient.
+
+The new recorded-quadratic construction obtains the feedback action directly
+from the owned golden comparer, a retained preparation flag and normalized
+event probabilities. The complete orthogonal operator and its explicit
+internal three-stage program compile. Both comparison records and the old
+target memory are preserved. One fixed factor two calibrates the mixed
+reading; no inverse-U or signed-U oracle is required for this component.
+The true moving derivative and dimension/rank/resolvent-sensitive action
+bounds are retained. The next physical input is the joint scene law and
+its admitted pair preparation/common execution/readout/variation interface,
+including the separate bootstrap heat-trace term. No G0 or GR closure follows.
 
 The [actual weighted Hodge–Dirac follow-up](A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md)
 constructs the documented weighted adjoint on the real D0 cochains instead

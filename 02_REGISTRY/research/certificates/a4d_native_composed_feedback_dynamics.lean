@@ -1,4 +1,6 @@
 import D0.Representation.GoldenCoherentMemory
+import D0.Representation.FiniteProtocolClock
+import Mathlib.LinearAlgebra.Matrix.Kronecker
 import Mathlib.Data.Matrix.Block
 import Mathlib.LinearAlgebra.Matrix.SchurComplement
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
@@ -952,6 +954,347 @@ theorem genuine_two_preparation_source (a p z t source : ℝ)
   exact hd
 
 end GoldenTwoPreparations
+
+section RecordedQuadraticFeedback
+variable {n : Type*} [Fintype n] [DecidableEq n]
+open D0.Representation.GoldenCoherentMemory
+
+def responseNormSq (x : n → ℝ) : ℝ := ∑ i, x i*x i
+def responsePairing (x y : n → ℝ) : ℝ := ∑ i, x i*y i
+def quadraticResponse (A : Matrix n n ℝ) (x : n → ℝ) := responseNormSq (A.mulVec x)
+
+/-- Pointwise expression of the owned fullStep, with both output records retained. -/
+def recordedResponseState (a p : ℝ) (x y : n → ℝ) : Fin 4 → n → ℝ :=
+  fun c i => (fullStep a p).mulVec ![x i,0,y i,0] c
+
+def firstRecordedResponse (a p : ℝ) (A : Matrix n n ℝ) (x y : n → ℝ) :=
+  responseNormSq (recordedResponseState a p (A.mulVec x) (A.mulVec y) 0)
+
+def recoverRecordedPairing (a p qx qy mixed : ℝ) :=
+  (a^2*qx+p^2*qy-mixed)/(2*a*p)
+
+def probeVector (i : n) : n → ℝ := fun j => if j=i then 1 else 0
+
+def recordedQuadraticKernel (a p : ℝ) (A : Matrix n n ℝ) : Matrix n n ℝ :=
+  fun i j => recoverRecordedPairing a p
+    (quadraticResponse A (probeVector i)) (quadraticResponse A (probeVector j))
+    (firstRecordedResponse a p A (probeVector i) (probeVector j))
+
+theorem norm_of_native_mix (a p : ℝ) (x y : n → ℝ) :
+    responseNormSq (fun i => a*x i-p*y i)=
+      a^2*responseNormSq x+p^2*responseNormSq y-2*a*p*responsePairing x y := by
+  unfold responseNormSq responsePairing
+  simp only [Finset.mul_sum]
+  rw [← Finset.sum_add_distrib,← Finset.sum_sub_distrib]
+  apply Finset.sum_congr rfl
+  intro i _
+  ring
+
+theorem owned_recorded_response_coordinates (a p : ℝ) (x y : n → ℝ) :
+    recordedResponseState a p x y =
+      ![(fun i => a*x i-p*y i),0,0,(fun i => p*x i+a*y i)] := by
+  funext c i
+  have h := congrFun (blank_record_evolution a p (x i) (y i)) c
+  fin_cases c <;> simpa [recordedResponseState] using h
+
+theorem native_recorded_response_balance (a p : ℝ) (x y : n → ℝ)
+    (h : a^2+p^2=1) :
+    responseNormSq (recordedResponseState a p x y 0)+
+      responseNormSq (recordedResponseState a p x y 3)=responseNormSq x+responseNormSq y := by
+  rw [owned_recorded_response_coordinates]
+  unfold responseNormSq
+  simp only [Matrix.cons_val_zero,Matrix.cons_val_three,Matrix.head_cons,Matrix.tail_cons]
+  rw [← Finset.sum_add_distrib,← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro i _
+  dsimp
+  calc
+    _ = (a^2+p^2)*(x i*x i+y i*y i) := by ring
+    _ = _ := by rw [h,one_mul]
+
+theorem native_recorded_mixed_response (a p : ℝ) (A : Matrix n n ℝ) (x y : n → ℝ) :
+    firstRecordedResponse a p A x y=
+      a^2*quadraticResponse A x+p^2*quadraticResponse A y-
+        2*a*p*responsePairing (A.mulVec x) (A.mulVec y) := by
+  unfold firstRecordedResponse
+  rw [owned_recorded_response_coordinates]
+  exact norm_of_native_mix a p _ _
+
+theorem recorded_response_recovers_pairing (a p : ℝ) (A : Matrix n n ℝ) (x y : n → ℝ)
+    (ha : a≠0) (hp : p≠0) :
+    recoverRecordedPairing a p (quadraticResponse A x) (quadraticResponse A y)
+      (firstRecordedResponse a p A x y)=responsePairing (A.mulVec x) (A.mulVec y) := by
+  rw [native_recorded_mixed_response]
+  unfold recoverRecordedPairing
+  field_simp
+  ring
+
+theorem probe_pairing_reads_gram (A : Matrix n n ℝ) (i j : n) :
+    responsePairing (A.mulVec (probeVector i)) (A.mulVec (probeVector j))=
+      (A.transpose*A) i j := by
+  simp [responsePairing,probeVector,Matrix.mulVec,Matrix.mul_apply,dotProduct,
+    Matrix.transpose_apply]
+
+theorem native_quadratic_readings_reconstruct_gram (a p : ℝ) (A : Matrix n n ℝ)
+    (ha : a≠0) (hp : p≠0) : recordedQuadraticKernel a p A=A.transpose*A := by
+  ext i j
+  rw [recordedQuadraticKernel,recorded_response_recovers_pairing a p A _ _ ha hp,
+    probe_pairing_reads_gram]
+
+/-- Coherent preparation stores the entire complementary branch in its flag. -/
+def flaggedPreparation (P : Matrix n n ℝ) : Matrix (n ⊕ n) (n ⊕ n) ℝ :=
+  fromBlocks P (1-P) (1-P) P
+
+theorem flagged_preparation_square (P : Matrix n n ℝ) (hP : P*P=P) :
+    flaggedPreparation P*flaggedPreparation P=1 := by
+  rw [flaggedPreparation,Matrix.fromBlocks_multiply,← Matrix.fromBlocks_one (l:=n) (m:=n)]
+  apply Matrix.fromBlocks_inj.mpr
+  simp only [Matrix.mul_sub,Matrix.sub_mul,Matrix.mul_one,Matrix.one_mul,hP]
+  constructor
+  · abel
+  constructor
+  · abel
+  constructor <;> abel
+
+theorem flagged_preparation_orthogonal (P : Matrix n n ℝ)
+    (hP : P*P=P) (hsP : P.transpose=P) :
+    (flaggedPreparation P).transpose*flaggedPreparation P=1 := by
+  have ht : (flaggedPreparation P).transpose=flaggedPreparation P := by
+    simp [flaggedPreparation,Matrix.fromBlocks_transpose,hsP]
+  rw [ht,flagged_preparation_square P hP]
+
+theorem flagged_blank_preparation (P : Matrix n n ℝ) (x : n → ℝ) :
+    (flaggedPreparation P).mulVec (Sum.elim x 0)=
+      Sum.elim (P.mulVec x) ((1-P).mulVec x) := by
+  ext i
+  rcases i with i|i <;>
+    simp [flaggedPreparation,Matrix.mulVec,Matrix.mul_apply,dotProduct,Fintype.sum_sum_type]
+
+/-- The literal cylinder flag uses the already owned reversible basis registration. -/
+def registerCylinder (f : n → Bool) : (n × Bool) ≃ (n × Bool) where
+  toFun x := (x.1, (D0.Representation.FiniteProtocolClock.register (!f x.1,x.2)).2)
+  invFun x := (x.1, (D0.Representation.FiniteProtocolClock.register (!f x.1,x.2)).2)
+  left_inv := by intro ⟨i,b⟩; cases hf : f i <;> cases b <;> simp [D0.Representation.FiniteProtocolClock.register,hf]
+  right_inv := by intro ⟨i,b⟩; cases hf : f i <;> cases b <;> simp [D0.Representation.FiniteProtocolClock.register,hf]
+
+theorem literal_cylinder_registration (f : n → Bool) (i : n) :
+    registerCylinder f (i,false)=(i,!f i) ∧ Function.Injective (registerCylinder f) := by
+  constructor
+  · simp [registerCylinder,D0.Representation.FiniteProtocolClock.register]
+  · exact (registerCylinder f).injective
+
+def feedbackReadingOperator (P U : Matrix n n ℝ) := (1-P)*U*P
+
+theorem actual_feedback_is_response_gram (P U : Matrix n n ℝ)
+    (hP : P*P=P) (hsP : P.transpose=P) :
+    (feedbackReadingOperator P U).transpose*feedbackReadingOperator P U=fullFeedback P U := by
+  have hQ : (1-P)*(1-P)=1-P := by
+    simp only [Matrix.mul_sub,Matrix.sub_mul,Matrix.mul_one,Matrix.one_mul,hP]
+    abel
+  simp only [feedbackReadingOperator,Matrix.transpose_mul,Matrix.transpose_sub,
+    Matrix.transpose_one,hsP]
+  calc
+    _ = P*U.transpose*((1-P)*(1-P))*U*P := by simp [Matrix.mul_assoc]
+    _ = fullFeedback P U := by rw [hQ]; rfl
+
+theorem recorded_readings_reconstruct_full_feedback (a p : ℝ) (P U : Matrix n n ℝ)
+    (ha : a≠0) (hp : p≠0) (hP : P*P=P) (hsP : P.transpose=P) :
+    recordedQuadraticKernel a p (feedbackReadingOperator P U)=fullFeedback P U := by
+  rw [native_quadratic_readings_reconstruct_gram a p _ ha hp,actual_feedback_is_response_gram P U hP hsP]
+
+theorem native_preparation_quadratic_gram (a p : ℝ) (P : Matrix n n ℝ)
+    (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (ha : a≠0) (hp : p≠0)
+    (hP : P*P=P) (hsP : P.transpose=P) :
+    recordedQuadraticKernel a p (feedbackReadingOperator (liftOperator P) U*nativePreparationFrame a p)=
+      nativeCrossReturns a p (fullFeedback (liftOperator P) U) := by
+  have hlp : liftOperator P*liftOperator P=liftOperator P := by rw [← lift_mul,hP]
+  have hlsp : (liftOperator P).transpose=liftOperator P := by rw [← lift_transpose,hsP]
+  rw [native_quadratic_readings_reconstruct_gram a p _ ha hp]
+  simp only [Matrix.transpose_mul]
+  calc
+    _ = (nativePreparationFrame a p).transpose*
+      ((feedbackReadingOperator (liftOperator P) U).transpose*feedbackReadingOperator (liftOperator P) U)*
+      nativePreparationFrame a p := by simp [Matrix.mul_assoc]
+    _ = _ := by rw [actual_feedback_is_response_gram _ _ hlp hlsp]; rfl
+
+theorem native_recorded_feedback_action (a p z : ℝ) (P : Matrix n n ℝ)
+    (U : Matrix (n ⊕ n) (n ⊕ n) ℝ) (ha : a≠0) (hp : p≠0)
+    (h : a^2+p^2=1) (hP : P*P=P) (hsP : P.transpose=P) :
+    feedbackAction z (fullFeedback (liftOperator P) U)=
+      feedbackAction z (recoverGoldenCoordinates a p (recordedQuadraticKernel a p
+        (feedbackReadingOperator (liftOperator P) U*nativePreparationFrame a p))) := by
+  rw [native_preparation_quadratic_gram a p P U ha hp hP hsP,
+    all_four_returns_reconstruct_coordinates a p _ hp]
+  have hg := mul_eq_one_comm.mp (golden_factor_orthogonal (n:=n) a p h)
+  exact (transported_feedback_action (ownedGoldenFactor a p).transpose _ z (by simpa using hg)).symm
+
+theorem genuine_recorded_feedback_source (a p z t source : ℝ)
+    (P : ℝ → Matrix n n ℝ) (U : ℝ → Matrix (n ⊕ n) (n ⊕ n) ℝ)
+    (ha : a≠0) (hp : p≠0) (h : a^2+p^2=1)
+    (hP : ∀ s, P s*P s=P s) (hsP : ∀ s, (P s).transpose=P s)
+    (hd : HasDerivAt (fun s => feedbackAction z (recoverGoldenCoordinates a p
+      (recordedQuadraticKernel a p (feedbackReadingOperator (liftOperator (P s)) (U s)*
+        nativePreparationFrame a p)))) source t) :
+    HasDerivAt (fun s => feedbackAction z (fullFeedback (liftOperator (P s)) (U s))) source t := by
+  have he : (fun s => feedbackAction z (fullFeedback (liftOperator (P s)) (U s))) =
+      (fun s => feedbackAction z (recoverGoldenCoordinates a p
+        (recordedQuadraticKernel a p (feedbackReadingOperator (liftOperator (P s)) (U s)*
+          nativePreparationFrame a p)))) := by
+    funext s
+    exact native_recorded_feedback_action a p z (P s) (U s) ha hp h (hP s) (hsP s)
+  rw [he]
+  exact hd
+
+
+open scoped Kronecker
+
+/-- The comparison record is new; x,y each include the entire old target record. -/
+def comparisonBlank (x y : n → ℝ) : Fin 4 × n → ℝ :=
+  fun ci => (![x,0,y,0] ci.1) ci.2
+
+def jointRecordedComparison (a p : ℝ) (C : Matrix n n ℝ) :=
+  (fullStep a p) ⊗ₖ C
+
+theorem owned_comparison_factors (a p : ℝ) (C : Matrix n n ℝ) :
+    jointRecordedComparison a p C=
+      ((fullStep a p) ⊗ₖ (1 : Matrix n n ℝ))*
+        ((1 : Matrix (Fin 4) (Fin 4) ℝ) ⊗ₖ C) := by
+  rw [← Matrix.mul_kronecker_mul]
+  simp [jointRecordedComparison]
+
+theorem tensor_orthogonal {m : Type*} [Fintype m] [DecidableEq m]
+    (W : Matrix m m ℝ) (C : Matrix n n ℝ)
+    (hW : W.transpose*W=1) (hC : C.transpose*C=1) :
+    (W ⊗ₖ C).transpose*(W ⊗ₖ C)=1 := by
+  rw [← Matrix.kroneckerMap_transpose,← Matrix.mul_kronecker_mul,hW,hC]
+  exact Matrix.one_kronecker_one
+
+theorem owned_comparison_orthogonal (a p : ℝ) (C : Matrix n n ℝ)
+    (ha : a^2=p) (hp : p+p^2=1) (hC : C.transpose*C=1) :
+    (jointRecordedComparison a p C).transpose*jointRecordedComparison a p C=1 :=
+  tensor_orthogonal _ _ (fullStep_orthogonal a p ha hp) hC
+
+theorem tensor_reads_complete_blank_pair (W : Matrix (Fin 4) (Fin 4) ℝ)
+    (C : Matrix n n ℝ) (x y : n → ℝ) (c : Fin 4) (i : n) :
+    (W ⊗ₖ C).mulVec (comparisonBlank x y) (c,i)=
+      W.mulVec ![C.mulVec x i,0,C.mulVec y i,0] c := by
+  simp [comparisonBlank,Matrix.mulVec,dotProduct,Fintype.sum_prod_type,
+    Fin.sum_univ_succ,Finset.mul_sum,mul_assoc]
+
+theorem complete_owned_comparison_reading (a p : ℝ) (C : Matrix n n ℝ)
+    (x y : n → ℝ) (c : Fin 4) (i : n) :
+    (jointRecordedComparison a p C).mulVec (comparisonBlank x y) (c,i)=
+      recordedResponseState a p (C.mulVec x) (C.mulVec y) c i := by
+  exact tensor_reads_complete_blank_pair _ _ _ _ _ _
+
+theorem blank_pair_has_fixed_norm (x y : n → ℝ) :
+    responseNormSq (comparisonBlank x y)=responseNormSq x+responseNormSq y := by
+  simp [responseNormSq,comparisonBlank,Fintype.sum_prod_type,Fin.sum_univ_succ]
+
+/-- Preparation flag and comparison record stay in the complete joint operator. -/
+def fullFlaggedComparison (a p : ℝ) (P U : Matrix n n ℝ) :=
+  jointRecordedComparison a p (liftOperator U*flaggedPreparation P)
+
+theorem full_flagged_comparison_orthogonal (a p : ℝ) (P U : Matrix n n ℝ)
+    (ha : a^2=p) (hp : p+p^2=1) (hP : P*P=P) (hsP : P.transpose=P)
+    (hU : U.transpose*U=1) :
+    (fullFlaggedComparison a p P U).transpose*fullFlaggedComparison a p P U=1 := by
+  apply owned_comparison_orthogonal a p _ ha hp
+  have hlu : (liftOperator U).transpose*liftOperator U=1 := by
+    rw [← lift_transpose,← lift_mul,hU,lift_one]
+  exact orthogonal_composition _ _ hlu (flagged_preparation_orthogonal P hP hsP)
+
+theorem common_word_after_flag (P U : Matrix n n ℝ) (x : n → ℝ) :
+    (liftOperator U*flaggedPreparation P).mulVec (Sum.elim x 0)=
+      Sum.elim ((U*P).mulVec x) ((U*(1-P)).mulVec x) := by
+  rw [← Matrix.mulVec_mulVec,flagged_blank_preparation]
+  simp [liftOperator,Matrix.fromBlocks_mulVec,Matrix.mulVec_mulVec]
+
+theorem complete_flagged_detector_amplitude (a p : ℝ) (P U : Matrix n n ℝ)
+    (x y : n → ℝ) (i : n) :
+    (fullFlaggedComparison a p P U).mulVec
+      (comparisonBlank (Sum.elim x 0) (Sum.elim y 0)) (0,Sum.inl i)=
+      a*((U*P).mulVec x i)-p*((U*P).mulVec y i) := by
+  unfold fullFlaggedComparison
+  rw [complete_owned_comparison_reading,common_word_after_flag,common_word_after_flag,
+    owned_recorded_response_coordinates]
+  rfl
+
+theorem retained_flag_detector_is_feedback_reading (a p : ℝ) (P U : Matrix n n ℝ)
+    (x y : n → ℝ) :
+    responseNormSq ((1-P).mulVec (fun i =>
+      (fullFlaggedComparison a p P U).mulVec
+        (comparisonBlank (Sum.elim x 0) (Sum.elim y 0)) (0,Sum.inl i)))=
+      firstRecordedResponse a p (feedbackReadingOperator P U) x y := by
+  simp_rw [complete_flagged_detector_amplitude]
+  unfold firstRecordedResponse
+  rw [owned_recorded_response_coordinates]
+  congr 1
+  change (1-P).mulVec (a • ((U*P).mulVec x)-p • ((U*P).mulVec y))=
+    a • ((feedbackReadingOperator P U).mulVec x)-p • ((feedbackReadingOperator P U).mulVec y)
+  rw [Matrix.mulVec_sub,Matrix.mulVec_smul,Matrix.mulVec_smul,
+    Matrix.mulVec_mulVec,Matrix.mulVec_mulVec]
+  simp [feedbackReadingOperator,Matrix.mul_assoc]
+
+/-- An orthogonal stage has a reversible state map on the complete carrier. -/
+def orthogonalStateEquiv (M : Matrix n n ℝ) (hM : M.transpose*M=1) :
+    (n → ℝ) ≃ (n → ℝ) where
+  toFun := M.mulVec
+  invFun := M.transpose.mulVec
+  left_inv x := by rw [Matrix.mulVec_mulVec,hM,Matrix.one_mulVec]
+  right_inv x := by rw [Matrix.mulVec_mulVec,mul_eq_one_comm.mp hM,Matrix.one_mulVec]
+
+/-- Stage selection is stored in the owned internal clock. -/
+def threeInternalStages {S : Type*} (A B C : S ≃ S) :
+    D0.Representation.FiniteProtocolClock.Clock → S ≃ S :=
+  fun c => if c=0 then A else if c=1 then B else if c=2 then C else Equiv.refl S
+
+theorem three_stage_run_is_internal {S : Type*} (A B C : S ≃ S) (x : S) :
+    D0.Representation.FiniteProtocolClock.run (threeInternalStages A B C) x 3=
+      (3,C (B (A x))) := by
+  have h10 : (1 : D0.Representation.FiniteProtocolClock.Clock)≠0 := by decide
+  have h20 : (2 : D0.Representation.FiniteProtocolClock.Clock)≠0 := by decide
+  have h21 : (2 : D0.Representation.FiniteProtocolClock.Clock)≠1 := by decide
+  norm_num [D0.Representation.FiniteProtocolClock.run,D0.Representation.FiniteProtocolClock.step,
+    threeInternalStages,h10,h20,h21]
+
+/-- Explicit stage program: flag, identical old-word execution, then owned recording. -/
+def flaggedComparisonProgram (a p : ℝ) (P U : Matrix n n ℝ)
+    (ha : a^2=p) (hp : p+p^2=1) (hP : P*P=P) (hsP : P.transpose=P)
+    (hU : U.transpose*U=1) :
+    D0.Representation.FiniteProtocolClock.Clock →
+      (Fin 4 × (n ⊕ n) → ℝ) ≃ (Fin 4 × (n ⊕ n) → ℝ) := by
+  have hA := tensor_orthogonal (1 : Matrix (Fin 4) (Fin 4) ℝ) _
+    (by simp) (flagged_preparation_orthogonal P hP hsP)
+  have hLU : (liftOperator U).transpose*liftOperator U=1 := by
+    rw [← lift_transpose,← lift_mul,hU,lift_one]
+  have hB := tensor_orthogonal (1 : Matrix (Fin 4) (Fin 4) ℝ) _ (by simp) hLU
+  have hC := tensor_orthogonal (fullStep a p) (1 : Matrix (n ⊕ n) (n ⊕ n) ℝ)
+    (fullStep_orthogonal a p ha hp) (by simp)
+  exact threeInternalStages (orthogonalStateEquiv _ hA)
+    (orthogonalStateEquiv _ hB) (orthogonalStateEquiv _ hC)
+
+theorem complete_comparison_has_internal_program (a p : ℝ) (P U : Matrix n n ℝ)
+    (ha : a^2=p) (hp : p+p^2=1) (hP : P*P=P) (hsP : P.transpose=P)
+    (hU : U.transpose*U=1) (x : Fin 4 × (n ⊕ n) → ℝ) :
+    D0.Representation.FiniteProtocolClock.run (flaggedComparisonProgram a p P U ha hp hP hsP hU) x 3=
+      (3,(fullFlaggedComparison a p P U).mulVec x) ∧
+    Function.Injective (D0.Representation.FiniteProtocolClock.step
+      (flaggedComparisonProgram a p P U ha hp hP hsP hU)) := by
+  constructor
+  · unfold flaggedComparisonProgram
+    rw [three_stage_run_is_internal]
+    congr 1
+    change (((fullStep a p) ⊗ₖ 1).mulVec
+      (((1 : Matrix (Fin 4) (Fin 4) ℝ) ⊗ₖ liftOperator U).mulVec
+        (((1 : Matrix (Fin 4) (Fin 4) ℝ) ⊗ₖ flaggedPreparation P).mulVec x)))=
+          (fullFlaggedComparison a p P U).mulVec x
+    rw [Matrix.mulVec_mulVec,Matrix.mulVec_mulVec,← Matrix.mul_kronecker_mul,
+      ← Matrix.mul_kronecker_mul]
+    simp [fullFlaggedComparison,jointRecordedComparison]
+  · exact D0.Representation.FiniteProtocolClock.step_loses_no_state _
+
+end RecordedQuadraticFeedback
 end
 end D0.Research.NativeComposedFeedbackDynamics
 
@@ -1130,3 +1473,59 @@ end D0.Research.NativeComposedFeedbackDynamics
 #print axioms D0.Research.NativeComposedFeedbackDynamics.literal_action_from_all_four_returns
 #check D0.Research.NativeComposedFeedbackDynamics.genuine_two_preparation_source
 #print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_two_preparation_source
+#check D0.Research.NativeComposedFeedbackDynamics.norm_of_native_mix
+#print axioms D0.Research.NativeComposedFeedbackDynamics.norm_of_native_mix
+#check D0.Research.NativeComposedFeedbackDynamics.owned_recorded_response_coordinates
+#print axioms D0.Research.NativeComposedFeedbackDynamics.owned_recorded_response_coordinates
+#check D0.Research.NativeComposedFeedbackDynamics.native_recorded_response_balance
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_recorded_response_balance
+#check D0.Research.NativeComposedFeedbackDynamics.native_recorded_mixed_response
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_recorded_mixed_response
+#check D0.Research.NativeComposedFeedbackDynamics.recorded_response_recovers_pairing
+#print axioms D0.Research.NativeComposedFeedbackDynamics.recorded_response_recovers_pairing
+#check D0.Research.NativeComposedFeedbackDynamics.probe_pairing_reads_gram
+#print axioms D0.Research.NativeComposedFeedbackDynamics.probe_pairing_reads_gram
+#check D0.Research.NativeComposedFeedbackDynamics.native_quadratic_readings_reconstruct_gram
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_quadratic_readings_reconstruct_gram
+#check D0.Research.NativeComposedFeedbackDynamics.flagged_preparation_square
+#print axioms D0.Research.NativeComposedFeedbackDynamics.flagged_preparation_square
+#check D0.Research.NativeComposedFeedbackDynamics.flagged_preparation_orthogonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.flagged_preparation_orthogonal
+#check D0.Research.NativeComposedFeedbackDynamics.flagged_blank_preparation
+#print axioms D0.Research.NativeComposedFeedbackDynamics.flagged_blank_preparation
+#check D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_registration
+#print axioms D0.Research.NativeComposedFeedbackDynamics.literal_cylinder_registration
+#check D0.Research.NativeComposedFeedbackDynamics.actual_feedback_is_response_gram
+#print axioms D0.Research.NativeComposedFeedbackDynamics.actual_feedback_is_response_gram
+#check D0.Research.NativeComposedFeedbackDynamics.recorded_readings_reconstruct_full_feedback
+#print axioms D0.Research.NativeComposedFeedbackDynamics.recorded_readings_reconstruct_full_feedback
+#check D0.Research.NativeComposedFeedbackDynamics.native_preparation_quadratic_gram
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_preparation_quadratic_gram
+#check D0.Research.NativeComposedFeedbackDynamics.native_recorded_feedback_action
+#print axioms D0.Research.NativeComposedFeedbackDynamics.native_recorded_feedback_action
+#check D0.Research.NativeComposedFeedbackDynamics.genuine_recorded_feedback_source
+#print axioms D0.Research.NativeComposedFeedbackDynamics.genuine_recorded_feedback_source
+#check D0.Research.NativeComposedFeedbackDynamics.owned_comparison_factors
+#print axioms D0.Research.NativeComposedFeedbackDynamics.owned_comparison_factors
+#check D0.Research.NativeComposedFeedbackDynamics.tensor_orthogonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.tensor_orthogonal
+#check D0.Research.NativeComposedFeedbackDynamics.owned_comparison_orthogonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.owned_comparison_orthogonal
+#check D0.Research.NativeComposedFeedbackDynamics.tensor_reads_complete_blank_pair
+#print axioms D0.Research.NativeComposedFeedbackDynamics.tensor_reads_complete_blank_pair
+#check D0.Research.NativeComposedFeedbackDynamics.complete_owned_comparison_reading
+#print axioms D0.Research.NativeComposedFeedbackDynamics.complete_owned_comparison_reading
+#check D0.Research.NativeComposedFeedbackDynamics.blank_pair_has_fixed_norm
+#print axioms D0.Research.NativeComposedFeedbackDynamics.blank_pair_has_fixed_norm
+#check D0.Research.NativeComposedFeedbackDynamics.full_flagged_comparison_orthogonal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.full_flagged_comparison_orthogonal
+#check D0.Research.NativeComposedFeedbackDynamics.common_word_after_flag
+#print axioms D0.Research.NativeComposedFeedbackDynamics.common_word_after_flag
+#check D0.Research.NativeComposedFeedbackDynamics.complete_flagged_detector_amplitude
+#print axioms D0.Research.NativeComposedFeedbackDynamics.complete_flagged_detector_amplitude
+#check D0.Research.NativeComposedFeedbackDynamics.retained_flag_detector_is_feedback_reading
+#print axioms D0.Research.NativeComposedFeedbackDynamics.retained_flag_detector_is_feedback_reading
+#check D0.Research.NativeComposedFeedbackDynamics.three_stage_run_is_internal
+#print axioms D0.Research.NativeComposedFeedbackDynamics.three_stage_run_is_internal
+#check D0.Research.NativeComposedFeedbackDynamics.complete_comparison_has_internal_program
+#print axioms D0.Research.NativeComposedFeedbackDynamics.complete_comparison_has_internal_program
