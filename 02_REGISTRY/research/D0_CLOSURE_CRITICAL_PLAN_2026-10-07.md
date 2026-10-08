@@ -850,3 +850,10 @@ artifact/input hash versions (328 current input versions).
 G0--G4, source/Ward, contrast, native stationarity, curved roots,
 soundness/recovery, физические ограничения, ОТО и родители открыты.
 Новые source/CONTROL головы требуют собственного CI и CONTROL review.
+
+
+Исправление привязки сертификата: source `1093df6bbd2f7a0fb91204e87240ad035256d661` обновляет только
+plan_sha256 исторического history-response descent после изменения
+execution plan. Proof, 42/189, новый 158/246 и scientific scope сохранены.
+Предыдущие CI 37842211412/37843183722 остановились на stale plan pin;
+новые головы требуют своих успешных CI и CONTROL review.

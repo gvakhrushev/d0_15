@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`0cc2bc2711234dfced8b815fc23e9c67181234a9`, following
-`e7ef84c680910b36ee0cf9a030d6e0780d0302dd`.
+`1093df6bbd2f7a0fb91204e87240ad035256d661`, following
+`0cc2bc2711234dfced8b815fc23e9c67181234a9`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -1004,3 +1004,10 @@ all 179 byte-identical source artifacts have coherent dependency hashes.
 Current-head CI and CONTROL review remain required. The 44 graph statuses,
 dependencies, required terminals and all original scientific parents remain
 open and unchanged; no physical action or preparation is installed.
+
+
+The source freshness repair `1093df6bbd2f7a0fb91204e87240ad035256d661` updates only the retained-history
+certificate plan pin. Its 42 propositions and 189 controls, the new
+158-proposition proof and every scientific scope are unchanged. Runs
+37842211412/37843183722 detected the stale plan binding; repaired heads
+require fresh CI and CONTROL review. No failed run is counted as a pass.

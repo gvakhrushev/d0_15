@@ -525,6 +525,13 @@
       "intake_artifacts": 208,
       "verified_artifact_input_hash_versions": 427,
       "verified_current_input_hash_versions": 328
+    },
+    "certificate_freshness_repair": {
+      "source_head": "1093df6bbd2f7a0fb91204e87240ad035256d661",
+      "previous_source_head": "0cc2bc2711234dfced8b815fc23e9c67181234a9",
+      "changed_field": "retained_history_descent.plan_sha256",
+      "scientific_proof_scope_unchanged": true,
+      "current_head_CI_required": true
     }
   }
 }
