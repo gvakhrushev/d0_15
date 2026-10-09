@@ -17,7 +17,7 @@ from sympy.polys.matrices import DomainMatrix
 ROOT = Path(__file__).resolve().parents[3]
 BASE = '02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source'
 PROOF = '02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md'
-HEAD = 'b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4'
+HEAD = 'd88c5d3bb046ccf3eded006587007e68b5754acf'
 SCOPE = {
     'interface': 'POSITIVE_CROSS_ZONE_CONDUCTANCES_ON_K_9_11_13_AT_UNIT_WEIGHTS',
     'heat_route': '33_VERTEX_NORMALIZED_LAPLACIAN',
@@ -28,6 +28,9 @@ SCOPE = {
     'all_size_matrix_derivative_and_Hessian_HasFDerivAt_compiled': False,
     'two_fugacity_branches_for_each_positive_fixed_beta': 'ANALYTIC_MVT_IVT_AND_EXACT_QUADRATIC',
     'upper_branch_not_local_minimum': 'NEGATIVE_DEFINITE_ON_296_BALANCED_WEIGHT_DIRECTIONS',
+    'binary_dense_passport_scene_price_zero': 'COMPLETE_OWNED_SCENE_PASSPORT_CLASS_AT_FIXED_BETA_Z',
+    'binary_dense_passport_class_is_whole_native_core': False,
+    'nonzero_weight_jets_admitted_in_binary_passport': False,
     'lower_branch_is_a_local_or_global_minimum': False,
     'equations_for_variations_of_beta_or_z_solved': False,
     'every_weight_variation_is_admitted_by_native_physics': False,
@@ -59,13 +62,22 @@ def controls():
     check('kernel_exit_and_input', receipt['status'] == 'PASS'
           and receipt['compiler_exit_code'] == 0 and receipt['input_head'] == HEAD)
     check('all_actual_propositions', names == receipt['declarations']
-          and len(names) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 21)
+          and len(names) == receipt['printed_propositions'] == receipt['printed_axiom_dependencies'] == 27)
     for name in names:
         q = 'D0.Research.NativeScenePriceSource.' + name
         check('resolved_declaration_and_transitive_axioms',
               re.search(r'^' + re.escape(q) + r'(?:\.\{|[ :])', output, re.M)
               and ("'" + q + "' depends on axioms:" in output
                    or "'" + q + "' does not depend on any axioms" in output))
+    owners = ['D0.Synthesis.DenseOperatorSceneRigidity.dense_operator_recovers_scene',
+              'D0.Synthesis.DenseOperatorSceneRigidity.scene_passport_inhabited']
+    check('actual_owner_proposition_count', receipt['primary_owner_declarations'] == owners
+          and receipt['printed_primary_owner_propositions'] == 2)
+    for q in owners:
+        check('actual_owner_proposition_and_transitive_axioms',
+              re.search(r'^'+re.escape(q)+r'(?:\.\{|[ :])', output, re.M)
+              and ("'"+q+"' depends on axioms:" in output
+                   or "'"+q+"' does not depend on any axioms" in output))
     actual_axioms = set()
     for match in re.finditer(r'depends on axioms: \[([^]]*)\]', output, re.S):
         actual_axioms.update(x.strip() for x in match.group(1).split(',') if x.strip())
@@ -125,6 +137,8 @@ def controls():
         check('complete_edge_direct_kappa_covector', value == direct)
         pair = str((zone(i), zone(j)))
         check('per_edge_coefficients_equal_within_zone_pair', pair not in coeffs or coeffs[pair] == str(value))
+        check('all_nonzero_edge_jets_leave_binary_scene_contract', E[i, j] != 0
+              and 1+s.Rational(1, 5)*E[i, j] not in (0, 1))
         coeffs[pair] = str(value)
         counts[pair] = counts.get(pair, 0)+1
         all_coeffs.append(value)
@@ -159,6 +173,37 @@ def controls():
           and cF.subs({kap: k, z: s.Rational(160, 199)}) == 0)
     r = s.sqrt(10)/40
     check('MVT_interval_bound', 0 < r < s.Rational(1, 10) and s.Rational(3, 2)-r > s.Rational(7, 5))
+
+    # Consume the actual owner's complete recovered partition class. The
+    # all-class recognition implication is compiled, not extrapolated from
+    # these arithmetic/permutation controls.
+    for aa, bb, cc in itertools.permutations(sizes):
+        dq = s.diag(bb+cc, aa+cc, aa+bb)
+        aq = s.Matrix([[0, bb, cc], [aa, 0, cc], [aa, bb, 0]])
+        tq = dq.inv()*aq
+        check('all_recovered_partition_kappa', tq.det() == k
+              and aa+bb+cc == 33 and 2*(aa*bb+aa*cc+bb*cc) == 718)
+        check('all_recovered_partition_spectrum',
+              s.expand(tq.charpoly(t).as_expr()-(t-1)*(t*t+t+k)) == 0)
+        check('all_recovered_partition_feedback_pencil',
+              s.expand((s.eye(3)-z*(s.eye(3)-tq*tq)).det()-nativeQ) == 0)
+    for perm in [list(range(1, 33))+[0], list(reversed(range(33))),
+                 [(7*i)%33 for i in range(33)]]:
+        ap = s.Matrix(33, 33, lambda i, j: A[perm[i], perm[j]])
+        degree = list(ap*one)
+        tp = s.diag(*[1/x for x in degree])*ap
+        check('complete_vertex_relabel_keeps_native_normalization',
+              tp == s.Matrix(33, 33, lambda i, j: T[perm[i], perm[j]]))
+        check('complete_vertex_relabel_keeps_owner_passport',
+              ap == ap.T and all(ap[i, i] == 0 for i in range(33))
+              and all(x in (0, 1) for x in ap) and ap.rank() == 3 and s.trace(ap*ap) == 718)
+    aa, bb, cc = 8, 11, 14
+    ka = s.Rational(2*aa*bb*cc, (aa+bb)*(aa+cc)*(bb+cc))
+    check('dropping_owner_quadratic_moment_changes_kappa', aa+bb+cc == 33
+          and 2*(aa*bb+aa*cc+bb*cc) != 718 and ka != k)
+    check('nonbinary_source_cannot_be_imported_into_owner_contract',
+          s.Rational(38720, 40241)-s.Rational(5, 7) > 0
+          and s.Rational(coeffs['(0, 1)']) > 0)
 
     # Complete tensor basis of the balanced edge space; no gauge quotient.
     vectors, energies = [], []
@@ -216,7 +261,8 @@ def controls():
     check('reject_combinatorial_heat_substitution', (s.diag(*d)-A).trace() == 718 and (I-T).trace() == 33)
     check('reject_full_price_feedback_only_stationarity', s.Rational(3, 2)-r < s.Rational(3, 2)+r)
     check('retain_second_order_response_null_modes', len(energies) == 296 and all(s.Rational(e) > 0 for e in energies))
-    return {'checks': checks, 'check_count': sum(checks.values()), 'compiled_propositions': 21,
+    return {'checks': checks, 'check_count': sum(checks.values()), 'compiled_propositions': 27,
+            'printed_primary_owner_propositions': 2,
             'edge_directions': len(edges), 'edge_coefficients': coeffs,
             'balanced_tangent_rank': rank, 'balanced_energies': sorted(set(energies)),
             'retained_history_dimension': 718, 'balanced_state_dimension': 30,

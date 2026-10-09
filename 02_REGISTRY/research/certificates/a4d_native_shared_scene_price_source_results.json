@@ -4,8 +4,10 @@
     "Quot.sound",
     "propext"
   ],
+  "binary_dense_passport_all_matrix_spectral_price_binding": "ANALYTIC_WITH_PRIMARY_RECONSTRUCTION_AND_COMPILED_KAPPA",
+  "binary_dense_passport_kappa_and_scalar_source_compiled": true,
   "capsule": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source.lean",
-  "capsule_sha256": "d7291520689d74837228f0607409769799595c6a6cfa488e9d770eca3dd0c30f",
+  "capsule_sha256": "748be767d4618af542c2945da61760cdc2d4c68afc25f189a72c5caa999a8f4a",
   "command": [
     "lake",
     "env",
@@ -35,12 +37,19 @@
     "native_half_feedback_coefficient",
     "native_feedback_turn",
     "dark_heat_coefficient_lt_one",
-    "upper_branch_balanced_second_variation_negative"
+    "upper_branch_balanced_second_variation_negative",
+    "binary_curve_derivative_zero",
+    "binary_matrix_jet_zero",
+    "normalized_transport_relabel",
+    "recovered_partition_kappa_constant",
+    "dense_contract_has_canonical_kappa",
+    "passport_scene_price_source_zero"
   ],
-  "input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
+  "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
   "matrix_HasFDerivAt_and_Hessian_compiled": false,
+  "original_weighted_jet_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
   "output": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_output.txt",
-  "output_sha256": "6cac070aea4549a795bda4ff2c361dfa181d7c5400ee7c6a0ba72c2e1c2ddaa3",
+  "output_sha256": "2e616cab2316a02cc919316af0efdc5b7c9a99057936abba0ae5f0478da6336f",
   "primary_and_prior_input_sha256": {
     "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
     "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6",
@@ -65,6 +74,7 @@
     "03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a",
     "03_FORMALIZATION/D0/Combinatorics/ForcedReturnWindows.lean": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2",
     "03_FORMALIZATION/D0/Combinatorics/PhaseUnfolding.lean": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66",
+    "03_FORMALIZATION/D0/Combinatorics/RankThreeRecognition.lean": "0bcc28742848501c092b88148f8e4f19ce9253b43b6d3e52af417c0dfa9d423e",
     "03_FORMALIZATION/D0/Combinatorics/Tripartite.lean": "87e2bc5078a48fc5c94be236f4220f08f9b63c8eefa94bebe72a9fd5744b70ba",
     "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
     "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
@@ -81,10 +91,13 @@
     "03_FORMALIZATION/D0/SelfReading/TypedIncidenceCarriers.lean": "3fa2e57b6200195a2b19e45768b813e3c11e1942ca991b17b30599d92ef68c5c",
     "03_FORMALIZATION/D0/Spectral/DarkArchiveStructure.lean": "ebc172839e7f64a84bf2162eee9c8a2d3da5e4e70faf4a1acfc2daca6945b4ed",
     "03_FORMALIZATION/D0/Spectral/ZoneMatrixSpectrum.lean": "f0a78684a777749843e581ab90aeb8afe1932cffac07bee90c56eeeda5edcb75",
+    "03_FORMALIZATION/D0/Synthesis/DenseOperatorSceneRigidity.lean": "cee664c101b66d90e3f44ecaf53da1bcf9d6d92b5f5d017338299935d5382498",
+    "03_FORMALIZATION/D0/Synthesis/OperatorSceneReconstruction.lean": "4ea2db7b7dea4e8e846e3372094d9a2ceaefdc59716399ba8a9505d59af6ee46",
     "03_FORMALIZATION/D0/Synthesis/SceneAnisotropyCapacityWeld.lean": "b074743cca70c095fdf771c8e75b0c70f308965b9ade6f2e4e2a2f499976e43c",
     "03_FORMALIZATION/D0/Synthesis/SceneHeatKernel.lean": "eed58247de51e158b1b088869329c5bee32ed8eea7ede1274393fed440412813",
     "03_FORMALIZATION/D0/Synthesis/SceneInvariantReconstruction.lean": "e88dabbebd5afee1c78c7bd0eb3d07a5c3238c0b92149efd57e3df4e022e94dc",
     "03_FORMALIZATION/D0/Synthesis/SceneNormalizedQuotientDescent.lean": "46e110999c270db39532dfc937988934ba732a2cd40f7e20ebcb9c57948fb849",
+    "03_FORMALIZATION/D0/Synthesis/SpectralSceneRigidity.lean": "31263ab2f216bd47f1435f9c43e464e9f23513bcf70a63253808b21ab1dcc8f6",
     "03_FORMALIZATION/D0/Topology/NoThreeSimplices.lean": "5537181e0a471e2dab2293b3bac7ec64409f96f60fd579a09734d2594a86a224",
     "03_FORMALIZATION/D0/VNext2/Rank3CubicSymmetricFunctions.lean": "9f5bacb342273a84f12dd2f067e718bd7e4123364780a45f105b30e04580e9b7",
     "03_FORMALIZATION/D0/VNext2/Rank3MetricSignature.lean": "466e52bfa918587ab6cdb73bc8e971e0a3b00f349b57fdb0faa5e785085f9e00",
@@ -93,8 +106,13 @@
     "03_FORMALIZATION/D0/VNext2/ScenePathHistoryCanonicity.lean": "2ed1da971417e0949b9f225ad768d80314fbafe0f930b0fcb8c0a662e0de66e0",
     "03_FORMALIZATION/D0/VNext2/SceneSpectralFingerprint.lean": "2046c78140404b90ccf81f98addc2e4120f4082ec16d6dc373e31ecd883f8d68"
   },
-  "printed_axiom_dependencies": 21,
-  "printed_propositions": 21,
+  "primary_owner_declarations": [
+    "D0.Synthesis.DenseOperatorSceneRigidity.dense_operator_recovers_scene",
+    "D0.Synthesis.DenseOperatorSceneRigidity.scene_passport_inhabited"
+  ],
+  "printed_axiom_dependencies": 27,
+  "printed_primary_owner_propositions": 2,
+  "printed_propositions": 27,
   "prior_actual_scene_history_binding_declarations": 60,
   "scalar_heat_feedback_HasDerivAt_compiled": true,
   "status": "PASS",
@@ -104,5 +122,18 @@
     "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
     "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
   },
-  "transitive_d0_imports_in_new_generic_capsule": 0
+  "transitive_d0_imports_in_new_generic_capsule": 11,
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Claims/Signature31Split.lean": "2963905269d09c3fd88a79e4a1e082558403b3b2433899e54e8c95b2c186990c",
+    "03_FORMALIZATION/D0/Combinatorics/CliqueComplex.lean": "1acb945b02648062b7b353678bce3eca5621136b2789aef6dc6b4c7c62c155e7",
+    "03_FORMALIZATION/D0/Combinatorics/CompleteTripartite.lean": "e6e7fd4870d32b18c10ae29f88c235dc0d636f28a7beaad0b6fc13397c3a75fb",
+    "03_FORMALIZATION/D0/Combinatorics/RankThreeRecognition.lean": "0bcc28742848501c092b88148f8e4f19ce9253b43b6d3e52af417c0dfa9d423e",
+    "03_FORMALIZATION/D0/Combinatorics/Tripartite.lean": "87e2bc5078a48fc5c94be236f4220f08f9b63c8eefa94bebe72a9fd5744b70ba",
+    "03_FORMALIZATION/D0/Dynamics/ToralAutomorphism.lean": "c54784e5be5c24c2472fd3df3dbe37e3f7317e57a722ea22534639af693190cf",
+    "03_FORMALIZATION/D0/Synthesis/DenseOperatorSceneRigidity.lean": "cee664c101b66d90e3f44ecaf53da1bcf9d6d92b5f5d017338299935d5382498",
+    "03_FORMALIZATION/D0/Synthesis/OperatorSceneReconstruction.lean": "4ea2db7b7dea4e8e846e3372094d9a2ceaefdc59716399ba8a9505d59af6ee46",
+    "03_FORMALIZATION/D0/Synthesis/SceneInvariantReconstruction.lean": "e88dabbebd5afee1c78c7bd0eb3d07a5c3238c0b92149efd57e3df4e022e94dc",
+    "03_FORMALIZATION/D0/Synthesis/SpectralSceneRigidity.lean": "31263ab2f216bd47f1435f9c43e464e9f23513bcf70a63253808b21ab1dcc8f6",
+    "03_FORMALIZATION/D0/Topology/NoThreeSimplices.lean": "5537181e0a471e2dab2293b3bac7ec64409f96f60fd579a09734d2594a86a224"
+  }
 }

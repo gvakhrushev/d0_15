@@ -67,7 +67,7 @@
     ],
     "active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "active_plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "first_missing_arrow": "T0/T1: derive the native admissibility and the contracted own first jet lambda_X=sum_e kappa_e Dw_e on the complete joint (q,D,b,m) tangent, for the actually selected scene/heat/preparation interface. In the declared positive-conductance unit scene, the scalar source is (c_H+c_F) lambda_X; independent heat/return operator jets need not be reconstructed merely to evaluate it. Do not assume arbitrary conductances are native or fit Dw to rho0. Retain the actual heat-carrier and existing beta/z law, all other action terms, link/matter equations and raw/transported metric readout. A lower-branch minimum or additional compatible carrier is not the next acceptance target before class admission. Prove this exact pullback or a completeness-backed obstruction for the actual interface, then compare all ten metric slots to rho0 and retain refinement, source/Ward, native stationarity, curved roots, soundness/recovery and all parent terminals."
+    "first_missing_arrow": "T0/T1: derive from the existing native state/preparation/refinement owners the actual price-changing joint operator/parameter law of the full action on the complete (q,D,b,m) tangent. The canonical fixed-beta/z normalized scene plus endpoint-history route has a proved zero price covector/contrast on its complete binary dense-passport contract; do not search conductance laws or optimize stationary branches inside that closed branch. A nonbinary conductance extension, variable lift, temperature/source law or another process/heat carrier is not admitted by compatibility alone and cannot be selected to encode rho0. Present one already-owned constitutive/preparation arrow with its exact allowed variation image and refinement, or a completeness-backed boundary for that actual interface. Retain all other action terms, link/matter equations, moving pairing and raw/transported metric readout. Then compute the intrinsic source, all ten rho0 slots, quantitative contrast/recording/refinement, native stationarity, own source/Ward, curved joint roots and soundness/recovery; preserve every parent terminal."
   },
   "groups": [
     {
@@ -725,11 +725,11 @@
   },
   "active_execution_strategy": {
     "date": "2026-10-09",
-    "status": "PREPARED_SHARED_SCENE_SOURCE_STRATEGY_AWAITING_PUBLICATION",
+    "status": "EXECUTION_PLAN_WITH_OWNED_PASSPORT_PRICE_ZERO_AND_OPEN_FULL_ACTION_ARROW",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "ab091f9571170f902ee7559cbd5cf2b7c51662e0c97152f80f5f953fc31f5d4a",
-    "control_input_head": "d9018fb42fd661f070eb91ae125f1f7eee41ba90",
-    "published_scientific_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
+    "plan_sha256": "cb75f0765fc7b3ad8979cdd2609d907bcc2b0f1265ef9d1c3deab22a6bdeb774",
+    "control_input_head": "805e72ab564a7c30c1d2c3cef7c74c4b2d3bde41",
+    "published_scientific_input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
     "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
@@ -740,7 +740,7 @@
       310,
       322
     ],
-    "first_missing_arrow": "T0/T1: derive the native admissibility and the contracted own first jet lambda_X=sum_e kappa_e Dw_e on the complete joint (q,D,b,m) tangent, for the actually selected scene/heat/preparation interface. In the declared positive-conductance unit scene, the scalar source is (c_H+c_F) lambda_X; independent heat/return operator jets need not be reconstructed merely to evaluate it. Do not assume arbitrary conductances are native or fit Dw to rho0. Retain the actual heat-carrier and existing beta/z law, all other action terms, link/matter equations and raw/transported metric readout. A lower-branch minimum or additional compatible carrier is not the next acceptance target before class admission. Prove this exact pullback or a completeness-backed obstruction for the actual interface, then compare all ten metric slots to rho0 and retain refinement, source/Ward, native stationarity, curved roots, soundness/recovery and all parent terminals.",
+    "first_missing_arrow": "T0/T1: derive from the existing native state/preparation/refinement owners the actual price-changing joint operator/parameter law of the full action on the complete (q,D,b,m) tangent. The canonical fixed-beta/z normalized scene plus endpoint-history route has a proved zero price covector/contrast on its complete binary dense-passport contract; do not search conductance laws or optimize stationary branches inside that closed branch. A nonbinary conductance extension, variable lift, temperature/source law or another process/heat carrier is not admitted by compatibility alone and cannot be selected to encode rho0. Present one already-owned constitutive/preparation arrow with its exact allowed variation image and refinement, or a completeness-backed boundary for that actual interface. Retain all other action terms, link/matter equations, moving pairing and raw/transported metric readout. Then compute the intrinsic source, all ten rho0 slots, quantitative contrast/recording/refinement, native stationarity, own source/Ward, curved joint roots and soundness/recovery; preserve every parent terminal.",
     "intrinsic_object": "D(S_h o Gamma_h) restricted to ker DC_X; equivalently an ambient covector modulo im DC_X^*. A physical metric splitting requires its own readout/lift or genuine connection-shell theorem.",
     "metric_and_link_D_types_are_distinct": true,
     "price_to_use": "Existing full native action with two-tick feedback; its nonzero scalar price difference is not substituted for the full action or for a metric derivative.",
@@ -748,14 +748,15 @@
       {
         "id": "T0",
         "requirement": "Actual complete state/action/operator map, allowed curves, first jet, heat carrier, pairing and existing parameter laws",
-        "status": "OPEN"
+        "status": "OPEN",
+        "partial_discharged": "Actual owner recognition and inhabited binary dense-passport contract consumed; all nonzero conductance jets leave its vertex-incidence class. Whole native family/action/preparation/refinement still OPEN."
       },
       {
         "id": "T1",
         "prerequisite": "T0",
         "requirement": "Complete genuine constrained derivative retaining heat, feedback, moving pairing and archive determinant",
         "status": "OPEN",
-        "partial_discharged": "Intrinsic conormal-invariant cotangent chart and scoped golden two-tick zero; shared normalized-scene one-step feedback source factors through all-359-edge kappa covector, with scoped upper-branch Hessian obstruction. Native admission/pullback and whole source remain OPEN."
+        "partial_discharged": "Intrinsic conormal-invariant cotangent chart and scoped golden two-tick zero; normalized scene plus full endpoint-history price has zero covectors and finite contrasts on the complete fixed-beta/z binary dense-passport contract. Conductance calculus remains conditional outside that contract. Whole action/source OPEN."
       },
       {
         "id": "T2",
@@ -779,7 +780,7 @@
     "preflight": {
       "checker": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
       "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-      "certificate_sha256": "5520d8975a3c0d7075734e0306eeb8d9e36e14a948b903cf1fb38efb60f98f2f",
+      "certificate_sha256": "3666e08b9eb9562f64cad640fc98a82d1f36b4345af8c8a8d6dc97fc03e58bb0",
       "exact_controls": 292,
       "finite_star": {
         "sites": 5,
@@ -803,7 +804,7 @@
     "operation_admission_only_when_used_by_specific_native_preparation_or_variation": true,
     "longer_word_search_and_new_role_census_on_active_path": false,
     "archive_disappears_only_after_full_intrinsic_annihilator_proof": true,
-    "next_proof": "T0/T1: derive the native admissibility and the contracted own first jet lambda_X=sum_e kappa_e Dw_e on the complete joint (q,D,b,m) tangent, for the actually selected scene/heat/preparation interface. In the declared positive-conductance unit scene, the scalar source is (c_H+c_F) lambda_X; independent heat/return operator jets need not be reconstructed merely to evaluate it. Do not assume arbitrary conductances are native or fit Dw to rho0. Retain the actual heat-carrier and existing beta/z law, all other action terms, link/matter equations and raw/transported metric readout. A lower-branch minimum or additional compatible carrier is not the next acceptance target before class admission. Prove this exact pullback or a completeness-backed obstruction for the actual interface, then compare all ten metric slots to rho0 and retain refinement, source/Ward, native stationarity, curved roots, soundness/recovery and all parent terminals.",
+    "next_proof": "T0/T1: derive from the existing native state/preparation/refinement owners the actual price-changing joint operator/parameter law of the full action on the complete (q,D,b,m) tangent. The canonical fixed-beta/z normalized scene plus endpoint-history route has a proved zero price covector/contrast on its complete binary dense-passport contract; do not search conductance laws or optimize stationary branches inside that closed branch. A nonbinary conductance extension, variable lift, temperature/source law or another process/heat carrier is not admitted by compatibility alone and cannot be selected to encode rho0. Present one already-owned constitutive/preparation arrow with its exact allowed variation image and refinement, or a completeness-backed boundary for that actual interface. Retain all other action terms, link/matter equations, moving pairing and raw/transported metric readout. Then compute the intrinsic source, all ten rho0 slots, quantitative contrast/recording/refinement, native stationarity, own source/Ward, curved joint roots and soundness/recovery; preserve every parent terminal.",
     "acceptance_requires_same_packet_source_pins_replay_and_current_head_CI": true,
     "closed_G0_G1_G2_G3_G4_nodes": [],
     "constrained_price_source": {
@@ -820,20 +821,26 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
-    "prepared_source_verified_remote": false,
+    "prepared_scientific_input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
+    "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
-      "input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
+      "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
+      "original_weighted_jet_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
       "proof": "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md",
       "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source",
-      "discharged": "The normalized 33-vertex heat price and full 718-history one-step reversal-feedback price now have a single degree-normalized jet in the declared positive-conductance K(9,11,13) class. At unit weights the complete 359-edge first derivative is (c_H+c_F) d kappa with three exact per-edge coefficients. For every fixed beta>0 there are exactly two stationary fugacity branches for the weights; the upper branch is not a local minimum because its Hessian is negative definite on 296 balanced edge directions. The lower minimum and native admission/pullback are not proved. 21 kernel-checked declarations with scalar HasDerivAt, 2496 exact controls and 13 false ledgers; matrix differentiation and branch-existence/Hessian arguments retain their analytic status.",
-      "compiled_propositions": 21,
-      "primary_and_prior_input_pins": 50,
-      "exact_controls": 2496,
-      "false_ledgers_rejected": 13,
+      "discharged": "The actual dense binary scene passport (33 vertices, rank at most 3, quadratic moment 718) reconstructs the complete K(9,11,13) class. With the canonical normalized scene heat, full one-step history feedback and fixed beta/z, every scene in that entire named contract has the same price; all pullback covectors and finite contrasts of this route are zero, even with discontinuous label/state selection. The literal reconstruction and inhabited-owner propositions are printed and consumed; no M1 derivation of their hypotheses or whole-core exhaustion is claimed. The declared positive-conductance extension still has the complete all-359-edge kappa first jet and two stationary branches; the upper is not a minimum on 296 balanced directions, but every nonzero conductance jet leaves binary incidence in its actual vertex coordinates. 27 kernel propositions, 2 primary-owner diagnostics, 11 transitive D0 import pins, 54 primary/prior pins, 2894 exact controls and 16 false ledgers. The full matrix spectral/price binding, branch existence and Hessian remain analytic; own full-action/source/Ward/GR remain open.",
+      "compiled_propositions": 27,
+      "printed_primary_owner_propositions": 2,
+      "transitive_D0_import_pins": 11,
+      "primary_and_prior_input_pins": 54,
+      "exact_controls": 2894,
+      "false_ledgers_rejected": 16,
       "declared_weight_first_jet_dimension": 359,
       "balanced_negative_second_variation_dimension": 296,
-      "progress": "T1_SHARED_SCENE_SOURCE_QUOTIENT_AND_SCOPED_UPPER_NO_MIN",
+      "progress": "T0_PARTIAL_OWNED_BINARY_PASSPORT_ADMISSION_BOUNDARY_AND_T1_SCOPED_PRICE_ZERO_WITH_SHARED_WEIGHT_JETS",
+      "complete_owned_binary_passport_scene_price_branch_classified": true,
+      "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
+      "whole_native_core_exhausted_or_full_action_source_derived": false,
       "every_weight_is_native_or_native_pullback_derived": false,
       "lower_branch_minimum_derived": false,
       "matrix_HasFDerivAt_Hessian_or_branch_existence_kernel_formalized": false,

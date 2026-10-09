@@ -115,3 +115,64 @@ D0.Research.NativeScenePriceSource.upper_branch_balanced_second_variation_negati
 'D0.Research.NativeScenePriceSource.upper_branch_balanced_second_variation_negative' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+D0.Research.NativeScenePriceSource.binary_curve_derivative_zero (f : ℝ → ℝ) (d t : ℝ) (hd : HasDerivAt f d t)
+  (hbinary : ∀ (s : ℝ), f s = 0 ∨ f s = 1) : d = 0
+'D0.Research.NativeScenePriceSource.binary_curve_derivative_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.binary_matrix_jet_zero.{u_3} {v : Type u_3} [Fintype v] [DecidableEq v]
+  (A : ℝ → Matrix v v ℝ) (E : Matrix v v ℝ) (t : ℝ) (hd : ∀ (i j : v), HasDerivAt (fun s => A s i j) (E i j) t)
+  (hbinary : ∀ (s : ℝ) (i j : v), A s i j = 0 ∨ A s i j = 1) : E = 0
+'D0.Research.NativeScenePriceSource.binary_matrix_jet_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeScenePriceSource.normalized_transport_relabel.{u_3, u_4} {v : Type u_3} {w : Type u_4} [Fintype v]
+  [Fintype w] [DecidableEq v] [DecidableEq w] (A : Matrix v v ℚ) (e : v ≃ w) :
+  D0.Research.NativeScenePriceSource.normalizedTransport ((Matrix.reindex e e) A) =
+    (Matrix.reindex e e) (D0.Research.NativeScenePriceSource.normalizedTransport A)
+'D0.Research.NativeScenePriceSource.normalized_transport_relabel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.recovered_partition_kappa_constant (a b c : ℕ) (hm : {a, b, c} = {9, 11, 13}) :
+  D0.Research.NativeScenePriceSource.partitionKappa a b c = 39 / 160
+'D0.Research.NativeScenePriceSource.recovered_partition_kappa_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.dense_contract_has_canonical_kappa.{u_3} {v : Type u_3} [Fintype v] [DecidableEq v]
+  (A : Matrix v v ℚ) (hA : A.IsAdjMatrix) (hr : A.rank ≤ 3) (hV : Fintype.card v = 33) (h2 : (A * A).trace = 718) :
+  ∃ z,
+    Function.Surjective z ∧
+      (∀ (i j : v), A i j = if z i = z j then 0 else 1) ∧
+        D0.Research.NativeScenePriceSource.partitionKappa (D0.Synthesis.OperatorSceneReconstruction.fibreSize z 0)
+            (D0.Synthesis.OperatorSceneReconstruction.fibreSize z 1)
+            (D0.Synthesis.OperatorSceneReconstruction.fibreSize z 2) =
+          39 / 160
+'D0.Research.NativeScenePriceSource.dense_contract_has_canonical_kappa' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.passport_scene_price_source_zero (a b c : ℝ → ℕ) (beta z t : ℝ)
+  (hm : ∀ (s : ℝ), {a s, b s, c s} = {9, 11, 13}) :
+  HasDerivAt
+    (fun s =>
+      D0.Research.NativeScenePriceSource.sceneWholePrice beta z
+        (D0.Research.NativeScenePriceSource.partitionKappa (a s) (b s) (c s)))
+    0 t
+'D0.Research.NativeScenePriceSource.passport_scene_price_source_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Synthesis.DenseOperatorSceneRigidity.dense_operator_recovers_scene.{u_1} {V : Type u_1} [Fintype V]
+  (A : Matrix V V ℚ) (hA : A.IsAdjMatrix) (hr : A.rank ≤ 3) (hV : Fintype.card V = 33) (h2 : (A * A).trace = 718) :
+  ∃ z,
+    Function.Surjective z ∧
+      (∀ (x y : V), A x y = if z x = z y then 0 else 1) ∧
+        {D0.Synthesis.OperatorSceneReconstruction.fibreSize z 0, D0.Synthesis.OperatorSceneReconstruction.fibreSize z 1,
+              D0.Synthesis.OperatorSceneReconstruction.fibreSize z 2} =
+            {9, 11, 13} ∧
+          (∀ (x y : V), z x = z y ↔ A x = A y) ∧ (A * A * A).trace = 7722
+'D0.Synthesis.DenseOperatorSceneRigidity.dense_operator_recovers_scene' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Synthesis.DenseOperatorSceneRigidity.scene_passport_inhabited :
+  D0.Claims.Adj31.IsAdjMatrix ∧
+    D0.Claims.Adj31.rank ≤ 3 ∧ Fintype.card (Fin 33) = 33 ∧ (D0.Claims.Adj31 * D0.Claims.Adj31).trace = 718
+'D0.Synthesis.DenseOperatorSceneRigidity.scene_passport_inhabited' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
