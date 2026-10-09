@@ -925,3 +925,36 @@ physical constraints и ОТО. G0b/G0/global closure и исходные termin
 открыты. Новый action/angle/temperature/selector/coupling/source/postulate
 не добавляется. Новые source/CONTROL heads требуют собственного CI и
 CONTROL review; прежний зелёный CI не подменяет текущую проверку.
+
+
+## Сохранённая φ-программа и общий архивный множитель — текущий шаг
+
+Источник #310: `b09a822a1c9701309dd2e7c53fb5e451bd054689`, вход `66d51fbad02e683561c938b71ba728eb9b25bf03`.
+[Доказательство](A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md) проверяет
+hypotheses внешней real G/CNOT universality theorem на literal p0.
+В явно адресуемом классе конечная uniquely computed success correction
+даёт фиксированный initial accepted target с полным squared error
+<=16^(-k)/5. Все 33 цели имеют один общий complete unit record; он
+сохраняет каждый правильно сопряжённый history return. Uniform
+whole-word/ancillary error считает все входы и утечки. Exact expanded
+word с любым fixed compiler polynomial eventually fits phi^(5m);
+complete norm error <=16^(-m)<=phi^(-5m), real projector squared
+reading error <=4*16^(-2m). Whole-cylinder refinement сохраняет error.
+
+80 новых kernel propositions, 12 D0 pins, 267 exact controls; 27
+false-scope и 13 false-exact ledgers отвергнуты. CONTROL содержит
+226 byte-identical artifacts, 447 artifact/input hash versions и
+341 current input versions. Все 44 contracts/statuses/dependencies и
+исторические entries сохранены. External density theorem остаётся
+analytic input. Первый допуск G0b — actual native decoder/MDL и
+physical addressing/preparation/readout этого же полного процесса,
+включая все ancilla и собственное расписание. Затем требуется joint
+Delta/P/U, полные native variations и condensed refinement, с
+653-dimensional complement и обоими thermal-memory source defects.
+
+Own metric/matter source/Ward, quantitative metric contrast, native
+stationarity, curved joint roots, soundness/recovery, physical
+constraints и ОТО остаются целью. G0b/G0/global closure и исходные
+terminals открыты. Новые action/angle/temperature/selector/coupling/
+source/postulate не вводятся. Current source/CONTROL heads требуют
+своего CI и CONTROL acceptance; self-merge отсутствует.

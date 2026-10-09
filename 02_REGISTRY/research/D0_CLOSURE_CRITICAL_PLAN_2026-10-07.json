@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "f4c657375e03bfcf37c73d8c15eb246d515934e2372176ea0f285fb8659b892c",
+    "sha256": "c254db64ebd92ff51ff3e3de5a0c60731a1d1c815128cef80bbd18d394df78cc",
     "global_census": false
   },
   "history_diagnosis": {
@@ -269,7 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": "G0b: derive the physical admission of the same complete state/preparation/controller/readout program from the existing p0/golden/recording owners and bind its actual native MDL/kappa/refinement budget and joint heat/tangent/action law. The fixed full-state and all-real-projector estimates are now available; keep the derived per-vertex target phase and complete memory, and prove any physical readout/operator covariance rather than declaring it gauge. The native law must compute both thermal-memory defects and genuine source jets from that same admitted state. Then own metric/matter source/Ward, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints. No new action, angle, temperature, selector, coupling/source prescription or postulate.",
+    "next_proof_packet": "G0b: bind the same complete addressed phi/CNOT/preparation/readout program to the actual native decoder and allowed physical resources, including every ancillary preparation/address/storage and the full-word internal schedule. The finite success correction and common retained record now transfer the correctly paired history return; their limiting invariance does not supply exact finite-level M1 admission. Then derive the independently owned joint Delta/P/U, complete admitted variations and condensed refinement from that same state, retaining the 653-dimensional complement and both thermal-memory source defects. Own metric/matter source/Ward, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints remain required; no new action, angle, selector, temperature, coupling/source prescription or postulate.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -570,6 +570,26 @@
       "intake_artifacts": 220,
       "verified_artifact_input_hash_versions": 441,
       "verified_current_input_hash_versions": 338
+    },
+    "golden_program_compilation": {
+      "source_head": "b09a822a1c9701309dd2e7c53fb5e451bd054689",
+      "input_head": "66d51fbad02e683561c938b71ba728eb9b25bf03",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md",
+      "compiled_propositions": 80,
+      "transitive_d0_source_pins": 12,
+      "exact_controls": 267,
+      "false_scope_rejections": 27,
+      "false_exact_rejections": 13,
+      "result": "The literal p0 golden square meets the real G/CNOT density theorem, whose analytic/compiler input and addressed preparation resources are explicit. Finite uniquely computed success correction gives full unit-state squared error <=16^(-k)/5 against the fixed initial accepted seed, with every failed record retained. All 33 actual scene targets factor into the uniform incoming ray and one common complete unit record; its tensor extension preserves every correctly paired history return. Uniform whole-word compilation and all ancillary leakage have kernel N*delta bounds; the actual corrected native state has norm error <=16^(-m) when both preparation/compiler halves are budgeted. All real orthogonal-projector squared reading errors are <=4*16^(-2m), and whole golden cylinders preserve the error. Exact expanded word cost and every fixed polynomial compiler factor eventually fit phi^(5m), with precision <=phi^(-5m); actual native decoder/MDL/hardware admission remains required. 80 new propositions, 12 D0 pins and 267 exact controls. External density is not kernel formalized; full native controller/heat/tangent/refinement/action, source/Ward, stationarity, GR and original parent terminal are not promoted.",
+      "remaining": "G0b: bind the same complete addressed phi/CNOT/preparation/readout program to the actual native decoder and allowed physical resources, including every ancillary preparation/address/storage and the full-word internal schedule. The finite success correction and common retained record now transfer the correctly paired history return; their limiting invariance does not supply exact finite-level M1 admission. Then derive the independently owned joint Delta/P/U, complete admitted variations and condensed refinement from that same state, retaining the 653-dimensional complement and both thermal-memory source defects. Own metric/matter source/Ward, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints remain required; no new action, angle, selector, temperature, coupling/source prescription or postulate.",
+      "external_density_kernel_formalized": false,
+      "physical_native_decoder_MDL_addressing_preparation_and_readout_admission_derived": false,
+      "joint_native_heat_tangent_refinement_or_full_core_completeness_derived": false,
+      "G0b_closed": false,
+      "G0_closed": false,
+      "intake_artifacts": 226,
+      "verified_artifact_input_hash_versions": 447,
+      "verified_current_input_hash_versions": 341
     }
   }
 }

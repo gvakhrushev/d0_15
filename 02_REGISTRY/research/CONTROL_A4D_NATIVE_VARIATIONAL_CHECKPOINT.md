@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`66d51fbad02e683561c938b71ba728eb9b25bf03`, following
-`353fbbde33be5437b9be3d432e6ef5451afe56c1`.
+`b09a822a1c9701309dd2e7c53fb5e451bd054689`, following
+`66d51fbad02e683561c938b71ba728eb9b25bf03`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -16,6 +16,31 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Retained golden compiler and common scene-history target, 2026-10-09
+
+The [program proof](A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md) applies the
+external real G/CNOT density theorem after verifying the literal p0
+basis-change condition. Finite uniquely computed success correction
+gives the fixed initial accepted target with complete squared error
+<=16^(-k)/5. All 33 scene targets have the same complete unit record,
+whose tensor extension preserves each correctly paired history return.
+Uniform whole-word and ancillary compilation bounds count all leakage
+and every logical input. The exact expanded word times any fixed
+compiler polynomial eventually fits phi^(5m), with complete norm error
+<=16^(-m)<=phi^(-5m). Every real projector squared reading error is
+<=4*16^(-2m); whole golden cylinders preserve the error.
+
+80 new actual propositions compile with 12 D0 pins and standard axioms;
+267 exact controls pass. All 27 false-scope and 13 false-exact ledgers
+are rejected. External density remains an analytic theorem. Physical
+addressing/basis-one/ancillary preparation and native decoder/MDL
+admission remain open, as do the full joint heat/tangent/refinement law,
+own source/Ward, contrast/stationarity, curved roots, soundness/recovery
+and physical constraints. All 44 graph contracts/statuses/dependencies
+and historical entries are preserved. G0b/G0/GR/global closure and the
+original #310/#202/#317 terminals remain open. No new action, angle,
+selector, temperature, coupling/source prescription or postulate is added.
 
 ## Fixed complete golden limit and real readings, 2026-10-09
 
@@ -201,7 +226,7 @@ is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 441 current artifact/input hash versions match (338 input versions).
+are unchanged. All 447 current artifact/input hash versions match (341 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
 The preceding source `e7ef84c6` passed CI `37829415818` and CONTROL
@@ -211,6 +236,9 @@ substitute for current validation.
 
 ## Enumerated artifact slice
 
+* [Retained golden program and shared history target](A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md),
+  its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
+
 * [Fixed complete golden target and real readings](A4D_NATIVE_GOLDEN_FIXED_CALIBRATION.md),
   its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
 
@@ -218,7 +246,7 @@ substitute for current validation.
   its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-220 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+226 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [Complete joint-readout spectral extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance),
   its standalone exact checker/ledger and compiled capsule, transcript and source receipt.
@@ -1072,3 +1100,8 @@ Current source `66d51fbad02e683561c938b71ba728eb9b25bf03` and this updated CONTR
 own current-head CI and CONTROL review. Source `353fbbde` and CONTROL
 `d98feff3` passed CI `37854628842` and `37854886737`; those earlier
 heads do not substitute for current validation. No self-merge.
+
+Current source `b09a822a1c9701309dd2e7c53fb5e451bd054689` and this updated CONTROL intake require their
+own current-head CI and CONTROL acceptance. Parent CONTROL `e1f7ecb5`
+passed CI `37860353639`; it does not substitute for current validation.
+No self-merge.
