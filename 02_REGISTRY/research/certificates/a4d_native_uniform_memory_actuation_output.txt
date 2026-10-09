@@ -1,0 +1,466 @@
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:679:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:692:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:967:4: warning: 'change Complex.normSq (fullAmplify U z χ w i z) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:1391:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:1820:28: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:2318:10: warning: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:2568:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:2568:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:4076:4: warning: unused variable `n`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:5698:34: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean:5698:34: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D0.Research.UniformMemoryActuation.sign_products_have_unit_square (c : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1)
+  (i j : Fin 4) : (c i * c j) ^ 2 = 1
+'D0.Research.UniformMemoryActuation.sign_products_have_unit_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.sign_parity_has_unit_square (c : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.parity c ^ 2 = 1
+'D0.Research.UniformMemoryActuation.sign_parity_has_unit_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.sign_parity_is_only_plus_or_minus_one (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.parity c = 1 ∨ D0.Research.UniformMemoryActuation.parity c = -1
+'D0.Research.UniformMemoryActuation.sign_parity_is_only_plus_or_minus_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.swapped_unit_signs (c : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.UnitSigns (D0.Research.UniformMemoryActuation.swappedSigns c)
+'D0.Research.UniformMemoryActuation.swapped_unit_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.UniformMemoryActuation.swapped_signs_twice (c : Fin 4 → ℝ) :
+  D0.Research.UniformMemoryActuation.swappedSigns (D0.Research.UniformMemoryActuation.swappedSigns c) = c
+'D0.Research.UniformMemoryActuation.swapped_signs_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.UniformMemoryActuation.exchange_conjugates_the_complete_recording_specification (d : Fin 4 → ℝ) :
+  D0.Research.VerifiedArchiveActuation.exchange * D0.Research.UniformMemoryActuation.signedRecording d *
+      D0.Research.VerifiedArchiveActuation.exchange =
+    D0.Research.VerifiedArchiveActuation.signedComparison (D0.Research.UniformMemoryActuation.swappedSigns d)
+'D0.Research.UniformMemoryActuation.exchange_conjugates_the_complete_recording_specification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.passive_exchange_conjugation_is_involutive
+  (F : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.VerifiedArchiveActuation.exchange *
+        (D0.Research.VerifiedArchiveActuation.exchange * F * D0.Research.VerifiedArchiveActuation.exchange) *
+      D0.Research.VerifiedArchiveActuation.exchange =
+    F
+'D0.Research.UniformMemoryActuation.passive_exchange_conjugation_is_involutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.complete_minimal_real_recording_classification
+  (F : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.UniformMemoryActuation.RetainingRealRecording F ↔
+    ∃ d, D0.Research.UniformMemoryActuation.UnitSigns d ∧ F = D0.Research.UniformMemoryActuation.signedRecording d
+'D0.Research.UniformMemoryActuation.complete_minimal_real_recording_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.all_minimal_real_retaining_recordings_form_sixteen_completions :
+  Nat.card { F // D0.Research.UniformMemoryActuation.RetainingRealRecording F } = 16
+'D0.Research.UniformMemoryActuation.all_minimal_real_retaining_recordings_form_sixteen_completions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.full_joint_minimal_real_family_has_two_hundred_fifty_six_pairs :
+  Nat.card
+      ({ F // D0.Research.UniformMemoryActuation.RetainingRealRecording F } ×
+        { U // D0.Research.VerifiedArchiveActuation.RetainingRealComparison U }) =
+    256
+'D0.Research.UniformMemoryActuation.full_joint_minimal_real_family_has_two_hundred_fifty_six_pairs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.signed_comparison_inverse_is_three_forward_operations (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) : D0.Research.VerifiedArchiveActuation.signedComparison c ^ 4 = 1
+'D0.Research.UniformMemoryActuation.signed_comparison_inverse_is_three_forward_operations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.signed_recording_inverse_is_three_forward_operations (d : Fin 4 → ℝ)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) : D0.Research.UniformMemoryActuation.signedRecording d ^ 4 = 1
+'D0.Research.UniformMemoryActuation.signed_recording_inverse_is_three_forward_operations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.full_reverse_forward_reverse_route_keeps_all_coherent_phases (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.UniformMemoryActuation.signedRecording d *
+      D0.Research.VerifiedArchiveActuation.signedComparison c =
+    D0.Research.UniformMemoryActuation.signedSwap (D0.Research.UniformMemoryActuation.routeU c d)
+'D0.Research.UniformMemoryActuation.full_reverse_forward_reverse_route_keeps_all_coherent_phases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.full_forward_reverse_forward_route_keeps_all_coherent_phases (c d : Fin 4 → ℝ)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.signedRecording d * D0.Research.VerifiedArchiveActuation.signedComparison c *
+      D0.Research.UniformMemoryActuation.signedRecording d =
+    D0.Research.UniformMemoryActuation.signedSwap (D0.Research.UniformMemoryActuation.routeF c d)
+'D0.Research.UniformMemoryActuation.full_forward_reverse_forward_route_keeps_all_coherent_phases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.both_routes_are_complete_signed_swaps (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.UnitSigns (D0.Research.UniformMemoryActuation.routeU c d) ∧
+    D0.Research.UniformMemoryActuation.UnitSigns (D0.Research.UniformMemoryActuation.routeF c d)
+'D0.Research.UniformMemoryActuation.both_routes_are_complete_signed_swaps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.any_complete_signed_swap_has_two_memory_orientations (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (a p : ℝ) :
+  D0.Research.UniformMemoryActuation.signedSwap v * D0.Research.GoldenCoherentAmplification.goldenSystemGate a p *
+      Matrix.transpose (D0.Research.UniformMemoryActuation.signedSwap v) =
+    D0.Research.UniformMemoryActuation.branchGate a (v 0 * v 2 * p) (v 1 * v 3 * p)
+'D0.Research.UniformMemoryActuation.any_complete_signed_swap_has_two_memory_orientations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.unit_sign_pair_product_from_parity (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) : c 1 * c 3 = D0.Research.UniformMemoryActuation.parity c * (c 0 * c 2)
+'D0.Research.UniformMemoryActuation.unit_sign_pair_product_from_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.reverse_route_second_orientation_is_forward_parity_times_first (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.routeU c d 1 * D0.Research.UniformMemoryActuation.routeU c d 3 =
+    D0.Research.UniformMemoryActuation.parity d *
+      (D0.Research.UniformMemoryActuation.routeU c d 0 * D0.Research.UniformMemoryActuation.routeU c d 2)
+'D0.Research.UniformMemoryActuation.reverse_route_second_orientation_is_forward_parity_times_first' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.forward_route_second_orientation_is_reverse_parity_times_first (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.routeF c d 1 * D0.Research.UniformMemoryActuation.routeF c d 3 =
+    D0.Research.UniformMemoryActuation.parity c *
+      (D0.Research.UniformMemoryActuation.routeF c d 0 * D0.Research.UniformMemoryActuation.routeF c d 2)
+'D0.Research.UniformMemoryActuation.forward_route_second_orientation_is_reverse_parity_times_first' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.complete_uniform_memory_transfer_for_all_reverse_phases (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (hpar : D0.Research.UniformMemoryActuation.parity d = 1) (a p : ℝ) :
+  have S :=
+    D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.UniformMemoryActuation.signedRecording d *
+      D0.Research.VerifiedArchiveActuation.signedComparison c;
+  S * D0.Research.GoldenCoherentAmplification.goldenSystemGate a p * S.transpose =
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate a (d 0 * d 2 * c 2 * c 3 * p)
+'D0.Research.UniformMemoryActuation.complete_uniform_memory_transfer_for_all_reverse_phases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.alternate_uniform_memory_transfer_for_all_forward_phases (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (hpar : D0.Research.UniformMemoryActuation.parity c = 1) (a p : ℝ) :
+  have S :=
+    D0.Research.UniformMemoryActuation.signedRecording d * D0.Research.VerifiedArchiveActuation.signedComparison c *
+      D0.Research.UniformMemoryActuation.signedRecording d;
+  S * D0.Research.GoldenCoherentAmplification.goldenSystemGate a p * S.transpose =
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate a (c 0 * c 3 * d 1 * d 2 * p)
+'D0.Research.UniformMemoryActuation.alternate_uniform_memory_transfer_for_all_forward_phases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.axis_is_the_owned_real_left_q8_frame (k : Fin 3) :
+  D0.Research.UniformMemoryActuation.axis k =
+    Matrix.map (D0.Representation.OrderMemoryReadout.spin (![2, 4, 6] k)) ⇑(algebraMap ℚ ℝ)
+'D0.Research.UniformMemoryActuation.axis_is_the_owned_real_left_q8_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.golden_old_memory_is_left_quaternion_rotation (a p : ℝ) :
+  D0.Research.GoldenCoherentAmplification.goldenRecordGate a p = a • 1 + p • D0.Research.UniformMemoryActuation.axis 0
+'D0.Research.UniformMemoryActuation.golden_old_memory_is_left_quaternion_rotation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.every_active_golden_gate_commutes_with_all_owned_left_axes (a p : ℝ) (k : Fin 3) :
+  D0.Research.GoldenCoherentAmplification.goldenSystemGate a p * D0.Research.UniformMemoryActuation.axis k =
+    D0.Research.UniformMemoryActuation.axis k * D0.Research.GoldenCoherentAmplification.goldenSystemGate a p
+'D0.Research.UniformMemoryActuation.every_active_golden_gate_commutes_with_all_owned_left_axes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.complete_active_golden_gate_has_orthogonal_inverse (a p : ℝ)
+  (hn : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.GoldenCoherentAmplification.goldenSystemGate a p *
+      (D0.Research.GoldenCoherentAmplification.goldenSystemGate a p).transpose =
+    1
+'D0.Research.UniformMemoryActuation.complete_active_golden_gate_has_orthogonal_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.all_normalized_active_rotations_normalize_the_owned_axes (a p : ℝ)
+  (hn : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.NormalizesAxes (D0.Research.GoldenCoherentAmplification.goldenSystemGate a p)
+'D0.Research.UniformMemoryActuation.all_normalized_active_rotations_normalize_the_owned_axes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.identity_normalizes_axes : D0.Research.UniformMemoryActuation.NormalizesAxes 1
+'D0.Research.UniformMemoryActuation.identity_normalizes_axes' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.UniformMemoryActuation.normalization_is_closed_under_complete_composition
+  (U V : D0.Research.UniformMemoryActuation.M4) (hu : D0.Research.UniformMemoryActuation.NormalizesAxes U)
+  (hv : D0.Research.UniformMemoryActuation.NormalizesAxes V) : D0.Research.UniformMemoryActuation.NormalizesAxes (U * V)
+'D0.Research.UniformMemoryActuation.normalization_is_closed_under_complete_composition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.unit_sign_outer_pair_from_parity (c : Fin 4 → ℝ)
+  (hc : D0.Research.UniformMemoryActuation.UnitSigns c) :
+  c 2 * c 3 = D0.Research.UniformMemoryActuation.parity c * (c 0 * c 1)
+'D0.Research.UniformMemoryActuation.unit_sign_outer_pair_from_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.unit_sign_inner_pair_from_parity (c : Fin 4 → ℝ)
+  (hc : D0.Research.UniformMemoryActuation.UnitSigns c) :
+  c 1 * c 2 = D0.Research.UniformMemoryActuation.parity c * (c 0 * c 3)
+'D0.Research.UniformMemoryActuation.unit_sign_inner_pair_from_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.all_proper_signed_comparators_permute_the_owned_left_axes (c : Fin 4 → ℝ)
+  (hc : D0.Research.UniformMemoryActuation.UnitSigns c) (hpar : D0.Research.UniformMemoryActuation.parity c = -1)
+  (k : Fin 3) :
+  D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.UniformMemoryActuation.axis k *
+      (D0.Research.VerifiedArchiveActuation.signedComparison c).transpose =
+    (c 0 * c (D0.Research.UniformMemoryActuation.axisColumn k)) •
+      D0.Research.UniformMemoryActuation.axis (D0.Research.UniformMemoryActuation.reverseAxisPermutation k)
+'D0.Research.UniformMemoryActuation.all_proper_signed_comparators_permute_the_owned_left_axes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.all_proper_signed_recordings_permute_the_owned_left_axes (d : Fin 4 → ℝ)
+  (hd : D0.Research.UniformMemoryActuation.UnitSigns d) (hpar : D0.Research.UniformMemoryActuation.parity d = -1)
+  (k : Fin 3) :
+  D0.Research.UniformMemoryActuation.signedRecording d * D0.Research.UniformMemoryActuation.axis k *
+      Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording d) =
+    (d 0 * d (D0.Research.UniformMemoryActuation.axisColumn k)) •
+      D0.Research.UniformMemoryActuation.axis (D0.Research.UniformMemoryActuation.forwardAxisPermutation k)
+'D0.Research.UniformMemoryActuation.all_proper_signed_recordings_permute_the_owned_left_axes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.every_proper_minimal_comparator_normalizes_axes (c : Fin 4 → ℝ)
+  (hc : D0.Research.UniformMemoryActuation.UnitSigns c) (hpar : D0.Research.UniformMemoryActuation.parity c = -1) :
+  D0.Research.UniformMemoryActuation.NormalizesAxes (D0.Research.VerifiedArchiveActuation.signedComparison c)
+'D0.Research.UniformMemoryActuation.every_proper_minimal_comparator_normalizes_axes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.every_proper_minimal_recording_normalizes_axes (d : Fin 4 → ℝ)
+  (hd : D0.Research.UniformMemoryActuation.UnitSigns d) (hpar : D0.Research.UniformMemoryActuation.parity d = -1) :
+  D0.Research.UniformMemoryActuation.NormalizesAxes (D0.Research.UniformMemoryActuation.signedRecording d)
+'D0.Research.UniformMemoryActuation.every_proper_minimal_recording_normalizes_axes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.every_owned_q8_frame_normalizes_the_axes_without_compiler_trust (g : Fin 8) :
+  D0.Research.UniformMemoryActuation.NormalizesAxes (D0.Research.UniformMemoryActuation.q8Frame g)
+'D0.Research.UniformMemoryActuation.every_owned_q8_frame_normalizes_the_axes_without_compiler_trust' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.all_proper_palette_primitives_normalize_axes (c d : Fin 4 → ℝ)
+  (hc : D0.Research.UniformMemoryActuation.UnitSigns c) (hd : D0.Research.UniformMemoryActuation.UnitSigns d)
+  (hpc : D0.Research.UniformMemoryActuation.parity c = -1) (hpd : D0.Research.UniformMemoryActuation.parity d = -1)
+  (A : D0.Research.UniformMemoryActuation.M4) (hA : D0.Research.UniformMemoryActuation.Palette c d A) :
+  D0.Research.UniformMemoryActuation.NormalizesAxes A
+'D0.Research.UniformMemoryActuation.all_proper_palette_primitives_normalize_axes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.every_complete_word_of_any_length_in_the_proper_palette_normalizes_axes
+  (c d : Fin 4 → ℝ) (hc : D0.Research.UniformMemoryActuation.UnitSigns c)
+  (hd : D0.Research.UniformMemoryActuation.UnitSigns d) (hpc : D0.Research.UniformMemoryActuation.parity c = -1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = -1) (w : List D0.Research.UniformMemoryActuation.M4)
+  (hw : ∀ A ∈ w, D0.Research.UniformMemoryActuation.Palette c d A) :
+  D0.Research.UniformMemoryActuation.NormalizesAxes (D0.Research.UniformMemoryActuation.completeWord w)
+'D0.Research.UniformMemoryActuation.every_complete_word_of_any_length_in_the_proper_palette_normalizes_axes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.a_signed_axis_is_in_the_finite_frame_set (k : Fin 3) (t : ℝ) (ht : t ^ 2 = 1) :
+  t • D0.Research.UniformMemoryActuation.axis k ∈ D0.Research.UniformMemoryActuation.AxisSet
+'D0.Research.UniformMemoryActuation.a_signed_axis_is_in_the_finite_frame_set' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.the_complete_signed_q8_axis_set_is_closed :
+  IsClosed D0.Research.UniformMemoryActuation.AxisSet
+'D0.Research.UniformMemoryActuation.the_complete_signed_q8_axis_set_is_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.normalization_is_closed_under_full_matrix_limits
+  (W : ℕ → D0.Research.UniformMemoryActuation.M4) (H : D0.Research.UniformMemoryActuation.M4)
+  (hW : ∀ (n : ℕ), D0.Research.UniformMemoryActuation.NormalizesAxes (W n))
+  (hlim : Filter.Tendsto W Filter.atTop (nhds H)) (k : Fin 3) :
+  H * D0.Research.UniformMemoryActuation.axis k * Matrix.transpose H ∈ D0.Research.UniformMemoryActuation.AxisSet
+'D0.Research.UniformMemoryActuation.normalization_is_closed_under_full_matrix_limits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.old_memory_golden_rotation_leaves_the_finite_q8_axis_set (a p : ℝ)
+  (hcos : a ^ 2 - p ^ 2 ≠ 0) (hsin : a * p ≠ 0) :
+  D0.Research.GoldenCoherentAmplification.goldenRecordGate a p * D0.Research.UniformMemoryActuation.axis 1 *
+      (D0.Research.GoldenCoherentAmplification.goldenRecordGate a p).transpose ∉
+    D0.Research.UniformMemoryActuation.AxisSet
+'D0.Research.UniformMemoryActuation.old_memory_golden_rotation_leaves_the_finite_q8_axis_set' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.all_word_no_go_for_the_complete_proper_minimal_real_palette (c d : Fin 4 → ℝ)
+  (hc : D0.Research.UniformMemoryActuation.UnitSigns c) (hd : D0.Research.UniformMemoryActuation.UnitSigns d)
+  (hpc : D0.Research.UniformMemoryActuation.parity c = -1) (hpd : D0.Research.UniformMemoryActuation.parity d = -1)
+  (a p : ℝ) (hcos : a ^ 2 - p ^ 2 ≠ 0) (hsin : a * p ≠ 0) (w : List D0.Research.UniformMemoryActuation.M4)
+  (hw : ∀ A ∈ w, D0.Research.UniformMemoryActuation.Palette c d A) :
+  D0.Research.UniformMemoryActuation.completeWord w ≠ D0.Research.GoldenCoherentAmplification.goldenRecordGate a p
+'D0.Research.UniformMemoryActuation.all_word_no_go_for_the_complete_proper_minimal_real_palette' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.arbitrarily_long_proper_programmes_cannot_converge_to_the_old_memory_gate
+  (c d : Fin 4 → ℝ) (hc : D0.Research.UniformMemoryActuation.UnitSigns c)
+  (hd : D0.Research.UniformMemoryActuation.UnitSigns d) (hpc : D0.Research.UniformMemoryActuation.parity c = -1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = -1) (a p : ℝ) (hcos : a ^ 2 - p ^ 2 ≠ 0) (hsin : a * p ≠ 0)
+  (w : ℕ → List D0.Research.UniformMemoryActuation.M4)
+  (hw : ∀ (n : ℕ), ∀ A ∈ w n, D0.Research.UniformMemoryActuation.Palette c d A) :
+  ¬Filter.Tendsto (fun n => D0.Research.UniformMemoryActuation.completeWord (w n)) Filter.atTop
+      (nhds (D0.Research.GoldenCoherentAmplification.goldenRecordGate a p))
+'D0.Research.UniformMemoryActuation.arbitrarily_long_proper_programmes_cannot_converge_to_the_old_memory_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.signed_recording_is_complete_orthogonal (d : Fin 4 → ℝ)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) :
+  Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording d) *
+      D0.Research.UniformMemoryActuation.signedRecording d =
+    1
+'D0.Research.UniformMemoryActuation.signed_recording_is_complete_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.any_fourth_order_orthogonal_gate_has_a_forward_inverse
+  (U : D0.Research.UniformMemoryActuation.M4) (hu : Matrix.transpose U * U = 1) (h4 : U ^ 4 = 1) :
+  Matrix.transpose U = U ^ 3
+'D0.Research.UniformMemoryActuation.any_fourth_order_orthogonal_gate_has_a_forward_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.every_signed_comparator_inverse_has_no_new_primitive (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  (D0.Research.VerifiedArchiveActuation.signedComparison c).transpose =
+    D0.Research.VerifiedArchiveActuation.signedComparison c ^ 3
+'D0.Research.UniformMemoryActuation.every_signed_comparator_inverse_has_no_new_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.every_signed_recording_inverse_has_no_new_primitive (d : Fin 4 → ℝ)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) :
+  Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording d) =
+    D0.Research.UniformMemoryActuation.signedRecording d ^ 3
+'D0.Research.UniformMemoryActuation.every_signed_recording_inverse_has_no_new_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.uniform_actuation_programme_has_thirteen_forward_operations
+  (U F G : D0.Research.UniformMemoryActuation.M4) :
+  (D0.Research.UniformMemoryActuation.forwardProgramme U F G).length = 13
+'D0.Research.UniformMemoryActuation.uniform_actuation_programme_has_thirteen_forward_operations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.every_uniform_programme_is_the_complete_conjugation (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (G : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.UniformMemoryActuation.completeWord
+      (D0.Research.UniformMemoryActuation.forwardProgramme (D0.Research.VerifiedArchiveActuation.signedComparison c)
+        (D0.Research.UniformMemoryActuation.signedRecording d) G) =
+    D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.UniformMemoryActuation.signedRecording d *
+          D0.Research.VerifiedArchiveActuation.signedComparison c *
+        G *
+      (D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.UniformMemoryActuation.signedRecording d *
+          D0.Research.VerifiedArchiveActuation.signedComparison c).transpose
+'D0.Research.UniformMemoryActuation.every_uniform_programme_is_the_complete_conjugation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.the_thirteen_operation_reverse_route_transfers_the_same_angle (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = 1) (a p : ℝ) :
+  D0.Research.UniformMemoryActuation.completeWord
+      (D0.Research.UniformMemoryActuation.forwardProgramme (D0.Research.VerifiedArchiveActuation.signedComparison c)
+        (D0.Research.UniformMemoryActuation.signedRecording d)
+        (D0.Research.GoldenCoherentAmplification.goldenSystemGate a p)) =
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate a (d 0 * d 2 * c 2 * c 3 * p)
+'D0.Research.UniformMemoryActuation.the_thirteen_operation_reverse_route_transfers_the_same_angle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.the_thirteen_operation_alternate_route_transfers_the_same_angle (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (hpc : D0.Research.UniformMemoryActuation.parity c = 1) (a p : ℝ) :
+  D0.Research.UniformMemoryActuation.completeWord
+      (D0.Research.UniformMemoryActuation.forwardProgramme (D0.Research.UniformMemoryActuation.signedRecording d)
+        (D0.Research.VerifiedArchiveActuation.signedComparison c)
+        (D0.Research.GoldenCoherentAmplification.goldenSystemGate a p)) =
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate a (c 0 * c 3 * d 1 * d 2 * p)
+'D0.Research.UniformMemoryActuation.the_thirteen_operation_alternate_route_transfers_the_same_angle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.whole_joint_family_has_a_constructive_or_all_word_obstructed_parity_class
+  (c d : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) :
+  (D0.Research.UniformMemoryActuation.parity d = 1 ∨ D0.Research.UniformMemoryActuation.parity c = 1) ∨
+    D0.Research.UniformMemoryActuation.parity c = -1 ∧ D0.Research.UniformMemoryActuation.parity d = -1
+'D0.Research.UniformMemoryActuation.whole_joint_family_has_a_constructive_or_all_word_obstructed_parity_class' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.constant_thirteen_operation_expansion_keeps_the_owned_golden_resource_window (A : ℝ)
+  (c : ℕ) : ∀ᶠ (m : ℕ) in Filter.atTop, 13 * A * ↑m ^ c * 9 ^ m ≤ D0.phi ^ (5 * m)
+'D0.Research.UniformMemoryActuation.constant_thirteen_operation_expansion_keeps_the_owned_golden_resource_window' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.independent_owned_angle_reference_distinguishes_the_two_memory_orientations
+  (c : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (a p σ : ℝ) (ha : a ^ 2 = p) (hσ : σ ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.newFlagWeight
+      ((D0.Research.VerifiedArchiveActuation.signedComparison c).mulVec
+        ((D0.Research.GoldenCoherentAmplification.goldenRecordGate a (σ * p)).mulVec
+          (D0.Research.UniformMemoryActuation.phiReference a p))) =
+    2 * p ^ 3 * (1 + σ)
+'D0.Research.UniformMemoryActuation.independent_owned_angle_reference_distinguishes_the_two_memory_orientations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.self_preparation_erases_the_orientation_distinction (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (a p σ : ℝ) (ha : a ^ 2 = p) (hσ : σ ^ 2 = 1) :
+  D0.Research.UniformMemoryActuation.newFlagWeight
+      ((D0.Research.VerifiedArchiveActuation.signedComparison c).mulVec
+        ((D0.Research.GoldenCoherentAmplification.goldenRecordGate a (σ * p)).mulVec
+          (D0.Research.UniformMemoryActuation.phiReference a (σ * p)))) =
+    4 * p ^ 3
+'D0.Research.UniformMemoryActuation.self_preparation_erases_the_orientation_distinction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.actual_p0_has_nonzero_left_axis_rotation_coefficients :
+  √D0.primitiveRoot ^ 2 - D0.primitiveRoot ^ 2 ≠ 0 ∧ √D0.primitiveRoot * D0.primitiveRoot ≠ 0
+'D0.Research.UniformMemoryActuation.actual_p0_has_nonzero_left_axis_rotation_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.actual_p0_is_unreachable_by_every_complete_proper_palette_word (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (hpc : D0.Research.UniformMemoryActuation.parity c = -1) (hpd : D0.Research.UniformMemoryActuation.parity d = -1)
+  (w : List D0.Research.UniformMemoryActuation.M4) (hw : ∀ A ∈ w, D0.Research.UniformMemoryActuation.Palette c d A) :
+  D0.Research.UniformMemoryActuation.completeWord w ≠
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate (√D0.primitiveRoot) D0.primitiveRoot
+'D0.Research.UniformMemoryActuation.actual_p0_is_unreachable_by_every_complete_proper_palette_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.actual_p0_cannot_be_approached_by_increasing_proper_programme_lengths
+  (c d : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (hpc : D0.Research.UniformMemoryActuation.parity c = -1) (hpd : D0.Research.UniformMemoryActuation.parity d = -1)
+  (w : ℕ → List D0.Research.UniformMemoryActuation.M4)
+  (hw : ∀ (n : ℕ), ∀ A ∈ w n, D0.Research.UniformMemoryActuation.Palette c d A) :
+  ¬Filter.Tendsto (fun n => D0.Research.UniformMemoryActuation.completeWord (w n)) Filter.atTop
+      (nhds (D0.Research.GoldenCoherentAmplification.goldenRecordGate (√D0.primitiveRoot) D0.primitiveRoot))
+'D0.Research.UniformMemoryActuation.actual_p0_cannot_be_approached_by_increasing_proper_programme_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.UniformMemoryActuation.complete_golden_refinement_retains_every_full_programme_error
+  (W H : D0.Research.UniformMemoryActuation.M4) (a p : ℝ) (hn : a ^ 2 + p ^ 2 = 1) (n : ℕ) (x : Fin 4 → ℝ) :
+  ∑ s,
+      ((D0.Research.VerifiedArchiveActuation.wholeHistoryOperator W n).mulVec
+              (D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x) -
+            (D0.Research.VerifiedArchiveActuation.wholeHistoryOperator H n).mulVec
+              (D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x))
+          s ^
+        2 =
+    ∑ i, (Matrix.mulVec W x - Matrix.mulVec H x) i ^ 2
+'D0.Research.UniformMemoryActuation.complete_golden_refinement_retains_every_full_programme_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -2898,3 +2898,34 @@ soundness/recovery and constraints remain open. All 44 parent contracts
 and original terminals are preserved. No action, selector, temperature,
 source/coupling prescription or physical postulate is introduced; no
 G0b/G0/GR/global closure is claimed.
+
+
+## Complete two-direction real memory actuation and Q8 all-word boundary — 2026-10-09
+
+[The uniform memory-actuation proof](A4D_NATIVE_UNIFORM_MEMORY_ACTUATION.md)
+retains phases in both recording directions and classifies the entire
+declared 256-pair minimal real family. For 192 pairs, a fixed 13-forward
+operation route gives the same owned golden gate on old memory, up to
+orientation and with every workspace state retained. For the remaining
+64 pairs, the actual owned left Q8 frame is normalized by both complete
+primitives, every Q8 operation and every normalized active angle. A
+generic kernel word induction excludes the old-memory gate at any word
+length; a closed-set limit theorem excludes vanishing-error approximation
+in that complete palette. Independent phi references distinguish the
+orientations, whereas self-preparation by the tested gate does not.
+Complete golden cylinder refinement preserves full programme error.
+
+59 new actual propositions, 37 D0 pins and 2409 exact controls
+pass; 24 false-scope and 16 false-exact ledgers are rejected.
+This four-coordinate OPERATOR classification does not exhaust D0,
+larger addressed ancillary processors or all scene/state preparations.
+The next G0b input is the native admission of the complete retained
+apparatus and actually owned role/address operations; either an owned
+operation exits the exact normalizer or its intended palette must be
+proved complete. Decoder/preparation/budget/internal schedule remain.
+Joint Delta/P/U, full variations and condensed refinement keep all 653
+complementary histories and both thermal-memory source defects. Own
+source/Ward, contrast/stationarity, curved roots, soundness/recovery and
+constraints remain. All 44 parent contracts and original terminals are
+preserved. No action, selector, temperature, source/coupling prescription
+or physical postulate is introduced; G0b/G0/GR/global closure remains open.
