@@ -4,7 +4,7 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
-Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/blob/958c19b1e56009b56f26325a80d69e9838cd9cd3/02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md).
+Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/pull/322).
 The [intrinsic-source computation](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md)
 now proves the complete joint cotangent normal form and zero first variation
 of the two-step feedback price at the ordinary/recorded golden bases in the
@@ -24,11 +24,27 @@ remain valid for the declared conductance extension; its nonzero jets
 leave binary incidence in the actual vertex coordinates. They cannot be
 promoted to native variations of the passport contract.
 27 compiled propositions, 2 printed primary-owner propositions, 54 input
-pins and 2894 exact controls classify this branch. The next calculation is
-one actually owned price-changing state/preparation/refinement arrow of
-the full action on the complete joint tangent, with all other action terms
-and physical metric/link/matter readouts retained. Conductance or role/word
-catalogues within the closed branch do not discharge that obligation.
+pins and 2894 exact controls classify this branch.
+
+The [condensed heat-price continuation](A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md)
+uses the actual nonuniform archive tower and genuine LightProfinite owner.
+It separates point-kernel compatibility from counting-operator naturality
+and classifies the complete declared linear self-adjoint natural heat
+interface at all levels. Its complementary blocks affect the existing
+price; independently varied hidden heat has no finite minimum. Even a
+stronger fixed phi-scale norm and trace-class limiting heat permit intrinsic
+spectral-shape price freedom. A separately proved fixed-ceiling minimum
+instead saturates all hidden blocks. None derives a native thermal law,
+ceiling, physical heat carrier or admissible field dependence.
+46 new kernel propositions, 6 actual owner propositions, 3 typed definitions,
+15 transitive D0 imports, 38 primary/prior pins, 41107 exact controls and
+21 rejected ledgers establish these scoped boundaries. The remaining
+calculation must derive one already-owned full-action preparation law and
+its joint tangent image, including the actual restriction or coupling of
+price-visible heat when that carrier is used. Spectral/role/word catalogues
+inside the classified interfaces do not discharge that native arrow.
+All other action terms, metric/link/matter readouts and parent terminals
+remain required.
 The [8 October plan](D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md) below is history.
 The [history/response proof](A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md) builds
 the canonical operational quotient and an actual realized response tower,
