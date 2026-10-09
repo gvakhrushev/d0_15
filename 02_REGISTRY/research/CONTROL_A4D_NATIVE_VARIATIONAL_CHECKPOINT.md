@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`b09a822a1c9701309dd2e7c53fb5e451bd054689`, following
-`66d51fbad02e683561c938b71ba728eb9b25bf03`.
+`4f301680636a8181580a5d1455ff727257c0cabe`, following
+`b09a822a1c9701309dd2e7c53fb5e451bd054689`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -16,6 +16,29 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Native old-record actuation boundary, 2026-10-09
+
+[The retained-record proof](A4D_NATIVE_RETAINED_RECORD_ADMISSION.md)
+classifies the complete declared one-way generator class. The actual
+fresh golden record and every one of the 33 common-record targets have
+a fixed positive old-bit coherence defect. Every commuting whole word
+has complete norm error >=Delta/2, about 0.03658. Every faithful complete
+extension keeps the floor, regardless of word length or record size.
+Successful actuation requires ||[X,U]||>=Delta-2*epsilon. The actual
+first-odd route and old-record golden gate break the invariant.
+
+62 new propositions print actual types and transitive axiom lists;
+12 D0 pins, 296 exact controls, 22 false-scope and 13 false-exact ledger
+rejections pass. The wider addressed compiler is not refuted. This
+restricted class does not exhaust D0; X is a mathematical norm witness,
+not a newly admitted physical/gravitational detector. The next G0b
+arrow is coherent/two-way old-record actuation from the owned comparison,
+reversal and refinement, then native decoder/budget/schedule admission.
+Joint heat/tangent/refinement, own source/Ward, contrast/stationarity,
+curved roots, soundness/recovery and physical constraints remain required.
+All 44 parent contracts and original terminals are preserved. No new
+physical action, selector, temperature, source/coupling or postulate.
 
 ## Retained golden compiler and common scene-history target, 2026-10-09
 
@@ -226,7 +249,7 @@ is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 447 current artifact/input hash versions match (341 input versions).
+are unchanged. All 453 current artifact/input hash versions match (344 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
 The preceding source `e7ef84c6` passed CI `37829415818` and CONTROL
@@ -235,6 +258,9 @@ require their own CI and CONTROL review; prior-head successes do not
 substitute for current validation.
 
 ## Enumerated artifact slice
+
+* [Native retained-record actuation boundary](A4D_NATIVE_RETAINED_RECORD_ADMISSION.md),
+  standalone capsule, transcript, source receipt and exact checker/ledger.
 
 * [Retained golden program and shared history target](A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md),
   its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
@@ -246,7 +272,7 @@ substitute for current validation.
   its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-226 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+232 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [Complete joint-readout spectral extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance),
   its standalone exact checker/ledger and compiled capsule, transcript and source receipt.
@@ -1104,4 +1130,9 @@ heads do not substitute for current validation. No self-merge.
 Current source `b09a822a1c9701309dd2e7c53fb5e451bd054689` and this updated CONTROL intake require their
 own current-head CI and CONTROL acceptance. Parent CONTROL `e1f7ecb5`
 passed CI `37860353639`; it does not substitute for current validation.
+No self-merge.
+
+Current source `4f301680636a8181580a5d1455ff727257c0cabe` and this updated CONTROL intake require their
+own current-head CI and CONTROL acceptance. Parent CONTROL `34a3b102`
+passed CI `37865512796`; it does not substitute for current validation.
 No self-merge.

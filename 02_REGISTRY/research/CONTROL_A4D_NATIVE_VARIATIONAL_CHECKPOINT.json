@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "c254db64ebd92ff51ff3e3de5a0c60731a1d1c815128cef80bbd18d394df78cc",
-      "source_blob": "4e7d61baf41e96c8c24a5c2be707a13cadd9cd75"
+      "sha256": "93de102f9714b79dda3efb33664ec1a85cf37c8610be9dccb7ec5ffd4163c1c0",
+      "source_blob": "7e758efb18934819ca5188ac884c017fbb61fff3"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "a44c833a7621a78257051ff96b6dcc97f16fee8924aed687ada442a35d4a796a",
-      "source_blob": "87c7c530ca4a80c323ccfde8a5888abaa8c5e841"
+      "sha256": "f59bfaf780be377c1679445aa488be8905ba1ea2a17c8e37a3a698f52b64c42c",
+      "source_blob": "c01a78ad03cb23375ecb5ba9244711ec581fb725"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -1131,6 +1131,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_results.json",
       "sha256": "799fa458563bed214b95ec4efe2e7c920e7030c4178884ef54846ad343014dce",
       "source_blob": "9b7479b6bbcb3b7f18d4d16733076f73ee3930e0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_RETAINED_RECORD_ADMISSION.md",
+      "sha256": "05c50904b149fcffcc93d8d52ffa66da260654cf9bfc47b80354d59fef4fe336",
+      "source_blob": "d8a618ff5d439f8b21735a372f0602b51361e677"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean",
+      "sha256": "60315f9b6069e4e10fabd9db5b230d241e6b13e53054d7c492fd722c95000123",
+      "source_blob": "c06c605459f902146c9c2c7748163481c80a3b21"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_certificate.json",
+      "sha256": "0bfbb02423f28dbbf1baaf014729e9e313cbadbae976f36dbf4ca4b2ed830dd1",
+      "source_blob": "d54dfd664facfc013e3ee6ccfda01e3783ae07cc"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_check.py",
+      "sha256": "0fedfee8a287a0bfa70b842b064ae49d56bc3456073c3957a4412202e5bd3f4a",
+      "source_blob": "a08166e6afee148b6c1fa85d43f1a6de701c2e12"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_output.txt",
+      "sha256": "ca6cc9098256c4abfe8869723ed44372e278e76d90e907c033c72a1122a0ca6c",
+      "source_blob": "80cfd762e571acb83f82c806972b27da290a7877"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_results.json",
+      "sha256": "8aca3f581f68326310b6edf5539aa92d595457ce36a7a2fd9458198b5e9fa8c6",
+      "source_blob": "c1f4d039f98588aec3e81047ff02d3513bf72360"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1139,7 +1169,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "66d51fbad02e683561c938b71ba728eb9b25bf03",
+  "previous_source_head": "b09a822a1c9701309dd2e7c53fb5e451bd054689",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1201,11 +1231,12 @@
     "Certificate freshness repair at 1093df6bbd2f7a0fb91204e87240ad035256d661: the retained-history descent ledger plan_sha256 now binds the current execution plan. Its 42 propositions, 189 exact controls, proof, source/toolchain pins and scientific scope are unchanged; all 208 copies match source. Failed runs 37842211412/37843183722 detected the stale plan pin and do not count as successful current-head CI.",
     "Complete finite retained phi preparation from the owned golden and recording definitions: literal 2^45 seed unitary, full recursive words, every-coordinate retained coefficients, actual 33-vertex incoming fibers and degrees 20/22/24, native G^8 phase, two-stage failure <=16^(-k)/10 and complete-vector squared error <=16^(-k)/5 against an explicitly phase-preserving normalized successful target. Exact expanded word cost gives an inverse-square failure bound. Whole-cylinder prefix extensions intertwine at every depth and preserve the error; singleton fine-blank phases fail. The actual 20/24 successful phase area is nonzero, so a common phase cannot supply the physical isometry. 151 compiled propositions, 12 transitive D0 pins and 239 exact controls. Boolean/address/relative-phase physical admission, native MDL/kappa and heat/tangent ownership remain open; no G0b, source/Ward, stationarity, GR or parent terminal is promoted. All 32 false-scope and 15 false-exact ledgers were rejected by the actual checker.",
     "Fixed complete golden preparation target derived from the literal retained seed/word: unique unit success scalar limit, whole unconditional squared state error <=16^(-k)/8 with no archive-cardinality factor, faithful injective real full-state/operator transfer, all real orthogonal-projector squared reading errors <=16^(-k)/2, literal p0/all-33-scene binding, and the same fixed target/rate at every golden pair-history depth. Common unspin is the owned inverse G^(16*k) on one pointer. Complex phase cancellation is restricted to its complex-projector class; real pointers detect the actual G^8 phase. The scoped same-carrier real-entry invariant is not a full-core no-go. 86 new compiled propositions, 12 D0 pins and 154 exact controls. Physical Boolean/address/inverse/readout admission, native budget and joint heat/tangent/action law remain open; no G0b, GR or parent terminal is promoted. All 34 false-scope and 13 false-exact ledgers were rejected by the actual checker.",
-    "The literal p0 golden square meets the real G/CNOT density theorem, whose analytic/compiler input and addressed preparation resources are explicit. Finite uniquely computed success correction gives full unit-state squared error <=16^(-k)/5 against the fixed initial accepted seed, with every failed record retained. All 33 actual scene targets factor into the uniform incoming ray and one common complete unit record; its tensor extension preserves every correctly paired history return. Uniform whole-word compilation and all ancillary leakage have kernel N*delta bounds; the actual corrected native state has norm error <=16^(-m) when both preparation/compiler halves are budgeted. All real orthogonal-projector squared reading errors are <=4*16^(-2m), and whole golden cylinders preserve the error. Exact expanded word cost and every fixed polynomial compiler factor eventually fit phi^(5m), with precision <=phi^(-5m); actual native decoder/MDL/hardware admission remains required. 80 new propositions, 12 D0 pins and 267 exact controls. External density is not kernel formalized; full native controller/heat/tangent/refinement/action, source/Ward, stationarity, GR and original parent terminal are not promoted. The actual checker rejects all 27 false-scope and 13 false-exact ledgers."
+    "The literal p0 golden square meets the real G/CNOT density theorem, whose analytic/compiler input and addressed preparation resources are explicit. Finite uniquely computed success correction gives full unit-state squared error <=16^(-k)/5 against the fixed initial accepted seed, with every failed record retained. All 33 actual scene targets factor into the uniform incoming ray and one common complete unit record; its tensor extension preserves every correctly paired history return. Uniform whole-word compilation and all ancillary leakage have kernel N*delta bounds; the actual corrected native state has norm error <=16^(-m) when both preparation/compiler halves are budgeted. All real orthogonal-projector squared reading errors are <=4*16^(-2m), and whole golden cylinders preserve the error. Exact expanded word cost and every fixed polynomial compiler factor eventually fit phi^(5m), with precision <=phi^(-5m); actual native decoder/MDL/hardware admission remains required. 80 new propositions, 12 D0 pins and 267 exact controls. External density is not kernel formalized; full native controller/heat/tangent/refinement/action, source/Ward, stationarity, GR and original parent terminal are not promoted. The actual checker rejects all 27 false-scope and 13 false-exact ledgers.",
+    "The complete generated one-way class permits every active orthogonal operation and every controlled additive recording. Every word preserves the old-record translation charge; actual golden active G, recording CNOT and fullStep are bound. All-n raw first-unequal cross sums give a fixed positive p0 gap between the complete fresh golden record and each of all 33 actual common-record targets. Every commuting complete preparation has full norm error at least Delta/2, about 0.03658, with no word-length or record-size factor. Every faithful complete isometric extension keeps that floor; vanishing-error sequences are excluded. A successful whole actuation instead needs commutator norm at least Delta-2*epsilon. The actual first-odd route and coherent old-record G break the probe. 62 new propositions, 12 transitive D0 pins, 296 exact controls. The X probe is a mathematical norm witness, not a newly admitted physical detector. This is a fully described restricted controller obstruction, not whole-core exhaustion or a refutation of the broader addressed compiler. Physical coherent/two-way archive actuation, decoder/budget/schedule, the joint heat/tangent/refinement law and GR remain open. The actual checker rejects all 22 false-scope and 13 false-exact ledgers."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "b09a822a1c9701309dd2e7c53fb5e451bd054689",
+  "source_head": "4f301680636a8181580a5d1455ff727257c0cabe",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "66d51fbad02e683561c938b71ba728eb9b25bf03",
+  "source_parent": "b09a822a1c9701309dd2e7c53fb5e451bd054689",
   "source_pr": 310
 }
