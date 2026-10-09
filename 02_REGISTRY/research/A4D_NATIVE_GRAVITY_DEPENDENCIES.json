@@ -1176,14 +1176,14 @@
   "metric_gauge_refinement_continuation_input_head": "113efe7d8ccd6a49bdba15385fec11c9789813f1",
   "active_native_core_execution": {
     "input_head": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
-    "plan": "02_REGISTRY/research/D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md",
+    "plan": "https://github.com/gvakhrushev/d0_15/blob/958c19b1e56009b56f26325a80d69e9838cd9cd3/02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "proof": "02_REGISTRY/research/A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md",
     "consumer": [
       "native_sector",
       "constitutive"
     ],
     "discharged": "Canonical full-future quotient and realized response tower now have actual surjective truncations and commuting depth-shifting process maps. Fixed-depth autonomy requires full-future factorization. The owned recorded golden gate has identical system and archive marginals but exact two-return Z gap -8*p^6 without fresh records. Complete archive history, all-source Schur reconstruction, determinant and genuine source derivative are retained. The actual profinite owner factors the whole finite-depth response, compactness realizes compatible histories, and golden expectations and cylindrical Hilbert inclusions are preserved, with explicit inverse-gate blank-factor preparation. 42 Lean propositions and 189 exact controls pass. The next consumer is the joint history/record operator and action binding to these owned inclusions; no field candidate, physical action or G0 closure is selected.",
-    "next": "G0b: bind an actually executable native recording/comparison or typed-role/WRec transition on the complete retained archive/history carrier, with its preparation, independent reference, address, decoder, full budget and internal schedule. The faithful carrier is now explicit; commutation, coordinate covariance and a passive condensed limit do not supply operation admission. The complete declared joint-flow palette plus all active-role controls has an exact all-word/limit old-parity obstruction; do not search longer words in that palette or promote it to whole-core completeness. Bind an admitted operation exiting the invariant, or prove the executable palette complete before extending the negative terminal. Preserve all even archive coefficients, 653 null histories, both readouts and both thermal-memory source defects. Then derive the actual own action/variations and joint Delta/P/U/physical-refinement law without a new action or source prescription. Own metric/matter source and Ward, quantitative metric contrast and native stationarity, curved joint roots, soundness/recovery and constraints remain required. Original #310/#202/#317 terminals and all parent obligations remain.",
+    "next": "T0/T1: derive the remaining full-price first jet from the actual native preparation/scene/pairing law on (q,D,b,m), including every admitted link and matter direction. Use the proved zero two-tick contribution only at the stated fixed-golden involutive bases and only after class admission; keep heat, scene-return/delay and moving-pairing terms. Substitute the resulting actual covector into the complete joint constraint chart; preserve link equations and the transported metric readout before comparing all ten slots to rho0. Do not restart role/word searches or require an unrelated apparatus census. Quantitative transfer, native stationarity, own source/Ward, curved joint roots, soundness/recovery and original #310/#202/#317 terminals remain open.",
     "G0_closed": false,
     "new_physical_postulates": false,
     "added_graph_nodes": 0,
@@ -1346,6 +1346,21 @@
       "joint_native_heat_tangent_refinement_derived": false,
       "G0b_closed": false,
       "G0_closed": false
+    },
+    "next_before_constrained_price_source": "G0b: bind an actually executable native recording/comparison or typed-role/WRec transition on the complete retained archive/history carrier, with its preparation, independent reference, address, decoder, full budget and internal schedule. The faithful carrier is now explicit; commutation, coordinate covariance and a passive condensed limit do not supply operation admission. The complete declared joint-flow palette plus all active-role controls has an exact all-word/limit old-parity obstruction; do not search longer words in that palette or promote it to whole-core completeness. Bind an admitted operation exiting the invariant, or prove the executable palette complete before extending the negative terminal. Preserve all even archive coefficients, 653 null histories, both readouts and both thermal-memory source defects. Then derive the actual own action/variations and joint Delta/P/U/physical-refinement law without a new action or source prescription. Own metric/matter source and Ward, quantitative metric contrast and native stationarity, curved joint roots, soundness/recovery and constraints remain required. Original #310/#202/#317 terminals and all parent obligations remain.",
+    "constrained_price_source": {
+      "input_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+      "discharged": "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected.",
+      "compiled_propositions": 33,
+      "transitive_d0_source_pins": 4,
+      "exact_controls": 528,
+      "false_ledgers_rejected": 12,
+      "progress": "T1_PARTIAL_INTRINSIC_NORMAL_FORM_AND_SCOPED_ZERO_FEEDBACK_CONTRIBUTION",
+      "native_Gamma_or_full_physical_source_derived": false,
+      "all_size_logdet_HasDerivAt_compiled": false,
+      "G0_T0_T1_T2_T3_fully_closed": false,
+      "parent_terminals_changed": false
     }
   },
   "history_spectral_completion_input_head": "e7ef84c680910b36ee0cf9a030d6e0780d0302dd"

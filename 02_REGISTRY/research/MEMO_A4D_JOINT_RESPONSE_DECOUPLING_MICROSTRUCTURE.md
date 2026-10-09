@@ -4,7 +4,16 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
-Current execution follows the [native-core plan](D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md).
+Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/blob/958c19b1e56009b56f26325a80d69e9838cd9cd3/02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md).
+The [intrinsic-source computation](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md)
+now proves the complete joint cotangent normal form and zero first variation
+of the two-step feedback price at the ordinary/recorded golden bases in the
+full declared orthogonal archive class. The 33 kernel-checked declarations
+and 528 exact controls retain the noninvolutive exception, all metric/link
+components and conormal independence. This is T1 partial progress: the actual
+remaining heat/scene/pairing first jet and its native admission remain T0.
+Neither the full bootstrap source nor the original parent terminal is closed.
+The [8 October plan](D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md) below is history.
 The [history/response proof](A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md) builds
 the canonical operational quotient and an actual realized response tower,
 including process naturality and the criterion for a fixed depth to be
