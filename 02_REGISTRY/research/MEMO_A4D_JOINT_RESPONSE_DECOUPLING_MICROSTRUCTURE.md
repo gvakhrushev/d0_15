@@ -2869,3 +2869,32 @@ source/Ward, contrast/stationarity, curved roots, soundness/recovery
 and physical constraints remain required. All 44 graph contracts and
 original parent terminals remain intact. No new physical law or
 G0b/G0/GR/global closure is installed.
+
+
+## Own verification forces archive actuation; the minimal coherent family is classified — 2026-10-09
+
+[The verified archive-actuation proof](A4D_NATIVE_VERIFIED_ARCHIVE_ACTUATION.md)
+starts from the owned functional comparison truth. Any complete represented
+correct binary comparator requires ||US-SU||>=sqrt(2); approximation obeys
+2-(e0+e1)<=||US-SU||^2. The bound survives complete intertwining refinement.
+The minimal retaining basis permutation is uniquely the existing register.
+Two-direction registration exchanges the old/active role coordinates and
+moves the same owned p0 golden gate to retained memory, without a new angle.
+The entire declared minimal real retaining orthogonal comparator class has
+16 signed completions; coherent phases are not removed by public truth.
+All completions keep full commutator-input mass 2 through every literal
+normalized golden history depth.
+
+58 new actual propositions, 29 D0 source pins and 239 exact controls pass;
+25 false-scope and 13 false-exact ledgers are rejected. The application
+requires an independently represented old record, new flag and complete
+operation. A functional comparator does not by itself admit a physical
+unitary, both role placements, preparation, arbitrary raw-bit access or
+an instruction decoder. Those inputs, complete budget/schedule and the
+joint Delta/P/U, full variations and condensed refinement remain required.
+The 653 complementary histories and both thermal-memory source defects
+remain. Own source/Ward, contrast/stationarity, curved roots,
+soundness/recovery and constraints remain open. All 44 parent contracts
+and original terminals are preserved. No action, selector, temperature,
+source/coupling prescription or physical postulate is introduced; no
+G0b/G0/GR/global closure is claimed.
