@@ -3,23 +3,24 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`1f9a1e8c1417e28823ce1646422a3f915eee9e86`, following
-`d88c5d3bb046ccf3eded006587007e68b5754acf`.
+`569abdc48795b161aa5fe6d2a1c12ecdd05f66b0`, following
+`1f9a1e8c1417e28823ce1646422a3f915eee9e86`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 
 Current execution order, 2026-10-09:
 [the constrained-price tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
-consumes the complete owned binary scene-price zero result and now targets
-one already-owned price-changing state/preparation/refinement arrow of the
-full action on the complete joint tangent. Its physical metric readout and
+consumes the binary scene-price zero and complete declared all-level linear
+archive heat-interface results. It now targets one already-owned operational
+preparation law of the full price and its variation/refinement on the
+complete joint tangent. Its physical metric readout and
 rho0 comparison follow that arrow. The finite preflight passes 292 controls:
 joint metric variations remain surjective, conormals vanish intrinsically,
 and a fixed two-tick price gap has zero jet. This preflight does not supply
 the native Gamma map, source, stationarity, GR or any original parent terminal.
-The intake contains 270 artifacts byte-identical to the verified published
-source; 262 artifacts from the preceding published intake are unchanged.
+The intake contains 276 artifacts byte-identical to the verified published
+source; 268 artifacts from the preceding published intake are unchanged.
 Current-head CI and CONTROL review remain required for acceptance.
 
 The user's October 7 strategic replanning is recorded separately in
@@ -30,6 +31,35 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Complete condensed heat-price interface and native preparation boundary, 2026-10-09
+
+Published SOURCE `569abdc48795b161aa5fe6d2a1c12ecdd05f66b0` continues `1f9a1e8c1417e28823ce1646422a3f915eee9e86`.
+Its remote head and eight changed blobs are verified. The 276-artifact
+intake uses that exact source tree; 268 preceding artifacts are unchanged.
+
+[The condensed price proof](A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md)
+uses the actual nonuniform archive tower and real LightProfinite owner.
+It proves the first-arrow counting-operator defect of the owned point
+record kernel and prints the set-point endomorphism type, then classifies
+the entire declared all-level self-adjoint linear heat interface. All new
+blocks remain. Its genuine fixed-feedback heat derivative and every scalar
+interface first jet are available; unrestricted independent hidden heat
+has no finite minimum. The stronger fixed phi-norm control retains intrinsic
+spectral-shape price freedom even with a trace-class limiting heat; a
+separately owned fixed-ceiling minimum would saturate all hidden blocks.
+No native heat carrier, thermal ceiling, state law or on-shell admission
+is selected. The spectral/Hilbert limit claims are explicitly analytic.
+
+46 new kernel propositions, 6 actual owner propositions, 3 typed definitions,
+15 transitive D0 imports, 38 primary/prior pins, 41107 exact controls and
+21 false scope/input ledgers pass. The existing source cotangent and binary
+scene-price boundaries remain intact. The next actual T0/T1 output is the
+own full-price preparation law and its allowed joint field/refinement
+variation, including the native restriction or coupling of price-visible
+hidden heat when used. More spectrum/role/word catalogues are deferred.
+Own source/Ward, quantitative contrast, native stationarity, curved roots,
+soundness/recovery, physical constraints and all parent terminals remain.
 
 ## Shared-scene price and complete owned binary-passport boundary, 2026-10-09
 

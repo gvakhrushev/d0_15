@@ -725,11 +725,11 @@
   },
   "active_execution_strategy": {
     "date": "2026-10-09",
-    "status": "EXECUTION_PLAN_WITH_OWNED_PASSPORT_PRICE_ZERO_AND_OPEN_FULL_ACTION_ARROW",
+    "status": "EXECUTION_PLAN_WITH_COMPLETE_TYPED_ARCHIVE_HEAT_INTERFACE_AND_OPEN_NATIVE_PREPARATION_LAW",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "cb75f0765fc7b3ad8979cdd2609d907bcc2b0f1265ef9d1c3deab22a6bdeb774",
-    "control_input_head": "805e72ab564a7c30c1d2c3cef7c74c4b2d3bde41",
-    "published_scientific_input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
+    "plan_sha256": "6dd45372eae3655be65e4371b5017542ca17bf43d78d31263d67d8b4a5ea9107",
+    "control_input_head": "ad12be0f70cc03b4ed1cd3b4f24603c132b5d074",
+    "published_scientific_input_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
     "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
@@ -740,7 +740,7 @@
       310,
       322
     ],
-    "first_missing_arrow": "T0/T1: derive from the existing native state/preparation/refinement owners the actual price-changing joint operator/parameter law of the full action on the complete (q,D,b,m) tangent. The canonical fixed-beta/z normalized scene plus endpoint-history route has a proved zero price covector/contrast on its complete binary dense-passport contract; do not search conductance laws or optimize stationary branches inside that closed branch. A nonbinary conductance extension, variable lift, temperature/source law or another process/heat carrier is not admitted by compatibility alone and cannot be selected to encode rho0. Present one already-owned constitutive/preparation arrow with its exact allowed variation image and refinement, or a completeness-backed boundary for that actual interface. Retain all other action terms, link/matter equations, moving pairing and raw/transported metric readout. Then compute the intrinsic source, all ten rho0 slots, quantitative contrast/recording/refinement, native stationarity, own source/Ward, curved joint roots and soundness/recovery; preserve every parent terminal.",
+    "first_missing_arrow": "T0/T1: derive one already-owned operational/preparation law of the actual full price on the complete (q,D,b,m) tangent, with its heat carrier, allowed field dependence and refinement. The complete binary scene-price route is zero; the complete declared all-level archive heat interface does not select that law. If the actual action uses this interface, derive the native restriction or coupling of its price-visible complementary heat blocks and the resulting joint Euler gate: unrestricted independent heat has no finite minimum, fixed phi norm plus trace-class heat still leaves shape price freedom, and a proved fixed-ceiling minimum saturates the hidden blocks. Those are classified conditional interfaces, not native physical families. Do not repeat spectrum/word/role catalogues or choose a gap, thermal budget, temperature, source law or gate to encode rho0. Prove the actual preparation arrow and its variation image, or a completeness-backed boundary of that actual interface; absence of a found definition is not a no-go. Retain both endpoints, all archive modes, remaining action terms, link/matter equations, moving pairing and raw/transported readout. Then compute the intrinsic covector, all ten rho0 slots, quantitative contrast/recording/refinement, native stationarity, own source/Ward, curved joint roots and soundness/recovery; every parent terminal remains open.",
     "intrinsic_object": "D(S_h o Gamma_h) restricted to ker DC_X; equivalently an ambient covector modulo im DC_X^*. A physical metric splitting requires its own readout/lift or genuine connection-shell theorem.",
     "metric_and_link_D_types_are_distinct": true,
     "price_to_use": "Existing full native action with two-tick feedback; its nonzero scalar price difference is not substituted for the full action or for a metric derivative.",
@@ -749,14 +749,14 @@
         "id": "T0",
         "requirement": "Actual complete state/action/operator map, allowed curves, first jet, heat carrier, pairing and existing parameter laws",
         "status": "OPEN",
-        "partial_discharged": "Actual owner recognition and inhabited binary dense-passport contract consumed; all nonzero conductance jets leave its vertex-incidence class. Whole native family/action/preparation/refinement still OPEN."
+        "partial_discharged": "Actual owner recognition and inhabited binary dense-passport contract consumed; all nonzero conductance jets leave its vertex-incidence class. Whole native family/action/preparation/refinement still OPEN. Actual archive/LightProfinite and typed point-operator owners consumed; entire declared self-adjoint linear heat naturality class and stronger phi/norm/trace-class and fixed-ceiling minimum interfaces classified. Native preparation/admission remains OPEN."
       },
       {
         "id": "T1",
         "prerequisite": "T0",
         "requirement": "Complete genuine constrained derivative retaining heat, feedback, moving pairing and archive determinant",
         "status": "OPEN",
-        "partial_discharged": "Intrinsic conormal-invariant cotangent chart and scoped golden two-tick zero; normalized scene plus full endpoint-history price has zero covectors and finite contrasts on the complete fixed-beta/z binary dense-passport contract. Conductance calculus remains conditional outside that contract. Whole action/source OPEN."
+        "partial_discharged": "Intrinsic conormal-invariant cotangent chart and scoped golden two-tick zero; normalized scene plus full endpoint-history price has zero covectors and finite contrasts on the complete fixed-beta/z binary dense-passport contract. Conductance calculus remains conditional outside that contract. Whole action/source OPEN. Genuine scalar hidden-heat/full-fixed-feedback derivatives and error bounds compiled; those interface state germs are not native field/source laws. Actual full source remains OPEN."
       },
       {
         "id": "T2",
@@ -780,7 +780,7 @@
     "preflight": {
       "checker": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
       "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-      "certificate_sha256": "3666e08b9eb9562f64cad640fc98a82d1f36b4345af8c8a8d6dc97fc03e58bb0",
+      "certificate_sha256": "bd56aef1e4440a6da9ba49961dcc92264130c39691c6f0c362c3d30cae36d0c3",
       "exact_controls": 292,
       "finite_star": {
         "sites": 5,
@@ -804,7 +804,7 @@
     "operation_admission_only_when_used_by_specific_native_preparation_or_variation": true,
     "longer_word_search_and_new_role_census_on_active_path": false,
     "archive_disappears_only_after_full_intrinsic_annihilator_proof": true,
-    "next_proof": "T0/T1: derive from the existing native state/preparation/refinement owners the actual price-changing joint operator/parameter law of the full action on the complete (q,D,b,m) tangent. The canonical fixed-beta/z normalized scene plus endpoint-history route has a proved zero price covector/contrast on its complete binary dense-passport contract; do not search conductance laws or optimize stationary branches inside that closed branch. A nonbinary conductance extension, variable lift, temperature/source law or another process/heat carrier is not admitted by compatibility alone and cannot be selected to encode rho0. Present one already-owned constitutive/preparation arrow with its exact allowed variation image and refinement, or a completeness-backed boundary for that actual interface. Retain all other action terms, link/matter equations, moving pairing and raw/transported metric readout. Then compute the intrinsic source, all ten rho0 slots, quantitative contrast/recording/refinement, native stationarity, own source/Ward, curved joint roots and soundness/recovery; preserve every parent terminal.",
+    "next_proof": "T0/T1: derive one already-owned operational/preparation law of the actual full price on the complete (q,D,b,m) tangent, with its heat carrier, allowed field dependence and refinement. The complete binary scene-price route is zero; the complete declared all-level archive heat interface does not select that law. If the actual action uses this interface, derive the native restriction or coupling of its price-visible complementary heat blocks and the resulting joint Euler gate: unrestricted independent heat has no finite minimum, fixed phi norm plus trace-class heat still leaves shape price freedom, and a proved fixed-ceiling minimum saturates the hidden blocks. Those are classified conditional interfaces, not native physical families. Do not repeat spectrum/word/role catalogues or choose a gap, thermal budget, temperature, source law or gate to encode rho0. Prove the actual preparation arrow and its variation image, or a completeness-backed boundary of that actual interface; absence of a found definition is not a no-go. Retain both endpoints, all archive modes, remaining action terms, link/matter equations, moving pairing and raw/transported readout. Then compute the intrinsic covector, all ten rho0 slots, quantitative contrast/recording/refinement, native stationarity, own source/Ward, curved joint roots and soundness/recovery; every parent terminal remains open.",
     "acceptance_requires_same_packet_source_pins_replay_and_current_head_CI": true,
     "closed_G0_G1_G2_G3_G4_nodes": [],
     "constrained_price_source": {
@@ -821,7 +821,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
+    "prepared_scientific_input_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -846,6 +846,31 @@
       "matrix_HasFDerivAt_Hessian_or_branch_existence_kernel_formalized": false,
       "whole_native_source_rho0_GR_or_parent_terminal_derived": false,
       "one_step_R_price_is_not_two_tick_R_squared_price": true
+    },
+    "condensed_price_naturality": {
+      "input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality",
+      "discharged": "The actual nonuniform archive tower and real LightProfinite owner are consumed. Entrywise record-kernel compatibility fails counting heat-operator naturality at the actual first arrow; the set-valued CompatibleOperatorFamily is not a Hilbert heat generator. The entire declared self-adjoint linear natural heat class is inherited coarse heat plus independent complementary blocks, at every level. Genuine full fixed-feedback heat derivatives, all scalar interface first jets, and capacity error bounds are proved. Independently varied positive hidden heat has no finite minimum. A stronger fixed phi^n paired-norm control has intrinsic 5/60 first-fibre shape freedom and a trace-class limiting heat with nonzero shape price derivative; a separately proved fixed-ceiling minimum instead saturates all hidden blocks. No thermal norm/ceiling, spectral shape, physical heat carrier, native field law or on-shell admission is selected. 46 kernel propositions, 6 actual owner propositions, 3 typed definitions, 15 transitive D0 pins, 38 primary/prior pins, 41107 exact controls and 21 rejected ledgers. Hilbert spectral and limit statements have explicit analytic status. Own full-action/source/Ward/GR and every parent terminal remain open.",
+      "compiled_propositions": 46,
+      "printed_primary_owner_propositions": 6,
+      "typed_owner_definitions": 3,
+      "transitive_D0_import_pins": 15,
+      "primary_and_prior_input_pins": 38,
+      "exact_controls": 41107,
+      "false_scope_ledgers_rejected": 18,
+      "false_input_binding_ledgers_rejected": 3,
+      "false_ledgers_rejected": 21,
+      "progress": "T0_PARTIAL_COMPLETE_TYPED_LINEAR_ARCHIVE_HEAT_INTERFACE_AND_T1_GENUINE_CONDITIONAL_PRICE_JETS",
+      "actual_archive_tower_consumed": true,
+      "complete_declared_linear_naturality_class_classified": true,
+      "fixed_phi_norm_and_trace_class_control_retains_shape_price_freedom": true,
+      "fixed_ceiling_finite_profile_minimum_classified": true,
+      "native_heat_carrier_field_law_or_admission_derived": false,
+      "owned_phi_scale_is_thermal_norm_or_ceiling_derived": false,
+      "full_spectral_Hilbert_limit_kernel_formalized": false,
+      "whole_D0_no_go_or_physical_nonuniqueness_proved": false,
+      "native_source_Ward_rho0_GR_or_parent_terminal_derived": false
     }
   }
 }
