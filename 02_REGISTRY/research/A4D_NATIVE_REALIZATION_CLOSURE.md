@@ -889,3 +889,31 @@ history law. No action, selector, field lift or physical equation is added.
 G0 and source/Ward, contrast, curved solutions, soundness/recovery and the
 original #310/#202/#317 terminals remain open. Work proceeds in the existing
 execution; no external-model assignment or waiting prerequisite is created.
+
+
+## Retained golden program and fixed scene-history target — 2026-10-09
+
+[The program proof](A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md) applies the
+external real G/CNOT density theorem after checking the actual p0 gate
+hypothesis. In its explicitly addressed/prepared class, a finite uniquely
+computed pointer correction yields the fixed initial accepted target
+with complete squared error <=16^(-k)/5. All 33 actual targets factor
+through one common complete unit record; it preserves every correctly
+paired history return. Uniform compilation bounds include all ancillary
+leakage and every logical input, rather than a blank-only check. Exact
+expanded cost times any fixed compiler polynomial eventually fits
+phi^(5m), with complete norm error <=16^(-m)<=phi^(-5m). Real projector
+squared reading error is <=4*16^(-2m); whole-cylinder extension preserves
+the error. 80 new kernel propositions and 267 exact controls pass with
+12 D0 pins and standard axioms.
+
+The external density theorem is not kernel-formalized. Physical
+addressing/basis-one/ancillary preparation and the actual native decoder/
+MDL admission remain required. Limiting compiler-choice invariance is
+not exact finite-level M1 independence. The 653 complementary histories
+and their heat/source variations remain in the next joint Delta/P/U
+and condensed refinement law. Own source/Ward, metric contrast, native
+stationarity, curved joint roots, soundness/recovery and physical
+constraints are still required. G0b/G0, GR/global closure and original
+#310/#202/#317 terminals remain open; no action, angle, selector,
+temperature, coupling/source prescription or postulate is installed.
