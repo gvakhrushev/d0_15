@@ -1491,7 +1491,7 @@
     "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
     "parent_graph_and_terminals_unchanged": true,
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "6dd45372eae3655be65e4371b5017542ca17bf43d78d31263d67d8b4a5ea9107",
+    "plan_sha256": "5759e1655cce18d6dda9a882e1f2d016cfdbae301ecfc83889b233d7d7a5c836",
     "prepared_source_verified_remote": true,
     "prior_scientific_artifacts_byte_unchanged_count": 268,
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
@@ -1546,6 +1546,67 @@
       "whole_D0_no_go_or_physical_nonuniqueness_proved": false,
       "native_source_Ward_rho0_GR_or_parent_terminal_derived": false
     },
-    "finite_preflight_certificate_sha256": "bd56aef1e4440a6da9ba49961dcc92264130c39691c6f0c362c3d30cae36d0c3"
+    "finite_preflight_certificate_sha256": "0b0d1b7605a8b9563f6fe7d7500386738e4c922d217f2cc097184cb2936f3eb5",
+    "native_preparation_revalidation": {
+      "date": "2026-10-10",
+      "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM",
+      "control_input_head": "90e2cf8ba8b89e1b132626d574e9f9674aa43100",
+      "scientific_source_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+      "reviewed_input_sha256": {
+        "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+        "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+        "03_FORMALIZATION/D0/IM/StrongLogdetPressure.lean": "b9fa537c716e057ac072dbd6be282ab19d36b63f644b19650940ed31fb4ada93",
+        "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean": "cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296",
+        "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+        "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
+        "03_FORMALIZATION/D0/Geometry/ArchiveRoleProductLaplacian.lean": "ac6b1a24b054c76609b5558f76e6f1adf3d8f170dfb4d6475adc8c5ec4414339",
+        "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean": "511f40788d047494419ab9263edd3e82446085bbb2a483f58d5ff66d04d00a42",
+        "03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean": "abb9ed9de2de239299b8fc64fdadff86945597b71fcc4c107af4d894648ce6a5",
+        "03_FORMALIZATION/D0/Foundation/CascadeFullForcingSynthesis.lean": "c970ab546bdacf77088cae1d250d6a7234aa19f3df2b167da23e4b5e119d1f57",
+        "03_FORMALIZATION/D0/Condensed/OperatorNaturality.lean": "8a6be8638cd52e75b612db2416eca350f487c2bdcb2368fc969f854acd774666",
+        "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md": "8c4c662f9f05430ef9f9ff91c670b15e6c678c9b2b1c0ced90e08c79f507e83c",
+        "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
+        "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08"
+      },
+      "scientific_artifacts_unchanged": 276,
+      "previous_two_owner_read_turns": "INTERRUPTED_OR_FAILED_WITHOUT_NEW_NATIVE_ARROW",
+      "source_CI": {
+        "run": 37929050772,
+        "head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+        "conclusion": "success"
+      },
+      "preceding_control_CI": {
+        "run": 37929737226,
+        "head": "90e2cf8ba8b89e1b132626d574e9f9674aa43100",
+        "conclusion": "success"
+      },
+      "one_missing_lemma": "Derive the actual full operational preparation Gamma_h(X)=(Delta_h,P_h,U_h,G_h), its complete nonempty admitted family, joint constraint-tangent image and native refinement from named existing primitive conditions. For an archive-heat route derive every price-visible complementary block from that preparation. Restriction to q,D requires proving independence from retained b,m. No price, rho0 or vanishing-contrast requirement is installed as the preparation or Euler gate.",
+      "routes_checked": [
+        {
+          "owner": "D0.IM.StrongLogdetPressure",
+          "boundary": "Owned scalar volume-response formula; no joint full-heat preparation."
+        },
+        {
+          "owner": "D0.Geometry.ArchiveWeightedHodgeDirac / ArchiveMetricMeasureHodgeLift",
+          "boundary": "Supplied pairing/weights; direct Lorentz binding already has negative modes and divergent fixed-time heat."
+        },
+        {
+          "owner": "D0.archiveCanonicalLaplacian / archiveMetricProductLaplacian",
+          "boundary": "Level-only fixed-adjacency operator; conductance-to-field admission remains unproved."
+        },
+        {
+          "owner": "BOOK_03 03.25 and A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS 6.7",
+          "boundary": "Paired price arguments and genuine whole-basis Ward; no derived heat-from-tick map."
+        }
+      ],
+      "new_certificate_requires": "A proof of that exact primitive-to-preparation implication or a completeness-backed obstruction for its actual operational domain.",
+      "new_conditional_family_or_owner_census_counts_as_native_arrow": false,
+      "native_F_or_DGamma_derived": false,
+      "absence_of_F_in_whole_kernel_proved": false,
+      "coupling_eliminates_heat_derivative": false,
+      "only_rho0_or_trace_only_outcomes_asserted": false,
+      "source_Ward_stationarity_curved_roots_soundness_recovery_or_GR_closed": false,
+      "all_original_parents_retained": true
+    }
   }
 }

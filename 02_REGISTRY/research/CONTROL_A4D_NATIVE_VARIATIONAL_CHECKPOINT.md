@@ -9,7 +9,7 @@ Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 
-Current execution order, 2026-10-09:
+Current execution order, revalidated 2026-10-10:
 [the constrained-price tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
 consumes the binary scene-price zero and complete declared all-level linear
 archive heat-interface results. It now targets one already-owned operational
@@ -21,7 +21,15 @@ and a fixed two-tick price gap has zero jet. This preflight does not supply
 the native Gamma map, source, stationarity, GR or any original parent terminal.
 The intake contains 276 artifacts byte-identical to the verified published
 source; 268 artifacts from the preceding published intake are unchanged.
-Current-head CI and CONTROL review remain required for acceptance.
+SOURCE `569abdc4` CI `37929050772` and preceding CONTROL `90e2cf8b` CI
+`37929737226` have succeeded. This plan revision still requires its own CI
+and CONTROL review. The October 10 owner revalidation is a strategy update,
+not a new source theorem: the exact next lemma is the operational preparation
+of the full heat/feedback/pairing family and its joint field/refinement jet.
+Scalar rank-pressure, supplied Hodge weights, level-only Laplacians and basis
+Ward do not themselves prove that lemma. No native F, universal no-F theorem,
+source/rho0 equality or additional closed node is claimed. All 276 scientific
+artifacts and the SOURCE SHA are unchanged by this revision.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
