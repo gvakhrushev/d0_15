@@ -2842,3 +2842,30 @@ stationarity, curved joint roots, soundness/recovery and physical
 constraints are still required. G0b/G0, GR/global closure and original
 #310/#202/#317 terminals remain open; no action, angle, selector,
 temperature, coupling/source prescription or postulate is installed.
+
+
+## Old-record actuation has a native quantitative admission test — 2026-10-09
+
+[The retained-record admission proof](A4D_NATIVE_RETAINED_RECORD_ADMISSION.md)
+classifies an explicitly generated one-way class: any active orthogonal
+operation and controlled additive recording. Every word preserves the
+old-record translation charge. The actual complete fresh golden record
+and all 33 common-record targets have a strictly positive fixed p0 gap.
+Every complete commuting preparation has norm error >=Delta/2, about
+0.03658. Every faithful complete isometric extension keeps the floor;
+it cannot vanish with word length, record size or a golden prefix.
+Successful whole actuation needs ||[X,U]||>=Delta-2*epsilon. The literal
+first-odd route and coherent G on an old record break the invariant.
+
+62 new actual propositions, 12 D0 pins and 296 exact controls pass;
+22 false-scope and 13 false-exact ledgers are rejected. The broader
+addressed compiler is not refuted. X is a mathematical norm witness,
+not a newly admitted physical/gravitational detector. The restricted
+class does not exhaust the D0 core. The next G0b consumer must derive
+coherent/two-way old-record actuation from the owned comparison,
+reversal and refinement, then bind decoder/preparation/address/readout
+and the complete budget/schedule. Native joint heat/tangent/refinement,
+source/Ward, contrast/stationarity, curved roots, soundness/recovery
+and physical constraints remain required. All 44 graph contracts and
+original parent terminals remain intact. No new physical law or
+G0b/G0/GR/global closure is installed.

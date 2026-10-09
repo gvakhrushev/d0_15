@@ -1,0 +1,470 @@
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:672:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:685:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:960:4: warning: 'change Complex.normSq (fullAmplify U z χ w i z) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:1384:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:1813:28: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:2311:10: warning: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:2561:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:2561:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean:4069:4: warning: unused variable `n`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D0.Research.RetainedRecordAdmission.flip_last_is_retained_involution (n : ℕ) :
+  Function.Involutive D0.Research.RetainedRecordAdmission.flipLast
+'D0.Research.RetainedRecordAdmission.flip_last_is_retained_involution' does not depend on any axioms
+D0.Research.RetainedRecordAdmission.accepted_raw_mass_is_owned_success_mass (a p : ℝ) (n : ℕ) :
+  ∑ w, D0.Research.RetainedRecordAdmission.acceptedRaw a p n w ^ 2 =
+    D0.Research.GoldenHistoryPreparation.successMass a p n false
+'D0.Research.RetainedRecordAdmission.accepted_raw_mass_is_owned_success_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.raw_last_bit_charge_one (a p : ℝ) :
+  D0.Research.RetainedRecordAdmission.rawCharge a p 1 = 2 * a * p * (a ^ 2 + p ^ 2)
+'D0.Research.RetainedRecordAdmission.raw_last_bit_charge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.RetainedRecordAdmission.raw_last_bit_charge_recursion (a p : ℝ) (n : ℕ) :
+  D0.Research.RetainedRecordAdmission.rawCharge a p (n + 2) =
+    (a ^ 2 + p ^ 2) ^ 2 * D0.Research.RetainedRecordAdmission.rawCharge a p (n + 1)
+'D0.Research.RetainedRecordAdmission.raw_last_bit_charge_recursion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_normalized_raw_last_bit_charge (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1) (n : ℕ) :
+  D0.Research.RetainedRecordAdmission.rawCharge a p (n + 1) = 2 * a * p
+'D0.Research.RetainedRecordAdmission.every_normalized_raw_last_bit_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.first_good_last_bit_charge_zero (a p : ℝ) :
+  D0.Research.RetainedRecordAdmission.goodCharge a p 1 = 0
+'D0.Research.RetainedRecordAdmission.first_good_last_bit_charge_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.good_last_bit_charge_recursion (a p : ℝ) (n : ℕ) :
+  D0.Research.RetainedRecordAdmission.goodCharge a p (n + 2) =
+    D0.Research.GoldenHistoryPreparation.q a p * D0.Research.RetainedRecordAdmission.goodCharge a p (n + 1) +
+      (a * p) ^ 2 * D0.Research.RetainedRecordAdmission.rawCharge a p (n + 1)
+'D0.Research.RetainedRecordAdmission.good_last_bit_charge_recursion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.success_mass_recursion (a p : ℝ) (n : ℕ) :
+  D0.Research.GoldenHistoryPreparation.successMass a p (n + 1) false =
+    D0.Research.GoldenHistoryPreparation.q a p * D0.Research.GoldenHistoryPreparation.successMass a p n false +
+      (a * p) ^ 2 * ∑ w, D0.Research.GoldenHistoryPreparation.amplitude a p w ^ 2
+'D0.Research.RetainedRecordAdmission.success_mass_recursion' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.RetainedRecordAdmission.every_good_last_bit_charge (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1) (n : ℕ) :
+  D0.Research.RetainedRecordAdmission.goodCharge a p (n + 1) =
+    2 * a * p * D0.Research.GoldenHistoryPreparation.successMass a p n false
+'D0.Research.RetainedRecordAdmission.every_good_last_bit_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_four_pair_good_charge (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.RetainedRecordAdmission.goodCharge a p 4 = a * p * (1 - D0.Research.GoldenHistoryPreparation.q a p ^ 3)
+'D0.Research.RetainedRecordAdmission.actual_four_pair_good_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.literal_retained_copy_preserves_archive_flip :
+  D0.Research.GoldenCoherentAmplification.retainedCopy * D0.Research.RetainedRecordAdmission.archiveX =
+    D0.Research.RetainedRecordAdmission.archiveX * D0.Research.GoldenCoherentAmplification.retainedCopy
+'D0.Research.RetainedRecordAdmission.literal_retained_copy_preserves_archive_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.native_active_golden_gate_preserves_archive_flip (a p : ℝ) :
+  D0.Research.GoldenCoherentAmplification.goldenSystemGate a p * D0.Research.RetainedRecordAdmission.archiveX =
+    D0.Research.RetainedRecordAdmission.archiveX * D0.Research.GoldenCoherentAmplification.goldenSystemGate a p
+'D0.Research.RetainedRecordAdmission.native_active_golden_gate_preserves_archive_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_full_recording_step_preserves_archive_flip (a p : ℝ) :
+  D0.Representation.GoldenCoherentMemory.fullStep a p * D0.Research.RetainedRecordAdmission.archiveX =
+    D0.Research.RetainedRecordAdmission.archiveX * D0.Representation.GoldenCoherentMemory.fullStep a p
+'D0.Research.RetainedRecordAdmission.actual_full_recording_step_preserves_archive_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.coherent_old_record_gate_breaks_archive_flip (a p : ℝ) (hp : p ≠ 0) :
+  D0.Research.GoldenCoherentAmplification.goldenRecordGate a p * D0.Research.RetainedRecordAdmission.archiveX ≠
+    D0.Research.RetainedRecordAdmission.archiveX * D0.Research.GoldenCoherentAmplification.goldenRecordGate a p
+'D0.Research.RetainedRecordAdmission.coherent_old_record_gate_breaks_archive_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.commutation_survives_every_composed_word.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (w : List (Matrix ι ι ℝ)) (X : Matrix ι ι ℝ) (hw : ∀ U ∈ w, U * X = X * U) :
+  D0.Research.RetainedRecordAdmission.matrixWord w * X = X * D0.Research.RetainedRecordAdmission.matrixWord w
+'D0.Research.RetainedRecordAdmission.commutation_survives_every_composed_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.complete_orthogonality_survives_every_word.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (w : List (Matrix ι ι ℝ)) (hw : ∀ U ∈ w, U.transpose * U = 1) :
+  (D0.Research.RetainedRecordAdmission.matrixWord w).transpose * D0.Research.RetainedRecordAdmission.matrixWord w = 1
+'D0.Research.RetainedRecordAdmission.complete_orthogonality_survives_every_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.symmetric_probe_commutation_survives_reversal.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U X : Matrix ι ι ℝ) (hX : X.transpose = X) (hU : U * X = X * U) : U.transpose * X = X * U.transpose
+'D0.Research.RetainedRecordAdmission.symmetric_probe_commutation_survives_reversal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_complete_commuting_step_preserves_charge.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U X : Matrix ι ι ℝ) (hU : U.transpose * U = 1) (hC : U * X = X * U) (x : ι → ℝ) :
+  D0.Research.RetainedRecordAdmission.charge X (U.mulVec x) = D0.Research.RetainedRecordAdmission.charge X x
+'D0.Research.RetainedRecordAdmission.every_complete_commuting_step_preserves_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.all_length_whole_word_charge_is_unchanged.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (w : List (Matrix ι ι ℝ)) (X : Matrix ι ι ℝ) (hw : ∀ U ∈ w, U.transpose * U = 1 ∧ U * X = X * U)
+  (x : ι → ℝ) :
+  D0.Research.RetainedRecordAdmission.charge X ((D0.Research.RetainedRecordAdmission.matrixWord w).mulVec x) =
+    D0.Research.RetainedRecordAdmission.charge X x
+'D0.Research.RetainedRecordAdmission.all_length_whole_word_charge_is_unchanged' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.all_addressed_one_way_recordings_commute_with_old_translations.{u_1, u_2}
+  {A : Type u_1} {R : Type u_2} [Fintype A] [DecidableEq A] [AddCommGroup R] [Fintype R] [DecidableEq R] (f : A → R)
+  (t : R) :
+  Equiv.trans (D0.Research.RetainedRecordAdmission.controlledRecord f)
+      (D0.Research.RetainedRecordAdmission.translateRecord t) =
+    Equiv.trans (D0.Research.RetainedRecordAdmission.translateRecord t)
+      (D0.Research.RetainedRecordAdmission.controlledRecord f)
+'D0.Research.RetainedRecordAdmission.all_addressed_one_way_recordings_commute_with_old_translations' depends on axioms: [propext,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_controlled_record_matrix_preserves_every_archive_translation.{u_1, u_2}
+  {A : Type u_1} {R : Type u_2} [Fintype A] [DecidableEq A] [AddCommGroup R] [Fintype R] [DecidableEq R] (f : A → R)
+  (t : R) :
+  Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.controlledRecord f) *
+      Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.translateRecord t) =
+    Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.translateRecord t) *
+      Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.controlledRecord f)
+'D0.Research.RetainedRecordAdmission.actual_controlled_record_matrix_preserves_every_archive_translation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_active_operator_preserves_every_old_archive_probe.{u_1, u_2} {A : Type u_1}
+  {R : Type u_2} [Fintype A] [DecidableEq A] [AddCommGroup R] [Fintype R] [DecidableEq R] (U : Matrix A A ℝ)
+  (X : Matrix R R ℝ) :
+  Matrix.kroneckerMap (fun x1 x2 => x1 * x2) U 1 * Matrix.kroneckerMap (fun x1 x2 => x1 * x2) 1 X =
+    Matrix.kroneckerMap (fun x1 x2 => x1 * x2) 1 X * Matrix.kroneckerMap (fun x1 x2 => x1 * x2) U 1
+'D0.Research.RetainedRecordAdmission.every_active_operator_preserves_every_old_archive_probe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_retained_recording_matrix_is_complete_orthogonal.{u_1, u_2} {A : Type u_1}
+  {R : Type u_2} [Fintype A] [DecidableEq A] [AddCommGroup R] [Fintype R] [DecidableEq R] (f : A → R) :
+  (Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.controlledRecord f)).transpose *
+      Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.controlledRecord f) =
+    1
+'D0.Research.RetainedRecordAdmission.every_retained_recording_matrix_is_complete_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.active_orthogonality_retains_the_full_archive.{u_1, u_2} {A : Type u_1}
+  {R : Type u_2} [Fintype A] [DecidableEq A] [AddCommGroup R] [Fintype R] [DecidableEq R] (U : Matrix A A ℝ)
+  (hU : U.transpose * U = 1) :
+  (Matrix.kroneckerMap (fun x1 x2 => x1 * x2) U 1).transpose * Matrix.kroneckerMap (fun x1 x2 => x1 * x2) U 1 = 1
+'D0.Research.RetainedRecordAdmission.active_orthogonality_retains_the_full_archive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.archive_translation_is_the_full_tensor_probe.{u_1, u_2} {A : Type u_1}
+  {R : Type u_2} [Fintype A] [DecidableEq A] [AddCommGroup R] [Fintype R] [DecidableEq R] (t : R) :
+  Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.translateRecord t) =
+    Matrix.kroneckerMap (fun x1 x2 => x1 * x2) 1
+      (Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.recordShift t))
+'D0.Research.RetainedRecordAdmission.archive_translation_is_the_full_tensor_probe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_one_way_generator_preserves_its_retained_translation.{u_1, u_2} {A : Type u_1}
+  {R : Type u_2} [Fintype A] [DecidableEq A] [AddCommGroup R] [Fintype R] [DecidableEq R] (U : Matrix (A × R) (A × R) ℝ)
+  (hU : D0.Research.RetainedRecordAdmission.OneWayGenerator U) (t : R) :
+  U.transpose * U = 1 ∧
+    U * Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.translateRecord t) =
+      Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.translateRecord t) * U
+'D0.Research.RetainedRecordAdmission.every_one_way_generator_preserves_its_retained_translation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_length_of_the_explicit_one_way_class_keeps_the_old_charge.{u_1, u_2}
+  {A : Type u_1} {R : Type u_2} [Fintype A] [DecidableEq A] [AddCommGroup R] [Fintype R] [DecidableEq R]
+  (w : List (Matrix (A × R) (A × R) ℝ)) (hw : ∀ U ∈ w, D0.Research.RetainedRecordAdmission.OneWayGenerator U) (t : R)
+  (x : A × R → ℝ) :
+  D0.Research.RetainedRecordAdmission.charge
+      (Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.translateRecord t))
+      ((D0.Research.RetainedRecordAdmission.matrixWord w).mulVec x) =
+    D0.Research.RetainedRecordAdmission.charge
+      (Equiv.Perm.permMatrix ℝ (D0.Research.RetainedRecordAdmission.translateRecord t)) x
+'D0.Research.RetainedRecordAdmission.every_length_of_the_explicit_one_way_class_keeps_the_old_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.unit_state_charge_difference_controls_full_error.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (T : E →L[ℝ] E) (hT : ∀ (x : E), ‖T x‖ = ‖x‖) (x y : E) (hx : ‖x‖ = 1)
+  (hy : ‖y‖ = 1) :
+  |D0.Research.RetainedRecordAdmission.hilbertCharge T x - D0.Research.RetainedRecordAdmission.hilbertCharge T y| ≤
+    2 * ‖x - y‖
+'D0.Research.RetainedRecordAdmission.unit_state_charge_difference_controls_full_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.preserved_charge_has_a_positive_uniform_state_floor.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (T : E →L[ℝ] E) (hT : ∀ (x : E), ‖T x‖ = ‖x‖) (x y : E) (c d : ℝ)
+  (hx : ‖x‖ = 1) (hy : ‖y‖ = 1) (hcx : D0.Research.RetainedRecordAdmission.hilbertCharge T x = c)
+  (hdy : D0.Research.RetainedRecordAdmission.hilbertCharge T y = d) : |c - d| / 2 ≤ ‖x - y‖
+'D0.Research.RetainedRecordAdmission.preserved_charge_has_a_positive_uniform_state_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.common_raw_record_is_product_of_same_accepted_streams (a p : ℝ) (n m : ℕ)
+  (w : Fin m → D0.Research.GoldenHistoryPreparation.Word n) :
+  D0.Research.GoldenProgramCompilation.commonRawRecord a p n m w =
+    ∏ i, D0.Research.RetainedRecordAdmission.acceptedRaw a p n (w i)
+'D0.Research.RetainedRecordAdmission.common_raw_record_is_product_of_same_accepted_streams' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.old_raw_bit_flip_is_complete_involution :
+  Function.Involutive D0.Research.RetainedRecordAdmission.oldRawBitFlip
+'D0.Research.RetainedRecordAdmission.old_raw_bit_flip_is_complete_involution' depends on axioms: [propext, Quot.sound]
+D0.Research.RetainedRecordAdmission.same_record_factor_has_exact_old_bit_cross_sum (a p : ℝ) :
+  ∑ w,
+      D0.Research.GoldenProgramCompilation.commonRawRecord a p 4 5 w *
+        D0.Research.GoldenProgramCompilation.commonRawRecord a p 4 5
+          (D0.Research.RetainedRecordAdmission.oldRawBitFlip w) =
+    D0.Research.RetainedRecordAdmission.goodCharge a p 4 *
+      D0.Research.GoldenHistoryPreparation.successMass a p 4 false ^ 4
+'D0.Research.RetainedRecordAdmission.same_record_factor_has_exact_old_bit_cross_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.common_five_stream_mass_is_same_success_fifth_power (a p : ℝ) :
+  D0.Research.GoldenProgramCompilation.commonRecordMass a p 4 5 =
+    D0.Research.GoldenHistoryPreparation.successMass a p 4 false ^ 5
+'D0.Research.RetainedRecordAdmission.common_five_stream_mass_is_same_success_fifth_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.complete_common_record_has_exact_old_bit_charge (a p : ℝ)
+  (hs : 0 < D0.Research.GoldenHistoryPreparation.successMass a p 4 false) :
+  ∑ w,
+      D0.Research.GoldenProgramCompilation.commonRecord a p 4 5 w *
+        D0.Research.GoldenProgramCompilation.commonRecord a p 4 5
+          (D0.Research.RetainedRecordAdmission.oldRawBitFlip w) =
+    D0.Research.RetainedRecordAdmission.goodCharge a p 4 / D0.Research.GoldenHistoryPreparation.successMass a p 4 false
+'D0.Research.RetainedRecordAdmission.complete_common_record_has_exact_old_bit_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.native_accepted_four_pair_mass_is_positive (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) : 0 < D0.Research.GoldenHistoryPreparation.successMass a p 4 false
+'D0.Research.RetainedRecordAdmission.native_accepted_four_pair_mass_is_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.native_old_archive_coherence_gap_is_strictly_positive (a p : ℝ) (ha0 : 0 < a)
+  (hp0 : 0 < p) : 0 < D0.Research.RetainedRecordAdmission.archiveGap a p
+'D0.Research.RetainedRecordAdmission.native_old_archive_coherence_gap_is_strictly_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.raw_and_actual_common_record_charges_differ_by_native_gap (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  2 * a * p -
+      ∑ w,
+        D0.Research.GoldenProgramCompilation.commonRecord a p 4 5 w *
+          D0.Research.GoldenProgramCompilation.commonRecord a p 4 5
+            (D0.Research.RetainedRecordAdmission.oldRawBitFlip w) =
+    D0.Research.RetainedRecordAdmission.archiveGap a p
+'D0.Research.RetainedRecordAdmission.raw_and_actual_common_record_charges_differ_by_native_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_p0_retained_archive_charge_has_fixed_positive_defect :
+  have p := D0.primitiveRoot;
+  have a := √p;
+  0 < D0.Research.RetainedRecordAdmission.archiveGap a p ∧
+    2 * a * p -
+        ∑ w,
+          D0.Research.GoldenProgramCompilation.commonRecord a p 4 5 w *
+            D0.Research.GoldenProgramCompilation.commonRecord a p 4 5
+              (D0.Research.RetainedRecordAdmission.oldRawBitFlip w) =
+      D0.Research.RetainedRecordAdmission.archiveGap a p
+'D0.Research.RetainedRecordAdmission.actual_p0_retained_archive_charge_has_fixed_positive_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.tensor_old_record_charge_ignores_the_unit_active_ray.{u_1, u_2} {Ω : Type u_1}
+  {B : Type u_2} [Fintype Ω] [DecidableEq Ω] [Fintype B] [DecidableEq B] (u : B → ℝ) (η : Ω → ℝ) (τ : Ω → Ω)
+  (hu : ∑ b, u b ^ 2 = 1) : ∑ s, u s.2 * η s.1 * (u s.2 * η (τ s.1)) = ∑ w, η w * η (τ w)
+'D0.Research.RetainedRecordAdmission.tensor_old_record_charge_ignores_the_unit_active_ray' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_uniform_code_has_unit_complete_mass (S : Finset (Fin 5 → Bool))
+  (hs : 0 < S.card) : ∑ b, D0.Research.GoldenProgramCompilation.uniformCode S b ^ 2 = 1
+'D0.Research.RetainedRecordAdmission.actual_uniform_code_has_unit_complete_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.all_actual_scene_targets_need_the_same_changed_archive_charge (a p : ℝ)
+  (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) :
+  ∑ s,
+      D0.Research.GoldenProgramCompilation.uniformCode (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v)
+            s.2 *
+          D0.Research.GoldenProgramCompilation.commonRecord a p 4 5 s.1 *
+        (D0.Research.GoldenProgramCompilation.uniformCode (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v)
+            s.2 *
+          D0.Research.GoldenProgramCompilation.commonRecord a p 4 5
+            (D0.Research.RetainedRecordAdmission.oldRawBitFlip s.1)) =
+    2 * a * p - D0.Research.RetainedRecordAdmission.archiveGap a p
+'D0.Research.RetainedRecordAdmission.all_actual_scene_targets_need_the_same_changed_archive_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_first_odd_route_breaks_old_record_flip :
+  (fun s => (D0.Research.GoldenHistoryPreparation.route 4) (D0.Research.RetainedRecordAdmission.flipOnRoute s)) ≠
+    fun s => D0.Research.RetainedRecordAdmission.flipOnRoute ((D0.Research.GoldenHistoryPreparation.route 4) s)
+'D0.Research.RetainedRecordAdmission.actual_first_odd_route_breaks_old_record_flip' depends on axioms: [propext,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.fresh_complete_raw_record_is_normalized (a p : ℝ) (hn : a ^ 2 + p ^ 2 = 1) :
+  ∑ w, D0.Research.RetainedRecordAdmission.freshRaw a p w ^ 2 = 1
+'D0.Research.RetainedRecordAdmission.fresh_complete_raw_record_is_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.fresh_complete_record_has_native_old_bit_charge (a p : ℝ) (hn : a ^ 2 + p ^ 2 = 1) :
+  ∑ w,
+      D0.Research.RetainedRecordAdmission.freshRaw a p w *
+        D0.Research.RetainedRecordAdmission.freshRaw a p (D0.Research.RetainedRecordAdmission.oldRawBitFlip w) =
+    2 * a * p
+'D0.Research.RetainedRecordAdmission.fresh_complete_record_has_native_old_bit_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.blank_label_is_complete_unit_mass :
+  ∑ b, D0.Research.RetainedRecordAdmission.blankLabel b ^ 2 = 1
+'D0.Research.RetainedRecordAdmission.blank_label_is_complete_unit_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.complete_tensor_state_keeps_both_unit_factors.{u_1, u_2} {Ω : Type u_1}
+  {B : Type u_2} [Fintype Ω] [DecidableEq Ω] [Fintype B] [DecidableEq B] (u : B → ℝ) (η : Ω → ℝ) (hu : ∑ b, u b ^ 2 = 1)
+  (hη : ∑ w, η w ^ 2 = 1) : ∑ s, (η s.1 * u s.2) ^ 2 = 1
+'D0.Research.RetainedRecordAdmission.complete_tensor_state_keeps_both_unit_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.full_fresh_native_state_has_unit_mass (a p : ℝ) (hn : a ^ 2 + p ^ 2 = 1) :
+  ∑ s, D0.Research.RetainedRecordAdmission.freshState a p s ^ 2 = 1
+'D0.Research.RetainedRecordAdmission.full_fresh_native_state_has_unit_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.full_actual_target_has_unit_mass (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (v : Fin 33) : ∑ s, D0.Research.RetainedRecordAdmission.targetState a p v s ^ 2 = 1
+'D0.Research.RetainedRecordAdmission.full_actual_target_has_unit_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_complete_flip_probe_is_orthogonal :
+  D0.Research.RetainedRecordAdmission.completeProbe.transpose * D0.Research.RetainedRecordAdmission.completeProbe = 1
+'D0.Research.RetainedRecordAdmission.actual_complete_flip_probe_is_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.native_probe_charge_is_the_complete_coordinate_reading
+  (x : D0.Research.RetainedRecordAdmission.Complete → ℝ) :
+  D0.Research.RetainedRecordAdmission.charge D0.Research.RetainedRecordAdmission.completeProbe x =
+    ∑ s, x s * x (D0.Research.RetainedRecordAdmission.completeFlip s)
+'D0.Research.RetainedRecordAdmission.native_probe_charge_is_the_complete_coordinate_reading' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.full_fresh_state_has_literal_old_archive_charge (a p : ℝ) (hn : a ^ 2 + p ^ 2 = 1) :
+  D0.Research.RetainedRecordAdmission.charge D0.Research.RetainedRecordAdmission.completeProbe
+      (D0.Research.RetainedRecordAdmission.freshState a p) =
+    2 * a * p
+'D0.Research.RetainedRecordAdmission.full_fresh_state_has_literal_old_archive_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.all_33_actual_targets_have_the_required_changed_charge (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) :
+  D0.Research.RetainedRecordAdmission.charge D0.Research.RetainedRecordAdmission.completeProbe
+      (D0.Research.RetainedRecordAdmission.targetState a p v) =
+    2 * a * p - D0.Research.RetainedRecordAdmission.archiveGap a p
+'D0.Research.RetainedRecordAdmission.all_33_actual_targets_have_the_required_changed_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.hilbert_and_complete_coordinate_charge_are_identical.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (X : Matrix ι ι ℝ) (x : ι → ℝ) :
+  D0.Research.RetainedRecordAdmission.hilbertCharge (D0.Research.GoldenProgramCompilation.matrixOperator X)
+      (D0.Research.GoldenProgramCompilation.realHilbert x) =
+    D0.Research.RetainedRecordAdmission.charge X x
+'D0.Research.RetainedRecordAdmission.hilbert_and_complete_coordinate_charge_are_identical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.complete_unit_mass_is_unit_hilbert_norm.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (x : ι → ℝ) (hx : ∑ i, x i ^ 2 = 1) : ‖D0.Research.GoldenProgramCompilation.realHilbert x‖ = 1
+'D0.Research.RetainedRecordAdmission.complete_unit_mass_is_unit_hilbert_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_complete_commuting_preparation_has_native_positive_error_floor (a p : ℝ)
+  (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (ha0 : 0 < a) (v : Fin 33)
+  (U : Matrix D0.Research.RetainedRecordAdmission.Complete D0.Research.RetainedRecordAdmission.Complete ℝ)
+  (hU : U.transpose * U = 1)
+  (hC : U * D0.Research.RetainedRecordAdmission.completeProbe = D0.Research.RetainedRecordAdmission.completeProbe * U) :
+  D0.Research.RetainedRecordAdmission.archiveGap a p / 2 ≤
+    ‖D0.Research.GoldenProgramCompilation.realHilbert (U.mulVec (D0.Research.RetainedRecordAdmission.freshState a p)) -
+        D0.Research.GoldenProgramCompilation.realHilbert (D0.Research.RetainedRecordAdmission.targetState a p v)‖
+'D0.Research.RetainedRecordAdmission.every_complete_commuting_preparation_has_native_positive_error_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_whole_isometric_extension_retains_the_old_archive_charge.{u_1, u_2}
+  {E : Type u_1} {F : Type u_2} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [NormedAddCommGroup F]
+  [InnerProductSpace ℝ F] (J : E →ₗᵢ[ℝ] F) (T : E →L[ℝ] E) (S : F →L[ℝ] F) (hJ : ∀ (x : E), S (J x) = J (T x)) (x : E) :
+  D0.Research.RetainedRecordAdmission.hilbertCharge S (J x) = D0.Research.RetainedRecordAdmission.hilbertCharge T x
+'D0.Research.RetainedRecordAdmission.every_whole_isometric_extension_retains_the_old_archive_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.every_whole_isometric_commuting_dynamics_preserves_charge.{u_2} {F : Type u_2}
+  [NormedAddCommGroup F] [InnerProductSpace ℝ F] (S U : F →L[ℝ] F) (hU : ∀ (x : F), ‖U x‖ = ‖x‖)
+  (hC : ∀ (x : F), S (U x) = U (S x)) (x : F) :
+  D0.Research.RetainedRecordAdmission.hilbertCharge S (U x) = D0.Research.RetainedRecordAdmission.hilbertCharge S x
+'D0.Research.RetainedRecordAdmission.every_whole_isometric_commuting_dynamics_preserves_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.full_archive_error_floor_survives_every_complete_extension.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [NormedAddCommGroup F] [InnerProductSpace ℝ F]
+  (J : E →ₗᵢ[ℝ] F) (T : E →L[ℝ] E) (S U : F →L[ℝ] F) (hJ : ∀ (x : E), S (J x) = J (T x)) (hS : ∀ (x : F), ‖S x‖ = ‖x‖)
+  (hU : ∀ (x : F), ‖U x‖ = ‖x‖) (hC : ∀ (x : F), S (U x) = U (S x)) (x y : E) (hx : ‖x‖ = 1) (hy : ‖y‖ = 1) (δ : ℝ)
+  (hδ : 0 ≤ δ)
+  (hgap :
+    D0.Research.RetainedRecordAdmission.hilbertCharge T x - D0.Research.RetainedRecordAdmission.hilbertCharge T y = δ) :
+  δ / 2 ≤ ‖U (J x) - J y‖
+'D0.Research.RetainedRecordAdmission.full_archive_error_floor_survives_every_complete_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_charge_change_is_bounded_by_the_complete_commutator.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (S U : E →L[ℝ] E) (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (x : E)
+  (hx : ‖x‖ = 1) :
+  |D0.Research.RetainedRecordAdmission.hilbertCharge S (U x) - D0.Research.RetainedRecordAdmission.hilbertCharge S x| ≤
+    ‖S ∘SL U - U ∘SL S‖
+'D0.Research.RetainedRecordAdmission.actual_charge_change_is_bounded_by_the_complete_commutator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.native_target_error_requires_quantitatively_noncommuting_archive_actuation.{u_1}
+  {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E] (S U : E →L[ℝ] E) (hS : ∀ (x : E), ‖S x‖ = ‖x‖)
+  (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (x y : E) (hx : ‖x‖ = 1) (hy : ‖y‖ = 1) (δ : ℝ)
+  (hgap :
+    D0.Research.RetainedRecordAdmission.hilbertCharge S x - D0.Research.RetainedRecordAdmission.hilbertCharge S y = δ) :
+  |δ| ≤ 2 * ‖U x - y‖ + ‖S ∘SL U - U ∘SL S‖
+'D0.Research.RetainedRecordAdmission.native_target_error_requires_quantitatively_noncommuting_archive_actuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.positive_archive_floor_excludes_every_vanishing_error_schedule (e : ℕ → ℝ) (δ : ℝ)
+  (hδ : 0 < δ) (he : ∀ (n : ℕ), δ / 2 ≤ e n) : ¬Filter.Tendsto e Filter.atTop (nhds 0)
+'D0.Research.RetainedRecordAdmission.positive_archive_floor_excludes_every_vanishing_error_schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.RetainedRecordAdmission.actual_p0_commuting_preparations_never_converge_to_any_scene_target (v : Fin 33)
+  (U : ℕ → Matrix D0.Research.RetainedRecordAdmission.Complete D0.Research.RetainedRecordAdmission.Complete ℝ)
+  (hU :
+    ∀ (n : ℕ),
+      (U n).transpose * U n = 1 ∧
+        U n * D0.Research.RetainedRecordAdmission.completeProbe =
+          D0.Research.RetainedRecordAdmission.completeProbe * U n) :
+  ¬Filter.Tendsto
+      (fun n =>
+        ‖D0.Research.GoldenProgramCompilation.realHilbert
+              ((U n).mulVec (D0.Research.RetainedRecordAdmission.freshState (√D0.primitiveRoot) D0.primitiveRoot)) -
+            D0.Research.GoldenProgramCompilation.realHilbert
+              (D0.Research.RetainedRecordAdmission.targetState (√D0.primitiveRoot) D0.primitiveRoot v)‖)
+      Filter.atTop (nhds 0)
+'D0.Research.RetainedRecordAdmission.actual_p0_commuting_preparations_never_converge_to_any_scene_target' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
