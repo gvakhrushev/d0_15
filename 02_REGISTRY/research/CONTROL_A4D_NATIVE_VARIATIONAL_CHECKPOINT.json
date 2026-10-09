@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "6c0a4b55daa65363975187eca2701a4371b33f2966f13feba7dd15b004a948cd",
-      "source_blob": "27c9fa43166c66e319f717818a964b2f9c3d4c00"
+      "sha256": "791d1bea23b4ab342b200407abb2f4a8da038a8ca1632cc9718d5c79a075c4ba",
+      "source_blob": "55fe068fb35a001ce41532658fce8bf695ae45a1"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -1281,6 +1281,46 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_results.json",
       "sha256": "9623b7c587704805b422532489e9ecfa31b86a14e53be350ab605bdbf64d75ef",
       "source_blob": "f1a771d3614c1fe1881031fe46c7ac660aaf8281"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CORE_TO_STRESS_ARROW.md",
+      "sha256": "7de82bc75b31548a608079d18847ea96a294a5fb6f63b2c2bb3261d649b7f0ab",
+      "source_blob": "0832a1922bc6508cb37a098b8682c6ceb39ddc24"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+      "sha256": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6",
+      "source_blob": "b6895f33cba6ea68ae9cb2d055ec0d830a3fc12e"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "sha256": "d6c9842c1482b471df4e551ea18702a49deba589cddffea9af24d8fb9c82f9e0",
+      "source_blob": "fd4579d1861067b90758d7c02b5e5ceb0dd50153"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
+      "sha256": "34c377ccd3e99980feb1c7d032a11a4f4b17fa77245e3325ac8572dc55b5669e",
+      "source_blob": "c2844e4bb386c92238a5ff361c970d9bd54cd607"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_certificate.json",
+      "sha256": "aa2dbae962450fa1aa358553758ce22dfdc37947bb5878193ad895d4187f2614",
+      "source_blob": "a27d5973ca9adab82333b2527a1af0d26fffb7dd"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_check.py",
+      "sha256": "0eaa7e42d6623fcf5d3861209e93430f8ab39a694b07eeba570483ce935e9cb6",
+      "source_blob": "af5133077833e9feaa7b60a0eabfc7515510e803"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_output.txt",
+      "sha256": "407acffd08fc247f2aca7969936d7b9ad65018945784ff3f488683ef6a45dd8e",
+      "source_blob": "a4830f75f1bfd3d21d80a7977716271e2e79c84d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_results.json",
+      "sha256": "e8bb8f7e777637034a9945a5ec7671dd872f5fa4c61f6ec7a5ad218088797f37",
+      "source_blob": "2fd0bdef8467ceae71b18c0c500f409d7fca22b3"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1289,7 +1329,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
+  "previous_source_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1356,25 +1396,41 @@
     "The owned verification contract forces different internal outcomes for a reference record and every distinct record. Every complete isometric realization with an old probe commuting with the new outcome observable has ||(US-SU)x||^2=2 on a unit input and operator commutator norm >=sqrt(2), with robust bound 2-(e0+e1)<=||US-SU||^2. Any complete intertwining refinement retains the floor. The minimal retaining basis-permutation comparison is uniquely the existing FiniteProtocolClock.register, bound to both actual four-coordinate role placements. Three two-direction registrations exchange old/active roles and transfer the same owned p0 golden gate to old memory. The entire declared four-coordinate retaining real orthogonal comparison class is exactly 16 signed completions; public truth alone does not select coherent phases. All 16 retain commutator-input mass 2 at every literal normalized golden cylinder depth. 58 new kernel propositions, 29 transitive D0 source pins, 239 exact controls; 25 false-scope and 13 false-exact ledgers rejected. The operator/record/output representation is an explicit application input, not physical admission inferred from a function. No whole-core or GR closure. The actual checker rejects 25 false-scope and 13 false-exact ledgers.",
     "The complete declared four-real-coordinate retaining recording/comparison family has 16 forward and 16 reverse coherent completions, hence 256 pairs. All 192 pairs with at least one orientation-reversing primitive have a uniform old-memory transfer using the same owned golden angle in 13 forward operations, retaining arbitrary workspace states. Both proper primitives in the other 64 pairs normalize the actual owned left Q8 axes; every Q8 operation and every normalized active rotation preserves the same finite frame. A generic kernel word induction and closed-set limit theorem exclude the full old-memory golden operator and any vanishing-error approximation by arbitrarily long words in that entire declared palette. Independent own-angle references distinguish orientations; self-preparation by the tested gate erases the distinction and is rejected as calibration. Full programme error is preserved at all literal normalized golden depths. 59 new kernel propositions, 37 D0 source pins, 2409 exact controls; 24 false-scope and 16 false-exact ledgers rejected. This operator obstruction does not exhaust D0, larger addressed processors or all state preparations; no physical admission or GR closure.",
     "The complete two-address minimal real retaining recording/comparison family has 65536 independently phase-completed realizations. Generic full-workspace generator identities and a forward-only inverse compiler give uniform old-memory actuation with the same owned active angle, retaining orientation, in at most 29 primitives. All 256 common-hardware pairs need only 13 or 21 primitives. The proper sector has a common five-step route for all 512 independent proper triples. No blank helper is needed: active and additional roles are restored for every correlated eight-coordinate state. All retained golden depths intertwine the full programme and preserve its complete error mass. The conditional constant factor keeps the prior phi resource inequality, without native decoder/address/budget/schedule admission. The prior four-coordinate Q8 all-word and limit obstruction remains valid in its palette; actively addressed copies extend that palette. 95 new kernel propositions, 37 D0 source pins, 65782 exact controls; 28 false-scope and 16 false-exact ledgers rejected. Coherent representation and physical permission to address the operations are application inputs, not inferred from Boolean truth or the passive condensed limit; no G0b, GR or whole-core closure.",
-    "The full retained addressed apparatus now has a concrete faithful degree-normalized carrier inside the existing typed 33 scene and all 718 native histories, for all six ordered distinct archive pairs. The sixteen-dimensional apparatus support retains a 702-dimensional complement, including the entire actual 653 joint-readout null archive. All three archives keep their even memory; no bare regular archive is replaced by pure spin blocks. Full operations preserve composition, transpose and orthogonality, commute with owned projection/reversal and every complete declared joint symmetric history law, and transport all prior addressed programmes with at most 29 operations. That law class is constructively nonempty. Its entire flow palette, enlarged by all active-role real operations including the actual p0 gate, preserves old parity; no word or matrix limit actuates nontrivial old memory. This palette is proper within the compatibility algebra and is not asserted to exhaust native executable operations. 134 new kernel propositions, 60 actual D0 pins, 353 exact controls; 24 false-scope and 16 false-exact ledgers rejected. Physical operation admission, action/variations and native gravitational transfer remain open."
+    "The full retained addressed apparatus now has a concrete faithful degree-normalized carrier inside the existing typed 33 scene and all 718 native histories, for all six ordered distinct archive pairs. The sixteen-dimensional apparatus support retains a 702-dimensional complement, including the entire actual 653 joint-readout null archive. All three archives keep their even memory; no bare regular archive is replaced by pure spin blocks. Full operations preserve composition, transpose and orthogonality, commute with owned projection/reversal and every complete declared joint symmetric history law, and transport all prior addressed programmes with at most 29 operations. That law class is constructively nonempty. Its entire flow palette, enlarged by all active-role real operations including the actual p0 gate, preserves old parity; no word or matrix limit actuates nontrivial old memory. This palette is proper within the compatibility algebra and is not asserted to exhaust native executable operations. 134 new kernel propositions, 60 actual D0 pins, 353 exact controls; 24 false-scope and 16 false-exact ledgers rejected. Physical operation admission, action/variations and native gravitational transfer remain open.",
+    "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
+  "source_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
+  "source_parent": "0545eaf95ac3857b30c43f266311c80c1d751d01",
   "source_pr": 310,
   "execution_strategy_revision": {
+    "constrained_price_source": {
+      "G0_T0_T1_T2_T3_fully_closed": false,
+      "all_size_logdet_HasDerivAt_compiled": false,
+      "compiled_propositions": 33,
+      "discharged": "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected.",
+      "exact_controls": 528,
+      "false_ledgers_rejected": 12,
+      "input_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+      "native_Gamma_or_full_physical_source_derived": false,
+      "parent_terminals_changed": false,
+      "progress": "T1_PARTIAL_INTRINSIC_NORMAL_FORM_AND_SCOPED_ZERO_FEEDBACK_CONTRIBUTION",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+      "transitive_d0_source_pins": 4
+    },
     "date": "2026-10-09",
-    "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "e8794436d6922b58417ce1a1e8940a1789c0fc5a49329249d46f51626cab749f",
-    "machine_contract": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_exact_controls": 292,
-    "scientific_artifact_intake_and_source_SHA_unchanged": true,
-    "scientific_source_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
-    "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+    "machine_contract": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
     "native_operator_map_or_source_claim_promoted": false,
+    "no_new_task_branch_action_selector_postulate_or_self_merge": true,
+    "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
     "parent_graph_and_terminals_unchanged": true,
-    "no_new_task_branch_action_selector_postulate_or_self_merge": true
+    "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
+    "plan_sha256": "ed7ee28fe78c05d544c649597eb264386edfce4db1f055ade2a6371d94ccc2da",
+    "prior_scientific_artifacts_byte_unchanged_count": 255,
+    "scientific_artifact_intake_and_source_SHA_unchanged": false,
+    "scientific_source_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4"
   }
 }

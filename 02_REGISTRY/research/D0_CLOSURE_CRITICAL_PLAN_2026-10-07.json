@@ -67,7 +67,7 @@
     ],
     "active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "active_plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "first_missing_arrow": "Independently owned Gamma_h:(q,D,b,m)->(Delta,P,U,pairing/preparation) and its full constrained first jet; no fitted operator or metric jet."
+    "first_missing_arrow": "T0/T1: derive the remaining full-price first jet from the actual native preparation/scene/pairing law on (q,D,b,m), including every admitted link and matter direction. Use the proved zero two-tick contribution only at the stated fixed-golden involutive bases and only after class admission; keep heat, scene-return/delay and moving-pairing terms. Substitute the resulting actual covector into the complete joint constraint chart; preserve link equations and the transported metric readout before comparing all ten slots to rho0. Do not restart role/word searches or require an unrelated apparatus census. Quantitative transfer, native stationarity, own source/Ward, curved joint roots, soundness/recovery and original #310/#202/#317 terminals remain open."
   },
   "groups": [
     {
@@ -725,22 +725,22 @@
   },
   "active_execution_strategy": {
     "date": "2026-10-09",
-    "status": "EXECUTION_PLAN_WITH_FINITE_PREFLIGHT_NOT_SOURCE_OR_GR_PROOF",
+    "status": "EXECUTION_PLAN_WITH_SCOPED_T1_RESULT_AND_OPEN_NATIVE_FIRST_JET",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "e8794436d6922b58417ce1a1e8940a1789c0fc5a49329249d46f51626cab749f",
-    "control_input_head": "e5e6e30f961679a945ae8f96bf3c8108b0f96911",
-    "published_scientific_input_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
+    "plan_sha256": "ed7ee28fe78c05d544c649597eb264386edfce4db1f055ade2a6371d94ccc2da",
+    "control_input_head": "958c19b1e56009b56f26325a80d69e9838cd9cd3",
+    "published_scientific_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
     "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
     "output_certificate_stem": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source",
-    "outputs_are_planned_not_existing": true,
+    "outputs_are_planned_not_existing": false,
     "existing_execution_prs": [
       310,
       322
     ],
-    "first_missing_arrow": "Independently owned Gamma_h:(q,D,b,m)->(Delta,P,U,pairing/preparation) and its full constrained first jet; no fitted operator or metric jet.",
+    "first_missing_arrow": "T0/T1: derive the remaining full-price first jet from the actual native preparation/scene/pairing law on (q,D,b,m), including every admitted link and matter direction. Use the proved zero two-tick contribution only at the stated fixed-golden involutive bases and only after class admission; keep heat, scene-return/delay and moving-pairing terms. Substitute the resulting actual covector into the complete joint constraint chart; preserve link equations and the transported metric readout before comparing all ten slots to rho0. Do not restart role/word searches or require an unrelated apparatus census. Quantitative transfer, native stationarity, own source/Ward, curved joint roots, soundness/recovery and original #310/#202/#317 terminals remain open.",
     "intrinsic_object": "D(S_h o Gamma_h) restricted to ker DC_X; equivalently an ambient covector modulo im DC_X^*. A physical metric splitting requires its own readout/lift or genuine connection-shell theorem.",
     "metric_and_link_D_types_are_distinct": true,
     "price_to_use": "Existing full native action with two-tick feedback; its nonzero scalar price difference is not substituted for the full action or for a metric derivative.",
@@ -754,7 +754,8 @@
         "id": "T1",
         "prerequisite": "T0",
         "requirement": "Complete genuine constrained derivative retaining heat, feedback, moving pairing and archive determinant",
-        "status": "OPEN"
+        "status": "OPEN",
+        "partial_discharged": "Complete intrinsic cotangent normal form and scoped zero first variation of golden involutive two-step feedback; full native source still OPEN."
       },
       {
         "id": "T2",
@@ -778,7 +779,7 @@
     "preflight": {
       "checker": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
       "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-      "certificate_sha256": "efcdd6948248707adae1e972a424e999723b55929e4919f0e31bbf0f296f2cf3",
+      "certificate_sha256": "67ce30e3fdb029f0910a81bc8ca5db0f1a9c62ce79cf02b76101d35b19fc7d1e",
       "exact_controls": 292,
       "finite_star": {
         "sites": 5,
@@ -802,8 +803,22 @@
     "operation_admission_only_when_used_by_specific_native_preparation_or_variation": true,
     "longer_word_search_and_new_role_census_on_active_path": false,
     "archive_disappears_only_after_full_intrinsic_annihilator_proof": true,
-    "next_proof": "T0: bind the independently owned native state/operator map and its full first jet; use existing operator-source calculus immediately once bound.",
+    "next_proof": "T0/T1: derive the remaining full-price first jet from the actual native preparation/scene/pairing law on (q,D,b,m), including every admitted link and matter direction. Use the proved zero two-tick contribution only at the stated fixed-golden involutive bases and only after class admission; keep heat, scene-return/delay and moving-pairing terms. Substitute the resulting actual covector into the complete joint constraint chart; preserve link equations and the transported metric readout before comparing all ten slots to rho0. Do not restart role/word searches or require an unrelated apparatus census. Quantitative transfer, native stationarity, own source/Ward, curved joint roots, soundness/recovery and original #310/#202/#317 terminals remain open.",
     "acceptance_requires_same_packet_source_pins_replay_and_current_head_CI": true,
-    "closed_G0_G1_G2_G3_G4_nodes": []
+    "closed_G0_G1_G2_G3_G4_nodes": [],
+    "constrained_price_source": {
+      "input_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+      "discharged": "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected.",
+      "compiled_propositions": 33,
+      "transitive_d0_source_pins": 4,
+      "exact_controls": 528,
+      "false_ledgers_rejected": 12,
+      "progress": "T1_PARTIAL_INTRINSIC_NORMAL_FORM_AND_SCOPED_ZERO_FEEDBACK_CONTRIBUTION",
+      "native_Gamma_or_full_physical_source_derived": false,
+      "all_size_logdet_HasDerivAt_compiled": false,
+      "G0_T0_T1_T2_T3_fully_closed": false,
+      "parent_terminals_changed": false
+    }
   }
 }

@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`1583e18d8825181422406f8c10e7f359dbb6b5e6`, following
-`0f77c75796479241e4a8a4c9398dd166dfb1bed4`.
+`b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4`, following
+`0545eaf95ac3857b30c43f266311c80c1d751d01`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -16,8 +16,10 @@ price derivative, archive contribution and rho0 comparison. The deterministic
 finite preflight passes 292 controls: joint metric variations remain surjective,
 conormals vanish intrinsically, and a fixed two-tick price gap has zero jet.
 This planning calculation does not supply the native Gamma map, its source,
-stationarity, GR or any original parent terminal. The 256 imported scientific
-artifacts and their source SHA remain byte-identical and unchanged.
+stationarity, GR or any original parent terminal. The intake now contains
+264 source artifacts, including the scoped T1 result and the explicitly
+strategic core-to-stress note. All are byte-identical to the pinned source;
+255 earlier artifacts are unchanged, and the memo/execution pointer is updated.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
@@ -27,6 +29,21 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Intrinsic source and scoped two-tick feedback stationarity, 2026-10-09
+
+[The constrained-price proof](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md)
+computes the full joint cotangent chart and its conormal invariance. The actual
+recorded golden gate is bound to the generic full-archive theorem: the scalar
+two-tick feedback price has zero first variation at the stated involutive
+bases in the fixed-compression orthogonal class. The noninvolutive exception
+and off-shell link-lift ambiguity are retained. 33 printed Lean propositions,
+4 D0 source pins, 528 exact controls and 12 hostile ledger rejections pass.
+The general log-det differentiation is analytic, not a new kernel
+`HasDerivAt` theorem. T1 advances partially; native Gamma, full heat/pairing
+source, delay projection, rho0 comparison and every physical terminal remain.
+The next calculation is the remaining native full-price first jet, as stated
+in the current plan. No new action, selector, worker, branch or postulate.
 
 ## Faithful native archive/history carrier and complete declared flow boundary, 2026-10-09
 
