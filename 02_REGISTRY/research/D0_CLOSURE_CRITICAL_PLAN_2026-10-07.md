@@ -1098,3 +1098,30 @@ Delta/P/U, вариации и condensed refinement сохраняют 653 до�
 soundness/recovery и физические ограничения остаются. G0b/G0/GR/global
 и исходные terminals открыты. Current-head CI и CONTROL acceptance
 проверяются отдельно; self-merge отсутствует.
+
+
+## Собственный полный носитель аппарата и точная граница класса динамики
+
+Источник #310: `1583e18d8825181422406f8c10e7f359dbb6b5e6`, вход `0f77c75796479241e4a8a4c9398dd166dfb1bed4`.
+[Доказательство](A4D_NATIVE_ARCHIVE_APPARATUS_REALIZATION.md) связывает полный
+сохраняющий аппарат с уже имеющейся типизированной сценой и всеми 718
+историями. Все шесть пар архивов, реальные степени 24/22/20, обе ориентации
+и все 653 дополнительные направления памяти сохранены. Изометричный
+перенос сохраняет порядок и длину всех ранее построенных программ.
+Все совместные симметричные продолжения совместимы с аппаратом; их
+класс непуст. Полный указанный класс динамики вместе со всеми операциями
+активной роли, включая собственный p0, сохраняет старую чётность и не
+даёт золотое действие на старой памяти никакими словами или их пределами.
+Класс не исчерпывает допустимые native-операции; запись — явный кандидат
+вне него, допуск которого ещё нужно вывести.
+
+134 новых действительных утверждений Lean, 60 D0 pins, 353 точных проверок;
+24 false-scope и 16 false-exact подмен отвергнуты.
+G0b: bind an actually executable native recording/comparison or typed-role/WRec transition on the complete retained archive/history carrier, with its preparation, independent reference, address, decoder, full budget and internal schedule. The faithful carrier is now explicit; commutation, coordinate covariance and a passive condensed limit do not supply operation admission. The complete declared joint-flow palette plus all active-role controls has an exact all-word/limit old-parity obstruction; do not search longer words in that palette or promote it to whole-core completeness. Bind an admitted operation exiting the invariant, or prove the executable palette complete before extending the negative terminal. Preserve all even archive coefficients, 653 null histories, both readouts and both thermal-memory source defects. Then derive the actual own action/variations and joint Delta/P/U/physical-refinement law without a new action or source prescription. Own metric/matter source and Ward, quantitative metric contrast and native stationarity, curved joint roots, soundness/recovery and constraints remain required. Original #310/#202/#317 terminals and all parent obligations remain.
+
+CONTROL: 256 byte-identical artifacts, 479 artifact/input
+hash versions, 369 current input versions. Все 44 родительских
+контракта/статуса/зависимости и исходные terminals сохранены. Физический
+допуск, действие/вариации, источник/Ward, перенос/стационарность,
+искривлённые решения, soundness/recovery и ограничения остаются.
+Current-head CI и CONTROL acceptance проверяются отдельно; self-merge нет.

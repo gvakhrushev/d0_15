@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`0f77c75796479241e4a8a4c9398dd166dfb1bed4`, following
-`074192ae3c76eb6deb426d395f779e43678044a6`.
+`1583e18d8825181422406f8c10e7f359dbb6b5e6`, following
+`0f77c75796479241e4a8a4c9398dd166dfb1bed4`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -16,6 +16,27 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Faithful native archive/history carrier and complete declared flow boundary, 2026-10-09
+
+[The native archive apparatus proof](A4D_NATIVE_ARCHIVE_APPARATUS_REALIZATION.md)
+constructs an actual degree-normalized carrier on the existing typed scene
+and all native histories, for all six distinct ordered archive pairs.
+Full programme order and length are retained, as are every even archive
+coefficient, both history readouts and the entire actual 653 null archive.
+Compatibility with every complete declared joint symmetric history law is
+proved; that class is constructively nonempty. Its full flow palette plus
+all active-role matrices, including the owned p0 operation, has an all-word
+and limit old-parity obstruction. The palette is proper even within the
+compatibility algebra. It is not identified with all executable D0 operations.
+
+134 new actual types/axiom lists, 60 D0 source pins, 353 exact controls,
+24 false-scope and 16 false-exact rejections pass. Physical operation
+admission remains; a compatible representation does not derive it. Own
+action/variations, full budget/schedule, native source/Ward and gravitational
+transfer remain. Both thermal-memory source defects are retained.
+All 44 parent contracts and historical results remain. No new physical
+postulate, G0b/G0/GR/global or original terminal closure is installed.
 
 ## Complete addressed third-role memory actuation, 2026-10-09
 
@@ -323,7 +344,7 @@ is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 472 current artifact/input hash versions match (358 input versions).
+are unchanged. All 479 current artifact/input hash versions match (369 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
 The preceding source `e7ef84c6` passed CI `37829415818` and CONTROL
@@ -332,6 +353,9 @@ require their own CI and CONTROL review; prior-head successes do not
 substitute for current validation.
 
 ## Enumerated artifact slice
+
+* [Faithful native archive/history apparatus](A4D_NATIVE_ARCHIVE_APPARATUS_REALIZATION.md),
+  capsule, transcript, pinned receipt and exact checker/ledger.
 
 * [Complete addressed real memory actuation](A4D_NATIVE_ADDRESSED_THIRD_ROLE.md),
   standalone capsule, transcript, pinned source receipt and exact checker/ledger.
@@ -355,7 +379,7 @@ substitute for current validation.
   its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-250 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+256 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [Complete joint-readout spectral extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance),
   its standalone exact checker/ledger and compiled capsule, transcript and source receipt.
@@ -1234,5 +1258,11 @@ No self-merge.
 Current source `0f77c75796479241e4a8a4c9398dd166dfb1bed4` and this CONTROL intake require their own
 current-head CI and CONTROL acceptance. Source parent `074192ae` passed
 CI `37876220031`; CONTROL parent `d4b678a7` passed `37876669356`.
+Successful parent runs do not substitute for current validation.
+No self-merge.
+
+Current source `1583e18d8825181422406f8c10e7f359dbb6b5e6` and this CONTROL intake require their own
+current-head CI and CONTROL acceptance. Source parent `0f77c757` passed
+CI `37880152197`; CONTROL parent `d0aca3d3` passed `37880536254`.
 Successful parent runs do not substitute for current validation.
 No self-merge.

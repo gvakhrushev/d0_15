@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "966a1b5ed6d2e267c93f051b88f048aafb22a3f543fdbac0c84c95fb9471e4f1",
-      "source_blob": "8ab98fd4772c4ee7666906954c66fa05d584fefb"
+      "sha256": "6c0a4b55daa65363975187eca2701a4371b33f2966f13feba7dd15b004a948cd",
+      "source_blob": "27c9fa43166c66e319f717818a964b2f9c3d4c00"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
-      "sha256": "55c5fcc113a2c840310f8856431eaa33a14fdb1df6977bef6825ef2b99d6ca9f",
-      "source_blob": "a548a1ab542fc7834c965c29b3ca4d171cc4351e"
+      "sha256": "14484d08470835a23a8c718a768cce779786988bc20d8e5b7fbb413f2a7358d0",
+      "source_blob": "85c5f0c0f64fc433edae6629c9fde9d2c183f106"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
@@ -1251,6 +1251,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_results.json",
       "sha256": "905afe23e06eb7f4c453aadfd26c3a69be176403107311795aedb9de05daa527",
       "source_blob": "7f3dbb313336fc879c53b97cbef75b3fe6961484"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_ARCHIVE_APPARATUS_REALIZATION.md",
+      "sha256": "e98aafb0a64ab2973d26cf46ba7b17ca6263c680a5b268f1b77e86995abee712",
+      "source_blob": "e0d2b412e2b359bf76964add5ee7fb445f650762"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean",
+      "sha256": "079b464f33cf7f86c2879875e8c4c9abf1567d86f202e8d30838805221ebac73",
+      "source_blob": "a047d4e403398f034021e2c7eb9e49c175b6462a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_certificate.json",
+      "sha256": "0f8592d40a000f89b6f0b0b1ff064a3e010f7bfd404b7d4e6b9f78f2e4a478c5",
+      "source_blob": "cdcfe497f7f6b65cf3028716b10e6bebacdba039"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_check.py",
+      "sha256": "2c6db908249c1b4bf055501df11f7974564303a88fb9deb39cf559c867daf827",
+      "source_blob": "1f39683f691139ced7c9620ded0fe408dd4ad6e0"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_output.txt",
+      "sha256": "144c065ae1ef51c2529ff7be5f7b9d2530f7c9d257ca15b77dfec1f71787a0d1",
+      "source_blob": "7624503c6850a531e56dc9b9c87d1d96ab449637"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_results.json",
+      "sha256": "9623b7c587704805b422532489e9ecfa31b86a14e53be350ab605bdbf64d75ef",
+      "source_blob": "f1a771d3614c1fe1881031fe46c7ac660aaf8281"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1259,7 +1289,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "074192ae3c76eb6deb426d395f779e43678044a6",
+  "previous_source_head": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1325,11 +1355,12 @@
     "The complete generated one-way class permits every active orthogonal operation and every controlled additive recording. Every word preserves the old-record translation charge; actual golden active G, recording CNOT and fullStep are bound. All-n raw first-unequal cross sums give a fixed positive p0 gap between the complete fresh golden record and each of all 33 actual common-record targets. Every commuting complete preparation has full norm error at least Delta/2, about 0.03658, with no word-length or record-size factor. Every faithful complete isometric extension keeps that floor; vanishing-error sequences are excluded. A successful whole actuation instead needs commutator norm at least Delta-2*epsilon. The actual first-odd route and coherent old-record G break the probe. 62 new propositions, 12 transitive D0 pins, 296 exact controls. The X probe is a mathematical norm witness, not a newly admitted physical detector. This is a fully described restricted controller obstruction, not whole-core exhaustion or a refutation of the broader addressed compiler. Physical coherent/two-way archive actuation, decoder/budget/schedule, the joint heat/tangent/refinement law and GR remain open. The actual checker rejects all 22 false-scope and 13 false-exact ledgers.",
     "The owned verification contract forces different internal outcomes for a reference record and every distinct record. Every complete isometric realization with an old probe commuting with the new outcome observable has ||(US-SU)x||^2=2 on a unit input and operator commutator norm >=sqrt(2), with robust bound 2-(e0+e1)<=||US-SU||^2. Any complete intertwining refinement retains the floor. The minimal retaining basis-permutation comparison is uniquely the existing FiniteProtocolClock.register, bound to both actual four-coordinate role placements. Three two-direction registrations exchange old/active roles and transfer the same owned p0 golden gate to old memory. The entire declared four-coordinate retaining real orthogonal comparison class is exactly 16 signed completions; public truth alone does not select coherent phases. All 16 retain commutator-input mass 2 at every literal normalized golden cylinder depth. 58 new kernel propositions, 29 transitive D0 source pins, 239 exact controls; 25 false-scope and 13 false-exact ledgers rejected. The operator/record/output representation is an explicit application input, not physical admission inferred from a function. No whole-core or GR closure. The actual checker rejects 25 false-scope and 13 false-exact ledgers.",
     "The complete declared four-real-coordinate retaining recording/comparison family has 16 forward and 16 reverse coherent completions, hence 256 pairs. All 192 pairs with at least one orientation-reversing primitive have a uniform old-memory transfer using the same owned golden angle in 13 forward operations, retaining arbitrary workspace states. Both proper primitives in the other 64 pairs normalize the actual owned left Q8 axes; every Q8 operation and every normalized active rotation preserves the same finite frame. A generic kernel word induction and closed-set limit theorem exclude the full old-memory golden operator and any vanishing-error approximation by arbitrarily long words in that entire declared palette. Independent own-angle references distinguish orientations; self-preparation by the tested gate erases the distinction and is rejected as calibration. Full programme error is preserved at all literal normalized golden depths. 59 new kernel propositions, 37 D0 source pins, 2409 exact controls; 24 false-scope and 16 false-exact ledgers rejected. This operator obstruction does not exhaust D0, larger addressed processors or all state preparations; no physical admission or GR closure.",
-    "The complete two-address minimal real retaining recording/comparison family has 65536 independently phase-completed realizations. Generic full-workspace generator identities and a forward-only inverse compiler give uniform old-memory actuation with the same owned active angle, retaining orientation, in at most 29 primitives. All 256 common-hardware pairs need only 13 or 21 primitives. The proper sector has a common five-step route for all 512 independent proper triples. No blank helper is needed: active and additional roles are restored for every correlated eight-coordinate state. All retained golden depths intertwine the full programme and preserve its complete error mass. The conditional constant factor keeps the prior phi resource inequality, without native decoder/address/budget/schedule admission. The prior four-coordinate Q8 all-word and limit obstruction remains valid in its palette; actively addressed copies extend that palette. 95 new kernel propositions, 37 D0 source pins, 65782 exact controls; 28 false-scope and 16 false-exact ledgers rejected. Coherent representation and physical permission to address the operations are application inputs, not inferred from Boolean truth or the passive condensed limit; no G0b, GR or whole-core closure."
+    "The complete two-address minimal real retaining recording/comparison family has 65536 independently phase-completed realizations. Generic full-workspace generator identities and a forward-only inverse compiler give uniform old-memory actuation with the same owned active angle, retaining orientation, in at most 29 primitives. All 256 common-hardware pairs need only 13 or 21 primitives. The proper sector has a common five-step route for all 512 independent proper triples. No blank helper is needed: active and additional roles are restored for every correlated eight-coordinate state. All retained golden depths intertwine the full programme and preserve its complete error mass. The conditional constant factor keeps the prior phi resource inequality, without native decoder/address/budget/schedule admission. The prior four-coordinate Q8 all-word and limit obstruction remains valid in its palette; actively addressed copies extend that palette. 95 new kernel propositions, 37 D0 source pins, 65782 exact controls; 28 false-scope and 16 false-exact ledgers rejected. Coherent representation and physical permission to address the operations are application inputs, not inferred from Boolean truth or the passive condensed limit; no G0b, GR or whole-core closure.",
+    "The full retained addressed apparatus now has a concrete faithful degree-normalized carrier inside the existing typed 33 scene and all 718 native histories, for all six ordered distinct archive pairs. The sixteen-dimensional apparatus support retains a 702-dimensional complement, including the entire actual 653 joint-readout null archive. All three archives keep their even memory; no bare regular archive is replaced by pure spin blocks. Full operations preserve composition, transpose and orthogonality, commute with owned projection/reversal and every complete declared joint symmetric history law, and transport all prior addressed programmes with at most 29 operations. That law class is constructively nonempty. Its entire flow palette, enlarged by all active-role real operations including the actual p0 gate, preserves old parity; no word or matrix limit actuates nontrivial old memory. This palette is proper within the compatibility algebra and is not asserted to exhaust native executable operations. 134 new kernel propositions, 60 actual D0 pins, 353 exact controls; 24 false-scope and 16 false-exact ledgers rejected. Physical operation admission, action/variations and native gravitational transfer remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
+  "source_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "074192ae3c76eb6deb426d395f779e43678044a6",
+  "source_parent": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
   "source_pr": 310
 }
