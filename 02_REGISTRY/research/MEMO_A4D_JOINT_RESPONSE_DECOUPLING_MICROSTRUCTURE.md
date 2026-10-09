@@ -14,18 +14,21 @@ components and conormal independence. This is T1 partial progress: the actual
 remaining heat/scene/pairing first jet and its native admission remain T0.
 Neither the full bootstrap source nor the original parent terminal is closed.
 The [shared-scene source continuation](A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md)
-now couples normalized scene heat and full one-step history feedback through the
-same conductance/degree jet. At the canonical unit scene its first variation
-on all 359 edge directions is one explicit kappa covector. The stationary
-parameter pairs have two branches; the upper one has 296 independent
-negative second-variation directions and cannot minimize the price in that
-weight class. The 21 compiled propositions, scalar HasDerivAt proofs and
-2496 exact controls do not establish physical admission of the conductances,
-a lower-branch minimum, a native pullback or a metric source.
-The next native calculation is the contraction of the own admitted
-conductance first jet on the full joint tangent, with all other action terms
-and physical readouts preserved. A new independent operator-jet or carrier
-catalogue does not discharge this obligation.
+now binds the actual dense binary scene passport to its price. Every member
+of that complete named contract has the same normalized scene heat/full
+one-step history price at fixed beta/z, so its own price pullback and finite
+contrasts are zero. This consumes actual reconstruction predicates, not
+only a frozen matrix, and does not exhaust D0 or derive the physical action.
+The all-359-edge kappa source and 296-direction upper-branch obstruction
+remain valid for the declared conductance extension; its nonzero jets
+leave binary incidence in the actual vertex coordinates. They cannot be
+promoted to native variations of the passport contract.
+27 compiled propositions, 2 printed primary-owner propositions, 54 input
+pins and 2894 exact controls classify this branch. The next calculation is
+one actually owned price-changing state/preparation/refinement arrow of
+the full action on the complete joint tangent, with all other action terms
+and physical metric/link/matter readouts retained. Conductance or role/word
+catalogues within the closed branch do not discharge that obligation.
 The [8 October plan](D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md) below is history.
 The [history/response proof](A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md) builds
 the canonical operational quotient and an actual realized response tower,

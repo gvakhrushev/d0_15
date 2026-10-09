@@ -1,3 +1,4 @@
+import D0.Synthesis.DenseOperatorSceneRigidity
 import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.LinearAlgebra.Matrix.SchurComplement
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
@@ -218,10 +219,89 @@ theorem upper_branch_balanced_second_variation_negative (beta r z energy : ℝ)
   have hc := dark_heat_coefficient_lt_one beta r
   exact mul_neg_of_neg_of_pos (by linarith) he
 
+/-- Binary incidence is a constraint on a genuine curve, not a frozen degree assumption. -/
+theorem binary_curve_derivative_zero (f : ℝ → ℝ) (d t : ℝ)
+    (hd : HasDerivAt f d t) (hbinary : ∀ s, f s=0 ∨ f s=1) : d=0 := by
+  have hz : (fun s => f s*f s-f s)=(fun _ : ℝ => (0:ℝ)) := by
+    funext s
+    rcases hbinary s with h | h <;> rw [h] <;> norm_num
+  have hp : HasDerivAt (fun s => f s*f s-f s) (d*f t+f t*d-d) t :=
+    HasDerivAt.sub (HasDerivAt.mul hd hd) hd
+  rw [hz] at hp
+  have he := hp.unique (hasDerivAt_const t (0:ℝ))
+  rcases hbinary t with h | h <;> rw [h] at he <;> norm_num at he <;> linarith
+
+variable {v w : Type*} [Fintype v] [Fintype w] [DecidableEq v] [DecidableEq w]
+
+theorem binary_matrix_jet_zero (A : ℝ → Matrix v v ℝ) (E : Matrix v v ℝ) (t : ℝ)
+    (hd : ∀ i j, HasDerivAt (fun s => A s i j) (E i j) t)
+    (hbinary : ∀ s i j, A s i j=0 ∨ A s i j=1) : E=0 := by
+  ext i j
+  exact binary_curve_derivative_zero (fun s => A s i j) (E i j) t
+    (hd i j) (fun s => hbinary s i j)
+
+def normalizedTransport (A : Matrix v v ℚ) : Matrix v v ℚ :=
+  fun i j => (∑ k, A i k)⁻¹*A i j
+
+theorem normalized_transport_relabel (A : Matrix v v ℚ) (e : v ≃ w) :
+    normalizedTransport (Matrix.reindex e e A)=Matrix.reindex e e (normalizedTransport A) := by
+  ext i j
+  change (∑ k : w, A (e.symm i) (e.symm k))⁻¹*A (e.symm i) (e.symm j) =
+    (∑ k : v, A (e.symm i) k)⁻¹*A (e.symm i) (e.symm j)
+  have hs : (∑ k : w, A (e.symm i) (e.symm k))=∑ k : v, A (e.symm i) k :=
+    Equiv.sum_comp e.symm (fun k => A (e.symm i) k)
+  rw [hs]
+
+def partitionKappa (a b c : ℕ) : ℝ :=
+  2*(a:ℝ)*b*c/(((a:ℝ)+b)*((a:ℝ)+c)*((b:ℝ)+c))
+
+theorem recovered_partition_kappa_constant (a b c : ℕ)
+    (hm : ({a,b,c}:Multiset ℕ)={9,11,13}) : partitionKappa a b c=39/160 := by
+  have hsN : a+b+c=33 := by simpa [add_assoc] using congrArg Multiset.sum hm
+  have hpN : a*b*c=1287 := by simpa [mul_assoc] using congrArg Multiset.prod hm
+  have hs : (a:ℝ)+b+c=33 := by exact_mod_cast hsN
+  have hp : (a:ℝ)*b*c=1287 := by exact_mod_cast hpN
+  have hd := congrArg (fun m : Multiset ℕ => (m.map (fun n : ℕ => (33:ℝ)-(n:ℝ))).prod) hm
+  norm_num at hd
+  have ha : (33:ℝ)-a=b+c := by linarith
+  have hb : (33:ℝ)-b=a+c := by linarith
+  have hc : (33:ℝ)-c=a+b := by linarith
+  have hden : ((a:ℝ)+b)*((a:ℝ)+c)*((b:ℝ)+c)=10560 := by
+    calc
+      _ = ((33:ℝ)-a)*(33-b)*(33-c) := by rw [ha,hb,hc]; ring
+      _ = 10560 := by nlinarith [hd]
+  unfold partitionKappa
+  rw [show 2*(a:ℝ)*b*c=2*((a:ℝ)*b*c) by ring,hp,hden]
+  norm_num
+
+theorem dense_contract_has_canonical_kappa (A : Matrix v v ℚ) (hA : A.IsAdjMatrix)
+    (hr : A.rank≤3) (hV : Fintype.card v=33) (h2 : Matrix.trace (A*A)=718) :
+    ∃ z : v → Fin 3, Function.Surjective z ∧
+      (∀ i j, A i j=if z i=z j then 0 else 1) ∧
+      partitionKappa (D0.Synthesis.OperatorSceneReconstruction.fibreSize z 0)
+        (D0.Synthesis.OperatorSceneReconstruction.fibreSize z 1)
+        (D0.Synthesis.OperatorSceneReconstruction.fibreSize z 2)=39/160 := by
+  obtain ⟨z,hs,hz,hm,_,_⟩ :=
+    D0.Synthesis.DenseOperatorSceneRigidity.dense_operator_recovers_scene A hA hr hV h2
+  exact ⟨z,hs,hz,recovered_partition_kappa_constant _ _ _ hm⟩
+
+
+/-- No smoothness of the reconstructed labels is assumed: the scalar price
+is constant on every member of the complete owned passport class. -/
+theorem passport_scene_price_source_zero (a b c : ℝ → ℕ) (beta z t : ℝ)
+    (hm : ∀ s, ({a s,b s,c s}:Multiset ℕ)={9,11,13}) :
+    HasDerivAt (fun s => sceneWholePrice beta z (partitionKappa (a s) (b s) (c s))) 0 t := by
+  have hf : (fun s => sceneWholePrice beta z (partitionKappa (a s) (b s) (c s))) =
+      (fun _ : ℝ => sceneWholePrice beta z (39/160)) := by
+    funext s
+    rw [recovered_partition_kappa_constant _ _ _ (hm s)]
+  rw [hf]
+  exact hasDerivAt_const t _
+
 end
 end D0.Research.NativeScenePriceSource
 
--- Inspect actual propositions and their transitive kernel dependencies.
+-- Inspect actual propositions and transitive kernel dependencies.
 #check D0.Research.NativeScenePriceSource.normalized_transport_jet
 #print axioms D0.Research.NativeScenePriceSource.normalized_transport_jet
 #check D0.Research.NativeScenePriceSource.normalized_jet_keeps_unit
@@ -264,3 +344,19 @@ end D0.Research.NativeScenePriceSource
 #print axioms D0.Research.NativeScenePriceSource.dark_heat_coefficient_lt_one
 #check D0.Research.NativeScenePriceSource.upper_branch_balanced_second_variation_negative
 #print axioms D0.Research.NativeScenePriceSource.upper_branch_balanced_second_variation_negative
+#check D0.Research.NativeScenePriceSource.binary_curve_derivative_zero
+#print axioms D0.Research.NativeScenePriceSource.binary_curve_derivative_zero
+#check D0.Research.NativeScenePriceSource.binary_matrix_jet_zero
+#print axioms D0.Research.NativeScenePriceSource.binary_matrix_jet_zero
+#check D0.Research.NativeScenePriceSource.normalized_transport_relabel
+#print axioms D0.Research.NativeScenePriceSource.normalized_transport_relabel
+#check D0.Research.NativeScenePriceSource.recovered_partition_kappa_constant
+#print axioms D0.Research.NativeScenePriceSource.recovered_partition_kappa_constant
+#check D0.Research.NativeScenePriceSource.dense_contract_has_canonical_kappa
+#print axioms D0.Research.NativeScenePriceSource.dense_contract_has_canonical_kappa
+#check D0.Research.NativeScenePriceSource.passport_scene_price_source_zero
+#print axioms D0.Research.NativeScenePriceSource.passport_scene_price_source_zero
+#check D0.Synthesis.DenseOperatorSceneRigidity.dense_operator_recovers_scene
+#print axioms D0.Synthesis.DenseOperatorSceneRigidity.dense_operator_recovers_scene
+#check D0.Synthesis.DenseOperatorSceneRigidity.scene_passport_inhabited
+#print axioms D0.Synthesis.DenseOperatorSceneRigidity.scene_passport_inhabited

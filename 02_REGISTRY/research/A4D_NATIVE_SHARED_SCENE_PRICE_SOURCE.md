@@ -1,12 +1,22 @@
-# Native price: the shared scene first jet and the least-price test
+# Native price: shared scene jet and the owned passport boundary
 
 Research continuation of #310, input SOURCE
 `b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4`; main
 `fa2b04b9c8aae5a0b8470322d6091712ce56567a`. This is a companion to
 [the intrinsic constrained-source calculation](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md),
-within the same execution. No parent terminal or public claim changes.
+within the same execution. The binary-passport follow-up uses local input
+`d88c5d3bb046ccf3eded006587007e68b5754acf`. No parent terminal or public
+claim changes.
 
 ## 1. Result and exact scope
+
+The actual `DenseOperatorSceneRigidity` contract gives a decisive admission
+boundary: **every binary scene satisfying dimension 33, rank at most 3,
+and quadratic moment 718 has the same normalized heat/return price** at
+fixed beta and z. Its metric/link/matter pullback is zero, however a state
+map chooses or labels those scenes. Section 8 proves this for the complete
+named contract, using the actual reconstruction theorem, rather than only
+one frozen matrix. It does not assert that this is every D0 action sector.
 
 At the existing unweighted `K(9,11,13)` scene, the first derivative of the
 normalized scene heat price **plus the full-history return price** factors
@@ -290,20 +300,120 @@ vanishes for every such pullback; this alone is neither the whole native
 on-shell system nor an Einstein equation.
 
 The next task is therefore a specific admission/pullback theorem for (11),
-or a complete obstruction for the actual native interface. It is no longer
+or a complete obstruction for the actual native interface. Section 8 now
+settles its binary-passport branch: the price is constant there. It is no longer
 necessary to reconstruct independent operator jets merely to evaluate
 this scalar contribution at this base. Completeness of native variations,
 other action terms, refinement, physical metric readout, rho0 and all
 G0--G4/parent #310/#202/#317 terminals remain open.
 
-## 8. Reproduction and proof boundaries
+## 8. The actual binary scene passport excludes those conductance jets
+
+The primary owner is `D0.Synthesis.DenseOperatorSceneRigidity`.
+Its actual proposition `dense_operator_recovers_scene` assumes exactly
+
+\[
+A\text{ is a simple binary adjacency matrix},\quad
+|V|=33,\quad\operatorname{rank}A\le3,\quad
+\operatorname{Tr}(A^2)=718. \tag{12}
+\]
+
+It derives a surjective three-zone labeling, complete adjacency between
+different zones, part-size multiset `{9,11,13}`, equality of adjacency rows
+iff equal zones, and the cubic moment 7722. The separate
+`scene_passport_inhabited` proves that the literal `D0.Claims.Adj31`
+satisfies (12). Both propositions and their transitive axioms are printed
+by this capsule. The theorem is not inferred from a module comment and
+does not derive its dimension/rank/moment assumptions from M1.
+
+For a complete tripartite scene with positive parts `a,b,c`, normalized
+transport annihilates the within-zone balanced subspace of dimension
+`a+b+c-3`. On zone constants its matrix is
+
+\[
+T_q=\begin{pmatrix}
+0&b/(b+c)&c/(b+c)\\
+a/(a+c)&0&c/(a+c)\\
+a/(a+b)&b/(a+b)&0
+\end{pmatrix}.
+\]
+
+Its row sums are one, its trace is zero and
+
+\[
+\kappa=\det T_q=\frac{2abc}{(a+b)(a+c)(b+c)},\qquad
+\chi_{T_q}(t)=(t-1)(t^2+t+\kappa). \tag{13}
+\]
+
+The product of the recovered part sizes is 1287. Their complementary
+degree product is `(33-a)(33-b)(33-c)=24*22*20=10560`.
+Consequently (13) is **39/160 on every scene satisfying (12)**.
+The capsule proves this by symmetric multiset identities and applies it
+directly to the actual reconstruction theorem. A generic normalization
+reindexing theorem ensures that moving vertex labels does not freeze or
+misidentify the degree matrix. The full normalized spectrum is then
+`0` thirty times, `1`, and `-1/2 +/- sqrt(10)/40`.
+
+By the full-history identity (1), its ordinary feedback determinant is
+`(1-z)^30 Q_z(39/160)`. The same spectrum determines its heat trace.
+Thus the full declared scene price is always
+
+\[
+\mathcal B_0(\beta,z)=\beta^{-1}\log Z_\beta(39/160)
+ -30\log(1-z)-\log Q_z(39/160). \tag{14}
+\]
+
+This all-scene matrix spectral/price argument is analytic, with the
+actual finite recognition and symmetric kappa calculation compiled.
+The genuine scalar `passport_scene_price_source_zero` is additionally
+compiled. It needs no continuity of the reconstructed zone labels.
+
+For any background state map whose scene satisfies (12) at every prepared
+state, (14) gives exactly zero price difference between any two such states.
+All genuine derivatives and finite centered contrasts are zero. This
+includes all admitted joint `(q,D,b,m)` directions and any raw or
+transported metric readout, provided this declared price has no additional
+state-varying arguments. The positive value of the price does not change
+that result. No off-constraint extension or deleted archive is used.
+
+There is a second, local admission check. A genuine real scalar curve in
+`{0,1}` obeys `f^2-f=0`; differentiation gives `(2f-1)f'=0`, hence `f'=0`.
+The scalar and matrix statements are compiled. In particular every nonzero
+one of the 359 conductance jets from sections 3--6 leaves binary adjacency.
+They remain useful calculus for that larger interface but are not native
+variations of (12). The global constant-price argument is stronger: it also
+covers discontinuous changes of the scene or its labeling within (12).
+This admission statement uses the actual vertex-incidence coordinates.
+A change of vector-space basis can give a nonbinary matrix for the same
+scene; transforming its pairing and readouts along with it preserves the
+price and does not create new conductance variations.
+
+**Closed branch, open parent.** The zero price covector/contrast for the
+whole binary passport class is a scoped terminal, not an exhaustion of the
+core. It cannot produce a nonzero metric covector in that class. An action
+whose sole state dependence is (14) cannot satisfy an Einstein contrast law
+on a prepared class with a nonzero target contrast; this implication does
+not assert that such a physical preparation or total-action identification
+has been derived.
+
+Changing beta/z, graph passport, full retained process, full-history heat,
+preparation, or another action term is outside this fixed route and requires
+an actual owner and native variation/refinement law. A compatible nonbinary
+weight formula is not that owner. Neither a new source law nor a selector is
+introduced here. The next native task is the actual **price-changing**
+state/preparation/interlevel arrow of the full action; the fixed binary
+scene contribution is now removed from its list of uncomputed derivatives.
+
+## 9. Reproduction and proof boundaries
 
 The companion capsule and exact checker have common stem
 `certificates/a4d_native_shared_scene_price_source`.
-The receipt records 21 resolved Lean declarations, actual printed
+The receipt records 27 resolved Lean declarations, actual printed
 propositions and transitive kernel axioms. It also pins the toolchain,
 prior packets and relevant primary source files. The generic capsule
-does not import a D0 owner as an unused appearance of specialization.
+calls the actual dense reconstruction owner with its real predicates and
+prints the two primary owner propositions separately; it does not use an
+unused D0 import as an appearance of specialization.
 
 The exact checker reconstructs the canonical 33-vertex adjacency,
 all 359 first jets, the 296-dimensional balanced space, scalar identities
