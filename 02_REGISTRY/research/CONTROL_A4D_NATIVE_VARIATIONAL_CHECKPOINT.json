@@ -1362,5 +1362,19 @@
   "source_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
-  "source_pr": 310
+  "source_pr": 310,
+  "execution_strategy_revision": {
+    "date": "2026-10-09",
+    "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
+    "plan_sha256": "e8794436d6922b58417ce1a1e8940a1789c0fc5a49329249d46f51626cab749f",
+    "machine_contract": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
+    "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
+    "finite_preflight_exact_controls": 292,
+    "scientific_artifact_intake_and_source_SHA_unchanged": true,
+    "scientific_source_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
+    "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+    "native_operator_map_or_source_claim_promoted": false,
+    "parent_graph_and_terminals_unchanged": true,
+    "no_new_task_branch_action_selector_postulate_or_self_merge": true
+  }
 }

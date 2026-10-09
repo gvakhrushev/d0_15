@@ -8,6 +8,17 @@ Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
+
+Current execution order, 2026-10-09:
+[the constrained-price tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
+focuses one packet on the native state/operator first jet, complete intrinsic
+price derivative, archive contribution and rho0 comparison. The deterministic
+finite preflight passes 292 controls: joint metric variations remain surjective,
+conormals vanish intrinsically, and a fixed two-tick price gap has zero jet.
+This planning calculation does not supply the native Gamma map, its source,
+stationarity, GR or any original parent terminal. The 256 imported scientific
+artifacts and their source SHA remain byte-identical and unchanged.
+
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
 next research decision to the complete native-system/derivability packet

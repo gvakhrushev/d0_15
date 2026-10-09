@@ -64,7 +64,10 @@
       "Failure to find a definition becomes a no-go theorem.",
       "Observable parameter nonuniqueness is asserted from action parameter nonuniqueness alone.",
       "A new physical action, selector or source prescription is silently added."
-    ]
+    ],
+    "active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
+    "active_plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
+    "first_missing_arrow": "Independently owned Gamma_h:(q,D,b,m)->(Delta,P,U,pairing/preparation) and its full constrained first jet; no fitted operator or metric jet."
   },
   "groups": [
     {
@@ -719,5 +722,88 @@
       "verified_artifact_input_hash_versions": 479,
       "verified_current_input_hash_versions": 369
     }
+  },
+  "active_execution_strategy": {
+    "date": "2026-10-09",
+    "status": "EXECUTION_PLAN_WITH_FINITE_PREFLIGHT_NOT_SOURCE_OR_GR_PROOF",
+    "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
+    "plan_sha256": "e8794436d6922b58417ce1a1e8940a1789c0fc5a49329249d46f51626cab749f",
+    "control_input_head": "e5e6e30f961679a945ae8f96bf3c8108b0f96911",
+    "published_scientific_input_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
+    "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+    "strategy_document_is_not_a_source_theorem": true,
+    "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
+    "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+    "output_certificate_stem": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source",
+    "outputs_are_planned_not_existing": true,
+    "existing_execution_prs": [
+      310,
+      322
+    ],
+    "first_missing_arrow": "Independently owned Gamma_h:(q,D,b,m)->(Delta,P,U,pairing/preparation) and its full constrained first jet; no fitted operator or metric jet.",
+    "intrinsic_object": "D(S_h o Gamma_h) restricted to ker DC_X; equivalently an ambient covector modulo im DC_X^*. A physical metric splitting requires its own readout/lift or genuine connection-shell theorem.",
+    "metric_and_link_D_types_are_distinct": true,
+    "price_to_use": "Existing full native action with two-tick feedback; its nonzero scalar price difference is not substituted for the full action or for a metric derivative.",
+    "stages": [
+      {
+        "id": "T0",
+        "requirement": "Actual complete state/action/operator map, allowed curves, first jet, heat carrier, pairing and existing parameter laws",
+        "status": "OPEN"
+      },
+      {
+        "id": "T1",
+        "prerequisite": "T0",
+        "requirement": "Complete genuine constrained derivative retaining heat, feedback, moving pairing and archive determinant",
+        "status": "OPEN"
+      },
+      {
+        "id": "T2",
+        "prerequisite": "T1",
+        "requirement": "All delay contributions and actual physical metric covector; link/matter directions and raw/transported readout retained",
+        "status": "OPEN"
+      },
+      {
+        "id": "T3",
+        "prerequisite": "T2",
+        "requirement": "All ten packed slots, fixed nonzero calibration and trace/traceless comparison with rho0 plus refinement bounds",
+        "status": "OPEN"
+      }
+    ],
+    "exhaustive_possible_dispositions": [
+      "proved_native_rho0_arrow_continue_all_G1_G4",
+      "proved_zero_traceless_response_name_trace_module_in_complete_scope",
+      "proved_other_nonzero_traceless_response_classify_physical_module",
+      "proved_exact_interface_derivability_boundary_or_one_unproved_native_first_jet"
+    ],
+    "preflight": {
+      "checker": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
+      "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
+      "certificate_sha256": "efcdd6948248707adae1e972a424e999723b55929e4919f0e31bbf0f296f2cf3",
+      "exact_controls": 292,
+      "finite_star": {
+        "sites": 5,
+        "links": 4,
+        "symmetric_metric_slots": 50,
+        "connection_directions": 24,
+        "geometric_ambient_slots": 114,
+        "constraint_rank": 40,
+        "geometric_tangent_rank": 74,
+        "metric_projection_rank": 50,
+        "tracefree_metric_rank": 45,
+        "retained_affine_and_matter_spectators": 96,
+        "complete_ambient_slots": 210,
+        "complete_tangent_dimension": 170
+      },
+      "native_operator_map_derived": false,
+      "native_source_derived": false,
+      "source_equals_rho0": false
+    },
+    "conditional_calculus_is_not_T0": true,
+    "operation_admission_only_when_used_by_specific_native_preparation_or_variation": true,
+    "longer_word_search_and_new_role_census_on_active_path": false,
+    "archive_disappears_only_after_full_intrinsic_annihilator_proof": true,
+    "next_proof": "T0: bind the independently owned native state/operator map and its full first jet; use existing operator-source calculus immediately once bound.",
+    "acceptance_requires_same_packet_source_pins_replay_and_current_head_CI": true,
+    "closed_G0_G1_G2_G3_G4_nodes": []
   }
 }
