@@ -1004,3 +1004,32 @@ source/Ward, contrast/stationarity, curved roots, soundness/recovery and
 constraints remain. All 44 parent contracts and original terminals are
 preserved. No action, selector, temperature, source/coupling prescription
 or physical postulate is introduced; G0b/G0/GR/global closure remains open.
+
+
+## Complete addressed third-role memory actuation — 2026-10-09
+
+[The addressed third-role proof](A4D_NATIVE_ADDRESSED_THIRD_ROLE.md)
+classifies all 65536 independently completed two-address retaining real
+realizations. Generic complete generator identities and a forward-only
+compiler transfer the owned active angle to old memory, up to retained
+orientation, in at most 29 primitives. Common hardware needs only 13 or
+21. The additional role is restored for every full correlated state;
+a blank helper, reset and discarded archive are unnecessary for the
+operator identity. Every retained golden depth intertwines the full
+programme and preserves its error. The old minimal Q8 all-word/limit
+obstruction remains valid in its smaller palette.
+
+95 new actual propositions, 37 D0 pins and 65782 exact controls
+pass; 28 false-scope and 16 false-exact ledgers are rejected.
+The physical representation/application and permission to address the
+existing native operations remain G0b inputs. Functional Boolean truth
+and the passive supplied-compatible-operator condensed theorem do not
+provide them. Native preparation/reference, decoder/address resources,
+full budget and internal schedule remain required. The conditional phi
+resource inequality is not a physical runtime-admission theorem.
+
+G0b: derive the native representation/application of the complete retained apparatus, with its existing coherent roles and actual operations on the original and additional addresses. The declared addressed real operator family is now constructive for all coherent phase completions; the remaining consumer is physical admission, not another word search in the old minimal Q8 palette. Bind native preparation and independent orientation reference, decoder/address resources, full action/runtime budget and a complete internal schedule. Functional truth and a supplied compatible-operator limit do not derive those inputs. Preserve the scoped old Q8 result and all larger/complex apparatus exceptions. Then derive the joint Delta/P/U law, full variations and condensed refinement with all 653 complementary histories and both thermal-memory source defects. Own metric/matter source and Ward identity, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints remain required. No new action, phase selector, angle, qubit, temperature, coupling/source law or physical postulate is introduced.
+
+All 44 parent contracts/statuses/dependencies and historical results are
+preserved. G0b/G0/GR/global and the original #310/#202/#317 terminals stay
+open. No new physical postulate is installed.

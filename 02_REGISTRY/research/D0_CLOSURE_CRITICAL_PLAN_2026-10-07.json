@@ -9,7 +9,7 @@
   "input_control_head": "0d85cf1998dfab7048fd2abce70acbcf1fb7867b",
   "graph_input": {
     "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-    "sha256": "3f8d459288345fa1eb7d3574a06651bfbf51cf4ff4340f541410007fcff34e19",
+    "sha256": "966a1b5ed6d2e267c93f051b88f048aafb22a3f543fdbac0c84c95fb9471e4f1",
     "global_census": false
   },
   "history_diagnosis": {
@@ -269,7 +269,7 @@
       "result": "Every locally nonnegative homogeneous real field action of positive degree, with the actual independent radial field variation admitted, has zero genuine background source at every full field root. The complete positive quadratic first-jet class annihilates kernel-kernel compression, retains nonzero kernel-to-range blocks and has an explicit compiled inverse. The complete second-jet class has the exact Schur positivity condition and a constructive all-rank analytic realization, permitting rank changes. The literal squaredFluxEnergy owner has the compiled completed-square and source result for alpha at least one-quarter on locally symmetric curves, including nonlinear moving weights. Nonzero matter kernels are retained. Approximate roots require actual uniform action jet bounds; an everywhere positive bounded rational family has residual 2h^2 and source one. All ten actual centered-metric normalizations and 24 Lorentz link variations pass on the joint raw/exterior carrier, as supplied test bindings rather than selected physics. Eighteen compiled declarations, 40 transitive native pins and 114 exact controls preserve indefinite, nonhomogeneous and constrained exceptions, the own-action/refinement/physical Ward obligations, G0 and all original parent terminals. The same family has normalized finite contrast tending to zero at epsilon=h^(1/3) while its point source remains one; no limit interchange follows from value bounds. Twenty-two false-scope ledger mutations are rejected. G0 and every original terminal remain open.",
       "g0_closed": false
     },
-    "next_proof_packet": "G0b: identify and derive the native representation/admission of the complete retained apparatus, its already-owned coherent roles and actually addressed operations. Keep phases in both recording directions. For the proper sector, either construct from an owned additional operation/role a complete programme that exits the proved four-coordinate Q8 normalizer, or prove palette completeness for the intended apparatus; do not import a new qubit, phase selector or desired old-memory gate. Bind preparations, independent references, decoder/address resources, full native budget and internal schedule. Then own the joint Delta/P/U, full variations and condensed refinement, retaining the 653 complementary histories and both thermal-memory source defects. Own metric/matter source/Ward, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints remain required. No action, selector, temperature, coupling/source law or physical postulate is added.",
+    "next_proof_packet": "G0b: derive the native representation/application of the complete retained apparatus, with its existing coherent roles and actual operations on the original and additional addresses. The declared addressed real operator family is now constructive for all coherent phase completions; the remaining consumer is physical admission, not another word search in the old minimal Q8 palette. Bind native preparation and independent orientation reference, decoder/address resources, full action/runtime budget and a complete internal schedule. Functional truth and a supplied compatible-operator limit do not derive those inputs. Preserve the scoped old Q8 result and all larger/complex apparatus exceptions. Then derive the joint Delta/P/U law, full variations and condensed refinement with all 653 complementary histories and both thermal-memory source defects. Own metric/matter source and Ward identity, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints remain required. No new action, phase selector, angle, qubit, temperature, coupling/source law or physical postulate is introduced.",
     "parent_law_completeness_consumer": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_PARENT_LAW_COMPLETENESS.md",
       "compiled_declarations": 23,
@@ -664,6 +664,33 @@
       "intake_artifacts": 244,
       "verified_artifact_input_hash_versions": 466,
       "verified_current_input_hash_versions": 353
+    },
+    "addressed_third_role": {
+      "input_head": "074192ae3c76eb6deb426d395f779e43678044a6",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_ADDRESSED_THIRD_ROLE.md",
+      "compiled_propositions": 95,
+      "transitive_d0_source_pins": 37,
+      "exact_controls": 65782,
+      "false_scope_rejections": 28,
+      "false_exact_rejections": 16,
+      "discharged": "The complete two-address minimal real retaining recording/comparison family has 65536 independently phase-completed realizations. Generic full-workspace generator identities and a forward-only inverse compiler give uniform old-memory actuation with the same owned active angle, retaining orientation, in at most 29 primitives. All 256 common-hardware pairs need only 13 or 21 primitives. The proper sector has a common five-step route for all 512 independent proper triples. No blank helper is needed: active and additional roles are restored for every correlated eight-coordinate state. All retained golden depths intertwine the full programme and preserve its complete error mass. The conditional constant factor keeps the prior phi resource inequality, without native decoder/address/budget/schedule admission. The prior four-coordinate Q8 all-word and limit obstruction remains valid in its palette; actively addressed copies extend that palette. 95 new kernel propositions, 37 D0 source pins, 65782 exact controls; 28 false-scope and 16 false-exact ledgers rejected. Coherent representation and physical permission to address the operations are application inputs, not inferred from Boolean truth or the passive condensed limit; no G0b, GR or whole-core closure.",
+      "class": "ENTIRE_TWO_ADDRESS_MINIMAL_REAL_RETAINING_RECORDING_COMPARISON_FAMILY_ON_THREE_COHERENT_DYAD_ROLES",
+      "terminal": "COMPLETE_65536_ADDRESSED_REAL_FAMILY_CONSTRUCTIVE_FULL_STATE_MAX_29_COMMON_HARDWARE_13_OR_21",
+      "addressed_real_joint_memory_actuation_classification_closed": true,
+      "old_minimal_Q8_obstruction_preserved_in_its_palette": true,
+      "arbitrary_correlated_helper_restored_without_blank_assumption": true,
+      "whole_native_apparatus_exhausted": false,
+      "representation_and_physical_address_admission_derived_from_truth_or_condensed_limit": false,
+      "native_preparation_decoder_address_budget_schedule_admission_derived": false,
+      "joint_native_heat_tangent_refinement_derived": false,
+      "G0b_closed": false,
+      "G0_closed": false,
+      "source_head": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
+      "result": "The complete two-address minimal real retaining recording/comparison family has 65536 independently phase-completed realizations. Generic full-workspace generator identities and a forward-only inverse compiler give uniform old-memory actuation with the same owned active angle, retaining orientation, in at most 29 primitives. All 256 common-hardware pairs need only 13 or 21 primitives. The proper sector has a common five-step route for all 512 independent proper triples. No blank helper is needed: active and additional roles are restored for every correlated eight-coordinate state. All retained golden depths intertwine the full programme and preserve its complete error mass. The conditional constant factor keeps the prior phi resource inequality, without native decoder/address/budget/schedule admission. The prior four-coordinate Q8 all-word and limit obstruction remains valid in its palette; actively addressed copies extend that palette. 95 new kernel propositions, 37 D0 source pins, 65782 exact controls; 28 false-scope and 16 false-exact ledgers rejected. Coherent representation and physical permission to address the operations are application inputs, not inferred from Boolean truth or the passive condensed limit; no G0b, GR or whole-core closure.",
+      "remaining": "G0b: derive the native representation/application of the complete retained apparatus, with its existing coherent roles and actual operations on the original and additional addresses. The declared addressed real operator family is now constructive for all coherent phase completions; the remaining consumer is physical admission, not another word search in the old minimal Q8 palette. Bind native preparation and independent orientation reference, decoder/address resources, full action/runtime budget and a complete internal schedule. Functional truth and a supplied compatible-operator limit do not derive those inputs. Preserve the scoped old Q8 result and all larger/complex apparatus exceptions. Then derive the joint Delta/P/U law, full variations and condensed refinement with all 653 complementary histories and both thermal-memory source defects. Own metric/matter source and Ward identity, quantitative metric contrast, native stationarity, curved joint roots, soundness/recovery and physical constraints remain required. No new action, phase selector, angle, qubit, temperature, coupling/source law or physical postulate is introduced.",
+      "intake_artifacts": 250,
+      "verified_artifact_input_hash_versions": 472,
+      "verified_current_input_hash_versions": 358
     }
   }
 }
