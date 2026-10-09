@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`d8b8f0712da3ddb23f966ed7b13b4e06b4973a71`, following
-`4f301680636a8181580a5d1455ff727257c0cabe`.
+`074192ae3c76eb6deb426d395f779e43678044a6`, following
+`d8b8f0712da3ddb23f966ed7b13b4e06b4973a71`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -16,6 +16,30 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Full two-direction coherent memory family and Q8 word boundary, 2026-10-09
+
+[The uniform memory-actuation proof](A4D_NATIVE_UNIFORM_MEMORY_ACTUATION.md)
+keeps both coherent phase completions. Its entire minimal real family
+has 256 pairs: 192 admit the same golden old-memory angle, up to
+orientation, in a fixed 13-forward-operation code. In the other 64,
+both primitives normalize the actual owned left Q8 frame. Every Q8
+operation and normalized active angle preserves it. Kernel induction
+excludes the target at every complete word length; finite-frame
+closedness excludes vanishing-error approximation. An independent phi
+reference distinguishes orientation, while preparation by the tested
+gate erases it. Full programme error survives every golden cylinder.
+
+59 new propositions print actual types and transitive axioms;
+37 D0 pins, 2409 exact controls, 24 false-scope and 16 false-exact
+ledgers pass. This operator classification does not exhaust D0, larger
+addressed processors or all state preparations. The native complete
+apparatus admission, its actually owned roles/operations, independent
+preparations and full decoder/budget/internal schedule remain G0b inputs.
+Joint heat/tangent/refinement, source/Ward, contrast/stationarity,
+curved roots, soundness/recovery and constraints remain required.
+All 44 contracts and original terminals are preserved. No new physical
+action, selector, temperature, coupling/source law or postulate is added.
 
 ## Verified archive actuation and complete comparator class, 2026-10-09
 
@@ -274,7 +298,7 @@ is included with its 20 compiled propositions and 163 exact controls as a
 scoped control. It does not determine this active route or exhaust the core.
 All 44 existing graph statuses, dependencies and original parent terminals
 remain unchanged. Supported D0 owners, claims, books and task lifecycles
-are unchanged. All 460 current artifact/input hash versions match (348 input versions).
+are unchanged. All 466 current artifact/input hash versions match (353 input versions).
 This intake remains pending CONTROL review and current-head CI; local compiler and certificate success does not replace either.
 
 The preceding source `e7ef84c6` passed CI `37829415818` and CONTROL
@@ -283,6 +307,9 @@ require their own CI and CONTROL review; prior-head successes do not
 substitute for current validation.
 
 ## Enumerated artifact slice
+
+* [Full two-direction real memory actuation and Q8 boundary](A4D_NATIVE_UNIFORM_MEMORY_ACTUATION.md),
+  standalone capsule, transcript, pinned source receipt and exact checker/ledger.
 
 * [Verified archive actuation and comparator phase class](A4D_NATIVE_VERIFIED_ARCHIVE_ACTUATION.md),
   standalone capsule, transcript, source receipt and exact checker/ledger.
@@ -300,7 +327,7 @@ substitute for current validation.
   its standalone compiled capsule, transcript, source receipt and exact checker/ledger.
 
 The [receipt](CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json) enumerates
-238 byte-identical artifacts, with source Git blobs and SHA256 hashes:
+244 byte-identical artifacts, with source Git blobs and SHA256 hashes:
 
 * [Complete joint-readout spectral extension (§6.10)](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#610-complete-joint-readout-extensions-and-their-actual-source-relevance),
   its standalone exact checker/ledger and compiled capsule, transcript and source receipt.
@@ -1168,4 +1195,10 @@ No self-merge.
 Current source `d8b8f0712da3ddb23f966ed7b13b4e06b4973a71` and this updated CONTROL intake require their
 own current-head CI and CONTROL acceptance. Parent CONTROL `1d41b244`
 passed CI `37869045113`; it does not substitute for current validation.
+No self-merge.
+
+Current source `074192ae3c76eb6deb426d395f779e43678044a6` and this CONTROL intake require their own
+current-head CI and CONTROL acceptance. Source parent `d8b8f071` passed
+CI `37871118793`; CONTROL parent `db70b1af` passed `37871489372`.
+Those successful parent runs do not substitute for current validation.
 No self-merge.
