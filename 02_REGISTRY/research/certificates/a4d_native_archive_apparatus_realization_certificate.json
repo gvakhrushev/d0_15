@@ -1,0 +1,837 @@
+{
+  "all_word_boundary": "closed old-parity commutant for the entire declared joint-flow palette and all active-role matrices, including the actual owned p0 gate; not whole-core operation completeness",
+  "archive_pairs": [
+    {
+      "addresses": [
+        0,
+        1
+      ],
+      "complete_vertex_complement": 25,
+      "cross_gram_zero": true,
+      "endpoint_rank": 8,
+      "even_archive_components_retained": 12,
+      "history_complement_trace": 702,
+      "history_support_trace": 16,
+      "joint_null_archive_trace": 653,
+      "native_degrees": [
+        24,
+        24,
+        24,
+        24,
+        22,
+        22,
+        22,
+        22
+      ],
+      "normalization_squared": [
+        "1/48",
+        "1/48",
+        "1/48",
+        "1/48",
+        "1/44",
+        "1/44",
+        "1/44",
+        "1/44"
+      ],
+      "orientation_labels": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ]
+      ],
+      "source_rank": 8
+    },
+    {
+      "addresses": [
+        0,
+        2
+      ],
+      "complete_vertex_complement": 25,
+      "cross_gram_zero": true,
+      "endpoint_rank": 8,
+      "even_archive_components_retained": 12,
+      "history_complement_trace": 702,
+      "history_support_trace": 16,
+      "joint_null_archive_trace": 653,
+      "native_degrees": [
+        24,
+        24,
+        24,
+        24,
+        20,
+        20,
+        20,
+        20
+      ],
+      "normalization_squared": [
+        "1/48",
+        "1/48",
+        "1/48",
+        "1/48",
+        "1/40",
+        "1/40",
+        "1/40",
+        "1/40"
+      ],
+      "orientation_labels": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          26,
+          27
+        ]
+      ],
+      "source_rank": 8
+    },
+    {
+      "addresses": [
+        1,
+        0
+      ],
+      "complete_vertex_complement": 25,
+      "cross_gram_zero": true,
+      "endpoint_rank": 8,
+      "even_archive_components_retained": 12,
+      "history_complement_trace": 702,
+      "history_support_trace": 16,
+      "joint_null_archive_trace": 653,
+      "native_degrees": [
+        22,
+        22,
+        22,
+        22,
+        24,
+        24,
+        24,
+        24
+      ],
+      "normalization_squared": [
+        "1/44",
+        "1/44",
+        "1/44",
+        "1/44",
+        "1/48",
+        "1/48",
+        "1/48",
+        "1/48"
+      ],
+      "orientation_labels": [
+        [
+          9,
+          10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "source_rank": 8
+    },
+    {
+      "addresses": [
+        1,
+        2
+      ],
+      "complete_vertex_complement": 25,
+      "cross_gram_zero": true,
+      "endpoint_rank": 8,
+      "even_archive_components_retained": 12,
+      "history_complement_trace": 702,
+      "history_support_trace": 16,
+      "joint_null_archive_trace": 653,
+      "native_degrees": [
+        22,
+        22,
+        22,
+        22,
+        20,
+        20,
+        20,
+        20
+      ],
+      "normalization_squared": [
+        "1/44",
+        "1/44",
+        "1/44",
+        "1/44",
+        "1/40",
+        "1/40",
+        "1/40",
+        "1/40"
+      ],
+      "orientation_labels": [
+        [
+          9,
+          10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          26,
+          27
+        ]
+      ],
+      "source_rank": 8
+    },
+    {
+      "addresses": [
+        2,
+        0
+      ],
+      "complete_vertex_complement": 25,
+      "cross_gram_zero": true,
+      "endpoint_rank": 8,
+      "even_archive_components_retained": 12,
+      "history_complement_trace": 702,
+      "history_support_trace": 16,
+      "joint_null_archive_trace": 653,
+      "native_degrees": [
+        20,
+        20,
+        20,
+        20,
+        24,
+        24,
+        24,
+        24
+      ],
+      "normalization_squared": [
+        "1/40",
+        "1/40",
+        "1/40",
+        "1/40",
+        "1/48",
+        "1/48",
+        "1/48",
+        "1/48"
+      ],
+      "orientation_labels": [
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "source_rank": 8
+    },
+    {
+      "addresses": [
+        2,
+        1
+      ],
+      "complete_vertex_complement": 25,
+      "cross_gram_zero": true,
+      "endpoint_rank": 8,
+      "even_archive_components_retained": 12,
+      "history_complement_trace": 702,
+      "history_support_trace": 16,
+      "joint_null_archive_trace": 653,
+      "native_degrees": [
+        20,
+        20,
+        20,
+        20,
+        22,
+        22,
+        22,
+        22
+      ],
+      "normalization_squared": [
+        "1/40",
+        "1/40",
+        "1/40",
+        "1/40",
+        "1/44",
+        "1/44",
+        "1/44",
+        "1/44"
+      ],
+      "orientation_labels": [
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ]
+      ],
+      "source_rank": 8
+    }
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean",
+  "capsule_sha256": "079b464f33cf7f86c2879875e8c4c9abf1567d86f202e8d30838805221ebac73",
+  "check_count": 353,
+  "checker_sha256": "2c6db908249c1b4bf055501df11f7974564303a88fb9deb39cf559c867daf827",
+  "checks": [
+    "ACTUAL_KERNEL_EXIT_ZERO",
+    "ALL_134_NEW_PROPOSITIONS_AND_TRANSITIVE_AXIOMS_PRINTED",
+    "CAPSULE_AND_TRANSCRIPT_FRESH",
+    "NO_PLACEHOLDER_OR_COMPILER_TRUST_LEAF",
+    "ONLY_STANDARD_TRANSITIVE_AXIOMS",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.actual_Q8_identity_column_and_left_cancellation",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_actual_regular_action_retains_the_constant_record",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.actual_regular_action_reads_the_identity_coefficient",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_complete_regular_fixed_space_is_the_constant_line",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_complete_regular_commutant_retains_its_constant_line",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.a_full_regular_orthogonal_commutant_has_only_a_sign_on_the_constant_line",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.no_full_regular_Q8_commutant_is_a_nontrivial_pure_golden_spin_pair",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_three_archives_are_disjoint_and_each_retains_all_Omega8_labels",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.each_owned_archive_has_its_original_zone",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.native_degree_profile_reproved_in_the_kernel",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.native_degree_equals_actual_real_zone_weight",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_native_zone_degree_is_positive",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_two_archive_addresses_are_injective",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.paired_orientation_labels_are_jointly_injective",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.both_orientation_labels_have_the_same_native_zone",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.block_lift_is_additive",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.block_lift_is_multiplicative_on_an_isometry",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.mutually_orthogonal_blocks_have_zero_cross_product",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_identity",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_transpose",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_all_compositions",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.paired_full_history_extension_is_orthogonal",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.complete_history_extension_reads_back_the_original_operation",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.complete_history_extension_is_faithful",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.paired_full_history_extension_acts_on_the_endpoint_embedding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.paired_full_history_extension_acts_on_the_source_embedding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_joint_orthogonal_history_record_is_retained",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.endpoint_projection_compatibility_of_the_complete_extension",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.complete_history_reversal_compatibility_of_the_extension",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.sum_over_actual_edges",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.endpoint_lift_gram",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.endpoint_average_is_weighted_adjoint",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.endpoint_average_exact_left_inverse",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.endpoint_reynolds_is_selfadjoint",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.endpoint_source_average",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.endpoint_source_gram",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.history_reverse_is_involution",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.history_reverse_is_selfadjoint",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.history_reverse_is_orthogonal",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.history_reverse_recovers_source",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.complete_history_relabel_reverse_naturality",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.complete_history_relabel_keeps_both_readouts",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.actual_scene_relation_symmetric",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.actual_scene_relation_iff",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_actual_endpoint_lift_binding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_actual_source_lift_binding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_actual_degree_cast_binding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_actual_endpoint_average_binding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.actual_real_zone_counts",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.actual_real_endpoint_degree_by_zone",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_endpoint_degrees_are_nonzero",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_endpoint_gram_is_actual_degree",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_endpoint_average_is_a_left_inverse",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_endpoint_projection_is_selfadjoint",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_reversal_is_exactly_the_owned_history_reversal",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_reversal_is_involutive",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_reversal_is_selfadjoint",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_reversal_recovers_source",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveGraph.real_native_reversal_recovers_endpoint",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_actual_raw_scene_retains_both_archive_labels",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_two_canonical_raw_zone_names_agree",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_raw_archive_label_keeps_its_owned_zone",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.native_archive_normalization_is_the_actual_degree_normalization",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.sparse_weighted_delta_overlap",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.actual_archive_degree_agrees_on_both_orientation_labels",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.two_retained_archive_sectors_form_an_exact_weighted_isometry",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.arbitrary_scene_rows_read_a_sparse_archive_coordinate",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.all_native_archive_columns_are_balanced_in_each_owned_zone",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.native_transport_does_not_forget_the_balanced_archive_condition",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.full_endpoint_histories_embed_the_apparatus_isometrically",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.full_history_reversal_exchanges_the_two_apparatus_embeddings",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.endpoint_readout_recovers_every_apparatus_state",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_opposite_readout_of_each_apparatus_state_is_zero",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.full_source_histories_embed_the_same_apparatus_isometrically",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.both_complete_apparatus_histories_are_mutually_orthogonal",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.both_complete_apparatus_histories_are_orthogonal_in_reverse_order",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_identity",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_transpose",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_all_compositions",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.full_native_extension_preserves_orthogonality",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.full_native_extension_retains_all_endpoint_states",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.full_native_extension_retains_all_source_states",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.no_complete_apparatus_operation_is_lost_in_the_native_embedding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.full_native_history_extension_commutes_with_owned_history_reversal",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.native_endpoint_projection_retains_the_first_apparatus_embedding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.native_endpoint_projection_annihilates_the_opposite_embedding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.full_native_history_extension_commutes_with_owned_endpoint_projection",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.actual_history_degree_recovers_the_endpoint_adjoint",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_endpoint_invisible_history_is_orthogonal_to_the_apparatus",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_source_invisible_history_is_orthogonal_to_the_other_apparatus",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_joint_readout_invisible_native_history_is_retained_exactly",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_owned_normalized_scene_law_is_identity_on_the_archive_embedding",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_joint_history_extension_has_the_same_endpoint_archive_action",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_joint_history_extension_has_the_same_source_archive_action",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.a_complete_symmetric_operator_fixing_both_arms_commutes_with_the_extension",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_complete_joint_symmetric_native_history_law_commutes_with_the_apparatus",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_native_embedding_keeps_every_finite_programme_and_its_full_order",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_classified_addressed_golden_programme_has_a_faithful_full_native_carrier",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.identity_has_only_uniform_arm_action",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.uniform_arm_operations_are_closed_under_every_composition",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.uniform_arm_operations_are_closed_under_all_real_linear_combinations",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.a_uniform_arm_operation_cannot_realize_a_nonscalar_complete_coordinate_action",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_complete_joint_scene_law_has_uniform_identity_action_on_the_apparatus",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_native_history_flow_primitive_has_only_uniform_arm_action",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_finite_word_in_the_complete_declared_native_flow_palette_is_uniform",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.a_nontrivial_old_memory_turn_is_never_a_scalar_workspace_operation",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_three_role_tensor_is_the_complete_nested_matrix_product",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.complete_three_role_tensor_operations_preserve_all_products",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_active_role_linear_operation_retains_the_old_role_parity",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.a_nontrivial_old_turn_changes_the_old_role_parity",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.all_owned_flow_and_all_active_role_operations_preserve_old_parity",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.real_transport_is_the_cast_of_the_actual_full_native_transport",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.real_scene_delta_is_the_actual_full_native_normalized_operator",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_complete_joint_native_history_law_class_is_constructively_nonempty",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_word_of_native_joint_flow_and_all_active_role_operations_preserves_old_parity",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.a_nontrivial_old_memory_turn_changes_parity_on_the_full_native_history_carrier",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.no_word_in_the_complete_declared_native_flow_palette_actuates_old_memory",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_full_history_old_parity_commutant_is_closed",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.no_sequence_of_declared_native_flow_words_converges_to_nontrivial_old_memory_actuation",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_existing_typed_scene_constructively_contains_a_faithful_complete_apparatus_carrier",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_classified_actual_p0_golden_programme_has_a_complete_native_history_carrier",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_retained_orientation_of_the_owned_p0_turn_exits_the_complete_declared_flow_palette",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_declared_flow_cannot_approach_the_owned_p0_old_memory_turn_by_longer_programmes",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_full_history_cardinality_is_still_the_owned_718",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_paired_native_apparatus_has_sixteen_orthogonal_history_coordinates",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_native_apparatus_retains_a_history_complement_of_trace_702",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_actual_joint_readout_null_archive_keeps_trace_653",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_actual_joint_readout_null_archive_is_selfadjoint",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_actual_archive_complement_annihilates_endpoint_histories",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_actual_archive_complement_annihilates_source_histories",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.both_apparatus_arms_are_orthogonal_to_the_actual_653_archive_complement",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.every_native_apparatus_operation_retains_the_entire_actual_653_archive",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_paired_apparatus_support_is_a_selfadjoint_projector",
+    "ACTUAL_DECLARATION_D0.Research.NativeArchiveApparatus.the_constant_record_obstruction_applies_to_the_actual_owned_p0_angle",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Claims/Q8DedekindMinimality.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Claims/Signature31Split.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Combinatorics/CliqueComplex.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Combinatorics/CompleteTripartite.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Combinatorics/ForcedReturnWindows.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Combinatorics/PhaseUnfolding.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Combinatorics/Tripartite.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Core/BornFinite.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Core/BornFiniteEffects.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Core/BornQuadraticOrigin.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Core/BornQuadraticResponse.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Core/DyadABCD.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Core/FiniteTypes.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Core/MatrixResponse.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Core/Phi.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Dynamics/PisotContraction.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Dynamics/ToralAutomorphism.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/CurrentDataFactorization.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/DetectionCapabilityBoundary.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/GeneralComparisonGrammar.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/InformationConnectivity.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/M1Predicate.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Geometry/SceneActiveEigenvalues.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Integration/V15/RawZone.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Matter/FiniteSelector.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Phase.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Representation/Omega8OrientationDecomposition.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Representation/PreparationMemoryBound.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/SelfReading/RawSceneGraph.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/SelfReading/TypedCapacityRawScene.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/SelfReading/TypedIncidenceCarriers.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Spectral/DarkArchiveStructure.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Spectral/ZoneMatrixSpectrum.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Synthesis/DetectionSceneBoundEquivalence.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Synthesis/DetectorCatalogueFreedom.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Synthesis/DetectorLayerEquivalence.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Synthesis/SceneAnisotropyCapacityWeld.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Synthesis/SceneInvariantReconstruction.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Synthesis/SceneNormalizedQuotientDescent.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Topology/NoThreeSimplices.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Tower/DetectionQuadratic.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Tower/NoExtension.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Tower/PortPowerExhaustion.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/UnifiedFiniteCore/Q8Terminal.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/VNext2/Rank3CubicSymmetricFunctions.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/VNext2/Rank3MetricSignature.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/VNext2/SceneEndpointReynoldsExpectation.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/VNext2/ScenePathHistoryCanonicity.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/VNext2/SceneSpectralFingerprint.lean",
+    "SOURCE_PIN_03_FORMALIZATION/lake-manifest.json",
+    "SOURCE_PIN_03_FORMALIZATION/lakefile.lean",
+    "SOURCE_PIN_03_FORMALIZATION/lean-toolchain",
+    "SOURCE_PIN_01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+    "SOURCE_PIN_01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+    "SOURCE_PIN_01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_addressed_third_role_certificate.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_addressed_third_role_check.py",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_addressed_third_role_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_addressed_third_role_results.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_results.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_results.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_results.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_history_spectral_completion.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_certificate.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_check.py",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_results.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_retained_record_admission_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_retained_record_admission_results.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_scene_history_feedback.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_results.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_certificate.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_check.py",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_results.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_certificate.json",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_check.py",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_output.txt",
+    "SOURCE_PIN_02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_results.json",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Condensed/OperatorNaturality.lean",
+    "SOURCE_PIN_03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean",
+    "ALL_60_ACTUAL_D0_SOURCE_OWNERS_PINNED",
+    "ACTUAL_TYPED_HISTORY_AND_FLOW_QUANTIFIERS_PRESENT",
+    "ALL_33_TYPED_VERTICES_AND_718_OWNED_HISTORIES",
+    "ACTUAL_ENDPOINT_AND_SOURCE_GRAMS",
+    "ACTUAL_ENDPOINT_READOUT_AND_REVERSED_READOUT",
+    "ACTUAL_OWNED_P0_GOLDEN_NORMALIZATION",
+    "COMPLETE_ACTIVE_MATRIX_BASIS_COMMUTES_OLD_PARITY_(0, 0)",
+    "COMPLETE_ACTIVE_MATRIX_BASIS_COMMUTES_OLD_PARITY_(0, 1)",
+    "COMPLETE_ACTIVE_MATRIX_BASIS_COMMUTES_OLD_PARITY_(1, 0)",
+    "COMPLETE_ACTIVE_MATRIX_BASIS_COMMUTES_OLD_PARITY_(1, 1)",
+    "THE_OWNED_OLD_MEMORY_TURN_CHANGES_PARITY",
+    "LITERAL_OWNED_Q8_TABLE_EXTRACTED",
+    "ACTUAL_Q8_REGULAR_CONSTANT_RECORD_0",
+    "ACTUAL_Q8_REGULAR_CONSTANT_RECORD_1",
+    "ACTUAL_Q8_REGULAR_CONSTANT_RECORD_2",
+    "ACTUAL_Q8_REGULAR_CONSTANT_RECORD_3",
+    "ACTUAL_Q8_REGULAR_CONSTANT_RECORD_4",
+    "ACTUAL_Q8_REGULAR_CONSTANT_RECORD_5",
+    "ACTUAL_Q8_REGULAR_CONSTANT_RECORD_6",
+    "ACTUAL_Q8_REGULAR_CONSTANT_RECORD_7",
+    "REPEATED_OR_EMPTY_ARCHIVE_ADDRESSES_FAIL_THE_FULL_EIGHT_COORDINATE_FIBER",
+    "ALL_ORIENTATION_LABELS_INJECTIVE_(0, 1)",
+    "ACTUAL_VERTEX_WEIGHTED_GRAM_(0, 1)",
+    "UNWEIGHTED_COLUMNS_ARE_NOT_FALSE_NORMALIZED_(0, 1)",
+    "BOTH_FULL_HISTORY_ARMS_AND_CROSS_GRAM_(0, 1)",
+    "ACTUAL_BOTH_HISTORY_READOUTS_(0, 1)",
+    "ACTUAL_REVERSAL_EXCHANGES_ARMS_(0, 1)",
+    "OWNED_NORMALIZED_OPERATOR_ON_ALL_ARCHIVE_COLUMNS_(0, 1)",
+    "ALL_NATIVE_ROOT_WEIGHTS_EXACT_(0, 1)",
+    "ALL_THREE_ARCHIVES_KEEP_THEIR_EVEN_MEMORY_(0, 1)",
+    "NONEMPTY_INVISIBLE_HISTORY_CONTROL_(0, 1)",
+    "ALL_APPARATUS_OPERATIONS_RETAIN_INVISIBLE_RECTANGLE_(0, 1)",
+    "EXACT_FULL_HISTORY_SUPPORT_AND_COMPLEMENT_(0, 1)",
+    "NO_EMPTY_ARCHIVE_FIBER_(0, 1)",
+    "RETAINING_RECORDING_IS_OUTSIDE_THE_DECLARED_FLOW_PARITY_CLASS_(0, 1)",
+    "ONE_ARM_ONLY_IS_NOT_A_REVERSAL_COVARIANT_EXTENSION_(0, 1)",
+    "ALL_ORIENTATION_LABELS_INJECTIVE_(0, 2)",
+    "ACTUAL_VERTEX_WEIGHTED_GRAM_(0, 2)",
+    "UNWEIGHTED_COLUMNS_ARE_NOT_FALSE_NORMALIZED_(0, 2)",
+    "BOTH_FULL_HISTORY_ARMS_AND_CROSS_GRAM_(0, 2)",
+    "ACTUAL_BOTH_HISTORY_READOUTS_(0, 2)",
+    "ACTUAL_REVERSAL_EXCHANGES_ARMS_(0, 2)",
+    "OWNED_NORMALIZED_OPERATOR_ON_ALL_ARCHIVE_COLUMNS_(0, 2)",
+    "ALL_NATIVE_ROOT_WEIGHTS_EXACT_(0, 2)",
+    "ALL_THREE_ARCHIVES_KEEP_THEIR_EVEN_MEMORY_(0, 2)",
+    "NONEMPTY_INVISIBLE_HISTORY_CONTROL_(0, 2)",
+    "ALL_APPARATUS_OPERATIONS_RETAIN_INVISIBLE_RECTANGLE_(0, 2)",
+    "EXACT_FULL_HISTORY_SUPPORT_AND_COMPLEMENT_(0, 2)",
+    "NO_EMPTY_ARCHIVE_FIBER_(0, 2)",
+    "RETAINING_RECORDING_IS_OUTSIDE_THE_DECLARED_FLOW_PARITY_CLASS_(0, 2)",
+    "ONE_ARM_ONLY_IS_NOT_A_REVERSAL_COVARIANT_EXTENSION_(0, 2)",
+    "ALL_ORIENTATION_LABELS_INJECTIVE_(1, 0)",
+    "ACTUAL_VERTEX_WEIGHTED_GRAM_(1, 0)",
+    "UNWEIGHTED_COLUMNS_ARE_NOT_FALSE_NORMALIZED_(1, 0)",
+    "BOTH_FULL_HISTORY_ARMS_AND_CROSS_GRAM_(1, 0)",
+    "ACTUAL_BOTH_HISTORY_READOUTS_(1, 0)",
+    "ACTUAL_REVERSAL_EXCHANGES_ARMS_(1, 0)",
+    "OWNED_NORMALIZED_OPERATOR_ON_ALL_ARCHIVE_COLUMNS_(1, 0)",
+    "ALL_NATIVE_ROOT_WEIGHTS_EXACT_(1, 0)",
+    "ALL_THREE_ARCHIVES_KEEP_THEIR_EVEN_MEMORY_(1, 0)",
+    "NONEMPTY_INVISIBLE_HISTORY_CONTROL_(1, 0)",
+    "ALL_APPARATUS_OPERATIONS_RETAIN_INVISIBLE_RECTANGLE_(1, 0)",
+    "EXACT_FULL_HISTORY_SUPPORT_AND_COMPLEMENT_(1, 0)",
+    "NO_EMPTY_ARCHIVE_FIBER_(1, 0)",
+    "RETAINING_RECORDING_IS_OUTSIDE_THE_DECLARED_FLOW_PARITY_CLASS_(1, 0)",
+    "ONE_ARM_ONLY_IS_NOT_A_REVERSAL_COVARIANT_EXTENSION_(1, 0)",
+    "ALL_ORIENTATION_LABELS_INJECTIVE_(1, 2)",
+    "ACTUAL_VERTEX_WEIGHTED_GRAM_(1, 2)",
+    "UNWEIGHTED_COLUMNS_ARE_NOT_FALSE_NORMALIZED_(1, 2)",
+    "BOTH_FULL_HISTORY_ARMS_AND_CROSS_GRAM_(1, 2)",
+    "ACTUAL_BOTH_HISTORY_READOUTS_(1, 2)",
+    "ACTUAL_REVERSAL_EXCHANGES_ARMS_(1, 2)",
+    "OWNED_NORMALIZED_OPERATOR_ON_ALL_ARCHIVE_COLUMNS_(1, 2)",
+    "ALL_NATIVE_ROOT_WEIGHTS_EXACT_(1, 2)",
+    "ALL_THREE_ARCHIVES_KEEP_THEIR_EVEN_MEMORY_(1, 2)",
+    "NONEMPTY_INVISIBLE_HISTORY_CONTROL_(1, 2)",
+    "ALL_APPARATUS_OPERATIONS_RETAIN_INVISIBLE_RECTANGLE_(1, 2)",
+    "EXACT_FULL_HISTORY_SUPPORT_AND_COMPLEMENT_(1, 2)",
+    "NO_EMPTY_ARCHIVE_FIBER_(1, 2)",
+    "RETAINING_RECORDING_IS_OUTSIDE_THE_DECLARED_FLOW_PARITY_CLASS_(1, 2)",
+    "ONE_ARM_ONLY_IS_NOT_A_REVERSAL_COVARIANT_EXTENSION_(1, 2)",
+    "ALL_ORIENTATION_LABELS_INJECTIVE_(2, 0)",
+    "ACTUAL_VERTEX_WEIGHTED_GRAM_(2, 0)",
+    "UNWEIGHTED_COLUMNS_ARE_NOT_FALSE_NORMALIZED_(2, 0)",
+    "BOTH_FULL_HISTORY_ARMS_AND_CROSS_GRAM_(2, 0)",
+    "ACTUAL_BOTH_HISTORY_READOUTS_(2, 0)",
+    "ACTUAL_REVERSAL_EXCHANGES_ARMS_(2, 0)",
+    "OWNED_NORMALIZED_OPERATOR_ON_ALL_ARCHIVE_COLUMNS_(2, 0)",
+    "ALL_NATIVE_ROOT_WEIGHTS_EXACT_(2, 0)",
+    "ALL_THREE_ARCHIVES_KEEP_THEIR_EVEN_MEMORY_(2, 0)",
+    "NONEMPTY_INVISIBLE_HISTORY_CONTROL_(2, 0)",
+    "ALL_APPARATUS_OPERATIONS_RETAIN_INVISIBLE_RECTANGLE_(2, 0)",
+    "EXACT_FULL_HISTORY_SUPPORT_AND_COMPLEMENT_(2, 0)",
+    "NO_EMPTY_ARCHIVE_FIBER_(2, 0)",
+    "RETAINING_RECORDING_IS_OUTSIDE_THE_DECLARED_FLOW_PARITY_CLASS_(2, 0)",
+    "ONE_ARM_ONLY_IS_NOT_A_REVERSAL_COVARIANT_EXTENSION_(2, 0)",
+    "ALL_ORIENTATION_LABELS_INJECTIVE_(2, 1)",
+    "ACTUAL_VERTEX_WEIGHTED_GRAM_(2, 1)",
+    "UNWEIGHTED_COLUMNS_ARE_NOT_FALSE_NORMALIZED_(2, 1)",
+    "BOTH_FULL_HISTORY_ARMS_AND_CROSS_GRAM_(2, 1)",
+    "ACTUAL_BOTH_HISTORY_READOUTS_(2, 1)",
+    "ACTUAL_REVERSAL_EXCHANGES_ARMS_(2, 1)",
+    "OWNED_NORMALIZED_OPERATOR_ON_ALL_ARCHIVE_COLUMNS_(2, 1)",
+    "ALL_NATIVE_ROOT_WEIGHTS_EXACT_(2, 1)",
+    "ALL_THREE_ARCHIVES_KEEP_THEIR_EVEN_MEMORY_(2, 1)",
+    "NONEMPTY_INVISIBLE_HISTORY_CONTROL_(2, 1)",
+    "ALL_APPARATUS_OPERATIONS_RETAIN_INVISIBLE_RECTANGLE_(2, 1)",
+    "EXACT_FULL_HISTORY_SUPPORT_AND_COMPLEMENT_(2, 1)",
+    "NO_EMPTY_ARCHIVE_FIBER_(2, 1)",
+    "RETAINING_RECORDING_IS_OUTSIDE_THE_DECLARED_FLOW_PARITY_CLASS_(2, 1)",
+    "ONE_ARM_ONLY_IS_NOT_A_REVERSAL_COVARIANT_EXTENSION_(2, 1)"
+  ],
+  "input_head": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
+  "lean_output_sha256": "144c065ae1ef51c2529ff7be5f7b9d2530f7c9d257ca15b77dfec1f71787a0d1",
+  "lean_receipt": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_results.json",
+  "lean_receipt_sha256": "9623b7c587704805b422532489e9ecfa31b86a14e53be350ab605bdbf64d75ef",
+  "native_scene": {
+    "apparatus_history_coordinates": 16,
+    "degrees": [
+      24,
+      22,
+      20
+    ],
+    "histories": 718,
+    "history_complement": 702,
+    "joint_null_archive": 653,
+    "vertices": 33,
+    "zones": [
+      9,
+      11,
+      13
+    ]
+  },
+  "previous_hardware_cases_recounted": false,
+  "proof": "02_REGISTRY/research/A4D_NATIVE_ARCHIVE_APPARATUS_REALIZATION.md",
+  "proof_sha256": "e98aafb0a64ab2973d26cf46ba7b17ca6263c680a5b268f1b77e86995abee712",
+  "scope": {
+    "G0_closed": false,
+    "G0b_closed": false,
+    "a_condensed_limit_supplies_missing_physical_operations": false,
+    "a_spin_projection_drops_even_archive_components": false,
+    "actual_owned_p0_and_degree_normalizations_used": true,
+    "actual_p0_old_memory_actuation_is_excluded_at_all_lengths_and_matrix_limits_in_that_palette": true,
+    "all_653_joint_readout_null_directions_are_retained_exactly": true,
+    "all_declared_complete_joint_symmetric_history_laws_commute_with_the_constructed_operations": true,
+    "all_native_33_state_components_and_718_histories_are_retained": true,
+    "all_prior_65536_addressed_programmes_have_full_native_carriers_with_maximum_29_steps": true,
+    "all_six_ordered_archive_pairs_are_covered": true,
+    "archive_memory_is_identified_with_physical_dark_matter_or_acceleration": false,
+    "class": "ACTUAL_TYPED_33_SCENE_AND_FULL_718_HISTORIES_ALL_SIX_ARCHIVE_PAIRS_WITH_COMPLETE_JOINT_FLOW_PLUS_ALL_ACTIVE_ROLE_OPERATIONS",
+    "curved_joint_roots_soundness_recovery_and_constraints_are_derived": false,
+    "either_thermal_memory_source_defect_is_dropped": false,
+    "every_finite_declared_flow_word_plus_every_active_role_linear_operation_preserves_old_parity": true,
+    "global_closure": false,
+    "input_head": "0f77c75796479241e4a8a4c9398dd166dfb1bed4",
+    "joint_physical_native_dynamics_and_all_variations_are_derived": false,
+    "native_preparation_reference_decoder_address_budget_and_schedule_are_derived": false,
+    "native_to_coframe_link_matter_maps_and_physical_refinement_are_derived": false,
+    "native_typed_state_and_full_history_operator_carrier_constructed": true,
+    "new_action_selector_angle_temperature_coupling_source_or_physical_postulate_added": false,
+    "original_310_202_317_terminals_changed": false,
+    "own_metric_matter_source_and_physical_Ward_are_derived": false,
+    "physical_operation_admission_is_derived_from_commutation_or_carrier_existence": false,
+    "positive_GR": false,
+    "prior_propositions_are_counted_as_new": false,
+    "quantitative_metric_contrast_and_native_stationarity_are_transferred": false,
+    "role_permutation_covariance_is_automatically_an_executable_physical_gate": false,
+    "the_29_step_bound_is_native_endpoint_MDL_or_runtime_admission": false,
+    "the_bare_8_regular_archive_is_two_identical_pure_spin_blocks": false,
+    "the_declared_flow_palette_exhausts_every_native_operation_or_its_compatibility_algebra": false,
+    "the_declared_joint_history_law_class_is_constructively_nonempty": true,
+    "the_full_regular_Q8_constant_record_obstruction_is_retained": true,
+    "the_history_embedding_has_16_dimensions_and_a_702_complement": true,
+    "the_owned_active_p0_gate_is_omitted_from_the_all_word_boundary": false,
+    "the_two_archive_addresses_or_an_unsigned_phase_are_selected_from_M1": false
+  },
+  "status": "PASS"
+}

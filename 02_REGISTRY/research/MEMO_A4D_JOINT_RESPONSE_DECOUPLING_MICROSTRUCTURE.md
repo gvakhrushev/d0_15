@@ -2958,3 +2958,29 @@ G0b: derive the native representation/application of the complete retained appar
 All 44 parent contracts/statuses/dependencies and historical results are
 preserved. G0b/G0/GR/global and the original #310/#202/#317 terminals stay
 open. No new physical postulate is installed.
+
+
+## Faithful native archive/history apparatus and complete declared flow boundary — 2026-10-09
+
+[The native archive apparatus proof](A4D_NATIVE_ARCHIVE_APPARATUS_REALIZATION.md)
+constructs the full degree-normalized carrier on the actual typed scene and
+all native histories. Every existing archive coefficient is retained.
+The full addressed programme transfers with the same word length and owned
+p0 angle. Every complete declared joint symmetric history law is compatible
+with the extension. The law class is constructively nonempty.
+
+The entire declared flow palette, including all active-role real operations,
+has an all-word and limit old-parity obstruction. The represented recording
+is a concrete exception outside this palette, so whole-core operation
+completeness is not inferred. Physical execution is the remaining arrow.
+
+134 new actual propositions, 60 D0 pins and 353 exact controls
+pass; 24 false-scope and 16 false-exact ledgers are rejected.
+Prior addressed/spectral propositions are not recounted. The full 653 null
+archive and both thermal-memory source defects remain. No native physical
+operation admission, action/source prescription or GR closure is installed.
+
+G0b: bind an actually executable native recording/comparison or typed-role/WRec transition on the complete retained archive/history carrier, with its preparation, independent reference, address, decoder, full budget and internal schedule. The faithful carrier is now explicit; commutation, coordinate covariance and a passive condensed limit do not supply operation admission. The complete declared joint-flow palette plus all active-role controls has an exact all-word/limit old-parity obstruction; do not search longer words in that palette or promote it to whole-core completeness. Bind an admitted operation exiting the invariant, or prove the executable palette complete before extending the negative terminal. Preserve all even archive coefficients, 653 null histories, both readouts and both thermal-memory source defects. Then derive the actual own action/variations and joint Delta/P/U/physical-refinement law without a new action or source prescription. Own metric/matter source and Ward, quantitative metric contrast and native stationarity, curved joint roots, soundness/recovery and constraints remain required. Original #310/#202/#317 terminals and all parent obligations remain.
+
+All 44 parent contracts/statuses/dependencies and historical results remain.
+G0b/G0/global/GR and original #310/#202/#317 terminals stay open.
