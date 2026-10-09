@@ -1183,7 +1183,7 @@
       "constitutive"
     ],
     "discharged": "Canonical full-future quotient and realized response tower now have actual surjective truncations and commuting depth-shifting process maps. Fixed-depth autonomy requires full-future factorization. The owned recorded golden gate has identical system and archive marginals but exact two-return Z gap -8*p^6 without fresh records. Complete archive history, all-source Schur reconstruction, determinant and genuine source derivative are retained. The actual profinite owner factors the whole finite-depth response, compactness realizes compatible histories, and golden expectations and cylindrical Hilbert inclusions are preserved, with explicit inverse-gate blank-factor preparation. 42 Lean propositions and 189 exact controls pass. The next consumer is the joint history/record operator and action binding to these owned inclusions; no field candidate, physical action or G0 closure is selected.",
-    "next": "T0/T1: derive the remaining full-price first jet from the actual native preparation/scene/pairing law on (q,D,b,m), including every admitted link and matter direction. Use the proved zero two-tick contribution only at the stated fixed-golden involutive bases and only after class admission; keep heat, scene-return/delay and moving-pairing terms. Substitute the resulting actual covector into the complete joint constraint chart; preserve link equations and the transported metric readout before comparing all ten slots to rho0. Do not restart role/word searches or require an unrelated apparatus census. Quantitative transfer, native stationarity, own source/Ward, curved joint roots, soundness/recovery and original #310/#202/#317 terminals remain open.",
+    "next": "T0/T1: derive the native admissibility and the contracted own first jet lambda_X=sum_e kappa_e Dw_e on the complete joint (q,D,b,m) tangent, for the actually selected scene/heat/preparation interface. In the declared positive-conductance unit scene, the scalar source is (c_H+c_F) lambda_X; independent heat/return operator jets need not be reconstructed merely to evaluate it. Do not assume arbitrary conductances are native or fit Dw to rho0. Retain the actual heat-carrier and existing beta/z law, all other action terms, link/matter equations and raw/transported metric readout. A lower-branch minimum or additional compatible carrier is not the next acceptance target before class admission. Prove this exact pullback or a completeness-backed obstruction for the actual interface, then compare all ten metric slots to rho0 and retain refinement, source/Ward, native stationarity, curved roots, soundness/recovery and all parent terminals.",
     "G0_closed": false,
     "new_physical_postulates": false,
     "added_graph_nodes": 0,
@@ -1361,6 +1361,25 @@
       "all_size_logdet_HasDerivAt_compiled": false,
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
+    },
+    "next_before_shared_scene_price_source": "T0/T1: derive the remaining full-price first jet from the actual native preparation/scene/pairing law on (q,D,b,m), including every admitted link and matter direction. Use the proved zero two-tick contribution only at the stated fixed-golden involutive bases and only after class admission; keep heat, scene-return/delay and moving-pairing terms. Substitute the resulting actual covector into the complete joint constraint chart; preserve link equations and the transported metric readout before comparing all ten slots to rho0. Do not restart role/word searches or require an unrelated apparatus census. Quantitative transfer, native stationarity, own source/Ward, curved joint roots, soundness/recovery and original #310/#202/#317 terminals remain open.",
+    "shared_scene_price_source": {
+      "input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source",
+      "discharged": "The normalized 33-vertex heat price and full 718-history one-step reversal-feedback price now have a single degree-normalized jet in the declared positive-conductance K(9,11,13) class. At unit weights the complete 359-edge first derivative is (c_H+c_F) d kappa with three exact per-edge coefficients. For every fixed beta>0 there are exactly two stationary fugacity branches for the weights; the upper branch is not a local minimum because its Hessian is negative definite on 296 balanced edge directions. The lower minimum and native admission/pullback are not proved. 21 kernel-checked declarations with scalar HasDerivAt, 2496 exact controls and 13 false ledgers; matrix differentiation and branch-existence/Hessian arguments retain their analytic status.",
+      "compiled_propositions": 21,
+      "primary_and_prior_input_pins": 50,
+      "exact_controls": 2496,
+      "false_ledgers_rejected": 13,
+      "declared_weight_first_jet_dimension": 359,
+      "balanced_negative_second_variation_dimension": 296,
+      "progress": "T1_SHARED_SCENE_SOURCE_QUOTIENT_AND_SCOPED_UPPER_NO_MIN",
+      "every_weight_is_native_or_native_pullback_derived": false,
+      "lower_branch_minimum_derived": false,
+      "matrix_HasFDerivAt_Hessian_or_branch_existence_kernel_formalized": false,
+      "whole_native_source_rho0_GR_or_parent_terminal_derived": false,
+      "one_step_R_price_is_not_two_tick_R_squared_price": true
     }
   },
   "history_spectral_completion_input_head": "e7ef84c680910b36ee0cf9a030d6e0780d0302dd"

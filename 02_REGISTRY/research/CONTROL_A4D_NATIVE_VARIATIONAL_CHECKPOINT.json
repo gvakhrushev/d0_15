@@ -1,6 +1,6 @@
 {
-  "acceptance": "AWAITING_CONTROL_REVIEW_AND_CURRENT_HEAD_CI",
-  "artifact_copy": "BYTE_IDENTICAL_TO_PUBLISHED_SOURCE",
+  "acceptance": "AWAITING_SOURCE_PUBLICATION_CURRENT_HEAD_CI_AND_CONTROL_REVIEW",
+  "artifact_copy": "BYTE_IDENTICAL_TO_LOCAL_SOURCE_COMMIT_AWAITING_PUBLICATION",
   "artifacts": [
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md",
@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "791d1bea23b4ab342b200407abb2f4a8da038a8ca1632cc9718d5c79a075c4ba",
-      "source_blob": "55fe068fb35a001ce41532658fce8bf695ae45a1"
+      "sha256": "3d46b4abcc3137eeea4c94bb2422bb3b4811686b50805c9cc9230d810010c5dd",
+      "source_blob": "0aad0102e2f3f4c4a2ab505ee4dc4cc3b292ab54"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "d6c9842c1482b471df4e551ea18702a49deba589cddffea9af24d8fb9c82f9e0",
-      "source_blob": "fd4579d1861067b90758d7c02b5e5ceb0dd50153"
+      "sha256": "ba566e420b1d2698b3e195ae105de40407cf4dccfd7c7127e10435cef567412e",
+      "source_blob": "2f39aea525c9cb706810f674956ef7c4b5106865"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1321,6 +1321,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_results.json",
       "sha256": "e8bb8f7e777637034a9945a5ec7671dd872f5fa4c61f6ec7a5ad218088797f37",
       "source_blob": "2fd0bdef8467ceae71b18c0c500f409d7fca22b3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md",
+      "sha256": "2dae34edfd32c765af96b858cf63199ec3045aef63d81a7fa5d6ae361de20b54",
+      "source_blob": "a05b4548cf952bfdc40b4195895800cef30ba326"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source.lean",
+      "sha256": "d7291520689d74837228f0607409769799595c6a6cfa488e9d770eca3dd0c30f",
+      "source_blob": "fc0aa31858f547d1a4ca0dea608c80df18ec7f0b"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_certificate.json",
+      "sha256": "7eaf2e1ef5c1798a30ac9cf148b5de711835ad698a4e6fb06ef004a063c67a04",
+      "source_blob": "a8e18152ce2a6729f43d8cac4fccb55fc8471ccd"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_check.py",
+      "sha256": "fa73496009dda3e89bebf4fbb5d5a94350abc7a4214f3444d0b0fcd3716c44c7",
+      "source_blob": "6403713832063f6eb723ccfc4206a76440ff8c7f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_output.txt",
+      "sha256": "6cac070aea4549a795bda4ff2c361dfa181d7c5400ee7c6a0ba72c2e1c2ddaa3",
+      "source_blob": "633918e491798c6f76bf0b815d72799e6df24fc8"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_results.json",
+      "sha256": "a565e91e6167e3aeb7b90836a6c74360d3cc199cf731f4277fa83056bf3af29b",
+      "source_blob": "ab3632141865cb137e3dacb292accecf3a0f668a"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1329,7 +1359,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "1583e18d8825181422406f8c10e7f359dbb6b5e6",
+  "previous_source_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1397,12 +1427,13 @@
     "The complete declared four-real-coordinate retaining recording/comparison family has 16 forward and 16 reverse coherent completions, hence 256 pairs. All 192 pairs with at least one orientation-reversing primitive have a uniform old-memory transfer using the same owned golden angle in 13 forward operations, retaining arbitrary workspace states. Both proper primitives in the other 64 pairs normalize the actual owned left Q8 axes; every Q8 operation and every normalized active rotation preserves the same finite frame. A generic kernel word induction and closed-set limit theorem exclude the full old-memory golden operator and any vanishing-error approximation by arbitrarily long words in that entire declared palette. Independent own-angle references distinguish orientations; self-preparation by the tested gate erases the distinction and is rejected as calibration. Full programme error is preserved at all literal normalized golden depths. 59 new kernel propositions, 37 D0 source pins, 2409 exact controls; 24 false-scope and 16 false-exact ledgers rejected. This operator obstruction does not exhaust D0, larger addressed processors or all state preparations; no physical admission or GR closure.",
     "The complete two-address minimal real retaining recording/comparison family has 65536 independently phase-completed realizations. Generic full-workspace generator identities and a forward-only inverse compiler give uniform old-memory actuation with the same owned active angle, retaining orientation, in at most 29 primitives. All 256 common-hardware pairs need only 13 or 21 primitives. The proper sector has a common five-step route for all 512 independent proper triples. No blank helper is needed: active and additional roles are restored for every correlated eight-coordinate state. All retained golden depths intertwine the full programme and preserve its complete error mass. The conditional constant factor keeps the prior phi resource inequality, without native decoder/address/budget/schedule admission. The prior four-coordinate Q8 all-word and limit obstruction remains valid in its palette; actively addressed copies extend that palette. 95 new kernel propositions, 37 D0 source pins, 65782 exact controls; 28 false-scope and 16 false-exact ledgers rejected. Coherent representation and physical permission to address the operations are application inputs, not inferred from Boolean truth or the passive condensed limit; no G0b, GR or whole-core closure.",
     "The full retained addressed apparatus now has a concrete faithful degree-normalized carrier inside the existing typed 33 scene and all 718 native histories, for all six ordered distinct archive pairs. The sixteen-dimensional apparatus support retains a 702-dimensional complement, including the entire actual 653 joint-readout null archive. All three archives keep their even memory; no bare regular archive is replaced by pure spin blocks. Full operations preserve composition, transpose and orthogonality, commute with owned projection/reversal and every complete declared joint symmetric history law, and transport all prior addressed programmes with at most 29 operations. That law class is constructively nonempty. Its entire flow palette, enlarged by all active-role real operations including the actual p0 gate, preserves old parity; no word or matrix limit actuates nontrivial old memory. This palette is proper within the compatibility algebra and is not asserted to exhaust native executable operations. 134 new kernel propositions, 60 actual D0 pins, 353 exact controls; 24 false-scope and 16 false-exact ledgers rejected. Physical operation admission, action/variations and native gravitational transfer remain open.",
-    "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected."
+    "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected.",
+    "The normalized 33-vertex heat price and full 718-history one-step reversal-feedback price now have a single degree-normalized jet in the declared positive-conductance K(9,11,13) class. At unit weights the complete 359-edge first derivative is (c_H+c_F) d kappa with three exact per-edge coefficients. For every fixed beta>0 there are exactly two stationary fugacity branches for the weights; the upper branch is not a local minimum because its Hessian is negative definite on 296 balanced edge directions. The lower minimum and native admission/pullback are not proved. 21 kernel-checked declarations with scalar HasDerivAt, 2496 exact controls and 13 false ledgers; matrix differentiation and branch-existence/Hessian arguments retain their analytic status."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
-  "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+  "source_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
+  "source_head_and_math_blob_verified_remote": false,
+  "source_parent": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
   "source_pr": 310,
   "execution_strategy_revision": {
     "constrained_price_source": {
@@ -1428,9 +1459,28 @@
     "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
     "parent_graph_and_terminals_unchanged": true,
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "ed7ee28fe78c05d544c649597eb264386edfce4db1f055ade2a6371d94ccc2da",
-    "prior_scientific_artifacts_byte_unchanged_count": 255,
+    "plan_sha256": "ab091f9571170f902ee7559cbd5cf2b7c51662e0c97152f80f5f953fc31f5d4a",
+    "prepared_source_verified_remote": false,
+    "prior_scientific_artifacts_byte_unchanged_count": 262,
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4"
+    "scientific_source_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
+    "shared_scene_price_source": {
+      "balanced_negative_second_variation_dimension": 296,
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source",
+      "compiled_propositions": 21,
+      "declared_weight_first_jet_dimension": 359,
+      "discharged": "The normalized 33-vertex heat price and full 718-history one-step reversal-feedback price now have a single degree-normalized jet in the declared positive-conductance K(9,11,13) class. At unit weights the complete 359-edge first derivative is (c_H+c_F) d kappa with three exact per-edge coefficients. For every fixed beta>0 there are exactly two stationary fugacity branches for the weights; the upper branch is not a local minimum because its Hessian is negative definite on 296 balanced edge directions. The lower minimum and native admission/pullback are not proved. 21 kernel-checked declarations with scalar HasDerivAt, 2496 exact controls and 13 false ledgers; matrix differentiation and branch-existence/Hessian arguments retain their analytic status.",
+      "every_weight_is_native_or_native_pullback_derived": false,
+      "exact_controls": 2496,
+      "false_ledgers_rejected": 13,
+      "input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
+      "lower_branch_minimum_derived": false,
+      "matrix_HasFDerivAt_Hessian_or_branch_existence_kernel_formalized": false,
+      "one_step_R_price_is_not_two_tick_R_squared_price": true,
+      "primary_and_prior_input_pins": 50,
+      "progress": "T1_SHARED_SCENE_SOURCE_QUOTIENT_AND_SCOPED_UPPER_NO_MIN",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md",
+      "whole_native_source_rho0_GR_or_parent_terminal_derived": false
+    }
   }
 }

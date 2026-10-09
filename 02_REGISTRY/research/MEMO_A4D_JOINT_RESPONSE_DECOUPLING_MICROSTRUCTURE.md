@@ -13,6 +13,19 @@ and 528 exact controls retain the noninvolutive exception, all metric/link
 components and conormal independence. This is T1 partial progress: the actual
 remaining heat/scene/pairing first jet and its native admission remain T0.
 Neither the full bootstrap source nor the original parent terminal is closed.
+The [shared-scene source continuation](A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md)
+now couples normalized scene heat and full one-step history feedback through the
+same conductance/degree jet. At the canonical unit scene its first variation
+on all 359 edge directions is one explicit kappa covector. The stationary
+parameter pairs have two branches; the upper one has 296 independent
+negative second-variation directions and cannot minimize the price in that
+weight class. The 21 compiled propositions, scalar HasDerivAt proofs and
+2496 exact controls do not establish physical admission of the conductances,
+a lower-branch minimum, a native pullback or a metric source.
+The next native calculation is the contraction of the own admitted
+conductance first jet on the full joint tangent, with all other action terms
+and physical readouts preserved. A new independent operator-jet or carrier
+catalogue does not discharge this obligation.
 The [8 October plan](D0_NATIVE_CORE_EXECUTION_PLAN_2026-10-08.md) below is history.
 The [history/response proof](A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md) builds
 the canonical operational quotient and an actual realized response tower,

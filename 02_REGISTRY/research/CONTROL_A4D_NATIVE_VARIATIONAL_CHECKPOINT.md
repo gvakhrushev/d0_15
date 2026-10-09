@@ -11,15 +11,16 @@ CONTROL review; this record does not announce a completed original parent.
 
 Current execution order, 2026-10-09:
 [the constrained-price tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
-focuses one packet on the native state/operator first jet, complete intrinsic
-price derivative, archive contribution and rho0 comparison. The deterministic
+focuses one packet on the own contracted scene-source first jet on the
+complete joint tangent, its physical metric readout and rho0 comparison. The deterministic
 finite preflight passes 292 controls: joint metric variations remain surjective,
 conormals vanish intrinsically, and a fixed two-tick price gap has zero jet.
 This planning calculation does not supply the native Gamma map, its source,
-stationarity, GR or any original parent terminal. The intake now contains
-264 source artifacts, including the scoped T1 result and the explicitly
-strategic core-to-stress note. All are byte-identical to the pinned source;
-255 earlier artifacts are unchanged, and the memo/execution pointer is updated.
+stationarity, GR or any original parent terminal. The prepared intake now
+contains 270 local source artifacts, including both scoped T1 parts and the
+strategic core-to-stress note. All are byte-identical to the prepared source
+commit; 262 earlier artifacts are unchanged. Remote verification and
+current-head CI remain explicitly pending before publication/acceptance.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
@@ -29,6 +30,29 @@ primitive-action and conditional-Ward interface boundary. It discharges a
 named input audit while leaving complete physical-system ownership OPEN.
 The plan remains CONTROL metadata; the proof and certificates are source artifacts.
 
+
+## Prepared shared-scene price source, 2026-10-09
+
+Local source candidate `d88c5d3bb046ccf3eded006587007e68b5754acf` continues the published input
+`b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4`. Publication awaits the live CI verdict of that input.
+This prepared intake does not assert a remote publication or acceptance.
+It has 270 byte-identical local source artifacts, of which 262 earlier
+artifacts are unchanged; the two existing execution pointers are updated.
+
+[The shared-scene price proof](A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md)
+uses one common conductance/degree jet for normalized 33-vertex heat and
+full one-step feedback on all 718 histories. Its canonical first derivative
+on all 359 edge directions is one explicit kappa covector. Two stationary
+fugacity branches exist for each fixed positive beta; the upper is not a
+local minimum because its Hessian is negative definite on 296 balanced
+weight directions. A full pair of retained reversals still has zero feedback.
+21 printed Lean propositions and actual scalar HasDerivAt proofs, 50 primary
+and prior pins, 2496 exact controls and 13 false-ledger rejections pass.
+The matrix calculus/Hessian and MVT/IVT branch existence are analytic.
+Native conductance admission/pullback, lower-branch minimum, own metric
+source/Ward, rho0 and all physical/parent terminals remain open.
+The strengthened plan targets the own contracted first jet on the complete
+joint tangent, not another independent operator or apparatus catalogue.
 
 ## Intrinsic source and scoped two-tick feedback stationarity, 2026-10-09
 
@@ -42,8 +66,9 @@ and off-shell link-lift ambiguity are retained. 33 printed Lean propositions,
 The general log-det differentiation is analytic, not a new kernel
 `HasDerivAt` theorem. T1 advances partially; native Gamma, full heat/pairing
 source, delay projection, rho0 comparison and every physical terminal remain.
-The next calculation is the remaining native full-price first jet, as stated
-in the current plan. No new action, selector, worker, branch or postulate.
+The shared-scene continuation reduces its next source calculation to the
+own admitted pullback; all other native full-price contributions remain,
+as stated in the current plan. No new action, selector, worker, branch or postulate.
 
 ## Faithful native archive/history carrier and complete declared flow boundary, 2026-10-09
 

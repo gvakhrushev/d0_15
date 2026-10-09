@@ -1,0 +1,117 @@
+D0.Research.NativeScenePriceSource.normalized_transport_jet.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (D DI T dD E dT : D0.Research.NativeScenePriceSource.Mat n) (hi : DI * D = 1) (hj : dD * T + D * dT = E) :
+  dT = DI * (E - dD * T)
+'D0.Research.NativeScenePriceSource.normalized_transport_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeScenePriceSource.normalized_jet_keeps_unit.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (DI T dD E : D0.Research.NativeScenePriceSource.Mat n) (v : n → ℝ) (hu : Matrix.mulVec T v = v)
+  (hd : Matrix.mulVec dD v = Matrix.mulVec E v) : (DI * (E - dD * T)).mulVec v = 0
+'D0.Research.NativeScenePriceSource.normalized_jet_keeps_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.shared_scene_feedback_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (T V R : D0.Research.NativeScenePriceSource.Mat n) (z : ℝ) (hRT : R * T = T * R) :
+  z * (R * -(V * T + T * V)).trace = -2 * z * (T * R * V).trace
+'D0.Research.NativeScenePriceSource.shared_scene_feedback_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.shared_scene_full_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (T V R H : D0.Research.NativeScenePriceSource.Mat n) (z : ℝ) (hRT : R * T = T * R) :
+  (H * V).trace + z * (R * -(V * T + T * V)).trace = ((H - (2 * z) • (T * R)) * V).trace
+'D0.Research.NativeScenePriceSource.shared_scene_full_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeScenePriceSource.common_source_pullback.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (M DI T dD E dT : D0.Research.NativeScenePriceSource.Mat n) (hj : dT = DI * (E - dD * T)) :
+  (M * dT).trace = (M * DI * E).trace - (T * M * DI * dD).trace
+'D0.Research.NativeScenePriceSource.common_source_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeScenePriceSource.spectral_first_jet_quotient.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (T V : D0.Research.NativeScenePriceSource.Mat n) (a0 a1 a2 a3 k : ℝ) (h0 : Matrix.trace V = 0)
+  (h2 : (T * T * V).trace = -(T * V).trace) (h3 : (T * T * T * V).trace = (1 - k) * (T * V).trace) :
+  ((a0 • 1 + a1 • T + a2 • (T * T) + a3 • (T * T * T)) * V).trace = (-a1 + a2 - (1 - k) * a3) * -(T * V).trace
+'D0.Research.NativeScenePriceSource.spectral_first_jet_quotient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.two_visible_sector_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (P0 Pd Pp Pm V : D0.Research.NativeScenePriceSource.Mat n) (rp rm m0 md mp mm : ℝ) (hparts : P0 + Pd + Pp + Pm = 1)
+  (h0 : (P0 * V).trace = 0) (hd : (Pd * V).trace = 0) (hv : Matrix.trace V = 0) (hne : rp - rm ≠ 0) :
+  ((m0 • P0 + md • Pd + mp • Pp + mm • Pm) * V).trace = (mm - mp) / (rp - rm) * -((P0 + rp • Pp + rm • Pm) * V).trace
+'D0.Research.NativeScenePriceSource.two_visible_sector_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.genuine_visible_feedback_source (k z : ℝ)
+  (hq : D0.Research.NativeScenePriceSource.visiblePencil k z ≠ 0) :
+  HasDerivAt (fun x => -Real.log (D0.Research.NativeScenePriceSource.visiblePencil x z))
+    (D0.Research.NativeScenePriceSource.feedbackKappaSource k z) k
+'D0.Research.NativeScenePriceSource.genuine_visible_feedback_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.scenePartition_pos (beta r : ℝ) :
+  0 < D0.Research.NativeScenePriceSource.scenePartition beta r
+'D0.Research.NativeScenePriceSource.scenePartition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeScenePriceSource.genuine_scene_heat_source (beta r : ℝ) (hb : beta ≠ 0) :
+  HasDerivAt (D0.Research.NativeScenePriceSource.sceneHeat beta)
+    (D0.Research.NativeScenePriceSource.heatSeparationSource beta r) r
+'D0.Research.NativeScenePriceSource.genuine_scene_heat_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.genuine_scene_separation (k : ℝ) (hk : k < 1 / 4) :
+  HasDerivAt D0.Research.NativeScenePriceSource.sceneSeparation
+    (-(1 / (2 * D0.Research.NativeScenePriceSource.sceneSeparation k))) k
+'D0.Research.NativeScenePriceSource.genuine_scene_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeScenePriceSource.genuine_heat_kappa_source (beta k : ℝ) (hb : beta ≠ 0) (hk : k < 1 / 4) :
+  HasDerivAt
+    (fun x => D0.Research.NativeScenePriceSource.sceneHeat beta (D0.Research.NativeScenePriceSource.sceneSeparation x))
+    (D0.Research.NativeScenePriceSource.heatKappaSource beta k) k
+'D0.Research.NativeScenePriceSource.genuine_heat_kappa_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.genuine_scene_whole_kappa_source (beta z k : ℝ) (hb : beta ≠ 0) (hk : k < 1 / 4)
+  (hq : D0.Research.NativeScenePriceSource.visiblePencil k z ≠ 0) :
+  HasDerivAt (D0.Research.NativeScenePriceSource.sceneWholePrice beta z)
+    (D0.Research.NativeScenePriceSource.heatKappaSource beta k +
+      D0.Research.NativeScenePriceSource.feedbackKappaSource k z)
+    k
+'D0.Research.NativeScenePriceSource.genuine_scene_whole_kappa_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.weighted_history_feedback.{u_1, u_2} {n : Type u_1} [Fintype n] [DecidableEq n]
+  {m : Type u_2} [Fintype m] [DecidableEq m] (J : Matrix m n ℝ) (C : Matrix n m ℝ)
+  (R : D0.Research.NativeScenePriceSource.Mat m) (hCJ : C * J = 1) (hRR : R * R = 1) :
+  J * C * R * (1 - J * C) * R * (J * C) = J * (1 - C * R * J * (C * R * J)) * C
+'D0.Research.NativeScenePriceSource.weighted_history_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.full_history_det_reduction.{u_1, u_2} {n : Type u_1} [Fintype n] [DecidableEq n]
+  {m : Type u_2} [Fintype m] [DecidableEq m] (J : Matrix m n ℝ) (C : Matrix n m ℝ)
+  (F : D0.Research.NativeScenePriceSource.Mat n) (z : ℝ) (hCJ : C * J = 1) : (1 - z • (J * F * C)).det = (1 - z • F).det
+'D0.Research.NativeScenePriceSource.full_history_det_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.stationary_equation_quadratic (h z : ℝ) :
+  h * D0.Research.NativeScenePriceSource.visiblePencil (39 / 160) z - 2 * z * (1 - (1 + 39 / 160) * z) =
+    (199 / 80 + 14001 / 25600 * h) * z ^ 2 - (2 + 119 / 80 * h) * z + h
+'D0.Research.NativeScenePriceSource.stationary_equation_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.stationary_quadratic_discriminant (h : ℝ) :
+  (2 + 119 / 80 * h) ^ 2 - 4 * (199 / 80 + 14001 / 25600 * h) * h = 4 * (1 - h) + h ^ 2 / 40
+'D0.Research.NativeScenePriceSource.stationary_quadratic_discriminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.native_half_feedback_coefficient :
+  D0.Research.NativeScenePriceSource.feedbackKappaSource (39 / 160) (1 / 2) = 38720 / 40241
+'D0.Research.NativeScenePriceSource.native_half_feedback_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.native_feedback_turn :
+  D0.Research.NativeScenePriceSource.feedbackKappaSource (39 / 160) (160 / 199) = 0
+'D0.Research.NativeScenePriceSource.native_feedback_turn' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeScenePriceSource.dark_heat_coefficient_lt_one (beta r : ℝ) :
+  D0.Research.NativeScenePriceSource.darkHeatCoefficient beta r < 1
+'D0.Research.NativeScenePriceSource.dark_heat_coefficient_lt_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeScenePriceSource.upper_branch_balanced_second_variation_negative (beta r z energy : ℝ)
+  (hz : 1 / 2 < z) (hz1 : z < 1) (he : 0 < energy) :
+  (D0.Research.NativeScenePriceSource.darkHeatCoefficient beta r - 2 * z / (1 - z)) * energy < 0
+'D0.Research.NativeScenePriceSource.upper_branch_balanced_second_variation_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
