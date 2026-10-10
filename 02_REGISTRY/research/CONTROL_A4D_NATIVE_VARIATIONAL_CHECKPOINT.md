@@ -3,52 +3,67 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c`, following
-`eeab0de21ee704794e291434e6ae0b65fdb360d6`.
+`570b3e7f25569841294670a21142dc19dbead3b9`, following
+`b640cacb5e404c10d71d6e9503cf34f3dc82a443`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 
 Current execution order, revalidated 2026-10-10:
 [The tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
-now consumes the [positive-Hodge joint radial balance](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md).
-For the complete stated class with admitted common metric dilation, positive
-graded pairing, nonzero fixed d and fixed beta, the thermal derivative is
-exactly 2*E_beta>0. Full stationarity therefore needs the actual remainder
-response R_prime=-2*E_beta. Curved coefficient links are included: no d^2=0
-hypothesis is used. Zero remainder response excludes stationarity only in
-that class. No pairing, compensator, native normalization or gate is selected.
+consumes the [expanded positive-Hodge price proof](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md).
+The same packet now gives all ten spatially uniform metric heat coefficients
+from its full sixteen-grade weighted CAR symbol. At beta=log(2) and a fixed
+flat positive metric its metric-traceless derivative exceeds 1/20000 for every L>=2.
+The linear equal-volume pair has half contrast at least epsilon/2500000;
+an arbitrary common volume-only term cancels exactly. Hence this heat
+contribution is not pure trace. This is a stated positive-binding test,
+not a derived Lorentzian native preparation or the full local source.
+The same test exists for every fixed beta>0 by an explicit unit-volume
+metric rescaling; both positive bounds divide by c=beta/log(2).
+The test metric depends on beta. No native metric/temperature admission
+or beta_h-uniform theorem follows.
 
-Nineteen new propositions compile with standard logical axioms only; 71
-transitive D0 files are pinned. The separately printed old degree owner
-retains its explicit native_decide leaf; the new rebuilt degree proof does
-not use it. The exact checker passes 180 controls and rejects 18 false scope
-ledgers, retaining all modes and a same-carrier positive graded compensating
-Cayley control. That control is not an admitted full joint root. The moving
-spectral argument and all-L literal-bootstrap flat contrast bound are
-analytic; physical probe admission, constant remainder and normalization
-remain explicit hypotheses of the contrast test.
+Four additional genuine spectral-pencil and heat HasDerivAt propositions
+compile, for 23 capsule propositions with standard axioms only. The three
+printed prior propositions and 71 D0 pins remain explicit, including the
+old degree owner's inherited native_decide leaf, absent from the rebuilt
+new degree proof. The checker passes 319 controls and rejects 22 false
+scope ledgers. The weighted Fourier/metric binding, full covector and
+uniform-in-L inequalities have analytic proofs; two finite lattices alone
+do not establish those all-L conclusions.
 
 The intake has 300 scientific artifacts byte-identical to verified SOURCE
-`2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c`: six new files, two updated pointers and 292 prior
-files unchanged. Every one of the forty-four node dictionaries, all original
-parent contracts and T0-T3 statuses are unchanged. Current-head CI and CONTROL
-review are required; this is an intake candidate, not scientific acceptance.
+`570b3e7f25569841294670a21142dc19dbead3b9`: eight existing files updated and 292 unchanged.
+All forty-four node dictionaries and all original contracts remain intact.
+Current-head CI and CONTROL review are required; no physical acceptance
+or original-parent closure is announced.
 
-Next derive the actual common native preparation for full Delta/P/U/G and
-q,D,b,m, its allowed changes and real transitions. For a preparation with the
-stated positive Hodge scaling, compute the complete remainder jet and test
-the necessary balance before all ten rho0 components. The plan preserves
-relational preparations, actual finite paired probes, complete readout range,
-cross-fibre price descent and independent internal-shell equations. The earlier
-strict-scalar, full Hodge metric and archive-refinement results retain their
-own scopes; they do not by themselves derive native admission.
+Next derive the actual common preparation and complete price variation.
+If it uses this positive Hodge binding, obtain the genuine compensating
+traceless response from that law. A volume-only term cannot supply it.
+The scalar phi ladder is not by itself a norm statement about this heat
+operator. Temperature, normalization, Lorentz readout, all local metric,
+link and matter equations, real refinement and native admission retain
+their own obligations. The earlier radial, archive, metric and strict-scalar
+results keep their scopes. No action, selector, compensator, temperature
+law, volume constraint, memory deletion or vanishing gate is introduced.
 
-No action, selector, temperature/source law, physical algebra, memory deletion
-or desired-vanishing gate is installed. Native preparation, own source/Ward,
-quantitative transfer/stationarity, curved joint roots, soundness/recovery,
-physical limits and #310/#202/#317 remain open. The 292 preflight controls
-retain their original joint-chart scope; only the linked plan hash changes.
+T0-T3, own source/Ward, quantitative transfer/stationarity, curved roots,
+soundness/recovery, physical limits and #310/#202/#317 remain open. The
+292 preflight controls retain their original joint-chart scope; only their
+plan hash changes. Relational preparations and finite paired probes remain.
+
+A separate primary-input check compiled literal SolidPhi source and printed
+both its arithmetic owner and legacy cyclotomic alias. They assert only
+arithmetic compatibility and properties of the explicitly defined rational
+constant; no TC/THH or native heat-preparation law is constructed. The existing
+TC realization target is UNPROVED, despite the legacy CORE-FORMALIZED wording.
+The existing external-research status guard fails on inputs identical to main;
+ordinary guard/CI success does not repair that baseline discrepancy. Five
+primary pins and the actual printed propositions are recorded in this intake.
+This routes T0 to real preparation owners and preserves the independent
+LightProfinite results. It is not a no-go for all condensed/native routes.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the

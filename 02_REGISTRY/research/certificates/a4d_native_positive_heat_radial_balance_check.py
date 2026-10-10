@@ -19,7 +19,8 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[3]
 BASE = '02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance'
 PROOF = '02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md'
-INPUT = 'eeab0de21ee704794e291434e6ae0b65fdb360d6'
+INPUT = '2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c'
+SHAPE_INPUT = '2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c'
 PRIOR = ['a4d_native_composed_feedback_dynamics', 'a4d_native_weighted_dirac_boundary']
 PREFIX = 'D0.Research.NativePositiveHeatRadialBalance.'
 STANDARD = {'propext', 'Classical.choice', 'Quot.sound'}
@@ -43,6 +44,10 @@ SCOPE = {
     'compensating_source_or_stationarity_gate_selected': False,
     'coupled_one_direction_control_is_admitted_full_joint_root': False,
     'whole_core_F_absence_GR_or_original_parent_terminal_closed': False,
+    'all_ten_constant_positive_metric_heat_coefficients_derived_analytically': True,
+    'shape_calculus_and_uniform_L_bound_fully_kernel_formalized': False,
+    'flat_shape_gap_is_native_Lorentz_GR_no_go': False,
+    'native_beta_log2_or_volume_counterterm_selected': False,
 }
 
 
@@ -76,7 +81,7 @@ def write_receipt():
     source = (ROOT / (BASE + '.lean')).read_text()
     output = (ROOT / (BASE + '_output.txt')).read_text()
     names = re.findall(r'^#check ([\w.]+)', source, re.M)
-    assert len(names) == len(set(names)) == 22
+    assert len(names) == len(set(names)) == 26
     assert ': error' not in output and ': warning' not in output and 'sorryAx' not in output
     axioms = {name: [a.strip() for a in items.split(',') if a.strip()]
               for name, items in re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", output)}
@@ -84,7 +89,7 @@ def write_receipt():
     assert set(axioms) == set(names)
     declarations = [name for name in names if name.startswith(PREFIX)]
     owners = [name for name in names if name not in declarations]
-    assert len(declarations) == 19 and len(owners) == 3
+    assert len(declarations) == 23 and len(owners) == 3
     for name in names:
         extra = set(axioms[name]) - STANDARD
         assert extra == ({PRIMARY_GRADE_AXIOM} if name == 'D0.Geometry.dConn_raises_degree' else set())
@@ -182,6 +187,118 @@ def rational_energy(spectrum, beta_multiple=1):
     return numerator / Z
 
 
+def shape_controls(ck, mixed_frame):
+    """Actual exterior adjoints and every constant-metric heat component.
+
+    Fourier complexification keeps the full real operator spectrum, including
+    conjugate modes and all sixteen grades. No native Lorentz admission follows.
+    """
+    creators = []
+    for r in range(4):
+        C = sp.zeros(16)
+        for ket in range(16):
+            if not ket & (1 << r):
+                C[ket | (1 << r), ket] = (-1)**bin(ket & ((1 << r)-1)).count('1')
+        creators.append(C)
+    for frame in [mixed_frame, sp.diag(2, sp.Rational(1, 2), 1, 1)]:
+        Q, mu, W, E = compound_weight(frame)
+        qi = Q.inv()
+        adjoints = [W.inv() * C.T * W for C in creators]
+        for r in range(4):
+            for s in range(4):
+                ck('shape_actual_weighted_CAR_mixed_slots',
+                   creators[r]*adjoints[s]+adjoints[s]*creators[r] == qi[r, s]*sp.eye(16))
+                ck('shape_actual_weighted_annihilator_anticommutators',
+                   adjoints[r]*adjoints[s]+adjoints[s]*adjoints[r] == sp.zeros(16))
+                ck('shape_actual_creator_anticommutators',
+                   creators[r]*creators[s]+creators[s]*creators[r] == sp.zeros(16))
+        symbol = [sp.Integer(-2), -1+sp.I, sp.Integer(0), -1-sp.I]
+        d = sum((symbol[r]*creators[r] for r in range(4)), sp.zeros(16))
+        delta = W.inv()*d.conjugate().T*W
+        lam = (sp.Matrix(symbol).conjugate().T*qi*sp.Matrix(symbol))[0]
+        ck('shape_full_sixteen_grade_Fourier_square',
+           ((d+delta)**2-lam*sp.eye(16)).applyfunc(sp.simplify) == sp.zeros(16))
+
+    q = [Fraction(4), Fraction(1, 4), Fraction(1), Fraction(1)]
+    cases = []
+    for L, phase in [(2, [(0, 0), (-4, 0)]),
+                     (4, [(0, 0), (-4, 4), (-8, 0), (-4, -4)])]:
+        energies = []
+        for value in q:
+            terms = [Fraction(re*re+im*im)/value for re, im in phase]
+            assert all(t.denominator == 1 for t in terms)
+            z = sum(Fraction(2)**(-int(t)) for t in terms)
+            energies.append(sum(t*Fraction(2)**(-int(t)) for t in terms)/z)
+        partition = Fraction(0)
+        gradient = [[Fraction(0) for _ in range(4)] for _ in range(4)]
+        modes = 0
+        for mode in itertools.product(phase, repeat=4):
+            lam = sum(Fraction(re*re+im*im)/value for (re, im), value in zip(mode, q))
+            assert lam.denominator == 1
+            weight = 16*Fraction(2)**(-int(lam))
+            partition += weight
+            modes += 16
+            for i in range(4):
+                for j in range(4):
+                    gradient[i][j] += weight*Fraction(mode[i][0]*mode[j][0]+mode[i][1]*mode[j][1])/(q[i]*q[j])
+        gradient = [[value/partition for value in row] for row in gradient]
+        ck('shape_all_sites_modes_and_zero_modes_retained', modes == 16*L**4 and partition > 16)
+        packed = {}
+        for i in range(4):
+            for j in range(i, 4):
+                expected = energies[i]/q[i] if i == j else energies[i]*energies[j]/(4*L*L)
+                ck('shape_all_ten_exact_heat_covector_slots', gradient[i][j] == expected)
+                packed[f'{i}{j}'] = str(gradient[i][j]*(1 if i == j else 2))
+        jet = q[0]*gradient[0][0]-q[1]*gradient[1][1]
+        ck('shape_tracefree_source_strict_not_pure_trace', jet == energies[0]-energies[1] and jet > Fraction(1, 20000))
+        ck('shape_radial_sum_matches_prior_thermal_identity',
+           sum(2*q[i]*gradient[i][i] for i in range(4)) == 2*sum(energies))
+        cases.append(dict(L=L, retained_dimension=modes, full_partition=str(partition),
+                          directional_energies=[str(e) for e in energies],
+                          packed_ten_metric_covector=packed, tracefree_derivative=str(jet)))
+
+    t = sp.Symbol('t', real=True)
+    Q0 = sp.diag(4, sp.Rational(1, 4), 1, 1)
+    V = sp.diag(4, -sp.Rational(1, 4), 0, 0)
+    ck('shape_full_joint_identity_link_tangent', sp.eye(4)*V*sp.eye(4) == V)
+    ck('shape_metric_tracefree_not_coordinate_tracefree', sp.trace(Q0.inv()*V) == 0 and sp.trace(V) != 0)
+    ck('shape_volume_preserving_curve_has_same_tangent',
+       sp.diag(4*sp.exp(t), sp.exp(-t)/4, 1, 1).det() == 1 and
+       sp.diag(4*sp.exp(t), sp.exp(-t)/4, 1, 1).diff(t).subs(t, 0) == V)
+    ck('shape_linear_pair_has_exactly_equal_volumes',
+       sp.expand((Q0+t*V).det()) == 1-t**2 and sp.expand((Q0-t*V).det()) == 1-t**2)
+    r64 = Fraction(1, 2**64)
+    lower0 = Fraction(60, 17*2**16)
+    upper0 = 512*r64*(1+r64)/(1-r64)**3
+    ck('shape_uniform_all_L_base_bound_arithmetic', lower0-upper0 > Fraction(1, 20000))
+    r48 = Fraction(1, 2**48)
+    lower = Fraction(28, 15*2**22)
+    upper = 1024*r48*(1+r48)/(1-r48)**3
+    ck('shape_uniform_all_L_linear_pencil_bound_arithmetic', lower-upper > Fraction(1, 2500000))
+    c = sp.Symbol('c', positive=True)
+    u, v = sp.symbols('u v', nonnegative=True)
+    Qc = sp.diag(4*c, c/4, 1/c, 1/c)
+    Vc = sp.diag(4*c, -c/4, 0, 0)
+    ck('shape_every_fixed_beta_test_metric_unit_volume', Qc.det() == 1)
+    ck('shape_every_fixed_beta_test_metric_tracefree', sp.trace(Qc.inv()*Vc) == 0)
+    ck('shape_every_fixed_beta_linear_pair_equal_volume',
+       sp.expand((Qc+t*Vc).det()) == 1-t**2 and sp.expand((Qc-t*Vc).det()) == 1-t**2)
+    ck('shape_every_fixed_beta_two_axis_Boltzmann_exponents_preserved',
+       sp.simplify(c*sp.log(2)*(u/(4*c*(1+t))+v/((c/4)*(1-t))) -
+                   sp.log(2)*(u/(4*(1+t))+v/(sp.Rational(1, 4)*(1-t)))) == 0)
+    return dict(cases=cases, uniform_base_derivative_lower_bound='1/20000',
+                uniform_pencil_derivative_lower_bound='1/2500000',
+                pencil_parameter_interval='[-1/4,1/4]', beta='log(2)',
+                fixed_positive_beta_extension=dict(c='beta/log(2)',
+                    Q='diag(4*c,c/4,1/c,1/c)', V='diag(4*c,-c/4,0,0)',
+                    derivative_lower_bound='1/(20000*c)',
+                    paired_half_contrast_lower_bound='epsilon/(2500000*c)',
+                    native_admission_or_varying_beta_law_proved=False),
+                analytic_all_L_estimate_not_finite_rank_extrapolation=True,
+                beta_is_selected_native_temperature=False,
+                primitive_coupled_preparation_or_native_Lorentz_source_derived=False)
+
+
 def controls():
     checks = {}
     def ck(name, condition, count=1):
@@ -190,13 +307,14 @@ def controls():
     receipt = json.loads((ROOT / (BASE + '_results.json')).read_text())
     output = (ROOT / (BASE + '_output.txt')).read_text()
     ck('actual_compiler_and_input', receipt['status'] == 'PASS' and receipt['compiler_exit_code'] == 0 and receipt['input_head'] == INPUT)
-    ck('actual_declaration_counts', len(receipt['declarations']) == 19 and len(receipt['primary_owner_propositions']) == 3)
+    ck('actual_declaration_counts', len(receipt['declarations']) == 23 and len(receipt['primary_owner_propositions']) == 3)
     ck('no_sorry_error_warning', ': error' not in output and ': warning' not in output and 'sorryAx' not in output)
     for name in receipt['declarations'] + receipt['primary_owner_propositions']:
         extra = set(receipt['axioms'][name]) - STANDARD
         ck('resolved_proposition_and_transitive_axioms', name in output and extra ==
            ({PRIMARY_GRADE_AXIOM} if name == 'D0.Geometry.dConn_raises_degree' else set()))
     ck('genuine_derivative_not_totalized_deriv', 'HasDerivAt' in receipt['printed_propositions'][PREFIX + 'actual_heat_radial_derivative'])
+    ck('genuine_shape_derivative_not_totalized_deriv', 'HasDerivAt' in receipt['printed_propositions'][PREFIX + 'actual_shape_heat_derivative'])
     ck('curved_degree_has_no_nilpotency_premise', 'dConn U' in receipt['printed_propositions'][PREFIX + 'actual_covariant_d_raises_degree'] and
        'HasDerivAt' not in receipt['printed_propositions'][PREFIX + 'actual_covariant_d_raises_degree'])
     for group in ['transitive_d0_source_sha256', 'primary_and_prior_input_sha256', 'toolchain_input_sha256']:
@@ -322,8 +440,10 @@ def controls():
         epsilon = Fraction(1, n)
         ck('fixed_price_contrast_has_wrong_h_order', epsilon/h == n**2)
         ck('h_squared_normalization_changes_bound', h*h*epsilon/h == Fraction(1, n**4))
+    shape = shape_controls(ck, F)
     return {'checks': checks, 'total_controls': sum(checks.values()), 'full_matrix_cases': full_cases,
             'flat_spectral_controls': spectral_results,
+            'constant_positive_metric_shape_source': shape,
             'radial_cancellation_control': {'full_spectrum': [0, 0, 1, 1],
                                             'positive_graded_dirac_square': True,
                                             'thermal': '2/3', 'feedback_parameter_derivative': str(parameter_jet),
@@ -333,7 +453,8 @@ def controls():
 
 def make_ledger():
     result = controls()
-    result.update(schema='d0-native-positive-heat-radial-balance-v1', input_head=INPUT, scope=SCOPE,
+    result.update(schema='d0-native-positive-heat-radial-balance-v2', input_head=INPUT,
+                  shape_followup_input_head=SHAPE_INPUT, scope=SCOPE,
                   input_sha256={p: sha(p) for p in [PROOF, BASE + '.lean', BASE + '_output.txt', BASE + '_results.json', BASE + '_check.py']})
     return result
 

@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "1b770a1bed0da86d220e2dcb4fb871474139e4b0ffca545b3bead7b62ff6cb46",
-      "source_blob": "a803e64bfd4bc42929f4101d9a13c690eeff6053"
+      "sha256": "46547c1e4a16ea04643fad4c803f02119325cd6c36ef004106d88604b5fd6f51",
+      "source_blob": "ab3565c886843d4872f502c3c2d7e5ad40681d28"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "54bd718551ccfca4b56997e12115aff2beebeb88c40df444610905142742936f",
-      "source_blob": "75ad703101c11bfa89f42770522dbbade784984b"
+      "sha256": "9df78792a4c6ab22fa00955b3b9160cf2fea5714c0b8a361edbf59ad72fb12d0",
+      "source_blob": "966610d7fb580688f525ee7a1044eb47d268530a"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1474,33 +1474,33 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md",
-      "sha256": "55e3fa748e17dbdedbf64cc75358920938020f3ac0f35bc1e152b1bdf5761626",
-      "source_blob": "8bb471fa0fd7562b3cd2ebf2683252a439035204"
+      "sha256": "2a5dfbbafc9c1c6fe20e31d6a99a949d25abd4f1a5dbe40bb5e08dd392f8d5b4",
+      "source_blob": "a4fa1a6332e3836757a901cc155762339cc52013"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance.lean",
-      "sha256": "c84484d68527c729848c6e67b6bf7981e7561b71407df4e7056e27ff1ac9a2ef",
-      "source_blob": "eb60d170e2faa61b9ff28b94750104f2c8fc0f06"
+      "sha256": "e212da4164e5aadb47a969982cbf6089c52b6ab22b7ecb44c55fe5c877520543",
+      "source_blob": "60b708da3259114f2d6446563ddd2bfd81bab4c0"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_certificate.json",
-      "sha256": "ef138b761beee24fcef9568116b57e5656d086af0a101feab0ddbd66586e155a",
-      "source_blob": "9798f810754acb93cff17ccfc620c6b632ccba93"
+      "sha256": "87de2c08a7767a1b9e9bd47105013f225cd44df43a03a5ac09d54ff9d193a8cb",
+      "source_blob": "a2706fc04b355c2dc94889857b66b32b9ea360e4"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_check.py",
-      "sha256": "3a564c06bfbc01d0a9afef3b04e0cb4f61a0145ff8d0b32de7fb3b942044dcfb",
-      "source_blob": "bc24bfbc82b02f4f858ff723f3568a65a572daa7"
+      "sha256": "59b9c56cd95e29a0924e12e11fa56f109461d7ae8c89bc6d9c8442ba8eaef7c6",
+      "source_blob": "24055b0c5d72fb5609ae9a7e4d0ed99758622962"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_output.txt",
-      "sha256": "9f5d642311e1d1f7b6905fe2c89f170a08dd8561dcff1b864012c995b7b1a6bb",
-      "source_blob": "725e23a154fb40c2f08f04ae47fa4fc5f9d3ad0c"
+      "sha256": "2d74685d786f3465cacb6243ed6b53fa7f706071c2761db3255a7ac5f9efd514",
+      "source_blob": "ec22ccb28d1e52dff66ea5699794d6acbf6cfb9c"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_results.json",
-      "sha256": "9bcf9690d64ad9b27500f7d0c652642e4cdfae8d101bba737c450a631ea11fb4",
-      "source_blob": "32f4e284c36f42f5a8bf3373bc727a7c30fe9f36"
+      "sha256": "cbf0f589aa94a6332f29e2e5a9b43e3ad9023d43933078e85468487dfbf51d58",
+      "source_blob": "c83ae4d3b3dd18512fe46d7a75915ff801800bc8"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1545,10 +1545,10 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "583ded4f910e0275bca4ffb5bc7a75cb497e91c6",
+    "control_input_head": "81ecbbc9540ad478f91cf47e2f6d1819a5d2a0c3",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-    "finite_preflight_certificate_sha256": "94957e8a048cce3bb54338819e67798c124b6fba693d4db3b230a1049e64d359",
+    "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
     "finite_preflight_exact_controls": 292,
     "full_price_transition_precheck": {
       "actual_archive_transition_is_literal_replication_proved": false,
@@ -1632,7 +1632,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+    "observed_source_strategy_head": "570b3e7f25569841294670a21142dc19dbead3b9",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1681,7 +1681,7 @@
     },
     "parent_graph_and_terminals_unchanged": true,
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "1fc5bc1f637df22466b123db7cbee5e975886fdcd7bee3386eb85bbda5765bfa",
+    "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "prepared_source_verified_remote": true,
     "prior_scientific_artifacts_byte_unchanged_count": 292,
     "relational_preparation_revision": {
@@ -1717,7 +1717,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+    "scientific_source_head": "570b3e7f25569841294670a21142dc19dbead3b9",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -1797,13 +1797,125 @@
       "unchanged_prior_scientific_artifact_count": 292,
       "modified_prior_scientific_artifact_count": 2,
       "new_scientific_artifact_count": 6
-    }
+    },
+    "positive_heat_shape_source": {
+      "input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md#5-all-ten-flat-heat-coefficients-and-a-nonzero-traceless-response",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_certificate.json",
+      "class": "The existing geometric positive Hodge binding at constant positive Q on the full periodic sixteen-grade carrier; actual ordinary heat trace at fixed beta. Physical/native Lorentz readout is a separate obligation.",
+      "analytic_result": "All ten spatially uniform metric heat components are A_rr=E_r/q_r and A_rs=E_r*E_s/(4L^2), with packed off-diagonal weight two. At Q=diag(4,1/4,1,1), beta=log(2), the volume-preserving tangent V=diag(4,-1/4,0,0) has heat derivative >1/20000 for every L>=2. It is not a pure-trace source.",
+      "paired_contrast": "The linear pair Q+-epsilon V has equal determinants 1-epsilon^2 and heat half contrast >=epsilon/2500000 for epsilon<=1/4, uniformly in L. Any common volume-only price term cancels exactly. Comparison to flat zero-source Palatini remains conditional on the native physical readout and normalization.",
+      "exact_controls": 319,
+      "false_scope_ledgers_rejected": 22,
+      "new_Lean_propositions_in_this_continuation": 4,
+      "unchanged_radial_capsule_propositions": 19,
+      "shape_operator_binding_covector_and_all_L_bounds": "ANALYTIC_WITH_EXACT_FINITE_CAR_AND_ALL_TEN_SLOT_CONTROLS_NOT_FULL_LEAN",
+      "all_local_metric_link_matter_source_components_computed": false,
+      "native_beta_norm_ceiling_volume_constraint_or_compensator_selected": false,
+      "native_preparation_or_full_Lorentz_GR_or_parent_terminal_closed": false,
+      "next_arrow": "Derive the actual common preparation and its allowed complete price variation. In a proved realization using this positive binding, a volume-only response cannot cancel its tracefree shape gap; compute the genuine coupled remainder instead of assigning it to match rho0.",
+      "capsule_propositions": 23,
+      "new_finite_shape_heat_HasDerivAt_compiled": true,
+      "fixed_positive_beta_extension": "For every fixed beta>0, c=beta/log(2), Q=diag(4*c,c/4,1/c,1/c) and V=diag(4*c,-c/4,0,0) retain unit volume and metric-tracelessness. The derivative bound is 1/(20000*c) and paired half-contrast bound epsilon/(2500000*c); the metric depends on beta. Native admission, beta_h and joint temperature-metric laws are not supplied.",
+      "source_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+      "source_parent": "b640cacb5e404c10d71d6e9503cf34f3dc82a443",
+      "control_input_head": "81ecbbc9540ad478f91cf47e2f6d1819a5d2a0c3",
+      "scientific_artifact_count": 300,
+      "unchanged_prior_scientific_artifact_count": 292,
+      "modified_prior_scientific_artifact_count": 8,
+      "new_scientific_artifact_count": 0
+    },
+    "solid_phi_primary_T0_boundary": {
+      "verified_source_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+      "main_input": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
+      "input_blobs": [
+        {
+          "path": "03_FORMALIZATION/D0/Condensed/SolidPhi.lean",
+          "blob": "6a6440a1c9f3c7e70dc17973289752b034e9fb37",
+          "sha256": "4697bae69e901d35d2f283ba5a11a2bd6eef6ec5303a3965440c46c876dfb560",
+          "identical_to_main": true
+        },
+        {
+          "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+          "blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+          "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+          "identical_to_main": true
+        },
+        {
+          "path": "02_REGISTRY/claims.csv",
+          "blob": "4ebc92aa316ffebe18312318863b18c695f9b503",
+          "sha256": "c9f0cc0e796ff78a200d1a7a4a9f475fb89e15cbe46b87230da34a317b52c424",
+          "identical_to_main": true
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Verification/ExternalResearchStatusInflationAudit.lean",
+          "blob": "3bb2bed3a575cb02fab102d987c2a8a08c6f31da",
+          "sha256": "b2e3cecd2c6acd32000751d8d5712e2f899c3410ee518283ce4d2a4bf40674ad",
+          "identical_to_main": true
+        },
+        {
+          "path": "04_CERTIFICATES/vp_external_research_status_guard.py",
+          "blob": "a43617ff307c3021d0ff3ed57c7c6d4c6a44ed33",
+          "sha256": "611e96bada0a66b5ddb0b27d9664cabbaecc2f164ca8280b0d0495be438f6375",
+          "identical_to_main": true
+        }
+      ],
+      "literal_source_compilation": {
+        "source_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+        "primary_path": "03_FORMALIZATION/D0/Condensed/SolidPhi.lean",
+        "primary_sha256": "4697bae69e901d35d2f283ba5a11a2bd6eef6ec5303a3965440c46c876dfb560",
+        "compiled_literal_source": true,
+        "exit_code": 0,
+        "output_sha256": "a0a05589b40c6ee415fd206128489db2816c4a9b81cb8c52ff8f77559c13dfa9",
+        "prints": [
+          "SolidGoldenTower",
+          "zphi_arithmetic_owner",
+          "solid_phi_cyclotomic_trace_owner"
+        ],
+        "procedure": "Copy the literal pinned SolidPhi.lean source to a temporary Lean file, append #print SolidGoldenTower and #check plus #print axioms for both named owners, then execute lake env lean on that file from 03_FORMALIZATION. The original module and all core files remain unchanged.",
+        "toolchain_inputs_sha256": {
+          "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325",
+          "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa"
+        }
+      },
+      "printed_primary_propositions": "structure D0.Condensed.SolidPhi.SolidGoldenTower : Type\nnumber of parameters: 0\nfields:\n  D0.Condensed.SolidPhi.SolidGoldenTower.stage : ℕ → D0.Condensed.SolidPhi.ZPhi\n  D0.Condensed.SolidPhi.SolidGoldenTower.stage_bound : ∀ (N : ℕ), 0 ≤ (self.stage N).toReal\nconstructor:\n  D0.Condensed.SolidPhi.SolidGoldenTower.mk (stage : ℕ → D0.Condensed.SolidPhi.ZPhi)\n    (stage_bound : ∀ (N : ℕ), 0 ≤ (stage N).toReal) : D0.Condensed.SolidPhi.SolidGoldenTower\nD0.Condensed.SolidPhi.zphi_arithmetic_owner :\n  (∀ (x y : D0.Condensed.SolidPhi.ZPhi), (x.mul y).toReal = x.toReal * y.toReal) ∧\n    0 < D0.Condensed.SolidPhi.mu2Rational ∧ D0.Condensed.SolidPhi.mu2Rational = 12288 / 5\n'D0.Condensed.SolidPhi.zphi_arithmetic_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\nD0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner :\n  (∀ (x y : D0.Condensed.SolidPhi.ZPhi), (x.mul y).toReal = x.toReal * y.toReal) ∧\n    0 < D0.Condensed.SolidPhi.mu2Rational ∧ D0.Condensed.SolidPhi.mu2Rational = 12288 / 5\n'D0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "actual_scope": "The named owner and its legacy alias prove multiplication compatibility under the real embedding, positivity of an explicitly defined rational constant, and its definitional value. SolidGoldenTower has a ZPhi-valued sequence and nonnegativity only. No TC/THH functor, solid-category exactness/nuclearity, field-dependent heat operator or coupled native preparation is constructed by these declarations.",
+      "registry_legacy_release_status": "CORE-FORMALIZED",
+      "independent_TC_realization": {
+        "claim_id": "D0-CYCLOTOMIC-MU2-REALIZATION-001",
+        "lean_status": "UNPROVED",
+        "release_status": "PROOF-TARGET"
+      },
+      "existing_status_guard": {
+        "path": "04_CERTIFICATES/vp_external_research_status_guard.py",
+        "exit_code": 1,
+        "status": "FAIL_EXTERNAL_RESEARCH_STATUS_GUARD",
+        "applies_to_current_main_inputs": true,
+        "other_guard_failures_not_adjudicated_here": true
+      },
+      "T0_effect": "Do not consume the book/legacy cyclotomic wording as a native preparation or a thermal field/refinement law. If this TC route is actually needed, its existing realization target and its own heat/price bridge must be proved first. The independently owned LightProfinite/operator-naturality results retain their proven scope.",
+      "complete_native_F_absence_or_condensed_math_failure_proved": false,
+      "claims_books_owners_or_supported_core_changed": false,
+      "new_native_or_GR_terminal": false
+    },
+    "preserved_incoming_strategy_commits": [
+      "0276705b3f63bfa5a1ba54f3c671132e802993b0",
+      "b640cacb5e404c10d71d6e9503cf34f3dc82a443"
+    ],
+    "source_scientific_input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+    "additional_source_strategy_correction": [
+      {
+        "path": "02_REGISTRY/research/A4D_TRACELESS_COMPOUND_JET.md",
+        "blob": "bf294171aa5beb30744123ac60ce86ad7e505b36",
+        "sha256": "075b93f1d33d25488b7dfb37d75363814e3ad14823abcd72045c92eeb996b591"
+      }
+    ]
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
+  "previous_source_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1878,11 +1990,12 @@
     "Actual fixed Hodge/CAR operator-first scalar Connes metric: exact Euclidean product-circle distance for every finite periodic L>=2 and all site pairs. Full analytic norm/interpolation/supremum proof, eight compiled component propositions, six complete sparse sizes, odd/even/L2/wrap controls and an exact hostile column-norm witness. The prior arithmetic l1/l2 owner does not prove the asserted operator identification. Imported square retains three explicit native_decide CAR leaves. No curved/Lorentz physical metric, full native preparation/refinement, source or terminal is claimed.",
     "Actual archive/full-Hodge refinement: all native long arrows have a kernel-proved growing collapsed fibre. Analytic packing excludes a uniform O(h) full scalar point metric distortion under every bijective point identification on L-to-2L arrows, including L in 4N. Eleven new standard-axiom propositions and three printed actual primary propositions, exact native-modulus/wrap/packing/rate controls, seventeen rejected ledgers. Slower convergence, prepared nonbijective physical algebras, action contrast and full Gamma/F/source/GR are not excluded or derived.",
     "Strict scalar persistence on the actual native archive: every base-zero compatible family is exactly one of sixteen-coordinate scalar readings. Two explicit distinct retained inverse-limit records are invisible to all of them; a new finite cylinder persists from its birth but cannot extend backward. Twenty compiled propositions, standard axioms only. Analytic whole scalar-algebra and full Hodge-norm arguments give diameter <=15/L under all site bijections and the stated four-dimensional resolution lower bound. This neither selects physical observations nor excludes other admitted condensed/noncommutative readouts or action contrasts.",
-    "Positive graded Hodge heat on the admitted joint common metric dilation: the full thermal derivative is 2*E_beta>0, without a flatness premise. Full stationarity needs the actual remaining price response -2*E_beta; zero remainder response excludes stationarity only in this class. All modes remain. Nineteen new kernel propositions, 71 D0 pins and 180 exact controls pass; the moving-grade spectral theorem and uniform literal-bootstrap flat contrast bound are analytic. A four-dimensional positive graded Cayley example cancels one derivative, not a native full joint root. Preparation, normalization, all ten source components and all original terminals remain open."
+    "Positive graded Hodge heat on the admitted joint common metric dilation: the full thermal derivative is 2*E_beta>0, without a flatness premise. Full stationarity needs the actual remaining price response -2*E_beta; zero remainder response excludes stationarity only in this class. All modes remain. Nineteen new kernel propositions, 71 D0 pins and 180 exact controls pass; the moving-grade spectral theorem and uniform literal-bootstrap flat contrast bound are analytic. A four-dimensional positive graded Cayley example cancels one derivative, not a native full joint root. Preparation, normalization, all ten source components and all original terminals remain open.",
+    "Continuation of the same positive geometric Hodge packet: all ten constant-metric heat covector slots are derived from the full weighted CAR Fourier square. At beta=log(2), the flat Q=diag(4,1/4,1,1) has a traceless derivative >1/20000 uniformly in L. The exact equal-volume linear pair has heat half contrast >=epsilon/2500000, unchanged by any common volume-only term. Four new genuine finite shape-derivative propositions compile, making 23 in the capsule; 319 exact controls and 22 false-ledger rejections pass. The full operator/metric binding and all-L estimates are analytic; local metric/link/matter source, native Lorentz admission, temperature/normalization and every terminal remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+  "source_head": "570b3e7f25569841294670a21142dc19dbead3b9",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
+  "source_parent": "b640cacb5e404c10d71d6e9503cf34f3dc82a443",
   "source_pr": 310
 }

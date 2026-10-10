@@ -21,6 +21,11 @@
       "Classical.choice",
       "Quot.sound"
     ],
+    "D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square": [
       "propext",
       "Classical.choice",
@@ -91,6 +96,21 @@
       "Classical.choice",
       "Quot.sound"
     ],
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative": [
       "propext",
       "Classical.choice",
@@ -113,7 +133,7 @@
     ]
   },
   "capsule": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance.lean",
-  "capsule_sha256": "c84484d68527c729848c6e67b6bf7981e7561b71407df4e7056e27ff1ac9a2ef",
+  "capsule_sha256": "e212da4164e5aadb47a969982cbf6089c52b6ab22b7ecb44c55fe5c877520543",
   "command": [
     "python3",
     "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_check.py",
@@ -140,16 +160,20 @@
     "D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square",
     "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int",
     "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise",
-    "D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree"
+    "D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree",
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero",
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative",
+    "D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative"
   ],
   "full_graded_spectral_and_uniform_L_bound_kernel_formalized": false,
   "inherited_primary_degree_axioms": [
     "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1"
   ],
-  "input_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
+  "input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
   "native_preparation_source_or_GR_derived": false,
   "output": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_output.txt",
-  "output_sha256": "9f5d642311e1d1f7b6905fe2c89f170a08dd8561dcff1b864012c995b7b1a6bb",
+  "output_sha256": "2d74685d786f3465cacb6243ed6b53fa7f706071c2761db3255a7ac5f9efd514",
   "primary_and_prior_input_sha256": {
     "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
     "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
@@ -176,6 +200,7 @@
   "printed_propositions": {
     "D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree": "D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree.{u_1} {N : \u2115} {V : Type u_1}\n  [AddCommGroup V] [Module \u211d V] (U : D0.Geometry.LinkConnection N \u211d V) (k : \u2115) (\u03c8 : D0.Geometry.CoeffCochain N V)\n  (h\u03c8 : D0.Geometry.CoeffHomogeneous k \u03c8) : D0.Geometry.CoeffHomogeneous (k + 1) (D0.Geometry.dConn U \u03c8)",
     "D0.Research.NativePositiveHeatRadialBalance.actual_heat_radial_derivative": "D0.Research.NativePositiveHeatRadialBalance.actual_heat_radial_derivative.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9]\n  [DecidableEq \u03b9] [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hb : beta \u2260 0) :\n  HasDerivAt\n    (fun t =>\n      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta\n        (D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t))\n    (2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda) 0",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative": "D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9]\n  [DecidableEq \u03b9] [Nonempty \u03b9] (beta : \u211d) (a b c : \u03b9 \u2192 \u211d) (hb : beta \u2260 0) :\n  HasDerivAt\n    (fun t =>\n      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta\n        (D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c t))\n    (D0.Research.NativePositiveHeatRadialBalance.modeMean beta (fun i => a i + b i + c i) a -\n      D0.Research.NativePositiveHeatRadialBalance.modeMean beta (fun i => a i + b i + c i) b)\n    0",
     "D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square": "D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square (N : \u2115)\n  (W : D0.Geometry.ArchiveCochain N \u2243\u2097[\u211d] D0.Geometry.ArchiveCochain N) (u : D0.Geometry.ArchiveCochain N) :\n  D0.Research.NativeWeightedDiracBoundary.weightedDirac N W\n      (D0.Research.NativeWeightedDiracBoundary.weightedDirac N W u) =\n    D0.Geometry.dForward N (D0.Research.NativeWeightedDiracBoundary.weightedCodiff N W u) +\n      D0.Research.NativeWeightedDiracBoundary.weightedCodiff N W (D0.Geometry.dForward N u)",
     "D0.Research.NativePositiveHeatRadialBalance.all_retained_zero_modes_keep_strict_sign": "D0.Research.NativePositiveHeatRadialBalance.all_retained_zero_modes_keep_strict_sign.{u_1, u_2} {\u03b9 : Type u_1}\n  [Fintype \u03b9] [DecidableEq \u03b9] [Nonempty \u03b9] {\u03ba : Type u_2} [Fintype \u03ba] [DecidableEq \u03ba] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d)\n  (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i) (hp : \u2203 i, 0 < lambda i) :\n  0 <\n    D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta\n      (D0.Research.NativePositiveHeatRadialBalance.retainZeroModes lambda)",
     "D0.Research.NativePositiveHeatRadialBalance.complete_radial_balance": "D0.Research.NativePositiveHeatRadialBalance.complete_radial_balance.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] (beta : \u211d)\n  (lambda : \u03b9 \u2192 \u211d) (r : \u211d) :\n  2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda + r = 0 \u2194\n    r = -2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda",
@@ -190,6 +215,9 @@
     "D0.Research.NativePositiveHeatRadialBalance.retained_zero_modes_partition": "D0.Research.NativePositiveHeatRadialBalance.retained_zero_modes_partition.{u_1, u_2} {\u03b9 : Type u_1} [Fintype \u03b9]\n  {\u03ba : Type u_2} [Fintype \u03ba] [DecidableEq \u03ba] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) :\n  D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta\n      (D0.Research.NativePositiveHeatRadialBalance.retainZeroModes lambda) =\n    D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta lambda + \u2191(Fintype.card \u03ba)",
     "D0.Research.NativePositiveHeatRadialBalance.scale_stationary_remainder_excludes_stationarity": "D0.Research.NativePositiveHeatRadialBalance.scale_stationary_remainder_excludes_stationarity.{u_1} {\u03b9 : Type u_1}\n  [Fintype \u03b9] [DecidableEq \u03b9] [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hb : beta \u2260 0) (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i)\n  (hp : \u2203 i, 0 < lambda i) (remainder : \u211d \u2192 \u211d) (hr : HasDerivAt remainder 0 0) :\n  \u00acHasDerivAt\n      (fun t =>\n        D0.Research.NativeComposedFeedbackDynamics.heatContribution beta\n            (D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t) +\n          remainder t)\n      0 0",
     "D0.Research.NativePositiveHeatRadialBalance.scaled_square_similarity": "D0.Research.NativePositiveHeatRadialBalance.scaled_square_similarity.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] [DecidableEq \u03b9]\n  (A J JI : Matrix \u03b9 \u03b9 \u211d) (r : \u211d) (h : JI * J = 1) : r \u2022 (J * A * JI) * r \u2022 (J * A * JI) = r ^ 2 \u2022 (J * (A * A) * JI)",
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative": "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative.{u_1} {\u03b9 : Type u_1} (a b c : \u03b9 \u2192 \u211d) (i : \u03b9) :\n  HasDerivAt (fun t => D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c t i) (-a i + b i) 0",
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero": "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero.{u_1} {\u03b9 : Type u_1} (a b c : \u03b9 \u2192 \u211d) :\n  D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c 0 = fun i => a i + b i + c i",
+    "D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source": "D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] (beta : \u211d)\n  (lambda a b : \u03b9 \u2192 \u211d) :\n  (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta lambda fun i => -a i + b i) =\n    D0.Research.NativePositiveHeatRadialBalance.modeMean beta lambda a -\n      D0.Research.NativePositiveHeatRadialBalance.modeMean beta lambda b",
     "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative": "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] [DecidableEq \u03b9]\n  [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i) :\n  0 \u2264 D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda",
     "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_positive": "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_positive.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] [DecidableEq \u03b9]\n  [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i) (hp : \u2203 i, 0 < lambda i) :\n  0 < D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda",
     "D0.Research.NativePositiveHeatRadialBalance.zero_operator_control": "D0.Research.NativePositiveHeatRadialBalance.zero_operator_control.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] (beta : \u211d) :\n  (D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta fun x => 0) = 0"

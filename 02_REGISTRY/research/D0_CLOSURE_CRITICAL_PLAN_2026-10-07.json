@@ -727,10 +727,10 @@
     "date": "2026-10-10",
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "1fc5bc1f637df22466b123db7cbee5e975886fdcd7bee3386eb85bbda5765bfa",
-    "control_input_head": "583ded4f910e0275bca4ffb5bc7a75cb497e91c6",
-    "published_scientific_input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
-    "observed_source_strategy_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+    "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
+    "control_input_head": "81ecbbc9540ad478f91cf47e2f6d1819a5d2a0c3",
+    "published_scientific_input_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+    "observed_source_strategy_head": "570b3e7f25569841294670a21142dc19dbead3b9",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -756,7 +756,7 @@
         "prerequisite": "T0",
         "requirement": "Full owned price covector with vertical/cross-fibre descent and full probe coverage in a regular route; or full native finite contrasts with quantitative readout/lift-choice/refinement bounds; retain all price terms",
         "status": "OPEN",
-        "partial_discharged": "Intrinsic conormal-invariant cotangent chart and scoped golden two-tick zero; normalized scene plus full endpoint-history price has zero covectors and finite contrasts on the complete fixed-beta/z binary dense-passport contract. Conductance calculus remains conditional outside that contract. Whole action/source OPEN. Genuine scalar hidden-heat/full-fixed-feedback derivatives and error bounds compiled; those interface state germs are not native field/source laws. Actual full source remains OPEN."
+        "partial_discharged": "Intrinsic conormal-invariant cotangent chart and scoped golden two-tick zero; normalized scene plus full endpoint-history price has zero covectors and finite contrasts on the complete fixed-beta/z binary dense-passport contract. Conductance calculus remains conditional outside that contract. Whole action/source OPEN. Genuine scalar hidden-heat/full-fixed-feedback derivatives and error bounds compiled; those interface state germs are not native field/source laws. Actual full source remains OPEN. The same positive Hodge binding has its full ten constant-metric heat coefficients and a uniformly nonzero traceless flat response. An arbitrary volume-only price cannot cancel its equal-volume paired contrast. Full local and native Lorentz source remains OPEN."
       },
       {
         "id": "T2",
@@ -780,7 +780,7 @@
     "preflight": {
       "checker": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
       "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-      "certificate_sha256": "94957e8a048cce3bb54338819e67798c124b6fba693d4db3b230a1049e64d359",
+      "certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
       "exact_controls": 292,
       "finite_star": {
         "sites": 5,
@@ -799,7 +799,7 @@
       "native_operator_map_derived": false,
       "native_source_derived": false,
       "source_equals_rho0": false,
-      "plan_sha256": "1fc5bc1f637df22466b123db7cbee5e975886fdcd7bee3386eb85bbda5765bfa"
+      "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a"
     },
     "conditional_calculus_is_not_T0": true,
     "operation_admission_only_when_used_by_specific_native_preparation_or_variation": true,
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+    "prepared_scientific_input_head": "570b3e7f25569841294670a21142dc19dbead3b9",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -1090,6 +1090,106 @@
       "unchanged_prior_scientific_artifact_count": 292,
       "modified_prior_scientific_artifact_count": 2,
       "new_scientific_artifact_count": 6
+    },
+    "positive_heat_shape_source": {
+      "input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md#5-all-ten-flat-heat-coefficients-and-a-nonzero-traceless-response",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_certificate.json",
+      "class": "The existing geometric positive Hodge binding at constant positive Q on the full periodic sixteen-grade carrier; actual ordinary heat trace at fixed beta. Physical/native Lorentz readout is a separate obligation.",
+      "analytic_result": "All ten spatially uniform metric heat components are A_rr=E_r/q_r and A_rs=E_r*E_s/(4L^2), with packed off-diagonal weight two. At Q=diag(4,1/4,1,1), beta=log(2), the volume-preserving tangent V=diag(4,-1/4,0,0) has heat derivative >1/20000 for every L>=2. It is not a pure-trace source.",
+      "paired_contrast": "The linear pair Q+-epsilon V has equal determinants 1-epsilon^2 and heat half contrast >=epsilon/2500000 for epsilon<=1/4, uniformly in L. Any common volume-only price term cancels exactly. Comparison to flat zero-source Palatini remains conditional on the native physical readout and normalization.",
+      "exact_controls": 319,
+      "false_scope_ledgers_rejected": 22,
+      "new_Lean_propositions_in_this_continuation": 4,
+      "unchanged_radial_capsule_propositions": 19,
+      "shape_operator_binding_covector_and_all_L_bounds": "ANALYTIC_WITH_EXACT_FINITE_CAR_AND_ALL_TEN_SLOT_CONTROLS_NOT_FULL_LEAN",
+      "all_local_metric_link_matter_source_components_computed": false,
+      "native_beta_norm_ceiling_volume_constraint_or_compensator_selected": false,
+      "native_preparation_or_full_Lorentz_GR_or_parent_terminal_closed": false,
+      "next_arrow": "Derive the actual common preparation and its allowed complete price variation. In a proved realization using this positive binding, a volume-only response cannot cancel its tracefree shape gap; compute the genuine coupled remainder instead of assigning it to match rho0.",
+      "capsule_propositions": 23,
+      "new_finite_shape_heat_HasDerivAt_compiled": true,
+      "fixed_positive_beta_extension": "For every fixed beta>0, c=beta/log(2), Q=diag(4*c,c/4,1/c,1/c) and V=diag(4*c,-c/4,0,0) retain unit volume and metric-tracelessness. The derivative bound is 1/(20000*c) and paired half-contrast bound epsilon/(2500000*c); the metric depends on beta. Native admission, beta_h and joint temperature-metric laws are not supplied.",
+      "source_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+      "source_parent": "b640cacb5e404c10d71d6e9503cf34f3dc82a443",
+      "control_input_head": "81ecbbc9540ad478f91cf47e2f6d1819a5d2a0c3",
+      "scientific_artifact_count": 300,
+      "unchanged_prior_scientific_artifact_count": 292,
+      "modified_prior_scientific_artifact_count": 8,
+      "new_scientific_artifact_count": 0
+    },
+    "solid_phi_primary_T0_boundary": {
+      "verified_source_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+      "main_input": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
+      "input_blobs": [
+        {
+          "path": "03_FORMALIZATION/D0/Condensed/SolidPhi.lean",
+          "blob": "6a6440a1c9f3c7e70dc17973289752b034e9fb37",
+          "sha256": "4697bae69e901d35d2f283ba5a11a2bd6eef6ec5303a3965440c46c876dfb560",
+          "identical_to_main": true
+        },
+        {
+          "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+          "blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+          "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+          "identical_to_main": true
+        },
+        {
+          "path": "02_REGISTRY/claims.csv",
+          "blob": "4ebc92aa316ffebe18312318863b18c695f9b503",
+          "sha256": "c9f0cc0e796ff78a200d1a7a4a9f475fb89e15cbe46b87230da34a317b52c424",
+          "identical_to_main": true
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Verification/ExternalResearchStatusInflationAudit.lean",
+          "blob": "3bb2bed3a575cb02fab102d987c2a8a08c6f31da",
+          "sha256": "b2e3cecd2c6acd32000751d8d5712e2f899c3410ee518283ce4d2a4bf40674ad",
+          "identical_to_main": true
+        },
+        {
+          "path": "04_CERTIFICATES/vp_external_research_status_guard.py",
+          "blob": "a43617ff307c3021d0ff3ed57c7c6d4c6a44ed33",
+          "sha256": "611e96bada0a66b5ddb0b27d9664cabbaecc2f164ca8280b0d0495be438f6375",
+          "identical_to_main": true
+        }
+      ],
+      "literal_source_compilation": {
+        "source_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+        "primary_path": "03_FORMALIZATION/D0/Condensed/SolidPhi.lean",
+        "primary_sha256": "4697bae69e901d35d2f283ba5a11a2bd6eef6ec5303a3965440c46c876dfb560",
+        "compiled_literal_source": true,
+        "exit_code": 0,
+        "output_sha256": "a0a05589b40c6ee415fd206128489db2816c4a9b81cb8c52ff8f77559c13dfa9",
+        "prints": [
+          "SolidGoldenTower",
+          "zphi_arithmetic_owner",
+          "solid_phi_cyclotomic_trace_owner"
+        ],
+        "procedure": "Copy the literal pinned SolidPhi.lean source to a temporary Lean file, append #print SolidGoldenTower and #check plus #print axioms for both named owners, then execute lake env lean on that file from 03_FORMALIZATION. The original module and all core files remain unchanged.",
+        "toolchain_inputs_sha256": {
+          "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325",
+          "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa"
+        }
+      },
+      "printed_primary_propositions": "structure D0.Condensed.SolidPhi.SolidGoldenTower : Type\nnumber of parameters: 0\nfields:\n  D0.Condensed.SolidPhi.SolidGoldenTower.stage : ℕ → D0.Condensed.SolidPhi.ZPhi\n  D0.Condensed.SolidPhi.SolidGoldenTower.stage_bound : ∀ (N : ℕ), 0 ≤ (self.stage N).toReal\nconstructor:\n  D0.Condensed.SolidPhi.SolidGoldenTower.mk (stage : ℕ → D0.Condensed.SolidPhi.ZPhi)\n    (stage_bound : ∀ (N : ℕ), 0 ≤ (stage N).toReal) : D0.Condensed.SolidPhi.SolidGoldenTower\nD0.Condensed.SolidPhi.zphi_arithmetic_owner :\n  (∀ (x y : D0.Condensed.SolidPhi.ZPhi), (x.mul y).toReal = x.toReal * y.toReal) ∧\n    0 < D0.Condensed.SolidPhi.mu2Rational ∧ D0.Condensed.SolidPhi.mu2Rational = 12288 / 5\n'D0.Condensed.SolidPhi.zphi_arithmetic_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\nD0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner :\n  (∀ (x y : D0.Condensed.SolidPhi.ZPhi), (x.mul y).toReal = x.toReal * y.toReal) ∧\n    0 < D0.Condensed.SolidPhi.mu2Rational ∧ D0.Condensed.SolidPhi.mu2Rational = 12288 / 5\n'D0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "actual_scope": "The named owner and its legacy alias prove multiplication compatibility under the real embedding, positivity of an explicitly defined rational constant, and its definitional value. SolidGoldenTower has a ZPhi-valued sequence and nonnegativity only. No TC/THH functor, solid-category exactness/nuclearity, field-dependent heat operator or coupled native preparation is constructed by these declarations.",
+      "registry_legacy_release_status": "CORE-FORMALIZED",
+      "independent_TC_realization": {
+        "claim_id": "D0-CYCLOTOMIC-MU2-REALIZATION-001",
+        "lean_status": "UNPROVED",
+        "release_status": "PROOF-TARGET"
+      },
+      "existing_status_guard": {
+        "path": "04_CERTIFICATES/vp_external_research_status_guard.py",
+        "exit_code": 1,
+        "status": "FAIL_EXTERNAL_RESEARCH_STATUS_GUARD",
+        "applies_to_current_main_inputs": true,
+        "other_guard_failures_not_adjudicated_here": true
+      },
+      "T0_effect": "Do not consume the book/legacy cyclotomic wording as a native preparation or a thermal field/refinement law. If this TC route is actually needed, its existing realization target and its own heat/price bridge must be proved first. The independently owned LightProfinite/operator-naturality results retain their proven scope.",
+      "complete_native_F_absence_or_condensed_math_failure_proved": false,
+      "claims_books_owners_or_supported_core_changed": false,
+      "new_native_or_GR_terminal": false
     }
   }
 }
