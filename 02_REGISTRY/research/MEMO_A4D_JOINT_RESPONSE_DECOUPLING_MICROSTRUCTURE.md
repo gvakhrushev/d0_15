@@ -3515,3 +3515,59 @@ The next actual preparation must supply its own correlated state/operator
 readout or a proved physically sufficient relation of another type.
 T0--T3, own source/Ward, stationarity, curved roots, soundness/recovery,
 all 44 dependency nodes and original #310/#202/#317 terminals remain open.
+
+## Scene-to-AF compression and the quantitative heat boundary (2026-10-10)
+
+[The literal scene/AF comparison](A4D_NATIVE_AF_SCENE_HEAT_COMPARISON.md)
+repairs the proposed use of the constructed Fibonacci GNS inclusion in
+the existing Feshbach interface. That inclusion relates two AF levels;
+it is not the missing scene-to-AF map. The old dimension theorem excludes
+unitary identification of entire carriers, not rectangular compression.
+
+On the full AF carrier of dimension 233 a concrete isometry satisfies
+`J* H J = L_scene`, with the actual combinatorial K(9,11,13) Laplacian.
+Its construction mixes two existing successive increments at energies
+13 and `13*phi^2`; all 233 AF directions remain. The root-zero convention,
+the overall scale and the embedding basis are mathematical comparison
+data, not a newly admitted physical preparation. The second moment has
+strict defect `(a-13)*(13*phi^2-a)` on every nonconstant scene eigenspace.
+
+For every finite self-adjoint heat operator with spectrum in
+`{0} union {c*phi^(2j):j>=0}`, every c>0 and every full-scene isometry,
+`||H J-J L_scene||>=13/2`. This is uniform over levels, multiplicities,
+bases and positive scales. The constant is attained on the full
+89-dimensional AF carrier. The proof uses the actual scene eigenvalues
+20,22,33 and the multiplicative separation of the literal heat ladder;
+it does not extrapolate from a finite scan or dimension mismatch.
+
+Exact heat-semigroup compression would imply both the first and second
+moment identities, hence `H J=J L_scene`, and is excluded in this class.
+The weak Xi witness is therefore not a heat law or a Feshbach theorem.
+The normalized scene operator, other owned heat laws, nonlinear readouts
+and native finite paired contrasts remain outside this obstruction.
+An operator-norm gap is not a physical action-contrast no-go.
+
+Feshbach elimination **with its memory term** is nevertheless exact in
+the same witness. Each retained eigenvalue a is coupled to an archive
+diagonal `d=l+u-a` with `|k|^2=(a-l)*(u-a)`. The compressed resolvent is
+`(d-s)/((l-s)*(u-s))`, including its nonzero Schur memory. On this complete
+two-dimensional spectral fiber the linked derivatives obey `delta d=-delta a`
+and `delta |k|^2=(l+u-2a)*delta a`. Memory generally varies, but the full
+heat trace is constant when l,u,beta and the other modes are fixed.
+Dropping the coupling derivative would manufacture a thermal source.
+This is a coupled comparison relation, not yet an admitted native F or
+a conclusion about the full feedback/matter price.
+
+Eleven scalar Lean propositions compile with the standard axiom union.
+The exact replay reconstructs all 33 vertices, 718 ordered edges and
+five spectral projections, retains both full AF models and checks both
+moments. It passes 121 controls, rejects nine executed mathematical
+mutations and nineteen false scope ledgers, with 32 input hashes.
+The operator-norm and semigroup arguments are analytic proofs.
+
+This finishes the specified comparison interface and corrects its proof
+scope. It does not prove native T0 or justify a search for replacement
+spectra. The next unresolved obligation remains one own joint preparation
+and its admitted changes, followed by the full constrained price law.
+Source/Ward, stationarity, curved roots, soundness/recovery, all 44 nodes
+and the original #310/#202/#317 terminals remain open.
