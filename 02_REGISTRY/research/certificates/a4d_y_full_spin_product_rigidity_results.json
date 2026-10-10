@@ -1,0 +1,18 @@
+{
+  "schema": "a4d-y-full-spin-product-rigidity-v1",
+  "terminal": "A4D-Y-FULL-SPIN-PRODUCT-PLANE-RIGIDITY",
+  "background": "z=1 product-plane solder S_f=I+(f-1)P_perp",
+  "temporal_link": "C_Y(1) C_B(-d) C_R, R=a J12+b J13+c J23",
+  "role0_boost_combination": "C1*E_K1+C2*E_K2+C3*E_K3 = -2*(3*d^2+4)/(3*d^2-4) * Mspin * (3*f0^2-f1^2-f2^2-f3^2)",
+  "spin_multiplier": "Mspin=3*d^4*(a-b+c+3)^2+4*(a-b+c-4)^2",
+  "real_multiplier_zero_locus": "d=0 and a-b+c=4",
+  "exceptional_plane_control": "the 9 spatial-role rotation rows are linear in (f0,f1,f2,f3), have rank 3, and kernel span(1,1,1,1)",
+  "conclusion": "for every real d,a,b,c in the B-Cayley chart 3*d^2!=4, stationarity inside this temporal full-SO(3)-spin ansatz forces the product profile f to be spatially constant on a connected periodic carrier",
+  "scope_fence": [
+    "necessary-row no-go for general spatial-rotation Cayley correction on temporal curved edges at z=1",
+    "does not include arbitrary transverse corrections on spatial links",
+    "does not prove a uniform nonlinear inverse for the full 136-by-96 joint operator",
+    "does not establish either task-level response terminal"
+  ],
+  "phase2_spin_convention_control": "the exceptional transport rows are identical for reciprocal [K,I,K^-1,I] and same-spin phase2 C_Y^-1 C_R conventions"
+}

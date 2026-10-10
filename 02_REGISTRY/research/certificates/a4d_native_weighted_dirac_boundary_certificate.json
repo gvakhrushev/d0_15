@@ -1,0 +1,419 @@
+{
+  "checker_sha256": "11c54c6e9ee66a6255e53e19b6adb5d23a5a3f4ecbd6792d273a0d95d3cecc25",
+  "checks": [
+    "ACTUAL_WEIGHTED_ADJOINT_SQUARE_AND_KERNEL_REDUCTION_COMPILE",
+    "LITERAL_CAR_00",
+    "LITERAL_CAR_01",
+    "LITERAL_CAR_02",
+    "LITERAL_CAR_03",
+    "LITERAL_CAR_10",
+    "LITERAL_CAR_11",
+    "LITERAL_CAR_12",
+    "LITERAL_CAR_13",
+    "LITERAL_CAR_20",
+    "LITERAL_CAR_21",
+    "LITERAL_CAR_22",
+    "LITERAL_CAR_23",
+    "LITERAL_CAR_30",
+    "LITERAL_CAR_31",
+    "LITERAL_CAR_32",
+    "LITERAL_CAR_33",
+    "ROLE_ORDER_0123",
+    "ROLE_ORDER_0132",
+    "ROLE_ORDER_0213",
+    "ROLE_ORDER_0231",
+    "ROLE_ORDER_0312",
+    "ROLE_ORDER_0321",
+    "ROLE_ORDER_1023",
+    "ROLE_ORDER_1032",
+    "ROLE_ORDER_1203",
+    "ROLE_ORDER_1230",
+    "ROLE_ORDER_1302",
+    "ROLE_ORDER_1320",
+    "ROLE_ORDER_2013",
+    "ROLE_ORDER_2031",
+    "ROLE_ORDER_2103",
+    "ROLE_ORDER_2130",
+    "ROLE_ORDER_2301",
+    "ROLE_ORDER_2310",
+    "ROLE_ORDER_3012",
+    "ROLE_ORDER_3021",
+    "ROLE_ORDER_3102",
+    "ROLE_ORDER_3120",
+    "ROLE_ORDER_3201",
+    "ROLE_ORDER_3210",
+    "ALL_GRADED_LORENTZ_INERTIAS",
+    "LORENTZ_WEIGHT_IS_INVERTIBLE_BUT_NOT_POSITIVE",
+    "ACTUAL_SIGNED_WEIGHT_CONJUGATION_0",
+    "ACTUAL_SIGNED_WEIGHT_CONJUGATION_1",
+    "ACTUAL_SIGNED_WEIGHT_CONJUGATION_2",
+    "ACTUAL_SIGNED_WEIGHT_CONJUGATION_3",
+    "FULL_METRIC_MIXED_OPERATOR_IS_NOT_VOLUME_ONLY",
+    "VARIABLE_WEIGHT_NILPOTENCY_AND_SQUARE",
+    "SIGNED_PAIRING_SYMMETRY_IS_NOT_HILBERT_POSITIVITY",
+    "ALL_FIVE_GRADE_BLOCKS_HAVE_NO_LEAKAGE",
+    "FULL_METRIC_OPERATOR_VARIATION_00",
+    "FULL_METRIC_OPERATOR_VARIATION_01",
+    "FULL_METRIC_OPERATOR_VARIATION_02",
+    "FULL_METRIC_OPERATOR_VARIATION_03",
+    "FULL_METRIC_OPERATOR_VARIATION_11",
+    "FULL_METRIC_OPERATOR_VARIATION_12",
+    "FULL_METRIC_OPERATOR_VARIATION_13",
+    "FULL_METRIC_OPERATOR_VARIATION_22",
+    "FULL_METRIC_OPERATOR_VARIATION_23",
+    "FULL_METRIC_OPERATOR_VARIATION_33",
+    "PACKED_METRIC_DUAL_TWO_AND_HOMOTHETY",
+    "OMITTED_INVERSE_VARIATION_IS_DETECTED",
+    "FULL_NATIVE_PERIODIC_SQUARE_L2",
+    "FULL_NATIVE_SIGNED_ADJOINT_L2",
+    "ACTUAL_SPATIAL_NYQUIST_BLOCK_L2",
+    "ACTUAL_NONCONSTANT_NULL_ROOT_L2",
+    "FULL_NATIVE_PERIODIC_SQUARE_L4",
+    "FULL_NATIVE_SIGNED_ADJOINT_L4",
+    "ACTUAL_SPATIAL_NYQUIST_BLOCK_L4",
+    "ACTUAL_NONCONSTANT_NULL_ROOT_L4",
+    "FULL_NATIVE_PERIODIC_SQUARE_L8",
+    "FULL_NATIVE_SIGNED_ADJOINT_L8",
+    "ACTUAL_SPATIAL_NYQUIST_BLOCK_L8",
+    "ACTUAL_NONCONSTANT_NULL_ROOT_L8",
+    "L2_COLLISION_IS_NOT_NATURAL_TRACE_SCAFFOLD",
+    "COMPLETE_FOURIER_SYMBOL_SQUARE",
+    "NULL_SYMBOL_EXPLICIT_CONTRACTION_0",
+    "NULL_SYMBOL_EXPLICIT_CONTRACTION_1",
+    "NULL_SYMBOL_EXPLICIT_CONTRACTION_2",
+    "NULL_SYMBOL_EXPLICIT_CONTRACTION_3",
+    "NULL_DIRAC_IS_NILPOTENT_WITH_KERNEL_EIGHT",
+    "KER_DIRAC_IS_SMALLER_THAN_KER_ITS_SQUARE",
+    "EXACT_ALL_MODE_SPECTRAL_COUNTS_L2",
+    "EXACT_HEAT_LOWEST_MODE_L2",
+    "EXACT_ALL_MODE_SPECTRAL_COUNTS_L4",
+    "EXACT_HEAT_LOWEST_MODE_L4",
+    "EXACT_ALL_MODE_SPECTRAL_COUNTS_L8",
+    "EXACT_HEAT_LOWEST_MODE_L8",
+    "EXACT_L4_KERNEL_DIMENSIONS",
+    "HEAT_GROWTH_NORMALIZATION_AND_CONSTANT",
+    "FIXED_POSITIVE_HEAT_TIME_SCOPE",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_0",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_1",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_2",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_3",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_4",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_5",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_6",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_7",
+    "EXACT_MIXED_SPECTRAL_ANNIHILATOR_DEGREE_8",
+    "ACTUAL_GEOMETRIC_MOMENT_HOMOGENEITY_0",
+    "ACTUAL_GEOMETRIC_MOMENT_HOMOGENEITY_1",
+    "ACTUAL_GEOMETRIC_MOMENT_HOMOGENEITY_2",
+    "ACTUAL_GEOMETRIC_MOMENT_HOMOGENEITY_3",
+    "ACTUAL_GEOMETRIC_MOMENT_HOMOGENEITY_4",
+    "DENSITY_INSERTED_TRACE_IS_A_PROTECTED_SCALE_EXCEPTION"
+  ],
+  "class": "supplied invertible graded Hodge operators on the actual frozen differential; flat Lorentz binding eta=(+---)",
+  "compiled_propositions": 34,
+  "exact_spectra": [
+    {
+      "L": 2,
+      "dirac_kernel_dimension": 40,
+      "laplacian_kernel_dimension": 64,
+      "minimum_eigenvalue": -48,
+      "negative_modes": 11,
+      "positive_modes": 1,
+      "zero_modes": 4
+    },
+    {
+      "L": 4,
+      "dirac_kernel_dimension": 232,
+      "laplacian_kernel_dimension": 448,
+      "minimum_eigenvalue": -192,
+      "negative_modes": 219,
+      "positive_modes": 9,
+      "zero_modes": 28
+    },
+    {
+      "L": 8,
+      "dirac_kernel_dimension": 616,
+      "laplacian_kernel_dimension": 1216,
+      "minimum_eigenvalue": -768,
+      "negative_modes": 3715,
+      "positive_modes": 305,
+      "zero_modes": 76
+    }
+  ],
+  "exceptions": [
+    "positive Euclidean or independently owned observer pairing",
+    "refinement-dependent heat time",
+    "separate renormalized or oscillatory spectral law",
+    "different independently owned matter/action/constraint sector",
+    "physical gauge quotient not yet constructed"
+  ],
+  "finite_annihilators": [
+    {
+      "degree": 0,
+      "error_denominator": 8,
+      "physical_anchor": "1/2",
+      "scales": [
+        "1",
+        "1/2"
+      ],
+      "weights": [
+        1,
+        -1
+      ]
+    },
+    {
+      "degree": 1,
+      "error_denominator": 24,
+      "physical_anchor": "1/3",
+      "scales": [
+        "1",
+        "1/2",
+        "1/3"
+      ],
+      "weights": [
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "degree": 2,
+      "error_denominator": 64,
+      "physical_anchor": "1/4",
+      "scales": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4"
+      ],
+      "weights": [
+        1,
+        -3,
+        3,
+        -1
+      ]
+    },
+    {
+      "degree": 3,
+      "error_denominator": 160,
+      "physical_anchor": "1/5",
+      "scales": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5"
+      ],
+      "weights": [
+        1,
+        -4,
+        6,
+        -4,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "error_denominator": 384,
+      "physical_anchor": "1/6",
+      "scales": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6"
+      ],
+      "weights": [
+        1,
+        -5,
+        10,
+        -10,
+        5,
+        -1
+      ]
+    },
+    {
+      "degree": 5,
+      "error_denominator": 896,
+      "physical_anchor": "1/7",
+      "scales": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6",
+        "1/7"
+      ],
+      "weights": [
+        1,
+        -6,
+        15,
+        -20,
+        15,
+        -6,
+        1
+      ]
+    },
+    {
+      "degree": 6,
+      "error_denominator": 2048,
+      "physical_anchor": "1/8",
+      "scales": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6",
+        "1/7",
+        "1/8"
+      ],
+      "weights": [
+        1,
+        -7,
+        21,
+        -35,
+        35,
+        -21,
+        7,
+        -1
+      ]
+    },
+    {
+      "degree": 7,
+      "error_denominator": 4608,
+      "physical_anchor": "1/9",
+      "scales": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6",
+        "1/7",
+        "1/8",
+        "1/9"
+      ],
+      "weights": [
+        1,
+        -8,
+        28,
+        -56,
+        70,
+        -56,
+        28,
+        -8,
+        1
+      ]
+    },
+    {
+      "degree": 8,
+      "error_denominator": 10240,
+      "physical_anchor": "1/10",
+      "scales": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6",
+        "1/7",
+        "1/8",
+        "1/9",
+        "1/10"
+      ],
+      "weights": [
+        1,
+        -9,
+        36,
+        -84,
+        126,
+        -126,
+        84,
+        -36,
+        9,
+        -1
+      ]
+    }
+  ],
+  "global_closure": "OPEN",
+  "graded_inertia": {
+    "0": [
+      1,
+      0
+    ],
+    "1": [
+      1,
+      3
+    ],
+    "2": [
+      3,
+      3
+    ],
+    "3": [
+      3,
+      1
+    ],
+    "4": [
+      0,
+      1
+    ]
+  },
+  "heat": "fixed t>0 ordinary heat trace is at least 16*exp(12*t*L^2); L^-4 normalized trace at least 4608*t^3*L^2",
+  "input_head": "139ba614c85381a0b2c2cdf432d2912e852a92c3",
+  "inputs_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md": "12c28b87c188492256b6bc2e435e642ff2b2deec5d6b88a81923f693a96f9a36",
+    "02_REGISTRY/research/A4D_NATIVE_COUPLED_HODGE_SCALE_BOUNDARY.md": "268b6b3321e68746bef138212398afdcdba0b9257a86f211a21d5c59ee26f591",
+    "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md": "8c4c662f9f05430ef9f9ff91c670b15e6c678c9b2b1c0ced90e08c79f507e83c",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean": "7ab9550c7a25464131ec23a21e9eeac9f38eb651ee23c8d65296415aa593ab58",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean": "2a49ae65a897ada35d868d7eb71533c1c76fbe7534053f70beb431afa93b5b4a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean": "d004761e6326aae235d1a3488e397750409bc4c03f90c489a6dd18d9971e3e81",
+    "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveNaturalTwistedDirac.lean": "c260aa1b8d1877fd7ce702fda15c32a644c395e84e6fe9ad694ee04bb4f8ae88",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean": "cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296",
+    "03_FORMALIZATION/D0/Geometry/SpectralActionLadder.lean": "855b4d79f99008aebd8bc64a06652cf1f1f5e04fc5df0d16333d409a27a4864a"
+  },
+  "kernel_reduction": "actual CAR integer identities and both nilpotencies rebuilt by kernel decide; standard axioms only",
+  "kernels": "zero momentum has D kernel sixteen; every nonzero null momentum has D kernel eight and Delta kernel sixteen",
+  "lean_receipt_sha256": "435118c0f272430d1cfb1954f39e17148b9ea8e4c0be97caa6a86f514eacd195",
+  "metric_binding": "full supplied compound Hodge matrix; all ten metric derivatives and packed off-diagonal weight two",
+  "mixed_spectral_class": "one fixed degree p, scale-invariant arbitrary mesh/shape/link coefficients, actual Tr(Delta_Q^j), arbitrary separate common volume profile, and the stated exact two metric fibers/probes",
+  "mixed_spectral_exceptions": [
+    "unbounded degree",
+    "nonpolynomial spectral law",
+    "scale-dependent coefficients",
+    "density insertion inside trace",
+    "independent domain excluding probes"
+  ],
+  "mixed_spectral_gap": "max total error >= 9*pi^2*h^(1/3)/(400*(p+2)*2^(p+2)) eventually; all fixed-degree proof analytic",
+  "native_selection": "not selected; this is an explicit tested binding of documented operators, not a new physical action",
+  "positive_gr": "OPEN",
+  "signature": "eight positive and eight negative Fock weights; weighted symmetry is indefinite symmetry",
+  "sparse_operator_records": [
+    {
+      "L": 2,
+      "cochain_dimension": 256,
+      "dirac_nnz": 2048,
+      "square_nnz": 1280
+    },
+    {
+      "L": 4,
+      "cochain_dimension": 4096,
+      "dirac_nnz": 32768,
+      "square_nnz": 36864
+    },
+    {
+      "L": 8,
+      "cochain_dimension": 65536,
+      "dirac_nnz": 524288,
+      "square_nnz": 589824
+    }
+  ],
+  "spectrum": "Delta_eta(k)=4*L^2*(sin(pi*k0/L)^2-sum_i sin(pi*ki/L)^2), each with multiplicity sixteen",
+  "status": "PASS",
+  "transitive_d0_pins": 49
+}

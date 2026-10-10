@@ -1,0 +1,214 @@
+{
+  "schema": "a4d-y-singleq-curvature-witness-v1",
+  "terminal": "A4D-Y-SINGLEQ-CURVATURE-WITNESS-CERTIFIED",
+  "scope": "exact finite corrected response at z=1 on the phase-independent source; a valid algebraic Riemann jet has nonzero pairing, but full curved-background compatibility and nonlinear continuation are not established",
+  "conventions": {
+    "axis": "e0",
+    "mixed_phase": "connection RHS lambda^(-1), metric readout lambda^(+1)",
+    "metric_coordinate_order": [
+      "q00",
+      "q01",
+      "q02",
+      "q03",
+      "q11",
+      "q12",
+      "q13",
+      "q22",
+      "q23",
+      "q33"
+    ],
+    "witness_jet_columns": [
+      "(0, 0)",
+      "(0, 1)",
+      "(0, 2)",
+      "(0, 3)",
+      "(1, 1)",
+      "(1, 2)",
+      "(1, 3)",
+      "(2, 2)",
+      "(2, 3)",
+      "(3, 3)"
+    ],
+    "witness_jet_rows": [
+      "q00",
+      "q01",
+      "q02",
+      "q03",
+      "q11",
+      "q12",
+      "q13",
+      "q22",
+      "q23",
+      "q33"
+    ],
+    "pairing": "Frobenius pairing of the corrected 10x10 single-q defect with the 10x10 normal-jet matrix"
+  },
+  "single_q": {
+    "flat_t0_cokernel_rank": 0,
+    "flat_t1_cokernel_rank": 0,
+    "curved_t0_cokernel_rank": 0,
+    "curved_t1_cokernel_rank": 0,
+    "center_amplitude_q12": [
+      "-3311/3750",
+      "0"
+    ],
+    "defect_rank": 6,
+    "defect_q12": "-34163/118125"
+  },
+  "curvature_witness": {
+    "riemann_space_dimension": 20,
+    "jet_map_rank": 20,
+    "witness_in_jet_map_image": true,
+    "normal_jet_matrix": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "pairing": "-27247/17500",
+    "nonzero_pairings_on_pinned_basis_generators": 6,
+    "basis_generator_pairings": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-27247/52500",
+      "195491/78750",
+      "-195491/78750",
+      "-27247/52500",
+      "195491/78750",
+      "-27247/52500"
+    ]
+  },
+  "nonclaims": [
+    "this witness is not shown to satisfy the full spatial-center and fast-phase-erasure normal-jet system",
+    "the full compatible curvature normal-jet certificate still has an Einstein response on its surviving direction",
+    "no nonlinear joint-critical curved-background branch or refinement-uniform o(h^2) estimate is proved"
+  ]
+}

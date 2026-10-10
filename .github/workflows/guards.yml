@@ -70,7 +70,11 @@ jobs:
 
       - name: Execute changed research certificates
         if: github.event_name != 'workflow_dispatch'
-        timeout-minutes: 35
+        # Individual scripts retain their own limits below. A broad research PR
+        # can contain many independently bounded certificates in this serial step.
+        # PR #310 reached the end of 103 passing groups at the 60-minute limit.
+        # Keep all script limits and give the serial batch measured headroom.
+        timeout-minutes: 90
         shell: bash
         run: |
           set -euo pipefail

@@ -1,0 +1,210 @@
+{
+  "schema": "a4d-y-curved-joint-torus-lipschitz-v3",
+  "terminal": "A4D-Y-CURVED-JOINT-TORUS-LIPSCHITZ-CERTIFIED",
+  "z": "1",
+  "operator_shape": [
+    136,
+    96
+  ],
+  "support": [
+    [
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      1
+    ],
+    [
+      -1,
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      1
+    ],
+    [
+      0,
+      -1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      -1
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      -1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      -1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      -1
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "support_size": 21,
+  "coordinate_bounds": [
+    {
+      "axis": 0,
+      "max_column_sum": "22/7",
+      "max_row_sum": "22/7",
+      "operator_upper_bound": "22/7"
+    },
+    {
+      "axis": 1,
+      "max_column_sum": "22/7",
+      "max_row_sum": "22/7",
+      "operator_upper_bound": "22/7"
+    },
+    {
+      "axis": 2,
+      "max_column_sum": "22/7",
+      "max_row_sum": "22/7",
+      "operator_upper_bound": "22/7"
+    },
+    {
+      "axis": 3,
+      "max_column_sum": "22/7",
+      "max_row_sum": "22/7",
+      "operator_upper_bound": "22/7"
+    }
+  ],
+  "global_bound": "||Q(theta)-Q(phi)||_2 <= (22/7) * sum_j |theta_j-phi_j|",
+  "metric": "theta coordinates, lambda_j=exp(i theta_j)",
+  "proof": "entrywise Laurent derivative envelope plus ||M||_2 <= sqrt(||M||_1 ||M||_infinity); exact Gram-harmonic cancellation/Gershgorin bound; coefficient-level zone-folding exponent check",
+  "scope_fence": [
+    "global on the physical unit torus",
+    "does not prove the all-Bloch zero locus",
+    "does not itself give a positive transverse gap",
+    "intended as the perturbation constant for local and finite-cover estimates"
+  ],
+  "gram_gershgorin_operator_bounds_squared": [
+    "503/98",
+    "318/49",
+    "318/49",
+    "318/49"
+  ],
+  "zone_folding": {
+    "substitution": "lambda_r=mu*rho_r",
+    "row_column_scaling": "phase-p rows by mu^p; phase-q connection columns by mu^-q",
+    "folded_variable": "w=mu^4",
+    "power_counts": {
+      "0": 2508,
+      "1": 312,
+      "-1": 168
+    },
+    "wrap_blocks": {
+      "1": [
+        [
+          "A",
+          3,
+          0
+        ],
+        [
+          "C",
+          3,
+          0
+        ]
+      ],
+      "-1": [
+        [
+          "A",
+          0,
+          3
+        ]
+      ]
+    }
+  }
+}

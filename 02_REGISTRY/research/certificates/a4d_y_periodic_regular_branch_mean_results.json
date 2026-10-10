@@ -1,0 +1,34 @@
+{
+  "schema": "a4d-y-periodic-regular-branch-mean-v1",
+  "terminal": "A4D-Y-PERIODIC-REGULAR-BRANCH-MEAN-OBSTRUCTION",
+  "hypotheses": [
+    "periodic spatial domain and real C^4 Gaussian-curvature profile kappa",
+    "z=1 surviving Y sheet and the owned product Riemann-normal metric convention",
+    "joint-stationary family has a uniform integer-power expansion through order h^4 with bounded C^4 coefficients and O(h^5) remainder",
+    "the order-h center profile obeys the owned first-slow joint equations"
+  ],
+  "mean_equation_at_order_h4": [
+    "(351402359/2108160) * mean(kappa^2) = 0",
+    "(21506403637/154949760) * mean(kappa^2) = 0"
+  ],
+  "conclusion": "under the stated regular-expansion hypotheses, a periodic branch on this Y sheet requires kappa identically zero",
+  "proof_inputs": {
+    "connection_cokernel_source": [
+      "351402359/2108160",
+      "21506403637/154949760"
+    ],
+    "amplitude_law": [
+      "351402359*kappa**2/2108160",
+      "21506403637*kappa**2/154949760"
+    ],
+    "center_injectivity_minor_determinant": "-975737200/35590023",
+    "normal_jet": "Q_h-eta = h^2*kappa*T(xi) + h^3*(grad(kappa) dot xi)*T(xi)/2 + h^4*[-2*kappa^2*|xi|^2/5 + 3*Hess(kappa)(xi,xi)/20]*T(xi) + O(h^5)",
+    "periodic_shift_identity": "sum_x u(x+r) = sum_x u(x) for every periodic shift r"
+  },
+  "scope_fence": [
+    "does not exclude a nonanalytic or noninteger-power h-dependent branch",
+    "does not prove an h-uniform range inverse or continuation theorem",
+    "does not cover other Y amplitudes, regular z outside this sheet, or non-product curvature",
+    "does not establish either task-level PR terminal"
+  ]
+}

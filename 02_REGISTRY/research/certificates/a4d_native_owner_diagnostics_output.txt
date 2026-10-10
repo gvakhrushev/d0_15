@@ -1,0 +1,164 @@
+D0_AUDIT_BOUND D0.Cosmology.feedback_pressure_trace_log : ∀ (P : D0.Cosmology.FeedbackPressureLaw),
+  P.pressureFromLogZDerivative = true →
+    P.traceLogFinite = true → (P.pressureFromLogZDerivative && decide (P.traceLogFinite = true)) = true
+D0_AUDIT_MISSING D0.Algebra.Sedenions.sedenion_branch_threeset_scaffold_owner
+D0_AUDIT_MISSING D0.Algebra.Sedenions.triality_sedenion_s3_disjointness_guard
+D0_AUDIT_MISSING D0.Geometry.card_cubical_cochain_carrier
+D0_AUDIT_MISSING D0.Geometry.cubical_betti_sum_eq_sixteen
+D0_AUDIT_MISSING D0.Geometry.d_squared_eq_zero
+D0_AUDIT_MISSING D0.Geometry.b1_isometry
+D0_AUDIT_MISSING D0.Geometry.intertwining_d_b0_eq_b1_d
+D0_AUDIT_MISSING D0.Geometry.hodge_mass_trace_sum
+D0_AUDIT_MISSING D0.Geometry.metric_measure_hodge_lift_owner
+D0_AUDIT_MISSING D0.Geometry.archive_naive_weighted_degree_leakage_nogo_owner
+D0_AUDIT_MISSING D0.Matter.matter_neutrality_m1_forced
+D0_AUDIT_BOUND D0.Algebra.Sedenions.branch_label_s3_scaffold : Fintype.card D0.Algebra.Sedenions.OctonionBranch = 3 ∧
+  (∀ (x y : D0.Algebra.Sedenions.OctonionBranch),
+      ∃ f,
+        (f = id ∨
+            f = D0.Algebra.Sedenions.s3_cycle ∨
+              f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_cycle ∨
+                f = D0.Algebra.Sedenions.s3_swap ∨
+                  f = D0.Algebra.Sedenions.s3_swap ∘ D0.Algebra.Sedenions.s3_cycle ∨
+                    f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_swap) ∧
+          f x = y) ∧
+    D0.Algebra.Sedenions.leftProduct ≠ D0.Algebra.Sedenions.rightProduct
+D0_AUDIT_BOUND D0.Algebra.Sedenions.bare_threeset_insufficient_for_sedenion_realization : D0.Algebra.Sedenions.leftProduct ≠
+    D0.Algebra.Sedenions.rightProduct ∧
+  (∀ (σ : Equiv.Perm D0.Algebra.Sedenions.OctonionBranch) (x y : D0.Algebra.Sedenions.OctonionBranch),
+      σ (D0.Algebra.Sedenions.leftProduct x y) = D0.Algebra.Sedenions.leftProduct (σ x) (σ y)) ∧
+    ∀ (σ : Equiv.Perm D0.Algebra.Sedenions.OctonionBranch) (x y : D0.Algebra.Sedenions.OctonionBranch),
+      σ (D0.Algebra.Sedenions.rightProduct x y) = D0.Algebra.Sedenions.rightProduct (σ x) (σ y)
+D0_AUDIT_BOUND D0.Geometry.archive_cubical_cochain_carrier_owner : Fintype.card D0.Geometry.CubicalCellType = 16 ∧
+  D0.Geometry.betti0 + D0.Geometry.betti1 + D0.Geometry.betti2 + D0.Geometry.betti3 + D0.Geometry.betti4 = 16 ∧
+    Fintype.card D0.Role = 4
+D0_AUDIT_BOUND D0.Geometry.total_betti_sum : D0.Geometry.betti0 + D0.Geometry.betti1 + D0.Geometry.betti2 +
+      D0.Geometry.betti3 +
+    D0.Geometry.betti4 =
+  16
+D0_AUDIT_BOUND D0.Geometry.archive_cubical_coboundary_owner : D0.Geometry.coboundaryDirectionCount = 4 ∧
+  Fintype.card D0.Geometry.CubicalCellType = 16 ∧ D0.Geometry.CoboundaryNilpotent true
+D0_AUDIT_BOUND D0.Geometry.archive_1d_cochain_refinement_owner : D0.Geometry.massMatrixTrace1D = 3 ∧
+  D0.Geometry.edgeGramMatrixTrace1D = 2 ∧ D0.Geometry.massMatrixTrace1D ≠ D0.Geometry.edgeGramMatrixTrace1D
+D0_AUDIT_BOUND D0.Geometry.total_hodge_gram_trace_sum_eq : D0.Geometry.totalHodgeGramTraceSum = 256
+D0_AUDIT_BOUND D0.Geometry.archive_refinement_hodge_weights_owner : D0.Geometry.hodgeGramTraceDegree 0 = 81 ∧
+  D0.Geometry.hodgeGramTraceDegree 4 = 1 ∧ D0.Geometry.totalHodgeGramTraceSum = 256 ∧ Fintype.card D0.Role = 4
+D0_AUDIT_BOUND D0.Geometry.archive_metric_measure_hodge_lift_owner : ∀ (mu c_r : ℝ),
+  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧
+    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧
+      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4
+D0_AUDIT_BOUND D0.Geometry.archive_naive_weighted_car_degree_leakage_nogo_owner : √D0.Geometry.naiveWeight0 ≠
+    √D0.Geometry.naiveWeight1 ∧
+  Fintype.card D0.Role = 4
+D0_AUDIT_BOUND D0.Matter.matter_localization_observable_canonicity_owner : D0.Foundation.M1Forced
+  (D0.Foundation.ObservableCompletionCanonicity.CompletionForcesReadout D0.Matter.AdmissibleNeutralSource
+    D0.Matter.totalChargeReadout)
+  0
+D0_AUDIT_BOUND D0.Matter.generated_matter_source_zero_if_anomaly_free : ∀ (n : ℕ) (R : D0.Matter.MatterRep),
+  R.anomalySum = 0 → (D0.Matter.matterStressFromRepWithGenerations n R).T = 0
+D0_AUDIT_BOUND D0.Gravity.centeredRoleDivergence_zero_of_parentWard : ∀ {E : Type u_1} (N : ℕ)
+  (df : D0.Geometry.LocalRoleVector N → E) (readout : E → D0.Geometry.LocalSymRoleField N) (coframeEuler : E → ℝ)
+  (auxiliaryWardTerm : D0.Geometry.LocalRoleVector N → ℝ) (Lambda : D0.Geometry.LocalSymRoleField N),
+  (∀ (xi : D0.Geometry.LocalRoleVector N), readout (df xi) = D0.Geometry.symmetricRoleGradient N xi) →
+    (∀ (xi : D0.Geometry.LocalRoleVector N),
+        coframeEuler (df xi) + auxiliaryWardTerm xi + D0.Gravity.tensorInnerProduct N Lambda (readout (df xi)) = 0) →
+      (∀ (xi : D0.Geometry.LocalRoleVector N), auxiliaryWardTerm xi = 0) →
+        (∀ (xi : D0.Geometry.LocalRoleVector N), coframeEuler (df xi) = 0) →
+          D0.Gravity.centeredRoleDivergence N Lambda = 0
+D0_AUDIT_BOUND D0.Gravity.VariationalCarrierAudit.gravity_variational_carrier_audit_owner : ∀ {N : Type u_1}
+  [inst : Fintype N] [inst_1 : DecidableEq N] (L : Matrix N N ℝ),
+  D0.VNext2.SpectralEinsteinResponse.IsGraphLaplacian L →
+    ∀ (x : N),
+      D0.VNext2.SpectralEinsteinResponse.archiveDivergence 1 x = 1 ∧
+        D0.VNext2.SpectralEinsteinResponse.archiveDivergence (D0.VNext2.SpectralEinsteinResponse.einsteinResponse L) =
+            0 ∧
+          (D0.VNext2.SpectralEinsteinResponse.einsteinResponse L).transpose =
+              D0.VNext2.SpectralEinsteinResponse.einsteinResponse L ∧
+            D0.VNext2.SpectralEinsteinResponse.einsteinResponse L = 2 • L
+D0_AUDIT_BOUND D0.d0_archive_satisfies_structural_admissibility : D0.ArchiveHeatTrace4D D0.archiveTower →
+  D0.HigherCurvatureCutoff D0.delta0 →
+    D0.LorentzCarrierStable D0.archiveTower → D0.SpectralActionAdmissible D0.archiveTower
+D0_AUDIT_BOUND D0.Geometry.movingHodge_eq_self_iff_fixed : ∀ {K : Type u_1} {P : Type u_2} {D : Type u_3}
+  [inst : Field K] [inst_1 : AddCommGroup P] [inst_2 : _root_.Module K P] [inst_3 : AddCommGroup D]
+  [inst_4 : _root_.Module K D] (QD : D ≃ₗ[K] D) (S : P →ₗ[K] D) (QP : P ≃ₗ[K] P),
+  D0.Geometry.movingHodge QD S QP = S ↔ D0.Geometry.fixesHodge QD S QP
+D0_AUDIT_BOUND D0.Geometry.dForward_sq_zero : ∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),
+  D0.Geometry.dForward N (D0.Geometry.dForward N ψ) = 0
+D0_AUDIT_BOUND D0.Geometry.dConn_sq_eq_curvature : ∀ {N : ℕ} {V : Type u_1} [inst : AddCommGroup V]
+  [inst_1 : _root_.Module ℝ V] (U : D0.Geometry.LinkConnection N ℝ V) (ψ : D0.Geometry.CoeffCochain N V),
+  D0.Geometry.dConn U (D0.Geometry.dConn U ψ) =
+    (D0.Geometry.forwardDifferenceScale N * D0.Geometry.forwardDifferenceScale N) •
+      ∑ r,
+        ∑ s with D0.Geometry.roleCode r < D0.Geometry.roleCode s,
+          D0.Geometry.coeffCreate r (D0.Geometry.coeffCreate s (D0.Geometry.transportCommutator U r s ψ))
+D0_AUDIT_BOUND D0.Geometry.archive_graded_refinement_chain_map_owner : D0.Geometry.roleProductDim = 4 ∧
+  Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4
+D0_AUDIT_BOUND D0.Foundation.PhysicalComparisonRepresentation.physicalPrimitive_card_eq_two : ∀ {α : Type u_1}
+  (R : D0.Foundation.PhysicalComparisonRepresentation.Representation α)
+  [inst : Fintype (D0.Foundation.PhysicalComparisonRepresentation.PhysicalPrimitiveCarrier R)],
+  (∃ m,
+      D0.Foundation.PhysicalComparisonRepresentation.PhysicalPrimitive R m ∧
+        R.capability m = D0.Foundation.AdmissibleComparisonGrammar.membershipOnly) →
+    (∃ v,
+        D0.Foundation.PhysicalComparisonRepresentation.PhysicalPrimitive R v ∧
+          R.capability v = D0.Foundation.AdmissibleComparisonGrammar.valueOnly) →
+      Fintype.card (D0.Foundation.PhysicalComparisonRepresentation.PhysicalPrimitiveCarrier R) = 2
+D0_AUDIT_BOUND D0.Geometry.locatedStar_does_not_select_reference_weight : ∀ (N : ℕ)
+  (e : D0.Geometry.LocalCoframeField N) (ψ : D0.Geometry.ArchiveCochain N),
+  D0.Geometry.referenceCellWeight 1 N e ψ ≠ D0.Geometry.referenceCellWeight 2 N e ψ →
+    D0.Geometry.placedReferenceWeight 1 N e { coeff := ψ } =
+        D0.Geometry.locatedPrimalStar N { coeff := D0.Geometry.referenceCellWeight 1 N e ψ } ∧
+      D0.Geometry.placedReferenceWeight 2 N e { coeff := ψ } =
+          D0.Geometry.locatedPrimalStar N { coeff := D0.Geometry.referenceCellWeight 2 N e ψ } ∧
+        ∀ (φ : D0.Geometry.PrimalCochain N),
+          D0.Geometry.locatedPrimalStar N φ = { coeff := D0.Geometry.locatedPrimalStarCoeff N φ.coeff }
+D0_AUDIT_BOUND D0.Geometry.mixedPrimalDualAction : {P0 : Type u_1} →
+  {P1 : Type u_2} →
+    {D3 : Type u_3} →
+      {D4 : Type u_4} →
+        [inst : Fintype P0] →
+          [inst_1 : Fintype P1] →
+            [inst_2 : Fintype D3] →
+              [inst_3 : Fintype D4] →
+                (D0.Geometry.FiniteRealCarrier P0 → D0.Geometry.FiniteRealCarrier D4 → ℝ) →
+                  D0.Geometry.FinitePrimalDualHodgeData P0 P1 D3 D4 →
+                    D0.Geometry.FiniteRealCarrier P0 →
+                      D0.Geometry.FiniteRealCarrier P0 → D0.Geometry.FiniteRealCarrier P0 → ℝ
+'D0.Cosmology.feedback_pressure_trace_log' depends on axioms: [propext]
+'D0.Algebra.Sedenions.branch_label_s3_scaffold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archive_cubical_cochain_carrier_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archive_cubical_coboundary_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archive_1d_cochain_refinement_owner' does not depend on any axioms
+'D0.Geometry.archive_refinement_hodge_weights_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archive_metric_measure_hodge_lift_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archive_naive_weighted_car_degree_leakage_nogo_owner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Matter.matter_localization_observable_canonicity_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Matter.generated_matter_source_zero_if_anomaly_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Gravity.centeredRoleDivergence_zero_of_parentWard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Gravity.VariationalCarrierAudit.gravity_variational_carrier_audit_owner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.d0_archive_satisfies_structural_admissibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ D0.role_signature_1_3._native.native_decide.ax_1_1]
+'D0.Geometry.movingHodge_eq_self_iff_fixed' depends on axioms: [propext, Quot.sound]
+'D0.Geometry.dForward_sq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1]
+'D0.Geometry.dConn_sq_eq_curvature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1]
+'D0.Geometry.archive_graded_refinement_chain_map_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.PhysicalComparisonRepresentation.physicalPrimitive_card_eq_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ D0.Foundation.AdmissibleComparisonGrammar.primitive_iff_atomic._native.native_decide.ax_1_1,
+ D0.Foundation.AdmissibleComparisonGrammar.primitive_iff_atomic._native.native_decide.ax_1_2,
+ D0.Foundation.AdmissibleComparisonGrammar.primitive_iff_atomic._native.native_decide.ax_1_3,
+ D0.Foundation.AdmissibleComparisonGrammar.primitive_iff_atomic._native.native_decide.ax_1_4]
+'D0.Geometry.locatedStar_does_not_select_reference_weight' depends on axioms: [propext, Classical.choice, Quot.sound]

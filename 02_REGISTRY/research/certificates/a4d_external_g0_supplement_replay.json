@@ -1,0 +1,23 @@
+{
+  "S1d_effective_unconditional_true": true,
+  "inputs_sha256": {
+    "02_REGISTRY/research/inputs/2026-10-07_external_g0_supplement/03_EXACT_CERTIFICATE (1).py": "ef444f34ae5c0c2cb4f1de419e0e2e068f7716d5c533e879378c8740bd5fefc6",
+    "02_REGISTRY/research/inputs/2026-10-07_external_g0_supplement/03_certificate_results (1).json": "a252a2688a12adaab8a1a4b6d97c140fcd1a9fb2e30be54a2ddf3e151f4f12d3",
+    "02_REGISTRY/research/inputs/2026-10-07_external_g0_supplement/extra_dim.json": "b4b2fef01d3693731633e8e98555939c53223e8d3207a2284ae8fbc7cb4be73f",
+    "02_REGISTRY/research/inputs/2026-10-07_external_g0_supplement/patch_s5.py": "0817a6055cf2dbcc3a9010303431229815c7ba7f738b4b56941d4fa692dc18f3"
+  },
+  "json_semantically_identical_to_submission": true,
+  "output_path_supplied_as_argument": true,
+  "patch_anchors_present_in_supplied_script": [
+    false,
+    false
+  ],
+  "patch_executed": false,
+  "python": "3.9.6",
+  "reported_failures": 0,
+  "reported_passes": 49,
+  "script_exit_code": 0,
+  "script_unmodified": true,
+  "sympy": "1.14.0",
+  "universal_or_physical_claims_certified_by_replay": false
+}

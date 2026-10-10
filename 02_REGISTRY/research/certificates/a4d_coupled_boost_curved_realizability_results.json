@@ -1,0 +1,219 @@
+{
+  "schema": "a4d-coupled-boost-curved-realizability-v3",
+  "input_head": "31f0f79ef41393e08f56a068650473dbbca20e60",
+  "arithmetic": "exact rational, complete polynomial and direct action differentiation",
+  "predeclared_data": {
+    "mesh": "h=1/L, L in 4*N",
+    "coframe": "S_h(x)=diag(1,1,f(h*x1),f(h*x1))",
+    "profile": "f(y)=1+(1-cos(2*pi*y))/50",
+    "fixed_metric_source": "tau(y)=0 in all ten owner slots; E_Q=h^2*tau_h",
+    "connection_source": "zero",
+    "comparator": "the #216 smooth comparator on the same fixed g=S^T*eta*S",
+    "owner_norm": "unweighted sum over all sites and ten packed metric slots"
+  },
+  "candidate": "B=K1+K2+K3; U=(I-t*B/2)^(-1)*(I+t*B/2); Role0=(U,I,U^-1,I); other links=I",
+  "real_chart": "0<abs(t)<2/sqrt(3)",
+  "selected_row": "right variation L_(x,0)*exp(epsilon*J12), sum(x)=0 mod 4",
+  "exact_identity": "E_(K0,J12)(x)=-2*t*(f_n^2-f_(n-1)^2)/(4-3*t^2)",
+  "cleared_denominator": "(4-3*t^2)^4",
+  "numerator": "-2*t*(4-3*t^2)^3*(f_n^2-f_(n-1)^2)",
+  "f_n_squared_coefficients_degrees_0_to_8": [
+    0,
+    -128,
+    0,
+    288,
+    0,
+    -216,
+    0,
+    54,
+    0
+  ],
+  "f_previous_squared_coefficients_degrees_0_to_8": [
+    0,
+    128,
+    0,
+    -288,
+    0,
+    216,
+    0,
+    -54,
+    0
+  ],
+  "f_n_linear_coefficients_degrees_0_to_8": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "direct_action_controls": [
+    {
+      "t": "-1/7",
+      "literal_global_action_derivative": "-707/241250",
+      "wrong_inverse_sign": "707/241250",
+      "frozen_coframe": "0"
+    },
+    {
+      "t": "1/5",
+      "literal_global_action_derivative": "101/24250",
+      "wrong_inverse_sign": "-101/24250",
+      "frozen_coframe": "0"
+    },
+    {
+      "t": "1/4",
+      "literal_global_action_derivative": "202/38125",
+      "wrong_inverse_sign": "-202/38125",
+      "frozen_coframe": "0"
+    }
+  ],
+  "origin_value": "2*t*((1+(1-cos(2*pi/L))/50)^2-1)/(4-3*t^2)",
+  "all_mesh_conclusion": "nonzero at the origin for every L in 4*N and every nonzero t in the real chart",
+  "analytic_extension": "every positive nonconstant sampled profile has an unequal adjacent pair; choose phase 0 there",
+  "source_independence": "the failed connection row is unaffected by any independently prescribed metric source",
+  "connection_owner_sum": {
+    "norm": "sum over all sites, four roles and six Lorentz Euler components; no site-count normalization",
+    "phase_zero_multiplicity_at_each_x1": "L^3/4 for L in 4*N",
+    "sampled_profile_total_variation": "102/625 for every L in 4*N",
+    "lower_bound": "||E_K||_owner1 >= 51*abs(t)*L^3/(625*(4-3*t^2))",
+    "L4_direct_action_control": {
+      "t": "1/5",
+      "four_slow_site_derivatives": [
+        "101/24250",
+        "-101/24250",
+        "-103/24250",
+        "103/24250"
+      ],
+      "multiplicities": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "selected_phase_zero_sum": "3264/12125"
+    },
+    "all_mesh_proof": "analytic residue counting and monotonicity; the finite control checks coefficient and normalization"
+  },
+  "requested_outcome": "1: coupled boost fails exact E_K=0 on the declared nonconstant coframe",
+  "gate": "JOINT-CRITICAL-REALIZABILITY-AND-OWNER-SUM-CONTROL: COUPLED_BOOST_EXCLUDED",
+  "scope": "original coupled boost and all its temporal amplitude retunings; identity spatial links and the same fixed generator B",
+  "arbitrary_amplitude_joint_exclusion": {
+    "family": "every Role0 link is an independent real Cayley(t_x*B); Roles1,2,3 are I",
+    "restrictions": "no phase, period-four envelope, amplitude-size margin, or regularity assumption",
+    "face_identity": {
+      "D(a)": "4-3*a^2",
+      "z(a,b)": "4*(a-b)*(4-3*a*b)/(D(a)*D(b))",
+      "c(a,b)": "1+24*(a-b)^2/(D(a)*D(b))",
+      "complete_polynomial_identity": "c_num^2-3*z_num^2=(D(a)*D(b))^2",
+      "real_chart_consequence": "c>=1 and c=sqrt(1+3*z^2)",
+      "face_forward_B_derivative": "w_i*c; incoming derivative is -w_i*c"
+    },
+    "metric_inverse": {
+      "diagonal_slots": [
+        "Xi11",
+        "Xi22",
+        "Xi33"
+      ],
+      "determinant": "-1/4",
+      "inverse_rows": [
+        [
+          "f^-2",
+          "-1",
+          "-1"
+        ],
+        [
+          "-f^-1",
+          "f",
+          "-f"
+        ],
+        [
+          "-f^-1",
+          "-f",
+          "f"
+        ]
+      ],
+      "coefficient_check": "complete Laurent coefficients, not coframe sampling"
+    },
+    "single_joint_flux_identity": "E_K(x,0)[B]=sum_i D_i^-[w_i*sqrt(1+3*(T_f*Xi_diag)_i^2)], w=(f^2,f,f)",
+    "source_hypothesis": "Xi_diag=h^2*tau_diag, ||tau_diag||_infinity<=M fixed independently of candidates",
+    "raw_connection_owner_bound": "||E_K||_owner1 >= (102/625)*L^3 - 90*M^2",
+    "exact_remainder_constant": "35147112/390625",
+    "vacuum_consequence": "tau=0 excludes every amplitude profile at every admissible mesh",
+    "bounded_source_consequence": "no exact joint member for L^3>(9375/17)*M^2",
+    "direct_action_controls": [
+      {
+        "profile": "independent non-four-phase values in all four coordinates",
+        "physical_sites": 256,
+        "temporal_face_checks": 768,
+        "literal_B_Euler_rows_checked": 256,
+        "Gram_inverse_rows_checked": 768,
+        "origin_B_Euler": "-1334127135437/5897868722500",
+        "vacuum_B_Euler_owner_sum": null,
+        "transverse_planes": {
+          "physical_sites_per_plane": 64,
+          "literal_Euler_plane_sums": [
+            "-5470091106393601266338/2303164519312051305625",
+            "3140384947698528058/1160284392600529625",
+            "17051578062746167414/5801421963002648125",
+            "-23178613863686785822/7086660059421696325"
+          ],
+          "unweighted_flux_plane_sums": [
+            "664767173752078216/9282275140804237",
+            "86236281666708305058/1160284392600529625",
+            "2652266191694010016/34327940609483125",
+            "108337855113558810306/1464185962690433125"
+          ],
+          "identity": "sum_(x1=n) E_K(x,0)[B] = Q_n-Q_(n-1)",
+          "residual_response_tradeoff": "PASS exact rational squared check"
+        }
+      },
+      {
+        "profile": "spatially constant, arbitrary time links",
+        "physical_sites": 256,
+        "temporal_face_checks": 768,
+        "literal_B_Euler_rows_checked": 256,
+        "Gram_inverse_rows_checked": 768,
+        "origin_B_Euler": "-101/2500",
+        "vacuum_B_Euler_owner_sum": "6528/625",
+        "transverse_planes": {
+          "physical_sites_per_plane": 64,
+          "literal_Euler_plane_sums": [
+            "-1616/625",
+            "1616/625",
+            "1648/625",
+            "-1648/625"
+          ],
+          "unweighted_flux_plane_sums": [
+            "64",
+            "41616/625",
+            "43264/625",
+            "41616/625"
+          ],
+          "identity": "sum_(x1=n) E_K(x,0)[B] = Q_n-Q_(n-1)",
+          "residual_response_tradeoff": "PASS exact rational squared check"
+        }
+      }
+    ],
+    "stationarity_forced_response_barrier": {
+      "necessary_equation": "E_K=0 in the same temporal B family",
+      "conserved_flux": "J_n=f_n^2*mean_(x0,x2,x3) sqrt(1+3*z_1(x)^2); J_n is constant",
+      "positivity": "J >= max_n f_n^2 = 676/625",
+      "diagonal_response_sup_lower_bound": "sqrt(22117)/1875",
+      "sup_lower_bound_squared": "22117/3515625",
+      "diagonal_response_raw_owner_lower_bound": "(205/(5408*sqrt(3)))*L^4",
+      "all_mesh_mean_f_squared": "5203/5000",
+      "source_necessary_condition": "h^2*M >= sqrt(22117)/1875",
+      "residual_response_tradeoff": "sqrt(3)*(676/625)*||Xi_diag||_owner1 + (L/2)*||E_K||_owner1 >= (41/1000)*L^4",
+      "norm": "full physical L^4 sum; the normalized flux average does not replace the owner norm",
+      "flat_coframe_control": "both geometric barriers vanish at f=1",
+      "proof_scope": "analytic conservation and inequalities; exact constants and literal plane counts replayed"
+    },
+    "scope": "all amplitude retunings of the same temporal B family; no claim for nonidentity spatial links or other generators",
+    "verdict": "COUPLED_BOOST_ALL_AMPLITUDE_JOINT_EXCLUSION"
+  },
+  "parent_task_status": "PARTIAL / OPEN; Draft / IN_PROGRESS",
+  "verdict": "COUPLED_BOOST_ALL_AMPLITUDE_JOINT_EXCLUSION"
+}

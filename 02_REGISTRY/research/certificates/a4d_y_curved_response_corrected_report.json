@@ -1,0 +1,67 @@
+{
+  "schema": "a4d-theory-closure-corrected-v1",
+  "source": "#232 period-4 Y vacuum; corrected mixed-block phase convention",
+  "correction": "conn B(lam^-1), read B(lam); ea6e9d0 used the swapped assignment",
+  "axes": [
+    {
+      "axis": 0,
+      "flat_reproduces_einstein": true,
+      "curved_t1_average_zero": true,
+      "curved_q12_coeff": "-186451/236250",
+      "curved_q12_defect_vs_flat": "-34163/118125",
+      "defect_rank": 6,
+      "defect_nonzero": true,
+      "per_site_q12_t2": [
+        "109187387/1601250",
+        "-201086701/2882250",
+        "109187387/1601250",
+        "-201086701/2882250"
+      ]
+    },
+    {
+      "axis": 1,
+      "flat_reproduces_einstein": true,
+      "curved_t1_average_zero": true,
+      "curved_q12_coeff": "-2665927/85127280",
+      "curved_q12_defect_vs_flat": "-2665927/85127280",
+      "defect_rank": 8,
+      "defect_nonzero": true,
+      "per_site_q12_t2": [
+        "369084783684013/15702918577920",
+        "36509970591607/2243274082560",
+        "-31489015940827/2243274082560",
+        "-81239707294397/3140583715584"
+      ]
+    },
+    {
+      "axis": 2,
+      "flat_reproduces_einstein": true,
+      "curved_t1_average_zero": true,
+      "curved_q12_coeff": "-2665927/85127280",
+      "curved_q12_defect_vs_flat": "-2665927/85127280",
+      "defect_rank": 8,
+      "defect_nonzero": true,
+      "per_site_q12_t2": [
+        "-31489015940827/2243274082560",
+        "-81239707294397/3140583715584",
+        "369084783684013/15702918577920",
+        "36509970591607/2243274082560"
+      ]
+    },
+    {
+      "axis": 3,
+      "flat_reproduces_einstein": true,
+      "curved_t1_average_zero": true,
+      "curved_q12_coeff": "177811967/340509120",
+      "curved_q12_defect_vs_flat": "7557407/340509120",
+      "defect_rank": 8,
+      "defect_nonzero": true,
+      "per_site_q12_t2": [
+        "2864457035959/261715309632",
+        "-12955622401433/1308576548160",
+        "2864457035959/261715309632",
+        "-12955622401433/1308576548160"
+      ]
+    }
+  ]
+}

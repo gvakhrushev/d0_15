@@ -1,0 +1,76 @@
+{
+  "schema": "a4d-y-curved-joint-one-ratio-slices-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-ONE-RATIO-SLICES-CERTIFIED",
+  "z": "1",
+  "slices": [
+    "(1,x,1,1)",
+    "(1,1,x,1)",
+    "(1,1,1,x)"
+  ],
+  "minor_rows": {
+    "D0": "connection rows 0..95",
+    "D1": "connection rows except 50, plus metric row 100"
+  },
+  "integer_clear": "multiply every selected row by 14*x",
+  "structural_degree_bound": 192,
+  "crt_primes": [
+    999999937,
+    999998929,
+    999997891,
+    999996827,
+    999995819,
+    999994813,
+    999993811,
+    999992783,
+    999991669,
+    999990631,
+    999989567,
+    999988547,
+    999987503,
+    999986501,
+    999985471,
+    999984463,
+    999983459,
+    999982457,
+    999981449,
+    999980419,
+    999979417
+  ],
+  "records": [
+    {
+      "spatial_axis": 1,
+      "minor0_degree": 128,
+      "minor1_degree": 128,
+      "primitive_gcd": "x^64*(x-1)^2",
+      "coefficient_bound_digits": 186,
+      "crt_modulus_digits": 189,
+      "prime_count": 21
+    },
+    {
+      "spatial_axis": 2,
+      "minor0_degree": 128,
+      "minor1_degree": 129,
+      "primitive_gcd": "x^64*(x-1)^2",
+      "coefficient_bound_digits": 186,
+      "crt_modulus_digits": 189,
+      "prime_count": 21
+    },
+    {
+      "spatial_axis": 3,
+      "minor0_degree": 128,
+      "minor1_degree": 129,
+      "primitive_gcd": "x^64*(x-1)^2",
+      "coefficient_bound_digits": 187,
+      "crt_modulus_digits": 189,
+      "prime_count": 21
+    }
+  ],
+  "rank_conclusion": "on every listed slice and every x in C^* with x!=1, at least one certified 96-minor is nonzero, hence rank Q=96",
+  "x_equals_one": "rank 95 with the physical Y center by the folded owner",
+  "scope_fence": [
+    "three coordinate one-ratio complex slices are exact",
+    "simultaneous variation of two or three ratios remains open",
+    "this does not by itself prove the full unit-torus zero locus",
+    "no nonlinear continuation or task-level response terminal is claimed"
+  ]
+}
