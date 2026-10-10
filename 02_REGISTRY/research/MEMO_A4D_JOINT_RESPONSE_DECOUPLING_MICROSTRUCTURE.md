@@ -5,6 +5,21 @@ Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
 Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/pull/322).
+The [positive-Hodge radial balance](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md)
+now computes the full thermal response along an admitted common dilation
+of both endpoint metrics with fixed dressed links and the stated geometric
+grade scaling. It is exactly twice the positive Gibbs mean energy, also
+for curved coefficient differentials. A zero remainder response excludes
+stationarity in this complete stated class; otherwise the actual remainder
+must supply its computed opposite. All modes and all other joint equations
+remain. Nineteen new propositions compile with standard axioms only;
+180 exact controls include a positive graded full-carrier Cayley cancellation
+along one direction, which is not a native preparation or full joint root.
+The uniform flat literal-bootstrap contrast bound is analytic and retains
+its normalization, constant-remainder and physical-admission hypotheses.
+This supplies a test of the missing joint law, not that law or all ten rho0
+components. No original terminal or native/physical closure is promoted.
+
 The [intrinsic-source computation](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md)
 now proves the complete joint cotangent normal form and zero first variation
 of the two-step feedback price at the ordinary/recorded golden bases in the

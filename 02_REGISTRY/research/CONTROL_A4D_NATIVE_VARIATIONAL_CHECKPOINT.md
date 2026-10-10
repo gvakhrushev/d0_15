@@ -3,64 +3,52 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`eeab0de21ee704794e291434e6ae0b65fdb360d6`, following
-`adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f`.
+`2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c`, following
+`eeab0de21ee704794e291434e6ae0b65fdb360d6`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 
 Current execution order, revalidated 2026-10-10:
 [The tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
-now consumes the [strict observable-class proof](A4D_NATIVE_STRICT_OBSERVABLE_DESCENT.md).
-The literal scalar pro-rule starting at level zero yields exactly sixteen
-coordinates at every later archive level. Two actual retained inverse-limit
-records are invisible to every such reading. A new finite cylinder persists
-from its birth but has no backward scalar extension. Twenty compiled
-propositions and three actual primary propositions have standard axioms only.
+now consumes the [positive-Hodge joint radial balance](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md).
+For the complete stated class with admitted common metric dilation, positive
+graded pairing, nonzero fixed d and fixed beta, the thermal derivative is
+exactly 2*E_beta>0. Full stationarity therefore needs the actual remainder
+response R_prime=-2*E_beta. Curved coefficient links are included: no d^2=0
+hypothesis is used. Zero remainder response excludes stationarity only in
+that class. No pairing, compensator, native normalization or gate is selected.
 
-On the unchanged full counting Hodge/CAR carrier, this represented algebra
-has diameter <=15/L for every site bijection. Finite scalar-algebra
-classification and four-dimensional packing give the stated necessary
-resolution bound for O(h) approximation of the full flat metric. These
-operator-norm and packing arguments are analytic, not full Lean theorems.
-The earlier full scalar metric and its actual archive rate obstruction
-remain valid in their separate stated classes. The prior imported Hodge
-square retains its explicitly recorded native_decide CAR leaves.
+Nineteen new propositions compile with standard logical axioms only; 71
+transitive D0 files are pinned. The separately printed old degree owner
+retains its explicit native_decide leaf; the new rebuilt degree proof does
+not use it. The exact checker passes 180 controls and rejects 18 false scope
+ledgers, retaining all modes and a same-carrier positive graded compensating
+Cayley control. That control is not an admitted full joint root. The moving
+spectral argument and all-L literal-bootstrap flat contrast bound are
+analytic; physical probe admission, constant remainder and normalization
+remain explicit hypotheses of the contrast test.
 
-The intake has 294 scientific artifacts byte-identical to verified SOURCE
-`eeab0de21ee704794e291434e6ae0b65fdb360d6`: six new files, two updated pointers and 286 prior
-files unchanged. All forty-four original contracts and parent terminals
-remain unchanged. Both current-head CI and CONTROL review are required;
-this is an intake candidate, not an accepted physical-source result.
+The intake has 300 scientific artifacts byte-identical to verified SOURCE
+`2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c`: six new files, two updated pointers and 292 prior
+files unchanged. Every one of the forty-four node dictionaries, all original
+parent contracts and T0-T3 statuses are unchanged. Current-head CI and CONTROL
+review are required; this is an intake candidate, not scientific acceptance.
 
-Next derive a common actual native preparation input for newly admitted
-observations, full Delta/P/U/G and the joint q,D,b,m readout, with its
-budget, allowed changes and real transitions. Strict scalar persistence,
-some finite factorization or a scalar phi scale law alone does not supply
-that preparation. The plan retains relational preparations, actual finite
-paired probes, complete readout-range and cross-fibre price checks, and
-separate genuine internal-shell equations. The whole retained heat,
-feedback, moving-pairing, link and matter terms stay in the source problem.
+Next derive the actual common native preparation for full Delta/P/U/G and
+q,D,b,m, its allowed changes and real transitions. For a preparation with the
+stated positive Hodge scaling, compute the complete remainder jet and test
+the necessary balance before all ten rho0 components. The plan preserves
+relational preparations, actual finite paired probes, complete readout range,
+cross-fibre price descent and independent internal-shell equations. The earlier
+strict-scalar, full Hodge metric and archive-refinement results retain their
+own scopes; they do not by themselves derive native admission.
 
-No physical algebra, state/temperature/source law, selector, new action,
-memory deletion or desired-vanishing gate is installed. Native preparation,
-own source/Ward, quantitative contrast/stationarity, curved joint roots,
-soundness/recovery and physical limits remain open. The unchanged 292
-preflight controls check their original joint chart; the new SOURCE
-packet has its own certificate.
-
-The subsequent planning revision consumes the existing full-price replication
-identity before any source-component comparison. It requires the actual common
-preparation and transition, an owned native normalization, and the complete
-heat/feedback/pairing/matter balance. Physical probe normalization h^2 cannot
-be transferred to the native bootstrap merely by notation. The two-copy identity
-is used only under its actual hypotheses and is not asserted for the archive
-projection. This revision changes no scientific intake: all 294 artifacts remain
-byte-identical to SOURCE. It proves no new native preparation, source, root,
-whole-core no-go or parent terminal; the 292 preflight controls retain their
-original scope. SOURCE CI 38039437978 and preceding CONTROL CI 38040401382
-passed at their respective pinned heads; this revision needs its own CI and
-CONTROL review.
+No action, selector, temperature/source law, physical algebra, memory deletion
+or desired-vanishing gate is installed. Native preparation, own source/Ward,
+quantitative transfer/stationarity, curved joint roots, soundness/recovery,
+physical limits and #310/#202/#317 remain open. The 292 preflight controls
+retain their original joint-chart scope; only the linked plan hash changes.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
