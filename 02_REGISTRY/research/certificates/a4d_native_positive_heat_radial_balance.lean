@@ -52,6 +52,45 @@ theorem actual_heat_radial_derivative (beta : ℝ) (lambda : ι → ℝ) (hb : b
     (fun i => -2 * lambda i) hb (radialSpectrum_derivative lambda)
   simpa only [radialSpectrum_zero, radial_thermal_source] using h
 
+/-- The literal diagonal constant-metric pencil, on each full Fourier mode. -/
+def shapeSpectrum (a b c : ι → ℝ) (t : ℝ) (i : ι) : ℝ :=
+  a i / (1+t) + b i / (1-t) + c i
+
+def modeMean (beta : ℝ) (lambda v : ι → ℝ) : ℝ :=
+  (∑ i, Real.exp (-beta * lambda i) * v i) / thermalPartition beta lambda
+
+omit [Fintype ι] [DecidableEq ι] [Nonempty ι] in
+theorem shapeSpectrum_zero (a b c : ι → ℝ) :
+    shapeSpectrum a b c 0 = fun i => a i + b i + c i := by
+  funext i
+  simp [shapeSpectrum]
+
+omit [Fintype ι] [DecidableEq ι] [Nonempty ι] in
+theorem shapeSpectrum_derivative (a b c : ι → ℝ) (i : ι) :
+    HasDerivAt (fun t => shapeSpectrum a b c t i) (-a i + b i) 0 := by
+  have h₁ := (hasDerivAt_const (0 : ℝ) (a i)).div
+    ((hasDerivAt_const (0 : ℝ) 1).add (hasDerivAt_id (0 : ℝ))) (by norm_num)
+  have h₂ := (hasDerivAt_const (0 : ℝ) (b i)).div
+    ((hasDerivAt_const (0 : ℝ) 1).sub (hasDerivAt_id (0 : ℝ))) (by norm_num)
+  have h := (h₁.add h₂).add_const (c i)
+  simpa [shapeSpectrum] using h
+
+omit [DecidableEq ι] [Nonempty ι] in
+theorem shape_thermal_source (beta : ℝ) (lambda a b : ι → ℝ) :
+    thermalSource beta lambda (fun i => -a i + b i) =
+      modeMean beta lambda a - modeMean beta lambda b := by
+  unfold thermalSource modeMean
+  simp_rw [mul_add, mul_neg, Finset.sum_add_distrib, Finset.sum_neg_distrib]
+  ring
+
+theorem actual_shape_heat_derivative (beta : ℝ) (a b c : ι → ℝ) (hb : beta ≠ 0) :
+    HasDerivAt (fun t => heatContribution beta (shapeSpectrum a b c t))
+      (modeMean beta (fun i => a i+b i+c i) a -
+       modeMean beta (fun i => a i+b i+c i) b) 0 := by
+  have h := genuine_thermal_source beta 0 (shapeSpectrum a b c)
+    (fun i => -a i+b i) hb (shapeSpectrum_derivative a b c)
+  simpa only [shapeSpectrum_zero, shape_thermal_source] using h
+
 theorem thermalEnergy_nonnegative (beta : ℝ) (lambda : ι → ℝ)
     (hl : ∀ i, 0 ≤ lambda i) : 0 ≤ thermalEnergy beta lambda := by
   apply div_nonneg
@@ -236,3 +275,12 @@ end D0.Research.NativePositiveHeatRadialBalance
 
 #check D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree
 #print axioms D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree
+
+#check D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero
+#print axioms D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero
+#check D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative
+#print axioms D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative
+#check D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source
+#print axioms D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source
+#check D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative
+#print axioms D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative

@@ -15,7 +15,11 @@ Let `Q=I+eps*A` with `A` symmetric and `tr A=0`. Then
 det(Q)=1+O(eps^2),    sqrt|det Q|=1+O(eps^2).
 ```
 
-The determinant factor, which carries the whole radial derivative, is stationary. The first-order weight change is only the compound:
+The determinant factor is stationary on this traceless path. For a spatially
+constant Q its common scalar multiplier cancels from W^{-1}d^T W even on
+the radial path: the radial adjoint response comes from the relative
+compound weights of consecutive degrees. The first-order weight change
+on the present traceless path is only the compound:
 
 ```text
 Q^{-1}=I-eps*A+O(eps^2),
@@ -29,3 +33,11 @@ If the spectrum depended only on the conformal factor, the first derivative alon
 ## Consequence for the vector
 
 The next certificate is not another radial contraction. It is the derivative of the same bootstrap `H` along `compound_k(I-eps*A)` for traceless `A`, projected onto the constraint tangent with `tr A=0`. The radial balance remains the admission condition on the dilation ray and does not answer the nine traceless components.
+
+The [constant-metric heat calculation](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md#5-all-ten-flat-heat-coefficients-and-a-nonzero-traceless-response)
+now supplies all ten coefficients for this positive Hodge binding and a
+uniformly nonzero traceless response at an anisotropic flat metric, with
+an explicit version for every fixed positive beta. A nonzero adjoint jet
+alone would not establish this price response; the full retained heat
+trace is differentiated. Full local joint variation, native preparation
+and the rho0 comparison remain separate open obligations.

@@ -12,13 +12,31 @@ grade scaling. It is exactly twice the positive Gibbs mean energy, also
 for curved coefficient differentials. A zero remainder response excludes
 stationarity in this complete stated class; otherwise the actual remainder
 must supply its computed opposite. All modes and all other joint equations
-remain. Nineteen new propositions compile with standard axioms only;
-180 exact controls include a positive graded full-carrier Cayley cancellation
+remain. The extended capsule has twenty-three propositions with standard
+axioms only; 319 exact controls include a positive graded full-carrier Cayley cancellation
 along one direction, which is not a native preparation or full joint root.
 The uniform flat literal-bootstrap contrast bound is analytic and retains
 its normalization, constant-remainder and physical-admission hypotheses.
 This supplies a test of the missing joint law, not that law or all ten rho0
 components. No original terminal or native/physical closure is promoted.
+
+The same packet now computes all ten constant-metric heat coefficients of
+that positive geometric binding. Its full weighted CAR symbol gives a
+uniformly nonzero traceless response at one flat anisotropic metric:
+more than 1/20000 for every L>=2 at beta=log(2). The linear paired metrics
+have exactly equal volumes and heat half contrast at least epsilon/2500000;
+any common volume-only term cancels. This closes the pure-trace reading of
+this heat contribution, not the complete coupled source. For every fixed
+beta>0 the same test rescales with c=beta/log(2),
+Q=diag(4c,c/4,1/c,1/c); the two positive bounds divide by c.
+The test metric depends on beta; no native temperature law, metric
+admission or beta_h-uniform limit is inferred. These new source
+and uniform-bound arguments are analytic, with all sixteen grades and all
+ten packed finite coefficients tested. Four new Lean propositions prove the genuine finite spectral pencil
+and heat derivative; the extended capsule has 23 propositions, and the
+checker has 319 controls and 22 false-ledger rejections. Native Lorentz readout, temperature/normalization ownership,
+full local metric/link/matter equations, and every parent terminal remain
+open. No source, compensator, volume constraint or thermal law is installed.
 
 The [intrinsic-source computation](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md)
 now proves the complete joint cotangent normal form and zero first variation

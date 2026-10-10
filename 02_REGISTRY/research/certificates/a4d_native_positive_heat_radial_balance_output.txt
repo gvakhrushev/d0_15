@@ -155,3 +155,33 @@ D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree.{u_
 'D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero.{u_1} {ι : Type u_1} (a b c : ι → ℝ) :
+  D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c 0 = fun i => a i + b i + c i
+'D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative.{u_1} {ι : Type u_1} (a b c : ι → ℝ) (i : ι) :
+  HasDerivAt (fun t => D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c t i) (-a i + b i) 0
+'D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source.{u_1} {ι : Type u_1} [Fintype ι] (beta : ℝ)
+  (lambda a b : ι → ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta lambda fun i => -a i + b i) =
+    D0.Research.NativePositiveHeatRadialBalance.modeMean beta lambda a -
+      D0.Research.NativePositiveHeatRadialBalance.modeMean beta lambda b
+'D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] [Nonempty ι] (beta : ℝ) (a b c : ι → ℝ) (hb : beta ≠ 0) :
+  HasDerivAt
+    (fun t =>
+      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta
+        (D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c t))
+    (D0.Research.NativePositiveHeatRadialBalance.modeMean beta (fun i => a i + b i + c i) a -
+      D0.Research.NativePositiveHeatRadialBalance.modeMean beta (fun i => a i + b i + c i) b)
+    0
+'D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
