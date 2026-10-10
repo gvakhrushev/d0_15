@@ -3,40 +3,51 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f`, following
-`025bf30c3d7c2cfba1a1d57676d65e536453b66b`.
+`eeab0de21ee704794e291434e6ae0b65fdb360d6`, following
+`adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 
 Current execution order, revalidated 2026-10-10:
 [The tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
-consumes the [actual operator metric](A4D_NATIVE_HODGE_CONNES_METRIC.md)
-and its [actual archive refinement test](A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md).
-The owned Hodge/CAR full scalar metric remains exactly Euclidean on each
-finite level. The actual archive composite has a kernel-proved collapsed
-fibre of at least K-L+1 points. Analytic packing excludes uniform O(h)
-full metric distortion for every bijective point identification on the
-actual L-to-2L arrows, including L in 4N. Eleven new compiled propositions
-and three actual primary propositions have only standard axioms. The
-packing/rate proof is analytic; the prior square's three native_decide
-CAR leaves remain explicitly recorded in their unchanged packet.
+now consumes the [strict observable-class proof](A4D_NATIVE_STRICT_OBSERVABLE_DESCENT.md).
+The literal scalar pro-rule starting at level zero yields exactly sixteen
+coordinates at every later archive level. Two actual retained inverse-limit
+records are invisible to every such reading. A new finite cylinder persists
+from its birth but has no backward scalar extension. Twenty compiled
+propositions and three actual primary propositions have standard axioms only.
 
-The intake has 288 scientific artifacts byte-identical to verified SOURCE
-`adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f`: six new files, two updated pointers, and 280 prior
-scientific artifacts unchanged. All original 44 dependency contracts and
-parent terminals remain unchanged. Current-head CI and CONTROL review
-remain required. Prior input CI success does not validate this revision.
+On the unchanged full counting Hodge/CAR carrier, this represented algebra
+has diameter <=15/L for every site bijection. Finite scalar-algebra
+classification and four-dimensional packing give the stated necessary
+resolution bound for O(h) approximation of the full flat metric. These
+operator-norm and packing arguments are analytic, not full Lean theorems.
+The earlier full scalar metric and its actual archive rate obstruction
+remain valid in their separate stated classes. The prior imported Hodge
+square retains its explicitly recorded native_decide CAR leaves.
 
-The next T0 arrow is the native prepared physical observable algebra/readout
-and its transitions, retaining the complete archive in the full price;
-then its induced joint geometry and full price tangent/refinement. Another
-numbering is covered by this complete stated obstruction. No new algebra,
-memory deletion, selector or action is installed. Slower convergence and
-O(h) action contrasts are not ruled out by the metric rate. Full Gamma/F,
-source/Ward, curved roots, soundness/recovery and GR remain open.
+The intake has 294 scientific artifacts byte-identical to verified SOURCE
+`eeab0de21ee704794e291434e6ae0b65fdb360d6`: six new files, two updated pointers and 286 prior
+files unchanged. All forty-four original contracts and parent terminals
+remain unchanged. Both current-head CI and CONTROL review are required;
+this is an intake candidate, not an accepted physical-source result.
 
-The current plan correction removes premature uniqueness and finite smoothness demands. Native preparations Omega and their physical readout R may define a relation rather than one operator function F(X). In a regular differential route prove full price-covector vertical annihilation, complete probe coverage and equal-readout cross-fibre agreement. In an actually discrete route derive admitted paired finite probes, quantitative readout errors and equal-probe contrast agreement, preserving the original fixed-calibration O(h) transfer and native refinement. Genuine internal-shell equations and nonempty solutions remain separate when used. This is strategy metadata, not a new native preparation/source theorem. All 288 scientific artifacts, 44 contracts and parent terminals are unchanged. The original 292-control preflight still checks its existing joint chart only. No action, selector, source law or vanishing-contrast gate is installed.
+Next derive a common actual native preparation input for newly admitted
+observations, full Delta/P/U/G and the joint q,D,b,m readout, with its
+budget, allowed changes and real transitions. Strict scalar persistence,
+some finite factorization or a scalar phi scale law alone does not supply
+that preparation. The plan retains relational preparations, actual finite
+paired probes, complete readout-range and cross-fibre price checks, and
+separate genuine internal-shell equations. The whole retained heat,
+feedback, moving-pairing, link and matter terms stay in the source problem.
+
+No physical algebra, state/temperature/source law, selector, new action,
+memory deletion or desired-vanishing gate is installed. Native preparation,
+own source/Ward, quantitative contrast/stationarity, curved joint roots,
+soundness/recovery and physical limits remain open. The unchanged 292
+preflight controls check their original joint chart; the new SOURCE
+packet has its own certificate.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the

@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "16da934c992d51e41726e9ab9f51118a5ed5b85b5f54ddc7e72fdc9089090a28",
-      "source_blob": "e0cdd60a3f59d08bd8672dae118fe8d417bc21a4"
+      "sha256": "385562ef0bcd957a544edf3a5edf62ec9625fbe4ea33e69d65301fed9d3556a0",
+      "source_blob": "df858b21177d9fd6175f78adedb16e361434547c"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "6c4dcde73aa2aa450ab489140a8a443119c35f5645adda6869c9e3d9aba5cc43",
-      "source_blob": "8a68f6ca436c72c6063ff90b28e823a7d3462f3a"
+      "sha256": "5d8a69b304ccf9c99898a33b9f1c55c8f16dbd34d5f0e8b980b760f79313c27c",
+      "source_blob": "5c82b98df5c9ff5071fc6584289b7d3541e5704e"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1441,6 +1441,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_results.json",
       "sha256": "aba9ffc8a80b24f7b56af8e487c194ba04b931d93df40972776a6e186fe424ad",
       "source_blob": "fa7fb0966838f81a94d13802529045e1c559902a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_STRICT_OBSERVABLE_DESCENT.md",
+      "sha256": "073522f15d947b6b3628ebb65a3b67a1e003d8abfea3438d28ddf09ab1468c2b",
+      "source_blob": "8dfe38ab85527e905e889348fa6380bc5317ba1a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent.lean",
+      "sha256": "6cb26ce9aa094b5dcd663c1ed5ce7d4e0ba3661d25fa08982d3dfbf7f4306c60",
+      "source_blob": "9a97b108870eea37832018128e1f41d0df5c9610"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_certificate.json",
+      "sha256": "3f7dab1c55956e904c4face5a8d2b2753df099b3451bfb460bac9cd2eb8ad7b8",
+      "source_blob": "13857949c9299cb2caaf93f0ebce3ae86f631b9f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_check.py",
+      "sha256": "bcb60ed36118335f0c77d2425e2c105cec690f7a65c96c7e58f2ff76c174ac9d",
+      "source_blob": "9aa62334973ebd0370045ab48df080a0b45b06b9"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_output.txt",
+      "sha256": "95931e5816406c06a642578ed911a547edb46d5fae6509f8b1036aaf149814a2",
+      "source_blob": "711cf30053021d7f49c2ce9bffd1b80d93fa0491"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_results.json",
+      "sha256": "e68bfc5f050f1830fd4b4bff60263209663e277078163e2cae04b31be2af7cdc",
+      "source_blob": "400fb9fb270797d83e667e7942f72826ba5c3bbe"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1485,10 +1515,10 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "ad12be0f70cc03b4ed1cd3b4f24603c132b5d074",
+    "control_input_head": "ee22ee7cce3c4c311daa2c759eee4d54d16ae14d",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-    "finite_preflight_certificate_sha256": "9dbd65fb37f6a361c26b2ee9da9dc2e1b0e571d7b039562d093bc9b9eb61dd1e",
+    "finite_preflight_certificate_sha256": "cc98004761db62234b03632ad97d9c6ab47fff3d728255de1af19abc15a57d02",
     "finite_preflight_exact_controls": 292,
     "machine_contract": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
     "native_operator_map_or_source_claim_promoted": false,
@@ -1554,7 +1584,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+    "observed_source_strategy_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1603,11 +1633,43 @@
     },
     "parent_graph_and_terminals_unchanged": true,
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "d6b47989f37f95edecdf2bb1bd0db9a698baa13c520a41b11c35b863a361ef2f",
+    "plan_sha256": "274d0bb11da9631fbe3726e5e785c260c2b11e2cdea5a9bbb0ae55acf073f1f2",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 280,
-    "scientific_artifact_intake_and_source_SHA_unchanged": true,
-    "scientific_source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+    "prior_scientific_artifacts_byte_unchanged_count": 286,
+    "relational_preparation_revision": {
+      "all_original_44_contracts_and_parent_terminals_preserved": true,
+      "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
+      "coupling_eliminates_heat_derivative": false,
+      "date": "2026-10-10",
+      "descent_used_as_native_admission_or_Euler_gate": false,
+      "disconnected_fibres_and_sector_moduli_retained": true,
+      "discrete_route_admitted_paired_probes_and_readout_error_bounds_required": true,
+      "discrete_route_equal_probe_contrast_consistency_and_refinement_required": true,
+      "finite_native_C1_manifold_required": false,
+      "full_price_source_or_physical_preparation_derived": false,
+      "linear_descent_criterion": "lambda factors through im DR iff lambda annihilates ker DR",
+      "linear_descent_scope": "finite-dimensional pointwise algebra in plan, not native derivation or limiting topology theorem",
+      "native_finite_contrast_lifts_or_error_bounds_already_derived": false,
+      "native_internal_shell_existence_and_refinement_required_when_used": true,
+      "new_native_scientific_certificate_added": false,
+      "no_new_action_selector_temperature_source_or_postulate": true,
+      "operator_uniqueness_required_before_source_uniqueness": false,
+      "original_fixed_calibration_O_h_contrast_contract_preserved": true,
+      "physical_readout": "R_h:Omega_h -> constrained q,D,b,m; derived from actual operations",
+      "preflight_still_checks_original_joint_chart_only": true,
+      "preparation_state": "actual admitted Omega_h, not a prescribed function of X",
+      "readout_vertical_directions_automatically_gauge": false,
+      "regular_route_all_probes_require_complete_tangent_image": true,
+      "regular_route_equal_readout_cross_fibre_covector_consistency_required": true,
+      "represented_operator_map": "A_h:Omega_h -> full Delta/P/U/pairing data",
+      "scientific_artifacts_unchanged": 288,
+      "scientific_source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+      "single_Gamma_or_F_sufficient_route": true,
+      "status": "STRATEGY_CORRECTION_NOT_NEW_NATIVE_THEOREM",
+      "supersedes_prior_graph_only_preparation_requirement": true
+    },
+    "scientific_artifact_intake_and_source_SHA_unchanged": false,
+    "scientific_source_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -1632,44 +1694,38 @@
       "whole_native_core_exhausted_or_full_action_source_derived": false,
       "whole_native_source_rho0_GR_or_parent_terminal_derived": false
     },
-    "relational_preparation_revision": {
+    "strict_observable_descent": {
+      "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
+      "all_condensed_readouts_or_noncommutative_algebras_or_Gamma_F_excluded": false,
+      "all_new_propositions_standard_axioms_only": true,
+      "all_original_44_node_contracts_preserved": true,
+      "base_zero_scalar_classes": 16,
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_certificate.json",
+      "compiled_actual_rule_and_record_propositions": 20,
+      "complete_class": "Actual strict scalar archive families beginning at one fixed level; all scalar partition algebras represented on the full fixed counting Hodge triple; all site bijections.",
+      "control_input_head": "ee22ee7cce3c4c311daa2c759eee4d54d16ae14d",
       "date": "2026-10-10",
-      "status": "STRATEGY_CORRECTION_NOT_NEW_NATIVE_THEOREM",
-      "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
-      "scientific_source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
-      "scientific_artifacts_unchanged": 288,
-      "preparation_state": "actual admitted Omega_h, not a prescribed function of X",
-      "represented_operator_map": "A_h:Omega_h -> full Delta/P/U/pairing data",
-      "physical_readout": "R_h:Omega_h -> constrained q,D,b,m; derived from actual operations",
-      "linear_descent_criterion": "lambda factors through im DR iff lambda annihilates ker DR",
-      "linear_descent_scope": "finite-dimensional pointwise algebra in plan, not native derivation or limiting topology theorem",
-      "disconnected_fibres_and_sector_moduli_retained": true,
-      "readout_vertical_directions_automatically_gauge": false,
-      "operator_uniqueness_required_before_source_uniqueness": false,
-      "single_Gamma_or_F_sufficient_route": true,
-      "native_internal_shell_existence_and_refinement_required_when_used": true,
-      "descent_used_as_native_admission_or_Euler_gate": false,
-      "coupling_eliminates_heat_derivative": false,
-      "full_price_source_or_physical_preparation_derived": false,
-      "new_native_scientific_certificate_added": false,
-      "preflight_still_checks_original_joint_chart_only": true,
-      "all_original_44_contracts_and_parent_terminals_preserved": true,
-      "no_new_action_selector_temperature_source_or_postulate": true,
-      "regular_route_all_probes_require_complete_tangent_image": true,
-      "regular_route_equal_readout_cross_fibre_covector_consistency_required": true,
-      "finite_native_C1_manifold_required": false,
-      "discrete_route_admitted_paired_probes_and_readout_error_bounds_required": true,
-      "discrete_route_equal_probe_contrast_consistency_and_refinement_required": true,
-      "original_fixed_calibration_O_h_contrast_contract_preserved": true,
-      "native_finite_contrast_lifts_or_error_bounds_already_derived": false,
-      "supersedes_prior_graph_only_preparation_requirement": true
+      "finite_scalar_algebra_classification_metric_bound_and_packing": "ANALYTIC_NOT_FULL_LEAN",
+      "full_flat_O_h_metric_resolution_necessary_condition": "L^4 <= m*(2*floor(C)+1)^4",
+      "modified_prior_scientific_artifact_count": 2,
+      "native_operational_admission_or_joint_readout_or_full_price_source_derived": false,
+      "new_cylinder_persists_forward_but_has_no_backward_scalar_extension": true,
+      "new_scientific_artifact_count": 6,
+      "next_arrow": "Derive an actual common native preparation input for newly available observations, full Delta/P/U/G and q,D,b,m, with its allowed changes, budget and real transitions. Persistence, some finite factorization and a scalar phi scale law alone do not supply this. Then prove full-price source/contrast descent and probe coverage on the real admitted family.",
+      "printed_actual_primary_propositions": 3,
+      "proof": "02_REGISTRY/research/A4D_NATIVE_STRICT_OBSERVABLE_DESCENT.md",
+      "source_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
+      "source_parent": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+      "status": "COMPLETE_STRICT_SCALAR_READING_BOUNDARY_NOT_NATIVE_PREPARATION_CLOSURE",
+      "strict_metric_diameter_upper_bound": "15/L",
+      "unchanged_prior_scientific_artifact_count": 286
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+  "previous_source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1742,11 +1798,12 @@
     "The actual dense binary scene passport (33 vertices, rank at most 3, quadratic moment 718) reconstructs the complete K(9,11,13) class. With the canonical normalized scene heat, full one-step history feedback and fixed beta/z, every scene in that entire named contract has the same price; all pullback covectors and finite contrasts of this route are zero, even with discontinuous label/state selection. The literal reconstruction and inhabited-owner propositions are printed and consumed; no M1 derivation of their hypotheses or whole-core exhaustion is claimed. The declared positive-conductance extension still has the complete all-359-edge kappa first jet and two stationary branches; the upper is not a minimum on 296 balanced directions, but every nonzero conductance jet leaves binary incidence in its actual vertex coordinates. 27 kernel propositions, 2 primary-owner diagnostics, 11 transitive D0 import pins, 54 primary/prior pins, 2894 exact controls and 16 false ledgers. The full matrix spectral/price binding, branch existence and Hessian remain analytic; own full-action/source/Ward/GR remain open.",
     "The actual nonuniform archive tower and real LightProfinite owner are consumed. Entrywise record-kernel compatibility fails counting heat-operator naturality at the actual first arrow; the set-valued CompatibleOperatorFamily is not a Hilbert heat generator. The entire declared self-adjoint linear natural heat class is inherited coarse heat plus independent complementary blocks, at every level. Genuine full fixed-feedback heat derivatives, all scalar interface first jets, and capacity error bounds are proved. Independently varied positive hidden heat has no finite minimum. A stronger fixed phi^n paired-norm control has intrinsic 5/60 first-fibre shape freedom and a trace-class limiting heat with nonzero shape price derivative; a separately proved fixed-ceiling minimum instead saturates all hidden blocks. No thermal norm/ceiling, spectral shape, physical heat carrier, native field law or on-shell admission is selected. 46 kernel propositions, 6 actual owner propositions, 3 typed definitions, 15 transitive D0 pins, 38 primary/prior pins, 41107 exact controls and 21 rejected ledgers. Hilbert spectral and limit statements have explicit analytic status. Own full-action/source/Ward/GR and every parent terminal remain open.",
     "Actual fixed Hodge/CAR operator-first scalar Connes metric: exact Euclidean product-circle distance for every finite periodic L>=2 and all site pairs. Full analytic norm/interpolation/supremum proof, eight compiled component propositions, six complete sparse sizes, odd/even/L2/wrap controls and an exact hostile column-norm witness. The prior arithmetic l1/l2 owner does not prove the asserted operator identification. Imported square retains three explicit native_decide CAR leaves. No curved/Lorentz physical metric, full native preparation/refinement, source or terminal is claimed.",
-    "Actual archive/full-Hodge refinement: all native long arrows have a kernel-proved growing collapsed fibre. Analytic packing excludes a uniform O(h) full scalar point metric distortion under every bijective point identification on L-to-2L arrows, including L in 4N. Eleven new standard-axiom propositions and three printed actual primary propositions, exact native-modulus/wrap/packing/rate controls, seventeen rejected ledgers. Slower convergence, prepared nonbijective physical algebras, action contrast and full Gamma/F/source/GR are not excluded or derived."
+    "Actual archive/full-Hodge refinement: all native long arrows have a kernel-proved growing collapsed fibre. Analytic packing excludes a uniform O(h) full scalar point metric distortion under every bijective point identification on L-to-2L arrows, including L in 4N. Eleven new standard-axiom propositions and three printed actual primary propositions, exact native-modulus/wrap/packing/rate controls, seventeen rejected ledgers. Slower convergence, prepared nonbijective physical algebras, action contrast and full Gamma/F/source/GR are not excluded or derived.",
+    "Strict scalar persistence on the actual native archive: every base-zero compatible family is exactly one of sixteen-coordinate scalar readings. Two explicit distinct retained inverse-limit records are invisible to all of them; a new finite cylinder persists from its birth but cannot extend backward. Twenty compiled propositions, standard axioms only. Analytic whole scalar-algebra and full Hodge-norm arguments give diameter <=15/L under all site bijections and the stated four-dimensional resolution lower bound. This neither selects physical observations nor excludes other admitted condensed/noncommutative readouts or action contrasts."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+  "source_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+  "source_parent": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
   "source_pr": 310
 }

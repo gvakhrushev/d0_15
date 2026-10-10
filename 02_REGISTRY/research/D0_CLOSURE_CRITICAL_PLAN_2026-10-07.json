@@ -727,10 +727,10 @@
     "date": "2026-10-10",
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "d6b47989f37f95edecdf2bb1bd0db9a698baa13c520a41b11c35b863a361ef2f",
-    "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
-    "published_scientific_input_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
-    "observed_source_strategy_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+    "plan_sha256": "274d0bb11da9631fbe3726e5e785c260c2b11e2cdea5a9bbb0ae55acf073f1f2",
+    "control_input_head": "ee22ee7cce3c4c311daa2c759eee4d54d16ae14d",
+    "published_scientific_input_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
+    "observed_source_strategy_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -740,7 +740,7 @@
       310,
       322
     ],
-    "first_missing_arrow": "Derive the actual admitted native preparations Omega_h, their represented operators A_h and physical observable algebra/readout R_h:Omega_h -> X_h, their genuine tangent image and native transitions. Retain the full archive, q,D,b,m and full owned price. A single graph Gamma_h(X), including hidden H=F(X), is a sufficient route, not a required selector. For a multi-valued coupling prove the full price covector annihilates ker DR_h and agrees between admitted preparations with the same physical X; prove coverage of all required physical probes and quantitative refinement. Native internal-shell equations, if used, require separate nonempty solutions and must not be defined by this desired descent. Keep every heat, feedback, moving-pairing, link and matter term. Operator nonuniqueness alone, a missing definition and a local vertical test alone are not no-go or source uniqueness. Source/Ward, contrast/native stationarity, curved roots, soundness/recovery and physical limits remain open. Finite native preparations need not form a C1 manifold. For an actually discrete route derive admitted paired finite probes, quantitative readout errors and agreement of native contrasts across preparations representing the same physical probe. Prove the original fixed-calibration O(h) contrast transfer including recording/refinement, then use epsilon=h^(1/3). An absent finite smooth jet does not exclude this route. No prescribed vanishing contrast is an admission gate.",
+    "first_missing_arrow": "Derive the actual admitted native preparations Omega_h, their represented operators A_h and physical observable algebra/readout R_h:Omega_h -> X_h, their genuine tangent image and native transitions. Retain the full archive, q,D,b,m and full owned price. A single graph Gamma_h(X), including hidden H=F(X), is a sufficient route, not a required selector. For a multi-valued coupling prove the full price covector annihilates ker DR_h and agrees between admitted preparations with the same physical X; prove coverage of all required physical probes and quantitative refinement. Native internal-shell equations, if used, require separate nonempty solutions and must not be defined by this desired descent. Keep every heat, feedback, moving-pairing, link and matter term. Operator nonuniqueness alone, a missing definition and a local vertical test alone are not no-go or source uniqueness. Source/Ward, contrast/native stationarity, curved roots, soundness/recovery and physical limits remain open. Finite native preparations need not form a C1 manifold. For an actually discrete route derive admitted paired finite probes, quantitative readout errors and agreement of native contrasts across preparations representing the same physical probe. Prove the original fixed-calibration O(h) contrast transfer including recording/refinement, then use epsilon=h^(1/3). An absent finite smooth jet does not exclude this route. No prescribed vanishing contrast is an admission gate. The literal strict scalar pro-rule has now been classified and cannot itself supply growing spatial resolution. Distinguish newly admitted comparisons from persistence of old readings. The phi scale owner alone is not a full operator-preparation law.",
     "intrinsic_object": "lambda=d(S_h o A_h) on actual admitted Omega_h; a physical eta on im DR_h exists iff lambda annihilates ker DR_h. All constrained probes and equal-readout fibre consistency must be proved. If A_h=Gamma_h o R_h is derived, use the existing conormal-invariant joint chart. Physical metric splitting still requires own readout/lift or connection-shell theorem. In a discrete native route use actually admitted finite paired contrasts with full probe coverage and quantitative lift-choice/refinement errors; do not infer a no-go solely from absence of finite C1 curves.",
     "metric_and_link_D_types_are_distinct": true,
     "price_to_use": "Existing full native action with two-tick feedback; its nonzero scalar price difference is not substituted for the full action or for a metric derivative.",
@@ -749,7 +749,7 @@
         "id": "T0",
         "requirement": "Actual complete admitted Omega/A/R and observable algebra; native curves or paired finite probes, their readout range/errors and transitions; full heat/pairing and existing parameter laws",
         "status": "OPEN",
-        "partial_discharged": "Actual owner recognition and inhabited binary dense-passport contract consumed; all nonzero conductance jets leave its vertex-incidence class. Whole native family/action/preparation/refinement still OPEN. Actual archive/LightProfinite and typed point-operator owners consumed; entire declared self-adjoint linear heat naturality class and stronger phi/norm/trace-class and fixed-ceiling minimum interfaces classified. Native preparation/admission remains OPEN."
+        "partial_discharged": "Actual owner recognition and inhabited binary dense-passport contract consumed; all nonzero conductance jets leave its vertex-incidence class. Whole native family/action/preparation/refinement still OPEN. Actual archive/LightProfinite and typed point-operator owners consumed; entire declared self-adjoint linear heat naturality class and stronger phi/norm/trace-class and fixed-ceiling minimum interfaces classified. Native preparation/admission remains OPEN. The actual strict scalar family is completely classified; its base-zero algebra has sixteen classes and its full Hodge reading collapses. Two retained records and a genuinely new persistent tail cylinder are compiled. Own operational admission and the common preparation input for operator, field and full price remain OPEN."
       },
       {
         "id": "T1",
@@ -780,7 +780,7 @@
     "preflight": {
       "checker": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
       "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-      "certificate_sha256": "7ddd459f8a34824c10367f14188df0f70cc9ed74aa02296f6dd2021e0105314a",
+      "certificate_sha256": "cc98004761db62234b03632ad97d9c6ab47fff3d728255de1af19abc15a57d02",
       "exact_controls": 292,
       "finite_star": {
         "sites": 5,
@@ -799,13 +799,13 @@
       "native_operator_map_derived": false,
       "native_source_derived": false,
       "source_equals_rho0": false,
-      "plan_sha256": "d6b47989f37f95edecdf2bb1bd0db9a698baa13c520a41b11c35b863a361ef2f"
+      "plan_sha256": "274d0bb11da9631fbe3726e5e785c260c2b11e2cdea5a9bbb0ae55acf073f1f2"
     },
     "conditional_calculus_is_not_T0": true,
     "operation_admission_only_when_used_by_specific_native_preparation_or_variation": true,
     "longer_word_search_and_new_role_census_on_active_path": false,
     "archive_disappears_only_after_full_intrinsic_annihilator_proof": true,
-    "next_proof": "T0: derive one actual admitted native preparation and its represented observable algebra/readout and native transitions. Obtain genuine physical probe lifts: complete DR image in a regular differential route, or admitted paired finite preparations with quantitative readout errors in a discrete route. Then test the full price covector/contrasts on readout fibres and consistency between preparations of the same physical probe. A single F and a finite C1 manifold are sufficient special cases, not required selectors. Preserve full archive and all q,D,b,m/link directions. No new action, source law, gate or archive-index/mesh identification. Generic descent calculus alone does not close T0.",
+    "next_proof": "Derive an actual common native preparation input for newly available observations, full Delta/P/U/G and q,D,b,m, with its allowed changes, budget and real transitions. Persistence, some finite factorization and a scalar phi scale law alone do not supply this. Then prove full-price source/contrast descent and probe coverage on the real admitted family. Retain relational preparations and genuinely discrete paired probes, the full archive and all metric/link/matter directions. No new action, desired stationarity gate, selector or archive-index/mesh calibration.",
     "acceptance_requires_same_packet_source_pins_replay_and_current_head_CI": true,
     "closed_G0_G1_G2_G3_G4_nodes": [],
     "constrained_price_source": {
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+    "prepared_scientific_input_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -959,7 +959,7 @@
     },
     "execution_graph_input": {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "16da934c992d51e41726e9ab9f51118a5ed5b85b5f54ddc7e72fdc9089090a28",
+      "sha256": "385562ef0bcd957a544edf3a5edf62ec9625fbe4ea33e69d65301fed9d3556a0",
       "global_census": false
     },
     "operator_first_metric_refinement": {
@@ -1016,6 +1016,32 @@
       "original_fixed_calibration_O_h_contrast_contract_preserved": true,
       "native_finite_contrast_lifts_or_error_bounds_already_derived": false,
       "supersedes_prior_graph_only_preparation_requirement": true
+    },
+    "strict_observable_descent": {
+      "date": "2026-10-10",
+      "status": "COMPLETE_STRICT_SCALAR_READING_BOUNDARY_NOT_NATIVE_PREPARATION_CLOSURE",
+      "source_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
+      "source_parent": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+      "control_input_head": "ee22ee7cce3c4c311daa2c759eee4d54d16ae14d",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_STRICT_OBSERVABLE_DESCENT.md",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_certificate.json",
+      "compiled_actual_rule_and_record_propositions": 20,
+      "printed_actual_primary_propositions": 3,
+      "all_new_propositions_standard_axioms_only": true,
+      "finite_scalar_algebra_classification_metric_bound_and_packing": "ANALYTIC_NOT_FULL_LEAN",
+      "complete_class": "Actual strict scalar archive families beginning at one fixed level; all scalar partition algebras represented on the full fixed counting Hodge triple; all site bijections.",
+      "base_zero_scalar_classes": 16,
+      "strict_metric_diameter_upper_bound": "15/L",
+      "full_flat_O_h_metric_resolution_necessary_condition": "L^4 <= m*(2*floor(C)+1)^4",
+      "new_cylinder_persists_forward_but_has_no_backward_scalar_extension": true,
+      "all_original_44_node_contracts_preserved": true,
+      "unchanged_prior_scientific_artifact_count": 286,
+      "modified_prior_scientific_artifact_count": 2,
+      "new_scientific_artifact_count": 6,
+      "native_operational_admission_or_joint_readout_or_full_price_source_derived": false,
+      "all_condensed_readouts_or_noncommutative_algebras_or_Gamma_F_excluded": false,
+      "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
+      "next_arrow": "Derive an actual common native preparation input for newly available observations, full Delta/P/U/G and q,D,b,m, with its allowed changes, budget and real transitions. Persistence, some finite factorization and a scalar phi scale law alone do not supply this. Then prove full-price source/contrast descent and probe coverage on the real admitted family."
     }
   }
 }

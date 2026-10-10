@@ -3072,3 +3072,34 @@ readouts, actual O(h) action contrasts, full Gamma/F and source/Ward remain
 open; this metric bound does not prove their obstruction. All ten metric
 slots, links, curved joint roots, soundness/recovery, all 44 contracts and
 original #310/#202/#317 terminals remain required.
+
+## Strict archive scalar observables and growing resolution (2026-10-10)
+
+[The actual observable-class proof](A4D_NATIVE_STRICT_OBSERVABLE_DESCENT.md)
+classifies the exact scalar pro-equality cited in BOOK_02 on the actual
+archive diagram. Starting at level zero, all such families are precisely
+pullbacks of sixteen scalar coordinates. Two explicit distinct retained
+inverse-limit records have the same value under every family. A fresh
+level-one cylinder persists from its birth but cannot extend backward
+through the first real arrow. Twenty compiled propositions bind the whole
+class, real composites and these records; no supplied physical admission
+predicate is used as its conclusion.
+
+For every bijective site identification, the actual full counting Hodge
+operator induces diameter at most 15/L on that strict represented scalar
+algebra. The proof is analytic and uses the genuine full norm as its gate,
+not a replacement column/edge norm. Every unital finite scalar subalgebra
+is exactly a partition algebra; O(h) recovery of the full flat Hodge metric
+requires order L^4 distinguishable classes. A fixed finite birth algebra
+therefore cannot supply increasingly resolved noncollapsed geometry.
+
+This closes the literal persistence-only reading, not every condensed
+observable, noncommutative representation or native preparation. Next
+derive which newly available comparisons are admitted by the owned native
+preparation and budget, then their joint physical readout/probes and full
+price descent. Locally constant finite factorization alone does not prove
+that admission. No new algebra, operational gate, memory deletion, action,
+selector, thermal law or desired source is installed. T0, all source/Ward,
+contrast/native stationarity, curved-root and soundness/recovery obligations
+and all forty-four contracts and original #310/#202/#317 terminals remain
+open in their existing scopes.
