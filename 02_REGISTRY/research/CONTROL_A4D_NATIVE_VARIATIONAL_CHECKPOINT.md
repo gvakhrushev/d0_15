@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`cad6f9a3168d26c72a72a98a71d737e470bac508`, following
-`43fc7657d88d50f390b72b52e86317e98e1f5974`.
+`8207558224ee7c419d58f1f468d01b1187e21951`, following
+`cad6f9a3168d26c72a72a98a71d737e470bac508`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -42,7 +42,7 @@ uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
 The intake has 311 artifacts byte-identical to verified SOURCE
-`cad6f9a3168d26c72a72a98a71d737e470bac508`: the existing AF proof/replay/ledger and
+`8207558224ee7c419d58f1f468d01b1187e21951`: the existing AF proof/replay/ledger and
 source memo are updated; 307 earlier artifacts are unchanged. The
 registered metric certificate and its 195 controls remain intact. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
@@ -135,9 +135,36 @@ ordinary all-small-time heat obstruction does not exclude native discrete
 level readings, other independently owned physical algebras or all F.
 This AF heat is not identified with the full bootstrap price. No replacement
 spectrum, averaging, temperature or physical scale is installed. The
-all-level proof is analytic. There are 121 new heat controls, 316 total,
-thirteen rejected mathematical mutations and twenty-five scope rejections.
+first heat continuation is analytic and originally had 121 new controls,
+316 total, thirteen mathematical mutations and twenty-five scope rejections.
+The cumulative counts and next coefficient are updated below.
 The valid AF metric result and every original parent terminal are retained.
+
+Section 7 now resolves the ordinary next heat coefficient on the retained
+geometric-phase route. The full exact Burnside expansion has positive
+terms with exponents log(f^2)/log(33) and a remainder between c_1/|G| and 1.
+On every fixed phase the leading t^-2 limit exists, but the f=31 term
+has an exponent strictly between 1 and 2. The attempted t^-1 coefficient
+therefore diverges positively. This also holds uniformly after tracking
+the exact leading periodic coefficient at each time. Its next profile
+is bounded below by 169*320/(|G|*961^2). All intervening f=6,...,31 terms
+remain; no integer fixed-point count has exponent exactly one.
+
+The counting strata are not independently variable physical blocks.
+Formal subtraction of every stronger power would leave zero t^-1
+coefficient, but no such operation is admitted. This scalar heat boundary
+does not prohibit cancellation of common terms in truly prepared paired
+price contrasts. The normalized leading level error (961/1089)^N is not
+promoted to a physical action-error estimate.
+
+The cumulative replay passes 452 exact controls, rejects nineteen executed
+mathematical mutations and thirty-three false scope ledgers. Two shallow-path
+replays repair a real CI defect: CONTROL run 38062930844 at the prior head
+failed with IndexError while locating the temporary mutation script,
+before --repo was parsed. Explicit --repo is now resolved first; rejection
+must still be a mathematical AssertionError. The prior failure is retained
+as failure, and new-head CI is required. No new Lean theorem, native
+preparation, physical source or terminal closure is claimed.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating

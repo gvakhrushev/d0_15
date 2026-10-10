@@ -21,6 +21,9 @@ four-dimensional readout or the common full-action preparation of T0.
 same D_b squared has no positive finite four-dimensional leading
 coefficient for any fixed b>1. It retains the valid fixed-phase geometric
 subsequence limits and does not identify this heat with the bootstrap price.
+Section 7 computes the full retained-stratum expansion and shows that even
+on every fixed phase the ordinary next curvature coefficient fails: a
+positive archive contribution lies strictly between the t^-2 and t^-1 orders.
 
 ## 1. The actual declared composition rule
 
@@ -362,3 +365,158 @@ to the standard four-dimensional heat coefficient. The common preparation,
 all joint field directions and the source comparison remain the same
 open obligations. The full asymptotic proof is analytic; the replay checks
 the exact owned multiplicities, rational tail bounds and hostile alterations.
+
+## 7. Every fixed phase retains an intermediate archive order
+
+Continuation input: `cad6f9a3168d26c72a72a98a71d737e470bac508`.
+The geometric-subsequence exception in Section 6 is genuine. We now test
+its next necessary heat coefficient on the **same full operator**, without
+choosing a phase, spectrum, averaging law or counterterm. The positive
+leading subsequence limit survives. The usual following t^-1 curvature
+coefficient does not exist on any fixed phase.
+
+Only b=sqrt(33) can have the required positive leading t^-2 order, so fix
+B=b^2=33 for this necessary test. This is not native scale admission.
+For each f>=2 with c_f>0 define
+
+\[
+ \alpha_f={\log(f^2)\over\log33},\quad
+ \kappa_f={c_f\over g}(1-f^{-2}),\quad
+ Q_f(s)=\sum_{k\in\mathbb Z}(s33^k)^{\alpha_f}e^{-s33^k},
+ \quad a_f(s)=\kappa_f Q_f(s)>0.                         \tag{17}
+\]
+
+These functions have multiplicative period 33 and are bounded above and
+away from zero on a fundamental phase interval. The uniform convergence
+argument in Section 6 applies separately to each of the finitely many f.
+The f labels form a Burnside counting decomposition, not an asserted
+orthogonal sum of physical sectors. Its generally fractional coefficients
+do not license independently variable native heat blocks.
+The complete Burnside multiplicities in (9) give an **exact**, all-t>0
+decomposition
+
+\[
+ K_b(t)=\sum_{f\ge2,\ c_f>0} a_f(t)t^{-\alpha_f}+r(t),    \tag{18}
+\]
+\[
+ r(t)=1-{c_0\over g}e^{-33t}
+       -\sum_{f\ge2,\ c_f>0}\kappa_f
+                    \sum_{n\le0}f^{2n}e^{-t33^n}.        \tag{19}
+\]
+
+To obtain (18), first expand `m_n` using (9). The f=0 contribution is
+exactly `-c_0 exp(-33t)/g`, because only n=1 survives. The f=1 increment
+is zero. For every f>=2, complete its positive n sum to all integer levels.
+Absolute convergence, or finite f summation followed by its positive
+convergent series, justifies the rearrangement. No modes have been removed.
+
+The remainder has particularly simple exact bounds:
+
+\[
+                 {c_1\over g}\le r(t)\le1,
+          \qquad r(t)\longrightarrow {c_1\over g}.        \tag{20}
+\]
+
+Indeed each exponential is at most one and
+`kappa_f sum_(n<=0) f^(2n)=c_f/g`. The lower bound follows from
+`sum_f c_f=g`, and the upper bound from nonnegative subtracted terms.
+Dominated convergence in the summable negative-level geometric tails
+proves the limit. This also accounts explicitly for the zero and one
+fixed-point strata; neither is silently dropped.
+
+### 7.1 The second coefficient fails for every fixed phase
+
+Along `t_N=s*33^-N`, s>0 fixed, every a_f(t_N) equals a_f(s).
+The positive leading coefficient is exactly a_33(s). The next stratum
+has c_31=169 and
+
+\[
+             1<\alpha_{31}={\log961\over\log33}<2.        \tag{21}
+\]
+
+There is no f=32 stratum, and all f<=30 have smaller exponents. Therefore
+
+\[
+ t_N^{\alpha_{31}}
+   \bigl(K_b(t_N)-a_{33}(s)t_N^{-2}\bigr)
+                     \longrightarrow a_{31}(s)>0.        \tag{22}
+\]
+
+This follows directly from the finite exact decomposition (18): after
+multiplication all smaller powers tend to zero and r is bounded. In
+particular the proposed ordinary second heat coefficient diverges:
+
+\[
+ t_N\bigl(K_b(t_N)-a_{33}(s)t_N^{-2}\bigr)
+                           \longrightarrow +\infty.      \tag{23}
+\]
+
+No choice of a fixed phase s avoids (23). More strongly, even subtracting
+the **exact phase-dependent leading term** at every t leaves
+
+\[
+ t\bigl(K_b(t)-a_{33}(t)t^{-2}\bigr)
+                           \longrightarrow +\infty       \tag{24}
+\]
+
+through all positive t tending to zero. To see uniform positivity without
+an unspecified compactness constant, reduce s to [1,33]. The k=-1 term
+in Q_31 has `x=s/33 in [1/33,1]`, hence
+`x^alpha_31 >= 1/961` and `exp(-x)>1/3`. Consequently for every phase
+
+\[
+ a_{31}(s)>{169\cdot320\over g\cdot961^2}>0.              \tag{25}
+\]
+
+All other terms remaining in (18) and r(t) are nonnegative. This lower
+bound times `t^(1-alpha_31)` proves (24). A fixed positive time or trace
+unit rescaling changes constants, not the intervening power.
+
+The normalized leading convergence on a fixed phase has the exact first
+error order
+
+\[
+ t_N^2K_b(t_N)-a_{33}(s)
+      =a_{31}(s)t_N^{2-\alpha_{31}}
+                   +o(t_N^{2-\alpha_{31}}).               \tag{26}
+\]
+
+In level coordinates its rate is `(961/1089)^N`, times the fixed s
+coefficient. This is a statement about this heat reading. It is not an
+O(h) action-contrast obstruction: no physical h or price normalization
+has been derived from the archive level.
+
+### 7.2 All intervening powers remain explicit
+
+For the actual count table, every f in {0,...,31,33} occurs. The strata
+f=6,...,31 all have `1<alpha_f<2`; f=2,...,5 have `0<alpha_f<1`.
+There is no alpha_f=1 because no integer f has f^2=33. Thus (18) identifies
+the entire finite set of intermediate orders, not only a sampled leading
+error. Positivity prevents their cancellation within this full heat trace.
+
+As an algebraic negative control, if one formally subtracts **every** term
+with f>=6, the remaining trace multiplied by t tends to zero, even while
+the phase varies. This follows from bounded periodic a_f for f<=5 and
+(20). Such a subtraction is not a native operation or an admitted
+counterterm here; it does not construct a curvature coefficient or prove
+zero physical stress. It exposes exactly what a putative reading would
+have to account for, rather than hiding the archive terms in an error.
+
+The retained fixed-phase leading limit therefore cannot, by itself,
+support the usual two-term `a_0 t^-2+a_2 t^-1+o(t^-1)` bridge. A separately
+derived physical observable, coupled price or limiting law may obey a
+different theorem. None is introduced or excluded wholesale. In particular
+the full bootstrap heat/feedback/matter derivative has not been identified
+with this scalar heat expansion. Common terms might cancel in actual
+paired price contrasts; that must be tested on an owned preparation and
+is not excluded by a scalar heat-coefficient obstruction. Native F, all joint metric/link/matter
+directions, source/Ward, stationarity and the original GR/recovery goals
+remain open. This is the complete second-coefficient boundary of the
+named full operator, with the whole native archive retained.
+
+The cumulative replay has 452 exact controls (195 metric, 121 first heat,
+136 full-stratum/phase controls), nineteen executed mathematical mutation
+rejections and thirty-three false scope rejections. Two explicit shallow-path
+replays verify that the mutation runner resolves `--repo` before inspecting
+its temporary script location. The analytical limits above are not claimed
+Lean-formalized.
