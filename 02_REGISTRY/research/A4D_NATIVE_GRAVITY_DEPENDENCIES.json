@@ -959,9 +959,15 @@
         "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py",
         "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_certificate.json",
         "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_output.txt",
-        "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json"
+        "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json",
+        "02_REGISTRY/research/A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement.lean",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_check.py",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_certificate.json",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_output.txt",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_results.json"
       ],
-      "verification": "Thirty-four compiled propositions, 49 transitive source pins, standard axioms only; kernel reduction rebuilds the actual finite CAR leaves and both nilpotencies. 107 exact controls check all grades, 24 Role orders, ten full metric derivatives with packed weights, and full integer periodic matrices at L=2,4,8. Analytic all-size Fourier classification gives negative spatial modes and nonconstant null modes, with ker D dimension 232 and ker Delta dimension 448 at L=4. Ordinary fixed-t>0 heat trace has normalized lower bound 4608*t^3*L^2. Fourteen false ledgers are rejected. The old weighted capstone is explicitly Boolean; positive Euclidean/observer pairings, mesh-dependent times, separate renormalized/oscillatory laws and alternative independently owned physical sectors remain outside this boundary. The actual fixed counting Hodge/CAR operator now has an exact operator-first scalar Connes metric on every periodic size and all site pairs: the Euclidean product-circle distance. The arithmetic l1/l2 owner does not prove its stated operator identification; no extra twist is forced by that arithmetic. The same actual square supplies the heat operator, with inherited native_decide CAR leaves explicitly recorded. Full native preparation, nonlinear field variations, Lorentz time, archive/physical refinement, source and GR remain open.",
+      "verification": "Thirty-four compiled propositions, 49 transitive source pins, standard axioms only; kernel reduction rebuilds the actual finite CAR leaves and both nilpotencies. 107 exact controls check all grades, 24 Role orders, ten full metric derivatives with packed weights, and full integer periodic matrices at L=2,4,8. Analytic all-size Fourier classification gives negative spatial modes and nonconstant null modes, with ker D dimension 232 and ker Delta dimension 448 at L=4. Ordinary fixed-t>0 heat trace has normalized lower bound 4608*t^3*L^2. Fourteen false ledgers are rejected. The old weighted capstone is explicitly Boolean; positive Euclidean/observer pairings, mesh-dependent times, separate renormalized/oscillatory laws and alternative independently owned physical sectors remain outside this boundary. The actual fixed counting Hodge/CAR operator now has an exact operator-first scalar Connes metric on every periodic size and all site pairs: the Euclidean product-circle distance. The arithmetic l1/l2 owner does not prove its stated operator identification; no extra twist is forced by that arithmetic. The same actual square supplies the heat operator, with inherited native_decide CAR leaves explicitly recorded. Full native preparation, nonlinear field variations, Lorentz time, archive/physical refinement, source and GR remain open. The actual archive projections now have a compiled all-level zero-fibre lower bound K-L+1. Together with the full fixed Hodge metric, analytic four-dimensional packing excludes uniform O(h) full metric refinement for every bijective point identification on actual L-to-2L arrows. Eleven new standard-axiom propositions, exact native-modulus/wrap/packing/rate controls and seventeen rejected ledgers. This does not exclude slower convergence, a differently prepared physical observable algebra, O(h) action contrasts or native Gamma/F. No physical observable algebra or original terminal is selected.",
       "status": "PROVED_WEIGHTED_OPERATOR_AND_SCOPED_LORENTZ_BOUNDARY_PENDING_CONTROL",
       "terminal_class": null,
       "required_terminal": "CONTROL_ACCEPTED_OPERATOR_CONSTRUCTION_AND_STATED_BOUNDARIES",
@@ -1443,5 +1449,19 @@
     "physical_operator_variations_curved_sector_and_native_refinement_derived": false,
     "GR_or_original_terminals_closed": false,
     "next_arrow": "Admitted internal operator/algebra preparation -> induced joint q,D,b,m readout -> full price descent/tangent/refinement, without assuming the kinematic quotient exhausts preparations."
+  },
+  "operator_first_metric_refinement_input_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+  "operator_first_metric_refinement": {
+    "proof": "02_REGISTRY/research/A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md",
+    "certificate": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_certificate.json",
+    "class": "All levelwise bijective archive-point identifications with the actual full Hodge scalar sites; actual composed archiveProjection maps, fixed nonzero common calibration",
+    "theorem": "For K=2L and L in 4N, full metric distortion is at least ((L+1)^(1/4)-1)/(4L); no uniform O(1/L) bound under any numbering.",
+    "actual_all_level_growing_collapsed_fiber_compiled": true,
+    "metric_packing_and_rate_proof": "ANALYTIC_NOT_FULL_LEAN",
+    "all_11_new_propositions_standard_axioms_only": true,
+    "native_physical_algebra_admission_or_Gamma_F_derived": false,
+    "slower_o_one_distortion_or_O_h_action_contrast_excluded": false,
+    "whole_core_or_GR_terminal_closed": false,
+    "next_arrow": "Derive the native prepared physical observable algebra/readout and transitions while retaining the full archive price, then its induced joint q,D,b,m readout and full price tangent/refinement. Do not substitute another numbering, delete memory, identify archive index with physical mesh, or promote the metric-rate obstruction to a source/GR no-go."
   }
 }

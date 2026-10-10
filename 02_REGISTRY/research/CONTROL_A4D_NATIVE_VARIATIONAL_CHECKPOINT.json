@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "a8348aadfd5bc2eeee23883fe657dec56c2c37a06677e0b66dd63c9cdb4ce102",
-      "source_blob": "ab05890c0f83ad85b6a4737243e56e3c491b898f"
+      "sha256": "16da934c992d51e41726e9ab9f51118a5ed5b85b5f54ddc7e72fdc9089090a28",
+      "source_blob": "e0cdd60a3f59d08bd8672dae118fe8d417bc21a4"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "ec1042172e6aa49f067938fc7780d2aacd94c282f239a3a36d04f970f34d3a58",
-      "source_blob": "e26e7f17593a58f5efded7778fce77e5e2aa8121"
+      "sha256": "6c4dcde73aa2aa450ab489140a8a443119c35f5645adda6869c9e3d9aba5cc43",
+      "source_blob": "8a68f6ca436c72c6063ff90b28e823a7d3462f3a"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1411,6 +1411,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json",
       "sha256": "01bf1f694ceaf8ccfff1f850067acb3a6a4989f4c2e7c9c10cb7e7bedf8d226f",
       "source_blob": "3c042cd386c81d45a20e869ed0318885f4f7221d"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md",
+      "sha256": "0e04ad82ed83acf93e148e8e076a00078761f654d2aeed021e9e38aedfc7cbb8",
+      "source_blob": "29c3466ea5dc9b442397bad1b6fff646cb64ad6f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement.lean",
+      "sha256": "de8e14ccb614f6dbad70a8b42c03b58171a563040d73a7f4dfd3747d2ec90e39",
+      "source_blob": "c47affa0f90a364467e8864c0bc42040e6723e32"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_certificate.json",
+      "sha256": "0c6277600d8ecf655890b729f7de3867454fc2536bb43deeaca17606969acf6b",
+      "source_blob": "893dffe1c9fc2260d9b59ac4ed76ccb57ef8dacd"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_check.py",
+      "sha256": "b4e22f837daf780bb7fc978cc633d03b66858d7c42697fe7b1e5926f5b7d8c0d",
+      "source_blob": "195576d51d97ed0dd8fb1203de224c12216dd6b7"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_output.txt",
+      "sha256": "0d81bff07321bde281e9d0d84a3edc360ef57b38334b59da0cfc0f1a053ccfd0",
+      "source_blob": "37c4679e452172f57dbfa0ed77f33493b2543165"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_results.json",
+      "sha256": "aba9ffc8a80b24f7b56af8e487c194ba04b931d93df40972776a6e186fe424ad",
+      "source_blob": "fa7fb0966838f81a94d13802529045e1c559902a"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1458,7 +1488,7 @@
     "control_input_head": "ad12be0f70cc03b4ed1cd3b4f24603c132b5d074",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-    "finite_preflight_certificate_sha256": "c6fe8e85432718ec4cb2aef7dbb68e3a48e7f2befa39f4343fdb3b00c6d2a796",
+    "finite_preflight_certificate_sha256": "9dbd65fb37f6a361c26b2ee9da9dc2e1b0e571d7b039562d093bc9b9eb61dd1e",
     "finite_preflight_exact_controls": 292,
     "machine_contract": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
     "native_operator_map_or_source_claim_promoted": false,
@@ -1524,7 +1554,30 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+    "observed_source_strategy_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+    "operator_first_metric_refinement": {
+      "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
+      "actual_zero_fiber_lower_bound": "K-L+1",
+      "all_original_44_node_contracts_preserved": true,
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_certificate.json",
+      "compiled_actual_all_level_propositions": 11,
+      "complete_class": "All levelwise bijective archive point identifications with fixed full scalar Hodge sites; actual composed archiveProjection maps; fixed nonzero common calibration",
+      "control_input_head": "60a33aa3cdc98fc2d181e9f25f6e8687dee8a161",
+      "date": "2026-10-10",
+      "doubling_metric_distortion_lower_bound": "((L+1)^(1/4)-1)/(4L)",
+      "metric_packing_and_all_size_rate_proof": "ANALYTIC_NOT_FULL_LEAN",
+      "modified_prior_scientific_artifact_count": 2,
+      "native_physical_algebra_or_Gamma_F_derived": false,
+      "new_scientific_artifact_count": 6,
+      "next_arrow": "T0: derive native prepared physical observable algebra/readout and its actual transitions, retaining the complete archive in the full price; then induced joint q,D,b,m geometry and full price tangent/refinement. All numberings of the full scalar Hodge carrier are already covered by the stated O(h) obstruction. Do not delete memory, add a selector, identify phi/archive index with physical mesh, or infer an action/source/GR no-go from the metric rate.",
+      "printed_actual_primary_propositions": 3,
+      "proof": "02_REGISTRY/research/A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md",
+      "slower_convergence_or_action_contrast_excluded": false,
+      "source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+      "source_parent": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+      "status": "COMPLETE_STATED_FULL_BIJECTIVE_HODGE_METRIC_REFINEMENT_RATE_OBSTRUCTION_NOT_WHOLE_CORE",
+      "unchanged_prior_scientific_artifact_count": 280
+    },
     "operator_first_metric_revalidation": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "all_size_Connes_distance_proof": "ANALYTIC_NOT_FULL_LEAN",
@@ -1550,11 +1603,11 @@
     },
     "parent_graph_and_terminals_unchanged": true,
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "81691b86a0e8502dfea8ef56b3d739ab5486f1fe02206de6df526e8e8c18a255",
+    "plan_sha256": "11fa7fd77ff48ae20d4243a8b88a9f1b1cdbec0335a2399701feb50d5679a920",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 274,
+    "prior_scientific_artifacts_byte_unchanged_count": 280,
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+    "scientific_source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -1584,7 +1637,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+  "previous_source_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1656,11 +1709,12 @@
     "The normalized 33-vertex heat price and full 718-history one-step reversal-feedback price now have a single degree-normalized jet in the declared positive-conductance K(9,11,13) class. At unit weights the complete 359-edge first derivative is (c_H+c_F) d kappa with three exact per-edge coefficients. For every fixed beta>0 there are exactly two stationary fugacity branches for the weights; the upper branch is not a local minimum because its Hessian is negative definite on 296 balanced edge directions. The lower minimum and native admission/pullback are not proved. 21 kernel-checked declarations with scalar HasDerivAt, 2496 exact controls and 13 false ledgers; matrix differentiation and branch-existence/Hessian arguments retain their analytic status.",
     "The actual dense binary scene passport (33 vertices, rank at most 3, quadratic moment 718) reconstructs the complete K(9,11,13) class. With the canonical normalized scene heat, full one-step history feedback and fixed beta/z, every scene in that entire named contract has the same price; all pullback covectors and finite contrasts of this route are zero, even with discontinuous label/state selection. The literal reconstruction and inhabited-owner propositions are printed and consumed; no M1 derivation of their hypotheses or whole-core exhaustion is claimed. The declared positive-conductance extension still has the complete all-359-edge kappa first jet and two stationary branches; the upper is not a minimum on 296 balanced directions, but every nonzero conductance jet leaves binary incidence in its actual vertex coordinates. 27 kernel propositions, 2 primary-owner diagnostics, 11 transitive D0 import pins, 54 primary/prior pins, 2894 exact controls and 16 false ledgers. The full matrix spectral/price binding, branch existence and Hessian remain analytic; own full-action/source/Ward/GR remain open.",
     "The actual nonuniform archive tower and real LightProfinite owner are consumed. Entrywise record-kernel compatibility fails counting heat-operator naturality at the actual first arrow; the set-valued CompatibleOperatorFamily is not a Hilbert heat generator. The entire declared self-adjoint linear natural heat class is inherited coarse heat plus independent complementary blocks, at every level. Genuine full fixed-feedback heat derivatives, all scalar interface first jets, and capacity error bounds are proved. Independently varied positive hidden heat has no finite minimum. A stronger fixed phi^n paired-norm control has intrinsic 5/60 first-fibre shape freedom and a trace-class limiting heat with nonzero shape price derivative; a separately proved fixed-ceiling minimum instead saturates all hidden blocks. No thermal norm/ceiling, spectral shape, physical heat carrier, native field law or on-shell admission is selected. 46 kernel propositions, 6 actual owner propositions, 3 typed definitions, 15 transitive D0 pins, 38 primary/prior pins, 41107 exact controls and 21 rejected ledgers. Hilbert spectral and limit statements have explicit analytic status. Own full-action/source/Ward/GR and every parent terminal remain open.",
-    "Actual fixed Hodge/CAR operator-first scalar Connes metric: exact Euclidean product-circle distance for every finite periodic L>=2 and all site pairs. Full analytic norm/interpolation/supremum proof, eight compiled component propositions, six complete sparse sizes, odd/even/L2/wrap controls and an exact hostile column-norm witness. The prior arithmetic l1/l2 owner does not prove the asserted operator identification. Imported square retains three explicit native_decide CAR leaves. No curved/Lorentz physical metric, full native preparation/refinement, source or terminal is claimed."
+    "Actual fixed Hodge/CAR operator-first scalar Connes metric: exact Euclidean product-circle distance for every finite periodic L>=2 and all site pairs. Full analytic norm/interpolation/supremum proof, eight compiled component propositions, six complete sparse sizes, odd/even/L2/wrap controls and an exact hostile column-norm witness. The prior arithmetic l1/l2 owner does not prove the asserted operator identification. Imported square retains three explicit native_decide CAR leaves. No curved/Lorentz physical metric, full native preparation/refinement, source or terminal is claimed.",
+    "Actual archive/full-Hodge refinement: all native long arrows have a kernel-proved growing collapsed fibre. Analytic packing excludes a uniform O(h) full scalar point metric distortion under every bijective point identification on L-to-2L arrows, including L in 4N. Eleven new standard-axiom propositions and three printed actual primary propositions, exact native-modulus/wrap/packing/rate controls, seventeen rejected ledgers. Slower convergence, prepared nonbijective physical algebras, action contrast and full Gamma/F/source/GR are not excluded or derived."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+  "source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+  "source_parent": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
   "source_pr": 310
 }

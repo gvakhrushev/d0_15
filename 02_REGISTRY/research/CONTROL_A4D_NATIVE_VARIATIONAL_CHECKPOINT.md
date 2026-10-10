@@ -3,38 +3,38 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`025bf30c3d7c2cfba1a1d57676d65e536453b66b`, following
-`569abdc48795b161aa5fe6d2a1c12ecdd05f66b0`.
+`adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f`, following
+`025bf30c3d7c2cfba1a1d57676d65e536453b66b`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 
 Current execution order, revalidated 2026-10-10:
-[the tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md) now
-consumes the [actual operator-first metric proof](A4D_NATIVE_HODGE_CONNES_METRIC.md).
-The fixed counting Hodge/CAR operator with scalar multiplication on all
-sixteen grades has exactly the Euclidean product-circle Connes metric
-for every periodic size and all point pairs. Its actual square is the
-fibrewise difference heat operator. The prior l1/l2 arithmetic owner does
-not prove its asserted operator identification; it cannot require a new
-twist on this route. Eight compiled component propositions and the full
-finite-dimensional analytic distance proof are distinguished. The imported
-square's three native_decide CAR leaves are retained explicitly.
+[The tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
+consumes the [actual operator metric](A4D_NATIVE_HODGE_CONNES_METRIC.md)
+and its [actual archive refinement test](A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md).
+The owned Hodge/CAR full scalar metric remains exactly Euclidean on each
+finite level. The actual archive composite has a kernel-proved collapsed
+fibre of at least K-L+1 points. Analytic packing excludes uniform O(h)
+full metric distortion for every bijective point identification on the
+actual L-to-2L arrows, including L in 4N. Eleven new compiled propositions
+and three actual primary propositions have only standard axioms. The
+packing/rate proof is analytic; the prior square's three native_decide
+CAR leaves remain explicitly recorded in their unchanged packet.
 
-The intake has 282 scientific artifacts byte-identical to verified SOURCE
-`025bf30c3d7c2cfba1a1d57676d65e536453b66b`: six new files, two updated pointers, and 274 prior
-scientific artifacts unchanged. The original 44 dependency-node contracts
-and every original parent remain unchanged. Current-head CI and CONTROL
-review are still required. Prior SOURCE/CONTROL CI does not validate this
-revision. Local constrained-price preflight is rebound to this plan; it
-does not prove the native preparation.
+The intake has 288 scientific artifacts byte-identical to verified SOURCE
+`adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f`: six new files, two updated pointers, and 280 prior
+scientific artifacts unchanged. All original 44 dependency contracts and
+parent terminals remain unchanged. Current-head CI and CONTROL review
+remain required. Prior input CI success does not validate this revision.
 
-The next arrow remains the native full-price preparation/tangent/refinement
-lemma, now with an operator-first route: derive an admitted operator/algebra
-preparation, its induced joint field readout and full price descent. Do not
-assume the existing kinematic quotient exhausts preparations. No full Gamma,
-F, source/Ward, curved/Lorentz metric, native archive/physical metric
-refinement, stationarity, GR or original terminal is claimed.
+The next T0 arrow is the native prepared physical observable algebra/readout
+and its transitions, retaining the complete archive in the full price;
+then its induced joint geometry and full price tangent/refinement. Another
+numbering is covered by this complete stated obstruction. No new algebra,
+memory deletion, selector or action is installed. Slower convergence and
+O(h) action contrasts are not ruled out by the metric rate. Full Gamma/F,
+source/Ward, curved roots, soundness/recovery and GR remain open.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the

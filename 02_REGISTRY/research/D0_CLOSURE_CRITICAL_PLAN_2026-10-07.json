@@ -725,12 +725,12 @@
   },
   "active_execution_strategy": {
     "date": "2026-10-10",
-    "status": "EXECUTION_PLAN_WITH_ACTUAL_FIXED_OPERATOR_METRIC_BINDING_AND_OPEN_NATIVE_PREPARATION",
+    "status": "EXECUTION_PLAN_WITH_ACTUAL_OPERATOR_METRIC_AND_FULL_SCALAR_REFINEMENT_RATE_BOUNDARY",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "81691b86a0e8502dfea8ef56b3d739ab5486f1fe02206de6df526e8e8c18a255",
-    "control_input_head": "4070bfd6ea8eadd3b65126181afb0d0a3d571702",
-    "published_scientific_input_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
-    "observed_source_strategy_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+    "plan_sha256": "11fa7fd77ff48ae20d4243a8b88a9f1b1cdbec0335a2399701feb50d5679a920",
+    "control_input_head": "60a33aa3cdc98fc2d181e9f25f6e8687dee8a161",
+    "published_scientific_input_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+    "observed_source_strategy_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -780,7 +780,7 @@
     "preflight": {
       "checker": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
       "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-      "certificate_sha256": "c6fe8e85432718ec4cb2aef7dbb68e3a48e7f2befa39f4343fdb3b00c6d2a796",
+      "certificate_sha256": "9dbd65fb37f6a361c26b2ee9da9dc2e1b0e571d7b039562d093bc9b9eb61dd1e",
       "exact_controls": 292,
       "finite_star": {
         "sites": 5,
@@ -799,13 +799,13 @@
       "native_operator_map_derived": false,
       "native_source_derived": false,
       "source_equals_rho0": false,
-      "plan_sha256": "81691b86a0e8502dfea8ef56b3d739ab5486f1fe02206de6df526e8e8c18a255"
+      "plan_sha256": "11fa7fd77ff48ae20d4243a8b88a9f1b1cdbec0335a2399701feb50d5679a920"
     },
     "conditional_calculus_is_not_T0": true,
     "operation_admission_only_when_used_by_specific_native_preparation_or_variation": true,
     "longer_word_search_and_new_role_census_on_active_path": false,
     "archive_disappears_only_after_full_intrinsic_annihilator_proof": true,
-    "next_proof": "Derive admitted internal operator/algebra preparation -> induced joint q,D,b,m readout -> full price descent, tangent and native refinement. The present kinematic quotient is not presumed to exhaust preparations. Derive the actual full operational preparation Gamma_h(X)=(Delta_h,P_h,U_h,G_h), its complete nonempty admitted family, joint constraint-tangent image and native refinement from named existing primitive conditions. For an archive-heat route derive every price-visible complementary block from that preparation. Restriction to q,D requires proving independence from retained b,m. No price, rho0 or vanishing-contrast requirement is installed as the preparation or Euler gate. Preserve every heat, feedback, moving-pairing, link and matter term; calculate the intrinsic covector on all ten physical rho0 components only after this implication. A missing definition is not a no-go. The comparison also permits a different nonzero traceless response. Own source/Ward, quantitative contrast, native stationarity, curved joint roots, soundness/recovery and physical limits remain required.",
+    "next_proof": "T0: derive native prepared physical observable algebra/readout and its actual transitions, retaining the complete archive in the full price; then induced joint q,D,b,m geometry and full price tangent/refinement. All numberings of the full scalar Hodge carrier are already covered by the stated O(h) obstruction. Do not delete memory, add a selector, identify phi/archive index with physical mesh, or infer an action/source/GR no-go from the metric rate.",
     "acceptance_requires_same_packet_source_pins_replay_and_current_head_CI": true,
     "closed_G0_G1_G2_G3_G4_nodes": [],
     "constrained_price_source": {
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+    "prepared_scientific_input_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -959,8 +959,31 @@
     },
     "execution_graph_input": {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "a8348aadfd5bc2eeee23883fe657dec56c2c37a06677e0b66dd63c9cdb4ce102",
+      "sha256": "16da934c992d51e41726e9ab9f51118a5ed5b85b5f54ddc7e72fdc9089090a28",
       "global_census": false
+    },
+    "operator_first_metric_refinement": {
+      "date": "2026-10-10",
+      "status": "COMPLETE_STATED_FULL_BIJECTIVE_HODGE_METRIC_REFINEMENT_RATE_OBSTRUCTION_NOT_WHOLE_CORE",
+      "source_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+      "source_parent": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+      "control_input_head": "60a33aa3cdc98fc2d181e9f25f6e8687dee8a161",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_certificate.json",
+      "compiled_actual_all_level_propositions": 11,
+      "printed_actual_primary_propositions": 3,
+      "metric_packing_and_all_size_rate_proof": "ANALYTIC_NOT_FULL_LEAN",
+      "complete_class": "All levelwise bijective archive point identifications with fixed full scalar Hodge sites; actual composed archiveProjection maps; fixed nonzero common calibration",
+      "actual_zero_fiber_lower_bound": "K-L+1",
+      "doubling_metric_distortion_lower_bound": "((L+1)^(1/4)-1)/(4L)",
+      "all_original_44_node_contracts_preserved": true,
+      "unchanged_prior_scientific_artifact_count": 280,
+      "modified_prior_scientific_artifact_count": 2,
+      "new_scientific_artifact_count": 6,
+      "native_physical_algebra_or_Gamma_F_derived": false,
+      "slower_convergence_or_action_contrast_excluded": false,
+      "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
+      "next_arrow": "T0: derive native prepared physical observable algebra/readout and its actual transitions, retaining the complete archive in the full price; then induced joint q,D,b,m geometry and full price tangent/refinement. All numberings of the full scalar Hodge carrier are already covered by the stated O(h) obstruction. Do not delete memory, add a selector, identify phi/archive index with physical mesh, or infer an action/source/GR no-go from the metric rate."
     }
   }
 }
