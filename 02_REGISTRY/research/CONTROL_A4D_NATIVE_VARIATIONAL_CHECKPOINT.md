@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`88a6b71635b8cc9a1b3820709794625070eadedb`, following
-`570b3e7f25569841294670a21142dc19dbead3b9`.
+`f55bea04beed7aab18141e4284e49fe66cd397ed`, following
+`88a6b71635b8cc9a1b3820709794625070eadedb`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -34,9 +34,8 @@ uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
 The intake has 301 artifacts byte-identical to verified SOURCE
-`88a6b71635b8cc9a1b3820709794625070eadedb`: the previous source memo updated, 299 earlier
-artifacts unchanged, and the repaired existing primary rank-step certificate
-added to the intake. No new physical action, role or preparation law is introduced.
+`f55bea04beed7aab18141e4284e49fe66cd397ed`: the source memo and the existing primary rank-step
+certificate updated, with 299 earlier artifacts unchanged. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
@@ -55,11 +54,22 @@ opposite loop-price increment in the broader PQU interface; it fails
 golden compression and is explicitly rejected from that narrower class.
 Rank data alone therefore cannot stand for the complete preparation law.
 BOOK_03 action and BOOK_08 pressure normalization remain distinct.
-Eleven executed negative controls and five semantic mutations pass;
+Fourteen executed negative controls and eight semantic mutations pass;
 the existing 319-control heat packet and 23 Lean propositions are unchanged.
 This is a finite certificate repair. The heat profiles and projection
 transition are supplied test data, not an owned common native field law.
 No T0 or physical/parent terminal is promoted.
+
+The finite rank price is now separated from BOOK_08's endpoint resolvent
+pressure. On the same realized golden pair the initial reading is x,
+the exact loop increment is -log(1-x), and the final reading is x/(1-x),
+with strict inequalities and a lower left gap x^2/2. The interpolated
+projection is rejected. A single fixed factor -log(1-x)/x does reconcile
+this feedback-only reading on all nested golden channel additions;
+one- and two-channel realizations are checked. Thus this boundary does
+not prohibit the fixed-calibration route. Its extension to the complete
+native heat/feedback price still requires the actual common preparation.
+No constant-price refinement law or native rank stationarity is assumed.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating

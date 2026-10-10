@@ -728,9 +728,9 @@
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
-    "control_input_head": "8cedfa07f3b23f706bd0179fbaccc26e1d9226d5",
-    "published_scientific_input_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
-    "observed_source_strategy_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+    "control_input_head": "b779cd3108462ea38ea4285cd548ed9d3bb0706d",
+    "published_scientific_input_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+    "observed_source_strategy_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+    "prepared_scientific_input_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -1245,6 +1245,78 @@
       "prior_artifacts_unchanged": 299,
       "prior_artifacts_updated": 1,
       "existing_primary_files_added_to_intake": 1
+    },
+    "finite_rank_secant_distinction": {
+      "source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+      "source_input_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+      "control_input_head": "b779cd3108462ea38ea4285cd548ed9d3bb0706d",
+      "primary_path": "04_CERTIFICATES/vp_master_bootstrap_and_volume_derivative.py",
+      "primary_input_blob": "8c84bab0c46b63229884656819254e03d00f4c6c",
+      "primary_blob": "838659a50e6adf32292fb1622a5887f2a1d3ddd8",
+      "primary_sha256": "689cc1a701c9b5870421ef9347d16daec503b5484f25a27994338650fcddcc70",
+      "book08_path": "01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
+      "book08_blob": "86213324b651a5717b293308ba37a7555b9e6742",
+      "exact_result": "The exact finite golden rank secant lies strictly between both endpoint resolvent responses; its left gap exceeds x^2/2. No continuous projector path connects different ranks.",
+      "fixed_calibration_boundary": "For nested fixed-golden steps of k channels, the same factor -log(1-x)/x maps k*x to k*(-log(1-x)). Verified at k=1,2 on complete PQU carriers; the general calculation is analytic.",
+      "negative_controls": 14,
+      "semantic_mutations_rejected": 8,
+      "semantic_mutations": [
+        {
+          "name": "arbitrary_feedback",
+          "exit_code": 1,
+          "replace_once": "        feedback = leakage.T @ leakage",
+          "with": "        feedback = np.diag([0.10, 0.20, 0., 0., 0., 0.])"
+        },
+        {
+          "name": "wrong_complement",
+          "exit_code": 1,
+          "replace_once": "complement = eye - proj",
+          "with": "complement = proj"
+        },
+        {
+          "name": "wrong_golden_identity",
+          "exit_code": 1,
+          "replace_once": "p = (np.sqrt(5.) - 1.) / 2.",
+          "with": "p = 0.5"
+        },
+        {
+          "name": "deleted_zero_modes",
+          "exit_code": 1,
+          "replace_once": "np.exp(-beta * eigenvalues).sum()",
+          "with": "np.exp(-beta * eigenvalues[eigenvalues > TOL]).sum()"
+        },
+        {
+          "name": "wrong_pressure_beta",
+          "exit_code": 1,
+          "replace_once": "pressure = (log_partitions[1] - log_partitions[0]) / beta",
+          "with": "pressure = (log_partitions[1] - log_partitions[0])"
+        },
+        {
+          "name": "finite_secant_replaced_by_left_response",
+          "replace_once": "dloop = loops[1] - loops[0]",
+          "with": "dloop = 0.25*p*p",
+          "exit_code": 1
+        },
+        {
+          "name": "finite_secant_replaced_by_right_response",
+          "replace_once": "dloop = loops[1] - loops[0]",
+          "with": "dloop = (0.25*p*p)/(1-0.25*p*p)",
+          "exit_code": 1
+        },
+        {
+          "name": "right_endpoint_frozen_at_left",
+          "replace_once": "np.eye(6) - 0.25*feedbacks[1], 0.25*df",
+          "with": "np.eye(6) - 0.25*feedbacks[0], 0.25*df",
+          "exit_code": 1
+        }
+      ],
+      "analytic_status": "General finite logdet integral identity, strict scalar inequalities and locally constant projector rank; exact derivative identities and finite matrix controls are checked. No new Lean proposition claimed.",
+      "scope": "Finite primary pressure interface. BOOK_08 endpoint reading remains a defined observable, not the uncalibrated finite action contrast. No no-go for fixed calibration is inferred. Native admission, refinement, source and stationarity are not derived.",
+      "native_F_T0_or_GR_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 301,
+      "prior_artifacts_unchanged": 299,
+      "prior_artifacts_updated": 2
     }
   }
 }

@@ -10,6 +10,9 @@ a native preparation/refinement, a stationary solution or GR. This test
 carrier does not add a physical D0 role. Exact symbolic feedback checks
 are separate from numerical exponential/logarithmic identity checks.
 BOOK_03's action and BOOK_08's pressure have distinct beta normalizations.
+The endpoint resolvent response is also distinct from a finite rank-step
+logdet secant. Resolvent interpolation proves a matrix identity, not a
+native projector path between two different ranks.
 """
 import numpy as np
 import sympy as sp
@@ -23,7 +26,7 @@ def exact_feedback_checks():
     gate = sp.BlockMatrix([[a * sp.eye(3), -p * sp.eye(3)],
                            [p * sp.eye(3), a * sp.eye(3)]]).as_explicit()
     assert gate.T * gate == (a*a + p*p) * eye
-    for diagonal in ([1, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0]):
+    for diagonal in ([1, 0, 0, 0, 0, 0], [1, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0]):
         proj = sp.diag(*diagonal)
         assert proj * gate.T * (eye - proj) * gate * proj == p*p * proj
         assert proj * gate * proj == a * proj
@@ -46,6 +49,18 @@ def exact_feedback_checks():
     assert arbitrary.T * (sp.eye(3) - sp.eye(3)) * arbitrary == sp.zeros(3)
     assert sp.diag(sp.Rational(3, 25), sp.Rational(11, 50), sp.Rational(1, 20)) != sp.zeros(3)
     print("PASS_EXACT_PQU_RANK_STAGES_AND_EMPTY_LEGACY_FIBERS")
+    # On 0<x<1, these derivatives prove x < -log(1-x) < x/(1-x),
+    # with lower gap at least x^2/2. All three differences vanish at x=0.
+    x = sp.symbols("x", real=True)
+    lower_gap = -sp.log(1-x) - x - x*x/2
+    upper_gap = x/(1-x) + sp.log(1-x)
+    assert sp.simplify(sp.diff(lower_gap, x) - x*x/(1-x)) == 0
+    assert sp.simplify(sp.diff(upper_gap, x) - x/(1-x)**2) == 0
+    assert lower_gap.subs(x, 0) == upper_gap.subs(x, 0) == 0
+    t = sp.symbols("t", real=True)
+    interpolated_projection = sp.diag(1, 1, t, 0, 0, 0)
+    assert interpolated_projection**2 - interpolated_projection == sp.diag(0, 0, t*t-t, 0, 0, 0)
+    print("PASS_EXACT_SECANT_GAP_IDENTITIES_AND_PROJECTOR_INTERPOLATION_DEFECT")
 
 
 def check_feedback(proj, gate, feedback):
@@ -132,6 +147,37 @@ def main():
     loops = [-logdet_I_minus(0.25, feedback) for feedback in feedbacks]
     dloop = loops[1] - loops[0]
     assert dloop > TOL
+    # BOOK_08 08.49's endpoint resolvent expression is a first response,
+    # not the exact finite difference of the loop price at a rank step.
+    df = feedbacks[1] - feedbacks[0]
+    left_response = np.trace(np.linalg.solve(np.eye(6) - 0.25*feedbacks[0], 0.25*df))
+    right_response = np.trace(np.linalg.solve(np.eye(6) - 0.25*feedbacks[1], 0.25*df))
+    x = 0.25*p*p
+    require_close(left_response, x)
+    require_close(right_response, x/(1-x))
+    require_close(dloop, -np.log(1-x))
+    assert left_response < dloop < right_response
+    assert dloop - left_response > x*x/2
+    rejected("LEFT_RESOLVENT_RESPONSE_AS_FINITE_SECANT", lambda: require_close(left_response, dloop))
+    rejected("RIGHT_RESOLVENT_RESPONSE_AS_FINITE_SECANT", lambda: require_close(right_response, dloop))
+    rejected("INTERPOLATED_RANK_STEP_AS_PROJECTOR_PATH", lambda: check_feedback(
+        (projections[0]+projections[1])/2, gate, (feedbacks[0]+feedbacks[1])/2))
+    print("PASS_FINITE_RANK_SECANT_DIFFERS_FROM_ENDPOINT_PRESSURE")
+    # One fixed calibration DOES repair this feedback-only nested golden
+    # reading. Do not promote the uncalibrated gap to a transfer no-go.
+    calibration = -np.log(1-x)/x
+    rank_one = np.diag([1., 0., 0., 0., 0., 0.])
+    rank_one_feedback = rank_one @ gate.T @ (np.eye(6)-rank_one) @ gate @ rank_one
+    check_feedback(rank_one, gate, rank_one_feedback)
+    check_golden_compression(rank_one, gate, p)
+    for initial, channels in [(feedbacks[0], 1), (rank_one_feedback, 2)]:
+        increment = feedbacks[1] - initial
+        response = np.trace(np.linalg.solve(np.eye(6)-0.25*initial, 0.25*increment))
+        secant = loops[1] + logdet_I_minus(0.25, initial)
+        require_close(response, channels*x)
+        require_close(secant, channels*(-np.log(1-x)))
+        require_close(calibration*response, secant)
+    print("PASS_FIXED_FEEDBACK_CALIBRATION_ON_NESTED_GOLDEN_STEPS")
     # Same U and initial P, same ranks 2 -> 3; no golden-compression premise here.
     alternate = np.diag([1., 1., 0., 1., 0., 0.])
     leakage = (np.eye(6) - alternate) @ gate @ alternate

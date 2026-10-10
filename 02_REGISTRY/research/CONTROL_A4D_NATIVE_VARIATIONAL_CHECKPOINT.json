@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "dde63cb4125cfaee43c8b34f370df8f9bbdda4ab44992b3b1e8a90529e4ceebb",
-      "source_blob": "11134938e9a07689fb5702c79f4dba55dc964aea"
+      "sha256": "d186e318c5ae8e433fc4a5f07c5866055f5e7ea7900fa24b6af17e8cccd00f6b",
+      "source_blob": "b5cc42914e6c8859cddd8a868a9296db0c300ddc"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1504,8 +1504,8 @@
     },
     {
       "path": "04_CERTIFICATES/vp_master_bootstrap_and_volume_derivative.py",
-      "sha256": "657e1adf4af5446be812c8b051fd15a1659cb91bf8c039f70f93dd6355fcedd0",
-      "source_blob": "8c84bab0c46b63229884656819254e03d00f4c6c"
+      "sha256": "689cc1a701c9b5870421ef9347d16daec503b5484f25a27994338650fcddcc70",
+      "source_blob": "838659a50e6adf32292fb1622a5887f2a1d3ddd8"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1550,7 +1550,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "8cedfa07f3b23f706bd0179fbaccc26e1d9226d5",
+    "control_input_head": "b779cd3108462ea38ea4285cd548ed9d3bb0706d",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
@@ -1637,7 +1637,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+    "observed_source_strategy_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1722,7 +1722,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+    "scientific_source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -1969,13 +1969,85 @@
       "prior_artifacts_unchanged": 299,
       "prior_artifacts_updated": 1,
       "existing_primary_files_added_to_intake": 1
+    },
+    "finite_rank_secant_distinction": {
+      "source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+      "source_input_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+      "control_input_head": "b779cd3108462ea38ea4285cd548ed9d3bb0706d",
+      "primary_path": "04_CERTIFICATES/vp_master_bootstrap_and_volume_derivative.py",
+      "primary_input_blob": "8c84bab0c46b63229884656819254e03d00f4c6c",
+      "primary_blob": "838659a50e6adf32292fb1622a5887f2a1d3ddd8",
+      "primary_sha256": "689cc1a701c9b5870421ef9347d16daec503b5484f25a27994338650fcddcc70",
+      "book08_path": "01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
+      "book08_blob": "86213324b651a5717b293308ba37a7555b9e6742",
+      "exact_result": "The exact finite golden rank secant lies strictly between both endpoint resolvent responses; its left gap exceeds x^2/2. No continuous projector path connects different ranks.",
+      "fixed_calibration_boundary": "For nested fixed-golden steps of k channels, the same factor -log(1-x)/x maps k*x to k*(-log(1-x)). Verified at k=1,2 on complete PQU carriers; the general calculation is analytic.",
+      "negative_controls": 14,
+      "semantic_mutations_rejected": 8,
+      "semantic_mutations": [
+        {
+          "name": "arbitrary_feedback",
+          "exit_code": 1,
+          "replace_once": "        feedback = leakage.T @ leakage",
+          "with": "        feedback = np.diag([0.10, 0.20, 0., 0., 0., 0.])"
+        },
+        {
+          "name": "wrong_complement",
+          "exit_code": 1,
+          "replace_once": "complement = eye - proj",
+          "with": "complement = proj"
+        },
+        {
+          "name": "wrong_golden_identity",
+          "exit_code": 1,
+          "replace_once": "p = (np.sqrt(5.) - 1.) / 2.",
+          "with": "p = 0.5"
+        },
+        {
+          "name": "deleted_zero_modes",
+          "exit_code": 1,
+          "replace_once": "np.exp(-beta * eigenvalues).sum()",
+          "with": "np.exp(-beta * eigenvalues[eigenvalues > TOL]).sum()"
+        },
+        {
+          "name": "wrong_pressure_beta",
+          "exit_code": 1,
+          "replace_once": "pressure = (log_partitions[1] - log_partitions[0]) / beta",
+          "with": "pressure = (log_partitions[1] - log_partitions[0])"
+        },
+        {
+          "name": "finite_secant_replaced_by_left_response",
+          "replace_once": "dloop = loops[1] - loops[0]",
+          "with": "dloop = 0.25*p*p",
+          "exit_code": 1
+        },
+        {
+          "name": "finite_secant_replaced_by_right_response",
+          "replace_once": "dloop = loops[1] - loops[0]",
+          "with": "dloop = (0.25*p*p)/(1-0.25*p*p)",
+          "exit_code": 1
+        },
+        {
+          "name": "right_endpoint_frozen_at_left",
+          "replace_once": "np.eye(6) - 0.25*feedbacks[1], 0.25*df",
+          "with": "np.eye(6) - 0.25*feedbacks[0], 0.25*df",
+          "exit_code": 1
+        }
+      ],
+      "analytic_status": "General finite logdet integral identity, strict scalar inequalities and locally constant projector rank; exact derivative identities and finite matrix controls are checked. No new Lean proposition claimed.",
+      "scope": "Finite primary pressure interface. BOOK_08 endpoint reading remains a defined observable, not the uncalibrated finite action contrast. No no-go for fixed calibration is inferred. Native admission, refinement, source and stationarity are not derived.",
+      "native_F_T0_or_GR_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 301,
+      "prior_artifacts_unchanged": 299,
+      "prior_artifacts_updated": 2
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+  "previous_source_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2052,11 +2124,12 @@
     "Strict scalar persistence on the actual native archive: every base-zero compatible family is exactly one of sixteen-coordinate scalar readings. Two explicit distinct retained inverse-limit records are invisible to all of them; a new finite cylinder persists from its birth but cannot extend backward. Twenty compiled propositions, standard axioms only. Analytic whole scalar-algebra and full Hodge-norm arguments give diameter <=15/L under all site bijections and the stated four-dimensional resolution lower bound. This neither selects physical observations nor excludes other admitted condensed/noncommutative readouts or action contrasts.",
     "Positive graded Hodge heat on the admitted joint common metric dilation: the full thermal derivative is 2*E_beta>0, without a flatness premise. Full stationarity needs the actual remaining price response -2*E_beta; zero remainder response excludes stationarity only in this class. All modes remain. Nineteen new kernel propositions, 71 D0 pins and 180 exact controls pass; the moving-grade spectral theorem and uniform literal-bootstrap flat contrast bound are analytic. A four-dimensional positive graded Cayley example cancels one derivative, not a native full joint root. Preparation, normalization, all ten source components and all original terminals remain open.",
     "Continuation of the same positive geometric Hodge packet: all ten constant-metric heat covector slots are derived from the full weighted CAR Fourier square. At beta=log(2), the flat Q=diag(4,1/4,1,1) has a traceless derivative >1/20000 uniformly in L. The exact equal-volume linear pair has heat half contrast >=epsilon/2500000, unchanged by any common volume-only term. Four new genuine finite shape-derivative propositions compile, making 23 in the capsule; 319 exact controls and 22 false-ledger rejections pass. The full operator/metric binding and all-L estimates are analytic; local metric/link/matter source, native Lorentz admission, temperature/normalization and every terminal remain open.",
-    "Repair of the primary finite bootstrap/rank-step certificate: both former hand-entered feedbacks are impossible for their supplied projections. Full PQU and golden active compression are now checked at both principal stages on the minimal six-coordinate test carrier. Exact determinant identities distinguish a rank-only opposite-sign transition that exits the golden class. Eleven executed negative controls and five semantic mutations protect the finite algebra, full trace and beta normalization. Supplied heat profiles and projector transitions are not derived native laws; T0-T3 and all physical/parent obligations remain open."
+    "Repair of the primary finite bootstrap/rank-step certificate: both former hand-entered feedbacks are impossible for their supplied projections. Full PQU and golden active compression are now checked at both principal stages on the minimal six-coordinate test carrier. Exact determinant identities distinguish a rank-only opposite-sign transition that exits the golden class. Eleven executed negative controls and five semantic mutations protect the finite algebra, full trace and beta normalization. Supplied heat profiles and projector transitions are not derived native laws; T0-T3 and all physical/parent obligations remain open.",
+    "The existing primary rank certificate now distinguishes exact finite logdet contrasts from both endpoint resolvent responses. On realized nested golden steps x < -log(1-x) < x/(1-x), with left gap > x^2/2. Interpolating the projector loses idempotence; a continuous projector path cannot change rank. A positive control preserves the single fixed feedback-only calibration -log(1-x)/x for one- and two-channel additions. This is not a no-go for fixed calibration, nor a native preparation or action replacement. Fourteen negative controls and eight semantic mutations pass; all earlier scopes and terminals remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+  "source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "570b3e7f25569841294670a21142dc19dbead3b9",
+  "source_parent": "88a6b71635b8cc9a1b3820709794625070eadedb",
   "source_pr": 310
 }
