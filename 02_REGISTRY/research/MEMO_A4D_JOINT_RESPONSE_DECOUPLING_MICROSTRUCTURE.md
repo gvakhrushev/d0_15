@@ -3342,3 +3342,39 @@ price. The theorem excludes its direct standard 4D heat use; it neither
 excludes all native F nor constructs F, the source or its physical roots.
 No replacement spectrum, averaging law or physical scale is installed.
 All original parent contracts and T0--T3 remain open.
+
+### Full retained-stratum heat expansion on every fixed phase
+
+Section 7 of the same AF proof now resolves the ordinary next heat
+coefficient on the geometric-level exception. At the necessary test scale
+b=sqrt(33), the full Burnside formula decomposes the actual heat exactly
+into positive periodic coefficients times powers
+`t^(-log(f^2)/log(33))`, plus a remainder between `c_1/|G|` and 1.
+The f=0 and f=1 contributions are accounted for explicitly. These are
+counting strata, not independently variable physical heat blocks.
+
+Every fixed phase keeps its positive leading t^-2 limit. However the next
+actual stratum has f=31 and c_31=169, so its exponent lies strictly between
+1 and 2. After removal of the exact leading term the attempted t^-1
+coefficient diverges positively on **every** fixed phase. It diverges even
+with the leading periodic coefficient tracked at each t: the next profile
+has the explicit phase-uniform lower bound
+`169*320/(|G|*961^2)`. The leading normalized error on a fixed phase has
+exact first rate `(961/1089)^N` with a positive coefficient.
+
+All intermediate strata f=6,...,31 remain; positivity forbids internal
+cancellation. There is no exponent one since no integer f has f^2=33.
+Formally subtracting all stronger powers would leave zero t^-1 coefficient,
+but such subtraction is not installed as a native operation or source law.
+This is a complete scalar-heat boundary, not an action-contrast theorem:
+common terms might cancel on genuinely prepared paired probes. The full
+bootstrap action and physical joint readout have not been bound to this heat.
+
+The cumulative replay passes 452 exact controls, rejects nineteen altered
+mathematical rules and thirty-three false scope ledgers. Two shallow-path
+replays also reproduce the Linux CI invocation: an eager repository-path
+lookup formerly raised IndexError before the mutation could be tested;
+explicit --repo is now resolved first. The mathematical rejection requirement
+is unchanged. The full expansion/limit proof remains analytic, with no new
+Lean propositions. Native F, source/Ward, stationarity, curved roots,
+soundness/recovery, all 44 dependency nodes and original terminals stay open.
