@@ -3025,3 +3025,28 @@ G0b: bind an actually executable native recording/comparison or typed-role/WRec 
 
 All 44 parent contracts/statuses/dependencies and historical results remain.
 G0b/G0/global/GR and original #310/#202/#317 terminals stay open.
+
+## Operator-first metric revalidation (2026-10-10)
+
+The [actual Hodge/CAR Connes metric](A4D_NATIVE_HODGE_CONNES_METRIC.md)
+changes the next available route: on the owned counting cochain carrier,
+with scalar point multiplication on all sixteen grades, the fixed
+`hodgeCarDirac` gives exactly the Euclidean product-circle metric for every
+`L=N+2>=2` and every site pair. The complete finite-dimensional proof is
+analytic; eight compiled propositions bind the actual commutator, CAR
+columns, adjoint and square. The imported square's three native_decide
+CAR leaves are explicitly retained, independently replayed, and not
+described as kernel-only. Exact full sparse controls include L=2, odd L,
+wraps and a hostile witness against replacing the operator norm by column
+norms. The prior l1/l2 arithmetic remains true, but it does not establish
+the claimed l1 Connes distance for this operator. A new twist cannot be
+required on that basis.
+
+This is an actual fixed-operator geometry/heat binding, not a new prepared
+heat family or a physical source. It makes the operator-first question
+concrete: derive admitted internal operator/algebra variations, their
+induced `(q,D,b,m)` readout, and whether the full price descends with the
+correct joint tangent and native refinement. The present quotient has not
+been proved to exhaust such preparations. Lorentz causal time, curved
+native solutions, own source/Ward, quantitative contrast, stationarity,
+soundness/recovery and all original #310/#202/#317 obligations stay open.

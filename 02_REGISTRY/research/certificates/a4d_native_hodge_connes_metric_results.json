@@ -1,0 +1,171 @@
+{
+  "actual_native_hodge_commutator_and_fock_column_parseval_compiled": true,
+  "all_size_operator_norm_supremum_distance_kernel_formalized": false,
+  "axioms": {
+    "D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.archive_hodge_dirac_euclidean_metric_mismatch_nogo_owner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.hodgeCarDirac_self_adjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.hodgeCarDirac_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+      "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+      "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1"
+    ],
+    "D0.Research.NativeHodgeConnesMetric.actual_commutator_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeConnesMetric.actual_commutator_eq_literal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_column_parseval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal_int": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeConnesMetric.columnGamma_eq_cast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeConnesMetric.same_operator_heat_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+      "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+      "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1"
+    ],
+    "D0.Research.NativeHodgeConnesMetric.same_operator_self_adjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric.lean",
+  "capsule_sha256": "b2a983084a6d212e4341c1a3d7078fcd37ed966a5d6aa12bc0d34fa9f22bebce",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric.lean"
+  ],
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.NativeHodgeConnesMetric.actual_commutator_eq_literal",
+    "D0.Research.NativeHodgeConnesMetric.actual_commutator_constant",
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal_int",
+    "D0.Research.NativeHodgeConnesMetric.columnGamma_eq_cast",
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal",
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_column_parseval",
+    "D0.Research.NativeHodgeConnesMetric.same_operator_heat_square",
+    "D0.Research.NativeHodgeConnesMetric.same_operator_self_adjoint"
+  ],
+  "full_coupled_native_preparation_field_tangent_refinement_or_GR_derived": false,
+  "inherited_native_decide_square_axioms": [
+    "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+    "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+    "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1"
+  ],
+  "input_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+  "output": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_output.txt",
+  "output_sha256": "7de7b886fef9d3163ad45522fe3b30d6cce0edc132ecf6dcab646a48e6575408",
+  "primary_and_prior_input_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md": "991b42eac645bb7e5e4df55f9be439f8e873b9403b4ff2a6dc1061a49dfe3e2e",
+    "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md": "8c4c662f9f05430ef9f9ff91c670b15e6c678c9b2b1c0ced90e08c79f507e83c",
+    "02_REGISTRY/research/ATORUS_DIRECT_LORENTZ_CONTINUUM_REALIZATION.md": "be345663fffd7c9df2f5160383d208bd108b31b933e0c6763963ba02a6fe2123"
+  },
+  "primary_owner_propositions": [
+    "D0.Geometry.hodgeCarDirac_sq",
+    "D0.Geometry.hodgeCarDirac_self_adjoint",
+    "D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.archive_hodge_dirac_euclidean_metric_mismatch_nogo_owner"
+  ],
+  "printed_primary_owner_propositions": {
+    "D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.archive_hodge_dirac_euclidean_metric_mismatch_nogo_owner": "D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.archive_hodge_dirac_euclidean_metric_mismatch_nogo_owner :\n  D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d1_diagonal = 1 / 2 \u2227\n    D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d2_sq_diagonal = 1 / 8 \u2227\n      D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d1_diagonal ^ 2 \u2260\n          D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d2_sq_diagonal \u2227\n        D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d1_diagonal ^ 2 =\n          2 * D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d2_sq_diagonal",
+    "D0.Geometry.hodgeCarDirac_self_adjoint": "D0.Geometry.hodgeCarDirac_self_adjoint (N : \u2115) (\u03c8 \u03c6 : D0.Geometry.ArchiveCochain N) :\n  D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N \u03c8) \u03c6 =\n    D0.Geometry.cochainPairing N \u03c8 (D0.Geometry.hodgeCarDirac N \u03c6)",
+    "D0.Geometry.hodgeCarDirac_sq": "D0.Geometry.hodgeCarDirac_sq (N : \u2115) (\u03c8 : D0.Geometry.ArchiveCochain N) :\n  D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N \u03c8) = D0.Geometry.cochainDifferenceLaplacian N \u03c8"
+  },
+  "printed_propositions": {
+    "D0.Research.NativeHodgeConnesMetric.actual_commutator_constant": "D0.Research.NativeHodgeConnesMetric.actual_commutator_constant (N : \u2115) (c : \u211d) (\u03c8 : D0.Geometry.ArchiveCochain N) :\n  D0.Research.NativeHodgeConnesMetric.actualCommutator N (fun x => c) \u03c8 = 0",
+    "D0.Research.NativeHodgeConnesMetric.actual_commutator_eq_literal": "D0.Research.NativeHodgeConnesMetric.actual_commutator_eq_literal (N : \u2115) (f : D0.Geometry.ArchiveRolePhaseGroup N \u2192 \u211d)\n  (\u03c8 : D0.Geometry.ArchiveCochain N) :\n  D0.Research.NativeHodgeConnesMetric.actualCommutator N f \u03c8 =\n    D0.Research.NativeHodgeConnesMetric.literalCommutator N f \u03c8",
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_column_parseval": "D0.Research.NativeHodgeConnesMetric.actual_fock_column_parseval (v : D0.Role \u2192 \u211d) (ket : D0.Geometry.ArchiveFockState) :\n  \u2211 bra, (\u2211 r, D0.Research.NativeHodgeConnesMetric.columnGamma r bra ket * v r) ^ 2 = \u2211 r, v r ^ 2",
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal": "D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal_int (r s : D0.Role)\n  (ket : D0.Geometry.ArchiveFockState) :\n  \u2211 bra,\n      D0.Research.NativeHodgeConnesMetric.columnGammaInt r bra ket *\n        D0.Research.NativeHodgeConnesMetric.columnGammaInt s bra ket =\n    if r = s then 1 else 0\n'D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal_int' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nD0.Research.NativeHodgeConnesMetric.columnGamma_eq_cast (r : D0.Role) (bra ket : D0.Geometry.ArchiveFockState) :\n  D0.Research.NativeHodgeConnesMetric.columnGamma r bra ket =\n    \u2191(D0.Research.NativeHodgeConnesMetric.columnGammaInt r bra ket)\n'D0.Research.NativeHodgeConnesMetric.columnGamma_eq_cast' depends on axioms: [propext, Classical.choice, Quot.sound]\nD0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal (r s : D0.Role)\n  (ket : D0.Geometry.ArchiveFockState) :\n  \u2211 bra,\n      D0.Research.NativeHodgeConnesMetric.columnGamma r bra ket *\n        D0.Research.NativeHodgeConnesMetric.columnGamma s bra ket =\n    if r = s then 1 else 0",
+    "D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal_int": "D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal_int (r s : D0.Role)\n  (ket : D0.Geometry.ArchiveFockState) :\n  \u2211 bra,\n      D0.Research.NativeHodgeConnesMetric.columnGammaInt r bra ket *\n        D0.Research.NativeHodgeConnesMetric.columnGammaInt s bra ket =\n    if r = s then 1 else 0",
+    "D0.Research.NativeHodgeConnesMetric.columnGamma_eq_cast": "D0.Research.NativeHodgeConnesMetric.columnGamma_eq_cast (r : D0.Role) (bra ket : D0.Geometry.ArchiveFockState) :\n  D0.Research.NativeHodgeConnesMetric.columnGamma r bra ket =\n    \u2191(D0.Research.NativeHodgeConnesMetric.columnGammaInt r bra ket)",
+    "D0.Research.NativeHodgeConnesMetric.same_operator_heat_square": "D0.Research.NativeHodgeConnesMetric.same_operator_heat_square (N : \u2115) (\u03c8 : D0.Geometry.ArchiveCochain N) :\n  D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N \u03c8) = D0.Geometry.cochainDifferenceLaplacian N \u03c8",
+    "D0.Research.NativeHodgeConnesMetric.same_operator_self_adjoint": "D0.Research.NativeHodgeConnesMetric.same_operator_self_adjoint (N : \u2115) (\u03c8 \u03c6 : D0.Geometry.ArchiveCochain N) :\n  D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N \u03c8) \u03c6 =\n    D0.Geometry.cochainPairing N \u03c8 (D0.Geometry.hodgeCarDirac N \u03c6)"
+  },
+  "status": "PASS",
+  "supported_D0_tree": "fd8dfc359d23c9bd79ca23eeed7c045ce9c68c6b",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Algebra/RoleSignature.lean": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf",
+    "03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a",
+    "03_FORMALIZATION/D0/Combinatorics/ForcedReturnWindows.lean": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2",
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseUnfolding.lean": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66",
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+    "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+    "03_FORMALIZATION/D0/Foundation/M1Predicate.lean": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+    "03_FORMALIZATION/D0/Foundation/ObservableCompletionCanonicity.lean": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+    "03_FORMALIZATION/D0/Geometry/A4DSymRoleCentralDifference.lean": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalDirichlet.lean": "1311fb05b81e2131724f096428e177e9c61a97497b8dcec9843912faaaf7a9f6",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCartan.lean": "8c766bd7220764bda3393ec651b20084d9ee9f882da97ffb2c9a13f1be23489b",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean": "7ab9550c7a25464131ec23a21e9eeac9f38eb651ee23c8d65296415aa593ab58",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean": "d004761e6326aae235d1a3488e397750409bc4c03f90c489a6dd18d9971e3e81",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeDiracMetricMismatchNoGo.lean": "678ce9786e8b2f49a6ca81e8a1a788226dd7c0960ab933e98101cefc7126fd71",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLorentzCompatibility.lean": "1ba5fa492c928b34392a07d54a6f81d8554e5898cd91c901430647b655e30c8f",
+    "03_FORMALIZATION/D0/Geometry/ArchiveModeExponent.lean": "fb760656ca2b3ca785a44cb5a80729e0f856221696dd40b7dca8c85d8ff8f95c",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseDistance.lean": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseEdgeMetricScale.lean": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveProductLaplacian.lean": "cef92ba4992610d1ebdc39a896204edadb31a79ea94b24367e513e49105ba77c",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseGroup.lean": "8958fe3103039ce0ad5aa5aa6607578f9dfa3e4717b966b3dea916241aa68442",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseProductCarrier.lean": "f307f30401d4110ab7bb2874e62f84e43e0e35eb7fb9fb7b7844c63f59b97d33",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRoleProductLaplacian.lean": "ac6b1a24b054c76609b5558f76e6f1adf3d8f170dfb4d6475adc8c5ec4414339",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedGraph.lean": "a25daa836eacf57042dd96793da6447098fc85895d464b10f0f1804d2249081d",
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef",
+    "03_FORMALIZATION/D0/Matter/FiniteSelector.lean": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2",
+    "03_FORMALIZATION/D0/Phase.lean": "dd710cf7f37874ac5f06a1a57ca19fa2d9544de6e1bfcf35fed7806ea2b56559"
+  },
+  "typed_owner_definitions": []
+}
