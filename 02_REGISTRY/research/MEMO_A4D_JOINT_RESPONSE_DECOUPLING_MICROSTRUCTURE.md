@@ -3308,3 +3308,37 @@ identify b^(-n) with the physical mesh. The four-dimensional joint readout
 and its common full-action preparation, all ten source components, Ward,
 native stationarity, curved roots and soundness/recovery remain open.
 T0--T3, the 44 nodes and original #310/#202/#317 terminals retain their scopes.
+
+### Full scene-AF heat: complete four-dimensional leading-coefficient obstruction
+
+The continuation in Section 6 of the same proof uses the **actual full
+spectrum**, rather than selecting another heat family. Burnside gives
+`dim A_n = sum_f c_f f^(2n)/|G|`. The identity has 33 fixed points;
+the next stratum has 31, with multiplicity 169. The full filtration heat
+`K_b(t)=1+sum_n (dim A_n-dim A_(n-1))*exp(-t*b^(2n))`
+has two-sided growth `t^(-log(33)/log(b))`, with all archive contributions
+and its scalar zero mode retained.
+
+Only b=sqrt(33) could give a positive finite four-dimensional coefficient
+`t^2 K_b(t) -> a_0`. At that scale the normalized heat has two distinct
+subsequence limits. Their phase factors satisfy `Q(1)>1/3` and
+`Q(1/3)<1/10`, by exact rational bounds on both infinite tails. The
+separation is greater than `7*(1-1/1089)/(30*|G|)`. Thus no fixed b>1
+in this complete declared family supplies a usual positive-volume 4D
+small-time heat expansion. A fixed time/unit calibration cannot remove
+the discrepancy. Metric convergence and spectral exponent alone do not
+supply the missing heat coefficient.
+
+The proof is analytic on every level. The replay now passes 316 exact
+controls: the existing 195 metric controls plus 121 multiplicity/tail
+controls. Thirteen executed mathematical mutations and twenty-five false
+scope ledgers are rejected. No new Lean theorem is claimed.
+
+Each fixed geometric phase **does** have a positive subsequence limit.
+Native discrete level readings, other owned physical observable algebras
+and an independently justified limiting/averaged reading are preserved
+possibilities. This heat has not been identified with the full bootstrap
+price. The theorem excludes its direct standard 4D heat use; it neither
+excludes all native F nor constructs F, the source or its physical roots.
+No replacement spectrum, averaging law or physical scale is installed.
+All original parent contracts and T0--T3 remain open.
