@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`570b3e7f25569841294670a21142dc19dbead3b9`, following
-`b640cacb5e404c10d71d6e9503cf34f3dc82a443`.
+`88a6b71635b8cc9a1b3820709794625070eadedb`, following
+`570b3e7f25569841294670a21142dc19dbead3b9`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -33,11 +33,33 @@ scope ledgers. The weighted Fourier/metric binding, full covector and
 uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
-The intake has 300 scientific artifacts byte-identical to verified SOURCE
-`570b3e7f25569841294670a21142dc19dbead3b9`: eight existing files updated and 292 unchanged.
+The intake has 301 artifacts byte-identical to verified SOURCE
+`88a6b71635b8cc9a1b3820709794625070eadedb`: the previous source memo updated, 299 earlier
+artifacts unchanged, and the repaired existing primary rank-step certificate
+added to the intake. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
+
+The primary bootstrap/rank-step certificate is repaired. Its former
+three-coordinate examples had no PQU realization at either stage: a
+rank-two return cannot pass through a rank-one complement, and P=I
+forces zero feedback. Exact polynomial identities certify both defects.
+The replacement uses one golden six-coordinate matrix and nested
+rank-two/rank-three projections, with full golden active compression
+checked at both stages. This is the minimum dimension for the stated
+rank-three golden compression. All coordinates and zero modes remain.
+
+The same initial projection and U admit another rank-three endpoint with
+opposite loop-price increment in the broader PQU interface; it fails
+golden compression and is explicitly rejected from that narrower class.
+Rank data alone therefore cannot stand for the complete preparation law.
+BOOK_03 action and BOOK_08 pressure normalization remain distinct.
+Eleven executed negative controls and five semantic mutations pass;
+the existing 319-control heat packet and 23 Lean propositions are unchanged.
+This is a finite certificate repair. The heat profiles and projection
+transition are supplied test data, not an owned common native field law.
+No T0 or physical/parent terminal is promoted.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating

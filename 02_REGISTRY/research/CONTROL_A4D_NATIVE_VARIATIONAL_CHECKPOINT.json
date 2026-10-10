@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "9df78792a4c6ab22fa00955b3b9160cf2fea5714c0b8a361edbf59ad72fb12d0",
-      "source_blob": "966610d7fb580688f525ee7a1044eb47d268530a"
+      "sha256": "dde63cb4125cfaee43c8b34f370df8f9bbdda4ab44992b3b1e8a90529e4ceebb",
+      "source_blob": "11134938e9a07689fb5702c79f4dba55dc964aea"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1501,6 +1501,11 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_results.json",
       "sha256": "cbf0f589aa94a6332f29e2e5a9b43e3ad9023d43933078e85468487dfbf51d58",
       "source_blob": "c83ae4d3b3dd18512fe46d7a75915ff801800bc8"
+    },
+    {
+      "path": "04_CERTIFICATES/vp_master_bootstrap_and_volume_derivative.py",
+      "sha256": "657e1adf4af5446be812c8b051fd15a1659cb91bf8c039f70f93dd6355fcedd0",
+      "source_blob": "8c84bab0c46b63229884656819254e03d00f4c6c"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1545,7 +1550,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "81ecbbc9540ad478f91cf47e2f6d1819a5d2a0c3",
+    "control_input_head": "8cedfa07f3b23f706bd0179fbaccc26e1d9226d5",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
@@ -1632,7 +1637,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+    "observed_source_strategy_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1683,7 +1688,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 292,
+    "prior_scientific_artifacts_byte_unchanged_count": 299,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1717,7 +1722,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+    "scientific_source_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -1909,13 +1914,68 @@
         "blob": "bf294171aa5beb30744123ac60ce86ad7e505b36",
         "sha256": "075b93f1d33d25488b7dfb37d75363814e3ad14823abcd72045c92eeb996b591"
       }
-    ]
+    ],
+    "bootstrap_rank_input_repair": {
+      "source_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+      "source_input_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+      "control_input_head": "8cedfa07f3b23f706bd0179fbaccc26e1d9226d5",
+      "primary_path": "04_CERTIFICATES/vp_master_bootstrap_and_volume_derivative.py",
+      "old_primary_blob": "13d7320a071219f7a78dafc99eb1f14edd3951ad",
+      "repaired_primary_blob": "8c84bab0c46b63229884656819254e03d00f4c6c",
+      "repaired_primary_sha256": "657e1adf4af5446be812c8b051fd15a1659cb91bf8c039f70f93dd6355fcedd0",
+      "legacy_result": "Both supplied feedbacks have empty PQU fibres: the first has a nonzero leading 2x2 minor where every such return has minor zero; at the second P=I forces F=0.",
+      "repair": "A single six-coordinate golden U and nested rank-two/rank-three projections satisfy the complete golden active-compression relation and give F=p^2 P at both stages. Six is the minimum total dimension for the rank-three golden compression.",
+      "rank_only_control": "The same initial projection/U and another nested rank-three endpoint give the opposite loop-price increment. That endpoint exits golden active compression, as an executed control checks. This is not a counterexample inside the full fixed-golden class.",
+      "normalization": "BOOK_03 action H+J and BOOK_08 beta^-1 log Z=H+J/beta are distinguished at beta=1/2,1,2; no action is replaced.",
+      "symbolic_status": "Exact finite polynomial/ algebraic identities in SymPy; no new Lean proposition claimed.",
+      "numeric_status": "Full finite heat/logdet identity checks retaining all zero modes.",
+      "negative_controls": 11,
+      "semantic_mutations_rejected": 5,
+      "semantic_mutations": [
+        {
+          "name": "arbitrary_feedback",
+          "exit_code": 1,
+          "replace_once": "        feedback = leakage.T @ leakage",
+          "with": "        feedback = np.diag([0.10, 0.20, 0., 0., 0., 0.])"
+        },
+        {
+          "name": "wrong_complement",
+          "exit_code": 1,
+          "replace_once": "complement = eye - proj",
+          "with": "complement = proj"
+        },
+        {
+          "name": "wrong_golden_identity",
+          "exit_code": 1,
+          "replace_once": "p = (np.sqrt(5.) - 1.) / 2.",
+          "with": "p = 0.5"
+        },
+        {
+          "name": "deleted_zero_modes",
+          "exit_code": 1,
+          "replace_once": "np.exp(-beta * eigenvalues).sum()",
+          "with": "np.exp(-beta * eigenvalues[eigenvalues > TOL]).sum()"
+        },
+        {
+          "name": "wrong_pressure_beta",
+          "exit_code": 1,
+          "replace_once": "pressure = (log_partitions[1] - log_partitions[0]) / beta",
+          "with": "pressure = (log_partitions[1] - log_partitions[0])"
+        }
+      ],
+      "native_heat_preparation_rank_transition_field_law_stationarity_or_GR_derived": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 301,
+      "prior_artifacts_unchanged": 299,
+      "prior_artifacts_updated": 1,
+      "existing_primary_files_added_to_intake": 1
+    }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+  "previous_source_head": "570b3e7f25569841294670a21142dc19dbead3b9",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1991,11 +2051,12 @@
     "Actual archive/full-Hodge refinement: all native long arrows have a kernel-proved growing collapsed fibre. Analytic packing excludes a uniform O(h) full scalar point metric distortion under every bijective point identification on L-to-2L arrows, including L in 4N. Eleven new standard-axiom propositions and three printed actual primary propositions, exact native-modulus/wrap/packing/rate controls, seventeen rejected ledgers. Slower convergence, prepared nonbijective physical algebras, action contrast and full Gamma/F/source/GR are not excluded or derived.",
     "Strict scalar persistence on the actual native archive: every base-zero compatible family is exactly one of sixteen-coordinate scalar readings. Two explicit distinct retained inverse-limit records are invisible to all of them; a new finite cylinder persists from its birth but cannot extend backward. Twenty compiled propositions, standard axioms only. Analytic whole scalar-algebra and full Hodge-norm arguments give diameter <=15/L under all site bijections and the stated four-dimensional resolution lower bound. This neither selects physical observations nor excludes other admitted condensed/noncommutative readouts or action contrasts.",
     "Positive graded Hodge heat on the admitted joint common metric dilation: the full thermal derivative is 2*E_beta>0, without a flatness premise. Full stationarity needs the actual remaining price response -2*E_beta; zero remainder response excludes stationarity only in this class. All modes remain. Nineteen new kernel propositions, 71 D0 pins and 180 exact controls pass; the moving-grade spectral theorem and uniform literal-bootstrap flat contrast bound are analytic. A four-dimensional positive graded Cayley example cancels one derivative, not a native full joint root. Preparation, normalization, all ten source components and all original terminals remain open.",
-    "Continuation of the same positive geometric Hodge packet: all ten constant-metric heat covector slots are derived from the full weighted CAR Fourier square. At beta=log(2), the flat Q=diag(4,1/4,1,1) has a traceless derivative >1/20000 uniformly in L. The exact equal-volume linear pair has heat half contrast >=epsilon/2500000, unchanged by any common volume-only term. Four new genuine finite shape-derivative propositions compile, making 23 in the capsule; 319 exact controls and 22 false-ledger rejections pass. The full operator/metric binding and all-L estimates are analytic; local metric/link/matter source, native Lorentz admission, temperature/normalization and every terminal remain open."
+    "Continuation of the same positive geometric Hodge packet: all ten constant-metric heat covector slots are derived from the full weighted CAR Fourier square. At beta=log(2), the flat Q=diag(4,1/4,1,1) has a traceless derivative >1/20000 uniformly in L. The exact equal-volume linear pair has heat half contrast >=epsilon/2500000, unchanged by any common volume-only term. Four new genuine finite shape-derivative propositions compile, making 23 in the capsule; 319 exact controls and 22 false-ledger rejections pass. The full operator/metric binding and all-L estimates are analytic; local metric/link/matter source, native Lorentz admission, temperature/normalization and every terminal remain open.",
+    "Repair of the primary finite bootstrap/rank-step certificate: both former hand-entered feedbacks are impossible for their supplied projections. Full PQU and golden active compression are now checked at both principal stages on the minimal six-coordinate test carrier. Exact determinant identities distinguish a rank-only opposite-sign transition that exits the golden class. Eleven executed negative controls and five semantic mutations protect the finite algebra, full trace and beta normalization. Supplied heat profiles and projector transitions are not derived native laws; T0-T3 and all physical/parent obligations remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+  "source_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "b640cacb5e404c10d71d6e9503cf34f3dc82a443",
+  "source_parent": "570b3e7f25569841294670a21142dc19dbead3b9",
   "source_pr": 310
 }

@@ -728,9 +728,9 @@
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
-    "control_input_head": "81ecbbc9540ad478f91cf47e2f6d1819a5d2a0c3",
-    "published_scientific_input_head": "570b3e7f25569841294670a21142dc19dbead3b9",
-    "observed_source_strategy_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+    "control_input_head": "8cedfa07f3b23f706bd0179fbaccc26e1d9226d5",
+    "published_scientific_input_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+    "observed_source_strategy_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+    "prepared_scientific_input_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -1190,6 +1190,61 @@
       "complete_native_F_absence_or_condensed_math_failure_proved": false,
       "claims_books_owners_or_supported_core_changed": false,
       "new_native_or_GR_terminal": false
+    },
+    "bootstrap_rank_input_repair": {
+      "source_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+      "source_input_head": "570b3e7f25569841294670a21142dc19dbead3b9",
+      "control_input_head": "8cedfa07f3b23f706bd0179fbaccc26e1d9226d5",
+      "primary_path": "04_CERTIFICATES/vp_master_bootstrap_and_volume_derivative.py",
+      "old_primary_blob": "13d7320a071219f7a78dafc99eb1f14edd3951ad",
+      "repaired_primary_blob": "8c84bab0c46b63229884656819254e03d00f4c6c",
+      "repaired_primary_sha256": "657e1adf4af5446be812c8b051fd15a1659cb91bf8c039f70f93dd6355fcedd0",
+      "legacy_result": "Both supplied feedbacks have empty PQU fibres: the first has a nonzero leading 2x2 minor where every such return has minor zero; at the second P=I forces F=0.",
+      "repair": "A single six-coordinate golden U and nested rank-two/rank-three projections satisfy the complete golden active-compression relation and give F=p^2 P at both stages. Six is the minimum total dimension for the rank-three golden compression.",
+      "rank_only_control": "The same initial projection/U and another nested rank-three endpoint give the opposite loop-price increment. That endpoint exits golden active compression, as an executed control checks. This is not a counterexample inside the full fixed-golden class.",
+      "normalization": "BOOK_03 action H+J and BOOK_08 beta^-1 log Z=H+J/beta are distinguished at beta=1/2,1,2; no action is replaced.",
+      "symbolic_status": "Exact finite polynomial/ algebraic identities in SymPy; no new Lean proposition claimed.",
+      "numeric_status": "Full finite heat/logdet identity checks retaining all zero modes.",
+      "negative_controls": 11,
+      "semantic_mutations_rejected": 5,
+      "semantic_mutations": [
+        {
+          "name": "arbitrary_feedback",
+          "exit_code": 1,
+          "replace_once": "        feedback = leakage.T @ leakage",
+          "with": "        feedback = np.diag([0.10, 0.20, 0., 0., 0., 0.])"
+        },
+        {
+          "name": "wrong_complement",
+          "exit_code": 1,
+          "replace_once": "complement = eye - proj",
+          "with": "complement = proj"
+        },
+        {
+          "name": "wrong_golden_identity",
+          "exit_code": 1,
+          "replace_once": "p = (np.sqrt(5.) - 1.) / 2.",
+          "with": "p = 0.5"
+        },
+        {
+          "name": "deleted_zero_modes",
+          "exit_code": 1,
+          "replace_once": "np.exp(-beta * eigenvalues).sum()",
+          "with": "np.exp(-beta * eigenvalues[eigenvalues > TOL]).sum()"
+        },
+        {
+          "name": "wrong_pressure_beta",
+          "exit_code": 1,
+          "replace_once": "pressure = (log_partitions[1] - log_partitions[0]) / beta",
+          "with": "pressure = (log_partitions[1] - log_partitions[0])"
+        }
+      ],
+      "native_heat_preparation_rank_transition_field_law_stationarity_or_GR_derived": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 301,
+      "prior_artifacts_unchanged": 299,
+      "prior_artifacts_updated": 1,
+      "existing_primary_files_added_to_intake": 1
     }
   }
 }

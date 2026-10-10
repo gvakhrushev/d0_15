@@ -38,6 +38,59 @@ checker has 319 controls and 22 false-ledger rejections. Native Lorentz readout,
 full local metric/link/matter equations, and every parent terminal remain
 open. No source, compensator, volume constraint or thermal law is installed.
 
+The primary rank-step certificate has an independent input repair. At
+SOURCE `570b3e7f25569841294670a21142dc19dbead3b9`, its blob
+`13d7320a071219f7a78dafc99eb1f14edd3951ad` supplied feedback matrices
+outside the actual P,Q,U interface at both stages. With
+`P=diag(1,1,0)`, `rank(F)<=rank(I-P)=1`, whereas its supplied
+`F=diag(1/10,1/5,0)` has rank two. More directly, the leading two-by-two
+minor of `P U^T (I-P) U P` is identically zero for every real U, while
+the proposed minor is 1/50. At `P_next=I_3` every feedback is zero,
+but the old certificate supplied `diag(3/25,11/50,1/20)`.
+Thus those purported feedback fibres are empty, independently of
+orthogonality or physical admission. The arithmetic pressure split still
+held; its four printed negative-control messages did not execute tests.
+
+The [repaired finite certificate](../../04_CERTIFICATES/vp_master_bootstrap_and_volume_derivative.py)
+derives both feedbacks from the existing golden matrix
+`U=[[a I_3,-p I_3],[p I_3,a I_3]]`, `a^2=p`, `p+p^2=1`, on one complete
+six-coordinate test carrier. Nested projections with active coordinates
+`{0,1}` and `{0,1,2}` give `F=p^2 P` at both stages and satisfy
+`(PUP)^T(PUP)=p P`. The full golden-compression premise is checked,
+in addition to orthogonality. A rank-three golden compression needs at
+least three complementary coordinates by the feedback rank bound, so
+six is the minimal total dimension for this test. Both stages
+retain a nonempty archive. Symbolic identities prove these formulas and
+the two universal legacy obstructions. Numerical pressure tests at three
+positive beta values retain all zero modes; eleven executed hostile checks
+replace printed-only rejections. BOOK_03's `H+J` action is kept distinct
+from BOOK_08's `beta^-1 log Z = H+J/beta`; their finite increments differ
+by `(1-1/beta) Delta J`. The old beta=1 example could not test this distinction.
+
+The same fixed golden U also gives an exact missing-data test. Keep the
+same initial projector and replace only the rank-three endpoint by the
+projector onto `{0,1,3}`. Its feedback is `diag(0,p^2,0,0,0,0)`.
+Write `r=1-z p^2` with `0<z<1`; then `0<r<1`. The principal and alternate
+loop increments are `-log(r)>0` and `log(r)<0`, respectively.
+The checker proves the underlying
+determinant polynomials exactly. Thus rank increase alone does not fix
+even the sign of the finite loop-pressure increment in this P,Q,U
+interface. The alternative violates golden active compression, as a
+separate executed control verifies. It cannot be substituted into the
+full fixed-golden class, where `F=p^2 P` fixes the loop increment.
+Both full carriers and nonempty archives are retained; native admission
+of either rank transition is not asserted. This does not refute
+the distinct conditional pressure theorem with a supplied monotone
+feedback profile or classify physical D0 solutions.
+
+This repairs finite evidence, not T0. The heat profiles and the nested
+projection pair are explicit test inputs; no native rank transition,
+field-dependent heat law, physical preparation or stationary solution is
+derived. A P,Q,U realization of feedback does not supply the missing common
+preparation for heat, the joint q,D,b,m readout and actual refinement.
+The 319-control heat packet and its 23 Lean propositions are unchanged.
+Claims, books, supported Lean owners and all parent terminals are unchanged.
+
 The [intrinsic-source computation](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md)
 now proves the complete joint cotangent normal form and zero first variation
 of the two-step feedback price at the ordinary/recorded golden bases in the
