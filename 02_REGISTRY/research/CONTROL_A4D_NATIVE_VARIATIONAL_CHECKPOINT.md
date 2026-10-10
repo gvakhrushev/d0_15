@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`f55bea04beed7aab18141e4284e49fe66cd397ed`, following
-`88a6b71635b8cc9a1b3820709794625070eadedb`.
+`812abc87da9c494d14d4b8549b2b219b88c60f86`, following
+`f55bea04beed7aab18141e4284e49fe66cd397ed`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -40,9 +40,9 @@ scope ledgers. The weighted Fourier/metric binding, full covector and
 uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
-The intake has 301 artifacts byte-identical to verified SOURCE
-`f55bea04beed7aab18141e4284e49fe66cd397ed`: the source memo and the existing primary rank-step
-certificate updated, with 299 earlier artifacts unchanged. No new physical action, role or preparation law is introduced.
+The intake has 307 artifacts byte-identical to verified SOURCE
+`812abc87da9c494d14d4b8549b2b219b88c60f86`: six code-price proof/certificate artifacts added,
+the source memo updated, and 300 earlier artifacts unchanged. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
@@ -77,6 +77,24 @@ one- and two-channel realizations are checked. Thus this boundary does
 not prohibit the fixed-calibration route. Its extension to the complete
 native heat/feedback price still requires the actual common preparation.
 No constant-price refinement law or native rank stationarity is assumed.
+
+The [literal code-price proof](A4D_NATIVE_CODE_PRICE_RESOLUTION.md) now
+closes the direct fixed-unit minimal-code substitution for a comparison
+class with a nonzero first response. Over the complete stated integer-price
+interface, coverage of every fixed scalar metric probe forces the own
+unit to be O(h), without uniform probe constants or regular preparation
+choices. This is an analytic measure theorem; nine finite propositions
+are compiled with literal Phi rebuilt. All 185 exact controls pass;
+six mathematical mutations and eighteen false scope ledgers are rejected.
+
+The existing lower bound on individual costs does not imply integer
+differences. Golden-history event log-prices tend to zero with every
+record retained. Full heat/logdet prices and independently derived
+shrinking units remain outside the fixed-unit obstruction. Neither
+rounding nor the off-shell physical warp control supplies native
+preparation or sourced solutions. No unit is chosen and no T0 closure
+is inferred. A geometry-sum route still needs its own admitted history
+family and price/readout/refinement law before a source comparison.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating

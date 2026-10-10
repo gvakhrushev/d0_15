@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "d186e318c5ae8e433fc4a5f07c5866055f5e7ea7900fa24b6af17e8cccd00f6b",
-      "source_blob": "b5cc42914e6c8859cddd8a868a9296db0c300ddc"
+      "sha256": "853643c1744c4c5f2eeb48955f2d74ea234e51b08be3c16d8b2ee086a6390a2f",
+      "source_blob": "40933c9e9b88b34583820765f091cdaf2bcc37f2"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1506,6 +1506,36 @@
       "path": "04_CERTIFICATES/vp_master_bootstrap_and_volume_derivative.py",
       "sha256": "689cc1a701c9b5870421ef9347d16daec503b5484f25a27994338650fcddcc70",
       "source_blob": "838659a50e6adf32292fb1622a5887f2a1d3ddd8"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CODE_PRICE_RESOLUTION.md",
+      "sha256": "44a318fc5f160e7ab17cff7a261e33d9cb3cc82a3580c69bd8bfff4bdb66a6d0",
+      "source_blob": "8446428875f77b2a07c626d9be0877c9aef4c2d7"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution.lean",
+      "sha256": "e02804a4b2e9884a3893f34fdd68f3e552b4d617cf0216311ba05438b86c3e63",
+      "source_blob": "266060d584d05dc69d3399ae655a6ab362cf9203"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_check.py",
+      "sha256": "7040f2f9b892e772f3f7bb240ddd44aa251a5834cb797be4c0923deff76cf809",
+      "source_blob": "b955313523c10f828f3ae70c4e32461a96cc13a8"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_certificate.json",
+      "sha256": "b0381c29a1decabe34259649a83953a8aab9b5e945ed1809108390f7b78abc3e",
+      "source_blob": "9ed081d160d8c5faeed20ed9ed18556eac316b38"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_results.json",
+      "sha256": "51668d2ecc9aa1b41783f34b5a940123e4fe04e955e1a7c5fc0dd2ea187979ed",
+      "source_blob": "4ca9e6f98cfd15f377ea28d210376ae6e05b283f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_output.txt",
+      "sha256": "3960ecec3f44e77cd03fa2a7b189e7bfd3de81e8422d9462c490aa234be6edda",
+      "source_blob": "cc23c83f155c238d6e490ac86c4eda17137277ab"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1550,7 +1580,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "b779cd3108462ea38ea4285cd548ed9d3bb0706d",
+    "control_input_head": "ede76d7b716034475de200085432492e44e93814",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
@@ -1637,7 +1667,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+    "observed_source_strategy_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1688,7 +1718,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 299,
+    "prior_scientific_artifacts_byte_unchanged_count": 300,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1722,7 +1752,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+    "scientific_source_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2055,13 +2085,38 @@
       "all_44_node_dictionaries_unchanged": true,
       "native_T0_T3_or_GR_progress": false,
       "new_tasks_branches_physical_assumptions_or_self_merge": false
+    },
+    "literal_code_price_resolution": {
+      "source_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+      "input_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+      "control_input_head": "ede76d7b716034475de200085432492e44e93814",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CODE_PRICE_RESOLUTION.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution",
+      "price_class": "LITERAL_INTEGER_CODE_PRICE_WITH_OWN_LEVEL_UNIT_AND_COMMON_LEVEL_OFFSET",
+      "result": "Fixed-unit integer code prices cannot transfer a nonzero h^(1/3) contrast at O(h). Coverage of every fixed scalar probe forces the native unit to be O(h), even with probe-dependent constants and arbitrary preparation choices.",
+      "completeness": "Every admitted endpoint pair and every state/grammar/readout family having the declared integer-price form; not the full native action.",
+      "all_probe_bound_status": "ANALYTIC_MEASURE_PROOF_NOT_FULL_LEAN",
+      "compiled_propositions": 9,
+      "printed_primary_propositions": 1,
+      "literal_primary_phi_recompiled": true,
+      "exact_controls": 185,
+      "mathematical_mutations_rejected": 6,
+      "false_scope_ledgers_rejected": 18,
+      "countercontrols": "Individual cost lower bounds do not quantize differences; golden log-sum event prices tend to zero with every history retained; rounding is not native admission; the physical nonzero warp test is off-shell.",
+      "native_unit_normalization_or_price_selected": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 307,
+      "prior_artifacts_unchanged": 300,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 6
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "88a6b71635b8cc9a1b3820709794625070eadedb",
+  "previous_source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2139,11 +2194,12 @@
     "Positive graded Hodge heat on the admitted joint common metric dilation: the full thermal derivative is 2*E_beta>0, without a flatness premise. Full stationarity needs the actual remaining price response -2*E_beta; zero remainder response excludes stationarity only in this class. All modes remain. Nineteen new kernel propositions, 71 D0 pins and 180 exact controls pass; the moving-grade spectral theorem and uniform literal-bootstrap flat contrast bound are analytic. A four-dimensional positive graded Cayley example cancels one derivative, not a native full joint root. Preparation, normalization, all ten source components and all original terminals remain open.",
     "Continuation of the same positive geometric Hodge packet: all ten constant-metric heat covector slots are derived from the full weighted CAR Fourier square. At beta=log(2), the flat Q=diag(4,1/4,1,1) has a traceless derivative >1/20000 uniformly in L. The exact equal-volume linear pair has heat half contrast >=epsilon/2500000, unchanged by any common volume-only term. Four new genuine finite shape-derivative propositions compile, making 23 in the capsule; 319 exact controls and 22 false-ledger rejections pass. The full operator/metric binding and all-L estimates are analytic; local metric/link/matter source, native Lorentz admission, temperature/normalization and every terminal remain open.",
     "Repair of the primary finite bootstrap/rank-step certificate: both former hand-entered feedbacks are impossible for their supplied projections. Full PQU and golden active compression are now checked at both principal stages on the minimal six-coordinate test carrier. Exact determinant identities distinguish a rank-only opposite-sign transition that exits the golden class. Eleven executed negative controls and five semantic mutations protect the finite algebra, full trace and beta normalization. Supplied heat profiles and projector transitions are not derived native laws; T0-T3 and all physical/parent obligations remain open.",
-    "The existing primary rank certificate now distinguishes exact finite logdet contrasts from both endpoint resolvent responses. On realized nested golden steps x < -log(1-x) < x/(1-x), with left gap > x^2/2. Interpolating the projector loses idempotence; a continuous projector path cannot change rank. A positive control preserves the single fixed feedback-only calibration -log(1-x)/x for one- and two-channel additions. This is not a no-go for fixed calibration, nor a native preparation or action replacement. Fourteen negative controls and eight semantic mutations pass; all earlier scopes and terminals remain open."
+    "The existing primary rank certificate now distinguishes exact finite logdet contrasts from both endpoint resolvent responses. On realized nested golden steps x < -log(1-x) < x/(1-x), with left gap > x^2/2. Interpolating the projector loses idempotence; a continuous projector path cannot change rank. A positive control preserves the single fixed feedback-only calibration -log(1-x)/x for one- and two-channel additions. This is not a no-go for fixed calibration, nor a native preparation or action replacement. Fourteen negative controls and eight semantic mutations pass; all earlier scopes and terminals remain open.",
+    "The literal minimal-code price route is bounded on the complete stated integer-price interface. All fixed scalar probes with a nonzero physical first response require an own code unit O(h); a fixed unit fails. The all-probe theorem has an analytic countable-cover proof, not a finite-sample extrapolation. Nine finite propositions are compiled with literal Phi rebuilt, 185 exact controls pass, six mathematical mutations and eighteen false scope ledgers are rejected. The action lower bound alone does not imply integrality. Golden history log-sums and independently derived shrinking units are preserved exceptions; no own preparation, source, stationarity or parent closure is inferred."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+  "source_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "88a6b71635b8cc9a1b3820709794625070eadedb",
+  "source_parent": "f55bea04beed7aab18141e4284e49fe66cd397ed",
   "source_pr": 310
 }

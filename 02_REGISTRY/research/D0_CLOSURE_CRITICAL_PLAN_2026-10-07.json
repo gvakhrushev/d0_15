@@ -728,9 +728,9 @@
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
-    "control_input_head": "b779cd3108462ea38ea4285cd548ed9d3bb0706d",
-    "published_scientific_input_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
-    "observed_source_strategy_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+    "control_input_head": "ede76d7b716034475de200085432492e44e93814",
+    "published_scientific_input_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+    "observed_source_strategy_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+    "prepared_scientific_input_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -1331,6 +1331,31 @@
       "all_44_node_dictionaries_unchanged": true,
       "native_T0_T3_or_GR_progress": false,
       "new_tasks_branches_physical_assumptions_or_self_merge": false
+    },
+    "literal_code_price_resolution": {
+      "source_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+      "input_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+      "control_input_head": "ede76d7b716034475de200085432492e44e93814",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CODE_PRICE_RESOLUTION.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution",
+      "price_class": "LITERAL_INTEGER_CODE_PRICE_WITH_OWN_LEVEL_UNIT_AND_COMMON_LEVEL_OFFSET",
+      "result": "Fixed-unit integer code prices cannot transfer a nonzero h^(1/3) contrast at O(h). Coverage of every fixed scalar probe forces the native unit to be O(h), even with probe-dependent constants and arbitrary preparation choices.",
+      "completeness": "Every admitted endpoint pair and every state/grammar/readout family having the declared integer-price form; not the full native action.",
+      "all_probe_bound_status": "ANALYTIC_MEASURE_PROOF_NOT_FULL_LEAN",
+      "compiled_propositions": 9,
+      "printed_primary_propositions": 1,
+      "literal_primary_phi_recompiled": true,
+      "exact_controls": 185,
+      "mathematical_mutations_rejected": 6,
+      "false_scope_ledgers_rejected": 18,
+      "countercontrols": "Individual cost lower bounds do not quantize differences; golden log-sum event prices tend to zero with every history retained; rounding is not native admission; the physical nonzero warp test is off-shell.",
+      "native_unit_normalization_or_price_selected": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 307,
+      "prior_artifacts_unchanged": 300,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 6
     }
   }
 }
