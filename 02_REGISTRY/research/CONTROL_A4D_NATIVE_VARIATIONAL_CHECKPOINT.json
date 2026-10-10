@@ -1694,7 +1694,7 @@
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
-  "claim_release_or_book_changes": false,
+  "claim_release_or_book_changes": true,
   "execution_strategy_revision": {
     "condensed_price_naturality": {
       "actual_archive_tower_consumed": true,
@@ -2557,6 +2557,102 @@
       "prior_artifacts_unchanged": 331,
       "prior_artifacts_updated": 1,
       "new_artifacts": 6
+    },
+    "solid_phi_registry_correction": {
+      "date": "2026-10-11",
+      "classification": "CANONICAL_TC_STATUS_CORRECTION_NOT_NEW_SCIENCE",
+      "control_input_head": "f309db61e9567f8570954ab2f442a45d421db529",
+      "scientific_source_head": "80462afde4668fc822a01a70c2e571ce36ecd64e",
+      "supersedes_current_registry_status_only": "solid_phi_primary_T0_boundary",
+      "historical_audit_and_input_pins_preserved": true,
+      "claim_rows": [
+        {
+          "claim_id": "D0-SOLID-PHI-CYCLOTOMIC-TRACE-001",
+          "changed_fields": {
+            "lean_theorem": {
+              "before": "ZPhi.toReal_zero;ZPhi.toReal_one;ZPhi.toReal_add;ZPhi.toReal_mul;mu2_pos;mu2_eq_frac;solid_phi_cyclotomic_trace_owner",
+              "after": ""
+            },
+            "lean_status": {
+              "before": "LEAN_PROVED",
+              "after": "DEPRECATED"
+            },
+            "release_status": {
+              "before": "CORE-FORMALIZED",
+              "after": "DEPRECATED"
+            },
+            "notes": {
+              "before": "Condensed solid module cyclotomic trace representation of the second spectral moment mu_2. Over the solid ring Z[phi]^square, topological cyclic homology TC(Z[phi]) and cyclotomic trace residues over the sphere spectrum S define exact rational invariants without requiring classical singular-trace divergence in L^{1,inf}. The arithmetic of Z[phi] is closed and faithful under the golden polynomial (ZPhi.toReal_mul), and the cyclotomic residue rigorously identifies the positive rational moment mu2 = 12288/5 with irreducible denominator 5 (solid_phi_cyclotomic_trace_owner).",
+              "after": "Deprecated unsupported TC claim. The legacy solid_phi_cyclotomic_trace_owner is an arithmetic alias: it proves multiplicativity of the real interpretation plus positivity and definitional value of mu2Rational = 12288/5. It constructs no TC/THH object or cyclotomic trace. Exact arithmetic is registered separately in D0-ZPHI-ARITHMETIC-OWNER-001; the unproved realization remains D0-CYCLOTOMIC-MU2-REALIZATION-001. Neither supplies a coupled native heat-preparation law."
+            }
+          }
+        },
+        {
+          "claim_id": "D0-ZPHI-ARITHMETIC-OWNER-001",
+          "changed_fields": {
+            "section": {
+              "before": "00.4 / 03.tower Rigorous Z[phi] ring arithmetic and rational mu2 constant definition",
+              "after": "00.4 / 03.tower Z[phi] real-interpretation identities and defined rational mu2"
+            },
+            "lean_theorem": {
+              "before": "zphi_arithmetic_owner",
+              "after": "ZPhi.toReal_zero;ZPhi.toReal_one;ZPhi.toReal_add;ZPhi.toReal_mul;mu2_pos;mu2_eq_frac;zphi_arithmetic_owner"
+            },
+            "notes": {
+              "before": "Truthful ring arithmetic owner: proves that Z[phi] arithmetic is closed, associative, and respects phi^2 = phi + 1, with canonical real embedding respecting addition and multiplication, establishing the rational constant mu2 = 12288/5 without claiming a derivation from TC(Z[phi]) or cyclotomic spectra (zphi_arithmetic_owner).",
+              "after": "The listed declarations prove preservation of zero, one, addition and multiplication by the real interpretation of integer pairs, and positivity and definitional value of the explicitly defined rational mu2Rational = 12288/5. The bundled owner contains multiplication compatibility and the two constant properties. No associativity or injectivity theorem, solid-category construction, TC/THH realization, cyclotomic derivation or native heat-preparation law is claimed by this row."
+            }
+          }
+        },
+        {
+          "claim_id": "D0-CYCLOTOMIC-MU2-REALIZATION-001",
+          "changed_fields": {
+            "lean_status": {
+              "before": "UNPROVED",
+              "after": "OPEN"
+            }
+          }
+        }
+      ],
+      "current_files": [
+        {
+          "path": "02_REGISTRY/claims.csv",
+          "sha256": "f6e685a195ccddf0ed08d3ce81ed310844616f254f55be731c4fa84d3cf36e13"
+        },
+        {
+          "path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
+          "sha256": "6eecc7e1eb7ba03d3253aecf3c2f91caf55e82cabe3720f720e893c70e5d9581"
+        }
+      ],
+      "primary_Lean_propositions_unchanged": true,
+      "all_338_scientific_intake_artifacts_byte_unchanged": true,
+      "generated_ClaimMap_metadata_changed": true,
+      "canonical_status_model": "tools/d0_status_model.py",
+      "external_status_guard": {
+        "path": "04_CERTIFICATES/vp_external_research_status_guard.py",
+        "expected_current_exit_code": 1,
+        "reason": "Its legacy TC check requires FORMALISM, absent from the canonical release enum; separate baseline failures also remain. This guard is unchanged and is not claimed as passed.",
+        "actual_current_exit_code": 1,
+        "actual_current_status": "FAIL_EXTERNAL_RESEARCH_STATUS_GUARD",
+        "actual_current_failed_checks": [
+          "sedenion_three_gen_demoted_from_core",
+          "albert_bl_elimination_demoted_from_core",
+          "solid_phi_cyclotomic_trace_demoted_from_core",
+          "ghp_dequarantine_demoted_from_core",
+          "albert_sm_projection_demoted_from_core",
+          "hodge_pollution_nogo_registered"
+        ]
+      },
+      "remaining_stale_primary_prose": [
+        "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+        "03_FORMALIZATION/D0/Condensed/SolidPhi.lean"
+      ],
+      "stale_prose_may_supply_TC_or_T0_premise": false,
+      "new_native_preparation_or_scientific_terminal": false,
+      "all_44_node_contracts_and_T0_T3_statuses_unchanged": true,
+      "parent_terminals_unchanged": true,
+      "book_text_changed": false,
+      "next_scientific_obligation": "Derive an independently admitted common preparation and its actual variation. A real TC realization and its own full-price bridge are prerequisites only if that route is used; arithmetic aliases cannot discharge them."
     }
   },
   "global_closure": "OPEN",

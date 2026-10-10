@@ -17,6 +17,27 @@ dependencies. That earlier organizational repair preserved its then-current
 recorded below. The detailed tangent plan and all 44 node dictionaries
 remain unchanged; the full common physical preparation is still open.
 
+**CONTROL correction, 2026-10-11.** The registry now deprecates
+`D0-SOLID-PHI-CYCLOTOMIC-TRACE-001` and removes its unsupported proof binding.
+`D0-ZPHI-ARITHMETIC-OWNER-001` retains only the exact zero/one/addition/
+multiplication interpretation identities and the explicitly defined positive
+rational constant. Its actual declarations are listed. The independent
+`D0-CYCLOTOMIC-MU2-REALIZATION-001` remains a proof target; its Lean status is
+normalized from the legacy `UNPROVED` spelling to canonical `OPEN`.
+The generated ClaimMap agrees. This is a downward status correction, not a
+claim promotion or a native preparation theorem. Historical assertions below
+that claims are unchanged describe their original intake, before this correction.
+
+The previous SolidPhi audit and its five input pins remain historical evidence.
+BOOK_03 and the primary Lean comments still contain the unsupported TC wording;
+their pinned source text is not repaired in this bounded registry change and
+cannot be consumed as proof. The arithmetic propositions and all 338 scientific
+intake artifacts retain their bytes. The existing external-research guard still
+fails: it requires the obsolete release label `FORMALISM`, which is absent from
+the canonical status enum, and has other pre-existing failures. Its failure is
+recorded rather than bypassed or described as a passed TC-status test. T0-T3,
+all 44 graph contracts, and the original parent obligations remain open.
+
 Current execution order, revalidated 2026-10-10:
 [The tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
 consumes the [expanded positive-Hodge price proof](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md).
@@ -296,12 +317,12 @@ soundness/recovery, physical limits and #310/#202/#317 remain open. The
 292 preflight controls retain their original joint-chart scope; only their
 plan hash changes. Relational preparations and finite paired probes remain.
 
-A separate primary-input check compiled literal SolidPhi source and printed
+A historical primary-input check compiled literal SolidPhi source and printed
 both its arithmetic owner and legacy cyclotomic alias. They assert only
 arithmetic compatibility and properties of the explicitly defined rational
 constant; no TC/THH or native heat-preparation law is constructed. The existing
-TC realization target is UNPROVED, despite the legacy CORE-FORMALIZED wording.
-The existing external-research status guard fails on inputs identical to main;
+TC realization target was UNPROVED, despite the legacy CORE-FORMALIZED wording.
+The existing external-research status guard failed on inputs identical to main;
 ordinary guard/CI success does not repair that baseline discrepancy. Five
 primary pins and the actual printed propositions are recorded in this intake.
 This routes T0 to real preparation owners and preserves the independent
