@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`833372049d1cbde14f51bcbc3ca06bb017025cb8`, following
-`abe5d0677fb68396e824c4894fce7d1254b979b2`.
+`80462afde4668fc822a01a70c2e571ce36ecd64e`, following
+`833372049d1cbde14f51bcbc3ca06bb017025cb8`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -41,14 +41,11 @@ scope ledgers. The weighted Fourier/metric binding, full covector and
 uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
-The intake has 332 artifacts byte-identical to verified SOURCE
-`833372049d1cbde14f51bcbc3ca06bb017025cb8`: six AF trace/full-preparation files are added and the
-source memo is updated; 325 prior artifacts are unchanged. The actual
-golden-cost refinement, state-separation, modular reconstruction and
-every earlier certificate retain their published bytes. No new physical action, role or preparation law is introduced.
-All forty-four node dictionaries and all original contracts remain intact.
-Current-head CI and CONTROL review are required; no physical acceptance
-or original-parent closure is announced.
+The intake has 338 artifacts byte-identical to verified SOURCE
+`80462afde4668fc822a01a70c2e571ce36ecd64e`: six scene/AF heat-comparison files are added and the
+source memo is updated; 331 prior artifacts are unchanged. The forced
+AF trace, complete thermal descent and all earlier certificates retain
+their published bytes.
 
 The primary bootstrap/rank-step certificate is repaired. Its former
 three-coordinate examples had no PQU realization at either stage: a
@@ -256,6 +253,33 @@ and twenty-one false ledgers pass. The full matrix-state fiber, Gibbs and
 matrix descent arguments are analytic. The remaining law must prepare the actual full
 state or relevant weaker price data with its own retained refinement;
 no state selector or physical terminal is supplied by this result.
+
+[The exact scene/AF comparison](A4D_NATIVE_AF_SCENE_HEAT_COMPARISON.md)
+now separates two previously conflated gates. A full 233-dimensional AF
+comparison gives exact compression of the combinatorial scene Laplacian;
+dimension inequality does not exclude a rectangular Xi. On the literal
+phi-squared ladder every scene isometry nonetheless has intertwining
+error at least 13/2, independently of level, scale, multiplicities and
+basis. This is sharp on the full 89-dimensional carrier. The weak
+compression has a positive second-moment defect, so it cannot transport
+the heat semigroup. All AF directions and scene spectral blocks remain.
+
+Eleven scalar Lean propositions, 121 exact controls, nine executed
+mathematical mutants and nineteen false scope ledgers pass. Full operator
+norm and semigroup arguments are analytic. The comparison witnesses do
+not supply native operation admission, a physical zero convention or a
+field readout. This is a completed comparison interface and proof-scope
+repair, not a proved native T0 premise. It supplies no action-contrast
+no-go and does not start a replacement-spectrum search.
+
+Exact Feshbach elimination with memory remains possible in this same
+witness. The complete two-mode spectral fiber satisfies `d=l+u-a` and
+`abs(k)^2=(a-l)*(u-a)`, which fix the archive response together with its
+coupling response. Memory can change while the full heat trace stays
+constant at fixed l,u,beta. The heat gap therefore is not a Feshbach
+no-go; dropping the linked coupling variation would create a false source.
+This comparison relation still requires native admission and the joint
+field readout before it can be used as the requested F.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating
