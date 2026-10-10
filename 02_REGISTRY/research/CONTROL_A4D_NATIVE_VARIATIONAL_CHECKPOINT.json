@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "ae8c05abeb227140a4ebc3cfb677bf60552b5f8ff1d449634f1bc3e09f1e4a20",
-      "source_blob": "f916744eac824e03ed45b3cea5d5651d87db119e"
+      "sha256": "adb23f72668c820fe8a4671a9c5fa095d5eaea9c31b2e6138bec8dafe4e530b6",
+      "source_blob": "158de2c72897f404843615e3f5997e8c10e0be9d"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1601,6 +1601,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_golden_hodge_state_separation_certificate.json",
       "sha256": "deaa5532c14d06fd78779091b3335d4d963560613fd813f68c73243098ef55c6",
       "source_blob": "31b2b8334d56096b2a1fe239b69d7d5135eda05a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md",
+      "sha256": "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3",
+      "source_blob": "573e2d70c1d7cbefd35670431b1ab9b87624dbdd"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement.lean",
+      "sha256": "3e47588629ce3ed51ff165643090a697ecc5d39e64be2019bfa856e024014bd4",
+      "source_blob": "3a005f6f5df8ec059c5d3cd19cc00609211e61cf"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement_check.py",
+      "sha256": "146653c92b7806810d845423d5b76548a77cbb6e51a1edd2e8ff7b74f561a56f",
+      "source_blob": "17d0b6d3efd16924c3a536c9ef90d587091568f9"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement_certificate.json",
+      "sha256": "98296ed5b60c77fc721d72d75ef7f64e8550896500a63bd4bfb0ce7755d36d08",
+      "source_blob": "c85c0f026cadd89bdabd4d92583f67681edc2919"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement_output.txt",
+      "sha256": "0b464394cc80156722959ea72fda186347f272793a1ea0cd18fb12504fc6654d",
+      "source_blob": "1d723ab2e8f8e5ff058ab5e673a3204e8defff8d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement_results.json",
+      "sha256": "8d1c87da560cec05e799585ce11174f98e5698616b5ef86ef5059b9e6a91c6f1",
+      "source_blob": "770ad86aa5330ce813371b7b3729912ae87acfb7"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1645,7 +1675,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "c51571468afd2e428bcc86b9a9e7c958f3c2c5ef",
+    "control_input_head": "81b55b1eacf64709e82ecc7fabadc74274861d4a",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
@@ -1732,7 +1762,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+    "observed_source_strategy_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1783,7 +1813,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 316,
+    "prior_scientific_artifacts_byte_unchanged_count": 319,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1817,7 +1847,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+    "scientific_source_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2344,13 +2374,53 @@
       "prior_artifacts_unchanged": 316,
       "prior_artifacts_updated": 1,
       "new_artifacts": 3
+    },
+    "golden_cost_full_Fibonacci_refinement": {
+      "source_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
+      "input_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+      "control_input_head": "81b55b1eacf64709e82ecc7fabadc74274861d4a",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement",
+      "actual_inputs": "DetectorSupportGoldenWeight cost and cylinder measure; FibonacciAFTower counts; recorded golden gate",
+      "first_proved_premise": "Concrete trace-preserving full Fibonacci matrix inclusion and its complete GNS adjoint from the existing golden cylinders",
+      "refinement": "Complete shortest-prefix cuts at accumulated costs; direct=0 and return=10",
+      "same_profinite_support": "Cost-n cut is determined by n raw letters; cost-2m cut refines m raw letters",
+      "literal_inclusion": "(A,B) maps to (diag(A,B),A)",
+      "actual_conditional_adjoint": "(Z,W) maps to (pX+p^2W,Y), Z=[[X,U],[V,Y]]",
+      "full_complement_norm": "t*(p^3*norm(X-W)^2+p*norm(U)^2+p*norm(V)^2)",
+      "normalized_GNS_column": "(sqrt(p),p), the same prepared column as the actual recorded gate",
+      "all_rectangular_and_duplicate_complement_directions_retained": true,
+      "compiled_scope": "24 real algebra, all-size GNS isometry/adjoint, count, mass, entrywise residual and golden-column propositions",
+      "analytic_scope": "Complete prefix partition and cofinality at every level; complex matrix/GNS extension",
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_controls": 6157,
+      "executed_mathematical_mutations_rejected": 8,
+      "false_scope_ledgers_rejected": 16,
+      "source_pins": 14,
+      "new_Lean_propositions": 24,
+      "unitary_extension_proves_physical_operation_admission": false,
+      "scalar_Perron_scale_selects_heat_generator": false,
+      "AF_trace_substituted_for_ordinary_bootstrap_trace": false,
+      "cost_clock_identified_as_physical_time": false,
+      "common_q_D_b_m_readout_or_native_F_derived": false,
+      "independent_golden_tensor_state_separation_applied_to_cost_cut": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_original_terminals_unchanged": true,
+      "scientific_artifact_count": 326,
+      "prior_artifacts_unchanged": 319,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 6
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
+  "previous_source_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2434,11 +2504,12 @@
     "The same actual scene-register AF operator family has a complete full-heat four-dimensional leading-coefficient obstruction for every fixed b>1. Actual Burnside multiplicities and all tails are retained; two rationally separated phase limits exclude a positive ordinary 4D leading coefficient even at the unique matching exponent. This is an analytic all-level result, with 121 added exact heat controls, 316 total controls, thirteen mathematical mutations and twenty-five false scope rejections. Fixed-phase geometric subsequences have positive limits and remain available to a separately derived native physical reading. No physical mesh, bootstrap identification, averaging, source, all-F no-go or T0 closure is inferred.",
     "The full retained-stratum expansion proves an ordinary second heat-coefficient obstruction on every fixed phase, even after exact leading phase tracking. It retains a positive leading limit, all Burnside contributions, and the scalar remainder. Counting strata are not independent native blocks; formal subtraction is not admitted. There are 452 exact controls, nineteen executed math mutations, thirty-three scope rejections and two shallow-path replays. The latter repair the actual Linux CI IndexError before --repo parsing, without accepting non-mathematical mutation failures. The proof is analytic and does not exclude all F or native paired-price cancellation; T0 and original terminals stay open.",
     "The named prepared-state/modular route has a complete finite Gibbs reconstruction theorem. The scalar price ambiguity disappears under a genuine positive ground-zero constraint, while faithfulness and state/heat identification remain actual obligations. A generic Lean isometry theorem rejects the literal linear hyperbolic real-flow interpretation; the positive modular-square golden control retains all four modes and nonlinear/Koopman exceptions. Four compiled propositions, 60 exact controls, seven executed math mutants, sixteen false ledgers, nine primary/transitive source pins and six standard-only axiom reports are included. No all-F obstruction, new state/temperature law, source or T0-T3 closure follows.",
-    "The actual independent golden-record state is uniformly separated in trace norm from the full flat Hodge Gibbs state at every temperature, overall scale and unitary identification as the number of golden factors grows. Arbitrary independent ancillary densities and all sixteen Hodge components are retained; a mixed Fock ancilla removes the simpler finite multiplicity objection without removing this theorem. The proof is analytic and uses a uniform thermal second-moment bound and a noncommuting projection witness. There are 1418 exact controls, nine executed math mutants, sixteen false ledgers and 91 pinned inputs. This closes only the stated full-state identification; correlated readouts, other heat operators and native paired-price transfer remain open."
+    "The actual independent golden-record state is uniformly separated in trace norm from the full flat Hodge Gibbs state at every temperature, overall scale and unitary identification as the number of golden factors grows. Arbitrary independent ancillary densities and all sixteen Hodge components are retained; a mixed Fock ancilla removes the simpler finite multiplicity objection without removing this theorem. The proof is analytic and uses a uniform thermal second-moment bound and a noncommuting projection witness. There are 1418 exact controls, nine executed math mutants, sixteen false ledgers and 91 pinned inputs. This closes only the stated full-state identification; correlated readouts, other heat operators and native paired-price transfer remain open.",
+    "The actual golden cylinder cost yields complete Fibonacci cuts of the same profinite support. Its literal full matrix inclusion preserves the trace and has adjoint C(Z,W)=(pX+p^2W,Y), retaining both rectangular blocks. The normalized duplicated column is the actual golden prepared column. This proves a previously supplied refinement premise, without deriving a heat law, physical operation admission, physical clock or joint q,D,b,m readout. Twenty-four Lean propositions, 6157 exact controls, eight executed mathematical mutants and sixteen false scope ledgers pass. The all-level complete-cut/cofinality argument and complex extension are analytic. Independent tensor-state obstructions are not extended to this different readout."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+  "source_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "eb9594d2d06572164c26bd561e60e9faf4f830af",
+  "source_parent": "123d9e969ec56705b4b485adb59a36c19f5a8797",
   "source_pr": 310
 }

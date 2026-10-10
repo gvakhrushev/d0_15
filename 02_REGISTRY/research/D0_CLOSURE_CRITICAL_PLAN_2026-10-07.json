@@ -728,9 +728,9 @@
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
-    "control_input_head": "c51571468afd2e428bcc86b9a9e7c958f3c2c5ef",
-    "published_scientific_input_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
-    "observed_source_strategy_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+    "control_input_head": "81b55b1eacf64709e82ecc7fabadc74274861d4a",
+    "published_scientific_input_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
+    "observed_source_strategy_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+    "prepared_scientific_input_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -1525,6 +1525,46 @@
       "prior_artifacts_unchanged": 316,
       "prior_artifacts_updated": 1,
       "new_artifacts": 3
+    },
+    "golden_cost_full_Fibonacci_refinement": {
+      "source_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
+      "input_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+      "control_input_head": "81b55b1eacf64709e82ecc7fabadc74274861d4a",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement",
+      "actual_inputs": "DetectorSupportGoldenWeight cost and cylinder measure; FibonacciAFTower counts; recorded golden gate",
+      "first_proved_premise": "Concrete trace-preserving full Fibonacci matrix inclusion and its complete GNS adjoint from the existing golden cylinders",
+      "refinement": "Complete shortest-prefix cuts at accumulated costs; direct=0 and return=10",
+      "same_profinite_support": "Cost-n cut is determined by n raw letters; cost-2m cut refines m raw letters",
+      "literal_inclusion": "(A,B) maps to (diag(A,B),A)",
+      "actual_conditional_adjoint": "(Z,W) maps to (pX+p^2W,Y), Z=[[X,U],[V,Y]]",
+      "full_complement_norm": "t*(p^3*norm(X-W)^2+p*norm(U)^2+p*norm(V)^2)",
+      "normalized_GNS_column": "(sqrt(p),p), the same prepared column as the actual recorded gate",
+      "all_rectangular_and_duplicate_complement_directions_retained": true,
+      "compiled_scope": "24 real algebra, all-size GNS isometry/adjoint, count, mass, entrywise residual and golden-column propositions",
+      "analytic_scope": "Complete prefix partition and cofinality at every level; complex matrix/GNS extension",
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_controls": 6157,
+      "executed_mathematical_mutations_rejected": 8,
+      "false_scope_ledgers_rejected": 16,
+      "source_pins": 14,
+      "new_Lean_propositions": 24,
+      "unitary_extension_proves_physical_operation_admission": false,
+      "scalar_Perron_scale_selects_heat_generator": false,
+      "AF_trace_substituted_for_ordinary_bootstrap_trace": false,
+      "cost_clock_identified_as_physical_time": false,
+      "common_q_D_b_m_readout_or_native_F_derived": false,
+      "independent_golden_tensor_state_separation_applied_to_cost_cut": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_original_terminals_unchanged": true,
+      "scientific_artifact_count": 326,
+      "prior_artifacts_unchanged": 319,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 6
     }
   }
 }

@@ -5,6 +5,24 @@ Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
 Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/pull/322).
+The [golden cost refinement](A4D_NATIVE_GOLDEN_COST_REFINEMENT.md) now
+constructs the previously generic trace-preserving-inclusion input from
+the existing detector cylinder measure. Its complete accumulated-cost
+cuts recover the actual Fibonacci counts and the same profinite history.
+The full matrix inclusion `(A,B) -> (diag(A,B),A)` has adjoint
+`C(Z,W)=(pX+p^2W,Y)`, with both rectangular blocks retained in its
+orthogonal complement. In normalized GNS coordinates its duplicated
+block is the actual golden prepared column `(sqrt(p),p)`; the second
+old block is carried unchanged. This is not a uniform fresh split of all
+coordinates. Twenty-four Lean propositions and 6157 exact controls
+verify the algebraic bridge; eight executed math mutants and sixteen
+false scope ledgers are rejected. The all-level complete-cut/cofinality
+argument and complex extension are analytic. This supplies a concrete
+refinement premise, not the missing heat law, physical operation
+admission or common readout to `(q,D,b,m)`. T0 and the original terminals
+remain open; full state-distance obstructions from the independent
+golden-tensor readout are not extended to these different cost cuts.
+
 The [positive-Hodge radial balance](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md)
 now computes the full thermal response along an admitted common dilation
 of both endpoint metrics with fixed dressed links and the stated geometric

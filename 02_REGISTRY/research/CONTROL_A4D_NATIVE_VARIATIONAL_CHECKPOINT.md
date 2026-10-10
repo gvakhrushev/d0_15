@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`123d9e969ec56705b4b485adb59a36c19f5a8797`, following
-`eb9594d2d06572164c26bd561e60e9faf4f830af`.
+`abe5d0677fb68396e824c4894fce7d1254b979b2`, following
+`123d9e969ec56705b4b485adb59a36c19f5a8797`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -15,7 +15,7 @@ T0 common-preparation obligation, its evidence requirements and downstream
 dependencies. That earlier organizational repair preserved its then-current
 301 scientific artifacts and SOURCE SHA. Subsequent scientific intakes are
 recorded below. The detailed tangent plan and all 44 node dictionaries
-remain unchanged; no native-preparation theorem is added.
+remain unchanged; the full common physical preparation is still open.
 
 Current execution order, revalidated 2026-10-10:
 [The tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
@@ -41,11 +41,11 @@ scope ledgers. The weighted Fourier/metric binding, full covector and
 uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
-The intake has 320 artifacts byte-identical to verified SOURCE
-`123d9e969ec56705b4b485adb59a36c19f5a8797`: three golden/Hodge state-separation proof/certificate
-files are added and the source memo is updated; 316 prior artifacts are
-unchanged. The modular reconstruction, AF proof and every earlier
-certificate retain their published bytes. No new physical action, role or preparation law is introduced.
+The intake has 326 artifacts byte-identical to verified SOURCE
+`abe5d0677fb68396e824c4894fce7d1254b979b2`: six golden-cost/Fibonacci refinement files are added
+and the source memo is updated; 319 prior artifacts are unchanged.
+The golden/Hodge state-separation, modular reconstruction, scene-AF proof
+and every earlier certificate retain their published bytes. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
@@ -206,6 +206,24 @@ The analytic proof has 1418 exact controls, nine executed math mutants,
 sixteen false ledgers and 91 pinned inputs; no new Lean theorem is claimed.
 The full state-distance result is not an action-contrast error estimate.
 T0, own source/Ward, native stationarity and GR remain open.
+
+[The golden-cost/Fibonacci refinement](A4D_NATIVE_GOLDEN_COST_REFINEMENT.md)
+constructs a previously supplied premise from actual native inputs.
+Complete accumulated-cost cuts of the existing golden detector measure
+recover Fibonacci counts without losing histories. They produce the
+literal inclusion `(A,B) -> (diag(A,B),A)`, compatible trace and adjoint
+`C(Z,W)=(pX+p^2W,Y)`. Both rectangular blocks remain in the full carrier.
+The normalized duplicated column is `(sqrt(p),p)`, while the B-block is
+carried unchanged. This binds the existing golden column to an actual
+full refinement, without replacing all old coordinates by fresh splits.
+
+The packet has 24 compiled Lean propositions with standard axioms only,
+6157 exact controls, eight executed math mutants and sixteen false ledgers.
+Complete-cut cofinality and the complex extension are analytic. The common
+heat law, physical operation admission, clock and q,D,b,m readout remain
+to be derived. The AF trace is not substituted into the bootstrap operator
+trace. The prior tensor-state separation is not applied to these different
+cost cuts. T0-T3 and the original parent terminals remain open.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating
