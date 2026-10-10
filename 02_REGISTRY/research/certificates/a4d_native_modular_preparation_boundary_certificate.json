@@ -1,0 +1,170 @@
+{
+  "checker_sha256": "d377eefc0e27dca110cb7d8cb3824950ec26b0c2c67143eef93ff150ca79611f",
+  "checks": {
+    "actual_tensor_marginal": 1,
+    "actual_tensor_marginal_faithful": 1,
+    "actual_tensor_marginal_trace": 1,
+    "all_four_modular_modes": 1,
+    "both_diagonal_modes_retained": 1,
+    "both_golden_eigenvalues": 1,
+    "central_field_shift_need_not_be_trace_only": 1,
+    "direct_sum_conditioning_rank_one": 1,
+    "direct_sum_is_not_tensor_readout": 1,
+    "eigenvalue_collision_left_price_derivative": 1,
+    "eigenvalue_collision_right_price_derivative": 1,
+    "exact_lorentz_constraint_pencil": 1,
+    "faithfulness_not_for_all_inputs": 1,
+    "full_factor_trace_one": 1,
+    "full_price_scalar_covector": 1,
+    "full_price_sees_scalar": 1,
+    "golden_eigenbasis_invertible": 1,
+    "golden_identity_and_brackets": 1,
+    "ground_zero_fixes_normalizer": 1,
+    "ground_zero_reconstruction_normalized": 1,
+    "hyperbolic_T_not_isometric": 1,
+    "literal_blank_output": 1,
+    "noncommuting_density_jet_retained": 1,
+    "noncommuting_heat_jet_price_control": 1,
+    "normalized_density_scalar_invisible": 1,
+    "normalizer_preserved_before_division": 1,
+    "particular_zero_vector_is_additional_data": 1,
+    "positive_square_intertwiner": 1,
+    "real_flow_implementer_unitary": 1,
+    "real_flow_unitary_conjugation_norm_control": 4,
+    "restricted_square_is_not_full_operator": 1,
+    "separating_input_normalized": 1,
+    "separating_output_exact": 1,
+    "shift_breaks_protected_zero_mode": 1,
+    "state_curve_preserves_full_carrier": 1,
+    "ten_complete_equal_endpoint_tangents": 10,
+    "ten_packed_coordinate_duals": 10,
+    "whole_joint_state_retained": 1,
+    "whole_owned_recording_gate_orthogonal": 1
+  },
+  "exact_control_count": 60,
+  "executed_false_ledgers": [
+    {
+      "name": "complete_finite_faithful_Gibbs_fiber_analytic",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "positive_ground_zero_representative_unique_analytic",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "normalized_state_alone_fixes_full_heat_price",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "scalar_shift_remains_free_with_protected_positive_zero_mode",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "direct_sum_pure_sector_is_faithful_tensor_marginal",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "every_declared_golden_gate_input_has_faithful_marginal",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "bounded_linear_hyperbolic_step_is_real_modular_flow",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "nonlinear_torus_or_all_modular_D0_descriptions_excluded",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "restricted_positive_modular_square_match_retains_all_modes",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "matrix_Gibbs_reconstruction_is_new_Lean_theorem",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "native_state_Gibbs_identification_or_temperature_selected",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "native_F_source_Ward_stationarity_curved_roots_or_GR_derived",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "T0_T3_or_original_parent_terminal_closed",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "proof_sha256",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "checker_sha256",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "lean_receipt_sha256",
+      "rejected_before_mathematical_replay": true
+    }
+  ],
+  "executed_mathematical_mutations": [
+    {
+      "name": "wrong_golden_state",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "tensor_trace_replaced_by_pure_output",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "diagonal_modular_modes_deleted",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "hyperbolic_step_replaced_by_identity",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "partition_normalized_before_price",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "heat_shift_sign_reversed",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "packed_offdiagonal_weight_lost",
+      "rejected_by_mathematical_assertion": true
+    }
+  ],
+  "golden_full_modular_square_trace": 5,
+  "input_head": "8207558224ee7c419d58f1f468d01b1187e21951",
+  "lean": {
+    "actual_axiom_reports": 6,
+    "all_axioms_standard": true,
+    "compiled_propositions": 4,
+    "source_pins": 9
+  },
+  "lean_receipt_sha256": "4e3462bcad5690f3cee7b31d792d3130293201367e87e8bce6477395cca58773",
+  "literal_toral_square_trace": 3,
+  "native_preparation_or_source_derived": false,
+  "new_Lean_propositions": 4,
+  "proof_sha256": "e837a2ac4c564e9de366c2f213c7d28374e2d8326e6d35759592f1d4c7bdc6aa",
+  "schema": "d0-native-modular-preparation-boundary/1",
+  "scope": {
+    "T0_T3_or_original_parent_terminal_closed": false,
+    "bounded_linear_hyperbolic_step_is_real_modular_flow": false,
+    "complete_finite_faithful_Gibbs_fiber_analytic": true,
+    "direct_sum_pure_sector_is_faithful_tensor_marginal": false,
+    "every_declared_golden_gate_input_has_faithful_marginal": false,
+    "matrix_Gibbs_reconstruction_is_new_Lean_theorem": false,
+    "native_F_source_Ward_stationarity_curved_roots_or_GR_derived": false,
+    "native_state_Gibbs_identification_or_temperature_selected": false,
+    "nonlinear_torus_or_all_modular_D0_descriptions_excluded": false,
+    "normalized_state_alone_fixes_full_heat_price": false,
+    "positive_ground_zero_representative_unique_analytic": true,
+    "restricted_positive_modular_square_match_retains_all_modes": true,
+    "scalar_shift_remains_free_with_protected_positive_zero_mode": false
+  }
+}

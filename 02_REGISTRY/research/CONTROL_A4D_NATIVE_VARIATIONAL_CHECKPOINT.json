@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "efb3315100375b6588f8a140537377b8df6fcf4f82ff0c952150d2bf82c922b6",
-      "source_blob": "0cd62e34da08a78b500a2652062c9e60eb8b0d53"
+      "sha256": "f51b9a269b4e8a512d8d7ad69a4c5d505d8390b2fd79ca10c809a98f887fe2d7",
+      "source_blob": "3a0a6075bca225bc2548b36598d4e36c7d804420"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1556,6 +1556,36 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_certificate.json",
       "sha256": "7ba8c5999434fb6e039a6702eb8511df0a5dd67305c6ab1263661eb2dfd09c4a",
       "source_blob": "a251ae6753cf7da2ad519d5fee934a8d761c7840"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_MODULAR_PREPARATION_BOUNDARY.md",
+      "sha256": "e837a2ac4c564e9de366c2f213c7d28374e2d8326e6d35759592f1d4c7bdc6aa",
+      "source_blob": "1dfd2bf5bddc970ebd232070db696b9ccd78a0d8"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary.lean",
+      "sha256": "d7332cf68db580c1a6513491f84faaf0aeead22ca352bcd1cab6b098aa22326b",
+      "source_blob": "ce64aa3735ba2516c60ed96e1287caf4d6f204d2"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_output.txt",
+      "sha256": "05bcf829389c0addaa59eea0ee972174cbc9a8c1d4a6bf2804f6a80c93d6f5a3",
+      "source_blob": "f536c9121d39131fbd4a642de7755a6bbcc69c84"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_results.json",
+      "sha256": "4e3462bcad5690f3cee7b31d792d3130293201367e87e8bce6477395cca58773",
+      "source_blob": "c2626f9333f49999482926e1a3e508ad99c7bdc5"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_check.py",
+      "sha256": "d377eefc0e27dca110cb7d8cb3824950ec26b0c2c67143eef93ff150ca79611f",
+      "source_blob": "f9d71835f67880196b5252a5d56f2c9161045640"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_certificate.json",
+      "sha256": "789ddf92dcc648106983e7584177c4097d794f0cfb65ee81f83eb36364028ef0",
+      "source_blob": "be32c5225a812eeae92d7f24d692cb56ea64e84e"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1600,7 +1630,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "df1de2dd9e1156698da42da7093403e7948b01c4",
+    "control_input_head": "fce14fed99b5a2f71f7568d76bc72b883947dd00",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
@@ -1687,7 +1717,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "8207558224ee7c419d58f1f468d01b1187e21951",
+    "observed_source_strategy_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1738,7 +1768,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 307,
+    "prior_scientific_artifacts_byte_unchanged_count": 310,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1772,7 +1802,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "8207558224ee7c419d58f1f468d01b1187e21951",
+    "scientific_source_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2231,13 +2261,48 @@
       "prior_artifacts_unchanged": 307,
       "prior_artifacts_updated": 4,
       "new_artifacts": 0
+    },
+    "modular_preparation_boundary": {
+      "source_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
+      "input_head": "8207558224ee7c419d58f1f468d01b1187e21951",
+      "control_input_head": "fce14fed99b5a2f71f7568d76bc72b883947dd00",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_MODULAR_PREPARATION_BOUNDARY.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary",
+      "named_route": "Prepared state to modular dynamics to full owned heat and price; a specific BOOK_06 bridge, not every native preparation",
+      "finite_Gibbs_fiber": "All finite Hermitian H with faithful normalized rho at fixed beta>0 are -beta^-1 log(rho)+cI; thermal price equals -c",
+      "protected_zero_mode": "H>=0 and min spec H=0 uniquely fix c=beta^-1 log lambda_max(rho); no scalar freedom remains in that class",
+      "full_covector": "A field-dependent central shift changes the same thermal price by -c and its complete constrained covector by -dc; the shift is not declared native",
+      "real_gate_controls": "Actual golden recording gate gives faithful diag(p,p^2) for one blank input and a nonfaithful pure marginal for another normalized input",
+      "faithfulness_or_operational_admission_for_all_inputs": false,
+      "linear_time_result": "Every norm-isometric real-linear U with Ua=b and Ub=a-b has a=b=0 in any normed space",
+      "positive_control": "The off-diagonal positive modular square for the actual golden state is similar to T^2; both diagonal modular modes retained",
+      "nonlinear_torus_Koopman_or_all_modular_descriptions_excluded": false,
+      "actual_bridge_conclusion_is_supplied_hypothesis": true,
+      "matrix_Gibbs_reconstruction_proof": "ANALYTIC_NOT_LEAN",
+      "new_Lean_propositions": 4,
+      "actual_axiom_reports": 6,
+      "only_standard_axioms": true,
+      "primary_and_transitive_source_pins": 9,
+      "exact_controls": 60,
+      "executed_mathematical_mutations_rejected": 7,
+      "false_scope_or_input_ledgers_rejected": 16,
+      "negative_controls_in_durable_checker": true,
+      "state_Gibbs_identification_temperature_or_heat_law_selected": false,
+      "common_native_preparation_source_Ward_stationarity_curved_roots_or_GR_derived": false,
+      "all_native_F_excluded": false,
+      "T0_T3_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 317,
+      "prior_artifacts_unchanged": 310,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 6
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
+  "previous_source_head": "8207558224ee7c419d58f1f468d01b1187e21951",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2319,11 +2384,12 @@
     "The literal minimal-code price route is bounded on the complete stated integer-price interface. All fixed scalar probes with a nonzero physical first response require an own code unit O(h); a fixed unit fails. The all-probe theorem has an analytic countable-cover proof, not a finite-sample extrapolation. Nine finite propositions are compiled with literal Phi rebuilt, 185 exact controls pass, six mathematical mutations and eighteen false scope ledgers are rejected. The action lower bound alone does not imply integrality. Golden history log-sums and independently derived shrinking units are preserved exceptions; no own preparation, source, stationarity or parent closure is inferred.",
     "The actual noncommutative 33-dimensional scene-register AF refinement now has a proved all-level metric tail estimate. Its old constant-two certificate assertion has an exact native counterexample; the repaired bound retains all archive sectors, uses full commutator module compression and proves weak-star metrizability for every fixed b>1. The full proof is analytic, with 195 exact controls, seven rejected mathematical mutations and seventeen false scope ledgers. No physical mesh, scale, common full-price preparation, source or T0 closure is inferred; normalized GNS trace does not replace the bootstrap operator heat trace.",
     "The same actual scene-register AF operator family has a complete full-heat four-dimensional leading-coefficient obstruction for every fixed b>1. Actual Burnside multiplicities and all tails are retained; two rationally separated phase limits exclude a positive ordinary 4D leading coefficient even at the unique matching exponent. This is an analytic all-level result, with 121 added exact heat controls, 316 total controls, thirteen mathematical mutations and twenty-five false scope rejections. Fixed-phase geometric subsequences have positive limits and remain available to a separately derived native physical reading. No physical mesh, bootstrap identification, averaging, source, all-F no-go or T0 closure is inferred.",
-    "The full retained-stratum expansion proves an ordinary second heat-coefficient obstruction on every fixed phase, even after exact leading phase tracking. It retains a positive leading limit, all Burnside contributions, and the scalar remainder. Counting strata are not independent native blocks; formal subtraction is not admitted. There are 452 exact controls, nineteen executed math mutations, thirty-three scope rejections and two shallow-path replays. The latter repair the actual Linux CI IndexError before --repo parsing, without accepting non-mathematical mutation failures. The proof is analytic and does not exclude all F or native paired-price cancellation; T0 and original terminals stay open."
+    "The full retained-stratum expansion proves an ordinary second heat-coefficient obstruction on every fixed phase, even after exact leading phase tracking. It retains a positive leading limit, all Burnside contributions, and the scalar remainder. Counting strata are not independent native blocks; formal subtraction is not admitted. There are 452 exact controls, nineteen executed math mutations, thirty-three scope rejections and two shallow-path replays. The latter repair the actual Linux CI IndexError before --repo parsing, without accepting non-mathematical mutation failures. The proof is analytic and does not exclude all F or native paired-price cancellation; T0 and original terminals stay open.",
+    "The named prepared-state/modular route has a complete finite Gibbs reconstruction theorem. The scalar price ambiguity disappears under a genuine positive ground-zero constraint, while faithfulness and state/heat identification remain actual obligations. A generic Lean isometry theorem rejects the literal linear hyperbolic real-flow interpretation; the positive modular-square golden control retains all four modes and nonlinear/Koopman exceptions. Four compiled propositions, 60 exact controls, seven executed math mutants, sixteen false ledgers, nine primary/transitive source pins and six standard-only axiom reports are included. No all-F obstruction, new state/temperature law, source or T0-T3 closure follows."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "8207558224ee7c419d58f1f468d01b1187e21951",
+  "source_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "cad6f9a3168d26c72a72a98a71d737e470bac508",
+  "source_parent": "8207558224ee7c419d58f1f468d01b1187e21951",
   "source_pr": 310
 }

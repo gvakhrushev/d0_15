@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`8207558224ee7c419d58f1f468d01b1187e21951`, following
-`cad6f9a3168d26c72a72a98a71d737e470bac508`.
+`eb9594d2d06572164c26bd561e60e9faf4f830af`, following
+`8207558224ee7c419d58f1f468d01b1187e21951`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -41,10 +41,11 @@ scope ledgers. The weighted Fourier/metric binding, full covector and
 uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
-The intake has 311 artifacts byte-identical to verified SOURCE
-`8207558224ee7c419d58f1f468d01b1187e21951`: the existing AF proof/replay/ledger and
-source memo are updated; 307 earlier artifacts are unchanged. The
-registered metric certificate and its 195 controls remain intact. No new physical action, role or preparation law is introduced.
+The intake has 317 artifacts byte-identical to verified SOURCE
+`eb9594d2d06572164c26bd561e60e9faf4f830af`: six modular-preparation proof/certificate files
+are added and the source memo is updated; 310 prior artifacts are unchanged.
+The AF proof, its full phase/heat ledger and every earlier certificate retain
+their published bytes. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
@@ -165,6 +166,27 @@ before --repo was parsed. Explicit --repo is now resolved first; rejection
 must still be a mathematical AssertionError. The prior failure is retained
 as failure, and new-head CI is required. No new Lean theorem, native
 preparation, physical source or terminal closure is claimed.
+
+[The modular preparation proof](A4D_NATIVE_MODULAR_PREPARATION_BOUNDARY.md)
+tests the existing prepared-state/modular-time arrow. Every faithful finite
+density fixes its Gibbs heat up to a scalar, and the same thermal price is
+minus that scalar. A genuine positive heat with minimum energy zero fixes
+it uniquely. This positive reconstruction result is retained; normalization
+freedom is not asserted after imposing that condition. It remains necessary
+to derive equality of the actual prepared state and the actual heat's Gibbs
+state, with their readout, refinement and existing parameter laws.
+
+The actual golden gate gives faithful and nonfaithful tensor marginals for
+two normalized inputs. Sector conditioning of a pure state is different.
+The generic Lean theorem proves that a norm-isometric real-linear flow
+cannot realize the literal two-column hyperbolic step nontrivially. The
+restricted positive modular square nevertheless has the golden T^2 spectrum;
+both diagonal modes remain. Nonlinear torus and Koopman representations are
+not excluded. The literal bridge supplies its physical identification as
+a hypothesis. Four Lean propositions, six standard-only axiom reports,
+nine source pins, 60 exact controls, seven mathematical mutants and sixteen
+false ledgers support this precise boundary. Matrix-log reconstruction is
+analytic. No native F, source/Ward, stationarity or GR closure is claimed.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating

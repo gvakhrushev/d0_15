@@ -3378,3 +3378,52 @@ explicit --repo is now resolved first. The mathematical rejection requirement
 is unchanged. The full expansion/limit proof remains analytic, with no new
 Lean propositions. Native F, source/Ward, stationarity, curved roots,
 soundness/recovery, all 44 dependency nodes and original terminals stay open.
+
+## Native state, modular dynamics and the full heat price (2026-10-10)
+
+[The modular preparation proof](A4D_NATIVE_MODULAR_PREPARATION_BOUNDARY.md)
+tests a specific existing arrow: whether the internally prepared state and
+its modular flow determine the full heat price. The actual BOOK_06 bridge
+supplies the physical time identification as a hypothesis; it does not
+construct the state or the heat. An orthogonal retained-sector conditioning
+of a pure state stays rank one. A genuine tensor readout of the existing
+golden recording gate can be faithful, with density diag(p,p^2), but another
+normalized input of that same gate gives a pure marginal. These are exact
+interface statements, not a declaration that all those inputs are prepared.
+
+The analytic finite-factor theorem classifies the entire Gibbs fiber for
+every faithful density and fixed beta: H=-beta^-1 log(rho)+cI and thermal
+price B=-c. A field-dependent scalar therefore survives normalized-state
+and modular-flow readouts while changing the complete constrained price
+covector, including on tracefree metric tangents. The scalar is not made
+native or fitted to rho0. If the actual heat is positive with minimum
+energy zero, the fiber instead has the unique representative
+H0=beta^-1(log(lambda_max(rho)) I-log(rho)). Both cases are retained;
+no scalar freedom is claimed after this genuine zero-mode constraint.
+Nonfaithful states and possible maximal-eigenvalue collisions retain their
+explicit existence and differentiability obligations.
+
+The literal two-coordinate T=[[0,1],[1,-1]] has no nonzero linear
+intertwiner with a norm-isometric real modular step on any normed space.
+The proof covers every dimension. It does not exclude nonlinear toral
+coordinates, Koopman representations, unbounded observables or all modular
+descriptions. A positive control preserves the actual golden relation:
+the restricted positive modular square is similar to T^2. Both additional
+diagonal modular modes remain in the full operator. This relation is not
+silently changed into a real modular flow or a full heat identity.
+
+Four new research propositions compile in Lean; their actual statements,
+primary bridge declarations and six standard-only axiom reports are saved.
+The finite replay has 60 exact controls, seven executed mathematical mutants
+and sixteen false-ledger rejections. The matrix-logarithm reconstruction is
+an analytic proof, not one of those four Lean propositions. Nine primary
+and transitive source files and the toolchain are pinned by the receipt.
+
+This route now has a precise positive target: derive the equality of the
+actual prepared state with the Gibbs state of the actual owned heat, with
+its normalization, observable algebra, physical q,D,b,m readout and
+refinement. A protected zero mode would then remove the scalar ambiguity
+without a new selector. This is conditional reconstruction, not a new heat
+law or a theorem excluding every native F. T0--T3, all 44 dependency nodes,
+source/Ward, stationarity, curved roots, soundness/recovery and the original
+#310/#202/#317 terminal contracts remain open.
