@@ -62,7 +62,7 @@ least three complementary coordinates by the feedback rank bound, so
 six is the minimal total dimension for this test. Both stages
 retain a nonempty archive. Symbolic identities prove these formulas and
 the two universal legacy obstructions. Numerical pressure tests at three
-positive beta values retain all zero modes; eleven executed hostile checks
+positive beta values retain all zero modes; fourteen executed hostile checks
 replace printed-only rejections. BOOK_03's `H+J` action is kept distinct
 from BOOK_08's `beta^-1 log Z = H+J/beta`; their finite increments differ
 by `(1-1/beta) Delta J`. The old beta=1 example could not test this distinction.
@@ -90,6 +90,62 @@ derived. A P,Q,U realization of feedback does not supply the missing common
 preparation for heat, the joint q,D,b,m readout and actual refinement.
 The 319-control heat packet and its 23 Lean propositions are unchanged.
 Claims, books, supported Lean owners and all parent terminals are unchanged.
+
+The same realized rank step separates an additional pressure interface.
+BOOK_08 §08.49 defines the operator's volume derivative as the **finite**
+increment `dF=F_next-F`, then gives the endpoint resolvent reading
+`beta^-1 Tr((I-zF)^-1 z dF)`. This is a well-defined reading, but it is not
+in general the finite increment of the logdet price. On the principal
+golden pair above, put `x=z p^2` with `0<x<1`. On its newly active coordinate
+the initial feedback vanishes, so the initial and final resolvent readings,
+before the common beta factor, are `x` and `x/(1-x)`, whereas the exact
+loop-price increment is `-log(1-x)`. For every such x,
+
+\[
+ x < -\log(1-x) < \frac{x}{1-x},\qquad
+ -\log(1-x)-x > \frac{x^2}{2}.
+\]
+
+Proof: the derivatives of the lower gap after subtracting `x^2/2`, and
+of the upper gap, are respectively `x^2/(1-x)` and `x/(1-x)^2`.
+Both gaps vanish at zero and have positive derivative on `(0,1)`.
+These identities are checked symbolically; the actual six-coordinate
+P,Q,U pair checks both endpoint responses and rejects both as exact secants.
+At fixed beta,z,p the gap is nonzero and independent of any later mesh label.
+Its scaling under a genuinely derived varying normalization is a separate
+question; this calculation does not exclude such a law.
+Indeed on the nested fixed-golden subclass, adding k active channels gives
+the two quantities `k*x` and `k*(-log(1-x))`. The single factor
+`-log(1-x)/x` reconciles this **feedback-only** reading for every k.
+Thus the discrepancy is not a no-go for the allowed fixed-calibration
+route. Extending that factor to the whole coupled heat/feedback action,
+its physical probes and refinement still requires the common preparation.
+
+For general symmetric F,F_next with positive resolvents the exact identity is
+
+\[
+ J(F_{\rm next})-J(F)
+ =\int_0^1 z\operatorname{Tr}
+ \bigl[(I-z(F+t\,dF))^{-1}dF\bigr]dt.
+\]
+
+It follows by Jacobi differentiation and the fundamental theorem of calculus;
+the resolvent path stays positive by convexity. No commutativity premise is
+needed. This algebraic interpolation is **not** an admitted native path.
+For the displayed projectors its middle coordinate is t, with idempotence
+defect `t^2-t`. More generally a continuous projector path has locally
+constant integer trace-rank, so it cannot join these different ranks.
+The checker explicitly rejects the midpoint as a projector preparation.
+
+Thus a derivation through §08.49 must distinguish its endpoint pressure
+observable, the genuine finite rank contrast and a differential along an
+actually admitted fixed-rank field variation. Neither the book's definition
+nor this obstruction supplies that field law. No equation of motion is
+replaced, and no stationarity across all refinement levels is assumed.
+In particular an unbounded stationary-rank-tower obstruction would require
+the additional, unproved premise that every refinement preserves the full
+bootstrap price. It is not asserted here. This remains the same finite-input
+repair; no native preparation, source, T0 or physical terminal is closed.
 
 The [intrinsic-source computation](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md)
 now proves the complete joint cotangent normal form and zero first variation
