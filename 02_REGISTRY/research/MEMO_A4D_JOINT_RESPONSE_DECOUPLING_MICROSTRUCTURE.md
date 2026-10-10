@@ -3245,3 +3245,33 @@ selector, thermal law or desired source is installed. T0, all source/Ward,
 contrast/native stationarity, curved-root and soundness/recovery obligations
 and all forty-four contracts and original #310/#202/#317 terminals remain
 open in their existing scopes.
+
+## Literal code-price resolution and the history-sum boundary (2026-10-10)
+
+[The code-price proof](A4D_NATIVE_CODE_PRICE_RESOLUTION.md) tests the literal
+minimal-code reading of BOOK_03's separate geometry sum. For every state
+space, graph grammar, readout and admitted endpoint pair whose price is
+`nu_h A_h + b_h`, with natural-valued A_h and a common level offset, the
+calibrated half-contrast lies on the lattice `|nu_h/(2a)| Z`. A fixed unit
+cannot approximate a nonzero physical contrast of order h^(1/3) within
+O(h), even with O(h) recording/refinement errors. Coverage of all fixed
+scalar probes forces `|nu_h|=O(h)`, without assuming uniform probe
+constants or measurable preparation choices. The full-class normalization
+proof is analytic; nine finite propositions are compiled with the literal
+Phi owner rebuilt, and 185 exact controls pass.
+
+Neither a lower bound on individual action costs nor the full bootstrap
+action implies this integer-price premise. Rounding on a fine lattice is
+not an admitted native preparation. The golden-history control retains
+every word and gives event price `-log_phi(1-p^(2n))` tending to zero;
+logs of history sums, full heat/logdet prices and independently derived
+shrinking units remain outside the fixed-unit obstruction. No unit is
+chosen. The nonzero physical warp response is an off-shell probe control,
+not a sourced native solution or an endpoint-admission theorem.
+
+This closes the direct fixed-unit code-length substitution in the stated
+interface; it does not identify the geometry sum with the heat/feedback
+price or derive the common native preparation. That preparation, its
+complete price/readout/refinement relation, own source/Ward, stationarity,
+curved roots and soundness/recovery remain required. T0--T3, all 44 node
+contracts and the original #310/#202/#317 terminals stay open.
