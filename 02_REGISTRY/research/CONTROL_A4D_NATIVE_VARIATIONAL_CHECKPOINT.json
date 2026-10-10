@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "853643c1744c4c5f2eeb48955f2d74ea234e51b08be3c16d8b2ee086a6390a2f",
-      "source_blob": "40933c9e9b88b34583820765f091cdaf2bcc37f2"
+      "sha256": "8b4794d3d83881ce5018424ddb726167f01fea861eb1b52ff384bfee8cfdc01b",
+      "source_blob": "7c6cf11c95b37cd0873a440ba42229caf52cbbcb"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1536,6 +1536,26 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_output.txt",
       "sha256": "3960ecec3f44e77cd03fa2a7b189e7bfd3de81e8422d9462c490aa234be6edda",
       "source_blob": "cc23c83f155c238d6e490ac86c4eda17137277ab"
+    },
+    {
+      "path": "04_CERTIFICATES/vp_verifiable_registration_metric_closure.py",
+      "sha256": "73d3fddec9a3ace5b9f2b9e25b20d3b70eeb49da682684ada3139fceb79cbbf5",
+      "source_blob": "621d1d5247d1d3bfbb67b4cdff3f3e691879ffca"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md",
+      "sha256": "1f8f83c719bcb415ffd3b28ccce3cfe04315f91975f32b235c79292c96412fcc",
+      "source_blob": "3319eab05c3505e67ffa4ae507326c27080d8393"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_check.py",
+      "sha256": "709731bd22011c2834cbd14a90dea82ee1a210efcd2f285872d004154c90fca0",
+      "source_blob": "11bf1372fb5f2f5cdff17b70f23875ff685c58dc"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_certificate.json",
+      "sha256": "c31777f43a4a1dfc8e15defb6a05c435270e8eba1b74642bc99e0ff79dec76b1",
+      "source_blob": "fbbf832bc9682cecaefb52ea268f797a63430602"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1580,7 +1600,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "ede76d7b716034475de200085432492e44e93814",
+    "control_input_head": "407be0a32b47c884f57935d984bfc48917a65ebd",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
@@ -1667,7 +1687,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+    "observed_source_strategy_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1718,7 +1738,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 300,
+    "prior_scientific_artifacts_byte_unchanged_count": 306,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1752,7 +1772,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+    "scientific_source_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2110,13 +2130,40 @@
       "prior_artifacts_unchanged": 300,
       "prior_artifacts_updated": 1,
       "new_artifacts": 6
+    },
+    "scene_AF_metric_repair": {
+      "source_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+      "input_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+      "control_input_head": "407be0a32b47c884f57935d984bfc48917a65ebd",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement",
+      "repaired_primary": "04_CERTIFICATES/vp_verifiable_registration_metric_closure.py",
+      "carrier": "A_n=End((C^33)^tensor_n)^(S9 x S11 x S13), a->a tensor I33, normalized matrix trace and partial trace",
+      "false_old_bound": "2/(b^(n+1)-b^n) times commutator norm fails on the actual tower, including b=2 and b=phi",
+      "corrected_bound": "||a-E_n a|| <= 33 b^(1-n)/(b-1)^2 ||[D_b,L_a]|| for every fixed b>1",
+      "result": "The declared scene-register AF operator metrizes the weak-star state topology. The all-level module-compression proof repairs the false old bound, retaining every archive sector and the scalar zero mode.",
+      "sharpness": "Factor 33 is sharp for the one-step conditional-expectation inequality, not claimed optimal for the final tail estimate.",
+      "proof_status": "ANALYTIC_ALL_LEVEL_OPERATOR_AND_TOPOLOGY_PROOF_NOT_LEAN",
+      "new_Lean_propositions": 0,
+      "exact_controls": 195,
+      "mathematical_mutations_rejected": 7,
+      "false_scope_ledgers_rejected": 17,
+      "GNS_normalized_trace_does_not_replace_bootstrap_operator_trace": true,
+      "scale_temperature_physical_mesh_or_preparation_selected": false,
+      "physical_q_D_b_m_readout_or_common_price_preparation_constructed": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 311,
+      "prior_artifacts_unchanged": 306,
+      "prior_artifacts_updated": 1,
+      "new_intake_entries": 4
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+  "previous_source_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2195,11 +2242,12 @@
     "Continuation of the same positive geometric Hodge packet: all ten constant-metric heat covector slots are derived from the full weighted CAR Fourier square. At beta=log(2), the flat Q=diag(4,1/4,1,1) has a traceless derivative >1/20000 uniformly in L. The exact equal-volume linear pair has heat half contrast >=epsilon/2500000, unchanged by any common volume-only term. Four new genuine finite shape-derivative propositions compile, making 23 in the capsule; 319 exact controls and 22 false-ledger rejections pass. The full operator/metric binding and all-L estimates are analytic; local metric/link/matter source, native Lorentz admission, temperature/normalization and every terminal remain open.",
     "Repair of the primary finite bootstrap/rank-step certificate: both former hand-entered feedbacks are impossible for their supplied projections. Full PQU and golden active compression are now checked at both principal stages on the minimal six-coordinate test carrier. Exact determinant identities distinguish a rank-only opposite-sign transition that exits the golden class. Eleven executed negative controls and five semantic mutations protect the finite algebra, full trace and beta normalization. Supplied heat profiles and projector transitions are not derived native laws; T0-T3 and all physical/parent obligations remain open.",
     "The existing primary rank certificate now distinguishes exact finite logdet contrasts from both endpoint resolvent responses. On realized nested golden steps x < -log(1-x) < x/(1-x), with left gap > x^2/2. Interpolating the projector loses idempotence; a continuous projector path cannot change rank. A positive control preserves the single fixed feedback-only calibration -log(1-x)/x for one- and two-channel additions. This is not a no-go for fixed calibration, nor a native preparation or action replacement. Fourteen negative controls and eight semantic mutations pass; all earlier scopes and terminals remain open.",
-    "The literal minimal-code price route is bounded on the complete stated integer-price interface. All fixed scalar probes with a nonzero physical first response require an own code unit O(h); a fixed unit fails. The all-probe theorem has an analytic countable-cover proof, not a finite-sample extrapolation. Nine finite propositions are compiled with literal Phi rebuilt, 185 exact controls pass, six mathematical mutations and eighteen false scope ledgers are rejected. The action lower bound alone does not imply integrality. Golden history log-sums and independently derived shrinking units are preserved exceptions; no own preparation, source, stationarity or parent closure is inferred."
+    "The literal minimal-code price route is bounded on the complete stated integer-price interface. All fixed scalar probes with a nonzero physical first response require an own code unit O(h); a fixed unit fails. The all-probe theorem has an analytic countable-cover proof, not a finite-sample extrapolation. Nine finite propositions are compiled with literal Phi rebuilt, 185 exact controls pass, six mathematical mutations and eighteen false scope ledgers are rejected. The action lower bound alone does not imply integrality. Golden history log-sums and independently derived shrinking units are preserved exceptions; no own preparation, source, stationarity or parent closure is inferred.",
+    "The actual noncommutative 33-dimensional scene-register AF refinement now has a proved all-level metric tail estimate. Its old constant-two certificate assertion has an exact native counterexample; the repaired bound retains all archive sectors, uses full commutator module compression and proves weak-star metrizability for every fixed b>1. The full proof is analytic, with 195 exact controls, seven rejected mathematical mutations and seventeen false scope ledgers. No physical mesh, scale, common full-price preparation, source or T0 closure is inferred; normalized GNS trace does not replace the bootstrap operator heat trace."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+  "source_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+  "source_parent": "812abc87da9c494d14d4b8549b2b219b88c60f86",
   "source_pr": 310
 }

@@ -1,0 +1,108 @@
+{
+  "actual_composition_owner_dimensions": {
+    "1": 12,
+    "2": 309
+  },
+  "analytic_proof": "02_REGISTRY/research/A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md",
+  "checks": {
+    "Bell_normalized_partial_trace": 3,
+    "Dirac_retains_scalar_zero_mode": 3,
+    "all_three_archive_sectors_retained": 1,
+    "complete_scene_permutation_generators": 1,
+    "correct_bound_survives_first_level_counterexample": 1,
+    "correct_register_bound_dominates_finite_tail": 24,
+    "correct_register_bound_equals_analytic_constant": 24,
+    "exact_geometric_tail_identity": 24,
+    "full_commutator_rank_two_trace": 3,
+    "full_commutator_singular_value_polynomial": 3,
+    "full_first_level_GNS_dimension": 1,
+    "full_scene_Bell_normalization": 1,
+    "full_scene_Bell_vector_fixed_by_native_group": 30,
+    "late_register_counterexample_same_violation": 5,
+    "materialized_Bell_projection": 2,
+    "native_zonal_projection": 1,
+    "normalized_native_scene_trace": 1,
+    "observable_is_GNS_selfadjoint_projection": 1,
+    "observable_trace_is_scene_trace_not_algebra_dimension": 1,
+    "old_bound_also_fails_at_golden_scale": 1,
+    "old_bound_exact_factor_two_violation": 1,
+    "old_constant_two_bound_is_false": 1,
+    "positive_GNS_pairing": 1,
+    "register_norm_factor_attains_equality": 3,
+    "scalar_conditional_expectation_is_projection": 1,
+    "smaller_sqrt_dimension_factor_fails": 3,
+    "uniform_refinement_ratio": 24,
+    "zonal_projection_fixed_by_native_group": 30
+  },
+  "exact_controls": 195,
+  "input_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+  "inputs_sha256": {
+    "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+    "02_REGISTRY/research/A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md": "1f8f83c719bcb415ffd3b28ccce3cfe04315f91975f32b235c79292c96412fcc",
+    "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_check.py": "709731bd22011c2834cbd14a90dea82ee1a210efcd2f285872d004154c90fca0",
+    "04_CERTIFICATES/vp_compositional_closure_spectral_limit.py": "bd5598759577a49efe7a6c1b74113cde4176cd7d7c53002895588d78f659f67d",
+    "04_CERTIFICATES/vp_verifiable_registration_metric_closure.py": "73d3fddec9a3ace5b9f2b9e25b20d3b70eeb49da682684ada3139fceb79cbbf5"
+  },
+  "mathematical_mutations_rejected": [
+    {
+      "name": "algebra_dimension_substituted_for_scene_trace",
+      "rejection": "AssertionError: all_three_archive_sectors_retained"
+    },
+    {
+      "name": "middle_archive_deleted",
+      "rejection": "AssertionError: all_three_archive_sectors_retained"
+    },
+    {
+      "name": "variance_factor_discarded",
+      "rejection": "AssertionError: full_commutator_singular_value_polynomial"
+    },
+    {
+      "name": "unnormalized_partial_trace",
+      "rejection": "AssertionError: Bell_normalized_partial_trace"
+    },
+    {
+      "name": "false_sqrt_register_constant",
+      "rejection": "AssertionError: register_norm_factor_attains_equality"
+    },
+    {
+      "name": "geometric_tail_factor_b_lost",
+      "rejection": "AssertionError: correct_register_bound_dominates_finite_tail"
+    },
+    {
+      "name": "scalar_zero_mode_erased",
+      "rejection": "AssertionError: full_commutator_rank_two_trace"
+    }
+  ],
+  "native_F_or_positive_GR_derived": false,
+  "new_Lean_propositions": 0,
+  "old_bound_counterexample": {
+    "b": "2",
+    "claimed_right_squared": "512/1089",
+    "full_commutator_norm_squared": "128/1089",
+    "left_squared": "1024/1089",
+    "observable_trace": "1/33",
+    "squared_violation_ratio": "2"
+  },
+  "original_primary_blob": "383c449af69e8005b329e515baa9c344ea9d0142",
+  "original_primary_sha256": "203e112d202e521606fb32b8bb0d451d445b2adce3c978d4f479556f8c764a18",
+  "scope": {
+    "T0_T3_GR_global_or_original_parent_terminals_closed": false,
+    "all_archive_sectors_and_scalar_zero_mode_retained": true,
+    "corrected_tail_bound": "33*b^(1-n)/(b-1)^2 * norm([D_b,L_a])",
+    "first_algebra_GNS_dimension": 12,
+    "four_dimensional_field_readout_or_own_full_price_preparation_derived": false,
+    "interface": "FULL_SCENE_DIAGONAL_GROUP_FIXED_POINT_TENSOR_REGISTER_AF_TOWER",
+    "old_constant_two_operator_tail_bound_valid": false,
+    "one_step_norm_factor_33_is_sharp_in_the_actual_second_algebra": true,
+    "operator_bound_and_weak_star_topology_for_all_fixed_b_gt_one": "ANALYTIC_PROOF_NOT_LEAN_OR_FINITE_SAMPLE_EXTRAPOLATION",
+    "other_registration_claims_proved_by_the_retained_count_arithmetic": false,
+    "own_source_Ward_or_stationarity_derived": false,
+    "pairing": "NORMALIZED_33_DIMENSIONAL_SCENE_TRACE",
+    "register_refinement_identified_with_archiveProjection": false,
+    "same_bound_claimed_for_arbitrary_AF_filtrations": false,
+    "scale_b_or_temperature_selected": false,
+    "scene_size": 33,
+    "spectral_resolution_identified_with_physical_mesh_h": false
+  },
+  "status": "PASS_NATIVE_SCENE_AF_METRIC_REFINEMENT"
+}

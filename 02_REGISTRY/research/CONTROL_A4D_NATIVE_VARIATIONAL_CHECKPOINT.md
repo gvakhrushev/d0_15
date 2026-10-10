@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`812abc87da9c494d14d4b8549b2b219b88c60f86`, following
-`f55bea04beed7aab18141e4284e49fe66cd397ed`.
+`43fc7657d88d50f390b72b52e86317e98e1f5974`, following
+`812abc87da9c494d14d4b8549b2b219b88c60f86`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -12,9 +12,10 @@ The [critical-plan entry](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md) now gives
 one current execution order and labels the older sequences as history.
 The obsolete G0b-next-step introduction has been replaced by the existing
 T0 common-preparation obligation, its evidence requirements and downstream
-dependencies. This is an organizational repair: all 301 scientific artifacts,
-the SOURCE SHA, the detailed tangent plan and all 44 node dictionaries are
-unchanged. No native-preparation theorem or mathematical status is added.
+dependencies. That earlier organizational repair preserved its then-current
+301 scientific artifacts and SOURCE SHA. Subsequent scientific intakes are
+recorded below. The detailed tangent plan and all 44 node dictionaries
+remain unchanged; no native-preparation theorem is added.
 
 Current execution order, revalidated 2026-10-10:
 [The tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
@@ -40,9 +41,10 @@ scope ledgers. The weighted Fourier/metric binding, full covector and
 uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
-The intake has 307 artifacts byte-identical to verified SOURCE
-`812abc87da9c494d14d4b8549b2b219b88c60f86`: six code-price proof/certificate artifacts added,
-the source memo updated, and 300 earlier artifacts unchanged. No new physical action, role or preparation law is introduced.
+The intake has 311 artifacts byte-identical to verified SOURCE
+`43fc7657d88d50f390b72b52e86317e98e1f5974`: three AF proof/replay/ledger files and the
+repaired registered metric certificate enter the intake; the source memo
+is updated and 306 earlier artifacts are unchanged. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
@@ -95,6 +97,29 @@ rounding nor the off-shell physical warp control supplies native
 preparation or sourced solutions. No unit is chosen and no T0 closure
 is inferred. A geometry-sum route still needs its own admitted history
 family and price/readout/refinement law before a source comparison.
+
+The [scene-register AF proof](A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md)
+now repairs an actual declared observable/refinement rule. The old
+constant-two operator tail estimate fails exactly on the native algebra,
+at b=2 and b=phi, with all scene/archive trace weights retained. The full
+tower instead satisfies
+
+`||a-E_n a|| <= 33 b^(1-n)/(b-1)^2 ||[D_b,L_a]||`.
+
+This proves weak-star state-space metrizability for every fixed b>1.
+The factor 33 is sharp for the one-step conditional-expectation estimate;
+no optimal final tail constant is claimed. The analytic all-level proof
+uses full commutator module compression. The registered certificate and
+research replay pass 195 exact controls, reject seven mathematical
+mutations and seventeen false scope ledgers. No new Lean theorem is claimed.
+
+This retains the noncommutative register algebra, every archive sector and
+the scalar zero mode. It does not identify register inclusion with
+archiveProjection, select b=phi, make b^(-n) a physical mesh, or produce a
+four-dimensional q,D,b,m readout. Its normalized GNS/partial trace does not
+replace the full bootstrap operator heat trace. Common price preparation,
+its source and native stationarity remain open. This is a proof repair,
+not a T0 closure or another compatible heat-family construction.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating

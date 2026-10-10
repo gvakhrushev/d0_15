@@ -728,9 +728,9 @@
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
-    "control_input_head": "ede76d7b716034475de200085432492e44e93814",
-    "published_scientific_input_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
-    "observed_source_strategy_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+    "control_input_head": "407be0a32b47c884f57935d984bfc48917a65ebd",
+    "published_scientific_input_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+    "observed_source_strategy_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+    "prepared_scientific_input_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -1356,6 +1356,33 @@
       "prior_artifacts_unchanged": 300,
       "prior_artifacts_updated": 1,
       "new_artifacts": 6
+    },
+    "scene_AF_metric_repair": {
+      "source_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+      "input_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+      "control_input_head": "407be0a32b47c884f57935d984bfc48917a65ebd",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement",
+      "repaired_primary": "04_CERTIFICATES/vp_verifiable_registration_metric_closure.py",
+      "carrier": "A_n=End((C^33)^tensor_n)^(S9 x S11 x S13), a->a tensor I33, normalized matrix trace and partial trace",
+      "false_old_bound": "2/(b^(n+1)-b^n) times commutator norm fails on the actual tower, including b=2 and b=phi",
+      "corrected_bound": "||a-E_n a|| <= 33 b^(1-n)/(b-1)^2 ||[D_b,L_a]|| for every fixed b>1",
+      "result": "The declared scene-register AF operator metrizes the weak-star state topology. The all-level module-compression proof repairs the false old bound, retaining every archive sector and the scalar zero mode.",
+      "sharpness": "Factor 33 is sharp for the one-step conditional-expectation inequality, not claimed optimal for the final tail estimate.",
+      "proof_status": "ANALYTIC_ALL_LEVEL_OPERATOR_AND_TOPOLOGY_PROOF_NOT_LEAN",
+      "new_Lean_propositions": 0,
+      "exact_controls": 195,
+      "mathematical_mutations_rejected": 7,
+      "false_scope_ledgers_rejected": 17,
+      "GNS_normalized_trace_does_not_replace_bootstrap_operator_trace": true,
+      "scale_temperature_physical_mesh_or_preparation_selected": false,
+      "physical_q_D_b_m_readout_or_common_price_preparation_constructed": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 311,
+      "prior_artifacts_unchanged": 306,
+      "prior_artifacts_updated": 1,
+      "new_intake_entries": 4
     }
   }
 }
