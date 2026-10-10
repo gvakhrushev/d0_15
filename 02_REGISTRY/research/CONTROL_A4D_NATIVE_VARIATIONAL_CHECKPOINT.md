@@ -49,6 +49,19 @@ soundness/recovery and physical limits remain open. The unchanged 292
 preflight controls check their original joint chart; the new SOURCE
 packet has its own certificate.
 
+The subsequent planning revision consumes the existing full-price replication
+identity before any source-component comparison. It requires the actual common
+preparation and transition, an owned native normalization, and the complete
+heat/feedback/pairing/matter balance. Physical probe normalization h^2 cannot
+be transferred to the native bootstrap merely by notation. The two-copy identity
+is used only under its actual hypotheses and is not asserted for the archive
+projection. This revision changes no scientific intake: all 294 artifacts remain
+byte-identical to SOURCE. It proves no new native preparation, source, root,
+whole-core no-go or parent terminal; the 292 preflight controls retain their
+original scope. SOURCE CI 38039437978 and preceding CONTROL CI 38040401382
+passed at their respective pinned heads; this revision needs its own CI and
+CONTROL review.
+
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
 next research decision to the complete native-system/derivability packet

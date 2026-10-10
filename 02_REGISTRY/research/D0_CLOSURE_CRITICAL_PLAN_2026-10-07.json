@@ -727,8 +727,8 @@
     "date": "2026-10-10",
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "274d0bb11da9631fbe3726e5e785c260c2b11e2cdea5a9bbb0ae55acf073f1f2",
-    "control_input_head": "ee22ee7cce3c4c311daa2c759eee4d54d16ae14d",
+    "plan_sha256": "121f72e4e3a57b2a182b2be9de62ae002f2ea134ce90fb5cbf6a3dfc1750ab1a",
+    "control_input_head": "59b31d6ac84bf479808f0fc33d36ea4fac1c9ba3",
     "published_scientific_input_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
     "observed_source_strategy_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
     "strategy_document_is_not_a_source_theorem": true,
@@ -780,7 +780,7 @@
     "preflight": {
       "checker": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
       "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-      "certificate_sha256": "cc98004761db62234b03632ad97d9c6ab47fff3d728255de1af19abc15a57d02",
+      "certificate_sha256": "c3002f9a3353c6450e380881d24b3c236baed7a47c7a41a9380cf5c067503e04",
       "exact_controls": 292,
       "finite_star": {
         "sites": 5,
@@ -799,13 +799,13 @@
       "native_operator_map_derived": false,
       "native_source_derived": false,
       "source_equals_rho0": false,
-      "plan_sha256": "274d0bb11da9631fbe3726e5e785c260c2b11e2cdea5a9bbb0ae55acf073f1f2"
+      "plan_sha256": "121f72e4e3a57b2a182b2be9de62ae002f2ea134ce90fb5cbf6a3dfc1750ab1a"
     },
     "conditional_calculus_is_not_T0": true,
     "operation_admission_only_when_used_by_specific_native_preparation_or_variation": true,
     "longer_word_search_and_new_role_census_on_active_path": false,
     "archive_disappears_only_after_full_intrinsic_annihilator_proof": true,
-    "next_proof": "Derive an actual common native preparation input for newly available observations, full Delta/P/U/G and q,D,b,m, with its allowed changes, budget and real transitions. Persistence, some finite factorization and a scalar phi scale law alone do not supply this. Then prove full-price source/contrast descent and probe coverage on the real admitted family. Retain relational preparations and genuinely discrete paired probes, the full archive and all metric/link/matter directions. No new action, desired stationarity gate, selector or archive-index/mesh calibration.",
+    "next_proof": "Derive one actual common native preparation with its real transition. Bind the complete price and its owned normalization; check interlevel heat/feedback/pairing/matter balance on the same lifted probes before computing the rho0 component comparison. Then derive the represented observations and full q,D,b,m readout, admissible metric/link/matter probe coverage, and full-price differential or finite-contrast descent on readout fibers. No new action, selector, fitted heat rule, imposed stationarity or arbitrary h-dependent calibration. This uses the existing replication theorem only when its hypotheses are actually established.",
     "acceptance_requires_same_packet_source_pins_replay_and_current_head_CI": true,
     "closed_G0_G1_G2_G3_G4_nodes": [],
     "constrained_price_source": {
@@ -1042,6 +1042,24 @@
       "all_condensed_readouts_or_noncommutative_algebras_or_Gamma_F_excluded": false,
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "next_arrow": "Derive an actual common native preparation input for newly available observations, full Delta/P/U/G and q,D,b,m, with its allowed changes, budget and real transitions. Persistence, some finite factorization and a scalar phi scale law alone do not supply this. Then prove full-price source/contrast descent and probe coverage on the real admitted family."
+    },
+    "full_price_transition_precheck": {
+      "date": "2026-10-10",
+      "status": "EXECUTION_ORDER_ONLY_NO_NEW_NATIVE_THEOREM",
+      "control_input_head": "59b31d6ac84bf479808f0fc33d36ea4fac1c9ba3",
+      "scientific_source_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
+      "consumed_existing_proof": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "consumed_existing_proof_sha256": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
+      "check": "Derive the actual joint preparation and transition. Type the native price and its owned normalization, then check the complete interlevel heat/feedback/pairing/matter balance before the source-component comparison.",
+      "literal_replication_scope": "Two identical copies with fixed beta,z; H_plus=H+log(2)/beta and S_plus=2*S. Native admission of this replication is not asserted.",
+      "same_direction_two_level_stationarity": "dH+dS=0 and dH+2*dS=0 iff dH=dS=0.",
+      "changed_fine_heat_scope": "If feedback is genuinely doubled and coarse stationarity holds, fine stationarity iff dH_plus=2*dH; not a selected thermal law or gate.",
+      "physical_h_squared_normalization_is_not_automatically_native": true,
+      "actual_archive_transition_is_literal_replication_proved": false,
+      "new_preparation_source_or_whole_core_nogo_proved": false,
+      "new_scientific_artifacts": 0,
+      "source_artifact_count": 294,
+      "all_original_contracts_statuses_and_parent_terminals_unchanged": true
     }
   }
 }

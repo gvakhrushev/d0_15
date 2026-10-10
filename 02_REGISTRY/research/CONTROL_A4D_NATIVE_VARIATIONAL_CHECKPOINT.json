@@ -1515,11 +1515,29 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "ee22ee7cce3c4c311daa2c759eee4d54d16ae14d",
+    "control_input_head": "59b31d6ac84bf479808f0fc33d36ea4fac1c9ba3",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-    "finite_preflight_certificate_sha256": "cc98004761db62234b03632ad97d9c6ab47fff3d728255de1af19abc15a57d02",
+    "finite_preflight_certificate_sha256": "c3002f9a3353c6450e380881d24b3c236baed7a47c7a41a9380cf5c067503e04",
     "finite_preflight_exact_controls": 292,
+    "full_price_transition_precheck": {
+      "actual_archive_transition_is_literal_replication_proved": false,
+      "all_original_contracts_statuses_and_parent_terminals_unchanged": true,
+      "changed_fine_heat_scope": "If feedback is genuinely doubled and coarse stationarity holds, fine stationarity iff dH_plus=2*dH; not a selected thermal law or gate.",
+      "check": "Derive the actual joint preparation and transition. Type the native price and its owned normalization, then check the complete interlevel heat/feedback/pairing/matter balance before the source-component comparison.",
+      "consumed_existing_proof": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "consumed_existing_proof_sha256": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
+      "control_input_head": "59b31d6ac84bf479808f0fc33d36ea4fac1c9ba3",
+      "date": "2026-10-10",
+      "literal_replication_scope": "Two identical copies with fixed beta,z; H_plus=H+log(2)/beta and S_plus=2*S. Native admission of this replication is not asserted.",
+      "new_preparation_source_or_whole_core_nogo_proved": false,
+      "new_scientific_artifacts": 0,
+      "physical_h_squared_normalization_is_not_automatically_native": true,
+      "same_direction_two_level_stationarity": "dH+dS=0 and dH+2*dS=0 iff dH=dS=0.",
+      "scientific_source_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
+      "source_artifact_count": 294,
+      "status": "EXECUTION_ORDER_ONLY_NO_NEW_NATIVE_THEOREM"
+    },
     "machine_contract": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
     "native_operator_map_or_source_claim_promoted": false,
     "native_preparation_revalidation": {
@@ -1633,9 +1651,9 @@
     },
     "parent_graph_and_terminals_unchanged": true,
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "274d0bb11da9631fbe3726e5e785c260c2b11e2cdea5a9bbb0ae55acf073f1f2",
+    "plan_sha256": "121f72e4e3a57b2a182b2be9de62ae002f2ea134ce90fb5cbf6a3dfc1750ab1a",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 286,
+    "prior_scientific_artifacts_byte_unchanged_count": 294,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1668,7 +1686,7 @@
       "status": "STRATEGY_CORRECTION_NOT_NEW_NATIVE_THEOREM",
       "supersedes_prior_graph_only_preparation_requirement": true
     },
-    "scientific_artifact_intake_and_source_SHA_unchanged": false,
+    "scientific_artifact_intake_and_source_SHA_unchanged": true,
     "scientific_source_head": "eeab0de21ee704794e291434e6ae0b65fdb360d6",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
