@@ -36,6 +36,8 @@ memory deletion, selector or action is installed. Slower convergence and
 O(h) action contrasts are not ruled out by the metric rate. Full Gamma/F,
 source/Ward, curved roots, soundness/recovery and GR remain open.
 
+The current plan correction removes premature uniqueness and finite smoothness demands. Native preparations Omega and their physical readout R may define a relation rather than one operator function F(X). In a regular differential route prove full price-covector vertical annihilation, complete probe coverage and equal-readout cross-fibre agreement. In an actually discrete route derive admitted paired finite probes, quantitative readout errors and equal-probe contrast agreement, preserving the original fixed-calibration O(h) transfer and native refinement. Genuine internal-shell equations and nonempty solutions remain separate when used. This is strategy metadata, not a new native preparation/source theorem. All 288 scientific artifacts, 44 contracts and parent terminals are unchanged. The original 292-control preflight still checks its existing joint chart only. No action, selector, source law or vanishing-contrast gate is installed.
+
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
 next research decision to the complete native-system/derivability packet
