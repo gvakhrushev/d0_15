@@ -8,6 +8,13 @@ Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
+The [critical-plan entry](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md) now gives
+one current execution order and labels the older sequences as history.
+The obsolete G0b-next-step introduction has been replaced by the existing
+T0 common-preparation obligation, its evidence requirements and downstream
+dependencies. This is an organizational repair: all 301 scientific artifacts,
+the SOURCE SHA, the detailed tangent plan and all 44 node dictionaries are
+unchanged. No native-preparation theorem or mathematical status is added.
 
 Current execution order, revalidated 2026-10-10:
 [The tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)

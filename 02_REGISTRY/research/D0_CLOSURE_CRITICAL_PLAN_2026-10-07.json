@@ -1317,6 +1317,20 @@
       "scientific_artifact_count": 301,
       "prior_artifacts_unchanged": 299,
       "prior_artifacts_updated": 2
+    },
+    "active_entry_repair": {
+      "date": "2026-10-10",
+      "control_input_head": "08a18735f207b8a60a8c3ce3c49f8aa22c37b1db",
+      "source_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+      "entry": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md",
+      "entry_sha256": "9ab029754d1cc49b38915657cc806f6b12a7a4ccd911b1bb459b98c04f946a19",
+      "reason": "The top-level entry still presented the superseded G0b next step; current T0 ordering was buried in the detailed plan.",
+      "change": "One current entry with common native preparation, complete price/refinement, readout descent and all downstream GR obligations; older sequences explicitly marked as history.",
+      "detailed_tangent_plan_unchanged": true,
+      "scientific_artifacts_unchanged": 301,
+      "all_44_node_dictionaries_unchanged": true,
+      "native_T0_T3_or_GR_progress": false,
+      "new_tasks_branches_physical_assumptions_or_self_merge": false
     }
   }
 }
