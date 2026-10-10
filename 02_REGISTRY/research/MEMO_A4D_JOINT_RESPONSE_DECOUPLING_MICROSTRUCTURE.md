@@ -5,6 +5,35 @@ Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
 Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/pull/322).
+The [AF trace/preparation boundary](A4D_NATIVE_AF_TRACE_PREPARATION.md)
+now proves that all-level nonnegative compatibility forces the existing
+golden trace; no Perron eigenprofile or ratio is assumed. Finite-horizon
+trace uncertainty has a complete interval and bound `2^(-r)`. That bound
+is not a physical action error. A forced trace on the represented algebra
+does not fix a full GNS density: the complete affine extension fiber has
+dimension `d^2-d`. An explicit full faithful family keeps every direction,
+the same protected constant zero vector and internal coordinate covariance,
+yet its ground-zero Gibbs reconstruction has price `-log(lambda)/beta`.
+This is state-extension freedom, not a free scalar heat shift. It is not
+declared native, and visible trace compatibility does not supply full
+density refinement. Normalized isometric compression itself excludes
+faithful mass in the new complement. Sixteen Lean propositions and 1824
+exact controls verify the stated boundary; nine math mutants and twenty-one
+false scope ledgers are rejected. The remaining native law must prepare
+the relevant full state/price data and its refinement. T0 and all physical
+and original-parent terminals remain open.
+
+The same full state interface has a stronger terminal. Every faithful
+state with the fixed observable trace and simple cyclic ground vector
+admits the curve `(1-s)*sigma+s*|Omega><Omega|`. It preserves those
+conditions and all modes, but has thermal price derivative
+`-(1-lambda)/(beta*lambda)<0`. Thus the entire stated thermal class has
+no stationary point or finite minimizer; its zero infimum is reached only
+at the excluded pure-state boundary. Covariance does not remove this
+direction. The conclusion extends to the complete bootstrap only when
+its other price terms are fixed in the stated interface. No such curve
+with fixed feedback/matter is asserted to be natively admitted.
+
 The [golden cost refinement](A4D_NATIVE_GOLDEN_COST_REFINEMENT.md) now
 constructs the previously generic trace-preserving-inclusion input from
 the existing detector cylinder measure. Its complete accumulated-cost

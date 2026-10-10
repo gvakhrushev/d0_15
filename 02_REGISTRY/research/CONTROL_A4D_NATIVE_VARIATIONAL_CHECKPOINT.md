@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`abe5d0677fb68396e824c4894fce7d1254b979b2`, following
-`123d9e969ec56705b4b485adb59a36c19f5a8797`.
+`833372049d1cbde14f51bcbc3ca06bb017025cb8`, following
+`abe5d0677fb68396e824c4894fce7d1254b979b2`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -41,11 +41,11 @@ scope ledgers. The weighted Fourier/metric binding, full covector and
 uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
-The intake has 326 artifacts byte-identical to verified SOURCE
-`abe5d0677fb68396e824c4894fce7d1254b979b2`: six golden-cost/Fibonacci refinement files are added
-and the source memo is updated; 319 prior artifacts are unchanged.
-The golden/Hodge state-separation, modular reconstruction, scene-AF proof
-and every earlier certificate retain their published bytes. No new physical action, role or preparation law is introduced.
+The intake has 332 artifacts byte-identical to verified SOURCE
+`833372049d1cbde14f51bcbc3ca06bb017025cb8`: six AF trace/full-preparation files are added and the
+source memo is updated; 325 prior artifacts are unchanged. The actual
+golden-cost refinement, state-separation, modular reconstruction and
+every earlier certificate retain their published bytes. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
@@ -224,6 +224,38 @@ heat law, physical operation admission, clock and q,D,b,m readout remain
 to be derived. The AF trace is not substituted into the bootstrap operator
 trace. The prior tensor-state separation is not applied to these different
 cost cuts. T0-T3 and the original parent terminals remain open.
+
+[The AF trace/full-preparation boundary](A4D_NATIVE_AF_TRACE_PREPARATION.md)
+now removes the supplied Perron-profile premise: all-level nonnegative
+trace compatibility on the actual inclusion forces the golden trace.
+The complete finite-horizon interval gives a trace-state uncertainty bound
+of `2^(-r)`, on the defining representation, without claiming an action
+error estimate. The trace weights have no remaining parameter.
+
+On the full GNS carrier, however, that trace fixes only two right partial
+traces. Its complete faithful density fiber has Hermitian affine dimension
+`d^2-d`. A full family preserves the same constant zero vector, every
+complementary direction and internal coordinate covariance, while its
+ground-zero Gibbs price is `-log(lambda)/beta`. Thus positivity and a
+protected zero do not make the observable trace a complete preparation.
+The family is not declared native, and its visible trace compatibility
+does not establish full density refinement. Normalized compression along
+the actual isometry cannot retain faithful mass in the new complement.
+
+At actual levels n>=2, every faithful full density in this fiber with the
+simple cyclic ground vector admits `(1-s)*sigma+s*|Omega><Omega|`.
+All conditions and all modes are retained, while the price derivative is
+`-(1-lambda)/(beta*lambda)<0`. Thus the entire stated thermal class has
+no stationary point or finite minimum; its zero infimum lies at an
+excluded pure-state boundary. This is not only an example family.
+The complete bootstrap inherits the descent only when its other terms
+are fixed. Native admission of that direction has not been derived.
+
+Sixteen Lean propositions, 1824 exact controls, nine mathematical mutants
+and twenty-one false ledgers pass. The full matrix-state fiber, Gibbs and
+matrix descent arguments are analytic. The remaining law must prepare the actual full
+state or relevant weaker price data with its own retained refinement;
+no state selector or physical terminal is supplied by this result.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating
