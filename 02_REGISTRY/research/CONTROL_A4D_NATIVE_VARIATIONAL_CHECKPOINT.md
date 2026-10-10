@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`eb9594d2d06572164c26bd561e60e9faf4f830af`, following
-`8207558224ee7c419d58f1f468d01b1187e21951`.
+`123d9e969ec56705b4b485adb59a36c19f5a8797`, following
+`eb9594d2d06572164c26bd561e60e9faf4f830af`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -41,11 +41,11 @@ scope ledgers. The weighted Fourier/metric binding, full covector and
 uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
-The intake has 317 artifacts byte-identical to verified SOURCE
-`eb9594d2d06572164c26bd561e60e9faf4f830af`: six modular-preparation proof/certificate files
-are added and the source memo is updated; 310 prior artifacts are unchanged.
-The AF proof, its full phase/heat ledger and every earlier certificate retain
-their published bytes. No new physical action, role or preparation law is introduced.
+The intake has 320 artifacts byte-identical to verified SOURCE
+`123d9e969ec56705b4b485adb59a36c19f5a8797`: three golden/Hodge state-separation proof/certificate
+files are added and the source memo is updated; 316 prior artifacts are
+unchanged. The modular reconstruction, AF proof and every earlier
+certificate retain their published bytes. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
@@ -187,6 +187,25 @@ a hypothesis. Four Lean propositions, six standard-only axiom reports,
 nine source pins, 60 exact controls, seven mathematical mutants and sixteen
 false ledgers support this precise boundary. Matrix-log reconstruction is
 analytic. No native F, source/Ward, stationarity or GR closure is claimed.
+
+[The golden/Hodge state comparison](A4D_NATIVE_GOLDEN_HODGE_STATE_SEPARATION.md)
+now tests that identification against two actual inputs. A growing tensor
+factor of independent recorded golden states cannot converge in trace norm
+to the complete flat Hodge Gibbs state, for any level-dependent positive
+temperature, overall heat scale, independent ancillary density or unitary
+identification. The distance tends to one. The proof keeps all sixteen form
+components and works for noncommuting states. It uses the golden spectral
+window bound and the all-temperature Hodge thermal second moment <=10368;
+it is not a finite-rank or fixed-temperature extrapolation.
+
+The compared class is nonempty on cofinal L=2^ell with a mixed sixteen-state
+Fock ancilla. That already matches the leading multiplicity. General
+correlated preparations with a different readout spectrum remain possible,
+as does physical price transfer without full Gibbs-state identification.
+The analytic proof has 1418 exact controls, nine executed math mutants,
+sixteen false ledgers and 91 pinned inputs; no new Lean theorem is claimed.
+The full state-distance result is not an action-contrast error estimate.
+T0, own source/Ward, native stationarity and GR remain open.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating

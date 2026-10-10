@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "f51b9a269b4e8a512d8d7ad69a4c5d505d8390b2fd79ca10c809a98f887fe2d7",
-      "source_blob": "3a0a6075bca225bc2548b36598d4e36c7d804420"
+      "sha256": "ae8c05abeb227140a4ebc3cfb677bf60552b5f8ff1d449634f1bc3e09f1e4a20",
+      "source_blob": "f916744eac824e03ed45b3cea5d5651d87db119e"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1586,6 +1586,21 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_certificate.json",
       "sha256": "789ddf92dcc648106983e7584177c4097d794f0cfb65ee81f83eb36364028ef0",
       "source_blob": "be32c5225a812eeae92d7f24d692cb56ea64e84e"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_HODGE_STATE_SEPARATION.md",
+      "sha256": "7051b4b0bc961d606e1b30d5eb2ddabe92b0324e8ddf17cde29f2833c9368cfe",
+      "source_blob": "2836ba4a187636f59818018bb215536756f83947"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_hodge_state_separation_check.py",
+      "sha256": "93a114fbec086b8cf8ac31dd3979e4b7513bc594b796e3af60a2994c7c8b8a36",
+      "source_blob": "ed710a670d62ee46613d59864ae3ddaed421d0fc"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_golden_hodge_state_separation_certificate.json",
+      "sha256": "deaa5532c14d06fd78779091b3335d4d963560613fd813f68c73243098ef55c6",
+      "source_blob": "31b2b8334d56096b2a1fe239b69d7d5135eda05a"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1630,7 +1645,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "fce14fed99b5a2f71f7568d76bc72b883947dd00",
+    "control_input_head": "c51571468afd2e428bcc86b9a9e7c958f3c2c5ef",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
@@ -1717,7 +1732,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
+    "observed_source_strategy_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1768,7 +1783,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 310,
+    "prior_scientific_artifacts_byte_unchanged_count": 316,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1802,7 +1817,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
+    "scientific_source_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2296,13 +2311,46 @@
       "prior_artifacts_unchanged": 310,
       "prior_artifacts_updated": 1,
       "new_artifacts": 6
+    },
+    "golden_Hodge_state_separation": {
+      "source_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+      "input_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
+      "control_input_head": "c51571468afd2e428bcc86b9a9e7c958f3c2c5ef",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_HODGE_STATE_SEPARATION.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_golden_hodge_state_separation",
+      "actual_inputs": "Recorded golden cylinder density and the complete flat counting Hodge/CAR square",
+      "complete_state_class": "Every V(tau tensor diag(p,p^2)^tensor m)V* with arbitrary finite independent ancillary density and dimension-compatible unitary",
+      "temperature_and_scale_class": "Every beta_L>0 and every positive overall heat scale; scalar shifts cancel in the normalized state",
+      "theorem": "Trace distance tends to one as m tends to infinity, uniformly over all allowed temperatures, ancillas and unitary identifications",
+      "proof_status": "ANALYTIC_ALL_M_ALL_TEMPERATURE_PROJECTION_ARGUMENT_NOT_LEAN",
+      "golden_log_window_mass_bound": "2*(W/log(phi)+1)/sqrt(m)",
+      "full_Hodge_heat_doubling_bound": "Z(beta/2)/Z(beta)<=6^4 for all L>=2 and beta>0",
+      "thermal_second_moment_bound": 10368,
+      "trace_distance_lower_bound": "1-10368/R^2-2*exp(-A)-2*((R+2*A)/log(phi)+1)/sqrt(m)",
+      "noncommuting_states_and_all_sixteen_Fock_components_retained": true,
+      "nonempty_cofinal_control": "L=2^ell, m=4*ell, tau=I_16/16, ell>=2",
+      "finite_ground_multiplicity_mismatch_is_not_the_proof": true,
+      "exact_controls": 1418,
+      "executed_mathematical_mutations_rejected": 9,
+      "false_scope_or_input_ledgers_rejected": 16,
+      "source_pins": 91,
+      "new_Lean_propositions": 0,
+      "general_correlated_readout_or_all_native_F_excluded": false,
+      "trace_distance_promoted_to_action_contrast_error": false,
+      "state_temperature_heat_or_source_law_selected": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_original_terminals_unchanged": true,
+      "scientific_artifact_count": 320,
+      "prior_artifacts_unchanged": 316,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 3
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "8207558224ee7c419d58f1f468d01b1187e21951",
+  "previous_source_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2385,11 +2433,12 @@
     "The actual noncommutative 33-dimensional scene-register AF refinement now has a proved all-level metric tail estimate. Its old constant-two certificate assertion has an exact native counterexample; the repaired bound retains all archive sectors, uses full commutator module compression and proves weak-star metrizability for every fixed b>1. The full proof is analytic, with 195 exact controls, seven rejected mathematical mutations and seventeen false scope ledgers. No physical mesh, scale, common full-price preparation, source or T0 closure is inferred; normalized GNS trace does not replace the bootstrap operator heat trace.",
     "The same actual scene-register AF operator family has a complete full-heat four-dimensional leading-coefficient obstruction for every fixed b>1. Actual Burnside multiplicities and all tails are retained; two rationally separated phase limits exclude a positive ordinary 4D leading coefficient even at the unique matching exponent. This is an analytic all-level result, with 121 added exact heat controls, 316 total controls, thirteen mathematical mutations and twenty-five false scope rejections. Fixed-phase geometric subsequences have positive limits and remain available to a separately derived native physical reading. No physical mesh, bootstrap identification, averaging, source, all-F no-go or T0 closure is inferred.",
     "The full retained-stratum expansion proves an ordinary second heat-coefficient obstruction on every fixed phase, even after exact leading phase tracking. It retains a positive leading limit, all Burnside contributions, and the scalar remainder. Counting strata are not independent native blocks; formal subtraction is not admitted. There are 452 exact controls, nineteen executed math mutations, thirty-three scope rejections and two shallow-path replays. The latter repair the actual Linux CI IndexError before --repo parsing, without accepting non-mathematical mutation failures. The proof is analytic and does not exclude all F or native paired-price cancellation; T0 and original terminals stay open.",
-    "The named prepared-state/modular route has a complete finite Gibbs reconstruction theorem. The scalar price ambiguity disappears under a genuine positive ground-zero constraint, while faithfulness and state/heat identification remain actual obligations. A generic Lean isometry theorem rejects the literal linear hyperbolic real-flow interpretation; the positive modular-square golden control retains all four modes and nonlinear/Koopman exceptions. Four compiled propositions, 60 exact controls, seven executed math mutants, sixteen false ledgers, nine primary/transitive source pins and six standard-only axiom reports are included. No all-F obstruction, new state/temperature law, source or T0-T3 closure follows."
+    "The named prepared-state/modular route has a complete finite Gibbs reconstruction theorem. The scalar price ambiguity disappears under a genuine positive ground-zero constraint, while faithfulness and state/heat identification remain actual obligations. A generic Lean isometry theorem rejects the literal linear hyperbolic real-flow interpretation; the positive modular-square golden control retains all four modes and nonlinear/Koopman exceptions. Four compiled propositions, 60 exact controls, seven executed math mutants, sixteen false ledgers, nine primary/transitive source pins and six standard-only axiom reports are included. No all-F obstruction, new state/temperature law, source or T0-T3 closure follows.",
+    "The actual independent golden-record state is uniformly separated in trace norm from the full flat Hodge Gibbs state at every temperature, overall scale and unitary identification as the number of golden factors grows. Arbitrary independent ancillary densities and all sixteen Hodge components are retained; a mixed Fock ancilla removes the simpler finite multiplicity objection without removing this theorem. The proof is analytic and uses a uniform thermal second-moment bound and a noncommuting projection witness. There are 1418 exact controls, nine executed math mutants, sixteen false ledgers and 91 pinned inputs. This closes only the stated full-state identification; correlated readouts, other heat operators and native paired-price transfer remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "eb9594d2d06572164c26bd561e60e9faf4f830af",
+  "source_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "8207558224ee7c419d58f1f468d01b1187e21951",
+  "source_parent": "eb9594d2d06572164c26bd561e60e9faf4f830af",
   "source_pr": 310
 }
