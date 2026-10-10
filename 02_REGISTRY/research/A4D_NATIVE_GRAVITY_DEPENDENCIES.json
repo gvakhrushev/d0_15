@@ -953,9 +953,15 @@
         "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean",
         "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
         "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
-        "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_check.py"
+        "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_check.py",
+        "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric.lean",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_certificate.json",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_output.txt",
+        "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json"
       ],
-      "verification": "Thirty-four compiled propositions, 49 transitive source pins, standard axioms only; kernel reduction rebuilds the actual finite CAR leaves and both nilpotencies. 107 exact controls check all grades, 24 Role orders, ten full metric derivatives with packed weights, and full integer periodic matrices at L=2,4,8. Analytic all-size Fourier classification gives negative spatial modes and nonconstant null modes, with ker D dimension 232 and ker Delta dimension 448 at L=4. Ordinary fixed-t>0 heat trace has normalized lower bound 4608*t^3*L^2. Fourteen false ledgers are rejected. The old weighted capstone is explicitly Boolean; positive Euclidean/observer pairings, mesh-dependent times, separate renormalized/oscillatory laws and alternative independently owned physical sectors remain outside this boundary.",
+      "verification": "Thirty-four compiled propositions, 49 transitive source pins, standard axioms only; kernel reduction rebuilds the actual finite CAR leaves and both nilpotencies. 107 exact controls check all grades, 24 Role orders, ten full metric derivatives with packed weights, and full integer periodic matrices at L=2,4,8. Analytic all-size Fourier classification gives negative spatial modes and nonconstant null modes, with ker D dimension 232 and ker Delta dimension 448 at L=4. Ordinary fixed-t>0 heat trace has normalized lower bound 4608*t^3*L^2. Fourteen false ledgers are rejected. The old weighted capstone is explicitly Boolean; positive Euclidean/observer pairings, mesh-dependent times, separate renormalized/oscillatory laws and alternative independently owned physical sectors remain outside this boundary. The actual fixed counting Hodge/CAR operator now has an exact operator-first scalar Connes metric on every periodic size and all site pairs: the Euclidean product-circle distance. The arithmetic l1/l2 owner does not prove its stated operator identification; no extra twist is forced by that arithmetic. The same actual square supplies the heat operator, with inherited native_decide CAR leaves explicitly recorded. Full native preparation, nonlinear field variations, Lorentz time, archive/physical refinement, source and GR remain open.",
       "status": "PROVED_WEIGHTED_OPERATOR_AND_SCOPED_LORENTZ_BOUNDARY_PENDING_CONTROL",
       "terminal_class": null,
       "required_terminal": "CONTROL_ACCEPTED_OPERATOR_CONSTRUCTION_AND_STATED_BOUNDARIES",
@@ -1415,5 +1421,27 @@
       "native_source_Ward_rho0_GR_or_parent_terminal_derived": false
     }
   },
-  "history_spectral_completion_input_head": "e7ef84c680910b36ee0cf9a030d6e0780d0302dd"
+  "history_spectral_completion_input_head": "e7ef84c680910b36ee0cf9a030d6e0780d0302dd",
+  "operator_first_geometry_input_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+  "operator_first_geometry_readout": {
+    "status": "EXACT_FIXED_NATIVE_OPERATOR_FLAT_RIEMANNIAN_READOUT",
+    "proof": "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md",
+    "artifacts": [
+      "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md",
+      "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric.lean",
+      "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py",
+      "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_certificate.json",
+      "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_output.txt",
+      "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json"
+    ],
+    "theorem": "For all L=N+2>=2 and all sites, Connes distance of actual counting hodgeCarDirac with scalar multiplication on all sixteen grades equals sqrt(sum cyclic_role_distance_squared)/L.",
+    "all_size_distance_proof": "FINITE_DIMENSIONAL_ANALYTIC_WITH_ACTUAL_OPERATOR_KERNEL_COMPONENTS_AND_EXACT_INTEGER_CONTROLS",
+    "prior_arithmetic_nogo_propositions_preserved": true,
+    "prior_l1_Connes_identification_valid_for_this_operator": false,
+    "same_owned_heat_square": "D_H^2=cochainDifferenceLaplacian; exact imported native_decide CAR leaves retained in receipt",
+    "full_Gamma_or_F_derived": false,
+    "physical_operator_variations_curved_sector_and_native_refinement_derived": false,
+    "GR_or_original_terminals_closed": false,
+    "next_arrow": "Admitted internal operator/algebra preparation -> induced joint q,D,b,m readout -> full price descent/tangent/refinement, without assuming the kinematic quotient exhausts preparations."
+  }
 }

@@ -9,8 +9,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
-      "sha256": "601c97cb85f4c85f3fa855e564942a2b82fe1353e49273a2e1d9977711ad9ef9",
-      "source_blob": "f7cfc1903d3254438aca5edf99dcaf69eaa58396"
+      "sha256": "a8348aadfd5bc2eeee23883fe657dec56c2c37a06677e0b66dd63c9cdb4ce102",
+      "source_blob": "ab05890c0f83ad85b6a4737243e56e3c491b898f"
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md",
@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "a786ba66da8cb599ff643bdd12281ae2677300cfc2d6283281283073219e5ac3",
-      "source_blob": "d4dd265b2db101c81583b2f7739f226bdd50c376"
+      "sha256": "ec1042172e6aa49f067938fc7780d2aacd94c282f239a3a36d04f970f34d3a58",
+      "source_blob": "e26e7f17593a58f5efded7778fce77e5e2aa8121"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1381,15 +1381,210 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality_results.json",
       "sha256": "9c36a6f01a8b9f5d60c23cc4040c06c68e70bf35ccc0c1d645e8aa70c6a3709d",
       "source_blob": "1ad95ed39f9e3ccf42179a524637c482d5828556"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md",
+      "sha256": "6836cf4082a6dae3240a8e42ed7891a6bef654f540ed31c7e1a5700e9d5c4169",
+      "source_blob": "c0a43e17f3c5e72609e0880f2cebe1e628289c49"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric.lean",
+      "sha256": "b2a983084a6d212e4341c1a3d7078fcd37ed966a5d6aa12bc0d34fa9f22bebce",
+      "source_blob": "04e0c95671b9a2ed0082941eae19e4b32469a4c1"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py",
+      "sha256": "2426fdaa24e19fd69aed9feb66507b32d6c52c433945b427ee3978f5bcc4ba23",
+      "source_blob": "76769c00b8022a5cacda3aab4848dfbf9b2da863"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_certificate.json",
+      "sha256": "7dd49e784d2f1c9247b3480393128b8c12824fb1fe9418ca839ca2db4db0fe2f",
+      "source_blob": "84d855e6423c613536419cc1ece14b9cba255145"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_output.txt",
+      "sha256": "7de7b886fef9d3163ad45522fe3b30d6cce0edc132ecf6dcab646a48e6575408",
+      "source_blob": "a912d59f674f205609f1e4da5b8fb01fe000a403"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json",
+      "sha256": "01bf1f694ceaf8ccfff1f850067acb3a6a4989f4c2e7c9c10cb7e7bedf8d226f",
+      "source_blob": "3c042cd386c81d45a20e869ed0318885f4f7221d"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
   "claim_release_or_book_changes": false,
+  "execution_strategy_revision": {
+    "condensed_price_naturality": {
+      "actual_archive_tower_consumed": true,
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality",
+      "compiled_propositions": 46,
+      "complete_declared_linear_naturality_class_classified": true,
+      "discharged": "The actual nonuniform archive tower and real LightProfinite owner are consumed. Entrywise record-kernel compatibility fails counting heat-operator naturality at the actual first arrow; the set-valued CompatibleOperatorFamily is not a Hilbert heat generator. The entire declared self-adjoint linear natural heat class is inherited coarse heat plus independent complementary blocks, at every level. Genuine full fixed-feedback heat derivatives, all scalar interface first jets, and capacity error bounds are proved. Independently varied positive hidden heat has no finite minimum. A stronger fixed phi^n paired-norm control has intrinsic 5/60 first-fibre shape freedom and a trace-class limiting heat with nonzero shape price derivative; a separately proved fixed-ceiling minimum instead saturates all hidden blocks. No thermal norm/ceiling, spectral shape, physical heat carrier, native field law or on-shell admission is selected. 46 kernel propositions, 6 actual owner propositions, 3 typed definitions, 15 transitive D0 pins, 38 primary/prior pins, 41107 exact controls and 21 rejected ledgers. Hilbert spectral and limit statements have explicit analytic status. Own full-action/source/Ward/GR and every parent terminal remain open.",
+      "exact_controls": 41107,
+      "false_input_binding_ledgers_rejected": 3,
+      "false_ledgers_rejected": 21,
+      "false_scope_ledgers_rejected": 18,
+      "fixed_ceiling_finite_profile_minimum_classified": true,
+      "fixed_phi_norm_and_trace_class_control_retains_shape_price_freedom": true,
+      "full_spectral_Hilbert_limit_kernel_formalized": false,
+      "input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
+      "native_heat_carrier_field_law_or_admission_derived": false,
+      "native_source_Ward_rho0_GR_or_parent_terminal_derived": false,
+      "owned_phi_scale_is_thermal_norm_or_ceiling_derived": false,
+      "primary_and_prior_input_pins": 38,
+      "printed_primary_owner_propositions": 6,
+      "progress": "T0_PARTIAL_COMPLETE_TYPED_LINEAR_ARCHIVE_HEAT_INTERFACE_AND_T1_GENUINE_CONDITIONAL_PRICE_JETS",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md",
+      "transitive_D0_import_pins": 15,
+      "typed_owner_definitions": 3,
+      "whole_D0_no_go_or_physical_nonuniqueness_proved": false
+    },
+    "constrained_price_source": {
+      "G0_T0_T1_T2_T3_fully_closed": false,
+      "all_size_logdet_HasDerivAt_compiled": false,
+      "compiled_propositions": 33,
+      "discharged": "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected.",
+      "exact_controls": 528,
+      "false_ledgers_rejected": 12,
+      "input_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+      "native_Gamma_or_full_physical_source_derived": false,
+      "parent_terminals_changed": false,
+      "progress": "T1_PARTIAL_INTRINSIC_NORMAL_FORM_AND_SCOPED_ZERO_FEEDBACK_CONTRIBUTION",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+      "transitive_d0_source_pins": 4
+    },
+    "control_input_head": "ad12be0f70cc03b4ed1cd3b4f24603c132b5d074",
+    "date": "2026-10-09",
+    "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
+    "finite_preflight_certificate_sha256": "c6fe8e85432718ec4cb2aef7dbb68e3a48e7f2befa39f4343fdb3b00c6d2a796",
+    "finite_preflight_exact_controls": 292,
+    "machine_contract": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
+    "native_operator_map_or_source_claim_promoted": false,
+    "native_preparation_revalidation": {
+      "absence_of_F_in_whole_kernel_proved": false,
+      "all_original_parents_retained": true,
+      "control_input_head": "90e2cf8ba8b89e1b132626d574e9f9674aa43100",
+      "coupling_eliminates_heat_derivative": false,
+      "date": "2026-10-10",
+      "native_F_or_DGamma_derived": false,
+      "new_certificate_requires": "A proof of that exact primitive-to-preparation implication or a completeness-backed obstruction for its actual operational domain.",
+      "new_conditional_family_or_owner_census_counts_as_native_arrow": false,
+      "one_missing_lemma": "Derive the actual full operational preparation Gamma_h(X)=(Delta_h,P_h,U_h,G_h), its complete nonempty admitted family, joint constraint-tangent image and native refinement from named existing primitive conditions. For an archive-heat route derive every price-visible complementary block from that preparation. Restriction to q,D requires proving independence from retained b,m. No price, rho0 or vanishing-contrast requirement is installed as the preparation or Euler gate.",
+      "only_rho0_or_trace_only_outcomes_asserted": false,
+      "preceding_control_CI": {
+        "conclusion": "success",
+        "head": "90e2cf8ba8b89e1b132626d574e9f9674aa43100",
+        "run": 37929737226
+      },
+      "previous_two_owner_read_turns": "INTERRUPTED_OR_FAILED_WITHOUT_NEW_NATIVE_ARROW",
+      "reviewed_input_sha256": {
+        "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+        "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+        "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
+        "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+        "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md": "8c4c662f9f05430ef9f9ff91c670b15e6c678c9b2b1c0ced90e08c79f507e83c",
+        "03_FORMALIZATION/D0/Condensed/OperatorNaturality.lean": "8a6be8638cd52e75b612db2416eca350f487c2bdcb2368fc969f854acd774666",
+        "03_FORMALIZATION/D0/Foundation/CascadeFullForcingSynthesis.lean": "c970ab546bdacf77088cae1d250d6a7234aa19f3df2b167da23e4b5e119d1f57",
+        "03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean": "abb9ed9de2de239299b8fc64fdadff86945597b71fcc4c107af4d894648ce6a5",
+        "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
+        "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean": "511f40788d047494419ab9263edd3e82446085bbb2a483f58d5ff66d04d00a42",
+        "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+        "03_FORMALIZATION/D0/Geometry/ArchiveRoleProductLaplacian.lean": "ac6b1a24b054c76609b5558f76e6f1adf3d8f170dfb4d6475adc8c5ec4414339",
+        "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean": "cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296",
+        "03_FORMALIZATION/D0/IM/StrongLogdetPressure.lean": "b9fa537c716e057ac072dbd6be282ab19d36b63f644b19650940ed31fb4ada93"
+      },
+      "routes_checked": [
+        {
+          "boundary": "Owned scalar volume-response formula; no joint full-heat preparation.",
+          "owner": "D0.IM.StrongLogdetPressure"
+        },
+        {
+          "boundary": "Supplied pairing/weights; direct Lorentz binding already has negative modes and divergent fixed-time heat.",
+          "owner": "D0.Geometry.ArchiveWeightedHodgeDirac / ArchiveMetricMeasureHodgeLift"
+        },
+        {
+          "boundary": "Level-only fixed-adjacency operator; conductance-to-field admission remains unproved.",
+          "owner": "D0.archiveCanonicalLaplacian / archiveMetricProductLaplacian"
+        },
+        {
+          "boundary": "Paired price arguments and genuine whole-basis Ward; no derived heat-from-tick map.",
+          "owner": "BOOK_03 03.25 and A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS 6.7"
+        }
+      ],
+      "scientific_artifacts_unchanged": 276,
+      "scientific_source_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+      "source_CI": {
+        "conclusion": "success",
+        "head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+        "run": 37929050772
+      },
+      "source_Ward_stationarity_curved_roots_soundness_recovery_or_GR_closed": false,
+      "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
+    },
+    "no_new_task_branch_action_selector_postulate_or_self_merge": true,
+    "observed_source_strategy_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+    "operator_first_metric_revalidation": {
+      "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
+      "all_size_Connes_distance_proof": "ANALYTIC_NOT_FULL_LEAN",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_certificate.json",
+      "compiled_component_propositions": 8,
+      "complete_fixed_operator_metric_domain": "Every L=N+2>=2, every site pair, scalar multiplication on all sixteen Fock grades, counting pairing",
+      "control_input_head": "4070bfd6ea8eadd3b65126181afb0d0a3d571702",
+      "date": "2026-10-10",
+      "exact_operator_metric": "sqrt(sum cyclic_role_distance_squared)/L",
+      "full_native_Gamma_F_or_curved_source_derived": false,
+      "inherited_square_native_decide_CAR_leaves_explicit": true,
+      "modified_prior_scientific_artifact_count": 2,
+      "new_scientific_artifact_count": 6,
+      "next_arrow": "Derive admitted internal operator/algebra preparation -> induced joint q,D,b,m readout -> full price descent, tangent and native refinement. The present kinematic quotient is not presumed to exhaust preparations.",
+      "physical_apparatus_admission_and_native_metric_refinement_derived": false,
+      "prior_arithmetic_propositions_unchanged": true,
+      "prior_l1_operator_identification_valid_for_this_triple": false,
+      "proof": "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md",
+      "source_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+      "source_parent": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+      "status": "ACTUAL_OPERATOR_TO_FLAT_METRIC_AND_HEAT_BINDING_NOT_FULL_GAMMA",
+      "unchanged_prior_scientific_artifact_count": 274
+    },
+    "parent_graph_and_terminals_unchanged": true,
+    "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
+    "plan_sha256": "81691b86a0e8502dfea8ef56b3d739ab5486f1fe02206de6df526e8e8c18a255",
+    "prepared_source_verified_remote": true,
+    "prior_scientific_artifacts_byte_unchanged_count": 274,
+    "scientific_artifact_intake_and_source_SHA_unchanged": false,
+    "scientific_source_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+    "shared_scene_price_source": {
+      "balanced_negative_second_variation_dimension": 296,
+      "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source",
+      "compiled_propositions": 27,
+      "complete_owned_binary_passport_scene_price_branch_classified": true,
+      "declared_weight_first_jet_dimension": 359,
+      "discharged": "The actual dense binary scene passport (33 vertices, rank at most 3, quadratic moment 718) reconstructs the complete K(9,11,13) class. With the canonical normalized scene heat, full one-step history feedback and fixed beta/z, every scene in that entire named contract has the same price; all pullback covectors and finite contrasts of this route are zero, even with discontinuous label/state selection. The literal reconstruction and inhabited-owner propositions are printed and consumed; no M1 derivation of their hypotheses or whole-core exhaustion is claimed. The declared positive-conductance extension still has the complete all-359-edge kappa first jet and two stationary branches; the upper is not a minimum on 296 balanced directions, but every nonzero conductance jet leaves binary incidence in its actual vertex coordinates. 27 kernel propositions, 2 primary-owner diagnostics, 11 transitive D0 import pins, 54 primary/prior pins, 2894 exact controls and 16 false ledgers. The full matrix spectral/price binding, branch existence and Hessian remain analytic; own full-action/source/Ward/GR remain open.",
+      "every_weight_is_native_or_native_pullback_derived": false,
+      "exact_controls": 2894,
+      "false_ledgers_rejected": 16,
+      "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
+      "lower_branch_minimum_derived": false,
+      "matrix_HasFDerivAt_Hessian_or_branch_existence_kernel_formalized": false,
+      "one_step_R_price_is_not_two_tick_R_squared_price": true,
+      "original_weighted_jet_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
+      "primary_and_prior_input_pins": 54,
+      "printed_primary_owner_propositions": 2,
+      "progress": "T0_PARTIAL_OWNED_BINARY_PASSPORT_ADMISSION_BOUNDARY_AND_T1_SCOPED_PRICE_ZERO_WITH_SHARED_WEIGHT_JETS",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md",
+      "transitive_D0_import_pins": 11,
+      "whole_native_core_exhausted_or_full_action_source_derived": false,
+      "whole_native_source_rho0_GR_or_parent_terminal_derived": false
+    }
+  },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
+  "previous_source_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -1460,153 +1655,12 @@
     "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected.",
     "The normalized 33-vertex heat price and full 718-history one-step reversal-feedback price now have a single degree-normalized jet in the declared positive-conductance K(9,11,13) class. At unit weights the complete 359-edge first derivative is (c_H+c_F) d kappa with three exact per-edge coefficients. For every fixed beta>0 there are exactly two stationary fugacity branches for the weights; the upper branch is not a local minimum because its Hessian is negative definite on 296 balanced edge directions. The lower minimum and native admission/pullback are not proved. 21 kernel-checked declarations with scalar HasDerivAt, 2496 exact controls and 13 false ledgers; matrix differentiation and branch-existence/Hessian arguments retain their analytic status.",
     "The actual dense binary scene passport (33 vertices, rank at most 3, quadratic moment 718) reconstructs the complete K(9,11,13) class. With the canonical normalized scene heat, full one-step history feedback and fixed beta/z, every scene in that entire named contract has the same price; all pullback covectors and finite contrasts of this route are zero, even with discontinuous label/state selection. The literal reconstruction and inhabited-owner propositions are printed and consumed; no M1 derivation of their hypotheses or whole-core exhaustion is claimed. The declared positive-conductance extension still has the complete all-359-edge kappa first jet and two stationary branches; the upper is not a minimum on 296 balanced directions, but every nonzero conductance jet leaves binary incidence in its actual vertex coordinates. 27 kernel propositions, 2 primary-owner diagnostics, 11 transitive D0 import pins, 54 primary/prior pins, 2894 exact controls and 16 false ledgers. The full matrix spectral/price binding, branch existence and Hessian remain analytic; own full-action/source/Ward/GR remain open.",
-    "The actual nonuniform archive tower and real LightProfinite owner are consumed. Entrywise record-kernel compatibility fails counting heat-operator naturality at the actual first arrow; the set-valued CompatibleOperatorFamily is not a Hilbert heat generator. The entire declared self-adjoint linear natural heat class is inherited coarse heat plus independent complementary blocks, at every level. Genuine full fixed-feedback heat derivatives, all scalar interface first jets, and capacity error bounds are proved. Independently varied positive hidden heat has no finite minimum. A stronger fixed phi^n paired-norm control has intrinsic 5/60 first-fibre shape freedom and a trace-class limiting heat with nonzero shape price derivative; a separately proved fixed-ceiling minimum instead saturates all hidden blocks. No thermal norm/ceiling, spectral shape, physical heat carrier, native field law or on-shell admission is selected. 46 kernel propositions, 6 actual owner propositions, 3 typed definitions, 15 transitive D0 pins, 38 primary/prior pins, 41107 exact controls and 21 rejected ledgers. Hilbert spectral and limit statements have explicit analytic status. Own full-action/source/Ward/GR and every parent terminal remain open."
+    "The actual nonuniform archive tower and real LightProfinite owner are consumed. Entrywise record-kernel compatibility fails counting heat-operator naturality at the actual first arrow; the set-valued CompatibleOperatorFamily is not a Hilbert heat generator. The entire declared self-adjoint linear natural heat class is inherited coarse heat plus independent complementary blocks, at every level. Genuine full fixed-feedback heat derivatives, all scalar interface first jets, and capacity error bounds are proved. Independently varied positive hidden heat has no finite minimum. A stronger fixed phi^n paired-norm control has intrinsic 5/60 first-fibre shape freedom and a trace-class limiting heat with nonzero shape price derivative; a separately proved fixed-ceiling minimum instead saturates all hidden blocks. No thermal norm/ceiling, spectral shape, physical heat carrier, native field law or on-shell admission is selected. 46 kernel propositions, 6 actual owner propositions, 3 typed definitions, 15 transitive D0 pins, 38 primary/prior pins, 41107 exact controls and 21 rejected ledgers. Hilbert spectral and limit statements have explicit analytic status. Own full-action/source/Ward/GR and every parent terminal remain open.",
+    "Actual fixed Hodge/CAR operator-first scalar Connes metric: exact Euclidean product-circle distance for every finite periodic L>=2 and all site pairs. Full analytic norm/interpolation/supremum proof, eight compiled component propositions, six complete sparse sizes, odd/even/L2/wrap controls and an exact hostile column-norm witness. The prior arithmetic l1/l2 owner does not prove the asserted operator identification. Imported square retains three explicit native_decide CAR leaves. No curved/Lorentz physical metric, full native preparation/refinement, source or terminal is claimed."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+  "source_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
-  "source_pr": 310,
-  "execution_strategy_revision": {
-    "constrained_price_source": {
-      "G0_T0_T1_T2_T3_fully_closed": false,
-      "all_size_logdet_HasDerivAt_compiled": false,
-      "compiled_propositions": 33,
-      "discharged": "The complete joint tangent has an intrinsic metric/link covector normal form independent of conormal extensions. The two-step feedback price has zero first variation at the actual ordinary and recorded golden bases throughout the fixed-golden-compression orthogonal completion class, for arbitrary archive size. The generic trace calculation and literal fullStep binding are compiled; the finite-dimensional logdet differentiation is analytic. A noninvolutive Cayley base has a nonzero derivative, and a nonzero operator jet can have zero price jet. No native Gamma, full heat/pairing source, delay invisibility, rho0 comparison or physical closure follows. 33 Lean declarations, 4 D0 import pins and 528 exact controls; 12 false ledgers rejected.",
-      "exact_controls": 528,
-      "false_ledgers_rejected": 12,
-      "input_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
-      "native_Gamma_or_full_physical_source_derived": false,
-      "parent_terminals_changed": false,
-      "progress": "T1_PARTIAL_INTRINSIC_NORMAL_FORM_AND_SCOPED_ZERO_FEEDBACK_CONTRIBUTION",
-      "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
-      "transitive_d0_source_pins": 4
-    },
-    "date": "2026-10-09",
-    "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-    "finite_preflight_exact_controls": 292,
-    "machine_contract": "02_REGISTRY/research/D0_CLOSURE_CRITICAL_PLAN_2026-10-07.json",
-    "native_operator_map_or_source_claim_promoted": false,
-    "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
-    "parent_graph_and_terminals_unchanged": true,
-    "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "5759e1655cce18d6dda9a882e1f2d016cfdbae301ecfc83889b233d7d7a5c836",
-    "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 268,
-    "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
-    "shared_scene_price_source": {
-      "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
-      "original_weighted_jet_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
-      "proof": "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md",
-      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source",
-      "discharged": "The actual dense binary scene passport (33 vertices, rank at most 3, quadratic moment 718) reconstructs the complete K(9,11,13) class. With the canonical normalized scene heat, full one-step history feedback and fixed beta/z, every scene in that entire named contract has the same price; all pullback covectors and finite contrasts of this route are zero, even with discontinuous label/state selection. The literal reconstruction and inhabited-owner propositions are printed and consumed; no M1 derivation of their hypotheses or whole-core exhaustion is claimed. The declared positive-conductance extension still has the complete all-359-edge kappa first jet and two stationary branches; the upper is not a minimum on 296 balanced directions, but every nonzero conductance jet leaves binary incidence in its actual vertex coordinates. 27 kernel propositions, 2 primary-owner diagnostics, 11 transitive D0 import pins, 54 primary/prior pins, 2894 exact controls and 16 false ledgers. The full matrix spectral/price binding, branch existence and Hessian remain analytic; own full-action/source/Ward/GR remain open.",
-      "compiled_propositions": 27,
-      "printed_primary_owner_propositions": 2,
-      "transitive_D0_import_pins": 11,
-      "primary_and_prior_input_pins": 54,
-      "exact_controls": 2894,
-      "false_ledgers_rejected": 16,
-      "declared_weight_first_jet_dimension": 359,
-      "balanced_negative_second_variation_dimension": 296,
-      "progress": "T0_PARTIAL_OWNED_BINARY_PASSPORT_ADMISSION_BOUNDARY_AND_T1_SCOPED_PRICE_ZERO_WITH_SHARED_WEIGHT_JETS",
-      "complete_owned_binary_passport_scene_price_branch_classified": true,
-      "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
-      "whole_native_core_exhausted_or_full_action_source_derived": false,
-      "every_weight_is_native_or_native_pullback_derived": false,
-      "lower_branch_minimum_derived": false,
-      "matrix_HasFDerivAt_Hessian_or_branch_existence_kernel_formalized": false,
-      "whole_native_source_rho0_GR_or_parent_terminal_derived": false,
-      "one_step_R_price_is_not_two_tick_R_squared_price": true
-    },
-    "control_input_head": "ad12be0f70cc03b4ed1cd3b4f24603c132b5d074",
-    "condensed_price_naturality": {
-      "input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
-      "proof": "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md",
-      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality",
-      "discharged": "The actual nonuniform archive tower and real LightProfinite owner are consumed. Entrywise record-kernel compatibility fails counting heat-operator naturality at the actual first arrow; the set-valued CompatibleOperatorFamily is not a Hilbert heat generator. The entire declared self-adjoint linear natural heat class is inherited coarse heat plus independent complementary blocks, at every level. Genuine full fixed-feedback heat derivatives, all scalar interface first jets, and capacity error bounds are proved. Independently varied positive hidden heat has no finite minimum. A stronger fixed phi^n paired-norm control has intrinsic 5/60 first-fibre shape freedom and a trace-class limiting heat with nonzero shape price derivative; a separately proved fixed-ceiling minimum instead saturates all hidden blocks. No thermal norm/ceiling, spectral shape, physical heat carrier, native field law or on-shell admission is selected. 46 kernel propositions, 6 actual owner propositions, 3 typed definitions, 15 transitive D0 pins, 38 primary/prior pins, 41107 exact controls and 21 rejected ledgers. Hilbert spectral and limit statements have explicit analytic status. Own full-action/source/Ward/GR and every parent terminal remain open.",
-      "compiled_propositions": 46,
-      "printed_primary_owner_propositions": 6,
-      "typed_owner_definitions": 3,
-      "transitive_D0_import_pins": 15,
-      "primary_and_prior_input_pins": 38,
-      "exact_controls": 41107,
-      "false_scope_ledgers_rejected": 18,
-      "false_input_binding_ledgers_rejected": 3,
-      "false_ledgers_rejected": 21,
-      "progress": "T0_PARTIAL_COMPLETE_TYPED_LINEAR_ARCHIVE_HEAT_INTERFACE_AND_T1_GENUINE_CONDITIONAL_PRICE_JETS",
-      "actual_archive_tower_consumed": true,
-      "complete_declared_linear_naturality_class_classified": true,
-      "fixed_phi_norm_and_trace_class_control_retains_shape_price_freedom": true,
-      "fixed_ceiling_finite_profile_minimum_classified": true,
-      "native_heat_carrier_field_law_or_admission_derived": false,
-      "owned_phi_scale_is_thermal_norm_or_ceiling_derived": false,
-      "full_spectral_Hilbert_limit_kernel_formalized": false,
-      "whole_D0_no_go_or_physical_nonuniqueness_proved": false,
-      "native_source_Ward_rho0_GR_or_parent_terminal_derived": false
-    },
-    "finite_preflight_certificate_sha256": "0b0d1b7605a8b9563f6fe7d7500386738e4c922d217f2cc097184cb2936f3eb5",
-    "native_preparation_revalidation": {
-      "date": "2026-10-10",
-      "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM",
-      "control_input_head": "90e2cf8ba8b89e1b132626d574e9f9674aa43100",
-      "scientific_source_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
-      "reviewed_input_sha256": {
-        "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
-        "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
-        "03_FORMALIZATION/D0/IM/StrongLogdetPressure.lean": "b9fa537c716e057ac072dbd6be282ab19d36b63f644b19650940ed31fb4ada93",
-        "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean": "cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296",
-        "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
-        "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
-        "03_FORMALIZATION/D0/Geometry/ArchiveRoleProductLaplacian.lean": "ac6b1a24b054c76609b5558f76e6f1adf3d8f170dfb4d6475adc8c5ec4414339",
-        "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean": "511f40788d047494419ab9263edd3e82446085bbb2a483f58d5ff66d04d00a42",
-        "03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean": "abb9ed9de2de239299b8fc64fdadff86945597b71fcc4c107af4d894648ce6a5",
-        "03_FORMALIZATION/D0/Foundation/CascadeFullForcingSynthesis.lean": "c970ab546bdacf77088cae1d250d6a7234aa19f3df2b167da23e4b5e119d1f57",
-        "03_FORMALIZATION/D0/Condensed/OperatorNaturality.lean": "8a6be8638cd52e75b612db2416eca350f487c2bdcb2368fc969f854acd774666",
-        "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md": "8c4c662f9f05430ef9f9ff91c670b15e6c678c9b2b1c0ced90e08c79f507e83c",
-        "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
-        "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08"
-      },
-      "scientific_artifacts_unchanged": 276,
-      "previous_two_owner_read_turns": "INTERRUPTED_OR_FAILED_WITHOUT_NEW_NATIVE_ARROW",
-      "source_CI": {
-        "run": 37929050772,
-        "head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
-        "conclusion": "success"
-      },
-      "preceding_control_CI": {
-        "run": 37929737226,
-        "head": "90e2cf8ba8b89e1b132626d574e9f9674aa43100",
-        "conclusion": "success"
-      },
-      "one_missing_lemma": "Derive the actual full operational preparation Gamma_h(X)=(Delta_h,P_h,U_h,G_h), its complete nonempty admitted family, joint constraint-tangent image and native refinement from named existing primitive conditions. For an archive-heat route derive every price-visible complementary block from that preparation. Restriction to q,D requires proving independence from retained b,m. No price, rho0 or vanishing-contrast requirement is installed as the preparation or Euler gate.",
-      "routes_checked": [
-        {
-          "owner": "D0.IM.StrongLogdetPressure",
-          "boundary": "Owned scalar volume-response formula; no joint full-heat preparation."
-        },
-        {
-          "owner": "D0.Geometry.ArchiveWeightedHodgeDirac / ArchiveMetricMeasureHodgeLift",
-          "boundary": "Supplied pairing/weights; direct Lorentz binding already has negative modes and divergent fixed-time heat."
-        },
-        {
-          "owner": "D0.archiveCanonicalLaplacian / archiveMetricProductLaplacian",
-          "boundary": "Level-only fixed-adjacency operator; conductance-to-field admission remains unproved."
-        },
-        {
-          "owner": "BOOK_03 03.25 and A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS 6.7",
-          "boundary": "Paired price arguments and genuine whole-basis Ward; no derived heat-from-tick map."
-        }
-      ],
-      "new_certificate_requires": "A proof of that exact primitive-to-preparation implication or a completeness-backed obstruction for its actual operational domain.",
-      "new_conditional_family_or_owner_census_counts_as_native_arrow": false,
-      "native_F_or_DGamma_derived": false,
-      "absence_of_F_in_whole_kernel_proved": false,
-      "coupling_eliminates_heat_derivative": false,
-      "only_rho0_or_trace_only_outcomes_asserted": false,
-      "source_Ward_stationarity_curved_roots_soundness_recovery_or_GR_closed": false,
-      "all_original_parents_retained": true
-    }
-  }
+  "source_parent": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+  "source_pr": 310
 }

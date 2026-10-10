@@ -3,33 +3,38 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`569abdc48795b161aa5fe6d2a1c12ecdd05f66b0`, following
-`1f9a1e8c1417e28823ce1646422a3f915eee9e86`.
+`025bf30c3d7c2cfba1a1d57676d65e536453b66b`, following
+`569abdc48795b161aa5fe6d2a1c12ecdd05f66b0`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
 
 Current execution order, revalidated 2026-10-10:
-[the constrained-price tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
-consumes the binary scene-price zero and complete declared all-level linear
-archive heat-interface results. It now targets one already-owned operational
-preparation law of the full price and its variation/refinement on the
-complete joint tangent. Its physical metric readout and
-rho0 comparison follow that arrow. The finite preflight passes 292 controls:
-joint metric variations remain surjective, conormals vanish intrinsically,
-and a fixed two-tick price gap has zero jet. This preflight does not supply
-the native Gamma map, source, stationarity, GR or any original parent terminal.
-The intake contains 276 artifacts byte-identical to the verified published
-source; 268 artifacts from the preceding published intake are unchanged.
-SOURCE `569abdc4` CI `37929050772` and preceding CONTROL `90e2cf8b` CI
-`37929737226` have succeeded. This plan revision still requires its own CI
-and CONTROL review. The October 10 owner revalidation is a strategy update,
-not a new source theorem: the exact next lemma is the operational preparation
-of the full heat/feedback/pairing family and its joint field/refinement jet.
-Scalar rank-pressure, supplied Hodge weights, level-only Laplacians and basis
-Ward do not themselves prove that lemma. No native F, universal no-F theorem,
-source/rho0 equality or additional closed node is claimed. All 276 scientific
-artifacts and the SOURCE SHA are unchanged by this revision.
+[the tangent-source plan](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md) now
+consumes the [actual operator-first metric proof](A4D_NATIVE_HODGE_CONNES_METRIC.md).
+The fixed counting Hodge/CAR operator with scalar multiplication on all
+sixteen grades has exactly the Euclidean product-circle Connes metric
+for every periodic size and all point pairs. Its actual square is the
+fibrewise difference heat operator. The prior l1/l2 arithmetic owner does
+not prove its asserted operator identification; it cannot require a new
+twist on this route. Eight compiled component propositions and the full
+finite-dimensional analytic distance proof are distinguished. The imported
+square's three native_decide CAR leaves are retained explicitly.
+
+The intake has 282 scientific artifacts byte-identical to verified SOURCE
+`025bf30c3d7c2cfba1a1d57676d65e536453b66b`: six new files, two updated pointers, and 274 prior
+scientific artifacts unchanged. The original 44 dependency-node contracts
+and every original parent remain unchanged. Current-head CI and CONTROL
+review are still required. Prior SOURCE/CONTROL CI does not validate this
+revision. Local constrained-price preflight is rebound to this plan; it
+does not prove the native preparation.
+
+The next arrow remains the native full-price preparation/tangent/refinement
+lemma, now with an operator-first route: derive an admitted operator/algebra
+preparation, its induced joint field readout and full price descent. Do not
+assume the existing kinematic quotient exhausts preparations. No full Gamma,
+F, source/Ward, curved/Lorentz metric, native archive/physical metric
+refinement, stationarity, GR or original terminal is claimed.
 
 The user's October 7 strategic replanning is recorded separately in
 [the critical plan](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md). It changes the
