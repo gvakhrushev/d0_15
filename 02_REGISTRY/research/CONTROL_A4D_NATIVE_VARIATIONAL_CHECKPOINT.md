@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`43fc7657d88d50f390b72b52e86317e98e1f5974`, following
-`812abc87da9c494d14d4b8549b2b219b88c60f86`.
+`cad6f9a3168d26c72a72a98a71d737e470bac508`, following
+`43fc7657d88d50f390b72b52e86317e98e1f5974`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -42,9 +42,9 @@ uniform-in-L inequalities have analytic proofs; two finite lattices alone
 do not establish those all-L conclusions.
 
 The intake has 311 artifacts byte-identical to verified SOURCE
-`43fc7657d88d50f390b72b52e86317e98e1f5974`: three AF proof/replay/ledger files and the
-repaired registered metric certificate enter the intake; the source memo
-is updated and 306 earlier artifacts are unchanged. No new physical action, role or preparation law is introduced.
+`cad6f9a3168d26c72a72a98a71d737e470bac508`: the existing AF proof/replay/ledger and
+source memo are updated; 307 earlier artifacts are unchanged. The
+registered metric certificate and its 195 controls remain intact. No new physical action, role or preparation law is introduced.
 All forty-four node dictionaries and all original contracts remain intact.
 Current-head CI and CONTROL review are required; no physical acceptance
 or original-parent closure is announced.
@@ -109,9 +109,9 @@ tower instead satisfies
 This proves weak-star state-space metrizability for every fixed b>1.
 The factor 33 is sharp for the one-step conditional-expectation estimate;
 no optimal final tail constant is claimed. The analytic all-level proof
-uses full commutator module compression. The registered certificate and
-research replay pass 195 exact controls, reject seven mathematical
-mutations and seventeen false scope ledgers. No new Lean theorem is claimed.
+uses full commutator module compression. The registered metric certificate
+retains its 195 exact controls. The cumulative research replay is extended
+by the heat result below. No new Lean theorem is claimed.
 
 This retains the noncommutative register algebra, every archive sector and
 the scalar zero mode. It does not identify register inclusion with
@@ -120,6 +120,24 @@ four-dimensional q,D,b,m readout. Its normalized GNS/partial trace does not
 replace the full bootstrap operator heat trace. Common price preparation,
 its source and native stationarity remain open. This is a proof repair,
 not a T0 closure or another compatible heat-family construction.
+
+Section 6 of the same AF proof now excludes a usual positive-volume
+four-dimensional leading heat coefficient for the **whole actual D_b
+squared family**, every fixed b>1. The exact Burnside multiplicities give
+growth exponent log(33)/log(b). At the only matching exponent, b=sqrt(33),
+two geometric phase limits have factors greater than 1/3 and less than
+1/10. Their separation includes rigorous bounds on both infinite tails
+and the entire nonidentity contribution. Choosing an exponent does not
+supply the heat coefficient; fixed time/trace calibrations do not fix it.
+
+Each fixed-phase geometric subsequence still has a positive limit. The
+ordinary all-small-time heat obstruction does not exclude native discrete
+level readings, other independently owned physical algebras or all F.
+This AF heat is not identified with the full bootstrap price. No replacement
+spectrum, averaging, temperature or physical scale is installed. The
+all-level proof is analytic. There are 121 new heat controls, 316 total,
+thirteen rejected mathematical mutations and twenty-five scope rejections.
+The valid AF metric result and every original parent terminal are retained.
 
 Next derive the actual common preparation and complete price variation.
 If it uses this positive Hodge binding, obtain the genuine compensating

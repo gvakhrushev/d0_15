@@ -17,6 +17,11 @@ sectors are retained. This supplies the missing quantitative estimate for
 this existing observable/refinement rule. It does not construct a physical
 four-dimensional readout or the common full-action preparation of T0.
 
+**Heat continuation.** Section 6 proves that the full heat trace of this
+same D_b squared has no positive finite four-dimensional leading
+coefficient for any fixed b>1. It retains the valid fixed-phase geometric
+subsequence limits and does not identify this heat with the bootstrap price.
+
 ## 1. The actual declared composition rule
 
 BOOK_02 §02.34c and `vp_compositional_closure_spectral_limit.py` use
@@ -199,3 +204,161 @@ claimed Lean-formalized. The [repaired registered certificate](../../04_CERTIFIC
 and [pinned ledger](certificates/a4d_native_scene_af_metric_refinement_certificate.json)
 provide exact finite controls and
 hostile mutations; they do not replace these proofs.
+
+## 6. The full native spectrum cannot supply a usual four-dimensional heat coefficient
+
+Continuation input: `43fc7657d88d50f390b72b52e86317e98e1f5974`.
+This tests the next specific use of the same declared operator: taking
+the **full operator heat trace of D_b squared** as the four-dimensional
+heat carrier. No new heat spectrum, action or field preparation is defined.
+The conclusion is about this complete family, for every fixed b>1; it is
+not a no-go for other physical readouts or for all D0 preparations.
+
+Write g=|S_9 x S_11 x S_13| and c_f for the number of its permutations
+having f fixed scene vertices. Burnside gives the actual register dimensions
+
+\[
+ d_n=\dim A_n={1\over g}\sum_f c_f f^{2n},\qquad
+ d_0=1,\quad m_n=d_n-d_{n-1}.                              \tag{9}
+\]
+
+The exponent is 2n because matrix entries have two n-register indices.
+At n=0 use 0^0=1. The registered composition certificate supplies these
+counts; independently c_33=1, c_32=0 and
+c_31=binom(9,2)+binom(11,2)+binom(13,2)=169. A nonidentity permutation
+cannot move only one vertex. Thus no other group element has more than
+31 fixed vertices. In particular d_1=12, d_2=309 and m_1=11. All sectors,
+including the scalar zero mode and the nonidentity contributions, remain.
+
+Put R=33^2=1089, S=31^2=961, B=b^2 and
+
+\[
+ \alpha={\log R\over\log B}={\log33\over\log b},\quad
+ \sigma={\log S\over\log B}<\alpha,\quad
+ c={1-R^{-1}\over g}>0.
+\]
+
+Equation (9), including the exceptional f=0 term at n=1, gives
+
+\[
+ m_n=cR^n+e_n,\qquad |e_n|\le {g-1\over g}S^n.             \tag{10}
+\]
+
+Indeed each nonidentity summand is
+`c_f (f^2-1) f^(2n-2)/g`. Its absolute value without c_f/g is at most
+S^n, also for f=0 and n=1. This is a bound on the actual full spectrum,
+not deletion of a lower-order archive block.
+
+The full heat trace exists for every t>0 and is exactly
+
+\[
+ K_b(t)=\operatorname{Tr}_{GNS}e^{-tD_b^2}
+             =1+\sum_{n\ge1}m_n e^{-tB^n}.                \tag{11}
+\]
+
+The one is the scalar zero mode. Define the positive function
+
+\[
+ Q_B(s)=\sum_{k\in\mathbb Z}(sB^k)^\alpha e^{-sB^k},
+ \qquad Q_B(Bs)=Q_B(s).                                   \tag{12}
+\]
+
+The series converges uniformly on every compact positive s interval:
+the negative tail is geometric, and the positive tail is dominated by
+arbitrarily high inverse powers, using `exp(x)>=x^p/p!` with an integer
+p>alpha. Therefore Q_B is continuous, bounded above and bounded away
+from zero on [1,B]. Completing the main sum in (11) to all integer levels
+and applying the same estimate with exponent sigma to (10) proves
+
+\[
+ t^\alpha K_b(t)=cQ_B(t)+O_b(t^{\alpha-\sigma})+O_b(t^\alpha).
+                                                               \tag{13}
+\]
+
+For the completion error, the added levels n<=0 contribute at most
+`t^alpha/(1-R^-1)`. Formula (13) consequently proves two-sided bounds
+`K_b(t) asymp t^-alpha` for small t, with genuine positive constants.
+It follows that a finite **positive** leading four-dimensional coefficient
+
+\[
+                     t^2K_b(t)\longrightarrow a_0>0       \tag{14}
+\]
+
+is possible only at alpha=2, equivalently b=sqrt(33). If b is larger,
+the left side tends to zero; if b is smaller, it diverges to infinity.
+This is a necessary test of the heat reading, not permission to select b.
+In particular spectral dimension four alone is not yet (14).
+
+### 6.1 Exact phase separation at the only possible scale
+
+At B=33, alpha=2, two geometric sequences give different limits:
+
+\[
+ \lim_{N\to\infty}(33^{-N})^2K_b(33^{-N})=cQ_{33}(1),
+\]
+\[
+ \lim_{N\to\infty}(33^{-N}/3)^2K_b(33^{-N}/3)=cQ_{33}(1/3).
+                                                               \tag{15}
+\]
+
+The difference can be bounded with rational arithmetic, without a
+numerical heat extrapolation, a complex-pole argument or a Gamma theorem.
+The k=0 term and exp(1)<3 give Q_33(1)>1/3. For s=1/3, split (12) into
+k<=-1, k=0, k=1 and k>=2. Respectively their upper bounds are
+
+\[
+ {1\over9(1089-1)},\qquad {1\over12},\qquad
+ 121(3/8)^{11},\qquad {216\over1089(1089-1)}.              \tag{16}
+\]
+
+The first is a geometric sum with exp(-x)<=1. The second uses
+exp(1/3)>=4/3. The third uses exp(1)>8/3. For the last, use
+`x^2 exp(-x)<=24/x^2` and sum the whole positive tail from k=2.
+The four rational bounds sum to
+
+\[
+ {13694175177875\over159025459101696}<{1\over10}.
+\]
+
+The elementary bounds on exp(1) also have finite controls: its first
+four Taylor terms sum to 8/3; bounding the rest by a ratio-1/5 geometric
+tail gives exp(1)<87/32<3. Hence the two limits in (15) differ by more
+than 7c/30. All infinite tails and all nonidentity group contributions
+have been controlled analytically. This is not evidence from a finite
+list of levels.
+
+**Conclusion for the whole stated operator family.** For no fixed b>1
+does the full heat trace of this D_b squared have a positive finite
+coefficient (14). In particular it cannot have the usual four-dimensional
+heat expansion `a_0 t^-2 + a_2 t^-1 + o(t^-1)` with a_0>0. Matching the
+spectral exponent to four does not supply even its first coefficient.
+A fixed positive rescaling of heat time, a fixed nonzero trace calibration,
+or a bounded finite-mode change cannot remove the separated subsequences:
+they shift the phases, multiply both limits, or give a vanishing t^2 error.
+No such alteration is introduced here.
+
+### 6.2 What this excludes, and what it leaves open
+
+This is a complete obstruction to directly using **the full unaveraged
+trace of this geometric filtration operator** for the usual positive-volume
+four-dimensional small-time heat law. That particular input to a curvature
+coefficient/Einstein-Hilbert bridge is unavailable. The metric theorem in
+Sections 1--5 remains true; it never asserted this heat expansion.
+
+At each fixed phase s>0, the geometric subsequence
+`t=s*33^-N` does have the positive limit cQ_33(s). Thus a native construction
+using only a specified discrete level sequence is not excluded by failure
+of (14). Its actual physical scale law, phase dependence, metric readout
+and complete price variation would have to be derived. Likewise this
+argument does not exclude a separately owned physical observable algebra,
+another native coupled operator, or a justified limiting/averaged reading.
+None is chosen, and no trace or archive sector is discarded.
+
+The full bootstrap action has not been identified with (11). Accordingly
+this result does not imply absence of every F, zero or pure-trace stress,
+failure of all gravitational limits, or closure of T0--T3. It removes the
+specific inference from this actual AF metric/finite spectral dimension
+to the standard four-dimensional heat coefficient. The common preparation,
+all joint field directions and the source comparison remain the same
+open obligations. The full asymptotic proof is analytic; the replay checks
+the exact owned multiplicities, rational tail bounds and hostile alterations.

@@ -728,9 +728,9 @@
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
-    "control_input_head": "407be0a32b47c884f57935d984bfc48917a65ebd",
-    "published_scientific_input_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
-    "observed_source_strategy_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+    "control_input_head": "326e439cc59839f8ed286488c39c8b16b4a435a7",
+    "published_scientific_input_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
+    "observed_source_strategy_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -822,7 +822,7 @@
       "G0_T0_T1_T2_T3_fully_closed": false,
       "parent_terminals_changed": false
     },
-    "prepared_scientific_input_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+    "prepared_scientific_input_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
     "prepared_source_verified_remote": true,
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
@@ -1383,6 +1383,38 @@
       "prior_artifacts_unchanged": 306,
       "prior_artifacts_updated": 1,
       "new_intake_entries": 4
+    },
+    "scene_AF_heat_obstruction": {
+      "source_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
+      "input_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+      "control_input_head": "326e439cc59839f8ed286488c39c8b16b4a435a7",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md",
+      "section": "6",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement",
+      "operator": "Full actual geometric filtration D_b squared on scene-register tracial GNS, b>1 fixed",
+      "result": "No member has a finite positive limit t^2 Tr(exp(-t D_b^2)) as t tends to zero through all positive times.",
+      "completeness": "Every fixed b>1 of the declared operator family, all actual Burnside multiplicities, all archive sectors and the scalar zero mode.",
+      "proof_argument": "Actual dimensions have unique leading 33^(2n)/|G| and controlled subleading 31^(2n). The only possible four-dimensional exponent is b=sqrt(33); two geometric phase limits differ by more than 7*(1-1/1089)/(30*|G|).",
+      "phase_bounds": {
+        "at_one": ">1/3",
+        "at_one_third": "<1/10"
+      },
+      "fixed_phase_geometric_subsequence_limits_exist": true,
+      "no_bootstrap_identification_or_scale_averaging_trace_selection": true,
+      "proof_status": "ANALYTIC_ALL_B_ALL_LEVEL_ASYMPTOTIC_PROOF_NOT_LEAN",
+      "new_Lean_propositions": 0,
+      "metric_exact_controls": 195,
+      "heat_exact_controls": 121,
+      "exact_controls": 316,
+      "mathematical_mutations_rejected": 13,
+      "false_scope_ledgers_rejected": 25,
+      "all_native_F_or_other_physical_readouts_excluded": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 311,
+      "prior_artifacts_unchanged": 307,
+      "prior_artifacts_updated": 4,
+      "new_artifacts": 0
     }
   }
 }

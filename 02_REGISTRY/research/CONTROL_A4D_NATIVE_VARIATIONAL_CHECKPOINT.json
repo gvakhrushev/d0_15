@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "8b4794d3d83881ce5018424ddb726167f01fea861eb1b52ff384bfee8cfdc01b",
-      "source_blob": "7c6cf11c95b37cd0873a440ba42229caf52cbbcb"
+      "sha256": "11d5665858a2bdc36122dcb00fee1f5e5a930798fb67c98e71bf65e5b4fdf0c9",
+      "source_blob": "c694f2f337244cb1558d8329e42bb016c12c7b4a"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1544,18 +1544,18 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md",
-      "sha256": "1f8f83c719bcb415ffd3b28ccce3cfe04315f91975f32b235c79292c96412fcc",
-      "source_blob": "3319eab05c3505e67ffa4ae507326c27080d8393"
+      "sha256": "1bc886b5373b5d455e9a2ca61e95b0491cc83333a82ad7b907678949a8e4039d",
+      "source_blob": "daed3cf0b2f9ec0b9961c960bd7cef4bdac9f636"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_check.py",
-      "sha256": "709731bd22011c2834cbd14a90dea82ee1a210efcd2f285872d004154c90fca0",
-      "source_blob": "11bf1372fb5f2f5cdff17b70f23875ff685c58dc"
+      "sha256": "520ff5f9a4045608fad6b08323e459d42853bb3f31688fc057b0217960bdbf54",
+      "source_blob": "643c06b07c2489cca1c00b337dabc74177493243"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_certificate.json",
-      "sha256": "c31777f43a4a1dfc8e15defb6a05c435270e8eba1b74642bc99e0ff79dec76b1",
-      "source_blob": "fbbf832bc9682cecaefb52ea268f797a63430602"
+      "sha256": "d0cdd65e3956e8fab35944386f9b373c96f9661529c343b81c4e8b20ced4aef4",
+      "source_blob": "3e6dc619858d24ee80da4f34a56d110cdde46bf7"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1600,7 +1600,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "407be0a32b47c884f57935d984bfc48917a65ebd",
+    "control_input_head": "326e439cc59839f8ed286488c39c8b16b4a435a7",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
@@ -1687,7 +1687,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+    "observed_source_strategy_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1738,7 +1738,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 306,
+    "prior_scientific_artifacts_byte_unchanged_count": 307,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1772,7 +1772,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+    "scientific_source_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2157,13 +2157,45 @@
       "prior_artifacts_unchanged": 306,
       "prior_artifacts_updated": 1,
       "new_intake_entries": 4
+    },
+    "scene_AF_heat_obstruction": {
+      "source_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
+      "input_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+      "control_input_head": "326e439cc59839f8ed286488c39c8b16b4a435a7",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md",
+      "section": "6",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement",
+      "operator": "Full actual geometric filtration D_b squared on scene-register tracial GNS, b>1 fixed",
+      "result": "No member has a finite positive limit t^2 Tr(exp(-t D_b^2)) as t tends to zero through all positive times.",
+      "completeness": "Every fixed b>1 of the declared operator family, all actual Burnside multiplicities, all archive sectors and the scalar zero mode.",
+      "proof_argument": "Actual dimensions have unique leading 33^(2n)/|G| and controlled subleading 31^(2n). The only possible four-dimensional exponent is b=sqrt(33); two geometric phase limits differ by more than 7*(1-1/1089)/(30*|G|).",
+      "phase_bounds": {
+        "at_one": ">1/3",
+        "at_one_third": "<1/10"
+      },
+      "fixed_phase_geometric_subsequence_limits_exist": true,
+      "no_bootstrap_identification_or_scale_averaging_trace_selection": true,
+      "proof_status": "ANALYTIC_ALL_B_ALL_LEVEL_ASYMPTOTIC_PROOF_NOT_LEAN",
+      "new_Lean_propositions": 0,
+      "metric_exact_controls": 195,
+      "heat_exact_controls": 121,
+      "exact_controls": 316,
+      "mathematical_mutations_rejected": 13,
+      "false_scope_ledgers_rejected": 25,
+      "all_native_F_or_other_physical_readouts_excluded": false,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_parent_contracts_unchanged": true,
+      "scientific_artifact_count": 311,
+      "prior_artifacts_unchanged": 307,
+      "prior_artifacts_updated": 4,
+      "new_artifacts": 0
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+  "previous_source_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2243,11 +2275,12 @@
     "Repair of the primary finite bootstrap/rank-step certificate: both former hand-entered feedbacks are impossible for their supplied projections. Full PQU and golden active compression are now checked at both principal stages on the minimal six-coordinate test carrier. Exact determinant identities distinguish a rank-only opposite-sign transition that exits the golden class. Eleven executed negative controls and five semantic mutations protect the finite algebra, full trace and beta normalization. Supplied heat profiles and projector transitions are not derived native laws; T0-T3 and all physical/parent obligations remain open.",
     "The existing primary rank certificate now distinguishes exact finite logdet contrasts from both endpoint resolvent responses. On realized nested golden steps x < -log(1-x) < x/(1-x), with left gap > x^2/2. Interpolating the projector loses idempotence; a continuous projector path cannot change rank. A positive control preserves the single fixed feedback-only calibration -log(1-x)/x for one- and two-channel additions. This is not a no-go for fixed calibration, nor a native preparation or action replacement. Fourteen negative controls and eight semantic mutations pass; all earlier scopes and terminals remain open.",
     "The literal minimal-code price route is bounded on the complete stated integer-price interface. All fixed scalar probes with a nonzero physical first response require an own code unit O(h); a fixed unit fails. The all-probe theorem has an analytic countable-cover proof, not a finite-sample extrapolation. Nine finite propositions are compiled with literal Phi rebuilt, 185 exact controls pass, six mathematical mutations and eighteen false scope ledgers are rejected. The action lower bound alone does not imply integrality. Golden history log-sums and independently derived shrinking units are preserved exceptions; no own preparation, source, stationarity or parent closure is inferred.",
-    "The actual noncommutative 33-dimensional scene-register AF refinement now has a proved all-level metric tail estimate. Its old constant-two certificate assertion has an exact native counterexample; the repaired bound retains all archive sectors, uses full commutator module compression and proves weak-star metrizability for every fixed b>1. The full proof is analytic, with 195 exact controls, seven rejected mathematical mutations and seventeen false scope ledgers. No physical mesh, scale, common full-price preparation, source or T0 closure is inferred; normalized GNS trace does not replace the bootstrap operator heat trace."
+    "The actual noncommutative 33-dimensional scene-register AF refinement now has a proved all-level metric tail estimate. Its old constant-two certificate assertion has an exact native counterexample; the repaired bound retains all archive sectors, uses full commutator module compression and proves weak-star metrizability for every fixed b>1. The full proof is analytic, with 195 exact controls, seven rejected mathematical mutations and seventeen false scope ledgers. No physical mesh, scale, common full-price preparation, source or T0 closure is inferred; normalized GNS trace does not replace the bootstrap operator heat trace.",
+    "The same actual scene-register AF operator family has a complete full-heat four-dimensional leading-coefficient obstruction for every fixed b>1. Actual Burnside multiplicities and all tails are retained; two rationally separated phase limits exclude a positive ordinary 4D leading coefficient even at the unique matching exponent. This is an analytic all-level result, with 121 added exact heat controls, 316 total controls, thirteen mathematical mutations and twenty-five false scope rejections. Fixed-phase geometric subsequences have positive limits and remain available to a separately derived native physical reading. No physical mesh, bootstrap identification, averaging, source, all-F no-go or T0 closure is inferred."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "43fc7657d88d50f390b72b52e86317e98e1f5974",
+  "source_head": "cad6f9a3168d26c72a72a98a71d737e470bac508",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "812abc87da9c494d14d4b8549b2b219b88c60f86",
+  "source_parent": "43fc7657d88d50f390b72b52e86317e98e1f5974",
   "source_pr": 310
 }
