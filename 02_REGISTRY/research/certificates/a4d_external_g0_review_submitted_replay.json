@@ -1,0 +1,22 @@
+{
+  "inputs_sha256": {
+    "02_REGISTRY/research/inputs/2026-10-07_external_g0/00_RESULT.md": "9221d8ece88f5cb42cbd7e052876b0a7674cfe1c9f9cb1649ba75b45e1e73db3",
+    "02_REGISTRY/research/inputs/2026-10-07_external_g0/01_MAIN_PROOF.md": "84125a80b57e2b3b91c2f7a7c3f787e70a9fb564a635125c7a9b66e75243edfb",
+    "02_REGISTRY/research/inputs/2026-10-07_external_g0/03_EXACT_CERTIFICATE.py": "f7e6b52fa69f006705282bf0c95afba6f46e3b330cc8cfb07158dc2d0378a073",
+    "02_REGISTRY/research/inputs/2026-10-07_external_g0/03_certificate_results.json": "8f1a91c65e655cfdf89d66b2020d3c0219caf8a2ddaed53b436c5c9057eef7d7"
+  },
+  "json_semantically_identical_to_submission": true,
+  "only_source_edit": "Redirect the single hardcoded output JSON path to a task temporary directory; mathematical code unchanged.",
+  "replayed_json_sha256": "8f1a91c65e655cfdf89d66b2020d3c0219caf8a2ddaed53b436c5c9057eef7d7",
+  "reported_controls": 50,
+  "reported_failures": 0,
+  "script_exit_code": 0,
+  "status": "PASS_SUBMITTED_SCRIPT_REPLAY_ONLY",
+  "submitted_json_sha256": "8f1a91c65e655cfdf89d66b2020d3c0219caf8a2ddaed53b436c5c9057eef7d7",
+  "universal_theorems_or_physical_status_certified": false,
+  "versions": {
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  }
+}

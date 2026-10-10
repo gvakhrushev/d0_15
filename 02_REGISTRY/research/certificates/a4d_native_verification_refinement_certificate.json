@@ -1,0 +1,169 @@
+{
+  "checks": [
+    "COMPILED_INTERFACE_CLASSIFICATION_AND_ACTUAL_PHASE_BINDINGS",
+    "ALL_POINT_TEST_RUNS_ARE_EXACTLY_PERMUTATIONS_2",
+    "ACTUAL_INVERSE_PULL_TEST_LAW_2",
+    "CONSTANT_RUN_HAS_NO_POINT_TEST_LIFT_2",
+    "ALL_MAPS_HAVE_FULL_PREDICATE_PULL_TEST_LIFT_2",
+    "ALL_PROCESS_INVARIANT_OBSERVABLES_ARE_CONSTANT_2",
+    "ALL_POINT_TEST_RUNS_ARE_EXACTLY_PERMUTATIONS_3",
+    "ACTUAL_INVERSE_PULL_TEST_LAW_3",
+    "CONSTANT_RUN_HAS_NO_POINT_TEST_LIFT_3",
+    "ALL_MAPS_HAVE_FULL_PREDICATE_PULL_TEST_LIFT_3",
+    "ALL_PROCESS_INVARIANT_OBSERVABLES_ARE_CONSTANT_3",
+    "ALL_POINT_TEST_RUNS_ARE_EXACTLY_PERMUTATIONS_4",
+    "ACTUAL_INVERSE_PULL_TEST_LAW_4",
+    "CONSTANT_RUN_HAS_NO_POINT_TEST_LIFT_4",
+    "ALL_MAPS_HAVE_FULL_PREDICATE_PULL_TEST_LIFT_4",
+    "ALL_PROCESS_INVARIANT_OBSERVABLES_ARE_CONSTANT_4",
+    "OWNED_CONCRETE_MEMBERSHIP_VALUE_CONTROLS",
+    "HISTORY_COMPARISON_REJECTED",
+    "FULL_CURRENT_COMPARISONS_EXCEED_TWO_PRIMITIVE_PROFILES",
+    "LITERAL_NATIVE_THREE_PHASE_DIRICHLET_ZERO_AND_PULSE",
+    "LITERAL_NATIVE_RADIAL_ENERGY",
+    "NATIVE_CENTERED_CONTRAST_SIGN_AND_FACTOR",
+    "VERIFIED_FLIP_DOES_NOT_ENFORCE_NATIVE_STATIONARITY",
+    "ACTUAL_COMPOSED_PHASE_PROJECTION_2_3",
+    "ACTUAL_COMPOSED_PHASE_PROJECTION_3_4",
+    "ACTUAL_COMPOSED_PHASE_PROJECTION_3_7",
+    "ACTUAL_COMPOSED_PHASE_PROJECTION_4_8",
+    "ACTUAL_COMPOSED_PHASE_PROJECTION_5_13",
+    "ACTUAL_COMPOSED_PHASE_PROJECTION_8_16",
+    "ACTUAL_COMPOSED_PHASE_PROJECTION_12_24",
+    "LONG_COMPOSITE_IS_NOT_ONE_MODULO",
+    "COMPLETE_FINITE_HORIZON_FIBER_CLASSIFICATION_2_3",
+    "ALL_LOWER_STAGES_FIX_ZERO_2_3",
+    "ONLY_IDENTITY_PREFIX_CAN_EXTEND_2_3",
+    "COMPLETE_FINITE_HORIZON_FIBER_CLASSIFICATION_2_3_4",
+    "ALL_LOWER_STAGES_FIX_ZERO_2_3_4",
+    "ONLY_IDENTITY_PREFIX_CAN_EXTEND_2_3_4",
+    "COMPLETE_FINITE_HORIZON_FIBER_CLASSIFICATION_2_3_4_5",
+    "ALL_LOWER_STAGES_FIX_ZERO_2_3_4_5",
+    "ONLY_IDENTITY_PREFIX_CAN_EXTEND_2_3_4_5",
+    "COMPLETE_FINITE_HORIZON_FIBER_CLASSIFICATION_2_3_4_5_6",
+    "ALL_LOWER_STAGES_FIX_ZERO_2_3_4_5_6",
+    "ONLY_IDENTITY_PREFIX_CAN_EXTEND_2_3_4_5_6",
+    "COMPLETE_FINITE_HORIZON_FIBER_CLASSIFICATION_3_5",
+    "ALL_LOWER_STAGES_FIX_ZERO_3_5",
+    "COMPLETE_FINITE_HORIZON_FIBER_CLASSIFICATION_2_4_6",
+    "ALL_LOWER_STAGES_FIX_ZERO_2_4_6",
+    "COMPLETE_FINITE_HORIZON_FIBER_CLASSIFICATION_3_5_7",
+    "ALL_LOWER_STAGES_FIX_ZERO_3_5_7",
+    "DENSE_FOUR_MULTIPLE_SUBSEQUENCE_HAS_NONTRIVIAL_EXACT_PROCESSES",
+    "DENSE_BIRTH_BLOCK_DISPLACEMENT_IS_AT_MOST_THREE",
+    "SPARSE_FOUR_MULTIPLE_SUBSEQUENCE_ALSO_COMMUTES_EXACTLY",
+    "SPARSE_MACROSCOPIC_MOTION_IS_NOT_EXCLUDED",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_2",
+    "HALF_TURN_COMPOSED_ERROR_ONE_HALF_2",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_3",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_4",
+    "HALF_TURN_COMPOSED_ERROR_ONE_HALF_4",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_5",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_8",
+    "HALF_TURN_COMPOSED_ERROR_ONE_HALF_8",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_9",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_12",
+    "HALF_TURN_COMPOSED_ERROR_ONE_HALF_12",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_16",
+    "HALF_TURN_COMPOSED_ERROR_ONE_HALF_16",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_32",
+    "HALF_TURN_COMPOSED_ERROR_ONE_HALF_32",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_64",
+    "HALF_TURN_COMPOSED_ERROR_ONE_HALF_64",
+    "HALF_TURN_ADJACENT_ERROR_EXACTLY_INVERSE_SIZE_128",
+    "HALF_TURN_COMPOSED_ERROR_ONE_HALF_128",
+    "FOUR_ROLE_PERMUTATION_IS_NONTRIVIAL_AND_COHERENT_2",
+    "FOUR_ROLE_PERMUTATION_IS_NONTRIVIAL_AND_COHERENT_3",
+    "FOUR_ROLE_PERMUTATION_IS_NONTRIVIAL_AND_COHERENT_4",
+    "FLATTENED_AND_ROLE_PRODUCT_FIBER_TYPES_DIFFER"
+  ],
+  "finite_horizon_count": "(L0-1)! product_(1<=j<H) (Delta L_j)! (Delta L_H+1)!",
+  "finite_prefix_counts": {
+    "2_3": {
+      "extendable_families": 1,
+      "finite_families": 2
+    },
+    "2_3_4": {
+      "extendable_families": 1,
+      "finite_families": 2
+    },
+    "2_3_4_5": {
+      "extendable_families": 1,
+      "finite_families": 2
+    },
+    "2_3_4_5_6": {
+      "extendable_families": 1,
+      "finite_families": 2
+    },
+    "2_4_6": {
+      "extendable_families": 4,
+      "finite_families": 12
+    },
+    "3_5": {
+      "extendable_families": 4,
+      "finite_families": 12
+    },
+    "3_5_7": {
+      "extendable_families": 8,
+      "finite_families": 24
+    }
+  },
+  "flat_fibers_2_to_3": {
+    "5": 15,
+    "6": 1
+  },
+  "full_phase_coherent_permutations": "identity only",
+  "half_turn_adjacent_error": "1/L",
+  "half_turn_composed_error": "1/2",
+  "input_head": "606d8774bcaf4684d8caac60cb73912a8827091a",
+  "inputs_sha256": {
+    "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean": "2097ab79c64fa719fe066a5545ca0f8b0f8944f9a4900268d0630643bb2618fd",
+    "03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean": "abb9ed9de2de239299b8fc64fdadff86945597b71fcc4c107af4d894648ce6a5",
+    "03_FORMALIZATION/D0/Foundation/PhysicalComparisonRepresentation.lean": "b6f2422cfe9245b649693681d84e8e1e857ca36d68ab6cee71fa7cab888c852d",
+    "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean": "e851960cf5ed7c3abdb488dc70a2ed098d9a6bfb2ca0a60d2cbecda9f93da48d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalDirichlet.lean": "1311fb05b81e2131724f096428e177e9c61a97497b8dcec9843912faaaf7a9f6",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean": "591b39b7c7f618c08ada52713f8ce490d4e7973a8f54a0991523c2f04d260108",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Synthesis/ConcretePhysicalDetectorRepresentation.lean": "365abdc75c7947679ffc2c113a4f83d351f6ec8c694fe068cbb423dd32bf616c"
+  },
+  "lean_receipt_sha256": "c0402c6a4a5a434da876fe794bd2fb79c3513dea6728ef0d22f519e37a3a27d8",
+  "native_pulse_energy": "4",
+  "native_radial_raw_contrast": "16 epsilon",
+  "point_test_runs": "all and only bijections",
+  "process_counts": {
+    "2": {
+      "all_runs": 4,
+      "point_test_lifts": 2,
+      "predicate_lifts": 4
+    },
+    "3": {
+      "all_runs": 27,
+      "point_test_lifts": 6,
+      "predicate_lifts": 27
+    },
+    "4": {
+      "all_runs": 256,
+      "point_test_lifts": 24,
+      "predicate_lifts": 256
+    }
+  },
+  "protected_exceptions": [
+    "Physical realization/effective comparison of a classical equality oracle",
+    "Different empirical test spaces and quotient processes",
+    "Approximate refinement or different metrics",
+    "Subsequences including sparse L in 4N",
+    "Four-Role or flattened archive carriers",
+    "Independently owned native variation constraints and physical readouts"
+  ],
+  "role_product_fibers_2_to_3": {
+    "1": 1,
+    "2": 4,
+    "4": 6,
+    "8": 4,
+    "16": 1
+  },
+  "scope": "Actual formal verification contract and point-test processes; exact one-dimensional phase permutations. No selection of physical dynamics and no whole-core no-go.",
+  "status": "PASS",
+  "subsequence_group": "Sym({1,...,L0-1}) times product_j>=1 Sym({L_(j-1),...,L_j-1})",
+  "verifiable_iff": "Nontrivial empirical quotient (classical formal representation only)"
+}

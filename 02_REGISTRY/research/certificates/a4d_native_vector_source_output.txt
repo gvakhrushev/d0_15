@@ -1,0 +1,61 @@
+'D0.Research.NativeVectorSource.comm_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.literal_energy_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.literal_self_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.literal_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.owned_action_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.owned_action_polarization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.owned_action_first_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.full_field_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.background_first_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.unsourced_zero_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.actual_joint_ward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.sourced_ward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.necessary_source_compatibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVectorSource.solutions_differ_by_commutant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVectorSource.actual_range_orthogonal_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVectorSource.source_solvable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.kernel_direction_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.full_background_gate_rejects_nonzero_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVectorSource.background_kernel_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeVectorSource.supplied_source_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeVectorSource.owned_action_first_variation {n : Type} [Fintype n] [DecidableEq n]
+  (D A B : Matrix n n ℝ) (c : ℝ) (hD : isSkew D) (hA : isSkew A) (hB : isSkew B) :
+  HasDerivAt (fun t => gaugeKineticAction (discreteGaugeCurvature D (A + t • B)) c)
+    (2 * c * D0.Research.NativeVectorSource.frob (vectorLaplacian D A) B) 0
+D0.Research.NativeVectorSource.full_field_gate {n : Type} [Fintype n] [DecidableEq n] (D A : Matrix n n ℝ) (c : ℝ)
+  (hc : c ≠ 0) (hD : isSkew D) (hA : isSkew A) :
+  D0.Research.NativeVectorSource.FreeFieldStationary D A c ↔ D0.Algebra.commutator D A = 0
+D0.Research.NativeVectorSource.background_first_variation {n : Type} [Fintype n] [DecidableEq n] (D A B : Matrix n n ℝ)
+  (c : ℝ) (hD : isSkew D) (hA : isSkew A) (hB : isSkew B) :
+  HasDerivAt (fun t => gaugeKineticAction (discreteGaugeCurvature (D + t • B) A) c)
+    (2 * c * D0.Research.NativeVectorSource.frob (D0.Research.NativeVectorSource.backgroundResponse D A) B) 0
+D0.Research.NativeVectorSource.actual_joint_ward {n : Type} [Fintype n] [DecidableEq n] (D A : Matrix n n ℝ) :
+  D0.Algebra.commutator D (D0.Research.NativeVectorSource.backgroundResponse D A) +
+      D0.Algebra.commutator A (vectorLaplacian D A) =
+    0
+D0.Research.NativeVectorSource.source_solvable_iff {n : Type} [Fintype n] [DecidableEq n] (D J : Matrix n n ℝ)
+  (hD : isSkew D) (hJ : isSkew J) :
+  (∃ A, isSkew A ∧ vectorLaplacian D A = J) ↔
+    ∀ (B : Matrix n n ℝ), isSkew B → D0.Algebra.commutator D B = 0 → D0.Research.NativeVectorSource.frob J B = 0
+D0.Research.NativeVectorSource.full_background_gate_rejects_nonzero_current {n : Type} [Fintype n] [DecidableEq n]
+  (D A J : Matrix n n ℝ) (hA : isSkew A) (hfield : vectorLaplacian D A = J)
+  (hback : D0.Research.NativeVectorSource.backgroundResponse D A = 0) : J = 0
+D0.Research.NativeVectorSource.background_kernel_shift {n : Type} [Fintype n] [DecidableEq n] (D A Z : Matrix n n ℝ)
+  (hZ : D0.Algebra.commutator D Z = 0) :
+  D0.Research.NativeVectorSource.backgroundResponse D (A + Z) =
+    D0.Research.NativeVectorSource.backgroundResponse D A + D0.Algebra.commutator Z (D0.Algebra.commutator D A)
+D0.Research.NativeVectorSource.supplied_source_gate {n : Type} [Fintype n] [DecidableEq n] (D A J : Matrix n n ℝ)
+  (hD : isSkew D) (hA : isSkew A) (hJ : isSkew J) :
+  (∀ (B : Matrix n n ℝ),
+      isSkew B →
+        deriv (fun t => gaugeKineticAction (discreteGaugeCurvature D (A + t • B)) (1 / 2)) 0 =
+          D0.Research.NativeVectorSource.frob J B) ↔
+    vectorLaplacian D A = J

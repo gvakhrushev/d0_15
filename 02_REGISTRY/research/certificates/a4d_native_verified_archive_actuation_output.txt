@@ -1,0 +1,497 @@
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:676:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:689:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:964:4: warning: 'change Complex.normSq (fullAmplify U z χ w i z) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:1388:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:1817:28: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:2315:10: warning: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:2565:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:2565:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean:4073:4: warning: unused variable `n`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D0.Research.VerifiedArchiveActuation.opposite_exact_outcomes_are_orthogonal.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (Z : E →L[ℝ] E) (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v)) (u v : E)
+  (hu : Z u = -u) (hv : Z v = v) : inner ℝ u v = 0
+'D0.Research.VerifiedArchiveActuation.opposite_exact_outcomes_are_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.opposite_unit_outcomes_have_fixed_complete_distance.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (Z : E →L[ℝ] E) (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v))
+  (u v : E) (hu : Z u = -u) (hv : Z v = v) (hnu : ‖u‖ = 1) (hnv : ‖v‖ = 1) : ‖u - v‖ ^ 2 = 2
+'D0.Research.VerifiedArchiveActuation.opposite_unit_outcomes_have_fixed_complete_distance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.old_probe_keeps_the_internal_outcome.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (S Z : E →L[ℝ] E) (hC : ∀ (x : E), Z (S x) = S (Z x)) (u : E) (hu : Z u = u) : Z (S u) = S u
+'D0.Research.VerifiedArchiveActuation.old_probe_keeps_the_internal_outcome' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.every_exact_complete_comparison_has_a_fixed_archive_commutator.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (S Z U : E →L[ℝ] E) (hS : ∀ (x : E), ‖S x‖ = ‖x‖)
+  (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v))
+  (hC : ∀ (x : E), Z (S x) = S (Z x)) (x : E) (hx : ‖x‖ = 1) (h0 : Z (U x) = U x) (h1 : Z (U (S x)) = -U (S x)) :
+  ‖(U ∘SL S - S ∘SL U) x‖ ^ 2 = 2
+'D0.Research.VerifiedArchiveActuation.every_exact_complete_comparison_has_a_fixed_archive_commutator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.every_exact_complete_comparison_requires_uniform_archive_actuation.{u_1}
+  {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E] (S Z U : E →L[ℝ] E) (hS : ∀ (x : E), ‖S x‖ = ‖x‖)
+  (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v))
+  (hC : ∀ (x : E), Z (S x) = S (Z x)) (x : E) (hx : ‖x‖ = 1) (h0 : Z (U x) = U x) (h1 : Z (U (S x)) = -U (S x)) :
+  √2 ≤ ‖U ∘SL S - S ∘SL U‖
+'D0.Research.VerifiedArchiveActuation.every_exact_complete_comparison_requires_uniform_archive_actuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.no_commuting_complete_comparison_realizes_both_truth_values.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (S Z U : E →L[ℝ] E) (hS : ∀ (x : E), ‖S x‖ = ‖x‖)
+  (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v))
+  (hC : ∀ (x : E), Z (S x) = S (Z x)) (x : E) (hx : ‖x‖ = 1) (h0 : Z (U x) = U x) (h1 : Z (U (S x)) = -U (S x)) :
+  U ∘SL S ≠ S ∘SL U
+'D0.Research.VerifiedArchiveActuation.no_commuting_complete_comparison_realizes_both_truth_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.approximate_opposite_unit_outcomes_control_their_inner_product.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (Z : E →L[ℝ] E) (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v))
+  (u v : E) (hnu : ‖u‖ = 1) (hnv : ‖v‖ = 1) : 2 * |inner ℝ u v| ≤ ‖Z u + u‖ + ‖Z v - v‖
+'D0.Research.VerifiedArchiveActuation.approximate_opposite_unit_outcomes_control_their_inner_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.approximate_comparison_requires_nondiluting_archive_actuation.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (S Z U : E →L[ℝ] E) (hS : ∀ (x : E), ‖S x‖ = ‖x‖)
+  (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v))
+  (hC : ∀ (x : E), Z (S x) = S (Z x)) (x : E) (hx : ‖x‖ = 1) :
+  2 - (‖Z (U (S x)) + U (S x)‖ + ‖Z (U x) - U x‖) ≤ ‖U ∘SL S - S ∘SL U‖ ^ 2
+'D0.Research.VerifiedArchiveActuation.approximate_comparison_requires_nondiluting_archive_actuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.commuting_comparison_has_a_fixed_total_truth_error.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (S Z U : E →L[ℝ] E) (hS : ∀ (x : E), ‖S x‖ = ‖x‖)
+  (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v))
+  (hC : ∀ (x : E), Z (S x) = S (Z x)) (hcomm : U ∘SL S = S ∘SL U) (x : E) (hx : ‖x‖ = 1) :
+  2 ≤ ‖Z (U (S x)) + U (S x)‖ + ‖Z (U x) - U x‖
+'D0.Research.VerifiedArchiveActuation.commuting_comparison_has_a_fixed_total_truth_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.full_refinement_intertwines_the_archive_actuation.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [NormedAddCommGroup F] [InnerProductSpace ℝ F]
+  (J : E →ₗᵢ[ℝ] F) (S U : E →L[ℝ] E) (S' U' : F →L[ℝ] F) (hS : ∀ (x : E), S' (J x) = J (S x))
+  (hU : ∀ (x : E), U' (J x) = J (U x)) (x : E) : (U' ∘SL S' - S' ∘SL U') (J x) = J ((U ∘SL S - S ∘SL U) x)
+'D0.Research.VerifiedArchiveActuation.full_refinement_intertwines_the_archive_actuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.exact_archive_actuation_floor_survives_every_complete_refinement.{u_1, u_2}
+  {E : Type u_1} {F : Type u_2} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [NormedAddCommGroup F]
+  [InnerProductSpace ℝ F] (J : E →ₗᵢ[ℝ] F) (S U : E →L[ℝ] E) (S' U' : F →L[ℝ] F) (hS : ∀ (x : E), S' (J x) = J (S x))
+  (hU : ∀ (x : E), U' (J x) = J (U x)) (x : E) (hx : ‖x‖ = 1) (hf : ‖(U ∘SL S - S ∘SL U) x‖ ^ 2 = 2) :
+  √2 ≤ ‖U' ∘SL S' - S' ∘SL U'‖
+'D0.Research.VerifiedArchiveActuation.exact_archive_actuation_floor_survives_every_complete_refinement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.owned_comparison_separates_reference_from_every_distinct_record
+  {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+  (V : D0.Foundation.VerifiabilityNecessity.VerificationContract P) (l : P.Line) (c : P.Catalogue) (x y : P.State)
+  (hxy : x ≠ y) : P.compare l c (P.record x) (P.record x) = false ∧ P.compare l c (P.record y) (P.record x) = true
+'D0.Research.VerifiedArchiveActuation.owned_comparison_separates_reference_from_every_distinct_record' depends on axioms: [propext]
+D0.Research.VerifiedArchiveActuation.owned_verification_realization_requires_record_to_detector_interaction.{u_1}
+  {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+  (V : D0.Foundation.VerifiabilityNecessity.VerificationContract P) (l : P.Line) (c : P.Catalogue) (x y : P.State)
+  (hxy : x ≠ y) {D : Type u_1} (blank : D) (readout : D → Bool) (U : P.Record × D → P.Record × D)
+  (hU : ∀ (z : P.State), readout (U (P.record z, blank)).2 = P.compare l c (P.record z) (P.record x)) :
+  ¬∃ f g, ∀ (q : P.Record × D), U q = (f q.1, g q.2)
+'D0.Research.VerifiedArchiveActuation.owned_verification_realization_requires_record_to_detector_interaction' depends on axioms: [propext]
+D0.Research.VerifiedArchiveActuation.canonical_binary_truth_is_the_retained_bit (r : Bool) :
+  D0.Foundation.VerifiabilityNecessity.canonicalProtocol.compare false PUnit.unit
+      (D0.Foundation.VerifiabilityNecessity.canonicalProtocol.record r)
+      (D0.Foundation.VerifiabilityNecessity.canonicalProtocol.record false) =
+    r
+'D0.Research.VerifiedArchiveActuation.canonical_binary_truth_is_the_retained_bit' does not depend on any axioms
+D0.Research.VerifiedArchiveActuation.every_retaining_binary_basis_comparison_is_owned_registration
+  (U : Equiv.Perm (Bool × Bool)) (hr : ∀ (q : Bool × Bool), (U q).1 = q.1) (ht : ∀ (r : Bool), (U (r, false)).2 = r) :
+  U = D0.Representation.FiniteProtocolClock.register
+'D0.Research.VerifiedArchiveActuation.every_retaining_binary_basis_comparison_is_owned_registration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.canonical_owned_binary_verification_forces_registration_in_the_basis_class
+  (U : Equiv.Perm (Bool × Bool)) (hr : ∀ (q : Bool × Bool), (U q).1 = q.1)
+  (ht :
+    ∀ (r : Bool),
+      (U (r, false)).2 =
+        D0.Foundation.VerifiabilityNecessity.canonicalProtocol.compare false PUnit.unit
+          (D0.Foundation.VerifiabilityNecessity.canonicalProtocol.record r)
+          (D0.Foundation.VerifiabilityNecessity.canonicalProtocol.record false)) :
+  U = D0.Representation.FiniteProtocolClock.register
+'D0.Research.VerifiedArchiveActuation.canonical_owned_binary_verification_forces_registration_in_the_basis_class' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.reverse_registration_is_old_record_to_new_flag (a r : Bool) :
+  D0.Research.VerifiedArchiveActuation.reverseRegister (a, r) = (r ^^ a, r)
+'D0.Research.VerifiedArchiveActuation.reverse_registration_is_old_record_to_new_flag' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.reverse_registration_never_resets_the_retained_record (q : Bool × Bool) :
+  (D0.Research.VerifiedArchiveActuation.reverseRegister q).2 = q.2
+'D0.Research.VerifiedArchiveActuation.reverse_registration_never_resets_the_retained_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.three_owned_registrations_exchange_the_role_coordinates (q : Bool × Bool) :
+  D0.Research.VerifiedArchiveActuation.reverseRegister
+      (D0.Representation.FiniteProtocolClock.register (D0.Research.VerifiedArchiveActuation.reverseRegister q)) =
+    (q.2, q.1)
+'D0.Research.VerifiedArchiveActuation.three_owned_registrations_exchange_the_role_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.reverse_copy_is_complete_involution :
+  D0.Research.VerifiedArchiveActuation.reverseCopy * D0.Research.VerifiedArchiveActuation.reverseCopy = 1
+'D0.Research.VerifiedArchiveActuation.reverse_copy_is_complete_involution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.reverse_copy_reads_both_blank_inputs_without_erasure :
+  D0.Research.VerifiedArchiveActuation.reverseCopy.mulVec D0.Research.VerifiedArchiveActuation.blank0 =
+      D0.Research.VerifiedArchiveActuation.blank0 ∧
+    D0.Research.VerifiedArchiveActuation.reverseCopy.mulVec D0.Research.VerifiedArchiveActuation.blank1 = ![0, 0, 0, 1]
+'D0.Research.VerifiedArchiveActuation.reverse_copy_reads_both_blank_inputs_without_erasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.opposite_directions_synthesize_complete_exchange :
+  D0.Research.VerifiedArchiveActuation.reverseCopy * D0.Research.GoldenCoherentAmplification.retainedCopy *
+      D0.Research.VerifiedArchiveActuation.reverseCopy =
+    D0.Research.VerifiedArchiveActuation.exchange
+'D0.Research.VerifiedArchiveActuation.opposite_directions_synthesize_complete_exchange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.exchange_keeps_both_coordinates :
+  D0.Research.VerifiedArchiveActuation.exchange * D0.Research.VerifiedArchiveActuation.exchange = 1 ∧
+    D0.Research.VerifiedArchiveActuation.exchange.transpose = D0.Research.VerifiedArchiveActuation.exchange
+'D0.Research.VerifiedArchiveActuation.exchange_keeps_both_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.comparison_and_recording_move_the_owned_golden_gate_to_old_memory (a p : ℝ) :
+  D0.Research.VerifiedArchiveActuation.exchange * D0.Research.GoldenCoherentAmplification.goldenSystemGate a p *
+      D0.Research.VerifiedArchiveActuation.exchange =
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate a p
+'D0.Research.VerifiedArchiveActuation.comparison_and_recording_move_the_owned_golden_gate_to_old_memory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.golden_memory_actuation_needs_only_the_same_gate_and_both_recording_directions
+  (a p : ℝ) :
+  D0.Research.VerifiedArchiveActuation.reverseCopy * D0.Research.GoldenCoherentAmplification.retainedCopy *
+          D0.Research.VerifiedArchiveActuation.reverseCopy *
+        D0.Research.GoldenCoherentAmplification.goldenSystemGate a p *
+      (D0.Research.VerifiedArchiveActuation.reverseCopy * D0.Research.GoldenCoherentAmplification.retainedCopy *
+        D0.Research.VerifiedArchiveActuation.reverseCopy) =
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate a p
+'D0.Research.VerifiedArchiveActuation.golden_memory_actuation_needs_only_the_same_gate_and_both_recording_directions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.synthesized_owned_golden_memory_gate_breaks_the_old_archive_invariant (a p : ℝ)
+  (hp : p ≠ 0) :
+  D0.Research.VerifiedArchiveActuation.exchange * D0.Research.GoldenCoherentAmplification.goldenSystemGate a p *
+        D0.Research.VerifiedArchiveActuation.exchange *
+      D0.Research.RetainedRecordAdmission.archiveX ≠
+    D0.Research.RetainedRecordAdmission.archiveX *
+      (D0.Research.VerifiedArchiveActuation.exchange * D0.Research.GoldenCoherentAmplification.goldenSystemGate a p *
+        D0.Research.VerifiedArchiveActuation.exchange)
+'D0.Research.VerifiedArchiveActuation.synthesized_owned_golden_memory_gate_breaks_the_old_archive_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.every_retaining_real_comparison_has_only_four_signed_columns
+  (U : Matrix (Fin 4) (Fin 4) ℝ) (h : D0.Research.VerifiedArchiveActuation.RetainingRealComparison U) :
+  ∃ c, (∀ (i : Fin 4), c i ^ 2 = 1) ∧ U = D0.Research.VerifiedArchiveActuation.signedComparison c
+'D0.Research.VerifiedArchiveActuation.every_retaining_real_comparison_has_only_four_signed_columns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.every_four_signed_columns_realize_the_same_exact_comparison (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  D0.Research.VerifiedArchiveActuation.RetainingRealComparison (D0.Research.VerifiedArchiveActuation.signedComparison c)
+'D0.Research.VerifiedArchiveActuation.every_four_signed_columns_realize_the_same_exact_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.complete_retaining_real_comparison_classification (U : Matrix (Fin 4) (Fin 4) ℝ) :
+  D0.Research.VerifiedArchiveActuation.RetainingRealComparison U ↔
+    ∃ c, (∀ (i : Fin 4), c i ^ 2 = 1) ∧ U = D0.Research.VerifiedArchiveActuation.signedComparison c
+'D0.Research.VerifiedArchiveActuation.complete_retaining_real_comparison_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.exact_binary_truth_does_not_select_unsigned_coherent_registration :
+  D0.Research.VerifiedArchiveActuation.RetainingRealComparison
+      (D0.Research.VerifiedArchiveActuation.signedComparison ![1, 1, 1, -1]) ∧
+    D0.Research.VerifiedArchiveActuation.signedComparison ![1, 1, 1, -1] ≠
+      D0.Research.VerifiedArchiveActuation.reverseCopy
+'D0.Research.VerifiedArchiveActuation.exact_binary_truth_does_not_select_unsigned_coherent_registration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.signed_comparison_is_unsigned_copy_with_retained_input_phases (c : Fin 4 → ℝ) :
+  D0.Research.VerifiedArchiveActuation.signedComparison c =
+    D0.Research.VerifiedArchiveActuation.reverseCopy * Matrix.diagonal c
+'D0.Research.VerifiedArchiveActuation.signed_comparison_is_unsigned_copy_with_retained_input_phases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.every_signed_comparison_has_fixed_complete_blank_commutator_mass (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  ∑ i,
+      (D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.RetainedRecordAdmission.archiveX -
+              D0.Research.RetainedRecordAdmission.archiveX *
+                D0.Research.VerifiedArchiveActuation.signedComparison c).mulVec
+          D0.Research.VerifiedArchiveActuation.blank0 i ^
+        2 =
+    2
+'D0.Research.VerifiedArchiveActuation.every_signed_comparison_has_fixed_complete_blank_commutator_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.native_reverse_copy_is_exactly_the_owned_reversible_registration (i j : Fin 4) :
+  D0.Research.VerifiedArchiveActuation.reverseCopy i j =
+    if
+        D0.Research.VerifiedArchiveActuation.bitCoordinates i =
+          D0.Research.VerifiedArchiveActuation.reverseRegister
+            (D0.Research.VerifiedArchiveActuation.bitCoordinates j) then
+      1
+    else 0
+'D0.Research.VerifiedArchiveActuation.native_reverse_copy_is_exactly_the_owned_reversible_registration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.native_forward_copy_is_exactly_the_owned_reversible_registration (i j : Fin 4) :
+  D0.Research.GoldenCoherentAmplification.retainedCopy i j =
+    if
+        D0.Research.VerifiedArchiveActuation.bitCoordinates i =
+          D0.Representation.FiniteProtocolClock.register (D0.Research.VerifiedArchiveActuation.bitCoordinates j) then
+      1
+    else 0
+'D0.Research.VerifiedArchiveActuation.native_forward_copy_is_exactly_the_owned_reversible_registration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.native_flag_and_old_record_probes_act_on_different_roles :
+  D0.Research.VerifiedArchiveActuation.flagZ * D0.Research.RetainedRecordAdmission.archiveX =
+      D0.Research.RetainedRecordAdmission.archiveX * D0.Research.VerifiedArchiveActuation.flagZ ∧
+    D0.Research.VerifiedArchiveActuation.flagZ.transpose = D0.Research.VerifiedArchiveActuation.flagZ ∧
+      D0.Research.RetainedRecordAdmission.archiveX.transpose * D0.Research.RetainedRecordAdmission.archiveX = 1
+'D0.Research.VerifiedArchiveActuation.native_flag_and_old_record_probes_act_on_different_roles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.native_reverse_registration_breaks_the_old_archive_probe :
+  D0.Research.VerifiedArchiveActuation.reverseCopy * D0.Research.RetainedRecordAdmission.archiveX ≠
+    D0.Research.RetainedRecordAdmission.archiveX * D0.Research.VerifiedArchiveActuation.reverseCopy
+'D0.Research.VerifiedArchiveActuation.native_reverse_registration_breaks_the_old_archive_probe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.two_directions_are_not_the_same_record_operation :
+  D0.Research.VerifiedArchiveActuation.reverseCopy ≠ D0.Research.GoldenCoherentAmplification.retainedCopy
+'D0.Research.VerifiedArchiveActuation.two_directions_are_not_the_same_record_operation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.whole_record_to_flag_reading_and_exchange_do_not_change_p0 :
+  D0.Research.VerifiedArchiveActuation.reverseCopy * D0.Research.GoldenCoherentAmplification.retainedCopy *
+          D0.Research.VerifiedArchiveActuation.reverseCopy *
+        D0.Research.GoldenCoherentAmplification.goldenSystemGate (√D0.primitiveRoot) D0.primitiveRoot *
+      (D0.Research.VerifiedArchiveActuation.reverseCopy * D0.Research.GoldenCoherentAmplification.retainedCopy *
+        D0.Research.VerifiedArchiveActuation.reverseCopy) =
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate (√D0.primitiveRoot) D0.primitiveRoot
+'D0.Research.VerifiedArchiveActuation.whole_record_to_flag_reading_and_exchange_do_not_change_p0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.every_complete_realization_of_owned_verification_requires_archive_actuation.{u_1}
+  {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+  (V : D0.Foundation.VerifiabilityNecessity.VerificationContract P) (l : P.Line) (c : P.Catalogue) (x y : P.State)
+  (hxy : x ≠ y) (encode : P.Record → E) (S Z U : E →L[ℝ] E) (hS : ∀ (q : E), ‖S q‖ = ‖q‖) (hU : ∀ (q : E), ‖U q‖ = ‖q‖)
+  (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v)) (hC : ∀ (q : E), Z (S q) = S (Z q))
+  (hx : ‖encode (P.record x)‖ = 1) (hpair : S (encode (P.record x)) = encode (P.record y))
+  (hout :
+    ∀ (z : P.State),
+      Z (U (encode (P.record z))) =
+        D0.Research.VerifiedArchiveActuation.outcomeSign (P.compare l c (P.record z) (P.record x)) •
+          U (encode (P.record z))) :
+  √2 ≤ ‖U ∘SL S - S ∘SL U‖
+'D0.Research.VerifiedArchiveActuation.every_complete_realization_of_owned_verification_requires_archive_actuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.owned_verification_error_and_archive_actuation_have_a_fixed_tradeoff.{u_1}
+  {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+  (V : D0.Foundation.VerifiabilityNecessity.VerificationContract P) (l : P.Line) (c : P.Catalogue) (x y : P.State)
+  (hxy : x ≠ y) (encode : P.Record → E) (S Z U : E →L[ℝ] E) (hS : ∀ (q : E), ‖S q‖ = ‖q‖) (hU : ∀ (q : E), ‖U q‖ = ‖q‖)
+  (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v)) (hC : ∀ (q : E), Z (S q) = S (Z q))
+  (hx : ‖encode (P.record x)‖ = 1) (hpair : S (encode (P.record x)) = encode (P.record y)) :
+  2 -
+      (‖Z (U (encode (P.record x))) -
+            D0.Research.VerifiedArchiveActuation.outcomeSign (P.compare l c (P.record x) (P.record x)) •
+              U (encode (P.record x))‖ +
+        ‖Z (U (encode (P.record y))) -
+            D0.Research.VerifiedArchiveActuation.outcomeSign (P.compare l c (P.record y) (P.record x)) •
+              U (encode (P.record y))‖) ≤
+    ‖U ∘SL S - S ∘SL U‖ ^ 2
+'D0.Research.VerifiedArchiveActuation.owned_verification_error_and_archive_actuation_have_a_fixed_tradeoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.exact_retained_comparison_forces_orthogonality_of_distinct_encoded_records.{u_1}
+  {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E] (J : E →ₗᵢ[ℝ] E) (Z : E →L[ℝ] E)
+  (hZ : ∀ (u v : E), inner ℝ (Z u) v = inner ℝ u (Z v)) (u v : E) (hu : Z (J u) = -J u) (hv : Z (J v) = J v) :
+  inner ℝ u v = 0
+'D0.Research.VerifiedArchiveActuation.exact_retained_comparison_forces_orthogonality_of_distinct_encoded_records' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.literal_native_golden_memory_actuation_is_the_same_owned_gate :
+  D0.Research.VerifiedArchiveActuation.exchange *
+        D0.Research.GoldenCoherentAmplification.goldenSystemGate (√D0.primitiveRoot) D0.primitiveRoot *
+      D0.Research.VerifiedArchiveActuation.exchange =
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate (√D0.primitiveRoot) D0.primitiveRoot
+'D0.Research.VerifiedArchiveActuation.literal_native_golden_memory_actuation_is_the_same_owned_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.literal_p0_synthesized_memory_gate_changes_the_old_archive_probe :
+  D0.Research.VerifiedArchiveActuation.exchange *
+          D0.Research.GoldenCoherentAmplification.goldenSystemGate (√D0.primitiveRoot) D0.primitiveRoot *
+        D0.Research.VerifiedArchiveActuation.exchange *
+      D0.Research.RetainedRecordAdmission.archiveX ≠
+    D0.Research.RetainedRecordAdmission.archiveX *
+      (D0.Research.VerifiedArchiveActuation.exchange *
+          D0.Research.GoldenCoherentAmplification.goldenSystemGate (√D0.primitiveRoot) D0.primitiveRoot *
+        D0.Research.VerifiedArchiveActuation.exchange)
+'D0.Research.VerifiedArchiveActuation.literal_p0_synthesized_memory_gate_changes_the_old_archive_probe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.every_boolean_phase_signature_has_unit_columns (e : Fin 4 → Bool) (i : Fin 4) :
+  D0.Research.VerifiedArchiveActuation.phaseVector e i ^ 2 = 1
+'D0.Research.VerifiedArchiveActuation.every_boolean_phase_signature_has_unit_columns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.four_column_phases_determine_the_complete_real_operator :
+  Function.Injective D0.Research.VerifiedArchiveActuation.signedComparison
+'D0.Research.VerifiedArchiveActuation.four_column_phases_determine_the_complete_real_operator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.complete_phase_signature_representation_is_injective :
+  Function.Injective D0.Research.VerifiedArchiveActuation.comparisonOfSignature
+'D0.Research.VerifiedArchiveActuation.complete_phase_signature_representation_is_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.complete_phase_signature_representation_is_surjective :
+  Function.Surjective D0.Research.VerifiedArchiveActuation.comparisonOfSignature
+'D0.Research.VerifiedArchiveActuation.complete_phase_signature_representation_is_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.all_retaining_real_comparisons_form_exactly_sixteen_completions :
+  Nat.card { U // D0.Research.VerifiedArchiveActuation.RetainingRealComparison U } = 16
+'D0.Research.VerifiedArchiveActuation.all_retaining_real_comparisons_form_exactly_sixteen_completions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.complete_commutator_gram_retains_the_coherent_phase_mode (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  have D :=
+    D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.RetainedRecordAdmission.archiveX -
+      D0.Research.RetainedRecordAdmission.archiveX * D0.Research.VerifiedArchiveActuation.signedComparison c;
+  D.transpose * D =
+    !![2, 0, -D0.Research.VerifiedArchiveActuation.phaseCoupling c, 0;
+      0, 2, 0, -D0.Research.VerifiedArchiveActuation.phaseCoupling c;
+      -D0.Research.VerifiedArchiveActuation.phaseCoupling c, 0, 2, 0;
+      0, -D0.Research.VerifiedArchiveActuation.phaseCoupling c, 0, 2]
+'D0.Research.VerifiedArchiveActuation.complete_commutator_gram_retains_the_coherent_phase_mode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.coherent_phase_mode_has_only_the_two_commutator_strength_classes (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  D0.Research.VerifiedArchiveActuation.phaseCoupling c ^ 2 = 2 + 2 * (c 0 * c 1 * c 2 * c 3)
+'D0.Research.VerifiedArchiveActuation.coherent_phase_mode_has_only_the_two_commutator_strength_classes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.minimal_complete_archive_actuation_is_attained_by_a_correct_signed_comparison :
+  have U := D0.Research.VerifiedArchiveActuation.signedComparison ![1, 1, 1, -1];
+  (U * D0.Research.RetainedRecordAdmission.archiveX - D0.Research.RetainedRecordAdmission.archiveX * U).transpose *
+      (U * D0.Research.RetainedRecordAdmission.archiveX - D0.Research.RetainedRecordAdmission.archiveX * U) =
+    2 • 1
+'D0.Research.VerifiedArchiveActuation.minimal_complete_archive_actuation_is_attained_by_a_correct_signed_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.literal_golden_refinement_preserves_full_real_weight.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (a p : ℝ) (hn : a ^ 2 + p ^ 2 = 1) (n : ℕ) (x : ι → ℝ) :
+  ∑ s, D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x s ^ 2 = ∑ i, x i ^ 2
+'D0.Research.VerifiedArchiveActuation.literal_golden_refinement_preserves_full_real_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.literal_golden_refinement_subtracts_without_reset.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (n : ℕ) (x y : ι → ℝ) :
+  D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n (x - y) =
+    D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x -
+      D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n y
+'D0.Research.VerifiedArchiveActuation.literal_golden_refinement_subtracts_without_reset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.literal_golden_refinement_intertwines_every_complete_old_operator.{u_1}
+  {ι : Type u_1} [Fintype ι] [DecidableEq ι] (A : Matrix ι ι ℝ) (a p : ℝ) (n : ℕ) (x : ι → ℝ) :
+  (D0.Research.VerifiedArchiveActuation.wholeHistoryOperator A n).mulVec
+      (D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x) =
+    D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n (A.mulVec x)
+'D0.Research.VerifiedArchiveActuation.literal_golden_refinement_intertwines_every_complete_old_operator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.complete_old_operator_composition_survives_every_history_depth.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (A B : Matrix ι ι ℝ) (n : ℕ) :
+  D0.Research.VerifiedArchiveActuation.wholeHistoryOperator A n *
+      D0.Research.VerifiedArchiveActuation.wholeHistoryOperator B n =
+    D0.Research.VerifiedArchiveActuation.wholeHistoryOperator (A * B) n
+'D0.Research.VerifiedArchiveActuation.complete_old_operator_composition_survives_every_history_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.complete_archive_commutator_intertwines_every_literal_golden_depth.{u_1}
+  {ι : Type u_1} [Fintype ι] [DecidableEq ι] (A B : Matrix ι ι ℝ) (a p : ℝ) (n : ℕ) (x : ι → ℝ) :
+  (D0.Research.VerifiedArchiveActuation.wholeHistoryOperator A n *
+            D0.Research.VerifiedArchiveActuation.wholeHistoryOperator B n -
+          D0.Research.VerifiedArchiveActuation.wholeHistoryOperator B n *
+            D0.Research.VerifiedArchiveActuation.wholeHistoryOperator A n).mulVec
+      (D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x) =
+    D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n ((A * B - B * A).mulVec x)
+'D0.Research.VerifiedArchiveActuation.complete_archive_commutator_intertwines_every_literal_golden_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.every_correct_signed_comparison_keeps_its_full_actuation_at_all_golden_depths
+  (c : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (a p : ℝ) (hn : a ^ 2 + p ^ 2 = 1) (n : ℕ) :
+  ∑ s,
+      (D0.Research.VerifiedArchiveActuation.wholeHistoryOperator
+                  (D0.Research.VerifiedArchiveActuation.signedComparison c) n *
+                D0.Research.VerifiedArchiveActuation.wholeHistoryOperator D0.Research.RetainedRecordAdmission.archiveX
+                  n -
+              D0.Research.VerifiedArchiveActuation.wholeHistoryOperator D0.Research.RetainedRecordAdmission.archiveX n *
+                D0.Research.VerifiedArchiveActuation.wholeHistoryOperator
+                  (D0.Research.VerifiedArchiveActuation.signedComparison c) n).mulVec
+          (D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n D0.Research.VerifiedArchiveActuation.blank0)
+          s ^
+        2 =
+    2
+'D0.Research.VerifiedArchiveActuation.every_correct_signed_comparison_keeps_its_full_actuation_at_all_golden_depths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.VerifiedArchiveActuation.actual_p0_refinement_has_no_dilution_of_binary_archive_actuation (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (n : ℕ) :
+  ∑ s,
+      (D0.Research.VerifiedArchiveActuation.wholeHistoryOperator
+                  (D0.Research.VerifiedArchiveActuation.signedComparison c) n *
+                D0.Research.VerifiedArchiveActuation.wholeHistoryOperator D0.Research.RetainedRecordAdmission.archiveX
+                  n -
+              D0.Research.VerifiedArchiveActuation.wholeHistoryOperator D0.Research.RetainedRecordAdmission.archiveX n *
+                D0.Research.VerifiedArchiveActuation.wholeHistoryOperator
+                  (D0.Research.VerifiedArchiveActuation.signedComparison c) n).mulVec
+          (D0.Research.VerifiedArchiveActuation.realHistoryInclusion (√D0.primitiveRoot) D0.primitiveRoot n
+            D0.Research.VerifiedArchiveActuation.blank0)
+          s ^
+        2 =
+    2
+'D0.Research.VerifiedArchiveActuation.actual_p0_refinement_has_no_dilution_of_binary_archive_actuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,533 @@
+{
+  "bounded_positive_logdet_flat_transfer": "NO_GO_WITH_BOTH_FLAT_BRACKETS_AND_UNIFORM_ENDPOINT_PROBE_BOUND",
+  "checks": [
+    "COMPILED_REAL_DERIVATIVE_AND_ACTUAL_EDGE_BINDING",
+    "ACTUAL_RATIONAL_PROFILE_FIRST_DERIVATIVE",
+    "ACTUAL_RANK_TWO_NORMALIZATION",
+    "SCALAR_STATIONARITY_BOTH_ROOTS",
+    "SCALAR_ZERO_COUPLING_EXCEPTION",
+    "SCALAR_RESOLVENT_POLE_NOT_STATIONARY",
+    "STATIONARY_POINT_IS_NOT_AUTOMATICALLY_STABLE",
+    "ARBITRARY_REAL_PROFILE_ENCODING",
+    "POSITIVE_DOMAIN_PROFILE_CAN_ENCODE_QUARTIC",
+    "RADIAL_STABILITY_NOT_SELECTED",
+    "ACTUAL_NONCOMMUTING_PROJECTOR_ORBIT",
+    "NONCONSTANT_ORBIT_CONSTANT_FEEDBACK",
+    "FIXED_UNTRANSFORMED_INPUT_PROTECTS_EXCEPTION",
+    "EXACT_POSITIVE_RESOLVENT_path3",
+    "ALL_EDGE_SOURCE_AND_PACKED_NORMALIZATION_path3",
+    "INDEPENDENT_DETERMINANT_EDGE_VARIATIONS_path3",
+    "FULL_RESPONSE_JACOBIAN_POSITIVE_path3",
+    "INDEPENDENT_MIXED_DETERMINANT_HESSIAN_path3",
+    "ACTUAL_SIMULTANEOUS_CONJUGATION_WARD_path3",
+    "EXACT_POSITIVE_RESOLVENT_triangle3",
+    "ALL_EDGE_SOURCE_AND_PACKED_NORMALIZATION_triangle3",
+    "INDEPENDENT_DETERMINANT_EDGE_VARIATIONS_triangle3",
+    "FULL_RESPONSE_JACOBIAN_POSITIVE_triangle3",
+    "INDEPENDENT_MIXED_DETERMINANT_HESSIAN_triangle3",
+    "ACTUAL_SIMULTANEOUS_CONJUGATION_WARD_triangle3",
+    "EXACT_POSITIVE_RESOLVENT_square4",
+    "ALL_EDGE_SOURCE_AND_PACKED_NORMALIZATION_square4",
+    "INDEPENDENT_DETERMINANT_EDGE_VARIATIONS_square4",
+    "FULL_RESPONSE_JACOBIAN_POSITIVE_square4",
+    "INDEPENDENT_MIXED_DETERMINANT_HESSIAN_square4",
+    "ACTUAL_SIMULTANEOUS_CONJUGATION_WARD_square4",
+    "EXACT_POSITIVE_RESOLVENT_complete4",
+    "ALL_EDGE_SOURCE_AND_PACKED_NORMALIZATION_complete4",
+    "INDEPENDENT_DETERMINANT_EDGE_VARIATIONS_complete4",
+    "FULL_RESPONSE_JACOBIAN_POSITIVE_complete4",
+    "INDEPENDENT_MIXED_DETERMINANT_HESSIAN_complete4",
+    "ACTUAL_SIMULTANEOUS_CONJUGATION_WARD_complete4",
+    "EXACT_POSITIVE_RESOLVENT_actual_role4_L2",
+    "ALL_EDGE_SOURCE_AND_PACKED_NORMALIZATION_actual_role4_L2",
+    "INDEPENDENT_DETERMINANT_EDGE_VARIATIONS_actual_role4_L2",
+    "FULL_RESPONSE_JACOBIAN_POSITIVE_actual_role4_L2",
+    "INDEPENDENT_MIXED_DETERMINANT_HESSIAN_actual_role4_L2",
+    "ACTUAL_SIMULTANEOUS_CONJUGATION_WARD_actual_role4_L2",
+    "UNIFORM_ROLE_FINITE_RANGE_WITH_STATED_BOUNDS",
+    "EXPLICIT_COMPLETE_TRIANGLE_INVERSE",
+    "ALL_THREE_FIXED_RESPONSE_EQUATIONS",
+    "COMPLETE_TRIANGLE_SOURCE_IMAGE",
+    "POSITIVE_SOURCE_COMPONENTS_CAN_BE_INCOMPATIBLE",
+    "NONNEGATIVE_CONDUCTANCES_ARE_STRICTER",
+    "FULL_JACOBIAN_BOUNDARY_DEGENERATION",
+    "EXACT_INVERSE_RESPONSE_TANGENT",
+    "SHARP_DIVERGING_COMPONENT",
+    "INVERSE_DIVERGENCE_NOT_A_NUMERIC_FIT",
+    "REAL_ROLE_SQUARE_CARRIER",
+    "STRICT_POSITIVE_COMPLETION_SQUARE_OBSTRUCTION",
+    "CONSTRAINED_NONEMPTY_STATIONARY_EXCEPTION",
+    "INVERTIBLE_INDEFINITE_DOMAIN_EXCEPTION",
+    "FIXED_POSITIVE_COUPLING_DOMAIN_COLLAPSE",
+    "REFINEMENT_DEPENDENT_COUPLING_PROTECTED",
+    "NEGATIVE_COUPLING_RETAINS_UNIFORM_FINITE_INVERSE",
+    "BOTH_NONZERO_COUPLING_SIGNS_AND_SOURCE_IMAGES",
+    "NONQUADRATIC_FULL_AUXILIARY_PROFILE",
+    "NONQUADRATIC_CENTERED_SECANT_MONOTONICITY",
+    "CONSUMED_CURVED_PROBES_BOTH_CALIBRATION_SIGNS",
+    "ACTUAL_ROLE_MIXED_DIRECT_POINT_AND_WEAK_ZERO_01",
+    "ACTUAL_ROLE_MIXED_DIRECT_POINT_AND_WEAK_ZERO_02",
+    "ACTUAL_ROLE_MIXED_DIRECT_POINT_AND_WEAK_ZERO_03",
+    "ACTUAL_ROLE_MIXED_DIRECT_POINT_AND_WEAK_ZERO_12",
+    "ACTUAL_ROLE_MIXED_DIRECT_POINT_AND_WEAK_ZERO_13",
+    "ACTUAL_ROLE_MIXED_DIRECT_POINT_AND_WEAK_ZERO_23",
+    "MIXED_CURVED_METRIC_NONDEGENERACY",
+    "ALL_SECOND_JET_RICCI_CURVED_CONTROL",
+    "EXACT_NONZERO_WEAK_METRIC_OPERATOR_GAP",
+    "EXACT_NONZERO_POINTWISE_METRIC_OPERATOR_GAP",
+    "FULL_PERIODIC_CORRECTOR_EULER_AND_ENERGY_2d_L4",
+    "SMALL_FIELD_NONZERO_MIXED_CORRECTOR_2d_L4",
+    "FULL_PERIODIC_CORRECTOR_EULER_AND_ENERGY_2d_L8",
+    "SMALL_FIELD_NONZERO_MIXED_CORRECTOR_2d_L8",
+    "FULL_PERIODIC_CORRECTOR_EULER_AND_ENERGY_2d_L12",
+    "SMALL_FIELD_NONZERO_MIXED_CORRECTOR_2d_L12",
+    "FULL_PERIODIC_CORRECTOR_EULER_AND_ENERGY_4d_L4",
+    "SMALL_FIELD_NONZERO_MIXED_CORRECTOR_4d_L4",
+    "EXACT_INVERSE_ORDER_FLAT_COMPARISON_1/16",
+    "CURVED_COORDINATE_DERIVATIVE_SUM_BOUND_1/16",
+    "FLAT_SECANT_CONTROLS_CURVED_RESPONSE_1/16",
+    "EXACT_INVERSE_ORDER_FLAT_COMPARISON_-1/16",
+    "CURVED_COORDINATE_DERIVATIVE_SUM_BOUND_-1/16",
+    "FLAT_SECANT_CONTROLS_CURVED_RESPONSE_-1/16",
+    "EXACT_INVERSE_ORDER_FLAT_COMPARISON_-16",
+    "CURVED_COORDINATE_DERIVATIVE_SUM_BOUND_-16",
+    "FLAT_SECANT_CONTROLS_CURVED_RESPONSE_-16"
+  ],
+  "convex_profile_transfer": "NO_GO_WITH_FULL_GATE_AFFINE_METRIC_FIBERS_AND_BOTH_CURVED_PENCILS",
+  "corrector_controls": {
+    "2d_L12": {
+      "field_correction_sup": "1/40",
+      "mixed_response": "-9/20",
+      "vertices": 144
+    },
+    "2d_L4": {
+      "field_correction_sup": "3/40",
+      "mixed_response": "-9/20",
+      "vertices": 16
+    },
+    "2d_L8": {
+      "field_correction_sup": "3/80",
+      "mixed_response": "-9/20",
+      "vertices": 64
+    },
+    "4d_L4": {
+      "field_correction_sup": "3/40",
+      "mixed_response": "-9/20",
+      "vertices": 256
+    }
+  },
+  "corrector_mixed_response": "-9 / 20",
+  "curved_operator_control_R_owner": "30 pi^2 / 121",
+  "direct_nodal_weak_operator_gap": "pi^2 / 20",
+  "finite_graph_controls": {
+    "actual_role4_L2": {
+      "c": "4",
+      "det_H": "2133878649903/122070312500",
+      "determinant_edge_controls": [
+        0,
+        1,
+        31
+      ],
+      "determinant_mixed_controls": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          31
+        ]
+      ],
+      "edges": 32,
+      "response": [
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002",
+        "2575/2002"
+      ],
+      "vertices": 16,
+      "z": "1/5"
+    },
+    "complete4": {
+      "c": "4",
+      "det_H": "9521/2000",
+      "determinant_edge_controls": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "determinant_mixed_controls": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "edges": 6,
+      "response": [
+        "10592/9521",
+        "10000/9521",
+        "9504/9521",
+        "8720/9521",
+        "8288/9521",
+        "7824/9521"
+      ],
+      "vertices": 4,
+      "z": "1/5"
+    },
+    "path3": {
+      "c": "4",
+      "det_H": "263/200",
+      "determinant_edge_controls": [
+        0,
+        1
+      ],
+      "determinant_mixed_controls": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "edges": 2,
+      "response": [
+        "368/263",
+        "344/263"
+      ],
+      "vertices": 3,
+      "z": "1/5"
+    },
+    "square4": {
+      "c": "4",
+      "det_H": "463/200",
+      "determinant_edge_controls": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "determinant_mixed_controls": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "edges": 4,
+      "response": [
+        "3008/2315",
+        "2872/2315",
+        "2592/2315",
+        "2488/2315"
+      ],
+      "vertices": 4,
+      "z": "1/5"
+    },
+    "triangle3": {
+      "c": "4",
+      "det_H": "673/400",
+      "determinant_edge_controls": [
+        0,
+        1,
+        2
+      ],
+      "determinant_mixed_controls": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "edges": 3,
+      "response": [
+        "880/673",
+        "832/673",
+        "784/673"
+      ],
+      "vertices": 3,
+      "z": "1/5"
+    }
+  },
+  "finite_inverse_bound": "M^2 / (2 (zc)^2)",
+  "flat_order_controls": {
+    "-1/16": {
+      "curved_gradient_absolute_sum": "1824/5773",
+      "flat_derivative_bound": "12/35",
+      "flat_secant_rational_lower": "6/839"
+    },
+    "-16": {
+      "curved_gradient_absolute_sum": "4704/2353",
+      "flat_derivative_bound": "96/25",
+      "flat_secant_rational_lower": "48/337"
+    },
+    "1/16": {
+      "curved_gradient_absolute_sum": "1248/2701",
+      "flat_derivative_bound": "12/23",
+      "flat_secant_rational_lower": "12/1003"
+    }
+  },
+  "free_unsourced_gate": "EMPTY_IN_STATED_POSITIVE_DOMAIN",
+  "input_head": "32e7a1da7c191ef8567647d56d69995b475a84bb",
+  "inputs_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_AFFINE_PROBE_NOGO.md": "a8ca4517ee01fb4460ed266cd3864896a6ba6b1e47345f685a51f00f838e5459",
+    "02_REGISTRY/research/A4D_NATIVE_EDGE_SOURCE_QUOTIENT.md": "0cd2f87227c0f8f8b638e66e9133e26eb02a1fdd3379447b5f9182ec6b8cd590",
+    "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_results.json": "4d89f9e6170083e47fac39ed10eb2ee80008491aceae2189eb14769ea21b1003",
+    "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean": "8408c562f0dade7a4732ca4e99054e4f1c6019fb7574751010a564464a425c55",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean": "511f40788d047494419ab9263edd3e82446085bbb2a483f58d5ff66d04d00a42",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseEdgeMetricScale.lean": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveStressEdgeReadout.lean": "661aabe6dc7b6e4989eb0a70fee51a3877b27f55bc29f33c1009059f4c997b52",
+    "03_FORMALIZATION/D0/Matter/HiggsLogdetStationary.lean": "804ac9dc00dd673e4f9549803cd09adf4709aef23127dd4a0ed408f110978e5c",
+    "03_FORMALIZATION/D0/Matter/HiggsRadialInstabilityBoundary.lean": "52fd09525eb4e2b6e53ba44f4e9b9cdc8dca3e16913976e89950ffbb6e61ea6e"
+  },
+  "inverse_tangent_component": "-2 / (4-t)^2",
+  "lean_receipt_sha256": "cb7829834d170297015257935633e89d810470829bfaeb55ff03b3396e5f5e66",
+  "protected_exceptions": [
+    "Supplied nonlinear profiles can encode arbitrary actions",
+    "Fixed untransformed inputs need not be similarity equivariant",
+    "Constrained variation can have nonempty stationary fibers",
+    "Indefinite resolvents and zero coupling do not have the nonvanishing edge conclusion",
+    "Positive conductances form a smaller class than the signed-conductance source-image theorem",
+    "O(h) field corrections need not be small in edge energy; the exact cell corrector has mixed response",
+    "Physical coframe, metric, connection, matter and refinement maps remain unconstructed"
+  ],
+  "rank_two_scalar_factor": 2,
+  "refinement_domain_controls": {
+    "12": {
+      "fixed_z_min_H": "-5/4",
+      "scaled_z_min_H": "1/2",
+      "top_metric_laplacian": 2304
+    },
+    "16": {
+      "fixed_z_min_H": "-3",
+      "scaled_z_min_H": "1/2",
+      "top_metric_laplacian": 4096
+    },
+    "4": {
+      "fixed_z_min_H": "3/4",
+      "scaled_z_min_H": "1/2",
+      "top_metric_laplacian": 256
+    },
+    "8": {
+      "fixed_z_min_H": "0",
+      "scaled_z_min_H": "1/2",
+      "top_metric_laplacian": 1024
+    }
+  },
+  "scope": "Finite nonlinear log-det source image and convex prepared-contrast obstruction. No selected native physical operator, independent matter action, physical Ward or nonlinear GR closure.",
+  "source_gate": "all signed local conductance variations; zc nonzero; I-zc B(w) positive definite",
+  "source_image": "r/(zc) admits a positive definite centered completion on 1-perp",
+  "status": "PASS",
+  "triangle_image_interval": "0 < t < 4",
+  "triangle_jacobian_determinant": "t^3 (4-t)^3 / 32"
+}

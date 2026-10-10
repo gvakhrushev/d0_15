@@ -1,0 +1,40 @@
+{
+  "input_head": "abe5d0677fb68396e824c4894fce7d1254b979b2",
+  "returncode": 0,
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_af_trace_preparation.lean",
+  "completed_exec_session": 80906,
+  "captured_utc": "2026-10-10T18:37:15.898379+00:00",
+  "capsule_sha256": "8588a91aba1d25e2eeec14452a9080b01ed73b7c55118e005afd5d6dfbeb5929",
+  "output_sha256": "920a9979cf7998a08a4817b284228cde07957f45dd77986ae82150f1f3e46c85",
+  "declarations": [
+    "D0.Research.AFTracePreparation.compatible_recurrence",
+    "D0.Research.AFTracePreparation.compatible_bounds",
+    "D0.Research.AFTracePreparation.defect_contracts_backwards",
+    "D0.Research.AFTracePreparation.defect_after_k",
+    "D0.Research.AFTracePreparation.defect_bounded",
+    "D0.Research.AFTracePreparation.compatible_defect_zero",
+    "D0.Research.AFTracePreparation.all_compatible_weights_forced",
+    "D0.Research.AFTracePreparation.compatible_trace_has_no_parameter",
+    "D0.Research.AFTracePreparation.count_product_growth",
+    "D0.Research.AFTracePreparation.finite_extreme_width",
+    "D0.Research.AFTracePreparation.residual_coefficients",
+    "D0.Research.AFTracePreparation.faithful_mixture_eigenvalues",
+    "D0.Research.AFTracePreparation.heat_price_derivative",
+    "D0.Research.AFTracePreparation.heat_price_derivative_ne_zero",
+    "D0.Research.AFTracePreparation.cyclic_mixture_price_derivative",
+    "D0.Research.AFTracePreparation.cyclic_mixture_strict_descent"
+  ],
+  "new_declarations": 16,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean": "b923882386bc66998f4f3cf2ba7d73b0acf30938859d26680458420bafbd1db7",
+    "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean": "643d0a1ec2c71e15bc3254211e3e24cf6b99fdf48f6ddd43a38848cd28c23307",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a"
+  },
+  "full_GNS_matrix_and_Gibbs_arguments_claimed_Lean": false,
+  "supported_D0_sources_changed": false
+}
