@@ -3427,3 +3427,44 @@ without a new selector. This is conditional reconstruction, not a new heat
 law or a theorem excluding every native F. T0--T3, all 44 dependency nodes,
 source/Ward, stationarity, curved roots, soundness/recovery and the original
 #310/#202/#317 terminal contracts remain open.
+
+## Independent golden records cannot supply the full Hodge Gibbs state (2026-10-10)
+
+[The quantitative state comparison](A4D_NATIVE_GOLDEN_HODGE_STATE_SEPARATION.md)
+tests the missing state/heat identification against the actual golden
+cylinder weights and the full counting Hodge/CAR square. Every state
+unitarily equivalent to tau tensor diag(p,p^2)^tensor m is included,
+with any independent ancillary density tau and matching full carrier.
+All sixteen Hodge form components and zero modes remain. Temperatures may
+vary arbitrarily with level; an overall positive heat scale is absorbed
+in them. No native state, heat or temperature law is selected.
+
+The result is uniform and asymptotic, rather than an exact finite-spectrum
+objection: the trace distance from the full Hodge Gibbs state tends to one
+whenever m tends to infinity. The proof uses two complete estimates.
+Golden spectral mass in any logarithmic eigenvalue window of width W is
+at most 2*(W/log(phi)+1)/sqrt(m), also with an arbitrary independent ancilla.
+For the actual four-axis Hodge heat, Z(beta/2)/Z(beta)<=6^4 at every L and
+positive beta. Thus its thermal second moment of beta*Delta is at most
+10368. A projection-intersection argument separates the states without
+assuming they commute or choosing a common eigenbasis. Taking the window
+widths proportional to m^(1/6) gives a trace-distance lower bound tending
+to one, uniformly over all the allowed choices.
+
+The class is nonempty on cofinal actual levels L=2^ell, m=4ell with
+tau=I_16/16. That ancilla already supplies the sixteenfold leading
+multiplicity, so the result does not rely on deleting Fock modes or on a
+simple-largest-eigenvalue mismatch. A more general correlated preparation
+followed by another readout need not retain this independent golden factor
+in its spectrum and remains outside the theorem.
+
+The full argument is analytic. Its exact replay passes 1418 controls,
+rejects nine executed mathematical mutants and sixteen false scope/input
+ledgers, and pins 91 inputs including the prior Hodge proof receipt. No
+new Lean theorem is claimed. This excludes the stated full trace-norm
+Gibbs identification; it does not turn state distance into physical
+action-contrast error or exclude cancellation in the complete price.
+The next actual preparation must supply its own correlated state/operator
+readout or a proved physically sufficient relation of another type.
+T0--T3, own source/Ward, stationarity, curved roots, soundness/recovery,
+all 44 dependency nodes and original #310/#202/#317 terminals remain open.
