@@ -1,0 +1,68 @@
+D0.Research.AFTracePreparation.compatible_recurrence (x y : ℕ → ℝ) (hx : ∀ (n : ℕ), x n = x (n + 1) + y (n + 1))
+  (hy : ∀ (n : ℕ), y n = x (n + 1)) (n : ℕ) : x n = x (n + 1) + x (n + 2)
+D0.Research.AFTracePreparation.compatible_bounds (x y : ℕ → ℝ) (hxp : ∀ (n : ℕ), 0 ≤ x n) (hyp : ∀ (n : ℕ), 0 ≤ y n)
+  (hx : ∀ (n : ℕ), x n = x (n + 1) + y (n + 1)) (hn : x 0 + y 0 = 1) (n : ℕ) : 0 ≤ x n ∧ x n ≤ 1
+D0.Research.AFTracePreparation.defect_contracts_backwards (p : ℝ) (hp : p + p ^ 2 = 1) (x : ℕ → ℝ)
+  (hr : ∀ (n : ℕ), x n = x (n + 1) + x (n + 2)) (n : ℕ) :
+  D0.Research.AFTracePreparation.defect p x n = -p * D0.Research.AFTracePreparation.defect p x (n + 1)
+D0.Research.AFTracePreparation.defect_after_k (p : ℝ) (hp : p + p ^ 2 = 1) (x : ℕ → ℝ)
+  (hr : ∀ (n : ℕ), x n = x (n + 1) + x (n + 2)) (n k : ℕ) :
+  D0.Research.AFTracePreparation.defect p x n = (-p) ^ k * D0.Research.AFTracePreparation.defect p x (n + k)
+D0.Research.AFTracePreparation.defect_bounded (p : ℝ) (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (x : ℕ → ℝ)
+  (hb : ∀ (n : ℕ), 0 ≤ x n ∧ x n ≤ 1) (n : ℕ) : |D0.Research.AFTracePreparation.defect p x n| ≤ 1
+D0.Research.AFTracePreparation.compatible_defect_zero (p : ℝ) (hp0 : 0 ≤ p) (hp1 : p < 1) (hp : p + p ^ 2 = 1)
+  (x : ℕ → ℝ) (hr : ∀ (n : ℕ), x n = x (n + 1) + x (n + 2)) (hb : ∀ (n : ℕ), 0 ≤ x n ∧ x n ≤ 1) (n : ℕ) :
+  D0.Research.AFTracePreparation.defect p x n = 0
+D0.Research.AFTracePreparation.all_compatible_weights_forced (p : ℝ) (hp0 : 0 ≤ p) (hp1 : p < 1) (hp : p + p ^ 2 = 1)
+  (x y : ℕ → ℝ) (hxp : ∀ (n : ℕ), 0 ≤ x n) (hyp : ∀ (n : ℕ), 0 ≤ y n) (hx : ∀ (n : ℕ), x n = x (n + 1) + y (n + 1))
+  (hy : ∀ (n : ℕ), y n = x (n + 1)) (hn : x 0 + y 0 = 1) (n : ℕ) : x n = p ^ (n + 1) ∧ y n = p ^ (n + 2)
+D0.Research.AFTracePreparation.compatible_trace_has_no_parameter.{u_1} (p : ℝ) (hp0 : 0 ≤ p) (hp1 : p < 1)
+  (hp : p + p ^ 2 = 1) {T : Type u_1} (x y : T → ℕ → ℝ) (hxp : ∀ (t : T) (n : ℕ), 0 ≤ x t n)
+  (hyp : ∀ (t : T) (n : ℕ), 0 ≤ y t n) (hx : ∀ (t : T) (n : ℕ), x t n = x t (n + 1) + y t (n + 1))
+  (hy : ∀ (t : T) (n : ℕ), y t n = x t (n + 1)) (hn : ∀ (t : T), x t 0 + y t 0 = 1) (s t : T) (n : ℕ) :
+  x s n = x t n ∧ y s n = y t n
+D0.Research.AFTracePreparation.count_product_growth (a b : ℝ) (ha : b ≤ a) (hb : 0 ≤ b) : 2 * (a * b) ≤ (a + b) * a
+D0.Research.AFTracePreparation.finite_extreme_width (a b u v w : ℝ) (hd : u * w - v ^ 2 = 1 ∨ u * w - v ^ 2 = -1)
+  (ha : a * u + b * v ≠ 0) (hb : a * v + b * w ≠ 0) :
+  |u / (a * u + b * v) - v / (a * v + b * w)| = |b / ((a * u + b * v) * (a * v + b * w))|
+D0.Research.AFTracePreparation.residual_coefficients (u v A B : ℝ) (hu : 0 < u) (hv : 0 < v) (hs : u + v = 1)
+  (hA : 0 < A) (hB : 0 < B) :
+  0 < u * v ∧
+    0 < (u - u * v * v) / A ∧
+      0 < (v - u * v * u) / B ∧ u * v + A * ((u - u * v * v) / A) + B * ((v - u * v * u) / B) = 1
+D0.Research.AFTracePreparation.faithful_mixture_eigenvalues (lam r : ℝ) (hl : 1 / 2 ≤ lam) (hl1 : lam < 1) (hr : 0 < r)
+  (hr1 : r < 1) : 0 < (1 - lam) * r ∧ (1 - lam) * r < lam
+D0.Research.AFTracePreparation.heat_price_derivative (beta lam : ℝ) (hl : lam ≠ 0) :
+  HasDerivAt (fun s => -Real.log s / beta) (-(1 / lam) / beta) lam
+D0.Research.AFTracePreparation.heat_price_derivative_ne_zero (beta lam : ℝ) (hb : 0 < beta) (hl : 0 < lam) :
+  -(1 / lam) / beta ≠ 0
+D0.Research.AFTracePreparation.cyclic_mixture_price_derivative (beta lam : ℝ) (hl : lam ≠ 0) :
+  HasDerivAt (fun s => -Real.log (lam + (1 - lam) * s) / beta) (-((1 - lam) / lam) / beta) 0
+D0.Research.AFTracePreparation.cyclic_mixture_strict_descent (beta lam : ℝ) (hb : 0 < beta) (hl : 0 < lam)
+  (hl1 : lam < 1) : -((1 - lam) / lam) / beta < 0
+'D0.Research.AFTracePreparation.compatible_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.compatible_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.defect_contracts_backwards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.defect_after_k' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.defect_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.compatible_defect_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.all_compatible_weights_forced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.AFTracePreparation.compatible_trace_has_no_parameter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.AFTracePreparation.count_product_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.finite_extreme_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.residual_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.faithful_mixture_eigenvalues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.heat_price_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AFTracePreparation.heat_price_derivative_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.AFTracePreparation.cyclic_mixture_price_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.AFTracePreparation.cyclic_mixture_strict_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
