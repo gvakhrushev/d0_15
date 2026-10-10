@@ -3275,3 +3275,36 @@ price or derive the common native preparation. That preparation, its
 complete price/readout/refinement relation, own source/Ward, stationarity,
 curved roots and soundness/recovery remain required. T0--T3, all 44 node
 contracts and the original #310/#202/#317 terminals stay open.
+
+## Actual scene-register AF metric refinement (2026-10-10)
+
+[The scene AF proof](A4D_NATIVE_SCENE_AF_METRIC_REFINEMENT.md) revalidates
+the existing noncommutative joint-register construction, which is distinct
+from strict scalar pullback on archiveProjection. On the full algebras
+`End((C^33)^tensor n)^G`, with the actual diagonal scene group and normalized
+matrix trace, the registered constant-two metric-tail bound fails on a
+native zonal projection. At b=2 its claimed squared upper bound is exactly
+half the required value. The same counterexample exists at every level;
+all archive sectors and the scalar zero mode are retained.
+
+The replacement is constructive: normalized partial trace gives the
+one-register estimate `norm(x) <= 33 sqrt(norm(E(x* x)))`. A full-scene
+Bell projection in A_2 attains equality. Compressing the genuine Dirac
+commutator and summing its spectral gaps then gives
+`norm(a-E_n(a)) <= 33 b^(1-n)/(b-1)^2 norm([D_b,L_a])`.
+This proves the weak-star metric conclusion for every fixed b>1 on the
+complete declared tower, using all noncommutative observables. No new
+scale, conditional expectation or state is selected.
+
+The operator and all-level topology proofs are analytic. The repaired
+registered certificate executes 195 exact controls; seven changed
+mathematical rules and seventeen false scope ledgers are rejected. The
+actual composition certificate supplies dimensions 12 and 309, separately
+from the physical scene dimension 33. No new Lean theorem is claimed.
+
+This removes a false estimate from a genuinely growing native observable
+route. It does not equate the register tower with archiveProjection or
+identify b^(-n) with the physical mesh. The four-dimensional joint readout
+and its common full-action preparation, all ten source components, Ward,
+native stationarity, curved roots and soundness/recovery remain open.
+T0--T3, the 44 nodes and original #310/#202/#317 terminals retain their scopes.
