@@ -3050,3 +3050,25 @@ correct joint tangent and native refinement. The present quotient has not
 been proved to exhaust such preparations. Lorentz causal time, curved
 native solutions, own source/Ward, quantitative contrast, stationarity,
 soundness/recovery and all original #310/#202/#317 obligations stay open.
+
+## Actual archive/full-Hodge metric refinement boundary (2026-10-10)
+
+[The companion proof](A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md) consumes
+the actual archiveProjection composites rather than direct or coordinatewise
+modulo. Its all-level zero fibre contains K-L+1 proved distinct birth labels.
+For the complete class of all bijective identifications with the full scalar
+Hodge point metric, four-dimensional packing gives distortion at least
+((L+1)^(1/4)-1)/(4L) on the actual L-to-2L arrows. Thus no numbering supplies
+a uniform O(h) physical metric refinement on that whole scalar carrier.
+Eleven kernel propositions bind the actual composite/fibre; the metric/rate
+argument is analytic. Exact controls and seventeen false ledgers pass.
+
+This tests the next owned transition of the operator-first route and changes
+the next action: derive the native prepared physical observable algebra and
+its transitions, retaining the full archive in the price, before declaring
+the full Hodge point algebra the physical geometry. No alternative algebra
+or memory deletion is installed. Slower o(1) refinement, other admitted
+readouts, actual O(h) action contrasts, full Gamma/F and source/Ward remain
+open; this metric bound does not prove their obstruction. All ten metric
+slots, links, curved joint roots, soundness/recovery, all 44 contracts and
+original #310/#202/#317 terminals remain required.
