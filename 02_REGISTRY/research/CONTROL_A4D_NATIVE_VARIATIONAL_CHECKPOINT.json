@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "d3b5092f18c36c82aaf2a4d1af5c172ff8a3fd814050c475d905abcfcc8a58af",
-      "source_blob": "e3d3e5188bd5d4c352467f3b25b7a5f68688c2aa"
+      "sha256": "9cc4bbbdeb05f12c0329d55719315854b4a2b2c2ce0edd5ca3170d1f9eb3d1c9",
+      "source_blob": "2521f2b2c05196bfcd228fb0cdc6df8dc997b489"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1721,6 +1721,21 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_recorded_observer_preparation_results.json",
       "sha256": "62feb6c9536351481e990921ac5cd7931c4ee5bcfa347ecb297c5b4c1f3344fd",
       "source_blob": "fde0f21097df806b4ffc56857a1eb88309d9c096"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CYCLIC_HISTORY_PRICE_PREPARATION.md",
+      "sha256": "d936f5633c74a5dd451496d6a15be69119cd1b80f3f3d86d6ad4d6c18d7e4e8a",
+      "source_blob": "92a8cf2f581c6358ba2a1dfffec7dd085196a0a7"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cyclic_history_price_certificate.json",
+      "sha256": "18263750f26aac3b96caa0d89791378c3851df2bc3a592cbcfbbf28c7f05da07",
+      "source_blob": "482b6ad997812d51587f26e0d9e53b6e1833dcf1"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cyclic_history_price_check.py",
+      "sha256": "1e090d2412bd796dd07f188e6039daa1956f0151345d79d0662611f46c3bef3a",
+      "source_blob": "ea66289fb930f82952c985711bb5df9e0f0511e9"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -2728,13 +2743,47 @@
       "prior_artifacts_updated": 1,
       "new_artifacts": 6,
       "next_required_proof": "Own shared admission of the recording/readout and all price arguments on (q,D,b,m), with the full allowed tangent and all remaining equations. The finite component is not that admission."
+    },
+    "cyclic_history_price_preparation": {
+      "source_head": "d64296ce4dcb937abc440ece03e49e50442db4e8",
+      "input_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+      "control_input_head": "93045361eafe759b7a600c205825f4d9ee58324b",
+      "classification": "ACTUAL_ALL_WALKS_FREQUENCY_PREPARATION_AND_FULL_ORDER_MEMORY_RESPONSE_NOT_PHYSICAL_T0",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CYCLIC_HISTORY_PRICE_PREPARATION.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_cyclic_history_price",
+      "consumer": "Full-price descent and internal-memory stationarity in the existing common-preparation obligation",
+      "owned_admission_scope": "Composition-complete SceneHistoryFamily, actual Adj31 edges and composePath",
+      "common_price_binding": "Existing unscaled cycle heat and visit-fiber Reynolds projection; mathematical binding, physical selection unproved",
+      "prepared_frequency_family": "Every positive symmetric integer array on all 359 scene edges has an explicit closed Euler word",
+      "fixed_one_step_memory_fiber": "W(n,a) has full D=nD0 and N1=nN10; N2=(n-a)N2A+aN2B, length 1444n",
+      "all_additive_edge_valuations_on_memory_fiber": "Constant at each n, including arbitrary fixed positive primitive edge costs with additive extension",
+      "full_two_term_price_response_at_z_half": "-1/100<gprime(theta)<-1/1000 for every theta in [0,1]",
+      "finite_memory_move_price_drop": "At least 1/(1000n) for replacing one A block by B",
+      "prepared_central_response_error": "At epsilon=n^(-1/3), at most n^(-2/3)/120, calibration one",
+      "all_heat_modes_retained": true,
+      "native_physical_heat_readout_selection_proved": false,
+      "full_D0_matter_action_stack_evaluated": false,
+      "physical_metric_tangent_or_mesh_identified": false,
+      "actual_word_repetition_is_native_archive_refinement": false,
+      "source_pins": 12,
+      "exact_controls": 66,
+      "executed_mathematical_mutations_rejected": 9,
+      "new_Lean_propositions": 0,
+      "proof_status": "Analytic all-size and interval proofs with exact rational polynomial certificate",
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_original_terminals_unchanged": true,
+      "scientific_artifact_count": 347,
+      "prior_artifacts_unchanged": 343,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 3,
+      "next_required_proof": "Own common admission and physical readout of the complete price. Preserve order memory or derive its actual internal equations; one-step frequencies and additive edge cost cannot replace the full composed price. No adjacent spectrum or longer-word census."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "80462afde4668fc822a01a70c2e571ce36ecd64e",
+  "previous_source_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2822,11 +2871,12 @@
     "The actual golden cylinder cost yields complete Fibonacci cuts of the same profinite support. Its literal full matrix inclusion preserves the trace and has adjoint C(Z,W)=(pX+p^2W,Y), retaining both rectangular blocks. The normalized duplicated column is the actual golden prepared column. This proves a previously supplied refinement premise, without deriving a heat law, physical operation admission, physical clock or joint q,D,b,m readout. Twenty-four Lean propositions, 6157 exact controls, eight executed mathematical mutants and sixteen false scope ledgers pass. The all-level complete-cut/cofinality argument and complex extension are analytic. Independent tensor-state obstructions are not extended to this different readout.",
     "Positivity and compatibility on every level of the actual Fibonacci inclusion force the golden trace without a supplied Perron profile. The full GNS density extension remains a d^2-d dimensional Hermitian affine fiber. At actual levels n>=2, every faithful density in this fiber with the simple cyclic ground vector has a strict thermal descent direction; the entire stated class has no finite stationary point or minimizer. This curve is not asserted to be natively admitted with fixed feedback or matter. Normalized isometric compression cannot preserve both trace one and faithful mass in new modes. Sixteen compiled propositions, 1824 controls, nine executed math mutants and twenty-one false ledgers pass. This closes the stated trace and thermal interfaces, not T0 or native gravity.",
     "The literal AF phi-squared heat class admits exact rectangular scene Laplacian compression on the full 233-dimensional carrier, yet every scene isometry has intertwining error at least 13/2, sharp on the full 89-dimensional carrier. Exact heat-semigroup compression is excluded in that entire operator class. The actual 33-vertex graph and all five projectors are checked. Eleven scalar Lean propositions, 121 controls, nine executed mathematical mutants and nineteen false ledgers pass. This corrects the overbroad dimension-based map exclusion; native F, physical admission and T0 remain open. No replacement spectrum is installed.",
-    "Recorded-state observer component in an explicit density readout and the retained positive-Hodge heat derivative; physical native admission and common T0 remain open."
+    "Recorded-state observer component in an explicit density readout and the retained positive-Hodge heat derivative; physical native admission and common T0 remain open.",
+    "Actual composition-admitted scene words realize the weighted return pencil. A full fixed-one-step memory fiber has strictly decreasing whole two-term bootstrap price and a uniform n^(-2/3)/120 central-probe error. Physical common preparation, source and T0 remain open; full action-stack contributions are not inferred."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+  "source_head": "d64296ce4dcb937abc440ece03e49e50442db4e8",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "833372049d1cbde14f51bcbc3ca06bb017025cb8",
+  "source_parent": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
   "source_pr": 310
 }

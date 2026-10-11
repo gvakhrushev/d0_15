@@ -3608,3 +3608,43 @@ The next proof obligation remains the shared native admission and complete
 price/readout binding on `(q,D,b,m)`, including all excluded-direction
 equations. T0--T3, all 44 graph nodes and original #310/#202/#317 terminals
 remain open. No supported owner, public claim, action or selector is changed.
+
+## Cyclic history preparation and a genuine order-memory price direction (2026-10-11)
+
+[The complete cyclic-record construction](A4D_NATIVE_CYCLIC_HISTORY_PRICE_PREPARATION.md)
+replaces supplied conductances by actual composition-admitted scene words.
+Their visit counts determine the pairing and conditional projection; their
+ordered lag counts determine the whole-step compressed returns. A positive
+integer reversible edge array is realized by an explicit Euler word. The
+weighted first-return paired price has a uniform O(1/m) preparation bound.
+All heat modes remain in the declared existing cycle-Laplacian realization.
+Its physical selection and identification with the 4D archive are not proved.
+
+Two literal 1444-step words have exactly the same full one-step frequencies
+and every additive edge-action value, yet different full two-step bootstrap
+prices. This includes the heat term, which is identical at equal length.
+Concatenating these words gives an entire fixed-one-step memory fiber. Its
+determinant ratio is a quartic with four strictly positive rational
+coefficients. At z=1/2 the price derivative lies between -1/100 and -1/1000
+throughout the full interval. Replacing one block lowers the actual finite
+price by at least 1/(1000n); no continuum tangent is assumed on finite words.
+
+For epsilon=n^(-1/3), rounded whole-word central probes recover the nonzero
+midpoint derivative with error at most n^(-2/3)/120 and calibration one.
+Word repetition preserves the paired price and intertwines the complete
+cycle operators; newly added heat modes are retained. This is frequency
+resolution and cyclic covering, not physical mesh or the golden/native
+archive refinement. The analytic all-size proofs are supported by 66 exact
+controls and nine executed mathematical mutations; no new Lean theorem is
+claimed.
+
+The result closes a concrete attempted shortcut: neither the whole one-step
+frequency matrix nor any calibrated additive edge valuation determines this
+composed price. The removed order variable is price-observable. In the
+declared block family it has finite decreasing moves, so it cannot be
+silently called gauge or internally stationary. A physical preparation must
+retain sufficient memory and derive its actual equations on the same input.
+Admission of the combined heat/readout construction and its map to
+`(q,D,b,m)` remain missing; this is not a T0 promotion or native metric stress.
+No adjacent spectral search follows from the result. All source/Ward,
+stationarity, curved-root, soundness/recovery and parent obligations remain.

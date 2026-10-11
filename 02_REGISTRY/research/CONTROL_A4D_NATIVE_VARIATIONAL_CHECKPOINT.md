@@ -3,10 +3,37 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d`, following
-`80462afde4668fc822a01a70c2e571ce36ecd64e`.
+`d64296ce4dcb937abc440ece03e49e50442db4e8`, following
+`5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Cyclic history and order-memory response, 2026-10-11.**
+[The complete construction](A4D_NATIVE_CYCLIC_HISTORY_PRICE_PREPARATION.md)
+derives the visit pairing, readout projection and return matrices from actual
+composition-admitted scene words. Positive integer reversible frequencies
+have an explicit all-edge Euler realization. This closes that preparation
+premise in the all-walks interface, not admission of the combined cycle heat
+and readout as a physical native preparation.
+
+Two actual 1444-step histories have equal full one-step frequencies and all
+additive edge valuations, but different whole two-step bootstrap prices.
+Their actual concatenations produce an entire fixed-one-step memory fiber.
+At z=1/2 the full price derivative is between -1/100 and -1/1000 everywhere
+on its parameter interval; replacing one block reduces the finite price by
+at least 1/(1000n). Central probes at epsilon=n^(-1/3) recover the nonzero
+midpoint derivative with error at most n^(-2/3)/120. Every heat mode remains.
+This is a block-frequency limit, not physical mesh or a metric-source law.
+
+The analytic proof and exact quartic certificate pass 66 controls and reject
+nine executed mathematical mutations, with twelve baseline input pins.
+No new Lean theorem is claimed. All four changed source blobs were verified
+remotely before intake. The intake has 347 source artifacts: 343 previous
+files keep their bytes, one primary memo is updated, and three files are
+added. T0--T3 and the 44-node graph remain unchanged. The concrete next
+consumer must retain sufficient order memory and derive its physical
+admission/equations with every price argument on the same input. Full
+matter/action-stack terms, source/Ward and native stationarity remain open.
 
 **Recorded observer component, 2026-10-11.**
 [The new finite component](A4D_NATIVE_RECORDED_OBSERVER_PREPARATION.md)
