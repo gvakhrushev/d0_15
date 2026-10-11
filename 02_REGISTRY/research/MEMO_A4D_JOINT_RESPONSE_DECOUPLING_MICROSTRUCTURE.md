@@ -3571,3 +3571,40 @@ spectra. The next unresolved obligation remains one own joint preparation
 and its admitted changes, followed by the full constrained price law.
 Source/Ward, stationarity, curved roots, soundness/recovery, all 44 nodes
 and the original #310/#202/#317 terminals remain open.
+
+## Recorded state to the existing observer form (2026-10-11)
+
+[The finite recorded-observer component](A4D_NATIVE_RECORDED_OBSERVER_PREPARATION.md)
+computes an input previously supplied to the positive observer owner. On the
+full real recorded state, the explicit tensor-density/Pauli readout obeys
+`j^T eta j=4 det rho`; a faithful marginal therefore determines a unit
+timelike n and the existing positive form `h=-eta+2(eta n)(eta n)^T`.
+The actual blank golden output gives eigenvalues `(1/p,1,1,p)`, with
+determinant one. The readout is explicit mathematical data; its physical
+native admission and selection as the heat pairing remain unproved.
+
+A normalized rational input curve of the same full recording gate remains
+faithful on `|t|<=1/10`, with explicit ellipticity bounds. The complete
+pairing derivative is nonzero and volume-preserving, including its compulsory
+normalization derivative. Twenty-two Lean propositions compile with only
+standard axioms, including genuine derivatives of the composed input curve.
+
+The complete price test prevents promotion of this matrix variation to
+a stationary preparation. In the already studied full positive Hodge
+binding, all sixteen exterior grades and all Fourier modes give
+`H'(0)<=-2apL^2<0` whenever `0<beta<=p^5/(512L^2)`. This is a finite
+high-temperature bound, not fixed-beta refinement or a new native heat law.
+If the full remainder is stationary on the same admitted path, full
+stationarity is excluded there; no compensator or temperature is chosen.
+
+The exact replay retains all 4096 L=4 modes and rejects tensor-trace,
+normalization, derivative, packed-weight, pure-state and input-curve
+mutations. The faithful sector is not the whole gate interface; rank-one
+outputs and unbounded shape limits remain. Readout-null archive directions
+are not declared gauge. This does not produce the ten physical metric
+components, a full source or a common admitted preparation.
+
+The next proof obligation remains the shared native admission and complete
+price/readout binding on `(q,D,b,m)`, including all excluded-direction
+equations. T0--T3, all 44 graph nodes and original #310/#202/#317 terminals
+remain open. No supported owner, public claim, action or selector is changed.
