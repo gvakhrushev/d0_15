@@ -3,10 +3,36 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`80462afde4668fc822a01a70c2e571ce36ecd64e`, following
-`833372049d1cbde14f51bcbc3ca06bb017025cb8`.
+`5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d`, following
+`80462afde4668fc822a01a70c2e571ce36ecd64e`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Recorded observer component, 2026-10-11.**
+[The new finite component](A4D_NATIVE_RECORDED_OBSERVER_PREPARATION.md)
+derives the argument of the existing positive observer form from a full real
+recorded state in an explicit tensor-density/Role readout. The actual golden
+state gives `h=-eta+2(eta n)(eta n)^T` with eigenvalues `(1/p,1,1,p)`.
+A normalized input curve of the same gate has a nonzero volume-preserving
+pairing derivative and a quantitatively faithful interval. Physical admission
+of this readout and selection of the pairing as native heat are not proved.
+
+Substitution into the already studied full positive Hodge binding gives
+`H'(0)<=-2apL^2<0` for finite `L>=2` and `0<beta<=p^5/(512L^2)`.
+All modes and the full ordinary trace remain. This is not fixed-beta
+refinement, all ten metric-source components, or full native stationarity.
+The complete remaining price must be varied on the same actually admitted
+path; no compensator or temperature is chosen. Rank-one outputs, unbounded
+shape limits and readout-null archive directions are retained as controls.
+
+The new source has 22 compiled propositions with standard axioms, 307 exact
+controls, six rejected mathematical mutations and sixteen rejected scope/input
+ledgers. Fourteen owner/proof pins match the source baseline. Seven changed
+source blobs were verified remotely before this intake. The intake now has
+344 source artifacts: 337 previous artifacts keep their bytes, the primary
+memo is updated, and six component files are added. Historical artifact counts
+below describe their own earlier intake. The 44-node graph, detailed tangent
+contract, T0--T3 and all original parent terminals remain unchanged.
 
 The [critical-plan entry](D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md) now gives
 one current execution order and labels the older sequences as history.

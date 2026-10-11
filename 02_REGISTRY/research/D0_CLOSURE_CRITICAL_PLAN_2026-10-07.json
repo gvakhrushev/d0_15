@@ -724,13 +724,13 @@
     }
   },
   "active_execution_strategy": {
-    "date": "2026-10-10",
+    "date": "2026-10-11",
     "status": "EXECUTION_PLAN_WITH_NATIVE_PREPARATIONS_AND_DIFFERENTIAL_OR_FINITE_CONTRAST_DESCENT",
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
     "control_input_head": "84e16c8bdfe79fcca52803d428511832efbbf3ac",
-    "published_scientific_input_head": "80462afde4668fc822a01a70c2e571ce36ecd64e",
-    "observed_source_strategy_head": "80462afde4668fc822a01a70c2e571ce36ecd64e",
+    "published_scientific_input_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+    "observed_source_strategy_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
     "strategy_document_is_not_a_source_theorem": true,
     "one_active_packet": "NATIVE_CONSTRAINED_COMPOSED_PRICE_COVECTOR",
     "output_proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
@@ -1764,6 +1764,51 @@
       "parent_terminals_unchanged": true,
       "book_text_changed": false,
       "next_scientific_obligation": "Derive an independently admitted common preparation and its actual variation. A real TC realization and its own full-price bridge are prerequisites only if that route is used; arithmetic aliases cannot discharge them."
+    },
+    "recorded_observer_preparation": {
+      "source_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+      "input_head": "80462afde4668fc822a01a70c2e571ce36ecd64e",
+      "control_input_head": "355ae3bd61be6e584913063d6f632d47b02d12fc",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_RECORDED_OBSERVER_PREPARATION.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_recorded_observer_preparation",
+      "classification": "FINITE_RECORDED_STATE_OBSERVER_COMPONENT_AND_HEAT_TEST_NOT_NATIVE_T0",
+      "consumer": "Existing positive observer form and explicit positive Hodge binding test",
+      "full_real_state_domain": "det Psi != 0; rho=Psi Psi^T; explicit A,B,C,D density readout; all full-state coordinates retained",
+      "constructed_component": "j^T eta j=4 det rho; n=j/sqrt(j^T eta j); h=observerMetric(n)",
+      "golden_form_eigenvalues": [
+        "1/p",
+        "1",
+        "1",
+        "p"
+      ],
+      "actual_gate_curve": "u=(1-t^2)/(1+t^2), v=2t/(1+t^2), output=(a*u-p*v,0,0,p*u+a*v)",
+      "quantitative_faithful_sector": "abs(t)<=1/10; ell=217/505; ell^2 I<=h<=ell^-2 I",
+      "full_pairing_derivative": "d=-2a/p^2 at AA,DD; c=2a(1+p^2)/p^3 at AD,DA; Tr(h^-1 dh)=0",
+      "complete_heat_test": "Hprime<=-2apL^2<0 for every finite L>=2 and 0<beta<=p^5/(512L^2), retaining all modes",
+      "physical_readout_or_pairing_admission_proved": false,
+      "full_matter_or_metric_source_computed": false,
+      "native_temperature_action_or_compensator_selected": false,
+      "fixed_beta_refinement_theorem": false,
+      "same_gate_rank_one_boundary_and_readout_null_directions_retained": true,
+      "new_Lean_propositions": 22,
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Lean_scope": "Generic density determinant, timelike normalization, actual owner positivity, literal gate, normalized curve and composed genuine derivatives",
+      "analytic_scope": "Faithful interval bounds, full Hodge heat substitution and all-L finite high-temperature estimate",
+      "exact_controls": 307,
+      "executed_mathematical_mutations_rejected": 6,
+      "false_scope_ledgers_rejected": 16,
+      "source_pins": 14,
+      "native_F_T0_T3_or_GR_closed": false,
+      "all_44_nodes_and_original_terminals_unchanged": true,
+      "scientific_artifact_count": 344,
+      "prior_artifacts_unchanged": 337,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 6,
+      "next_required_proof": "Own shared admission of the recording/readout and all price arguments on (q,D,b,m), with the full allowed tangent and all remaining equations. The finite component is not that admission."
     }
   }
 }
