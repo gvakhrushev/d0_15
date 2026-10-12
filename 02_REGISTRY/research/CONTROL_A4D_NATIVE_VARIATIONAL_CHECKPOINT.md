@@ -3,10 +3,39 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`d64296ce4dcb937abc440ece03e49e50442db4e8`, following
-`5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d`.
+`1555a67779d42a78108a0525dd5dc1a3a580c136`, following
+`d64296ce4dcb937abc440ece03e49e50442db4e8`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Complete cyclic-memory minimum and golden binding, 2026-10-12.**
+[The whole-class result](A4D_NATIVE_CYCLIC_MEMORY_MINIMIZATION.md)
+finishes the proposed internal-memory minimization in the preceding
+reversible conditional-label/cycle-heat realization. Finite global minima
+exist on every complete one-step frequency fiber. Their feedback tends
+uniformly to zero through legal inserted returns. Prefix minimum extensions
+retain the whole previous list and satisfy the same bound for every past
+order. Every finite full-edge word has strictly positive feedback; the
+zero limiting value is not an exact finite zero root.
+
+The actual native operator test is quantitative. For the literal recorded
+golden `fullStep`, preservation of its blank-record input plane and its step
+has error `delta+2eta>=p/2>3/10` under every real or complex isometry into
+the complete reversible word carrier. Exact injective linear intertwiners
+are also excluded by polar normalization. The approximate bound retains
+its isometry hypothesis; scaling an encoding to zero does not preserve
+the normalized readout. Thus this attempted joint preparation cannot be
+repaired by more records or by changing embedding phases.
+
+The analytic minimum/no-zero/norm proofs have 55 exact controls and eight
+executed mathematical mutations, with eighteen baseline input pins.
+No new Lean theorem is claimed. All four changed source blobs were verified
+remotely before copying. This intake has 350 source artifacts: 346 earlier
+files retain their bytes, the primary memo is updated, and three files
+are added. The full D0 matter/action stack, physical preparation and
+the constrained metric/link source remain open. T0--T3 and all 44 graph
+nodes are unchanged. The next consumer must use the actual noncommuting
+record/readout structure and derive the whole price on that same input.
 
 **Cyclic history and order-memory response, 2026-10-11.**
 [The complete construction](A4D_NATIVE_CYCLIC_HISTORY_PRICE_PREPARATION.md)

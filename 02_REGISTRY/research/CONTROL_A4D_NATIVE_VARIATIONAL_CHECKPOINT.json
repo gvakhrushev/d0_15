@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "9cc4bbbdeb05f12c0329d55719315854b4a2b2c2ce0edd5ca3170d1f9eb3d1c9",
-      "source_blob": "2521f2b2c05196bfcd228fb0cdc6df8dc997b489"
+      "sha256": "73160ce6b3931603d01f8de5381f942d7a7a1a50b90b3521e17d36c11c978a94",
+      "source_blob": "f33407a76aee7226cad37f71cb039f3bfc897f26"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1736,6 +1736,21 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_cyclic_history_price_check.py",
       "sha256": "1e090d2412bd796dd07f188e6039daa1956f0151345d79d0662611f46c3bef3a",
       "source_blob": "ea66289fb930f82952c985711bb5df9e0f0511e9"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CYCLIC_MEMORY_MINIMIZATION.md",
+      "sha256": "2f31f7566810e649981af73e202ae385cc03b1e3811e7f8024fe0011fe938c22",
+      "source_blob": "ea260284078d6b0ec051ab600b3bd8b444212a30"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cyclic_memory_minimum_check.py",
+      "sha256": "3c98b2d215a073b8488816d81f6002c7cfeab2f53d2ac1bca1d95bb0ce11a3f8",
+      "source_blob": "99efcf0e1b2efc01bd5ae280d77cf66e9d6ffe6f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_cyclic_memory_minimum_certificate.json",
+      "sha256": "7221a054c6fc9c97a9bdf92acc1095e4f8dc8f91bbdfc23eab509386e9b36287",
+      "source_blob": "06bb8db06f356d3b013f884e00d1b73cef4af379"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -2777,13 +2792,54 @@
       "prior_artifacts_updated": 1,
       "new_artifacts": 3,
       "next_required_proof": "Own common admission and physical readout of the complete price. Preserve order memory or derive its actual internal equations; one-step frequencies and additive edge cost cannot replace the full composed price. No adjacent spectrum or longer-word census."
+    },
+    "cyclic_memory_minimum_and_golden_binding_boundary": {
+      "source_head": "1555a67779d42a78108a0525dd5dc1a3a580c136",
+      "input_head": "d64296ce4dcb937abc440ece03e49e50442db4e8",
+      "control_input_head": "9c038a4aeac8cda339a7c22505e3ecdfec49c78a",
+      "date": "2026-10-12",
+      "classification": "COMPLETE_CYCLIC_MEMORY_MINIMUM_AND_ACTUAL_GOLDEN_REPRESENTATION_OBSTRUCTION_NOT_PHYSICAL_T0",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CYCLIC_MEMORY_MINIMIZATION.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_cyclic_memory_minimum",
+      "consumer": "The missing common preparation of the actual recorded golden operation, readout and whole native price",
+      "domain": "All closed scene words at fixed complete positive reversible one-step counts; whole cycle heat and two-step feedback",
+      "coarse_readout": "Actual normalized visit pairing and compressed canonical cycle heat; visit D is not physical transport D",
+      "whole_finite_minimum_existence": "Every nonempty finite frequency fiber, including all prefix extensions, has a minimum of the named entire two-term bootstrap",
+      "finite_complete_edge_zero_feedback_possible": false,
+      "minimum_feedback_bound": "132*z/((1-z)*(2*n+1)), uniform over all previous orders and minimum branches",
+      "whole_past_retained": true,
+      "prefix_growth": "Knew=(2*n+1)*(K+1)",
+      "minimum_value_central_response_bound": "At epsilon=n^(-1/3), at most 33*z/(1-z)*n^(-2/3), matched full lengths",
+      "native_operator": "Actual GoldenCoherentMemory.fullStep and its blank-record input plane, p=primitiveRoot",
+      "all_real_and_complex_isometric_clock_readout_bindings": "delta+2*eta>=p/2>3/10; uniform over lengths, orders, weights and retained complements",
+      "exact_injective_linear_intertwiner_exists": false,
+      "approximate_bound_applies_to_unnormalized_encoding": false,
+      "full_ambient_heat_modes_retained": true,
+      "global_minimizer_words_computed_by_checker": false,
+      "physical_heat_clock_readout_or_q_D_b_m_admission_proved": false,
+      "full_D0_matter_action_stack_minimized": false,
+      "physical_mesh_or_joint_Euler_roots_identified": false,
+      "actual_full_operator_append_refinement_intertwiner_proved": false,
+      "proof_status": "Analytic whole-class minimum, combinatorial no-zero and all-isometry norm proofs; exact counts and literal native matrices checked",
+      "source_pins": 18,
+      "exact_controls": 55,
+      "executed_mathematical_mutations_rejected": 8,
+      "new_Lean_propositions": 0,
+      "native_F_T0_T3_or_GR_closed": false,
+      "whole_core_no_go": false,
+      "all_44_nodes_and_original_terminals_unchanged": true,
+      "scientific_artifact_count": 350,
+      "prior_artifacts_unchanged": 346,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 3,
+      "next_required_proof": "Derive a native common preparation using the actual noncommuting record/readout structure and every full-price argument. The completed reversible conditional-label mechanism cannot be repaired by longer words, complex embedding phases or unnormalized error scaling. Non-reversible frequencies and coherent operator readouts require their own admission/binding proof."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+  "previous_source_head": "d64296ce4dcb937abc440ece03e49e50442db4e8",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2872,11 +2928,12 @@
     "Positivity and compatibility on every level of the actual Fibonacci inclusion force the golden trace without a supplied Perron profile. The full GNS density extension remains a d^2-d dimensional Hermitian affine fiber. At actual levels n>=2, every faithful density in this fiber with the simple cyclic ground vector has a strict thermal descent direction; the entire stated class has no finite stationary point or minimizer. This curve is not asserted to be natively admitted with fixed feedback or matter. Normalized isometric compression cannot preserve both trace one and faithful mass in new modes. Sixteen compiled propositions, 1824 controls, nine executed math mutants and twenty-one false ledgers pass. This closes the stated trace and thermal interfaces, not T0 or native gravity.",
     "The literal AF phi-squared heat class admits exact rectangular scene Laplacian compression on the full 233-dimensional carrier, yet every scene isometry has intertwining error at least 13/2, sharp on the full 89-dimensional carrier. Exact heat-semigroup compression is excluded in that entire operator class. The actual 33-vertex graph and all five projectors are checked. Eleven scalar Lean propositions, 121 controls, nine executed mathematical mutants and nineteen false ledgers pass. This corrects the overbroad dimension-based map exclusion; native F, physical admission and T0 remain open. No replacement spectrum is installed.",
     "Recorded-state observer component in an explicit density readout and the retained positive-Hodge heat derivative; physical native admission and common T0 remain open.",
-    "Actual composition-admitted scene words realize the weighted return pencil. A full fixed-one-step memory fiber has strictly decreasing whole two-term bootstrap price and a uniform n^(-2/3)/120 central-probe error. Physical common preparation, source and T0 remain open; full action-stack contributions are not inferred."
+    "Actual composition-admitted scene words realize the weighted return pencil. A full fixed-one-step memory fiber has strictly decreasing whole two-term bootstrap price and a uniform n^(-2/3)/120 central-probe error. Physical common preparation, source and T0 remain open; full action-stack contributions are not inferred.",
+    "Complete word-frequency and prefix minimum bounds with all history/heat retained; uniform p/2 golden clock/readout representation obstruction for real and complex isometries, exact injective-linear obstruction. Physical common preparation and all original parent terminals remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "d64296ce4dcb937abc440ece03e49e50442db4e8",
+  "source_head": "1555a67779d42a78108a0525dd5dc1a3a580c136",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+  "source_parent": "d64296ce4dcb937abc440ece03e49e50442db4e8",
   "source_pr": 310
 }
