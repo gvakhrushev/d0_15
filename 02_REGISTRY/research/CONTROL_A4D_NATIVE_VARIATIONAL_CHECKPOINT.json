@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "73160ce6b3931603d01f8de5381f942d7a7a1a50b90b3521e17d36c11c978a94",
-      "source_blob": "f33407a76aee7226cad37f71cb039f3bfc897f26"
+      "sha256": "13189aa9d31330622176573f9e91993db7058bd6a74381c75d7c2cbd9f5d31aa",
+      "source_blob": "18ea6ca112945484e04a4f1b160d7cf2cb7a45ac"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1751,6 +1751,26 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_cyclic_memory_minimum_certificate.json",
       "sha256": "7221a054c6fc9c97a9bdf92acc1095e4f8dc8f91bbdfc23eab509386e9b36287",
       "source_blob": "06bb8db06f356d3b013f884e00d1b73cef4af379"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FACTOR_IMBALANCE_REMAINDER.md",
+      "source_blob": "1ba94020a5031162742b52ea7981784cb3fcf312",
+      "sha256": "5fb7f4c5e7bbae5924b1b169c867c96993266d9eec52ac05e1ba6e451de722af"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_factor_imbalance_remainder_check.py",
+      "source_blob": "044695a386006f4125b9d8ee706b8a60ef7fe1e1",
+      "sha256": "1fdb90d822d362a52200b42a4fb3e663efa59e3a2371f9da15cada1eed1363da"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_factor_imbalance_remainder_certificate.json",
+      "source_blob": "9bafc82dcaa068b88c2e68f5c98e13ac24820cf9",
+      "sha256": "8ec14bcd2ee94cb55107e47a2f6fa92af8f80d14536cef6ec1794907cdd5b4ac"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+      "sha256": "77079fb2fa8da001ca259ebef432ae7001a15d18f73cde04b8ba3380b9b1cbcf",
+      "source_blob": "90179067ece3dd4959a920029d1dad306a91c5d7"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1882,7 +1902,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+    "observed_source_strategy_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1931,9 +1951,9 @@
     },
     "parent_graph_and_terminals_unchanged": true,
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
+    "plan_sha256": "df9c8b5131d210a1d557bf23ddac7f1a29f5254c382bd5a8acc84e990f71eff9",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 337,
+    "prior_scientific_artifacts_byte_unchanged_count": 349,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1967,7 +1987,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+    "scientific_source_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2833,13 +2853,47 @@
       "prior_artifacts_updated": 1,
       "new_artifacts": 3,
       "next_required_proof": "Derive a native common preparation using the actual noncommuting record/readout structure and every full-price argument. The completed reversible conditional-label mechanism cannot be repaired by longer words, complex embedding phases or unnormalized error scaling. Non-reversible frequencies and coherent operator readouts require their own admission/binding proof."
+    },
+    "factor_imbalance_full_remainder": {
+      "date": "2026-10-12",
+      "source_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
+      "input_source_head": "1555a67779d42a78108a0525dd5dc1a3a580c136",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_FACTOR_IMBALANCE_REMAINDER.md",
+      "checker": "02_REGISTRY/research/certificates/a4d_native_factor_imbalance_remainder_check.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_factor_imbalance_remainder_certificate.json",
+      "whole_feedback_first_jet": "Jprime=Cphi*sigma for all orthogonal U and constant-rank orthogonal P jets at the literal recorded golden block; all extra archive coordinates retained",
+      "native_phi_parameter_jet": "adot=pdot=0 under the actual golden identities",
+      "fixed_gate_full_remainder": "0 on the same actual moving positive-pairing factor path",
+      "actual_moving_record_reference_remainder": "-4*E1*E4/(a*p*L^2)",
+      "actual_moving_record_total_factor_jet": "2*(E1-E2)-4*E1*E4/(a*p*L^2)>1/10000 at beta=log2 for every L>=2",
+      "bounded_unit_observer_jets": "O(L^-2) in the specified diagonal rest-base class",
+      "full_finite_contrast": "h^(1/3)/20000 lower bound for the literal unrescaled correlated linear physical pencil, sufficiently small h, from analytic uniform C3 moment bounds",
+      "metric_covectors": "all ten positive-Q and Lorentz-q coefficients separated; q table uses the explicitly specified joint raw-solder/observer lift",
+      "comparison": "rho0 geometric covector exactly zero on all ten constant flat physical probes",
+      "physical_admission_or_own_source_subtraction_or_normalization_derived": false,
+      "native_common_preparation_operator_heat_observer_matter_and_full_variations_owned": false,
+      "conditional_class_is_whole_core_or_positive_GR": false,
+      "new_action_phase_law_selector_or_postulate": false,
+      "proof_status": "Analytic arbitrary-archive full determinant/readout/frame proof, genuine recorded-state coupling, all-L source and uniform C3 contrast; exact finite CAS controls consume pinned existing Lean propositions",
+      "exact_controls": 1114,
+      "executed_mathematical_mutations_rejected": 18,
+      "published_baseline_file_pins": 20,
+      "new_Lean_propositions": 0,
+      "scientific_artifact_count": 354,
+      "prior_artifacts_unchanged": 349,
+      "prior_artifacts_updated": 1,
+      "new_artifacts": 4,
+      "all_44_nodes_and_original_terminals_unchanged": true,
+      "next_required_proof": "Derive the independently admitted common preparation and its constrained full-price jet on (q,D,b,m), including the actual observer/matter lift and any extra term. Fixed-gate frame/readout transport and bounded recorded-observer jets cannot provide the required order-one trace-free compensator in this Hodge binding. Evaluate the actual native diagonal remainder/eigenphase covector; do not assign it from rho0 or open a word, archive, numbering or adjacent compatible-spectrum census.",
+      "existing_input_owner_added": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+      "dependency_intake_note": "Previously published finite-probe rho0 owner copied after strict CONTROL replay identified its absent file. Source proof/certificate bytes and scientific verdict unchanged; expected results were not regenerated."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "d64296ce4dcb937abc440ece03e49e50442db4e8",
+  "previous_source_head": "1555a67779d42a78108a0525dd5dc1a3a580c136",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2932,8 +2986,8 @@
     "Complete word-frequency and prefix minimum bounds with all history/heat retained; uniform p/2 golden clock/readout representation obstruction for real and complex isometries, exact injective-linear obstruction. Physical common preparation and all original parent terminals remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "1555a67779d42a78108a0525dd5dc1a3a580c136",
+  "source_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "d64296ce4dcb937abc440ece03e49e50442db4e8",
+  "source_parent": "1555a67779d42a78108a0525dd5dc1a3a580c136",
   "source_pr": 310
 }

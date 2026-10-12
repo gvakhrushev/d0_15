@@ -877,3 +877,13 @@ legacy-строка `D0-SOLID-PHI-CYCLOTOMIC-TRACE-001` называют TC-вы
 Это не отсутствие F во всём D0 и не препятствие конденсированной
 математике вообще. Claims, книги и первичные Lean-владельцы здесь
 не изменены; никакой математический или физический terminal не поднят.
+
+## Factor-imbalance remainder and moving-record contrast (2026-10-12)
+
+SOURCE `48d762ae66ca5f423cd9e40231aa8067a4d95dba` publishes [the constrained remainder proof](https://github.com/gvakhrushev/d0_15/blob/48d762ae66ca5f423cd9e40231aa8067a4d95dba/02_REGISTRY/research/A4D_NATIVE_FACTOR_IMBALANCE_REMAINDER.md) in the same #310 packet. The whole recorded-golden two-tick differential is Cphi*sigma for every orthogonal operator/readout jet; projector motion and isospectral frame motion are zero. The actual golden identities force adot=pdot=0. The positive pairing and every archive row are included.
+
+On the factor tangent the fixed-gate remainder is zero. Coupling the actual normalized recorded-state curve gives the nonzero reference remainder -4E1E4/(apL^2); all bounded observer jets on the stated diagonal rest base are O(L^-2). The total shape derivative stays greater than 1/10000 uniformly in L. Explicit faithful bounds and full heat moments prove a literal unscaled h^(1/3)/20000 half-contrast gap on the correlated linear physical pencil. All ten positive-Q and Lorentz-q coefficients are kept separate on a specified joint lift; the geometric flat rho0 comparator is zero.
+
+1114 exact controls, 18 executed mathematical mutations and 20 baseline file pins pass. The consumed recorded-observer Lean propositions, compiler output and transitive inputs resolve; no new Lean theorem is claimed. The previously published finite-probe rho0 owner is included as an input reference after strict replay identified its missing CONTROL file; its physical scope is not promoted. All 354 intake artifacts match the published source bytes and Git blobs. This is a scoped obstruction to the stated compensators, not an admitted full native preparation, own source/Ward, physical normalization, curved joint root, soundness/recovery or GR. The four-coordinate apparatus is not silently identified with sixteen-component matter.
+
+The next operation remains the actual full-price preparation/tangent on (q,D,b,m): derive its observer/matter lift and the order-one diagonal/eigenphase or other owned remainder, then compare the intrinsic ten-slot covector. A fitted phase/source, an extra compatible spectrum and another archive/word census do not answer that obligation. The 44-node graph is unchanged; T0-T3 and #310/#202/#317 remain open in their original scopes; current-head CI and independent CONTROL review remain acceptance gates.
