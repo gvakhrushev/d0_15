@@ -1,0 +1,18 @@
+D0.Research.FockRecordBinding.literal_apparatus_commutant_scalar (a p : ℝ) (hp : p ≠ 0) (X : Matrix (Fin 4) (Fin 4) ℝ)
+  (hU :
+    X * D0.Representation.GoldenCoherentMemory.fullStep a p = D0.Representation.GoldenCoherentMemory.fullStep a p * X)
+  (hP : X * D0.Research.FockRecordBinding.priceCut = D0.Research.FockRecordBinding.priceCut * X)
+  (hB : X * D0.Research.FockRecordBinding.blankCut = D0.Research.FockRecordBinding.blankCut * X) : ∃ c, X = c • 1
+D0.Research.FockRecordBinding.golden_full_gate_spacelike_first_grade (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) : a ^ 2 - (2 * p) ^ 2 < 0
+'D0.Research.FockRecordBinding.literal_apparatus_commutant_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FockRecordBinding.golden_root_gt_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FockRecordBinding.golden_full_gate_spacelike_first_grade' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Representation.GoldenCoherentMemory.fullStep_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Representation.GoldenCoherentMemory.blank_record_evolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

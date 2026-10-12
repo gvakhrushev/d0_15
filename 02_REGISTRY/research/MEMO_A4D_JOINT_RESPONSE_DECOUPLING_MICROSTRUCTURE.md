@@ -3801,3 +3801,44 @@ select this candidate as the physical heat law, force all matter timelike,
 or choose future orientation. Full native preparation, intrinsic source/
 Ward, corrected roots, soundness/recovery and GR, together with the original
 #310/#202/#317 parent terminals, remain open without lifecycle promotion.
+
+## Literal golden record on the full native Fock fibre (2026-10-12)
+
+[The same-carrier record continuation](A4D_NATIVE_FOCK_RECORD_BINDING.md)
+binds the actual `GoldenCoherentMemory.fullStep`, its price cut and its
+blank-record plane to all sixteen exterior components. The literal tuple
+has scalar commutant for every p!=0. Full O(3) observer stabilizers give
+native irreducible multiplicities two, preventing a pointwise full tuple
+binding from q and the observer alone. The nonzero fourth matter grade
+supplies an existing orientation resource; its spatial Hodge and actual
+CAR creator give a complete `apparatus4 tensor (R+E3)` factorization.
+Every native grade participates. This is a constructed representation,
+not an M1 execution/admission theorem or a number-preserving affine link.
+
+The one-frame feedback determinant is exactly `(1-4zp^3)^4`, with four
+nonzero modes and twelve zero modes retained. Its joint q/m derivative
+at fixed native p,z is zero. State-conditioned chronology cannot be
+identified with that same-frame square without its actual transition and
+endpoint pairing. A fully normalized genuine blank input has timelike
+grade one and nonzero top grade, while the actual full record sends its
+first-grade norm to `(p-4p^2)/10<0`. The causing grade-two and grade-three
+components are retained. A second full-state control retains orientation
+information in grade three while its top grade vanishes. Even a regular
+blank input with output norm p^3>0 changes the positive pairing; the
+original gate is not its endpoint-pairing isometry.
+
+The checker replays 169 exact controls and 15 mathematical mutations.
+Three generic Lean propositions compile cleanly: the literal apparatus
+commutant, p>1/2 and the strict spacelike-output sign. Two actual gate owners
+and six transitive project/toolchain inputs are pinned. The full exterior
+factorization and representation argument remain analytic/exact research;
+no supported CORE owner, action, source, fitted phase or physical law is added.
+
+The next required T0 arrow is the actual closed common preparation and
+joint state/record/metric transition, retaining its orientation memory,
+pairing transport and every full-price argument. The supplied formula or
+an input gate alone does not prove that arrow. A new metric update selected
+to repair the counterexample is not substituted for an owned transition.
+Then evaluate the full chronological price jet and source on its admitted
+tangent, including all excluded directions. G0-G4, positive GR and the
+original #310/#202/#317 terminals remain open under the full closure goal.
