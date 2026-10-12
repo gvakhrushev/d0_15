@@ -3692,3 +3692,56 @@ owned common preparation that preserves the actual noncommuting
 record/readout structure; another unconstrained cyclic word cannot
 repair the representation gap. The 44-node graph and original
 #310/#202/#317 terminal contracts remain unchanged.
+
+## Constrained factor imbalance: complete remainder and the required source jet (2026-10-12)
+
+[The factor-imbalance calculation](A4D_NATIVE_FACTOR_IMBALANCE_REMAINDER.md)
+returns to the actual constrained derivative. At the literal recorded golden
+block, the full two-tick feedback differential for every orthogonal U jet
+and every constant-rank readout jet is Cphi*sigma. Readout motion and
+isospectral frame motion give zero; the arbitrary additional archive is
+retained. Sigma=-(K02+K03+K12+K13)/2, K=Udot*Utranspose, and
+Cphi=8zap(p-p^2)/(1-4zp^3). This broadens the old fixed-compression result.
+The blank-input plane is kept distinct from the feedback projector.
+
+On the full 16L^4 positive-Hodge carrier, a fixed recorded block in a moving
+W_Q-orthonormal frame gives an actual same-path remainder derivative zero.
+The volume-preserving factor variation has full bootstrap derivative
+2(E1-E2)>1/10000 at beta=log2, uniformly L>=2. An explicit raw-solder
+Lorentz/recorded-observer component realizes the same constant factor curve
+kinematically, without identifying positive Q with Lorentz q. Every flat
+physical Palatini probe and all ten rho0 slots vanish there. The complete
+heat coefficients and required remainder coefficients are computed in all
+ten slots with the packed off-diagonal weights.
+
+The literal golden identities force adot=pdot=0. A fitted free gate angle
+cannot serve as the missing source. The remaining native module is the
+intrinsic pullback of a genuine whole-preparation eigenphase jet, and any
+other actually owned remainder, satisfying
+Cphi*(A_sigma)_tf+(A_other)_tf=-(A_heat)_tf in this flat test. The algebraic
+carrier constraint alone does not derive that pullback. The exact controls
+include the moving pairing jet, all ten joint metric probes, 24 retained
+link directions, and a genuine nonisospectral orthogonal control whose
+cancellation is explicitly not promoted to native admission.
+
+The same packet then includes the actual normalized recorded-state curve,
+rather than leaving its observer fixed. In the base observer rest frame its
+unit-observer jet is (0,0,0,-2/(ap)). Coupling that existing curve to the factor
+probe gives the complete reference remainder -4E1E4/(apL^2), and the total
+shape derivative still exceeds 1/10000 uniformly in L. All bounded observer
+jets on this specified rest base give O(L^-2) responses. Explicit faithful
+record bounds and full spectral moment estimates establish uniform C3 on
+the correlated linear physical pencil, so its native mathematical half
+contrast is at least h^(1/3)/20000 for sufficiently small h. This is a
+quantitative failure of the literal unscaled, zero-source comparison in the
+named prepared class; physical admission, own source subtraction and native
+normalization are not supplied. Positive-Q and Lorentz-q covectors are
+recorded separately, with all ten q coefficients pulled back through the
+specified joint coframe/observer lift.
+
+This is a scoped failure of the fixed-gate positive-Hodge prepared class and
+a quantified missing constitutive derivative, not a whole-core no-go,
+full native preparation, own matter/source/Ward, curved Euler root,
+soundness/recovery or positive GR. No word/scene/numbering census, new
+phase law/action, Lean-owner change or parent terminal promotion is made.
+The next computation is the actual joint preparation jet in this formula.
