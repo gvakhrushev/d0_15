@@ -3648,3 +3648,47 @@ Admission of the combined heat/readout construction and its map to
 `(q,D,b,m)` remain missing; this is not a T0 promotion or native metric stress.
 No adjacent spectral search follows from the result. All source/Ward,
 stationarity, curved-root, soundness/recovery and parent obligations remain.
+
+## Complete cyclic-memory minimum and the actual golden binding boundary (2026-10-12)
+
+[The full-class minimum proof](A4D_NATIVE_CYCLIC_MEMORY_MINIMIZATION.md)
+closes the earlier proposed elimination of order memory in the same
+reversible cyclic-word realization. Every finite frequency fiber has a
+minimum of the entire named two-term bootstrap. Inserted legal returns
+give a uniform feedback bound 132z/((1-z)q) at odd expansion q, while
+the normalized visit pairing and actual compressed canonical heat remain
+fixed. Every finite complete-edge word has strictly positive feedback,
+so the zero relaxed infimum is not a hidden exact zero root.
+
+The stronger construction retains the entire past as a literal prefix.
+For every prior order and every prefix minimum, all allowed minimum
+extensions at Knew=(2n+1)(K+1) have feedback at most
+132z/((1-z)(2n+1)). Finite nonempty classes, not a word census or fitted
+selector, prove existence. At matched lengths the complete heat terms
+cancel, and all minimum-value central responses at epsilon=n^(-1/3)
+are bounded by 33z/(1-z) n^(-2/3). Those are minimum-value comparisons,
+not a native metric lift or differentiable Euler-root theorem.
+
+A separate native operator test identifies the failed binding directly.
+The actual GoldenCoherentMemory.fullStep has a nonzero antisymmetric
+compression on its owned blank-record input plane. Every reversible
+conditional-label word has symmetric whole PUP. For every real or complex isometry
+V of the actual four-coordinate recorded operator into any complete
+word carrier, with clock error delta and input-projection error eta,
+delta+2eta>=p/2>3/10. The bound is uniform over all lengths, weights,
+orders and retained complementary modes. Exact or vanishing-error
+preservation of both this clock and this readout is therefore excluded
+in the entire named class. The apparatus owner is not promoted to a
+physical-clock admission theorem; coherent algebras, non-reversible
+frequencies and other joint preparations are outside the result.
+
+The analytic proofs have exact operator/count/prefix controls and pinned
+primary golden inputs. No new Lean theorem, heat law, action or selector
+is introduced. This finishes this proposed cyclic-memory mechanism and
+its literal recorded-golden representation test. It does not close T0,
+the physical constrained tangent, source/Ward, native stationarity,
+curved roots or soundness/recovery. The next consumer must derive an
+owned common preparation that preserves the actual noncommuting
+record/readout structure; another unconstrained cyclic word cannot
+repair the representation gap. The 44-node graph and original
+#310/#202/#317 terminal contracts remain unchanged.
