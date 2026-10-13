@@ -4252,3 +4252,49 @@ must supply the missing local metric directions, with the genuine pairing
 and link variations retained. No bootstrap binding, source/Ward, joint
 on-shell curved solution, contrast transfer or soundness/recovery is inferred
 from this kinematic construction. Original #310/#202/#317 remain open.
+
+## Full joint adjoint class and the constrained bootstrap covector (2026-10-13)
+
+[The joint adjoint proof](A4D_NATIVE_JOINT_ADJOINT_SOURCE.md) now exhausts
+arbitrary Lorentz links and unit observers for the actual stored operator,
+with its full sixteen-component exterior pairing and counting site weight.
+Selfadjointness is equivalent, edge by edge, to transport of both observer
+pairing and the corresponding leg. The general-linear rank-one exception is
+classified as well: it admits arbitrary nearby frames for the operator but
+violates the same metric-compatible dressed-link carrier. This is a complete
+answer for the stated operator class, not a prohibition of other owned
+pairings or readouts.
+
+With all 24 Lorentz link directions retained, a Fourier mode with b nonzero
+temporal and s nonzero spatial coordinates has metric image 10-b-s-bs.
+Every metric direction in this image has an explicit exact nonlinear lift.
+At a generic mode only the three spatial off-diagonal entries remain, and
+three missing directions survive even the ordinary coordinate-gauge
+comparison. Some full joint linearized solutions do not integrate: temporal
+holonomy forbids a specified combined leg/rotation jet even though its two
+summands separately integrate. The actual velocity cone is therefore not a
+vector space at the aligned reference; linearized rank is not admission.
+
+For the supplied positive Gram, projector and unitary interface, the proof
+gives the complete integrable tangent and the full differential of the
+existing heat/feedback functional. Its Gram covector is
+C_G=-2[rho D,d^dagger], with its trace zero and selfadjointness retained.
+The projector/unitary feedback covector obeys an exact internal frame Ward
+identity. A full-sixteen exact Gibbs family has nonzero Gram response;
+simultaneous basis motion cancels it only when all data move together.
+The actual native preparation must still pull this covector back to its
+own geometric and recording variables. No prescribed source is fitted and
+no matrix tangent is substituted for that missing map.
+
+The narrow Lean capsule proves the named real-matrix adjoint, tangent,
+feedback and Ward kernels and prints the actual consumed owner propositions.
+The universal exterior classification, nonlinear lifts, holonomy exclusion
+and thermal differentiation retain their analytical proof status. Rational
+commuting surrogate weights test trace algebra only; the separate full16
+scalar-square example checks its actual Gibbs derivative.
+
+The next step is the owned map (q,D,b,m)->(d,G,Pi,U), on actual admissible
+curves and compatible refinement. The existing four-level Fibonacci record
+and Q(D)=phi^(D-4) normalization are reused with their distinct scopes.
+Native source/Ward, stationarity, quantitative transfer, curved joint roots,
+soundness/recovery and original #310/#202/#317 remain open.
