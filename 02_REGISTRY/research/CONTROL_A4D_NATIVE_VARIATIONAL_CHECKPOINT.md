@@ -3,10 +3,41 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f`, following
-`5fdddb1ff924de12b38c886999a40662628cc313`.
+`2f3360c5d3bfcb40d4791b23ade8e82e03f887c8`, following
+`9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Joint adjoint class and full constrained source covector, 2026-10-13.**
+[The joint proof](A4D_NATIVE_JOINT_ADJOINT_SOURCE.md) classifies the actual
+stored operator for all Lorentz links and unit observers on its full sixteen-component
+counting/exterior carrier. Adjointness is exactly edge transport of the
+observer pairing and the role leg. The general-linear rank-one exception
+is also classified; it cannot preserve the same dressed metric carrier.
+
+All 24 link directions give metric rank 10-b-s-bs, generically three. Every
+allowed metric direction has an exact nonlinear realization, but a specified
+joint linearized jet fails a C1 holonomy test. Its two pieces separately
+integrate, so the actual velocity cone is not a vector space there. The
+coordinate-gauge comparison still leaves three missing directions.
+
+The positive Gram/projector/unitary interface now has a complete integrable
+tangent and full heat/feedback covector. Its Gram contribution is retained,
+and exact internal frame Ward cancellation distinguishes geometric motion
+from a simultaneous basis change. Full16 Gibbs and exact packed-component
+controls are included; rational surrogate weights are labelled as algebraic
+controls. The native geometric/recording preparation and physical Ward
+pullback remain the next required arrow.
+
+All 427 scientific artifacts match remote SOURCE: 419 prior files unchanged,
+one memo appended, seven new. Immutable replay passes 429
+grouped exact checks and 15 mathematical negative controls;
+24 narrow Lean matrix propositions and 4 actual-owner axiom closures use only
+standard axioms. All 44 graph contracts and the dated preflight plan remain
+unchanged. Existing four-level Fibonacci recording and delta normalization
+retain their distinct scopes. Native source/Ward, stationarity, quantitative
+refinement, joint curved solutions, soundness/recovery and GR remain open.
+Current-head CI and independent CONTROL review remain required.
 
 **Curved surviving operator class and full-grade heat, 2026-10-13.**
 [The exact curved proof](A4D_NATIVE_CURVED_SOLDERED_HEAT.md) classifies the

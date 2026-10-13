@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "5a5d89f8a8486c9b070036479f5a36eb16857c74794a62722c68904c51b67114",
-      "source_blob": "8c365942526deb8f7221c7d76f6b1bc26e9a852e"
+      "sha256": "4d13cb85ac40c446399ad5430cfa292d84bd7f5a8ac22ec881be3cb913b91676",
+      "source_blob": "8331fff35d5b6a8ab1dd1ca95a27f87a74218247"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -2101,6 +2101,41 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_lean_output.txt",
       "sha256": "29f3baae66f290899012a9e7735d2e51f94347f76404e5138b749e4c1dc9b751",
       "source_blob": "e94b3ada8bfb21c9c5f4c566c2df276f79f1e186"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_JOINT_ADJOINT_SOURCE.md",
+      "sha256": "19b5062c1af8281c219de5c0ef6b70d7790922201c8f3c71b4472a18345c404d",
+      "source_blob": "06698296d76da92145c10a64733bc6b220cbbb88"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py",
+      "sha256": "71ba142e284974db57d67c91a77ccd08a7e4f9759e8fc8daef7c5938774c0b28",
+      "source_blob": "b79985724b294c7ea62688bac0f13f02a3b23704"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_check.py",
+      "sha256": "74096dfe1684d682d292001b5ab535aec6e917df5732905cf05cc2a54308a651",
+      "source_blob": "684d5f997f52e48c29aacf52a6139de1e9b63d43"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_certificate.json",
+      "sha256": "8f24521793732b087f65f75faf8c853a95fac2cdf07290636bdc79cbb243da33",
+      "source_blob": "f202be41e41b844a0a9e96b215c093b17440bdf1"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.lean",
+      "sha256": "b6be9d26c83961912c9f04d51f52e6677f8a1ae01ed74016f66e5bd9b2556a63",
+      "source_blob": "207d075484e3922e92d029dfed1551dc0a202e20"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_lean_results.json",
+      "sha256": "6aff58a3ebda7ba359681c2aa2db1a263a91aa676be75731bcdbeb10311ec4b3",
+      "source_blob": "85db9a3ad137f3352647137ab18fb1a0913e26e8"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_lean_output.txt",
+      "sha256": "ec3e46106ab7f3a59f69210e1a9b6bebdef0e09fc053e3fcdce83f58204679ac",
+      "source_blob": "6f5302d4b83ec9d9802583d8862041294e341fc0"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -3556,13 +3591,45 @@
       "new_scientific_artifacts": 7,
       "all_44_contracts_and_original_parent_terminals_unchanged": true,
       "next_required_proof": "Derive the actual full-carrier native map X -> (Delta(X),P(X),U(X),G(X)) on its independently admitted (q,D,b,m) tangent. The rest/counting stored operator now has a complete own-axis selfadjoint class containing uniformly nondegenerate curved metrics, but its local metric image has rank m(9-m)/2 at frequency with m zero coordinates. Recover the missing physical probes from owned joint link/pairing variations rather than extrapolating the homogeneous rank ten. Retain the scalar-to-two-form coupling: full compressed heat differs strictly from heat of the conductance compression at every beta>0; any proposed reduction needs its own quantitative refinement bound. The bootstrap identification remains to be proved, not installed. Reuse the existing four-level Fibonacci record threshold, corner weight 4delta0^2 and two-tick coefficient 8delta0 without identifying scalar depth, Role axes and physical time. Physical full-GNS Gibbs preparation is still an additional interface, not a prerequisite of the heat derivative. Then establish same-family source/Ward, native stationarity, quantitative contrast, joint curved roots and soundness/recovery. Preserve original #310/#202/#317 and all parent contracts; no new action, selector, postulate, arbitrary scalar heat substitution or role/word census."
+    },
+    "joint_adjoint_source": {
+      "date": "2026-10-13",
+      "source_head": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
+      "input_source_head": "9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f",
+      "control_input_head": "224922275c8a11863b9463f836442b3c77217fe9",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_JOINT_ADJOINT_SOURCE.md",
+      "program": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_certificate.json",
+      "exact_controls": 429,
+      "executed_mathematical_mutations": 15,
+      "new_Lean_propositions": 24,
+      "actual_owner_axiom_checks": 4,
+      "source_input_pins": 62,
+      "complete_operator_class": "Full16 stored soldered operator, arbitrary unit observers and Lorentz links, observer exterior Gram with counting site weight; iff each edge transports observer pairing and its role leg.",
+      "GL_exception": "Complete positive rank-one dilation exception for arbitrary GL links; arbitrary nearby metric image for the operator, but the same dressed carrier equation requires Lorentz links.",
+      "Fourier_metric_rank": "10-b-s-bs with b nonzero temporal frequency, s nonzero spatial frequencies; generic rank3 and metric-plus-coordinate-gauge comparison rank7.",
+      "nonlinear_realization": "All metric directions in the stated image have explicit exact nearby realizations. Some full joint linearized solutions fail a C1 holonomy test; two integrable jets have a nonintegrable sum.",
+      "complete_matrix_tangent": "Explicit integrating curves for supplied positive G, projector Pi and G-unitary U; additional native field constraints are retained.",
+      "joint_covector": "Full heat, feedback and Gram covector; C_G=-2[rho D,d^dagger], exact internal frame Ward. Physical source/divergence Ward requires its native pullback.",
+      "exact_control_scope": "Full16 edge/Gibbs scalar-square controls; all24 link variables and10 packed Gram components. General rational covector tests use an explicitly labelled positive commuting surrogate, not a Gibbs exponential.",
+      "proof_status": "24 all-size real-matrix Lean kernels plus4 actual owner axiom closures, standard axioms only. Complete exterior class, nonlinear lift, C1 obstruction and general thermal derivative are analytic proofs.",
+      "golden_notes_reused": "Q(D)=phi^(D-4); separate minimum four-level covariant full-record representation, tau(e)=4delta0^2 and two-tick coefficient8delta0.",
+      "bootstrap_heat_identification": "OPEN",
+      "physical_source_Ward_stationarity_curved_roots_GR_closed": false,
+      "new_action_selector_postulate_or_compensator": false,
+      "source_artifact_count": 427,
+      "prior_unchanged_artifacts": 419,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 7,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "next_required_proof": "Derive the actual native map (q,D,b,m and admitted observers) -> (d,G,Pi,U) from the existing preparation and refinement. Pull back the complete heat/feedback/Gram covector on actual curves. The stored Lorentz/observer/counting operator is now completely classified: observer pairing and each edge leg must be transported; its generic metric image has rank three, and three missing directions survive the ordinary coordinate-gauge comparison. Every allowed metric direction integrates, but the full joint velocity cone is singular, so linearized solutions alone are not admission. General-linear links restore operator directions but violate the same dressed metric carrier. Another existing pairing/operator requires its precise native owner, compatible domain and relation to the physical metric readout. Reuse the four-level covariant Fibonacci record and exact delta weights without an additional role/word census. Preserve full-grade heat/refinement couplings. Then derive native source/Ward, stationarity, quantitative contrast, curved joint roots and soundness/recovery. Original #310/#202/#317 and all parent contracts remain open; no new action, selector, postulate or arbitrary heat replacement."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "5fdddb1ff924de12b38c886999a40662628cc313",
+  "previous_source_head": "9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3663,10 +3730,11 @@
     "All-level adjacent Jones overlap, owned golden full-corner transport, explicit compatible conjugated refinement, retained previous-right record, specific prepared central-label record and complete both-marginal correlation interval/owned thermal derivative; physical admission remains open.",
     "Complete invariant faithful two-marginal protected-ground state class; exact correlation-preserving heat direction and full Jones-feedback stationarity obstruction; complete reversible CPTP refinement rank deficit with restricted-family and unnormalized-heat countercontrols. Physical native admission remains open.",
     "Actual homogeneous soldered-CAR square and complete ten-component metric plus observer heat derivative; exact moving-adjoint defect; physical Gibbs-preparation interface removed from mandatory action input. Full native heat binding and parent terminals remain open.",
-    "Complete own-axis selfadjoint sector of the actual stored soldered operator; explicit uniformly nondegenerate curved readout; full-grade scalar/two-form coupling and strict all-beta compressed heat gap; restricted local tangent ranks; exact native conductance normalization and full positive conformal-family boundary. Golden four-level apparatus reused with its true representation scope. No heat identification, on-shell, source/Ward, continuum or GR promotion."
+    "Complete own-axis selfadjoint sector of the actual stored soldered operator; explicit uniformly nondegenerate curved readout; full-grade scalar/two-form coupling and strict all-beta compressed heat gap; restricted local tangent ranks; exact native conductance normalization and full positive conformal-family boundary. Golden four-level apparatus reused with its true representation scope. No heat identification, on-shell, source/Ward, continuum or GR promotion.",
+    "Complete full16 stored Lorentz/observer adjoint class and GL exception; all24 connection directions and exact nonlinear metric image; nonintegrable joint jet; full positive-pairing/projector/unitary tangent and bootstrap covector with Gram contribution and internal Ward. Exact golden four-level scope retained. Native binding, physical source/Ward, roots and GR remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f",
+  "source_head": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
   "source_pr": 310
