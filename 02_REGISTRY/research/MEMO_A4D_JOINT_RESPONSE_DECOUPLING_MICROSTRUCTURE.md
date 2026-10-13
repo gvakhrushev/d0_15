@@ -4298,3 +4298,45 @@ curves and compatible refinement. The existing four-level Fibonacci record
 and Q(D)=phi^(D-4) normalization are reused with their distinct scopes.
 Native source/Ward, stationarity, quantitative transfer, curved joint roots,
 soundness/recovery and original #310/#202/#317 remain open.
+
+## Native pairing/refinement reaction and the full-price Gram modulus (2026-10-13)
+
+[The pairing/refinement proof](A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md) tests
+the actual scaled cochain inclusion, not a new gate. No positive diagonal
+weights on the full sixteen-component carrier can intertwine its adjoint.
+The proof covers arbitrary coarse/fine values, includes a growing operator
+norm defect, and exhibits a fixed constant one-form whose harmonic
+representative is not preserved. Its weak smooth reading may still converge;
+no universal action-contrast obstruction is inferred from that norm.
+
+The correct induced Gram and adjoint readback give exact compression of D,
+while compression of the square is D_c^2+R^dagger R. The full rectangular
+Gram derivative of this reaction is computed, including both moving pairings
+and actual inclusion/readback motion. Its simultaneous fine/coarse frame
+Ward identity retains the reaction; physical stress conservation remains a
+separate native field statement. One-step pullback weights are also shown
+not to constitute an already compatible Gram tower.
+
+A complete one-parameter nonlocal fine-pairing family preserves exactly the
+same coarse Hodge Gram and repairs the actual adjoint, Dirac and heat
+intertwiners. Its positive complement energy is (L+1)^2(2gamma-1). This
+spectral modulus changes the full retained heat price strictly even though
+the coarse data and a reducing feedback tuple stay fixed. Full price and
+source therefore cannot be replaced by the inherited-block price. This
+repair changes compatibility with the original point-multiplication
+*-representation; its physical admission is not inferred.
+
+The complete stored Lorentz/observer class is separately extended by a site
+density mu. Independent density adds one conformal local direction; choosing
+mu=abs(det F) instead gives an exact invertible reparameterization and leaves
+all metric-image ranks unchanged. Even this extension cannot supply all
+nongauge metric probes. Observer-induced pairings and the general diagonal
+metric-measure weights are distinct families, and admissible-domain
+rescaling is not an equality of their heat operators.
+
+The next physical preparation must determine its represented readout,
+compatible full Gram transition and apparatus map. The exact reaction and
+full complement source are now explicit obligations for a compression route.
+No source, remainder or selector is fitted. Native stationarity, quantitative
+transfer, joint curved solutions, soundness/recovery, positive GR and original
+#310/#202/#317 remain open.

@@ -1,0 +1,371 @@
+{
+  "actual_command": [
+    "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.lean"
+  ],
+  "actual_cwd": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION",
+  "actual_direct_dependency_resolution": [
+    "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean/Init.olean",
+    "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean/Init.olean",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveMetricMeasureHodgeLift.olean",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveRefinementHodgeWeights.olean",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean"
+  ],
+  "actual_environment": {
+    "LEAN_PATH": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/Cli/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/batteries/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/Qq/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/aesop/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/importGraph/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/plausible/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean:/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean"
+  },
+  "actual_import_olean_sha256": {
+    "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean/Init.olean": "c4f3675f64306af5e7101bbda77bb960f306373873184df01ec972fd1cef372d",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "a6af9eb6c91de05f4e1f808efd16609eabf9ddee16929d30e6ddb63c66ea97be",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Core/DyadABCD.olean": "69955ddefbe3c32a4266a52be958e49568c33a205d42b03f47a4bbb92c075ce2",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Core/FiniteTypes.olean": "9aa80a4992abdfc06ebef96d4523367865457e931bd7acbee24616806d7b1c9a",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Foundation/M1Predicate.olean": "e23e92daebefdfbc0794173c3da4a00c5073fcde980531d4fbb327563faa77d2",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Foundation/ObservableCompletionCanonicity.olean": "5d98999866613aca0d1d38ad2ad1740f4c66861a6fe6c9f7fe010084d1aa7944",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/Archive1DCochainRefinement.olean": "27d740b8a9cb2f574c85efdbe5bd023a43107ec9bf884e0411b1fa6f8a5d57c1",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveCARFockCarrier.olean": "20d909cacdf6d332ece5515ebc371c4e501a3a9e61b617d72293374105dd5699",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveCubicalCochainCarrier.olean": "80de66d5e8f2d5c5206e6b65d2bd86fa36423f80c0de05796997e5a2c73396aa",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveMetricMeasureHodgeLift.olean": "ccbc84c35e4a9d782a3936b8f37d89670f738392c0021ca7ab5fe29a61da1e6b",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveRefinementHodgeWeights.olean": "ebaef56f1b8e86ccb2e176d581a38d0539c9a87621a855814302d33ea0c37e78",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Matter/FiniteSelector.olean": "6f417f0eb3f14066119acddce8b3d724243ac4150f2191be937bb88f11a017d6"
+  },
+  "axioms": {
+    "D0.Geometry.archive_metric_measure_hodge_lift_owner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.archive_refinement_hodge_weights_owner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.adjoint_compression": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.chain_adjoint_readback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.complement_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.compressed_square_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.compressed_square_reaction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.dirac_compression": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.isometric_readback_left_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.leakage_is_intertwining_defect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.leakage_weighted_adjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.leakage_zero_iff_intertwining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.moving_complement_jet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.orthogonal_compressed_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.orthogonal_square_intertwining_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_basis_covariance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_diagonal_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_first_jet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_twice_balanced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_zero_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.rectangular_adjoint_basis_covariance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.rectangular_adjoint_first_jet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.rectangular_balanced_adjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.source_covector_correction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.source_internal_ward": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.symmetric_reaction_contraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.weighted_complement_adjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.weighted_compressed_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "cache_source_comparison": {
+    "D0.Core.DyadABCD": "MATCH",
+    "D0.Core.FiniteTypes": "MATCH",
+    "D0.Foundation.M1Predicate": "MATCH",
+    "D0.Foundation.ObservableCompletionCanonicity": "MATCH",
+    "D0.Geometry.Archive1DCochainRefinement": "MATCH",
+    "D0.Geometry.ArchiveCARFockCarrier": "MATCH",
+    "D0.Geometry.ArchiveCubicalCochainCarrier": "MATCH",
+    "D0.Geometry.ArchiveMetricMeasureHodgeLift": "MATCH",
+    "D0.Geometry.ArchiveRefinementHodgeWeights": "MATCH",
+    "D0.Matter.FiniteSelector": "MATCH"
+  },
+  "capsule_sha256": "65d1aff45f17907fcacdcbdc6da889bc0e44b3982b1590a5254f2e8e5ad38d10",
+  "command": [
+    "/Users/grigorijvahrusev/.elan/bin/lake",
+    "env",
+    "lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.lean"
+  ],
+  "compiler_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "compiler_elapsed_seconds": 19.549041499999998,
+  "compiler_exit_code": 0,
+  "copied_olean_file_count": 10,
+  "current_overlay_reuse": {
+    "D0.Core.DyadABCD": {
+      "cache_source_sha256": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+      "olean_sha256": "69955ddefbe3c32a4266a52be958e49568c33a205d42b03f47a4bbb92c075ce2",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Core/DyadABCD.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Core/DyadABCD.olean",
+      "source_sha256": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358"
+    },
+    "D0.Core.FiniteTypes": {
+      "cache_source_sha256": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+      "olean_sha256": "9aa80a4992abdfc06ebef96d4523367865457e931bd7acbee24616806d7b1c9a",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Core/FiniteTypes.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Core/FiniteTypes.olean",
+      "source_sha256": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108"
+    },
+    "D0.Foundation.M1Predicate": {
+      "cache_source_sha256": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+      "olean_sha256": "e23e92daebefdfbc0794173c3da4a00c5073fcde980531d4fbb327563faa77d2",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Foundation/M1Predicate.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Foundation/M1Predicate.olean",
+      "source_sha256": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2"
+    },
+    "D0.Foundation.ObservableCompletionCanonicity": {
+      "cache_source_sha256": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+      "olean_sha256": "5d98999866613aca0d1d38ad2ad1740f4c66861a6fe6c9f7fe010084d1aa7944",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Foundation/ObservableCompletionCanonicity.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Foundation/ObservableCompletionCanonicity.olean",
+      "source_sha256": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634"
+    },
+    "D0.Geometry.Archive1DCochainRefinement": {
+      "cache_source_sha256": "4588589d0e7f018e3f036e2f42a0f002ad9256fdc5792a3c7d4f2026ca68c20e",
+      "olean_sha256": "27d740b8a9cb2f574c85efdbe5bd023a43107ec9bf884e0411b1fa6f8a5d57c1",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/Archive1DCochainRefinement.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/Archive1DCochainRefinement.olean",
+      "source_sha256": "4588589d0e7f018e3f036e2f42a0f002ad9256fdc5792a3c7d4f2026ca68c20e"
+    },
+    "D0.Geometry.ArchiveCARFockCarrier": {
+      "cache_source_sha256": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+      "olean_sha256": "20d909cacdf6d332ece5515ebc371c4e501a3a9e61b617d72293374105dd5699",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveCARFockCarrier.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveCARFockCarrier.olean",
+      "source_sha256": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1"
+    },
+    "D0.Geometry.ArchiveCubicalCochainCarrier": {
+      "cache_source_sha256": "ccfda1cb587c23dc98837c6a78490046e26dc606c0777804a4d7a10b0eddda5a",
+      "olean_sha256": "80de66d5e8f2d5c5206e6b65d2bd86fa36423f80c0de05796997e5a2c73396aa",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveCubicalCochainCarrier.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveCubicalCochainCarrier.olean",
+      "source_sha256": "ccfda1cb587c23dc98837c6a78490046e26dc606c0777804a4d7a10b0eddda5a"
+    },
+    "D0.Geometry.ArchiveMetricMeasureHodgeLift": {
+      "cache_source_sha256": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+      "olean_sha256": "ccbc84c35e4a9d782a3936b8f37d89670f738392c0021ca7ab5fe29a61da1e6b",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveMetricMeasureHodgeLift.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveMetricMeasureHodgeLift.olean",
+      "source_sha256": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd"
+    },
+    "D0.Geometry.ArchiveRefinementHodgeWeights": {
+      "cache_source_sha256": "5d15086e27397d4dccf7bc1675e85aba086bcd2f61811a7fc0ef96203a6d8f8b",
+      "olean_sha256": "ebaef56f1b8e86ccb2e176d581a38d0539c9a87621a855814302d33ea0c37e78",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveRefinementHodgeWeights.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Geometry/ArchiveRefinementHodgeWeights.olean",
+      "source_sha256": "5d15086e27397d4dccf7bc1675e85aba086bcd2f61811a7fc0ef96203a6d8f8b"
+    },
+    "D0.Matter.FiniteSelector": {
+      "cache_source_sha256": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2",
+      "olean_sha256": "6f417f0eb3f14066119acddce8b3d724243ac4150f2191be937bb88f11a017d6",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Matter/FiniteSelector.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi/D0/Matter/FiniteSelector.olean",
+      "source_sha256": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2"
+    }
+  },
+  "declarations": [
+    "D0.Research.PairingRefinementSource.isometric_readback_left_inverse",
+    "D0.Research.PairingRefinementSource.complement_projection",
+    "D0.Research.PairingRefinementSource.chain_adjoint_readback",
+    "D0.Research.PairingRefinementSource.adjoint_compression",
+    "D0.Research.PairingRefinementSource.dirac_compression",
+    "D0.Research.PairingRefinementSource.leakage_is_intertwining_defect",
+    "D0.Research.PairingRefinementSource.compressed_square_reaction",
+    "D0.Research.PairingRefinementSource.compressed_square_complement",
+    "D0.Research.PairingRefinementSource.leakage_weighted_adjoint",
+    "D0.Research.PairingRefinementSource.leakage_zero_iff_intertwining",
+    "D0.Research.PairingRefinementSource.weighted_complement_adjoint",
+    "D0.Research.PairingRefinementSource.weighted_compressed_square",
+    "D0.Research.PairingRefinementSource.rectangular_adjoint_first_jet",
+    "D0.Research.PairingRefinementSource.reaction_first_jet",
+    "D0.Research.PairingRefinementSource.reaction_twice_balanced",
+    "D0.Research.PairingRefinementSource.rectangular_balanced_adjoint",
+    "D0.Research.PairingRefinementSource.moving_complement_jet",
+    "D0.Research.PairingRefinementSource.rectangular_adjoint_basis_covariance",
+    "D0.Research.PairingRefinementSource.reaction_basis_covariance",
+    "D0.Research.PairingRefinementSource.reaction_diagonal_nonnegative",
+    "D0.Research.PairingRefinementSource.reaction_zero_iff",
+    "D0.Research.PairingRefinementSource.orthogonal_compressed_square",
+    "D0.Research.PairingRefinementSource.orthogonal_square_intertwining_iff",
+    "D0.Research.PairingRefinementSource.source_covector_correction",
+    "D0.Research.PairingRefinementSource.symmetric_reaction_contraction",
+    "D0.Research.PairingRefinementSource.source_internal_ward",
+    "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+    "D0.Geometry.archive_refinement_hodge_weights_owner"
+  ],
+  "diagnostic_checks": [
+    "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+    "D0.Geometry.archive_refinement_hodge_weights_owner",
+    "D0.Research.PairingRefinementSource.weighted_compressed_square",
+    "D0.Research.PairingRefinementSource.orthogonal_square_intertwining_iff",
+    "D0.Research.PairingRefinementSource.rectangular_adjoint_first_jet",
+    "D0.Research.PairingRefinementSource.rectangular_balanced_adjoint"
+  ],
+  "diagnostic_definitions": [
+    "D0.Geometry.hodgeMetricMeasureWeight",
+    "D0.Geometry.hodgeGramTraceDegree",
+    "D0.Geometry.totalHodgeGramTraceSum"
+  ],
+  "diagnostic_printed_propositions": [
+    "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+    "D0.Geometry.archive_refinement_hodge_weights_owner"
+  ],
+  "direct_mathlib_source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/Mathlib/Tactic.lean": "2f24eaa71ce0e2659488a2ace9a2f679dcce3629832f9113862e860fae69d20b"
+  },
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+    "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+    "03_FORMALIZATION/D0/Foundation/M1Predicate.lean": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+    "03_FORMALIZATION/D0/Foundation/ObservableCompletionCanonicity.lean": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+    "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean": "4588589d0e7f018e3f036e2f42a0f002ad9256fdc5792a3c7d4f2026ca68c20e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCochainCarrier.lean": "ccfda1cb587c23dc98837c6a78490046e26dc606c0777804a4d7a10b0eddda5a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementHodgeWeights.lean": "5d15086e27397d4dccf7bc1675e85aba086bcd2f61811a7fc0ef96203a6d8f8b",
+    "03_FORMALIZATION/D0/Matter/FiniteSelector.lean": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2",
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "matching_cache_source_reuse_count": 10,
+  "mathlib_revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7",
+  "new_overlay_compilation_count": 0,
+  "original_cache_olean_sha256": {
+    ".lake/build/lib/lean/D0/Core/DyadABCD.olean": "69955ddefbe3c32a4266a52be958e49568c33a205d42b03f47a4bbb92c075ce2",
+    ".lake/build/lib/lean/D0/Core/FiniteTypes.olean": "9aa80a4992abdfc06ebef96d4523367865457e931bd7acbee24616806d7b1c9a",
+    ".lake/build/lib/lean/D0/Foundation/M1Predicate.olean": "e23e92daebefdfbc0794173c3da4a00c5073fcde980531d4fbb327563faa77d2",
+    ".lake/build/lib/lean/D0/Foundation/ObservableCompletionCanonicity.olean": "5d98999866613aca0d1d38ad2ad1740f4c66861a6fe6c9f7fe010084d1aa7944",
+    ".lake/build/lib/lean/D0/Geometry/Archive1DCochainRefinement.olean": "27d740b8a9cb2f574c85efdbe5bd023a43107ec9bf884e0411b1fa6f8a5d57c1",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveCARFockCarrier.olean": "20d909cacdf6d332ece5515ebc371c4e501a3a9e61b617d72293374105dd5699",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveCubicalCochainCarrier.olean": "80de66d5e8f2d5c5206e6b65d2bd86fa36423f80c0de05796997e5a2c73396aa",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveMetricMeasureHodgeLift.olean": "ccbc84c35e4a9d782a3936b8f37d89670f738392c0021ca7ab5fe29a61da1e6b",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveRefinementHodgeWeights.olean": "ebaef56f1b8e86ccb2e176d581a38d0539c9a87621a855814302d33ea0c37e78",
+    ".lake/build/lib/lean/D0/Matter/FiniteSelector.olean": "6f417f0eb3f14066119acddce8b3d724243ac4150f2191be937bb88f11a017d6"
+  },
+  "original_cache_unchanged": true,
+  "output_sha256": "e5713ea9be413879498983d96731db2c8441b8e83124df5a5c065d7dd0ea296f",
+  "overlay_build_receipt_sha256": "60f64db41ffae5e020800ad2a92c6e8e22ea754a91782d6ed99794163b7aed18",
+  "overlay_path": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-pairing-refinement-overlay-2dnnfxbi",
+  "portable_reproduction": "Provide the 10 pinned matching-source D0 compiler artifacts and pinned Mathlib/toolchain, then run actual_command with an equivalent LEAN_PATH. Alternatively compile the 10 source modules in dependency order. The temporary overlay is a local provenance record, not a prerequisite for portable certificate replay. No earlier packet receipt is required.",
+  "provenance_scope": "PASS with a fresh isolated overlay containing exactly the 10 transitive D0 imports of the two named owners. Every current SOURCE file was byte-identical to its cache source; complete compiled artifact groups were copied without changing the cache. Lean --deps confirms direct resolution. No source-module rebuild or inherited stale-source artifact is claimed. Source equality is not a fresh compilation of the cached modules. The actual imported objects, source files, cache trace receipts, compiler, Mathlib revision and direct Mathlib source are hashed.",
+  "refreshed_source_module_count": 0,
+  "reused_cache_import_trace_sha256": {
+    ".lake/build/lib/lean/D0/Core/DyadABCD.trace": "599e145fe4908cfe4c81b62cdcc503f3d938f380d9f8c4dd38d4292710760ea0",
+    ".lake/build/lib/lean/D0/Core/FiniteTypes.trace": "57b1a944066bdf2a00db75a782fd59b75b9bb2ab3b2e3ce57f4f54b9c131a42b",
+    ".lake/build/lib/lean/D0/Foundation/M1Predicate.trace": "316197097c4c86cf11e641c78f15ff1e243cba5bd8ef37686bf13657a0ff7304",
+    ".lake/build/lib/lean/D0/Foundation/ObservableCompletionCanonicity.trace": "9b5b322570420fb12515f7089c7f251e7e37be4fb72f7ffd874ca4e25f85389b",
+    ".lake/build/lib/lean/D0/Geometry/Archive1DCochainRefinement.trace": "b5530f7d99fe86b3baf2cf1304d34cb8e82375d197292a4fc37884f58f31c31d",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveCARFockCarrier.trace": "a28034893635b9df0e1cdaa238f08a7a11d5425e98982f68485b021d2dcbec9d",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveCubicalCochainCarrier.trace": "305ca20ce6f81f216cf02254e23986be67be8893d48b951d81b094228a3cdcae",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveMetricMeasureHodgeLift.trace": "0c4dd8c0c70027bd3f16035c2df5c465f45374edf5620e105021bac13d7f9975",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveRefinementHodgeWeights.trace": "64ed772e66e9269704b24d6c2b992270836a43b2eb02412b42731a61dafbeee6",
+    ".lake/build/lib/lean/D0/Matter/FiniteSelector.trace": "78e5428a687bf092d38887d3f9c06280ea04ca1b30f32d903aa41670bc4bdfe3"
+  },
+  "scope": "26 all-size real-matrix research propositions with independent fine and coarse index types: isometric readback, complementary projection, chain-adjoint and Dirac compression, exact weighted compressed-square reaction, weighted complement/adjoint identities, leakage and square-intertwining equivalences (positivity in orthonormal real coordinates), complete rectangular first jets with both moving Gram terms, moving J/C leakage jet, actual balanced adjoint bridge, rectangular joint-basis covariance, source covector correction, symmetric reaction contraction and internal trace Ward. Two actual supported owner propositions are printed with their standard axiom closures; three actual definitions and six checks expose the consumed endpoints/arithmetic scope. Analytic differentiation of exponentials/logarithms, positivity reduction for arbitrary Gram, nonlocal repair classification, coherent native preparation/tower, physical Ward, native on-shell source, GR and D0.All are not claimed.",
+  "source_commit": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
+  "source_overlay_rebuilds": [],
+  "status": "PASS",
+  "verified_prior_source_rebuild_count": 0
+}
