@@ -3,10 +3,46 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`68c593f1d12af20378642fa81cee982835cede1d`, following
-`585a6c21e09c07d7704c6c7ef1e2e0b45ba9b83a`.
+`2b5939b6236aa42f46ef59e9c4101879c7c9584b`, following
+`68c593f1d12af20378642fa81cee982835cede1d`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Fixed autonomous scene record and full price, 2026-10-13.**
+[The explicit construction](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md)
+compiles the prior engine's amplitude-sign choice into one fixed forward
+nine-primitive golden/CNOT word, within the declared addressed palette.
+Its changing switch is the intrinsic degree orientation of a native scene
+edge; its basis-one record is retained. The old carrier has a strict Gram
+obstruction to a fixed isometry with unchanged auxiliary state, with a
+normalized two-output error lower bound greater than 27/100. An evolving
+record resolves this scoped obstruction. Physical operation/preparation
+admission and selection of this word are not supplied by matrix ownership.
+
+The whole 22976-coordinate carrier includes all 718 histories, both record
+values and sixteen matter components. The original endpoint/matter cut has
+rank 528. Its actual one-tick prepared-sector feedback is
+`p^2 I+p(2 Delta-Delta^2)`, with the native degree pairing. Both record
+sectors enter the complete price. The two-tick determinant is
+`(1-zL)^184(1-zL3)^36(1-zLv)^44`; deleting the initially unpopulated sector
+gives a different functional. All ambient unit factors remain.
+
+The exact checker passes 38253 controls and ten executed mathematical
+mutations, including all 64 gate columns and all 528 retained columns at
+one/two ticks. It exercises 1024 single-pair and eight whole-scene
+transitions. Nine new generic Lean propositions and the actual gate owner
+compile with standard axioms; six compiler input hashes are verified.
+The full scene/spectral binding has its separate analytic/certificate
+scope. The default immutable replay is required after byte-for-byte intake.
+
+All 385 source artifacts were checked against remote Git blobs before
+copying: 377 earlier artifacts keep their bytes, the primary memo changes,
+and seven files are added. The 44 dependency contracts and original parent
+terminals retain their status. The independently admitted common
+preparation, complete constrained price tangent, source/Ward, actual
+capacity/refinement law, native stationarity and G1-G4 remain open. The
+next proof must use this full processor and its full price; another word
+census, a deleted auxiliary sector or an installed source is not that proof.
 
 **Complete cyclic-memory minimum and golden binding, 2026-10-12.**
 [The whole-class result](A4D_NATIVE_CYCLIC_MEMORY_MINIMIZATION.md)

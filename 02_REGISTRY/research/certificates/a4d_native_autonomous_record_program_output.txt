@@ -1,0 +1,28 @@
+D0.Research.AutonomousRecordProgram.full_four_branches.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (K G : Matrix n n ℝ) (hleft : G.transpose * G = 1) (hright : G * G.transpose = 1) :
+  D0.Research.AutonomousRecordProgram.wordBranch K G true false = K * G ∧
+    D0.Research.AutonomousRecordProgram.wordBranch K G true true = K * G.transpose ∧
+      D0.Research.AutonomousRecordProgram.wordBranch K G false false = K * G ^ 3 ∧
+        D0.Research.AutonomousRecordProgram.wordBranch K G false true = K * G
+D0.Research.AutonomousRecordProgram.no_fixed_inner_product_preserver (a p : ℝ) (ha0 : 0 < a) (hp0 : 0 < p)
+  (hp : p + p ^ 2 = 1) (F : (Fin 4 → ℝ) → Fin 4 → ℝ) (hF : ∀ (u v : Fin 4 → ℝ), F u ⬝ᵥ F v = u ⬝ᵥ v) :
+  ¬(F (D0.Research.AutonomousRecordProgram.x2 a p) = D0.Research.AutonomousRecordProgram.x3 a p ∧
+      F (D0.Research.AutonomousRecordProgram.x3 a p) = D0.Research.AutonomousRecordProgram.x4 a p)
+D0.Research.AutonomousRecordProgram.golden_scene_feedback.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] (p : ℝ)
+  (hp : p + p ^ 2 = 1) (T : Matrix n n ℝ) : 1 - p • (T * T) = p ^ 2 • 1 + p • (2 • (1 - T) - (1 - T) * (1 - T))
+'D0.Research.AutonomousRecordProgram.forward_echo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AutonomousRecordProgram.golden_both_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AutonomousRecordProgram.full_four_branches' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AutonomousRecordProgram.complete_switch_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.AutonomousRecordProgram.complete_switch_two_ticks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.AutonomousRecordProgram.consecutive_gram_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AutonomousRecordProgram.no_fixed_inner_product_preserver' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.AutonomousRecordProgram.golden_scene_feedback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.AutonomousRecordProgram.two_tick_golden_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Representation.GoldenCoherentMemory.fullStep_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
