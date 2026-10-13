@@ -3,10 +3,25 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`8a21b7e52185d2d6375a6647874c867ff9147d8d`, following
-`074b4223c0cae4aa5b1ad379dcd0a78930da1179`.
+`0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16`, following
+`8a21b7e52185d2d6375a6647874c867ff9147d8d`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Correlated-current CI portability repair, 2026-10-13.**
+The failed Linux guard attempted to load a temporary macOS Lean object.
+Default immutable replay now checks actual archived compiler output,
+propositions/axioms, complete SOURCE closure and archived object-pin
+consistency. Explicit --runtime-check separately verifies the real original
+objects, compiler binary and unchanged cache. Both local runtime audit and
+portable replay with all original runtime paths unavailable pass.
+
+The mathematical and Lean results are unchanged. Current replay passes
+385 checks and 11 negative controls.
+All 448 artifacts match remote SOURCE; 444 prior files remain unchanged,
+four existing files are updated, no new artifact is added. All 44 graph
+contracts and the dated preflight plan are unchanged. Current-head CI and
+independent CONTROL review remain required; all physical parent gates open.
 
 **Full correlated current and fixed-beta source, 2026-10-13.**
 [The correlated-current proof](A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md)

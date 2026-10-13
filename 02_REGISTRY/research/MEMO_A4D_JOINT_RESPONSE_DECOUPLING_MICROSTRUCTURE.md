@@ -4452,3 +4452,10 @@ all-L Fourier bounds retain their analytic scope. Native joint operation
 admission, complete field source/Ward, stationarity, quantitative contrast,
 curved joint roots, soundness/recovery, positive GR and original
 #310/#202/#317 remain open.
+
+The correlated-current checkpoint's CI portability repair preserves the
+mathematical and Lean results. Default immutable replay checks actual archived
+compiler output, SOURCE closure and object-pin consistency on any runner.
+The explicit original-machine `--runtime-check` separately verifies physical
+objects, compiler and unchanged cache. CI is not reported as a new compilation
+of the research capsule. No temporary macOS directory is required on Linux.

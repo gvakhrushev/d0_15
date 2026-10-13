@@ -5,7 +5,7 @@
     "all-time full current component",
     "all-L fixed-beta heat bound"
   ],
-  "checker_sha256": "a097c7061f3b7340b9e876d792539df1f437de490350ecb580a69013882102ab",
+  "checker_sha256": "7d61f6199686cfaa6153b737ba5b675b7d95580742874d39e3ee980f750d3199",
   "checks": [
     "native_CAR_create_(0, 0)",
     "native_CAR_annihilate_(0, 0)",
@@ -208,6 +208,9 @@
     "Lean_same_verified_module_objects",
     "Lean_same_verified_SOURCE_rebuilds",
     "Lean_same_runtime_resolution",
+    "Lean_exact_archived_object_set",
+    "Lean_same_original_cache_evidence",
+    "Lean_same_verified_compiler_binary",
     "Lean_module_SOURCE_D0.Algebra.RoleSignature",
     "Lean_module_object_D0.Algebra.RoleSignature",
     "Lean_module_SOURCE_D0.Combinatorics.EulerPhi",
@@ -390,7 +393,7 @@
     "REJECT_DROP_REAL_LEAN_DECLARATION",
     "REJECT_OMIT_REAL_DIAGNOSTIC_PROPOSITION"
   ],
-  "exact_controls": 382,
+  "exact_controls": 385,
   "executed_mathematical_mutants": [
     "FULL_CURRENT_IS_OLD_P1_TOP_CHART",
     "ALL_NONZERO_MATTER_IS_TIMELIKE",
@@ -475,7 +478,7 @@
   "physical_admission_source_Ward_stationarity_GR_closed": false,
   "program_sha256": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
   "proof": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md",
-  "proof_sha256": "862e885a989d1ecdf71c0f740f5cc7b420a84dc6bdcd3119c122a2987efa439c",
+  "proof_sha256": "ea2f12262b14d447c50ea110998b650a224f9c99adba81c4aa85598c45be38ca",
   "retained_zero_feedback_directions": "12L^4",
   "status": "PASS"
 }
