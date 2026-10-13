@@ -323,3 +323,11 @@ complete Fourier multiplicities. Its named narrow Lean kernels retain their
 actual propositions and transitive assumptions. Neither finite replay nor
 generic algebraic kernels replace the all-time/all-L proofs above or the
 missing physical admission, matter equations and refinement transfer.
+
+Default replay is portable: it validates the immutable compiler output,
+actual proposition/axiom requests, complete SOURCE closure and archived
+object/runtime pin consistency without requiring the original machine's
+temporary overlay directories. On that machine, `--runtime-check` also
+hashes every actual object, the compiler binary and the preserved original
+cache. The original compilation and both audits are recorded; portable
+replay does not claim a new compiler execution on the CI runner.

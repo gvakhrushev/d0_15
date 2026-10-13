@@ -62,6 +62,14 @@ def valid_Lean_structure(lean,output,capsule):
                 for name in checks)
         and all(('theorem '+name+' ') in output or ('def '+name+' ') in output for name in prints))
 
+def audit_runtime_objects(lean):
+    """Strict original-machine audit, deliberately separate from portable replay."""
+    for f,digest in lean['actual_import_olean_sha256'].items():
+        assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==digest,f
+    for f,digest in lean['original_cache_olean_sha256'].items():
+        assert hashlib.sha256((Path(lean['actual_cwd'])/f).read_bytes()).hexdigest()==digest,f
+    assert hashlib.sha256(Path(lean['actual_command'][0]).read_bytes()).hexdigest()==lean['compiler_binary_sha256']
+
 def controls(receipt=True):
     checks=[];mutants=[]
     def zero(v):
@@ -223,14 +231,21 @@ def controls(receipt=True):
         check('Lean_same_verified_module_objects',lean['current_overlay_reuse']==old['current_overlay_reuse'])
         check('Lean_same_verified_SOURCE_rebuilds',lean['source_overlay_rebuilds']==old['source_overlay_rebuilds'])
         check('Lean_same_runtime_resolution',lean['actual_environment']==old['actual_environment'])
+        check('Lean_exact_archived_object_set',set(lean['actual_import_olean_sha256'])==
+              set(old['actual_import_olean_sha256'])|set(lean['actual_direct_dependency_resolution']))
+        check('Lean_same_original_cache_evidence',lean['original_cache_olean_sha256']==old['original_cache_olean_sha256']
+              and lean['original_cache_unchanged'] and old['original_cache_unchanged'])
+        check('Lean_same_verified_compiler_binary',lean['compiler_binary_sha256']==old['compiler_binary_sha256']
+              and lean['actual_command'][0]==old['actual_command'][0])
         for module,entry in lean['current_overlay_reuse'].items():
             check('Lean_module_SOURCE_'+module,sha('03_FORMALIZATION/'+module.replace('.','/')+'.lean')==entry['source_sha256'])
-            check('Lean_module_object_'+module,hashlib.sha256(Path(entry['overlay_olean']).read_bytes()).hexdigest()==entry['olean_sha256'])
+            check('Lean_module_object_'+module,lean['actual_import_olean_sha256'][entry['overlay_olean']]==entry['olean_sha256'])
         for f,digest in lean['actual_import_olean_sha256'].items():
-            check('Lean_actual_object_'+Path(f).stem,hashlib.sha256(Path(f).read_bytes()).hexdigest()==digest)
+            check('Lean_actual_object_'+Path(f).stem,re.fullmatch('[0-9a-f]{64}',digest) is not None
+                  and (f not in old['actual_import_olean_sha256'] or digest==old['actual_import_olean_sha256'][f]))
         for f,digest in lean['original_cache_olean_sha256'].items():
-            check('Lean_original_cache_'+f,hashlib.sha256((Path(lean['actual_cwd'])/f).read_bytes()).hexdigest()==digest)
-        check('Lean_actual_binary_pin',hashlib.sha256(Path(lean['actual_command'][0]).read_bytes()).hexdigest()==lean['compiler_binary_sha256'])
+            check('Lean_original_cache_'+f,digest==old['original_cache_olean_sha256'][f])
+        check('Lean_actual_binary_pin',re.fullmatch('[0-9a-f]{64}',lean['compiler_binary_sha256']) is not None)
         for dependency in lean['actual_direct_dependency_resolution']:
             check('Lean_actual_direct_resolution_'+dependency,dependency in lean['actual_import_olean_sha256'])
         bad=copy.deepcopy(lean);bad['axioms'][bad['declarations'][0]]=[]
@@ -249,7 +264,7 @@ def controls(receipt=True):
         retained_zero_feedback_directions='12L^4',physical_admission_source_Ward_stationarity_GR_closed=False)
 
 if __name__=='__main__':
-    q=argparse.ArgumentParser();q.add_argument('--write',action='store_true');q.add_argument('--math-only',action='store_true');args=q.parse_args()
+    q=argparse.ArgumentParser();q.add_argument('--write',action='store_true');q.add_argument('--math-only',action='store_true');q.add_argument('--runtime-check',action='store_true');args=q.parse_args()
     result=controls(not args.math_only)
     dest=ROOT/(BASE+'_certificate.json')
     if args.write:
@@ -257,4 +272,8 @@ if __name__=='__main__':
         dest.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
     elif not args.math_only:
         assert json.loads(dest.read_text())==result,'STALE_CERTIFICATE'
+    if args.runtime_check:
+        assert not args.math_only
+        audit_runtime_objects(json.loads((ROOT/(BASE+'_lean_results.json')).read_text()))
+        print('PASS_ORIGINAL_RUNTIME_OBJECT_AUDIT')
     print('PASS_CORRELATED_CURRENT_TRANSITION',f"controls={result['exact_controls']}",f"mutants={len(result['executed_mathematical_mutants'])}",'native_admission=OPEN')
