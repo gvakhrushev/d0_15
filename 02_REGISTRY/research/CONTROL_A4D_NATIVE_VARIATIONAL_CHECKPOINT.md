@@ -3,10 +3,48 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`2b5939b6236aa42f46ef59e9c4101879c7c9584b`, following
-`68c593f1d12af20378642fa81cee982835cede1d`.
+`01e8047b1effacdbf623ec3189bedb63fb6732f8`, following
+`2b5939b6236aa42f46ef59e9c4101879c7c9584b`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Native Fibonacci recording and four-level bound, 2026-10-13.**
+[The full construction](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md)
+realizes the existing four-coordinate record inside the actual AF matrix
+tower. In the declared covariant four-copy GNS class, three inclusions are
+necessary and sufficient: fixed dimensions 2,3,7 obstruct earlier targets,
+and an explicit old-bimodule four-frame realizes the third descent for
+every n. These are four levels including the input. Passive heredity has
+zero new detail; the actual gate gives WJx=aJx+pV3x with full norm and
+inverse retained.
+
+An explicit row-path/reversed-column-path bijection places all operators
+in the native A_(n+6), including the full identity complement. Its regular
+representation has two-tick exponent d_(n+3), rather than d_n. Tensoring
+with the whole preceding scene processor gives feedback rank 792*d_(n+3)
+and keeps all scene/controller sectors. This is the complete feedback
+component, not the heat/bootstrap action or its metric derivative.
+
+The prepared corner has forced trace p^6=4delta0^2. Unitary left evolution
+of the canonical tracial cyclic state cannot increase it. The exact golden
+bridge is 2delta0=p^3 and L=8delta0. The old notes' four relations are
+redundant: the two Vieta relations imply the two quadratic relations.
+Q(D)=phi^(D-4) is a scalar normalization; Q(4)=1 does not prove physical
+spacetime dimension. Preparation with all outcomes retained, coherent
+physical refinement and the common (q,D,b,m) action/tangent remain required.
+
+The packet has 21396 exact controls and eleven mathematical negative
+controls. Fourteen generic real matrix propositions plus the actual gate
+owner compile with standard axioms and six compiler input pins. The
+complex extension, all-unitary fixed-space classification and whole AF
+and scene binding retain analytic/exact-certificate status. Sixteen
+primary/prior inputs are pinned to the published parent SOURCE.
+All 392 scientific artifacts match verified remote source blobs and local
+SHA256: 384 prior files unchanged, one memo updated and seven new files.
+The 44 graph dictionaries and dated tangent preflight plan are unchanged.
+Current-head CI and CONTROL review remain acceptance requirements.
+Source/Ward, native stationarity, curved roots, soundness/recovery, GR and
+all original parent terminals remain open; no merge is performed.
 
 **Fixed autonomous scene record and full price, 2026-10-13.**
 [The explicit construction](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md)

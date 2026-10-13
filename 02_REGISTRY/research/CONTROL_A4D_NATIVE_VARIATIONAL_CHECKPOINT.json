@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "bce7e18717bf6cc42713d78a9efc70a73ea029e7f28fa78bed2f81ab36fb6dac",
-      "source_blob": "96e4f27f983f20176089edb4b45a5c49316d65a7"
+      "sha256": "eedec0586032aa8730e62cb76afb1cefba6260f331d3a001f799637c20a1a40f",
+      "source_blob": "c230207b5d60b4d915eae22080d9804a17708fff"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1926,6 +1926,41 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_results.json",
       "sha256": "82d288396c31d5e98371e2b5c8e7dfc0007b2d868fa4fa681f9b99dc4655ce2b",
       "source_blob": "b15c5cfec4cb1dec35d14df7218cb09cffe8bb56"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md",
+      "sha256": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
+      "source_blob": "938cde2d3862ee329f2028bc738ad4704e9178b1"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean",
+      "sha256": "7445b7c3827a372f4a90eaad5acfbd4523b7852e31778162fe17b155374cd30b",
+      "source_blob": "dc80e07e8cb56aa79909ae4a58904af2bb219759"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+      "sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+      "source_blob": "47761f34bfffb4fe104ca66e0e1b61a509b9bc7a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json",
+      "sha256": "c11c3a887761aa11fe7f54f3b8e88c49010726941128dff07e06eef2709c7df7",
+      "source_blob": "f004f8bb0c5fe10c055c0dddb007829ef3dac5c7"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_check.py",
+      "sha256": "a6d09cc3925b9a5acb415e1bac62a829bcef177f98fc2c0bd29a890cb6bafbf5",
+      "source_blob": "f40441d5d42088cc088f15b98d1b6659b6cbbf44"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_output.txt",
+      "sha256": "e49e126ebe18a1a26609fb02a19f8f008f30660e411670145caa0be0f1d904fa",
+      "source_blob": "b7e5d4078a5bee644788e95232e381f889c28ac2"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json",
+      "sha256": "875200fb8337d1f4d9f1361bbc3f73c22c43b039c584371ea11be1a1710aea9c",
+      "source_blob": "efc709565c65e39793e8a717fcf79247ea19003d"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -3182,13 +3217,55 @@
       "updated_primary_memo": 1,
       "whole_common_preparation_tangent_source_Ward_stationarity_refinement_or_GR_closed": false,
       "whole_scene_histories": 718
+    },
+    "fibonacci_record_activation": {
+      "date": "2026-10-13",
+      "source_head": "01e8047b1effacdbf623ec3189bedb63fb6732f8",
+      "input_source_head": "2b5939b6236aa42f46ef59e9c4101879c7c9584b",
+      "control_input_head": "c6f0cac5ff3f9d13d331b2e79c40b529b010ea4e",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md",
+      "program": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json",
+      "exact_controls": 21396,
+      "executed_mathematical_mutations": 11,
+      "new_generic_Lean_propositions": 14,
+      "source_input_pins": 16,
+      "compiler_input_pins": 6,
+      "class": "COMPLEX_LINEAR_FOUR_COPY_GNS_ISOMETRY_WITH_ACTUAL_J_AND_TRIVIAL_APPARATUS_CONJUGATION",
+      "minimal_AF_inclusions": 3,
+      "levels_including_input": 4,
+      "fixed_dimensions_at_r_0_1_2_3": [
+        2,
+        3,
+        7,
+        18
+      ],
+      "recorded_state": "WJx=aJx+pV3x; norm preserved, full inverse retained",
+      "passive_heredity_has_new_detail": false,
+      "native_operator_algebra": "A_(n+6) via actual three-row-path/reversed-three-column-path bijection",
+      "regular_two_tick_price": "(1-zL)^d_(n+3); L=4p^3",
+      "prepared_corner_weight": "p^6=4*delta0^2; not raised by unitary left evolution of tracial cyclic state",
+      "delta_bridge": "2delta0=p^3; L=8delta0; Q(D)=phi^(D-4)",
+      "ABCD_four_independent_invariants": false,
+      "full_AF_scene_two_tick_rank": "792*d_(n+3)",
+      "complete_ambient_AF_scene_dimension": "22976*d_(n+6)",
+      "complete_feedback_is_whole_heat_bootstrap": false,
+      "physical_preparation_refinement_time_source_Ward_or_GR_derived": false,
+      "all_native_operations_classified": false,
+      "proof_status": "Generic real matrix kernel formalized; complex extension, full-unitary fixed-space classification and all-n native AF/scene binding analytic with exact finite certificates",
+      "source_artifact_count": 392,
+      "prior_unchanged_artifacts": 384,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 7,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "next_required_proof": "Derive an independently admitted internal preparation and execution of the explicit AF recording corner, retaining successful and failed records and the same full price. Its forced tracial weight is p^6=4*delta0^2; unitary left evolution of the canonical cyclic state cannot make it one. Consume the minimal three-inclusion four-frame and actual six-level operator algebra, with full regular multiplicities and all scene/controller sectors. Derive coherent actual refinement and the same joint (q,D,b,m) physical readout, heat and constrained full-price covector. Four represented levels and Q(4)=1 do not supply a physical clock, expansion or dimension theorem. Keep all required metric/link probes and excluded-direction equations; own source/Ward, fixed-calibration contrast and native stationarity precede curved roots, soundness/recovery and GR. No free postselection, fresh external blank, prescribed level scheduler, fitted source or new word census. Preserve #310/#202/#317 and all parent contracts."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "68c593f1d12af20378642fa81cee982835cede1d",
+  "previous_source_head": "2b5939b6236aa42f46ef59e9c4101879c7c9584b",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3284,11 +3361,12 @@
     "Concurrent session factor/multiplier notes are preserved as unproved interpretations and checked against the actual admissible factor tangent; no source theorem inferred.",
     "Conditional endpoint-isometry metric correction, orientation-free retained record, exact full chronological determinant and all 26 derivatives; zero whole factor-record jet and all ten homogeneous heat-plus-record coefficients. Native premise and full source remain open.",
     "All-time collinear retained-record seed orbit, exact internal codec and predecessor, golden conjugate height growth, and hereditary actual archive pullback. 4096 exact ticks, 24745 controls, 15 mathematical mutants and nine generic Lean propositions. Physical admission, endogenous refinement/link dynamics, full source and all original terminals remain open.",
-    "Fixed autonomous scene record: exact nine-primitive addressed forward word with an internal degree-oriented edge switch, all 718 histories and complete 22976-coordinate carrier. Full endpoint/matter feedback p^2 I+p(2 Delta-Delta^2), complete one/two-tick prices, old-carrier Gram obstruction, 38253 controls, ten mathematical mutations and nine generic compiled propositions. Physical common preparation, addressing, tangent/source and refinement remain open."
+    "Fixed autonomous scene record: exact nine-primitive addressed forward word with an internal degree-oriented edge switch, all 718 histories and complete 22976-coordinate carrier. Full endpoint/matter feedback p^2 I+p(2 Delta-Delta^2), complete one/two-tick prices, old-carrier Gram obstruction, 38253 controls, ten mathematical mutations and nine generic compiled propositions. Physical common preparation, addressing, tangent/source and refinement remain open.",
+    "Full actual AF recording: minimum three inclusions in the declared covariant four-copy GNS class, explicit native six-level operator algebra and full regular feedback multiplicities. 21396 exact controls, eleven mathematical mutants, fourteen generic compiled propositions. Exact delta/prepared-corner bridge; physical preparation, coherent refinement, joint source and all original terminals remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "2b5939b6236aa42f46ef59e9c4101879c7c9584b",
+  "source_head": "01e8047b1effacdbf623ec3189bedb63fb6732f8",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "68c593f1d12af20378642fa81cee982835cede1d",
+  "source_parent": "2b5939b6236aa42f46ef59e9c4101879c7c9584b",
   "source_pr": 310
 }
