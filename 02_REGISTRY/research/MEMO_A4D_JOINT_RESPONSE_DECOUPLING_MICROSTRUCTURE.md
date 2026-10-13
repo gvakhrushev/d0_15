@@ -3842,3 +3842,61 @@ to repair the counterexample is not substituted for an owned transition.
 Then evaluate the full chronological price jet and source on its admitted
 tangent, including all excluded directions. G0-G4, positive GR and the
 original #310/#202/#317 terminals remain open under the full closure goal.
+
+## Solved endpoint correction and the actual chronological source (2026-10-13)
+
+[The full chronological continuation](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md)
+solves a concrete conditional joint transition. For the literal full-Fock
+record m_plus=U m, requiring isometry between the initial and final positive
+pairings forces Q_plus=Q. Wherever w=(m_plus)^1 is nonzero the next Lorentz
+metric is unique: q_plus=-Q+2ww^T/(w^T Q^-1 w). This derives the correction
+from the stated endpoint condition; it does not prove physical admission
+of that condition or of this constitutive binding. The output metric has
+three varying directions at fixed Q, not ten unrestricted metric slots.
+
+The actual CAR formula shows that the gate and price cut extend through
+zero top grade. Top orientation is needed for the original whole blank
+preparation, but no new blank is required for the second retained record.
+A genuine blank with zero first-grade output remains a singularity of this
+pairing construction. A nonempty open two-record domain is constructed;
+global invariant native preparation and singular-state handling stay open.
+
+Both genuine successive gates are now used, with the original readout on
+both sides and every one of the sixteen components retained. The complete
+feedback determinant is A(c)^2 B(c)^2 C(c), with all three explicitly
+derived positive factors and c the signed angle between the two observers
+in the common pairing. It recovers (1-4zp^3)^4 at c=1 and has nonzero
+matter derivatives at regular actual blank states. A moved final readout,
+frozen second gate and reset give different observables and are rejected.
+
+All ten q and sixteen m coefficients are computed and independently checked
+against the full matrix Jacobi derivative. At the stated anisotropic blank
+base the angle covector is -2ap^2 V_11+p^3 xi_0+(ap^2/2)xi_1-ap^2 xi_3,
+where xi uses occupation masks. On the whole congruently prepared factor
+curve the metric and matter contributions cancel exactly. Thus the true
+chronological R'_tf is zero even with the uniquely corrected next metric
+and a nonparallel observer; the full Hodge heat response remains
+2(E_1-E_2)>1/10000. The report lists all ten homogeneous whole-price
+coefficients against the flat geometric rho0=0 and retains the actual
+L^4 feedback multiplicity and the matter covector. This is not a local
+source-subtracted equation or a physical GR conclusion.
+
+Evidence: 469 exact controls, 18 executed mathematical mutations, all 26
+joint directions, full sixteen-dimensional gate and determinant, and 15
+input-file pins verified at published SOURCE a7ad40cd. The earlier generic
+Lean receipt and transitive inputs are consumed; no new Lean declaration
+or supported CORE owner is introduced. Universal statements have their
+explicit analytic proofs, not an extrapolation from sampled matrices.
+
+Whole-operator endpoint isometry is explicitly stronger than norm
+conservation of one realized state. A full blank-state control preserves
+that norm with a different positive pairing. Thus this calculation does
+not derive the endpoint hypothesis from single-state probability alone.
+
+The first unresolved arrow is the native admission and complete constitutive
+price of a closed joint preparation, including link/affine effects and
+refinement. The conditional endpoint equation and full chronological jet
+are now explicit components of that test. Neither a new q rule installed
+as a postulate nor a fitted remainder supplies its missing physical premise.
+Own source/Ward, native stationarity, curved joint roots, soundness/recovery
+and the original #310/#202/#317 terminals remain unchanged and open.
