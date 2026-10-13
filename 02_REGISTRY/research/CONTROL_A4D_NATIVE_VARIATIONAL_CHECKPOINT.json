@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "4d13cb85ac40c446399ad5430cfa292d84bd7f5a8ac22ec881be3cb913b91676",
-      "source_blob": "8331fff35d5b6a8ab1dd1ca95a27f87a74218247"
+      "sha256": "78e93faacd03287097575395f2fdbd23b18607dcc2f778592c871d0af2cb40c4",
+      "source_blob": "ec0d9b4e54924986214157c73fefcb358721f524"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -2136,6 +2136,41 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_lean_output.txt",
       "sha256": "ec3e46106ab7f3a59f69210e1a9b6bebdef0e09fc053e3fcdce83f58204679ac",
       "source_blob": "6f5302d4b83ec9d9802583d8862041294e341fc0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md",
+      "sha256": "25b76bcb8d276dd45d32b207fa72b3a8c6aee7b5d4fba16426e3a73a71f9977a",
+      "source_blob": "96ba149fcbed0717a2a1e1e0849e88401d424b70"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.py",
+      "sha256": "b804b0a42aae5043efd11dc10ba96a5bf6049e7fcb4f0459ffc3366a554a5923",
+      "source_blob": "88477927f7f3e448643d9ed808a2565690a32915"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_check.py",
+      "sha256": "3b1d03a3357773587746e9fe556857f7f07d7a2ae09ee707103198de5c117864",
+      "source_blob": "eb354fcfb4875708eaed0f40258e39fda4cb033e"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_certificate.json",
+      "sha256": "fff8606d0a48cbb043fd960ac3661ca46bc8e81fb040c60e568c0efbe9e4fe3e",
+      "source_blob": "59db03014a78d190dc7476ef43f9dcd6825ced08"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.lean",
+      "sha256": "65d1aff45f17907fcacdcbdc6da889bc0e44b3982b1590a5254f2e8e5ad38d10",
+      "source_blob": "7e9cc7931b13c0ed102e67d94b60163a9a333fe3"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_lean_results.json",
+      "sha256": "112cd9614769d6c72081d16f9cbd041ece32b1e4b0fe7e33288968d5a7eee5d2",
+      "source_blob": "5a0d37ec8b1a6b48dadffedfff00f1343c846963"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_lean_output.txt",
+      "sha256": "e5713ea9be413879498983d96731db2c8441b8e83124df5a5c065d7dd0ea296f",
+      "source_blob": "3168a6a14ab0ffeb18f6f426b8a28676a90a3cac"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -3623,13 +3658,44 @@
       "new_scientific_artifacts": 7,
       "all_44_contracts_and_original_parent_terminals_unchanged": true,
       "next_required_proof": "Derive the actual native map (q,D,b,m and admitted observers) -> (d,G,Pi,U) from the existing preparation and refinement. Pull back the complete heat/feedback/Gram covector on actual curves. The stored Lorentz/observer/counting operator is now completely classified: observer pairing and each edge leg must be transported; its generic metric image has rank three, and three missing directions survive the ordinary coordinate-gauge comparison. Every allowed metric direction integrates, but the full joint velocity cone is singular, so linearized solutions alone are not admission. General-linear links restore operator directions but violate the same dressed metric carrier. Another existing pairing/operator requires its precise native owner, compatible domain and relation to the physical metric readout. Reuse the four-level covariant Fibonacci record and exact delta weights without an additional role/word census. Preserve full-grade heat/refinement couplings. Then derive native source/Ward, stationarity, quantitative contrast, curved joint roots and soundness/recovery. Original #310/#202/#317 and all parent contracts remain open; no new action, selector, postulate or arbitrary heat replacement."
+    },
+    "pairing_refinement_source": {
+      "date": "2026-10-13",
+      "source_head": "4b25867dff1c120c21cdaf52b6398c729e21072c",
+      "input_source_head": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
+      "control_input_head": "cf803e854c75092fb20eb97d8108a853e8b32996",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md",
+      "program": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_certificate.json",
+      "exact_controls": 588,
+      "executed_mathematical_mutations": 32,
+      "new_Lean_propositions": 26,
+      "actual_owner_axiom_checks": 2,
+      "source_input_pins": 66,
+      "complete_diagonal_pairing_obstruction": "Actual scaled full16 B0/B1 cochain inclusion cannot intertwine adjoints for any positive diagonal coarse/fine Gram, factorization unnecessary. Fixed smooth constant one-form has explicit harmonic defect; no weak/action contrast no-go inferred.",
+      "forced_compression": "C Df J=Dc, C Df^2 J=Dc^2+Rdagger R; full moving fine/coarse Gram reaction derivative and internal frame Ward retained.",
+      "tower_boundary": "One-step counting pullback weights do not form an already compatible interlevel Gram tower.",
+      "nonlocal_repair": "Complete gamma>1/2 fine pairing class at fixed existing coarse Gram, counting fine scalar Gram and grade orthogonality; exact adjoint/Dirac/heat inherited-block intertwining; complement energy (L+1)^2(2gamma-1).",
+      "full_price_modulus": "Complete heat price strictly decreases along gamma for a fixed reducing feedback tuple; new spectrum is not frame gauge or response-null. No native admission or fitted compensator.",
+      "point_algebra_boundary": "Explicit nonlocal repair does not preserve the unchanged point-multiplication star representation.",
+      "site_density_class": "Lorentz/observer full16 pairing with independent density adds one conformal metric direction; mu=abs(detF) is an exact domain reparameterization, retains previous ranks, not heat equivalence. General diagonal Hodge weights are a different family.",
+      "proof_status": "Named rectangular matrix/refinement/adjoint/first-jet kernels are narrowly Lean-proved. All-level local obstruction, complete repair/density classifications, tensor extension, curvature and thermal derivative retain analytic scope with exact finite controls.",
+      "bootstrap_heat_identification": "OPEN",
+      "physical_source_Ward_stationarity_curved_roots_GR_closed": false,
+      "new_action_selector_postulate_or_compensator": false,
+      "source_artifact_count": 434,
+      "prior_unchanged_artifacts": 426,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 7,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "next_required_proof": "Derive the owned physical represented readout, compatible full Gram transition and apparatus map. The actual scaled cochain lift is not an adjoint intertwiner for any positive diagonal full16 Hodge weights. Its compression has the exact reaction Rdagger R and a full moving-Gram source. A complete nonlocal repair preserving the same coarse Gram leaves a spectrally and thermally essential complement modulus and changes point-algebra compatibility. Any compression-based native source transfer must retain or quantitatively control that reaction and the complete complement source. The Lorentz/observer site-density extension also remains deficient in local nongauge metric probes. Use actual admissible curves and refinements; another existing pairing/operator requires its precise owner/domain/readout. Then establish native field source/Ward, stationarity, contrast, curved joint roots and soundness/recovery. Preserve original #310/#202/#317 and all44 parent contracts; no new action, selector, postulate or role/word census."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f",
+  "previous_source_head": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3731,10 +3797,11 @@
     "Complete invariant faithful two-marginal protected-ground state class; exact correlation-preserving heat direction and full Jones-feedback stationarity obstruction; complete reversible CPTP refinement rank deficit with restricted-family and unnormalized-heat countercontrols. Physical native admission remains open.",
     "Actual homogeneous soldered-CAR square and complete ten-component metric plus observer heat derivative; exact moving-adjoint defect; physical Gibbs-preparation interface removed from mandatory action input. Full native heat binding and parent terminals remain open.",
     "Complete own-axis selfadjoint sector of the actual stored soldered operator; explicit uniformly nondegenerate curved readout; full-grade scalar/two-form coupling and strict all-beta compressed heat gap; restricted local tangent ranks; exact native conductance normalization and full positive conformal-family boundary. Golden four-level apparatus reused with its true representation scope. No heat identification, on-shell, source/Ward, continuum or GR promotion.",
-    "Complete full16 stored Lorentz/observer adjoint class and GL exception; all24 connection directions and exact nonlinear metric image; nonintegrable joint jet; full positive-pairing/projector/unitary tangent and bootstrap covector with Gram contribution and internal Ward. Exact golden four-level scope retained. Native binding, physical source/Ward, roots and GR remain open."
+    "Complete full16 stored Lorentz/observer adjoint class and GL exception; all24 connection directions and exact nonlinear metric image; nonintegrable joint jet; full positive-pairing/projector/unitary tangent and bootstrap covector with Gram contribution and internal Ward. Exact golden four-level scope retained. Native binding, physical source/Ward, roots and GR remain open.",
+    "Full16 arbitrary-positive diagonal pairing obstruction for the actual scaled cochain refinement; exact compression reaction and moving-Gram source/internal Ward; complete nonlocal repair with thermally essential complement modulus; complete site-density extension and its metric/image boundary. Native preparation, quantitative source transfer, physical Ward, roots and GR remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
+  "source_head": "4b25867dff1c120c21cdaf52b6398c729e21072c",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
   "source_pr": 310

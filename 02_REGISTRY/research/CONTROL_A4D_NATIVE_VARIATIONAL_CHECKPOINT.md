@@ -3,10 +3,41 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`2f3360c5d3bfcb40d4791b23ade8e82e03f887c8`, following
-`9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f`.
+`4b25867dff1c120c21cdaf52b6398c729e21072c`, following
+`2f3360c5d3bfcb40d4791b23ade8e82e03f887c8`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Native pairing/refinement reaction and full-price modulus, 2026-10-13.**
+[The pairing/refinement proof](A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md)
+excludes exact adjoint intertwining for every positive diagonal Hodge Gram
+on the full sixteen-component carrier under the actual scaled cochain lift.
+It gives explicit growing operator and fixed smooth harmonic defects; these
+do not exclude every weak observable or action-contrast transfer.
+
+Exact weighted compression yields Dc squared plus Rdagger R. Its rectangular
+moving-Gram derivative and internal frame Ward are retained. One-step Gram
+pullback does not supply an already compatible tower. A complete nonlocal
+repair preserving the same coarse Gram supplies exact inherited-block
+intertwiners, yet its complement spectrum changes the full heat price and
+changes compatibility with the unchanged point observable algebra. The
+remaining gamma is an essential price modulus, not coordinate gauge.
+
+The stored Lorentz/observer density class is also exhausted. Independent
+density adds one conformal direction; mu=abs(detF) retains previous ranks
+through an exact reparameterization. Heat is not preserved by that rescaling,
+and this observer family does not contain general diagonal Hodge weights.
+
+All 434 scientific artifacts match remote SOURCE: 426 prior files unchanged,
+one memo appended, seven new. Immutable replay passes 588
+exact checks and 32 mathematical negative controls;
+26 narrow Lean kernels and
+2 actual owner axiom closures retain their printed propositions.
+All 44 graph contracts and the dated preflight plan remain unchanged. The
+next arrow is the owned readout/Gram/apparatus transition, with the complete
+reaction and complement source controlled. Physical source/Ward, stationarity,
+quantitative transfer, joint curved roots, soundness/recovery and GR stay open.
+Current-head CI and independent CONTROL review remain required.
 
 **Joint adjoint class and full constrained source covector, 2026-10-13.**
 [The joint proof](A4D_NATIVE_JOINT_ADJOINT_SOURCE.md) classifies the actual
