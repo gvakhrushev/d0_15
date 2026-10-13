@@ -3,10 +3,44 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`a235dbbc05631335498cda376671af6c2772dc41`, following
-`01e8047b1effacdbf623ec3189bedb63fb6732f8`.
+`695ecb94abcb38590a8f3e37332969ef21e2f24d`, following
+`a235dbbc05631335498cda376671af6c2772dc41`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Complete invariant preparation and lossless-refinement boundary, 2026-10-13.**
+[The exhaustive preparation proof](A4D_NATIVE_FULL_PREPARATION_FIBER.md)
+classifies full conjugation-invariant faithful GNS densities with both native
+trace marginals and a simple protected Omega. The two parameters lambda,mu
+have an explicit open domain. Fixing the entire Jones joint table still
+leaves the exact tangent (1,-K/J), with heat derivative -1/(beta lambda).
+Feedback preserving the full Jones/golden Gram relation has zero derivative
+even with moving frames; fixed rank alone would not suffice. Thus the
+specified two-term preparation has no interior stationary point, and a
+native admission law must explicitly answer this tangent. The result does
+not classify all frame-dependent equivariant or physical preparations.
+
+Every CPTP full-state refinement with CPTP recovery across one actual AF
+GNS step has output rank at most 2d_n<d_(n+1). The missing fraction is at
+least 1/5 and tends to p^3; a faithful finite Gibbs target has trace distance
+at least exp(-beta Emax)/5. Exact restricted-family CP maps exist at actual
+levels >=2, preserving lambda while erasing other coherences. Unnormalized
+heat extensions retain a positive detail block and its entire partition
+weight. Neither alternative proves closed physical preparation or resolves
+its actual native marginal constraints automatically.
+
+All 406 scientific artifacts match verified remote SOURCE blobs and SHA256:
+398 prior files unchanged, one memo appended and seven new files. Default
+immutable replay passes 461 grouped exact controls and nineteen mathematical
+mutations, including full complex marginal/covariance matrices, an exact
+commutant-rank check, actual Jones-sector traces and a sharp recovery witness.
+Eighteen generic scalar Lean statements and one actual owner compile with
+standard axioms and six compiler pins; sixteen primary/prior source files
+are pinned. Full group/Kraus classification remains analytic/certificate
+work. The 44 graph dictionaries and dated tangent preflight are unchanged.
+The joint native preparation constraint, source/Ward, stationarity, curved
+roots, soundness/recovery and GR remain open. Current-head CI and independent
+CONTROL review remain acceptance requirements; no parent terminal is closed.
 
 **Native Jones transport and internal record correlation, 2026-10-13.**
 [The transport proof](A4D_NATIVE_JONES_RECORD_TRANSPORT.md) resolves the

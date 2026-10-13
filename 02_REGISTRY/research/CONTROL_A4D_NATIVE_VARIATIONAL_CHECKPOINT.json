@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "9f53fbe87e4f5187edba212363bb6096b0bd23d68a7d99bc2326ee173dcb1920",
-      "source_blob": "1089ce2a209b62ba35f1226017c6838293116681"
+      "sha256": "0fc466de33995275ab508618f68a4fcbf369f80573e7e5e760486b8cb179a3fd",
+      "source_blob": "ecd15c6b879e2114a8076733c06050b7644c5c42"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1996,6 +1996,41 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_jones_record_transport_output.txt",
       "sha256": "2fdbbc1bc3ee907ce5ffc32a10dff2441eef049e3f5ec8252feddf15b743ac12",
       "source_blob": "04ae87dc4a805c5f5105206d34dba08a32415113"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL_PREPARATION_FIBER.md",
+      "sha256": "cf363734f8433d3a3315a0487ddb311a68c852d906e2f19915b2ffb3d9ee16e5",
+      "source_blob": "ba172822b253d3bfb32fd62b89c42f1e14c35737"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber.py",
+      "sha256": "030a4c9ae6322bd009fb68afb3120ac1e2407398ca5d02e120bf4c3bd040d3da",
+      "source_blob": "27bc70d5d6c88fa1b90607bfe6b40e0edb97a6c6"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_check.py",
+      "sha256": "aa0eb065d863f7d6e457b841591675b9dcbc148aef022e68a8c95b8392cd9a26",
+      "source_blob": "883d0adf9591a24fd571757f4c6c17afbb879a79"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_certificate.json",
+      "sha256": "81903c09d6350b614e930986702a123ee260f06b86eba93d11065008c1c4854d",
+      "source_blob": "d2e444712b0dad9c72a3fe590da737b34b9ccb16"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber.lean",
+      "sha256": "2543998c6742aefea6c1234808b1b7f90d077e07791e94ec2dc0c3a6fe64c3e9",
+      "source_blob": "51de7b27e647d0c9919e395634584411c73ed650"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_results.json",
+      "sha256": "9c54e53b485dd9bf8cbbe6ad650072c4a7fb466837293cbc0cd8dba66235a0d6",
+      "source_blob": "6616c42d5d535bfc587d52b59ef6aa604644499f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_output.txt",
+      "sha256": "a68d385275a7557ea69d89de5755a2e9eb3998fc54bb07ff15a032fb1aee504f",
+      "source_blob": "dde1adba405621669350e5fd310613841cddcfb0"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -3332,13 +3367,50 @@
       "new_scientific_artifacts": 7,
       "all_44_contracts_and_original_parent_terminals_unchanged": true,
       "next_required_proof": "Derive native admission and execution of the now explicit composite Ad_R after actual AF inclusion, with its complete prepared state and both successful/failed records retained. Adjacent Jones overlap p^3, the owned golden half gate, full corner transport and compatible conditional refinement are now constructed; do not reopen that matrix-existence question or infer a physical clock from it. The full-state correlation t has range [0,p^6] at fixed two native marginals, and the existing protected-zero heat family has dB/dt=-1/(beta M_R lambda). Derive the actual common preparation constraint and its joint (q,D,b,m) tangent, including how this correlation and every other price term vary. Preserve all metric/link probes, excluded-direction equations and the distinct old scene/fullStep cuts. Own source/Ward, fixed-calibration contrast, native stationarity, curved roots and soundness/recovery remain required. No free postselection, external level scheduler, new action, fitted source or word/role census. Preserve #310/#202/#317 and all parent contracts."
+    },
+    "full_preparation_fiber": {
+      "date": "2026-10-13",
+      "source_head": "695ecb94abcb38590a8f3e37332969ef21e2f24d",
+      "input_source_head": "a235dbbc05631335498cda376671af6c2772dc41",
+      "control_input_head": "2b28cd740777541c91b4acd48b705d9ce2cf77bb",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_FULL_PREPARATION_FIBER.md",
+      "program": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_certificate.json",
+      "exact_controls": 461,
+      "executed_mathematical_mutations": 19,
+      "new_generic_Lean_propositions": 18,
+      "actual_owner_axiom_checks": 1,
+      "source_input_pins": 16,
+      "compiler_input_pins": 6,
+      "complete_state_class": "CONJUGATION_INVARIANT_FAITHFUL_FULL_GNS_TWO_NATIVE_MARGINALS_SIMPLE_PROTECTED_OMEGA",
+      "state_class_real_dimension": 2,
+      "mere_frame_equivariance_is_same_class": false,
+      "fixed_joint_table_tangent": "(delta lambda,delta mu)=(1,-K/J)",
+      "full_heat_derivative": "-1/(beta lambda)<0",
+      "fixed_Jones_overlap_feedback_derivative": "0 even with moving frames; fixed rank alone is insufficient",
+      "stationary_point_in_complete_stated_two_term_class": false,
+      "all_lossless_channel_class": "CPTP full-matrix refinement with CPTP left inverse on all states",
+      "maximum_reversible_output_rank": "2*d_n<d_(n+1)",
+      "missing_rank_fraction": "at least 1/5; tends p^3",
+      "full_finite_Gibbs_trace_distance_lower_bound": "exp(-beta Emax)/5",
+      "restricted_faithful_family_refinement": "explicit measure/prepare CP maps at actual AF levels>=2; preserves lambda but erases other coherences",
+      "unnormalized_Gibbs_extension": "complete inherited reducing block plus positive full-detail block; native marginal feasibility remains explicit",
+      "full_native_preparation_admission_or_source_Ward_GR_closed": false,
+      "new_action_selector_or_compensator": false,
+      "proof_status": "Complete invariant representation/Kraus classification analytic with exact matrix controls; 18 scalar research Lean kernels compiled; not all equivariant or physically admitted preparations",
+      "source_artifact_count": 406,
+      "prior_unchanged_artifacts": 398,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 7,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "next_required_proof": "Derive the actual joint native preparation map/constraint tying the full state, heat, feedback and (q,D,b,m), and evaluate its derivative on (delta lambda,delta mu)=(1,-K/J). This exact direction preserves both forced native marginals and the entire Jones joint table but changes the protected heat price by -1/(beta lambda). If admitted, an independently owned coupled term must supply +1/(beta lambda); if excluded, prove exclusion from that native owner. Fixing t, moving a tuple with unchanged Jones/golden Gram data or invoking M1 uniqueness/naturality cannot supply the missing equation. Do not identify a faithful full Gibbs state with the output of a full-state reversible CPTP AF refinement: the complete channel class has missing rank fraction at least 1/5. Restricted-family channels and unnormalized heat extensions remain possible, with all erased information or added partition modes explicitly retained and priced in any physical implementation. Keep every physical metric/link probe and excluded-direction equation. Own source/Ward, quantitative contrast, native stationarity, curved roots and soundness/recovery remain required; no new action, compensator, free postselection or word/role census. Preserve original #310/#202/#317 and all parent contracts."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "01e8047b1effacdbf623ec3189bedb63fb6732f8",
+  "previous_source_head": "a235dbbc05631335498cda376671af6c2772dc41",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3436,11 +3508,12 @@
     "All-time collinear retained-record seed orbit, exact internal codec and predecessor, golden conjugate height growth, and hereditary actual archive pullback. 4096 exact ticks, 24745 controls, 15 mathematical mutants and nine generic Lean propositions. Physical admission, endogenous refinement/link dynamics, full source and all original terminals remain open.",
     "Fixed autonomous scene record: exact nine-primitive addressed forward word with an internal degree-oriented edge switch, all 718 histories and complete 22976-coordinate carrier. Full endpoint/matter feedback p^2 I+p(2 Delta-Delta^2), complete one/two-tick prices, old-carrier Gram obstruction, 38253 controls, ten mathematical mutations and nine generic compiled propositions. Physical common preparation, addressing, tangent/source and refinement remain open.",
     "Full actual AF recording: minimum three inclusions in the declared covariant four-copy GNS class, explicit native six-level operator algebra and full regular feedback multiplicities. 21396 exact controls, eleven mathematical mutants, fourteen generic compiled propositions. Exact delta/prepared-corner bridge; physical preparation, coherent refinement, joint source and all original terminals remain open.",
-    "All-level adjacent Jones overlap, owned golden full-corner transport, explicit compatible conjugated refinement, retained previous-right record, specific prepared central-label record and complete both-marginal correlation interval/owned thermal derivative; physical admission remains open."
+    "All-level adjacent Jones overlap, owned golden full-corner transport, explicit compatible conjugated refinement, retained previous-right record, specific prepared central-label record and complete both-marginal correlation interval/owned thermal derivative; physical admission remains open.",
+    "Complete invariant faithful two-marginal protected-ground state class; exact correlation-preserving heat direction and full Jones-feedback stationarity obstruction; complete reversible CPTP refinement rank deficit with restricted-family and unnormalized-heat countercontrols. Physical native admission remains open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "a235dbbc05631335498cda376671af6c2772dc41",
+  "source_head": "695ecb94abcb38590a8f3e37332969ef21e2f24d",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "01e8047b1effacdbf623ec3189bedb63fb6732f8",
+  "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
   "source_pr": 310
 }

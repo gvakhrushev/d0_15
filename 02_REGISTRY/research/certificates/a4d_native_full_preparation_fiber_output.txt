@@ -1,0 +1,23 @@
+'D0.Research.FullPreparationFiber.marginal_equations_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.full_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.positive_coefficient_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.protected_domination_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.mismatch_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.fixed_mismatch_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.wrong_sign_mismatch_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.mismatch_coefficients_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FullPreparationFiber.heat_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.heat_derivative_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.finite_heat_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.full_joint_sector_count' depends on axioms: [propext, Quot.sound]
+'D0.Research.FullPreparationFiber.mismatch_sector_nonempty' depends on axioms: [propext]
+'D0.Research.FullPreparationFiber.invariant_sector_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.refinement_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.refinement_dimension_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FullPreparationFiber.residual_fifth_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FullPreparationFiber.retained_residual_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Representation.GoldenCoherentMemory.fullStep_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
