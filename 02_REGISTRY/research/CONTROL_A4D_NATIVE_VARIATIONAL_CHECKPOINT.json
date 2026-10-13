@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "4e3753d8a9c0f319c5893730cc73ab8c2c699fd3115eeeba3718409c0cd49c42",
-      "source_blob": "73ca02ac4fa85c93111d87facdaf959204085760"
+      "sha256": "5a5d89f8a8486c9b070036479f5a36eb16857c74794a62722c68904c51b67114",
+      "source_blob": "8c365942526deb8f7221c7d76f6b1bc26e9a852e"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -2066,6 +2066,41 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_output.txt",
       "sha256": "bfa25ec65768f922b6770a0aa3d99b89fff9a07e789dfb8d1fe76a4958948206",
       "source_blob": "951e08b70eee2e780496c720fdcefd6f90a451ee"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CURVED_SOLDERED_HEAT.md",
+      "sha256": "6e08aad99b087bfeaf9329183f6b6973903984313c71bd5cc42cc395921f936d",
+      "source_blob": "39a078657a9167e87a21ae12dbc3c09ef03e068a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py",
+      "sha256": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+      "source_blob": "d76dd3775e90a982eb1cde4ce935cadb1c3ab671"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_check.py",
+      "sha256": "1bcc0a716bcf95924ab5936c723148089b7cd6cbb33f71bff7d94434fe3089d9",
+      "source_blob": "4f66b66c7c08f2151bd031a719bfdaef6e57f26c"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_certificate.json",
+      "sha256": "d9f4e155e62ef470841974ed43ce2a6369cfb98f88a5d3d81fb662ad71b7e213",
+      "source_blob": "7c302dca2014d86f07f2ba005c905e660865273a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.lean",
+      "sha256": "4a4f121f87cd1e56bb045ae0e0dafe3fb7c9dfd704c255b72134661ff9595377",
+      "source_blob": "48dea1af391a2169ec95980007a77e62e6360b53"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_lean_results.json",
+      "sha256": "db17e7b82d056c8f241b432b081685e0001066dfda119ffe1f6621c20f4424c3",
+      "source_blob": "b9b9d5d045e307c133e44d3399fcd6dd7c57866c"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_lean_output.txt",
+      "sha256": "29f3baae66f290899012a9e7735d2e51f94347f76404e5138b749e4c1dc9b751",
+      "source_blob": "e94b3ada8bfb21c9c5f4c566c2df276f79f1e186"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -3488,13 +3523,46 @@
       "new_scientific_artifacts": 7,
       "all_44_contracts_and_original_parent_terminals_unchanged": true,
       "next_required_proof": "Derive the actual full-carrier native map X -> (Delta(X),P(X),U(X),G(X)) on the retained (q,D,b,m) tangent. The Gibbs matrix is the derivative weight of the owned heat functional, not a required independent physical preparation. Establish or refute the precise binding of native heat to the existing soldered differential, including its actual moving-pairing adjoint terms; do not silently install its square as a new law. Its homogeneous symbol and all ten metric plus observer derivatives are now explicit. The stored variable-solder codifferential has a certified endpoint adjoint defect even on a carrier-compatible field. The scene feedback polynomial binds a different coarse operator and cannot identify the full carriers by name. Use the same admitted family for feedback, heat, pairing, source and refinement; then native stationarity, Ward, quantitative transfer, curved roots and soundness/recovery. Preserve #310/#202/#317 and every parent contract; no arbitrary Gibbs selector, new action, role/word census or source fitting."
+    },
+    "curved_soldered_heat": {
+      "date": "2026-10-13",
+      "source_head": "9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f",
+      "input_source_head": "5fdddb1ff924de12b38c886999a40662628cc313",
+      "control_input_head": "87dacd668e8a5f2d898fa3d909b5691a99da52ab",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CURVED_SOLDERED_HEAT.md",
+      "program": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_certificate.json",
+      "exact_controls": 525,
+      "executed_mathematical_mutations": 34,
+      "new_Lean_propositions": 18,
+      "actual_owner_axiom_checks": 3,
+      "source_input_pins": 64,
+      "selfadjoint_class": "Fixed rest/counting pairing, identity internal affine links: every solder row invariant along its own axis, iff, all L>=2. Identity row pull is a separate explicit choice.",
+      "curved_readout": "q=diag(1,-a(t)^2,-1,-1), a(t)=2+cos(2pi t), R0101(0)=-12pi^2; pure-gauge coordinate links are not Levi-Civita. Kinematic only.",
+      "Fourier_metric_rank": "m(9-m)/2 with m zero frequency coordinates; kernel m(m-1)/2; total rank 16L^3-6L^2.",
+      "scalar_to_twoform_norm_squared": "2L^7 sum_t (a(t+1)-a(t))^2; L4 profile (3,2,1,2): 131072",
+      "all_beta_strict_heat_gap": "Tr(P exp(-beta Delta) P)-Tr_P exp(-beta PDeltaP) >= beta^2 exp(-beta M0)||B||^2/2; strict for every nonconstant discrete warp and beta>0. No uniform continuum bound asserted.",
+      "native_conductance_bridge": "Exact for L>=3; L2 has twice the undirected edge weight.",
+      "full_positive_conformal_comparison": "Only a=1 and rho=1 for L>=3 on the fixed flat graph; L2 rho=1/2. No nonconstant warp in the entire positive rho family.",
+      "actual_CAR_order_bridge": "ABCD Jordan-Wigner to ACDB exterior code order via (-1)^(B(C+D)), actual integer/real matrix conversion kernel-proved.",
+      "golden_notes_reused": "Already owned Q(D)=phi^(D-4); independent four-level full-record threshold; tau(e)=4delta0^2 and two-tick coefficient 8delta0. Three distinct readout ratios remain distinct.",
+      "proof_status": "18 narrow Lean matrix/order/variance propositions and 3 actual owner axiom checks. All-level selfadjoint/Fourier classification, curvature and strong Jensen are analytic with exact finite controls.",
+      "bootstrap_heat_identification": "OPEN",
+      "physical_source_Ward_stationarity_curved_roots_GR_closed": false,
+      "new_action_selector_postulate_or_compensator": false,
+      "source_artifact_count": 420,
+      "prior_unchanged_artifacts": 412,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 7,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "next_required_proof": "Derive the actual full-carrier native map X -> (Delta(X),P(X),U(X),G(X)) on its independently admitted (q,D,b,m) tangent. The rest/counting stored operator now has a complete own-axis selfadjoint class containing uniformly nondegenerate curved metrics, but its local metric image has rank m(9-m)/2 at frequency with m zero coordinates. Recover the missing physical probes from owned joint link/pairing variations rather than extrapolating the homogeneous rank ten. Retain the scalar-to-two-form coupling: full compressed heat differs strictly from heat of the conductance compression at every beta>0; any proposed reduction needs its own quantitative refinement bound. The bootstrap identification remains to be proved, not installed. Reuse the existing four-level Fibonacci record threshold, corner weight 4delta0^2 and two-tick coefficient 8delta0 without identifying scalar depth, Role axes and physical time. Physical full-GNS Gibbs preparation is still an additional interface, not a prerequisite of the heat derivative. Then establish same-family source/Ward, native stationarity, quantitative contrast, joint curved roots and soundness/recovery. Preserve original #310/#202/#317 and all parent contracts; no new action, selector, postulate, arbitrary scalar heat substitution or role/word census."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "695ecb94abcb38590a8f3e37332969ef21e2f24d",
+  "previous_source_head": "5fdddb1ff924de12b38c886999a40662628cc313",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3594,10 +3662,11 @@
     "Full actual AF recording: minimum three inclusions in the declared covariant four-copy GNS class, explicit native six-level operator algebra and full regular feedback multiplicities. 21396 exact controls, eleven mathematical mutants, fourteen generic compiled propositions. Exact delta/prepared-corner bridge; physical preparation, coherent refinement, joint source and all original terminals remain open.",
     "All-level adjacent Jones overlap, owned golden full-corner transport, explicit compatible conjugated refinement, retained previous-right record, specific prepared central-label record and complete both-marginal correlation interval/owned thermal derivative; physical admission remains open.",
     "Complete invariant faithful two-marginal protected-ground state class; exact correlation-preserving heat direction and full Jones-feedback stationarity obstruction; complete reversible CPTP refinement rank deficit with restricted-family and unnormalized-heat countercontrols. Physical native admission remains open.",
-    "Actual homogeneous soldered-CAR square and complete ten-component metric plus observer heat derivative; exact moving-adjoint defect; physical Gibbs-preparation interface removed from mandatory action input. Full native heat binding and parent terminals remain open."
+    "Actual homogeneous soldered-CAR square and complete ten-component metric plus observer heat derivative; exact moving-adjoint defect; physical Gibbs-preparation interface removed from mandatory action input. Full native heat binding and parent terminals remain open.",
+    "Complete own-axis selfadjoint sector of the actual stored soldered operator; explicit uniformly nondegenerate curved readout; full-grade scalar/two-form coupling and strict all-beta compressed heat gap; restricted local tangent ranks; exact native conductance normalization and full positive conformal-family boundary. Golden four-level apparatus reused with its true representation scope. No heat identification, on-shell, source/Ward, continuum or GR promotion."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "5fdddb1ff924de12b38c886999a40662628cc313",
+  "source_head": "9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
   "source_pr": 310

@@ -3,10 +3,41 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`5fdddb1ff924de12b38c886999a40662628cc313`, following
-`695ecb94abcb38590a8f3e37332969ef21e2f24d`.
+`9f2028bdf6b5ff708e5b46e4476e3fb4a305b34f`, following
+`5fdddb1ff924de12b38c886999a40662628cc313`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Curved surviving operator class and full-grade heat, 2026-10-13.**
+[The exact curved proof](A4D_NATIVE_CURVED_SOLDERED_HEAT.md) classifies the
+stored operator's rest/counting selfadjoint sector and supplies nonconstant,
+uniformly nondegenerate curved metric readouts. It retains the separate
+internal, coordinate and row-pull links. The metric curvature is not the
+holonomy of the constructed pure-gauge connection and is not an on-shell result.
+
+The scalar compression is the native conductance Laplacian with its exact
+L>=3 scale and L2 factor. A nonconstant warp necessarily couples scalars to
+two-forms, and its compressed full heat differs strictly from the heat of
+the compression at every beta>0. The explicit lower bound is finite; no
+uniform continuum limit follows. Local metric rank is m(9-m)/2, so the
+homogeneous ten-direction result does not supply every local probe. The
+entire positive conformal family on the fixed flat graph cannot reproduce
+a nonconstant warp. The ACDB/ABCD CAR basis change is explicit and compiled.
+
+The older golden notes already have a precise owner: four levels are minimal
+for the stated covariant full-record representation, with corner weight
+4delta0^2 and two-tick feedback 8delta0. The scalar normalization Q(4)=1 is
+not used to infer four-dimensional dynamics or change the recursion.
+
+All 420 scientific artifacts match verified remote SOURCE blobs: 412 prior
+files unchanged, one memo appended, seven new. Immutable replay passes
+525 grouped exact checks and 34 mathematical negative controls.
+Eighteen new Lean propositions and three actual owner closures have standard
+axioms, with the prior verified source overlay and one additional Mathlib
+input pinned. All 44 graph contracts and the dated preflight plan remain
+unchanged. Full native heat/feedback/pairing binding, admitted local source,
+Ward, quantitative refinement, joint curved solutions and GR remain open.
+Current-head CI and independent CONTROL review remain required.
 
 **Actual soldered heat derivative and critical-path correction, 2026-10-13.**
 [The owned-operator proof](A4D_NATIVE_SOLDERED_HEAT_SOURCE.md) computes the
