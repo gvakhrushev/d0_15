@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "81b6497101a23e60acb086be962df76c8774a30299c00bcb4afaacbd75cdab4e",
-      "source_blob": "7c467f877af61e97ea6aae826c6e24fcb366d4a2"
+      "sha256": "a8f7a9ff8ab117894a2638f8c0ee47a847d319936f2aaf6d5c0554a142e266fd",
+      "source_blob": "96176cd4633e416b65f09a244e6e59ab8921d441"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1841,6 +1841,21 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_matter_observer_pairing_results.json",
       "sha256": "a94e3c849ce15bc3dc035d23c764808d1967c258f2a94b567b995c9d0cf620e2",
       "source_blob": "ce979b3accf8aa2c32338a27f1b2ec950376be70"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+      "sha256": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
+      "source_blob": "fda1294b8d9794a62b86faaa19e3cc1a459e031d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+      "sha256": "0b91e13d823568898a006dd468f9963ffbbc1949f0976a21e8530af465ecfbbe",
+      "source_blob": "d3a5ef420916a11dd2a277d4c0563a51fb75d2a1"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+      "sha256": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
+      "source_blob": "193589a342f4ae843eefdbf6c950d6cd8ef8faa7"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1972,7 +1987,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
+    "observed_source_strategy_head": "585a6c21e09c07d7704c6c7ef1e2e0b45ba9b83a",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -2023,7 +2038,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "e17aadae73caaddcbe2b110dcf82a21c89e692fdb35469a95d04389d057ad09f",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 353,
+    "prior_scientific_artifacts_byte_unchanged_count": 367,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -2057,7 +2072,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
+    "scientific_source_head": "585a6c21e09c07d7704c6c7ef1e2e0b45ba9b83a",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2242,7 +2257,7 @@
       "0276705b3f63bfa5a1ba54f3c671132e802993b0",
       "b640cacb5e404c10d71d6e9503cf34f3dc82a443"
     ],
-    "source_scientific_input_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
+    "source_scientific_input_head": "585a6c21e09c07d7704c6c7ef1e2e0b45ba9b83a",
     "additional_source_strategy_correction": [
       {
         "path": "02_REGISTRY/research/A4D_TRACELESS_COMPOUND_JET.md",
@@ -3007,13 +3022,40 @@
       "old_failure_run": 38247925483,
       "failure": "PREFLIGHT_CERTIFICATE_MISMATCH caused solely by appended planning text",
       "scientific_result_or_T0_status_changed": false
+    },
+    "record_metric_chronology": {
+      "date": "2026-10-13",
+      "source_head": "585a6c21e09c07d7704c6c7ef1e2e0b45ba9b83a",
+      "input_source_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+      "exact_controls": 469,
+      "executed_mathematical_mutations": 18,
+      "new_Lean_declarations": 0,
+      "all_ten_q_and_sixteen_m_directions_checked": true,
+      "same_pairing_metric_update": "Q_plus=Q;q_plus=-Q+2wwT/(wT Qinv w)",
+      "hypothesis": "FULL_OPERATOR_ENDPOINT_PAIRING_ISOMETRY_NOT_DERIVED_FROM_SINGLE_STATE_NORM",
+      "hypothesis_native_admission_proved": false,
+      "singular_first_grade_output_retained": true,
+      "new_blank_needed_for_retained_second_gate": false,
+      "full_chronological_pencil": "A(c)^2 B(c)^2 C(c);original P;all16 rows",
+      "chronological_matter_jet_nonzero": true,
+      "whole_factor_record_jet": "0",
+      "all_ten_homogeneous_price_coefficients_compared_to_flat_rho0": true,
+      "full_local_source_subtracted_equations_or_closed_native_preparation": false,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "source_artifact_count": 371,
+      "prior_unchanged_artifacts": 367,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 3,
+      "next_required_proof": "Derive the native admission and complete constitutive price of a closed joint preparation, including the actual endpoint condition, singular-state handling, link/affine dependence and refinement. Consume the now solved conditional metric correction and full chronological jet. Retain all physical probes and excluded-direction equations; do not infer the whole-operator condition from one-state norm conservation, fit a source or install the correction as a new postulate. Own source/Ward, native stationarity, curved roots, soundness/recovery and GR remain open."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
+  "previous_source_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3106,11 +3148,12 @@
     "Complete word-frequency and prefix minimum bounds with all history/heat retained; uniform p/2 golden clock/readout representation obstruction for real and complex isometries, exact injective-linear obstruction. Physical common preparation and all original parent terminals remain open.",
     "Native first-grade matter observer pairing on k>0 with complete 26-slot q/m derivative; broader axial pairing loopholes retained.",
     "The literal full sixteen-component golden apparatus, its whole blank plane, top-grade orientation resource and exact failure of observer/top-grade sector closure.",
-    "Concurrent session factor/multiplier notes are preserved as unproved interpretations and checked against the actual admissible factor tangent; no source theorem inferred."
+    "Concurrent session factor/multiplier notes are preserved as unproved interpretations and checked against the actual admissible factor tangent; no source theorem inferred.",
+    "Conditional endpoint-isometry metric correction, orientation-free retained record, exact full chronological determinant and all 26 derivatives; zero whole factor-record jet and all ten homogeneous heat-plus-record coefficients. Native premise and full source remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
+  "source_head": "585a6c21e09c07d7704c6c7ef1e2e0b45ba9b83a",
   "source_head_and_math_blob_verified_remote": true,
-  "source_parent": "1555a67779d42a78108a0525dd5dc1a3a580c136",
+  "source_parent": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
   "source_pr": 310
 }
