@@ -4152,3 +4152,54 @@ direction (delta lambda,delta mu)=(1,-K/J). M1 uniqueness and condensed
 naturality consume their constraint/family hypotheses; they do not supply
 this absent relation. Actual source/Ward, quantitative transfer, stationarity,
 curved roots, soundness/recovery and the original terminals remain open.
+
+## Owned soldered heat jet and correction of the preparation route (2026-10-13)
+
+[The operator/source proof](A4D_NATIVE_SOLDERED_HEAT_SOURCE.md) corrects the
+preceding next-step requirement. The primary bootstrap action takes Delta
+and feedback; its Gibbs matrix is its derived derivative weight. A separately
+prepared physical full-GNS Gibbs density is an additional interface, not a
+necessary input to that action. The full preparation-fiber and lossless-channel
+results retain their exact stated scope, but testing their lambda,mu tangent
+is not the next mandatory gravitational step without an owner identifying
+that physical state with the actual heat.
+
+For the literal archiveSolderedDirac, constant invertible raw solder, constant
+unit observer, identity links and the full positive exterior pairing, the
+square is (z*Qz)I16 with Q=F eta h(n) eta F^T. Its metric/observer expression
+is Q=-q+2vv^T/(v^T q^-1 v). All ten homogeneous metric directions satisfy
+the full endpoint carrier tangent and have explicit raw-solder lifts. The
+complete finite heat covector and independent observer derivative are
+computed, with every packed weight and sign retained. The joint 14-variable
+positive-symbol map has rank ten and a four-dimensional kernel, not declared
+gauge. The kernel of the nonzero scalar price differential has dimension
+thirteen; the full ten-component response must not be replaced by that scalar.
+
+At L=4,beta=log(2)/32 the flat heat covector has diagonal (-64,64,64,64)/3
+and all six packed off-diagonals 128/9. Thus it has an explicit tracefree
+response while all ten flat geometric rho0 components vanish. This compares
+the heat contribution, not a total source-subtracted equation. In affine Q
+coordinates the exact Gibbs covariance is positive definite at every L>=2;
+eleven explicit modes span the entire ten-component response space. Nonlinear
+q coordinates also have their second-jet term, which is not dropped.
+
+This actual moving-solder square scales as exp(2t), so its radial heat jet is
+-2E_beta, opposite to the previously declared frozen-differential inverse
+Hodge binding. All sixteen constant modes are retained, so its Gibbs top
+eigenvalue is not simple. Neither earlier interface can be substituted merely
+because the operators agree at the reference point.
+
+The next curved obstruction is also exact: the stored variable-solder
+codifferential is -M_ell nabla_minus, whereas its counting adjoint is
+-nabla_minus M_ell. Their endpoint commutator is nonzero even on an explicit
+carrier-compatible two-site field. For a supplied full positive pairing G,
+the required adjoint is uniquely G^-1 d*G. No supported owner is silently
+replaced by this algebraic correction.
+
+The remaining first arrow is the native full-carrier map to Delta,P,U,G,
+including its moving-adjoint law and a proved identification with the
+soldered family if that is the actual heat. The scene's coarse feedback
+polynomial already binds its own coarse operator, but does not equate three
+different heat carriers. Source/Ward, quantitative transfer, stationarity,
+curved roots and soundness/recovery remain open. No new physical action,
+selector, postulate, parent retirement or word/role census is introduced.

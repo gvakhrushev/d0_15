@@ -3,10 +3,40 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`695ecb94abcb38590a8f3e37332969ef21e2f24d`, following
-`a235dbbc05631335498cda376671af6c2772dc41`.
+`5fdddb1ff924de12b38c886999a40662628cc313`, following
+`695ecb94abcb38590a8f3e37332969ef21e2f24d`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Actual soldered heat derivative and critical-path correction, 2026-10-13.**
+[The owned-operator proof](A4D_NATIVE_SOLDERED_HEAT_SOURCE.md) computes the
+homogeneous square and all ten metric plus independent observer derivatives.
+The bootstrap Gibbs density is its derived derivative weight; a separately
+prepared physical full-GNS Gibbs state is an additional interface. This
+supersedes the preceding mandatory next-step demand on the lambda,mu fiber
+without changing that fiber theorem or the original parent terminals.
+
+The joint positive-symbol map has rank ten and kernel dimension four; the
+nonzero scalar price differential has kernel dimension thirteen. Its exact
+flat heat covector has packed mixed components 128/9 on an L=4 thermal slice,
+while geometric rho0 is zero. The all-L affine-Q Hessian is positive definite;
+nonlinear q coordinates retain their second jet. All sixteen zero modes remain.
+The native heat identification and full same-family feedback/source remain open.
+
+The stored variable-solder codifferential has an exact endpoint adjoint defect
+on a carrier-compatible witness. For a supplied full pairing G the required
+adjoint is G^-1 d*G; no supported operator is changed or newly selected.
+The next necessary arrow is this actual heat/feedback/pairing map and its
+moving-adjoint law, followed by the retained source/Ward/curved-solution gates.
+
+All 413 scientific artifacts match verified remote SOURCE blobs: 405 prior
+files unchanged, one memo appended, seven new. Immutable replay passes 405
+checks and sixteen mathematical negative controls. Twenty new Lean statements
+and six actual owner closures pass with standard axioms. Nine dependencies
+were freshly compiled from SOURCE in an isolated overlay; forty-one retained
+cache modules have matching source files. All commands and binary hashes are
+recorded; no D0.All build is claimed. All 44 graph contracts and the dated
+preflight plan are unchanged. Current-head CI and CONTROL review are required.
 
 **Complete invariant preparation and lossless-refinement boundary, 2026-10-13.**
 [The exhaustive preparation proof](A4D_NATIVE_FULL_PREPARATION_FIBER.md)

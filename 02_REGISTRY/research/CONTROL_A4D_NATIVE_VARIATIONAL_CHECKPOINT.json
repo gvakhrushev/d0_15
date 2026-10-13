@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "0fc466de33995275ab508618f68a4fcbf369f80573e7e5e760486b8cb179a3fd",
-      "source_blob": "ecd15c6b879e2114a8076733c06050b7644c5c42"
+      "sha256": "4e3753d8a9c0f319c5893730cc73ab8c2c699fd3115eeeba3718409c0cd49c42",
+      "source_blob": "73ca02ac4fa85c93111d87facdaf959204085760"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -2031,6 +2031,41 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_output.txt",
       "sha256": "a68d385275a7557ea69d89de5755a2e9eb3998fc54bb07ff15a032fb1aee504f",
       "source_blob": "dde1adba405621669350e5fd310613841cddcfb0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md",
+      "sha256": "be0c07f8636d051d7fe50cdbc6241a172c7148c694e93a0ba1b4140899c5321a",
+      "source_blob": "30697ffcfac273b4c7f5319e6cf8e4b31639c461"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.py",
+      "sha256": "7794885c71088ec66963b96d1e949dd4c3c1af38322512d14434df1ec196dd26",
+      "source_blob": "8b3ae8c3a51879494677d58abfc1bd746b1697ae"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py",
+      "sha256": "d2d05b09242f3934bfb15e36990290f80e8374b038bbf2d7d2e654b8382f59f6",
+      "source_blob": "d90101c0203ee8755c90aa0b2672113b6099483b"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_certificate.json",
+      "sha256": "1c1f7f1c55eaa16d4b200d3557ad5744f10fc5aa1345a2c98a8454e64348295a",
+      "source_blob": "26d2558532a71699ec3d85845c42cc672dfcda65"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.lean",
+      "sha256": "29e0364e9008de9d4a084b7648579ae68507a5e42f1f2f2d28c21af5785a5425",
+      "source_blob": "d6a7550a700c4eb6c28cb8abb54da60f434e3cf4"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json",
+      "sha256": "1c99019091bd543fb43d1e8aafea3c83f656a1a45b5d7b54793a908d7914dc40",
+      "source_blob": "072fa8039243fb8d5373f411d22ae14929405901"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_output.txt",
+      "sha256": "bfa25ec65768f922b6770a0aa3d99b89fff9a07e789dfb8d1fe76a4958948206",
+      "source_blob": "951e08b70eee2e780496c720fdcefd6f90a451ee"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -2075,8 +2110,8 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
       "transitive_d0_source_pins": 4
     },
-    "control_input_head": "84e16c8bdfe79fcca52803d428511832efbbf3ac",
-    "date": "2026-10-09",
+    "control_input_head": "837619a246878dc618423e1d899613f8bd4e56d5",
+    "date": "2026-10-13",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
     "finite_preflight_certificate_sha256": "ac7567259c1e610c4d5db3c092749cfdb669a417b066f0923f534db11d1e527c",
     "finite_preflight_exact_controls": 292,
@@ -2213,7 +2248,7 @@
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
     "plan_sha256": "e17aadae73caaddcbe2b110dcf82a21c89e692fdb35469a95d04389d057ad09f",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 367,
+    "prior_scientific_artifacts_byte_unchanged_count": 405,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -2247,7 +2282,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "68c593f1d12af20378642fa81cee982835cede1d",
+    "scientific_source_head": "5fdddb1ff924de12b38c886999a40662628cc313",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2432,7 +2467,7 @@
       "0276705b3f63bfa5a1ba54f3c671132e802993b0",
       "b640cacb5e404c10d71d6e9503cf34f3dc82a443"
     ],
-    "source_scientific_input_head": "68c593f1d12af20378642fa81cee982835cede1d",
+    "source_scientific_input_head": "695ecb94abcb38590a8f3e37332969ef21e2f24d",
     "additional_source_strategy_correction": [
       {
         "path": "02_REGISTRY/research/A4D_TRACELESS_COMPOUND_JET.md",
@@ -3404,13 +3439,62 @@
       "new_scientific_artifacts": 7,
       "all_44_contracts_and_original_parent_terminals_unchanged": true,
       "next_required_proof": "Derive the actual joint native preparation map/constraint tying the full state, heat, feedback and (q,D,b,m), and evaluate its derivative on (delta lambda,delta mu)=(1,-K/J). This exact direction preserves both forced native marginals and the entire Jones joint table but changes the protected heat price by -1/(beta lambda). If admitted, an independently owned coupled term must supply +1/(beta lambda); if excluded, prove exclusion from that native owner. Fixing t, moving a tuple with unchanged Jones/golden Gram data or invoking M1 uniqueness/naturality cannot supply the missing equation. Do not identify a faithful full Gibbs state with the output of a full-state reversible CPTP AF refinement: the complete channel class has missing rank fraction at least 1/5. Restricted-family channels and unnormalized heat extensions remain possible, with all erased information or added partition modes explicitly retained and priced in any physical implementation. Keep every physical metric/link probe and excluded-direction equation. Own source/Ward, quantitative contrast, native stationarity, curved roots and soundness/recovery remain required; no new action, compensator, free postselection or word/role census. Preserve original #310/#202/#317 and all parent contracts."
+    },
+    "soldered_heat_source": {
+      "date": "2026-10-13",
+      "source_head": "5fdddb1ff924de12b38c886999a40662628cc313",
+      "input_source_head": "695ecb94abcb38590a8f3e37332969ef21e2f24d",
+      "control_input_head": "837619a246878dc618423e1d899613f8bd4e56d5",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md",
+      "program": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_certificate.json",
+      "exact_controls": 405,
+      "executed_mathematical_mutations": 16,
+      "new_Lean_propositions": 20,
+      "actual_owner_axiom_checks": 6,
+      "primary_input_pins": 14,
+      "transitive_D0_source_pins": 50,
+      "fresh_source_dependency_builds": 9,
+      "source_matching_cached_dependencies": 41,
+      "compiler_provenance": "PASS: nine SOURCE modules absent from the cache checkout were freshly compiled in dependency order into an isolated temporary overlay. The remaining 41 D0 modules reuse copied cached artifacts whose cache source files byte-match the separately pinned current SOURCE files. Lean --deps confirms the capsule consumes ArchiveAffineExteriorLink from the overlay; all 50 overlay D0 oleans and the Mathlib.Tactic olean are hashed separately. All prior cache artifact hashes were rechecked unchanged. No fresh rebuild of the 41 matched modules, no cache overwrite and no D0.All claim.",
+      "critical_path_correction": "Physical full-GNS Gibbs preparation is an additional interface, not a necessary input of the owned bootstrap action. The Gibbs matrix is the derived heat derivative weight. Prior full-preparation theorems remain scoped results; their free lambda,mu direction is not assumed admitted by the action.",
+      "actual_homogeneous_symbol": "D_solder(k)^2=(z*Qz)I16; Q=-q+2vv^T/(v^T q^-1 v)",
+      "metric_component_count": 10,
+      "independent_observer_component_count": 4,
+      "joint_positive_symbol_rank": 10,
+      "joint_positive_symbol_kernel_dimension": 4,
+      "scalar_price_differential_kernel_dimension_at_rest": 13,
+      "full_zero_mode_count": 16,
+      "flat_L4_beta_log2_over32_packed_source": [
+        "-64/3",
+        "128/9",
+        "128/9",
+        "128/9",
+        "64/3",
+        "128/9",
+        "128/9",
+        "64/3",
+        "128/9",
+        "64/3"
+      ],
+      "all_L_affine_Q_heat_Hessian": "positive definite by eleven affinely spanning modes for every L>=2,beta>0; nonlinear q Hessian has an additional second jet",
+      "variable_solder_boundary": "Stored codifferential is not the actual adjoint in the declared counting/rest pairing; exact endpoint commutator and carrier-compatible witness. Required adjoint for supplied positive G is G^-1 d*G.",
+      "bootstrap_heat_identification": "OPEN; no new equation installed",
+      "physical_source_Ward_stationarity_curved_roots_GR_closed": false,
+      "new_action_selector_postulate_or_compensator": false,
+      "source_artifact_count": 413,
+      "prior_unchanged_artifacts": 405,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 7,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "next_required_proof": "Derive the actual full-carrier native map X -> (Delta(X),P(X),U(X),G(X)) on the retained (q,D,b,m) tangent. The Gibbs matrix is the derivative weight of the owned heat functional, not a required independent physical preparation. Establish or refute the precise binding of native heat to the existing soldered differential, including its actual moving-pairing adjoint terms; do not silently install its square as a new law. Its homogeneous symbol and all ten metric plus observer derivatives are now explicit. The stored variable-solder codifferential has a certified endpoint adjoint defect even on a carrier-compatible field. The scene feedback polynomial binds a different coarse operator and cannot identify the full carriers by name. Use the same admitted family for feedback, heat, pairing, source and refinement; then native stationarity, Ward, quantitative transfer, curved roots and soundness/recovery. Preserve #310/#202/#317 and every parent contract; no arbitrary Gibbs selector, new action, role/word census or source fitting."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "a235dbbc05631335498cda376671af6c2772dc41",
+  "previous_source_head": "695ecb94abcb38590a8f3e37332969ef21e2f24d",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3509,10 +3593,11 @@
     "Fixed autonomous scene record: exact nine-primitive addressed forward word with an internal degree-oriented edge switch, all 718 histories and complete 22976-coordinate carrier. Full endpoint/matter feedback p^2 I+p(2 Delta-Delta^2), complete one/two-tick prices, old-carrier Gram obstruction, 38253 controls, ten mathematical mutations and nine generic compiled propositions. Physical common preparation, addressing, tangent/source and refinement remain open.",
     "Full actual AF recording: minimum three inclusions in the declared covariant four-copy GNS class, explicit native six-level operator algebra and full regular feedback multiplicities. 21396 exact controls, eleven mathematical mutants, fourteen generic compiled propositions. Exact delta/prepared-corner bridge; physical preparation, coherent refinement, joint source and all original terminals remain open.",
     "All-level adjacent Jones overlap, owned golden full-corner transport, explicit compatible conjugated refinement, retained previous-right record, specific prepared central-label record and complete both-marginal correlation interval/owned thermal derivative; physical admission remains open.",
-    "Complete invariant faithful two-marginal protected-ground state class; exact correlation-preserving heat direction and full Jones-feedback stationarity obstruction; complete reversible CPTP refinement rank deficit with restricted-family and unnormalized-heat countercontrols. Physical native admission remains open."
+    "Complete invariant faithful two-marginal protected-ground state class; exact correlation-preserving heat direction and full Jones-feedback stationarity obstruction; complete reversible CPTP refinement rank deficit with restricted-family and unnormalized-heat countercontrols. Physical native admission remains open.",
+    "Actual homogeneous soldered-CAR square and complete ten-component metric plus observer heat derivative; exact moving-adjoint defect; physical Gibbs-preparation interface removed from mandatory action input. Full native heat binding and parent terminals remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "695ecb94abcb38590a8f3e37332969ef21e2f24d",
+  "source_head": "5fdddb1ff924de12b38c886999a40662628cc313",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
   "source_pr": 310
