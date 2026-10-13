@@ -1,0 +1,54 @@
+def D0.Geometry.roleCode : D0.Role → Fin 4 :=
+fun r => ⟨2 * ↑r.1 + ↑r.2, ⋯⟩
+def D0.Geometry.roleOrderIndex : D0.Role → ℕ :=
+fun r => if r = D0.A then 0 else if r = D0.B then 1 else if r = D0.C then 2 else 3
+def D0.Geometry.archiveFockExteriorBasis : Module.Basis D0.Geometry.ArchiveFockState ℝ D0.Geometry.RoleExterior :=
+D0.Geometry.archiveRoleBasis.ExteriorAlgebra.reindex D0.Geometry.archiveFockSupportEquiv.symm
+def D0.Geometry.archiveExteriorCreator : D0.Geometry.RoleSpace →
+  (D0.Geometry.ArchiveFockState → ℝ) → D0.Geometry.ArchiveFockState → ℝ :=
+fun v ψ => D0.Geometry.archiveFockExteriorEquiv.symm ((ExteriorAlgebra.ι ℝ) v * D0.Geometry.archiveFockExteriorEquiv ψ)
+def D0.Geometry.archiveExteriorContraction : Module.Dual ℝ D0.Geometry.RoleSpace →
+  (D0.Geometry.ArchiveFockState → ℝ) →ₗ[ℝ] D0.Geometry.ArchiveFockState → ℝ :=
+fun α =>
+  ↑D0.Geometry.archiveFockExteriorEquiv.symm ∘ₗ CliffordAlgebra.contractLeft α ∘ₗ ↑D0.Geometry.archiveFockExteriorEquiv
+D0.Geometry.forward_backward_adjoint (N : ℕ) (r : D0.Role) (f g : D0.Geometry.ArchiveRolePhaseGroup N → ℝ) :
+  ∑ x, D0.Geometry.forwardDifference N r f x * g x = -∑ x, f x * D0.Geometry.backwardDifference N r g x
+D0.Geometry.createAction_adjoint (N : ℕ) (r : D0.Role) (ψ φ : D0.Geometry.ArchiveCochain N) :
+  D0.Geometry.cochainPairing N (D0.Geometry.createAction N r ψ) φ =
+    D0.Geometry.cochainPairing N ψ (D0.Geometry.annihilateAction N r φ)
+D0.Geometry.observer_contraction_adjoint_covariant (L : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace)
+  (n : D0.Geometry.RoleVector) (hL : D0.Geometry.preservesObserverForm L n) (v : D0.Geometry.RoleSpace)
+  (ψ : D0.Geometry.ArchiveFockState → ℝ) :
+  (D0.Geometry.archiveExteriorContraction (D0.Geometry.observerFlat n v)) ψ =
+    (D0.Geometry.archiveExteriorFrameLift L.symm)
+      ((D0.Geometry.archiveExteriorContraction (D0.Geometry.observerFlat (L n) (L v)))
+        ((D0.Geometry.archiveExteriorFrameLift L) ψ))
+'D0.Research.CurvedSolderedHeat.coefficient_shift_adjoint_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CurvedSolderedHeat.coefficient_shift_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.diagonal_shift_commutes_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.warped_two_factor_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.warped_full_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.projection_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.projection_variance_posSemidef' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CurvedSolderedHeat.projection_variance_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.projection_variance_trace_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CurvedSolderedHeat.sign_conjugacy_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.sign_conjugacy_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.sign_conjugacy_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.orderPhaseInt_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.orderPhaseInt_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.actual_role_orders' depends on axioms: [propext, Quot.sound]
+'D0.Research.CurvedSolderedHeat.actual_integer_order_conjugacy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CurvedSolderedHeat.actual_order_sign_involution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CurvedSolderedHeat.actual_real_order_conjugacy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.forward_backward_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.createAction_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.observer_contraction_adjoint_covariant' depends on axioms: [propext, Classical.choice, Quot.sound]

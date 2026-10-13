@@ -4203,3 +4203,52 @@ polynomial already binds its own coarse operator, but does not equate three
 different heat carriers. Source/Ward, quantitative transfer, stationarity,
 curved roots and soundness/recovery remain open. No new physical action,
 selector, postulate, parent retirement or word/role census is introduced.
+
+## Curved surviving operator class and full-grade heat (2026-10-13)
+
+[The curved soldered proof](A4D_NATIVE_CURVED_SOLDERED_HEAT.md) classifies
+the actual stored Dirac's selfadjoint sector for the rest/counting pairing
+and flat internal links: each solder row must be constant along its own
+axis. The result covers every L>=2, including the two-site case. This sector
+contains F=diag(1,-a(x0),-1,-1) with a=2+cos(2 pi t), uniform nondegeneracy
+and a curved metric readout. The dressed coordinate links remain distinct
+from internal affine links and from the separately chosen identity row pull.
+Their pure-gauge holonomy does not equal the metric's Levi-Civita curvature.
+
+The full square includes [K0,M_a]K1. Its scalar compression is the actual
+four-role conductance Laplacian for L>=3, with the doubled undirected-edge
+normalization explicitly retained at L=2. The scalar-to-two-form block B
+has exact norm squared 2L^7 sum_t(a(t+1)-a(t))^2, which is nonzero precisely
+for nonconstant a. Scalar strong Jensen gives a strict gap between the
+compressed full heat and heat of the scalar compression at every beta>0,
+with lower bound beta^2 exp(-beta M0)||B||^2/2. Thus scalar-only heat loses
+a real coupling even when the actual stored operator is selfadjoint.
+
+At frequency k with m zero coordinates, the metric tangent image has rank
+m(9-m)/2 and raw kernel m(m-1)/2. The homogeneous ten-component result is
+retained; it cannot be extended to arbitrary local probes in this restricted
+interface. The whole positive diagonal conformal family on the fixed flat
+graph also fails to reproduce a nonconstant warped compression. Neither
+statement classifies all possible native connections/pairings or excludes
+a controlled continuum reduction.
+
+The actual exterior order A,C,D,B is related to the Jordan-Wigner A,B,C,D
+order by the explicit wedge sign (-1)^(B(C+D)). Its entrywise integer and
+real CAR conversion and projection-variance kernel are compiled; analytic
+all-level statements retain their stated proof status.
+
+The user's older delta notes are already realized by the existing Fibonacci
+record proof: three inclusions, hence four levels including the input, are
+the minimum for that covariant full-record class at every initial level.
+Its corner weight is 4delta0^2 and two-tick feedback is 8delta0; their sum is
+one. Q(D)=phi^(D-4) supplies an exact normalization, not a separate dynamical
+threshold. The scalar equations A,B,C,D are redundant and the ratios delta0,
+2delta0 and phi^-1 belong to different readouts. These existing results are
+reused, not replaced by another tower census.
+
+The next native heat/feedback/pairing map must preserve the full-grade
+coupling or bound its actual removal under refinement. Its admitted tangent
+must supply the missing local metric directions, with the genuine pairing
+and link variations retained. No bootstrap binding, source/Ward, joint
+on-shell curved solution, contrast transfer or soundness/recovery is inferred
+from this kinematic construction. Original #310/#202/#317 remain open.
