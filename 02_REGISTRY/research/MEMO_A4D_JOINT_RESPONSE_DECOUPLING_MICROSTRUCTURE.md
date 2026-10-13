@@ -3994,3 +3994,53 @@ capacity/allocation law, probe coverage and stationarity must be derived
 or classified. The exact word is not shown uniquely selected, and its
 price is not a stress tensor. No new action, source prescription, CORE
 owner, parent terminal, source/Ward, curved root or GR closure is asserted.
+
+## Full golden recording in the actual Fibonacci tower (2026-10-13)
+
+[The constructive refinement proof](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md)
+supplies an active recording component where passive hereditary pullback
+had no new-detail amplitude. In the declared class of four-copy GNS
+isometries preserving the actual inclusion and covariant under all old
+unitary coordinate conjugations, three AF inclusions are necessary and
+sufficient. The fixed dimensions at distances 0,1,2 are 2,3,7, below the
+eight domain fixed directions; at distance 3 an explicit old-bimodule
+four-frame works for every n. This is four levels including the input.
+It does not follow from four independent golden equations: the two Vieta
+equations already imply both quadratic equations in the supplied notes.
+
+The actual recorded golden operator gives WJx=aJx+pV3x. Its new-detail
+norm is p^2 times the old norm, while its full norm and reversibility are
+preserved. Every complementary direction is retained. By concatenating
+an actual three-step row path with a reversed three-step column path,
+the complete old-right-module operator algebra is explicitly identified
+with A_(n+6). This is a native matrix-algebra representation, not yet
+admission of its preparation or physical actuation.
+
+Full regular multiplicities change the two-tick determinant to
+(1-zL)^d_(n+3), L=4p^3, from the smaller working-module exponent d_n.
+At n=0 the exponent is 34 rather than 2. The prepared corner has forced
+trace p^6, and an unprepared tracial cyclic state cannot raise this
+probability by unitary left evolution. The exact links to the old notes
+are 2delta0=p^3, p^6=4delta0^2 and L=8delta0. Q(D)=phi^(D-4) makes
+Q(4)=1 a scalar normalization, not a spacetime-dimension theorem.
+
+Tensor composition with the preceding complete scene processor retains
+all controller sectors and gives F=I-(I-F_AF) tensor (I-F_scene). The
+two-tick rank is 792*d_(n+3); all six nonconstant spectral factors and
+ambient unit factors are recorded. It is the complete feedback component,
+not the full heat/bootstrap action or its intrinsic metric source.
+
+Evidence: 21396 exact controls, eleven mathematical negative controls,
+all old matrix units at levels 0,1,2, full native block reconstruction and
+path bijections. Fourteen generic Lean propositions and the actual gate
+owner compile with standard axioms, six compiler input pins and sixteen
+primary/prior source pins. The group classification and full AF/scene
+binding retain their stated analytic/certificate status.
+
+The next common-preparation obligation is the physically admitted corner
+preparation and execution with all failed records and price retained,
+coherent actual refinement, and the same (q,D,b,m) readout/tangent. The
+separate level frames are not a derived clock or growth law. Probe
+coverage, heat, own source/Ward, stationarity, curved roots and G1-G4
+remain open. No new physical postulate, supported owner or parent closure
+is introduced; the original fixed-source/raw-owner terminal is preserved.
