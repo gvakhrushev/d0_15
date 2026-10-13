@@ -3,10 +3,37 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`074b4223c0cae4aa5b1ad379dcd0a78930da1179`, following
-`4b25867dff1c120c21cdaf52b6398c729e21072c`.
+`8a21b7e52185d2d6375a6647874c867ff9147d8d`, following
+`074b4223c0cae4aa5b1ad379dcd0a78930da1179`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Full correlated current and fixed-beta source, 2026-10-13.**
+[The correlated-current proof](A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md)
+exposes the proper spatial covariance lost in the old system-marginal Pauli
+reading. The full complex growing-spectator-isometry class cannot remain in
+the fresh P1/top chart with one distinguished scalar line through eight ticks;
+other archive field readings are not excluded.
+
+Actual full CAR correlations supply a constructive jointly covariant causal
+current. Its existing golden whole-blank orbit is uniformly timelike for
+all ticks, with odd norm p^6 and a genuine current derivative4p^3. On the
+homogeneous actual stored full-sixteen operator its heat derivative obeys
+Hprime>Kprime/486000 at fixed beta=log(2), uniformly for every L>=2.
+The full two-equal-current-tick feedback pencil(1-4zp^3)^(4L^4) is constant on this curve.
+The distinct genuine misaligned chronology retains its own nonconstant price.
+
+All 448 scientific artifacts match remote SOURCE: 440 prior files unchanged,
+one memo appended, seven new. Immutable replay passes 382
+exact checks and 11 negative controls;
+14 new narrow Lean kernels and
+4 actual owner axiom closures are retained,
+with actual printed propositions and source/object/runtime provenance checked.
+All 44 graph contracts and the dated preflight plan remain unchanged.
+The next arrow is physical joint admission of an owned full-correlation
+interaction and its complete source/refinement. Physical source/Ward,
+stationarity, transfer, curved joint roots, soundness/recovery and GR remain
+open. CI and independent CONTROL review remain acceptance gates.
 
 **Retained reference, native history code and preparation domain, 2026-10-13.**
 [The reference/memory proof](A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md)

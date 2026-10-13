@@ -4397,3 +4397,58 @@ covector pulls back to the field source. Reference retention alone and
 whole-frame transport cannot replace this derivative. Physical source/Ward,
 stationarity, quantitative contrast, curved joint roots, soundness/recovery,
 positive GR and all original parent terminals remain open.
+
+## Full correlations, covariant current and a fixed-beta source (2026-10-13)
+
+[The correlated-current transition proof](A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md)
+tests the actual next interaction. The prior system-marginal Pauli reading
+loses spatial covariance: proper rotations act entirely on the traced-out
+spectators. The complete marginal-only equivariant vector class is parallel
+to the retained observer. A positive physical reading must retain full
+correlations or establish an additional owned reference argument.
+
+The previous scalar-preserving five-tick bound is strengthened. For every
+complex spectator isometry, including growing dimensions, the apparatus
+Gram evolves by the fixed four-row gate alone. In the specified current
+P1/top chart with one distinguished scalar direction, its nonnegative
+observable obeys an exact five-even-point recurrence with strictly positive
+coefficients. It cannot remain in that chart through eight ticks. Multiple
+independent scalar archive slots with another field reading are outside the
+theorem. The result forces an actual change of apparatus correlations or a
+different explicitly owned retained-orientation interface; passive archive
+growth alone does not repair this chart.
+
+The complete native CAR supplies a constructive alternative reading.
+The product of the selfadjoint temporal creator-plus-adjoint and the
+skew-adjoint spatial creator-minus-adjoint is selfadjoint and obeys the
+spatial Clifford relation. Its normalized full-state expectation is a
+basis-independent future-causal current, jointly covariant with the retained
+observer, physical form and full matter. This is an explicit reading of
+owned composites; physical selection and admission are not inferred.
+
+On the existing whole-blank golden component the current is e0 at every
+even tick and e0+2ap e1 at every odd tick. The latter has Lorentz norm p^6,
+and its observer Gram eigenvalues remain between 1/80 and 80. The all-time
+proof uses the actual invariant eight-mask space, not a sampled orbit. A
+genuine normalized matter curve remains timelike at every tick on a fixed
+open interval and has nonzero current derivative 4p^3.
+
+At homogeneous F=eta and identity links, the resulting constant observer
+satisfies the actual stored-operator adjoint criterion on all sixteen grades.
+Its complete Fourier heat derivative obeys H'(0)>K'/486000>0 at the fixed
+beta=log(2), for every L>=2. The two equal current-observer feedback ticks
+have constant fibre pencil (1-4zp^3)^4 and complete periodic-carrier pencil
+(1-4zp^3)^(4L^4). Thus the specified heat-plus-feedback
+interface has a nonzero matter-direction source at the golden point. Any
+remaining price must cancel it through its own jointly admitted equations.
+This static feedback experiment does not replace the nonconstant genuine
+misaligned chronology; that experiment retains its separate derivative.
+
+Narrow Lean proves the named Gram, Clifford/Cauchy, scalar chart, genuine
+current derivative and rational heat-normalization kernels. The exact
+checker binds actual printed propositions/axioms, all dependency source and
+object pins, and rejects falsified receipts. The complete group, orbit and
+all-L Fourier bounds retain their analytic scope. Native joint operation
+admission, complete field source/Ward, stationarity, quantitative contrast,
+curved joint roots, soundness/recovery, positive GR and original
+#310/#202/#317 remain open.

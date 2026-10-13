@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "fa0b7d5576953d99032746d487b9dfbfb0d39565fd4e17960cb37af1b961d9c3",
-      "source_blob": "ed2e16929d6340f50622360c48f9899391fbac33"
+      "sha256": "cfb55b8b527b966bf903023f98afebba498233640f8e6007a096a39fa8da500a",
+      "source_blob": "d1b81ead3580114e715fcc043455afedace1a433"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -2206,6 +2206,41 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation_lean_output.txt",
       "sha256": "5c7a53dafece327eb72bcc8ad07be9e6d54f399e12514a9aba854871034ee370",
       "source_blob": "8216aa37c6ff26681720a4c8ac9787fc6bcaf99f"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md",
+      "sha256": "862e885a989d1ecdf71c0f740f5cc7b420a84dc6bdcd3119c122a2987efa439c",
+      "source_blob": "8c7fddea2b9695862e4ae3ba79913521d70c3e99"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py",
+      "sha256": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
+      "source_blob": "b38c64dba84aac6d844d1dd719b39c18d7aeae8b"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_check.py",
+      "sha256": "a097c7061f3b7340b9e876d792539df1f437de490350ecb580a69013882102ab",
+      "source_blob": "0fbf11511800157151ea266742cf2b82cb6c39ed"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_certificate.json",
+      "sha256": "c0600101eb1f2e5811f40f951137ae6ff1aed9baee40ef35af5d2a8649b2d89f",
+      "source_blob": "6036890b9b7230d36c3fc8a2acc8c4b19763b860"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.lean",
+      "sha256": "c382e6317b6d302e6b490ab91edcb7bcb88146fe4c10f90b0d4f614af4ff763d",
+      "source_blob": "abc1fbf8c85b58ee7e302aa40ac5a0b93ef5358a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_results.json",
+      "sha256": "eb1343a64c5630fb3167eaa8b4f36595bd84f53e3a0b918e449af1bf5c76067e",
+      "source_blob": "a1aab6b46ea2ce98982b8f41c92d335ddbd9493c"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_output.txt",
+      "sha256": "8f9b4ae1e5270abfb93d1032d55bda73dfa3f8433722551385afa43aeccd555a",
+      "source_blob": "c2dd5341f1720923aacd41ba5fa3a4b87f2ee85b"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -3756,13 +3791,44 @@
       "new_scientific_artifacts": 7,
       "all_44_contracts_and_original_parent_terminals_unchanged": true,
       "next_required_proof": "Derive the owned joint interaction of retained reference, current fields and represented readout, with its full heat/feedback binding and compatible refinement. The actual Jones operator supplies the exact p^3-overlap history code, but universal pure product programming of the two distinct full gates requires orthogonal controller states. Whole-apparatus endpoint transports telescope and have zero feedback source; the proposed self-conditioned whole-blank bridge has an empty one-tick fibre, and its scalar-preserving orientation-retained class fails by five ticks. A constructive golden whole-blank Pauli component stays uniformly faithful for every tick but lies outside the old P1/top-grade field chart. The fixed native AF bimodule pairing is unique; the full density/source fibre remains. All positive site-local grade-orthogonal Grams preserving the actual point/grade readout fail exact adjoint refinement. Use the actual owned interactions and joint admissible curves to pull back the full covector; retain complete reaction/complement sources and genuine chronological misalignment. Then prove physical source/Ward, native stationarity, contrast, curved joint roots and soundness/recovery. Preserve original #310/#202/#317 and all44 contracts; no new action, selector, postulate or role/word census."
+    },
+    "correlated_current_transition": {
+      "date": "2026-10-13",
+      "source_head": "8a21b7e52185d2d6375a6647874c867ff9147d8d",
+      "input_source_head": "074b4223c0cae4aa5b1ad379dcd0a78930da1179",
+      "control_input_head": "a17d12cb978a318d17cd37784b39fca8866e5b9d",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md",
+      "program": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_certificate.json",
+      "exact_controls": 382,
+      "executed_mathematical_mutations": 11,
+      "new_Lean_propositions": 14,
+      "actual_owner_axiom_checks": 4,
+      "source_input_pins": 64,
+      "marginal_readout_obstruction": "Complete proper-SO3 stabilizer obstruction for observer/geometry/system-marginal-only vector readings; standard fixed Pauli substitution fails exact physical spatial covariance. Full correlations or additional owned arguments are required.",
+      "passive_archive_boundary": "Every complex growing spectator-isometry transport preserving the specified fresh P1/top chart with one distinguished scalar direction fails by eight ticks. Multiple independent scalar archive slots/different readings are outside this chart.",
+      "constructive_full_current": "Actual creator-plus-adjoint temporal operator times creator-minus-adjoint spatial operator supplies selfadjoint Clifford composites; normalized full-matter reading is future causal and jointly covariant with retained reference/form/matter.",
+      "all_time_positive_component": "Existing whole-blank golden eight-mask invariant space gives even current e0 and odd current e0+2ap e1, odd Lorentz norm p^6 and pairing eigenvalues between1/80 and80, uniformly all ticks. A genuine normalized open curve has derivative4p^3.",
+      "actual_heat_binding": "At homogeneous F=eta/identity links, the observer satisfies actual stored full16 adjoint criterion. All sites/grades and transverse modes remain in its exact Fourier square.",
+      "uniform_source": "Full heat derivative Hprime>Kprime/486000>0 at fixed beta=log2 for every L>=2. Analytic full Fourier/Gaussian bound, exact rational steps and literal finite matrix controls; no mesh-dependent temperature.",
+      "complete_feedback_scope": "Two equal current-observer ticks have complete periodic pencil(1-4zp^3)^(4L^4) with zero derivative. The genuine misaligned chronology remains a separate nonconstant experiment; not substituted or discarded.",
+      "provenance": "14 new narrow Lean kernels and4 actual owner axiom closures, 12 diagnostic checks and11 full definition/proposition prints, complete40D0 source/object closure plus48object pins and unchanged original cache. Actual output axiom/statement sets and receipt mutations checked.",
+      "proof_status": "Named matrix/Clifford/Cauchy/positive-chart/current derivative/rational source-normalization kernels Lean-proved. Complete-group, all-time orbit, all-L Fourier estimates analytic with exact finite controls. Physical admission/selection of constructed reading remains open.",
+      "physical_source_Ward_stationarity_curved_roots_GR_closed": false,
+      "new_action_selector_postulate_or_compensator": false,
+      "source_artifact_count": 448,
+      "prior_unchanged_artifacts": 440,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 7,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "next_required_proof": "Derive an owned full-correlation interaction on actual jointly admitted native states, with its represented readout, complete heat/feedback binding and compatible refinement. The old marginal-only Pauli vector loses proper spatial covariance. Passive spectator isometries, including archive growth, cannot remain in the fresh P1/top chart with one distinguished scalar line through eight ticks; different archive readings are outside that class. The actual full CAR composites give a joint-covariant causal current and a uniformly timelike golden orbit. Its exact homogeneous stored-operator heat derivative is strictly positive at fixed beta=log(2) uniformly in every L>=2; two equal current-observer record ticks do not cancel it. A physical interaction must retain its full joint source or derive the opposite response from its own equations; the distinct nonconstant chronological experiment must be included if used. Physical admission/selection of this reading, complete field source/Ward, native stationarity, quantitative contrast, curved joint roots and soundness/recovery remain required. Preserve original #310/#202/#317 and all44 contracts; no new action, selector, postulate or role/word census."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "4b25867dff1c120c21cdaf52b6398c729e21072c",
+  "previous_source_head": "074b4223c0cae4aa5b1ad379dcd0a78930da1179",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3866,10 +3932,11 @@
     "Complete own-axis selfadjoint sector of the actual stored soldered operator; explicit uniformly nondegenerate curved readout; full-grade scalar/two-form coupling and strict all-beta compressed heat gap; restricted local tangent ranks; exact native conductance normalization and full positive conformal-family boundary. Golden four-level apparatus reused with its true representation scope. No heat identification, on-shell, source/Ward, continuum or GR promotion.",
     "Complete full16 stored Lorentz/observer adjoint class and GL exception; all24 connection directions and exact nonlinear metric image; nonintegrable joint jet; full positive-pairing/projector/unitary tangent and bootstrap covector with Gram contribution and internal Ward. Exact golden four-level scope retained. Native binding, physical source/Ward, roots and GR remain open.",
     "Full16 arbitrary-positive diagonal pairing obstruction for the actual scaled cochain refinement; exact compression reaction and moving-Gram source/internal Ward; complete nonlocal repair with thermally essential complement modulus; complete site-density extension and its metric/image boundary. Native preparation, quantitative source transfer, physical Ward, roots and GR remain open.",
-    "Exact actual Jones history code and universal controller condition; complete native AF bimodule pairing; moving-W endpoint source and own-chart transition boundaries; all-time faithful golden Pauli component; full local-grade Gram adjoint obstruction; existing four-level/delta cross-owner bridge. Native joint interaction, field source/Ward, stationarity, contrast, curved roots and GR remain open."
+    "Exact actual Jones history code and universal controller condition; complete native AF bimodule pairing; moving-W endpoint source and own-chart transition boundaries; all-time faithful golden Pauli component; full local-grade Gram adjoint obstruction; existing four-level/delta cross-owner bridge. Native joint interaction, field source/Ward, stationarity, contrast, curved roots and GR remain open.",
+    "Marginal-only spatial-covariance obstruction; full complex growing-spectator eight-tick chart boundary; constructive correlated CAR current and all-time timelike component; actual homogeneous full16 operator binding and fixed-beta all-L source; full static feedback experiment and strict Lean provenance. Physical admission, complete source/Ward, stationarity, transfer, curved roots and GR remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "074b4223c0cae4aa5b1ad379dcd0a78930da1179",
+  "source_head": "8a21b7e52185d2d6375a6647874c867ff9147d8d",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
   "source_pr": 310
