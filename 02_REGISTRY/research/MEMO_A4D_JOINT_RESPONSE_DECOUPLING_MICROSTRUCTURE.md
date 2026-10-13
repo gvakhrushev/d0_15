@@ -3948,3 +3948,49 @@ tests on 16->81->256->625 actual points, and nine compiled generic Lean
 propositions with standard axioms. The actual gate owner and all transitive
 inputs are pinned. No supported Lean owner, action, selector, physical law,
 task, branch, PR, original terminal or release status is added or retired.
+
+## Fixed autonomous scene record and its full price (2026-10-13)
+
+[The fixed-word construction](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md)
+removes the preceding engine's amplitude-sign test from its repeated
+execution. There is a genuine obstruction on the old carrier: consecutive
+seed inner products are 0 and 4ap^2. A single fixed isometry, including one
+with unchanged auxiliary state, cannot realize both transitions. For
+normalized full states its two-output error is at least ap^2>27/100.
+This does not prohibit nonlinear native laws or a retained changing record.
+
+A literal nine-primitive forward golden/CNOT word supplies that changing
+record. The switch is the intrinsic degree orientation of an actual scene
+edge; controlled reversal retains both directions. One permanent basis-one
+record is also explicit. The whole processor acts on 718 histories, both
+record values and all sixteen matter components, dimension 22976. It
+reproduces the prior orbit after two declared preparation records, without
+an amplitude sign, external iteration input, reset or deleted sector.
+This is a construction in the stated addressed palette; matrix ownership
+alone still does not prove physical addressing or preparation admission.
+
+The original endpoint and matter readouts retain 528 coordinates. Their
+actual compression on the prepared record sector is a*T, with the native
+degree pairing, giving F=p^2*I+p*(2*Delta-Delta^2). This binds the golden
+record to actual scene feedback. The other record sector remains in the
+price. The complete one-tick determinant has degree 528; the full two-tick
+determinant is (1-zL)^184*(1-zL3)^36*(1-zLv)^44, where L=4p^3,
+L3=1-(130p-81)^2 and Lv=1-((854p-531)/11)^2. All ambient unit factors
+remain. Discarding the initially unpopulated record sector instead gives
+(1-zL)^132 and changes the functional.
+
+Evidence: 38253 exact controls, ten executed mathematical negative
+controls, every 64-row gate column and all 528 retained columns at one
+and two ticks, 1024 exact single-pair and eight whole-scene transitions.
+Nine new generic Lean propositions compile with standard axioms only;
+the actual gate owner and six compilation input hashes are checked.
+The entire scene/price binding has separate analytic and exact-certificate
+status. The 18 primary/prior input files are pinned to SOURCE 68c593f1.
+
+The next arrow is the independently admitted common preparation and its
+full constrained metric/link/refinement variation for this same processor
+and full price. Its supplied addressing and initial record, physical
+capacity/allocation law, probe coverage and stationarity must be derived
+or classified. The exact word is not shown uniquely selected, and its
+price is not a stress tensor. No new action, source prescription, CORE
+owner, parent terminal, source/Ward, curved root or GR closure is asserted.
