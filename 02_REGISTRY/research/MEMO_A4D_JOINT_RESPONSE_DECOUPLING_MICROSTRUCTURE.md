@@ -3745,3 +3745,100 @@ full native preparation, own matter/source/Ward, curved Euler root,
 soundness/recovery or positive GR. No word/scene/numbering census, new
 phase law/action, Lean-owner change or parent terminal promotion is made.
 The next computation is the actual joint preparation jet in this formula.
+
+## Native sixteen-component matter to observer pairing (2026-10-12)
+
+[The native matter component](A4D_NATIVE_MATTER_OBSERVER_PAIRING.md)
+continues that computation on the actual complete `(q,D,b,m)` quotient.
+For a fixed real linear vector reading of the exterior fibre, full O(1,3)
+equivariance forces the grade-one projection up to scale; SO+(1,3) has the
+additional grade-three axial reading. On the nonempty open sector
+`k=(m^1)^T q^-1 m^1>0`, the scale cancels and the existing positive observer
+pairing gives `Q=-q+2m^1(m^1)^T/k`. Its inverse is the transported owned
+observer metric, and `det Q=-det q`. The original sixteen-component field
+is retained; neither a four-coordinate apparatus nor zero matter replaces it.
+
+The full joint derivative is computed in all ten symmetric q slots and all
+sixteen m slots. At the rest base the time diagonal is `dot Q_AA=V_AA`,
+the time/spatial entries are `dot Q_Ai=-V_Ai+2 dot m^1_i`, and spatial
+entries are `dot Q_ij=-V_ij`. Fixed-q matter motion has pairing rank three;
+the complete 26-dimensional q/m chart has rank ten. Its readout kernels are
+not declared gauge. The exact raw lift and the transported-center dot-B
+terms are retained. Generic Lean `HasDerivAt` propositions check the norm
+contraction and rank-one entry calculus; no supported CORE owner is added.
+
+For the previously studied positive compound heat candidate, all five
+degrees and the moving density are differentiated. The complete operator
+jet retains `dot d` and `dot delta=W^-1 dot d^T W+delta S-S delta`.
+The exact L=2 forward-stencil witness checks all 256 cochains and every
+q/m direction: spatial matter motion gives a strictly nonzero heat term
+even at fixed q. A metric dilation still gives the positive radial heat
+response. The same-path remaining price and native admission remain open.
+
+Evidence: 3068 exact controls, 19 executed mathematical mutations, fourteen
+consumed-file pins matching published SOURCE `e73cd37f`, and a clean
+generic Lean compilation with five new propositions, two consumed owners
+and 38 transitive project/toolchain pins. The immutable default ledger
+replay, repository/work/protocol, claim-strength, formalization-debt,
+generated-view, no-sorry and artifact-freshness checks pass. This capsule is
+outside the supported import closure; its compilation is not a new D0.All
+build or a machine formalization of the whole analytic Hom classification.
+
+The two concurrent factor/multiplier notes at `e73cd37f` are preserved with
+their stated session/toy status. The continuation checks their proposed
+step on the actual full Hodge binding: the constant anisotropic factor
+path varies both endpoints, has identically zero edge-constraint derivative
+for every multiplier, and has strictly positive exact heat response on all
+256 L=2 cochains. A nonzero derivative along an admitted kinematic tangent
+is not a pure constraint conormal. Native physical path admission, the
+remaining price and source comparison still require their own proof.
+
+Uniqueness is deliberately restricted to the fixed linear vector class.
+An orientation-dressed axial readout lies outside that class; a pure axial
+positive pairing remains full-Lorentz covariant because its sign cancels.
+The exact checker includes these hostile controls. Positivity does not
+select this candidate as the physical heat law, force all matter timelike,
+or choose future orientation. Full native preparation, intrinsic source/
+Ward, corrected roots, soundness/recovery and GR, together with the original
+#310/#202/#317 parent terminals, remain open without lifecycle promotion.
+
+## Literal golden record on the full native Fock fibre (2026-10-12)
+
+[The same-carrier record continuation](A4D_NATIVE_FOCK_RECORD_BINDING.md)
+binds the actual `GoldenCoherentMemory.fullStep`, its price cut and its
+blank-record plane to all sixteen exterior components. The literal tuple
+has scalar commutant for every p!=0. Full O(3) observer stabilizers give
+native irreducible multiplicities two, preventing a pointwise full tuple
+binding from q and the observer alone. The nonzero fourth matter grade
+supplies an existing orientation resource; its spatial Hodge and actual
+CAR creator give a complete `apparatus4 tensor (R+E3)` factorization.
+Every native grade participates. This is a constructed representation,
+not an M1 execution/admission theorem or a number-preserving affine link.
+
+The one-frame feedback determinant is exactly `(1-4zp^3)^4`, with four
+nonzero modes and twelve zero modes retained. Its joint q/m derivative
+at fixed native p,z is zero. State-conditioned chronology cannot be
+identified with that same-frame square without its actual transition and
+endpoint pairing. A fully normalized genuine blank input has timelike
+grade one and nonzero top grade, while the actual full record sends its
+first-grade norm to `(p-4p^2)/10<0`. The causing grade-two and grade-three
+components are retained. A second full-state control retains orientation
+information in grade three while its top grade vanishes. Even a regular
+blank input with output norm p^3>0 changes the positive pairing; the
+original gate is not its endpoint-pairing isometry.
+
+The checker replays 169 exact controls and 15 mathematical mutations.
+Three generic Lean propositions compile cleanly: the literal apparatus
+commutant, p>1/2 and the strict spacelike-output sign. Two actual gate owners
+and six transitive project/toolchain inputs are pinned. The full exterior
+factorization and representation argument remain analytic/exact research;
+no supported CORE owner, action, source, fitted phase or physical law is added.
+
+The next required T0 arrow is the actual closed common preparation and
+joint state/record/metric transition, retaining its orientation memory,
+pairing transport and every full-price argument. The supplied formula or
+an input gate alone does not prove that arrow. A new metric update selected
+to repair the counterexample is not substituted for an owned transition.
+Then evaluate the full chronological price jet and source on its admitted
+tangent, including all excluded directions. G0-G4, positive GR and the
+original #310/#202/#317 terminals remain open under the full closure goal.

@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "13189aa9d31330622176573f9e91993db7058bd6a74381c75d7c2cbd9f5d31aa",
-      "source_blob": "18ea6ca112945484e04a4f1b160d7cf2cb7a45ac"
+      "sha256": "81b6497101a23e60acb086be962df76c8774a30299c00bcb4afaacbd75cdab4e",
+      "source_blob": "7c467f877af61e97ea6aae826c6e24fcb366d4a2"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -1771,6 +1771,76 @@
       "path": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
       "sha256": "77079fb2fa8da001ca259ebef432ae7001a15d18f73cde04b8ba3380b9b1cbcf",
       "source_blob": "90179067ece3dd4959a920029d1dad306a91c5d7"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CONSTRAINT_MULTIPLIER_SOURCE.md",
+      "sha256": "bdc9f5adb152d42c1001ce2c34ab2cd8e4a07e58416552da989ac0d9a7e181c5",
+      "source_blob": "7019ddd5b6ac2c086745f8fed053127832e98e04"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md",
+      "sha256": "d85e57979a61972e641eae24442a776133c429c8696d0948590f6d290a60b045",
+      "source_blob": "88c4a6c71f1e6e39d129552686c99bf42e01f95d"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md",
+      "sha256": "badfe4177ddcd90f9b138419b84afa8f828574c7b7d191df5fec8f266f1130f9",
+      "source_blob": "69928e861d1018e72dbe40dcd2eb61efd4bcd6fb"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAIRING_Q_FACTOR_JET.md",
+      "sha256": "af0b12b8f21436305614e4db3628d4a906d258ee28665fe6e38d60c70a750f61",
+      "source_blob": "7d3988a20e0977534f7324c52ab5816482957113"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fock_record_binding.lean",
+      "sha256": "77a9fbf29ebf1868bd3025873a1d9c35cb42c50b4699b239351f17b5b0ce3326",
+      "source_blob": "0c31a2e2cc1c32c11a8a9680e10047a7cb3a097f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_certificate.json",
+      "sha256": "8cba34862bf6af48c8c49d75c5e3a5a2a80948f9f0bf2e1818c42f43b370a238",
+      "source_blob": "d4c2b070c4bb6303671791bfa50c0cb5ca7137c6"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py",
+      "sha256": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078",
+      "source_blob": "73569597055f577d9819990de4c684365b87bd6c"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_output.txt",
+      "sha256": "8b6526036286f72c1fce08a5682774723541090cce9ffe9af1d75d5580c597ca",
+      "source_blob": "ffc795f5093f34b9ad906392925277a08f3be333"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_results.json",
+      "sha256": "4c28dd449b844e5a8332d56d457c2bbcd83853069563542dc12f0238439510a8",
+      "source_blob": "eb0c8c1b3df857b329c4c47204c2f77c7c6251f9"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_matter_observer_pairing.lean",
+      "sha256": "0186b1e2d0f33e253649d77080d80bd804fc6b6d7d1efe10ccf0def40b09aed9",
+      "source_blob": "8c0e77d69a46d04df3afeae7685b6c88e8541cad"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_matter_observer_pairing_certificate.json",
+      "sha256": "da99029a1c1421848c1b21692f202c38cac513f61a4bbbc1278f708bcc677e50",
+      "source_blob": "904610aaa59cff097a5817c53fb892ce769a9f2c"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_matter_observer_pairing_check.py",
+      "sha256": "846bfd661416f67653417768c4f0f310bb9aa2a24d4ebe36181577400af949bd",
+      "source_blob": "56e2c6233b06bcbc6a760c6c9472011e1180c5cd"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_matter_observer_pairing_output.txt",
+      "sha256": "0db6811929b7952aa8fa37a77b8f133d3b4463fbf584620e439df55e5755b8be",
+      "source_blob": "2d751eedcdb8dc75709fcd3b969286b1ed220d34"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_matter_observer_pairing_results.json",
+      "sha256": "a94e3c849ce15bc3dc035d23c764808d1967c258f2a94b567b995c9d0cf620e2",
+      "source_blob": "ce979b3accf8aa2c32338a27f1b2ec950376be70"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -1818,7 +1888,7 @@
     "control_input_head": "84e16c8bdfe79fcca52803d428511832efbbf3ac",
     "date": "2026-10-09",
     "finite_preflight_certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json",
-    "finite_preflight_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
+    "finite_preflight_certificate_sha256": "ac7567259c1e610c4d5db3c092749cfdb669a417b066f0923f534db11d1e527c",
     "finite_preflight_exact_controls": 292,
     "full_price_transition_precheck": {
       "actual_archive_transition_is_literal_replication_proved": false,
@@ -1902,7 +1972,7 @@
       "status": "OWNER_REVALIDATION_AND_STRATEGY_UPDATE_NOT_A_NEW_NATIVE_THEOREM"
     },
     "no_new_task_branch_action_selector_postulate_or_self_merge": true,
-    "observed_source_strategy_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
+    "observed_source_strategy_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
     "operator_first_metric_refinement": {
       "GR_G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
       "actual_zero_fiber_lower_bound": "K-L+1",
@@ -1951,9 +2021,9 @@
     },
     "parent_graph_and_terminals_unchanged": true,
     "plan": "02_REGISTRY/research/D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md",
-    "plan_sha256": "df9c8b5131d210a1d557bf23ddac7f1a29f5254c382bd5a8acc84e990f71eff9",
+    "plan_sha256": "e17aadae73caaddcbe2b110dcf82a21c89e692fdb35469a95d04389d057ad09f",
     "prepared_source_verified_remote": true,
-    "prior_scientific_artifacts_byte_unchanged_count": 349,
+    "prior_scientific_artifacts_byte_unchanged_count": 353,
     "relational_preparation_revision": {
       "all_original_44_contracts_and_parent_terminals_preserved": true,
       "control_input_head": "ad05c8f4632c881948427581cc439d87113cb681",
@@ -1987,7 +2057,7 @@
       "supersedes_prior_graph_only_preparation_requirement": true
     },
     "scientific_artifact_intake_and_source_SHA_unchanged": false,
-    "scientific_source_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
+    "scientific_source_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
     "shared_scene_price_source": {
       "balanced_negative_second_variation_dimension": 296,
       "binary_passport_scene_covector_and_finite_contrasts_zero_at_fixed_beta_z": true,
@@ -2172,7 +2242,7 @@
       "0276705b3f63bfa5a1ba54f3c671132e802993b0",
       "b640cacb5e404c10d71d6e9503cf34f3dc82a443"
     ],
-    "source_scientific_input_head": "5a4c5eacec603d04b2b5e6e73ce9ba2aab8d119d",
+    "source_scientific_input_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
     "additional_source_strategy_correction": [
       {
         "path": "02_REGISTRY/research/A4D_TRACELESS_COMPOUND_JET.md",
@@ -2887,13 +2957,63 @@
       "next_required_proof": "Derive the independently admitted common preparation and its constrained full-price jet on (q,D,b,m), including the actual observer/matter lift and any extra term. Fixed-gate frame/readout transport and bounded recorded-observer jets cannot provide the required order-one trace-free compensator in this Hodge binding. Evaluate the actual native diagonal remainder/eigenphase covector; do not assign it from rho0 or open a word, archive, numbering or adjacent compatible-spectrum census.",
       "existing_input_owner_added": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
       "dependency_intake_note": "Previously published finite-probe rho0 owner copied after strict CONTROL replay identified its absent file. Source proof/certificate bytes and scientific verdict unchanged; expected results were not regenerated."
+    },
+    "native_matter_pairing_and_full_record": {
+      "date": "2026-10-13",
+      "source_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
+      "previous_source_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
+      "source_guard_run": 38294903505,
+      "source_guard_status": "SUCCESS",
+      "matter_pairing_proof": "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md",
+      "full_record_proof": "02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md",
+      "pairing_exact_controls": 3068,
+      "pairing_mathematical_mutations": 19,
+      "record_exact_controls": 169,
+      "record_mathematical_mutations": 15,
+      "new_generic_Lean_propositions": 8,
+      "new_supported_CORE_owners": 0,
+      "pairing_chart_dimension": 26,
+      "pairing_rank": 10,
+      "literal_record_copies": 4,
+      "actual_blank_input_timelike_output": "(p-4p^2)/10<0",
+      "regular_record_output_changes_pairing": true,
+      "native_endpoint_pairing_transport_derived": false,
+      "orientation_resource_is_existing_top_grade_matter": true,
+      "top_grade_or_timelike_domain_is_record_invariant": false,
+      "one_frame_feedback_determinant": "(1-4zp^3)^4",
+      "chronological_updated_record_equals_same_frame_square": false,
+      "native_closed_preparation_physical_heat_source_Ward_or_GR_closed": false,
+      "source_artifact_count": 368,
+      "previous_scientific_artifacts_byte_unchanged": 353,
+      "previous_primary_artifact_updated": 1,
+      "new_published_scientific_artifacts": 14,
+      "concurrent_session_notes_are_source_theorems": false,
+      "all_44_node_contracts_G0_G4_and_original_terminals_unchanged": true,
+      "next_required_proof": "Derive an independently admitted closed common preparation and its actual joint state/record/metric/link transition on (q,D,b,m). The literal full-Fock representation now uses the existing top-grade orientation resource, but a normalized genuine blank input exits the first-grade timelike sector; even a regular output changes the positive pairing without the required endpoint isometry. Retain orientation history, every native component, both endpoint metrics, all link directions and the actual full-price arguments. Derive the chronological operator/pairing jet and intrinsic source from that same owned process. Do not repair the counterexample by a chosen q update, an input restriction declared native by definition, a reset, a fitted eigenphase/source or another compatible spectrum. Probe coverage, refinement, the full equations in excluded directions, source/Ward, contrast, joint roots and G1-G4 remain required."
+    },
+    "preflight_plan_provenance_version": {
+      "date": "2026-10-13",
+      "kind": "APPEND_ONLY_PLAN_PROVENANCE_VERSION_NO_SCIENTIFIC_EXPECTATION_REGENERATION",
+      "original_plan_commit": "8cedfa07f3b23f706bd0179fbaccc26e1d9226d5",
+      "original_plan_sha256": "967664ae0fb8b22817803f83156b265948296a8719c58cb4c41283c66a9ec41a",
+      "current_plan_sha256": "e17aadae73caaddcbe2b110dcf82a21c89e692fdb35469a95d04389d057ad09f",
+      "original_proof_bytes_preserved_as_prefix": true,
+      "checker_bytes_unchanged": true,
+      "all_eight_scientific_input_bytes_unchanged": true,
+      "all_292_expected_controls_scope_and_tangent_rank_values_unchanged": true,
+      "only_changed_certificate_value": "plan_sha256",
+      "old_certificate_sha256": "7d0fae77d7ec8062dc7bca7eded55664a270e7b0ed48eff5af687ac521e9cf89",
+      "new_certificate_sha256": "ac7567259c1e610c4d5db3c092749cfdb669a417b066f0923f534db11d1e527c",
+      "old_failure_run": 38247925483,
+      "failure": "PREFLIGHT_CERTIFICATE_MISMATCH caused solely by appended planning text",
+      "scientific_result_or_T0_status_changed": false
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "1555a67779d42a78108a0525dd5dc1a3a580c136",
+  "previous_source_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -2983,10 +3103,13 @@
     "The literal AF phi-squared heat class admits exact rectangular scene Laplacian compression on the full 233-dimensional carrier, yet every scene isometry has intertwining error at least 13/2, sharp on the full 89-dimensional carrier. Exact heat-semigroup compression is excluded in that entire operator class. The actual 33-vertex graph and all five projectors are checked. Eleven scalar Lean propositions, 121 controls, nine executed mathematical mutants and nineteen false ledgers pass. This corrects the overbroad dimension-based map exclusion; native F, physical admission and T0 remain open. No replacement spectrum is installed.",
     "Recorded-state observer component in an explicit density readout and the retained positive-Hodge heat derivative; physical native admission and common T0 remain open.",
     "Actual composition-admitted scene words realize the weighted return pencil. A full fixed-one-step memory fiber has strictly decreasing whole two-term bootstrap price and a uniform n^(-2/3)/120 central-probe error. Physical common preparation, source and T0 remain open; full action-stack contributions are not inferred.",
-    "Complete word-frequency and prefix minimum bounds with all history/heat retained; uniform p/2 golden clock/readout representation obstruction for real and complex isometries, exact injective-linear obstruction. Physical common preparation and all original parent terminals remain open."
+    "Complete word-frequency and prefix minimum bounds with all history/heat retained; uniform p/2 golden clock/readout representation obstruction for real and complex isometries, exact injective-linear obstruction. Physical common preparation and all original parent terminals remain open.",
+    "Native first-grade matter observer pairing on k>0 with complete 26-slot q/m derivative; broader axial pairing loopholes retained.",
+    "The literal full sixteen-component golden apparatus, its whole blank plane, top-grade orientation resource and exact failure of observer/top-grade sector closure.",
+    "Concurrent session factor/multiplier notes are preserved as unproved interpretations and checked against the actual admissible factor tangent; no source theorem inferred."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "48d762ae66ca5f423cd9e40231aa8067a4d95dba",
+  "source_head": "a7ad40cd3cb5410c2c50332eb4e47c2ed437fc95",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "1555a67779d42a78108a0525dd5dc1a3a580c136",
   "source_pr": 310
