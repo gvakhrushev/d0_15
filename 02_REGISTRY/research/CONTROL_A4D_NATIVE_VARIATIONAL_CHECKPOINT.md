@@ -3,10 +3,41 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`01e8047b1effacdbf623ec3189bedb63fb6732f8`, following
-`2b5939b6236aa42f46ef59e9c4101879c7c9584b`.
+`a235dbbc05631335498cda376671af6c2772dc41`, following
+`01e8047b1effacdbf623ec3189bedb63fb6732f8`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Native Jones transport and internal record correlation, 2026-10-13.**
+[The transport proof](A4D_NATIVE_JONES_RECORD_TRANSPORT.md) resolves the
+matrix-existence gap: actual adjacent preparation frames have overlap p^3 I
+for every level, and their full internal transport is the square of the
+already owned golden gate. Ordinary inclusion alone has fixed nonzero
+trace-weighted L2 defect 8p^9. The explicit composite Ad_R after inclusion
+transports every corner outcome and complement exactly, preserving trace
+and the complete coarse/residual decomposition.
+
+A specific prepared central label is copied into a new native readout while
+retaining the old label; the whole tracial mixture remains unchanged. The
+abstract plane apparatus does not distinguish arbitrary spectator inputs.
+All full states with both native trace marginals have correlation range
+[0,p^6], or (0,p^6) in the faithful class. The existing protected-zero thermal
+family gives dB/dt=-1/(beta M_R lambda). This identifies its hidden heat
+coordinate as a full-GNS internal correlation, whose physical admission
+and actual joint geometry variation remain to be derived.
+
+All 399 scientific artifacts match verified remote SOURCE blobs and SHA256:
+391 prior files unchanged, one memo appended, seven new files. Default
+immutable replay passes 391 grouped exact controls and thirteen mathematical
+negative controls. Nineteen generic Lean propositions and two actual gate
+owners compile with standard axioms, six compiler pins and fifteen prior
+source pins. The all-level path/complex/full-state proof retains separate
+analytic/certificate status. The 44 graph dictionaries and dated tangent
+preflight plan are unchanged. The specified Jones cut does not replace
+previous scene/fullStep cuts or the full heat action. Native execution,
+preparation/correlation law and joint (q,D,b,m) source remain open, followed
+by Ward, stationarity, curved roots and soundness/recovery. Current-head CI
+and independent CONTROL review remain required; no original parent closes.
 
 **Native Fibonacci recording and four-level bound, 2026-10-13.**
 [The full construction](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md)

@@ -4044,3 +4044,56 @@ separate level frames are not a derived clock or growth law. Probe
 coverage, heat, own source/Ward, stationarity, curved roots and G1-G4
 remain open. No new physical postulate, supported owner or parent closure
 is introduced; the original fixed-source/raw-owner terminal is preserved.
+
+## Adjacent Jones corners force the golden transport (2026-10-13)
+
+[The native transport proof](A4D_NATIVE_JONES_RECORD_TRANSPORT.md) resolves
+the representation-level refinement gap left by separate AF recording frames.
+In the literal native path order the adjacent canonical frames satisfy
+F*G=p^3 I for every level. Their projectors obey efe=p^6 e and fef=p^6 f.
+Ordinary inclusion has the uniform nonzero defect ||e-f||_tau^2=8p^9.
+The oriented full-plane rotation, identity on the whole complement, is the
+square R=H^2 of the already owned golden gate H. It sends every G X G* to
+F X F*, including all matrix coherences.
+
+The explicit composite Ad_R after actual inclusion is a trace-preserving
+unital embedding with a constructed full coarse/residual decomposition.
+It exactly transports the prepared corner, its complement and all conditional
+expectations. This constructs a compatible conditional refinement; it does
+not identify the composite with the separately owned ordinary inclusion or
+derive physical execution. Left R also gives a current-left / previous-right
+relative record without transporting away the previous right support.
+
+A fixed new native observable changes on individual prepared columns, though
+the complete tracial mixture does not drift. Within the retained prepared
+old-type-0 sector, a final central block label and the new native bit are
+initially independent and perfectly correlated after R, with the original
+label preserved. This is a specific internal classical record. The abstract
+golden plane apparatus is still independent of arbitrary spectator x; the
+earlier four-frame product likewise does not distinguish arbitrary x there.
+For this specified Jones cut, complete regular feedback determinants are
+(1-zp^2)^d_(n+4) and (1-4zp^3)^d_(n+4). They do not replace the distinct
+four-row or scene cut and their full price sectors.
+
+The entire range of the left/right corner correlation t with both forced
+native trace marginals is [0,p^6], and exactly (0,p^6) for faithful full
+states. Explicit endpoint native unit vectors and faithful mixtures attain
+every value. In the previously owned protected-zero thermal family,
+t_lambda=p^6-(1-lambda)M_R and dB/dt=-1/(beta M_R lambda). Thus the free
+heat coordinate has an explicit internal correlation readout. Native
+admission and the coupled variation of the other action terms remain open.
+
+Evidence: 391 grouped exact controls, thirteen mathematical negative controls,
+ordered native frame binding at levels 0,1,2, full operators and old matrix
+units at levels 0,1, full public refinement and residual reconstruction.
+Nineteen generic Lean statements and two actual gate-owner statements compile
+with standard axioms, six compiler input pins and fifteen primary/prior pins.
+All-level path identities and complex/full-state extensions retain the
+separate analytic/certificate scope. No supported CORE change is introduced.
+
+The next necessary arrow is native admission/execution and full preparation
+of this now concrete composite, with the correlation constraint and the same
+joint (q,D,b,m) action/tangent. It is no longer a missing matrix transport.
+The metric/link source, Ward identity, stationarity, curved roots and
+soundness/recovery remain required. No free postselection, external level
+clock, new action, source fitting or parent-terminal closure is asserted.
