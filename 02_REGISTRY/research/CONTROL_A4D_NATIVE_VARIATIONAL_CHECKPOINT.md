@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`1555a67779d42a78108a0525dd5dc1a3a580c136`, following
-`d64296ce4dcb937abc440ece03e49e50442db4e8`.
+`68c593f1d12af20378642fa81cee982835cede1d`, following
+`585a6c21e09c07d7704c6c7ef1e2e0b45ba9b83a`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -1779,3 +1779,14 @@ Whole-operator endpoint pairing isometry forces Q_plus=Q and uniquely q_plus=-Q+
 The actual two consecutive gates, initial readout and every one of the sixteen components yield A(c)^2 B(c)^2 C(c). Chronological matter jets can be nonzero. On the fully corrected congruent factor curve, the metric and matter contributions cancel and R_tf′=0. The full Hodge heat factor response remains 2(E1-E2)>1/10000. All ten homogeneous whole-price coefficients are listed against flat geometric rho0, with the true L^4 feedback multiplicity and matter covector. These are not local source-subtracted Einstein equations.
 
 All 371 scientific intake artifacts match SOURCE bytes, SHA256 and remote Git blobs: 367 earlier artifacts unchanged, the primary memo updated, three new artifacts. The dated tangent-plan file and its preflight provenance are unchanged. Current-head CI and independent CONTROL review remain acceptance requirements; no parent retirement or self-merge. Native admission of the complete closed preparation and constitutive price, singular-state handling, link/affine dynamics, source/Ward, refinement, native stationarity, curved roots, soundness/recovery and GR remain open. All 44 contracts and original #310/#202/#317 terminals are preserved.
+
+
+## Closed record engine and hereditary preparation (2026-10-13)
+
+SOURCE `68c593f1d12af20378642fa81cee982835cede1d` publishes [the engine proof](https://github.com/gvakhrushev/d0_15/blob/68c593f1d12af20378642fa81cee982835cede1d/02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md), an exact sixteen-coordinate executor and its immutable certificate. An actual whole-blank seed enters a uniformly regular collinear sector for arbitrarily many ticks. Its current matter determines each observer sign; there is no external tick argument, reset or new blank. A visible two-cycle coexists with infinitely many distinct full retained states. An algebraic predecessor decoder recovers the actual previous state on this orbit. These are constructive results in the existing conditional pairing, not admission of every native state or a physical universe simulation.
+
+Exact golden coefficients are stored and encoded explicitly. Their canonical height grows beyond 4^k/3 on complete returns; a finite-store run stops at overflow instead of silently obtaining more memory. This is a codec-specific bound and a generic distinguishability requirement, not a derived bit-per-physical-cell law. Hereditary pullback along the actual archive projections commutes with the local record at every level. Nonuniform fibres require explicit pairing normalization; the compatible lift does not itself trigger division, select a physical heat measure or evolve spatial links.
+
+The complete two-tick feedback price remains (1-4zp^3)^4 on this orbit, despite its changing retained state. No all-ten-slot source vanishing, native stationary root, expansion or GR result follows. The next same-packet obligation is the owned coupling of retention and capacity to archive allocation and the constrained (q,D,b,m) transition, including the complete price/tangent and actual internal readout. External level scheduling is not used to fill that gap.
+
+Evidence: 24745 controls, 15 executed mathematical mutants, 4096 exact transitions, all sixteen native columns for both observer signs, and actual 16->81->256->625 hereditary projection controls. Nine generic all-time-domain/conjugate-growth propositions and the consumed gate owner compile with standard axioms; six transitive import/toolchain hashes match the compilation workspace. All 378 scientific intake artifacts match the published SOURCE SHA256 and remote Git blobs: 370 prior files unchanged, the primary memo updated, seven new files. Supported Lean trees and all 44 graph contracts/statuses/edges are unchanged. The dated tangent plan and its 292-control preflight are unchanged. Current-head CI and CONTROL review remain required; no original parent is retired and no merge is performed.

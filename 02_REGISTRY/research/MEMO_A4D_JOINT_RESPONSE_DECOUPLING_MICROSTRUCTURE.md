@@ -3900,3 +3900,51 @@ are now explicit components of that test. Neither a new q rule installed
 as a postulate nor a fitted remainder supplies its missing physical premise.
 Own source/Ward, native stationarity, curved joint roots, soundness/recovery
 and the original #310/#202/#317 terminals remain unchanged and open.
+
+## Closed record engine, internal memory and hereditary refinement (2026-10-13)
+
+[The executable engine](A4D_NATIVE_CLOSED_RECORD_ENGINE.md) takes the
+literal sixteen-component CAR record beyond two ticks. In the stated
+collinear conditional pairing, the actual whole-blank seed e_0+Omega
+enters an invariant two-band domain. Its first grade stays uniformly
+nonzero for every number of ticks; the metric remains eta. The transition
+reads the current state alone, with no external phase schedule, new blank,
+reset or history input. All sixteen components remain in the executor.
+
+After the initial two ticks the visible scalar/first-grade pair returns
+every two steps, while the retained spatial-top/full-top pair rotates by
+the forced matrix with cosine 2p-1 and sine 2ap. Exact algebraic conjugation
+proves infinite order and distinct full seed states. A predecessor decoder
+recovers the entire previous state on this orbit without an external
+journal. Generic Lean induction proves the uniform nonzero domain; this
+does not admit all native states or remove the earlier singular blank.
+
+The exact implementation stores four integers for each golden coordinate,
+counts their self-delimiting binary representation and stops on a declared
+capacity overflow. Their canonical height is greater than 4^k/3 on the
+complete returns, proved by the conjugate recurrence. This explicit codec
+bound is not a lower bound for every compressed representation or a native
+bit-per-cell law. Distinct exact full states still require unbounded store
+configurations if arbitrarily many of them must remain distinguishable.
+
+Hereditary pullback along the actual archiveProjection commutes with the
+pointwise native record at every level. The nonuniform fibres require an
+explicit normalization for isometry; parent-weight conservation and child
+symmetry give a conditional normalized lift. This uses the existing archive
+tower as compatible support. It does not force a physical measure, heat
+operator, refinement trigger or interacting link/affine transition.
+
+The existing complete two-tick price is (1-4zp^3)^4 at both observer signs
+on this orbit. Thus growing retained history and a repeated price coexist.
+No full metric-source vanishing, physical expansion, on-shell stationarity
+or GR is inferred. This narrows the next common-preparation question to
+an owned coupling of retention/capacity with archive allocation and the
+constrained (q,D,b,m) evolution, carrying the actual full price and tangent.
+An externally scheduled level increment is not inserted as that coupling.
+
+Evidence: 4096 exact transitions, 24745 controls and 15 executed negative
+controls, all sixteen native matrix columns for both signs, hereditary
+tests on 16->81->256->625 actual points, and nine compiled generic Lean
+propositions with standard axioms. The actual gate owner and all transitive
+inputs are pinned. No supported Lean owner, action, selector, physical law,
+task, branch, PR, original terminal or release status is added or retired.
