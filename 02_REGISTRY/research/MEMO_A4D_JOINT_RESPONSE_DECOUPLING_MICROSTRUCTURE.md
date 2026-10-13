@@ -4097,3 +4097,58 @@ joint (q,D,b,m) action/tangent. It is no longer a missing matrix transport.
 The metric/link source, Ward identity, stationarity, curved roots and
 soundness/recovery remain required. No free postselection, external level
 clock, new action, source fitting or parent-terminal closure is asserted.
+
+## Complete invariant preparation and lossless refinement (2026-10-13)
+
+[The full preparation proof](A4D_NATIVE_FULL_PREPARATION_FIBER.md) classifies
+the entire conjugation-invariant faithful full-GNS state class with both
+forced native marginals and a simple protected Omega. Its two independent
+coordinates are lambda and mu; the traceless-sector eigenvalues are fixed
+linear expressions in them. This is the explicitly invariant class, not
+every frame-dependent equivariant preparation. All full modes are retained.
+
+The complete Jones joint table fixes only
+p^6-t=(1-lambda)K-mu J, with K,J>0. At every interior point the exact line
+(lambda,mu)->(lambda+s,mu-Ks/J) preserves both marginals and all four
+joint outcomes, while the protected heat price has derivative
+-1/(beta lambda)<0. The earlier B(t) was correctly scoped to its chosen
+one-parameter slice; the full classified interface does not reconstruct
+heat from t. All moving tuples preserving the full golden/Jones Gram
+relation have the same feedback determinant. Thus this complete stated
+class has no interior stationary point for the two-term Jones bootstrap,
+even after fixing t. Native preparation must exclude this particular
+direction or derive an existing coupled price term with the exact opposite
+derivative. No compensator is introduced.
+
+The full quantum refinement test is exhaustive over CPTP channels with a
+CPTP left inverse on every state. Their Kraus operators have orthogonal
+isometry ranges; at most two copies fit into one actual AF GNS step.
+Every output has rank at most 2d_n, whereas 2d_n<d_(n+1)<3d_n. The missing
+rank fraction is at least 1/5 and tends to p^3. For a full finite Gibbs
+target, trace distance is at least exp(-beta Emax)/5. This excludes an exact
+faithful full thermal output from this lossless channel class. It does
+not exclude preservation of native readouts or a restricted state family.
+
+Explicit measure/prepare channels preserve the already owned faithful
+one-parameter family across all levels where it is defined (actual AF
+levels >=2), leaving lambda free and erasing other coherences. Exact
+unnormalized heat extensions retain a free positive full-detail block and
+add its entire partition weight; native marginal feasibility remains an
+explicit additional system. Neither construction is promoted to closed
+physical preparation without its actual retained environment/admission.
+
+Evidence: 461 grouped exact controls, nineteen mathematical negative controls,
+full complex marginal/covariance matrices and a commutant-dimension check,
+actual Jones spectral-sector traces, fixed-table faithful samples, and a
+sharp native-first-branch recovery witness. Eighteen generic Lean kernel
+statements and the consumed golden owner compile with standard axioms and
+six compiler pins. Sixteen prior/primary input files are pinned. Complete
+group/Kraus classification and all-level binding have analytic/certificate
+status; no supported CORE, physical source or parent status is promoted.
+
+The next necessary object is the joint native preparation constraint on
+the full state, heat, feedback and (q,D,b,m), evaluated on the exact hidden
+direction (delta lambda,delta mu)=(1,-K/J). M1 uniqueness and condensed
+naturality consume their constraint/family hypotheses; they do not supply
+this absent relation. Actual source/Ward, quantitative transfer, stationarity,
+curved roots, soundness/recovery and the original terminals remain open.
