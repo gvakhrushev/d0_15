@@ -3,10 +3,43 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`4b25867dff1c120c21cdaf52b6398c729e21072c`, following
-`2f3360c5d3bfcb40d4791b23ade8e82e03f887c8`.
+`074b4223c0cae4aa5b1ad379dcd0a78930da1179`, following
+`4b25867dff1c120c21cdaf52b6398c729e21072c`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
+
+**Retained reference, native history code and preparation domain, 2026-10-13.**
+[The reference/memory proof](A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md)
+constructs the actual Jones code for two collided full-field histories.
+Their p^3 overlap, full regular multiplicities and retained price are exact.
+A universal pure product controller for the two different full gates requires
+orthogonal programs; the restricted nonorthogonal history code cannot replace it.
+
+The actual compatible AF bimodule pairing is unique, while its full-density
+preparation source remains. Correct weighted endpoint transports telescope
+and have zero feedback source; the genuine chronological price remains.
+The proposed self-conditioned whole-blank bridge fails in one tick. With
+orientation retained, the scalar-preserving bridge fails by five ticks;
+arbitrary spectator mixing is not excluded. A separate golden whole-blank
+state on the existing full-sixteen carrier is faithful for every tick but
+does not belong to the old P1/top-grade field chart.
+
+The exact adjoint obstruction covers every positive site-local grade Gram
+preserving the actual point/grade observables. The existing four-level
+threshold has an all-level recurrence, and delta now binds the history
+overlap, prepared corner weight and first Pauli contrast without fitting.
+
+All 441 scientific artifacts match remote SOURCE: 433 prior files unchanged,
+one memo appended, seven new. Immutable replay passes 510
+exact checks and 15 mathematical negative controls;
+24 new narrow Lean propositions and
+7 actual owner axiom closures are retained.
+All 44 graph contracts and the dated preflight plan remain unchanged.
+The next arrow is the owned retained-reference/current-field interaction
+and its full heat/feedback/readout binding on genuine admissible curves.
+Physical source/Ward, stationarity, contrast, curved joint roots,
+soundness/recovery and GR remain open. CI and independent CONTROL review
+remain acceptance gates.
 
 **Native pairing/refinement reaction and full-price modulus, 2026-10-13.**
 [The pairing/refinement proof](A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md)

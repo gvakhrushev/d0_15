@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "78e93faacd03287097575395f2fdbd23b18607dcc2f778592c871d0af2cb40c4",
-      "source_blob": "ec0d9b4e54924986214157c73fefcb358721f524"
+      "sha256": "fa0b7d5576953d99032746d487b9dfbfb0d39565fd4e17960cb37af1b961d9c3",
+      "source_blob": "ed2e16929d6340f50622360c48f9899391fbac33"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -2171,6 +2171,41 @@
       "path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_lean_output.txt",
       "sha256": "e5713ea9be413879498983d96731db2c8441b8e83124df5a5c065d7dd0ea296f",
       "source_blob": "3168a6a14ab0ffeb18f6f426b8a28676a90a3cac"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md",
+      "sha256": "04d38a6a126830fa857f4f7a06bf74789f21e283ed540d676ba8ea1de50e9184",
+      "source_blob": "4c883e83ad6981a19d35a804a7d1b4810029ef32"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py",
+      "sha256": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a",
+      "source_blob": "2f1cf6f6122f5798ea883ad98bb9d52ad07300d7"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation_check.py",
+      "sha256": "7954577955f9ba7e55232d569e190e94696bb79ad447b090290c52afdf1a3937",
+      "source_blob": "24a8762f0ad5769d458ce11faa5ac9817105855f"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation_certificate.json",
+      "sha256": "957520e9b3b15ca1e7e2bea8f1915e18fd5567f095cf856d4f494e94479bc777",
+      "source_blob": "69d03a162da9867f204524f6837d205a73553b94"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.lean",
+      "sha256": "24f9d5def467f64cf597192a9df21d34c8aed9ce2b35450c78dfaf6c6a8db992",
+      "source_blob": "ae00118d2790d6ce25e76ec66227e64cb8c235cd"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation_lean_results.json",
+      "sha256": "4bc33d9293b748f6cb076562e2548ee43f4920648020d8cc20e73098bfd0122c",
+      "source_blob": "56cac9d705c055c46f9dd08dfa49248d856a46f6"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation_lean_output.txt",
+      "sha256": "5c7a53dafece327eb72bcc8ad07be9e6d54f399e12514a9aba854871034ee370",
+      "source_blob": "8216aa37c6ff26681720a4c8ac9787fc6bcaf99f"
     }
   ],
   "base": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
@@ -3689,13 +3724,45 @@
       "new_scientific_artifacts": 7,
       "all_44_contracts_and_original_parent_terminals_unchanged": true,
       "next_required_proof": "Derive the owned physical represented readout, compatible full Gram transition and apparatus map. The actual scaled cochain lift is not an adjoint intertwiner for any positive diagonal full16 Hodge weights. Its compression has the exact reaction Rdagger R and a full moving-Gram source. A complete nonlocal repair preserving the same coarse Gram leaves a spectrally and thermally essential complement modulus and changes point-algebra compatibility. Any compression-based native source transfer must retain or quantitatively control that reaction and the complete complement source. The Lorentz/observer site-density extension also remains deficient in local nongauge metric probes. Use actual admissible curves and refinements; another existing pairing/operator requires its precise owner/domain/readout. Then establish native field source/Ward, stationarity, contrast, curved joint roots and soundness/recovery. Preserve original #310/#202/#317 and all44 parent contracts; no new action, selector, postulate or role/word census."
+    },
+    "reference_memory_preparation": {
+      "date": "2026-10-13",
+      "source_head": "074b4223c0cae4aa5b1ad379dcd0a78930da1179",
+      "input_source_head": "4b25867dff1c120c21cdaf52b6398c729e21072c",
+      "control_input_head": "14d0cc9882d667d45973bb5ca67bdea2efb25d61",
+      "proof": "02_REGISTRY/research/A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md",
+      "program": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation_certificate.json",
+      "exact_controls": 510,
+      "executed_mathematical_mutations": 15,
+      "new_Lean_propositions": 24,
+      "actual_owner_axiom_checks": 7,
+      "source_input_pins": 62,
+      "literal_collision": "Two valid full16 own-blank inputs have the same complete present output; reflection excludes a full-O-covariant signed timelike reconstruction, not its unsigned line.",
+      "native_history_code": "Actual Jones H supplies an exact rectangular two-history code with overlap p^3, complete regular multiplicities and one/two-tick feedback prices.",
+      "controller_scope": "Exact universal pure product programming of the two nonscalar distinct full gates requires orthogonal input/output programs. The nonorthogonal restricted history code is not such a program.",
+      "AF_pairing_rigidity": "Complete positive pairings making the actual AF left/right actions star representations are the unique compatible trace tower; full GNS density and heat/readout preparation remain variable.",
+      "endpoint_source": "True moving-W endpoint adjoints and whole frame transports telescope to constant feedback; a wrong Euclidean adjoint fabricates a radial source. Genuine same-pairing chronological misalignment is retained.",
+      "self_conditioned_domain": "Fresh whole-blank endpoint bridge has no one-tick output in its own signed P1/top-grade chart. Keeping orientation separately removes that contradiction; scalar-preserving bridge cannot remain signed through five ticks. Arbitrary spectator mixing not excluded.",
+      "positive_all_time_component": "Golden whole-blank state in existing full16 has faithful Pauli marginal at every tick and observer Gram eigenvalues in [p,1/p]. Its first/top grades vanish; old field-domain and heat binding are not inferred.",
+      "complete_local_Gram_obstruction": "Every positive site-local grade-orthogonal Gram preserving actual point/grade observables fails exact adjoint intertwining of the existing scaled cubical lift, including offdiagonal one-form mixing. No universal weak/action-contrast no-go.",
+      "four_level_delta_bridge": "Existing three-inclusion/four-level full-record threshold and all-level f_(r+2)=3f_(r+1)-f_r retained. Same delta gives history overlap 2delta, squared fidelity/corner trace 4delta^2 and first Pauli contrast 4delta^2. ABCD not independent; Q4 normalization not spacetime dimension.",
+      "proof_status": "Named rectangular Jones/product-program/endpoint/observer-sign/rotation/delta kernels narrowly Lean-proved with actual owner axiom closures. Complete-class and all-time claims retain explicit analytic hypotheses and exact finite controls.",
+      "physical_source_Ward_stationarity_curved_roots_GR_closed": false,
+      "new_action_selector_postulate_or_compensator": false,
+      "source_artifact_count": 441,
+      "prior_unchanged_artifacts": 433,
+      "updated_primary_memo": 1,
+      "new_scientific_artifacts": 7,
+      "all_44_contracts_and_original_parent_terminals_unchanged": true,
+      "next_required_proof": "Derive the owned joint interaction of retained reference, current fields and represented readout, with its full heat/feedback binding and compatible refinement. The actual Jones operator supplies the exact p^3-overlap history code, but universal pure product programming of the two distinct full gates requires orthogonal controller states. Whole-apparatus endpoint transports telescope and have zero feedback source; the proposed self-conditioned whole-blank bridge has an empty one-tick fibre, and its scalar-preserving orientation-retained class fails by five ticks. A constructive golden whole-blank Pauli component stays uniformly faithful for every tick but lies outside the old P1/top-grade field chart. The fixed native AF bimodule pairing is unique; the full density/source fibre remains. All positive site-local grade-orthogonal Grams preserving the actual point/grade readout fail exact adjoint refinement. Use the actual owned interactions and joint admissible curves to pull back the full covector; retain complete reaction/complement sources and genuine chronological misalignment. Then prove physical source/Ward, native stationarity, contrast, curved joint roots and soundness/recovery. Preserve original #310/#202/#317 and all44 contracts; no new action, selector, postulate or role/word census."
     }
   },
   "global_closure": "OPEN",
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
+  "previous_source_head": "4b25867dff1c120c21cdaf52b6398c729e21072c",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3798,10 +3865,11 @@
     "Actual homogeneous soldered-CAR square and complete ten-component metric plus observer heat derivative; exact moving-adjoint defect; physical Gibbs-preparation interface removed from mandatory action input. Full native heat binding and parent terminals remain open.",
     "Complete own-axis selfadjoint sector of the actual stored soldered operator; explicit uniformly nondegenerate curved readout; full-grade scalar/two-form coupling and strict all-beta compressed heat gap; restricted local tangent ranks; exact native conductance normalization and full positive conformal-family boundary. Golden four-level apparatus reused with its true representation scope. No heat identification, on-shell, source/Ward, continuum or GR promotion.",
     "Complete full16 stored Lorentz/observer adjoint class and GL exception; all24 connection directions and exact nonlinear metric image; nonintegrable joint jet; full positive-pairing/projector/unitary tangent and bootstrap covector with Gram contribution and internal Ward. Exact golden four-level scope retained. Native binding, physical source/Ward, roots and GR remain open.",
-    "Full16 arbitrary-positive diagonal pairing obstruction for the actual scaled cochain refinement; exact compression reaction and moving-Gram source/internal Ward; complete nonlocal repair with thermally essential complement modulus; complete site-density extension and its metric/image boundary. Native preparation, quantitative source transfer, physical Ward, roots and GR remain open."
+    "Full16 arbitrary-positive diagonal pairing obstruction for the actual scaled cochain refinement; exact compression reaction and moving-Gram source/internal Ward; complete nonlocal repair with thermally essential complement modulus; complete site-density extension and its metric/image boundary. Native preparation, quantitative source transfer, physical Ward, roots and GR remain open.",
+    "Exact actual Jones history code and universal controller condition; complete native AF bimodule pairing; moving-W endpoint source and own-chart transition boundaries; all-time faithful golden Pauli component; full local-grade Gram adjoint obstruction; existing four-level/delta cross-owner bridge. Native joint interaction, field source/Ward, stationarity, contrast, curved roots and GR remain open."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "4b25867dff1c120c21cdaf52b6398c729e21072c",
+  "source_head": "074b4223c0cae4aa5b1ad379dcd0a78930da1179",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
   "source_pr": 310

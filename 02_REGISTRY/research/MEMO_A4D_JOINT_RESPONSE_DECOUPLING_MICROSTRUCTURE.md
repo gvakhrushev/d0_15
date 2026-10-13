@@ -4340,3 +4340,60 @@ full complement source are now explicit obligations for a compression route.
 No source, remainder or selector is fitted. Native stationarity, quantitative
 transfer, joint curved solutions, soundness/recovery, positive GR and original
 #310/#202/#317 remain open.
+
+## Retained reference, native history code and the full preparation domain (2026-10-13)
+
+[The reference/memory proof](A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md)
+tests the actual full-sixteen field and its own state-conditioned observer.
+Two valid whole-blank preparations collide in the complete present tuple.
+Their normalized overlap is exactly p^3. The already owned native Jones
+operator encodes both histories isometrically, on every old matrix entry,
+with all regular multiplicities and complement factors retained. A signed
+timelike reference cannot be recovered from the present collision under
+full Lorentz covariance; its unsigned line is not excluded. The archive
+code is constructive, while its native matter interaction remains to be
+admitted. Exact universal product programming of the two different full
+gates separately requires orthogonal controller states; the nonorthogonal
+two-history code cannot be substituted for that controller.
+
+The complete fixed AF bimodule pairing is the existing unique trace tower.
+This does not remove the full-density preparation fibre or its heat source.
+True weighted endpoint transports telescope and have zero feedback jet;
+using a counting transpose instead fabricates a radial source. The genuine
+nonconstant same-pairing chronological price remains a distinct owned
+operation. A proposed self-conditioned whole-blank endpoint bridge has an
+empty one-tick fibre. If orientation is retained, the narrower bridge that
+preserves the distinguished scalar still cannot remain in its signed
+observer chart for five ticks. Arbitrary spectator mixing is not excluded
+by that five-tick result.
+
+An explicit golden whole-blank state on the existing full-sixteen apparatus
+has a faithful Pauli marginal for every tick, with uniform observer-pairing
+eigenvalues in [p,1/p]. Its first/top grades vanish, so it is not a solution
+of the old timelike-P1/top-grade field preparation. This gives a quantitative
+positive component whose exact readout, geometry/link and full heat binding
+must be derived rather than identified with the old chart by assertion.
+
+The local-Gram refinement obstruction now covers every positive site-local,
+grade-orthogonal matrix preserving the actual point/grade observables,
+including off-diagonal one-form and observer pairings. Periodic transverse
+terms telescope; a strictly negative weighted normal sum survives. This
+is an exact adjoint obstruction for the stated observable class, not a
+prohibition of quantitative action contrasts or a different native readout.
+
+The user's four-level/self-similarity lead is tied to its existing owner.
+The actual fixed-space counts 2,3,7,18 have the all-level recurrence
+f_(r+2)=3f_(r+1)-f_r. A four-copy recording representation first fits after
+three inclusions, hence four levels including its input. The same delta0
+now gives history overlap 2delta0, squared overlap and prepared corner
+trace 4delta0^2, and the first Pauli contrast 4delta0^2. These are exact
+cross-owner constraints, not four independent ABCD axioms or a new time
+law. Q(4)=1 retains its separate algebraic normalization scope.
+
+The first missing arrow is the owned interaction between retained
+reference, current fields and represented readout. It must supply actual
+joint curves and compatible refinement on which the complete heat/feedback
+covector pulls back to the field source. Reference retention alone and
+whole-frame transport cannot replace this derivative. Physical source/Ward,
+stationarity, quantitative contrast, curved joint roots, soundness/recovery,
+positive GR and all original parent terminals remain open.
