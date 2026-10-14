@@ -108,7 +108,7 @@
     "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe"
   },
   "proof": "02_REGISTRY/research/A4D_NATIVE_SHIFT_VECTOR_RECORD_RAY_SEPARATION.md",
-  "proof_sha256": "9bcb7ff812d33419089a3c095aaba40a04ebd7b191c2475ebf8c3d677a1ec845",
+  "proof_sha256": "d9dbb2e084782c8a1e9a8ee2060932fbda8d2713351fe63f821640afb84e0221",
   "schema": "d0-native-shift-vector-record-ray-separation/1",
   "scope": {
     "G0_GR_or_parent_terminal_closed": false,

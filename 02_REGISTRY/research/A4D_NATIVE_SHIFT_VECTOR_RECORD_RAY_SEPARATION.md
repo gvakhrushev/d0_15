@@ -5,7 +5,8 @@ on its zero branch are accepted, and the repair passed. No registry row.
 Not a physical admission and not GR.
 Pre-flight searched `02_REGISTRY/claims.csv` in this worktree for
 `diagonalSeed`, `shift_irrelevant`, `record ray`, and `same-edge` and found
-no row. This worktree has no `05_CERTS/` directory. Broader `shift` rows in
+no row. Certificates in this worktree live under
+`02_REGISTRY/research/certificates/`. Broader `shift` rows in
 that file are cyclic, phason, toral, and compensator carriers, not this
 Cartan seed. The affine-CAR transport blindness and the equal-weight
 contraction are already on this branch and are not re-proved here.
@@ -206,7 +207,8 @@ The first pass killed the ray control. Errors of record:
 - `not_positive_ray` did not read the computed seed. For squared length other than \(1\) it returned true at once. For squared length \(1\), \(-b\neq b\) cannot fail for a nonzero vector. The samples never reached the zero branch, and deleting that branch left the receipt green.
 - The memo named a zero-vector control that was not a receipt check.
 - The channel sentence wrote `record(I_4,e_r)` and dropped the live `[0]` index.
-- The pre-flight named `05_CERTS/`, which is not a directory in this worktree.
+- The pre-flight pointed at a retired certificate path instead of the live
+  `02_REGISTRY/research/certificates/` directory.
 
 The repair replaces that predicate, receipt-locks the sign, length, and zero refusals, compares the computed seed, quotes the live return line, and retargets the pre-flight.
 
