@@ -1,0 +1,24 @@
+{
+  "errors": {
+    "archive_remainder_telescope": 0.0,
+    "complete_tower": 0.0,
+    "full_partition": 2.220446049250313e-16,
+    "full_source_telescope": 5.624317127497866e-17,
+    "independent_central_difference_0.0001": 2.8938274554413113e-09,
+    "independent_central_difference_2e-05": 9.82860602966403e-11,
+    "moving_state_source_formula": 5.624317127497866e-17,
+    "native_commutant_reference_all_jets": 1.1443916996305594e-16,
+    "native_tangent_unital": 1.1102230246251565e-16,
+    "noncommuting_tangent_tower": 0.0
+  },
+  "full_random_carrier_dimension": 13,
+  "max_PF_source_bound_ratio": 0.32917185884215383,
+  "negative_diagnostic_gaps": {
+    "commuting_only_exponential_derivative": 0.22656801068824214,
+    "log_of_transfer_is_transfer_of_log": 28.954361921381818,
+    "omit_moving_state_source": 0.11412128693434542
+  },
+  "new_Lean": false,
+  "physical_admission": false,
+  "status": "PASS_FLOATING_POINT_DIAGNOSTICS_NOT_INTERVAL"
+}
