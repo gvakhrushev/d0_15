@@ -1479,6 +1479,21 @@
       "full_core_no_go": false,
       "next": "Inspect a separate existing local record/preparation owner that reads b_e. This scoped blindness closes only the direct CAR-transport route; it does not establish completeness or a whole-core obstruction."
     },
+    "conditional_shift_vector_record_ray_separation": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_SHIFT_VECTOR_RECORD_RAY_SEPARATION.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_shift_vector_record_ray_separation",
+      "status": "CONDITIONAL_CONSTANT_SHIFT_SEED_IS_OPPOSITE_RAY",
+      "derived": "For every edge with identity linear part and one common translation b, the owned diagonal seed equals -b for every supplied comparison endomorphism. For every nonzero b, -b is not the positive unit ray b/sqrt(b·b). On the zero coframe, predecessor torsion equals b and the soldered creator equals e_r, so they agree only at b=e_r. The creator body does not read the translation. The ten definitions reachable from barB, deltaB and predecessorTorsion do not occur in a file that applies archiveExteriorCreator. A non-constant shift with a coordinate-swap comparison sends the seed to -e_1 rather than -e_0. This is not a whole-core exhaustion, not a b_e record law, and not a ten-slot comparison with rho0.",
+      "constant_shift_seed_equals_minus_b": true,
+      "constant_shift_seed_is_positive_record_ray": false,
+      "torsion_equals_creator_for_every_shift": false,
+      "shift_vectors_fed_to_exterior_creator": false,
+      "whole_core_exhaustion": false,
+      "comparison_endomorphism_selected": false,
+      "ten_slot_total_source_compared": false,
+      "G0_GR_or_parent_terminal_closed": false,
+      "next": "Unchanged from conditional_endogenous_preparation. This separation does not supply a local record law that reads b_e, and it does not compare the ten-slot covector with rho0."
+    },
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
       "original_weighted_jet_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
