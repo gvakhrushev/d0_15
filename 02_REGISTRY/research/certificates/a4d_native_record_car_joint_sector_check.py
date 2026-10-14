@@ -174,6 +174,32 @@ for i in seed_sector:
 # remains in V unless an additional spatially transforming datum is
 # part of its input.
 
+# T0->T1 ladder gate: every literal two-record collinear chronology has
+# the SAME full 16-dimensional feedback price, even if spatial CAR current
+# is nonzero and changes sign. This tests all four sign histories, not an
+# arbitrarily selected seed or a sampled spectrum.
+Pcut=S.diag(*[1 if mask%2==0 else 0 for mask in range(16)])
+for first_sign in (-1,1):
+    for second_sign in (-1,1):
+        chronological=native_gate(second_sign)*native_gate(first_sign)
+        feedback=Pcut*chronological.T*(I-Pcut)*chronological*Pcut
+        active_rows=[j for j in range(16) if feedback[j,j]!=0]
+        expected_rows=([0,2,4,8] if first_sign==second_sign
+                       else [6,10,12,14])
+        assert active_rows==expected_rows
+        assert feedback == S.diag(*[
+            4*a*a*p*p if i in expected_rows else 0 for i in range(16)])
+        assert S.trace(feedback)==16*a*a*p*p
+        assert feedback*feedback==4*a*a*p*p*feedback
+# With a^2=p and p+p^2=1, all 4 full ordinary determinants are
+# (1-4*z*p^3)^4, including twelve zero-feedback directions.
+assert S.expand((4*a*a*p*p).subs(a*a,p)-4*p**3)==0
+# At fixed q=eta, constant links and full W=I the Hodge heat is
+# independent of matter. On the active collinear open band the gate and
+# Pcut are independent of the higher Fock coefficients. Consequently
+# the total Hodge-heat plus literal two-tick feedback matter jet is ZERO;
+# this is a restricted vertical/material jet, not a metric/source theorem.
+
 # Hostile controls: old seed cannot spontaneously become spatial-current active;
 # changing current readout alone cannot retain endpoint isometry.
 assert any(alpha[i].extract(sector,sector) != S.zeros(10) for i in range(3))
