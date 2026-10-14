@@ -49,6 +49,9 @@ INPUTS=[
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json',
     '02_REGISTRY/research/A4D_NATIVE_RECORD_CAR_JOINT_SECTOR.md',
     '02_REGISTRY/research/certificates/a4d_native_record_car_joint_sector_check.py',
+    '02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md',
+    '02_REGISTRY/research/certificates/a4d_native_chronological_stationary_descent_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_chronological_stationary_descent_certificate.json',
 ]
 q=importlib.util.spec_from_file_location('correlated_program',ROOT/(BASE+'.py'))
 P=importlib.util.module_from_spec(q);sys.modules[q.name]=P;q.loader.exec_module(P)
@@ -520,7 +523,8 @@ def controls(receipt=True):
         'arbitrary complex spectator-isometry eight-tick boundary','all-time full current component',
         'all-L fixed-beta heat bound','exact closed-engine-and-scene/current-source sector decoupling',
         'positive source current is a checked cross-sector CAR term',
-        'exact n=0 Fibonacci AF/CAR working-module weld for fullStep, price cut and blank projector'],
+        'exact n=0 Fibonacci AF/CAR working-module weld for fullStep, price cut and blank projector',
+        'independent original-observer chronology feedback covector descent is source-pinned'],
         cross_owner_scope='CLOSED_ENGINE_AND_AUTONOMOUS_SCENE_SEED_STAY_IN_CURRENT_NULL_SECTOR; POSITIVE_SOURCE_RESPONSE_IS_CROSS_SECTOR; BASE_LEVEL_FIBONACCI_AF_CAR_WELD_EXACT; LATER_REFINEMENT_AND_PHYSICAL_ADMISSION_OPEN',
         source_current_decomposition='r_i=2*m_V^T*alpha_i*m_perp on the owned B curve; r1(0)=2ap and r1_prime(0)=4p^3',
         af_car_weld='n=0, Xi_0=K*V_AF^T; exact fullStep/price/blank intertwining on the 8D AF working module',
@@ -529,6 +533,7 @@ def controls(receipt=True):
         af_car_current_leakage_ranks=af_current_leakage_ranks,
         af_canonical_frame_PF_bond_defect_ranks=af_bond_defect_ranks,
         af_all_level_gauge_repair_or_general_obstruction_open=True,
+        original_chronology_stationary_descent='separate full16 observer/cut owner; admitted scalar feedback equation implies dJ=0; physical admission and full-action source remain open',
         full_feedback_pencil='(1-4zp^3)^(4L^4)',
         retained_zero_feedback_directions='12L^4',physical_admission_source_Ward_stationarity_GR_closed=False)
 

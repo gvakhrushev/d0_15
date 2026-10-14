@@ -306,6 +306,18 @@ are not silently substituted for the earlier genuinely misaligned sequence
 U_(n_next)U_(n_current) with its original retained cut. That chronology has a
 separate nonconstant price and must enter the native preparation if used.
 
+The original-observer route now has a separate exact owner in
+[the chronological stationary-descent packet](A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md).
+It keeps that moving first-grade observer, the solved next metric and the
+original retained cut, and computes the full sixteen-grade pencil for the
+two actual successive gates. In its complete regular chart, an admitted
+scalar matter Euler equation for that feedback price implies that its whole
+feedback covector vanishes. This is conditional on admission and concerns
+the feedback term alone: it does not derive the heat source, a total
+stationary root, a physical Ward identity or an Einstein limit. The original
+observer/cut readout has not been identified with the separate CAR-current
+readout or with the base AF/CAR weld below.
+
 The next positive interaction must use full correlations and change the
 apparatus Gram or explicitly retain the old orientation interface; passive
 archive growth alone is insufficient by section 2. It must establish the

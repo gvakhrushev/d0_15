@@ -4547,3 +4547,30 @@ the joint `(q,D,b,m)` tangent. The supplied `ABCD` identities are one
 quadratic object, not four independent constraints; the Lean dimension ladder
 already proves `Q(D)=phi^(D-4)`, while a physical-dimension interpretation
 remains separate.
+
+## Original-observer chronological feedback descent (14 October 2026)
+
+The separate [chronological stationary-descent owner](A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md)
+keeps the original first-grade observer and retained cut, rather than the
+alternative CAR-current readout above. Its all-angle whole-blank preparation
+has two uniformly regular corrected record steps, and its exact full16
+feedback pencil is `A(c)^2 B(c)^2 C(c)`. In the full regular joint chart, one
+actual scalar matter equation controls the complete differential of this
+feedback term: if that direction is physically admitted and its Euler
+component vanishes, then the entire feedback covector vanishes. For the
+owned homogeneous Hodge heat, the same scalar direction has zero heat jet;
+therefore `H+J` matter stationarity cannot use this feedback term to cancel
+the remaining heat source. This is conditional on physical admission and
+does not prove total-action stationarity, a ten-component physical source,
+Ward identity, curved root or GR. The original-observer chronology and the
+AF/CAR-current weld have not yet been identified on one common joint
+variation domain.
+
+The standalone checker passed 98 exact controls and 10 negative controls.
+It pins selected executed declarations from the original operator owners;
+that scoped AST provenance is not a full SOURCE or Lean-closure audit. The
+next critical join is one refinement-compatible, physically admitted
+preparation carrying the original chronology, the AF record and the full CAR
+current, followed by its actual joint tangent and all ten metric components.
+Until that join is built, the matched golden coefficients remain a finite
+representation bridge, not an Einstein source.

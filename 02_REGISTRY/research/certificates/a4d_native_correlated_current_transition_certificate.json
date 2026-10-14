@@ -20,9 +20,10 @@
     "all-L fixed-beta heat bound",
     "exact closed-engine-and-scene/current-source sector decoupling",
     "positive source current is a checked cross-sector CAR term",
-    "exact n=0 Fibonacci AF/CAR working-module weld for fullStep, price cut and blank projector"
+    "exact n=0 Fibonacci AF/CAR working-module weld for fullStep, price cut and blank projector",
+    "independent original-observer chronology feedback covector descent is source-pinned"
   ],
-  "checker_sha256": "6caeda432ca8ddf0b7c8c7f7ca70fdca7b7e556a93276c007430deb3088b028f",
+  "checker_sha256": "d667adb277e4990ec979ab91238c99eb18ea69650644d6f47ce1ea94ac610979",
   "checks": [
     "native_CAR_create_(0, 0)",
     "native_CAR_annihilate_(0, 0)",
@@ -525,6 +526,7 @@
   "full_feedback_pencil": "(1-4zp^3)^(4L^4)",
   "input_sha256": {
     "02_REGISTRY/research/A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md": "b9ee5c65cd94cd22760d49eef2d6f30d1d7eeb48e8afff2ee5188f61038a5539",
+    "02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md": "3d21745f052eb09863b16acd1e16f59628974b95494a2a38b1aea01a518ea58a",
     "02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md": "36eaeb8617630acaeace297fa64e7b8c33b92fc4824133a2b8e3515c4c79520a",
     "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
     "02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md": "d85e57979a61972e641eae24442a776133c429c8696d0948590f6d290a60b045",
@@ -538,6 +540,8 @@
     "02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_check.py": "e5b7de973a5e96be501a89a77f4e604c31830d9b15f1220aebbfc2842f3ec552",
     "02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_output.txt": "f5bec1d38629657c8f12a34b69dda1a1f2e749c9e6396d0851849dde3ee9bda9",
     "02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_results.json": "82d288396c31d5e98371e2b5c8e7dfc0007b2d868fa4fa681f9b99dc4655ce2b",
+    "02_REGISTRY/research/certificates/a4d_native_chronological_stationary_descent_certificate.json": "d9ebae345d41898c2d7e76c90b6e363994f35336da53c1f7bb9bef7541568eb9",
+    "02_REGISTRY/research/certificates/a4d_native_chronological_stationary_descent_check.py": "065ce534f1e8c8f85e2ea0eeb9c602f9366648e6c40ae890749663af4ef7e026",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.lean": "d8a8815866a829d026d3331aa75996563f796639e2026027cb63c7c0c30de096",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py": "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine_certificate.json": "2c6060cc856083c4dc60ee67b8b2bfca1a9a4967f4992bcfdc3b5ef6c604d5ce",
@@ -613,10 +617,11 @@
     "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782"
   },
   "input_source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
+  "original_chronology_stationary_descent": "separate full16 observer/cut owner; admitted scalar feedback equation implies dJ=0; physical admission and full-action source remain open",
   "physical_admission_source_Ward_stationarity_GR_closed": false,
   "program_sha256": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
   "proof": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md",
-  "proof_sha256": "bc6d8fe2233bde2bd63e1354d599539a44d60c101e0b341673f10cf7e277a6bb",
+  "proof_sha256": "5f121dc43aa9ea701fe055f72070f95339f607f267d411b1b9ae5e93c1c20ffc",
   "retained_zero_feedback_directions": "12L^4",
   "source_current_decomposition": "r_i=2*m_V^T*alpha_i*m_perp on the owned B curve; r1(0)=2ap and r1_prime(0)=4p^3",
   "status": "PASS"
