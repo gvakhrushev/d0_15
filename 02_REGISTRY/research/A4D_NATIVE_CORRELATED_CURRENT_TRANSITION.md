@@ -314,7 +314,64 @@ derive the complete source/Ward on genuine field variations. Quantitative
 contrast, native stationarity, curved joint roots, soundness/recovery, GR and
 the original fixed-source/raw-owner #310 terminal remain open.
 
-## 8. Evidence boundary
+## 8. The closed record engine does not feed this current source
+
+This cross-owner continuation binds SOURCE baseline
+`0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16`, on top of the original
+correlated-current input recorded at the head of this file.
+
+Compare the actual full-CAR current in sections 3–6 with the already owned
+[closed record engine](A4D_NATIVE_CLOSED_RECORD_ENGINE.md), rather than
+identifying their seeds by name. In occupation-mask coordinates let
+
+    S=span{e_0,e_1,e_14,e_15},   P_S be its orthogonal projector.
+
+The engine seed is `e_1+e_15`. For each of its two literal state-selected
+gates U_+ and U_-, the exact sixteen-column comparison with the native CAR
+gate gives
+
+    U_± S=S,   U_± S^perp=S^perp,
+    P_S alpha_i P_S=0, i=1,2,3.                       (18)
+
+Thus for every nonzero real m in S, not merely for sampled orbit states, the
+section-3 full-current readout at q=eta is J(m)=e_0. Its observer pairing is
+h_J=I. The engine's all-time seed orbit stays in S: the two gates preserve
+that sector, its first two coordinates follow the `lowerStep` recursion in
+the closed-engine Lean capsule, and the existing
+`every_seed_tick_regular` theorem keeps the state-selected sign defined.
+The distinct higher-grade records therefore evolve while this particular
+current, its observer pairing, the section-6 current-defined heat and the
+two-tick current feedback remain constant. For any differentiable matter
+variation confined to S at fixed geometry, the pullback of those
+current-mediated terms is zero. This says nothing about other native price
+terms that may depend on the retained record directly.
+
+The positive source in (17) belongs to a different state sector. The
+whole-blank curve B(x(t),y(t)) has support in masks 0,14,3,13; at the golden
+point its positive rescaling has coordinates m_0=m_14=a and m_3=m_13=p.
+It is outside S and fails the closed engine's own collinear-domain guard
+because m_3 is nonzero (its first-grade m_1 is also zero). The engine does
+not accept this source-active state as an input. Conversely, replacing the
+engine's state by the B curve is not one of its state-selected transitions.
+
+This is an exact decoupling result for this pair of existing owners and this
+current/heat readout: the positive source curve and the indefinitely
+recording engine have not yet been composed into one dynamics. It does not
+exclude another already-owned native interaction or source term, and it is
+not a NO-GO for the D0 core. The next proof must either exhibit an already
+owned, physically admitted operation that couples the retained engine
+record into the current-active sector and derive its variation, or classify
+this engine/current route as closed to that source. No interpolation,
+mixing map or new physical selector is supplied here.
+
+The checker pins the engine program, its exact checker, Lean capsule,
+compiler output/results and proof, compares both signs on all sixteen
+columns, tests both reducing blocks and all three compressed CAR currents,
+and includes negative controls for falsely admitting the source state. The
+all-time step is inherited only through the pinned existing Lean theorem;
+the finite orbit rows are regression controls, not the all-time argument.
+
+## 9. Evidence boundary
 
 The accompanying exact checker retains literal CAR matrices, all components,
 the complex eight-tick identity, full orbit invariant spaces, rotations and

@@ -1294,8 +1294,8 @@
     },
     {
       "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
-      "sha256": "9e06bdf16d7da5a3ecc7899eb9a0b3f103315aa7606a719a01fe497d0de32534",
-      "source_blob": "ffc3eda453e0b3c453b8a4efebd69bf533688acb"
+      "sha256": "04206fd5098b5985e2ecc93c28fccce6234af53e18882c2b9f4f98b75461a4d9",
+      "source_blob": "43f943114a81e2727d5c82917388a8dfee95d9bc"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean",
@@ -2209,8 +2209,8 @@
     },
     {
       "path": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md",
-      "sha256": "ea2f12262b14d447c50ea110998b650a224f9c99adba81c4aa85598c45be38ca",
-      "source_blob": "1abf646c86bd62c65f62ac87e0f3a2182fa940ac"
+      "sha256": "12a3922b4b0fb170f5451e32e6c5af9d8e341317d96883a1b63b348652eaa820",
+      "source_blob": "abcfad24a9b2a6995fe9d8d3c08e6ce7b71a4ba8"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py",
@@ -2219,13 +2219,13 @@
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_check.py",
-      "sha256": "7d61f6199686cfaa6153b737ba5b675b7d95580742874d39e3ee980f750d3199",
-      "source_blob": "3977c3048a4e2bc544f5283c3e5f43e762324462"
+      "sha256": "4a6cf3c0b11b9221386b96269c1762b06fb4ac7911a8bc2bf6249f81e4f66ed8",
+      "source_blob": "72c1954889e814b3be73e7aacb42dcbab69e2fa7"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_certificate.json",
-      "sha256": "ca04ad5a608bb3467459444fd708329b3a5002b1f434b6c04ea82eaef815f9d4",
-      "source_blob": "61f883f226adbe54489dbd8bbe22a3d951c6c009"
+      "sha256": "fa609b9d112d688f1ee4a78586db5ed25fc435041ae055ae73da0afc93af2c0c",
+      "source_blob": "167095aa730e20a49090ba45ebc42b3988581976"
     },
     {
       "path": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.lean",
@@ -2618,7 +2618,7 @@
           "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa"
         }
       },
-      "printed_primary_propositions": "structure D0.Condensed.SolidPhi.SolidGoldenTower : Type\nnumber of parameters: 0\nfields:\n  D0.Condensed.SolidPhi.SolidGoldenTower.stage : \u2115 \u2192 D0.Condensed.SolidPhi.ZPhi\n  D0.Condensed.SolidPhi.SolidGoldenTower.stage_bound : \u2200 (N : \u2115), 0 \u2264 (self.stage N).toReal\nconstructor:\n  D0.Condensed.SolidPhi.SolidGoldenTower.mk (stage : \u2115 \u2192 D0.Condensed.SolidPhi.ZPhi)\n    (stage_bound : \u2200 (N : \u2115), 0 \u2264 (stage N).toReal) : D0.Condensed.SolidPhi.SolidGoldenTower\nD0.Condensed.SolidPhi.zphi_arithmetic_owner :\n  (\u2200 (x y : D0.Condensed.SolidPhi.ZPhi), (x.mul y).toReal = x.toReal * y.toReal) \u2227\n    0 < D0.Condensed.SolidPhi.mu2Rational \u2227 D0.Condensed.SolidPhi.mu2Rational = 12288 / 5\n'D0.Condensed.SolidPhi.zphi_arithmetic_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\nD0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner :\n  (\u2200 (x y : D0.Condensed.SolidPhi.ZPhi), (x.mul y).toReal = x.toReal * y.toReal) \u2227\n    0 < D0.Condensed.SolidPhi.mu2Rational \u2227 D0.Condensed.SolidPhi.mu2Rational = 12288 / 5\n'D0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "printed_primary_propositions": "structure D0.Condensed.SolidPhi.SolidGoldenTower : Type\nnumber of parameters: 0\nfields:\n  D0.Condensed.SolidPhi.SolidGoldenTower.stage : ℕ → D0.Condensed.SolidPhi.ZPhi\n  D0.Condensed.SolidPhi.SolidGoldenTower.stage_bound : ∀ (N : ℕ), 0 ≤ (self.stage N).toReal\nconstructor:\n  D0.Condensed.SolidPhi.SolidGoldenTower.mk (stage : ℕ → D0.Condensed.SolidPhi.ZPhi)\n    (stage_bound : ∀ (N : ℕ), 0 ≤ (stage N).toReal) : D0.Condensed.SolidPhi.SolidGoldenTower\nD0.Condensed.SolidPhi.zphi_arithmetic_owner :\n  (∀ (x y : D0.Condensed.SolidPhi.ZPhi), (x.mul y).toReal = x.toReal * y.toReal) ∧\n    0 < D0.Condensed.SolidPhi.mu2Rational ∧ D0.Condensed.SolidPhi.mu2Rational = 12288 / 5\n'D0.Condensed.SolidPhi.zphi_arithmetic_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\nD0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner :\n  (∀ (x y : D0.Condensed.SolidPhi.ZPhi), (x.mul y).toReal = x.toReal * y.toReal) ∧\n    0 < D0.Condensed.SolidPhi.mu2Rational ∧ D0.Condensed.SolidPhi.mu2Rational = 12288 / 5\n'D0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "actual_scope": "The named owner and its legacy alias prove multiplication compatibility under the real embedding, positivity of an explicitly defined rational constant, and its definitional value. SolidGoldenTower has a ZPhi-valued sequence and nonnegativity only. No TC/THH functor, solid-category exactness/nuclearity, field-dependent heat operator or coupled native preparation is constructed by these declarations.",
       "registry_legacy_release_status": "CORE-FORMALIZED",
       "independent_TC_realization": {
@@ -3793,18 +3793,18 @@
       "next_required_proof": "Derive the owned joint interaction of retained reference, current fields and represented readout, with its full heat/feedback binding and compatible refinement. The actual Jones operator supplies the exact p^3-overlap history code, but universal pure product programming of the two distinct full gates requires orthogonal controller states. Whole-apparatus endpoint transports telescope and have zero feedback source; the proposed self-conditioned whole-blank bridge has an empty one-tick fibre, and its scalar-preserving orientation-retained class fails by five ticks. A constructive golden whole-blank Pauli component stays uniformly faithful for every tick but lies outside the old P1/top-grade field chart. The fixed native AF bimodule pairing is unique; the full density/source fibre remains. All positive site-local grade-orthogonal Grams preserving the actual point/grade readout fail exact adjoint refinement. Use the actual owned interactions and joint admissible curves to pull back the full covector; retain complete reaction/complement sources and genuine chronological misalignment. Then prove physical source/Ward, native stationarity, contrast, curved joint roots and soundness/recovery. Preserve original #310/#202/#317 and all44 contracts; no new action, selector, postulate or role/word census."
     },
     "correlated_current_transition": {
-      "date": "2026-10-13",
-      "source_head": "0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16",
+      "date": "2026-10-14",
+      "source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
       "input_source_head": "074b4223c0cae4aa5b1ad379dcd0a78930da1179",
       "control_input_head": "a17d12cb978a318d17cd37784b39fca8866e5b9d",
       "proof": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md",
       "program": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py",
       "certificate": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_certificate.json",
-      "exact_controls": 385,
-      "executed_mathematical_mutations": 11,
+      "exact_controls": 415,
+      "executed_mathematical_mutations": 13,
       "new_Lean_propositions": 14,
       "actual_owner_axiom_checks": 4,
-      "source_input_pins": 64,
+      "source_input_pins": 71,
       "marginal_readout_obstruction": "Complete proper-SO3 stabilizer obstruction for observer/geometry/system-marginal-only vector readings; standard fixed Pauli substitution fails exact physical spatial covariance. Full correlations or additional owned arguments are required.",
       "passive_archive_boundary": "Every complex growing spectator-isometry transport preserving the specified fresh P1/top chart with one distinguished scalar direction fails by eight ticks. Multiple independent scalar archive slots/different readings are outside this chart.",
       "constructive_full_current": "Actual creator-plus-adjoint temporal operator times creator-minus-adjoint spatial operator supplies selfadjoint Clifford composites; normalized full-matter reading is future causal and jointly covariant with retained reference/form/matter.",
@@ -3813,7 +3813,7 @@
       "uniform_source": "Full heat derivative Hprime>Kprime/486000>0 at fixed beta=log2 for every L>=2. Analytic full Fourier/Gaussian bound, exact rational steps and literal finite matrix controls; no mesh-dependent temperature.",
       "complete_feedback_scope": "Two equal current-observer ticks have complete periodic pencil(1-4zp^3)^(4L^4) with zero derivative. The genuine misaligned chronology remains a separate nonconstant experiment; not substituted or discarded.",
       "provenance": "14 new narrow Lean kernels and4 actual owner axiom closures, 12 diagnostic checks and11 full definition/proposition prints, complete40D0 source/object closure plus48object pins and unchanged original cache. Actual output axiom/statement sets and receipt mutations checked.",
-      "proof_status": "Named matrix/Clifford/Cauchy/positive-chart/current derivative/rational source-normalization kernels Lean-proved. Complete-group, all-time orbit, all-L Fourier estimates analytic with exact finite controls. Physical admission/selection of constructed reading remains open.",
+      "proof_status": "The earlier matrix/Clifford/Cauchy/current-jet/heat-normalization Lean kernels remain pinned. The new full-16 cross-owner gates/current compression pass exact controls; all-time sector membership uses the pinned existing engine Lean theorem. Physical admission, source/Ward, stationarity, refinement and GR remain open.",
       "physical_source_Ward_stationarity_curved_roots_GR_closed": false,
       "new_action_selector_postulate_or_compensator": false,
       "source_artifact_count": 448,
@@ -3823,35 +3823,41 @@
       "all_44_contracts_and_original_parent_terminals_unchanged": true,
       "next_required_proof": "Derive an owned full-correlation interaction on actual jointly admitted native states, with its represented readout, complete heat/feedback binding and compatible refinement. The old marginal-only Pauli vector loses proper spatial covariance. Passive spectator isometries, including archive growth, cannot remain in the fresh P1/top chart with one distinguished scalar line through eight ticks; different archive readings are outside that class. The actual full CAR composites give a joint-covariant causal current and a uniformly timelike golden orbit. Its exact homogeneous stored-operator heat derivative is strictly positive at fixed beta=log(2) uniformly in every L>=2; two equal current-observer record ticks do not cancel it. A physical interaction must retain its full joint source or derive the opposite response from its own equations; the distinct nonconstant chronological experiment must be included if used. Physical admission/selection of this reading, complete field source/Ward, native stationarity, quantitative contrast, curved joint roots and soundness/recovery remain required. Preserve original #310/#202/#317 and all44 contracts; no new action, selector, postulate or role/word census.",
       "ci_portability_repair": {
-        "source_head": "0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16",
-        "input_source_head": "8a21b7e52185d2d6375a6647874c867ff9147d8d",
-        "control_input_head": "c90c6e03456f8c4f85fc9aef518c475ddd4904f8",
+        "source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
+        "input_source_head": "0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16",
+        "control_input_head": "43c9817c892baf8bc0a43100e2e4d9fa1ed26a9f",
         "failed_run": 38452966520,
         "cause": "Default replay tried to read temporary macOS objects on Linux.",
         "resolution": "Strict immutable output/propositions/axioms/SOURCE and archived pin consistency in portable default; explicit runtime-check additionally hashes actual original-machine objects/compiler/cache.",
-        "exact_controls": 385,
-        "negative_controls": 11,
+        "exact_controls": 415,
+        "negative_controls": 13,
         "local_runtime_audit": "PASS",
-        "portable_original_files_unavailable_audit": "PASS",
+        "portable_original_files_unavailable_audit": "PRIOR_SOURCE_HEAD_PASS; current-head CI pending",
         "mathematical_Lean_results_unchanged": true,
         "scientific_artifacts": 448,
         "prior_unchanged": 444,
         "updated_existing": 4,
         "new_artifacts": 0,
         "current_head_CI": "PENDING"
-      }
+      },
+      "continuation_input_source_head": "0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16",
+      "closed_record_engine_controls": 24745,
+      "closed_record_engine_mutations": 15,
+      "closed_record_engine_regression_ticks": 4096,
+      "cross_owner_decoupling": "Exact closed-engine/current-source decoupling: the seed orbit stays in span{e0,e1,e14,e15}, where all three spatial current compressions vanish; the positive-source curve occupies masks 0,14,3,13 and lies outside the engine domain. This scoped route is not a D0-core NO-GO.",
+      "immediate_next_proof": "Find an already-owned, physically admitted operation that transfers the closed engine retained record from its current-null sector into the current-active source sector, and derive its actual joint variations/price; otherwise close this specific route. Do not add a mixing map or selector. Then retain the full source/Ward, stationarity, refinement, curved-root, soundness/recovery and GR obligations."
     },
     "correlated_current_portability": {
-      "source_head": "0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16",
-      "input_source_head": "8a21b7e52185d2d6375a6647874c867ff9147d8d",
-      "control_input_head": "c90c6e03456f8c4f85fc9aef518c475ddd4904f8",
+      "source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
+      "input_source_head": "0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16",
+      "control_input_head": "43c9817c892baf8bc0a43100e2e4d9fa1ed26a9f",
       "failed_run": 38452966520,
       "cause": "Default replay tried to read temporary macOS objects on Linux.",
       "resolution": "Strict immutable output/propositions/axioms/SOURCE and archived pin consistency in portable default; explicit runtime-check additionally hashes actual original-machine objects/compiler/cache.",
-      "exact_controls": 385,
-      "negative_controls": 11,
+      "exact_controls": 415,
+      "negative_controls": 13,
       "local_runtime_audit": "PASS",
-      "portable_original_files_unavailable_audit": "PASS",
+      "portable_original_files_unavailable_audit": "PRIOR_SOURCE_HEAD_PASS; current-head CI pending",
       "mathematical_Lean_results_unchanged": true,
       "scientific_artifacts": 448,
       "prior_unchanged": 444,
@@ -3864,7 +3870,7 @@
   "native_core_changes": false,
   "parent_retirement": false,
   "positive_gr": "OPEN",
-  "previous_source_head": "8a21b7e52185d2d6375a6647874c867ff9147d8d",
+  "previous_source_head": "0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16",
   "review_scope": [
     "Affine stationary-profile completed-contrast obstruction with declared hypotheses.",
     "Homogeneous mixed-parent standalone contrast obstruction with declared hypotheses.",
@@ -3969,10 +3975,11 @@
     "Complete full16 stored Lorentz/observer adjoint class and GL exception; all24 connection directions and exact nonlinear metric image; nonintegrable joint jet; full positive-pairing/projector/unitary tangent and bootstrap covector with Gram contribution and internal Ward. Exact golden four-level scope retained. Native binding, physical source/Ward, roots and GR remain open.",
     "Full16 arbitrary-positive diagonal pairing obstruction for the actual scaled cochain refinement; exact compression reaction and moving-Gram source/internal Ward; complete nonlocal repair with thermally essential complement modulus; complete site-density extension and its metric/image boundary. Native preparation, quantitative source transfer, physical Ward, roots and GR remain open.",
     "Exact actual Jones history code and universal controller condition; complete native AF bimodule pairing; moving-W endpoint source and own-chart transition boundaries; all-time faithful golden Pauli component; full local-grade Gram adjoint obstruction; existing four-level/delta cross-owner bridge. Native joint interaction, field source/Ward, stationarity, contrast, curved roots and GR remain open.",
-    "Marginal-only spatial-covariance obstruction; full complex growing-spectator eight-tick chart boundary; constructive correlated CAR current and all-time timelike component; actual homogeneous full16 operator binding and fixed-beta all-L source; full static feedback experiment and strict Lean provenance. Physical admission, complete source/Ward, stationarity, transfer, curved roots and GR remain open."
+    "Marginal-only spatial-covariance obstruction; full complex growing-spectator eight-tick chart boundary; constructive correlated CAR current and all-time timelike component; actual homogeneous full16 operator binding and fixed-beta all-L source; full static feedback experiment and strict Lean provenance. Physical admission, complete source/Ward, stationarity, transfer, curved roots and GR remain open.",
+    "Exact closed-engine/current-source decoupling: the seed orbit stays in span{e0,e1,e14,e15}, where all three spatial current compressions vanish; the positive-source curve occupies masks 0,14,3,13 and lies outside the engine domain. This scoped route is not a D0-core NO-GO."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
-  "source_head": "0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16",
+  "source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
   "source_pr": 310

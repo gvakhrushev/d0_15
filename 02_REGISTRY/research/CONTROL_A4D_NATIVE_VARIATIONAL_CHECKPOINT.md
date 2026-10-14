@@ -3,8 +3,8 @@
 Task: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
 Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
-`0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16`, following
-`8a21b7e52185d2d6375a6647874c867ff9147d8d`.
+`39dbaecfb6e1c316c25c6d1898711a74164559ea`, following
+`0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16`.
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
@@ -22,6 +22,24 @@ All 448 artifacts match remote SOURCE; 444 prior files remain unchanged,
 four existing files are updated, no new artifact is added. All 44 graph
 contracts and the dated preflight plan are unchanged. Current-head CI and
 independent CONTROL review remain required; all physical parent gates open.
+
+**Closed-engine/current-source decoupling, 2026-10-14.**
+[The correlated-current proof](A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md)
+compares both actual closed-engine CAR gates across all sixteen masks. The
+all-time seed orbit remains in `span{e_0,e_1,e_14,e_15}`, where every
+spatial current compression vanishes and the current-defined heat/feedback
+is constant. The positive source curve lies in masks 0, 14, 3, 13 and is
+rejected by the engine's certified transition domain. This is a scoped
+failure to compose these owners, not a core NO-GO.
+
+The correlated-current certificate passes 415 exact
+checks and 13 negative controls;
+the existing engine certificate passes 24745 checks
+and 15 negative controls,
+including its 4096-tick regression. The local original Lean-runtime audit
+passes. New current-head CI and independent CONTROL review remain required.
+Native admission, source/Ward, stationarity, refinement, curved roots,
+soundness/recovery, GR and original parent terminals remain open.
 
 **Full correlated current and fixed-beta source, 2026-10-13.**
 [The correlated-current proof](A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md)

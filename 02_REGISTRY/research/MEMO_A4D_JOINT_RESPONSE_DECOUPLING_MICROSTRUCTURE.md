@@ -4459,3 +4459,31 @@ compiler output, SOURCE closure and object-pin consistency on any runner.
 The explicit original-machine `--runtime-check` separately verifies physical
 objects, compiler and unchanged cache. CI is not reported as a new compilation
 of the research capsule. No temporary macOS directory is required on Linux.
+
+## Closed record engine and correlated-current source do not yet compose (2026-10-14)
+
+The exact sixteen-component CAR comparison now binds the actual closed-record
+engine to the current/heat construction. Its state-selected positive and
+negative gates both preserve and reduce
+`span{e_0,e_1,e_14,e_15}`. Every spatial CAR-current operator compresses to
+zero there, so the full current equals `e_0` and its observer pairing is the
+identity for every nonzero state in that sector. The engine's seed orbit
+remains in this sector by its gate invariant and the existing Lean
+`every_seed_tick_regular` theorem. Its stored higher-grade states can change
+while this current-defined heat and two-tick feedback stay fixed.
+
+The strictly positive fixed-beta heat derivative belongs to the separate
+whole-blank curve supported on masks 0, 14, 3, 13. That curve has nonzero
+mask-3 component, lies outside the engine's certified collinear domain, and
+is rejected by its actual transition. This closes one proposed source route:
+the established closed engine plus the established current/heat readout do
+not yet provide a single dynamics that both records the seed history and
+generates that source. It is a scoped decoupling result, not a core NO-GO;
+other native price terms and already-owned interactions remain possible.
+
+The next critical proof is an existing-owner transition coupling the engine's
+retained record into the current-active sector, with its own allowed
+variations, or a proof that the specific route is closed. No blending map or
+new physical selector is introduced. Native admission, source/Ward,
+stationarity, refinement, curved roots, soundness/recovery, GR and the
+original #310/#202/#317 terminals remain open.
