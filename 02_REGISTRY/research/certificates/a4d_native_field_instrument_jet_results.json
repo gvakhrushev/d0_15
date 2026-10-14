@@ -1,0 +1,79 @@
+{
+  "schema": "d0-native-field-instrument-jet-boundary/1",
+  "status": "PASS_TWO_COMPLETIONS_SAME_BASE_DISTINCT_EXACT_SOURCE_JETS",
+  "input_source_head": "f1270f63cffa5fcfc27b469ff2517d8398d5362a",
+  "input_sha256": {
+    "src/moving_preparation_exact.py": "1b3d0f5e10a59ca97daaf06744d6fe1429e7643dd350523b897ca9e2b287bc06",
+    "proofs/MOVING_PREPARATION_SOURCE_RU.md": "67bea08cc8a39f49fe92f6d679eabe9d1ae2df7daee260dfe55c23641d45cb61",
+    "results/moving_preparation_exact.json": "dec95b219a55d5cd39e8e65bfc6f538cf4be1fa43630cc5c14ee96ce97f7470f"
+  },
+  "source_v3_receipt": {
+    "status": "PASS",
+    "exact_controls": 169,
+    "physical_admission": false,
+    "complete_H_J_R_closed": false
+  },
+  "probe": {
+    "reference_returns_commute": true,
+    "probe_coordinate": "xi(t)=t, same unit calibration in both completions",
+    "count_budget": 3,
+    "fixed_recorded_event": [
+      1,
+      2
+    ],
+    "initial_density": "I/4",
+    "kinetic_operator_spectrum": [
+      0,
+      6,
+      4,
+      6
+    ]
+  },
+  "exact_shared_base": {
+    "acceptance_probability": "144*p - 177/2",
+    "prepared_cost": "380/71 - 12*p/71"
+  },
+  "completions": [
+    {
+      "jet_scale": 1,
+      "prepared_source_derivative": "1644*p/5041 + 17733/5041"
+    },
+    {
+      "jet_scale": 2,
+      "prepared_source_derivative": "3288*p/5041 + 35466/5041"
+    }
+  ],
+  "checks": [
+    "reference_returns_are_unitary",
+    "reference_returns_commute",
+    "generators_are_hermitian",
+    "owned_reference_kinetic_spectrum",
+    "same_base_acceptance_probability",
+    "same_base_normalized_cost",
+    "exact_fixed_event_probability",
+    "exact_reference_cost",
+    "completion_one_exact_source_jet",
+    "completion_two_exact_source_jet",
+    "same_fixed_calibration_preserves_distinct_jets",
+    "event_probability_is_positive",
+    "source_jet_is_positive",
+    "the_two_source_jets_are_distinct",
+    "unitary_tangent_for_both_completions",
+    "REJECT_freeze_the_prepared_density",
+    "REJECT_one_baseline_selects_a_unique_field_jet",
+    "REJECT_variations_must_preserve_reference_commutativity"
+  ],
+  "exact_controls": 18,
+  "negative_controls": [
+    "freeze_the_prepared_density",
+    "one_baseline_selects_a_unique_field_jet",
+    "variations_must_preserve_reference_commutativity"
+  ],
+  "missing_datum": "the admitted map from coframe/link field variations to unitary-return tangents (including its scale and constraints)",
+  "physical_source_or_stress_claim": false,
+  "D0_native_admission_of_either_completion": false,
+  "G0_or_GR_closed": false,
+  "new_Lean_compilation": false,
+  "checker_sha256": "33e7b126abaab142e5795d82c1b6df8602064dd654e284b8d9032f169c274a5d",
+  "proof_sha256": "dccaf6352132f140529f98e7e483a731b598c889c4c8cc77818f2fe90c7147b5"
+}

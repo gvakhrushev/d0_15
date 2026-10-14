@@ -878,3 +878,24 @@ physical-response nonuniqueness, canonical-action nonexistence, a selected
 zero geometric action, a closed G0, and disappearance of the four map
 premises. The supported D0 source tree remains unchanged; this is a
 source-bound research capsule, not a supported-owner promotion.
+
+## 9. Exact boundary for the field-to-instrument tangent
+
+The v3 moving-preparation result now has a direct two-completion test at its
+unresolved field interface. With the same commuting reference returns, event,
+initial density and fixed probe calibration, two smooth unitary-return maps
+give the exact prepared-cost derivatives
+\[
+  \frac{1644p+17733}{5041}
+  \quad\text{and}\quad
+  2\frac{1644p+17733}{5041},
+  \qquad p=(\sqrt5-1)/2.
+\]
+The exact matrix calculation, input hashes and scope boundary are recorded
+in [A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md](A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md)
+and its adjacent certificate. This proves that the declared instrument
+interface does not determine a field response until the coframe/link-to-return
+tangent is supplied. It does **not** prove two D0-admitted physical completions
+or physical stress nonuniqueness: that admission map is exactly the missing
+datum. Consequently `physical_response_nonuniqueness_proved` remains false,
+G0 stays open, and the source/Ward/refinement/GR obligations are unchanged.

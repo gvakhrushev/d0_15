@@ -255,7 +255,7 @@
   "global_closure": "OPEN",
   "input_head": "fe116b56f9413cc2cd4e80f375cff1cc50d337f7",
   "inputs_sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md": "08ecf984cdcb39fd9c5d5e8ed5d8e5b6f61ffc9dac51cacf1d4f10a714b35428",
+    "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md": "56d93d0682feb3e5ef096a736f84a9ddb7b4684905208fbcee539e16a113825e",
     "02_REGISTRY/research/APARENT_FINITE_GRAVITY_COMMON_ACTION_SELECTOR.md": "b95d5f631fb9c5936fe61964e73c3f373ea3f9deefb0fae037c7a760d6535ff5"
   },
   "lean_receipt_sha256": "405081f6453df4850f2dfd3766dcbb4615aa0ef80cd58ae00378d15e7f40c4f3",
