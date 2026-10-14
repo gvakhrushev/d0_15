@@ -318,3 +318,72 @@ frame covariance, retained memory and physical admission are established.
 Alternatively derive a permitted correlated nonblank initial preparation.
 Adding another edge-reversal controller that acts only outside the
 matter subspace cannot satisfy this target.
+
+
+## 7. Proper spatial symmetry fixes the exact missing input type
+
+The finite full-Fock obstruction can be stated independently of a
+particular compiled word. At fixed \(q=\eta,u=e_0\), the stabilizer of
+the retained reference contains \(SO(3)\). It acts by its **actual
+exterior lift**, preserving all sixteen masks. Let \(R_{12}\) and
+\(R_{23}\) be the two exact \(90^\circ\) spatial quarter-turns in the
+\(e_1e_2\) and \(e_2e_3\) planes, and \(E_{12},E_{23}\) their full
+sixteen-dimensional exterior matrices. The exact rational calculation
+gives
+
+\[
+\operatorname{rank}(E_{12}-I)=8,\qquad
+\operatorname{rank}
+\begin{bmatrix}E_{12}-I\\E_{23}-I\end{bmatrix}=12,
+\quad
+\ker(E_{12}-I)\cap\ker(E_{23}-I)=V.
+\tag{16}
+\]
+
+Every vector of \(V\) is already fixed by *all* proper spatial
+rotations: its masks are the scalar, temporal first grade,
+spatial orientation volume, and full four-volume. Thus (16)
+establishes exactly
+
+\[
+(\Lambda^*\mathbb R^4)^{SO(3)}=V,
+\tag{17}
+\]
+
+without approximating the group by a sampled angle or discarding any
+spectator grades. One quarter-turn alone leaves eight directions;
+using only it would be an insufficient symmetry test.
+
+Now consider **any** operation \(T\), linear or nonlinear, equivariant
+under this stabilizer, whose other inputs are scalar/unchanged under
+proper spatial rotations (for example, a controller or archive
+label with no represented spatial orientation). An invariant input
+\(\psi\) obeys \(E(g)\psi=\psi\), hence
+
+\[
+E(g)T(\psi)=T(E(g)\psi)=T(\psi)\quad\forall g\in SO(3).
+\]
+
+By (17), \(T(\psi)\in V\); by (4), its spatial CAR current is zero.
+For scene/controller Hilbert factors carrying the trivial \(SO(3)\)
+action, the same argument uses \(H_{\rm record}\otimes V\).
+This holds for arbitrary record-dependent equivariant **nonlinear**
+updates as well as the fixed word of Section 6; it is not an
+operator-counting or bounded-word no-go.
+
+**Necessary new input type (not an installed primitive):**
+an allowed spatially transforming relative datum (e.g. a genuine
+coframe/link/matter correlation with an owned comparison interface),
+or a physically justified non-\(SO(3)\)-invariant preparation, must
+enter before a nonzero vector can be selected from the invariant
+blank state. The nonblank witness (9) supplies that spatial direction
+as initial state data, not as a derivation from M1. A simultaneously
+transported frame change, which transports the reference and all
+readouts, is just covariance and cannot be mistaken for generated
+relative current.
+
+Equation (17) is a **precise symmetry gate** on the same G0b
+physical-admission obligation. It does not classify fields that
+carry nontrivial spatial representations, prohibit spontaneous
+symmetry breaking in larger admissible models, or produce a physical
+source/Ward theorem.
