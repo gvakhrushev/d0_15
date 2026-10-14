@@ -484,6 +484,28 @@ been classified completely for the stated signed gate
 class and cannot by itself supply a nonzero matter-source
 on this fibre.
 
+An explicit nonzero-versus-zero differential makes the inference
+firewall observable on the same 16-component carrier.
+Perturb only \(m_6\) in the positive-witness state (9), writing
+\(m_6(t)=1+t\) while \(m_1=m_{15}=1\).
+The owned normalized full-CAR expectation is
+
+\[
+r_3(t)=\frac{2(1+t)}{3+2t+t^2},
+\qquad r_3'(0)=\frac29\ne0.
+\tag{22}
+\]
+
+The initial observer sign remains positive; this is an actual
+same-carrier matter curve in the regular collinear band.
+The whole native signed two-tick feedback and homogeneous Hodge
+operator remain fixed, so their **combined matter derivative is zero**.
+Thus this is a sharp example where \(DR_{\rm CAR}[\dot m]\ne0\)
+but \(d_mS_{\rm native}[\dot m]=0\) for this restricted
+heat-plus-feedback interface. It does not assert that the full
+D0 field action has zero matter derivative or that this tangent
+has independently been physically admitted.
+
 **Return immediately to the T0 owner obligation, without
 another symmetry or word search:** derive from the actual
 physical preparation one joint field/readout rule which
