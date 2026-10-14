@@ -145,6 +145,35 @@ for op in alpha:
 # The last compression holds for EVERY correlated state in the scene/V
 # product space, not just for a tensor-product prepared seed.
 
+# Exact SO(3) fixed-space classifier without continuous-angle sampling:
+# the two orthogonal 90-degree spatial rotations already have common
+# fixed space V on the whole exterior algebra. A single rotation is NOT
+# enough (eight fixed coordinates); the joint rank is 12 and hence dim 4.
+R12 = S.eye(4)
+R12[1,1],R12[1,2],R12[2,1],R12[2,2] = 0,-1,1,0
+R23 = S.eye(4)
+R23[2,2],R23[2,3],R23[3,2],R23[3,3] = 0,-1,1,0
+subsets={mask:tuple(i for i in range(4) if mask & (1<<i))
+         for mask in range(16)}
+def exterior(F):
+    out=S.zeros(16)
+    for row,ir in subsets.items():
+        for col,ic in subsets.items():
+            if len(ir)==len(ic):
+                out[row,col]=F.extract(ir,ic).det() if ir else S.Integer(1)
+    return out
+E12,E23=exterior(R12),exterior(R23)
+assert E12.T*E12 == I and E23.T*E23 == I
+assert (E12-I).rank()==8
+combined=(E12-I).col_join(E23-I)
+assert combined.rank()==12
+for i in seed_sector:
+    assert combined[:,i]==S.zeros(32,1)
+# This exact rank/nullspace identity proves Fix_{SO(3)}(Fock16)=V:
+# any SO(3)-equivariant linear or nonlinear map on an invariant seed
+# remains in V unless an additional spatially transforming datum is
+# part of its input.
+
 # Hostile controls: old seed cannot spontaneously become spatial-current active;
 # changing current readout alone cannot retain endpoint isometry.
 assert any(alpha[i].extract(sector,sector) != S.zeros(10) for i in range(3))
