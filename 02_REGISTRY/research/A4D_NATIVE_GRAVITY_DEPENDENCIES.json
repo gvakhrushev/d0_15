@@ -1395,6 +1395,27 @@
       "full_core_no_go": false,
       "next": "Prove or refute that the existing native transition uses each oriented affine shift as its record ray. If it does, bind the same-edge normalized readout, full-support preparation, link Euler equation and refinement to the complete joint action; then combine all owned heat/action terms with the now-computed candidate ten-slot covector before comparing the total source with rho0. Preserve the scoped SO3 obstruction at b=0 and introduce no new selector."
     },
+    "archive_source_completion": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_ARCHIVE_SOURCE_COMPLETION.md",
+      "full_proof": "02_REGISTRY/research/sources/d0_archive_source_completion_v6_2026-10-14/A4D_NATIVE_ARCHIVE_SOURCE_COMPLETION.md",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_archive_source_completion_check.py",
+      "receipt": "02_REGISTRY/research/sources/d0_archive_source_completion_v6_2026-10-14/archive_source_receipt.json",
+      "calculation_input_head": "350470a5440254084065f16a8cdd5edcfd483e18",
+      "v4_v5_publication_head": "4d81321bb9543a62ba157bf362289d98793e4d03",
+      "status": "EXACT_FINITE_SOURCE_BOOKKEEPING",
+      "exact_controls": 263,
+      "negative_controls": 13,
+      "checks_sha256": "45c766c11181fbd35e5f94b7e63a933fb068672af377687b8686b6b67a5acfcc",
+      "proof_sha256": "7bab14f9ce918f25e7f5b90a845fcd279f9dd3531a90ac30c7198dc4c26b0e7f",
+      "checker_sha256": "3c5368cb5826066399bfa6a587c04614a26084c48eb2a3eb769c2bfd20624436",
+      "derived": "For a supplied finite tensor cut, full selfadjoint L, normalized full preparation rho and fixed beta, the full heat-plus-matter price equals its retained K=-log(Tr_A exp(-beta L))/beta price plus the forced C_A=Tr rho(L-K tensor I). Its full noncommuting derivative retains d rho, dL and DK; additive-reference interaction and moving-preparation examples show that reduced thermal marginals do not determine this source. C_A cannot be selected to cancel another covector.",
+      "response_map_is_positive_channel": false,
+      "physical_native_cut_derived": false,
+      "field_to_instrument_tangent_derived": false,
+      "native_chronological_J_identified": false,
+      "GR_or_original_parent_closed": false,
+      "next": "Bind the actual native full operator L, retained/archive algebras, preparation rho and their joint field tangent before evaluating C_A or its derivative. Keep all price terms and the candidate metric covector; do not replace the physical archive by K or choose a cancellation."
+    },
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
       "original_weighted_jet_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
