@@ -1494,6 +1494,22 @@
       "G0_GR_or_parent_terminal_closed": false,
       "next": "Unchanged from conditional_endogenous_preparation. This separation does not supply a local record law that reads b_e, and it does not compare the ten-slot covector with rho0."
     },
+    "conditional_covariant_shift_open_torsion_ray": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_COVARIANT_SHIFT_OPEN_TORSION_RAY.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_covariant_shift_open_torsion_ray",
+      "status": "CONDITIONAL_CONSTANT_SHIFT_PATH_SUM_AND_ZERO_OPEN_TORSION",
+      "derived": "For every edge carrying the identity linear part and one common translation b, the owned covariant sum is b on one forward step, -b on one backward step, and 2b on two forward steps. Open torsion of every face is 0, including at b=e_0 where the forward step equals the positive unit ray. The forward step equals that ray exactly when b is already the ray, including b=-e_0, and it is not the ray at b=2e_0. Based torsion agrees on this identity family and differs on a swap-link witness; that difference is the already owned holonomy clause. This evaluation does not normalize b, select a record, or compare the ten-slot covector with rho0.",
+      "constant_identity_forward_equals_b": true,
+      "forward_value_is_the_normalization_map": false,
+      "open_torsion_vanishes_for_every_connection": false,
+      "based_torsion_equals_open_torsion_for_every_connection": false,
+      "path_algebra_reproved": false,
+      "same_edge_record_readout_selected": false,
+      "ten_slot_total_source_compared": false,
+      "whole_core_interface_exhausted": false,
+      "G0_GR_or_parent_terminal_closed": false,
+      "next": "Unchanged from conditional_endogenous_preparation. This path sum and open torsion do not supply a local record law that reads b_e, and they do not compare the ten-slot covector with rho0."
+    },
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
       "original_weighted_jet_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
