@@ -1,0 +1,82 @@
+{
+  "candidate": {
+    "fixed_event": "1<=error_count<=2",
+    "initial_state": "I_16/16",
+    "relative_variation": "n_0(t)=cos(t)e_0+sin(t)e_1; other returns fixed",
+    "returns": "record(I_4,e_r), r=0..3, on the actual 16D full-Fock carrier",
+    "rounds": 3,
+    "v3_commuting_reference_theorem_used": false
+  },
+  "checker_sha256": "0c972c55373ab2607514e2f6a1d6bcc60e6b0606dc07701b316c355dc5d2847f",
+  "checks": [
+    "PURE_FRAME_NULL_RESULT_CONSUMED",
+    "PURE_FRAME_TRANSITIVE_INPUT_PIN",
+    "PURE_FRAME_TRANSITIVE_INPUT_PIN",
+    "PURE_FRAME_TRANSITIVE_INPUT_PIN",
+    "PURE_FRAME_TRANSITIVE_INPUT_PIN",
+    "PURE_FRAME_TRANSITIVE_INPUT_PIN",
+    "PURE_FRAME_TRANSITIVE_INPUT_PIN",
+    "PURE_FRAME_TRANSITIVE_INPUT_PIN",
+    "FOUR_ACTUAL_NATIVE_FULL_FOCK_RETURNS_ORTHOGONAL",
+    "REFERENCE_HAS_NONCOMMUTING_RETURNS",
+    "RELATIVE_OBSERVER_PATH_IS_TANGENT_TO_UNIT_SPHERE",
+    "NATIVE_RELATIVE_RETURN_JET_IS_UNITARY",
+    "FOUR_GOLDEN_KRAUS_PAIRS_ARE_TRACE_PRESERVING",
+    "EXACT_EVENT_PROBABILITY",
+    "EXACT_EVENT_PROBABILITY_DERIVATIVE",
+    "EXACT_NORMALIZED_REFERENCE_COST",
+    "EXACT_FULL_PREPARED_SOURCE_JET",
+    "REJECT_SOURCE_JET_VANISHES",
+    "REJECT_FREEZE_PREPARED_STATE",
+    "REJECT_DROP_EVENT_NORMALIZATION_DERIVATIVE",
+    "TOTAL_COUNT_STATE_TRACE_IS_ONE",
+    "TOTAL_COUNT_STATE_JET_TRACE_IS_ZERO",
+    "GOLDEN_ROOT_INTERVALS_EXACT",
+    "EVENT_PROBABILITY_STRICTLY_POSITIVE_BY_RATIONAL_INTERVAL",
+    "EXACT_DEGREE_FOUR_FIELD_REDUCTION",
+    "SOURCE_JET_STRICTLY_POSITIVE_BY_RATIONAL_INTERVAL"
+  ],
+  "exact_controls": 26,
+  "exact_values": {
+    "event_probability": "-102*a*p + 63*a + 255*p/8 - 309/16",
+    "event_probability_derivative": "221/16 - 179*p/8",
+    "event_probability_rational_lower_bound": "53661/250000",
+    "full_prepared_source_derivative": "(-17097116*a*p + 10566598*a + 9221682*p - 5699312)/(1233792*a*p - 762528*a + 3019248*p - 1865985)",
+    "reduced_source_derivative": "2*(418298977134234*A**3 + 47136853411765*A**2 - 266996949536729*A - 17948253838120)/346943031568563",
+    "reference_prepared_cost": "(9856*a*p - 6084*a + 8044*p - 4990)/(544*a*p - 336*a - 170*p + 103)",
+    "source_polynomial_rational_lower_bound_numerator": "260432886291208272219/62500000"
+  },
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_RECORD_FRAME_JET_BOUNDARY.md": "91b036e6c8b793bce1597b64041b50185acf3a9877507b756a8e9bcddec1699f",
+    "02_REGISTRY/research/certificates/a4d_native_coframe_record_frame_jet_check.py": "c21d75f46bc456dfbf23f7874bda3d8cd89a876f56f73f486c995d35ae029edf",
+    "02_REGISTRY/research/certificates/a4d_native_coframe_record_frame_jet_results.json": "9f2ffde6f17a9cd1b6c46817450b86d7b77c6130155d501e15ee773c1d71fa02",
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_certificate.json": "8cba34862bf6af48c8c49d75c5e3a5a2a80948f9f0bf2e1818c42f43b370a238",
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078",
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_results.json": "4c28dd449b844e5a8332d56d457c2bbcd83853069563542dc12f0238439510a8",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json": "0b91e13d823568898a006dd468f9963ffbbc1949f0976a21e8530af465ecfbbe",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
+    "02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/continuation_v3/proofs/MOVING_PREPARATION_SOURCE_RU.md": "67bea08cc8a39f49fe92f6d679eabe9d1ae2df7daee260dfe55c23641d45cb61",
+    "02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/continuation_v3/results/moving_preparation_exact.json": "dec95b219a55d5cd39e8e65bfc6f538cf4be1fa43630cc5c14ee96ce97f7470f",
+    "02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/continuation_v3/src/moving_preparation_exact.py": "1b3d0f5e10a59ca97daaf06744d6fe1429e7643dd350523b897ca9e2b287bc06"
+  },
+  "negative_controls": [
+    "SOURCE_JET_VANISHES",
+    "FREEZE_PREPARED_STATE",
+    "DROP_EVENT_NORMALIZATION_DERIVATIVE"
+  ],
+  "proof_sha256": "13be48d9a1c6cc2275d025d906840b9df7996e4756e207fe2e32d4c108bde7d4",
+  "schema": "d0-native-relative-observer-source-jet/1",
+  "scope": {
+    "D0_native_action_or_joint_Ward_derived": false,
+    "G0_closed": false,
+    "curved_native_root_or_GR_derived": false,
+    "four_native_observer_records_physically_admitted_as_v3_returns": false,
+    "native_record_operator_used": true,
+    "new_Lean_declarations": 0,
+    "nonzero_relative_observer_prepared_cost_jet": true,
+    "original_parent_terminals_changed": false,
+    "pure_common_frame_metric_source": "ZERO_BY_SEPARATE_EXACT_CERTIFICATE",
+    "source_subtracted_metric_cotangent_or_rho0_projection": false
+  },
+  "status": "PASS_EXACT_POSITIVE_FULL_PREPARATION_SOURCE_JET"
+}
