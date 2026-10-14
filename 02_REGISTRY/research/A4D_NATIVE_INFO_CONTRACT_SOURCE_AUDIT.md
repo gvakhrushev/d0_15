@@ -114,3 +114,25 @@ selects no physical entropy. The quantitative witness is replayed by:
 ```sh
 python 02_REGISTRY/research/certificates/a4d_native_coherent_af_cost_info_check.py
 ```
+
+## Subsequent positive result: the branch cocycle, conditional on the owner binding
+
+The exact pathwise equation is now proved for the complete direct/return
+instrument in
+[A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md](A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md):
+if Book III's path weight is the measured history probability `qρ`, and its
+`Cost` is the owned golden prefix length, then there is one branch-level
+information value,
+`Infoρ(ω)=log_φ(qρ(ω)/μ(ω))`. Its conditional increments telescope, its
+likelihood is compatible with every refinement, and its derivative contains
+both the changing prepared state and changing return effects. This is a
+constructive derivation for that owner binding, not an entropy choice.
+
+The two bindings themselves are still not proved for the full physical D0
+history: `ActionProtocol` has no `Info` field, zero-probability branches need
+an owned support convention, and the result is on the outcome algebra rather
+than a selected full-state operator entropy. The next obligation is therefore
+to derive the bindings from the existing verification/preparation/composition
+owners, or classify their complete admissible fiber, before carrying this
+source to the ten metric components. G0, Ward, curved roots, GR and all parent
+terminals remain open.
