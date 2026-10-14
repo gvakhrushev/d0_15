@@ -1393,7 +1393,7 @@
       "finite_time_mixing_rate_certified": false,
       "candidate_channel_covariant_from_symmetric_q_D_b_m_alone": false,
       "full_core_no_go": false,
-      "next": "Prove or refute that the existing native transition uses each oriented affine shift as its record ray. If it does, bind the same-edge normalized readout, full-support preparation, link Euler equation and refinement to the complete joint action; then combine all owned heat/action terms with the now-computed candidate ten-slot covector before comparing the total source with rho0. Preserve the scoped SO3 obstruction at b=0 and introduce no new selector."
+      "next": "The direct route through ArchiveAffineExteriorLink, archiveAffineLinkedHodgeDirac and archiveSolderedDirac is ruled out: all are invariant under changes of affine shift at fixed linear links (see conditional_archive_shift_blindness). Do not infer b_e->n_e from these transports. The next arrow is a separate already-owned local record/preparation law that reads b_e, with its action, joint variation, full-support preparation and refinement; if none exists, prove completeness of the actual interface before claiming obstruction. Then combine all owned heat/action terms with the candidate ten-slot covector and compare the total source with rho0; keep parent terminals open."
     },
     "archive_source_completion": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_ARCHIVE_SOURCE_COMPLETION.md",
@@ -1415,6 +1415,24 @@
       "native_chronological_J_identified": false,
       "GR_or_original_parent_closed": false,
       "next": "Bind the actual native full operator L, retained/archive algebras, preparation rho and their joint field tangent before evaluating C_A or its derivative. Keep all price terms and the candidate metric covector; do not replace the physical archive by K or choose a cancellation."
+    },
+    "conditional_archive_shift_blindness": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_AFFINE_LINK_SHIFT_BLINDNESS.md",
+      "primary_owner": "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean",
+      "native_coordinate_source": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md",
+      "formal_target": "D0.Geometry.ArchiveAffineExteriorLink",
+      "declarations": [
+        "D0.Geometry.archiveAffineLinkedHodgeDirac_shift_irrelevant",
+        "D0.Geometry.archiveSolderedDirac_shift_irrelevant"
+      ],
+      "status": "EXACT_SCOPED_SHIFT_BLINDNESS",
+      "derived": "At fixed raw coframe and observer, both complete existing affine-CAR Dirac operators are equal for any two affine connections with identical linear parts, regardless of their translations. Since the native quotient has b_e=F_x*a_e and b_e is kinematically unrestricted, these transport operators cannot select the candidate same-edge b_e record ray.",
+      "narrow_lean_build": "lake build D0.Geometry.ArchiveAffineExteriorLink",
+      "transitive_axioms_are_standard_only": true,
+      "full_native_transition_exhausted": false,
+      "same_edge_record_readout_selected": false,
+      "full_core_no_go": false,
+      "next": "Inspect a separate existing local record/preparation owner that reads b_e. This scoped blindness closes only the direct CAR-transport route; it does not establish completeness or a whole-core obstruction."
     },
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
