@@ -120,6 +120,8 @@ def controls(receipt=True):
     Ugplus,Ugminus=engine_gate(1),engine_gate(-1)
     eq('closed_engine_gate_plus_is_actual_native_fullstep',Ugplus-U)
     eq('closed_engine_gate_minus_is_actual_native_fullstep',Ugminus-Uminus)
+    eq('closed_engine_plus_gate_orthogonal',Ugplus.T*Ugplus-P.I16)
+    eq('closed_engine_minus_gate_orthogonal',Ugminus.T*Ugminus-P.I16)
     S=P.I16[:,[0,1,14,15]];PS=S*S.T;Sperp=P.I16-PS
     for sign,gate in [('plus',Ugplus),('minus',Ugminus)]:
         eq('closed_engine_'+sign+'_preserves_current_null_sector',Sperp*gate*S)

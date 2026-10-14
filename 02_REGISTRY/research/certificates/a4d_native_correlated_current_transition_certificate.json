@@ -6,7 +6,7 @@
     "all-L fixed-beta heat bound",
     "exact closed-engine/current-source sector decoupling"
   ],
-  "checker_sha256": "f421f0f69d27c9051f1dba554043d1b885624332b7ef629dad24bb5e6e3ca8fa",
+  "checker_sha256": "4a6cf3c0b11b9221386b96269c1762b06fb4ac7911a8bc2bf6249f81e4f66ed8",
   "checks": [
     "native_CAR_create_(0, 0)",
     "native_CAR_annihilate_(0, 0)",
@@ -74,6 +74,8 @@
     "native_fullstep_all16",
     "closed_engine_gate_plus_is_actual_native_fullstep",
     "closed_engine_gate_minus_is_actual_native_fullstep",
+    "closed_engine_plus_gate_orthogonal",
+    "closed_engine_minus_gate_orthogonal",
     "closed_engine_plus_preserves_current_null_sector",
     "closed_engine_plus_preserves_sector_complement",
     "closed_engine_minus_preserves_current_null_sector",
@@ -423,7 +425,7 @@
     "REJECT_OMIT_REAL_DIAGNOSTIC_PROPOSITION"
   ],
   "cross_owner_scope": "ENGINE_SEED_ORBIT_IN_CURRENT_NULL_SECTOR; SOURCE_ACTIVE_CURVE_OUTSIDE_ENGINE_DOMAIN",
-  "exact_controls": 413,
+  "exact_controls": 415,
   "executed_mathematical_mutants": [
     "SOURCE_ACTIVE_GOLDEN_STATE_LIES_IN_CLOSED_ENGINE_SECTOR",
     "CLOSED_ENGINE_ACCEPTS_SOURCE_ACTIVE_GOLDEN_STATE",
