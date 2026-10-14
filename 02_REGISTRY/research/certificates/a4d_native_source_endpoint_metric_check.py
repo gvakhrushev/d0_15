@@ -50,6 +50,34 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def interval_add(x, y):
+    return (x[0] + y[0], x[1] + y[1])
+
+
+def interval_mul(x, y):
+    products = (x[0] * y[0], x[0] * y[1], x[1] * y[0], x[1] * y[1])
+    return (min(products), max(products))
+
+
+def interval_power(x, exponent: int):
+    result = (s.Rational(1), s.Rational(1))
+    for _ in range(exponent):
+        result = interval_mul(result, x)
+    return result
+
+
+def polynomial_interval(expression, boxes):
+    variables = list(boxes)
+    poly = s.Poly(expression, *variables, domain=s.QQ)
+    total = (s.Rational(0), s.Rational(0))
+    for powers, coefficient in poly.terms():
+        term = (coefficient, coefficient)
+        for variable, exponent in zip(variables, powers):
+            term = interval_mul(term, interval_power(boxes[variable], exponent))
+        total = interval_add(total, term)
+    return total
+
+
 def run() -> dict:
     for name, expected in INPUTS.items():
         actual = digest(CERT / name)
@@ -212,6 +240,121 @@ def run() -> dict:
         checks,
     )
 
+    # The mismatch also holds at an interior feedback-only stationary point,
+    # found by rational interval signs rather than a decimal root.
+    angle, sine = s.symbols("chronology_angle chronology_sine", real=True)
+    p_lower, p_upper = s.Rational(6180, 10000), s.Rational(6181, 10000)
+    a_lower, a_upper = s.Rational(7861, 10000), s.Rational(7862, 10000)
+    require(
+        "positive_golden_root_is_inside_rational_p_interval",
+        p_lower**2 + p_lower - 1 < 0 and p_upper**2 + p_upper - 1 > 0,
+        checks,
+    )
+    require(
+        "positive_golden_square_root_is_inside_rational_a_interval",
+        a_lower**2 < p_lower and a_upper**2 > p_upper,
+        checks,
+    )
+    lam, tr, det, tr0, det0 = C.polynomials(angle)
+    z_test = s.Rational(1, 2)
+    A_test = 1 - z_test * lam
+    B_test = 1 - z_test * tr + z_test**2 * det
+    C_test = 1 - z_test * tr0 + z_test**2 * det0
+    nu = s.expand(
+        -(2 * s.diff(A_test, angle) * B_test * C_test
+          + 2 * s.diff(B_test, angle) * A_test * C_test
+          + s.diff(C_test, angle) * A_test * B_test)
+    )
+    p_chrono = C.p
+    nu_left = polynomial_interval(
+        nu.subs(angle, -s.Rational(33, 100)), {p_chrono: (p_lower, p_upper)}
+    )
+    nu_right = polynomial_interval(
+        nu.subs(angle, -s.Rational(32, 100)), {p_chrono: (p_lower, p_upper)}
+    )
+    require("feedback_derivative_is_negative_at_left_bracket", nu_left[1] < 0, checks)
+    require("feedback_derivative_is_positive_at_right_bracket", nu_right[0] > 0, checks)
+
+    family = s.zeros(16, 1)
+    for index, value in {
+        0: (angle - a) / p,
+        14: (angle - a) / p,
+        1: 1,
+        15: 1,
+        3: sine / p,
+        13: sine / p,
+    }.items():
+        family[index] = value
+    blank4 = s.Matrix(
+        [[1, 0, 1, 0], [0, 1, 0, 1], [1, 0, 1, 0], [0, 1, 0, 1]]
+    ) / 2
+    blank_family = C.B0 * s.kronecker_product(blank4, s.eye(4)) * C.B0.T
+    joint_ideal = s.groebner(
+        [a * a - p, p * p + p - 1, sine * sine + angle * angle - 1],
+        a,
+        p,
+        sine,
+        domain=s.QQ.frac_field(angle),
+        order="grevlex",
+    )
+
+    def in_joint_ideal(expression) -> bool:
+        numerator, _ = s.cancel(expression).as_numer_denom()
+        return joint_ideal.reduce(s.expand(numerator))[1] == 0
+
+    require(
+        "whole_blank_chronology_family_retained_for_stationary_bracket",
+        all(in_joint_ideal(value) for value in blank_family * family - family),
+        checks,
+    )
+    U_family, _ = C.record(I4, rest_observer)
+    family_next = U_family * family
+    family_current = P.mat(O.current(I4, family_next))
+    expected_family_current = s.Matrix([1, sine * (angle - a) / (1 - a * angle), 0, 0])
+    require(
+        "all_angle_full_car_current_on_chronology_family",
+        all(in_joint_ideal(value) for value in family_current - expected_family_current),
+        checks,
+    )
+    w_family = s.Matrix([angle, -sine, 0, 0])
+    q_family = -I4 + 2 * w_family * w_family.T
+    family_norm = s.cancel(
+        (expected_family_current.T * q_family * expected_family_current)[0]
+    )
+    norm_num, norm_den = s.cancel(family_norm).as_numer_denom()
+    norm_num = s.Poly(norm_num, sine).rem(
+        s.Poly(sine**2 + angle**2 - 1, sine)
+    ).as_expr()
+    norm_den = s.Poly(norm_den, sine).rem(
+        s.Poly(sine**2 + angle**2 - 1, sine)
+    ).as_expr()
+    expected_norm = (
+        8 * a**2 * angle**4 - 8 * a**2 * angle**2 + a**2
+        - 8 * a * angle**5 + 2 * a * angle**3 + 4 * a * angle
+        + 2 * angle**6 + angle**4 - angle**2 - 1
+    ) / (a * angle - 1) ** 2
+    require(
+        "chronology_metric_current_norm_exact_all_angle_formula",
+        s.factor(norm_num / norm_den - expected_norm) == 0,
+        checks,
+    )
+    norm_num_interval = polynomial_interval(
+        norm_num,
+        {
+            a: (a_lower, a_upper),
+            angle: (-s.Rational(33, 100), -s.Rational(32, 100)),
+        },
+    )
+    norm_den_interval = polynomial_interval(
+        norm_den,
+        {
+            a: (a_lower, a_upper),
+            angle: (-s.Rational(33, 100), -s.Rational(32, 100)),
+        },
+    )
+    require("stationary_bracket_current_norm_numerator_is_negative", norm_num_interval[1] < 0, checks)
+    require("stationary_bracket_current_norm_denominator_is_positive", norm_den_interval[0] > 0, checks)
+
     return {
         "schema": "d0-native-source-endpoint-metric/1",
         "status": "PASS",
@@ -225,12 +368,38 @@ def run() -> dict:
             "current_norm_squared": "p^6",
             "source_pairing_00": "2/p^6-1",
             "scalar_column_endpoint_norm_defect": "8/p=8*(1+p)>0",
+            "diagnostic_chronology_stationary_point": {
+                "fugacity": "1/2",
+                "angle_bracket": ["-33/100", "-32/100"],
+                "p_interval": [str(p_lower), str(p_upper)],
+                "a_interval": [str(a_lower), str(a_upper)],
+                "feedback_numerator_at_left": [str(nu_left[0]), str(nu_left[1])],
+                "feedback_numerator_at_right": [str(nu_right[0]), str(nu_right[1])],
+                "CAR_current_norm_numerator_on_bracket": [
+                    str(norm_num_interval[0]),
+                    str(norm_num_interval[1]),
+                ],
+                "CAR_current_norm_denominator_on_bracket": [
+                    str(norm_den_interval[0]),
+                    str(norm_den_interval[1]),
+                ],
+                "interior_feedback_only_stationary_point": True,
+                "physical_admission_or_full_action_root": False,
+            },
         },
-        "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, existing pure endpoint-frame transport, and the c=0 chronology cross-owner witness",
+        "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, existing pure endpoint-frame transport, the c=0 chronology witness, and a diagnostic feedback-only stationary interval",
         "pure_endpoint_frame_transport_repairs_isometry": True,
         "pure_endpoint_frame_transport_changes_two_tick_price": False,
         "c0_chronology_and_full_car_observers_agree_initially": True,
         "c0_full_car_current_remains_timelike_after_chronology_metric_update": False,
+        "diagnostic_chronology_stationary_mismatch": {
+            "fugacity": "1/2_NOT_A_PHYSICAL_RULE",
+            "angle_interval": "[-33/100,-32/100]",
+            "feedback_derivative_signs": "NEGATIVE_AT_LEFT_POSITIVE_AT_RIGHT",
+            "full_car_current_norm_in_updated_metric": "STRICTLY_NEGATIVE_ON_INTERVAL",
+            "interior_feedback_only_stationary_point_exists": True,
+            "physical_admission_or_full_action_stationarity": False,
+        },
         "other_joint_link_or_gate_updates_classified": False,
         "physical_admission": False,
         "full_native_q_D_b_m_transition": False,
@@ -252,6 +421,7 @@ def main() -> None:
         raise AssertionError("IMMUTABLE_RECEIPT_MISMATCH")
     print("PASS_NATIVE_SOURCE_ENDPOINT_METRIC", result["exact_controls"], "exact controls")
     print("SCOPED_OBSTRUCTION: direct current-pairing identification fails endpoint isometry")
+    print("CROSS_OWNER_STATIONARY_WITNESS: diagnostic chronology minimum has spacelike retained CAR current")
     print("PHYSICAL_ADMISSION_AND_OTHER_JOINT_UPDATES_OPEN")
 
 

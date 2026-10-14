@@ -608,8 +608,45 @@ observer pairing is no longer positive. The exact checker pins both gate
 owners and verifies the normalized seed, the actual full 16-state transition,
 the updated Lorentz metric, the current and both signs in (27).
 
+The same mismatch reaches an interior stationary point of the existing
+chronological feedback price. Use its already-owned diagnostic value
+\(z=1/2\), not as a physical fugacity rule. With the chronological block
+factors \(A(c),B(c),C(c)>0\), define
+\[
+\nu(c)=-\bigl(2A'BC+2B'AC+C'AB\bigr),\qquad
+\mathcal J'(c)=\nu(c)/(ABC).
+\tag{28}
+\]
+Exact rational interval arithmetic encloses the positive golden roots by
+\(p\in[6180/10000,6181/10000]\) and
+\(a\in[7861/10000,7862/10000]\), and certifies
+\(\nu(-33/100)<0<\nu(-32/100)\). Hence \(\mathcal J\) has an interior
+feedback-only minimum at some \(c_*\in(-33/100,-32/100)\).
+
+On that same owned whole-blank family, write \(b=\sqrt{1-c^2}>0\). The
+actual full-CAR current after the first literal tick is
+\[
+J_{\rm CAR,+}=\left(1,\frac{b(c-a)}{1-ac},0,0\right),
+\]
+while the chronology's updated metric is \(q_+=-I+2ww^T\) with
+\(w=(c,-b,0,0)\). Its current norm has the exact form
+\[
+J_{\rm CAR,+}^Tq_+^{-1}J_{\rm CAR,+}
+=\frac{N(c,a)}{(ac-1)^2},
+\quad
+N=8a^2c^4-8a^2c^2+a^2-8ac^5+2ac^3+4ac
++2c^6+c^4-c^2-1.
+\tag{29}
+\]
+The same rational interval checker certifies \(N(c,a)<0\) throughout
+\(c\in[-33/100,-32/100]\) and the denominator is positive. Thus at an
+actual stationary point of the feedback-only chronological term, this
+retained CAR current still cannot define a positive observer pairing. The
+proof does not pick a numerical root or assume it is unique.
+
 This is a cross-owner obstruction for this \(c=0\) whole-blank history and
-the retained full-CAR readout in the common frame. It is not a claim that a
+the stationary interval in the same chronology family, using the retained
+full-CAR readout in the common frame. It is not a claim that a
 newly transported readout or a different physical preparation cannot work:
 the former is governed by the price-invisible frame theorem above, while the
 latter needs its own native field law. A simultaneous coordinate change
