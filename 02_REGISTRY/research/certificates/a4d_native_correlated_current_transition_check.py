@@ -24,10 +24,34 @@ INPUTS=[
     '03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean',
     '03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean',
     '03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean',
+    '02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md',
+    '02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py',
+    '02_REGISTRY/research/certificates/a4d_native_closed_record_engine_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_closed_record_engine.lean',
+    '02_REGISTRY/research/certificates/a4d_native_closed_record_engine_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_closed_record_engine_results.json',
+    '02_REGISTRY/research/certificates/a4d_native_closed_record_engine_certificate.json',
 ]
 q=importlib.util.spec_from_file_location('correlated_program',ROOT/(BASE+'.py'))
 P=importlib.util.module_from_spec(q);sys.modules[q.name]=P;q.loader.exec_module(P)
 s,a,p,z=P.s,P.a,P.p,P.z
+ENGINE='02_REGISTRY/research/certificates/a4d_native_closed_record_engine'
+q=importlib.util.spec_from_file_location('closed_record_engine',ROOT/(ENGINE+'.py'))
+E=importlib.util.module_from_spec(q);sys.modules[q.name]=E;q.loader.exec_module(E)
+
+def engine_expr(value):
+    u,v,w,t=value.coefficients
+    return u+v*a+w*p+t*a*p
+
+def engine_vector(state):
+    return s.Matrix([engine_expr(value) for value in state.matter])
+
+def engine_gate(sign):
+    columns=[]
+    for i in range(16):
+        basis=[E.ZERO]*16;basis[i]=E.ONE
+        columns.append(engine_vector(E.literal_axis_gate(E.State(tuple(basis)),sign)))
+    return s.Matrix.hstack(*columns)
 
 def sha(path):return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
 
@@ -92,6 +116,58 @@ def controls(receipt=True):
         eq('wrong_Euclidean_gamma_skew_'+str(i),beta*(c[i+1]+c[i+1].T)+(beta*(c[i+1]+c[i+1].T)).T)
     U,B,R=P.orbit_data();Uc=P.mat(R.T*U*R);Ac=P.mat(R.T*alpha[0]*R)
     eq('native_fullstep_all16',U-P.C.record(P.I4,P.I4[:,0])[0])
+    Uminus=P.C.record(P.I4,-P.I4[:,0])[0]
+    Ugplus,Ugminus=engine_gate(1),engine_gate(-1)
+    eq('closed_engine_gate_plus_is_actual_native_fullstep',Ugplus-U)
+    eq('closed_engine_gate_minus_is_actual_native_fullstep',Ugminus-Uminus)
+    S=P.I16[:,[0,1,14,15]];PS=S*S.T;Sperp=P.I16-PS
+    for sign,gate in [('plus',Ugplus),('minus',Ugminus)]:
+        eq('closed_engine_'+sign+'_preserves_current_null_sector',Sperp*gate*S)
+        eq('closed_engine_'+sign+'_preserves_sector_complement',PS*gate*Sperp)
+    eq('closed_engine_positive_first_pair_is_Lean_lowerStep',
+       (S.T*Ugplus*S).extract([0,1],[0,1])-s.Matrix([[a,-p],[p,a]]))
+    eq('closed_engine_negative_first_pair_is_Lean_lowerStep',
+       (S.T*Ugminus*S).extract([0,1],[0,1])-s.Matrix([[a,p],[-p,a]]))
+    for i in range(3):
+        eq('closed_engine_sector_spatial_CAR_compression_'+str(i),S.T*alpha[i]*S)
+    sx,sy,sb,sc=s.symbols('engine_sx engine_sy engine_sb engine_sc',real=True)
+    sector_state=S*s.Matrix([sx,sy,sb,sc])
+    eq('closed_engine_sector_full_current_all_states',
+       P.current(P.I4,sector_state)-P.I4[:,0])
+    eq('closed_engine_sector_current_observer_pairing',
+       P.observer_pairing(P.ETA,P.I4[:,0])-P.I4)
+    engine_seed=E.seed()
+    eq('closed_engine_seed_in_current_null_sector',
+       engine_vector(engine_seed)-(P.I16[:,1]+P.I16[:,15]))
+    eq('closed_engine_seed_first_pair_is_Lean_initial_value',
+       engine_vector(engine_seed).extract([0,1],[0])-s.Matrix([0,1]))
+    engine_state=engine_seed
+    for tick in range(8):
+        eq('closed_engine_finite_orbit_current_'+str(tick),
+           P.current(P.I4,engine_vector(engine_state))-P.I4[:,0])
+        if tick<7:engine_state=E.step(engine_state)
+    # The source-active curve of section 6 occupies masks 0,14,3,13.
+    # Positive rescaling removes the blank-code sqrt(2) normalization while
+    # keeping its normalized full CAR current unchanged.
+    source_state=[E.ZERO]*16
+    source_state[0]=source_state[14]=E.A
+    source_state[3]=source_state[13]=E.P
+    source_state=E.State(tuple(source_state))
+    source_vector=engine_vector(source_state)
+    reject('SOURCE_ACTIVE_GOLDEN_STATE_LIES_IN_CLOSED_ENGINE_SECTOR',
+           zero(S*S.T*source_vector-source_vector))
+    try:
+        E.step(source_state)
+    except ValueError as exc:
+        check('REJECT_CLOSED_ENGINE_ACCEPTS_SOURCE_ACTIVE_GOLDEN_STATE',
+              str(exc)=='OUTSIDE_CERTIFIED_COLLINEAR_EXECUTOR')
+        mutants.append('CLOSED_ENGINE_ACCEPTS_SOURCE_ACTIVE_GOLDEN_STATE')
+    else:
+        raise AssertionError('CLOSED_ENGINE_ACCEPTS_SOURCE_ACTIVE_GOLDEN_STATE')
+    eq('source_active_golden_state_has_zero_engine_first_grade',source_vector[1])
+    eq('source_active_golden_state_is_outside_engine_guard',source_vector[3]-p)
+    eq('source_active_golden_fullstep_current',
+       P.current(P.I4,U*source_vector)-s.Matrix([1,2*a*p,0,0]))
     eq('whole_blank_code_isometry',B.T*B-s.eye(2))
     eq('whole_blank_code_actual_blank',P.P.full_tuple()[2]*B-B)
     eq('eightmask_space_invariant',U*R-R*Uc)
@@ -115,19 +191,19 @@ def controls(receipt=True):
 
     # Proper spatial covariance fails for the old tensor marginal, succeeds for full CAR.
     rot=P.I4.copy();rot[1,1]=rot[3,3]=0;rot[1,3]=1;rot[3,1]=-1
-    E=P.C.ext(rot)
+    extE=P.C.ext(rot)
     m=B*s.Matrix([a,p]);oldbasis=P.C.B0
     T=s.Matrix([[1,0,1,0],[1,0,-1,0],[0,1,0,1],[0,1,0,-1]])/s.sqrt(2)
     literalbasis=oldbasis*s.kronecker_product(T.T,s.eye(4))
     def marginal(v):return P.P.system_marginal(s.Matrix(4,4,list(literalbasis.T*v)))
     sigma=marginal(m)
     eq('old_marginal_golden_weights',sigma-s.diag(p,p**2))
-    eq('old_marginal_rotation_invariant',marginal(E*m)-sigma)
+    eq('old_marginal_rotation_invariant',marginal(extE*m)-sigma)
     oldh=P.P.pauli_positive_pairing(sigma)
     reject('OLD_PAULI_ROLE_READING_IS_SPATIALLY_COVARIANT',zero(oldh-rot*oldh*rot.T))
-    eq('full_CAR_rotation_covariance',P.current(P.I4,E*U*m)-rot*J1)
+    eq('full_CAR_rotation_covariance',P.current(P.I4,extE*U*m)-rot*J1)
     reject('EUCLIDEAN_GAMMA_PRODUCT_IS_THIS_CURRENT',zero(((U*m).T*beta*(c[1]+c[1].T)*(U*m))[0]-J1[1]))
-    for i in range(3):eq('spatial_CAR_operator_covariance_'+str(i),E.T*alpha[i]*E-sum((rot[i+1,j+1]*alpha[j] for j in range(3)),s.zeros(16)))
+    for i in range(3):eq('spatial_CAR_operator_covariance_'+str(i),extE.T*alpha[i]*extE-sum((rot[i+1,j+1]*alpha[j] for j in range(3)),s.zeros(16)))
 
     for index,F in enumerate([s.diag(2,s.Rational(1,2),1,1),
             s.Matrix([[1,1,0,0],[0,1,1,0],[0,0,1,0],[0,0,0,1]]),
@@ -255,12 +331,14 @@ def controls(receipt=True):
         bad=copy.deepcopy(lean);bad['diagnostic_checks']=bad['diagnostic_checks'][1:]
         reject('OMIT_REAL_DIAGNOSTIC_PROPOSITION',valid_Lean_structure(bad,output,capsule))
     paths=closure(INPUTS+[BASE+'.py',BASE+'.lean'])
-    return dict(status='PASS',input_source_head='074b4223c0cae4aa5b1ad379dcd0a78930da1179',
+    return dict(status='PASS',input_source_head='0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16',
         proof=PROOF,proof_sha256=sha(PROOF),program_sha256=sha(BASE+'.py'),checker_sha256=sha(BASE+'_check.py'),
         input_sha256={f:sha(f) for f in paths},exact_controls=len(checks),checks=checks,
         executed_mathematical_mutants=mutants,analytic_scope=['complete stabilizer covariance obstruction',
         'arbitrary complex spectator-isometry eight-tick boundary','all-time full current component',
-        'all-L fixed-beta heat bound'],full_feedback_pencil='(1-4zp^3)^(4L^4)',
+        'all-L fixed-beta heat bound','exact closed-engine/current-source sector decoupling'],
+        cross_owner_scope='ENGINE_SEED_ORBIT_IN_CURRENT_NULL_SECTOR; SOURCE_ACTIVE_CURVE_OUTSIDE_ENGINE_DOMAIN',
+        full_feedback_pencil='(1-4zp^3)^(4L^4)',
         retained_zero_feedback_directions='12L^4',physical_admission_source_Ward_stationarity_GR_closed=False)
 
 if __name__=='__main__':
