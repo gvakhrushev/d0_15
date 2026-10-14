@@ -50,6 +50,89 @@ coefficients. Consequently the maximally mixed equilibrium has zero first
 derivative under the actual relative-observer record tangent used by the
 source-jet calculation.
 
+## The remaining symmetry barrier for a native readout
+
+At the symmetric reference tuple
+\[
+q=\eta=\operatorname{diag}(1,-1,-1,-1),\quad D_e=I,\quad b_e=0,
+\quad m=e_0+\mathrm{vol},
+\]
+every proper spatial rotation fixes the complete displayed \((q,D,b,m)\)
+data. The actual full-Fock density \(|e_0\rangle\langle e_0|\) is fixed too.
+Yet for the proper rotation with spatial block
+\(\begin{psmallmatrix}3/5&-4/5\\4/5&3/5\end{psmallmatrix}\), the exact
+four-return channel fails the required stabilizer covariance: one entry of
+\(\Phi(E X E^T)-E\Phi(X)E^T\) is
+\[
+\frac{3a(1-2p)}{10}\ne0.
+\]
+This proves a scoped obstruction: at that point this fixed four-basis channel
+cannot be a covariant local readout of the symmetric \((q,D,b,m)\) tuple
+alone. The matter volume supplies an orientation but not a spatial triad.
+It does not rule out a law using already-owned nontrivial link/shift history
+or an explicitly classified nonsymmetric sector, and it is not a whole-core
+no-go.
+
+The existing native carrier has four oriented affine-shift slots at each site,
+with arbitrary \(b_e\in\mathbb R^4\). On the open sector \(b_e\ne0\), there is
+a canonical same-ray unit readout in the already-owned positive pairing:
+\[
+n_e=\frac{b_e}{\sqrt{b_e^T G(q,m)b_e}}.
+\]
+It is unique after requiring the output to lie on the positive ray of its own
+oriented edge shift and to have unit \(G\)-norm. Under a coordinate change
+\(b_e\mapsto Rb_e\), \(G\mapsto R^{-T}GR^{-1}\), it transforms as
+\(n_e\mapsto Rn_e\); the actual record operator then transforms by its
+existing exterior representation. Thus the affine shifts already carry the
+missing spatial directions on a nonempty open kinematic class.
+
+At \(q=\eta,D=I,m=e_0+\mathrm{vol},b_r=e_r\), this readout gives exactly the
+four returns used above. The native edge constraint still holds, since it
+constrains \((D,q)\) and the existing quotient leaves \(b\) unrestricted.
+Varying only \(b_0(t)=\cos(t)e_0+\sin(t)e_1\) leaves \(q,D,m\) fixed, is an
+admissible native kinematic tangent, and pulls back to the already-certified
+positive v3 event-cost derivative. This identifies that response as a
+candidate **affine-shift/link source**. It is not an Einstein metric source.
+
+The same readout also gives a direct trace-free metric probe. Keep \(D=I\),
+\(m=e_0+\mathrm{vol}\), and all four \(b_r=e_r\) fixed at every site, and
+vary the same Lorentz metric homogeneously by
+\[
+q(t)=\eta+tV,\qquad V_{01}=V_{10}=2,
+\quad V_{ij}=0\text{ otherwise}.
+\]
+For small \(t\), this is nondegenerate Lorentzian; the spatial link
+constraint holds exactly because the same \(q(t)\) sits at both endpoints.
+The packed metric direction is trace-free:
+\(\operatorname{tr}(\eta^{-1}V)=0\). At \(t=0\), \(\dot G=V\) and the four
+normalized shift directions have zero first derivative, so the jet is the
+actual metric variation of the candidate record cost, not an observer-angle
+substitution. The full three-round, event-normalized v3 recursion gives
+\[
+\dot S[V]=
+\frac{-54292700ap+33554733a-5984797p+3698809}
+ {1233792ap-762528a+3019248p-1865985}
+=\frac{2088601935789604a^3+1705879982091207a^2
+-1311016250921047a-1028861680129291}{346943031568563}.
+\]
+Using \(393/500<a<787/1000\), exact termwise bounds give
+\[
+\dot S[V]>
+\frac{116463720765635098441}{5420984868258796875000}>0.
+\]
+The flat geometric comparator is \(\rho_0[V]=0\). Thus this candidate cost
+alone fails the vacuum comparison on one trace-free metric probe. The full
+action may contain other terms, so this is not a total-source contradiction
+or a whole-core obstruction; it is the first exact metric component to carry
+forward if the same-edge readout is admitted.
+
+This is a concrete candidate bridge using existing field slots, not a new
+action or fitted source. Its physical selection remains open: no current core
+owner equates the affine shift of each edge with the direction of its record
+operator. The next proof must establish that same-edge readout from the native
+transition/preparation law, including refinement and the link Euler equation;
+without that owner, the source remains conditional.
+
 ## Why it is the unique attractor
 
 The exact intertwiner system
@@ -78,33 +161,35 @@ stationary density and convergence from every initial density. Unitality
 identifies that density as \(I_{16}/16\).
 
 The exact checker constructs the actual CAR matrices, checks both channel
-identities and the relative-observer equilibrium jet, and computes the
-commutant rank over the exact degree-four field. As a hostile control, one
-return alone has rank 192 and a 64-dimensional commutant, so the proof uses
-the full return support. Its result is
+identities, the relative-observer equilibrium jet, the spatial covariance
+boundary and the candidate shift pullback, and computes the commutant rank
+over the exact degree-four field. It differentiates the full event-normalized
+three-round cost along the trace-free metric probe. As hostile controls, one
+return alone has rank 192 and a 64-dimensional commutant, and the fixed-basis
+channel fails SO(3) covariance at zero shift. Its result is
 [`a4d_native_golden_channel_endogenous_preparation_results.json`](certificates/a4d_native_golden_channel_endogenous_preparation_results.json).
 
 ## Consequence and remaining physical arrow
 
-Conditioned on admitting the golden two-outcome rule and full support on these
-four native returns, repeated unobserved internal ticks prepare the state used
-by the existing v3 event-conditioned source calculation as the channel's
-unique long-time equilibrium. The preparation does not require the core to
-select equal probabilities for the unobserved preparation. The counted v3
-source instrument still uses its own equal-weight return rule, which remains
-unselected by the core. The result shows that the equilibrium itself does
-not move under the tested observer shear. The later selected-event state and
-its positive source derivative remain those of the separate exact
-three-round calculation.
+Conditioned on admitting the same-edge shift readout, the golden two-outcome
+rule, and full support on these four native returns, repeated unobserved
+internal ticks prepare the state used by the existing v3 event-conditioned
+source calculation as the channel's unique long-time equilibrium. The
+preparation does not require the core to select equal probabilities for the
+unobserved preparation. The counted v3 source instrument still uses its own
+equal-weight return rule, which remains unselected by the core. The result
+shows that the equilibrium itself does not move under the tested observer
+shear. The later selected-event state and its positive source derivative
+remain those of the separate exact three-round calculation.
 
 There is no exact finite-time mixing-rate bound here; turning the asymptotic
 preparation into a finite-depth error estimate needs a quantitative spectral
 gap or contraction bound. More fundamentally, the core still owes the
-physical map that admits the golden transition on this full-support family
-and binds its preparation to the counted dynamics on the complete
-\((q,D,b,m)\) state. The own action, full metric and matter variations, Ward
-identity, refinement transfer, curved roots, soundness/recovery, G0, and the
-existing parent terminals remain open.
+physical map that admits the same-edge affine-shift readout and golden
+transition on this full-support family, and binds its preparation to the
+counted dynamics on the complete \((q,D,b,m)\) state. The own action, full
+metric and matter variations, Ward identity, refinement transfer, curved
+roots, soundness/recovery, G0, and the existing parent terminals remain open.
 
 Reproduce with:
 

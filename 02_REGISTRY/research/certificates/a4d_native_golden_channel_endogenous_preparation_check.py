@@ -12,6 +12,7 @@ import hashlib
 import importlib.util
 import json
 import sys
+from fractions import Fraction
 from pathlib import Path
 
 import sympy as s
@@ -98,6 +99,64 @@ def exact_commutant_rank(returns: list[s.Matrix], owner) -> int:
     return matrix.rank()
 
 
+def conditioned_count_cost_jet(returns, return_jets, p, a, owner):
+    """Differentiate the pinned three-round 1<=k<=2 full-Fock cost."""
+    I16 = s.eye(16)
+
+    def channel0(X):
+        value = sum(((p * I16 + p**2 * U) * X * (p * I16 + p**2 * U).T
+                     for U in returns), s.zeros(16)) / 4
+        return value.applyfunc(owner.red)
+
+    def channel1(X):
+        value = p**3 * sum(((U - I16) * X * (U - I16).T
+                            for U in returns), s.zeros(16)) / 4
+        return value.applyfunc(owner.red)
+
+    def dchannel0(X):
+        value = s.zeros(16)
+        for U, dU in zip(returns, return_jets):
+            A, dA = p * I16 + p**2 * U, p**2 * dU
+            value += dA * X * A.T + A * X * dA.T
+        return (value / 4).applyfunc(owner.red)
+
+    def dchannel1(X):
+        value = s.zeros(16)
+        for U, dU in zip(returns, return_jets):
+            A = U - I16
+            value += p**3 * (dU * X * A.T + A * X * dU.T) / 4
+        return value.applyfunc(owner.red)
+
+    states = {(0, 0): I16 / 16}
+    jets = {(0, 0): s.zeros(16)}
+    for total in range(3):
+        for count in range(total + 1):
+            X = states.get((total, count), s.zeros(16))
+            dX = jets.get((total, count), s.zeros(16))
+            for branch, channel, dchannel in (
+                (0, channel0, dchannel0), (1, channel1, dchannel1)
+            ):
+                key = (total + 1, count + branch)
+                states[key] = states.get(key, s.zeros(16)) + channel(X)
+                jets[key] = jets.get(key, s.zeros(16)) + channel(dX) + dchannel(X)
+
+    Delta = sum(((U - I16).T * (U - I16) for U in returns),
+                s.zeros(16)).applyfunc(owner.red)
+    dDelta = sum((dU.T * (U - I16) + (U - I16).T * dU
+                  for U, dU in zip(returns, return_jets)),
+                 s.zeros(16)).applyfunc(owner.red)
+    sigma = (states[(3, 1)] + states[(3, 2)]).applyfunc(owner.red)
+    dsigma = (jets[(3, 1)] + jets[(3, 2)]).applyfunc(owner.red)
+    probability = owner.red(s.trace(sigma))
+    dprobability = owner.red(s.trace(dsigma))
+    cost = owner.red(s.trace(Delta * sigma) / probability)
+    derivative = owner.red(
+        (s.trace(dDelta * sigma + Delta * dsigma) - cost * dprobability)
+        / probability
+    )
+    return probability, cost, derivative
+
+
 def run() -> dict:
     checks: list[str] = []
 
@@ -169,6 +228,77 @@ def run() -> dict:
           owner.zero(sum((K * (I16 / 16) * K.T for K in kraus), s.zeros(16))
                      - I16 / 16))
 
+    # At the symmetric rest tuple q=eta, D=I, b=0, m=e0+volume, every proper
+    # spatial rotation fixes the native data.  The fixed-basis four-return
+    # channel nevertheless fails SO(3) covariance, so this particular
+    # instrument cannot be read out from that tuple alone.
+    R = s.eye(4)
+    R[1, 1] = R[2, 2] = s.Rational(3, 5)
+    R[1, 2], R[2, 1] = -s.Rational(4, 5), s.Rational(4, 5)
+    E = owner.ext(R)
+    eta = s.diag(1, -1, -1, -1)
+    m0 = s.zeros(16, 1)
+    m0[1] = m0[15] = 1
+    check("SPATIAL_ROTATION_IS_PROPER_AND_NATIVE_REFERENCE_IS_FIXED",
+          R.T * R == I4 and R.det() == 1
+          and R * eta * R.T == eta and R * I4 * R.T == I4
+          and E * m0 == m0)
+
+    def channel(X):
+        return sum((K * X * K.T for K in kraus), s.zeros(16)).applyfunc(owner.red)
+
+    e0_state = s.zeros(16, 1)
+    e0_state[1] = 1
+    invariant_probe = e0_state * e0_state.T
+    covariance_defect = channel(E * invariant_probe * E.T) - E * channel(invariant_probe) * E.T
+    covariance_entry = owner.red(covariance_defect[1, 3])
+    expected_covariance_entry = 3 * a * (1 - 2 * p) / 10
+    check("HOSTILE_CONTROL_NATIVE_CHANNEL_BREAKS_SPATIAL_COVARIANCE",
+          E * invariant_probe * E.T == invariant_probe
+          and owner.zero(covariance_entry - expected_covariance_entry)
+          and not owner.zero(covariance_entry))
+
+    # The existing affine-shift slots do carry four vectors per site.  If a
+    # return reads the oriented ray of its own shift, positive-G normalization
+    # is canonical and covariant; this is a kinematic candidate interface,
+    # not a physical identification currently selected by the core.
+    q = eta
+    D = I4
+    b = [I4[:, r] for r in range(4)]
+    m = m0
+    v = s.Matrix([m[1 << r] for r in range(4)])
+    k = (v.T * q.inv() * v)[0]
+    Q = -q + 2 * v * v.T / k
+    G = Q.inv()
+    check("NATIVE_SHIFT_REFERENCE_HAS_POSITIVE_OBSERVER_PAIRING",
+          k == 1 and Q == I4 and G == I4)
+    check("NATIVE_SHIFT_REFERENCE_SATISFIES_SPATIAL_LINK_CONSTRAINT",
+          D * q * D.T == q)
+    normalized = [vector / s.sqrt((vector.T * G * vector)[0]) for vector in b]
+    shift_returns = [chronology.record(G, n)[0] for n in normalized]
+    check("ORIENTED_AFFINE_SHIFTS_RECONSTRUCT_THE_FOUR_ACTUAL_RETURNS",
+          normalized == basis and all(owner.zero(U - V)
+                                      for U, V in zip(shift_returns, returns)))
+
+    # A unit shift tangent moves only the first return and reproduces the
+    # already-certified relative-observer source jet exactly.
+    db0 = basis[1]
+    dnorm0 = db0 - normalized[0] * (normalized[0].T * G * db0)[0]
+    dU_shift = chronology.record(G, normalized[0], s.zeros(4), dnorm0)[2]
+    dU_source = chronology.record(G, basis[0], s.zeros(4), basis[1])[2]
+    check("NATIVE_SHIFT_TANGENT_PULLS_BACK_TO_CERTIFIED_SOURCE_TANGENT",
+          dnorm0 == basis[1] and owner.zero(dU_shift - dU_source)
+          and owner.zero(dU_shift.T * returns[0] + returns[0].T * dU_shift))
+
+    # When the shifts themselves transform, the canonical same-ray readout
+    # restores covariance: no fixed spatial triad remains hidden in constants.
+    rotated_b = [R * vector for vector in b]
+    rotated_n = [vector / s.sqrt((vector.T * G * vector)[0]) for vector in rotated_b]
+    rotated_shift_returns = [chronology.record(G, n)[0] for n in rotated_n]
+    check("ORIENTED_SHIFT_READOUT_TRANSFORMS_THE_ACTUAL_RECORD_COVARIANTLY",
+          all(owner.zero(Urot - E * U * E.T)
+              for Urot, U in zip(rotated_shift_returns, returns)))
+
     # The pairwise coefficient matrix from (I,U_r) to (K_{r,0},K_{r,1})
     # has determinant a*p/4, hence both I and every U_r lie in the Kraus span.
     kraus_span_determinant = a * p**2 * (1 + p) / 4
@@ -194,8 +324,57 @@ def run() -> dict:
     check("RELATIVE_OBSERVER_MOVE_KEEPS_EQUILIBRIUM_STATE_TO_FIRST_ORDER",
           owner.zero(d_first_pair_tp) and owner.zero(d_first_pair_unital))
 
+    # Pull the same conditional event cost back along an admissible flat
+    # trace-free q shear with b and m fixed. This is one metric slot of the
+    # candidate action, not the total D0 stress.
+    V = s.zeros(4)
+    V[0, 1] = V[1, 0] = 2
+    A = q.inv()
+    dA = -A * V * A
+    dv = s.zeros(4, 1)
+    dk = (dv.T * A * v + v.T * dA * v + v.T * A * dv)[0]
+    dQ = -V + 2 * (dv * v.T + v * dv.T) / k - 2 * v * v.T * dk / k**2
+    dG = -G * dQ * G
+    q_jets = []
+    dUs_q = []
+    for br, nr in zip(b, normalized):
+        norm_sq = (br.T * G * br)[0]
+        dnorm_sq = (br.T * dG * br)[0]
+        dn = -nr * dnorm_sq / (2 * norm_sq)
+        dUs_q.append(chronology.record(G, nr, dG, dn)[2])
+        q_jets.append(dn)
+    check("TRACEFREE_Q_SHEAR_IS_ADMISSIBLE_ON_HOMOGENEOUS_NATIVE_LINKS",
+          V == V.T and s.trace(eta.inv() * V) == 0
+          and D * V * D.T - V == s.zeros(4))
+    check("FIXED_LINK_RAYS_HAVE_ZERO_FIRST_OBSERVER_JET_ON_THIS_SHEAR",
+          dG == V and all(owner.zero(dn) for dn in q_jets))
+    _, _, q_source_jet = conditioned_count_cost_jet(shift_returns, dUs_q, p, a, owner)
+    x = s.Symbol("x")
+    minimal = x**4 + x**2 - 1
+    reduced = s.cancel(q_source_jet.subs({a: x, p: x**2}))
+    numerator, denominator = s.fraction(reduced)
+    numerator = s.rem(s.expand(numerator), minimal, x)
+    denominator = s.rem(s.expand(denominator), minimal, x)
+    reduced = s.rem(s.expand(numerator * s.invert(denominator, minimal, x)), minimal, x)
+    expected_q_polynomial = (
+        2088601935789604 * x**3 + 1705879982091207 * x**2
+        - 1311016250921047 * x - 1028861680129291
+    ) / 346943031568563
+    q_lower = Fraction(
+        -1028861680129291
+        - 1311016250921047 * Fraction(787, 1000)
+        + 1705879982091207 * Fraction(393, 500)**2
+        + 2088601935789604 * Fraction(393, 500)**3,
+        346943031568563,
+    )
+    flat_rho0 = chronology_receipt.get("flat_geometric_rho0_in_all10_slots")
+    check("TRACEFREE_Q_SOURCE_JET_EXACT_FIELD_REDUCTION",
+          s.expand(reduced - expected_q_polynomial) == 0)
+    check("TRACEFREE_Q_SOURCE_JET_IS_STRICTLY_POSITIVE_AND_MISSES_FLAT_RHO0",
+          q_lower == Fraction(116463720765635098441, 5420984868258796875000)
+          and q_lower > 0 and flat_rho0 == ["0"] * 10)
+
     # Exact rational brackets isolate the positive golden roots used above.
-    from fractions import Fraction
     p_lo, p_hi = Fraction(309, 500), Fraction(619, 1000)
     a_lo, a_hi = Fraction(393, 500), Fraction(787, 1000)
     check("POSITIVE_GOLDEN_ROOTS_HAVE_EXACT_RATIONAL_BRACKETS",
@@ -223,6 +402,13 @@ def run() -> dict:
             "primitive_power_upper_bound": 255,
             "relative_observer_equilibrium_jet": "zero",
             "equilibrium_independent_of_full_support_return_weights": True,
+            "SO3_covariance_defect_on_symmetric_rest_tuple": str(covariance_entry),
+            "native_affine_shift_readout": "n_e=b_e/sqrt(b_e^T*G*b_e), candidate same-ray map",
+            "shift_readout_reference_source_jet": source_receipt["exact_values"]["full_prepared_source_derivative"],
+            "tracefree_metric_probe_V01": "V_01=V_10=2; tr(eta^-1 V)=0",
+            "candidate_metric_source_jet_on_V01": str(q_source_jet),
+            "candidate_metric_source_jet_positive_lower_bound": str(q_lower),
+            "flat_geometric_rho0_on_V01": "0",
         },
         "exact_controls": len(checks),
         "checks": checks,
@@ -230,6 +416,11 @@ def run() -> dict:
             "unique_attracting_state_for_this_channel": True,
             "nonselective_channel_admitted_as_a_D0_physical_law": False,
             "full_four_return_support_derived_from_complete_core": False,
+            "candidate_channel_natural_from_symmetric_q_D_b_m_alone": False,
+            "candidate_shift_readout_covariant_on_nonzero_b_sector": True,
+            "candidate_v3_cost_alone_matches_flat_rho0": False,
+            "native_core_selects_shift_as_record_direction": False,
+            "full_core_no_go": False,
             "state_identified_with_native_joint_matter_m": False,
             "own_action_source_Ward_or_ten_metric_slots_derived": False,
             "finite_time_mixing_rate_certified": False,
