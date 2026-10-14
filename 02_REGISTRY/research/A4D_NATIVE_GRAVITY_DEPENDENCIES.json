@@ -1395,6 +1395,25 @@
       "full_core_no_go": false,
       "next": "The direct route through ArchiveAffineExteriorLink, archiveAffineLinkedHodgeDirac and archiveSolderedDirac is ruled out: all are invariant under changes of affine shift at fixed linear links (see conditional_archive_shift_blindness). Do not infer b_e->n_e from these transports. The next arrow is a separate already-owned local record/preparation law that reads b_e, with its action, joint variation, full-support preparation and refinement; if none exists, prove completeness of the actual interface before claiming obstruction. Then combine all owned heat/action terms with the candidate ten-slot covector and compare the total source with rho0; keep parent terminals open."
     },
+    "conditional_equal_weight_hs_contraction": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHANNEL_HS_CONTRACTION.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_golden_channel_hs_contraction",
+      "status": "CONDITIONAL_EQUAL_WEIGHT_HS_CONTRACTION",
+      "derived": "For the literal four native CAR records with equal weights, the Hilbert-Schmidt norm on traceless Hermitian matrices lies strictly between sqrt(9442/10000) and sqrt(9443/10000), hence strictly below 49/50. The squared norm is the norm on the 11-dimensional trace-zero symmetric class-sum kernel at eigenvalue 6. A negative leading pivot certifies the lower endpoint. Weights (97,1,1,1)/100 on a traceless U_0-commutant witness exceed 49/50. The bound is not a rate for every positive mixture, so finite_time_mixing_rate_certified stays false on the preparation block. It does not read b_e and does not infer the record ray from the shift-blind affine-CAR transports.",
+      "equal_weight_hs_norm_below_49_over_50": true,
+      "squared_norm_window": ["9442/10000", "9443/10000"],
+      "contraction_for_every_positive_return_weight": false,
+      "singular_value_equals_spectral_radius": false,
+      "trace_norm_or_diamond_norm_gap": false,
+      "channel_admitted_as_physical_law": false,
+      "core_owned_qDbm_admission_map_derived": false,
+      "affine_shift_is_record_ray": false,
+      "infers_record_ray_from_affine_car_transport": false,
+      "ten_slot_total_source_compared": false,
+      "archive_remainder_used_as_compensator": false,
+      "G0_GR_or_parent_terminal_closed": false,
+      "next": "Unchanged from conditional_endogenous_preparation: the direct affine-CAR transport route is already ruled out. This equal-weight contraction does not supply a separate local record/preparation law that reads b_e, and it does not cancel the ten-slot covector by C_A."
+    },
     "archive_source_completion": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_ARCHIVE_SOURCE_COMPLETION.md",
       "full_proof": "02_REGISTRY/research/sources/d0_archive_source_completion_v6_2026-10-14/A4D_NATIVE_ARCHIVE_SOURCE_COMPLETION.md",
