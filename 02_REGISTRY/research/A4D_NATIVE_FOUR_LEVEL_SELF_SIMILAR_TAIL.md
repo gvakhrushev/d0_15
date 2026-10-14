@@ -128,3 +128,58 @@ with spatial expansion by analogy alone. If that binding is derived, it is a
 candidate engine to test against curved roots and the source/Ward identities.
 If it is not, classify the obstruction for the complete owned class. The
 parent #310 terminal and the physical GR claims remain open either way.
+
+## A four-level seed carries its complete apparatus into the Jones tail
+
+The right-module reconstruction in the activation certificate places its
+four frame matrix units
+
+\[
+ E_{ij}^{(0)}=V_iV_j^*,\qquad 0\le i,j<4,
+\]
+in the actual native blocks of \(A_6\), not merely in an abstract matrix
+algebra. After the independent six-path reordering used by the Jones owner,
+the seed corner \(E_{00}^{(0)}\) is exactly its native Jones corner. Thus
+the activation package belongs to the same native algebra and prepared
+object on which the Jones map acts; its full step, price cut, blank cut,
+and complement can all be transported together.
+
+Apply the existing trace-preserving Jones homomorphism
+\[
+ \widehat\alpha_n=\operatorname{Ad}_{R_n}\circ\alpha_n
+ : A_{n+6}\longrightarrow A_{n+7}
+\]
+to every \(E_{ij}^{(n)}\), and define
+\(E_{ij}^{(n+1)}=\widehat\alpha_n(E_{ij}^{(n)})\). The matrix-unit relations
+are preserved exactly. The \((0,0)\) unit is the canonical next Jones
+corner, \(E_{00}^{(n+1)}=e_{n+1}\). Consequently
+
+\[
+ \widetilde W_n=\sum_{i,j}U_{ij}E_{ij}^{(n)}+1-\sum_iE_{ii}^{(n)},
+ \quad \widetilde P_n=\sum_{i,j}P_{ij}E_{ij}^{(n)},
+ \quad \widetilde B_n=\sum_{i,j}(B_0)_{ij}E_{ij}^{(n)}
+\]
+form a coherent all-level internal tail. At every level the full step is
+unitary, both cuts remain distinct commuting projections, and the
+complement remains present. Since each \(\widehat\alpha_n\) preserves the
+native trace, the one- and two-tick feedback polynomials and their weighted
+traces are unchanged. The first transition was checked against the literal
+ordered matrices of both owners, including all 16 matrix units and both
+simple blocks; the all-level statement follows by induction from the
+Jones homomorphism laws.
+
+There is an important boundary to this construction. Re-seeding the
+canonical four-level frame from scratch at level \(n+1\) does **not** give
+the transported \(\widetilde W_n,\widetilde P_n,\widetilde B_n\), or their
+whole-frame support. The corner alone agrees. The exact certificate records
+this failure at the first transition. Thus the derived mechanism is “one
+four-level activation, then transport its complete apparatus,” not a fresh
+identical activation at each level. This is the precise algebraic form of
+the proposed special start followed by a self-similar tail.
+
+This closes the internal AF algebraic state/action/readout/refinement
+composition for that seeded class. It still supplies no map from the tail to
+\((q,D,b,m)\), no metric/link tangent, physical source or Ward identity, and
+no curved solution or GR limit. The refinement index and the Jones record
+are native mathematical transitions; identifying them with physical
+proper time or spatial expansion remains open.
