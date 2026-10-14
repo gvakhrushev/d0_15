@@ -147,6 +147,74 @@ for op in alpha:
 # The last compression holds for EVERY correlated state in the scene/V
 # product space, not just for a tensor-product prepared seed.
 
+# Exact SO(3) fixed-space classifier without continuous-angle sampling:
+# the two orthogonal 90-degree spatial rotations already have common
+# fixed space V on the whole exterior algebra. A single rotation is NOT
+# enough (eight fixed coordinates); the joint rank is 12 and hence dim 4.
+R12 = S.eye(4)
+R12[1,1],R12[1,2],R12[2,1],R12[2,2] = 0,-1,1,0
+R23 = S.eye(4)
+R23[2,2],R23[2,3],R23[3,2],R23[3,3] = 0,-1,1,0
+subsets={mask:tuple(i for i in range(4) if mask & (1<<i))
+         for mask in range(16)}
+def exterior(F):
+    out=S.zeros(16)
+    for row,ir in subsets.items():
+        for col,ic in subsets.items():
+            if len(ir)==len(ic):
+                out[row,col]=F.extract(ir,ic).det() if ir else S.Integer(1)
+    return out
+E12,E23=exterior(R12),exterior(R23)
+assert E12.T*E12 == I and E23.T*E23 == I
+assert (E12-I).rank()==8
+combined=(E12-I).col_join(E23-I)
+assert combined.rank()==12
+for i in seed_sector:
+    assert combined[:,i]==S.zeros(32,1)
+# This exact rank/nullspace identity proves Fix_{SO(3)}(Fock16)=V:
+# any SO(3)-equivariant linear or nonlinear map on an invariant seed
+# remains in V unless an additional spatially transforming datum is
+# part of its input.
+
+# An actual permitted one-parameter high-grade matter variation has a
+# nonzero CAR-current jet while the very same native two-tick price is fixed.
+# Hence current variation does NOT imply a physical action/source variation.
+t=S.symbols("t",real=True)
+varied=witness.copy()
+varied[6]=1+t
+N_t=(varied.T*varied)[0]
+r3_t=S.cancel((varied.T*alpha[2]*varied)[0]/N_t)
+assert S.simplify(r3_t.subs(t,0)-S.Rational(2,3))==0
+assert S.simplify(S.diff(r3_t,t).subs(t,0)-S.Rational(2,9))==0
+# m1 remains +1: all sign/observer/geometry arguments are unchanged.
+assert varied[1]==1
+
+# T0->T1 ladder gate: every literal two-record collinear chronology has
+# the SAME full 16-dimensional feedback price, even if spatial CAR current
+# is nonzero and changes sign. This tests all four sign histories, not an
+# arbitrarily selected seed or a sampled spectrum.
+Pcut=S.diag(*[1 if mask%2==0 else 0 for mask in range(16)])
+for first_sign in (-1,1):
+    for second_sign in (-1,1):
+        chronological=native_gate(second_sign)*native_gate(first_sign)
+        feedback=Pcut*chronological.T*(I-Pcut)*chronological*Pcut
+        active_rows=[j for j in range(16) if feedback[j,j]!=0]
+        expected_rows=([0,2,4,8] if first_sign==second_sign
+                       else [6,10,12,14])
+        assert active_rows==expected_rows
+        assert feedback == S.diag(*[
+            4*a*a*p*p if i in expected_rows else 0 for i in range(16)])
+        assert S.trace(feedback)==16*a*a*p*p
+        assert feedback*feedback==4*a*a*p*p*feedback
+# With a^2=p and p+p^2=1, all 4 full ordinary determinants are
+# (1-4*z*p^3)^4, including twelve zero-feedback directions.
+assert S.expand((4*a*a*p*p).subs(a*a,p)-4*p**3)==0
+# At fixed q=eta, constant links and full W=I the Hodge heat is
+# independent of matter. On the active collinear open band the gate and
+# Pcut are independent of the higher Fock coefficients. Consequently
+# the total Hodge-heat plus literal two-tick feedback matter jet is ZERO;
+# this is a restricted vertical/material jet, not a metric/source theorem.
+
 # Hostile controls: old seed cannot spontaneously become spatial-current active;
 # changing current readout alone cannot retain endpoint isometry.
 assert any(alpha[i].extract(sector,sector) != S.zeros(10) for i in range(3))
