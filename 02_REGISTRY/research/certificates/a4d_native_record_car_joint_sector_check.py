@@ -174,6 +174,19 @@ for i in seed_sector:
 # remains in V unless an additional spatially transforming datum is
 # part of its input.
 
+# An actual permitted one-parameter high-grade matter variation has a
+# nonzero CAR-current jet while the very same native two-tick price is fixed.
+# Hence current variation does NOT imply a physical action/source variation.
+t=S.symbols("t",real=True)
+varied=witness.copy()
+varied[6]=1+t
+N_t=(varied.T*varied)[0]
+r3_t=S.cancel((varied.T*alpha[2]*varied)[0]/N_t)
+assert S.simplify(r3_t.subs(t,0)-S.Rational(2,3))==0
+assert S.simplify(S.diff(r3_t,t).subs(t,0)-S.Rational(2,9))==0
+# m1 remains +1: all sign/observer/geometry arguments are unchanged.
+assert varied[1]==1
+
 # T0->T1 ladder gate: every literal two-record collinear chronology has
 # the SAME full 16-dimensional feedback price, even if spatial CAR current
 # is nonzero and changes sign. This tests all four sign histories, not an
