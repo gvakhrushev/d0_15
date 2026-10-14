@@ -119,6 +119,32 @@ assert sorted(h.eigenvals()) == [S.Rational(1,5),S.Integer(1),S.Integer(5)]
 defect=S.expand(a*a+p*p*h[0,0]-1)
 assert S.expand(defect.subs(a*a,p)-S.Rational(8,5)*p*p) == p*p+p-1
 
+# The already owned whole-scene compiler uses only temporal-bit controlled
+# flips C_fN/C_cN, the uniform temporal-bit G_N, the native U+, and a
+# scene/controller-only reversal C_cf. Every matter generator reduces V.
+# Consequently any controlled word, including its fixed nine-primitive
+# incarnation on 718 directed edges x 2 controller values x 16 matter
+# states, reduces (scene x controller) tensor V. No large dense
+# 22976-by-22976 matrix is required for this exact tensor proof.
+Xn = S.zeros(16)
+Gn = S.zeros(16)
+for mask in range(16):
+    Xn[mask ^ 1, mask] = 1
+for even_mask in range(0,16,2):
+    Gn[even_mask,even_mask] = a
+    Gn[even_mask,even_mask+1] = -p
+    Gn[even_mask+1,even_mask] = p
+    Gn[even_mask+1,even_mask+1] = a
+outside_v=tuple(i for i in range(16) if i not in seed_sector)
+for primitive in (I,Xn,Gn,native_gate(+1),native_gate(-1)):
+    assert primitive.extract(outside_v,seed_sector) == S.zeros(12,4)
+    assert primitive.extract(seed_sector,outside_v) == S.zeros(4,12)
+assert 718*2*16 == 22976
+for op in alpha:
+    assert op.extract(seed_sector,seed_sector) == S.zeros(4)
+# The last compression holds for EVERY correlated state in the scene/V
+# product space, not just for a tensor-product prepared seed.
+
 # Hostile controls: old seed cannot spontaneously become spatial-current active;
 # changing current readout alone cannot retain endpoint isometry.
 assert any(alpha[i].extract(sector,sector) != S.zeros(10) for i in range(3))
