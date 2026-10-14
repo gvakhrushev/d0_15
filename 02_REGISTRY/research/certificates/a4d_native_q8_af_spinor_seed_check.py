@@ -20,10 +20,12 @@ BASE = "a4d_native_q8_af_spinor_seed"
 PINNED = {
     "03_FORMALIZATION/D0/Representation/Omega8Q8TypedBridge.lean":
         "3bc91c3b1773ce092ebe9559d434cf4bdc92406d50fa376c11dc247608f87354",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean":
+        "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
     "03_FORMALIZATION/D0/UnifiedFiniteCore/Q8Terminal.lean":
         "21d12f38c3f34e158bdae228b0fcc01edbafc6d616126c73df66fb144c703af6",
     "02_REGISTRY/research/certificates/a4d_native_q8_af_spinor_seed.lean":
-        "569b0cb724f7dee7e143d062b7882cc642013d45a17b698cb968093e32796abf",
+        "d65b67e8b3f21c3db079b7e455d0ce5c1e6a737b49288953de95cd887e9ed67d",
     "03_FORMALIZATION/D0/Core/RoleAlternatingPairing.lean":
         "2f5cccba34e02b0173ca30c9d59b83dca55e2116d2456098f35deafcc77e117f",
     "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean":
@@ -50,10 +52,14 @@ PINNED = {
         "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3",
     "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py":
         "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean":
+        "7445b7c3827a372f4a90eaad5acfbd4523b7852e31778162fe17b155374cd30b",
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_check.py":
+        "a6d09cc3925b9a5acb415e1bac62a829bcef177f98fc2c0bd29a890cb6bafbf5",
     "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py":
         "b19f6c864af7e75c2a48d9892692b4d94337d06c04a83013b180148a1752c53f",
     "02_REGISTRY/research/A4D_NATIVE_Q8_AF_SPINOR_RECORD_SEED.md":
-        "4282accf25d6adc0ba06f88754d8d8a137e79168bc98c11d88f2a9367fb56b93",
+        "bca4dfa9dc26fb0599ce341f1f33ff003add4104c61848374f4a0eddd3707411",
 }
 
 
@@ -185,6 +191,108 @@ def native_corner_m2_checks() -> dict:
         "m2_density_equals_rho_phi": False,
         "jones_preserves_all_four_m2_matrix_unit_expectations": True,
         "both_old_type_sectors_retained": True,
+    }
+
+
+def native_activation_spinor_checks() -> dict:
+    """Run the owned blank-record gate inside its actual three-bond AF frame."""
+    rel = "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py"
+    spec = importlib.util.spec_from_file_location("q8_seed_native_af_activation", ROOT / rel)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("NATIVE_AF_ACTIVATION_OWNER_IMPORT_FAILED")
+    owner = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = owner
+    spec.loader.exec_module(owner)
+
+    n = 0
+    data = owner.frame(n)
+    V = data["V"]
+    d = data["old_dimension"]
+    a, p = owner.a, owner.p
+
+    # The canonical level-zero AF cyclic vector has the forced trace weights
+    # p and p^2, represented by their owned positive square-root amplitudes.
+    spectator = s.zeros(d, 1)
+    for index, (old_type, row, col) in enumerate(data["old_coordinates"]):
+        if row == col:
+            spectator[index] = owner.root_weight(n + 1 + old_type)
+    if owner.red(s.expand((spectator.T * spectator)[0] - 1)) != 0:
+        raise AssertionError("Canonical AF spectator vector is not normalized")
+
+    blank = s.Matrix.vstack(spectator, s.zeros(3 * d, 1))
+    apparatus_gate = s.kronecker_product(owner.record(), s.eye(d))
+    expected_coordinates = owner.mat(apparatus_gate * blank)
+    expected = s.Matrix.vstack(a * spectator, s.zeros(d, 1),
+                               s.zeros(d, 1), p * spectator)
+    if owner.zero(expected_coordinates - expected) is False:
+        raise AssertionError("Owned fullStep did not preserve its exact blank output")
+
+    native_gate, _, _, _ = owner.full_operators(V, d)
+    complement = owner.mat(s.eye(V.rows) - V * V.T)
+    if owner.zero(native_gate.T * native_gate - s.eye(V.rows)) is False:
+        raise AssertionError("AF-embedded gate is not unitary on the whole carrier")
+    if owner.zero(native_gate * complement - complement) is False:
+        raise AssertionError("AF-embedded gate changed its orthogonal complement")
+    native_input = owner.mat(V * blank)
+    native_output = owner.mat(native_gate * native_input)
+    decoded_output = owner.mat(V.T * native_output)
+    if owner.zero(native_output - V * expected) is False:
+        raise AssertionError("AF-embedded fullStep differs from the owned apparatus gate")
+    if owner.zero(decoded_output - expected) is False:
+        raise AssertionError("AF frame failed to decode the retained full output")
+    if owner.red(s.expand((decoded_output.T * decoded_output)[0] - 1)) != 0:
+        raise AssertionError("AF-embedded full output lost norm")
+
+    amplitudes = s.Matrix(4, d, lambda i, j: decoded_output[i * d + j])
+    apparatus_density = owner.mat(amplitudes * amplitudes.T)
+    system_density = s.zeros(2)
+    record_density = s.zeros(2)
+    for i in range(2):
+        for j in range(2):
+            system_density[i, j] = owner.red(sum(
+                apparatus_density[2 * i + bit, 2 * j + bit]
+                for bit in range(2)))
+            record_density[i, j] = owner.red(sum(
+                apparatus_density[2 * bit + i, 2 * bit + j]
+                for bit in range(2)))
+    golden_density = s.diag(p, p**2)
+    if owner.zero(system_density - golden_density) is False:
+        raise AssertionError("AF-native system partial trace is not diag(p,p^2)")
+    if owner.zero(record_density - golden_density) is False:
+        raise AssertionError("AF-native record partial trace is not diag(p,p^2)")
+    expected_apparatus_density = s.Matrix([
+        [p, 0, 0, a * p],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [a * p, 0, 0, p**2],
+    ])
+    if owner.zero(apparatus_density - expected_apparatus_density) is False:
+        raise AssertionError("Full apparatus coherence or retained record was lost")
+
+    pauli_x = s.Matrix([[0, 1], [1, 0]])
+    pauli_y = s.Matrix([[0, -s.I], [s.I, 0]])
+    pauli_z = s.diag(1, -1)
+    spinor_readout = [
+        owner.red(s.trace(system_density)),
+        owner.red(s.trace(system_density * pauli_x)),
+        owner.red(s.trace(system_density * pauli_y)),
+        owner.red(s.trace(system_density * pauli_z)),
+    ]
+    if any(owner.red(value - target) != 0
+           for value, target in zip(spinor_readout, [1, 0, 0, p**3])):
+        raise AssertionError("AF-native Q8/Pauli spinor readout mismatch")
+
+    return {
+        "input": "canonical_A0_cyclic_vector_in_blank_V0_frame",
+        "native_embedding": "A0_to_A3_three_inclusions; operator_in_A6_right_module_corner",
+        "decoded_full_output": "a*|00>*Omega0 + p*|11>*Omega0",
+        "full_apparatus_density_00_11_block": [["p", "a*p"], ["a*p", "p^2"]],
+        "system_marginal": "diag(p,p^2)",
+        "record_marginal": "diag(p,p^2)",
+        "q8_system_expectations_I_X_Y_Z": ["1", "0", "0", "p^3"],
+        "norm_and_complement_retained": True,
+        "same_as_first_AF_M2_Jones_corner": False,
+        "physical_preparation_and_metric_binding_derived": False,
     }
 
 
@@ -322,6 +430,7 @@ def exact_checks() -> dict:
         raise AssertionError("Jones record correlation control failed")
 
     native_corner = native_corner_m2_checks()
+    activation_spinor = native_activation_spinor_checks()
 
     # Hostile control: the full AF tracial state restricted conditionally to M2
     # has density I/2, not rho. Ancestor-diagonal rho is a separate preparation.
@@ -364,7 +473,7 @@ def exact_checks() -> dict:
         raise AssertionError("SU(2) identity-fixing control failed")
 
     return {
-        "scope": "EXACT_Q8_ROLE_AF_M2_KINEMATIC_SEED_PHYSICAL_ADMISSION_OPEN",
+        "scope": "EXACT_Q8_ROLE_AF_ACTIVATION_SPINOR_SEED_PHYSICAL_ADMISSION_OPEN",
         "status": "PASS",
         "source_sha256": actual,
         "q8_role_products_and_commutators": product_count,
@@ -389,6 +498,7 @@ def exact_checks() -> dict:
             "correlation_changes": True,
         },
         "native_prepared_corner_on_m2": native_corner,
+        "native_four_level_activation_spinor": activation_spinor,
         "hostile_controls": {
             "full_af_trace_is_not_ancestor_density": True,
             "fixed_diagonal_does_not_fix_nondiagonal_observables": True,

@@ -183,10 +183,45 @@ the conditional \(M_2\) state \(I_2/2\), not
 \(\rho_\phi=\operatorname{diag}(p,p^2)\). The exact Jones transition leaves
 all four of these \(M_2\) matrix-unit expectations unchanged for these
 prepared states. The golden pair is therefore an actual classical sector
-record here, but its identification with the Q8 spinor density is still
-missing. The companion certificate binds this contraction directly to the
-owned ordered AF matrices; it does not infer it from the matching scalar
-weights.
+record here. This particular corner does not give the Q8 spinor density. The
+companion certificate binds this contraction directly to the owned ordered AF
+matrices; it does not infer it from the matching scalar weights.
+
+### The four-level activation also prepares the Q8 spinor marginal
+
+The missing finite state map is supplied by a different, already-owned
+transition: the four-copy activation represents the literal
+`GoldenCoherentMemory.fullStep` in the actual AF right-module corner. At each
+level its apparatus frame is
+\(V:\mathbb C^4\otimes H_n\to H_{n+3}\), and the actual native operator is
+\(W=V(U\otimes I)V^*+(I-VV^*)\). The complement remains an identity sector.
+Use the existing blank frame \(|00\rangle\otimes\Omega_n\), where
+\(\Omega_n\) is the normalized cyclic vector for the forced AF trace. The
+owned gate equation gives, in the full retained carrier,
+
+\[
+W V(|00\rangle\otimes\Omega_n)
+ =V\bigl((a|00\rangle+p|11\rangle)\otimes\Omega_n\bigr),
+\qquad a^2=p,\quad p+p^2=1.
+\]
+
+Tracing out the record bit and the spectator gives the system density
+\(\operatorname{diag}(a^2,p^2)=\operatorname{diag}(p,p^2)\); tracing out
+the system instead gives the same density on the retained record. The full
+apparatus state still contains its \(00\)-to-\(11\) coherence \(ap\), and
+the complement is retained. Thus the AF-embedded activation does produce an
+actual finite Q8-system state with Role expectations
+\((I,X,Y,Z)=(1,0,0,p^3)\). The four-level startup is doing more than matching
+scalar weights: its existing reversible gate generates the spinor marginal
+and its internal record together.
+
+This resolves the finite representation/readout map for the activation
+apparatus. It does not identify that state with the distinct conditional
+trace of the first \(A_1=M_2\oplus\mathbb C\) block, which remains \(I_2/2\)
+in the Jones calculation. Nor does the mathematical representation prove
+that the physical preparation law selects or executes \(W\), or that this
+apparatus marginal is the metric/matter readout on \((q,D,b,m)\). Those
+admissions are the remaining bridge.
 
 ## 4. The record transition supplies an internal change
 
@@ -239,20 +274,16 @@ step preserves all four matrix-unit expectations for these preparations.
 This is a scoped result for the actual corner state, not a classification of
 every possible conditional instrument.
 
-The next decisive calculation is the missing algebra map: determine whether
-any already-owned transition sends that two-sector classical record to the
-full Q8 \(M_2\) density \(\operatorname{diag}(p,p^2)\), including its
-off-diagonal Role probes. The literal AF inclusion
-\(\iota_0(x,y)=(\operatorname{diag}(x,y),x)\) attaches the scalar branch to
-the first old type; it does not identify the scalar record with the second
-matrix basis vector. A map of that kind must come from the existing M1/Role
-structure and its allowed variations, not from a newly chosen selector. If it
-exists, compute the complete instrument with every outcome and complement,
-then compare its cone action and derivative with the native
-\((q,D,b,m)\) tangent. The full-preparation owner already exhibits a
-price-changing direction that preserves both marginals and the complete
-Jones table, so the state law must handle that direction as well. The desired
-zero source may not be built into admission.
+The highest-value next calculation is now to pull this exact AF-embedded
+spinor readout through the complete native \((q,D,b,m)\) preparation and its
+constrained tangent. Compute the full action derivative, including the
+retained record and complement, and compare all physical metric slots with
+\(\rho_0\). The full-preparation owner already exhibits a price-changing
+direction that preserves both marginals and the complete Jones table, so the
+state law must handle that direction as well. The desired zero source may not
+be built into admission. If the existing four-level operation is not admitted
+by that state law, classify that failure for the explicitly owned preparation
+class; do not promote the Jones-corner calculation to a whole-core NO-GO.
 
 Failure of this (M_2)/Jones route would be a scoped obstruction. It would
 not close the fixed-source/raw-owner parent, prove a whole-core NO-GO, or
@@ -267,9 +298,13 @@ The companion checker pins all source owners by SHA-256 and checks the full
 determinant, the first AF path/dimension sequence, the exact golden density
 and feedback/corner identities, the Jones record tables, and all four
 matrix-unit expectations of the actual \(A_1\to A_7\) prepared-corner
-restriction before and after the Jones transition. The Lean certificate proves
-the determinant form and the two scalar golden identities; it compiles under
-the repository's pinned Lean toolchain and uses only standard Lean axioms.
+restriction before and after the Jones transition. It also executes the
+four-level AF-embedded gate on the canonical \(A_0\) cyclic vector and checks
+the decoded full state, both system/record partial traces, and all Q8 Pauli
+expectations. The Lean certificate proves the determinant form, the literal
+gate output and its two exact marginals, plus the scalar golden identities;
+it compiles under the repository's pinned Lean toolchain and uses only
+standard Lean axioms.
 Hostile controls keep the AF tracial state distinct from the ancestor density,
 exhibit a positive coherent extension with the same diagonal but a different
 Pauli-X readout, and reject boosts from fixed-block unitary conjugation.
