@@ -242,4 +242,4 @@ Files:
 
 - [checker](certificates/a4d_native_q8_af_spinor_seed_check.py)
 - [pinned results](certificates/a4d_native_q8_af_spinor_seed_results.json)
-- [Lean module](../../03_FORMALIZATION/D0/Research/Q8AFSpinorSeed.lean)
+- [Lean certificate](certificates/a4d_native_q8_af_spinor_seed.lean)

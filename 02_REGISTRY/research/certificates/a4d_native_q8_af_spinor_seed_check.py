@@ -20,7 +20,7 @@ PINNED = {
         "3bc91c3b1773ce092ebe9559d434cf4bdc92406d50fa376c11dc247608f87354",
     "03_FORMALIZATION/D0/UnifiedFiniteCore/Q8Terminal.lean":
         "21d12f38c3f34e158bdae228b0fcc01edbafc6d616126c73df66fb144c703af6",
-    "03_FORMALIZATION/D0/Research/Q8AFSpinorSeed.lean":
+    "02_REGISTRY/research/certificates/a4d_native_q8_af_spinor_seed.lean":
         "569b0cb724f7dee7e143d062b7882cc642013d45a17b698cb968093e32796abf",
     "03_FORMALIZATION/D0/Core/RoleAlternatingPairing.lean":
         "2f5cccba34e02b0173ca30c9d59b83dca55e2116d2456098f35deafcc77e117f",
@@ -47,7 +47,7 @@ PINNED = {
     "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md":
         "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3",
     "02_REGISTRY/research/A4D_NATIVE_Q8_AF_SPINOR_RECORD_SEED.md":
-        "3dd223dc09775ac02b29c3dee850522d6a12072b6a29e936ba9a0dfb638f2f26",
+        "c470b88106b0e1484ac592f2e6a3e7fec2042c95817a1a83cb12d556579c8f1a",
 }
 
 
