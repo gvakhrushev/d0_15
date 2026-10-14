@@ -314,10 +314,10 @@ derive the complete source/Ward on genuine field variations. Quantitative
 contrast, native stationarity, curved joint roots, soundness/recovery, GR and
 the original fixed-source/raw-owner #310 terminal remain open.
 
-## 8. The closed record engine does not feed this current source
+## 8. The existing record engines do not feed this current source
 
 This cross-owner continuation binds SOURCE baseline
-`0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16`, on top of the original
+`39dbaecfb6e1c316c25c6d1898711a74164559ea`, on top of the original
 correlated-current input recorded at the head of this file.
 
 Compare the actual full-CAR current in sections 3–6 with the already owned
@@ -354,22 +354,64 @@ because m_3 is nonzero (its first-grade m_1 is also zero). The engine does
 not accept this source-active state as an input. Conversely, replacing the
 engine's state by the B curve is not one of its state-selected transitions.
 
-This is an exact decoupling result for this pair of existing owners and this
+This is an exact decoupling result for the existing record owners and this
 current/heat readout: the positive source curve and the indefinitely
-recording engine have not yet been composed into one dynamics. It does not
+recording seed have not yet been composed into one dynamics. It does not
 exclude another already-owned native interaction or source term, and it is
 not a NO-GO for the D0 core. The next proof must either exhibit an already
-owned, physically admitted operation that couples the retained engine
-record into the current-active sector and derive its variation, or classify
-this engine/current route as closed to that source. No interpolation,
-mixing map or new physical selector is supplied here.
+owned, physically admitted operation that creates the cross-sector coherence
+in (19) from the prepared current-null record sector and derive its joint
+variation, or classify the engine/scene/current route as closed. No
+interpolation, mixing map or new physical selector is supplied here.
 
-The checker pins the engine program, its exact checker, Lean capsule,
-compiler output/results and proof, compares both signs on all sixteen
-columns, tests both reducing blocks and all three compressed CAR currents,
-and includes negative controls for falsely admitting the source state. The
-all-time step is inherited only through the pinned existing Lean theorem;
-the finite orbit rows are regression controls, not the all-time argument.
+The checker pins the engine and autonomous-scene programs, their exact
+checkers, Lean capsules, compiler outputs/results and proofs. It compares the
+engine's two signs on all sixteen columns, the complete 64-column scene word,
+both reducing blocks, the current compressions and the source-curve
+cross-sector decomposition; hostile controls reject false sector exit and
+false source vanishing. The engine's all-time step is inherited only through
+the pinned existing Lean theorem; finite orbit rows are regression controls,
+not the all-time argument.
+
+### The autonomous scene word also preserves the current-null sector
+
+The other existing engine is the fixed addressed word on all scene histories
+in [the autonomous scene owner](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md). On its
+local 64-dimensional carrier write
+
+    S_hat=R^{ {c,f} } tensor S,   S=span{e_0,e_1,e_14,e_15}.
+
+The exact 64-column word is orthogonal and preserves both S_hat and its full
+orthogonal complement. The existing prepared c=1 seed, with both f
+orientations populated, lies in S_hat. The actual scene program repeats this
+same block on all 359 reversal pairs (all 718 directed histories), so each
+complete state on the 22976-dimensional scene carrier remains in the repeated
+S_hat sector at every finite tick. The full current operator on this local
+carrier is `I_4 tensor alpha_i`; its compression to S_hat is zero for all
+three spatial components. Thus adding the actual scene memory, reversal flag
+and addressed forward word still does not generate the current-active
+component from this seed. The result concerns this exact existing word and
+seed, not every possible native scene interaction.
+
+### The positive current on the prepared curve is cross-sector
+
+For the section-6 source curve put `m(t)=U B(x(t),y(t))`,
+`m_S=P_S m` and `m_perp=(I-P_S)m`. Its norm is one. Exact substitution in the
+actual CAR matrices gives, for each spatial alpha_i and throughout the
+curve, `m_S^T alpha_i m_S=0` and
+`m_perp^T alpha_i m_perp=0`. Therefore
+
+    r_i(t)=2 m_S^T alpha_i m_perp,
+    (r_1(0),r_1'(0))=(2ap,4p^3),   r_2=r_3=0.       (19)
+
+On this candidate source, the response is carried entirely by coherence
+between the current-null sector and its complement. Neither the closed
+engine nor the autonomous scene word transfers its prepared seed out of the
+null sector, so neither owner by itself produces the nonzero term in (19).
+This sharpens the scoped decoupling: merely preserving and copying the
+engine record is insufficient for this particular readout. It does not
+exclude another native action term, another already-owned preparation, or a
+different source route.
 
 ## 9. Evidence boundary
 

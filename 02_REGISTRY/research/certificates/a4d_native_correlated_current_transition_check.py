@@ -31,6 +31,13 @@ INPUTS=[
     '02_REGISTRY/research/certificates/a4d_native_closed_record_engine_output.txt',
     '02_REGISTRY/research/certificates/a4d_native_closed_record_engine_results.json',
     '02_REGISTRY/research/certificates/a4d_native_closed_record_engine_certificate.json',
+    '02_REGISTRY/research/A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md',
+    '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program.py',
+    '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program.lean',
+    '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_results.json',
+    '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_certificate.json',
 ]
 q=importlib.util.spec_from_file_location('correlated_program',ROOT/(BASE+'.py'))
 P=importlib.util.module_from_spec(q);sys.modules[q.name]=P;q.loader.exec_module(P)
@@ -38,6 +45,9 @@ s,a,p,z=P.s,P.a,P.p,P.z
 ENGINE='02_REGISTRY/research/certificates/a4d_native_closed_record_engine'
 q=importlib.util.spec_from_file_location('closed_record_engine',ROOT/(ENGINE+'.py'))
 E=importlib.util.module_from_spec(q);sys.modules[q.name]=E;q.loader.exec_module(E)
+SCENE='02_REGISTRY/research/certificates/a4d_native_autonomous_record_program'
+q=importlib.util.spec_from_file_location('autonomous_scene_program',ROOT/(SCENE+'.py'))
+SP=importlib.util.module_from_spec(q);sys.modules[q.name]=SP;q.loader.exec_module(SP)
 
 def engine_expr(value):
     u,v,w,t=value.coefficients
@@ -51,6 +61,16 @@ def engine_gate(sign):
     for i in range(16):
         basis=[E.ZERO]*16;basis[i]=E.ONE
         columns.append(engine_vector(E.literal_axis_gate(E.State(tuple(basis)),sign)))
+    return s.Matrix.hstack(*columns)
+
+def scene_vector(state):
+    return s.Matrix([engine_expr(value) for value in state.coordinates])
+
+def scene_gate():
+    columns=[]
+    for i in range(64):
+        basis=[SP.E.ZERO]*64;basis[i]=SP.E.ONE
+        columns.append(scene_vector(SP.step(SP.ProgramState(tuple(basis)))))
     return s.Matrix.hstack(*columns)
 
 def sha(path):return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
@@ -170,6 +190,27 @@ def controls(receipt=True):
     eq('source_active_golden_state_is_outside_engine_guard',source_vector[3]-p)
     eq('source_active_golden_fullstep_current',
        P.current(P.I4,U*source_vector)-s.Matrix([1,2*a*p,0,0]))
+    # The already owned scene word is a fixed 64-dimensional executor,
+    # repeated on all 359 native edge-reversal pairs.
+    Wscene=scene_gate()
+    controller_sector=[(c<<5)|(f<<4)|mask for c in range(2) for f in range(2)
+                       for mask in (0,1,14,15)]
+    Vscene=s.eye(64)[:,controller_sector];Pscene=Vscene*Vscene.T
+    scene_perp=s.eye(64)-Pscene
+    eq('autonomous_scene_actual_word_orthogonal',Wscene.T*Wscene-s.eye(64))
+    eq('autonomous_scene_word_preserves_current_null_sector',scene_perp*Wscene*Vscene)
+    eq('autonomous_scene_word_preserves_sector_complement',Pscene*Wscene*scene_perp)
+    reject('AUTONOMOUS_SCENE_WORD_LEAVES_CURRENT_NULL_SECTOR',
+           not zero(scene_perp*Wscene*Vscene))
+    scene_seed=scene_vector(SP.seed(both_orientations=True))
+    eq('autonomous_scene_seed_in_current_null_sector',scene_perp*scene_seed)
+    for i in range(3):
+        scene_alpha=s.kronecker_product(s.eye(4),alpha[i])
+        eq('autonomous_scene_sector_current_compression_'+str(i),
+           Vscene.T*scene_alpha*Vscene)
+    check('autonomous_scene_all_718_history_coordinates',
+          len(SP.SCENE_EDGES)==718 and len(SP.BASE_EDGES)==359
+          and len(SP.scene_seed())==359)
     eq('whole_blank_code_isometry',B.T*B-s.eye(2))
     eq('whole_blank_code_actual_blank',P.P.full_tuple()[2]*B-B)
     eq('eightmask_space_invariant',U*R-R*Uc)
@@ -239,6 +280,15 @@ def controls(receipt=True):
     eq('actual_current_curve_r_at_zero',r0-2*a*p)
     eq('actual_current_curve_r_derivative',rp-4*p**3)
     eq('actual_current_curve_in_all16',P.current(P.I4,mt)-s.Matrix([1,rt,0,0]))
+    source_S=PS*mt;source_perp=Sperp*mt
+    for i in range(3):
+        eq('source_curve_S_self_current_'+str(i),(source_S.T*alpha[i]*source_S)[0])
+        eq('source_curve_complement_self_current_'+str(i),
+           (source_perp.T*alpha[i]*source_perp)[0])
+        eq('source_curve_current_is_cross_sector_'+str(i),
+           2*(source_S.T*alpha[i]*source_perp)[0]-(rt if i==0 else 0))
+    reject('GOLDEN_SOURCE_CROSS_SECTOR_CURRENT_VANISHES',
+           zero(2*(source_S.T*alpha[0]*source_perp)[0].subs(t,0)))
     W=P.I16;v=U*m;dv=P.mat(s.diff(mt,t).subs(t,0));dr=2*(dv.T*(alpha[0]-r0*P.I16)*v)[0]
     eq('current_normalized_genuine_jet',dr-rp)
     scaled=(1+t)*v
@@ -333,13 +383,15 @@ def controls(receipt=True):
         bad=copy.deepcopy(lean);bad['diagnostic_checks']=bad['diagnostic_checks'][1:]
         reject('OMIT_REAL_DIAGNOSTIC_PROPOSITION',valid_Lean_structure(bad,output,capsule))
     paths=closure(INPUTS+[BASE+'.py',BASE+'.lean'])
-    return dict(status='PASS',input_source_head='0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16',
+    return dict(status='PASS',input_source_head='39dbaecfb6e1c316c25c6d1898711a74164559ea',
         proof=PROOF,proof_sha256=sha(PROOF),program_sha256=sha(BASE+'.py'),checker_sha256=sha(BASE+'_check.py'),
         input_sha256={f:sha(f) for f in paths},exact_controls=len(checks),checks=checks,
         executed_mathematical_mutants=mutants,analytic_scope=['complete stabilizer covariance obstruction',
         'arbitrary complex spectator-isometry eight-tick boundary','all-time full current component',
-        'all-L fixed-beta heat bound','exact closed-engine/current-source sector decoupling'],
-        cross_owner_scope='ENGINE_SEED_ORBIT_IN_CURRENT_NULL_SECTOR; SOURCE_ACTIVE_CURVE_OUTSIDE_ENGINE_DOMAIN',
+        'all-L fixed-beta heat bound','exact closed-engine-and-scene/current-source sector decoupling',
+        'positive source current is a checked cross-sector CAR term'],
+        cross_owner_scope='CLOSED_ENGINE_AND_AUTONOMOUS_SCENE_SEED_STAY_IN_CURRENT_NULL_SECTOR; POSITIVE_SOURCE_RESPONSE_IS_CROSS_SECTOR',
+        source_current_decomposition='r_i=2*m_S^T*alpha_i*m_perp on the owned B curve; r1(0)=2ap and r1_prime(0)=4p^3',
         full_feedback_pencil='(1-4zp^3)^(4L^4)',
         retained_zero_feedback_directions='12L^4',physical_admission_source_Ward_stationarity_GR_closed=False)
 

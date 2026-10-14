@@ -4481,8 +4481,18 @@ not yet provide a single dynamics that both records the seed history and
 generates that source. It is a scoped decoupling result, not a core NO-GO;
 other native price terms and already-owned interactions remain possible.
 
-The next critical proof is an existing-owner transition coupling the engine's
-retained record into the current-active sector, with its own allowed
+The autonomous scene word built around the engine is also exact-sector
+preserving on its full 64-coordinate local carrier and all 718 histories:
+its prepared seed stays in `R^{ {c,f} } tensor span{e_0,e_1,e_14,e_15}`.
+The positive-current curve has zero spatial CAR self-current on both this
+sector and its complement; its entire `r_1=2ap` response is the mixed term
+between them, with derivative `4p^3`. The currently owned engine and scene
+word never create that cross-sector coherence from their seed. This rules
+out one concrete memory-growth-alone route while leaving other action terms
+and native preparations open.
+
+The next critical proof is an existing-owner transition that creates this
+required cross-sector response, with its own admitted operation and joint
 variations, or a proof that the specific route is closed. No blending map or
 new physical selector is introduced. Native admission, source/Ward,
 stationarity, refinement, curved roots, soundness/recovery, GR and the
