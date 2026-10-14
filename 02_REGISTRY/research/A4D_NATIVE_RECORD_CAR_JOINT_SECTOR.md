@@ -561,13 +561,31 @@ The exact checker pins the three consumed matrix owners and retains the full
 16-state gate and exterior Gram. Its one-column witness suffices to disprove
 whole-operator isometry; it does not claim the full defect has rank 16.
 
+There is one already-owned way to repair that endpoint Gram test: transport
+the CAR frame together with the pairing. Since \(h_1>0\) and
+\(\det h_1=1\), choose the positive-orientation frame \(A_1\) with
+\(A_1A_1^T=h_1^{-1}\). The existing Fock-frame owner then gives
+\(W_1=C_*(h_1)\) and a full isometry \(E_1\); with \(E_0=I\), the transported
+tick \(T_{1\leftarrow0}=E_1UE_0^\dagger=E_1U\) satisfies
+\(T_{1\leftarrow0}^TW_1T_{1\leftarrow0}=W_0\). The extended exact checker
+constructs this \(A_1,E_1,W_1\) and verifies the isometry on all 16 CAR
+components. But this is precisely the **pure endpoint-frame route** already
+classified by the same owner: with the cut and full pairing transported, two
+ticks telescope to \(E_2U^2E_0^\dagger\), so the complete feedback determinant
+is the original \((1-4zp^3)^4\), independent of the moving frame. The repair
+is price-invisible and supplies no stress jet. It does not cover the distinct
+state-conditioned chronology, which retains a relative observer frame and
+the original cut, or a genuine interaction that changes the CAR operation.
+
 The source-active CAR readout therefore now has two distinct integration
 boundaries: the state-selected closed engine cannot reach it from its own
 blank sector, and the AF/CAR blank tick cannot be paired with \(h_{J_1}\) while
-keeping its old gate. The next positive proof must derive the common
-\((q,D,b,m)\) endpoint update and price variation from an existing native
-owner. The full source/Ward, stationary roots, refinement transfer, curved
-solutions, soundness/recovery and GR remain open.
+keeping its old gate; the owned co-moving frame update is isometric but has
+zero two-tick price derivative. The next positive proof must derive an
+already-owned **non-frame interaction** on the common \((q,D,b,m)\) endpoint
+and its full price variation, or prove a completeness-backed boundary for
+the actual preparation interface. The full source/Ward, stationary roots,
+refinement transfer, curved solutions, soundness/recovery and GR remain open.
 
 Certificate: [exact source-endpoint metric check](certificates/a4d_native_source_endpoint_metric_check.py),
 [immutable result](certificates/a4d_native_source_endpoint_metric_results.json).

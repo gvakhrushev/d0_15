@@ -55,7 +55,7 @@ def run() -> dict:
         if actual != expected:
             raise AssertionError(f"PIN_MISMATCH:{name}:{actual}")
 
-    a, p = P.a, P.p
+    a, p, fugacity = P.a, P.p, P.z
     eta = s.diag(1, -1, -1, -1)
     I4, I16 = s.eye(4), s.eye(16)
     blank = O.blank_code()
@@ -120,6 +120,50 @@ def run() -> dict:
     reverse_defect = P.red((u_scalar.T * P.mat(C.ext(h_reverse)) * u_scalar)[0] - 1)
     require("opposite_current_has_same_positive_scalar_defect", P.red(reverse_defect - expected_defect) == 0, checks)
 
+    # The already-owned endpoint-frame transport repairs this Gram defect,
+    # but only by moving the complete CAR frame and its pairing together.
+    # Its two-tick product telescopes back to the original U^2.
+    require("source_pairing_has_unit_determinant", P.red(h1.det() - 1) == 0, checks)
+    frame = s.eye(4)
+    y, zeta = h1[0, 1], h1[1, 1]
+    frame[0, 0] = s.sqrt(zeta)
+    frame[1, 0] = -y / s.sqrt(zeta)
+    frame[1, 1] = 1 / s.sqrt(zeta)
+    require(
+        "source_pairing_has_oriented_endpoint_frame",
+        s.simplify(frame.det() - 1) == 0
+        and P.mat(s.simplify(frame * frame.T * h1 - I4)) == s.zeros(4),
+        checks,
+    )
+    E1, W1_frame = P.endpoint_frame(frame)
+    require("endpoint_owner_realizes_current_exterior_pairing", P.mat(W1_frame - C.ext(h1)) == s.zeros(16), checks)
+    require(
+        "current_endpoint_frame_is_full16_isometry",
+        P.mat(s.simplify(E1.T * W1_frame * E1 - I16)) == s.zeros(16),
+        checks,
+    )
+    transported_tick = E1 * U
+    require(
+        "moving_frame_gate_restores_endpoint_isometry",
+        P.mat(s.simplify(transported_tick.T * W1_frame * transported_tick - I16)) == s.zeros(16),
+        checks,
+    )
+    transported_return = U * E1.T * W1_frame
+    require(
+        "two_tick_moving_frame_transport_telescopes",
+        P.mat(s.simplify(transported_return * transported_tick - U * U)) == s.zeros(16),
+        checks,
+    )
+    U2 = P.mat(U * U)
+    _, cut, _ = P.full_tuple()
+    cut = P.mat(cut)
+    F2 = P.mat(cut * U2.T * (I16 - cut) * U2 * cut)
+    require(
+        "frame_repair_retains_original_two_tick_price",
+        P.red((I16 - fugacity * F2).det() - (1 - 4 * fugacity * p**3) ** 4) == 0,
+        checks,
+    )
+
     return {
         "schema": "d0-native-source-endpoint-metric/1",
         "status": "PASS",
@@ -134,7 +178,9 @@ def run() -> dict:
             "source_pairing_00": "2/p^6-1",
             "scalar_column_endpoint_norm_defect": "8/p=8*(1+p)>0",
         },
-        "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing",
+        "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, and existing pure endpoint-frame transport",
+        "pure_endpoint_frame_transport_repairs_isometry": True,
+        "pure_endpoint_frame_transport_changes_two_tick_price": False,
         "other_joint_link_or_gate_updates_classified": False,
         "physical_admission": False,
         "full_native_q_D_b_m_transition": False,

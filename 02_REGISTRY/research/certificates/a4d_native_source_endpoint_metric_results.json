@@ -23,9 +23,16 @@
     "defect_is_strictly_positive",
     "full_endpoint_isometry_fails",
     "frozen_pairing_control_has_zero_defect",
-    "opposite_current_has_same_positive_scalar_defect"
+    "opposite_current_has_same_positive_scalar_defect",
+    "source_pairing_has_unit_determinant",
+    "source_pairing_has_oriented_endpoint_frame",
+    "endpoint_owner_realizes_current_exterior_pairing",
+    "current_endpoint_frame_is_full16_isometry",
+    "moving_frame_gate_restores_endpoint_isometry",
+    "two_tick_moving_frame_transport_telescopes",
+    "frame_repair_retains_original_two_tick_price"
   ],
-  "exact_controls": 16,
+  "exact_controls": 23,
   "witness": {
     "initial_current": "(1,0,0,0)",
     "one_tick_current": "(1,2*a*p,0,0)",
@@ -33,11 +40,13 @@
     "source_pairing_00": "2/p^6-1",
     "scalar_column_endpoint_norm_defect": "8/p=8*(1+p)>0"
   },
-  "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing",
+  "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, and existing pure endpoint-frame transport",
+  "pure_endpoint_frame_transport_repairs_isometry": true,
+  "pure_endpoint_frame_transport_changes_two_tick_price": false,
   "other_joint_link_or_gate_updates_classified": false,
   "physical_admission": false,
   "full_native_q_D_b_m_transition": false,
   "source_Ward_stationarity_GR_closed": false,
   "new_Lean_compilation": false,
-  "checker_sha256": "49f8abf2a5da531f494a300d6bfa800908e179764694a57f91913fb060aa3249"
+  "checker_sha256": "d9c611ca1838864ad9d911e85b1d2170d9dc7b4f7c77b34dce5e8f13eee77d21"
 }
