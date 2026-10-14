@@ -1414,7 +1414,33 @@
       "field_to_instrument_tangent_derived": false,
       "native_chronological_J_identified": false,
       "GR_or_original_parent_closed": false,
-      "next": "Bind the actual native full operator L, retained/archive algebras, preparation rho and their joint field tangent before evaluating C_A or its derivative. Keep all price terms and the candidate metric covector; do not replace the physical archive by K or choose a cancellation."
+      "next": "For the existing AF representation, use conditional_native_af_heat_transfer, which replaces the independently supplied tensor cut of this v6 calculation. The remaining owner is the physical full generator L(q,D,b,m), its actual joint field tangent and any changing-algebra terms. Keep all price terms and the candidate metric covector; do not replace the physical archive by K or choose a cancellation."
+    },
+    "conditional_native_af_heat_transfer": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_AF_HEAT_TRANSFER.md",
+      "full_proof": "02_REGISTRY/research/sources/d0_native_af_heat_transfer_v7_2026-10-14/NATIVE_AF_HEAT_TRANSFER_RU.md",
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_af_heat_transfer_check.py",
+      "receipt": "02_REGISTRY/research/sources/d0_native_af_heat_transfer_v7_2026-10-14/af_heat_receipt.json",
+      "input_head": "25bf1db4876c20223f2dbaeb1cbe1105039cf7a1",
+      "owner_git_blobs": {
+        "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean": "64dc8f9da911b1ff3427413c2efc40db0bcac043",
+        "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md": "573e2d70c1d7cbefd35670431b1ab9b87624dbdd",
+        "02_REGISTRY/research/A4D_NATIVE_AF_TRACE_PREPARATION.md": "3cbb805fb72b501a0eb1d7d17b9f037dff115880"
+      },
+      "status": "PASS_EXACT_REPLAY_CONDITIONAL_PHYSICAL_GENERATOR",
+      "exact_conditions": 304,
+      "negative_controls": 7,
+      "checks_sha256": "e4e70360eb0a20eac013291de4f085771a98eb830369a8d957a0f1070fad285f",
+      "proof_sha256": "d88fd469cf965806489e0d90c1184fdeb652b79a95434f528d14736f03cacedd",
+      "checker_sha256": "b9b491ac34db33a7e5091dda0ac03297fab64b17594f535235daa0ceabf23b65",
+      "derived": "On the existing Fibonacci AF representation, trace duality uniquely forces the full ordinary-trace transfer R_n=w_n^-1 C_n(w_(n+1)*), distinct from but compatible with the GNS/PF adjoint. The full heat factor and full heat-plus-matter/archive source telescope with all moving-state and noncommuting first derivatives. At the literal first residual L=nu(I-JJ*) reference, the complete source is -3/7 at beta=log(2), nu=1, and the bounded commutant-reference response is unital CP with norm one; a bounded-width inherited Gibbs-to-PF error is explicit.",
+      "native_AF_trace_transfer_derived": true,
+      "physical_heat_generator_derived": false,
+      "field_to_operator_map_derived": false,
+      "changing_algebra_field_terms_derived": false,
+      "new_Lean_compilation": false,
+      "GR_or_parent_terminal_closed": false,
+      "next": "Bind the actual physical full generator L to (q,D,b,m), including pi0 placement, all admitted field curves and any changing AF algebra terms. The literal AF source cannot be promoted to the complete H+J+R action without that owner; retain the separate affine-CAR shift-blindness result."
     },
     "conditional_archive_shift_blindness": {
       "proof": "02_REGISTRY/research/A4D_NATIVE_AFFINE_LINK_SHIFT_BLINDNESS.md",
