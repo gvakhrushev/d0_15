@@ -4511,7 +4511,11 @@ restricted to spectator labels 0 and 1. The exact partial isometry
 `Xi_0=K V_AF^T` satisfies the fullStep, price-cut and blank-projector
 intertwining equations on the entire AF working module. Its kernel is the
 AF identity complement; the 34-dimensional AF carrier is not identified
-with the 16-dimensional full CAR carrier.
+with the 16-dimensional full CAR carrier. The embedded eight-mask space is
+not reducing for all CAR current operators: its exact spatial leakage ranks
+are `(0,8,8)`. The source current is checked on the prepared orbit in the
+full CAR representation, but the full current algebra has not been lifted
+through refinement.
 
 The actual AF blank vector
 `V_AF(a e_0⊗e_X+p e_2⊗e_Y)` maps to the already owned CAR whole-blank
@@ -4531,8 +4535,15 @@ cross-sector source from the actual Fibonacci recording operation on that
 working module. It does not admit the preparation as physical evolution or
 extend the weld to later AF levels, the AF complement, the full sixteen-state
 CAR carrier, or curved metric/link/matter variations. The next calculation
-is the exact bonding naturality of this weld and its pullback to the joint
-`(q,D,b,m)` tangent. The user-supplied `ABCD` relations are one quadratic
-object, not four independent constraints; the existing Lean dimension ladder
-already proves `Q(D)=phi^(D-4)`, while its physical-dimension interpretation
+is an all-level frame, not another local coefficient calculation. Under the
+actual PF-weighted AF bonds, the passive column is natural but the canonical
+three detail columns have exact defect ranks `6,15,39=3d_n` at `n=0,1,2`.
+This rejects reuse of those displayed frames, not the AF owner's allowed
+gauge-related choices. The next AF working module already has dimension 20,
+so an injective weld of all working directions cannot fit in the fixed
+sixteen-state CAR carrier. The remaining task is to test whether the existing
+commutant freedom yields a coherent growing CAR/AF weld and to pull it back to
+the joint `(q,D,b,m)` tangent. The supplied `ABCD` identities are one
+quadratic object, not four independent constraints; the Lean dimension ladder
+already proves `Q(D)=phi^(D-4)`, while a physical-dimension interpretation
 remains separate.

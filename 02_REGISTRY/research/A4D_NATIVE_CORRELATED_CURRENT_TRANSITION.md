@@ -445,6 +445,13 @@ CAR carrier. The AF complement remains present, with its owned identity
 action; the CAR complement is outside this weld. In particular,
 `Xi_0 Xi_0^T=K K^T`, while `Xi_0^T Xi_0=V_AF V_AF^T`.
 
+The eight-mask space is not a reducing subspace for the entire CAR current:
+the exact leakage ranks are
+`rank((I-KK^T) alpha_i K)=(0,8,8)` for `i=1,2,3`. So (20) welds the
+record step and its cuts, while the source current is certified on the
+prepared orbit states through the full CAR readout. It does not yet extend
+the complete current-operator algebra across AF refinement.
+
 The feedback comparison also uses the actual AF complement. Write
 `Wbar=fullStep tensor I_2`, `Pbar=P4 tensor I_2`, and
 `G_2=Pbar (Wbar^2)^T (I-Pbar) Wbar^2 Pbar`. From the owned definitions
@@ -483,12 +490,26 @@ It does not identify the AF complement with all sixteen CAR states, prove a
 refinement-compatible family `Xi_n` at every later AF depth, or admit the AF
 preparation as physical evolution. Nor does it supply the complete
 ten-component metric/source variation, Ward identity, stationarity, curved
-roots, soundness/recovery or GR. The next calculation is now specific:
-extend `Xi_0` along the actual AF bonding maps while retaining the CAR
-source/current readout and all complementary modes, then pull back the joint
-`(q,D,b,m)` variation on that family. Throughout this proof `V` denotes the
-four-mask current-null space; the distinct ten-dimensional collinear carrier
-is `S` in the CAR joint-sector owner.
+roots, soundness/recovery or GR. There is also a concrete refinement gate.
+For the actual PF-weighted one-step GNS bonds `J_n`, the passive first copy
+of the canonical AF frame is natural, but the three detail copies are not:
+
+    Delta_n=J_(n+3) V_n - V_(n+1) (I_4 tensor J_n),
+    (d_0,d_1,d_2)=(2,5,13),
+    (rank Delta_0,rank Delta_1,rank Delta_2)=(6,15,39)=3(d_0,d_1,d_2).
+
+These are exact ranks over the algebraic number field of the golden and
+normalizing coefficients. They rule out simply reusing the displayed
+canonical detail frames at every level; they do not rule out the
+gauge-related frames allowed by the AF owner. The fixed 16-state CAR carrier
+also cannot contain the next full AF working module, whose dimension is
+`4 d_1=20`. An injective all-level weld of the full working module therefore
+needs a growing carrier and a coherent frame choice. The next calculation
+is to determine whether the existing AF commutant freedom supplies that
+coherent choice, then extend
+the CAR readout and pull back the joint `(q,D,b,m)` variation. Throughout this
+proof `V` denotes the four-mask current-null space; the distinct
+ten-dimensional collinear carrier is `S` in the CAR joint-sector owner.
 
 ## 9. Evidence boundary
 

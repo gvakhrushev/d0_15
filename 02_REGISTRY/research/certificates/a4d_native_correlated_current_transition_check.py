@@ -5,6 +5,8 @@ import argparse,hashlib,importlib.util,json,re,sys
 import copy
 from itertools import product
 from pathlib import Path
+from sympy.polys.domains import QQ
+from sympy.polys.matrices import DomainMatrix
 
 ROOT=Path(__file__).resolve().parents[3]
 BASE='02_REGISTRY/research/certificates/a4d_native_correlated_current_transition'
@@ -45,6 +47,8 @@ INPUTS=[
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_output.txt',
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json',
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json',
+    '02_REGISTRY/research/A4D_NATIVE_RECORD_CAR_JOINT_SECTOR.md',
+    '02_REGISTRY/research/certificates/a4d_native_record_car_joint_sector_check.py',
 ]
 q=importlib.util.spec_from_file_location('correlated_program',ROOT/(BASE+'.py'))
 P=importlib.util.module_from_spec(q);sys.modules[q.name]=P;q.loader.exec_module(P)
@@ -82,6 +86,33 @@ def scene_gate():
         basis=[SP.E.ZERO]*64;basis[i]=SP.E.ONE
         columns.append(scene_vector(SP.step(SP.ProgramState(tuple(basis)))))
     return s.Matrix.hstack(*columns)
+
+def af_bond(n):
+    """The one-step PF-weighted GNS isometry of the Fibonacci AF inclusion."""
+    sizes=FA.counts(n);fine_sizes=FA.counts(n+1)
+    old=[(j,r,c) for j,k in enumerate(sizes) for r in range(k) for c in range(k)]
+    fine=[(j,r,c) for j,k in enumerate(fine_sizes) for r in range(k) for c in range(k)]
+    index={coordinate:i for i,coordinate in enumerate(fine)}
+    J=s.MutableSparseMatrix(len(fine),len(old),{})
+    for column,(j,r,c) in enumerate(old):
+        blocks=[s.zeros(sizes[0]),s.zeros(sizes[1])]
+        blocks[j][r,c]=1
+        next_blocks=[s.diag(*blocks),blocks[0]]
+        for v,block in enumerate(next_blocks):
+            weight=FA.root_weight(1+v-j)
+            for u in range(block.rows):
+                for w in range(block.cols):
+                    if block[u,w]!=0:
+                        J[index[(v,u,w)],column]=weight*block[u,w]
+    return FA.mat(J)
+
+def exact_algebraic_rank(matrix):
+    """Rank over Q(sqrt(2), sqrt((sqrt(5)-1)/2)), not generic symbols."""
+    p_exact=(s.sqrt(5)-1)/2
+    a_exact=s.sqrt(p_exact)
+    values=matrix.subs({FA.a:a_exact,FA.p:p_exact}).applyfunc(s.radsimp)
+    field=QQ.algebraic_field(s.sqrt(2),a_exact)
+    return DomainMatrix.from_Matrix(values).convert_to(field).rank()
 
 def sha(path):return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
 
@@ -237,6 +268,17 @@ def controls(receipt=True):
     Kcar=fock_frame[:,fock_columns]
     Xi=Kcar*Vaf.T
     _,Pcar,Bcar=P.P.full_tuple()
+    af_current_leakage_ranks=[]
+    af_current_ops=P.car_operators()[3]
+    Kcar_perp=P.I16-Kcar*Kcar.T
+    for i,alpha_i in enumerate(af_current_ops):
+        leakage=Kcar_perp*alpha_i*Kcar
+        leakage_rank=exact_algebraic_rank(leakage)
+        check('four_level_AF_CAR_current_leakage_rank_'+str(i+1),
+              leakage_rank==[0,8,8][i])
+        af_current_leakage_ranks.append(leakage_rank)
+    reject('four_level_AF_CAR_space_reduces_all_current_operators',
+           all(rank==0 for rank in af_current_leakage_ranks))
     eq('four_level_AF_frame_isometry',Vaf.T*Vaf-s.eye(4*daf))
     eq('four_level_AF_fullStep_on_frame',Waf*Vaf-Vaf*Waf_work)
     eq('four_level_AF_price_on_frame',Paf*Vaf-Vaf*Paf_work)
@@ -276,6 +318,26 @@ def controls(receipt=True):
        P.current(P.I4,af_after)-s.Matrix([1,2*a*p,0,0]))
     eq('four_level_AF_source_norm_equals_prepared_corner',
        (P.current(P.I4,af_after).T*P.ETA*P.current(P.I4,af_after))[0]-p**6)
+
+    # The canonical four-frame's passive column is compatible with the true
+    # PF-weighted AF bond, but its three detail columns are not. This exact
+    # finite obstruction rules out only the naive frame continuation; it is
+    # not a no-go for the AF owner's allowed gauge-related frames.
+    af_bond_defect_ranks=[]
+    for n in range(3):
+        frame_n=FA.frame(n);frame_next=FA.frame(n+1)
+        d_n=frame_n['old_dimension']
+        J_n=af_bond(n);J_fine=af_bond(n+3)
+        defect=FA.mat(J_fine*frame_n['V']
+            -frame_next['V']*s.kronecker_product(s.eye(4),J_n))
+        eq('AF_PF_weighted_bond_isometry_'+str(n),J_n.T*J_n-s.eye(d_n))
+        eq('AF_passive_copy_naturality_'+str(n),
+           J_fine*frame_n['V'][:,:d_n]
+           -frame_next['V'][:,:frame_next['old_dimension']]*J_n)
+        defect_rank=exact_algebraic_rank(defect)
+        check('AF_canonical_detail_frame_defect_rank_'+str(n),defect_rank==3*d_n)
+        reject('AF_canonical_four_frame_natural_at_level_'+str(n),defect_rank==0)
+        af_bond_defect_ranks.append(defect_rank)
 
     eq('whole_blank_code_isometry',B.T*B-s.eye(2))
     eq('whole_blank_code_actual_blank',P.P.full_tuple()[2]*B-B)
@@ -464,6 +526,9 @@ def controls(receipt=True):
         af_car_weld='n=0, Xi_0=K*V_AF^T; exact fullStep/price/blank intertwining on the 8D AF working module',
         af_car_preparation='V_AF(a e0 tensor eX + p e2 tensor eY) maps to B(a,p), then one record step maps to U_CAR*B(a,p)',
         af_car_response='r1(0)=2ap; r1_prime(0)=4p^3=L_AF=8delta0; eta(J,J)=p^6=tau_6(e)=4delta0^2; L_AF+p^6=1',
+        af_car_current_leakage_ranks=af_current_leakage_ranks,
+        af_canonical_frame_PF_bond_defect_ranks=af_bond_defect_ranks,
+        af_all_level_gauge_repair_or_general_obstruction_open=True,
         full_feedback_pencil='(1-4zp^3)^(4L^4)',
         retained_zero_feedback_directions='12L^4',physical_admission_source_Ward_stationarity_GR_closed=False)
 
