@@ -5,7 +5,8 @@
   "input_sha256": {
     "a4d_native_reference_memory_preparation.py": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a",
     "a4d_native_correlated_current_transition.py": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
-    "a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527"
+    "a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
+    "a4d_native_fock_record_binding_check.py": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078"
   },
   "checks": [
     "actual_full_blank_projector",
@@ -30,9 +31,18 @@
     "current_endpoint_frame_is_full16_isometry",
     "moving_frame_gate_restores_endpoint_isometry",
     "two_tick_moving_frame_transport_telescopes",
-    "frame_repair_retains_original_two_tick_price"
+    "frame_repair_retains_original_two_tick_price",
+    "c0_chronology_input_is_actual_whole_blank",
+    "c0_initial_first_grade_selects_rest",
+    "c0_initial_full_car_current_is_same_rest_observer",
+    "c0_chronology_gate_is_the_same_owned_full_car_gate",
+    "c0_first_tick_chronological_grade_is_exact",
+    "c0_first_tick_updates_metric_to_lorentz_q1",
+    "c0_first_tick_full_car_current_is_exact",
+    "c0_updated_metric_current_norm_is_minus_p_squared",
+    "c0_updated_current_observer_pairing_is_not_positive"
   ],
-  "exact_controls": 23,
+  "exact_controls": 32,
   "witness": {
     "initial_current": "(1,0,0,0)",
     "one_tick_current": "(1,2*a*p,0,0)",
@@ -40,13 +50,15 @@
     "source_pairing_00": "2/p^6-1",
     "scalar_column_endpoint_norm_defect": "8/p=8*(1+p)>0"
   },
-  "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, and existing pure endpoint-frame transport",
+  "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, existing pure endpoint-frame transport, and the c=0 chronology cross-owner witness",
   "pure_endpoint_frame_transport_repairs_isometry": true,
   "pure_endpoint_frame_transport_changes_two_tick_price": false,
+  "c0_chronology_and_full_car_observers_agree_initially": true,
+  "c0_full_car_current_remains_timelike_after_chronology_metric_update": false,
   "other_joint_link_or_gate_updates_classified": false,
   "physical_admission": false,
   "full_native_q_D_b_m_transition": false,
   "source_Ward_stationarity_GR_closed": false,
   "new_Lean_compilation": false,
-  "checker_sha256": "d9c611ca1838864ad9d911e85b1d2170d9dc7b4f7c77b34dce5e8f13eee77d21"
+  "checker_sha256": "245dc2eab0aaa02ca82bc6ac015ec9c3499c868b5675a53f0332f2c266ab1c82"
 }

@@ -26,6 +26,7 @@ INPUTS = {
     "a4d_native_reference_memory_preparation.py": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a",
     "a4d_native_correlated_current_transition.py": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
     "a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
+    "a4d_native_fock_record_binding_check.py": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078",
 }
 
 
@@ -164,6 +165,53 @@ def run() -> dict:
         checks,
     )
 
+    # Cross-owner hostile control: the full-CAR current and the chronology's
+    # first-grade observer coincide initially, then cease to define the same
+    # timelike observer after the chronology's own metric update.
+    chrono_blank4 = s.Matrix(
+        [[1, 0, 1, 0], [0, 1, 0, 1], [1, 0, 1, 0], [0, 1, 0, 1]]
+    ) / 2
+    chrono_blank = C.B0 * s.kronecker_product(chrono_blank4, s.eye(4)) * C.B0.T
+    chrono_state = s.zeros(16, 1)
+    for index, value in {
+        0: -a / 2,
+        14: -a / 2,
+        1: p / 2,
+        15: p / 2,
+        3: s.Rational(1, 2),
+        13: s.Rational(1, 2),
+    }.items():
+        chrono_state[index] = value
+    require("c0_chronology_input_is_actual_whole_blank", C.zero(chrono_blank * chrono_state - chrono_state), checks)
+    chrono_first0 = C.first(chrono_state)
+    rest_observer = s.Matrix([1, 0, 0, 0])
+    require("c0_initial_first_grade_selects_rest", C.zero(chrono_first0 - p * rest_observer / 2), checks)
+    chrono_current0 = P.mat(O.current(I4, chrono_state))
+    require("c0_initial_full_car_current_is_same_rest_observer", chrono_current0 == rest_observer, checks)
+    U_chrono, _ = C.record(I4, rest_observer)
+    require("c0_chronology_gate_is_the_same_owned_full_car_gate", C.zero(U_chrono - U), checks)
+    chrono_state1 = C.mat(U_chrono * chrono_state)
+    w1 = C.first(chrono_state1)
+    require("c0_first_tick_chronological_grade_is_exact", C.zero(w1 - s.Matrix([0, -p / 2, 0, 0])), checks)
+    q1 = C.mat(-I4 + 2 * w1 * w1.T / (w1.T * w1)[0])
+    q1_expected = s.diag(-1, 1, -1, -1)
+    require("c0_first_tick_updates_metric_to_lorentz_q1", C.zero(q1 - q1_expected), checks)
+    chrono_current1 = P.mat(O.current(I4, chrono_state1))
+    require(
+        "c0_first_tick_full_car_current_is_exact",
+        P.mat(chrono_current1 - s.Matrix([1, -a, 0, 0])) == s.zeros(4, 1),
+        checks,
+    )
+    current_norm_q1 = P.red((chrono_current1.T * q1.inv() * chrono_current1)[0])
+    require("c0_updated_metric_current_norm_is_minus_p_squared", P.red(current_norm_q1 + p**2) == 0, checks)
+    h_current_q1 = P.mat(O.observer_pairing(q1, chrono_current1))
+    require(
+        "c0_updated_current_observer_pairing_is_not_positive",
+        P.red(h_current_q1[0, 0] - (1 - 2 / p**2)) == 0
+        and s.simplify((1 - 2 / ((s.sqrt(5) - 1) / 2) ** 2)).is_negative is True,
+        checks,
+    )
+
     return {
         "schema": "d0-native-source-endpoint-metric/1",
         "status": "PASS",
@@ -178,9 +226,11 @@ def run() -> dict:
             "source_pairing_00": "2/p^6-1",
             "scalar_column_endpoint_norm_defect": "8/p=8*(1+p)>0",
         },
-        "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, and existing pure endpoint-frame transport",
+        "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, existing pure endpoint-frame transport, and the c=0 chronology cross-owner witness",
         "pure_endpoint_frame_transport_repairs_isometry": True,
         "pure_endpoint_frame_transport_changes_two_tick_price": False,
+        "c0_chronology_and_full_car_observers_agree_initially": True,
+        "c0_full_car_current_remains_timelike_after_chronology_metric_update": False,
         "other_joint_link_or_gate_updates_classified": False,
         "physical_admission": False,
         "full_native_q_D_b_m_transition": False,

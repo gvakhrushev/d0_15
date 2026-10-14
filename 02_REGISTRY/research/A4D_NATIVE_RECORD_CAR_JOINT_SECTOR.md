@@ -577,15 +577,56 @@ is price-invisible and supplies no stress jet. It does not cover the distinct
 state-conditioned chronology, which retains a relative observer frame and
 the original cut, or a genuine interaction that changes the CAR operation.
 
-The source-active CAR readout therefore now has two distinct integration
+### Cross-owner test against the state-conditioned chronology
+
+There is also a direct witness against identifying the two existing
+observers along the same record history. At \(c=0,\ s_\theta=1\), the
+chronology owner's normalized whole-blank seed is
+\[
+m_0=m_{14}=-a/2,\qquad m_1=m_{15}=p/2,\qquad
+m_3=m_{13}=1/2,
+\tag{25}
+\]
+with other masks zero. Its initial unit first grade and its full-CAR current
+both equal \(e_0\), and the literal chronology gate is the same \(U\) used
+above. After this one owned tick the chronology output first grade is
+\(w=(0,-p/2,0,0)\). Its endpoint metric is therefore
+\[
+q_+=-I+2ww^T/(w^Tw)=\operatorname{diag}(-1,1,-1,-1).
+\tag{26}
+\]
+On the very same updated state the retained-frame CAR readout is
+\(J_+=(1,-a,0,0)\). In the chronology metric,
+\[
+J_+^Tq_+^{-1}J_+=-1+a^2=-p^2<0,
+\qquad (h_{J_+})_{00}=1-2/p^2<0.
+\tag{27}
+\]
+Thus the CAR readout that was the chronology observer at tick zero is
+spacelike after the chronology's own first metric update; its current-defined
+observer pairing is no longer positive. The exact checker pins both gate
+owners and verifies the normalized seed, the actual full 16-state transition,
+the updated Lorentz metric, the current and both signs in (27).
+
+This is a cross-owner obstruction for this \(c=0\) whole-blank history and
+the retained full-CAR readout in the common frame. It is not a claim that a
+newly transported readout or a different physical preparation cannot work:
+the former is governed by the price-invisible frame theorem above, while the
+latter needs its own native field law. A simultaneous coordinate change
+cannot change the sign of the scalar in (27).
+
+The source-active CAR readout therefore has three distinct integration
 boundaries: the state-selected closed engine cannot reach it from its own
-blank sector, and the AF/CAR blank tick cannot be paired with \(h_{J_1}\) while
-keeping its old gate; the owned co-moving frame update is isometric but has
-zero two-tick price derivative. The next positive proof must derive an
-already-owned **non-frame interaction** on the common \((q,D,b,m)\) endpoint
-and its full price variation, or prove a completeness-backed boundary for
-the actual preparation interface. The full source/Ward, stationary roots,
-refinement transfer, curved solutions, soundness/recovery and GR remain open.
+blank sector; the AF/CAR blank tick cannot be paired with \(h_{J_1}\) while
+keeping its old gate; and pure endpoint-frame transport repairs isometry but
+has zero two-tick price derivative. The chronological whole-blank transition
+shares the initial observer but its updated metric makes the retained CAR
+current spacelike at the exact witness (25). The next positive proof must
+derive an already-owned **non-frame interaction and common readout law** on
+the joint \((q,D,b,m)\) endpoint, with a nonzero full price jet and compatible
+refinement, or prove a completeness-backed boundary for the actual
+preparation interface. The full source/Ward, stationary roots, refinement
+transfer, curved solutions, soundness/recovery and GR remain open.
 
 Certificate: [exact source-endpoint metric check](certificates/a4d_native_source_endpoint_metric_check.py),
 [immutable result](certificates/a4d_native_source_endpoint_metric_results.json).
