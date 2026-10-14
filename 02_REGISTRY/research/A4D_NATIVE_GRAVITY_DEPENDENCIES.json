@@ -1510,6 +1510,23 @@
       "G0_GR_or_parent_terminal_closed": false,
       "next": "Unchanged from conditional_endogenous_preparation. This path sum and open torsion do not supply a local record law that reads b_e, and they do not compare the ten-slot covector with rho0."
     },
+    "conditional_record_scale_not_cartan_shift": {
+      "proof": "02_REGISTRY/research/A4D_NATIVE_RECORD_SCALE_NOT_CARTAN_SHIFT.md",
+      "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_record_scale_not_cartan_shift",
+      "status": "CONDITIONAL_RECORD_READS_SUPPLIED_SCALE_NOT_CARTAN_SHIFT",
+      "derived": "At the identity Gram, the owned chronology record at the supplied observer 2e_0 differs from the record at e_0. The (0,1) entry of that gap is -p and the (1,0) entry is -103p. The positive unit ray of 2e_0 is e_0, so the record at 2e_0 is not the record at its ray. The price cut is even in the observer at this Gram, while the operator at -e_0 is not. The preparation channel is built from record(I, e_r) before the later binding b_r=e_r, and neither that file nor the record file contains a Cartan shift token. The nilpotent generator takes a free RoleSpace. The nine definitions whose bodies contain .shift are a token scan, not a whole-core exhaustion. This does not select n_e from b_e and does not compare the ten-slot covector with rho0.",
+      "record_at_double_equals_record_at_unit": false,
+      "record_output_is_the_positive_unit_ray": false,
+      "price_cut_sees_the_observer_sign_at_the_identity_gram": false,
+      "gram_probe_is_a_native_admitted_metric": false,
+      "preparation_channel_reads_the_later_binding": false,
+      "nilpotent_generator_reads_a_cartan_shift": false,
+      "shift_token_scan_is_a_whole_core_exhaustion": false,
+      "same_edge_record_readout_selected": false,
+      "ten_slot_total_source_compared": false,
+      "G0_GR_or_parent_terminal_closed": false,
+      "next": "Unchanged from conditional_endogenous_preparation. This scale split does not supply a local record law that reads b_e, and it does not compare the ten-slot covector with rho0."
+    },
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
       "original_weighted_jet_input_head": "b236ad0f4c0ff2efd6d5d446c4a03ca091b33ee4",
