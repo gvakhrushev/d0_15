@@ -8,8 +8,10 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
+import sys
 
 import sympy as s
 
@@ -46,9 +48,144 @@ PINNED = {
         "9c7e4d582d5627bf5b926a6f8ad15743ff473e9bcc22e741c42309dabb854299",
     "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md":
         "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3",
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py":
+        "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+    "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py":
+        "b19f6c864af7e75c2a48d9892692b4d94337d06c04a83013b180148a1752c53f",
     "02_REGISTRY/research/A4D_NATIVE_Q8_AF_SPINOR_RECORD_SEED.md":
-        "c470b88106b0e1484ac592f2e6a3e7fec2042c95817a1a83cb12d556579c8f1a",
+        "4282accf25d6adc0ba06f88754d8d8a137e79168bc98c11d88f2a9367fb56b93",
 }
+
+
+def native_corner_m2_checks() -> dict:
+    """Restrict the actual prepared Jones corner to the first M2 AF block."""
+    rel = "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py"
+    spec = importlib.util.spec_from_file_location("q8_seed_native_jones_owner", ROOT / rel)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("NATIVE_JONES_OWNER_IMPORT_FAILED")
+    owner = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = owner
+    spec.loader.exec_module(owner)
+    E = owner.E
+    p = E.p
+    operations = owner.operators(0)
+
+    def include_n(blocks, count):
+        out = blocks
+        for _ in range(count):
+            out = owner.include(out)
+        return out
+
+    # The old A0 types are retained as orthogonal sectors in the full A7
+    # carrier. The prepared corner e has exact weights p and p^2 on them.
+    type0 = include_n([s.eye(1), s.zeros(1)], 7)
+    type1 = include_n([s.zeros(1), s.eye(1)], 7)
+    all_types = [s.eye(n) for n in E.counts(7)]
+    cases = [
+        ("all", all_types, 6, s.diag(p**2, p**2), p**3),
+        ("type0", type0, 7, s.diag(p, 0), p**2),
+        ("type1", type1, 8, s.diag(0, 1), s.S.Zero),
+    ]
+
+    def make_state(projection, rotate):
+        prepared = [E.mat(d["e"] * x) for d, x in zip(operations, projection)]
+        if rotate:
+            return [E.mat(d["R"] * x * d["R"].T)
+                    for d, x in zip(operations, prepared)]
+        return prepared
+
+    def expectation_matrix(state, normalization_power):
+        values = s.zeros(2)
+        for i in range(2):
+            for j in range(2):
+                matrix_unit = s.zeros(2)
+                matrix_unit[i, j] = 1
+                observable = include_n([matrix_unit, s.zeros(1)], 6)
+                raw = owner.native_trace(
+                    7, [E.mat(x * y) for x, y in zip(state, observable)])
+                values[i, j] = E.red(s.expand(raw * (1 + p) ** normalization_power))
+        return values
+
+    def scalar_expectation(state, normalization_power):
+        observable = include_n([s.zeros(2), s.eye(1)], 6)
+        raw = owner.native_trace(
+            7, [E.mat(x * y) for x, y in zip(state, observable)])
+        return E.red(s.expand(raw * (1 + p) ** normalization_power))
+
+    if E.red(p * (1 + p) - 1) != 0:
+        raise AssertionError("Golden inverse identity for normalized corner failed")
+
+    evaluated = {}
+    for name, projection, power, expected_matrix, expected_scalar in cases:
+        before = make_state(projection, rotate=False)
+        after = make_state(projection, rotate=True)
+        before_values = expectation_matrix(before, power)
+        after_values = expectation_matrix(after, power)
+        before_scalar = scalar_expectation(before, power)
+        after_scalar = scalar_expectation(after, power)
+        before_total = E.red(s.expand(
+            owner.native_trace(7, before) * (1 + p) ** power))
+        if before_total != 1:
+            raise AssertionError(f"Native {name} corner state failed normalization")
+        if E.zero(before_values - expected_matrix) is False:
+            raise AssertionError(f"Native {name} M2 state disagrees with exact table")
+        if E.zero(after_values - expected_matrix) is False:
+            raise AssertionError(f"Jones transition changed native {name} M2 state")
+        if E.zero(after_values - before_values) is False:
+            raise AssertionError(f"Jones before/after M2 matrix units disagree: {name}")
+        if E.red(before_scalar - expected_scalar) != 0:
+            raise AssertionError(f"Native {name} scalar record weight mismatch")
+        if E.red(after_scalar - expected_scalar) != 0:
+            raise AssertionError(f"Jones transition changed native {name} scalar weight")
+        evaluated[name] = {
+            "expectation_matrix": before_values,
+            "scalar_weight": before_scalar,
+            "before_state": before,
+            "after_state": after,
+            "normalization_power": power,
+        }
+
+    all_values = evaluated["all"]["expectation_matrix"]
+    type0_values = evaluated["type0"]["expectation_matrix"]
+    type1_values = evaluated["type1"]["expectation_matrix"]
+    if E.zero(all_values - p * type0_values - p**2 * type1_values) is False:
+        raise AssertionError("Full M2 restriction failed to decompose over both old types")
+    if E.red(evaluated["all"]["scalar_weight"]
+             - p * evaluated["type0"]["scalar_weight"]
+             - p**2 * evaluated["type1"]["scalar_weight"]) != 0:
+        raise AssertionError("Full scalar restriction failed to retain both old types")
+
+    full_m2_mass = E.red(s.trace(all_values))
+    full_m2_density = E.mat(all_values.T * (1 + p) ** 2 / 2)
+    type0_m2_mass = E.red(s.trace(type0_values))
+    type0_m2_density = E.mat(type0_values.T * (1 + p))
+    type1_m2_density = E.mat(type1_values.T)
+    if full_m2_mass != E.red(2 * p**2):
+        raise AssertionError("Full native corner has wrong M2-block mass")
+    if type0_m2_mass != E.red(p):
+        raise AssertionError("Type-zero corner has wrong M2-block mass")
+    if E.zero(full_m2_density - s.eye(2) / 2) is False:
+        raise AssertionError("Full native corner M2 density is not maximally mixed")
+    if E.zero(type0_m2_density - s.diag(1, 0)) is False:
+        raise AssertionError("Type-zero corner does not restrict to the first pure M2 state")
+    if E.zero(type1_m2_density - s.diag(0, 1)) is False:
+        raise AssertionError("Type-one corner does not restrict to the second pure M2 state")
+    if E.zero(full_m2_density - s.diag(p, p**2)) is not False:
+        raise AssertionError("M2 tracial state was unexpectedly identified with rho_phi")
+
+    return {
+        "level_map": "A1_to_A7_by_six_owned_AF_inclusions",
+        "full_corner_m2_unnormalized_density": "p^2*I2",
+        "full_corner_m2_block_mass": "2*p^2",
+        "full_corner_m2_conditional_density_before_and_after_jones": "I2/2",
+        "type0_sector_m2_unnormalized_density": "diag(p,0)",
+        "type0_sector_scalar_weight": "p^2",
+        "type0_record_distribution": ["p", "p^2"],
+        "type1_sector_m2_density": "diag(0,1)",
+        "m2_density_equals_rho_phi": False,
+        "jones_preserves_all_four_m2_matrix_unit_expectations": True,
+        "both_old_type_sectors_retained": True,
+    }
 
 
 def exact_checks() -> dict:
@@ -184,6 +321,8 @@ def exact_checks() -> dict:
     if s.simplify(initial_table.det()) != 0 or s.simplify(recorded_table.det() - p**3) != 0:
         raise AssertionError("Jones record correlation control failed")
 
+    native_corner = native_corner_m2_checks()
+
     # Hostile control: the full AF tracial state restricted conditionally to M2
     # has density I/2, not rho. Ancestor-diagonal rho is a separate preparation.
     af_conditional_density = identity / 2
@@ -249,6 +388,7 @@ def exact_checks() -> dict:
             "both_marginals_preserved": True,
             "correlation_changes": True,
         },
+        "native_prepared_corner_on_m2": native_corner,
         "hostile_controls": {
             "full_af_trace_is_not_ancestor_density": True,
             "fixed_diagonal_does_not_fix_nondiagonal_observables": True,
