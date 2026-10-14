@@ -252,3 +252,69 @@ previous \(r'(0)=8\delta_0\) belongs to a *different*, separately
 prepared source-active sector until such a weld is demonstrated.
 Physical source/Ward, stationarity, quantitative transfer, curved
 roots, soundness/recovery, GR and original #310/#202/#317 remain open.
+
+
+## 6. The original whole-scene autonomous compiler cannot excite the zero-current sector
+
+The existing [autonomous scene-record compiler](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md)
+uses the fixed forward program on all 718 directed edges of the genuine
+K(9,11,13) scene, two values of the permanent controller bit and all
+sixteen Fock coordinates:
+
+\[
+\mathcal H=\mathbb R^{718}\otimes\mathbb R^2
+               \otimes\Lambda^*(\mathbb R^4),
+\quad \dim\mathcal H=718\cdot2\cdot16=22976.
+\tag{14}
+\]
+
+Its displayed chronological factors are \`C_fN, G_N, C_fN, C_cN,
+G_N, C_cN, U_+, C_cf\`, with \`U_+\` expanded to two forward primitives;
+this is the **already owned** nine-primitive word, not a new program.
+The two controlled registers act by flipping the *temporal occupation
+bit* N when their control is set; \`G_N\` rotates the temporal
+occupation pair uniformly; \`U_+\` is the native full signed
+gate; \`C_cf\` acts on controller/scene orientations only.
+
+Let \(\Pi_V\) denote the orthogonal projector onto the four-mask
+space (2), and \(\widehat\Pi_V=I_{718}\otimes I_2\otimes\Pi_V\).
+The temporal-bit flip \(X_N\), golden rotation \(G_N\), both
+native signs \(U_{\pm}\) and the identity all preserve \(V\)
+*and its orthogonal complement* on the complete sixteen-coordinate
+matter fibre. Their controlled block versions preserve the corresponding
+global subspace. Scene/controller-only reversals preserve it as well.
+Therefore the actual compiled word \(\mathcal W\) reduces this
+subspace:
+
+\[
+\mathcal W\,\widehat\Pi_V
+ =\widehat\Pi_V\,\mathcal W,\quad
+\widehat\Pi_V\,(I_{718}\otimes I_2\otimes\alpha_i)
+ \,\widehat\Pi_V=0\qquad(i=1,2,3).
+\tag{15}
+\]
+
+The first identity holds for an **arbitrary finite product** of these
+owned generators; the second is (4) tensored with the whole
+scene/controller identity. Hence even an entangled scene/controller/
+matter state supported in \(\operatorname{im}\widehat\Pi_V\)
+has **zero** spatial current expectation after any number of actual
+compiled steps. The all-scene fixed word retains an internal switching
+record and a nonconstant price, but these features alone do not turn
+the source-inactive native whole-blank orbit into the source-active
+sector of the independent correlated-current owner.
+
+The exact checker verifies every 16-mask primitive's cross-block zeros
+and the genuine full-scene dimension, not an impractical
+22976-by-22976 sampled matrix. Tensor-factor preservation and closure
+under products prove (15) at all word lengths. This is a restriction
+on the *specified compiled palette and preparation*, not a no-go for
+all D0 interactions, general fields or physical spacetime links.
+
+**Sharpened constructive target:** identify an **already owned**
+same-carrier operation whose actual represented matrix has a nonzero
+\(\Pi_{V^\perp}T\Pi_V\) coupling and whose joint source/price action,
+frame covariance, retained memory and physical admission are established.
+Alternatively derive a permitted correlated nonblank initial preparation.
+Adding another edge-reversal controller that acts only outside the
+matter subspace cannot satisfy this target.
