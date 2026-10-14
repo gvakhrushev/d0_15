@@ -157,6 +157,32 @@ def conditioned_count_cost_jet(returns, return_jets, p, a, owner):
     return probability, cost, derivative
 
 
+def reduce_to_positive_golden_polynomial(expression, a, p):
+    x = s.Symbol("x")
+    minimal = x**4 + x**2 - 1
+    value = s.cancel(expression.subs({a: x, p: x**2}))
+    numerator, denominator = s.fraction(value)
+    numerator = s.rem(s.expand(numerator), minimal, x)
+    denominator = s.rem(s.expand(denominator), minimal, x)
+    return s.rem(s.expand(numerator * s.invert(denominator, minimal, x)), minimal, x)
+
+
+def rational_interval_bounds(poly, x, lo, hi):
+    if s.expand(poly) == 0:
+        return Fraction(0), Fraction(0)
+    coefficients = s.Poly(poly, x, domain=s.QQ).all_coeffs()[::-1]
+
+    def as_fraction(value):
+        return Fraction(int(value.p), int(value.q))
+
+    lower, upper = Fraction(0), Fraction(0)
+    for power, coefficient in enumerate(coefficients):
+        c = as_fraction(coefficient)
+        lower += c * (lo**power if c > 0 else hi**power)
+        upper += c * (hi**power if c > 0 else lo**power)
+    return lower, upper
+
+
 def run() -> dict:
     checks: list[str] = []
 
@@ -299,6 +325,60 @@ def run() -> dict:
           all(owner.zero(Urot - E * U * E.T)
               for Urot, U in zip(rotated_shift_returns, returns)))
 
+    cycle = s.eye(4)
+    cycle[1:, 1:] = s.zeros(3)
+    cycle[2, 1] = cycle[3, 2] = cycle[1, 3] = 1
+    Ecycle = owner.ext(cycle)
+    cycle_targets = [0, 2, 3, 1]
+    check("C3_SPATIAL_CYCLE_FIXES_NATIVE_BASE_AND_PERMUTES_LINK_RETURNS",
+          cycle**3 == I4 and cycle.det() == 1 and cycle * eta * cycle.T == eta
+          and Ecycle * m0 == m0
+          and all(owner.zero(Ecycle * returns[r] * Ecycle.T
+                            - returns[cycle_targets[r]]) for r in range(4)))
+
+    metric_probes = {}
+    V00 = s.zeros(4)
+    V00[0, 0] = 1
+    metric_probes["q00"] = V00
+    V11 = s.zeros(4)
+    V11[1, 1] = 1
+    metric_probes["q11"] = V11
+    V01 = s.zeros(4)
+    V01[0, 1] = V01[1, 0] = 2
+    metric_probes["q01"] = V01
+    V12 = s.zeros(4)
+    V12[1, 2] = V12[2, 1] = 2
+    metric_probes["q12"] = V12
+
+    # The symmetric q-covectors fixed by this C3 have dimension four.
+    q_entries = [(i, j) for i in range(4) for j in range(i, 4)]
+    q_coefficients = s.symbols("t0:10")
+    q_covector = s.zeros(4)
+    for value, (i, j) in zip(q_coefficients, q_entries):
+        q_covector[i, j] = q_covector[j, i] = value
+    invariance_matrix, _ = s.linear_eq_to_matrix(
+        list(cycle * q_covector * cycle.T - q_covector), q_coefficients
+    )
+    covector_basis = [s.zeros(4) for _ in range(4)]
+    covector_basis[0][0, 0] = 1
+    for i in (1, 2, 3):
+        covector_basis[1][0, i] = covector_basis[1][i, 0] = 1
+    for i in (1, 2, 3):
+        covector_basis[2][i, i] = 1
+        for j in (1, 2, 3):
+            if i != j:
+                covector_basis[3][i, j] = 1
+    check("C3_FIXED_SYMMETRIC_METRIC_COVECTOR_SPACE_HAS_DIMENSION_FOUR",
+          invariance_matrix.rank() == 6
+          and all(cycle * B * cycle.T == B for B in covector_basis))
+    probe_evaluations = s.Matrix([
+        [sum((B[i, j] * V[i, j] for i in range(4) for j in range(4)), s.Integer(0))
+         for V in metric_probes.values()]
+        for B in covector_basis
+    ])
+    check("FOUR_METRIC_PROBES_SEPARATE_THE_FULL_C3_COVECTOR_SPACE",
+          probe_evaluations.rank() == 4)
+
     # The pairwise coefficient matrix from (I,U_r) to (K_{r,0},K_{r,1})
     # has determinant a*p/4, hence both I and every U_r lie in the Kraus span.
     kraus_span_determinant = a * p**2 * (1 + p) / 4
@@ -324,55 +404,95 @@ def run() -> dict:
     check("RELATIVE_OBSERVER_MOVE_KEEPS_EQUILIBRIUM_STATE_TO_FIRST_ORDER",
           owner.zero(d_first_pair_tp) and owner.zero(d_first_pair_unital))
 
-    # Pull the same conditional event cost back along an admissible flat
-    # trace-free q shear with b and m fixed. This is one metric slot of the
-    # candidate action, not the total D0 stress.
-    V = s.zeros(4)
-    V[0, 1] = V[1, 0] = 2
-    A = q.inv()
-    dA = -A * V * A
-    dv = s.zeros(4, 1)
-    dk = (dv.T * A * v + v.T * dA * v + v.T * A * dv)[0]
-    dQ = -V + 2 * (dv * v.T + v * dv.T) / k - 2 * v * v.T * dk / k**2
-    dG = -G * dQ * G
-    q_jets = []
-    dUs_q = []
-    for br, nr in zip(b, normalized):
-        norm_sq = (br.T * G * br)[0]
-        dnorm_sq = (br.T * dG * br)[0]
-        dn = -nr * dnorm_sq / (2 * norm_sq)
-        dUs_q.append(chronology.record(G, nr, dG, dn)[2])
-        q_jets.append(dn)
-    check("TRACEFREE_Q_SHEAR_IS_ADMISSIBLE_ON_HOMOGENEOUS_NATIVE_LINKS",
-          V == V.T and s.trace(eta.inv() * V) == 0
-          and D * V * D.T - V == s.zeros(4))
-    check("FIXED_LINK_RAYS_HAVE_ZERO_FIRST_OBSERVER_JET_ON_THIS_SHEAR",
-          dG == V and all(owner.zero(dn) for dn in q_jets))
-    _, _, q_source_jet = conditioned_count_cost_jet(shift_returns, dUs_q, p, a, owner)
+    # The candidate cost has a C3 spatial symmetry at this homogeneous
+    # coframe.  Four exact probes therefore determine its whole symmetric
+    # metric covector: q00, one spatial diagonal, one time-space shear and one
+    # spatial shear. All other six slots follow by cycling the three edges.
+    metric_results = {}
     x = s.Symbol("x")
-    minimal = x**4 + x**2 - 1
-    reduced = s.cancel(q_source_jet.subs({a: x, p: x**2}))
-    numerator, denominator = s.fraction(reduced)
-    numerator = s.rem(s.expand(numerator), minimal, x)
-    denominator = s.rem(s.expand(denominator), minimal, x)
-    reduced = s.rem(s.expand(numerator * s.invert(denominator, minimal, x)), minimal, x)
-    expected_q_polynomial = (
+    alpha_lo = Fraction(7861513777, 10_000_000_000)
+    alpha_hi = Fraction(7861513778, 10_000_000_000)
+    check("POSITIVE_GOLDEN_ROOT_HAS_FINE_EXACT_ISOLATING_INTERVAL",
+          alpha_lo**4 + alpha_lo**2 < 1 < alpha_hi**4 + alpha_hi**2)
+    for name, V in metric_probes.items():
+        dA = -q.inv() * V * q.inv()
+        dv = s.zeros(4, 1)
+        dk = (dv.T * q.inv() * v + v.T * dA * v + v.T * q.inv() * dv)[0]
+        dQ = -V + 2 * (dv * v.T + v * dv.T) / k - 2 * v * v.T * dk / k**2
+        dG = -G * dQ * G
+        dUs_q, observer_jets = [], []
+        for br, nr in zip(b, normalized):
+            norm_sq = (br.T * G * br)[0]
+            dnorm_sq = (br.T * dG * br)[0]
+            dn = -nr * dnorm_sq / (2 * norm_sq)
+            dUs_q.append(chronology.record(G, nr, dG, dn)[2])
+            observer_jets.append(dn)
+        check(f"{name}_IS_ADMISSIBLE_ON_HOMOGENEOUS_NATIVE_LINKS",
+              V == V.T and D * V * D.T - V == s.zeros(4))
+        check(f"{name}_NORMALIZED_OBSERVER_TANGENTS_PRESERVE_UNIT_NORM",
+              all(owner.zero(2 * nr.T * G * dn + nr.T * dG * nr)
+                  for nr, dn in zip(normalized, observer_jets)))
+        _, _, q_jet = conditioned_count_cost_jet(shift_returns, dUs_q, p, a, owner)
+        reduced = reduce_to_positive_golden_polynomial(q_jet, a, p)
+        lower, upper = rational_interval_bounds(reduced, x, alpha_lo, alpha_hi)
+        metric_results[name] = {
+            "direction": [[str(V[i, j]) for j in range(4)] for i in range(4)],
+            "exact_derivative": str(q_jet),
+            "reduced_degree_four_field_polynomial": str(reduced),
+            "rational_interval_lower": str(lower),
+            "rational_interval_upper": str(upper),
+        }
+        check(f"{name}_EXACT_GOLDEN_FIELD_REDUCTION",
+              s.Poly(reduced, x, domain=s.QQ).degree() < 4)
+
+    q_source_jet = s.sympify(metric_results["q01"]["exact_derivative"],
+                             locals={"a": a, "p": p})
+    q_lower = Fraction(metric_results["q01"]["rational_interval_lower"])
+    flat_rho0 = chronology_receipt.get("flat_geometric_rho0_in_all10_slots")
+    check("Q01_TRACEFREE_SOURCE_JET_IS_STRICTLY_POSITIVE_AND_MISSES_FLAT_RHO0",
+          q_lower > 0 and flat_rho0 == ["0"] * 10)
+    q01_reduced = s.sympify(metric_results["q01"]["reduced_degree_four_field_polynomial"],
+                            locals={"x": x})
+    expected_q01 = (
         2088601935789604 * x**3 + 1705879982091207 * x**2
         - 1311016250921047 * x - 1028861680129291
     ) / 346943031568563
-    q_lower = Fraction(
-        -1028861680129291
-        - 1311016250921047 * Fraction(787, 1000)
-        + 1705879982091207 * Fraction(393, 500)**2
-        + 2088601935789604 * Fraction(393, 500)**3,
-        346943031568563,
-    )
-    flat_rho0 = chronology_receipt.get("flat_geometric_rho0_in_all10_slots")
-    check("TRACEFREE_Q_SOURCE_JET_EXACT_FIELD_REDUCTION",
-          s.expand(reduced - expected_q_polynomial) == 0)
-    check("TRACEFREE_Q_SOURCE_JET_IS_STRICTLY_POSITIVE_AND_MISSES_FLAT_RHO0",
-          q_lower == Fraction(116463720765635098441, 5420984868258796875000)
-          and q_lower > 0 and flat_rho0 == ["0"] * 10)
+    check("Q01_SOURCE_POLYNOMIAL_MATCHES_THE_EXACT_RESULT",
+          s.expand(q01_reduced - expected_q01) == 0)
+
+    q_jets = {
+        name: s.sympify(data["exact_derivative"], locals={"a": a, "p": p})
+        for name, data in metric_results.items()
+    }
+    check("C3_REDUCES_ALL_TEN_METRIC_SLOTS_TO_THE_FOUR_PROBES",
+          owner.zero(q_jets["q00"] + q_jets["q11"])
+          and owner.zero(q_jets["q01"] - q_jets["q12"]))
+    metric_covector = s.zeros(4)
+    metric_covector[0, 0] = q_jets["q00"]
+    for i in (1, 2, 3):
+        metric_covector[i, i] = q_jets["q11"]
+        metric_covector[0, i] = metric_covector[i, 0] = q_jets["q01"] / 4
+        for j in (1, 2, 3):
+            if i != j:
+                metric_covector[i, j] = q_jets["q12"] / 4
+    check("RECONSTRUCTED_FULL_CANDIDATE_METRIC_COVECTOR_MATCHES_ALL_FOUR_PROBES",
+          metric_covector == metric_covector.T
+          and all(owner.zero(sum((metric_covector[i, j] * V[i, j]
+                                 for i in range(4) for j in range(4)), s.Integer(0))
+                             - q_jets[name])
+                  for name, V in metric_probes.items()))
+    packed_q_order = ["00", "01", "02", "03", "11", "12", "13", "22", "23", "33"]
+    packed_metric_covector = [
+        metric_covector[0, 0],
+        2 * metric_covector[0, 1], 2 * metric_covector[0, 2], 2 * metric_covector[0, 3],
+        metric_covector[1, 1],
+        2 * metric_covector[1, 2], 2 * metric_covector[1, 3],
+        metric_covector[2, 2], 2 * metric_covector[2, 3],
+        metric_covector[3, 3],
+    ]
+    check("ALL_TEN_PACKED_CANDIDATE_METRIC_SLOTS_ARE_NONZERO_AND_MISS_FLAT_RHO0",
+          all(not owner.zero(value) for value in packed_metric_covector)
+          and flat_rho0 == ["0"] * 10)
 
     # Exact rational brackets isolate the positive golden roots used above.
     p_lo, p_hi = Fraction(309, 500), Fraction(619, 1000)
@@ -409,6 +529,12 @@ def run() -> dict:
             "candidate_metric_source_jet_on_V01": str(q_source_jet),
             "candidate_metric_source_jet_positive_lower_bound": str(q_lower),
             "flat_geometric_rho0_on_V01": "0",
+            "metric_covector_c3_fixed_space_dimension": 4,
+            "metric_covector_probe_results": metric_results,
+            "metric_covector_packed_order": packed_q_order,
+            "metric_covector_packed_values": [str(value) for value in packed_metric_covector],
+            "metric_covector_symmetric_matrix": [[str(metric_covector[i, j])
+                                                   for j in range(4)] for i in range(4)],
         },
         "exact_controls": len(checks),
         "checks": checks,
@@ -419,6 +545,8 @@ def run() -> dict:
             "candidate_channel_natural_from_symmetric_q_D_b_m_alone": False,
             "candidate_shift_readout_covariant_on_nonzero_b_sector": True,
             "candidate_v3_cost_alone_matches_flat_rho0": False,
+            "candidate_all_ten_metric_slots_derived": True,
+            "candidate_all_ten_metric_slots_miss_flat_rho0": True,
             "native_core_selects_shift_as_record_direction": False,
             "full_core_no_go": False,
             "state_identified_with_native_joint_matter_m": False,

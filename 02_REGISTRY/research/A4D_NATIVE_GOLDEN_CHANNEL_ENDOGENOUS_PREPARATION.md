@@ -120,11 +120,46 @@ Using \(393/500<a<787/1000\), exact termwise bounds give
 \dot S[V]>
 \frac{116463720765635098441}{5420984868258796875000}>0.
 \]
-The flat geometric comparator is \(\rho_0[V]=0\). Thus this candidate cost
-alone fails the vacuum comparison on one trace-free metric probe. The full
-action may contain other terms, so this is not a total-source contradiction
-or a whole-core obstruction; it is the first exact metric component to carry
-forward if the same-edge readout is admitted.
+The flat geometric comparator is \(\rho_0[V]=0\). The four-return family has
+an exact cyclic \(C_3\) symmetry: cycling the three spatial edge slots
+conjugates the actual CAR returns and leaves the counted cost invariant. The
+space of symmetric metric covectors fixed by this cycle has dimension four.
+The four probes \(q_{00},q_{11},q_{01},q_{12}\) separate it, so they determine
+all ten metric slots. Exact evaluation gives
+\[
+A=\dot S[E_{00}]
+=\frac{-1572ap+969a-6111p+3777}
+       {2176ap-1344a-680p+412}\approx0.238112703623148,
+\]
+\[
+C=\dot S[2(E_{01}+E_{10})]
+=\frac{-54292700ap+33554733a-5984797p+3698809}
+       {1233792ap-762528a+3019248p-1865985}\approx0.0275500865189582.
+\]
+The remaining probe identities are \(\dot S[E_{11}]=-A\) and
+\(\dot S[2(E_{12}+E_{21})]=C\). Thus the derivative in the unit packed
+off-diagonal direction \(E_{01}+E_{10}\) is \(C/2\), preserving the factor
+two in the repository's packed convention. The standard symmetric-matrix
+contraction covector is
+\[
+T_q=\begin{pmatrix}
+A&C/4&C/4&C/4\\
+C/4&-A&C/4&C/4\\
+C/4&C/4&-A&C/4\\
+C/4&C/4&C/4&-A
+\end{pmatrix}.
+\]
+For the repository's packed order \((00,01,02,03,11,12,13,22,23,33)\),
+the ten coefficients are \((A,C/2,C/2,C/2,-A,C/2,C/2,-A,C/2,-A)\); the
+factor two on off-diagonal packed slots is retained. All four exact interval
+bounds are strict, so every one of these ten candidate coefficients is
+nonzero, whereas all ten flat \(\rho_0\) slots are zero.
+
+This fully compares the **candidate v3 cost** with the flat geometric
+comparator. The full action may contain other terms, so it is not a
+total-source contradiction or a whole-core obstruction. It is the first
+complete ten-slot metric target to carry forward if the same-edge readout is
+admitted.
 
 This is a concrete candidate bridge using existing field slots, not a new
 action or fitted source. Its physical selection remains open: no current core
@@ -164,9 +199,10 @@ The exact checker constructs the actual CAR matrices, checks both channel
 identities, the relative-observer equilibrium jet, the spatial covariance
 boundary and the candidate shift pullback, and computes the commutant rank
 over the exact degree-four field. It differentiates the full event-normalized
-three-round cost along the trace-free metric probe. As hostile controls, one
-return alone has rank 192 and a 64-dimensional commutant, and the fixed-basis
-channel fails SO(3) covariance at zero shift. Its result is
+three-round cost on four metric probes, proves that they span the C3-fixed
+ten-slot covector, and verifies every packed coefficient. As hostile
+controls, one return alone has rank 192 and a 64-dimensional commutant, and
+the fixed-basis channel fails SO(3) covariance at zero shift. Its result is
 [`a4d_native_golden_channel_endogenous_preparation_results.json`](certificates/a4d_native_golden_channel_endogenous_preparation_results.json).
 
 ## Consequence and remaining physical arrow

@@ -6,7 +6,7 @@
     "preparation_return_weights": "arbitrary pi_r>0 with sum(pi_r)=1; scale each pair by sqrt(4*pi_r)",
     "returns": "U_r=record(I_4,e_r), r=0..3, actual 16-component CAR carrier"
   },
-  "checker_sha256": "532428e736deb4505e1f0551d8b262597aba3395ea78abbca30172b1a56ecf56",
+  "checker_sha256": "d78de07609370a307f30d1daeec9d45dd81de1eb7558654105ef32dc51ba89dd",
   "checks": [
     "UPSTREAM_CHRONOLOGY_RECEIPT_PASS",
     "UPSTREAM_CHRONOLOGY_CHECKER_AND_PROOF_HASHES",
@@ -58,25 +58,223 @@
     "ORIENTED_AFFINE_SHIFTS_RECONSTRUCT_THE_FOUR_ACTUAL_RETURNS",
     "NATIVE_SHIFT_TANGENT_PULLS_BACK_TO_CERTIFIED_SOURCE_TANGENT",
     "ORIENTED_SHIFT_READOUT_TRANSFORMS_THE_ACTUAL_RECORD_COVARIANTLY",
+    "C3_SPATIAL_CYCLE_FIXES_NATIVE_BASE_AND_PERMUTES_LINK_RETURNS",
+    "C3_FIXED_SYMMETRIC_METRIC_COVECTOR_SPACE_HAS_DIMENSION_FOUR",
+    "FOUR_METRIC_PROBES_SEPARATE_THE_FULL_C3_COVECTOR_SPACE",
     "KRAUS_SPAN_RECOVERS_IDENTITY_AND_EACH_RETURN",
     "ACTUAL_FOUR_RETURN_COMMON_COMMUTANT_IS_SCALARS",
     "HOSTILE_CONTROL_ONE_RETURN_DOES_NOT_HAVE_SCALAR_COMMUTANT",
     "RELATIVE_OBSERVER_MOVE_KEEPS_EQUILIBRIUM_STATE_TO_FIRST_ORDER",
-    "TRACEFREE_Q_SHEAR_IS_ADMISSIBLE_ON_HOMOGENEOUS_NATIVE_LINKS",
-    "FIXED_LINK_RAYS_HAVE_ZERO_FIRST_OBSERVER_JET_ON_THIS_SHEAR",
-    "TRACEFREE_Q_SOURCE_JET_EXACT_FIELD_REDUCTION",
-    "TRACEFREE_Q_SOURCE_JET_IS_STRICTLY_POSITIVE_AND_MISSES_FLAT_RHO0",
+    "POSITIVE_GOLDEN_ROOT_HAS_FINE_EXACT_ISOLATING_INTERVAL",
+    "q00_IS_ADMISSIBLE_ON_HOMOGENEOUS_NATIVE_LINKS",
+    "q00_NORMALIZED_OBSERVER_TANGENTS_PRESERVE_UNIT_NORM",
+    "q00_EXACT_GOLDEN_FIELD_REDUCTION",
+    "q11_IS_ADMISSIBLE_ON_HOMOGENEOUS_NATIVE_LINKS",
+    "q11_NORMALIZED_OBSERVER_TANGENTS_PRESERVE_UNIT_NORM",
+    "q11_EXACT_GOLDEN_FIELD_REDUCTION",
+    "q01_IS_ADMISSIBLE_ON_HOMOGENEOUS_NATIVE_LINKS",
+    "q01_NORMALIZED_OBSERVER_TANGENTS_PRESERVE_UNIT_NORM",
+    "q01_EXACT_GOLDEN_FIELD_REDUCTION",
+    "q12_IS_ADMISSIBLE_ON_HOMOGENEOUS_NATIVE_LINKS",
+    "q12_NORMALIZED_OBSERVER_TANGENTS_PRESERVE_UNIT_NORM",
+    "q12_EXACT_GOLDEN_FIELD_REDUCTION",
+    "Q01_TRACEFREE_SOURCE_JET_IS_STRICTLY_POSITIVE_AND_MISSES_FLAT_RHO0",
+    "Q01_SOURCE_POLYNOMIAL_MATCHES_THE_EXACT_RESULT",
+    "C3_REDUCES_ALL_TEN_METRIC_SLOTS_TO_THE_FOUR_PROBES",
+    "RECONSTRUCTED_FULL_CANDIDATE_METRIC_COVECTOR_MATCHES_ALL_FOUR_PROBES",
+    "ALL_TEN_PACKED_CANDIDATE_METRIC_SLOTS_ARE_NONZERO_AND_MISS_FLAT_RHO0",
     "POSITIVE_GOLDEN_ROOTS_HAVE_EXACT_RATIONAL_BRACKETS"
   ],
-  "exact_controls": 59,
+  "exact_controls": 76,
   "exact_result": {
     "SO3_covariance_defect_on_symmetric_rest_tuple": "-3*a*p/5 + 3*a/10",
     "candidate_metric_source_jet_on_V01": "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(1233792*a*p - 762528*a + 3019248*p - 1865985)",
-    "candidate_metric_source_jet_positive_lower_bound": "116463720765635098441/5420984868258796875000",
+    "candidate_metric_source_jet_positive_lower_bound": "2389577526163941633811214466266407730452633/86735757892140750000000000000000000000000000",
     "common_commutant_dimension": 1,
     "common_commutant_map_rank_over_Q_a": 255,
     "equilibrium_independent_of_full_support_return_weights": true,
     "flat_geometric_rho0_on_V01": "0",
+    "metric_covector_c3_fixed_space_dimension": 4,
+    "metric_covector_packed_order": [
+      "00",
+      "01",
+      "02",
+      "03",
+      "11",
+      "12",
+      "13",
+      "22",
+      "23",
+      "33"
+    ],
+    "metric_covector_packed_values": [
+      "(-1572*a*p + 969*a - 6111*p + 3777)/(2176*a*p - 1344*a - 680*p + 412)",
+      "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(2*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+      "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(2*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+      "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(2*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+      "(1572*a*p - 969*a + 6111*p - 3777)/(2176*a*p - 1344*a - 680*p + 412)",
+      "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(2*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+      "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(2*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+      "(1572*a*p - 969*a + 6111*p - 3777)/(2176*a*p - 1344*a - 680*p + 412)",
+      "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(2*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+      "(1572*a*p - 969*a + 6111*p - 3777)/(2176*a*p - 1344*a - 680*p + 412)"
+    ],
+    "metric_covector_probe_results": {
+      "q00": {
+        "direction": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "exact_derivative": "(-1572*a*p + 969*a - 6111*p + 3777)/(2176*a*p - 1344*a - 680*p + 412)",
+        "rational_interval_lower": "640163681825166432659620740843372477/2688490250000000000000000000000000000",
+        "rational_interval_upper": "5121309458991997207909873684533892389/21507922000000000000000000000000000000",
+        "reduced_degree_four_field_polynomial": "-14052267*x**3/21507922 + 3231795*x**2/43015844 + 30623283*x/43015844 - 2174175/43015844"
+      },
+      "q01": {
+        "direction": [
+          [
+            "0",
+            "2",
+            "0",
+            "0"
+          ],
+          [
+            "2",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "exact_derivative": "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(1233792*a*p - 762528*a + 3019248*p - 1865985)",
+        "rational_interval_lower": "2389577526163941633811214466266407730452633/86735757892140750000000000000000000000000000",
+        "rational_interval_upper": "99565738450223612974021715641660536471323/3613989912172531250000000000000000000000000",
+        "reduced_degree_four_field_polynomial": "2088601935789604*x**3/346943031568563 + 568626660697069*x**2/115647677189521 - 1311016250921047*x/346943031568563 - 1028861680129291/346943031568563"
+      },
+      "q11": {
+        "direction": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "exact_derivative": "(1572*a*p - 969*a + 6111*p - 3777)/(2176*a*p - 1344*a - 680*p + 412)",
+        "rational_interval_lower": "-5121309458991997207909873684533892389/21507922000000000000000000000000000000",
+        "rational_interval_upper": "-640163681825166432659620740843372477/2688490250000000000000000000000000000",
+        "reduced_degree_four_field_polynomial": "14052267*x**3/21507922 - 3231795*x**2/43015844 - 30623283*x/43015844 + 2174175/43015844"
+      },
+      "q12": {
+        "direction": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "2",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "exact_derivative": "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(1233792*a*p - 762528*a + 3019248*p - 1865985)",
+        "rational_interval_lower": "2389577526163941633811214466266407730452633/86735757892140750000000000000000000000000000",
+        "rational_interval_upper": "99565738450223612974021715641660536471323/3613989912172531250000000000000000000000000",
+        "reduced_degree_four_field_polynomial": "2088601935789604*x**3/346943031568563 + 568626660697069*x**2/115647677189521 - 1311016250921047*x/346943031568563 - 1028861680129291/346943031568563"
+      }
+    },
+    "metric_covector_symmetric_matrix": [
+      [
+        "(-1572*a*p + 969*a - 6111*p + 3777)/(2176*a*p - 1344*a - 680*p + 412)",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))"
+      ],
+      [
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(1572*a*p - 969*a + 6111*p - 3777)/(2176*a*p - 1344*a - 680*p + 412)",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))"
+      ],
+      [
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(1572*a*p - 969*a + 6111*p - 3777)/(2176*a*p - 1344*a - 680*p + 412)",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))"
+      ],
+      [
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(-54292700*a*p + 33554733*a - 5984797*p + 3698809)/(4*(1233792*a*p - 762528*a + 3019248*p - 1865985))",
+        "(1572*a*p - 969*a + 6111*p - 3777)/(2176*a*p - 1344*a - 680*p + 412)"
+      ]
+    ],
     "native_affine_shift_readout": "n_e=b_e/sqrt(b_e^T*G*b_e), candidate same-ray map",
     "one_return_hostile_control_commutant_dimension": 64,
     "one_return_hostile_control_rank": 192,
@@ -98,10 +296,12 @@
     "02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/continuation_v3/src/moving_preparation_exact.py": "1b3d0f5e10a59ca97daaf06744d6fe1429e7643dd350523b897ca9e2b287bc06"
   },
   "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHANNEL_ENDOGENOUS_PREPARATION.md",
-  "proof_sha256": "567a84d58a6b72ce93a4a7f008a44c3bf068d82eaf5a8a1cc664ee90f38560a2",
+  "proof_sha256": "73187cd2a77d3350b01a29f780d939a0a86b2e65c4622b85dc6b18ca283f7df9",
   "schema": "d0-native-golden-channel-endogenous-preparation/1",
   "scope": {
     "G0_GR_or_original_parent_terminal_closed": false,
+    "candidate_all_ten_metric_slots_derived": true,
+    "candidate_all_ten_metric_slots_miss_flat_rho0": true,
     "candidate_channel_natural_from_symmetric_q_D_b_m_alone": false,
     "candidate_shift_readout_covariant_on_nonzero_b_sector": true,
     "candidate_v3_cost_alone_matches_flat_rho0": false,

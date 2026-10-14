@@ -1385,7 +1385,7 @@
       "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHANNEL_ENDOGENOUS_PREPARATION.md",
       "certificate_stem": "02_REGISTRY/research/certificates/a4d_native_golden_channel_endogenous_preparation",
       "status": "EXACT_PRIMITIVE_CHANNEL_CONDITIONAL",
-      "derived": "For the literal four native CAR records with the v3 golden Kraus rule, every positive return mixture is bistochastic and primitive; its unique attracting state is I16/16, and the tested relative-observer equilibrium jet is zero. At q=eta,D=I,b=0,m=e0+volume, the fixed four-basis channel fails exact proper-spatial-rotation covariance. On the open nonzero-shift sector, same-edge normalization n_e=b_e/sqrt(b_e^T*G*b_e) restores a covariant kinematic readout and pulls the tested positive cost jet back to an affine-shift direction. The same candidate cost has an exact positive contraction on one trace-free q shear at flat eta, while rho0=0; total-action comparison and physical selection remain open.",
+      "derived": "For the literal four native CAR records with the v3 golden Kraus rule, every positive return mixture is bistochastic and primitive; its unique attracting state is I16/16, and the tested relative-observer equilibrium jet is zero. At q=eta,D=I,b=0,m=e0+volume, the fixed four-basis channel fails exact proper-spatial-rotation covariance. On the open nonzero-shift sector, same-edge normalization n_e=b_e/sqrt(b_e^T*G*b_e) restores a covariant kinematic readout and pulls the tested positive cost jet back to an affine-shift direction. C3 symmetry reduces its metric covector to four exact probes, which reconstruct all ten packed slots; every candidate coefficient is nonzero while rho0=0. Total-action comparison and physical selection remain open.",
       "physical_channel_admitted_by_complete_core": false,
       "preparation_independent_of_positive_return_weights": true,
       "full_four_return_support_derived_from_core": false,
@@ -1393,7 +1393,7 @@
       "finite_time_mixing_rate_certified": false,
       "candidate_channel_covariant_from_symmetric_q_D_b_m_alone": false,
       "full_core_no_go": false,
-      "next": "Prove or refute that the existing native transition uses each oriented affine shift as its record ray. If it does, bind the same-edge normalized readout, full-support preparation, link Euler equation and refinement to the complete joint action; then compute the remaining nine metric slots and include every heat/action term before comparing with rho0. Preserve the scoped SO3 obstruction at b=0 and introduce no new selector."
+      "next": "Prove or refute that the existing native transition uses each oriented affine shift as its record ray. If it does, bind the same-edge normalized readout, full-support preparation, link Euler equation and refinement to the complete joint action; then combine all owned heat/action terms with the now-computed candidate ten-slot covector before comparing the total source with rho0. Preserve the scoped SO3 obstruction at b=0 and introduce no new selector."
     },
     "shared_scene_price_source": {
       "input_head": "d88c5d3bb046ccf3eded006587007e68b5754acf",
