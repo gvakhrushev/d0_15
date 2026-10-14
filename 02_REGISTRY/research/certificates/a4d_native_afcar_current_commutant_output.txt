@@ -1,0 +1,1 @@
+PASS_A4D_NATIVE_AFCAR_CURRENT_COMMUTANT controls=30 commutant_dim=1 single_copy=NO_GO two_copy=RIGHT_M2 AF_path_binding=OPEN
