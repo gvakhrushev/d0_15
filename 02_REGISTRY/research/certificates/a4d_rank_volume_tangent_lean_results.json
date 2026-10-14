@@ -1,0 +1,20 @@
+{
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_rank_volume_tangent.lean",
+  "compiler_exit_code": 0,
+  "cwd": "03_FORMALIZATION",
+  "input_source_sha": "81d0479674cab9f8efd84b93196b76473b0c9386",
+  "lean_toolchain": "leanprover/lean4:v4.30.0",
+  "lean_version": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+  "mathlib_revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7",
+  "output_sha256": "2fd30bd247178ebde4fa466d46d99506a24ae1caf304cad963b00af6f352c5b2",
+  "schema": "d0-rank-volume-tangent/1",
+  "scope": "Finite real matrices; idempotent P and first-order tangent equation PX+XP=X imply tr(X)=0. No physical volume or refinement map is identified.",
+  "source_sha256": "86489d1c80d72b96218bec60fb423a706b06bd17df6085e4bceb5b7b03dafe10",
+  "status": "PASS",
+  "theorem": "D0.Research.RankVolumeTangent.idempotent_tangent_trace_zero"
+}
