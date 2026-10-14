@@ -38,6 +38,13 @@ INPUTS=[
     '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_output.txt',
     '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_results.json',
     '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_certificate.json',
+    '02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json',
 ]
 q=importlib.util.spec_from_file_location('correlated_program',ROOT/(BASE+'.py'))
 P=importlib.util.module_from_spec(q);sys.modules[q.name]=P;q.loader.exec_module(P)
@@ -48,6 +55,9 @@ E=importlib.util.module_from_spec(q);sys.modules[q.name]=E;q.loader.exec_module(
 SCENE='02_REGISTRY/research/certificates/a4d_native_autonomous_record_program'
 q=importlib.util.spec_from_file_location('autonomous_scene_program',ROOT/(SCENE+'.py'))
 SP=importlib.util.module_from_spec(q);sys.modules[q.name]=SP;q.loader.exec_module(SP)
+AF='02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation'
+q=importlib.util.spec_from_file_location('fibonacci_record_activation',ROOT/(AF+'.py'))
+FA=importlib.util.module_from_spec(q);sys.modules[q.name]=FA;q.loader.exec_module(FA)
 
 def engine_expr(value):
     u,v,w,t=value.coefficients
@@ -142,18 +152,18 @@ def controls(receipt=True):
     eq('closed_engine_gate_minus_is_actual_native_fullstep',Ugminus-Uminus)
     eq('closed_engine_plus_gate_orthogonal',Ugplus.T*Ugplus-P.I16)
     eq('closed_engine_minus_gate_orthogonal',Ugminus.T*Ugminus-P.I16)
-    S=P.I16[:,[0,1,14,15]];PS=S*S.T;Sperp=P.I16-PS
+    V_null=P.I16[:,[0,1,14,15]];PV=V_null*V_null.T;Vperp=P.I16-PV
     for sign,gate in [('plus',Ugplus),('minus',Ugminus)]:
-        eq('closed_engine_'+sign+'_preserves_current_null_sector',Sperp*gate*S)
-        eq('closed_engine_'+sign+'_preserves_sector_complement',PS*gate*Sperp)
+        eq('closed_engine_'+sign+'_preserves_current_null_sector',Vperp*gate*V_null)
+        eq('closed_engine_'+sign+'_preserves_sector_complement',PV*gate*Vperp)
     eq('closed_engine_positive_first_pair_is_Lean_lowerStep',
-       (S.T*Ugplus*S).extract([0,1],[0,1])-s.Matrix([[a,-p],[p,a]]))
+       (V_null.T*Ugplus*V_null).extract([0,1],[0,1])-s.Matrix([[a,-p],[p,a]]))
     eq('closed_engine_negative_first_pair_is_Lean_lowerStep',
-       (S.T*Ugminus*S).extract([0,1],[0,1])-s.Matrix([[a,p],[-p,a]]))
+       (V_null.T*Ugminus*V_null).extract([0,1],[0,1])-s.Matrix([[a,p],[-p,a]]))
     for i in range(3):
-        eq('closed_engine_sector_spatial_CAR_compression_'+str(i),S.T*alpha[i]*S)
+        eq('closed_engine_sector_spatial_CAR_compression_'+str(i),V_null.T*alpha[i]*V_null)
     sx,sy,sb,sc=s.symbols('engine_sx engine_sy engine_sb engine_sc',real=True)
-    sector_state=S*s.Matrix([sx,sy,sb,sc])
+    sector_state=V_null*s.Matrix([sx,sy,sb,sc])
     eq('closed_engine_sector_full_current_all_states',
        P.current(P.I4,sector_state)-P.I4[:,0])
     eq('closed_engine_sector_current_observer_pairing',
@@ -177,7 +187,7 @@ def controls(receipt=True):
     source_state=E.State(tuple(source_state))
     source_vector=engine_vector(source_state)
     reject('SOURCE_ACTIVE_GOLDEN_STATE_LIES_IN_CLOSED_ENGINE_SECTOR',
-           zero(S*S.T*source_vector-source_vector))
+           zero(PV*source_vector-source_vector))
     try:
         E.step(source_state)
     except ValueError as exc:
@@ -211,6 +221,62 @@ def controls(receipt=True):
     check('autonomous_scene_all_718_history_coordinates',
           len(SP.SCENE_EDGES)==718 and len(SP.BASE_EDGES)==359
           and len(SP.scene_seed())==359)
+
+    # Exact base-level weld: the n=0 Fibonacci recording working module and
+    # the owned eight-mask CAR source sector carry the same fullStep, price
+    # cut, and blank projector. The AF complement remains outside this partial
+    # isometry and is retained by its identity block.
+    af_frame=FA.frame(0);daf=af_frame['old_dimension'];Vaf=af_frame['V']
+    Waf,Paf,Baf,Raf=FA.full_operators(Vaf,daf)
+    _,P4,B4,T4=P.P.literal_tuple()
+    Waf_work=s.kronecker_product(FA.record(),s.eye(daf))
+    Paf_work=s.kronecker_product(P4,s.eye(daf))
+    Baf_work=s.kronecker_product(B4,s.eye(daf))
+    fock_frame=P.C.B0*s.kronecker_product(T4.T,P.I4)
+    fock_columns=[4*i+j for i in range(4) for j in range(2)]
+    Kcar=fock_frame[:,fock_columns]
+    Xi=Kcar*Vaf.T
+    _,Pcar,Bcar=P.P.full_tuple()
+    eq('four_level_AF_frame_isometry',Vaf.T*Vaf-s.eye(4*daf))
+    eq('four_level_AF_fullStep_on_frame',Waf*Vaf-Vaf*Waf_work)
+    eq('four_level_AF_price_on_frame',Paf*Vaf-Vaf*Paf_work)
+    eq('four_level_AF_blank_on_frame',Baf*Vaf-Vaf*Baf_work)
+    eq('four_level_AF_CAR_fibre_isometry',Kcar.T*Kcar-s.eye(8))
+    eq('four_level_AF_CAR_fullStep_intertwining',U*Kcar-Kcar*s.kronecker_product(FA.record(),s.eye(daf)))
+    eq('four_level_AF_CAR_price_cut_intertwining',Pcar*Kcar-Kcar*s.kronecker_product(P4,s.eye(daf)))
+    eq('four_level_AF_CAR_blank_intertwining',Bcar*Kcar-Kcar*s.kronecker_product(B4,s.eye(daf)))
+    eq('four_level_AF_CAR_AF_range_projector',Xi.T*Xi-Raf)
+    eq('four_level_AF_CAR_record_word_intertwining',U*Xi-Xi*Waf)
+    eq('four_level_AF_CAR_price_cut_full_intertwining',Pcar*Xi-Xi*Paf)
+    eq('four_level_AF_CAR_blank_full_intertwining',Bcar*Xi-Xi*Baf)
+    # The two-tick feedback is supported on the AF working range Vaf and is
+    # zero on its orthogonal complement. Compute its exact matrix in the
+    # 8-dimensional working coordinates instead of expanding a redundant
+    # 34-by-34 radical matrix; the checked AF intertwiners above identify this
+    # lift with the full operator.
+    Faf2_work=Paf_work*(Waf_work**2).T*(s.eye(Waf_work.rows)-Paf_work)*(Waf_work**2)*Paf_work
+    Faf2=Vaf*Faf2_work*Vaf.T
+    Fcar2=Pcar*(U**2).T*(s.eye(U.rows)-Pcar)*(U**2)*Pcar
+    eq('four_level_AF_CAR_two_tick_feedback_intertwining',Fcar2*Kcar-Kcar*Faf2_work)
+    L_AF=P.red(s.trace(Faf2_work)/daf)
+    eq('four_level_AF_two_tick_feedback_exact_eigenvalue',L_AF-4*p**3)
+    eq('four_level_AF_feedback_minimal_polynomial',Faf2_work*Faf2_work-L_AF*Faf2_work)
+    check('four_level_AF_feedback_rank',Faf2_work.rank()==daf)
+    af_blank=s.zeros(4*daf,1);af_blank[0]=a;af_blank[2*daf+1]=p
+    af_prepared=Vaf*af_blank
+    car_prepared=Xi*af_prepared
+    eq('four_level_AF_blank_maps_to_owned_CAR_whole_blank',
+       car_prepared-B*s.Matrix([a,p]))
+    eq('four_level_AF_blank_preparation_is_in_actual_blank_range',Baf*af_prepared-af_prepared)
+    af_after=Xi*(Waf*af_prepared)
+    eq('four_level_AF_recorded_state_maps_to_owned_CAR_source',af_after-U*B*s.Matrix([a,p]))
+    eq('four_level_AF_whole_blank_current_is_temporal',
+       P.current(P.I4,car_prepared)-P.I4[:,0])
+    eq('four_level_AF_source_current_is_spatially_active',
+       P.current(P.I4,af_after)-s.Matrix([1,2*a*p,0,0]))
+    eq('four_level_AF_source_norm_equals_prepared_corner',
+       (P.current(P.I4,af_after).T*P.ETA*P.current(P.I4,af_after))[0]-p**6)
+
     eq('whole_blank_code_isometry',B.T*B-s.eye(2))
     eq('whole_blank_code_actual_blank',P.P.full_tuple()[2]*B-B)
     eq('eightmask_space_invariant',U*R-R*Uc)
@@ -279,16 +345,18 @@ def controls(receipt=True):
     eq('actual_full_input_curve_norm',norm-1)
     eq('actual_current_curve_r_at_zero',r0-2*a*p)
     eq('actual_current_curve_r_derivative',rp-4*p**3)
+    eq('AF_two_tick_feedback_equals_CAR_current_jet',rp-L_AF)
+    eq('AF_prepared_corner_complements_two_tick_feedback',p**6+4*p**3-1)
     eq('actual_current_curve_in_all16',P.current(P.I4,mt)-s.Matrix([1,rt,0,0]))
-    source_S=PS*mt;source_perp=Sperp*mt
+    source_V=PV*mt;source_perp=Vperp*mt
     for i in range(3):
-        eq('source_curve_S_self_current_'+str(i),(source_S.T*alpha[i]*source_S)[0])
+        eq('source_curve_V_self_current_'+str(i),(source_V.T*alpha[i]*source_V)[0])
         eq('source_curve_complement_self_current_'+str(i),
            (source_perp.T*alpha[i]*source_perp)[0])
         eq('source_curve_current_is_cross_sector_'+str(i),
-           2*(source_S.T*alpha[i]*source_perp)[0]-(rt if i==0 else 0))
+           2*(source_V.T*alpha[i]*source_perp)[0]-(rt if i==0 else 0))
     reject('GOLDEN_SOURCE_CROSS_SECTOR_CURRENT_VANISHES',
-           zero(2*(source_S.T*alpha[0]*source_perp)[0].subs(t,0)))
+           zero(2*(source_V.T*alpha[0]*source_perp)[0].subs(t,0)))
     W=P.I16;v=U*m;dv=P.mat(s.diff(mt,t).subs(t,0));dr=2*(dv.T*(alpha[0]-r0*P.I16)*v)[0]
     eq('current_normalized_genuine_jet',dr-rp)
     scaled=(1+t)*v
@@ -389,9 +457,13 @@ def controls(receipt=True):
         executed_mathematical_mutants=mutants,analytic_scope=['complete stabilizer covariance obstruction',
         'arbitrary complex spectator-isometry eight-tick boundary','all-time full current component',
         'all-L fixed-beta heat bound','exact closed-engine-and-scene/current-source sector decoupling',
-        'positive source current is a checked cross-sector CAR term'],
-        cross_owner_scope='CLOSED_ENGINE_AND_AUTONOMOUS_SCENE_SEED_STAY_IN_CURRENT_NULL_SECTOR; POSITIVE_SOURCE_RESPONSE_IS_CROSS_SECTOR',
-        source_current_decomposition='r_i=2*m_S^T*alpha_i*m_perp on the owned B curve; r1(0)=2ap and r1_prime(0)=4p^3',
+        'positive source current is a checked cross-sector CAR term',
+        'exact n=0 Fibonacci AF/CAR working-module weld for fullStep, price cut and blank projector'],
+        cross_owner_scope='CLOSED_ENGINE_AND_AUTONOMOUS_SCENE_SEED_STAY_IN_CURRENT_NULL_SECTOR; POSITIVE_SOURCE_RESPONSE_IS_CROSS_SECTOR; BASE_LEVEL_FIBONACCI_AF_CAR_WELD_EXACT; LATER_REFINEMENT_AND_PHYSICAL_ADMISSION_OPEN',
+        source_current_decomposition='r_i=2*m_V^T*alpha_i*m_perp on the owned B curve; r1(0)=2ap and r1_prime(0)=4p^3',
+        af_car_weld='n=0, Xi_0=K*V_AF^T; exact fullStep/price/blank intertwining on the 8D AF working module',
+        af_car_preparation='V_AF(a e0 tensor eX + p e2 tensor eY) maps to B(a,p), then one record step maps to U_CAR*B(a,p)',
+        af_car_response='r1(0)=2ap; r1_prime(0)=4p^3=L_AF=8delta0; eta(J,J)=p^6=tau_6(e)=4delta0^2; L_AF+p^6=1',
         full_feedback_pencil='(1-4zp^3)^(4L^4)',
         retained_zero_feedback_directions='12L^4',physical_admission_source_Ward_stationarity_GR_closed=False)
 

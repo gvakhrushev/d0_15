@@ -22,7 +22,9 @@ def creator(i):
     out = S.zeros(16)
     for mask in range(16):
         if not mask & (1 << i):
-            parity = (mask & ((1 << i) - 1)).bit_count()
+            # Keep the exact checker runnable on the repository's Python 3.9
+            # floor as well as newer interpreters (int.bit_count is 3.10+).
+            parity = bin(mask & ((1 << i) - 1)).count("1")
             out[mask | (1 << i), mask] = -1 if parity % 2 else 1
     return out
 
@@ -32,7 +34,7 @@ def native_gate(sign):
     out = S.zeros(16)
     for k in range(0, 16, 2):
         out[k, k], out[k, k+1] = a, -sign*p
-        if k.bit_count() <= 1:
+        if bin(k).count("1") <= 1:
             out[k+1, k], out[k+1, k+1] = sign*p, a
         else:
             out[k+1, k], out[k+1, k+1] = -sign*p, -a

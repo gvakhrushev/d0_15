@@ -4493,7 +4493,46 @@ and native preparations open.
 
 The next critical proof is an existing-owner transition that creates this
 required cross-sector response, with its own admitted operation and joint
-variations, or a proof that the specific route is closed. No blending map or
-new physical selector is introduced. Native admission, source/Ward,
-stationarity, refinement, curved roots, soundness/recovery, GR and the
-original #310/#202/#317 terminals remain open.
+variations, or a proof that the specific route is closed. No new physical
+selector is introduced. The supplied four-level/golden notes point to an
+existing construction that sharpens this target.
+
+## Exact base-level weld to Fibonacci record activation (2026-10-14)
+
+The existing `A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION` proves that three AF
+inclusions are the minimum for a covariant four-copy GNS representation. Its
+four apparatus coordinates carry the same literal `fullStep`, price cut and
+whole-blank projection as the CAR preparation. At `n=0`, `H_0=C⊕C` has two
+orthonormal matrix-unit vectors `e_X,e_Y`; the actual AF working module has
+dimension eight and embeds into the eight-mask invariant CAR sector.
+
+Let `V_AF` be the committed AF frame and `K` the owned CAR basis change
+restricted to spectator labels 0 and 1. The exact partial isometry
+`Xi_0=K V_AF^T` satisfies the fullStep, price-cut and blank-projector
+intertwining equations on the entire AF working module. Its kernel is the
+AF identity complement; the 34-dimensional AF carrier is not identified
+with the 16-dimensional full CAR carrier.
+
+The actual AF blank vector
+`V_AF(a e_0⊗e_X+p e_2⊗e_Y)` maps to the already owned CAR whole-blank
+state `B(a,p)`. One AF record step maps exactly to `U_CAR B(a,p)`, whose
+current is `e_0+2ap e_1`. Its Lorentz norm is `p^6`; the AF two-tick
+feedback eigenvalue and the genuine CAR current jet both equal `4p^3`.
+In working coordinates, the exact AF feedback matrix has rank two and
+satisfies `G_2^2=4p^3 G_2`; the CAR feedback intertwines through the same
+eight-dimensional isometry. The AF identity complement stays present and
+has zero feedback because the owned price cut does not select it.
+The shared normalization is exact:
+`delta_0=p^3/2`, `L_AF=8 delta_0`,
+`tau_6(e)=p^6=4 delta_0^2`, and `L_AF+p^6=1`.
+
+This closes the finite base-level representation weld and produces the
+cross-sector source from the actual Fibonacci recording operation on that
+working module. It does not admit the preparation as physical evolution or
+extend the weld to later AF levels, the AF complement, the full sixteen-state
+CAR carrier, or curved metric/link/matter variations. The next calculation
+is the exact bonding naturality of this weld and its pullback to the joint
+`(q,D,b,m)` tangent. The user-supplied `ABCD` relations are one quadratic
+object, not four independent constraints; the existing Lean dimension ladder
+already proves `Q(D)=phi^(D-4)`, while its physical-dimension interpretation
+remains separate.
