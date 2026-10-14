@@ -387,3 +387,113 @@ physical-admission obligation. It does not classify fields that
 carry nontrivial spatial representations, prohibit spontaneous
 symmetry breaking in larger admissible models, or produce a physical
 source/Ward theorem.
+
+
+## 8. Ladder gate T0 → T1: the full native two-record price is constant
+
+The scientific objective is **not** the existence of another recording
+model. The T0→T1 contract in
+[D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md](D0_NATIVE_TANGENT_SOURCE_PLAN_2026-10-09.md)
+requires an *owned physically admitted* preparation and the differential
+of its complete heat/feedback/Gram price on a common constraint tangent.
+Here we close a candidate **matter-only contribution** exactly, so the
+ladder does not continue chasing spatial current without an actual
+native coupling.
+
+Keep the very same rest collinear interface as above:
+\(q=\eta,\ Q=G=I,\ W=I_{16}\), identity spatial links
+\(D_e=I\), zero shifts, the retained cut \(P=I-N_0\),
+and the literal native state-selected operator \(U_\sigma\).
+These are fixed **values** of geometric fields, not a law fixing
+them for all physical metric probes. The first-grade sign may change;
+the entire first/second-transaction sequence is retained.
+
+For any two consecutive signed native record operators, set
+
+\[
+K_{\sigma_2,\sigma_1}=U_{\sigma_2}U_{\sigma_1},\qquad
+F_{\sigma_2,\sigma_1}
+ =P K_{\sigma_2,\sigma_1}^{\top}
+   (I_{16}-P)K_{\sigma_2,\sigma_1}P.
+\tag{18}
+\]
+
+The four combinations \((\sigma_1,\sigma_2)\in\{+,-\}^2\)
+have exactly the **same complete nonzero feedback spectrum**.
+For equal signs, the four nonzero eigenvalues occur on the even
+spatial-degree 0/1 pairs with masks \(\{0,2,4,8\}\);
+for opposite signs they occur on the spatial-degree 2/3
+pairs with masks \(\{6,10,12,14\}\).
+For each nonzero mode, the eigenvalue is
+
+\[
+4a^2p^2=4p^3=8\delta_0\,p^0\ \text{(using }a^2=p\text{)};
+\tag{19}
+\]
+
+the final expression \(4p^3=8\delta_0\) follows from
+\(\delta_0=p^3/2\), as already owned. All twelve other
+eigenvalues remain *explicitly* zero; they are not deleted
+or divided away. The exact full-carrier determinant is
+
+\[
+\boxed{\det(I_{16}-zF_{\sigma_2,\sigma_1})
+      =(1-4zp^3)^4},\qquad 0<z<1.
+\tag{20}
+\]
+
+The certificate computes (18) on **all 16 mask rows** for all
+four sign pairs and proves \(F^2=4p^3F\) after golden
+substitution. No sampled eigenvalue argument is used.
+Equation (20) is the original \(-\log\det\) functional,
+not a new feedback definition.
+
+For every smooth admitted variation of the **higher matter
+coordinates** in the regular collinear band, with the
+low first-grade sign history fixed and all geometric
+fields \(q,D,b\) held at these values, \(U_\sigma,P,W\)
+and the native Hodge operator of this homogeneous
+geometric interface have zero variation.
+Even if the *alternative* full-CAR current varies,
+the two-tick feedback contribution is constant by (20),
+and the native geometric heat contribution is constant
+because its full operator and pairing are unchanged.
+Therefore
+
+\[
+d_m\bigl(H_{\rm native}+J_2\bigr)[\dot m]=0
+\tag{21}
+\]
+
+**on this exact restricted interface**. If the full action
+contains further matter terms, (21) is not their derivative;
+it is not a statement about variations changing \(q,D,b\),
+different observer/heat bindings, the true physical field
+equations, or the ten metric-source rows. It is not a claim
+that the physical joint tangent contains all such variations.
+
+The distinction is decisive for the closure ladder:
+a spatially nonzero \(\mathbf r(m)\) by itself does **not**
+make that same native readout a varying argument of the
+actual heat/feedback action. Replacing the pairing by
+\(h_J\) fails endpoint-isometry by (13). Transporting a
+frame and all fields together is covariance, not a
+new physical response. The existing record-only,
+flat-collinear heat-plus-two-tick-feedback route has now
+been classified completely for the stated signed gate
+class and cannot by itself supply a nonzero matter-source
+on this fibre.
+
+**Return immediately to the T0 owner obligation, without
+another symmetry or word search:** derive from the actual
+physical preparation one joint field/readout rule which
+couples the already-owned CAR/record state into the
+native \((q,D,b,m)\) heat/price operators, and justify
+its full endpoint/constraint variations. A candidate
+must expose a nonzero genuine price/response jet
+rather than merely a changed current observable.
+Then and only then compute the full constrained covector,
+all ten source components, Ward, stationarity and
+refinement. If no current candidate meets this test,
+record the one explicit missing physical-interface lemma,
+not a universal D0 impossibility theorem.
