@@ -1,0 +1,43 @@
+{
+  "schema": "d0-native-source-endpoint-metric/1",
+  "status": "PASS",
+  "input_source_head": "f1270f63cffa5fcfc27b469ff2517d8398d5362a",
+  "input_sha256": {
+    "a4d_native_reference_memory_preparation.py": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a",
+    "a4d_native_correlated_current_transition.py": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
+    "a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527"
+  },
+  "checks": [
+    "actual_full_blank_projector",
+    "unit_norm_blank_state",
+    "literal_gate_isometry_at_initial_pairing",
+    "blank_correlated_current_is_rest",
+    "one_literal_tick_gives_owned_source_current",
+    "source_current_timelike_norm_is_p6",
+    "source_pairing_exact_full_matrix",
+    "initial_pairing_is_identity",
+    "source_pairing_is_positive",
+    "initial_full_exterior_gram_is_identity",
+    "literal_gate_scalar_column",
+    "exact_endpoint_norm_defect_is_8_over_p",
+    "defect_is_strictly_positive",
+    "full_endpoint_isometry_fails",
+    "frozen_pairing_control_has_zero_defect",
+    "opposite_current_has_same_positive_scalar_defect"
+  ],
+  "exact_controls": 16,
+  "witness": {
+    "initial_current": "(1,0,0,0)",
+    "one_tick_current": "(1,2*a*p,0,0)",
+    "current_norm_squared": "p^6",
+    "source_pairing_00": "2/p^6-1",
+    "scalar_column_endpoint_norm_defect": "8/p=8*(1+p)>0"
+  },
+  "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing",
+  "other_joint_link_or_gate_updates_classified": false,
+  "physical_admission": false,
+  "full_native_q_D_b_m_transition": false,
+  "source_Ward_stationarity_GR_closed": false,
+  "new_Lean_compilation": false,
+  "checker_sha256": "49f8abf2a5da531f494a300d6bfa800908e179764694a57f91913fb060aa3249"
+}

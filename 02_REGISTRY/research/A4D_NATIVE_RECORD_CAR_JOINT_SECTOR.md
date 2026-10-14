@@ -519,3 +519,55 @@ all ten source components, Ward, stationarity and
 refinement. If no current candidate meets this test,
 record the one explicit missing physical-interface lemma,
 not a universal D0 impossibility theorem.
+
+## 9. The blank-to-current CAR tick fails the direct endpoint-metric weld
+
+This exact check tests the specific base-level AF/CAR route in the preceding
+correlated-current owner. Its AF blank welds to
+\(m_0=B(a,p)\in\operatorname{im}P_{\rm blank}\), and one literal full-CAR
+record step gives \(m_1=Um_0\). The step creates the already owned current
+
+\[
+J_0=(1,0,0,0),\qquad J_1=(1,2ap,0,0),\qquad
+J_1^T\eta J_1=p^6>0.
+\tag{23}
+\]
+
+Take the current-defined positive pairing from the same CAR-current owner,
+\(h_J=-\eta+2(\eta J)(\eta J)^T/(J^T\eta J)\). Then \(h_0=I_4\), while
+\((h_1)_{00}=2/p^6-1\); its \((0,1)\) block has determinant one and positive
+leading entry, so \(h_1\) and its full exterior Gram \(W_1=C_*(h_1)\) are
+positive. The original literal gate \(U\) is orthogonal for \(W_0=C_*(h_0)=I_{16}\).
+
+However, its scalar-mask column is
+\(Ue_{\varnothing}=a e_{\varnothing}+p e_{\{0\}}\). The full exterior metric
+has no cross-grade term, so this single column gives the exact necessary-test
+defect
+
+\[
+\langle Ue_{\varnothing},Ue_{\varnothing}\rangle_{W_1}
+-\langle e_{\varnothing},e_{\varnothing}\rangle_{W_0}
+=a^2+p^2(2/p^6-1)-1
+=\boxed{8/p=8(1+p)>0}.
+\tag{24}
+\]
+
+Thus \(U^T W_1 U\ne W_0\): the actual blank-to-current step does not
+transport the positive pairing inferred from its own source current. This
+rules out that **direct fixed-gate/current-pairing identification** as the
+joint metric weld. It does not rule out an independently derived link update,
+a field-dependent gate, or another native pairing; none is installed here.
+The exact checker pins the three consumed matrix owners and retains the full
+16-state gate and exterior Gram. Its one-column witness suffices to disprove
+whole-operator isometry; it does not claim the full defect has rank 16.
+
+The source-active CAR readout therefore now has two distinct integration
+boundaries: the state-selected closed engine cannot reach it from its own
+blank sector, and the AF/CAR blank tick cannot be paired with \(h_{J_1}\) while
+keeping its old gate. The next positive proof must derive the common
+\((q,D,b,m)\) endpoint update and price variation from an existing native
+owner. The full source/Ward, stationary roots, refinement transfer, curved
+solutions, soundness/recovery and GR remain open.
+
+Certificate: [exact source-endpoint metric check](certificates/a4d_native_source_endpoint_metric_check.py),
+[immutable result](certificates/a4d_native_source_endpoint_metric_results.json).
