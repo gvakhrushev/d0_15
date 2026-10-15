@@ -227,8 +227,9 @@ GL(4) metric-changing preparations.
 The attached strategy's next test asks whether the additional heat block can
 be an owner-derived function \(F(q,D)\) on the metric carrier constraint.
 On the present sector take \(q_s=q_t=\eta\) and \(D=I_4\). Then
-\(Dq_tD^T=q_s\) holds identically while the matter family \(m_s\) varies
-only in masks 13 and 14. After one actual engine step its observer parameter
+\(Dq_tD^T=q_s\) holds identically, the homogeneous auxiliary field is
+\(b=0\), and the matter family \(m_s\) varies only in masks 13 and 14.
+After one actual engine step its observer parameter
 is
 
 \[
@@ -261,6 +262,35 @@ pinned by the checker. The nonzero heat jet therefore identifies the precise
 missing arrow: a preparation owner must restrict the matter fiber before
 this heat can descend to a metric/link function.
 
+## Conditional test of the proposed three-term price
+
+The supplied strategy text proposes
+\(S_{\mathrm{coupled}}=S_{\mathrm{scene}}+S_{\mathrm{feedback}}+
+S_{\mathrm{heat}}\). The repository currently proves these pieces in
+separate owners and does not identify them as one common admitted action. If
+that additive identity is assumed at shared fixed \(\beta=\log 2\) and
+fugacity \(z\), with the scene remaining in its owned binary passport class,
+then the same fixed-\((q,D,b)\) matter tangent has:
+
+* zero scene-price derivative, by the exact constant-price theorem for every
+  binary scene satisfying the owned dense passport;
+* zero current two-tick feedback derivative, because its existing pencil is
+  \((1-4zp^3)^4\), independent of \(s\);
+* strictly positive current-heat derivative, \(H'(1)>0\), for every
+  \(L\ge2\).
+
+Thus those three terms alone have \(dS_{\mathrm{coupled}}/ds>0\) and cannot
+be stationary on this allowed matter direction. Any stationary completion
+must either derive a preparation constraint excluding this direction or add
+an independently owned coupled term whose derivative cancels it. The second
+option is not present in the supplied three-term identity. Since the
+repository has not yet proved that the three separate readouts form one
+common \(S_{\mathrm{coupled}}\), this sum result is explicitly conditional;
+it is not promoted to a native on-shell obstruction. The exact checker replays
+the shared-scene (2894 controls), constrained-price (528 controls) and
+joint-field-quotient (41 controls, 51 D0 pins) certificates before recording
+this conditional derivative split.
+
 The next load-bearing question is whether an already-owned metric/link
 transition can make this nonzero heat readout and the executor's actual state
 transition part of one admitted action. The fixed-metric direct match is now
@@ -273,8 +303,8 @@ The Lean capsule
 [`a4d_native_engine_correlated_current_extension.lean`](certificates/a4d_native_engine_correlated_current_extension.lean)
 proves generic gate/minor and heat-sign arithmetic kernels with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 1511 exact controls and 31 owner-source pins, the conditional
-metric-update replay, the
+blobs, 1518 exact controls and 37 owner-source pins, the conditional
+three-term price split, metric-update replay,
 current-rest-frame guard obstruction, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode
 polynomial, the current-step mismatch, and a 128-step regression in

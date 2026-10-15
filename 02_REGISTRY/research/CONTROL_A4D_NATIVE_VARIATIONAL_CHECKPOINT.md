@@ -2282,11 +2282,19 @@ The exact joint-quotient and constrained-price owners retain matter directions
 alongside the metric/link tangent and supply no such preparation restriction.
 This is scoped to the current heat and this state family.
 
-The exact supplement records 1511 controls, 128 actual executor transitions,
+Conditionally combining the three terms proposed in the supplied strategy,
+at shared fixed (eta=log2,z), with the scene inside its binary passport,
+gives zero scene jet, zero current-feedback jet and positive heat jet.
+Therefore those three terms alone are not stationary on this matter tangent.
+This conclusion remains conditional because no repository owner yet identifies
+their readouts as one admitted (S_{m coupled}). The shared-scene, constrained
+price and joint-quotient checkers were each replayed in the new certificate.
+
+The exact supplement records 1518 controls, 128 actual executor transitions,
 the all-four-component symbolic CAR readout on both lower bands, the
 current-null, out-of-domain, off-axis metric and current-rest-frame hostile
-controls, 31 owner source SHA/blob pairs, including the full joint-quotient
-and constrained-price proof packets, and the Lean source/output hashes.
+controls, 37 owner source SHA/blob pairs, including full joint-quotient,
+constrained-price and shared-scene proof packets, and the Lean source/output hashes.
 Seven generic algebra propositions compile with standard axioms only and no
 `sorryAx`. The result does not select
 the nonzero starting correlation physically, put the current-derived operator

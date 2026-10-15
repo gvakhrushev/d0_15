@@ -54,6 +54,12 @@ OWNER_PATHS = [
     '02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_output.txt',
     '02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_results.json',
     '02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_certificate.json',
+    '02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md',
+    '02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source.lean',
+    '02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_results.json',
+    '02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_certificate.json',
 ]
 
 
@@ -363,6 +369,51 @@ def qD_fiber_nonbasicness(checks, heat_data):
     }
 
 
+def conditional_three_term_price(checks, heat_data):
+    """Test the three separately owned price jets under the supplied sum claim."""
+    owner_checks = [
+        ('02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_check.py',
+         'PASS_NATIVE_SHARED_SCENE_PRICE_SOURCE'),
+        ('02_REGISTRY/research/certificates/a4d_native_constrained_price_source_check.py',
+         'PASS_NATIVE_CONSTRAINED_PRICE_SOURCE'),
+        ('02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_check.py',
+         'PASS_NATIVE_JOINT_FIELD_QUOTIENT'),
+    ]
+    outputs = {}
+    for relative, expected in owner_checks:
+        replay = subprocess.run([sys.executable, str(ROOT / relative)], cwd=ROOT,
+                                capture_output=True, text=True, timeout=180)
+        check(replay.returncode == 0 and expected in replay.stdout,
+              f'owned_source_replay_{Path(relative).stem}', checks)
+        outputs[Path(relative).stem] = replay.stdout.strip()
+
+    scene_receipt = json.loads((ROOT /
+        '02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_results.json').read_text())
+    check(scene_receipt['status'] == 'PASS' and
+          scene_receipt['binary_dense_passport_kappa_and_scalar_source_compiled'],
+          'binary_scene_passport_price_source_is_owned_and_replayed', checks)
+    check('all genuine derivatives and finite centered contrasts are zero' in
+          (ROOT / '02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md').read_text().lower(),
+          'binary_passport_scene_price_constant_on_declared_class', checks)
+    check(heat_data['existing_current_observer_feedback_pencil'] ==
+          '(1-4*z*p^3)^4, independent of amplitude s',
+          'current_feedback_price_vertical_derivative_zero', checks)
+    check(' > 0 ' in heat_data['heat_derivative_sign'],
+          'current_heat_vertical_derivative_positive', checks)
+    return {
+        'term_derivatives_on_fixed_qD_matter_tangent': {
+            'scene': '0 if the prepared scene stays in the owned binary passport class',
+            'current_two_tick_feedback': '0 for the owned equal-current golden pencil',
+            'current_defined_heat': '>0 at s=1 for all L>=2',
+        },
+        'sum_claim': 'supplied strategy text; no repository owner identifies one common S_coupled',
+        'conditional_total_derivative': '>0 under additivity, shared fixed beta=log(2), and binary-passport scene admission',
+        'conditional_stationarity': 'impossible for these three terms alone on this tangent',
+        'required_missing_arrow': 'a common admitted preparation/action or an additional owner-derived compensating term',
+        'owner_replays': outputs,
+    }
+
+
 def heat_L4_sign(checks):
     # z(k)=4(exp(2*pi*i*k/4)-1), stored as exact integer pairs.
     z = [(0, 0), (-4, 4), (-8, 0), (-4, -4)]
@@ -444,6 +495,7 @@ def build_result():
     rest_frame_data = current_rest_frame_guard_obstruction(checks)
     heat_data = heat_L4_sign(checks)
     qd_fiber_data = qD_fiber_nonbasicness(checks, heat_data)
+    composite_price_data = conditional_three_term_price(checks, heat_data)
 
     lean_output = LEAN_OUTPUT.read_text()
     lean_declarations = [
@@ -553,6 +605,7 @@ def build_result():
         'owned_endpoint_metric_update': metric_update_data,
         'current_rest_frame_guard_obstruction': rest_frame_data,
         'qD_fiber_nonbasicness': qd_fiber_data,
+        'conditional_three_term_price': composite_price_data,
         'initial_state': {
             'nonzero_masks': [0, 1, 13, 14],
             'm0': '-2*a*p', 'm1': '2*p-1', 'm13': '1', 'm14': '1',
