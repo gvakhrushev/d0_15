@@ -299,6 +299,58 @@ def current_rest_frame_guard_obstruction(checks):
     }
 
 
+def qD_fiber_nonbasicness(checks, heat_data):
+    """Check whether the current heat descends to the existing (q,D) fiber."""
+    eta = sp.diag(1, -1, -1, -1)
+    identity = sp.eye(4)
+    check(identity * eta * identity.T == eta,
+          'identity_link_satisfies_metric_carrier_constraint', checks)
+
+    s = sp.symbols('s', real=True)
+    matter = sp.zeros(16, 1)
+    matter[0], matter[1], matter[13], matter[14] = -2*a*p, 2*p-1, s, s
+    out = engine_gate_matrix(1) * matter
+    Jnext = C.current(identity, out)
+    rnext = 2*s**2/(1+2*s**2)
+    expected = sp.Matrix([1, rnext, 0, 0])
+    check(all(C.red(Jnext[i]-expected[i]) == 0 for i in range(4)),
+          'actual_engine_output_current_varies_on_fixed_qD_fiber', checks)
+    Knext = sp.factor((1+rnext)/(1-rnext))
+    check(sp.factor(Knext-(1+4*s**2)) == 0,
+          'heat_parameter_is_not_a_function_of_qD_on_amplitude_fiber', checks)
+    check(sp.diff(Knext,s).subs(s,1) == 8,
+          'fixed_qD_heat_parameter_has_nonzero_vertical_jet', checks)
+
+    for scale, expected_K in ((1, 5), (2, 17)):
+        state = load_integer_state(scale)
+        try:
+            moved = E.step(state)
+        except ValueError as exc:
+            raise AssertionError(f'FIXED_QD_WITNESS_REJECTED_{scale}: {exc}')
+        check(moved != state,
+              f'fixed_qD_stored_engine_witness_{scale}_moves', checks)
+        J = current_at(state)
+        ratio = C.red(J[1])
+        K0 = sp.factor((1+ratio)/(1-ratio))
+        K1 = sp.factor(1/K0)
+        check(K1 == expected_K,
+              f'fixed_qD_stored_engine_witness_{scale}_has_distinct_K', checks)
+
+    derivative_positive = ' > 0 ' in heat_data['heat_derivative_sign']
+    check(derivative_positive,
+          'current_heat_has_nonzero_vertical_derivative_at_fixed_qD', checks)
+    return {
+        'carrier_constraint': 'I4*eta*I4^T=eta for every amplitude s',
+        'varied_field': 'm13=m14=s; q=eta and D=I fixed',
+        'post_tick_observer_parameter': 'K(s)=1+4*s^2',
+        'vertical_jet_at_s_1': 'dK/ds=8; dH/ds>0 for all L>=2',
+        'qD_only_current_heat_map_on_open_real_family': False,
+        'finite_engine_witnesses': {'s=1': 'K=5', 's=2': 'K=17'},
+        'scope': 'requires an owner-derived matter-preparation restriction to descend to (q,D)',
+        'heat_result_source': heat_data['heat_derivative_sign'],
+    }
+
+
 def heat_L4_sign(checks):
     # z(k)=4(exp(2*pi*i*k/4)-1), stored as exact integer pairs.
     z = [(0, 0), (-4, 4), (-8, 0), (-4, -4)]
@@ -379,6 +431,7 @@ def build_result():
     metric_update_data = endpoint_metric_update_checks(checks)
     rest_frame_data = current_rest_frame_guard_obstruction(checks)
     heat_data = heat_L4_sign(checks)
+    qd_fiber_data = qD_fiber_nonbasicness(checks, heat_data)
 
     lean_output = LEAN_OUTPUT.read_text()
     lean_declarations = [
@@ -487,6 +540,7 @@ def build_result():
         'fixed_q_direct_common_step_for_nonzero_amplitude': 'NO_GO_WITHIN_THIS_FAMILY',
         'owned_endpoint_metric_update': metric_update_data,
         'current_rest_frame_guard_obstruction': rest_frame_data,
+        'qD_fiber_nonbasicness': qd_fiber_data,
         'initial_state': {
             'nonzero_masks': [0, 1, 13, 14],
             'm0': '-2*a*p', 'm1': '2*p-1', 'm13': '1', 'm14': '1',

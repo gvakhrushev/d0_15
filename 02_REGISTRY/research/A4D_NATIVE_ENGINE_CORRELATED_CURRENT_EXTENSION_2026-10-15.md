@@ -222,6 +222,36 @@ necessarily violates the engine's first-grade support guard. This statement
 concerns the natural Lorentz/exterior lift and does not classify general
 GL(4) metric-changing preparations.
 
+## The current heat does not descend to the metric/link fiber
+
+The attached strategy's next test asks whether the additional heat block can
+be an owner-derived function \(F(q,D)\) on the metric carrier constraint.
+On the present sector take \(q_s=q_t=\eta\) and \(D=I_4\). Then
+\(Dq_tD^T=q_s\) holds identically while the matter family \(m_s\) varies
+only in masks 13 and 14. After one actual engine step its observer parameter
+is
+
+\[
+K(s)=\frac{1+r(s)}{1-r(s)}=1+4s^2,
+\qquad K'(1)=8.
+\]
+
+The existing current-defined heat therefore has a nonzero vertical
+derivative at fixed \((q,D)\): the all-\(L\) estimate above gives
+\(H'(1)>0\) for every \(L\ge2\). A function \(F(q,D)\) has zero derivative
+along this fixed-\((q,D)\) matter tangent, so it cannot represent this
+current heat on a real neighborhood of the active state. The finite
+coefficient engine also accepts \(s=1\) and \(s=2\), with post-step
+parameters \(K=5\) and \(K=17\), respectively; this finite pair confirms
+the same fiber has distinct current-observer data, while the derivative
+claim uses the stated real-state extension. Thus the metric carrier equation
+alone does not supply the required preparation function. To make the heat a
+function of \((q,D)\), an existing preparation owner must constrain matter
+along this fiber. No such constraint is derived here. This is a no-go only
+for the current heat on this open family with the stated carrier constraint;
+it does not rule out another coupled heat block or a separately proved
+matter-preparation law.
+
 The next load-bearing question is whether an already-owned metric/link
 transition can make this nonzero heat readout and the executor's actual state
 transition part of one admitted action. The fixed-metric direct match is now
@@ -234,7 +264,8 @@ The Lean capsule
 [`a4d_native_engine_correlated_current_extension.lean`](certificates/a4d_native_engine_correlated_current_extension.lean)
 proves generic gate/minor and heat-sign arithmetic kernels with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, exact engine/current/metric controls, the conditional metric-update
-replay with an off-axis hostile metric control, null-sector/domain controls, the exact
-L=4 mode polynomial, the current-step mismatch, and a 128-step regression in
+blobs, 1511 exact controls, the conditional metric-update replay, the
+current-rest-frame guard obstruction, the fixed-\((q,D)\) heat-fiber jet,
+null-sector/domain and off-axis metric controls, the exact \(L=4\) mode
+polynomial, the current-step mismatch, and a 128-step regression in
 [`a4d_native_engine_correlated_current_extension_results.json`](certificates/a4d_native_engine_correlated_current_extension_results.json).

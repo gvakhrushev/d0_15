@@ -11,7 +11,7 @@
     "lower_pair": "existing band A/B two-cycle",
     "minkowski_norm_squared": "5/9"
   },
-  "checker_sha256": "56929e4e8a63f46c7837ad44c31a55e8a9654b339a46f38a3b4ca587b467064e",
+  "checker_sha256": "0d3362364af0c43152a98e691ed1f06d09bce0e771b39f4084007d45abdb1c84",
   "control_names": [
     "L4_exact_heat_numerator_polynomial_coefficients",
     "L4_exact_rational_tail_proves_negative_numerator",
@@ -25,6 +25,7 @@
     "active_state_satisfies_actual_six_zero_guard",
     "actual_engine_gate_preserves_endpoint_pairing_-1",
     "actual_engine_gate_preserves_endpoint_pairing_1",
+    "actual_engine_output_current_varies_on_fixed_qD_fiber",
     "actual_engine_output_first_grade_alternates",
     "actual_full_CAR_readout_replayed_on_engine_state",
     "actual_orbit_first_grade_is_alternating_collinear",
@@ -36,6 +37,7 @@
     "collinear_endpoint_pairing_is_retained",
     "collinear_input_pairing_is_euclidean_identity",
     "collinear_owned_metric_update_is_eta",
+    "current_heat_has_nonzero_vertical_derivative_at_fixed_qD",
     "current_rest_boost_is_lorentz",
     "direct_current_observer_transition_identification_rejected_on_witness",
     "endpoint_update_input_first_grade_nonzero",
@@ -50,8 +52,15 @@
     "existing_current_observer_feedback_pencil_is_source_pinned",
     "existing_equal_current_feedback_pencil_has_zero_amplitude_derivative",
     "existing_full_CAR_readout_is_rest_aligned_after_exterior_lift",
+    "fixed_qD_heat_parameter_has_nonzero_vertical_jet",
+    "fixed_qD_stored_engine_witness_1_has_distinct_K",
+    "fixed_qD_stored_engine_witness_1_moves",
+    "fixed_qD_stored_engine_witness_2_has_distinct_K",
+    "fixed_qD_stored_engine_witness_2_moves",
+    "heat_parameter_is_not_a_function_of_qD_on_amplitude_fiber",
     "hostile_off_axis_state_does_not_collapse_to_identity_pairing",
     "hostile_out_of_domain_state_rejected",
+    "identity_link_satisfies_metric_carrier_constraint",
     "lean_output_resolves_all_named_propositions",
     "lean_output_uses_no_sorry_or_extra_axiom",
     "native_full_CAR_current_formula_band_A_component_0",
@@ -101,7 +110,7 @@
     "2/3",
     "-2/3"
   ],
-  "exact_controls": 1502,
+  "exact_controls": 1511,
   "exact_heat_response": {
     "K_at_odd_tick": "5",
     "K_prime_at_s_1": "8",
@@ -224,7 +233,20 @@
     "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
   },
   "physical_admission_or_current_derived_executor_axis_proved": false,
-  "research_note_sha256": "cbe38673e89a02c921f0785b44dba9bd9e6e8046ab02716add9842f472c4841c",
+  "qD_fiber_nonbasicness": {
+    "carrier_constraint": "I4*eta*I4^T=eta for every amplitude s",
+    "finite_engine_witnesses": {
+      "s=1": "K=5",
+      "s=2": "K=17"
+    },
+    "heat_result_source": "dH/ds = -4 * weighted_mean(A-B/25) > 0 for every L>=2",
+    "post_tick_observer_parameter": "K(s)=1+4*s^2",
+    "qD_only_current_heat_map_on_open_real_family": false,
+    "scope": "requires an owner-derived matter-preparation restriction to descend to (q,D)",
+    "varied_field": "m13=m14=s; q=eta and D=I fixed",
+    "vertical_jet_at_s_1": "dK/ds=8; dH/ds>0 for all L>=2"
+  },
+  "research_note_sha256": "f91e839fe469fde53967cbdbde38677914b6b6999e7f22b8f60fa6b0a7df38ee",
   "same_current_observer_and_executor_output_on_witness": false,
   "scope": "ALTERNATIVE_EXACT_ENGINE_INVARIANT_SECTOR_WITH_EXISTING_FULL_CAR_CURRENT_READOUT",
   "status": "PASS"
