@@ -1,0 +1,31 @@
+name: D0 strategy handoff
+on:
+  pull_request:
+    paths:
+      - 'AGENTS.md'
+      - 'README.md'
+      - 'D0_START_HERE_RU.md'
+      - '00_WORK/**'
+      - '02_REGISTRY/research/D0_*'
+      - '02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/**'
+      - 'tools/d0_handoff.py'
+      - 'tools/test_d0_handoff.py'
+      - '.github/workflows/handoff.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: handoff-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  structural-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tools/test_d0_handoff.py
+      - run: python -O tools/test_d0_handoff.py
+      - run: python tools/d0_handoff.py --check
+      - run: python 02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/restore.py --check

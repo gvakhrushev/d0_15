@@ -1,0 +1,75 @@
+{
+  "schema": "d0-gr-execution/1",
+  "repository": "gvakhrushev/d0_15",
+  "snapshot_date": "2026-10-15",
+  "snapshot_is_live_status": false,
+  "intake_pr": 323,
+  "intake_branch": "control/d0-strategy-handoff-2026-10-15",
+  "strategy": "02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md",
+  "ideas": "02_REGISTRY/research/D0_IDEA_REGISTER.json",
+  "contract": "02_REGISTRY/research/D0_GR_CLOSURE_CONTRACT_RU.md",
+  "scientific_registry_policy": "execution overlay only; claims/assumptions and existing native-gravity dependency owners retain scientific authority",
+  "canonical_source_graph": {
+    "ref": "f0a6a85111c28f21a18ebf6ad9276eaa713abbd8",
+    "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
+    "immutable_url": "https://github.com/gvakhrushev/d0_15/blob/f0a6a85111c28f21a18ebf6ad9276eaa713abbd8/02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json"
+  },
+  "snapshot": {
+    "main": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
+    "prs": [
+      {"number":310,"head":"f0a6a85111c28f21a18ebf6ad9276eaa713abbd8","branch":"exp/a4d-joint-response-resolvent","task":"EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE","state_at_audit":"Draft IN_PROGRESS","ci_at_prior_audit":"guards failure; not rerun by this governance intake"},
+      {"number":322,"head":"a11a51055177cd81da005335f6f7b06500d7888e","branch":"control/a4d-native-variational-checkpoint","task":"CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE","state_at_audit":"REVIEW, frozen 448-artifact slice","ci_at_prior_audit":"success, not independent acceptance"},
+      {"number":202,"head":"224ccb2c66ed4e64cb29c24f2845eb383f2ae8f0","branch":"exp/a4d-resolved-curved-stationary-closure","task":"EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE","state_at_audit":"Draft IN_PROGRESS, activity unverified","ci_at_prior_audit":"guards failure"},
+      {"number":317,"head":"745bb0739b105e21c28d4dc5d4675726fce3deae","branch":"exp/a4d-resonance-divisor-stratification","task":"EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION","state_at_audit":"Draft IN_PROGRESS, activity unverified","ci_at_prior_audit":"guards success"}
+    ]
+  },
+  "roles": {
+    "integrator": {
+      "task":"CTRL-D0-BOTTOM-UP-GR-SYNTHESIS",
+      "gate":"FIRST_REVIEW_THEN_ASSIGN",
+      "inputs":["strategy","ideas","G0_G4_contract","source_310","control_322","source_202","source_317"],
+      "consumer":"G0-G4; one actual capstone interface",
+      "write_fence":["02_REGISTRY/research/D0_GR_EXECUTION_PLAN.json","02_REGISTRY/research/D0_GR_CLOSURE_CONTRACT_RU.md","02_REGISTRY/research/D0_IDEA_REGISTER.json","00_WORK/manifest.json","00_WORK/tasks/","README.md","AGENTS.md"],
+      "no_parallel_source_writer":310
+    },
+    "evidence": {
+      "task":"WRK-D0-RESEARCH-REPLAY-REPAIR",
+      "gate":"AFTER_REGISTRATION_IN_MAIN_AND_SINGLE_WRITER_ASSIGNMENT",
+      "inputs":["source_310","ci_failure_310","attached_ward_packet"],
+      "consumer":"fixed source intake and G3 evidence",
+      "write_fence":["02_REGISTRY/research/D0_EVIDENCE_REPAIR_REVIEW.md","02_REGISTRY/research/sources/d0_evidence_repair/"]
+    },
+    "foundations": {
+      "task":"WRK-D0-FOUNDATION-GEOMETRY-OWNER-MAP",
+      "gate":"AFTER_REGISTRATION_IN_MAIN_AND_SINGLE_WRITER_ASSIGNMENT",
+      "inputs":["source_310","BOOK_07","PI0_owner","Cost_Info_owners","shared_field_quotient"],
+      "consumer":"G0/G1; integrator selects the actual missing implication",
+      "write_fence":["02_REGISTRY/research/D0_FOUNDATION_GEOMETRY_OWNER_MAP.md","02_REGISTRY/research/sources/d0_foundation_owner_map/"]
+    },
+    "nonlinear": {
+      "task":"EXP-D0-JOINT-NONLINEAR-REFINEMENT",
+      "gate":"HOLD_FOR_COMMON_INTERFACE_REVIEWED_WARD_INPUT_AND_GLOBAL_WIP",
+      "inputs":["common_interface","accepted_full4d","reviewed_joint_ward"],
+      "consumer":"G2/G3 of one fixed G1 interface",
+      "write_fence":["02_REGISTRY/research/D0_JOINT_NONLINEAR_REFINEMENT.md","02_REGISTRY/research/sources/d0_joint_nonlinear_refinement/"],
+      "overlap_review_prs":[202,310,317]
+    }
+  },
+  "global_launch_rules": [
+    "Read live open PRs before launch, even when main says PLANNED.",
+    "Do not duplicate #310 or edit its branch concurrently.",
+    "No new EXPENSIVE execution until CONTROL reconciles existing three open EXPENSIVE parents and their actual WIP.",
+    "No task is started by this JSON; registration is not dispatch.",
+    "No automatic source/claim status promotion; author is not independent reviewer.",
+    "Scientific outputs are accepted only by actual use in a named consumer."
+  ],
+  "gates": [
+    {"id":"G0","status":"OPEN_NOT_CLOSED_BY_HANDOFF"},
+    {"id":"G1","status":"OPEN_NOT_CLOSED_BY_HANDOFF"},
+    {"id":"G2","status":"OPEN_NOT_CLOSED_BY_HANDOFF"},
+    {"id":"G3","status":"OPEN_NOT_CLOSED_BY_HANDOFF"},
+    {"id":"G4","status":"OPEN_NOT_CLOSED_BY_HANDOFF"}
+  ],
+  "first_wave":["integrator","evidence","foundations"],
+  "held_wave":["nonlinear"]
+}
