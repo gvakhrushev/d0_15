@@ -543,6 +543,41 @@ theorem same_state_different_edge_price (N : ℕ) (e : SceneEdge)
 
 theorem concrete_scene_edge_is_present : sceneEdge09.val = (0, 9) := rfl
 
+theorem sceneEdge09_kernel : SceneStep 0 9 := by
+  unfold SceneStep Adj31 zone31
+  decide
+
+theorem sceneEdge90_kernel : SceneStep 9 0 := by
+  unfold SceneStep Adj31 zone31
+  decide
+
+def sceneReturnPath09 : ScenePath :=
+  ⟨[0, 9, 0], IsSceneWalk.cons 0 9 [0] sceneEdge09_kernel
+    (IsSceneWalk.cons 9 0 [] sceneEdge90_kernel (IsSceneWalk.single 0))⟩
+
+/-- With the complete payload frozen, a real closed scene return has positive
+additive history cost, while the product verification state has returned to
+the identical endpoint. Thus this state carrier cannot encode retained return
+history in its endpoint action. -/
+theorem fixed_payload_closed_return_has_history_cost (N : ℕ)
+    (A : ActionProtocol (scenePayloadProtocol N)) (z : NativePayload N) :
+    2 ≤ (observedHistory A z).value sceneReturnPath09 ∧
+      A.action (0, z) (0, z) = 0 := by
+  have hsum : (observedHistory A z).value sceneReturnPath09 =
+      observedEdgeCost A z ⟨(0, 9), sceneEdge09_kernel⟩ +
+      observedEdgeCost A z ⟨(9, 0), sceneEdge90_kernel⟩ := by
+    rw [history_value_forced]
+    simp [observedHistory, historyEdge, historyFromEdges, pathSum, edgeReading,
+      edgePath, sceneReturnPath09, sceneEdge09_kernel, sceneEdge90_kernel]
+  constructor
+  · rw [hsum]
+    have h01 := every_protocol_edge_profile_has_unit_gap A z
+      ⟨(0, 9), sceneEdge09_kernel⟩
+    have h90 := every_protocol_edge_profile_has_unit_gap A z
+      ⟨(9, 0), sceneEdge90_kernel⟩
+    linarith
+  · exact A.action_refl _
+
 theorem background_variation_is_blind_one (N : ℕ) (e : SceneEdge)
     (bcurve : ℝ → NativeBackground N) (psi : ArchiveCochain N) :
     HasDerivAt (fun t : ℝ => oneEdgeReadout N e (bcurve t) psi) 0 0 := by
@@ -573,6 +608,7 @@ end D0.Research.NativeScenePayloadAction
 #check D0.Research.NativeScenePayloadAction.same_state_different_matter_jet
 #check D0.Research.NativeScenePayloadAction.same_state_different_edge_price
 #check D0.Research.NativeScenePayloadAction.concrete_scene_edge_is_present
+#check D0.Research.NativeScenePayloadAction.fixed_payload_closed_return_has_history_cost
 #check D0.Research.NativeScenePayloadAction.scalar_refinement_preserves_energies
 #check D0.Research.NativeScenePayloadAction.full_archive_lift_is_scalar_compatible
 #check D0.Research.NativeScenePayloadAction.one_action_edge_refines
@@ -588,6 +624,7 @@ end D0.Research.NativeScenePayloadAction
 #print axioms D0.Research.NativeScenePayloadAction.genuine_root_difference
 #print axioms D0.Research.NativeScenePayloadAction.same_state_different_matter_jet
 #print axioms D0.Research.NativeScenePayloadAction.same_state_different_edge_price
+#print axioms D0.Research.NativeScenePayloadAction.fixed_payload_closed_return_has_history_cost
 #print axioms D0.Research.NativeScenePayloadAction.scalar_refinement_preserves_energies
 #print axioms D0.Research.NativeScenePayloadAction.full_archive_lift_is_scalar_compatible
 #print axioms D0.Research.NativeScenePayloadAction.one_action_edge_refines

@@ -51,6 +51,14 @@ D0.Research.NativeScenePayloadAction.same_state_different_edge_price (N : ℕ)
       2
 D0.Research.NativeScenePayloadAction.concrete_scene_edge_is_present :
   ↑D0.Research.NativeScenePayloadAction.sceneEdge09 = (0, 9)
+D0.Research.NativeScenePayloadAction.fixed_payload_closed_return_has_history_cost (N : ℕ)
+  (A :
+    D0.Foundation.EndogenousActionQuantum.ActionProtocol (D0.Research.NativeScenePayloadAction.scenePayloadProtocol N))
+  (z : D0.Research.NativeScenePayloadAction.NativePayload N) :
+  2 ≤
+      (D0.Research.NativeScenePayloadAction.observedHistory A z).value
+        D0.Research.NativeScenePayloadAction.sceneReturnPath09 ∧
+    A.action (0, z) (0, z) = 0
 D0.Research.NativeScenePayloadAction.scalar_refinement_preserves_energies (N : ℕ)
   (R : D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain (N + 1))
   (hR : D0.Research.NativeScenePayloadAction.ScalarRefinementCompatible N R) (psi : D0.Geometry.ArchiveCochain N) :
@@ -125,6 +133,9 @@ D0.Research.NativeScenePayloadAction.background_variation_is_blind_two (N : ℕ)
  Classical.choice,
  Quot.sound]
 'D0.Research.NativeScenePayloadAction.same_state_different_edge_price' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.fixed_payload_closed_return_has_history_cost' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'D0.Research.NativeScenePayloadAction.scalar_refinement_preserves_energies' depends on axioms: [propext,

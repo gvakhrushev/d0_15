@@ -2210,7 +2210,10 @@ state their edge costs are 1 and 2 and their full-cochain jets in the same
 direction are 0 and 2. Both have zero coframe/link variation for every
 admissible background curve with matter fixed, and both commute with the
 literal all-grade cochain pullback along the archive projection, for any
-supplied background map. The checker replays 14 Lean propositions with only
+supplied background map. A hostile closed-return theorem proves that the
+fixed-payload product state assigns endpoint cost zero after `0→9→0` while
+its additive scene history costs at least 2. The checker replays 15 Lean
+propositions with only
 `propext`, `Classical.choice` and `Quot.sound`; no `sorryAx` is present.
 Its immutable compiler receipt records the capsule, transitive D0 source
 hashes and toolchain inputs.

@@ -68,6 +68,15 @@ formal combination here, as the missing native selector. It is a scoped
 underdetermination theorem for this explicit typed interface, not a
 counterexample to a separately owned physical preparation law.
 
+The fixed-payload product also fails a sharp memory test on the actual scene
+return `[0,9,0]`: additive history costs at least 2, while the product state
+returns to the identical endpoint `(0,z)` and every `ActionProtocol` assigns
+that endpoint transition cost 0. Thus the complete cochain type being present
+does not mean its retained state is updated by the path. An owner-derived
+archive update or a richer internally retained state is necessary before
+endpoint action can encode the return; neither is supplied by this product
+protocol.
+
 The next G0 theorem must derive the actual edge-cost restriction from the
 closed native history/record preparation on the same $(q,D,b,m)$ carrier,
 including its allowed variations and full metric/link refinement, or prove

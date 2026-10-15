@@ -1,11 +1,11 @@
 {
   "status": "PASS_TYPED_PRODUCT_INTERFACE_UNDERDETERMINATION",
   "capsule": "02_REGISTRY/research/certificates/a4d_native_scene_payload_action.lean",
-  "capsule_sha256": "b7926c2a8e90515d7c065d6cf182969d217102be13e83ec79aa40db11c08cbd9",
+  "capsule_sha256": "b040f4e517c040af539a94d5ffa861d689504cfac1f6427a41419484ab178a2d",
   "output": "02_REGISTRY/research/certificates/a4d_native_scene_payload_action_output.txt",
-  "output_sha256": "b0fb8ca7a9dc1ab7c93d04162802362d0bdb89701ffdf6c398f47fcbad3a568c",
+  "output_sha256": "7e0981d4e1607e916d16d0703f13e068dc82bcfc75172f17108bc0bedcc8a43a",
   "proof_note": "02_REGISTRY/research/A4D_NATIVE_SCENE_PAYLOAD_ACTION_BOUNDARY.md",
-  "proof_note_sha256": "42ad1bd775e5822e53484c86e90e4cfc388083277554a3404dff32f9b2ea3f29",
+  "proof_note_sha256": "7e410ef5ffefcf986a14e9880c0a63c3f22e3f53bf573fc069e926da5c3ebc7e",
   "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_scene_payload_action.lean",
   "command_cwd": "03_FORMALIZATION",
   "compiler_exit_code": 0,
@@ -15,7 +15,7 @@
     "Quot.sound",
     "propext"
   ],
-  "printed_axiom_dependencies": 14,
+  "printed_axiom_dependencies": 15,
   "compiled_declarations": [
     "complete_product_edge_cost_fiber",
     "subunit_profile_rejected",
@@ -23,6 +23,7 @@
     "genuine_root_difference",
     "same_state_different_matter_jet",
     "same_state_different_edge_price",
+    "fixed_payload_closed_return_has_history_cost",
     "scalar_refinement_preserves_energies",
     "full_archive_lift_is_scalar_compatible",
     "one_action_edge_refines",
@@ -32,7 +33,7 @@
     "background_variation_is_blind_one",
     "background_variation_is_blind_two"
   ],
-  "input_head": "8db39cbbe5efe45d279f207f6470d5ef882d89fd",
+  "input_head": "6b4ea93aaf9b19d8b2b15887a982c04027d7b7a1",
   "transitive_d0_source_sha256": {
     "03_FORMALIZATION/D0/Algebra/RoleSignature.lean": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf",
     "03_FORMALIZATION/D0/Claims/Signature31Split.lean": "2963905269d09c3fd88a79e4a1e082558403b3b2433899e54e8c95b2c186990c",

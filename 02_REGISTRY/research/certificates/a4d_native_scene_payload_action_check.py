@@ -24,6 +24,7 @@ DECLARATIONS = (
     "genuine_root_difference",
     "same_state_different_matter_jet",
     "same_state_different_edge_price",
+    "fixed_payload_closed_return_has_history_cost",
     "scalar_refinement_preserves_energies",
     "full_archive_lift_is_scalar_compatible",
     "one_action_edge_refines",
