@@ -1,0 +1,44 @@
+{
+  "scope": "new synthesis and exact algebraic consequences, not re-audit of original packets",
+  "inputs": [
+    {
+      "original_name": "D0_deep_audit_2026-10-15(1).md",
+      "stored_as": "inputs/cold_start_audit.md",
+      "sha256": "466e7421dddb86675154ffbfb6c9c08ac6b6d50a1146dc58441d37b479784c27",
+      "bytes": 22013,
+      "source_replay_in_this_iteration": false
+    },
+    {
+      "original_name": "Вставленный текст(3).txt",
+      "stored_as": "inputs/cold_start_audit_response.txt",
+      "sha256": "ddd974f2f00688aa577558e4636ed30eae6dc46a5e0b519f5a8c1f77186c1560",
+      "bytes": 37928,
+      "source_replay_in_this_iteration": false
+    },
+    {
+      "original_name": "D0_resonant_synthesis_to_GR_2026-10-15.md",
+      "stored_as": "inputs/prior_resonant_synthesis.md",
+      "sha256": "3b214280de423dcf48da85c9ec8a816c9e35deca443f0a153ebab0ca621e4ec3",
+      "bytes": 29529,
+      "source_replay_in_this_iteration": false
+    },
+    {
+      "original_name": "D0_joint_lattice_ward_resonance_result_2026-10-15.md",
+      "stored_as": "inputs/prior_joint_ward_result.md",
+      "sha256": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+      "bytes": 22425,
+      "source_replay_in_this_iteration": false
+    },
+    {
+      "original_name": "D0_resonant_synthesis_proof_package_2026-10-15.zip",
+      "stored_as": "inputs/prior_resonant_proof_package.zip",
+      "sha256": "fe2a0519250980de4990f2019c1b8a82cdf0471844942d3063cd2d048793cec6",
+      "bytes": 168069,
+      "source_replay_in_this_iteration": false
+    }
+  ],
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "github_published_in_this_iteration": false,
+  "general_GR_closure_claim": false,
+  "new_Learn_or_Lean_compilation": false
+}

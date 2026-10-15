@@ -1,0 +1,163 @@
+{
+  "schema": "d0-record-geometry-source-pins/1",
+  "date": "2026-10-15",
+  "repository": "gvakhrushev/d0_15",
+  "main": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
+  "publication": {
+    "pr": 323,
+    "branch": "control/d0-strategy-handoff-2026-10-15",
+    "before_this_publication": "524fd4cedc0c93a62b596072aa915ed109bcdfbc",
+    "role": "preserve full research text; no task dispatch",
+    "final_head_locator": "PR #323 body and Git commit containing this file; immutable handoff URL is given to the user"
+  },
+  "scientific_execution": {
+    "pr": 310,
+    "branch": "exp/a4d-joint-response-resolvent",
+    "brief_input": "fe2fc53fb9479aba6c8c99c8294d25b444f7a27a",
+    "publication_time_head": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+    "new_commits_since_brief": [
+      "d89f7e55312d044e945ab267232f3ac1ceaf54bb",
+      "5a68275e06b76177e54a9f909a723f7d7a9949e7"
+    ],
+    "single_writer_required": true
+  },
+  "operational_flow": {
+    "pr": 324,
+    "branch": "control/gr-research-flow",
+    "publication_time_head": "1d0fbb695e4393d01257851337e64bf271fc0c85"
+  },
+  "owners_mentioned_by_brief": [
+    {
+      "name": "A4D_FULL4D_VERIFIED_INTAKE.md",
+      "path": "02_REGISTRY/research/A4D_FULL4D_VERIFIED_INTAKE.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "fbfa0ddc861e9a963d51f614973e8afe3ae95510",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_FULL4D_VERIFIED_INTAKE.md"
+    },
+    {
+      "name": "A4D_NATIVE_AF_TRACE_PREPARATION.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_AF_TRACE_PREPARATION.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "3cbb805fb72b501a0eb1d7d17b9f037dff115880",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_AF_TRACE_PREPARATION.md"
+    },
+    {
+      "name": "A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "3842dd15401e508388a415ecc3c7a6445fd1684e",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md"
+    },
+    {
+      "name": "A4D_NATIVE_CHRONOLOGICAL_JOINT_REDUCTION.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_JOINT_REDUCTION.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "c7819ef4a5a532b2c3c1da6c9b6c69bf22c049a3",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_JOINT_REDUCTION.md"
+    },
+    {
+      "name": "A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "42fee1132396b0294b068774cee63e427189e4e4",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md"
+    },
+    {
+      "name": "A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "b6895f33cba6ea68ae9cb2d055ec0d830a3fc12e",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md"
+    },
+    {
+      "name": "A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "938cde2d3862ee329f2028bc738ad4704e9178b1",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md"
+    },
+    {
+      "name": "A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "e5c168024015db4e216141e2139d2cc1f5d3e419",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md"
+    },
+    {
+      "name": "A4D_NATIVE_JONES_RECORD_TRANSPORT.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_JONES_RECORD_TRANSPORT.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "ecb2c7c737ffacc3ce27e66428ade54b428bfd56",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_JONES_RECORD_TRANSPORT.md"
+    },
+    {
+      "name": "A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "dd325fed87dc1284dd8ee64e86e34587be31e7d3",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md"
+    },
+    {
+      "name": "A4D_NATIVE_RECORD_SOURCE_JOINT_CONTINUATION.md",
+      "path": "02_REGISTRY/research/A4D_NATIVE_RECORD_SOURCE_JOINT_CONTINUATION.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "348a6283458482d4271341e084cd7d457fe98b77",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_NATIVE_RECORD_SOURCE_JOINT_CONTINUATION.md"
+    },
+    {
+      "name": "A4D_TOWER_TRACE_HEAT_SOURCE_SYNTHESIS.md",
+      "path": "02_REGISTRY/research/A4D_TOWER_TRACE_HEAT_SOURCE_SYNTHESIS.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "fc123d8e513cbe2bb05a421fa2f1fe42675fddcf",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/A4D_TOWER_TRACE_HEAT_SOURCE_SYNTHESIS.md"
+    },
+    {
+      "name": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "path": "01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md"
+    },
+    {
+      "name": "HEAT_JOINT_LIMIT_PROOF.md",
+      "path": "02_REGISTRY/research/sources/d0_tower_heat_synthesis_2026-10-15/HEAT_JOINT_LIMIT_PROOF.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "48e8c4fd2bc1f29267614ab721d8966078afd006",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/sources/d0_tower_heat_synthesis_2026-10-15/HEAT_JOINT_LIMIT_PROOF.md"
+    },
+    {
+      "name": "MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "6566ee73bab5ed6ecdedb80cc2a08ff5085ff3a2",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md"
+    },
+    {
+      "name": "MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+      "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+      "commit": "5a68275e06b76177e54a9f909a723f7d7a9949e7",
+      "git_blob": "bd694278d1696d337ded674bbcca06c551cd9bee",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5a68275e06b76177e54a9f909a723f7d7a9949e7/02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md"
+    }
+  ],
+  "interval_patch_upstream": {
+    "commit": "9fbc75db0a94707dc3105cdfb3f322a14e62a979",
+    "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py",
+    "git_blob": "9ebb9202c2324e755a700bb08e5d71f22e979bce",
+    "url": "https://github.com/gvakhrushev/d0_15/blob/9fbc75db0a94707dc3105cdfb3f322a14e62a979/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py",
+    "full_interval_replay_performed": false
+  },
+  "missing_external_links": [
+    {
+      "historical_link": "sandbox:/mnt/data/D0_deep_audit_2026-10-15.zip",
+      "status": "not included in supplied outer ZIP or found among local supplied files; not required by new or adapted historical replay"
+    }
+  ],
+  "standalone_synthesis_alias": "External filename cited in the prior chat; actual preserved source is outer ZIP SYNTHESIS_RU.md. Standalone byte identity cannot be independently checked.",
+  "scope": {
+    "new_registered_task": false,
+    "scientific_source_changed": false,
+    "CORE_promotion": false,
+    "GR_closed": false
+  }
+}

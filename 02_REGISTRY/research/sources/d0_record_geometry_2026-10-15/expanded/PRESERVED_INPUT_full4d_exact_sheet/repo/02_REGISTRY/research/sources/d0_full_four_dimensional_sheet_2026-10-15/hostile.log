@@ -1,0 +1,26 @@
+[
+  {
+    "file": "interval_check.py",
+    "mutation": "self.l=np.array(l,float,copy=True);self.h=np.array(l if h is None else h,float,copy=True) -> self.l=np.asarray(l,float);self.h=np.asarray(l if h is None else h,float)",
+    "returncode": 1,
+    "detected_by": "independent_interval_endpoint_storage"
+  },
+  {
+    "file": "interval_check.py",
+    "mutation": "ex=(off[j][0]-off[i][0],off[j][1]-off[i][1]) -> ex=(0,0)",
+    "returncode": 1,
+    "detected_by": "literal_full_Bloch_placement"
+  },
+  {
+    "file": "interval_check.py",
+    "mutation": "coef=ee[u]*ee[v]*.5 -> coef=-ee[u]*ee[v]*.5",
+    "returncode": 1,
+    "detected_by": "literal_full_Bloch_placement"
+  },
+  {
+    "file": "blas_bounds.py",
+    "mutation": "GAMMA=2.**-38 -> GAMMA=0.",
+    "returncode": 1,
+    "detected_by": "BLAS_error_factor_proved"
+  }
+]

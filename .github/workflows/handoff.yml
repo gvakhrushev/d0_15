@@ -8,6 +8,7 @@ on:
       - '02_REGISTRY/research/D0_GR_CLOSURE_CONTRACT_RU.md'
       - '02_REGISTRY/research/D0_STRATEGY_HANDOFF_INTAKE_2026-10-15.md'
       - '02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/**'
+      - '02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/**'
       - '.github/workflows/handoff.yml'
   workflow_dispatch:
 permissions:
@@ -49,3 +50,5 @@ jobs:
           PYCODE
       - name: Lossless source preservation (no scientific execution)
         run: python 02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/restore.py --check
+      - name: Readable research source preservation (no scientific execution)
+        run: python 02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/verify_publication.py

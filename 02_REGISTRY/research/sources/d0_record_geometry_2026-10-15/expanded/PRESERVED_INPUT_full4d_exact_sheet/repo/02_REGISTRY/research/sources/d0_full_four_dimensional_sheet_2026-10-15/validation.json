@@ -1,0 +1,260 @@
+{
+  "structure": {
+    "exact_structural_checks": 51,
+    "checks": [
+      "upstream_alias_reproduced",
+      "independent_interval_endpoint_storage",
+      "exact_rational_enclosure_1/100",
+      "exact_rational_enclosure_1/1000",
+      "exact_rational_enclosure_-1/3",
+      "all_Lorentz_generators",
+      "star_square",
+      "root_dimension",
+      "all_4D_links_retained",
+      "all_metric_slots_retained",
+      "literal_face_coefficient_(0, 1)",
+      "literal_face_coefficient_(0, 2)",
+      "literal_face_coefficient_(0, 3)",
+      "literal_face_coefficient_(1, 2)",
+      "literal_face_coefficient_(1, 3)",
+      "literal_face_coefficient_(2, 3)",
+      "flat_full_hessian_is_symmetric",
+      "flat_zero_frequency_det",
+      "real_transverse_resonance_I",
+      "real_transverse_resonance_-I",
+      "two_invariant_jacobian_identity",
+      "two_coordinate_invariant_rank",
+      "third_derivative_stencil_budget",
+      "mixed_stencil_budget",
+      "coframe_forcing_budget",
+      "full_4D_parameter_contraction",
+      "full_4D_parameter_self_mapping",
+      "BLAS_error_factor_proved",
+      "flat_exact_quarter_coefficients_(0, 0)",
+      "flat_exact_quarter_coefficients_(1, 0)",
+      "flat_exact_quarter_coefficients_(-1, 0)",
+      "flat_exact_quarter_coefficients_(0, 1)",
+      "flat_exact_quarter_coefficients_(0, -1)",
+      "flat_exact_quarter_coefficients_(-1, 1)",
+      "flat_exact_quarter_coefficients_(1, -1)",
+      "literal_full_Bloch_placement_(0, 0)",
+      "literal_full_Bloch_placement_(0, 1)",
+      "literal_full_Bloch_placement_(0, 2)",
+      "literal_full_Bloch_placement_(0, 3)",
+      "literal_full_Bloch_placement_(1, 0)",
+      "literal_full_Bloch_placement_(1, 1)",
+      "literal_full_Bloch_placement_(1, 2)",
+      "literal_full_Bloch_placement_(1, 3)",
+      "literal_full_Bloch_placement_(2, 0)",
+      "literal_full_Bloch_placement_(2, 1)",
+      "literal_full_Bloch_placement_(2, 2)",
+      "literal_full_Bloch_placement_(2, 3)",
+      "literal_full_Bloch_placement_(3, 0)",
+      "literal_full_Bloch_placement_(3, 1)",
+      "literal_full_Bloch_placement_(3, 2)",
+      "literal_full_Bloch_placement_(3, 3)"
+    ],
+    "old_interval_alias_reproduced": true
+  },
+  "scope": "FINITE_L4_OPEN_FULL_4D_CONNECTION_SHEET_NOT_FULL_GR",
+  "interval": {
+    "status": "PASS_EXACT_TWO_COORDINATE_ROOT_AND_FULL_4D_NONDEGENERACY",
+    "root": {
+      "radius": 2.2737367544323206e-13,
+      "contraction_upper": 1.232213056621168e-06,
+      "displacement_upper": 1.7129739995119345e-18,
+      "image_radius_upper": 1.9931468111250295e-18,
+      "variables": 384,
+      "all_connection_rows": 6144,
+      "test": "strict outward Banach enclosure"
+    },
+    "blocks": [
+      {
+        "q0": 0,
+        "q3": 0,
+        "rows": 384,
+        "defect_infinity_upper": 3.574403742699774e-06,
+        "inverse_norm_upper": 42086.76391795605
+      },
+      {
+        "q0": 0,
+        "q3": 1,
+        "rows": 384,
+        "defect_infinity_upper": 5.096982999515847e-07,
+        "inverse_norm_upper": 5480.770530740964
+      },
+      {
+        "q0": 0,
+        "q3": 2,
+        "rows": 384,
+        "defect_infinity_upper": 5.034690546784476e-06,
+        "inverse_norm_upper": 63601.799926074455
+      },
+      {
+        "q0": 0,
+        "q3": 3,
+        "rows": 384,
+        "defect_infinity_upper": 5.096982999515847e-07,
+        "inverse_norm_upper": 5480.770530740964
+      },
+      {
+        "q0": 1,
+        "q3": 0,
+        "rows": 384,
+        "defect_infinity_upper": 3.386763625810448e-07,
+        "inverse_norm_upper": 3785.3779410291563
+      },
+      {
+        "q0": 1,
+        "q3": 1,
+        "rows": 384,
+        "defect_infinity_upper": 0.0007510706881723443,
+        "inverse_norm_upper": 7813789.387831605
+      },
+      {
+        "q0": 1,
+        "q3": 2,
+        "rows": 384,
+        "defect_infinity_upper": 1.738015597908691e-07,
+        "inverse_norm_upper": 1863.5979545121186
+      },
+      {
+        "q0": 1,
+        "q3": 3,
+        "rows": 384,
+        "defect_infinity_upper": 5.080588342310781e-06,
+        "inverse_norm_upper": 50515.597028489996
+      },
+      {
+        "q0": 2,
+        "q3": 0,
+        "rows": 384,
+        "defect_infinity_upper": 1.9022421288241149e-06,
+        "inverse_norm_upper": 24584.87827686763
+      },
+      {
+        "q0": 2,
+        "q3": 1,
+        "rows": 384,
+        "defect_infinity_upper": 3.7937726409245616e-07,
+        "inverse_norm_upper": 4093.1163162868966
+      },
+      {
+        "q0": 2,
+        "q3": 2,
+        "rows": 384,
+        "defect_infinity_upper": 3.4310676789662583e-06,
+        "inverse_norm_upper": 42133.78168303846
+      },
+      {
+        "q0": 2,
+        "q3": 3,
+        "rows": 384,
+        "defect_infinity_upper": 3.7937726409245616e-07,
+        "inverse_norm_upper": 4093.1163162868966
+      },
+      {
+        "q0": 3,
+        "q3": 0,
+        "rows": 384,
+        "defect_infinity_upper": 3.386763625810448e-07,
+        "inverse_norm_upper": 3785.3779410291563
+      },
+      {
+        "q0": 3,
+        "q3": 1,
+        "rows": 384,
+        "defect_infinity_upper": 5.080588342310781e-06,
+        "inverse_norm_upper": 50515.597028489996
+      },
+      {
+        "q0": 3,
+        "q3": 2,
+        "rows": 384,
+        "defect_infinity_upper": 1.738015597908691e-07,
+        "inverse_norm_upper": 1863.5979545121186
+      },
+      {
+        "q0": 3,
+        "q3": 3,
+        "rows": 384,
+        "defect_infinity_upper": 0.0007510706881723443,
+        "inverse_norm_upper": 7813789.387831605
+      }
+    ],
+    "full_connection_dimension": 6144,
+    "full_coframe_parameter_dimension": 4096,
+    "full_metric_parameter_dimension": 2560,
+    "full_inverse_infinity_upper": 15931462.919009278,
+    "mesh": 4,
+    "physical_GR_closed": false,
+    "all_mesh_uniformity_claimed": false,
+    "new_Lean_compilation": false,
+    "interval_endpoint_aliasing_fixed": true
+  },
+  "curvature": {
+    "component": [
+      0.027370326811734576,
+      0.02737032681363493
+    ],
+    "all_state_energetic_stability_claimed": false
+  },
+  "final_checks": [
+    "upstream_alias_reproduced",
+    "independent_interval_endpoint_storage",
+    "exact_rational_enclosure_1/100",
+    "exact_rational_enclosure_1/1000",
+    "exact_rational_enclosure_-1/3",
+    "all_Lorentz_generators",
+    "star_square",
+    "root_dimension",
+    "all_4D_links_retained",
+    "all_metric_slots_retained",
+    "literal_face_coefficient_(0, 1)",
+    "literal_face_coefficient_(0, 2)",
+    "literal_face_coefficient_(0, 3)",
+    "literal_face_coefficient_(1, 2)",
+    "literal_face_coefficient_(1, 3)",
+    "literal_face_coefficient_(2, 3)",
+    "flat_full_hessian_is_symmetric",
+    "flat_zero_frequency_det",
+    "real_transverse_resonance_I",
+    "real_transverse_resonance_-I",
+    "two_invariant_jacobian_identity",
+    "two_coordinate_invariant_rank",
+    "third_derivative_stencil_budget",
+    "mixed_stencil_budget",
+    "coframe_forcing_budget",
+    "full_4D_parameter_contraction",
+    "full_4D_parameter_self_mapping",
+    "BLAS_error_factor_proved",
+    "flat_exact_quarter_coefficients_(0, 0)",
+    "flat_exact_quarter_coefficients_(1, 0)",
+    "flat_exact_quarter_coefficients_(-1, 0)",
+    "flat_exact_quarter_coefficients_(0, 1)",
+    "flat_exact_quarter_coefficients_(0, -1)",
+    "flat_exact_quarter_coefficients_(-1, 1)",
+    "flat_exact_quarter_coefficients_(1, -1)",
+    "literal_full_Bloch_placement_(0, 0)",
+    "literal_full_Bloch_placement_(0, 1)",
+    "literal_full_Bloch_placement_(0, 2)",
+    "literal_full_Bloch_placement_(0, 3)",
+    "literal_full_Bloch_placement_(1, 0)",
+    "literal_full_Bloch_placement_(1, 1)",
+    "literal_full_Bloch_placement_(1, 2)",
+    "literal_full_Bloch_placement_(1, 3)",
+    "literal_full_Bloch_placement_(2, 0)",
+    "literal_full_Bloch_placement_(2, 1)",
+    "literal_full_Bloch_placement_(2, 2)",
+    "literal_full_Bloch_placement_(2, 3)",
+    "literal_full_Bloch_placement_(3, 0)",
+    "literal_full_Bloch_placement_(3, 1)",
+    "literal_full_Bloch_placement_(3, 2)",
+    "literal_full_Bloch_placement_(3, 3)",
+    "nonzero_curvature_at_exact_anchor",
+    "all_Bloch_modes_checked",
+    "interval_root_complete",
+    "all_blocks_strict",
+    "no_false_GR_promotion"
+  ]
+}

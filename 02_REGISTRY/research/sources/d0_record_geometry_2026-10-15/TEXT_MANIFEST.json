@@ -1,0 +1,1781 @@
+{
+  "schema": "d0-readable-research-publication/1",
+  "date": "2026-10-15",
+  "outer_zip": {
+    "name": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip",
+    "bytes": 501228,
+    "sha256": "ee53b2fad8e687b3a26f4f9cc00a283b27ece643dbfe7552354be794e1e424e8"
+  },
+  "standalone_brief": {
+    "name": "D0_expensive_AI_native_record_to_GR_task_2026-10-15.md",
+    "sha256": "396f5b51b35579be1e2457c4121d3b29bd5265246bd5112ed4aca0e670b1867c",
+    "bytes": 27763,
+    "published": "original/EXPENSIVE_AI_BRIEF_RU.md"
+  },
+  "text_files": {
+    "original/EXPENSIVE_AI_BRIEF_RU.md": {
+      "sha256": "396f5b51b35579be1e2457c4121d3b29bd5265246bd5112ed4aca0e670b1867c",
+      "bytes": 27763
+    },
+    "original/MANIFEST.json": {
+      "sha256": "9b39f499a60fa8b1271d4a16f1e19089dc0747386322ab997e86721e830ea18a",
+      "bytes": 2201
+    },
+    "original/README.md": {
+      "sha256": "3218a1c5e0bd41a0146fd17114f9a2b5e3a6862522cfe22a7716d44ba5ad1a16",
+      "bytes": 1107
+    },
+    "original/SYNTHESIS_RU.md": {
+      "sha256": "4f57d080dbd52e52961427d8c89c6f4b5a9db8788c17de576f2bfd48c400c5b4",
+      "bytes": 25794
+    },
+    "original/VALIDATION.json": {
+      "sha256": "dfce8197321b5881cfdbbda63ff6b6cb468e2576923a842d0d0ed80c2fcff5de",
+      "bytes": 1338
+    },
+    "original/check_heat_window.py": {
+      "sha256": "0c6e785de2454c72862ff96832a03d921edd69beda8cdc070d0b42f339bd4d25",
+      "bytes": 1176
+    },
+    "original/check_mutations.py": {
+      "sha256": "5ae10c73579273a15009316d48a61d5c894e151953044df3c83a1e89e0a1495c",
+      "bytes": 1229
+    },
+    "original/check_record_2jet.py": {
+      "sha256": "2b99efc7c09df0aad2b3c8df25600d423582d203031c19c98af71d293931c3a3",
+      "bytes": 4223
+    },
+    "original/exact_result.json": {
+      "sha256": "7a116160367984995b9bf9ed6631fa58bf432a135ea6b9e679fbafde11b1ac2a",
+      "bytes": 1184
+    },
+    "original/heat_diagnostic.json": {
+      "sha256": "7e86fae146d36fb7c24deed63761806eddb20f628669a0493f2c1599a205775c",
+      "bytes": 957
+    },
+    "original/inputs/D0_deep_audit_2026-10-15(1).md": {
+      "sha256": "466e7421dddb86675154ffbfb6c9c08ac6b6d50a1146dc58441d37b479784c27",
+      "bytes": 22013
+    },
+    "original/inputs/D0_joint_lattice_ward_resonance_result_2026-10-15.md": {
+      "sha256": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+      "bytes": 22425
+    },
+    "original/inputs/D0_otobrazhenie_pole_pribor.html": {
+      "sha256": "95bfe3c82f74f8bee9b90f78e02d4d5e7a2ba41a52d418e9016844a5cccc1222",
+      "bytes": 51164
+    },
+    "original/inputs/D0_resonant_synthesis_to_GR_2026-10-15.md": {
+      "sha256": "3b214280de423dcf48da85c9ec8a816c9e35deca443f0a153ebab0ca621e4ec3",
+      "bytes": 29529
+    },
+    "original/inputs/D0_sintez_bashnya_phi_predel.html": {
+      "sha256": "cc327e05d246a86847248c690469aae47cab3c27f68d49c9c9d4500dc1f3a84b",
+      "bytes": 63787
+    },
+    "original/inputs/D0_two_syntheses_to_GR_2026-10-15.md": {
+      "sha256": "105db0d8f45b88904e25cbb5b798a0afe86dcb363886dc59c935688484c1efb0",
+      "bytes": 50945
+    },
+    "original/mutation_result.json": {
+      "sha256": "d2f20ed9fbace4cb506de667bb560654ef658248f11876cc402ebcbcd8574210",
+      "bytes": 370
+    },
+    "expanded/D0_resonant_synthesis_proof_package_2026-10-15/replay.log": {
+      "sha256": "149b3359fde1ee30db400c5b4d24284e8fcf149adf9e327d3d28e5294d105822",
+      "bytes": 1383
+    },
+    "expanded/D0_resonant_synthesis_proof_package_2026-10-15/synthesis_check.py": {
+      "sha256": "aaa1d3890377128de7fcdffe3ae68afd2c092a49a222f6b0f239284a541dfbbe",
+      "bytes": 9703
+    },
+    "expanded/D0_resonant_synthesis_proof_package_2026-10-15/validation.json": {
+      "sha256": "a9b37737c4b101eb0c84fa224eb98f8d922774ee606a046729651d549be9277c",
+      "bytes": 1232
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/IMPORT_INTO_310.py": {
+      "sha256": "7e8a1180eb39da2cf7891d321330f63764ff7137409f52928a0e5b0216a74a3a",
+      "bytes": 3082
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/restore.py": {
+      "sha256": "15f32ae4cb8552dd66a9bc360cc3b4bf727bc1e438d7930a69043c892b73cd5f",
+      "bytes": 3488
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/PATCH_VALIDATION.json": {
+      "sha256": "7e1dcb7afba7cc59778828f40e9c478ee21660a621e51371c8f436b5a3d722f5",
+      "bytes": 271
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/README_RU.md": {
+      "sha256": "78587285e61e15b65959a74702d60bc6e3c46fa1fef5e06977d832a286ee0320",
+      "bytes": 1751
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/REPLAY_OFFLINE.py": {
+      "sha256": "4a932ff06f39c4a2b9729ed2aa8d6aecdfc52b2c7f617823ae6eed17732161ef",
+      "bytes": 523
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/SHA256.json": {
+      "sha256": "8ffd5b9f966540bc0246b7426c2f53e0bfe090373ca3aa9336fb71e8b695da4e",
+      "bytes": 4858
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/new_additions.patch": {
+      "sha256": "c7e345a5670952fa29d1b919743d1c8418fd3d223d7d1c8aa51d0019a4ec8041",
+      "bytes": 94698
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md": {
+      "sha256": "9dd70b269df401b155c146f660203e96c646d8533be1c7ecf94ce13d428e6d99",
+      "bytes": 1911
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py": {
+      "sha256": "af944de482956abbc91cc8c6d9fc4fa64bb9663faeec84a17b885d91bfb555b5",
+      "bytes": 696
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json": {
+      "sha256": "79504b9876905400da678f4ca79ada23db2d4ebeee9492cf04ade613287623d9",
+      "bytes": 451
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json": {
+      "sha256": "7a296662f1fcbcfadc894540f473ea3194ea9c30c94fdf0aefe8fee336a7bbde",
+      "bytes": 879
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json": {
+      "sha256": "6817bd0ef74cbf72193e2bfeef039910a175d5e80d3b0903e49c7c425a069235",
+      "bytes": 702
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json": {
+      "sha256": "92da7772f9726117fe6a833afea138c668f0d215a4fd9a91fdefde027b42f728",
+      "bytes": 255
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log": {
+      "sha256": "a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+      "bytes": 6798
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json": {
+      "sha256": "3c410d7322db08bb87c767255387a1356f5a5eb36b56a436fb62facf02d5605d",
+      "bytes": 7498
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log": {
+      "sha256": "002ce630e7202a3d056995b4717c0ba83a68a69a47616612d306b149081fe8c4",
+      "bytes": 5749
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py": {
+      "sha256": "aa6a6f83240cddae2f2e431e9ad7230beac0ca1619479ced7e23e79b4916f934",
+      "bytes": 3980
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py": {
+      "sha256": "bac6b586f42d019851310b7d556f1a3ade7430a12a930c4e3272e4bb5c5e181f",
+      "bytes": 2983
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json": {
+      "sha256": "5691eca0abf40f148f2be0d1df11ea7c1980af2a7539daa7a742b9a1b3beaddf",
+      "bytes": 1389
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py": {
+      "sha256": "68bb070c90c8c280b447ae060cd606a5240af3460c3eaaea3f232cd66189da7a",
+      "bytes": 2398
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json": {
+      "sha256": "8fff69ba6856aac5b95380635a0023dcfdf6630b28db81c66939d04a7126184f",
+      "bytes": 1310
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py": {
+      "sha256": "8a25e81936ef10346c41cdc9d9bea899f415cd6c55c847b604d94a4a48d01474",
+      "bytes": 5410
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json": {
+      "sha256": "1d26f77a186f979cfb5a00a2e171d95ee79e13c2957cf2cbc4dc176246c50e30",
+      "bytes": 3911
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log": {
+      "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+      "bytes": 2069
+    },
+    "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py": {
+      "sha256": "1aeccf3a58b9fa80139802c8d6a877764be0d9b4e9756e39945868d27386696e",
+      "bytes": 6904
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/README_RU.md": {
+      "sha256": "66997854ae302661d4b331f7935672b4b996cb84bbaf4d14ece74ecff2f2e4c6",
+      "bytes": 2395
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/SHA256.json": {
+      "sha256": "b739b29d8572018e9474cb4c2fad9696a73cee917ef85202de401e103b615364",
+      "bytes": 4283
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/additions.patch": {
+      "sha256": "66b884f2c3182950ebd131cb223fb850d1d5ec4a197c989f15379d83fe0b9d47",
+      "bytes": 90636
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md": {
+      "sha256": "258a9c6fe573305928f1a56267a8a95433f4fbba8bc4a9ee2e99be5899c8a6b0",
+      "bytes": 1689
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py": {
+      "sha256": "506e74a3f67a6acb5d3ce0d5f16275f2b6f219d99c22e223cb6413d2f2991cf1",
+      "bytes": 814
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json": {
+      "sha256": "eed31e464428a2a18b7a347b9c99061ffec1507878f9b22e7858009ed36cc440",
+      "bytes": 875
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md": {
+      "sha256": "d2f8b06eda5894b8cf478eb2f09c847cc03df2ddb07decc0a5d3f13c9832c158",
+      "bytes": 21363
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch": {
+      "sha256": "61f4649134a8601bc7efe8a724100edac69aa03430f4534aa47522d9883f9926",
+      "bytes": 656
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json": {
+      "sha256": "58d249e9576b107df72422d9e979697396104b68ce8522e80a25b42e1f271854",
+      "bytes": 881
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py": {
+      "sha256": "38d1374c859e8b0c40938290f3acc51431514aa3e7fa62b8468cb7a24262ac98",
+      "bytes": 1312
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json": {
+      "sha256": "931fe184de2af7818b6882c4dc2182105f98f74826c4938ebe9a566321741520",
+      "bytes": 9487
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py": {
+      "sha256": "3be1f13cf82d9abac4956fc8c619b88fa480b0b16547ea7e82b66a28e1b51195",
+      "bytes": 2868
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py": {
+      "sha256": "0fe3f87b317e25dfc7e110bcdb82eb11bb3e88b543ffa329975283ffa2643c8b",
+      "bytes": 2988
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json": {
+      "sha256": "16e585f445a67ce35c334424006b86646029f43c229f357efbf82e8fce271a82",
+      "bytes": 498
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json": {
+      "sha256": "468405c72fb7276a414a0a6c4a258f03141502bcf744b46a7f7aef3dbfc7c935",
+      "bytes": 3340
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log": {
+      "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+      "bytes": 827
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py": {
+      "sha256": "bc098b9074504e3b42fa48648cad5907a3821ecf6828ab438d8272f3a1e6fdf3",
+      "bytes": 1625
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py": {
+      "sha256": "2f46b84ec9667e148a4595d415c9c44c89969adb30e61d8c8ff346a0999b7219",
+      "bytes": 5095
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log": {
+      "sha256": "0d9aa4465c176e1ec8c731ec64235aca9c60f8a9a5411ac49448e639e545329e",
+      "bytes": 735
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py": {
+      "sha256": "c87ae709e5fff346f1feff97d2bf61f952e606bca35cd46e613989fc421b2f19",
+      "bytes": 1532
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log": {
+      "sha256": "54f31c823e7419746fef48bf77a54417e0f1e12dfba707b20171896cd664d7cc",
+      "bytes": 764
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py": {
+      "sha256": "4a1d9bedc386ac8267dd453aa0307b5d1fd1a49d49599edf1cf3b534b72bd374",
+      "bytes": 2338
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py": {
+      "sha256": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab",
+      "bytes": 1281
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json": {
+      "sha256": "76c34e605206e13a282382afc08499b49f7b6c320a5cfcb6dbcc35fd6bf0cfc7",
+      "bytes": 8234
+    },
+    "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py": {
+      "sha256": "2036deb3985ce204891a7f8a03dff38739e2a6a033cbf233a8f846d953b19c2c",
+      "bytes": 5733
+    },
+    "expanded/D0_two_syntheses_proof_package_2026-10-15/PROVENANCE.json": {
+      "sha256": "6476e7ac4eb2b816f000b90a9783c64cc27dcd47ff9afed2870031b95556525a",
+      "bytes": 1769
+    },
+    "expanded/D0_two_syntheses_proof_package_2026-10-15/README.md": {
+      "sha256": "36a867aeeb70fb0a3387cf0c731e07a963672c27553ce29fab41586270ae45ad",
+      "bytes": 1510
+    },
+    "expanded/D0_two_syntheses_proof_package_2026-10-15/SHA256.json": {
+      "sha256": "59de27c47e5997d58c0140c5742235b656178de860e6cdb265a02fc0f0cf2632",
+      "bytes": 1247
+    },
+    "expanded/D0_two_syntheses_proof_package_2026-10-15/inputs/cold_start_audit_response.txt": {
+      "sha256": "ddd974f2f00688aa577558e4636ed30eae6dc46a5e0b519f5a8c1f77186c1560",
+      "bytes": 37928
+    },
+    "expanded/D0_two_syntheses_proof_package_2026-10-15/new_identities.py": {
+      "sha256": "55cd845e09d62147138b3faf04506895ec7bad75ac1f75a4c528e047dec964bb",
+      "bytes": 10098
+    },
+    "expanded/D0_two_syntheses_proof_package_2026-10-15/results.json": {
+      "sha256": "2dd9ab48310264a452c2e951cad7d796ae914c62a5e46abc7b1ca27d97081a32",
+      "bytes": 6553
+    },
+    "expanded/D0_two_syntheses_proof_package_2026-10-15/run.log": {
+      "sha256": "65210db321e4126c7df6d0591875f5b203cdb1e881a92c877452ccb79500ac6f",
+      "bytes": 6554
+    },
+    "previous_strategy/02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/STRATEGY_AUDIT_ORIGINAL_RU.md": {
+      "sha256": "d258c771a2a3a0939e4203c3018bf651309e6b36bb4cdaa130cb5ab8b4ad61ff",
+      "bytes": 23775
+    }
+  },
+  "occurrences": [
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/EXPENSIVE_AI_BRIEF_RU.md",
+      "published": "original/EXPENSIVE_AI_BRIEF_RU.md",
+      "sha256": "396f5b51b35579be1e2457c4121d3b29bd5265246bd5112ed4aca0e670b1867c",
+      "bytes": 27763
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/MANIFEST.json",
+      "published": "original/MANIFEST.json",
+      "sha256": "9b39f499a60fa8b1271d4a16f1e19089dc0747386322ab997e86721e830ea18a",
+      "bytes": 2201
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/README.md",
+      "published": "original/README.md",
+      "sha256": "3218a1c5e0bd41a0146fd17114f9a2b5e3a6862522cfe22a7716d44ba5ad1a16",
+      "bytes": 1107
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/SYNTHESIS_RU.md",
+      "published": "original/SYNTHESIS_RU.md",
+      "sha256": "4f57d080dbd52e52961427d8c89c6f4b5a9db8788c17de576f2bfd48c400c5b4",
+      "bytes": 25794
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/VALIDATION.json",
+      "published": "original/VALIDATION.json",
+      "sha256": "dfce8197321b5881cfdbbda63ff6b6cb468e2576923a842d0d0ed80c2fcff5de",
+      "bytes": 1338
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/check_heat_window.py",
+      "published": "original/check_heat_window.py",
+      "sha256": "0c6e785de2454c72862ff96832a03d921edd69beda8cdc070d0b42f339bd4d25",
+      "bytes": 1176
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/check_mutations.py",
+      "published": "original/check_mutations.py",
+      "sha256": "5ae10c73579273a15009316d48a61d5c894e151953044df3c83a1e89e0a1495c",
+      "bytes": 1229
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/check_record_2jet.py",
+      "published": "original/check_record_2jet.py",
+      "sha256": "2b99efc7c09df0aad2b3c8df25600d423582d203031c19c98af71d293931c3a3",
+      "bytes": 4223
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/exact_result.json",
+      "published": "original/exact_result.json",
+      "sha256": "7a116160367984995b9bf9ed6631fa58bf432a135ea6b9e679fbafde11b1ac2a",
+      "bytes": 1184
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/exact_result_optimized.json",
+      "published": "original/exact_result.json",
+      "sha256": "7a116160367984995b9bf9ed6631fa58bf432a135ea6b9e679fbafde11b1ac2a",
+      "bytes": 1184
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/heat_diagnostic.json",
+      "published": "original/heat_diagnostic.json",
+      "sha256": "7e86fae146d36fb7c24deed63761806eddb20f628669a0493f2c1599a205775c",
+      "bytes": 957
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/heat_diagnostic_optimized.json",
+      "published": "original/heat_diagnostic.json",
+      "sha256": "7e86fae146d36fb7c24deed63761806eddb20f628669a0493f2c1599a205775c",
+      "bytes": 957
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_deep_audit_2026-10-15(1).md",
+      "published": "original/inputs/D0_deep_audit_2026-10-15(1).md",
+      "sha256": "466e7421dddb86675154ffbfb6c9c08ac6b6d50a1146dc58441d37b479784c27",
+      "bytes": 22013
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_joint_lattice_ward_resonance_result_2026-10-15.md",
+      "published": "original/inputs/D0_joint_lattice_ward_resonance_result_2026-10-15.md",
+      "sha256": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+      "bytes": 22425
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_otobrazhenie_pole_pribor.html",
+      "published": "original/inputs/D0_otobrazhenie_pole_pribor.html",
+      "sha256": "95bfe3c82f74f8bee9b90f78e02d4d5e7a2ba41a52d418e9016844a5cccc1222",
+      "bytes": 51164
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_to_GR_2026-10-15.md",
+      "published": "original/inputs/D0_resonant_synthesis_to_GR_2026-10-15.md",
+      "sha256": "3b214280de423dcf48da85c9ec8a816c9e35deca443f0a153ebab0ca621e4ec3",
+      "bytes": 29529
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_sintez_bashnya_phi_predel.html",
+      "published": "original/inputs/D0_sintez_bashnya_phi_predel.html",
+      "sha256": "cc327e05d246a86847248c690469aae47cab3c27f68d49c9c9d4500dc1f3a84b",
+      "bytes": 63787
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_to_GR_2026-10-15.md",
+      "published": "original/inputs/D0_two_syntheses_to_GR_2026-10-15.md",
+      "sha256": "105db0d8f45b88904e25cbb5b798a0afe86dcb363886dc59c935688484c1efb0",
+      "bytes": 50945
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/mutation_result.json",
+      "published": "original/mutation_result.json",
+      "sha256": "d2f20ed9fbace4cb506de667bb560654ef658248f11876cc402ebcbcd8574210",
+      "bytes": 370
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_resonant_synthesis_to_GR_2026-10-15.md",
+      "published": "original/inputs/D0_resonant_synthesis_to_GR_2026-10-15.md",
+      "sha256": "3b214280de423dcf48da85c9ec8a816c9e35deca443f0a153ebab0ca621e4ec3",
+      "bytes": 29529
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/replay.log",
+      "published": "expanded/D0_resonant_synthesis_proof_package_2026-10-15/replay.log",
+      "sha256": "149b3359fde1ee30db400c5b4d24284e8fcf149adf9e327d3d28e5294d105822",
+      "bytes": 1383
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/synthesis_check.py",
+      "published": "expanded/D0_resonant_synthesis_proof_package_2026-10-15/synthesis_check.py",
+      "sha256": "aaa1d3890377128de7fcdffe3ae68afd2c092a49a222f6b0f239284a541dfbbe",
+      "bytes": 9703
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/validation.json",
+      "published": "expanded/D0_resonant_synthesis_proof_package_2026-10-15/validation.json",
+      "sha256": "a9b37737c4b101eb0c84fa224eb98f8d922774ee606a046729651d549be9277c",
+      "bytes": 1232
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/IMPORT_INTO_310.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/IMPORT_INTO_310.py",
+      "sha256": "7e8a1180eb39da2cf7891d321330f63764ff7137409f52928a0e5b0216a74a3a",
+      "bytes": 3082
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/restore.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/restore.py",
+      "sha256": "15f32ae4cb8552dd66a9bc360cc3b4bf727bc1e438d7930a69043c892b73cd5f",
+      "bytes": 3488
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PATCH_VALIDATION.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/PATCH_VALIDATION.json",
+      "sha256": "7e1dcb7afba7cc59778828f40e9c478ee21660a621e51371c8f436b5a3d722f5",
+      "bytes": 271
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/README_RU.md",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/README_RU.md",
+      "sha256": "78587285e61e15b65959a74702d60bc6e3c46fa1fef5e06977d832a286ee0320",
+      "bytes": 1751
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/REPLAY_OFFLINE.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/REPLAY_OFFLINE.py",
+      "sha256": "4a932ff06f39c4a2b9729ed2aa8d6aecdfc52b2c7f617823ae6eed17732161ef",
+      "bytes": 523
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/SHA256.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/SHA256.json",
+      "sha256": "8ffd5b9f966540bc0246b7426c2f53e0bfe090373ca3aa9336fb71e8b695da4e",
+      "bytes": 4858
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/new_additions.patch",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/new_additions.patch",
+      "sha256": "c7e345a5670952fa29d1b919743d1c8418fd3d223d7d1c8aa51d0019a4ec8041",
+      "bytes": 94698
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md",
+      "sha256": "9dd70b269df401b155c146f660203e96c646d8533be1c7ecf94ce13d428e6d99",
+      "bytes": 1911
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py",
+      "sha256": "af944de482956abbc91cc8c6d9fc4fa64bb9663faeec84a17b885d91bfb555b5",
+      "bytes": 696
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json",
+      "sha256": "79504b9876905400da678f4ca79ada23db2d4ebeee9492cf04ade613287623d9",
+      "bytes": 451
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json",
+      "sha256": "7a296662f1fcbcfadc894540f473ea3194ea9c30c94fdf0aefe8fee336a7bbde",
+      "bytes": 879
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json",
+      "sha256": "6817bd0ef74cbf72193e2bfeef039910a175d5e80d3b0903e49c7c425a069235",
+      "bytes": 702
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/RESULT_RU.md",
+      "published": "original/inputs/D0_joint_lattice_ward_resonance_result_2026-10-15.md",
+      "sha256": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+      "bytes": 22425
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json",
+      "sha256": "92da7772f9726117fe6a833afea138c668f0d215a4fd9a91fdefde027b42f728",
+      "bytes": 255
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "sha256": "a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+      "bytes": 6798
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json",
+      "sha256": "3c410d7322db08bb87c767255387a1356f5a5eb36b56a436fb62facf02d5605d",
+      "bytes": 7498
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log",
+      "sha256": "002ce630e7202a3d056995b4717c0ba83a68a69a47616612d306b149081fe8c4",
+      "bytes": 5749
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py",
+      "sha256": "aa6a6f83240cddae2f2e431e9ad7230beac0ca1619479ced7e23e79b4916f934",
+      "bytes": 3980
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py",
+      "sha256": "bac6b586f42d019851310b7d556f1a3ade7430a12a930c4e3272e4bb5c5e181f",
+      "bytes": 2983
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json",
+      "sha256": "5691eca0abf40f148f2be0d1df11ea7c1980af2a7539daa7a742b9a1b3beaddf",
+      "bytes": 1389
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py",
+      "sha256": "68bb070c90c8c280b447ae060cd606a5240af3460c3eaaea3f232cd66189da7a",
+      "bytes": 2398
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json",
+      "sha256": "8fff69ba6856aac5b95380635a0023dcfdf6630b28db81c66939d04a7126184f",
+      "bytes": 1310
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py",
+      "sha256": "8a25e81936ef10346c41cdc9d9bea899f415cd6c55c847b604d94a4a48d01474",
+      "bytes": 5410
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json",
+      "sha256": "1d26f77a186f979cfb5a00a2e171d95ee79e13c2957cf2cbc4dc176246c50e30",
+      "bytes": 3911
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "sha256": "a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+      "bytes": 6798
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+      "bytes": 2069
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py",
+      "sha256": "1aeccf3a58b9fa80139802c8d6a877764be0d9b4e9756e39945868d27386696e",
+      "bytes": 6904
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/README_RU.md",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/README_RU.md",
+      "sha256": "66997854ae302661d4b331f7935672b4b996cb84bbaf4d14ece74ecff2f2e4c6",
+      "bytes": 2395
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/SHA256.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/SHA256.json",
+      "sha256": "b739b29d8572018e9474cb4c2fad9696a73cee917ef85202de401e103b615364",
+      "bytes": 4283
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/additions.patch",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/additions.patch",
+      "sha256": "66b884f2c3182950ebd131cb223fb850d1d5ec4a197c989f15379d83fe0b9d47",
+      "bytes": 90636
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md",
+      "sha256": "258a9c6fe573305928f1a56267a8a95433f4fbba8bc4a9ee2e99be5899c8a6b0",
+      "bytes": 1689
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py",
+      "sha256": "506e74a3f67a6acb5d3ce0d5f16275f2b6f219d99c22e223cb6413d2f2991cf1",
+      "bytes": 814
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json",
+      "sha256": "eed31e464428a2a18b7a347b9c99061ffec1507878f9b22e7858009ed36cc440",
+      "bytes": 875
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md",
+      "sha256": "d2f8b06eda5894b8cf478eb2f09c847cc03df2ddb07decc0a5d3f13c9832c158",
+      "bytes": 21363
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch",
+      "sha256": "61f4649134a8601bc7efe8a724100edac69aa03430f4534aa47522d9883f9926",
+      "bytes": 656
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json",
+      "sha256": "58d249e9576b107df72422d9e979697396104b68ce8522e80a25b42e1f271854",
+      "bytes": 881
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py",
+      "sha256": "38d1374c859e8b0c40938290f3acc51431514aa3e7fa62b8468cb7a24262ac98",
+      "bytes": 1312
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json",
+      "sha256": "931fe184de2af7818b6882c4dc2182105f98f74826c4938ebe9a566321741520",
+      "bytes": 9487
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py",
+      "sha256": "3be1f13cf82d9abac4956fc8c619b88fa480b0b16547ea7e82b66a28e1b51195",
+      "bytes": 2868
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py",
+      "sha256": "0fe3f87b317e25dfc7e110bcdb82eb11bb3e88b543ffa329975283ffa2643c8b",
+      "bytes": 2988
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json",
+      "sha256": "16e585f445a67ce35c334424006b86646029f43c229f357efbf82e8fce271a82",
+      "bytes": 498
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json",
+      "sha256": "468405c72fb7276a414a0a6c4a258f03141502bcf744b46a7f7aef3dbfc7c935",
+      "bytes": 3340
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+      "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+      "bytes": 827
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py",
+      "sha256": "bc098b9074504e3b42fa48648cad5907a3821ecf6828ab438d8272f3a1e6fdf3",
+      "bytes": 1625
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile_receipt.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+      "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+      "bytes": 827
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py",
+      "sha256": "2f46b84ec9667e148a4595d415c9c44c89969adb30e61d8c8ff346a0999b7219",
+      "bytes": 5095
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log",
+      "sha256": "0d9aa4465c176e1ec8c731ec64235aca9c60f8a9a5411ac49448e639e545329e",
+      "bytes": 735
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py",
+      "sha256": "c87ae709e5fff346f1feff97d2bf61f952e606bca35cd46e613989fc421b2f19",
+      "bytes": 1532
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+      "bytes": 2069
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log",
+      "sha256": "54f31c823e7419746fef48bf77a54417e0f1e12dfba707b20171896cd664d7cc",
+      "bytes": 764
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py",
+      "sha256": "4a1d9bedc386ac8267dd453aa0307b5d1fd1a49d49599edf1cf3b534b72bd374",
+      "bytes": 2338
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+      "bytes": 2069
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py",
+      "sha256": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab",
+      "bytes": 1281
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json",
+      "sha256": "76c34e605206e13a282382afc08499b49f7b6c320a5cfcb6dbcc35fd6bf0cfc7",
+      "bytes": 8234
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py",
+      "sha256": "2036deb3985ce204891a7f8a03dff38739e2a6a033cbf233a8f846d953b19c2c",
+      "bytes": 5733
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/PROVENANCE.json",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/PROVENANCE.json",
+      "sha256": "6476e7ac4eb2b816f000b90a9783c64cc27dcd47ff9afed2870031b95556525a",
+      "bytes": 1769
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/README.md",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/README.md",
+      "sha256": "36a867aeeb70fb0a3387cf0c731e07a963672c27553ce29fab41586270ae45ad",
+      "bytes": 1510
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/SHA256.json",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/SHA256.json",
+      "sha256": "59de27c47e5997d58c0140c5742235b656178de860e6cdb265a02fc0f0cf2632",
+      "bytes": 1247
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/SYNTHESIS_RU.md",
+      "published": "original/inputs/D0_two_syntheses_to_GR_2026-10-15.md",
+      "sha256": "105db0d8f45b88904e25cbb5b798a0afe86dcb363886dc59c935688484c1efb0",
+      "bytes": 50945
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/cold_start_audit.md",
+      "published": "original/inputs/D0_deep_audit_2026-10-15(1).md",
+      "sha256": "466e7421dddb86675154ffbfb6c9c08ac6b6d50a1146dc58441d37b479784c27",
+      "bytes": 22013
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/cold_start_audit_response.txt",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/inputs/cold_start_audit_response.txt",
+      "sha256": "ddd974f2f00688aa577558e4636ed30eae6dc46a5e0b519f5a8c1f77186c1560",
+      "bytes": 37928
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_joint_ward_result.md",
+      "published": "original/inputs/D0_joint_lattice_ward_resonance_result_2026-10-15.md",
+      "sha256": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+      "bytes": 22425
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_synthesis.md",
+      "published": "original/inputs/D0_resonant_synthesis_to_GR_2026-10-15.md",
+      "sha256": "3b214280de423dcf48da85c9ec8a816c9e35deca443f0a153ebab0ca621e4ec3",
+      "bytes": 29529
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/new_identities.py",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/new_identities.py",
+      "sha256": "55cd845e09d62147138b3faf04506895ec7bad75ac1f75a4c528e047dec964bb",
+      "bytes": 10098
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/results.json",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/results.json",
+      "sha256": "2dd9ab48310264a452c2e951cad7d796ae914c62a5e46abc7b1ca27d97081a32",
+      "bytes": 6553
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/results_optimized.json",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/results.json",
+      "sha256": "2dd9ab48310264a452c2e951cad7d796ae914c62a5e46abc7b1ca27d97081a32",
+      "bytes": 6553
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/run.log",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/run.log",
+      "sha256": "65210db321e4126c7df6d0591875f5b203cdb1e881a92c877452ccb79500ac6f",
+      "bytes": 6554
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/run_optimized.log",
+      "published": "expanded/D0_two_syntheses_proof_package_2026-10-15/run.log",
+      "sha256": "65210db321e4126c7df6d0591875f5b203cdb1e881a92c877452ccb79500ac6f",
+      "bytes": 6554
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_resonant_synthesis_to_GR_2026-10-15.md",
+      "published": "original/inputs/D0_resonant_synthesis_to_GR_2026-10-15.md",
+      "sha256": "3b214280de423dcf48da85c9ec8a816c9e35deca443f0a153ebab0ca621e4ec3",
+      "bytes": 29529
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/replay.log",
+      "published": "expanded/D0_resonant_synthesis_proof_package_2026-10-15/replay.log",
+      "sha256": "149b3359fde1ee30db400c5b4d24284e8fcf149adf9e327d3d28e5294d105822",
+      "bytes": 1383
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/synthesis_check.py",
+      "published": "expanded/D0_resonant_synthesis_proof_package_2026-10-15/synthesis_check.py",
+      "sha256": "aaa1d3890377128de7fcdffe3ae68afd2c092a49a222f6b0f239284a541dfbbe",
+      "bytes": 9703
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/validation.json",
+      "published": "expanded/D0_resonant_synthesis_proof_package_2026-10-15/validation.json",
+      "sha256": "a9b37737c4b101eb0c84fa224eb98f8d922774ee606a046729651d549be9277c",
+      "bytes": 1232
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/IMPORT_INTO_310.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/IMPORT_INTO_310.py",
+      "sha256": "7e8a1180eb39da2cf7891d321330f63764ff7137409f52928a0e5b0216a74a3a",
+      "bytes": 3082
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/restore.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/restore.py",
+      "sha256": "15f32ae4cb8552dd66a9bc360cc3b4bf727bc1e438d7930a69043c892b73cd5f",
+      "bytes": 3488
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PATCH_VALIDATION.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/PATCH_VALIDATION.json",
+      "sha256": "7e1dcb7afba7cc59778828f40e9c478ee21660a621e51371c8f436b5a3d722f5",
+      "bytes": 271
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/README_RU.md",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/README_RU.md",
+      "sha256": "78587285e61e15b65959a74702d60bc6e3c46fa1fef5e06977d832a286ee0320",
+      "bytes": 1751
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/REPLAY_OFFLINE.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/REPLAY_OFFLINE.py",
+      "sha256": "4a932ff06f39c4a2b9729ed2aa8d6aecdfc52b2c7f617823ae6eed17732161ef",
+      "bytes": 523
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/SHA256.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/SHA256.json",
+      "sha256": "8ffd5b9f966540bc0246b7426c2f53e0bfe090373ca3aa9336fb71e8b695da4e",
+      "bytes": 4858
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/new_additions.patch",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/new_additions.patch",
+      "sha256": "c7e345a5670952fa29d1b919743d1c8418fd3d223d7d1c8aa51d0019a4ec8041",
+      "bytes": 94698
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md",
+      "sha256": "9dd70b269df401b155c146f660203e96c646d8533be1c7ecf94ce13d428e6d99",
+      "bytes": 1911
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py",
+      "sha256": "af944de482956abbc91cc8c6d9fc4fa64bb9663faeec84a17b885d91bfb555b5",
+      "bytes": 696
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json",
+      "sha256": "79504b9876905400da678f4ca79ada23db2d4ebeee9492cf04ade613287623d9",
+      "bytes": 451
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json",
+      "sha256": "7a296662f1fcbcfadc894540f473ea3194ea9c30c94fdf0aefe8fee336a7bbde",
+      "bytes": 879
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json",
+      "sha256": "6817bd0ef74cbf72193e2bfeef039910a175d5e80d3b0903e49c7c425a069235",
+      "bytes": 702
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/RESULT_RU.md",
+      "published": "original/inputs/D0_joint_lattice_ward_resonance_result_2026-10-15.md",
+      "sha256": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+      "bytes": 22425
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json",
+      "sha256": "92da7772f9726117fe6a833afea138c668f0d215a4fd9a91fdefde027b42f728",
+      "bytes": 255
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "sha256": "a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+      "bytes": 6798
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json",
+      "sha256": "3c410d7322db08bb87c767255387a1356f5a5eb36b56a436fb62facf02d5605d",
+      "bytes": 7498
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log",
+      "sha256": "002ce630e7202a3d056995b4717c0ba83a68a69a47616612d306b149081fe8c4",
+      "bytes": 5749
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py",
+      "sha256": "aa6a6f83240cddae2f2e431e9ad7230beac0ca1619479ced7e23e79b4916f934",
+      "bytes": 3980
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py",
+      "sha256": "bac6b586f42d019851310b7d556f1a3ade7430a12a930c4e3272e4bb5c5e181f",
+      "bytes": 2983
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json",
+      "sha256": "5691eca0abf40f148f2be0d1df11ea7c1980af2a7539daa7a742b9a1b3beaddf",
+      "bytes": 1389
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py",
+      "sha256": "68bb070c90c8c280b447ae060cd606a5240af3460c3eaaea3f232cd66189da7a",
+      "bytes": 2398
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json",
+      "sha256": "8fff69ba6856aac5b95380635a0023dcfdf6630b28db81c66939d04a7126184f",
+      "bytes": 1310
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py",
+      "sha256": "8a25e81936ef10346c41cdc9d9bea899f415cd6c55c847b604d94a4a48d01474",
+      "bytes": 5410
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json",
+      "sha256": "1d26f77a186f979cfb5a00a2e171d95ee79e13c2957cf2cbc4dc176246c50e30",
+      "bytes": 3911
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "sha256": "a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+      "bytes": 6798
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+      "bytes": 2069
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py",
+      "sha256": "1aeccf3a58b9fa80139802c8d6a877764be0d9b4e9756e39945868d27386696e",
+      "bytes": 6904
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/README_RU.md",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/README_RU.md",
+      "sha256": "66997854ae302661d4b331f7935672b4b996cb84bbaf4d14ece74ecff2f2e4c6",
+      "bytes": 2395
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/SHA256.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/SHA256.json",
+      "sha256": "b739b29d8572018e9474cb4c2fad9696a73cee917ef85202de401e103b615364",
+      "bytes": 4283
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/additions.patch",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/additions.patch",
+      "sha256": "66b884f2c3182950ebd131cb223fb850d1d5ec4a197c989f15379d83fe0b9d47",
+      "bytes": 90636
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md",
+      "sha256": "258a9c6fe573305928f1a56267a8a95433f4fbba8bc4a9ee2e99be5899c8a6b0",
+      "bytes": 1689
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py",
+      "sha256": "506e74a3f67a6acb5d3ce0d5f16275f2b6f219d99c22e223cb6413d2f2991cf1",
+      "bytes": 814
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json",
+      "sha256": "eed31e464428a2a18b7a347b9c99061ffec1507878f9b22e7858009ed36cc440",
+      "bytes": 875
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md",
+      "sha256": "d2f8b06eda5894b8cf478eb2f09c847cc03df2ddb07decc0a5d3f13c9832c158",
+      "bytes": 21363
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch",
+      "sha256": "61f4649134a8601bc7efe8a724100edac69aa03430f4534aa47522d9883f9926",
+      "bytes": 656
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json",
+      "sha256": "58d249e9576b107df72422d9e979697396104b68ce8522e80a25b42e1f271854",
+      "bytes": 881
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py",
+      "sha256": "38d1374c859e8b0c40938290f3acc51431514aa3e7fa62b8468cb7a24262ac98",
+      "bytes": 1312
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json",
+      "sha256": "931fe184de2af7818b6882c4dc2182105f98f74826c4938ebe9a566321741520",
+      "bytes": 9487
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py",
+      "sha256": "3be1f13cf82d9abac4956fc8c619b88fa480b0b16547ea7e82b66a28e1b51195",
+      "bytes": 2868
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py",
+      "sha256": "0fe3f87b317e25dfc7e110bcdb82eb11bb3e88b543ffa329975283ffa2643c8b",
+      "bytes": 2988
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json",
+      "sha256": "16e585f445a67ce35c334424006b86646029f43c229f357efbf82e8fce271a82",
+      "bytes": 498
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json",
+      "sha256": "468405c72fb7276a414a0a6c4a258f03141502bcf744b46a7f7aef3dbfc7c935",
+      "bytes": 3340
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+      "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+      "bytes": 827
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py",
+      "sha256": "bc098b9074504e3b42fa48648cad5907a3821ecf6828ab438d8272f3a1e6fdf3",
+      "bytes": 1625
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile_receipt.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+      "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+      "bytes": 827
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py",
+      "sha256": "2f46b84ec9667e148a4595d415c9c44c89969adb30e61d8c8ff346a0999b7219",
+      "bytes": 5095
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log",
+      "sha256": "0d9aa4465c176e1ec8c731ec64235aca9c60f8a9a5411ac49448e639e545329e",
+      "bytes": 735
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py",
+      "sha256": "c87ae709e5fff346f1feff97d2bf61f952e606bca35cd46e613989fc421b2f19",
+      "bytes": 1532
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+      "bytes": 2069
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log",
+      "sha256": "54f31c823e7419746fef48bf77a54417e0f1e12dfba707b20171896cd664d7cc",
+      "bytes": 764
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py",
+      "sha256": "4a1d9bedc386ac8267dd453aa0307b5d1fd1a49d49599edf1cf3b534b72bd374",
+      "bytes": 2338
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+      "bytes": 2069
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py",
+      "sha256": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab",
+      "bytes": 1281
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json",
+      "sha256": "76c34e605206e13a282382afc08499b49f7b6c320a5cfcb6dbcc35fd6bf0cfc7",
+      "bytes": 8234
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip!/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py",
+      "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py",
+      "sha256": "2036deb3985ce204891a7f8a03dff38739e2a6a033cbf233a8f846d953b19c2c",
+      "bytes": 5733
+    }
+  ],
+  "archives": {
+    "fe2a0519250980de4990f2019c1b8a82cdf0471844942d3063cd2d048793cec6": {
+      "bytes": 168069,
+      "tree": "expanded/D0_resonant_synthesis_proof_package_2026-10-15",
+      "sources": [
+        "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip",
+        "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip"
+      ]
+    },
+    "441c5c503737c375600cd119ef5bf0d0c343b0445d425b1e755acd99ddd7b47f": {
+      "bytes": 158218,
+      "tree": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15",
+      "sources": [
+        "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip",
+        "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip"
+      ]
+    },
+    "9e7f840e4eddc8291f282e900b5d60dca9efa93c048baa46589aecca1665940c": {
+      "bytes": 70008,
+      "tree": "expanded/PRESERVED_INPUT_full4d_exact_sheet",
+      "sources": [
+        "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip",
+        "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/PRESERVED_INPUT_full4d_exact_sheet.zip"
+      ]
+    },
+    "4df85b9530d9c9264d3bbbbd9a3865ec6b27e2f19f1dda660709bf94a7f037f7": {
+      "bytes": 234977,
+      "tree": "expanded/D0_two_syntheses_proof_package_2026-10-15",
+      "sources": [
+        "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip"
+      ]
+    }
+  },
+  "binary_occurrences": [
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.00",
+      "sha256": "faafbd0043100961fd3d8cdfae6a591c988bab7c1edee757a09416515da6fb8e",
+      "bytes": 6000,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.01",
+      "sha256": "eb5ba66ad85cf27a998618dbefbda6daf4aba463c360e32cac8ce154a2ab18ba",
+      "bytes": 6000,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.02",
+      "sha256": "2251d86b5e79476fdb755b219a52630f5c9c387daf605cb759bc2d70599ee46e",
+      "bytes": 6000,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.03",
+      "sha256": "47d2f824815764bc4e0a6672b8e8eaa704be8278217897c25a220ec95b61bc8c",
+      "bytes": 6000,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.04",
+      "sha256": "3cfad399ac8fe849f779d3d911d42d28e0419cd88de9e6742ed7adfd8c502ae3",
+      "bytes": 452,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.00",
+      "sha256": "faafbd0043100961fd3d8cdfae6a591c988bab7c1edee757a09416515da6fb8e",
+      "bytes": 6000,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.01",
+      "sha256": "eb5ba66ad85cf27a998618dbefbda6daf4aba463c360e32cac8ce154a2ab18ba",
+      "bytes": 6000,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.02",
+      "sha256": "2251d86b5e79476fdb755b219a52630f5c9c387daf605cb759bc2d70599ee46e",
+      "bytes": 6000,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.03",
+      "sha256": "47d2f824815764bc4e0a6672b8e8eaa704be8278217897c25a220ec95b61bc8c",
+      "bytes": 6000,
+      "reason": "compressed duplicate of published UTF-8 files"
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15/payload.xz.04",
+      "sha256": "3cfad399ac8fe849f779d3d911d42d28e0419cd88de9e6742ed7adfd8c502ae3",
+      "bytes": 452,
+      "reason": "compressed duplicate of published UTF-8 files"
+    }
+  ],
+  "compressed_capsules": [
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15",
+      "packed_sha256": "3f71d2cfdc56ef5569bd54f6d84fc06f66e3e168ccfe2078a8bfc24d707cf2d0",
+      "decoded_json_sha256": "fa6bf3cf390f2d39a3d21c4e2a0598077d8b0cefc5ea8cce410688f7e1fd87b5",
+      "decoded_json_bytes": 84980,
+      "files": [
+        {
+          "source": "02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md",
+          "sha256": "258a9c6fe573305928f1a56267a8a95433f4fbba8bc4a9ee2e99be5899c8a6b0",
+          "bytes": 1689
+        },
+        {
+          "source": "02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py",
+          "sha256": "506e74a3f67a6acb5d3ce0d5f16275f2b6f219d99c22e223cb6413d2f2991cf1",
+          "bytes": 814
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json",
+          "sha256": "eed31e464428a2a18b7a347b9c99061ffec1507878f9b22e7858009ed36cc440",
+          "bytes": 875
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md",
+          "sha256": "d2f8b06eda5894b8cf478eb2f09c847cc03df2ddb07decc0a5d3f13c9832c158",
+          "bytes": 21363
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch",
+          "sha256": "61f4649134a8601bc7efe8a724100edac69aa03430f4534aa47522d9883f9926",
+          "bytes": 656
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json",
+          "sha256": "58d249e9576b107df72422d9e979697396104b68ce8522e80a25b42e1f271854",
+          "bytes": 881
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py",
+          "sha256": "38d1374c859e8b0c40938290f3acc51431514aa3e7fa62b8468cb7a24262ac98",
+          "bytes": 1312
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json",
+          "sha256": "931fe184de2af7818b6882c4dc2182105f98f74826c4938ebe9a566321741520",
+          "bytes": 9487
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py",
+          "sha256": "3be1f13cf82d9abac4956fc8c619b88fa480b0b16547ea7e82b66a28e1b51195",
+          "bytes": 2868
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py",
+          "sha256": "0fe3f87b317e25dfc7e110bcdb82eb11bb3e88b543ffa329975283ffa2643c8b",
+          "bytes": 2988
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json",
+          "sha256": "16e585f445a67ce35c334424006b86646029f43c229f357efbf82e8fce271a82",
+          "bytes": 498
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json",
+          "sha256": "468405c72fb7276a414a0a6c4a258f03141502bcf744b46a7f7aef3dbfc7c935",
+          "bytes": 3340
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+          "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+          "bytes": 827
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py",
+          "sha256": "bc098b9074504e3b42fa48648cad5907a3821ecf6828ab438d8272f3a1e6fdf3",
+          "bytes": 1625
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile_receipt.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+          "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+          "bytes": 827
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py",
+          "sha256": "2f46b84ec9667e148a4595d415c9c44c89969adb30e61d8c8ff346a0999b7219",
+          "bytes": 5095
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log",
+          "sha256": "0d9aa4465c176e1ec8c731ec64235aca9c60f8a9a5411ac49448e639e545329e",
+          "bytes": 735
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py",
+          "sha256": "c87ae709e5fff346f1feff97d2bf61f952e606bca35cd46e613989fc421b2f19",
+          "bytes": 1532
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized.log",
+          "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+          "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+          "bytes": 2069
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log",
+          "sha256": "54f31c823e7419746fef48bf77a54417e0f1e12dfba707b20171896cd664d7cc",
+          "bytes": 764
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py",
+          "sha256": "4a1d9bedc386ac8267dd453aa0307b5d1fd1a49d49599edf1cf3b534b72bd374",
+          "bytes": 2338
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/replay.log",
+          "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+          "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+          "bytes": 2069
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py",
+          "sha256": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab",
+          "bytes": 1281
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json",
+          "sha256": "76c34e605206e13a282382afc08499b49f7b6c320a5cfcb6dbcc35fd6bf0cfc7",
+          "bytes": 8234
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py",
+          "sha256": "2036deb3985ce204891a7f8a03dff38739e2a6a033cbf233a8f846d953b19c2c",
+          "bytes": 5733
+        }
+      ]
+    },
+    {
+      "source": "D0_source_faithful_record_and_expensive_task_2026-10-15.zip!/inputs/D0_two_syntheses_proof_package_2026-10-15.zip!/inputs/prior_resonant_proof_package.zip!/D0_joint_ward_resonance_git_intake_2026-10-15.zip!/OFFLINE_DEPENDENCY/02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15",
+      "packed_sha256": "3f71d2cfdc56ef5569bd54f6d84fc06f66e3e168ccfe2078a8bfc24d707cf2d0",
+      "decoded_json_sha256": "fa6bf3cf390f2d39a3d21c4e2a0598077d8b0cefc5ea8cce410688f7e1fd87b5",
+      "decoded_json_bytes": 84980,
+      "files": [
+        {
+          "source": "02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md",
+          "sha256": "258a9c6fe573305928f1a56267a8a95433f4fbba8bc4a9ee2e99be5899c8a6b0",
+          "bytes": 1689
+        },
+        {
+          "source": "02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py",
+          "sha256": "506e74a3f67a6acb5d3ce0d5f16275f2b6f219d99c22e223cb6413d2f2991cf1",
+          "bytes": 814
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json",
+          "sha256": "eed31e464428a2a18b7a347b9c99061ffec1507878f9b22e7858009ed36cc440",
+          "bytes": 875
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md",
+          "sha256": "d2f8b06eda5894b8cf478eb2f09c847cc03df2ddb07decc0a5d3f13c9832c158",
+          "bytes": 21363
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch",
+          "sha256": "61f4649134a8601bc7efe8a724100edac69aa03430f4534aa47522d9883f9926",
+          "bytes": 656
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json",
+          "sha256": "58d249e9576b107df72422d9e979697396104b68ce8522e80a25b42e1f271854",
+          "bytes": 881
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py",
+          "sha256": "38d1374c859e8b0c40938290f3acc51431514aa3e7fa62b8468cb7a24262ac98",
+          "bytes": 1312
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json",
+          "sha256": "931fe184de2af7818b6882c4dc2182105f98f74826c4938ebe9a566321741520",
+          "bytes": 9487
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py",
+          "sha256": "3be1f13cf82d9abac4956fc8c619b88fa480b0b16547ea7e82b66a28e1b51195",
+          "bytes": 2868
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py",
+          "sha256": "0fe3f87b317e25dfc7e110bcdb82eb11bb3e88b543ffa329975283ffa2643c8b",
+          "bytes": 2988
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json",
+          "sha256": "16e585f445a67ce35c334424006b86646029f43c229f357efbf82e8fce271a82",
+          "bytes": 498
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json",
+          "sha256": "468405c72fb7276a414a0a6c4a258f03141502bcf744b46a7f7aef3dbfc7c935",
+          "bytes": 3340
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+          "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+          "bytes": 827
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py",
+          "sha256": "bc098b9074504e3b42fa48648cad5907a3821ecf6828ab438d8272f3a1e6fdf3",
+          "bytes": 1625
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile_receipt.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log",
+          "sha256": "88e0186e73488e9fcbcc96c1ecdca11c17ae849b33a894c078c36a15c72b1f37",
+          "bytes": 827
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py",
+          "sha256": "2f46b84ec9667e148a4595d415c9c44c89969adb30e61d8c8ff346a0999b7219",
+          "bytes": 5095
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log",
+          "sha256": "0d9aa4465c176e1ec8c731ec64235aca9c60f8a9a5411ac49448e639e545329e",
+          "bytes": 735
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py",
+          "sha256": "c87ae709e5fff346f1feff97d2bf61f952e606bca35cd46e613989fc421b2f19",
+          "bytes": 1532
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized.log",
+          "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+          "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+          "bytes": 2069
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log",
+          "sha256": "54f31c823e7419746fef48bf77a54417e0f1e12dfba707b20171896cd664d7cc",
+          "bytes": 764
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py",
+          "sha256": "4a1d9bedc386ac8267dd453aa0307b5d1fd1a49d49599edf1cf3b534b72bd374",
+          "bytes": 2338
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/replay.log",
+          "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+          "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+          "bytes": 2069
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py",
+          "sha256": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab",
+          "bytes": 1281
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json",
+          "sha256": "76c34e605206e13a282382afc08499b49f7b6c320a5cfcb6dbcc35fd6bf0cfc7",
+          "bytes": 8234
+        },
+        {
+          "source": "02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py",
+          "published": "expanded/PRESERVED_INPUT_full4d_exact_sheet/repo/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py",
+          "sha256": "2036deb3985ce204891a7f8a03dff38739e2a6a033cbf233a8f846d953b19c2c",
+          "bytes": 5733
+        }
+      ]
+    }
+  ],
+  "previous_strategy_capsule": [
+    {
+      "source": "02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md",
+      "sha256": "9dd70b269df401b155c146f660203e96c646d8533be1c7ecf94ce13d428e6d99",
+      "bytes": 1911
+    },
+    {
+      "source": "02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py",
+      "sha256": "af944de482956abbc91cc8c6d9fc4fa64bb9663faeec84a17b885d91bfb555b5",
+      "bytes": 696
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json",
+      "sha256": "79504b9876905400da678f4ca79ada23db2d4ebeee9492cf04ade613287623d9",
+      "bytes": 451
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json",
+      "sha256": "7a296662f1fcbcfadc894540f473ea3194ea9c30c94fdf0aefe8fee336a7bbde",
+      "bytes": 879
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json",
+      "sha256": "6817bd0ef74cbf72193e2bfeef039910a175d5e80d3b0903e49c7c425a069235",
+      "bytes": 702
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/RESULT_RU.md",
+      "published": "original/inputs/D0_joint_lattice_ward_resonance_result_2026-10-15.md",
+      "sha256": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+      "bytes": 22425
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json",
+      "sha256": "92da7772f9726117fe6a833afea138c668f0d215a4fd9a91fdefde027b42f728",
+      "bytes": 255
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "sha256": "a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+      "bytes": 6798
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json",
+      "sha256": "3c410d7322db08bb87c767255387a1356f5a5eb36b56a436fb62facf02d5605d",
+      "bytes": 7498
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log",
+      "sha256": "002ce630e7202a3d056995b4717c0ba83a68a69a47616612d306b149081fe8c4",
+      "bytes": 5749
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py",
+      "sha256": "aa6a6f83240cddae2f2e431e9ad7230beac0ca1619479ced7e23e79b4916f934",
+      "bytes": 3980
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py",
+      "sha256": "bac6b586f42d019851310b7d556f1a3ade7430a12a930c4e3272e4bb5c5e181f",
+      "bytes": 2983
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json",
+      "sha256": "5691eca0abf40f148f2be0d1df11ea7c1980af2a7539daa7a742b9a1b3beaddf",
+      "bytes": 1389
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py",
+      "sha256": "68bb070c90c8c280b447ae060cd606a5240af3460c3eaaea3f232cd66189da7a",
+      "bytes": 2398
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json",
+      "sha256": "8fff69ba6856aac5b95380635a0023dcfdf6630b28db81c66939d04a7126184f",
+      "bytes": 1310
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py",
+      "sha256": "8a25e81936ef10346c41cdc9d9bea899f415cd6c55c847b604d94a4a48d01474",
+      "bytes": 5410
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json",
+      "sha256": "1d26f77a186f979cfb5a00a2e171d95ee79e13c2957cf2cbc4dc176246c50e30",
+      "bytes": 3911
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log",
+      "sha256": "a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+      "bytes": 6798
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log",
+      "sha256": "447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+      "bytes": 2069
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py",
+      "published": "expanded/D0_joint_ward_resonance_git_intake_2026-10-15/repo/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py",
+      "sha256": "1aeccf3a58b9fa80139802c8d6a877764be0d9b4e9756e39945868d27386696e",
+      "bytes": 6904
+    },
+    {
+      "source": "02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/STRATEGY_AUDIT_ORIGINAL_RU.md",
+      "published": "previous_strategy/02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/STRATEGY_AUDIT_ORIGINAL_RU.md",
+      "sha256": "d258c771a2a3a0939e4203c3018bf651309e6b36bb4cdaa130cb5ab8b4ad61ff",
+      "bytes": 23775
+    }
+  ],
+  "counts": {
+    "outer_text_occurrences": 150,
+    "outer_unique_text_contents": 77,
+    "nested_archive_occurrences": 7,
+    "unique_nested_archives": 4,
+    "binary_chunk_occurrences": 10,
+    "previous_strategy_text_occurrences": 21,
+    "published_unique_text_contents": 78
+  }
+}

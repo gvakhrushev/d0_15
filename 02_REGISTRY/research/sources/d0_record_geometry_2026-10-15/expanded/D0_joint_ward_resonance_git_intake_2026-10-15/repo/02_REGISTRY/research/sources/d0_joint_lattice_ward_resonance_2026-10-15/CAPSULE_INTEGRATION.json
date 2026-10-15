@@ -1,0 +1,10 @@
+{
+  "status": "PASS_TERMINAL_OBSERVED",
+  "terminal": "PASS_JOINT_LATTICE_WARD_AND_RESONANCE_NOT_NONLINEAR_GR",
+  "expanded_input_absent_at_start": true,
+  "all_five_remote_payload_hashes_match": true,
+  "remote_restore_git_blob": "1512bf6d2907209a753c7291fc7a1a47df5f81a7",
+  "remote_payload_sha256": "3f71d2cfdc56ef5569bd54f6d84fc06f66e3e168ccfe2078a8bfc24d707cf2d0",
+  "network_used_in_replay": false,
+  "new_remote_publication_performed": false
+}

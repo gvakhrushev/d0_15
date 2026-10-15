@@ -1,0 +1,1802 @@
+diff --git a/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md b/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..62a6433e33d392b0833d93965d83211e25e32565
+--- /dev/null
++++ b/02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md
+@@ -0,0 +1,31 @@
++# Exact flat joint Ward and quarter-wave normal reduction
++
++Existing SOURCE #310; no new task, physical law, or CORE/BOOK promotion.
++Scientific input: supplied full L=4 sheet package and its literal symbol;
++remote read `bdbac63270a52b3da3e3348502682a8fc48459b8`.
++
++[Proof and scopes](sources/d0_joint_lattice_ward_resonance_2026-10-15/RESULT_RU.md)
++[Exact verification](sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py)
++
++The complete 34-component naked-star quadratic symbol annihilates an explicit
++four-component backward coframe/forward connection-compensation lift at every
++complex nonzero character. The dual identity is an exact linear-source Ward
++identity on every periodic mesh. It is not nonlinear finite diffeomorphism
++invariance, nor the previously rejected exact forward affine lift.
++
++At the genuine phase (1,i,i,1), rank H=22, rank[H|C]=23 and rank J=28.
++A canonical range inverse of the full J obeys ||R||_p <= (7+4sqrt(2))/3 < 5.
++Six source compatibility rows remain: four translation-null and two others.
++Near that phase an exact Schur map leaves two critical coordinates after
++accounting for the four exact quadratic-null directions. Its first coefficient
++is 2(k1+k2)diag(1,-1)/7. On k1+k2=0 the second coefficient is the full matrix
++[[k0^2-3k1^2,-k0*k3-k1^2],[-k0*k3-k1^2,k3^2+5k1^2]]/7.
++These give O(h^-1) or O(h^-2) modal inverse bounds under explicit
++noncharacteristic conditions, including actual modes on L in 4N.
++No full-torus bound, nonlinear refining curved sheet, or full GR is claimed.
++
++81 exact checks, seven executed mathematical mutants, ordinary/optimized replay;
++optional independent full-action autodifferentiation and remainder diagnostics
++are explicitly floating-point, not interval proofs. The previous complete L=4
++interval packet was replayed separately, including all 16 Bloch sectors.
++Original #310/#202/#317 and the independent CONTROL snapshot are unchanged.
+diff --git a/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py b/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..09003c94d5a07adb8adb1b788a3db5e9be068cf4
+--- /dev/null
++++ b/02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py
+@@ -0,0 +1,12 @@
++#!/usr/bin/env python3
++"""Exact joint-quadratic source identities; no nonlinear physical promotion."""
++# D0_CI_TIMEOUT_SECONDS=300
++from pathlib import Path
++import os,subprocess,sys
++ROOT=Path(__file__).resolve().parents[3]
++SRC=ROOT/'02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15'
++env={**os.environ,'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','PYTHONDONTWRITEBYTECODE':'1'}
++for args in ([str(SRC/'verify.py')],['-O',str(SRC/'verify.py')],[str(SRC/'hostile.py')]):
++    result=subprocess.run([sys.executable,*args],cwd=SRC,env=env,timeout=240)
++    if result.returncode:raise SystemExit(result.returncode)
++print('PASS_JOINT_LATTICE_WARD_AND_RESONANCE_NOT_NONLINEAR_GR')
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..373a525e614bd02aa81b5ac631302e3a8f2e57fa
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json
+@@ -0,0 +1,10 @@
++{
++  "status": "PASS_TERMINAL_OBSERVED",
++  "terminal": "PASS_JOINT_LATTICE_WARD_AND_RESONANCE_NOT_NONLINEAR_GR",
++  "expanded_input_absent_at_start": true,
++  "all_five_remote_payload_hashes_match": true,
++  "remote_restore_git_blob": "1512bf6d2907209a753c7291fc7a1a47df5f81a7",
++  "remote_payload_sha256": "3f71d2cfdc56ef5569bd54f6d84fc06f66e3e168ccfe2078a8bfc24d707cf2d0",
++  "network_used_in_replay": false,
++  "new_remote_publication_performed": false
++}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..300dba1448194843a11e9439665ac0f8e682adb8
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json
+@@ -0,0 +1,16 @@
++{
++  "date": "2026-10-15",
++  "remote_head_read": "bdbac63270a52b3da3e3348502682a8fc48459b8",
++  "uploaded_archive": "D0_full4d_exact_sheet_2026-10-15.zip",
++  "uploaded_archive_sha256": "9e7f840e4eddc8291f282e900b5d60dca9efa93c048baa46589aecca1665940c",
++  "previous_exact_metric_null_owner_blob": "8e8f8d2560e39ce4b1e8f5d991ee0a72ea268a17",
++  "new_ward_is_backward_compensated_not_old_forward_affine_lift": true,
++  "remote_write_available": false,
++  "terminal_git_probe": "Could not resolve host: github.com",
++  "no_new_remote_commit": true,
++  "last_remote_head_read": "9fbc75db0a94707dc3105cdfb3f322a14e62a979",
++  "prior_full4d_packet_now_published": true,
++  "native_input_capsule_restore_blob": "1512bf6d2907209a753c7291fc7a1a47df5f81a7",
++  "expanded_old_sources_not_required_in_repo": true,
++  "symbol_sha256": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab"
++}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..d5557497761acff0d0d1467cc3137f2a03b22fff
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json
+@@ -0,0 +1,10 @@
++{
++  "linear.py": "8a25e81936ef10346c41cdc9d9bea899f415cd6c55c847b604d94a4a48d01474",
++  "verify.py": "1aeccf3a58b9fa80139802c8d6a877764be0d9b4e9756e39945868d27386696e",
++  "hostile.py": "68bb070c90c8c280b447ae060cd606a5240af3460c3eaaea3f232cd66189da7a",
++  "diagnostic.py": "bac6b586f42d019851310b7d556f1a3ade7430a12a930c4e3272e4bb5c5e181f",
++  "RESULT_RU.md": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
++  "receipt.json": "1d26f77a186f979cfb5a00a2e171d95ee79e13c2957cf2cbc4dc176246c50e30",
++  "hostile_receipt.json": "8fff69ba6856aac5b95380635a0023dcfdf6630b28db81c66939d04a7126184f",
++  "curved_metric_scout.py": "aa6a6f83240cddae2f2e431e9ad7230beac0ca1619479ced7e23e79b4916f934"
++}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/RESULT_RU.md b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/RESULT_RU.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..312bd7fd74fbf33681dcd38b4fef9f1bef73a0c8
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/RESULT_RU.md
+@@ -0,0 +1,303 @@
++# Совместное Ward-тождество и двумерный резонанс исходного действия
++
++15 октября 2026. Продолжение существующего SOURCE #310. RESEARCH.
++Исходный прочитанный remote head: `bdbac63270a52b3da3e3348502682a8fc48459b8`.
++При финальной сверке: `9fbc75db0a94707dc3105cdfb3f322a14e62a979`.
++Первичный математический вход: загруженный пакет полного конечного L=4 листа,
++сам основанный на `61688727ab3273bf35318f10ca789937b0b8f9b3`.
++
++## 0. Закрытый результат и неизменённый предмет
++
++Вычисляется буквальная квадратичная линеаризация naked-star действия по ВСЕМ
++десяти ковариантным Gram-координатам и 24 Lorentz-link-координатам. Ни новый
++член действия, ни источник, ни штраф, ни отсечение мод не вводится.
++
++1. На ВСЕХ частотах существует точный четырёхпараметрический совместный
++   нулевой lift, использующий backward-разность coframe и её настоящую
++   Lorentz-компенсацию. Это даёт четыре точных тождества для линейных
++   источников и дискретную дивергенцию metric-source на connection-shell.
++2. На реальной четвертьволне z*=(1,i,i,1) connection-блок сингулярен, но
++   нормальная часть СОВМЕСТНОГО блока обратима с точной l^p-границей <5.
++   Полное ядро имеет размер 6: четыре найденных направления и два остальных.
++   Ни одно условие источника на ядре не удаляется.
++3. Точный локальный Schur-переход оставляет двумерный критический блок после
++   учёта четырёх тождеств. Вычислены его полный первый и касательный второй
++   jets. Они дают доказанные O(h^-1) и O(h^-2) оценки обратного оператора
++   для явно указанных нехарактеристических семейств реальных lattice-мод.
++
++Это НЕ нелинейная диффеоморфная симметрия, не полный четырёхмерный uniform
++inverse и не завершение нелинейной exactification. Прошлый конечный L=4
++корень остаётся отдельным входом. Новое вычисление отвечает на реальное
++препятствие: нельзя требовать независимого обращения connection-блока там,
++где его нулевые направления связаны с метрическими уравнениями.
++
++## 1. Полный символ и конвенции
++
++eta=diag(1,-1,-1,-1), E=I, U=I. Десять metric slots:
++(00,01,02,03,11,12,13,22,23,33). Link slots: четыре роли и шесть eta-skew
++генераторов J_ab, a<b. Сетка (Z/LZ)^4 и все based plaquettes сохранены.
++
++Пусть H(z) — Hessian connection-строк буквального действия, C(z) — его
++mixed derivative. В этих координатах полный совместный символ равен
++
++    J(z) = [ 0          C(z^-1)^T ]
++           [ C(z)       H(z)      ].                         (1)
++
++Нулевой metric-metric блок следует из A(E,I)=0 для всех E, а не из удаления
++его уравнений. Все коэффициенты (1) — Laurent-полиномы над Q. На физическом
++торе J(z)=J(z)*. Определение H потребляет точные ETA, GENERATORS, STAR и
++four-factor placement из прежнего пакета. Mixed блок строится заново из
++того же face-weight и настоящего Gram-lift delta E=eta delta g/2.
++
++Для каждого face (r,s) его линейная кривизна имеет коэффициенты
++(1-z_s) A_r+(z_r-1) A_s. Их обратные фазы в C обусловлены transpose-dual
++позициями двух Fourier-амплитуд, а не выбором другого действия.
++Независимая JAX-проверка смешанной производной на полном 6144-мерном
++носителе сохранена как численная диагностика, НЕ доказательство (1).
++
++## 2. Четыре точных линейных тождества на каждом уровне
++
++Обозначим
++
++    d_r=z_r^-1-1,       a_r=z_r-1.
++
++Для произвольного xi в C^4 положим
++
++    e = xi d^T,
++    q = e^T eta+eta e,
++    omega = e-eta q/2,
++    A_r = a_r omega.                                        (2)
++
++omega eta-skew. Формула задаёт 34x4 Laurent-матрицу G(z), переводящую xi
++в packed(q,A). Прямая коэффициентная подстановка во все 34 строки даёт
++
++    J(z)G(z)=0,
++    G(z^-1)^T J(z)=0.                                      (3)
++
++Проверяется полная символическая матрица на (C*)^4, не выборка фаз.
++Канцелляцию можно видеть до Gram-quotient: backward coframe-difference
++аннулирует линейную exterior-curvature по антисимметрии произведений
++разностей; omega в (2) переводит этот raw coframe-ход в настоящий symmetric
++Gram-раздел с соответствующей link-компенсацией. Реализация (3) не требует
++предположения о ненулевом det H.
++
++Для d!=0 metric shadow q имеет ранг 4 по xi. Доказательство: пишем w=eta xi,
++q=wd^T+dw^T. При d_j!=0 равенства q_jj=0 и q_ij=0 сначала дают w_j=0,
++затем все w_i=0. Четыре chart-minors равны 2 d_j^4. При z=1 G=0;
++равенство rank=4 к нулевой частоте не применяется.
++
++Это сильнее прежнего scalar metric-only kernel C(d) dd^T=0, но не
++противоречит владельцу `A4D_METRIC_NULL_HESSIAN_COMPLEX.md`. Его forward
++coframe-образ имеет только leading-IR compensation. Здесь иной конечный
++lift: backward coframe и forward link-compensation. Оба имеют согласованный
++континуальный leading-образ, однако конечные направления не отождествляются.
++
++### Источник, а не только Hessian-null vector
++
++Для линейных Euler-остатков (E_g,E_a)=J(q,A) имеем
++
++    G_g(z)* E_g+G_a(z)* E_a=0.                             (4)
++
++На E_a=0 это четыре точных уравнения metric-source. Если packed E_g
++представлен симметричной матрицей T с половиной packed-веса на off-diagonal
++позициях, (4) эквивалентно
++
++    T (z-1)=0.                                             (5)
++
++Это forward-divergence линейного источника в данной row/dual конвенции.
++Без E_a=0 второе слагаемое (4) необходимо. Тождество координат и Bianchi
++полного нелинейного действия из (3) не следуют. Все Fourier-операторы
++периодизуются без изменения коэффициентов, поэтому (3)-(5) действуют для
++каждого L; размер матрицы всей сетки не является параметром доказательства.
++
++## 3. На критической фазе обращается совместный нормальный блок
++
++В z*=(1,i,i,1) точная арифметика Q(i) даёт
++
++    rank H=22,   rank[H|C]=23,
++    rank J=28,   dim ker J=6.                              (6)
++
++Следовательно, из двух connection-null направлений одно не видно mixed
++блоку, а другое реально входит в metric-source. Объявлять оба gauge или
++оба response-null неверно. Это согласуется с численной проверкой на
++искривлённом L=4 якоре: его слабые connection-направления не исчезают из
++всего метрического отклика.
++
++Пишем J0=J(z*). Пусть Z — полный базис ker J0,
++P=Z(Z*Z)^-1 Z* — его ортогональный проектор. Определим
++
++    R=(J0+P)^-1-P.                                         (7)
++
++Прибавление P в вычислении — способ вычислить range inverse, не физическая
++масса/штраф в действии. Точно проверено
++
++    J0 R=R J0=I-P,   RP=PR=0,   R*=R.                     (8)
++
++Суммы модулей элементов каждой строки и каждого столбца дают
++
++    ||R||_(p->p) <= (7+4 sqrt(2))/3 <5,   1<=p<=infinity.  (9)
++
++Граница достигается в row-sum норме. Независимый инвариант:
++Tr(R*R)=37571/1764. Все числа рациональны или принадлежат Q(sqrt(2)).
++
++Полная задача J0 x=b разрешима тогда и только тогда, когда Pb=0. Тогда
++все решения имеют вид x=Rb+Zc. Если Pb!=0, (7) не считается решением:
++остающийся source-residual равен Pb. Это сохраняет все шесть условий
++совместимости, включая два сверх четырёх тождеств (3).
++
++На реальной сопряжённой паре lattice-фаз проекции на каждую частоту имеют
++l^p-норму <=1. Поэтому оценка реконструкции в исходном периодическом
++пространстве не приобретает множителя числа узлов; грубая сумма двух
++сопряжённых вкладов даёт <10. Утверждение относится к этой паре,
++существующей на всех L в 4N, а не ко всему частотному тору.
++
++## 4. Точное локальное сведение без потери источников
++
++N=I-P. Для z достаточно близкого к z* оператор
++
++    R_N(z)=N [N J(z) N+P]^-1 N
++
++определён. На N-подпространстве его l2-норма <=10, если
++||N(J(z)-J0)N||_2<1/10. Существование фиксированной окрестности следует из
++конечного Laurent-символа и (9); её размер не зависит от L.
++
++Разделив x=Nx+Px, получаем точную эквивалентность
++
++    Nx=R_N(z)[b-J(z)Px],
++    S_6(z)Px=b_6,
++    S_6=P[J-J R_N J]P,
++    b_6=P[b-J R_N b].                                     (10)
++
++Всё пространство и источник сохраняются. В (10) нет обращения
++сингулярного H(z) отдельно от metric-строк.
++
++Четыре столбца P G(z) независимы в малой окрестности и удовлетворяют
++S_6(z)P G(z)=0. Если исходный источник удовлетворяет G(z)*b=0, то b_6
++также ортогонален этим четырём столбцам. Тем самым остаётся ТОЧНАЯ
++двумерная задача на факторе квадратичной формы. Если исходный источник
++не удовлетворяет Ward-условиям, (10) этого не исправляет.
++
++Это факторизация линейной системы по её radical, не декларация новой
++нелинейной физической gauge-эквивалентности. Четыре координаты сохраняются
++как свободные нулевые направления линейного объекта.
++
++## 5. Полный первый и касательный второй jets остаточных двух направлений
++
++Пусть P_G=G0(G0*G0)^-1 G0*, P_c=P-P_G. rank P_c=2.
++Программа строит базис Y этого пространства без выбора спектральных
++значений под ответ. После указанной рациональной смены координат
++
++    Y*Y=I_2/7.
++
++Нормированные координаты имеют базис sqrt(7)Y. Для
++z_j(t)=z*_j exp(i t k_j), k вещественен, первый Taylor-коэффициент
++двумерной формы (10) равен
++
++    K_1(k) = (2/7)(k_1+k_2) diag(1,-1).                   (11)
++
++Следовательно, это два противоположных настоящих резонансных отклика,
++а не единственный неопределённый знаменатель. В касательных направлениях
++k_1+k_2=0 первый коэффициент всей шестимерной формы равен нулю. Тогда
++второй коэффициент на двумерном факторе ровно
++
++    K_2(k) = (1/7) [ k_0^2-3k_1^2       -k_0 k_3-k_1^2 ]
++                      [ -k_0 k_3-k_1^2    k_3^2+5k_1^2  ]. (12)
++
++Он получен с полным Schur-членом
++
++    J_2-J_1 R J_1,
++
++а не одним вторым derivative J. Поля собственных векторов и четыре
++движущихся null-направления не заморожены: дифференцирование (3) даёт
++J_1 G0+J0 G_1=0. На касательной k_1+k_2=0 второй Schur-коэффициент
++аннулирует прежние четыре null-направления, поэтому (12) корректно
++спускается на фактор независимо от выбора их продолжения.
++
++Точный determinant:
++
++    det K_2 = k_1^2(5k_0^2-2k_0k_3-16k_1^2-3k_3^2)/49.   (13)
++
++Характеристические направления (13) не выбрасываются. Они требуют
++следующего порядка/нелинейного анализа. Обе критические моды здесь НЕ
++объявляются уже физическими гравитонами: это UV-envelope исходного
++finite symbol, отличный от собственного IR Einstein-seed.
++
++## 6. Теперь степени роста при уточнении выведены в указанном классе
++
++Пусть k пробегает фиксированный компактный набор.
++
++A. При |k_1+k_2|>=delta>0, (11) и аналитический remainder дают
++обратимость двумерного блока при достаточно малом h и норму O(h^-1).
++
++B. При k_1+k_2=0 и sigma_min(K_2(k))>=delta>0, (12) даёт O(h^-2).
++Достаточная точечная граница для B: k_1!=0 и выражение в скобках (13)
++ненулевое. Например k=(0,1,-1,0) даёт [[-3,-1],[-1,5]]/7, determinant -16/49.
++
++Все оценки равномерны на указанных компактных подмножествах. Доказательство:
++разложения конечных аналитических матриц, (9)-(10), равномерный Taylor
++remainder и Neumann-оценка двумерного inverse. Четырёхмерный kernel G(z)
++остаётся; обращается совместная система на его ортогональном дополнении
++для совместимых источников. Точное ядро там имеет размер 4.
++
++Для реальной сетки выбираем k=2pi n, n в Z^4, и h=1/L, L в 4N.
++Тогда z_j=z*_j exp(2pi i n_j/L) — НАСТОЯЩИЕ lattice-частоты, не
++произвольные точки вне сетки. Для любого заранее фиксированного конечного
++набора таких envelope-индексов оценки переводятся в l1/l-infinity без
++дополнительного множителя L^4. Константа может зависеть от числа выбранных
++мод; утверждения для неограниченно растущего набора здесь нет.
++
++Итак, ранее условный показатель s в inverse-гипотезе теперь определён
++как 1 либо 2 для конкретных совместных резонансных мод. Это линейная
++нормальная оценка. Подставлять её вместо ПОЛНОЙ nonlinear-inverse гипотезы
++предыдущего curved-sheet результата нельзя: нелинейность смешивает моды,
++а четыре quadratic-null направления не доказаны gauge полного действия.
++
++## 7. Что это сокращает в строительстве до конца
++
++Получены одновременно:
++* собственное четырёхкомпонентное linear-source Ward-тождество, а не только
++  условие на абстрактные conserved tensors;
++* полное разрешение range-уравнений у реального резонанса без запрещённого
++  деления на det H;
++* остаточная 2x2 форма и её явные inverse-показатели вместо невычисленной
++  многокомпонентной сингулярности.
++
++Следующий неустранимый шаг — перенос (10) на НЕЛИНЕЙНЫЕ совместные
++Euler-уравнения на уточняющемся искривлённом листе, включая взаимодействие
++envelope-мод, источник на оставшихся критических направлениях и контроль
++четырёх quadratic-null направлений. Это одна конкретная reduced system,
++не новая программа выбора углов/состояний. Full Cost-Info binding,
++original fixed-source terminal, affine/matter equations и полный ОТО
++этим пакетом не закрываются.
++
++## 8. Проверка, происхождение и публикация
++
++Первичный L=4 пакет повторно исполнен обычным полным verify.py в этой сессии:
++56 именованных условий и все 16 интервальных Bloch-блоков прошли, итоговая
++полная inverse-граница воспроизвелась 15931462.919009278. Это подтверждение
++НОВОГО исправленного интервального ядра старшего пакета; старый исторический
++L=8 alias-дефект не исправляется молча.
++
++Новый verify.py проверяет 81 именованное точное условие, включая общее
++Laurent-тождество (3), все rank/projector/inverse identities и полные
++полиномы (11)-(13). Универсальные rank/tower/asymptotic выводы доказаны в
++тексте, а не приписаны конечной выборке. Hostile-программы меняют реальные
++формулы и запускают математические тесты без проверки manifest в качестве
++замены. Численные проверки производных и remainder отделены от доказательств.
++Нет нового Lean compilation и общего local/remote CI PASS.
++
++Проверка CI исходного remote bdbac632 дала Lean SUCCESS, guards FAILURE;
++это не утверждение о CI более позднего 9fbc75db.
++Доступные в текущей сессии 48 GitHub-операций читают, но не пишут; терминальный
++Git вернул Could not resolve host: github.com. Этот пакет сам по себе не
++является удалённой публикацией. Исторические файлы сохранены, рабочая ветка не перезаписана.
++
++В финальной сверке прежний L=4 пакет УЖЕ опубликован параллельной приёмкой
++`A4D_FULL4D_VERIFIED_INTAKE.md` в remote 9fbc75db. Новое продолжение потребляет
++именно её restore.py (Git blob 1512bf6d2907209a753c7291fc7a1a47df5f81a7),
++проверяет её payload и SHA256 конкретного symbol.py и восстанавливает входы
++только во временный каталог. Совпадение всех пяти частей payload, всего XZ
++и распакованного JSON проверено с опубликованными хешами. В новый Git-патч
++входят ТОЛЬКО новые файлы; 25 исходных файлов не дублируются. Полный новый
++entrypoint дополнительно выполнен с отсутствующим expanded-входом, через
++точную копию уже опубликованной капсулы, без сети.
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..bb5902ec5498347978a5906c7407ce20569bde0f
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json
+@@ -0,0 +1,10 @@
++{
++  "status": "PASS",
++  "entrypoint_exit_code": 0,
++  "elapsed_seconds": 47.15219356800003,
++  "ordinary_and_optimized": true,
++  "executed_hostile_cases": 7,
++  "physical_GR_closed": false,
++  "remote_commit_created": false,
++  "new_Lean_compilation": false
++}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log
+new file mode 100644
+index 0000000000000000000000000000000000000000..529486b4b82364a248010fd9e60103d9a60e2e5f
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log
+@@ -0,0 +1,172 @@
++PASS all_34_by_4_generic_Ward_coefficients
++PASS reciprocal_transpose_full_joint_symbol
++PASS dual_all_four_source_identities
++PASS ten_metric_and_twenty_four_connection_rows
++PASS translation_map_zero_only_at_trivial_character
++PASS complete_rank_four_chart_0
++PASS complete_rank_four_chart_1
++PASS complete_rank_four_chart_2
++PASS complete_rank_four_chart_3
++PASS all_packed_source_factors
++PASS actual_quarter_phase_connection_rank
++PASS actual_augmented_connection_rank
++PASS full_joint_rank
++PASS complete_joint_kernel_six
++PASS actual_translation_rank_four
++PASS actual_extra_kernel_rank_two
++PASS Hermitian_joint
++PASS Hermitian_kernel
++PASS Hermitian_inverse
++PASS Hermitian_translation
++PASS Hermitian_remaining
++PASS orthogonal_projector_kernel
++PASS orthogonal_projector_translation
++PASS orthogonal_projector_remaining
++PASS translations_are_inside_joint_radical
++PASS left_complete_range_inverse
++PASS right_complete_range_inverse
++PASS range_inverse_keeps_kernel_equations
++PASS exact_inverse_row_bound_0
++PASS exact_inverse_row_bound_1
++PASS exact_inverse_row_bound_2
++PASS exact_inverse_row_bound_3
++PASS exact_inverse_row_bound_4
++PASS exact_inverse_row_bound_5
++PASS exact_inverse_row_bound_6
++PASS exact_inverse_row_bound_7
++PASS exact_inverse_row_bound_8
++PASS exact_inverse_row_bound_9
++PASS exact_inverse_row_bound_10
++PASS exact_inverse_row_bound_11
++PASS exact_inverse_row_bound_12
++PASS exact_inverse_row_bound_13
++PASS exact_inverse_row_bound_14
++PASS exact_inverse_row_bound_15
++PASS exact_inverse_row_bound_16
++PASS exact_inverse_row_bound_17
++PASS exact_inverse_row_bound_18
++PASS exact_inverse_row_bound_19
++PASS exact_inverse_row_bound_20
++PASS exact_inverse_row_bound_21
++PASS exact_inverse_row_bound_22
++PASS exact_inverse_row_bound_23
++PASS exact_inverse_row_bound_24
++PASS exact_inverse_row_bound_25
++PASS exact_inverse_row_bound_26
++PASS exact_inverse_row_bound_27
++PASS exact_inverse_row_bound_28
++PASS exact_inverse_row_bound_29
++PASS exact_inverse_row_bound_30
++PASS exact_inverse_row_bound_31
++PASS exact_inverse_row_bound_32
++PASS exact_inverse_row_bound_33
++PASS inverse_row_bound_attained
++PASS inverse_uniform_constant_below_five
++PASS inverse_Frobenius_exact
++PASS connection_kernel_coupling_rank_one
++PASS remaining_kernel_frame_normalization
++PASS remaining_kernel_not_translation
++PASS full_source_solution_identity
++PASS incompatible_source_is_not_solved_by_projection
++PASS first_resonant_pencil_all_four_directions
++PASS tangent_second_pencil_all_coefficients
++PASS tangent_characteristic_polynomial
++PASS tangent_regular_envelope_example
++PASS characteristic_directions_not_erased
++PASS all_six_first_tangent_rows_zero
++PASS transported_Ward_first_jet_0
++PASS transported_Ward_first_jet_1
++PASS transported_Ward_first_jet_2
++PASS transported_Ward_first_jet_3
++PASS on_shell_metric_source_Ward_uses_connection_equations
++PASS_EXACT_FLAT_QUADRATIC_WARD_AND_JOINT_RESONANCE_REDUCTION 81 named exact conditions
++PASS all_34_by_4_generic_Ward_coefficients
++PASS reciprocal_transpose_full_joint_symbol
++PASS dual_all_four_source_identities
++PASS ten_metric_and_twenty_four_connection_rows
++PASS translation_map_zero_only_at_trivial_character
++PASS complete_rank_four_chart_0
++PASS complete_rank_four_chart_1
++PASS complete_rank_four_chart_2
++PASS complete_rank_four_chart_3
++PASS all_packed_source_factors
++PASS actual_quarter_phase_connection_rank
++PASS actual_augmented_connection_rank
++PASS full_joint_rank
++PASS complete_joint_kernel_six
++PASS actual_translation_rank_four
++PASS actual_extra_kernel_rank_two
++PASS Hermitian_joint
++PASS Hermitian_kernel
++PASS Hermitian_inverse
++PASS Hermitian_translation
++PASS Hermitian_remaining
++PASS orthogonal_projector_kernel
++PASS orthogonal_projector_translation
++PASS orthogonal_projector_remaining
++PASS translations_are_inside_joint_radical
++PASS left_complete_range_inverse
++PASS right_complete_range_inverse
++PASS range_inverse_keeps_kernel_equations
++PASS exact_inverse_row_bound_0
++PASS exact_inverse_row_bound_1
++PASS exact_inverse_row_bound_2
++PASS exact_inverse_row_bound_3
++PASS exact_inverse_row_bound_4
++PASS exact_inverse_row_bound_5
++PASS exact_inverse_row_bound_6
++PASS exact_inverse_row_bound_7
++PASS exact_inverse_row_bound_8
++PASS exact_inverse_row_bound_9
++PASS exact_inverse_row_bound_10
++PASS exact_inverse_row_bound_11
++PASS exact_inverse_row_bound_12
++PASS exact_inverse_row_bound_13
++PASS exact_inverse_row_bound_14
++PASS exact_inverse_row_bound_15
++PASS exact_inverse_row_bound_16
++PASS exact_inverse_row_bound_17
++PASS exact_inverse_row_bound_18
++PASS exact_inverse_row_bound_19
++PASS exact_inverse_row_bound_20
++PASS exact_inverse_row_bound_21
++PASS exact_inverse_row_bound_22
++PASS exact_inverse_row_bound_23
++PASS exact_inverse_row_bound_24
++PASS exact_inverse_row_bound_25
++PASS exact_inverse_row_bound_26
++PASS exact_inverse_row_bound_27
++PASS exact_inverse_row_bound_28
++PASS exact_inverse_row_bound_29
++PASS exact_inverse_row_bound_30
++PASS exact_inverse_row_bound_31
++PASS exact_inverse_row_bound_32
++PASS exact_inverse_row_bound_33
++PASS inverse_row_bound_attained
++PASS inverse_uniform_constant_below_five
++PASS inverse_Frobenius_exact
++PASS connection_kernel_coupling_rank_one
++PASS remaining_kernel_frame_normalization
++PASS remaining_kernel_not_translation
++PASS full_source_solution_identity
++PASS incompatible_source_is_not_solved_by_projection
++PASS first_resonant_pencil_all_four_directions
++PASS tangent_second_pencil_all_coefficients
++PASS tangent_characteristic_polynomial
++PASS tangent_regular_envelope_example
++PASS characteristic_directions_not_erased
++PASS all_six_first_tangent_rows_zero
++PASS transported_Ward_first_jet_0
++PASS transported_Ward_first_jet_1
++PASS transported_Ward_first_jet_2
++PASS transported_Ward_first_jet_3
++PASS on_shell_metric_source_Ward_uses_connection_equations
++PASS_EXACT_FLAT_QUADRATIC_WARD_AND_JOINT_RESONANCE_REDUCTION 81 named exact conditions
++{'name': 'wrong_forward_coframe', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: all_34_by_4_generic_Ward_coefficients'}
++{'name': 'wrong_compensation_sign', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: all_34_by_4_generic_Ward_coefficients'}
++{'name': 'wrong_offdiagonal_Gram', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: all_34_by_4_generic_Ward_coefficients'}
++{'name': 'wrong_dual_symbol', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: all_34_by_4_generic_Ward_coefficients'}
++{'name': 'kernel_not_retained_in_inverse', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: range_inverse_keeps_kernel_equations'}
++{'name': 'wrong_phase_second_derivative', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: tangent_second_pencil_all_coefficients'}
++{'name': 'missing_Schur_term', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: tangent_second_pencil_all_coefficients'}
++PASS_JOINT_LATTICE_WARD_AND_RESONANCE_NOT_NONLINEAR_GR
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..ea88124681fe6e21c4e9e25c32242d0f2c9f50f1
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json
+@@ -0,0 +1,261 @@
++{
++  "status": "FLOATING_EXPLORATION_NOT_A_BOUND",
++  "blocks": [
++    {
++      "q0": 0,
++      "q3": 0,
++      "H_hermitian_error": 5.637851296924623e-17,
++      "smallest_eigenvalues": [
++        5.204281337989105e-05,
++        -9.539743027174836e-05,
++        0.00011780927996510664,
++        -0.0001590229298458726
++      ],
++      "metric_norm": 16.972414384290186,
++      "weak_metric_coupling": 0.9228293897014709,
++      "Hinv_inf": 42086.61348284836,
++      "Hinv_C_inf": 23220.541545856133,
++      "Schur_inf": 26631.38425474557
++    },
++    {
++      "q0": 0,
++      "q3": 1,
++      "H_hermitian_error": 5.551115123125783e-17,
++      "smallest_eigenvalues": [
++        0.0005666427817634602,
++        -0.0005892742132526761,
++        0.0011241223808035347,
++        -0.0015478666169039044
++      ],
++      "metric_norm": 20.786391984437316,
++      "weak_metric_coupling": 0.8962181521063515,
++      "Hinv_inf": 4330.564040748823,
++      "Hinv_C_inf": 2520.8161150726382,
++      "Schur_inf": 3333.3525766708904
++    },
++    {
++      "q0": 0,
++      "q3": 2,
++      "H_hermitian_error": 5.724587470723463e-17,
++      "smallest_eigenvalues": [
++        -2.8086373731928487e-05,
++        0.0001489958119884762,
++        -0.00018752341039911946,
++        0.00029453390286479723
++      ],
++      "metric_norm": 24.001777713938168,
++      "weak_metric_coupling": 0.8604903742922076,
++      "Hinv_inf": 63601.47971080405,
++      "Hinv_C_inf": 36979.89400932376,
++      "Schur_inf": 55936.0640400527
++    },
++    {
++      "q0": 0,
++      "q3": 3,
++      "H_hermitian_error": 5.551115123125783e-17,
++      "smallest_eigenvalues": [
++        0.0005666427817632702,
++        -0.0005892742132529146,
++        0.001124122380803199,
++        -0.0015478666169039831
++      ],
++      "metric_norm": 20.786391984437316,
++      "weak_metric_coupling": 0.8962181521063166,
++      "Hinv_inf": 4330.564040749841,
++      "Hinv_C_inf": 2520.816115073249,
++      "Schur_inf": 3333.3525766718203
++    },
++    {
++      "q0": 1,
++      "q3": 0,
++      "H_hermitian_error": 5.551115123125783e-17,
++      "smallest_eigenvalues": [
++        0.0006308776761848937,
++        -0.0006669125347729237,
++        0.005331027942508872,
++        -0.005396194325510142
++      ],
++      "metric_norm": 20.786599153615736,
++      "weak_metric_coupling": 1.296368890918478,
++      "Hinv_inf": 2900.6223859442753,
++      "Hinv_C_inf": 1964.9695239789687,
++      "Schur_inf": 6200.119070137156
++    },
++    {
++      "q0": 1,
++      "q3": 1,
++      "H_hermitian_error": 2.220446049250313e-16,
++      "smallest_eigenvalues": [
++        -2.7873541229083496e-07,
++        8.435483686169547e-05,
++        -0.00011998852395836907,
++        0.000171755943567784
++      ],
++      "metric_norm": 24.001951661969052,
++      "weak_metric_coupling": 0.911054886287311,
++      "Hinv_inf": 6254680.231104018,
++      "Hinv_C_inf": 3583053.7601844724,
++      "Schur_inf": 5110754.980754841
++    },
++    {
++      "q0": 1,
++      "q3": 2,
++      "H_hermitian_error": 5.551115123125783e-17,
++      "smallest_eigenvalues": [
++        -0.0015338535986162407,
++        0.0016470225578991502,
++        0.002748272117648449,
++        -0.002772165874002199
++      ],
++      "metric_norm": 26.834770825966046,
++      "weak_metric_coupling": 1.353054254441462,
++      "Hinv_inf": 1420.0675839690598,
++      "Hinv_C_inf": 1130.196133717532,
++      "Schur_inf": 3013.3322733322066
++    },
++    {
++      "q0": 1,
++      "q3": 3,
++      "H_hermitian_error": 2.220446049250313e-16,
++      "smallest_eigenvalues": [
++        4.786552370617768e-05,
++        -5.086744967286023e-05,
++        -0.000151818166986489,
++        0.00015223570820579194
++      ],
++      "metric_norm": 24.001957130028323,
++      "weak_metric_coupling": 0.8701447687912798,
++      "Hinv_inf": 40068.656177210396,
++      "Hinv_C_inf": 23782.93527891869,
++      "Schur_inf": 29927.628623650562
++    },
++    {
++      "q0": 2,
++      "q3": 0,
++      "H_hermitian_error": 5.637851296924623e-17,
++      "smallest_eigenvalues": [
++        9.253840609484932e-05,
++        -9.949299887677723e-05,
++        -0.0001319048807667037,
++        0.0001592535954354147
++      ],
++      "metric_norm": 24.00213654477737,
++      "weak_metric_coupling": 0.9133252136809914,
++      "Hinv_inf": 24584.831510485674,
++      "Hinv_C_inf": 14527.23731408424,
++      "Schur_inf": 29497.046795485614
++    },
++    {
++      "q0": 2,
++      "q3": 1,
++      "H_hermitian_error": 5.551792708129603e-17,
++      "smallest_eigenvalues": [
++        -0.0007068994150464776,
++        0.000855211488553175,
++        -0.0017295969115871319,
++        0.0020324341242504308
++      ],
++      "metric_norm": 26.834931300909602,
++      "weak_metric_coupling": 0.9747903150143735,
++      "Hinv_inf": 3231.7233189745075,
++      "Hinv_C_inf": 2060.126781394717,
++      "Schur_inf": 3177.2951725608855
++    },
++    {
++      "q0": 2,
++      "q3": 2,
++      "H_hermitian_error": 5.724587470723463e-17,
++      "smallest_eigenvalues": [
++        6.096889674516656e-05,
++        -9.512208140246288e-05,
++        -0.00018118150635527361,
++        0.00022217992781925358
++      ],
++      "metric_norm": 29.3959949165688,
++      "weak_metric_coupling": 0.6798963548719295,
++      "Hinv_inf": 42133.637119104205,
++      "Hinv_C_inf": 21833.086322377807,
++      "Schur_inf": 22867.959367070434
++    },
++    {
++      "q0": 2,
++      "q3": 3,
++      "H_hermitian_error": 5.551792708129603e-17,
++      "smallest_eigenvalues": [
++        -0.0007068994150463676,
++        0.0008552114885532654,
++        -0.0017295969115876447,
++        0.002032434124250286
++      ],
++      "metric_norm": 26.834931300909606,
++      "weak_metric_coupling": 0.9747903150143166,
++      "Hinv_inf": 3231.723318974238,
++      "Hinv_C_inf": 2060.126781394667,
++      "Schur_inf": 3177.2951725607045
++    },
++    {
++      "q0": 3,
++      "q3": 0,
++      "H_hermitian_error": 5.551115123125783e-17,
++      "smallest_eigenvalues": [
++        0.000630877676184941,
++        -0.0006669125347724757,
++        0.00533102794250939,
++        -0.0053961943255102784
++      ],
++      "metric_norm": 20.786599153615736,
++      "weak_metric_coupling": 1.2963688909184548,
++      "Hinv_inf": 2900.622385944387,
++      "Hinv_C_inf": 1964.9695239788807,
++      "Schur_inf": 6200.119070137231
++    },
++    {
++      "q0": 3,
++      "q3": 1,
++      "H_hermitian_error": 2.220446049250313e-16,
++      "smallest_eigenvalues": [
++        4.7865523706420884e-05,
++        -5.086744967306171e-05,
++        -0.00015181816698648274,
++        0.00015223570820601382
++      ],
++      "metric_norm": 24.001957130028323,
++      "weak_metric_coupling": 0.8701447687913003,
++      "Hinv_inf": 40068.65617734523,
++      "Hinv_C_inf": 23782.93527896266,
++      "Schur_inf": 29927.628623838376
++    },
++    {
++      "q0": 3,
++      "q3": 2,
++      "H_hermitian_error": 5.551115123125783e-17,
++      "smallest_eigenvalues": [
++        -0.0015338535986163982,
++        0.0016470225578989032,
++        0.0027482721176485753,
++        -0.0027721658740024317
++      ],
++      "metric_norm": 26.834770825966046,
++      "weak_metric_coupling": 1.3530542544415267,
++      "Hinv_inf": 1420.0675839690516,
++      "Hinv_C_inf": 1130.1961337175226,
++      "Schur_inf": 3013.3322733323057
++    },
++    {
++      "q0": 3,
++      "q3": 3,
++      "H_hermitian_error": 2.220446049250313e-16,
++      "smallest_eigenvalues": [
++        -2.7873541263168806e-07,
++        8.435483686111784e-05,
++        -0.00011998852395858139,
++        0.00017175594356770078
++      ],
++      "metric_norm": 24.001951661969056,
++      "weak_metric_coupling": 0.9110548862878991,
++      "Hinv_inf": 6254680.234095415,
++      "Hinv_C_inf": 3583053.7618973274,
++      "Schur_inf": 5110754.983195299
++    }
++  ]
++}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log
+new file mode 100644
+index 0000000000000000000000000000000000000000..57c1a60daf2aa66deae03d2f5385c3fa33af6104
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log
+@@ -0,0 +1,16 @@
++{"q0": 0, "q3": 0, "H_hermitian_error": 5.637851296924623e-17, "smallest_eigenvalues": [5.204281337989105e-05, -9.539743027174836e-05, 0.00011780927996510664, -0.0001590229298458726], "metric_norm": 16.972414384290186, "weak_metric_coupling": 0.9228293897014709, "Hinv_inf": 42086.61348284836, "Hinv_C_inf": 23220.541545856133, "Schur_inf": 26631.38425474557}
++{"q0": 0, "q3": 1, "H_hermitian_error": 5.551115123125783e-17, "smallest_eigenvalues": [0.0005666427817634602, -0.0005892742132526761, 0.0011241223808035347, -0.0015478666169039044], "metric_norm": 20.786391984437316, "weak_metric_coupling": 0.8962181521063515, "Hinv_inf": 4330.564040748823, "Hinv_C_inf": 2520.8161150726382, "Schur_inf": 3333.3525766708904}
++{"q0": 0, "q3": 2, "H_hermitian_error": 5.724587470723463e-17, "smallest_eigenvalues": [-2.8086373731928487e-05, 0.0001489958119884762, -0.00018752341039911946, 0.00029453390286479723], "metric_norm": 24.001777713938168, "weak_metric_coupling": 0.8604903742922076, "Hinv_inf": 63601.47971080405, "Hinv_C_inf": 36979.89400932376, "Schur_inf": 55936.0640400527}
++{"q0": 0, "q3": 3, "H_hermitian_error": 5.551115123125783e-17, "smallest_eigenvalues": [0.0005666427817632702, -0.0005892742132529146, 0.001124122380803199, -0.0015478666169039831], "metric_norm": 20.786391984437316, "weak_metric_coupling": 0.8962181521063166, "Hinv_inf": 4330.564040749841, "Hinv_C_inf": 2520.816115073249, "Schur_inf": 3333.3525766718203}
++{"q0": 1, "q3": 0, "H_hermitian_error": 5.551115123125783e-17, "smallest_eigenvalues": [0.0006308776761848937, -0.0006669125347729237, 0.005331027942508872, -0.005396194325510142], "metric_norm": 20.786599153615736, "weak_metric_coupling": 1.296368890918478, "Hinv_inf": 2900.6223859442753, "Hinv_C_inf": 1964.9695239789687, "Schur_inf": 6200.119070137156}
++{"q0": 1, "q3": 1, "H_hermitian_error": 2.220446049250313e-16, "smallest_eigenvalues": [-2.7873541229083496e-07, 8.435483686169547e-05, -0.00011998852395836907, 0.000171755943567784], "metric_norm": 24.001951661969052, "weak_metric_coupling": 0.911054886287311, "Hinv_inf": 6254680.231104018, "Hinv_C_inf": 3583053.7601844724, "Schur_inf": 5110754.980754841}
++{"q0": 1, "q3": 2, "H_hermitian_error": 5.551115123125783e-17, "smallest_eigenvalues": [-0.0015338535986162407, 0.0016470225578991502, 0.002748272117648449, -0.002772165874002199], "metric_norm": 26.834770825966046, "weak_metric_coupling": 1.353054254441462, "Hinv_inf": 1420.0675839690598, "Hinv_C_inf": 1130.196133717532, "Schur_inf": 3013.3322733322066}
++{"q0": 1, "q3": 3, "H_hermitian_error": 2.220446049250313e-16, "smallest_eigenvalues": [4.786552370617768e-05, -5.086744967286023e-05, -0.000151818166986489, 0.00015223570820579194], "metric_norm": 24.001957130028323, "weak_metric_coupling": 0.8701447687912798, "Hinv_inf": 40068.656177210396, "Hinv_C_inf": 23782.93527891869, "Schur_inf": 29927.628623650562}
++{"q0": 2, "q3": 0, "H_hermitian_error": 5.637851296924623e-17, "smallest_eigenvalues": [9.253840609484932e-05, -9.949299887677723e-05, -0.0001319048807667037, 0.0001592535954354147], "metric_norm": 24.00213654477737, "weak_metric_coupling": 0.9133252136809914, "Hinv_inf": 24584.831510485674, "Hinv_C_inf": 14527.23731408424, "Schur_inf": 29497.046795485614}
++{"q0": 2, "q3": 1, "H_hermitian_error": 5.551792708129603e-17, "smallest_eigenvalues": [-0.0007068994150464776, 0.000855211488553175, -0.0017295969115871319, 0.0020324341242504308], "metric_norm": 26.834931300909602, "weak_metric_coupling": 0.9747903150143735, "Hinv_inf": 3231.7233189745075, "Hinv_C_inf": 2060.126781394717, "Schur_inf": 3177.2951725608855}
++{"q0": 2, "q3": 2, "H_hermitian_error": 5.724587470723463e-17, "smallest_eigenvalues": [6.096889674516656e-05, -9.512208140246288e-05, -0.00018118150635527361, 0.00022217992781925358], "metric_norm": 29.3959949165688, "weak_metric_coupling": 0.6798963548719295, "Hinv_inf": 42133.637119104205, "Hinv_C_inf": 21833.086322377807, "Schur_inf": 22867.959367070434}
++{"q0": 2, "q3": 3, "H_hermitian_error": 5.551792708129603e-17, "smallest_eigenvalues": [-0.0007068994150463676, 0.0008552114885532654, -0.0017295969115876447, 0.002032434124250286], "metric_norm": 26.834931300909606, "weak_metric_coupling": 0.9747903150143166, "Hinv_inf": 3231.723318974238, "Hinv_C_inf": 2060.126781394667, "Schur_inf": 3177.2951725607045}
++{"q0": 3, "q3": 0, "H_hermitian_error": 5.551115123125783e-17, "smallest_eigenvalues": [0.000630877676184941, -0.0006669125347724757, 0.00533102794250939, -0.0053961943255102784], "metric_norm": 20.786599153615736, "weak_metric_coupling": 1.2963688909184548, "Hinv_inf": 2900.622385944387, "Hinv_C_inf": 1964.9695239788807, "Schur_inf": 6200.119070137231}
++{"q0": 3, "q3": 1, "H_hermitian_error": 2.220446049250313e-16, "smallest_eigenvalues": [4.7865523706420884e-05, -5.086744967306171e-05, -0.00015181816698648274, 0.00015223570820601382], "metric_norm": 24.001957130028323, "weak_metric_coupling": 0.8701447687913003, "Hinv_inf": 40068.65617734523, "Hinv_C_inf": 23782.93527896266, "Schur_inf": 29927.628623838376}
++{"q0": 3, "q3": 2, "H_hermitian_error": 5.551115123125783e-17, "smallest_eigenvalues": [-0.0015338535986163982, 0.0016470225578989032, 0.0027482721176485753, -0.0027721658740024317], "metric_norm": 26.834770825966046, "weak_metric_coupling": 1.3530542544415267, "Hinv_inf": 1420.0675839690516, "Hinv_C_inf": 1130.1961337175226, "Schur_inf": 3013.3322733323057}
++{"q0": 3, "q3": 3, "H_hermitian_error": 2.220446049250313e-16, "smallest_eigenvalues": [-2.7873541263168806e-07, 8.435483686111784e-05, -0.00011998852395858139, 0.00017175594356770078], "metric_norm": 24.001951661969056, "weak_metric_coupling": 0.9110548862878991, "Hinv_inf": 6254680.234095415, "Hinv_C_inf": 3583053.7618973274, "Schur_inf": 5110754.983195299}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..b913eeacfac4a70b3e486f14c8769ae1c3ec03bb
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py
+@@ -0,0 +1,86 @@
++"""Numerical exploration only: actual metric coupling to full Bloch Hessian."""
++import os
++os.environ['OPENBLAS_NUM_THREADS']='1'
++import sys,json
++from pathlib import Path
++import numpy as np
++from itertools import combinations
++from linear import UPSTREAM
++UP=UPSTREAM.parent
++sys.path.insert(0,str(UP))
++from interval_check import ET as eta,GN as GEN,neighbor
++from symbol import STAR,G2,PAIR
++GS=np.array((G2*STAR).tolist(),float)
++PACK=list(combinations(range(4),2));MP=[(i,j) for i in range(4) for j in range(i,4)]
++
++def frame(L):
++ t=np.arange(L)*2*np.pi/L;f=1+np.cos(t)[:,None]/100+np.cos(t)[None,:]/1000
++ E=np.tile(np.eye(4),(L*L,1,1));E[:,2,2]=f.ravel();E[:,3,3]=f.ravel();return E
++
++def setup(A):
++ ans={};eye=np.eye(4)
++ for ix in range(len(A)):
++  for r in range(4):
++   X=np.einsum('k,kab->ab',A[ix,6*r:6*r+6],GEN);S=np.linalg.inv(eye-X/2);U=S@(eye+X/2)
++   d=S@GEN@S;dd=(d[:,None]@GEN[None]@S+d[None]@GEN[:,None]@S)/2
++   ans[ix,r,1]=(U,d,dd);ans[ix,r,-1]=(eta@U.T@eta,eta@d.swapaxes(-1,-2)@eta,eta@dd.swapaxes(-1,-2)@eta)
++ return ans
++
++def matrices(A,E):
++ L=int(round(np.sqrt(len(A))));n=len(A);vc=n*24;gc=n*10
++ H={};C={};UU=setup(A);eye=np.eye(4)
++ def addH(i,j,dg,ex):
++  if ex not in H:H[ex]=np.zeros((vc,vc))
++  H[ex][i:i+6,j:j+6]+=dg
++ def addC(i,j,dg,ex):
++  if ex not in C:C[ex]=np.zeros((vc,gc))
++  C[ex][i:i+6,j:j+10]+=dg
++ def weight(E,r,s):
++  u,v=[a for a in range(4) if a not in (r,s)];seq=[r,s,u,v];sg=(-1)**sum(seq[i]>seq[j] for i,j in combinations(range(4),2))
++  w=np.array([E[a,u]*E[b,v]-E[b,u]*E[a,v] for a,b in PAIR])
++  wt=sg*w@GS;KK=np.zeros((4,4))
++  for t,(a,b) in enumerate(PAIR):KK[a,b]=wt[t]*eta[b,b]
++  return KK
++ for m in range(n):
++  invg=np.linalg.inv(E[m].T@eta@E[m]);dEE=[]
++  for a,b in MP:
++   V=np.zeros((4,4));V[a,b]=V[b,a]=1.;dEE.append(E[m]@invg@V/2)
++  for r,s in PAIR:
++   K=weight(E[m],r,s)/2
++   dK=np.array([(weight(E[m]+dE,r,s)-weight(E[m]-dE,r,s))/4 for dE in dEE]) # /2 for central diff, /2 for odd part
++   ids=[(m,r,1),(neighbor(m,r,L),s,1),(neighbor(m,s,L),r,-1),(m,s,-1)]
++   offsets=[(0,0),(int(r==0),int(r==3)),(int(s==0),int(s==3)),(0,0)]
++   for sg,ls,off in [(1,ids,offsets),(-1,[(k,a,-z) for k,a,z in ids[::-1]],offsets[::-1])]:
++    ff=[UU[k][0] for k in ls];pre=[eye]
++    for z in ff:pre.append(pre[-1]@z)
++    suf=[None]*5;suf[4]=eye
++    for i in range(3,-1,-1):suf[i]=ff[i]@suf[i+1]
++    for i,(ix,rr,zz) in enumerate(ls):
++     U,d,dd=UU[ix,rr,zz]
++     dj=pre[i]@d@suf[i+1];dg=np.einsum('jab,kab->kj',dK,dj)*sg
++     addC(ix*24+rr*6,m*10,dg,(-off[i][0],-off[i][1]))
++     dg=np.einsum('ab,klab->kl',K,pre[i]@dd@suf[i+1])*sg
++     addH(ix*24+rr*6,ix*24+rr*6,dg,(0,0))
++    for i in range(4):
++     mid=eye;di=UU[ls[i]][1]
++     for j in range(i+1,4):
++      if j>i+1:mid=mid@ff[j-1]
++      dj=UU[ls[j]][1];prod=pre[i]@di[:,None]@mid@dj[None]@suf[j+1]
++      dg=np.einsum('ab,klab->kl',K,prod)*sg
++      ii=24*ls[i][0]+6*ls[i][1];jj=24*ls[j][0]+6*ls[j][1];ex=(off[j][0]-off[i][0],off[j][1]-off[i][1])
++      addH(ii,jj,dg,ex);addH(jj,ii,dg.T,(-ex[0],-ex[1]))
++ return H,C
++
++def bloch(dic,k0,k3,L=4):return sum(np.exp(2j*np.pi/L*(k0*i+k3*j))*B for (i,j),B in dic.items())
++
++def main():
++ A=np.array(json.loads((UP/'center.json').read_text())).reshape(16,24);E=frame(4);H,C=matrices(A,E)
++ out=[]
++ for i in range(4):
++  for j in range(4):
++   M=bloch(H,i,j);D=bloch(C,i,j);ev,V=np.linalg.eigh(M);ind=np.argsort(abs(ev));weak=ind[0]
++   X=np.linalg.solve(M,D);Sch=D.conj().T@X
++   row=dict(q0=i,q3=j,H_hermitian_error=float(np.max(abs(M-M.conj().T))),smallest_eigenvalues=ev[ind[:4]].tolist(),metric_norm=float(np.linalg.norm(D)),weak_metric_coupling=float(np.linalg.norm(D.conj().T@V[:,weak])),Hinv_inf=float(np.linalg.norm(np.linalg.inv(M),np.inf)),Hinv_C_inf=float(np.linalg.norm(X,np.inf)),Schur_inf=float(np.linalg.norm(Sch,np.inf)))
++   print(json.dumps(row),flush=True);out.append(row)
++ Path(__file__).with_name('curved_metric_scout.json').write_text(json.dumps({'status':'FLOATING_EXPLORATION_NOT_A_BOUND','blocks':out},indent=2)+'\n')
++if __name__=='__main__':main()
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..b2b4ab5db596300d24bb9fdbfd5ec50c9809e5c9
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py
+@@ -0,0 +1,59 @@
++#!/usr/bin/env python3
++"""Independent numerical tests, explicitly NOT interval/theorem receipts."""
++import os
++os.environ.setdefault('OPENBLAS_NUM_THREADS','1');os.environ.setdefault('OMP_NUM_THREADS','1')
++from pathlib import Path
++import argparse,json,sys
++import numpy as np
++import sympy as s
++import linear as L
++HERE=Path(__file__).resolve().parent
++
++def expansion_checks():
++    data=L.resonance();P=np.array(data['P'].tolist(),complex);Y=np.array(data['Y'].tolist(),complex);N=np.eye(34)-P
++    z=s.symbols('z0:4',nonzero=True);fn=s.lambdify(z,L.joint(z),'numpy');out=[]
++    for name,k,power,target in [
++        ('transverse_to_resonance',[0,1,0,0],1,np.diag([2,-2])/7),
++        ('tangent_noncharacteristic',[0,1,-1,0],2,np.array([[-3,-1],[-1,5]])/7),
++    ]:
++        previous=None
++        for h in [1e-2,5e-3,2.5e-3]:
++            zz=np.array([1,1j,1j,1])*np.exp(1j*h*np.array(k));J=fn(*zz)
++            RN=N@np.linalg.inv(N@J@N+P)@N
++            eff=7*Y.conj().T@(J-J@RN@J)@Y
++            err=float(np.linalg.norm(eff/h**power-target,2))
++            invscaled=float(h**power*np.linalg.norm(np.linalg.inv(eff),2))
++            print(name,h,err,invscaled,flush=True)
++            if previous is not None and not err<previous*.7:raise AssertionError('wrong remainder scaling')
++            previous=err
++            out.append(dict(name=name,h=h,scaled_error=err,scaled_inverse=invscaled))
++    return out
++
++def autodiff_checks():
++    sys.path.insert(0,str(L.UPSTREAM.parent))
++    import full4d_diagnostic as original
++    import jax
++    jax.config.update('jax_enable_x64',True)
++    import jax.numpy as j
++    a=np.zeros(6144);E=np.tile(np.eye(4),(4,4,4,4,1,1));grid=np.indices((4,4,4,4))
++    fun=jax.jit(lambda de:jax.jvp(lambda ee:original.grad(j.array(a),ee),(j.array(E),),(de,))[1])
++    rng=np.random.default_rng(20261015);out=[]
++    for modes in [(0,1,1,0),(1,2,3,2)]:
++        phase=(1j)**sum(k*grid[r] for r,k in enumerate(modes));q=rng.normal(size=10)+1j*rng.normal(size=10)
++        field=np.real(phase[...,None]*q);V=np.zeros_like(E)
++        for i,(r,t) in enumerate(L.PACK):V[...,r,t]=V[...,t,r]=field[...,i]
++        de=np.array(L.eta.tolist(),float)@V/2
++        actual=np.array(fun(j.array(de))).reshape(4,4,4,4,24)
++        C=np.array(L.mixed([s.I**k for k in modes]).tolist(),complex)
++        expected=np.real(phase[...,None]*(C@q))
++        err=float(np.max(abs(actual-expected)))
++        if err>1e-11:raise AssertionError('literal full-action mixed derivative disagrees')
++        out.append({'modes':modes,'complete_rows':6144,'max_error':err})
++    return out
++
++def main():
++    ap=argparse.ArgumentParser();ap.add_argument('--autodiff',action='store_true');args=ap.parse_args()
++    out={'status':'FLOATING_POINT_DIAGNOSTICS_NOT_PROOF','expansion':expansion_checks()}
++    if args.autodiff:out['independent_full_action_autodiff']=autodiff_checks()
++    (HERE/'diagnostic_receipt.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
++if __name__=='__main__':main()
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..52e0d8a8e52ca7759e0e5e370d962ddabdeedcae
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json
+@@ -0,0 +1,63 @@
++{
++  "status": "FLOATING_POINT_DIAGNOSTICS_NOT_PROOF",
++  "expansion": [
++    {
++      "name": "transverse_to_resonance",
++      "h": 0.01,
++      "scaled_error": 0.0015910344609860634,
++      "scaled_inverse": 3.518187013263843
++    },
++    {
++      "name": "transverse_to_resonance",
++      "h": 0.005,
++      "scaled_error": 0.0007958658073298271,
++      "scaled_inverse": 3.5090779211780485
++    },
++    {
++      "name": "transverse_to_resonance",
++      "h": 0.0025,
++      "scaled_error": 0.00039802229378514735,
++      "scaled_inverse": 3.5045350950998073
++    },
++    {
++      "name": "tangent_noncharacteristic",
++      "h": 0.01,
++      "scaled_error": 4.997272445976367e-05,
++      "scaled_inverse": 2.2411144961726848
++    },
++    {
++      "name": "tangent_noncharacteristic",
++      "h": 0.005,
++      "scaled_error": 1.249267760986351e-05,
++      "scaled_inverse": 2.2412976551552726
++    },
++    {
++      "name": "tangent_noncharacteristic",
++      "h": 0.0025,
++      "scaled_error": 3.123138252157249e-06,
++      "scaled_inverse": 2.241343447049901
++    }
++  ],
++  "independent_full_action_autodiff": [
++    {
++      "modes": [
++        0,
++        1,
++        1,
++        0
++      ],
++      "complete_rows": 6144,
++      "max_error": 4.440892098500626e-16
++    },
++    {
++      "modes": [
++        1,
++        2,
++        3,
++        2
++      ],
++      "complete_rows": 6144,
++      "max_error": 2.220446049250313e-16
++    }
++  ]
++}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..9dc13f614553f8f4ea84fe7060f4f809ea6a7f4f
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py
+@@ -0,0 +1,34 @@
++#!/usr/bin/env python3
++"""Execute actual formula mutants, not only changed manifest checks."""
++from pathlib import Path
++import tempfile,shutil,subprocess,sys,json,os,argparse
++import linear as owned_input
++HERE=Path(__file__).resolve().parent
++CASES=[
++ ('wrong_forward_coframe','d=s.Matrix([1/x - 1 for x in z])','d=s.Matrix([x - 1 for x in z])'),
++ ('wrong_compensation_sign','links=[(x-1)*omega for x in z]','links=[-(x-1)*omega for x in z]'),
++ ('wrong_offdiagonal_Gram','V[a,b]=V[b,a]=1','V[a,b]=V[b,a]=(1 if a==b else s.Rational(1,2))'),
++ ('wrong_dual_symbol','Cd=mixed([1/x for x in z]).T','Cd=mixed(z).T'),
++ ('kernel_not_retained_in_inverse','R=simplify((J+P).inv()-P)','R=simplify((J+P).inv()+P)'),
++ ('wrong_phase_second_derivative','DD[i,j][aa,bb]-=powers[i]*powers[j]*val','DD[i,j][aa,bb]+=powers[i]*powers[j]*val'),
++ ('missing_Schur_term','-U[i].conjugate().T*R*U[j]','+0*U[i].conjugate().T*R*U[j]'),
++]
++def main():
++ ap=argparse.ArgumentParser();ap.add_argument("--write",action="store_true");args=ap.parse_args()
++ report=[]
++ for name,old,new in CASES:
++  with tempfile.TemporaryDirectory(prefix='d0_joint_ward_mutant_') as t:
++   root=Path(t);src=root/HERE.name;src.mkdir()
++   oldsrc=owned_input.UPSTREAM.parent
++   dest=root/oldsrc.name;dest.mkdir();shutil.copy2(oldsrc/'symbol.py',dest/'symbol.py')
++   shutil.copy2(HERE/'verify.py',src/'verify.py')
++   text=(HERE/'linear.py').read_text()
++   if text.count(old)!=1:raise RuntimeError('mutation anchor is not unique: '+name)
++   (src/'linear.py').write_text(text.replace(old,new))
++   proc=subprocess.run([sys.executable,str(src/'verify.py'),'--mathematics-only'],cwd=src,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=180,env={**os.environ,'OPENBLAS_NUM_THREADS':'1','PYTHONDONTWRITEBYTECODE':'1'})
++   if proc.returncode==0 or 'AssertionError' not in proc.stdout:raise AssertionError('mutation did not fail on mathematics: '+name+'\n'+proc.stdout[-2000:])
++   row={'name':name,'rejected':True,'returncode':proc.returncode,'last_line':proc.stdout.strip().splitlines()[-1]};report.append(row);print(row,flush=True)
++ result={'status':'ALL_EXECUTED_MATHEMATICAL_MUTANTS_REJECTED','cases':report}
++ if args.write:(HERE/'hostile_receipt.json').write_text(json.dumps(result,indent=2)+'\n')
++ elif result!=json.loads((HERE/'hostile_receipt.json').read_text()):raise AssertionError('HOSTILE_RECEIPT_CHANGED')
++if __name__=='__main__':main()
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..d3928f9686f324582b2e7d7d1e427ac17cb10639
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json
+@@ -0,0 +1,47 @@
++{
++  "status": "ALL_EXECUTED_MATHEMATICAL_MUTANTS_REJECTED",
++  "cases": [
++    {
++      "name": "wrong_forward_coframe",
++      "rejected": true,
++      "returncode": 1,
++      "last_line": "AssertionError: all_34_by_4_generic_Ward_coefficients"
++    },
++    {
++      "name": "wrong_compensation_sign",
++      "rejected": true,
++      "returncode": 1,
++      "last_line": "AssertionError: all_34_by_4_generic_Ward_coefficients"
++    },
++    {
++      "name": "wrong_offdiagonal_Gram",
++      "rejected": true,
++      "returncode": 1,
++      "last_line": "AssertionError: all_34_by_4_generic_Ward_coefficients"
++    },
++    {
++      "name": "wrong_dual_symbol",
++      "rejected": true,
++      "returncode": 1,
++      "last_line": "AssertionError: all_34_by_4_generic_Ward_coefficients"
++    },
++    {
++      "name": "kernel_not_retained_in_inverse",
++      "rejected": true,
++      "returncode": 1,
++      "last_line": "AssertionError: range_inverse_keeps_kernel_equations"
++    },
++    {
++      "name": "wrong_phase_second_derivative",
++      "rejected": true,
++      "returncode": 1,
++      "last_line": "AssertionError: tangent_second_pencil_all_coefficients"
++    },
++    {
++      "name": "missing_Schur_term",
++      "rejected": true,
++      "returncode": 1,
++      "last_line": "AssertionError: tangent_second_pencil_all_coefficients"
++    }
++  ]
++}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..686ad701874dd913916b58ae423c10800cc491b6
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py
+@@ -0,0 +1,106 @@
++"""Literal naked-star joint flat symbol; no nonlinear gauge is installed."""
++from pathlib import Path
++import importlib.util,hashlib,tempfile
++from itertools import combinations
++import sympy as s
++
++# Prefer a verified expanded input; otherwise consume the already-published capsule.
++# Extraction is temporary, never a second repository owner.
++UPSTREAM = Path(__file__).resolve().parent.parent/'d0_full_four_dimensional_sheet_2026-10-15'/'symbol.py'
++_TEMP_INPUT=None
++if not UPSTREAM.is_file():
++    loader=Path(__file__).resolve().parent.parent/'d0_full4d_intake_2026-10-15'/'restore.py'
++    raw=loader.read_bytes()
++    blob=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
++    if blob!='1512bf6d2907209a753c7291fc7a1a47df5f81a7':raise RuntimeError('PUBLISHED_RESTORE_OWNER_CHANGED')
++    spec=importlib.util.spec_from_file_location('d0_existing_full4d_intake',loader)
++    mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
++    _TEMP_INPUT=tempfile.TemporaryDirectory(prefix='d0-ward-owned-input-')
++    UPSTREAM=mod.restore(Path(_TEMP_INPUT.name))/'symbol.py'
++if hashlib.sha256(UPSTREAM.read_bytes()).hexdigest()!='37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab':
++    raise RuntimeError('LITERAL_SYMBOL_INPUT_CHANGED')
++_spec=importlib.util.spec_from_file_location('d0_declared_symbol_input',UPSTREAM)
++if _spec is None or _spec.loader is None: raise RuntimeError('missing input symbol')
++_owner=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_owner)
++PAIR,eta,GEN,G2,STAR,wedge,symbol=[getattr(_owner,k) for k in ('PAIR','eta','GEN','G2','STAR','wedge','symbol')]
++PACK=[(i,j) for i in range(4) for j in range(i,4)]
++
++def mixed(z):
++    """C=partial_a partial_g A: all ten true covariant Gram slots."""
++    out=s.zeros(24,10);I=s.eye(4)
++    for r,t in PAIR:
++        u,v=[a for a in range(4) if a not in (r,t)]
++        seq=[r,t,u,v];sg=(-1)**sum(seq[i]>seq[j] for i,j in combinations(range(4),2))
++        for k,(a,b) in enumerate(PACK):
++            V=s.zeros(4); V[a,b]=V[b,a]=1
++            dE=eta*V/2
++            dw=sg*(wedge(dE[:,u],I[:,v])+wedge(I[:,u],dE[:,v])).T*G2*STAR
++            for alpha,G in enumerate(GEN):
++                Ge=G*eta;val=(dw*s.Matrix([Ge[x,y] for x,y in PAIR]))[0]
++                out[r*6+alpha,k]+=(1-1/z[t])*val
++                out[t*6+alpha,k]+=(1/z[r]-1)*val
++    return out.applyfunc(s.expand)
++
++def joint(z):
++    z=list(map(s.sympify,z))
++    H=symbol(s.eye(4),z);C=mixed(z)
++    Cd=mixed([1/x for x in z]).T
++    return s.BlockMatrix([[s.zeros(10),Cd],[C,H]]).as_explicit()
++
++def backward_lift(z):
++    """Exact quadratic-null lift; different from the old forward coframe lift."""
++    z=list(map(s.sympify,z))
++    d=s.Matrix([1/x - 1 for x in z]);cols=[]
++    for a in range(4):
++        e=s.eye(4)[:,a]*d.T
++        q=e.T*eta+eta*e
++        omega=e-eta*q/2
++        links=[(x-1)*omega for x in z]
++        cols.append(s.Matrix([q[i,j] for i,j in PACK]+[A[i,j] for A in links for i,j in PAIR]))
++    return s.Matrix.hstack(*cols).applyfunc(s.expand)
++
++def simplify(M): return M.applyfunc(s.simplify)
++
++def resonance():
++    z=[s.S.One,s.I,s.I,s.S.One];J=joint(z);H=J[10:,10:];C=J[10:,:10]
++    Z=s.Matrix.hstack(*J.nullspace())
++    P=simplify(Z*(Z.conjugate().T*Z).inv()*Z.conjugate().T)
++    R=simplify((J+P).inv()-P)
++    G=backward_lift(z)
++    Pg=simplify(G*(G.conjugate().T*G).inv()*G.conjugate().T)
++    Pphysical=simplify(P-Pg)
++    Y0=s.Matrix.hstack(*Pphysical.columnspace())
++    # This is a coordinate change of the two-dimensional quotient, not a selector.
++    Y=Y0*s.Matrix([[2,2],[0,1]])
++    return dict(z=z,J=J,H=H,C=C,Z=Z,P=P,R=R,G=G,Pg=Pg,Pphysical=Pphysical,Y=simplify(Y))
++
++def phase_jets(J,z,at):
++    """Exact angle derivatives from Laurent coefficients, no angle samples."""
++    D=[s.zeros(J.rows) for _ in range(4)]
++    DD={(i,j):s.zeros(J.rows) for i in range(4) for j in range(i,4)}
++    for aa in range(J.rows):
++        for bb in range(J.cols):
++            for term in s.Add.make_args(s.expand(J[aa,bb])):
++                pp=term.as_powers_dict();powers=[int(pp.get(x,0)) for x in z]
++                co=s.cancel(term/s.prod(x**e for x,e in zip(z,powers)))
++                if not co.is_Rational: raise AssertionError(('not a rational Laurent coefficient',term))
++                val=co*s.prod(s.sympify(x)**e for x,e in zip(at,powers))
++                for i in range(4): D[i][aa,bb]+=s.I*powers[i]*val
++                for i in range(4):
++                    for j in range(i,4): DD[i,j][aa,bb]-=powers[i]*powers[j]*val
++    return [v.applyfunc(s.expand) for v in D],{ij:m.applyfunc(s.expand) for ij,m in DD.items()}
++
++def effective_jets(data=None):
++    d=resonance() if data is None else data
++    z=s.symbols('z0:4',nonzero=True);k=s.symbols('k0:4',real=True)
++    D,DD=phase_jets(joint(z),z,d['z']);Y=d['Y'];R=d['R']
++    U=[(a*Y).applyfunc(s.expand) for a in D]
++    # Y*Y=I/7; multiplication by 7 reads this form in orthonormal coordinates.
++    first=sum((7*k[i]*(Y.conjugate().T*D[i]*Y) for i in range(4)),s.zeros(2)).applyfunc(s.expand)
++    second=s.zeros(2)
++    for i in range(4):
++        for j in range(i,4):
++            c=Y.conjugate().T*DD[i,j]*Y/(2 if i==j else 1)-U[i].conjugate().T*R*U[j]
++            if i!=j: c-=U[j].conjugate().T*R*U[i]
++            second+=7*k[i]*k[j]*c.applyfunc(s.expand)
++    return dict(k=k,D=D,DD=DD,first=simplify(first),second=simplify(second),tangent=simplify(second.subs(k[2],-k[1])))
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..3248403c7c80ac1a72d91eef092bdc42d07045c5
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json
+@@ -0,0 +1,115 @@
++{
++  "schema": "d0-joint-flat-ward-resonance/1",
++  "status": "PASS_EXACT_FLAT_QUADRATIC_WARD_AND_JOINT_RESONANCE_REDUCTION",
++  "checks": [
++    "all_34_by_4_generic_Ward_coefficients",
++    "reciprocal_transpose_full_joint_symbol",
++    "dual_all_four_source_identities",
++    "ten_metric_and_twenty_four_connection_rows",
++    "translation_map_zero_only_at_trivial_character",
++    "complete_rank_four_chart_0",
++    "complete_rank_four_chart_1",
++    "complete_rank_four_chart_2",
++    "complete_rank_four_chart_3",
++    "all_packed_source_factors",
++    "actual_quarter_phase_connection_rank",
++    "actual_augmented_connection_rank",
++    "full_joint_rank",
++    "complete_joint_kernel_six",
++    "actual_translation_rank_four",
++    "actual_extra_kernel_rank_two",
++    "Hermitian_joint",
++    "Hermitian_kernel",
++    "Hermitian_inverse",
++    "Hermitian_translation",
++    "Hermitian_remaining",
++    "orthogonal_projector_kernel",
++    "orthogonal_projector_translation",
++    "orthogonal_projector_remaining",
++    "translations_are_inside_joint_radical",
++    "left_complete_range_inverse",
++    "right_complete_range_inverse",
++    "range_inverse_keeps_kernel_equations",
++    "exact_inverse_row_bound_0",
++    "exact_inverse_row_bound_1",
++    "exact_inverse_row_bound_2",
++    "exact_inverse_row_bound_3",
++    "exact_inverse_row_bound_4",
++    "exact_inverse_row_bound_5",
++    "exact_inverse_row_bound_6",
++    "exact_inverse_row_bound_7",
++    "exact_inverse_row_bound_8",
++    "exact_inverse_row_bound_9",
++    "exact_inverse_row_bound_10",
++    "exact_inverse_row_bound_11",
++    "exact_inverse_row_bound_12",
++    "exact_inverse_row_bound_13",
++    "exact_inverse_row_bound_14",
++    "exact_inverse_row_bound_15",
++    "exact_inverse_row_bound_16",
++    "exact_inverse_row_bound_17",
++    "exact_inverse_row_bound_18",
++    "exact_inverse_row_bound_19",
++    "exact_inverse_row_bound_20",
++    "exact_inverse_row_bound_21",
++    "exact_inverse_row_bound_22",
++    "exact_inverse_row_bound_23",
++    "exact_inverse_row_bound_24",
++    "exact_inverse_row_bound_25",
++    "exact_inverse_row_bound_26",
++    "exact_inverse_row_bound_27",
++    "exact_inverse_row_bound_28",
++    "exact_inverse_row_bound_29",
++    "exact_inverse_row_bound_30",
++    "exact_inverse_row_bound_31",
++    "exact_inverse_row_bound_32",
++    "exact_inverse_row_bound_33",
++    "inverse_row_bound_attained",
++    "inverse_uniform_constant_below_five",
++    "inverse_Frobenius_exact",
++    "connection_kernel_coupling_rank_one",
++    "remaining_kernel_frame_normalization",
++    "remaining_kernel_not_translation",
++    "full_source_solution_identity",
++    "incompatible_source_is_not_solved_by_projection",
++    "first_resonant_pencil_all_four_directions",
++    "tangent_second_pencil_all_coefficients",
++    "tangent_characteristic_polynomial",
++    "tangent_regular_envelope_example",
++    "characteristic_directions_not_erased",
++    "all_six_first_tangent_rows_zero",
++    "transported_Ward_first_jet_0",
++    "transported_Ward_first_jet_1",
++    "transported_Ward_first_jet_2",
++    "transported_Ward_first_jet_3",
++    "on_shell_metric_source_Ward_uses_connection_equations"
++  ],
++  "check_count": 81,
++  "joint_dimension": 34,
++  "joint_rank_at_quarter_phase": 28,
++  "kernel_dimension": 6,
++  "translation_image_dimension": 4,
++  "remaining_resonant_dimension": 2,
++  "inverse_lp_bound": "(7+4*sqrt(2))/3 < 5",
++  "first_effective": "2*(k1+k2)*diag(1,-1)/7",
++  "second_effective_on_k2_minus_k1": [
++    [
++      "k0**2/7 - 3*k1**2/7",
++      "-k0*k3/7 - k1**2/7"
++    ],
++    [
++      "-k0*k3/7 - k1**2/7",
++      "5*k1**2/7 + k3**2/7"
++    ]
++  ],
++  "analytic_modal_inverse_exponents": {
++    "nonzero_k1_plus_k2": 1,
++    "tangent_noncharacteristic": 2
++  },
++  "new_Lean_compilation": false,
++  "nonlinear_finite_gauge_proved": false,
++  "uniform_entire_four_torus_inverse_proved": false,
++  "full_D0_action_binding_proved": false,
++  "nonlinear_refining_curved_sheet_proved": false,
++  "physical_GR_closed": false
++}
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/replay.log b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/replay.log
+new file mode 100644
+index 0000000000000000000000000000000000000000..529486b4b82364a248010fd9e60103d9a60e2e5f
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/replay.log
+@@ -0,0 +1,172 @@
++PASS all_34_by_4_generic_Ward_coefficients
++PASS reciprocal_transpose_full_joint_symbol
++PASS dual_all_four_source_identities
++PASS ten_metric_and_twenty_four_connection_rows
++PASS translation_map_zero_only_at_trivial_character
++PASS complete_rank_four_chart_0
++PASS complete_rank_four_chart_1
++PASS complete_rank_four_chart_2
++PASS complete_rank_four_chart_3
++PASS all_packed_source_factors
++PASS actual_quarter_phase_connection_rank
++PASS actual_augmented_connection_rank
++PASS full_joint_rank
++PASS complete_joint_kernel_six
++PASS actual_translation_rank_four
++PASS actual_extra_kernel_rank_two
++PASS Hermitian_joint
++PASS Hermitian_kernel
++PASS Hermitian_inverse
++PASS Hermitian_translation
++PASS Hermitian_remaining
++PASS orthogonal_projector_kernel
++PASS orthogonal_projector_translation
++PASS orthogonal_projector_remaining
++PASS translations_are_inside_joint_radical
++PASS left_complete_range_inverse
++PASS right_complete_range_inverse
++PASS range_inverse_keeps_kernel_equations
++PASS exact_inverse_row_bound_0
++PASS exact_inverse_row_bound_1
++PASS exact_inverse_row_bound_2
++PASS exact_inverse_row_bound_3
++PASS exact_inverse_row_bound_4
++PASS exact_inverse_row_bound_5
++PASS exact_inverse_row_bound_6
++PASS exact_inverse_row_bound_7
++PASS exact_inverse_row_bound_8
++PASS exact_inverse_row_bound_9
++PASS exact_inverse_row_bound_10
++PASS exact_inverse_row_bound_11
++PASS exact_inverse_row_bound_12
++PASS exact_inverse_row_bound_13
++PASS exact_inverse_row_bound_14
++PASS exact_inverse_row_bound_15
++PASS exact_inverse_row_bound_16
++PASS exact_inverse_row_bound_17
++PASS exact_inverse_row_bound_18
++PASS exact_inverse_row_bound_19
++PASS exact_inverse_row_bound_20
++PASS exact_inverse_row_bound_21
++PASS exact_inverse_row_bound_22
++PASS exact_inverse_row_bound_23
++PASS exact_inverse_row_bound_24
++PASS exact_inverse_row_bound_25
++PASS exact_inverse_row_bound_26
++PASS exact_inverse_row_bound_27
++PASS exact_inverse_row_bound_28
++PASS exact_inverse_row_bound_29
++PASS exact_inverse_row_bound_30
++PASS exact_inverse_row_bound_31
++PASS exact_inverse_row_bound_32
++PASS exact_inverse_row_bound_33
++PASS inverse_row_bound_attained
++PASS inverse_uniform_constant_below_five
++PASS inverse_Frobenius_exact
++PASS connection_kernel_coupling_rank_one
++PASS remaining_kernel_frame_normalization
++PASS remaining_kernel_not_translation
++PASS full_source_solution_identity
++PASS incompatible_source_is_not_solved_by_projection
++PASS first_resonant_pencil_all_four_directions
++PASS tangent_second_pencil_all_coefficients
++PASS tangent_characteristic_polynomial
++PASS tangent_regular_envelope_example
++PASS characteristic_directions_not_erased
++PASS all_six_first_tangent_rows_zero
++PASS transported_Ward_first_jet_0
++PASS transported_Ward_first_jet_1
++PASS transported_Ward_first_jet_2
++PASS transported_Ward_first_jet_3
++PASS on_shell_metric_source_Ward_uses_connection_equations
++PASS_EXACT_FLAT_QUADRATIC_WARD_AND_JOINT_RESONANCE_REDUCTION 81 named exact conditions
++PASS all_34_by_4_generic_Ward_coefficients
++PASS reciprocal_transpose_full_joint_symbol
++PASS dual_all_four_source_identities
++PASS ten_metric_and_twenty_four_connection_rows
++PASS translation_map_zero_only_at_trivial_character
++PASS complete_rank_four_chart_0
++PASS complete_rank_four_chart_1
++PASS complete_rank_four_chart_2
++PASS complete_rank_four_chart_3
++PASS all_packed_source_factors
++PASS actual_quarter_phase_connection_rank
++PASS actual_augmented_connection_rank
++PASS full_joint_rank
++PASS complete_joint_kernel_six
++PASS actual_translation_rank_four
++PASS actual_extra_kernel_rank_two
++PASS Hermitian_joint
++PASS Hermitian_kernel
++PASS Hermitian_inverse
++PASS Hermitian_translation
++PASS Hermitian_remaining
++PASS orthogonal_projector_kernel
++PASS orthogonal_projector_translation
++PASS orthogonal_projector_remaining
++PASS translations_are_inside_joint_radical
++PASS left_complete_range_inverse
++PASS right_complete_range_inverse
++PASS range_inverse_keeps_kernel_equations
++PASS exact_inverse_row_bound_0
++PASS exact_inverse_row_bound_1
++PASS exact_inverse_row_bound_2
++PASS exact_inverse_row_bound_3
++PASS exact_inverse_row_bound_4
++PASS exact_inverse_row_bound_5
++PASS exact_inverse_row_bound_6
++PASS exact_inverse_row_bound_7
++PASS exact_inverse_row_bound_8
++PASS exact_inverse_row_bound_9
++PASS exact_inverse_row_bound_10
++PASS exact_inverse_row_bound_11
++PASS exact_inverse_row_bound_12
++PASS exact_inverse_row_bound_13
++PASS exact_inverse_row_bound_14
++PASS exact_inverse_row_bound_15
++PASS exact_inverse_row_bound_16
++PASS exact_inverse_row_bound_17
++PASS exact_inverse_row_bound_18
++PASS exact_inverse_row_bound_19
++PASS exact_inverse_row_bound_20
++PASS exact_inverse_row_bound_21
++PASS exact_inverse_row_bound_22
++PASS exact_inverse_row_bound_23
++PASS exact_inverse_row_bound_24
++PASS exact_inverse_row_bound_25
++PASS exact_inverse_row_bound_26
++PASS exact_inverse_row_bound_27
++PASS exact_inverse_row_bound_28
++PASS exact_inverse_row_bound_29
++PASS exact_inverse_row_bound_30
++PASS exact_inverse_row_bound_31
++PASS exact_inverse_row_bound_32
++PASS exact_inverse_row_bound_33
++PASS inverse_row_bound_attained
++PASS inverse_uniform_constant_below_five
++PASS inverse_Frobenius_exact
++PASS connection_kernel_coupling_rank_one
++PASS remaining_kernel_frame_normalization
++PASS remaining_kernel_not_translation
++PASS full_source_solution_identity
++PASS incompatible_source_is_not_solved_by_projection
++PASS first_resonant_pencil_all_four_directions
++PASS tangent_second_pencil_all_coefficients
++PASS tangent_characteristic_polynomial
++PASS tangent_regular_envelope_example
++PASS characteristic_directions_not_erased
++PASS all_six_first_tangent_rows_zero
++PASS transported_Ward_first_jet_0
++PASS transported_Ward_first_jet_1
++PASS transported_Ward_first_jet_2
++PASS transported_Ward_first_jet_3
++PASS on_shell_metric_source_Ward_uses_connection_equations
++PASS_EXACT_FLAT_QUADRATIC_WARD_AND_JOINT_RESONANCE_REDUCTION 81 named exact conditions
++{'name': 'wrong_forward_coframe', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: all_34_by_4_generic_Ward_coefficients'}
++{'name': 'wrong_compensation_sign', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: all_34_by_4_generic_Ward_coefficients'}
++{'name': 'wrong_offdiagonal_Gram', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: all_34_by_4_generic_Ward_coefficients'}
++{'name': 'wrong_dual_symbol', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: all_34_by_4_generic_Ward_coefficients'}
++{'name': 'kernel_not_retained_in_inverse', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: range_inverse_keeps_kernel_equations'}
++{'name': 'wrong_phase_second_derivative', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: tangent_second_pencil_all_coefficients'}
++{'name': 'missing_Schur_term', 'rejected': True, 'returncode': 1, 'last_line': 'AssertionError: tangent_second_pencil_all_coefficients'}
++PASS_JOINT_LATTICE_WARD_AND_RESONANCE_NOT_NONLINEAR_GR
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log
+new file mode 100644
+index 0000000000000000000000000000000000000000..4bc070c0e2882f1f6d050d257f564db73bf4669f
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log
+@@ -0,0 +1,51 @@
++hessian site 0
++hessian site 1
++hessian site 2
++hessian site 3
++hessian site 4
++hessian site 5
++hessian site 6
++hessian site 7
++hessian site 8
++hessian site 9
++hessian site 10
++hessian site 11
++hessian site 12
++hessian site 13
++hessian site 14
++hessian site 15
++hessian site 0
++hessian site 1
++hessian site 2
++hessian site 3
++hessian site 4
++hessian site 5
++hessian site 6
++hessian site 7
++hessian site 8
++hessian site 9
++hessian site 10
++hessian site 11
++hessian site 12
++hessian site 13
++hessian site 14
++hessian site 15
++EXACT ROOT {'radius': 2.2737367544323206e-13, 'contraction_upper': 1.232213056621168e-06, 'displacement_upper': 1.7129739995119345e-18, 'image_radius_upper': 1.9931468111250295e-18, 'variables': 384, 'all_connection_rows': 6144, 'test': 'strict outward Banach enclosure'}
++BLOCH 0 0 eta 3.574403742699774e-06 inverse norm bound 42086.76391795605
++BLOCH 0 1 eta 5.096982999515847e-07 inverse norm bound 5480.770530740964
++BLOCH 0 2 eta 5.034690546784476e-06 inverse norm bound 63601.799926074455
++BLOCH 0 3 eta 5.096982999515847e-07 inverse norm bound 5480.770530740964
++BLOCH 1 0 eta 3.386763625810448e-07 inverse norm bound 3785.3779410291563
++BLOCH 1 1 eta 0.0007510706881723443 inverse norm bound 7813789.387831605
++BLOCH 1 2 eta 1.738015597908691e-07 inverse norm bound 1863.5979545121186
++BLOCH 1 3 eta 5.080588342310781e-06 inverse norm bound 50515.597028489996
++BLOCH 2 0 eta 1.9022421288241149e-06 inverse norm bound 24584.87827686763
++BLOCH 2 1 eta 3.7937726409245616e-07 inverse norm bound 4093.1163162868966
++BLOCH 2 2 eta 3.4310676789662583e-06 inverse norm bound 42133.78168303846
++BLOCH 2 3 eta 3.7937726409245616e-07 inverse norm bound 4093.1163162868966
++BLOCH 3 0 eta 3.386763625810448e-07 inverse norm bound 3785.3779410291563
++BLOCH 3 1 eta 5.080588342310781e-06 inverse norm bound 50515.597028489996
++BLOCH 3 2 eta 1.738015597908691e-07 inverse norm bound 1863.5979545121186
++BLOCH 3 3 eta 0.0007510706881723443 inverse norm bound 7813789.387831605
++FULL PASS 15931462.919009278
++PASS_FINITE_FULL_4D_SHEET 56 named structural conditions; interval gates separately in receipt
+diff --git a/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..2b207caf40a3fcdbfae484166c3eab657895af4a
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py
+@@ -0,0 +1,108 @@
++#!/usr/bin/env python3
++"""Exact identities. This is not a nonlinear/continuum GR certificate."""
++import argparse,hashlib,json
++from pathlib import Path
++import sympy as s
++import linear as L
++HERE=Path(__file__).resolve().parent
++CHECKS=[]
++def ck(name,yes):
++    if not bool(yes): raise AssertionError(name)
++    CHECKS.append(name)
++    print("PASS",name,flush=True)
++def zero(M): return M.applyfunc(lambda x:s.cancel(s.expand(x)))==s.zeros(*M.shape)
++def run():
++    z=s.symbols('z0:4',nonzero=True);J=L.joint(z);G=L.backward_lift(z)
++    ck('all_34_by_4_generic_Ward_coefficients',zero(J*G))
++    ck('reciprocal_transpose_full_joint_symbol',zero(J-L.joint([1/x for x in z]).T))
++    ck('dual_all_four_source_identities',zero(L.backward_lift([1/x for x in z]).T*J))
++    ck('ten_metric_and_twenty_four_connection_rows',J.shape==(34,34) and G.shape==(34,4))
++    ck('translation_map_zero_only_at_trivial_character',L.backward_lift([1,1,1,1])==s.zeros(34,4))
++    # Rank-four proof uses a nonzero backward component; four algebraic charts.
++    d=s.symbols('d0:4');w=s.symbols('w0:4');Q=s.Matrix(d)*s.Matrix(w).T+s.Matrix(w)*s.Matrix(d).T
++    for a in range(4):
++        rows=[Q[a,a]]+[Q[i,a] for i in range(4) if i!=a]
++        cols=[w[a]]+[w[i] for i in range(4) if i!=a]
++        ck('complete_rank_four_chart_'+str(a),s.expand(s.Matrix(rows).jacobian(cols).det()-2*d[a]**4)==0)
++    # Source packing: off-diagonal dual entries must be half of packed covector.
++    q=s.symbols('q0:10');t=s.symbols('t0:10');QM=s.zeros(4);TM=s.zeros(4)
++    for n,(a,b) in enumerate(L.PACK):
++        QM[a,b]=QM[b,a]=q[n];TM[a,b]=TM[b,a]=t[n]/(1 if a==b else 2)
++    ck('all_packed_source_factors',s.expand(s.trace(TM.T*QM)-sum(a*b for a,b in zip(t,q)))==0)
++    data=L.resonance();J0,H,C,Z,P,R,G0,Y=[data[k] for k in ('J','H','C','Z','P','R','G','Y')]
++    ck('actual_quarter_phase_connection_rank',H.rank()==22)
++    ck('actual_augmented_connection_rank',H.row_join(C).rank()==23)
++    ck('full_joint_rank',J0.rank()==28)
++    ck('complete_joint_kernel_six',Z.shape==(34,6) and zero(J0*Z))
++    ck('actual_translation_rank_four',G0.rank()==4)
++    ck('actual_extra_kernel_rank_two',data['Pphysical'].rank()==2)
++    for name,A in [('joint',J0),('kernel',P),('inverse',R),('translation',data['Pg']),('remaining',data['Pphysical'])]:
++        ck('Hermitian_'+name,zero(A-A.conjugate().T))
++    for name,A in [('kernel',P),('translation',data['Pg']),('remaining',data['Pphysical'])]:
++        ck('orthogonal_projector_'+name,zero(A*A-A))
++    ck('translations_are_inside_joint_radical',zero(P*data['Pg']-data['Pg']))
++    ck('left_complete_range_inverse',zero(J0*R-(s.eye(34)-P)))
++    ck('right_complete_range_inverse',zero(R*J0-(s.eye(34)-P)))
++    ck('range_inverse_keeps_kernel_equations',zero(R*P) and P.rank()==6)
++    bound=(7+4*s.sqrt(2))/3
++    rows=[s.simplify(sum(s.Abs(v) for v in R[i,:])) for i in range(34)]
++    for i,r in enumerate(rows): ck('exact_inverse_row_bound_'+str(i),s.simplify(bound-r)>=0)
++    ck('inverse_row_bound_attained',any(s.simplify(bound-r)==0 for r in rows))
++    ck('inverse_uniform_constant_below_five',bound<5)
++    ck('inverse_Frobenius_exact',s.simplify(s.trace(R.conjugate().T*R))==s.Rational(37571,1764))
++    HZ=s.Matrix.hstack(*H.nullspace());mix=(C.conjugate().T*HZ).applyfunc(s.simplify)
++    ck('connection_kernel_coupling_rank_one',mix.rank()==1 and mix[:,0]==s.zeros(10,1))
++    ck('remaining_kernel_frame_normalization',zero(Y.conjugate().T*Y-s.eye(2)/7))
++    ck('remaining_kernel_not_translation',zero(G0.conjugate().T*Y))
++    # Exact solution family for every compatible source b=J0 v.
++    ck('full_source_solution_identity',zero(J0*R*J0-J0))
++    ck('incompatible_source_is_not_solved_by_projection',not zero(P[:,1]) and zero(J0*P))
++    jets=L.effective_jets(data);k0,k1,k2,k3=jets['k']
++    expected=2*(k1+k2)*s.diag(1,-1)/7
++    ck('first_resonant_pencil_all_four_directions',zero(jets['first']-expected))
++    tangent=s.Matrix([[k0**2-3*k1**2,-k0*k3-k1**2],[-k0*k3-k1**2,k3**2+5*k1**2]])/7
++    ck('tangent_second_pencil_all_coefficients',zero(jets['tangent']-tangent))
++    det=k1**2*(5*k0**2-2*k0*k3-16*k1**2-3*k3**2)/49
++    ck('tangent_characteristic_polynomial',s.factor(tangent.det()-det)==0)
++    ck('tangent_regular_envelope_example',tangent.subs({k0:0,k1:1,k3:0}).det()==-s.Rational(16,49))
++    ck('characteristic_directions_not_erased',tangent.subs({k0:0,k1:0,k3:0})==s.zeros(2))
++    # Tangent first Schur coefficient vanishes on all six kernel vectors.
++    A1=sum((jets['k'][i]*jets['D'][i] for i in range(4)),s.zeros(34))
++    ck('all_six_first_tangent_rows_zero',zero((Z.conjugate().T*A1*Z).subs(k2,-k1)))
++    # The derivative of the exact lift explains why the second tangent form
++    # descends through the four phase-dependent translation directions.
++    at=dict(zip(z,data['z']))
++    for i in range(4):
++        dG=(s.I*z[i]*G.diff(z[i])).subs(at)
++        ck('transported_Ward_first_jet_'+str(i),zero(jets['D'][i]*G0+J0*dG))
++    ck('on_shell_metric_source_Ward_uses_connection_equations',not zero(G0[10:,:]))
++    result={
++      'schema':'d0-joint-flat-ward-resonance/1',
++      'status':'PASS_EXACT_FLAT_QUADRATIC_WARD_AND_JOINT_RESONANCE_REDUCTION',
++      'checks':CHECKS.copy(),'check_count':len(CHECKS),
++      'joint_dimension':34,'joint_rank_at_quarter_phase':28,'kernel_dimension':6,
++      'translation_image_dimension':4,'remaining_resonant_dimension':2,
++      'inverse_lp_bound':'(7+4*sqrt(2))/3 < 5',
++      'first_effective':'2*(k1+k2)*diag(1,-1)/7',
++      'second_effective_on_k2_minus_k1':[[str(x) for x in row] for row in tangent.tolist()],
++      'analytic_modal_inverse_exponents':{'nonzero_k1_plus_k2':1,'tangent_noncharacteristic':2},
++      'new_Lean_compilation':False,'nonlinear_finite_gauge_proved':False,
++      'uniform_entire_four_torus_inverse_proved':False,'full_D0_action_binding_proved':False,
++      'nonlinear_refining_curved_sheet_proved':False,'physical_GR_closed':False,
++    }
++    return result
++
++def main():
++    ap=argparse.ArgumentParser();ap.add_argument('--write',action='store_true');ap.add_argument('--mathematics-only',action='store_true');args=ap.parse_args()
++    out=run()
++    if args.write:(HERE/'receipt.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
++    elif not args.mathematics_only:
++        expected=json.loads((HERE/'receipt.json').read_text())
++        for key in ('physical_GR_closed','nonlinear_finite_gauge_proved','nonlinear_refining_curved_sheet_proved'):
++            if expected.get(key) is not False:raise AssertionError('FALSE_SCOPE_PROMOTION: '+key)
++        if out!=expected:raise AssertionError('EXACT_RECEIPT_MISMATCH')
++        pins=json.loads((HERE/'MANIFEST.json').read_text())
++        for name,h in pins.items():
++            if hashlib.sha256((HERE/name).read_bytes()).hexdigest()!=h:raise AssertionError('SOURCE_BYTES_CHANGED: '+name)
++    print(out['status'],len(CHECKS),'named exact conditions')
++if __name__=='__main__':main()

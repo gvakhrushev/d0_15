@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-15",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "exact_default_optimized_identical": true,
+  "heat_default_optimized_identical": true,
+  "mutations": {
+    "duplicate_tangent_generator": {
+      "last_error": "RuntimeError: first-jet metric",
+      "rejected": true
+    },
+    "remove_real_second_jet": {
+      "last_error": "RuntimeError: all ten metric directions",
+      "rejected": true
+    },
+    "wrong_signature_reflection": {
+      "last_error": "RuntimeError: observer reflection preserves source rank",
+      "rejected": true
+    }
+  },
+  "mathematical_status": "analytic kinematic germ + exact algebra; thermal limit analytically derived with floating diagnostics",
+  "native_admission": false,
+  "native_action_binding": false,
+  "Einstein_equations_derived_from_core": false,
+  "new_Lean_build": false,
+  "remote_publication": false,
+  "new_task_registered": false,
+  "prior_proof_packages_replayed_this_turn": false,
+  "repo_read_pins": {
+    "main": "fa2b04b9c8aae5a0b8470322d6091712ce56567a",
+    "source_310": "fe2fc53fb9479aba6c8c99c8294d25b444f7a27a",
+    "flow_324_read": "1d0fbb695e4393d01257851337e64bf271fc0c85"
+  },
+  "scope_note": "Source-ref checks are live connector reads. Existing scientific results are inputs with their own scopes; no full repository re-audit."
+}

@@ -65,6 +65,23 @@ Mathematical replay retains the declared upstream full4D capsule ref
 `9fbc75db0a94707dc3105cdfb3f322a14e62a979`; no missing source is replaced by prose.
 This preservation does not install the Ward packet into #310 or expand #322.
 
+## Complete readable research packet, 15 October 2026
+
+The [record-geometry research packet](sources/d0_record_geometry_2026-10-15/README.md)
+now publishes the latest synthesis, full expensive-AI brief, proofs, instructions,
+source programs and recorded results as directly readable text. Its manifest maps
+all 150 recursive text occurrences in the supplied ZIP to 77 unique contents;
+the earlier 21-file strategy capsule is also readable, bringing the combined
+total to 78 unique source texts. The existing capsule and strategic originals
+remain unchanged. No ZIP or base64 decoding is needed to read the evidence.
+
+The packet pins both its historical #310 input and the newer publication-time
+SOURCE, identifies already completed work to avoid repeating it, and provides
+safe text-based replays without executing historical import/patch commands.
+This is additional preservation in #323: #324 retains the only operational
+flow, and the expensive brief continues #310 under its existing ownership.
+No task row, scientific owner, acceptance or parent terminal changes here.
+
 ## Validation and acceptance boundary
 
 The preservation workflow checks only the idea inventory and capsule integrity;
