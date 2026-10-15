@@ -24,3 +24,13 @@ network download, source rewrite or installer is executed. The checker imports t
 old frame definition by its immutable Git blob, not a reconstructed copy of the theory.
 Analytic proofs and exact finite controls are distinguished; there is no new Lean proof
 or independent acceptance of the entire native-to-GR chain.
+
+## Finite native-cylinder continuation
+
+[Golden-cylinder curvature readout](../../A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md)
+consumes this Jacobian and the existing source lift. It replaces the assumed
+continuous normal distribution with four golden histories and an explicit blank/
+two-radius contrast; the quartic error is canceled before variation. A calibrated
+operator identity retains all actual preparation and raw-normalizer jets. This is
+a different declared observable, not a retrospective change of this tube law or
+a physical selection of the native action. [Checks](../d0_golden_cylinder_curvature_2026-10-15/README.md).

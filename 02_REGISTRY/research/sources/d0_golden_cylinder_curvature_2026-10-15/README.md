@@ -1,0 +1,34 @@
+# Golden cylinders -> finite curvature readout -> complete source
+
+[Full proof and physical scope](../../A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md).
+Consumes the existing golden cylinder/refinement owner, the normal Jacobian and
+phase-complete source lift. This is a continuation of #310, not a new task or action.
+
+Four actual two-letter cylinders implement the signed golden expectation. A blank
+plus two nonzero-scale settings eliminate the quartic term algebraically, including
+its normal-frame anisotropy. No continuous error distribution, isotropic fourth
+moment or topological cancellation is required for this new reading. Full normal
+Parseval families and zero-shape spectators are retained.
+
+The calibrated operator identity also holds for coherent or unnormalized actual
+preparations with a positive mixed-cylinder event. Its mass and calibration jets
+are retained, not frozen. This proves preparation-independent source descent for
+the declared geometric readout, not for the unknown complete native Cost-Info.
+
+```sh
+python 02_REGISTRY/research/certificates/a4d_golden_cylinder_curvature_readout_check.py
+python -O 02_REGISTRY/research/certificates/a4d_golden_cylinder_curvature_readout_check.py
+python 02_REGISTRY/research/sources/d0_golden_cylinder_curvature_2026-10-15/test_mutations.py
+```
+
+[Exact output](result.json), [executed mutations](mutations.json),
+[validation](VALIDATION.json), [input pins](INPUTS.json).
+Only Python and SymPy are required. No archives, network calls, Git writes or
+installers are used. The executed flat-record frame is loaded by its actual Git
+blob pin. The native Lean declarations are consumed as existing theorems; this
+packet does not recompile Lean or replay the entire scientific repository.
+
+Physical generation of the geometry-dependent Jacobian observable, selection of
+the calibrated contrast by the common action, all native link/matter equations,
+Lorentz reading and uniform spatial refinement remain open. AF cut compatibility
+here holds at fixed geometric inputs; it is not the required all-mesh theorem.
