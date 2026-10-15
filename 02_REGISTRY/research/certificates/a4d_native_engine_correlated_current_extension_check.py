@@ -44,6 +44,19 @@ OWNER_PATHS = [
     '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.lean',
     '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_output.txt',
     '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json',
+    '02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json',
+    '02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md',
+    '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_certificate.json',
+    '02_REGISTRY/research/certificates/a4d_native_fock_record_binding.lean',
+    '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_results.json',
     '02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py',
     '02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py',
     '02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py',
@@ -365,12 +378,16 @@ def general_gl_frame_guard_obstruction(checks):
     }
 
 def metric_transition_owner_census(checks, metric_update_data):
-    """Replay the two closest owned metric/heat candidates and classify arrows."""
+    """Replay existing metric, heat and AF recording owners and classify arrows."""
     owner_replays = [
         ('02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py',
          'PASS_RECORD_METRIC_CHRONOLOGY'),
         ('02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py',
          'PASS_NATIVE_SOLDERED_HEAT_SOURCE'),
+        ('02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_check.py',
+         'PASS_FIBONACCI_RECORD_ACTIVATION'),
+        ('02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py',
+         'PASS: 169 exact controls;'),
     ]
     outputs = {}
     for relative, expected in owner_replays:
@@ -400,6 +417,36 @@ def metric_transition_owner_census(checks, metric_update_data):
     check('with no on-shell equation built into its definition' in source and
           "no current owner equates the bootstrap's" in source,
           'soldered_heat_source_keeps_transition_and_bootstrap_identification_open', checks)
+    fibonacci = json.loads((ROOT /
+        '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json').read_text())
+    fibonacci_scope = fibonacci['scope']
+    check(fibonacci['status'] == 'PASS' and
+          fibonacci_scope['levels_including_input'] == 4 and
+          fibonacci_scope['minimal_AF_inclusions_in_declared_class'] == 3,
+          'fibonacci_owner_constructs_declared_four_level_recording_tower', checks)
+    check(fibonacci_scope['physical_preparation_instrument_or_refinement_trigger_derived'] is False and
+          fibonacci_scope['full_bootstrap_heat_or_metric_link_source_Ward_or_GR_derived'] is False,
+          'fibonacci_recording_interaction_remains_unadmitted_and_unbound_to_gravity', checks)
+    fibonacci_source = ' '.join((ROOT /
+        '02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md').read_text().lower().split())
+    check('the af tower is not yet welded to the role-phase physical mesh' in fibonacci_source and
+          'an independently admitted `(q,d,b,m)` binding' in fibonacci_source,
+          'fibonacci_owner_leaves_joint_geometric_bridge_open', checks)
+    fock = json.loads((ROOT /
+        '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_certificate.json').read_text())
+    fock_scope = fock['scope']
+    check(fock['status'] == 'PASS' and fock_scope['whole_carrier'] ==
+          'ALL_16_EXTERIOR_COMPONENTS_FOUR_APPARATUS_COPIES',
+          'fock_binding_constructs_full_sixteen_component_record_gate', checks)
+    check(fock_scope['timelike_domain_is_record_invariant'] is False and
+          fock_scope['nonzero_top_grade_domain_is_record_invariant'] is False and
+          fock_scope['actual_joint_metric_transition_or_history_orientation_recovery_derived'] is False,
+          'fixed_q_fock_record_step_needs_joint_metric_or_history_owner', checks)
+    fock_source = ' '.join((ROOT /
+        '02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md').read_text().lower().split())
+    check('the actual endpoint-pairing/metric transition must be derived' in fock_source and
+          'recovery from history or other grades must be actually constructed' in fock_source,
+          'fock_record_binding_rejects_uncharged_metric_or_orientation_reset', checks)
     return {
         'record_metric_chronology': {
             'owned_rule': 'q_plus=-Q+2*w*wT/(wT*Qinv*w)',
@@ -415,8 +462,22 @@ def metric_transition_owner_census(checks, metric_update_data):
             'source_Ward_GR': soldered['source_Ward_GR'],
             'replay': outputs['a4d_native_soldered_heat_source_check'],
         },
-        'scope': 'two previously identified candidate owners inspected; no global owner-completeness claim',
-        'next_missing_arrow': 'an owner-derived admitted interaction or nonlinear preparation coupling q, CAR current and the executor step',
+        'fibonacci_record_activation': {
+            'owned_scope': 'actual Fibonacci AF recording interaction with full regular-representation price',
+            'levels_including_input': fibonacci_scope['levels_including_input'],
+            'minimal_AF_inclusions_in_declared_class': fibonacci_scope['minimal_AF_inclusions_in_declared_class'],
+            'physical_preparation_and_refinement_admission': 'OPEN',
+            'joint_metric_link_source_Ward_GR': 'OPEN',
+            'replay': outputs['a4d_native_fibonacci_record_activation_check'],
+        },
+        'fock_record_binding': {
+            'owned_scope': 'full sixteen-component CAR realization of the literal record apparatus',
+            'fixed_q_record_step': 'not closed on timelike-grade or nonzero-top-grade domain',
+            'joint_metric_transition_and_history_orientation_recovery': 'OPEN',
+            'replay': outputs['a4d_native_fock_record_binding_check'],
+        },
+        'scope': 'limited census of two metric/heat candidates and two record-operator owners; not global owner completeness',
+        'next_missing_arrow': 'derive a physically admitted joint transition that composes the AF retained-record interaction, its full CAR realization, the joint (q,D,b,m) state and the accepted executor step while preserving timelike and orientation data; then derive its source/Ward',
     }
 
 def qD_fiber_nonbasicness(checks, heat_data):

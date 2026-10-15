@@ -237,10 +237,10 @@ rest-aligning this current. Nonlinear state preparations, interaction-level
 metric changes, and changes to the executor itself remain outside the result
 and require their own owner.
 
-## Existing metric-transition owner census
+## Census of existing metric, heat, and recording owners
 
-Two previously identified candidate owners now replay inside the same exact
-packet. The record-metric chronology owner derives a next metric only under
+Two metric/heat candidate owners now replay inside the same exact packet. The
+record-metric chronology owner derives a next metric only under
 full endpoint-pairing isometry. Its certificate leaves physical admission
 open, and the conditional update gives \(q_+=\eta\) on all 128 tested engine
 steps. The independent soldered-heat owner proves ten homogeneous heat
@@ -250,8 +250,32 @@ and supplies no state-to-state metric transition. Their exact checkers pass:
 469 chronology controls with 18 mutations, and 405 soldered-heat controls with
 16 mutations. These results classify the two inspected candidates; they do
 not prove that no other owner exists in the repository. Within these owners,
-the next missing arrow is an admitted interaction or nonlinear preparation
-that couples \(q\), the CAR current and the executor step.
+the existing record interaction must still be coupled to the metric/current
+transition.
+
+That recording interaction already has a separate owner: the Fibonacci AF
+construction builds its full regular-representation price with three AF
+inclusions (four levels including the input), and its exact replay passes
+21,396 controls with 11 mathematical mutations. Its own certificate leaves
+physical preparation/refinement admission and the metric/link source/Ward/GR
+open; the owner says the AF tower is not yet welded to the Role-phase
+physical mesh and supplies no independently admitted \((q,D,b,m)\) binding.
+This does not show that a bridge is impossible. It makes the next target
+specific: construct and verify that bridge to the joint geometric state, the
+active CAR current and the accepted executor step, or prove a scoped
+obstruction for this declared AF representation class. These three metric,
+heat and AF owners do not establish that composite physical transition.
+
+The separate full-CAR record binding realizes the literal golden record gate
+on all sixteen exterior components, with its complete two-return price; its
+checker passes 169 exact controls and 15 mathematical mutations. The natural
+fixed-\(q\) state update \(m_+=U_F(q,m)m\) is not closed: it can lose the timelike
+grade-one or nonzero top-grade domain, and the owner derives neither the joint
+metric transition nor recovery of orientation from retained history. Thus
+the AF recording interaction and its CAR realization are both concrete, but
+their jointly admitted transition into the active executor is still missing.
+This is a scoped failure of that direct fixed-(q) update, not a no-go for
+history-dependent joint dynamics.
 
 ## The current heat does not descend to the metric/link fiber
 
@@ -335,7 +359,7 @@ The Lean capsule
 proves generic gate/minor and heat-sign arithmetic kernels, plus the abstract
 no-two-axis-collapse theorem for an invertible common frame, with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 1530 exact controls and 45 owner-source pins, the conditional
+blobs, 1538 exact controls and 58 owner-source pins, the conditional
 three-term price split, metric-update replay,
 Lorentz and general-GL current-rest guard obstructions, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode
