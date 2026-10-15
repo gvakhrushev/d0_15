@@ -2145,3 +2145,48 @@ Exact golden coefficients are stored and encoded explicitly. Their canonical hei
 The complete two-tick feedback price remains (1-4zp^3)^4 on this orbit, despite its changing retained state. No all-ten-slot source vanishing, native stationary root, expansion or GR result follows. The next same-packet obligation is the owned coupling of retention and capacity to archive allocation and the constrained (q,D,b,m) transition, including the complete price/tangent and actual internal readout. External level scheduling is not used to fill that gap.
 
 Evidence: 24745 controls, 15 executed mathematical mutants, 4096 exact transitions, all sixteen native columns for both observer signs, and actual 16->81->256->625 hereditary projection controls. Nine generic all-time-domain/conjugate-growth propositions and the consumed gate owner compile with standard axioms; six transitive import/toolchain hashes match the compilation workspace. All 378 scientific intake artifacts match the published SOURCE SHA256 and remote Git blobs: 370 prior files unchanged, the primary memo updated, seven new files. Supported Lean trees and all 44 graph contracts/statuses/edges are unchanged. The dated tangent plan and its 292-control preflight are unchanged. Current-head CI and CONTROL review remain required; no original parent is retired and no merge is performed.
+
+## Curved connection shell and conditional Ward/scene source (2026-10-15)
+
+The supplemental intake copies 28 byte-identical artifacts from the current
+SOURCE #310 head `f0a6a85111c28f21a18ebf6ad9276eaa713abbd8`. It preserves the
+original 448-artifact snapshot at SOURCE `39dbaecfb6e1c316c25c6d1898711a74164559ea`;
+the separate receipt is
+[`CONTROL_A4D_NATIVE_GRAVITY_PACKET_INTAKE_2026-10-15.json`](CONTROL_A4D_NATIVE_GRAVITY_PACKET_INTAKE_2026-10-15.json).
+Both packet commits, `a9212b19bb5779a9dd2e0d94109af26677236399` and
+`61688727ab3273bf35318f10ca789937b0b8f9b3`, are ancestors of that remote-verified
+SOURCE head.
+
+The [exact curved-sheet result](A4D_ONE_COORDINATE_EXACT_CURVED_SHEET.md)
+proves a unique small nonlinear connection root for every sufficiently small
+smooth one-coordinate periodic coframe in its declared class. It retains all
+24 connection components on the full four-dimensional periodic carrier and
+transfers the raw metric response of the unchanged naked-star action to the
+nonlinear Einstein limit `-G/2`. At `L=8`, outward-rounded intervals certify
+the root in a 192-variable radius-`2^-30` box and all 98,304 connection rows;
+the odd curvature component is strictly nonzero. The independent replay
+passes, including five operator mutations. This is a genuinely curved exact
+connection shell, but it does not solve the metric/matter equations for a
+source fixed independently of the geometric response.
+
+The [Ward/scene result](sources/d0_ward_scene_constitutive_closure_2026-10-15/RESULT.md)
+proves that a pointwise `C2` algebraic symmetric response preserving every
+conserved first source jet must be `a*T + b*eta`, with a rational quantitative
+defect bound in its declared packed norm. It also computes the full variation
+of the specified scene functional `R(w,rho)=Tr(rho L(w))`, including all 359
+edge weights and motion of `rho`. Replay passes 530 exact checks and rejects
+six mathematical mutations. The abstract calculation's D0 graph binding is
+tracked separately through exact pins to `Signature31Split.lean`, the forced
+scene spectrum and the shared scene-price owner. The theorem does not prove
+that the complete D0 response satisfies its universal Ward hypotheses.
+
+These results do not yet compose into the requested source on the curved
+native carrier. No D0-derived map from the full state and tangent `(q,D,b,m)`
+or retained history to the scene arguments `(w,rho)` is proved; the scene
+functional is not identified with the full Cost-Info action. The next
+load-bearing step is to derive that map and its refinement on an admitted
+nonempty sector, or prove a complete obstruction for that exact interface,
+then differentiate the existing full action on the same constrained tangent
+and compare all ten metric slots with `rho0`. Source/Ward, fixed-source metric
+roots, soundness/recovery, physical constraints and the original #310/#202/#317
+terminals remain open. CONTROL review and current-head CI are still required.

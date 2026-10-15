@@ -1,0 +1,265 @@
+{
+  "acceptance": "SUPPLEMENTAL_CONTROL_REVIEW_CANDIDATE_PARENT_TERMINALS_OPEN",
+  "consumed_owner_pins": [
+    {
+      "path": "03_FORMALIZATION/D0/Claims/Signature31Split.lean",
+      "sha256": "2963905269d09c3fd88a79e4a1e082558403b3b2433899e54e8c95b2c186990c",
+      "source_blob": "96b545f6ac767234bac04ae2f4c896343a24fccf"
+    },
+    {
+      "path": "04_CERTIFICATES/vp_scene_laplacian_spectrum_forced.py",
+      "sha256": "03ca6b331af62378157cf35ffb23033375f104525e0f5f3785060b20fe4481ef",
+      "source_blob": "b64beee7233b93a7877d2fb3bbf7339e17e702fb"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md",
+      "sha256": "9986e1afc9d7cbb8b47dafcd40e3f79d8dcb08fb3833c84db9adae3aa5126291",
+      "source_blob": "c20afcb63f955bfcfb25c561fd853cf30a21af40"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+      "sha256": "77079fb2fa8da001ca259ebef432ae7001a15d18f73cde04b8ba3380b9b1cbcf",
+      "source_blob": "90179067ece3dd4959a920029d1dad306a91c5d7"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_j2_fixed_realization_ir_check.py",
+      "sha256": "83ab02b6fffdc504ed0685fb1be0a3ccfccca5074e753825a383318b86546296",
+      "source_blob": "917cb7246e8bb74cc3a91169acecb7bbd743cade"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_THEORY_CLOSURE_HANDOFF.md",
+      "sha256": "c1401f5feb2c1e72c89b50ea9904f9d86a2cfddd5421fdb514d4df455cd17a47",
+      "source_blob": "425ecb7d39f05d0eda52e1c4758c2bb9230c27a9"
+    }
+  ],
+  "control_head_before_supplement": "a11a51055177cd81da005335f6f7b06500d7888e",
+  "control_pr": 322,
+  "copied_artifact_count": 28,
+  "copied_artifacts": [
+    {
+      "kind": "replay_prerequisite",
+      "path": "02_REGISTRY/research/A4D_NATIVE_OPERATIONAL_GAIN_AND_MEMORY.md",
+      "sha256": "af0e92ebdfdadaee207070c2eef9aad889acc818c8b4ede5eb800d35b31e8d47",
+      "source_blob": "ec3ddc51837b34e72a2fd58cd1e077f0c2f1fb9f"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/A4D_ONE_COORDINATE_EXACT_CURVED_SHEET.md",
+      "sha256": "e244bc6b1e841fcfdce6691fa120a2981cae48f61b362bdf114938f89a563ba1",
+      "source_blob": "fc3e3c301aa5003f2c401d212510980167f717c1"
+    },
+    {
+      "kind": "replay_prerequisite",
+      "path": "02_REGISTRY/research/certificates/a4d_finite_probe_palatini_check.py",
+      "sha256": "7f2d1c58fa4d4a8c52b2b3c76b9ca1369297f3c169d4216cbc5b7434ac787d6d",
+      "source_blob": "f2a159e0ad554784223e13a2bdf8fd0170ba53ec"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/certificates/a4d_native_ward_scene_constitutive_check.py",
+      "sha256": "0c8c7568c5b4d83d928c713312c187f4bb7f07c7d2918d5f19ffc711bd885b8b",
+      "source_blob": "baa94896138bde312c45febf4e580e2465a3e2be"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/certificates/a4d_one_coordinate_exact_curved_sheet_check.py",
+      "sha256": "84cb9494eb06877b0a9cfa6a136c8c1ce603fe909133deffa5c49582235fde19",
+      "source_blob": "025a3a891ddd9c8e0f363d2e4f1810b2c7ac5d4f"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/MANIFEST.json",
+      "sha256": "837389727286cfe12c3c4d1ecef9805a4657bf049931a3e5c8d83d1e277f64f6",
+      "source_blob": "5bbb5c42519da1c41631cb0a57fce4adc48348df"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/RESULT.md",
+      "sha256": "664ea93492b51a0c966fa9d5372a8b86e728b1598a2e954181995a241a032f32",
+      "source_blob": "032a6ab166dd4be113e0907762156162dcdd24a5"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/VALIDATION.json",
+      "sha256": "d0bb3ae9cd9b3bf50ae6994195253ecb200fa121a8ecd88b9d5609c2c7cf2179",
+      "source_blob": "a7af36c6f0db070d89cc2bb4b7743caef1b357e7"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/algebra.py",
+      "sha256": "15c8ddad7724dff19b0f60068983de4e3bd74e921450318a9c6740ddacb2d64f",
+      "source_blob": "802cc76e8181d84d73463fd22b0d6c3e36304c67"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/algebra_receipt.json",
+      "sha256": "4db0e8af69cb3a03b4deecac1f62a869709a434cbf2a08f3c303fc893ec2d8f2",
+      "source_blob": "27da4efbbf284ef74ba4ffa4392c247f36d2d3a3"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/hostile.py",
+      "sha256": "c784a2949ce9736b1edbc583b9147fc6cfdaa9aa764f0c9cfbf56441d15b795f",
+      "source_blob": "b138aa3e790df73b52aefbaec76ceda7f71bc569"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/hostile_receipt.json",
+      "sha256": "acb6a2091a0a2e25fced0a90e7a7166a59b9ce720f78a8fe09364fdbe79a97c0",
+      "source_blob": "f6e1cdf02ce8a8de23cdfc23e8ffccb5285e348d"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/independent_numeric.log",
+      "sha256": "8cb50068472a5a9db75a80c7ea79159a4e776a02d21a7a9d95d558574d3cb058",
+      "source_blob": "e0c79cc16aa7bf3444d9c53dd8d104a46c75b8b5"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/independent_numeric_receipt.json",
+      "sha256": "73869998466516d7656efb54fe9d007093251bc5f75d661e9700db37493a1b26",
+      "source_blob": "f976b37f002ef6190d891122fc6a72a630c0ab52"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/interval_receipt.json",
+      "sha256": "c122544ddd707ef1111085f7b02c8ac543bf42352bfd1d99f6cdd528560b3ef0",
+      "source_blob": "ebb54648c687084e0fb82872df708812943c198e"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/interval_replay.log",
+      "sha256": "63d31fbf4ab93854fb3a6dc7b08128b7f056f59c8c5fc162729abf241b822c02",
+      "source_blob": "aebd2a6f79a665e1636278f83b118fce9b819e51"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py",
+      "sha256": "9eb3a89053972e299e14968133a5f6b2a5c2a1c8f609517ae27d0ff39164dd0b",
+      "source_blob": "9ebb9202c2324e755a700bb08e5d71f22e979bce"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/nonlinear.py",
+      "sha256": "a8f8f3fec28a1e42f55060ecce945192474254b1bed8619eb23d183a753245e4",
+      "source_blob": "45f046c249165b203e810b22037d2b908d873a5b"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/numeric_result.json",
+      "sha256": "53b74f911f60512005b1fc8abcc96afaf9fbd8fb3dde2d2c1f0d5ce668061226",
+      "source_blob": "73dffaf484199237278d15e8de7516fe62ebf296"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/optimized_algebra.log",
+      "sha256": "063c855af6dc28f3a82b5b8a0ad7624e58f66b9b9a49ae4d661f9248e1392299",
+      "source_blob": "c757c34f5278e7b1c455def74f1361f12d84eb4c"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/root_center.json",
+      "sha256": "9b923a763233ee6ae9e816b3e2cdf4b01edd141b2f4d9645c8b2d9578ecb7017",
+      "source_blob": "0d9450e0299aa742ba606739c0434b916709c5fc"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/verify.py",
+      "sha256": "d7856ac88175577b55e4eea940214a451f623304ac54de864d0a25702208158c",
+      "source_blob": "eef779588b6798b176ad3de780dbbc0356e1ba03"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/MANIFEST.json",
+      "sha256": "e40e75260dc38d1d56f115b9e482a553fb0c34aea42e43326db10a8d528254d5",
+      "source_blob": "b3b1efe0400b862072e2ba355c7081304229bebe"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/RESULT.md",
+      "sha256": "713f683606e38906031e256340859897efb0de4fece6201f8a59ce66a8d611da",
+      "source_blob": "b687771fb9c24218bdadc00ab79026b81c8c82e0"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/hostile.py",
+      "sha256": "d1492c6c71fec83fbc0e0fef1da2ff67ba61fc238d93a5921136676eac4f0957",
+      "source_blob": "48ad1a3be88d1afec8fdd233e2d407ebafee8e57"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/hostile_result.json",
+      "sha256": "8818ae3b42a6aa3cba68fb3dade15a253c3510b4fcbf5377af6a11571f5959d8",
+      "source_blob": "dff7749ea41f089b83c4477b1f536c3b78c22cfb"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/receipt.json",
+      "sha256": "54028842ab0eca8d36bd0b877eb96e771595caaeec2ac8c58658fd673e0afbc7",
+      "source_blob": "eeccb67c568a1a09a280b2e842b4e0661d810c90"
+    },
+    {
+      "kind": "packet_artifact",
+      "path": "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/verify.py",
+      "sha256": "e5fce63ea3e397a6d28d2237f034cf276607785c291f5385bb41c3f77f5f680b",
+      "source_blob": "3b666786e9a708278fbc3b5ae3e5c2324c81ca52"
+    }
+  ],
+  "original_control_artifact_count": 448,
+  "original_control_source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
+  "original_snapshot_preserved": true,
+  "packet_commits": [
+    {
+      "name": "conditional Ward and scene source",
+      "sha": "a9212b19bb5779a9dd2e0d94109af26677236399"
+    },
+    {
+      "name": "exact one-coordinate curved connection sheet",
+      "sha": "61688727ab3273bf35318f10ca789937b0b8f9b3"
+    }
+  ],
+  "packet_commits_are_ancestors_of_source_head": true,
+  "schema": "d0-control-reviewed-source-supplement/1",
+  "scientific_scope": {
+    "next_native_lemma": "Derive, from existing D0 owners, a nonempty differentiable and refinement-compatible map from the full native state/tangent (q,D,b,m) and retained record to the scene arguments (w,rho), or prove an obstruction for that exact interface. Then differentiate the existing complete action on that same joint tangent and compare all ten metric slots with rho0; do not prescribe the source or stationarity as an admission condition.",
+    "not_closed": [
+      "The curved-sheet result does not solve the metric/matter equations for an independently fixed source.",
+      "The universal Ward theorem does not prove that the complete D0 action satisfies its hypotheses.",
+      "No native map from (q,D,b,m) or the retained native history state to scene (w,rho) is proved.",
+      "No common admissible tangent/refinement, physical source/Ward, soundness/recovery or full GR result is established."
+    ],
+    "positive_progress": [
+      "A nonempty exact nonlinear curved connection shell exists for the stated one-coordinate periodic coframe class and transfers the raw metric response to the nonlinear Einstein limit -G/2.",
+      "Under the stated universal local algebraic Ward hypotheses, the symmetric response must be a*T + b*eta; the scene quadratic R(w,rho)=Tr(rho L(w)) has its full state-and-edge derivative."
+    ]
+  },
+  "source_head": "f0a6a85111c28f21a18ebf6ad9276eaa713abbd8",
+  "source_head_remote_ref": "refs/pull/310/head",
+  "source_head_remote_verified": true,
+  "source_pr": 310,
+  "verification": [
+    {
+      "command": "python3 02_REGISTRY/research/certificates/a4d_native_ward_scene_constitutive_check.py",
+      "exact_checks_per_replay": 530,
+      "false_GR_receipt_rejected": true,
+      "mathematical_mutations_rejected": 6,
+      "packet": "WARD_SCENE_CONSTITUTIVE_CLOSURE",
+      "replays": 2,
+      "status": "PASS_EXACT_CONDITIONAL_WARD_AND_SCENE_SYNTHESIS"
+    },
+    {
+      "algebraic_named_conditions": 61,
+      "command": "python3 02_REGISTRY/research/certificates/a4d_one_coordinate_exact_curved_sheet_check.py",
+      "full_connection_rows": 98304,
+      "interval_radius": "2^-30",
+      "interval_variables": 192,
+      "mathematical_mutations_rejected": 5,
+      "odd_curvature_component_interval": [
+        "0.005857847808267171",
+        "0.005857855258896619"
+      ],
+      "packet": "ONE_COORDINATE_EXACT_CURVED_SHEET",
+      "status": "PASS_ONE_COORDINATE_EXACT_CURVED_CONNECTION_RAW_RESPONSE_NOT_FULL_D0_TERMINAL"
+    }
+  ]
+}

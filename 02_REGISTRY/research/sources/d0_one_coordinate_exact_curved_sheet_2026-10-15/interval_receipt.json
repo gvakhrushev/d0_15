@@ -1,0 +1,17 @@
+{
+  "interval": {
+    "contraction_upper": 0.07033675160252693,
+    "displacement_upper": 4.97379915032082e-14,
+    "full_4d_connection_rows": 98304,
+    "full_metric_or_matter_stationarity_claimed": false,
+    "image_radius_upper": 6.5555942584058e-11,
+    "method": "directed_outward_IEEE754_interval_Banach_certificate",
+    "odd_curvature_12": [
+      0.005857847808267171,
+      0.005857855258896619
+    ],
+    "radius": "2^-30",
+    "variables": 192
+  },
+  "scope": "EXACT_NONLINEAR_ONE_COORDINATE_CONNECTION_SHEET_NOT_FULL_D0_OR_FULL_4D_TERMINAL"
+}

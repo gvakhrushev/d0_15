@@ -1,0 +1,26 @@
+{
+  "schema": "d0-one-coordinate-exact-curved-sheet-validation/1",
+  "scientific_input": "a9212b19bb5779a9dd2e0d94109af26677236399",
+  "validation": [
+    "python verify.py --algebra",
+    "python -O verify.py --algebra",
+    "python verify.py --interval",
+    "python verify.py --numeric",
+    "python hostile.py"
+  ],
+  "exact_named_algebra_conditions": 61,
+  "executed_math_mutations_rejected": 5,
+  "interval_variable_count": 192,
+  "full_4D_connection_equations_by_exact_transverse_symmetry": 98304,
+  "finite_root_scope": "L=8, E=diag(1,1,f,f), f=1+cos(2pi*x1)/100; full Cayley connection coordinates",
+  "analytic_scope": "small C-infinity one-coordinate coframes; all sufficiently large L; all small one-coordinate exact roots; raw comparison h^(M-5)",
+  "new_Lean_compilation": false,
+  "full_repository_CI_executed_locally": false,
+  "optimized_interval_replay_executed": false,
+  "full_D0_Cost_Info_binding_closed": false,
+  "arbitrary_four_coordinate_exactification_closed": false,
+  "fixed_source_joint_metric_matter_closed": false,
+  "physical_GR_closed": false,
+  "python": "3.13.5",
+  "post_replay_change": "intervals.py: one trailing blank line removed; Python AST equality checked; no executable change"
+}
