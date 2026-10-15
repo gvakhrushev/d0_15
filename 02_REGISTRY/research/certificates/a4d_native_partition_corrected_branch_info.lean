@@ -13,7 +13,9 @@ the physical D0 histories.
 -/
 
 open Real
+open Filter
 open scoped goldenRatio
+open scoped Topology
 
 namespace D0.Research.NativePartitionCorrectedBranchInfo
 
@@ -34,6 +36,14 @@ noncomputable def partition (ι : Type*) [Fintype ι] (w : ι → ℝ) : ℝ :=
 
 noncomputable def normalizedWeight {ι : Type*} [Fintype ι]
     (w : ι → ℝ) (i : ι) : ℝ := w i / partition ι w
+
+noncomputable def normalizedEntropy {ι : Type*} [Fintype ι]
+    (q : ι → ℝ) : ℝ :=
+  -(∑ i, q i * Real.log (q i)) / Real.log φ
+
+noncomputable def expectedPathAction {ι : Type*} [Fintype ι]
+    (q w : ι → ℝ) : ℝ :=
+  ∑ i, q i * pathAction (w i)
 
 theorem log_phi_pos : 0 < Real.log φ := Real.log_pos Real.one_lt_goldenRatio
 
@@ -76,6 +86,38 @@ theorem bookInfo_normalizedWeight_identity
   rw [← hfactor]
   exact bookInfo_partition_identity mu (normalizedWeight w i)
     (partition ι w) hmu hq hZ
+
+/-- The normalized expectation of the raw path action is entropy minus the
+logarithm of the scalar partition. The partition term cannot be dropped from
+the source merely because the probabilities sum to one. -/
+theorem expectedPathAction_partition_identity
+    {ι : Type*} [Fintype ι] (q : ι → ℝ) (Z : ℝ)
+    (hq : ∀ i, 0 < q i) (hZ : 0 < Z)
+    (hsum : ∑ i, q i = 1) :
+    expectedPathAction q (fun i => q i * Z) =
+      normalizedEntropy q - Real.log Z / Real.log φ := by
+  unfold expectedPathAction pathAction normalizedEntropy
+  have hlog (i) : Real.log (q i * Z) = Real.log (q i) + Real.log Z :=
+    Real.log_mul (ne_of_gt (hq i)) (ne_of_gt hZ)
+  simp_rw [hlog]
+  have hsplit (i) :
+      q i * (-(Real.log (q i) + Real.log Z) / Real.log φ) =
+        -(q i * Real.log (q i)) / Real.log φ -
+          (q i * Real.log Z) / Real.log φ := by ring
+  simp_rw [hsplit]
+  rw [Finset.sum_sub_distrib]
+  have hfirst :
+      (∑ i, -(q i * Real.log (q i)) / Real.log φ) =
+        -(∑ i, q i * Real.log (q i)) / Real.log φ := by
+    rw [← Finset.sum_div, Finset.sum_neg_distrib]
+  have hsecond :
+      (∑ i, (q i * Real.log Z) / Real.log φ) = Real.log Z / Real.log φ := by
+    rw [← Finset.sum_div]
+    calc
+      (∑ i, q i * Real.log Z) / Real.log φ =
+          ((∑ i, q i) * Real.log Z) / Real.log φ := by rw [Finset.sum_mul]
+      _ = Real.log Z / Real.log φ := by rw [hsum]; ring
+  rw [hfirst, hsecond]
 
 /-- At a normalized base point Z=1, the value agrees with the uncorrected
 likelihood cocycle. This does not imply that its derivative is unchanged. -/
@@ -130,21 +172,51 @@ theorem normalizedLikelihoodInfo_hasDerivAt
     field_simp [ne_of_gt hmu, ne_of_gt hq]
   simpa [normalizedLikelihoodInfo, hderiv] using hscale
 
+/-- Differentiate the expected path action along a normalized outcome family.
+The complete source is the entropy derivative minus the genuine partition
+jet, including when the base partition equals one. -/
+theorem expectedPathAction_hasDerivAt
+    {ι : Type*} [Fintype ι]
+    (q : ι → ℝ → ℝ) (Z : ℝ → ℝ) (dH dZ t : ℝ)
+    (hZ : 0 < Z t)
+    (hqEventually : ∀ᶠ s in 𝓝 t, ∀ i, 0 < q i s)
+    (hZEventually : ∀ᶠ s in 𝓝 t, 0 < Z s)
+    (hsumEventually : ∀ᶠ s in 𝓝 t, ∑ i, q i s = 1)
+    (hH : HasDerivAt (fun s => normalizedEntropy (fun i => q i s)) dH t)
+    (hZd : HasDerivAt Z dZ t) :
+    HasDerivAt
+      (fun s => expectedPathAction (fun i => q i s) (fun i => q i s * Z s))
+      (dH - (dZ / Z t) / Real.log φ) t := by
+  have hlog : HasDerivAt (fun s => Real.log (Z s) / Real.log φ)
+      ((dZ / Z t) / Real.log φ) t := by
+    exact (hZd.log (ne_of_gt hZ)).div_const (Real.log φ)
+  have hderiv := hH.sub hlog
+  have hEq :
+      (fun s => expectedPathAction (fun i => q i s) (fun i => q i s * Z s)) =ᶠ[𝓝 t]
+      (fun s => normalizedEntropy (fun i => q i s) - Real.log (Z s) / Real.log φ) := by
+    filter_upwards [hqEventually, hZEventually, hsumEventually] with s hq hZs hsum
+    exact expectedPathAction_partition_identity (fun i => q i s) (Z s) hq hZs hsum
+  simpa only [sub_eq_add_neg] using hderiv.congr_of_eventuallyEq hEq
+
 #check partition_pos
 #check normalizedWeight_sum_one
 #check bookInfo_normalizedWeight_identity
 #check bookInfo_partition_identity
+#check expectedPathAction_partition_identity
 #check normalized_base_value
 #check normalizedLikelihoodInfo_common_shift
 #check balanced_contrast_kills_partition_correction
 #check normalizedLikelihoodInfo_hasDerivAt
+#check expectedPathAction_hasDerivAt
 #print axioms partition_pos
 #print axioms normalizedWeight_sum_one
 #print axioms bookInfo_normalizedWeight_identity
 #print axioms bookInfo_partition_identity
+#print axioms expectedPathAction_partition_identity
 #print axioms normalized_base_value
 #print axioms normalizedLikelihoodInfo_common_shift
 #print axioms balanced_contrast_kills_partition_correction
 #print axioms normalizedLikelihoodInfo_hasDerivAt
+#print axioms expectedPathAction_hasDerivAt
 
 end D0.Research.NativePartitionCorrectedBranchInfo

@@ -53,7 +53,8 @@ the full history family. Those two facts remain the exact G0 binding to prove.
 
 The Lean capsule proves positivity and normalization of the finite partition,
 the corrected code-minus-action identity, recovery of the old cocycle at the
-unit-normalizer base point, the full first derivative, and that
+unit-normalizer base point, the full first derivative, the expected-path-action
+partition identity and its joint derivative, and that
 \(\log_\varphi\mathcal N\) is a common additive shift across outcomes. Every
 zero-sum linear contrast therefore cancels it exactly. This classifies its
 outcome-space direction; it does not show that the physical stress/readout is
@@ -90,6 +91,22 @@ Under the identification of these raw event weights with the Book path
 weights, the correction to branch information is
 \(D_\xi\log P_A/\ln\varphi\). The first-jet owner does not establish that
 physical identification or admit either completion as a D0 solution.
+
+For the probability-weighted path action, the Lean capsule also proves
+\[
+\mathbb E_q[S]=H_\varphi(q)-\log_\varphi\mathcal N,\qquad
+D_V\mathbb E_q[S]=D_VH_\varphi(q)-
+  \frac{D_V\mathcal N}{\mathcal N\ln\varphi}.
+\]
+Under the same event-weight identification, the event normalizer contributes
+\[
+-\frac{D_\xi\log P_A}{\ln\varphi}
+=\lambda\frac{54p-6}{71\ln\varphi}>0
+\]
+to the expected-action source. This is only the normalizer component; the
+entropy derivative remains separate. The exact calculation makes the effect
+of the normalizer on this candidate source explicit without identifying it
+with physical D0 stress.
 
 Scope remains limited to finite recorded outcomes with positive probabilities.
 It does not identify graph paths with instrument outcomes, prove physical

@@ -20,10 +20,12 @@ DECLARATIONS = {
     "normalizedWeight_sum_one",
     "bookInfo_normalizedWeight_identity",
     "bookInfo_partition_identity",
+    "expectedPathAction_partition_identity",
     "normalized_base_value",
     "normalizedLikelihoodInfo_common_shift",
     "balanced_contrast_kills_partition_correction",
     "normalizedLikelihoodInfo_hasDerivAt",
+    "expectedPathAction_hasDerivAt",
 }
 STANDARD_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 SOURCE_PATHS = {
@@ -108,16 +110,35 @@ def check() -> dict[str, object]:
     assert sp.simplify((reported_dlog - event_probability_jet / event_probability).subs(p, p_golden)) == 0
     assert sp.simplify(reported_dlog.subs(p, p_golden)) != 0
     assert sp.simplify((sp.sympify(event["dlog_probability_dxi_lambda2"], locals={"p": p}) - 2 * reported_dlog).subs(p, p_golden)) == 0
+    event_mean_action_correction = -reported_dlog / log_phi
+    assert sp.simplify(event_mean_action_correction.subs(p, p_golden)) != 0
+    assert sp.simplify(event_mean_action_correction.subs(p, p_golden)).is_positive is True
+
+    # The probability-weighted action is entropy minus log partition, and its
+    # derivative keeps the negative normalizer jet for a varying q-family.
+    alpha, dalpha, z0, dz0 = sp.symbols("alpha dalpha z0 dz0", positive=True)
+    q2 = 1 - alpha
+    mean_action = (-alpha * sp.log(alpha * z) - q2 * sp.log(q2 * z)) / log_phi
+    entropy = (-alpha * sp.log(alpha) - q2 * sp.log(q2)) / log_phi
+    mean_identity = sp.expand_log(mean_action, force=True) - (entropy - sp.log(z) / log_phi)
+    assert sp.simplify(mean_identity) == 0
+    q1t = alpha + dalpha * t
+    q2t = 1 - q1t
+    zt = z0 + dz0 * t
+    mean_action_t = (-q1t * sp.log(q1t * zt) - q2t * sp.log(q2t * zt)) / log_phi
+    entropy_t = (-q1t * sp.log(q1t) - q2t * sp.log(q2t)) / log_phi
+    expected_source = sp.diff(entropy_t, t).subs(t, 0) - dz0 / z0 / log_phi
+    assert sp.simplify(sp.diff(mean_action_t, t).subs(t, 0) - expected_source) == 0
 
     return {
-        "schema": "A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFO_V2",
-        "status": "EXACT_FINITE_NORMALIZATION_IDENTITY_AND_JOINT_JET",
+        "schema": "A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFO_V3",
+        "status": "EXACT_FINITE_PARTITION_SOURCE_AND_JOINT_JET",
         "source_blobs": {path: git_blob(path) for path in sorted(SOURCE_PATHS)},
         "capsule_sha256": sha256(ROOT / CAPSULE),
         "lean_output_sha256": sha256(ROOT / OUTPUT),
         "declarations": sorted(DECLARATIONS),
         "compiled_declaration_count": len(DECLARATIONS),
-        "exact_symbolic_control_count": 10,
+        "exact_symbolic_control_count": 12,
         "axiom_check": "STANDARD_ONLY",
         "proved": {
             "partition_log_correction_exact": True,
@@ -127,6 +148,9 @@ def check() -> dict[str, object]:
             "partition_correction_is_common_mode_across_outcomes": True,
             "balanced_branch_contrasts_annihilate_common_mode": True,
             "native_interface_event_normalizer_jet_is_nonzero_and_free_scale_sensitive": True,
+            "expected_path_action_is_entropy_minus_log_partition": True,
+            "expected_path_action_source_includes_negative_normalizer_jet": True,
+            "event_mean_action_normalizer_source_is_strictly_positive_for_lambda1": True,
         },
         "remaining_open": [
             "book history weight bound to the same Born raw-response frame",
@@ -134,7 +158,11 @@ def check() -> dict[str, object]:
             "joint q,D,b,m variation owner",
             "map from the physical source to balanced or common-mode outcome readouts",
             "identification of the instrument event weights with Book path weights",
+            "physical matter action and its same-carrier field variations",
         ],
+        "conditional_event_mean_action_normalizer_source_lambda1": str(
+            sp.simplify(event_mean_action_correction.subs(p, p_golden))
+        ),
         "scientific_scope": "finite outcomes, positive probabilities, explicitly shared history/response interface only",
     }
 
