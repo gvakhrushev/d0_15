@@ -1,3 +1,4 @@
+import D0.Algebra.FibonacciAFTower
 import Mathlib.Tactic
 
 /-! Generic exact kernels for the correlated-current sector of the existing
@@ -271,6 +272,44 @@ theorem active_sector_common_GL_rest_alignment_impossible
     (golden_first_grade_coefficient_nonzero p hp)
     (active_current_tilt_nonzero s hs) hfirst hcurrent
 
+def afCapacity (k : ℕ) : ℕ :=
+  _root_.D0.Algebra.FibonacciAFTower.dimA (1 + 3*k)
+
+theorem dimA_two_step_recurrence (n : ℕ) :
+    _root_.D0.Algebra.FibonacciAFTower.dimA (n+2) +
+      _root_.D0.Algebra.FibonacciAFTower.dimA n =
+      3 * _root_.D0.Algebra.FibonacciAFTower.dimA (n+1) := by
+  simp only [_root_.D0.Algebra.FibonacciAFTower.dimA,
+    _root_.D0.Algebra.FibonacciAFTower.pathCount]
+  ring
+
+theorem dimA_six_step_recurrence (n : ℕ) :
+    _root_.D0.Algebra.FibonacciAFTower.dimA (n+6) +
+      _root_.D0.Algebra.FibonacciAFTower.dimA n =
+      18 * _root_.D0.Algebra.FibonacciAFTower.dimA (n+3) := by
+  have h0 := dimA_two_step_recurrence n
+  have h1 := dimA_two_step_recurrence (n+1)
+  have h2 := dimA_two_step_recurrence (n+2)
+  have h3 := dimA_two_step_recurrence (n+3)
+  have h4 := dimA_two_step_recurrence (n+4)
+  nlinarith
+
+theorem afCapacity_recurrence (k : ℕ) :
+    afCapacity (k+2) + afCapacity k = 18 * afCapacity (k+1) := by
+  have h := dimA_six_step_recurrence (1 + 3*k)
+  have h0 : 1 + 3*(k+2) = (1 + 3*k) + 6 := by omega
+  have h1 : 1 + 3*(k+1) = (1 + 3*k) + 3 := by omega
+  change _root_.D0.Algebra.FibonacciAFTower.dimA (1 + 3*(k+2)) +
+      _root_.D0.Algebra.FibonacciAFTower.dimA (1 + 3*k) =
+    18 * _root_.D0.Algebra.FibonacciAFTower.dimA (1 + 3*(k+1))
+  rw [h0, h1]
+  exact h
+
+theorem afCapacity_initial : afCapacity 0 = 5 ∧ afCapacity 1 = 89 := by
+  constructor <;> norm_num [afCapacity,
+    _root_.D0.Algebra.FibonacciAFTower.dimA,
+    _root_.D0.Algebra.FibonacciAFTower.pathCount]
+
 end D0.Research.EngineCorrelatedCurrentExtension
 
 #check D0.Research.EngineCorrelatedCurrentExtension.wedge_linear
@@ -298,3 +337,9 @@ end D0.Research.EngineCorrelatedCurrentExtension
 #print axioms D0.Research.EngineCorrelatedCurrentExtension.golden_first_grade_coefficient_nonzero
 #print axioms D0.Research.EngineCorrelatedCurrentExtension.active_current_tilt_nonzero
 #print axioms D0.Research.EngineCorrelatedCurrentExtension.active_sector_common_GL_rest_alignment_impossible
+#check D0.Research.EngineCorrelatedCurrentExtension.dimA_two_step_recurrence
+#check D0.Research.EngineCorrelatedCurrentExtension.dimA_six_step_recurrence
+#check D0.Research.EngineCorrelatedCurrentExtension.afCapacity_recurrence
+#check D0.Research.EngineCorrelatedCurrentExtension.afCapacity_initial
+#print axioms D0.Research.EngineCorrelatedCurrentExtension.afCapacity_recurrence
+#print axioms D0.Research.EngineCorrelatedCurrentExtension.afCapacity_initial

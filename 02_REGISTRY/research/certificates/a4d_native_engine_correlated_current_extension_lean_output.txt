@@ -82,3 +82,20 @@ D0.Research.EngineCorrelatedCurrentExtension.active_sector_common_GL_rest_alignm
 'D0.Research.EngineCorrelatedCurrentExtension.active_sector_common_GL_rest_alignment_impossible' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+D0.Research.EngineCorrelatedCurrentExtension.dimA_two_step_recurrence (n : ℕ) :
+  D0.Algebra.FibonacciAFTower.dimA (n + 2) + D0.Algebra.FibonacciAFTower.dimA n =
+    3 * D0.Algebra.FibonacciAFTower.dimA (n + 1)
+D0.Research.EngineCorrelatedCurrentExtension.dimA_six_step_recurrence (n : ℕ) :
+  D0.Algebra.FibonacciAFTower.dimA (n + 6) + D0.Algebra.FibonacciAFTower.dimA n =
+    18 * D0.Algebra.FibonacciAFTower.dimA (n + 3)
+D0.Research.EngineCorrelatedCurrentExtension.afCapacity_recurrence (k : ℕ) :
+  D0.Research.EngineCorrelatedCurrentExtension.afCapacity (k + 2) +
+      D0.Research.EngineCorrelatedCurrentExtension.afCapacity k =
+    18 * D0.Research.EngineCorrelatedCurrentExtension.afCapacity (k + 1)
+D0.Research.EngineCorrelatedCurrentExtension.afCapacity_initial :
+  D0.Research.EngineCorrelatedCurrentExtension.afCapacity 0 = 5 ∧
+    D0.Research.EngineCorrelatedCurrentExtension.afCapacity 1 = 89
+'D0.Research.EngineCorrelatedCurrentExtension.afCapacity_recurrence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.afCapacity_initial' depends on axioms: [propext]

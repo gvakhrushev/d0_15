@@ -2349,3 +2349,33 @@ without backreaction on the inherited Lorentz carrier; it leaves genuinely
 new fine observables and other admitted couplings open. AF dimension growth
 alone is therefore not a metric expansion proof. No physical interaction,
 selector, source, on-shell equation, terminal or parent status changes.
+
+## AF capacity and record information — 2026-10-15
+
+The same owned recursion now has an exact all-depth capacity and history
+calculation. At level `n=1+3k`, the full GNS dimension is `F_(6k+5)`; its
+three-inclusion capacity ratio increases strictly to `phi^6`, and the
+discrete second difference is positive. The nested apparatus record has
+orthogonal history words: a word with `r` details in `k` ticks has weight
+`p^(k+r)` and multiplicity `binomial(k,r)`. The corresponding word-readout
+Shannon entropy grows as `k(2-p) log(phi)`, while the complete state remains
+pure. At the first AF-to-CAR step, the local CAR current from the canonical
+`M_2` channel is `e0` and its observer pairing against `eta` is `I_4`; the
+inherited coarse density stays `I_2/2` at every depth. The fine-level CAR
+current readout is still unconstructed.
+
+The certificate adds 178 exact controls for the first 33 capacities, the
+strict Fibonacci-ratio identity, the full two-tick four-word decomposition,
+and the local current/pairing, plus two checks of the Lean proposition types
+and axiom receipts. The full replay totals 2275 controls. These calculations
+confirm growing internal resolution and record information in the owned AF
+process while leaving its inherited Lorentz metric fixed. The missing arrow is
+now specifically a derived map from new fine-sector records into the full
+constrained `q,D` variation and common native price. No physical spatial volume, metric
+expansion, source/Ward identity, curved root, GR or parent terminal is
+inferred. The research Lean capsule now formally proves the AF dimension
+recurrence, the three-inclusion sampled-capacity recurrence and the initial
+values `5, 89`; its actual proposition types and standard-only axiom output
+are replayed by the certificate. The Fibonacci closed form and ratio identities
+remain separately derived and exact-checked rather than being attributed to
+those Lean declarations.

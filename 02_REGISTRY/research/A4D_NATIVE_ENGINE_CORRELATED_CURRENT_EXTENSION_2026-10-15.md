@@ -517,10 +517,92 @@ The Lean capsule
 proves generic gate/minor and heat-sign arithmetic kernels, plus the abstract
 no-two-axis-collapse theorem for an invertible common frame, with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 2095 exact controls and 61 owner-source pins. These include the
+blobs, 2275 exact controls and 61 owner-source pins. These include the
 AF/Lorentz/CAR first-stage bridge, exact invariance of every inherited AF
 observable under the record gate, conditional three-term price split, and metric-update replay,
 Lorentz and general-GL current-rest guard obstructions, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode
 polynomial, the current-step mismatch, and a 128-step regression in
 [`a4d_native_engine_correlated_current_extension_results.json`](certificates/a4d_native_engine_correlated_current_extension_results.json).
+
+## Internal resolution and information growth, with the local metric readout retained
+
+The same actual recursion has an exact all-depth capacity law. Starting at
+AF level `n=1`, one owned record tick advances three inclusions, so
+`n_k=1+3k`. The path counts are
+`(A_n,B_n)=(F_(n+2),F_(n+1))`; hence the full GNS dimension is
+
+\[
+ d_k=A_{n_k}^2+B_{n_k}^2=F_{2n_k+3}=F_{6k+5}.
+\]
+
+The first values are `5, 89, 1597`. The per-tick capacity ratio is
+`R_k=F_(6k+11)/F_(6k+5)`, tends to `phi^6`, and strictly increases:
+
+\[
+ d_kd_{k+2}-d_{k+1}^2=64,
+ \qquad R_{k+1}-R_k=\frac{64}{d_kd_{k+1}}>0.
+\]
+
+Consequently the internal state-space dimension has positive discrete
+second difference at every tick. This is an exact growth of the available
+AF/GNS resolution. It does not identify that dimension with spatial volume.
+
+There is also an exact record-word distribution. At every step the new
+apparatus vector is `u=a e_0+p e_3`; these two owned frame directions are
+orthogonal and have squared weights `p` and `p^2`, with `p+p^2=1`. Nested
+AF isometries therefore give pairwise orthogonal length-`k` history words.
+If a word contains `r` `e_3` details, its squared weight is
+`p^(k-r)(p^2)^r=p^(k+r)`, and there are `binomial(k,r)` such words. For the actual
+two-step state the four word weights are `p^2,p^3,p^3,p^4`. The coarser
+newest-detail decomposition groups the last two, whose weights sum to
+`p^3+p^4=p^2`. The Shannon entropy of this orthogonal history readout is
+
+\[
+ H_k=k[-p\log p-p^2\log(p^2)]
+    =k(2-p)\log\phi,
+\]
+
+or about `0.6650183864` nats (`0.9594187282` bits) per tick. This is the
+Shannon entropy of the named record-word PVM, not the von Neumann entropy
+of the global state (which remains pure) or thermodynamic entropy. It
+quantifies unbounded information in the exact nested record coordinates;
+physical admission of a measurement is a separate question.
+
+The geometric readout carried by the same construction is more restrictive.
+On the original `M_2` GNS channel, the normalized local CAR vector after the
+owned `U e_0` record is
+
+\[
+ m_* = \frac{a}{\sqrt2}(e_{\varnothing}+e_{123})
+       +\frac{p}{\sqrt2}(e_0-e_{0123}).
+\]
+
+Its full-CAR current is exactly `J=e_0`; with the inherited Lorentz form
+`q=eta`, the existing observer-pairing readout is `Q=I_4` for this first
+AF-to-CAR state. At later depths the fresh apparatus is still acted on by
+the same `U tensor I`, and the original `M_2` density remains `I_2/2` by
+the all-level coarse-observable identity. This proves that the inherited
+Lorentz observables stay fixed. It does not yet define the full CAR current
+on every fine path-multiplicity sector, so the first-step pairing is not a
+derived fine-level metric update. The tower grows in dimension and stores
+orthogonal history while the currently owned inherited Lorentz readout stays
+fixed.
+
+This is a positive result for the proposed inside-out mechanism at the
+information/resolution level, plus a precise boundary for the route to
+gravity: the AF fine records have not been mapped by an existing owner into
+`q,D` variations. No metric expansion, curved solution, source or Einstein
+equation follows until that coupling and the common native action are
+derived. The exact controls now check the first 33 capacities, the
+two-step history-word PVM, and the first-step local CAR current and pairing;
+the all-depth formulas follow from the owned Fibonacci recurrence and the
+isometric path-copy rule. The research Lean capsule imports the AF tower owner
+and proves the dimension recurrences, the sampled-capacity recurrence
+`d_(k+2)+d_k=18*d_(k+1)`, and `d_0=5, d_1=89`. Its compiled output has no
+`sorryAx`; the printed dependencies are only standard Lean axioms. The closed
+Fibonacci-index identity and strict-ratio identity remain separately derived
+from the owner recurrence and checked exactly at the first 33 capacities;
+they are not mislabeled as Lean declarations in this capsule. The full replay
+has 2275 controls: 178 exact AF-capacity/record/current controls and two added
+guards for the Lean proposition types and axiom receipts.

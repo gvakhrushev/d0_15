@@ -737,6 +737,137 @@ def af_coarse_observable_invariance(checks):
         'scope': 'the new fine algebra may contain new observables; this proves no metric change of the inherited M2 readout, not a no-go for other admitted couplings',
     }
 
+
+def af_internal_resolution_and_record_information(checks):
+    """Quantify the actual AF tower's growing capacity and retained history."""
+    def fib(n):
+        x, y = 0, 1
+        for _ in range(n):
+            x, y = y, x + y
+        return x
+
+    dimensions = []
+    for tick in range(33):
+        level = 1 + 3 * tick
+        counts = AF.counts(level)
+        check(counts == (fib(level + 2), fib(level + 1)),
+              f'AF_Fibonacci_path_counts_tick_{tick}', checks)
+        dimension = sum(size * size for size in counts)
+        check(dimension == fib(2 * level + 3) == fib(6 * tick + 5),
+              f'AF_GNS_dimension_is_Fibonacci_tick_{tick}', checks)
+        dimensions.append(dimension)
+
+    # For n=5+6k, Cassini's identity gives
+    # F_n F_(n+12) - F_(n+6)^2 = F_6^2 = 64.
+    # This makes each three-inclusion capacity ratio strictly increase.
+    for tick in range(31):
+        d0, d1, d2 = dimensions[tick:tick + 3]
+        check(d0 * d2 - d1 * d1 == 64,
+              f'AF_capacity_ratio_increment_numerator_{tick}', checks)
+        check(d1 > d0 and d0 * d2 > d1 * d1,
+              f'AF_capacity_ratio_strictly_increases_{tick}', checks)
+        check(d2 - 2 * d1 + d0 > 0,
+              f'AF_capacity_has_positive_second_difference_{tick}', checks)
+
+    # Resolve the two actual nested record bits at levels 1 -> 4 -> 7.
+    # Each branch is formed from the owned V_0/V_3 columns, retaining the
+    # complete canonical A_1 trace vector and all four path branches.
+    chi = sp.Matrix([[1, 0, 0, 1], [0, 1, -sp.I, 0],
+                     [0, 1, sp.I, 0], [1, 0, 0, -1]]) / sp.sqrt(2)
+    canonical = sp.Matrix([sp.sqrt(2) * p * chi[i, 0] for i in range(4)] + [a * p])
+    frame1, frame4 = AF.frame(1), AF.frame(4)
+    V1, d1 = frame1['V'], frame1['old_dimension']
+    V4, d4 = frame4['V'], frame4['old_dimension']
+    state7 = AF.activate(4, AF.activate(1, canonical))
+    branches = {}
+    coefficients = {0: a, 3: p}
+    for newest in (0, 3):
+        for older in (0, 3):
+            old_branch = V1[:, older * d1:(older + 1) * d1] * canonical
+            branch = V4[:, newest * d4:(newest + 1) * d4] * old_branch
+            branches[(newest, older)] = branch
+            check(AF.zero((branch.T * branch)[0] - 1),
+                  f'AF_two_tick_history_word_normalized_{newest}_{older}', checks)
+    words = list(branches)
+    for i, left in enumerate(words):
+        for right in words[i + 1:]:
+            check(AF.zero(branches[left].T * branches[right]),
+                  f'AF_two_tick_history_words_orthogonal_{left}_{right}', checks)
+    reconstructed = sp.zeros(state7.rows, 1)
+    expected_weights = {}
+    for word, branch in branches.items():
+        coefficient = coefficients[word[0]] * coefficients[word[1]]
+        reconstructed += coefficient * branch
+        expected_weights[word] = AF.red(coefficient ** 2)
+    check(AF.zero(state7 - reconstructed),
+          'AF_two_tick_state_is_full_four_word_record_superposition', checks)
+    expected_word_weights = {
+        (0, 0): p**2, (0, 3): p**3,
+        (3, 0): p**3, (3, 3): p**4,
+    }
+    check(all(AF.zero(expected_weights[word] - expected_word_weights[word])
+              for word in words),
+          'AF_two_tick_history_word_probabilities', checks)
+    check(AF.zero(sum(expected_weights.values()) - 1),
+          'AF_two_tick_history_word_probabilities_normalize', checks)
+
+    # The owner's full-CAR current on the normalized local state produced by
+    # U e_0 and the canonical M_2 GNS vector is exactly e_0. The normalized
+    # observer pairing it defines against eta is I_4.
+    local = sp.zeros(16, 1)
+    local[0], local[1], local[14], local[15] = (
+        a / sp.sqrt(2), p / sp.sqrt(2), a / sp.sqrt(2), -p / sp.sqrt(2))
+    m2_columns = (list(range(4)) + [d1 + i for i in range(4)] +
+                  [2 * d1 + i for i in range(4)] +
+                  [3 * d1 + i for i in range(4)])
+    V_m2 = V1[:, m2_columns]
+    T = sp.Matrix([[1, 0, 1, 0], [1, 0, -1, 0],
+                   [0, 1, 0, 1], [0, 1, 0, -1]]) / sp.sqrt(2)
+    car_basis = F.record_basis()
+    Psi = V_m2 * sp.kronecker_product(T, chi) * car_basis.T
+    new_apparatus = sp.Matrix([a, 0, 0, p])
+    local_from_owned_map = (Psi.conjugate().T * V_m2 *
+                            sp.kronecker_product(new_apparatus, chi[:, 0]))
+    check(AF.zero(local - local_from_owned_map),
+          'AF_two_tick_local_channel_uses_the_owned_AF_to_CAR_intertwiner', checks)
+    eta = sp.diag(1, -1, -1, -1)
+    current = C.current(I4, local)
+    check(AF.zero((local.T * local)[0] - 1),
+          'AF_local_CAR_current_state_is_normalized', checks)
+    check(all(C.red(current[i] - (1 if i == 0 else 0)) == 0
+              for i in range(4)),
+          'AF_local_CAR_current_is_fixed_time_axis', checks)
+    pairing = C.observer_pairing(eta, current)
+    check(all(C.red(x) == 0 for x in pairing - sp.eye(4)),
+          'AF_local_CAR_observer_pairing_is_identity', checks)
+
+    # A length-k nested apparatus word has r record outcomes with probability
+    # p^(k-r) (p^2)^r. Its Shannon entropy is k times the one-tick entropy.
+    check(AF.zero((p + p**2) - 1), 'AF_one_tick_record_branches_normalize', checks)
+    entropy_coefficient = AF.red(p + 2 * p**2)
+    check(AF.zero(entropy_coefficient - (2 - p)),
+          'AF_record_entropy_rate_golden_reduction', checks)
+    return {
+        'level_after_k_ticks': 'n=1+3k',
+        'AF_GNS_dimension': 'd_k=F_(6k+5)',
+        'dimension_witnesses': [dimensions[0], dimensions[1], dimensions[2]],
+        'three_inclusion_capacity_ratio': 'F_(6k+11)/F_(6k+5)',
+        'ratio_limit': 'phi^6',
+        'ratio_is_strictly_increasing': True,
+        'discrete_capacity_acceleration': 'd_(k+2)-2*d_(k+1)+d_k>0',
+        'ratio_increment_identity': 'd_k*d_(k+2)-d_(k+1)^2=64',
+        'nested_record_word_probabilities': 'r record bits among k have probability p^(k+r), multiplicity binomial(k,r)',
+        'measurement_entropy': 'H_k=k*(2-p)*log(phi) nats for the nested orthogonal history PVM',
+        'one_tick_entropy_rate_nats': 0.665018386444004,
+        'one_tick_entropy_rate_bits': 0.959418728222744,
+        'two_tick_word_weights': ['p^2', 'p^3', 'p^3', 'p^4'],
+        'von_Neumann_entropy_of_global_pure_state': 0,
+        'local_CAR_current': 'e0 on the first-step normalized AF-to-CAR state',
+        'local_observer_pairing': 'I4 against q=eta at the first step',
+        'inherited_metric_response': 'the inherited M2 observables remain unchanged at every depth; no all-fine-level CAR readout is supplied',
+        'scope': 'exact AF capacity and record-register law plus the first-step local CAR readout; Shannon entropy is for its orthogonal PVM, not thermodynamic entropy; no physical metric expansion, source, Ward identity, or GR is claimed',
+    }
+
 def metric_transition_owner_census(checks, metric_update_data):
     """Replay existing metric, heat and AF recording owners and classify arrows."""
     owner_replays = [
@@ -810,6 +941,7 @@ def metric_transition_owner_census(checks, metric_update_data):
     overlap = fock_executor_gate_overlap(checks)
     af_bridge = af_lorentz_fock_bridge(checks)
     af_readout = af_coarse_observable_invariance(checks)
+    af_dynamics = af_internal_resolution_and_record_information(checks)
     return {
         'record_metric_chronology': {
             'owned_rule': 'q_plus=-Q+2*w*wT/(wT*Qinv*w)',
@@ -843,8 +975,9 @@ def metric_transition_owner_census(checks, metric_update_data):
         },
         'af_lorentz_fock_first_stage_bridge': af_bridge,
         'af_record_coarse_observable_invariance': af_readout,
+        'af_internal_resolution_and_record_information': af_dynamics,
         'scope': 'limited census of two metric/heat candidates and two record-operator owners; not global owner completeness',
-        'next_missing_arrow': 'couple the newly recorded fine-sector state to an existing admitted metric/link owner: the current AF record gate preserves every inherited coarse observable, including the original M2 Lorentz readout. Then derive source/Ward and curved recovery; no new selector or fitted coupling is supplied',
+        'next_missing_arrow': 'derive the all-depth physical readout of the newly recorded fine AF sector and its coupling into q,D on the full constrained carrier. AF capacity and orthogonal record information grow while inherited M2 Lorentz observables stay fixed; the first-step CAR pairing does not define a fine-level metric update. Then differentiate the actual common price and derive source/Ward and curved recovery; no new selector or fitted coupling is supplied',
     }
 
 def qD_fiber_nonbasicness(checks, heat_data):
@@ -1037,9 +1170,24 @@ def build_result():
         'D0.Research.EngineCorrelatedCurrentExtension.golden_amplitude_current_is_timelike',
         'D0.Research.EngineCorrelatedCurrentExtension.L4_heat_numerator_negative',
         'D0.Research.EngineCorrelatedCurrentExtension.L4_heat_slope_positive',
+        'D0.Research.EngineCorrelatedCurrentExtension.dimA_two_step_recurrence',
+        'D0.Research.EngineCorrelatedCurrentExtension.dimA_six_step_recurrence',
+        'D0.Research.EngineCorrelatedCurrentExtension.afCapacity_recurrence',
+        'D0.Research.EngineCorrelatedCurrentExtension.afCapacity_initial',
     ]
     check(all(name in lean_output for name in lean_declarations),
           'lean_output_resolves_all_named_propositions', checks)
+    normalized_lean_output = ' '.join(lean_output.split())
+    recurrence_signatures = [
+        'dimA_two_step_recurrence (n : ℕ) : D0.Algebra.FibonacciAFTower.dimA (n + 2) + D0.Algebra.FibonacciAFTower.dimA n = 3 * D0.Algebra.FibonacciAFTower.dimA (n + 1)',
+        'dimA_six_step_recurrence (n : ℕ) : D0.Algebra.FibonacciAFTower.dimA (n + 6) + D0.Algebra.FibonacciAFTower.dimA n = 18 * D0.Algebra.FibonacciAFTower.dimA (n + 3)',
+        'afCapacity_initial : D0.Research.EngineCorrelatedCurrentExtension.afCapacity 0 = 5 ∧ D0.Research.EngineCorrelatedCurrentExtension.afCapacity 1 = 89',
+    ]
+    check(all(signature in normalized_lean_output for signature in recurrence_signatures),
+          'lean_output_resolves_actual_fibonacci_capacity_types', checks)
+    check("'D0.Research.EngineCorrelatedCurrentExtension.afCapacity_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]" in normalized_lean_output and
+          "'D0.Research.EngineCorrelatedCurrentExtension.afCapacity_initial' depends on axioms: [propext]" in normalized_lean_output,
+          'fibonacci_capacity_proofs_use_only_standard_lean_axioms', checks)
     check('sorryAx' not in lean_output and 'depends on axioms: [propext,' in lean_output and
           all(token in lean_output for token in ('Classical.choice', 'Quot.sound')),
           'lean_output_uses_no_sorry_or_extra_axiom', checks)
