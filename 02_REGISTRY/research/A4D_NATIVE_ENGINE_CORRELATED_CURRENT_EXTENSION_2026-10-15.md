@@ -268,14 +268,20 @@ heat and AF owners do not establish that composite physical transition.
 
 The separate full-CAR record binding realizes the literal golden record gate
 on all sixteen exterior components, with its complete two-return price; its
-checker passes 169 exact controls and 15 mathematical mutations. The natural
-fixed-\(q\) state update \(m_+=U_F(q,m)m\) is not closed: it can lose the timelike
-grade-one or nonzero top-grade domain, and the owner derives neither the joint
-metric transition nor recovery of orientation from retained history. Thus
-the AF recording interaction and its CAR realization are both concrete, but
-their jointly admitted transition into the active executor is still missing.
-This is a scoped failure of that direct fixed-(q) update, not a no-go for
-history-dependent joint dynamics.
+checker passes 169 exact controls and 15 mathematical mutations. The owner
+also gives explicit fixed-\(q\) inputs whose gate outputs lose timelike grade
+one or the top-grade orientation, so the unrestricted update does not preserve
+that domain. But the active executor has a sharper positive match: at
+\(q=\eta\), for either sign of its collinear first grade and either sign of
+the top-grade volume, the full CAR gate matrix is exactly the executor's
+\(U_{\pm}\). On the stored active orbit the top grade is absent at tick 0,
+appears at tick 1, and this operator identity holds on all 128 tested later
+steps. Yet none of those 128 states lies in the full-CAR owner's fresh-blank
+plane. The exact checker records all three facts. Thus the operator is already
+shared; the unresolved bridge is preparation: an AF retained-memory map must
+supply the initial orientation and the correct blank plane, then admit the
+joint metric transition and source. This positive identity does not itself
+prove that preparation, a physical action, or a history-dependent joint law.
 
 ## The current heat does not descend to the metric/link fiber
 
@@ -359,7 +365,7 @@ The Lean capsule
 proves generic gate/minor and heat-sign arithmetic kernels, plus the abstract
 no-two-axis-collapse theorem for an invertible common frame, with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 1538 exact controls and 58 owner-source pins, the conditional
+blobs, 2057 exact controls and 58 owner-source pins, the conditional
 three-term price split, metric-update replay,
 Lorentz and general-GL current-rest guard obstructions, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode

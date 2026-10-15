@@ -97,6 +97,8 @@ C = load('d0_correlated_current_owner_extension',
          '02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py')
 P = load('d0_reference_memory_owner_extension',
          '02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py')
+F = load('d0_fock_record_binding_owner',
+         '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py')
 a, p = P.a, P.p
 SYMBOLS = [sp.Integer(1), a, p, a*p]
 I4 = sp.eye(4)
@@ -377,6 +379,68 @@ def general_gl_frame_guard_obstruction(checks):
         'scope': 'all common linear GL(4) frame/coframe lifts with unchanged executor guard; nonlinear state preparation and interaction-level updates remain open',
     }
 
+def fock_executor_gate_overlap(checks):
+    """Compare the owned full-CAR record gate with the actual executor orbit."""
+    T = sp.Matrix([[1, 0, 1, 0], [1, 0, -1, 0],
+                   [0, 1, 0, 1], [0, 1, 0, -1]]) / sp.sqrt(2)
+    apparatus = sp.Matrix([[a, 0, -p, 0], [0, a, 0, -p],
+                           [0, p, 0, a], [p, 0, a, 0]])
+    blank = sp.diag(1, 0, 1, 0)
+    B0 = F.record_basis()
+    base_gate = B0 * sp.kronecker_product(T.T * apparatus * T, I4) * B0.T
+    base_blank = B0 * sp.kronecker_product(T.T * blank * T, I4) * B0.T
+
+    frames = {}
+    for observer_sign in (-1, 1):
+        for orientation_sign in (-1, 1):
+            frame = sp.diag(observer_sign,
+                            observer_sign * orientation_sign, 1, 1)
+            exterior = P.C.ext(frame)
+            gate = exterior * base_gate * exterior.inv()
+            blank_plane = exterior * base_blank * exterior.inv()
+            check(all(C.red(x) == 0 for x in gate - engine_gate_matrix(observer_sign)),
+                  f'full_fock_record_gate_equals_executor_gate_n{observer_sign}_o{orientation_sign}', checks)
+            frames[(observer_sign, orientation_sign)] = (gate, blank_plane)
+
+    state = load_integer_state(1)
+    check(state.matter[15] == E.ZERO,
+          'active_executor_seed_has_no_top_grade_orientation_for_fock_binding', checks)
+    matched_ticks = 0
+    blank_ticks = 0
+    for tick in range(129):
+        observer_sign = state.matter[1].sign()
+        orientation_sign = state.matter[15].sign()
+        check(observer_sign != 0 and
+              all(not state.matter[i] for i in (2, 4, 8)),
+              f'active_executor_first_grade_is_signed_time_axis_{tick}', checks)
+        if tick == 0:
+            check(orientation_sign == 0,
+                  'fock_gate_bootstrap_orientation_absent_at_seed', checks)
+        else:
+            check(orientation_sign != 0,
+                  f'active_executor_top_grade_orientation_available_{tick}', checks)
+            gate, blank_plane = frames[(observer_sign, orientation_sign)]
+            vector = exact_vector(state)
+            next_vector = exact_vector(E.step(state))
+            check(all(C.red(x) == 0 for x in gate * vector - next_vector),
+                  f'full_fock_record_gate_matches_actual_executor_step_{tick}', checks)
+            matched_ticks += 1
+            in_blank = all(C.red(x) == 0 for x in blank_plane * vector - vector)
+            check(not in_blank,
+                  f'active_executor_state_is_not_the_fock_blank_plane_{tick}', checks)
+            blank_ticks += int(in_blank)
+        if tick < 128:
+            state = E.step(state)
+
+    return {
+        'operator_identity': 'U_F(q=eta,n=sign(m1)*e0,Omega=sign(m15)*vol)=actual executor U_sign',
+        'tested_transitions_with_nonzero_top_grade': matched_ticks,
+        'operator_matches_on_tested_transitions': matched_ticks,
+        'seed_orientation': 'absent at tick 0; first available at tick 1',
+        'tested_active_states_in_owned_fock_blank_plane': blank_ticks,
+        'scope': 'operator coincidence does not establish fresh-blank preparation, AF-to-CAR memory binding, physical admission or metric/source dynamics',
+    }
+
 def metric_transition_owner_census(checks, metric_update_data):
     """Replay existing metric, heat and AF recording owners and classify arrows."""
     owner_replays = [
@@ -447,6 +511,7 @@ def metric_transition_owner_census(checks, metric_update_data):
     check('the actual endpoint-pairing/metric transition must be derived' in fock_source and
           'recovery from history or other grades must be actually constructed' in fock_source,
           'fock_record_binding_rejects_uncharged_metric_or_orientation_reset', checks)
+    overlap = fock_executor_gate_overlap(checks)
     return {
         'record_metric_chronology': {
             'owned_rule': 'q_plus=-Q+2*w*wT/(wT*Qinv*w)',
@@ -472,12 +537,14 @@ def metric_transition_owner_census(checks, metric_update_data):
         },
         'fock_record_binding': {
             'owned_scope': 'full sixteen-component CAR realization of the literal record apparatus',
-            'fixed_q_record_step': 'not closed on timelike-grade or nonzero-top-grade domain',
+            'operator_overlap': 'exactly matches the actual executor gate on the 128 tested post-seed steps',
+            'preparation_boundary': 'seed lacks orientation; all 128 tested post-seed states miss the owned fresh-blank plane',
             'joint_metric_transition_and_history_orientation_recovery': 'OPEN',
+            'active_executor_overlap': overlap,
             'replay': outputs['a4d_native_fock_record_binding_check'],
         },
         'scope': 'limited census of two metric/heat candidates and two record-operator owners; not global owner completeness',
-        'next_missing_arrow': 'derive a physically admitted joint transition that composes the AF retained-record interaction, its full CAR realization, the joint (q,D,b,m) state and the accepted executor step while preserving timelike and orientation data; then derive its source/Ward',
+        'next_missing_arrow': 'derive the AF retained-memory preparation that supplies the missing seed orientation and fresh-blank membership; then prove its joint (q,D,b,m) metric transition, source/Ward and compatible refinement. The full-CAR gate already matches the executor on the tested post-seed steps',
     }
 
 def qD_fiber_nonbasicness(checks, heat_data):
