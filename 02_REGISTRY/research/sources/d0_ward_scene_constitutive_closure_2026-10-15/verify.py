@@ -148,9 +148,16 @@ def main(write: bool = False) -> None:
     check('scene_to_matter_orbit_source', edge_count==359 and list(sums.values())==[0,9,11])
     # The moving-preparation term is mandatory, and is not another free source.
     drho = within[1]/10-rho
-    dL = s.eye(33)[:,0]*s.eye(33)[:,0].T
-    check('moving_preparation_jet', material_jet(rho,drho,L,dL)==2)
-    check('joint_source_chain_rule', material_jet(rho,drho,L,dL)==s.trace(drho*L)+s.trace(rho*dL))
+    # Use a faithful density and a genuine edge-weight curve, so the joint
+    # test is admissible on BOTH sides of zero, not a one-sided rank change.
+    rho_base = s.eye(33)/33
+    edge = s.eye(33)[:,0]-s.eye(33)[:,20]
+    dL = edge*edge.T
+    curve_t = s.symbols('curve_t', real=True)
+    curve_price = s.trace((rho_base+curve_t*drho)*(L+curve_t*dL))
+    check('moving_preparation_jet', material_jet(rho_base,drho,L,dL)==s.Rational(68,33))
+    check('joint_source_chain_rule', s.diff(curve_price,curve_t).subs(curve_t,0)==material_jet(rho_base,drho,L,dL)
+          and s.Rational(1,33)-s.Rational(1,1000)>0 and s.Rational(1,33)-s.Rational(1,1200)>0)
 
     # Any positive tensor with eigenvalues (9,11,13) is an exact sum of
     # three transverse projectors, NOT one rank-two projector.
