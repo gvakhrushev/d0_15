@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import hashlib
 import importlib.util
+from itertools import combinations
 import json
 from math import isqrt
 from pathlib import Path
@@ -241,6 +242,91 @@ def run_checks(repo: Path | None = None) -> dict:
     eq(q_left - expected_left, "actual_left_corner_polynomial")
     eq(q_full - (1 - p**6*(1-q_left)), "full_vs_left_corner_compression")
 
+    # Actual old-A1 M2 congruence, not a freely selected density. Both orbit
+    # Grams are calculated before using the finite-orbit normalization proof.
+    # In normalized PF coordinates x_ij is represented by vec(X_ij), whereas
+    # its physical algebra representative is X_ij/p**5.
+    def old_m2(matrix: s.MatrixBase) -> s.MatrixBase:
+        pair = (matrix, s.zeros(1))
+        for _ in range(8):  # literal A1 -> A9, with the old scalar retained
+            pair = (s.diag(*pair), pair[0])
+        return pair[0]
+
+    P0 = old_m2(s.diag(1, 0))
+    F10 = old_m2(s.Matrix([[0, 0], [1, 0]]))
+    eq(P0*y-y, "actual_y_old_M2_highest_weight")
+    eq(P0*z-z, "actual_z_old_M2_highest_weight")
+    ys = (y, AF.mat(F10*y))
+    zs = (z, AF.mat(F10*z))
+    for vectors, label in ((ys, "y"), (zs, "z")):
+        eq(F10*vectors[1], label+"_lowering_square_zero")
+        eq(F10.H*vectors[0], label+"_raising_annihilates_highest")
+        eq(F10.H*vectors[1]-vectors[0], label+"_matrix_unit_returns_highest")
+    orbit = [AF.mat(u*v.H) for u in ys for v in zs]
+
+    def six_C(matrix: s.MatrixBase) -> tuple[s.MatrixBase, s.MatrixBase]:
+        blocks = (matrix, s.zeros(55))
+        for n in range(8, 2, -1):
+            A, B = AF.counts(n)
+            Z, W = blocks
+            blocks = (AF.mat(p*Z[:A, :A] + p*p*W),
+                      AF.mat(Z[A:A+B, A:A+B]))
+        return blocks
+
+    coarse_orbit = [six_C(matrix) for matrix in orbit]
+    orbit_gram = AF.mat(s.Matrix(4, 4, lambda i, j:
+        s.trace(orbit[i].H*orbit[j])))
+    coarse_gram = AF.mat(s.Matrix(4, 4, lambda i, j:
+        p**4*s.trace(coarse_orbit[i][0].H*coarse_orbit[j][0])
+        + p**5*s.trace(coarse_orbit[i][1].H*coarse_orbit[j][1])))
+    eq(orbit_gram-s.eye(4), "actual_SL2_orbit_HS_Gram")
+    eq(coarse_gram-p**10*(1-q_full)*s.eye(4),
+       "actual_SL2_orbit_six_C_PF_Gram")
+    ur, ui, vr, vi = s.symbols("ur ui vr vi", real=True)
+    column = (ur+s.I*ui, vr+s.I*vi)
+    coefficients = s.Matrix([u*s.conjugate(v) for u in column for v in column])
+    f = sum(s.conjugate(v)*v for v in column)
+    require(s.expand((coefficients.H*coefficients)[0]-f**2) == 0,
+            "whole_complex_first_column_norm_not_finite_boost_sampling")
+    require(AF.red((coefficients.H*coarse_gram*coefficients)[0]
+                   - p**10*(1-q_full)*f**2) == 0,
+            "whole_normalized_orbit_occupation_constant")
+    Kz = old_m2(s.diag(s.Rational(1, 2), -s.Rational(1, 2)))
+    Xdot = AF.mat(Kz*X + X*Kz.H)
+    norm_jet = AF.red(s.trace(Xdot.H*X + X.H*Xdot))
+    eq(norm_jet-2, "actual_nonzero_raw_z_boost_normalizer")
+    Cdot = six_C(Xdot)
+    coarse_norm_jet = AF.red(sum(weight*s.trace(D.H*C + C.H*D)
+                               for weight, C, D in zip((p**4, p**5),
+                                                       coarse, Cdot)))
+    eq(coarse_norm_jet-p**10*(1-q_full)*norm_jet,
+       "actual_z_boost_quotient_rule_cancels_normalizer")
+
+    # The new #322 tuple bridge does NOT claim Lorentz equivariance. Test the
+    # additional spectator-only continuation separately: character mismatch
+    # rules out every fixed intertwiner, without changing the valid tuple map.
+    A_spin = s.diag(-2*s.I, s.I/2)
+    pauli = (s.eye(2), s.Matrix([[0, 1], [1, 0]]),
+             s.Matrix([[0, -s.I], [s.I, 0]]), s.diag(1, -1))
+    Lambda = s.Matrix(4, 4, lambda i, j:
+        s.trace(pauli[i]*A_spin*pauli[j]*A_spin.H)/2)
+    require(A_spin.det() == 1, "mixed_boost_rotation_is_in_SL2")
+    require(Lambda == s.Matrix([[s.Rational(17, 8), 0, 0, s.Rational(15, 8)],
+                               [0, -1, 0, 0], [0, 0, -1, 0],
+                               [s.Rational(15, 8), 0, 0, s.Rational(17, 8)]]),
+            "actual_Pauli_congruence_mixed_element")
+    eta = s.diag(1, -1, -1, -1)
+    require(Lambda.T*eta*Lambda == eta, "full_Lorentz_witness")
+    exterior_characters = [sum(Lambda.extract(indices, indices).det()
+                              for indices in combinations(range(4), k))
+                           for k in range(5)]
+    require(exterior_characters == [1, s.Rational(9, 4), -s.Rational(13, 2),
+                                   s.Rational(9, 4), 1],
+            "all_five_exterior_grades_retained")
+    require(4*s.trace(Lambda) == 9 and sum(exterior_characters) == 0
+            and (s.eye(4)+Lambda).det() == 0,
+            "spectator_congruence_not_exterior_representation")
+
     rank, dimension = 34, 10946
     m = dimension - rank
     require(rank == 5**2+3**2 and dimension == 89**2+55**2 and m == 10912,
@@ -359,6 +445,22 @@ def run_checks(repo: Path | None = None) -> dict:
             "limit_source_upper_bound": "<-1/80",
             "conditional_nu_star_asymptotic": "(2 log(phi)/beta) N+O(1)",
             "full_GNS_lift_uniquely_forced_by_left_state": False,
+        },
+        "old_SL2_pullback": {
+            "actual_orbit_GNS_Gram": "I4",
+            "actual_six_C_Gram": "(1-q_full) I4",
+            "raw_PF_squared_norm": "p^10 ||A e0||^4",
+            "normalized_occupation": "q_archive(A)=q_full for every invertible A",
+            "source_at_fixed_nu_beta_J": "nu dq_archive=0",
+            "scope": "this pinned X9 state; not every preparation or full Cost-Info",
+            "AF_tuple_bridge_input": "PR322 ce255de831f1e42a9429a5e767f1a9121a4ae2f3",
+            "spectator_only_Lorentz_continuation": {
+                "witness": "A=diag(-2i,i/2)",
+                "four_vector_character": 9,
+                "full_exterior_character": 0,
+                "fixed_intertwiner_exists": False,
+                "owner_tuple_bridge_remains_valid": True,
+            },
         },
         "scope": {"actual_owned_AF_record": True, "six_literal_PF_adjoint_steps": True,
                   "full_heat_trace_and_archive_retained": True,

@@ -4731,3 +4731,31 @@ the recorded preparation and archive/source owners and identifies precisely
 which additional source readout their join needs. The physical field-to-price
 map, other coupled terms, full stationarity and the refinement-uniform original
 terminal remain open.
+
+## Actual pullback of the new AF Lorentz carrier (2026-10-15)
+
+Sections 7–8 of the [same archive synthesis](A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md)
+now consume #322's published `ce255de8` AF–Lorentz–CAR bridge. On the actual
+recorded X9, congruence by the old A1 M2 block has a four-dimensional orbit
+span whose normalized full GNS Gram is I4. Applying the six actual PF
+conditional expectations gives the compressed Gram `(1-q_full) I4`.
+Consequently the normalized archive occupation is exactly constant for every
+old SL(2,C) congruence, despite the changing fixed-PF norm. Its complete
+reference-price pullback is `nu dq_archive=0` at fixed nu, beta and J.
+This does not erase the nonzero independent nu-source, the archive, other
+observables, other preparations or other terms of the complete action.
+
+The same synthesis checks the type of a proposed next identification. The
+valid #322 map intertwines the fixed gate, price cut and blank. Extending it
+as spectator-only Pauli congruence would give four vector representations,
+not the full exterior Lorentz representation: at `A=diag(-2i,i/2)` their
+characters are exactly 9 and 0. Thus that extra geometric intertwiner cannot
+be assumed. No defect in the stated fixed-tuple bridge is inferred.
+
+This resolves one actual field-to-price candidate instead of declaring its
+unknown derivative nonzero. A genuine coupled operation must supply the
+remaining physical metric/link/matter jets and any motion of the price's
+other arguments; neither an old Lorentz frame change nor a fitted gap law
+provides them. The full native source, common stationarity and the original
+fixed-source/raw-owner terminal remain open. The existing focused archive
+entrypoint checks both new exact identities without replaying older suites.
