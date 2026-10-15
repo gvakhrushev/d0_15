@@ -4801,3 +4801,87 @@ A10 fine-mass tangent has derivative one. The two contracts therefore remain
 distinct. Their actual tower values and support spectra are explicit; no
 infinite-level finite-entropy action, physical Info selection or vanishing of
 other joint-action terms is inferred.
+
+## Canonical trace preparation and the second active record source (2026-10-15)
+
+The [canonical trace-record synthesis](A4D_NATIVE_CANONICAL_TRACE_RECORD_SOURCE.md)
+now consumes the whole A1 trace seed, including its scalar component, through
+the actual AF/CAR bridge. The owned right-module path decomposition proves a
+general identity for normalized GNS seed vectors: the complete three-step
+record operator state has the seed's nonzero spectrum, with code cost shifted
+by six. Thus `A_old,operator=A_old,seed+6` and
+`A_gain,operator=H_seed/log(phi)`, including their first sources. This does
+not assert a left/right entropy identity for arbitrary mixed GNS densities.
+
+The first record's complete operator algebra is A7=M34+M21, represented on
+the working H4 of dimension89. Its actual spectrum is `(p²,p²,p³)` with52
+zero modes, old action6 and zero old preparation covector. The coarse A4
+left readout instead has13 positive eigenvalues. A real norm-preserving
+full-blank matter rotation gives its old source in
+`(0.43415444592488,0.43415444592489)`. The actual PF archive relative entropy
+has the opposite derivative, so this coarse value is not the complete first
+operator source. All16 matter,4 scalar and69 complement coordinates remain.
+
+The positive next consumer is the **second active native record**
+`x7=W4 J4 x4`. Its complete operator algebra A10=M144+M89 now inherits the
+coarse A4 spectrum. The same exact source is therefore a complete second-
+record operator source; its gain-contract source lies in
+`(-0.65076653214095,-0.65076653214094)`. Native n=4 frame isometries and their
+Gram jets establish this without a large ambient spectral calculation.
+Passive extension and active recording have different source laws.
+
+The synthesis also corrects the regular-carrier reference: the first
+operator state has full regular GNS dimension1597, where its prepared vector
+is `W1 e/p³`. The canonical A1 GNS inclusion has rank5 and yields
+`q=1-p7,dq=4ap9`; left multiplication by the corner has rank89 and yields
+`q=p²,dq=4ap³`. Their separately declared heat generators must not be
+interchanged or equated with Cost-Info. Actual six-copy trace-adjoint
+calculation verifies the canonical result.
+
+This supplies an existing complete active process with a concrete nonzero
+spectral source. Binding it to native Info(v), physical preparation and the
+full constrained metric/link/matter action is still required before a joint
+stationary solution or Einstein source is claimed. The fixed-source/raw-owner
+terminal and the separate parent obligations remain open. Reproduce only the
+new focused entrypoint `a4d_native_canonical_trace_record_source_check.py`;
+older suites and Lean builds are not replayed for this continuation.
+
+## Integrated supplied second-jet/readout package (2026-10-15)
+
+The [second-jet intake](A4D_NATIVE_RECORD_SECOND_JET_SOURCE_CLOSURE.md)
+preserves all five supplied files byte-for-byte and separates their proposals
+from the user instruction to integrate them. The
+[corrected geometric interface](A4D_NATIVE_GEOMETRIC_READING_INTERFACE.md)
+consumes the concrete Pauli-product U(4) germ. Its projector metric is
+`q(0)=p³I4`; its scalar curvature at the origin is `-6/p³`. With a consistent
+normalized trace and declared normal-field variations, the packed ten-slot
+metric map is `delta q=-2p³ f`. This is a local kinematic surjectivity result,
+conditional on the stated variation class, not physical admission or a
+derived Einstein covector. The linear-only control concerns its declared
+normal directions; it does not erase every ambient normal source.
+
+All nine supplied heat values are reproducible without the script's original
+absolute output-writing path. Their beta=1/L limit15/32 specializes the
+already owned theorem `15/(32c²)` at beta=c/L; it does not derive beta from
+the Fibonacci trace band. The new fixture and the actual complete second-
+record AF source provide complementary inputs. A common preparation,
+projector and native price/field differential joining them remains unproved.
+The proposed additive price and cubic coefficient transfer are not assumed.
+
+The focused entrypoint
+`a4d_native_record_second_jet_intake_check.py` checks the immutable inputs,
+the finite kinematic conventions and heat reproduction. The earlier
+analytic heat-limit proof, source recursion and Lean owners are reused.
+Native action/source closure, joint solutions, refinement and the original
+fixed-source/raw-owner terminal remain open.
+
+The same intake also consumes the parallel published
+[price-metric source lift](A4D_RECORD_PRICE_METRIC_SOURCE_INTEGRATION.md),
+[normal-volume source](A4D_RECORD_NORMAL_VOLUME_SOURCE.md) and
+[finite golden-cylinder curvature readout](A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md).
+The last construction already has an exact calibrated scalar-curvature
+reading and its Einstein-Hilbert covector; that conditional geometric step
+is not reopened. Its selection and primitive implementation by the complete
+native AF/CAR action remain distinct from its algebraic existence. The
+actual retained-source observable is preserved independently, rather than
+defined by subtracting a desired Einstein term.
