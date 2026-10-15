@@ -15,5 +15,9 @@
     "checksums": "https://github.com/gvakhrushev/d0_15/blob/42db40921634685da07cda564b20a0c61aad619f/02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/TEXT_MANIFEST.json",
     "validation": "https://github.com/gvakhrushev/d0_15/blob/42db40921634685da07cda564b20a0c61aad619f/02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/PUBLICATION_VALIDATION.json"
   },
-  "pin_scope": "Payload snapshot; this metadata is added by the immediately following commit. Final remote head is verified and recorded in PR #323 body. No scientific acceptance."
+  "pin_scope": "Payload snapshot; this metadata is added by the immediately following commit. Final remote head is verified and recorded in PR #323 body. No scientific acceptance.",
+  "scientific_source_delivery_recheck": {
+    "head": "e9b8b2ebda5c9ac3996f49a5a2e0351bef8fac38",
+    "owner": "https://github.com/gvakhrushev/d0_15/blob/e9b8b2ebda5c9ac3996f49a5a2e0351bef8fac38/02_REGISTRY/research/A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md"
+  }
 }

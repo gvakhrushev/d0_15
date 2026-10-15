@@ -19,7 +19,16 @@
       "d89f7e55312d044e945ab267232f3ac1ceaf54bb",
       "5a68275e06b76177e54a9f909a723f7d7a9949e7"
     ],
-    "single_writer_required": true
+    "single_writer_required": true,
+    "delivery_recheck": {
+      "head": "e9b8b2ebda5c9ac3996f49a5a2e0351bef8fac38",
+      "commit_message": "Compute actual AF Lorentz archive pullback",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md",
+      "git_blob": "331733262772605087903557c3cf11fe5b25c78b",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/e9b8b2ebda5c9ac3996f49a5a2e0351bef8fac38/02_REGISTRY/research/A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md",
+      "already_owned": "Pinned actual-X9 old-SL2 orbit has dq_archive=0 at fixed nu,beta,J; spectator-only geometric continuation has character mismatch 9 vs 0. Not a full source/action/GR closure.",
+      "moving_head_policy": "All SHAs are snapshots. Resolve current owner through #324 before execution; this publication does not chase or modify live science."
+    }
   },
   "operational_flow": {
     "pr": 324,
