@@ -38,3 +38,47 @@ D0.Research.EngineCorrelatedCurrentExtension.L4_heat_slope_positive (x Z : ℝ) 
 'D0.Research.EngineCorrelatedCurrentExtension.L4_heat_slope_positive' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+D0.Research.EngineCorrelatedCurrentExtension.no_two_axis_collapse.{u_1} {V : Type u_1} [AddCommGroup V] [Module ℝ V]
+  (F : V ≃ₗ[ℝ] V) (v w u : V) (r a b : ℝ) (hr : r ≠ 0) (hv : v ≠ 0) (hw : ∀ (c : ℝ), w ≠ c • v) (hfirst : F v = a • u)
+  (hcurrent : F (v + r • w) = b • u) : False
+D0.Research.EngineCorrelatedCurrentExtension.gl_frame_active_sector_impossible (F : (Fin 4 → ℝ) ≃ₗ[ℝ] Fin 4 → ℝ)
+  (mu r a b : ℝ) (hmu : mu ≠ 0) (hr : r ≠ 0)
+  (hfirst :
+    F (mu • D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis0) =
+      a • D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis0)
+  (hcurrent :
+    F
+        (D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis0 +
+          r • D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis1) =
+      b • D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis0) :
+  False
+D0.Research.EngineCorrelatedCurrentExtension.golden_first_grade_coefficient_nonzero (p : ℝ) (hp : p + p ^ 2 = 1) :
+  2 * p - 1 ≠ 0
+D0.Research.EngineCorrelatedCurrentExtension.active_current_tilt_nonzero (s : ℝ) (hs : s ≠ 0) :
+  -2 * s ^ 2 / (1 + 2 * s ^ 2) ≠ 0
+D0.Research.EngineCorrelatedCurrentExtension.active_sector_common_GL_rest_alignment_impossible
+  (F : (Fin 4 → ℝ) ≃ₗ[ℝ] Fin 4 → ℝ) (p s a b : ℝ) (hp : p + p ^ 2 = 1) (hs : s ≠ 0)
+  (hfirst :
+    F ((2 * p - 1) • D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis0) =
+      a • D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis0)
+  (hcurrent :
+    F
+        (D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis0 +
+          (-2 * s ^ 2 / (1 + 2 * s ^ 2)) • D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis1) =
+      b • D0.Research.EngineCorrelatedCurrentExtension.coordinateAxis0) :
+  False
+'D0.Research.EngineCorrelatedCurrentExtension.no_two_axis_collapse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.gl_frame_active_sector_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.golden_first_grade_coefficient_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.active_current_tilt_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.active_sector_common_GL_rest_alignment_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

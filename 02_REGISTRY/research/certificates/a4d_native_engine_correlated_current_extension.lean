@@ -157,6 +157,120 @@ theorem L4_heat_slope_positive (x Z : ℝ) (hx0 : 0<x) (hx1 : x<1)
   exact div_pos hnum hZ
 
 end
+
+/-- A common invertible linear frame cannot send two independent directions
+    to the executor time axis at once. -/
+theorem no_two_axis_collapse
+    {V : Type*} [AddCommGroup V] [Module ℝ V]
+    (F : V ≃ₗ[ℝ] V) (v w u : V) (r a b : ℝ)
+    (hr : r ≠ 0) (hv : v ≠ 0)
+    (hw : ∀ c : ℝ, w ≠ c • v)
+    (hfirst : F v = a • u)
+    (hcurrent : F (v + r • w) = b • u) : False := by
+  have ha : a ≠ 0 := by
+    intro ha
+    apply hv
+    apply F.injective
+    calc
+      F v = a • u := hfirst
+      _ = F 0 := by simp [ha]
+  let c : ℝ := (b - a) / r
+  have hc : r * c = b - a := by
+    dsimp [c]
+    field_simp [hr]
+  have hstep : r • F w = (b - a) • u := by
+    have h : a • u + r • F w = b • u := by
+      have h' := hcurrent
+      rw [map_add, map_smul] at h'
+      rw [hfirst] at h'
+      exact h'
+    have hsub : r • F w = (b • u) - a • u := by
+      rw [eq_sub_iff_add_eq]
+      simpa [add_assoc, add_comm, add_left_comm] using h
+    calc
+      r • F w = (b • u) - a • u := hsub
+      _ = (b - a) • u := by rw [sub_smul]
+  have hFw : F w = c • u := by
+    calc
+      F w = (1:ℝ) • F w := by simp
+      _ = (r⁻¹ * r) • F w := by congr 1; field_simp [hr]
+      _ = r⁻¹ • (r • F w) := by rw [smul_smul]
+      _ = r⁻¹ • ((b - a) • u) := by rw [hstep]
+      _ = (r⁻¹ * (b - a)) • u := by rw [smul_smul]
+      _ = c • u := by dsimp [c]; field_simp [hr]
+  have hratio : a * (c / a) = c := by field_simp [ha]
+  have hdep : F w = (c / a) • F v := by
+    calc
+      F w = c • u := hFw
+      _ = (c / a * a) • u := by congr 1; field_simp [ha]
+      _ = (c / a) • (a • u) := by rw [smul_smul]
+      _ = (c / a) • F v := by rw [hfirst]
+  have hz : F (w - (c / a) • v) = 0 := by
+    calc
+      F (w - (c / a) • v) = F w - (c / a) • F v := by rw [map_sub, map_smul]
+      _ = 0 := by rw [hdep]; simp
+  have hrel : w - (c / a) • v = 0 := by
+    apply F.injective
+    simpa using hz
+  have hline : w = (c / a) • v := sub_eq_zero.mp hrel
+  exact (hw (c / a)) hline
+
+def coordinateAxis0 : Fin 4 → ℝ := Pi.single 0 1
+def coordinateAxis1 : Fin 4 → ℝ := Pi.single 1 1
+
+theorem gl_frame_active_sector_impossible
+    (F : (Fin 4 → ℝ) ≃ₗ[ℝ] (Fin 4 → ℝ)) (mu r a b : ℝ)
+    (hmu : mu ≠ 0) (hr : r ≠ 0)
+    (hfirst : F (mu • coordinateAxis0) = a • coordinateAxis0)
+    (hcurrent : F (coordinateAxis0 + r • coordinateAxis1) = b • coordinateAxis0) : False := by
+  have hv : mu • coordinateAxis0 ≠ 0 := by
+    intro hz
+    have h0 := congrFun hz 0
+    simp [coordinateAxis0] at h0
+    exact hmu h0
+  have hw : ∀ c : ℝ, coordinateAxis1 ≠ c • (mu • coordinateAxis0) := by
+    intro c heq
+    have h1 := congrFun heq 1
+    simp [coordinateAxis0, coordinateAxis1] at h1
+  have hcurrent_scaled :
+      F ((mu • coordinateAxis0) + (mu*r) • coordinateAxis1) = (mu*b) • coordinateAxis0 := by
+    have harg : (mu • coordinateAxis0) + (mu*r) • coordinateAxis1 =
+        mu • (coordinateAxis0 + r • coordinateAxis1) := by
+      calc
+        (mu • coordinateAxis0) + (mu*r) • coordinateAxis1 =
+            mu • coordinateAxis0 + mu • (r • coordinateAxis1) := by rw [smul_smul]
+        _ = mu • (coordinateAxis0 + r • coordinateAxis1) := by rw [smul_add]
+    calc
+      F ((mu • coordinateAxis0) + (mu*r) • coordinateAxis1) =
+          F (mu • (coordinateAxis0 + r • coordinateAxis1)) := by rw [harg]
+      _ = mu • F (coordinateAxis0 + r • coordinateAxis1) :=
+          map_smul F mu (coordinateAxis0 + r • coordinateAxis1)
+      _ = mu • (b • coordinateAxis0) := by rw [hcurrent]
+      _ = (mu*b) • coordinateAxis0 := by rw [smul_smul]
+  exact no_two_axis_collapse F (mu • coordinateAxis0) coordinateAxis1 coordinateAxis0
+    (mu*r) a (mu*b) (mul_ne_zero hmu hr) hv hw hfirst hcurrent_scaled
+
+theorem golden_first_grade_coefficient_nonzero (p : ℝ) (hp : p+p^2=1) :
+    2*p-1 ≠ 0 := by
+  intro h
+  nlinarith
+
+theorem active_current_tilt_nonzero (s : ℝ) (hs : s ≠ 0) :
+    -2*s^2/(1+2*s^2) ≠ 0 := by
+  apply div_ne_zero
+  · exact mul_ne_zero (by norm_num) (pow_ne_zero 2 hs)
+  · positivity
+
+theorem active_sector_common_GL_rest_alignment_impossible
+    (F : (Fin 4 → ℝ) ≃ₗ[ℝ] (Fin 4 → ℝ)) (p s a b : ℝ)
+    (hp : p+p^2=1) (hs : s ≠ 0)
+    (hfirst : F ((2*p-1) • coordinateAxis0) = a • coordinateAxis0)
+    (hcurrent : F (coordinateAxis0 + (-2*s^2/(1+2*s^2)) • coordinateAxis1) =
+      b • coordinateAxis0) : False := by
+  exact gl_frame_active_sector_impossible F (2*p-1) (-2*s^2/(1+2*s^2)) a b
+    (golden_first_grade_coefficient_nonzero p hp)
+    (active_current_tilt_nonzero s hs) hfirst hcurrent
+
 end D0.Research.EngineCorrelatedCurrentExtension
 
 #check D0.Research.EngineCorrelatedCurrentExtension.wedge_linear
@@ -173,3 +287,14 @@ end D0.Research.EngineCorrelatedCurrentExtension
 #print axioms D0.Research.EngineCorrelatedCurrentExtension.golden_amplitude_current_is_timelike
 #print axioms D0.Research.EngineCorrelatedCurrentExtension.L4_heat_numerator_negative
 #print axioms D0.Research.EngineCorrelatedCurrentExtension.L4_heat_slope_positive
+
+#check D0.Research.EngineCorrelatedCurrentExtension.no_two_axis_collapse
+#check D0.Research.EngineCorrelatedCurrentExtension.gl_frame_active_sector_impossible
+#check D0.Research.EngineCorrelatedCurrentExtension.golden_first_grade_coefficient_nonzero
+#check D0.Research.EngineCorrelatedCurrentExtension.active_current_tilt_nonzero
+#check D0.Research.EngineCorrelatedCurrentExtension.active_sector_common_GL_rest_alignment_impossible
+#print axioms D0.Research.EngineCorrelatedCurrentExtension.no_two_axis_collapse
+#print axioms D0.Research.EngineCorrelatedCurrentExtension.gl_frame_active_sector_impossible
+#print axioms D0.Research.EngineCorrelatedCurrentExtension.golden_first_grade_coefficient_nonzero
+#print axioms D0.Research.EngineCorrelatedCurrentExtension.active_current_tilt_nonzero
+#print axioms D0.Research.EngineCorrelatedCurrentExtension.active_sector_common_GL_rest_alignment_impossible

@@ -204,10 +204,10 @@ guard at mask 2. At \(s=0\), the boost is the identity and the guard survives,
 but the spatial current and the heat-amplitude response vanish. The exact
 checker verifies the full current rest alignment, Lorentz identity, forbidden
 coordinate, stored \(s=1\) witness, and the zero-amplitude hostile control,
-binding the existing CAR and exterior-frame sources. This excludes the direct
-current-rest frame lift as a way to compose this active sector with the
-unchanged executor; it does not exclude another native coframe/link map or
-larger executor domain.
+binding the existing CAR and exterior-frame sources. This explicit boost
+witness is then strengthened below to every common linear GL frame lift; it
+leaves nonlinear preparations, genuine interactions and a larger admitted
+executor domain open.
 
 The obstruction is independent of the chosen rest boost or a following
 spatial rotation. Let \(L\) be any Lorentz change of orthonormal frame that
@@ -218,9 +218,24 @@ component of \(Le_1\) to vanish. Since \(Le_1\) is a unit spacelike vector,
 its spatial part has squared Euclidean norm one. Thus the spatial part of
 \(LJ_s=d e_0+r_sLe_1\) has squared norm \(r_s^2>0\), contradicting rest
 alignment. So every metric-preserving Lorentz frame that aligns this current
-necessarily violates the engine's first-grade support guard. This statement
-concerns the natural Lorentz/exterior lift and does not classify general
-GL(4) metric-changing preparations.
+necessarily violates the engine's first-grade support guard.
+
+The existing full-CAR owner proves that the current transforms as a vector under a common
+invertible frame change when the metric, observer reference and matter are all
+transported ([source, section 3](A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md#3-a-current-using-the-actual-full-car-correlations)). This gives a stronger result for the proposed current-rest repair. On the active family the native first grade is
+\((2p-1)e_0\), while \(J_s=e_0+r_s e_1\) with \(r_s\ne0\). A common
+\(E\in GL(4)\) that keeps the unchanged executor guard must send the first
+grade into \(\mathbb R e_0\); putting the current at rest also requires
+\(EJ_s\in\mathbb R e_0\). Since the two input vectors are independent and
+\(E\) is invertible, their images cannot both lie on that one-dimensional
+axis. In coordinates, those two requirements force both the first and second
+columns of \(E\) to be multiples of \(e_0\), hence \(\det E=0\). The new
+abstract Lean theorem and exact symbolic control certify this implication for
+every nonzero \(r_s\), not only for Lorentz boosts. It closes all common linear
+GL frame/coframe lifts that preserve the executor's existing guard while
+rest-aligning this current. Nonlinear state preparations, interaction-level
+metric changes, and changes to the executor itself remain outside the result
+and require their own owner.
 
 ## The current heat does not descend to the metric/link fiber
 
@@ -301,11 +316,12 @@ the obstruction rather than solve it.
 
 The Lean capsule
 [`a4d_native_engine_correlated_current_extension.lean`](certificates/a4d_native_engine_correlated_current_extension.lean)
-proves generic gate/minor and heat-sign arithmetic kernels with standard
+proves generic gate/minor and heat-sign arithmetic kernels, plus the abstract
+no-two-axis-collapse theorem for an invertible common frame, with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 1518 exact controls and 37 owner-source pins, the conditional
+blobs, 1524 exact controls and 37 owner-source pins, the conditional
 three-term price split, metric-update replay,
-current-rest-frame guard obstruction, the fixed-\((q,D)\) heat-fiber jet,
+Lorentz and general-GL current-rest guard obstructions, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode
 polynomial, the current-step mismatch, and a 128-step regression in
 [`a4d_native_engine_correlated_current_extension_results.json`](certificates/a4d_native_engine_correlated_current_extension_results.json).

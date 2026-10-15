@@ -11,7 +11,7 @@
     "lower_pair": "existing band A/B two-cycle",
     "minkowski_norm_squared": "5/9"
   },
-  "checker_sha256": "841cde41be5a50f7d447dde9447e7afef5e89594ec0a7aaf99e671ebe441121e",
+  "checker_sha256": "8b76db7e0fc15867e45ec007ddd408bff6f128fc23dcc72b8357b5774103b48b",
   "conditional_three_term_price": {
     "conditional_stationarity": "impossible for these three terms alone on this tangent",
     "conditional_total_derivative": ">0 under additivity, shared fixed beta=log(2), and binary-passport scene admission",
@@ -37,6 +37,8 @@
     "active_amplitude_current_formula_component_1",
     "active_amplitude_current_formula_component_2",
     "active_amplitude_current_formula_component_3",
+    "active_current_has_nonzero_spatial_component_on_stored_witness",
+    "active_native_first_grade_is_nonzero",
     "active_state_is_accepted_and_moves",
     "active_state_satisfies_actual_six_zero_guard",
     "actual_engine_gate_preserves_endpoint_pairing_-1",
@@ -48,6 +50,7 @@
     "all_L_exponent_lower_bounds_are_strict",
     "all_L_negative_diagonal_dominates_off_diagonal_bound",
     "all_L_positive_off_diagonal_bound_below_2_minus_30",
+    "any_common_GL_frame_preserving_guard_and_rest_axis_is_singular",
     "binary_passport_scene_price_constant_on_declared_class",
     "binary_scene_passport_price_source_is_owned_and_replayed",
     "both_alternating_first_grade_coefficients_nonzero",
@@ -55,6 +58,9 @@
     "collinear_endpoint_pairing_is_retained",
     "collinear_input_pairing_is_euclidean_identity",
     "collinear_owned_metric_update_is_eta",
+    "common_GL_frame_rest_condition_forces_first_grade_column_1",
+    "common_GL_frame_rest_condition_forces_first_grade_column_2",
+    "common_GL_frame_rest_condition_forces_first_grade_column_3",
     "current_feedback_price_vertical_derivative_zero",
     "current_heat_has_nonzero_vertical_derivative_at_fixed_qD",
     "current_heat_vertical_derivative_positive",
@@ -133,7 +139,7 @@
     "2/3",
     "-2/3"
   ],
-  "exact_controls": 1518,
+  "exact_controls": 1524,
   "exact_heat_response": {
     "K_at_odd_tick": "5",
     "K_prime_at_s_1": "8",
@@ -164,6 +170,14 @@
   },
   "finite_regression_ticks": 128,
   "fixed_q_direct_common_step_for_nonzero_amplitude": "NO_GO_WITHIN_THIS_FAMILY",
+  "general_gl_frame_guard_obstruction": {
+    "common_frame_action": "same invertible E acts on grade-one state and CAR current by owned exterior/vector covariance",
+    "current": "e0-2*s^2/(1+2*s^2)*e1; non-collinear for s != 0",
+    "forced_conclusion": "first two columns of E are dependent, so det(E)=0",
+    "joint_requirements": "E(first_grade) and E(current) both lie in span(e0)",
+    "scope": "all common linear GL(4) frame/coframe lifts with unchanged executor guard; nonlinear state preparation and interaction-level updates remain open",
+    "state_first_grade": "(2*p-1)*e0, with 2*p-1 != 0"
+  },
   "heat_interface_parameter": {
     "after_one_tick_K_of_amplitude_s": "1+4*s^2",
     "at_s_1": [
@@ -180,7 +194,8 @@
     "state with forbidden m3 coordinate is rejected by actual step guard",
     "current-derived record operator differs from engine output at mask 13 on the exact witness",
     "off-axis timelike first grade changes the conditional positive pairing",
-    "current-rest-frame exterior lift populates forbidden engine mask 2 for nonzero amplitude"
+    "current-rest-frame exterior lift populates forbidden engine mask 2 for nonzero amplitude",
+    "any common invertible GL frame that rest-aligns current also violates the unchanged first-grade executor guard"
   ],
   "initial_state": {
     "correlated_minor": "-1",
@@ -197,8 +212,8 @@
       14
     ]
   },
-  "lean_capsule_sha256": "ba6212c19051c6b6c2f7e5f8e98406f14541faa330f1d8084342ed0b95ad578c",
-  "lean_output_sha256": "6a9e38df8166a249f6affa48496a0637766df1fbf10f9452dd535763847e4563",
+  "lean_capsule_sha256": "6595afa0102f4838850f5b7e0ee364db5a5167b556a6f132738c3c1d49f6c49c",
+  "lean_output_sha256": "a79352ece91f60ab4dba2175342bb43d7f85e899fe00c1375d7c93c6bc4e55f3",
   "owned_endpoint_metric_update": {
     "Lorentz_metric_q_and_q_plus": "eta at every tick",
     "conditional_rule": "q_plus=-Q+2*w*wT/(wT*Qinv*w), Q=-q+2*v*vT/(vT*qinv*v)",
@@ -305,7 +320,7 @@
     "varied_field": "m13=m14=s; q=eta and D=I fixed",
     "vertical_jet_at_s_1": "dK/ds=8; dH/ds>0 for all L>=2"
   },
-  "research_note_sha256": "ec80b761507e31216c0be823dd404837f2a34b3179bc31ece054475c1c132618",
+  "research_note_sha256": "4481acb51f8634531e1a1c8e2e939f11963269d2e31752cc6097b1b1c4ddeae3",
   "same_current_observer_and_executor_output_on_witness": false,
   "scope": "ALTERNATIVE_EXACT_ENGINE_INVARIANT_SECTOR_WITH_EXISTING_FULL_CAR_CURRENT_READOUT",
   "status": "PASS"

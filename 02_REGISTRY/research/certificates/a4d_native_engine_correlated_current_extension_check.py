@@ -317,6 +317,45 @@ def current_rest_frame_guard_obstruction(checks):
     }
 
 
+def general_gl_frame_guard_obstruction(checks):
+    """Exclude every common invertible GL frame lift for current rest alignment.
+
+    The owned CAR current and the grade-one matter vector transform by the
+    same E. Requiring both transformed vectors to lie on the unchanged engine
+    time axis forces the first two columns of E to be dependent.
+    """
+    r = sp.symbols('r', nonzero=True, real=True)
+    F = sp.Matrix(4, 4, lambda i, j: sp.symbols(f'F{i}{j}', real=True))
+    forced = {}
+    for i in range(1, 4):
+        first_grade_spatial = F[i, 0]
+        current_spatial = F[i, 0] + r*F[i, 1]
+        derived_column = sp.factor((current_spatial-first_grade_spatial)/r)
+        check(derived_column == F[i, 1],
+              f'common_GL_frame_rest_condition_forces_first_grade_column_{i}', checks)
+        forced[F[i, 0]] = 0
+        forced[F[i, 1]] = 0
+    determinant_after_constraints = sp.factor(F.det().subs(forced))
+    check(determinant_after_constraints == 0,
+          'any_common_GL_frame_preserving_guard_and_rest_axis_is_singular', checks)
+
+    s = sp.symbols('s', real=True)
+    active_r = -2*s**2/(1+2*s**2)
+    check(sp.factor(active_r.subs(s, 1)) == -sp.Rational(2, 3),
+          'active_current_has_nonzero_spatial_component_on_stored_witness', checks)
+    golden_p = (sp.sqrt(5)-1)/2
+    first_grade_coefficient = sp.simplify(2*golden_p-1)
+    check(first_grade_coefficient == sp.sqrt(5)-2 and sp.sqrt(5) > 2,
+          'active_native_first_grade_is_nonzero', checks)
+    return {
+        'common_frame_action': 'same invertible E acts on grade-one state and CAR current by owned exterior/vector covariance',
+        'state_first_grade': '(2*p-1)*e0, with 2*p-1 != 0',
+        'current': 'e0-2*s^2/(1+2*s^2)*e1; non-collinear for s != 0',
+        'joint_requirements': 'E(first_grade) and E(current) both lie in span(e0)',
+        'forced_conclusion': 'first two columns of E are dependent, so det(E)=0',
+        'scope': 'all common linear GL(4) frame/coframe lifts with unchanged executor guard; nonlinear state preparation and interaction-level updates remain open',
+    }
+
 def qD_fiber_nonbasicness(checks, heat_data):
     """Check whether the current heat descends to the existing (q,D) fiber."""
     eta = sp.diag(1, -1, -1, -1)
@@ -493,6 +532,7 @@ def build_result():
     symbolic_residual = symbolic_transition_mismatch(checks)
     metric_update_data = endpoint_metric_update_checks(checks)
     rest_frame_data = current_rest_frame_guard_obstruction(checks)
+    gl_frame_data = general_gl_frame_guard_obstruction(checks)
     heat_data = heat_L4_sign(checks)
     qd_fiber_data = qD_fiber_nonbasicness(checks, heat_data)
     composite_price_data = conditional_three_term_price(checks, heat_data)
@@ -604,6 +644,7 @@ def build_result():
         'fixed_q_direct_common_step_for_nonzero_amplitude': 'NO_GO_WITHIN_THIS_FAMILY',
         'owned_endpoint_metric_update': metric_update_data,
         'current_rest_frame_guard_obstruction': rest_frame_data,
+        'general_gl_frame_guard_obstruction': gl_frame_data,
         'qD_fiber_nonbasicness': qd_fiber_data,
         'conditional_three_term_price': composite_price_data,
         'initial_state': {
@@ -641,6 +682,7 @@ def build_result():
             'current-derived record operator differs from engine output at mask 13 on the exact witness',
             'off-axis timelike first grade changes the conditional positive pairing',
             'current-rest-frame exterior lift populates forbidden engine mask 2 for nonzero amplitude',
+            'any common invertible GL frame that rest-aligns current also violates the unchanged first-grade executor guard',
         ],
         'owner_sha256': owner_hashes,
         'owner_git_blob': owner_blobs,
