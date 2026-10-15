@@ -1,18 +1,66 @@
-# Active Work Control Plane
+# D0 work flow: compose the gravity derivation
 
-This directory contains the queue/control scaffolding for the D0 research programme.
-**GitHub pull requests are the runtime execution plane.**
+Repository: `gvakhrushev/d0_15`. The [current scientific route](../02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
+defines the remaining transitions to general relativity. This file defines how
+to execute them. GitHub PRs hold durable work; `manifest.json` is the queue,
+not a live dashboard. Scientific acceptance and use in the parent derivation
+are separate from a passing check.
 
-## Cold-start task discovery
+## One integrator, parallel bounded work
 
-Canonical repository: `gvakhrushev/d0_15`.
+The scientific integrator owns the common carrier, full action, source,
+variation image, normalization and refinement maps. Executors prove independent
+premises of that same argument in separate branches/worktrees with disjoint
+write paths. Integrate a usable result immediately; do not wait for an entire
+wave to finish.
 
-A new chat/agent receiving only a D0 task ID must not ask which project it
-belongs to. It must read `AGENTS.md`, then resolve the task from
-`00_WORK/manifest.json` and its brief.
+Use two scientific fronts: preparation/records → full action/source, and exact
+joint solutions → nonlinear refinement limit. A verification executor handles
+replay/CI when needed. An independent reviewer checks a frozen intake at
+acceptance. These are roles, not additional permanent task classes or slots.
+Read-only assistants and implementation subtasks inside an owned PR do not
+need their own queue rows. Independently owned scientific obligations do.
 
-Every executable brief (`WORKER` / `EXPENSIVE`) must be self-contained and
-include exactly one metadata line for each:
+Before delegating, put the interface in the existing brief (no new registry):
+
+| Field | Required content |
+|---|---|
+| Statement | Exact conclusion, quantifiers and remaining assumptions |
+| Inputs | Owner paths and fixed refs; accepted vs research status |
+| Common objects | Carrier, full action, norm, source/comparator and refinement maps used by the consumer |
+| Consumer | Parent lemma/equation; where this output is substituted and which premise it removes |
+| Write surface | Disjoint paths and one branch/worktree owner |
+| Decisive check | Smallest calculation/proof and negative control that can decide the claim |
+
+If no parent consumer can be named, keep the idea out of the active wave.
+If interfaces conflict, the integrator resolves them before dependent work
+starts. An exact obstruction changes the parent route; do not answer it with
+another exhaustive census unless that census is needed by a named estimate.
+A free WIP slot alone does not establish prerequisites.
+
+## Start or resume once
+
+1. Read `AGENTS.md`, this file and the relevant current scientific route.
+2. Fetch current `main` once and resolve the task with:
+
+   ```bash
+   python tools/task_dispatch.py TASK-ID
+   ```
+
+   The tool checks live PRs, including tasks absent locally. An existing Draft
+   is resumed; a Ready PR awaits review. Multiple matches or an unavailable
+   lookup need resolution before a new launch. `--offline` is explicitly
+   unverified planning; it does not establish that no execution exists.
+   Resolution is a snapshot, not an atomic reservation: CONTROL assigns one
+   launch owner, who opens the Draft before another executor is dispatched.
+3. Read only the brief and its actual inputs. Reuse pinned accepted results;
+   do not audit the whole corpus or re-prove delegated dependencies at cold start.
+4. For a new executable task, confirm CONTROL registration, mathematical
+   prerequisites and WIP including live executions. Start from current `main`;
+   run `python tools/task_lifecycle.py start TASK-ID`; open a Draft PR before
+   substantive work. Continue in that PR until Ready.
+
+Portable dispatch includes both repository and task ID. CI checks brief metadata:
 
 ```text
 Repository: `gvakhrushev/d0_15`
@@ -22,264 +70,139 @@ Primary artifact: `repo/relative/path`
 Execution: `GitHub-first`
 ```
 
-It must also contain:
+Each executable brief also has `## Why delegated`, `## GitHub execution contract`
+and `## Chat handoff`. CONTROL may generate a skeleton with
+`python tools/task_brief_scaffold.py --help`; fill in its proof interface before
+registration/dispatch. Existing briefs need updating when their interface is
+actually revised, not a bulk cosmetic migration.
 
-- `## Why delegated`;
-- `## GitHub execution contract`;
-- `## Chat handoff`.
+## Work in short scientific increments
 
-CI enforces this with `tools/validate_agent_protocol.py`.
+1. Work on the next missing transition; write the derivation in its primary
+   artifact. Use representation theory/classification before candidate searches.
+2. Apply KILL-FIRST only to unresolved gates:
+   type → representation/Hom-space → symmetry → moduli → flat limit → variation
+   → constraint quotient → exact finite spectrum → physical interpretation.
+   Stop a candidate at its first failure. Do not replay already owned gates.
+3. Test the changed argument with the smallest decisive check. A finite exact
+   calculation gets a certificate when it bears on the conclusion. An analytic
+   proof is not replaced by collecting more numerical ranks. Lean follows
+   **classify once, specialize late**, after the mathematical interface stabilizes.
+4. At a useful checkpoint, commit/push the result and substitute it in the
+   parent argument. Local experiments do not need a remote commit each time.
+   Record either the discharged premise or the exact obstruction and route change.
 
-Portable dispatch is generated from Git, not handwritten in chat:
+Preserve all specified components, source terms and resonant directions.
+Compare actions only when action equality is necessary; equality of physical
+operators or a controlled response remainder may suffice. Do not identify
+geometric and full matter responses, fit a source to the output, change a norm,
+or assume the desired Einstein equation in admission conditions.
+
+## Validation budget
+
+Choose by the changed surface. These are phase boundaries, not a checklist for
+every edit. Record command, checked inputs/ref, environment and result in the PR.
+Repeat an expensive run only after a relevant input/environment/mode changes,
+a failure, or a concrete unresolved concern. A prose/lifecycle edit alone does
+not invalidate unchanged mathematical evidence. An old green badge alone does
+not establish input identity.
+
+| Changed surface | During iteration | Before Ready / acceptance |
+|---|---|---|
+| README / work rules / briefs | Check links and affected work/agent validators | Structural guards and generated-view check; no Lean or mathematical replay for prose alone |
+| Tooling / CI | Changed tool's fixture tests, syntax, failure paths | Same focused tests plus structural guards; runners must test isolation, failure and mutation detection |
+| Research calculation | Changed entrypoint and inputs it actually reads | Cumulative affected research entrypoints and transitive inputs; broaden if dependencies are uncertain |
+| Lean source | `python tools/lean_task_build.py narrow D0.Geometry.SomeModule` | One `python tools/lean_task_build.py final` after narrow targets pass, plus affected guards |
+| Registered certificate / BOOK / release inputs | Changed certificate and relevant hostile control | Registered suite when its dependency surface changes; exact evidence stays immutable |
+
+Useful structural commands (select those affected by the change):
 
 ```bash
-python tools/task_dispatch.py TASK-ID
+python tools/validate_repo.py
+python tools/validate_work.py
+python tools/validate_agent_protocol.py
+python tools/render_work_status.py --check
+python tools/generate_lean_views.py --check
 ```
 
-CONTROL can generate a compliant executable brief skeleton with:
+Draft CI runs architecture/work/semantic guards and tooling fixture tests.
+**Heavy research and registered-certificate replay is deferred until Ready**,
+then runs under the workflow's affected-input selection. Main and manual
+integration runs retain their required replay. Moving a Ready PR back to Draft
+is appropriate while changing its scientific argument.
 
-```bash
-python tools/task_brief_scaffold.py \
-  --id WRK-... \
-  --class WORKER \
-  --branch wrk/... \
-  --artifact 02_REGISTRY/research/certificates/...py \
-  --why "Why this deserves an independent worker rather than a direct CONTROL edit." \
-  --write
-```
+Research replay runs independent certificates in isolated worktrees at one
+exact committed ref, with bounded parallelism, per-certificate timeout and
+mutation detection. It has no result cache. Use the runner's `--help` for
+local replay; uncommitted experiments are not part of a committed snapshot.
+Declared dependencies are authoritative; the changed-file selector alone is
+not a complete research dependency graph. If a shared input changes without
+its certificate changing, replay its consumers explicitly (manual full research
+replay when the affected set is uncertain) before accepting that intake.
 
-If a task ID is absent from `main`, inspect open PRs before creating anything;
-an execution may already exist.
+Lean builds serialize access to a shared `.lake`; independent agents must not
+build concurrently against that cache. Keep stable lemmas in imported modules,
+batch compiler corrections and preserve caches. CI's built-in Lake cache is an
+accelerator, not proof evidence. Draft PRs skip `D0.All`; Ready transitions run
+the full affected formalization closure. See `.github/workflows/lean-build.yml` for
+exact event selection.
 
-## Delegation triage
+## Accept an integrated result
 
-Do not create a task just because delegation is available.
+The handoff names the PR, exact conclusion, consumed parent step (or changed
+route), checks and smallest blocker. Keep detailed tables/derivations in Git.
+The integrator checks applicability to the common objects; independent review
+checks assumptions, non-circularity and the frozen artifact scope.
+A useful research slice can be accepted without closing its broader parent.
 
-**CONTROL acts directly** for small deterministic repairs that can be completed
-safely in the current PR: a few related edits, process/registry cleanup, a short
-exact calculation, a simple CI fix, or a review correction with no independent
-research value.
+Before marking a WORKER/EXPENSIVE PR Ready: refresh against current `main`,
+run affected final checks, use `python tools/task_lifecycle.py retire TASK-ID`
+to remove its queue row and brief and regenerate views in the **same PR**.
+Set `Lifecycle: REVIEW`. Do not retire a task whose scientific terminal is open;
+use a reviewed CONTROL slice instead. Do not self-merge. Merge is delivery;
+being used in the parent derivation is the scientific integration result.
 
-Create a **WORKER** only for a bounded independently reviewable artifact:
-certificate, formal proof/module, deterministic migration, reproducible finite
-computation, or substantial implementation.
+## Queue, PR and ownership contract
 
-Create an **EXPENSIVE** task only when the answer is genuinely uncertain:
-classification, theorem/no-go discovery, competing constructions, or a large
-pressure test.
+- `main` manifest = queue/control. PLANNED on main can correspond to an active
+  execution in a PR; do not infer a free slot from local state alone.
+- Draft + `IN_PROGRESS` = executing; Draft + `BLOCKED` = explicit blocker;
+  Ready + `REVIEW` = awaiting CONTROL acceptance; merged = delivered.
+- The semantic task ID names the obligation; the PR number identifies execution.
+- Only CONTROL registers independent tasks. Small bounded repairs, README,
+  process cleanup and simple CI fixes are direct CONTROL work, not new research.
+- WORKER owns a bounded independently reviewable implementation/proof;
+  EXPENSIVE owns genuine research uncertainty. Both have an immediate CONTROL
+  parent and obey existing WIP limits. Do not change classes/retire parents to
+  free slots or bypass lifecycle gates.
+- Source/artifact refs remain pinned; local commits are not publication.
+  Verify remote head and blob before reporting a result as published.
+- Expected evidence is immutable under verification. No rewriting expected
+  results, importing hidden premises or weakening scope to obtain PASS.
+- Claims/releases stay in their existing registries. Generated `STATUS.md`,
+  README status block, Lean views and ClaimMap are not hand-edited.
+- Completed executable briefs leave `00_WORK` at retirement; Git history is
+  their archive. Closed abandoned PRs stay closed; relaunch valid queued work
+  in a fresh PR. There is no ordinary post-merge lifecycle cleanup PR.
 
-Only CONTROL registers tasks. Executors do not mint child tasks from chat. The
-brief's `Why delegated` section must justify why direct CONTROL execution is
-not the better route.
-
-## Research search strategy: KILL-FIRST
-
-Before creating another mathematical class or a large Lean file, pass the
-candidate through:
+Every PR uses `.github/pull_request_template.md` with exactly one of each:
 
 ```text
-TYPE
-→ REPRESENTATION / Hom-space
-→ SYMMETRY
-→ MODULI DIMENSION
-→ FLAT LIMIT
-→ VARIATION
-→ GAUGE / CONSTRAINT QUOTIENT
-→ EXACT FINITE SPECTRUM
-→ PHYSICAL INTERPRETATION
-```
-
-Stop at the first failed gate. Prefer known classification/invariant theory and
-backward mathematical constraints over forward guessing.
-
-Keep distinct:
-
-[
-d_A=dim(	ext{action family}),qquad
-d_E=dim(	ext{Euler--Lagrange family}),qquad
-d_P=dim(	ext{physical operator family after quotient}).
-]
-
-Do not invent an action-level selector before checking whether different action
-parameters survive into (d_P).
-
-Lean follows **classify once, specialize late**: use exact finite certificates
-for search/rank/nullity/witnesses, then formalize the surviving generic theorem.
-Do not formalize every discarded candidate separately.
-
-## GitHub-first execution model
-
-```text
-main task brief = queued work
-→ create fresh remote branch from current main
-→ first branch commit: task state PLANNED → IN_PROGRESS
-→ open Draft PR before implementation/research begins
-→ work only inside that PR/branch
-→ final validation
-→ same PR retires task + deletes brief + regenerates views
-→ mark PR Ready with Lifecycle: REVIEW
-→ CONTROL reviews and merges
-→ merge = completion
-```
-
-The semantic task ID (for example `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`) names the
-research/formalization obligation. The **operational work number is the GitHub PR
-number**. Do not call executions “worker 1”, “worker 2”, etc.; say “PR #87” or
-“PR #86”. WORKER and EXPENSIVE use the same PR lifecycle.
-
-## GitHub-native task execution
-
-Chat is only the dispatch/control surface. The durable task definition and task output live in GitHub.
-
-For ordinary dispatch, the user-facing launch message should be short, for example:
-
-```text
-Run `EXP-A4D-...` from current `main`.
-Follow the brief in `00_WORK/tasks/` exactly.
-Open the Draft PR before research/implementation and write the result directly into that PR.
-```
-
-Execution contract for both `EXPENSIVE` and `WORKER`:
-
-1. Create a fresh task branch from current `main` (`exp/<task-slug>` or `wrk/<task-slug>`).
-2. Run `python tools/task_lifecycle.py start TASK-ID` as the first branch lifecycle change.
-3. Open a Draft PR immediately, before substantive research/code work.
-4. Commit the primary result directly to the artifact path named by the task brief.
-5. Keep large derivations, tables, exact witnesses, certificates, and research memos in GitHub; do not use chat as the durable notebook.
-6. Chat reports should normally contain only the PR link, the current verdict/status, and any blocker that needs a CONTROL decision.
-7. Before marking Ready, integrate the result exactly as required by the brief, run the required gates, then run `python tools/task_lifecycle.py retire TASK-ID`.
-8. Mark the same PR Ready with `Lifecycle: REVIEW`; merge remains the completion event.
-
-`EXPENSIVE` researchers are allowed and expected to mutate **their assigned task branch/PR**. Their normal write surface is `02_REGISTRY/research/` plus task-specific exact research certificates when requested. They must not edit Lean owners, claim release status, book/public claims, or unrelated registry rows unless the task brief explicitly authorizes that scope.
-
-`WORKER` executors write the implementation/certificate/formalization artifacts named by their briefs and follow the same Draft→REVIEW lifecycle.
-
-
-## Source of truth
-
-1. **GitHub first.** No local implementation/research work starts before a Draft
-   PR exists remotely. A local worktree is only an execution workspace for an
-   already-open task PR. On the execution branch use
-   `python tools/task_lifecycle.py start TASK-ID` before opening the Draft PR.
-2. **Runtime status is the PR.**
-   - Draft PR + `Lifecycle: IN_PROGRESS` = executing.
-   - Draft PR + `Lifecycle: BLOCKED` = blocked, with blocker stated in the PR.
-   - Ready PR + `Lifecycle: REVIEW` = waiting for CONTROL acceptance.
-   - Merged PR = complete.
-   - `Baseline` is the task-start `main` SHA during Draft execution. If `main`
-     advances, a long-lived Draft may keep that pinned baseline while it remains
-     an ancestor of both the current base and the task head. Before Ready/REVIEW,
-     refresh onto current `main` and update `Baseline` to the current PR base SHA.
-3. **`main` manifest is the queue/control plane.** A PLANNED executable task on
-   main is available work, not an active execution. Branch-local manifest state
-   records the draft lifecycle.
-4. **Git history is the only archive.** Completed/abandoned executable tasks are
-   not stored under `00_WORK`; accepted PRs retire themselves before merge.
-5. **No “done but PR open”.** An agent may report “ready for review”, but the task
-   is not complete until the PR is merged.
-6. **CONTROL owns acceptance.** Executors do not silently self-merge around a
-   blocking review. CONTROL either merges the accepted PR or leaves an explicit
-   blocking comment.
-7. **No post-merge lifecycle cleanup PR for ordinary tasks.** WORKER/EXPENSIVE
-   PRs run `python tools/task_lifecycle.py retire TASK-ID` before becoming Ready.
-   That removes the manifest row + brief and regenerates status views in the same
-   PR, making merge atomic with lifecycle completion.
-
-## PR contract
-
-Every task PR body uses `.github/pull_request_template.md` and contains exactly:
-
-```text
+Repository: `gvakhrushev/d0_15`
 Task: `TASK-ID`
 Class: `WORKER|EXPENSIVE|CONTROL`
 Lifecycle: `IN_PROGRESS|BLOCKED|REVIEW`
 Baseline: `MAIN-SHA`
+Primary-Artifact: `repo/relative/path|N/A`
 ```
 
-`tools/validate_pr_contract.py` enforces:
+`CONTROL-PLANE` is reserved for repository-governance PRs. Branch prefixes are
+`control/`, `wrk/`, `exp/` for the corresponding class. A Draft may retain its
+launch Baseline while it remains an ancestor of both main and task head;
+at PR-open and Ready, Baseline equals the current base SHA. Ready executables
+are self-retired; Ready CONTROL retains its row (CONTROL-PLANE is exempt).
+Validation is enforced by `tools/validate_pr_contract.py`.
 
-- Draft executable PR: task exists in branch manifest and its state equals
-  `IN_PROGRESS` or `BLOCKED`.
-- Ready WORKER/EXPENSIVE PR: task row and brief are already retired in that same
-  PR and lifecycle is `REVIEW`.
-- Ready CONTROL PR: the CONTROL row remains present.
-- `CONTROL-PLANE` is reserved for repository-governance PRs that are not a
-  scientific task.
-
-## Rules of operation
-
-1. **No completed task storage.** `manifest.json` admits only `PLANNED`,
-   `IN_PROGRESS`, `BLOCKED`, `REVIEW`; executable tasks disappear on
-   acceptance.
-2. **Hierarchy and delegation.** Every EXPENSIVE/WORKER task has an immediate
-   CONTROL parent. Agents do not mint child work outside CONTROL.
-3. **Claim discipline.** `affected_claims` must name existing claim/alias IDs.
-   New claim IDs require an explicit CONTROL decision.
-4. **Generated views.** `00_WORK/STATUS.md` and the README status block are
-   deterministic outputs of `tools/render_work_status.py`; do not hand-edit.
-5. **Closed failed PRs stay closed.** If a task is still valid after an abandoned
-   execution, it remains/re-enters PLANNED on main and starts later in a **new**
-   PR from fresh main.
-
-## Lean iteration protocol
-
-Lean wall time is treated as an engineering constraint, not as unavoidable
-formalization overhead.
-
-Use:
-
-```bash
-python tools/lean_task_build.py narrow D0.Geometry.SomeModule
-python tools/lean_task_build.py final
-```
-
-The helper serializes access to the shared `.lake` cache, refuses a second
-concurrent build, detects source edits during a build, and skips duplicate
-`D0.All` validation for an unchanged source tree.
-
-Mandatory discipline:
-
-1. **One agent/worktree owns one Lean task PR.** Never let two processes edit the
-   same `.lean` file or build against the same shared cache concurrently.
-2. **One narrow module per iteration.** Do not run `D0.All` while a target module
-   is red.
-3. **Batch compiler errors.** Read/fix the whole first useful error cascade before
-   the next build; do not spend one build per tactic line.
-4. **Split slow modules structurally.** If a module repeatedly costs about a
-   minute or more to rebuild, move stable base lemmas into an imported module and
-   keep no-go witnesses / finite certificates in downstream modules.
-5. **Use the repo-proven proof shapes first.**
-   - Matrix algebra: explicit `Matrix.add_mul`, `Matrix.mul_add`,
-     `Matrix.smul_mul`, `Matrix.mul_smul` before module/ring closure.
-   - Keep both sides of `calc` in the same association/normal form.
-   - Type finite indices/matrices explicitly when elaboration is ambiguous.
-   - Use `Nat.le_trans (by decide) hn` for small fixed bounds when appropriate.
-   - For exact finite matrices already independently checked, prefer
-     `native_decide` rather than repeatedly probing kernel `decide`.
-6. **One final full build.** Run `python tools/lean_task_build.py final` only
-   after all narrow modules are green. Registry/view generation comes after
-   that, not during proof iteration.
-7. **Remote CI is acceptance truth.** Local timings/builds are supporting
-   evidence; the ready PR must satisfy GitHub guards.
-
-## CI build-cache policy
-
-GitHub Lean CI uses the cache built into `leanprover/lean-action@v1`; do not layer a second `actions/cache` over `03_FORMALIZATION/.lake`.
-
-**PR policy:** Draft PRs never run the full `D0.All` release closure. Workers iterate locally with `python tools/lean_task_build.py narrow ...`. When a PR is marked Ready, the `ready_for_review` event runs exactly one full cached release closure over the complete PR formalization diff. Later Ready-state synchronize events run Lean only when the triggering commit itself changes `03_FORMALIZATION/**`; lifecycle-only audit commits skip it.
-
-**Push policy:** main runs Lean only when the push changes `03_FORMALIZATION/**`. Explicit `workflow_dispatch` always runs the full integration build.
-
-The built-in Lake cache key is pinned by runner OS/architecture, `lean-toolchain`, `lake-manifest.json`, and commit SHA with compatible-prefix fallback. Cache reuse is acceleration, not proof evidence.
-
-Lean workflow concurrency is scoped by PR/ref **and head SHA**. This prevents a stuck runner for an obsolete PR head from blocking a newer Ready head; duplicate events for the same head still share one concurrency group.
-
-## CI cost policy
-
-- Feature-branch pushes no longer run a second duplicate CI in addition to the
-  PR event.
-- Pull-request jobs cancel superseded runs for the same PR.
-- Full Lean build is skipped when a PR changes no Lean/formalization source.
-- Long registered-certificate suites are skipped when a PR does not touch their
-  dependency surface.
-- Fast architecture/work/semantic guards still run on every PR.
+Feature-branch pushes do not duplicate PR CI; superseded runs for a PR are
+cancelled. Heavy suites are scoped to their inputs. Full integration replay is
+available manually; there is no new periodic audit or task scheduler.

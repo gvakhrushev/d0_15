@@ -22,6 +22,51 @@ Start by reading:
 If the task is absent from `main`, check open GitHub PRs before creating
 anything. It may already be executing. Do not create a duplicate execution.
 
+Use `python tools/task_dispatch.py TASK-ID` for live resolution, including when
+the task is absent locally. An offline printout is unverified planning, not
+authorization to create a competing execution. Read only the task's inputs and
+the relevant current route; do not begin every session by auditing the corpus.
+
+## Scientific priority and parallel execution
+
+The [current gravity route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
+is the working scientific entry point. One integrator owns its end-to-end
+argument, definitions, norms and source conventions. Delegate independent
+premises with a named consumer in that argument; integrate each result as it
+arrives. Do not wait for every research lane to finish before composing results.
+
+Use separate branches/worktrees and disjoint write paths for independent
+executors. Read-only assistants and bounded implementation subtasks within one
+owned PR do not require new task rows. Register a separate scientific execution
+through CONTROL when it owns an independent research/proof obligation. Existing
+prerequisites and WIP limits still apply, including live PRs whose queue rows on
+main remain PLANNED. A free slot alone does not establish mathematical inputs.
+
+Each new or revised scientific brief records, in its existing text: exact
+statement and remaining assumptions; input refs; carrier/norm/source convention;
+write paths; the consuming parent step; the smallest decisive check. No new
+status registry is needed. A certificate is useful when it resolves that step;
+do not produce rank catalogues, audit memos or formalizations without a consumer.
+
+When an interface does not type-check, the integrator resolves that mismatch
+before dispatching dependent work. A scoped no-go must change the parent route,
+not trigger an unbounded new census. Keep independent work moving.
+
+## Validation budget
+
+Follow the [change-based matrix](00_WORK/README.md#validation-budget).
+During iteration run the changed calculation, targeted tool test or narrow Lean
+module. Documentation/process edits do not call for a full mathematical replay.
+At Ready, run the affected integration gates once on the final inputs; broaden
+when transitive dependencies are uncertain. Re-run after a relevant input,
+environment or execution-mode change, or a failure; do not repeat an unchanged
+expensive run merely for a prose/lifecycle update. Preserve exact input provenance.
+
+Draft CI runs structural guards and tooling tests. Heavy research/registered
+certificate replay runs at Ready, on main and on explicit integration runs.
+Independent research checks use isolated worktrees. Never rewrite expected
+evidence, skip a failing premise or weaken a scientific statement to get green CI.
+
 ## 2. GitHub is the durable execution plane
 
 Do not use chat as the primary notebook or task database.
@@ -36,7 +81,12 @@ For queued `WORKER` and `EXPENSIVE` tasks:
 6. retire the task in the same PR before marking Ready;
 7. merge is completion.
 
-Chat handoff is short by default: PR number, verdict/PASS-FAIL, and one blocker.
+Chat handoff is short by default: PR, exact conclusion and consuming parent step
+(or route change), checks, and one blocker.
+
+Commit/push at a durable mathematical or engineering checkpoint; local iterations
+within the open PR do not need a remote commit for every calculation. Report the
+consumed result or removed premise with its blocker, not a count of PASS labels.
 
 If a task already exists in `00_WORK/tasks/`, do not paste or regenerate the
 full task in chat. Use the Git brief.
