@@ -36,6 +36,14 @@ OWNER_PATHS = [
     '02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_results.json',
     '02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md',
     '02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md',
+    '02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json',
+    '02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md',
+    '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.py',
+    '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_certificate.json',
+    '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.lean',
+    '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json',
     '02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py',
     '02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py',
     '02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py',
@@ -356,6 +364,61 @@ def general_gl_frame_guard_obstruction(checks):
         'scope': 'all common linear GL(4) frame/coframe lifts with unchanged executor guard; nonlinear state preparation and interaction-level updates remain open',
     }
 
+def metric_transition_owner_census(checks, metric_update_data):
+    """Replay the two closest owned metric/heat candidates and classify arrows."""
+    owner_replays = [
+        ('02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py',
+         'PASS_RECORD_METRIC_CHRONOLOGY'),
+        ('02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py',
+         'PASS_NATIVE_SOLDERED_HEAT_SOURCE'),
+    ]
+    outputs = {}
+    for relative, expected in owner_replays:
+        replay = subprocess.run([sys.executable, str(ROOT / relative)], cwd=ROOT,
+                                capture_output=True, text=True, timeout=600)
+        check(replay.returncode == 0 and expected in replay.stdout,
+              f'owned_metric_candidate_replay_{Path(relative).stem}', checks)
+        outputs[Path(relative).stem] = replay.stdout.strip()
+
+    chronology = json.loads((ROOT /
+        '02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json').read_text())
+    check(chronology['status'] == 'PASS' and
+          chronology['scope']['conditional_transition_hypothesis'] == 'FULL_ENDPOINT_PAIRING_ISOMETRY' and
+          chronology['scope']['hypothesis_physically_admitted_or_core_forced'] is False,
+          'only_checked_q_plus_owner_remains_conditional', checks)
+    check(metric_update_data['Lorentz_metric_q_and_q_plus'] == 'eta at every tick' and
+          metric_update_data['ticks_checked'] == 128,
+          'owned_q_plus_owner_leaves_active_engine_sector_at_eta', checks)
+
+    soldered = json.loads((ROOT /
+        '02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_certificate.json').read_text())
+    check(soldered['verdict'] == 'OWNED_HOMOGENEOUS_OPERATOR_TEN_JOINT_HEAT_COMPONENTS' and
+          soldered['bootstrap_heat_identification'] == 'OPEN' and
+          soldered['source_Ward_GR'] == 'OPEN',
+          'soldered_heat_owner_supplies_components_but_not_physical_transition', checks)
+    source = (ROOT / '02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md').read_text().lower()
+    check('with no on-shell equation built into its definition' in source and
+          "no current owner equates the bootstrap's" in source,
+          'soldered_heat_source_keeps_transition_and_bootstrap_identification_open', checks)
+    return {
+        'record_metric_chronology': {
+            'owned_rule': 'q_plus=-Q+2*w*wT/(wT*Qinv*w)',
+            'hypothesis': 'full endpoint-pairing isometry',
+            'physical_admission': 'OPEN',
+            'active_sector_output': 'q_plus=eta on the tested 128-step orbit',
+            'replay': outputs['a4d_native_record_metric_chronology_check'],
+        },
+        'soldered_heat_source': {
+            'owned_scope': 'ten homogeneous heat components and full q/raw-solder tangent',
+            'state_to_state_metric_transition': 'not supplied',
+            'bootstrap_heat_identification': soldered['bootstrap_heat_identification'],
+            'source_Ward_GR': soldered['source_Ward_GR'],
+            'replay': outputs['a4d_native_soldered_heat_source_check'],
+        },
+        'scope': 'two previously identified candidate owners inspected; no global owner-completeness claim',
+        'next_missing_arrow': 'an owner-derived admitted interaction or nonlinear preparation coupling q, CAR current and the executor step',
+    }
+
 def qD_fiber_nonbasicness(checks, heat_data):
     """Check whether the current heat descends to the existing (q,D) fiber."""
     eta = sp.diag(1, -1, -1, -1)
@@ -533,6 +596,7 @@ def build_result():
     metric_update_data = endpoint_metric_update_checks(checks)
     rest_frame_data = current_rest_frame_guard_obstruction(checks)
     gl_frame_data = general_gl_frame_guard_obstruction(checks)
+    transition_owner_data = metric_transition_owner_census(checks, metric_update_data)
     heat_data = heat_L4_sign(checks)
     qd_fiber_data = qD_fiber_nonbasicness(checks, heat_data)
     composite_price_data = conditional_three_term_price(checks, heat_data)
@@ -645,6 +709,7 @@ def build_result():
         'owned_endpoint_metric_update': metric_update_data,
         'current_rest_frame_guard_obstruction': rest_frame_data,
         'general_gl_frame_guard_obstruction': gl_frame_data,
+        'metric_transition_owner_census': transition_owner_data,
         'qD_fiber_nonbasicness': qd_fiber_data,
         'conditional_three_term_price': composite_price_data,
         'initial_state': {

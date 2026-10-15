@@ -237,6 +237,22 @@ rest-aligning this current. Nonlinear state preparations, interaction-level
 metric changes, and changes to the executor itself remain outside the result
 and require their own owner.
 
+## Existing metric-transition owner census
+
+Two previously identified candidate owners now replay inside the same exact
+packet. The record-metric chronology owner derives a next metric only under
+full endpoint-pairing isometry. Its certificate leaves physical admission
+open, and the conditional update gives \(q_+=\eta\) on all 128 tested engine
+steps. The independent soldered-heat owner proves ten homogeneous heat
+components and the full raw-solder/metric tangent, but its source explicitly
+contains no on-shell equation, leaves the bootstrap heat identification open,
+and supplies no state-to-state metric transition. Their exact checkers pass:
+469 chronology controls with 18 mutations, and 405 soldered-heat controls with
+16 mutations. These results classify the two inspected candidates; they do
+not prove that no other owner exists in the repository. Within these owners,
+the next missing arrow is an admitted interaction or nonlinear preparation
+that couples \(q\), the CAR current and the executor step.
+
 ## The current heat does not descend to the metric/link fiber
 
 The attached strategy's next test asks whether the additional heat block can
@@ -319,7 +335,7 @@ The Lean capsule
 proves generic gate/minor and heat-sign arithmetic kernels, plus the abstract
 no-two-axis-collapse theorem for an invertible common frame, with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 1524 exact controls and 37 owner-source pins, the conditional
+blobs, 1530 exact controls and 45 owner-source pins, the conditional
 three-term price split, metric-update replay,
 Lorentz and general-GL current-rest guard obstructions, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode

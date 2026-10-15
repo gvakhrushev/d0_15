@@ -11,7 +11,7 @@
     "lower_pair": "existing band A/B two-cycle",
     "minkowski_norm_squared": "5/9"
   },
-  "checker_sha256": "8b76db7e0fc15867e45ec007ddd408bff6f128fc23dcc72b8357b5774103b48b",
+  "checker_sha256": "d7c356ca1e19baf7333ac882053fb6fe4b895f055f8c0ce4393442dd4668e9d4",
   "conditional_three_term_price": {
     "conditional_stationarity": "impossible for these three terms alone on this tangent",
     "conditional_total_derivative": ">0 under additivity, shared fixed beta=log(2), and binary-passport scene admission",
@@ -99,14 +99,20 @@
     "native_full_CAR_current_formula_band_B_component_3",
     "native_lower_first_grade_is_nonzero",
     "nonzero_current_rest_lift_hits_actual_engine_forbidden_mask",
+    "only_checked_q_plus_owner_remains_conditional",
     "original_seed_remains_current_null",
     "owned_endpoint_isometry_hypothesis_holds",
+    "owned_metric_candidate_replay_a4d_native_record_metric_chronology_check",
+    "owned_metric_candidate_replay_a4d_native_soldered_heat_source_check",
+    "owned_q_plus_owner_leaves_active_engine_sector_at_eta",
     "owned_source_replay_a4d_native_constrained_price_source_check",
     "owned_source_replay_a4d_native_joint_field_quotient_check",
     "owned_source_replay_a4d_native_shared_scene_price_source_check",
     "rest_lift_forbidden_mask2_has_exact_formula",
     "rest_lift_forbidden_mask2_square_identity",
     "single_high_pair_does_not_fake_spatial_current",
+    "soldered_heat_owner_supplies_components_but_not_physical_transition",
+    "soldered_heat_source_keeps_transition_and_bootstrap_identification_open",
     "stored_unit_amplitude_witness_leaves_executor_guard",
     "symbolic_current_observer_minus_engine_mask13_is_minus_4a_s_cubed",
     "symbolic_domain_sanity",
@@ -139,7 +145,7 @@
     "2/3",
     "-2/3"
   ],
-  "exact_controls": 1524,
+  "exact_controls": 1530,
   "exact_heat_response": {
     "K_at_odd_tick": "5",
     "K_prime_at_s_1": "8",
@@ -214,6 +220,24 @@
   },
   "lean_capsule_sha256": "6595afa0102f4838850f5b7e0ee364db5a5167b556a6f132738c3c1d49f6c49c",
   "lean_output_sha256": "a79352ece91f60ab4dba2175342bb43d7f85e899fe00c1375d7c93c6bc4e55f3",
+  "metric_transition_owner_census": {
+    "next_missing_arrow": "an owner-derived admitted interaction or nonlinear preparation coupling q, CAR current and the executor step",
+    "record_metric_chronology": {
+      "active_sector_output": "q_plus=eta on the tested 128-step orbit",
+      "hypothesis": "full endpoint-pairing isometry",
+      "owned_rule": "q_plus=-Q+2*w*wT/(wT*Qinv*w)",
+      "physical_admission": "OPEN",
+      "replay": "PASS_RECORD_METRIC_CHRONOLOGY controls=469 mutations=18 joint_directions=26 full_fibre=16 physical_admission=OPEN"
+    },
+    "scope": "two previously identified candidate owners inspected; no global owner-completeness claim",
+    "soldered_heat_source": {
+      "bootstrap_heat_identification": "OPEN",
+      "owned_scope": "ten homogeneous heat components and full q/raw-solder tangent",
+      "replay": "PASS_NATIVE_SOLDERED_HEAT_SOURCE controls=405 mutants=16 native_heat_binding=OPEN",
+      "source_Ward_GR": "OPEN",
+      "state_to_state_metric_transition": "not supplied"
+    }
+  },
   "owned_endpoint_metric_update": {
     "Lorentz_metric_q_and_q_plus": "eta at every tick",
     "conditional_rule": "q_plus=-Q+2*w*wT/(wT*Qinv*w), Q=-q+2*v*vT/(vT*qinv*v)",
@@ -235,6 +259,7 @@
     "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md": "3ed86bd268808fbde867752a454c0c678b2a8a27",
     "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md": "fda1294b8d9794a62b86faaa19e3cc1a459e031d",
     "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md": "c20afcb63f955bfcfb25c561fd853cf30a21af40",
+    "02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md": "30697ffcfac273b4c7f5319e6cf8e4b31639c461",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.lean": "abddaf3adad6af4fe330fe90e1cfb1ca5ab42a85",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py": "9dbc4d6f06ee1994fc775f57469cdb6a19d9f8ac",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine_output.txt": "9b9356d95ff0de4053b04ab6ddcf0c56ddb6f6f2",
@@ -256,6 +281,7 @@
     "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_output.txt": "0b67f76f995544fac7801ff02a576ef7e7f387fd",
     "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_results.json": "7ed43d77e0fa4393eb6710870a69cc9f78a54e71",
     "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py": "dce2d1cc09510ad2ac7449fc1eb4138cf23aabc7",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json": "d3a5ef420916a11dd2a277d4c0563a51fb75d2a1",
     "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "193589a342f4ae843eefdbf6c950d6cd8ef8faa7",
     "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py": "2f1cf6f6122f5798ea883ad98bb9d52ad07300d7",
     "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source.lean": "4e7b0297e39f993d2745e4942e54a369dd643aa7",
@@ -263,6 +289,12 @@
     "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_check.py": "a3bba45a5eda12c5ebd5cbdd87e420ac8cdb7aea",
     "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_output.txt": "3063435e2f53f2df7f046b4ae01bd57e41033e65",
     "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_results.json": "13bbca20cdfaa17a95f72e966d96f1b8f8f7aebd",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.lean": "d6a7550a700c4eb6c28cb8abb54da60f434e3cf4",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.py": "8b3ae8c3a51879494677d58abfc1bd746b1697ae",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_certificate.json": "26d2558532a71699ec3d85845c42cc672dfcda65",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py": "d90101c0203ee8755c90aa0b2672113b6099483b",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_output.txt": "951e08b70eee2e780496c720fdcefd6f90a451ee",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json": "072fa8039243fb8d5373f411d22ae14929405901",
     "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "c4014d2dcf54f67fe9fbadaa25ff281beb1d289d",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "1acfaec4d7a41b50f50dd55cced7613b80852514",
     "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "087afdd443ffc02701376e00728193c020da259d"
@@ -274,6 +306,7 @@
     "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md": "991b42eac645bb7e5e4df55f9be439f8e873b9403b4ff2a6dc1061a49dfe3e2e",
     "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
     "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md": "9986e1afc9d7cbb8b47dafcd40e3f79d8dcb08fb3833c84db9adae3aa5126291",
+    "02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md": "be0c07f8636d051d7fe50cdbc6241a172c7148c694e93a0ba1b4140899c5321a",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.lean": "d8a8815866a829d026d3331aa75996563f796639e2026027cb63c7c0c30de096",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py": "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9",
     "02_REGISTRY/research/certificates/a4d_native_closed_record_engine_output.txt": "451a5901dd8b7b6b621f25ca97627d016a22de0c4661ef8b3c7f853f1bb611a2",
@@ -295,6 +328,7 @@
     "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_output.txt": "9f4a0ae42975d4f4a4b4c78dba38195fe536b29eedfca158ed7d1046c8d6b489",
     "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_results.json": "069b454108cbccc42e33a31790e582579c47c5c3c8576c5f82463d39f0f698fc",
     "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py": "b19f6c864af7e75c2a48d9892692b4d94337d06c04a83013b180148a1752c53f",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json": "0b91e13d823568898a006dd468f9963ffbbc1949f0976a21e8530af465ecfbbe",
     "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
     "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a",
     "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source.lean": "748be767d4618af542c2945da61760cdc2d4c68afc25f189a72c5caa999a8f4a",
@@ -302,6 +336,12 @@
     "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_check.py": "d586a4cd80b6ba39827b0d93cca6af60e4c87b7e5364a9cda23652e282ee3292",
     "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_output.txt": "2e616cab2316a02cc919316af0efdc5b7c9a99057936abba0ae5f0478da6336f",
     "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_results.json": "738752770242b434e8522dbf9f7c39c570d6852818c292f7c1ec88ed2a823818",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.lean": "29e0364e9008de9d4a084b7648579ae68507a5e42f1f2f2d28c21af5785a5425",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.py": "7794885c71088ec66963b96d1e949dd4c3c1af38322512d14434df1ec196dd26",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_certificate.json": "1c1f7f1c55eaa16d4b200d3557ad5744f10fc5aa1345a2c98a8454e64348295a",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py": "d2d05b09242f3934bfb15e36990290f80e8374b038bbf2d7d2e654b8382f59f6",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_output.txt": "bfa25ec65768f922b6770a0aa3d99b89fff9a07e789dfb8d1fe76a4958948206",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json": "1c99019091bd543fb43d1e8aafea3c83f656a1a45b5d7b54793a908d7914dc40",
     "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
     "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
@@ -320,7 +360,7 @@
     "varied_field": "m13=m14=s; q=eta and D=I fixed",
     "vertical_jet_at_s_1": "dK/ds=8; dH/ds>0 for all L>=2"
   },
-  "research_note_sha256": "4481acb51f8634531e1a1c8e2e939f11963269d2e31752cc6097b1b1c4ddeae3",
+  "research_note_sha256": "75f85bf31b6944e5ed2fbedfd418a72948a1a8b92afd2c1ce2989c5757b01ec3",
   "same_current_observer_and_executor_output_on_witness": false,
   "scope": "ALTERNATIVE_EXACT_ENGINE_INVARIANT_SECTOR_WITH_EXISTING_FULL_CAR_CURRENT_READOUT",
   "status": "PASS"
