@@ -1,0 +1,44 @@
+{
+  "control_count": 13,
+  "exact_controls": {
+    "D0_rational_AB_boost_owner_is_resolved": true,
+    "current_CAR_exterior_link_ignores_pure_shift": true,
+    "dropping_boost_admits_nonzero_positive_form": true,
+    "half_turn_x_preserves_minkowski_form_exactly": true,
+    "half_turn_y_preserves_minkowski_form_exactly": true,
+    "half_turn_z_preserves_minkowski_form_exactly": true,
+    "minkowski_form_fails_nonnegativity": true,
+    "owned_affine_shift_composition_is_pinned": true,
+    "positive_euclidean_form_fails_boost": true,
+    "pure_translation_composition_adds_the_recorded_shift": true,
+    "quarter_turn_y_preserves_minkowski_form_exactly": true,
+    "quarter_turn_z_preserves_minkowski_form_exactly": true,
+    "rational_boost_preserves_minkowski_form_exactly": true
+  },
+  "lean_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "lean_theorem": "D0.Research.FiniteLorentzCovariantPositiveQuadratic.invariant_nonnegative_quadratic_eq_zero",
+  "scope": {
+    "affine_translation_representation_trivial_under_fixed_positive_pairing_and_full_lorentz_covariance": true,
+    "finite_dimensional_hermitian_generator_quadratic_core_lean_checked": true,
+    "global_or_parent_terminal_status_changed": false,
+    "level_changing_or_infinite_dimensional_memory_excluded": false,
+    "lorentz_implementers_must_be_unitary": false,
+    "nonunitary_or_nonhomomorphic_channels_excluded": false,
+    "smooth_unitary_group_derivative_to_hermitian_generators": "analytic finite-dimensional matrix proof",
+    "whole_core_no_go_or_gr_closure": false
+  },
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_AFFINE_UNITARY_NO_GO.md": "acc2a0acf4bac39140589091d8a24a1449ca40ba0fa3bbac7ceb5275dc176d13",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic.lean": "0c6e6eb1b26587a2994de836993b72fd86da480439bd9e335ea0a2c470cca62b",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_check.py": "d1219b482c50a9a5a5d625c7e2c8f5c6d6ede53a701536d371441be59be3f789",
+    "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
+    "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean": "9a342468ef9c04f28c68b59acb32263e141ed184f2bf49a085869632930c1549",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe"
+  },
+  "status": "PASS_FINITE_LORENTZ_COVARIANT_POSITIVE_QUADRATIC"
+}
