@@ -1,0 +1,19 @@
+{
+  "schema": "d0-published-text-snapshot/1",
+  "date": "2026-10-15",
+  "repository": "gvakhrushev/d0_15",
+  "branch": "control/d0-strategy-handoff-2026-10-15",
+  "pr": 323,
+  "pr_url": "https://github.com/gvakhrushev/d0_15/pull/323",
+  "payload_commit": "42db40921634685da07cda564b20a0c61aad619f",
+  "payload_tree": "d3ef2929f5b29b7ffd6e9dfb2dba3e094cbc2a80",
+  "links": {
+    "readme": "https://github.com/gvakhrushev/d0_15/blob/42db40921634685da07cda564b20a0c61aad619f/02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/README.md",
+    "synthesis": "https://github.com/gvakhrushev/d0_15/blob/42db40921634685da07cda564b20a0c61aad619f/02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/original/SYNTHESIS_RU.md",
+    "expensive_ai_brief": "https://github.com/gvakhrushev/d0_15/blob/42db40921634685da07cda564b20a0c61aad619f/02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/original/EXPENSIVE_AI_BRIEF_RU.md",
+    "all_source_paths": "https://github.com/gvakhrushev/d0_15/blob/42db40921634685da07cda564b20a0c61aad619f/02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/TEXT_INDEX.md",
+    "checksums": "https://github.com/gvakhrushev/d0_15/blob/42db40921634685da07cda564b20a0c61aad619f/02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/TEXT_MANIFEST.json",
+    "validation": "https://github.com/gvakhrushev/d0_15/blob/42db40921634685da07cda564b20a0c61aad619f/02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/PUBLICATION_VALIDATION.json"
+  },
+  "pin_scope": "Payload snapshot; this metadata is added by the immediately following commit. Final remote head is verified and recorded in PR #323 body. No scientific acceptance."
+}
