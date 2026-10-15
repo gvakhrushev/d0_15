@@ -278,10 +278,116 @@ the top-grade volume, the full CAR gate matrix is exactly the executor's
 appears at tick 1, and this operator identity holds on all 128 tested later
 steps. Yet none of those 128 states lies in the full-CAR owner's fresh-blank
 plane. The exact checker records all three facts. Thus the operator is already
-shared; the unresolved bridge is preparation: an AF retained-memory map must
-supply the initial orientation and the correct blank plane, then admit the
-joint metric transition and source. This positive identity does not itself
-prove that preparation, a physical action, or a history-dependent joint law.
+shared on this orbit, but those states are not fresh-blank inputs. The owner
+replays alone did not identify a preparation bridge. The next section now
+supplies an exact first-level AF-to-CAR map and shows the canonical AF trace
+seed produce a timelike/top-grade CAR component after one record. Its
+all-level physical admission, joint metric transition and source remain open.
+The active fixed-carrier orbit and this growing-carrier construction are
+different state sequences.
+
+## First AF-to-Lorentz-to-CAR bridge
+
+The first nontrivial Fibonacci algebra is
+
+\[
+ A_1=M_2(\mathbb C)\oplus\mathbb C,
+ \qquad \iota_1(X,y)=(\operatorname{diag}(X,y),X)
+       \in M_3(\mathbb C)\oplus M_2(\mathbb C).
+\]
+
+Its Hermitian part has a canonical four-real-dimensional carrier. Write
+\[
+ H(t,x,y,z)=\begin{pmatrix}t+z&x-iy\\x+iy&t-z\end{pmatrix}.
+\]
+Then \(\det H=t^2-x^2-y^2-z^2\), and the positive semidefinite cone is
+\(t\ge\sqrt{x^2+y^2+z^2}\). The identity is the future unit vector; the
+traceless Pauli matrices span its three-dimensional negative space, with
+orientation fixed by their cyclic commutator. Thus the Lorentz form, its
+future cone and an orientation arise from the actual \(M_2\) block's
+algebraic structure. This is a carrier construction, not yet a spacetime
+field or a physical interpretation of the scalar block.
+
+For \(A\in SL(2,\mathbb C)\), congruence \(X\mapsto AXA^*\) preserves the
+determinant and positive cone. The actual AF inclusion intertwines it with
+\((Z,W)\mapsto((A\oplus1)Z(A\oplus1)^*,AWA^*)\): the old scalar \(y\) is
+retained as the added diagonal entry, while the old \(X\) is copied into the
+second block. The limitation is exact: a noncompact boost does not preserve
+the canonical AF trace. For
+\(A=\begin{psmallmatrix}5/3&4/3\\4/3&5/3\end{psmallmatrix}\),
+\(\det A=1\), but \(\operatorname{Tr}(A I A^*)-\operatorname{Tr}(I)=64/9\).
+So this is a Lorentzian carrier transport compatible with refinement, not a
+trace-preserving physical symmetry or an admitted metric update.
+
+The same first AF level gives a positive exact overlap with the full CAR
+owner. Its actual three-inclusion recording frame at base level 1 has a
+20-dimensional \(\mathbb C^4\otimes\mathcal H_1\) range inside the
+89-dimensional \(\mathcal H_4\). The \(M_2\)-GNS summand supplies a canonical
+16-dimensional reducing sector. If \(\chi\) is the normalized Pauli basis,
+\(T\) the existing four-coordinate change of basis, and \(\mathcal B\) the
+owned full-exterior frame, the map
+\[
+ \Psi=V_{1,M_2}(T\otimes\chi)\mathcal B^*
+\]
+is isometric and intertwines, exactly, the AF and CAR record gate, price cut
+and fresh-blank projection. The remaining scalar \(M_1\) block is a separate
+four-dimensional channel; together these two sectors exhaust all 20 frame
+directions. The other 69 directions of \(\mathcal H_4\) remain in the owner's
+identity complement, with no cut or blank directions discarded.
+
+This correspondence also acts on the actual normalized GNS vector of the
+full canonical AF trace, without conditioning away the scalar sector. At
+level 1,
+\[
+ \tau_1(X,y)=p^2\operatorname{Tr}X+p^3y,\qquad
+ e_2=\operatorname{vec}(I_2)/\sqrt2,\quad
+ \Omega_1=\sqrt2p\,e_2\;\oplus\;ap,
+ \quad 2p^2+p^3=1.
+\]
+Its AF inclusion is in the fresh-blank plane. The CAR reducing component of
+that seed is \(p(|\varnothing\rangle+|123\rangle)\), with squared norm
+\(2p^2\); the orthogonal scalar channel of squared norm \(p^3\) is retained.
+After one actual AF recording application, the CAR component is
+\[
+ ap(|\varnothing\rangle+|123\rangle)
+ +p^2(|0\rangle-|0123\rangle).
+\]
+It therefore has a nonzero timelike first-grade component and nonzero
+top-grade orientation, generated from the full AF trace seed by the existing
+record operator. The certificate does not turn AF depth into physical time,
+or close the subsequent joint metric/link/matter transition. It identifies a
+finite first-stage construction for the seed/preparation arrow that the
+active fixed-carrier executor orbit did not provide.
+
+The same owned identity can be iterated without resetting or dropping the
+old state. At record depth \(k\), let \(x_k\in\mathcal H_{1+3k}\) be the
+full AF vector and compose the canonical three-level inclusion \(J_k\) with
+the owned recording operator \(W_k\):
+\[
+ x_{k+1}=W_kJ_kx_k=aJ_kx_k+p e_k,
+ \qquad e_k=V_{3,k}x_k\perp J_k\mathcal H_{1+3k},
+ \qquad \|e_k\|=\|x_k\|.
+\]
+Because \(a^2=p\), \(p+p^2=1\), and the new-detail direction is orthogonal
+to the complete prior carrier, every step preserves total norm and adds a
+nonzero record of squared norm \(p^2\). Later inclusions retain earlier
+records, and the newly added detail is orthogonal to all of them. After \(k\)
+steps the orthogonal components have squared weights
+\[
+ \underbrace{p^k}_{\text{retained base carrier}},\qquad
+ \underbrace{p^2,p^3,\ldots,p^{k+1}}_{\text{successive recorded details}},
+ \qquad p^k+\sum_{j=2}^{k+1}p^j=1.
+\]
+The certificate executes two steps on the entire level-1 canonical trace
+vector, including both its \(M_2\) and scalar sectors: at level 7 the weights
+are exactly \(p^2,p^3,p^2\), with the second detail orthogonal to the full
+first-step state. The carrier dimensions along this sequence are
+\(\dim\mathcal H_1=5\), \(\dim\mathcal H_4=89\), and
+\(\dim\mathcal H_7=1597\). This is an exact growing-resolution, retained-
+memory process built from the existing refinement and record owners. It
+provides a candidate operational tick because every step changes the state
+in a new orthogonal direction; it does not identify that tick with physical
+proper time or those Hilbert dimensions with spatial volume.
 
 ## The current heat does not descend to the metric/link fiber
 
@@ -365,8 +471,8 @@ The Lean capsule
 proves generic gate/minor and heat-sign arithmetic kernels, plus the abstract
 no-two-axis-collapse theorem for an invertible common frame, with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 2057 exact controls and 58 owner-source pins, the conditional
-three-term price split, metric-update replay,
+blobs, 2084 exact controls and 61 owner-source pins. These include the
+AF/Lorentz/CAR first-stage bridge, conditional three-term price split, and metric-update replay,
 Lorentz and general-GL current-rest guard obstructions, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode
 polynomial, the current-step mismatch, and a 128-step regression in

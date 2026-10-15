@@ -51,6 +51,9 @@ OWNER_PATHS = [
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean',
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_output.txt',
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json',
+    '03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean',
+    '02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md',
+    '02_REGISTRY/research/A4D_NATIVE_AF_TRACE_PREPARATION.md',
     '02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md',
     '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py',
     '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_certificate.json',
@@ -99,6 +102,8 @@ P = load('d0_reference_memory_owner_extension',
          '02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py')
 F = load('d0_fock_record_binding_owner',
          '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py')
+AF = load('d0_fibonacci_af_record_owner',
+          '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py')
 a, p = P.a, P.p
 SYMBOLS = [sp.Integer(1), a, p, a*p]
 I4 = sp.eye(4)
@@ -441,6 +446,195 @@ def fock_executor_gate_overlap(checks):
         'scope': 'operator coincidence does not establish fresh-blank preparation, AF-to-CAR memory binding, physical admission or metric/source dynamics',
     }
 
+
+def af_lorentz_fock_bridge(checks):
+    """Bind the first Lorentzian AF block to the full CAR tuple exactly."""
+    t, x, y, z = sp.symbols('t x y z', real=True)
+    herm = sp.Matrix([[t+z, x-sp.I*y], [x+sp.I*y, t-z]])
+    lorentz_det = t**2-x**2-y**2-z**2
+    check(sp.expand(herm.det()-lorentz_det) == 0,
+          'first_AF_matrix_block_has_intrinsic_31_determinant', checks)
+    check(sp.factor(herm.charpoly().as_expr() -
+                    ((sp.Symbol('lambda')-t)**2-x**2-y**2-z**2)) == 0,
+          'Herm2_positive_cone_has_future_eigenvalue_boundary', checks)
+
+    sigma_x = sp.Matrix([[0, 1], [1, 0]])
+    sigma_y = sp.Matrix([[0, -sp.I], [sp.I, 0]])
+    sigma_z = sp.Matrix([[1, 0], [0, -1]])
+    check(sigma_x*sigma_y-sigma_y*sigma_x == 2*sp.I*sigma_z and
+          sigma_y*sigma_z-sigma_z*sigma_y == 2*sp.I*sigma_x and
+          sigma_z*sigma_x-sigma_x*sigma_z == 2*sp.I*sigma_y,
+          'M2_star_commutator_orients_the_traceless_Hermitian_space', checks)
+
+    # The literal first AF refinement is (X,y) -> (diag(X,y), X).
+    aa, bb, cc, dd = sp.symbols('aa bb cc dd')
+    A = sp.Matrix([[aa, bb], [cc, dd]])
+    Astar = sp.Matrix([[sp.Symbol('aa_bar'), sp.Symbol('cc_bar')],
+                       [sp.Symbol('bb_bar'), sp.Symbol('dd_bar')]])
+    y_scalar = sp.symbols('y_scalar')
+    fine_first = sp.zeros(3)
+    fine_first[:2, :2] = herm
+    fine_first[2, 2] = y_scalar
+    fine_second = herm
+    # diag(A,1) is represented explicitly because the first two diagonal
+    # entries are a 2x2 block, not independent scalar coordinates.
+    lifted = sp.eye(3)
+    lifted[:2, :2] = A
+    lifted_star = sp.eye(3)
+    lifted_star[:2, :2] = Astar
+    transformed_herm = A*herm*Astar
+    expected_first = sp.zeros(3)
+    expected_first[:2, :2] = transformed_herm
+    expected_first[2, 2] = y_scalar
+    transported_pair = (lifted*fine_first*lifted_star,
+                        A*fine_second*Astar)
+    expected_pair = (expected_first, transformed_herm)
+    check(transported_pair == expected_pair,
+          'native_AF_inclusion_intertwines_spinor_congruence_and_retains_scalar', checks)
+    det_identity = sp.factor((A*herm*Astar).det() -
+                             (A.det()*Astar.det())*herm.det())
+    check(det_identity == 0,
+          'spinor_congruence_transports_lorentz_determinant_exactly', checks)
+
+    boost = sp.Matrix([[sp.Rational(5, 3), sp.Rational(4, 3)],
+                       [sp.Rational(4, 3), sp.Rational(5, 3)]])
+    check(boost.det() == 1,
+          'hostile_trace_control_is_a_unit_determinant_Lorentz_boost', checks)
+    trace_shift = sp.factor(sp.trace(boost*sp.eye(2)*boost.T)-sp.trace(sp.eye(2)))
+    check(trace_shift == sp.Rational(64, 9),
+          'noncompact_Lorentz_transport_does_not_preserve_AF_trace', checks)
+
+    # At AF level 1, H_1 = HS(M_2) (+) C, with dimensions 4+1.
+    # Pauli coordinates give the canonical real Hermitian form inside HS(M_2).
+    chi = sp.Matrix([[1, 0, 0, 1],
+                     [0, 1, -sp.I, 0],
+                     [0, 1, sp.I, 0],
+                     [1, 0, 0, -1]])/sp.sqrt(2)
+    check(chi.conjugate().T*chi == sp.eye(4),
+          'Pauli_basis_is_unitary_in_the_native_M2_GNS_fibre', checks)
+    check(AF.counts(1) == (2, 1) and AF.counts(4) == (8, 5),
+          'bridge_uses_actual_A1_and_A4_Fibonacci_levels', checks)
+
+    frame = AF.frame(1)
+    V = frame['V']
+    d = frame['old_dimension']
+    check(d == 5 and V.shape == (89, 20),
+          'actual_AF_record_frame_keeps_all_five_old_GNS_directions', checks)
+    # Columns are apparatus-major. The first four old coordinates are the
+    # whole M_2 block; the fifth is the M_1 scalar and is kept separately.
+    m2_columns = (list(range(4)) + [d+i for i in range(4)] +
+                  [2*d+i for i in range(4)] + [3*d+i for i in range(4)])
+    V_m2 = V[:, m2_columns]
+    scalar_columns = [4, d+4, 2*d+4, 3*d+4]
+    V_scalar = V[:, scalar_columns]
+    W, P_af, B_af, R = AF.full_operators(V, d)
+    T = sp.Matrix([[1, 0, 1, 0], [1, 0, -1, 0],
+                    [0, 1, 0, 1], [0, 1, 0, -1]])/sp.sqrt(2)
+    U = AF.record()
+    P = sp.diag(1, 1, 0, 0)
+    B0 = sp.diag(1, 0, 1, 0)
+    car_basis = F.record_basis()
+    Psi = V_m2*sp.kronecker_product(T, chi)*car_basis.T
+    U_fock = car_basis*sp.kronecker_product(T.T*U*T, sp.eye(4))*car_basis.T
+    P_fock = car_basis*sp.kronecker_product(T.T*P*T, sp.eye(4))*car_basis.T
+    B_fock = car_basis*sp.kronecker_product(T.T*B0*T, sp.eye(4))*car_basis.T
+    exact = AF.zero
+    check(exact(Psi.conjugate().T*Psi-sp.eye(16)),
+          'canonical_AF_M2_sector_is_an_isometric_full16_carrier', checks)
+    check(exact(W*Psi-Psi*U_fock),
+          'actual_AF_record_gate_intertwines_all_16_CAR_components', checks)
+    check(exact(P_af*Psi-Psi*P_fock),
+          'actual_AF_price_cut_intertwines_full_CAR_price_projector', checks)
+    check(exact(B_af*Psi-Psi*B_fock),
+          'actual_AF_blank_intertwines_full_CAR_fresh_blank_plane', checks)
+    check(exact(V_m2.conjugate().T*V_scalar) and
+          exact(V_scalar.conjugate().T*V_scalar-sp.eye(4)) and
+          exact(V_m2*V_m2.conjugate().T + V_scalar*V_scalar.conjugate().T-R),
+          'Fock16_and_retained_scalar4_exhaust_the_complete_AF_frame', checks)
+    check(exact(W*V_scalar-V_scalar*U) and
+          exact(P_af*V_scalar-V_scalar*P) and
+          exact(B_af*V_scalar-V_scalar*B0),
+          'retained_M1_sector_keeps_its_actual_gate_price_and_blank', checks)
+    check(exact(W.T*W-sp.eye(89)) and exact((sp.eye(89)-R)*W-(sp.eye(89)-R)) and
+          exact(P_af*(sp.eye(89)-R)) and exact(B_af*(sp.eye(89)-R)),
+          'all_69_AF_complement_directions_remain_in_the_owned_identity_sector', checks)
+
+    # The actual level-1 canonical trace vector has both central sectors:
+    # sqrt(2)*p in HS(M_2), a*p in C, and 2*p^2+p^3=1.
+    e_identity = chi[:, 0]
+    canonical = sp.Matrix([sp.sqrt(2)*p*e_identity[i] for i in range(4)] +
+                          [a*p])
+    check(exact(sp.Matrix([[canonical.dot(canonical)]])-sp.Matrix([[1]])),
+          'full_A1_canonical_trace_seed_keeps_M2_and_scalar_weights', checks)
+    seed_full = V[:, :d]*canonical
+    seed_m2_only = V[:, :d]*sp.Matrix([sp.sqrt(2)*p*e_identity[i] for i in range(4)] + [0])
+    seed_fock = Psi.conjugate().T*seed_m2_only
+    expected_seed = sp.zeros(16, 1)
+    expected_seed[0] = 1/sp.sqrt(2)
+    expected_seed[14] = 1/sp.sqrt(2)
+    check(exact(seed_fock-sp.sqrt(2)*p*expected_seed),
+          'unconditioned_AF_trace_seed_enters_the_owned_blank_plane', checks)
+    check(exact(B_af*seed_full-seed_full),
+          'canonical_full_AF_seed_is_in_the_AF_blank_plane', checks)
+    post_fock = Psi.conjugate().T*W*seed_full
+    expected_post = sp.zeros(16, 1)
+    expected_post[0] = a*p
+    expected_post[1] = p**2
+    expected_post[14] = a*p
+    expected_post[15] = -p**2
+    check(exact(post_fock-expected_post),
+          'AF_recording_generates_internal_timelike_and_top_grade_components', checks)
+    check(sp.simplify((p.subs(p, (sp.sqrt(5)-1)/2))**4) > 0 and
+          sp.simplify(p.subs(p, (sp.sqrt(5)-1)/2)**2) != 0,
+          'generated_observer_and_orientation_have_nonzero_golden_amplitudes', checks)
+
+    # Iterate the same owned record/refinement map once more. The second new
+    # detail is orthogonal to the entire first-level state, not just its
+    # coarse M2 component.
+    frame_4 = AF.frame(4)
+    state_4 = AF.activate(1, canonical)
+    state_7 = AF.activate(4, state_4)
+    J_1 = frame['V'][:, :d]
+    J_4 = frame_4['V'][:, :frame_4['old_dimension']]
+    detail_1 = state_4-AF.a*J_1*canonical
+    detail_2 = state_7-AF.a*J_4*state_4
+    check(AF.zero((state_4.T*state_4)[0]-1) and
+          AF.zero((state_7.T*state_7)[0]-1),
+          'two_actual_AF_refinement_ticks_preserve_the_full_state_norm', checks)
+    check(AF.zero((detail_1.T*detail_1)[0]-AF.p**2) and
+          AF.zero((detail_2.T*detail_2)[0]-AF.p**2),
+          'each_tick_records_the_same_nonzero_golden_detail_weight', checks)
+    check(AF.zero(J_4.T*detail_2) and
+          AF.zero((J_4*detail_1).T*detail_2),
+          'second_tick_detail_is_orthogonal_to_the_complete_prior_history', checks)
+    base_after_two = AF.a**2*J_4*J_1*canonical
+    first_record_after_two = AF.a*J_4*detail_1
+    check(AF.zero(state_7-base_after_two-first_record_after_two-detail_2) and
+          AF.zero((base_after_two.T*first_record_after_two)[0]) and
+          AF.zero((base_after_two.T*detail_2)[0]) and
+          AF.zero((first_record_after_two.T*detail_2)[0]),
+          'two_tick_state_is_an_orthogonal_base_plus_two_retained_records', checks)
+    check(AF.zero((base_after_two.T*base_after_two)[0]-AF.p**2) and
+          AF.zero((first_record_after_two.T*first_record_after_two)[0]-AF.p**3) and
+          AF.zero((detail_2.T*detail_2)[0]-AF.p**2) and
+          AF.zero(AF.p**2+AF.p**3+AF.p**2-1),
+          'two_tick_golden_archive_weights_sum_exactly_to_one', checks)
+
+    return {
+        'first_AF_level': 'A_1=M_2(C) (+) C; Herm_2(C) has determinant signature (1,3)',
+        'first_AF_inclusion': '(X,y) -> (diag(X,y),X)',
+        'lorentz_transport': 'SL(2,C) congruence on Herm_2 intertwines the actual inclusion and preserves det',
+        'trace_boundary': 'noncompact boost changes the canonical AF trace; Lorentz carrier transport is not a trace-preserving physical symmetry',
+        'fock_embedding': 'canonical 16D M2-GNS reducing sector in the actual AF recording frame at base level 1',
+        'intertwined_owners': ['full CAR gate', 'price cut', 'fresh-blank plane'],
+        'retained_sectors': 'full A1 cyclic vector keeps M2 weight 2*p^2 and scalar weight p^3; all 69 AF complement dimensions remain present',
+        'one_record_output': 'M2 CAR component has first grade p^2*e0 and top grade -p^2*vol',
+        'two_tick_memory': 'two actual AF steps retain the full state; each adds an orthogonal p^2 detail, with final weights p^2, p^3, p^2',
+        'all_tick_law': 'from the owned all-n identity, k steps give retained base weight p^k and mutually orthogonal record weights p^2 through p^(k+1), summing to 1',
+        'automatic_time_or_GR': False,
+        'scope': 'exact first-stage kinematic representation and two actual records of the canonical AF vector; the all-k norm formula is analytic from the owned identity; no physical time law, trace-preserving boosts, joint metric transition, source, Ward identity or GR closure',
+    }
+
 def metric_transition_owner_census(checks, metric_update_data):
     """Replay existing metric, heat and AF recording owners and classify arrows."""
     owner_replays = [
@@ -512,6 +706,7 @@ def metric_transition_owner_census(checks, metric_update_data):
           'recovery from history or other grades must be actually constructed' in fock_source,
           'fock_record_binding_rejects_uncharged_metric_or_orientation_reset', checks)
     overlap = fock_executor_gate_overlap(checks)
+    af_bridge = af_lorentz_fock_bridge(checks)
     return {
         'record_metric_chronology': {
             'owned_rule': 'q_plus=-Q+2*w*wT/(wT*Qinv*w)',
@@ -543,8 +738,9 @@ def metric_transition_owner_census(checks, metric_update_data):
             'active_executor_overlap': overlap,
             'replay': outputs['a4d_native_fock_record_binding_check'],
         },
+        'af_lorentz_fock_first_stage_bridge': af_bridge,
         'scope': 'limited census of two metric/heat candidates and two record-operator owners; not global owner completeness',
-        'next_missing_arrow': 'derive the AF retained-memory preparation that supplies the missing seed orientation and fresh-blank membership; then prove its joint (q,D,b,m) metric transition, source/Ward and compatible refinement. The full-CAR gate already matches the executor on the tested post-seed steps',
+        'next_missing_arrow': 'extend the exact first-stage AF-to-CAR representation to a physically admitted iterated joint (q,D,b,m) refinement, preserving the full canonical AF state and its scalar/complement sectors; then derive source/Ward and curved recovery. The first AF level now supplies a nonzero timelike/top-grade CAR component after one record, but no physical time or metric transition is yet derived',
     }
 
 def qD_fiber_nonbasicness(checks, heat_data):

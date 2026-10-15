@@ -2302,3 +2302,30 @@ into the executor, or transfer the heat derivative into one native action.
 The shared action/tangent, source/Ward, metric/link transition, curved
 physical root, soundness/recovery, GR and global closure remain open. The
 original #310/#202/#317 terminals are unchanged.
+
+## First AF–Lorentz–CAR carrier and retained-memory iteration — 2026-10-15
+
+The follow-up in
+[`A4D_NATIVE_ENGINE_CORRELATED_CURRENT_EXTENSION_2026-10-15.md`](A4D_NATIVE_ENGINE_CORRELATED_CURRENT_EXTENSION_2026-10-15.md)
+now certifies a finite first-stage bridge, not just a matching gate. At the
+first nontrivial AF level, the canonical `M_2(C)` block has a four-real-
+dimensional Hermitian carrier with Lorentz determinant, future cone and
+commutator orientation. The actual inclusion `(X,y) -> (diag(X,y),X)` is
+compatible with the spinor congruence `X -> A X A*` for `A in SL(2,C)`; a
+unit-determinant boost changes the canonical AF trace, so this remains a
+kinematic carrier map rather than an admitted physical metric update.
+
+On the actual recording frame at base level 1, the `M_2` GNS sector is a
+16-dimensional reducing subspace exactly intertwining the complete CAR gate,
+price cut and fresh-blank plane. The companion scalar channel and all 69 AF
+complement directions are retained. The full level-1 canonical trace vector
+starts in the AF blank plane; one record gives its CAR component nonzero
+timelike first grade and top grade. Two actual AF refinements preserve the
+whole vector and add successive orthogonal details of squared norm `p^2`;
+the level-7 orthogonal weights are exactly `p^2,p^3,p^2`. Analytically, the
+owned all-level identity gives retained-base weight `p^k` and record weights
+`p^2,...,p^(k+1)`, summing to one at every depth. This is a concrete internal
+state-change and growing-resolution candidate, not a physical time law or a
+spatial-volume theorem. The joint `(q,D,b,m)` update, trace-compatible boost
+response, source/Ward identity, curved root, soundness/recovery, GR and the
+original #310/#202/#317 terminals remain open.
