@@ -34,7 +34,7 @@
   ],
   "control_head_before_supplement": "a11a51055177cd81da005335f6f7b06500d7888e",
   "control_pr": 322,
-  "copied_artifact_count": 28,
+  "copied_artifact_count": 29,
   "copied_artifacts": [
     {
       "kind": "replay_prerequisite",
@@ -53,6 +53,12 @@
       "path": "02_REGISTRY/research/certificates/a4d_finite_probe_palatini_check.py",
       "sha256": "7f2d1c58fa4d4a8c52b2b3c76b9ca1369297f3c169d4216cbc5b7434ac787d6d",
       "source_blob": "f2a159e0ad554784223e13a2bdf8fd0170ba53ec"
+    },
+    {
+      "kind": "replay_prerequisite",
+      "path": "02_REGISTRY/research/certificates/a4d_finite_probe_palatini_results.json",
+      "sha256": "e749641cef57f7dfa75c648dec773fdd88e2b682d339867f1f5760bb0669f98e",
+      "source_blob": "be8fd51288110dbc3e651c126b317a7318ca9149"
     },
     {
       "kind": "packet_artifact",

@@ -2148,11 +2148,13 @@ Evidence: 24745 controls, 15 executed mathematical mutants, 4096 exact transitio
 
 ## Curved connection shell and conditional Ward/scene source (2026-10-15)
 
-The supplemental intake copies 28 byte-identical artifacts from the current
+The supplemental intake copies 29 byte-identical artifacts from the current
 SOURCE #310 head `f0a6a85111c28f21a18ebf6ad9276eaa713abbd8`. It preserves the
 original 448-artifact snapshot at SOURCE `39dbaecfb6e1c316c25c6d1898711a74164559ea`;
 the separate receipt is
 [`CONTROL_A4D_NATIVE_GRAVITY_PACKET_INTAKE_2026-10-15.json`](CONTROL_A4D_NATIVE_GRAVITY_PACKET_INTAKE_2026-10-15.json).
+The replay prerequisite set includes the matching exact-result ledger for the Palatini finite-probe checker; its bytes and source Git blob are recorded in the supplemental receipt.
+
 Both packet commits, `a9212b19bb5779a9dd2e0d94109af26677236399` and
 `61688727ab3273bf35318f10ca789937b0b8f9b3`, are ancestors of that remote-verified
 SOURCE head.
