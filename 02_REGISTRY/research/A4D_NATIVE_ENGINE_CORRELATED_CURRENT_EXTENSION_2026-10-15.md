@@ -173,6 +173,42 @@ Lorentz metric fixed and the fixed-\(q\) operator mismatch intact. This closes
 only that named conditional update as a rescue; it does not establish its
 physical admission or exclude other metric-changing owners.
 
+## A direct current-rest coframe change also leaves the executor domain
+
+There is a natural next attempt: use the existing full exterior frame lift to
+put the active current at rest, then run the unchanged axis executor in that
+frame. For the amplitude family, the initial current is
+\(J_s=e_0-2s^2(1+2s^2)^{-1}e_1\). The Lorentz boost
+
+\[
+\Lambda_s=\begin{pmatrix}\gamma_s&b_s\\b_s&\gamma_s\end{pmatrix}
+\oplus I_2,\qquad
+\gamma_s=\frac{1+2s^2}{\sqrt{1+4s^2}},\quad
+b_s=\frac{2s^2}{\sqrt{1+4s^2}},
+\]
+
+satisfies \(\Lambda_s\eta\Lambda_s^T=\eta\) and sends \(J_s\) to
+\(\sqrt{1+4s^2}(1+2s^2)^{-1}e_0\). The existing exterior lift
+\(\wedge\Lambda_s\) sends the CAR current to this rest direction. However,
+on the grade-one native component \((2p-1)e_0\), it creates the forbidden
+executor coordinate
+
+\[
+(\wedge\Lambda_s m_s)_2=
+\frac{2s^2(2p-1)}{\sqrt{1+4s^2}}.
+\]
+
+Because \(2p-1=\sqrt5-2\ne0\), this coordinate is nonzero for every
+\(s\ne0\), so the transformed state violates the actual six-zero executor
+guard at mask 2. At \(s=0\), the boost is the identity and the guard survives,
+but the spatial current and the heat-amplitude response vanish. The exact
+checker verifies the full current rest alignment, Lorentz identity, forbidden
+coordinate, stored \(s=1\) witness, and the zero-amplitude hostile control,
+binding the existing CAR and exterior-frame sources. This excludes the direct
+current-rest frame lift as a way to compose this active sector with the
+unchanged executor; it does not exclude another native coframe/link map or
+larger executor domain.
+
 The next load-bearing question is whether an already-owned metric/link
 transition can make this nonzero heat readout and the executor's actual state
 transition part of one admitted action. The fixed-metric direct match is now

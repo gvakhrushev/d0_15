@@ -39,6 +39,9 @@ OWNER_PATHS = [
     '02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py',
     '02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py',
     '02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py',
+    '03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean',
+    '03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean',
+    '03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean',
 ]
 
 
@@ -238,6 +241,64 @@ def endpoint_metric_update_checks(checks):
     }
 
 
+def current_rest_frame_guard_obstruction(checks):
+    """Test the existing exterior lift to the current-rest frame."""
+    x = sp.symbols('x', real=True, nonnegative=True)
+    root = sp.sqrt(1 + 4 * x**2)
+    gamma = (1 + 2 * x**2) / root
+    off = 2 * x**2 / root
+    boost = sp.eye(4)
+    boost[0, 0] = boost[1, 1] = gamma
+    boost[0, 1] = boost[1, 0] = off
+    eta = sp.diag(1, -1, -1, -1)
+    check(all(sp.simplify(v) == 0 for v in boost * eta * boost.T - eta),
+          'current_rest_boost_is_lorentz', checks)
+
+    state = sp.zeros(16, 1)
+    state[0], state[1], state[13], state[14] = -2*a*p, 2*p-1, x, x
+    lifted = P.C.ext(boost) * state
+    current_in_rest_frame = C.current(boost, lifted)
+    expected_current = sp.Matrix([root / (1 + 2*x**2), 0, 0, 0])
+    check(all(C.red(current_in_rest_frame[i] - expected_current[i]) == 0
+              for i in range(4)),
+          'existing_full_CAR_readout_is_rest_aligned_after_exterior_lift', checks)
+
+    expected_forbidden = 2*x**2*(2*p-1)/root
+    check(C.red(lifted[2] - expected_forbidden) == 0,
+          'rest_lift_forbidden_mask2_has_exact_formula', checks)
+    check(sp.simplify(lifted[2]**2 -
+                      4*x**4*(2*p-1)**2/(1+4*x**2)) == 0,
+          'rest_lift_forbidden_mask2_square_identity', checks)
+    check(C.red(2*p-1) != 0,
+          'native_lower_first_grade_is_nonzero', checks)
+
+    forbidden = (2, 3, 4, 5, 8, 9)
+    active_forbidden = [i for i in forbidden if sp.simplify(lifted[i]) != 0]
+    check(active_forbidden == [2],
+          'nonzero_current_rest_lift_hits_actual_engine_forbidden_mask', checks)
+
+    null_lift = lifted.subs(x, 0).applyfunc(C.red)
+    null_current = current_in_rest_frame.subs(x, 0).applyfunc(C.red)
+    check(C.red(null_lift[2]) == 0 and
+          all(C.red(null_current[i] - (1 if i == 0 else 0)) == 0
+              for i in range(4)),
+          'zero_amplitude_control_has_no_tilt_and_stays_in_guard', checks)
+
+    witness = C.red(lifted[2].subs(x, 1).subs(sp.sqrt(5), 1+2*p))
+    check(witness != 0,
+          'stored_unit_amplitude_witness_leaves_executor_guard', checks)
+    return {
+        'owned_frame_lift': 'archiveExteriorFrameLift / P.C.ext',
+        'boost': 'gamma=(1+2*s^2)/sqrt(1+4*s^2); off=2*s^2/sqrt(1+4*s^2)',
+        'current_in_boosted_frame': 'sqrt(1+4*s^2)/(1+2*s^2) * e0',
+        'forbidden_mask2_after_full_exterior_lift':
+            '2*s^2*(2*p-1)/sqrt(1+4*s^2)',
+        'nonzero_amplitude_domain': 'outside six-zero engine guard for every s!=0',
+        'zero_amplitude_control': 'current-null and remains in engine guard',
+        'stored_witness': 's=1 has nonzero forbidden mask 2',
+    }
+
+
 def heat_L4_sign(checks):
     # z(k)=4(exp(2*pi*i*k/4)-1), stored as exact integer pairs.
     z = [(0, 0), (-4, 4), (-8, 0), (-4, -4)]
@@ -316,6 +377,7 @@ def build_result():
     symbolic_readout_checks(checks)
     symbolic_residual = symbolic_transition_mismatch(checks)
     metric_update_data = endpoint_metric_update_checks(checks)
+    rest_frame_data = current_rest_frame_guard_obstruction(checks)
     heat_data = heat_L4_sign(checks)
 
     lean_output = LEAN_OUTPUT.read_text()
@@ -424,6 +486,7 @@ def build_result():
         'current_observer_minus_executor_output_mask13': str(symbolic_residual),
         'fixed_q_direct_common_step_for_nonzero_amplitude': 'NO_GO_WITHIN_THIS_FAMILY',
         'owned_endpoint_metric_update': metric_update_data,
+        'current_rest_frame_guard_obstruction': rest_frame_data,
         'initial_state': {
             'nonzero_masks': [0, 1, 13, 14],
             'm0': '-2*a*p', 'm1': '2*p-1', 'm13': '1', 'm14': '1',
@@ -458,6 +521,7 @@ def build_result():
             'state with forbidden m3 coordinate is rejected by actual step guard',
             'current-derived record operator differs from engine output at mask 13 on the exact witness',
             'off-axis timelike first grade changes the conditional positive pairing',
+            'current-rest-frame exterior lift populates forbidden engine mask 2 for nonzero amplitude',
         ],
         'owner_sha256': owner_hashes,
         'owner_git_blob': owner_blobs,

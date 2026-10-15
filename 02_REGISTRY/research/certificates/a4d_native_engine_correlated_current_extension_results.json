@@ -11,7 +11,7 @@
     "lower_pair": "existing band A/B two-cycle",
     "minkowski_norm_squared": "5/9"
   },
-  "checker_sha256": "b59b753edc8f5bb7e3299d7ccaaa75a61e8f72267fa8c172bcdcdadd37588246",
+  "checker_sha256": "56929e4e8a63f46c7837ad44c31a55e8a9654b339a46f38a3b4ca587b467064e",
   "control_names": [
     "L4_exact_heat_numerator_polynomial_coefficients",
     "L4_exact_rational_tail_proves_negative_numerator",
@@ -36,6 +36,7 @@
     "collinear_endpoint_pairing_is_retained",
     "collinear_input_pairing_is_euclidean_identity",
     "collinear_owned_metric_update_is_eta",
+    "current_rest_boost_is_lorentz",
     "direct_current_observer_transition_identification_rejected_on_witness",
     "endpoint_update_input_first_grade_nonzero",
     "endpoint_update_output_first_grade_collinear_nonzero",
@@ -48,6 +49,7 @@
     "executor_sign_defined_all_replayed_ticks",
     "existing_current_observer_feedback_pencil_is_source_pinned",
     "existing_equal_current_feedback_pencil_has_zero_amplitude_derivative",
+    "existing_full_CAR_readout_is_rest_aligned_after_exterior_lift",
     "hostile_off_axis_state_does_not_collapse_to_identity_pairing",
     "hostile_out_of_domain_state_rejected",
     "lean_output_resolves_all_named_propositions",
@@ -60,9 +62,14 @@
     "native_full_CAR_current_formula_band_B_component_1",
     "native_full_CAR_current_formula_band_B_component_2",
     "native_full_CAR_current_formula_band_B_component_3",
+    "native_lower_first_grade_is_nonzero",
+    "nonzero_current_rest_lift_hits_actual_engine_forbidden_mask",
     "original_seed_remains_current_null",
     "owned_endpoint_isometry_hypothesis_holds",
+    "rest_lift_forbidden_mask2_has_exact_formula",
+    "rest_lift_forbidden_mask2_square_identity",
     "single_high_pair_does_not_fake_spatial_current",
+    "stored_unit_amplitude_witness_leaves_executor_guard",
     "symbolic_current_observer_minus_engine_mask13_is_minus_4a_s_cubed",
     "symbolic_domain_sanity",
     "symbolic_initial_current_amplitude",
@@ -70,9 +77,19 @@
     "symbolic_one_tick_pairing_ratio",
     "transition_mismatch_vanishes_at_current_null_amplitude",
     "unit_amplitude_observer_ratio_alternates_one_fifth_five",
-    "unused_high_pairs_remain_zero"
+    "unused_high_pairs_remain_zero",
+    "zero_amplitude_control_has_no_tilt_and_stays_in_guard"
   ],
   "current_observer_minus_executor_output_mask13": "-4*a*s**3",
+  "current_rest_frame_guard_obstruction": {
+    "boost": "gamma=(1+2*s^2)/sqrt(1+4*s^2); off=2*s^2/sqrt(1+4*s^2)",
+    "current_in_boosted_frame": "sqrt(1+4*s^2)/(1+2*s^2) * e0",
+    "forbidden_mask2_after_full_exterior_lift": "2*s^2*(2*p-1)/sqrt(1+4*s^2)",
+    "nonzero_amplitude_domain": "outside six-zero engine guard for every s!=0",
+    "owned_frame_lift": "archiveExteriorFrameLift / P.C.ext",
+    "stored_witness": "s=1 has nonzero forbidden mask 2",
+    "zero_amplitude_control": "current-null and remains in engine guard"
+  },
   "current_spatial_values_first_nine_ticks": [
     "-2/3",
     "2/3",
@@ -84,7 +101,7 @@
     "2/3",
     "-2/3"
   ],
-  "exact_controls": 1494,
+  "exact_controls": 1502,
   "exact_heat_response": {
     "K_at_odd_tick": "5",
     "K_prime_at_s_1": "8",
@@ -130,7 +147,8 @@
     "one nonzero high pair alone remains current-null",
     "state with forbidden m3 coordinate is rejected by actual step guard",
     "current-derived record operator differs from engine output at mask 13 on the exact witness",
-    "off-axis timelike first grade changes the conditional positive pairing"
+    "off-axis timelike first grade changes the conditional positive pairing",
+    "current-rest-frame exterior lift populates forbidden engine mask 2 for nonzero amplitude"
   ],
   "initial_state": {
     "correlated_minor": "-1",
@@ -179,7 +197,10 @@
     "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_results.json": "a1aab6b46ea2ce98982b8f41c92d335ddbd9493c",
     "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py": "dce2d1cc09510ad2ac7449fc1eb4138cf23aabc7",
     "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "193589a342f4ae843eefdbf6c950d6cd8ef8faa7",
-    "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py": "2f1cf6f6122f5798ea883ad98bb9d52ad07300d7"
+    "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py": "2f1cf6f6122f5798ea883ad98bb9d52ad07300d7",
+    "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "c4014d2dcf54f67fe9fbadaa25ff281beb1d289d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "1acfaec4d7a41b50f50dd55cced7613b80852514",
+    "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "087afdd443ffc02701376e00728193c020da259d"
   },
   "owner_sha256": {
     "02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md": "36eaeb8617630acaeace297fa64e7b8c33b92fc4824133a2b8e3515c4c79520a",
@@ -197,10 +218,13 @@
     "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_results.json": "eb1343a64c5630fb3167eaa8b4f36595bd84f53e3a0b918e449af1bf5c76067e",
     "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py": "b19f6c864af7e75c2a48d9892692b4d94337d06c04a83013b180148a1752c53f",
     "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
-    "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a"
+    "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a",
+    "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
   },
   "physical_admission_or_current_derived_executor_axis_proved": false,
-  "research_note_sha256": "17ba2af100b18cb5a6084be737f478e502bd119ac8a8618f353ca51103645995",
+  "research_note_sha256": "d3c202040a8c830c1315ccec01287deb3c7efedb84fb850c1634b6683e1b5c8f",
   "same_current_observer_and_executor_output_on_witness": false,
   "scope": "ALTERNATIVE_EXACT_ENGINE_INVARIANT_SECTOR_WITH_EXISTING_FULL_CAR_CURRENT_READOUT",
   "status": "PASS"

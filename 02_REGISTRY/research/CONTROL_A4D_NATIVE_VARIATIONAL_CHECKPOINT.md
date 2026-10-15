@@ -2264,9 +2264,16 @@ for all 128 actual executor transitions. Thus this particular owned update
 does not remove the fixed-metric mismatch. Its physical admission remains
 open, and other metric-changing owners are not excluded.
 
-The exact supplement records 1494 controls, 128 actual executor transitions,
+The direct current-rest coframe route is also tested with the owned exterior
+frame lift. It aligns the current to the time axis, but introduces the
+forbidden executor coordinate `m2=2*s^2*(2*p-1)/sqrt(1+4*s^2)`, nonzero for
+every active amplitude. The zero-amplitude control stays in the guard but has
+no spatial current. This rules out that direct frame-lift rescue only.
+
+The exact supplement records 1502 controls, 128 actual executor transitions,
 the all-four-component symbolic CAR readout on both lower bands, the
-current-null, out-of-domain and off-axis metric hostile controls, 16 owner
+current-null, out-of-domain, off-axis metric and current-rest-frame hostile
+controls, 19 owner
 source SHA/blob pairs, and the Lean source/output hashes. Seven generic algebra propositions
 compile with standard axioms only and no `sorryAx`. The result does not select
 the nonzero starting correlation physically, put the current-derived operator
