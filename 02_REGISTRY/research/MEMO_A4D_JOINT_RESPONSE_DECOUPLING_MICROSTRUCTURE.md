@@ -4631,3 +4631,49 @@ not a NO-GO for the whole D0 core. The exact ten-slot and chronology controls
 are `a4d_native_factor_imbalance_remainder_check.py` (1114 controls, 18
 mathematical mutations) and `a4d_native_chronological_stationary_descent_check.py`
 (98 controls, 10 negative controls); both passed on this source tree.
+
+## Full prepared-source pullback and joint source compatibility (2026-10-15)
+
+The next interface has been made executable rather than replaced by a
+tomographic assumption. The [analytic synthesis](A4D_NATIVE_RECORD_SOURCE_JOINT_CONTINUATION.md)
+derives the genuine count-instrument pullback, including the moving initial
+state, the event normalizer and noncommuting Kraus jets. An exact reverse
+recursion produces source-visible generator covectors from one base tape;
+the base tape and costates can be reused for different physical field probes.
+The formula is equivalent to independent full Kraus-word differentiation for
+the declared count-event observable. It is not an archive-erasure theorem.
+
+For the specified prepared term `R_A=Tr(rho_A Delta)`, the complete derivative
+of the already declared candidate `H_beta+J+R_A` is
+
+```text
+Tr[(rho_A-rho_beta) dDelta]
+ + Tr[(Delta-R_A I) dW_A]/Tr(W_A)
+ + z Tr[(I-zF)^-1 dF].
+```
+
+A full-archive remainder is retained whenever the separately owned tensor
+decomposition requires it. No equality of this candidate with native Cost-Info
+is assumed. The supplied coherent-state proposal's radial entropy tangent is
+not a unitary commutator tangent; the corrected instrument derivative supplies
+the legitimate tangent class. Physical response descent needs vertical
+stationarity and equality across preparation branches, not an injective
+tomographic readout.
+
+The same synthesis gives a concrete geometric consumer. At the literal
+physical L4 phase `(1,1,i,i)`, the full 24+10 Hermitian geometric Hessian has
+six independent source compatibility equations. All six link/metric rows are
+retained; reducing to five metric-only equations is valid only with proven
+zero link forcing. Actual joint image sources show that deleting the link
+reaction can falsely reject a compatible source. This is one finite reference,
+not a new all-phase rank census or a statement about an unknown complete
+native Hessian. The native coupling may change that Hessian and must be derived.
+
+This consumes the current source-interface and exact geometric owners without
+changing their actions, norms or terminals. The remaining owner input is one
+admitted common preparation defining its actual operators and field jets;
+its full covector can now be evaluated and tested on the joint equations.
+Refinement-uniform joint inversion, the native source/Ward, actual curved
+metric/matter solutions and the original fixed-source/raw-owner terminal
+remain open. Reproduce the single focused calculation with
+`python 02_REGISTRY/research/certificates/a4d_native_record_source_pullback_check.py`.
