@@ -209,6 +209,19 @@ current-rest frame lift as a way to compose this active sector with the
 unchanged executor; it does not exclude another native coframe/link map or
 larger executor domain.
 
+The obstruction is independent of the chosen rest boost or a following
+spatial rotation. Let \(L\) be any Lorentz change of orthonormal frame that
+puts \(J_s=e_0+r_s e_1\) at rest, with \(r_s\ne0\). If the transformed
+native first grade still obeyed the executor guard, then \(Le_0=d e_0\).
+Lorentz normalization gives \(d^2=1\), and orthogonality forces the time
+component of \(Le_1\) to vanish. Since \(Le_1\) is a unit spacelike vector,
+its spatial part has squared Euclidean norm one. Thus the spatial part of
+\(LJ_s=d e_0+r_sLe_1\) has squared norm \(r_s^2>0\), contradicting rest
+alignment. So every metric-preserving Lorentz frame that aligns this current
+necessarily violates the engine's first-grade support guard. This statement
+concerns the natural Lorentz/exterior lift and does not classify general
+GL(4) metric-changing preparations.
+
 The next load-bearing question is whether an already-owned metric/link
 transition can make this nonzero heat readout and the executor's actual state
 transition part of one admitted action. The fixed-metric direct match is now

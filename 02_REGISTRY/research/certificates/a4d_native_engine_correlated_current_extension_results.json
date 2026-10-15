@@ -224,7 +224,7 @@
     "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
   },
   "physical_admission_or_current_derived_executor_axis_proved": false,
-  "research_note_sha256": "d3c202040a8c830c1315ccec01287deb3c7efedb84fb850c1634b6683e1b5c8f",
+  "research_note_sha256": "cbe38673e89a02c921f0785b44dba9bd9e6e8046ab02716add9842f472c4841c",
   "same_current_observer_and_executor_output_on_witness": false,
   "scope": "ALTERNATIVE_EXACT_ENGINE_INVARIANT_SECTOR_WITH_EXISTING_FULL_CAR_CURRENT_READOUT",
   "status": "PASS"

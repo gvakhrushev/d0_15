@@ -2268,7 +2268,9 @@ The direct current-rest coframe route is also tested with the owned exterior
 frame lift. It aligns the current to the time axis, but introduces the
 forbidden executor coordinate `m2=2*s^2*(2*p-1)/sqrt(1+4*s^2)`, nonzero for
 every active amplitude. The zero-amplitude control stays in the guard but has
-no spatial current. This rules out that direct frame-lift rescue only.
+no spatial current. Lorentz orthogonality shows the same conflict for every
+rest-frame Lorentz transform, including one followed by any spatial rotation;
+general GL(4) metric-changing preparations remain outside this result.
 
 The exact supplement records 1502 controls, 128 actual executor transitions,
 the all-four-component symbolic CAR readout on both lower bands, the
