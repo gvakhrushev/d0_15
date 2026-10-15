@@ -1,0 +1,11 @@
+D0.Research.PositiveHilbertTranslationGeneratorNoGo.lorentz_invariant_positive_readout_eq_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (A B C D : E)
+  (hboost :
+    ∀ (t x y z : ℝ),
+      ‖linearReadout A B C D ((5 * t + 4 * x) / 3) ((4 * t + 5 * x) / 3) y z‖ = ‖linearReadout A B C D t x y z‖)
+  (hquarterZ : ∀ (t x y z : ℝ), ‖linearReadout A B C D t (-y) x z‖ = ‖linearReadout A B C D t x y z‖)
+  (hquarterY : ∀ (t x y z : ℝ), ‖linearReadout A B C D t z y (-x)‖ = ‖linearReadout A B C D t x y z‖) :
+  A = 0 ∧ B = 0 ∧ C = 0 ∧ D = 0
+'D0.Research.PositiveHilbertTranslationGeneratorNoGo.lorentz_invariant_positive_readout_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

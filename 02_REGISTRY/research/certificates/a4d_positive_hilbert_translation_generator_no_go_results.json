@@ -1,0 +1,130 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_positive_hilbert_translation_generator_no_go.lean",
+  "capsule_sha256": "87f1acbdf61f281a69e87966527f78fbf4b7b8c49ebe18551e71f9ad4ec82a08",
+  "checker_sha256": "87c7ad49bca38fb6240b067921bbd5d2b944bad62e7a35f7a43712fb616663f9",
+  "checks": [
+    "LEAN_RUNTIME_COMPILE_PASS",
+    "ACTUAL_THEOREM_PRINTED",
+    "STANDARD_LOGICAL_AXIOMS_ONLY",
+    "NO_PLACEHOLDERS_IN_CAPSULE",
+    "FINITE_OWNER_CERTIFICATE_REPLAY",
+    "OWNED_BOOST_THEOREM_RECEIPT",
+    "boost_exact_lorentz",
+    "boost_proper",
+    "inverse_boost_exact_lorentz",
+    "inverse_boost_proper",
+    "quarter_turn_z_exact_lorentz",
+    "quarter_turn_z_proper",
+    "quarter_turn_y_exact_lorentz",
+    "quarter_turn_y_proper",
+    "BOOST_INVERSE_EXACT",
+    "QUARTER_TURNS_MOVE_SPATIAL_BASIS",
+    "BOOST_SQUARED_NORM_EQUATIONS_EXACT",
+    "OPPOSITE_BOOST_CROSS_TERMS_CANCEL",
+    "POSITIVE_SQUARED_NORM_HOSTILE_CONTROLS",
+    "WITHOUT_BOOST_SPATIAL_READOUT_SURVIVES",
+    "POSITIVE_TIME_READOUT_FAILS_BOOST",
+    "INDEFINITE_MINKOWSKI_TARGET_ADMITS_NONZERO_READOUT",
+    "HS_CONSEQUENCE_IS_EXPLICITLY_CONDITIONAL",
+    "PHYSICAL_IDENTIFICATION_STAYS_OPEN"
+  ],
+  "compiled_declarations": [
+    "D0.Research.PositiveHilbertTranslationGeneratorNoGo.lorentz_invariant_positive_readout_eq_zero"
+  ],
+  "compiler_exit_code": 0,
+  "control_count": 24,
+  "exact_matrices": {
+    "boost": "[[5/3,4/3,0,0],[4/3,5/3,0,0],[0,0,1,0],[0,0,0,1]]",
+    "inverse": "[[5/3,-4/3,0,0],[-4/3,5/3,0,0],[0,0,1,0],[0,0,0,1]]",
+    "quarter_turn_y": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ]
+    ],
+    "quarter_turn_z": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "finite_owner": {
+    "controls": 20,
+    "status": "PASS_FINITE_LORENTZ_COVARIANT_POSITIVE_QUADRATIC"
+  },
+  "output": "02_REGISTRY/research/certificates/a4d_positive_hilbert_translation_generator_no_go_output.txt",
+  "output_sha256": "ab6096cf692dc6a7e3f80fe441283b5ac16a552b6742686a565faad8319da5b6",
+  "owner_inputs_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_AFFINE_DIRECT_LIMIT_LEVELWISE_NO_GO.md": "5acf1097dbe90af2f2cedb880b409e1ff1042e8ddb8caa4efbd8a2cea9cf8dde",
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_AFFINE_UNITARY_NO_GO.md": "0f5c25e78b626402433977b28e217fc011a391c7b8cf88d7a42e8d250347c311",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic.lean": "4eca073ff8b0794cb4f977155bb67913e0f11ae8e51e5e4c24999be9a4986cbe",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_check.py": "76899f6015e931db80985d84322f463a0f281b549a71ce89c7c40bb48532b341",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_output.txt": "dc13d826d73fa21c21f5e0acb2c3da1d73be32d5f9c9c3782143b5b10f5cb6cd",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_results.json": "453780bd927b6c0c963792a318216cc09e74090a380dcc8683828d50dfde9d6d"
+  },
+  "owner_replay_output": "PASS_FINITE_LORENTZ_COVARIANT_POSITIVE_QUADRATIC\nlean_theorem=D0.Research.FiniteLorentzCovariantPositiveQuadratic.invariant_nonnegative_quadratic_eq_zero\nlean_axioms=Classical.choice,Quot.sound,propext\nexact_controls=20\nhalf_turn_x_preserves_minkowski_form_exactly=PASS\nhalf_turn_x_is_proper_time_oriented=PASS\nhalf_turn_y_preserves_minkowski_form_exactly=PASS\nhalf_turn_y_is_proper_time_oriented=PASS\nhalf_turn_z_preserves_minkowski_form_exactly=PASS\nhalf_turn_z_is_proper_time_oriented=PASS\nquarter_turn_z_preserves_minkowski_form_exactly=PASS\nquarter_turn_z_is_proper_time_oriented=PASS\nquarter_turn_y_preserves_minkowski_form_exactly=PASS\nquarter_turn_y_is_proper_time_oriented=PASS\nrational_boost_preserves_minkowski_form_exactly=PASS\nrational_boost_is_proper_time_oriented=PASS\npositive_euclidean_form_fails_boost=PASS\nminkowski_form_fails_nonnegativity=PASS\ndropping_boost_admits_nonzero_positive_form=PASS\npure_translation_composition_adds_the_recorded_shift=PASS\nowned_affine_shift_composition_is_pinned=PASS\ncurrent_CAR_exterior_link_ignores_pure_shift=PASS\nD0_rational_AB_boost_owner_is_resolved=PASS\ncoordinate_boost_is_exactly_the_owned_role_boost=PASS",
+  "proof": "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HILBERT_TRANSLATION_GENERATOR_NO_GO.md",
+  "proof_sha256": "c9c7132b95fd0e256749801520fa0c4394f7498f6533da96e3d9f9fc55c484e9",
+  "scope": {
+    "global_closure": false,
+    "hilbert_schmidt_generator_consequence_under_unitary_conjugation": true,
+    "native_translation_generator_hilbert_schmidt": false,
+    "native_two_tick_price_identified_with_hilbert_schmidt_norm": false,
+    "nontrivial_infinite_dimensional_affine_action_excluded": false,
+    "physical_heat_block_or_source_derived": false,
+    "positive_gr": false,
+    "positive_hilbert_lorentz_invariant_linear_readout_is_zero": true
+  },
+  "status": "PASS",
+  "toolchain_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  }
+}

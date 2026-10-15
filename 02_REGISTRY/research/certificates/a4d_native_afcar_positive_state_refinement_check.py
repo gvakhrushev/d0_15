@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# D0_CI_TIMEOUT_SECONDS=600
 """Exact positive-state extension of the recorded level-nine AF/CAR source."""
 from __future__ import annotations
 
