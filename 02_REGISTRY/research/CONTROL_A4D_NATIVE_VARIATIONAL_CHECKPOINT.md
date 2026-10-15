@@ -2278,12 +2278,15 @@ current-defined heat has (dH/ds>0) at (s=1) for all (Lge2). Thus this
 heat does not descend to a function (F(q,D)) on the real amplitude fiber
 unless an independently owned preparation constrains matter. The stored
 engine witnesses (s=1,2) are both accepted and have post-step (K=5,17).
+The exact joint-quotient and constrained-price owners retain matter directions
+alongside the metric/link tangent and supply no such preparation restriction.
 This is scoped to the current heat and this state family.
 
 The exact supplement records 1511 controls, 128 actual executor transitions,
 the all-four-component symbolic CAR readout on both lower bands, the
 current-null, out-of-domain, off-axis metric and current-rest-frame hostile
-controls, 19 owner source SHA/blob pairs, and the Lean source/output hashes.
+controls, 31 owner source SHA/blob pairs, including the full joint-quotient
+and constrained-price proof packets, and the Lean source/output hashes.
 Seven generic algebra propositions compile with standard axioms only and no
 `sorryAx`. The result does not select
 the nonzero starting correlation physically, put the current-derived operator

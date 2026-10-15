@@ -252,6 +252,15 @@ for the current heat on this open family with the stated carrier constraint;
 it does not rule out another coupled heat block or a separately proved
 matter-preparation law.
 
+This vertical variation is present in the currently owned carrier, rather
+than added for the counterexample: the joint-field quotient and constrained-
+price source retain all affine/matter directions alongside the metric/link
+constraint. They do not give a preparation equation that relates these
+matter coordinates to \((q,D)\). Their exact source capsules and ledgers are
+pinned by the checker. The nonzero heat jet therefore identifies the precise
+missing arrow: a preparation owner must restrict the matter fiber before
+this heat can descend to a metric/link function.
+
 The next load-bearing question is whether an already-owned metric/link
 transition can make this nonzero heat readout and the executor's actual state
 transition part of one admitted action. The fixed-metric direct match is now
@@ -264,7 +273,8 @@ The Lean capsule
 [`a4d_native_engine_correlated_current_extension.lean`](certificates/a4d_native_engine_correlated_current_extension.lean)
 proves generic gate/minor and heat-sign arithmetic kernels with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 1511 exact controls, the conditional metric-update replay, the
+blobs, 1511 exact controls and 31 owner-source pins, the conditional
+metric-update replay, the
 current-rest-frame guard obstruction, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode
 polynomial, the current-step mismatch, and a 128-step regression in

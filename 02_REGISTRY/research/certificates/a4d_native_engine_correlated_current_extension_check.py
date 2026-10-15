@@ -42,6 +42,18 @@ OWNER_PATHS = [
     '03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean',
     '03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean',
     '03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean',
+    '02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md',
+    '02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean',
+    '02_REGISTRY/research/certificates/a4d_native_constrained_price_source_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_constrained_price_source_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_constrained_price_source_results.json',
+    '02_REGISTRY/research/certificates/a4d_native_constrained_price_source_certificate.json',
+    '02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md',
+    '02_REGISTRY/research/certificates/a4d_native_joint_field_quotient.lean',
+    '02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_check.py',
+    '02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_output.txt',
+    '02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_results.json',
+    '02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_certificate.json',
 ]
 
 
