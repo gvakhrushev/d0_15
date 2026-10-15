@@ -4574,3 +4574,60 @@ preparation carrying the original chronology, the AF record and the full CAR
 current, followed by its actual joint tangent and all ten metric components.
 Until that join is built, the matched golden coefficients remain a finite
 representation bridge, not an Einstein source.
+
+## Test of the proposed two-tick stress projection (2026-10-15)
+
+The requested projection is now evaluated for the existing flat factor probe,
+with one fixed calibration and the complete packed metric convention. The
+positive Hodge covector is computed on all ten uniform metric directions; the
+actual joint solder lift then pulls it back to the Lorentz `q` directions. At
+`L=4`, `beta=log(2)`, and `Q=diag(4,1/4,1,1)`, put
+
+```text
+E0 = 16/257,   E1 = 256/(2^128+1),
+E2 = E3 = 64/(2^32+1).
+```
+
+In packed order `(00,01,02,03,11,12,13,22,23,33)`, the exact heat covector
+on the specified genuine `q`-lifts is
+
+```text
+( E0/4, 0, 0, 0, -4 E1, -E1 E2/32, -E1 E3/32,
+  -E2, -E2 E3/32, -E3 ).
+```
+
+The flat finite-probe Einstein covector is zero in these ten slots. Therefore,
+if the only available cancellation were the recorded-golden remainder
+`C_phi sigma`, its required pullback would be exactly minus this vector divided
+by the same positive `C_phi`; it is nonzero on seven diagonal/spatial-mixed slots
+and zero on the three time-space slots for this specified lift. The
+volume-preserving direction `V_q=diag(8,1/2,0,0)` contracts this requirement
+to `sigma[V_q]=-2(E0-E1)/C_phi`. The `E0,E1` labels here are zero-based axes.
+These are necessary target values, not a derived source law. The zero
+time-space slots belong to this solder/observer lift; they do not
+remove those three physical equations.
+
+The two already owned candidate mechanisms do not supply this target on the
+factor probe. For the complete fixed-golden operator class, frame/readout
+motion gives `sigma=0`. The actual normalized moving-record reference
+contributes `-4 E0 E3/(a p L^2)` (the one-based `E_1,E_4` in the
+factor-imbalance note), but the complete heat-plus-reference derivative still
+exceeds `1/10000` for every `L>=2`.
+Separately, for the actual two-successive full-CAR chronology, `J=J(c)` and
+`dJ=j(c) dc`. Its admitted scalar matter variation has `dc/dt=kappa>0`; when
+no other term acts on that scalar equation, feedback stationarity forces
+`j(c)=0` and hence `dJ=0` on the entire constrained `(q,D,b,m)` tangent.
+Thus the chronology's off-shell response cannot be re-labelled as on-shell
+gravitational stress.
+
+The smallest live problem is now sharper: identify an already owned
+non-feedback term in the *same* admitted preparation whose scalar matter
+derivative and full ten-slot pullback satisfy the required source comparison.
+The moving-preparation formula gives a candidate source only for its separately
+specified instrument; it has not been joined to the chronology price and the
+common `(q,D,b,m)` action. If that join is impossible in the fully described
+class, it will be a scoped obstruction for this action/preparation class,
+not a NO-GO for the whole D0 core. The exact ten-slot and chronology controls
+are `a4d_native_factor_imbalance_remainder_check.py` (1114 controls, 18
+mathematical mutations) and `a4d_native_chronological_stationary_descent_check.py`
+(98 controls, 10 negative controls); both passed on this source tree.

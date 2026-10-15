@@ -6,7 +6,7 @@
     "0",
     "0"
   ],
-  "checker_sha256": "3c71169f3cac75ed5cf2f96b4f1c5a09f82a1901ead82f74bb90b52af8ca41da",
+  "checker_sha256": "301493d1af5ed84dc666f001bfe1c5f2fcd6cab3fbc2ee0748776c3e5f4ae9d4",
   "complete_max_gain_phi_units": "10",
   "cost_minus_complete_gain_phi_units": "0",
   "defining_block_sizes": [
@@ -118,7 +118,7 @@
     "02_REGISTRY/research/certificates/a4d_native_afcar_blank_family_state_certificate.json": "f25423f161a62f9d08ecea8c605f66a35a4372e2c15f175d3ffe08198e3efbf8",
     "02_REGISTRY/research/certificates/a4d_native_afcar_current_commutant.py": "378a4d39d5e4cb525c653d869900e1926b6fcbea9243f619513af31978098dee",
     "02_REGISTRY/research/certificates/a4d_native_afcar_current_commutant_certificate.json": "d536f753cc632e7bd1207e495207f70e8988bdd18196bbc7c225e421c1baf2e8",
-    "02_REGISTRY/research/certificates/a4d_native_afcar_positive_state_refinement_certificate.json": "91c24b6b721388c181b75b2d7c2b3d245e80a59d0b6be57e425864254c912601",
+    "02_REGISTRY/research/certificates/a4d_native_afcar_positive_state_refinement_certificate.json": "181c82e6e2eb7ccfd37c21e7f4f5ee6cee8e27c880b68f229aba1fdcebce37e7",
     "02_REGISTRY/research/certificates/a4d_native_operational_gain_check.py": "41b6e5ecd88e16528cf2ac20e926e8b3affc09f0d365dfb285e0a5779f6ef256",
     "02_REGISTRY/research/sources/d0_operational_gain_2026-10-15/MANIFEST.json": "a9ec7817db52efb8ee59a95d46aa6a8ec6f0564f5e2db73ea5394a8098c8da6c",
     "02_REGISTRY/research/sources/d0_operational_gain_2026-10-15/RESULT.md": "428bdda31e27ea6e7bf18ac93528fa4bc21c28677026341af2e86a36ac67ff52",

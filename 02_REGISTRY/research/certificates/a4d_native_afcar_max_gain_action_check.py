@@ -49,7 +49,7 @@ SOURCE_PINS = {
     "02_REGISTRY/research/certificates/a4d_native_afcar_blank_family_state_certificate.json":
         "f25423f161a62f9d08ecea8c605f66a35a4372e2c15f175d3ffe08198e3efbf8",
     "02_REGISTRY/research/certificates/a4d_native_afcar_positive_state_refinement_certificate.json":
-        "91c24b6b721388c181b75b2d7c2b3d245e80a59d0b6be57e425864254c912601",
+        "181c82e6e2eb7ccfd37c21e7f4f5ee6cee8e27c880b68f229aba1fdcebce37e7",
 }
 
 
