@@ -6,7 +6,7 @@
     "0",
     "0"
   ],
-  "checker_sha256": "794213391bec9edc670cc9c1c26dcdee385fa24a6aa5e0bf4e8e6ba9d57a6b06",
+  "checker_sha256": "3c71169f3cac75ed5cf2f96b4f1c5a09f82a1901ead82f74bb90b52af8ca41da",
   "complete_max_gain_phi_units": "10",
   "cost_minus_complete_gain_phi_units": "0",
   "defining_block_sizes": [
@@ -113,7 +113,7 @@
     "02_REGISTRY/research/A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md": "36f77dea7cc868b74bb656c928b3897d5ef42bc45cfde6006070cbcfcf2b6bd9",
     "02_REGISTRY/research/A4D_NATIVE_AFCAR_POSITIVE_STATE_REFINEMENT.md": "1b50e1ca0cdc555ac26d0a3091cebdfefc68bd0ae2c284b9f037239bbc7fe7cc",
     "02_REGISTRY/research/A4D_NATIVE_AFCAR_WHOLE_BLANK_STATE_BOUNDARY.md": "f632ddfebbabfd3a9dcc254de57ab3aedcc7e04a00c5d0ebf799f5ab577e1751",
-    "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md": "d8f1ab42a88b2f88a4e7db370c5cc3abbcdf09b55ac7444a29d0a5ec53661f76",
+    "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md": "cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a",
     "02_REGISTRY/research/A4D_NATIVE_OPERATIONAL_GAIN_AND_MEMORY.md": "af0e92ebdfdadaee207070c2eef9aad889acc818c8b4ede5eb800d35b31e8d47",
     "02_REGISTRY/research/certificates/a4d_native_afcar_blank_family_state_certificate.json": "f25423f161a62f9d08ecea8c605f66a35a4372e2c15f175d3ffe08198e3efbf8",
     "02_REGISTRY/research/certificates/a4d_native_afcar_current_commutant.py": "378a4d39d5e4cb525c653d869900e1926b6fcbea9243f619513af31978098dee",

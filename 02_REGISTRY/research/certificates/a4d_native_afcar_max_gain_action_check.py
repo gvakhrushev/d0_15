@@ -35,7 +35,7 @@ SOURCE_PINS = {
     "02_REGISTRY/research/sources/d0_operational_gain_2026-10-15/hostile_receipt.json":
         "dba566cc3e3255defd9af8db586272c488ae14267045e2608d75167957ba8fb6",
     "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md":
-        "d8f1ab42a88b2f88a4e7db370c5cc3abbcdf09b55ac7444a29d0a5ec53661f76",
+        "cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a",
     "02_REGISTRY/research/A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md":
         "36f77dea7cc868b74bb656c928b3897d5ef42bc45cfde6006070cbcfcf2b6bd9",
     "02_REGISTRY/research/A4D_NATIVE_AFCAR_WHOLE_BLANK_STATE_BOUNDARY.md":
