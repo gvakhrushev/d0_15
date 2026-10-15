@@ -4700,3 +4700,34 @@ in the stated input norm, and a normalized event calculation consumes the
 previous source recursion on that fibre. These results sharpen the existing
 joint source/refinement obligation. They neither produce an admitted exact
 fixed-source family nor replace the original #216 comparator/raw terminal.
+
+## Actual AF archive occupation and its complete source (2026-10-15)
+
+The [archive-occupation synthesis](A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md)
+now substitutes the actual recorded A9 state into the native AF heat-transfer
+reference, retaining its full 10,946-dimensional GNS trace. The six-step
+inclusion A3 to A9 has rank 34; it is distinct from the left Jones corner
+of rank 610. The exact archive occupation is
+`q_full=1-p^6(1-q_left)=0.98492609877889318...`.
+At the original fixed reference `beta=log2, nu=1`, the complete gap-source
+is `q_full-2728/2745 < -1/160`, rather than a source inferred from visible
+trace weights or a substituted Gibbs preparation.
+
+The actual v7 reduced source is only `-4/81435`; its archive remainder supplies
+`-0.0088317039677...` and restores the complete value exactly. Along the
+explicit full-vector lift by the already owned Jones isometries, the same
+occupation persists at every level N>=9, and the fixed-gap source stays below
+`-1/160`, tending to a value below `-1/80`. This is not uniqueness of the
+full GNS lift from its AF marginal. It shows which real source term the
+earlier trace-depth estimate does not control on this actual preparation.
+
+For this reference family the complete first variation factors through
+the actual occupation and its first jet:
+`dS=(q-p_thermal)dnu+nu*dq`, with both state and inclusion motion retained.
+If the gap is an admitted independent variable, its positive scalar stationary
+value is explicit; the remaining envelope source is still `nu_*dq`.
+No physical gap law or native Cost-Info identity is installed. This consumes
+the recorded preparation and archive/source owners and identifies precisely
+which additional source readout their join needs. The physical field-to-price
+map, other coupled terms, full stationarity and the refinement-uniform original
+terminal remain open.
