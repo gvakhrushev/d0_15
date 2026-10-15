@@ -31,7 +31,7 @@
     "occupation_entropy": "O(x*(1+abs(log(x))))",
     "x_along_smooth_vacuum_tangent": "O(t^2)"
   },
-  "checker_sha256": "0679ad1d537d2a889c05835fc11944afb29a32b1606eba93509be9afac46c89f",
+  "checker_sha256": "e6ed4bf3dc5d1e59e672f6bda25c785dcda00b55ad956a417550621979806e72",
   "checks": [
     "PIN:03_FORMALIZATION/D0/Geometry/A4DNilpotentAffineMatterLift.lean",
     "PIN:03_FORMALIZATION/D0/Geometry/A4DTransportedReferenceMismatch.lean",
@@ -116,7 +116,7 @@
     "02_REGISTRY/research/A4D_NATIVE_FULL_RECORD_TAPE_HEAT.md": "a430fe428803dcbc7dc51b1cd29fcecf735485669972006d6968e79c8787aeb1",
     "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md": "2a5dfbbafc9c1c6fe20e31d6a99a949d25abd4f1a5dbe40bb5e08dd392f8d5b4",
     "02_REGISTRY/research/MEMO_A4D_AFFINE_SENSITIVE_SITE_MATTER_LINK.md": "39bc181ff1726316845101cc07cdc2e6ca9839e144926f63f7ff6d28e4cca21b",
-    "02_REGISTRY/research/certificates/a4d_native_factor_imbalance_remainder_certificate.json": "8ec14bcd2ee94cb55107e47a2f6fa92af8f80d14536cef6ec1794907cdd5b4ac",
+    "02_REGISTRY/research/certificates/a4d_native_factor_imbalance_remainder_certificate.json": "5c2e3691feccf4f9c3bf4d62931f14aa965bf08a344f9aa1272fcef490946107",
     "02_REGISTRY/research/certificates/a4d_native_factor_imbalance_remainder_check.py": "1fdb90d822d362a52200b42a4fb3e663efa59e3a2371f9da15cada1eed1363da",
     "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_certificate.json": "87de2c08a7767a1b9e9bd47105013f225cd44df43a03a5ac09d54ff9d193a8cb",
     "02_REGISTRY/research/sources/d0_full_record_tape_v10_2026-10-14/RESULT.md": "df090d17a6c0fbaaccac6af9ce55ce4ae969826550cd094200c1dcdf4ae57a0a",
