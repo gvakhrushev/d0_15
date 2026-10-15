@@ -4759,3 +4759,45 @@ other arguments; neither an old Lorentz frame change nor a fitted gap law
 provides them. The full native source, common stationarity and the original
 fixed-source/raw-owner terminal remain open. The existing focused archive
 entrypoint checks both new exact identities without replaying older suites.
+
+## First source through rank changes and a gap-free amplitude budget (2026-10-15)
+
+The [amplitude-source continuation](A4D_NATIVE_AMPLITUDE_SOURCE_REGULARITY.md)
+consumes the already owned compact AF entropy/cost recurrence; it does not
+claim that recurrence as new. The previous constant-rank restriction can now
+be removed for the first source when the actual Kraus amplitudes and a
+fixed-width purification are C1. A uniform-gradient regularization proves
+that `-Tr(FF*)log(FF*)` is C1 in F even at rank births. This does not hold for
+an arbitrary C1 density and does not supply a bounded entropy Hessian.
+
+Additional fixed-size W/Z recursions compute the exact norm eta of the
+normalized amplitude jet, retaining the raw mass derivative, both Kraus
+tangents, the moving preparation and the pending branch. The complete old
+operator-entropy Cost-Info source satisfies
+`|dA| <= [1+2 C_(2dR)/log(phi)] sqrt(eta)`, where
+`C_m <= sqrt((log m)^2+2log m+2)`. There is no inverse minimum-eigenvalue
+factor. Normalization cancels the common code cost N+1; the remaining sector
+mass derivative has sharp bound `|db|<=sqrt(eta)`.
+
+For the repeated complete instrument, the all-depth isometry argument gives
+`sqrt(eta_N)<=||d(L/||L||)||+(N+1)gamma`, with gamma the actual stacked
+Kraus-jet operator norm. These are analytic bounds, not extrapolated samples.
+The narrow consumer independently checks full-word W/Z and normalization on
+small noncommuting cuts, including a genuine rank birth. A physical uniform
+bound still needs the owned field-to-amplitude differential and its scale
+control. No information contract, common physical action, full GNS heat
+reduction, refined stationary family or original raw-owner terminal is added.
+
+There is now also a direct actual-state consumer, independent of choosing
+the unknown field jet. For the recorded defining-AF state at A9, both declared
+spectral action preparation covectors vanish on every C1 amplitude germ,
+including rank births. The owned Jones state extension gives
+`h_N=mu_N^-1 sigma_N=p^-10 P_N` on each finite N>=9. Hence the old relative-
+entropy action has zero preparation source on ALL fine-level amplitude
+tangents through these actual extended states. For the maximal-gain net
+action the complete covector at those points is instead just `db_N`, the
+fine central-mass jet. It vanishes along transported seed germs, but a real
+A10 fine-mass tangent has derivative one. The two contracts therefore remain
+distinct. Their actual tower values and support spectra are explicit; no
+infinite-level finite-entropy action, physical Info selection or vanishing of
+other joint-action terms is inferred.
