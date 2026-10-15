@@ -2257,10 +2257,17 @@ is exactly \(-4as^3\). Thus these two transitions cannot be identified on a
 positive-current member of this family; the result does not exclude a
 different family or an already-owned metric-changing operation.
 
-The exact supplement records 845 controls, 128 actual executor transitions,
+Testing the existing conditional endpoint-isometry metric update on this
+orbit also gives a scoped result: the positive pairing stays `I4`, the
+Lorentz metric update returns `eta`, and the endpoint-isometry equation holds
+for all 128 actual executor transitions. Thus this particular owned update
+does not remove the fixed-metric mismatch. Its physical admission remains
+open, and other metric-changing owners are not excluded.
+
+The exact supplement records 1494 controls, 128 actual executor transitions,
 the all-four-component symbolic CAR readout on both lower bands, the
-current-null and out-of-domain hostile controls, 15 owner source SHA/blob
-pairs, and the Lean source/output hashes. Seven generic algebra propositions
+current-null, out-of-domain and off-axis metric hostile controls, 16 owner
+source SHA/blob pairs, and the Lean source/output hashes. Seven generic algebra propositions
 compile with standard axioms only and no `sorryAx`. The result does not select
 the nonzero starting correlation physically, put the current-derived operator
 into the executor, or transfer the heat derivative into one native action.

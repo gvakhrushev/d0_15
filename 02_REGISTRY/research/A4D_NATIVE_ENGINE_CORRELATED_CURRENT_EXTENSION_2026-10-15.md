@@ -157,6 +157,22 @@ state family, an already-owned metric-changing operation, or a larger
 admitted class. Physical admission of this initial sector and transfer of
 its heat, price, metric variation or source/Ward identity remain open.
 
+The existing conditional endpoint-isometry update in
+[`A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md`](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md)
+does not repair this mismatch on the present engine orbit. Its input first
+grade alternates between \((2p-1)e_0\) and \(a(4p-3)e_0\), both nonzero.
+Consequently its owned positive pairing
+\(Q=-q+2vv^T/(v^Tq^{-1}v)\) is exactly \(I_4\), and the solved output update
+\(q_+=-Q+2ww^T/(w^TQ^{-1}w)\) is also exactly \(\eta\), since the engine
+output first grade remains a nonzero multiple of \(e_0\). The actual engine
+output induces the same positive pairing \(Q_+=I_4\). The actual engine gate
+is orthogonal for the full exterior pairing \(C_*(I_4)\), so the conditional
+endpoint-isometry hypothesis is satisfied at each of 128 replayed ticks.
+Feeding this already-owned updater to this orbit therefore leaves the
+Lorentz metric fixed and the fixed-\(q\) operator mismatch intact. This closes
+only that named conditional update as a rescue; it does not establish its
+physical admission or exclude other metric-changing owners.
+
 The next load-bearing question is whether an already-owned metric/link
 transition can make this nonzero heat readout and the executor's actual state
 transition part of one admitted action. The fixed-metric direct match is now
@@ -169,6 +185,7 @@ The Lean capsule
 [`a4d_native_engine_correlated_current_extension.lean`](certificates/a4d_native_engine_correlated_current_extension.lean)
 proves generic gate/minor and heat-sign arithmetic kernels with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 845 exact controls, hostile null-sector/domain controls, the exact
+blobs, exact engine/current/metric controls, the conditional metric-update
+replay with an off-axis hostile metric control, null-sector/domain controls, the exact
 L=4 mode polynomial, the current-step mismatch, and a 128-step regression in
 [`a4d_native_engine_correlated_current_extension_results.json`](certificates/a4d_native_engine_correlated_current_extension_results.json).

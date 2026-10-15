@@ -35,6 +35,7 @@ OWNER_PATHS = [
     '02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_output.txt',
     '02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_results.json',
     '02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md',
+    '02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md',
     '02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py',
     '02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py',
     '02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py',
@@ -162,6 +163,81 @@ def symbolic_transition_mismatch(checks):
     return sp.factor(residual)
 
 
+def endpoint_metric_update_checks(checks):
+    """Replay the existing conditional endpoint-isometry metric update."""
+    eta = sp.diag(1, -1, -1, -1)
+    eye4 = sp.eye(4)
+    t, u = sp.symbols('t u', nonzero=True, real=True)
+    e0 = sp.Matrix([1, 0, 0, 0])
+    v = t * e0
+    Q = C.mat(-eta + 2 * v * v.T / (v.T * eta.inv() * v)[0])
+    check(all(C.red(x) == 0 for x in Q - eye4),
+          'collinear_input_pairing_is_euclidean_identity', checks)
+    off_axis_v = sp.Matrix([1, sp.Rational(1, 2), 0, 0])
+    off_axis_k = (off_axis_v.T * eta.inv() * off_axis_v)[0]
+    off_axis_Q = C.mat(-eta + 2 * off_axis_v * off_axis_v.T / off_axis_k)
+    check(any(C.red(x) != 0 for x in off_axis_Q - eye4),
+          'hostile_off_axis_state_does_not_collapse_to_identity_pairing', checks)
+    w = u * e0
+    qplus = C.mat(-Q + 2 * w * w.T / (w.T * Q.inv() * w)[0])
+    check(all(C.red(x) == 0 for x in qplus - eta),
+          'collinear_owned_metric_update_is_eta', checks)
+    Q_at_plus = C.mat(-qplus + 2 * w * w.T /
+                      (w.T * qplus.inv() * w)[0])
+    check(all(C.red(x) == 0 for x in Q_at_plus - Q),
+          'collinear_endpoint_pairing_is_retained', checks)
+
+    W = P.C.ext(eye4)
+    gate_iso = {}
+    for sign in (-1, 1):
+        U = engine_gate_matrix(sign)
+        preserved = all(C.red(x) == 0 for x in U.T * W * U - W)
+        check(preserved, f'actual_engine_gate_preserves_endpoint_pairing_{sign}', checks)
+        gate_iso[sign] = preserved
+
+    state = load_integer_state(1)
+    beta_A = C.red(2 * p - 1)
+    beta_B = C.red(a * (4 * p - 3))
+    check(beta_A != 0 and beta_B != 0,
+          'both_alternating_first_grade_coefficients_nonzero', checks)
+    for tick in range(129):
+        m = exact_vector(state)
+        actual_v = sp.Matrix([m[1 << i] for i in range(4)])
+        expected_beta = beta_A if tick % 2 == 0 else beta_B
+        check(C.red(actual_v[0] - expected_beta) == 0 and
+              all(C.red(actual_v[i]) == 0 for i in range(1, 4)),
+              'actual_orbit_first_grade_is_alternating_collinear', checks)
+        check(C.red(actual_v[0]) != 0,
+              'endpoint_update_input_first_grade_nonzero', checks)
+
+        if tick < 128:
+            next_state = E.step(state)
+            mplus = exact_vector(next_state)
+            actual_w = sp.Matrix([mplus[1 << i] for i in range(4)])
+            next_beta = beta_B if tick % 2 == 0 else beta_A
+            check(C.red(actual_w[0] - next_beta) == 0,
+                  'actual_engine_output_first_grade_alternates', checks)
+            check(C.red(actual_w[0]) != 0 and
+                  all(C.red(actual_w[i]) == 0 for i in range(1, 4)),
+                  'endpoint_update_output_first_grade_collinear_nonzero', checks)
+
+            sign = state.matter[1].sign()
+            check(gate_iso[sign], 'owned_endpoint_isometry_hypothesis_holds', checks)
+            state = next_state
+
+    return {
+        'owner': 'A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md',
+        'conditional_rule': 'q_plus=-Q+2*w*wT/(wT*Qinv*w), Q=-q+2*v*vT/(vT*qinv*v)',
+        'first_grade_sequence': ['(2*p-1)*e0', 'a*(4*p-3)*e0'],
+        'positive_pairing_Q_and_Q_plus': 'I4 by exact scalar-axis identities',
+        'Lorentz_metric_q_and_q_plus': 'eta at every tick',
+        'endpoint_isometry_hypothesis': 'verified for all 128 actual engine transitions',
+        'transition_mismatch_after_owned_update': 'remains -4*a*s^3 at the initial active state',
+        'physical_admission_of_conditional_update': False,
+        'ticks_checked': 128,
+    }
+
+
 def heat_L4_sign(checks):
     # z(k)=4(exp(2*pi*i*k/4)-1), stored as exact integer pairs.
     z = [(0, 0), (-4, 4), (-8, 0), (-4, -4)]
@@ -239,6 +315,7 @@ def build_result():
     checks = []
     symbolic_readout_checks(checks)
     symbolic_residual = symbolic_transition_mismatch(checks)
+    metric_update_data = endpoint_metric_update_checks(checks)
     heat_data = heat_L4_sign(checks)
 
     lean_output = LEAN_OUTPUT.read_text()
@@ -346,6 +423,7 @@ def build_result():
         'same_current_observer_and_executor_output_on_witness': False,
         'current_observer_minus_executor_output_mask13': str(symbolic_residual),
         'fixed_q_direct_common_step_for_nonzero_amplitude': 'NO_GO_WITHIN_THIS_FAMILY',
+        'owned_endpoint_metric_update': metric_update_data,
         'initial_state': {
             'nonzero_masks': [0, 1, 13, 14],
             'm0': '-2*a*p', 'm1': '2*p-1', 'm13': '1', 'm14': '1',
@@ -379,6 +457,7 @@ def build_result():
             'one nonzero high pair alone remains current-null',
             'state with forbidden m3 coordinate is rejected by actual step guard',
             'current-derived record operator differs from engine output at mask 13 on the exact witness',
+            'off-axis timelike first grade changes the conditional positive pairing',
         ],
         'owner_sha256': owner_hashes,
         'owner_git_blob': owner_blobs,
