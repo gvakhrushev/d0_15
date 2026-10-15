@@ -4,4 +4,7 @@
 'D0.Research.FiniteLorentzCovariantPositiveQuadratic.owned_role_boost_is_lorentz' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'D0.Research.FiniteLorentzCovariantPositiveQuadratic.rational_boost_matches_owned_role_boost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 D0.Geometry.rationalABBoost_lorentz : Geometry.IsRoleLorentz Geometry.rationalABBoost

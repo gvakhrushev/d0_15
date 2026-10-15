@@ -69,9 +69,12 @@ Q(t,x,y,z) = c (t² - x² - y² - z²).
 ```
 
 The boost is also the already-owned `rationalABBoost_lorentz` in
-`A4DObserverPositiveExterior.lean`; its source is pinned by the exact
-certificate. Nonnegativity on the time basis vector gives `c ≥ 0`; nonnegativity on a
-spatial basis vector gives `-c ≥ 0`. Hence `c=0` and `Q=0`. The sum-of-squares
+`A4DObserverPositiveExterior.lean`. A separate Lean theorem proves that its
+action in the declared `(t,x,y,z)=(A,B,C,D)` coordinates is exactly the
+coordinate boost used in the coefficient theorem; its source is pinned by
+the exact certificate. Nonnegativity on the time basis vector gives `c ≥ 0`;
+nonnegativity on a spatial basis vector gives `-c ≥ 0`. Hence `c=0` and
+`Q=0`. The sum-of-squares
 identity then gives `P(v)=0` for every `v`. Exponentiation of the translation
 generators yields `T(b)=I` for every shift. The D0 real orthogonal CAR carrier
 is included by complexification. Thus exact subdivision, fixed
@@ -132,10 +135,19 @@ The analytic implication from a smooth unitary affine representation to its
 Hermitian generators is the ordinary finite-dimensional matrix Lie-group
 calculation. The coefficient theorem is checked in Lean without user axioms;
 the exact checker separately verifies all listed rational Lorentz matrices
-and hostile controls.
+and hostile controls. It also verifies properness and time orientation, checks
+the exact owned-role boost coordinate bridge, and replays the hash-pinned Lean
+transcript portably. The standalone compiler replay is available separately.
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_check.py
+```
+
+To compile the capsule again with the local Lean toolchain and compare the
+compiler transcript byte-for-byte, run:
+
+```sh
+python3 02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_check.py --runtime-check
 ```
 
 The Lean capsule, compiler transcript, exact-control output, and pinned source

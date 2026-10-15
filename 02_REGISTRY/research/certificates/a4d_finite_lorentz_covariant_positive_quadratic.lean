@@ -46,6 +46,12 @@ def quarterY (t x y z : ℝ) : ℝ × ℝ × ℝ × ℝ := (t, z, y, -x)
 noncomputable def rationalBoost (t x y z : ℝ) : ℝ × ℝ × ℝ × ℝ :=
   ((5*t+4*x)/3, (4*t+5*x)/3, y, z)
 
+/-- Identify the four coefficient coordinates with the owned A/B/C/D roles. -/
+def roleCoordinates (t x y z : ℝ) : D0.Geometry.RoleVector := fun r =>
+  if r = D0.A then t else
+  if r = D0.B then x else
+  if r = D0.C then y else z
+
 /-- Any nonnegative quadratic form invariant under spatial rotations and one
 nontrivial Lorentz boost is zero.  The finite transformations listed here
 generate exactly the coefficient constraints needed for the proof. -/
@@ -125,8 +131,22 @@ theorem owned_role_boost_is_lorentz :
     D0.Geometry.IsRoleLorentz D0.Geometry.rationalABBoost :=
   D0.Geometry.rationalABBoost_lorentz
 
+/-- The rational matrix in the invariant-form proof is exactly the owned
+A/B boost, in the declared (time,x,y,z) role coordinates. -/
+theorem rational_boost_matches_owned_role_boost (t x y z : ℝ) :
+    D0.Geometry.rationalABBoostObserver (roleCoordinates t x y z) =
+      roleCoordinates (rationalBoost t x y z).1 (rationalBoost t x y z).2.1
+        (rationalBoost t x y z).2.2.1 (rationalBoost t x y z).2.2.2 := by
+  funext r
+  fin_cases r <;>
+    norm_num [D0.Geometry.rationalABBoostObserver,
+      D0.Geometry.rationalABBoost, roleCoordinates, rationalBoost,
+      D0.A, D0.B, D0.C, D0.D, Fintype.sum_prod_type] <;>
+    ring
+
 #print axioms invariant_nonnegative_quadratic_eq_zero
 #print axioms owned_role_boost_is_lorentz
+#print axioms rational_boost_matches_owned_role_boost
 #check D0.Geometry.rationalABBoost_lorentz
 
 end D0.Research.FiniteLorentzCovariantPositiveQuadratic

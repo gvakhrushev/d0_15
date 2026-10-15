@@ -3,10 +3,13 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
+import re
 import subprocess
 from fractions import Fraction
+from itertools import permutations
 from pathlib import Path
 
 
@@ -33,6 +36,24 @@ def transpose(a):
     return [list(row) for row in zip(*a)]
 
 
+def determinant(a):
+    def sign(p):
+        inversions = sum(p[i] > p[j] for i in range(len(p)) for j in range(i + 1, len(p)))
+        return -1 if inversions % 2 else 1
+
+    return sum(
+        sign(p) * _product(a[i][p[i]] for i in range(len(p)))
+        for p in permutations(range(len(a)))
+    )
+
+
+def _product(values):
+    result = Fraction(1)
+    for value in values:
+        result *= value
+    return result
+
+
 def check_matrix_preserves_metric(m, eta):
     return matmul(matmul(transpose(m), eta), m) == eta
 
@@ -42,25 +63,60 @@ def sha(path: Path) -> str:
 
 
 def main() -> None:
-    lean_rel = str(LEAN.relative_to(ROOT))
-    proc = subprocess.run(
-        ["lake", "env", "lean", "../" + lean_rel],
-        cwd=ROOT / "03_FORMALIZATION",
-        text=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        check=False,
-    )
-    assert proc.returncode == 0, proc.stdout
-    lean_output = proc.stdout
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--runtime-check", action="store_true",
+                        help="compile the capsule with the local Lake toolchain")
+    parser.add_argument("--write", action="store_true",
+                        help="refresh the compiler transcript and immutable receipt")
+    args = parser.parse_args()
+    if args.write and not args.runtime_check:
+        raise SystemExit("--write requires --runtime-check")
+
+    if args.runtime_check:
+        lean_rel = str(LEAN.relative_to(ROOT))
+        proc = subprocess.run(
+            ["lake", "env", "lean", "../" + lean_rel],
+            cwd=ROOT / "03_FORMALIZATION",
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            check=False,
+        )
+        assert proc.returncode == 0, proc.stdout
+        lean_output = proc.stdout
+        if not args.write:
+            assert OUTPUT.is_file() and OUTPUT.read_text() == lean_output, \
+                "LEAN_OUTPUT_DIFFERS_FROM_IMMUTABLE_TRANSCRIPT"
+    else:
+        assert OUTPUT.is_file(), "MISSING_IMMUTABLE_LEAN_TRANSCRIPT"
+        lean_output = OUTPUT.read_text()
+
     theorem_name = (
         "D0.Research.FiniteLorentzCovariantPositiveQuadratic."
         "invariant_nonnegative_quadratic_eq_zero"
     )
-    assert theorem_name in lean_output
-    assert "D0.Research.FiniteLorentzCovariantPositiveQuadratic.owned_role_boost_is_lorentz" in lean_output
-    assert "depends on axioms: [propext," in lean_output
+    owner_theorem = (
+        "D0.Research.FiniteLorentzCovariantPositiveQuadratic."
+        "owned_role_boost_is_lorentz"
+    )
+    boost_bridge_theorem = (
+        "D0.Research.FiniteLorentzCovariantPositiveQuadratic."
+        "rational_boost_matches_owned_role_boost"
+    )
+    blocks = re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", lean_output, flags=re.S)
+    lean_axioms = {
+        name: sorted(value.strip() for value in raw.split(",") if value.strip())
+        for name, raw in blocks
+    }
+    expected_declarations = {theorem_name, owner_theorem, boost_bridge_theorem}
+    assert set(lean_axioms) == expected_declarations, lean_axioms
+    assert all(set(values) <= {"propext", "Classical.choice", "Quot.sound"}
+               for values in lean_axioms.values()), lean_axioms
     assert "sorryAx" not in lean_output
+    assert theorem_name in lean_output
+    assert owner_theorem in lean_output
+    assert boost_bridge_theorem in lean_output
+    assert "D0.Geometry.rationalABBoost_lorentz : Geometry.IsRoleLorentz Geometry.rationalABBoost" in lean_output
     affine_source = (ROOT / PRIMARY[0]).read_text()
     exterior_source = (ROOT / PRIMARY[1]).read_text()
     boost_source = (ROOT / PRIMARY[2]).read_text()
@@ -72,7 +128,8 @@ def main() -> None:
         "roleLorentzSign_A", "roleLorentzSign_B", "roleLorentzSign_C", "roleLorentzSign_D"
     ))
     assert "rationalABBoost_lorentz" in lean_output
-    OUTPUT.write_text(lean_output)
+    if args.write:
+        OUTPUT.write_text(lean_output)
 
     f = Fraction
     eta = [
@@ -97,6 +154,8 @@ def main() -> None:
         exact_matrix = [[f(v) for v in row] for row in matrix]
         controls[f"{name}_preserves_minkowski_form_exactly"] = \
             check_matrix_preserves_metric(exact_matrix, eta)
+        controls[f"{name}_is_proper_time_oriented"] = \
+            determinant(exact_matrix) == 1 and exact_matrix[0][0] > 0
     assert all(controls.values())
 
     # Hostile controls show why both hypotheses are load-bearing.
@@ -122,9 +181,11 @@ def main() -> None:
         "archiveAffineExteriorLink_shift_irrelevant" in exterior_source
     controls["D0_rational_AB_boost_owner_is_resolved"] = \
         "rationalABBoost_lorentz" in lean_output
+    controls["coordinate_boost_is_exactly_the_owned_role_boost"] = \
+        boost_bridge_theorem in lean_output
     assert all(controls.values())
 
-    source_paths = [LEAN, DOC, Path(__file__).resolve(), *(ROOT / p for p in PRIMARY)]
+    source_paths = [LEAN, DOC, Path(__file__).resolve(), OUTPUT, *(ROOT / p for p in PRIMARY)]
     receipt = {
         "status": "PASS_FINITE_LORENTZ_COVARIANT_POSITIVE_QUADRATIC",
         "scope": {
@@ -138,14 +199,20 @@ def main() -> None:
             "global_or_parent_terminal_status_changed": False,
         },
         "lean_theorem": theorem_name,
-        "lean_axioms": ["propext", "Classical.choice", "Quot.sound"],
+        "lean_axioms": sorted({axiom for values in lean_axioms.values() for axiom in values}),
+        "lean_declarations": {name: values for name, values in sorted(lean_axioms.items())},
         "exact_controls": controls,
         "control_count": len(controls),
         "source_sha256": {
             str(path.relative_to(ROOT)): sha(path) for path in source_paths
         },
     }
-    RESULTS.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
+    encoded = json.dumps(receipt, indent=2, sort_keys=True) + "\n"
+    if args.write:
+        RESULTS.write_text(encoded)
+    else:
+        assert RESULTS.is_file(), "MISSING_IMMUTABLE_RESULTS_RECEIPT"
+        assert json.loads(RESULTS.read_text()) == receipt, "IMMUTABLE_RESULTS_RECEIPT_MISMATCH"
     print("PASS_FINITE_LORENTZ_COVARIANT_POSITIVE_QUADRATIC")
     print(f"lean_theorem={theorem_name}")
     print(f"lean_axioms={','.join(receipt['lean_axioms'])}")
