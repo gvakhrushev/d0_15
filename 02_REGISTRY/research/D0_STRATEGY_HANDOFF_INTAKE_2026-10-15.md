@@ -1,49 +1,79 @@
-# D0 strategic handoff and bounded multi-agent plan
+# D0 strategy and source preservation — reconciled with #324
 
 15 October 2026. Repository: `gvakhrushev/d0_15`. Task: `CONTROL-PLANE`, PR #323.
 Base: `fa2b04b9c8aae5a0b8470322d6091712ce56567a`.
-Branch: `control/d0-strategy-handoff-2026-10-15`.
+Original proposal: `cd02a65de1c708eae113b03ca63392e1641c427c`.
 
-## User-authorized purpose
+## Single ownership
 
-Preserve the user's long-lived bottom-up, catalogue-free forcing strategy, scientific mechanisms and recommendations before moving to new chats. The user explicitly prioritized the strategic vision over a list of the next one or two tasks. This is structural integration and planning, not scientific closure or a new physical assumption.
+[#324](https://github.com/gvakhrushev/d0_15/pull/324) owns the only operational
+flow: README, AGENTS, current gravity route, work guide, live task dispatcher
+and CI execution. This #323 supplies strategy and preserved research inputs.
+It adds no entry point, execution overlay, role dispatcher, queue row or task
+brief. Neither PR merges or accepts the other automatically.
 
-## Durable entry and preserved content
+The original competing process proposals remain available in the
+[immutable original proposal](https://github.com/gvakhrushev/d0_15/tree/cd02a65de1c708eae113b03ca63392e1641c427c):
+`D0_START_HERE_RU.md`, `D0_GR_EXECUTION_PLAN.json`, the four proposed briefs,
+`tools/d0_handoff.py`, and the former README/AGENTS rewrite. They are historical
+proposals, not commands or registered work in the reconciled tree. No proposed
+execution has been launched. The restored main queue retains its original
+rows and WIP limits. The original source commit is an ancestor of this revision;
+no force overwrite is used.
 
-The root `D0_START_HERE_RU.md` is the new-chat entry. It routes through the full `D0_RESEARCH_STRATEGY_RU.md`, selected original source notes, eighteen ideas in `D0_IDEA_REGISTER.json`, one `D0_GR_CLOSURE_CONTRACT_RU.md`, then the execution overlay and actual task briefs.
+The original `README_CORPUS.md` and `AGENTS_PROTOCOL.md` were exact copies of
+main blobs `4a01f69d815ad234d6010142be3c304009916de0` and
+`024d2d0c2f01e25a32fd8c6f95488c73a1d849be`. Those duplicates are unnecessary;
+the originals and the initial proposal remain in Git history.
 
-The strategic content retains: verifiability/M1 and forced derivation; minimal closure and stable flat reference; pi0 as an operator-level lead rather than a pi substitution; golden code/gate and the four-level representation threshold; resonant matter and the distinction between current and stress; complete archive and moving preparation; Cost-Info and normalizer; observable equivalence rather than unnecessary action uniqueness; joint metric/connection resonance; exact curved sheets and genuine refinement; and constructive synthesis with bounded parallelism. Historical numerical sketches are preserved as leads, not promoted to proofs.
+## Preserved unique content
 
-The previous README and AGENTS text remain byte-identical Git blobs at root:
+| Material | Scope | Original Git blob |
+|---|---|---|
+| [User strategy](D0_RESEARCH_STRATEGY_RU.md) | Full bottom-up vision, constructive synthesis, minimal closure, pi0, golden record, resonant matter, archive and moving preparation | `9c9eb4a77a68a5a631e0c902da1d744a09be7e29` |
+| [18 scientific leads](D0_IDEA_REGISTER.json) | Origins, mechanisms, missing proof links and consumers; historical role tags do not dispatch agents | `27caee32a4a0fc01a83b17cdfdfe9e000f8a128c` |
+| [Original source notes](D0_HANDOFF_SOURCE_NOTES_RU.md) | Selected user quotations and separately labelled historical sketches | `86951250b8c561e0a5fc15a328f1cb51d57b93bc` |
+| [G0–G4 proof decomposition](D0_GR_CLOSURE_CONTRACT_RU.md) | Supporting scientific map for #324's two fronts, with common `Omega_h -> (A_h,R_h)` and no readout-completeness assumption | Original `b1963497af9e2c7d24b7e342e32f07637a4704e8`; reconciled text includes the explicit interface repair |
 
-- `README_CORPUS.md`: blob `4a01f69d815ad234d6010142be3c304009916de0`.
-- `AGENTS_PROTOCOL.md`: blob `024d2d0c2f01e25a32fd8c6f95488c73a1d849be`.
+The first three files and the entire source capsule remain byte-identical to
+the original proposal. The common proof decomposition is clarified rather than
+promoted to a second current plan. #324 connects I01–I09/I11/I16 to preparation
+and source, I14–I15 to joint equations/refinement, I10 to physical response
+equivalence, I12–I13 to downstream calibration, and I17–I18 to work rationale.
+Numerical sketches remain leads, never new physical premises.
 
-The new README is a short route to the corpus and current program. The new AGENTS requires the unchanged full old protocol in addition to the strategy-aware entry. Old scientific text and relative links are not discarded; the old generated queue block is explicitly historical.
+## Lossless source capsule
 
-## Registered tasks, not launched agents
+[sources/d0_strategy_handoff_2026-10-15/INPUT_MANIFEST.json](sources/d0_strategy_handoff_2026-10-15/INPUT_MANIFEST.json)
+records 21 UTF-8 files: 20 Ward/resonance inputs and the original strategy audit.
+All six payload parts, the manifest and restoration script retain their exact
+original blobs. This preserves the stated files, not the entire outer ZIP.
 
-The manifest retains all four original rows and unchanged WIP limits. It registers four PLANNED tasks: one CONTROL synthesis, two bounded WORKER tasks (evidence repair and exact foundation/geometry owner crosswalk), and one EXPENSIVE nonlinear refinement task. The latter is explicitly held for a common interface, reviewed Ward input and global WIP/overlap decision regarding #202/#310/#317. No existing task is retired, relabeled or assumed inactive.
-
-Each brief has repository, main base, branch, primary artifact, exact consumer, source pins, write fences, launch gates and lifecycle instructions. `tools/d0_handoff.py` is read-only: it prints strategy-aware role context and required live PR checks; it does not dispatch, create a branch or claim that a PLANNED row has no live execution. Existing lifecycle commands remain authoritative.
-
-The execution JSON is an operational overlay pointing at the actual scientific dependency owner on pinned #310, not a second claims registry. No scientific claim/assumption/release row is changed. Author, integrator and independent reviewer remain distinct responsibilities.
-
-## Byte-preserved research inputs
-
-`sources/d0_strategy_handoff_2026-10-15/` contains six ASCII parts of one lossless capsule and an exact SHA256 manifest. It restores **21 UTF-8 files**: all 20 original repository files of the delivered joint Ward/resonance packet plus the original strategy audit. The scientific code, proofs and original receipts remain unchanged. This is not a byte-copy of the entire outer delivery ZIP or its duplicated upstream/installer wrappers.
+- Packed SHA256: `a4db16bad334bc7a6a5b28f3400adaba8ef6a718b54ce11451fc9dcf151c4f1d`.
+- Decoded JSON SHA256: `6fd4d7a179ba693a7985d86fa7aa331e47b5c38a8ab95b0d2fc7050a754058cf`.
+- Original audit SHA256: `d258c771a2a3a0939e4203c3018bf651309e6b36bb4cdaa130cb5ab8b4ad61ff`.
 
 ```sh
 python 02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/restore.py --check
 python 02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/restore.py --extract /tmp/d0-handoff-inputs
 ```
 
-Extraction refuses differing existing files and path escapes. It never executes the research programs. For mathematical replay use the explicitly pinned existing full4D capsule at `9fbc75db0a94707dc3105cdfb3f322a14e62a979`; no missing source is silently replaced by chat prose. Preserving the Ward packet here does not install it into SOURCE #310 or expand the frozen #322 acceptance snapshot.
+Extraction refuses differing existing files and unsafe paths; it does not
+execute the scientific programs. Independent safe extraction verified every
+restored file hash and the audit's equality to the user-supplied source.
+Mathematical replay retains the declared upstream full4D capsule ref
+`9fbc75db0a94707dc3105cdfb3f322a14e62a979`; no missing source is replaced by prose.
+This preservation does not install the Ward packet into #310 or expand #322.
 
-## Validation performed and limits
+## Validation and acceptance boundary
 
-The local handoff script and eleven structural unittest cases passed in ordinary and optimized Python. Six uploaded capsule-part Git blob SHAs match the local exact bytes. The complete capsule checksum, JSON checksum and all 21 file checksums passed locally; extraction was checked without executing the research code. These are handoff/preservation tests, not new mathematical certification.
+The preservation workflow checks only the idea inventory and capsule integrity;
+it does not inspect role/WIP/brief proposals or run scientific certificates.
+Canonical structural/work/protocol/generated-view checks apply to the actual
+reconciled candidate. Current PR CI, not the original failed run, establishes
+its remote guard status.
 
-The tracked queue views were prepared to the existing renderer's unchanged format/counts. The real repository's canonical work/architecture/protocol checks and generated-view check must pass on the published candidate; the final PR report records remote outcomes rather than assuming them from the local staging fixture. The new read-only handoff workflow checks the structural contract and preservation independently of scientific replays. Existing guards are unchanged.
-
-No new Lean theorem or compilation is claimed. No independent re-audit of the entire theory, physical Info binding, uniform nonlinear inverse, GR closure or parent task terminal is certified by this governance intake. No agents have been launched and no branch has been force-updated. Publication and merge/acceptance remain separate.
+No Lean, physical action/source binding, refinement-uniform nonlinear inverse,
+GR closure, scientific acceptance or parent retirement is claimed by this
+content intake. The distinct #202/#310/#317 obligations and #322 review remain
+unchanged. Merge and scientific use remain separate decisions.
