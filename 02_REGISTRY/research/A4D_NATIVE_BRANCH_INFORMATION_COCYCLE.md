@@ -142,6 +142,16 @@ information on the complete classical record-outcome algebra. It does not
 promote full-operator entropy of the coherent record state to, or exclude it
 from, the physical `Info(v)` unless the native history-to-readout map says so.
 
+There is a further normalization condition before this branch formula is the
+full Book III source. If `w(ω)=φ^{-S(ω)}` is an unnormalized history weight and
+`q(ω)=w(ω)/N` is the Born-normalized probability on the same finite outcomes,
+then `Info(ω)=log_φ(q(ω)/μ(ω))+log_φ N`. Its joint derivative contains
+`D N/(N log φ)`. The exact finite theorem and the moving-normalizer control are
+in [the partition-corrected continuation](A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md).
+The older cocycle is complete for the physical source only if the common
+history/readout binding is proved and `N` is identically one along the admitted
+family, or an independently owned term supplies its full variation.
+
 No map to the complete `(q,D,b,m)` tangent, all ten `ρ₀` components, own
 source/Ward identity, exact curved joint roots, soundness/recovery, physical
 constraints, G0 closure, or positive GR follows yet. No action, selector,

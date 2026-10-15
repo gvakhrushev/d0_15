@@ -1,0 +1,43 @@
+D0.Research.NativePartitionCorrectedBranchInfo.partition_pos.{u_1} {ι : Type u_1} [Fintype ι] [Nonempty ι] (w : ι → ℝ)
+  (hw : ∀ (i : ι), 0 < w i) : 0 < partition ι w
+D0.Research.NativePartitionCorrectedBranchInfo.normalizedWeight_sum_one.{u_1} {ι : Type u_1} [Fintype ι] [Nonempty ι]
+  (w : ι → ℝ) (hw : ∀ (i : ι), 0 < w i) : ∑ i, normalizedWeight w i = 1
+D0.Research.NativePartitionCorrectedBranchInfo.bookInfo_normalizedWeight_identity.{u_1} {ι : Type u_1} [Fintype ι]
+  [Nonempty ι] (w : ι → ℝ) (hw : ∀ (j : ι), 0 < w j) (mu : ℝ) (hmu : 0 < mu) (i : ι) :
+  bookInfo mu (w i) = normalizedLikelihoodInfo mu (normalizedWeight w i) (partition ι w)
+D0.Research.NativePartitionCorrectedBranchInfo.bookInfo_partition_identity (mu q Z : ℝ) (hmu : 0 < mu) (hq : 0 < q)
+  (hZ : 0 < Z) : bookInfo mu (q * Z) = normalizedLikelihoodInfo mu q Z
+D0.Research.NativePartitionCorrectedBranchInfo.normalized_base_value (mu q : ℝ) :
+  normalizedLikelihoodInfo mu q 1 = log (q / mu) / log φ
+D0.Research.NativePartitionCorrectedBranchInfo.normalizedLikelihoodInfo_common_shift (mu q Z : ℝ) :
+  normalizedLikelihoodInfo mu q Z = unnormalizedLikelihoodInfo mu q + log Z / log φ
+D0.Research.NativePartitionCorrectedBranchInfo.balanced_contrast_kills_partition_correction.{u_1} {ι : Type u_1}
+  [Fintype ι] (c q : ι → ℝ) (mu Z : ℝ) (hbalanced : ∑ i, c i = 0) :
+  ∑ i, c i * (normalizedLikelihoodInfo mu (q i) Z - unnormalizedLikelihoodInfo mu (q i)) = 0
+D0.Research.NativePartitionCorrectedBranchInfo.normalizedLikelihoodInfo_hasDerivAt (mu : ℝ) (q Z : ℝ → ℝ) (dq dZ t : ℝ)
+  (hmu : 0 < mu) (hq : 0 < q t) (hZ : 0 < Z t) (hqd : HasDerivAt q dq t) (hZd : HasDerivAt Z dZ t) :
+  HasDerivAt (fun s => normalizedLikelihoodInfo mu (q s) (Z s)) ((dq / q t + dZ / Z t) / log φ) t
+'D0.Research.NativePartitionCorrectedBranchInfo.partition_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePartitionCorrectedBranchInfo.normalizedWeight_sum_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePartitionCorrectedBranchInfo.bookInfo_normalizedWeight_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePartitionCorrectedBranchInfo.bookInfo_partition_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePartitionCorrectedBranchInfo.normalized_base_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePartitionCorrectedBranchInfo.normalizedLikelihoodInfo_common_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePartitionCorrectedBranchInfo.balanced_contrast_kills_partition_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePartitionCorrectedBranchInfo.normalizedLikelihoodInfo_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
