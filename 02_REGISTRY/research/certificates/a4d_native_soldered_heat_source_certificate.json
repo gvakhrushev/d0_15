@@ -1,5 +1,5 @@
 {
-  "Lean_receipt_sha256": "1c99019091bd543fb43d1e8aafea3c83f656a1a45b5d7b54793a908d7914dc40",
+  "Lean_receipt_sha256": "f63a2497edd9a988257307435deadef26a93a51868e9706ad1b3903649c92505",
   "bootstrap_heat_identification": "OPEN",
   "checker_sha256": "d2d05b09242f3934bfb15e36990290f80e8374b038bbf2d7d2e654b8382f59f6",
   "controls": [
@@ -451,7 +451,7 @@
     "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md": "2a5dfbbafc9c1c6fe20e31d6a99a949d25abd4f1a5dbe40bb5e08dd392f8d5b4",
     "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
     "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean": "4096e0a3b132841a60907f71bb48b726399c789231b804b869708249f7087438",
-    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
     "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967",
     "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean": "7ab9550c7a25464131ec23a21e9eeac9f38eb651ee23c8d65296415aa593ab58",
     "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean": "d004761e6326aae235d1a3488e397750409bc4c03f90c489a6dd18d9971e3e81",

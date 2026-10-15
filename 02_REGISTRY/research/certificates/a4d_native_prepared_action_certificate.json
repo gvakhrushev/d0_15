@@ -393,7 +393,7 @@
   },
   "input_sha256": {
     "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_certificate.json": "75a59691122bbe2d2843892e1417acc8d3da7b14de77fb08c6ae9d474b74fbbd",
-    "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_certificate.json": "8807a418e67a4b2ac89495b7f80ab7e2924349067dea3f1aab5b8addf5b29f89",
+    "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_certificate.json": "41583874c4e084515b814bb3b0150fc8738db809b78f236835d38d4b0dbe04e0",
     "02_REGISTRY/research/certificates/a4d_native_metric_compactness_certificate.json": "f7f832dad099fed6eaa1f007ff9766b5874df7cbb9825b577bdd6f4f16efbcee",
     "02_REGISTRY/research/certificates/a4d_native_prepared_action.lean": "2e6731a70fe3b42da87acba14c78aaee23c6654a4738a46aded6a3c2850190d9",
     "02_REGISTRY/research/certificates/a4d_native_prepared_action_output.txt": "659e806ac4742257decc65d4f1d1148dad5f439cbfafcbf09e37c27082114dd9",
@@ -429,7 +429,7 @@
     "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
     "03_FORMALIZATION/D0/Geometry/A4DSymRoleCentralDifference.lean": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e",
     "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean": "9a342468ef9c04f28c68b59acb32263e141ed184f2bf49a085869632930c1549",
-    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",

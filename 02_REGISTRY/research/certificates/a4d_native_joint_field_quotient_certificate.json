@@ -50,7 +50,7 @@
     "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md": "991b42eac645bb7e5e4df55f9be439f8e873b9403b4ff2a6dc1061a49dfe3e2e",
     "02_REGISTRY/research/MEMO_A4D_STAR_DENSITY_LORENTZ_NONLINEAR_QUOTIENT.md": "6afb88a62a7454f998d807dac430e2942144b907ad8b5963b82e0b2acf9011b7"
   },
-  "lean_receipt_sha256": "069b454108cbccc42e33a31790e582579c47c5c3c8576c5f82463d39f0f698fc",
+  "lean_receipt_sha256": "3e6fd614a5adc52d5cde13a0f93182c1f63dacccf04fe42c2347da4a82d53d29",
   "ranks": {
     "constraint": 40,
     "gauge": 30,

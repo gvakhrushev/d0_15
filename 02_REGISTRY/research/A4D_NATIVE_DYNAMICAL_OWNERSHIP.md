@@ -881,21 +881,26 @@ source-bound research capsule, not a supported-owner promotion.
 
 ## 9. Exact boundary for the field-to-instrument tangent
 
-The v3 moving-preparation result now has a direct two-completion test at its
-unresolved field interface. With the same commuting reference returns, event,
-initial density and fixed probe calibration, two smooth unitary-return maps
-give the exact prepared-cost derivatives
-\[
-  \frac{1644p+17733}{5041}
-  \quad\text{and}\quad
-  2\frac{1644p+17733}{5041},
-  \qquad p=(\sqrt5-1)/2.
-\]
-The exact matrix calculation, input hashes and scope boundary are recorded
-in [A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md](A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md)
-and its adjacent certificate. This proves that the declared instrument
-interface does not determine a field response until the coframe/link-to-return
-tangent is supplied. It does **not** prove two D0-admitted physical completions
-or physical stress nonuniqueness: that admission map is exactly the missing
-datum. Consequently `physical_response_nonuniqueness_proved` remains false,
-G0 stays open, and the source/Ward/refinement/GR obligations are unchanged.
+The complete first-jet family is now classified over the actual constrained
+joint kinematic quotient `(q,D,b,m)`, whose tangent dimension is `66 L^4`.
+At the smallest registered period `L=4`, an explicit constant metric tangent
+`K=diag(1,1,0,0)` satisfies the differentiated edge constraint, is tracefree
+and nongauge, and has a raw-solder lift. With a fixed unit probe calibration,
+the v3 moving-preparation source gives every real prepared-cost derivative
+`lambda*(1644p+17733)/5041` along this tangent. The coefficient is positive;
+therefore the full real range is visible without changing the reference
+instrument, event, state, or calibration. The complete two-return interface
+jet space is `Hom_R(T, Herm(4) x Herm(4))`, of dimension `2112 L^4`, and every
+such first jet is realized by a local unitary germ.
+
+The exact matrix calculation, owner pins, and source/target constraint control
+are recorded in
+[A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md](A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md)
+and its adjacent certificate. This closes the mathematical classification of
+the declared instrument interface and establishes that its free jet parameters
+affect the prepared response. It does **not** prove that any such germ is
+admitted by D0, prove two D0 physical completions, or establish physical stress
+nonuniqueness. The missing datum remains an admitted map from the constrained
+field tangent to unitary-return Lie-algebra tangents, compatible with native
+refinement. Consequently `physical_response_nonuniqueness_proved` remains
+false, G0 stays open, and the source/Ward/refinement/GR obligations are unchanged.

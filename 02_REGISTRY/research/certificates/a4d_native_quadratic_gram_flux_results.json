@@ -248,7 +248,7 @@
     "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967",
     "03_FORMALIZATION/D0/Gravity/A4DLinearizedMetricResponse.lean": "99361600de2c524a46ba92e7022739274e971954599626abf55aa38cfa5ff4c0"
   },
-  "lean_capsule_receipt_sha256": "a8c1efd9ecce9ccfd3865522df4e61ce96cb31c2c79dedd23d0b69e2b8fb8172",
+  "lean_capsule_receipt_sha256": "1ef65eff28a8a8c72d65c705706cb02782d4316ddcc1bc96a6ad4e7a04662b60",
   "scope": "Analytic arbitrary-stage signed-quadratic profile and literal standalone flux-gate obstructions; no full-core completeness, combined-action or native-refinement closure assertion.",
   "signed_profile": {
     "auxiliary_kernel_dimension": 1,
