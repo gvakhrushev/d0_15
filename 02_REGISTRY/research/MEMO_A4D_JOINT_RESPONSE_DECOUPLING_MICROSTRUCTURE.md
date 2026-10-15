@@ -4677,3 +4677,26 @@ Refinement-uniform joint inversion, the native source/Ward, actual curved
 metric/matter solutions and the original fixed-source/raw-owner terminal
 remain open. Reproduce the single focused calculation with
 `python 02_REGISTRY/research/certificates/a4d_native_record_source_pullback_check.py`.
+
+## Finite tower ambiguity and the actual refinement mode (2026-10-15)
+
+The [tower/heat/source synthesis](A4D_TOWER_TRACE_HEAT_SOURCE_SYNTHESIS.md)
+consumes the supplied HTML without making its proposed five-return instrument
+or temperature match a new prerequisite. For the specified Fibonacci AF tower,
+the exact base-weight width is `1/(F_(N+1) F_(N+2))`. A genuine affine source
+observable with a uniform covector bound converts this width to a response
+error. On unnormalized Xi slots, the original four-dimensional raw norm costs
+`h^-6`; on an already normalized `tau=h^-2 Xi` it costs `h^-4`. The resulting
+logarithmic depth condition is explicit, but the native source map, its field
+jets and the uniform bound must still be derived. Convergence of trace values
+alone does not imply convergence of their field derivatives.
+
+For the declared full factor heat probe, the same synthesis proves the joint
+path `beta_L=c/L` has response limit `15/(32c^2)>0`, despite `beta_L->0`.
+Thus an actual temperature/refinement law is needed for the source interface;
+the golden tower or an exchange of iterated limits does not supply it.
+The corrected classical pullback loses the coherence covector by an error a
+in the stated input norm, and a normalized event calculation consumes the
+previous source recursion on that fibre. These results sharpen the existing
+joint source/refinement obligation. They neither produce an admitted exact
+fixed-source family nor replace the original #216 comparator/raw terminal.
