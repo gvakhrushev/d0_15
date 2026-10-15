@@ -135,6 +135,13 @@ then runs under the workflow's affected-input selection. Main and manual
 integration runs retain their required replay. Moving a Ready PR back to Draft
 is appropriate while changing its scientific argument.
 
+A Ready synchronize changing only `README.md`, `AGENTS.md` or this work guide
+can reuse a successful Ready check on the previous head when the exact base,
+scientific files and installed environment match. Structural and semantic guards
+still run. Missing evidence, a skipped/failed prior replay, a changed environment
+or any other changed path triggers normal cumulative replay. This is a narrow
+process-document exemption, not a research dependency cache.
+
 Research replay runs independent certificates in isolated worktrees at one
 exact committed ref, with bounded parallelism, per-certificate timeout and
 mutation detection. It has no result cache. Use the runner's `--help` for
