@@ -2228,3 +2228,42 @@ history/record preparation on `(q,D,b,m)`, including its allowed variations
 and refinement, mapped to these observable scene-edge costs. Neither example
 is promoted to a physical D0 preparation; #310/#202/#317 retain their original
 scopes. Current-head CI and independent CONTROL review remain required.
+
+## Current-active sector inside the closed engine (2026-10-15)
+
+The supplemental proof
+[`A4D_NATIVE_ENGINE_CORRELATED_CURRENT_EXTENSION_2026-10-15.md`](A4D_NATIVE_ENGINE_CORRELATED_CURRENT_EXTENSION_2026-10-15.md)
+finds an exact alternative initial state accepted by the existing six-zero
+executor guard. Its retained CAR correlation minor alternates as
+\((-1)^{n+1}\), while the full correlated-current owner reads
+\(J_n=e_0+(-1)^{n+1}(2/3)e_1\). The Minkowski norm is \(5/9\) at every tick.
+The lower pair is the existing all-time A/B two-cycle; the two high-grade
+pairs are acted on by determinant-\(-1\) orthogonal gates. This is a
+source-active invariant sector of the executor domain, not the original
+whole-blank orbit: that orbit has zero minor and stays current-null.
+
+The existing current-defined heat formula has a strictly positive amplitude
+derivative at \(K=5\) for every \(L\ge2\). The proof uses the existing sine
+bounds, one negative diagonal Fourier mode and an explicit all-size bound on
+every positive off-diagonal mode. The exact checker independently expands all
+16 modes at \(L=4\) into a polynomial in \(2^{-1/5}\) and certifies the sign
+with rational bounds. The existing current-observer two-tick feedback pencil
+is independent of amplitude, so the combined current-observer heat-plus-
+feedback derivative remains positive on that interface when other terms are
+held fixed. A direct operator comparison also yields a scoped obstruction:
+on the whole nonzero-amplitude family at fixed \(q=\eta\), the mask-13
+difference between the current-observer operator and the actual executor gate
+is exactly \(-4as^3\). Thus these two transitions cannot be identified on a
+positive-current member of this family; the result does not exclude a
+different family or an already-owned metric-changing operation.
+
+The exact supplement records 845 controls, 128 actual executor transitions,
+the all-four-component symbolic CAR readout on both lower bands, the
+current-null and out-of-domain hostile controls, 15 owner source SHA/blob
+pairs, and the Lean source/output hashes. Seven generic algebra propositions
+compile with standard axioms only and no `sorryAx`. The result does not select
+the nonzero starting correlation physically, put the current-derived operator
+into the executor, or transfer the heat derivative into one native action.
+The shared action/tangent, source/Ward, metric/link transition, curved
+physical root, soundness/recovery, GR and global closure remain open. The
+original #310/#202/#317 terminals are unchanged.

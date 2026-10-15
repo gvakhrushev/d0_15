@@ -1,0 +1,40 @@
+D0.Research.EngineCorrelatedCurrentExtension.wedge_linear (a b c d : ℝ) (u v : ℝ × ℝ) :
+  D0.Research.EngineCorrelatedCurrentExtension.wedge (a * u.1 + b * u.2, c * u.1 + d * u.2)
+      (a * v.1 + b * v.2, c * v.1 + d * v.2) =
+    (a * d - b * c) * D0.Research.EngineCorrelatedCurrentExtension.wedge u v
+D0.Research.EngineCorrelatedCurrentExtension.high_gate_wedge_negates (a p sigma : ℝ) (u v : ℝ × ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hs : sigma ^ 2 = 1) :
+  D0.Research.EngineCorrelatedCurrentExtension.wedge (D0.Research.EngineCorrelatedCurrentExtension.highGate a p sigma u)
+      (D0.Research.EngineCorrelatedCurrentExtension.highGate a p sigma v) =
+    -D0.Research.EngineCorrelatedCurrentExtension.wedge u v
+D0.Research.EngineCorrelatedCurrentExtension.high_gate_preserves_norm (a p sigma : ℝ) (u : ℝ × ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hs : sigma ^ 2 = 1) :
+  D0.Research.EngineCorrelatedCurrentExtension.normSq
+      (D0.Research.EngineCorrelatedCurrentExtension.highGate a p sigma u) =
+    D0.Research.EngineCorrelatedCurrentExtension.normSq u
+D0.Research.EngineCorrelatedCurrentExtension.correlation_never_zero (x : ℝ) (hx : x ≠ 0) (n : ℕ) : (-1) ^ n * x ≠ 0
+D0.Research.EngineCorrelatedCurrentExtension.golden_amplitude_current_is_timelike (s : ℝ) (hs : s ≠ 0) :
+  0 < 1 - (2 * s ^ 2 / (1 + 2 * s ^ 2)) ^ 2
+D0.Research.EngineCorrelatedCurrentExtension.L4_heat_numerator_negative (x : ℝ) (hx0 : 0 < x) (hx1 : x < 1)
+  (hx5 : x ^ 5 = 1 / 2) : D0.Research.EngineCorrelatedCurrentExtension.heatNumerator x < 0
+D0.Research.EngineCorrelatedCurrentExtension.L4_heat_slope_positive (x Z : ℝ) (hx0 : 0 < x) (hx1 : x < 1)
+  (hx5 : x ^ 5 = 1 / 2) (hZ : 0 < Z) : 0 < -4 * D0.Research.EngineCorrelatedCurrentExtension.heatNumerator x / Z
+'D0.Research.EngineCorrelatedCurrentExtension.wedge_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.high_gate_wedge_negates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.high_gate_preserves_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.correlation_never_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.golden_amplitude_current_is_timelike' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.L4_heat_numerator_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.EngineCorrelatedCurrentExtension.L4_heat_slope_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
