@@ -41,6 +41,10 @@ A free WIP slot alone does not establish prerequisites.
 ## Start or resume once
 
 1. Read `AGENTS.md`, this file and the relevant current scientific route.
+   For CONTROL entry/workflow changes, inspect open governance PRs and their
+   changed paths once. Shared README/AGENTS, queue, dispatch or CI edits go to
+   one existing owner/PR; contributors hand over disjoint content. Task-ID
+   lookup alone does not detect two different proposals rewriting the same flow.
 2. Fetch current `main` once and resolve the task with:
 
    ```bash

@@ -21,6 +21,29 @@ counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
 
+### Strategic context and preserved inputs
+
+The integrator, or a new chat establishing programme context, reads the full
+[bottom-up strategy](https://github.com/gvakhrushev/d0_15/blob/cd02a65de1c708eae113b03ca63392e1641c427c/02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
+once. The [18 preserved leads](https://github.com/gvakhrushev/d0_15/blob/cd02a65de1c708eae113b03ca63392e1641c427c/02_REGISTRY/research/D0_IDEA_REGISTER.json)
+and [original guidance and sketches](https://github.com/gvakhrushev/d0_15/blob/cd02a65de1c708eae113b03ca63392e1641c427c/02_REGISTRY/research/D0_HANDOFF_SOURCE_NOTES_RU.md)
+retain the scientific intent behind the next lemma. These are immutable input
+snapshots from the preservation intake [#323](https://github.com/gvakhrushev/d0_15/pull/323),
+which awaits acceptance; they introduce no new scientific assumptions.
+Bounded executors read the inputs relevant to their assigned premise.
+
+| Preserved leads | Consumer in this route |
+|---|---|
+| D0-I01–I09, I11, I16: forcing, minimum closure, π₀, golden operations, record depth, resonant matter, archive and moving preparation | Front A: derive the admitted process, complete action and physical source on the common carrier |
+| D0-I14–I15: joint resonances, exact curved states and refinement | Front B: prove the nonlinear/refinement estimate with all coupled modes and the declared norm |
+| D0-I10: physical equivalence of responses | Shared interface: prove the needed observable factorization without requiring uniqueness of response-invisible internal details |
+| D0-I12–I13: numerical calibration, angles and observational sketches | Downstream calibration and observables after the source law; these are not premises of the GR derivation |
+| D0-I17–I18: constructive integration and useful checks | Rationale for the existing parallel work and validation flow in `00_WORK/README.md` |
+
+The G0–G4 common contract under review in [#323](https://github.com/gvakhrushev/d0_15/pull/323)
+provides a supporting proof decomposition. This page owns the current route;
+execution uses the existing `00_WORK` manifest, briefs and dispatch flow.
+
 ### Available inputs and their boundaries
 
 | Input snapshot | Available content | Still missing for the target |

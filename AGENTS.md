@@ -35,6 +35,12 @@ argument, definitions, norms and source conventions. Delegate independent
 premises with a named consumer in that argument; integrate each result as it
 arrives. Do not wait for every research lane to finish before composing results.
 
+At programme handoff, the integrator reads the full preserved strategy once;
+the [strategy, 18 leads and original guidance](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#strategic-context-and-preserved-inputs)
+are pinned there with their consumers and acceptance boundary. Bounded
+executors read the inputs relevant to their assigned premise. Current work
+continues through this contract, the current route and `00_WORK/README.md`.
+
 Use separate branches/worktrees and disjoint write paths for independent
 executors. Read-only assistants and bounded implementation subtasks within one
 owned PR do not require new task rows. Register a separate scientific execution
@@ -130,6 +136,12 @@ example:
 
 If CONTROL can safely finish the change in the current PR without meaningful
 research uncertainty or expensive build work, do it directly.
+
+Before changing shared entry/workflow files (README, AGENTS, queue, dispatch or
+CI), inspect open governance PRs and their changed paths once. Reuse the existing
+owner/PR for an overlapping rewrite; other contributors supply disjoint content
+or a pinned handoff. A different branch or task label does not make overlapping
+process work independent.
 
 ### WORKER
 

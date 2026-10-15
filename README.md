@@ -19,6 +19,12 @@ independent interfaces. Progress means a proved transition used in that
 composition, or a counterexample that changes the route. Certificates and CI
 support those decisions.
 
+For programme context, the integrator reads the full
+[preserved strategy](https://github.com/gvakhrushev/d0_15/blob/cd02a65de1c708eae113b03ca63392e1641c427c/02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
+once, then uses the [18 ideas and original guidance mapped to the current route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#strategic-context-and-preserved-inputs).
+Their preservation intake [#323](https://github.com/gvakhrushev/d0_15/pull/323)
+awaits acceptance. Bounded tasks read the relevant inputs from that context.
+
 For a task, run `python tools/task_dispatch.py TASK-ID`: resolve an existing PR
 before launching another execution. Iterate with the smallest relevant check;
 run the affected integration checks at Ready. See the
