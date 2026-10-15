@@ -41,6 +41,8 @@ INPUTS=[
     '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_results.json',
     '02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_certificate.json',
     '02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md',
+    '02_REGISTRY/research/A4D_NATIVE_FIBONACCI_LIMIT_FRAME_OBSTRUCTION.md',
+    '02_REGISTRY/research/A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md',
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py',
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_check.py',
     '02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean',
@@ -323,9 +325,9 @@ def controls(receipt=True):
        (P.current(P.I4,af_after).T*P.ETA*P.current(P.I4,af_after))[0]-p**6)
 
     # The canonical four-frame's passive column is compatible with the true
-    # PF-weighted AF bond, but its three detail columns are not. This exact
-    # finite obstruction rules out only the naive frame continuation; it is
-    # not a no-go for the AF owner's allowed gauge-related frames.
+    # PF-weighted AF bond, but its three detail columns are not. These finite
+    # ranks are only the coordinate-level defect; the separate analytic
+    # AF-limit theorem rules out every gauge-related full-bimodule family.
     af_bond_defect_ranks=[]
     for n in range(3):
         frame_n=FA.frame(n);frame_next=FA.frame(n+1)
@@ -524,15 +526,28 @@ def controls(receipt=True):
         'all-L fixed-beta heat bound','exact closed-engine-and-scene/current-source sector decoupling',
         'positive source current is a checked cross-sector CAR term',
         'exact n=0 Fibonacci AF/CAR working-module weld for fullStep, price cut and blank projector',
+        'level-three same-simple two-copy full CAR current represented by a corner of native A9',
+        'prepared same-simple AF/CAR blank reads the owned source current with Lorentz norm p^6',
+        'all-level Jones operator transport of that native current corner by the owned homomorphisms',
+        'ordinary-bond all-level four-copy full-old-bimodule naturality obstruction in standard multiplicity-one AF GNS limit',
         'independent original-observer chronology feedback covector descent is source-pinned'],
-        cross_owner_scope='CLOSED_ENGINE_AND_AUTONOMOUS_SCENE_SEED_STAY_IN_CURRENT_NULL_SECTOR; POSITIVE_SOURCE_RESPONSE_IS_CROSS_SECTOR; BASE_LEVEL_FIBONACCI_AF_CAR_WELD_EXACT; LATER_REFINEMENT_AND_PHYSICAL_ADMISSION_OPEN',
+        cross_owner_scope='CLOSED_ENGINE_AND_AUTONOMOUS_SCENE_SEED_STAY_IN_CURRENT_NULL_SECTOR; POSITIVE_SOURCE_RESPONSE_IS_CROSS_SECTOR; LEVEL3_NATIVE_A9_CAR_CURRENT_CORNER_AND_OPERATOR_JONES_TAIL; FIXED_SEED_CANONICAL_JONES_GNS_STATE_MISMATCH; OTHER_PREPARATIONS_AND_PHYSICAL_ADMISSION_OPEN',
         source_current_decomposition='r_i=2*m_V^T*alpha_i*m_perp on the owned B curve; r1(0)=2ap and r1_prime(0)=4p^3',
         af_car_weld='n=0, Xi_0=K*V_AF^T; exact fullStep/price/blank intertwining on the 8D AF working module',
         af_car_preparation='V_AF(a e0 tensor eX + p e2 tensor eY) maps to B(a,p), then one record step maps to U_CAR*B(a,p)',
         af_car_response='r1(0)=2ap; r1_prime(0)=4p^3=L_AF=8delta0; eta(J,J)=p^6=tau_6(e)=4delta0^2; L_AF+p^6=1',
         af_car_current_leakage_ranks=af_current_leakage_ranks,
         af_canonical_frame_PF_bond_defect_ranks=af_bond_defect_ranks,
-        af_all_level_gauge_repair_or_general_obstruction_open=True,
+        ordinary_AF_bimodule_limit_gauge_repair_open=False,
+        ordinary_AF_bimodule_limit_naturality_obstruction_proven=True,
+        level2_fixed_K2_AF_left_current_extension_exists=False,
+        level3_native_A9_current_corner_established=True,
+        level3_operator_Jones_transport_all_levels=True,
+        level3_prepared_source_current='(1,2ap,0,0); Lorentz norm p^6',
+        level3_canonical_Jones_conditional_current='(1,0,0,0)',
+        level3_prepared_GNS_off_corner_mass_squared='54-86p-94ap+58a-13*sqrt(2)+21*sqrt(2)*p+21*sqrt(2)*a-34*sqrt(2)*a*p; a=sqrt(p); approximately 0.7295098177439909',
+        level3_fixed_seed_matches_canonical_Jones_GNS_state=False,
+        level3_prepared_state_Jones_GNS_binding_open=True,
         original_chronology_stationary_descent='separate full16 observer/cut owner; admitted scalar feedback equation implies dJ=0; physical admission and full-action source remain open',
         full_feedback_pencil='(1-4zp^3)^(4L^4)',
         retained_zero_feedback_directions='12L^4',physical_admission_source_Ward_stationarity_GR_closed=False)

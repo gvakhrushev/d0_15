@@ -53,7 +53,7 @@
   "input_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
   "joint_connection_probes": 24,
   "joint_metric_probes": 50,
-  "lean_receipt_sha256": "e8bb8f7e777637034a9945a5ec7671dd872f5fa4c61f6ec7a5ad218088797f37",
+  "lean_receipt_sha256": "1cb0db0934b59c25a236bd43d69581e5f41b27e2434b4a6029b7db451c3a9f6d",
   "proof_sha256": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6",
   "schema": "d0-constrained-price-source/1",
   "scope": {

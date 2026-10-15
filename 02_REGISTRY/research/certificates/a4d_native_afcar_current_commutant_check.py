@@ -25,6 +25,7 @@ INPUTS = [
     "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
     "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json",
     "02_REGISTRY/research/A4D_NATIVE_JONES_RECORD_TRANSPORT.md",
+    "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_LIMIT_FRAME_OBSTRUCTION.md",
     "02_REGISTRY/research/certificates/a4d_native_afcar_current_commutant.py",
     "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py",
     "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_check.py",
@@ -79,12 +80,54 @@ def controls():
     assert result["controls"]["without_record_step_commutant_dimension"] == 2
     assert result["two_copy_abstract_right_M2_extension_realized"] is True
     assert result["two_copy_commutant_dimension_by_block_argument"] == 4
-    assert result["two_copy_AF_path_binding_established"] is False
+    assert result["two_copy_AF_path_binding_established"] is True
+    assert result["two_copy_AF_all_level_refinement_established"] is False
     af_capacity = result["AF_right_module_capacity"]
     assert af_capacity["old_right_multiplicities"] == [34, 21]
     assert af_capacity["two_copy_slots_required"] == 16
     assert af_capacity["M2_branch_has_capacity"] is True
-    assert af_capacity["path_specific_carrier_established"] is False
+    assert af_capacity["path_specific_carrier_established"] is True
+    level2 = result["level2_two_copy_record_current_weld"]
+    assert level2["input_level"] == 2 and level2["input_AF_sizes"] == [3, 2]
+    assert level2["working_dimension"] == 52
+    assert level2["full_AF_level"] == 5 and level2["full_AF_dimension"] == 233
+    assert level2["canonical_old_M2_bimodule_dimension"] == 8
+    assert level2["weld_dimension"] == 32
+    assert level2["retained_full_AF_complement_dimension"] == 201
+    assert level2["prepared_current"] == ["1", "2*a*p", "0", "0"]
+    assert level2["source_lorentz_norm"] == "p^6"
+    assert level2["physical_admission_established"] is False
+    assert level2["all_level_refinement_established"] is False
+    extension = result["level2_fixed_weld_AF_left_current_extension"]
+    assert extension["old_A2_right_center_intertwining_at_A5"] is True
+    assert extension["CAR_current_components_preserving_path_center"] == [False, True, False]
+    assert extension["CAR_current_path_center_commutator_ranks"] == [32, 0, 32]
+    assert extension["full_AF_left_current_extension_exists"] is False
+    assert extension["scope"] == "fixed_K2_path_binding_and_AF_left_observable_owner"
+    level3 = result["level3_same_simple_path_current_weld"]
+    assert level3["input_level"] == 3 and level3["input_AF_sizes"] == [5, 3]
+    assert level3["working_dimension"] == 136
+    assert level3["canonical_same_simple_M2_rows"] == [0, 1, 3, 4]
+    assert level3["common_right_M2_columns"] == [0, 1]
+    assert level3["active_weld_dimension"] == 32
+    assert level3["native_AF_algebra_level"] == 9
+    assert level3["native_AF_block_sizes"] == [89, 55]
+    assert level3["native_six_path_bijections_checked"] == [True, True]
+    assert level3["native_current_corner_support_ranks"] == [16, 0]
+    assert level3["prepared_source_current"] == ["1", "2*a*p", "0", "0"]
+    assert level3["prepared_source_lorentz_norm"] == "p^6"
+    assert level3["prepared_GNS_source_current"] == ["1", "2*a*p", "0", "0"]
+    assert level3["canonical_Jones_conditional_GNS_current"] == ["1", "0", "0", "0"]
+    assert level3["canonical_Jones_conditional_corner_trace"] == "5 - 8*p"
+    assert level3["prepared_GNS_vector_norm"] == "34 - 55*p"
+    assert abs(float(level3["prepared_GNS_vector_off_corner_mass_squared_decimal"]) - 0.7295098177439909) < 1e-14
+    assert level3["prepared_GNS_vector_matches_canonical_Jones_conditional_state"] is False
+    assert level3["fixed_state_binding_scope"] == "level3_A9_same_simple_path_and_canonical_Jones_conditional_vector"
+    assert level3["full_CAR_current_extension_in_native_AF_corner"] is True
+    assert level3["current_corner_unit_is_path_generated_active_projection"] is True
+    assert level3["all_level_Jones_operator_transport_follows_from_owned_homomorphism"] is True
+    assert level3["prepared_state_Jones_GNS_binding_established"] is False
+    assert level3["physical_admission_established"] is False
 
     lean = json.loads((ROOT / LEAN_RESULTS).read_text())
     assert lean["status"] == "PASS" and lean["compiler_exit_code"] == 0
@@ -96,7 +139,9 @@ def controls():
     expected_output = (
         "PASS_A4D_NATIVE_AFCAR_CURRENT_COMMUTANT "
         f"controls={result['exact_controls']} commutant_dim=1 "
-        "single_copy=NO_GO two_copy=RIGHT_M2 AF_path_binding=OPEN\n"
+        "single_copy=NO_GO two_copy=RIGHT_M2 level2=RECORD_CURRENT_WELD "
+        "current=AF_LEFT_NO_GO level3=A9_CORNER_CURRENT "
+        "gns=FIXED_SEED_MISMATCH all_level=OPEN\n"
     )
     assert (ROOT / OUTPUT).read_text() == expected_output, "OUTPUT_TRANSCRIPT_MISMATCH"
 
@@ -126,7 +171,9 @@ def main():
     print(
         "PASS_A4D_NATIVE_AFCAR_CURRENT_COMMUTANT "
         f"controls={result['exact_controls']} commutant_dim=1 "
-        "single_copy=NO_GO two_copy=RIGHT_M2 AF_path_binding=OPEN"
+        "single_copy=NO_GO two_copy=RIGHT_M2 level2=RECORD_CURRENT_WELD "
+        "current=AF_LEFT_NO_GO level3=A9_CORNER_CURRENT "
+        "all_level=OPEN"
     )
 
 

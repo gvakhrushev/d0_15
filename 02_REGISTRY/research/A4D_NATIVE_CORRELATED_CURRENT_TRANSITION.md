@@ -512,16 +512,42 @@ of the canonical AF frame is natural, but the three detail copies are not:
 
 These are exact ranks over the algebraic number field of the golden and
 normalizing coefficients. They rule out simply reusing the displayed
-canonical detail frames at every level; they do not rule out the
-gauge-related frames allowed by the AF owner. The fixed 16-state CAR carrier
-also cannot contain the next full AF working module, whose dimension is
-`4 d_1=20`. An injective all-level weld of the full working module therefore
-needs a growing carrier and a coherent frame choice. The next calculation
-is to determine whether the existing AF commutant freedom supplies that
-coherent choice, then extend
-the CAR readout and pull back the joint `(q,D,b,m)` variation. Throughout this
-proof `V` denotes the four-mask current-null space; the distinct
-ten-dimensional collinear carrier is `S` in the CAR joint-sector owner.
+canonical detail frames at every level; the defect itself is only a finite
+canonical-coordinate result.
+The full gauge question for **ordinary-bond naturality of four bimodule
+copies** is now settled by the scoped analytic no-go in
+[the AF limit-frame obstruction](A4D_NATIVE_FIBONACCI_LIMIT_FRAME_OBSTRUCTION.md):
+no allowed gauge-related frame family can be exactly natural in the standard
+multiplicity-one AF GNS limit. This does not rule out a different transition.
+
+The current/AF weld has also advanced beyond the fixed 16-state carrier: the
+[AF-CAR commutant boundary](A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md)
+now constructs a finite level-two weld on the two canonical old-`M2`
+bimodule corners. On its 32-dimensional active subspace it carries the
+doubled CAR current as an abstract operator, together with the actual record
+and cuts, the prepared blank, and the old right-`M2` action. An exact center
+test now shows that, for this fixed path
+binding, the full current components `alpha_1` and `alpha_3` cannot be
+extended as AF-left observables: they mix the two path labels that are the
+simple summands of `A_2`. Thus the Jones-tail step is downstream of finding
+an already owned joint AF/CAR observable or a compatible existing encoding;
+right-`M2` linearity alone does not supply that extension. The same owner now
+has a constructive level-three encoding: both old-`M2` copies sit in one
+`M_5` summand with a common right-column pair, and the full CAR current
+extends to an `A_9` corner as a right-`A_3` module observable. The owned
+all-level Jones homomorphism therefore transports this **operator corner** at
+every later level. A fixed-seed state test now compares the recorded CAR blank
+in regular `L^2(A_9,tau_9)` with the canonical Jones conditional vector
+`e/p^3`. The native source readout is `(1,2ap,0,0)`; the conditional vector
+reads `(1,0,0,0)`, and the source has exact off-corner mass
+`54-86p-94ap+58a-13*sqrt(2)+21*sqrt(2)*p+21*sqrt(2)*a-34*sqrt(2)*a*p`
+(`0.7295098177439909...`, `a=sqrt(p)`). Thus this owned preparation does not
+bind to the canonical conditional state under the fixed path identification.
+Other already-owned preparations, physical admission and the joint
+`(q,D,b,m)` pullback remain open.
+Throughout this proof `V` denotes
+the four-mask current-null space; the distinct ten-dimensional collinear
+carrier is `S` in the CAR joint-sector owner.
 
 ## 9. Evidence boundary
 

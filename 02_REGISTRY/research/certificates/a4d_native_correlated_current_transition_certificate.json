@@ -1,5 +1,4 @@
 {
-  "af_all_level_gauge_repair_or_general_obstruction_open": true,
   "af_canonical_frame_PF_bond_defect_ranks": [
     6,
     15,
@@ -21,9 +20,13 @@
     "exact closed-engine-and-scene/current-source sector decoupling",
     "positive source current is a checked cross-sector CAR term",
     "exact n=0 Fibonacci AF/CAR working-module weld for fullStep, price cut and blank projector",
+    "level-three same-simple two-copy full CAR current represented by a corner of native A9",
+    "prepared same-simple AF/CAR blank reads the owned source current with Lorentz norm p^6",
+    "all-level Jones operator transport of that native current corner by the owned homomorphisms",
+    "ordinary-bond all-level four-copy full-old-bimodule naturality obstruction in standard multiplicity-one AF GNS limit",
     "independent original-observer chronology feedback covector descent is source-pinned"
   ],
-  "checker_sha256": "d667adb277e4990ec979ab91238c99eb18ea69650644d6f47ce1ea94ac610979",
+  "checker_sha256": "f72b5a475f6e32e831e3973cf257f57cce1adf9e53ef113c58b1b82cf2e082ef",
   "checks": [
     "native_CAR_create_(0, 0)",
     "native_CAR_annihilate_(0, 0)",
@@ -500,7 +503,7 @@
     "REJECT_DROP_REAL_LEAN_DECLARATION",
     "REJECT_OMIT_REAL_DIAGNOSTIC_PROPOSITION"
   ],
-  "cross_owner_scope": "CLOSED_ENGINE_AND_AUTONOMOUS_SCENE_SEED_STAY_IN_CURRENT_NULL_SECTOR; POSITIVE_SOURCE_RESPONSE_IS_CROSS_SECTOR; BASE_LEVEL_FIBONACCI_AF_CAR_WELD_EXACT; LATER_REFINEMENT_AND_PHYSICAL_ADMISSION_OPEN",
+  "cross_owner_scope": "CLOSED_ENGINE_AND_AUTONOMOUS_SCENE_SEED_STAY_IN_CURRENT_NULL_SECTOR; POSITIVE_SOURCE_RESPONSE_IS_CROSS_SECTOR; LEVEL3_NATIVE_A9_CAR_CURRENT_CORNER_AND_OPERATOR_JONES_TAIL; FIXED_SEED_CANONICAL_JONES_GNS_STATE_MISMATCH; OTHER_PREPARATIONS_AND_PHYSICAL_ADMISSION_OPEN",
   "exact_controls": 474,
   "executed_mathematical_mutants": [
     "SOURCE_ACTIVE_GOLDEN_STATE_LIES_IN_CLOSED_ENGINE_SECTOR",
@@ -525,9 +528,11 @@
   ],
   "full_feedback_pencil": "(1-4zp^3)^(4L^4)",
   "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md": "36f77dea7cc868b74bb656c928b3897d5ef42bc45cfde6006070cbcfcf2b6bd9",
     "02_REGISTRY/research/A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md": "b9ee5c65cd94cd22760d49eef2d6f30d1d7eeb48e8afff2ee5188f61038a5539",
     "02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md": "3d21745f052eb09863b16acd1e16f59628974b95494a2a38b1aea01a518ea58a",
     "02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md": "36eaeb8617630acaeace297fa64e7b8c33b92fc4824133a2b8e3515c4c79520a",
+    "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_LIMIT_FRAME_OBSTRUCTION.md": "7d0b1f8e499c89703f5dcc0338c2c29725f3ebb8344a14266e75673c05c673a7",
     "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
     "02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md": "d85e57979a61972e641eae24442a776133c429c8696d0948590f6d290a60b045",
     "02_REGISTRY/research/A4D_NATIVE_JOINT_ADJOINT_SOURCE.md": "19b5062c1af8281c219de5c0ef6b70d7790922201c8f3c71b4472a18345c404d",
@@ -617,11 +622,21 @@
     "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782"
   },
   "input_source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
+  "level2_fixed_K2_AF_left_current_extension_exists": false,
+  "level3_canonical_Jones_conditional_current": "(1,0,0,0)",
+  "level3_fixed_seed_matches_canonical_Jones_GNS_state": false,
+  "level3_native_A9_current_corner_established": true,
+  "level3_operator_Jones_transport_all_levels": true,
+  "level3_prepared_GNS_off_corner_mass_squared": "54-86p-94ap+58a-13*sqrt(2)+21*sqrt(2)*p+21*sqrt(2)*a-34*sqrt(2)*a*p; a=sqrt(p); approximately 0.7295098177439909",
+  "level3_prepared_source_current": "(1,2ap,0,0); Lorentz norm p^6",
+  "level3_prepared_state_Jones_GNS_binding_open": true,
+  "ordinary_AF_bimodule_limit_gauge_repair_open": false,
+  "ordinary_AF_bimodule_limit_naturality_obstruction_proven": true,
   "original_chronology_stationary_descent": "separate full16 observer/cut owner; admitted scalar feedback equation implies dJ=0; physical admission and full-action source remain open",
   "physical_admission_source_Ward_stationarity_GR_closed": false,
   "program_sha256": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
   "proof": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md",
-  "proof_sha256": "5f121dc43aa9ea701fe055f72070f95339f607f267d411b1b9ae5e93c1c20ffc",
+  "proof_sha256": "040f26ba81a25959add549d01fb592c19bf102e6081e32e5b64a7102ab6fdc0c",
   "retained_zero_feedback_directions": "12L^4",
   "source_current_decomposition": "r_i=2*m_V^T*alpha_i*m_perp on the owned B curve; r1(0)=2ap and r1_prime(0)=4p^3",
   "status": "PASS"
