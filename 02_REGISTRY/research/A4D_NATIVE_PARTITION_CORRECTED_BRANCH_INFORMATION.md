@@ -74,6 +74,23 @@ mode cancellation says exactly which balanced contrasts can ignore it and
 which source components cannot. No identification of the normalizer
 correction with a metric trace, or of (11) with full D0 stress, is made here.
 
+The current complete first-jet instrument-interface witness provides an
+exact normalizer control on a real constrained field tangent:
+[`A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md`](A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md)
+computes, for its fixed event \(A=\{1,2\}\),
+\[
+P_A=144p-\frac{177}{2},\qquad
+D_\xi P_A=\lambda(189p-117),\qquad
+D_\xi\log P_A
+=\lambda\left(\frac{6}{71}-\frac{54p}{71}\right)\ne0.
+\]
+Thus the normalizer correction can vary within the complete declared
+instrument first-jet family even at fixed reference returns and calibration.
+Under the identification of these raw event weights with the Book path
+weights, the correction to branch information is
+\(D_\xi\log P_A/\ln\varphi\). The first-jet owner does not establish that
+physical identification or admit either completion as a D0 solution.
+
 Scope remains limited to finite recorded outcomes with positive probabilities.
 It does not identify graph paths with instrument outcomes, prove physical
 admission of the comparator, supply the joint \((q,D,b,m)\) tangent law,

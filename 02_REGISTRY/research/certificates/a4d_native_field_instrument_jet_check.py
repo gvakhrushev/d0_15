@@ -241,6 +241,9 @@ def run() -> dict:
     require("exact_reference_cost", red(first[2] - expected_mean) == 0)
     require("completion_one_exact_source_jet", red(first[3] - unit_response) == 0)
     require("completion_two_exact_source_jet", red(second[3] - 2 * unit_response) == 0)
+    require("event_normalizer_jet_linear_in_free_scale", red(second[1] - 2 * first[1]) == 0)
+    require("event_normalizer_jet_linear_for_all_real_scales", red(arbitrary_scale[1] - scale * first[1]) == 0)
+    require("event_normalizer_jet_is_nonzero", red(first[1]) != 0)
     require(
         "prepared_response_is_linear_for_the_complete_scale_family",
         red(arbitrary_scale[3] - scale * unit_response) == 0,
@@ -301,6 +304,18 @@ def run() -> dict:
         "exact_shared_base": {
             "acceptance_probability": str(red(expected_probability)),
             "prepared_cost": str(red(expected_mean)),
+        },
+        "event_normalizer_first_jet": {
+            "event": [1, 2],
+            "probability": str(red(expected_probability)),
+            "d_probability_dxi_lambda1": str(red(first[1])),
+            "d_probability_dxi_lambda2": str(red(second[1])),
+            "d_probability_dxi_arbitrary_scale": "lambda * (189*p - 117)",
+            "dlog_probability_dxi_lambda1": str(red(first[1] / expected_probability)),
+            "dlog_probability_dxi_lambda2": str(red(second[1] / expected_probability)),
+            "conditional_information_correction_lambda1": "dlog_probability_dxi_lambda1 / log(phi), if the raw event weights are the path weights",
+            "conditional_information_correction_lambda2": "dlog_probability_dxi_lambda2 / log(phi), if the raw event weights are the path weights",
+            "scope": "event-conditioning normalizer on the declared instrument interface; not an admitted D0 source",
         },
         "completions": [
             {"jet_scale": 1, "prepared_source_derivative": str(red(first[3]))},

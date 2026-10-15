@@ -122,6 +122,22 @@ reference value:
 S_1(0)=S_2(0)=\frac{380-12p}{71}.
 \]
 
+The exact receipt also retains the event-normalizer jet along this same field
+direction. For the fixed event \(A=\{1,2\}\),
+
+\[
+D_\xi P_A(0)=\lambda(189p-117),\qquad
+D_\xi\log P_A(0)
+=\lambda\left(\frac{6}{71}-\frac{54p}{71}\right)\ne0.
+\]
+
+This makes the event-normalization direction response-visible across the
+complete free-scale family, in addition to the prepared-cost response below.
+If the raw event weights are also identified with the \(\varphi^{-S}\) path
+weights, this is the \(D_\xi\log\mathcal N\) term in the partition-corrected
+information theorem. That identification and physical D0 admission remain
+unproved; this is an exact instrument-interface calculation.
+
 Differentiating the full normalized event-conditioned cost, including the
 change in its prepared state and in event normalization, gives the exact
 values
@@ -138,7 +154,8 @@ the certificate separately rejects replacing the moving (\rho_A(t)) by
 its reference value. All matrix arithmetic is exact in Q(p,i), reduced
 using p²+p=1; the event window is held fixed.
 The adjacent checker reconstructs the source channel, event recursion, full
-normalization derivative, and both tangents. Its receipt is
+normalization derivative, both tangents, and the event-normalizer jet (33 exact
+controls). Its receipt is
 [`a4d_native_field_instrument_jet_results.json`](certificates/a4d_native_field_instrument_jet_results.json).
 
 ## What this resolves
@@ -168,6 +185,8 @@ Reproduce with
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_native_field_instrument_jet_check.py
 ```
+
+Use `--write` only to refresh the adjacent receipt after an intentional change.
 
 The checker pins the v3 source and receipt. The adjacent JSON is immutable by
 default; `--write` is only for an explicitly reviewed certificate refresh.

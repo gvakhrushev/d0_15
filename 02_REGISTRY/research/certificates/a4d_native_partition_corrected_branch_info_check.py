@@ -34,6 +34,8 @@ SOURCE_PATHS = {
     "02_REGISTRY/research/A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md",
     "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/RESULT.md",
     "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/receipt.json",
+    "02_REGISTRY/research/A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md",
+    "02_REGISTRY/research/certificates/a4d_native_field_instrument_jet_results.json",
 }
 
 
@@ -87,6 +89,26 @@ def check() -> dict[str, object]:
     assert sp.simplify(c1 * common_shift - c1 * common_shift) == 0
     assert sp.simplify((c1 + 1) * common_shift - c1 * common_shift - common_shift) == 0
 
+    # Compose with the exact event-normalizer jet from the complete instrument
+    # interface. This is conditional on identifying those raw event weights
+    # with the Book path weights; the physical admission map stays open.
+    field_receipt_path = ROOT / "02_REGISTRY/research/certificates/a4d_native_field_instrument_jet_results.json"
+    field_receipt = json.loads(field_receipt_path.read_text())
+    event = field_receipt["event_normalizer_first_jet"]
+    p = sp.symbols("p", real=True)
+    p_golden = (sp.sqrt(5) - 1) / 2
+    event_probability = 144 * p - sp.Rational(177, 2)
+    event_probability_jet = 189 * p - 117
+    reported_dlog = sp.sympify(event["dlog_probability_dxi_lambda1"], locals={"p": p})
+    assert field_receipt["exact_controls"] == 33
+    assert event["probability"] == "144*p - 177/2"
+    assert event["d_probability_dxi_lambda1"] == "189*p - 117"
+    assert event["d_probability_dxi_lambda2"] == "378*p - 234"
+    assert event["d_probability_dxi_arbitrary_scale"] == "lambda * (189*p - 117)"
+    assert sp.simplify((reported_dlog - event_probability_jet / event_probability).subs(p, p_golden)) == 0
+    assert sp.simplify(reported_dlog.subs(p, p_golden)) != 0
+    assert sp.simplify((sp.sympify(event["dlog_probability_dxi_lambda2"], locals={"p": p}) - 2 * reported_dlog).subs(p, p_golden)) == 0
+
     return {
         "schema": "A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFO_V2",
         "status": "EXACT_FINITE_NORMALIZATION_IDENTITY_AND_JOINT_JET",
@@ -95,7 +117,7 @@ def check() -> dict[str, object]:
         "lean_output_sha256": sha256(ROOT / OUTPUT),
         "declarations": sorted(DECLARATIONS),
         "compiled_declaration_count": len(DECLARATIONS),
-        "exact_symbolic_control_count": 7,
+        "exact_symbolic_control_count": 10,
         "axiom_check": "STANDARD_ONLY",
         "proved": {
             "partition_log_correction_exact": True,
@@ -104,12 +126,14 @@ def check() -> dict[str, object]:
             "moving_normalizer_control_at_Z1_has_source_1_over_log_phi": True,
             "partition_correction_is_common_mode_across_outcomes": True,
             "balanced_branch_contrasts_annihilate_common_mode": True,
+            "native_interface_event_normalizer_jet_is_nonzero_and_free_scale_sensitive": True,
         },
         "remaining_open": [
             "book history weight bound to the same Born raw-response frame",
             "physical normalizer and its variation on the native family",
             "joint q,D,b,m variation owner",
             "map from the physical source to balanced or common-mode outcome readouts",
+            "identification of the instrument event weights with Book path weights",
         ],
         "scientific_scope": "finite outcomes, positive probabilities, explicitly shared history/response interface only",
     }
