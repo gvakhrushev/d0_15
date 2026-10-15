@@ -2192,3 +2192,36 @@ then differentiate the existing full action on the same constrained tangent
 and compare all ten metric slots with `rho0`. Source/Ward, fixed-source metric
 roots, soundness/recovery, physical constraints and the original #310/#202/#317
 terminals remain open. CONTROL review and current-head CI are still required.
+
+## Joint scene/full-payload action fiber (2026-10-15)
+
+The new [Lean capsule](certificates/a4d_native_scene_payload_action.lean)
+composes the literal `K(9,11,13)` scene-walk graph with the full nondegenerate
+raw coframe, Lorentz-affine link and all-grade archive-cochain payload. On
+same-payload scene edges, the exact observable restriction of the existing
+`ActionProtocol` is every profile `c(e,z) >= 1`; a profile below one on even
+one actual edge/payload pair is rejected. For any fixed edge readings, the
+identity and path-concatenation laws determine one and only one additive
+history on all valid walks, but do not select those readings.
+
+Two members of this verification interface have prices
+`1 + sigma_0^2` and `1 + sigma_0^2 + sigma_1^2`. At one identical full matter
+state their edge costs are 1 and 2 and their full-cochain jets in the same
+direction are 0 and 2. Both have zero coframe/link variation for every
+admissible background curve with matter fixed, and both commute with the
+literal all-grade cochain pullback along the archive projection, for any
+supplied background map. The checker replays 14 Lean propositions with only
+`propext`, `Classical.choice` and `Quot.sound`; no `sorryAx` is present.
+Its immutable compiler receipt records the capsule, transitive D0 source
+hashes and toolchain inputs.
+
+This closes the exact underdetermination question for the named product
+verification interface and rules out its formal conditions as a unique
+physical selector. It does not derive the physically admitted edge-cost
+restriction, metric/link refinement, source/Ward identity, stress tensor,
+stationary Einstein equation, curved physical solution, soundness/recovery,
+GR or a global terminal. The next G0 arrow remains the closed native
+history/record preparation on `(q,D,b,m)`, including its allowed variations
+and refinement, mapped to these observable scene-edge costs. Neither example
+is promoted to a physical D0 preparation; #310/#202/#317 retain their original
+scopes. Current-head CI and independent CONTROL review remain required.

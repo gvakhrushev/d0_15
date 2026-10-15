@@ -1,0 +1,153 @@
+D0.Research.NativeScenePayloadAction.complete_product_edge_cost_fiber (N : ℕ)
+  (c : D0.Research.NativeScenePayloadAction.SceneEdge → D0.Research.NativeScenePayloadAction.NativePayload N → ℝ) :
+  (∃ A,
+      ∀ (e : D0.Research.NativeScenePayloadAction.SceneEdge) (z : D0.Research.NativeScenePayloadAction.NativePayload N),
+        D0.Research.NativeScenePayloadAction.observedEdgeCost A z e = c e z) ↔
+    ∀ (e : D0.Research.NativeScenePayloadAction.SceneEdge) (z : D0.Research.NativeScenePayloadAction.NativePayload N),
+      1 ≤ c e z
+D0.Research.NativeScenePayloadAction.subunit_profile_rejected (N : ℕ)
+  (c : D0.Research.NativeScenePayloadAction.SceneEdge → D0.Research.NativeScenePayloadAction.NativePayload N → ℝ)
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge) (z : D0.Research.NativeScenePayloadAction.NativePayload N)
+  (hbelow : c e z < 1) :
+  ¬∃ A,
+      ∀ (e : D0.Research.NativeScenePayloadAction.SceneEdge) (z : D0.Research.NativeScenePayloadAction.NativePayload N),
+        D0.Research.NativeScenePayloadAction.observedEdgeCost A z e = c e z
+D0.Research.NativeScenePayloadAction.every_additive_history_is_forced_by_observed_edges {N : ℕ}
+  (A :
+    D0.Foundation.EndogenousActionQuantum.ActionProtocol (D0.Research.NativeScenePayloadAction.scenePayloadProtocol N))
+  (z : D0.Research.NativeScenePayloadAction.NativePayload N)
+  (S : D0.Research.NativeScenePayloadAction.AdditiveHistoryAction)
+  (hS :
+    ∀ (e : D0.Research.NativeScenePayloadAction.SceneEdge),
+      D0.Research.NativeScenePayloadAction.historyEdge S e =
+        D0.Research.NativeScenePayloadAction.observedEdgeCost A z e) :
+  S = D0.Research.NativeScenePayloadAction.observedHistory A z
+D0.Research.NativeScenePayloadAction.genuine_root_difference (N : ℕ) :
+  D0.Research.NativeScenePayloadAction.OneAnchorGate N (D0.Research.NativeScenePayloadAction.anchorDirection N 1) ∧
+    ¬D0.Research.NativeScenePayloadAction.TwoAnchorGate N (D0.Research.NativeScenePayloadAction.anchorDirection N 1)
+D0.Research.NativeScenePayloadAction.same_state_different_matter_jet (N : ℕ)
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge) (b : D0.Research.NativeScenePayloadAction.NativeBackground N) :
+  deriv
+        (fun t =>
+          D0.Research.NativeScenePayloadAction.oneEdgeReadout N e b
+            (D0.Research.NativeScenePayloadAction.anchorDirection N 1 +
+              t • D0.Research.NativeScenePayloadAction.anchorDirection N 1))
+        0 =
+      0 ∧
+    deriv
+        (fun t =>
+          D0.Research.NativeScenePayloadAction.twoEdgeReadout N e b
+            (D0.Research.NativeScenePayloadAction.anchorDirection N 1 +
+              t • D0.Research.NativeScenePayloadAction.anchorDirection N 1))
+        0 =
+      2
+D0.Research.NativeScenePayloadAction.same_state_different_edge_price (N : ℕ)
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge) (b : D0.Research.NativeScenePayloadAction.NativeBackground N) :
+  D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.oneAction N)
+        (b, D0.Research.NativeScenePayloadAction.anchorDirection N 1) e =
+      1 ∧
+    D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.twoAction N)
+        (b, D0.Research.NativeScenePayloadAction.anchorDirection N 1) e =
+      2
+D0.Research.NativeScenePayloadAction.concrete_scene_edge_is_present :
+  ↑D0.Research.NativeScenePayloadAction.sceneEdge09 = (0, 9)
+D0.Research.NativeScenePayloadAction.scalar_refinement_preserves_energies (N : ℕ)
+  (R : D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain (N + 1))
+  (hR : D0.Research.NativeScenePayloadAction.ScalarRefinementCompatible N R) (psi : D0.Geometry.ArchiveCochain N) :
+  D0.Research.NativeScenePayloadAction.oneAnchorEnergy (N + 1) (R psi) =
+      D0.Research.NativeScenePayloadAction.oneAnchorEnergy N psi ∧
+    D0.Research.NativeScenePayloadAction.twoAnchorEnergy (N + 1) (R psi) =
+      D0.Research.NativeScenePayloadAction.twoAnchorEnergy N psi
+D0.Research.NativeScenePayloadAction.full_archive_lift_is_scalar_compatible (N : ℕ) :
+  D0.Research.NativeScenePayloadAction.ScalarRefinementCompatible N
+    (D0.Research.NativeScenePayloadAction.fullArchiveCochainLift N)
+D0.Research.NativeScenePayloadAction.one_action_edge_refines (N : ℕ)
+  (B :
+    D0.Research.NativeScenePayloadAction.NativeBackground N →
+      D0.Research.NativeScenePayloadAction.NativeBackground (N + 1))
+  (R : D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain (N + 1))
+  (hR : D0.Research.NativeScenePayloadAction.ScalarRefinementCompatible N R)
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge) (z : D0.Research.NativeScenePayloadAction.NativePayload N) :
+  D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.oneAction N) z e =
+    D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.oneAction (N + 1))
+      (D0.Research.NativeScenePayloadAction.payloadRefinement B R z) e
+D0.Research.NativeScenePayloadAction.two_action_edge_refines (N : ℕ)
+  (B :
+    D0.Research.NativeScenePayloadAction.NativeBackground N →
+      D0.Research.NativeScenePayloadAction.NativeBackground (N + 1))
+  (R : D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain (N + 1))
+  (hR : D0.Research.NativeScenePayloadAction.ScalarRefinementCompatible N R)
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge) (z : D0.Research.NativeScenePayloadAction.NativePayload N) :
+  D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.twoAction N) z e =
+    D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.twoAction (N + 1))
+      (D0.Research.NativeScenePayloadAction.payloadRefinement B R z) e
+D0.Research.NativeScenePayloadAction.one_action_archive_projection_refines (N : ℕ)
+  (B :
+    D0.Research.NativeScenePayloadAction.NativeBackground N →
+      D0.Research.NativeScenePayloadAction.NativeBackground (N + 1))
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge) (z : D0.Research.NativeScenePayloadAction.NativePayload N) :
+  D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.oneAction N) z e =
+    D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.oneAction (N + 1))
+      (D0.Research.NativeScenePayloadAction.payloadRefinement B
+        (D0.Research.NativeScenePayloadAction.fullArchiveCochainLift N) z)
+      e
+D0.Research.NativeScenePayloadAction.two_action_archive_projection_refines (N : ℕ)
+  (B :
+    D0.Research.NativeScenePayloadAction.NativeBackground N →
+      D0.Research.NativeScenePayloadAction.NativeBackground (N + 1))
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge) (z : D0.Research.NativeScenePayloadAction.NativePayload N) :
+  D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.twoAction N) z e =
+    D0.Research.NativeScenePayloadAction.observedEdgeCost (D0.Research.NativeScenePayloadAction.twoAction (N + 1))
+      (D0.Research.NativeScenePayloadAction.payloadRefinement B
+        (D0.Research.NativeScenePayloadAction.fullArchiveCochainLift N) z)
+      e
+D0.Research.NativeScenePayloadAction.background_variation_is_blind_one (N : ℕ)
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge)
+  (bcurve : ℝ → D0.Research.NativeScenePayloadAction.NativeBackground N) (psi : D0.Geometry.ArchiveCochain N) :
+  HasDerivAt (fun t => D0.Research.NativeScenePayloadAction.oneEdgeReadout N e (bcurve t) psi) 0 0
+D0.Research.NativeScenePayloadAction.background_variation_is_blind_two (N : ℕ)
+  (e : D0.Research.NativeScenePayloadAction.SceneEdge)
+  (bcurve : ℝ → D0.Research.NativeScenePayloadAction.NativeBackground N) (psi : D0.Geometry.ArchiveCochain N) :
+  HasDerivAt (fun t => D0.Research.NativeScenePayloadAction.twoEdgeReadout N e (bcurve t) psi) 0 0
+'D0.Research.NativeScenePayloadAction.complete_product_edge_cost_fiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.subunit_profile_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.every_additive_history_is_forced_by_observed_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.genuine_root_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.same_state_different_matter_jet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.same_state_different_edge_price' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.scalar_refinement_preserves_energies' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.full_archive_lift_is_scalar_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.one_action_edge_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.two_action_edge_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.one_action_archive_projection_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.two_action_archive_projection_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.background_variation_is_blind_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeScenePayloadAction.background_variation_is_blind_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
