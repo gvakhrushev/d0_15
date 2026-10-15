@@ -389,6 +389,52 @@ provides a candidate operational tick because every step changes the state
 in a new orthogonal direction; it does not identify that tick with physical
 proper time or those Hilbert dimensions with spatial volume.
 
+## The record leaves the inherited Lorentz carrier unchanged
+
+The next test is whether this exact record also changes the old geometric
+readout. It does not. Write \(V_n:\mathbb C^4\otimes\mathcal H_n\to
+\mathcal H_{n+3}\) for the actual three-inclusion recording frame,
+\(U\) for the owned four-state record matrix, and \(L_n(c)\) for left
+multiplication by \(c\in A_n\) in its tracial GNS space. The literal AF
+inclusion and the matrix-unit formula for \(V_n\) give
+
+\[
+ L_{n+3}(\iota^3(c))V_n=V_n(I_4\otimes L_n(c)),\qquad
+ W_n=V_n(U\otimes I)V_n^*+I-V_nV_n^*.
+\]
+
+Since \(U\) acts on the record factor, these identities imply
+\([W_n,L_{n+3}(\iota^3(c))]=0\) for every old observable. The actual
+state update is
+
+\[
+ x_{n+3}=W_nV_n(e_0\otimes x_n)
+        =V_n((a e_0+p e_3)\otimes x_n),
+\]
+
+so its expectation on every inherited observable equals the previous
+expectation exactly. The path-copy formula proves this at every level; the
+checker replays the full matrix-unit basis of \(A_1\), a nontrivial
+\(M_3\) matrix unit at \(A_2\), and the actual first update.
+
+For the canonical \(A_1\) seed, the \(M_2\) component is
+\(p\,\mathrm{vec}(I_2)\), of squared weight \(2p^2\). Conditional on
+that block, the native Hermitian-carrier density is exactly
+\(\rho=I_2/2\). All three Pauli expectations vanish before and after the
+record and remain unchanged at every later depth when restricted to this
+original \(M_2\) subalgebra. The previously certified CAR output still has
+nonzero timelike and top-grade components: those components are not a change
+of this AF Lorentz-carrier state.
+
+This separates two mechanisms that the growing carrier had put side by side:
+the owned AF step adds retained detail and enlarges the available algebra,
+while its present gate has no backreaction on the already-existing Lorentz
+readout. It is not a no-go for genuinely new fine observables or for another
+already-owned interaction. The next physical arrow must couple fine-sector
+records to the admitted \((q,D,b,m)\) transition through an existing action
+and its actual tangent; counting new AF dimensions alone does not establish
+metric expansion, a source, or GR.
+
 ## The current heat does not descend to the metric/link fiber
 
 The attached strategy's next test asks whether the additional heat block can
@@ -471,8 +517,9 @@ The Lean capsule
 proves generic gate/minor and heat-sign arithmetic kernels, plus the abstract
 no-two-axis-collapse theorem for an invertible common frame, with standard
 axioms only. The exact cross-owner checker reports its source SHAs, source Git
-blobs, 2084 exact controls and 61 owner-source pins. These include the
-AF/Lorentz/CAR first-stage bridge, conditional three-term price split, and metric-update replay,
+blobs, 2095 exact controls and 61 owner-source pins. These include the
+AF/Lorentz/CAR first-stage bridge, exact invariance of every inherited AF
+observable under the record gate, conditional three-term price split, and metric-update replay,
 Lorentz and general-GL current-rest guard obstructions, the fixed-\((q,D)\) heat-fiber jet,
 null-sector/domain and off-axis metric controls, the exact \(L=4\) mode
 polynomial, the current-step mismatch, and a 128-step regression in

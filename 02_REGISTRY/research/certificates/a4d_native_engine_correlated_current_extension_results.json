@@ -11,7 +11,7 @@
     "lower_pair": "existing band A/B two-cycle",
     "minkowski_norm_squared": "5/9"
   },
-  "checker_sha256": "dc3568f9af77a86152ebc1f632cf099158cd702a8772b4286aba3ec074a429ce",
+  "checker_sha256": "5737a0752bd0430dd703459d564bce72d74d88e436167d4877cbd8aecf1a4d61",
   "conditional_three_term_price": {
     "conditional_stationarity": "impossible for these three terms alone on this tangent",
     "conditional_total_derivative": ">0 under additivity, shared fixed beta=log(2), and binary-passport scene admission",
@@ -29,6 +29,17 @@
     }
   },
   "control_names": [
+    "AF_A1_record_frame_intertwines_coarse_matrix_unit_b0_0_0",
+    "AF_A1_record_frame_intertwines_coarse_matrix_unit_b0_0_1",
+    "AF_A1_record_frame_intertwines_coarse_matrix_unit_b0_1_0",
+    "AF_A1_record_frame_intertwines_coarse_matrix_unit_b0_1_1",
+    "AF_A1_record_frame_intertwines_coarse_matrix_unit_b1_0_0",
+    "AF_A2_nontrivial_matrix_unit_intertwines_actual_record_frame",
+    "AF_record_gate_output_is_the_owned_growing_carrier_update",
+    "AF_record_preserves_coarse_M2_identity_expectation",
+    "AF_record_preserves_coarse_M2_sigma_x_expectation",
+    "AF_record_preserves_coarse_M2_sigma_y_expectation",
+    "AF_record_preserves_coarse_M2_sigma_z_expectation",
     "AF_recording_generates_internal_timelike_and_top_grade_components",
     "Fock16_and_retained_scalar4_exhaust_the_complete_AF_frame",
     "Herm2_positive_cone_has_future_eigenvalue_boundary",
@@ -699,7 +710,7 @@
     "2/3",
     "-2/3"
   ],
-  "exact_controls": 2084,
+  "exact_controls": 2095,
   "exact_heat_response": {
     "K_at_odd_tick": "5",
     "K_prime_at_s_1": "8",
@@ -793,6 +804,13 @@
       "trace_boundary": "noncompact boost changes the canonical AF trace; Lorentz carrier transport is not a trace-preserving physical symmetry",
       "two_tick_memory": "two actual AF steps retain the full state; each adds an orthogonal p^2 detail, with final weights p^2, p^3, p^2"
     },
+    "af_record_coarse_observable_invariance": {
+      "all_level_identity": "L(iota^3(c)) V_n = V_n (I_4 tensor L(c)); W_n=V_n(U tensor I) V_n^* + I-R_n",
+      "canonical_M2_readout": "rho=I_2/2 at A_1 and at every later record depth when restricted to the original M_2 subalgebra",
+      "consequence": "the actual record gate commutes with every already-present coarse AF observable and preserves its state restriction",
+      "recorded_CAR_components": "nonzero timelike and top-grade CAR components coexist with zero old M2 Pauli polarization",
+      "scope": "the new fine algebra may contain new observables; this proves no metric change of the inherited M2 readout, not a no-go for other admitted couplings"
+    },
     "fibonacci_record_activation": {
       "joint_metric_link_source_Ward_GR": "OPEN",
       "levels_including_input": 4,
@@ -816,7 +834,7 @@
       "preparation_boundary": "seed lacks orientation; all 128 tested post-seed states miss the owned fresh-blank plane",
       "replay": "PASS: 169 exact controls; 15 mathematical mutations; full16 native record; 3 generic Lean propositions; timelike and orientation sectors fail closure"
     },
-    "next_missing_arrow": "extend the exact first-stage AF-to-CAR representation to a physically admitted iterated joint (q,D,b,m) refinement, preserving the full canonical AF state and its scalar/complement sectors; then derive source/Ward and curved recovery. The first AF level now supplies a nonzero timelike/top-grade CAR component after one record, but no physical time or metric transition is yet derived",
+    "next_missing_arrow": "couple the newly recorded fine-sector state to an existing admitted metric/link owner: the current AF record gate preserves every inherited coarse observable, including the original M2 Lorentz readout. Then derive source/Ward and curved recovery; no new selector or fitted coupling is supplied",
     "record_metric_chronology": {
       "active_sector_output": "q_plus=eta on the tested 128-step orbit",
       "hypothesis": "full endpoint-pairing isometry",
@@ -987,7 +1005,7 @@
     "varied_field": "m13=m14=s; q=eta and D=I fixed",
     "vertical_jet_at_s_1": "dK/ds=8; dH/ds>0 for all L>=2"
   },
-  "research_note_sha256": "6526f38c82e6d9bbe5c39ae8b2294cc2148c5bc3cc05091c59f1d871ec8572ab",
+  "research_note_sha256": "eaef9f84c3b6529b5699b800b32e9e31ffcb0d275c9b6f192a20c156a4346d9f",
   "same_current_observer_and_executor_output_on_witness": false,
   "scope": "ALTERNATIVE_EXACT_ENGINE_INVARIANT_SECTOR_WITH_EXISTING_FULL_CAR_CURRENT_READOUT",
   "status": "PASS"

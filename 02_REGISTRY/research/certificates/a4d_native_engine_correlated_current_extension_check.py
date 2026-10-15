@@ -635,6 +635,108 @@ def af_lorentz_fock_bridge(checks):
         'scope': 'exact first-stage kinematic representation and two actual records of the canonical AF vector; the all-k norm formula is analytic from the owned identity; no physical time law, trace-preserving boosts, joint metric transition, source, Ward identity or GR closure',
     }
 
+def af_coarse_observable_invariance(checks):
+    """Prove the owned AF record step changes memory, not its old M2 readout."""
+    def include(pair):
+        x, y = pair
+        fine_x = sp.MutableSparseMatrix(x.rows + y.rows, x.cols + y.cols, {})
+        for i in range(x.rows):
+            for j in range(x.cols):
+                if x[i, j] != 0:
+                    fine_x[i, j] = x[i, j]
+        for i in range(y.rows):
+            for j in range(y.cols):
+                if y[i, j] != 0:
+                    fine_x[x.rows + i, x.cols + j] = y[i, j]
+        return fine_x, x
+
+    def left_action(pair):
+        x, y = pair
+        return sp.diag(sp.kronecker_product(x, sp.eye(x.rows)),
+                       sp.kronecker_product(y, sp.eye(y.rows)))
+
+    # Check the complete A_1 matrix-unit basis in the actual three-inclusion
+    # recording frame. The formula is all-level: every path copy carries the
+    # same left action on the old GNS factor.
+    n = 1
+    data = AF.frame(n)
+    V = data['V']
+    d = data['old_dimension']
+    sizes = AF.counts(n)
+    for block, size in enumerate(sizes):
+        for row in range(size):
+            for col in range(size):
+                x = sp.MutableSparseMatrix(sizes[0], sizes[0], {})
+                y = sp.MutableSparseMatrix(sizes[1], sizes[1], {})
+                (x if block == 0 else y)[row, col] = 1
+                coarse = (x, y)
+                fine = coarse
+                for _ in range(3):
+                    fine = include(fine)
+                intertwining = (left_action(fine)*V -
+                                V*sp.kronecker_product(sp.eye(4),
+                                                       left_action(coarse)))
+                check(AF.zero(intertwining),
+                      f'AF_A1_record_frame_intertwines_coarse_matrix_unit_b{block}_{row}_{col}',
+                      checks)
+
+    # A higher-level hostile check binds the same identity to a nontrivial
+    # M_3 matrix unit in A_2, rather than extrapolating only from A_1.
+    n = 2
+    data = AF.frame(n)
+    V = data['V']
+    d = data['old_dimension']
+    sizes = AF.counts(n)
+    x = sp.MutableSparseMatrix(sizes[0], sizes[0], {(0, 1): 1})
+    y = sp.MutableSparseMatrix(sizes[1], sizes[1], {})
+    coarse = (x, y)
+    fine = coarse
+    for _ in range(3):
+        fine = include(fine)
+    check(AF.zero(left_action(fine)*V -
+                  V*sp.kronecker_product(sp.eye(4), left_action(coarse))),
+          'AF_A2_nontrivial_matrix_unit_intertwines_actual_record_frame', checks)
+
+    # The canonical A_1 trace seed has the maximally mixed M_2 marginal.
+    # The actual W gate is U on the record multiplicity and identity on the
+    # old GNS factor, so this density and every coarse M_2 expectation persist.
+    data = AF.frame(1)
+    V = data['V']
+    d = data['old_dimension']
+    W, _, _, _ = AF.full_operators(V, d)
+    chi = sp.Matrix([[1, 0, 0, 1], [0, 1, -sp.I, 0],
+                     [0, 1, sp.I, 0], [1, 0, 0, -1]])/sp.sqrt(2)
+    canonical = sp.Matrix([sp.sqrt(2)*p*chi[i, 0] for i in range(4)] + [a*p])
+    seed = V[:, :d]*canonical
+    post = W*seed
+    check(AF.zero(post-AF.activate(1, canonical)),
+          'AF_record_gate_output_is_the_owned_growing_carrier_update', checks)
+
+    paulis = [
+        ('identity', sp.eye(2), 2*p**2),
+        ('sigma_x', sp.Matrix([[0, 1], [1, 0]]), 0),
+        ('sigma_y', sp.Matrix([[0, -sp.I], [sp.I, 0]]), 0),
+        ('sigma_z', sp.Matrix([[1, 0], [0, -1]]), 0),
+    ]
+    for name, matrix, expected in paulis:
+        coarse = (sp.SparseMatrix(matrix), sp.MutableSparseMatrix(1, 1, {}))
+        fine = coarse
+        for _ in range(3):
+            fine = include(fine)
+        observable = left_action(fine)
+        before = (seed.conjugate().T*observable*seed)[0]
+        after = (post.conjugate().T*observable*post)[0]
+        check(AF.zero(before-expected) and AF.zero(after-before),
+              f'AF_record_preserves_coarse_M2_{name}_expectation', checks)
+
+    return {
+        'all_level_identity': 'L(iota^3(c)) V_n = V_n (I_4 tensor L(c)); W_n=V_n(U tensor I) V_n^* + I-R_n',
+        'consequence': 'the actual record gate commutes with every already-present coarse AF observable and preserves its state restriction',
+        'canonical_M2_readout': 'rho=I_2/2 at A_1 and at every later record depth when restricted to the original M_2 subalgebra',
+        'recorded_CAR_components': 'nonzero timelike and top-grade CAR components coexist with zero old M2 Pauli polarization',
+        'scope': 'the new fine algebra may contain new observables; this proves no metric change of the inherited M2 readout, not a no-go for other admitted couplings',
+    }
+
 def metric_transition_owner_census(checks, metric_update_data):
     """Replay existing metric, heat and AF recording owners and classify arrows."""
     owner_replays = [
@@ -707,6 +809,7 @@ def metric_transition_owner_census(checks, metric_update_data):
           'fock_record_binding_rejects_uncharged_metric_or_orientation_reset', checks)
     overlap = fock_executor_gate_overlap(checks)
     af_bridge = af_lorentz_fock_bridge(checks)
+    af_readout = af_coarse_observable_invariance(checks)
     return {
         'record_metric_chronology': {
             'owned_rule': 'q_plus=-Q+2*w*wT/(wT*Qinv*w)',
@@ -739,8 +842,9 @@ def metric_transition_owner_census(checks, metric_update_data):
             'replay': outputs['a4d_native_fock_record_binding_check'],
         },
         'af_lorentz_fock_first_stage_bridge': af_bridge,
+        'af_record_coarse_observable_invariance': af_readout,
         'scope': 'limited census of two metric/heat candidates and two record-operator owners; not global owner completeness',
-        'next_missing_arrow': 'extend the exact first-stage AF-to-CAR representation to a physically admitted iterated joint (q,D,b,m) refinement, preserving the full canonical AF state and its scalar/complement sectors; then derive source/Ward and curved recovery. The first AF level now supplies a nonzero timelike/top-grade CAR component after one record, but no physical time or metric transition is yet derived',
+        'next_missing_arrow': 'couple the newly recorded fine-sector state to an existing admitted metric/link owner: the current AF record gate preserves every inherited coarse observable, including the original M2 Lorentz readout. Then derive source/Ward and curved recovery; no new selector or fitted coupling is supplied',
     }
 
 def qD_fiber_nonbasicness(checks, heat_data):

@@ -2329,3 +2329,23 @@ state-change and growing-resolution candidate, not a physical time law or a
 spatial-volume theorem. The joint `(q,D,b,m)` update, trace-compatible boost
 response, source/Ward identity, curved root, soundness/recovery, GR and the
 original #310/#202/#317 terminals remain open.
+
+## Inherited AF readout under the record gate — 2026-10-15
+
+The same first-stage supplement now checks the observable side of the AF
+record transition. In the actual three-inclusion frame, the fine left action
+intertwines as `L(iota^3(c)) V = V (I_4 tensor L(c))`; the owned record gate
+acts as `U tensor I` on that sector and identity on its complement. Thus it
+commutes with every inherited coarse observable and preserves the state
+restriction exactly. The canonical `A_1` `M_2` marginal stays `I_2/2`: all
+three Pauli expectations are zero before and after the record, even though
+the full CAR output has nonzero timelike and top-grade components.
+
+The exact checker replays all five `A_1` matrix units, a nontrivial `M_3`
+matrix unit at `A_2`, the owned first state update, and all four Pauli
+expectations. The all-level statement follows from the path-copy frame
+formula. This classifies the existing record gate as memory/detail growth
+without backreaction on the inherited Lorentz carrier; it leaves genuinely
+new fine observables and other admitted couplings open. AF dimension growth
+alone is therefore not a metric expansion proof. No physical interaction,
+selector, source, on-shell equation, terminal or parent status changes.
