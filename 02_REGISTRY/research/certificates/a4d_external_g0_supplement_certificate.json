@@ -37,10 +37,10 @@
   "inputs_sha256": {
     "02_REGISTRY/research/A4D_EXTERNAL_G0_SUPPLEMENT_REVIEW_2026-10-07.md": "578db7b07183c734df3e3bed03c89e2290daf27e2e90be3874af69fdbcac60f4",
     "02_REGISTRY/research/A4D_NATIVE_CENTERED_METRIC_LIFT.md": "e154e8030327004ec6fae66380de012727cfedb98d239f41e1abffcf496be6bb",
-    "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md": "56d93d0682feb3e5ef096a736f84a9ddb7b4684905208fbcee539e16a113825e",
+    "02_REGISTRY/research/A4D_NATIVE_DYNAMICAL_OWNERSHIP.md": "fd4a15b62b7ae068ac65fd15dd1c94c3b06cc848df592b0af59ef0010c4a4d48",
     "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md": "14abe479decbe831e2949cfd760df42946f5e00d554add5c83192711dbab0bc4",
     "02_REGISTRY/research/certificates/a4d_external_g0_supplement_replay.json": "ed5680dce7654731bacebabc8b0adfd71d936aa6d341170c0aed3c8727e8633a",
-    "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json": "f5071497c57bb61aa7f78d8b2f88fc3344fdc70619ba3728588bf72d285bfe0e",
+    "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json": "1171312362c72ee743f1e11a7e7bb4e848068465f5ecf1819e19c0b0b4ab3456",
     "03_FORMALIZATION/D0/Geometry/A4DCoframeParentConstraint.lean": "23bbc1405ae48cbcc1b73f5472140e26397e5508fd7c980fae5fe562f5f7e537"
   },
   "raw_inputs_sha256": {
