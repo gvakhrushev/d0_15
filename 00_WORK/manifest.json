@@ -70,17 +70,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION.md"
     },
     {
-      "id": "WRK-A4D-RAW-SOURCE-PRECISION-BUDGET",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Compose the already proved auxiliary-gap, finite return-history, prepared-address and finite source-reflection estimates into an explicit error budget in the unchanged h^-2 raw-l1 target, with every dimension, conditioning and moving-calibration factor exposed and checked.",
-      "brief": "00_WORK/tasks/WRK-A4D-RAW-SOURCE-PRECISION-BUDGET.md"
-    },
-    {
       "id": "WRK-A4D-FORCE-NUCLEAR-NORM",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
