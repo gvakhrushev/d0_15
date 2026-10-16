@@ -1,0 +1,25 @@
+{
+  "expected_receipt_mutated": false,
+  "mutations": [
+    {
+      "failed_check": "thermal_normalizer_jet",
+      "mutation": "frozen_partition_derivative",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_check": "feedback_inverse_jet",
+      "mutation": "wrong_inverse_jet",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_check": "heat_exact_Schur_second_response",
+      "mutation": "freeze_thermal_auxiliary_at_second_order",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_check": "complete_native_source_operator",
+      "mutation": "identify_Delta_with_heat_generator",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    }
+  ]
+}
