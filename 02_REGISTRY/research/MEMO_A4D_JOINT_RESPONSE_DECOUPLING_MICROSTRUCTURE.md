@@ -29,7 +29,7 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
-| The complete regular stored-adjoint field chart and exact nonlinear matter reduction are explicit. All 16,744,448 real off-shell amplitude coordinates are eliminated; shell preparation, moving normalization and reference remain. The joint linear operator is `[H_red,T*;T,0]`. Its full q3300 field symbol has validated inertia12+/1−/6zero, with no extra kernel. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Sections 3–7. Other Fourier modes, shell-source blocks and physical admission remain open. |
+| The complete regular stored-adjoint field chart and exact nonlinear matter reduction are explicit. All 16,744,448 real off-shell amplitude coordinates are eliminated; shell preparation, moving normalization and reference remain. The joint operator `[H_red,T*;T,0]` is solved on q3300 and two shell-transfer modes: only proved representation field velocities remain, with the density families retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Sections 3–8. Remaining Fourier modes, nonlinear continuation and physical admission remain open. |
 | The actual stored Dirac on the entire bounded exact adjoint class has a full16 positive representation with unitary returns. The same literal v8 instrument, heat/feedback/matter price and all observer/preparation source jets intertwine on every admitted curve. A genuinely curved native row-rotation has an explicit full128 matter second lift, but its complete directional Hessian lies strictly between0.089 and0.091. | [Unified source, Sections 0.3 and 3.3–3.5](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). The operator/program arrow is established for the declared conditional v8 price; physical primitive/price admission and native refinement remain. The native wave's first velocity is excluded from the joint critical kernel, not all curved roots. |
 | One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
 | The complete second AF price has an exact coherent preparation minimum, noncommuting Hessian and Schur elimination. Its density-block inverse satisfies `norm(M_T^-1)<=log(phi)/p^6` uniformly in level and dimension. A coherent compiler preserves the selected price up to constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [full second source and uniform inverse, Section 5.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). This is the actual output-channel metric, not a replacement Gibbs action or full field/amplitude inverse. Admission and physical action selection remain separate. |
@@ -97,11 +97,32 @@ owned root rectangle, with distance from diag(−1,+1,...,+1) below0.000269.
 At the true root the full symbol has exactly12 positive,1 negative and6
 proved representation-zero directions. Thus the old row-wave failure
 extends to the entire nongauge first-velocity sector of this mode, including
-link/observer variations. The next calculation is the other Fourier matrices
-on `ker T`, with the shell multiplier on all33 shell-transfer frequencies.
+link/observer variations. Section 8 also solves the complete coupled
+shell-transfer blocks at q2000 and q1100. Exact minors valid for every
+`a>b>0` give transfer ranks3/5; thus the full admissible fields modulo
+six representation directions are exactly12/8 inactive-coframe coefficients.
+Their interval Hessian restrictions have inertia9+/3− and6+/2− throughout
+the original root box. The complete reduced density/field KKT therefore
+has inertia(12,6,259) / (11,7,513), including the253/507 complex density
+annihilators. Those give exact positive stationary preparation families at
+fixed geometry in the declared v8 class; they are retained physical-density
+variations, not purification gauge. The next calculation is the remaining
+Fourier matrices and shell-source blocks on the same complete chart.
 No all-mode field inverse, nonflat
 joint root, physical primitive/price admission or controlled refinement is
 claimed; the original fixed-source/raw-response terminal remains OPEN.
+
+The concurrent [affine endpoint/CAR order obstruction](A4D_NATIVE_AFFINE_TRANSLATION_CAR_ORDER.md)
+now narrows the physical readout interface independently of the Fourier work.
+Pure affine translations e0,e1 commute and have one endpoint, while the
+specified full16 reference returns have exact commutator entry
+`2p−2=sqrt(5)−3 !=0`. Therefore an endpoint-only path homomorphism or
+anti-homomorphism matching those four reference returns is impossible.
+This matching hypothesis is explicit; no law that physically forces a
+translation to select those records is inferred. A stateful/history- or
+link-dependent native transition remains open. The companion's20 exact
+normal/optimized controls are consumed after source/result and transitive
+input hash verification, without replay or a new task/process.
 
 The [constrained-price CONTROL intake](https://github.com/gvakhrushev/d0_15/pull/322)
 remains a separately scoped, frozen review input; #334 owns this continuation.

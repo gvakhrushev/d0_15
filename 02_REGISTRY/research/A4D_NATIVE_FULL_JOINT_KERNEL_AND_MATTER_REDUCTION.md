@@ -16,7 +16,10 @@
 одно значение второй вариации. Это снимает задачу обращения огромного
 внеспектрального amplitude-блока. Полный19-столбцовый полевой символ
 на `(3,3,0,0)` решён: инерция12+/1−/6zero, дополнительные нули отсутствуют.
-Остальные Fourier и резонансные блоки ещё нужно решить. Неплоский совместный root, физический допуск программы,
+Две shell-transfer моды также решены в §8: все matter compatibility rows
+и reduced density/field saddle blocks классифицированы; непустые
+стационарные density families сохранены. Остальные Fourier блоки ещё
+нужно решить. Неплоский совместный root, физический допуск программы,
 полная native Cost−Info цена и предел ОТО здесь не утверждаются.
 
 ## 1. Неизменённая задача и сохраняемые компоненты
@@ -390,7 +393,7 @@ Tr_H W {D,D_vw}=0.                                  (19)
 Здесь использованы реальные stationary metric rows, parity, полный Fock
 trace и mixed q/−q support. Это не ambient правило для другой точки,
 не удаление Y из (14) и не новая предпосылка о GL-link admission.
-**Член `Tr W{D_v,D_w}` остаётся.** Общий finite fixture в §8 специально
+**Член `Tr W{D_v,D_w}` остаётся.** Общий finite fixture в §9 специально
 показывает ошибку удаления Y без условий этого доказательства.
 
 ### Конечная Gram-sum формула
@@ -538,7 +541,137 @@ coframe/link/observer скорость этой моды не является �
 stationary tangent. Это не запрет нелинейных решений с другими модами
 и не решение всех saddle blocks (15).
 
-## 8. Проверки и следующий решаемый объект
+## 8. Две shell-transfer моды: решение всех matter compatibility rows
+
+Для q=(2,0,0,0) ровно одна ordered shell pair имеет l=k+q:
+`k=−e0,l=+e0`. Для q=(1,1,0,0) их ровно две:
+`−e0 -> +e1` и `−e1 -> +e0`. Здесь T(v) — стек всех full16 blocks
+`X_v(k)` этих пар, без удаления matrix entries. Его комплексные target
+dimensions равны256 и512; trace condition автоматически выполнено при
+ненулевом q. Ни одна shell density direction заранее не отбрасывается.
+
+### Точные ранги, а не численная экстраполяция
+
+Если роль r неактивна (`q_r=0`), то её coefficient jets имеют J=0
+между указанными occupied endpoints, поскольку `k_r=l_r=0`.
+Это shell invisibility именно coefficient jet, а не его исчезновение
+на полном thermal spectrum; её stabilizer angle может давать T!=0.
+
+На q2000 три active-role0 coordinates совпадают с local SO(3) variation
+`S=Omega0/kappa0` с точностью до shell-invisible inactive coframe jets.
+У Ward jet `P[Gamma(S),Delta]P=0`, поэтому T видит только три inactive
+stabilizer angles. Следовательно rank T<=3. На q1100 шесть active
+coordinates содержат трёхмерный common spatial Ward subspace; остаются
+не более трёх relative-active образов и два inactive stabilizers,
+откуда rank T<=5.
+
+[shell_transfer_reduction.py](sources/d0_native_joint_kernel_2026-10-16/shell_transfer_reduction.py)
+дополняет эти upper bounds явными ненулевыми minors на **всей** области
+`a>b>0`. Номера ниже zero-based, columns — исходный native basis (5),
+entries — row-major full16 matrix. На q2000 columns(7,12,17),
+entries(3,5,6) единственного block дают
+
+```text
+det = 2^19 [(1−sqrt2)+i(−3+2sqrt2)] b^5(a−b)^4 !=0. (24)
+```
+
+На q1100 columns(0,1,2,10,15), entries(0,3,5,6,36) первого block дают
+
+```text
+det = C b^5(a−b)^4 Q(a,b),
+C = (2^32/3)[55−39sqrt2+i(65−46sqrt2)],
+Q = b²+[(16−15sqrt2)+i(36+39sqrt2)]ab/97
+       +[(27+5sqrt2)−i(12+13sqrt2)]a²/97.           (25)
+```
+
+`Im Q=(12+13sqrt2)a(3b−a)/97`. Если imaginary part нулевой при a>b>0,
+то a=3b, где Q=4b²>0. Поэтому (25) не обращается в нуль нигде в этой
+области, включая настоящий root. Полные exact ranks T равны3 и5.
+Положительный рациональный fixture не используется вместо этого довода.
+
+### Все допустимые первые поля после shell equations
+
+На q2000 native field dimension21, ker T dimension18. На q1100 они
+равны19 и14. В обеих модах сохраняются три observer directions и три
+common spatial representation directions. Их complement в ker T состоит
+**ровно** из произвольных inactive-role coefficient jets:
+
+```text
+q2000: delta u1,delta u2,delta u3 in C4, dimension12;
+q1100: delta u2,delta u3 in C4, dimension8.          (26)
+```
+
+У этих представителей active legs и links нулевые как **следствие T=0
+и выбора представителя modulo доказанные Ward directions**. Это не
+заморозка независимых link variations. Полнота (26) следует из точных
+размерностей: pure inactive jets имеют T=0 и не пересекают representation
+subspace, поскольку нулевой active-link component заставляет S=0.
+
+Metric images (26) имеют размер9 и7: active-active entries delta q
+нулевые. На q1100 matter equations дополнительно навязывают
+`delta q01=0` наряду с уже stored conditions `delta q00=delta q11=0`.
+Три/одно metric-invisible coefficient directions при этом **сохранены**
+в12/8-dimensional field space, а не объявлены physical gauge.
+
+Полная система (15) теперь требует решить H_red на (26), затем вернуть
+shell multiplier из `T* S=−H_red v`. Если restricted H невырождена,
+то допустимы лишь field representation velocities; S остаётся в
+`ker T*`, dimensions253 и507 **комплексных** плотностных направлений
+соответственно. Они не равны anti-Hermitian purification verticals и не
+называются gauge. Эти S реализуются положительными малыми изменениями
+`tau=P/128+S` при фиксированном поле, поскольку оставшиеся field equations
+линейны по tau. На q/−q реальная размерность этой семьи удваивается.
+
+Для (26) ordered jet особенно прост: для inactive r имеем t_r(l)=t_r(k),
+`J=8 sum_r[(t_r(k)−1)C(delta u_r)+(bar t_r(k)−1)iota(delta u_r)]`.
+Ни один full4096 thermal block и matter-resolvent term из (20) не удаляется.
+[Численная сборка](sources/d0_native_joint_kernel_2026-10-16/full_shell_transfer_diagnostic.py)
+выбирает preconditioners для12x12 и8x8 restrictions. Их строгая
+[интервальная проверка](sources/d0_native_joint_kernel_2026-10-16/full_shell_transfer_interval.py)
+по той же оценке (23) сохраняет движение D, все веса, coefficient/phase
+conversion и complex assembly/Gram roundoff. J на (26) не зависит от
+root parameters, но полный D и все scalar weights зависят. Получено
+на **всём** исходном root rectangle:
+
+| q | dim restriction | positive/negative/zero | distance to signature upper |
+| --- | ---: | --- | ---: |
+| (2,0,0,0) | 12 | 9 / 3 / 0 | 5.853e-6 |
+| (1,1,0,0) | 8 | 6 / 2 / 0 | 1.702e-5 |
+
+Обе ошибки строго меньше1. Поэтому в этих двух модах полевая часть
+совместного stationary tangent состоит только из шести доказанных
+representation directions; preparation annihilators253/507 сохранены.
+
+### Полный reduced density/field KKT, а не весь исходный amplitude Hessian
+
+Пусть r_T=rank T, m=dim density target и (p,n) — инерция restriction
+на (26). В (15) split `ker T=V+G`, где V=(26), dim G=6.
+Если `H_red g` ненулевой вне ker T, он лежит в range T*, поэтому g
+поднимается совместным S_g. Elimination невырожденного H_V оставляет
+rank-r_T поле, сопряжённое с im T: его saddle block имеет инерцию
+`(r_T,r_T,0)`. Density ker T* остаётся нулевым. По congruence полная
+комплексная инерция reduced shell-density/field KKT равна
+
+```text
+(p+r_T, n+r_T, 6+m−r_T).
+q2000: (12 positive,6 negative,259 zero), dimension277;
+q1100: (11 positive,7 negative,513 zero), dimension531. (27)
+```
+
+Для реальной пары q/−q все числа удваиваются. В (27) **не включены**
+исключённые Q-amplitude signs, отдельные purification/reference verticals,
+affine-shift zero rows и q=0 epsilon/normalizer equations. Это точный
+результат для оставшегося блока (15) после ранее доказанной полной
+amplitude reconstruction, а не объявление исходного огромного Hessian
+положительным или полностью классифицированным.
+
+Единый новый [consumer](certificates/a4d_native_shell_transfer_check.py)
+сводит exact rank theorem и interval restrictions; полный результат
+с B, bounds и source hashes сохранён в
+[SHELL_TRANSFER_SYMBOLS.json](sources/d0_native_joint_kernel_2026-10-16/SHELL_TRANSFER_SYMBOLS.json).
+В остальных частотах kernel и нелинейное неплоское продолжение OPEN.
+
+## 9. Проверки и следующий решаемый объект
 
 [kernel_check.py](sources/d0_native_joint_kernel_2026-10-16/kernel_check.py)
 проверяет тождества на самостоятельном exact rational fixture той же
@@ -578,7 +711,7 @@ q3300 interval calculation. Normal и optimized scientific JSON побайтно
 
 Дальнейший конкретный объект — остальные Fourier matrices (14) на полной
 карте (5), с удалением только **доказанных** representation symmetries.
-Для частот из shell difference set решается весь saddle block (15).
+Для остальных частот из shell difference set решается весь saddle block (15).
 Нелинейное продолжение требует решения оставшихся E/field equations
 (9); их local inverse, неплоский root и refinement-uniform estimates
 этой редукцией не получены. Исходный fixed-source/raw,l1 terminal,

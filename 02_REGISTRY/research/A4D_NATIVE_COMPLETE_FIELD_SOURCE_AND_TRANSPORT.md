@@ -1507,6 +1507,13 @@ resolvent учтены. Шесть нулей — ровно доказанны�
 совместная first field velocity этой моды. Это ещё не all-q inverse,
 нелинейное продолжение или физический допуск программы.
 
+§8 того же владельца решает также coupled shell-transfer blocks q2000
+и q1100: полные matter rows дают exact ranks3/5, оставшиеся12/8 field
+restrictions строго невырождены. Density annihilators253/507 complex
+directions сохраняются как точные stationary preparation families при
+фиксированной геометрии; физическая независимость подготовки остаётся
+условием объявленной v8 задачи. Остальные Fourier блоки ещё открыты.
+
 ## 8. Проверка изменённого расчёта и повторное использование прежнего
 
 `certificates/a4d_native_complete_field_source_check.py` содержит единый

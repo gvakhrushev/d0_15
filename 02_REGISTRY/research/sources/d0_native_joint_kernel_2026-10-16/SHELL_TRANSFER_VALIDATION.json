@@ -1,0 +1,96 @@
+{
+  "schema": "d0-native-shell-transfer-validation/1",
+  "source_ref": "b93f2abde971b8595a95b4d056f4828709e4264a",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T12:47:03.776374+00:00",
+  "commands": [
+    "python3 02_REGISTRY/research/certificates/a4d_native_shell_transfer_check.py",
+    "python3 -O 02_REGISTRY/research/certificates/a4d_native_shell_transfer_check.py"
+  ],
+  "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+  "scientific_output_bytes": 45436,
+  "scientific_output_sha256": "6a19d64572c1f29fc8757f1a5b1d1e4be997ea9208032815cff8c375df1b3543",
+  "exact_rank_identity_checks": 59,
+  "complete_reduced_KKT_sectors": [
+    {
+      "q": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "exact_transfer_rank": 3,
+      "full_field_complex_dimension": 21,
+      "full_shell_density_complex_dimension": 256,
+      "reduced_density_field_KKT_complex_dimension": 277,
+      "reduced_density_field_KKT_complex_inertia": {
+        "positive": 12,
+        "negative": 6,
+        "zero": 259
+      },
+      "only_field_kernel_is_proved_representation_directions": 6,
+      "retained_density_annihilator_complex_dimension": 253,
+      "Q_amplitude_and_reference_vertical_inertia_included": false
+    },
+    {
+      "q": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "exact_transfer_rank": 5,
+      "full_field_complex_dimension": 19,
+      "full_shell_density_complex_dimension": 512,
+      "reduced_density_field_KKT_complex_dimension": 531,
+      "reduced_density_field_KKT_complex_inertia": {
+        "positive": 11,
+        "negative": 7,
+        "zero": 513
+      },
+      "only_field_kernel_is_proved_representation_directions": 6,
+      "retained_density_annihilator_complex_dimension": 507,
+      "Q_amplitude_and_reference_vertical_inertia_included": false
+    }
+  ],
+  "arithmetic_environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "mpmath": "1.3.0",
+    "float": "IEEE_binary64_with_outward_budgets"
+  },
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "144d6c50ea4d72fea1f165599cb3e0619bdb2a49071b6fc7226cf76b9348fbf2",
+    "02_REGISTRY/research/certificates/a4d_native_shell_transfer_check.py": "2b8b9a20fb2cc61e021468ff3d098561c8ec2f54fa08f65a0f14c0129c6e62d9",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/SHELL_TRANSFER_SYMBOLS.json": "6a19d64572c1f29fc8757f1a5b1d1e4be997ea9208032815cff8c375df1b3543",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/shell_transfer_reduction.py": "14070ada8aa6e903eb56f6b6c3fa21c7128044360ed3777fce69e01650ca6b5d",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/shell_transfer_interval_weights.py": "8b53886c786d146a9fd4514c3ddee5f88f0dd354ef6c2a86e073aeb2d028a2a1",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_shell_transfer_diagnostic.py": "93334c5cf63c3d03f36e598f4adc0e31398ae0eca761a46e32e99c1fd5ac3fec",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_shell_transfer_interval.py": "13632b21ddf9d0363343d319ebe949295b6cf9d46195ffe2a48dcebbfacdfb32"
+  },
+  "reused_immutable_definition_hashes": {
+    "full_shell_transfer_interval.py": "13632b21ddf9d0363343d319ebe949295b6cf9d46195ffe2a48dcebbfacdfb32",
+    "full_shell_transfer_diagnostic.py": "93334c5cf63c3d03f36e598f4adc0e31398ae0eca761a46e32e99c1fd5ac3fec",
+    "shell_transfer_interval_weights.py": "8b53886c786d146a9fd4514c3ddee5f88f0dd354ef6c2a86e073aeb2d028a2a1",
+    "full_symbol_interval.py": "2bb2f26be6d6484d087a2e2e2591b681c793b5932790e3552c2b9fdc5021c84d",
+    "full_symbol_interval_geometry.py": "7fa48bf73ba7e8c51dbdf0b4a432e2801ae04cf61a018303a3f345680f5284d6",
+    "ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418"
+  },
+  "mathematical_peer_review": "independent read-only rank, complete kerT decomposition, density-family and KKT congruence review; interval geometry/roundoff/scalar weights reviewed",
+  "published_q3300_calculation_replayed": false,
+  "old_root_search_or_broad_suites_replayed": false,
+  "new_Lean_build": false,
+  "full_original_amplitude_inertia_claimed": false,
+  "all_mode_or_nonflat_root_or_GR_claimed": false,
+  "concurrent_interface_owner_intake": {
+    "paths_sha256": {
+      "02_REGISTRY/research/A4D_NATIVE_AFFINE_TRANSLATION_CAR_ORDER.md": "e0cb43d110d468225b54be37c9ebc26c709d7c68f9b045924c73369c2e1d318e",
+      "02_REGISTRY/research/certificates/a4d_native_affine_translation_record_order_check.py": "fa9cc590c069955462ceb29e36358ced02077e9a86b9a018c720104d7ae22918",
+      "02_REGISTRY/research/certificates/a4d_native_affine_translation_record_order_results.json": "0c9466fae49f0018a76381d5e8d71617a34e401ef1b23e2d53430d8af5c595ba"
+    },
+    "reported_exact_controls": 20,
+    "reported_normal_optimized_output": "BYTE_IDENTICAL",
+    "verification": "source/result hashes and transitive definition pins checked; independent normal/O evidence reused, no replay",
+    "scope": "endpoint-only strict path homomorphism/anti-homomorphism excluded conditional on matching the four specified full16 returns; stateful/history/link transition open"
+  }
+}
