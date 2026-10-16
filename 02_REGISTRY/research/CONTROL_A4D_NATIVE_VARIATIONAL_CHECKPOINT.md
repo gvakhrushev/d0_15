@@ -2509,3 +2509,32 @@ The Ready PR #322 is synchronized to current `main` at
 `add17919b344f0e46115619aa53d2173ecdcf219`. Its PR-body `Baseline` field now
 uses this exact base SHA, as required by the repository's ready-review guard.
 This is review metadata only; it does not alter the scientific status above.
+
+## AF capacity is not expansion in the owned normalized Hodge metric — 2026-10-16
+
+The exact cross-owner check in
+[`A4D_NATIVE_AF_HODGE_EXPANSION_BOUNDARY_2026-10-16.md`](A4D_NATIVE_AF_HODGE_EXPANSION_BOUNDARY_2026-10-16.md)
+closes one direct proposed bridge. AF record capacity grows as
+`d_k = F_(6k+5)`, while the owned normalized four-torus Hodge/CAR point metric
+has diameter exactly `1` at every `L ∈ 4ℕ`; its nearest-neighbor distance is
+`1/L`. The phase edge length and the Hodge difference coefficient are exact
+reciprocals. Thus this operator realizes finer resolution at fixed diameter.
+Removing its `L` prefactor would make the diameter `L`, but no current AF
+owner derives that operator change, nor a map from record tick `k` to lattice
+size `L`.
+
+The certificate rebinds both upstream owners and their Lean receipts, proves
+the scale identity in Lean, and replays 844 exact controls over 128 lattice
+sizes and 35 AF capacity increments. The all-size Connes distance theorem is
+still an analytic result rather than a fully Lean-formalized theorem; the
+capsule also retains the imported CAR `native_decide` axiom leaves. This is a
+scoped boundary for the direct AF-capacity-to-existing-normalized-Hodge
+reading, not a no-go for other admitted AF observables or couplings.
+
+The next load-bearing step remains to derive, from an existing native owner,
+the transition that carries fine AF records into the full constrained
+`(q,D,b,m)` state and the common native price, including its allowed tangent.
+No spatial expansion, source/Ward identity, curvature, Einstein dynamics or
+parent terminal is promoted by this comparison. The five generated artifacts
+are pinned separately from the byte-identical #310 source intake in the
+checkpoint JSON receipt.

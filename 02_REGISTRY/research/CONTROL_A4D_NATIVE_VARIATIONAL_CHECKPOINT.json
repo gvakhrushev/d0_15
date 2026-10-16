@@ -3984,11 +3984,48 @@
     "Golden-gate/native shift weld: exact permutation matrices on the complete site × Fock cochain basis, operator action equality on every cochain, orthogonality and the actual four-Role failure effect are Lean-proved. Physical controlled-return admission, record/count-event derivation, full constrained tangent and source/Ward/GR remain open.",
     "Candidate second jet: 53 checks pass on the stated safe spectral interval and a noncommuting example matches independent finite-difference and Schur diagnostics. It is not the Hessian of admitted full dynamics and does not select a preparation.",
     "Candidate anisotropic normal covariance: exact rational controls distinguish joint from one-sided frame rotation; output remains a covector only. Admitted measure, metric factorization and Einstein source are not derived.",
-    "Finite source reflection: thirteen narrow-compiled finite-coordinate propositions derive covector reconstruction and packed Frobenius normalization conditional on an explicit right inverse. The actual native map, right-inverse existence/bound and physical admission remain open; direct source covectors are retained."
+    "Finite source reflection: thirteen narrow-compiled finite-coordinate propositions derive covector reconstruction and packed Frobenius normalization conditional on an explicit right inverse. The actual native map, right-inverse existence/bound and physical admission remain open; direct source covectors are retained.",
+    "AF-capacity growth d_k=F_(6k+5) compared with the owned normalized Hodge/CAR metric: diameter is exactly 1 and nearest-neighbor distance 1/L for every L in 4N; the direct expansion reading is closed, while a fine-AF to (q,D,b,m) map/common native price remains open. 844 exact controls pass; the all-size Connes metric theorem remains analytic, not fully Lean-formalized."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
   "source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
   "source_head_and_math_blob_verified_remote": true,
   "source_parent": "a235dbbc05631335498cda376671af6c2772dc41",
-  "source_pr": 310
+  "source_pr": 310,
+  "control_generated_results": [
+    {
+      "source_commit": "c57e9d70a6340e5d70fdf22579cce309ab793645",
+      "source_parent": "3bed4c2019d8832fd7715f7a319ab39d60bf29bf",
+      "artifact_copy": "BYTE_IDENTICAL_TO_REVIEWED_CONTROL_COMMIT",
+      "consuming_parent": "D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md; direct AF-capacity to normalized Hodge expansion candidate",
+      "artifacts": [
+        {
+          "path": "02_REGISTRY/research/A4D_NATIVE_AF_HODGE_EXPANSION_BOUNDARY_2026-10-16.md",
+          "sha256": "ac66e883fc4731ea6cdfb29c1e300ec46ac39085f3992a95029b727f86b549ce",
+          "source_blob": "2314ebdeb37c991103a41923e880fe285f7cf349"
+        },
+        {
+          "path": "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary.lean",
+          "sha256": "d9faf6c837db8c158ddedca1bb9bb967523d9cdbddddaeefc20d003659207d74",
+          "source_blob": "d65f176fbfff2587d83788c1f05e966d001d6698"
+        },
+        {
+          "path": "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary_check.py",
+          "sha256": "789bc6a52ac77c4c3fbf1fc30f663e9561cb0e2eef319636717b826f18c00276",
+          "source_blob": "14cb4eaabf917243470f4032dc209a5b75a226f1"
+        },
+        {
+          "path": "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary_output.txt",
+          "sha256": "bfb3ed3945fce86a452b830c601ac12407f698bd02dc785abc6ac280082d7756",
+          "source_blob": "8ab6b0d2bcff1f8ad0f41bc88f397ccbde571828"
+        },
+        {
+          "path": "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary_results.json",
+          "sha256": "dbf7d56981a5863aa52d2169200f1e72692f787ce86248ce3ac860c28d5d819f",
+          "source_blob": "6f6247cb067d425e4a0d5132640e2decb6874288"
+        }
+      ],
+      "result": "SCOPED_NO_GO for expansion through the existing normalized Hodge/CAR metric; no global physical no-go or GR status change"
+    }
+  ]
 }
