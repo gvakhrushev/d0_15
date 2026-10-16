@@ -1,0 +1,177 @@
+{
+  "balanced_clifford_expectation": {
+    "0": [
+      1,
+      0
+    ],
+    "102": [
+      -1,
+      0
+    ],
+    "150": [
+      -1,
+      0
+    ],
+    "170": [
+      1,
+      0
+    ],
+    "204": [
+      -1,
+      0
+    ],
+    "240": [
+      -1,
+      0
+    ],
+    "60": [
+      -1,
+      0
+    ],
+    "90": [
+      -1,
+      0
+    ]
+  },
+  "balanced_memory_minus_trace_K": {
+    "alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "dimension": 99,
+    "hermitian": true,
+    "max_nonzero_per_row": 7,
+    "max_row_l1": 7,
+    "zero_diagonal": true
+  },
+  "balanced_occupation_half_counts": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "balanced_state_amplitudes": [
+    "1/2",
+    "1/2",
+    "1/2",
+    "1/2"
+  ],
+  "balanced_state_support_masks": [
+    0,
+    1,
+    14,
+    15
+  ],
+  "coordinate_preconditioner_inverse_residual_upper": 8.897764679368578e-16,
+  "endpoint_cone_certificates": [
+    {
+      "complement_basis_orthogonality_residual_upper": 2.0499116290938587e-15,
+      "complement_congruence_residual_upper": 0.0016267177046150841,
+      "complement_diagonal_min_lower": 0.03292026208694317,
+      "complement_positive_margin_lower": 0.031293544382328085,
+      "negative_scalar_interval": [
+        "[-0.02537181747216759510085144473454778489637795563144740901979138504422368188828685476772, -0.02537181747216759510085144473454778489637795563144740901979138504422368188828685476772]",
+        "[-0.02534642237332074367983947527499536819417395134240840704544724802823024017994767925876, -0.02534642237332074367983947527499536819417395134240840704544724802823024017994767925876]"
+      ],
+      "negative_scalar_upper": -0.02534642237332074,
+      "t": 0
+    },
+    {
+      "complement_basis_orthogonality_residual_upper": 2.52568881678229e-15,
+      "complement_congruence_residual_upper": 0.0014321957806886715,
+      "complement_diagonal_min_lower": 0.12346589209291808,
+      "complement_positive_margin_lower": 0.1220336963122294,
+      "negative_scalar_interval": [
+        "[-0.01549160677007385951358969003812423409810889281747485271569649900521041183121263193596, -0.01549160677007385951358969003812423409810889281747485271569649900521041183121263193596]",
+        "[-0.01546123385851884507277345182484910677010506322681619917392551388849982266227022610295, -0.01546123385851884507277345182484910677010506322681619917392551388849982266227022610295]"
+      ],
+      "negative_scalar_upper": -0.015461233858518842,
+      "t": 1
+    }
+  ],
+  "finite_data": {
+    "directed_edges": 16,
+    "mode_error_upper_J_X": [
+      5.730186987743823e-10,
+      1.2879098808498323e-07
+    ],
+    "nodes": 16
+  },
+  "fixed_basis_midpoint_t": 0.5,
+  "fixed_basis_orthogonality_residual_upper": 3.161760487311675e-15,
+  "frequency_dimension": 13,
+  "legacy_unbalanced_occupation_counts": [
+    2,
+    1,
+    1,
+    1
+  ],
+  "owned_root_box_d_o": {
+    "center": [
+      "0.063635191594344535042829697433316630182693569761541",
+      "0.0040167350432317252873844519148251220686807163526359"
+    ],
+    "d": [
+      "0.063635191593344535042829697433316630182693569761541",
+      "0.063635191595344535042829697433316630182693569761541"
+    ],
+    "o": [
+      "0.0040167350422317252873844519148251220686807163526359",
+      "0.0040167350442317252873844519148251220686807163526359"
+    ],
+    "radius": "1e-12"
+  },
+  "path_checks": {
+    "all_4096_thermal_modes_and_full16_CAR_retained": true,
+    "all_four_occupation_coordinates_half_along_path": true,
+    "full_Lorentz_source_support": "owned exact homogeneous Euler classification; full Lorentz field-source rows are affine in sigma, both endpoints share the same root",
+    "matter_stationarity_support": "owned exact full16 Dirac square is scalar at this root; a 17-slot purification fits the retained reference128",
+    "q_outside_Omega_minus_Omega": true,
+    "reduced_Hessian_exactly_affine_in_t": true,
+    "reference_dimension": 128,
+    "sigma_is_density_for_all_t_0_to_1": true
+  },
+  "preparation_path": "sigma(t)=(1-t)I16/16+t|chi_bal><chi_bal|",
+  "proof": "The fixed scalar form is affine and negative at both endpoints. Its fixed 12D complement form is affine and positive definite at both endpoints. Convexity preserves both strict signs for all t; the Schur complement then gives inertia 12+/1- throughout.",
+  "purification": {
+    "available_reference_dimension": 128,
+    "balanced_reference_slots": 1,
+    "faithful_reference_slots": 16,
+    "mixture_amplitudes": [
+      "sqrt(1-t)",
+      "sqrt(t)"
+    ],
+    "orthogonal_slots_used": 17
+  },
+  "q": [
+    3,
+    3,
+    0,
+    0
+  ],
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1"
+  },
+  "schema": "d0-full-lorentz-balanced-memory-path/1",
+  "scope": "Only the full-Lorentz-balanced affine preparation segment at the owned stationary homogeneous root, and only the q3300 13-coordinate Fourier block. This excludes the legacy q3300 crossing on this branch; it does not classify other modes, preparation paths, nonlinear branches, physical admission, refinement, or Einstein dynamics.",
+  "source_pins": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/RESULTS.json": "8920803d185af11132dfa274a42d0e307ad43db150ef8e87d7ab83c9bf2f4d0d",
+    "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/full_lorentz_boost_source_check.py": "5cf53fc8e901b51f58024eadb7de282c68008f1be304185d9d16a6c12a44be32",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_CHOICES.json": "be4facb35ddd2532f137db5a27a4ec6da3b97943980e93f9ddea9a8241390d6a",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_interval.py": "19d4e33f7c74465da9079ec4e3c90e0b20b3b1aad448a0cdb1957a3fc61ef41f",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_symbol.py": "1ef97d8f72d5133c75c2c071ed75b8b9ce295322c407c49e91bf589afd2af9fd"
+  },
+  "status": "CERTIFIED",
+  "whole_segment_inertia": {
+    "negative": 1,
+    "positive": 12,
+    "zero": 0
+  }
+}

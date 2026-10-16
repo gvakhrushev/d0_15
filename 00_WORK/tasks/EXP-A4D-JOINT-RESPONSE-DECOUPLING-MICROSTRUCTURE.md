@@ -131,6 +131,20 @@ source, root search or broad spectrum replay. Write paths are the new
 Any signed matrix gate construction must retain its workspace and distinguish
 the v8 scalar price from full native controller/history cost and admission.
 
+## Additive full-Lorentz q3300 continuation — 2026-10-16
+
+The old q3300 crossing is now explicitly scoped to its boost-unbalanced
+stored-state preparation; it does not transfer to the full-Lorentz branch.
+The exact CAR-balanced witness has a stationary affine preparation segment
+from `I16/16` to its rank-one projector. A direct q=(3,3,0,0) outward
+interval certificate proves constant inertia `12+/1-` on the whole segment
+and the complete owned root box. See
+`02_REGISTRY/research/A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md` and its
+source packet. This removes q3300 as a crossing-based route in that branch;
+the original response-decoupling terminal remains open, as do all other
+Fourier modes, coupled nonlinear kernels, native gate admission and
+refinement/recovery. No lifecycle state or task terminal is changed.
+
 This premise now has an explicit local Julia32-label implementation, using
 the same coefficient qubit/golden port/128 outcomes, fixed alpha and tested
 v8 scalar price. Full16 exact source compression gives all12 homogeneous
