@@ -17,12 +17,19 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
-| The existing v8 circuit has one same-operator heat/feedback/matter action and a certified homogeneous joint root. Its positive symbol is now realized by the actual stored native Dirac with `q_native=F eta F^T`, `h_coordinate=G_*^-1`, full16 CAR and retained128 reference. A nonconstant conformal first jet has an exact nonscalar second matter defect that no coefficient-only second acceleration can repair at fixed returns. | [Unified source, Sections 0.1 and 3.2](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). Homogeneous stored realization and the variable true-adjoint extension are distinguished. This excludes the stated coefficient-only germ at fixed returns; jointly moving links, other native operator jets and other curved solutions remain open. Physical preparation, shifts and native refinement remain open. |
+| The actual stored Dirac on the entire bounded exact adjoint class has a full16 positive representation with unitary returns. The same literal v8 instrument, heat/feedback/matter price and all observer/preparation source jets intertwine on every admitted curve. A genuinely curved native row-rotation has an explicit full128 matter second lift, but its complete directional Hessian lies strictly between0.089 and0.091. | [Unified source, Sections 0.3 and 3.3–3.5](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). The operator/program arrow is established for the declared conditional v8 price; physical primitive/price admission and native refinement remain. The native wave's first velocity is excluded from the joint critical kernel, not all curved roots. |
 | One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
 | The complete second AF price has an exact coherent preparation minimum, noncommuting Hessian and Schur elimination. Its density-block inverse satisfies `norm(M_T^-1)<=log(phi)/p^6` uniformly in level and dimension. A coherent compiler preserves the selected price up to constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [full second source and uniform inverse, Section 5.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). This is the actual output-channel metric, not a replacement Gibbs action or full field/amplitude inverse. Admission and physical action selection remain separate. |
-| A common comparator/native-metric family is explicit, including all10 metric tests. Its actual ten raw metric and six frame costates are zero off shell. A different chart point belongs to the literal raw engine ring and matches its positive pairing, but its next output cannot return to the same probability chart through any frame at fixed native metric. | [Matter-clock binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md), [complete field source, Sections 0–3.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). The finite theory requires joint stationarity. The homogeneous binding above does not yet give a native inhomogeneous continuation or its actual aggregation source; a metric update per engine tick is not a primitive requirement. |
+| A common comparator/native-metric family is explicit, including all10 metric tests. Its actual ten raw metric and six frame costates are zero off shell. A different chart point belongs to the literal raw engine ring and matches its positive pairing, but its next output cannot return to the same probability chart through any frame at fixed native metric. | [Matter-clock binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md), [complete field source, Sections 0–3.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). The finite theory requires joint stationarity. The full-class binding above does not yet select the physical preparation, complete action or aggregation source; a metric update per engine tick is not a primitive requirement. |
 | The full observer sector has the same order as the Einstein term. A given Lorentz link has retained polar factors and full16 Gram trace `16 c_pair²`. The basic geometric constraint now has an exact nonlinear chart and complete first/mixed-second link jets. | [Lorentz/source identity](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md), [complete field source, Sections 4–4.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). The Hessian retains its link-acceleration term. The boost diagnostic is not a newly selected action, temporal update or automatic contribution to stored positive heat. |
 | Actual preparation has KL-mass and noncommuting readout sources. Child-dependent golden clocks give a nonatomic limit. The concurrent central-program theorem now transfers all Euler rows of a given Lorentz action exactly, and its actual minimizing preparation has the same address limit with rate `O(p^(2c/17))`. Density/coframe transport has the explicit stored-operator remainder `[M_(chi^-1/2),D]`. | [Complete source, Sections 5–6.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [central variational transfer](A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md), [history/density owner](A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md). Central programmability is not forcing of the physical action. The scalar Gram repair is derived but not selected; geometric volume and address measure remain distinct. |
+
+The [foundation-led primitive reduction](A4D_FOUNDATION_FORCING_NOT_CATALOGUE_SEARCH.md)
+is now consumed: representation equalities are proved on primitive families
+and propagated to all finite ordered words, with actual first/second jets.
+This avoids a catalogue of arbitrary actions. The remaining native
+operational admission and full Cost−Info price diagrams are not replaced
+by programmability of a desired Q.
 
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference
@@ -5520,3 +5527,69 @@ are used; the old v8 root suite, concurrent central/history suites, receipt
 generators and Lean builds are reused without replay. The same five supplied
 files remain byte-identical. This is SOURCE progress, Draft/IN_PROGRESS;
 no original terminal, claim or physical acceptance is promoted.
+
+
+## Complete stored-native program diagram and a curved second lift (2026-10-16)
+
+The [unified source, Section 0.3](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+removes a genuine missing premise rather than proposing another action.
+For every counting-weight stored-adjoint field with
+`A_xy^T h_x A_xy=h_y`, `A_xy v_r(y)=v_r(x)`, put `L_x=sqrt(h_x)` and
+`I_x=Lambda(L_x)` on the full16 fibre. Then `u_r=L_x v_r`,
+`O_xy=L_x A_xy L_y^-1` give unitary actual returns and exactly
+`I D_stored I^-1=d'+d'^dagger`. On the bounded v8 coefficient domain all
+label/coefficient/golden primitive blocks intertwine in their actual order,
+so the entire program, retained outcomes, positive survival, heat generator
+and feedback do too. The same normalized matter and full trace give exact
+H+J_program+R value, source and second-source equality. Moving I, observer
+Gram and normalizers are differentiated; no frozen frame or new source is
+inserted. Physical LCU/controller/pi0 admission, the full native price,
+AF/site refinement and geometric volume remain separate diagrams. This
+uses the foundation result at302e6d0b, which is preserved in this branch.
+
+The previous conformal wave is outside that native class already because
+`G_rr(x+r)=G_rr(x)`. A full24 real-isometric link range calculation also
+obstructs its complete second CAR correction; it is not a statement that
+arbitrary64 GL rows are native. The next explicit curve instead rotates
+only leg2 in spatial23 by `t*cos(2pi(3x0+3x1)/8)`, leaving original observer
+and links unchanged. Since it is independent of its own x2, all actual
+stored-adjoint constraints hold exactly. It has nonzero first Lorentz
+metric curvature on the actual root branch and is nongauge.
+
+Its complete128 occupied matter blocks have `PXP=0`,
+`E2_(+/-e2)=-gamma I16` and zero on the other six momenta. A homogeneous
+length factor `sqrt(1+gamma*t^2/(2*lambda1*d))` is an allowed actual field
+acceleration that repairs every second matter row. This retains all16
+components/reference and the first preparation response; all other
+stationarity obligations remain in force.
+However, evaluating the complete same v8 price gives
+`0.08996033839979331495<S''<0.08996033878441452448`.
+All4096 thermal modes,16 Fock multiplicity,128 reference, feedback and
+normalizer remain. The direct source cancels by the exact root equations;
+8192 scalar edges grouped into1061 exact feature classes give the outward
+interval. This is a new directional source calculation on the existing
+root rectangle, not a repeated root solve. Positive S'' excludes this first
+joint velocity even after matter second repair. It does not exclude
+nonzero first link/observer velocities, other native curves or physical GR.
+The next relevant operator is the complete joint linearized Euler kernel,
+not a second acceleration picked to cancel one scalar price derivative.
+
+Accepted main was integrated at `f27423a20096619180cf0a60d33642420e177afe`,
+including the single workflow and completed parallel results. The merged
+transverse-matching result gives the general conormal
+`(lambda,-Dq*lambda,0)`; the actual m0-only source here has E_h=0 by its
+own raw law, so no contradiction or discarded metric equation follows.
+The flat-shear same-source result prevents attaching unrelated chronology/
+observer terms; it does not cover the new rotational wave. The PF transport
+bound consumes a given readout and does not select one; strict inherited
+partition conditions do not erase changing child-clock data. The dependency
+selector is tooling and is not treated as mathematical closure or a
+mandatory replay. These owners are consumed in their original scopes.
+
+Only the new stored_rotational_wave consumer ran this iteration:14 groups,
+ordinary1.520s and optimized1.461s, with byte-identical scientific JSON.
+The unchanged781-condition result is reused after verifying all four
+source hashes and14 input-definition pins. Old root/certificate suites
+and Lean builds were not replayed. SOURCE remains Draft/IN_PROGRESS;
+original fixed-source/raw-owner, exact refinement, full native Cost−Info
+and physical GR obligations remain OPEN.

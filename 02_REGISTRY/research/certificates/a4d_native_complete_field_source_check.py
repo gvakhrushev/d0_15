@@ -20,7 +20,7 @@ def main():
     folder = repo/"02_REGISTRY/research/sources/d0_native_field_transport_2026-10-16"
     counts = []
     for stem in ("record_frame_source", "lorentz_link_transport", "preparation_measure",
-                 "record_heat_continuation"):
+                 "record_heat_continuation", "stored_rotational_wave"):
         result = load(folder/(stem+".py"), "d0_complete_field_"+stem).run(repo=repo)
         count = result.get("exact_checks")
         if type(count) is not int or count <= 0:
@@ -29,7 +29,7 @@ def main():
     print("PASS_NATIVE_COMPLETE_FIELD_SOURCE exact_checks="
           +str(sum(count for _, count in counts)))
     print(" ".join(stem+"="+str(count) for stem, count in counts))
-    print("scope=full_source_transport_preparation_and_record_heat_continuation")
+    print("scope=full_source_and_native_stored_program_with_rotational_wave")
     print("native_spatial_aggregation=OPEN physical_action=OPEN GR=OPEN")
 
 

@@ -63,10 +63,11 @@ A_xyᵀ h_x A_xy=h_y и A_xy v_r(y)=v_r(x).
 unit observer в нём не отождествляется автоматически с full-CAR current,
 а counting-site trace — с geometric volume.
 
-Следующий физический шаг — один общий native pullback от q,D,b,m,
-подготовки и retained observer/reference к операторам и всем членам того
-же S, с его производными на допустимых кривых. Ни сумма разных цен,
-ни fitted q′, ни замена Dirac его adjoint completion здесь не выбираются.
+Для уже заданной v8 цены полный native operator/program pullback,
+включая движущегося observer и все source jets, строится в §0.3 ниже.
+Следующий физический шаг — вывести допуск этой же программы, подготовки,
+retained reference и всей native цены из одного процесса. Ни сумма разных
+цен, ни fitted q′, ни замена stored Dirac здесь не выбираются.
 
 ### 0.1. Уже существующий same-operator heat и его stored-native реализация
 
@@ -189,6 +190,96 @@ d_j меняют feedback. Их нельзя удалить или замени�
 Таким образом AF-naturality одного gate ещё не сохраняет stationary root
 или полную цену. AF preparation-price также не прибавляется к v8 действию
 без общего native owner.
+
+### 0.3. Полный bounded stored-native класс: один и тот же прибор на всём семействе
+
+Связка §0.1 продолжается за пределы homogeneous точки **без** замены
+stored Dirac. Берём ровно полный класс [joint-adjoint owner](A4D_NATIVE_JOINT_ADJOINT_SOURCE.md):
+counting-site weight, observer h_x>0, Lorentz A_xy и
+
+```text
+A_xy^T h_x A_xy=h_y, A_xy v_r(y)=v_r(x), y=x+r.
+L_x=sqrt(h_x)>0, I_x=Lambda(L_x), u_r(x)=L_x v_r(x),
+O_xy=L_x A_xy L_y^−1.                                  (0a)
+```
+
+Lambda здесь полный exterior lift во всех16 компонентах; фиксированный
+ACDB/ABCD sign bridge включается с обеих сторон как в §0.1. Имеем
+`I_x*I_x=G_x=Lambda(h_x)`, `O_xy*O_xy=I`, `O_xy u_r(y)=u_r(x)` и точно
+
+```text
+I C(v) I^−1=C(Lv), I i_(hv) I^−1=i_(Lv),
+T'_r=Lambda(O_xy) shift_r,
+d'=ell^−1 sum_r C(u_r)(T'_r−I),
+I D_stored I^−1=d'+d'^dagger.                          (0b)
+```
+
+Порядок coefficient/shift сохранён. Собственная r-leg переносится по
+r-edge; переноса всех четырёх ног по каждому ребру здесь не требуется.
+Это полное равенство, а не совпадение frozen symbols. Нет inverse
+Dirac-gap и не удаляется ни один mode, observer или exterior grade.
+
+На открытой bounded области `||u_r(x)||²<1` каждый actual coefficient
+имеет те же v8 BetaHat/ZetaHat unitary dilations с coefficient-qubit root
+`sqrt(1−||u_r||²)`. Полные T'_r unitary. Поэтому его literal 32-word
+construction действует и при noncommuting local coefficients, observer
+и links: те же alpha, positive survival B, heat generator, actual program
+feedback и quadratic matter следуют из (0b). Никакая симметричная
+перестановка coefficient и shift не устанавливается.
+
+Более того, primitive diagram доказан на всём этом классе. Для каждого
+creator/contraction/link, coefficient dilation, label operation и golden
+comparator `V_a I=I U_a`, с I тензорно продолженным identity на всех
+apparatus/reference registers. Здесь перечислены primitives **объявленной условной v8 программы**, не
+полный список physically admitted D0-core операций. Их существование как
+матриц не подменяет remaining native admission. По [foundation-led reduction](A4D_FOUNDATION_FORCING_NOT_CATALOGUE_SEARCH.md#6-аналитическое-следствие-для-сборки-проверять-порождающие-отображения-а-не-все-программы)
+это переносится на каждое конечное ordered word; blank P коммутирует с
+I, а outcome labels сохраняются отдельно. Для **данного v8 H+J_program+R**
+цена и все actual source jets равны при точном преобразовании той же
+подготовки. Это не вывод из одного совпавшего эффекта и не добавочная
+AF-price или новый price-descent constant.
+
+Для движущегося observer вся производная I сохраняется. Из L²=h получаем
+
+```text
+L Ldot+Ldot L=hdot,
+L Lddot+Lddot L=hddot−2Ldot²,
+a=Ldot L^−1, K=Gamma(a), Idot=K I,
+Kdot=Gamma(Lddot L^−1−a²), Iddot=(Kdot+K²)I,
+hatDdot=I Ddot I^−1+[K,hatD],
+hatDddot=I Dddot I^−1+2[K,I Ddot I^−1]
+           +[Kdot,hatD]+[K,[K,hatD]].                    (0c)
+```
+
+Gamma — действительная Lie derivative **полного** exterior representation.
+K не обязан быть antiadjoint в фиксированном counting frame: I есть
+isometry между движущимся и фиксированным Hilbert carrier. Такие же
+формулы действуют для Delta и всех equivariant program operators.
+
+Для native matter v=I Psi, N=v*v нормированная hatPsi=v/sqrt(N) имеет
+`dot v=K v+I dotPsi` и `dot N=2Re(v*dot v)`; производная нормировки
+сохраняется. Если native density operator определён относительно своего
+G, то `hat rho=I rho I^−1`, и его representation term `[K,hat rho]`
+сокращается с `[K,hat Delta]` в trace **до** on-shell ограничения.
+Второй source сокращается дифференцированием того же точного равенства.
+Heat/feedback trace similarity сохраняет весь носитель и multiplicities.
+Равенства относятся к actual admitted curves, не превращают все formal
+linearized solutions singular constraint set в интегрируемые velocities.
+
+Итак, условная field→v8-program/source стрелка для всего bounded
+stored-adjoint класса уже построена. Дальше нельзя снова называть её
+неизвестным generic operator map. Не выведены physical primitive admission
+LCU/controller/preparation, выбор **всей** native Cost−Info цены и её
+исторических расходов, pi0, physical ell/z или native AF-refinement.
+Foundation forcing требует эти оставшиеся диаграммы из того же ядра;
+операторная конструкция не выбирает желаемое Q из каталога действий.
+
+Counting-site условие существенно: при дополнительном weight omega_x
+whitening есть `sqrt(omega_x)Lambda(L_x)`, и shift получает factor
+`sqrt(omega_x/omega_y)`. Нельзя объявить его unitary в прежнем unweighted
+counting пространстве. Адресная PF-мера, geometric volume и эта исходная
+операторная мера не отождествлены. Uniform raw conditioning также требует
+собственных lower bounds на h; smooth sqrt не даёт их автоматически.
 
 ## 1. Actual endpoint-price и все16 rest-source компонент
 
@@ -466,14 +557,14 @@ fixed-q граница данного actual engine step и данного same-
 даёт **операторное** необходимое условие, сильнее averaged equation:
 
 ```text
-P X P=epsilon' P, Q Psi'=−(R_Q tensor I)X Psi, X=Delta'.   (7a)
+P X P=epsilon' P, Q Psi'=−(R_Q tensor I)X Psi, X=Delta'.   (7e)
 ```
 
 P Psi' содержит настоящие shell/reference kernel directions, не выкинутые
-как gauge. При C² и при (7a) остаётся необходимое условие
+как gauge. При C² и при (7e) остаётся необходимое условие
 
 ```text
-P(Y−2X R_Q X)P=epsilon'' P, Y=Delta''.                   (7b)
+P(Y−2X R_Q X)P=epsilon'' P, Y=Delta''.                   (7f)
 ```
 
 Y должен включать actual field second jet, а не искусственно замороженный
@@ -502,7 +593,7 @@ Y_kk=lambda_k I16/4+2 sum_(l=k±qwave) D1_kl D1_lk,
 E2_k=Y_kk−2 sum_(l=k±qwave) X_kl X_lk/(lambda_l−epsilon).
 ```
 
-qwave и 2qwave не принадлежат shell difference set, поэтому PXP=0 и (7b)
+qwave и 2qwave не принадлежат shell difference set, поэтому PXP=0 и (7f)
 имеет восемь отдельных **полных16** blocks E2_k. Для continued critical
 curve все они должны равняться одному epsilon'' I16.
 Эта проверка для **данной** exponential curve уже решена аналитически.
@@ -524,7 +615,7 @@ P_d,o=(d−o)[(14+sqrt2)d+(16+3sqrt2)o]+(8−4sqrt2)o²>0.
 ```
 
 Знак строго отрицателен на всей области d>o>0, включающей actual root
-window. Поэтому prescribed exponential second jet нарушает (7b), даже
+window. Поэтому prescribed exponential second jet нарушает (7f), даже
 после правильного matter first response. Это не перенос вывода из
 рационального nonroot control. Независимая CAR-normal-form и scalar
 four-vector проверка подтверждает обе identity и положительное разложение.
@@ -543,7 +634,7 @@ X_lk|0>=(2h_l|0>+c_l c_k|0>)/4, h_l=z_l*G_*z_k,
 (E2_e0)_00−Tr16(E2_e0)/16
  =sum_(l=e0±qwave) (epsilon lambda_l−|h_l|²)
                             /[4(lambda_l−epsilon)]
- =8sqrt2(d−o)>0.                                         (7d)
+ =8sqrt2(d−o)>0.                                         (7h)
 ```
 
 В обоих слагаемых Gram deficit равен 8192(d²−o²), а gaps равны
@@ -551,7 +642,7 @@ X_lk|0>=(2h_l|0>+c_l c_k|0>)/4, h_l=z_l*G_*z_k,
 nonscalar witness на actual root, независимо подтверждённый двумя выводами.
 Для **любого** добавочного local creator-coefficient second jet при fixed
 returns diagonal-Fourier deltaD_kk Clifford-линеен. Поэтому
-`{D_k,deltaD_kk}` — scalar I16 и не меняет (7d). Итак, этот first jet
+`{D_k,deltaD_kk}` — scalar I16 и не меняет (7h). Итак, этот first jet
 не продолжается C² critical curve с одними coefficient variations, даже
 если изменить их acceleration. Совместные link/observer/operator
 направления и другой first jet не исключены; их допуск ещё надо вывести.
@@ -561,7 +652,7 @@ returns diagonal-Fourier deltaD_kk Clifford-линеен. Поэтому
 должна быть настоящим differential native field map, с оставшимися
 linearized field equations, а не назначенным source. В частности, homogeneous G''
 меняет каждый shell block только на `(z_k*G''z_k)I16`; этого недостаточно
-для nonscalar CAR части (7d). Иной W за пределами coefficient-only класса и совместно движущиеся links
+для nonscalar CAR части (7h). Иной W за пределами coefficient-only класса и совместно движущиеся links
 этим результатом не исключены.
  Необходимый
 first matter response уже вычислен: для k=e0,l=(4,3,0,0)
@@ -587,16 +678,190 @@ matter elimination точный complete second source равен
 S''=Tr[(P/128+kappa(Delta))Y]
     +sum_ALL(k,l) kappa^[1](lambda_k,lambda_l)
                     Tr16(X_kl X_lk)
-    −2 Tr(P X R_Q X P)/128.                               (7c)
+    −2 Tr(P X R_Q X P)/128.                               (7g)
 ```
 
 Divided difference вычисляется при fixed **полном** Z, а при равных
 lambda — через derivative limit. Только matter часть допускает указанные
 малые blocks; замена полного thermal sum одними shell modes запрещена.
-Новый consumer реализует blocks и (7c), но не повторяет старый root solve.
+Новый consumer реализует blocks и (7g), но не повторяет старый root solve.
 Его rational F control `F_diag=1/4,F_off=1/125` явно помечен **nonroot**;
 перенос универсальных утверждений на actual root использует его owned
 interval/gap. Полный affine/physical/root continuation остаётся задачей.
+
+### 3.3. Почему conformal repair нельзя считать native, и полный real-isometric тест
+
+Условия (0a) сами влекут invariant
+
+```text
+G_rr(x)=v_r(x)^T h_x v_r(x)=G_rr(x+r).                   (7i)
+```
+
+Следовательно непостоянный `dot G=phi G_*` из §3.2 с qwave=(3,3,0,0)
+не является stored-native first jet: по r=0,1 он уже нарушает (7i).
+Ни observer motion, ни Lorentz link acceleration не исправляют нарушение
+первого условия. Это точный domain факт, независимо от matter Hessian.
+
+Даже в более широком real-isometric v8 extension все24 mean link
+accelerations `K_r^T=−K_r` не отменяют **полный** conformal E2. На homogeneous
+Fourier block их actual contribution имеет вид
+
+```text
+delta d_k=8 sum_r exp(i theta_r)c(v_r)Gamma(K_r),
+delta D_k=delta d_k+delta d_k*, delta Delta_k={D_k,delta D_k}.
+```
+
+Это не произвольный Hermitian source. Для его pair-creation component
+положим omega=pi/4, t=exp(i omega), z=8(t−1), `K_sum=sum K_r` и
+`Pi_a=I−v_a v_a^T/d`. Matching `E2+delta Delta=scalar` на a=2,3 требует
+
+```text
+w_a=kappa z Pi_a(v_0+v_1),
+kappa=o(128+64sqrt2)/16 *sum_(l=e_a±qwave)1/(lambda_l−epsilon)>0,
+R_a=d Re w_a−(d cos omega−o) Im w_a/sin omega,
+o K_sum v_a=R_a.
+```
+
+Последнее следует из actual pair coefficient
+`8z[A_a+(t−1)B_a]`, где
+`A_a=sum_r v_r wedge K_r v_a`, `B_a=v_a wedge K_a v_a`,
+и contraction на v_a. Два совместных требования дают
+
+```text
+v_2^T R_3+v_3^T R_2=−32kappa o(d−o)²/d<0,
+```
+
+в то время как skew K_sum требует ноль. Native Lorentz/parallel-leg
+условия для этого более широкого24-direction запрета не использовались.
+Один vacuum component отдельно может меняться при произвольной rotation;
+это не решает двух полных CAR blocks. Общие64 GL directions не объявлены
+isometric/circuit-admitted. Обе small-CAR и scalar-four-vector части
+независимо сверены. Этот тест завершает именно прежний conformal adapter;
+следующий пункт строит другой, действительно stored-adjoint first jet.
+
+### 3.4. Искривлённая stored-native семья и конструктивный second matter lift
+
+Положим `F_*=(a−b)I+b11^T`, a>b>0, n=e0 и все A_r=I. Возьмём actual
+rotation generator `J_23=−1,J_32=1` (остальные entries ноль),
+`phi=cos(2pi(3x0+3x1)/8)` и меняем только одну **полную** leg:
+
+```text
+v_2(t,x)=sqrt(1+c t²) exp(t phi(x)J) v_2*,
+v_r(t,x)=v_r* (r!=2), F_r(t,x)=(eta v_r(t,x))^T.        (7j)
+```
+
+Экспоненту можно заменить rational Cayley chart с теми же first/second
+jets. Phi не зависит от x2, поэтому каждая собственная leg параллельна
+на своём ребре **точно при всех t**, без изменения links или observer.
+F остаётся invertible на явном малом интервале: изменение полной строки
+ограничено `||Jv_2*|| |t|+|sqrt(1+c t²)−1| ||v_2*||`. Достаточно, чтобы
+эта величина была меньше (a−b)/2, поскольку min singular value F_* есть a−b.
+Все16 grades, все10 metric slots в общей вариационной задаче и все
+остальные field equations сохраняются; (7j) лишь одна проверяемая кривая.
+
+Это не общий local Lorentz gauge: разные роли не вращаются вместе.
+На гладком unit-torus interpolation y=x/8 имеем phi=cos(6pi(y0+y1)).
+При указанном J sign и стандартном Ricci convention точная линейная
+скалярная кривизна равна
+
+```text
+dot R_g=−32(6pi)² b³(a+b)/[(a−b)(a+3b)] phi !=0.
+```
+
+Opposite J или отдельный naked-star convention меняют sign, не
+nonvanishing. Интеграл first scalar-density variation на flat periodic
+background нулевой; local curvature не подменяет total stationarity.
+
+В положительном coefficient frame положим s=J F_*_2^T,
+`lambda1=128−64sqrt2`, epsilon=lambda1*d. Для l=k±qwave
+
+```text
+V_k=z_2(k)s, W_k=gamma_CAR(V_k),
+D1_lk=W_k/2,
+D2_kk=gamma_CAR(z_2(k)J²F_*_2^T)/2, Y_kk=0 on shell,
+X_lk=D_l D1_lk+D1_lk D_k.
+```
+
+Только k=±e2 имеют ненулевой first response; остальные шесть shell
+momenta аннулируются. Для активных blocks
+`X_lk*X_lk=||u_l−u_k||²||V_k||² I16/4`, где u_k=F_*^T z(k).
+Поэтому full128 effective matter operator имеет **scalar** blocks
+
+```text
+E2_(±e2)=−gamma I16, E2_(other shell)=0,
+gamma=lambda1 ||s||² *[(2+sqrt2)(d+o)+o]
+                              /[(2+sqrt2)(d+o)+2o]>0.
+```
+
+Это другой результат, чем nonscalar (7h). Здесь действительная
+homogeneous length acceleration (7j)
+
+```text
+c=gamma/(2lambda1*d)                                    (7k)
+```
+
+добавляет +gamma I16 только к активным blocks. Все128 second matter
+rows становятся scalar0, epsilon'=epsilon''=0, а first preparation jet
+есть actual `Q Psi'=−R_Q X Psi`. И X, и все reference/kernel directions
+сохраняются. Это конструктивный native second-field jet, а не подбор
+источника или добавление к действию. Он не решает остальные Euler rows.
+
+### 3.5. Полный source на той же семье: thermal carrier нельзя заменить shell
+
+Для любого thermal momentum k и l=k±qwave введём
+
+```text
+u_k=F_*^T z(k), w_l=u_l−u_k,
+b_k=Re(u_k* V_k), b_l=Re(u_l* V_k),
+X_lk=b_k I16+gamma_CAR(w_l)gamma_CAR(V_k)/2,
+X_lk*X_lk=c_kl I16,
+c_kl=||w_l||²||V_k||²/4+b_k b_l.                       (7l)
+```
+
+Это CAR identity, в том числе **вне** occupied shell. Поэтому complete
+thermal contraction вычисляется8192 scalar directed edges, сохраняя
+все4096 modes и factor16. Не нужна большая Fock matrix или повторный
+root solve. Для actual stationary root весь direct source Y сокращается:
+`Tr C{D,D2}=0` по homogeneous coefficient Euler rows;
+`2(D1²)_kk=|z_2|²||s||² I16` сокращается по G_22 Euler row,
+где C=P/128+kappa(Delta). Delta Z'=0 по nonzero Fourier support.
+Следовательно точное второе действие после actual matter elimination
+
+```text
+S''=16 sum_ALL_8192edges kappa^[1](lambda_k,lambda_l)c_kl
+     −gamma/4.                                        (7m)
+```
+
+Kappa имеет **полный** Z, reference128, n=8192, z=2^−20 как в (7g).
+Добавочная length acceleration (7k) не меняет (7m), поскольку первый
+полный source на actual root нулевой. Его нельзя использовать для
+подбора Hessian после решения одного matter уравнения.
+
+[Новый consumer](sources/d0_native_field_transport_2026-10-16/stored_rotational_wave.py)
+вычисляет (7m) наружной interval arithmetic **на прежнем certified d/o
+rectangle**, а не ищет новый root. Только точно одинаковые Q(sqrt2)
+feature pairs группируются; одинаковые энергии используют derivative
+limit. Неравные energy intervals, содержащие0 в знаменателе, отвергаются.
+Строгий результат на всём ранее доказанном root rectangle:
+
+```text
+0.08996033839979331495 < S'' < 0.08996033878441452448,
+```
+
+в частности `0.089<S''<0.091`. Отдельные вклады охвачены интервалами:
+heat `[0.6783815403877,0.6783815407011]`,
+feedback `[−0.003121132334913,−0.003121132333724]`,
+matter `[−0.585300069652997,−0.585300069582938]`.
+Группировка даёт1061 точный scalar term,8192 directed edges,
+из них1248 exact equal-energy и6944 nonzero-gap. Это новый directional
+source calculation, не повторение старого470-check root proof.
+
+Положительное S'' исключает C² critical curve **с данным first joint
+velocity**, даже после matter second lift и произвольного допускаемого
+second acceleration. Если first links/observer или first field direction
+меняются, нужно решать полный совместный linearized Euler operator;
+обнуления одного quadratic form недостаточно. Ни все curved roots, ни
+сам D0/ОТО этим условным v8 результатом не исключены.
 
 ## 4. Настоящая Lorentz link: положительная часть не исчезает
 
@@ -1142,7 +1407,8 @@ heat-domain. Поэтому (18a), полные observer terms и различи
 
 ## 7. Следующая общая конструкция
 
-Вычислены три конкретные части одной недостающей стрелки. Имеющийся
+Вычислены полный record/preparation source и условная native
+operator/program стрелка §0.3 на всём bounded stored-adjoint классе. Имеющийся
 comparator слеп к raw frame при фиксированной rest matter; совпадение
 его positive metric с native pairing не даёт Lorentz Einstein equation.
 Полный actual Lorentz link содержит boost/observer информацию с точной
@@ -1150,12 +1416,18 @@ comparator слеп к raw frame при фиксированной rest matter; 
 Actual preparation несёт собственные KL/normalizer/measure источники
 (14)–(18), а не автоматически normalized spacetime average.
 
-§0.1 уже даёт same-operator heat/feedback и homogeneous stored realization;
-§3.2 вычисляет его первый настоящий nonconstant coefficient/matter jet,
-а §6.1 — остаток другого, density/coframe lift. Теперь нужен один
-допущенный field→program закон, который переносит
-**эту же полную связь**, подготовку и child-dependent clocks в spatial
-carrier, задаёт actual measure и сохраняет их источники. Это не разрешение
+§0.3 даёт same-program equality и полные source/observer jets, а не
+только homogeneous совпадение. §3.3 устраняет ложный conformal native
+adapter. §3.4 строит настоящий искривлённый stored-native curve и second
+matter lift; §3.5 показывает, почему полного critical continuation этого
+first jet всё ещё нет. §6.1 сохраняет остаток другого density/coframe lift.
+
+Теперь требуются исходный physical primitive admission и полная price map
+**того же** процесса, а не ещё один field→heat matrix adapter. Нужно
+связать подготовку, child-dependent clocks, actual spatial measure и
+controller/archive costs со всеми их источниками. Основания применяются
+через primitive/outcome/tensor/refinement diagrams; совпадение текущего
+эффекта или произвольно запрограммированного Q их не заменяет. Это не разрешение
 добавить `I_boost` или иной compensator к действию. Все остальные
 heat, metric, matter, link, shift, controller и archive equations остаются;
 временное обновление полей, fixed-source/raw-owner terminal и физическая
@@ -1179,40 +1451,43 @@ raw CAR matter и actual endpoint transport нельзя отождествля�
 для него исключены **все** frame-исправления при неизменном native `q`.
 Это требование к замкнутости данного engine/readout adapter, а не
 обязательное временное q′-правило вариационной теории. Её следующий шаг —
-actual native continuation за пределы homogeneous realization §0.1 и
-стационарные строки (0) с полным second pullback; для literal v8 curve
-уже доступны необходимые shell equations (7a)–(7c).
+совместный linearized Euler kernel на bounded stored-native классе §0.3,
+с actual first link/observer velocities и всеми строками (0). Для
+конкретной native wave second matter lift уже построен, но (7m)
+строго исключает её first velocity из critical kernel. Это меняет
+следующий вычисляемый объект, не объявляя все curved roots невозможными.
 В (12)–(16g) уже сохранены Gram, constraint-curvature, coherent
 preparation и normalizer члены для этого вычисления. Непосредственно
 вычислена равномерная оценка обратного блока подготовки, но не обращён
 полный field Hessian и не отождествлены разные operator owners.
 
-## 8. Узкая совместная проверка
+## 8. Проверка изменённого расчёта и повторное использование прежнего
 
-`certificates/a4d_native_complete_field_source_check.py` вызывает четыре
-source consumers: `record_frame_source`, `lorentz_link_transport`,
-`preparation_measure`, `record_heat_continuation`. Собранный запуск
-проходит **781** точное условие:119 raw/density,56 link/second-jet,
-376 preparation/measure/Hessian,230 record-heat/continuation/signed-gate.
-Обычный и optimized запуски выполнены параллельно за14.578 s и14.556 s;
-выводы побайтно совпали. Это elapsed times данного совместного запуска,
-не отдельный performance benchmark. Прежние543 conditions сохранены.
+`certificates/a4d_native_complete_field_source_check.py` содержит единый
+вход для пяти consumers: прежние `record_frame_source`,
+`lorentz_link_transport`, `preparation_measure`, `record_heat_continuation`
+и новый `stored_rotational_wave`.
 
-Проверяются actual endpoint-price и все raw-source slots, literal
-curvature/matching family и all-frame fixed-q obstruction; полный16 Gram,
-constrained jets и conormal-independent second source; actual AF channel,
-coherences, readout/BKM Hessian и archive projections; literal stored
-Dirac density defect и scalar repair; actual homogeneous stored/v8 creator
-bridge, полные16 Fourier blocks,128-component matter response, closed
-root-uniform trace/nonscalar identities и неполный thermal-carrier rejection.
-Signed four-copy checks включают zero-mode germ, noncommuting Sylvester
-jet и actual AF *-inclusion со всеми complements/multiplicities. Их
-алгебраический fixture не выбирает physical gate или v8 parameter bound.
+Прежний полный запуск781 conditions (119/56/376/230) остаётся evidence
+публикации713edc1a: normal/optimized outputs были идентичны. В этой
+итерации эти расчёты **не повторялись**. Проверены неизменность четырёх
+source files и14 их definition pins, в том числе actual native Lean
+operator, v8 proof/receipt и actual AF inclusion. Их результаты повторно
+потребляются в тех же областях; изменения других main-пакетов их inputs
+не затрагивают.
 
-Общие second-pullback, inverse, continuation-obstruction и source
-утверждения доказаны выше и независимо математически сверены; finite
-controls их поддерживают. Существующие определения закреплены SHA256.
-Новый consumer читает v8 proof/receipt как documentary inputs, не исполняя
-его470-check root suite. Concurrent central95 и history/density925 checks,
-их receipts, старые suites и Lean builds также не повторяются. Физическое
-действие, native primitive admission и original-parent terminal не повышены.
+Новый consumer исполняет14 содержательных групп: actual full16 CAR;
+whole-class positive bridge с разными endpoint observers; native
+rotational/radial jets; все128 matter first/second equations и их repair;
+вне-shell full16 identity для scalar thermal reduction; exact feature
+carrier/normalizer и полный outward directional Hessian. Normal —1.520s,
+optimized —1.461s, scientific JSON побайтно идентичен. Был запущен именно
+этот изменённый consumer. Совокупный пяти-consumer запуск заново не
+заявляется. General whole-class/jet/range proofs независимо сверены,
+finite controls не заменяют их кванторы.
+
+Определения и старый root rectangle закреплены SHA256. Root search,
+старые470/781/central95/history925 suites, receipt generators и Lean builds
+не повторяются. Accepted main, включая ранее выполненную Lean-работу и
+новый рабочий flow, интегрирован с сохранённым IN_PROGRESS этого SOURCE.
+Не регистрируется physical action, новый task или original-parent terminal.
