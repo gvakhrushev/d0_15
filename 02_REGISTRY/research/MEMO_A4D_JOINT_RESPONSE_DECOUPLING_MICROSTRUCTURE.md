@@ -70,6 +70,19 @@ Thus this synthesis uses the full covector, and uses the cited record-Theorem-B
 stress formula only for its fixed isotropic measure family. The packet's
 pointwise label alone is insufficient; no physical stress is inferred from it.
 
+The concurrent [same-price unfolding](A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md)
+from `3a3c9dda89f84dcf2d2ffd3ee83ffe6126b70548` is preserved as nine
+additional files in this same Draft. It supplies exact auxiliary profiles
+`sigma=K/Tr K`, `X=[(1-z)I+zK]^-1`, their full source derivatives and
+Schur elimination for the existing v8 action. These are mathematical
+auxiliaries, not a new physical preparation or a second AF price. For the
+fixed positive calibrations of that action, their inverse bounds and finite
+history/source residual estimates remove those auxiliary inversion premises.
+They do not invert the physical field block or admit its primitive program.
+The variable-calibration derivative remains the full equation (7); the
+source-error estimate (12) is consumed here only at fixed `beta,M`; the
+Delta-based bounds (13)–(15) also retain fixed `alpha,m,z`.
+
 The next calculation remains the complete joint linearized Euler kernel on
 the **same** stored-native v8 family, with link/observer/preparation jets
 and all ten metric/all sixteen matter rows retained (complete-source

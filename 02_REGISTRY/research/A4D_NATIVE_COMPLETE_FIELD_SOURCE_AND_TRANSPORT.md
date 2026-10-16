@@ -12,6 +12,13 @@ SOURCE #310, carried into #334. Вычисляется источник уже �
 graph. Все16 matter,10 positive-metric и6 orthogonal-frame координат
 сохраняются. Физический закон агрегации, допуска и полной динамики не выбран.
 
+В этом же Draft потребляется [точное разворачивание той же v8 цены](A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md),
+SOURCE `3a3c9dda`: heat density и feedback precision исключаются как
+математические auxiliary variables с сохранением полного source/Schur
+члена. Физическая подготовка, полный field kernel и admission этим не
+заменяются. Остаточная source-оценка используется при fixed `beta,M`;
+движущиеся калибровки требуют полной формулы (7) её владельца.
+
 ## 0. Совместная стационарность и действительный операторный вход
 
 [BOOK03 §03.8](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md#038-finite-equations-of-motion)

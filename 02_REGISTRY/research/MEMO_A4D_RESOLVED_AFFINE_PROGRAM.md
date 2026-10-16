@@ -71,6 +71,10 @@ For the bounded stored-native v8 family, the operator, literal program,
 heat/feedback/matter price and first/second source jets now intertwine on
 the whole declared class. That conditional operator/program arrow is proved;
 it does not select physical primitives or the complete native Cost−Info action.
+The concurrent [exact same-price unfolding](A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md)
+removes the mathematical heat-density/feedback-precision blocks with their
+actual source and Schur terms; its auxiliary inverse bounds leave the
+physical field block unresolved. It introduces no physical Gibbs preparation.
 A genuine curved row-wave has an exact full128 matter second lift, but its
 complete price Hessian is positive on that first velocity, so it cannot
 be repaired by acceleration
