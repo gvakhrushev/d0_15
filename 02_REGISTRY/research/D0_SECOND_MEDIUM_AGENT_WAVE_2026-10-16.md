@@ -84,4 +84,4 @@ N01 использует [тонкий адаптер](sources/d0_medium_wave2_2
 
 #334 (`exp/a4d-joint-response-continuation-2026-10-16`, head `19b22bda285d10c1393da7e4ecb495823217a7f6`) этим PR не изменяется. Узкий Lean-срез #334 в эту поставку не входит.
 
-Регистрационный коммит: `0d836192d9c4f7515abea8b8bbd73d4848567c6b`. Номер governance PR дописывается в эту квитанцию после открытия PR.
+Регистрационный коммит: `0d836192d9c4f7515abea8b8bbd73d4848567c6b`. Governance PR: [#335](https://github.com/gvakhrushev/d0_15/pull/335). Он не слит этим проходом; исполнители читают briefs с main только после приёмки.
