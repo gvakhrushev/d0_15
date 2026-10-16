@@ -86,6 +86,7 @@ jobs:
         run: |
           python tools/test_task_dispatch.py
           python tools/test_run_research_certs.py
+          python tools/test_research_input_closure.py
           python tools/test_ci_replay_reuse.py
 
       - name: Check unchanged scientific inputs against a successful Ready run
