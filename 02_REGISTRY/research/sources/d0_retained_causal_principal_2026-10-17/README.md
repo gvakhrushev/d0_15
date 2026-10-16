@@ -4,9 +4,11 @@ Consumer: [full derivation](../../A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.m
 Front A in the existing Draft #334. This packet computes the complete
 three-field principal response of existing retained role labels16/8/24.
 The positive coherent detector has the full Einstein curl source with
-clock coefficient1/192; every fixed diagonal weighting fails. Physical
-detector admission, price, nonlinear/all10 completion and joint refinement
-are not asserted.
+clock coefficient1/192; every fixed diagonal weighting fails. The immediate
+exact nonlinear consumer then excludes every fixed positive three-label
+detector in the same placement as universal EH. Physical detector/price,
+other coherent outputs, nonlinear/all10 completion and joint refinement
+are not decided by that scoped exclusion.
 
 `check_principal.py` reads pinned owner bytes and executes only the frozen
 creator/order definitions, never previous checkers' run functions. It
@@ -21,6 +23,8 @@ first-exit limit, boundary/source and strict-domain Julia proof.
 python3 02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_principal.py
 python3 -O 02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_principal.py
 python3 02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/test_mutations.py
+python3 02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_nonlinear.py
+python3 -O 02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_nonlinear.py
 ```
 
 `RESULTS.json` is the new helper output; `MUTATIONS.json` records four
@@ -31,3 +35,10 @@ CI, physical admission or GR closure. Existing roots, spectra and Lean
 were not replayed. The user's latest pasted input is byte-identical to
 the already preserved `d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt`;
 its scalar-weight/contorsion assertion is not a premise of this result.
+
+`check_nonlinear.py` consumes pinned definitions and the literal all-angle
+matrix assignment; it never executes previous run() functions.
+`NONLINEAR_RESULTS.json` and `NONLINEAR_VALIDATION.json` record the exact
+angular density, full Euler source, quartic discrepancy and class-level
+consumer. The first80-check output, mutation receipt and its validation
+remain immutable at their original checkpoint `e38747e4`.

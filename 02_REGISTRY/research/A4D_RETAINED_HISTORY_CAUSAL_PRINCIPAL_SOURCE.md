@@ -15,6 +15,13 @@ diagonal probabilities gives that response. Among positive detectors on
 these three labels, the coherent direction is unique up to scale if its
 principal response must vanish on every longitudinal gauge probe.
 
+The immediate nonlinear test is also completed below: this unique fixed
+direction has a nonconstant angular coefficient. Together these facts
+exclude **every fixed positive three-label detector in the specified
+placement** as a universal nonlinear EH reading. The useful principal
+identity is retained without treating this excluded completion as a
+future candidate.
+
 This specifies an observable on the existing retained register. It does
 not derive its physical detector, preparation or price. In particular,
 the factor `1/sqrt(3)` is not an already implemented native readout gate.
@@ -233,7 +240,58 @@ This classifies three-label detectors under a stated geometric condition.
 It does not derive that condition from operational admission, classify
 all128 outcomes, or promote Pi_v to a physically chosen D0 pointer.
 
-## 5. How this is used, and what remains in the parent proof
+## 5. Complete nonlinear test of the fixed three-label class
+
+Do not stop at (10). On the already owned exact cone
+`e=s O_01(theta(y))`, `y=x2`, the full16 identity is
+
+```text
+Tr J_0^2=4[1+cos^2(2theta)](theta')^2,
+sum_chi J_chi=4J_0.                                  (12)
+```
+
+These formulas hold at every angle, not just near theta=0. The existing
+faithful-shell/clock calculation therefore gives the very same detector
+
+```text
+L_v[theta]-L_v[constant]=K <[1+cos^2(2theta)](theta')^2>,
+K=(1-exp(-beta/s^2))/(192s^2),
+E_theta=-2K{[1+cos^2(2theta)]theta''
+                       -sin(4theta)(theta')^2}.      (13)
+```
+
+The intrinsic action on this exact family is
+`I_EH=-2s^2 <(theta')^2>`. Its nonzero constant calibration fixed by
+(10) would give `2K <(theta')^2>`. The **exact** discrepancy is
+
+```text
+L_v-L_v[constant]+(1-exp(-beta/s^2)) I_EH/(192s^4)
+ =-K <sin^2(2theta)(theta')^2>.                       (14)
+```
+
+For every nonconstant smooth periodic theta the right side is strictly
+negative. It is not a boundary term. For `theta=epsilon cos y` its first
+nonzero term is `-(1-exp(-beta/s^2))epsilon^4/(384s^2)`.
+There is also a local source test: at `theta=pi/8`, `theta'!=0`,
+`theta''=0`, the exact EH cone source vanishes but (13) equals
+`2K(theta')^2!=0`. No constant normalization repairs that source.
+
+This decides the entire **fixed PSD three-label class**, not only Pi_v.
+Any such detector giving a nonzero universal EH source must first match
+the flat all-three-field Hessian. Section4 forces it to be `t Pi_v`,
+`t>0`; (13)–(14) exclude every such constant multiple. A zero detector
+does not give the nonzero Einstein response. Thus no fixed positive
+operator on labels16/8/24, with the stated coefficient0/both-port/first-exit
+placement and faithful shell, is a universal nonlinear EH reading.
+
+This is not a no-go for field-dependent detectors, other word/coefficient
+coherences, different admitted preparations, a complete history price
+with its independently computed matter source, or D0/GR. In particular,
+an angle-dependent correction cannot be inserted merely to cancel (14):
+its physical origin, detector derivative and entire action source would
+need to be derived from the same process.
+
+## 6. How this is used, and what remains in the parent proof
 
 The previous one-cone history/EH equality is not extrapolated to diagonal
 probabilities. Its full principal consumer is now explicit: preserve the
@@ -246,20 +304,23 @@ unnecessary requirement for this response quotient.
 The supplied scalar-weight/contorsion argument remains false for the
 reasons already proved by the coframe/source owner. The present calculation
 uses actual retained word amplitudes instead. It supplies a specific
-coherent detector/source interface for the physical action owner, rather
-than another unrestricted rank search or an added desired torsion term.
+coherent principal detector/source interface for the physical action owner,
+and rules out its whole fixed-positive-three-label nonlinear completion.
+Do not search more constant weights in this exhausted detector class.
 
-Remaining: a native realization and physical Cost−Info binding of that
-coherent history reading, its actual prepared matter/observer/clock jets,
-the nonlinear completion and the other metric variations, and a compatible
+Remaining: a physically derived complete history detector/Cost−Info law
+beyond the excluded fixed class, its actual prepared matter/observer/clock
+jets, the nonlinear source and the other metric variations, and a compatible
 nonflat joint refinement family. The existing common-real-E0 winding-cone
 obstruction is retained: the faithful shell used for this readout is not
 thereby made stationary. No physical source term is silently added.
 Front B still uses the original independent fixed g/tau, all10 packed
 metric rows, unweighted raw sum, h^-2 normalization and #216 comparator.
 
-The [bounded exact helper](sources/d0_retained_causal_principal_2026-10-17/check_principal.py)
+The [bounded principal helper](sources/d0_retained_causal_principal_2026-10-17/check_principal.py)
 checks the new full16 component identities and principal symbols from
-pinned definitions only. Previous root, spectral and Lean entrypoints
-are not executed. See its adjacent results/validation for the exact run
-and review boundary.
+pinned definitions only. A separate
+[nonlinear consumer](sources/d0_retained_causal_principal_2026-10-17/check_nonlinear.py)
+checks (12)–(14) without changing the original80-check output. Previous
+root, spectral and Lean entrypoints are not executed. See adjacent
+results/validation for the exact run and review boundary.

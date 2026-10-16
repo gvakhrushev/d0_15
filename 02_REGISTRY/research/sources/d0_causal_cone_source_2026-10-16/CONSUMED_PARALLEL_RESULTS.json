@@ -88,6 +88,25 @@
     },
     "source_ref": "caa90af1f67a06dab46704c80031ad98a2de699b"
   },
+  "complete_retained_causal_nonlinear_checkpoint": {
+    "conclusion": "No fixed PSD detector on labels16/8/24 with same firstexit/coefficient0/bothports/faithfulshell placement gives universal nonlinear EH up to nonzero fixed scale; principal coherent identity remains valid.",
+    "consumer": "Complete the candidate test immediately rather than extrapolate a flat principal match. Exhaust the specified fixed positive three-label class.",
+    "exact_calibrated_action_gap": "-c_beta/(192s^2)*mean(sin^2(2theta)*theta_prime^2)",
+    "exact_source": "-c_beta/(96s^2)*[(1+cos^2(2theta))*theta_second-sin(4theta)*theta_prime^2]",
+    "new_exact_checks": 19,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Physical complete-history detector/price beyond the exhausted fixed3class, actual matter/clock, nonlinear all10 equations and joint refinement; original terminal unchanged.",
+    "principal_checkpoint": "e38747e4",
+    "prior80_receipt_preserved": true,
+    "sha256": {
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md": "36dedb1923b77874d18a5db954d0f34bc3dcd19893ec73f77b65ef744f39593b",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/NONLINEAR_RESULTS.json": "b8b86c3aef71d7fe031e26f79a7e033c14ef90d76e439656f19801705b0527b9",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/NONLINEAR_VALIDATION.json": "48c43dfadfab170be65e2827dd07f270f5a065625d1a686bb40c2f413c20cef7",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/README.md": "5229310b80d3e8c63828abfe9f9f9a0e172a06ad1c3dec71f715002074ec2d86",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_nonlinear.py": "33de3943d66034c22d4c4bee214cd9cd17b81378fff2163017f244724b7dcb86"
+    }
+  },
   "complete_retained_causal_principal_checkpoint": {
     "base": "5299ddf1bf0e81b28252acf9f2729b1947cc3292",
     "conclusion": "Coherent projector on existing labels16/8/24 yields -(1-exp(-beta/s^2))*I_EH^[2]/(192*s^4); diagonal role probabilities cannot; positive three-label detector unique up to scale under longitudinal null condition.",

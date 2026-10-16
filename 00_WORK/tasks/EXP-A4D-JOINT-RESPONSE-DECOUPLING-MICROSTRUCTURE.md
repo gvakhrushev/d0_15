@@ -400,6 +400,15 @@ longitudinal pure-gauge Hessian probe and a transverse normalization probe.
 Check the actual defect-root derivatives before extending a selected-label
 kernel to all outputs. Do not replay old roots, spectral suites or Lean.
 
+Immediate nonlinear consumer of the same result: use the already owned
+all-angle full16 cone connection, not a new family search, to test the
+unique fixed three-label coherent direction beyond its principal Hessian.
+Derive its angular coefficient and full Euler source. Together with
+principal PSD uniqueness this decides whether **any fixed positive
+three-label detector** can give universal nonlinear EH on this cone class.
+Write only an additional bounded helper/result in the same source folder
+and the existing root-owned consumers; preserve the first80-check output.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

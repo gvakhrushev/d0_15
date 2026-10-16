@@ -164,9 +164,13 @@ quadratic reading `-(1-exp(-beta/s^2)) I_EH^[2]/(192s^4)` and the full
 three-field curl source. Among fixed positive detectors on those three
 labels, the gauge-null condition determines this direction up to scale.
 This is a response quotient, not a requirement to reconstruct every
-coframe jet. The matrix observable does not establish an admitted native
-detector or its Cost−Info price; those are the next concrete inputs to
-physical binding, followed by nonlinear/all10 completion and joint refinement.
+coframe jet. The immediate exact nonlinear calculation then finds an
+angular factor `1+cos^2(2theta)` and its genuine source derivative.
+Principal uniqueness plus this failure exclude every fixed positive
+three-label detector as universal nonlinear EH in that placement.
+Do not continue constant-weight searches there. The physical complete
+history law must be derived beyond this exhausted class, with its actual
+detector/price/preparation jets, nonlinear all10 source and joint refinement.
 
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
