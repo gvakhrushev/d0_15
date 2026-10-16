@@ -4,6 +4,9 @@
 Local uncommitted edits are never copied. Each certificate gets a fresh detached
 worktree; generators may create untracked products but must not change tracked
 files or the checked commit. Logs are evidence, never a reusable result cache.
+
+Selection is research_input_closure.certificate_paths. An unresolved dependency
+stays selected; the filename diff must not narrow the replay.
 """
 from __future__ import annotations
 
@@ -226,7 +229,9 @@ def main() -> int:
                 if args.base else None)
         if git(args.repo, "status", "--porcelain=v1", "--untracked-files=no"):
             print("Tracked working edits are omitted; replay uses committed snapshot " + commit, flush=True)
-        certs = select_certificates(args.repo, commit, base)
+        # Filename diff remains select_certificates, used by the closure only to
+        # reject a narrower set. Unresolved dependencies stay in this replay.
+        certs = __import__("research_input_closure").certificate_paths(args.repo, commit, base)
         log_dir = args.log_dir or args.repo / ".build/research-certificates" / f"{commit[:12]}-{uuid.uuid4().hex[:8]}"
         results = replay(args.repo.resolve(), commit, certs, args.workers, log_dir.resolve())
     except ReplayCancelled as error:
