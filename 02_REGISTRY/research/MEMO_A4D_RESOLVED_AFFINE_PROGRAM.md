@@ -233,6 +233,28 @@ field-to-SELECT jets. Only constant controls can be approximated while
 preserving those already supplied jets; code complements and actual costs
 still belong in the same-process law.
 
+The [complete retained-channel and native cost source](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md)
+now supplies a positive same-process transition. All128 actual outcomes
+give `Phi=Id+epsilon L`, with the actual recycling map and no record reset.
+The total-count tilt and moving preparation/field sources are explicit.
+Summing the existing port1 outcomes gives `E_port1=p epsilon Delta`;
+the original0/10 code therefore contributes the derived flat cost
+`n+p beta_h R0`. This is an actual cost component, not a selected full price.
+On flat geometry all16 forms relax to I16/16 in each positive momentum
+block; momentum weights remain arbitrary. The complete fixed algebra and
+invariant Fourier cutoffs yield a strong trace-class continuum process,
+with reference128 retained. On finite variable geometry, a faithful
+stationary system density exists exactly when recycling preserves ker D;
+this does not supply its purification or native admission.
+
+The same process has an exact full-pointer entropy chain and a controlled
+first-shell C1 source `beta_h d lambda_h log(1/epsilon)+O(1)`. Its coherent
+record entropy is instead the entropy of the final system/reference
+marginal. For a given full-code prior, the complete operator-information
+source has a finite-state costate recursion. Use this actual history/cost
+interface to resolve the remaining code/Info binding and source equality;
+do not identify pointer entropy, coherent information and v8 H+J+R by name.
+
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
 strictly positive on a longitudinal germ with all10 linearized Einstein

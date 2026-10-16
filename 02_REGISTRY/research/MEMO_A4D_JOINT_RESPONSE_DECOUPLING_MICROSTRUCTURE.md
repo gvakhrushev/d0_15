@@ -29,6 +29,7 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
+| Every actual retained128-outcome round gives an exact CP matter channel and total-count tilt. Its original port1 observable is `p epsilon Delta`; original golden0/10 code fixes the flat port-cost `n+p beta_h R0`. Flat full16 relaxation, full fixed algebra and strong trace-class continuum process follow without resetting records. Pointer and coherent record information have separate exact source diagrams. | [Complete retained channel/native cost](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md). Consume actual evolution, preparation derivatives and original code weights in the full price bridge. Stationary momentum weights are not Gibbs; finite faithful system stationarity does not give a reference128 purification. Complete code/Info selection, native primitive admission and Einstein/refinement equality remain open. |
 | The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
 | A fixed-forward positive-adjoint completion now has an explicit local full-Lorentz matrix instrument, the same tested v8 scalar price and all transverse sources. The faithful seed remains critical; the old pure seed fails the new boost rows. Two derived occupation balances characterize stationary homogeneous E0 preparations, with an explicit balanced rank8 root on the same geometry. | [Full Lorentz source](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md). The original native primitives must generate its onsite matrix gates, adjoints, preparations and outcomes with their full retained-history cost. This does not select a physical extension or transfer the stored-sector kernel to the new state/domain. |
 | The full coframe defect uniquely reconstructs all24 Levi–Civita connection components under metricity/torsion-free assumptions. Its exact curvature/torsion transgression gives the intrinsic nonlinear Einstein covector. A local regular pp-wave vacuum metric satisfies both stored-adjoint kinematic conditions. | [Coframe/GR reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md). The full native price/source has not been equated with this intrinsic reading. The example is neither a periodic v8 stationary solution nor a refinement theorem; unrestricted geometric metric variations must still match the native variation image. |
@@ -6151,3 +6152,39 @@ consumer rather than a new census. No new action, source row, state copy,
 clock law or full-Lorentz admission is installed. The remaining constructive
 programme must derive these physical interfaces in the same process.
 The original fixed-g/tau, all10 raw h^-2/#216 terminal remains open.
+
+## Actual retained dynamics and original code-cost source — 17 October 2026
+
+The [complete retained-channel owner](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md)
+now derives the full marginal process from the existing128 outcomes:
+`Phi_h=Id+epsilon[T_h(D_h rho D_h)-{Delta_h,rho}/2]`.
+Old records remain in the global state and never reinteract. This supplies
+the actual matter evolution, complete repeated-exit generating map and
+all moving preparation/field sources, beyond the first-exit observable.
+No imaginary-time preparation or physical reset is used.
+
+The existing golden port1 measures `p epsilon Tr(rho Delta_h)`. Original
+port0/direct0 and port1/return10 costs1/2 therefore fix the port-cost
+component exactly; on flat geometry it is `n+p beta_h R0`.
+The nonblank conditional port distribution `(p²,p)` has information p³
+relative to the original reference `(p,p²)`. Reversing that reference
+would change the code. These are derived coefficients of the actual tape,
+not a free normalization of an independently selected R term.
+
+The full flat16 recycling map has sharp traceless norm
+`(3+sqrt(1-nu²))/4`. Its complete stationary system algebra is arbitrary
+M16 at zero momentum and one scalar I16 at every positive momentum;
+reference128 remains a tensor spectator with all correlations retained.
+Invariant Fourier windows give a strong CP continuum process for fixed
+trace-class inputs. The normalized Fourier compression of a fixed
+finite-energy input gives the limiting total counts without a second
+energy moment. Momentum weights remain arbitrary rather than Gibbs.
+
+Finally the complete pointer entropy has an exact conditional chain and
+first-shell C1 logarithmic source. The coherent record entropy equals
+the final system/reference entropy instead. A given complete code prior
+has an exact operator-information/costate source on that same finite
+process. The consumer is now the actual complete code/Info binding and
+its physical field source; the port-cost component alone does not close
+it. Native primitive admission, equality with intrinsic Einstein sources,
+compatible joint refinement and the original terminal remain open.

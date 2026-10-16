@@ -109,6 +109,34 @@
       "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/check_exit_inverse_uv.py": "d700850b4920c14229b76d09b8d589ca67c9fda6e5ea80d0a5307b89bc54d332"
     }
   },
+  "complete_record_channel_native_cost_checkpoint": {
+    "analytic_proofs_distinct_from_finite_checks": true,
+    "base": "ec5d6a00b14dcb26026c687bc37d49b0b31f73be",
+    "conclusions": [
+      "Exact full128 GKSL Euler channel, all-count tilt and full normalized source recursion with no reset.",
+      "Existing port1 observable equals p epsilon Delta; original0/10 code yields flat port-cost n+p beta_h R0 and nonblank port information p^3 relative to original(p,p^2).",
+      "Full16 flat recycling, sharp gap, complete stationary algebra, reference correlations and strong traceclass continuum process; stationary momentum weights remain arbitrary.",
+      "Exact full pointer entropy chain with controlled first-shell C1 source; coherent record entropy equals full system/reference entropy; supplied full-code costate source is explicit.",
+      "Finite faithful system stationarity iff recycling preserves kerD; neither reference128 purification nor continuum inverse traceclass follows."
+    ],
+    "consumer": "Actual retained-history evolution, original code cost and its complete moving source in the same-process physical-action bridge.",
+    "new_exact_checks": {
+      "flat_relaxation": 57,
+      "record_channel": 60
+    },
+    "normal_optimized_byte_identical": true,
+    "old_scientific_replay": false,
+    "open": "Native primitive admission and complete physical code/Info law; source equality with intrinsic Einstein geometry, compatible joint refinement, original fixed-g/tau/all10 raw h^-2/#216 terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "443341f0293d301320ec740b7874a52e99ecb1aa92cb0dc407c0c18868f3b0e4",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/FLAT_RESULTS.json": "8e3febec6c6407bdf9a7dd0d56f0d5c643e98bdcd4c8ef01c52377403d67b596",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/README.md": "cfff5847e8cee1a6a5681f0169457bf3c3e92f0fdb43486785a12172b7336567",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/RESULTS.json": "825ad5d0a51c4e85b228f9c17881f03b82eba4138d98ffe029174b0e07428d3e",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/VALIDATION.json": "1dc45da820ab8d43279ac16211a0c586d0c5c407956f05496294d05fe59cf614",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_record_channel.py": "dee7ada5cf04bf961701206f65b216e1ab9c6f45ef9f9ed3258e70bed9cb13a2"
+    }
+  },
   "complete_retained_causal_nonlinear_checkpoint": {
     "conclusion": "No fixed PSD detector on labels16/8/24 with same firstexit/coefficient0/bothports/faithfulshell placement gives universal nonlinear EH up to nonzero fixed scale; principal coherent identity remains valid.",
     "consumer": "Complete the candidate test immediately rather than extrapolate a flat principal match. Exhaust the specified fixed positive three-label class.",
@@ -234,7 +262,7 @@
     "old_scientific_replay": false,
     "previous99_receipts_preserved": true,
     "rejected_mutations": 4,
-    "remaining_native_consumer": "Same-process Cost−Info/action source; nonzero-N0 second stencil and clock jets, moving/nonlocal detectors, signed/nonlinear price and actual admission/preparation. Original fixed-g/tau/raw terminal remains open.",
+    "remaining_native_consumer": "Same-process Cost\u2212Info/action source; nonzero-N0 second stencil and clock jets, moving/nonlocal detectors, signed/nonlinear price and actual admission/preparation. Original fixed-g/tau/raw terminal remains open.",
     "scope": {
       "fixed_positive_record_detector_only": true,
       "nonblank_zero_N0_rows": 18,

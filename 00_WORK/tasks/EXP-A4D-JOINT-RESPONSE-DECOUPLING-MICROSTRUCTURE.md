@@ -552,6 +552,29 @@ the physical native field-to-SELECT/price/preparation lane. Pointwise
 constant-gate universality does not create its field jets. No new action,
 free seed copies, reference projector or complementary heat block is admitted.
 
+## Complete retained channel → actual code-cost source — 17 October 2026
+
+Input ec5d6a00 resolves the given-action metric/locality/compiler interfaces.
+Next consume the actual golden/Julia128 outcomes, not just total first exit.
+Derive the exact reduced CP channel while keeping the complete tape,
+its total-count tilt, actual original0/10 port-code observable and full
+joint source. Construct its flat full16 stationary algebra and the
+strong trace-class continuum channel by invariant Fourier cutoffs.
+Keep reference128, arbitrary initial matter and every physical outcome.
+
+The named physical consumer is preparation/history evolution and genuine
+native cost. The existing pointer-Shannon/path-weight binding is conditional;
+coherent record entropy and a supplied full code must be typed separately.
+No Gibbs state, reset, reference prior or replacement H+J+R is introduced.
+Write surfaces: A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md and
+sources/d0_complete_record_channel_2026-10-17/, plus existing root-owned
+consumers. One helper owns exact full-round/tape/code identities; another
+owns full16 flat recycling/relaxation. Independent review is analytical.
+Smallest evidence: exact Kraus cancellation, moving normalized source,
+fixed-background complete-count law and the flat Majorana contraction.
+No old root, heat/spectrum census or Lean replay. Original fixed-g/tau,
+all10 raw h^-2/#216 terminal remains unchanged.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
