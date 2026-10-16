@@ -1,0 +1,23 @@
+{
+  "schema": "d0-coframe-torsion-result-summary/1",
+  "exact_check_count": 211,
+  "full_stdout_sha256": "76e0ee9ec32591d0f61f8bbdc7804c259b4b2dcaf23e1524e58ec48e19abef3a",
+  "transgression_control": {
+    "ricci_scalar_density": "1205475754663153/1324708257600000",
+    "comparison_part": "3947/14553",
+    "torsion_quadratic_part": "-6406516978187/12616269120000",
+    "boundary_part": "35700136847651/31136305200000"
+  },
+  "wave": {
+    "metric": "dt^2-dx^2-dy^2-dz^2+H(x,y)(dt+dz)^2",
+    "Ricci": "(Hxx+Hyy) k_mu k_nu/2",
+    "vacuum_condition": "Hxx+Hyy=0",
+    "native_links": "identity; observer e0; own-leg differences zero",
+    "regular_frame_available": true,
+    "v8_stationarity_proved": false,
+    "global_periodic_wave_claimed": false
+  },
+  "full_source_claim": "complete geometric Einstein-Hilbert covector only, not equality with native v8 spectral price",
+  "new_native_action_selected": false,
+  "native_GR_closed": false
+}
