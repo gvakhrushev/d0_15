@@ -31,6 +31,7 @@ record results below is substituted for that terminal. The historical
 | --- | --- |
 | The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
 | A fixed-forward positive-adjoint completion now has an explicit local full-Lorentz matrix instrument, the same tested v8 scalar price and all transverse sources. The faithful seed remains critical; the old pure seed fails the new boost rows. Two derived occupation balances characterize stationary homogeneous E0 preparations, with an explicit balanced rank8 root on the same geometry. | [Full Lorentz source](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md). The original native primitives must generate its onsite matrix gates, adjoints, preparations and outcomes with their full retained-history cost. This does not select a physical extension or transfer the stored-sector kernel to the new state/domain. |
+| The full coframe defect uniquely reconstructs all24 Levi–Civita connection components under metricity/torsion-free assumptions. Its exact curvature/torsion transgression gives the intrinsic nonlinear Einstein covector. A local regular pp-wave vacuum metric satisfies both stored-adjoint kinematic conditions. | [Coframe/GR reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md). The full native price/source has not been equated with this intrinsic reading. The example is neither a periodic v8 stationary solution nor a refinement theorem; unrestricted geometric metric variations must still match the native variation image. |
 | The complete faithful finite joint kernel and local critical locus are classified: all Fourier blocks are solved, and every nearby solution lies in the exact flat family with the density and three extra Lorentz-Gram moduli retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Section11. Small nonflat continuation from this same full-rank root is excluded. The next input is rank-free native preparation/joint dynamics; physical admission and refinement remain open. |
 | The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
 | The three homogeneous connection-source components have an exact attainable-set support function at the fixed root; a pure preparation explicitly realizes an ellipsoid inside it. Rank-aware equations retain every preparation Euler row. | [Source capacity and nonlinear selection](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md). Consume at the rank8 boundary or preparation-distant stationary points after the faithful local classification. This is not a full field source inverse; a frozen-preparation spectral crossing is not a coupled branch. |
@@ -84,6 +85,27 @@ results of the stored sector. They do not classify the new full-Lorentz
 domain or prove a native preparation law for chi_bal. The immediate
 programme obligation is the actual native generation and full retained
 price of the explicit onsite comparison gates.
+
+The coordinated [coframe/torsion reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md)
+also resolves the algebraic reconstruction part of the second route.
+For a nondegenerate coframe, metricity and torsion-free reconstruction
+determine all24 connection components; the exact transgression recovers
+the intrinsic Einstein covector including its boundary and moving-scale
+terms. A local regular nonflat vacuum pp-wave fits the original stored
+kinematics with A=I. Thus the locked connection itself need not be the
+full physical connection, and its parallel-observer theorem does not
+exclude curvature encoded in the coframe. The packet's source identities
+and reported211 checks/four mutations are preserved without replay here.
+
+This geometric result does not establish the physical source bridge.
+The remaining equation is the actual native price/source, pulled back
+through its admitted variations, versus the intrinsic geometric source
+plus independently derived matter/observer/archive terms and a controlled
+refinement remainder. Those terms cannot be defined as the residual to
+Einstein. The new positive-adjoint instrument supplies an explicit tested
+matrix source on its stated domain; the reconstruction supplies a full
+geometric covector. Their equality, native generation and the original
+fixed-g/fixed-tau/raw terminal remain obligations.
 
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference
