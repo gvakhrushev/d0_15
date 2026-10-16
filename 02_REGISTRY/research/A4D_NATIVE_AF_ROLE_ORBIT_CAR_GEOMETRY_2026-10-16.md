@@ -1,4 +1,4 @@
-# AF/CAR role-orbit Lorentzian Gram: exact kinematic result
+# AF/CAR role orbit and engine interface: exact finite result
 
 Status: exact finite kinematics from existing AF, full-CAR, correlated-current,
 and closed-engine owners. This is not a physical metric law or a GR result.
@@ -75,6 +75,39 @@ four-frame. The earlier Lorentzian frame needs its active seed outside this
 blank plane. This is a scoped failure of that composition, not a no-go for
 other owned interactions or for the full D0 core.
 
+## Exact AF-to-engine interface boundary
+
+The checker compares the actual AF level-1 inherited `M_2` image with the
+engine's six-coordinate collinear support. The inherited map has rank four,
+but imposing the engine support alone has rank three and leaves exactly the
+line `(1,0,0,1)` in the four inherited `M_2` coordinates. That whole line is
+also inside the fresh-blank plane. The canonical AF trace seed is `p` times
+this vector: it is blank, but the engine rejects it because its first-grade
+pairing is zero. Thus no vector in this inherited four-dimensional `M_2`
+image is both engine-admissible and has nonzero pairing. This classifies the
+interface for the named embedding; it does not exclude another AF preparation
+or another engine domain.
+
+The engine's own blank seed `e1+e15` has nonzero pairing and an owned engine
+step, but the augmented rank is five, so it is outside the inherited AF
+`M_2` image. The actual AF `activate` operation on the complete canonical
+trace vector instead produces the exact CAR state
+`m0=m14=a^3`, `m1=1-p`, `m15=p-1`, with all other masks zero. This state is
+outside the blank plane but lies in the engine domain. On this same full
+sixteen-component state, the AF fixed gate and the state-selected engine
+transition agree for four transitions. They first differ on the fifth
+transition (zero-based index 4), with exact gap support on masks `0,1,14,15`.
+The two full states remain distinct through twelve transitions, while the
+engine state remains in its declared support and its current is `e0` at tick
+12.
+
+This is a bounded, exact compatibility result for the named AF and CAR
+owners. It does not give one common transition law beyond the checked
+four-step segment, nor a common preparation/action on `(q,D,b,m)`, a source,
+stationarity, refinement, or physical admission. The blank line obstruction
+is only for the stated inherited AF image and engine support; it is not a
+global D0 no-go.
+
 For the scalar-extension family `m13=m14=s`, the same current formula gives
 `r(s)=2s^2/(1+2s^2)`, Gram determinant `-4r(s)^6`, and a nonzero Gram jet at
 `s=1`: diagonal entries have derivative `-16/27` and the first/second entry
@@ -90,7 +123,9 @@ The checker pins the existing AF Fibonacci recording frame and gate, full-Fock
 record binding, correlated-current readout, and literal closed-record engine.
 It checks the level-1 full-16 isometric embedding, gate/price/blank
 intertwiners, CAR current values, all sixteen coordinates, the role
-transformations, exact orbit Gram, and the canonical AF blank-startup control.
+transformations, exact orbit Gram, the canonical AF blank-startup control,
+and the exact rank/kernel and transition comparison at the AF-to-engine
+interface.
 The positive frame's active seed is outside the AF fresh-blank plane. The
 certificate composes the actual `activate` operation with the canonical trace
 on its M2 sector, and separately demonstrates that this blank-started orbit

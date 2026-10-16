@@ -194,6 +194,101 @@ def build_result():
           'activated_A1_trace_M2_component_stays_in_actual_CAR_sector', checks)
     check(zero(activated_car - U * canonical_car),
           'actual_AF_activation_composes_with_same_CAR_gate', checks)
+
+    # Exact cross-owner classification of the inherited AF M2 image against
+    # the engine's fresh-blank plane and certified collinear support.
+    inherited_m2_to_car = C.mat(Psi.T * V_m2[:, :4])
+    engine_guard = (2, 3, 4, 5, 8, 9)
+    engine_support_constraints = inherited_m2_to_car[list(engine_guard), :]
+    engine_support_kernel = engine_support_constraints.nullspace()
+    blank_and_engine_constraints = sp.Matrix.vstack(
+        (B_fock - I16) * inherited_m2_to_car,
+        engine_support_constraints)
+    blank_engine_kernel = blank_and_engine_constraints.nullspace()
+    canonical_m2_coordinates = canonical_trace[:4, :]
+    canonical_engine_blank = E.State(tuple(
+        E.P if i in (0, 14) else E.ZERO for i in range(16)))
+    check(inherited_m2_to_car.rank() == 4,
+          'inherited_AF_M2_to_CAR_map_has_rank_four', checks)
+    check(engine_support_constraints.rank() == 3 and
+          len(engine_support_kernel) == 1 and
+          engine_support_kernel[0] == sp.Matrix([1, 0, 0, 1]),
+          'entire_AF_inherited_engine_support_is_one_singular_line', checks)
+    check(blank_and_engine_constraints.rank() == 3 and
+          len(blank_engine_kernel) == 1 and
+          blank_engine_kernel[0] == sp.Matrix([1, 0, 0, 1]),
+          'AF_inherited_blank_engine_domain_intersection_is_exactly_one_line', checks)
+    check(AF.zero(canonical_m2_coordinates - p*blank_engine_kernel[0]) and
+          zero(engine_vector(canonical_engine_blank) - canonical_car),
+          'canonical_AF_trace_is_the_unique_intersection_line', checks)
+    check(not canonical_engine_blank.matter[1] and
+          all(not canonical_engine_blank.matter[i] for i in engine_guard),
+          'canonical_AF_blank_line_meets_engine_support_but_has_zero_pairing', checks)
+    try:
+        E.step(canonical_engine_blank)
+    except ValueError as error:
+        check(str(error) == 'FIRST_GRADE_PAIRING_SINGULARITY',
+              'canonical_AF_blank_line_is_rejected_by_owned_engine_pairing', checks)
+    else:
+        raise AssertionError('CANONICAL_AF_BLANK_LINE_UNEXPECTEDLY_PASSED_ENGINE_GATE')
+
+    owned_engine_blank = E.seed()
+    owned_engine_blank_car = engine_vector(owned_engine_blank)
+    check(zero(B_fock * owned_engine_blank_car - owned_engine_blank_car) and
+          all(not owned_engine_blank.matter[i] for i in engine_guard) and
+          owned_engine_blank.matter[1].sign() != 0,
+          'engine_seed_is_blank_and_inside_its_certified_transition_domain', checks)
+    check(zero(C.current(I4, owned_engine_blank_car) - e0) and
+          E.step(owned_engine_blank) is not None,
+          'engine_blank_seed_has_rest_current_and_a_real_owned_step', checks)
+    check(sp.Matrix.hstack(inherited_m2_to_car, owned_engine_blank_car).rank() == 5,
+          'engine_blank_seed_is_outside_the_inherited_AF_M2_image', checks)
+
+    # The actual AF activation of its complete trace vector does enter the
+    # engine domain. Compare both owned transitions on the same full state;
+    # their agreement lasts four transitions and then ends at the fifth.
+    activated_engine = E.State(tuple(
+        E.Golden((0, 0, 0, 1)) if i in (0, 14) else
+        E.Golden((1, 0, -1, 0)) if i == 1 else
+        E.Golden((-1, 0, 1, 0)) if i == 15 else E.ZERO
+        for i in range(16)))
+    check(zero(engine_vector(activated_engine) - activated_car) and
+          not zero(B_fock * activated_car - activated_car),
+          'AF_activation_has_exact_full16_engine_state_outside_blank_plane', checks)
+    check(all(not activated_engine.matter[i] for i in engine_guard) and
+          activated_engine.matter[1].sign() != 0,
+          'AF_activated_trace_state_is_admissible_to_owned_engine', checks)
+    fixed_trace_state = activated_car
+    engine_trace_state = activated_engine
+    first_owner_divergence = None
+    divergence_masks = []
+    for tick in range(12):
+        check(zero(C.current(I4, engine_vector(engine_trace_state)) - e0),
+              f'AF_activated_engine_current_remains_rest_tick_{tick}', checks)
+        check(all(not engine_trace_state.matter[i] for i in engine_guard),
+              f'AF_activated_engine_stays_in_owned_support_tick_{tick}', checks)
+        engine_next = E.step(engine_trace_state)
+        fixed_next = C.mat(U * fixed_trace_state)
+        gap = C.mat(fixed_next - engine_vector(engine_next))
+        if zero(gap):
+            check(tick < 4,
+                  f'AF_and_engine_transitions_agree_before_first_divergence_{tick}', checks)
+        else:
+            if first_owner_divergence is None:
+                first_owner_divergence = tick
+                divergence_masks = [i for i in range(16) if C.red(gap[i]) != 0]
+                check(tick == 4 and engine_trace_state.matter[1].sign() == -1,
+                      'AF_and_engine_first_diverge_on_fifth_state_selected_transition', checks)
+            if tick >= 4:
+                check(not zero(gap),
+                      f'AF_and_engine_remain_distinct_after_first_divergence_{tick}', checks)
+        fixed_trace_state, engine_trace_state = fixed_next, engine_next
+    check(zero(C.current(I4, engine_vector(engine_trace_state)) - e0) and
+          all(not engine_trace_state.matter[i] for i in engine_guard),
+          'AF_activated_engine_remains_admissible_at_tick_twelve', checks)
+    check(first_owner_divergence == 4 and divergence_masks == [0, 1, 14, 15],
+          'first_AF_engine_transition_gap_has_exact_four_mask_support', checks)
+
     expected_rest = sp.Matrix([1, 0, 0, 0])
     canonical_history = canonical_car
     for tick in range(128):
@@ -347,6 +442,30 @@ def build_result():
             'four_role_frame_rank': 1,
             'blank_startup_generates_spatial_frame': False,
             'physical_expansion_or_GR_inferred': False,
+        },
+        'AF_engine_cross_owner_joint_sector': {
+            'inherited_AF_M2_to_full_CAR_rank': 4,
+            'inherited_AF_image_intersection_with_engine_support_dimension': 1,
+            'engine_support_intersection_M2_coordinates': ['1', '0', '0', '1'],
+            'inherited_blank_and_engine_domain_intersection_dimension': 1,
+            'intersection_M2_coordinates': ['1', '0', '0', '1'],
+            'canonical_trace_M2_seed': 'p*(e0+e14)',
+            'canonical_trace_blank_line_engine_rejection':
+                'FIRST_GRADE_PAIRING_SINGULARITY',
+            'engine_owned_blank_seed': 'e1+e15',
+            'engine_blank_seed_in_inherited_AF_M2_image': False,
+            'actual_AF_activated_trace_engine_coordinates': {
+                'm0': 'a^3', 'm1': '1-p', 'm14': 'a^3', 'm15': 'p-1',
+                'all_other_masks': '0',
+            },
+            'AF_activation_state_is_engine_admissible': True,
+            'AF_fixed_and_engine_state_selected_transitions_agree_for':
+                'four transitions',
+            'first_divergent_transition_zero_based_index': 4,
+            'first_divergence_masks': [0, 1, 14, 15],
+            'the_two_owner_states_remain_distinct_through_transition': 12,
+            'engine_current_at_tick_twelve': 'e0',
+            'physical_joint_preparation_or_transition_law_derived': False,
         },
         'physical_scope': {
             'native_q_D_b_m_binding': False,
