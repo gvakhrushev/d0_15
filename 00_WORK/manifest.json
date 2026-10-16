@@ -59,17 +59,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     },
     {
-      "id": "WRK-A4D-CERTIFICATE-INPUT-CLOSURE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Implement a conservative changed-input consumer selector for research certificates, with exact pinned-input provenance, unknown-dependency fallback and isolated-runner tests; do not weaken existing checks.",
-      "brief": "00_WORK/tasks/WRK-A4D-CERTIFICATE-INPUT-CLOSURE.md"
-    },
-    {
       "id": "WRK-A4D-LEAN-GOLDEN-CURVATURE-KERNEL",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
