@@ -25,7 +25,7 @@
   "retained_density_annihilator": 2040,
   "nonlinear_consumer": "owner Section9: local homogeneous critical manifold, analytic normal-coordinate IFT; source calculations do not replace proof",
   "sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "38aa3de0f37942a903072e8714c92106920263c9619fc673c830ab334a93d1f0",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "0c8ac706174bf5efe1409095feefbfa9b826e3e12c1163ebdb227d684b1bf050",
     "02_REGISTRY/research/certificates/a4d_native_zero_mode_check.py": "03314122e34166535df63ba6f6ac55fc63ba2ad6a0fe271aa03cdb28bbf92324",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ZERO_MODE_RESULTS.json": "3191fff348ea6b4f16fa50013899f681c47428bca3f9e8db2bf22825bff94e38",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/zero_mode_constraint_check.py": "abe8395c6e05818894252982952043ab8757b74670036e3715107b794aa36ecc",

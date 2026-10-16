@@ -1533,6 +1533,16 @@ Actual engine preparation из SO3-fixed E0, rank8/reference128, сохраня�
 jets annihilate E0. Она не выбирает три Lorentz-Gram directions в этой
 цене. Faithful q0 inertia не переносится на boundary низкого ранга.
 
+§11 теперь решает также все оставшиеся4063 field-only frequencies
+через483 exact symmetry classes и общую interval moment bound<0.001184.
+Полная reduced real KKT инерция39615+/1493−/40811zero и normal IFT
+дают полный local faithful critical locus: constant Lorentz Gram,
+linear-link holonomies I, local representations и positive density
+source fibre. Поэтому nearby nonflat continuation этого конкретного
+full-rank finite root исключён. Следующий consumer — rank-free native
+preparation с `E C0=0` и всеми field/preparation rows, actual joint
+transition/action и refinement; full-rank вывод не переносится на boundary.
+
 ## 8. Проверка изменённого расчёта и повторное использование прежнего
 
 `certificates/a4d_native_complete_field_source_check.py` содержит единый

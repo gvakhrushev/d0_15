@@ -1,11 +1,14 @@
-# Условная локальная классификация полного faithful v8 critical locus
+# Локальная классификация полного faithful v8 critical locus
 
 16 октября 2026. Вход: опубликованный checkpoint
 `b1283e9659ae2c4a9855e7b1200c40163eb83481`, полная homogeneous/q0
 редукция и все shell-transfer ограничения. Consumer основного
 [joint-kernel owner](../../A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md).
-Это аналитическое следствие с **ещё не доказанной здесь гипотезой INV**;
-оно не является результатом нового расчёта остальных Fourier matrices.
+Спектральная лемма INV теперь подтверждена отдельным
+[полным результатом](FIELD_INVERSE_RESULTS.json):483 disjoint frequency
+classes, whole-root-box distance<0.001184. Ниже INV обозначает этот
+доказанный конечный вход, а не дополнительный физический постулат.
+Сам документ доказывает его нелинейное следствие без нового matrix run.
 
 ## 1. Утверждение и единственное оставшееся спектральное условие
 
@@ -280,8 +283,8 @@ critical point обязана удовлетворять этим normal equatio
 
 ## 8. Область применения и изменение следующего consumer
 
-Утверждение условно до доказательства INV для всех оставшихся частот.
-Оно относится к fixed L8 regular full-rank/reference128 задаче и её
+INV установлена для всех оставшихся частот отдельным outward validator;
+данное утверждение относится к fixed L8 regular full-rank/reference128 задаче и её
 точному v8 action. Faithful positivity, Schur gap, positive survival и
 bounded gates сохраняются в достаточно малой открытой окрестности.
 Никакой refinement-uniform размер этой окрестности не получен.
@@ -293,7 +296,7 @@ real vertical parameters к normalized full-amplitude critical family;
 далёкие roots, другое L, другой action или physical preparation pullback,
 который меняет саму задачу допустимых совместных вариаций.
 
-Если INV выполнена, попытка получить близкий nonflat root простым
+Поскольку INV выполнена, попытка получить близкий nonflat root простым
 нелинейным продолжением этого faithful finite root прекращается: рядом
 есть ровно (C6)–(C12). Следующий научный шаг должен использовать actual
 дополнительный kernel/bifurcation, иной доказанный режим или исходный

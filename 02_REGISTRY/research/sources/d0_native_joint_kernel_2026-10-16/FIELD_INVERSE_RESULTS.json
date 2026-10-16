@@ -22,7 +22,7 @@
     3,
     4
   ],
-  "all_orbit_mean_slice_inverse_bound_upper": 1094697.626761342,
+  "all_orbit_mean_slice_inverse_bound_upper": 1094698,
   "inverse_norm": "Euclidean canonical mean-slice Fourier coefficients; includes spatial-orbit coordinate condition p<=4",
   "minimum_exact_feature_gap_lower": "3371284203137914644198105456873584748337059071503266872851396305276906871688617/948568795032094272909893509191171341133987714380927500611236528192824358010355712",
   "root_box": {
@@ -54,7 +54,7 @@
     "02_REGISTRY/research/sources/d0_native_field_transport_2026-10-16/stored_rotational_wave.py": "2b12f26d814a57cc99084e904deeac69a8f64a8d9a0eb9ee765e8104ef50bc37",
     "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9"
   },
-  "entrypoint_sha256": "388d9803b3fc4510514949826c61af47332a3e2f9565930359bd03ee4bcb349e",
+  "entrypoint_sha256": "f1e5b64395ea6332f99270c02e9e7884a16e412665575dda7b5a365bff184803",
   "composed_full_reduced_real_KKT_inertia": {
     "positive": 39615,
     "negative": 1493,

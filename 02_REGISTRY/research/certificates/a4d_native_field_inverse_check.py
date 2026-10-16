@@ -11,6 +11,8 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import json
+from fractions import Fraction
+import math
 from pathlib import Path
 import sys
 import time
@@ -39,6 +41,19 @@ def load(name):
     return module
 
 
+def compose_inverse_bound(orbits):
+    """Integer ceiling of exact dyadic bounds, including orbit condition p.
+
+    No binary64 multiplication is used to export a claimed upper bound.
+    This cheap composition can be checked on frozen validated orbit rows
+    without repeating the underlying matrix calculation.
+    """
+    require(bool(orbits), "nonempty_validated_orbit_rows")
+    return max(math.ceil(sum(bool(x) for x in row["q"])
+                         *Fraction.from_float(row["inverse_native_coefficient_norm_upper"]))
+               for row in orbits)
+
+
 def run():
     start = time.perf_counter()
     choice_owner, validator = load("field_inverse_choice"), load("uniform_symbol_bounds")
@@ -55,7 +70,6 @@ def run():
     print("shared full119/7140 interval kernel prepared", file=sys.stderr, flush=True)
     output, covered = [], set()
     positive, negative, dimension = 0, 0, 0
-    inverse_bound = 0.0
     for index, choice in enumerate(choices["choices"]):
         q = tuple(choice["q"])
         members = set(choice_owner.orbit(q))
@@ -73,8 +87,6 @@ def run():
         # active B_r tuple. Its p-1 contrast coordinates have condition<=p:
         # ||x||²<=sum_active||B_r||²<=p||x||². Thus both coordinate maps
         # have norm<=sqrt(p), and inverse-congruence costs at most p.
-        p = sum(bool(x) for x in q)
-        inverse_bound = max(inverse_bound, p*result["inverse_native_coefficient_norm_upper"])
         result.pop("seconds")
         result.pop("source_pins")
         result.pop("root_box")
@@ -103,7 +115,7 @@ def run():
             "field_only_real_inertia": {"positive": positive, "negative": negative, "zero": 0},
             "maximum_signature_distance_upper": maximum["distance_from_signature_upper"],
             "maximum_signature_distance_q": maximum["q"],
-            "all_orbit_mean_slice_inverse_bound_upper": inverse_bound,
+            "all_orbit_mean_slice_inverse_bound_upper": compose_inverse_bound(output),
             "inverse_norm": "Euclidean canonical mean-slice Fourier coefficients; includes spatial-orbit coordinate condition p<=4",
             "minimum_exact_feature_gap_lower": shared["minimum_pair_gap_lower"],
             "root_box": shared["core"]["root_box"], "root_stationarity_is_owned_hypothesis": True,

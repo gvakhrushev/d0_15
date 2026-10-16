@@ -50,6 +50,17 @@ operator on that chart; do not invert its zero shell block, replace SO(3)
 returns with SO(4), freeze the observer, or drop global normalizer/constraint
 curvature. The original fixed-source/raw-response terminal is unchanged.
 
+The complete faithful finite kernel is now solved: all shell blocks and
+all483 field-only symmetry classes are enclosed on the original root box.
+The exact local critical family exhausts nearby full-rank roots by normal
+IFT; its Lorentz Gram is constant and linear-link holonomies are identity.
+Do not repeat a nearby nonflat search at this same faithful L8 root.
+The next consuming interface is the native memory/source rank-free branch,
+with `E C0=0` and every field/preparation Euler row retained. A frozen-density
+Hessian crossing does not establish a joint branch. Physical native
+transition/action admission and refinement remain required; neither the
+original independently fixed g/tau/raw terminal nor task status is changed.
+
 Write surface: this brief, the primary memo, complete-field-source synthesis
 and its existing research consumers. Preserve the whole readable research
 payload; do not restore old lifecycle files. The two inherited shift-irrelevance

@@ -29,8 +29,9 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
-| The complete regular stored-adjoint field chart and exact nonlinear matter reduction are explicit. All 16,744,448 real off-shell amplitude coordinates are eliminated. Every occupied-shell coupling block is solved; the faithful homogeneous critical set is locally classified. Its three additional Lorentz-metric directions survive even the actual native memory preparation. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Sections 3–10. The remaining nonzero blocks are field-only, with one shared full16 assembler. Nonflat continuation, physical admission and refinement remain open. |
+| The complete faithful finite joint kernel and local critical locus are classified: all Fourier blocks are solved, and every nearby solution lies in the exact flat family with the density and three extra Lorentz-Gram moduli retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Section11. Small nonflat continuation from this same full-rank root is excluded. The next input is rank-free native preparation/joint dynamics; physical admission and refinement remain open. |
 | The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
+| The three homogeneous connection-source components have an exact attainable-set support function at the fixed root; a pure preparation explicitly realizes an ellipsoid inside it. Rank-aware equations retain every preparation Euler row. | [Source capacity and nonlinear selection](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md). Consume at the rank8 boundary or preparation-distant stationary points after the faithful local classification. This is not a full field source inverse; a frozen-preparation spectral crossing is not a coupled branch. |
 | The actual stored Dirac on the entire bounded exact adjoint class has a full16 positive representation with unitary returns. The same literal v8 instrument, heat/feedback/matter price and all observer/preparation source jets intertwine on every admitted curve. A genuinely curved native row-rotation has an explicit full128 matter second lift, but its complete directional Hessian lies strictly between0.089 and0.091. | [Unified source, Sections 0.3 and 3.3–3.5](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). The operator/program arrow is established for the declared conditional v8 price; physical primitive/price admission and native refinement remain. The native wave's first velocity is excluded from the joint critical kernel, not all curved roots. |
 | One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
 | The complete second AF price has an exact coherent preparation minimum, noncommuting Hessian and Schur elimination. Its density-block inverse satisfies `norm(M_T^-1)<=log(phi)/p^6` uniformly in level and dimension. A coherent compiler preserves the selected price up to constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [full second source and uniform inverse, Section 5.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). This is the actual output-channel metric, not a replacement Gibbs action or full field/amplitude inverse. Admission and physical action selection remain separate. |
@@ -86,61 +87,59 @@ source-error estimate (12) is consumed here only at fixed `beta,M`; the
 Delta-based bounds (13)–(15) also retain fixed `alpha,m,z`.
 
 The [full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md)
-now supplies the exact nonlinear off-shell matter elimination and complete
-kernel equations on the **same** native v8 family. Its regular chart keeps
-actual SO(3) returns, observer motion, all ten metric responses and all
-sixteen matter grades. The complete matrix is given by the full4096-mode
-Gram sum in joint-system Section 6, with an ordered full16 first-jet API;
-its direct-curvature cancellation is proved only at the stationary root.
-At `(3,3,0,0)` all19 complex native field coordinates are now solved:
-Section 7 validates a13-dimensional nonsingular restriction over the entire
-owned root rectangle, with distance from diag(−1,+1,...,+1) below0.000269.
-At the true root the full symbol has exactly12 positive,1 negative and6
-proved representation-zero directions. Thus the old row-wave failure
-extends to the entire nongauge first-velocity sector of this mode, including
-link/observer variations. Section 8 also solves the complete coupled
-shell-transfer blocks at q2000 and q1100. Exact minors valid for every
-`a>b>0` give transfer ranks3/5; thus the full admissible fields modulo
-six representation directions are exactly12/8 inactive-coframe coefficients.
-Their interval Hessian restrictions have inertia9+/3− and6+/2− throughout
-the original root box. The complete reduced density/field KKT therefore
-has inertia(12,6,259) / (11,7,513), including the253/507 complex density
-annihilators. Those give exact positive stationary preparation families at
-fixed geometry in the declared v8 class; they are retained physical-density
-variations, not purification gauge. The next calculation is the remaining
-Fourier matrices and shell-source blocks on the same complete chart.
-The zero mode is now also closed analytically: rankT0=7, seven constrained
-Euclidean-Gram directions have full-normalizer Hessian lower bound
-`(3 beta/10) E_w[(delta lambda/B)^2]`. The real reduced q0 KKT has inertia
-(14,7,2049). Its kernel integrates to the complete local homogeneous critical
-family: SO4 coframe rotations(6), observers(3) and positive density fibre(2040).
-Three SO4/SO3 directions change the Lorentz Gram at the same positive heat
-geometry; they are retained beyond the six proved representation directions.
-This is a nonlinear local homogeneous classification, not an inhomogeneous
-Einstein solution or a physical choice from that family. The full-D0
-preparation/observer pullback is therefore a specific required consumer.
-The actual whole-blank engine orbit does not remove this ambiguity in the
-declared price: its SO3-fixed E0 preparation also extends, with the same fixed
-sigma_j and reference128, along the three Lorentz-Gram-changing SO4 coframe
-directions. Its stabilizer link jets annihilate E0. This rank8 existence
-result consumes the new memory-source owner; it does not transfer the
-faithful density inertia or local classification to a rank boundary.
-The same owner, Section10, now assembles every nonzero-q field block through
-257 phase moments in full16 Clifford coordinates, using one shared119-feature
-spectral kernel. The whole new q1240 matrix agrees with an independent
-full4096x16 calculation within1.6e-13. This is validated assembly, not a
-certified all-mode inverse; shell constraints and root-only identities remain
-explicit. Its consumer is the remaining joint inverse/nonflat branch estimate.
-Section8.1 now solves all six nonzero shell-transfer orbits: one generic
-rank3/5 argument, two exact restricted heat/CAR congruences and a single new
-opposite-sign interval restriction complete the earlier two cases. The new
-bound is below9.468e-5 on the whole root rectangle; the transferred KKT
-inertias retain every253/507 complex preparation annihilator. No unsolved
-nonzero shell-source block remains. The remaining field inverse lies outside
-Omega−Omega, where T_q=0; q3300 is strictly solved and other modes remain open.
-No all-mode field inverse, nonflat
-joint root, physical primitive/price admission or controlled refinement is
-claimed; the original fixed-source/raw-response terminal remains OPEN.
+now classifies the complete local faithful v8 critical locus. The exact
+nonlinear elimination of all16,744,448 real Q-amplitudes retains the full
+reference, moving normalization and signed complement resolvent. Every
+shell-transfer block and q0 is solved. A single shared Clifford/moment
+validator covers the remaining483 frequency classes on the entire original
+root rectangle, with maximum signature distance below0.001184. The
+canonical field-only inverse has an exact integer bound1094698 at fixed L8;
+this is not a refinement-uniform or raw-response estimate.
+
+The complete real reduced density/field Hessian has inertia
+(39615 positive,1493 negative,40811 zero) on81919 variables. Its kernel
+integrates to an exact family: local Lorentz/observer representations,
+three additional constant SO4/SO3 Lorentz-Gram directions and16232 real
+positive-density source annihilators. Those density directions are retained
+and are not purification gauge. A genuine reduced functional
+`Phi=F_price+epsilon_hat`, with `Tr(sigma E)=0` and moving Gram normalization,
+makes normal IFT applicable. It proves that **all** nearby faithful joint
+critical points lie in this family. Their Lorentz Gram is constant and
+linear-link holonomies are identity: nearby nonflat roots of this finite
+regular full-rank problem are excluded.
+
+The [nonlinear proof](sources/d0_native_joint_kernel_2026-10-16/LOCAL_CRITICAL_LOCUS_CONSUMER.md)
+and [complete spectral result](sources/d0_native_joint_kernel_2026-10-16/FIELD_INVERSE_RESULTS.json)
+therefore change the next consumer. Stop trying to obtain curvature by a
+small continuation of this same faithful root. Consume the actual native
+memory/source rank-free branch, keeping `E C0=0` and every remaining
+preparation/field Euler row. A frozen-sigma Hessian zero alone does not
+establish joint bifurcation. The physical native joint transition/action and
+controlled refinement are still required; the independently fixed smooth
+metric/source and original unweighted raw terminal remain OPEN.
+
+The concurrent [rank-aware memory continuation](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md)
+is consumed at that boundary or at a preparation-distant stationary point.
+Its exact source capacity concerns three homogeneous connection expectations
+for `rho=P_Omega/8 tensor sigma` on the full internal C16 carrier, at the
+fixed root. Its pure-state ellipsoid is a feasibility witness inside that
+capacity, not an arbitrary prescribed field source. The equations
+`E C0=0`, `E2 C0+2 E1 C1=0` and the `M_v` neutrality test retain the
+preparation equations; the midpoint frozen-preparation crossing does not
+satisfy the full memory-neutrality scout and supplies no coupled branch.
+Use the owned packet-to-native basis conversion and source sign.
+The [golden memory/source alignment](A4D_GOLDEN_MEMORY_SOURCE_ALIGNMENT.md)
+identifies `Q(1)=p^3` as a rotation coordinate and source ratio. The actual
+return remains isometric with a bounded recurrent orbit; this identity
+does not supply volume growth, refinement or physical preparation cost.
+
+The actual whole-blank engine orbit itself extends, with the same fixed
+SO3-fixed E0 sigma_j and reference128, along all three extra Lorentz-Gram
+directions: its stabilizer link jets annihilate E0. This rank8 existence
+statement retains every full16 operator component. It neither selects the
+Lorentz Gram nor extends the faithful local completeness/inertia theorem
+to the rank boundary. The declared v8 price is still conditional; no new
+physical admission follows from this finite classification.
 
 The concurrent [affine endpoint/CAR order obstruction](A4D_NATIVE_AFFINE_TRANSLATION_CAR_ORDER.md)
 now narrows the physical readout interface independently of the Fourier work.

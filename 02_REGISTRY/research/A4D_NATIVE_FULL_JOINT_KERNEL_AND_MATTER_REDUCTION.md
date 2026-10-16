@@ -20,8 +20,9 @@
 rows и reduced density/field saddle blocks классифицированы; непустые
 стационарные density families сохранены. §9 замыкает нулевой блок и
 локальную однородную critical family: семь Gram directions положительны,
-три дополнительные Lorentz-metric directions сохраняются. Остальные Fourier блоки ещё
-нужно решить. Неплоский совместный root, физический допуск программы,
+три дополнительные Lorentz-metric directions сохраняются. §11 решает
+все остальные Fourier блоки и классифицирует полный близкий faithful
+critical locus: он исчерпывается плоской family. Неплоский совместный root, физический допуск программы,
 полная native Cost−Info цена и предел ОТО здесь не утверждаются.
 
 ## 1. Неизменённая задача и сохраняемые компоненты
@@ -395,7 +396,7 @@ Tr_H W {D,D_vw}=0.                                  (19)
 Здесь использованы реальные stationary metric rows, parity, полный Fock
 trace и mixed q/−q support. Это не ambient правило для другой точки,
 не удаление Y из (14) и не новая предпосылка о GL-link admission.
-**Член `Tr W{D_v,D_w}` остаётся.** Общий finite fixture в §11 специально
+**Член `Tr W{D_v,D_w}` остаётся.** Общий finite fixture в §12 специально
 показывает ошибку удаления Y без условий этого доказательства.
 
 ### Конечная Gram-sum формула
@@ -671,7 +672,8 @@ amplitude reconstruction, а не объявление исходного огр
 сводит exact rank theorem и interval restrictions; полный результат
 с B, bounds и source hashes сохранён в
 [SHELL_TRANSFER_SYMBOLS.json](sources/d0_native_joint_kernel_2026-10-16/SHELL_TRANSFER_SYMBOLS.json).
-В остальных частотах kernel и нелинейное неплоское продолжение OPEN.
+Остальные shell-transfer constraints решены ниже в §8.1; полный finite
+field kernel и его нелинейный consumer завершены в §11.
 
 ### 8.1. Единое shell constraint и перенос двух решённых restrictions
 
@@ -793,10 +795,10 @@ q0170. Обе reduced complex KKT инерции равны(11,7,513) по (27).
 
 Тем самым **весь ненулевой occupied-shell difference sector** решён.
 Его field tangent состоит из шести доказанных representations;253/507
-complex density annihilators сохраняются. Все пока нерешённые nonzero-q
-блоки лежат вне Omega−Omega, где T_q=0 и остаётся только complete field
-symbol §10. Это не all-mode inverse: среди этих блоков пока строго решён
-лишь q3300, а q1240 является независимым diagnostic comparison.
+complex density annihilators сохраняются. За Omega−Omega T_q=0, и
+остаётся complete field symbol §10. Теперь §11 решает также все эти
+блоки одной общей outward оценкой; старый q1240 comparison сам по себе
+остаётся отдельной проверкой сборки, а не заменой этой оценки.
 
 ## 9. Нулевой блок и точная однородная critical family
 
@@ -1089,8 +1091,8 @@ rows: общий assembler сам их не удаляет и не решает.
 weighted и stationary-two-point вариантов. Точные CAR, generic
 same-axis cancellation и arbitrary-kappa quotient identities проверены
 отдельно. Hostile nonstationary fixture отвергает (37), сохраняя полный
-weighted Gram. Численный положительный спектр новой частоты пока не
-является interval inertia certificate или доказательством общего inverse.
+weighted Gram. Численный положительный спектр новой частоты сам по себе
+не является interval inertia certificate; общий строгий inverse дан в §11.
 
 Численный `owned_root_center` в API не доказывает exact stationarity:
 (37) используется как аналитическая гипотеза истинного root, а finite
@@ -1098,7 +1100,171 @@ comparison исполняется на его указанном decimal centre.
 H_q — complex symbol; real block пары q/−q получается realification
 с сопряжённой базой. У self-conjugate q берутся только real amplitudes.
 
-## 11. Проверки и следующий решаемый объект
+## 11. Полный конечный inverse и локальная классификация joint roots
+
+Оставшаяся полевая задача теперь решена на **всём** исходном root
+rectangle. Новый [общий validator](sources/d0_native_joint_kernel_2026-10-16/uniform_symbol_bounds.py)
+проверяет fixed decimal square B для каждой из483 disjoint spatial-S3/
+global-negation classes вне Omega−Omega. Они покрывают все4063 частоты;
+размерность полного real quotient равна40511. Численный выбор B
+сохранён отдельно в [FIELD_INVERSE_CHOICES.json](sources/d0_native_joint_kernel_2026-10-16/FIELD_INVERSE_CHOICES.json)
+и сам доказательством не является.
+
+### Одна общая outward оценка вместо повторных full16 matrix runs
+
+Все119 feature energies и7140 scalar pair weights из (20) заключаются
+в интервалы один раз. У каждого q exact feature indices дают все4096
+outgoing pairs;41 J-moments и257 X-moments собираются независимо.
+Signed ground resolvent, full Z, feedback и reference128 сохранены.
+Матрица B объявлена точной finite-decimal complex matrix; native
+coefficient formulas, a/b root variation, kappa phases и conversion
+в binary64 охвачены interval scalar arithmetic и Clifford norm bounds.
+
+Для каждого preconditioned coefficient column положим
+`c_i=sum_phase ||x_i,phase||_2` и пусть e_i — верхняя граница aggregate
+coefficient error. Для moment reference максимум M и error deltaM
+получена entrywise ошибка
+
+```text
+16[deltaM*c_i*c_j+(M+deltaM)
+   *(e_i*c_j+c_i*e_j+e_i*e_j)].                     (38)
+```
+
+Она включает все cross terms. Умножение degree-one Clifford operator
+имеет норму `||D J||_2<=||D||_1||J||_2`; это позволяет ограничить X
+без повторного формирования4096 матриц16x16. Exact cancellation (36)
+сохраняется для любой точной B, численный sparsity threshold не применяется.
+Phase conversion и moment summation покрываются отдельно; compressed
+33x33x99 Gram имеет дополнительный бюджет `2 gamma_(2^22)` на entry.
+Positive majorant sums вычисляются outward по неизменённой arithmetic
+библиотеке. Строгая проверка каждой матрицы даёт
+
+```text
+||B_q* H_q(d,o) B_q−S_q||_op <=delta_q,
+max_q delta_q <0.001184<1,                         (39)
+S_q diagonal with entries +/-1.
+```
+
+Самый большой bound равен0.0011831559043778055 на q=(0,0,3,4).
+Оценка row sum контролирует operator norm **точной Hermitian matrix**;
+временный float reference не объявляется Hermitian без error budget.
+На прямоугольнике проверяется analytic extension (20); её равенство
+native Hessian и точные representation kernels утверждаются в истинном
+stationary root по прежней curvature lemma, не по rounded centre.
+
+Spatial permutations сохраняют observer time role. Их internal O(3)
+matrix, включая det−1, нормализует admitted SO(3), действует на angular
+vectors как axial `det(R)R`, а на inactive stabilizer coordinate даёт
+соответствующий знак. Поэтому это точная congruence полного данного
+conditional chart; перестановка time/spatial roles здесь не используется.
+Mean-slice contrasts переставляются через полный zero-mean active tuple.
+Если p — число active roles, то
+`||x||²<=sum_r||B_r||²<=p||x||²`, так что оба contrast-coordinate maps
+имеют норму<=sqrt(p), p<=4. Общая инверсия q даёт complex conjugation.
+У self-conjugate q real amplitudes считаются один раз.
+
+Из (39) B_q обратима, и inverse конструктивно задан Neumann series
+
+```text
+E_q=B_q* H_q B_q−S_q,
+H_q^{-1}=B_q sum_(j>=0)(−S_q E_q)^j S_q B_q*.
+```
+
+Во всех canonical mean-slice Fourier coordinates, включая condition p
+при переносе orbit, получена строгая integer bound
+`||H_q^{-1}||<=1094698`. Integer ceiling вычислена из точных dyadic
+outward bounds без округляющего float multiplication. Это fixed-L8
+coordinate norm, **не** refinement-uniform estimate и не исходный raw,l1
+metric-response norm.
+
+Новый [entrypoint](certificates/a4d_native_field_inverse_check.py) прошёл
+в normal/optimized режимах с побайтно одинаковыми483 orbit records.
+[Полный результат](sources/d0_native_joint_kernel_2026-10-16/FIELD_INVERSE_RESULTS.json)
+и [validation](sources/d0_native_joint_kernel_2026-10-16/FIELD_INVERSE_VALIDATION.json)
+сохраняют все row bounds, exact B и input hashes. После этого исправлена
+только integer composition общей norm-bound: оба режима повторили её
+на тех же483 проверенных records, без matrix replay. Исходный полный
+execution закреплён отдельным Git checkpoint в validation.
+
+### Весь reduced kernel и его нелинейный consumer
+
+Вне Omega−Omega real field quotient имеет инерцию39241+/1270−/0.
+Добавляя уже решённые q0 и все shell saddle blocks, получаем **полную**
+real reduced density/field KKT инерцию
+
+```text
+(39615 positive,1493 negative,40811 zero),
+domain dimension81919, normal rank41108.            (40)
+```
+
+Числа (40) не включают reference-unitary verticals, исключённые Q
+amplitudes или отдельно хранимые affine shifts. Density Herm128
+tracezero dimension16383, rank всего T равен
+`7+4*2*3+12*2*5=151`, поэтому density annihilator имеет16232 real
+dimensions. Их не отбрасывают как gauge.
+
+[Полное аналитическое следствие](sources/d0_native_joint_kernel_2026-10-16/LOCAL_CRITICAL_LOCUS_CONSUMER.md)
+использует настоящий smooth reduced functional, а не только nullity.
+При sigma>0, Tr sigma=1 уравнение `Tr sigma E(x,epsilon)=0` задаёт
+epsilon_hat по derivative `−Tr sigma G<0`. Тогда
+
+```text
+Phi(x,sigma)=F_price(Delta(x))+epsilon_hat(x,sigma),
+tau=sigma/Tr(sigma G), Psi=J sqrt(tau)V.            (41)
+```
+
+Его stationary equations ровно E=0, normalization и все field rows (9).
+Точная critical family состоит из constant SO4-coframe R, всех малых
+local Lorentz/observer representations H_x с преобразованием matter и
+всех positive densities в соответствующем affine source fibre. Единственный
+global SO3 overlap вычитается: `6N+6−3+16232=40811`, N=4096.
+Constant rank151 около R=I следует из универсальных upper bounds7/3/5
+и непрерывности исходных exact minors, а не из предположенной SO4-link
+symmetry. Family tangent совпадает со всем kernel (40). Normal IFT
+поэтому доказывает, что **все** близкие faithful joint critical points
+лежат именно в ней; normal Hessian невырожден, то есть locus Morse–Bott.
+
+Lorentz Gram этой семьи постоянен:
+`g_rs(x)=(u_r*)^T R^T eta R u_s*`. Linear links равны H_x H_y^{-1},
+их holonomies I. Следовательно nearby nonflat root в этом regular
+faithful finite sector **исключён**, а не построен обращением Hessian.
+Три global Lorentz-Gram directions сохраняются сверх доказанных
+representations. При rank8 boundary, дальних roots и refinement эта
+локальная классификация не применяется.
+
+### Полный normalized-amplitude Hessian, включая Q и reference
+
+[Точная amplitude congruence](sources/d0_native_joint_kernel_2026-10-16/AMPLITUDE_INERTIA_CONSUMER.md)
+теперь возвращает ранее исключённые направления. На unit HS sphere
+положительные shell-density coordinates, Q-amplitudes Y и V in U128
+задают точную локальную карту
+`Psi=[sqrt(1−||Y||²)sqrt(sigma)+Y]V`. Pure Q Hessian равен
+`2(Delta_Q−epsilon*) tensor I128`. Выполненный scalar-only interval
+intake всех119 feature groups строго даёт1 momentum below occupied
+shell (ground),8 на shell и4087 выше на всём root rectangle.
+Следовательно Q-amplitude inertia равна
+`(16740352 positive,4096 negative,0 zero)`; Hessian inverse в raw HS
+norm меньше0.230124192441809157. Для resolvent без множителя2 имеем
+`||G_Q||<0.460249`, что усиливает прежний достаточный bound4.
+
+Exact Q-stationary elimination в этой normalized карте даёт именно
+Phi из (41), со всеми mixed terms и normalization derivatives. Поэтому
+Sylvester congruence, а не простое сложение несвязанных Hessians, даёт
+полную constrained real inertia
+
+```text
+(16779967 positive,5589 negative,57195 zero),
+normalized domain dimension16842751.               (42)
+```
+
+К (40) добавлены все16744448 real Q-amplitudes и16384 reference-unitary
+zeros. Общий phase уже входит в U128 и не вычитается дважды. В (42)
+не добавлены radial norm direction, epsilon multiplier или separately
+stored affine shifts. Никакая большая amplitude matrix не строилась;
+подсчитаны строгие scalar mass signs и использована точная редукция.
+Эти57195 нулей — tangent восстановленной полной local critical family.
+
+## 12. Проверки и следующий решаемый объект
 
 [kernel_check.py](sources/d0_native_joint_kernel_2026-10-16/kernel_check.py)
 проверяет тождества на самостоятельном exact rational fixture той же
@@ -1153,10 +1319,18 @@ scientific JSON совпал после удаления только времё
 Старые три interval-symbol runs не повторялись: их source hashes
 проверены, а owner дополнен новым потребителем без изменения расчётов.
 
-Дальнейший конкретный объект — остальные Fourier matrices (14) на полной
-карте (5), с удалением только **доказанных** representation symmetries.
-Для остальных частот из shell difference set решается весь saddle block (15).
-Нелинейное продолжение требует решения оставшихся E/field equations
-(9); их local inverse, неплоский root и refinement-uniform estimates
-этой редукцией не получены. Исходный fixed-source/raw,l1 terminal,
+Следующий конкретный объект — rank-free native preparation interface
+из memory-source owner и полные совместные equations `E C0=0` вместе
+с field/source rows. Простое nearby nonflat continuation исходного
+faithful root прекращается по §11. Frozen-sigma field Hessian или его
+нулевой eigenvalue сами по себе не доказывают joint bifurcation: должны
+сохраняться все preparation Euler rows. Физический допуск нативного
+joint transition/action и refinement-uniform estimates ещё нужны.
+Конкретный [rank-aware consumer](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md)
+даёт `T_k`, вторую eigenjet-строку `E2 C0+2 E1 C1=0` и `M_v`
+neutrality test для rank boundary либо удалённой preparation. Его точная
+трёхмерная homogeneous connection-source capacity не заменяет полный
+field inverse или совместный branch; проверенный midpoint crossing
+сам по себе не удовлетворяет полному memory-neutrality scout.
+Исходный fixed-source/raw,l1 terminal,
 physical primitive/price admission и полный вывод ОТО остаются OPEN.

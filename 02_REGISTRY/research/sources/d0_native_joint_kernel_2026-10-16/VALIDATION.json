@@ -66,7 +66,7 @@
     "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9"
   },
   "sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "38aa3de0f37942a903072e8714c92106920263c9619fc673c830ab334a93d1f0",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "0c8ac706174bf5efe1409095feefbfa9b826e3e12c1163ebdb227d684b1bf050",
     "02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py": "66c2eafec9523ba3765d10a8ed40233c5bde4642c5fc03336ee3bb76f1a97829",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_diagnostic.py": "6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25",
@@ -116,12 +116,13 @@
     "q3300_sources_and_results_unchanged": true
   },
   "owner_extension_after_unchanged_calculation": {
-    "sections": "8.1,9-10",
+    "sections": "8.1,9-11",
     "consumer_validation": [
       "ZERO_MODE_VALIDATION.json",
       "NONZERO_ALGEBRA_VALIDATION.json",
       "ALL_SHELL_TRANSFER_VALIDATION.json",
-      "OPPOSITE_SHELL_TRANSFER_VALIDATION.json"
+      "OPPOSITE_SHELL_TRANSFER_VALIDATION.json",
+      "FIELD_INVERSE_VALIDATION.json"
     ],
     "unchanged_old_implementation_pins_verified": true,
     "old_scientific_output_regenerated": false
