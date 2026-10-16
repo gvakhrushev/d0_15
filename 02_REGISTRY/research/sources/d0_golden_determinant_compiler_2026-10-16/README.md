@@ -33,3 +33,19 @@ is consumed by the explicit effect substitution gamma=2p^6. It preserves the
 golden blank and gives B_n+sum G(gamma u_i), with the old positive curvature
 coefficient multiplied by gamma. This is coefficient-level composition, not
 a proof that an auxiliary controller has no physical or archive cost.
+
+## Full-state and code-price continuation
+
+The [coherent compilation theorem](../../A4D_COHERENT_COMPILATION_COST_DESCENT.md)
+now constructs an additional reversible controller completion. Its corrected
+state, comparator metric and first sources agree with the canonical AF program
+on a reference-compatible same-type path encoding; the complete code price
+has the explicit constant overhead k. The original uncompleted controller is
+not retroactively declared equivalent, and unchanged classical pointer
+preservation or primitive admission is not assumed.
+
+The [preparation synthesis](../d0_coherent_compilation_2026-10-16/PREPARATION_SYNTHESIS.md)
+consumes the actual preparation-stationary owner and gives the exact price
+k+6-log Z/log(phi)+D(Phi sigma||Phi sigma_star)/log(phi), including all coherent
+preparations in that owner's domain. Normalized spatial aggregation is a
+separate conditional synthesis, not a selected native measure or GR closure.
