@@ -1,0 +1,306 @@
+{
+  "GR_closed": false,
+  "all_modes_note": "all L^4 modes for L<=16; named cutoff for larger-L diagnostics, analytic Gaussian majorant in proof",
+  "exact": {
+    "GR_closed": false,
+    "SOURCE": "a4f4d4e86ae63336841337e1a93cd5296eb43792",
+    "checks": [
+      "CAR_00",
+      "CAR_01",
+      "CAR_02",
+      "CAR_03",
+      "CAR_10",
+      "CAR_11",
+      "CAR_12",
+      "CAR_13",
+      "CAR_20",
+      "CAR_21",
+      "CAR_22",
+      "CAR_23",
+      "CAR_30",
+      "CAR_31",
+      "CAR_32",
+      "CAR_33",
+      "actual_LC_time_component",
+      "actual_LC_first_spatial_component",
+      "actual_LC_second_spatial_component",
+      "actual_LC_fourth_component",
+      "first_torsionfree_contraction",
+      "ordered_first_connection_products_nilpotent",
+      "all_ten_Einstein_rows_vanish",
+      "cone_normalized_exactly",
+      "cone_volume_exactly_constant",
+      "full_CAR_monomial_norm",
+      "CAR_monomial_nilpotent",
+      "actual_reverse_block_adjoint",
+      "exact_full16_E1_norm",
+      "exact_full16_Delta1_norm",
+      "no_scalar_vacuum_price_added",
+      "no_backward_scalar_vacuum_price_added",
+      "actual_complete_price_divided_difference",
+      "susceptibility_is_not_discardable",
+      "full_feedback_difference_identity",
+      "integer_gap_identity",
+      "rigorous_partition_upper_bound",
+      "fixed_v8_feedback_margin",
+      "golden_beta_between_three_quarters_and_one",
+      "rational_tanh_lower_mechanism",
+      "proper_Gaussian_integral_boundary_identity"
+    ],
+    "exact_group_count": 41,
+    "fixed_source_exact_root_terminal_closed": false,
+    "general_C1_h2_remainder_proved": false,
+    "native_physical_price_admitted": false,
+    "proved": "specific full finite proper-link second jet and its positive h^-2 limit; pure longitudinal Einstein first jet zero",
+    "schema": "d0-finite-causal-exact/1"
+  },
+  "finite_second_jets": [
+    {
+      "L": 4,
+      "Spp": 0.43747562237018756,
+      "Z": 16.284696676934807,
+      "beta": 0.7639320225002104,
+      "count": 256,
+      "cutoff": null,
+      "direct": 0.0,
+      "mode": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "polar": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "rescaled": 6.999609957923001,
+      "scale": 2.0,
+      "square": -2.249966825081163,
+      "sus": 9.249576783004164
+    },
+    {
+      "L": 8,
+      "Spp": 0.05741669135330879,
+      "Z": 16.099536480528172,
+      "beta": 0.7639320225002104,
+      "count": 4096,
+      "cutoff": null,
+      "direct": 0.0,
+      "mode": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "polar": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "rescaled": 3.6746682466117626,
+      "scale": 2.0,
+      "square": -1.0873357463661553,
+      "sus": 4.762003992977918
+    },
+    {
+      "L": 16,
+      "Spp": 0.012067380451301145,
+      "Z": 16.075023847719056,
+      "beta": 0.7639320225002104,
+      "count": 65536,
+      "cutoff": null,
+      "direct": 0.0,
+      "mode": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "polar": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "rescaled": 3.089249395533093,
+      "scale": 2.0,
+      "square": -0.8864210600408218,
+      "sus": 3.9756704555739146
+    },
+    {
+      "L": 32,
+      "Spp": 0.002885377595514208,
+      "Z": 16.069811319276475,
+      "beta": 0.7639320225002104,
+      "count": 28561,
+      "cutoff": 6,
+      "direct": 0.0,
+      "mode": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "polar": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "rescaled": 2.954626657806549,
+      "scale": 2.0,
+      "square": -0.8410432086901338,
+      "sus": 3.795669866496683
+    },
+    {
+      "L": 64,
+      "Spp": 0.0007132994991434314,
+      "Z": 16.06856002051807,
+      "beta": 0.7639320225002104,
+      "count": 28561,
+      "cutoff": 6,
+      "direct": 0.0,
+      "mode": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "polar": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "rescaled": 2.921674748491495,
+      "scale": 2.0,
+      "square": -0.8299893943660447,
+      "sus": 3.7516641428575395
+    },
+    {
+      "L": 128,
+      "Spp": 0.00017782472679306208,
+      "Z": 16.06825035619653,
+      "beta": 0.7639320225002104,
+      "count": 28561,
+      "cutoff": 6,
+      "direct": 0.0,
+      "mode": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "polar": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "rescaled": 2.913480323777529,
+      "scale": 2.0,
+      "square": -0.8272439066911603,
+      "sus": 3.740724230468689
+    },
+    {
+      "L": 256,
+      "Spp": 4.4424963881688136e-05,
+      "Z": 16.06817313642044,
+      "beta": 0.7639320225002104,
+      "count": 28561,
+      "cutoff": 6,
+      "direct": 0.0,
+      "mode": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "polar": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "rescaled": 2.9114344329503137,
+      "scale": 2.0,
+      "square": -0.8265586545101223,
+      "sus": 3.737993087460436
+    },
+    {
+      "L": 512,
+      "Spp": 1.1104290503877085e-05,
+      "Z": 16.068153843726467,
+      "beta": 0.7639320225002104,
+      "count": 28561,
+      "cutoff": 6,
+      "direct": 0.0,
+      "mode": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "polar": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "rescaled": 2.9109231298483547,
+      "scale": 2.0,
+      "square": -0.8263874113999135,
+      "sus": 3.7373105412482683
+    }
+  ],
+  "full_first_source_uniform_remainder": false,
+  "independent_actual_proper_links": [
+    {
+      "L": 4,
+      "actual_P1_matter_price": 6.399995733266209e-05,
+      "analytic_second_jet": 0.43747562237018756,
+      "epsilon": 0.002,
+      "independent_finite_difference": 0.437481455062283,
+      "proper_link_max_residual": 1.9984014443252818e-15,
+      "scalar_vacuum_residual": 0.0
+    },
+    {
+      "L": 4,
+      "actual_P1_matter_price": 1.599999733332285e-05,
+      "analytic_second_jet": 0.43747562237018756,
+      "epsilon": 0.001,
+      "independent_finite_difference": 0.4374770821158336,
+      "proper_link_max_residual": 1.0178489995293916e-15,
+      "scalar_vacuum_residual": 0.0
+    },
+    {
+      "L": 6,
+      "actual_P1_matter_price": 7.200033446576596e-05,
+      "analytic_second_jet": 0.12132066919257825,
+      "epsilon": 0.002,
+      "independent_finite_difference": 0.12132097326755797,
+      "proper_link_max_residual": 1.497933721505973e-15,
+      "scalar_vacuum_residual": 1.9229626863835638e-16
+    },
+    {
+      "L": 6,
+      "actual_P1_matter_price": 1.8000020904195086e-05,
+      "analytic_second_jet": 0.12132066919257825,
+      "epsilon": 0.001,
+      "independent_finite_difference": 0.12132074367343648,
+      "proper_link_max_residual": 1.8169060006512083e-15,
+      "scalar_vacuum_residual": 1.9229626863835638e-16
+    }
+  ],
+  "infinite_series_numeric": {
+    "Z": 16.068147413916936,
+    "cut": 6,
+    "lowest_mode_positive": 1.346689946503705,
+    "max_term": 1.346689946503705,
+    "min_term": -2.981532e-317,
+    "mu": 0.0014984111399026026,
+    "source": 2.91075271055528,
+    "source_parts": [
+      -0.8263303365779276,
+      3.7370830471332077
+    ]
+  },
+  "native_action_admission": false,
+  "proof_scope": "specific second epsilon jet; series sign proved analytically, decimal values floating-point",
+  "schema": "d0-finite-causal-validation-run/1"
+}
