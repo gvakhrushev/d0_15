@@ -1,5 +1,10 @@
 # Полный полевой источник: record, лоренцев перенос и мера подготовки
 
+2026-10-16. SOURCE from historical execution #310. That PR was closed
+without merge at2026-10-16T10:11:24Z. The later results are published in
+its retained Git branch, not an active PR or accepted main. Operational
+continuation is unresolved; mathematical results keep their scopes.
+
 2026-10-16. SOURCE #310. Вычисляется источник уже заданной record-программы
 на **полном** raw chart, а не произвольное продолжение цены с matching
 graph. Все16 matter,10 positive-metric и6 orthogonal-frame координат
@@ -1489,5 +1494,9 @@ finite controls не заменяют их кванторы.
 Определения и старый root rectangle закреплены SHA256. Root search,
 старые470/781/central95/history925 suites, receipt generators и Lean builds
 не повторяются. Accepted main, включая ранее выполненную Lean-работу и
-новый рабочий flow, интегрирован с сохранённым IN_PROGRESS этого SOURCE.
-Не регистрируется physical action, новый task или original-parent terminal.
+новый рабочий flow, интегрирован. При конечной проверке обнаружено, что
+#310 был закрыт без merge во время работы; ветка содержит последующие
+результаты, но больше не является active Draft execution. Historical
+branch lifecycle не меняет фактический GitHub status. Старый PR не
+переоткрыт и новый не создан. Не регистрируется physical action, новый
+task или original-parent terminal.

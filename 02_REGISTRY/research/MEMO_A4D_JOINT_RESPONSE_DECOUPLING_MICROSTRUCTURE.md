@@ -1,8 +1,15 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
-Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
-Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
-is withdrawn: it closed a weaker source convention, not the theory target.
+Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, historical execution #310.
+Operational status: **#310 CLOSED without merge** at2026-10-16T10:11:24Z,
+with its last PR head713edc1a. Subsequent branch publications302e6d0b and
+4cf20e47 preserve the foundation/program/source results; they are not an
+open PR, acceptance on main or task retirement. The branch-local lifecycle
+snapshot is historical; GitHub is the runtime authority. A fresh execution
+route requires resolution under `00_WORK/README.md` before further task work.
+
+Mathematical status remains OPEN. The parent NO-GO/retirement announced at
+`530a5132` is withdrawn: it closed a weaker source convention, not the theory target.
 
 ## Current synthesis and the original terminal (2026-10-16)
 
@@ -5590,6 +5597,7 @@ Only the new stored_rotational_wave consumer ran this iteration:14 groups,
 ordinary1.520s and optimized1.461s, with byte-identical scientific JSON.
 The unchanged781-condition result is reused after verifying all four
 source hashes and14 input-definition pins. Old root/certificate suites
-and Lean builds were not replayed. SOURCE remains Draft/IN_PROGRESS;
-original fixed-source/raw-owner, exact refinement, full native Cost−Info
-and physical GR obligations remain OPEN.
+and Lean builds were not replayed. The execution was found CLOSED without merge during publication verification;
+this is preserved branch evidence, not an active Draft. No replacement PR
+was opened or old PR reopened. Original fixed-source/raw-owner, exact
+refinement, full native Cost−Info and physical GR obligations remain OPEN.
