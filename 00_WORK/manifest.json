@@ -132,14 +132,14 @@
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Certify max Tr(sigma J(t)) = ||C(t)||_* and the support criterion |t·y| <= ||C(t)||_*, with a rank-at-most-2 density, without nonlinear continuation.",
+      "exit_condition": "Certify max Tr(sigma J(t)) = ||C(t)||_* and the support criterion |t\u00b7y| <= ||C(t)||_*, with a rank-at-most-2 density, without nonlinear continuation.",
       "brief": "00_WORK/tasks/WRK-A4D-FORCE-NUCLEAR-NORM.md"
     },
     {
       "id": "WRK-A4D-ORBIT-MARGIN",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
