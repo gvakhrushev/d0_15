@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
-    },
-    {
-      "id": "WRK-A4D-N06-N07-RANK-HANDOFF",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Tabulate which full-rank N06/N07 formulas keep their domain and which must be replaced by the rank-aware operator on the lower-rank branch, with no new calculation.",
-      "brief": "00_WORK/tasks/WRK-A4D-N06-N07-RANK-HANDOFF.md"
     }
   ]
 }
