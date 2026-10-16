@@ -78,10 +78,14 @@ physical field block unresolved. It introduces no physical Gibbs preparation.
 A genuine curved row-wave has an exact full128 matter second lift, but its
 complete price Hessian is positive on that first velocity, so it cannot
 be repaired by acceleration
-alone. The next finite calculation is the complete joint Euler kernel with
-link/observer/preparation terms. The independent physical-admission and
-refinement obligations, and the original fixed-source/raw-norm terminal,
-remain open. Do not restart the already owned root search or a family census.
+alone. The [complete joint reduction](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md)
+now eliminates physical off-shell matter exactly and constructs the coupled
+field/shell operator on a full regular native chart. Its 16,744,448 eliminated
+real amplitude coordinates are replaced by their exact graph; moving shell
+normalization and all reference directions remain. The next finite step is
+solving `H_red` on `ker T` with all shell-source rows, not another directional
+Hessian fit. Physical admission, nonflat joint roots, refinement and the
+original fixed-source/raw-norm terminal remain open. Do not restart the already owned root search or a family census.
 
 ### Two linked scientific fronts
 

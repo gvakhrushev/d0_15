@@ -1475,6 +1475,25 @@ preparation и normalizer члены для этого вычисления. Н�
 вычислена равномерная оценка обратного блока подготовки, но не обращён
 полный field Hessian и не отождествлены разные operator owners.
 
+### 7.1. Полная карта и точное исключение физического off-shell блока
+
+[Продолжение совместной системы](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md)
+теперь строит **всю** регулярную stored-adjoint карту около этого root,
+а не одну wave. Whitened link лежит в SO(3), совместимом с Lorentz,
+и observer velocities не заморожены. На `(3,3,0,0)` карта имеет19
+complex parameters. У настоящего `b>0` все spatial leg lengths ненулевые;
+сингулярный flat-frame rank сюда не переносится.
+
+Off-shell matter решена точно даже нелинейно: `Psi=J sqrt(tau) V`,
+`E=0`, `Tr(tau J*J)=1`, с `||G_Q||<4` в указанном spectral window.
+Это исключает16,744,448 real amplitude coordinates, сохраняя весь
+physical shell128 и reference128. Полная линеаризация дана блоком
+`[H_red,T*;T,0]`, где `T(v)=P deltaDelta[v] P−mean P`, а H_red
+содержит constraint-curvature, global normalizer и действительный
+неопределённый matter resolvent. Тепловые modes не заменяются shell.
+Не обращён именно оставшийся field/shell блок; построенный operator
+нужно решить перед заявлением о продолжении совместного root.
+
 ## 8. Проверка изменённого расчёта и повторное использование прежнего
 
 `certificates/a4d_native_complete_field_source_check.py` содержит единый

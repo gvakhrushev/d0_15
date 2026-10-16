@@ -1,0 +1,75 @@
+{
+  "schema": "d0-native-joint-system-validation/1",
+  "source_ref": "74e62cdc716e10883accba9d34ccf0e21d58eb65",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T11:44:10.619028+00:00",
+  "entrypoint": "02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py",
+  "commands": [
+    "python3 02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py",
+    "python3 -O 02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py"
+  ],
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+  "checks": {
+    "joint_kernel_finite_fixture": 286,
+    "regular_native_chart": 51
+  },
+  "fixture": {
+    "field_dimension": 16,
+    "Hermitian_tangent_image_rank": 15,
+    "full_real_Jacobian_shape": [
+      33,
+      33
+    ],
+    "reduced_KKT_shape": [
+      19,
+      19
+    ],
+    "full_kernel_dimension": 15,
+    "reduced_kernel_dimension": 11,
+    "antiHermitian_vertical_dimension": 4,
+    "normalizer_diagonal_witness": "-502701241/1192251841",
+    "stationary_gradient_C": [
+      "-13244/41785",
+      "4637/20002",
+      "4637/20002",
+      "-407/2329"
+    ]
+  },
+  "rejected_shortcuts": [
+    "FROZEN_MATTER",
+    "DROPPED_SECOND_FIELD_JET_Y",
+    "FORCED_ETA_ZERO",
+    "DROPPED_NORMALIZER_RESPONSE",
+    "POSITIVE_ONLY_Q_RESOLVENT",
+    "FROZEN_GRAM_IN_EPSILON_NORMALIZATION",
+    "FROZEN_GRAM_IN_dE"
+  ],
+  "native_chart": {
+    "q3300_first_parameters": 19,
+    "whitened_links": "diag(1,SO(3)), not arbitrary SO(4)",
+    "all16_exterior_grades_retained": true,
+    "all43_original_directions_constrained_not_frozen": true,
+    "regular_chart_is_complete_local_nonlinear_chart": true
+  },
+  "definition_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py": "71ba142e284974db57d67c91a77ccd08a7e4f9759e8fc8daef7c5938774c0b28",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9"
+  },
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "b50614d5871377f0f70c2cffc9912b999eb95e162fccfe8fb3ebea1cf992a2f2",
+    "02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py": "bb96d8541a0beb2248da24183ee00bf092610798a0fad155978fe83910843d62",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/kernel_check.py": "7c1a651f2b2130f1dbc721f3de1e36f0319bed52a6fd8b9d9ae259f716fef1da",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65"
+  },
+  "mathematical_peer_review": "nonlinear augmented-action reconstruction and complete linear kernel equations reviewed read-only",
+  "prior_suites_replayed": false,
+  "new_Lean_build": false,
+  "remaining_field_shell_kernel_solved": false,
+  "nonflat_joint_root_constructed": false,
+  "physical_admission_derived": false,
+  "refinement_or_GR_closed": false
+}

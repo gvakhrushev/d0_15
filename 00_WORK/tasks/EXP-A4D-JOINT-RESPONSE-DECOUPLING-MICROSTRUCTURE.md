@@ -42,6 +42,14 @@ are pinned inputs, not a physical
 admission law or a full-field inverse. Consume this kernel in the construction
 or exclusion of a genuine joint branch, not another scalar-Hessian fit.
 
+The continuation now owns `A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md`:
+a complete regular stored chart, exact nonlinear physical off-shell elimination,
+and the coupled kernel `[H_red,T*;T,0]`. Its consumer is the construction or
+exclusion of the next native joint branch. Solve the retained field/shell
+operator on that chart; do not invert its zero shell block, replace SO(3)
+returns with SO(4), freeze the observer, or drop global normalizer/constraint
+curvature. The original fixed-source/raw-response terminal is unchanged.
+
 Write surface: this brief, the primary memo, complete-field-source synthesis
 and its existing research consumers. Preserve the whole readable research
 payload; do not restore old lifecycle files. The two inherited shift-irrelevance
