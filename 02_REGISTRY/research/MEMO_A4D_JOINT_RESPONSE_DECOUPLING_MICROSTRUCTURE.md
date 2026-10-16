@@ -4962,3 +4962,68 @@ an engine-admitted variation. Thus the result identifies a concrete
 candidate state-to-frame map and its first nondegeneracy boundary, while
 leaving the native metric-transfer obligation open. It does not change any
 parent terminal or the fixed-source/raw-owner status.
+
+## The Lorentz reflection retains a leading observer/matter source (2026-10-16)
+
+The [complete reflection-source continuation](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md)
+now differentiates the existing native positive pairing rather than merely
+changing its pointwise signature. In covariant notation
+`h=-g+2(gJ)(gJ)^T/g(J,J)`, where the native quotient slot is
+`q_native=g^-1`. The volume densities agree, but their scalar curvatures obey
+the exact general identity
+
+```text
+R_h=-R_g+2(theta²-K²-Omega²)-4div_h(theta u),
+u=J/sqrt(g(J,J)),  Omega²=Omega_ab Omega^ab.
+```
+
+Here K is the spatial symmetric derivative and Omega the spatial
+antisymmetric derivative, with both index orders in its norm. The proof
+uses the full connection difference and its contractions, not a finite
+example. With moving coefficient c the integrated source also retains
+`4theta u(c)` and the explicit boundary flux. Thus the preceding actual
+price `B+c R_h+Rem` contains the observer term at the **same order** as
+`-c R_g`. Small t cannot hide it in the O(t4) remainder; B and its volume
+source remain as well.
+
+On the already owned full16 CAR family with
+`J=(1,-2s²/(1+2s²),0,0)` and transverse `s=1+y`, the Lorentz metric is
+exactly flat while `R_h=-2chi_y²`,
+`chi=-(1/2)log(1+4s²)`. At s=1 the true projected matter Euler derivative
+after integration by parts, per unit constant curvature coefficient, is
+`-192/125`; the pointwise partial would give
+the opposite sign. The whole varied family has det h=1, so no volume
+derivative or boundary convention supplies this difference. Its nonzero
+force comes from the observer sector and must enter the joint action.
+
+The full source pullback retains all10 symmetric metric and all16 matter
+columns, the current normalizer, frame/pairing/operator motion and direct
+terms. The CAR Clifford Gram gives a constructive norm-tangent lift of all
+three observer directions on the timelike sector. It also allows every
+metric jet to hold the current **line** fixed by a compensating full-matter
+jet; it does not impose an engine evolution or remove invisible matter
+directions. Curvature-sector stationarity cannot therefore be renamed the
+pure Lorentz Einstein equation by the invertibility of reflection.
+
+There is also an explicit full native kinematic lift of any prescribed
+positive record metric h. If m0 is arbitrary timelike-current rest matter
+and `H(r)=-eta+2(eta j)(eta j)^T/(1-|r|²)`, then
+`F=h^-1/2 O H(r)^1/2`, `m=rho(F)m0` gives exactly h as the actual native
+observer pairing. The inverse is explicit. All10 positive-metric, all16
+rest-matter and6 reference-frame coordinates remain; no normalization or
+gauge quotient is imposed. This removes an algebraic realizability question,
+but does not prove that the same record instrument on the lifted fields
+produces its prescribed h, complete history and physical action.
+
+The parallel [matrix-return compiler](A4D_GOLDEN_DETERMINANT_COMPILER.md)
+is consumed here with its exact positive coefficient rescaling
+`c=gamma alpha t²/2`, `gamma=2p6`. Its effect composition and the canonical
+W_E price remain distinct from a cost-preserving native instrument
+compilation. That premise is not reopened or silently promoted to admission.
+
+The new focused entrypoint is
+`a4d_native_lorentz_reflection_source_check.py`. Existing proofs and unchanged
+suites are reused. The same-program projector/native metric binding, physical action
+selection, full coupled solutions, refinement and original fixed-source/
+raw-owner terminal remain open; this continuation makes their required
+observer/matter source explicit rather than fitting a compensating action.
