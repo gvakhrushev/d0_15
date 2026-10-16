@@ -1,0 +1,26 @@
+{
+  "expected_output_modified": false,
+  "mutations": [
+    {
+      "failure": "all24_torsion_inverse_001",
+      "mutation": "wrong_cyclic_contorsion_sign",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failure": "complete_connection_jet_0",
+      "mutation": "freeze_moving_coframe_term",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failure": "complete_geometric_density_with_boundary",
+      "mutation": "drop_boundary_density",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failure": "complete_geometric_density_with_boundary",
+      "mutation": "drop_torsion_cross_term",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    }
+  ],
+  "schema": "d0-coframe-torsion-mutations/1"
+}

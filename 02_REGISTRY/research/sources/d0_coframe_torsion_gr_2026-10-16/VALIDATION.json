@@ -1,0 +1,26 @@
+{
+  "schema": "d0-coframe-torsion-validation/1",
+  "source_ref": "7883d390787a0265b52dff938f4cb59ff5180e17",
+  "execution_pr": 334,
+  "ordinary": "PASS",
+  "optimized": "PASS_IDENTICAL_FULL_JSON",
+  "exact_checks": 211,
+  "actual_mathematical_mutants_rejected": 4,
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "full_checker_stdout_sha256": "76e0ee9ec32591d0f61f8bbdc7804c259b4b2dcaf23e1524e58ec48e19abef3a",
+  "git_blobs": {
+    "../../A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md": "023444e73d67815c94302767e3ea8163d99f4f95",
+    "check_reconstruction.py": "0b11d34f2f982a62616722feeb110f10fa55f2e6",
+    "test_mutations.py": "95d699edcbab16a4210a42a65cc7a55e40ab3174",
+    "mutations.json": "a52bf7fa84e7580038617c0d5de7a42132036f55"
+  },
+  "parent_suites_replayed": false,
+  "new_Lean_compilation": false,
+  "independent_scientific_acceptance": false,
+  "existing_v8_action_replaced": false,
+  "new_periodic_native_critical_root": false,
+  "physical_action_selection": false,
+  "GR_closed": false,
+  "external_primary_context": "https://arxiv.org/abs/2106.13793"
+}
