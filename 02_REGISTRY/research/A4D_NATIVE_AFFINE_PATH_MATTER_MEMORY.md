@@ -16,8 +16,9 @@ The actual seed in the closed record engine is
 \[
 m_*=e_0+\Omega,
 \]
-with all sixteen exterior coordinates retained (the scalar and top-grade
-coordinates are both one in the unnormalized seed). Let
+where \(e_0\) is the role-0 one-form basis vector (occupation mask 1),
+\(\Omega\) is the top-grade basis vector (mask 15), and all sixteen exterior
+coordinates are retained. The scalar coordinate (mask 0) is zero. Let
 \(U_r=\operatorname{record}(I_4,e_r)\) be the four actual orthogonal CAR
 returns. In the left action \(m\mapsto U_rm\), the two words produce
 \[
