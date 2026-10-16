@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
-    },
-    {
-      "id": "WRK-A4D-RANK-BIRTH-DIRECTIONS",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Describe exactly the 28800 rank-birth amplitude directions invisible to the first density derivative, without calling them gauge.",
-      "brief": "00_WORK/tasks/WRK-A4D-RANK-BIRTH-DIRECTIONS.md"
     }
   ]
 }
