@@ -81,17 +81,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-WEIGHTED-SITE-SOURCE-TRANSFER.md"
     },
     {
-      "id": "WRK-A4D-RAW-SOURCE-PRECISION-BUDGET",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Compose the already proved auxiliary-gap, finite return-history, prepared-address and finite source-reflection estimates into an explicit error budget in the unchanged h^-2 raw-l1 target, with every dimension, conditioning and moving-calibration factor exposed and checked.",
-      "brief": "00_WORK/tasks/WRK-A4D-RAW-SOURCE-PRECISION-BUDGET.md"
-    },
-    {
       "id": "WRK-A4D-MV-FULL-RANK-SPAN",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -132,7 +121,7 @@
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Certify max Tr(sigma J(t)) = ||C(t)||_* and the support criterion |t·y| <= ||C(t)||_*, with a rank-at-most-2 density, without nonlinear continuation.",
+      "exit_condition": "Certify max Tr(sigma J(t)) = ||C(t)||_* and the support criterion |t\u00b7y| <= ||C(t)||_*, with a rank-at-most-2 density, without nonlinear continuation.",
       "brief": "00_WORK/tasks/WRK-A4D-FORCE-NUCLEAR-NORM.md"
     },
     {
