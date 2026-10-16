@@ -53,3 +53,7 @@ q3300-блока на каждую фиксированную пару `(d,o)` �
 Это исключает second-order jet только для pure q/-q velocity при нулевой
 первой скорости памяти; смешанные velocities и остальные режимы остаются
 открытыми. Это не доказательство сходящейся nonlinear branch или ОТО.
+
+## Follow-up: memory-only mixed velocity
+
+The later [quotient-jet proof](../../A4D_MEMORY_FIBRE_MIXED_MEMORY_VELOCITY.md) extends the no-jet result to every first-order tangent in the smooth stationary memory fibre. It still restricts the field component to the one q3300 crossing pair; additional field modes remain open.

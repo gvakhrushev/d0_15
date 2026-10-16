@@ -1,0 +1,86 @@
+{
+  "checks": [
+    "input_pin:02_REGISTRY/research/A4D_MEMORY_FIBRE_MIXED_MEMORY_VELOCITY.md",
+    "input_pin:02_REGISTRY/research/A4D_MEMORY_FIBRE_CROSSING_TRANSVERSALITY.md",
+    "input_pin:02_REGISTRY/research/A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md",
+    "input_pin:02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md",
+    "input_pin:02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/LOCAL_CRITICAL_LOCUS_CONSUMER.md",
+    "input_pin:02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_interval.py",
+    "input_pin:02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_CHOICES.json",
+    "input_pin:02_REGISTRY/research/sources/d0_memory_fibre_crossing_2026-10-16/check_transversality.py",
+    "input_pin:02_REGISTRY/research/sources/d0_memory_fibre_crossing_2026-10-16/RESULT.json",
+    "owned_interior_crossing_segment",
+    "unique_simple_crossing",
+    "full_rank_memory_segment",
+    "strict_owned_cokernel_pairing",
+    "omega_has_eight_shell_modes",
+    "omega_difference_has_33_modes",
+    "original_q_outside_omega_difference",
+    "s3_q_representative_outside_difference",
+    "q_and_representative_are_spatial_permutations",
+    "negative_q_outside_omega_difference",
+    "q_first_eigenvalue_jet_zero",
+    "first_q_derivative_zero_over_memory_fibre",
+    "two_memory_one_q_derivative_zero",
+    "three_memory_derivative_zero",
+    "field_field_memory_term_is_owned_M",
+    "full_mixed_jet_independent_of_memory_velocity",
+    "nonzero_mixed_term_without_q_support_hypothesis"
+  ],
+  "conclusion": {
+    "additional_field_modes_classified": false,
+    "no_second_order_jet_for_nonzero_crossing_pair_plus_any_memory_fibre_tangent": true,
+    "nonlinear_branch_or_physical_GR_closed": false,
+    "requires_no_zero_first_order_memory_assumption": true
+  },
+  "consumed_crossing": {
+    "complex_kernel_dimension": 1,
+    "crossing_interval": [
+      0.42,
+      0.44
+    ],
+    "real_q_minus_q_kernel_dimension": 2,
+    "result_sha256": "74e24e526be8863b7bf044c2d3f43e4c1d768ef4d09c0a3710c324bc02c45d55",
+    "unit_pairing_upper": -0.8441935665105288
+  },
+  "exact_checks": 26,
+  "fourier": {
+    "L": 8,
+    "both_outside_omega_difference": true,
+    "omega_difference_size": 33,
+    "omega_size": 8,
+    "q_original": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "q_representative": [
+      3,
+      0,
+      0,
+      3
+    ],
+    "shell_compression_of_first_q_jet": "zero"
+  },
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_MEMORY_FIBRE_CROSSING_TRANSVERSALITY.md": "0c371c1284fe9110588034bb11912a9a656ec37ee4149980dfced15aa68fb793",
+    "02_REGISTRY/research/A4D_MEMORY_FIBRE_MIXED_MEMORY_VELOCITY.md": "ec9436723739de1e1b8bd5c0b22f36235cbd769c1ce7effafb852c4e022701d6",
+    "02_REGISTRY/research/A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md": "a12d151ce659cc2b27ea15d6ddf2f0b8a2973f3b9348d323b32e333c2037ffde",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
+    "02_REGISTRY/research/sources/d0_memory_fibre_crossing_2026-10-16/RESULT.json": "74e24e526be8863b7bf044c2d3f43e4c1d768ef4d09c0a3710c324bc02c45d55",
+    "02_REGISTRY/research/sources/d0_memory_fibre_crossing_2026-10-16/check_transversality.py": "3b9794bea58bf68545176c7309d5e466b565665ba00d2686800a210518a9404e",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/LOCAL_CRITICAL_LOCUS_CONSUMER.md": "2c15b9ea9a06bdb84c0947df56c1019e585c3e3d6b11499471dedaf49438a969",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_CHOICES.json": "be4facb35ddd2532f137db5a27a4ec6da3b97943980e93f9ddea9a8241390d6a",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_interval.py": "19d4e33f7c74465da9079ec4e3c90e0b20b3b1aad448a0cdb1957a3fc61ef41f"
+  },
+  "reduced_jet": {
+    "functional": "Phi(x,sigma)=F_price(Delta(x))+epsilon_hat(x,sigma)",
+    "pure_memory_cubic_term": "zero",
+    "q_memory_memory_cubic_term": "zero",
+    "q_q_memory_cubic_term": "Tr(zeta M_v)",
+    "quotient_denominator_variations_retained": true,
+    "sum_for_xi=(v,w)": "Tr(zeta M_v), independent of w"
+  },
+  "schema": "d0-memory-only-mixed-velocity-jet/1"
+}

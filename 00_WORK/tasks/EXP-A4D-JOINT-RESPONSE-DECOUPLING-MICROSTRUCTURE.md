@@ -71,10 +71,16 @@ Consume Section14 of the joint owner; do not repeat the pure endpoint search.
 The exact flat critical preparation path from faithful to pure has an
 affine normal Hessian and a net negative-index increase5510. Hence interior
 joint linearized kernels are forced; q3300 already proves one exists by
-its12+/1- to11+/2- change. The next bounded consumer is strict localization
-and nonlinear `E2 C+2E1 C1=0` / source-neutral M_v compatibility at that
-interior kernel, alongside the actual native transition/action. A field
-crossing does not establish a nonlinear joint branch or the original terminal.
+its12+/1- to11+/2- change. The old stored-sector q3300 crossing is now
+localized and its second-order memory-fibre compatibility is checked: no
+q-only field velocity, even with arbitrary first-order motion along that
+stationary memory fibre, has a second-order jet. Additional field modes and
+the actual full-Lorentz preparation path remain unclassified. Continue with
+the nonlinear `E2 C+2E1 C1=0` / source-neutral `M_v` test on an admissible
+full-Lorentz family alongside the actual native transition/action; do not
+reuse the old pure endpoint, which fails the extra boost rows. A field
+crossing does not establish a nonlinear joint branch or the original
+terminal.
 
 The coordinated `5ff92208` packet now localizes the unique q3300 legacy
 Schur crossing to `[0.43032,0.430405]`. Its grade-four source-neutral
@@ -83,6 +89,16 @@ pairing is strictly positive on the actual kernel. Preserve the eight-file
 receipt by exact input identity; do not repeat this same legacy crossing
 search. Its four-source fibre is the stated scope, not the new full-Lorentz
 domain. The old mixed path fails the12 extra boost rows independently.
+
+For the related old stored-source segment, the [memory-fibre certificate]
+(../../02_REGISTRY/research/A4D_MEMORY_FIBRE_CROSSING_TRANSVERSALITY.md) encloses
+the q3300 crossing in `[0.42,0.44]` and the source-neutral line pairing below
+`-0.8441`. Its [mixed-memory quotient-jet consumer]
+(../../02_REGISTRY/research/A4D_MEMORY_FIBRE_MIXED_MEMORY_VELOCITY.md) proves the
+same obstruction for every first-order memory-fibre tangent when the field
+velocity is confined to q3300. This remains the old stored preparation
+interface and does not classify additional field modes or the full-Lorentz
+balanced rank8 path.
 
 Write surface: this brief, the primary memo, complete-field-source synthesis
 and its existing research consumers. Preserve the whole readable research

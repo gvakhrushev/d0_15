@@ -4,6 +4,7 @@ from pathlib import Path
 import hashlib,json,subprocess,sys
 ROOT=Path(__file__).resolve().parents[3]
 P=ROOT/'02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16'
+M=ROOT/'02_REGISTRY/research/sources/d0_memory_fibre_mixed_memory_velocity_2026-10-16'
 meta=json.loads((P/'VALIDATION.json').read_text())
 for rel,digest in meta['sha256'].items():
     if hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()!=digest:
@@ -15,4 +16,8 @@ cmd=[sys.executable]+(['-O'] if sys.flags.optimize else [])+[str(P/'check_rank_c
 proc=subprocess.run(cmd,capture_output=True,text=True,check=True,timeout=120)
 if json.loads(proc.stdout)!=json.loads((P/'result.json').read_text()):
     raise ArithmeticError('new exact result mismatch')
-print('PASS_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION: finite source/rank/jet results; physical GR and nonflat native root OPEN')
+mixed_cmd=[sys.executable]+(['-O'] if sys.flags.optimize else [])+[str(M/'check_mixed_memory_jet.py')]
+mixed=subprocess.run(mixed_cmd,capture_output=True,text=True,check=True,timeout=120)
+if json.loads(mixed.stdout)!=json.loads((M/'RESULT.json').read_text()):
+    raise ArithmeticError('mixed-memory quotient-jet result mismatch')
+print('PASS_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION: source/rank/second-jet and memory-only mixed-velocity results; physical GR and nonflat native root OPEN')
