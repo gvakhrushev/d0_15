@@ -235,3 +235,42 @@ python3 -O 02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/c
 Это доказывает, что flat-moduli no-go §4 **специфичен для fixed positive β**, а не является вечным запретом получить EH как локальный continuum leading term. Но full scale-source owner `A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md`, §7, требует одновременно `MzβZ<1`, а `Z~const β⁻²` для `β→0`. Поэтому при bounded `M>0` совместная стационарность потребует по крайней мере `z=O(β)` с коэффициентным ограничением; `z=o(β)` — безопасный *только с точки зрения необходимого scale inequality* пробный режим. Ни `z(β)`, ни `β(L)` не выбраны D0-процессом в текущих владельцах.
 
 **Критическая оставшаяся физика:** даже когда flat-moduli shape response подавлен, на кривом фоне heat a₂ источает Riemannian/observer curvature `R_G` и torsion/measure terms из `A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md`, а не автоматически лоренцев `R_g`. Следовательно, high-temperature limit закрывает ровно один спектральный шум, но не завершает Einstein–matter variation, физический источник/наблюдателя или весь 10-slot admissible image. Кандидат на завершение обязан одновременно (i) вывести scale law из actual record/clock, (ii) устранить различие `R_G` и `R_g` законными operator/source jets, (iii) сохранить full rank по допустимым физическим metric probes, (iv) доказать uniform nonlinear refinement и source norm.
+
+## 9. Следующий точный геометрический target: observer source для различия `R_G` и `R_g`
+
+Есть положительная алгебраическая граница для ещё одного независимого звена — она не требует подбирать коэффициент эмпирически. Предположим **локально гиперповерхностно-ортогонального** timelike наблюдателя и zero shift. Запишем одной общей spatial positive 3-метрикой `h_ij(t,x)` и lapse `N>0`
+
+\[
+ ds_L^2=N^2dt^2-h_{ij}dx^idx^j,
+ \qquad ds_E^2=N^2dt^2+h_{ij}dx^idx^j.
+\]
+
+Положим `K_ij=∂_t h_ij/(2N)`, `K=tr_h K`, `Δ_h N=h^{-1/2}∂_i(√h h^{ij}∂_jN)`. При одинаковой ориентации и convention `R=tr_g Ric` формула Гаусса–Кодацци даёт **точно, вне уравнений движения**:
+
+\[
+\begin{aligned}
+ R_E&={}^{(3)}R_h-2N^{-1}\Delta_hN-2N^{-1}\partial_tK-K_{ij}K^{ij}-K^2,\\
+ R_L&=-{}^{(3)}R_h+2N^{-1}\Delta_hN-2N^{-1}\partial_tK-K_{ij}K^{ij}-K^2,\\
+ \boxed{R_L=R_E-2\,{}^{(3)}R_h+4N^{-1}\Delta_hN.}
+\end{aligned}\tag{14}
+\]
+
+`√|det g_L|=√det g_E=N√det h`. На закрытом spatial leaf `∫√hΔ_h N=0`; при границе требуется сохранить именно эту spatial boundary. Получаем идентичность действий в данной области:
+
+\[
+ \boxed{\int R_L\,dV_L=\int R_E\,dV_E
+                 -2\int N\sqrt h\,{}^{(3)}R_h\,dt\,d^3x}
+ \quad\text{mod spatial boundary}.\tag{15}
+\]
+
+На torsion-free/natural-volume full16 Hodge-операторе из `A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md` имеем `L2=−4R_E/3`. Поэтому требуемый **геометрический** Lorentz source в этой узкой области можно переписать через действительный heat readout без произвольных новых полей:
+
+\[
+ \int R_L\,dV_L=-\frac34\int L_2\,dV_E
+               -2\int N\sqrt h\,{}^{(3)}R_h\,dt\,d^3x
+               +\text{boundary}.\tag{16}
+\]
+
+Это фиксирует **недостающий объект** — weighted spatial intrinsic curvature наблюдателя — и его неизбежный относительный коэффициент. Но это пока **только точная дифференциально-геометрическая композиция**. Нельзя прибавлять `−2R3` к native-цене как rescue term без собственного native operator/record owner. Также не покрыты twisting observer, arbitrary shift, независимый matter/spin и admissible finite source; (16) не является доказательством полного Einstein-предела.
+
+Точный независимый `check_observer_curvature.py` вычисляет все Christoffel/Ricci без готового scalar oracle в трёх отрицательных/положительных контролях: 1+1 mixed lapse и time-dependent spatial metric, flat FRW с тремя spatial directions, статическое `S²×S¹` со spatial R=2. Обычный и `python -O` прогоны оба PASS. Этот target может быть полезен текущему интегратору при реальном сравнении `R_G` vs `R_g`: вместо неопределённого «observer stress» появляется конкретная роль 3D Riemannian curvature на листе наблюдателя, проверяемая в исходной cochain/history программе.
