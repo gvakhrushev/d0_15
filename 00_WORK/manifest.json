@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Compute the complete Euler and boundary terms of the already-declared scalar-coefficient curvature, topological-density and observer sectors with moving scale/preparation and normalized aggregation, without selecting a scale law.",
       "brief": "00_WORK/tasks/WRK-A4D-MOVING-SCALE-VARIATION.md"
-    },
-    {
-      "id": "WRK-A4D-PREPARATION-SECOND-VARIATION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Derive a noncommuting second-variation/envelope formula and explicit safe-domain bounds for the existing preparation optimum and channel relative-entropy remainder, without claiming stability of the full dynamics.",
-      "brief": "00_WORK/tasks/WRK-A4D-PREPARATION-SECOND-VARIATION.md"
     }
   ]
 }
