@@ -1,0 +1,13 @@
+{
+  "checker_sha256": "18a677df5bdf5a926f553bfa2fef6c2660376d60d0d9744e22c9dd48959cc98e",
+  "exact_check_count": 23,
+  "full_native_joint_Euler_or_GR_claimed": false,
+  "normal_and_optimized": "PASS_IDENTICAL_JSON",
+  "pinned_owner_replayed": true,
+  "python": "3.12.14",
+  "result_sha256": "0640081bfa65c0f131e78f254f54399d7e1616a91219a2d53b91a7aa748da401",
+  "root_search": false,
+  "schema": "d0-cone-full-shell-first-jet-validation/1",
+  "status": "PASS_IDENTICAL_JSON",
+  "sympy": "1.14.0"
+}

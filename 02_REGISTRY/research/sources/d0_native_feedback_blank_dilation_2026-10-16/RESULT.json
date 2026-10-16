@@ -1,0 +1,111 @@
+{
+  "checks": 36,
+  "exact_fixture": {
+    "B": "Matrix([[751/1625, 168/1625], [168/1625, 849/1625]])",
+    "B_eigenvalues": [
+      "3/5",
+      "5/13"
+    ],
+    "M": 3,
+    "N": 2,
+    "P_reference_extended_blank": "80226825198489750515533531913097/428983333404378483310699462890625",
+    "P_single_blank": "43129378713/75418890625",
+    "S": "Matrix([[1428/1625, -96/1625], [-96/1625, 1372/1625]])",
+    "log_cycle_order": 6,
+    "n_survival_rounds": 3,
+    "noncommuting_moving_source": "1106206040071/2875291914200",
+    "slater_minor_count": 6,
+    "z": "1/4"
+  },
+  "golden_reference_z": {
+    "conditional_equal_pair_probability": "1/2",
+    "excluded": "unconditioned finite deterministic unions of golden reference cylinders; not arbitrary quantum interference or postselection",
+    "p": "-1/2 + sqrt(5)/2",
+    "twenty_pair_success_probability": "1814798169801752576 - 811602414623784960*sqrt(5)",
+    "unconditional_all_zero_accepted_probability": "1730726404001 - 774004377960*sqrt(5)",
+    "z": "1/1048576"
+  },
+  "labels": [
+    "rational_frame_orthogonal",
+    "native_round_effect_B2_plus_S2",
+    "native_round_factors_commute",
+    "no_diagonalizing_as_assumption",
+    "both_B_eigenvalues_strictly_between_zero_and_one",
+    "all_n_plus_two_outcomes_full_and_retained",
+    "no_click_effect_A_exactly",
+    "failures_telescope_without_erasure",
+    "all_slater_minors_equal_det_A",
+    "nontrivial_fermionic_no_click_probability",
+    "reference_spectator_multiplicity_det_power",
+    "noncommuting_field_jet",
+    "moving_z_and_noncommuting_matrix_jet",
+    "full_reference_blank_source_exact_with_dz",
+    "reference_multiplied_source_from_one_extended_operator",
+    "feedback_source_not_artificially_zero",
+    "cyclic_1_over_j_forced_by_blank_event_log",
+    "unique_log_derivative_Jacobi",
+    "same_survival_trace_for_split_modes",
+    "different_blank_det_at_same_survival_trace",
+    "detector_can_distinguish_trace_equal_split",
+    "all_nonzero_toy_spectrum_rank",
+    "exact_coin_polynomial_degree_M_rank_F",
+    "native_L8_full16_all4096_momenta",
+    "native_reference128_degree_eight_million",
+    "L8_coin_depth_lower_bound_1024_conditional",
+    "L4_coin_depth_lower_bound_255_conditional",
+    "L16_coin_depth_lower_bound_4096_conditional",
+    "golden_reference_probability_identity",
+    "nonzero_order_mismatch_pair_probability",
+    "two_mismatched_goldens_conditionally_unbiased",
+    "twenty_postselected_fair_pairs_yield_z_conditional",
+    "unconditional_accepted_word_not_same_as_z",
+    "golden_probability_irrational_quadratic_integer",
+    "finite_gold_word_products_are_p_powers",
+    "native_z_is_nontrivial_rational"
+  ],
+  "scope": {
+    "capacity": "polynomial bound assumes all z-dependence is through scalar affine-probability classical coin tests; exact identity across an open z interval, not just calibrated fixed z",
+    "not_proved": "native many-body Fock admission, filled preparation, z coin, physical Cost-Info selection, full retained workspace, GR, original h^-2 refinement",
+    "positive": "explicit z-mixed B/S instrument, exact Slater determinant, reference multiplicity and source without spectral oracle"
+  },
+  "status": "PASS",
+  "v8_conditional_coin_bound": [
+    {
+      "L": 4,
+      "blank_polynomial_degree": 522240,
+      "minimum_serial_z_coin_calls_per_round_if_uniform_in_z": 255,
+      "one_particle_dim": 4096,
+      "rank_F": 4080,
+      "reference": 128,
+      "survival_rounds": 2048
+    },
+    {
+      "L": 8,
+      "blank_polynomial_degree": 8386560,
+      "minimum_serial_z_coin_calls_per_round_if_uniform_in_z": 1024,
+      "one_particle_dim": 65536,
+      "rank_F": 65520,
+      "reference": 128,
+      "survival_rounds": 8192
+    },
+    {
+      "L": 16,
+      "blank_polynomial_degree": 134215680,
+      "minimum_serial_z_coin_calls_per_round_if_uniform_in_z": 4096,
+      "one_particle_dim": 1048576,
+      "rank_F": 1048560,
+      "reference": 128,
+      "survival_rounds": 32768
+    },
+    {
+      "L": 32,
+      "blank_polynomial_degree": 2147481600,
+      "minimum_serial_z_coin_calls_per_round_if_uniform_in_z": 16384,
+      "one_particle_dim": 16777216,
+      "rank_F": 16777200,
+      "reference": 128,
+      "survival_rounds": 131072
+    }
+  ]
+}
+
