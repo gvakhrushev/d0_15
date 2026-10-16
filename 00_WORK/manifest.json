@@ -59,39 +59,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     },
     {
-      "id": "WRK-A4D-LEAN-GOLDEN-CURVATURE-KERNEL",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the finite four-cylinder moment identities and calibrated degree-four coefficient extraction generically in Lean, then specialize the existing golden parameters without assuming curvature or GR.",
-      "brief": "00_WORK/tasks/WRK-A4D-LEAN-GOLDEN-CURVATURE-KERNEL.md"
-    },
-    {
-      "id": "WRK-A4D-LEAN-SOURCE-REFLECTION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize a generic finite-dimensional right-inverse/dual-source reflection theorem and explicit internal-source correction, with a norm bound and symmetric packed-pairing specialization.",
-      "brief": "00_WORK/tasks/WRK-A4D-LEAN-SOURCE-REFLECTION.md"
-    },
-    {
-      "id": "WRK-A4D-ANISOTROPIC-NORMAL-SOURCE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Derive and check the full first variation of the normal-covariance quadratic coefficient, separating its isotropic curvature term from the genuine anisotropic remainder with moving frame and measure.",
-      "brief": "00_WORK/tasks/WRK-A4D-ANISOTROPIC-NORMAL-SOURCE.md"
-    },
-    {
       "id": "WRK-A4D-MOVING-SCALE-VARIATION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -101,17 +68,6 @@
       ],
       "exit_condition": "Compute the complete Euler and boundary terms of the already-declared scalar-coefficient curvature, topological-density and observer sectors with moving scale/preparation and normalized aggregation, without selecting a scale law.",
       "brief": "00_WORK/tasks/WRK-A4D-MOVING-SCALE-VARIATION.md"
-    },
-    {
-      "id": "WRK-A4D-PREPARATION-SECOND-VARIATION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Derive a noncommuting second-variation/envelope formula and explicit safe-domain bounds for the existing preparation optimum and channel relative-entropy remainder, without claiming stability of the full dynamics.",
-      "brief": "00_WORK/tasks/WRK-A4D-PREPARATION-SECOND-VARIATION.md"
     }
   ]
 }
