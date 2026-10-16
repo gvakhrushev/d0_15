@@ -2,7 +2,7 @@
   "schema": "d0-native-joint-system-validation/2",
   "source_ref": "19b22bda285d10c1393da7e4ecb495823217a7f6",
   "execution_pr": 334,
-  "timestamp_utc": "2026-10-16T12:24:46.340452+00:00",
+  "timestamp_utc": "2026-10-16T12:28:01.516693+00:00",
   "entrypoint": "02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py",
   "commands": [
     "python3 02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py",
@@ -98,7 +98,11 @@
     "operator_distance_from_signature_upper": 0.00026884309955525163,
     "all_4096_modes_and_16_exterior_components": true,
     "root_rectangle_radius": "1e-12",
-    "all_other_modes_solved": false
+    "all_other_modes_solved": false,
+    "phase_root_float_error_upper": 6.835808657661923e-17,
+    "mode_phase_conversion_error_included": true,
+    "floating_operator_assembly_error_included": true,
+    "phase_bound_method": "outward interval distance between exact Q(sqrt2,i) eighth roots and binary64 representatives; propagated with full coefficient norm sums"
   },
   "arithmetic_environment": {
     "python": "3.9.6",
