@@ -104,11 +104,12 @@ wrong_golden_scale_power_fails: [propext, Classical.choice, Quot.sound]
 | Команда | Результат |
 |---|---|
 | `python3 tools/lean_task_build.py narrow D0.Research.GoldenCurvatureKernel` | PASS, `returncode=0`, 357.5 s, модуль собран |
-| `python3 tools/validate_repo.py` | FAIL, orphan: `D0/Research/GoldenCurvatureKernel.lean` |
-| `python3 tools/formalization_debt_audit.py --check` | FAIL, `unreachable-module`: `D0.Research.GoldenCurvatureKernel` |
+| `python3 tools/validate_repo.py` | PASS после строки `formal_support.csv`; до неё был orphan |
+| `python3 tools/formalization_debt_audit.py --check` | PASS, `findings=3`, baseline не вырос |
+| `python3 tools/generate_lean_views.py --check` | PASS |
 
-Полный `lake build D0.All` не запускался: модуль намеренно не добавлен в `All.lean`.
+Строка closure — `D0.Research.GoldenCurvatureKernel` в `02_REGISTRY/formal_support.csv`. `All.lean` пересобран генератором, руками не правился. ClaimMap не менялся. Полный `lake build D0.All` остаётся на CI.
 
 ## Блокер
 
-Общий `All.lean` и closure не менялись. Пока M01 не добавит импорт и строку closure, `validate_repo.py` отвергает модуль как orphan, поэтому задача остаётся `IN_PROGRESS` и не переводится в REVIEW.
+Узкий модуль и closure собраны. Задача остаётся `IN_PROGRESS`, пока CI не соберёт `D0.All` и ветка не воберёт уже слитые снятия соседних задач. После этого её можно снять с очереди. Это по-прежнему не кривизна и не ОТО.
