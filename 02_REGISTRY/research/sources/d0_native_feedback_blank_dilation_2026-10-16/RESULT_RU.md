@@ -183,6 +183,20 @@ z\text{ не есть такое golden-event probability}.}
 
 Следовательно простой **serial single-z-coin-per-record-round** не реализует `J` uniformly in z. Даже bounded-fixed-many z-coins per round рано или поздно не проходит refinement. Но 128 labels и 128 reference dimensions **не** являются по определению 128 coins; из этой таблицы нельзя заключить об impossibility полной D0-программы. Full operator collective gate, многотельный Fock spectator или реально порождённый другой `z`-law лежат за пределами предпосылок (10).
 
+### Размерностная граница именно этого CAR-расширения
+
+Реализация (5) предполагает **внешний CAR на `r=N*M` комплексных one-particle modes**, а не обычный исходный single-site CAR на четырёх ролях. Полная CAR-алгебра `r` мод изоморфна `M_(2^r)(C)`, поэтому её ненулевая/faithful *-репрезентация требует комплексное Hilbert-пространство размерности не меньше `2^r` (не считая вспомогательных outcome labels).
+
+На прежнем `L=8`: `N=65536`, `M=128`, значит `r=8 388 608` и требуемый `log₂ dim ≥ 8 388 608`. Между тем даже **заведомо щедрое** произведение всех явно указанных ресурсов v8 — base `N=2^16`, reference `128=2^7`, workspace `128^8192=2^57344`, плюс отдельно `32` labels, `2` coefficient, `2` golden-port и ещё раз `128` outcomes (последнее, возможно, уже включено в workspace) — имеет
+
+\[
+\log_2 \dim H_{\mathrm{listed}}\le16+7+57344+5+1+1+7=\boxed{57381}
+\quad\ll\quad\boxed{8\,388\,608}.
+\tag{12}
+\]
+
+**Следствие:** faithful *полная внешняя CAR-реализация* (5) не помещается в перечисленный существующий v8 tensor budget. Для её физического допуска нужно вывести **новый** источник многомодовой CAR или другой, существенно более сжатый native determinant compiler, не предполагающий весь внешний Fock. Это точное препятствие конкретной предложенной реализации, **не** запрет вычислить determinant меньшей схемой и **не** полная классификация всех ресурсов D0.
+
 ## 5. Что изменилось в программе и какой именно следующий потребитель
 
 **Закрыто без физических заявок:** (1)–(3) дают полный finite no-click Kraus instrument *только из supplied B,S,z*, все failures и две accepted labels retained; (4)–(7) дают неиспользующее eigenbasis доказательство `det`, правильных `1/j`, `M=128` как spectator multiplicity и всех заявленных первых jets; (8)–(9) запрещают считать native `z` произвольным конечным безусловным событием золотого **reference**-кода; (10)–(11) дают реальный resource lower bound для **определённого** serial-coin интерфейса.
@@ -212,4 +226,4 @@ z\text{ не есть такое golden-event probability}.}
 - algebraic-integer golden argument с positive 20-pair conditioning countercontrol;
 - точный `rank F=16(L⁴−1)`, degree и refinement capacity для однородного carrier v8.
 
-Результат — `RESULT.json`: **36 exact controls**, запуск обычным и `python -O` с побайтно идентичным научным JSON, SHA256 `37d4f3739f3bc0f6a713bb556500b9075a37d5dee27260cc0e89d71cace85a3f`. Full Lean, original expensive v8/root, GitHub CI и самостоятельный physical/native admission test **не запускались**. Ни статус задачи, ни claims, ни BOOK не продвигаются.
+Результат — `RESULT.json`: **39 exact controls**, запуск обычным и `python -O` с побайтно идентичным научным JSON, SHA256, зафиксированный в `RESULT.json` (ordinary/optimized byte-identical). Full Lean, original expensive v8/root, GitHub CI и самостоятельный physical/native admission test **не запускались**. Ни статус задачи, ни claims, ни BOOK не продвигаются.
