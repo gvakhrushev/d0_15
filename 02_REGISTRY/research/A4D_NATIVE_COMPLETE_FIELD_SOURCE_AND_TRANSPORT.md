@@ -173,6 +173,105 @@ vacuum: blank/volume, preparation, controller, link и shift prices
 actual matter-clock germ и точную кривизну (7). Он импортирует только
 pin-ированные определения и не запускает старые suites/receipts.
 
+## 3.1. Matching/ring-вход и невозможность исправить output сменой frame при fixed q
+
+Есть точка того же family, где matching выполняется и input одновременно
+принадлежит буквальному engine-domain. Не меняя wiring или reference `m*`,
+возьмём
+
+```text
+m†=−2ap e_mask0+p³ e_mask1
+    +e_mask12+e_mask13+e_mask14+e_mask15,
+X†=(1,0,0,1), w_a=p²,
+L=sqrt(2/p³), m0(x)=m†+L Σ_mu x^mu e_mask(12+mu).
+```
+
+Здесь `p³=2p−1`, поэтому первые12 координат совпадают с `m*`.
+Actual полное CAR-чтение даёт `N=5`, `J=e0`, `H=I` в нуле: вклад
+пространственного α₁ равен `2(m12 m15−m13 m14)=0`, остальные два
+также нулевые. Из `DX=L I` получается `q_record(0)=I`, и выбор `O(0)=I`
+в matching chart даёт `F(0)=I`, `m(0)=m†`, native `q(0)=eta`.
+Все16 координат являются элементами `Z[a]`; шесть engine guards равны
+нулю, first-grade pairing `p³` положительна.
+Это согласование literal raw **точки** и comparator first-jet reading,
+а не допуск raw first jet целиком. В точке retained `G_ref=(FFᵀ)^−1=I`
+и `h_J=I`, но вдоль matching germ
+`dr1=(2L/5)(dx0−dx1−dx2+dx3)`, `dH01=−2dr1`.
+При постоянной `O=I` имеем `dF=dH/2` и `dG_ref=−dH`, вообще ненулевые,
+хотя `dh_J=dq_record=0` в нуле. Весь germ не является fixed-reference
+engine-germ. Норма `N=5` сохранена; деления состояния на `sqrt(5)` нет.
+Никакой новый physical AF image этим также не установлен.
+
+Буквальный `engine.step`, а не reset rest coefficients, выбирает `U+`
+и выдаёт полный raw output
+
+```text
+m′=(5p−4)e_mask0+t e_mask1
+    +(a−p)(e_mask12+e_mask14)−(a+p)(e_mask13+e_mask15),
+t=a(4p−3)<0,  t²=65p−40.                          (7a)
+```
+
+Норма остаётся5, выходная pairing ненулевая, поэтому этот шаг принят
+движком. CAR current при retained `F=I` всё ещё равен `e0`; при
+произвольном `F′` это равенство не предполагается. Следующее утверждение
+сильнее проверки неудачи при одном фиксированном reference.
+
+**Лемма для всех frames.** Сохраним именно output `m′` из (7a), native
+contravariant `q=eta` и прежний readout wiring. Пусть `F′` — **любая**
+вещественная невырожденная матрица с `F′ eta F′ᵀ=eta`, включая improper
+или time-orientation-reversing frames. Exterior action сохраняет grades,
+поэтому first grade новых rest coefficients равна
+
+```text
+v=(F′)^−1(t e0),
+v0²−|v_spatial|²=t²,  |v0|≥|t|.                  (7b)
+```
+
+Между тем probability slot1 того же wiring требует
+
+```text
+w1=p²+v0−p³∈(0,1/2)
+  iff  3p−2<v0<3p−3/2.
+```
+
+Оба конца проверяются буквально: нижний даёт `w1=0`, верхний — `w1=1/2`.
+Поскольку `p>7/12`, максимальный абсолютный endpoint равен
+`b=3p−3/2`. Но
+
+```text
+t²−b²=83p−205/4=83(p−205/332)>0,
+(205/332)²+205/332−1=−139/332²<0.                 (7c)
+```
+
+Последнее даёт строгую нижнюю границу положительного golden root;
+верхняя `p<2/3` следует из `(2/3)²+2/3−1=1/9>0`.
+Следовательно, даже замкнутый probability interval не пересекает
+необходимую область `|v0|≥|t|`. **Никакой** frame при фиксированном
+`q=eta` не возвращает этот output в прежний comparator chart.
+Смена time orientation также не помогает.
+
+Вход не обязан быть только flat germ. Например, сохраним те же clocks
+`X=X†+Lx`, но положим `w_(01,+)=p²+κ(x0)²`, остальные `w=p²`.
+Это меняет raw rest scalar на `κ(x0)²` и оставляет ту же входную точку
+`m†`. Из literal metric formula (4) matter-clock owner получаем
+
+```text
+q_record(0)=I, Dq_record(0)=0,
+∂0²q_record(0)=(κ/3)k_(01,+)k_(01,+)ᵀ
+                 +κ² e0e0ᵀ/(6p³),
+R_q(0)=−κ/3.                                    (7d)
+```
+
+В достаточно малой окрестности определены тот же полный comparator и
+matching fields, без назначенных свободных generator jets. Лемма
+output относится к их общей нулевой точке. Только эта точка здесь
+объявляется literal ring-engine input; весь вещественный germ не
+объявляется engine-admitted continuum. Не выведен coupled update
+`q′,F′,D′,b′`, допускающий изменение `q`, и не доказана невозможность
+другого wiring или другого допущенного процесса. Результат — точная
+fixed-q граница данного actual engine step и данного same-program chart,
+а не global native no-go или full joint root.
+
 ## 4. Настоящая Lorentz link: положительная часть не исчезает
 
 Теперь используется другое уже имеющееся данное: пространственная связь
@@ -476,17 +575,24 @@ source исправленной AF preparation price на том же probe, г�
 другую ещё не выведенную raw evolution `m'=U_s m`,
 `m0'=rho(F')⁻¹m'`. Эти границы согласованы с (3)–(4): rest coefficients,
 raw CAR matter и actual endpoint transport нельзя отождествлять.
+Новая точка §3.1 уже даёт literal raw ring-вход и actual output;
+для него исключены **все** frame-исправления при неизменном native `q`.
+Следующий закон должен поэтому выводить coupled `q,m` transition либо
+отдельно допущенное изменение readout, сохраняя его полную производную.
 
 ## 8. Узкая совместная проверка
 
 `certificates/a4d_native_complete_field_source_check.py` вызывает только
 три новых source consumers: `record_frame_source`, `lorentz_link_transport`
-и `preparation_measure`. Совместный обычный запуск проходит 466 точных
-условий: 79 raw-source, 38 Lorentz-link, 349 preparation/measure. Время
-обычного запуска — 5.798 s, optimized — 5.740 s; выводы побайтно совпадают.
+и `preparation_measure`. После добавления §3.1 общий запуск проходит498
+точных условий: 111 raw-source (прежние79 и32 новых fixed-q
+engine/matching), 38 Lorentz-link, 349 preparation/measure.
+Обычный запуск — 5.996 s, optimized — 5.835 s; выводы побайтно
+совпадают. Изменённый raw-source consumer отдельно также прошёл111 условий.
 
 Проверяются actual endpoint-price и все raw-source slots, literal
-Lorentz curvature matching family, полный16 Gram и constrained endpoint
+Lorentz curvature matching family, actual ring/engine point и
+fixed-q obstruction для всех reference frames, полный16 Gram и constrained endpoint
 jets, нормировка собственного CAR current, actual flagged AF channel,
 coherences, Fréchet/BKM readout и literal archive projection. Для archive
 kernel используются только конечные projection tables и integer fibre

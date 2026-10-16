@@ -19,7 +19,7 @@ record results below is substituted for that terminal. The historical
 | --- | --- |
 | One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
 | The complete second AF price has an exact coherent preparation minimum and source. A corrected coherent compiler preserves its instrument, comparator and selected price up to a constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [controlled price](A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). Primitive admission, preparation-generation cost and physical action selection remain separate. |
-| A common comparator/native-metric family is explicit, including all10 metric tests. Its actual ten raw metric and six frame costates are zero off shell; the same full program can have curved Lorentz g and flat positive h. | [Matter-clock binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md), [complete field source, Sections 1–3](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). Matching alone does not impose Lorentz dynamics; the actual transport/aggregation source must supply the missing dependence. |
+| A common comparator/native-metric family is explicit, including all10 metric tests. Its actual ten raw metric and six frame costates are zero off shell. A different chart point belongs to the literal raw engine ring and matches its positive pairing, but its next output cannot return to the same probability chart through any frame at fixed native metric. | [Matter-clock binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md), [complete field source, Sections 1–3.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). Matching alone does not impose Lorentz dynamics. A derived coupled geometry/matter update and the actual transport/aggregation source remain necessary. |
 | The full observer sector has the same order as the Einstein term. A given Lorentz link has retained polar factors and full16 Gram trace `16 c_pair²`, with all endpoint/link/matter and density-ratio derivatives. | [Lorentz/source identity](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md), [complete field source, Section 4](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). Neither observer terms nor the positive link part may be dropped. The diagnostic is not a newly selected action or temporal update. |
 | Actual preparation has KL-mass and noncommuting readout sources. Internal spectral addresses, spatial points and clock values are distinct; strict inherited clocks retain only16 pushforward atoms. | [Complete field source, Sections 5–6](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). A spatial readout, new fine clock data and the same-program measure/refinement identity must be derived. |
 
@@ -5256,8 +5256,8 @@ Proof and source pins: [fixed-branch rigidity note](A4D_NATIVE_ISOMETRIC_COMMON_
 
 ## Raw AF coefficient lattice obstructs the named metric chart (2026-10-16)
 
-A 64-check cross-owner certificate now records two different interface
-results. First, at the unshifted center of the genuinely curved
+A cross-owner certificate now records three different interface results.
+First, at the unshifted center of the genuinely curved
 `lambda=1` chart, the native lift is `F=sqrt(2/p^3) O H^(1/2)` for every
 `O in O(4)`. The raw CAR state's grade-one squared norm is exactly
 `26 p^3/5`, independent of O. Its trace from `Q(a)` to `Q` is `-208/5`,
@@ -5273,15 +5273,23 @@ step on a curved germ. This conditional test preserves a timelike chart
 current and nonzero top grade, but does not prove that the physical transition
 acts on `m0`.
 
-<<<<<<< HEAD
-It therefore leaves the real probability domain after one direct rest-
-coordinate step. The AF/CAR engine owner acts on raw `m`, whereas this chart
-uses `m0=rho(F)^-1m`; the map between a raw engine step and the next chart
-state has not been derived. This result rules out only the candidate direct
-update `m0 -> U_+m0` with unchanged wiring on this curved germ. The next task
-is to derive or exclude `m=rho(F)m0`, `m'=U_s m`, `m0'=rho(F')^-1m'`, with
-all ten matching rows, all sixteen matter coordinates and the full action
-derivative. Evidence: [domain obstruction note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and [exact checker](certificates/a4d_native_common_process_domain_check.py).
+Third, at one proper future-preserving coframe, extending the raw gate by
+scalars beyond the literal engine ring and reading back with that same lift
+also makes an effect negative. This is an algebraic extension test, not an
+admitted raw engine step: its input is excluded by the first result.
+
+These scoped obstructions do not exclude another chart point or a coupled
+native update. The AF/CAR engine acts on raw `m`, whereas the chart uses
+`m0=rho(F)^-1m`; its next state must be computed as
+`m'=U_s m`, `m0'=rho(F')^-1m'` with the actual field law for F'. The
+[domain note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and its
+[83-check consumer](certificates/a4d_native_common_process_domain_check.py)
+retain the exact input and fixed-lift scopes. The different ring-compatible
+point in [Section 3.1 of the unified result](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+below supplies a literal raw transition; it does not contradict the
+arithmetic exclusion at the named unshifted base. Primitive AF admission,
+all ten transverse equations, the full action derivative, exact roots and
+GR remain open.
 
 ## Complete raw record source, Lorentz-link transport and measure (2026-10-16)
 
@@ -5296,6 +5304,32 @@ field equations. The same matching family has flat `h=cI`, unchanged full
 record program, and `g=c O eta O^T`; with an existing free rotation
 `O(kx0)`, `G_g(0)=diag(0,0,2k²,2k²)`. Thus metric matching alone cannot
 turn this program into a Lorentz Einstein action.
+
+There is now a constructive intersection with the literal raw engine at a
+different point of this same chart. Take
+`m_dagger=-2ap e_mask0+p^3 e_mask1+e_mask12+e_mask13+e_mask14+e_mask15`.
+Its raw coefficients lie in Z[a], all engine guards hold, and its full CAR
+norm is 5 with current e0. The unchanged wiring has all twelve weights p²;
+the given clock derivative `DX=sqrt(2/p^3) I` gives `q_record=I`. At F=I,
+the native metric is eta and both the retained reference and positive
+pairing equal I. These are pointwise identities. The smooth matching germ
+has a moving reference, so it is not identified with a fixed-reference
+engine germ. Raw amplitudes are not rescaled and AF preparation admission
+is not inferred.
+
+The actual positive engine step is defined and gives grade-one output
+`t e0`, `t=a(4p-3)`. Every next frame with the same native metric satisfies
+`F' eta F'^T=eta`, hence `|(F'^-1 t e0)^0|>=|t|`. The original weight w1
+instead requires this rest component to lie in
+`(3p-2,3p-3/2)`, whose endpoint magnitudes are strictly smaller than |t|:
+`t²-(3p-3/2)²=83p-205/4>0`. The exact rational bound is
+`p>205/332`. Thus no Lorentz frame, including either time orientation,
+repairs this literal raw output at fixed eta. This closes the variable-frame
+escape for this actual ring-compatible input, not for arbitrary changing
+q'. A coupled geometry/matter law must be derived from the native process;
+q' is not fitted to restore the desired probabilities. Proof, the curved
+comparator germ with `R_record(0)=-kappa/3`, and focused controls are in
+[Section 3.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md).
 
 The actual constrained spatial Lorentz link retains a complementary
 operator contribution. Its unique positive polar part B and pairing
@@ -5320,8 +5354,10 @@ measure onto the same at-most16 base atoms; actual new fine clock data and
 their kernel source are needed for a richer spatial limit.
 
 The single new entrypoint `a4d_native_complete_field_source_check.py`
-passes 466 exact conditions (79 raw record, 38 link transport, 349 measure)
-with identical ordinary/optimized output, in 5.798 s and 5.740 s.
+passes 498 exact conditions (111 raw record, 38 link transport, 349 measure)
+with identical ordinary/optimized output, in 5.996 s and 5.835 s. The 32
+new raw-record conditions check the literal matched input and fixed-q
+all-frame obstruction; the earlier 79 conditions remain.
 It consumes existing definitions and finite exact source identities;
 old suites, generated receipts and Lean builds are reused.
 
@@ -5330,12 +5366,9 @@ derived address/site/clock readout with its actual measure. If that measure
 is to be normalized geometric volume, its complete test-function source
 must agree with the derived operator/pushforward source, including sampling,
 normalizer and boundary terms. This is a specified comparison to prove,
-not an action or measure chosen to force the answer. Temporal field evolution,
+not an action or measure chosen to force the answer. In particular, the
+literal matched-input result above requires a derived joint q/m transition
+or a separately owned change of readout; a frame change at fixed q cannot
+supply it. Temporal field evolution,
 all other native equations, exact roots/refinement and the original
 fixed-source/raw-owner terminal remain OPEN.
-=======
-These are scoped interface obstructions, not a global native no-go. The
-coordinate bridge, any engine-on-rest adapter, other chart points, primitive
-AF admission, all ten transverse equations, full action derivative, exact
-roots and GR remain open. Evidence: [domain note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and [exact checker](certificates/a4d_native_common_process_domain_check.py).
->>>>>>> d527e092 (research(a4d): prove raw frame lattice mismatch)

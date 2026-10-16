@@ -16,12 +16,14 @@ import sympy as s
 
 ROOT = Path(__file__).resolve().parents[4]
 CLOCK_PATH = "02_REGISTRY/research/sources/d0_native_preparation_stationary_2026-10-16/matter_clock_binding.py"
+ENGINE_PATH = "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py"
 PINS = {
     CLOCK_PATH: "1b2c668bca6c99ca84a4be513274fddc2c9a82a832368abc4a75ee24f58fbb71",
     "02_REGISTRY/research/sources/d0_record_geometry_source_integration_2026-10-15/check_phase_metric_source.py":
         "8da7532d611a60be2137143286c23c2aa26c19297add7f079b57087495204b4d",
     "02_REGISTRY/research/sources/d0_lorentz_reflection_source_2026-10-16/native_current.py":
         "d9282fad2124f57addeeeece96e34ba017a041d63002f37f0c2e990661f175c3",
+    ENGINE_PATH: "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9",
 }
 
 
@@ -43,6 +45,18 @@ def owner(repo):
     spec.loader.exec_module(module)
     phase, native = module.owners(repo)
     return module, phase, native
+
+
+def engine_definition(repo):
+    """Only the pinned State/step definitions; never an engine entrypoint."""
+    name = "record_frame_source_owned_closed_engine_definition"
+    spec = importlib.util.spec_from_file_location(name, repo/ENGINE_PATH)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("closed_engine_definition_unavailable")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    return module
 
 
 def endpoint_channel(w, u, delta):
@@ -226,6 +240,120 @@ def run(repo=None):
        "entire_exact_Einstein_tensor_product_geometry")
     yes(not rest_germ.has(kappa) and not q_record.has(kappa),
         "actual_matter_clock_program_and_positive_metric_independent_of_rotation_rate")
+
+    # A second ACTUAL matching point is also a literal Z[a] engine input.
+    # The subsequent obstruction ranges over ALL Lorentz F', not sampled
+    # frames.  Its proof uses the invariant norm of the retained first grade.
+    fixed_metric_start = len(checks)
+    engine = engine_definition(repo)
+    ring_values = [engine.ZERO]*16
+    ring_values[0] = -2*engine.A*engine.P
+    ring_values[1] = engine.P*engine.P*engine.P
+    for mask in (12, 13, 14, 15):
+        ring_values[mask] = engine.ONE
+    ring_input = engine.State(tuple(ring_values))
+
+    def ring_vector(state):
+        return C.mat(s.Matrix([sum(s.Integer(value)*C.a**degree
+                                   for degree, value in enumerate(slot.coefficients))
+                                for slot in state.matter]))
+
+    dagger = reference+s.eye(16)[:, 12]+s.eye(16)[:, 15]
+    eq(ring_vector(ring_input), dagger, "matching_dagger_is_actual_full16_ring_state")
+    eq(dagger[1], C.p**3, "dagger_first_grade_is_positive_golden_cube")
+    yes(ring_input.matter[1].sign() == 1 and engine.P.sign() == 1,
+        "dagger_literal_engine_selects_positive_branch")
+    yes(all(not ring_input.matter[mask] for mask in (2, 3, 4, 5, 8, 9)),
+        "dagger_satisfies_all_six_actual_engine_guards")
+    eq((dagger.T*dagger)[0], 5, "dagger_full_matter_normalizer_five")
+    eq(C.current(s.eye(4), dagger), s.Matrix([1, 0, 0, 0]),
+       "dagger_full_CAR_current_rest_without_grade_removal")
+    eq(native.reflection(eta, C.current(s.eye(4), dagger)), s.eye(4),
+       "dagger_native_positive_pairing_identity")
+    dagger_weights, dagger_clocks = clock.encode(dagger, reference, C.p)
+    eq(s.Matrix(dagger_weights), s.ones(12, 1)*C.p**2,
+       "dagger_all_twelve_weights_still_golden")
+    eq(dagger_clocks, s.Matrix([1, 0, 0, 1]), "dagger_actual_clock_offset")
+    dagger_current_D, _dagger_r, _dagger_N, _ = native.rest_current_jacobian(C, dagger)
+    expected_clock_current_D = s.zeros(3, 4)
+    expected_clock_current_D[0, :] = s.Matrix([[2, -2, -2, 2]])/5
+    eq(dagger_current_D[:, 12:16], expected_clock_current_D,
+       "dagger_clock_jet_moves_retained_reference_in_matching_lift")
+
+    ring_output = engine.step(ring_input)
+    output = ring_vector(ring_output)
+    time_coefficient = C.a*(4*C.p-3)
+    expected_output = s.zeros(16, 1)
+    expected_output[0], expected_output[1] = 5*C.p-4, time_coefficient
+    expected_output[12] = expected_output[14] = C.a-C.p
+    expected_output[13] = expected_output[15] = -C.a-C.p
+    eq(output, expected_output, "dagger_actual_engine_output_all16_not_rest_reset")
+    yes(ring_output.matter[1].sign() == -1,
+        "dagger_actual_engine_output_pairing_nonzero_negative")
+    eq((output.T*output)[0], 5, "dagger_actual_engine_retains_full_norm")
+    eq(C.current(s.eye(4), output), s.Matrix([1, 0, 0, 0]),
+       "dagger_output_CAR_current_does_not_rescue_probability_domain")
+    eq(time_coefficient**2, 65*C.p-40,
+       "dagger_output_first_grade_invariant_squared_length")
+
+    rest_time = s.Symbol("new_frame_rest_time", real=True)
+    lower, upper = 3*C.p-2, 3*C.p-s.Rational(3, 2)
+    encoded_time_weight = C.p**2+rest_time-reference[1]
+    eq(encoded_time_weight.subs(rest_time, lower), 0,
+       "new_frame_probability_lower_endpoint_exact")
+    eq(encoded_time_weight.subs(rest_time, upper), s.Rational(1, 2),
+       "new_frame_probability_upper_endpoint_exact")
+    eq(upper+lower, 6*C.p-s.Rational(7, 2),
+       "probability_interval_maximum_absolute_endpoint")
+    rational_lower, rational_upper = s.Rational(205, 332), s.Rational(2, 3)
+    eq(rational_lower**2+rational_lower-1, -s.Rational(139, 332**2),
+       "strict_positive_golden_root_rational_lower_witness")
+    eq(rational_upper**2+rational_upper-1, s.Rational(1, 9),
+       "strict_positive_golden_root_rational_upper_witness")
+    yes(0 < rational_lower and rational_lower > s.Rational(7, 12)
+        and rational_upper < s.Rational(3, 4),
+        "rational_root_bracket_controls_both_endpoint_signs_and_engine_sign")
+    eq(time_coefficient**2-upper**2, 83*C.p-s.Rational(205, 4),
+       "output_invariant_exceeds_probability_upper_endpoint_squared")
+    eq(83*C.p-s.Rational(205, 4), 83*(C.p-rational_lower),
+       "strict_positive_endpoint_gap_uses_same_root_bracket")
+    eq(time_coefficient**2-lower**2, 86*C.p-53,
+       "output_invariant_exceeds_probability_lower_endpoint_squared")
+    yes(86*rational_lower-53 > 0 and 6*rational_lower-s.Rational(7, 2) > 0,
+        "strict_rational_gaps_reject_closed_probability_endpoints")
+    inverse_column = s.Matrix(s.symbols("arbitrary_Lorentz_inverse_column0:4", real=True))
+    rest_grade_one = time_coefficient*inverse_column
+    unit_column_defect = (inverse_column.T*eta*inverse_column)[0]-1
+    eq(rest_grade_one[0]**2-time_coefficient**2-
+       sum(rest_grade_one[i]**2 for i in range(1, 4)),
+       time_coefficient**2*unit_column_defect,
+       "all_Lorentz_frames_first_grade_bound_from_exact_constraint")
+
+    # Smooth input germ in the SAME matching family, with F(0)=I.
+    # Only its zero-point is asserted to be a literal ring-engine input.
+    clock_scale = s.Symbol("dagger_clock_scale", positive=True)
+    bend = s.Symbol("dagger_weight_curvature", real=True)
+    dagger_germ = (dagger+clock_scale*s.Matrix.vstack(s.zeros(12, 1), coordinates)
+                   +bend*t*t*s.eye(16)[:, 0])
+    bent_weights, bent_clocks = clock.encode(dagger_germ, reference, C.p)
+    eq(s.Matrix(bent_weights), s.Matrix([C.p**2+bend*t*t]+[C.p**2]*11),
+       "dagger_curved_germ_same_actual_weight_wiring")
+    eq(bent_clocks, dagger_clocks+clock_scale*coordinates,
+       "dagger_curved_germ_same_actual_clock_wiring")
+    bent_v = bent_weights[0]*(1-bent_weights[0])
+    e_time, k_first = s.eye(4)[:, 0], phase.k[0, :].T
+    bent_q = (clock_scale**2*variance*s.eye(4)/2
+              +clock_scale**2*(bent_v-variance)*k_first*k_first.T/12
+              +(2*bend*t)**2*e_time*e_time.T/(48*bent_v))
+    bent_q = bent_q.subs(clock_scale**2, 2/variance)
+    eq(bent_q.subs(t, 0), s.eye(4), "dagger_clock_scale_makes_actual_record_metric_identity")
+    eq(s.diff(bent_q, t).subs(t, 0), s.zeros(4), "dagger_curved_metric_first_jet_zero")
+    second_q = s.diff(bent_q, t, 2).subs(t, 0)
+    eq(second_q, bend*k_first*k_first.T/3+bend**2*e_time*e_time.T/(6*variance),
+       "dagger_curved_metric_second_jet_from_literal_germ")
+    eq(second_q[0, 0]-s.trace(second_q), -bend/3,
+       "dagger_actual_positive_metric_curvature_minus_kappa_over_three")
+    fixed_metric_checks = len(checks)-fixed_metric_start
     return {
         "exact_checks": len(checks),
         "source_pins": PINS,
@@ -235,6 +363,12 @@ def run(repo=None):
         "record_scale": "c=p^3/2",
         "same_program_Lorentz_scalar": "4*k^2*cos(2*k*x0)/c",
         "same_program_Einstein_origin": "diag(0,0,2*k^2,2*k^2)",
+        "fixed_metric_engine_obstruction_exact_checks": fixed_metric_checks,
+        "matching_engine_input_normalizer": "5",
+        "matching_engine_output_first_grade": "a*(4*p-3)*e0",
+        "all_fixed_eta_Lorentz_reference_frames_probability_compatible": False,
+        "matching_engine_input_curved_positive_metric_scalar": "-kappa/3 at origin",
+        "coupled_metric_output_law_derived": False,
         "physical_aggregation_measure_or_transport_selected": False,
         "full_native_joint_criticality_claimed": False,
     }
