@@ -125,6 +125,17 @@ check(levels[1]["blank_polynomial_degree"]==8386560,"native_reference128_degree_
 check(levels[1]["minimum_serial_z_coin_calls_per_round_if_uniform_in_z"]==1024,"L8_coin_depth_lower_bound_1024_conditional")
 check(levels[0]["minimum_serial_z_coin_calls_per_round_if_uniform_in_z"]==255,"L4_coin_depth_lower_bound_255_conditional")
 check(levels[2]["minimum_serial_z_coin_calls_per_round_if_uniform_in_z"]==4096,"L16_coin_depth_lower_bound_4096_conditional")
+# The finite CAR algebra on r complex one-particle modes needs a Hilbert
+# representation of dimension >= 2^r. The proposed *outer* CAR has r=N*M
+# modes. The listed v8 budget is much smaller even after deliberately
+# counting both outcome128 and workspace128^n (an overcount).
+L8=levels[1]
+outer_car_log2_dimension=L8["one_particle_dim"]*M if M==128 else L8["one_particle_dim"]*128
+native_declared_log2_upper=16+7+7*8192+5+1+1+7
+check(outer_car_log2_dimension==8388608,"outer_CAR_fermion_mode_count")
+check(native_declared_log2_upper==57381,"generous_listed_v8_tensor_budget_log2")
+check(outer_car_log2_dimension>native_declared_log2_upper,"faithful_outer_CAR_not_on_listed_native_Hilbert")
+
 
 # Golden reference p,p^2: every finite unconditioned cylinder event has
 # probability in the ring Z[p] of algebraic integers. A rational such
@@ -149,6 +160,10 @@ result={"status":"PASS","checks":len(checks),"labels":checks,
 "slater_minor_count":math.comb(2*N,N),
 "log_cycle_order":6},
 "v8_conditional_coin_bound":levels,
+"full_CAR_resource_firewall":{"outer_fermion_modes":outer_car_log2_dimension,
+"min_faithful_CAR_rep_log2_hilbert_dim":outer_car_log2_dimension,
+"generous_listed_v8_budget_log2_hilbert_dim":native_declared_log2_upper,
+"scope":"bound for faithful whole-CAR implementation on listed tensor-product budget only; not a no-go for compressed determinant circuits or additional derived native resources"},
 "golden_reference_z":{"p":str(p),"z":str(Q(1,2**20)),
 "conditional_equal_pair_probability":str(Q(1,2)),
 "twenty_pair_success_probability":str(sp.simplify((2*p**3)**20)),
