@@ -1,10 +1,42 @@
 # D0 — Finite Verification Theory
 
+## Current objective: derive general relativity (ОТО)
+
+The working target is one derivation from operational admissibility to the
+**full nonlinear gravitational equation with its matter source and a controlled
+refinement limit**. This target remains open.
+
+| Evidence boundary (snapshot: 2026-10-15) | What it means for the next step |
+|---|---|
+| Accepted `main` at `fa2b04b9` | Finite geometry, metric provenance, an Einstein flat tangent and conditional smooth-limit estimates are available inputs. They do not yet supply the complete native action/source or a general joint nonlinear limit. |
+| Research [#310](https://github.com/gvakhrushev/d0_15/pull/310) and intake [#322](https://github.com/gvakhrushev/d0_15/pull/322) | Native record/action work, a one-coordinate exact connection sheet and a fixed-L4 full-4D connection sheet are published research with different scopes. #322 proposes a fixed intake; neither open PR is accepted `main`. |
+| Next scientific work | Bind preparation/retained records to the **same complete action and its source**, while a second lane proves the **joint nonlinear/refinement estimate** on the agreed carrier. Each output must discharge a named premise of the parent derivation. |
+
+Start with the [current gravity route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity),
+then the [parallel work and validation flow](00_WORK/README.md).
+One scientific integrator owns the composition; bounded executors work on
+independent interfaces. Progress means a proved transition used in that
+composition, or a counterexample that changes the route. Certificates and CI
+support those decisions.
+
+For programme context, the integrator reads the full
+[preserved strategy](https://github.com/gvakhrushev/d0_15/blob/cd02a65de1c708eae113b03ca63392e1641c427c/02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
+once, then uses the [18 ideas and original guidance mapped to the current route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#strategic-context-and-preserved-inputs).
+Their preservation intake [#323](https://github.com/gvakhrushev/d0_15/pull/323)
+awaits acceptance. Bounded tasks read the relevant inputs from that context.
+
+For a task, run `python tools/task_dispatch.py TASK-ID`: resolve an existing PR
+before launching another execution. Iterate with the smallest relevant check;
+run the affected integration checks at Ready. See the
+[validation matrix](00_WORK/README.md#validation-budget).
+
+---
+
 > **How can a closed finite system produce reproducible facts without an external classical observer?**
 
 D0 is a mathematical and physical research programme that inverts the traditional foundational order: instead of postulating a smooth space-time continuum, background fields, and an external measuring apparatus, D0 begins from the **operational preconditions of verifiable detection** inside a closed finite system.
 
-> **Agent / automation cold start:** this repository is `gvakhrushev/d0_15`. Before executing any `EXP-*`, `WRK-*`, or `CTRL-*` task, read [AGENTS.md](AGENTS.md) and [00_WORK/README.md](00_WORK/README.md). Durable task definitions and outputs live in GitHub; chat is dispatch/status only.
+> **Agent / automation cold start:** this repository is `gvakhrushev/d0_15`. Before executing any `EXP-*`, `WRK-*`, or `CTRL-*` task, read [AGENTS.md](AGENTS.md) and [00_WORK/README.md](00_WORK/README.md). Discuss and synthesize in chat; keep durable definitions, derivations and results in GitHub.
 
 Discrete scene structure, registration channels, and (conditionally) continuum limits are derived as consequences of this operational contract. High-energy spectra, gauge structures, and cosmological evolutions are downstream readouts, not independent starting hypotheses.
 
@@ -12,6 +44,8 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
 
 ## Table of Contents
 
+- [Current objective and scientific route](#current-objective-derive-general-relativity-ото)
+- [Parallel execution and validation](00_WORK/README.md)
 - [1. The Core Inversion (Read This First)](#1-the-core-inversion-read-this-first)
   - [The Foundational Premise](#the-foundational-premise)
 - [2. Architecture & Flow of Forcing](#2-architecture--flow-of-forcing)
@@ -182,7 +216,7 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 
 ### BOOK 07: Gravity Limit and Finite Geometry
 - **Noncommutative Spectral Geometry:** Connes spectral triple $(\mathcal{A}, \mathcal{H}, \mathcal{D})$ over the scene complex; discrete Dirac operator $\mathcal{D}$ with Hodge boundary weights (`CanonicalDiracCovariance.lean`).
-- **Heat Trace & Einstein–Hilbert Action:** Asymptotic heat trace $\mathrm{Tr}(e^{-t\mathcal{D}^2}) \sim \sum t^{(k-d)/2} a_k$; coefficient $a_2$ recovers the scalar curvature $R - 2\Lambda$ via the Dixmier trace (`ArchiveHeatTrace.lean`, `DixmierTraceBridge.lean`). Higher curvature terms ($R^2, R_{\mu\nu}R^{\mu\nu}$) are exponentially suppressed at the lattice scale.
+- **Conditional heat-trace route:** under the registered heat-trace and smooth-interpolation bridge assumptions, the expansion $\mathrm{Tr}(e^{-t\mathcal{D}^2}) \sim \sum t^{(k-d)/2} a_k$ relates geometric coefficients to curvature (`ArchiveHeatTrace.lean`, `DixmierTraceBridge.lean`). This is a conditional bridge, not a completed native nonlinear Einstein derivation; suppression of higher-curvature contributions requires its own scale estimates.
 - **Horizon Emission Law:** A macroscopic horizon is capacity-saturated seam aggregation; horizon emission $F_Q^\mathrm{emit} = Q U^\dagger P U Q \ge 0$ is archive-to-retained boundary leakage under capacity saturation (`HORIZON-EMISSION-LAW`).
 - **Quarantined Bridge Interface:** Assumptions of continuum limit existence (`HeatTraceWeyl.lean`, `SmoothInterpolation.lean`) are strictly quarantined in `Bridge/Assumptions/`.
 
@@ -335,6 +369,10 @@ tools/              Repository validator, Lean view generator, and test runners
 
 ### Fast Structural & Integrity Validation
 
+Choose checks by the changed surface using the
+[validation budget](00_WORK/README.md#validation-budget). The commands below
+are reference commands, not a checklist to repeat after every edit.
+
 ```bash
 # Validate CSV registry integrity, imports, and lack of orphan Lean modules
 python tools/validate_repo.py
@@ -349,8 +387,8 @@ python -m compileall -q tools 04_CERTIFICATES
 ### Running Executable Certificates
 
 ```bash
-# Run the fast suite of registered mathematical certificates (timeout 90s)
-python tools/run_registered_certs.py --timeout 90 --exclude vp_scene_bartholdi_typed.py
+# Integration suite when its dependency surface changes (timeout 90s per certificate)
+python tools/run_registered_certs.py --workers 6 --timeout 90 --exclude vp_scene_bartholdi_typed.py
 
 # Run the intensive Bartholdi scene certificate separately
 python 04_CERTIFICATES/vp_scene_bartholdi_typed.py
@@ -359,8 +397,10 @@ python 04_CERTIFICATES/vp_scene_bartholdi_typed.py
 ### Formal Lean 4 Build
 
 ```bash
-cd 03_FORMALIZATION
-lake build D0.All
+# While changing a proof: build only its module
+python tools/lean_task_build.py narrow D0.Geometry.SomeModule
+# Once the affected modules pass: one final integration build
+python tools/lean_task_build.py final
 ```
 
 *(The Lean toolchain version is pinned in `03_FORMALIZATION/lean-toolchain`)*.
@@ -375,11 +415,14 @@ To maintain scientific integrity, D0 explicitly records what has **not** been ac
 
 - **Continuum Limit as Finished Theorem:** D0 does **not** claim that the Einstein–Hilbert action or smooth Yang–Mills theory has been proved as an unconditional mathematical theorem from the graph. They are conditioned on explicitly quarantined bridge assumptions (`HeatTraceWeyl`, `SmoothInterpolation`).
 - **Empirical Confirmation:** D0 does **not** claim that observational hints (e.g. DESI $w(z)$ dynamical dark energy or LIGO black hole horizon step features) constitute verified empirical discoveries. They are structured, pre-registered falsification tests.
-- **Universal Metaphysical Uniqueness:** D0 does **not** claim that no other mathematical universe could ever be conceived. It claims that *within the regime of finite, catalogue-free, endogenous verifiability*, the canonical scene and functional tuple are mathematically forced.
+- **Universality of the scene:** the functional tuple and scene are derived inside the registered admissibility/forcing architecture. A classification of every finite catalogue-free carrier is not established; see the counterexamples in Section 1.
 
-### The Four Hard Frontiers: Interface Crisis, Not Missing Core Physics
+### Historical frontier map
 
-The remaining open questions in the registry (`02_REGISTRY/frontier/closure_frontier.csv`) do not reflect defects in the discrete algebraic core. They reflect the **interface crisis between an endogenous discrete operator framework and legacy continuum language**:
+The topics below describe earlier frontier routes. For current gravity work,
+use the [current route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity).
+The full action/source binding and general joint nonlinear limit remain
+scientific obligations; relabelling them as an interface problem does not close them.
 
 1. **Alpha Dixmier Trace (`AlphaProfiniteTowerNoGo`):** Rather than seeking external Feshbach regulators to force continuous integration on profinite sets, the tower is resolved as an inductive limit of Fibonacci $AF$-algebras (`D0/VNext/FibonacciAFAlgebra.lean`, `PerronGNSTower.lean`), whose unique tracial state normalizes the Cesàro residue endogenously via Perron–Frobenius powers $\varphi^{-k}$.
 2. **Metric Scale Underdetermination (`MassSectorMetricUnderdetermination`):** Extrinsic SI units (meters, seconds, eV) are historically contingent artifacts. The fundamental action quantum is fixed endogenously at $S_{\mathrm{min}} = \frac{1}{2}\hbar_{\mathrm{endogenous}} \equiv 1$, grounding energy scales in the topological capacity saturation of the scene relative to archive dissipation (`PreparationMemoryBound.lean`).
@@ -397,7 +440,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Work Queue & Control Plane
 
-- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 0 (Total: 4)
+- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 9 (Total: 13)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
 - **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 0/5
 - **Legacy Scaffolds Remaining**: 0
