@@ -1,0 +1,54 @@
+{
+  "schema": "d0-native-affine-path-matter-memory/1",
+  "status": "PASS_EXACT_EXISTING_MATTER_DISTINGUISHES_PATH_ORDER_PAIR",
+  "exact_controls": 26,
+  "checks": [
+    "ordered_translation_owner_pin:02_REGISTRY/research/certificates/a4d_native_affine_translation_record_order_check.py",
+    "ordered_translation_owner_pin:02_REGISTRY/research/certificates/a4d_native_affine_translation_record_order_results.json",
+    "ordered_translation_owner_pin:02_REGISTRY/research/A4D_NATIVE_AFFINE_TRANSLATION_CAR_ORDER.md",
+    "closed_record_engine_pin:02_REGISTRY/research/certificates/a4d_native_closed_record_engine_check.py",
+    "closed_record_engine_pin:02_REGISTRY/research/certificates/a4d_native_closed_record_engine_certificate.json",
+    "closed_record_engine_pin:02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md",
+    "equal_endpoint_order_obstruction_pass",
+    "native_closed_record_engine_certificate_pass",
+    "closed_engine_checker_and_proof_self_consistent",
+    "closed_engine_transitive_input_pin:02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md",
+    "closed_engine_transitive_input_pin:02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md",
+    "closed_engine_transitive_input_pin:02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+    "closed_engine_transitive_input_pin:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+    "closed_engine_transitive_input_pin:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+    "closed_engine_transitive_input_pin:03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean",
+    "closed_engine_transitive_input_pin:03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean",
+    "closed_engine_transitive_input_pin:03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean",
+    "closed_engine_transitive_input_pin:03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean",
+    "closed_engine_transitive_input_pin:03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
+    "seed_is_the_existing_whole_blank_on_all_16_slots",
+    "seed_vector_is_e0_plus_volume",
+    "records_are_actual_full16_orthogonal_native_operators",
+    "full_state_difference_has_exact_two_slot_support",
+    "full_state_difference_is_signed_2_minus_2p_pair",
+    "whole_blank_euclidean_memory_distance_is_16_minus_24p",
+    "both_history_states_are_distinct_native_full_vectors"
+  ],
+  "initial_state": "actual whole blank e0+volume, all sixteen coordinates retained",
+  "ordered_paths": [
+    "0 then 1",
+    "1 then 0"
+  ],
+  "affine_endpoint_for_both": "(I,e0+e1)",
+  "state_difference_nonzero_slots_zero_based": {
+    "2": "2 - 2*p",
+    "12": "2*p - 2"
+  },
+  "euclidean_norm_squared": "16 - 24*p",
+  "exact_positivity_reason": "p>0 and p+p^2=1 imply p<2/3, hence 16-24p>0",
+  "scope": {
+    "existing_16_component_state_can_store_this_order_bit": true,
+    "all_possible_path_histories_injective": false,
+    "affine_shift_to_record_transition_physically_admitted": false,
+    "refinement_compatibility_proved": false,
+    "finite_physical_bit_capacity_derived": false,
+    "native_source_Ward_or_GR_closed": false
+  },
+  "source_sha256": "6028574d50fbd42f28ca2f4b225b26123992fc3d833cfcffae8af76fc1fbd3f2"
+}
