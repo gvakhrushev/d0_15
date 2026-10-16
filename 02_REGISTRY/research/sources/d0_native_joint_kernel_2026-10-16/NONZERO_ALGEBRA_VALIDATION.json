@@ -29,7 +29,7 @@
     "platform": "macOS-26.5.1-arm64-arm-64bit"
   },
   "sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "bd4af990c87cf147fea1a5176f56232d2466fc2bf8224a4e58256421c0ca9e03",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/NONZERO_ALGEBRA_RESULTS.json": "a5bb71c1521835eafb124291ab2f1ce62594675501a02d18693e26f7a7f643ba",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_diagnostic.py": "6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25",
@@ -44,5 +44,10 @@
   "scope": "exact arbitrary-kappa quotient and CAR/Laurent algebra; numerical complete new q1240 comparison, no interval inertia/all-mode inverse",
   "old_consumer_replay": false,
   "root_search_or_Lean_build": false,
-  "physical_or_GR_closure": false
+  "physical_or_GR_closure": false,
+  "owner_section14_extension": {
+    "new_consumer": "PURE_MEMORY_FIELD_VALIDATION.json",
+    "prior_scientific_outputs_and_inputs_unchanged": true,
+    "old_calculation_replayed": false
+  }
 }

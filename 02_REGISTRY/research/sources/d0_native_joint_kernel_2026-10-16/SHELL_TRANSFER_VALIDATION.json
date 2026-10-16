@@ -60,7 +60,7 @@
     "float": "IEEE_binary64_with_outward_budgets"
   },
   "sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "bd4af990c87cf147fea1a5176f56232d2466fc2bf8224a4e58256421c0ca9e03",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
     "02_REGISTRY/research/certificates/a4d_native_shell_transfer_check.py": "2b8b9a20fb2cc61e021468ff3d098561c8ec2f54fa08f65a0f14c0129c6e62d9",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/SHELL_TRANSFER_SYMBOLS.json": "6a19d64572c1f29fc8757f1a5b1d1e4be997ea9208032815cff8c375df1b3543",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/shell_transfer_reduction.py": "14070ada8aa6e903eb56f6b6c3fa21c7128044360ed3777fce69e01650ca6b5d",
@@ -104,5 +104,10 @@
     ],
     "unchanged_old_implementation_pins_verified": true,
     "old_scientific_output_regenerated": false
+  },
+  "owner_section14_extension": {
+    "new_consumer": "PURE_MEMORY_FIELD_VALIDATION.json",
+    "prior_scientific_outputs_and_inputs_unchanged": true,
+    "old_calculation_replayed": false
   }
 }

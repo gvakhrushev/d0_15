@@ -1,0 +1,62 @@
+{
+  "Hermitian_relative_error": 5.358963179395847e-17,
+  "all_Fock_components": 16,
+  "checks": [
+    "complete_thirteen_native_quotient_directions_finite_nodes",
+    "canonical_chart_reconstructs_owned_first_link",
+    "finite_full16_raw_Y_matches_exact_E0_energy_formula",
+    "actual_full16_D2_matches_independent_scalar_trace_formula",
+    "full_pure_field_symbol_Hermitian",
+    "full_operator_correction_equals_thermal_plus_true_pure_Y_minus_signed_Schur",
+    "inactive_stabilizer_nonzero_full_Y_correction_retained",
+    "full16_matter_operator_Hermitian",
+    "matter_operator_expectation_matches_field_block"
+  ],
+  "dimension": 13,
+  "eigenvalues_float": [
+    -0.592947538812562,
+    -0.5599464156881896,
+    0.03987828406316124,
+    0.05376650063634409,
+    0.5371183831746908,
+    0.7384729992976388,
+    1.6190592958039758,
+    1.936272697779079,
+    2.797385301506787,
+    3.2681739699205825,
+    3.9086791610052627,
+    5.7971908196469,
+    6.152617017520731
+  ],
+  "exact_checks": 9,
+  "faithful_curvature_closed_formula_error": 5.107025913275764e-15,
+  "faithful_root_curvature_residual_float": 6.430411758628907e-12,
+  "finite_operator_nodes": 16,
+  "interval_inertia_or_joint_branch_proved": false,
+  "old_suite_or_root_search_executed": false,
+  "physical_admission_or_GR_claim": false,
+  "prepared_rank": 8,
+  "q": [
+    3,
+    3,
+    0,
+    0
+  ],
+  "raw_Y_pure_formula_error": 1.4210854715202004e-14,
+  "reference_dimension": 128,
+  "schema": "d0-pure-memory-field-symbol/1",
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py": "71ba142e284974db57d67c91a77ccd08a7e4f9759e8fc8daef7c5938774c0b28",
+    "02_REGISTRY/research/sources/d0_native_field_transport_2026-10-16/stored_rotational_wave.py": "2b12f26d814a57cc99084e904deeac69a8f64a8d9a0eb9ee765e8104ef50bc37",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
+    "full_symbol_diagnostic.py": "6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25",
+    "native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65",
+    "nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418"
+  },
+  "status": "PASS_NUMERICAL_DIAGNOSTIC",
+  "thermal_momenta": 4096,
+  "theta_curvature_correction_float": 0.015368852218092631
+}

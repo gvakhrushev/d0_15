@@ -9,7 +9,7 @@
   ],
   "normal_optimized_scientific_output": "BYTE_IDENTICAL",
   "sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "bd4af990c87cf147fea1a5176f56232d2466fc2bf8224a4e58256421c0ca9e03",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/OPPOSITE_SHELL_TRANSFER_RESULTS.json": "ea994fef6edc38f4b01a98eed7379841f6a603dfbb02b641382bfa853f64db75",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
@@ -43,5 +43,10 @@
   ],
   "peer_review": "independent read-only opposite-sign paircache, exact analytic diagonal branch, unchanged full16 interval geometry/arithmetic and scoped S4 congruence; transitive chart/CAR module pins added before final run",
   "old_full_symbol_or_root_replay": false,
-  "full_mode_or_physical_or_GR_closure": false
+  "full_mode_or_physical_or_GR_closure": false,
+  "owner_section14_extension": {
+    "new_consumer": "PURE_MEMORY_FIELD_VALIDATION.json",
+    "prior_scientific_outputs_and_inputs_unchanged": true,
+    "old_calculation_replayed": false
+  }
 }

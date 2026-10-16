@@ -35,7 +35,7 @@
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_HESSIAN_INTERFACE.md": "284602e0b7d44c1bddd1de8a1f62fe194d4bc7552ed9a6c231d27df9a45ab599",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_RESULTS.json": "2091dfb04335648ab2229cb7730dc5d0834de68fdf2bdd2268593150f3ccb4f7",
     "02_REGISTRY/research/certificates/a4d_native_rank8_source_check.py": "c526f55e53e26603287073699c39477641f666e1b41535e9420a218ce52ace8c",
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "bd4af990c87cf147fea1a5176f56232d2466fc2bf8224a4e58256421c0ca9e03"
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20"
   },
   "actual_preparation_source_real_rank": 151,
   "stationary_amplitude_source_fibre_dimension": 32616,
@@ -52,5 +52,10 @@
   "old_full_matrix_or_root_or_research_suite_replayed": false,
   "new_Lean_build": false,
   "full_inhomogeneous_rank8_normal_inverse_or_inertia_proved": false,
-  "physical_preparation_admission_refinement_or_GR_closed": false
+  "physical_preparation_admission_refinement_or_GR_closed": false,
+  "owner_section14_extension": {
+    "new_consumer": "PURE_MEMORY_FIELD_VALIDATION.json",
+    "prior_scientific_outputs_and_inputs_unchanged": true,
+    "old_calculation_replayed": false
+  }
 }

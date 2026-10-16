@@ -25,7 +25,7 @@
   "retained_density_annihilator": 2040,
   "nonlinear_consumer": "owner Section9: local homogeneous critical manifold, analytic normal-coordinate IFT; source calculations do not replace proof",
   "sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "bd4af990c87cf147fea1a5176f56232d2466fc2bf8224a4e58256421c0ca9e03",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
     "02_REGISTRY/research/certificates/a4d_native_zero_mode_check.py": "03314122e34166535df63ba6f6ac55fc63ba2ad6a0fe271aa03cdb28bbf92324",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ZERO_MODE_RESULTS.json": "3191fff348ea6b4f16fa50013899f681c47428bca3f9e8db2bf22825bff94e38",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/zero_mode_constraint_check.py": "abe8395c6e05818894252982952043ab8757b74670036e3715107b794aa36ecc",
@@ -46,5 +46,10 @@
     "review": "complete source-fibre owner and helper read independently, no old171 replay; native mask phase and unscaled link-axis sign converted explicitly in primary memo",
     "rank8_numerical_inertia_transfer": false,
     "faithful_local_classification_extended_to_rank_boundary": false
+  },
+  "owner_section14_extension": {
+    "new_consumer": "PURE_MEMORY_FIELD_VALIDATION.json",
+    "prior_scientific_outputs_and_inputs_unchanged": true,
+    "old_calculation_replayed": false
   }
 }

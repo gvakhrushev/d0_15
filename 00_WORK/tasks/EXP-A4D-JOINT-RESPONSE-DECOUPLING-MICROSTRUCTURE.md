@@ -61,14 +61,20 @@ Hessian crossing does not establish a joint branch. Physical native
 transition/action admission and refinement remain required; neither the
 original independently fixed g/tau/raw terminal nor task status is changed.
 
-At the actual rank8 memory end all151 source rows remain independent.
-The amplitude stationary fibre is smooth through this boundary; its28800
-rank-birth tangents integrate at fixed geometry. The q0 amplitude slice
-has its own local flat classification. The next missing operator is the
-full inhomogeneous `H_rho8|ker T8` after the exact flat tangents are removed,
-with the actual pure-memory second chart jet. Source-rank preservation
-does not transfer the old faithful Hessian; a nonzero curvature correction
-explicitly rejects that shortcut. Consume Section13 of the joint owner.
+The actual rank8 endpoint now has a complete local classification too.
+All40806 real normal field directions are solved with the true pure-memory
+second chart jet: inertia33954+/6852-/0. The source fibre retains rank151,
+all28800 rank births and every reference direction. The full amplitude
+critical locus is exactly the57195-dimensional flat family near this seed.
+Consume Section14 of the joint owner; do not repeat the pure endpoint search.
+
+The exact flat critical preparation path from faithful to pure has an
+affine normal Hessian and a net negative-index increase5510. Hence interior
+joint linearized kernels are forced; q3300 already proves one exists by
+its12+/1- to11+/2- change. The next bounded consumer is strict localization
+and nonlinear `E2 C+2E1 C1=0` / source-neutral M_v compatibility at that
+interior kernel, alongside the actual native transition/action. A field
+crossing does not establish a nonlinear joint branch or the original terminal.
 
 Write surface: this brief, the primary memo, complete-field-source synthesis
 and its existing research consumers. Preserve the whole readable research

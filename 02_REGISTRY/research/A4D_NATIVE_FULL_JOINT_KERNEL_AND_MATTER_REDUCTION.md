@@ -22,7 +22,11 @@ rows и reduced density/field saddle blocks классифицированы; н
 локальную однородную critical family: семь Gram directions положительны,
 три дополнительные Lorentz-metric directions сохраняются. §11 решает
 все остальные Fourier блоки и классифицирует полный близкий faithful
-critical locus: он исчерпывается плоской family. Неплоский совместный root, физический допуск программы,
+critical locus: он исчерпывается плоской family. §14 теперь завершает
+такую же полную локальную классификацию для actual rank8 memory seed,
+сохраняя full reference и все rank births. Между этими preparations
+строго необходимы дополнительные joint linearized kernels; их нелинейное
+продолжение ещё не доказано. Неплоский совместный root, физический допуск программы,
 полная native Cost−Info цена и предел ОТО здесь не утверждаются.
 
 ## 1. Неизменённая задача и сохраняемые компоненты
@@ -1423,13 +1427,11 @@ translation-covariant slice точным flat family. (45) не является
 `c_L(d-3o)||omega||^2`, положительную на исходном root rectangle.
 Использовать старую first-jet-only формулу здесь было бы ошибкой.
 
-Следующий решаемый объект — именно полный normal field operator
-`H_rho8|ker T8` с этой поправкой и всеми moving-normalizer/matter terms,
-либо его действительное дополнительное ядро с полным вторым
-stationary jet. Уже интегрируемые rank-birth направления и отдельно
-замороженный Hessian crossing не заменяют этот шаг. Физический G0
-transition/action и исходный fixed-g/fixed-tau/raw terminal остаются
-открытыми.
+Полный normal field operator `H_rho8|ker T8` с этой поправкой и всеми
+moving-normalizer/matter terms теперь решён в §14. Уже интегрируемые
+rank-birth направления и отдельно замороженный Hessian crossing сами
+по себе не заменяли этот шаг. Физический G0 transition/action и исходный
+fixed-g/fixed-tau/raw terminal остаются открытыми.
 
 Новый [bounded checker](certificates/a4d_native_rank8_source_check.py)
 исполняет только новые source/curvature identities; прежний q0 Gram
@@ -1437,3 +1439,73 @@ result потребляется по неизменённому SHA, без ст
 [Rank8 result](sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_RESULTS.json)
 и [validation](sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_VALIDATION.json)
 фиксируют source pins, real dimensions и область normal/O запуска.
+
+## 14. Полный actual rank8 normal operator и вынужденное внутреннее ядро
+
+[Новый proof](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_NORMAL_FIELD_RESULT.md)
+собирает настоящий pure-memory Hessian на том же conditional finite root.
+Его формула использует прежние полные thermal/fullZ scalar moments и
+новую occupied-shell поправку, требующую не более16 small operator nodes.
+Сохранены actual sphere/spin mixed second jet, все16 CAR components,
+incoming adjoint Gram transpose, signed Q resolvent и reference128.
+Ни density inverse, ни перенос прежнего faithful Hessian не применяются.
+
+Все483 field-only S3/global-negation classes и пять изменённых nonzero
+shell restrictions строго проверены на исходном root box радиуса1e-12.
+Новые40751 real directions вместе с55 unchanged q0/q0170 directions
+исчерпывают V размерности40806. Maximum signature-distance upper bound
+равен0.007301662519523286<1. Inverse в canonical nonzero mean-slice Fourier
+coordinates не превосходит целого681252; q0 strict Gram coercivity
+потребляется отдельно. Это конечная координатная оценка.
+
+```text
+H_rank8^V:33954 positive,6852 negative,0 zero; dimension40806.
+Raw shell amplitude/field:34105 positive,7003 negative,57195 zero;
+dimension98303.
+Full normalized amplitude:16774457 positive,11099 negative,57195 zero;
+dimension16842751.                                                (46)
+```
+
+Rank151 source submersion §13 даёт151 hyperbolic pairs. Все28800 rank
+birth directions уже входят в гладкий source fibre; reference rotations
+повторно не добавляются. Q-mass inertia прежняя16740352+/4096-.
+Поэтому Hessian kernel в полной amplitude domain ровно tangent уже
+построенного57195-dimensional flat family. Normal IFT делает эту family
+всем локальным critical locus около **этой actual rank8 preparation**.
+Её Gram постоянен, linear-link holonomies тождественны. Nearby curved
+search на этом pure endpoint прекращается.
+
+При этом переход между preparations не исчерпывается двумя endpoint
+теоремами. Пусть Pi_chi имеет rank8. На точном critical path
+
+```text
+rho_t=(1-t)P/128+t Pi_chi/8, 0<=t<=1,
+H_t^V=(1-t)H_faithful^V+t H_rank8^V.                              (47)
+```
+
+Source rank151 и V=kerT/flat_field сохраняются. Faithful normal inertia
+39464+/1342- переходит в33954+/6852-. Поэтому net spectral flow к
+отрицательной стороне равен5510 real directions, с multiplicity;
+это не число различных параметров или нелинейных ветвей. Внутренние
+singular t обязательны. Уже q3300 меняет12+/1- на11+/2- (новый canonical
+representative3003 связан точной spatial S3). Поскольку q3300 не лежит
+в Omega-Omega, PX_vP=0, и extra field kernel поднимается в **полное**
+совместное линейное ядро с `delta C=delta epsilon=0` и
+`delta Psi_Q=-R_Q X_v Psi`. Все preparation Euler rows сохранены.
+
+Следующий consumer — строгая локализация и полные second stationary jets,
+включая `E2 C+2E1 C1=0` и `M_v` neutrality из
+[rank-aware source owner](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md).
+Его grade-four source-neutral witness точен; midpoint location и его
+спаривание с приближённым kernel ещё диагностические. Наличие linear
+kernel не доказывает nonlinear branch. Other preparations, distant
+roots, физический G0/action, controlled refinement и исходный независимо
+fixed-g/fixed-tau/raw,l1 terminal остаются OPEN.
+
+[Entrypoint](certificates/a4d_native_pure_field_check.py) исполнил203 новых
+exact shell identities и488 новых interval blocks. Normal и optimized
+[scientific JSON](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_RESULTS.json)
+побайтно совпали. [Validation](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_VALIDATION.json)
+сохраняет все error rows, exact decimal choices, definition hashes и
+отдельные девять focused full16 assembler comparisons. Старые scientific
+outputs не регенерировались; old matrix/root/Lean runs не повторялись.

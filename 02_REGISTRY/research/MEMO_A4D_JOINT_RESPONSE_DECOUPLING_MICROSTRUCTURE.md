@@ -32,7 +32,7 @@ record results below is substituted for that terminal. The historical
 | The complete faithful finite joint kernel and local critical locus are classified: all Fourier blocks are solved, and every nearby solution lies in the exact flat family with the density and three extra Lorentz-Gram moduli retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Section11. Small nonflat continuation from this same full-rank root is excluded. The next input is rank-free native preparation/joint dynamics; physical admission and refinement remain open. |
 | The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
 | The three homogeneous connection-source components have an exact attainable-set support function at the fixed root; a pure preparation explicitly realizes an ellipsoid inside it. Rank-aware equations retain every preparation Euler row. | [Source capacity and nonlinear selection](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md). Consume at the rank8 boundary or preparation-distant stationary points after the faithful local classification. This is not a full field source inverse; a frozen-preparation spectral crossing is not a coupled branch. |
-| At the actual rank8 memory preparation, all151 source rows remain independent. The original amplitude stationary fibre is smooth with dimension32616; every rank-birth tangent integrates there at fixed geometry. The q0 amplitude slice is also locally classified. | [Rank8 amplitude fibre](sources/d0_native_joint_kernel_2026-10-16/RANK8_AMPLITUDE_FIBRE.md), [joint owner, Section13](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md). The full inhomogeneous rank8 normal field operator remains open and needs the actual [pure-memory second-jet correction](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_HESSIAN_INTERFACE.md). |
+| The actual rank8 preparation is now locally classified on the full amplitude domain: all40806 normal field directions are nonzero, with inertia33954+/6852-. Every nearby joint root belongs to the exact57195-dimensional flat family, including rank births. The preparation path from the faithful endpoint must nevertheless contain extra joint linearized kernels. | [Complete pure-memory result](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_NORMAL_FIELD_RESULT.md), [joint owner, Section14](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md). The pure nearby search is exhausted. Consume the forced interior degeneracy in the full nonlinear M_v/source test; physical preparation/action admission and refinement remain open. |
 | The actual stored Dirac on the entire bounded exact adjoint class has a full16 positive representation with unitary returns. The same literal v8 instrument, heat/feedback/matter price and all observer/preparation source jets intertwine on every admitted curve. A genuinely curved native row-rotation has an explicit full128 matter second lift, but its complete directional Hessian lies strictly between0.089 and0.091. | [Unified source, Sections 0.3 and 3.3–3.5](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). The operator/program arrow is established for the declared conditional v8 price; physical primitive/price admission and native refinement remain. The native wave's first velocity is excluded from the joint critical kernel, not all curved roots. |
 | One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
 | The complete second AF price has an exact coherent preparation minimum, noncommuting Hessian and Schur elimination. Its density-block inverse satisfies `norm(M_T^-1)<=log(phi)/p^6` uniformly in level and dimension. A coherent compiler preserves the selected price up to constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [full second source and uniform inverse, Section 5.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). This is the actual output-channel metric, not a replacement Gibbs action or full field/amplitude inverse. Admission and physical action selection remain separate. |
@@ -135,22 +135,30 @@ identifies `Q(1)=p^3` as a rotation coordinate and source ratio. The actual
 return remains isometric with a bounded recurrent orbit; this identity
 does not supply volume growth, refinement or physical preparation cost.
 
-The next rank8 step now has a precise reduction. Its shell amplitude source
-map retains all151 real rows, including both occupied pairs of every
-two-active transfer. The stationary amplitude fibre is smooth through the
-rank boundary; all28800 birth directions have nonlinear source-correcting
-lifts at fixed geometry. Together with the existing flat field family this
-gives57195 actual critical directions, without a density inverse or a
-reference quotient. The homogeneous q0 amplitude slice has inertia
-`(14 positive,7 negative,4097 zero)` and is locally exhausted by its flat
-family. Neither count solves the full inhomogeneous rank8 normal field
-operator. The remaining field space has40806 real dimensions after source
-constraints and the exact flat tangents; its true Hessian retains the
-pure-memory curvature correction. Reusing the faithful first-jet-only
-formula fails an explicit admitted stabilizer test. The
-[rank-free amplitude proof](sources/d0_native_joint_kernel_2026-10-16/RANK8_AMPLITUDE_FIBRE.md)
-and [new field interface](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_HESSIAN_INTERFACE.md)
-are the next consumer, not another count of the rank-birth coordinates.
+The full rank8 normal operator is now solved, retaining its actual second
+chart jet and signed Q. All488 new outward blocks passed on the unchanged
+root rectangle; the largest signature-distance bound is
+`0.007301662519523286<1`. Its40806-dimensional real normal field inertia is
+`(33954 positive,6852 negative,0 zero)`. Source rank151 and the smooth
+32616-dimensional amplitude fibre retain every rank birth. Normal IFT
+therefore exhausts nearby rank8 roots by the exact57195-dimensional flat
+family. The full normalized-amplitude inertia is
+`(16774457 positive,11099 negative,57195 zero)` on16842751 variables.
+See the [complete proof and bounds](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_NORMAL_FIELD_RESULT.md).
+
+This changes the consumer again: stop a nearby curved search at this pure
+endpoint. On the exact flat critical path
+`rho_t=(1-t)P/128+t Pi_chi/8`, the normal form is affine in t. Its negative
+index increases by5510 real directions between the endpoints, so interior
+normal degeneracies are forced. Already q3300 changes from12+/1- to11+/2-;
+because it is outside Omega-Omega, its zero lifts to the full joint
+linearization with every preparation row retained. This proves existence
+of an interior kernel, without certifying the floating location near
+0.43036 or a nonlinear branch. The next hard consumer is strict
+localization and the actual `E2 C+2E1 C1=0` / source-neutral `M_v` test,
+alongside native physical transition/action admission. Neither endpoint
+classification excludes other preparations, distant roots or a controlled
+refinement family.
 
 The concurrently published [memory-preserving source code](A4D_MEMORY_PRESERVING_SOURCE_CODE.md)
 adds a full16 unitary syndrome/memory decomposition. One encoder preserves

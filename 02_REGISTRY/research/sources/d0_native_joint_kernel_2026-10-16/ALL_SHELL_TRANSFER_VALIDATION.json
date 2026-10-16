@@ -12,7 +12,7 @@
   "sha256": {
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/shell_transfer_all_orbits.py": "d8db3de5b34e4ee4ac7a9efb4676072d18b455dec5a72f0beb6b46b40a99eb1a",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ALL_SHELL_TRANSFER_RESULTS.json": "cbe4aa415b33e52e8cc22d12c672274ee955eaac59c1556b85f03f7516a2b7a4",
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "bd4af990c87cf147fea1a5176f56232d2466fc2bf8224a4e58256421c0ca9e03",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
     "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
     "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py": "71ba142e284974db57d67c91a77ccd08a7e4f9759e8fc8daef7c5938774c0b28",
     "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9",
@@ -23,5 +23,10 @@
   "peer_review": "read-only full native mean split, phase-normalized vacuum minors, essential axis commutator and positive full16 A* A; separate analytic restricted heat/CAR permutation congruence",
   "restriction_inertia_consumer": "owner Section8.1; two inherited interval restrictions transferred by exact signed permutations, no new old-symbol runs",
   "old_math_replay": false,
-  "full_mode_or_physical_or_GR_closure": false
+  "full_mode_or_physical_or_GR_closure": false,
+  "owner_section14_extension": {
+    "new_consumer": "PURE_MEMORY_FIELD_VALIDATION.json",
+    "prior_scientific_outputs_and_inputs_unchanged": true,
+    "old_calculation_replayed": false
+  }
 }
