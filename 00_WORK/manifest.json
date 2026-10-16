@@ -70,17 +70,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION.md"
     },
     {
-      "id": "WRK-A4D-V8-FULL-HESSIAN-APPLY",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Implement and verify a reusable matrix-free bilinear second-source/Hessian action for the same stored-native v8 price, including mixed link/observer/coefficient/preparation directions, exact multiplicities and auxiliary Schur responses; consume the actual tangent and matter maps before asserting a physical kernel.",
-      "brief": "00_WORK/tasks/WRK-A4D-V8-FULL-HESSIAN-APPLY.md"
-    },
-    {
       "id": "WRK-A4D-WEIGHTED-SITE-SOURCE-TRANSFER",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
