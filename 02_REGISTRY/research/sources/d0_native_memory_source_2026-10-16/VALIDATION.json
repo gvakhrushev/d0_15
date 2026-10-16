@@ -1,0 +1,31 @@
+{
+  "schema": "d0-native-memory-source-validation/1",
+  "ordinary": "PASS",
+  "optimized": "PASS_IDENTICAL_JSON",
+  "exact_checks": 171,
+  "executed_mutations": 4,
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "old_root_recomputed": false,
+  "old_source_suites_replayed": false,
+  "independent_scientific_acceptance": false,
+  "new_Lean_compilation": false,
+  "full_field_eigenvalue_certificate": false,
+  "nonflat_joint_root_constructed": false,
+  "GR_closed": false,
+  "published_to_GitHub": false,
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_MEMORY_SOURCE_FIBRE.md": "37d31c0e3ab9ebfd4e60a105913f46b1c959f97e1be9b0c339a12dc8ce31b014",
+    "02_REGISTRY/research/certificates/a4d_native_memory_source_check.py": "e90305d6774629db53cc1e3a30a1c87916c8abe3848d127863db01110de13840",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/INPUTS.json": "44699ea1de8c3e1e8845f6b6156058a34253f5bab00c02e545bae03338d5e8c7",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/INTEGRATION.md": "e000de3ec569d6ea3100ed024f35a6ede1698aad087002df3a1d486e0b0186ff",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/README.md": "054c10976af1a84428e2797a5ee5b97bd8af60578120f54df6e5eeb71ad85344",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/check_memory_source.py": "dbffbc21bd1e7d4f194eca4dbc0f9819b0839d6b233a2a74460155d8ba7de26b",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/diagnostic_old_frequency.json": "4ceb546b0ca766da7d94c3920e49b0c178da721c73b84581ee650f99c9f65b60",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/diagnostic_old_frequency.py": "a47d1c8cdf3967750cc33da598d3f58d567ebecf0e3e277ba97f38a7c1f18ec5",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/mutations.json": "a15edd3d6b4c09ec25d2b3958ea72261d06d888b6896c48e49610b07c414ed8d",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/result.json": "51c2e602f6915df1726eb108b3b22f11745d097ed6e4b7dcf09294573d561e5d",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/test_mutations.py": "23d4dad44f2ef0c5e4740851519023f1216baf21c74b61c542363ae7ae68c41c"
+  },
+  "all_time_recurrence": "Analytic proof from exact record rotation and common source identity; first five iterations checked independently."
+}

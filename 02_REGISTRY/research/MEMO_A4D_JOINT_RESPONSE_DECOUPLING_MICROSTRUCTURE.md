@@ -5680,3 +5680,40 @@ and Lean builds were not replayed. The execution was found CLOSED without merge 
 this is preserved branch evidence, not an active Draft. No replacement PR
 was opened or old PR reopened. Original fixed-source/raw-owner, exact
 refinement, full native Cost−Info and physical GR obligations remain OPEN.
+
+## Собственная память, полный source связи и lower-rank ветвь (2026-10-16)
+
+Новый пакет [A4D_NATIVE_MEMORY_SOURCE_FIBRE.md](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md)
+закреплён на SOURCE `0ff0a93f199a9411fbdf2470d557c6fd6c2ccc02` и потребляет
+тот же однородный v8-корень, полный stored-adjoint source и фактический
+16-компонентный closed-record engine. Для условного действия он классифицирует
+точный stationary слой preparation density: собственный four-dimensional
+fixed-SO(3) sector памяти лежит в слое, а явная гладкая purification ведёт от
+старого Schmidt-rank 128 к собственному rank 8 при неизменном reference 128.
+Это снимает полнопространственное требование `E=0` на нижнем rank, не удаляя
+ни тепловые моды, ни компоненты, ни reference.
+
+Два действительных упорядоченных full-CAR пути имеют один affine endpoint и
+одинаковое значение того же действия в корне, но их полный link-covector
+различается ровно множителем `p^3`. Для всей чётной собственной memory-орбиты
+одна и та же последующая пространственная проба даёт источник
+`-K p T_(k+1)(2p-1) v0` и точную характеристическую рекурсию; это полное
+source-чтение, а не только расстояние между двумя 16-векторами. Нелинейная
+rank-free редукция сохраняет `E C0=0`, moving-normalizer и все полевые строки;
+оставшийся source реализуем тогда и только тогда, когда заданный target лежит
+в образе положительных нормированных плотностей на `ker E`, с точным dual
+разделителем по `lambda_min/max`.
+
+Пакет проходит 171 exact controls в обычном и optimized режимах с одинаковым
+JSON; все четыре математические мутации отвергнуты. Это условный результат
+на flat v8 root: physical admission CAR-порядка, полная история-preparation
+cost, affine-to-CAR map, nonflat joint root и GR не доказаны. N06/N07 сохраняют
+свой rank-128 интерфейс; rank-8 уравнения и допустимый tangent space являются
+отдельной ветвью и не наследуют full-rank вывод `E=0`.
+
+Следующий решающий расчёт на том же pinned v8 owner: найти nonflat
+`(x,epsilon)`, где весь target `b(v)` лежит в положительном source image на
+`ker E`, и решить все оставшиеся native field equations; если условие не
+выполнено, предъявить точный separating field direction. Полная проверка
+фиксированного source/raw-owner terminal и физический допуск остаются
+самостоятельными обязательствами.
