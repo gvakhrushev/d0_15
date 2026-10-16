@@ -170,6 +170,16 @@ def build_result():
 
     Psi, W, B_fock, U_embedded, V_af, V_m2, d_af = af_embedding(checks)
     check(zero(U_embedded - U), 'AF_embedding_uses_same_literal_gate', checks)
+    _, P_af, _, _ = AF.full_operators(V_af, d_af)
+    P_m2_af = V_m2 * V_m2.T
+    activation_map = AF.mat(a * V_af[:, :d_af] + p * V_af[:, 3*d_af:])
+    check(AF.zero(activation_map - W * V_af[:, :d_af]),
+          'AF_activation_map_equals_owned_full_gate_on_every_A1_input', checks)
+    check(AF.zero(activation_map.T * activation_map - sp.eye(d_af)),
+          'AF_activation_isometry_holds_on_the_complete_A1_input_carrier', checks)
+    af_price_pullback = AF.mat(activation_map.T * P_af * activation_map)
+    check(AF.zero(af_price_pullback - AF.p * sp.eye(d_af)),
+          'complete_A1_activation_p_cut_pulls_back_to_p_times_norm', checks)
 
     # Start from the actual normalized AF trace vector at A_1. Its M_2
     # component maps to the owned CAR fresh-blank plane; the scalar M_1
@@ -187,7 +197,6 @@ def build_result():
     canonical_activation = AF.activate(1, canonical_trace)
     check(AF.zero(W * canonical_native - canonical_activation),
           'actual_AF_activate_is_the_owned_full_AF_gate_on_trace_seed', checks)
-    P_m2_af = V_m2 * V_m2.T
     activated_car_lift = AF.mat(P_m2_af * canonical_activation)
     activated_car = C.mat(Psi.T * activated_car_lift)
     check(AF.zero(Psi * activated_car - activated_car_lift),
@@ -198,7 +207,11 @@ def build_result():
     # Exact cross-owner classification of the inherited AF M2 image against
     # the engine's fresh-blank plane and certified collinear support.
     inherited_m2_to_car = C.mat(Psi.T * V_m2[:, :4])
+    activated_A1_to_car = C.mat(Psi.T * P_m2_af * activation_map)
+    activated_A1_expected = C.mat(U * inherited_m2_to_car.row_join(sp.zeros(16, 1)))
     engine_guard = (2, 3, 4, 5, 8, 9)
+    activated_support_constraints = activated_A1_to_car[list(engine_guard), :]
+    activated_support_kernel = activated_support_constraints.nullspace()
     engine_support_constraints = inherited_m2_to_car[list(engine_guard), :]
     engine_support_kernel = engine_support_constraints.nullspace()
     blank_and_engine_constraints = sp.Matrix.vstack(
@@ -210,6 +223,26 @@ def build_result():
         E.P if i in (0, 14) else E.ZERO for i in range(16)))
     check(inherited_m2_to_car.rank() == 4,
           'inherited_AF_M2_to_CAR_map_has_rank_four', checks)
+    check(zero(activated_A1_to_car - activated_A1_expected),
+          'complete_AF_activation_to_CAR_map_is_owned_gate_after_M2_readout', checks)
+    check(activated_A1_to_car.rank() == 4 and
+          activated_support_constraints.rank() == 3 and
+          len(activated_support_kernel) == 2 and
+          activated_support_kernel[0] == sp.Matrix([1, 0, 0, 1, 0]) and
+          activated_support_kernel[1] == sp.Matrix([0, 0, 0, 0, 1]),
+          'complete_A1_engine_support_kernel_is_M2_trace_plus_scalar_channel', checks)
+    af_identity_source = sp.Matrix([1, 0, 0, 1, 0])
+    af_scalar_source = sp.Matrix([0, 0, 0, 0, 1])
+    activated_identity_car = C.mat(activated_A1_to_car * af_identity_source)
+    check(zero(activated_identity_car - sp.Matrix(
+        [a, p, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, a, -p])) and
+          zero(activated_A1_to_car * af_scalar_source),
+          'engine_compatible_A1_family_has_trace_CAR_readout_and_CAR_null_scalar', checks)
+    check(zero(C.current(I4, activated_identity_car) - e0) and
+          all(C.red(activated_identity_car[i]) == 0 for i in engine_guard),
+          'AF_trace_generator_activates_to_valid_engine_state_with_rest_current', checks)
+    check(zero(activated_A1_to_car * canonical_trace - activated_car),
+          'complete_A1_CAR_map_reproduces_actual_canonical_trace_activation', checks)
     check(engine_support_constraints.rank() == 3 and
           len(engine_support_kernel) == 1 and
           engine_support_kernel[0] == sp.Matrix([1, 0, 0, 1]),
@@ -444,6 +477,21 @@ def build_result():
             'physical_expansion_or_GR_inferred': False,
         },
         'AF_engine_cross_owner_joint_sector': {
+            'complete_A1_activation_interface': {
+                'A1_input_dimension': 5,
+                'AF_activation_isometry': True,
+                'AF_P_cut_pullback': 'p*I_5',
+                'normalized_A1_P_cut_price': 'p',
+                'activation_to_CAR_map_rank': 4,
+                'engine_support_constraint_rank': 3,
+                'engine_support_kernel_basis': [
+                    ['1', '0', '0', '1', '0'],
+                    ['0', '0', '0', '0', '1'],
+                ],
+                'scalar_M1_input_CAR_image': '0',
+                'physical_admission_of_full_A1_family_derived': False,
+                'complete_D0_action_or_qD_binding_derived': False,
+            },
             'inherited_AF_M2_to_full_CAR_rank': 4,
             'inherited_AF_image_intersection_with_engine_support_dimension': 1,
             'engine_support_intersection_M2_coordinates': ['1', '0', '0', '1'],

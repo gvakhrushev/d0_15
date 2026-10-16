@@ -101,6 +101,27 @@ The two full states remain distinct through twelve transitions, while the
 engine state remains in its declared support and its current is `e0` at tick
 12.
 
+The complete linear input carrier at `A_1=M_2(C) (+) C` has five
+coordinates `x=(x00,x01,x10,x11,xs)`. The actual `activate` matrix is an
+isometry on this whole carrier, and its pullback of the owned AF price-cut
+projector satisfies `A_act^T P_AF A_act = p I_5`. Therefore its one-step
+cut expectation is `p` on every unit input, with zero derivative on every
+norm-preserving tangent; this cut alone cannot select a mixture of the
+`M_2` and scalar `M_1` channels.
+
+After the actual activation and CAR readout, the map from all five input
+coordinates has rank four. Imposing the engine's six support equations gives
+rank three and the exact kernel
+`span{(1,0,0,1,0), (0,0,0,0,1)}`. The first generator maps to
+`a e0 + p e1 + a e14 - p e15`; the scalar `M_1` generator maps to zero.
+Thus the engine-support condition restricts the CAR-visible input to the
+`M_2` trace line, while leaving the scalar channel free and invisible to this
+CAR map. This is a classification of the linear AF representation and the
+named readouts. It does not assert that the entire five-coordinate carrier is
+physically admitted, or that other retained AF observables are insensitive to
+the scalar component. The AF price cut is only one term, not the full native
+action.
+
 This is a bounded, exact compatibility result for the named AF and CAR
 owners. It does not give one common transition law beyond the checked
 four-step segment, nor a common preparation/action on `(q,D,b,m)`, a source,

@@ -11,6 +11,33 @@
     },
     "canonical_trace_M2_seed": "p*(e0+e14)",
     "canonical_trace_blank_line_engine_rejection": "FIRST_GRADE_PAIRING_SINGULARITY",
+    "complete_A1_activation_interface": {
+      "A1_input_dimension": 5,
+      "AF_P_cut_pullback": "p*I_5",
+      "AF_activation_isometry": true,
+      "activation_to_CAR_map_rank": 4,
+      "complete_D0_action_or_qD_binding_derived": false,
+      "engine_support_constraint_rank": 3,
+      "engine_support_kernel_basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "normalized_A1_P_cut_price": "p",
+      "physical_admission_of_full_A1_family_derived": false,
+      "scalar_M1_input_CAR_image": "0"
+    },
     "engine_blank_seed_in_inherited_AF_M2_image": false,
     "engine_current_at_tick_twelve": "e0",
     "engine_owned_blank_seed": "e1+e15",
@@ -63,7 +90,7 @@
     "scalar_M1_and_AF_complement_retained": true,
     "seed_in_owned_fresh_blank_plane": true
   },
-  "checker_sha256": "1d085e686c840083971d2ed35143becaff323597036988a80c22e63d61c3346f",
+  "checker_sha256": "b718a3ea3e3f47087b664cc9bb194e0e09c5ae818836efdba3e63b9c11e4f2d5",
   "checks": [
     "A1_canonical_AF_trace_vector_is_normalized",
     "A1_trace_M2_component_has_actual_full16_CAR_lift",
@@ -95,6 +122,8 @@
     "AF_activated_engine_stays_in_owned_support_tick_9",
     "AF_activated_trace_state_is_admissible_to_owned_engine",
     "AF_activation_has_exact_full16_engine_state_outside_blank_plane",
+    "AF_activation_isometry_holds_on_the_complete_A1_input_carrier",
+    "AF_activation_map_equals_owned_full_gate_on_every_A1_input",
     "AF_and_engine_first_diverge_on_fifth_state_selected_transition",
     "AF_and_engine_remain_distinct_after_first_divergence_10",
     "AF_and_engine_remain_distinct_after_first_divergence_11",
@@ -110,6 +139,7 @@
     "AF_and_engine_transitions_agree_before_first_divergence_3",
     "AF_embedding_uses_same_literal_gate",
     "AF_inherited_blank_engine_domain_intersection_is_exactly_one_line",
+    "AF_trace_generator_activates_to_valid_engine_state_with_rest_current",
     "activated_A1_trace_M2_component_stays_in_actual_CAR_sector",
     "active_seed_has_exact_full16_norm_squared_three",
     "active_seed_is_not_in_AF_fresh_blank_plane",
@@ -894,8 +924,13 @@
     "canonical_blank_trace_role_frame_collapses_tick_97",
     "canonical_blank_trace_role_frame_collapses_tick_98",
     "canonical_blank_trace_role_frame_collapses_tick_99",
+    "complete_A1_CAR_map_reproduces_actual_canonical_trace_activation",
+    "complete_A1_activation_p_cut_pulls_back_to_p_times_norm",
+    "complete_A1_engine_support_kernel_is_M2_trace_plus_scalar_channel",
+    "complete_AF_activation_to_CAR_map_is_owned_gate_after_M2_readout",
     "engine_blank_seed_has_rest_current_and_a_real_owned_step",
     "engine_blank_seed_is_outside_the_inherited_AF_M2_image",
+    "engine_compatible_A1_family_has_trace_CAR_readout_and_CAR_null_scalar",
     "engine_seed_is_blank_and_inside_its_certified_transition_domain",
     "entire_AF_inherited_engine_support_is_one_singular_line",
     "first_AF_engine_transition_gap_has_exact_four_mask_support",
@@ -1952,10 +1987,10 @@
     "J_y(k)",
     "J_z(k)"
   ],
-  "exact_controls": 1879,
+  "exact_controls": 1887,
   "full_state_after_two_ticks_equals_seed": false,
   "gram_signature": "(1,3) by exact congruence with eta",
-  "note_sha256": "28eeaa33989024d181a94b6de081ea53c8f559b0841ab308b12e6cf433f87873",
+  "note_sha256": "7a14491f4c14a24f7e44aa0ffefddad2a5b21c9ccd33a8f20f90a829289369b1",
   "owner_git_blob": {
     "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md": "8523d5517d928f3a58878a0c6d2e74cf475c92c1",
     "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": "938cde2d3862ee329f2028bc738ad4704e9178b1",
