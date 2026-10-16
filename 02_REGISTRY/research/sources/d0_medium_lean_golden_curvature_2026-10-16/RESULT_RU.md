@@ -108,8 +108,8 @@ wrong_golden_scale_power_fails: [propext, Classical.choice, Quot.sound]
 | `python3 tools/formalization_debt_audit.py --check` | PASS, `findings=3`, baseline не вырос |
 | `python3 tools/generate_lean_views.py --check` | PASS |
 
-Строка closure — `D0.Research.GoldenCurvatureKernel` в `02_REGISTRY/formal_support.csv`. `All.lean` пересобран генератором, руками не правился. ClaimMap не менялся. Полный `lake build D0.All` остаётся на CI.
+Строка closure — `D0.Research.GoldenCurvatureKernel` в `02_REGISTRY/formal_support.csv`. `All.lean` пересобран генератором, руками не правился. ClaimMap не менялся. Узкая сборка модуля прошла локально. Полный `D0.All` draft-прогон CI пропускает; он запускается при переводе PR в Ready.
 
 ## Блокер
 
-Узкий модуль и closure собраны. Задача остаётся `IN_PROGRESS`, пока CI не соберёт `D0.All` и ветка не воберёт уже слитые снятия соседних задач. После этого её можно снять с очереди. Это по-прежнему не кривизна и не ОТО.
+Closure записан, очередь этой задачи снимается. До слияния нужен зелёный `lake build D0.All` на голове Ready-PR. Это по-прежнему не кривизна и не ОТО.

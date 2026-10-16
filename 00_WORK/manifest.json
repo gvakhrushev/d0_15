@@ -59,17 +59,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     },
     {
-      "id": "WRK-A4D-LEAN-GOLDEN-CURVATURE-KERNEL",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the finite four-cylinder moment identities and calibrated degree-four coefficient extraction generically in Lean, then specialize the existing golden parameters without assuming curvature or GR.",
-      "brief": "00_WORK/tasks/WRK-A4D-LEAN-GOLDEN-CURVATURE-KERNEL.md"
-    },
-    {
       "id": "WRK-A4D-LEAN-SOURCE-REFLECTION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
