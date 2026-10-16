@@ -94,6 +94,155 @@ def exterior_trace_jet(c, dc, density_ratio=1, density_ratio_jet=0):
             16*density_ratio_jet*c*c+32*density_ratio*c*dc)
 
 
+def joint_link_first_jet(qs, qt, D, Vs, Vt, K):
+    """Exact first jet on D*qt*D.T=qs, for symmetric V and skew K.
+
+    K is a SOURCE skew matrix, Omega=K*qs^-1.  This is a spatial
+    constrained-field chart, not a physical temporal update.  Additional
+    stored-adjoint/preparation/admission constraints are NOT imposed here.
+    """
+    Ls, Lt, Omega = Vs*qs.inv(), Vt*qt.inv(), K*qs.inv()
+    return (Ls/2+Omega)*D-D*Lt/2
+
+
+def joint_link_second_jet(qs, qt, D, Vi, Ki, Vj, Kj):
+    """Mixed second derivative in the explicit principal-root chart.
+
+    Vi=(Vs_i,Vt_i), likewise Vj.  The exact chart is
+      q_a(V)=q_a+V_a,
+      A_a(V)=(I+V_a*q_a^-1)^(1/2),
+      D(V,K)=A_s(Vs)*exp(K*qs^-1)*D*A_t(Vt)^-1.
+    The local analytic root near I is NOT an Euclidean symmetric root.
+    H_chart=H_ambient+<B_D,Zij> is the exact Hessian pullback.  It is
+    chart-independent as a bilinear form at constrained critical points;
+    that stronger claim is not made away from criticality.
+    """
+    Lsi, Lti = Vi[0]*qs.inv(), Vi[1]*qt.inv()
+    Lsj, Ltj = Vj[0]*qs.inv(), Vj[1]*qt.inv()
+    Oi, Oj = Ki*qs.inv(), Kj*qs.inv()
+    anti = lambda A, B: A*B+B*A
+    return ((-anti(Lsi, Lsj)/8+(Lsi*Oj+Lsj*Oi)/2+anti(Oi, Oj)/2)*D
+            -(Lsi/4+Oi/2)*D*Ltj-(Lsj/4+Oj/2)*D*Lti
+            +3*D*anti(Lti, Ltj)/8)
+
+
+def _joint_link_second_jet_checks(eq, yes):
+    """A noncommuting actual frame/link fixture; no new heat or action."""
+    I = s.eye(4)
+    Fs, Ft = s.eye(4), s.eye(4)
+    Fs[0, 1], Fs[1, 2] = s.Rational(1, 2), s.Rational(1, 3)
+    Ft[0, 2], Ft[2, 3] = s.Rational(1, 4), s.Rational(1, 2)
+    boost, rotation = s.eye(4), s.eye(4)
+    boost[:2, :2] = s.Matrix([[5, 3], [3, 5]])/4
+    rotation[1:3, 1:3] = s.Matrix([[3, -4], [4, 3]])/5
+    A = boost*rotation
+    qs, qt, D = Fs*ETA*Fs.T, Ft*ETA*Ft.T, Fs*A*Ft.inv()
+    eq(A*ETA*A.T, ETA, "secondjet_actual_internal_link_is_Lorentz")
+    eq(D*qt*D.T, qs, "secondjet_literal_dressed_frame_link_constraint")
+    yes(qs*qt != qt*qs and D*qs != qs*D,
+        "secondjet_fixture_is_noncommuting_not_diagonal_underfit")
+
+    slots = [(i, j) for i in range(4) for j in range(i, 4)]
+    skewslots = [(i, j) for i in range(4) for j in range(i+1, 4)]
+
+    def sym(values):
+        matrix = s.zeros(4)
+        for value, (i, j) in zip(values, slots):
+            matrix[i, j] = matrix[j, i] = value
+        return matrix
+
+    def skew(values):
+        matrix = s.zeros(4)
+        for value, (i, j) in zip(values, skewslots):
+            matrix[i, j], matrix[j, i] = value, -value
+        return matrix
+
+    # Generic independent coefficients retain every10+10+6 first direction.
+    Vs = sym(s.symbols("joint_source_metric0:10", real=True))
+    Vt = sym(s.symbols("joint_target_metric0:10", real=True))
+    K = skew(s.symbols("joint_source_skew0:6", real=True))
+    W = joint_link_first_jet(qs, qt, D, Vs, Vt, K)
+    first_constraint = lambda W, Vs, Vt: W*qt*D.T+D*Vt*D.T+D*qt*W.T-Vs
+    eq(first_constraint(W, Vs, Vt), s.zeros(4),
+       "secondjet_all20_metric_and6_link_first_slots_satisfy_constraint")
+    rawW = s.Matrix(4, 4, s.symbols("ambient_link_first0:16", real=True))
+    recovered_K = rawW*qt*D.T+D*Vt*D.T/2-Vs/2
+    eq(recovered_K+recovered_K.T, first_constraint(rawW, Vs, Vt),
+       "secondjet_every_compatible_first_jet_recovers_a_skew_K")
+    eq(joint_link_first_jet(qs, qt, D, Vs, Vt, recovered_K), rawW,
+       "secondjet_complete_first_jet_parameterization_has_explicit_inverse")
+
+    Vsi = sym((1, 1, 0, 0, 0, 0, 0, 1, 0, 0))
+    Vti = sym((0, 0, 1, 0, 1, 0, 0, 0, 0, 0))
+    Vsj = sym((1, 0, 0, 0, 0, 1, 0, 0, 0, s.Rational(1, 2)))
+    Vtj = sym((0, 0, 0, 1, 0, 0, 0, s.Rational(1, 2), 0, 0))
+    Ki, Kj = skew((1, 0, 0, 0, 0, 1)), skew((0, 1, 0, 0, 2, 0))
+    Vi, Vj = (Vsi, Vti), (Vsj, Vtj)
+    Lsi, Lsj, Lti, Ltj = Vsi*qs.inv(), Vsj*qs.inv(), Vti*qt.inv(), Vtj*qt.inv()
+    Oi, Oj = Ki*qs.inv(), Kj*qs.inv()
+    yes(Lsi*Lsj != Lsj*Lsi and Oi*Oj != Oj*Oi,
+        "secondjet_metric_and_link_jet_pairs_really_noncommute")
+    Wi = joint_link_first_jet(qs, qt, D, Vsi, Vti, Ki)
+    Wj = joint_link_first_jet(qs, qt, D, Vsj, Vtj, Kj)
+    Zij = joint_link_second_jet(qs, qt, D, Vi, Ki, Vj, Kj)
+    eq(Zij, joint_link_second_jet(qs, qt, D, Vj, Kj, Vi, Ki),
+       "secondjet_mixed_link_jet_is_symmetric_in_directions")
+    ambient_constraint_second = (Wi*qt*Wj.T+Wj*qt*Wi.T
+        +Wi*Vtj*D.T+D*Vtj*Wi.T+Wj*Vti*D.T+D*Vti*Wj.T)
+    eq(Zij*qt*D.T+D*qt*Zij.T+ambient_constraint_second, s.zeros(4),
+       "secondjet_full_eight_term_mixed_constraint")
+
+    # Independent finite polynomial jets of the LITERAL analytic chart.
+    # Their first/mixed/diagonal coefficients are all that is consumed.
+    epsilon, tau = s.symbols("chart_epsilon chart_tau", real=True)
+    Ls, Lt, Omega = epsilon*Lsi+tau*Lsj, epsilon*Lti+tau*Ltj, epsilon*Oi+tau*Oj
+    As = I+Ls/2-Ls*Ls/8
+    Atinv = I-Lt/2+3*Lt*Lt/8
+    expOmega = I+Omega+Omega*Omega/2
+
+    def coefficient(matrix, left, right):
+        return matrix.applyfunc(lambda value: s.expand(value).coeff(epsilon, left).coeff(tau, right))
+
+    def second_order_coefficients(matrix):
+        return s.Matrix.hstack(*(coefficient(matrix, i, j)
+                                  for i, j in ((0, 0), (1, 0), (0, 1), (2, 0), (1, 1), (0, 2))))
+
+    eq(second_order_coefficients(As*qs*As.T-qs-epsilon*Vsi-tau*Vsj), s.zeros(4, 24),
+       "secondjet_source_principal_root_congruence_through_order_two")
+    eq(second_order_coefficients(expOmega*qs*expOmega.T-qs), s.zeros(4, 24),
+       "secondjet_source_exponential_is_Lorentz_through_order_two")
+    eq(second_order_coefficients(Atinv*(qt+epsilon*Vti+tau*Vtj)*Atinv.T-qt), s.zeros(4, 24),
+       "secondjet_target_inverse_principal_root_through_order_two")
+    literal_chart = As*expOmega*D*Atinv
+    eq(coefficient(literal_chart, 1, 0), Wi, "secondjet_literal_chart_first_coefficient")
+    eq(coefficient(literal_chart, 1, 1), Zij, "secondjet_literal_chart_mixed_coefficient")
+    eq(2*coefficient(literal_chart, 2, 0),
+       joint_link_second_jet(qs, qt, D, Vi, Ki, Vi, Ki),
+       "secondjet_literal_chart_diagonal_second_coefficient")
+
+    # An extension by <Lambda,C> is ZERO on the carrier.  Its nonzero
+    # ambient Hessian must cancel the first-source/second-link term exactly.
+    # This is an extension-independence test, not a selected physical action.
+    Lambda = s.Matrix([[2, 1, 0, -1], [1, -1, 1, 0],
+                       [0, 1, 3, 1], [-1, 0, 1, 2]])
+    Bconormal = 2*Lambda*D*qt
+    ambient_hessian = s.trace(Lambda*ambient_constraint_second)
+    correction = s.trace(Bconormal.T*Zij)
+    eq(s.trace((-Lambda).T*Vs+(D.T*Lambda*D).T*Vt+Bconormal.T*W), 0,
+       "secondjet_conormal_extension_first_source_zero_all26_slots")
+    yes(ambient_hessian != 0, "secondjet_naive_ambient_Hessian_fails_for_zero_on_carrier_extension")
+    eq(ambient_hessian+correction, 0,
+       "secondjet_conormal_extension_Hessian_cancels_with_actual_Zij")
+    return {"metric_slots_each_endpoint": 10, "independent_source_skew_slots": 6,
+            "chart": "principal_roots_and_source_Lorentz_exponential",
+            "noncommuting_rational_fixture": True,
+            "naive_conormal_ambient_hessian": str(ambient_hessian),
+            "chart_hessian_extension_independent": True,
+            "chart_hessian_intrinsic_away_from_criticality_claimed": False,
+            "stored_adjoint_or_preparation_constraints_solved": False,
+            "temporal_metric_update_selected": False}
+
+
 def run(repo: Path | None = None) -> dict:
     repo = ROOT if repo is None else Path(repo).resolve()
     native = native_owner(repo)
@@ -106,6 +255,10 @@ def run(repo: Path | None = None) -> dict:
         difference = actual-expected
         values = list(difference) if isinstance(difference, s.MatrixBase) else [difference]
         require(all(s.simplify(C.red(value)) == 0 for value in values), label)
+        checks.append(label)
+
+    def yes(condition, label):
+        require(condition, label)
         checks.append(label)
 
     e0, I = s.eye(4)[:, 0], s.eye(4)
@@ -221,12 +374,17 @@ def run(repo: Path | None = None) -> dict:
        "hostile_frozen_current_normalizer_gives_wrong_source")
     require(s.Rational(2304, 25) != s.Rational(768, 25), "normalizer_mutation_rejected")
     checks.append("normalizer_mutation_rejected")
+    prior_checks = len(checks)
+    joint_second_jet = _joint_link_second_jet_checks(eq, yes)
+    joint_second_jet["exact_checks"] = len(checks)-prior_checks
     return {"exact_checks": len(checks), "checks": checks,
+            "prior_polar_exact_checks": prior_checks,
             "native_current_source_pin": {NATIVE_PATH: NATIVE_SHA256},
             "full_exterior_dimension": 16, "squared_singular_multiplicities": [4, 4, 8],
             "generic_metric_slots_each_endpoint": 10, "generic_link_Lorentz_slots": 6,
             "actual_matter_covector_slots": 16, "rational_boost_diagnostic": "9",
             "rational_boost_source": "30", "actual_current_source": "768/25",
             "density_ratio_retained": True, "pairing_observer_equals_record_axis_claimed": False,
+            "joint_link_second_jet": joint_second_jet,
             "future_orientation_selected": False, "diagnostic_is_physical_action": False,
             "new_metric_link_or_temporal_transition_law_derived": False}

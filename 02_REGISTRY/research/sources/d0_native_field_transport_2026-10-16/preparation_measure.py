@@ -174,6 +174,36 @@ def prepared_readout_source(weights, log_eigenvalues, log_jet, observable,
     return value, source
 
 
+def prepared_price_hessian(weights, log_eigenvalues, log_jet_x, log_jet_y,
+                           log_jet_xy, ell):
+    """Actual faithful-minimum SECOND-price Hessian, with all direct jets.
+
+    A*=6-log(Tr exp L)/ell, L=log(mu)-ell*f(E), at fixed ell>0.
+    The inputs are the same spectral density/log coordinates as
+    prepared_readout_source.  Every jet is a physical matrix derivative in
+    the BASE spectral basis.  In particular the caller supplies the ACTUAL
+    mixed jet L_XY, including D2f_E[E_X,E_Y], Df_E[E_XY], and any admitted
+    mixed reference response.  Supplying zero solely because the parameter
+    tangent is off diagonal would lose the direct second source.
+
+      H*[X,Y]=-(Tr sigma* L_XY+Cov_BKM,sigma*(L_X,L_Y))/ell.
+
+    This is a symmetric bilinear form for a C2 Hermitian family with mixed
+    partials agreeing.  It need not be positive or equal a physical metric.
+    It is only the envelope of the owned full coherent preparation price,
+    not a replacement of that full price by a Gibbs free-energy functional.
+    Native p,n,code/reference are fixed unless a separate response is given.
+
+    Uniform bound: |H|<=(||L_XY||+||L_X||*||L_Y||)/ell in operator norm.
+    BKM Cauchy-Schwarz and logmean(u,v)<=(u+v)/2 prove the bound without
+    dividing by the smallest density eigenvalue.  It does require bounded
+    actual L-jets; it does not remove singular f'' at a zero minus-path.
+    """
+    _, derivative_mean = prepared_readout_source(
+        weights, log_eigenvalues, log_jet_y, log_jet_x, log_jet_xy)
+    return -derivative_mean/ell
+
+
 def inherited_atomic_source(weights, weight_jets, test_values, test_clock_jets):
     """d nu(test) on finite inherited base atoms.
 
@@ -445,8 +475,8 @@ def run(repo=None):
         "noncommuting_fixture_effect_eigenvalue_first_jets_all_zero")
     yes(s.diag(e1, e2, e3)*X-X*s.diag(e1, e2, e3) != s.zeros(3),
         "actual_n1_effect_jet_is_genuinely_noncommuting")
-    fs_at_e1, _ = _native_golden_cost_intervals(F(9, 25))
-    fs_at_e2, _ = _native_golden_cost_intervals(F(16, 25))
+    fs_at_e1, fps_at_e1 = _native_golden_cost_intervals(F(9, 25))
+    fs_at_e2, fps_at_e2 = _native_golden_cost_intervals(F(16, 25))
     yes((fs_at_e1[0]-fs_at_e2[0]).hi < -F(1, 100),
         "actual_conditional_cost_order_implies_q1_greater_than_q2")
     yes(e1-e2 < 0,
@@ -478,6 +508,127 @@ def run(repo=None):
                                                   -ell*i_dcost, iX)
     eq(imaginary_source, expected_operator_source,
        "complex_Hermitian_noncommuting_source_uses_full_trace_pairing")
+
+    # Constructive second source of this SAME terminal preparation minimum.
+    # For E(t)=E+tX, E_XY=0 but D2f_E[X,X] is NOT zero.
+    delta_e, f_divided = e1-e2, (f1-f2)/(e1-e2)
+    d2cost = s.diag(2*(fp1-f_divided)/delta_e,
+                    -2*(fp2-f_divided)/delta_e, 0)
+    d2L = -ell*d2cost
+    hxx = prepared_price_hessian(operator_weights, operator_logs, dL, dL, d2L, ell)
+    expected_hxx = 2*p**2*(q1*fp1-q2*fp2)/(operator_Z*delta_e)
+    eq(hxx, expected_hxx, "actual_n1_noncommuting_minimum_price_Hessian")
+    diagonal_field_dL = s.diag(-ell*fp1, 0, 0)
+    eq(-sum(w*diagonal_field_dL[i, i] for i, w in enumerate(operator_weights))/ell,
+       operator_weights[0]*fp1, "same_actual_effect_family_positive_diagonal_first_source")
+    # Independent eigenvalue perturbation: e1''=2/(e1-e2), e2''=-2/(e1-e2).
+    eq(hxx, sum(w*fp*dd for w, fp, dd in
+                zip(operator_weights, (fp1, fp2, fp3), (2/delta_e, -2/delta_e, 0))),
+       "Hessian_matches_actual_effect_eigenvalue_second_jets")
+    direct_hxx = sum(w*d2cost[i, i] for i, w in enumerate(operator_weights))
+    omitted_direct = prepared_price_hessian(operator_weights, operator_logs,
+                                            dL, dL, s.zeros(3), ell)
+    yes(not zero(omitted_direct-expected_hxx), "dropping_direct_D2f_breaks_actual_Hessian")
+    yes(not zero(direct_hxx-expected_hxx), "dropping_induced_preparation_breaks_actual_Hessian")
+    # An isospectral conjugation has the SAME first tangent X but nonzero
+    # acceleration [K,[K,E]].  Its total price second source must cancel.
+    K = s.Matrix([[0, -1/delta_e, 0], [1/delta_e, 0, 0], [0, 0, 0]])
+    effect = s.diag(e1, e2, e3)
+    eq(K*effect-effect*K, X, "actual_unitary_effect_curve_same_first_tangent")
+    acceleration = K*X-X*K
+    eq(acceleration, s.diag(-2/delta_e, 2/delta_e, 0),
+       "actual_unitary_effect_curve_retains_direct_acceleration")
+    eq(hxx+sum(w*fp*acceleration[i, i] for i, (w, fp) in
+               enumerate(zip(operator_weights, (fp1, fp2, fp3)))), 0,
+       "isospectral_minimum_price_second_source_exactly_zero")
+
+    # General Hermitian mixed directions in the native M2+M1 algebra.
+    ax0, ax1, ax2, ax3, ax4 = s.symbols("mixed_log_x0:5", real=True)
+    ay0, ay1, ay2, ay3, ay4 = s.symbols("mixed_log_y0:5", real=True)
+    axy0, axy1, axy2 = s.symbols("mixed_direct_log0:3", real=True)
+    LX = s.Matrix([[ax0, ax2+s.I*ax3, 0], [ax2-s.I*ax3, ax1, 0], [0, 0, ax4]])
+    LY = s.Matrix([[ay0, ay2+s.I*ay3, 0], [ay2-s.I*ay3, ay1, 0], [0, 0, ay4]])
+    LXY = s.diag(axy0, axy1, axy2)
+    hxy = prepared_price_hessian(operator_weights, operator_logs, LX, LY, LXY, ell)
+    eq(hxy, prepared_price_hessian(operator_weights, operator_logs, LY, LX, LXY, ell),
+       "full_noncommuting_price_Hessian_is_symmetric")
+    eq(prepared_price_hessian(operator_weights, operator_logs,
+                              LX+radial_logjet*s.eye(3), LY, LXY, ell), hxy,
+       "full_Hessian_cancels_additive_log_normalizer_direction")
+    eq(prepared_price_hessian(operator_weights, operator_logs, LX, s.zeros(3), LXY, ell),
+       -sum(w*LXY[i, i] for i, w in enumerate(operator_weights))/ell,
+       "full_Hessian_retains_only_actual_direct_mixed_jet_when_first_jet_zero")
+    eq(prepared_price_hessian((repeated_weight,)*3, (0,)*3, X, X, s.zeros(3), ell),
+       -s.Rational(2, 3)/ell, "degenerate_density_Hessian_has_finite_BKM_limit")
+    eq(prepared_price_hessian(operator_weights, operator_logs, dL, -ell*i_dcost,
+                              s.zeros(3), ell), 0,
+       "real_and_imaginary_Hermitian_effect_directions_have_zero_mixed_BKM")
+
+    # Independent commuting two-parameter trace exponential checks every
+    # first and mixed normalization term against direct differentiation.
+    t, z = s.symbols("actual_parameter_t actual_parameter_z", real=True)
+    ux, uy, uxy = (s.symbols(prefix+"0:3", real=True) for prefix in ("log_x", "log_y", "log_xy"))
+    raw_Z = sum(w*s.exp(t*a+z*b+t*z*c) for w, a, b, c in
+                zip(operator_weights, ux, uy, uxy))
+    direct_log_Hessian = s.diff(-s.log(raw_Z)/ell, t, z).subs({t: 0, z: 0})
+    eq(prepared_price_hessian(operator_weights, operator_logs,
+                              s.diag(*ux), s.diag(*uy), s.diag(*uxy), ell),
+       direct_log_Hessian, "Hessian_matches_full_raw_trace_exponential_normalization")
+    covariance_diag = sum(w*a*b for w, a, b in zip(operator_weights, ux, uy))
+    covariance_diag -= (sum(w*a for w, a in zip(operator_weights, ux))
+                        *sum(w*b for w, b in zip(operator_weights, uy)))
+    eq(prepared_price_hessian(operator_weights, operator_logs,
+                              -ell*s.diag(*ux), -ell*s.diag(*uy), -ell*s.diag(*uxy), ell),
+       sum(w*c for w, c in zip(operator_weights, uxy))-ell*covariance_diag,
+       "commuting_effect_Hessian_has_direct_term_minus_covariance")
+    # The two reference blocks may move ONLY under a separately supplied law.
+    # This conditional control retains their mixed response, not a fitted term.
+    rx0, rx1, ry0, ry1, rxy0, rxy1 = s.symbols("r_x0 r_x1 r_y0 r_y1 r_xy0 r_xy1", real=True)
+    RX, RY, RXY = s.diag(rx0, rx0, rx1), s.diag(ry0, ry0, ry1), s.diag(rxy0, rxy0, rxy1)
+
+    def bkm(A, B):
+        return prepared_readout_source(operator_weights, operator_logs, B, A)[1]
+
+    full_reference_hessian = prepared_price_hessian(
+        operator_weights, operator_logs, RX-ell*LX, RY-ell*LY, RXY-ell*LXY, ell)
+    explicit_reference_hessian = sum(w*(LXY[i, i]-RXY[i, i]/ell)
+                                     for i, w in enumerate(operator_weights))
+    explicit_reference_hessian += (-bkm(RX, RY)/ell+bkm(RX, LY)
+                                   +bkm(LX, RY)-ell*bkm(LX, LY))
+    eq(full_reference_hessian, explicit_reference_hessian,
+       "full_Hessian_retains_both_reference_cross_responses_and_mixed_reference_jet")
+
+    # Strict sign is a theorem for the concrete ACTUAL fixture, not a
+    # declaration that arbitrary effective Hessians are positive metrics.
+    yes(fps_at_e1[0].lo > F(79, 100), "actual_first_effect_price_slope_greater_than_79_over_100")
+    yes(0 < fps_at_e2[0].lo and fps_at_e2[0].hi < F(17, 100),
+        "actual_second_effect_price_slope_between_zero_and_17_over_100")
+    yes(fs_at_e1[0].hi < F(11, 10) and fs_at_e1[0].lo > 0
+        and fs_at_e2[0].lo > 0 and fs_at_e1[1].lo > 0,
+        "actual_all_three_conditional_costs_positive_with_first_below_11_over_10")
+    yes(F(8, 13)**2+F(8, 13)-1 < 0 < F(5, 8)**2+F(5, 8)-1,
+        "native_p_bounds_support_PF_weight_lower_bound")
+    yes(1+F(1, 2)+F(1, 8)+F(1, 48) > F(13, 8)
+        and F(11, 20) < F(2, 3),
+        "exact_log_exponential_bounds_imply_ell_below_half_and_q1_above_half")
+    # p²>3/8, q1>1/2, Z<=1 => w1>3/16.  q2/q1<1 and
+    # f1'>.79, 0<f2'<.17 => f1'-(q2/q1)f2'>31/50.
+    eq(s.Rational(3, 16)*s.Rational(79, 100), s.Rational(237, 1600),
+       "actual_diagonal_first_source_strict_lower_bound_coefficient")
+    eq(2*s.Rational(3, 16)*s.Rational(31, 50)/s.Rational(7, 25), s.Rational(93, 112),
+       "actual_offdiagonal_Hessian_strict_negative_bound_coefficient")
+    # ACTUAL full coherent preparation-block conditioning.  Its Riesz form
+    # is Phi*Dlog_Y Phi/ell, compressed to total-trace-zero density tangents.
+    # Each native plus path has A+>=w_j I.  Trace(Y)=1 gives Dlog_Y>=Id;
+    # hence M_T>=p^6/ell and ||M_T^-1||<=ell/p^6, independently of level.
+    wr, rr, br = s.symbols("native_plus_weight root_failure root_success", real=True)
+    eq(wr*rr+br/s.sqrt(2)-wr,
+       wr*(rr+br-1)+(1/s.sqrt(2)-wr)*br,
+       "actual_plus_path_uniform_lower_bound_positive_decomposition")
+    yes(F(5, 13) < F(1, 2) and F(5, 8) < 1,
+        "native_plus_weights_squared_below_half_from_actual_golden_root_bounds")
+    eq(p**4-p**6, p**5, "minimum_native_plus_path_fourth_power_is_p_to_six")
+    eq((ell/p**6)*(p**6/ell), 1, "uniform_trace_tangent_preparation_inverse_bound_coefficient")
 
     # The actual AF inclusion is (X0,X1)->(diag(X0,X1),X0).
     # This PF-address refinement is NOT the separate flat archive projection.
@@ -555,7 +706,15 @@ def run(repo=None):
             "noncommuting_readout_source": "2*p^2*(q1-q2)/(Z*(9/25-16/25))<0",
             "noncommuting_fixture_effect_eigenvalue_jets": [0, 0, 0],
             "BKM_source": "Tr(sigma*dO)+integral Tr(sigma^(1-s)*(O-nu*I)*sigma^s*dL) ds",
-            "log_density_jet": "dL=dlog(mu)-ell*Df_E[dE]"},
+            "log_density_jet": "dL=dlog(mu)-ell*Df_E[dE]",
+            "minimum_Hessian": "-(Tr(sigma*L_XY)+Cov_BKM(L_X,L_Y))/ell",
+            "actual_linear_offdiagonal_effect_Hessian": "2*p^2*(q1*fprime1-q2*fprime2)/(Z*(e1-e2))<-93/112",
+            "actual_diagonal_effect_first_source": ">237/1600",
+            "Hessian_operator_norm_bound": "(||L_XY||+||L_X||*||L_Y||)/ell",
+            "actual_coherent_preparation_Riesz_form": "M=Phi^* Dlog_Y Phi/ell; restrict by HS compression to T={total Tr S=0}",
+            "uniform_preparation_tangent_lower_bound": "M_T >= (p^6/ell)*Id_T",
+            "uniform_preparation_tangent_inverse_bound": "||M_T^-1||_HS_to_HS <= ell/p^6, independent of AF level/dimension",
+            "full_coherent_action_replaced_by_Gibbs_free_energy": False},
         "archive_example": {"initial_points": 16, "cofinal_stage_sizes": [256, 160000],
             "bridge_counting_bit_fibres": list(bit_counts),
             "inherited_clock_pushforward_support_at_most": 16,

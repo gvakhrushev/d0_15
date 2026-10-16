@@ -136,8 +136,9 @@ coherences через последний **определённый** член.
 
 Оценка (5) применяется к exp(-ell f) и к его полному parameter derivative.
 Если |f|<=M, |df[V]|<=B||V||, оба эти поля имеют равномерные Lipschitz
-константы, Z_n,Z>=exp(-ell M), то value и envelope-source errors не больше
-C delta_n ||V|| с соответствующим C(M,B,Lip f,Lip df). Например,
+константы, Z_n,Z>=exp(-ell M), то value error не больше C_0 delta_n,
+а directional envelope-source error — C_1 delta_n ||V||, с константами,
+контролируемыми M,B,Lip f,Lip df. Например,
 
     dA_n^* = sum_a w_a^* df_a,
     dA^* = integral e^(-ell f) df / integral e^(-ell f).           (9)
@@ -292,9 +293,12 @@ Hessian системы (17) в variables (ehat,U,psi,w). Там блоки geome
     delta² D(w||r)|_(w=r)=sum_x (delta w_x)^2/r_x >0.            (22)
 
 В relative-score coordinates delta w=r delta s, E_r(delta s)=0,
-эта форма равна sum r(delta s)^2. Никакой uniform bound на Euclidean
-inverse diag(1/r) при r→0 не заявляется: именно Fisher/weighted norm
-обеспечивает размерностно-независимую preparation coercivity.
+эта форма равна sum r(delta s)^2. В обычных delta w координатах Hessian
+diag(1/r) может иметь неограниченную норму при min r→0. Его compression
+на sum delta w=0, напротив, не меньше I, поскольку r_x<=1, и норма
+обратного не больше1. Fisher/weighted coordinates выражают ту же форму
+в естественной норме probability variations; равномерная оценка полного
+condition number или смешанных геометрических производных этим не дана.
 
 Связанные zero modes/нестабильности Phi не уничтожаются энтропией; она
 не превращает indefinite gravitational Hessian в положительный минимум.
