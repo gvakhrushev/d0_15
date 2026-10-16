@@ -1,0 +1,29 @@
+{
+  "consumers": {
+    "curved_tensor": "projected16 actual curvature source; elliptic coefficient-level inverse/local variable isolation, not fullprice or Lorentz closure",
+    "flat_moduli": "finite genuine-root second-response mismatch rules out unqualified EH+Lambda+sameR identity; fixedbeta theta source retains global shape",
+    "observer_scalar": "exact zero-shift/twist-free R_L/R_E/spatial-curvature contrast; not imposed on general twisting observer"
+  },
+  "integration": "additive merge preserves all13 incoming paths; no old scientific replay",
+  "reported_checks_not_reexecuted": {
+    "curved_tensor_exact": 427,
+    "curved_tensor_mutations": 4,
+    "flat_output_sha256": "53e542e245ca08915082891ea8d92b4e88f51b1294d95cd05839929cc34e4ac4"
+  },
+  "sha256": {
+    "02_REGISTRY/research/A4D_CURVED_TENSOR_A4_SOURCE_AND_ELLIPTICITY.md": "b7f71bb40a0cba8468ff81eb69f48694e01aa8f53fd95c3d9440b3079276a8a9",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/CURRENT_SOURCE_DELTA.md": "5e78368039e106cf2e49bbf006a529f9edd9c8fec2359ec2ee66a058fe1268b4",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/INPUTS.json": "7c0af598db1b78431233b7d264475b6e5c563d20e3dcff2db07870dc4cdcb2c6",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/README.md": "498231ac88cd0075e59a55eb132ed1e33feb9e6b465700b0463923b643ab0bb5",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/VALIDATION.json": "255c1fb3797c7681b288ed6d65453520a903ba5bdf9eeb36163bacef0f45611a",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/check_curved_tensor.py": "51be3d4746ae212ab589eac5b9a58aad5f20c3e559a21777efe74d3d444a4e67",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/mutations.json": "992bb17586cffc06fa79a370eebe144d0bd0eda638adb481bc95063109b244a4",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/result.json": "8565e3dd3411918613b946cd8b398e63cf6595c823d5f1162afeb3fc807ff8bc",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/test_mutations.py": "8c6ee024c034a1c23d4d97921b587e4b0b811afe6755a27602e05acf015757e6",
+    "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/RESULT.json": "53e542e245ca08915082891ea8d92b4e88f51b1294d95cd05839929cc34e4ac4",
+    "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/RESULT_RU.md": "de552c72eae6ea6d7d890eb123a95899ce417fdf7d5e69acdb9246592d94c9f7",
+    "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/check_flatmoduli.py": "52a8769a515bc433206a05fb0381bca44dc75eee40ee51cfe53330b0beb957a9",
+    "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/check_observer_curvature.py": "be37647bb8dce0ebb652fa8da0ae6bc7d0156c4060772fd5ba51b0daeb79f700"
+  },
+  "source": "00471421"
+}

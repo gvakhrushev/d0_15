@@ -138,6 +138,22 @@ smooth momentum. Its now-published helpers/outputs are preserved by input
 identity; ambient ten-row convergence does not erase this admissibility
 obstruction or add a scalar source law.
 
+Two disjoint packets published through `00471421` are now consumed.
+The [curved tensor a4 owner](A4D_CURVED_TENSOR_A4_SOURCE_AND_ELLIPTICITY.md)
+keeps the Hodge-curvature cross term, proves tensor16 ellipticity and local
+isolation of T=0 among small variable critical fields on the flat torus.
+At positive Einstein G its T=0 tensor source and geometric a4 metric
+pullback vanish. These are coefficient-level inputs, not full-price or
+Lorentz Einstein equations. The [flat-modulus action packet](sources/d0_native_flatmoduli_action_2026-10-16/RESULT_RU.md)
+proves a positive second response of the actual finite v8 price where
+EH, volume and its own shell R are all constant. Its fixed-time shape
+potential therefore cannot be identified with pure EH plus that R;
+conditional short-time Poisson suppression still needs a native clock.
+Its zero-shift/twist-free scalar contrast identifies an exact spatial
+curvature term, but does not cover the twisting cone family or select a
+new native price. Their published checkers/results are pinned and reused
+without replay; no extra tensor catalogue or flat-modulus scan is needed.
+
 The [full-price scale balance](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement)
 requires `M z beta Z<1`. Finite minmax, on uniformly controlled full16
 coefficients, gives `Z>=c/beta^2` independently of the integer record-depth
