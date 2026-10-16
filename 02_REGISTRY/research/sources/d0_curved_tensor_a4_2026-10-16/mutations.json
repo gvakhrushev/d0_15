@@ -1,0 +1,26 @@
+{
+  "changed_programs": [
+    {
+      "failed_at": "actual_tensor_dimension",
+      "mutation": "lost_trace_constraint",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_at": "tensor_symbol_exact_eigenvalues",
+      "mutation": "half_tensor_derivative_price",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_at": "actual_Hodge_a4_baseline",
+      "mutation": "discard_Hodge_background",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_at": "full_curved_a4_not_flat_substitution",
+      "mutation": "wrong_full_connection_curvature_weight",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    }
+  ],
+  "expected_evidence_modified": false,
+  "schema": "d0-curved-tensor-mutations/1"
+}
