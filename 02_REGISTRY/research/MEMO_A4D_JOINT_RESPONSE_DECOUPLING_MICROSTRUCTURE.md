@@ -29,6 +29,7 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
+| The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
 | The complete faithful finite joint kernel and local critical locus are classified: all Fourier blocks are solved, and every nearby solution lies in the exact flat family with the density and three extra Lorentz-Gram moduli retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Section11. Small nonflat continuation from this same full-rank root is excluded. The next input is rank-free native preparation/joint dynamics; physical admission and refinement remain open. |
 | The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
 | The three homogeneous connection-source components have an exact attainable-set support function at the fixed root; a pure preparation explicitly realizes an ellipsoid inside it. Rank-aware equations retain every preparation Euler row. | [Source capacity and nonlinear selection](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md). Consume at the rank8 boundary or preparation-distant stationary points after the faithful local classification. This is not a full field source inverse; a frozen-preparation spectral crossing is not a coupled branch. |
@@ -46,6 +47,21 @@ and propagated to all finite ordered words, with actual first/second jets.
 This avoids a catalogue of arbitrary actions. The remaining native
 operational admission and full Cost−Info price diagrams are not replaced
 by programmability of a desired Q.
+
+The coordinated observer/holonomy synthesis supplies a more basic boundary
+than a further memory scan. The existing chart already preserves n along
+all stored links. Under its stated four-dimensional smooth/torsion-free
+Levi–Civita identification, that gives an ultrastatic vacuum and local
+flatness. The owned nonflat vacuum pp-wave fails this parallel-timelike
+condition; it remains a control from the separate conditional Palatini
+sector. This is rank-independent and does not rule out curved matter
+solutions, torsionful sectors or a separately reconstructed full connection.
+The main programme therefore needs the native full Lorentz comparison
+and its missing transverse source, or a derived reconstruction of that
+connection with the full price/source map. Path/observer-fibre isometry
+is an algebraic interface, not admission of a new physical process; the
+own-leg adjoint condition remains an additional boundary. Its narrow
+65-check packet is preserved by source identity without replay here.
 
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference
@@ -154,7 +170,7 @@ normal degeneracies are forced. Already q3300 changes from12+/1- to11+/2-;
 because it is outside Omega-Omega, its zero lifts to the full joint
 linearization with every preparation row retained. This proves existence
 of an interior kernel, without certifying the floating location near
-0.43036 or a nonlinear branch. The next hard consumer is strict
+0.43036 or a nonlinear branch. Within this finite sector the next consumer is strict
 localization and the actual `E2 C+2E1 C1=0` / source-neutral `M_v` test,
 alongside native physical transition/action admission. Neither endpoint
 classification excludes other preparations, distant roots or a controlled
