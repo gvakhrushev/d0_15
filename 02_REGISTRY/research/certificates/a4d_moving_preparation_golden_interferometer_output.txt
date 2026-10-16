@@ -1,6 +1,7 @@
-theorem D0.Research.MovingPreparationGoldenBridge.blockGate_lifted_from_owner : ∀ {n : ℕ} (a p : ℝ) (i j : Fin 2),
+theorem D0.Research.MovingPreparationGoldenBridge.blockGate_lifted_from_owner.{u_1} : ∀ {ι : Type u_1}
+  [inst : DecidableEq ι] (a p : ℝ) (i j : Fin 2),
   blockGate a p i j = Representation.GoldenOrderInterferometer.gate a p i j • 1 :=
-fun {n} a p i j =>
+fun {ι} [DecidableEq ι] a p i j =>
   List.Mem.casesOn (motive := fun a_1 x =>
     List.finRange 2 = a_1 →
       Fintype.complete i ≍ x → blockGate a p i j = Representation.GoldenOrderInterferometer.gate a p i j • 1)
@@ -482,9 +483,9 @@ fun {n} a p i j =>
 'D0.Research.MovingPreparationGoldenBridge.blockGate_lifted_from_owner' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-theorem D0.Research.MovingPreparationGoldenBridge.comparisonOutput_zero_zero : ∀ {n : ℕ} (a p : ℝ)
-  (U : Matrix (Fin n) (Fin n) ℝ), comparisonOutput a p U 0 0 = a ^ 2 • 1 + p ^ 2 • U :=
-fun {n} a p U =>
+theorem D0.Research.MovingPreparationGoldenBridge.comparisonOutput_zero_zero.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι]
+  [inst_1 : DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℝ), comparisonOutput a p U 0 0 = a ^ 2 • 1 + p ^ 2 • U :=
+fun {ι} [Fintype ι] [DecidableEq ι] a p U =>
   ext fun x y =>
     Eq.mpr
       (id
@@ -809,9 +810,9 @@ fun {n} a p U =>
 'D0.Research.MovingPreparationGoldenBridge.comparisonOutput_zero_zero' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-theorem D0.Research.MovingPreparationGoldenBridge.comparisonOutput_one_zero : ∀ {n : ℕ} (a p : ℝ)
-  (U : Matrix (Fin n) (Fin n) ℝ), comparisonOutput a p U 1 0 = (a * p) • (U - 1) :=
-fun {n} a p U =>
+theorem D0.Research.MovingPreparationGoldenBridge.comparisonOutput_one_zero.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι]
+  [inst_1 : DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℝ), comparisonOutput a p U 1 0 = (a * p) • (U - 1) :=
+fun {ι} [Fintype ι] [DecidableEq ι] a p U =>
   ext fun x y =>
     Eq.mpr
       (id
@@ -1126,9 +1127,10 @@ fun {n} a p U =>
 'D0.Research.MovingPreparationGoldenBridge.comparisonOutput_one_zero' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-theorem D0.Research.MovingPreparationGoldenBridge.scalar_specialization_zero : ∀ {n : ℕ} (a p s : ℝ),
+theorem D0.Research.MovingPreparationGoldenBridge.scalar_specialization_zero.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι]
+  [inst_1 : DecidableEq ι] (a p s : ℝ),
   comparisonOutput a p (s • 1) 0 0 = Representation.GoldenOrderInterferometer.output a p s 0 • 1 :=
-fun {n} a p s =>
+fun {ι} [Fintype ι] [DecidableEq ι] a p s =>
   Eq.mpr
     (id
       (congrArg (fun _a => _a = Representation.GoldenOrderInterferometer.output a p s 0 • 1)
@@ -1422,9 +1424,10 @@ fun {n} a p s =>
 'D0.Research.MovingPreparationGoldenBridge.scalar_specialization_zero' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-theorem D0.Research.MovingPreparationGoldenBridge.scalar_specialization_one : ∀ {n : ℕ} (a p s : ℝ),
+theorem D0.Research.MovingPreparationGoldenBridge.scalar_specialization_one.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι]
+  [inst_1 : DecidableEq ι] (a p s : ℝ),
   comparisonOutput a p (s • 1) 1 0 = Representation.GoldenOrderInterferometer.output a p s 1 • 1 :=
-fun {n} a p s =>
+fun {ι} [Fintype ι] [DecidableEq ι] a p s =>
   Eq.mpr
     (id
       (congrArg (fun _a => _a = Representation.GoldenOrderInterferometer.output a p s 1 • 1)
@@ -1679,9 +1682,10 @@ fun {n} a p s =>
 'D0.Research.MovingPreparationGoldenBridge.scalar_specialization_one' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-theorem D0.Research.MovingPreparationGoldenBridge.branchOne_effect : ∀ {n : ℕ} (a p : ℝ) (U : Matrix (Fin n) (Fin n) ℝ),
+theorem D0.Research.MovingPreparationGoldenBridge.branchOne_effect.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι]
+  [inst_1 : DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℝ),
   a ^ 2 = p → (branchOne a p U)ᵀ * branchOne a p U = p ^ 3 • ((U - 1)ᵀ * (U - 1)) :=
-fun {n} a p U ha =>
+fun {ι} [Fintype ι] [DecidableEq ι] a p U ha =>
   Eq.mpr (id (congrArg (fun _a => _aᵀ * _a = p ^ 3 • ((U - 1)ᵀ * (U - 1))) (branchOne.eq_1 a p U)))
     (Eq.mpr (id (congrArg (fun _a => _aᵀ * _a = p ^ 3 • ((U - 1)ᵀ * (U - 1))) (comparisonOutput_one_zero a p U)))
       (Eq.mpr
@@ -1936,10 +1940,10 @@ fun {n} a p U ha =>
         Eq.mpr (id (congrArg (fun _a => _a • ((U - 1)ᵀ * (U - 1)) = p ^ 3 • ((U - 1)ᵀ * (U - 1))) hcoeff))
           (Eq.refl (p ^ 3 • ((U - 1)ᵀ * (U - 1)))))))
 'D0.Research.MovingPreparationGoldenBridge.branchOne_effect' depends on axioms: [propext, Classical.choice, Quot.sound]
-theorem D0.Research.MovingPreparationGoldenBridge.roleFailureEffect_formula : ∀ {n : ℕ} (a p : ℝ)
-  (U : Role → Matrix (Fin n) (Fin n) ℝ),
+theorem D0.Research.MovingPreparationGoldenBridge.roleFailureEffect_formula.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι]
+  [inst_1 : DecidableEq ι] (a p : ℝ) (U : Role → Matrix ι ι ℝ),
   a ^ 2 = p → roleFailureEffect a p U = (p ^ 3 / 4) • ∑ r, (U r - 1)ᵀ * (U r - 1) :=
-fun {n} a p U ha =>
+fun {ι} [Fintype ι] [DecidableEq ι] a p U ha =>
   id
     (id
       (Trans.trans
@@ -1956,7 +1960,7 @@ fun {n} a p U ha =>
                 (id
                   (congrFun' (congrArg Eq (smul_smul (1 / 2 * (1 / 2)) (p ^ 3) ((U r - 1)ᵀ * (U r - 1))))
                     ((p ^ 3 / 4) • ((U r - 1)ᵀ * (U r - 1)))))
-                ((fun {α β γ} [HSMul α β γ] a a_1 e_a =>
+                ((fun {α} {β γ} [HSMul α β γ] a a_1 e_a =>
                     Eq.rec (motive := fun a_2 e_a => ∀ (a_3 a_4 : β), a_3 = a_4 → a • a_3 = a_2 • a_4)
                       (fun a_2 a_3 e_a => e_a ▸ Eq.refl (a • a_2)) e_a)
                   (1 / 2 * (1 / 2) * p ^ 3) (p ^ 3 / 4)
@@ -2179,6 +2183,57 @@ fun {n} a p U ha =>
           (Eq.trans (congrArg (Eq (∑ r, (p ^ 3 / 4) • ((U r - 1)ᵀ * (U r - 1)))) Finset.smul_sum)
             (eq_self (∑ r, (p ^ 3 / 4) • ((U r - 1)ᵀ * (U r - 1))))))))
 'D0.Research.MovingPreparationGoldenBridge.roleFailureEffect_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+theorem D0.Research.MovingPreparationGoldenBridge.cochainRoleShiftMatrix_mulVec : ∀ (N : ℕ) (r : Role)
+  (ψ : Geometry.ArchiveCochain N), cochainRoleShiftMatrix N r *ᵥ ψ = Geometry.cochainForwardShift N r ψ :=
+fun N r ψ =>
+  Eq.mpr (id (congrArg (fun _a => _a *ᵥ ψ = Geometry.cochainForwardShift N r ψ) (cochainRoleShiftMatrix.eq_1 N r)))
+    (Eq.mpr
+      (id
+        (congrArg (fun _a => Equiv.Perm.permMatrix ℝ _a *ᵥ ψ = Geometry.cochainForwardShift N r ψ)
+          (cochainRoleShiftPerm.eq_1 N r)))
+      (Eq.mpr
+        (id
+          (congrArg (fun _a => _a = Geometry.cochainForwardShift N r ψ)
+            (permMatrix_mulVec (cochainRoleShiftEquiv N r))))
+        (funext fun p => Eq.refl ((ψ ∘ ⇑(cochainRoleShiftEquiv N r)) p))))
+'D0.Research.MovingPreparationGoldenBridge.cochainRoleShiftMatrix_mulVec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+theorem D0.Research.MovingPreparationGoldenBridge.cochainRoleShiftMatrix_orthogonal : ∀ (N : ℕ) (r : Role),
+  (cochainRoleShiftMatrix N r)ᵀ * cochainRoleShiftMatrix N r = 1 :=
+fun N r =>
+  Eq.mpr (id (congrArg (fun _a => _aᵀ * _a = 1) (cochainRoleShiftMatrix.eq_1 N r)))
+    (Eq.mpr
+      (id
+        (congrArg (fun _a => _a * Equiv.Perm.permMatrix ℝ (cochainRoleShiftPerm N r) = 1)
+          (transpose_permMatrix (cochainRoleShiftPerm N r))))
+      (Eq.mpr
+        (id
+          (congrArg (fun _a => _a = 1)
+            (Eq.symm (permMatrix_mul (cochainRoleShiftPerm N r) (cochainRoleShiftPerm N r)⁻¹))))
+        (of_eq_true
+          (Eq.trans
+            (congrFun'
+              (congrArg Eq
+                (Eq.trans
+                  (congrFun
+                    (congrFun (congrArg (Equiv.Perm.permMatrix ℝ) (mul_inv_cancel (cochainRoleShiftPerm N r)))
+                      Real.semiring.toNonAssocSemiring.toMulZeroClass.toZero)
+                    Real.semiring.toNonAssocSemiring.toAddCommMonoidWithOne.toOne)
+                  permMatrix_one))
+              1)
+            (eq_self 1)))))
+'D0.Research.MovingPreparationGoldenBridge.cochainRoleShiftMatrix_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+theorem D0.Research.MovingPreparationGoldenBridge.nativeRoleFailureEffect_formula : ∀ (N : ℕ) (a p : ℝ),
+  a ^ 2 = p →
+    (roleFailureEffect a p fun r => cochainRoleShiftMatrix N r) =
+      (p ^ 3 / 4) • ∑ r, (cochainRoleShiftMatrix N r - 1)ᵀ * (cochainRoleShiftMatrix N r - 1) :=
+fun N a p ha => roleFailureEffect_formula a p (fun r => cochainRoleShiftMatrix N r) ha
+'D0.Research.MovingPreparationGoldenBridge.nativeRoleFailureEffect_formula' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 theorem D0.Research.MovingPreparationGoldenBridge.native_role_cardinality : Fintype.card Role = 4 :=

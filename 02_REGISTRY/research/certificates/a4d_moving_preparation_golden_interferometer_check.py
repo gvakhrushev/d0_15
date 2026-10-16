@@ -22,7 +22,7 @@ def git_output(*args: str) -> str:
 
 def main() -> None:
     receipt = json.loads(RECEIPT.read_text(encoding="utf-8"))
-    assert receipt["schema"] == "d0-moving-preparation-golden-interferometer-bridge/1"
+    assert receipt["schema"] == "d0-moving-preparation-golden-interferometer-bridge/2"
     assert receipt["status"] == "PASS"
 
     source = receipt["source"]
@@ -66,11 +66,17 @@ def main() -> None:
     scope = receipt["scope"]
     assert scope["operator_formula_from_owned_golden_gate"]
     assert scope["failure_effect_on_role_indexed_matrix_returns"]
+    assert scope["exact_matrix_representation_of_native_cochain_shifts"]
+    assert scope["native_role_shift_matrices_orthogonal"]
+    assert scope["native_role_failure_effect_specialization"]
     assert not any(value for key, value in scope.items() if key not in {
         "operator_formula_from_owned_golden_gate",
         "failure_effect_on_role_indexed_matrix_returns",
+        "exact_matrix_representation_of_native_cochain_shifts",
+        "native_role_shift_matrices_orthogonal",
+        "native_role_failure_effect_specialization",
     })
-    print("PASS_GOLDEN_PREPARATION_BRIDGE owner_pins=6 theorems=8 role=D0.Role sorryAx=0")
+    print("PASS_GOLDEN_PREPARATION_BRIDGE owner_pins=8 theorems=11 role=D0.Role native_shifts=exact sorryAx=0")
 
 
 if __name__ == "__main__":
