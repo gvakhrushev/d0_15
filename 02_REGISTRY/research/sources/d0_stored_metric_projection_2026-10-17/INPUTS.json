@@ -1,0 +1,23 @@
+{
+  "schema": "d0-stored-metric-projection-inputs/1",
+  "consumer": "02_REGISTRY/research/A4D_STORED_METRIC_PROJECTION_AND_SOURCE_COMPLETION.md",
+  "consumer_sha256": "014be6082811753f49d20cd10adcd73693cabab1e1b44997e0ee08027b7f3bcf",
+  "checker": "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/check_metric_projection.py",
+  "checker_sha256": "a60a99379169f6a807ceeb9fd9fe4792a48441712212992cd9a3c08f3b0a3bce",
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
+    "02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "validation": {
+    "exact_checks": 59,
+    "result": "PASS",
+    "negative_controls": "included in checker; exceptional modes and forbidden completion row are retained"
+  },
+  "scope_boundary": "regular local stored-adjoint kinematics and generic source conormal only; no physical source selection or GR closure"
+}

@@ -92,6 +92,19 @@ balances; the [coframe reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTR
 supplies the intrinsic Einstein covector under its geometric assumptions.
 Their physical source equality remains the common bridge.
 
+The [complete stored-adjoint metric projection](A4D_STORED_METRIC_PROJECTION_AND_SOURCE_COMPLETION.md)
+now makes the restriction of that chart explicit. Its regular nonlinear
+metric image is characterized by a line-constant observer projection and
+own-edge invariants; on a full-support Fourier mode its tangent obeys
+`H_rr=0` and `lambda^T H lambda=0`. The generic Bianchi-compatible conormal
+then contains a nonzero Einstein-realizable residual invisible to every
+admitted stored tangent. A single fixed row would detect it, but that row
+violates the chart's fifth tangent constraint. This is a source-completion
+obligation only for the stated stored chart: it neither transfers to the
+larger full-Lorentz interface nor selects a physical source law, curved root,
+or refinement trajectory. The exact consumer retains the exceptional modes
+where the generic one-row completion does not apply.
+
 The [native coframe/source bridge](A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md)
 now embeds +omega_LC in the actual raising channel and computes its true
 curvature/torsion/density a2. Eight leading link equations leave16 tensor
