@@ -1,0 +1,14 @@
+{
+  "definition": "The balanced state and 99-coordinate memory-minus-trace matrix are reconstructed from the pinned actual full16 CAR creators; the complete q3300 mean slice is evaluated directly, using a separately interval-certified invertible finite-decimal coordinate preconditioner.",
+  "schema": "d0-full-lorentz-balanced-memory-path-inputs/1",
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/RESULTS.json": "8920803d185af11132dfa274a42d0e307ad43db150ef8e87d7ab83c9bf2f4d0d",
+    "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/full_lorentz_boost_source_check.py": "5cf53fc8e901b51f58024eadb7de282c68008f1be304185d9d16a6c12a44be32",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_CHOICES.json": "be4facb35ddd2532f137db5a27a4ec6da3b97943980e93f9ddea9a8241390d6a",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_interval.py": "19d4e33f7c74465da9079ec4e3c90e0b20b3b1aad448a0cdb1957a3fc61ef41f",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_symbol.py": "1ef97d8f72d5133c75c2c071ed75b8b9ce295322c407c49e91bf589afd2af9fd"
+  }
+}
