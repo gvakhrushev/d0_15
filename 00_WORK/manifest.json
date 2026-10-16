@@ -59,28 +59,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     },
     {
-      "id": "WRK-A4D-CERTIFICATE-INPUT-CLOSURE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Implement a conservative changed-input consumer selector for research certificates, with exact pinned-input provenance, unknown-dependency fallback and isolated-runner tests; do not weaken existing checks.",
-      "brief": "00_WORK/tasks/WRK-A4D-CERTIFICATE-INPUT-CLOSURE.md"
-    },
-    {
-      "id": "WRK-A4D-LEAN-GOLDEN-CURVATURE-KERNEL",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the finite four-cylinder moment identities and calibrated degree-four coefficient extraction generically in Lean, then specialize the existing golden parameters without assuming curvature or GR.",
-      "brief": "00_WORK/tasks/WRK-A4D-LEAN-GOLDEN-CURVATURE-KERNEL.md"
-    },
-    {
       "id": "WRK-A4D-LEAN-SOURCE-REFLECTION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -90,17 +68,6 @@
       ],
       "exit_condition": "Formalize a generic finite-dimensional right-inverse/dual-source reflection theorem and explicit internal-source correction, with a norm bound and symmetric packed-pairing specialization.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-SOURCE-REFLECTION.md"
-    },
-    {
-      "id": "WRK-A4D-PF-MEASURE-SOURCE-TRANSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Prove an explicit finite C1 pushforward/source-error bound for supplied history-to-cell maps and normalized weights, including moving partitions; identify the precise native-map input rather than choosing it.",
-      "brief": "00_WORK/tasks/WRK-A4D-PF-MEASURE-SOURCE-TRANSPORT.md"
     },
     {
       "id": "WRK-A4D-ANISOTROPIC-NORMAL-SOURCE",
