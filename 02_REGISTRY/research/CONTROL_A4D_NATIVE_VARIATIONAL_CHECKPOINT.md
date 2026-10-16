@@ -2502,3 +2502,10 @@ is to derive the actual map on all ten metric slots with all 24 link directions
 and matter retained, classify its range and cokernel, and prove or refute the
 required right-inverse bound on that actual constrained carrier. No source,
 Ward identity, stationarity or GR conclusion is promoted here.
+
+## CONTROL review baseline sync — 2026-10-16
+
+The Ready PR #322 is synchronized to current `main` at
+`add17919b344f0e46115619aa53d2173ecdcf219`. Its PR-body `Baseline` field now
+uses this exact base SHA, as required by the repository's ready-review guard.
+This is review metadata only; it does not alter the scientific status above.
