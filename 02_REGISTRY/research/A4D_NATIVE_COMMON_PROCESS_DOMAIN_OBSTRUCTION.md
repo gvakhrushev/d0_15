@@ -249,7 +249,7 @@ process. The repository has not derived or admitted this map, nor checked
 its all-ten metric matching, all-sixteen matter components, AF image, or
 complete differentiated action. No global selector or parent NO-GO follows.
 
-Replay the 83 exact controls in ordinary or optimized mode:
+Replay the 93 exact controls in ordinary or optimized mode:
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_native_common_process_domain_check.py
@@ -258,17 +258,20 @@ python3 -O 02_REGISTRY/research/certificates/a4d_native_common_process_domain_ch
 
 Both modes agree with the pinned
 [`results JSON`](certificates/a4d_native_common_process_domain_results.json).
-The raw-engine result is limited to this equality-chart base and direct raw
-identification; the rest-coordinate gate test is a distinct candidate map.
-The twelve probability tests, all ten transverse equations, full action, AF
-primitive admission and other possible charts remain open.
-The next scientific target is to find whether any point in the owned equality
-graph simultaneously satisfies the literal raw coefficient domain and has
-an admitted update. The fixed-lift extension now fails the chart as well as
-the base point failing raw-ring admission, so the next productive test is an
-owned variable-lift law `F'`, if one exists, not another rest-only gate test.
-Derive `m'=U_s m`, `m0'=rho(F')^-1m'` from that owner and test the twelve
-probability-domain conditions, all ten metric matching rows, all sixteen
-matter components and the full action derivative. A NO-GO still requires
-extending the exact ring and chart obstructions beyond this base point and
-the tested coframe.
+The 93-check result concerns the named unshifted chart base, the distinct
+rest-coordinate candidate, and the fixed-lift neighborhood; it does not
+cover another chart point.
+
+The existence target has since been met at a different point. The separate
+[498-check complete-field owner](certificates/a4d_native_complete_field_source_check.py)
+contains a literal `Z[a]^16` matching input and its actual engine step; for
+that output, every Lorentz frame at fixed `q=eta` misses the same comparator
+probability interval. See [Section 3.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md).
+This does not contradict the base-point ring obstruction above. The open
+critical step is now a native joint `q,m` transition (or an independently
+owned change of readout) that follows from the full source/action; `q'` may
+not be chosen to repair the channel by hand. Its moving reference, all
+sixteen matter components, ten metric rows, AF admission and full action
+derivative must be checked together. This is a fixed-`q` obstruction for a
+specific actual input, not a global no-go; other processes, variable `q'`,
+primitive AF admission and the full GR/root tasks remain open.
