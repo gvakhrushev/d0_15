@@ -4026,6 +4026,30 @@
         }
       ],
       "result": "SCOPED_NO_GO for expansion through the existing normalized Hodge/CAR metric; no global physical no-go or GR status change"
+    },
+    {
+      "source_commit": "9aadc242cbc1b4d73bdefcc657bba0bbe2cdcc3a",
+      "source_parent": "b44be615ff448b5b18ac8f054b49f6dcd27ef5ea",
+      "artifact_copy": "EXACT_CONTROL_CROSS_OWNER_GLUE_RESULT",
+      "consuming_parent": "D0_CLOSURE_CRITICAL_PLAN_2026-10-07.md; same-carrier Hodge plus chronological-source test on the factor shear",
+      "artifacts": [
+        {
+          "path": "02_REGISTRY/research/A4D_NATIVE_SHEAR_CHRONOLOGY_COMMON_LIFT_2026-10-16.md",
+          "sha256": "1650d72728b6cef152e10b86ac131694c2707ab650262cfbc315f5c445afb4ab",
+          "source_blob": "02e7de75ced5bd0fcba104e5ea437a5df19852a1"
+        },
+        {
+          "path": "02_REGISTRY/research/certificates/a4d_native_shear_chronology_common_lift_check.py",
+          "sha256": "f14dbfb11011e65b81e74cb066779a6576cb89ec95cee32b7ec536d165fcac52",
+          "source_blob": "b6105cfd16a684caa69e043bfde0e0c7982fd04b"
+        },
+        {
+          "path": "02_REGISTRY/research/certificates/a4d_native_shear_chronology_common_lift_results.json",
+          "sha256": "518ed2f01fa011085ef5767c8dbf8607e61e264679abfa05e55f52232d893669",
+          "source_blob": "fbd326f8b8ed55725b7915a26107f7a185196b88"
+        }
+      ],
+      "result": "SCOPED_NO_STATIONARITY for H+J on one exact owner-frame shear lift; full additional action terms, physical admission, curved roots and GR remain open"
     }
   ]
 }
