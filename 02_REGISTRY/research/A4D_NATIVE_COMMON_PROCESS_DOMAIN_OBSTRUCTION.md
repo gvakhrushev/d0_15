@@ -5,17 +5,18 @@ readout and the existing full16 adaptive AF/CAR engine.
 
 The chart stores rest coordinates `m0` and defines raw native matter by
 `m=rho(F)m0`. The current engine instead stores its CAR vector directly in
-`Z[a]^16` and applies its gate to that raw vector. This note records three
-scoped tests: (i) applying the gate directly to `m0` leaves the comparator
+`Z[a]^16` and applies its gate to that raw vector. This note records four
+scoped outcomes: (i) applying the gate directly to `m0` leaves the comparator
 probability domain after one step; (ii) at the chart's curved base point, no
 coframe `O` in the owned equality lift makes raw `m` belong to `Z[a]^16`;
 (iii) for one proper future-preserving coframe, the scalar extension of the
-raw gate to the real algebraic coefficient field followed by readout with the
-same fixed lift also leaves that probability domain. The third test is
-explicitly not an engine transition:
-its raw input is excluded by (ii). These results exclude only the tested
-direct bridges, not another native transition, another admitted chart point,
-or global physical dynamics.
+raw gate followed by readout with the same fixed lift leaves that probability
+domain; and (iv) this fixed-lift failure persists for actual exact engine-ring
+states in an open neighborhood. The scalar-extension calculation at the
+center is not itself an engine transition; the nearby-state result uses
+admitted ring states but does not assert metric matching there. These results
+exclude only the tested direct bridges, not a variable native transition,
+other chart points, or global physical dynamics.
 
 Inputs are pinned at `dfaf7c8df509d5abd83fa60a185ad530feadc9b5`:
 
@@ -162,6 +163,41 @@ The denominator is positive, hence `w'_0<0`. Thus even the fixed-lift
 linear extension cannot preserve the named comparator chart at this frame.
 This supplements the arithmetic exclusion: it still does not describe an
 admitted raw transition or rule out a variable lift `F'`.
+
+## The fixed-lift failure persists for nearby exact engine states
+
+The center raw vector is outside `Z[a]^16`, but this does not make the
+fixed-lift test an artifact of a point outside the engine domain. The
+coefficient ring `Z[a]` is dense in `R`: since `a` is irrational,
+`Z[a]` contains `Z+aZ`; for every `epsilon>0`, the pigeonhole principle gives
+integers `q != 0` and `k` with `0<|qa-k|<epsilon`, and integer multiples of
+`qa-k` approximate any real number. Coordinatewise, the product lattice
+remains dense in the subspace where the six guard coordinates are exactly
+zero.
+
+For the chosen coframe, the scalar row of `rho(F)^-1` is the scalar identity.
+The first fixed-lift effect after the positive raw gate is therefore an
+affine functional whose linear row is exactly `(a,-p,0,...,0)`, with
+`l1` norm `a+p<2`. At the center its value is `-kappa_F`, where the exact
+radical bounds above and `5*(sqrt(5)-1)^(3/2)<225/32` give
+`kappa_F>943936/11250000>2/25`. Consequently every raw perturbation with
+`||delta m||_infinity<1/50` satisfies
+
+\[
+w'_0(m+\delta m)<-\frac{2}{25}+2\|\delta m\|_\infty< -\frac{1}{25}.
+\]
+
+The input selector and the post-gate selector are both strictly positive at
+the center; the owner gate preserves the exact guard-zero subspace and
+`Z[a]^16`. Thus sufficiently close points of the dense guard-zero engine
+domain execute the actual `U_+` step. The input probability inequalities,
+timelike current and nonzero curvature are open at the base, and one may
+choose the approximant off the zero top-grade hyperplane. Therefore the same
+fixed-readout chart failure occurs for exact engine-domain inputs that are
+initially inside a nearby genuinely curved chart. This is stronger than the
+single non-admitted scalar-extension probe, but it remains a fixed-F chart
+result: it does not show the perturbed states lie on the ten-row matching
+graph, and it does not rule out a variable `F'` or a different native law.
 
 ## One literal rest-coordinate step fails the same readout
 

@@ -1,5 +1,5 @@
 {
-  "exact_checks": 83,
+  "exact_checks": 93,
   "fixed_raw_frame_extension": {
     "N": "-15*sqrt(13)-10*sqrt(10)-10*sqrt(sqrt(5)-1)+5*sqrt(5)*sqrt(sqrt(5)-1)+20*sqrt(2)+7*sqrt(65)",
     "coframe": "O=((3,2),(-2,3))/sqrt(13) on first plane, identity on complement",
@@ -25,6 +25,15 @@
     "top_grade": "p^20 != 0"
   },
   "input_head": "dfaf7c8df509d5abd83fa60a185ad530feadc9b5",
+  "local_fixed_lift_instability": {
+    "branch": "input and output selectors are positive; U+ preserves the guard-zero sector",
+    "guard_subspace": "six zero engine guard coordinates; product lattice remains dense there",
+    "input_chart": "strict probability and timelike conditions persist for sufficiently close approximants by openness; choose nonzero top grade off its zero hyperplane",
+    "lattice": "Z[a] contains Z+aZ, dense in R since a is irrational",
+    "scope": "exact engine-ring approximants under this fixed F/readout; not a matched variable-lift evolution or physical admission theorem",
+    "uniform_bound": "if ||delta_raw||_infinity < 1/50, the first fixed-lift output effect remains < -1/25",
+    "verdict": "FIXED_LIFT_CHART_FAILURE_PERSISTS_FOR_NEARBY_ENGINE_RING_STATES"
+  },
   "one_step": {
     "branch": "+ on m0 coordinates; raw CAR selector is not identified",
     "fixed_wiring_weight_1": "2-3*p+a*(4*p-3) < -7/40",

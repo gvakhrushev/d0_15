@@ -5254,9 +5254,9 @@ internal refinement laws or close the ten transverse equations, native
 source, exact-root, or GR tasks.
 Proof and source pins: [fixed-branch rigidity note](A4D_NATIVE_ISOMETRIC_COMMON_PROCESS_METRIC_RIGIDITY.md).
 
-## Raw AF coefficient lattice obstructs the named metric chart (2026-10-16)
+## Raw AF lattice and fixed-lift chart obstructions (2026-10-16)
 
-A cross-owner certificate now records three different interface results.
+A 93-check cross-owner certificate now records four scoped interface results.
 First, at the unshifted center of the genuinely curved
 `lambda=1` chart, the native lift is `F=sqrt(2/p^3) O H^(1/2)` for every
 `O in O(4)`. The raw CAR state's grade-one squared norm is exactly
@@ -5278,12 +5278,22 @@ scalars beyond the literal engine ring and reading back with that same lift
 also makes an effect negative. This is an algebraic extension test, not an
 admitted raw engine step: its input is excluded by the first result.
 
+The fixed-lift failure persists for exact engine-ring inputs near this base.
+`Z[a]` is dense in `R`; the six guard coordinates can stay exactly zero. The
+first fixed-lift effect is affine with row `(a,-p,0,...,0)`, l1 norm below
+2, and base negative margin above `2/25`. Therefore any raw perturbation of
+sup norm below `1/50` still yields an effect below `-1/25`. Both selectors
+are positive and the engine preserves its ring/guard sector, so arbitrarily
+nearby literal engine states execute the actual step. By openness they can
+start inside a nearby curved probability chart. This local result does not
+put the perturbed state on the ten-row matching graph.
+
 These scoped obstructions do not exclude another chart point or a coupled
 native update. The AF/CAR engine acts on raw `m`, whereas the chart uses
 `m0=rho(F)^-1m`; its next state must be computed as
 `m'=U_s m`, `m0'=rho(F')^-1m'` with the actual field law for F'. The
 [domain note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and its
-[83-check consumer](certificates/a4d_native_common_process_domain_check.py)
+[93-check consumer](certificates/a4d_native_common_process_domain_check.py)
 retain the exact input and fixed-lift scopes. The different ring-compatible
 point in [Section 3.1 of the unified result](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
 below supplies a literal raw transition; it does not contradict the

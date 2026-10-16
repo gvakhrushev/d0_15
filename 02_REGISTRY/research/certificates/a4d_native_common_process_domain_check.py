@@ -248,6 +248,43 @@ def run():
           numerator_lower > numerator_upper > 0)
     check("FIXED_RAW_WEIGHT_STRICTLY_NEGATIVE",
           sp.sqrt(5)-1 > 0 and fixed_probe_weight_expected < 0)
+    # The probability chart is locally unstable even for exact engine-ring
+    # inputs approximating this non-admitted center. The scalar component of
+    # rho(F)^-1 is fixed, so this channel is an affine row of U+ with l1 norm
+    # a+p<2. The exact margin below gives a uniform open sup-norm ball.
+    eq("FIXED_RAW_SCALAR_ROW_OF_UNLIFT", rho_probe_inverse[0, :], I16[0, :],
+       sp.simplify)
+    probe_Uplus = Uplus.subs({p: probe_p, a: probe_a})
+    probe_row0 = sp.zeros(1, 16)
+    probe_row0[0, 0], probe_row0[0, 1] = probe_a, -probe_p
+    eq("FIXED_RAW_FIRST_EFFECT_IS_UPLUS_ROW", probe_Uplus[0, :], probe_row0,
+       sp.simplify)
+    row_l1 = probe_p+probe_a
+    check("FIXED_RAW_EFFECT_ROW_L1_LT_TWO",
+          0 < probe_p < 1 and 0 < probe_a < 1 and row_l1 < 2)
+    fixed_output_selector = sp.simplify(raw_probe_after[1])
+    check("FIXED_RAW_OUTPUT_SELECTOR_POSITIVE",
+          fixed_output_selector > 0)
+    check("U_PLUS_PRESERVES_GOLDEN_INTEGER_RING",
+          all(
+              (lambda poly: (poly.degree() <= 3 or poly.is_zero)
+               and all(coefficient.is_Integer is True for coefficient in poly.all_coeffs()))(
+                  sp.Poly(C.red(entry).subs(p, a**2), a))
+              for entry in Uplus))
+    check("U_PLUS_PRESERVES_GUARD_ZERO_SUBSPACE",
+          all(C.red(Uplus[i, j]) == 0
+              for i in GUARDS for j in range(16) if j not in GUARDS))
+    check("FIXED_RAW_DENOMINATOR_UPPER_BOUND_CONTROL",
+          sp.Rational(9, 4)**2 > 5)
+    fixed_kappa_lower = sp.Rational(2)*sp.Rational(14749, 50000)*sp.Rational(32, 225)
+    eq("FIXED_RAW_NEGATIVE_MARGIN_LOWER_EXACT", fixed_kappa_lower,
+       sp.Rational(943936, 11250000), sp.simplify)
+    check("FIXED_RAW_NEGATIVE_MARGIN_EXCEEDS_2_OVER_25",
+          fixed_kappa_lower > sp.Rational(2, 25))
+    perturbation_radius = sp.Rational(1, 50)
+    guaranteed_output_margin = sp.Rational(1, 25)
+    check("FIXED_RAW_UNIFORM_NEGATIVE_BALL_MARGIN",
+          fixed_kappa_lower-2*perturbation_radius > guaranteed_output_margin)
 
     check("POSITIVE_INPUT_SELECTOR", C.red(input_matter[1]) == C.red(2*p-1)
           and C.red(2*p-1) != 0)
@@ -341,6 +378,15 @@ def run():
             "exact_positive_margin_for_N": "14749/50000 from rational radical bounds",
             "verdict": "FIXED_LIFT_LINEAR_EXTENSION_LEAVES_COMPARATOR_DOMAIN",
         },
+        "local_fixed_lift_instability": {
+            "lattice": "Z[a] contains Z+aZ, dense in R since a is irrational",
+            "guard_subspace": "six zero engine guard coordinates; product lattice remains dense there",
+            "branch": "input and output selectors are positive; U+ preserves the guard-zero sector",
+            "uniform_bound": "if ||delta_raw||_infinity < 1/50, the first fixed-lift output effect remains < -1/25",
+            "input_chart": "strict probability and timelike conditions persist for sufficiently close approximants by openness; choose nonzero top grade off its zero hyperplane",
+            "scope": "exact engine-ring approximants under this fixed F/readout; not a matched variable-lift evolution or physical admission theorem",
+            "verdict": "FIXED_LIFT_CHART_FAILURE_PERSISTS_FOR_NEARBY_ENGINE_RING_STATES",
+        },
         "one_step": {
             "branch": "+ on m0 coordinates; raw CAR selector is not identified",
             "output_first_grade": "a*(4*p-3) < 0",
@@ -374,6 +420,7 @@ def main():
     print("RESULT " + result["verdict"])
     print("RESULT NO_RAW_ENGINE_INPUT_FOR_THIS_CHART_BASE_FOR_ANY_O")
     print("RESULT FIXED_LIFT_LINEAR_EXTENSION_LEAVES_COMPARATOR_DOMAIN")
+    print("RESULT FIXED_LIFT_CHART_FAILURE_PERSISTS_FOR_NEARBY_ENGINE_RING_STATES")
     print("RESULT REST_COORDINATE_UPDATE_AND_GLOBAL_GR_REMAIN_OPEN")
 
 
