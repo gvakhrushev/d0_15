@@ -87,3 +87,14 @@ rank [native image ; Bianchi ; conformal scalar row] = 10.
 ```
 
 This is an algebraic **conditional sufficient repair**, not an existing native equation: the conformal direction is *forbidden* by the full-support literal stored own-leg constraints, and the supplied W2 site weight/similarity does not create a physical conformal source. Nor does one trace direction solve action selection or refinement. For other momenta, trace pairing can be zero, so no assertion of a universal conformal repair is made. The right obligation is to derive a single full-support scalar/source row or physically force a larger variation domain, and to show its coefficient and matter/archive coupling come from the actual unchanged native programme.
+
+
+### Exact exception: a conformal row is NOT a universal completion
+
+The separate `check_scalar_completion.py` runs over the exact algebraic field `Q(sqrt(161))`. For the real smooth full-support Fourier covector
+
+```text
+k=((43+5*sqrt(161))/8,1,1,1),
+```
+
+the rank stays `rank[native;Bianchi]=9`, and even after adding the conformal row `Tr(Q E)=0` on the surviving source, so `rank[native;Bianchi;conformal]=9`. This is an exact zero, not a numerical near-zero. It is a smooth local Fourier countercheck, **not** a claim about the integer momentum set at the particular periodic `L=8` instrument. For generic witness `k=(1,1,1,1)` conformal raises rank to 10, but full smooth all-mode GR completion must use a derived physical row nonzero on the source annihilator of *each* mode, or an actually admitted enlargement of the variation image. This latter algebraic criterion is now exact; the physical source/price law implementing it is still absent. The independent ordinary and optimized check results are byte-identical, SHA256 `ec6fa2576844ed5aa583ab361970c8a77f629281eecbf582097b5a14c881c03e` in `SCALAR_COMPLETION.json`.
