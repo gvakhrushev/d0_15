@@ -5109,3 +5109,16 @@ Unchanged old suites, receipts and Lean builds are reused. This closes the
 stated finite minimization and smooth comparator/native matching problems;
 it does not close native operation/action selection, full coupled roots,
 physical refinement, GR or the original fixed-source/raw-owner terminal.
+
+An exact cross-owner check now tests that price optimizer against the named
+AF-to-CAR engine support. For the preparation fixture with `M2` effect
+spectrum `(9/25,16/25)`, the two owner costs differ and the optimizer's
+GNS-amplitude singular-value ratio is `1.015715...`. The verified engine
+preimage instead requires the `M2` amplitude to be scalar, so no right-unitary
+representative of this optimizer enters that support. This excludes the
+specific candidate preparation/interface pair; the fixture is not physically
+selected and the result is not a global native no-go. See the
+[cross-owner result](A4D_NATIVE_PREPARATION_ENGINE_ADMISSION.md) and
+[`a4d_native_preparation_engine_admission_check.py`](certificates/a4d_native_preparation_engine_admission_check.py).
+The newly added retained-controller completion has an expanded carrier and
+remains a separate engine-support and primitive-admission question.
