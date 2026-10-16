@@ -144,11 +144,18 @@ The concurrent [memory-fibre transversality packet](A4D_MEMORY_FIBRE_CROSSING_TR
 at `d2d6fc60` supplies a second cokernel test on that old stored preparation
 segment. The actual source-neutral delta_sigma gives pairing below-0.8441
 at the unique q3300 crossing in(0.42,0.44). It excludes the pure q,-q
-field velocity with zero first-order memory velocity; mixed memory/field
-velocities remain unclassified. This is consumed in its original stored
-interface, whose old pure endpoint fails the enlarged Lorentz boost rows.
-Its checker/current input hashes and the separate `a6ee61ef` document-only
-receipt repair are preserved without repeating the scientific calculations.
+field velocity with zero first-order memory velocity. The additive
+[quotient-jet proof](A4D_MEMORY_FIBRE_MIXED_MEMORY_VELOCITY.md) now shows that
+an arbitrary first-order tangent along this smooth stationary memory fibre
+does not change the cokernel pairing. Thus the q-only crossing velocity has
+no second-order stationary jet even when its first-order memory component is
+nonzero. Velocities containing additional field modes remain open. This is
+consumed in the original stored interface, whose old pure endpoint fails the
+enlarged Lorentz boost rows; it does not transfer to the full-Lorentz domain.
+The separate exact grade-four witness for the legacy four-source interface
+remains a second source-neutral obstruction, not an all-mode theorem. The
+checkers/current input hashes and the separate `a6ee61ef` document-only
+receipt repair are preserved without repeating the interval calculation.
 
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference

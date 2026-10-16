@@ -15,16 +15,40 @@
   "new_GitHub_publication": false,
   "previous_memory_owner_confirmed_on_GitHub": true,
   "diagnostic_scope": "All4096-momentum floating midpoint exploration; no interval native Hessian/kernel/bifurcation certification. Not consumed by exact checker.",
+  "continuation_validation": {
+    "exact_mixed_memory_jet_checks": 26,
+    "mixed_memory_jet_python": "3.12.14",
+    "mixed_memory_jet_sympy": "1.14.0",
+    "ordinary_and_optimized": "PASS_IDENTICAL_JSON",
+    "five_existing_mathematical_mutations": "REJECTED",
+    "q3300_interval_replay": {
+      "python": "3.9.6",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "mpmath": "1.3.0",
+      "result": "PASS_MEMORY_FIBRE_CROSSING_TRANSVERSALITY"
+    },
+    "repo_validation": "PASS warnings=0",
+    "work_and_agent_protocol": "PASS",
+    "lean_build": false
+  },
   "sha256": {
     "02_REGISTRY/research/A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md": "a12d151ce659cc2b27ea15d6ddf2f0b8a2973f3b9348d323b32e333c2037ffde",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/DIAGNOSTIC_FLOW.json": "a029e13386cb66913733bbff7071200ebc878d2140d65d83a51e07f462baa5ba",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/INPUTS.json": "2313037f5ce489665fe7c844208697a059c00787309abe4664b251aee19d3dce",
-    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/INTEGRATION.md": "02b3b45aa543388ecb1ae784e82932a24faded52876b013b15c3ce6b27c80582",
-    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/README.md": "a34eea0117fe38299f8bc84cf2eeeee61ebceb2b6c4931e26d8e22e66862e36d",
+    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/INTEGRATION.md": "0884e2b3f338aac28373dbedffbfe48d4092c46a905e640abfb6702e08a7b210",
+    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/README.md": "0e7967ae0a4095b875053a3fcf337979177b589fa560bf7b33fe97204f79d2f5",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/check_rank_continuation.py": "420de2ab3e8d9533b94665cdb93e5abff62c6371cf607974695b4de3398be163",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/diagnostic_memory_fibre.py": "c92b184e2a0a3aad64b64a44f2eb70d3ff4c4aebe794ca69e3e2ffdbc1302bbc",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/mutations.json": "b4d10c58fb64dd584954953282fc68212e3edce4a545e601341211b894f1e2fa",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/result.json": "830a066d70cf2705e9e68e57c65b7bd3637f0b902f63cb17823efc0dcb45c679",
-    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/test_mutations.py": "58b89f5b0a2c45a298e16c3225ea8e4877e1586e6484095d10883391e5adec40"
+    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/test_mutations.py": "58b89f5b0a2c45a298e16c3225ea8e4877e1586e6484095d10883391e5adec40",
+    "02_REGISTRY/research/A4D_MEMORY_FIBRE_CROSSING_TRANSVERSALITY.md": "0c371c1284fe9110588034bb11912a9a656ec37ee4149980dfced15aa68fb793",
+    "02_REGISTRY/research/A4D_MEMORY_FIBRE_MIXED_MEMORY_VELOCITY.md": "ec9436723739de1e1b8bd5c0b22f36235cbd769c1ce7effafb852c4e022701d6",
+    "02_REGISTRY/research/certificates/a4d_memory_rank_continuation_check.py": "d6f8a057444bf84dd17d9b67314b1f8930c4cf216cb8c02c01829f7588883588",
+    "02_REGISTRY/research/sources/d0_memory_fibre_mixed_memory_velocity_2026-10-16/INPUTS.json": "29731a8f55d653e5394c2a5dd5d9d79be30fe7b7b42b9e55cd808351ff80e098",
+    "02_REGISTRY/research/sources/d0_memory_fibre_mixed_memory_velocity_2026-10-16/README.md": "9875ad33572376bb56bb8e737f9e0cad6d9f3367b7c339e43eca557309ffcadc",
+    "02_REGISTRY/research/sources/d0_memory_fibre_mixed_memory_velocity_2026-10-16/check_mixed_memory_jet.py": "f93dd1520c64fc4fc17c2106ed8ec4f17baeb5f5108be0d99cc33a3df5a7982a",
+    "02_REGISTRY/research/sources/d0_memory_fibre_mixed_memory_velocity_2026-10-16/RESULT.json": "5a0c6deb365e34f9073be41c7af918d1a699241070fd3fd0ad6c67d2ac31e312"
   }
 }
