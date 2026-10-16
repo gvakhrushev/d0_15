@@ -81,17 +81,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-RAW-SOURCE-PRECISION-BUDGET.md"
     },
     {
-      "id": "WRK-A4D-MV-FULL-RANK-SPAN",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify that Tr(S M)=0 for every traceless S orthogonal to J_1,J_2,J_3 is equivalent to M in span{I,J_1,J_2,J_3}, with a witness and a negative control, without using the field kernel.",
-      "brief": "00_WORK/tasks/WRK-A4D-MV-FULL-RANK-SPAN.md"
-    },
-    {
       "id": "WRK-A4D-MV-RANK8-WITNESS",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
