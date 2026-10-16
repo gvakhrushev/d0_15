@@ -4,10 +4,12 @@
 This cross-owner certificate checks two proposed bridges at one genuinely
 curved matter-clock chart point: applying the AF/CAR gate directly to the
 rest vector m0, and identifying the engine's raw CAR vector with
-m=rho(F)m0. The first direct update leaves the comparator probability
-domain; the second is outside the current Z[a] engine store for every
-coframe O in the owned equality lift. Neither decides other native maps or
-global physical admission.
+m=rho(F)m0. The direct rest update leaves the comparator probability domain;
+the raw state is outside the current Z[a] engine store for every coframe O
+in the owned equality lift. A separate fixed-lift calculation tests the
+scalar extension of the raw gate, while explicitly not treating its
+inadmissible input as an engine state. None of these tests decides other
+native maps or global physical admission.
 """
 import argparse
 import hashlib
@@ -180,6 +182,73 @@ def run():
     Uminus = role.engine_gate_matrix(-1)
     eq("FULL16_POSITIVE_BRANCH_IS_UNITARY", Uplus.T*Uplus, I16, C.red)
     eq("FULL16_NEGATIVE_BRANCH_IS_UNITARY", Uminus.T*Uminus, I16, C.red)
+
+    # Diagnostic only: extend the raw gate linearly to the non-admitted raw
+    # point, then read it back with the SAME fixed lift. This distinguishes a
+    # fixed-frame obstruction from the separate rest-coordinate candidate;
+    # it is not an actual engine transition because raw m is not in Z[a]^16.
+    probe_p = (sp.sqrt(5)-1)/2
+    probe_a = sp.sqrt(probe_p)
+    probe_matter = base_matter.subs({p: probe_p, a: probe_a}).applyfunc(sp.simplify)
+    probe_O = sp.eye(4)
+    probe_O[:2, :2] = sp.Matrix([[3, 2], [-2, 3]])/sp.sqrt(13)
+    eq("FIXED_RAW_PROBE_O_ORTHOGONAL", probe_O.T*probe_O, I4, sp.simplify)
+    eq("FIXED_RAW_PROBE_O_PROPER", probe_O.det(), 1, sp.simplify)
+    check("FIXED_RAW_PROBE_O_PRESERVES_FUTURE_AXIS",
+          sp.simplify(probe_O[0, 0]) == 3/sp.sqrt(13)
+          and sp.simplify(probe_O[0, 0]) > 0)
+    F_probe = sp.sqrt(2/probe_p**3)*probe_O*boost
+    rho_probe = role.F.ext(F_probe)
+    rho_probe_inverse = role.F.ext(F_probe.inv())
+    raw_probe = rho_probe*probe_matter
+    probe_grade_one = sp.Matrix([raw_probe[index] for index in (1, 2, 4, 8)])
+    eq("FIXED_RAW_PROBE_GRADE_ONE_IS_LIFTED",
+       probe_grade_one, F_probe*e0*(2*probe_p-1), sp.simplify)
+    eq("FIXED_RAW_PROBE_GRADE_ONE_NORM",
+       (probe_grade_one.T*probe_grade_one)[0], sp.Rational(26, 5)*probe_p**3,
+       sp.simplify)
+    check("FIXED_RAW_PROBE_SELECTOR_POSITIVE",
+          sp.simplify(raw_probe[1]) > 0)
+    check("FIXED_RAW_PROBE_GUARDS_ZERO",
+          all(sp.simplify(raw_probe[i]) == 0 for i in GUARDS))
+    raw_probe_after = Uplus.subs({p: probe_p, a: probe_a})*raw_probe
+    check("FIXED_RAW_PROBE_OUTPUT_GUARDS_ZERO",
+          all(sp.simplify(raw_probe_after[i]) == 0 for i in GUARDS))
+    rest_probe_after = rho_probe_inverse*raw_probe_after
+    fixed_probe_weight = sp.simplify(probe_p**2+rest_probe_after[0]-probe_matter[0])
+    radical_numerator = (
+        -15*sp.sqrt(13) - 10*sp.sqrt(10)
+        - 10*sp.sqrt(sp.sqrt(5)-1)
+        + 5*sp.sqrt(5)*sp.sqrt(sp.sqrt(5)-1)
+        + 20*sp.sqrt(2) + 7*sp.sqrt(65))
+    fixed_probe_weight_expected = -2*radical_numerator/(5*(sp.sqrt(5)-1)**sp.Rational(3, 2))
+    eq("FIXED_RAW_PROBE_WEIGHT_EXACT", fixed_probe_weight,
+       fixed_probe_weight_expected, sp.simplify)
+    # Exact rational square bounds prove the radical numerator is positive.
+    # Lower bounds: sqrt(65)>4031/500, sqrt(2)>707/500,
+    # sqrt(5)>559/250, sqrt(sqrt(5)-1)>1111/1000.
+    # Upper bounds: sqrt(13)<1803/500, sqrt(10)<3163/1000,
+    # sqrt(sqrt(5)-1)<139/125.
+    r65, r2, r5, rt_lo = (sp.Rational(4031, 500), sp.Rational(707, 500),
+                          sp.Rational(559, 250), sp.Rational(1111, 1000))
+    r13, r10, rt_hi = (sp.Rational(1803, 500), sp.Rational(3163, 1000),
+                       sp.Rational(139, 125))
+    check("FIXED_RAW_BOUND_SQRT65_LOWER", r65**2 < 65)
+    check("FIXED_RAW_BOUND_SQRT2_LOWER", r2**2 < 2)
+    check("FIXED_RAW_BOUND_SQRT5_LOWER", r5**2 < 5)
+    check("FIXED_RAW_BOUND_NESTED_LOWER", (rt_lo**2+1)**2 < 5)
+    check("FIXED_RAW_BOUND_SQRT13_UPPER", r13**2 > 13)
+    check("FIXED_RAW_BOUND_SQRT10_UPPER", r10**2 > 10)
+    check("FIXED_RAW_BOUND_NESTED_UPPER", (rt_hi**2+1)**2 > 5)
+    numerator_lower = 7*r65+20*r2+5*r5*rt_lo
+    numerator_upper = 15*r13+10*r10+10*rt_hi
+    eq("FIXED_RAW_NUMERATOR_MARGIN_EXACT",
+       numerator_lower-numerator_upper, sp.Rational(14749, 50000), sp.simplify)
+    check("FIXED_RAW_NUMERATOR_STRICTLY_POSITIVE",
+          numerator_lower > numerator_upper > 0)
+    check("FIXED_RAW_WEIGHT_STRICTLY_NEGATIVE",
+          sp.sqrt(5)-1 > 0 and fixed_probe_weight_expected < 0)
+
     check("POSITIVE_INPUT_SELECTOR", C.red(input_matter[1]) == C.red(2*p-1)
           and C.red(2*p-1) != 0)
     output_matter = C.mat(Uplus*input_matter)
@@ -262,6 +331,16 @@ def run():
             "verdict": "NO_RAW_ENGINE_INPUT_FOR_THIS_CHART_BASE_FOR_ANY_O",
             "engine_selector": "raw m[1] is unavailable because no O yields a Z[a]^16 state",
         },
+        "fixed_raw_frame_extension": {
+            "coframe": "O=((3,2),(-2,3))/sqrt(13) on first plane, identity on complement",
+            "operation": "scalar extension of U+ to Q(a,sqrt(2),sqrt(13)) on rho(F)m*, then read back with the same F",
+            "engine_admission": "NO: raw input remains outside Z[a]^16 for every O",
+            "guard_rows": "all six owned guard coordinates vanish before and after the extended gate",
+            "first_effect": "-2*N/(5*(sqrt(5)-1)^(3/2)) < 0",
+            "N": "-15*sqrt(13)-10*sqrt(10)-10*sqrt(sqrt(5)-1)+5*sqrt(5)*sqrt(sqrt(5)-1)+20*sqrt(2)+7*sqrt(65)",
+            "exact_positive_margin_for_N": "14749/50000 from rational radical bounds",
+            "verdict": "FIXED_LIFT_LINEAR_EXTENSION_LEAVES_COMPARATOR_DOMAIN",
+        },
         "one_step": {
             "branch": "+ on m0 coordinates; raw CAR selector is not identified",
             "output_first_grade": "a*(4*p-3) < 0",
@@ -273,7 +352,7 @@ def run():
             "same_comparator_chart": "FAIL: effect weight is negative",
         },
         "verdict": "DIRECT_REST_COORDINATE_UPDATE_DOES_NOT_CLOSE_ON_CURVED_CHART",
-        "scope": "gate applied directly to lambda=1 rest coordinates; raw (F,m)->(F',m') adapter, selector identification, AF-image and primitive admission remain unproved",
+        "scope": "the fixed raw-frame calculation is only a scalar extension at a point outside Z[a]^16; the gate applied directly to rest coordinates is a separate candidate map; variable-lift adapter, selector identification, AF-image and primitive admission remain unproved",
     }, checks
 
 
@@ -294,6 +373,7 @@ def main():
         print("PASS_" + name)
     print("RESULT " + result["verdict"])
     print("RESULT NO_RAW_ENGINE_INPUT_FOR_THIS_CHART_BASE_FOR_ANY_O")
+    print("RESULT FIXED_LIFT_LINEAR_EXTENSION_LEAVES_COMPARATOR_DOMAIN")
     print("RESULT REST_COORDINATE_UPDATE_AND_GLOBAL_GR_REMAIN_OPEN")
 
 

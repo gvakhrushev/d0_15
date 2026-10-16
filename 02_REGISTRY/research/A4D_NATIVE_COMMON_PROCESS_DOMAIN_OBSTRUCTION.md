@@ -1,17 +1,21 @@
-# Two candidate AF-to-metric bridges fail on the named curved chart
+# Two candidate AF-to-metric bridges fail; a fixed-lift extension also exits the chart
 
 2026-10-16. Exact cross-owner results for the named `lambda=1` matter-clock
 readout and the existing full16 adaptive AF/CAR engine.
 
 The chart stores rest coordinates `m0` and defines raw native matter by
 `m=rho(F)m0`. The current engine instead stores its CAR vector directly in
-`Z[a]^16` and applies its gate to that raw vector. This note records two
-separate tests: (i) applying the gate directly to `m0` leaves the comparator
-probability domain after one step; (ii) at the chart's curved base point,
-no coframe `O` in the owned equality lift makes raw `m` belong to `Z[a]^16`.
-The second is an exact arithmetic obstruction to this direct engine/native
-identification at this base point. Neither result excludes another native
-transition, another admitted chart point, or global physical dynamics.
+`Z[a]^16` and applies its gate to that raw vector. This note records three
+scoped tests: (i) applying the gate directly to `m0` leaves the comparator
+probability domain after one step; (ii) at the chart's curved base point, no
+coframe `O` in the owned equality lift makes raw `m` belong to `Z[a]^16`;
+(iii) for one proper future-preserving coframe, the scalar extension of the
+raw gate to the real algebraic coefficient field followed by readout with the
+same fixed lift also leaves that probability domain. The third test is
+explicitly not an engine transition:
+its raw input is excluded by (ii). These results exclude only the tested
+direct bridges, not another native transition, another admitted chart point,
+or global physical dynamics.
 
 Inputs are pinned at `dfaf7c8df509d5abd83fa60a185ad530feadc9b5`:
 
@@ -113,6 +117,52 @@ adapter would need its own owner and variation law; it is not supplied by
 this calculation. The check also verifies two such proper coframes give the
 same matched curved metric and rest readout.
 
+## Fixed-lift raw-gate extension leaves the comparator domain
+
+The lattice obstruction above means no actual raw engine step exists at this
+base point. To test what a fixed-lift identification would do even after
+temporarily extending the gate by scalars beyond its owned coefficient domain,
+choose the proper, future-axis-preserving rotation
+
+\[
+O=\begin{pmatrix}3&2\\-2&3\end{pmatrix}/\sqrt{13}\oplus I_2,
+\qquad F=\sqrt{2/p^3}\,OB.
+\]
+
+It sends the grade-one raw vector onto the first coordinate and keeps all six
+engine guard coordinates zero both before and after the extended positive
+gate. Extend the owner's matrix `U_+` from `Q(a)` to
+`Q(a,sqrt(2),sqrt(13))`, apply it to `rho(F)m*`, then read back with the same
+`rho(F)^{-1}`. The first comparator effect becomes
+
+\[
+w'_0=-\frac{2N}{5(\sqrt5-1)^{3/2}},
+\quad
+N=-15\sqrt{13}-10\sqrt{10}-10\sqrt{\sqrt5-1}
++5\sqrt5\sqrt{\sqrt5-1}+20\sqrt2+7\sqrt{65}.
+\]
+
+The sign is exact. Rational square bounds give
+\[
+\begin{aligned}
+\sqrt{65}&>4031/500,& \sqrt2&>707/500,& \sqrt5&>559/250,&
+\sqrt{\sqrt5-1}&>1111/1000,\\
+\sqrt{13}&<1803/500,& \sqrt{10}&<3163/1000,&
+\sqrt{\sqrt5-1}&<139/125.
+\end{aligned}
+\]
+Each bound follows by squaring positive rationals; for the nested radical,
+square once more after adding one. Substitution yields
+\[
+N>7(4031/500)+20(707/500)+5(559/250)(1111/1000)
+-15(1803/500)-10(3163/1000)-10(139/125)
+=14749/50000>0.
+\]
+The denominator is positive, hence `w'_0<0`. Thus even the fixed-lift
+linear extension cannot preserve the named comparator chart at this frame.
+This supplements the arithmetic exclusion: it still does not describe an
+admitted raw transition or rule out a variable lift `F'`.
+
 ## One literal rest-coordinate step fails the same readout
 
 For this candidate coordinate update, the chart vector `m0` has first-grade
@@ -163,7 +213,7 @@ process. The repository has not derived or admitted this map, nor checked
 its all-ten metric matching, all-sixteen matter components, AF image, or
 complete differentiated action. No global selector or parent NO-GO follows.
 
-Replay the 64 exact controls in ordinary or optimized mode:
+Replay the 83 exact controls in ordinary or optimized mode:
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_native_common_process_domain_check.py
@@ -178,7 +228,11 @@ The twelve probability tests, all ten transverse equations, full action, AF
 primitive admission and other possible charts remain open.
 The next scientific target is to find whether any point in the owned equality
 graph simultaneously satisfies the literal raw coefficient domain and has
-an admitted update. If so, derive `m'=U_s m`, `m0'=rho(F')^-1m'` from that
-owner and test the twelve probability-domain conditions, all ten metric
-matching rows, all sixteen matter components and the full action derivative.
-If not, extend the exact ring obstruction beyond this single base point.
+an admitted update. The fixed-lift extension now fails the chart as well as
+the base point failing raw-ring admission, so the next productive test is an
+owned variable-lift law `F'`, if one exists, not another rest-only gate test.
+Derive `m'=U_s m`, `m0'=rho(F')^-1m'` from that owner and test the twelve
+probability-domain conditions, all ten metric matching rows, all sixteen
+matter components and the full action derivative. A NO-GO still requires
+extending the exact ring and chart obstructions beyond this base point and
+the tested coframe.
