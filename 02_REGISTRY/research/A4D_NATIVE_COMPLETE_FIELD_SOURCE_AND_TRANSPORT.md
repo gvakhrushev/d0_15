@@ -68,6 +68,128 @@ unit observer в нём не отождествляется автоматиче
 же S, с его производными на допустимых кривых. Ни сумма разных цен,
 ни fitted q′, ни замена Dirac его adjoint completion здесь не выбираются.
 
+### 0.1. Уже существующий same-operator heat и его stored-native реализация
+
+[Record-generated heat v8](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md)
+уже задаёт конкретный условный ответ на часть предыдущей стрелки. Его
+положительный символ `G_*=(d−o)I+o 11ᵀ` **не** является native Lorentz q.
+Положим n=e0, внутренние Lorentz links A_xy=I и
+
+```text
+F_*=sqrt(d−o)(I−11ᵀ/4)+sqrt(d+3o)11ᵀ/4,
+q_native=F_* eta F_*ᵀ, h_coordinate=(F_*F_*ᵀ)^−1=G_*^−1,
+v_r=eta F_*_rᵀ, ell=1/8.
+```
+
+В rest Gram I все16 exterior creators настоящих stored legs после полного
+exterior eta и закреплённой ACDB/ABCD sign-conjugacy дают ровно v8 creators
+с CAR-pairing G_*. Constant observer/legs удовлетворяют **обоим** stored
+adjoint условиям §0. Поэтому на каждом импульсе actual stored operator
+имеет квадрат `(z_k*G_*z_k)I16`, где z_r(k)=8(exp(2pi i k_r/8)−1).
+Это точная реализация на однородном native классе, не подстановка другого
+Dirac. Все10 однородных symmetric G-jets имеют frame lift; из этого не
+следует независимый допуск всех local metric jets в stored-adjoint классе.
+
+У v8 тот же D и literal golden instrument дают
+
+```text
+Delta=D², alpha=p² ell²/128, B=I−alpha Delta, p³I<=B<=I,
+Lambda=−log(B)/alpha, beta=2n alpha, exp(−beta Lambda)=B^(2n),
+H=beta^−1 log[128 workspaceDim Tr_H B^(2n)],
+J=−128 Tr_H log[(1−z)I+z B^(2n)], R=<Psi,Delta Psi>.
+```
+
+Тепло использует Lambda, квадратичная matter — Delta; их нельзя молча
+отождествлять при конечном ell. У рабочего root L=8, n=8192, z=2^−20;
+workspaceDim=128^8192 и все128 purifying-reference координат сохраняются.
+Сертифицированное окно `d=0.0636351915943445350±10^−12`,
+`o=0.0040167350432317253±10^−12` и shell-gap >1/2 берутся из
+существующего доказательства v8; старый поиск root здесь не повторяется.
+Полная matter есть максимальная purification всех128 состояний
+`{±e_r} tensor C16`. Её reduced CAR state I16/16, а не raw pure16 vector.
+
+Стационарность v8 переносится на native кривые, чей действительный
+whitened jet факторизуется через его local coefficient/linear-link класс:
+собственные source rows v8 нулевые, а дополнительный representation
+commutator имеет нулевой trace с коммутирующими spectral weights и rho_m.
+Это условный homogeneous joint root на данном спектральном секторе.
+Affine shifts, physical preparation из pi0, active apparatus, выбор ell/z,
+согласованная AF-refinement и полное native действие здесь ещё не выведены.
+Обобщённое утверждение «heat и feedback пока вовсе не связаны одним
+оператором» больше неприменимо к этому уже построенному классу.
+
+### 0.2. AF survival из данного D: гладкий signed completion и граница следа
+
+Если **данный** selfadjoint D действительно действует из old left AF
+algebra и удовлетворяет bound §0.1, один явный four-copy completion имеет
+
+```text
+R=B=I−alpha D², C=sqrt(2I−alpha D²),
+S=sqrt(alpha) D C, E=S²=2alpha D²−alpha²D^4,
+T=[[R,0,−S,0],[0,R,0,−S],[0,S,0,R],[S,0,R,0]].
+```
+
+R,S коммутируют и R²+S²=I, поэтому T unitary, right-module линейный;
+полный complementary corner имеет identity и сохраняется. Его blank
+survival есть тот же B. Functional calculus коммутирует с unital
+AF *-inclusion. Это не доказательство, что фактический site/Fock D уже
+принадлежит этой left algebra, или что независимо построенный refined D
+равен включению старого.
+
+В отличие от principal `sqrt(E)=sqrt(alpha)|D|C`, signed S аналитичен
+через рождение нуля D. Для произвольного некоммутирующего delta D
+
+```text
+C deltaC+deltaC C=−alpha{D,deltaD},
+deltaS=sqrt(alpha)(deltaD C+D deltaC),
+C>=sqrt(1+p³)I.
+```
+
+Поэтому нулевой Dirac mode не создаёт inverse-gap loss этого gate-jet.
+Pointwise conjugacy через sign(D) не служит smooth-family доказательством.
+Это **другой coherent channel**, чем principal four-copy completion:
+равенство survival не означает равенства всех неоптимизированных цен.
+Для actual AF paths commuting сокращение теперь требует `[sigma,S]=0`,
+чего одно `[sigma,E]=0` не гарантирует между противоположными D-signs.
+
+При faithful sigma*=mu exp[−ell f(E)]/Z scalar minimum, exact coherent gap
+и условная preparation стационарность сохраняются: sigma* коммутирует с S,
+а замена знака S лишь переставляет парные ± paths с равными reference
+weights. Для fixed mu полный envelope source новой completion равен
+
+```text
+delta A*=Tr[sigma* f'(E) deltaE]
+        =4alpha Tr[sigma* f'(E) D R deltaD],
+deltaE=2alpha{D,deltaD}
+       −alpha²[D²{D,deltaD}+{D,deltaD}D²].
+```
+
+При moving mu добавляется actual `−Tr(sigma* delta log mu)/ell`.
+Crossings отдельных Kraus factors `w_j R±S/sqrt2=0` требуют прежней
+осторожности для joint C²-entropy, даже когда сам gate гладкий.
+Для density Hessian новой completion достаточно actual neutral paths:
+в обоих central sectors есть путь k_j R с k_j²=p³. Из R>=p³I,
+`||k_j R V R k_j||_HS>=p^9||V||_HS`. Output density имеет norm<=1,
+поэтому Dlog output>=I в HS sense и
+
+```text
+M_T,signed >= p^18/ell, norm(M_T,signed^−1)<=ell/p^18.
+```
+
+Оценка сохраняет все coherences, не зависит от AF level и относится лишь
+к сжатому trace-zero density block. Старую более сильную p^6-оценку
+principal positive-plus paths нельзя автоматически переносить на signed
+channel или amplitude/field Hessian. Здесь ell в AF цене есть log(phi);
+это не length calibration ell из §0.1, их совпадение не предполагается.
+
+Наконец, GNS heat trace — `sum_j d_j Tr_left f(Delta_j)`, с полными
+right multiplicities d_j. Это другая величина, чем PF state trace.
+Новый identity-survival complement добавляет zero heat modes; изменения
+d_j меняют feedback. Их нельзя удалить или заменить reference rank128.
+Таким образом AF-naturality одного gate ещё не сохраняет stationary root
+или полную цену. AF preparation-price также не прибавляется к v8 действию
+без общего native owner.
+
 ## 1. Actual endpoint-price и все16 rest-source компонент
 
 Используется ровно двенадцатиканальный прибор из
@@ -334,6 +456,147 @@ output относится к их общей нулевой точке. Толь
 другого wiring или другого допущенного процесса. Результат — точная
 fixed-q граница данного actual engine step и данного same-program chart,
 а не global native no-go или full joint root.
+
+### 3.2. Первый действительный curved-coefficient matter jet того же v8
+
+Пусть P — полный128 shell projector §0.1, Q=I−P, epsilon — shell energy,
+`R_Q=Q(Delta−epsilon)^−1Q`. По owned gap `norm(R_Q)<=2`, включая
+сохранённые zero modes ниже epsilon. Для любой C¹ joint-critical curve
+той же matter sphere `(Delta(t)−epsilon(t))Psi(t)=0` full Schmidt rank128
+даёт **операторное** необходимое условие, сильнее averaged equation:
+
+```text
+P X P=epsilon' P, Q Psi'=−(R_Q tensor I)X Psi, X=Delta'.   (7a)
+```
+
+P Psi' содержит настоящие shell/reference kernel directions, не выкинутые
+как gauge. При C² и при (7a) остаётся необходимое условие
+
+```text
+P(Y−2X R_Q X)P=epsilon'' P, Y=Delta''.                   (7b)
+```
+
+Y должен включать actual field second jet, а не искусственно замороженный
+program/preparation. Rank128 persists locally; произвольное расщепление
+shell несовместимо с такой полной critical preparation.
+
+Непустой local curved coefficient test задаётся без fitted source:
+`qwave=(3,3,0,0)`, `phi(x)=cos(2pi qwave.x/8)`,
+`G(t,x)=exp(t phi(x))G_*`. Literal v8 map даёт
+
+```text
+d(t)=M_exp(t phi/2) d0,
+D(t)=M_exp(t phi/2)d0+d0* M_exp(t phi/2).
+```
+
+Это именно true-adjoint extension v8. При variable phi он **не** равен
+stored `M_exp(t phi/2)D0`; его native admission нельзя вывести из одного
+homogeneous совпадения §0.1. В fixed whitened Fourier basis, для l=k±qwave,
+
+```text
+d_k=sum_r c_r z_r(k), D_k=d_k+d_k*, D_k²=lambda_k I16,
+D1_lk=(d_k+d_l*)/4,
+X_lk=D_l D1_lk+D1_lk D_k,
+D2_kk=D_k/8,
+Y_kk=lambda_k I16/4+2 sum_(l=k±qwave) D1_kl D1_lk,
+E2_k=Y_kk−2 sum_(l=k±qwave) X_kl X_lk/(lambda_l−epsilon).
+```
+
+qwave и 2qwave не принадлежат shell difference set, поэтому PXP=0 и (7b)
+имеет восемь отдельных **полных16** blocks E2_k. Для continued critical
+curve все они должны равняться одному epsilon'' I16.
+Эта проверка для **данной** exponential curve уже решена аналитически.
+Full-CAR identity даёт
+
+```text
+Tr16(X_lk* X_lk)=(epsilon²+lambda_l²)/2
+                 +2epsilon lambda_l+|z_l*G_*z_k|²,
+Tr16 E2_k=6epsilon+lambda_(k+qwave)+lambda_(k−qwave)
+           −2 sum_l Tr16(X_lk*X_lk)/(lambda_l−epsilon).
+```
+
+При literal z8 и G_*=(d−o)I+o11ᵀ отсюда точно
+
+```text
+Tr16 E2_(e0)−Tr16 E2_(e2)
+ =−64(d+3o) P_d,o /[(d+o)((7+5sqrt2)d+(11+8sqrt2)o)],
+P_d,o=(d−o)[(14+sqrt2)d+(16+3sqrt2)o]+(8−4sqrt2)o²>0.
+```
+
+Знак строго отрицателен на всей области d>o>0, включающей actual root
+window. Поэтому prescribed exponential second jet нарушает (7b), даже
+после правильного matter first response. Это не перенос вывода из
+рационального nonroot control. Независимая CAR-normal-form и scalar
+four-vector проверка подтверждает обе identity и положительное разложение.
+
+Сильнее, препятствие есть уже **внутри одного** occupied Fock block.
+Из CAR на вакууме
+
+```text
+X_lk|0>=(2h_l|0>+c_l c_k|0>)/4, h_l=z_l*G_*z_k,
+||X_lk|0>||²=(epsilon lambda_l+3|h_l|²)/16
+```
+
+и полного16 trace следует
+
+```text
+(E2_e0)_00−Tr16(E2_e0)/16
+ =sum_(l=e0±qwave) (epsilon lambda_l−|h_l|²)
+                            /[4(lambda_l−epsilon)]
+ =8sqrt2(d−o)>0.                                         (7d)
+```
+
+В обоих слагаемых Gram deficit равен 8192(d²−o²), а gaps равны
+`(256+128sqrt2)(d+o)` и `128(1+sqrt2)(d+o)`. Это точный uniform
+nonscalar witness на actual root, независимо подтверждённый двумя выводами.
+Для **любого** добавочного local creator-coefficient second jet при fixed
+returns diagonal-Fourier deltaD_kk Clifford-линеен. Поэтому
+`{D_k,deltaD_kk}` — scalar I16 и не меняет (7d). Итак, этот first jet
+не продолжается C² critical curve с одними coefficient variations, даже
+если изменить их acceleration. Совместные link/observer/operator
+направления и другой first jet не исключены; их допуск ещё надо вывести.
+
+Конструктивное уравнение для **добавочного** допустимого second field jet W
+теперь задано: `P L_Delta[W] P=epsilon'' P−E2_prescribed`. Его левая часть
+должна быть настоящим differential native field map, с оставшимися
+linearized field equations, а не назначенным source. В частности, homogeneous G''
+меняет каждый shell block только на `(z_k*G''z_k)I16`; этого недостаточно
+для nonscalar CAR части (7d). Иной W за пределами coefficient-only класса и совместно движущиеся links
+этим результатом не исключены.
+ Необходимый
+first matter response уже вычислен: для k=e0,l=(4,3,0,0)
+`<vac|X_lk|vac>=z_l*G_*z_k/2`, ненулевой при d>o>0. Все связанные l
+лежат выше shell, поэтому actual eliminated matter contribution
+`−2 Tr(P X R_Q X P)/128` строго отрицателен. Это не знак полного Hessian
+и не существование curved joint root.
+
+Для полного второго field source надо сохранить **все4096** momentum
+modes, reference128 и workspace. Положим N=8192,
+`s(lambda)=1−alpha lambda`, `h(lambda)=1−z+z s(lambda)^(2N)`,
+`Z=Tr_H s(Delta)^(2N)`, включая16 Fock multiplicity, и
+
+```text
+kappa(lambda)=−s(lambda)^(2N−1)/Z
+             +128 beta z s(lambda)^(2N−1)/h(lambda).
+```
+
+У этого nonzero Fourier jet deltaZ=0. Поэтому после actual off-shell
+matter elimination точный complete second source равен
+
+```text
+S''=Tr[(P/128+kappa(Delta))Y]
+    +sum_ALL(k,l) kappa^[1](lambda_k,lambda_l)
+                    Tr16(X_kl X_lk)
+    −2 Tr(P X R_Q X P)/128.                               (7c)
+```
+
+Divided difference вычисляется при fixed **полном** Z, а при равных
+lambda — через derivative limit. Только matter часть допускает указанные
+малые blocks; замена полного thermal sum одними shell modes запрещена.
+Новый consumer реализует blocks и (7c), но не повторяет старый root solve.
+Его rational F control `F_diag=1/4,F_off=1/125` явно помечен **nonroot**;
+перенос универсальных утверждений на actual root использует его owned
+interval/gap. Полный affine/physical/root continuation остаётся задачей.
 
 ## 4. Настоящая Lorentz link: положительная часть не исчезает
 
@@ -803,6 +1066,80 @@ Palatini не подставляется вместо R_h, а настоящие
 coherent output Hessian actual AF channel. Совместить эти инструменты
 физически можно лишь после source identity одного native action.
 
+### 6.1. Density/coframe transport: точный stored-heat остаток
+
+Предыдущая density substitution сохраняет полные rest matter и record
+normalizers, если вместе с `Fhat=aF`, `a=chi^−1/2`, переносить каждую
+matter grade k как `mhat^(k)=a^k m^(k)`. Тогда m0 неизменно во всех16
+координатах, `Jhat=aJ`, `hhat=chi h`; это не freeze matter. Record,
+зависящий только от m0, имеет нулевой compensated density source. Но
+native positive pairing меняется, поэтому неизменность такого record не
+доказывает comparator/native matching после этой замены.
+
+Literal stored creators и contractions линейны по legs. При сохранённых
+internal links и observer Gram действительная операторная замена есть
+
+```text
+D_a=M_a D, D_a−D_a^dagger_G=[M_a,D],
+([M_a,D])_xy=(a_x−a_y)D_xy.                              (18a)
+```
+
+Это вычисленный остаток, не определение через желаемую Einstein source.
+Для исходного selfadjoint D в owned counting/rest Gram он исчезает лишь
+при constant a на каждой связной component ненулевых edge blocks.
+Stored parallel-leg condition даёт то же a_y=a_x. Поэтому произвольный
+nonconstant density/coframe lift выходит из **этого** stored heat-domain.
+Это не запрет другим pairings и не отрицательность спектра.
+
+Есть точная классификация возможного **скалярного** site-weight repair:
+`G_omega=M_omega G` делает тот же D_a selfadjoint ровно при
+`[M_(omega a),D]=0`, то есть `omega a=constant` на связном carrier.
+Итак G_a=c M_a^−1 G. Similarity
+
+```text
+H_a=sqrt(M_a)D sqrt(M_a)=M_a^−1/2 D_a M_a^1/2
+```
+
+selfadjoint в старом G, сохраняет все modes и доказывает real spectrum
+D_a и nonnegative spectrum D_a². Это conditional algebraic repair, а не
+native выбор меры: его scalar factor sqrt(chi) отличается от geometric
+volume chi². General matrix/graded pairings этим не классифицированы.
+
+В исходной raw sup норме даже derivative defect не uniform при refinement:
+на любом even L, для f_x=(−1)^x и constant vacuum v, actual flat full16
+operator даёт `[M_f,D]v=2L f c_0 v`. При chi(t)=1+t f поэтому norm
+производной (18a) не меньше L. Все16 grades сохранены. Smooth a с
+заранее заданным Lipschitz bound даёт O(Lip(a)) edge defect, но эта
+дополнительная регулярность не следует из raw norm родительской задачи.
+
+Если собственный owner оценивает уже заданное heat на D_a², trace
+сохраняется similarity с H_a². При fixed beta и исходном D полный
+первый source по u=log chi вычисляется непосредственно:
+
+```text
+delta H_a=−{M_delta_u,H_a}/4,
+delta[beta^−1 log Tr exp(−beta H_a²)]
+     =sum_x Tr_fibre[(rho_a H_a²)_xx] delta_u(x),
+rho_a=exp(−beta H_a²)/Tr exp(−beta H_a²).
+```
+
+Коэффициенты неотрицательны, их сумма — Gibbs mean energy. Здесь нет
+нового compensator или утверждения, что это heat старой naked-star цены.
+Для native bridge остаётся вывести собственный pairing/measure и actual
+shared-face/four-shift operator из child-clock histories. Одной nonatomic
+address measure для этого недостаточно.
+
+Полученный параллельно [центральный variational compiler](A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md)
+уточняет область предыдущей условной density/coframe сборки. Для своего
+нового coherent terminal program он выводит ровно один положительный
+множитель **всех** Euler-строк заданного Lorentz Q, включая меньшие ранги
+подготовки. Его faithful optimum имеет собственный ready/pending tilt,
+а не постулированное w=r; coarse measure и её first-source jets имеют
+address-limit с rate O(p^(2c/17)). Это сохранённый результат SOURCE
+358ecbb1, не повторный запуск его95 controls. Он не выбирает физически Q,
+новые engine primitives, terminal-price вместо всех расходов или native
+heat-domain. Поэтому (18a), полные observer terms и различие мер остаются.
+
 ## 7. Следующая общая конструкция
 
 Вычислены три конкретные части одной недостающей стрелки. Имеющийся
@@ -813,7 +1150,10 @@ comparator слеп к raw frame при фиксированной rest matter; 
 Actual preparation несёт собственные KL/normalizer/measure источники
 (14)–(18), а не автоматически normalized spacetime average.
 
-Теперь нужен один допущенный field→program закон, который переносит
+§0.1 уже даёт same-operator heat/feedback и homogeneous stored realization;
+§3.2 вычисляет его первый настоящий nonconstant coefficient/matter jet,
+а §6.1 — остаток другого, density/coframe lift. Теперь нужен один
+допущенный field→program закон, который переносит
 **эту же полную связь**, подготовку и child-dependent clocks в spatial
 carrier, задаёт actual measure и сохраняет их источники. Это не разрешение
 добавить `I_boost` или иной compensator к действию. Все остальные
@@ -839,7 +1179,9 @@ raw CAR matter и actual endpoint transport нельзя отождествля�
 для него исключены **все** frame-исправления при неизменном native `q`.
 Это требование к замкнутости данного engine/readout adapter, а не
 обязательное временное q′-правило вариационной теории. Её следующий шаг —
-общий native map и стационарные строки (0) с полным second pullback.
+actual native continuation за пределы homogeneous realization §0.1 и
+стационарные строки (0) с полным second pullback; для literal v8 curve
+уже доступны необходимые shell equations (7a)–(7c).
 В (12)–(16g) уже сохранены Gram, constraint-curvature, coherent
 preparation и normalizer члены для этого вычисления. Непосредственно
 вычислена равномерная оценка обратного блока подготовки, но не обращён
@@ -847,23 +1189,30 @@ preparation и normalizer члены для этого вычисления. Н�
 
 ## 8. Узкая совместная проверка
 
-`certificates/a4d_native_complete_field_source_check.py` вызывает только
-три новых source consumers: `record_frame_source`, `lorentz_link_transport`
-и `preparation_measure`. После добавления joint second jets и Hessian
-общий запуск проходит543 точных условия: 111 raw-source, 56 Lorentz-link
-(прежние38 и18 second-jet), 376 preparation/measure (прежние349 и27
-Hessian/inverse controls). Обычный запуск — 8.930 s, optimized — 7.996 s;
-выводы побайтно совпадают. Actual raw-engine часть §3.1 не изменялась.
+`certificates/a4d_native_complete_field_source_check.py` вызывает четыре
+source consumers: `record_frame_source`, `lorentz_link_transport`,
+`preparation_measure`, `record_heat_continuation`. Собранный запуск
+проходит **781** точное условие:119 raw/density,56 link/second-jet,
+376 preparation/measure/Hessian,230 record-heat/continuation/signed-gate.
+Обычный и optimized запуски выполнены параллельно за14.578 s и14.556 s;
+выводы побайтно совпали. Это elapsed times данного совместного запуска,
+не отдельный performance benchmark. Прежние543 conditions сохранены.
 
 Проверяются actual endpoint-price и все raw-source slots, literal
-Lorentz curvature matching family, actual ring/engine point и
-fixed-q obstruction для всех reference frames, полный16 Gram и constrained endpoint
-jets, conormal-independent second source, нормировка собственного CAR current,
-actual flagged AF channel, coherences, Fréchet/BKM readout/Hessian и literal
-archive projection. Общие доказательства second pullback, Schur-разбора и
-равномерного inverse приведены выше; finite controls их поддерживают,
-а не заменяют all-level доказательство. Для archive
-kernel используются только конечные projection tables и integer fibre
-counts; большие operator matrices не создаются. Существующие определения
-закреплены SHA256. Старые suite entrypoints, receipt generators и Lean
-builds не запускаются; физическое действие или source не регистрируются.
+curvature/matching family и all-frame fixed-q obstruction; полный16 Gram,
+constrained jets и conormal-independent second source; actual AF channel,
+coherences, readout/BKM Hessian и archive projections; literal stored
+Dirac density defect и scalar repair; actual homogeneous stored/v8 creator
+bridge, полные16 Fourier blocks,128-component matter response, closed
+root-uniform trace/nonscalar identities и неполный thermal-carrier rejection.
+Signed four-copy checks включают zero-mode germ, noncommuting Sylvester
+jet и actual AF *-inclusion со всеми complements/multiplicities. Их
+алгебраический fixture не выбирает physical gate или v8 parameter bound.
+
+Общие second-pullback, inverse, continuation-obstruction и source
+утверждения доказаны выше и независимо математически сверены; finite
+controls их поддерживают. Существующие определения закреплены SHA256.
+Новый consumer читает v8 proof/receipt как documentary inputs, не исполняя
+его470-check root suite. Concurrent central95 и history/density925 checks,
+их receipts, старые suites и Lean builds также не повторяются. Физическое
+действие, native primitive admission и original-parent terminal не повышены.

@@ -17,6 +17,7 @@ import sympy as s
 ROOT = Path(__file__).resolve().parents[4]
 CLOCK_PATH = "02_REGISTRY/research/sources/d0_native_preparation_stationary_2026-10-16/matter_clock_binding.py"
 ENGINE_PATH = "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py"
+STORED_DIRAC_PATH = "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean"
 PINS = {
     CLOCK_PATH: "1b2c668bca6c99ca84a4be513274fddc2c9a82a832368abc4a75ee24f58fbb71",
     "02_REGISTRY/research/sources/d0_record_geometry_source_integration_2026-10-15/check_phase_metric_source.py":
@@ -24,6 +25,8 @@ PINS = {
     "02_REGISTRY/research/sources/d0_lorentz_reflection_source_2026-10-16/native_current.py":
         "d9282fad2124f57addeeeece96e34ba017a041d63002f37f0c2e990661f175c3",
     ENGINE_PATH: "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9",
+    STORED_DIRAC_PATH:
+        "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
 }
 
 
@@ -83,6 +86,140 @@ def ricci_two_dimensional_first_coordinate(metric, x):
         +sum(Gamma[a][a][e]*Gamma[e][b][d]-Gamma[a][d][e]*Gamma[e][b][a]
              for e in range(2)) for a in range(2))))
     return ricci, s.simplify(s.trace(inverse*ricci))
+
+
+def stored_density_transform(dirac, site_scales, gram):
+    """The literal scaled stored operator on every full16 site fibre.
+
+    Assume D is selfadjoint for the supplied site-block Gram G and a_x>0.
+    Scaling the actual creator AND stored contraction legs by a_x gives
+    D_a=M_a D, not its adjoint completion.  G_a=M_a^-1 G is a mathematical
+    scalar-weight repair, not a selected native measure.  The similar matrix
+    sqrt(M_a) D sqrt(M_a) retains the spectrum and is G-selfadjoint.
+    """
+    values = tuple(s.sympify(value) for value in site_scales)
+    dimension = 16*len(values)
+    require(dirac.shape == (dimension, dimension)
+            and gram.shape == (dimension, dimension),
+            "stored_density_requires_all16_per_site")
+    require(all(value.is_positive is True for value in values),
+            "stored_density_positive_site_scales_required")
+    multiplication = s.diag(*(value for value in values for _ in range(16)))
+    root = s.diag(*(s.sqrt(value) for value in values for _ in range(16)))
+    require(multiplication*gram == gram*multiplication,
+            "stored_density_requires_site_block_Gram")
+    scaled = multiplication*dirac
+    return {
+        "multiplication": multiplication,
+        "scaled_dirac": scaled,
+        "old_gram_defect": scaled-gram.inv()*scaled.H*gram,
+        "repair_gram": multiplication.inv()*gram,
+        "symmetric_representative": root*dirac*root,
+        "similarity_root": root,
+    }
+
+
+def one_axis_stored_action(field, creator, length):
+    """Literal one-axis cyclic CAR stencil, without a dense 16L matrix.
+
+    Rows are sites and every row has all16 exterior amplitudes.  The lower
+    term is the owned MINUS backward difference.  In particular at L=2
+    the two off-diagonal terms combine, rather than deleting one incidence.
+    """
+    require(field.shape == (length, 16) and creator.shape == (16, 16),
+            "one_axis_stored_full16_shape")
+    return s.Matrix.vstack(*(length*((field[(x+1) % length, :]-field[x, :])*creator.T
+                            +(field[(x-1) % length, :]-field[x, :])*creator)
+                              for x in range(length)))
+
+
+def stored_density_checks(C, eq, yes):
+    """Eight bounded groups; no old certificate or suite is executed."""
+    def zero_group(differences, label):
+        # Check every nonzero symbolic residual without allocating an
+        # artificial large block diagonal solely to group small identities.
+        values = []
+        for difference in differences:
+            if isinstance(difference, s.MatrixBase):
+                values.extend(difference.todok().values())
+            else:
+                values.append(difference)
+        values = values or [s.Integer(0)]
+        eq(s.Matrix(values), s.zeros(len(values), 1), label)
+
+    creator = C.car_operators()[0][0]
+    beta = creator+creator.T
+    identity = s.eye(16)
+    shift = s.Matrix([[0, 1], [1, 0]])
+    dirac = 2*s.kronecker_product(shift-s.eye(2), beta)
+    zero_group((creator*creator,
+                creator*creator.T+creator.T*creator-identity,
+                dirac-dirac.T, dirac[:16, 16:]-2*beta),
+               "stored_density_actual_full16_CAR_and_both_L2_incidences")
+
+    a0, a1 = s.symbols("density_a0 density_a1", positive=True)
+    transformed = stored_density_transform(dirac, (a0, a1), s.eye(32))
+    literal = s.Matrix.vstack(
+        s.Matrix.hstack(-2*a0*beta, 2*a0*beta),
+        s.Matrix.hstack(2*a1*beta, -2*a1*beta))
+    expected_defect = s.kronecker_product(
+        s.Matrix([[0, 2*(a0-a1)], [-2*(a0-a1), 0]]), beta)
+    zero_group((transformed["scaled_dirac"]-literal,
+                transformed["old_gram_defect"]-expected_defect),
+               "stored_density_exact_scaled_operator_and_old_Gram_commutator")
+
+    # beta^2=I makes this full-fibre edge block nonzero.  Thus its vanishing
+    # is equivalent to a0=a1; this is not a rank sampled at chosen values.
+    eq(s.trace(beta*transformed["old_gram_defect"][:16, 16:])/32,
+       a0-a1, "stored_density_edge_criterion_recovers_exact_scalar_difference")
+    omega0, omega1 = s.symbols("scalar_site_weight0 scalar_site_weight1", positive=True)
+    weighted = s.diag(omega0*identity, omega1*identity)
+    weighted_defect = weighted*literal-literal.T*weighted
+    coefficient = omega0*a0-omega1*a1
+    zero_group((weighted_defect-s.kronecker_product(
+                    s.Matrix([[0, 2*coefficient], [-2*coefficient, 0]]), beta),
+                s.trace(beta*weighted_defect[:16, 16:])/32-coefficient),
+               "stored_density_unique_SCALAR_weight_condition_omega_a_constant")
+
+    # A positive, genuinely nonconstant density.  No eigensystem is deleted:
+    # the repaired adjoint and similar selfadjoint representative are exact.
+    numeric = stored_density_transform(dirac, (1, 4), s.eye(32))
+    repaired = numeric["repair_gram"]
+    scaled = numeric["scaled_dirac"]
+    symmetric = numeric["symmetric_representative"]
+    root = numeric["similarity_root"]
+    zero_group((repaired*scaled-scaled.T*repaired,
+                symmetric-symmetric.T, root.inv()*scaled*root-symmetric),
+               "stored_density_nonconstant_positive_weight_repair_and_same_spectrum")
+    geometric_volume = s.diag(identity, identity/256)  # chi=(1,1/16), volume ratio chi^2.
+    yes(numeric["old_gram_defect"] != s.zeros(32)
+        and geometric_volume*scaled != scaled.T*geometric_volume
+        and repaired.is_positive_definite,
+        "stored_density_counting_and_geometric_volume_are_not_the_scalar_repair")
+
+    high_frequency = []
+    density_derivative = []
+    for length in (2, 4):
+        vacuum = s.zeros(length, 16)
+        vacuum[:, 0] = s.ones(length, 1)
+        f = s.diag(*((-1)**x for x in range(length)))
+        commutator_vacuum = (f*one_axis_stored_action(vacuum, creator, length)
+                             -one_axis_stored_action(f*vacuum, creator, length))
+        expected = s.zeros(length, 16)
+        expected[:, 1] = 2*length*f*s.ones(length, 1)
+        high_frequency.extend(list(commutator_vacuum-expected))
+        high_frequency.append(sum(value**2 for value in commutator_vacuum)
+                              -4*length**2*sum(value**2 for value in vacuum))
+        # a=chi^-1/2, chi=1+epsilon*f: dot a=-f/2.  This actual
+        # density derivative has norm L on the unit constant vacuum.
+        derivative_vacuum = -commutator_vacuum/2
+        density_derivative.append(sum(value**2 for value in derivative_vacuum)
+                                  -length**2*sum(value**2 for value in vacuum))
+    eq(s.Matrix(high_frequency), s.zeros(len(high_frequency), 1),
+       "stored_density_L2_L4_all16_high_frequency_commutator_norm_2L")
+    eq(s.Matrix(density_derivative), s.zeros(2, 1),
+       "stored_density_actual_raw_sup_derivative_norm_L_not_uniform")
+    return 8
 
 
 def run(repo=None):
@@ -354,6 +491,10 @@ def run(repo=None):
     eq(second_q[0, 0]-s.trace(second_q), -bend/3,
        "dagger_actual_positive_metric_curvature_minus_kappa_over_three")
     fixed_metric_checks = len(checks)-fixed_metric_start
+    density_start = len(checks)
+    density_groups = stored_density_checks(C, eq, yes)
+    require(len(checks)-density_start == density_groups,
+            "stored_density_group_count_matches_actual_checks")
     return {
         "exact_checks": len(checks),
         "source_pins": PINS,
@@ -368,6 +509,15 @@ def run(repo=None):
         "matching_engine_output_first_grade": "a*(4*p-3)*e0",
         "all_fixed_eta_Lorentz_reference_frames_probability_compatible": False,
         "matching_engine_input_curved_positive_metric_scalar": "-kappa/3 at origin",
+        "stored_density_operator_exact_checks": density_groups,
+        "stored_density_full_exterior_fibre": 16,
+        "stored_density_operator": "D_a=M_a*D; a=chi^(-1/2)",
+        "stored_density_old_Gram_defect": "[M_a,D]",
+        "stored_density_scalar_weight_repair": "omega_x*a_x=constant_on_connected_edges",
+        "stored_density_similar_selfadjoint_operator": "sqrt(M_a)*D*sqrt(M_a)",
+        "stored_density_even_L_raw_derivative_lower_bound": "L on the unit constant vacuum",
+        "stored_density_pairing_or_measure_physically_selected": False,
+        "stored_density_positive_spectrum_nogo_claimed": False,
         "coupled_metric_output_law_derived": False,
         "physical_aggregation_measure_or_transport_selected": False,
         "full_native_joint_criticality_claimed": False,
