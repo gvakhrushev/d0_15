@@ -448,6 +448,50 @@ its physical-action/preparation lane. Smallest decisive evidence: exact
 CAR/operator identities on the complete contrast map and a finite symbolic
 spanning proof if needed, never old roots/heat/Lean replay.
 
+## Complete ordinary/rare second-source consumer — 2026-10-17
+
+Statement: derive the exact ordinary/rare first-exit source balance of the
+same full Julia/golden programme through second order, including all13
+nonzero-N0 rows and the rare block. Use completeness to determine the
+aggregate ordinary source, then compare the actual native Cost−Info
+aggregator with this complete source. Do not introduce a new event price.
+
+Inputs: `729db01f8d175a1a94cd8abdeb56cf45cfa9cbf2`, the complete rare
+gauge-span owner, literal retained-history and action-selection owners,
+the existing second-order heat/source theorem and fixed-price unfolding.
+Research inputs are not admission/price-selection assumptions.
+Common objects: complete128 outcomes, actual full16/site/reference128
+carrier, both ports, `B=I-alpha Delta_h`, actual integer clock, moving
+normalizer/preparation and genuine independent source variations. Keep
+the exact all-exit identity and all second stencil/clock terms; no raw
+normalization change or substitution of an output-defined source.
+
+Consumer: Front A complete Cost−Info/action-source morphism after the
+rare-positive class is exhausted. The ordinary block's second derivative
+cannot be inferred from a positive first-jet Gram. Determine it with the
+same retained instrument and use it in the native price comparison.
+Write surfaces: root owns existing common consumers and a bounded new
+owner/source packet; helpers initially read-only derive the noncommuting
+second jet, actual ordinary row balance and physical aggregator contract.
+Other chat retains its action/preparation lane. Smallest decisive evidence:
+one exact operator second-jet identity, a genuinely noncommuting finite
+control and a source-level comparison to the already declared price;
+no new roots, rank catalogue or old spectral/Lean replay.
+
+The same consumer also reconstructs the supplied action from the actual
+total exit OPERATOR: `K=I-F_ord-F_rare`, `B=K^(1/m)>0`,
+`Delta=(I-B)/alpha`, `m=2n`. Prove the genuine finite readout derivative
+is invertible on Hermitian Delta, quantify its low-energy conditioning
+and UV loss, and retain the full preparation/clock source. This is an
+operator action quotient, not a physical tomography gate or field-image
+injection claim. Check on the literal flat full16 Fourier stencil whether
+the smooth rare h^-2 limit survives uniform heat preparation; do not take
+separate UV-divergent ordinary/rare traces. Bounded write paths are
+`sources/d0_complete_exit_source_2026-10-17/` and one new root-owned memo.
+One helper owns complete finite Julia/source jets; a second owns the
+inverse/flat-UV control; a third reviews the actual price/preparation law.
+Previous research receipts remain immutable and are not replayed.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

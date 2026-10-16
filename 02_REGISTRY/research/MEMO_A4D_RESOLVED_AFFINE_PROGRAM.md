@@ -180,10 +180,23 @@ probes span all torsion-free leading connection tuples. Exact onsite root
 locality makes their full Sylvester map background-independent, so a
 positive fixed detector killing every EH gauge probe kills its whole LC
 principal response. Increasing constant word/port weights cannot repair
-this class. The13 nonzero-N0 outputs require their actual second stencil,
-clock and source terms; their Hessian need not be positive. Derive those
-and the physical detector/complete Cost−Info source through the existing
-native action morphism, preserving its signed/nonlinear aggregation.
+this class. The [complete exit/action map](A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md)
+now gives the ordinary complement and all its second sources exactly:
+`F_ord+F_rare=I-B^(2n)`. Its positive operator root reconstructs the unchanged
+v8 action, with a unique ambient operator covector and no assumption that
+matter commutes with B. Ordered second jets, actual clock and preparation
+normalizers remain. The complete h² price coefficient is explicit; the
+rare contribution cancels from any redistribution at fixed total exit.
+This closes the mathematical aggregate/source interface. It does not
+select the physical detector/Cost−Info law or implement tomography.
+
+Its exact full16 flat control also separates preparation regimes: a rare
+probability is O(h²) on a fixed smooth occupied shell but bounded below by
+`nu²/512` on the uniform full carrier. The h⁻² uniform rare reading diverges.
+The operator inverse has a uniform bound on a fixed energy block and loses
+it exponentially in the UV. Use the combined finite heat operator and its
+owned trace/source estimates, then the displayed full-price coefficient;
+do not trace the smooth rare/ordinary limits separately.
 This is not a Ward prohibition on moving the whole experiment or a no-go
 for the complete native price.
 

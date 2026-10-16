@@ -88,6 +88,27 @@
     },
     "source_ref": "caa90af1f67a06dab46704c80031ad98a2de699b"
   },
+  "complete_exit_action_second_source_checkpoint": {
+    "base": "729db01f8d175a1a94cd8abdeb56cf45cfa9cbf2",
+    "conclusion": "Complete first-exit operator reconstructs unchanged v8 action and unique ambient operator covector; ordinary/rare full second sources balance exactly. Explicit full field-dependent h2 price coefficient retains actual clock and preparation. Full16 flat UV trace separates uniform and smooth preparations.",
+    "consumer": "Current route complete-history/given-action source arrow; combine finite operators before controlled heat traces, consume actual Delta2 and ordered Delta1 pair.",
+    "new_bounded_exact_checks": {
+      "complete_exit": 99,
+      "inverse_uv": 35
+    },
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Physical Cost-Info/ensemble/admission law, full admitted field-source Einstein equality and compatible joint refinement; original fixed-g/tau/raw h^-2/#216 terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/INVERSE_UV_RESULTS.json": "f4550634377c7fd5205db944039120dfbcadea94c763e3cc0eaae46940d0bd53",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/README.md": "d4ceeef26a80626592a0d913550a63746ff24d21d76a0802f05ffc93d7504fb7",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/RESULTS.json": "79db6f2a2db4ea65dbd0147376328ae5e42acf5613651f5fb9a4dcf89488c0e1",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/VALIDATION.json": "f7637833ac624d4d532f91cb54492026c1237532a042e257f2cb7b6852871299",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/check_complete_exit_source.py": "cbd3a04b61a5e355131947df4fc3d6a6beae7ea526942868fbbf63b655ac492d",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/check_exit_inverse_uv.py": "d700850b4920c14229b76d09b8d589ca67c9fda6e5ea80d0a5307b89bc54d332"
+    }
+  },
   "complete_retained_causal_nonlinear_checkpoint": {
     "conclusion": "No fixed PSD detector on labels16/8/24 with same firstexit/coefficient0/bothports/faithfulshell placement gives universal nonlinear EH up to nonzero fixed scale; principal coherent identity remains valid.",
     "consumer": "Complete the candidate test immediately rather than extrapolate a flat principal match. Exhaust the specified fixed positive three-label class.",

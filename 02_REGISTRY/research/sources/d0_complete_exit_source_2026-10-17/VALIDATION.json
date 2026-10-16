@@ -1,0 +1,61 @@
+{
+  "analytical_review": {
+    "Duhamel_clock_and_full_field_dependent_price_coefficient": "PASS under owned combined trace/source hypotheses",
+    "independent_read_only_assistant": true,
+    "normalizer_and_full_HJ_second_source": "PASS",
+    "positive_inverse_and_UV_preparation_separator": "PASS",
+    "scope": "Local mathematical review, not independent research acceptance or remote CI."
+  },
+  "base": "729db01f8d175a1a94cd8abdeb56cf45cfa9cbf2",
+  "date": "2026-10-17",
+  "embedded_hostile_controls": [
+    "commuted first-exit ordering",
+    "reset after each round",
+    "frozen moving normalizer",
+    "omitted second normalizer cross term",
+    "prepared probability substituted for thermal trace",
+    "omitted workspace/calibration derivative",
+    "finite-clock inverse misbounded by continuum expression"
+  ],
+  "old_root_spectrum_Lean_replay": false,
+  "old_scientific_receipts_modified": false,
+  "original_fixed_g_tau_raw_hminus2_terminal": "OPEN",
+  "physical_selection_or_GR_closure": false,
+  "python": "3.9.6",
+  "runs": {
+    "complete_exit": {
+      "exact_checks": 99,
+      "helper": "check_complete_exit_source.py",
+      "helper_sha256": "cbd3a04b61a5e355131947df4fc3d6a6beae7ea526942868fbbf63b655ac492d",
+      "normal_optimized_identical": true,
+      "output_sha256": "79db6f2a2db4ea65dbd0147376328ae5e42acf5613651f5fb9a4dcf89488c0e1",
+      "result": "RESULTS.json",
+      "source_pins": {
+        "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+        "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/check_gauge_span.py": "6ce1983a9b437dba3d49c30f290d934f9b0caa3a6cac54f758fb11fd33cfd8c5",
+        "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/check_retained_history.py": "6be5d31fc2b5a2d2f75b54071720b03c6bbebc30356260b5c823c3ef8ef88d92"
+      }
+    },
+    "inverse_uv": {
+      "exact_checks": 35,
+      "helper": "check_exit_inverse_uv.py",
+      "helper_sha256": "d700850b4920c14229b76d09b8d589ca67c9fda6e5ea80d0a5307b89bc54d332",
+      "normal_optimized_identical": true,
+      "output_sha256": "f4550634377c7fd5205db944039120dfbcadea94c763e3cc0eaae46940d0bd53",
+      "result": "INVERSE_UV_RESULTS.json",
+      "source_pins": {
+        "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+        "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c"
+      }
+    }
+  },
+  "status": "PASS_NEW_BOUNDED_CALCULATIONS",
+  "sympy": "1.14.0",
+  "user_input": {
+    "attachment_is_byte_identical_alias": true,
+    "bytes": 29982,
+    "canonical_preserved_text": "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt",
+    "claims_in_supplied_text_are_research_inputs_not_proof_premises": true,
+    "sha256": "ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61"
+  }
+}

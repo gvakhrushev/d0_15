@@ -39,6 +39,7 @@ record results below is substituted for that terminal. The historical
 | A genuine permanent first-exit event in the same32-label/golden program retains a causal h² source. For the faithful full shell, its h^-2 readout is `(1-exp(-beta/s²))[1+2<theta_prime²>]/(256s²)`, with a controlled smooth source limit. Its cone-dependent part is an exact fixed-s multiple of intrinsic EH on this family. | [Retained-history causal source](A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md). The existing cut uses both ports and no reset or new reference operation. This is not a new price, physical admission, stationary preparation, all10 Einstein equations or the original E_Q comparator. Derive its complete native price binding with actual prepared/field jets. |
 | The complete retained-history calculation covers all three causal fields. The unique positive three-label coherent direction has quadratic reading `-(1-exp(-beta/s^2)) I_EH^[2]/(192s^4)`; diagonal probabilities fail. Its exact nonlinear angular factor and source then exclude every fixed positive detector on those three labels as universal nonlinear EH. | [Complete causal principal and nonlinear source](A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md). The entire specified detector class is exhausted, not the complete history price. Derive the physical detector/Cost−Info law beyond that class with its actual source; no new gate, weighting or price is installed. Full first-jet tomography is unnecessary for the principal response quotient. |
 | The full rare first-exit analysis includes all18 nonblank zero-N0 rows,36 corresponding ports and the separate blank-label/port1 exit. Genuine metric gauge probes span all24 torsion-free leading connection coefficients; their complete onsite Julia/Sylvester map is pointwise and background-independent. Positivity therefore rules out every fixed detector on that rare-output sector as a universal nonzero EH reading across causal backgrounds. | [Full rare-history gauge-span boundary](A4D_FULL_RARE_HISTORY_GAUGE_SPAN_BOUNDARY.md). This exhausts constant positive rare-event weighting, with no extra reference operation or discarded grades. The13 nonzero-N0 outputs need actual second stencil/clock jets and non-PSD source terms; moving/nonlocal detectors, other preparations and full signed/nonlinear Cost−Info remain outside this theorem. The original fixed-g/tau/raw terminal is unchanged. |
+| The complete retained first-exit operator E=I-B^(2n), actual clock and normalized matter determine the unchanged v8 price. The positive-root inverse and its unique Hermitian operator covector preserve noncommuting matter; ordinary/rare first and second sources balance exactly. The full field-dependent h² price coefficient is explicit, including clock, ordered Delta_1 pairs and actual Delta_2. | [Complete exit/action and second source](A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md). The inverse is uniformly controlled on a fixed energy block but not across UV modes. A literal full16 flat example has rare probability at least nu²/512 on uniform preparation, versus O(h²) on a fixed smooth shell. Combine finite effects before trace/source limits. This is the mathematical given-action quotient, not physical tomography, native Cost−Info selection or full field-map injectivity. |
 | The actual full finite H+J second source has a strictly positive h^-2 limit on one longitudinal cone germ whose all10 linearized Einstein rows vanish. The same actual R cancels in the proposed identity. | [Finite causal-response/Einstein test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md), source d3f9c3e7. This rules out an unqualified identification of that scalar-price coefficient with pure EH+Lambda+sameR; it is not a joint-critical or original fixed-g/tau counterexample. The coherent principal observable above is not a change to that price. |
 | The same v8 price has an exact survival/blank event form. A conditional full-occupation Slater construction produces the logdet, multiplicity M and cycle coefficient1/j together. | [Action selection](sources/d0_native_action_selection_2026-10-16/RESULT_RU.md), [blank dilation](sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md), through9ece9146. The filled many-body carrier and z coin are additional admission hypotheses, not the original exterior16 carrier. Native price/ensemble selection remains the next named morphism; full normalized outcome probabilities alone sum to1. |
 | The full finite experiment is exactly natural under simultaneous field/path/detector pullback. Its first/second Ward identities preserve the old fixed-detector response; Schur descent requires actual retained equations, not coordinate relabeling. | [Full-experiment Ward/descent](A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md), source7bc607df. The linear/nonlinear Einstein selector is conditional on metric-only locality and derivative order; it does not select the native price. |
@@ -6111,3 +6112,25 @@ selection дал побайтно тот же `RESULT.json`: 41 check, 65,536 fu
 
 Ни один из этих сертификатов не является native admission, общим `C1`
 remainder, Lean-проверкой или ОТО-closure.
+
+
+## Complete retained operator/action source — 17 October 2026
+
+The [complete exit owner](A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md)
+consumes the remaining ordinary-output interface after the full rare-output
+boundary. It proves the exact partition, full ordered second-source balance,
+positive operator reconstruction and noncommuting full-price covector.
+Thus searching the13 ordinary rows independently cannot add a term to the
+same price: their aggregate source is the exact complement. Its displayed
+field-dependent h² coefficient consumes the actual second stencil and
+normalized matter coefficients; workspace and calibration terms remain.
+
+The uniform full-carrier UV countercontrol prevents a false next step:
+the smooth rare effect must not be traced as if it were the auxiliary heat
+preparation. The preparation regimes are quantitatively different even on
+the flat actual stencil. Use the combined finite K and the existing controlled
+heat/source estimate. The exact same-price map does not derive physical
+code costs or an ensemble law for the entire retained tape. Native admission,
+the full source equality with intrinsic Einstein geometry and a nonempty
+compatible joint refinement remain substantive obligations. The original
+fixed-g/tau, all10 packed, unweighted raw h⁻²/#216 terminal remains open.
