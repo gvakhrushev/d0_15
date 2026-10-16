@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Exact one-step cross-owner test for the matter-clock common-process chart.
 
-The literal full16 AF/CAR gate is applied directly to the lambda=1
-rest-coordinate vector m0 from the matter-clock chart. This is a candidate
-coordinate update, not an established adapter for the raw native pair
-(F,m) with m=rho(F)m0. The direct m0 update leaves the same comparator's
-probability domain on a curved germ. The raw moving-frame transition remains
-unclassified; this is not a global physical no-go theorem.
+This cross-owner certificate checks two proposed bridges at one genuinely
+curved matter-clock chart point: applying the AF/CAR gate directly to the
+rest vector m0, and identifying the engine's raw CAR vector with
+m=rho(F)m0. The first direct update leaves the comparator probability
+domain; the second is outside the current Z[a] engine store for every
+coframe O in the owned equality lift. Neither decides other native maps or
+global physical admission.
 """
 import argparse
 import hashlib
@@ -27,6 +28,12 @@ PINS = {
         "1eaf0ed625c78d2779da83cf85e65bf1c1e797a3719da3b786c46cd16733b402",
     "02_REGISTRY/research/sources/d0_native_preparation_stationary_2026-10-16/matter_clock_binding.py":
         "1b2c668bca6c99ca84a4be513274fddc2c9a82a832368abc4a75ee24f58fbb71",
+    "02_REGISTRY/research/A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md":
+        "ec505825642a50505959b2155eee3b0840149c7c17ca0503105ee377befdb152",
+    "02_REGISTRY/research/A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md":
+        "e596c3d2ae0e15a17566f9cfe21b08db2f347faf2c1d2a8b066cf16a82acbedb",
+    "02_REGISTRY/research/A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md":
+        "3e3bf3bb02aeb398dcefd54ca1892ee8d02128cc869f77db6e4818cc75c4aaf6",
 }
 GUARDS = (2, 3, 4, 5, 8, 9)
 I4 = sp.eye(4)
@@ -114,6 +121,61 @@ def run():
     eq("CURVED_SCALAR_IS_OWNED_GERM", scalar, -2*kappa/(3*variance), C.red)
     check("INPUT_METRIC_GENUINELY_CURVED", C.red(scalar) != 0)
 
+    # Test the chart's actual raw native matter m=rho(F)m0 against the
+    # literal engine coefficient domain. At the unshifted s=1 chart center,
+    # every admissible coframe has F=sqrt(2/p^3) O H^(1/2), O in O(4).
+    base_matter = C.mat(m_ref)
+    base_engine_state = adaptive._engine_state(role, base_matter)
+    check("REST_REFERENCE_ITSELF_IS_IN_ENGINE_RING", base_engine_state is not None)
+    _, base_r, base_N, _ = native.rest_current_jacobian(C, base_matter)
+    eq("RAW_FRAME_BASE_NORMALIZER", base_N, 3, C.red)
+    eq("RAW_FRAME_BASE_CURRENT", base_r, sp.Matrix([-sp.Rational(2, 3), 0, 0]), C.red)
+    j = sp.Matrix([1, *base_r])
+    eta = native.ETA
+    H = C.observer_pairing(eta, j)
+    boost = sp.eye(4)
+    boost[:2, :2] = sp.Matrix([[3, 2], [2, 3]])/sp.sqrt(5)
+    eq("RAW_FRAME_POSITIVE_ROOT", boost*boost, H, C.red)
+    frame_scale_squared = 2/variance
+    e0 = I4[:, 0]
+    frames = (
+        ("IDENTITY", sp.eye(4)),
+        ("PROPER_SPATIAL_PI_ROTATION", sp.diag(1, -1, 1, -1)),
+    )
+    raw_grade_one_norms = []
+    for frame_name, O in frames:
+        eq("RAW_FRAME_ORTHOGONAL_"+frame_name, O.T*O, I4, C.red)
+        eq("RAW_FRAME_DETERMINANT_"+frame_name, O.det(), 1, C.red)
+        eq("RAW_FRAME_FIXES_FUTURE_AXIS_"+frame_name, O*e0, e0, C.red)
+        # F=(sqrt(2/s)) O B, so F^{-T} H F^{-1}=s/2 I for each O.
+        q_base = (variance/2)*O*(boost.inv().T*H*boost.inv())*O.T
+        eq("RAW_FRAME_MATCHES_CURVED_METRIC_"+frame_name,
+           q_base, variance*I4/2, C.red)
+        F = sp.sqrt(frame_scale_squared)*O*boost
+        raw_base = C.C.ext(F)*base_matter
+        grade_one = sp.Matrix([raw_base[index] for index in (1, 2, 4, 8)])
+        eq("RAW_FRAME_GRADE_ONE_IS_EXTERIOR_LIFT_"+frame_name,
+           grade_one, F*e0*(2*p-1), sp.simplify)
+        raw_grade_one_norms.append(sp.simplify((grade_one.T*grade_one)[0]))
+        eq("RAW_FRAME_GRADE_ONE_NORM_"+frame_name,
+           raw_grade_one_norms[-1], sp.Rational(26, 5)*p**3, C.red)
+    eq("RAW_GRADE_ONE_NORM_FRAME_INDEPENDENT",
+       raw_grade_one_norms[0], raw_grade_one_norms[1], C.red)
+
+    # Z[a] is contained in the algebraic integers: a is a root of the monic
+    # polynomial a^4+a^2-1. But the frame-invariant squared grade-one norm
+    # has a nonintegral field trace, so no O(4) can put raw m in Z[a]^16.
+    eq("GOLDEN_RING_GENERATOR_MONIC", a**4+a**2-1, 0, C.red)
+    p_conjugate = -1-p
+    eq("GOLDEN_CONJUGATE_SUM", p+p_conjugate, -1, C.red)
+    eq("GOLDEN_CONJUGATE_PRODUCT", p*p_conjugate, -1, C.red)
+    eq("GOLDEN_CUBE_TRACE_QUADRATIC_FIELD", p**3+p_conjugate**3, -4, C.red)
+    trace_norm = sp.Rational(26, 5)*2*(p**3+p_conjugate**3)
+    trace_norm_rational = -sp.Rational(208, 5)
+    eq("RAW_GRADE_ONE_NORM_TRACE", trace_norm, trace_norm_rational, C.red)
+    check("RAW_GRADE_ONE_NORM_TRACE_NOT_INTEGER", trace_norm_rational.q != 1)
+    check("NEGATIVE_NORM_OF_P_EXCLUDES_SQUARE_IN_QP", C.red(p*p_conjugate) < 0)
+
     Uplus = role.engine_gate_matrix(1)
     Uminus = role.engine_gate_matrix(-1)
     eq("FULL16_POSITIVE_BRANCH_IS_UNITARY", Uplus.T*Uplus, I16, C.red)
@@ -192,6 +254,14 @@ def run():
             "curved_comparator_scalar": "-1/(1500*p^3)",
             "top_grade": "p^20 != 0",
         },
+        "raw_frame_admission": {
+            "same_chart_metric": "q=p^3 I/2 at the curved chart center",
+            "frame_family": "F=sqrt(2/p^3)*O*H^(1/2), all O in O(4)",
+            "grade_one_squared_norm": "26*p^3/5, independent of O",
+            "field_trace": "-208/5, not an integer; raw m cannot lie in Z[a]^16",
+            "verdict": "NO_RAW_ENGINE_INPUT_FOR_THIS_CHART_BASE_FOR_ANY_O",
+            "engine_selector": "raw m[1] is unavailable because no O yields a Z[a]^16 state",
+        },
         "one_step": {
             "branch": "+ on m0 coordinates; raw CAR selector is not identified",
             "output_first_grade": "a*(4*p-3) < 0",
@@ -223,7 +293,8 @@ def main():
     for name in checks:
         print("PASS_" + name)
     print("RESULT " + result["verdict"])
-    print("RESULT RAW_MOVING_FRAME_TRANSITION_AND_GR_REMAIN_OPEN")
+    print("RESULT NO_RAW_ENGINE_INPUT_FOR_THIS_CHART_BASE_FOR_ANY_O")
+    print("RESULT REST_COORDINATE_UPDATE_AND_GLOBAL_GR_REMAIN_OPEN")
 
 
 if __name__ == "__main__":

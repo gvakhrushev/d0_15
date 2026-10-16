@@ -5254,20 +5254,26 @@ internal refinement laws or close the ten transverse equations, native
 source, exact-root, or GR tasks.
 Proof and source pins: [fixed-branch rigidity note](A4D_NATIVE_ISOMETRIC_COMMON_PROCESS_METRIC_RIGIDITY.md).
 
-## Direct rest-coordinate step fails on the curved metric-binding chart (2026-10-16)
+## Raw AF coefficient lattice obstructs the named metric chart (2026-10-16)
 
-A 37-check cross-owner certificate applies the literal full16 positive AF
-gate directly to the `lambda=1` rest-coordinate vector `m0` in the matter-
-clock chart, with a nonzero top-grade amplitude `p^20`. The input has all
-twelve effects `p^2`, a timelike chart current, and the owned curved germ
-`R_q(0)=-1/(1500 p^3)`. The literal next state remains timelike, retains
-nonzero top grade, and has a defined negative-selector engine step. But
-reusing the same record wiring makes its second effect satisfy the exact bound
+A 64-check cross-owner certificate now records two different interface
+results. First, at the unshifted center of the genuinely curved
+`lambda=1` chart, the native lift is `F=sqrt(2/p^3) O H^(1/2)` for every
+`O in O(4)`. The raw CAR state's grade-one squared norm is exactly
+`26 p^3/5`, independent of O. Its trace from `Q(a)` to `Q` is `-208/5`,
+so it is not an algebraic integer and the full raw vector cannot lie in the
+engine's exact `Z[a]^16` storage. The current literal raw engine therefore
+has no input at this named chart base under the direct identification of its
+CAR state with native `m=rho(F)m0`.
 
-```text
-2-3*p+a*(4*p-3) < -7/40.
-```
+Second, if the gate is instead applied directly to the rest-coordinate vector
+`m0`, the 37 exact controls from the same certificate show that the candidate
+update `m0 -> U_+m0` makes a reused channel weight less than `-7/40` after one
+step on a curved germ. This conditional test preserves a timelike chart
+current and nonzero top grade, but does not prove that the physical transition
+acts on `m0`.
 
+<<<<<<< HEAD
 It therefore leaves the real probability domain after one direct rest-
 coordinate step. The AF/CAR engine owner acts on raw `m`, whereas this chart
 uses `m0=rho(F)^-1m`; the map between a raw engine step and the next chart
@@ -5327,3 +5333,9 @@ normalizer and boundary terms. This is a specified comparison to prove,
 not an action or measure chosen to force the answer. Temporal field evolution,
 all other native equations, exact roots/refinement and the original
 fixed-source/raw-owner terminal remain OPEN.
+=======
+These are scoped interface obstructions, not a global native no-go. The
+coordinate bridge, any engine-on-rest adapter, other chart points, primitive
+AF admission, all ten transverse equations, full action derivative, exact
+roots and GR remain open. Evidence: [domain note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and [exact checker](certificates/a4d_native_common_process_domain_check.py).
+>>>>>>> d527e092 (research(a4d): prove raw frame lattice mismatch)

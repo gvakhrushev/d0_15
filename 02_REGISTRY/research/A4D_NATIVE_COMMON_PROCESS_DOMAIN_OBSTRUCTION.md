@@ -1,17 +1,17 @@
-# Directly evolving rest coordinates leaves the metric-binding chart
+# Two candidate AF-to-metric bridges fail on the named curved chart
 
-2026-10-16. Exact cross-owner one-step result for the named `lambda=1`
-matter-clock readout. The checker applies the actual full16 gate directly to
-the chart's rest-coordinate vector `m0` and proves that this direct update
-leaves the probability domain on a curved germ.
+2026-10-16. Exact cross-owner results for the named `lambda=1` matter-clock
+readout and the existing full16 adaptive AF/CAR engine.
 
-The AF/CAR engine owner defines its gate on the raw CAR vector `m`, while the
-matter-clock chart reads `m0=rho(F)^-1 m`. No owner currently identifies the
-gate on `m0` with the raw native transition or derives the simultaneous
-`(F,m)->(F',m')` map. Thus this result rejects the direct rest-coordinate
-update `m0 -> U_+ m0`; it does not yet show that the actual coupled native
-process fails. It is not a no-go for simultaneous coframe motion or all
-native physics.
+The chart stores rest coordinates `m0` and defines raw native matter by
+`m=rho(F)m0`. The current engine instead stores its CAR vector directly in
+`Z[a]^16` and applies its gate to that raw vector. This note records two
+separate tests: (i) applying the gate directly to `m0` leaves the comparator
+probability domain after one step; (ii) at the chart's curved base point,
+no coframe `O` in the owned equality lift makes raw `m` belong to `Z[a]^16`.
+The second is an exact arithmetic obstruction to this direct engine/native
+identification at this base point. Neither result excludes another native
+transition, another admitted chart point, or global physical dynamics.
 
 Inputs are pinned at `dfaf7c8df509d5abd83fa60a185ad530feadc9b5`:
 
@@ -26,7 +26,8 @@ Inputs are pinned at `dfaf7c8df509d5abd83fa60a185ad530feadc9b5`:
 Use the chart's actual full16 rest-coordinate vector at the owner's `s=1` reference,
 
 \[
-m_*=-2ap\,e_0+(2p-1)e_1+e_{13}+e_{14},\qquad
+m_*=-2ap\,e_{\mathrm{mask}\,0}+(2p-1)e_{\mathrm{mask}\,1}
+    +e_{\mathrm{mask}\,13}+e_{\mathrm{mask}\,14},\qquad
 a^2=p,\quad p^2+p=1,\quad a,p>0.
 \]
 
@@ -60,6 +61,57 @@ neighborhood, the effects remain in `(0,1/2)`, `X` remains a local coordinate,
 the current remains timelike, and `X_3` stays nonzero. The input therefore
 lies on a genuinely curved, oriented part of the named equality chart, not
 only at its flat center.
+
+## Raw native state is outside the engine coefficient lattice for every coframe
+
+Use the unshifted center `m0=m*` of the curved germ, so its complete
+12-channel record still has
+
+\[
+q(0)=\frac{s}{2}I_4,\quad s=p^3,\qquad
+j=(1,-2/3,0,0).
+\]
+
+The actual positive root of the observer pairing is
+
+\[
+B=H(j)^{1/2}=\begin{pmatrix}3&2\\2&3\end{pmatrix}/\sqrt5\oplus I_2.
+\]
+
+The owned native lift (with every allowed `O` retained) is
+
+\[
+F=\sqrt{2/s}\,O B,\qquad m=\rho(F)m_0,\qquad O^TO=I.
+\]
+
+Since `rho` is the full exterior representation, its grade-one block is
+exactly `F`. Let `u0` denote the degree-one basis vector at mask 1. The grade-one part
+of `m*` is `(2p-1)u0=p^3 u0`, hence for
+**every** `O` the raw grade-one matter has the same Euclidean squared norm
+
+\[
+\|m_{[1]}\|^2
+=\frac{2}{p^3}(p^3)^2\|B u_0\|^2
+=\frac{26}{5}p^3.
+\tag{5}
+\]
+
+This number is not an algebraic integer. The element `a` satisfies the
+monic polynomial `a^4+a^2-1=0`; `p=a^2` has conjugates `p` and `-1-p`, whose
+product is `-1` and whose cubes sum to `-4`. The negative norm shows `p` is
+not a square in `Q(p)`, so `[Q(a):Q(p)]=2`; therefore the field trace of (5)
+from `Q(a)` to `Q` is `-208/5`, not an integer. Every coordinate in the
+engine's exact ring `Z[a]` is an algebraic integer, and a sum of their
+squares would also be an algebraic integer. Thus (5) contradicts
+`m_[1] in Z[a]^4`.
+
+The result is independent of the orthogonal-frame choice and even holds if
+`O` is restricted to proper, future-axis-preserving rotations. It means the
+literal current ring engine has no raw input at this named chart base under
+the direct identification `m_engine=m_native`. A separate engine-on-rest
+adapter would need its own owner and variation law; it is not supplied by
+this calculation. The check also verifies two such proper coframes give the
+same matched curved metric and rest readout.
 
 ## One literal rest-coordinate step fails the same readout
 
@@ -111,7 +163,7 @@ process. The repository has not derived or admitted this map, nor checked
 its all-ten metric matching, all-sixteen matter components, AF image, or
 complete differentiated action. No global selector or parent NO-GO follows.
 
-Replay the 37 exact controls in ordinary or optimized mode:
+Replay the 64 exact controls in ordinary or optimized mode:
 
 ```sh
 python3 02_REGISTRY/research/certificates/a4d_native_common_process_domain_check.py
@@ -120,11 +172,13 @@ python3 -O 02_REGISTRY/research/certificates/a4d_native_common_process_domain_ch
 
 Both modes agree with the pinned
 [`results JSON`](certificates/a4d_native_common_process_domain_results.json).
-The finite AF image and primitive-admission boundary remains explicit. The
-certificate's selector is computed from `m0[1]`; the raw engine selector is
-computed from the raw CAR vector `m[1]`, and their identification is unproved.
-The next scientific target is now the missing coordinate bridge: derive the
-raw branch selector and the coupled `F,m -> F',m'` transition, then test
-`m'=U_s m`, `m0'=rho(F')^-1m'`, the twelve probability-domain conditions,
-all ten metric matching rows, all sixteen matter components, and the full
-action derivative together.
+The raw-engine result is limited to this equality-chart base and direct raw
+identification; the rest-coordinate gate test is a distinct candidate map.
+The twelve probability tests, all ten transverse equations, full action, AF
+primitive admission and other possible charts remain open.
+The next scientific target is to find whether any point in the owned equality
+graph simultaneously satisfies the literal raw coefficient domain and has
+an admitted update. If so, derive `m'=U_s m`, `m0'=rho(F')^-1m'` from that
+owner and test the twelve probability-domain conditions, all ten metric
+matching rows, all sixteen matter components and the full action derivative.
+If not, extend the exact ring obstruction beyond this single base point.
