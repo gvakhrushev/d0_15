@@ -38,7 +38,7 @@
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/rank8_source_submersion.py": "04d5fba2d34538e2c7e4b41748fafb4e88e041174f4380bd0e7990111ffc6afd",
     "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9",
-    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "0ca27a97b7e8fa5653242415c4bcbe0e946fccd95bb277024fcbe79222c927a8",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
     "02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md": "7b82d30d0d8ec451f768bf0b92aa0e4daaad1f2600497ae7d855bf370c96a338",
     "02_REGISTRY/research/A4D_NATIVE_JOINT_ADJOINT_SOURCE.md": "19b5062c1af8281c219de5c0ef6b70d7790922201c8f3c71b4472a18345c404d",
     "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
@@ -54,5 +54,11 @@
     "agent_protocol": "PASS",
     "work_views": "PASS stale=0",
     "diff_and_new_links": "PASS"
+  },
+  "prose_owner_extension": {
+    "previous_owner_sha256": "0ca27a97b7e8fa5653242415c4bcbe0e946fccd95bb277024fcbe79222c927a8",
+    "reason": "Section7 adds independent analytic scale/minmax result; Sections1-6 mathematical definitions and old checker/output unchanged",
+    "old_mathematical_replay": false,
+    "new_increment_validation": "SCALE_BALANCE_VALIDATION.json"
   }
 }

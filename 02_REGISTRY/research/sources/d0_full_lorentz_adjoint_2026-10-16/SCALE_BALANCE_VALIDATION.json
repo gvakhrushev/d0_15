@@ -1,0 +1,49 @@
+{
+  "schema": "d0-full-price-scale-validation/1",
+  "publication_parent_ref": "b936dc4d7c6ce8d1c3c8ea1ed3e6f42148b23d3d",
+  "observed_main_ref": "eebda6fcf35bf022b897c2f41554ada0c0282da6",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T17:26:58.723597+00:00",
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/scale_balance_check.py",
+    "python3 -O 02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/scale_balance_check.py"
+  ],
+  "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+  "scientific_output_sha256": "6b1310ba91c5530570d842d2870ad29f2ab9191bf6fe8228efbcb63ce0431ead",
+  "scientific_output_bytes": 2134,
+  "exact_controls": 28,
+  "floor_saturation_edge_cases": 337,
+  "analytic_proof": "owner Section7: exact full-price derivative; finite Fourier-subspace minmax and Bernoulli; independently reviewed",
+  "scope": {
+    "conditional_same_v8_full_price": true,
+    "all16_reference_and_normalizer_retained": true,
+    "independent_observer_and_full_matter_variables": true,
+    "calibrations_fixed_within_variation": true,
+    "uniform_controlled_frame_required_for_beta_to_zero_obstruction": true,
+    "all_integer_depth_schedules": true,
+    "fixed_beta_stationary_family_preserved": true,
+    "uncontrolled_uv_links_or_physical_price_no_go": false,
+    "original_fixed_g_fixed_tau_raw_terminal_closed": false
+  },
+  "old_root_kernel_CAR_or_Lean_replays": false,
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md": "861eb7b753d333b8b51de55145a9a0078773854a74f0f619baa13056604d0eb9",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+    "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/scale_balance_check.py": "137682412993544fec0ebd4508dee4227b9a83d20e6304c2c6c35b0eeae4d60c",
+    "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/SCALE_BALANCE_RESULTS.json": "6b1310ba91c5530570d842d2870ad29f2ab9191bf6fe8228efbcb63ce0431ead"
+  },
+  "independent_reviews": [
+    "native_bridge: full source/strictness/true adjoint/minmax constants and actual helper static review PASS",
+    "geometry_consumer: coframe inverse-metric/EH scaling/controlled frame/physical terminal boundaries PASS"
+  ],
+  "structural_guards": {
+    "repository": "PASS warnings=0",
+    "work_plane": "PASS",
+    "agent_protocol": "PASS",
+    "work_views": "PASS stale=0"
+  }
+}

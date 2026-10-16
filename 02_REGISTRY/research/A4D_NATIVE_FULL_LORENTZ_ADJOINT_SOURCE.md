@@ -13,6 +13,9 @@ stationary preparations задаются двумя точными occupation ba
 предъявлена чистая rank8 preparation на той же
 геометрии. Actual прежний pure seed этим дополнительным Euler rows не
 удовлетворяет. Это меняет вход следующей full-Lorentz задачи.
+Полный scale source в §7 дополнительно требует `M z beta Z<1`.
+Finite minmax исключает stationary `beta->0` при fixed positive Mz и
+равномерно controlled coefficients, при любом record-depth schedule.
 
 Физическое исполнение новых onsite matrix gates исходными D0 primitives,
 вся native controller/archive price и её выбор остаются OPEN. Старый
@@ -309,3 +312,180 @@ onsite Julia gates/adjoints/outcomes с полной retained историей �
 Интерфейс и (14) задают источник, который такой native процесс должен
 воспроизвести. Полный Einstein source, controlled refinement и исходный
 fixed-smooth-g/fixed-tau/raw,l1 terminal задачи остаются OPEN.
+
+## 7. Полный масштабный баланс и препятствие small-heat refinement
+
+Следующий тест сравнивает **реальные** источники (8) и геометрической
+реконструкции, не определяя stress как их разность. Все калибровки
+`alpha,m,beta=m alpha,z,M,C` фиксированы внутри одной вариации;
+`0<z<1`, `M>0`, `B>0`, `Delta!=0`. Здесь `M=M_feedback`, а не link matrix.
+Новые утверждения условны на той же matrix domain, что §§1–3.
+
+### 7.1. Допустимая совместная вариация и точный необходимый баланс
+
+В объявленном интерфейсе coframe, unit observer n и полная amplitude Psi
+являются независимыми совместными переменными. На периодической сетке
+возьмём двустороннюю кривую
+
+```text
+F_t=exp(t)F, v_r,t=exp(t)v_r, A_t=A, n_t=n, Psi_t=Psi.
+hat D_t=exp(t)hat D, Delta_t=exp(2t)Delta, rho_t=rho.        (17)
+```
+
+Whitening I(n) не меняется. Invertibility coframe и строгая Julia-норма
+сохраняются при достаточно малом |t|. Если действуют оба старых stored
+условия, (17) сохраняет и их: own-leg равенство однородно по v, metric
+adjoint не зависит от его масштаба. Удержание Psi на **одной** test curve
+не удаляет ни одной matter Euler row из совместной задачи.
+
+Если другой интерфейс связывает n с raw matter, fixed raw matter уже
+не гарантирует (17). Нужна фактическая допустимая lift. В общем случае
+при неизменном n добавляется `Tr(Delta rho_dot)`; на полной stationary
+matter sphere этот член равен нулю, поскольку `Delta w=R w` и `Tr rho=1`.
+Полевая калибровка, moving measure или запрет global dilation требуют
+своих производных; их нельзя молча отбросить.
+
+Обозначим `T1=Tr_H Delta B^(m-1)>0`,
+`T2=Tr_H Delta B^(m-1) F_feedback^-1`, где
+`F_feedback=(1-z)I+zB^m`. Из полного источника (11), либо точного
+[unfolding (6)](A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md), следует
+
+```text
+H_dot=-2 T1/Z,
+J_dot=2 M z beta T2,
+R_dot=2R,
+S_dot/2=-T1/Z+M z beta T2+R.                              (18)
+```
+
+На каждой positive Delta mode имеем `0<B<1`, `F_feedback<1`, поэтому
+`T2>T1`; нулевые моды остаются в полном Z. Пусть `mu=M z beta Z`.
+При `mu>=1` правая часть (18) строго положительна даже при `R=0`.
+Следовательно, любая joint critical point с допустимой (17) обязана
+удовлетворять
+
+```text
+M z beta Z < 1,
+mu (T2/T1)=1-Z R/T1 <= 1.                                (19)
+```
+
+Это один необходимый trace/scale source, не достаточная система уравнений.
+В Z входят все sites и16 grades; retained workspace factor C сокращается
+в logarithmic derivative, а reference multiplicity M остаётся в J.
+Вырождение `Delta=0` исключено предпосылкой. В нашем invertible-coframe
+операторе при L>=4 его нет: ненулевой raising edge block нельзя сократить
+с onsite или другим edge, а lowering part имеет иную degree.
+
+При общем gate window `B>=b0 I>0` уже получаем
+`Z>=16 L^4 b0^m`. Поэтому на mesh `ell=1/L`, `alpha=c0/L^2`,
+`c0=p^2/128`, fixed positive `m,M,z,b0` необходима
+`(M z m p^2/8)b0^m L^2<1`: fixed record depth не даёт неограниченного
+stationary refinement. Для рабочего m16384 эта грубая граница не является
+практической оценкой cutoff.
+
+### 7.2. Все глубины записи: нижняя граница без предположения о heat limit
+
+Можно убрать fixed-m ограничение. На последовательности периодических
+четырёхмерных сеток L>=4 предположим **равномерные** bounds уже данных
+whitened coefficients из (4):
+
+```text
+C_r(x)=C(u_r(x)), U_r(x)=Lambda(M_(x,x+r)),
+||C_r(x)||<=K,                  K>0,
+L||C_r(x+r)-C_r(x)||<=K1,
+L||U_r(x)-I||<=K2.                                       (20)
+```
+
+Это конкретные controlled-coefficient гипотезы, а не следствие native
+stationarity. Они включают smooth bounded coframe/observer/comparison
+families в данной карте. Нельзя приписывать их ultraviolet links лишь
+из-за bounded energy. Никакая Weyl asymptotics или сходимость heat kernel
+ниже не предполагается.
+Достаточно существования одной uniformly controlled whitened frame;
+неудачная быстро меняющаяся gauge сама по себе не является физическим
+нарушением (20). Спектральный вывод не зависит от unitary frame change.
+
+Пишем `d=T+V`, где
+`T=L sum C_r(S_r-I)`, `V=L sum C_r(U_r-I)S_r`.
+В adjoint обязательно остаётся коэффициентная разность:
+
+```text
+T*=L sum [C_r*(S_r*-I)
+             +(C_r*(x-r)-C_r*(x))S_r*].                 (21)
+```
+
+На полном16-компонентном Fourier subspace E_q с `|k_i|<=q<=L/4`
+получаем `L||(S_r-I)psi||<=2pi q||psi||`,
+`||V||<=4K K2`, и потому
+
+```text
+||D psi|| <= (A0 q+V0)||psi||,
+A0=16pi K, V0=4K1+8K K2.                                (22)
+```
+
+E_q не обязан быть invariant subspace D или Delta. Finite minmax для
+положительного `Delta=D^2` применим к (22) как quadratic-form bound.
+Положим
+
+```text
+a=1/(2sqrt(2)A0),
+beta0=min(a^2,1/(8V0^2)),  1/0 := infinity,
+q=min(floor(L/4),floor(a/sqrt(beta))),
+0<beta<=beta0, alpha=c0/L^2, beta=m alpha, m>=1 integer.
+```
+
+Тогда `beta(A0 q+V0)^2<=1/2`. По minmax как минимум
+`16(2q+1)^4` actual eigenvalues удовлетворяют `beta lambda<=1/2`.
+Bernoulli даёт `B^m=(1-alpha lambda)^m>=1-beta lambda>=1/2` на них.
+На complement `B>0`, так что полный trace не уменьшается. Поскольку
+`q>=min(L/8,a/(2sqrt(beta)))`,
+
+```text
+Z>=8(2q+1)^4>=128q^4
+ >=min(L^4/32,8a^4/beta^2)
+ >=c/beta^2, c=min(c0^2/32,8a^4)>0.                       (23)
+```
+
+Последний шаг использует `beta^2 L^4=m^2 c0^2>=c0^2`.
+Все оценки действуют при любом integer schedule m(L). Совместно с (19):
+
+```text
+0<beta<=beta0 and joint stationarity => M z c < beta.     (24)
+```
+
+Таким образом, fixed positive Mz **исключает beta->0 stationary sequence
+с равномерными (20)** для этой полной conditional H+J+R price. Более
+общо необходим `M_L z_L < beta_L/c` на малых beta; это ограничение на
+фактический закон, не подбор нового z_L. Не делаем вывода для
+uncontrolled grid-scale links, иного counting/volume measure, новых
+controller terms, field-dependent calibrations или недопустимой (17).
+
+Существующий [v8 §7](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md)
+не опровергается: там `m_L=256L^2`, `beta=2p^2` **постоянна**, а не
+стремится к нулю. Его flat stationary refinement потребляется без replay.
+Новое (24) не требует очередного полного спектрального census.
+
+### 7.3. Потребитель в D0 → ОТО
+
+В [intrinsic reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md)
+`g=(F eta F^T)^-1`. Под (17) `g_t=exp(-2t)g`, поэтому в4D
+`dV_t=exp(-4t)dV`, `R_t=exp(2t)R` и
+`(int R dV)_dot=-2 int R dV` на closed/periodic space или с корректно
+варьируемым boundary term. Fixed boundary coframe может запрещать (17).
+Так сравнивается одна необходимая metric row обеих конструкций; равенства
+полных covectors из совпадения геометрических названий не следует.
+
+Source/refinement bridge должен теперь предъявить native record/clock/
+feedback/measure law и его полный derivative, совместимые с (18)–(24).
+Если выбран beta->0 controlled route, неизменённая fixed-Mz price не
+проходит этот тест. Нельзя назвать (24) общим no-go для ОТО, удалить scale
+variation, определить matter как остаток или просто выбрать требуемый z.
+Original fixed-smooth-g/fixed-tau/raw terminal остаётся OPEN: там сама
+метрика фиксирована, и наша глобальная metric test curve не является
+разрешением его независимо заданной задачи.
+
+[Новый ограниченный checker](sources/d0_full_lorentz_adjoint_2026-10-16/scale_balance_check.py)
+проверяет точные derivatives и hostile controls: full Z/feedback/reference,
+строгость mu=1, moving-preparation term, missing coefficient-adjoint term
+и неверную подстановку beta вместо m alpha. Аналитическое minmax
+доказательство (20)–(24) проверено независимо; finite controls не выдают
+его за спектральное измерение. Старые root/kernel/89-CAR runs не повторены.

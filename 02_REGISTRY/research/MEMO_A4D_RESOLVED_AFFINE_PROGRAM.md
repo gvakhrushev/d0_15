@@ -82,10 +82,27 @@ alone. The [complete joint reduction](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_RE
 now eliminates physical off-shell matter exactly and constructs the coupled
 field/shell operator on a full regular native chart. Its 16,744,448 eliminated
 real amplitude coordinates are replaced by their exact graph; moving shell
-normalization and all reference directions remain. The next finite step is
-solving `H_red` on `ker T` with all shell-source rows, not another directional
-Hessian fit. Physical admission, nonflat joint roots, refinement and the
-original fixed-source/raw-norm terminal remain open. Do not restart the already owned root search or a family census.
+normalization and all reference directions remain. The finite faithful and
+old pure stored-sector normal kernels are now solved: their nearby roots
+are exactly flat families. The interior preparation-path kernel is consumed
+only with its actual nonlinear source conditions; it does not transfer to
+the new full-Lorentz domain. The [positive-adjoint source](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md)
+supplies an explicit full-Lorentz matrix instrument and derived preparation
+balances; the [coframe reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md)
+supplies the intrinsic Einstein covector under its geometric assumptions.
+Their physical source equality remains the common bridge.
+
+The [full-price scale balance](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement)
+requires `M z beta Z<1`. Finite minmax, on uniformly controlled full16
+coefficients, gives `Z>=c/beta^2` independently of the integer record-depth
+schedule. Thus the unchanged fixed-positive-Mz price cannot supply a
+stationary beta->0 route in that class. Existing constant-beta refinement
+is preserved. The next source/refinement proof must derive the actual
+native clock/feedback/measure law and its full derivatives, rather than
+assume a small-heat limit or fit a running coupling. Physical admission,
+nonflat joint roots, uncontrolled microstructure and the original
+fixed-source/raw-norm terminal remain open. Do not restart an owned root
+search or an unchanged family census.
 
 ### Two linked scientific fronts
 

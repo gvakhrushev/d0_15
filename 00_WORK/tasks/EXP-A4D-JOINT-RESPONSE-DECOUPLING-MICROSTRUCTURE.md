@@ -119,6 +119,22 @@ Consume the new source owner's Sections4–6. The remaining programme arrow
 is native generation/preparation/outcome/price for the explicit onsite
 matrix gates, not another old-root spectrum or a fitted boost source.
 
+The next bounded source/refinement premise is the complete coframe dilation
+of this same H+J+R price, with fixed calibration inside the variation and
+all matter/normalizer rows retained. The full source owner's Section7
+derives the necessary `M z beta Z<1`; finite minmax gives `Z>=c/beta^2`
+under explicitly uniform whitened coefficient/link-difference bounds.
+Hence fixed positive Mz cannot give stationary beta->0 in that class,
+at any integer depth schedule. Existing fixed-beta v8 refinement is not
+excluded. Consumer: the native clock/record/feedback/measure source bridge
+to intrinsic Einstein reconstruction. No running coupling, physical heat
+law or residual-defined stress is selected. Write surface stays this
+brief, README/current synthesis/route, the full-Lorentz owner and its
+existing source folder. Smallest check: exact full-price derivative and
+hostile controls for reference/full trace, moving preparation, unrelated
+beta and coefficient-adjoint omission, plus independent analytic minmax
+review. No unchanged root/kernel/Lean replay or original terminal promotion.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

@@ -32,6 +32,7 @@ record results below is substituted for that terminal. The historical
 | The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
 | A fixed-forward positive-adjoint completion now has an explicit local full-Lorentz matrix instrument, the same tested v8 scalar price and all transverse sources. The faithful seed remains critical; the old pure seed fails the new boost rows. Two derived occupation balances characterize stationary homogeneous E0 preparations, with an explicit balanced rank8 root on the same geometry. | [Full Lorentz source](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md). The original native primitives must generate its onsite matrix gates, adjoints, preparations and outcomes with their full retained-history cost. This does not select a physical extension or transfer the stored-sector kernel to the new state/domain. |
 | The full coframe defect uniquely reconstructs all24 Levi–Civita connection components under metricity/torsion-free assumptions. Its exact curvature/torsion transgression gives the intrinsic nonlinear Einstein covector. A local regular pp-wave vacuum metric satisfies both stored-adjoint kinematic conditions. | [Coframe/GR reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md). The full native price/source has not been equated with this intrinsic reading. The example is neither a periodic v8 stationary solution nor a refinement theorem; unrestricted geometric metric variations must still match the native variation image. |
+| The complete coframe scale source requires `M z beta Z<1`. A finite minmax bound gives `Z>=c/beta^2` on uniformly controlled full16 coefficient families, without a heat-limit assumption. Fixed positive Mz therefore excludes stationary beta->0 at any record-depth schedule in that class. | [Full source, Section7](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement). The native clock/record/feedback/measure law and its complete derivatives must pass this test. Fixed-beta v8 refinement remains valid; uncontrolled microstructure, extra native costs and the original fixed-source terminal are not decided. |
 | The complete faithful finite joint kernel and local critical locus are classified: all Fourier blocks are solved, and every nearby solution lies in the exact flat family with the density and three extra Lorentz-Gram moduli retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Section11. Small nonflat continuation from this same full-rank root is excluded. The next input is rank-free native preparation/joint dynamics; physical admission and refinement remain open. |
 | The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
 | The three homogeneous connection-source components have an exact attainable-set support function at the fixed root; a pure preparation explicitly realizes an ellipsoid inside it. Rank-aware equations retain every preparation Euler row. | [Source capacity and nonlinear selection](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md). Consume at the rank8 boundary or preparation-distant stationary points after the faithful local classification. This is not a full field source inverse; a frozen-preparation spectral crossing is not a coupled branch. |
@@ -106,6 +107,23 @@ Einstein. The new positive-adjoint instrument supplies an explicit tested
 matrix source on its stated domain; the reconstruction supplies a full
 geometric covector. Their equality, native generation and the original
 fixed-g/fixed-tau/raw terminal remain obligations.
+
+The [complete scale test](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement)
+now supplies a necessary constraint on that bridge. With fixed calibrations
+and an admissible joint coframe dilation, the same full H+J+R price gives
+`S_dot/2=-T1/Z+M z beta T2+R`, with `T2>T1>0`.
+Every critical point therefore requires `M z beta Z<1`, retaining the
+full thermal trace and reference multiplicity. On any one uniformly
+controlled whitened frame, finite minmax gives `Z>=c/beta^2` at small beta,
+for arbitrary integer depth schedules. A stationary beta->0 route with
+fixed positive Mz is excluded under those bounds. This uses the full
+feedback term, not only the earlier fixed-temperature heat diagnostic.
+The existing v8 family has constant beta and remains a valid input.
+The consumer must derive the actual record/clock/feedback/measure law,
+including moving-calibration or extra native-price sources if present;
+choosing a convenient running z does not establish that law. Neither
+uncontrolled ultraviolet links nor the original fixed-g problem is closed
+by this test.
 
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference
