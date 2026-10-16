@@ -1,41 +1,23 @@
 # Интеграция продолжения в существующий #334
 
-Repository: gvakhrushev/d0_15.
-Branch: exp/a4d-joint-response-continuation-2026-10-16.
-Проверенный HEAD: b1283e9659ae2c4a9855e7b1200c40163eb83481.
+Проверено 2026-10-16 в `gvakhrushev/d0_15`. Существующий [draft PR #334](https://github.com/gvakhrushev/d0_15/pull/334) идёт из branch `exp/a4d-joint-response-continuation-2026-10-16`; GitHub и локальный `origin` указывали на один HEAD `e9cd1b913ca8199a400aee35d35da455c27c778b`.
 
-Предыдущий memory-source пакет уже найден в GitHub. Основной proof и
-check_memory_source.py сверены по Git blobs; импортировать старый патч ещё раз
-не нужно. Новый additive patch содержит только пути этой поставки.
-Никакого нового task/агента, изменения старых receipts, standalone price или
-CORE/GR promotion не создаётся.
+## Файлы и происхождение
 
-1. Обновить реальный HEAD и проверить отсутствие новых владельцев этих путей.
-2. Применить только новые файлы; прежние определения, fullrank kernel, данные
-   medium-агентов и CI не переписывать.
-3. Прочитать proof §§4–6: это rank-aware дополнение, не отрицание принятых
-   полноранговых теорем. В1983 считается target dimension, НЕ actual native rank.
-4. Запустить узкий certificate ordinary/-O и mathematical mutations. Полный
-   старыйroot/Lean replay не нужен для этого checkpoint; интеграционная приёмка
-   дальше следует штатной change-based matrix.
-5. Добавить краткую ссылку в текущий научный потребитель с согласованием его
-   владельца. Не заявлять, что одна проверка 72 точных условий доказывает ОТО.
+Все 12 путей из приложенного additive patch уже были tracked в этом PR. До статусной правки основного proof `git apply --reverse --check D0_memory_rank_nonlinear_continuation_2026-10-16.patch` прошёл на дереве `e9cd1b9`; патч повторно не накладывался. Исходный приложенный Markdown в тот момент точно совпадал с tracked-файлом: SHA-256 `8ec54e4838aaa579469896eeaf369e16a24d6a6f0f67824ede6fa88f5cb9b622`, Git blob `d267ba0916c83d8972f27651950e3503f0bf9d96`. Затем в proof изменён только устаревший абзац о публикации. Старые CAR owner bytes и математический `result.json` не менялись.
 
-## Потребление
+## Повтор проверки
 
-N06: общий support Pi, V_k и lift S -> delta C; EC0=0 вместо E=0 на lower-rank
-ветви; equation E2 C0+2E1 C1=0 и действительная normalizer second jet.
+Узкий сертификат запущен на Python 3.12.13 с SymPy 1.14.0:
 
-N07: кроме scalar H(v,v) выдавать M_v=(1/8)sum occupied diagonal blocks of
-P(Y_vv-2X_v R_Q X_v)P. Для faithful memory fibre проверить orthogonal residual
-to span{I,B1,B2,B3}; для pure chi — реальный Lagrange multiplier condition.
-Решение actual field kernel/нелинейное продолжение принадлежит главному треку.
-Ни один medium-агент не должен заново запускать solved fullrank shell census.
+- обычный запуск: `PASS_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION`;
+- запуск с `-O`: тот же PASS и тот же JSON;
+- пять математических mutation controls отвергнуты, включая неверную seed covariance, пропуск нормировки, фиксацию пустого shell, заморозку амплитудного second jet и неверный знак resolvent.
 
-Численный apparent crossing не принимается как новая ветвь: учитываются
-совместные preparation equations. DIAGNOSTIC_FLOW не является scientific PASS.
+GitHub на момент проверки не сообщил check runs для branch #334. Это локальная точная проверка указанного пакета, не CI и не новая Lean-сборка. Поле `new_GitHub_publication=false` в `VALIDATION.json` сохранено как исторический факт: локальный запуск сертификата не публиковал коммит; presence пакета проверена отдельно.
 
-GitHub-публикация новой поставки в этой сессии не выполнена: текущий connector
-не предоставил create/update actions, прямой git не разрешил DNS github.com.
-Готовый plaintext patch проверяется в чистой локальной Git-среде. Публикующий
-агент обязан после push подтвердить новый SHA и актуальный удалённый diff.
+## Научная граница и следующий шаг
+
+В PR сохранены точная трёхкомпонентная source capacity, pure-state inverse, rank-aware shell tangent, полные second-jet условия и необходимый kernel-тест от стационарной памяти. Результат не задаёт физический закон приготовления состояния. Не получены actual curved native root, физически выбранная preparation law, soundness/recovery или вывод ОТО.
+
+Следующее узкое доказательство должно подставить **реальный** native field velocity и его полный `M_v` в условия (27)/(28), одновременно решая всю joint kernel-систему. Плавающий midpoint crossing из `DIAGNOSTIC_FLOW.json` для этого недостаточен. После решения этого условия отдельными остаются сходимость nonlinear ветви, refinement, admission и физическая идентификация Einstein.

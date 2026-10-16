@@ -16,10 +16,10 @@
   "previous_memory_owner_confirmed_on_GitHub": true,
   "diagnostic_scope": "All4096-momentum floating midpoint exploration; no interval native Hessian/kernel/bifurcation certification. Not consumed by exact checker.",
   "sha256": {
-    "02_REGISTRY/research/A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md": "8ec54e4838aaa579469896eeaf369e16a24d6a6f0f67824ede6fa88f5cb9b622",
+    "02_REGISTRY/research/A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md": "f35ac4fe5431cb98a291251d7bef066b315e9b95c048df84cc8b776e7191aed6",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/DIAGNOSTIC_FLOW.json": "a029e13386cb66913733bbff7071200ebc878d2140d65d83a51e07f462baa5ba",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/INPUTS.json": "2313037f5ce489665fe7c844208697a059c00787309abe4664b251aee19d3dce",
-    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/INTEGRATION.md": "cbfcadcafbe731f8c82e9c1586deb8ff75be8127bcef6a844d4ebcfd6aac1b36",
+    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/INTEGRATION.md": "2eb8dcf5af8f4e6debd0a12d207f26f368538e68c45f6bbb584ace7dbed404df",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/README.md": "4e565922d8e14474a2129aa455f690b80cde3a2cbdf0dd1362123d0e08aa9e19",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/check_rank_continuation.py": "e91d1ddca24aa5ced7e6e4d655cdd0a413fef23ea5edead135d3d1b0b783f18f",
     "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/diagnostic_memory_fibre.py": "c92b184e2a0a3aad64b64a44f2eb70d3ff4c4aebe794ca69e3e2ffdbc1302bbc",
