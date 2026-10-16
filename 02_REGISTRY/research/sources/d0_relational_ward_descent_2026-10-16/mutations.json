@@ -1,0 +1,35 @@
+{
+  "expected_output_modified": false,
+  "mutations": [
+    {
+      "failed_check": "opposite_embedding_restores_every_point",
+      "mutation": "freeze_embedding",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "ordered_path_generator_1",
+      "mutation": "omit_connection_oneform_jacobian",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "same_action_reduced_Hessian",
+      "mutation": "freeze_retained_response",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "off_shell_second_Ward_includes_acceleration",
+      "mutation": "omit_offshell_acceleration",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "selected_operator_annihilates_all_coordinate_velocities",
+      "mutation": "wrong_metric_relative_sign",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "full_clock_metric_Noether_identity",
+      "mutation": "omit_true_clock_Euler",
+      "status": "REJECTED_BY_MATHEMATICS"
+    }
+  ]
+}

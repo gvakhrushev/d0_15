@@ -1,0 +1,25 @@
+{
+  "GR_closed": false,
+  "actual_mathematical_mutations_rejected": 6,
+  "exact_checks": 64,
+  "independent_scientific_acceptance": false,
+  "metric_only_locality_proved": false,
+  "native_physical_action_selected": false,
+  "native_retained_fields_eliminated": false,
+  "new_Lean_compilation": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "prior_suites_replayed": false,
+  "python": "3.13.5",
+  "schema": "d0-full-experiment-ward-validation/1",
+  "sha256": {
+    "A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md": "71fdd37eb806c72e481b9fc35f3e31dd0a1b9447c7ae59223d0d60ed56d3e8a9",
+    "INPUTS.json": "f0279c1910078af69e70b6e1a3d7913e572311ffb1dafb4ff391bec0d73bbf14",
+    "README.md": "a78792d6e127da2509a992e0cb577361b78dc09038a19d3a5657e2748518c593",
+    "check_relational_ward.py": "8158fd256825a722f12901d99130c52231d522d46bffcbeba9cc1c0b7fc9b5a5",
+    "mutations.json": "6a73beb27d40d9e12859a782df324db3add3a880dfb9e7573bca13fb394d6408",
+    "result.json": "3efb3a4bad773a3abb1d85e34ab3f952d55f0fa1f8d5aa9f19773526e07973e6",
+    "test_mutations.py": "d99d59d37d4565eecd5733239d8de8859484a329d6c30e8642685d590af5e24e"
+  },
+  "sympy": "1.14.0"
+}
