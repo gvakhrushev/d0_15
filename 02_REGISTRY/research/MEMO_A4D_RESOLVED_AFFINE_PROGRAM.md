@@ -172,6 +172,21 @@ Do not continue constant-weight searches there. The physical complete
 history law must be derived beyond this exhausted class, with its actual
 detector/price/preparation jets, nonlinear all10 source and joint refinement.
 
+The [complete rare-output consumer](A4D_FULL_RARE_HISTORY_GAUGE_SPAN_BOUNDARY.md)
+now closes the entire fixed-positive rare-event route, not just the three
+labels. It includes18 nonblank zero-N0 word/coefficient rows, both ports
+and the separate blank-label/port1 exit. Twenty-four genuine metric gauge
+probes span all torsion-free leading connection tuples. Exact onsite root
+locality makes their full Sylvester map background-independent, so a
+positive fixed detector killing every EH gauge probe kills its whole LC
+principal response. Increasing constant word/port weights cannot repair
+this class. The13 nonzero-N0 outputs require their actual second stencil,
+clock and source terms; their Hessian need not be positive. Derive those
+and the physical detector/complete Cost−Info source through the existing
+native action morphism, preserving its signed/nonlinear aggregation.
+This is not a Ward prohibition on moving the whole experiment or a no-go
+for the complete native price.
+
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
 strictly positive on a longitudinal germ with all10 linearized Einstein

@@ -164,6 +164,33 @@
       "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/check_retained_history.py": "6be5d31fc2b5a2d2f75b54071720b03c6bbebc30356260b5c823c3ef8ef88d92"
     }
   },
+  "full_rare_history_gauge_span_checkpoint": {
+    "base": "e505305509d175c708f797e906410aaf961fc01f",
+    "conclusion": "All24 torsionfree LC potential coefficients are spanned by actual periodic pure-diffeomorphism cone tangents across constant backgrounds. Onsite roots give one fixed pointwise full contrast map. Fixed PSD detector annihilating Einstein gauge tangents then has zero response on every LC principal variation.",
+    "consumer": "Front A complete retained-history/source arrow: exhaust the full constant positive rare-event route via genuine gauge span, not another label census.",
+    "new_exact_checks": 335,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "previous99_receipts_preserved": true,
+    "rejected_mutations": 4,
+    "remaining_native_consumer": "Same-process Cost−Info/action source; nonzero-N0 second stencil and clock jets, moving/nonlocal detectors, signed/nonlinear price and actual admission/preparation. Original fixed-g/tau/raw terminal remains open.",
+    "scope": {
+      "fixed_positive_record_detector_only": true,
+      "nonblank_zero_N0_rows": 18,
+      "nonzero_N0_rows_excluded": 13,
+      "rare_port_outputs_including_blank_port1": 37,
+      "zero_N0_rows_including_blank": 19
+    },
+    "sha256": {
+      "02_REGISTRY/research/A4D_FULL_RARE_HISTORY_GAUGE_SPAN_BOUNDARY.md": "85becfa2696e3481d8d20e3723c92ed74c965c9fee96e871a53131117852b4aa",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/MUTATIONS.json": "21ccb6f655aaad12a4aee76b2c305bd7dcbfaac7afb447e45d81f71e6a31794d",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/README.md": "1a0e977485eb49266cefda040b6ae4b1fbecdeb946e175bb0e7a386fb921c10c",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/RESULTS.json": "b4e961073051041f70287294de64e128e0488eb929b662377328b56c933a8047",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/VALIDATION.json": "a72ffef9ad439eb0bdb5c455d2a4db3839bffc664434a3dde5468e03fd254485",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/check_gauge_span.py": "6ce1983a9b437dba3d49c30f290d934f9b0caa3a6cac54f758fb11fd33cfd8c5",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/test_mutations.py": "deae6edf3507a19d146b2a53b604e63b7044a13a0cdbf770201ccf3cd459e474"
+    }
+  },
   "integration": "additive merge preserves all13 incoming paths; no old scientific replay",
   "parallel_complete_price_and_source_intake": {
     "all_disjoint_source_bytes_match": true,

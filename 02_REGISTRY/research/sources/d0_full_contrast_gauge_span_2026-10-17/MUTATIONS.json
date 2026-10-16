@@ -1,0 +1,24 @@
+{
+  "helper_sha256": "6ce1983a9b437dba3d49c30f290d934f9b0caa3a6cac54f758fb11fd33cfd8c5",
+  "input_files_changed": false,
+  "old_run_entrypoints_executed": false,
+  "rejected_mutations": [
+    {
+      "mutation": "wrong_LC_covector_sign",
+      "rejected_at": "gauge_has_only_named_offdiagonal_pair_0100"
+    },
+    {
+      "mutation": "drop_coefficient_one_outputs",
+      "rejected_at": "complete32_rows_have19_zero_and13_nonzero_baselines"
+    },
+    {
+      "mutation": "wrong_right_root_projector",
+      "rejected_at": "right_root_square_0"
+    },
+    {
+      "mutation": "nongauge_probe_called_gauge",
+      "rejected_at": "genuine_gauge_tangency_012"
+    }
+  ],
+  "status": "PASS"
+}

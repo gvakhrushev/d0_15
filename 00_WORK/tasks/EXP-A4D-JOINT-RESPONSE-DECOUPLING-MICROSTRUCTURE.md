@@ -409,6 +409,45 @@ three-label detector** can give universal nonlinear EH on this cone class.
 Write only an additional bounded helper/result in the same source folder
 and the existing root-owned consumers; preserve the first80-check output.
 
+## Full fine-output consumer after the three-label classification — 2026-10-17
+
+Statement: decide whether the existing **full zero-baseline Julia contrast
+output**, rather than selected three role labels, has a fixed positive
+detector with the universal cone Einstein principal response across constant
+causal backgrounds. Use a structural gauge-kernel classification. Do not
+scan another preparation or install a desired price.
+
+Inputs: `e505305509d175c708f797e906410aaf961fc01f`, the complete retained
+principal/nonlinear owner, literal Julia32 word map, pinned full16 creators
+and the existing field-to-instrument/admission owners. Research status only.
+Common objects: fixed positive coordinate-form frame, `G=s^2 I`, `s>1`,
+all16 forms/reference128, true LC transport, both golden ports and the
+unchanged first-exit clock. The contrast outputs have tau=+1 in (1a);
+coefficient1 defect derivatives must be retained. The full flat-isotropic
+zero-N0 space has19 rows including blank: all16 tau=+1 rows plus three
+tau=-1/coefficient1/u=0/nonblank-role rows. Thus18 nonblank rows enter
+the two-port rare first-exit class. A separate blank-label/port1 exit is
+also allowed but has no leading geometric variation; blank/port0 is
+excluded. Nonzero-N0 outputs need second stencil jets and are not replaced
+by this class. “Zero baseline” refers to N0, not every probability at h=0.
+
+Consumer: Front A's full retained detector/source interface. Positive
+detectors giving pure EH must annihilate every genuine linearized gauge
+probe. Classify the corresponding common amplitude kernel across constant
+cone backgrounds, then test its actual geometric source. If this cannot
+decide the full contrast class, record the precise missing operator identity,
+not a phase/rank census. The physical complete price and original Front B
+terminal remain unchanged.
+
+Write surface: root owns common consumers and any new source packet;
+helpers derive the full contrast/Sylvester map, independently check genuine
+Einstein-gauge probes, and check scaling/native price. A bounded helper may
+write only `sources/d0_full_contrast_gauge_span_2026-10-17/`; root owns its
+owner and all common consumers. Other chat retains
+its physical-action/preparation lane. Smallest decisive evidence: exact
+CAR/operator identities on the complete contrast map and a finite symbolic
+spanning proof if needed, never old roots/heat/Lean replay.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

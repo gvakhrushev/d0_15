@@ -39,6 +39,7 @@ Current gravity packets:
 - `A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md` — exact full-experiment coordinate Ward and conditional metric descent; actual retained section and locality are required.
 - `A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md` — actual permanent first-exit Julia/Walsh event, both golden ports, derived1/256 clock coefficient and one-cone EH/source identity; no new price or physical admission.
 - `A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md` — full three-field principal source, unique positive coherent direction and fixed EH coefficient1/192; its exact nonlinear source excludes the entire fixed positive three-label detector class, without excluding the full history price.
+- `A4D_FULL_RARE_HISTORY_GAUGE_SPAN_BOUNDARY.md` — complete18 zero-N0 nonblank rows/all37 rare ports, exact24-dimensional gauge span and onsite Sylvester map; no fixed positive rare-output detector gives universal EH across causal backgrounds. Nonzero-N0 second jets and full Cost−Info remain separate.
 - `A4D_SECOND_ORDER_HEAT_REMAINDER.md` — controlled fixed-beta second-order heat/source expansion with explicit graph, Galerkin, cyclic-row and clock bounds; no physical comparator or matter continuation is assumed.
 - `A4D_RAW_LINK_COTANGENT_JET.md` — exact noncommuting parallel-path/raw-link conversion through h², both adjoint pairings and moving density; inverse coefficient1/12.
 - `A4D_CONE_PREPARATION_FIRST_CORRECTOR.md` — full128 resonant matrix excludes unchanged faithful amplitude continuation on the exact-LC winding cone, not all prepared branches.
