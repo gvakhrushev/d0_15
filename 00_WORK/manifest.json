@@ -2,7 +2,7 @@
   "schema": "d0-work/1",
   "limits": {
     "EXPENSIVE": 3,
-    "WORKER": 5,
+    "WORKER": 10,
     "CONTROL": 2
   },
   "legacy_scaffolds": [],
@@ -68,17 +68,6 @@
       ],
       "exit_condition": "Formalize ordered-word intertwining, its exact telescoping residual, and its first-jet version with a moving intertwiner; expose branching/comparison hypotheses explicitly and specialize only to already owned primitive maps.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION.md"
-    },
-    {
-      "id": "WRK-A4D-WEIGHTED-SITE-SOURCE-TRANSFER",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Derive the exact fixed-carrier value, adjoint and first-source transport under a supplied positive moving site weight, retain the endpoint weight factors and observer derivatives, and identify precisely when the literal stored operator belongs to that weighted class.",
-      "brief": "00_WORK/tasks/WRK-A4D-WEIGHTED-SITE-SOURCE-TRANSFER.md"
     },
     {
       "id": "WRK-A4D-RAW-SOURCE-PRECISION-BUDGET",
