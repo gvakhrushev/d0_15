@@ -32,3 +32,15 @@ Physical generation of the geometry-dependent Jacobian observable, selection of
 the calibrated contrast by the common action, all native link/matter equations,
 Lorentz reading and uniform spatial refinement remain open. AF cut compatibility
 here holds at fixed geometric inputs; it is not the required all-mesh theorem.
+
+## Matrix-defined determinant compiler and the complete AF-price consumer
+
+The [golden determinant compiler](../../A4D_GOLDEN_DETERMINANT_COMPILER.md)
+now produces this Jacobian reading from a matrix-defined golden-baseline unitary
+and its full exterior return, rather than a scalar determinant effect h/C.
+It preserves the full return/failure and preparation jets. Its golden effect
+composition also supplies E_eff=p^2[I+2p^6 sum_i u_i Q_i] to the concurrent
+[complete AF price](../../A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md).
+The price is B_n+sum_i G(2p^6 u_i), with its absolute blank and remainder intact.
+This is coefficient-level composition, not a proof of cost-preserving native
+controller compilation or selection of the physical information contract.

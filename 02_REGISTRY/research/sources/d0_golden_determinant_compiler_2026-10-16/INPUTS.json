@@ -1,0 +1,33 @@
+{
+  "concurrent_integration_base": "1f936ebfa1b3556245ba708fdeebb0a24500ec4b",
+  "documentary_owners": [
+    {
+      "git_blob": "7622e674cb04e0b6e2862edd0f3b149994d480a9",
+      "path": "02_REGISTRY/research/A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md",
+      "used": "existing calibrated three-setting reading and its complete source"
+    },
+    {
+      "git_blob": "714a07eff3d2f1f257a5140038fa21b6fd8fb6d9",
+      "path": "02_REGISTRY/research/A4D_RECORD_NORMAL_VOLUME_SOURCE.md",
+      "used": "shape/Jacobian/Gauss definitions, full metric variation"
+    },
+    {
+      "git_blob": "373f8e38910923613c2ad536d037da48790b6e18",
+      "path": "02_REGISTRY/research/A4D_RECORD_PRICE_METRIC_SOURCE_INTEGRATION.md",
+      "used": "existing price-metric identification and source lift"
+    },
+    {
+      "git_blob": "d7f7f170815cc3ad2052ad48280ae5919652b314",
+      "path": "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean",
+      "used": "true=direct, false=return, cylWeight; no new Lean compile"
+    },
+    {
+      "git_blob": "bb3af85fa08bdb5f70a3cd837283a842c6038706",
+      "path": "02_REGISTRY/research/A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md",
+      "used": "same complete AF price after E_eff substitution; no claim of cost-preserving physical controller compilation"
+    }
+  ],
+  "schema": "d0-golden-determinant-inputs/1",
+  "scope": "Parent theorem and declaration bytes are pinned; no old checker is imported or recompiled by the new finite tests.",
+  "source_base": "df9b5b7a4fa473279695100348db7e3feadf4910"
+}
