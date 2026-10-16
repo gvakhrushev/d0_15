@@ -140,6 +140,16 @@ the request to preserve that local result and prevents another search at
 the same legacy crossing. The next native-process/source proof retains
 the enlarged domain and its derived preparation balances.
 
+The concurrent [memory-fibre transversality packet](A4D_MEMORY_FIBRE_CROSSING_TRANSVERSALITY.md)
+at `d2d6fc60` supplies a second cokernel test on that old stored preparation
+segment. The actual source-neutral delta_sigma gives pairing below-0.8441
+at the unique q3300 crossing in(0.42,0.44). It excludes the pure q,-q
+field velocity with zero first-order memory velocity; mixed memory/field
+velocities remain unclassified. This is consumed in its original stored
+interface, whose old pure endpoint fails the enlarged Lorentz boost rows.
+Its checker/current input hashes and the separate `a6ee61ef` document-only
+receipt repair are preserved without repeating the scientific calculations.
+
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference
 from a desired Einstein source. The derivations below remain a durable
