@@ -90,6 +90,116 @@
       ],
       "exit_condition": "Compose the already proved auxiliary-gap, finite return-history, prepared-address and finite source-reflection estimates into an explicit error budget in the unchanged h^-2 raw-l1 target, with every dimension, conditioning and moving-calibration factor exposed and checked.",
       "brief": "00_WORK/tasks/WRK-A4D-RAW-SOURCE-PRECISION-BUDGET.md"
+    },
+    {
+      "id": "WRK-A4D-MV-FULL-RANK-SPAN",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Certify that Tr(S M)=0 for every traceless S orthogonal to J_1,J_2,J_3 is equivalent to M in span{I,J_1,J_2,J_3}, with a witness and a negative control, without using the field kernel.",
+      "brief": "00_WORK/tasks/WRK-A4D-MV-FULL-RANK-SPAN.md"
+    },
+    {
+      "id": "WRK-A4D-MV-RANK8-WITNESS",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Certify that M chi = lambda chi + sum beta_r J_r chi is strictly weaker than the full-rank span condition, with an explicit operator that passes on chi and fails at full rank.",
+      "brief": "00_WORK/tasks/WRK-A4D-MV-RANK8-WITNESS.md"
+    },
+    {
+      "id": "WRK-A4D-VK-DIMENSION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Certify dim_R V_k = 2 r k - k^2 - 1 for r=128 at k=8 and k=128, giving 1983 and 16383, with no field operators.",
+      "brief": "00_WORK/tasks/WRK-A4D-VK-DIMENSION.md"
+    },
+    {
+      "id": "WRK-A4D-FORCE-NUCLEAR-NORM",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Certify max Tr(sigma J(t)) = ||C(t)||_* and the support criterion |t·y| <= ||C(t)||_*, with a rank-at-most-2 density, without nonlinear continuation.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORCE-NUCLEAR-NORM.md"
+    },
+    {
+      "id": "WRK-A4D-ORBIT-MARGIN",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Certify y_k^T Gamma^{-1} y_k < 4 p^3 with margin p^6 and the inverse map h(y), with no geometry.",
+      "brief": "00_WORK/tasks/WRK-A4D-ORBIT-MARGIN.md"
+    },
+    {
+      "id": "WRK-A4D-FIELD-BLOCK-INVENTORY",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "List the nonzero field-only blocks outside Omega-Omega in the current joint kernel, with ranks and supports, without closing them.",
+      "brief": "00_WORK/tasks/WRK-A4D-FIELD-BLOCK-INVENTORY.md"
+    },
+    {
+      "id": "WRK-A4D-RANK8-SADDLE-ZERO",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Certify that the rank-8 saddle keeps a zero lower block and is not replaced by a positive thermal matrix, with an explicit negative control.",
+      "brief": "00_WORK/tasks/WRK-A4D-RANK8-SADDLE-ZERO.md"
+    },
+    {
+      "id": "WRK-A4D-LEAN-MV-TANGENT-SPAN",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
+      "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
+    },
+    {
+      "id": "WRK-A4D-RANK-BIRTH-DIRECTIONS",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Describe exactly the 28800 rank-birth amplitude directions invisible to the first density derivative, without calling them gauge.",
+      "brief": "00_WORK/tasks/WRK-A4D-RANK-BIRTH-DIRECTIONS.md"
+    },
+    {
+      "id": "WRK-A4D-N06-N07-RANK-HANDOFF",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Tabulate which full-rank N06/N07 formulas keep their domain and which must be replaced by the rank-aware operator on the lower-rank branch, with no new calculation.",
+      "brief": "00_WORK/tasks/WRK-A4D-N06-N07-RANK-HANDOFF.md"
     }
   ]
 }
