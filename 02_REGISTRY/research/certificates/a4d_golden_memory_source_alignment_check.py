@@ -37,6 +37,8 @@ def main() -> None:
     p = phi - 1
     r = 2 * p - 1
     delta0 = r / 2
+    a = sp.sqrt(p)
+    s_coordinate = 2 * a * p
     a0 = phi - 1
     b0 = 2 - phi
 
@@ -49,6 +51,12 @@ def main() -> None:
     require(sp.simplify(r - sqrt5 + 2) == 0, "native_return_coordinate")
     require(sp.simplify(r * phi**3 - 1) == 0, "r_is_phi_minus_three")
     require(sp.simplify(r - p**3) == 0, "return_is_golden_cubic")
+    require(sp.simplify(s_coordinate**2 - 4 * p**3) == 0,
+            "native_rotation_second_coordinate")
+    require(sp.simplify(r**2 + s_coordinate**2 - 1) == 0,
+            "full_native_return_is_isometric")
+    require(sp.simplify(r**2 - 1) != 0,
+            "reject_cosine_as_full_return_gain")
     require(sp.simplify(2 - 3 * p - p**4) == 0, "reversed_path_source")
     require(sp.simplify((2 - 3 * p) / p - p**3) == 0,
             "same_endpoint_source_ratio")
@@ -57,6 +65,11 @@ def main() -> None:
         q = 2 * delta0 * phi ** (dimension - 1)
         require(sp.simplify(q - phi ** (dimension - 4)) == 0,
                 "dimension_scale:" + str(dimension))
+    for dimension in range(1, 5):
+        q = 2 * delta0 * phi ** (dimension - 1)
+        q_next = 2 * delta0 * phi ** dimension
+        require(sp.simplify(q_next / q - phi) == 0,
+                "dimension_scale_ratio:" + str(dimension))
 
     for n in range(2, 18):
         require(sp.simplify(
@@ -78,6 +91,7 @@ def main() -> None:
         "dimension_scales_checked": list(range(1, 9)),
         "chebyshev_orders_checked": list(range(3, 19)),
         "path_source_ratio": "p^3 = 2*p-1 = phi^-3 = Q(1)",
+        "native_return_norm": "r^2+s^2=1; r^2!=1",
         "non_golden_mutation": "REJECTED",
         "input_sha256": PINS,
         "scope": "conditional v8 source/readout bridge only; no refinement, physical admission or GR claim",

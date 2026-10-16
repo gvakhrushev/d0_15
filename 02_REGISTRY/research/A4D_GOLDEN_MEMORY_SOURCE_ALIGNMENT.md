@@ -58,6 +58,23 @@ unchanged by a common calibration or geometry scale. Thus the user’s
 connection source when the two same-endpoint histories are reversed. The
 identity is specific to the golden equation: `p^3-(2p-1)=(p-1)(p^2+p-1)`.
 
+## The scalar match is not an expansion law
+
+The full native return also contains `s=2ap`, with `a^2=p`. Thus
+`s^2=4p^3` and
+
+\[
+r^2+s^2=(2p-1)^2+4p^3=1.
+\]
+
+The actual two-tick map is the orthogonal rotation `R`, so it preserves the
+norm of the retained pair at every return. The hierarchy, by contrast, has
+`Q(D+1)/Q(D)=phi>1`; its scale does not follow from iterating `R`. Dropping
+`s` and treating `r=Q(1)<1` as the full transition gain would falsely turn a
+norm-preserving native operation into a contraction. The exact match is
+between the hierarchy’s dimension-one scale and one coordinate of a
+response-visible memory rotation, not a derivation of cell multiplication.
+
 This establishes response-visible significance of `p` in the declared
 conditional v8 memory/source family. It does not show that this v8 action,
 the preparation rule, or the link probe is physically admitted by all of D0.
@@ -102,9 +119,10 @@ input hashes, the golden identities, the path-source ratio, the four-level
 normalization, and the Chebyshev source recurrence using exact algebraic
 arithmetic. It includes a non-golden rational mutation that must fail the
 shared-parameter identity. These checks verify the algebraic bridge above;
-they do not replace the owners’ physical-admission or source derivations.
+they also reject using `r` alone as the full return gain. They do not replace
+the owners’ physical-admission or source derivations.
 
-On Python 3.9.6, both the ordinary and optimized runs pass all 38 checks
+On Python 3.9.6, both the ordinary and optimized runs pass all 45 checks
 and emit byte-identical JSON. The non-golden mutation is rejected.
 
 ```sh
