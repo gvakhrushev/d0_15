@@ -28,4 +28,4 @@
 
 `provenance_ok=false`, `superset_of_runner=true`, `scientific_replay=false`. `historical-receipt.json` остался байт-в-байт `historical\n`. `notes.txt` исходного репозитория остался `unchanged\n`. После прогона у репозитория один worktree и пустой porcelain.
 
-Отдельно, не эта фикстура: на живом дереве при базе, равной коммиту, `certificate_paths` выбрал 2 из 75 за 2.588 с и не исполнял их. Это `a4d_cartan_nonlinear_rigidity_check.py` и `a4d_closure_packet_integration_check.py`.
+Отдельно, не эта фикстура: до удаления не-Python хвоста Картана пустой diff выбирал 2 сертификата из 75. После удаления на пустом diff остаётся неразрешённый `a4d_closure_packet_integration_check.py`. Файл Картана в дереве остаётся, но пустой diff его не выбирает.

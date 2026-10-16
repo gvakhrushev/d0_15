@@ -412,13 +412,12 @@ class LiveBoundaryTests(unittest.TestCase):
         after = runner.git(root, "status", "--porcelain=v1", "--untracked-files=no")
         self.assertEqual(before, after)
         self.assertEqual(runner.select_certificates(root, head, head), [])
-        for name in (
-            "a4d_cartan_nonlinear_rigidity_check.py",
-            "a4d_closure_packet_integration_check.py",
-        ):
-            rel = f"{runner.CERT_DIR}/{name}"
-            self.assertIn(rel, closure.tree_paths(root, head), name)
-            self.assertIn(rel, selected, name)
+        closure_packet = f"{runner.CERT_DIR}/a4d_closure_packet_integration_check.py"
+        cartan = f"{runner.CERT_DIR}/a4d_cartan_nonlinear_rigidity_check.py"
+        self.assertIn(closure_packet, closure.tree_paths(root, head))
+        self.assertIn(cartan, closure.tree_paths(root, head))
+        self.assertIn(closure_packet, selected)
+        self.assertNotIn(cartan, selected)
 
     def test_pinned_source_is_readable_and_not_merged(self) -> None:
         root = Path(__file__).resolve().parents[1]
