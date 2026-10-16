@@ -52,9 +52,19 @@ with `Lifecycle: REVIEW`.
 
 Replace this paragraph with the exact bounded objective.
 
+## Parent proof interface
+
+- Statement and remaining assumptions: exact conclusion and quantifiers.
+- Input owners and fixed refs: distinguish accepted main from research inputs.
+- Common objects: carrier, full action, norm, source/comparator, refinement maps.
+- Consumer: parent lemma/equation where this result is substituted; premise removed.
+- Write paths: disjoint artifact paths owned by this execution.
+- Decisive check: smallest proof/calculation and negative control that decides the step.
+
 ## Required checks
 
-Replace this section with positive checks and hostile negative controls.
+Name the narrow iteration check and the affected integration checks at Ready.
+Do not require a corpus-wide replay for each local edit.
 
 ## Scope guard
 
@@ -66,8 +76,9 @@ State one auditable completion condition.
 
 ## Chat handoff
 
-Return only the PR number, verdict or PASS/FAIL, and one exact blocker if the
-task cannot close. Do not paste the full durable artifact into chat.
+Return the PR number, exact conclusion and consuming parent step (or route
+change), checks, and one exact blocker if the task cannot close. Keep the
+handoff short; do not paste the full durable artifact into chat.
 """
 
     if args.write:
