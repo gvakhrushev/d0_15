@@ -59,17 +59,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     },
     {
-      "id": "WRK-A4D-RESEARCH-CLOSURE-RUNNER-WIRING",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Integrate the already accepted conservative certificate-input selector into the existing runner and test routing, preserving immutable evidence, failure behaviour and unknown-dependency fallback; demonstrate real shared-input selection without creating another runner or cache.",
-      "brief": "00_WORK/tasks/WRK-A4D-RESEARCH-CLOSURE-RUNNER-WIRING.md"
-    },
-    {
       "id": "WRK-A4D-LEAN-SCHUR-STATIONARY-TRANSFER",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -103,17 +92,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-STORED-ADJOINT-TANGENT-MAP.md"
     },
     {
-      "id": "WRK-A4D-FULL-REFERENCE-MATTER-RESPONSE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Provide a reusable exact first- and second-order matter response solver on the owned 128-state shell with the complete reference, including kernel compatibility and all normalizer terms, while leaving thermal and feedback traces on their full carriers.",
-      "brief": "00_WORK/tasks/WRK-A4D-FULL-REFERENCE-MATTER-RESPONSE.md"
-    },
-    {
       "id": "WRK-A4D-V8-FULL-HESSIAN-APPLY",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -145,17 +123,6 @@
       ],
       "exit_condition": "Compose the already proved auxiliary-gap, finite return-history, prepared-address and finite source-reflection estimates into an explicit error budget in the unchanged h^-2 raw-l1 target, with every dimension, conditioning and moving-calibration factor exposed and checked.",
       "brief": "00_WORK/tasks/WRK-A4D-RAW-SOURCE-PRECISION-BUDGET.md"
-    },
-    {
-      "id": "WRK-A4D-CORE-PRIMITIVE-ADMISSION-SPLICE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "For the fixed declared v8 primitive list, construct the available literal core-to-program compositions and an exact finite typed remainder of unproved admission arrows, using real definitions and complete outcomes rather than equating generic matrix realizability with physical permission.",
-      "brief": "00_WORK/tasks/WRK-A4D-CORE-PRIMITIVE-ADMISSION-SPLICE.md"
     }
   ]
 }
