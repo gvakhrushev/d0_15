@@ -153,6 +153,46 @@
       "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/test_mutations.py": "1eafeb98f55d9b3579f5e1d2ca10345064048db37d971ebf8e69bc2d3feff909"
     }
   },
+  "complete_source_metric_image_formfactor_compiler_checkpoint": {
+    "analytic_proofs_distinct_from_finite_checks": true,
+    "base": "e397a0af8383e5026353d6d54382202bb5c57a00",
+    "conclusions": [
+      "Exact nonlinear full joint stored metric projection; generic missing Bianchi covector and fixed offdiagonal separating row, with exceptional modes retained.",
+      "Full16 actual proper-link Stieltjes h2 coefficient is nonrational; actual moving first-shell amplitude Schur/seagull corrections cannot cancel its tail at fixed beta.",
+      "Exact computational-blank integral grammar obstruction with actual seed-copy bypass; fixed palette pointwise universality cannot create field jets; C2 full-trace/global-Z accuracy budgets."
+    ],
+    "consumer": "Full native field-to-given-action source: admitted metric image, all-frequency causal coefficient and constant-control compiler/source bridge.",
+    "intermediate_metric_publication": "05180c68dc9befefbab8be3bd7e950b6c2720ba2",
+    "new_exact_checks": {
+      "causal_formfactor_vertex": 49,
+      "metric_projection": 59
+    },
+    "normal_optimized_identical": true,
+    "old_scientific_replay": false,
+    "open": "Physically derived full process/price/preparation/clock/domain and source completion; other retained sections/scales and compatible joint refinement; original fixed-g/tau/raw h^-2/#216 terminal.",
+    "readable_v5_text": {
+      "capsule_code_executed": false,
+      "capsule_sha256": "91b030d62c93afa6bf2a23be28051d764e54f12a7e5a13cd75ed732427c913be",
+      "json_sha256": "3062ab678735883022bdc011471ae438d5a30bdcb013acea549bfd572e97564f",
+      "only_one_pinned_proof_extracted": true,
+      "text_sha256": "a123c96233c62a1a05cc01b0a5be706ca4cff10765f781797b7859c4d50547e4"
+    },
+    "sha256": {
+      "02_REGISTRY/research/A4D_FULL_PRICE_CAUSAL_FORMFACTOR.md": "d8d924cf5ef56c474b99bc4d5a2385b48713da21e08b13e0e16d487b0fd18fe0",
+      "02_REGISTRY/research/A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md": "7b2121fdaa2ebd4f98be494d6062034577971d334b00bddf9ef9da8969f8f817",
+      "02_REGISTRY/research/A4D_STORED_METRIC_PROJECTION_AND_SOURCE_COMPLETION.md": "014be6082811753f49d20cd10adcd73693cabab1e1b44997e0ee08027b7f3bcf",
+      "02_REGISTRY/research/sources/d0_full_price_causal_formfactor_2026-10-17/README.md": "418f2395adcec614dce7682b44e3dd8d80a60d29fc113fc61e0122cd12b2451f",
+      "02_REGISTRY/research/sources/d0_full_price_causal_formfactor_2026-10-17/RESULTS.json": "48dd65e8fb83222eca4f60b84389bc70535d1d634fde89ed747fb3c5628e11d4",
+      "02_REGISTRY/research/sources/d0_full_price_causal_formfactor_2026-10-17/VALIDATION.json": "94d1bb485d5e2175f6f6e9059557db8957132018b15827829d078218d9e8cb24",
+      "02_REGISTRY/research/sources/d0_full_price_causal_formfactor_2026-10-17/check_formfactor.py": "30575f74c076f335a30524cace3015fe8d72fedfaf1aefac8ece2829ddb5c054",
+      "02_REGISTRY/research/sources/d0_native_controller_v5_2026-10-14/proofs/NATIVE_COMPILER_AND_FULL_ARCHIVE_ACTION_RU.md": "a123c96233c62a1a05cc01b0a5be706ca4cff10765f781797b7859c4d50547e4",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/INPUTS.json": "e136301c1ac2d11829af79ea5026f9840ccec41706e07b493e0d8d7617ef5915",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/README.md": "57ef41a05f5a79aebebc57e03576d80ce0998da87cca0c8e2e368921d3690e87",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/RESULT.json": "a85ce359521b6d7ba61cc2de401f6fdfda1f2d766802a172564bcd1fe5feafeb",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/VALIDATION.json": "5afedd7346063dc427e25b69e7b579c535b87263e6fc70ccbd0cb8c2a970ada1",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/check_metric_projection.py": "a60a99379169f6a807ceeb9fd9fe4792a48441712212992cd9a3c08f3b0a3bce"
+    }
+  },
   "consumers": {
     "curved_tensor": "projected16 actual curvature source; elliptic coefficient-level inverse/local variable isolation, not fullprice or Lorentz closure",
     "flat_moduli": "finite genuine-root second-response mismatch rules out unqualified EH+Lambda+sameR identity; fixedbeta theta source retains global shape",

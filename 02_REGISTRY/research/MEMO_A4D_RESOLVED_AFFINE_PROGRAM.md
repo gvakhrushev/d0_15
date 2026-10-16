@@ -213,6 +213,26 @@ do not trace the smooth rare/ordinary limits separately.
 This is not a Ward prohibition on moving the whole experiment or a no-go
 for the complete native price.
 
+The [full-price causal form factor](A4D_FULL_PRICE_CAUSAL_FORMFACTOR.md)
+then consumes the actual S2 beyond one mode. The full16 proper-link vertex
+has an exact discrete Stieltjes thermal multiplier. Its all-order moment
+tail grows faster than exponentially, unlike a rational function.
+Actual normalized first-shell amplitude elimination, including moving
+leading preparation/reference and finite coherent exceptions, cannot
+cancel it. The supplied fixed-beta coefficient is not a finite-order
+local EH functional on this class. This is not an on-shell or whole-D0
+no-go; other retained field sections and physically derived prices remain.
+
+The [compiler/source and initial-resource boundary](A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md)
+consumes the existing v5 compiler instead of repeating its extractor.
+It supplies C2 full-trace/normalizer refinement budgets, an exact finite
+computational-blank grammar obstruction and the actual seed decoder.
+Five independent seed copies are a resource premise, not free cloning.
+Pointwise fixed-gate universality does not create continuous native
+field-to-SELECT jets. Only constant controls can be approximated while
+preserving those already supplied jets; code complements and actual costs
+still belong in the same-process law.
+
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
 strictly positive on a longitudinal germ with all10 linearized Einstein

@@ -492,6 +492,66 @@ One helper owns complete finite Julia/source jets; a second owns the
 inverse/flat-UV control; a third reviews the actual price/preparation law.
 Previous research receipts remain immutable and are not replayed.
 
+## Complete operator → admitted metric image consumer — 17 October 2026
+
+Input checkpoint e397a0af proves the complete-exit/given-action quotient.
+Its ambient Hermitian inverse does not establish a full physical metric
+variation image. Consume the earlier stored-source-image fixture with a
+structural nonlinear theorem, retaining the complete joint observer/link
+freedom rather than freezing either.
+
+Exact target: characterize the local regular Lorentz metric field Q which
+admits the two stored-adjoint constraints through a line-constant observer
+projection tau. Prove both necessity and constructive sufficiency, with
+future orientation and all own-edge conditions. Derive the generic
+full-support Bianchi-compatible source annihilator, including its exact
+pairing with a proposed extra source row. This identifies precisely which
+source equation an actual native completion must supply; it is not a new
+variation law or a replacement action.
+
+Carrier: full16 exterior forms, genuine proper Lorentz links, complete
+joint stored chart. Pairing: Tr(E deltaQ), with both off-diagonal entries;
+continuum Fourier Bianchi tested with a=Qk. Scope: local regular kinematic
+image, not joint-critical roots or original raw h^-2/#216 terminal.
+Write paths: A4D_STORED_METRIC_PROJECTION_AND_SOURCE_COMPLETION.md and
+sources/d0_stored_metric_projection_2026-10-17/, plus root-owned existing
+consumers. Smallest check: one rational nonconstant own-edge fixture,
+constructive Gram/link recovery, a generic symbolic residual identity and
+one actual nonnull Einstein-source control. No rank catalogue, old root,
+full spectrum or Lean replay. Other chat retains its price/preparation lane.
+
+## Full-price causal form factor consumer — 17 October 2026
+
+The e397a0af full h² coefficient now has an explicit spectral consumer.
+On the true-LC fixed-positive-G graph, derive the entire transverse
+Fourier bubble from actual Delta_1, keeping the combined H+J gradient and
+global normalizer. Separate its local Delta_2 seagull from the thermal
+form factor; retain actual finite-shell normalized preparation and its
+amplitude Schur term. The target is an all-frequency analytic locality
+criterion, not a repeat of the one longitudinal countercontrol.
+
+Write paths: A4D_FULL_PRICE_CAUSAL_FORMFACTOR.md and
+sources/d0_full_price_causal_formfactor_2026-10-17/. Smallest new evidence:
+one literal full16 symbolic vertex/norm and the exact discrete Stieltjes
+shift identity. General nonrationality and preparation-elimination scope
+are analytic, with explicit fixed-beta and smooth-coefficient hypotheses.
+No old spectrum, cone root, rank census or Lean run. The other chat owns
+physical native action/preparation admission; this conditional coefficient
+must not be promoted to a full D0 or on-shell no-go.
+
+## Native compilation source/resource consumer — 17 October 2026
+
+The existing v5 first-success/C1 compiler is consumed rather than rebuilt.
+Its original proof is extracted as one byte-identical readable Markdown
+source from the preserved capsule; no old programme is executed. The new
+supporting memo is A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md:
+exact finite computational-blank coefficient-ring obstruction, actual
+normalized seed resource/decoder, and C2 full-trace/global-normalizer
+accuracy budgets under refinement. This supports, and does not replace,
+the physical native field-to-SELECT/price/preparation lane. Pointwise
+constant-gate universality does not create its field jets. No new action,
+free seed copies, reference projector or complementary heat block is admitted.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
