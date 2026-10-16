@@ -255,6 +255,22 @@ source has a finite-state costate recursion. Use this actual history/cost
 interface to resolve the remaining code/Info binding and source equality;
 do not identify pointer entropy, coherent information and v8 H+J+R by name.
 
+Its complete preparation test now makes this source distinction decisive.
+The actual label6/coefficient1 event distinguishes a faithful128-shell
+preparation line with fixed operator, all eight momenta and constant R.
+The event's first-exit mark has a positive fixed-time continuum limit.
+Consequently full pointer entropy has strictly negative matter curvature,
+while coherent relative entropy has strictly positive curvature, uniformly
+under refinement. Every fixed full-history code contributes only affine
+expected cost. Neither information candidate therefore equals unchanged
+v8 on this open family. The exact nonlinear preparation equations and
+required preparation-dependent partition source are now given in the
+same owner. A geometry-only heat normalizer cannot supply that source.
+Use these actual information equations when deriving the full physical
+price; do not transfer the v8 Rayleigh preparation equation unchanged.
+This is an off-shell binding result, not an exclusion of joint roots,
+other physical Info laws or a smaller independently admitted family.
+
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
 strictly positive on a longitudinal germ with all10 linearized Einstein

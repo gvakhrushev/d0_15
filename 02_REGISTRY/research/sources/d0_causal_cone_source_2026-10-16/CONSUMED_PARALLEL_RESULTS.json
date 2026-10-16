@@ -137,6 +137,30 @@
       "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_record_channel.py": "dee7ada5cf04bf961701206f65b216e1ab9c6f45ef9f9ed3258e70bed9cb13a2"
     }
   },
+  "complete_record_preparation_information_source_checkpoint": {
+    "analytical_proofs_distinct_from_finite_checks": true,
+    "base": "d0e49f1288126cee72996b54c9b0916b04dd1642",
+    "conclusions": [
+      "Actual label6/coefficient1 both-port effect separates faithful full128 first-shell preparations with constant R and unchanged geometric fields.",
+      "Full-tape first-exit marked event has probability C_h(1+t), C_h\u2192(1-exp(-beta lambda0))(1-b)^2/16>0. It is a diagnostic event, not a replacement entropy.",
+      "Full pointer entropy has a strictly negative Fisher matter Hessian; full coherent relative entropy has a positive BKM Hessian, with uniform fixed-time Jensen gap.",
+      "Every fixed complete code has affine expected cost; neither full-information candidate equals unchanged v8 on a full relative-open fixed-shell preparation family.",
+      "Exact nonlinear preparation covectors and necessary preparation-dependent partition curvature are explicit; a geometry-only heat partition cannot repair the missing source."
+    ],
+    "consumer": "Actual nonlinear preparation/source law in full retained-history price; prevents importing the v8 Rayleigh preparation equation as the full information equation.",
+    "new_exact_checks": 46,
+    "normal_optimized_byte_identical": true,
+    "old_scientific_replay": false,
+    "original_code_binding_facts": "Owned lengths1/2 apply to binary direct/return; full128 terminal code and physical raw-weight binding remain unselected. The universal fixed-code curvature result does not choose them.",
+    "scope": "Off-shell action/source binding on full128 first shell, preserving Rayleigh prep EL. No all-field EL, native admission of that whole family, arbitrary physical Info, joint-root/GR no-go or original terminal is claimed.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "0a56d1fe4035f3e3ec0dbba334b395fa189cce5c466363e1177e63d706479ca6",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/PREPARATION_RESULTS.json": "e32a18fb049f9cc6625cc984db318ae41e493ed296d45c97ec6c1f3718cc2194",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/PREPARATION_VALIDATION.json": "cfc7b6c57ce81ad3293d2fa98e68973b1a9994dd2ddf0a71d7f62aad00bb9131",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/README.md": "a15ccbd43d7e85832427181de2ea6b24df8a099ade947d9076e587555f3e4512",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_preparation_information_source.py": "1151c58f63a60fcff6528c8c58698ce2f1bc29998add1a01596ffc17f58b445f"
+    }
+  },
   "complete_retained_causal_nonlinear_checkpoint": {
     "conclusion": "No fixed PSD detector on labels16/8/24 with same firstexit/coefficient0/bothports/faithfulshell placement gives universal nonlinear EH up to nonzero fixed scale; principal coherent identity remains valid.",
     "consumer": "Complete the candidate test immediately rather than extrapolate a flat principal match. Exhaust the specified fixed positive three-label class.",

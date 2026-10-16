@@ -35,3 +35,28 @@ system marginal is not a full joint Euler solution or a reference128
 purification. Uniform full-grid preparations are outside the fixed-input
 trace-class continuum theorem. The original fixed-g/tau, all10 raw
 h^-2/#216 terminal is unchanged.
+
+## Complete preparation-information source
+
+The same owner, Sections8–10, now identifies an original informative
+label6/coefficient1 output. A full-rank128-shell family keeps all eight
+momenta,16 forms, reference128 and R fixed. The first-exit **marked event**
+is only a readout of the full tape; its probability has a positive
+fixed-time continuum limit. Classical Fisher grouping and the coherent
+BKM Hessian give opposite nonzero information curvatures. Any fixed full
+code contributes affine expected cost, so neither full-information
+candidate is the unchanged v8 action on that open preparation family.
+The owner's nonlinear preparation equations and necessary partition
+source are the scientific consumer; physical Info/admission are not selected.
+
+Changed calculation only:
+
+```sh
+python3 02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_preparation_information_source.py
+```
+
+PREPARATION_RESULTS.json and PREPARATION_VALIDATION.json preserve this
+new output and its source pins, normal/optimized identity and analytical
+review. The two earlier outputs/receipt remain unchanged. The new helper
+extracts only the pinned row/creator definitions; it does not run either
+earlier calculation, an entropy history enumeration, spectrum or Lean.

@@ -6188,3 +6188,18 @@ process. The consumer is now the actual complete code/Info binding and
 its physical field source; the port-cost component alone does not close
 it. Native primitive admission, equality with intrinsic Einstein sources,
 compatible joint refinement and the original terminal remain open.
+
+The same owner's Sections8–10 now compute a missing matter source rather
+than leave it as a choice of entropy. At all eight first-shell momenta,
+`rho(t)=I128/128+tX` stays faithful, retains the full reference and obeys
+the unchanged Rayleigh preparation equation with constant R. Actual
+Walsh label6/coefficient1 has full-tape first-exit-mark probability
+`C_h(1+t)`, where `C_h->(1-exp(-beta lambda0))(1-b)^2/16>0`.
+The complete pointer/coherent information Hessians therefore have
+opposite nonzero signs and a uniform Jensen gap, whereas the supplied
+v8 preparation price is constant. Arbitrary fixed full-code lengths,
+geometry-only subtractions and the existing heat partition do not
+repair this mismatch. The exact nonlinear information/preparation
+equations are supplied as the consuming source. Physical Info and
+admission, all field equations and the original terminal are not thereby
+selected or closed.

@@ -575,6 +575,22 @@ fixed-background complete-count law and the flat Majorana contraction.
 No old root, heat/spectrum census or Lean replay. Original fixed-g/tau,
 all10 raw h^-2/#216 terminal remains unchanged.
 
+The next consumer at d0e49f12 is the preparation-information source of that
+same complete tape. At fixed flat first-shell Delta=lambda I, retain all
+eight momenta,16 forms and reference128. Derive an actual informative
+Walsh output and a full-rank normalized preparation line with constant R.
+Use the full-tape first-exit **marked event only as a diagnostic readout**
+to test whether pointer/coherent information curvature survives fixed-time
+refinement. Compare with the affine preparation dependence of the given
+v8 price for every fixed full-history code, retaining the partition source.
+This is an off-shell action/source binding test, not a new physical Info
+choice, on-shell no-go or hidden preparation restriction. Sole new helper:
+sources/d0_complete_record_channel_2026-10-17/check_preparation_information_source.py;
+extend the same analytic owner and existing integrator consumers. The
+smallest decisive calculation is the actual label6/coefficient1 effect,
+full128 normalized preparation jets and exact marked-event complement.
+No old record/channel/root suite or lattice spectrum replay is required.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

@@ -18,6 +18,14 @@ The full pointer entropy, coherent record entropy and a supplied full-code
 operator price can all be computed on that same process, with their
 actual preparation/reference sources and distinct physical bindings.
 
+The preparation source is now separated explicitly: a genuine full-tape
+event distinguishes full-rank128-shell states with identical R. Its
+fixed-time continuum probability remains positive, so pointer/coherent
+information has a nonvanishing matter Hessian. No fixed complete code
+makes either candidate equal the unchanged v8 price on that open family.
+Sections8–10 give the actual new preparation equations and partition
+source required by a proposed physical binding.
+
 ## 1. Full output channel, not just survival
 
 Put A=hD_h/16=A*, alpha=p²h²/128, epsilon=2alpha, B=I-2p²A²,
@@ -385,3 +393,186 @@ control and the source costate are analytic arguments above. Native
 primitive/resource admission, complete code/Info selection, equality to
 intrinsic Einstein sources and compatible joint refinement remain open;
 the original fixed-g/tau/all10 raw h^-2/#216 terminal is unchanged.
+
+## 8. The actual tape retains preparation information at fixed energy
+
+Continuation from published d0e49f12. This resolves the next source test:
+can any fixed complete code make the preceding pointer/coherent information
+candidate equal the supplied v8 price on its whole preparation family?
+The answer is negative on an explicit full128 first-shell family. The
+separating information source survives fixed-time refinement.
+
+Keep constant C_r=nu c_r, 0<nu<1, b=sqrt(1-nu²), all eight first-shell
+momenta and all16 forms, so Delta_h=lambda_h I128. At the +axis0 momentum
+take phases (i,1,1,1) for the L4 control. In the literal Walsh order the
+existing output kappa=(label6,coefficient1) has
+
+```text
+N_kappa=(1-b)(Z0+Z1+Z2+Z3)/8,
+E_kappa=epsilon D_h N_kappa N_kappa* D_h.                 (20)
+```
+
+E_kappa sums both original golden ports. Neither a new detector nor a
+changed recording basis is installed. D_h flips occupation0, so
+
+```text
+E_kappa=epsilon lambda_h (1-b)²
+        (-Z0+Z1+Z2+Z3)²/64,
+<vac|E_kappa|vac>=c_h=epsilon lambda_h(1-b)²/16,
+<e1|E_kappa|e1>=0.                                      (21)
+```
+
+Here e1=c_1 vac is spatial role1, mask2, not the time one-form mask1.
+The parity formula uses only the occupation flip and D_h²=lambda_h I;
+it holds at every nonzero first-axis phase, not only the L4 control.
+The trace of the squared parity sum is64, hence
+Tr16(E_kappa)/16=c_h at each of the eight axis momenta.
+Let X be zero on seven momenta and
+`|vac><vac|-|e1><e1|` on +axis0. Then
+
+```text
+rho(t)=I128/128+tX, |t|<1/128,
+Tr rho(t)=1, rho(t)>0, Tr[rho(t)Delta_h]=lambda_h,
+Pr(kappa in round1)=c_h(1+t).                            (22)
+```
+
+Every form and momentum remains positively occupied. The actual amplitude
+C(t)=sqrt(rho(t)) is a normalized128-by128 preparation with the original
+reference128, without free state copies or reference projection. It obeys
+Delta_h C=lambda_h C, so the unchanged Rayleigh preparation Euler equation
+holds along the entire line. Its full second amplitude jet is essential:
+at t=0, C'=sqrt(128)X/2 and C''=-128^(3/2)X²/4. The second density derivative
+is zero only after both terms of (CC*)'' cancel. This does not assert the
+full field Euler equations or native admission for every preparation.
+
+### A first-exit mark gives a uniform full-tape separator
+
+Use the event in the **complete** n-round tape whose first nonblank output
+is kappa at either port. All later records remain unrestricted and retained.
+On the whole shell B is scalar and E_exit=e_h I, where
+`e_h=epsilon lambda_h-epsilon²lambda_h²/4`. The probability is exactly
+
+```text
+P_h(t)=C_h(1+t),
+C_h=[1-(1-e_h)^n] c_h/e_h.
+If n epsilon->beta>0 and lambda_h->lambda0>0,
+C_h->C0=(1-exp(-beta lambda0))(1-b)²/16>0.                (23)
+```
+
+Indeed e_h/epsilon->lambda0 and n e_h²->0, so
+`n log(1-e_h)->-beta lambda0`; also c_h/e_h tends to (1-b)²/16.
+
+This is a readout used to bound information in the full tape; it does
+not replace its price or entropy by a first-exit price. The same event
+and its complement form an exact complete two-bin marginal of that tape.
+Unlike a single weak round, its preparation distinction does not vanish
+at fixed positive record time.
+
+## 9. Full information has an additional, nonvanishing matter Hessian
+
+At fixed geometry the entire pointer law q_n(t) and coherent record state
+omega_n(t)=Gamma_n(rho(t)) are affine in rho(t). The expected length of
+**any fixed full-history code** is therefore affine too, even when it
+uses variable prefix lengths or includes all controller/archive outputs.
+This statement requires neither a product prior nor a chosen label cost.
+
+For pointer Shannon entropy in natural units, Cauchy–Schwarz within the
+event in (23) and its complement gives
+
+```text
+H_pointer''(t)=-sum_omega (q'_omega)²/q_omega
+ <=-C_h²/[P_h(t)(1-P_h(t))]
+ =-C_h/[(1+t)(1-C_h(1+t))]<0.                            (24)
+```
+
+Identically dark histories remain zero, and positive input rho(t) gives
+fixed support for every other finite-history effect. No logarithm of a
+zero outcome is differentiated. Thus the complete pointer action under
+the normalized path-weight binding has strict preparation curvature,
+despite constant survival spectrum, R and all geometric fields.
+
+For a given positive fixed code prior mu on the full tape, the operator
+relative-entropy candidate has the opposite curvature:
+
+```text
+A_mu(t)=D(omega_n(t)||diag(mu)),
+A_mu''(t)>=C_h²/[P_h(t)(1-P_h(t))]>0.                     (25)
+```
+
+Here is a direct finite-dimensional proof. On the fixed support of omega,
+put Y=Gamma_n(X), F the compression of the event projection, and
+P=Tr(omega F). In an eigenbasis of omega with eigenvalues r_i>0, write
+L_ij=(r_i-r_j)/(log r_i-log r_j), L_ii=r_i. The logarithm derivative gives
+`A_mu''=sum_ij |Y_ij|²/L_ij`; the mu term is affine and drops out.
+For A=F-P I, weighted Cauchy–Schwarz gives
+
+```text
+(Tr YA)² <= A_mu'' sum_ij L_ij |A_ij|²
+          <= A_mu'' Tr(omega A²)
+          <= A_mu'' P(1-P).
+```
+
+The middle bound follows from
+`L_ij=integral_0^1 r_i^u r_j^(1-u)du` and scalar weighted AM–GM,
+giving L_ij<= (r_i+r_j)/2; the last uses 0<=F<=I. Finally
+Tr YA=P'=C_h proves (25). This proof does not assume that omega and its
+source commute or that the retained reference is absent.
+
+For a fixed 0<a<1/128 and |t|<=a, both absolute curvatures are at least
+`C_h/(1+a)`. Their midpoint Jensen gap is therefore at least
+`C_h a²/[2(1+a)]`, tending to a strictly positive value. In particular,
+neither candidate converges uniformly to an affine preparation price on
+this interval, even after any geometry-only subtraction or affine
+expected-code correction. In phi units divide by log(phi). Any fixed
+nonzero overall calibration preserves the obstruction.
+
+The supplied v8 H+J+R is constant along (22): H,J depend only on the
+unchanged operator and Tr rho Delta=lambda_h. Consequently no fixed
+full code identifies either of these complete-information candidates
+with v8 on a relative-open full-rank shell family, at finite depth or
+with vanishing uniform error in the controlled fixed-time limit.
+This is a preparation-source binding result, not a no-go for all D0
+prices, a nonflat-root theorem, or a restriction of the physical matter
+domain to make two prices agree. An equality at a single preparation
+or on a smaller admitted family is not excluded.
+
+### The actual nonlinear preparation equation is explicit
+
+For the coherent candidate the full shell-density source is
+`K_mu(rho)=Gamma_n*(log Gamma_n(rho)-log diag(mu)+I)`;
+for normalized pointer action it is
+`K_pointer(rho)=-sum_omega(log q_omega+1) F_omega`.
+An interior trace-one preparation critical point requires the compression
+of the relevant K to be a scalar on the entire128 shell. For an actual
+full-rank amplitude C, this follows equivalently from K C=xi C.
+These are nonlinear information/preparation equations. The old equation
+Delta C=lambda C alone cannot replace them. The formulas describe the
+respective candidates; choosing one as physical Info still needs its
+same-process weight/readout law.
+
+## 10. What a physical code binding must now supply
+
+The original [golden code owner](../../03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean)
+defines binary direct/return weights and lengths, not a complete128-output
+label/coefficient code. The v8 factors128 and128^n are geometric
+multiplicities, not code lengths or Kraft weights. The literal engine's
+`encode()` explicitly calls its signed-integer serialization an audit codec,
+not native bits. Dimension counting cannot supply those missing prices.
+
+Nevertheless (24)–(25) do not depend on choosing those prices: every fixed
+full code has affine expected cost and cannot cancel the information
+curvature. The remaining constructive law must therefore specify the
+actual preparation/readout/weight diagram and its additional source,
+rather than insert missing code lengths until v8 agrees.
+
+The [partition-corrected branch owner](A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md)
+gives expected path action H_phi(q)-log_phi N for an unnormalized common
+history weight. If that action were equal to the fixed-shell v8 price,
+the necessary source here would be
+`d_t² log N=H_pointer,nat''(t)<0`. A geometry-only heat partition has
+zero t derivative and cannot supply it. Choosing N from this equation
+would be a new preparation-dependent law; it is not derived by the
+normalization identity. Thus this continuation computes the missing
+matter source, rather than silently imposing unit partition or dropping
+it. All original native-admission, Einstein-source and refinement
+obligations remain open.
