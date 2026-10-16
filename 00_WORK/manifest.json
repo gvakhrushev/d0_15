@@ -70,17 +70,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION.md"
     },
     {
-      "id": "WRK-A4D-FORCE-NUCLEAR-NORM",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify max Tr(sigma J(t)) = ||C(t)||_* and the support criterion |t·y| <= ||C(t)||_*, with a rank-at-most-2 density, without nonlinear continuation.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORCE-NUCLEAR-NORM.md"
-    },
-    {
       "id": "WRK-A4D-RANK8-SADDLE-ZERO",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
