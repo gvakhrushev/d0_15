@@ -59,17 +59,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     },
     {
-      "id": "WRK-A4D-RESEARCH-CLOSURE-RUNNER-WIRING",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Integrate the already accepted conservative certificate-input selector into the existing runner and test routing, preserving immutable evidence, failure behaviour and unknown-dependency fallback; demonstrate real shared-input selection without creating another runner or cache.",
-      "brief": "00_WORK/tasks/WRK-A4D-RESEARCH-CLOSURE-RUNNER-WIRING.md"
-    },
-    {
       "id": "WRK-A4D-LEAN-SCHUR-STATIONARY-TRANSFER",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
