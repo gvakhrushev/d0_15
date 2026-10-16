@@ -92,17 +92,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-SOURCE-REFLECTION.md"
     },
     {
-      "id": "WRK-A4D-TRANSVERSE-MATCHING-RESIDUAL",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Construct the explicit tangent and annihilator maps for the owned comparator/native equality graph and expose all ten omitted transverse Euler rows, without inventing a transverse dynamics or counterterm.",
-      "brief": "00_WORK/tasks/WRK-A4D-TRANSVERSE-MATCHING-RESIDUAL.md"
-    },
-    {
       "id": "WRK-A4D-PF-MEASURE-SOURCE-TRANSPORT",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
