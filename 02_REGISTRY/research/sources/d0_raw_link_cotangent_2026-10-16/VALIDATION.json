@@ -1,0 +1,38 @@
+{
+  "exact_checks": 47,
+  "normal": {
+    "elapsed_seconds": null,
+    "status": "PASS",
+    "stdout_file": "RESULTS.json",
+    "stdout_sha256": "319b78064c8ab3e1bbbb6bb4a28683093182479ec60fa75403f41201a4d1a2ed"
+  },
+  "normal_optimized_stdout": "BYTE_IDENTICAL",
+  "optimized": {
+    "command_flags": [
+      "-O",
+      "-B"
+    ],
+    "elapsed_seconds": 3.045,
+    "status": "PASS",
+    "stdout_retention": "captured in memory and compared byte-for-byte; no separate stdout file",
+    "stdout_sha256": "319b78064c8ab3e1bbbb6bb4a28683093182479ec60fa75403f41201a4d1a2ed"
+  },
+  "runtime": {
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "continuum_limit_or_uniform_raw_C0_remainder_claimed": false,
+    "old_check_entrypoints_executed": false,
+    "physical_admission_claimed": false
+  },
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py": "71ba142e284974db57d67c91a77ccd08a7e4f9759e8fc8daef7c5938774c0b28"
+  },
+  "source_sha256": "5c4caead41b5256119161349332dc7cef5c752bb1194d8bd0751fc598e77a491",
+  "status": "PASS",
+  "validation_method": "Metadata record of the already completed narrow normal and optimized executions; no mathematical rerun.",
+  "validation_record_created_at": "2026-10-16T20:29:49.264732+00:00"
+}

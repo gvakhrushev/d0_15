@@ -1,0 +1,25 @@
+{
+  "artifact_pins": {
+    "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/check_second_order_raw_source.py": "1c6d97e72427300c69164c8f8dd90f6761d59683e6500b1c942db18d6b6c8bf0"
+  },
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/check_second_order_raw_source.py",
+    "python3 -O 02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/check_second_order_raw_source.py"
+  ],
+  "new_exact_check_count": 62,
+  "normal_and_optimized_byte_identical": true,
+  "old_entrypoints_executed": false,
+  "physical_heat_proof_replaced": false,
+  "runtime": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "scientific_output_sha256": "eca1ac86310b9152a6c7820513d1743652fcc4d0ed0516d6126fdac6dc325b62",
+  "scope": "NEW_EXACT_RAW_ROW_AND_SCALAR_CLOCK_IDENTITIES_ONLY",
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da"
+  },
+  "source_ref": "ac79c0ed7cc5f2508d61bec32d2d82d323354c94",
+  "status": "PASS",
+  "unscaled_raw_link_o_h2_claimed": false
+}

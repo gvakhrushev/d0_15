@@ -127,9 +127,17 @@ tests; its actual R-source is computed. A reference128 purification is not
 a4-vector, so its native readout/chain rule must be derived. The retained
 boost observable already distinguishes the cone, but has no registered
 price binding. Finite h² effects are not excluded by continuum blindness:
-the complete candidate coefficient now retains normalizer, clock and
-preparation jets. Its uniform raw C1 remainder and actual admitted branch
-are the next estimate, rather than another old-root or heat-value replay.
+the complete coefficient retains normalizer, clock and preparation jets.
+The [second-order estimate](A4D_SECOND_ORDER_HEAT_REMAINDER.md) supplies
+the controlled fixed-positive-time H+J bridge. The [raw-link cotangent](A4D_RAW_LINK_COTANGENT_JET.md)
+retains the required inverse coefficient1/12. Actual R correctors remain
+a separate equation: the [exact full-shell test](A4D_CONE_PREPARATION_FIRST_CORRECTOR.md)
+excludes unchanged faithful matter on the exact-LC winding cone, despite
+its vanishing trace correction. The [reference128 reading boundary](A4D_REFERENCE128_OBSERVER_READING_BOUNDARY.md)
+also proves that a regular norm centre leaves the causal cone fibre.
+Next derive compatible matter/field jets and the admitted reference
+readout, then compare the complete source with Einstein; do not replay
+old roots or assume unchanged preparation.
 
 The coordinated [stored metric-image calculation](sources/d0_native_gr_source_image_2026-10-16/RESULT_RU.md)
 computes the permitted ranks10/9/8/7/5 and a surviving Bianchi-compatible

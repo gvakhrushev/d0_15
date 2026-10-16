@@ -443,6 +443,41 @@ norm на actual admitted branch и вычислить source K2+K2_clock+R2.
 G-Hodge curvature coefficient. Link/observer/matter equations, original
 fixed-source comparator и независимый physical coefficient сохраняются.
 
+### 7.1.1. Количественный heat/source consumer и actual preparation test
+
+Последующее [доказательство остатка](A4D_SECOND_ORDER_HEAT_REMAINDER.md)
+выделяет controlled C192 класс с fixed positive beta и exact proper
+path transports. Оно доводит H+J разложение до второго порядка;
+independent raw rows имеют остаток O(h^(9/4)) в same-grid raw sum
+норме. Они выводятся из actual cyclic kernels, а не из дифференцирования
+scalar value estimate. Сохраняются все mesh modes,
+moving Z и полный finite-record source correction. Matter R требует
+своих actual correctors; strong o(1) compactness не даёт их скорости.
+
+[Exact link-cotangent jet](A4D_RAW_LINK_COTANGENT_JET.md) связывает
+smooth connection source с raw leftlink chart delta A=h xi A.
+Во второй inverse coefficient стоит1/12, не1/6; moving density и
+настоящий boost transpose сохраняются. Это коэффициентное преобразование,
+не inverse на произвольных oscillatory tests.
+
+[Actual first-corrector calculation](A4D_CONE_PREPARATION_FIRST_CORRECTOR.md)
+уже решает одну из ранее отсутствовавших preparation проверок.
+Для theta=y на period2pi торе и exact LC sampling весь128-dimensional
+первый shell имеет Tr(P A1 P)=0, но Tr((P A1 P)^2)=52/s^4.
+Faithful full-shell C0 поэтому не удовлетворяет resonant equation
+ни при каком C1: минимальный squared residual13/(32s^4).
+Это исключает unchanged faithful preparation в данной семье;
+другие preparations и выведенные field/link first jets остаются возможны.
+
+[Полный reference128 consumer](A4D_REFERENCE128_OBSERVER_READING_BOUNDARY.md)
+строит correlation на том же128 reference, без выделения колонки.
+Его observer alignment имеет rank0. Norm-centering имеет rank3,
+но сохраняет cone fibre при fixed(G,form matter); он не чинит binding.
+Beta pointer точно читается из существующих golden gate/cut, однако
+его admitted перенос/инициализация на reference пока не выведены.
+Эти результаты заменяют непроверенные preparation/readout допущения
+конкретными ограничениями; они не вводят новую цену или action selector.
+
 ### 7.2. Calibration остаётся свойством того же процесса
 
 У v8 alpha=p^2 h^2/128, m=2n и beta=m alpha выведены из данного

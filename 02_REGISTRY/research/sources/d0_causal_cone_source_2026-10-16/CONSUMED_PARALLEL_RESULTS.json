@@ -13,6 +13,21 @@
     },
     "source": "514b2074"
   },
+  "balanced_path_scope_correction": {
+    "conclusion": "The producing owner, result, checker metadata and ledger now explicitly restrict the noncrossing certificate to the inherited13D block. Additional full-Lorentz directions remain open. Historical intake hashes above remain historical.",
+    "scientific_replay": false,
+    "sha256": {
+      "02_REGISTRY/RESEARCH_LEDGER.md": "8a6e136f4a6ec35a8f01321b028bffc158a1a20931caab2d98d97ea0f18eeb25",
+      "02_REGISTRY/research/A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md": "14032a01d9077bdaaa19553163eb34a1c98a41ebcbbbb579894679263f38177c",
+      "02_REGISTRY/research/README.md": "e162d0b2179b690012ed9f870d00054cec762db64dee2a3d14cbe0a92de22109",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/INPUTS.json": "9f54ee7b1ac046687a221c77fb104169a4f135d23655a9b99c8d8e47df9df44b",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/README.md": "663dbacbabfb57c7da6efa00d73632a01b82772d3503123eba5e63c5036be05b",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/RESULT.json": "074de08190b2ace2e61f028c0af3eb7704bfac65242dbcdf31e498c12109a5be",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/VALIDATION.json": "3307ac02f3448e6e16febef029e74f85b88719acb280cbf10fed5cb582521d3b",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/check_balanced_path.py": "7b5a79e4e73de8055bc2aa83acdd62dcf3eec41c3f67d079cb963197709bb785"
+    },
+    "source": "ac79c0ed"
+  },
   "consumers": {
     "curved_tensor": "projected16 actual curvature source; elliptic coefficient-level inverse/local variable isolation, not fullprice or Lorentz closure",
     "flat_moduli": "finite genuine-root second-response mismatch rules out unqualified EH+Lambda+sameR identity; fixedbeta theta source retains global shape",
@@ -23,6 +38,39 @@
     "curved_tensor_exact": 427,
     "curved_tensor_mutations": 4,
     "flat_output_sha256": "53e542e245ca08915082891ea8d92b4e88f51b1294d95cd05839929cc34e4ac4"
+  },
+  "second_order_source_checkpoint": {
+    "base": "ac79c0ed7cc5f2508d61bec32d2d82d323354c94",
+    "conclusion": "Controlled fixed-beta H+J raw same-grid second source remainder O(h^(9/4)); actual matter continuation and native reference law separate. First faithful exact-LC cone amplitude corrector is obstructed.",
+    "consumer": "causal bridge7.1 and original primary memo, same Draft334",
+    "new_bounded_exact_checks": {
+      "cone_first_corrector": 17,
+      "raw_link_cotangent": 47,
+      "raw_source_and_clock": 62,
+      "reference128": 138
+    },
+    "old_scientific_replay": false,
+    "sha256": {
+      "02_REGISTRY/research/A4D_CONE_PREPARATION_FIRST_CORRECTOR.md": "13e5516b88af197836a5a63f4cac31d7f0d22b77906c93f3e9ac5721abeae271",
+      "02_REGISTRY/research/A4D_RAW_LINK_COTANGENT_JET.md": "9774a430a21450010b17ef9c787014885a2ff69db2c1ba21036f02e82c2a56f5",
+      "02_REGISTRY/research/A4D_REFERENCE128_OBSERVER_READING_BOUNDARY.md": "cf7f492a44533a93cb23ba09f0cfd48da7cabf8032eed613c871b567f678d88a",
+      "02_REGISTRY/research/A4D_SECOND_ORDER_HEAT_REMAINDER.md": "749e3817e2a3c268f07fa949cc8054ed13d68c3989aedd9e8397f2d92f1e1614",
+      "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/README.md": "6a58a980ab2848026e589fdab99fa557c22254196e8241b1d7afcd65a7d6a680",
+      "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/RESULTS.json": "d6be5f95fbd203ac6fa6b1ca6b04796b91ee2349efee83b96415eaa8402819ad",
+      "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/VALIDATION.json": "a8631585828951be61a3cabd96ee7a2ddc3cfcc110f9bebbf89ba1799de9e3a2",
+      "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58",
+      "02_REGISTRY/research/sources/d0_raw_link_cotangent_2026-10-16/README.md": "d4bd2aefb303bb7656b0f87a534979fdef7466b2cbb697fa0befc733a2be69fa",
+      "02_REGISTRY/research/sources/d0_raw_link_cotangent_2026-10-16/RESULTS.json": "319b78064c8ab3e1bbbb6bb4a28683093182479ec60fa75403f41201a4d1a2ed",
+      "02_REGISTRY/research/sources/d0_raw_link_cotangent_2026-10-16/VALIDATION.json": "b66b805f6725c920edb51bb57e92085dc0fafcc641f011d654be13702b9b1b75",
+      "02_REGISTRY/research/sources/d0_raw_link_cotangent_2026-10-16/check_raw_link_cotangent.py": "5c4caead41b5256119161349332dc7cef5c752bb1194d8bd0751fc598e77a491",
+      "02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/RESULTS.json": "1066adf4098a2e66c07c78951f9f2edc4d9975ff7ac9d369b9251b0e6e3f5867",
+      "02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/VALIDATION.json": "de7cd77003bc7a98f1a91a952fe885d1e888f22f21478a644cc568b7dbfe3450",
+      "02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/check_reference128_observer.py": "ded77bb671cdb2b58cec6389f5b7fe4bf697906383c0a1ae4744256b40d6d6bb",
+      "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/README.md": "159ded435597e6ea3a79ba4de2ac4f705c56a82d14761b6c2fe810d5a5706f35",
+      "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/RESULTS.json": "eca1ac86310b9152a6c7820513d1743652fcc4d0ed0516d6126fdac6dc325b62",
+      "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/VALIDATION.json": "01dc29a5d34e74004880e27e66505e077b873294736e9dbfc882da08f73c6aa9",
+      "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/check_second_order_raw_source.py": "1c6d97e72427300c69164c8f8dd90f6761d59683e6500b1c942db18d6b6c8bf0"
+    }
   },
   "sha256": {
     "02_REGISTRY/research/A4D_CURVED_TENSOR_A4_SOURCE_AND_ELLIPTICITY.md": "b7f71bb40a0cba8468ff81eb69f48694e01aa8f53fd95c3d9440b3079276a8a9",

@@ -1,0 +1,17 @@
+{
+  "checker_sha256": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58",
+  "exact_check_groups": 17,
+  "normal": "PASS",
+  "old_root_spectrum_or_Lean_replay": false,
+  "old_scientific_entrypoints_executed": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "python": "3.9.6",
+  "result_sha256": "d6be5f95fbd203ac6fa6b1ca6b04796b91ee2349efee83b96415eaa8402819ad",
+  "schema": "d0-cone-matter-first-corrector-validation/1",
+  "scope": "excludes a differentiable faithful-full-shell stationary amplitude continuation on this fixed exact-LC sampled cone; arbitrary amplitude C1 cannot cancel the resonant block",
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/check_causal_cone_source.py": "3dd6e594e106f7bb5f6453bf9ab5f1bfc34dd4cf891d7d2fa83531b6353c059a"
+  },
+  "sympy": "1.14.0"
+}

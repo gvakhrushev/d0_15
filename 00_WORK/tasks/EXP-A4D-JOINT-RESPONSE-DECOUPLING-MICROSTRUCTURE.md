@@ -234,6 +234,37 @@ matter source and retained boost signal; independent source/coefficient
 review. Write paths: this brief, README/primary/route, the new owner and
 its source folder. No old root/kernel/Lean replay or task/claim promotion.
 
+## Second-order source and actual preparation consumer — 2026-10-16
+
+`A4D_SECOND_ORDER_HEAT_REMAINDER.md` sharpens the former formal h²
+premise on controlled C192 backgrounds, fixed positive beta and exact
+proper path transports. Its consumer is the same full native source, not
+a new action or replacement comparator. The raw cyclic kernel convention
+uses independent coframe, physical leftlink delta A=h xi A and observer
+rows on the same finite test space. Finite-clock source retains P=B^(m-1),
+global Z and the differentiated clock coefficient; rough variation jets
+are not frozen. `A4D_RAW_LINK_COTANGENT_JET.md` supplies the ordered
+path/raw cotangent conversion with inverse coefficient1/12.
+
+Actual matter continuation is tested separately in
+`A4D_CONE_PREPARATION_FIRST_CORRECTOR.md`: on period2pi theta=y with
+exact LC sampling, the entire first128 shell has Tr A1=0 but squared
+resonant norm52/s^4. No first amplitude C1 preserves its faithful state;
+minimum squared residual13/(32s^4). Other leading preparations and actual
+field/link first jets are not excluded and must satisfy their own rows.
+`A4D_REFERENCE128_OBSERVER_READING_BOUNDARY.md` retains exactly128
+reference dimensions and the native gate/cut pointer, but correlation
+alignment is rank0; norm centering is rank3 yet leaves the causal fibre.
+Neither is adopted as a new native observer law.
+
+Write paths: these four bounded owners, their new source folders, existing
+causal bridge/primary/route/README and this brief. Smallest checks: new
+exact noncommuting cotangent jets, full128 first-corrector matrix, full16
+cyclic raw rows/clock gradient and reference128 identities, plus independent
+analysis of the quantitative proof. No old root/heat catalogue/Lean replay.
+The original fixed-g/tau/all10/raw h^-2/#216 terminal and physical admission
+remain unchanged. No new task, lifecycle transition or public claim.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

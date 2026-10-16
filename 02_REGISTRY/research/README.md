@@ -28,7 +28,11 @@ Current gravity packets:
 - `A4D_ELIN_ESP_EXECUTABLE_OWNER.md` — exact executable recovery of the two-dimensional Lorentz E-LIN response family and deterministic purely spatial `E_sp` owner; no #262/#265 fitting.
 - `A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md` — outward q3300 interval proof of inertia `12+/1-` only on the inherited 13-coordinate stored-source restriction along the balanced path; the enlarged full-Lorentz Hessian and coupled directions remain open.
 - `A4D_CURVED_TENSOR_A4_SOURCE_AND_ELLIPTICITY.md` — full curved tensor16 `a4` source, Einstein-positive-G compatibility and exact elliptic principal symbol; coefficient-level, not full physical stationarity.
-- `A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md` — exact continuum factorization through `(G,T,measure,form matter)`, three observer-cone directions and same-matter P1 source; reference128 readout and uniform finite-source remainder remain open.
+- `A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md` — exact continuum factorization through `(G,T,measure,form matter)`, three observer-cone directions and same-matter P1 source; reference128 readout and actual matter continuation remain open; controlled second-order H+J refinement has a separate proof.
+- `A4D_SECOND_ORDER_HEAT_REMAINDER.md` — controlled fixed-beta second-order heat/source expansion with explicit graph, Galerkin, cyclic-row and clock bounds; no physical comparator or matter continuation is assumed.
+- `A4D_RAW_LINK_COTANGENT_JET.md` — exact noncommuting parallel-path/raw-link conversion through h², both adjoint pairings and moving density; inverse coefficient1/12.
+- `A4D_CONE_PREPARATION_FIRST_CORRECTOR.md` — full128 resonant matrix excludes unchanged faithful amplitude continuation on the exact-LC winding cone, not all prepared branches.
+- `A4D_REFERENCE128_OBSERVER_READING_BOUNDARY.md` — same128 correlation, native gate/cut pointer and failed alignment; regular norm centering still leaves the cone fibre.
 
 - `MEMO_A4D_Q0_STATIONARY_SHEET_STRESS.md` — exact two-mode real q0 sheet: mode B is an identity-link joint vacuum; on mode A the whole complex metric-silent line, after the unique even order-ε² repair, keeps an order-ε³ connection obstruction. The odd kernel at that order does not move the class.
 - `A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md` — separates moving-germ, frozen cross-character, physical cokernel and N0 nonlinear carriers; records the harmonic-tower collapse as a bounded certificate target and narrows the live nonlinear gate to #260 degree-7 odd resonance.
