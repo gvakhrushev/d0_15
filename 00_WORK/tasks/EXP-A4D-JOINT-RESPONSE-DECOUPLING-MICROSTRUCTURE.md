@@ -76,6 +76,14 @@ and nonlinear `E2 C+2E1 C1=0` / source-neutral M_v compatibility at that
 interior kernel, alongside the actual native transition/action. A field
 crossing does not establish a nonlinear joint branch or the original terminal.
 
+The coordinated `5ff92208` packet now localizes the unique q3300 legacy
+Schur crossing to `[0.43032,0.430405]`. Its grade-four source-neutral
+pairing is strictly positive on the actual kernel. Preserve the eight-file
+`sources/d0_q3300_mixed_crossing_witness_2026-10-16/` packet and reported
+receipt by exact input identity; do not repeat this same legacy crossing
+search. Its four-source fibre is the stated scope, not the new full-Lorentz
+domain. The old mixed path fails the12 extra boost rows independently.
+
 Write surface: this brief, the primary memo, complete-field-source synthesis
 and its existing research consumers. Preserve the whole readable research
 payload; do not restore old lifecycle files. The two inherited shift-irrelevance
