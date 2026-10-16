@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 12 | 1 | 0 | 0 | 13 | 1 / 5 |
-| **Total** | **15** | **1** | **0** | **1** | **17** | **2 / 10** |
+| WORKER | 12 | 0 | 0 | 0 | 12 | 0 / 5 |
+| **Total** | **15** | **0** | **0** | **1** | **16** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -31,7 +31,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-RANK8-SADDLE-ZERO | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-LEAN-MV-TANGENT-SPAN | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-RANK-BIRTH-DIRECTIONS | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-N06-N07-RANK-HANDOFF | WORKER | IN_PROGRESS | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 
 ## Registry Health & Metrics
 

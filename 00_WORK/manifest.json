@@ -189,17 +189,6 @@
       ],
       "exit_condition": "Describe exactly the 28800 rank-birth amplitude directions invisible to the first density derivative, without calling them gauge.",
       "brief": "00_WORK/tasks/WRK-A4D-RANK-BIRTH-DIRECTIONS.md"
-    },
-    {
-      "id": "WRK-A4D-N06-N07-RANK-HANDOFF",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Tabulate which full-rank N06/N07 formulas keep their domain and which must be replaced by the rank-aware operator on the lower-rank branch, with no new calculation.",
-      "brief": "00_WORK/tasks/WRK-A4D-N06-N07-RANK-HANDOFF.md"
     }
   ]
 }
