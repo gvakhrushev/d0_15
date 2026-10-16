@@ -156,6 +156,24 @@ this fine record; full native Cost−Info binding remains to be derived.
 Use this actual observable in that binding, without adding a desired action
 term or mistaking one cone row for all10 Einstein equations.
 
+The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
+now supplies a decisive Einstein boundary: its actual H+J coefficient is
+strictly positive on a longitudinal germ with all10 linearized Einstein
+rows zero. This is a nonstationary-background action/source test, not the
+original fixed-g/tau exact-root terminal. It prevents treating either a
+nonzero h² signal or our one-family retained-history EH identity as the
+full Einstein action. Do not fit that failure away with a residual stress.
+
+The [native action-selection result](sources/d0_native_action_selection_2026-10-16/RESULT_RU.md)
+gives the same scalar price an exact survival/blank event form; the
+[conditional blank dilation](sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md)
+explains logdet, M and1/j on a fully occupied enlarged fermionic carrier.
+That carrier, its filled preparation, control z coin and native Cost−Info
+selection are not admitted by those identities. The concrete next map is
+one admitted retained program, its actual preparation/readouts and complete
+price/source. Our fine first-exit event supplies actual causal record data
+for that map; it does not select a new history penalty.
+
 The coordinated [stored metric-image calculation](sources/d0_native_gr_source_image_2026-10-16/RESULT_RU.md)
 computes the permitted ranks10/9/8/7/5 and a surviving Bianchi-compatible
 source. A conformal row completes one fixture but fails an exact exceptional

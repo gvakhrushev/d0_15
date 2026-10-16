@@ -506,6 +506,16 @@ variation коэффициент тоже меняется. Связь full nati
 retained observable и совместные field/matter equations ещё требуются.
 Continuum D-factorization поэтому не есть full-history blindness.
 
+Параллельный [finite-response Einstein-test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
+показывает границу этой сборки: actual H+J h² coefficient строго положителен
+на longitudinal germ с нулевыми всеми10 linearized Einstein rows.
+Поэтому one-family EH reading выше не превращается в full-action identity.
+[Event-selection](sources/d0_native_action_selection_2026-10-16/RESULT_RU.md)
+и [условный blank dilation](sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md)
+дают точную событийную форму прежней цены, но filled many-body carrier,
+z coin и полная native Cost−Info семантика остаются отдельными входами.
+Их нельзя молча поместить в исходный16-component matter carrier.
+
 ### 7.2. Calibration остаётся свойством того же процесса
 
 У v8 alpha=p^2 h^2/128, m=2n и beta=m alpha выведены из данного

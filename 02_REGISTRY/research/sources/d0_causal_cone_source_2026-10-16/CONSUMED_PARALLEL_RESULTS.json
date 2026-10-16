@@ -61,6 +61,51 @@
     }
   },
   "integration": "additive merge preserves all13 incoming paths; no old scientific replay",
+  "parallel_complete_price_and_source_intake": {
+    "all_disjoint_source_bytes_match": true,
+    "boundary": "positive fixed-beta scalar-price longitudinal source is not pure EH; Slater/no-leak price reader enlarges carrier and requires coin/preparation/admission; original fixed-g/tau terminal remains open",
+    "preserved_paths": 25,
+    "primary_appendix_preserved_exactly": true,
+    "reported_action_selection_checks": 41,
+    "reported_blank_dilation_checks": 36,
+    "reported_finite_response": {
+      "exact_groups": 41,
+      "global_sign": "analytic, not rounded2.91 diagnostic",
+      "mutations": 4
+    },
+    "reported_full_shell": {
+      "exact_groups": 23,
+      "normal_optimized": "producer PASS_IDENTICAL_JSON"
+    },
+    "scientific_replay_by_this_intake": false,
+    "sha256": {
+      "02_REGISTRY/research/A4D_CONE_FULL_SHELL_FIRST_JET_NO_GO.md": "3cd3cc9b3c459f32ca74d72bd84165c3690a4169152a1c8d8ac22d0868eb3284",
+      "02_REGISTRY/research/A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md": "df750346554b41fadce85615bc0bc7cc596c497a3c01783e89df693d46a31319",
+      "02_REGISTRY/research/sources/d0_cone_full_shell_first_jet_2026-10-17/README.md": "73c946b759d132e91c2bc697d46c3ca9fd2872660b85da7d17ae2bd6427ee004",
+      "02_REGISTRY/research/sources/d0_cone_full_shell_first_jet_2026-10-17/RESULT.json": "0640081bfa65c0f131e78f254f54399d7e1616a91219a2d53b91a7aa748da401",
+      "02_REGISTRY/research/sources/d0_cone_full_shell_first_jet_2026-10-17/VALIDATION.json": "a7a84f5d7710deccfce56e61981958c9b8cda0eb087314519d7c6a76a807b757",
+      "02_REGISTRY/research/sources/d0_cone_full_shell_first_jet_2026-10-17/check_full_shell_first_jet.py": "18a677df5bdf5a926f553bfa2fef6c2660376d60d0d9744e22c9dd48959cc98e",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/CURRENT_SOURCE_DELTA.md": "0aa5bb8e8f4bbf65ac84957e42b7176451a35a006227817ad21bd68153b266ec",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/INPUTS.json": "14bb314f1342949ec6a8c581b5ee409b5b9e3d76cd8b94243b7fa96d2452b290",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/README.md": "aa9f2c9b48c62db0d453ebb684d72a50a2a831beab7ab109dc2e75527cf1c11d",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/VALIDATION.json": "f73facad236fdbcf9bf424ab8a40369c92a2a8200fba4f817d49b53c0b0be70b",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/check_exact.py": "4fd24445dc611aeae003140ec321da746c0933a3edebd2a981de29b3251df2d6",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/continuum_oblique.py": "54fd2b2a575aaef4175ba1a37697f8e8ce4aa4f107d42d4e5d4f4af938a68139",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/dense_check.py": "576c6c261d008ee03c371eef29379af6921bf8c7d3996a1f8fc79ddbe7b067d6",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/finite_symbol.py": "bc6cae0308fbd996f3a6fd9445dabaa4d9d19a5ae363b8ef111bb900f10f317e",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/mutations.json": "d02fb300f4ee5c040040ab13791ccef7671050061e339243c8fa9831a6c38a82",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/result.json": "1c3b04cc4314f62883e7f061104aec59b861dff9f5139ea0502feff8928875ce",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/run_validation.py": "41ee0d59644ac6c516d757d5a22bf4fdf0568a4edc8dd36ed01c71ec285e5351",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/test_mutations.py": "591384a2b192a0f795a4ea30b9138bb40447783307cfb46d0aa3d3b9074da650",
+      "02_REGISTRY/research/sources/d0_native_action_selection_2026-10-16/RESULT.json": "7cb72820aa19746c6ea2ad11ae7353310a6f72a57d19234bb3566351c0174c98",
+      "02_REGISTRY/research/sources/d0_native_action_selection_2026-10-16/RESULT_RU.md": "b6923278161cfbaa48a70f4cf775caca76d19bac00ff08cd8afa2e0e6a175f04",
+      "02_REGISTRY/research/sources/d0_native_action_selection_2026-10-16/check_selection_gate.py": "c9e0a74f53cd99ecd097cf731d7be79a11bd8b2912f7319b58d0d1d01df60877",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT.json": "3d894b6c41a25a4749aa0ff70cbf51172f36c81e348681e7e4340adb6fa6b717",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md": "e7e3724f8b8c9622a65a1b88b96b7f44582f3d2fc873d9f0dc4d0f3ff15f15ac",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/check_feedback_dilation.py": "0bdd25adbfd4c9cc99f2bf58ddbc9f6cbed07e15cef91abda729986cbf15444b"
+    },
+    "source": "9ece9146"
+  },
   "reported_checks_not_reexecuted": {
     "curved_tensor_exact": 427,
     "curved_tensor_mutations": 4,
