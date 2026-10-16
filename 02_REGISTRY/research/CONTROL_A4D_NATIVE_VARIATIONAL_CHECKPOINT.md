@@ -2287,7 +2287,7 @@ at shared fixed (eta=log2,z), with the scene inside its binary passport,
 gives zero scene jet, zero current-feedback jet and positive heat jet.
 Therefore those three terms alone are not stationary on this matter tangent.
 This conclusion remains conditional because no repository owner yet identifies
-their readouts as one admitted (S_{m coupled}). The shared-scene, constrained
+their readouts as one admitted (S_coupled). The shared-scene, constrained
 price and joint-quotient checkers were each replayed in the new certificate.
 
 The exact supplement records 1518 controls, 128 actual executor transitions,
@@ -2425,32 +2425,80 @@ stationarity comparison. The receipt and replay report are
 `a4d_local_record_to_matter_intake_replay_2026-10-16.json` in
 `02_REGISTRY/research/certificates/`.
 
-## Golden-gate operator bridge — 2026-10-16
+## Golden-gate operator and exact native-shift bridge — 2026-10-16
 
-The v3 moving-preparation channel has an exact algebraic realization candidate
-from the already-owned golden two-port gate. For the operator-valued comparison
-`Gᵀ diag(I,U) G`, its two first-port outputs are `K₀=pI+p²U` and
-`K₁=ap(U−I)` under the owned gate relation `a²=p`. The scalar specialization
-is Lean-proved equal to the existing `GoldenOrderInterferometer.output`. For
-any return-matrix family indexed by the actual type `D0.Role`, the failed-port
-effect is Lean-proved as
-`(p³/4) Σᵣ (Uᵣ−I)ᵀ(Uᵣ−I)`; the owned role cardinality is four. The coefficient
-and the proposed difference operator therefore come from the existing gate
-and role-indexed returns rather than an independent fitted coefficient.
+The operator-valued comparison `Gᵀ diag(I,U) G` derives its two first-port
+outputs from the owned golden gate: `K₀=pI+p²U` and `K₁=ap(U−I)` under `a²=p`.
+The scalar specialization agrees with `GoldenOrderInterferometer.output`.
+The generic four-Role failure-effect identity is now instantiated on the
+complete finite cochain basis
+`ArchiveCochainBasis N = ArchiveRolePhaseGroup N × ArchiveFockState`: each
+matrix is the permutation representation of the owned `cochainForwardShift`.
+Lean proves the matrix action agrees on every cochain, proves orthogonality,
+and proves the native four-shift effect
+`(p³/4) Σᵣ (U_{N,r}−I)ᵀ(U_{N,r}−I)`.
 
-The certificate contains eight Lean propositions, resolves all declarations,
-uses only standard Lean axioms and has no `sorryAx`; its owner blobs are pinned
-to D0 baseline `a97735a78ed0295d2e499078232d380bad26f20a`. The precise report is
-[A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md](A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md), with its
-capsule, compiler output, receipt and checker under
+The capsule prints and checks eleven propositions with no `sorryAx` and only
+standard Lean axioms. Eight D0 owner blobs are pinned to baseline
+`a97735a78ed0295d2e499078232d380bad26f20a`. The report is
+[A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md](A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md); its capsule,
+compiler output, receipt and checker are under
 `02_REGISTRY/research/certificates/`.
 
-This closes the gate-level coefficient and the failure-effect algebra over
-role-indexed return matrices. It does not yet prove a faithful finite-matrix
-representation of each `cochainForwardShift`, physical admission of the
-controlled returns, retained-register averaging or the fixed count window.
-The source/Ward comparison on all ten metric slots and 24 link directions,
-native stationarity, curved solution, soundness/recovery and GR remain open.
-The next exact step is the matrix representation/intertwiner for the four
-owned cochain shifts, followed by deriving the admitted record/count event
-from an existing owner without a new selector.
+This closes the abstract-to-native finite-matrix identification for the flat
+cochain shift and the corresponding gate-level effect algebra. It does not
+admit controlled returns, retained-register averaging or the fixed count
+window; nor does it identify the full site × Fock carrier with the submitted
+site-only `L`-torus Fourier normalization. The common `H+J+R`, constrained
+`(q,D,b,m)` tangent, source/Ward comparison on all ten metric slots and 24
+link directions, native stationarity, curved solution, soundness/recovery and
+GR remain open. The next proof remains physical admission and derivation of
+the record/count event from an existing owner, followed by its full constrained
+variation.
+
+## Incoming candidate variation results integrated — 2026-10-16
+
+Two new main-branch research packets were merged into this control checkout and
+replayed locally:
+
+- `d0_medium_preparation_second_variation_2026-10-16/second_jet_check.py`
+  passes 53 checks. It gives a candidate matrix second jet on the explicit
+  safe spectral interval, including a genuinely noncommuting example with
+  `D²A*=-10.465078493541...`; the independent finite difference and Schur
+  diagnostics agree to `1.6×10⁻¹²` and `3.7×10⁻¹⁰`. This is not the Hessian of
+  the admitted full dynamics and does not select a preparation.
+- `d0_medium_anisotropic_normal_source_2026-10-16/anisotropic_normal_source_check.py`
+  passes the exact rational tests. It finds `Q₂=187/2` for the two-shape
+  anisotropic covariance and `Q₂=2483/50` when only the shape frame is rotated;
+  the joint frame rotation preserves the value. The output explicitly remains
+  `stress: covector_only`: no admitted measure or factorization through metric
+  variations is supplied.
+
+Both results are useful only after their missing native input is derived. The
+second jet can bound a nonlinear prepared-price solver on its stated faithful
+interval; the anisotropic covector cannot be used as a physical source without
+an owner-derived measure and metric factorization. Neither supplies physical
+admission of the golden controlled return or count event. Thus the next
+critical-path task stays focused on the actual retained-record owner and its
+allowed transitions, then the common constrained variation and source
+comparison. No claim row, parent terminal, physical law or GR status changes.
+
+## Finite source reflection tool integrated — 2026-10-16
+
+The newly merged `D0.Research.SourceReflectionKernel` gives exact finite
+coordinate lemmas useful for M05. If `L : X → Y` and `W : Y → X` satisfy the
+explicit right-inverse premise `L ∘ W = id_Y`, then covector pullback by `L`
+is injective and an equation `a = L*e + r` reconstructs
+`e = W*(a-r)`. The direct residual `r` remains in the formula. A bound on
+`W` in `ℓ∞` gives the corresponding `ℓ¹` bound on the reflected covector.
+For symmetric `4×4` tensors, the ten-slot packing with weight two off the
+diagonal exactly reproduces the full Frobenius pairing.
+
+The narrow build passes with thirteen checked propositions and standard Lean
+axioms only. This is finite linear algebra conditional on `W`: it supplies
+neither existence/regularity of a right inverse nor its physical/native
+admission. It also does not cancel a direct internal source. The M05 next step
+is to derive the actual map on all ten metric slots with all 24 link directions
+and matter retained, classify its range and cokernel, and prove or refute the
+required right-inverse bound on that actual constrained carrier. No source,
+Ward identity, stationarity or GR conclusion is promoted here.

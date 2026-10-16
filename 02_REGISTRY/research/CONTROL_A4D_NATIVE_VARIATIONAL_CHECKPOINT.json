@@ -2640,7 +2640,11 @@
     },
     "preserved_incoming_strategy_commits": [
       "0276705b3f63bfa5a1ba54f3c671132e802993b0",
-      "b640cacb5e404c10d71d6e9503cf34f3dc82a443"
+      "b640cacb5e404c10d71d6e9503cf34f3dc82a443",
+      "fabd054fc0c4fc337776e8dcc66899213ec1677b",
+      "eb29ff15cc9249cde691cc30ada104ffdde7d15e",
+      "ff723541bcb44b6043d31b8805b829d30c44d475",
+      "5f3846fe2becc401530015020527206a724f6b22"
     ],
     "source_scientific_input_head": "695ecb94abcb38590a8f3e37332969ef21e2f24d",
     "additional_source_strategy_correction": [
@@ -3976,7 +3980,11 @@
     "Full16 arbitrary-positive diagonal pairing obstruction for the actual scaled cochain refinement; exact compression reaction and moving-Gram source/internal Ward; complete nonlocal repair with thermally essential complement modulus; complete site-density extension and its metric/image boundary. Native preparation, quantitative source transfer, physical Ward, roots and GR remain open.",
     "Exact actual Jones history code and universal controller condition; complete native AF bimodule pairing; moving-W endpoint source and own-chart transition boundaries; all-time faithful golden Pauli component; full local-grade Gram adjoint obstruction; existing four-level/delta cross-owner bridge. Native joint interaction, field source/Ward, stationarity, contrast, curved roots and GR remain open.",
     "Marginal-only spatial-covariance obstruction; full complex growing-spectator eight-tick chart boundary; constructive correlated CAR current and all-time timelike component; actual homogeneous full16 operator binding and fixed-beta all-L source; full static feedback experiment and strict Lean provenance. Physical admission, complete source/Ward, stationarity, transfer, curved roots and GR remain open.",
-    "Exact closed-engine/current-source decoupling: the seed orbit stays in span{e0,e1,e14,e15}, where all three spatial current compressions vanish; the positive-source curve occupies masks 0,14,3,13 and lies outside the engine domain. This scoped route is not a D0-core NO-GO."
+    "Exact closed-engine/current-source decoupling: the seed orbit stays in span{e0,e1,e14,e15}, where all three spatial current compressions vanish; the positive-source curve occupies masks 0,14,3,13 and lies outside the engine domain. This scoped route is not a D0-core NO-GO.",
+    "Golden-gate/native shift weld: exact permutation matrices on the complete site × Fock cochain basis, operator action equality on every cochain, orthogonality and the actual four-Role failure effect are Lean-proved. Physical controlled-return admission, record/count-event derivation, full constrained tangent and source/Ward/GR remain open.",
+    "Candidate second jet: 53 checks pass on the stated safe spectral interval and a noncommuting example matches independent finite-difference and Schur diagnostics. It is not the Hessian of admitted full dynamics and does not select a preparation.",
+    "Candidate anisotropic normal covariance: exact rational controls distinguish joint from one-sided frame rotation; output remains a covector only. Admitted measure, metric factorization and Einstein source are not derived.",
+    "Finite source reflection: thirteen narrow-compiled finite-coordinate propositions derive covector reconstruction and packed Frobenius normalization conditional on an explicit right inverse. The actual native map, right-inverse existence/bound and physical admission remain open; direct source covectors are retained."
   ],
   "schema": "d0-reviewed-artifact-intake/1",
   "source_head": "39dbaecfb6e1c316c25c6d1898711a74164559ea",
