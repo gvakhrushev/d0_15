@@ -1,0 +1,63 @@
+{
+  "schema": "d0-moving-preparation-golden-interferometer-bridge/1",
+  "status": "PASS",
+  "date": "2026-10-16",
+  "source": {
+    "repository": "gvakhrushev/d0_15",
+    "source_pull_request": 310,
+    "source_head": "ef782fe3d64cd973ff2d328a01bdacb934c7c8ec",
+    "source_proof_path": "02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/continuation_v3/proofs/MOVING_PREPARATION_SOURCE_RU.md",
+    "source_proof_sha256": "67bea08cc8a39f49fe92f6d679eabe9d1ae2df7daee260dfe55c23641d45cb61",
+    "source_archive_sha256": "65770f66136235e9794093cc0e3edc0d8961825daa6c3886db9dc104eab1f2f3"
+  },
+  "d0_owner_baseline": {
+    "commit": "a97735a78ed0295d2e499078232d380bad26f20a",
+    "git_blobs": {
+      "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "7b59090312c610e1e19f426d7ed8f4a982ebf296",
+      "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "badf613e17306ecfab18eccedf5fe7dfcea0f455",
+      "03_FORMALIZATION/D0/Geometry/A4DDiscreteEnergyKernel.lean": "68acc7276031dd512e3dd4b03adff6dc82cd477b",
+      "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseProductCarrier.lean": "ea0dd8c7441d1f907ef308f9f129c3dd8c85f5e5",
+      "03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean": "ac5abb195286676382dfac48d9ec5737ef63dc3d",
+      "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseGroup.lean": "d8d2e3fc0d1f8fbb12f24216e962a9d7c2867ae8"
+    }
+  },
+  "formalization": {
+    "path": "02_REGISTRY/research/certificates/a4d_moving_preparation_golden_interferometer.lean",
+    "sha256": "f5766caa674f277a8f27ce1480ed3e6bf5c17afc70ee471a240684812d6f31a7",
+    "output_path": "02_REGISTRY/research/certificates/a4d_moving_preparation_golden_interferometer_output.txt",
+    "output_sha256": "183882b34c4b37dd84fec9314e70cb9b24e073db548e66f70cd798faeaa3e8db",
+    "lean_version": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+    "command": "cd 03_FORMALIZATION && lake env lean ../02_REGISTRY/research/certificates/a4d_moving_preparation_golden_interferometer.lean",
+    "theorem_count": 8,
+    "theorems": [
+      "blockGate_lifted_from_owner",
+      "comparisonOutput_zero_zero",
+      "comparisonOutput_one_zero",
+      "scalar_specialization_zero",
+      "scalar_specialization_one",
+      "branchOne_effect",
+      "roleFailureEffect_formula",
+      "native_role_cardinality"
+    ],
+    "role_index": "D0.Role",
+    "role_cardinality": 4,
+    "sorryAx": false,
+    "axioms": ["propext", "Classical.choice", "Quot.sound"]
+  },
+  "bridge_report": {
+    "path": "02_REGISTRY/research/A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md",
+    "sha256": "af2f3adcd8f201d88d723238b8a45e72a05aeaefbdbc167603bec05638b60f36"
+  },
+  "scope": {
+    "operator_formula_from_owned_golden_gate": true,
+    "failure_effect_on_role_indexed_matrix_returns": true,
+    "faithful_matrix_representation_of_native_cochain_shifts": false,
+    "physical_admission_of_controlled_returns_and_record_registers": false,
+    "owner_derived_count_window": false,
+    "full_q_D_b_m_tangent_map": false,
+    "physical_source_and_Ward_identity": false,
+    "ten_metric_slots_and_24_link_directions_compared_with_rho0": false,
+    "native_on_shell_stationarity": false,
+    "curved_joint_solution_soundness_recovery_or_GR": false
+  }
+}

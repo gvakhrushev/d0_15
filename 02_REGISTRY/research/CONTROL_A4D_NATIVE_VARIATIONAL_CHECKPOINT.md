@@ -2424,3 +2424,33 @@ stationarity comparison. The receipt and replay report are
 `a4d_moving_preparation_control_intake_2026-10-16.json` and
 `a4d_local_record_to_matter_intake_replay_2026-10-16.json` in
 `02_REGISTRY/research/certificates/`.
+
+## Golden-gate operator bridge — 2026-10-16
+
+The v3 moving-preparation channel has an exact algebraic realization candidate
+from the already-owned golden two-port gate. For the operator-valued comparison
+`Gᵀ diag(I,U) G`, its two first-port outputs are `K₀=pI+p²U` and
+`K₁=ap(U−I)` under the owned gate relation `a²=p`. The scalar specialization
+is Lean-proved equal to the existing `GoldenOrderInterferometer.output`. For
+any return-matrix family indexed by the actual type `D0.Role`, the failed-port
+effect is Lean-proved as
+`(p³/4) Σᵣ (Uᵣ−I)ᵀ(Uᵣ−I)`; the owned role cardinality is four. The coefficient
+and the proposed difference operator therefore come from the existing gate
+and role-indexed returns rather than an independent fitted coefficient.
+
+The certificate contains eight Lean propositions, resolves all declarations,
+uses only standard Lean axioms and has no `sorryAx`; its owner blobs are pinned
+to D0 baseline `a97735a78ed0295d2e499078232d380bad26f20a`. The precise report is
+`A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md`, with its
+capsule, compiler output, receipt and checker under
+`02_REGISTRY/research/certificates/`.
+
+This closes the gate-level coefficient and the failure-effect algebra over
+role-indexed return matrices. It does not yet prove a faithful finite-matrix
+representation of each `cochainForwardShift`, physical admission of the
+controlled returns, retained-register averaging or the fixed count window.
+The source/Ward comparison on all ten metric slots and 24 link directions,
+native stationarity, curved solution, soundness/recovery and GR remain open.
+The next exact step is the matrix representation/intertwiner for the four
+owned cochain shifts, followed by deriving the admitted record/count event
+from an existing owner without a new selector.
