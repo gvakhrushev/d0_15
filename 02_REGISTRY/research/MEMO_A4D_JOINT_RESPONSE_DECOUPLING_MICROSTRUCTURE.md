@@ -152,6 +152,19 @@ formula fails an explicit admitted stabilizer test. The
 and [new field interface](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_HESSIAN_INTERFACE.md)
 are the next consumer, not another count of the rank-birth coordinates.
 
+The concurrently published [memory-preserving source code](A4D_MEMORY_PRESERVING_SOURCE_CODE.md)
+adds a full16 unitary syndrome/memory decomposition. One encoder preserves
+the entire four-dimensional memory code while its source is independent
+of the logical state on the balanced engine family; the logical `Z` term
+is retained for other states. For one **fixed** native field velocity,
+four actual even-orbit states decide its necessary memory second-order
+condition and five decide every first field row along that same orbit.
+Use these finite tests only after obtaining the actual native `M_v` and
+kernel velocity, with the packet-to-native bridge. They do not supply
+that velocity, a joint root, physical encoding cost or transition law.
+The incoming six-file package and its original execution receipts are
+preserved without replaying its unchanged calculation.
+
 The actual whole-blank engine orbit itself extends, with the same fixed
 SO3-fixed E0 sigma_j and reference128, along all three extra Lorentz-Gram
 directions: its stabilizer link jets annihilate E0. This rank8 existence
