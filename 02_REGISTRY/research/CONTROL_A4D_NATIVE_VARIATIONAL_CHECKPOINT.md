@@ -2538,3 +2538,22 @@ No spatial expansion, source/Ward identity, curvature, Einstein dynamics or
 parent terminal is promoted by this comparison. The five generated artifacts
 are pinned separately from the byte-identical #310 source intake in the
 checkpoint JSON receipt.
+
+## A nonzero clock state shares the factor-shear carrier — 2026-10-16
+
+The new [chronology/Hodge common-lift witness](A4D_NATIVE_SHEAR_CHRONOLOGY_COMMON_LIFT_2026-10-16.md)
+replaces the empty-matter chronology test on this one shear. At `q=eta`, the
+existing whole-blank family at `c=0` has a normalized full 16-mask state,
+`k=p^2/4>0`, and both actual recorded first grades nonzero. The owner frame
+map with determinant one sends that state to
+`q_t=diag(4e^(2t),-e^(-2t)/4,-1,-1)` and derives
+`Q_t=diag(4e^(2t),e^(-2t)/4,1,1)` from the same `v=m^1`.
+
+On this exact joint state path the complete chronological determinant is
+constant by its existing frame covariance. The Hodge heat source remains
+`2(E_1-E_2)>1/10000` for `beta=log(2)`, `L>=2`; the homogeneous identity-link
+Einstein comparator is zero in all ten slots. Therefore the owned `H+J`
+candidate fails stationarity on this probe. Any larger candidate must supply
+its own source on this same lift; this does not fix that source or imply
+physical admission. The exact algebraic glue checker passes 18 identities and
+hostile controls. No Lean or physical-closure claim is added.
