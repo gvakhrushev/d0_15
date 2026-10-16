@@ -17,19 +17,19 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
-| The sign selected by the literal engine has an exact retained AF realization on the same full H4 carrier; the canonical activated orbit continues indefinitely. | [Adaptive AF engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md). This closes the previous fifth-step sign mismatch. It does not evolve q, D, links or the matter-clock matching equations. |
-| Engine support is classified for the actual controlled A1 activation: a nonzero visible input requires a scalar effect on its M2 block. Its positive scalar preparation branch attains the derived density minimum. | [Supported preparation/source](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md). Continuous effect variations are not automatically admitted by the fixed golden Z[a] executor. The existing [fixed-interface incompatibility fixture](A4D_NATIVE_PREPARATION_ENGINE_ADMISSION.md) is preserved. |
-| Independent settings can occupy actual inherited M2 copies, each retaining a full16 CAR sector. Sixty-four settings of equal PF weight fit at n=11. | [Inherited path settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). This is a direct sum with retained history labels, not one16-dimensional matter carrier or a physical preparation law. |
-| Full terminal AF price has an explicit faithful preparation minimizer and an exact coherent relative-entropy gap. Rank-deficient amplitude-critical branches also remain. | [Preparation/source theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md). Native access to these preparation variations and the price of producing them are not inferred. |
-| One explicit matter-controlled comparator returns exactly the native positive metric on a smooth common family, including all its jets and ten metric test directions. | [Matter-clock record binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md). All16 matter and6 frame variables remain; the ten transverse raw matching equations and physical admission are still open. |
-| One complete controlled AF price has a derived curvature coefficient and exact nonlinear remainder. | [Controlled record](A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md), with the preparation-minimized source above. This is not an equality between comparator price and full AF price. |
-| Lorentz reflection gives the full observer/matter sector at the same order as the Einstein term. | [Lorentz/source identity](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md). Those terms, the absolute volume price and all other native sources must be solved together. |
-| An additional coherent completion of the matrix-return compiler preserves the full selected terminal price and comparator, with an explicit constant AF code cost. | [Coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md), strengthening the effect-only [golden compiler](A4D_GOLDEN_DETERMINANT_COMPILER.md). Primitive admission of that completion and the native spatial aggregation law remain required. |
+| One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
+| The complete second AF price has an exact coherent preparation minimum and source. A corrected coherent compiler preserves its instrument, comparator and selected price up to a constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [controlled price](A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). Primitive admission, preparation-generation cost and physical action selection remain separate. |
+| A common comparator/native-metric family is explicit, including all10 metric tests. Its actual ten raw metric and six frame costates are zero off shell; the same full program can have curved Lorentz g and flat positive h. | [Matter-clock binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md), [complete field source, Sections 1–3](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). Matching alone does not impose Lorentz dynamics; the actual transport/aggregation source must supply the missing dependence. |
+| The full observer sector has the same order as the Einstein term. A given Lorentz link has retained polar factors and full16 Gram trace `16 c_pair²`, with all endpoint/link/matter and density-ratio derivatives. | [Lorentz/source identity](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md), [complete field source, Section 4](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). Neither observer terms nor the positive link part may be dropped. The diagnostic is not a newly selected action or temporal update. |
+| Actual preparation has KL-mass and noncommuting readout sources. Internal spectral addresses, spatial points and clock values are distinct; strict inherited clocks retain only16 pushforward atoms. | [Complete field source, Sections 5–6](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). A spatial readout, new fine clock data and the same-program measure/refinement identity must be derived. |
 
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference
 from a desired Einstein source. The derivations below remain a durable
 history; the table is the entry point to the current scientific route.
+The [five-file intake](A4D_NATIVE_RECORD_SECOND_JET_SOURCE_CLOSURE.md),
+its corrected heat/second-jet interface and byte-preserved original inputs
+remain part of this synthesis.
 
 Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/pull/322).
 The [AF trace/preparation boundary](A4D_NATIVE_AF_TRACE_PREPARATION.md)
@@ -5276,3 +5276,54 @@ update `m0 -> U_+m0` with unchanged wiring on this curved germ. The next task
 is to derive or exclude `m=rho(F)m0`, `m'=U_s m`, `m0'=rho(F')^-1m'`, with
 all ten matching rows, all sixteen matter coordinates and the full action
 derivative. Evidence: [domain obstruction note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and [exact checker](certificates/a4d_native_common_process_domain_check.py).
+
+## Complete raw record source, Lorentz-link transport and measure (2026-10-16)
+
+The [unified field-source result](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+now computes the normal covector of the actual matter-clock program on the
+whole raw chart. Its dependence is exactly through `m0=rho(F)^-1 m`.
+For the complete rest-source e0 this gives
+`E_m=rho(F)^-T e0`, `E_F=-R_F*E_m`, hence all ten h and six O costates
+are zero off shell. This closes that normal-covector question for the owned
+finite price sector. It does not impose matching or solve the other native
+field equations. The same matching family has flat `h=cI`, unchanged full
+record program, and `g=c O eta O^T`; with an existing free rotation
+`O(kx0)`, `G_g(0)=diag(0,0,2k²,2k²)`. Thus metric matching alone cannot
+turn this program into a Lorentz Einstein action.
+
+The actual constrained spatial Lorentz link retains a complementary
+operator contribution. Its unique positive polar part B and pairing
+isometry R satisfy `D=R B`, preserving all factors and all16 exterior
+grades. Their full Gram trace is `16 c_pair²`, or `16 zeta c_pair²`
+when the endpoint density ratio is included. The complete source retains
+all ten metrics at both ends, six link slots, all16 matter columns and
+their normalizers. Replacing D by its unitary part drops this observer
+boost information. This diagnostic is not added to the action and its
+pairing observer is not identified with the engine's first-grade axis.
+
+The same preparation owner gives the exact internal-address decomposition
+`A=6+sum(w f)+D(w||r)/log(phi)+C_out/log(phi)`.
+Its full mass/reference source differs from a normalized mean. A given
+readout at the faithful minimum has the full Kubo–Mori source, including
+noncommuting effect variations and moving observables. The actual n1
+off-diagonal fixture has a nonzero readout source even when the terminal
+price source and effect eigenvalue jets vanish. All coherences remain.
+Internal AF addresses, spatial archive points and material clock values
+are not silently identified. Strictly inherited clocks push every compatible
+measure onto the same at-most16 base atoms; actual new fine clock data and
+their kernel source are needed for a richer spatial limit.
+
+The single new entrypoint `a4d_native_complete_field_source_check.py`
+passes 466 exact conditions (79 raw record, 38 link transport, 349 measure)
+with identical ordinary/optimized output, in 5.798 s and 5.740 s.
+It consumes existing definitions and finite exact source identities;
+old suites, generated receipts and Lean builds are reused.
+
+The next common-program identity must carry the full spatial link and a
+derived address/site/clock readout with its actual measure. If that measure
+is to be normalized geometric volume, its complete test-function source
+must agree with the derived operator/pushforward source, including sampling,
+normalizer and boundary terms. This is a specified comparison to prove,
+not an action or measure chosen to force the answer. Temporal field evolution,
+all other native equations, exact roots/refinement and the original
+fixed-source/raw-owner terminal remain OPEN.
