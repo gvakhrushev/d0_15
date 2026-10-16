@@ -5208,3 +5208,23 @@ including the observer, preparation, controller and aggregation sources.
 The fixed-geometry collinear executor proves neither statement. The original
 fixed smooth source, all10 raw metric rows and exact-root/refinement terminal
 at the top of this memo remain unchanged and OPEN.
+
+The [flat factor-shear composition test](A4D_NATIVE_PREPARATION_FACTOR_SHEAR.md)
+now checks the coherent AF price against the same flat heat probe. On the
+actual golden flat carrier, all 12 active normal shapes are rank one and the
+other 560 are zero. Their compiled even effects and first jets therefore stay
+at `p^2 I`, so the optimized AF preparation source is zero. Its minimizing
+`M2` direction lies on the engine-support trace line, although coefficient-
+level engine admission remains open. The owned heat response is still
+`2*(E1-E2)>1/10000`, the fixed-golden feedback remainder is zero, and
+`rho0=0` on all ten flat metric slots. Thus this corrected fixed-gate price
+route cannot supply the missing stress on this probe. The conclusion is
+first-order and scoped; it leaves other native action terms and the raw
+compiler archive action unclassified. The follow-up now constructs 572 actual
+equal-cost AF addresses (from 715 candidates) and checks the full addressed
+effect, retaining all 10,946 ready and 6,765 pending leaves. Every setting
+maps to one of the 572 normal shapes and remains blank through first order.
+This closes the finite effect-level address-count gap; primitive admission of
+the complete program remains open. The exact certificate is reproducible in
+ordinary and optimized Python modes; a one-setting nonzero hostile control
+changes exactly its two addressed ready leaves and leaves the rest untouched.
