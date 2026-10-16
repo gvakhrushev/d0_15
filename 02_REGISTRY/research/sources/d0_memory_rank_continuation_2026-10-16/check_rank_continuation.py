@@ -31,6 +31,18 @@ def source_capacity():
     # Physical sources are c_L(A-B)(A+3B) times these dimensionful operators.
     g=[s.Matrix([0,0,-1,1]),s.Matrix([0,1,0,-1]),s.Matrix([0,-1,1,0])]
     J=[o.gamma(g[i])*o.kappa(u[i+1]) for i in range(3)]
+    # A single exact grade-four tangent can disprove the faithful-fibre
+    # condition M_v in span{I,B_r}; no 252-direction enumeration is needed.
+    majoranas=[]
+    for r in range(2):
+        c=o.C[r]
+        majoranas.extend((c+c.T,s.I*(c-c.T)))
+    W=majoranas[0]*majoranas[1]*majoranas[2]*majoranas[3]
+    eq('grade_four_obstruction_witness_is_hermitian',W,W.H)
+    eq('grade_four_obstruction_witness_squares_to_identity',W*W,I)
+    eq('grade_four_obstruction_witness_is_trace_free',s.trace(W),0)
+    for i,Ji in enumerate(J):
+        eq('grade_four_obstruction_witness_source_neutral_'+str(i),s.trace(W*Ji),0)
     chi=s.zeros(16,1);chi[1]=1/s.sqrt(2);chi[15]=-1/s.sqrt(2)
     eq('own_seed_whitening_and_normalization',(chi.T*chi)[0],1)
     for i,Ji in enumerate(J):
