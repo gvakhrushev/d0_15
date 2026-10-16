@@ -2,7 +2,7 @@
   "schema": "d0-work/1",
   "limits": {
     "EXPENSIVE": 3,
-    "WORKER": 5,
+    "WORKER": 10,
     "CONTROL": 2
   },
   "legacy_scaffolds": [],
