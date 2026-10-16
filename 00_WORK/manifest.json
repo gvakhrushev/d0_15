@@ -57,6 +57,105 @@
       ],
       "exit_condition": "Derive the exact Laurent factorization of the owned holomorphic A(z), certify the generic kernel rank on every irreducible divisor component and the full higher-codimension rank/nullity strata on (C^\u00d7)^4, and explicitly reject the refuted phase-count law.",
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
+    },
+    {
+      "id": "WRK-A4D-RESEARCH-CLOSURE-RUNNER-WIRING",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Integrate the already accepted conservative certificate-input selector into the existing runner and test routing, preserving immutable evidence, failure behaviour and unknown-dependency fallback; demonstrate real shared-input selection without creating another runner or cache.",
+      "brief": "00_WORK/tasks/WRK-A4D-RESEARCH-CLOSURE-RUNNER-WIRING.md"
+    },
+    {
+      "id": "WRK-A4D-LEAN-SCHUR-STATIONARY-TRANSFER",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Formalize a generic finite-dimensional Schur kernel equivalence and congruence for an invertible auxiliary block, retaining direct source residuals, then specialize it to the stated same-price unfolding interface without assuming the physical block invertible.",
+      "brief": "00_WORK/tasks/WRK-A4D-LEAN-SCHUR-STATIONARY-TRANSFER.md"
+    },
+    {
+      "id": "WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Formalize ordered-word intertwining, its exact telescoping residual, and its first-jet version with a moving intertwiner; expose branching/comparison hypotheses explicitly and specialize only to already owned primitive maps.",
+      "brief": "00_WORK/tasks/WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION.md"
+    },
+    {
+      "id": "WRK-A4D-STORED-ADJOINT-TANGENT-MAP",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Derive and implement the complete linearized constraint operator for the owned homogeneous stored-adjoint family, with an explicit real basis or parametrization of its kernel and checked realization of declared symmetry directions; distinguish formal tangent vectors from integrable curves.",
+      "brief": "00_WORK/tasks/WRK-A4D-STORED-ADJOINT-TANGENT-MAP.md"
+    },
+    {
+      "id": "WRK-A4D-FULL-REFERENCE-MATTER-RESPONSE",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Provide a reusable exact first- and second-order matter response solver on the owned 128-state shell with the complete reference, including kernel compatibility and all normalizer terms, while leaving thermal and feedback traces on their full carriers.",
+      "brief": "00_WORK/tasks/WRK-A4D-FULL-REFERENCE-MATTER-RESPONSE.md"
+    },
+    {
+      "id": "WRK-A4D-V8-FULL-HESSIAN-APPLY",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Implement and verify a reusable matrix-free bilinear second-source/Hessian action for the same stored-native v8 price, including mixed link/observer/coefficient/preparation directions, exact multiplicities and auxiliary Schur responses; consume the actual tangent and matter maps before asserting a physical kernel.",
+      "brief": "00_WORK/tasks/WRK-A4D-V8-FULL-HESSIAN-APPLY.md"
+    },
+    {
+      "id": "WRK-A4D-WEIGHTED-SITE-SOURCE-TRANSFER",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Derive the exact fixed-carrier value, adjoint and first-source transport under a supplied positive moving site weight, retain the endpoint weight factors and observer derivatives, and identify precisely when the literal stored operator belongs to that weighted class.",
+      "brief": "00_WORK/tasks/WRK-A4D-WEIGHTED-SITE-SOURCE-TRANSFER.md"
+    },
+    {
+      "id": "WRK-A4D-RAW-SOURCE-PRECISION-BUDGET",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Compose the already proved auxiliary-gap, finite return-history, prepared-address and finite source-reflection estimates into an explicit error budget in the unchanged h^-2 raw-l1 target, with every dimension, conditioning and moving-calibration factor exposed and checked.",
+      "brief": "00_WORK/tasks/WRK-A4D-RAW-SOURCE-PRECISION-BUDGET.md"
+    },
+    {
+      "id": "WRK-A4D-CORE-PRIMITIVE-ADMISSION-SPLICE",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "For the fixed declared v8 primitive list, construct the available literal core-to-program compositions and an exact finite typed remainder of unproved admission arrows, using real definitions and complete outcomes rather than equating generic matrix realizability with physical permission.",
+      "brief": "00_WORK/tasks/WRK-A4D-CORE-PRIMITIVE-ADMISSION-SPLICE.md"
     }
   ]
 }
