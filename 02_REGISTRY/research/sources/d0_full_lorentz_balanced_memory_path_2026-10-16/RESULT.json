@@ -123,6 +123,7 @@
     "radius": "1e-12"
   },
   "path_checks": {
+    "Hessian_scope": "restriction to the complete inherited 13-coordinate stored-source section; no full-interface Schur elimination or coupling map is certified",
     "all_4096_thermal_modes_and_full16_CAR_retained": true,
     "all_four_occupation_coordinates_half_along_path": true,
     "full_Lorentz_source_support": "owned exact homogeneous Euler classification; full Lorentz field-source rows are affine in sigma, both endpoints share the same root",
@@ -133,7 +134,7 @@
     "sigma_is_density_for_all_t_0_to_1": true
   },
   "preparation_path": "sigma(t)=(1-t)I16/16+t|chi_bal><chi_bal|",
-  "proof": "The fixed scalar form is affine and negative at both endpoints. Its fixed 12D complement form is affine and positive definite at both endpoints. Convexity preserves both strict signs for all t; the Schur complement then gives inertia 12+/1- throughout.",
+  "proof": "The restriction of the affine q3300 Hessian to the inherited 13-coordinate section has a fixed scalar form negative at both endpoints and a fixed 12D complement positive definite at both endpoints. Convexity preserves both strict signs for all t; the Schur complement within this section gives inertia 12+/1- throughout. No full-interface Schur elimination is asserted.",
   "purification": {
     "available_reference_dimension": 128,
     "balanced_reference_slots": 1,
@@ -157,7 +158,7 @@
     "scipy": "1.13.1"
   },
   "schema": "d0-full-lorentz-balanced-memory-path/1",
-  "scope": "Only the full-Lorentz-balanced affine preparation segment at the owned stationary homogeneous root, and only the q3300 13-coordinate Fourier block. This excludes the legacy q3300 crossing on this branch; it does not classify other modes, preparation paths, nonlinear branches, physical admission, refinement, or Einstein dynamics.",
+  "scope": "Only the full-Lorentz-balanced affine preparation segment at the owned stationary homogeneous root, and only the q3300 Hessian restriction to the inherited 13-coordinate stored-source section. This excludes a crossing only in that restriction; it is not the full transverse Hessian of the enlarged full-Lorentz interface and does not exclude kernels coupled to additional directions. Other modes, preparations, nonlinear branches, physical admission, refinement, and Einstein dynamics remain unclassified.",
   "source_pins": {
     "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
     "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/RESULTS.json": "8920803d185af11132dfa274a42d0e307ad43db150ef8e87d7ab83c9bf2f4d0d",

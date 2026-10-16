@@ -1,5 +1,5 @@
 {
-  "definition": "The balanced state and 99-coordinate memory-minus-trace matrix are reconstructed from the pinned actual full16 CAR creators; the complete q3300 mean slice is evaluated directly, using a separately interval-certified invertible finite-decimal coordinate preconditioner.",
+  "definition": "The balanced state and 99-coordinate memory-minus-trace matrix are reconstructed from the pinned actual full16 CAR creators; the q3300 Hessian is evaluated on the complete 13-coordinate section returned by the pinned stored-source owner, not on the full transverse Hessian of the enlarged full-Lorentz interface. A separately interval-certified invertible finite-decimal coordinate preconditioner is used.",
   "schema": "d0-full-lorentz-balanced-memory-path-inputs/1",
   "sha256": {
     "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",

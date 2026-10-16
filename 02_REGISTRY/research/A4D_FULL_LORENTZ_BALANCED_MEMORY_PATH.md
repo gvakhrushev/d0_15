@@ -1,4 +1,4 @@
-# Full-Lorentz balanced memory path has no q3300 crossing
+# Full-Lorentz-balanced q3300: no crossing in the inherited 13D block
 
 Date: 2026-10-16. Exact finite-dimensional continuation of the existing
 [full-Lorentz matrix interface](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md).
@@ -42,17 +42,22 @@ segment consists of stationary points of the declared full-Lorentz matrix
 interface at the same owned root. This does not establish admission by the
 original D0 primitives.
 
-The mode is evaluated directly at `q=(3,3,0,0)` on the complete
-13-coordinate native mean slice. A pinned finite-decimal matrix is used only
-as a coordinate preconditioner; its interval-certified left inverse proves
-it is nonsingular, and no Fourier or field direction is removed. No
+The mode is evaluated directly at `q=(3,3,0,0)` on the 13-coordinate
+section returned by the pinned `pure_memory_interval._section` owner. That
+is the complete section of that inherited stored-source chart; it is **not**
+the full transverse Hessian of the enlarged full-Lorentz matrix interface.
+No map or Schur elimination of the additional interface directions is
+proved here, so a kernel coupled to those directions is not excluded. Within
+the declared 13-coordinate section, a pinned finite-decimal matrix is used
+only as a coordinate preconditioner; its interval-certified left inverse
+proves it is nonsingular, and no coordinate in this section is removed. No
 spatial-permutation reduction proved only for the old state is used. Since
-this q lies outside `Omega-Omega`, the complete reduced Hessian is exactly affine:
-`H_t=H_0+t Delta`. The balanced memory-minus-trace operator is recomputed
-from the actual full16 CAR with exact Gaussian-integer arithmetic; it is not
-reused from the old witness. All4096 thermal modes, the full16 Fock carrier,
-and reference128 are retained through the pinned scalar and finite-shell
-owners.
+this q lies outside `Omega-Omega`, the Hessian restricted to this section is
+exactly affine: `H_t=H_0+t Delta`. The balanced memory-minus-trace operator
+is recomputed from the actual full16 CAR with exact Gaussian-integer
+arithmetic; it is not reused from the old witness. All4096 thermal modes,
+the full16 Fock carrier, and reference128 are retained through the pinned
+scalar and finite-shell owners.
 
 One fixed basis, selected numerically at `t=1/2` and then treated as exact
 finite decimals inside outward interval arithmetic, proves the whole path.
@@ -65,25 +70,28 @@ fixed12-dimensional complement is positive definite:
 | `t=1` | `-0.01546123` | `0.12203369` |
 
 Both forms depend affinely on `t`, so their strict signs hold throughout the
-segment. The basis is invertible; the Schur complement then gives inertia
-`12 positive, 1 negative, 0 zero` for every `t` and every point of the owned
-`(d,o)` enclosure. In particular there is no q3300 crossing on this
-full-Lorentz-balanced path. This is an interval statement, not a floating
-eigenvalue scan.
+segment. The basis is invertible; the Schur complement within the declared
+13D section then gives inertia `12 positive, 1 negative, 0 zero` for every
+`t` and every point of the owned `(d,o)` enclosure. Thus this section has no
+q3300 crossing along the balanced path. This is an interval statement, not a
+floating eigenvalue scan; it says nothing about kernels involving omitted
+full-interface directions.
 
 ## What this changes
 
-Stop treating the old q3300 crossing as a candidate full-Lorentz nonlinear
-branch. It is a valid obstruction inside its old stored-source domain, but
-that domain excludes the new balanced endpoint. The balanced branch has no
-linear q3300 kernel anywhere along the tested stationary preparation
-segment, so a q3300 nonlinear bifurcation cannot be obtained from this
-memory interpolation.
+Stop transferring the old q3300 crossing into the tested 13D section of the
+balanced preparation segment. The old crossing belongs to an unbalanced
+state that fails the full-Lorentz source equations; this new certificate
+shows constant inertia only for the inherited 13D restriction. It does not
+exclude a full-interface q3300 kernel whose vector uses additional
+boost/link/observer directions or their coupling to this section.
 
-The result leaves the real continuation problem sharply scoped: other field
-modes, coupled modes outside `Omega-Omega`, other stationary preparations,
-and nonlinear branches are not classified here. Nor does this prove native
-gate admission, a physical preparation law, refinement recovery, or Einstein
-dynamics. The next useful spectral test must consume the balanced full-
-Lorentz owner directly and search for a kernel that survives the actual
-source constraints; repeating the old-state q3300 calculation is closed.
+The result leaves the real continuation problem sharply scoped: the omitted
+full-Lorentz field directions and their Schur coupling, other field modes,
+coupled modes outside `Omega-Omega`, other stationary preparations, and
+nonlinear branches are not classified here. Nor does this prove native gate
+admission, a physical preparation law, refinement recovery, or Einstein
+dynamics. The next useful spectral test must construct the field map from
+the full matrix interface to this 13D section, or compute the complete
+q3300 Hessian and its coupled kernel, before using this restriction to
+exclude a nonlinear branch.

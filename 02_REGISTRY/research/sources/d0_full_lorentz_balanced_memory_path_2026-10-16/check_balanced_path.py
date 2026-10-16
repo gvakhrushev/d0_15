@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Outward certificate for the balanced full-Lorentz q3300 memory segment.
+"""Outward certificate for a 13D q3300 restriction on the balanced path.
 
 The fixed basis is chosen at the midpoint of the affine reduced Hessian pencil.
 At both endpoints one scalar direction is strictly negative and its fixed
 12-dimensional complement is positive definite. Affineness then preserves
 these two signs on the whole segment; the Schur complement gives inertia
-12+/1- everywhere. All interval signs are checked over the owned (d,o) root
-box. Floating eigensolvers only propose finite-decimal bases.
+12+/1- everywhere in the inherited 13-coordinate section. This does not
+certify the full transverse Hessian of the enlarged matrix interface or its
+coupling to additional boost/link/observer directions. All interval signs
+are checked over the owned (d,o) root box. Floating eigensolvers only
+propose finite-decimal bases.
 """
 from __future__ import annotations
 
@@ -301,7 +304,9 @@ def evaluate():
     shared["pure_K"] = K
     shared["pure_adjoint_sign"] = adjoint_sign
 
-    # Work directly on q=(3,3,0,0) in the full native mean slice. The fixed
+    # Work on q=(3,3,0,0) in the complete 13-coordinate section returned by
+    # the pinned stored-source owner. This is a restriction, not the full
+    # transverse Hessian of the enlarged matrix interface. The fixed
     # finite-decimal congruence is only a coordinate preconditioner: certify
     # its invertibility separately and never transfer any mode symmetry.
     q = (3, 3, 0, 0)
@@ -325,7 +330,7 @@ def evaluate():
             "finite_decimal_preconditioner_has_interval_left_inverse")
     _, full, indices, on_shell = interval._section(q, choice, shared)
     require(not on_shell and len(indices) == 13,
-            "complete_13_coordinate_native_mean_slice")
+            "complete_inherited_13_coordinate_stored_source_section")
     Hraw, Herror, geometry = interval._old_symbol(q, full, n, shared)
     finite, finite_error, finite_data = interval._finite_correction(q, geometry, shared)
     scalar = interval._scalars(q, full, shared)
@@ -415,6 +420,7 @@ def evaluate():
             "matter_stationarity_support": "owned exact full16 Dirac square is scalar at this root; a 17-slot purification fits the retained reference128",
             "q_outside_Omega_minus_Omega": True,
             "reduced_Hessian_exactly_affine_in_t": True,
+            "Hessian_scope": "restriction to the complete inherited 13-coordinate stored-source section; no full-interface Schur elimination or coupling map is certified",
             "all_4096_thermal_modes_and_full16_CAR_retained": True,
             "reference_dimension": 128,
         },
@@ -424,10 +430,10 @@ def evaluate():
         "fixed_basis_orthogonality_residual_upper": Uorth,
         "endpoint_cone_certificates": endpoints,
         "whole_segment_inertia": {"positive": 12, "negative": 1, "zero": 0},
-        "proof": "The fixed scalar form is affine and negative at both endpoints. Its fixed 12D complement form is affine and positive definite at both endpoints. Convexity preserves both strict signs for all t; the Schur complement then gives inertia 12+/1- throughout.",
+        "proof": "The restriction of the affine q3300 Hessian to the inherited 13-coordinate section has a fixed scalar form negative at both endpoints and a fixed 12D complement positive definite at both endpoints. Convexity preserves both strict signs for all t; the Schur complement within this section gives inertia 12+/1- throughout. No full-interface Schur elimination is asserted.",
         "source_pins": INPUTS,
         "finite_data": finite_data,
-        "scope": "Only the full-Lorentz-balanced affine preparation segment at the owned stationary homogeneous root, and only the q3300 13-coordinate Fourier block. This excludes the legacy q3300 crossing on this branch; it does not classify other modes, preparation paths, nonlinear branches, physical admission, refinement, or Einstein dynamics.",
+        "scope": "Only the full-Lorentz-balanced affine preparation segment at the owned stationary homogeneous root, and only the q3300 Hessian restriction to the inherited 13-coordinate stored-source section. This excludes a crossing only in that restriction; it is not the full transverse Hessian of the enlarged full-Lorentz interface and does not exclude kernels coupled to additional directions. Other modes, preparations, nonlinear branches, physical admission, refinement, and Einstein dynamics remain unclassified.",
     }
 
 
