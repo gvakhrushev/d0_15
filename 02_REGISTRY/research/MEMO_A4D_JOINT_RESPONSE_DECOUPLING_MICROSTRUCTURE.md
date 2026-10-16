@@ -17,11 +17,14 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
+| The sign selected by the literal engine has an exact retained AF realization on the same full H4 carrier; the canonical activated orbit continues indefinitely. | [Adaptive AF engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md). This closes the previous fifth-step sign mismatch. It does not evolve q, D, links or the matter-clock matching equations. |
+| Engine support is classified for the actual controlled A1 activation: a nonzero visible input requires a scalar effect on its M2 block. Its positive scalar preparation branch attains the derived density minimum. | [Supported preparation/source](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md). Continuous effect variations are not automatically admitted by the fixed golden Z[a] executor. The existing [fixed-interface incompatibility fixture](A4D_NATIVE_PREPARATION_ENGINE_ADMISSION.md) is preserved. |
+| Independent settings can occupy actual inherited M2 copies, each retaining a full16 CAR sector. Sixty-four settings of equal PF weight fit at n=11. | [Inherited path settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). This is a direct sum with retained history labels, not one16-dimensional matter carrier or a physical preparation law. |
 | Full terminal AF price has an explicit faithful preparation minimizer and an exact coherent relative-entropy gap. Rank-deficient amplitude-critical branches also remain. | [Preparation/source theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md). Native access to these preparation variations and the price of producing them are not inferred. |
 | One explicit matter-controlled comparator returns exactly the native positive metric on a smooth common family, including all its jets and ten metric test directions. | [Matter-clock record binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md). All16 matter and6 frame variables remain; the ten transverse raw matching equations and physical admission are still open. |
 | One complete controlled AF price has a derived curvature coefficient and exact nonlinear remainder. | [Controlled record](A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md), with the preparation-minimized source above. This is not an equality between comparator price and full AF price. |
 | Lorentz reflection gives the full observer/matter sector at the same order as the Einstein term. | [Lorentz/source identity](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md). Those terms, the absolute volume price and all other native sources must be solved together. |
-| Matrix return computes the geometric effect, but equality of effects does not preserve the full instrument or its cost. | [Golden compiler](A4D_GOLDEN_DETERMINANT_COMPILER.md) and the explicit carrier/metric boundary in the matter-clock owner. A genuine AF history/cost intertwiner remains required. |
+| An additional coherent completion of the matrix-return compiler preserves the full selected terminal price and comparator, with an explicit constant AF code cost. | [Coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md), strengthening the effect-only [golden compiler](A4D_GOLDEN_DETERMINANT_COMPILER.md). Primitive admission of that completion and the native spatial aggregation law remain required. |
 
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference
@@ -5122,3 +5125,86 @@ selected and the result is not a global native no-go. See the
 [`a4d_native_preparation_engine_admission_check.py`](certificates/a4d_native_preparation_engine_admission_check.py).
 The newly added retained-controller completion has an expanded carrier and
 remains a separate engine-support and primitive-admission question.
+
+## Adaptive AF engine and preparation-compatible settings (2026-10-16)
+
+The current [adaptive representation](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md)
+repairs a specific common-process failure. Let P be the owned AF price cut,
+D=2P-I, and W+ the actual golden gate on the complete H4 carrier. Then
+`W-=D W+ D` intertwines the literal full16 `U-`, just as W+ intertwines U+.
+The sign is read from the current first-grade matter coefficient m1 by the
+existing engine. On its domain this is one state-dependent retained process,
+with the scalar AF sector and all69 complementary coordinates still present.
+It is not one globally linear quantum channel. On the canonical activated
+input its low pair enters an exact two-state recurrence after the first
+sign reversal; its higher-grade pair continues to carry the changing history.
+The engine and AF representation therefore agree at every subsequent tick,
+without a fresh blank, reset or external tick input. A finite number of real
+coordinates does not imply bounded bit capacity for their Z[a] coefficients.
+
+There is an important source consequence. On this same fixed working carrier,
+each selected branch is in the actual old-right-module algebra. For the
+canonical activated seed, the complete A7 nonzero spectrum remains p²,p²,p³
+for every retained word. Its old
+relative-entropy price is exactly6. This is not the second ACTIVE record
+whose nonzero inherited source was derived previously. The chronological
+counting determinant also remains distinct: for any sign word its two possible
+nonzero eigenvalues are `sin²(theta sum s_j)` and
+`sin²(theta sum (-1)^(j-1)s_j)`, cos(theta)=a, sin(theta)=p. Each has
+multiplicity4 on CAR16 and5 on the full AF frame. On a fixed strict sign
+chamber this determinant has no matter-amplitude derivative. Neither price
+therefore supplies a new smooth matter force merely by iterating this engine.
+
+The [preparation/source classification](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md)
+uses the actual controlled activation, not just the earlier fixed-interface
+fixture. Its six guard rows vanish exactly when
+`sqrt(I-E2) C2=t I2` and `sqrt(E2) C2=s I2`. For a nonzero visible input
+and 0<E2<I this forces E2 scalar. This classifies that direct A1 interface;
+it does not restrict all future native matter to this sector. On the scalar
+branch, the positive lift C2=I2 has a golden CAR projection accepted by the
+literal ring engine and realizes the derived normalized density optimum after
+the retained scalar AF amplitude is chosen. Preparation of that scalar
+amplitude is a separate obligation. Negative c is not a harmless engine phase:
+at the golden setting the next first grade vanishes. The full preparation
+derivative keeps both sector weights, their moving normalizer, and both effect
+derivatives. Continuous
+effect/source calculations and preparation of the scalar amplitude remain
+separate from admission by the fixed golden Z[a] executor.
+
+The [higher-AF construction](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md)
+avoids treating that one-block obstruction as a global no-go. Actual inherited
+M2 copies provide orthogonal full16 sectors, each with its own scalar setting.
+Sixty-four equal-PF-weight copies fit in block0 first at n=11, with weight
+2p12 per copy. The same controlled conditional-price law gives coefficient
+`2p14 f0'(p²)>0`; full preparation relaxation uses one global partition
+function and its derived envelope coefficient. This improves localization of
+the settings relative to the earlier n=14 addresses. It does not remove the
+separate code cost of the corrected compiler. The entire direct sum, remaining
+paths and scalar coordinates are retained. Only at each golden setting does
+the controlled gate coincide with the literal fixed golden engine; the trace
+preparation has rest CAR current, and does not yet provide the full moving
+matter-clock family.
+
+The concurrently published [coherent compilation theorem](A4D_COHERENT_COMPILATION_COST_DESCENT.md)
+is consumed as a stronger input than historical effect equality: after its
+additional full coherent finishing operation, it preserves the canonical
+instrument, comparator and selected terminal price up to an explicit constant
+AF code cost k. Its primitive admission and native spatial aggregation are
+still hypotheses. This continuation neither discards that controller nor
+identifies it with a scalar setting by matching probabilities alone.
+
+The single focused entrypoint
+`a4d_native_adaptive_engine_synthesis_check.py` passes 200 exact conditions
+(93 adaptive engine, 39 supported preparation, 68 inherited settings), with
+byte-identical ordinary and optimized output. The measured runs take 64.341 s
+and 66.384 s. No old suite, generated receipt or Lean build is replayed.
+At n=11 the consumer uses actual path counts, offsets and PF weights;
+only n=2,3 frames are instantiated for the inherited-sector checks.
+
+The next missing common-process statement is now precise: an admitted update
+of the moving fields and full matter must preserve the ten comparator/native
+matching equations and yield the complete differentiated native action,
+including the observer, preparation, controller and aggregation sources.
+The fixed-geometry collinear executor proves neither statement. The original
+fixed smooth source, all10 raw metric rows and exact-root/refinement terminal
+at the top of this memo remain unchanged and OPEN.
