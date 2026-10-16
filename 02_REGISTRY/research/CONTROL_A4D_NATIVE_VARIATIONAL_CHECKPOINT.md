@@ -2441,7 +2441,7 @@ and role-indexed returns rather than an independent fitted coefficient.
 The certificate contains eight Lean propositions, resolves all declarations,
 uses only standard Lean axioms and has no `sorryAx`; its owner blobs are pinned
 to D0 baseline `a97735a78ed0295d2e499078232d380bad26f20a`. The precise report is
-`A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md`, with its
+[A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md](A4D_MOVING_PREPARATION_GOLDEN_INTERFEROMETER_BRIDGE_2026-10-16.md), with its
 capsule, compiler output, receipt and checker under
 `02_REGISTRY/research/certificates/`.
 
