@@ -1,5 +1,5 @@
 {
-  "checks": 36,
+  "checks": 39,
   "exact_fixture": {
     "B": "Matrix([[751/1625, 168/1625], [168/1625, 849/1625]])",
     "B_eigenvalues": [
@@ -16,6 +16,12 @@
     "noncommuting_moving_source": "1106206040071/2875291914200",
     "slater_minor_count": 6,
     "z": "1/4"
+  },
+  "full_CAR_resource_firewall": {
+    "generous_listed_v8_budget_log2_hilbert_dim": 57381,
+    "min_faithful_CAR_rep_log2_hilbert_dim": 8388608,
+    "outer_fermion_modes": 8388608,
+    "scope": "bound for faithful whole-CAR implementation on listed tensor-product budget only; not a no-go for compressed determinant circuits or additional derived native resources"
   },
   "golden_reference_z": {
     "conditional_equal_pair_probability": "1/2",
@@ -54,6 +60,9 @@
     "L8_coin_depth_lower_bound_1024_conditional",
     "L4_coin_depth_lower_bound_255_conditional",
     "L16_coin_depth_lower_bound_4096_conditional",
+    "outer_CAR_fermion_mode_count",
+    "generous_listed_v8_tensor_budget_log2",
+    "faithful_outer_CAR_not_on_listed_native_Hilbert",
     "golden_reference_probability_identity",
     "nonzero_order_mismatch_pair_probability",
     "two_mismatched_goldens_conditionally_unbiased",
