@@ -1,0 +1,38 @@
+{
+  "schema": "d0-local-intake-provenance/1",
+  "assembled_date": "2026-10-14",
+  "repository": "gvakhrushev/d0_15",
+  "source_pr": 310,
+  "control_pr": 322,
+  "source_branch": "exp/a4d-joint-response-resolvent",
+  "observed_remote_head": "b45e32ebce6f04553e1d0212cba4c1ccf3cb78bf",
+  "GitHub_published": false,
+  "CI_result": null,
+  "new_Lean_compilation": false,
+  "new_tasks_or_parent_retirement": false,
+  "CORE_or_BOOK_promotion": false,
+  "v2_archive_file_count": 86,
+  "v1_embedded_file_count": 53,
+  "v1_content_identical_to_embedded_v2": true,
+  "new_result_scope": "genuine count-instrument diagonal first jet, full prepared H+R source correction, declared-unitary-probe uniform bounds",
+  "explicit_open": [
+    "physical count-action identity",
+    "native pi0 placement",
+    "full chronological H+J+R",
+    "native AF refinements",
+    "physical Ward",
+    "curved Einstein"
+  ],
+  "original_archives": [
+    {
+      "name": "D0_local_pi0_matter_bridge_v1_2026-10-14.zip",
+      "bytes": 243263,
+      "sha256": "426813b11132bc9cf60ea98610a513fca9c50e3def5da7e314b33ae90218ccae"
+    },
+    {
+      "name": "D0_local_record_to_matter_v2_2026-10-14.zip",
+      "bytes": 300416,
+      "sha256": "20c26595cf6fc5d591b58e34c35932654ddb9aeea97eda9e3f311feec278f787"
+    }
+  ]
+}

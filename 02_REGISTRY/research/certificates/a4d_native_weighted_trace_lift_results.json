@@ -1,0 +1,226 @@
+{
+  "checks": [
+    "LITERAL_GRAM_VOLUME_SQUARE",
+    "VOLUME_PENCIL_AFFINE_AND_DENSITY_NONLINEAR",
+    "PROXY_LITERAL_INVERSE_VOLUME",
+    "REGULAR_TRACE_VOLUME_NORMALIZATION",
+    "ALL_TRACE_SQUARE_TERMS_AND_HALF_PROXY_FACTOR",
+    "FREE_DENSITY_SCALING_EULER",
+    "FREE_DENSITY_GATE_NOT_CANONICAL_ROOT",
+    "MASS_CONSTRAINT_EXCLUDES_UNIFORM_METRIC_SCALE",
+    "CYCLIC_MOMENT_IDENTITY_1",
+    "CYCLIC_MOMENT_IDENTITY_2",
+    "CYCLIC_MOMENT_IDENTITY_3",
+    "CYCLIC_MOMENT_IDENTITY_4",
+    "MOVING_WEIGHT_MOMENT_DEGREE_1",
+    "MOVING_WEIGHT_MOMENT_DEGREE_2",
+    "MOVING_WEIGHT_MOMENT_DEGREE_3",
+    "MOVING_WEIGHT_MOMENT_DEGREE_4",
+    "MOVING_WEIGHT_MOMENT_DEGREE_5",
+    "MOVING_WEIGHT_MOMENT_DEGREE_6",
+    "ACTUAL_PROXY_IS_QUADRATIC_ON_CURVED_VOLUME_PENCIL",
+    "SIGNED_PRODUCTS_KEEP_WEIGHTED_DEGREE",
+    "FINITE_ANCHOR_SECANT_IDENTITY_DEGREE_1",
+    "FINITE_ANCHOR_SECANT_IDENTITY_DEGREE_2",
+    "FINITE_ANCHOR_SECANT_IDENTITY_DEGREE_3",
+    "FINITE_ANCHOR_SECANT_IDENTITY_DEGREE_4",
+    "FINITE_ANCHOR_SECANT_IDENTITY_DEGREE_5",
+    "FINITE_ANCHOR_SECANT_IDENTITY_DEGREE_6",
+    "EINSTEIN_COEFFICIENT_EXACT_RECIPROCAL",
+    "CONSTANT_ACTION_FAILS_FIRST_VARIATION",
+    "NONZERO_EINSTEIN_DERIVATIVE_2",
+    "NONZERO_EINSTEIN_DERIVATIVE_3",
+    "NONZERO_EINSTEIN_DERIVATIVE_4",
+    "NONZERO_EINSTEIN_DERIVATIVE_5",
+    "NONZERO_EINSTEIN_DERIVATIVE_6",
+    "NONZERO_EINSTEIN_DERIVATIVE_7",
+    "NONZERO_EINSTEIN_DERIVATIVE_8",
+    "NONZERO_EINSTEIN_DERIVATIVE_9",
+    "NONZERO_EINSTEIN_DERIVATIVE_10",
+    "STRICT_ALL_ORDER_INTEGRAL_BOUND_INPUT",
+    "GROWING_DEGREE_EXCEPTION_2",
+    "GROWING_DEGREE_EXCEPTION_4",
+    "GROWING_DEGREE_EXCEPTION_8",
+    "NONLINEAR_VOLUME_MAP_OUTSIDE_CLASS",
+    "MOVING_OPERATOR_OUTSIDE_CLASS",
+    "NONPOLYNOMIAL_SPECTRAL_CUTOFF_OUTSIDE_CLASS",
+    "EIGENVALUE_COINCIDENCE_FACTOR",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_3",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_4",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_5",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_6",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_7",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_8",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_9",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_10",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_11",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_12",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_13",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_14",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_15",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_16",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_17",
+    "ADJACENT_CYCLE_CHARPOLY_GCD_18",
+    "ALL_LINEAR_LIFT_KERNEL_3",
+    "UNCONSTRAINED_LIFT_DESCENT_3",
+    "SMALL_RESIDUAL_INJECTIVE_EXCEPTION_3",
+    "ALL_LINEAR_LIFT_KERNEL_4",
+    "UNCONSTRAINED_LIFT_DESCENT_4",
+    "SMALL_RESIDUAL_INJECTIVE_EXCEPTION_4",
+    "ALL_LINEAR_LIFT_KERNEL_5",
+    "UNCONSTRAINED_LIFT_DESCENT_5",
+    "SMALL_RESIDUAL_INJECTIVE_EXCEPTION_5",
+    "ALL_LINEAR_LIFT_KERNEL_6",
+    "UNCONSTRAINED_LIFT_DESCENT_6",
+    "SMALL_RESIDUAL_INJECTIVE_EXCEPTION_6",
+    "LOCAL_LIFT_ALL_ADMITTED_ROWS_STATIONARY",
+    "LOCAL_LIFT_STRICT_MINIMUM",
+    "LOCAL_LIFT_NONEMPTY_INJECTIVE_POSITIVE_ACTION",
+    "DENSE_DESCENT_VIOLATES_LOCAL_SUPPORT",
+    "NONADJACENT_CYCLE_INJECTIVE_EXCEPTION",
+    "ALL_COMPENSATOR_EDGE_EULER_ROWS",
+    "ALL_COMPENSATOR_VERTEX_EULER_ROWS",
+    "LITERAL_DIAGONAL_NORMALIZATION_AND_WARD",
+    "FULL_EDGE_GATE_VALUE_AND_SOURCE_ZERO",
+    "FULL_GATE_ALL_WEIGHT_VARIATIONS_ZERO",
+    "AUXILIARY_ONLY_GATE_IS_NONEMPTY",
+    "AUXILIARY_ONLY_GATE_NOT_FULL_GATE",
+    "DEGENERATE_WEIGHT_EXCEPTION"
+  ],
+  "compensator": {
+    "auxiliary_only_action": "48",
+    "auxiliary_only_edge_response": [
+      [
+        "4"
+      ],
+      [
+        "-4"
+      ],
+      [
+        "4"
+      ],
+      [
+        "-4"
+      ]
+    ],
+    "auxiliary_only_root": [
+      [
+        "2"
+      ],
+      [
+        "-6"
+      ],
+      [
+        "12"
+      ],
+      [
+        "-4"
+      ]
+    ],
+    "full_gate": "residual zero"
+  },
+  "input_head": "0af401558deca37468c077c40b53ac670a7ccaf3",
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md": "b4224373b6e30632075b612feea65e2a585430d13b40742646e6d3b80ebc9e93",
+    "02_REGISTRY/research/certificates/a4d_native_quadratic_gram_flux_check.py": "ac8ccf3ec5b92a2ade98a3b79279cd600a28aea03ee4e0ba8c64ea99405a46ae",
+    "02_REGISTRY/research/certificates/a4d_native_quadratic_gram_flux_results.json": "8e239b9dd82d1760646319ca2b935b1e5339645821ad2c039002a50eed3ee0f1",
+    "03_FORMALIZATION/D0/Cosmology/EntropyArchiveFlow.lean": "91273c1b031d295510161fff1d115e9a00613daa8636da76e314afdc6bee918f",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHeatTrace.lean": "f963d7d5a02ef42a1d15d160b1d6dbba201d2bc4a3e110b63c05cff702617ae2",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean": "591b39b7c7f618c08ada52713f8ce490d4e7973a8f54a0991523c2f04d260108",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseDistance.lean": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707",
+    "03_FORMALIZATION/D0/Geometry/ArchiveSeamCurvature.lean": "a86bd7c015d8d87cf1125a6287b9937343cf8cbb51d11211c7e2752672e204e8",
+    "03_FORMALIZATION/D0/Geometry/ConformalLaplacianTrace.lean": "3030b73c15449a76d8dc89e0e1bad95e3c5bb950b7c20135396dbbef0fdb5ba6",
+    "03_FORMALIZATION/D0/Geometry/HeatTraceA2Decomposition.lean": "0e0a5b5241d3955d8e23515f006ab89f2270f81a6ee56e4a6aee203a8abb1e74",
+    "03_FORMALIZATION/D0/Geometry/HeatTraceEHProxy.lean": "dafa6b61a736ad40a5abadaf4e18aea0167a3569534b64def12af9f15b7d8c9e",
+    "03_FORMALIZATION/D0/Gravity/A2CompensatorNoether.lean": "5d9017e1f9dba2fd9dea3032091c9d48b8cefcff6bc32d4d001b64665339719d"
+  },
+  "lean_capsule_receipt_sha256": "7506e98d33ece222236dfc81d0c749ebc5f3272d2b0b6688bb384194d8fa6b8f",
+  "moving_lift": {
+    "adjacent_characteristic_gcd": {
+      "10": "lam",
+      "11": "lam",
+      "12": "lam",
+      "13": "lam",
+      "14": "lam",
+      "15": "lam",
+      "16": "lam",
+      "17": "lam",
+      "18": "lam",
+      "3": "lam",
+      "4": "lam",
+      "5": "lam",
+      "6": "lam",
+      "7": "lam",
+      "8": "lam",
+      "9": "lam"
+    },
+    "all_size_full_gate": "unique unital root is the rank-one constant projector",
+    "approximate_exception": "rank m, seam action 4 delta^2; inverse degenerates",
+    "finite_full_intertwiner_nullities": {
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "local_Hessian": [
+      [
+        "12",
+        "-4",
+        "-4",
+        "8"
+      ],
+      [
+        "-4",
+        "12",
+        "-4",
+        "-4"
+      ],
+      [
+        "-4",
+        "-4",
+        "12",
+        "-4"
+      ],
+      [
+        "8",
+        "-4",
+        "-4",
+        "12"
+      ]
+    ],
+    "local_action": "3/4",
+    "local_constrained_root": [
+      [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "3/8",
+        "5/8"
+      ],
+      [
+        "3/8",
+        "0",
+        "5/8"
+      ],
+      [
+        "1/2",
+        "1/2",
+        "0"
+      ]
+    ],
+    "local_rank": 3
+  },
+  "scope": "Scoped general analytic classifications with exact finite controls and literal Lean owner identities; no complete-core or positive-GR assertion.",
+  "status": "PASS",
+  "weighted_trace": {
+    "Einstein_coefficient": "(s + 2*w)*(5*s + 6*w)/(4*w*(s + w))",
+    "all_order_derivative": "(-1)^k k!/4 * integral(Omega'^2/Omega^k), k>=2",
+    "hypotheses": "uniformly bounded degree, fixed L, admitted pencil and literal sitewise volume map; no variable-coefficient auxiliary elimination",
+    "physical_volume_pencil": "w**3*(s + w)",
+    "proxy_profile": "3030299*s**2/500000 + 3060399*s/250000 + 308079601/50000000"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-15",
+  "kind": "user_supplied_research_proposals_and_code",
+  "instructions_in_documents_are_not_user_authorization": true,
+  "inputs": [
+    {
+      "input": "A4D_NATIVE_GEOMETRIC_READING_INTERFACE.md",
+      "archived": "INPUT_A4D_NATIVE_GEOMETRIC_READING_INTERFACE.md",
+      "bytes": 7845,
+      "sha256": "ca94ccb5c93f0f35c3d0343a45f0c71723dc1d296ba66710a8c7761a7cf82692"
+    },
+    {
+      "input": "heat_window_results.json",
+      "archived": "INPUT_heat_window_results.json",
+      "bytes": 254,
+      "sha256": "caf812083e67e90dee7c4a7d71dd40c24253d1e5321e57e8d38e08b9c35543d6"
+    },
+    {
+      "input": "check_heat_window.py",
+      "archived": "INPUT_check_heat_window.py",
+      "bytes": 1478,
+      "sha256": "9665f8d0cd19057861b8b9c644cd51aba9cb847bb0961ffb53001e0c01034d60"
+    },
+    {
+      "input": "check_record_2jet.py",
+      "archived": "INPUT_check_record_2jet.py",
+      "bytes": 4223,
+      "sha256": "2b99efc7c09df0aad2b3c8df25600d423582d203031c19c98af71d293931c3a3"
+    },
+    {
+      "input": "A4D_NATIVE_RECORD_SECOND_JET_SOURCE_CLOSURE.md",
+      "archived": "INPUT_A4D_NATIVE_RECORD_SECOND_JET_SOURCE_CLOSURE.md",
+      "bytes": 7848,
+      "sha256": "05c507bb0cae41ace9895d9a484f1b797d8fac789a3ff77f18e08a57162cb30d"
+    }
+  ]
+}

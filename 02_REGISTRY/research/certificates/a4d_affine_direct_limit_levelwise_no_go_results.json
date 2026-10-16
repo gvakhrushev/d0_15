@@ -1,0 +1,84 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_affine_direct_limit_levelwise_no_go.lean",
+  "capsule_sha256": "938d7d59e45a869413862dcba64f8a8e30586f66ecccfd2245602eab8a438993",
+  "checker_sha256": "79a731d0b63214d4bd1945e446d6a0d29c2a21b9469ff03bb4a4873841abf8ea",
+  "checks": [
+    "LEAN_RUNTIME_COMPILE_PASS",
+    "BOTH_DIRECT_LIMIT_PROPOSITIONS_PRINTED",
+    "STANDARD_LOGICAL_AXIOMS_ONLY",
+    "CAPSULE_HAS_NO_PLACEHOLDERS",
+    "OWNER_CHECK_a4d_finite_lorentz_covariant_positive_quadratic_check",
+    "OWNER_CHECK_a4d_native_history_response_descent_check",
+    "FINITE_OWNER_RECEIPT_PASS",
+    "GOLDEN_HISTORY_OWNER_RECEIPT_PASS",
+    "GOLDEN_HISTORY_EXACT_CERTIFICATE_PASS",
+    "ACTUAL_ISOMETRIC_CYLINDER_INCLUSION_BOUND",
+    "PHYSICAL_ADMISSION_STAYS_OPEN",
+    "COMPLETION_SCOPE_STAYS_CONDITIONAL"
+  ],
+  "compiled_declarations": [
+    "continuousLinearMap_eq_id_of_dense_fixed",
+    "directLimit_translation_eq_id"
+  ],
+  "compiler_exit_code": 0,
+  "control_count": 12,
+  "output": "02_REGISTRY/research/certificates/a4d_affine_direct_limit_levelwise_no_go_output.txt",
+  "output_sha256": "b23206a98812cdca041f74bcf5ef7ebe3dd29c8a97b3fb96958bb9ba0da96c4b",
+  "owner_check_outputs": {
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_check.py": "PASS_FINITE_LORENTZ_COVARIANT_POSITIVE_QUADRATIC\nlean_theorem=D0.Research.FiniteLorentzCovariantPositiveQuadratic.invariant_nonnegative_quadratic_eq_zero\nlean_axioms=Classical.choice,Quot.sound,propext\nexact_controls=20\nhalf_turn_x_preserves_minkowski_form_exactly=PASS\nhalf_turn_x_is_proper_time_oriented=PASS\nhalf_turn_y_preserves_minkowski_form_exactly=PASS\nhalf_turn_y_is_proper_time_oriented=PASS\nhalf_turn_z_preserves_minkowski_form_exactly=PASS\nhalf_turn_z_is_proper_time_oriented=PASS\nquarter_turn_z_preserves_minkowski_form_exactly=PASS\nquarter_turn_z_is_proper_time_oriented=PASS\nquarter_turn_y_preserves_minkowski_form_exactly=PASS\nquarter_turn_y_is_proper_time_oriented=PASS\nrational_boost_preserves_minkowski_form_exactly=PASS\nrational_boost_is_proper_time_oriented=PASS\npositive_euclidean_form_fails_boost=PASS\nminkowski_form_fails_nonnegativity=PASS\ndropping_boost_admits_nonzero_positive_form=PASS\npure_translation_composition_adds_the_recorded_shift=PASS\nowned_affine_shift_composition_is_pinned=PASS\ncurrent_CAR_exterior_link_ignores_pure_shift=PASS\nD0_rational_AB_boost_owner_is_resolved=PASS\ncoordinate_boost_is_exactly_the_owned_role_boost=PASS",
+    "02_REGISTRY/research/certificates/a4d_native_history_response_descent_check.py": "PASS_NATIVE_HISTORY_RESPONSE_DESCENT 189 controls 42 Lean propositions"
+  },
+  "owner_inputs_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_AFFINE_UNITARY_NO_GO.md": "0f5c25e78b626402433977b28e217fc011a391c7b8cf88d7a42e8d250347c311",
+    "02_REGISTRY/research/A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md": "21309824974421b2f3ce3295e4f0f4da5116263d0c35de2f73c19486fba9fbfe",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic.lean": "4eca073ff8b0794cb4f977155bb67913e0f11ae8e51e5e4c24999be9a4986cbe",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_check.py": "76899f6015e931db80985d84322f463a0f281b549a71ce89c7c40bb48532b341",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_output.txt": "dc13d826d73fa21c21f5e0acb2c3da1d73be32d5f9c9c3782143b5b10f5cb6cd",
+    "02_REGISTRY/research/certificates/a4d_finite_lorentz_covariant_positive_quadratic_results.json": "453780bd927b6c0c963792a318216cc09e74090a380dcc8683828d50dfde9d6d",
+    "02_REGISTRY/research/certificates/a4d_native_history_response_descent.lean": "a0e9b9b166fa6d863bb02192300afe91b685334a5f4a2663cab3c03c48807a3e",
+    "02_REGISTRY/research/certificates/a4d_native_history_response_descent_certificate.json": "df115ff418f15ac870ba37066016a10d1e974f8b540dd936eca40c6b17c4dcf3",
+    "02_REGISTRY/research/certificates/a4d_native_history_response_descent_check.py": "731c206674d999e5da9ee85affab6b6c11db4d380bacc1553d108832cc539bf7",
+    "02_REGISTRY/research/certificates/a4d_native_history_response_descent_output.txt": "996be5a6ee25f2ed0cc8b4655ba300d2b5d014a7349b2c3a97e60fc29aa96a90",
+    "02_REGISTRY/research/certificates/a4d_native_history_response_descent_results.json": "55e3da21f9dae491ff2973d8a15f183084115884ed8d8219b1f64aaa04341353"
+  },
+  "owner_results": {
+    "finite_affine": {
+      "controls": 20,
+      "status": "PASS_FINITE_LORENTZ_COVARIANT_POSITIVE_QUADRATIC"
+    },
+    "golden_history": {
+      "controls": 189,
+      "lean_propositions": 42,
+      "status": "PASS"
+    }
+  },
+  "proof": "02_REGISTRY/research/A4D_NATIVE_AFFINE_DIRECT_LIMIT_LEVELWISE_NO_GO.md",
+  "proof_sha256": "5acf1097dbe90af2f2cedb880b409e1ff1042e8ddb8caa4efbd8a2cea9cf8dde",
+  "scope": {
+    "G0_closed": false,
+    "actual_golden_isometric_refinement_owner_consumed": true,
+    "class": "FINITE_POSITIVE_LEVELS_WITH_LEVEL_PRESERVING_AFFINE_UNITARY_ACTION",
+    "conditional_standard_completion_used": true,
+    "cross_level_generator_required_for_nontrivial_action_in_this_class": true,
+    "finite_affine_translation_theorem_consumed": true,
+    "global_closure": false,
+    "levelwise_natural_translation_action_on_direct_limit_trivial": true,
+    "native_cross_level_affine_generator_derived": false,
+    "physical_heat_block_F_selected": false,
+    "physical_hilbert_completion_owned": false,
+    "positive_gr": false,
+    "whole_core_no_go": false
+  },
+  "source_head": "bdbac63270a52b3da3e3348502682a8fc48459b8",
+  "status": "PASS",
+  "toolchain_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  }
+}

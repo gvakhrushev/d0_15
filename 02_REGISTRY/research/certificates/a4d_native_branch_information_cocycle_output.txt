@@ -1,0 +1,36 @@
+D0.Research.NativeBranchInformationCocycle.codeCost_eq_reference_surprisal (w : List Bool) :
+  codeCost w = -log (CondensedAnchor.cylWeight w) / log φ
+D0.Research.NativeBranchInformationCocycle.code_minus_pathInfo_eq_pathAction (q : List Bool → ℝ) (w : List Bool)
+  (hq : 0 < q w) : codeCost w - pathInfo q w = pathAction q w
+D0.Research.NativeBranchInformationCocycle.pathInfo_unique (q : List Bool → ℝ) (w : List Bool) (hq : 0 < q w) (I : ℝ)
+  (hI : codeCost w - I = pathAction q w) : I = pathInfo q w
+D0.Research.NativeBranchInformationCocycle.pathInfo_increment_eq_localInfo (q : List Bool → ℝ) (w : List Bool)
+  (b : Bool) (hq : 0 < q w) (hqc : 0 < q (w.concat b)) : pathInfo q (w.concat b) - pathInfo q w = localInfo q w b
+D0.Research.NativeBranchInformationCocycle.likelihood_nonneg (q : List Bool → ℝ) (w : List Bool) (hq : 0 ≤ q w) :
+  0 ≤ likelihood q w
+D0.Research.NativeBranchInformationCocycle.likelihood_refines (q : List Bool → ℝ) (hq : PrefixProbability q)
+  (w : List Bool) :
+  CondensedAnchor.cylWeight (w.concat true) * likelihood q (w.concat true) +
+      CondensedAnchor.cylWeight (w.concat false) * likelihood q (w.concat false) =
+    CondensedAnchor.cylWeight w * likelihood q w
+D0.Research.NativeBranchInformationCocycle.movingPathInfo_hasDerivAt (mu dq : ℝ) (q : ℝ → ℝ) (t : ℝ) (hmu : 0 < mu)
+  (hq : 0 < q t) (hderiv : HasDerivAt q dq t) : HasDerivAt (movingPathInfo mu q) (dq / q t / log φ) t
+'D0.Research.NativeBranchInformationCocycle.codeCost_eq_reference_surprisal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeBranchInformationCocycle.code_minus_pathInfo_eq_pathAction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeBranchInformationCocycle.pathInfo_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeBranchInformationCocycle.pathInfo_increment_eq_localInfo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeBranchInformationCocycle.likelihood_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeBranchInformationCocycle.likelihood_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeBranchInformationCocycle.movingPathInfo_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

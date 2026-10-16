@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-14",
+  "scope": "LOCAL_BOTTOM_UP_OPERATIONAL_CONTINUATION",
+  "entries": [
+    {
+      "id": "literal_golden_gate",
+      "status": "VERIFIED_INPUT",
+      "meaning": "G/fullStep прочитаны на pinned SOURCE; матрица проверена локально. Не новая Lean-компиляция."
+    },
+    {
+      "id": "quadratic_fault_effect",
+      "status": "DERIVED",
+      "meaning": "A1†A1=p³(U−V)†(U−V) для полного фактического golden comparison; физический controlled access условен."
+    },
+    {
+      "id": "Rayleigh_matter_equation",
+      "status": "DERIVED_WITHIN_COUNT_READOUT",
+      "meaning": "Собственное уравнение — вариация калиброванного нормированного счётного readout, не постулат для компенсации тепла."
+    },
+    {
+      "id": "tracial_preparation_and_one_flag",
+      "status": "CONSTRUCTED_HERALDED",
+      "meaning": "Пара G и CNOT дают uniform bit и сохраняемый |1> на принятом parity-секторе; остальные outcomes сохранены."
+    },
+    {
+      "id": "full_curved_square",
+      "status": "DERIVED_IN_DECLARED_OPERATOR_CLASS",
+      "meaning": "20 unitary words, 190 pair comparisons; не требуется коммутативность; physical endpoint isometries обязательны."
+    },
+    {
+      "id": "spectral_layer_preparation",
+      "status": "CONSTRUCTED_HERALDED_APPROXIMATE",
+      "meaning": "Полная статистика T сравнений, конечное окно числа ошибок. Никакой projector oracle, beta/тепловая подгонка или таблица occupations в операции."
+    },
+    {
+      "id": "all_size_accuracy_resource",
+      "status": "ANALYTIC_WITH_FINITE_CONTROLS",
+      "meaning": "Chernoff, error/gap bounds, finite repeat budget; all failed histories kept. Не actual AF refinement theorem."
+    },
+    {
+      "id": "local_source_transfer",
+      "status": "ANALYTIC_AND_INTERVAL_BOUND",
+      "meaning": "10 G-метрических и 64 linear-link raw rows контролируются напрямую относительно v1 conditional root. Matter — Hilbert norm, не полный raw archive l1."
+    },
+    {
+      "id": "finite_exact_full_roots",
+      "status": "NOT_CLAIMED",
+      "meaning": "Spectral tail and matter Euler residual strictly positive at finite T."
+    },
+    {
+      "id": "physical_count_action_identity",
+      "status": "OPEN",
+      "meaning": "Измеримость и вычислимость цены ещё не доказывают, что именно она входит в физическое полное действие."
+    },
+    {
+      "id": "native_pi0_phase_and_reference",
+      "status": "OPEN",
+      "meaning": "Нужно фактическое относительное placement π₀ и минимальной отсылки, не произвольная экспонента на каждом цикле."
+    },
+    {
+      "id": "full_J_preparation_AF_Ward_GR",
+      "status": "OPEN",
+      "meaning": "Общий настоящий J/readout, physical AF bonds, affine sector, Ward и curved Einstein не выведены."
+    }
+  ],
+  "new_universal_physical_axioms_installed": false,
+  "new_Lean_compilation": false,
+  "GitHub_commit": null,
+  "CI_result": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "d0-direct-forcing-attack/1",
+  "status": "PASS",
+  "input_head": "9e28597a917c581f684aa26e33ad0323c3265989",
+  "proof_sha256": "92fecc34d44a6bb22a63d09073d861ef0f5accdb866b33d658c80eaa0944832b",
+  "checker_sha256": "d5660e27d0fe2a6f46472084de30ef197fb7a187ff27c269574032a1dd189491",
+  "algebra": {
+    "counted_conditions": 249,
+    "distinct_condition_names": 118,
+    "negative_controls": [
+      "only_linear_quadratic_in_state_observable",
+      "same_source_from_same_error_records",
+      "two_scores_same_operator",
+      "omit_three_error_normalization",
+      "frozen_extra_readout_source",
+      "general_tangent_commutes",
+      "refinement_may_freeze_embedding",
+      "ordinary_small_error_is_normalized_small",
+      "reference_measure_equals_all_physical_outcomes",
+      "likelihood_is_always_identity",
+      "cost_clock_equals_raw_round_clock_for_mixtures",
+      "nonlinear_score_obeys_same_primitive_additivity",
+      "one_linear_energy_unit_absorbs_correction"
+    ],
+    "source_gap_limit": "-phi^(-3)*epsilon_infinity^2/64",
+    "refinement_defect_zero": true
+  },
+  "interval": {
+    "conditional_on_pinned_v10_root_box": true,
+    "normalized_radial_gap_enclosure": [
+      "-0.020989183",
+      "-0.020989182"
+    ],
+    "epsilon8_enclosure": [
+      "2.3857044602",
+      "2.3857044604"
+    ],
+    "normalized_raw_G_packed_source_gap_enclosure": [
+      "0.164918041",
+      "0.164918044"
+    ]
+  },
+  "conditions_total": 262,
+  "distinct_conditions_total": 131,
+  "scope": {
+    "same_full_tape_same_heat_and_J": true,
+    "alternative_is_installed_D0_action": false,
+    "all_D0_premises_satisfied_by_alternative": false,
+    "v10_listed_structural_tests_force_unique_matter_readout": false,
+    "M1_class_admissibility_alone_forces_original": false,
+    "primitive_additivity_would_select_linear_score": true,
+    "literal_Fibonacci_code_mean_cost_pullback_proved": true,
+    "native_code_positive_likelihood_lift_proved": true,
+    "full_Cost_minus_Info_physical_action_identity_proved": false,
+    "error_flag_to_native_return_forced_by_M1": false,
+    "exact_joint_root_for_alternative_proved": false,
+    "original_310_terminal_or_GR_closed": false,
+    "new_Lean_compilation": false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "checker_sha256": "b9b491ac34db33a7e5091dda0ac03297fab64b17594f535235daa0ceabf23b65",
+  "checks_sha256": "e4e70360eb0a20eac013291de4f085771a98eb830369a8d957a0f1070fad285f",
+  "exact_conditions": 304,
+  "executed_negative_controls": [
+    "Perron_adjoint_is_full_heat_transfer",
+    "ordinary_trace_transfer_is_unital",
+    "central_correction_is_one_scalar",
+    "drop_archive_source_at_cyclic_preparation",
+    "use_defining_instead_of_regular_multiplicity",
+    "all_allowed_tangents_commute_with_native_mismatch",
+    "one_global_log_dimension_correction_suffices"
+  ],
+  "input_head": "25bf1db4876c20223f2dbaeb1cbe1105039cf7a1",
+  "owner_binding": "Literal inclusion and PF-adjoint formulas read at pinned owner; no new Lean compilation.",
+  "owner_git_blobs": {
+    "02_REGISTRY/research/A4D_NATIVE_AF_TRACE_PREPARATION.md": "3cbb805fb72b501a0eb1d7d17b9f037dff115880",
+    "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md": "573e2d70c1d7cbefd35670431b1ab9b87624dbdd",
+    "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean": "64dc8f9da911b1ff3427413c2efc40db0bcac043"
+  },
+  "proof_sha256": "d88fd469cf965806489e0d90c1184fdeb652b79a95434f528d14736f03cacedd",
+  "schema": "d0-native-af-heat-transfer/1",
+  "scope": {
+    "all_level_tower_law_proved_analytically": true,
+    "full_partition_and_archive_source_retained": true,
+    "native_AF_trace_transfer": true,
+    "new_Lean_compilation": false,
+    "physical_GR_closed": false,
+    "physical_heat_generator_derived": false
+  },
+  "status": "PASS_EXACT_REPLAY"
+}

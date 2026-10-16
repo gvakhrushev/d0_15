@@ -6,7 +6,7 @@ Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
 Repository: `gvakhrushev/d0_15`  
 Base: `main`  
-Branch: `exp/a4d-joint-response-decoupling-microstructure`  
+Branch: `exp/a4d-joint-response-continuation-2026-10-16`
 Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`  
 Execution: `GitHub-first`
 
@@ -17,6 +17,38 @@ The exact curved nongauge joint-vacuum family in merged #232 destroys connection
 ## Runtime / collision gate
 
 Before starting, use current `main`, confirm this row is still `PLANNED`, and search open PRs for this exact task ID. Continue an existing execution if one exists; do not create a duplicate. Pin the launch SHA and the current merged/live state and head of every cited input. Do not recompute delegated results except for narrow consistency checks that the response argument needs.
+
+## Continuation interface — 2026-10-16
+
+User-authorized continuation: Draft #334; historical #310 remains closed.
+Baseline: `add17919b344f0e46115619aa53d2173ecdcf219`. Published scientific
+input: `4d19564d2226496eeeda1f43d84e4b57a4f2e817`, including the complete
+synthesis, original five-file intake and native stored-wave proof. Accepted
+#330/#332/#333 are consumed with their actual hypotheses in the primary memo.
+No independent task or competing execution is created.
+
+The original terminal below retains one independently fixed smooth
+nonconstant metric `g`, one independently fixed smooth source `tau`, exact
+sampling, the unweighted raw sum norm on all ten packed metric rows and
+the #216 comparator. A shrinking fitted grid source is not a terminal.
+The old `530a5132` weaker-source obstruction does not retire this task.
+
+The immediate conditional-v8 step is the complete joint linearized Euler
+kernel, with the actual stored operator, counting-site trace, all sixteen
+matter grades, retained reference/workspace, link/observer variations,
+preparation Schur term and moving normalizer. The bounded stored-class
+intertwiner and the native row-wave excluded as a stationary first velocity
+are pinned inputs, not a physical
+admission law or a full-field inverse. Consume this kernel in the construction
+or exclusion of a genuine joint branch, not another scalar-Hessian fit.
+
+Write surface: this brief, the primary memo, complete-field-source synthesis
+and its existing research consumers. Preserve the whole readable research
+payload; do not restore old lifecycle files. The two inherited shift-irrelevance
+support lemmas and repaired certificate inputs are carried exactly from the
+published SOURCE; no new Lean-owner research, claim or BOOK promotion is added.
+Smallest check: exact input/definition identity for a byte-preserving import;
+for a changed calculation, its affected consumer and a hostile control.
 
 ## Objective
 

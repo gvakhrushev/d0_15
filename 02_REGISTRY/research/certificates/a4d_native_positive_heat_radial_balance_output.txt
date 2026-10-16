@@ -1,0 +1,187 @@
+D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_zero.{u_1} {ι : Type u_1} (lambda : ι → ℝ) :
+  D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda 0 = lambda
+'D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_derivative.{u_1} {ι : Type u_1} (lambda : ι → ℝ) (i : ι) :
+  HasDerivAt (fun t => D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t i) (-2 * lambda i) 0
+'D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.radial_thermal_source.{u_1} {ι : Type u_1} [Fintype ι] (beta : ℝ)
+  (lambda : ι → ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta lambda fun i => -2 * lambda i) =
+    2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda
+'D0.Research.NativePositiveHeatRadialBalance.radial_thermal_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.actual_heat_radial_derivative.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] [Nonempty ι] (beta : ℝ) (lambda : ι → ℝ) (hb : beta ≠ 0) :
+  HasDerivAt
+    (fun t =>
+      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta
+        (D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t))
+    (2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda) 0
+'D0.Research.NativePositiveHeatRadialBalance.actual_heat_radial_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  [Nonempty ι] (beta : ℝ) (lambda : ι → ℝ) (hl : ∀ (i : ι), 0 ≤ lambda i) :
+  0 ≤ D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda
+'D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_positive.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  [Nonempty ι] (beta : ℝ) (lambda : ι → ℝ) (hl : ∀ (i : ι), 0 ≤ lambda i) (hp : ∃ i, 0 < lambda i) :
+  0 < D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda
+'D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.full_price_radial_derivative.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] [Nonempty ι] (beta : ℝ) (lambda : ι → ℝ) (hb : beta ≠ 0) (remainder : ℝ → ℝ) (r : ℝ)
+  (hr : HasDerivAt remainder r 0) :
+  HasDerivAt
+    (fun t =>
+      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta
+          (D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t) +
+        remainder t)
+    (2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda + r) 0
+'D0.Research.NativePositiveHeatRadialBalance.full_price_radial_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.complete_radial_balance.{u_1} {ι : Type u_1} [Fintype ι] (beta : ℝ)
+  (lambda : ι → ℝ) (r : ℝ) :
+  2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda + r = 0 ↔
+    r = -2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda
+'D0.Research.NativePositiveHeatRadialBalance.complete_radial_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.scale_stationary_remainder_excludes_stationarity.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] [Nonempty ι] (beta : ℝ) (lambda : ι → ℝ) (hb : beta ≠ 0) (hl : ∀ (i : ι), 0 ≤ lambda i)
+  (hp : ∃ i, 0 < lambda i) (remainder : ℝ → ℝ) (hr : HasDerivAt remainder 0 0) :
+  ¬HasDerivAt
+      (fun t =>
+        D0.Research.NativeComposedFeedbackDynamics.heatContribution beta
+            (D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t) +
+          remainder t)
+      0 0
+'D0.Research.NativePositiveHeatRadialBalance.scale_stationary_remainder_excludes_stationarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.nonzero_calibration_retains_radial_source.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] [Nonempty ι] (beta a : ℝ) (lambda : ι → ℝ) (ha : a ≠ 0) (hl : ∀ (i : ι), 0 ≤ lambda i)
+  (hp : ∃ i, 0 < lambda i) : a⁻¹ * (2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda) ≠ 0
+'D0.Research.NativePositiveHeatRadialBalance.nonzero_calibration_retains_radial_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.zero_operator_control.{u_1} {ι : Type u_1} [Fintype ι] (beta : ℝ) :
+  (D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta fun x => 0) = 0
+'D0.Research.NativePositiveHeatRadialBalance.zero_operator_control' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.retained_zero_modes_partition.{u_1, u_2} {ι : Type u_1} [Fintype ι]
+  {κ : Type u_2} [Fintype κ] [DecidableEq κ] (beta : ℝ) (lambda : ι → ℝ) :
+  D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta
+      (D0.Research.NativePositiveHeatRadialBalance.retainZeroModes lambda) =
+    D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta lambda + ↑(Fintype.card κ)
+'D0.Research.NativePositiveHeatRadialBalance.retained_zero_modes_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.all_retained_zero_modes_keep_strict_sign.{u_1, u_2} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] [Nonempty ι] {κ : Type u_2} [Fintype κ] [DecidableEq κ] (beta : ℝ) (lambda : ι → ℝ)
+  (hl : ∀ (i : ι), 0 ≤ lambda i) (hp : ∃ i, 0 < lambda i) :
+  0 <
+    D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta
+      (D0.Research.NativePositiveHeatRadialBalance.retainZeroModes lambda)
+'D0.Research.NativePositiveHeatRadialBalance.all_retained_zero_modes_keep_strict_sign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.full_joint_radial_tangent.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (qS qT D : Matrix ι ι ℝ) (h : D * qT * D.transpose = qS) :
+  D * 2 • qT * D.transpose + 0 * qT * D.transpose + D * qT * Matrix.transpose 0 = 2 • qS
+'D0.Research.NativePositiveHeatRadialBalance.full_joint_radial_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.scaled_square_similarity.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (A J JI : Matrix ι ι ℝ) (r : ℝ) (h : JI * J = 1) : r • (J * A * JI) * r • (J * A * JI) = r ^ 2 • (J * (A * A) * JI)
+'D0.Research.NativePositiveHeatRadialBalance.scaled_square_similarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square (N : ℕ)
+  (W : D0.Geometry.ArchiveCochain N ≃ₗ[ℝ] D0.Geometry.ArchiveCochain N) (u : D0.Geometry.ArchiveCochain N) :
+  D0.Research.NativeWeightedDiracBoundary.weightedDirac N W
+      (D0.Research.NativeWeightedDiracBoundary.weightedDirac N W u) =
+    D0.Geometry.dForward N (D0.Research.NativeWeightedDiracBoundary.weightedCodiff N W u) +
+      D0.Research.NativeWeightedDiracBoundary.weightedCodiff N W (D0.Geometry.dForward N u)
+'D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Geometry.dConn_raises_degree.{u_1} {N : ℕ} {V : Type u_1} [AddCommGroup V] [Module ℝ V]
+  (U : D0.Geometry.LinkConnection N ℝ V) (k : ℕ) (ψ : D0.Geometry.CoeffCochain N V)
+  (hψ : D0.Geometry.CoeffHomogeneous k ψ) : D0.Geometry.CoeffHomogeneous (k + 1) (D0.Geometry.dConn U ψ)
+'D0.Geometry.dConn_raises_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1]
+D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  [Nonempty n] (beta t : ℝ) (lambda : ℝ → n → ℝ) (v : n → ℝ) (hb : beta ≠ 0)
+  (h : ∀ (i : n), HasDerivAt (fun s => lambda s i) (v i) t) :
+  HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.heatContribution beta (lambda s))
+    (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta (lambda t) v) t
+'D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeWeightedDiracBoundary.identity_weight_binding (N : ℕ) (u : D0.Geometry.ArchiveCochain N) :
+  D0.Research.NativeWeightedDiracBoundary.weightedDirac N (LinearEquiv.refl ℝ (D0.Geometry.ArchiveCochain N)) u =
+    D0.Geometry.hodgeCarDirac N u
+'D0.Research.NativeWeightedDiracBoundary.identity_weight_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int (r : D0.Role)
+  (bra ket : D0.Geometry.ArchiveFockState) :
+  D0.Geometry.carCreateInt r bra ket ≠ 0 → D0.Geometry.fockDegree bra = D0.Geometry.fockDegree ket + 1
+'D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise (r : D0.Role)
+  (bra ket : D0.Geometry.ArchiveFockState) (h : D0.Geometry.carCreate r bra ket ≠ 0) :
+  D0.Geometry.fockDegree bra = D0.Geometry.fockDegree ket + 1
+'D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree.{u_1} {N : ℕ} {V : Type u_1}
+  [AddCommGroup V] [Module ℝ V] (U : D0.Geometry.LinkConnection N ℝ V) (k : ℕ) (ψ : D0.Geometry.CoeffCochain N V)
+  (hψ : D0.Geometry.CoeffHomogeneous k ψ) : D0.Geometry.CoeffHomogeneous (k + 1) (D0.Geometry.dConn U ψ)
+'D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero.{u_1} {ι : Type u_1} (a b c : ι → ℝ) :
+  D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c 0 = fun i => a i + b i + c i
+'D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative.{u_1} {ι : Type u_1} (a b c : ι → ℝ) (i : ι) :
+  HasDerivAt (fun t => D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c t i) (-a i + b i) 0
+'D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source.{u_1} {ι : Type u_1} [Fintype ι] (beta : ℝ)
+  (lambda a b : ι → ℝ) :
+  (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta lambda fun i => -a i + b i) =
+    D0.Research.NativePositiveHeatRadialBalance.modeMean beta lambda a -
+      D0.Research.NativePositiveHeatRadialBalance.modeMean beta lambda b
+'D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] [Nonempty ι] (beta : ℝ) (a b c : ι → ℝ) (hb : beta ≠ 0) :
+  HasDerivAt
+    (fun t =>
+      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta
+        (D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c t))
+    (D0.Research.NativePositiveHeatRadialBalance.modeMean beta (fun i => a i + b i + c i) a -
+      D0.Research.NativePositiveHeatRadialBalance.modeMean beta (fun i => a i + b i + c i) b)
+    0
+'D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -378,6 +378,37 @@ def archiveSolderedDirac
     (n : ArchiveRolePhaseGroup N → RoleVector) (ψ : ArchiveCochain N) : ArchiveCochain N :=
   archiveSolderedForwardDifferential A e ψ + archiveSolderedCodifferential A e n ψ
 
+/-- The complete affine-linked Hodge--Dirac operator only sees the linear
+parts of its affine links. Thus changing translations while fixing all linear
+links leaves the CAR operator unchanged. This is a property of this existing
+operator, not an exclusion of other native field-dependent operations. -/
+theorem archiveAffineLinkedHodgeDirac_shift_irrelevant
+    (A B : AffineCartanConnection N ℝ RoleSpace)
+    (h : ∀ x r, (A x r).lin = (B x r).lin)
+    (ψ : ArchiveCochain N) :
+    archiveAffineLinkedHodgeDirac A ψ = archiveAffineLinkedHodgeDirac B ψ := by
+  funext p
+  simp [archiveAffineLinkedHodgeDirac, archiveAffineLinkedCreateDifferential,
+    archiveAffineForwardCreateDirection, archiveAffineLinkedHodgeCodifferential,
+    archiveAffineBackwardAnnihilateDirection, archiveAffinePullFiber,
+    archiveAffinePullPreviousFiber, archiveAffineExteriorLink, h]
+
+/-- The complete coframe-soldered CAR Dirac operator is likewise blind to
+affine translations at fixed linear links and fixed raw solder and observer.
+These two existing CAR transports therefore do not select a local record
+readout from the affine shift. -/
+theorem archiveSolderedDirac_shift_irrelevant
+    (A B : AffineCartanConnection N ℝ RoleSpace)
+    (h : ∀ x r, (A x r).lin = (B x r).lin)
+    (e : LocalCoframeField N) (n : ArchiveRolePhaseGroup N → RoleVector)
+    (ψ : ArchiveCochain N) :
+    archiveSolderedDirac A e n ψ = archiveSolderedDirac B e n ψ := by
+  funext p
+  simp [archiveSolderedDirac, archiveSolderedForwardDifferential,
+    archiveSolderedCreateDirection, archiveSolderedCodifferential,
+    archiveSolderedAnnihilateDirection, archiveAffinePullFiber,
+    archiveAffinePullPreviousFiber, archiveAffineExteriorLink, h]
+
 theorem archiveSolderedAnnihilateDirection_flat (ψ : ArchiveCochain N) (r : Role) :
     archiveSolderedAnnihilateDirection (flatAffineConnection N) (0 : LocalCoframeField N)
         (fun _ => restObserver) r ψ =

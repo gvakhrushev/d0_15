@@ -1,0 +1,19 @@
+{
+  "schema": "a4d-y-curved-joint-diagonal-allphase-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-DIAGONAL-ALLPHASE-RESONANCE-CERTIFIED",
+  "z": "1",
+  "zone_folded_variable": "a=t^4 for lambda_0=lambda_1=lambda_2=lambda_3=t",
+  "connection_polynomial": "P(a)=A_-+a*A_0+a^2*A_+",
+  "determinant_factorization": "C*a^84*(a-1)^4*(a^2-258*a+1)^2*F(a)^2*Frev(a)^2",
+  "constant": "531441/3913395361777299505603887556934867558656",
+  "F": "31213*a^4-268044*a^3+824374*a^2-613116*a+74725",
+  "Frev": "74725*a^4-613116*a^3+824374*a^2-268044*a+31213",
+  "unit_torus_zero_locus": "a=1 only",
+  "common_phase_conclusion": "for |t|=1 the connection block is singular iff t^4=1",
+  "folded_joint_conclusion": "at t^4=1 metric rows lift the dual center and the full joint kernel is the one-dimensional physical Y center",
+  "scope_fence": [
+    "all common-phase unit-torus characters are covered",
+    "non-diagonal ratios lambda_j/lambda_0 remain open",
+    "no nonlinear branch or task-level response terminal is claimed"
+  ]
+}

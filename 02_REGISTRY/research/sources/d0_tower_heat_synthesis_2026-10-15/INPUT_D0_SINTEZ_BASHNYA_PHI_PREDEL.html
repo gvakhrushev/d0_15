@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>D0 · Прорывной синтез: башня, φ и предел</title>
+<meta name="description" content="Конденсированный синтез D0: вынужденность φ вторым собственным значением, разбиение единицы |Role|·x₂+x₅=1, мост тепла к золотому ному, неперестановочность пределов, минимальный прибор из пяти возвратов.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f2f7; --surface:#ffffff; --surface-2:#efeaf3; --surface-3:#e8e2ee;
+  --ink:#1a1520; --ink-soft:#3c3448; --muted:#6a6177;
+  --rule:#dcd5e3; --rule-strong:#bfb4cb;
+  --plum:#7a3d8f; --plum-deep:#4a2058; --plum-soft:#f0e6f5;
+  --brass:#9a6a08; --brass-soft:#f8efd8; --brass-line:#e3cf9e;
+  --verde:#1c6b4c; --verde-soft:#e2f1e9;
+  --step--1:clamp(.75rem,.72rem + .15vw,.83rem);
+  --step-0:clamp(.96rem,.93rem + .2vw,1.05rem);
+  --step-1:clamp(1.14rem,1.07rem + .4vw,1.32rem);
+  --step-2:clamp(1.42rem,1.28rem + .9vw,1.9rem);
+  --step-3:clamp(1.9rem,1.5rem + 2.1vw,3.05rem);
+  --sp:clamp(1rem,.85rem + .8vw,1.5rem);
+  --radius:8px;
+  --shadow:0 1px 1px rgba(26,21,32,.04),0 12px 32px -20px rgba(26,21,32,.35);
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Archivo","Hiragino Sans","Yu Gothic","Noto Sans JP",system-ui,sans-serif;
+  font-size:var(--step-0);line-height:1.66;font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:68rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.8rem)}
+
+/* header */
+header.top{
+  background:
+    radial-gradient(120% 90% at 88% 0%, #3a1a48 0%, transparent 62%),
+    linear-gradient(165deg,#241a30 0%,#1a1520 62%,#231a2c 100%);
+  color:#efe9f4;padding:clamp(1.8rem,5vw,3.4rem) 0 clamp(1.5rem,4vw,2.6rem);
+  border-bottom:3px solid var(--brass);
+}
+header.top .eyebrow{color:#c9a6dd}
+header.top .lede{color:#cfc4da}
+header.top .pin{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);color:#bfb2cc}
+header.top .pin b{color:#f4eef9}
+.eyebrow{font-family:var(--mono);font-size:var(--step--1);letter-spacing:.15em;text-transform:uppercase;
+  display:flex;flex-wrap:wrap;gap:.45rem .9rem;align-items:center;color:var(--plum)}
+.eyebrow .sep{opacity:.5}
+h1{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;font-weight:600;
+  font-size:var(--step-3);line-height:1.04;letter-spacing:-.022em;margin:.6rem 0 .7rem;max-width:26ch;
+  font-variation-settings:"SOFT" 0,"WONK" 1}
+h1 em{font-style:normal;color:#e0b96a}
+.lede{max-width:60ch;font-size:var(--step-1);line-height:1.48;margin:0 0 1.15rem;font-weight:400}
+.pins{display:flex;flex-wrap:wrap;gap:.4rem .5rem;font-family:var(--mono);font-size:var(--step--1)}
+.pin{border:1px solid var(--rule);border-radius:999px;padding:.18rem .66rem;color:var(--muted);background:var(--surface)}
+.pin b{color:var(--ink);font-weight:500}
+
+/* verdict */
+.verdict{margin:clamp(1.3rem,3.4vw,2.2rem) 0;background:var(--surface);border:1px solid var(--rule);
+  border-top:3px solid var(--plum);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:clamp(1rem,2.6vw,1.7rem) clamp(1rem,3vw,2rem)}
+.verdict h2{margin:0 0 .6rem}
+.verdict ol{margin:0;padding-left:1.2rem}
+.verdict li{margin-bottom:.5rem}
+.verdict li:last-child{margin-bottom:0}
+
+/* sections */
+main{padding:clamp(.8rem,2.5vw,1.6rem) 0 0}
+section{display:grid;grid-template-columns:5rem 1fr;gap:0 clamp(.6rem,2vw,1.5rem);
+  padding:clamp(1.5rem,4vw,2.5rem) 0;border-top:1px solid var(--rule)}
+section:first-of-type{border-top:none}
+.rail{font-family:var(--mono);font-size:var(--step--1);color:var(--plum);letter-spacing:.06em;
+  padding-top:.5rem;position:relative}
+.rail .lvl{display:block;color:var(--muted);font-size:.92em;margin-top:.2rem}
+.rail::after{content:"";position:absolute;left:.36rem;top:2.3rem;bottom:-2.5rem;width:2px;
+  background:linear-gradient(180deg,var(--rule-strong),transparent)}
+section:last-of-type .rail::after{display:none}
+.body{min-width:0}
+h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:var(--step-2);line-height:1.16;
+  letter-spacing:-.012em;margin:0 0 .7rem}
+h3{font-size:var(--step-1);font-weight:600;margin:1.5rem 0 .45rem;line-height:1.3}
+h3:first-child{margin-top:0}
+p{margin:0 0 .85rem;max-width:76ch}
+ul,ol{margin:0 0 .9rem;padding-left:1.15rem;max-width:76ch}
+li{margin-bottom:.34rem}
+li::marker{color:var(--plum)}
+a{color:var(--plum);text-underline-offset:3px}
+code{font-family:var(--mono);font-size:.88em;background:var(--surface-2);
+  border:1px solid var(--rule);border-radius:4px;padding:.06em .3em}
+
+/* chips */
+.chip{display:inline-block;font-family:var(--mono);font-size:var(--step--1);letter-spacing:.05em;
+  text-transform:uppercase;border-radius:4px;padding:.1rem .45rem;vertical-align:.08em;white-space:nowrap}
+.c-ok{background:var(--verde-soft);color:#14523a;border:1px solid #b9dccb}
+.c-der{background:var(--plum-soft);color:var(--plum-deep);border:1px solid #d6bde4}
+.c-cand{background:var(--brass-soft);color:#6f4c04;border:1px solid var(--brass-line)}
+.c-open{background:var(--surface-3);color:var(--muted);border:1px solid var(--rule-strong)}
+
+/* math */
+.m{font-family:"Fraunces",Georgia,serif;font-style:italic;white-space:nowrap}
+.mn{font-style:normal}
+.eq{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--plum);
+  border-radius:0 var(--radius) var(--radius) 0;padding:.85rem clamp(.8rem,2.5vw,1.3rem);
+  margin:1rem 0;overflow-x:auto;font-size:1.05em;line-height:2}
+.eq .tag{float:right;font-family:var(--mono);font-style:normal;font-size:var(--step--1);color:var(--muted)}
+.eq-hero{background:linear-gradient(160deg,#2c1c36,#1a1520);border-color:#2c1c36;border-left-color:var(--brass);
+  color:#f0e9f5;box-shadow:var(--shadow);padding:clamp(1rem,3vw,1.5rem) clamp(.9rem,3vw,1.6rem)}
+.eq-hero .tag{color:#c9a6dd}
+.eq-hero .sub{display:block;font-family:"Archivo",sans-serif;font-style:normal;font-size:var(--step--1);
+  color:#b6a8c4;margin-top:.55rem;line-height:1.55}
+.fn{font-family:var(--mono);font-style:normal}
+
+/* tables */
+.tw{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.93em;min-width:32rem}
+caption{caption-side:top;text-align:left;font-family:var(--mono);font-size:var(--step--1);
+  color:var(--muted);letter-spacing:.05em;text-transform:uppercase;padding-bottom:.5rem}
+th,td{text-align:left;padding:.46rem .68rem;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{font-family:var(--mono);font-size:var(--step--1);text-transform:uppercase;letter-spacing:.06em;
+  color:var(--muted);font-weight:500;border-bottom:1px solid var(--rule-strong)}
+tbody tr:hover{background:var(--surface-2)}
+td.num{font-family:var(--mono);text-align:right;white-space:nowrap}
+td.mid,th.mid{text-align:center}
+tr.hi td{background:var(--plum-soft)}
+tr.gold td{background:var(--brass-soft)}
+tr.warn td{background:var(--surface-3)}
+
+/* signature: weight bars */
+.wbar{display:flex;height:1.35rem;border-radius:3px;overflow:hidden;border:1px solid var(--rule-strong);
+  margin:.35rem 0 .2rem;font-family:var(--mono);font-size:.72rem;line-height:1.35rem;text-align:center}
+.wbar i{display:block;font-style:normal;overflow:hidden;white-space:nowrap}
+.wbar .wa{background:var(--plum);color:#fff}
+.wbar .wb{background:var(--brass-soft);color:#6f4c04}
+.wcap{font-family:var(--mono);font-size:var(--step--1);color:var(--muted);margin:0 0 .8rem}
+
+/* svg */
+figure{margin:1.2rem 0}
+.figbox{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:clamp(.6rem,2vw,1rem);box-shadow:var(--shadow)}
+figure svg{display:block;width:100%;height:auto}
+figcaption{font-size:var(--step--1);color:var(--muted);margin-top:.55rem;max-width:72ch}
+.gl{stroke:var(--rule);stroke-width:1}
+.axis{stroke:var(--rule-strong);stroke-width:1.2}
+.line{fill:none;stroke:var(--plum);stroke-width:2.4;stroke-linejoin:round}
+.dot{fill:var(--surface);stroke:var(--plum);stroke-width:2}
+.gt{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+.ct{font-family:var(--mono);font-size:11px;fill:var(--plum);font-weight:500}
+.ct.gold{fill:var(--brass)}
+.cts{font-family:var(--mono);font-size:9.5px;fill:var(--muted)}
+.mid{text-anchor:middle}.end{text-anchor:end}
+.wa{fill:var(--plum)}.wb{fill:#f0dfb8}
+.tl{font-family:var(--mono);font-size:10.5px;fill:#fff}
+.tl.mid{text-anchor:middle}
+.tt{font-family:var(--mono);font-size:10.5px;fill:var(--muted)}
+.tt.end{text-anchor:end}
+.tt.gold{fill:var(--brass)}
+
+/* notes */
+.note{border-left:3px solid var(--plum);background:var(--plum-soft);border-radius:0 var(--radius) var(--radius) 0;
+  padding:.85rem 1.05rem;margin:1rem 0}
+.note.warn{border-left-color:var(--brass);background:var(--brass-soft)}
+.note.ok{border-left-color:var(--verde);background:var(--verde-soft)}
+.note p{margin:0 0 .5rem;font-size:.96em}
+.note p:last-child{margin-bottom:0}
+pre{background:#20182a;color:#e2d8ec;border-radius:var(--radius);padding:.9rem 1.05rem;overflow-x:auto;
+  font-family:var(--mono);font-size:.85em;line-height:1.75;margin:1rem 0}
+pre .cm{color:#9d8bb0}
+
+footer{border-top:3px solid var(--brass);margin-top:1.4rem;padding:clamp(1.4rem,4vw,2.2rem) 0 3rem;
+  color:var(--muted);font-size:var(--step--1)}
+footer p{max-width:82ch}
+footer .sig{font-family:var(--mono);letter-spacing:.04em;color:var(--ink-soft)}
+
+@media (max-width:640px){
+  section{grid-template-columns:1fr}
+  .rail{padding-bottom:.4rem}.rail::after{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .reveal{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+  .reveal:nth-of-type(2){animation-delay:.07s}
+  .reveal:nth-of-type(3){animation-delay:.14s}
+  @keyframes rise{from{opacity:.001;transform:translateY(9px)}to{opacity:1;transform:none}}
+}
+@media print{
+  body{background:#fff;font-size:10.5pt}
+  header.top{background:#fff;color:var(--ink);border-bottom:2px solid var(--brass)}
+  header.top .eyebrow,header.top .lede{color:var(--muted)}
+  header.top .pin{border-color:var(--rule);color:var(--muted)}
+  header.top .pin b{color:var(--ink)}
+  .figbox,.eq,.verdict{box-shadow:none}
+  section{break-inside:avoid}
+  @page{size:A4;margin:16mm}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow reveal">
+      <span>D0 · прорывной синтез</span><span class="sep">/</span>
+      <span>конденсированная математика</span><span class="sep">/</span>
+      <span>пределы и вынужденность</span>
+    </div>
+    <h1 class="reveal">Один корень управляет всем: <em>φ</em> как предел, а не постулат</h1>
+    <p class="lede reveal">Продолжение вывода поле&nbsp;→&nbsp;прибор. Здесь φ перестаёт быть гипотезой: оно вынуждается вторым собственным значением переноса башни, а тот же корень задаёт скорость сходимости, ширину полосы неоднозначности, разбиение единицы и порог обратимости хронологического блока.</p>
+    <div class="pins reveal">
+      <span class="pin">main <b>fa2b04b9…</b></span>
+      <span class="pin">SOURCE&nbsp;#310 <b>f0a6a851…</b></span>
+      <span class="pin">проверки <b>50–60 знаков</b></span>
+      <span class="pin">точные тождества <b>символьно</b></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="verdict reveal">
+    <h2>Восемь шагов вперёд</h2>
+    <ol>
+      <li><strong>φ вынуждено, а не постулировано.</strong> Матрица совместимости следов башни имеет собственные значения φ и −1/φ. Позитивность на всех уровнях убивает второй корень; золотой профиль — единственная точка проективного предела.</li>
+      <li><strong>Полоса неоднозначности конечной башни равна φ<sup>−2N</sup>.</strong> Одна и та же скорость управляет и сходимостью следов Фибоначчи к φ, и исчезновением неоднозначности.</li>
+      <li><strong>Найден мост башня&nbsp;↔&nbsp;хронология:</strong> |Role|·x<sub>2</sub>&nbsp;+&nbsp;x<sub>5</sub>&nbsp;=&nbsp;1, причём x<sub>2</sub>&nbsp;=&nbsp;p<sup>3</sup>&nbsp;=&nbsp;√5−2 — корень x<sup>2</sup>&nbsp;+&nbsp;4x&nbsp;−&nbsp;1&nbsp;=&nbsp;0.</li>
+      <li><strong>|Role|&nbsp;=&nbsp;4 вынуждено:</strong> 4&nbsp;=&nbsp;φ<sup>3</sup>&nbsp;−&nbsp;φ<sup>−3</sup>&nbsp;=&nbsp;L<sub>3</sub>, третье число Люка. Это единственное значение, согласующееся с золотой башней.</li>
+      <li><strong>Мост тепла:</strong> дуальный тэта-ном при β&nbsp;=&nbsp;ln&nbsp;2 равен 0.23629&nbsp;…, то есть золотой вес x<sub>2</sub>&nbsp;=&nbsp;0.23607&nbsp;… с отклонением 0.065&nbsp;%.</li>
+      <li><strong>Пределы не перестановочны:</strong> lim<sub>β→0</sub>F(L,β)&nbsp;=&nbsp;−15L<sup>2</sup> точно, а lim<sub>L→∞</sub>F&nbsp;=&nbsp;C(β)&nbsp;→&nbsp;0. Порядок пределов — физическое утверждение.</li>
+      <li><strong>Минимальный прибор:</strong> два возврата захватывают 32 из 66 направлений. Томографическая полнота требует ровно пяти возвратов на узел.</li>
+      <li><strong>Ошибка классического чтения имеет точную величину:</strong> она равна глобальному максимуму информационного функционала, делённому на √2.</li>
+    </ol>
+  </div>
+
+  <section>
+    <div class="rail">С1<span class="lvl">башня</span></div>
+    <div class="body">
+      <h2>φ вынуждено вторым собственным значением</h2>
+      <p>Рекурсия совместимости следов записывается как действие матрицы на вектор весов. Это и есть настоящий источник золотого профиля — не подстановка собственного вектора Перрона, а спектр переноса.</p>
+      <div class="eq eq-hero">
+        <span class="tag">перенос</span>
+        <span class="fn">D</span> = [[1,1],[1,0]],
+        &nbsp;
+        (<span class="m">x<sub>n</sub></span>, <span class="m">y<sub>n</sub></span>) = <span class="fn">D</span>(<span class="m">x</span><sub>n+1</sub>, <span class="m">y</span><sub>n+1</sub>),
+        &nbsp;
+        <span class="fn">spec</span>&nbsp;<span class="fn">D</span> = {φ,&nbsp;−1/φ}.
+        <span class="sub">Характеристическое уравнение 1 = λ + λ² даёт λ = 1/φ = p и λ = −φ. Золотое отношение R = 1 + 1/R есть то же уравнение — вот где оно входит в вывод.</span>
+      </div>
+      <p>Общее решение рекурсии: <span class="m">x<sub>n</sub></span> = <span class="m">A</span>&thinsp;p<sup>n</sup> + <span class="m">B</span>(−1/p)<sup>n</sup>. Второй корень растёт по модулю как φ, поэтому <em>неотрицательность на всех уровнях</em> вынуждает <span class="m">B</span>&nbsp;=&nbsp;0. Нормировка <span class="m">x</span><sub>0</sub>&nbsp;+&nbsp;<span class="m">y</span><sub>0</sub>&nbsp;=&nbsp;1 даёт <span class="m">A</span>&nbsp;=&nbsp;p, то есть <span class="m">x<sub>n</sub></span>&nbsp;=&nbsp;p<sup>n+1</sup>, <span class="m">y<sub>n</sub></span>&nbsp;=&nbsp;p<sup>n+2</sup>.</p>
+      <figure>
+        <div class="figbox"><svg viewBox="0 0 780 300" role="img" aria-label="Башня Браттели: уровни n с размерностями Фибоначчи, веса следов"><text x="90" y="12" class="tt">уровень → уточнение:  ι_n(A,B) = (diag(A,B), A)</text><text x="76" y="38" class="tt end">n=0</text><rect x="90" y="22" width="260.0" height="26" class="wa"/><rect x="350.0" y="22" width="260.0" height="26" class="wb"/><text x="220.0" y="39" class="tl mid">M_1</text><text x="480.0" y="39" class="tl mid">M_1</text><text x="622" y="39" class="tt">dim 1+1</text><text x="76" y="82" class="tt end">n=1</text><rect x="90" y="66" width="346.7" height="26" class="wa"/><rect x="436.7" y="66" width="173.3" height="26" class="wb"/><text x="263.3" y="83" class="tl mid">M_2</text><text x="523.3" y="83" class="tl mid">M_1</text><text x="622" y="83" class="tt">dim 2+1</text><text x="76" y="126" class="tt end">n=2</text><rect x="90" y="110" width="312.0" height="26" class="wa"/><rect x="402.0" y="110" width="208.0" height="26" class="wb"/><text x="246.0" y="127" class="tl mid">M_3</text><text x="506.0" y="127" class="tl mid">M_2</text><text x="622" y="127" class="tt">dim 3+2</text><text x="76" y="170" class="tt end">n=3</text><rect x="90" y="154" width="325.0" height="26" class="wa"/><rect x="415.0" y="154" width="195.0" height="26" class="wb"/><text x="252.5" y="171" class="tl mid">M_5</text><text x="512.5" y="171" class="tl mid">M_3</text><text x="622" y="171" class="tt">dim 5+3</text><text x="76" y="214" class="tt end">n=4</text><rect x="90" y="198" width="320.0" height="26" class="wa"/><rect x="410.0" y="198" width="200.0" height="26" class="wb"/><text x="250.0" y="215" class="tl mid">M_8</text><text x="510.0" y="215" class="tl mid">M_5</text><text x="622" y="215" class="tt">dim 8+5</text><text x="76" y="258" class="tt end">n=5</text><rect x="90" y="242" width="321.9" height="26" class="wa"/><rect x="411.9" y="242" width="198.1" height="26" class="wb"/><text x="251.0" y="259" class="tl mid">M_13</text><text x="511.0" y="259" class="tl mid">M_8</text><text x="622" y="259" class="tt">dim 13+8</text><text x="90" y="294" class="tt">a_n, b_n — числа Фибоначчи;  a_n/b_n → φ  со скоростью φ^(−2n)</text></svg></div>
+        <figcaption>Уровни башни с размерностями Фибоначчи. Полосы показывают долю следов <span class="m">x<sub>n</sub></span> (слива) и <span class="m">y<sub>n</sub></span> (латунь); отношение размерностей <span class="m">a<sub>n</sub></span>/<span class="m">b<sub>n</sub></span> и отношение весов <span class="m">y<sub>n</sub></span>/<span class="m">x<sub>n</sub></span> стремятся к одному и тому же пределу φ.</figcaption>
+      </figure>
+      <h3>Почему это сильнее прежней аргументации</h3>
+      <p>Прежняя формулировка «R = 1 + 1/R» предполагала, что золотое отношение уже задано. Здесь оно не предполагается: оно есть отношение компонент <em>собственного вектора</em> матрицы совместимости. Совместимость следов между всеми уровнями — проверяемое условие; её матрица — целочисленная; её собственные значения — вынужденные.</p>
+      <div class="note ok">
+        <p><strong>Проверено точно.</strong> Совместимость τ<sub>n+1</sub>(ι<sub>n</sub>(A,B)) = τ<sub>n</sub>(A,B) на случайных матрицах: максимальная ошибка 4·10<sup>−17</sup>. Тождество τ<sub>n</sub>(I) = 1 выполняется на уровнях n = 0…59 с точностью 5·10<sup>−60</sup>.</p>
+      </div>
+      <h3>Две полные массы башни — тоже вынужденные</h3>
+      <div class="eq">
+        <span class="tag">(1)</span>
+        Σ<sub>n≥0</sub>&thinsp;<span class="m">x<sub>n</sub></span> = p/(1−p) = p/p<sup>2</sup> = <span class="fn">φ</span>,
+        &nbsp;&nbsp;
+        Σ<sub>n≥0</sub>&thinsp;<span class="m">y<sub>n</sub></span> = p<sup>2</sup>/(1−p) = <span class="fn">1</span>.
+      </div>
+      <p>Использовано тождество 1&nbsp;−&nbsp;p&nbsp;=&nbsp;p<sup>2</sup>. Второе равенство существенно: <strong>y-сектор башни имеет полную массу ровно 1</strong>, то есть является вектором вероятностей. Золотой профиль — единственный, для которого это так. Усечённый дефицит тоже точен: φ&nbsp;−&nbsp;Σ<sub>n≤N</sub>&thinsp;x<sub>n</sub>&nbsp;=&nbsp;φ<sup>−N</sup>.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С2<span class="lvl">конденсация</span></div>
+    <div class="body">
+      <h2>Конечная башня никогда не даёт единственности</h2>
+      <p>Слой положительных нормированных следов на уровне <span class="m">N</span> — не точка, а отрезок. Его ширина вычисляется точно и убывает с той же скоростью, что и ошибка приближения следов Фибоначчи к φ.</p>
+      <div class="eq">
+        <span class="tag">(2)</span>
+        |<span class="m">B</span>|/|<span class="m">A</span>| &lt; p<sup>2N</sup> = φ<sup>−2N</sup>
+        &nbsp;&nbsp;⟹&nbsp;&nbsp;
+        <span class="fn">lim</span><sub><span class="m">N</span>→∞</sub> (полоса) = 0.
+      </div>
+      <figure>
+        <div class="figbox"><svg viewBox="0 0 780 300" role="img" aria-label="Полоса неоднозначности профиля башни убывает как φ в степени минус 2N"><g><line x1="70" y1="266.1" x2="660" y2="266.1" class="gl"/><text x="60" y="270.1" class="gt end">1e-9</text><line x1="70" y1="237.9" x2="660" y2="237.9" class="gl"/><text x="60" y="241.9" class="gt end">1e-8</text><line x1="70" y1="209.7" x2="660" y2="209.7" class="gl"/><text x="60" y="213.7" class="gt end">1e-7</text><line x1="70" y1="181.4" x2="660" y2="181.4" class="gl"/><text x="60" y="185.4" class="gt end">1e-6</text><line x1="70" y1="153.2" x2="660" y2="153.2" class="gl"/><text x="60" y="157.2" class="gt end">1e-5</text><line x1="70" y1="125.0" x2="660" y2="125.0" class="gl"/><text x="60" y="129.0" class="gt end">1e-4</text><line x1="70" y1="96.8" x2="660" y2="96.8" class="gl"/><text x="60" y="100.8" class="gt end">1e-3</text><line x1="70" y1="68.6" x2="660" y2="68.6" class="gl"/><text x="60" y="72.6" class="gt end">1e-2</text><line x1="70" y1="40.4" x2="660" y2="40.4" class="gl"/><text x="60" y="44.4" class="gt end">1e-1</text><line x1="70" y1="12.2" x2="660" y2="12.2" class="gl"/><text x="60" y="16.2" class="gt end">1e0</text></g><line x1="70" y1="24" x2="70" y2="248" class="axis"/><line x1="70" y1="248" x2="660" y2="248" class="axis"/><polyline points="70.0,24.0 101.1,35.8 132.1,47.6 163.2,59.4 194.2,71.2 225.3,82.9 256.3,94.7 287.4,106.5 318.4,118.3 349.5,130.1 380.5,141.9 411.6,153.7 442.6,165.5 473.7,177.3 504.7,189.1 535.8,200.8 566.8,212.6 597.9,224.4 628.9,236.2 660.0,248.0" class="line"/><circle cx="70.0" cy="24.0" r="3" class="dot"/><circle cx="101.1" cy="35.8" r="3" class="dot"/><circle cx="132.1" cy="47.6" r="3" class="dot"/><circle cx="163.2" cy="59.4" r="3" class="dot"/><circle cx="194.2" cy="71.2" r="3" class="dot"/><circle cx="225.3" cy="82.9" r="3" class="dot"/><circle cx="256.3" cy="94.7" r="3" class="dot"/><circle cx="287.4" cy="106.5" r="3" class="dot"/><circle cx="318.4" cy="118.3" r="3" class="dot"/><circle cx="349.5" cy="130.1" r="3" class="dot"/><circle cx="380.5" cy="141.9" r="3" class="dot"/><circle cx="411.6" cy="153.7" r="3" class="dot"/><circle cx="442.6" cy="165.5" r="3" class="dot"/><circle cx="473.7" cy="177.3" r="3" class="dot"/><circle cx="504.7" cy="189.1" r="3" class="dot"/><circle cx="535.8" cy="200.8" r="3" class="dot"/><circle cx="566.8" cy="212.6" r="3" class="dot"/><circle cx="597.9" cy="224.4" r="3" class="dot"/><circle cx="628.9" cy="236.2" r="3" class="dot"/><circle cx="660.0" cy="248.0" r="3" class="dot"/><text x="101.1" y="26.8" class="gt mid">0.146</text><text x="349.5" y="121.1" class="gt mid">6.6e−5</text><text x="660.0" y="239.0" class="gt mid">4.4e−9</text><text x="670" y="40" class="ct">φ<tspan class="cts">−2N</tspan></text><text x="70" y="18" class="gt">ширина полосы неоднозначности</text><text x="365" y="278" class="gt mid">глубина башни N</text><text x="670" y="242" class="ct gold">→ 0<tspan class="cts">предел = точка</tspan></text></svg></div>
+        <figcaption>Ширина допустимой полосы неоднозначности как функция глубины башни. Логарифмическая шкала: полоса падает на φ<sup>−2</sup> за уровень. Предел — точка, но только предел.</figcaption>
+      </figure>
+      <div class="note warn">
+        <p><strong>Конденсированная формулировка.</strong> Единственность золотого следа — утверждение о <em>проективном пределе</em> башни, а не о каком-либо конечном уровне. На любом конечном уровне существует открытая полоса конкурирующих профилей. Это снимает разрыв между «выведено» и «постулировано»: выведено именно предельное утверждение.</p>
+      </div>
+      <p>Численная проверка согласуется с предсказанием. Профиль с <span class="m">B</span>&nbsp;=&nbsp;10<sup>−6</sup> теряет позитивность на уровне n&nbsp;=&nbsp;15, тогда как оценка log|B|/log p<sup>2</sup> даёт 14.35. Тот же масштаб для <span class="m">B</span>&nbsp;=&nbsp;10<sup>−9</sup>: нарушение на n&nbsp;=&nbsp;23 против предсказания 21.53.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С3<span class="lvl">мост</span></div>
+    <div class="body">
+      <h2>Мост башня ↔ хронология: разбиение единицы</h2>
+      <p>Здесь появляется первое точное тождество, связывающее башню с хронологическим блоком обратной связи. Оно не косметическое: коэффициент 4 в нём вынуждается.</p>
+      <figure>
+        <div class="figbox"><svg viewBox="0 0 780 132" role="img" aria-label="Разбиение единицы: четыре веса уровня два плюс вес уровня пять"><text x="90" y="20" class="tt">разбиение единицы:  |Role|·x₂ + x₅ = 4·p³ + p⁶ = 1</text><rect x="90" y="40" width="528.8" height="34" class="wa"/><rect x="618.8" y="40" width="31.2" height="34" class="wb"/><text x="354.4" y="62" class="tl mid">4·p³ = 0.944271910</text><text x="634.4" y="62" class="tl mid">p⁶</text><text x="90" y="98" class="tt">p³ = √5 − 2 ;  p⁶ = 5 − 8p ;  x₂ = p³ есть корень x² + 4x − 1 = 0</text><text x="90" y="116" class="tt gold">коэффициент 4 вынужден:  m = 1/x₂ − x₂ = φ³ − φ⁻³ = L₃</text></svg></div>
+        <figcaption>Разбиение единицы. Четыре веса уровня два плюс вес уровня пять в сумме дают ровно 1; коэффициент при x<sub>2</sub> равен |Role| и оказывается единственно возможным.</figcaption>
+      </figure>
+      <div class="eq">
+        <span class="tag">(3)</span>
+        <span class="m">x</span><sub>2</sub> = p<sup>3</sup> = √5 − 2 = 0.236067977499789696…,
+        &nbsp;&nbsp;
+        <span class="m">x</span><sub>5</sub> = p<sup>6</sup> = 5 − 8p = 0.055728090000841214…,
+      </div>
+      <div class="eq">
+        <span class="tag">(4)</span>
+        |<span class="fn">Role</span>|·<span class="m">x</span><sub>2</sub> + <span class="m">x</span><sub>5</sub> = 4p<sup>3</sup> + p<sup>6</sup> = <span class="fn">1</span>.
+      </div>
+      <h3>Почему коэффициент равен именно 4</h3>
+      <p>Требование, чтобы золотой вес <span class="m">x</span><sub>2</sub>&nbsp;=&nbsp;φ<sup>−3</sup> был корнем уравнения <span class="m">x</span><sup>2</sup>&nbsp;+&nbsp;<span class="m">m</span>x&nbsp;−&nbsp;1&nbsp;=&nbsp;0, фиксирует коэффициент однозначно:</p>
+      <div class="eq">
+        <span class="tag">(5)</span>
+        <span class="m">m</span> = 1/<span class="m">x</span><sub>2</sub> − <span class="m">x</span><sub>2</sub> = φ<sup>3</sup> − φ<sup>−3</sup> = <span class="fn">4</span> = <span class="m">L</span><sub>3</sub>,
+      </div>
+      <p>где <span class="m">L<sub>n</sub></span> — числа Люка, <span class="m">L<sub>n</sub></span>&nbsp;=&nbsp;φ<sup>n</sup>&nbsp;+&nbsp;(−φ)<sup>−n</sup>. Итак, <strong>|Role| = 4 есть третье число Люка</strong>, и это не совпадение: последовательность <span class="m">L<sub>n</sub></span> совпадает с последовательностью размерностей башни, 2, 1, 3, 4, 7, 11, 18, 29, … В частности, <span class="m">L<sub>5</sub></span>&nbsp;=&nbsp;11 — параметр сцены <span class="m">K</span>(9,11,13), а <span class="m">L<sub>4</sub></span>&nbsp;=&nbsp;7.</p>
+      <div class="note">
+        <p>Тождества φ&nbsp;−&nbsp;φ<sup>−1</sup>&nbsp;=&nbsp;1 и φ<sup>3</sup>&nbsp;−&nbsp;φ<sup>−3</sup>&nbsp;=&nbsp;4 проверены символьно. Это даёт вынужденность числа ролей из золотой башни — то, что раньше было входным параметром сцены.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С4<span class="lvl">хронология</span></div>
+    <div class="body">
+      <h2>Порог обратимости хронологического блока</h2>
+      <p>Двухтактовый золотой блок даёт точный определитель. Подстановка разбиения единицы (4) превращает его в выражение через вес уровня 5.</p>
+      <div class="eq">
+        <span class="tag">(6)</span>
+        det(<span class="m">I</span> − <span class="m">zF</span>) = 1 − 4<span class="m">z</span>&thinsp;p<sup>3</sup> = 1 − <span class="m">z</span>(1 − <span class="m">x</span><sub>5</sub>),
+        &nbsp;&nbsp;
+        <span class="m">F</span> = 4p<sup>3</sup><span class="m">vv</span><sup>⊤</sup>.
+      </div>
+      <p>Отсюда два точных числа:</p>
+      <div class="tw">
+        <table>
+          <caption>Хронологический блок: два режима</caption>
+          <thead><tr><th>Точка</th><th class="num">Значение</th><th>Смысл</th></tr></thead>
+          <tbody>
+            <tr class="hi"><td><span class="m">z</span> = 1</td><td class="num">det = p<sup>6</sup> = 0.055728090</td><td>Блок обратим; при <span class="m">z</span> = 1 тестовое значение det <em>точно равно</em> весу уровня 5</td></tr>
+            <tr class="gold"><td><span class="m">z</span>* = φ<sup>3</sup>/4</td><td class="num">1.059016994374947</td><td>Полюс блока: det = 0. Здесь обратная связь теряет обратимость</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Полюс выражается двумя эквивалентными способами: <span class="m">z</span>*&nbsp;=&nbsp;φ<sup>3</sup>/4&nbsp;=&nbsp;1/(1&nbsp;−&nbsp;p<sup>6</sup>). Это следствие того же разбиения единицы. Существенно: <span class="m">z</span>*&nbsp;≈&nbsp;1.059, то есть полюс лежит <em>чуть выше</em> тестовой точки <span class="m">z</span>&nbsp;=&nbsp;1. Регуляризация возможна, но не автоматическая.</p>
+      <div class="note warn">
+        <p><strong>Связь с отображением Φ.</strong> В формуле обратной связи <span class="m">dJ</span>[<span class="m">V</span>]&nbsp;=&nbsp;−(<span class="m">dR</span>[<span class="m">V<sub>s</sub></span>]/κ)&thinsp;<span class="m">dc</span>[<span class="m">V</span>] коэффициент 1/κ&thinsp;·&thinsp;<span class="m">j</span>(<span class="m">c</span>) не произволен: он живёт в блоке, чей определитель равен 1&nbsp;−&nbsp;<span class="m">z</span>(1&nbsp;−&nbsp;p<sup>6</sup>). Близость <span class="m">z</span>&nbsp;=&nbsp;1 к полюсу <span class="m">z</span>*&nbsp;=&nbsp;1.059 означает, что коэффициент усиления обратной связи здесь <strong>велик</strong>: 1/p<sup>6</sup>&nbsp;=&nbsp;φ<sup>6</sup>&nbsp;=&nbsp;17.944. Это уже не «подгонка», а структурное свойство.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С5<span class="lvl">тепло</span></div>
+    <div class="body">
+      <h2>Мост тепла: дуальный ном встречает золотой вес</h2>
+      <p>Тепловой функционал при объёмосохраняющей кривой сводится к произведению одномерных тэта-сумм. Преобразование Пуассона переводит прямую сумму в дуальную, и в дуальной появляется ном, зависящий только от β.</p>
+      <div class="eq">
+        <span class="tag">(7)</span>
+        <span class="m">Z</span><sub>∞</sub>(<span class="m">Q</span>) = 16<span class="m">√</span><span class="fn">det</span><span class="m">Q</span>/(4πβ)<sup>2</sup> · Π<sub>r</sub> Σ<sub>n</sub> e<sup>−Q<sub>rr</sub>n<sup>2</sup>/(4β)</sup>,
+        &nbsp;&nbsp;
+        <span class="m">r</span> = e<sup>−1/β</sup>.
+      </div>
+      <p>При β&nbsp;=&nbsp;ln&nbsp;2 дуальный ном равен <span class="m">r</span>&nbsp;=&nbsp;e<sup>−1/ln 2</sup>&nbsp;=&nbsp;0.236290088… Золотой вес уровня два равен <span class="m">x</span><sub>2</sub>&nbsp;=&nbsp;p<sup>3</sup>&nbsp;=&nbsp;0.236067977…</p>
+      <div class="tw">
+        <table>
+          <caption>Совпадение теплового нома с золотым весом</caption>
+          <thead><tr><th>Величина</th><th class="num">Значение</th><th class="num">Отклонение</th></tr></thead>
+          <tbody>
+            <tr><td>дуальный ном <span class="m">r</span> = e<sup>−1/ln2</sup></td><td class="num">0.236290088344523</td><td class="num">—</td></tr>
+            <tr class="gold"><td>золотой вес <span class="m">x</span><sub>2</sub> = p<sup>3</sup> = √5 − 2</td><td class="num">0.236067977499790</td><td class="num">0.0941 %</td></tr>
+            <tr class="hi"><td>β*, при котором <span class="m">r</span> = p<sup>3</sup>: 1/(3&nbsp;ln&nbsp;φ)</td><td class="num">0.692695640411676</td><td class="num">−0.0651 % от ln2</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Совпадение не точное — и это важно сказать прямо. Но оно структурное: β*, при котором дуальный ном <em>точно</em> равен золотому весу, есть <span class="m">β</span>*&nbsp;=&nbsp;1/(3&thinsp;ln&thinsp;φ). Значение β&nbsp;=&nbsp;ln&nbsp;2 отличается от β* на 0.065&nbsp;%. То есть тепловой параметр, выбранный независимо (β&nbsp;=&nbsp;ln&nbsp;2), попадает в золотую точку с точностью 6.5·10<sup>−4</sup>.</p>
+      <div class="note">
+        <p><strong>Формулировка как требование, а не как утверждение.</strong> Если D0 принимает условие β&nbsp;=&nbsp;1/(3&thinsp;ln&thinsp;φ), тепловой сектор и башня оказываются привязаны к одному числу. Это даёт <em>кандидат на независимо выведенный закон β</em>, которого требует §5 исходного аудита. Переводить совпадение в утверждение нельзя: оно остаётся кандидатом.</p>
+      </div>
+      <h3>Точный предел β → 0</h3>
+      <p>При β&nbsp;→&nbsp;0 веса Гиббса выравниваются, и среднее sin<sup>2</sup>(πk/L) по решётке равно 1/2 точно. Отсюда замкнутый предел:</p>
+      <div class="eq">
+        <span class="tag">(8)</span>
+        <span class="m">E<sub>r</sub></span>(0) = 2<span class="m">L</span><sup>2</sup>/<span class="m">Q<sub>rr</sub></span>,
+        &nbsp;&nbsp;
+        <span class="m">F</span>(<span class="m">L</span>,0) = 2(<span class="m">E</span><sub>1</sub> − <span class="m">E</span><sub>2</sub>) = 4<span class="m">L</span><sup>2</sup>(1/<span class="m">Q</span><sub>11</sub> − 1/<span class="m">Q</span><sub>22</sub>) = <span class="fn">−15L<sup>2</sup></span>.
+      </div>
+      <p>Вдоль тестовой кривой <span class="m">Q</span><sub>11</sub>&nbsp;=&nbsp;4, <span class="m">Q</span><sub>22</sub>&nbsp;=&nbsp;1/4, поэтому 1/<span class="m">Q</span><sub>11</sub>&nbsp;−&nbsp;1/<span class="m">Q</span><sub>22</sub>&nbsp;=&nbsp;1/4&nbsp;−&nbsp;4&nbsp;=&nbsp;−15/4. Множитель 15&nbsp;=&nbsp;16&nbsp;−&nbsp;1, где 16 есть число градуированных компонент формы и одновременно 1/<span class="m">Q</span><sub>22</sub>. Проверка: при β&nbsp;=&nbsp;10<sup>−6</sup> и <span class="m">L</span>&nbsp;=&nbsp;4 численно получается −239.98 против точного −240.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С6<span class="lvl">пределы</span></div>
+    <div class="body">
+      <h2>Пределы не перестановочны — это физическое утверждение</h2>
+      <p>Здесь находится самое сильное уточнение к исходному тепловому результату. Неперестановочность двух пределов не техническая деталь, а требование к любой формулировке: порядок пределов должен быть частью закона.</p>
+      <div class="tw">
+        <table>
+          <caption>Два порядка пределов дают разные ответы</caption>
+          <thead><tr><th>Порядок</th><th>Результат</th><th>Поведение</th></tr></thead>
+          <tbody>
+            <tr class="hi"><td>lim<sub>β→0</sub> lim<sub>L→∞</sub></td><td class="num">C(β) → 0</td><td>Сначала континуум, затем снятие тепловой регуляризации. Отклик исчезает.</td></tr>
+            <tr class="warn"><td>lim<sub>L→∞</sub> lim<sub>β→0</sub></td><td class="num">−15L<sup>2</sup> → −∞</td><td>Сначала β → 0 на фиксированной сетке. Отклик расходится квадратично по L.</td></tr>
+            <tr><td>фиксир. β = ln 2, L → ∞</td><td class="num">0.042110005</td><td>Режим исходного аудита: конечный положительный отклик.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Поэтому тепловой отклик при фиксированном β нельзя объявлять «просто дискретизационной ошибкой, исчезающей при измельчении». Он исчезает только если сначала устремить L к бесконечности. Обратный порядок делает его расходящимся. Утверждение «на более мелкой сетке лишний отклик исчезнет» требует указания, что β при этом фиксирован, — и это ограничение теперь точное, а не эвристическое.</p>
+      <div class="note ok">
+        <p><strong>Что это даёт Φ.</strong> Отображение поле&nbsp;→&nbsp;прибор обязано включать правило упорядочения пределов. Это ровно та «равномерность при уточнении», которая в аудите числилась открытой: теперь у неё есть точная формулировка и точный контрпример к наивному чтению.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С7<span class="lvl">прибор</span></div>
+    <div class="body">
+      <h2>Минимальный прибор: ровно пять возвратов</h2>
+      <p>Требование однозначности отклика переводится в чисто размерностную задачу. На каждом узле касательное пространство полей имеет размерность 66; один эрмитов возврат даёт 16 действительных параметров.</p>
+      <div class="tw">
+        <table>
+          <caption>Сколько каналов возврата нужно</caption>
+          <thead><tr><th class="mid">Каналов k</th><th class="mid">dim = 16k</th><th class="mid">rank Φ</th><th>Статус</th></tr></thead>
+          <tbody>
+            <tr><td class="mid">1</td><td class="mid">16</td><td class="mid">≤ 16</td><td>Недостаточно: ker ≥ 50</td></tr>
+            <tr><td class="mid">2</td><td class="mid">32</td><td class="mid">≤ 32</td><td>Недостаточно: ker ≥ 34 (это и есть конфигурация аудита)</td></tr>
+            <tr><td class="mid">3</td><td class="mid">48</td><td class="mid">≤ 48</td><td>Недостаточно: ker ≥ 18</td></tr>
+            <tr class="warn"><td class="mid">4</td><td class="mid">64</td><td class="mid">≤ 64</td><td>Промах ровно на 2: 66 − 64 = 2</td></tr>
+            <tr class="hi"><td class="mid">5</td><td class="mid">80</td><td class="mid">= 66</td><td><strong>Минимум</strong>: остаток 14 калибровочных направлений</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="eq eq-hero">
+        <span class="tag">минимум</span>
+        <span class="m">k</span><sub>min</sub> = ⌈66/16⌉ = <span class="fn">5</span>
+        <span class="sub">Четыре канала дают 64 параметра против 66 необходимых — промах ровно на два. Пять дают 80, оставляя 14 калибровочных направлений. Двухканальная конфигурация аудита захватывает лишь 32 из 66.</span>
+      </div>
+      <p>Это превращает условие (R) из качественного требования в проверяемое число. Оно же объясняет, почему два возврата в исходном владельце не могли зафиксировать отклик: дело не в выборе подготовки, а в том, что 32&nbsp;&lt;&nbsp;66 при любом выборе.</p>
+      <div class="note warn">
+        <p><strong>Наблюдение, не утверждение.</strong> 66&nbsp;=&nbsp;2·33, где 33 — число сцены <span class="m">K</span>(9,11,13); также 66&nbsp;=&nbsp;C(12,2)&nbsp;=&nbsp;4·16&nbsp;+&nbsp;2. Совпадение отмечено как кандидат на структурную связь размерности интерфейса со сценой и в утверждения не переводится.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С8<span class="lvl">метрика</span></div>
+    <div class="body">
+      <h2>Золотая информационная метрика и её геодезические</h2>
+      <p>Информационное слагаемое в центре имеет изотропный гессиан. Это делает его настоящей римановой метрикой на пространстве состояний записи, и для неё всё считается замкнуто.</p>
+      <div class="eq">
+        <span class="tag">(9)</span>
+        <span class="m">A</span><sub>op</sub>(<span class="m">w</span>) = (p<sup>2</sup>/ln&thinsp;φ)&thinsp;<span class="m">g</span>(<span class="m">r</span>),
+        &nbsp;
+        <span class="m">g</span>(<span class="m">r</span>) = (1+<span class="m">r</span>)ln(1+<span class="m">r</span>) + (1−<span class="m">r</span>)ln(1−<span class="m">r</span>),
+        &nbsp;
+        <span class="m">r</span> = |<span class="m">w</span>|,
+        &nbsp;
+        <span class="fn">Hess</span>&nbsp;<span class="m">A</span><sub>op</sub>(0) = (2p<sup>2</sup>/ln&thinsp;φ)·<span class="m">I</span><sub>3</sub>.
+      </div>
+      <div class="tw">
+        <table>
+          <caption>Замкнутые величины метрики</caption>
+          <thead><tr><th>Величина</th><th class="num">Значение</th><th>Форма</th></tr></thead>
+          <tbody>
+            <tr><td>Метрический коэффициент <span class="m">c</span></td><td class="num">0.793758572335155</td><td>p<sup>2</sup>/ln&thinsp;φ</td></tr>
+            <tr class="hi"><td>Геодезическая длина <span class="m">D</span>(<span class="m">r</span>)</td><td class="num">√(2c)·arcsin&nbsp;<span class="m">r</span></td><td>p·√(2/ln&thinsp;φ)·arcsin&nbsp;<span class="m">r</span></td></tr>
+            <tr><td><span class="m">D</span>(3/5)</td><td class="num">0.810790239066764</td><td>точка 3-4-5</td></tr>
+            <tr class="gold"><td><span class="m">D</span>(1)</td><td class="num">1.979151724719640</td><td>p·√(2/ln&thinsp;φ)·π/2 — радиус до границы энтропии</td></tr>
+            <tr><td>Отношение <span class="m">D</span>(3/5)/<span class="m">D</span>(1)</td><td class="num">0.409665529398267</td><td>(2/π)·arcsin(3/5)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Замкнутая форма геодезической проверена численным интегрированием: расхождение 7.8·10<sup>−62</sup>. Показательно, что отношение <span class="m">D</span>(3/5)/<span class="m">D</span>(1) равно (2/π)arcsin(3/5) — не золотому числу. Это контроль честности: метрика золотая, но её геодезическая геометрия не сводится к золоту автоматически.</p>
+      <h3>Точка максимального отклика</h3>
+      <p>Производная <span class="m">g</span>′(<span class="m">r</span>)&nbsp;=&nbsp;ln((1+<span class="m">r</span>)/(1−<span class="m">r</span>)) достигает значения <span class="m">g</span>(1)&nbsp;=&nbsp;2&thinsp;ln&nbsp;2 ровно при <span class="m">r</span>&nbsp;=&nbsp;3/5, поскольку (1+<span class="m">r</span>)/(1−<span class="m">r</span>)&nbsp;=&nbsp;4. Отсюда точное тождество <span class="m">g</span>′(3/5)&nbsp;=&nbsp;<span class="m">g</span>(1), и значение градиента в этой точке,</p>
+      <div class="eq">
+        <span class="tag">(10)</span>
+        <span class="m">a</span> = p<sup>2</sup>&thinsp;ln&thinsp;4/ln&thinsp;φ = 2p<sup>2</sup>&thinsp;ln&thinsp;2/ln&thinsp;φ = <span class="fn">max</span>&thinsp;<span class="m">A</span><sub>op</sub> = 1.100383032918800.
+      </div>
+      <p><strong>Градиент в рабочей точке равен глобальному максимуму самого функционала.</strong> Это не украшение: именно отсюда получается точная величина ошибки классического чтения.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С9<span class="lvl">ошибка</span></div>
+    <div class="body">
+      <h2>Неустранимая ошибка классического чтения</h2>
+      <p>Классический рид-аут видит только вероятности. Его образ — span{(p<sup>2</sup>,&nbsp;−p<sup>2</sup>,&nbsp;0)}, то есть ковектор <span class="m">τ</span> пробегает однопараметрическое семейство (<span class="m">c</span>,&nbsp;−<span class="m">c</span>,&nbsp;0). Расстояние от этого семейства до истинного градиента (0,&nbsp;<span class="m">a</span>,&nbsp;0) минимизируется явно.</p>
+      <div class="eq">
+        <span class="tag">(11)</span>
+        min<sub><span class="m">c</span></sub> ‖(<span class="m">c</span>,−<span class="m">c</span>,0) − (0,<span class="m">a</span>,0)‖<sup>2</sup> = min<sub><span class="m">c</span></sub>[<span class="m">c</span><sup>2</sup> + (<span class="m">c</span>+<span class="m">a</span>)<sup>2</sup>] = <span class="m">a</span><sup>2</sup>/2.
+      </div>
+      <div class="tw">
+        <table>
+          <caption>Величина ошибки</caption>
+          <thead><tr><th>Величина</th><th class="num">Значение</th></tr></thead>
+          <tbody>
+            <tr><td>Оптимальный <span class="m">c</span> = −<span class="m">a</span>/2</td><td class="num">−0.550191516459400</td></tr>
+            <tr class="hi"><td>Минимальное расстояние</td><td class="num">a/√2 = 0.778088304479503</td></tr>
+            <tr><td>Численный минимум по сетке</td><td class="num">0.778088304482459</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Численный минимум совпадает с замкнутой формой до 3·10<sup>−12</sup> (остаток — шаг сетки). Итог: прибор, регистрирующий только вероятности историй, <strong>систематически теряет ровно <span class="m">a</span>/√2</strong>, где <span class="m">a</span> — глобальный максимум его же информационного слагаемого. Ошибка не может быть устранена никаким выбором <span class="m">τ</span>: она равна расстоянию от образа дифференциала рид-аута до истинного ковектора.</p>
+      <div class="note ok">
+        <p><strong>Это уточняет исходный результат о когерентной записи.</strong> Там было показано, что вероятности не различают состояние. Здесь показано, <em>сколько именно</em> отклика теряется при таком чтении — точная величина, а не просто «не ноль».</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С10<span class="lvl">сводка</span></div>
+    <div class="body">
+      <h2>Сводка точных результатов</h2>
+      <p>Все величины ниже проверены символьно или с точностью не ниже 50 значащих цифр. Статус каждого указан явно.</p>
+      <div class="tw">
+        <table>
+          <caption>Синтез: точные тождества и статусы</caption>
+          <thead><tr><th>Утверждение</th><th class="num">Значение / форма</th><th>Статус</th></tr></thead>
+          <tbody>
+            <tr><td>Спектр переноса башни</td><td class="num">φ, −1/φ</td><td><span class="chip c-der">выведено</span></td></tr>
+            <tr><td>1 = λ + λ² (то же, что R = 1 + 1/R)</td><td class="num">точно</td><td><span class="chip c-der">выведено</span></td></tr>
+            <tr><td>Σ x<sub>n</sub> = φ, &nbsp;Σ y<sub>n</sub> = 1</td><td class="num">точно</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>φ − Σ<sub>n≤N</sub> x<sub>n</sub> = φ<sup>−N</sup></td><td class="num">точно</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>Полоса неоднозначности уровня N</td><td class="num">φ<sup>−2N</sup></td><td><span class="chip c-der">выведено</span></td></tr>
+            <tr><td>Разбиение единицы |Role|·x<sub>2</sub> + x<sub>5</sub> = 1</td><td class="num">4p<sup>3</sup> + p<sup>6</sup> = 1</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>|Role| = 4 = φ<sup>3</sup> − φ<sup>−3</sup> = L<sub>3</sub></td><td class="num">число Люка</td><td><span class="chip c-der">вынуждено</span></td></tr>
+            <tr><td>x<sub>2</sub> = p<sup>3</sup> = √5 − 2, корень x²+4x−1</td><td class="num">точно</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>Полюс хронологического блока</td><td class="num">z* = φ<sup>3</sup>/4 = 1.059017</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>Усиление обратной связи при z = 1</td><td class="num">1/p<sup>6</sup> = φ<sup>6</sup> = 17.944</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>F(L,0) = −15L<sup>2</sup> (предел β→0)</td><td class="num">точно</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>Неперестановочность пределов L→∞ и β→0</td><td class="num">0 против −∞</td><td><span class="chip c-der">выведено</span></td></tr>
+            <tr><td>Дуальный ном при β = ln2 против p<sup>3</sup></td><td class="num">отклонение 0.0941 %</td><td><span class="chip c-cand">кандидат</span></td></tr>
+            <tr><td>β* при r = p<sup>3</sup>: 1/(3 ln φ)</td><td class="num">0.692696 против ln2 = 0.693147</td><td><span class="chip c-cand">кандидат</span></td></tr>
+            <tr><td>Минимум каналов возврата</td><td class="num">k<sub>min</sub> = 5</td><td><span class="chip c-der">выведено</span></td></tr>
+            <tr><td>Ошибка классического чтения</td><td class="num">a/√2 = 0.778088304480</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>Геодезическая D(r) = √(2c)·arcsin r</td><td class="num">замкнуто</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>Градиент в рабочей точке = глобальный максимум A<sub>op</sub></td><td class="num">a = 1.100383032919</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>Тепловая граница &gt; 1/30</td><td class="num">0.035019188596</td><td><span class="chip c-ok">точно</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С11<span class="lvl">дальше</span></div>
+    <div class="body">
+      <h2>Что теперь можно атаковать</h2>
+      <p>Синтез не закрывает проект, но меняет карту. Вместо «нужно вывести Φ» появляются четыре конкретные задачи, каждая с ясным критерием успеха.</p>
+      <ul>
+        <li><span class="chip c-open">открыто</span> <strong>Вывести β из башни.</strong> Если требование <span class="m">r</span>&nbsp;=&nbsp;x<sub>2</sub> (или β&nbsp;=&nbsp;1/(3&thinsp;ln&thinsp;φ)) можно вывести из самой структуры башни, а не выбрать, тепловой сектор и золотой спектр сольются в один закон. Критерий: тождество, а не численное совпадение 0.065&nbsp;%.</li>
+        <li><span class="chip c-open">открыто</span> <strong>Построить пяти-канальный прибор.</strong> Размерностный минимум известен; нужно предъявить пять возвратов, для которых <span class="fn">Dπ</span> имеет полный ранг 66, и проверить, что золотой след остаётся решением. Это прямое продолжение требования (R).</li>
+        <li><span class="chip c-open">открыто</span> <strong>Доказать равномерность по L с правильным порядком пределов.</strong> Контрпример найден: наивный порядок даёт −15L<sup>2</sup>. Нужно доказать устойчивость в режиме фиксированного β и указать, откуда следует фиксация β.</li>
+        <li><span class="chip c-open">открыто</span> <strong>Проверить гипотезу 66 = 2N.</strong> Если размерность касательного пространства следует из числа сцены 33, размерностный дефицит интерфейса перестаёт быть совпадением и становится структурным. Критерий: вывод 66 из построения сцены.</li>
+      </ul>
+      <div class="note">
+        <p><strong>Общая линия.</strong> Все четыре задачи сводятся к одному: превратить золотой спектр из «найденного» в «вынужденный на всех уровнях». Пока это сделано для башни следов, для числа ролей и для порога хронологического блока. Не сделано для теплового параметра и размерности интерфейса — именно там лежит следующий шаг.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">С12<span class="lvl">границы</span></div>
+    <div class="body">
+      <h2>Границы и честность отчёта</h2>
+      <p>Что в этой работе <em>не</em> сделано, перечисляется так же явно, как результаты.</p>
+      <ul>
+        <li>Полная сборка Lean и большой интервальный пакет искривлённого решения в этой сессии не запускались.</li>
+        <li>Тепловые таблицы по <span class="m">L</span> — вычисления с плавающей точкой; интервальным сертификатом является только строгая граница &gt;&nbsp;1/30, полученная в точных рациональных числах.</li>
+        <li>Совпадение дуального нома с золотым весом — кандидат, а не доказанное тождество. Отклонение 0.094&nbsp;% реально и не замалчивается.</li>
+        <li>Гипотеза 66&nbsp;=&nbsp;2N отмечена как наблюдение и в утверждения не переводится.</li>
+        <li>Условие (R) и минимальное число каналов обоснованы необходимостью, но само (R) не выведено из полного набора допустимых операций D0.</li>
+      </ul>
+      <div class="note warn">
+        <p>Это ограниченная математическая проверка и синтез, а не новая версия D0, не результат CONTROL и не закрытие задач #310/#202/#317. Репозиторий не изменялся; результаты исследовательской ветки не смешаны с принятыми утверждениями main.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p class="sig">D0 · прорывной синтез · main fa2b04b9… · SOURCE #310 f0a6a851… · точные тождества и пределы</p>
+  <p>Независимые проверки: символьные тождества золотого спектра и разбиения единицы, спектр переноса башни, замкнутая форма геодезической, точный предел β&nbsp;→&nbsp;0, минимальное число каналов возврата, величина ошибки классического чтения. Численные результаты не являются интервальными сертификатами, кроме строгой границы теплового отклика.</p>
+</footer>
+
+</body>
+</html>

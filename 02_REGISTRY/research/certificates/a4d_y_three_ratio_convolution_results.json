@@ -1,0 +1,69 @@
+{
+  "schema": "a4d-y-three-ratio-convolution-v1",
+  "input": "literal z=1 Y joint stencil, phase-1/2 interior rows",
+  "zone_variables": "lambda_j=mu*rho_j, rho0=1, w=mu^4",
+  "interior_shape": [
+    68,
+    96
+  ],
+  "denominator_clearing": 14,
+  "good_prime": 1000033,
+  "field_generator": 5,
+  "records": [
+    {
+      "period": 8,
+      "primitive_root_mod_prime": 842472,
+      "rank65_characters": 1,
+      "rank68_characters": 511,
+      "all_three_ratios_nonunit": 343,
+      "all_four_characters_pairwise_distinct": 210,
+      "interior_convolution_rank": 34813,
+      "interior_convolution_left_nullity": 3,
+      "interior_convolution_right_nullity": 14339,
+      "rank_digest_sha256": "174967b4db8ee3d878e9eb70b05636aa37c4b5bf977ae07aff5229f1306aea54"
+    },
+    {
+      "period": 12,
+      "primitive_root_mod_prime": 385966,
+      "rank65_characters": 1,
+      "rank68_characters": 1727,
+      "all_three_ratios_nonunit": 1331,
+      "all_four_characters_pairwise_distinct": 990,
+      "interior_convolution_rank": 117501,
+      "interior_convolution_left_nullity": 3,
+      "interior_convolution_right_nullity": 48387,
+      "rank_digest_sha256": "5c2c9098657a5c4621251aad49e0cea8c27a1d55fe3e5b1e3437466b625638a2"
+    },
+    {
+      "period": 16,
+      "primitive_root_mod_prime": 971018,
+      "rank65_characters": 1,
+      "rank68_characters": 4095,
+      "all_three_ratios_nonunit": 3375,
+      "all_four_characters_pairwise_distinct": 2730,
+      "interior_convolution_rank": 278525,
+      "interior_convolution_left_nullity": 3,
+      "interior_convolution_right_nullity": 114691,
+      "rank_digest_sha256": "47ac012fe2fc4cc0e7297d796035440ae9f9439f4e0a50bc13be738ec6ee51df"
+    },
+    {
+      "period": 24,
+      "primitive_root_mod_prime": 879518,
+      "rank65_characters": 1,
+      "rank68_characters": 13823,
+      "all_three_ratios_nonunit": 12167,
+      "all_four_characters_pairwise_distinct": 10626,
+      "interior_convolution_rank": 940029,
+      "interior_convolution_left_nullity": 3,
+      "interior_convolution_right_nullity": 387075,
+      "rank_digest_sha256": "e2823e737e249f7c240f4f308ef2c8403c2612431b99b3dcdfe85f7a2373233f"
+    }
+  ],
+  "conclusion": "on these finite complex character tori only (1,1,1) drops interior rank",
+  "scope": [
+    "nonzero modular maximal minors certify characteristic-zero ranks at these roots",
+    "no continuous three-ratio or full joint compact-complement theorem",
+    "full-row-rank interior still has right nullity 28 off the fold",
+    "no exact curved joint field, rescue estimate, or metric response terminal"
+  ]
+}

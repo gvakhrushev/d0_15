@@ -1,0 +1,41 @@
+'D0.Research.NativeAffineHistoryScalar.Character.identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.Character.inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.Character.conjugation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.Character.conjugate_inverse_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.Character.finite_order_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.translation_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.dilation_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.translation_killed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.affine_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.character_shift_blind' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.same_linear_same_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.native_path_additive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.native_reverse_negates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.no_positive_reverse_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.native_gauge_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.closed_path_gauge_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.native_path_linear_congr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.all_raw_shift_variations_invisible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.two_free_native_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.native_additivity_forces_character' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeAffineHistoryScalar.complete_native_scalar_class' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

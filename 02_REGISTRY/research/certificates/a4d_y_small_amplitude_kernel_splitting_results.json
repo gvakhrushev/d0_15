@@ -1,0 +1,36 @@
+{
+  "schema": "a4d-y-small-amplitude-kernel-splitting-v1",
+  "base": "flat period-four Y family, connection Hessian after exact 80-dimensional flat-range elimination",
+  "hessian_rational_form": {
+    "common_denominator": "4+3*z^2",
+    "common_numerator_degree_at_most": 4
+  },
+  "flat_kernel_dimension": 16,
+  "effective_series_ranks": {
+    "K0": 0,
+    "K1": 0,
+    "K2": 12,
+    "K3": 12,
+    "K4": 14,
+    "K5": 14,
+    "K6": 14
+  },
+  "K2_inertia": {"positive": 4, "negative": 8, "zero": 4},
+  "after_K2_kernel_dimension": 4,
+  "proper_degenerate_reduction": {
+    "E4": [["0","0","0","0"],["0","0","0","0"],["0","0","0","0"],["0","0","0","0"]],
+    "E5": [["0","0","0","0"],["0","0","0","0"],["0","0","0","0"],["0","0","0","0"]],
+    "E6": [["0","0","0","0"],["0","0","0","0"],["0","0","9/8","0"],["0","0","0","3/8"]],
+    "E6_rank": 2,
+    "final_kernel_dimension": 2
+  },
+  "final_kernel_contains": ["Y tangent","boost-dual tangent"],
+  "scaling": {
+    "twelve_transverse_modes": "O(z^2)",
+    "two_soft_transverse_modes": "O(z^6)",
+    "two_exact_center_modes": "identically zero",
+    "worst_transverse_inverse_loss": "O(z^-6)"
+  },
+  "terminal": "A4D-Y-SMALL-AMPLITUDE-KERNEL-SPLITTING-CERTIFIED",
+  "nonclaim": "this is the zero-slow-momentum connection Hessian splitting; it does not by itself prove the h-uniform nonlinear response theorem"
+}

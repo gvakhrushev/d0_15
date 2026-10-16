@@ -1,0 +1,194 @@
+{
+  "axioms": {
+    "D0.Geometry.observerExteriorBladeGram_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.observerMetric_posDef": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Representation.GoldenCoherentMemory.blank_record_evolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.actual_blank_record_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.actual_diagonal_pairing_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.actual_mixed_pairing_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.actual_recorded_shape_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.currentSquare_coords": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.density_current_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.diagonalMetricCoefficient_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.diagonal_density_metric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.golden_record_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.golden_record_faithful": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.inputU_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.inputV_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.input_curve_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.metricFromCurrent_eq_observer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.mixedMetricCoefficient_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.mixed_density_metric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.observerFromCurrent_unit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.outputA_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.outputB_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.pure_record_singular": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.retained_current_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.RecordedObserverPreparation.retained_metric_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_recorded_observer_preparation.lean",
+  "capsule_sha256": "e2bba948e00b38fa821ca006c7f688c67a5901ff98acd3b49491556e30d8baaa",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_recorded_observer_preparation.lean"
+  ],
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.RecordedObserverPreparation.currentSquare_coords",
+    "D0.Research.RecordedObserverPreparation.density_current_square",
+    "D0.Research.RecordedObserverPreparation.retained_current_square",
+    "D0.Research.RecordedObserverPreparation.observerFromCurrent_unit",
+    "D0.Research.RecordedObserverPreparation.metricFromCurrent_eq_observer",
+    "D0.Research.RecordedObserverPreparation.retained_metric_positive",
+    "D0.Research.RecordedObserverPreparation.actual_blank_record_current",
+    "D0.Research.RecordedObserverPreparation.golden_record_current",
+    "D0.Research.RecordedObserverPreparation.golden_record_faithful",
+    "D0.Research.RecordedObserverPreparation.pure_record_singular",
+    "D0.Research.RecordedObserverPreparation.input_curve_normalized",
+    "D0.Research.RecordedObserverPreparation.inputU_derivative",
+    "D0.Research.RecordedObserverPreparation.inputV_derivative",
+    "D0.Research.RecordedObserverPreparation.outputA_derivative",
+    "D0.Research.RecordedObserverPreparation.outputB_derivative",
+    "D0.Research.RecordedObserverPreparation.actual_recorded_shape_derivative",
+    "D0.Research.RecordedObserverPreparation.diagonal_density_metric",
+    "D0.Research.RecordedObserverPreparation.mixed_density_metric",
+    "D0.Research.RecordedObserverPreparation.diagonalMetricCoefficient_derivative",
+    "D0.Research.RecordedObserverPreparation.mixedMetricCoefficient_derivative",
+    "D0.Research.RecordedObserverPreparation.actual_diagonal_pairing_derivative",
+    "D0.Research.RecordedObserverPreparation.actual_mixed_pairing_derivative"
+  ],
+  "input_head": "80462afde4668fc822a01a70c2e571ce36ecd64e",
+  "output": "02_REGISTRY/research/certificates/a4d_native_recorded_observer_preparation_output.txt",
+  "output_sha256": "08535370418b71353666a4325c37052c40234d535f08d080b45df3a961548fe8",
+  "physical_admission_or_complete_heat_law_formalized": false,
+  "printed_owner_declarations": [
+    "D0.Representation.GoldenCoherentMemory.blank_record_evolution",
+    "D0.Geometry.observerMetric_posDef",
+    "D0.Geometry.observerExteriorBladeGram_pos"
+  ],
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_MODULAR_PREPARATION_BOUNDARY.md": "e837a2ac4c564e9de366c2f213c7d28374e2d8326e6d35759592f1d4c7bdc6aa",
+    "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md": "2a5dfbbafc9c1c6fe20e31d6a99a949d25abd4f1a5dbe40bb5e08dd392f8d5b4",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean": "ad8176fa236ae59110bf6df96d7263f4902dfb84d0f177dc59e917a2a81c78c9",
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance.lean": "e212da4164e5aadb47a969982cbf6089c52b6ab22b7ecb44c55fe5c877520543",
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_results.json": "cbf0f589aa94a6332f29e2e5a9b43e3ad9023d43933078e85468487dfbf51d58",
+    "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean": "211f43dc97b9c809156bcb87939596757a7143b3e393d4dc4f3215c18d14cff6",
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
+    "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+    "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782"
+  },
+  "status": "PASS",
+  "toolchain_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  }
+}

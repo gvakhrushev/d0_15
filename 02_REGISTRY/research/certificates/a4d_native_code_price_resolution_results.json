@@ -1,0 +1,101 @@
+{
+  "all_probe_analytic_theorem_fully_Lean_formalized": false,
+  "axioms": {
+    "D0.Research.NativeCodePriceResolution.action_lower_bound_not_difference_quantization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeCodePriceResolution.code_half_contrast_lattice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeCodePriceResolution.fixed_lattice_nearest_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeCodePriceResolution.golden_two_tick_event_mass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeCodePriceResolution.integer_endpoint_recording_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeCodePriceResolution.lattice_rounding_sufficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeCodePriceResolution.nonzero_integer_abs_at_least_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeCodePriceResolution.owned_golden_binary_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeCodePriceResolution.recording_error_keeps_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.phi_inv_satisfies_primitive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule_sha256": "e02804a4b2e9884a3893f34fdd68f3e552b4d617cf0216311ba05438b86c3e63",
+  "command": "lake env lean, with literal D0.Core.Phi rebuilt in a temporary module root before the capsule",
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.NativeCodePriceResolution.code_half_contrast_lattice",
+    "D0.Research.NativeCodePriceResolution.nonzero_integer_abs_at_least_one",
+    "D0.Research.NativeCodePriceResolution.fixed_lattice_nearest_zero",
+    "D0.Research.NativeCodePriceResolution.recording_error_keeps_gap",
+    "D0.Research.NativeCodePriceResolution.integer_endpoint_recording_gap",
+    "D0.Research.NativeCodePriceResolution.lattice_rounding_sufficient",
+    "D0.Research.NativeCodePriceResolution.action_lower_bound_not_difference_quantization",
+    "D0.Research.NativeCodePriceResolution.owned_golden_binary_partition",
+    "D0.Research.NativeCodePriceResolution.golden_two_tick_event_mass"
+  ],
+  "input_head": "f55bea04beed7aab18141e4284e49fe66cd397ed",
+  "literal_primary_phi_compiled": true,
+  "native_preparation_source_or_GR_derived": false,
+  "output_sha256": "3960ecec3f44e77cd03fa2a7b189e7bfd3de81e8422d9462c490aa234be6edda",
+  "primary_input_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_COUPLED_HODGE_SCALE_BOUNDARY.md": "268b6b3321e68746bef138212398afdcdba0b9257a86f211a21d5c59ee26f591",
+    "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": "692f2b5929b001361a2f22d7dc224fba46a80738036f26a1ff7bdd5175fc80c4"
+  },
+  "primary_owner_propositions": [
+    "D0.phi_inv_satisfies_primitive"
+  ],
+  "printed_propositions": {
+    "D0.Research.NativeCodePriceResolution.action_lower_bound_not_difference_quantization": "D0.Research.NativeCodePriceResolution.action_lower_bound_not_difference_quantization (e : \u211d) (he0 : 0 < e)\n  (he1 : e < 1) : 1 \u2264 1 + e \u2227 1 \u2264 1 \u2227 1 + e - 1 = e \u2227 0 < |1 + e - 1| \u2227 |1 + e - 1| < 1",
+    "D0.Research.NativeCodePriceResolution.code_half_contrast_lattice": "D0.Research.NativeCodePriceResolution.code_half_contrast_lattice (a nu : \u211d) (np nm : \u2115) :\n  (nu * \u2191np - nu * \u2191nm) / (2 * a) = nu / (2 * a) * \u2191(\u2191np - \u2191nm)",
+    "D0.Research.NativeCodePriceResolution.fixed_lattice_nearest_zero": "D0.Research.NativeCodePriceResolution.fixed_lattice_nearest_zero (s b : \u211d) (k : \u2124) (hgap : 2 * |b| \u2264 |s|) :\n  |b| \u2264 |s * \u2191k - b|",
+    "D0.Research.NativeCodePriceResolution.golden_two_tick_event_mass": "D0.Research.NativeCodePriceResolution.golden_two_tick_event_mass : phi\u207b\u00b9 ^ 2 + 2 * phi\u207b\u00b9 ^ 3 = 1 - phi\u207b\u00b9 ^ 4",
+    "D0.Research.NativeCodePriceResolution.integer_endpoint_recording_gap": "D0.Research.NativeCodePriceResolution.integer_endpoint_recording_gap (a nu b r e : \u211d) (np nm : \u2115)\n  (hgap : 2 * |b| \u2264 |nu / (2 * a)|) (hrecord : |r - (nu * \u2191np - nu * \u2191nm) / (2 * a)| \u2264 e) : |b| - e \u2264 |r - b|",
+    "D0.Research.NativeCodePriceResolution.lattice_rounding_sufficient": "D0.Research.NativeCodePriceResolution.lattice_rounding_sufficient (s b : \u211d) (hs : 0 < s) : \u2203 k, |s * \u2191k - b| \u2264 s / 2",
+    "D0.Research.NativeCodePriceResolution.nonzero_integer_abs_at_least_one": "D0.Research.NativeCodePriceResolution.nonzero_integer_abs_at_least_one (k : \u2124) (hk : k \u2260 0) : 1 \u2264 |\u2191k|",
+    "D0.Research.NativeCodePriceResolution.owned_golden_binary_partition": "D0.Research.NativeCodePriceResolution.owned_golden_binary_partition (n : \u2115) : (phi\u207b\u00b9 + phi\u207b\u00b9 ^ 2) ^ n = 1",
+    "D0.Research.NativeCodePriceResolution.recording_error_keeps_gap": "D0.Research.NativeCodePriceResolution.recording_error_keeps_gap (s b r e : \u211d) (k : \u2124) (hgap : 2 * |b| \u2264 |s|)\n  (hrecord : |r - s * \u2191k| \u2264 e) : |b| - e \u2264 |r - b|",
+    "D0.phi_inv_satisfies_primitive": "D0.phi_inv_satisfies_primitive : phi\u207b\u00b9 + phi\u207b\u00b9 ^ 2 = 1"
+  },
+  "status": "PASS",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a"
+  }
+}

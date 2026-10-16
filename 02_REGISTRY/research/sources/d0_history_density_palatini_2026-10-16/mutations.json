@@ -1,0 +1,26 @@
+{
+  "executed": 4,
+  "mutations": [
+    {
+      "check": "cut_2_retains_pending",
+      "mutation": "resplit_pending_history",
+      "result": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "check": "density_coframe_metric",
+      "mutation": "wrong_density_exponent",
+      "result": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "check": "weighted_coframe_source_00",
+      "mutation": "freeze_volume_derivative",
+      "result": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "check": "ppwave_all_ten_Einstein_scalar_rows",
+      "mutation": "wrong_coupled_wave_coefficient",
+      "result": "REJECTED_MATHEMATICALLY"
+    }
+  ],
+  "schema": "d0-history-density-mutations/1"
+}

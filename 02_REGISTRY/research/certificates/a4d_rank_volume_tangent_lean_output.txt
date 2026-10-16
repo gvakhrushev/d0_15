@@ -1,0 +1,1 @@
+'D0.Research.RankVolumeTangent.idempotent_tangent_trace_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

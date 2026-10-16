@@ -1,0 +1,38 @@
+{
+  "input_head": "833372049d1cbde14f51bcbc3ca06bb017025cb8",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_af_scene_heat_comparison.lean"
+  ],
+  "returncode": 0,
+  "captured_utc": "2026-10-10T19:23:01.154446+00:00",
+  "capsule_sha256": "386c6b837fbaf88c9de991a5b8de31e2c4d0d6537497bcc6988bf0351a76b865",
+  "output_sha256": "27de1ab3faef9a1f9e54dec6578b1d91102fb4d6b8594e28f8252a8d39dba0fd",
+  "declarations": [
+    "D0.Research.AFSceneHeatComparison.phi_squared_gap",
+    "D0.Research.AFSceneHeatComparison.successive_ladder_gap",
+    "D0.Research.AFSceneHeatComparison.ladder_separated",
+    "D0.Research.AFSceneHeatComparison.three_bands_incompatible",
+    "D0.Research.AFSceneHeatComparison.no_phi_squared_triple_approximation",
+    "D0.Research.AFSceneHeatComparison.sharp_common_level_error",
+    "D0.Research.AFSceneHeatComparison.mixing_weight_between",
+    "D0.Research.AFSceneHeatComparison.mixing_first_moment",
+    "D0.Research.AFSceneHeatComparison.mixing_second_moment_defect",
+    "D0.Research.AFSceneHeatComparison.mixing_defect_positive",
+    "D0.Research.AFSceneHeatComparison.actual_AF_room"
+  ],
+  "new_declarations": 11,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean": "b923882386bc66998f4f3cf2ba7d73b0acf30938859d26680458420bafbd1db7",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a"
+  },
+  "full_operator_norm_and_semigroup_arguments_claimed_Lean": false,
+  "supported_D0_sources_changed": false
+}

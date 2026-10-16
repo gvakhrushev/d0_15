@@ -1,0 +1,60 @@
+'D0.Research.ExternalG0Review.transpose_mul_zero_forces_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.skew_cube_zero_forces_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.native_constant_generator_eq_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.native_cycle_difference_skew' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.native_cycle_difference_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.native_constant_cycle_cube_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.rank_one_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.single_direction_evaluation_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.single_direction_has_nonzero_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.all_diagonals_determine_symmetric_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.shear_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.shear_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.transport_from_frames' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.full_transport_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.transport_background_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.transport_background_second_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.transport_parameter_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ExternalG0Review.transport_parameter_second_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.isotropy_covariance_does_not_force_frame_invariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ExternalG0Review.failed_isotropy_covariance_does_not_force_frame_sensitivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Geometry.scalarCycleG {n : ℕ} [NeZero n] (v : Fin n → ℚ) : Matrix (Fin n) (Fin n) ℚ
+D0.Research.ExternalG0Review.native_constant_cycle_cube_nonzero (n : ℕ) [NeZero n] (hn : 3 ≤ n) :
+  scalarCycleG (scalarOnes n) * scalarCycleG (scalarOnes n) * scalarCycleG (scalarOnes n) ≠ 0
+D0.Research.ExternalG0Review.single_direction_evaluation_surjective.{u_1} {X : Type u_1} [AddCommGroup X] [Module ℝ X]
+  (l : X →ₗ[ℝ] ℝ) (v : X) (hv : l v = 1) (a : ℝ) : ∃ S, (∀ (x y : X), (S x) y = (S y) x) ∧ (S v) v = a
+D0.Research.ExternalG0Review.single_direction_has_nonzero_kernel :
+  ∃ S,
+    (∀ (x y : Fin 2 → ℝ), (S x) y = (S y) x) ∧
+      (S (Pi.single 0 1)) (Pi.single 0 1) = 0 ∧ (S (Pi.single 1 1)) (Pi.single 1 1) = 1
+D0.Research.ExternalG0Review.transport_background_second_derivative (x : ℝ) :
+  HasDerivAt (fun e => deriv (fun b => reading (transport b x probe)) e) 0 0
+D0.Research.ExternalG0Review.transport_parameter_second_derivative :
+  HasDerivAt (fun t => deriv (fun a => reading (transport 0 a probe)) t) 1 0
+D0.Research.ExternalG0Review.isotropy_covariance_does_not_force_frame_invariance :
+  (∀ (P : Field → ℝ) (v : Field), P (id v) = id (P v)) ∧ reading (frame 2 probe) ≠ reading probe
+D0.Research.ExternalG0Review.failed_isotropy_covariance_does_not_force_frame_sensitivity :
+  constantReading (shear 1 (0, 0)) ≠ shear 1 (constantReading (0, 0)) ∧
+    ∀ (e : ℝ) (v : Field), constantReading (frame e v) = constantReading v

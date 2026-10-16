@@ -1,0 +1,866 @@
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:680:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:693:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:968:4: warning: 'change Complex.normSq (fullAmplify U z χ w i z) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:1392:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:1821:28: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:2319:10: warning: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:2569:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:2569:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:4077:4: warning: unused variable `n`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:5699:34: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:5699:34: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean:6386:2: warning: 'change
+  conjugate (lift01 (signedComparison c))
+      (conjugate (lift02 (signedRecording e))
+        (conjugate (lift01 (signedRecording d))
+          (conjugate (lift01 (signedComparison c)) (conjugate (lift02 (signedRecording e)) (tensor J 1 1))))) =
+    _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D0.Research.AddressedThirdRole.proper_forward_moves_active_turn_to_correlated_target (d : Fin 4 → ℝ)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity d = -1) :
+  D0.Research.UniformMemoryActuation.signedRecording d * D0.Research.AddressedThirdRole.activeJ *
+      Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording d) =
+    (d 0 * d 2) • (D0.Research.AddressedThirdRole.activeX * D0.Research.AddressedThirdRole.recordJ)
+'D0.Research.AddressedThirdRole.proper_forward_moves_active_turn_to_correlated_target' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_reverse_correlates_active_flip_with_record_phase (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity c = -1) :
+  D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.AddressedThirdRole.activeX *
+      (D0.Research.VerifiedArchiveActuation.signedComparison c).transpose =
+    (c 0 * c 2) • (D0.Research.AddressedThirdRole.activeX * D0.Research.VerifiedArchiveActuation.recordZ)
+'D0.Research.AddressedThirdRole.proper_reverse_correlates_active_flip_with_record_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_forward_turns_active_flip_record_phase_into_both_flips (d : Fin 4 → ℝ)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity d = -1) :
+  D0.Research.UniformMemoryActuation.signedRecording d *
+        (D0.Research.AddressedThirdRole.activeX * D0.Research.VerifiedArchiveActuation.recordZ) *
+      Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording d) =
+    (d 0 * d 2) • (D0.Research.AddressedThirdRole.activeX * D0.Research.RetainedRecordAdmission.archiveX)
+'D0.Research.AddressedThirdRole.proper_forward_turns_active_flip_record_phase_into_both_flips' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_forward_uncorrelates_the_target_turn (d : Fin 4 → ℝ)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity d = -1) :
+  D0.Research.UniformMemoryActuation.signedRecording d *
+        (D0.Research.AddressedThirdRole.activeX * D0.Research.AddressedThirdRole.recordJ) *
+      Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording d) =
+    (d 0 * d 3) • D0.Research.AddressedThirdRole.activeJ
+'D0.Research.AddressedThirdRole.proper_forward_uncorrelates_the_target_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_reverse_uncorrelates_both_roles_into_record_turn (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity c = -1) :
+  D0.Research.VerifiedArchiveActuation.signedComparison c *
+        (D0.Research.AddressedThirdRole.activeJ * D0.Research.RetainedRecordAdmission.archiveX) *
+      (D0.Research.VerifiedArchiveActuation.signedComparison c).transpose =
+    (c 0 * c 3) • D0.Research.AddressedThirdRole.recordJ
+'D0.Research.AddressedThirdRole.proper_reverse_uncorrelates_both_roles_into_record_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_pair_lift_keeps_complete_composition
+  (A B : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift01 (A * B) =
+    D0.Research.AddressedThirdRole.lift01 A * D0.Research.AddressedThirdRole.lift01 B
+'D0.Research.AddressedThirdRole.first_pair_lift_keeps_complete_composition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.second_pair_lift_keeps_complete_composition
+  (A B : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift02 (A * B) =
+    D0.Research.AddressedThirdRole.lift02 A * D0.Research.AddressedThirdRole.lift02 B
+'D0.Research.AddressedThirdRole.second_pair_lift_keeps_complete_composition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_pair_lift_keeps_complete_transpose (A : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift01 (Matrix.transpose A) =
+    Matrix.transpose (D0.Research.AddressedThirdRole.lift01 A)
+'D0.Research.AddressedThirdRole.first_pair_lift_keeps_complete_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.second_pair_lift_keeps_complete_transpose (A : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift02 (Matrix.transpose A) =
+    Matrix.transpose (D0.Research.AddressedThirdRole.lift02 A)
+'D0.Research.AddressedThirdRole.second_pair_lift_keeps_complete_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_pair_lift_keeps_scalar (A : D0.Research.UniformMemoryActuation.M4) (t : ℝ) :
+  D0.Research.AddressedThirdRole.lift01 (t • A) = t • D0.Research.AddressedThirdRole.lift01 A
+'D0.Research.AddressedThirdRole.first_pair_lift_keeps_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.AddressedThirdRole.second_pair_lift_keeps_scalar (A : D0.Research.UniformMemoryActuation.M4) (t : ℝ) :
+  D0.Research.AddressedThirdRole.lift02 (t • A) = t • D0.Research.AddressedThirdRole.lift02 A
+'D0.Research.AddressedThirdRole.second_pair_lift_keeps_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_pair_lift_keeps_identity : D0.Research.AddressedThirdRole.lift01 1 = 1
+'D0.Research.AddressedThirdRole.first_pair_lift_keeps_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.second_pair_lift_keeps_identity : D0.Research.AddressedThirdRole.lift02 1 = 1
+'D0.Research.AddressedThirdRole.second_pair_lift_keeps_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_pair_lift_keeps_conjugation (A B : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift01 A * D0.Research.AddressedThirdRole.lift01 B *
+      Matrix.transpose (D0.Research.AddressedThirdRole.lift01 A) =
+    D0.Research.AddressedThirdRole.lift01 (A * B * Matrix.transpose A)
+'D0.Research.AddressedThirdRole.first_pair_lift_keeps_conjugation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.second_pair_lift_keeps_conjugation (A B : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift02 A * D0.Research.AddressedThirdRole.lift02 B *
+      Matrix.transpose (D0.Research.AddressedThirdRole.lift02 A) =
+    D0.Research.AddressedThirdRole.lift02 (A * B * Matrix.transpose A)
+'D0.Research.AddressedThirdRole.second_pair_lift_keeps_conjugation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.concrete_native_four_coordinates_are_the_literal_two_role_tensor :
+  D0.Research.AddressedThirdRole.activeJ = D0.Research.AddressedThirdRole.two D0.Research.AddressedThirdRole.J 1 ∧
+    D0.Research.AddressedThirdRole.recordJ = D0.Research.AddressedThirdRole.two 1 D0.Research.AddressedThirdRole.J ∧
+      D0.Research.AddressedThirdRole.activeX = D0.Research.AddressedThirdRole.two D0.Research.AddressedThirdRole.X 1 ∧
+        D0.Research.RetainedRecordAdmission.archiveX =
+            D0.Research.AddressedThirdRole.two 1 D0.Research.AddressedThirdRole.X ∧
+          D0.Research.VerifiedArchiveActuation.recordZ =
+            D0.Research.AddressedThirdRole.two 1 D0.Research.AddressedThirdRole.Z
+'D0.Research.AddressedThirdRole.concrete_native_four_coordinates_are_the_literal_two_role_tensor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.lift01_is_a_complete_identity_spectator (A : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift01 A = D0.Research.AddressedThirdRole.withLast A 1
+'D0.Research.AddressedThirdRole.lift01_is_a_complete_identity_spectator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.lift02_is_a_complete_identity_spectator (A : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift02 A = D0.Research.AddressedThirdRole.withMiddle A 1
+'D0.Research.AddressedThirdRole.lift02_is_a_complete_identity_spectator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.spectator_last_complete_multiplication (A B : D0.Research.UniformMemoryActuation.M4)
+  (C D : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.withLast A C * D0.Research.AddressedThirdRole.withLast B D =
+    D0.Research.AddressedThirdRole.withLast (A * B) (C * D)
+'D0.Research.AddressedThirdRole.spectator_last_complete_multiplication' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.spectator_middle_complete_multiplication (A B : D0.Research.UniformMemoryActuation.M4)
+  (C D : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.withMiddle A C * D0.Research.AddressedThirdRole.withMiddle B D =
+    D0.Research.AddressedThirdRole.withMiddle (A * B) (C * D)
+'D0.Research.AddressedThirdRole.spectator_middle_complete_multiplication' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.tensor_first_pair_with_full_spectator (A B C : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.withLast (D0.Research.AddressedThirdRole.two A B) C =
+    D0.Research.AddressedThirdRole.tensor A B C
+'D0.Research.AddressedThirdRole.tensor_first_pair_with_full_spectator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.tensor_second_pair_with_full_spectator (A B C : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.withMiddle (D0.Research.AddressedThirdRole.two A C) B =
+    D0.Research.AddressedThirdRole.tensor A B C
+'D0.Research.AddressedThirdRole.tensor_second_pair_with_full_spectator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.with_last_keeps_all_scalar_factors (A : D0.Research.UniformMemoryActuation.M4)
+  (D : D0.Research.AddressedThirdRole.M2) (s : ℝ) :
+  D0.Research.AddressedThirdRole.withLast (s • A) D = s • D0.Research.AddressedThirdRole.withLast A D
+'D0.Research.AddressedThirdRole.with_last_keeps_all_scalar_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.with_middle_keeps_all_scalar_factors (A : D0.Research.UniformMemoryActuation.M4)
+  (D : D0.Research.AddressedThirdRole.M2) (s : ℝ) :
+  D0.Research.AddressedThirdRole.withMiddle (s • A) D = s • D0.Research.AddressedThirdRole.withMiddle A D
+'D0.Research.AddressedThirdRole.with_middle_keeps_all_scalar_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_first_pair_conjugation_retains_arbitrary_spectator
+  (F A : D0.Research.UniformMemoryActuation.M4) (D : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.lift01 F * D0.Research.AddressedThirdRole.withLast A D *
+      Matrix.transpose (D0.Research.AddressedThirdRole.lift01 F) =
+    D0.Research.AddressedThirdRole.withLast (F * A * Matrix.transpose F) D
+'D0.Research.AddressedThirdRole.complete_first_pair_conjugation_retains_arbitrary_spectator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_second_pair_conjugation_retains_arbitrary_spectator
+  (F A : D0.Research.UniformMemoryActuation.M4) (D : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.lift02 F * D0.Research.AddressedThirdRole.withMiddle A D *
+      Matrix.transpose (D0.Research.AddressedThirdRole.lift02 F) =
+    D0.Research.AddressedThirdRole.withMiddle (F * A * Matrix.transpose F) D
+'D0.Research.AddressedThirdRole.complete_second_pair_conjugation_retains_arbitrary_spectator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.the_complete_four_role_products_are_literal_pauli_tensors :
+  D0.Research.AddressedThirdRole.activeX * D0.Research.AddressedThirdRole.recordJ =
+      D0.Research.AddressedThirdRole.two D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J ∧
+    D0.Research.AddressedThirdRole.activeX * D0.Research.VerifiedArchiveActuation.recordZ =
+        D0.Research.AddressedThirdRole.two D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.Z ∧
+      D0.Research.AddressedThirdRole.activeX * D0.Research.RetainedRecordAdmission.archiveX =
+          D0.Research.AddressedThirdRole.two D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.X ∧
+        D0.Research.AddressedThirdRole.activeJ * D0.Research.RetainedRecordAdmission.archiveX =
+          D0.Research.AddressedThirdRole.two D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X
+'D0.Research.AddressedThirdRole.the_complete_four_role_products_are_literal_pauli_tensors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_coherent_recording_moves_the_turn_to_the_additional_role (e : Fin 4 → ℝ)
+  (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity e = -1) :
+  D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording e) *
+        D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1 *
+      Matrix.transpose (D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording e)) =
+    (e 0 * e 2) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X 1 D0.Research.AddressedThirdRole.J
+'D0.Research.AddressedThirdRole.first_coherent_recording_moves_the_turn_to_the_additional_role' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.old_record_comparison_adds_the_retained_record_phase (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity c = -1) :
+  D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c) *
+        D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X 1 D0.Research.AddressedThirdRole.J *
+      Matrix.transpose
+        (D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c)) =
+    (c 0 * c 2) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.Z
+        D0.Research.AddressedThirdRole.J
+'D0.Research.AddressedThirdRole.old_record_comparison_adds_the_retained_record_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.original_recording_relocates_the_two_role_flip (d : Fin 4 → ℝ)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity d = -1) :
+  D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording d) *
+        D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.Z
+          D0.Research.AddressedThirdRole.J *
+      Matrix.transpose (D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording d)) =
+    (d 0 * d 2) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.X
+        D0.Research.AddressedThirdRole.J
+'D0.Research.AddressedThirdRole.original_recording_relocates_the_two_role_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.additional_recording_uncorrelates_its_complete_role (e : Fin 4 → ℝ)
+  (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity e = -1) :
+  D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording e) *
+        D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.X
+          D0.Research.AddressedThirdRole.J *
+      Matrix.transpose (D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording e)) =
+    (e 0 * e 3) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X 1
+'D0.Research.AddressedThirdRole.additional_recording_uncorrelates_its_complete_role' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.final_old_record_comparison_uncorrelates_the_active_role (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity c = -1) :
+  D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c) *
+        D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X 1 *
+      Matrix.transpose
+        (D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c)) =
+    (c 0 * c 3) • D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J 1
+'D0.Research.AddressedThirdRole.final_old_record_comparison_uncorrelates_the_active_role' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.full_conjugation_composes_without_a_reset (A B Q : D0.Research.AddressedThirdRole.M8) :
+  D0.Research.AddressedThirdRole.conjugate (A * B) Q =
+    D0.Research.AddressedThirdRole.conjugate A (D0.Research.AddressedThirdRole.conjugate B Q)
+'D0.Research.AddressedThirdRole.full_conjugation_composes_without_a_reset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.full_conjugation_keeps_its_scalar_factor (A Q : D0.Research.AddressedThirdRole.M8)
+  (t : ℝ) : D0.Research.AddressedThirdRole.conjugate A (t • Q) = t • D0.Research.AddressedThirdRole.conjugate A Q
+'D0.Research.AddressedThirdRole.full_conjugation_keeps_its_scalar_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.all_complete_proper_three_role_realizations_have_the_same_five_step_turn_transfer
+  (c d e : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hpc : D0.Research.UniformMemoryActuation.parity c = -1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = -1) (hpe : D0.Research.UniformMemoryActuation.parity e = -1) :
+  D0.Research.AddressedThirdRole.conjugate (D0.Research.AddressedThirdRole.fiveStep c d e)
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1) =
+    D0.Research.AddressedThirdRole.fiveOrientation c d e •
+      D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J 1
+'D0.Research.AddressedThirdRole.all_complete_proper_three_role_realizations_have_the_same_five_step_turn_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.five_step_orientation_is_only_a_sign (c d e : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1) :
+  D0.Research.AddressedThirdRole.fiveOrientation c d e ^ 2 = 1
+'D0.Research.AddressedThirdRole.five_step_orientation_is_only_a_sign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_address_preserves_full_orthogonality (A : D0.Research.UniformMemoryActuation.M4)
+  (ha : Matrix.transpose A * A = 1) :
+  Matrix.transpose (D0.Research.AddressedThirdRole.lift01 A) * D0.Research.AddressedThirdRole.lift01 A = 1
+'D0.Research.AddressedThirdRole.first_address_preserves_full_orthogonality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.additional_address_preserves_full_orthogonality
+  (A : D0.Research.UniformMemoryActuation.M4) (ha : Matrix.transpose A * A = 1) :
+  Matrix.transpose (D0.Research.AddressedThirdRole.lift02 A) * D0.Research.AddressedThirdRole.lift02 A = 1
+'D0.Research.AddressedThirdRole.additional_address_preserves_full_orthogonality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.two_complete_orthogonal_operations_remain_orthogonal
+  (A B : D0.Research.AddressedThirdRole.M8) (ha : Matrix.transpose A * A = 1) (hb : Matrix.transpose B * B = 1) :
+  (A * B).transpose * (A * B) = 1
+'D0.Research.AddressedThirdRole.two_complete_orthogonal_operations_remain_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.every_five_step_route_is_complete_orthogonal (c d e : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1) :
+  Matrix.transpose (D0.Research.AddressedThirdRole.fiveStep c d e) * D0.Research.AddressedThirdRole.fiveStep c d e = 1
+'D0.Research.AddressedThirdRole.every_five_step_route_is_complete_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.every_complete_conjugation_retains_its_identity_component
+  (A : D0.Research.AddressedThirdRole.M8) (ha : Matrix.transpose A * A = 1) (a p : ℝ) :
+  D0.Research.AddressedThirdRole.conjugate A (D0.Research.AddressedThirdRole.activeTurn a p) =
+    a • 1 +
+      p •
+        D0.Research.AddressedThirdRole.conjugate A
+          (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1)
+'D0.Research.AddressedThirdRole.every_complete_conjugation_retains_its_identity_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_five_step_actuation_restores_both_other_roles_for_every_full_state
+  (c d e : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hpc : D0.Research.UniformMemoryActuation.parity c = -1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = -1) (hpe : D0.Research.UniformMemoryActuation.parity e = -1)
+  (a p : ℝ) :
+  D0.Research.AddressedThirdRole.conjugate (D0.Research.AddressedThirdRole.fiveStep c d e)
+      (D0.Research.AddressedThirdRole.activeTurn a p) =
+    D0.Research.AddressedThirdRole.oldTurn a (D0.Research.AddressedThirdRole.fiveOrientation c d e * p)
+'D0.Research.AddressedThirdRole.complete_five_step_actuation_restores_both_other_roles_for_every_full_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_address_preserves_three_forward_inverse (A : D0.Research.UniformMemoryActuation.M4)
+  (ha : Matrix.transpose A = A ^ 3) :
+  Matrix.transpose (D0.Research.AddressedThirdRole.lift01 A) = D0.Research.AddressedThirdRole.lift01 A ^ 3
+'D0.Research.AddressedThirdRole.first_address_preserves_three_forward_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.additional_address_preserves_three_forward_inverse
+  (A : D0.Research.UniformMemoryActuation.M4) (ha : Matrix.transpose A = A ^ 3) :
+  Matrix.transpose (D0.Research.AddressedThirdRole.lift02 A) = D0.Research.AddressedThirdRole.lift02 A ^ 3
+'D0.Research.AddressedThirdRole.additional_address_preserves_three_forward_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_three_role_actuation_has_twenty_one_forward_operations
+  (B A C G : D0.Research.AddressedThirdRole.M8) : (D0.Research.AddressedThirdRole.forwardCode B A C G).length = 21
+'D0.Research.AddressedThirdRole.complete_three_role_actuation_has_twenty_one_forward_operations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_forward_code_has_no_inverse_or_reset_primitive (c d e : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (G : D0.Research.AddressedThirdRole.M8) :
+  D0.Research.AddressedThirdRole.word8
+      (D0.Research.AddressedThirdRole.forwardCode
+        (D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c))
+        (D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording e))
+        (D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording d)) G) =
+    D0.Research.AddressedThirdRole.conjugate (D0.Research.AddressedThirdRole.fiveStep c d e) G
+'D0.Research.AddressedThirdRole.complete_forward_code_has_no_inverse_or_reset_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.forward_code_transfers_the_angle_on_the_entire_eight_coordinate_workspace
+  (c d e : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hpc : D0.Research.UniformMemoryActuation.parity c = -1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = -1) (hpe : D0.Research.UniformMemoryActuation.parity e = -1)
+  (a p : ℝ) :
+  D0.Research.AddressedThirdRole.word8
+      (D0.Research.AddressedThirdRole.forwardCode
+        (D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c))
+        (D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording e))
+        (D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording d))
+        (D0.Research.AddressedThirdRole.activeTurn a p)) =
+    D0.Research.AddressedThirdRole.oldTurn a (D0.Research.AddressedThirdRole.fiveOrientation c d e * p)
+'D0.Research.AddressedThirdRole.forward_code_transfers_the_angle_on_the_entire_eight_coordinate_workspace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.unit_sign_adjacent_pair_from_parity (c : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) :
+  c 2 * c 3 = D0.Research.UniformMemoryActuation.parity c * (c 0 * c 1)
+'D0.Research.AddressedThirdRole.unit_sign_adjacent_pair_from_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.positive_forward_correlates_active_turn (c : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1)
+  (hp : D0.Research.UniformMemoryActuation.parity c = 1) :
+  D0.Research.UniformMemoryActuation.signedRecording c * D0.Research.AddressedThirdRole.activeJ *
+      Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording c) =
+    (c 0 * c 2) • (D0.Research.AddressedThirdRole.activeJ * D0.Research.RetainedRecordAdmission.archiveX)
+'D0.Research.AddressedThirdRole.positive_forward_correlates_active_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.positive_reverse_uncorrelates_both_flips (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity c = 1) :
+  D0.Research.VerifiedArchiveActuation.signedComparison c *
+        (D0.Research.AddressedThirdRole.activeX * D0.Research.RetainedRecordAdmission.archiveX) *
+      (D0.Research.VerifiedArchiveActuation.signedComparison c).transpose =
+    (c 0 * c 3) • D0.Research.RetainedRecordAdmission.archiveX
+'D0.Research.AddressedThirdRole.positive_reverse_uncorrelates_both_flips' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_reverse_turns_record_into_active_correlation (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity c = -1) :
+  D0.Research.VerifiedArchiveActuation.signedComparison c * D0.Research.AddressedThirdRole.recordJ *
+      (D0.Research.VerifiedArchiveActuation.signedComparison c).transpose =
+    (c 0 * c 1) • (D0.Research.AddressedThirdRole.activeJ * D0.Research.RetainedRecordAdmission.archiveX)
+'D0.Research.AddressedThirdRole.proper_reverse_turns_record_into_active_correlation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_reverse_uncorrelates_both_turns (c : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1)
+  (hp : D0.Research.UniformMemoryActuation.parity c = -1) :
+  D0.Research.VerifiedArchiveActuation.signedComparison c *
+        (D0.Research.AddressedThirdRole.activeJ * D0.Research.AddressedThirdRole.recordJ) *
+      (D0.Research.VerifiedArchiveActuation.signedComparison c).transpose =
+    (c 0 * c 3) • D0.Research.RetainedRecordAdmission.archiveX
+'D0.Research.AddressedThirdRole.proper_reverse_uncorrelates_both_turns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.positive_forward_correlates_flip_phase_into_both_turns (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity c = 1) :
+  D0.Research.UniformMemoryActuation.signedRecording c *
+        (D0.Research.AddressedThirdRole.activeX * D0.Research.VerifiedArchiveActuation.recordZ) *
+      Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording c) =
+    (c 0 * c 2) • (D0.Research.AddressedThirdRole.activeJ * D0.Research.AddressedThirdRole.recordJ)
+'D0.Research.AddressedThirdRole.positive_forward_correlates_flip_phase_into_both_turns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.positive_forward_uncorrelates_active_turn (c : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity c = 1) :
+  D0.Research.UniformMemoryActuation.signedRecording c *
+        (D0.Research.AddressedThirdRole.activeJ * D0.Research.RetainedRecordAdmission.archiveX) *
+      Matrix.transpose (D0.Research.UniformMemoryActuation.signedRecording c) =
+    (c 0 * c 3) • D0.Research.AddressedThirdRole.activeJ
+'D0.Research.AddressedThirdRole.positive_forward_uncorrelates_active_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.both_native_turns_are_the_complete_tensor :
+  D0.Research.AddressedThirdRole.activeJ * D0.Research.AddressedThirdRole.recordJ =
+    D0.Research.AddressedThirdRole.two D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.J
+'D0.Research.AddressedThirdRole.both_native_turns_are_the_complete_tensor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.positive_additional_recording_correlates_the_active_turn (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = 1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording v))
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1) =
+    (v 0 * v 2) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 D0.Research.AddressedThirdRole.X
+'D0.Research.AddressedThirdRole.positive_additional_recording_correlates_the_active_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_original_recording_correlates_the_active_turn (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = -1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording v))
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 D0.Research.AddressedThirdRole.X) =
+    (v 0 * v 2) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J
+        D0.Research.AddressedThirdRole.X
+'D0.Research.AddressedThirdRole.proper_original_recording_correlates_the_active_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.positive_additional_comparison_uncorrelates_both_flips (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = 1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift02 (D0.Research.VerifiedArchiveActuation.signedComparison v))
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J
+        D0.Research.AddressedThirdRole.X) =
+    (v 0 * v 3) •
+      D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X
+'D0.Research.AddressedThirdRole.positive_additional_comparison_uncorrelates_both_flips' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_old_record_comparison_moves_its_turn_back_to_active (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = -1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison v))
+      (D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X) =
+    (v 0 * v 1) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X
+        D0.Research.AddressedThirdRole.X
+'D0.Research.AddressedThirdRole.proper_old_record_comparison_moves_its_turn_back_to_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.positive_additional_recording_restores_its_complete_role (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = 1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording v))
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X
+        D0.Research.AddressedThirdRole.X) =
+    (v 0 * v 3) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X 1
+'D0.Research.AddressedThirdRole.positive_additional_recording_restores_its_complete_role' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_original_recording_starts_the_mixed_route (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = -1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording v))
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1) =
+    (v 0 * v 2) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J 1
+'D0.Research.AddressedThirdRole.proper_original_recording_starts_the_mixed_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_additional_comparison_retains_the_old_record_turn (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = -1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift02 (D0.Research.VerifiedArchiveActuation.signedComparison v))
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J 1) =
+    (v 0 * v 2) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J
+        D0.Research.AddressedThirdRole.Z
+'D0.Research.AddressedThirdRole.proper_additional_comparison_retains_the_old_record_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.positive_additional_recording_correlates_both_turns (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = 1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift02 (D0.Research.UniformMemoryActuation.signedRecording v))
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J
+        D0.Research.AddressedThirdRole.Z) =
+    (v 0 * v 2) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.J
+        D0.Research.AddressedThirdRole.J
+'D0.Research.AddressedThirdRole.positive_additional_recording_correlates_both_turns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_old_record_comparison_uncorrelates_both_turns (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = -1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison v))
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.J
+        D0.Research.AddressedThirdRole.J) =
+    (v 0 * v 3) •
+      D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J
+'D0.Research.AddressedThirdRole.proper_old_record_comparison_uncorrelates_both_turns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.proper_additional_comparison_moves_its_turn_back_to_active (v : Fin 4 → ℝ)
+  (hv : ∀ (i : Fin 4), v i ^ 2 = 1) (hp : D0.Research.UniformMemoryActuation.parity v = -1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.lift02 (D0.Research.VerifiedArchiveActuation.signedComparison v))
+      (D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.X D0.Research.AddressedThirdRole.J) =
+    (v 0 * v 1) •
+      D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J D0.Research.AddressedThirdRole.X
+        D0.Research.AddressedThirdRole.X
+'D0.Research.AddressedThirdRole.proper_additional_comparison_moves_its_turn_back_to_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.all_complete_positive_helper_pairs_transfer_the_turn_in_six_steps (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (hpc : D0.Research.UniformMemoryActuation.parity c = -1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = -1) (hpe : D0.Research.UniformMemoryActuation.parity e = 1)
+  (hpf : D0.Research.UniformMemoryActuation.parity f = 1) :
+  D0.Research.AddressedThirdRole.conjugate (D0.Research.AddressedThirdRole.sixStep c d e f)
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1) =
+    D0.Research.AddressedThirdRole.sixOrientation c d e f •
+      D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J 1
+'D0.Research.AddressedThirdRole.all_complete_positive_helper_pairs_transfer_the_turn_in_six_steps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.all_complete_mixed_helper_pairs_transfer_the_turn_in_seven_steps (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (hpc : D0.Research.UniformMemoryActuation.parity c = -1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = -1) (hpe : D0.Research.UniformMemoryActuation.parity e = 1)
+  (hpf : D0.Research.UniformMemoryActuation.parity f = -1) :
+  D0.Research.AddressedThirdRole.conjugate (D0.Research.AddressedThirdRole.sevenStep c d e f)
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1) =
+    D0.Research.AddressedThirdRole.sevenOrientation c d e f •
+      D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J 1
+'D0.Research.AddressedThirdRole.all_complete_mixed_helper_pairs_transfer_the_turn_in_seven_steps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_positive_helper_route_orientation_is_a_sign (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) : D0.Research.AddressedThirdRole.sixOrientation c d e f ^ 2 = 1
+'D0.Research.AddressedThirdRole.complete_positive_helper_route_orientation_is_a_sign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_mixed_helper_route_orientation_is_a_sign (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) : D0.Research.AddressedThirdRole.sevenOrientation c d e f ^ 2 = 1
+'D0.Research.AddressedThirdRole.complete_mixed_helper_route_orientation_is_a_sign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.every_addressed_primitive_preserves_the_complete_workspace (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (A : D0.Research.AddressedThirdRole.M8)
+  (ha : D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A) : Matrix.transpose A * A = 1
+'D0.Research.AddressedThirdRole.every_addressed_primitive_preserves_the_complete_workspace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.every_addressed_primitive_has_a_three_forward_inverse (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (A : D0.Research.AddressedThirdRole.M8)
+  (ha : D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A) : Matrix.transpose A = A ^ 3
+'D0.Research.AddressedThirdRole.every_addressed_primitive_has_a_three_forward_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_workspace_word_keeps_composition
+  (u v : List D0.Research.AddressedThirdRole.M8) :
+  D0.Research.AddressedThirdRole.word8 (u ++ v) =
+    D0.Research.AddressedThirdRole.word8 u * D0.Research.AddressedThirdRole.word8 v
+'D0.Research.AddressedThirdRole.complete_workspace_word_keeps_composition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.every_complete_addressed_word_remains_orthogonal (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (w : List D0.Research.AddressedThirdRole.M8)
+  (hw : ∀ A ∈ w, D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A) :
+  Matrix.transpose (D0.Research.AddressedThirdRole.word8 w) * D0.Research.AddressedThirdRole.word8 w = 1
+'D0.Research.AddressedThirdRole.every_complete_addressed_word_remains_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.every_full_word_inverse_uses_only_the_same_forward_primitives (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (w : List D0.Research.AddressedThirdRole.M8)
+  (hw : ∀ A ∈ w, D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A) :
+  D0.Research.AddressedThirdRole.word8 (D0.Research.AddressedThirdRole.inverseForward8 w) =
+    Matrix.transpose (D0.Research.AddressedThirdRole.word8 w)
+'D0.Research.AddressedThirdRole.every_full_word_inverse_uses_only_the_same_forward_primitives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.inverse_forward_code_retains_its_exact_length
+  (w : List D0.Research.AddressedThirdRole.M8) :
+  (D0.Research.AddressedThirdRole.inverseForward8 w).length = 3 * w.length
+'D0.Research.AddressedThirdRole.inverse_forward_code_retains_its_exact_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.full_actuation_compiler_has_four_times_route_length_plus_one
+  (w : List D0.Research.AddressedThirdRole.M8) (G : D0.Research.AddressedThirdRole.M8) :
+  (D0.Research.AddressedThirdRole.compileConjugation w G).length = 4 * w.length + 1
+'D0.Research.AddressedThirdRole.full_actuation_compiler_has_four_times_route_length_plus_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.full_actuation_compiler_keeps_the_complete_conjugation (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (w : List D0.Research.AddressedThirdRole.M8)
+  (hw : ∀ A ∈ w, D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A) (G : D0.Research.AddressedThirdRole.M8) :
+  D0.Research.AddressedThirdRole.word8 (D0.Research.AddressedThirdRole.compileConjugation w G) =
+    D0.Research.AddressedThirdRole.conjugate (D0.Research.AddressedThirdRole.word8 w) G
+'D0.Research.AddressedThirdRole.full_actuation_compiler_keeps_the_complete_conjugation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.inverse_forward_code_keeps_the_complete_primitive_palette (c d e f : Fin 4 → ℝ)
+  (w : List D0.Research.AddressedThirdRole.M8)
+  (hw : ∀ A ∈ w, D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A) (A : D0.Research.AddressedThirdRole.M8) :
+  A ∈ D0.Research.AddressedThirdRole.inverseForward8 w → D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A
+'D0.Research.AddressedThirdRole.inverse_forward_code_keeps_the_complete_primitive_palette' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.full_actuation_compiler_introduces_only_the_owned_active_turn (c d e f : Fin 4 → ℝ)
+  (w : List D0.Research.AddressedThirdRole.M8)
+  (hw : ∀ A ∈ w, D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A)
+  (G A : D0.Research.AddressedThirdRole.M8) :
+  A ∈ D0.Research.AddressedThirdRole.compileConjugation w G →
+    D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A ∨ A = G
+'D0.Research.AddressedThirdRole.full_actuation_compiler_introduces_only_the_owned_active_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.native_two_role_turns_keep_their_owned_identity_and_generator (a p : ℝ) :
+  D0.Research.GoldenCoherentAmplification.goldenSystemGate a p = a • 1 + p • D0.Research.AddressedThirdRole.activeJ ∧
+    D0.Research.GoldenCoherentAmplification.goldenRecordGate a p = a • 1 + p • D0.Research.AddressedThirdRole.recordJ
+'D0.Research.AddressedThirdRole.native_two_role_turns_keep_their_owned_identity_and_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.first_address_keeps_the_complete_sum (A B : D0.Research.UniformMemoryActuation.M4) :
+  D0.Research.AddressedThirdRole.lift01 (A + B) =
+    D0.Research.AddressedThirdRole.lift01 A + D0.Research.AddressedThirdRole.lift01 B
+'D0.Research.AddressedThirdRole.first_address_keeps_the_complete_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.addressed_native_turns_are_the_actual_owned_full_operators (a p : ℝ) :
+  D0.Research.AddressedThirdRole.lift01 (D0.Research.GoldenCoherentAmplification.goldenSystemGate a p) =
+      D0.Research.AddressedThirdRole.activeTurn a p ∧
+    D0.Research.AddressedThirdRole.lift01 (D0.Research.GoldenCoherentAmplification.goldenRecordGate a p) =
+      D0.Research.AddressedThirdRole.oldTurn a p
+'D0.Research.AddressedThirdRole.addressed_native_turns_are_the_actual_owned_full_operators' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.addressed_three_step_positive_forward_route_transfers_the_complete_turn (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (hpd : D0.Research.UniformMemoryActuation.parity d = 1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.word8
+        [D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c),
+          D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording d),
+          D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c)])
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1) =
+    (d 0 * d 2 * c 2 * c 3) • D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J 1
+'D0.Research.AddressedThirdRole.addressed_three_step_positive_forward_route_transfers_the_complete_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.addressed_three_step_positive_reverse_route_transfers_the_complete_turn (c d : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (hpc : D0.Research.UniformMemoryActuation.parity c = 1) :
+  D0.Research.AddressedThirdRole.conjugate
+      (D0.Research.AddressedThirdRole.word8
+        [D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording d),
+          D0.Research.AddressedThirdRole.lift01 (D0.Research.VerifiedArchiveActuation.signedComparison c),
+          D0.Research.AddressedThirdRole.lift01 (D0.Research.UniformMemoryActuation.signedRecording d)])
+      (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1) =
+    (c 0 * c 3 * d 1 * d 2) • D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J 1
+'D0.Research.AddressedThirdRole.addressed_three_step_positive_reverse_route_transfers_the_complete_turn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.every_complete_two_address_phase_family_has_a_full_turn_transfer_route
+  (c d e f : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hf : ∀ (i : Fin 4), f i ^ 2 = 1) :
+  ∃ w σ,
+    w.length ≤ 7 ∧
+      (∀ A ∈ w, D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A) ∧
+        σ ^ 2 = 1 ∧
+          D0.Research.AddressedThirdRole.conjugate (D0.Research.AddressedThirdRole.word8 w)
+              (D0.Research.AddressedThirdRole.tensor D0.Research.AddressedThirdRole.J 1 1) =
+            σ • D0.Research.AddressedThirdRole.tensor 1 D0.Research.AddressedThirdRole.J 1
+'D0.Research.AddressedThirdRole.every_complete_two_address_phase_family_has_a_full_turn_transfer_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_signed_addressed_actuation_is_constructive_with_at_most_twenty_nine_steps
+  (c d e f : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (a p : ℝ) :
+  ∃ code σ,
+    code.length ≤ 29 ∧
+      σ ^ 2 = 1 ∧
+        (∀ A ∈ code,
+            D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A ∨
+              A = D0.Research.AddressedThirdRole.activeTurn a p) ∧
+          D0.Research.AddressedThirdRole.word8 code = D0.Research.AddressedThirdRole.oldTurn a (σ * p)
+'D0.Research.AddressedThirdRole.complete_signed_addressed_actuation_is_constructive_with_at_most_twenty_nine_steps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.actual_owned_golden_angle_requires_no_added_rotation_primitive (c d e f : Fin 4 → ℝ)
+  (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1)
+  (hf : ∀ (i : Fin 4), f i ^ 2 = 1) :
+  ∃ code σ,
+    code.length ≤ 29 ∧
+      σ ^ 2 = 1 ∧
+        (∀ A ∈ code,
+            D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A ∨
+              A =
+                D0.Research.AddressedThirdRole.lift01
+                  (D0.Research.GoldenCoherentAmplification.goldenSystemGate (√D0.primitiveRoot) D0.primitiveRoot)) ∧
+          D0.Research.AddressedThirdRole.word8 code =
+            D0.Research.AddressedThirdRole.lift01
+              (D0.Research.GoldenCoherentAmplification.goldenRecordGate (√D0.primitiveRoot) (σ * D0.primitiveRoot))
+'D0.Research.AddressedThirdRole.actual_owned_golden_angle_requires_no_added_rotation_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.constant_twenty_nine_step_actuation_keeps_the_owned_golden_resource_window (A : ℝ)
+  (c : ℕ) : ∀ᶠ (m : ℕ) in Filter.atTop, 29 * A * ↑m ^ c * 9 ^ m ≤ D0.phi ^ (5 * m)
+'D0.Research.AddressedThirdRole.constant_twenty_nine_step_actuation_keeps_the_owned_golden_resource_window' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_programme_refinement_keeps_every_forward_primitive (n : ℕ)
+  (w : List D0.Research.AddressedThirdRole.M8) :
+  D0.Research.AddressedThirdRole.refinedWord n w =
+    D0.Research.VerifiedArchiveActuation.wholeHistoryOperator (D0.Research.AddressedThirdRole.word8 w) n
+'D0.Research.AddressedThirdRole.complete_programme_refinement_keeps_every_forward_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.every_addressed_programme_intertwines_every_full_golden_depth
+  (w : List D0.Research.AddressedThirdRole.M8) (a p : ℝ) (n : ℕ) (x : D0.Research.AddressedThirdRole.Triple → ℝ) :
+  (D0.Research.AddressedThirdRole.refinedWord n w).mulVec
+      (D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x) =
+    D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n
+      (Matrix.mulVec (D0.Research.AddressedThirdRole.word8 w) x)
+'D0.Research.AddressedThirdRole.every_addressed_programme_intertwines_every_full_golden_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.complete_three_role_programme_error_has_no_refinement_dilution
+  (W H : D0.Research.AddressedThirdRole.M8) (a p : ℝ) (hn : a ^ 2 + p ^ 2 = 1) (n : ℕ)
+  (x : D0.Research.AddressedThirdRole.Triple → ℝ) :
+  ∑ s,
+      ((D0.Research.VerifiedArchiveActuation.wholeHistoryOperator W n).mulVec
+              (D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x) -
+            (D0.Research.VerifiedArchiveActuation.wholeHistoryOperator H n).mulVec
+              (D0.Research.VerifiedArchiveActuation.realHistoryInclusion a p n x))
+          s ^
+        2 =
+    ∑ i, (Matrix.mulVec W x - Matrix.mulVec H x) i ^ 2
+'D0.Research.AddressedThirdRole.complete_three_role_programme_error_has_no_refinement_dilution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.full_constructive_actuation_commutes_with_every_retained_golden_depth
+  (c d e f : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1)
+  (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (a p : ℝ) :
+  ∃ code σ,
+    code.length ≤ 29 ∧
+      σ ^ 2 = 1 ∧
+        (∀ A ∈ code,
+            D0.Research.AddressedThirdRole.AddressedPrimitive c d e f A ∨
+              A = D0.Research.AddressedThirdRole.activeTurn a p) ∧
+          ∀ (n : ℕ) (b q : ℝ) (x : D0.Research.AddressedThirdRole.Triple → ℝ),
+            (D0.Research.AddressedThirdRole.refinedWord n code).mulVec
+                (D0.Research.VerifiedArchiveActuation.realHistoryInclusion b q n x) =
+              D0.Research.VerifiedArchiveActuation.realHistoryInclusion b q n
+                (Matrix.mulVec (D0.Research.AddressedThirdRole.oldTurn a (σ * p)) x)
+'D0.Research.AddressedThirdRole.full_constructive_actuation_commutes_with_every_retained_golden_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.the_complete_two_address_retaining_real_family_has_sixty_five_thousand_five_hundred_thirty_six_realizations :
+  Nat.card
+      (({ F // D0.Research.UniformMemoryActuation.RetainingRealRecording F } ×
+          { U // D0.Research.VerifiedArchiveActuation.RetainingRealComparison U }) ×
+        { F // D0.Research.UniformMemoryActuation.RetainingRealRecording F } ×
+          { U // D0.Research.VerifiedArchiveActuation.RetainingRealComparison U }) =
+    65536
+'D0.Research.AddressedThirdRole.the_complete_two_address_retaining_real_family_has_sixty_five_thousand_five_hundred_thirty_six_realizations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.all_functionally_classified_addressed_real_primitives_have_a_complete_workspace_programme
+  (F U E V : D0.Research.UniformMemoryActuation.M4) (hf : D0.Research.UniformMemoryActuation.RetainingRealRecording F)
+  (hu : D0.Research.VerifiedArchiveActuation.RetainingRealComparison U)
+  (he : D0.Research.UniformMemoryActuation.RetainingRealRecording E)
+  (hv : D0.Research.VerifiedArchiveActuation.RetainingRealComparison V) (a p : ℝ) :
+  ∃ code σ,
+    code.length ≤ 29 ∧
+      σ ^ 2 = 1 ∧
+        (∀ A ∈ code,
+            A = D0.Research.AddressedThirdRole.lift01 U ∨
+              A = D0.Research.AddressedThirdRole.lift01 F ∨
+                A = D0.Research.AddressedThirdRole.lift02 E ∨
+                  A = D0.Research.AddressedThirdRole.lift02 V ∨ A = D0.Research.AddressedThirdRole.activeTurn a p) ∧
+          ∀ (x : D0.Research.AddressedThirdRole.Triple → ℝ),
+            Matrix.mulVec (D0.Research.AddressedThirdRole.word8 code) x =
+              Matrix.mulVec (D0.Research.AddressedThirdRole.oldTurn a (σ * p)) x
+'D0.Research.AddressedThirdRole.all_functionally_classified_addressed_real_primitives_have_a_complete_workspace_programme' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AddressedThirdRole.already_owned_common_recording_and_comparison_need_only_thirteen_or_twenty_one_steps
+  (c d : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1) (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (a p : ℝ) :
+  ∃ code σ,
+    code.length ≤ 21 ∧
+      σ ^ 2 = 1 ∧
+        (∀ A ∈ code,
+            D0.Research.AddressedThirdRole.AddressedPrimitive c d d c A ∨
+              A = D0.Research.AddressedThirdRole.activeTurn a p) ∧
+          D0.Research.AddressedThirdRole.word8 code = D0.Research.AddressedThirdRole.oldTurn a (σ * p)
+'D0.Research.AddressedThirdRole.already_owned_common_recording_and_comparison_need_only_thirteen_or_twenty_one_steps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

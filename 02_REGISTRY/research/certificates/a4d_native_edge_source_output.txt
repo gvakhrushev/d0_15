@@ -1,0 +1,44 @@
+'D0.Research.NativeEdgeRiesz.edgeMatrix_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeEdgeRiesz.edgeMatrix_row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeEdgeRiesz.pairing_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeEdgeRiesz.pairing_edge_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeEdgeRiesz.edgeMatrix_off_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeEdgeRiesz.role_edge_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeEdgeRiesz.actual_readout_on_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeEdgeRiesz.diagonal_potential_pairing_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeEdgeRiesz.actual_local_annihilator_iff_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeEdgeRiesz.actual_local_sources_equivalent_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Geometry.archive_local_laplacian_variation_isomorphism_owner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeEdgeRiesz.role_edge_local (n : ℕ)
+  (i j : D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint n)
+  (hij : D0.Geometry.rolePhaseAdjacent n i j) :
+  D0.Geometry.LocalLaplacianPredicates n (D0.Research.NativeEdgeRiesz.edgeMatrix i j)
+D0.Research.NativeEdgeRiesz.actual_local_annihilator_iff_edges (n : ℕ)
+  (T :
+    Matrix (D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint n)
+      (D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint n) ℝ)
+  (hT : D0.MatrixSymmetric T) :
+  (∀ (D : ↥(D0.Geometry.LocalLaplacianVariation n)), D0.matrixInnerProduct T ↑D = 0) ↔
+    ∀ (i j : D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint n),
+      D0.Geometry.rolePhaseAdjacent n i j →
+        D0.Geometry.edgeStressReadout (D0.Geometry.ArchivePhaseEdgeMetricScale.archiveMetricLaplacianScale n) (T i i)
+            (T j j) (T i j) =
+          0
+D0.Research.NativeEdgeRiesz.actual_local_sources_equivalent_iff (n : ℕ)
+  (T U :
+    Matrix (D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint n)
+      (D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint n) ℝ)
+  (hT : D0.MatrixSymmetric T) (hU : D0.MatrixSymmetric U) :
+  (∀ (D : ↥(D0.Geometry.LocalLaplacianVariation n)), D0.matrixInnerProduct T ↑D = D0.matrixInnerProduct U ↑D) ↔
+    ∀ (i j : D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint n),
+      D0.Geometry.rolePhaseAdjacent n i j →
+        D0.Geometry.edgeStressReadout (D0.Geometry.ArchivePhaseEdgeMetricScale.archiveMetricLaplacianScale n) (T i i)
+            (T j j) (T i j) =
+          D0.Geometry.edgeStressReadout (D0.Geometry.ArchivePhaseEdgeMetricScale.archiveMetricLaplacianScale n) (U i i)
+            (U j j) (U i j)

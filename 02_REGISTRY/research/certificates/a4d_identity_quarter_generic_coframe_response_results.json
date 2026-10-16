@@ -1,0 +1,113 @@
+{
+  "schema": "a4d-identity-quarter-generic-coframe-response-v1",
+  "background": "identity links, arbitrary constant 4x4 coframe symbols",
+  "character": "(i,i,i,i) and real conjugate",
+  "symbolic_coframe_variable_count": 16,
+  "connection_shape": [
+    24,
+    24
+  ],
+  "coframe_mixed_shape": [
+    16,
+    24
+  ],
+  "triangle_generators_at_identity": [
+    [
+      0,
+      0,
+      0,
+      1,
+      -1,
+      1
+    ],
+    [
+      0,
+      1,
+      -1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      -1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "symbolic_connection_zero_entries": 96,
+  "symbolic_coframe_zero_entries": 64,
+  "joint_rank_at_identity": 20,
+  "full_coframe_joint_rank_at_identity": 20,
+  "generic_near_identity_joint_nullity": 4,
+  "mean_quarter_free_lie_words": {
+    "01": {
+      "A0B0": "-1/2",
+      "A1B1": "1/2",
+      "B0A0": "1/2",
+      "B1A1": "-1/2"
+    },
+    "02": {
+      "A0B0": "-1/2",
+      "A2B2": "1/2",
+      "B0A0": "1/2",
+      "B2A2": "-1/2"
+    },
+    "03": {
+      "A0B0": "-1/2",
+      "A3B3": "1/2",
+      "B0A0": "1/2",
+      "B3A3": "-1/2"
+    },
+    "12": {
+      "A1B1": "-1/2",
+      "A2B2": "1/2",
+      "B1A1": "1/2",
+      "B2A2": "-1/2"
+    },
+    "13": {
+      "A1B1": "-1/2",
+      "A3B3": "1/2",
+      "B1A1": "1/2",
+      "B3A3": "-1/2"
+    },
+    "23": {
+      "A2B2": "-1/2",
+      "A3B3": "1/2",
+      "B2A2": "1/2",
+      "B3A3": "-1/2"
+    }
+  },
+  "noncommuting_same_role_hostile_coframe_mean": {
+    "4": "1/2",
+    "8": "-1/2"
+  },
+  "noncommuting_same_role_hostile_gram_mean": [
+    "0",
+    "1/4",
+    "-1/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "conclusion": "On an open coframe neighborhood of eta the whole four-complex-dimensional diagonal-quarter joint kernel consists of one triangle-bivector line per role, and its zero-character quadratic metric response is identically zero.",
+  "proof_boundary": [
+    "frozen constant coframes; no varying-background nonlinear gluing",
+    "other Bloch characters and possible rank-drop coframes not classified",
+    "no finite-amplitude or owner-sum response theorem"
+  ]
+}

@@ -1,0 +1,52 @@
+'D0.Research.NativeTransportedConnection.native_link_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTransportedConnection.native_link_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTransportedConnection.native_link_inverse_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.native_lorentz_connection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.native_shift_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTransportedConnection.actual_open_holonomy_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.actual_native_holonomy_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.actual_native_torsion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.actual_transport_center_flat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.actual_transport_center_row_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.actual_joint_center_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.sweep_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTransportedConnection.periodic_gate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTransportedConnection.periodic_existence_iff_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.periodic_fiber_iff_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.periodic_unique_if_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeTransportedConnection.cayley_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeTransportedConnection.cayley_is_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.transportedSolderCenter_covariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.curvature_eq_holonomy_defect' depends on axioms: [propext, Quot.sound]
+D0.Geometry.IsLorentzAffineExteriorConnection {N : ℕ} (A : AffineCartanConnection N ℝ RoleSpace) : Prop
+D0.Geometry.transportedSolderCenter (N : ℕ) (E : ArchiveRolePhaseGroup N → Matrix Role Role ℝ)
+  (Rpull : ArchiveRolePhaseGroup N → Role → Matrix Role Role ℝ) (x : ArchiveRolePhaseGroup N) : Matrix Role Role ℝ
+D0.Geometry.lorentzVectorEquiv_apply (Λ : Matrix Role Role ℝ) (hΛ : IsRoleLorentz Λ) (v : RoleVector) :
+  (lorentzVectorEquiv Λ hΛ) v = Λ⁻¹ *ᵥ v
+D0.Research.NativeTransportedConnection.periodic_existence_iff_range.{u_1} {V : Type u_1} [AddCommGroup V] [Module ℝ V]
+  (T : ℕ → V →ₗ[ℝ] V) (b : ℕ → V) (n : ℕ) : (∃ u, sweep T b u n = u) ↔ sweep T b 0 n ∈ (cycleDefect T n).range
+D0.Research.NativeTransportedConnection.periodic_fiber_iff_kernel.{u_1} {V : Type u_1} [AddCommGroup V] [Module ℝ V]
+  (T : ℕ → V →ₗ[ℝ] V) (b : ℕ → V) (u v : V) (n : ℕ) (hv : sweep T b v n = v) :
+  sweep T b u n = u ↔ u - v ∈ (cycleDefect T n).ker

@@ -1,0 +1,27 @@
+{
+  "GR_closed": false,
+  "exact_algebraic_conditions": 95,
+  "executed_mathematical_mutations": 5,
+  "full_native_action_binding": false,
+  "independent_scientific_acceptance": false,
+  "new_Lean_compilation": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "physical_program_selected": false,
+  "primitive_admission": false,
+  "prior_suites_replayed": false,
+  "python": "3.13.5",
+  "rational_interval_sign_proof": true,
+  "schema": "d0-central-record-validation/1",
+  "sha256": {
+    "02_REGISTRY/research/A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md": "7d85322f50ff9139c794666e7b3fda5dd62d69e2bc13ab76dfcd2e857d674f8f",
+    "02_REGISTRY/research/sources/d0_central_record_2026-10-16/INPUTS.json": "f1391d0997b680b28206a5a17fd30b2626ed1dc4d563b772d9246d966b354eea",
+    "02_REGISTRY/research/sources/d0_central_record_2026-10-16/README.md": "7063707f0a8acce031c579d0457bf15dbeca88ad30d626a9803c3b564fea709e",
+    "02_REGISTRY/research/sources/d0_central_record_2026-10-16/check_central_record.py": "b632242f534b513c4b630c32fad57126ac12de1a20e63ae6b8e63b8c11007eb4",
+    "02_REGISTRY/research/sources/d0_central_record_2026-10-16/interval_sign.py": "2292114355edaf6972eeff11873a76a595da52580647bf8322f573eff2453bc9",
+    "02_REGISTRY/research/sources/d0_central_record_2026-10-16/mutations.json": "dcfa88086331d413fb5f92566dd82128b1f04a9102bda3f17298474c0e23a0e9",
+    "02_REGISTRY/research/sources/d0_central_record_2026-10-16/result.json": "87c61745675fc2b76fb6efd8da1d7cc3201f71e048885ca8661dcaeda07d0e9a",
+    "02_REGISTRY/research/sources/d0_central_record_2026-10-16/test_mutations.py": "b51c7e0829c821e6c777e84fae8cd71404d3f1451da8f9dea2501c390a42a100"
+  },
+  "sympy": "1.14.0"
+}

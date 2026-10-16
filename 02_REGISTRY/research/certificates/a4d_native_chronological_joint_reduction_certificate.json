@@ -1,0 +1,48 @@
+{
+  "check_names_sha256": "31fe908b005fb652dfc5276b6ba7b0082b1f56a0ebf6eedbd387f945e8cbe083",
+  "checker_sha256": "dd315f3e9253410480155a5f8020ecd4dfda4965e096ab39b3cd062d8b98b10e",
+  "complete_other_action_terms_retained": true,
+  "exact_controls": 453,
+  "executed_negative_controls": [
+    "freeze_matter_dependence_of_normalizing_pairing",
+    "omit_half_density_on_normalized_fields",
+    "zero_feedback_equation_equals_full_matter_equation",
+    "curved_radial_proof_needs_nilpotency",
+    "drop_retained_zero_heat_mode",
+    "refinement_deletes_added_determinant_factors",
+    "distant_modulo_replaces_actual_composite",
+    "replace_raw_l1_by_volume_average",
+    "all_angles_have_one_price",
+    "positive_uncompensated_heat_can_be_stationary",
+    "normalized_frame_lift_is_only_scalar"
+  ],
+  "full_physical_source_Ward_GR": false,
+  "input_source_head": "353afa53bd52a6f24a485dde0ec59134d08cd970",
+  "link_vertical_slots_per_edge": 6,
+  "matter_slots": 16,
+  "metric_slots": 10,
+  "new_Lean_compilation": false,
+  "owner_declaration_sha256": {
+    "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py": {
+      "archive_modes": "444706d3d32640a08eb921e25b4be277bfa9105a4169398e358a0f16db8b4653",
+      "archive_projection": "f8649f3a4c5aa224a0b155577baa22e9240e345a9987105c1efa27345401830f",
+      "inherit": "405c47509c4a4d94ce6a8893d5e63e0b5837d0dab5ce004517214087b97f53a8"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": {
+      "creator": "b6c7dc797dbf0dd5173305d0cc62c54a6c9227f78d5828b03f3ce337ddd9d4db",
+      "ext": "c04b98888788c2e9f2d086eddcfb5c01cd0be887d164c0da0958dd0e057b4182",
+      "record_basis": "351445d7665715302e0c01e57043792c90b0b602884e08502077aa891617ca45"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": {
+      "polynomials": "a4d6c4ff8f6a28dcf7a043e2f76b26a9467ad91fadd40a8edcb33cb2b6ec5b13",
+      "record": "cb7cb2eac05c0c868c2cd7bf8b1de516bcce6e57cc8e859503c2fd5cf32b1585"
+    }
+  },
+  "owner_pin_scope": "EIGHT_EXECUTED_DECLARATIONS_AST_NOT_FULL_IMPORT_OR_LEAN_CLOSURE",
+  "physical_admission": false,
+  "pole_regular_source_bound": "3*sqrt(cond(W))*norm(q^-1)*norm(m)_W*(1+norm(m)_W*norm(D_mN)_dual/(2*N)); unnormalized factor omits the final parenthesis",
+  "proof": "02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_JOINT_REDUCTION.md",
+  "proof_sha256": "df60f9cfc0c8934c5e6a717a6d526e6d3baed7d1b2c25f980008367e4b59970b",
+  "schema": "d0-research-exact-replay/1",
+  "status": "PASS"
+}

@@ -1,0 +1,261 @@
+{
+  "axioms": {
+    "D0.CondensedAnchor.readout_factors_through_finite_level": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.all_strict_readings_miss_actual_record_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.base_has_sixteen_points": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.birthThread_coherent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.compatible_boolean_family_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.compatible_ext_of_equal_at_any_level": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.compatible_factors_through_base": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.compatible_iff_base_pullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.compatible_same_base_ext": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.first_birth_and_zero_same_actual_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.fresh_tail_persists_from_its_birth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.fresh_tail_starts_with_new_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.fresh_test_distinguishes_actual_birth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.fresh_test_has_no_base_pullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.fresh_test_has_no_strict_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.fromBase_compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.fromBase_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.same_base_fiber_indistinguishable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.toBase_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.two_actual_records_same_base_distinct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeStrictObservableDescent.zeroThread_coherent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archiveFintypeDiagram_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archive_projection_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent.lean",
+  "capsule_sha256": "6cb26ce9aa094b5dcd663c1ed5ce7d4e0ba3661d25fa08982d3dfbf7f4306c60",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_strict_observable_descent.lean"
+  ],
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.NativeStrictObservableDescent.toBase_surjective",
+    "D0.Research.NativeStrictObservableDescent.fromBase_compatible",
+    "D0.Research.NativeStrictObservableDescent.compatible_factors_through_base",
+    "D0.Research.NativeStrictObservableDescent.compatible_iff_base_pullback",
+    "D0.Research.NativeStrictObservableDescent.compatible_same_base_ext",
+    "D0.Research.NativeStrictObservableDescent.fromBase_injective",
+    "D0.Research.NativeStrictObservableDescent.same_base_fiber_indistinguishable",
+    "D0.Research.NativeStrictObservableDescent.base_has_sixteen_points",
+    "D0.Research.NativeStrictObservableDescent.compatible_boolean_family_count",
+    "D0.Research.NativeStrictObservableDescent.first_birth_and_zero_same_actual_parent",
+    "D0.Research.NativeStrictObservableDescent.fresh_test_distinguishes_actual_birth",
+    "D0.Research.NativeStrictObservableDescent.fresh_test_has_no_base_pullback",
+    "D0.Research.NativeStrictObservableDescent.fresh_test_has_no_strict_family",
+    "D0.Research.NativeStrictObservableDescent.birthThread_coherent",
+    "D0.Research.NativeStrictObservableDescent.zeroThread_coherent",
+    "D0.Research.NativeStrictObservableDescent.two_actual_records_same_base_distinct",
+    "D0.Research.NativeStrictObservableDescent.all_strict_readings_miss_actual_record_difference",
+    "D0.Research.NativeStrictObservableDescent.compatible_ext_of_equal_at_any_level",
+    "D0.Research.NativeStrictObservableDescent.fresh_tail_persists_from_its_birth",
+    "D0.Research.NativeStrictObservableDescent.fresh_tail_starts_with_new_test"
+  ],
+  "input_head": "adee3e64e0cd07ab792610a1f52a95a5e4e9cb0f",
+  "native_physical_preparation_or_source_GR_derived": false,
+  "output": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_output.txt",
+  "output_sha256": "95931e5816406c06a642578ed911a547edb46d5fae6509f8b1036aaf149814a2",
+  "primary_and_prior_input_sha256": {
+    "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+    "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+    "02_REGISTRY/research/A4D_NATIVE_HODGE_ARCHIVE_METRIC_REFINEMENT.md": "0e04ad82ed83acf93e148e8e076a00078761f654d2aeed021e9e38aedfc7cbb8",
+    "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md": "6836cf4082a6dae3240a8e42ed7891a6bef654f540ed31c7e1a5700e9d5c4169",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric.lean": "b2a983084a6d212e4341c1a3d7078fcd37ed966a5d6aa12bc0d34fa9f22bebce",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_certificate.json": "7dd49e784d2f1c9247b3480393128b8c12824fb1fe9418ca839ca2db4db0fe2f",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py": "2426fdaa24e19fd69aed9feb66507b32d6c52c433945b427ee3978f5bcc4ba23",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_output.txt": "7de7b886fef9d3163ad45522fe3b30d6cce0edc132ecf6dcab646a48e6575408",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json": "01bf1f694ceaf8ccfff1f850067acb3a6a4989f4c2e7c9c10cb7e7bedf8d226f"
+  },
+  "primary_owner_propositions": [
+    "D0.archive_projection_surjective",
+    "D0.archiveFintypeDiagram_succ",
+    "D0.CondensedAnchor.readout_factors_through_finite_level"
+  ],
+  "printed_primary_owner_propositions": {
+    "D0.CondensedAnchor.readout_factors_through_finite_level": "D0.CondensedAnchor.readout_factors_through_finite_level.{u_1, u_2} (S : Profinite) {\u03b1 : Type u_1}\n  (f : LocallyConstant (\u2191S.toTop) \u03b1) : \u2203 j g, f = LocallyConstant.comap (TopCat.Hom.hom (S.asLimitCone.\u03c0.app j).hom) g",
+    "D0.archiveFintypeDiagram_succ": "D0.archiveFintypeDiagram_succ (n : \u2115) :\n  D0.archiveFintypeDiagram.map (CategoryTheory.homOfLE \u22ef).op = FintypeCat.homMk (D0.archiveProjection n)",
+    "D0.archive_projection_surjective": "D0.archive_projection_surjective (n : \u2115) : Function.Surjective (D0.archiveProjection n)"
+  },
+  "printed_propositions": {
+    "D0.Research.NativeStrictObservableDescent.all_strict_readings_miss_actual_record_difference": "D0.Research.NativeStrictObservableDescent.all_strict_readings_miss_actual_record_difference.{u_1} {\u03b1 : Type u_1}\n  (F : (n : \u2115) \u2192 D0.ArchivePoints n \u2192 \u03b1) (hF : D0.Research.NativeStrictObservableDescent.Compatible F) (n : \u2115) :\n  F n (\u2191D0.Research.NativeStrictObservableDescent.actualBirthRecord n) =\n    F n (\u2191D0.Research.NativeStrictObservableDescent.actualZeroRecord n)",
+    "D0.Research.NativeStrictObservableDescent.base_has_sixteen_points": "D0.Research.NativeStrictObservableDescent.base_has_sixteen_points : Fintype.card (D0.ArchivePoints 0) = 16",
+    "D0.Research.NativeStrictObservableDescent.birthThread_coherent": "D0.Research.NativeStrictObservableDescent.birthThread_coherent (n : \u2115) :\n  D0.archiveProjection n (D0.Research.NativeStrictObservableDescent.birthThread (n + 1)) =\n    D0.Research.NativeStrictObservableDescent.birthThread n",
+    "D0.Research.NativeStrictObservableDescent.compatible_boolean_family_count": "D0.Research.NativeStrictObservableDescent.compatible_boolean_family_count :\n  Fintype.card (D0.ArchivePoints 0 \u2192 Bool) = 65536",
+    "D0.Research.NativeStrictObservableDescent.compatible_ext_of_equal_at_any_level": "D0.Research.NativeStrictObservableDescent.compatible_ext_of_equal_at_any_level.{u_1} {\u03b1 : Type u_1}\n  (F G : (n : \u2115) \u2192 D0.ArchivePoints n \u2192 \u03b1) (hF : D0.Research.NativeStrictObservableDescent.Compatible F)\n  (hG : D0.Research.NativeStrictObservableDescent.Compatible G) (n : \u2115) (hn : F n = G n) : F = G",
+    "D0.Research.NativeStrictObservableDescent.compatible_factors_through_base": "D0.Research.NativeStrictObservableDescent.compatible_factors_through_base.{u_1} {\u03b1 : Type u_1}\n  (F : (n : \u2115) \u2192 D0.ArchivePoints n \u2192 \u03b1) (hF : D0.Research.NativeStrictObservableDescent.Compatible F) (n : \u2115)\n  (x : D0.ArchivePoints n) : F n x = F 0 (D0.Research.NativeStrictObservableDescent.toBase n x)",
+    "D0.Research.NativeStrictObservableDescent.compatible_iff_base_pullback": "D0.Research.NativeStrictObservableDescent.compatible_iff_base_pullback.{u_1} {\u03b1 : Type u_1}\n  (F : (n : \u2115) \u2192 D0.ArchivePoints n \u2192 \u03b1) :\n  D0.Research.NativeStrictObservableDescent.Compatible F \u2194 \u2203 f, F = D0.Research.NativeStrictObservableDescent.fromBase f",
+    "D0.Research.NativeStrictObservableDescent.compatible_same_base_ext": "D0.Research.NativeStrictObservableDescent.compatible_same_base_ext.{u_1} {\u03b1 : Type u_1}\n  (F G : (n : \u2115) \u2192 D0.ArchivePoints n \u2192 \u03b1) (hF : D0.Research.NativeStrictObservableDescent.Compatible F)\n  (hG : D0.Research.NativeStrictObservableDescent.Compatible G) (h0 : F 0 = G 0) : F = G",
+    "D0.Research.NativeStrictObservableDescent.first_birth_and_zero_same_actual_parent": "D0.Research.NativeStrictObservableDescent.first_birth_and_zero_same_actual_parent :\n  D0.archiveProjection 0 D0.Research.NativeStrictObservableDescent.birthOne =\n    D0.archiveProjection 0 (D0.Research.NativeStrictObservableDescent.zeroAt 1)",
+    "D0.Research.NativeStrictObservableDescent.fresh_tail_persists_from_its_birth": "D0.Research.NativeStrictObservableDescent.fresh_tail_persists_from_its_birth (k : \u2115)\n  (x : D0.ArchivePoints (k + 1 + 1)) :\n  D0.Research.NativeStrictObservableDescent.freshTail (k + 1) x =\n    D0.Research.NativeStrictObservableDescent.freshTail k (D0.archiveProjection (k + 1) x)",
+    "D0.Research.NativeStrictObservableDescent.fresh_tail_starts_with_new_test": "D0.Research.NativeStrictObservableDescent.fresh_tail_starts_with_new_test :\n  D0.Research.NativeStrictObservableDescent.freshTail 0 = D0.Research.NativeStrictObservableDescent.freshTest",
+    "D0.Research.NativeStrictObservableDescent.fresh_test_distinguishes_actual_birth": "D0.Research.NativeStrictObservableDescent.fresh_test_distinguishes_actual_birth :\n  D0.Research.NativeStrictObservableDescent.freshTest D0.Research.NativeStrictObservableDescent.birthOne = true \u2227\n    D0.Research.NativeStrictObservableDescent.freshTest (D0.Research.NativeStrictObservableDescent.zeroAt 1) = false",
+    "D0.Research.NativeStrictObservableDescent.fresh_test_has_no_base_pullback": "D0.Research.NativeStrictObservableDescent.fresh_test_has_no_base_pullback :\n  \u00ac\u2203 f, D0.Research.NativeStrictObservableDescent.freshTest = fun x => f (D0.archiveProjection 0 x)",
+    "D0.Research.NativeStrictObservableDescent.fresh_test_has_no_strict_family": "D0.Research.NativeStrictObservableDescent.fresh_test_has_no_strict_family :\n  \u00ac\u2203 F,\n      D0.Research.NativeStrictObservableDescent.Compatible F \u2227 F 1 = D0.Research.NativeStrictObservableDescent.freshTest",
+    "D0.Research.NativeStrictObservableDescent.fromBase_compatible": "D0.Research.NativeStrictObservableDescent.fromBase_compatible.{u_1} {\u03b1 : Type u_1} (f : D0.ArchivePoints 0 \u2192 \u03b1) :\n  D0.Research.NativeStrictObservableDescent.Compatible (D0.Research.NativeStrictObservableDescent.fromBase f)",
+    "D0.Research.NativeStrictObservableDescent.fromBase_injective": "D0.Research.NativeStrictObservableDescent.fromBase_injective.{u_1} {\u03b1 : Type u_1} :\n  Function.Injective D0.Research.NativeStrictObservableDescent.fromBase",
+    "D0.Research.NativeStrictObservableDescent.same_base_fiber_indistinguishable": "D0.Research.NativeStrictObservableDescent.same_base_fiber_indistinguishable.{u_1} {\u03b1 : Type u_1}\n  (F : (n : \u2115) \u2192 D0.ArchivePoints n \u2192 \u03b1) (hF : D0.Research.NativeStrictObservableDescent.Compatible F) (n : \u2115)\n  (x y : D0.ArchivePoints n)\n  (hxy : D0.Research.NativeStrictObservableDescent.toBase n x = D0.Research.NativeStrictObservableDescent.toBase n y) :\n  F n x = F n y",
+    "D0.Research.NativeStrictObservableDescent.toBase_surjective": "D0.Research.NativeStrictObservableDescent.toBase_surjective (n : \u2115) :\n  Function.Surjective (D0.Research.NativeStrictObservableDescent.toBase n)",
+    "D0.Research.NativeStrictObservableDescent.two_actual_records_same_base_distinct": "D0.Research.NativeStrictObservableDescent.two_actual_records_same_base_distinct :\n  \u2191D0.Research.NativeStrictObservableDescent.actualBirthRecord 0 =\n      \u2191D0.Research.NativeStrictObservableDescent.actualZeroRecord 0 \u2227\n    D0.Research.NativeStrictObservableDescent.actualBirthRecord \u2260\n      D0.Research.NativeStrictObservableDescent.actualZeroRecord",
+    "D0.Research.NativeStrictObservableDescent.zeroThread_coherent": "D0.Research.NativeStrictObservableDescent.zeroThread_coherent (n : \u2115) :\n  D0.archiveProjection n (D0.Research.NativeStrictObservableDescent.zeroAt (n + 1)) =\n    D0.Research.NativeStrictObservableDescent.zeroAt n"
+  },
+  "prior_operator_source_sha256": {
+    "03_FORMALIZATION/D0/Algebra/RoleSignature.lean": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf",
+    "03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a",
+    "03_FORMALIZATION/D0/Combinatorics/ForcedReturnWindows.lean": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2",
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseUnfolding.lean": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66",
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+    "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+    "03_FORMALIZATION/D0/Foundation/M1Predicate.lean": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+    "03_FORMALIZATION/D0/Foundation/ObservableCompletionCanonicity.lean": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+    "03_FORMALIZATION/D0/Geometry/A4DSymRoleCentralDifference.lean": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalDirichlet.lean": "1311fb05b81e2131724f096428e177e9c61a97497b8dcec9843912faaaf7a9f6",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCartan.lean": "8c766bd7220764bda3393ec651b20084d9ee9f882da97ffb2c9a13f1be23489b",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean": "7ab9550c7a25464131ec23a21e9eeac9f38eb651ee23c8d65296415aa593ab58",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean": "d004761e6326aae235d1a3488e397750409bc4c03f90c489a6dd18d9971e3e81",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeDiracMetricMismatchNoGo.lean": "678ce9786e8b2f49a6ca81e8a1a788226dd7c0960ab933e98101cefc7126fd71",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLorentzCompatibility.lean": "1ba5fa492c928b34392a07d54a6f81d8554e5898cd91c901430647b655e30c8f",
+    "03_FORMALIZATION/D0/Geometry/ArchiveModeExponent.lean": "fb760656ca2b3ca785a44cb5a80729e0f856221696dd40b7dca8c85d8ff8f95c",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseDistance.lean": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseEdgeMetricScale.lean": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveProductLaplacian.lean": "cef92ba4992610d1ebdc39a896204edadb31a79ea94b24367e513e49105ba77c",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseGroup.lean": "8958fe3103039ce0ad5aa5aa6607578f9dfa3e4717b966b3dea916241aa68442",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseProductCarrier.lean": "f307f30401d4110ab7bb2874e62f84e43e0e35eb7fb9fb7b7844c63f59b97d33",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRoleProductLaplacian.lean": "ac6b1a24b054c76609b5558f76e6f1adf3d8f170dfb4d6475adc8c5ec4414339",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedGraph.lean": "a25daa836eacf57042dd96793da6447098fc85895d464b10f0f1804d2249081d",
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef",
+    "03_FORMALIZATION/D0/Matter/FiniteSelector.lean": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2",
+    "03_FORMALIZATION/D0/Phase.lean": "dd710cf7f37874ac5f06a1a57ca19fa2d9544de6e1bfcf35fed7806ea2b56559"
+  },
+  "scalar_subalgebra_and_Hodge_metric_collapse_kernel_formalized": false,
+  "status": "PASS",
+  "strict_family_and_native_record_binding_kernel_formalized": true,
+  "supported_D0_tree": "fd8dfc359d23c9bd79ca23eeed7c045ce9c68c6b",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+    "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean": "643d0a1ec2c71e15bc3254211e3e24cf6b99fdf48f6ddd43a38848cd28c23307",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLightProfinite.lean": "50955c47df5d2f8f5e7975e01768672e9e806aab6a4f31607e673893afb3885a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef"
+  }
+}

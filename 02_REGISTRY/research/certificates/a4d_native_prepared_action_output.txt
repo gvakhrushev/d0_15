@@ -1,0 +1,140 @@
+D0.Foundation.EndogenousActionQuantum.ActionProtocol (P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol) :
+  Type
+D0.Foundation.VerifiabilityNecessity.VerificationContract
+  (P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol) : Prop
+D0.Research.NativePreparedAction.complete_prepared_action_fiber
+  {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol} {X : Type} (u v : X → P.State) (f : X → ℝ) :
+  (∃ A, ∀ (x : X), A.action (u x) (v x) = f x) ↔ D0.Research.NativePreparedAction.PreparedConditions u v f
+D0.Research.NativePreparedAction.off_diagonal_complete_fiber
+  {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol} {X : Type} (u v : X → P.State)
+  (hoff : ∀ (x : X), u x ≠ v x) (f : X → ℝ) :
+  (∃ A, ∀ (x : X), A.action (u x) (v x) = f x) ↔ (∀ (x : X), 1 ≤ f x) ∧ ∀ (x y : X), u x = u y → v x = v y → f x = f y
+D0.Research.NativePreparedAction.observable_energy_is_extendible
+  {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol} {X : Type} (u v : X → P.State)
+  (hoff : ∀ (x : X), u x ≠ v x) (sigma : X → ℝ) (hfiber : ∀ (x y : X), u x = u y → v x = v y → sigma x = sigma y)
+  (theta : ℝ) (htheta : 0 ≤ theta) : ∃ A, ∀ (x : X), A.action (u x) (v x) = 1 + theta * sigma x ^ 2
+D0.Research.NativePreparedAction.genuine_observable_derivative (theta sigma dsigma : ℝ) :
+  HasDerivAt (fun t => theta * (sigma + t * dsigma) ^ 2)
+    (D0.Research.NativePreparedAction.observableFirstVariation theta sigma dsigma) 0
+D0.Geometry.archiveExteriorFrameLift_vacuum_coeff (L : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace)
+  (ψ : D0.Geometry.ArchiveFockState → ℝ) :
+  (D0.Geometry.archiveExteriorFrameLift L) ψ D0.Geometry.fockVacuumState = ψ D0.Geometry.fockVacuumState
+D0.Geometry.archiveAffineCoChainGauge {N : ℕ} (h : D0.Geometry.AffineNodeGauge N ℝ D0.Geometry.RoleSpace)
+  (ψ : D0.Geometry.ArchiveCochain N) : D0.Geometry.ArchiveCochain N
+D0.Research.NativePreparedAction.ScalarRefinementCompatible (N : ℕ)
+  (R : D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain (N + 1)) : Prop
+D0.Research.NativePreparedAction.one_anchor_full_gate_iff (N : ℕ) (psi : D0.Geometry.ArchiveCochain N) :
+  D0.Research.NativePreparedAction.OneAnchorGate N psi ↔ D0.Research.NativePreparedAction.sigma N psi 0 = 0
+D0.Research.NativePreparedAction.two_anchor_full_gate_iff (N : ℕ) (psi : D0.Geometry.ArchiveCochain N) :
+  D0.Research.NativePreparedAction.TwoAnchorGate N psi ↔
+    D0.Research.NativePreparedAction.sigma N psi 0 = 0 ∧ D0.Research.NativePreparedAction.sigma N psi 1 = 0
+D0.Research.NativePreparedAction.common_background_joint_root_difference {Y D : Type} [Nonempty D] (N : ℕ) (J : Y → ℝ)
+  (curves : Y → D → ℝ → Y) (b : Y) (hbase : ∀ (d : D), curves b d 0 = b)
+  (hJ : ∀ (d : D), DifferentiableAt ℝ (fun t => J (curves b d t)) 0)
+  (hg : D0.Research.NativePreparedAction.GeometryGate J curves b) :
+  D0.Research.NativePreparedAction.JointGate J curves (D0.Research.NativePreparedAction.oneAnchorEnergy N) b
+      (D0.Research.NativePreparedAction.anchorDirection N 1) ∧
+    ¬D0.Research.NativePreparedAction.JointGate J curves (D0.Research.NativePreparedAction.twoAnchorEnergy N) b
+        (D0.Research.NativePreparedAction.anchorDirection N 1)
+D0.Research.NativePreparedAction.genuine_joint_gate_iff {Y D : Type} [Nonempty D] {N : ℕ} (J : Y → ℝ)
+  (curves : Y → D → ℝ → Y) (E : D0.Geometry.ArchiveCochain N → ℝ) (b : Y) (psi : D0.Geometry.ArchiveCochain N)
+  (_hbase : ∀ (d : D), curves b d 0 = b) (hJ : ∀ (d : D), DifferentiableAt ℝ (fun t => J (curves b d t)) 0)
+  (hE : ∀ (direction : D0.Geometry.ArchiveCochain N), DifferentiableAt ℝ (fun t => E (psi + t • direction)) 0) :
+  D0.Research.NativePreparedAction.JointGate J curves E b psi ↔
+    D0.Research.NativePreparedAction.GeometryGate J curves b ∧ D0.Research.NativePreparedAction.MatterGate E psi
+D0.Research.NativePreparedAction.NativeBackground (N : ℕ) : Type
+D0.Research.NativePreparedAction.payloadProtocol (N : ℕ) : D0.Foundation.VerifiabilityNecessity.VerificationProtocol
+D0.Research.NativePreparedAction.jointPayloadAction (N : ℕ)
+  (J : D0.Research.NativePreparedAction.NativeBackground N → ℝ) (m : ℝ)
+  (hJ : ∀ (b : D0.Research.NativePreparedAction.NativeBackground N), m ≤ J b) (E : D0.Geometry.ArchiveCochain N → ℝ)
+  (hE : ∀ (psi : D0.Geometry.ArchiveCochain N), 0 ≤ E psi) :
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol (D0.Research.NativePreparedAction.payloadProtocol N)
+D0.Research.NativePreparedAction.actual_scalar_block_preserves_sigma (N : ℕ)
+  (R : D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain (N + 1))
+  (hR : D0.Research.NativePreparedAction.ScalarRefinementCompatible N R) (psi : D0.Geometry.ArchiveCochain N)
+  (k : Fin 2) :
+  D0.Research.NativePreparedAction.sigma (N + 1) (R psi) k = D0.Research.NativePreparedAction.sigma N psi k
+D0.Research.NativePreparedAction.actual_affine_node_gauge_preserves_sigma {N : ℕ}
+  (g : D0.Geometry.AffineNodeGauge N ℝ D0.Geometry.RoleSpace) (psi : D0.Geometry.ArchiveCochain N) (k : Fin 2) :
+  D0.Research.NativePreparedAction.sigma N (D0.Geometry.archiveAffineCoChainGauge g psi) k =
+    D0.Research.NativePreparedAction.sigma N psi k
+D0.Research.NativePreparedAction.scalar_compatible_refinement_preserves_gates (N : ℕ)
+  (R : D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain (N + 1))
+  (hR : D0.Research.NativePreparedAction.ScalarRefinementCompatible N R) (psi : D0.Geometry.ArchiveCochain N) :
+  (D0.Research.NativePreparedAction.OneAnchorGate (N + 1) (R psi) ↔
+      D0.Research.NativePreparedAction.OneAnchorGate N psi) ∧
+    (D0.Research.NativePreparedAction.TwoAnchorGate (N + 1) (R psi) ↔
+      D0.Research.NativePreparedAction.TwoAnchorGate N psi)
+D0.Research.NativePreparedAction.both_native_energies_are_verified_cost_readings (N : ℕ) :
+  ∃ A B,
+    ∀ (z : D0.Research.NativePreparedAction.NativePayload N),
+      A.action (false, z) (true, z) = 1 + D0.Research.NativePreparedAction.oneAnchorEnergy N z.2 ∧
+        B.action (false, z) (true, z) = 1 + D0.Research.NativePreparedAction.twoAnchorEnergy N z.2
+def D0.Research.NativePreparedAction.ScalarRefinementCompatible : (N : ℕ) →
+  (D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain (N + 1)) → Prop :=
+fun N R =>
+  ∀ (psi : D0.Geometry.ArchiveCochain N) (x : D0.Geometry.ArchiveRolePhaseGroup (N + 1)),
+    D0.Geometry.scalarComponent (N + 1) (R psi) x =
+      D0.Geometry.scalarComponent N psi (D0.Research.NativePreparedAction.groupProjection N x)
+'D0.Research.NativePreparedAction.extension_on_preparation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.complete_prepared_action_fiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.preparation_collision_is_record_collision' depends on axioms: [propext]
+'D0.Research.NativePreparedAction.off_diagonal_complete_fiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.canonical_prepared_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.observable_energy_is_extendible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.genuine_observable_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.anchor_injective' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativePreparedAction.anchor_site_injective' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativePreparedAction.anchor_direction_readout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.actual_affine_node_gauge_preserves_sigma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.literal_projection_preserves_anchors' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativePreparedAction.group_projection_preserves_anchors' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativePreparedAction.actual_scalar_block_preserves_sigma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.energy_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.full_cochain_one_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.full_cochain_two_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.one_anchor_full_gate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.two_anchor_full_gate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.genuine_root_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.same_native_gauge_cannot_remove_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.scalar_compatible_refinement_preserves_actions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.scalar_compatible_refinement_preserves_gates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.background_source_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.common_background_joint_root_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.genuine_joint_gate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePreparedAction.payload_verification_contract' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.payload_prepared_edge_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.joint_payload_prepared_edge_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePreparedAction.both_native_energies_are_verified_cost_readings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

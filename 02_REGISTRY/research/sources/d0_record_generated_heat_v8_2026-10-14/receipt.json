@@ -1,0 +1,49 @@
+{
+  "schema": "d0-v8-record-generated-heat/1",
+  "status": "PASS",
+  "exact": {
+    "exact_conditions": 334,
+    "negative_conditions": 7
+  },
+  "interval": {
+    "root_center": [
+      "0.063635191594344535042829697433316630182693569761541",
+      "0.0040167350432317252873844519148251220686807163526359"
+    ],
+    "root_radius": "1e-12",
+    "source_equations": "all ten homogeneous metric; local via translation; full isometric return class",
+    "L": 8,
+    "rounds": 8192,
+    "beta": "2*p^2",
+    "alpha": "p^2/8192",
+    "fugacity": "2^-20",
+    "Fock_dimension": 16,
+    "purifying_reference_dimension": 128,
+    "feedback_multiplicity": 2048,
+    "workspace_dimension": "128^8192",
+    "workspace_thermal_multiplicity_retained": true,
+    "matter_operator": "Delta, not log generator",
+    "contraction_upper": "1e-6",
+    "next_shell_gap_lower": ".5"
+  },
+  "continuum": {
+    "limiting_a_interval": [
+      "1.80",
+      "1.82"
+    ],
+    "radial_derivative_upper": "-.67",
+    "offdiagonal_feedback_ratio_upper": ".005",
+    "infinite_gaussian_tails_included": true,
+    "all_sufficiently_large_periodic_levels": "analytic C1/implicit-function consequence; not native AF bonds"
+  },
+  "physical_native_admission": false,
+  "old_state_conditioned_J_identification": false,
+  "stable_minimum": false,
+  "native_AF_refinement": false,
+  "Einstein_GR": false,
+  "new_Lean": false,
+  "total_conditions": 470,
+  "checks_sha256": "5d688e2e72eeb6f602242e6ddc2e9c37b15beab9c42d61de5b3c392d972fa417",
+  "source_sha256": "d1ec656da2af8b7ea362acba4c952c2a92a83d58376abbd70192601c6a6ba8ac",
+  "proof_sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c"
+}

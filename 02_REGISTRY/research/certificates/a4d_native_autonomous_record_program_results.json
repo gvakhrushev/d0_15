@@ -1,0 +1,92 @@
+{
+  "actual_command": [
+    "/Users/grigorijvahrusev/.elan/bin/lake",
+    "env",
+    "lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_autonomous_record_program.lean"
+  ],
+  "actual_cwd": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION",
+  "axioms": {
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.complete_switch_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.complete_switch_two_ticks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.consecutive_gram_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.forward_echo": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.full_four_branches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.golden_both_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.golden_scene_feedback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.no_fixed_inner_product_preserver": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.AutonomousRecordProgram.two_tick_golden_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule_sha256": "8b2ccb53ce1d7c1a969dd9a7b9444caf544b3265fd9f38508b5cc088eb855c9c",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_autonomous_record_program.lean"
+  ],
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.AutonomousRecordProgram.forward_echo",
+    "D0.Research.AutonomousRecordProgram.golden_both_orthogonal",
+    "D0.Research.AutonomousRecordProgram.full_four_branches",
+    "D0.Research.AutonomousRecordProgram.complete_switch_orthogonal",
+    "D0.Research.AutonomousRecordProgram.complete_switch_two_ticks",
+    "D0.Research.AutonomousRecordProgram.consecutive_gram_gap",
+    "D0.Research.AutonomousRecordProgram.no_fixed_inner_product_preserver",
+    "D0.Research.AutonomousRecordProgram.golden_scene_feedback",
+    "D0.Research.AutonomousRecordProgram.two_tick_golden_loss",
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal"
+  ],
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "output_sha256": "f5bec1d38629657c8f12a34b69dda1a1f2e749c9e6396d0851849dde3ee9bda9",
+  "scope": "9 generic kernel propositions: fixed forward echo and full four branches, complete switch isometry/return, actual seed Gram obstruction, composed feedback and golden two-tick loss. Full 718-history spectral binding is analytic/exact-certificate evidence; no physical admission, supported CORE registration or D0.All claim.",
+  "status": "PASS"
+}
