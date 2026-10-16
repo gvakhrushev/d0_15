@@ -1,0 +1,56 @@
+{
+  "analytical_reviews": {
+    "all24_connection_and_curved_cone_source": "PASS geometry_consumer and capsule_check",
+    "calibration_and_AF_scope": "PASS native_bridge and capsule_check",
+    "factorization_and_true_adjoint": "PASS geometry_consumer and capsule_check",
+    "finite_stencil_price_and_source_two_jet": "PASS native_bridge; nonzero A1 principal coefficient independently checked by geometry_consumer",
+    "same_matter_P1_inverse_and_R_source": "PASS capsule_check with chain-rule correction consumed"
+  },
+  "date": "2026-10-16",
+  "final_execution": {
+    "exact_groups": 25,
+    "metadata_correction": "coordinate-form amplitude row is not raw P1-bound matter stationarity; final normal/optimized runs use corrected output",
+    "normal": "PASS",
+    "optimized": "PASS",
+    "result_sha256": "bb24c64704debd242d388804a697c98050384b90c4b7f831be616fbe3265fd9f",
+    "stdout_byte_identical": true
+  },
+  "inputs_sha256": {
+    "02_REGISTRY/research/A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md": "861eb7b753d333b8b51de55145a9a0078773854a74f0f619baa13056604d0eb9",
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
+    "02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md": "7b82d30d0d8ec451f768bf0b92aa0e4daaad1f2600497ae7d855bf370c96a338",
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md": "4b69c188dcb3571429f4b45eddb1713621014de260c6e8b2095cc2907d9e4730",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md": "e596c3d2ae0e15a17566f9cfe21b08db2f347faf2c1d2a8b066cf16a82acbedb",
+    "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md": "badfe4177ddcd90f9b138419b84afa8f828574c7b7d191df5fec8f266f1130f9",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c"
+  },
+  "new_artifacts_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md": "34c801176026f4e89868eb258183b96286724fade4c9d80d98669edd011f76b1",
+    "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/README.md": "785d27a2af672a81ce695ec2b3f9a48d6baea0249c20e8ab32d74071cd9b4e76",
+    "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/RESULTS.json": "bb24c64704debd242d388804a697c98050384b90c4b7f831be616fbe3265fd9f",
+    "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/check_causal_cone_source.py": "3dd6e594e106f7bb5f6453bf9ab5f1bfc34dd4cf891d7d2fa83531b6353c059a"
+  },
+  "old_scientific_replays": [],
+  "schema": "d0-causal-metric-source-validation/1",
+  "scope": {
+    "P1_reference128_binding_proved": false,
+    "existing_boost_readout_promoted_to_action": false,
+    "full16_and_reference_workspace_kept": true,
+    "full_joint_root_existence_proved": false,
+    "physical_GR_or_original_terminal_closed": false,
+    "same_declared_price": true,
+    "uniform_C1_h2_remainder_proved": false
+  },
+  "source_checkpoint": "a1ca6f547b9b6876c4e31801665573a1734aa65f",
+  "structural_guards": {
+    "agent_protocol": "PASS",
+    "diff_check": "PASS",
+    "new_local_links": 12,
+    "repository": "PASS warnings=0",
+    "work_plane": "PASS",
+    "work_views": "PASS stale=0"
+  }
+}

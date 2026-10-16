@@ -116,6 +116,21 @@ the original h^-2 comparator estimate. The new consumer is equality of
 this definite full continuum source to the intrinsic Einstein source,
 with the actual admission/clock/measure law and matter.
 
+The [causal metric/source bridge](A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md)
+now supplies the missing type distinction: on arbitrary24-component
+Lorentz connections the full continuum operator factors exactly through
+positive G, coordinate torsion, measure and the same form matter. Three
+Lorentz-cone directions remain invisible when observer and matter are
+independent. The existing P1 law, when read from that SAME real16 matter,
+constructively recovers g and transfers these directions to genuine matter
+tests; its actual R-source is computed. A reference128 purification is not
+a4-vector, so its native readout/chain rule must be derived. The retained
+boost observable already distinguishes the cone, but has no registered
+price binding. Finite h² effects are not excluded by continuum blindness:
+the complete candidate coefficient now retains normalizer, clock and
+preparation jets. Its uniform raw C1 remainder and actual admitted branch
+are the next estimate, rather than another old-root or heat-value replay.
+
 The coordinated [stored metric-image calculation](sources/d0_native_gr_source_image_2026-10-16/RESULT_RU.md)
 computes the permitted ranks10/9/8/7/5 and a surviving Bianchi-compatible
 source. A conformal row completes one fixture but fails an exact exceptional

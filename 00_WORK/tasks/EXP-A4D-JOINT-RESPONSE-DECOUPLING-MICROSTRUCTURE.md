@@ -198,6 +198,26 @@ independent analytical review of the spatial/raw-source/matter proofs.
 No old root/kernel/Lean replay. Write paths: this brief, primary/route/
 README, the existing coframe bridge consumer, the new owner/source folder.
 
+The next source-identification premise is now sharpened by
+`A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md` and its new bounded packet
+`sources/d0_causal_cone_source_2026-10-16/`. Actual all24-connection
+coordinate-form factorization identifies the exact causal information
+missing from independent-observer continuum H+J+R. The SAME-matter P1
+inverse/differential and explicit existing R pullback source supply a
+constructive binding; the full reference128 readout is not assumed. The
+already-owned boost observable supplies distinguishing retained data,
+not a new action. Actual finite stencil/price two-jet formulas retain
+moving global normalizer, clock and preparation, with a uniform C1 raw
+h² remainder still needed. Consumer: that precise source estimate and
+common native observer/reference/price map, not signature renaming or a
+repeated old family census. Original fixed-g/tau/h^-2 terminal and all
+physical admission/existence requirements remain unchanged. Smallest
+checks: full16 coordinate isometry/Cartan on all24 directions, full ten
+Ricci/source rows of a curved-cone family, P1 same-state inverse/actual
+matter source and retained boost signal; independent source/coefficient
+review. Write paths: this brief, README/primary/route, the new owner and
+its source folder. No old root/kernel/Lean replay or task/claim promotion.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
