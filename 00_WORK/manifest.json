@@ -81,28 +81,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-RAW-SOURCE-PRECISION-BUDGET.md"
     },
     {
-      "id": "WRK-A4D-MV-FULL-RANK-SPAN",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify that Tr(S M)=0 for every traceless S orthogonal to J_1,J_2,J_3 is equivalent to M in span{I,J_1,J_2,J_3}, with a witness and a negative control, without using the field kernel.",
-      "brief": "00_WORK/tasks/WRK-A4D-MV-FULL-RANK-SPAN.md"
-    },
-    {
-      "id": "WRK-A4D-MV-RANK8-WITNESS",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify that M chi = lambda chi + sum beta_r J_r chi is strictly weaker than the full-rank span condition, with an explicit operator that passes on chi and fails at full rank.",
-      "brief": "00_WORK/tasks/WRK-A4D-MV-RANK8-WITNESS.md"
-    },
-    {
       "id": "WRK-A4D-VK-DIMENSION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -121,7 +99,7 @@
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Certify max Tr(sigma J(t)) = ||C(t)||_* and the support criterion |t\u00b7y| <= ||C(t)||_*, with a rank-at-most-2 density, without nonlinear continuation.",
+      "exit_condition": "Certify max Tr(sigma J(t)) = ||C(t)||_* and the support criterion |t·y| <= ||C(t)||_*, with a rank-at-most-2 density, without nonlinear continuation.",
       "brief": "00_WORK/tasks/WRK-A4D-FORCE-NUCLEAR-NORM.md"
     },
     {
