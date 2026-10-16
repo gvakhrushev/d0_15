@@ -35,9 +35,10 @@ Current gravity packets:
 - `A4D_CONE_SOURCE_BALANCED_PREPARATION.md` — full33-Fourier/all10metric/all24torsion leading equations; fixed-jet all-rank obstruction and arbitrary-real-fieldjet faithful cokernel.
 - `A4D_GHZ_CONE_JOINT_FIRST_CORRECTOR.md` — actual full16 leading scale and complete common vacuum/top first-jet classification: field balance contradicts the uniform amplitude gap; common real E0 route exhausted, with native preparation-domain boundaries retained.
 - `A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md` — actual observer/link/preparation elimination at all10 constant physical metrics; rank7 positive reduced metric source and same-R constant-volume witness.
-- `A4D_CONE_REAL_E0_FIELD_CORRECTION.md` — balanced real rank8 cone preparation is obstructed after arbitrary real first field corrections; necessary vacuum/top support, with the GHZ equations still open.
+- `A4D_CONE_REAL_E0_FIELD_CORRECTION.md` — balanced real rank8 cone preparation is obstructed after arbitrary real first field corrections; its necessary vacuum/top support is consumed by the complete joint-cone calculation above.
 - `A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md` — exact full-experiment coordinate Ward and conditional metric descent; actual retained section and locality are required.
 - `A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md` — actual permanent first-exit Julia/Walsh event, both golden ports, derived1/256 clock coefficient and one-cone EH/source identity; no new price or physical admission.
+- `A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md` — complete three-field causal principal source; unique positive coherent detector on labels16/8/24 after the longitudinal gauge test, fixed EH coefficient1/192 and full source; its physical realization/price and nonlinear all10 completion remain open.
 - `A4D_SECOND_ORDER_HEAT_REMAINDER.md` — controlled fixed-beta second-order heat/source expansion with explicit graph, Galerkin, cyclic-row and clock bounds; no physical comparator or matter continuation is assumed.
 - `A4D_RAW_LINK_COTANGENT_JET.md` — exact noncommuting parallel-path/raw-link conversion through h², both adjoint pairings and moving density; inverse coefficient1/12.
 - `A4D_CONE_PREPARATION_FIRST_CORRECTOR.md` — full128 resonant matrix excludes unchanged faithful amplitude continuation on the exact-LC winding cone, not all prepared branches.

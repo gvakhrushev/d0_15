@@ -156,6 +156,18 @@ this fine record; full native Cost−Info binding remains to be derived.
 Use this actual observable in that binding, without adding a desired action
 term or mistaking one cone row for all10 Einstein equations.
 
+Its [complete causal principal consumer](A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md)
+now makes that interface concrete on all three cone fields. The diagonal
+role probabilities fail a static longitudinal gauge probe. Preserving the
+coherence of the existing labels16/8/24 gives a positive projector with
+quadratic reading `-(1-exp(-beta/s^2)) I_EH^[2]/(192s^4)` and the full
+three-field curl source. Among fixed positive detectors on those three
+labels, the gauge-null condition determines this direction up to scale.
+This is a response quotient, not a requirement to reconstruct every
+coframe jet. The matrix observable does not establish an admitted native
+detector or its Cost−Info price; those are the next concrete inputs to
+physical binding, followed by nonlinear/all10 completion and joint refinement.
+
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
 strictly positive on a longitudinal germ with all10 linearized Einstein

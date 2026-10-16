@@ -88,6 +88,31 @@
     },
     "source_ref": "caa90af1f67a06dab46704c80031ad98a2de699b"
   },
+  "complete_retained_causal_principal_checkpoint": {
+    "base": "5299ddf1bf0e81b28252acf9f2729b1947cc3292",
+    "conclusion": "Coherent projector on existing labels16/8/24 yields -(1-exp(-beta/s^2))*I_EH^[2]/(192*s^4); diagonal role probabilities cannot; positive three-label detector unique up to scale under longitudinal null condition.",
+    "consumer": "Front A retained-program to geometric source: full three-field principal quotient, concrete coherent detector/source interface",
+    "latest_user_input_alias": {
+      "latest_attachment_byte_identical": true,
+      "path": "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt",
+      "sha256": "ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61"
+    },
+    "new_exact_checks": 80,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Native coherent detector implementation/physical price, actual stationary preparation, nonlinear/all10 source and joint refinement; original fixed-g/tau/raw terminal unchanged.",
+    "rejected_mutations": 4,
+    "sha256": {
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md": "72308a00ceca9d1e23d0773f025e2ecb14456d790c05a4d7c33e847174fe7e97",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/MUTATIONS.json": "ee4304ecc887550de73b75a6fa7f680574bfe66f496077442fb915e5773dc13c",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/NOTES_RU.md": "7f456accc6201afae135cdf846c44caf74f8b63a84c64393aa93e88203ff1116",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/README.md": "dfb89b826f02a068a5f6a0a06afb5e275a27a50af4ebb2487b9b17d827a9a462",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/RESULTS.json": "2b015434c676d33204d6950f4ca1df2473a9b68851f4b40e5d49b22a1e72148e",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/VALIDATION.json": "840543a271fcc54d580145972e8de54223189c09346c4504c6268a2b984d55d5",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_principal.py": "7f57f6e325defd8fda3e85667cf040f061ef8dba6a0897a127385ed8de49380d",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/test_mutations.py": "1eafeb98f55d9b3579f5e1d2ca10345064048db37d971ebf8e69bc2d3feff909"
+    }
+  },
   "consumers": {
     "curved_tensor": "projected16 actual curvature source; elliptic coefficient-level inverse/local variable isolation, not fullprice or Lorentz closure",
     "flat_moduli": "finite genuine-root second-response mismatch rules out unqualified EH+Lambda+sameR identity; fixedbeta theta source retains global shape",

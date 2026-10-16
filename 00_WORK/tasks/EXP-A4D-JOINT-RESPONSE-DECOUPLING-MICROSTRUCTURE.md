@@ -358,6 +358,48 @@ field-image witness; actual Walsh/comparator/event order, full16 cone Gram
 and native clock factor; independent source/limit review. No old expensive
 catalogues/roots/Lean replay, new task or physical claim.
 
+## Complete retained causal-jet consumer — 2026-10-17
+
+Statement: compute the principal first jet of the existing fine Julia/Walsh
+history on all three causal-cone fields near the flat cone, with all16 form
+components, all word/coefficient outputs and both golden ports retained.
+Determine its kernel and the full spatial Fourier source; compare it to the
+intrinsic Einstein-Hilbert Hessian, including longitudinal probes. A readout
+is not adopted as a physical price. Higher stencil jets and arbitrary
+coherent history prices are outside this principal statement.
+
+Inputs: current branch `5299ddf1bf0e81b28252acf9f2729b1947cc3292`,
+`A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md`, its pinned creator/Julia definitions,
+`A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md` and the coframe reconstruction.
+These are research results, not physical-selection or GR-closure premises.
+The supplied scalar-weight/contorsion claim is already tested in
+`A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md` §1; do not repeat that audit.
+
+Common objects: `e=s O`, `O=exp(sum_a theta_a R_0a)`, positive metric
+`G=s^2 I`, true LC transport, unchanged uniform Julia32 and golden clock,
+the faithful first128-shell preparation and normalized existing first-exit
+effects. Compare principal smooth quadratic forms at theta=0, with their
+actual clock and scale factors, under periodic/compact boundary conditions.
+
+Consumer: Front A's retained-program → complete geometric source arrow.
+The earlier transverse one-cone comparison removes only one source row;
+this calculation decides whether that same observable supplies the full
+three-field causal principal source, rather than assuming an EH identity.
+It does not change Front B's original fixed-g/tau/all10/raw h^-2 terminal.
+
+Write surface: root owns
+`A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md`,
+`sources/d0_retained_causal_principal_2026-10-17/`, and the existing common
+consumers. Read-only helpers independently derive the full16 CAR map,
+the Einstein Hessian, and all-output Julia derivative. The other authorized
+chat retains ownership of preparation/physical-action work.
+
+Decisive check: one exact symbolic full16 component calculation of the
+linear map, Walsh quadratic form and full3 Fourier symbol, with a
+longitudinal pure-gauge Hessian probe and a transverse normalization probe.
+Check the actual defect-root derivatives before extending a selected-label
+kernel to all outputs. Do not replay old roots, spectral suites or Lean.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
