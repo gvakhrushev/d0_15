@@ -103,17 +103,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-TRANSVERSE-MATCHING-RESIDUAL.md"
     },
     {
-      "id": "WRK-A4D-PF-MEASURE-SOURCE-TRANSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Prove an explicit finite C1 pushforward/source-error bound for supplied history-to-cell maps and normalized weights, including moving partitions; identify the precise native-map input rather than choosing it.",
-      "brief": "00_WORK/tasks/WRK-A4D-PF-MEASURE-SOURCE-TRANSPORT.md"
-    },
-    {
       "id": "WRK-A4D-ANISOTROPIC-NORMAL-SOURCE",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
