@@ -59,3 +59,16 @@ then carries all coframe/link/measure equations to a nonflat conditional
 Einstein–scalar control. This is not a substitution of Lorentz Palatini for
 the compiler's actual positive-record curvature price. Native full action,
 clock/update admission, observer terms and the flat-shear boundary remain open.
+
+## Coherent aggregation before the complete central price
+
+The [central-record theorem](../../A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md)
+constructs a different final program: actual signed Lorentz path overlaps feed
+one effect on both whole AF blocks. The literal full terminal price then has
+all geometric Euler rows equal to one strictly positive multiple of the given
+star-action rows, exactly rather than through a curvature expansion. It keeps
+all preparation ranks, the geometric record spectator and its code cost. Its
+faithful preparation has a computed tail tilt; both spatial reading and its
+first source converge under the child-clock construction. This is realizability
+and exact source equivalence, not proof that D0 physically selects this global
+program or that the original native GR/refinement terminal is closed.
