@@ -1,0 +1,58 @@
+{
+  "schema": "d0-full-lorentz-positive-adjoint-source-validation/1",
+  "publication_parent_ref": "7883d390787a0265b52dff938f4cb59ff5180e17",
+  "observed_main_ref": "eebda6fcf35bf022b897c2f41554ada0c0282da6",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T17:02:56.273918+00:00",
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/full_lorentz_boost_source_check.py",
+    "python3 -O 02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/full_lorentz_boost_source_check.py"
+  ],
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+  "scientific_output_sha256": "8920803d185af11132dfa274a42d0e307ad43db150ef8e87d7ab83c9bf2f4d0d",
+  "scientific_output_bytes": 9134,
+  "new_exact_checks": 89,
+  "old_4096_matrix_root_or_Lean_runs_replayed": false,
+  "analytical_proofs": {
+    "fixed_forward_true_adjoint_and_gauge_covariance": "owner Sections1,3",
+    "local_nonnormal_Julia_32label_compiler": "owner Section2; independently reviewed; not a literal old SELECT identity",
+    "same_alpha_128_outcomes_reference_and_retained_workspace": true,
+    "faithful_full_first_stationarity": "owner Section4 consumes existing root coframe moments with fullZ",
+    "E0_product_preparation_classification": "all12 boost rows zero iff n0=ns=1/2; helper verifies every compression and strict minor",
+    "balanced_rank8_full_first_stationary_root": "owner Section5; normalized full preparation equations retained",
+    "old_hessian_kernel_or_autonomous_orbit_transferred": false
+  },
+  "peer_review": "independent positive-adjoint/covector/normalizer and stationarity review; independent Julia/locality/register/defect-jet/compiler review; all source polynomials checked on full16 CAR",
+  "scope": {
+    "bounded_general_proper_Lorentz_matrix_interface": true,
+    "conditional_tested_v8_scalar_price_only": true,
+    "fixed_existing_raising_part_premise": true,
+    "native_generator_admission_or_full_controller_cost_derived": false,
+    "selected_physical_extension_or_Einstein_equation": false,
+    "original_fixed_g_fixed_tau_raw_terminal_closed": false
+  },
+  "sha256": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/rank8_source_submersion.py": "04d5fba2d34538e2c7e4b41748fafb4e88e041174f4380bd0e7990111ffc6afd",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "0ca27a97b7e8fa5653242415c4bcbe0e946fccd95bb277024fcbe79222c927a8",
+    "02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md": "7b82d30d0d8ec451f768bf0b92aa0e4daaad1f2600497ae7d855bf370c96a338",
+    "02_REGISTRY/research/A4D_NATIVE_JOINT_ADJOINT_SOURCE.md": "19b5062c1af8281c219de5c0ef6b70d7790922201c8f3c71b4472a18345c404d",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md": "cde5e61d6d454e8fbdf5ff88bc2e81ce358a3d5f17bdd77211696ae5f4c37392",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
+    "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/full_lorentz_boost_source_check.py": "5cf53fc8e901b51f58024eadb7de282c68008f1be304185d9d16a6c12a44be32",
+    "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/RESULTS.json": "8920803d185af11132dfa274a42d0e307ad43db150ef8e87d7ab83c9bf2f4d0d"
+  },
+  "structural_guards": {
+    "repository": "PASS warnings=0",
+    "work_plane": "PASS",
+    "agent_protocol": "PASS",
+    "work_views": "PASS stale=0",
+    "diff_and_new_links": "PASS"
+  }
+}

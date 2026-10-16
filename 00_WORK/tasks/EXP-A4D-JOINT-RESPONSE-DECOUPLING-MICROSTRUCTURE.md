@@ -84,6 +84,41 @@ published SOURCE; no new Lean-owner research, claim or BOOK promotion is added.
 Smallest check: exact input/definition identity for a byte-preserving import;
 for a changed calculation, its affected consumer and a hostile control.
 
+The observer/holonomy boundary also requires a full Lorentz-source interface.
+Bounded premise in this same continuation: for the fixed existing forward
+creation/transport operator, derive its true positive-adjoint completion on
+general proper Lorentz links and the transverse source of the same declared
+finite v8 scalar price. Inputs are the full source Sections0/0.2/0.3/4,
+joint-adjoint interface and observer-holonomy owner at7883d390. Retain full16,
+all4096 thermal modes, reference128, original fixed calibrations and every
+observer/matter derivative. Preserve the old literal stored operator and its
+restricted root/kernel theorems; agreement there alone does not select an
+extension. Fixed raising part plus positive selfadjointness is the stated
+conditional uniqueness premise, not a physical admission theorem.
+
+Consumer: the missing full Lorentz/observer-comparison covector in the
+programme's GR route. Decisive check: compute all12 new homogeneous boost
+rows at the existing faithful and actual rank8 seeds by full16 CAR and the
+eight occupied momenta; determine whether the old roots remain stationary
+in this conditional enlarged matrix interface. No new action term, fitted
+source, root search or broad spectrum replay. Write paths are the new
+`A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md`,
+`sources/d0_full_lorentz_adjoint_2026-10-16/`, this brief and primary synthesis.
+Any signed matrix gate construction must retain its workspace and distinguish
+the v8 scalar price from full native controller/history cost and admission.
+
+This premise now has an explicit local Julia32-label implementation, using
+the same coefficient qubit/golden port/128 outcomes, fixed alpha and tested
+v8 scalar price. Full16 exact source compression gives all12 homogeneous
+boost rows. The faithful root remains stationary on the canonical-adjoint
+full-Lorentz domain. Within product E0 preparations the full first equations
+hold exactly iff time and each spatial occupation are1/2; a balanced pure
+rank8 witness is explicit. The old pure chi fails these extra equations;
+its stored-sector kernel and mixed-path theorem retain their original scope.
+Consume the new source owner's Sections4–6. The remaining programme arrow
+is native generation/preparation/outcome/price for the explicit onsite
+matrix gates, not another old-root spectrum or a fitted boost source.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

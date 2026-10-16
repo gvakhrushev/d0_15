@@ -30,6 +30,7 @@ record results below is substituted for that terminal. The historical
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
 | The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
+| A fixed-forward positive-adjoint completion now has an explicit local full-Lorentz matrix instrument, the same tested v8 scalar price and all transverse sources. The faithful seed remains critical; the old pure seed fails the new boost rows. Two derived occupation balances characterize stationary homogeneous E0 preparations, with an explicit balanced rank8 root on the same geometry. | [Full Lorentz source](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md). The original native primitives must generate its onsite matrix gates, adjoints, preparations and outcomes with their full retained-history cost. This does not select a physical extension or transfer the stored-sector kernel to the new state/domain. |
 | The complete faithful finite joint kernel and local critical locus are classified: all Fourier blocks are solved, and every nearby solution lies in the exact flat family with the density and three extra Lorentz-Gram moduli retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Section11. Small nonflat continuation from this same full-rank root is excluded. The next input is rank-free native preparation/joint dynamics; physical admission and refinement remain open. |
 | The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
 | The three homogeneous connection-source components have an exact attainable-set support function at the fixed root; a pure preparation explicitly realizes an ellipsoid inside it. Rank-aware equations retain every preparation Euler row. | [Source capacity and nonlinear selection](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md). Consume at the rank8 boundary or preparation-distant stationary points after the faithful local classification. This is not a full field source inverse; a frozen-preparation spectral crossing is not a coupled branch. |
@@ -62,6 +63,27 @@ connection with the full price/source map. Path/observer-fibre isometry
 is an algebraic interface, not admission of a new physical process; the
 own-leg adjoint condition remains an additional boundary. Its narrow
 65-check packet is preserved by source identity without replay here.
+
+The [new positive-adjoint construction](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md)
+now resolves the explicit matrix/source part of the first route for a fixed
+forward operator. Local Julia dilations use the same32 labels, coefficient
+qubit, golden port and retained128 outcomes; no global square root of Delta
+or new calibration is required. The complete v8 scalar function and all
+observer/matter/normalizer derivatives are retained. This supplies a
+specific generator/adjoint/outcome/price diagram for native admission;
+that diagram is not established by matrix constructibility alone.
+
+The new source also changes which preparations are roots. At the same
+homogeneous geometry, every full Lorentz boost row vanishes in the
+product E0 class exactly when time occupation and each spatial occupation
+are both1/2. These are derived Euler equations. The old chi=(mask1+mask15)/sqrt2
+fails them; chi_bal=(mask0+mask1+mask14+mask15)/2 satisfies them and is a
+rank8 joint root of this declared matrix interface with reference128.
+The earlier old-chi classification and interior-kernel theorem remain
+results of the stored sector. They do not classify the new full-Lorentz
+domain or prove a native preparation law for chi_bal. The immediate
+programme obligation is the actual native generation and full retained
+price of the explicit onsite comparison gates.
 
 The next common-process statement must satisfy these obligations on the
 same admitted fields. Its remainder cannot be defined as the difference
