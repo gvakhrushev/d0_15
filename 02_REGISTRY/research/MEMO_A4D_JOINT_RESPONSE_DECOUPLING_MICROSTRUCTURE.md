@@ -4885,3 +4885,51 @@ is not reopened. Its selection and primitive implementation by the complete
 native AF/CAR action remain distinct from its algebraic existence. The
 actual retained-source observable is preserved independently, rather than
 defined by subtracting a desired Einstein term.
+
+## One complete AF price controlled by the geometric Jacobian (2026-10-16)
+
+The [controlled-record continuation](A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md)
+now joins an actual complete spectral source to the existing even Jacobian
+effect. Replacing the golden scalar roots by `sqrt(I-E),sqrt(E)` in the
+literal four-copy AF gate gives an actual old-right-module unitary, with
+both outcomes and the whole identity complement. At `E=p²I` it is exactly
+the owned golden record. This is an algebraic implementation, not yet
+primitive admission of the geometry-dependent control.
+
+For the whole canonical A3 trace seed and its actual mixed-cylinder
+projector, `E(u)=p²(I+u Q_mix)` has zero first complete A9 gate source. Its
+next literal active record has complete A12 old source strictly between
+`0.18788044202330` and `0.18788044202331`; gain source and moving central
+cost are independently retained. The native central-cost derivative is
+`-6p10`, whereas the branch-code diagnostic would give `+2p5`. Those
+observables cannot be substituted for one another.
+
+A single controlled program can address the entire normal family without
+assuming additivity of independent prices: choose equal-cost native setting
+cylinders and retain every inactive leaf at the blank effect. For64 settings,
+64 of70 length8 words with4 returns give128 ready mixed suffixes at cut15;
+the complete987+610-leaf parser is preserved. The actual left spectrum then
+gives one second-record price
+`B_n+sum_i G(u_i)`, with `G'(0)=2p17 f0'(p²)>0`. The baseline is one B_n,
+not64 independent copies. Native cost recurrence gives positive bounded
+source coefficients at further cuts, with explicit alternating convergence;
+the fresh active programs are not asserted to have cut-invariant spectra.
+
+For `u_i=t² e2(A_i)+t4 det(A_i)` and the full normal Parseval family,
+Gauss implies the actual spectral-price expansion
+`B_n+(alpha t²/2) R+Rem`. Value and first-variation remainder bounds are
+explicit. The geometry-controlled price is the dilation of the averaged
+effect, not an average of two spectral prices. No signed price contrast,
+fitted stress or difference-defined remainder action supplies the result.
+
+The absolute blank remains: a separately admitted geometric volume measure
+adds `(B_n/2)q^-1` to the metric source alongside the leading Einstein term.
+Moving preparation, calibration and scale contribute their own jets. C1
+shape-source bounds do not by themselves imply the original discrete
+Euler/raw estimate. Primitive control, physical Info/action selection,
+volume binding, coupled solutions and the original terminal remain open.
+
+The new focused entrypoint is
+`a4d_native_jacobian_controlled_record_check.py`. It consumes the pinned
+AF/cylinder definitions, actual states and jets, and finite address parser;
+older suites, generated receipts and Lean builds are not replayed.
