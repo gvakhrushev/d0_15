@@ -1,0 +1,22 @@
+{
+  "normal_optimized_byte_identical": true,
+  "old_spectrum_or_root_replayed": false,
+  "only_new_causal_helper_executed": true,
+  "python_version": "3.9.6",
+  "result_sha256": "82fcd6a1e9102d93bbaa08705f319aadd0d5b46ed3df2b45ba0fa794ff1b1175",
+  "runs": [
+    {
+      "exact_checks": 34,
+      "optimized": false,
+      "seconds": 2.493803
+    },
+    {
+      "exact_checks": 34,
+      "optimized": true,
+      "seconds": 3.253759
+    }
+  ],
+  "schema": "d0-ghz-causal-first-source-validation/1",
+  "source_sha256": "7a4284a6ebf33ac643d266ffcdca887089a3c322f3323f2327f88cbec3117992",
+  "status": "PASS"
+}

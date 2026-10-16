@@ -33,6 +33,7 @@ Current gravity packets:
 - `sources/d0_native_action_selection_2026-10-16/RESULT_RU.md` and `sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md` — exact same-price event form and conditional Slater no-leak realization; extra carrier/preparation/coin and physical price remain unselected.
 - `A4D_CONE_FULL_SHELL_FIRST_JET_NO_GO.md` — independently published full-shell spectral obstruction; the source-balanced preparation owner below adds the all-rank metric-balance and arbitrary-fieldjet faithful conclusions.
 - `A4D_CONE_SOURCE_BALANCED_PREPARATION.md` — full33-Fourier/all10metric/all24torsion leading equations; fixed-jet all-rank obstruction and arbitrary-real-fieldjet faithful cokernel.
+- `A4D_GHZ_CONE_JOINT_FIRST_CORRECTOR.md` — actual full16 leading scale and complete common vacuum/top first-jet classification: field balance contradicts the uniform amplitude gap; common real E0 route exhausted, with native preparation-domain boundaries retained.
 - `A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md` — actual observer/link/preparation elimination at all10 constant physical metrics; rank7 positive reduced metric source and same-R constant-volume witness.
 - `A4D_CONE_REAL_E0_FIELD_CORRECTION.md` — balanced real rank8 cone preparation is obstructed after arbitrary real first field corrections; necessary vacuum/top support, with the GHZ equations still open.
 - `A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md` — exact full-experiment coordinate Ward and conditional metric descent; actual retained section and locality are required.

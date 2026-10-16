@@ -187,13 +187,26 @@ Thus solving retained equations does not remove the existing zero-mode shape
 potential; a genuine native price/clock and controlled source limit remain
 necessary. This is the stored chart, not the full-Lorentz joint classification.
 
-The [real E0 field-correction test](A4D_CONE_REAL_E0_FIELD_CORRECTION.md)
-also removes the balanced rank8 preparation as a winding-cone continuation:
-its projected first amplitude residual squared is at least1/(8s^4) for any
-real smooth field corrections. A common real seed must instead lie in the
-vacuum/top plane. That plane passes this necessary test; complex/coherent
-preparations and the remaining GHZ/field equations are separate inputs.
-No new preparation catalogue is needed to repeat the excluded case.
+The [joint cone preparation/source theorem](A4D_GHZ_CONE_JOINT_FIRST_CORRECTOR.md)
+now resolves that remaining vacuum/top route completely at first order.
+The actual unchanged-parameter leading scale lies in
+(2.468761631846428,2.468761634826661). Every common plane density has full
+first causal field source `(sigma00-sigma1515)/(8s²)`. It requires equal
+populations, where the amplitude residual is uniformly at least1/(8s^4)
+even with arbitrary real first field corrections and reference128. Real
+unbalanced pure lines have explicit solutions of ALL resonant amplitude
+rows, but violate that field equation. With the earlier real E0 support
+projection this exhausts the common real coordinate-form E0 controlled
+first-jet family. Do not launch another rank/projector scan on it.
+
+This composition does not exclude independent sigma_r, momentum coherences,
+complex E0 outside the plane, changed leading geometry or non-C1 scaling.
+The same packet checks actual preparation-domain boundaries: owned golden
+words conserve a charge forcing balanced plane limits, while explicit
+accepted ring inputs still approach GHZ. Exact word nonreachability cannot
+be promoted to a distance from the entire native input domain. The next
+joint construction must follow the leading preparation/geometry and full
+price actually derived by the native history map, preserving all its rows.
 
 The coordinated [stored metric-image calculation](sources/d0_native_gr_source_image_2026-10-16/RESULT_RU.md)
 computes the permitted ranks10/9/8/7/5 and a surviving Bianchi-compatible

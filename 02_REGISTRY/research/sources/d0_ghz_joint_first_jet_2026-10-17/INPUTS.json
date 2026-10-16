@@ -1,0 +1,20 @@
+{
+  "consumer": "Complete joint first correction on the previous winding cone, with actual leading scale and actual causal field row.",
+  "sha256": {
+    "02_REGISTRY/research/A4D_CONE_PREPARATION_FIRST_CORRECTOR.md": "3ca2619d7965a1090345608e2eab91020c7a4ccafd3f7253fd3576fa73e25077",
+    "02_REGISTRY/research/A4D_CONE_REAL_E0_FIELD_CORRECTION.md": "51c66a09fbbd55305d98927797e46d9e5bb54fc67e929c40dbaaf271a8da3170",
+    "02_REGISTRY/research/A4D_CONE_SOURCE_BALANCED_PREPARATION.md": "1b6c919602be63b2ca401426e0630c5a91808b65cedf4181df5d7e499ae18d5f",
+    "02_REGISTRY/research/A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md": "3e3bf3bb02aeb398dcefd54ca1892ee8d02128cc869f77db6e4818cc75c4aaf6",
+    "02_REGISTRY/research/A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md": "1c719378dac0baa8230366456f66ddb5315d8577afbae91521d60fef65bb9a16",
+    "02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md": "36eaeb8617630acaeace297fa64e7b8c33b92fc4824133a2b8e3515c4c79520a",
+    "02_REGISTRY/research/A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md": "d1017d88b98c6c67a88b4a2d42a4d957757c4c5bbbf9042713be11ebaa339ab6",
+    "02_REGISTRY/research/A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md": "319d1c194dfeb1dda0bdda135a9982c89d13dced4c1091a380f4db31bf049080",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/A4D_SECOND_ORDER_HEAT_REMAINDER.md": "749e3817e2a3c268f07fa949cc8054ed13d68c3989aedd9e8397f2d92f1e1614",
+    "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py": "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58",
+    "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/check_cone_source_balanced_preparation.py": "1a84b5dbfa86c03d55dfe3db41330272e4937d2a47f30c3e0929d584996859c3"
+  },
+  "source_ref": "caa90af1f67a06dab46704c80031ad98a2de699b"
+}

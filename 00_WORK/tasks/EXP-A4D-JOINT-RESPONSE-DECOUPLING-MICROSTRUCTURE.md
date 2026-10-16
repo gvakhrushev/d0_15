@@ -12,6 +12,40 @@ Execution: `GitHub-first`
 
 ## Bounded continuation — 2026-10-17
 
+The cone premise below is now resolved by
+`A4D_GHZ_CONE_JOINT_FIRST_CORRECTOR.md`: the actual leading scale exists,
+but no common vacuum/top density has a full controlled first h-jet.
+Its complete causal field row forces balanced populations, which have
+a uniform amplitude gap. The preceding real E0 support theorem therefore
+closes the whole common real coordinate-form E0 first-jet route. Do not
+repeat a GHZ/projector/counterjet search in this unchanged family. Changed
+leading states/geometries, independent momentum blocks, coherences and
+non-C1 scaling retain their own unresolved obligations.
+
+The resolved actual joint-branch premise used the surviving coordinate-form
+GHZ preparation `(vacuum+top)/sqrt(2)` on the same winding cone, not the
+excluded balanced E0 seed. Solve the projected first amplitude equation
+with real smooth full10 metric/full24 torsion/measure corrections and
+the actual first field/preparation equations of the unchanged price.
+Inputs: source-balanced owner, real E0 owner, quantitative second-source
+owner, actual first-corrector definitions at published `caa90af1`.
+The full16 carrier, reference128, all33 shell-difference frequencies and
+moving normalization remain; a chosen field correction is only a valid
+joint first jet after the corresponding field rows are satisfied.
+Consumer: construct or exclude the next compatible nonflat joint jet.
+The integrator also resolves the actual leading radial equation at the
+unchanged v8 beta=3-sqrt(5), z=2^-20 and M=128 using the full16 Gaussian
+trace on the period2pi torus. A rigorously bracketed scale is an equation
+solution, not a running calibration or fitted coupling. Its bounded new
+calculation shares the source folder below, in `scale_balance.py`.
+Write paths: `A4D_GHZ_CONE_JOINT_FIRST_CORRECTOR.md` and
+`sources/d0_ghz_joint_first_jet_2026-10-17/`, plus existing shared consumers
+owned by the integrator. The smallest decisive calculation is the actual
+forced Fourier-block linear system and its full source compatibility;
+do not rerun unchanged cone spectra, old roots or Lean. Native preparation
+admission is checked against the actual primitive process separately;
+P1=0 on this support must not be replaced by an invented observer law.
+
 Consumer: replace the conditional retained-field elimination of
 `A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md` with an actual result on
 the already solved homogeneous faithful stored-v8 chart. At fixed all10
