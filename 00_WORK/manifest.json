@@ -158,17 +158,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-FIELD-BLOCK-INVENTORY.md"
     },
     {
-      "id": "WRK-A4D-RANK8-SADDLE-ZERO",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify that the rank-8 saddle keeps a zero lower block and is not replaced by a positive thermal matrix, with an explicit negative control.",
-      "brief": "00_WORK/tasks/WRK-A4D-RANK8-SADDLE-ZERO.md"
-    },
-    {
       "id": "WRK-A4D-LEAN-MV-TANGENT-SPAN",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
