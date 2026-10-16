@@ -2,11 +2,13 @@
 
 **Exact scoped consequence, 16 October 2026.** The existing closed record
 engine has infinitely many pairwise distinct exact states, but their mutual
-separation has infimum zero. Every finite level of the constructed isometric
-hereditary refinement, conditional on its declared child pairing, preserves
-that arbitrarily close pair structure. Therefore exact coefficient growth
-in this fixed-carrier engine does not by itself establish robustly readable
-memory or physical expansion.
+separation has infimum zero. Every finite level of the constructed weighted,
+isometric hereditary refinement, conditional on its declared pairing,
+preserves that arbitrarily close pair structure. Therefore exact coefficient
+growth in this fixed-carrier engine does not by itself establish robustly
+readable memory or physical expansion. The result excludes one fixed
+Lipschitz readout with a uniform positive margin over all ticks; it does not
+exclude a sequence of readouts whose gain increases with the resolved prefix.
 
 This is a limit on the current 16-slot engine plus its existing inheritance
 map. It does not rule out a state-dependent refinement mechanism that creates
@@ -61,15 +63,22 @@ distinct tick of this orbit.
 
 ## What the current archive refinement does
 
+Choose positive site weights with `mu_0(x)=1/|X_0|` and
+`mu_(n+1)(y)=mu_n(pi_n(y))/d_x` for `x=pi_n(y)`, where `d_x` is the number
+of children of `x`. They satisfy `sum_x mu_n(x)=1` at every level. For a
+16-fibre field use the weighted norm
+
+    ||f||_n^2 = sum_(x in X_n) mu_n(x) ||f(x)||^2.
+
 The owned adjacent pullback `J_n` maps a field to its pullback along `pi_n`,
 injecting a coarse field into the fine carrier by copying each parent value
-to its children. The closed
-record owner constructs a normalized map `J_n^iso` that is an
-isometry under its declared child weights and commutes with the local engine;
-its physical pairing remains conditional. For any finite tower composition
-`J^iso`,
+to its children. This unscaled copying map is an isometry for these weighted
+pairings. In particular, the spatially constant field carrying the engine
+state is `f_t^(n)(x)=m_t` at every site, so `||f_i^(n)-f_j^(n)||_n =
+||m_i-m_j||`. The pairing remains conditional; it is not derived as a
+physical measure. For any finite tower composition `J`,
 \[
-\|J^{\rm iso}m_{2+2d_j}-J^{\rm iso}m_2\|
+\|Jm_{2+2d_j}-Jm_2\|
  =\|m_{2+2d_j}-m_2\|\longrightarrow0.
 \]
 It also remains in the inherited subspace: for one scalar component,
@@ -93,14 +102,16 @@ This separates two facts that must not be conflated:
 
 The result does not say that the current deterministic update loses its
 mathematical state: the states remain distinct and the local observer sign
-continues to have the all-time margin proved by the owner. It says that a
-fixed-resolution current-state readout cannot robustly decode every past
-tick from this 16-slot carrier with a uniform margin within the stated
-Lipschitz readout class. A detector that itself
-gains resolution could change that conclusion only if a native rule couples
-the record to newly distinguishable child degrees and carries the complete
-action, metric/link variations, and refinement equations. No such trigger or
-new cell state is introduced here.
+continues to have the all-time margin proved by the owner. It says that one
+fixed-Lipschitz current-state readout cannot robustly decode every past tick
+from this orbit with a uniform margin. For every finite prefix, however, its
+distinct states have a positive minimum separation `delta_N`; the
+stage-dependent readout `F_N(m)=m/delta_N` gives pairwise margin at least one
+on that prefix, using the same carrier and increasing its gain. This
+mathematical construction does not supply a native rule that selects or pays
+for that gain, proves stable operation under physical noise, or couples a
+readout to child-complement modes. Those remain separate obligations. The
+theorem therefore does not establish that new child degrees are necessary.
 
 ## Consumer in the gravity route
 
