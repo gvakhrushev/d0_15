@@ -33,6 +33,9 @@ Current gravity packets:
 - `sources/d0_native_action_selection_2026-10-16/RESULT_RU.md` and `sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md` — exact same-price event form and conditional Slater no-leak realization; extra carrier/preparation/coin and physical price remain unselected.
 - `A4D_CONE_FULL_SHELL_FIRST_JET_NO_GO.md` — independently published full-shell spectral obstruction; the source-balanced preparation owner below adds the all-rank metric-balance and arbitrary-fieldjet faithful conclusions.
 - `A4D_CONE_SOURCE_BALANCED_PREPARATION.md` — full33-Fourier/all10metric/all24torsion leading equations; fixed-jet all-rank obstruction and arbitrary-real-fieldjet faithful cokernel.
+- `A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md` — actual observer/link/preparation elimination at all10 constant physical metrics; rank7 positive reduced metric source and same-R constant-volume witness.
+- `A4D_CONE_REAL_E0_FIELD_CORRECTION.md` — balanced real rank8 cone preparation is obstructed after arbitrary real first field corrections; necessary vacuum/top support, with the GHZ equations still open.
+- `A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md` — exact full-experiment coordinate Ward and conditional metric descent; actual retained section and locality are required.
 - `A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md` — actual permanent first-exit Julia/Walsh event, both golden ports, derived1/256 clock coefficient and one-cone EH/source identity; no new price or physical admission.
 - `A4D_SECOND_ORDER_HEAT_REMAINDER.md` — controlled fixed-beta second-order heat/source expansion with explicit graph, Galerkin, cyclic-row and clock bounds; no physical comparator or matter continuation is assumed.
 - `A4D_RAW_LINK_COTANGENT_JET.md` — exact noncommuting parallel-path/raw-link conversion through h², both adjoint pairings and moving density; inverse coefficient1/12.

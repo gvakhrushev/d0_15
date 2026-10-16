@@ -168,11 +168,32 @@ The [native action-selection result](sources/d0_native_action_selection_2026-10-
 gives the same scalar price an exact survival/blank event form; the
 [conditional blank dilation](sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md)
 explains logdet, M and1/j on a fully occupied enlarged fermionic carrier.
-That carrier, its filled preparation, control z coin and native Cost−Info
-selection are not admitted by those identities. The concrete next map is
+The proposed faithful many-body CAR implementation needs8388608 modes,
+exceeding its listed57381 log2-dimension budget; this excludes that literal
+implementation, not compressed determinant computation. That carrier, its
+filled preparation, control z coin and native Cost−Info selection are not
+admitted by those identities. The concrete next map is
 one admitted retained program, its actual preparation/readouts and complete
 price/source. Our fine first-exit event supplies actual causal record data
 for that map; it does not select a new history penalty.
+
+The [complete-experiment Ward result](A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md)
+keeps the full detector/path/preparation transport and its actual equations.
+Its conditional Schur step now has an [actual homogeneous consumer](A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md):
+all10 constant physical metrics admit a smooth retained observer/link/density
+section, but its reduced Hessian still has7 positive metric directions.
+A constant-volume flat curve keeps actual R fixed while this price varies.
+Thus solving retained equations does not remove the existing zero-mode shape
+potential; a genuine native price/clock and controlled source limit remain
+necessary. This is the stored chart, not the full-Lorentz joint classification.
+
+The [real E0 field-correction test](A4D_CONE_REAL_E0_FIELD_CORRECTION.md)
+also removes the balanced rank8 preparation as a winding-cone continuation:
+its projected first amplitude residual squared is at least1/(8s^4) for any
+real smooth field corrections. A common real seed must instead lie in the
+vacuum/top plane. That plane passes this necessary test; complex/coherent
+preparations and the remaining GHZ/field equations are separate inputs.
+No new preparation catalogue is needed to repeat the excluded case.
 
 The coordinated [stored metric-image calculation](sources/d0_native_gr_source_image_2026-10-16/RESULT_RU.md)
 computes the permitted ranks10/9/8/7/5 and a surviving Bianchi-compatible

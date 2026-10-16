@@ -1,0 +1,20 @@
+{
+  "GR_closed": false,
+  "analytical_reviews": 2,
+  "exact_checks": 72,
+  "independent_CONTROL_acceptance": false,
+  "negative_controls": 4,
+  "normal": "PASS",
+  "old_scientific_replay": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "python": "3.9.6",
+  "schema": "d0-homogeneous-physical-metric-validation/1",
+  "sha256": {
+    "02_REGISTRY/research/A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md": "89db8d191de4f11af5c046e9d0e3a57b47412d85b54520141cdd483ecaa21dd4",
+    "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/INPUTS.json": "d2fc80681414d1a8c47babeda0d5088b992d71856e1a265b674124f872b2dbe6",
+    "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/README.md": "9a08cc8b5251bbe9e1646b4192c514a400492f5294be315ee4bc55388a8a7137",
+    "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/RESULTS.json": "0c2bd15454576ef786d35604b344f0493469c18e010f41ac5095dbd3abeb0c6f",
+    "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/check_metric_reduction.py": "f953154f0834a9ba4bd515f7cf670f4872c0948d4b796aea6eed3a9053f2e167"
+  },
+  "sympy": "1.14.0"
+}

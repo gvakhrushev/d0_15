@@ -1,0 +1,17 @@
+{
+  "base": "237829b10d6b2f0d7c9b5b1d768ac1bb37882cad",
+  "consumed_theorems": [
+    "joint owner Sections3,5,9: exact homogeneous shell, rank7 T0, four link columns, full finite-price convexity, q0 inertia",
+    "full experiment Ward Section5: actual retained-section consumer"
+  ],
+  "new_user_input_alias": "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt",
+  "old_scientific_replay": false,
+  "sha256": {
+    "02_REGISTRY/research/A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md": "71fdd37eb806c72e481b9fc35f3e31dd0a1b9447c7ae59223d0d60ed56d3e8a9",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/homogeneous_price_convexity.py": "1112b7c41ef9006ce20c91cfed10ec33280d56509b083eb0b1fc49b82bddd78f",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/zero_mode_constraint_check.py": "abe8395c6e05818894252982952043ab8757b74670036e3715107b794aa36ecc"
+  },
+  "user_input_sha256": "ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61"
+}

@@ -1,4 +1,30 @@
 {
+  "actual_retained_metric_and_real_e0_checkpoint": {
+    "base": "237829b10d6b2f0d7c9b5b1d768ac1bb37882cad",
+    "conclusion": "Stored-v8 actual retained equations solve over all10 constant metrics; reduced source retains7 positive directions and a same-R constant-volume witness. Real balanced coordinate-form E0 rank8 cannot cancel its first cone correction with real smooth field jets.",
+    "consumer": "Actual homogeneous retained section of complete-experiment Ward; remove excluded real E0 rank8 winding-cone continuation from the next joint branch.",
+    "new_exact_checks": {
+      "homogeneous_metric_reduction": 72,
+      "real_e0_corrector": 128
+    },
+    "new_user_input_is_identical_alias_of": "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt",
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Inhomogeneous/full-Lorentz retained section; GHZ/complex/coherent actual preparations; full native history/clock/price binding and original fixed-g/tau/raw terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_CONE_REAL_E0_FIELD_CORRECTION.md": "51c66a09fbbd55305d98927797e46d9e5bb54fc67e929c40dbaaf271a8da3170",
+      "02_REGISTRY/research/A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md": "89db8d191de4f11af5c046e9d0e3a57b47412d85b54520141cdd483ecaa21dd4",
+      "02_REGISTRY/research/sources/d0_cone_real_e0_field_correction_2026-10-17/README.md": "86df565a5448e43397f49309949e24ab5817fd381f9bea69d32f02495b2b7539",
+      "02_REGISTRY/research/sources/d0_cone_real_e0_field_correction_2026-10-17/RESULTS.json": "76983198fed4c043fd00fdcecdbb14882815328bf1aa03b55023141828f6a32d",
+      "02_REGISTRY/research/sources/d0_cone_real_e0_field_correction_2026-10-17/VALIDATION.json": "42d6e8788399436dd94fd8c24d117133bf0c38fc2735b6970646e185c44d1eab",
+      "02_REGISTRY/research/sources/d0_cone_real_e0_field_correction_2026-10-17/check_real_e0_field_correction.py": "f796705f286a55b5f6581b1c8a0e9031ec74c385c369baeb6062bc7a6cd61c76",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/INPUTS.json": "d2fc80681414d1a8c47babeda0d5088b992d71856e1a265b674124f872b2dbe6",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/README.md": "9a08cc8b5251bbe9e1646b4192c514a400492f5294be315ee4bc55388a8a7137",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/RESULTS.json": "0c2bd15454576ef786d35604b344f0493469c18e010f41ac5095dbd3abeb0c6f",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/VALIDATION.json": "baeaf3f930a18e5dffbe447870a38a9c0a1d518b7f0c7f02d50ed3a8adbd2e97",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/check_metric_reduction.py": "f953154f0834a9ba4bd515f7cf670f4872c0948d4b796aea6eed3a9053f2e167"
+    }
+  },
   "balanced_path_intake": {
     "conclusion": "balanced path is stationary on declared full-Lorentz matrix domain; 12+/1- is certified only on inherited13D stored-field restriction",
     "replay": false,
@@ -105,6 +131,33 @@
       "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/check_feedback_dilation.py": "0bdd25adbfd4c9cc99f2bf58ddbc9f6cbed07e15cef91abda729986cbf15444b"
     },
     "source": "9ece9146"
+  },
+  "parallel_ward_and_resource_followup": {
+    "consumer": "actual homogeneous retained section and complete native price/clock consumer",
+    "old_scientific_replay": false,
+    "reported_not_reexecuted": {
+      "feedback_exact": 39,
+      "ward_exact": 64,
+      "ward_mutations": 6
+    },
+    "resource_scope": "The literal faithful full-CAR implementation exceeds the listed carrier budget; determinant compression and other admitted resources are not excluded.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md": "71fdd37eb806c72e481b9fc35f3e31dd0a1b9447c7ae59223d0d60ed56d3e8a9",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT.json": "a0f09c3545fa743bfe985c856e91668b2fa4493a1b1af8a0207d87c8f7ddabc1",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md": "8241837e5364981c8aa590132682109fdff541d1195a0b40a9e648a0c9d63193",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/check_feedback_dilation.py": "5a17addae009c74992e6f6fa604625dc073f43fa7a603d6e37da71dd1fa961f0",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/INPUTS.json": "f0279c1910078af69e70b6e1a3d7913e572311ffb1dafb4ff391bec0d73bbf14",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/README.md": "a78792d6e127da2509a992e0cb577361b78dc09038a19d3a5657e2748518c593",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/VALIDATION.json": "4d5873c123246cc06ca7d23492b7e02675eb27eb5f150343b26b4b8c393c72a0",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/check_relational_ward.py": "8158fd256825a722f12901d99130c52231d522d46bffcbeba9cc1c0b7fc9b5a5",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/mutations.json": "6a73beb27d40d9e12859a782df324db3add3a880dfb9e7573bca13fb394d6408",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/result.json": "3efb3a4bad773a3abb1d85e34ab3f952d55f0fa1f8d5aa9f19773526e07973e6",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/test_mutations.py": "d99d59d37d4565eecd5733239d8de8859484a329d6c30e8642685d590af5e24e"
+    },
+    "source_refs": [
+      "4b976893",
+      "7bc607df"
+    ]
   },
   "reported_checks_not_reexecuted": {
     "curved_tensor_exact": 427,

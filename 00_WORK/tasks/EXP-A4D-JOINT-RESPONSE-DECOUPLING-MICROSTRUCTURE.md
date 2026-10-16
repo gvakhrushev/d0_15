@@ -10,6 +10,36 @@ Branch: `exp/a4d-joint-response-continuation-2026-10-16`
 Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`  
 Execution: `GitHub-first`
 
+## Bounded continuation — 2026-10-17
+
+Consumer: replace the conditional retained-field elimination of
+`A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md` with an actual result on
+the already solved homogeneous faithful stored-v8 chart. At fixed all10
+physical Lorentz metric slots, test the observer3/link4-to-shell map;
+if invertible, eliminate its seven field/density pairs in the same action
+and determine the resulting metric Hessian, retaining neutral parameters.
+Inputs: joint-system Sections3,5,9 and the exact price unfolding. Carrier:
+all16 grades, reference128, the original full thermal trace and fixed
+v8 calibrations. This is a zero-Fourier local result in the stored chart,
+not an extension of its local classification to the full-Lorentz domain.
+Write paths: `A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md`,
+`sources/d0_homogeneous_metric_reduction_2026-10-17/`, and the existing
+primary/route/README consumers. Decisive check: exact metric/observer
+Jacobian, all10 lifts and the nondegenerate retained saddle; reuse the
+owned homogeneous convexity bound without spectrum replay.
+
+A disjoint amplitude premise consumes the source-balanced cone owner:
+test real momentum-diagonal E0 preparations against arbitrary real
+smooth first field corrections using the same-momentum full16 operator
+block, not just its full-rank cokernel. Write paths:
+`A4D_CONE_REAL_E0_FIELD_CORRECTION.md` and
+`sources/d0_cone_real_e0_field_correction_2026-10-17/`.
+The consumer is the actual rank8 preparation continuation. Preserve every
+field/matter equation, positive density and reference; a result on E0
+does not classify complex/coherent preparations or other geometries.
+Smallest check: the literal real full16 block, its E0 kernel, projected
+residual and a nonexcluded control. No old root/kernel/Lean replay.
+
 ## Why delegated
 
 The exact curved nongauge joint-vacuum family in merged #232 destroys connection uniqueness and the C1-compactness route, but has exactly zero metric response on the flat background. The unresolved question is whether such ultraviolet connection moduli remain invisible to the normalized metric Euler response over smooth nonconstant backgrounds, or whether a smooth-background counterexample exists. This requires a response quotient / homogenization or compensated-compactness argument, or an exact hostile sequence; it cannot be settled by another connection compactness or uniqueness proof.
