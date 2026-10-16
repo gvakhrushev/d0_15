@@ -5228,3 +5228,50 @@ This closes the finite effect-level address-count gap; primitive admission of
 the complete program remains open. The exact certificate is reproducible in
 ordinary and optimized Python modes; a one-setting nonzero hostile control
 changes exactly its two addressed ready leaves and leaves the rest untouched.
+
+## Fixed-branch common-process rigidity (2026-10-16)
+
+The next strategic check identifies a rigidity for any proposed common
+process that applies the actual adaptive AF update to the complete
+comparison family. At every finite horizon where the current first-grade
+selector stays nonzero, the selected branch word is constant on a
+neighborhood of the initial fields. Applying that same word to every
+comparison state is one fixed full-carrier unitary, so pairwise overlaps,
+complete logdet price, and the projector-metric Hessian are exactly
+invariant. The coherent refinement owner separately proves the same overlap
+identity for its field-independent isometric code embedding; its added code
+cost is a constant. If a common process intertwines those two maps, their
+composition also adds no geometric resolution in this comparator. The
+cross-level intertwining itself remains unproved.
+
+This is a scoped exclusion of the route “one common unitary history update
+plus one common isometric embedding alone generates expansion.” It leaves a
+precise requirement for any surviving common process: its moving
+frame/readout must change the comparator through an explicitly admitted
+field-dependent map, and the full derivative (including its connection
+terms) must enter the native action. The result does not forbid other
+internal refinement laws or close the ten transverse equations, native
+source, exact-root, or GR tasks.
+Proof and source pins: [fixed-branch rigidity note](A4D_NATIVE_ISOMETRIC_COMMON_PROCESS_METRIC_RIGIDITY.md).
+
+## Fixed-frame step fails on the curved metric-binding chart (2026-10-16)
+
+A 37-check cross-owner certificate now tests the actual full16 positive AF
+gate on the same `lambda=1` matter-clock equality chart, with a nonzero
+top-grade amplitude `p^20`. The input has all twelve effects `p^2`, a
+timelike current, and the owned curved germ `R_q(0)=-1/(1500 p^3)`. The
+literal next state remains timelike, retains nonzero top grade, and has a
+defined negative-selector engine step. But reusing the same record wiring
+makes its second effect satisfy the exact bound
+
+```text
+2-3*p+a*(4*p-3) < -7/40.
+```
+
+It therefore leaves the real probability domain after one fixed-frame step.
+This rules out the concrete update “apply the current CAR gate and then reuse
+the same metric-binding chart” on this curved germ. It does not rule out a
+simultaneous coframe/readout update, establish AF-image admission, or close
+the parent. The precise remaining task is to derive or exclude that
+simultaneous update with all10 matching rows, all16 matter coordinates, and
+the complete action derivative. Evidence: [domain obstruction note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and [exact checker](certificates/a4d_native_common_process_domain_check.py).
