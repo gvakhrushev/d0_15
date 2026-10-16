@@ -1,0 +1,19 @@
+{
+  "schema": "d0-memory-finite-detector-inputs/1",
+  "repository": "gvakhrushev/d0_15",
+  "execution_pr": 334,
+  "initial_source": "36cd35098409c863478370d8d2e5771e6d1e7bd4",
+  "owners": [
+    "02_REGISTRY/research/A4D_NATIVE_MEMORY_SOURCE_FIBRE.md",
+    "02_REGISTRY/research/A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md",
+    "02_REGISTRY/research/A4D_MEMORY_PRESERVING_SOURCE_CODE.md",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md"
+  ],
+  "claims_status": "NOT_PROMOTED",
+  "full16_tomography_claim": false,
+  "real4logical_tomography_proved": true,
+  "nonlinear_memory_projection_orbit_test_proved": true,
+  "physical_detector_admission": false,
+  "actual_M_v_found": false,
+  "GR_closed": false
+}
