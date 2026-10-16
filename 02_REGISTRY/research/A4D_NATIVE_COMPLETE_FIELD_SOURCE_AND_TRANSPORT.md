@@ -1491,8 +1491,21 @@ physical shell128 и reference128. Полная линеаризация дан�
 `[H_red,T*;T,0]`, где `T(v)=P deltaDelta[v] P−mean P`, а H_red
 содержит constraint-curvature, global normalizer и действительный
 неопределённый matter resolvent. Тепловые modes не заменяются shell.
-Не обращён именно оставшийся field/shell блок; построенный operator
-нужно решить перед заявлением о продолжении совместного root.
+Оставшиеся field/shell блоки нужно решить перед заявлением о продолжении
+совместного root. Полная
+Gram-sum формула этого блока уже выведена в §6 нового владельца:
+actual first jets дают всю Fourier matrix без dense amplitude object.
+Сокращается только `Tr W{D,D_vw}` у stationary root по его metric moments;
+`Tr W{D_v,D_w}` и все thermal/preparation terms сохранены.
+
+Теперь §7 нового владельца решает **весь**19-column field symbol на
+`q=(3,3,0,0)`: комплексная инерция12+/1−/6zero в истинном root. Интервальное
+сравнение13-dimensional restriction с диагональю знаков имеет error<0.000269
+на всём прежнем root rectangle; moving chart, полный Z и signed matter
+resolvent учтены. Шесть нулей — ровно доказанные representation directions.
+Итак, исключена не только прежняя row-wave, но любая дополнительная
+совместная first field velocity этой моды. Это ещё не all-q inverse,
+нелинейное продолжение или физический допуск программы.
 
 ## 8. Проверка изменённого расчёта и повторное использование прежнего
 

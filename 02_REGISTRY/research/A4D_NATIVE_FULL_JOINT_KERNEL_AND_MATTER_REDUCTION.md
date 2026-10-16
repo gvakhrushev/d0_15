@@ -14,8 +14,9 @@
 сохраняется как положительная матрица, а её нормировка — как собственное
 уравнение. Полная линеаризация есть связанная блочная система (15), а не
 одно значение второй вариации. Это снимает задачу обращения огромного
-внеспектрального amplitude-блока; оставшийся полевой/резонансный блок ещё
-нужно решить. Неплоский совместный root, физический допуск программы,
+внеспектрального amplitude-блока. Полный19-столбцовый полевой символ
+на `(3,3,0,0)` решён: инерция12+/1−/6zero, дополнительные нули отсутствуют.
+Остальные Fourier и резонансные блоки ещё нужно решить. Неплоский совместный root, физический допуск программы,
 полная native Cost−Info цена и предел ОТО здесь не утверждаются.
 
 ## 1. Неизменённая задача и сохраняемые компоненты
@@ -334,7 +335,210 @@ Translation invariance корня разбивает (15) по Fourier q. Shell 
 density tangent не исправит его ненулевые field rows. На этой частоте
 осталась полная19-параметрическая native field matrix, а не scalar test.
 
-## 6. Проверки и следующий решаемый объект
+## 6. Явная сборка полной Fourier матрицы из первых jets
+
+Ниже используется именно homogeneous root и его maximally mixed shell,
+не произвольная точка области (6). Пусть `t_r(k)=exp(2pi i k_r/8)`,
+`z_r(k)=t_r(k)-1`, `C(a)` — full16 creator и `iota(a)=sum a_j C_j*`
+— **complex-linear** contraction. Для native v_q из (5) положим
+`a_r=dot u_r`, `Omega_r=Gamma(diag(0,W_r))`. Тогда ordered operator jet:
+
+```text
+A_v(k)=ell^-1 sum_r [z_r(k) C(a_r)+t_r(k) C(u_r) Omega_r],
+J_v(k)=(D_v)_(k+q,k)=A_v(k)+A_(bar v)(k+q)*,
+X_v(k)=D_(k+q) J_v(k)+J_v(k) D_k.                    (17)
+```
+
+В adjoint члене incoming momentum — **k+q**, не k. Эквивалентная
+формула J содержит `bar z_r(k+q) iota(a_r)-bar t_r(k+q) Omega_r iota(u_r)`.
+При прямом чтении stored backward leg она равна
+`(bar t_r(k)-1)iota(a_r)-bar t_r(k+q)iota(u_r)Omega_r`;
+равенство использует actual `W_r u_r=(1-t_r(q))a_r`, включая time leg.
+Coefficient, exterior return и shift не коммутируются.
+
+### Почему здесь можно сократить только constraint-curvature часть
+
+В данном root `W(k)=chi_k I16`,
+`chi_k=1_Omega(k)/128+kappa(lambda_k)`, `chi_-k=chi_k`.
+Все десять homogeneous metric Euler rows и invertible frame дают
+
+```text
+sum_k chi_k Re[bar z_s(k) z_r(k)]=0  for all r,s.
+```
+
+Parity обнуляет imaginary parts, поэтому это комплексное moment
+равенство. Тождество `Re z_s=-|z_s|²/2` также даёт
+
+```text
+sum_k chi_k bar z_s(k)=0,
+sum_k chi_k t_r(k) bar z_s(k)=0  for all r,s.          (18)
+```
+
+Каждый actual mixed second jet literal d имеет диагональный Fourier вид
+`ell^-1 sum_r[z_r(k) C(b_r)+t_r(k) T_r]`, где b_r — действительный
+second coefficient jet, а T_r — независимая от k матрица Fock-grade +1.
+В неё входят все coefficient/link products и accelerations карты (4).
+Полный CAR trace с D_k видит только creator projection T_r: для
+`T` степени+1 существует `p_j=Tr16(C_j* T)/8`, и
+`Tr16(D_k T)=8 sum_j bar u_j(k) p_j`, где
+`u(k)=ell^-1 sum_r z_r(k) u_r`. Поэтому (18) доказывает точно
+
+```text
+Tr_H W {D,D_vw}=0.                                  (19)
+```
+
+Здесь использованы реальные stationary metric rows, parity, полный Fock
+trace и mixed q/−q support. Это не ambient правило для другой точки,
+не удаление Y из (14) и не новая предпосылка о GL-link admission.
+**Член `Tr W{D_v,D_w}` остаётся.** Общий finite fixture в §8 специально
+показывает ошибку удаления Y без условий этого доказательства.
+
+### Конечная Gram-sum формула
+
+Для ненулевого q положим `l=k+q`, `rho_k=1_Omega(k)/128`,
+`r_k=0` на Omega и `r_k=(lambda_k-epsilon0)^-1` вне shell.
+При w на частоте −q полная bilinear matrix из (14) равна
+
+```text
+H_q(v,w)=sum_ALL_k (chi_k+chi_l) tr16[J_v(k) J_w(l)]
+ + sum_ALL_k [f_Z^[1](lambda_l,lambda_k)-rho_k r_l-rho_l r_k]
+                                   tr16[X_v(k) X_w(l)]. (20)
+```
+
+`J_w(l)` переводит l обратно в k; при `w=bar v` это adjoint J_v(k).
+Для обычной coefficient convention `c* H c` элемент `H_ij` записывается
+с `tr(J_i* J_j)` и `tr(X_i* X_j)`; это транспонирует bilinear indices
+в (20), сохраняя ту же Hermitian quadratic form и инерцию.
+Суммы идут по всем4096 k, trace — по всем16 Fock components. Divided
+differences берутся с **полным** `Z=16 sum_k B(lambda_k)^m`, включая
+нулевой mode, reference и feedback factors в kappa. При `q!=0` оба
+`Tr(g X_v)` и `Tr(g X_w)` нулевые по Fourier support, поэтому именно
+rank-one contraction из (11) отсутствует в (20). Для `q=0` он должен
+быть добавлен; (11) сохраняется в общем операторе. Для реальной пары
+`v_q+bar v_-q` contraction удваивается; cosine amplitudes имеют свои1/2.
+
+Таким образом оставшаяся19x19 Hermitian matrix при `(3,3,0,0)`
+задана конечной формулой через19 basis columns (5) и actual full16
+first jets. Большая dense amplitude matrix для её сборки не нужна.
+Формула (20) также определяет аналитическое продолжение на весь owned
+root rectangle; со всей stationary Hessian оно совпадает именно в
+истинном корне по (18)–(19). Округлённый центр прямоугольника сам по
+себе не объявляется точным stationary root.
+
+Три nu-направления при фиксированных u,O имеют J=0. Три совместных
+local spatial frame rotations S имеют
+`a_r=S u_r`, `Omega_r=(1-t_r(q))Gamma(S)` и точно
+`J_v(k)=Gamma(S)D_k-D_l Gamma(S)`.
+Они вместе с соответствующей matter variation дают representation
+symmetries этой цены. Это предоставляет шесть обязательных Ward-направлений
+для контроля сборки; нельзя объявлять все независимые edge angles gauge.
+Для physical admission/quotient остаются прежние отдельные требования.
+
+## 7. Решение полного символа на q=(3,3,0,0)
+
+### Результат на исходном полном носителе
+
+В истинном homogeneous v8 stationary root полная19-столбцовая
+coframe/link/observer matrix на q=(3,3,0,0) имеет комплексную инерцию
+
+```text
+positive=12, negative=1, zero=6.                     (21)
+```
+
+Шесть нулевых направлений — ровно три observer-frame directions и три
+совместных spatial frame directions, доказанных выше. Дополнительного
+field kernel в этой моде нет. Для действительной пары q/−q соответствующие
+числа равны24/2/12 на38 реальных field coordinates. Это утверждение о
+полном линейном символе данной конечной условной цены; отдельно хранимые
+affine-shift rows, reference verticals и остальные Fourier q не включены
+в число19. Оно не устанавливает physical gauge admission и не доказывает
+устойчивость корня: отрицательное направление сохранено.
+
+[Численная диагностика](sources/d0_native_joint_kernel_2026-10-16/full_symbol_diagnostic.py)
+собрала все4096 momentum blocks размером16. После трёх тождественно
+нулевых observer columns и проверки трёх spatial Ward rows оставшееся
+13-мерное ограничение имеет численные eigenvalues от−0.1579467 до931.5811;
+минимальное положительное —0.00516478. Эти числа зависят от нормы
+коэффициентов карты; доказательство (21) не использует их как строгие
+eigenvalue bounds.
+
+### Строгое сравнение на всём исходном прямоугольнике
+
+[full_symbol_interval.py](sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval.py)
+использует произвольную фиксированную16x13 матрицу B из конечных
+десятичных комплексных чисел. Numerical eigensystem лишь выбирает B;
+его корректность не принимается как предпосылка. В опубликованном
+[результате](sources/d0_native_joint_kernel_2026-10-16/FULL_SYMBOL_Q3300.json)
+сохранены все208 комплексных элементов B, исходные d/o intervals и
+каждый член оценки. Для S=diag(−1,+1,...,+1) проверено
+
+```text
+sup_theta ||B* H_formula(theta) B - S||_op
+ <= max_i sum_j |(B* H_formula(theta) B - S)_ij|
+ < 0.000269 < 1.                                    (22)
+```
+
+theta пробегает **весь** прежний root rectangle d/o radius10^-12.
+При изменении theta изменяются a,b и все16 столбцов native chart;
+заморожен лишь произвольный B. Все4096 modes,16 Fock components,
+128 reference states, полный Z и signed negative-ground resolvent
+сохранены. Равные энергии определяются exact Q(sqrt2) feature equality;
+624 таких directed edges используют аналитическую производную.
+Для остальных features interval denominator отделён от нуля
+более чем0.21296462476181. Нового root solve не выполнялось.
+
+Для полноты привожу перенос ошибок. Для a=J,X обозначим точные
+dyadic floating references через Atilde_ai(k), веса через wtilde_a(k),
+а строгие upper bounds через
+
+```text
+n_ai >= ||Atilde_ai||_HS,
+e_ai >= sup_theta ||A_ai(theta)-Atilde_ai||_HS,
+delta w_a >= sup_theta |w_a(theta)-wtilde_a|,
+W_a >= sup_theta |w_a(theta)|.
+```
+
+Ошибка каждого matrix entry ограничена суммой
+
+```text
+R_ij + sum_(a,k) [delta w_a n_ai n_aj
+                 +W_a(e_ai n_aj+n_ai e_aj+e_ai e_aj)]. (23)
+```
+
+R включает complex Gram summation roundoff. Scalar weights и moving
+phase coefficients вычислены направленной80-digit interval arithmetic.
+Точный корень восьмой степени единицы отдельно сравнивается с его binary64
+представителем интервальной оценкой; максимальная комплексная ошибка
+`6.835808657661923e-17`. Её вклад явно добавлен в bounds J и D через
+не масштабированные суммы норм коэффициентов; он отделён от gamma-оценки
+операций float-сборки. Геометрическая оценка J — triangle bound девяти
+phase coefficients, включая root-box conversion error. Для X использовано точное CAR равенство
+`||D_k||_op=sqrt(lambda_k)` и splitting
+`D_true(J_true-J_float)+(D_true-D_float)J_float`; products и sums
+floating assembly также включены. Для финального Gram использована
+консервативная ошибка `2 gamma_(2^26)`, gamma_n=n*u/(1−n*u),u=2^-53.
+Положительные budget sums имеют собственную outward rounding margin;
+нет предположения, что обычный double результат сам является interval.
+При IEEE binary64 arithmetic без overflow, проверяемых bounds факторов
+и явно покрытых subnormal contributions получено (22).
+
+Матрица в (22) Hermitian, поэтому operator norm ограничена maximum row
+sum; непрерывный путь от S к ней не пересекает нулевой eigenvalue.
+Инерция13-мерного ограничения равна12/1 на всём прямоугольнике.
+В истинном stationary root три точных независимых spatial Ward vectors
+добавляют kernel dimension>=3 к16-мерной матрице; nonsingular13 restriction
+даёт rank>=13, откуда rank=13 и kernel dimension=3. Три observer zeros
+завершают (21). **Ровно шесть нулей утверждаются в stationary root**,
+а не в произвольной нестационарной точке прямоугольника.
+
+Так как q лежит вне Omega−Omega, T_q=0; shell density tangent не может
+добавить missing field row на этой частоте. Поэтому scalar row-wave
+obstruction усилено до полного statement: никакая дополнительная
+coframe/link/observer скорость этой моды не является совместным
+stationary tangent. Это не запрет нелинейных решений с другими модами
+и не решение всех saddle blocks (15).
+
+## 8. Проверки и следующий решаемый объект
 
 [kernel_check.py](sources/d0_native_joint_kernel_2026-10-16/kernel_check.py)
 проверяет тождества на самостоятельном exact rational fixture той же
@@ -345,7 +549,7 @@ anti-Hermitian vertical направления. Ненулевые CY, shell S, 
 R_Q, global normalizer и nonlinear moving G проверяются отдельно.
 Ожидаемые mathematical evidence не переписываются. Изменённый fixture
 исполнил286 exact checks; normal/optimized scientific JSON совпал.
-Это проверка общей формулы, а не вычисление оставшегося native kernel.
+Это проверка общей формулы; native q3300 kernel решён отдельно в §7.
 
 [native_chart_check.py](sources/d0_native_joint_kernel_2026-10-16/native_chart_check.py)
 проверяет actual Lorentz/positive intersection, регулярную карту и её
@@ -357,7 +561,22 @@ Fourier basis. Его рациональная frame fixture не называе
 сохраняет точные source pins, окружение и области этого запуска. Старые
 suites, root solve, evidence generators и Lean здесь не запускаются.
 
-Дальнейший конкретный объект — сборка и решение матрицы (14) на полной
+[ordered_operator_check.py](sources/d0_native_joint_kernel_2026-10-16/ordered_operator_check.py)
+проверяет (17) на всех19 столбцах карты и полном16-мерном exterior carrier.
+Прямая stored-backward формула сверяется с независимым forward+adjoint;
+неверный incoming momentum и перестановка creator/return отвергаются.
+Три observer-frame направления имеют ненулевые исходные field jets,
+а три spatial frame directions проверяют Ward-intertwiner. Эти76 checks
+поддерживают API сборки; решение матрицы следует из отдельной оценки (22).
+
+Общий вход теперь исполняет эти413 exact identity checks и новый полный
+q3300 interval calculation. Normal и optimized scientific JSON побайтно
+совпали, включая явные bounds и decimal B; из сравнения исключено только
+время исполнения. [Validation](sources/d0_native_joint_kernel_2026-10-16/VALIDATION.json)
+связывает этот запуск с source hashes и опубликованным (22). Вся старая
+история root/thermal/central suites повторно не запускалась.
+
+Дальнейший конкретный объект — остальные Fourier matrices (14) на полной
 карте (5), с удалением только **доказанных** representation symmetries.
 Для частот из shell difference set решается весь saddle block (15).
 Нелинейное продолжение требует решения оставшихся E/field equations

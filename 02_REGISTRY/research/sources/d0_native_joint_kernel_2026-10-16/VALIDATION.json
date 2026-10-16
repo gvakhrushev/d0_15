@@ -1,8 +1,8 @@
 {
-  "schema": "d0-native-joint-system-validation/1",
-  "source_ref": "74e62cdc716e10883accba9d34ccf0e21d58eb65",
+  "schema": "d0-native-joint-system-validation/2",
+  "source_ref": "19b22bda285d10c1393da7e4ecb495823217a7f6",
   "execution_pr": 334,
-  "timestamp_utc": "2026-10-16T11:44:10.619028+00:00",
+  "timestamp_utc": "2026-10-16T12:24:46.340452+00:00",
   "entrypoint": "02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py",
   "commands": [
     "python3 02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py",
@@ -13,7 +13,8 @@
   "normal_optimized_scientific_output": "BYTE_IDENTICAL",
   "checks": {
     "joint_kernel_finite_fixture": 286,
-    "regular_native_chart": 51
+    "regular_native_chart": 51,
+    "ordered_full16_operator": 76
   },
   "fixture": {
     "field_dimension": 16,
@@ -44,7 +45,12 @@
     "DROPPED_NORMALIZER_RESPONSE",
     "POSITIVE_ONLY_Q_RESOLVENT",
     "FROZEN_GRAM_IN_EPSILON_NORMALIZATION",
-    "FROZEN_GRAM_IN_dE"
+    "FROZEN_GRAM_IN_dE",
+    "WRONG_BACKWARD_INCOMING_MOMENTUM",
+    "SWAPPED_CREATOR_LINK_RETURN_ORDER",
+    "FROZEN_ROOT_DEPENDENT_CHART_BASIS",
+    "CENTER_EIGENVALUES_AS_INTERVAL_PROOF",
+    "SIX_WARD_ZEROS_AT_NONSTATIONARY_BOX_POINTS"
   ],
   "native_chart": {
     "q3300_first_parameters": 19,
@@ -60,16 +66,44 @@
     "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9"
   },
   "sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "b50614d5871377f0f70c2cffc9912b999eb95e162fccfe8fb3ebea1cf992a2f2",
-    "02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py": "bb96d8541a0beb2248da24183ee00bf092610798a0fad155978fe83910843d62",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "e1d3d5b3812c4624be4c519bb688568bc156f9d77e112d5481ce222158b41765",
+    "02_REGISTRY/research/certificates/a4d_native_joint_kernel_check.py": "66c2eafec9523ba3765d10a8ed40233c5bde4642c5fc03336ee3bb76f1a97829",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_diagnostic.py": "6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65",
     "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/kernel_check.py": "7c1a651f2b2130f1dbc721f3de1e36f0319bed52a6fd8b9d9ae259f716fef1da",
-    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65"
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval_geometry.py": "7fa48bf73ba7e8c51dbdf0b4a432e2801ae04cf61a018303a3f345680f5284d6",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval_weights.py": "0d8651dae3b6b7ba2049a1c71ac47895e536f9ccc5f85bf9978c133c75ccfc18",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval.py": "2bb2f26be6d6484d087a2e2e2591b681c793b5932790e3552c2b9fdc5021c84d",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/FULL_SYMBOL_Q3300.json": "cf4d196d9f26cc01ad34776f3b808431f63ca13cb6ef679325337ff04f0c1ebc"
   },
-  "mathematical_peer_review": "nonlinear augmented-action reconstruction and complete linear kernel equations reviewed read-only",
+  "mathematical_peer_review": "read-only independent review of nonlinear augmented-action reconstruction, complete kernel, stationary-root curvature cancellation and full interval arithmetic error bounds",
   "prior_suites_replayed": false,
   "new_Lean_build": false,
   "remaining_field_shell_kernel_solved": false,
   "nonflat_joint_root_constructed": false,
   "physical_admission_derived": false,
-  "refinement_or_GR_closed": false
+  "refinement_or_GR_closed": false,
+  "scientific_output_bytes": 40158,
+  "scientific_output_sha256": "6194c6834d4efd4ca052009f387b8690c9a47a6c3469ecb717cf8654f5d790b8",
+  "full_q3300_symbol": {
+    "receipt": "FULL_SYMBOL_Q3300.json",
+    "all_native_field_columns": 19,
+    "rigorous_restriction_dimension": 13,
+    "full_complex_inertia_at_true_stationary_root": {
+      "positive": 12,
+      "negative": 1,
+      "representation_zero": 6
+    },
+    "operator_distance_from_signature_upper": 0.00026884309955525163,
+    "all_4096_modes_and_16_exterior_components": true,
+    "root_rectangle_radius": "1e-12",
+    "all_other_modes_solved": false
+  },
+  "arithmetic_environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "mpmath": "1.3.0",
+    "float": "IEEE binary64 round-to-nearest; explicit outward budgets"
+  }
 }

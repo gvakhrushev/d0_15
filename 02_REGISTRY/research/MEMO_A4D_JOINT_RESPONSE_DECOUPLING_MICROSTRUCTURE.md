@@ -29,7 +29,7 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
-| The complete regular stored-adjoint field chart and exact nonlinear matter reduction are explicit. All 16,744,448 real off-shell amplitude coordinates are eliminated with a bounded resolvent; the full shell preparation, moving normalization and reference directions remain. The joint linear operator is the coupled block `[H_red,T*;T,0]`. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md). This removes the off-shell inversion premise, not the remaining field/shell kernel or a physical admission requirement. |
+| The complete regular stored-adjoint field chart and exact nonlinear matter reduction are explicit. All 16,744,448 real off-shell amplitude coordinates are eliminated; shell preparation, moving normalization and reference remain. The joint linear operator is `[H_red,T*;T,0]`. Its full q3300 field symbol has validated inertia12+/1−/6zero, with no extra kernel. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Sections 3–7. Other Fourier modes, shell-source blocks and physical admission remain open. |
 | The actual stored Dirac on the entire bounded exact adjoint class has a full16 positive representation with unitary returns. The same literal v8 instrument, heat/feedback/matter price and all observer/preparation source jets intertwine on every admitted curve. A genuinely curved native row-rotation has an explicit full128 matter second lift, but its complete directional Hessian lies strictly between0.089 and0.091. | [Unified source, Sections 0.3 and 3.3–3.5](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). The operator/program arrow is established for the declared conditional v8 price; physical primitive/price admission and native refinement remain. The native wave's first velocity is excluded from the joint critical kernel, not all curved roots. |
 | One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
 | The complete second AF price has an exact coherent preparation minimum, noncommuting Hessian and Schur elimination. Its density-block inverse satisfies `norm(M_T^-1)<=log(phi)/p^6` uniformly in level and dimension. A coherent compiler preserves the selected price up to constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [full second source and uniform inverse, Section 5.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). This is the actual output-channel metric, not a replacement Gibbs action or full field/amplitude inverse. Admission and physical action selection remain separate. |
@@ -88,11 +88,18 @@ The [full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md)
 now supplies the exact nonlinear off-shell matter elimination and complete
 kernel equations on the **same** native v8 family. Its regular chart keeps
 actual SO(3) returns, observer motion, all ten metric responses and all
-sixteen matter grades. The next calculation is the remaining field matrix
-`H_red` on `ker T`, together with the shell multiplier on the 33 shell-transfer
-frequencies. At `(3,3,0,0)` there are 19 complex native field coordinates;
-one must test all field rows, not only a quadratic contraction. Its old
-curved row-wave still fails this test. No full field inverse, nonflat
+sixteen matter grades. The complete matrix is given by the full4096-mode
+Gram sum in joint-system Section 6, with an ordered full16 first-jet API;
+its direct-curvature cancellation is proved only at the stationary root.
+At `(3,3,0,0)` all19 complex native field coordinates are now solved:
+Section 7 validates a13-dimensional nonsingular restriction over the entire
+owned root rectangle, with distance from diag(−1,+1,...,+1) below0.000269.
+At the true root the full symbol has exactly12 positive,1 negative and6
+proved representation-zero directions. Thus the old row-wave failure
+extends to the entire nongauge first-velocity sector of this mode, including
+link/observer variations. The next calculation is the other Fourier matrices
+on `ker T`, with the shell multiplier on all33 shell-transfer frequencies.
+No all-mode field inverse, nonflat
 joint root, physical primitive/price admission or controlled refinement is
 claimed; the original fixed-source/raw-response terminal remains OPEN.
 
