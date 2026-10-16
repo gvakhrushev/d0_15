@@ -103,17 +103,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-MV-FULL-RANK-SPAN.md"
     },
     {
-      "id": "WRK-A4D-MV-RANK8-WITNESS",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify that M chi = lambda chi + sum beta_r J_r chi is strictly weaker than the full-rank span condition, with an explicit operator that passes on chi and fails at full rank.",
-      "brief": "00_WORK/tasks/WRK-A4D-MV-RANK8-WITNESS.md"
-    },
-    {
       "id": "WRK-A4D-VK-DIMENSION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
