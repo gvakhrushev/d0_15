@@ -59,17 +59,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     },
     {
-      "id": "WRK-A4D-LEAN-SCHUR-STATIONARY-TRANSFER",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize a generic finite-dimensional Schur kernel equivalence and congruence for an invertible auxiliary block, retaining direct source residuals, then specialize it to the stated same-price unfolding interface without assuming the physical block invertible.",
-      "brief": "00_WORK/tasks/WRK-A4D-LEAN-SCHUR-STATIONARY-TRANSFER.md"
-    },
-    {
       "id": "WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
