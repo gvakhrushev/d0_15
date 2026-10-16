@@ -17,6 +17,10 @@ rank-aware source tangent (1983 вместо16383 целевых shell-комп�
 Hessian не заменяет их. Для смешанных Fourier velocities сохраняются полные
 bilinear terms; здесь отдельно разобран field-only q/−q сектор.
 
+## Требования к воспроизведению
+
+Нужны Python 3.10 или новее и SymPy 1.14.0. Предыдущий неизменённый CAR-owner использует `int.bit_count`, которого нет в Python 3.9; проверено на Python 3.12.14. Команды ниже используют `python3`, который должен указывать на поддерживаемый интерпретатор.
+
 ```sh
 python 02_REGISTRY/research/certificates/a4d_memory_rank_continuation_check.py
 python -O 02_REGISTRY/research/certificates/a4d_memory_rank_continuation_check.py
