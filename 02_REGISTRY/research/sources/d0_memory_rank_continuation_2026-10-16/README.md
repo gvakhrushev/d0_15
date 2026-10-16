@@ -17,6 +17,10 @@ rank-aware source tangent (1983 вместо16383 целевых shell-комп�
 Hessian не заменяет их. Для смешанных Fourier velocities сохраняются полные
 bilinear terms; здесь отдельно разобран field-only q/−q сектор.
 
+## Требования к воспроизведению
+
+Нужны Python 3.10 или новее и SymPy 1.14.0. Предыдущий неизменённый CAR-owner использует `int.bit_count`, которого нет в Python 3.9; проверено на Python 3.12.14. Команды ниже используют `python3`, который должен указывать на поддерживаемый интерпретатор.
+
 ```sh
 python 02_REGISTRY/research/certificates/a4d_memory_rank_continuation_check.py
 python -O 02_REGISTRY/research/certificates/a4d_memory_rank_continuation_check.py
@@ -38,3 +42,14 @@ CAR definitions предыдущего пакета по SHA256. Он не за�
 Einstein/refinement terminal. Исходная v8-цена не меняется. Свежие fullrank
 shell/q0 результаты другого исполнителя на b1283e96 потреблены как текущий
 контекст, не переобъявлены результатом этого пакета.
+
+## Продолжение: смешанный memory-fibre crossing
+
+Точный интервал сертифицирует единственный crossing аналитического complex
+q3300-блока на каждую фиксированную пару `(d,o)` из root box, на
+`t in (0.42,0.44)`, и отрицательное спаривание с допустимым source-neutral
+касательным направлением памяти. См. [полный вывод](../../A4D_MEMORY_FIBRE_CROSSING_TRANSVERSALITY.md)
+и [воспроизводимый результат](../d0_memory_fibre_crossing_2026-10-16/RESULT.json).
+Это исключает second-order jet только для pure q/-q velocity при нулевой
+первой скорости памяти; смешанные velocities и остальные режимы остаются
+открытыми. Это не доказательство сходящейся nonlinear branch или ОТО.
