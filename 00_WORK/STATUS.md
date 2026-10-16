@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 13 | 0 | 0 | 0 | 13 | 0 / 5 |
-| **Total** | **16** | **0** | **0** | **1** | **17** | **1 / 10** |
+| WORKER | 13 | 0 | 0 | 0 | 13 | 0 / 10 |
+| **Total** | **16** | **0** | **0** | **1** | **17** | **1 / 15** |
 
 ## Repository Queue / Control Tasks
 
