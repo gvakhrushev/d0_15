@@ -1,6 +1,12 @@
 {
   "checks": [
     "literal_CAR_parent_exact_bytes",
+    "grade_four_obstruction_witness_is_hermitian",
+    "grade_four_obstruction_witness_squares_to_identity",
+    "grade_four_obstruction_witness_is_trace_free",
+    "grade_four_obstruction_witness_source_neutral_0",
+    "grade_four_obstruction_witness_source_neutral_1",
+    "grade_four_obstruction_witness_source_neutral_2",
     "own_seed_whitening_and_normalization",
     "full_symmetric_source_0",
     "seed_source_zero_0",
@@ -73,7 +79,7 @@
     "second_jet_range_equation_exact",
     "obstruction_independent_of_acceleration"
   ],
-  "exact_checks": 72,
+  "exact_checks": 78,
   "native_price_changed": false,
   "new_curved_native_stationary_solution": false,
   "nonlinear_obstruction": {
