@@ -74,7 +74,7 @@
     "use": "Laplace-type convention and a2/a4 formula; actual native coefficients derived here"
   },
   "sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": "c2ac4eb7b0832ea9b2c06cd04ab13c515ecffded7fe3d0a49e9f1f5bdc81df98",
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
     "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
     "02_REGISTRY/research/A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md": "861eb7b753d333b8b51de55145a9a0078773854a74f0f619baa13056604d0eb9",
     "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
@@ -96,5 +96,12 @@
     "work_plane": "PASS",
     "agent_protocol": "PASS",
     "generated_work_views": "PASS stale=0"
+  },
+  "document_fingerprint_refresh": {
+    "date": "2026-10-16",
+    "previous_owner_sha256": "c2ac4eb7b0832ea9b2c06cd04ab13c515ecffded7fe3d0a49e9f1f5bdc81df98",
+    "change": "one new finite-source consumer section; removing it restores bb6a704d owner byte-for-byte",
+    "scientific_helpers_and_outputs_changed": false,
+    "old_scientific_replays": false
   }
 }

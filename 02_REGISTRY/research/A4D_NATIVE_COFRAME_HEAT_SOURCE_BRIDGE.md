@@ -354,6 +354,20 @@ finite-price/source limit и собственный native generation/preparatio
 остаются необходимыми: коэффициенты нельзя выбирать для равенства Einstein.
 Исходный fixed-smooth-g/fixed-tau/raw-l1 terminal не изменён.
 
+## 7. Finite-source consumer: fixed time теперь доказан
+
+[Новый finite heat/source theorem](A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md)
+закрывает fixed-positive-time часть прежнего пробела §6. Для настоящего
+variable-field full16 operator выведены clock-error с global normalizer,
+uniform full-grid Gårding, actual norm-resolvent consistency и сильная
+raw sum сходимость всех independent coframe/link/observer sources.
+На exact full-amplitude joint roots собственная scale equation ограничивает
+matter eigenshell, что даёт R-source compactness без фиксации ранга и
+без удаления workspace/reference. Это не uniform small-time expansion,
+не LC pullback и не o(h^2) comparator. Поэтому (11) всё ещё требует
+quantitative two-scale source remainder и actual native calibration;
+новый fixed-time theorem не разрешает оставить только Einstein term.
+
 ## Проверка и публикация
 
 Полные exact Gram/kernel, LC-sign/pp-wave identities, density shift и

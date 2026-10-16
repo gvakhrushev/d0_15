@@ -162,6 +162,26 @@ repeat unchanged roots or promote continuum coefficients to a finite
 source theorem. Remaining estimate: uniform finite-B trace AND first
 source approximation under the derived physical record/calibration law.
 
+The finite-B/source premise is now consumed by
+`A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md`, with only its new bounded helper
+in `sources/d0_finite_heat_source_limit_2026-10-16/`. It proves the full
+same-operator clock bounds, discrete Gårding and fixed-positive-time
+trace/raw independent-field source convergence for a controlled smooth
+full16 true-adjoint stencil. At exact unrestricted preparation-critical
+joint roots, coframe scale balance bounds the actual matter eigenshell;
+reduced-density compactness gives its full field-source limit. No
+reference/workspace/grade or moving normalizer is dropped. Consumer:
+compare this complete continuum native source with the reconstructed
+Einstein covector through the actually admitted variation image. The
+original fixed-g/tau h^-2 terminal, physical native calibration, LC
+pullback and quantitative short-time source window remain open. Source
+norm explicitly scales link tangents as delta A=h xi A. Smallest check:
+new finite-clock inequalities and noncommuting full16 moving-observer/
+normalizer derivative, exact variable-coefficient CAR square, and
+independent analytical review of the spatial/raw-source/matter proofs.
+No old root/kernel/Lean replay. Write paths: this brief, primary/route/
+README, the existing coframe bridge consumer, the new owner/source folder.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

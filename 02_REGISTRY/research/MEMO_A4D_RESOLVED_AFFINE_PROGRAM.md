@@ -102,6 +102,27 @@ series retains the coefficients multiplying all geometric sources and
 actual matter, so the remaining finite-source/calibration proof cannot
 be replaced by selecting only a2 or adding a desired torsion term.
 
+The [finite heat/source theorem](A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md)
+now closes the fixed-positive-time analytic bridge for a controlled smooth
+full16 coframe/true-adjoint stencil. Same-operator clock error retains the
+global normalizer and all H+J+R rows. Full discrete Gårding and actual
+norm-resolvent consistency yield strong raw-sum convergence of independent
+coframe/link/observer sources, including all ten metric slots. At exact
+full-amplitude joint roots, the scale equation bounds the actual matter
+eigenshell; reduced-density compactness supplies its complete source limit
+without freezing rank or discarding retained auxiliaries. This is not a
+small-time expansion, an LC pullback, proof of a nonflat joint sequence or
+the original h^-2 comparator estimate. The new consumer is equality of
+this definite full continuum source to the intrinsic Einstein source,
+with the actual admission/clock/measure law and matter.
+
+The coordinated [stored metric-image calculation](sources/d0_native_gr_source_image_2026-10-16/RESULT_RU.md)
+computes the permitted ranks10/9/8/7/5 and a surviving Bianchi-compatible
+source. A conformal row completes one fixture but fails an exact exceptional
+smooth momentum. Its now-published helpers/outputs are preserved by input
+identity; ambient ten-row convergence does not erase this admissibility
+obstruction or add a scalar source law.
+
 The [full-price scale balance](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement)
 requires `M z beta Z<1`. Finite minmax, on uniformly controlled full16
 coefficients, gives `Z>=c/beta^2` independently of the integer record-depth
