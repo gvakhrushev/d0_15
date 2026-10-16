@@ -2,7 +2,7 @@
 
 Модуль `D0.Research.SourceReflectionKernel` фиксирует тождества конечных вещественных координатных пространств. `Lin X Y` — матрица со строками в кообласти. Действие — `apply L x = L *ᵥ x`. Подъём ковектора — `pullback L e = Lᵀ *ᵥ e`, так что `(L* e)` спаривается как `e (L x)`. Правый обратный — отдельная гипотеза `IsRightInverse L W`, то есть `L * W = 1`. Эта гипотеза остаётся гипотезой: конечная лемма не даёт функционально-аналитического допуска `W` и не даёт физического допуска `W`.
 
-Полный `lake build` цели `D0.All` не запускался. `All.lean`, `ClaimMap` и `02_REGISTRY/formal_support.csv` в этом PR не изменялись.
+Строка closure внесена в `formal_support.csv`. `All.lean` пересобран генератором. ClaimMap не менялся. Полный `D0.All` запускается CI при переводе PR в Ready.
 
 ## Источник и потребитель
 
@@ -81,12 +81,14 @@ Pull request #310 не сливается.
 
 Ранние узкие сборки того же файла давали `returncode=1` на целях `sum_fin10`, числовых ветвях `Fin` и лишнем шаге в `left_inverse_reflection_fails`. После правки доказательств повтор дал `returncode=0`. Цель `D0.All` не собиралась.
 
-## Строка formal_support, которая не внесена
+## Строка formal_support
 
 ```
 D0.Research.SourceReflectionKernel,D0/Research/SourceReflectionKernel.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/sources/d0_medium_lean_source_reflection_2026-10-16/RESULT_RU.md
 ```
 
+Она записана в `02_REGISTRY/formal_support.csv`. `All.lean` получен через `generate_lean_views.py`, не ручной правкой.
+
 ## Блокер
 
-Модуль `03_FORMALIZATION/D0/Research/SourceReflectionKernel.lean` остаётся вне замыкания `formal_support`. Пока CONTROL не добавит строку выше, проверка репозитория сообщает orphan. Задача остаётся `IN_PROGRESS`, pull request https://github.com/gvakhrushev/d0_15/pull/333 остаётся draft. Retire и отметка Ready в этом PR не выполняются.
+До слияния нужен зелёный `lake build D0.All` на голове Ready-PR. Конечная лемма по-прежнему не даёт функционально-аналитического или физического допуска `W`.
