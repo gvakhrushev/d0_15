@@ -170,6 +170,19 @@ condition and five decide every first field row along that same orbit.
 Use these finite tests only after obtaining the actual native `M_v` and
 kernel velocity, with the packet-to-native bridge. They do not supply
 that velocity, a joint root, physical encoding cost or transition law.
+The coordinated [finite detector/orbit proof](A4D_MEMORY_FINITE_DETECTOR_AND_ORBIT_OBSTRUCTION.md)
+now reduces the infinite even-orbit memory test for one common actual v
+to one nonnegative SOS `D3(M_v)` on a mixture of three real histories.
+Its zero is equivalent to those memory projections on the entire orbit;
+a positive value excludes that v as a common continuation of the orbit,
+with an explicit uniform residual bound. This orbit consumer retains the
+five-state first-field test and all other stationary equations. It does
+not replace the direct source-neutral test at the interior mixed root.
+The separate
+three-context tomography concerns real logical4 densities, retaining the
+full16 complement. The imported slim checker and the author's larger
+local diagnostic were not rerun here; neither observable algebra nor SOS
+derives physical detector admission.
 The incoming six-file package and its original execution receipts are
 preserved without replaying its unchanged calculation.
 
