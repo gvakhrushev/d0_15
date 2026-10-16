@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 9 | 0 | 0 | 0 | 9 | 0 / 5 |
-| **Total** | **12** | **0** | **0** | **1** | **13** | **1 / 10** |
+| WORKER | 8 | 1 | 0 | 0 | 9 | 1 / 5 |
+| **Total** | **11** | **1** | **0** | **1** | **13** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -27,7 +27,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-V8-FULL-HESSIAN-APPLY | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-WEIGHTED-SITE-SOURCE-TRANSFER | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-RAW-SOURCE-PRECISION-BUDGET | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-CORE-PRIMITIVE-ADMISSION-SPLICE | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
+| WRK-A4D-CORE-PRIMITIVE-ADMISSION-SPLICE | WORKER | IN_PROGRESS | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 
 ## Registry Health & Metrics
 
