@@ -2379,3 +2379,48 @@ values `5, 89`; its actual proposition types and standard-only axiom output
 are replayed by the certificate. The Fibonacci closed form and ratio identities
 remain separately derived and exact-checked rather than being attributed to
 those Lean declarations.
+
+## Moving-preparation source jet intake — 2026-10-16
+
+The user-supplied v3 moving-preparation package is now preserved under
+`02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/`. Its 102
+manifest payload files plus manifest are byte-identical to the corresponding
+files in the published SOURCE #310 tree at `ef782fe3d64cd973ff2d328a01bdacb934c7c8ec`.
+The intake receipt also pins the existing source replay checker, for 104
+source/control Git-blob matches total. The supplied ZIP SHA-256 is
+`65770f66136235e9794093cc0e3edc0d8961825daa6c3886db9dc104eab1f2f3`; the direct
+Russian proof is byte-identical to its embedded copy (SHA-256
+`67bea08cc8a39f49fe92f6d679eabe9d1ae2df7daee260dfe55c23641d45cb61`). The
+control intake checker independently verifies these pins and the replay
+receipt. All seven replay groups pass: v1, v2, exact and optimized v3, interval
+and optimized v3, and four executed mathematical mutations. The v3 checks
+cover 169 exact conditions, 56 interval conditions, and reject five false
+exact claims plus four executed mutations. These artifacts add no Lean source
+or claim-registry promotion.
+
+Mathematically, v3 proves the normalized first-variation identity
+`δ[Hβ(Δ)+R_A] = Tr[(ρ_A−ρβ)δΔ] + Tr[B_A δE]` for its fixed-event count
+instrument, including the moving preparation and its acceptance-normalization
+term. At the commuting reference it proves the required diagonal block jet
+even when admissible return variations introduce noncommutativity; it
+explicitly rejects extending that identity to a full operator-polynomial
+formula off the diagonal blocks. At `L=8`, the fixed event is `[355,1064]`
+with `T=20531`; outward-rounded bounds give trace distance below
+`3.390e-24`, preparation-covector trace norm below `5.069e-20`, normalized
+`h^-2` prepared-source bound below `8.031e-13`, and a strictly positive
+`h^-2` matter residual below `6.365e-10`. This is a conditional quantitative
+moving-preparation result in the declared finite instrument class, not a
+physical native source.
+
+The intake does not derive native D0 admission, the full common `H+J+R`, the
+map and tangent on `(q,D,b,m)`, native AF refinement, a physical Ward identity,
+or a curved Einstein/GR solution. In particular it does not discharge the
+existing requirement to compare the physical source against `rho0` on all ten
+metric components while retaining all 24 link directions and matter
+variations. The next mathematical bridge remains to derive this instrument,
+its state and fixed event from an existing native owner, map its variations
+into the full constrained joint tangent, and only then make the source and
+stationarity comparison. The receipt and replay report are
+`a4d_moving_preparation_control_intake_2026-10-16.json` and
+`a4d_local_record_to_matter_intake_replay_2026-10-16.json` in
+`02_REGISTRY/research/certificates/`.
