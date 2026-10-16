@@ -49,3 +49,13 @@ consumes the actual preparation-stationary owner and gives the exact price
 k+6-log Z/log(phi)+D(Phi sigma||Phi sigma_star)/log(phi), including all coherent
 preparations in that owner's domain. Normalized spatial aggregation is a
 separate conditional synthesis, not a selected native measure or GR closure.
+
+## History density and the independent-connection route
+
+The [history-density synthesis](../../A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md)
+constructs child-dependent golden clocks and preserves the full KL-weight price.
+It proves an exact density/coframe identity of the existing Lorentz star sector,
+then carries all coframe/link/measure equations to a nonflat conditional
+Einstein–scalar control. This is not a substitution of Lorentz Palatini for
+the compiler's actual positive-record curvature price. Native full action,
+clock/update admission, observer terms and the flat-shear boundary remain open.
