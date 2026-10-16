@@ -137,10 +137,12 @@ The old q3300 crossing is now explicitly scoped to its boost-unbalanced
 stored-state preparation; it does not transfer to the full-Lorentz branch.
 The exact CAR-balanced witness has a stationary affine preparation segment
 from `I16/16` to its rank-one projector. A direct q=(3,3,0,0) outward
-interval certificate proves constant inertia `12+/1-` on the whole segment
-and the complete owned root box. See
+interval certificate proves constant inertia `12+/1-` on the inherited
+13-coordinate stored-field restriction, over the whole segment and owned
+root box. The extra independent full-Lorentz boost/link Hessian rows are
+not certified by that old field section or a supplied Schur elimination. See
 `02_REGISTRY/research/A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md` and its
-source packet. This removes q3300 as a crossing-based route in that branch;
+source packet. This removes a crossing of that tested13D restriction;
 the original response-decoupling terminal remains open, as do all other
 Fourier modes, coupled nonlinear kernels, native gate admission and
 refinement/recovery. No lifecycle state or task terminal is changed.

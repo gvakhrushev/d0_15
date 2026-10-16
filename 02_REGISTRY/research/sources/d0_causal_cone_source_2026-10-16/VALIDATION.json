@@ -29,7 +29,7 @@
   },
   "new_artifacts_sha256": {
     "02_REGISTRY/research/A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md": "34c801176026f4e89868eb258183b96286724fade4c9d80d98669edd011f76b1",
-    "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/CONSUMED_PARALLEL_RESULTS.json": "7b018d6ebedca0683e808975a8b7ee017cd799d679dff85fe4dbd74fd4a3a93a",
+    "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/CONSUMED_PARALLEL_RESULTS.json": "0d55f1d380857d2d5e2192324e1c16265580a4190079c50ada62276a8025044a",
     "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/README.md": "785d27a2af672a81ce695ec2b3f9a48d6baea0249c20e8ab32d74071cd9b4e76",
     "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/RESULTS.json": "bb24c64704debd242d388804a697c98050384b90c4b7f831be616fbe3265fd9f",
     "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/check_causal_cone_source.py": "3dd6e594e106f7bb5f6453bf9ab5f1bfc34dd4cf891d7d2fa83531b6353c059a"

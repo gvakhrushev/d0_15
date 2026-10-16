@@ -1,4 +1,18 @@
 {
+  "balanced_path_intake": {
+    "conclusion": "balanced path is stationary on declared full-Lorentz matrix domain; 12+/1- is certified only on inherited13D stored-field restriction",
+    "replay": false,
+    "scope_review": "extra full-Lorentz boost/link Hessian and its transverse Schur map are not supplied; scientific owner asked to clarify; common primary/brief corrected",
+    "sha256": {
+      "02_REGISTRY/research/A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md": "a7edf05024dca92222fb29266ce9e0f138b203ffae7dbe00c0e7f6048e4f88a4",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/INPUTS.json": "c8ce96b43ec28942c777e6ed91d2098cff4eac3ebd9a23719d5dba28e471cf62",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/README.md": "8e30990f8977fdee9cc3b7d3222e25285976f81ef5105f8a9cd78b6eb05d8ec6",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/RESULT.json": "619a151b37b560fa765c85ed5b35af5009f43ab9524c633673607d0ee8a18ecd",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/VALIDATION.json": "d52fbeb246293c1b4bb836ed0352675ea6dadba029f3429e31dd5338a9c4f7e0",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/check_balanced_path.py": "ae5dd7fd77bad4619439d1224d57e99dfb5a2d4ef2561a0606275a63d45335a2"
+    },
+    "source": "514b2074"
+  },
   "consumers": {
     "curved_tensor": "projected16 actual curvature source; elliptic coefficient-level inverse/local variable isolation, not fullprice or Lorentz closure",
     "flat_moduli": "finite genuine-root second-response mismatch rules out unqualified EH+Lambda+sameR identity; fixedbeta theta source retains global shape",

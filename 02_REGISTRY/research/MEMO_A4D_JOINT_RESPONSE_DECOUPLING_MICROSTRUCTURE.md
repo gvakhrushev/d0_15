@@ -6017,17 +6017,20 @@ The earlier q3300 crossing is now separated from the actual full-Lorentz
 domain: its old pure state has occupation counts `(1,1/2,1/2,1/2)` and fails
 the exact boost Euler rows. For the balanced witness
 `chi_bal=(mask0+mask1+mask14+mask15)/2`, the full16 CAR source is balanced.
-The direct, unreduced `q=(3,3,0,0)` 13-coordinate interval checker proves
-that the affine stationary preparation segment from `I16/16` to
+The direct `q=(3,3,0,0)` interval checker evaluates the inherited
+13-coordinate stored-field restriction on this full-Lorentz-stationary
+preparation path and proves that the affine segment from `I16/16` to
 `|chi_bal><chi_bal|` has inertia `12+/1-` over the complete owned `(d,o)`
 box. A fixed midpoint-selected basis has a strictly negative scalar form and
 a positive 12D complement at both endpoints; affine interpolation and the
-Schur complement exclude every q3300 crossing on this branch. The detailed
+Schur complement exclude a crossing of this tested13D restriction. The detailed
 proof and replay are in
 [A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md](A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md).
 
-This closes the old q3300 spectral-flow route only for that balanced
-full-Lorentz path. The old state remains a valid scoped result in its smaller
+This excludes the inherited13D crossing on that balanced preparation
+path. It does not certify the Hessian on the extra independent Lorentz
+boost/link directions: the checker reuses the old `17-2*support(q)`
+field section, and no full transverse Schur elimination is supplied. The old state remains a valid scoped result in its smaller
 stored-source domain. Other q modes, coupled nonlinear kernels, native gate
 admission, refinement, and Einstein dynamics remain open; do not transfer
 either branch's result across the preparation boundary.
