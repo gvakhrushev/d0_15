@@ -1,0 +1,47 @@
+{
+  "schema": "d0-native-opposite-shell-transfer-validation/1",
+  "source_ref": "22ae725d4a470cb878d1a14f62e999f034a2d676",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T14:06:35.351158+00:00",
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/opposite_shell_transfer_interval.py",
+    "python3 -O 02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/opposite_shell_transfer_interval.py"
+  ],
+  "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "38aa3de0f37942a903072e8714c92106920263c9619fc673c830ab334a93d1f0",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/OPPOSITE_SHELL_TRANSFER_RESULTS.json": "ea994fef6edc38f4b01a98eed7379841f6a603dfbb02b641382bfa853f64db75",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_diagnostic.py": "6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval_weights.py": "0d8651dae3b6b7ba2049a1c71ac47895e536f9ccc5f85bf9978c133c75ccfc18",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_shell_transfer_interval.py": "13632b21ddf9d0363343d319ebe949295b6cf9d46195ffe2a48dcebbfacdfb32",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval.py": "2bb2f26be6d6484d087a2e2e2591b681c793b5932790e3552c2b9fdc5021c84d",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval_geometry.py": "7fa48bf73ba7e8c51dbdf0b4a432e2801ae04cf61a018303a3f345680f5284d6",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/shell_transfer_all_orbits.py": "d8db3de5b34e4ee4ac7a9efb4676072d18b455dec5a72f0beb6b46b40a99eb1a",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/opposite_shell_transfer_interval.py": "56c965ada2d3f86e32c4053caaa3ee207ed304db712f3d5ffca7d39a6f758c53",
+    "02_REGISTRY/research/sources/d0_native_field_transport_2026-10-16/stored_rotational_wave.py": "2b12f26d814a57cc99084e904deeac69a8f64a8d9a0eb9ee765e8104ef50bc37",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9"
+  },
+  "restriction_inertia": {
+    "positive": 6,
+    "negative": 2,
+    "zero": 0
+  },
+  "whole_root_box_distance_upper": 9.46751770254899e-05,
+  "reduced_KKT_complex_inertia": {
+    "positive": 11,
+    "negative": 7,
+    "zero": 513
+  },
+  "transferred_q": [
+    0,
+    1,
+    7,
+    0
+  ],
+  "peer_review": "independent read-only opposite-sign paircache, exact analytic diagonal branch, unchanged full16 interval geometry/arithmetic and scoped S4 congruence; transitive chart/CAR module pins added before final run",
+  "old_full_symbol_or_root_replay": false,
+  "full_mode_or_physical_or_GR_closure": false
+}

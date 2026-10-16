@@ -1514,6 +1514,25 @@ directions сохраняются как точные stationary preparation fam
 фиксированной геометрии; физическая независимость подготовки остаётся
 условием объявленной v8 задачи. Остальные Fourier блоки ещё открыты.
 
+§9 теперь классифицирует локальный однородный critical set. Полный q0
+shell constraint имеет rank7, и retained-normalizer Gram Hessian строго
+положителен на семи допустимых направлениях. При этом exact constant
+SO4-coframe family сохраняет positive heat Gram, меняя Lorentz Gram
+по трём направлениям сверх уже доказанных representation symmetries.
+Links остаются identity; SO4-link variations не допускаются. Это требует
+actual native preparation/observer pullback для физического выбора,
+а не нового подогнанного источника. Остальные nonzero-q блоки и
+неплоское продолжение ещё открыты.
+
+§8.1 full-joint owner теперь закрывает все шесть ненулевых shell-transfer
+orbits одним generic rank theorem и одним новым opposite-sign interval
+restriction; две точные restricted heat/CAR congruences переиспользуют
+старые bounds. Остались nonzero field blocks вне Omega−Omega, где T=0.
+Actual engine preparation из SO3-fixed E0, rank8/reference128, сохраняет
+ту же constant SO4-coframe root family при фиксированной density: link
+jets annihilate E0. Она не выбирает три Lorentz-Gram directions в этой
+цене. Faithful q0 inertia не переносится на boundary низкого ранга.
+
 ## 8. Проверка изменённого расчёта и повторное использование прежнего
 
 `certificates/a4d_native_complete_field_source_check.py` содержит единый

@@ -1,0 +1,50 @@
+{
+  "schema": "d0-native-zero-mode-validation/1",
+  "source_ref": "e198daca5106a4a5082a097191ea0399f7082b04",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T13:40:28.691702+00:00",
+  "commands": [
+    "python3 02_REGISTRY/research/certificates/a4d_native_zero_mode_check.py",
+    "python3 -O 02_REGISTRY/research/certificates/a4d_native_zero_mode_check.py"
+  ],
+  "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+  "scientific_output_bytes": 23988,
+  "scientific_output_sha256": "3191fff348ea6b4f16fa50013899f681c47428bca3f9e8db2bf22825bff94e38",
+  "exact_identity_checks": 268,
+  "full_real_q0_KKT_inertia": {
+    "positive": 14,
+    "negative": 7,
+    "zero": 2049
+  },
+  "rank_T0": 7,
+  "field_kernel_split": {
+    "SO4_constant_coframe": 6,
+    "observer": 3,
+    "Lorentz_Gram_changes_beyond_proved_representations": 3
+  },
+  "retained_density_annihilator": 2040,
+  "nonlinear_consumer": "owner Section9: local homogeneous critical manifold, analytic normal-coordinate IFT; source calculations do not replace proof",
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "38aa3de0f37942a903072e8714c92106920263c9619fc673c830ab334a93d1f0",
+    "02_REGISTRY/research/certificates/a4d_native_zero_mode_check.py": "03314122e34166535df63ba6f6ac55fc63ba2ad6a0fe271aa03cdb28bbf92324",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ZERO_MODE_RESULTS.json": "3191fff348ea6b4f16fa50013899f681c47428bca3f9e8db2bf22825bff94e38",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/zero_mode_constraint_check.py": "abe8395c6e05818894252982952043ab8757b74670036e3715107b794aa36ecc",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/homogeneous_price_convexity.py": "1112b7c41ef9006ce20c91cfed10ec33280d56509b083eb0b1fc49b82bddd78f"
+  },
+  "mathematical_peer_review": "independent read-only finite-power full-normalizer Hessian, T0 split, actual link source, SO4 coframe and nonlinear homogeneous critical-locus review",
+  "full_q3300_or_shell_matrix_replay": false,
+  "old_root_search_or_broad_suites_replayed": false,
+  "new_Lean_build": false,
+  "physical_or_all_mode_or_GR_closure": false,
+  "later_analytic_native_memory_consumer": {
+    "source_ref": "9379767b1d436472e4d2dcb98661d8598e65ceff",
+    "git_blobs": {
+      "02_REGISTRY/research/A4D_NATIVE_MEMORY_SOURCE_FIBRE.md": "0dbe97237dc0a2e3ae09501b9c47e100ece3b0b0",
+      "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/check_memory_source.py": "c423def694a9850fdff1f50b0e455793b400093d"
+    },
+    "owner_section": "9: actual SO3-fixed E0 density preserves constant SO4-coframe family",
+    "review": "complete source-fibre owner and helper read independently, no old171 replay; native mask phase and unscaled link-axis sign converted explicitly in primary memo",
+    "rank8_numerical_inertia_transfer": false,
+    "faithful_local_classification_extended_to_rank_boundary": false
+  }
+}

@@ -16,9 +16,11 @@
 одно значение второй вариации. Это снимает задачу обращения огромного
 внеспектрального amplitude-блока. Полный19-столбцовый полевой символ
 на `(3,3,0,0)` решён: инерция12+/1−/6zero, дополнительные нули отсутствуют.
-Две shell-transfer моды также решены в §8: все matter compatibility rows
-и reduced density/field saddle blocks классифицированы; непустые
-стационарные density families сохранены. Остальные Fourier блоки ещё
+Все ненулевые shell-transfer моды решены в §8: все matter compatibility
+rows и reduced density/field saddle blocks классифицированы; непустые
+стационарные density families сохранены. §9 замыкает нулевой блок и
+локальную однородную critical family: семь Gram directions положительны,
+три дополнительные Lorentz-metric directions сохраняются. Остальные Fourier блоки ещё
 нужно решить. Неплоский совместный root, физический допуск программы,
 полная native Cost−Info цена и предел ОТО здесь не утверждаются.
 
@@ -393,7 +395,7 @@ Tr_H W {D,D_vw}=0.                                  (19)
 Здесь использованы реальные stationary metric rows, parity, полный Fock
 trace и mixed q/−q support. Это не ambient правило для другой точки,
 не удаление Y из (14) и не новая предпосылка о GL-link admission.
-**Член `Tr W{D_v,D_w}` остаётся.** Общий finite fixture в §9 специально
+**Член `Tr W{D_v,D_w}` остаётся.** Общий finite fixture в §11 специально
 показывает ошибку удаления Y без условий этого доказательства.
 
 ### Конечная Gram-sum формула
@@ -541,7 +543,7 @@ coframe/link/observer скорость этой моды не является �
 stationary tangent. Это не запрет нелинейных решений с другими модами
 и не решение всех saddle blocks (15).
 
-## 8. Две shell-transfer моды: решение всех matter compatibility rows
+## 8. Все ненулевые shell-transfer моды: решение matter compatibility rows
 
 Для q=(2,0,0,0) ровно одна ordered shell pair имеет l=k+q:
 `k=−e0,l=+e0`. Для q=(1,1,0,0) их ровно две:
@@ -671,7 +673,432 @@ amplitude reconstruction, а не объявление исходного огр
 [SHELL_TRANSFER_SYMBOLS.json](sources/d0_native_joint_kernel_2026-10-16/SHELL_TRANSFER_SYMBOLS.json).
 В остальных частотах kernel и нелинейное неплоское продолжение OPEN.
 
-## 9. Проверки и следующий решаемый объект
+### 8.1. Единое shell constraint и перенос двух решённых restrictions
+
+Новый [shell_transfer_all_orbits.py](sources/d0_native_joint_kernel_2026-10-16/shell_transfer_all_orbits.py)
+замыкает rank/kernel T сразу для всех ненулевых occupied-shell transfers.
+С учётом spatial S3 и общей инверсии q это шесть представителей:
+q2000,q0200,q1100,q1700,q0110,q0170. Отдельная time role не переставляется
+как symmetry полного native SO(3) chart. Аргумент ниже действует при
+всех a>b>0, а не только на одном rational fixture или decimal root.
+
+Общее mean-slice разложение из §10 оставляет pure inactive coframes
+плюс три inactive stabilizers при q=2e_i; при q=e_i+s e_j остаются
+три relative-active angular coordinates и два inactive stabilizers.
+Pure inactive coframes не видны occupied endpoints. Для q=2e_i
+vacuum-to-bivector readouts stabilizers proportional к
+`u_r wedge K_r u_i`, `K_r=diag(0,[w_r]_cross)`. Их minor строк01,02,12
+равен `2 b^5(a−b)^4` как для i=0, так и для i=1. Это даёт rank3.
+
+Для q=e_i+s e_j возьмём k=−e_i,l=s e_j, s=+/-1 и mean contrasts
+`B_i=W,B_j=−W`. Буквальный stored ordered jet удовлетворяет
+
+```text
+J=Gamma(W)D_k+D_l Gamma(W),
+T_W=2[D_l Gamma(W)D_k+epsilon Gamma(W)].
+```
+
+Здесь Gamma нельзя переставлять через D_k произвольно. Пусть
+`t=exp(i*pi/4)`, `alpha=conj(t)−1`, `beta=t^s−1`. Полный scalar+bivector
+vacuum readout, divided by64alpha и multiplied слева на
+`diag(beta/conj(beta),1,...,1)`, справа на
+`diag(1/(2beta),1/(2beta),1/(2beta),1,1)`, равен карте
+
+```text
+W -> (u_j dot W u_i, u_j wedge W u_i),
+theta_r -> (0,u_r wedge K_r u_i).
+```
+
+Её minor строк scalar,01,02,12 и столбцов W0,W1,theta_r,theta_s равен
+`+2 b^6(a−b)^4` для (i,j)=(0,1), `−2 b^6(a−b)^4` для (1,2).
+Единственное ядро этой7x5 карты — W вокруг w_i, theta=0.
+**Только на этом ядре** `W u_i=0`, поэтому `[Gamma(W),D_k]=0` и
+`T_W=2(D_l D_k+epsilon)Gamma(W)`. Оставшийся множитель обратим:
+
+```text
+(D_l D_k+epsilon)* (D_l D_k+epsilon)
+  =2 epsilon(epsilon+h) I16 >0,
+h/epsilon=−o/(sqrt2*d) for s=+1, o/d for s=−1,
+d=a²+3b², o=2ab+2b², d−o=(a−b)²>0.
+```
+
+Ненулевое Gamma(W) потому обнаруживается оставшимися full16 rows.
+Это доказывает rank5, а полное mean-slice разложение даёт
+
+| transfer | rank T | dim kerT modulo6 representations | dim kerT* |
+| --- | ---: | ---: | ---: |
+| +/-2e_i | 3 | 12 inactive coframes | 253 complex |
+| +/-e_i+/-e_j, i!=j | 5 | 8 inactive coframes | 507 complex |
+
+Большие численные rank tests здесь не нужны.233 exact checks нового
+consumer включают actual21/19 chart columns, phase scaling и необходимый
+restricted commutator. Normal/optimized outputs побайтно совпали;
+[результат](sources/d0_native_joint_kernel_2026-10-16/ALL_SHELL_TRANSFER_RESULTS.json)
+и [validation](sources/d0_native_joint_kernel_2026-10-16/ALL_SHELL_TRANSFER_VALIDATION.json)
+сохраняют exact inputs. Сам consumer утверждает constraint rank, не
+инерцию полевого гессиана.
+
+Для **pure inactive-coframe restrictions** имеется дополнительная heat/CAR
+конгруэнция, не symmetry полного admissible chart. Пусть P — любая
+перестановка четырёх roles, `R=eta P eta`, `W=exterior(R)`, и A — матрица
+coframe jets. Из `P U=U R` следует при `q'=Pq,A'=P A R^T`
+
+```text
+D(Pk)=W D(k) W*,
+J_(Pq,A')(Pk)=W J_(q,A)(k) W*,
+X_(Pq,A')(Pk)=W X_(q,A)(k) W*.
+```
+
+R — signed permutation, а W — ортогональное действие на **всех16**
+exterior components, в том числе при detR=−1. Inactive support,
+lambda_k, shell128, полный Z и scalar weights (20) сохраняются после
+k→Pk. Поэтому `H_(Pq)(A',B')=H_q(A,B)`; изменение inactive coordinates
+само является signed permutation, независимой от root. Старые interval
+bounds переносятся на весь исходный root rectangle без новых запусков:
+
+| новая q | restriction inertia | reduced complex KKT inertia | исходный bound |
+| --- | --- | --- | ---: |
+| (0,2,0,0) | 9+ /3− | (12,6,259) | 5.853e−6 |
+| (0,1,1,0) | 6+ /2− | (11,7,513) | 1.702e−5 |
+
+Не утверждается, что R — допустимый link/frame gauge: он используется
+только для этих restrictions с zero link jets, чья полнота теперь
+обеспечена отдельным rank theorem. Opposite-sign q1700 и q0170 также
+конгруэнтны друг другу, но не приводятся к same-sign q1100 этим доводом;
+их Hessian restriction требует отдельной решённой базы.
+
+Эту базу теперь даёт единственный новый
+[opposite_shell_transfer_interval.py](sources/d0_native_joint_kernel_2026-10-16/opposite_shell_transfer_interval.py).
+Общий assembler §10 выбирает fixed decimal8x8 B на q1700, затем
+неизменённые full16 geometry и arithmetic helpers независимо проверяют
+конгруэнцию по всем4096 modes на всём исходном root rectangle. Новый
+q-cache независимо содержит469 unordered feature pairs,560 exact-equal
+directed edges и ровно две occupied transfers: `+e1 -> +e0` и
+`−e0 -> −e1`. Точные равенства energies используют analytic derivative,
+а не деление на малый interval. Full Z, feedback и оба знака matter R,
+phase conversion, decimal B и floating/Gram budgets сохраняются.
+Получено
+
+```text
+q1700: restriction inertia (6 positive,2 negative,0 zero),
+distance from signature <9.467518e−5<1
+throughout the entire owned root rectangle.
+```
+
+Нормальный и optimized JSON побайтно совпали. Полный
+[результат](sources/d0_native_joint_kernel_2026-10-16/OPPOSITE_SHELL_TRANSFER_RESULTS.json)
+и [validation](sources/d0_native_joint_kernel_2026-10-16/OPPOSITE_SHELL_TRANSFER_VALIDATION.json)
+сохраняют B и все bounds. Signed permutation переносит ту же оценку на
+q0170. Обе reduced complex KKT инерции равны(11,7,513) по (27).
+
+Тем самым **весь ненулевой occupied-shell difference sector** решён.
+Его field tangent состоит из шести доказанных representations;253/507
+complex density annihilators сохраняются. Все пока нерешённые nonzero-q
+блоки лежат вне Omega−Omega, где T_q=0 и остаётся только complete field
+symbol §10. Это не all-mode inverse: среди этих блоков пока строго решён
+лишь q3300, а q1240 является независимым diagnostic comparison.
+
+## 9. Нулевой блок и точная однородная critical family
+
+Здесь q=0 **вещественный**; density имеет восемь Hermitian16 momentum
+blocks с одной общей trace constraint. Это2047 реальных координат,
+не2047 комплексных. Отдельные reference-unitary verticals, affine shifts
+и nonzero-q density blocks сохраняются за пределами этого счёта.
+
+Пусть U — матрица, строки которой равны `u_r^T`, а
+`G_E=U U^T`. Этот Euclidean Gram не отождествляется с Lorentz Gram
+`g_L=U eta U^T`. При постоянных полях и identity links
+
+```text
+Delta_k=lambda_k(G_E) I16,
+lambda_k=ell^-2 sum_(r,s) bar z_r(k) z_s(k) (G_E)_rs. (28)
+```
+
+Таким образом все4096 modes и16 Fock grades остаются, но однородный
+coframe response скалярен на каждой fibre. Вариации P и Q не смешиваются;
+`Q X P=0` во всём однородном секторе, включая link directions. Это точная
+momentum-selection identity, а не замена signed resolvent положительным.
+
+### Полный shell constraint имеет rank7
+
+На shell `k=+/-e_r` имеем `X_k=gamma delta(G_E)_rr I16`,
+`gamma=128−64sqrt2>0`. После удаления средней энергии coframe часть T0
+имеет rank3: все четыре `delta(G_E)_rr` должны совпадать.
+
+Четыре stabilizer-link variations имеют `S_r u_r=0`, где
+`S_r=diag(0,xi_r[w_r]_cross)`. Их full16 shell blocks traceless,
+поэтому они не могут сократиться со скалярной coframe частью. Если их
+комбинация имеет T0=0, её vacuum-to-two-spatial-creation components дают
+
+```text
+(M−tr(M)I3) w_a=0 for a=1,2,3,
+M=sum_r xi_r w_r w_r^T.                              (29)
+```
+
+Общий ненулевой scalar phase в каждом occupied block не меняет вывод.
+Для `c=a−b>0`, `w0=−b*1`, `wi=−b*1−c*ei` determinant трёх spatial
+legs равен `−c²(a+2b) !=0`, следовательно M−tr(M)I=0 и M=0.
+Четыре readouts `M12−M13,M12−M23,M11−M12,M12` имеют determinant
+`b^4 c^4>0` по xi0..xi3. Отсюда все xi нулевые. Это analytic rank4
+на всей области a>b>0, с actual full16 CAR interpretation (29).
+
+Итак, rank T0=7, ker T0 имеет dimension16:13 coframe directions с
+равными diagonal Gram jets и3 observer directions; все link jets нулевые.
+Остаются7 Gram directions,6 internal Euclidean-frame directions и3
+observer directions. Density ker T0* имеет2040 реальных направлений.
+[zero_mode_constraint_check.py](sources/d0_native_joint_kernel_2026-10-16/zero_mode_constraint_check.py)
+проверяет actual CAR identity и малые analytic determinants; большая
+2070-dimensional matrix для этого не нужна.
+
+### Положительность семи Gram directions с полным normalizer
+
+В (28) lambda линейна по всем10 symmetric slots G_E. Для вариации f_k
+положим `e_k=B_k^m`, `w_k=16 e_k/Z`, `y_k=f_k/B_k`,
+`A_k=1−z+z e_k`, `c_m=(m−1)alpha=beta(1−1/m)`.
+Полный finite-power price Hessian равен точно
+
+```text
+F_price''[f,f] = c_m E_w(y²) − beta(E_w y)²
+ − M beta z c_m Z E_w(y²/A)
+ + M beta² z² Z E_w(e y²/A²).                        (30)
+```
+
+Здесь второй член — именно retained global-normalizer response. В отличие
+от nonzero-q formula (20), он **не нулевой**. Matter price при identity
+links линейна по G_E; её coupling к density остаётся в KKT через T0.
+
+Ground mode даёт f0=0 и w0=16/Z. Weighted Cauchy на остальных modes:
+`(E_w y)² <=(1−w0) E_w(y²)`. При `delta=M beta z Z/(1−z)` и A>=1−z
+последний член (30) неотрицателен, поэтому
+
+```text
+F_price'' >= beta[w0−1/m−(1−1/m)delta] E_w(y²)
+          > (3 beta/10) E_w(y²).                     (31)
+```
+
+Для этого используются actual interval Z<50, beta<1, M=128,z=2^-20,
+m=16384: `w0>8/25`, `delta<6400/(2^20−1)<1/100`, `1/m<1/10000`.
+Точный coarse gap `3099/10000` больше3/10; actual bracket на root
+rectangle больше0.3196384165. Нулевой mode и его16-fold multiplicity
+существенны для этой оценки. Это fixed-L8 bound, не refinement-uniform
+estimate и не новое physical heat law.
+
+Моды e_r и e_r+e_s определяют все10 Gram slots: их probe determinant
+равен `64 gamma^10 !=0`. Следовательно (31) строго положительно для
+любой ненулевой Gram variation, в частности для семи admissible
+directions. [homogeneous_price_convexity.py](sources/d0_native_joint_kernel_2026-10-16/homogeneous_price_convexity.py)
+сверяет (30) независимой symbolic derivative и подставляет native full-Z
+intervals. Малый symbolic fixture проверяет формулу, не заменяет lattice.
+
+### Девять field zeros и три дополнительные Lorentz-metric directions
+
+Пусть R — **одна постоянная** SO(4) rotation всех coframes,
+`u_r -> R u_r`, при observer e0 и links=I. G_E и каждый Delta_k точно
+сохраняются; подготовка P/128 тоже может остаться прежней. Это допустимая
+однородная field curve по (3), **не SO(4)-link variation**.
+
+Restricted price invariance сама по себе не доказывает полной field
+стационарности. Здесь недостающие строки проверяются отдельно:
+
+```text
+Tr16[C(u_r) iota(u_s) Gamma(S_r)]=4 u_s^T S_r u_r=0,
+S_r u_r=0.                                          (32)
+```
+
+Поэтому все admitted homogeneous stabilizer-link source rows нулевые.
+Coframe source moments зависят от того же G_E и остаются нулевыми;
+ненулевые Fourier rows исчезают по translation invariance. Matter
+equations сохраняются с тем же Delta и normalized full128 preparation.
+Таким образом это точные joint roots полной объявленной v8 задачи,
+стационарные и относительно неоднородных первых вариаций.
+
+Пространственные SO(3) rotations уже входили в representation directions.
+Ещё три directions меняют Lorentz Gram:
+
+```text
+g_L(R)=U R^T eta R U^T=−G_E+2(U n)(U n)^T,
+n=R^T e0, n^T n=1.                                 (33)
+```
+
+Его differential имеет rank3; эти направления не лежат в шести ранее
+доказанных representation directions. Они не отбрасываются как physical
+gauge. Любой более широкий physical coordinate quotient требовал бы
+своего admission theorem. Все метрики этой семьи постоянны и плоские;
+неплоский или continuum Einstein root отсюда не следует.
+
+Инерция реального reduced shell-density/field q0 KKT из (15) теперь
+
+```text
+(14 positive,7 negative,2049 zero), dimension2070.   (34)
+```
+
+Это7 положительных Gram directions, rank7/7 saddle pairing и9 field
+zeros плюс2040 density annihilators. В отличие от q/−q в §8, эти числа
+**не удваиваются**. Excluded Q-amplitude/reference/affine components
+перечислены выше; полный исходный amplitude Hessian не классифицирован.
+
+### Локальная нелинейная классификация однородных roots
+
+В достаточно малой окрестности рассматриваются translation-invariant
+fields и translation-invariant reduced density. Для любых homogeneous
+links P и Q не смешиваются по momentum, поэтому matter equation равна
+`E=P Delta P−epsilon P=0`. Её derivative имеет8 независимых normal rows:
+четыре link angles, три diagonal Gram differences и `e=epsilon−gamma*d`.
+Здесь d — свободная общая диагональ, так что именно e, а не epsilon,
+является normal coordinate с нулевым значением. Когда link
+angles и diagonal differences нулевые, epsilon=gamma*d решает все E
+тождественно при произвольных остальных coordinates. IFT для этих
+выбранных8 строк поэтому заставляет любой близкий full solution иметь
+именно links=I и G_E диагональ d*I. Остальные matter rows не удаляются:
+они автоматически выполнены на найденном normal-zero solution.
+
+Пусть m_r — суммарная density mass пары +/-e_r, sum m_r=1. Coframe
+Euler rows дают6 off-diagonal уравнений F_price и4 diagonal equations
+`partial F_price/partial(G_E)_rr+gamma*m_r=0`.
+Их сумма и шесть off-diagonal rows — critical equations для
+`V(d,offdiag)=F_price(G_E diag=d)+gamma*d`. Из (31), по continuity в
+малой convex neighbourhood с Z<50 и B>0, V строго convex. Существующий
+G_E* потому является единственным близким critical Gram. Individual
+diagonal rows затем задают m_r=1/4; четыре link rows линейны по density.
+
+При фиксированном coframe/observer admissible densities образуют открытую
+положительную часть affine fibre dimension2040. Rank7 сохраняется в
+окрестности по найденному ненулевому minor. В частности P/128 является
+положительной точкой fibre для всей SO(4) orbit по (32). Получается
+локальная гладкая critical family dimension `6+3+2040=2049` в данном
+translation-invariant density/field sector. Все её точки стационарны
+против полных local first variations по translation invariance. Другие
+nonzero-q density fibres и reference unitaries этим не исключены.
+
+Это точная локальная однородная классификация условной цены, а не
+физический выбор из семейства (33). Она меняет следующий consumer:
+native preparation/observer pullback должен быть получен из actual D0
+transition; positive heat geometry не выбирает Lorentz Gram сама.
+
+### Actual native memory не снимает эти три Lorentz-Gram направления
+
+Новый [memory-source owner](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md) сохраняет
+ту же full-price задачу и actual closed engine. Его собственная whole-blank
+орбита лежит в SO(3)-fixed sector
+`E0=span{1,e0,e1 wedge e2 wedge e3,volume}` полного16 carrier. Для её
+нормированной sigma_j имеем `Gamma(S)sigma_j=sigma_j Gamma(S)=0`
+при любом spatial S. Это не замена full16 operator четырьмя компонентами.
+
+Зафиксируем любую из этих sigma_j и подготовку
+`rho_j=P_Omega/8 tensor sigma_j` (rank8, reference всё ещё128).
+Для **каждого** близкого constant SO4-coframe R из (33), observer e0 и
+identity links остаются joint roots с той же rho_j. Matter equation
+сохраняется, поскольку весь occupied block равен epsilon I16, а coframe
+jets Delta скалярны и зависят только от неизменного G_E. Для любого
+homogeneous admitted stabilizer S_r u_r=0 actual ordered link jet равен
+
+```text
+J_r(k)=8[t_r C(u_r)−bar(t_r) iota(u_r)]Gamma(S_r).
+```
+
+Здесь Gamma(S_r) коммутирует с обоими own-leg operators; поэтому
+`J_r sigma_j=sigma_j J_r=0` и весь matter link source
+`Tr sigma_j {D_k,J_r(k)}` нулевой. Heat/feedback source по-прежнему
+нулевой по (32); неоднородные first rows исчезают по momentum trace.
+Одновременное exterior-eta изменение convention сохраняет E0 и этот довод.
+
+Таким образом даже **фиксированная actual native memory preparation**
+не выбирает Lorentz Gram из (33) в объявленной условной цене. Нужен
+дальнейший native joint transition/action/readout consumer. Существование
+этой rank8 family не переносит real inertia (34) или локальную полноту
+faithful density classification на boundary низкого ранга: там сохраняется
+rank-free equation `E C0=0`, а не автоматически E=0.
+
+## 10. Общая сборка ненулевого символа через257 фазовых моментов
+
+Следующий consumer — общий inverse/kernel estimate оставшихся неоднородных
+блоков (15), а не независимый каталог численных ranks. Новый
+[nonzero_symbol_algebra.py](sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py)
+собирает любой q!=0 на том же полном native carrier, сохраняя все члены
+(20). Он заменяет повторное умножение4096 полных16x16 matrices конечной
+Clifford/Laurent algebra; исходный action или набор вариаций не меняется.
+
+### Полный явный quotient без подобранного projector
+
+Пусть I={r:q_r!=0}, p=|I| и kappa_r=1−t_r(q). На active legs положим
+`B_r=Omega_r/kappa_r`, `a_r=B_r u_r`. Общая spatial representation
+добавляет один S ко всем B_r и `S u_r` к inactive a_r. Единственный
+представитель с `sum_(r in I) B_r=0` получается вычитанием среднего.
+Три компоненты каждого из p−1 contrasts `B_r=e_j,B_last=−e_j`
+дают весь active complement. На каждом inactive leg остаются четыре
+произвольных a_r и stabilizer `Omega_r=theta_r[w_r]_cross`. Поэтому
+
+```text
+dim field quotient = 3(p−1)+5(4−p)=17−2p.           (35)
+```
+
+Три observer directions уже выделены как representation zeros. В (35)
+удалены только доказанные spatial representations; matter со-преобразуется
+при переходе к этому представителю. Это не новый physical gauge theorem.
+Контрастная параметризация не делит на kappa; обратное восстановление
+из исходного jet делит. На фиксированном L8
+`|kappa_r|>=sqrt(2−sqrt2)` для active r; refinement-uniform bound этим
+не установлен. При self-conjugate q real dimension (35) не удваивается.
+
+### Точное сокращение операторов, сохраняющее full16 trace
+
+Восемь Majorana generators задают256 ортогональных Clifford monomials:
+`Tr16(A*B)=16 sum_I conjugate(a_I)b_I`. Для J достаточно64 coefficients
+степеней1,3; для X —99 coefficients степеней0,2,4. Это координаты
+полных операторов на всех16 Fock components, а не ограничение материи.
+
+J имеет девять Laurent phases `0,+/-e_r`. У X потенциальные `+/-2e_r`
+сокращаются **точно** по CAR и own-leg transport. Например, creator
+коэффициент proportional к
+`t_r(q) C(u_r)(C(a_r)+C(u_r)Gamma(Omega_r))`
+`+(C(a_r)+C(u_r)Gamma(Omega_r))C(u_r)` равен нулю из
+`Omega_r u_r=kappa_r a_r`; inactive case следует из stabilizer equation.
+Численный threshold для удаления coefficients не используется. Остаются
+
+```text
+supp X subset {0,+/-e_r,+/-e_r+/-e_s:r<s}, size33;
+|(supp X)−(supp X)|=257.                            (36)
+```
+
+Взвешенные Gram sums в (20) теперь являются contractions этих
+coefficients с257 exact-phase moments весов X и соответствующими
+моментами J. Scalar weights по-прежнему используют все4096 momenta,
+full Z, feedback, signed matter resolvent и occupied reference128.
+Весь спектр имеет119 exact Q(sqrt2) features. Различные features
+интервально отделены на полном исходном root rectangle более чем
+0.0035540733963332876;7140 общих scalar divided differences, включая
+analytic diagonal values, переиспользуются для всех q.
+
+Только при stationary moments (18) J-часть дополнительно сводится к
+
+```text
+H_J(v,w)=sum_k chi_k *
+ [Tr16 J_v(0)*J_w(0)+Tr16 J_v(−q)*J_w(−q)].         (37)
+```
+
+Creator/annihilator cross traces исчезают по Fock charge; оставшиеся
+phase differences —0,+/-e_r,e_r−e_s, чьи chi-moments равны sum chi.
+По умолчанию API считает полный weighted J Gram. Вне stationary root
+он даёт first-jet block (20), а полный constrained Hessian дополнительно
+требует `Tr W{D,D_vw}`; shortcut (37) там не применяется. Даже при root
+на q in Omega−Omega необходимо отдельно наложить T=0 и вернуть density
+rows: общий assembler сам их не удаляет и не решает.
+
+Новая проверка q=(1,2,4,0), dimension11, сравнивает **всю** матрицу с
+независимой full4096x16 сборкой. Maximum entry error <1.6e−13 для
+weighted и stationary-two-point вариантов. Точные CAR, generic
+same-axis cancellation и arbitrary-kappa quotient identities проверены
+отдельно. Hostile nonstationary fixture отвергает (37), сохраняя полный
+weighted Gram. Численный положительный спектр новой частоты пока не
+является interval inertia certificate или доказательством общего inverse.
+
+Численный `owned_root_center` в API не доказывает exact stationarity:
+(37) используется как аналитическая гипотеза истинного root, а finite
+comparison исполняется на его указанном decimal centre. Возвращённый
+H_q — complex symbol; real block пары q/−q получается realification
+с сопряжённой базой. У self-conjugate q берутся только real amplitudes.
+
+## 11. Проверки и следующий решаемый объект
 
 [kernel_check.py](sources/d0_native_joint_kernel_2026-10-16/kernel_check.py)
 проверяет тождества на самостоятельном exact rational fixture той же
@@ -708,6 +1135,23 @@ q3300 interval calculation. Normal и optimized scientific JSON побайтно
 время исполнения. [Validation](sources/d0_native_joint_kernel_2026-10-16/VALIDATION.json)
 связывает этот запуск с source hashes и опубликованным (22). Вся старая
 история root/thermal/central suites повторно не запускалась.
+
+Отдельный [q0 consumer](certificates/a4d_native_zero_mode_check.py)
+исполнил268 новых exact checks; его normal/optimized scientific JSON
+побайтно совпал. [Результат](sources/d0_native_joint_kernel_2026-10-16/ZERO_MODE_RESULTS.json)
+и [validation](sources/d0_native_joint_kernel_2026-10-16/ZERO_MODE_VALIDATION.json)
+сохраняют аналитические q0 bounds, real dimensions и exact input hashes.
+Нелинейная homogeneous classification — доказательство §9, использующее
+эти identities и обычный локальный IFT, а не numerical root search.
+
+Общий nonzero assembler прошёл11 новых focused groups, включая новую
+независимую full16 матрицу. Его
+[результат](sources/d0_native_joint_kernel_2026-10-16/NONZERO_ALGEBRA_RESULTS.json)
+и [validation](sources/d0_native_joint_kernel_2026-10-16/NONZERO_ALGEBRA_VALIDATION.json)
+отделяют exact algebra от numerical comparison. Normal/optimized
+scientific JSON совпал после удаления только времён исполнения.
+Старые три interval-symbol runs не повторялись: их source hashes
+проверены, а owner дополнен новым потребителем без изменения расчётов.
 
 Дальнейший конкретный объект — остальные Fourier matrices (14) на полной
 карте (5), с удалением только **доказанных** representation symmetries.

@@ -29,7 +29,8 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
-| The complete regular stored-adjoint field chart and exact nonlinear matter reduction are explicit. All 16,744,448 real off-shell amplitude coordinates are eliminated; shell preparation, moving normalization and reference remain. The joint operator `[H_red,T*;T,0]` is solved on q3300 and two shell-transfer modes: only proved representation field velocities remain, with the density families retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Sections 3–8. Remaining Fourier modes, nonlinear continuation and physical admission remain open. |
+| The complete regular stored-adjoint field chart and exact nonlinear matter reduction are explicit. All 16,744,448 real off-shell amplitude coordinates are eliminated. Every occupied-shell coupling block is solved; the faithful homogeneous critical set is locally classified. Its three additional Lorentz-metric directions survive even the actual native memory preparation. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Sections 3–10. The remaining nonzero blocks are field-only, with one shared full16 assembler. Nonflat continuation, physical admission and refinement remain open. |
+| The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
 | The actual stored Dirac on the entire bounded exact adjoint class has a full16 positive representation with unitary returns. The same literal v8 instrument, heat/feedback/matter price and all observer/preparation source jets intertwine on every admitted curve. A genuinely curved native row-rotation has an explicit full128 matter second lift, but its complete directional Hessian lies strictly between0.089 and0.091. | [Unified source, Sections 0.3 and 3.3–3.5](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). The operator/program arrow is established for the declared conditional v8 price; physical primitive/price admission and native refinement remain. The native wave's first velocity is excluded from the joint critical kernel, not all curved roots. |
 | One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
 | The complete second AF price has an exact coherent preparation minimum, noncommuting Hessian and Schur elimination. Its density-block inverse satisfies `norm(M_T^-1)<=log(phi)/p^6` uniformly in level and dimension. A coherent compiler preserves the selected price up to constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [full second source and uniform inverse, Section 5.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). This is the actual output-channel metric, not a replacement Gibbs action or full field/amplitude inverse. Admission and physical action selection remain separate. |
@@ -108,6 +109,35 @@ annihilators. Those give exact positive stationary preparation families at
 fixed geometry in the declared v8 class; they are retained physical-density
 variations, not purification gauge. The next calculation is the remaining
 Fourier matrices and shell-source blocks on the same complete chart.
+The zero mode is now also closed analytically: rankT0=7, seven constrained
+Euclidean-Gram directions have full-normalizer Hessian lower bound
+`(3 beta/10) E_w[(delta lambda/B)^2]`. The real reduced q0 KKT has inertia
+(14,7,2049). Its kernel integrates to the complete local homogeneous critical
+family: SO4 coframe rotations(6), observers(3) and positive density fibre(2040).
+Three SO4/SO3 directions change the Lorentz Gram at the same positive heat
+geometry; they are retained beyond the six proved representation directions.
+This is a nonlinear local homogeneous classification, not an inhomogeneous
+Einstein solution or a physical choice from that family. The full-D0
+preparation/observer pullback is therefore a specific required consumer.
+The actual whole-blank engine orbit does not remove this ambiguity in the
+declared price: its SO3-fixed E0 preparation also extends, with the same fixed
+sigma_j and reference128, along the three Lorentz-Gram-changing SO4 coframe
+directions. Its stabilizer link jets annihilate E0. This rank8 existence
+result consumes the new memory-source owner; it does not transfer the
+faithful density inertia or local classification to a rank boundary.
+The same owner, Section10, now assembles every nonzero-q field block through
+257 phase moments in full16 Clifford coordinates, using one shared119-feature
+spectral kernel. The whole new q1240 matrix agrees with an independent
+full4096x16 calculation within1.6e-13. This is validated assembly, not a
+certified all-mode inverse; shell constraints and root-only identities remain
+explicit. Its consumer is the remaining joint inverse/nonflat branch estimate.
+Section8.1 now solves all six nonzero shell-transfer orbits: one generic
+rank3/5 argument, two exact restricted heat/CAR congruences and a single new
+opposite-sign interval restriction complete the earlier two cases. The new
+bound is below9.468e-5 on the whole root rectangle; the transferred KKT
+inertias retain every253/507 complex preparation annihilator. No unsolved
+nonzero shell-source block remains. The remaining field inverse lies outside
+Omega−Omega, where T_q=0; q3300 is strictly solved and other modes remain open.
 No all-mode field inverse, nonflat
 joint root, physical primitive/price admission or controlled refinement is
 claimed; the original fixed-source/raw-response terminal remains OPEN.
@@ -123,6 +153,42 @@ translation to select those records is inferred. A stateful/history- or
 link-dependent native transition remains open. The companion's20 exact
 normal/optimized controls are consumed after source/result and transitive
 input hash verification, without replay or a new task/process.
+
+The [actual-seed matter-memory companion](A4D_NATIVE_AFFINE_PATH_MATTER_MEMORY.md)
+at `0ff0a93f` shows where one order distinction can already live: on masks1
+and15 of the existing whole-blank seed, the externally selected reference
+words01/10 differ in masks2/12 by `2−2p` / `2p−2`, with squared distance
+`16−24p>0`. Mask1 is the role0 one-form; it is not the scalar vacuum.
+This preserves all16 components without a new register. These externally
+chosen words are not declared autonomous engine trajectories: after U0 that
+engine again selects U0 from its current first grade.
+
+The [non-Bogoliubov companion](A4D_NATIVE_RECORD_NOT_A_BOGOLIUBOV_LINK.md)
+at `e198daca` excludes another specific identification: the actual first
+autonomous record has `U0 c0 U0^T` outside the eight-dimensional CAR-mode
+span, certified by minor `−a*p !=0`. A separate native link or nonlinear
+joint state law remains possible; the record is not thereby an exterior
+lift of an affine frame map. These26/53-control results are consumed from
+their exact sources and input pins without replay or a new Lean declaration.
+
+The adaptive owners already give a stateful cocycle of their actual defined
+trajectories, `K_(n+k)(m)=K_n(T^k m)K_k(m)`, and its full AF/CAR selected-word
+intertwiner. The affine linear part separately has `Lambda(D_path)`.
+The missing arrow is native edge/state to the existing record/controller,
+then joint `(q,D,b,m)` evolution with its actual pairing, full trace and
+refinement. An isometric reducing AF89/CAR16 sector map alone is insufficient:
+its actual feedback multiplicities are5 versus4. No extra scalar channel is
+silently discarded to claim equality of those full prices.
+
+The [fixed-record finite-resolution bound](A4D_NATIVE_CLOSED_RECORD_FINITE_RESOLUTION_LIMIT.md)
+as clarified at `22ae725d` adds a specific constraint on that transition. The actual
+closed seed orbit has distinct states with separations tending to zero;
+each fixed finite isometric inheritance preserves those distances and stays
+in its proper inherited subspace. No uniformly positive current-state readout
+margin follows for a fixed Lipschitz detector. A native state-dependent
+refinement could excite child-complement directions, but its action/readout
+law is still required. This is a fixed-carrier consequence of the already
+owned infinite-order rotation, not a global obstruction to refinement.
 
 The [constrained-price CONTROL intake](https://github.com/gvakhrushev/d0_15/pull/322)
 remains a separately scoped, frozen review input; #334 owns this continuation.
@@ -5710,6 +5776,18 @@ JSON; все четыре математические мутации отвер
 cost, affine-to-CAR map, nonflat joint root и GR не доказаны. N06/N07 сохраняют
 свой rank-128 интерфейс; rank-8 уравнения и допустимый tangent space являются
 отдельной ветвью и не наследуют full-rank вывод `E=0`.
+
+Перед подстановкой packet link-covector в native unscaled theta basis
+применяется явный интерфейс: `T=basis_phase*exterior(eta)`,
+`sigma_native=T sigma_packet T*`, `f_native=−f_packet`.
+Здесь basis_phase — диагональная mask-sign map из
+`certificates/a4d_native_curved_soldered_heat.py`,
+`P_mm=(-1)^[bit1(m)(bit2(m)+bit3(m))]`, а не перестановка масок.
+Минус следует из `w_native=−w_packet`, `theta_native=−theta_packet`.
+Обе sign maps сохраняют E0, basis_phase тождественна на E0; stationary
+fibre и SO4-coframe consumer выше потому не меняются. Результат171/4
+потреблён по совпавшим input hashes и static review в исходном declared
+Python3.13.5, без повторного запуска на default Python3.9.
 
 Следующий решающий расчёт на том же pinned v8 owner: найти nonflat
 `(x,epsilon)`, где весь target `b(v)` лежит в положительном source image на
