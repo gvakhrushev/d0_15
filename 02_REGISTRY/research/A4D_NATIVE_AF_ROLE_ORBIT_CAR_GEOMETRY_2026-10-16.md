@@ -56,6 +56,25 @@ computed from its own literal gate; the certificate retains the exact
 odd-tick full-state discrepancy from the fixed AF gate rather than identifying
 those transitions.
 
+## Fresh-blank startup control
+
+The certificate also starts from the actual normalized canonical trace vector
+of `A_1=M_2(C) (+) C`, `(p,0,0,p,ap)`. Its `M_2` component lifts into the
+owned CAR fresh-blank plane as `p(e0+e14)`; the scalar `C` channel and the AF
+ambient complement remain in the full state/operator. Applying the owned AF
+`activate` map to the complete trace vector agrees exactly with the full AF
+gate, and its `M_2` output agrees with the same CAR gate on that blank seed.
+
+This real blank-startup orbit is a useful negative control for the positive
+frame above. Under 128 repeated fixed AF gate ticks, the full CAR current of
+the `M_2` component stays `e0`. Both proper spatial three-cycle images also
+have current `e0`, so the four-role frame has rank one at every tested tick.
+Thus the existing AF growth/record operation, from its canonical blank seed
+and under this current readout, does not by itself produce the spatial
+four-frame. The earlier Lorentzian frame needs its active seed outside this
+blank plane. This is a scoped failure of that composition, not a no-go for
+other owned interactions or for the full D0 core.
+
 For the scalar-extension family `m13=m14=s`, the same current formula gives
 `r(s)=2s^2/(1+2s^2)`, Gram determinant `-4r(s)^6`, and a nonzero Gram jet at
 `s=1`: diagonal entries have derivative `-16/27` and the first/second entry
@@ -71,10 +90,12 @@ The checker pins the existing AF Fibonacci recording frame and gate, full-Fock
 record binding, correlated-current readout, and literal closed-record engine.
 It checks the level-1 full-16 isometric embedding, gate/price/blank
 intertwiners, CAR current values, all sixteen coordinates, the role
-transformations, and exact orbit Gram. The active seed is outside the AF
-fresh-blank plane. The result composes the AF gate as an operator on the
-represented sector; it does not compose the AF growth/refinement operation
-with this orbit.
+transformations, exact orbit Gram, and the canonical AF blank-startup control.
+The positive frame's active seed is outside the AF fresh-blank plane. The
+certificate composes the actual `activate` operation with the canonical trace
+on its M2 sector, and separately demonstrates that this blank-started orbit
+has no spatial frame under the current. It does not compose AF refinement into
+a new native `q,D,b,m` transition.
 
 Therefore the result supplies a state-to-Lorentz-Gram kinematic map only. It
 does not define the native `q`, `D`, `b`, or `m` fields, derive curvature or

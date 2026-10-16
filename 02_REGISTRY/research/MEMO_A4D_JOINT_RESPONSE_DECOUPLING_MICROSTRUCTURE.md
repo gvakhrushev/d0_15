@@ -4943,16 +4943,22 @@ From one active state, the current, its next fixed-gate current, and the two
 rotated currents form a nondegenerate four-frame with Gram determinant
 `-256/729` and signature `(1,3)`. The complete Gram is exact and stays fixed
 for 128 gate ticks, although the full state does not return after two ticks.
-The checker verifies 1,439 exact controls and pins 12 existing source files.
+The same certificate composes the actual `A_1` AF trace seed with `activate`:
+its `M_2` component starts in the owned fresh-blank plane and the full AF
+operation matches the CAR gate. Yet its current stays `e0` for 128 ticks, and
+the corresponding four-role frame remains rank one. Thus this existing AF
+startup does not itself generate the spatial frame under the current readout;
+the positive frame's active seed is outside the blank plane. The checker
+verifies 1,829 exact controls and pins 12 existing source files.
 
 This is a finite kinematic carrier result: the Gram is measured with the CAR
 owner's Lorentz form `eta`, which the construction does not derive; the active
 state is outside AF's fresh-blank plane, and this gate orbit is not the AF
-growth/refinement map. The induced Gram is not yet native `q`; no connection field, curvature, common action or
-source/Ward identity, stationarity, physical admission, soundness/recovery, or
-Einstein equation is obtained. The real-amplitude derivative is only an
-algebraic extension of the readout, not an engine-admitted variation. Thus the
-result identifies a concrete candidate state-to-frame map and its first
-nondegeneracy boundary, while leaving the native metric-transfer obligation
-open. It does not change any parent terminal or the fixed-source/raw-owner
-status.
+growth/refinement map. The induced Gram is not yet native `q`; no connection
+field, curvature, common action or source/Ward identity, stationarity,
+physical admission, soundness/recovery, or Einstein equation is obtained. The
+real-amplitude derivative is only an algebraic extension of the readout, not
+an engine-admitted variation. Thus the result identifies a concrete
+candidate state-to-frame map and its first nondegeneracy boundary, while
+leaving the native metric-transfer obligation open. It does not change any
+parent terminal or the fixed-source/raw-owner status.

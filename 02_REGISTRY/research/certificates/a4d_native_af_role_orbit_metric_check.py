@@ -133,7 +133,7 @@ def af_embedding(checks):
     check(AF.zero(W.T * W - sp.eye(W.rows)) and
           AF.zero((sp.eye(W.rows) - R) * W - (sp.eye(W.rows) - R)),
           'whole_AF_gate_is_unitary_and_keeps_ambient_complement', checks)
-    return Psi, W, B_fock, U
+    return Psi, W, B_fock, U, V, V_m2, d
 
 
 def metric_frame(scale, gate, rotate_y, rotate_z):
@@ -168,8 +168,49 @@ def build_result():
     check(zero(U * P_y - P_y * U) and zero(U * P_z - P_z * U),
           'fixed_AF_gate_commutes_with_internal_spatial_C3', checks)
 
-    Psi, W, B_fock, U_embedded = af_embedding(checks)
+    Psi, W, B_fock, U_embedded, V_af, V_m2, d_af = af_embedding(checks)
     check(zero(U_embedded - U), 'AF_embedding_uses_same_literal_gate', checks)
+
+    # Start from the actual normalized AF trace vector at A_1. Its M_2
+    # component maps to the owned CAR fresh-blank plane; the scalar M_1
+    # component stays in the full AF carrier and is not discarded.
+    canonical_trace = sp.Matrix([p, 0, 0, p, a*p])
+    canonical_native = V_af[:, :d_af] * canonical_trace
+    canonical_car_lift = V_m2[:, :4] * canonical_trace[:4, :]
+    canonical_car = C.mat(Psi.T * canonical_car_lift)
+    check(AF.zero((canonical_trace.T * canonical_trace)[0] - 1),
+          'A1_canonical_AF_trace_vector_is_normalized', checks)
+    check(AF.zero(Psi * canonical_car - canonical_car_lift),
+          'A1_trace_M2_component_has_actual_full16_CAR_lift', checks)
+    check(zero(B_fock * canonical_car - canonical_car),
+          'A1_trace_M2_component_is_in_owned_fresh_blank_plane', checks)
+    canonical_activation = AF.activate(1, canonical_trace)
+    check(AF.zero(W * canonical_native - canonical_activation),
+          'actual_AF_activate_is_the_owned_full_AF_gate_on_trace_seed', checks)
+    P_m2_af = V_m2 * V_m2.T
+    activated_car_lift = AF.mat(P_m2_af * canonical_activation)
+    activated_car = C.mat(Psi.T * activated_car_lift)
+    check(AF.zero(Psi * activated_car - activated_car_lift),
+          'activated_A1_trace_M2_component_stays_in_actual_CAR_sector', checks)
+    check(zero(activated_car - U * canonical_car),
+          'actual_AF_activation_composes_with_same_CAR_gate', checks)
+    expected_rest = sp.Matrix([1, 0, 0, 0])
+    canonical_history = canonical_car
+    for tick in range(128):
+        next_history = C.mat(U * canonical_history)
+        J_now = C.current(I4, canonical_history)
+        J_next = C.current(I4, next_history)
+        J_y = C.current(I4, C.mat(P_y * canonical_history))
+        J_z = C.current(I4, C.mat(P_z * canonical_history))
+        check(zero(J_now - expected_rest) and zero(J_next - expected_rest) and
+              zero(J_y - expected_rest) and zero(J_z - expected_rest),
+              f'canonical_blank_trace_has_only_rest_current_tick_{tick}', checks)
+        blank_frame = sp.Matrix.hstack(J_now, J_next, J_y, J_z)
+        check(blank_frame.rank() == 1 and zero(blank_frame.det()),
+              f'canonical_blank_trace_role_frame_collapses_tick_{tick}', checks)
+        check(C.red((canonical_history.T * canonical_history)[0] - 2*p**2) == 0,
+              f'canonical_blank_trace_M2_norm_is_retained_tick_{tick}', checks)
+        canonical_history = next_history
 
     # The four current columns are generated from one active seed: its present
     # state, its next fixed AF gate tick, and its two proper spatial C3 images.
@@ -295,6 +336,17 @@ def build_result():
             'all_AF_complement_and_scalar_sectors_retained_in_ambient_operator': True,
             'active_seed_in_fresh_blank_plane': False,
             'AF_growth_refinement_map_composed_with_this_orbit': False,
+        },
+        'canonical_trace_blank_startup_control': {
+            'A1_trace_vector': ['p', '0', '0', 'p', 'a*p'],
+            'M2_CAR_seed': 'p*(e0+e14)',
+            'seed_in_owned_fresh_blank_plane': True,
+            'scalar_M1_and_AF_complement_retained': True,
+            'actual_AF_activate_equals_embedded_CAR_gate': True,
+            'current_for_128_gate_steps': 'e0',
+            'four_role_frame_rank': 1,
+            'blank_startup_generates_spatial_frame': False,
+            'physical_expansion_or_GR_inferred': False,
         },
         'physical_scope': {
             'native_q_D_b_m_binding': False,
