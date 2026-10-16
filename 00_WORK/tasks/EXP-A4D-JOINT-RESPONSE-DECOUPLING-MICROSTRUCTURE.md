@@ -61,6 +61,15 @@ Hessian crossing does not establish a joint branch. Physical native
 transition/action admission and refinement remain required; neither the
 original independently fixed g/tau/raw terminal nor task status is changed.
 
+At the actual rank8 memory end all151 source rows remain independent.
+The amplitude stationary fibre is smooth through this boundary; its28800
+rank-birth tangents integrate at fixed geometry. The q0 amplitude slice
+has its own local flat classification. The next missing operator is the
+full inhomogeneous `H_rho8|ker T8` after the exact flat tangents are removed,
+with the actual pure-memory second chart jet. Source-rank preservation
+does not transfer the old faithful Hessian; a nonzero curvature correction
+explicitly rejects that shortcut. Consume Section13 of the joint owner.
+
 Write surface: this brief, the primary memo, complete-field-source synthesis
 and its existing research consumers. Preserve the whole readable research
 payload; do not restore old lifecycle files. The two inherited shift-irrelevance

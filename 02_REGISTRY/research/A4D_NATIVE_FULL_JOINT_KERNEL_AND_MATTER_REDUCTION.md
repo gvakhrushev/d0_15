@@ -1330,7 +1330,110 @@ joint transition/action и refinement-uniform estimates ещё нужны.
 даёт `T_k`, вторую eigenjet-строку `E2 C0+2 E1 C1=0` и `M_v`
 neutrality test для rank boundary либо удалённой preparation. Его точная
 трёхмерная homogeneous connection-source capacity не заменяет полный
-field inverse или совместный branch; проверенный midpoint crossing
-сам по себе не удовлетворяет полному memory-neutrality scout.
+field inverse или совместный branch. Сохранённый midpoint crossing
+остаётся floating diagnostic, не доказательством ветви.
 Исходный fixed-source/raw,l1 terminal,
 physical primitive/price admission и полный вывод ОТО остаются OPEN.
+
+## 13. Rank8: гладкий слой амплитуд вместо сингулярной density-карты
+
+Новый [точный source-rank proof](sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_SUBMERSION.md)
+и [amplitude consumer](sources/d0_native_joint_kernel_2026-10-16/RANK8_AMPLITUDE_FIBRE.md)
+относятся к собственной whole-blank подготовке на том же конечном корне.
+В native basis `chi=(e_mask1+e_mask15)/sqrt(2)`; packet basis использует
+минус высшей компоненты и требует прежнего полного basis/source bridge.
+Положим `C8=P_Omega/sqrt(8) tensor |chi><r0|`, с восемью различными
+reference momentum labels. Это rank8 оператор на прежнем reference128,
+не сокращение вариаций поля, shell128 или полного16 exterior carrier.
+
+### Источник сохраняет все151 строки
+
+На полном shell sphere `C:P_ref128 -> P H`, `||C||_HS=1`, возьмём
+вещественный базис151 trace-centered first-shell operators `A_j`.
+У исходной подготовки все их ожидания нулевые. Полный fixed-geometry
+источник записывается `mu_j(C)=Tr(C* A_j C)`. Его производная равна
+
+```text
+D mu_j(C8)[Z]=2 Re Tr(C8* A_j Z).                   (43)
+```
+
+В новом proof компрессия на occupied rank8 сохраняет старые ранги:
+7 при q0,3 при каждом `q=+/-2e_r`,5 при каждом
+`q=+/-e_r+/-e_s`. При двух active roles первый shell pair видит лишь
+rank4; второй pair обнаруживает оставшуюся ось. Его нельзя выбрасывать.
+Используются top-dual CAR readouts и строго положительные symbolic
+minors при всех `a>b>0`, а не численный rank одного rounded root.
+Итого `7+8*3+24*5=151` real rows. Поскольку это прежняя полная image,
+`ker T8=ker T128` в field space; равенство **не** переносит их Hessians.
+
+Из (43) следует, что стационарный amplitude source fibre есть гладкое
+regular level размерности `32767-151=32616` через C8. Все28800 real
+rank-birth направления входят в его касательное пространство и имеют
+точные нелинейные source-correcting lifts при **неизменной** геометрии.
+Низкий ранг density сам по себе не создаёт новую геометрическую ветвь.
+Вместе с прежней exact flat field family это даёт57195-dimensional
+гладкое семейство joint critical points через rank8. Это доказанный
+размер семейства, не утверждение о полном inhomogeneous rank8 kernel.
+
+### Редукция, не требующая обратной плотности
+
+Для любого близкого нормированного C, включая rank-deficient, определим
+`epsilon_hat(x,C)` условием `Tr(C* E(x,epsilon) C)=0`.
+Производная по epsilon равна `-Tr(C* G C)<0`. Тогда
+
+```text
+N_C=Tr(C* G C),
+Phi_amp(x,C)=F_price(Delta(x))+epsilon_hat(x,C),
+Psi_hat=J C/sqrt(N_C).                            (44)
+```
+
+Это настоящий normalized Q-stationary elimination. В точной карте
+`Psi=sqrt(1-||Y||_HS^2) C+Y`, `QY=Y`, Q-блок по-прежнему
+`2(Delta_Q-epsilon*) tensor I_ref128`; его оба знака и весь reference
+сохранены. Matter stationarity (44) даёт `E C=0`, а не `E=0` на всех
+128 shell components. Не используется ни inverse density, ни polar
+factor, перестающий быть единственным на rank8.
+
+### Завершённый однородный consumer и оставшийся полевой оператор
+
+В q0 slice с фиксированной reference-momentum grading имеем
+`C=direct_sum_(k in Omega) C_k`, каждый C_k комплексный16x16.
+Это4095 real normalized amplitude coordinates плюс23 field coordinates.
+Rank7 source submersion и прежняя strict finite-m/full-normalizer
+Gram convexity дают точную инерцию
+
+```text
+(14 positive,7 negative,4097 zero), dimension4118. (45)
+```
+
+На `ker T8(q0)` представитель имеет нулевые link angles и равные
+диагональные Gram variations. Здесь `Delta(k)=lambda_k(G) I16`
+точно, поэтому сохранённая7-dimensional Gram positivity не зависит от
+ранга подготовки. Normal IFT исчерпывает близкие critical points этого
+translation-covariant slice точным flat family. (45) не является
+инерцией полного inhomogeneous amplitude operator.
+
+Для ненулевых частот перенос старой field matrix недопустим.
+[Pure-memory interface](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_HESSIAN_INTERFACE.md)
+сохраняет действительный second chart jet и signed-Q Schur term.
+Хотя SO3 returns фиксируют chi и fixed-chi matter energy выражается
+через локальные coframe norms, полная curvature contraction для
+`kappa+rho8` отличается от прежней для `kappa+rho128`. Например,
+один inactive stabilizer на q3300 даёт ненулевую поправку
+`c_L(d-3o)||omega||^2`, положительную на исходном root rectangle.
+Использовать старую first-jet-only формулу здесь было бы ошибкой.
+
+Следующий решаемый объект — именно полный normal field operator
+`H_rho8|ker T8` с этой поправкой и всеми moving-normalizer/matter terms,
+либо его действительное дополнительное ядро с полным вторым
+stationary jet. Уже интегрируемые rank-birth направления и отдельно
+замороженный Hessian crossing не заменяют этот шаг. Физический G0
+transition/action и исходный fixed-g/fixed-tau/raw terminal остаются
+открытыми.
+
+Новый [bounded checker](certificates/a4d_native_rank8_source_check.py)
+исполняет только новые source/curvature identities; прежний q0 Gram
+result потребляется по неизменённому SHA, без старых matrix/root runs.
+[Rank8 result](sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_RESULTS.json)
+и [validation](sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_VALIDATION.json)
+фиксируют source pins, real dimensions и область normal/O запуска.

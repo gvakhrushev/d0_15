@@ -1,0 +1,56 @@
+{
+  "schema": "d0-native-rank8-source-validation/1",
+  "source_ref": "0dd1853a81f5ac3f9883e09d9d2f6dd8695f030e",
+  "observed_main_ref": "52f475f184b44f2cbb7795087e4c9dc6eb8aed86",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T15:34:06.924165+00:00",
+  "commands": [
+    "python3 02_REGISTRY/research/certificates/a4d_native_rank8_source_check.py",
+    "python3 -O 02_REGISTRY/research/certificates/a4d_native_rank8_source_check.py"
+  ],
+  "python": "3.9.6",
+  "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+  "scientific_output_sha256": "2091dfb04335648ab2229cb7730dc5d0834de68fdf2bdd2268593150f3ccb4f7",
+  "scientific_output_bytes": 13922,
+  "exact_checks": {
+    "actual_rank8_source": 91,
+    "pure_memory_curvature": 34
+  },
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/shell_transfer_all_orbits.py": "d8db3de5b34e4ee4ac7a9efb4676072d18b455dec5a72f0beb6b46b40a99eb1a",
+    "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py": "71ba142e284974db57d67c91a77ccd08a7e4f9759e8fc8daef7c5938774c0b28",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "02_REGISTRY/research/sources/d0_memory_rank_continuation_2026-10-16/diagnostic_memory_fibre.py": "c92b184e2a0a3aad64b64a44f2eb70d3ff4c4aebe794ca69e3e2ffdbc1302bbc",
+    "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/diagnostic_old_frequency.py": "a47d1c8cdf3967750cc33da598d3f58d567ebecf0e3e277ba97f38a7c1f18ec5",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/rank8_source_submersion.py": "04d5fba2d34538e2c7e4b41748fafb4e88e041174f4380bd0e7990111ffc6afd",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_curvature_check.py": "2c3ff9a9efa8920c958999e090e81fd3c2ee2f4448bc2e34868766e4ffbb6db9",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ZERO_MODE_RESULTS.json": "3191fff348ea6b4f16fa50013899f681c47428bca3f9e8db2bf22825bff94e38",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_SUBMERSION.md": "56fc0cbd9c171e6bb2a1a8377114dc8a842d477501f21f5203fd22553034a86a",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/RANK8_AMPLITUDE_FIBRE.md": "3fbdeaa3b7abffc4d2defe0aeb8b5a909487854ba992bd654a2172ea0328b2ba",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_HESSIAN_INTERFACE.md": "284602e0b7d44c1bddd1de8a1f62fe194d4bc7552ed9a6c231d27df9a45ab599",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_RESULTS.json": "2091dfb04335648ab2229cb7730dc5d0834de68fdf2bdd2268593150f3ccb4f7",
+    "02_REGISTRY/research/certificates/a4d_native_rank8_source_check.py": "c526f55e53e26603287073699c39477641f666e1b41535e9420a218ce52ace8c",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "bd4af990c87cf147fea1a5176f56232d2466fc2bf8224a4e58256421c0ca9e03"
+  },
+  "actual_preparation_source_real_rank": 151,
+  "stationary_amplitude_source_fibre_dimension": 32616,
+  "exact_flat_amplitude_family_dimension": 57195,
+  "q0_fixed_reference_momentum_slice_inertia": {
+    "positive": 14,
+    "negative": 7,
+    "zero": 4097
+  },
+  "q0_slice_dimension": 4118,
+  "remaining_inhomogeneous_field_normal_dimension": 40806,
+  "mathematical_peer_review": "independent review of top-dual/both-shell-pair rank proof; raw-amplitude submersion and Q elimination; q0 congruence; literal full16 curvature normalization and same-parity Clifford functional",
+  "original_floating_diagnostic_normalization_defect_claimed": false,
+  "old_full_matrix_or_root_or_research_suite_replayed": false,
+  "new_Lean_build": false,
+  "full_inhomogeneous_rank8_normal_inverse_or_inertia_proved": false,
+  "physical_preparation_admission_refinement_or_GR_closed": false
+}
