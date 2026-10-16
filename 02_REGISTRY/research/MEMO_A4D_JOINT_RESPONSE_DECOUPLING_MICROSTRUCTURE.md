@@ -4,6 +4,30 @@ Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
 
+## Current synthesis and the original terminal (2026-10-16)
+
+The original target is still
+`h^-2 ||E_Q(Q_h,K_h)-E_Q(Q_h,K_h^sm)||_(raw,1) -> 0`, or an admitted
+exact joint-critical counterexample, on one fixed smooth nonconstant metric
+and one independently fixed smooth source. E_Q has ten packed metric rows
+at each of L^4 sites, h=1/L; the raw norm is the unweighted sum of their
+absolute values, with the designated #216 comparator. None of the native
+record results below is substituted for that terminal. The historical
+[response convention](#inputs-and-response-convention) is retained.
+
+| Constructive result | Current owner and remaining physical obligation |
+| --- | --- |
+| Full terminal AF price has an explicit faithful preparation minimizer and an exact coherent relative-entropy gap. Rank-deficient amplitude-critical branches also remain. | [Preparation/source theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md). Native access to these preparation variations and the price of producing them are not inferred. |
+| One explicit matter-controlled comparator returns exactly the native positive metric on a smooth common family, including all its jets and ten metric test directions. | [Matter-clock record binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md). All16 matter and6 frame variables remain; the ten transverse raw matching equations and physical admission are still open. |
+| One complete controlled AF price has a derived curvature coefficient and exact nonlinear remainder. | [Controlled record](A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md), with the preparation-minimized source above. This is not an equality between comparator price and full AF price. |
+| Lorentz reflection gives the full observer/matter sector at the same order as the Einstein term. | [Lorentz/source identity](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md). Those terms, the absolute volume price and all other native sources must be solved together. |
+| Matrix return computes the geometric effect, but equality of effects does not preserve the full instrument or its cost. | [Golden compiler](A4D_GOLDEN_DETERMINANT_COMPILER.md) and the explicit carrier/metric boundary in the matter-clock owner. A genuine AF history/cost intertwiner remains required. |
+
+The next common-process statement must satisfy these obligations on the
+same admitted fields. Its remainder cannot be defined as the difference
+from a desired Einstein source. The derivations below remain a durable
+history; the table is the entry point to the current scientific route.
+
 Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/pull/322).
 The [AF trace/preparation boundary](A4D_NATIVE_AF_TRACE_PREPARATION.md)
 now proves that all-level nonnegative compatibility forces the existing
@@ -5027,3 +5051,61 @@ suites are reused. The same-program projector/native metric binding, physical ac
 selection, full coupled solutions, refinement and original fixed-source/
 raw-owner terminal remain open; this continuation makes their required
 observer/matter source explicit rather than fitting a compensating action.
+
+## Actual preparation minimum and a common matter-clock record family (2026-10-16)
+
+The [preparation continuation](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md)
+now varies the inherited SECOND complete AF price on all complex square-GNS
+input amplitudes. The literal frame gives a flagged CP map Phi_E, retaining
+all within-block coherences, both central sectors and right-unitary fibers.
+Its unique globally minimizing defining density is
+`sigma*_j=mu_j exp[-log(phi) f_j(E_j)]/Z`. For ANY coherent input the exact
+identity is
+
+```text
+A_E(sigma)=6-log(Z)/log(phi)
+              +D(Phi_E sigma || Phi_E sigma*)/log(phi).
+```
+
+This is the actual operator's relative-entropy gap, not a difference-defined
+Einstein remainder. The noncommuting effect source at the minimum is
+`sum_j Tr[sigma*_j f_j'(E_j) delta E_j]`. One addressed program has one
+global log-normalizer, a derived modified curvature coefficient and nonzero
+mixed-setting Hessian; its source remainder is bounded explicitly.
+Canonical PF preparation is not generally stationary, even at the blank.
+
+Faithful density-minimum uniqueness does not classify all amplitude-critical
+points. Proper spectral-support preparations have zero complete first
+amplitude source and strict rank-birth descent proportional to t² log(t²).
+These unstable branches are retained. The optimized terminal price does
+not include an unproved sum of stage prices or preparation-generation cost.
+Native admission of every GNS variation is not assumed.
+
+The [matter-clock construction](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md)
+provides an explicit smooth equality family for the existing12-channel
+comparator and the actual native CAR pairing. All16 rest-matter amplitudes
+control12 probabilities and4 scalar clocks; the same record outputs q[Z].
+The native fields `F=q[Z]^-1/2 O H(r)^1/2`, `m=rho(F)m0` reconstruct the
+same rest matter on read-back, hence give `h_native=q_record` throughout a
+neighbourhood, including all spatial/variation jets. A real curved germ
+and a full16-coordinate normal inverse give all10 metric and2 internal
+tests. The full graph source includes Dq's differential adjoint and direct
+matter/frame/controller terms. The equality family has22 field coordinates
+inside raw32; ten transverse equations remain untested by graph stationarity.
+
+This comparator is not silently identified with canonical AF W_E. Equal
+effects can have different history jets and different projector metrics.
+The full256-mode compiler also exceeds the present regular AF module's
+old-right multiplicities. Preserving its full domain requires at least
+operator-depth12 instead of6, with first absolute price12 for the same
+canonical seed/pure auxiliary input. A prepared polar isometry alone does
+not preserve the coarse-left density used by the second active price.
+The actual finite AF-to-engine preparation boundary is also preserved.
+
+The single focused entrypoint
+`a4d_native_preparation_and_clock_binding_check.py` passes122 exact conditions
+(42 preparation,80 binding) with byte-identical normal/optimized output.
+Unchanged old suites, receipts and Lean builds are reused. This closes the
+stated finite minimization and smooth comparator/native matching problems;
+it does not close native operation/action selection, full coupled roots,
+physical refinement, GR or the original fixed-source/raw-owner terminal.
