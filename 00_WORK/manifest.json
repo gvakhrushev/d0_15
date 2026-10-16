@@ -103,17 +103,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-STORED-ADJOINT-TANGENT-MAP.md"
     },
     {
-      "id": "WRK-A4D-FULL-REFERENCE-MATTER-RESPONSE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Provide a reusable exact first- and second-order matter response solver on the owned 128-state shell with the complete reference, including kernel compatibility and all normalizer terms, while leaving thermal and feedback traces on their full carriers.",
-      "brief": "00_WORK/tasks/WRK-A4D-FULL-REFERENCE-MATTER-RESPONSE.md"
-    },
-    {
       "id": "WRK-A4D-V8-FULL-HESSIAN-APPLY",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
