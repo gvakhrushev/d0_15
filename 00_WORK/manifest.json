@@ -125,17 +125,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-FORCE-NUCLEAR-NORM.md"
     },
     {
-      "id": "WRK-A4D-ORBIT-MARGIN",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify y_k^T Gamma^{-1} y_k < 4 p^3 with margin p^6 and the inverse map h(y), with no geometry.",
-      "brief": "00_WORK/tasks/WRK-A4D-ORBIT-MARGIN.md"
-    },
-    {
       "id": "WRK-A4D-FIELD-BLOCK-INVENTORY",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
