@@ -1,0 +1,31 @@
+{
+  "GR_closed": false,
+  "carrier": 16,
+  "check_count": 427,
+  "check_names_sha256": "ed084eed0c6cc79733aaa5bcecf2aff46854f282e69652a7958f4b8e29670998",
+  "creator_order": [
+    0,
+    2,
+    3,
+    1
+  ],
+  "curved_formula": {
+    "a4_Hodge": "23/90 Riem^2 -4/45 Ric^2 +1/18 R^2 -2/15 laplacian(R)",
+    "a4_curved_right": "1/18 R^2 -4/45 Ric^2 -7/90 Riem^2 -1/6 Tr16(F_right_ij F_right_ij) -2/15 laplacian(R)"
+  },
+  "full_native_stationarity_proved": false,
+  "lorentz_Einstein_identification_proved": false,
+  "ordinary_mathematical_carrier": "positive Riemannian G, natural measure, tracefree cycliczero tensor16",
+  "periodic_control": {
+    "periodic_witness_derivative_coefficient": "4/3",
+    "periodic_witness_quartic_coefficient": "4/3"
+  },
+  "quadratic_symbol_eigenvalues": {
+    "4/3": 10,
+    "4/9": 6
+  },
+  "schema": "d0-curved-tensor-a4/1",
+  "short_time_limit_proved": false,
+  "source": "a1ca6f547b9b6876c4e31801665573a1734aa65f",
+  "tensor_to_right_norm": "sum_i ||B_i||HS^2 =4 sum_(a,b<c) T_abc^2"
+}
