@@ -265,6 +265,35 @@ analysis of the quantitative proof. No old root/heat catalogue/Lean replay.
 The original fixed-g/tau/all10/raw h^-2/#216 terminal and physical admission
 remain unchanged. No new task, lifecycle transition or public claim.
 
+## Full preparation and retained-history consumer — 2026-10-16
+
+Input: published second-order source checkpoint `e6f4701e`, including the
+actual full128 cone A1. `A4D_CONE_SOURCE_BALANCED_PREPARATION.md` now derives
+all33 Fourier differences, all10 metric and24 torsion rows on a general
+first-shell density. The exact kernel contains only the +/-e3 modes; metric
+stationarity requires axis weights1/4. Thus NO rank/coherent preparation
+repairs the fixed exact-LC first jet. A real field-image witness additionally
+excludes faithful full-shell continuation after arbitrary real controlled
+first field jets. Partial rank with actual adjusted field jets remains open.
+Do not repeat the fixed-jet preparation search or fit a counterjet without
+its field Euler equations.
+
+A parallel bounded premise uses the actual interacting retained workspace,
+not the spectator purifying-reference leg. Derive the role-Walsh first-exit
+history event of the existing Julia32/golden comparator, its noncommuting
+finite effect and fixed-beta h^-2 cone reading/source. Its consumer is the
+missing full retained-program source map. An intermediate Q-prefix cut can
+be coherently erased; use a genuine retained event or transport its observable.
+The declared H+J price is not replaced by that observable, and no new history
+penalty is selected. Write paths: the new preparation owner and
+`sources/d0_cone_source_balanced_preparation_2026-10-16/`, the new
+`A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md` and
+`sources/d0_retained_history_causal_source_2026-10-16/`, plus existing common
+synthesis/route/README/brief. Smallest checks: exact kernel polynomial and
+field-image witness; actual Walsh/comparator/event order, full16 cone Gram
+and native clock factor; independent source/limit review. No old expensive
+catalogues/roots/Lean replay, new task or physical claim.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

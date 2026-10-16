@@ -139,6 +139,23 @@ Next derive compatible matter/field jets and the admitted reference
 readout, then compare the complete source with Einstein; do not replay
 old roots or assume unchanged preparation.
 
+The [complete preparation test](A4D_CONE_SOURCE_BALANCED_PREPARATION.md)
+now closes the unchanged first-shell cone search for every preparation rank.
+Metric source balance requires equal axis weights; the actual resonant kernel
+lies only on one axis. Faithful full-shell continuation is excluded even with
+arbitrary real controlled first field jets. A partial-rank preparation and
+actual field jets must therefore be solved together, with every field row.
+
+The [existing retained-history event](A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md)
+also supplies a positive operational bridge: its permanent first-exit Walsh
+record has an explicit h^-2 cone source, with the golden clock factor1/256.
+On the same fixed-scale cone family its varying part is an exact multiple of
+the intrinsic EH functional. It uses the existing interacting workspace,
+not a new tensor on the spectator reference. The scalar H+J price aggregates
+this fine record; full native Cost−Info binding remains to be derived.
+Use this actual observable in that binding, without adding a desired action
+term or mistaking one cone row for all10 Einstein equations.
+
 The coordinated [stored metric-image calculation](sources/d0_native_gr_source_image_2026-10-16/RESULT_RU.md)
 computes the permitted ranks10/9/8/7/5 and a surviving Bianchi-compatible
 source. A conformal row completes one fixture but fails an exact exceptional

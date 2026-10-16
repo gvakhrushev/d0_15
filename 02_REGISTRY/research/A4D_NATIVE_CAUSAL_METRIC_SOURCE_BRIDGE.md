@@ -478,6 +478,34 @@ Beta pointer точно читается из существующих golden ga
 Эти результаты заменяют непроверенные preparation/readout допущения
 конкретными ограничениями; они не вводят новую цену или action selector.
 
+### 7.1.2. Actual retained history и совместимая подготовка
+
+[Полный source-balanced preparation owner](A4D_CONE_SOURCE_BALANCED_PREPARATION.md)
+теперь выводит all10 metric/all24 torsion условия на произвольную128-shell
+rho, со всеми33 Fourier differences. Fixed exact-LC first jet несовместим
+с ЛЮБЫМ рангом такой rho. Faithful полный shell исключён даже после
+произвольных real smooth first field jets; неполный ранг с actual field
+jets остаётся открытым. Нужен совместный solution, не новый projector fit.
+
+При этом [существующая retained history](A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md)
+сама содержит недостающую информацию. Один настоящий role-Walsh label
+chi=(++--) после golden round, оба ports и first-exit порядок дают
+
+```text
+lim h^-2 q_chi,n=(1-exp(-beta/s^2))
+                 [1+2<(theta')^2>]/(256s^2).
+```
+
+На том же controlled классе доказан O(h) matrix-element/smooth-source
+remainder. Это событие permanent history, а не prefix, который последующий
+Q* мог стереть. При fixed s,beta его cone-dependent часть точно равна
+`-(1-exp(-beta/s^2))/(256s^4)` умножить на intrinsic EH этой cone семьи.
+Коэффициент следует из existing32-label program и integer clock.
+Ни новая цена, ни физическая Newton calibration не назначаются; при metric
+variation коэффициент тоже меняется. Связь full native Cost−Info с этим
+retained observable и совместные field/matter equations ещё требуются.
+Continuum D-factorization поэтому не есть full-history blindness.
+
 ### 7.2. Calibration остаётся свойством того же процесса
 
 У v8 alpha=p^2 h^2/128, m=2n и beta=m alpha выведены из данного

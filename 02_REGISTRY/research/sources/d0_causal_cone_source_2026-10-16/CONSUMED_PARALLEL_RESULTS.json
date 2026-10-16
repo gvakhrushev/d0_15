@@ -33,6 +33,33 @@
     "flat_moduli": "finite genuine-root second-response mismatch rules out unqualified EH+Lambda+sameR identity; fixedbeta theta source retains global shape",
     "observer_scalar": "exact zero-shift/twist-free R_L/R_E/spatial-curvature contrast; not imposed on general twisting observer"
   },
+  "full_preparation_and_history_checkpoint": {
+    "base": "e6f4701e7743952b95b5fd281bebe10106d56163",
+    "conclusion": "Full first-shell source constraints obstruct all ranks on the unchanged cone jet and faithful full shell even after real smooth field jets. An actual retained first-exit event has a derived h^-2 causal source and exact fixed-scale one-cone EH relation; full price/stationarity/admission remain open.",
+    "consumer": "complete native source and current GR route in the same Draft334",
+    "earlier_first_corrector_owner_append": {
+      "path": "02_REGISTRY/research/A4D_CONE_PREPARATION_FIRST_CORRECTOR.md",
+      "scope": "additive consumer to stronger theorem; original matrix helper and output unchanged",
+      "sha256": "3ca2619d7965a1090345608e2eab91020c7a4ccafd3f7253fd3576fa73e25077"
+    },
+    "new_exact_groups": {
+      "retained_history": 64,
+      "source_balanced_preparation": 19
+    },
+    "old_scientific_entrypoint_replay": false,
+    "sha256": {
+      "02_REGISTRY/research/A4D_CONE_SOURCE_BALANCED_PREPARATION.md": "1b6c919602be63b2ca401426e0630c5a91808b65cedf4181df5d7e499ae18d5f",
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md": "d7f8498e30e788af43edeb2bfd6e763d429e221cea76b622198687bbf4af21db",
+      "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/README.md": "e444bd4f8b2f77cc9ca5e48a94f52212e1d3c84537f5e701c6461e1e383d7d76",
+      "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/RESULTS.json": "094b48783384cd8718e61f503fe2e56511ee1ba2cf28bf756ce99e90a3ba2f1d",
+      "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/VALIDATION.json": "f724499c2f84292c33bc826c0a291ef41f2b63b8bd0432e36112b63f4dbc87c8",
+      "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/check_cone_source_balanced_preparation.py": "1a84b5dbfa86c03d55dfe3db41330272e4937d2a47f30c3e0929d584996859c3",
+      "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/README.md": "78be81114113d8bc6444520a3fc0562e10cacc38cb1f6a9883dec32a6bb57f00",
+      "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/RESULTS.json": "479494fae6f60270617b414e3bde29ad57930a5f383462f71adcfc2466c9c074",
+      "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/VALIDATION.json": "69fd5a9d68a6d3a9ecb9ba4260116eafd9f54841d5d270f7161222c4ed706875",
+      "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/check_retained_history.py": "6be5d31fc2b5a2d2f75b54071720b03c6bbebc30356260b5c823c3ef8ef88d92"
+    }
+  },
   "integration": "additive merge preserves all13 incoming paths; no old scientific replay",
   "reported_checks_not_reexecuted": {
     "curved_tensor_exact": 427,

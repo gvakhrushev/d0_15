@@ -29,6 +29,8 @@ Current gravity packets:
 - `A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md` — outward q3300 interval proof of inertia `12+/1-` only on the inherited 13-coordinate stored-source restriction along the balanced path; the enlarged full-Lorentz Hessian and coupled directions remain open.
 - `A4D_CURVED_TENSOR_A4_SOURCE_AND_ELLIPTICITY.md` — full curved tensor16 `a4` source, Einstein-positive-G compatibility and exact elliptic principal symbol; coefficient-level, not full physical stationarity.
 - `A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md` — exact continuum factorization through `(G,T,measure,form matter)`, three observer-cone directions and same-matter P1 source; reference128 readout and actual matter continuation remain open; controlled second-order H+J refinement has a separate proof.
+- `A4D_CONE_SOURCE_BALANCED_PREPARATION.md` — full33-Fourier/all10metric/all24torsion leading equations; fixed-jet all-rank obstruction and arbitrary-real-fieldjet faithful cokernel.
+- `A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md` — actual permanent first-exit Julia/Walsh event, both golden ports, derived1/256 clock coefficient and one-cone EH/source identity; no new price or physical admission.
 - `A4D_SECOND_ORDER_HEAT_REMAINDER.md` — controlled fixed-beta second-order heat/source expansion with explicit graph, Galerkin, cyclic-row and clock bounds; no physical comparator or matter continuation is assumed.
 - `A4D_RAW_LINK_COTANGENT_JET.md` — exact noncommuting parallel-path/raw-link conversion through h², both adjoint pairings and moving density; inverse coefficient1/12.
 - `A4D_CONE_PREPARATION_FIRST_CORRECTOR.md` — full128 resonant matrix excludes unchanged faithful amplitude continuation on the exact-LC winding cone, not all prepared branches.

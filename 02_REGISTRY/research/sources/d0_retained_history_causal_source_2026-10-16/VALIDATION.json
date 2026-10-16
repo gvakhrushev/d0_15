@@ -1,0 +1,31 @@
+{
+  "byte_identical": true,
+  "exact_checks": 64,
+  "execution_scope": "one final new-helper normal/optimized pair; one prior bounded new-helper debug; no old checker entrypoints",
+  "helper_sha256": "6be5d31fc2b5a2d2f75b54071720b03c6bbebc30356260b5c823c3ef8ef88d92",
+  "normal_runtime_seconds": 0.690012041,
+  "normal_stdout_sha256": "479494fae6f60270617b414e3bde29ad57930a5f383462f71adcfc2466c9c074",
+  "optimized_runtime_seconds": 0.651927833,
+  "optimized_stdout_sha256": "479494fae6f60270617b414e3bde29ad57930a5f383462f71adcfc2466c9c074",
+  "proof_sha256": "d7f8498e30e788af43edeb2bfd6e763d429e221cea76b622198687bbf4af21db",
+  "python": "3.9.6",
+  "readme_sha256": "78be81114113d8bc6444520a3fc0562e10cacc38cb1f6a9883dec32a6bb57f00",
+  "recorded_at_utc": "2026-10-16T21:02:59.685154+00:00",
+  "scientific_scope": {
+    "all10_Einstein_or_full_joint_stationarity": false,
+    "new_price_added": false,
+    "old_entrypoints_executed": false,
+    "physical_matrix_gate_admission": false,
+    "reference_pointer_selected": false,
+    "smooth_C1_matrix_element_limit_proved_in_memo": true,
+    "uniform_raw_C0_history_source_limit_claimed": false
+  },
+  "source_pins": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c"
+  },
+  "status": "PASS",
+  "stderr_empty_both_modes": true
+}

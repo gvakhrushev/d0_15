@@ -129,6 +129,15 @@ fixed-g/fixed-tau/raw h^-2 terminal. Результат не выбирает na
 observer/reference law. Он непосредственно проверяет один из отсутствующих
 в предыдущем formal h² expansion actual amplitude coefficients.
 
+Последующий [полный source-balanced test](A4D_CONE_SOURCE_BALANCED_PREPARATION.md)
+уже проверяет первую альтернативу: одна смена leading preparation любого
+ранга при неизменных first field jets на этом cone не помогает. Metric
+balance требует веса1/4 по каждой оси, а actual A1 этому несовместим.
+Для faithful полного shell real field-image witness исключает также все
+гладкие первые field counterjets. Следующий открытый вариант — неполный
+ранг ВМЕСТЕ с выведенными field jets и их полными Euler equations;
+ни один из этих результатов не является global GR no-go.
+
 ## 5. Проверка
 
 [Узкий helper](sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py)
