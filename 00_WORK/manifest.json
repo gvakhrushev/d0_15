@@ -81,17 +81,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-ORBIT-MARGIN.md"
     },
     {
-      "id": "WRK-A4D-FIELD-BLOCK-INVENTORY",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "List the nonzero field-only blocks outside Omega-Omega in the current joint kernel, with ranks and supports, without closing them.",
-      "brief": "00_WORK/tasks/WRK-A4D-FIELD-BLOCK-INVENTORY.md"
-    },
-    {
       "id": "WRK-A4D-RANK8-SADDLE-ZERO",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
