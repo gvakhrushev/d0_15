@@ -55,7 +55,7 @@
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Derive the exact Laurent factorization of the owned holomorphic A(z), certify the generic kernel rank on every irreducible divisor component and the full higher-codimension rank/nullity strata on (C^×)^4, and explicitly reject the refuted phase-count law.",
+      "exit_condition": "Derive the exact Laurent factorization of the owned holomorphic A(z), certify the generic kernel rank on every irreducible divisor component and the full higher-codimension rank/nullity strata on (C^\u00d7)^4, and explicitly reject the refuted phase-count law.",
       "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     },
     {
@@ -134,17 +134,6 @@
       ],
       "exit_condition": "Derive a noncommuting second-variation/envelope formula and explicit safe-domain bounds for the existing preparation optimum and channel relative-entropy remainder, without claiming stability of the full dynamics.",
       "brief": "00_WORK/tasks/WRK-A4D-PREPARATION-SECOND-VARIATION.md"
-    },
-    {
-      "id": "WRK-A4D-FLAT-SHEAR-COMMON-SOURCE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Build a typed common-source calculation on the already-owned flat factor shear, consuming its existing theorem and preserving distinct preparations/actions; expose any admissible extra source or a precise unbound operator slot.",
-      "brief": "00_WORK/tasks/WRK-A4D-FLAT-SHEAR-COMMON-SOURCE.md"
     }
   ]
 }

@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 8 | 0 | 0 | 0 | 8 | 0 / 5 |
-| **Total** | **11** | **0** | **0** | **1** | **12** | **1 / 10** |
+| WORKER | 7 | 0 | 0 | 0 | 7 | 0 / 5 |
+| **Total** | **10** | **0** | **0** | **1** | **11** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -26,7 +26,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-ANISOTROPIC-NORMAL-SOURCE | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-MOVING-SCALE-VARIATION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-PREPARATION-SECOND-VARIATION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-FLAT-SHEAR-COMMON-SOURCE | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 
 ## Registry Health & Metrics
 
