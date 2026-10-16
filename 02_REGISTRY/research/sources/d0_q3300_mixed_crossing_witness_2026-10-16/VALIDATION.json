@@ -1,0 +1,24 @@
+{
+  "checker_sha256": "6ceae409e60e1dbb251422b502c6bba8c228a5a49f0256eba731a176aa67d4e6",
+  "commands": [
+    "python3 check_q3300_mixed_crossing.py",
+    "python3 check_q3300_mixed_crossing.py",
+    "python3 -O check_q3300_mixed_crossing.py"
+  ],
+  "external_full_lorentz_context": "02_REGISTRY/research/sources/d0_q3300_mixed_crossing_witness_2026-10-16/INTERFACE_BOUNDARY.json",
+  "fixed_B_sha256": "79cd5a423a68b6d47cc41853a840c3caef06895ab85e1781ef15cb2fc6a47a8d",
+  "fixed_schur_R_sha256": "5ffe4cc73949b455c3e8643d1cae0bf35ece226179278ad05d578f67c720fc90",
+  "full_lorentz_owner_sha256": "0ca27a97b7e8fa5653242415c4bcbe0e946fccd95bb277024fcbe79222c927a8",
+  "legacy_interval_owner_sha256": "19d4e33f7c74465da9079ec4e3c90e0b20b3b1aad448a0cdb1957a3fc61ef41f",
+  "normal_optimized_output": "BYTE_IDENTICAL",
+  "numpy": "2.0.2",
+  "old_4096_root_or_Lean_replay": false,
+  "optimized_runs": 1,
+  "ordinary_runs": 2,
+  "python": "3.9.6",
+  "schema": "d0-q3300-mixed-crossing-validation/1",
+  "scientific_output_bytes": 3292,
+  "scientific_output_sha256": "87b2b6a12cff0462217aaa1f1c7f05a58b2cc4c453276cd7f786d123fcbbfd32",
+  "scope": "local q3300 legacy four-source stationary-crossing obstruction only",
+  "sympy": "1.14.0"
+}

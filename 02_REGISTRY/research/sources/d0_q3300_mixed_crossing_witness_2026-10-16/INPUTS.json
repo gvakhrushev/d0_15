@@ -1,0 +1,24 @@
+{
+  "schema": "d0-q3300-mixed-crossing-inputs/1",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_interval.py",
+      "sha256": "19d4e33f7c74465da9079ec4e3c90e0b20b3b1aad448a0cdb1957a3fc61ef41f",
+      "role": "interval owner"
+    },
+    {
+      "path": "fixed_B.json",
+      "sha256": "79cd5a423a68b6d47cc41853a840c3caef06895ab85e1781ef15cb2fc6a47a8d",
+      "role": "fixed finite-decimal 13 by 13 congruence"
+    },
+    {
+      "path": "fixed_schur_R.json",
+      "sha256": "5ffe4cc73949b455c3e8643d1cae0bf35ece226179278ad05d578f67c720fc90",
+      "role": "fixed finite-decimal approximate inverse of the 12 by 12 complement block"
+    }
+  ],
+  "momentum": [3, 3, 0, 0],
+  "carrier_length": 8,
+  "bracket": ["0.43032", "0.430405"],
+  "source_basis": "four native link-source rows generated from the symbolic homogeneous frame"
+}
