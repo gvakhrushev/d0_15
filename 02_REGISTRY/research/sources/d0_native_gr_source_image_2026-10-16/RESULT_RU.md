@@ -76,14 +76,14 @@ A self-contained exact SymPy checker `check_source_image.py` was executed normal
 
 ## Addendum: exact minimal one-row linear completion (not physical admission)
 
-The source-image obstruction is considerably smaller than the missing five raw metric dimensions suggest, once **the four independent linearized Bianchi equations are imposed**. On full-support modes at the regular fixture, the native annihilator of the five-dimensional metric image has a basis consisting of the four diagonal covectors and \`lambda lambda^T\` (with \`lambda=(-4,1,1,1)\`). Bianchi cuts its dimension from five to one. Therefore a **single additional physically admitted equation** separating that one residual covector suffices for local algebraic identification of the whole ten-slot Einstein source **at this fixture and Fourier momentum**.
+The source-image obstruction is considerably smaller than the missing five raw metric dimensions suggest, once **the four independent linearized Bianchi equations are imposed**. On full-support modes at the regular fixture, the native annihilator of the five-dimensional metric image has a basis consisting of the four diagonal covectors and `lambda lambda^T` (with `lambda=(-4,1,1,1)`). Bianchi cuts its dimension from five to one. Therefore a **single additional physically admitted equation** separating that one residual covector suffices for local algebraic identification of the whole ten-slot Einstein source **at this fixture and Fourier momentum**.
 
-For the computed witness \`E\`, the ordinary conformal metric direction \`delta Q=Q\` separates it, since \`Tr(Q E)=-105!=0\`. Exact ranks are
+For the computed witness `E`, the ordinary conformal metric direction `delta Q=Q` separates it, since `Tr(Q E)=-105!=0`. Exact ranks are
 
-\`\`\`
+```
 rank native image = 5;
 rank [native image ; Bianchi] = 9;
 rank [native image ; Bianchi ; conformal scalar row] = 10.
-\`\`\`
+```
 
 This is an algebraic **conditional sufficient repair**, not an existing native equation: the conformal direction is *forbidden* by the full-support literal stored own-leg constraints, and the supplied W2 site weight/similarity does not create a physical conformal source. Nor does one trace direction solve action selection or refinement. For other momenta, trace pairing can be zero, so no assertion of a universal conformal repair is made. The right obligation is to derive a single full-support scalar/source row or physically force a larger variation domain, and to show its coefficient and matter/archive coupling come from the actual unchanged native programme.
