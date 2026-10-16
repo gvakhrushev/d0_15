@@ -5254,24 +5254,25 @@ internal refinement laws or close the ten transverse equations, native
 source, exact-root, or GR tasks.
 Proof and source pins: [fixed-branch rigidity note](A4D_NATIVE_ISOMETRIC_COMMON_PROCESS_METRIC_RIGIDITY.md).
 
-## Fixed-frame step fails on the curved metric-binding chart (2026-10-16)
+## Direct rest-coordinate step fails on the curved metric-binding chart (2026-10-16)
 
-A 37-check cross-owner certificate now tests the actual full16 positive AF
-gate on the same `lambda=1` matter-clock equality chart, with a nonzero
-top-grade amplitude `p^20`. The input has all twelve effects `p^2`, a
-timelike current, and the owned curved germ `R_q(0)=-1/(1500 p^3)`. The
-literal next state remains timelike, retains nonzero top grade, and has a
-defined negative-selector engine step. But reusing the same record wiring
-makes its second effect satisfy the exact bound
+A 37-check cross-owner certificate applies the literal full16 positive AF
+gate directly to the `lambda=1` rest-coordinate vector `m0` in the matter-
+clock chart, with a nonzero top-grade amplitude `p^20`. The input has all
+twelve effects `p^2`, a timelike chart current, and the owned curved germ
+`R_q(0)=-1/(1500 p^3)`. The literal next state remains timelike, retains
+nonzero top grade, and has a defined negative-selector engine step. But
+reusing the same record wiring makes its second effect satisfy the exact bound
 
 ```text
 2-3*p+a*(4*p-3) < -7/40.
 ```
 
-It therefore leaves the real probability domain after one fixed-frame step.
-This rules out the concrete update “apply the current CAR gate and then reuse
-the same metric-binding chart” on this curved germ. It does not rule out a
-simultaneous coframe/readout update, establish AF-image admission, or close
-the parent. The precise remaining task is to derive or exclude that
-simultaneous update with all10 matching rows, all16 matter coordinates, and
-the complete action derivative. Evidence: [domain obstruction note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and [exact checker](certificates/a4d_native_common_process_domain_check.py).
+It therefore leaves the real probability domain after one direct rest-
+coordinate step. The AF/CAR engine owner acts on raw `m`, whereas this chart
+uses `m0=rho(F)^-1m`; the map between a raw engine step and the next chart
+state has not been derived. This result rules out only the candidate direct
+update `m0 -> U_+m0` with unchanged wiring on this curved germ. The next task
+is to derive or exclude `m=rho(F)m0`, `m'=U_s m`, `m0'=rho(F')^-1m'`, with
+all ten matching rows, all sixteen matter coordinates and the full action
+derivative. Evidence: [domain obstruction note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and [exact checker](certificates/a4d_native_common_process_domain_check.py).

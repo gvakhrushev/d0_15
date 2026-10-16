@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Exact one-step cross-owner test for the matter-clock common-process chart.
 
-The literal full16 AF/CAR engine gate is applied to the actual s=1
-matter-clock reference plus a small nonzero top-grade clock amplitude. The
-input lies in the smooth curved equality chart and in the literal engine
-guard sector. The output remains timelike and oriented, but its fixed
-lambda=1 comparator probability leaves (0,1/2). This is a scoped interface
-obstruction, not a physical-admission or global no-go theorem.
+The literal full16 AF/CAR gate is applied directly to the lambda=1
+rest-coordinate vector m0 from the matter-clock chart. This is a candidate
+coordinate update, not an established adapter for the raw native pair
+(F,m) with m=rho(F)m0. The direct m0 update leaves the same comparator's
+probability domain on a curved germ. The raw moving-frame transition remains
+unclassified; this is not a global physical no-go theorem.
 """
 import argparse
 import hashlib
@@ -186,24 +186,24 @@ def run():
         "source_pins_sha256": PINS,
         "exact_checks": len(checks),
         "input": {
-            "matter": "owned s=1 full16 reference + p^20 e15",
+            "matter": "owned s=1 lambda=1 rest-coordinate reference + p^20 e15",
             "engine_guard_sector": list(GUARDS),
             "initial_effects": "all12 equal p^2",
             "curved_comparator_scalar": "-1/(1500*p^3)",
             "top_grade": "p^20 != 0",
         },
         "one_step": {
-            "branch": "+",
+            "branch": "+ on m0 coordinates; raw CAR selector is not identified",
             "output_first_grade": "a*(4*p-3) < 0",
             "fixed_wiring_weight_1": "2-3*p+a*(4*p-3) < -7/40",
-            "output_current": "(1,2/(3+p^40),0,0)",
+            "output_rest_coordinate_current": "(1,2/(3+p^40),0,0)",
             "output_current_lorentz_norm": "1-4/(3+p^40)^2 > 5/9",
             "output_top_grade": "-a*p^20-p != 0",
             "next_engine_branch": "- is defined",
             "same_comparator_chart": "FAIL: effect weight is negative",
         },
-        "verdict": "FIXED_LAMBDA_ONE_COMMON_PROCESS_DOES_NOT_CLOSE_ON_CURVED_CHART",
-        "scope": "literal full16 gate and named lambda=1 comparator; AF-image and primitive admission remain unproved",
+        "verdict": "DIRECT_REST_COORDINATE_UPDATE_DOES_NOT_CLOSE_ON_CURVED_CHART",
+        "scope": "gate applied directly to lambda=1 rest coordinates; raw (F,m)->(F',m') adapter, selector identification, AF-image and primitive admission remain unproved",
     }, checks
 
 
@@ -223,7 +223,7 @@ def main():
     for name in checks:
         print("PASS_" + name)
     print("RESULT " + result["verdict"])
-    print("RESULT GLOBAL_PHYSICAL_ADMISSION_AND_GR_REMAIN_OPEN")
+    print("RESULT RAW_MOVING_FRAME_TRANSITION_AND_GR_REMAIN_OPEN")
 
 
 if __name__ == "__main__":

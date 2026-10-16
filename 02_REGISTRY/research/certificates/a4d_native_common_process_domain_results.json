@@ -11,26 +11,26 @@
       9
     ],
     "initial_effects": "all12 equal p^2",
-    "matter": "owned s=1 full16 reference + p^20 e15",
+    "matter": "owned s=1 lambda=1 rest-coordinate reference + p^20 e15",
     "top_grade": "p^20 != 0"
   },
   "input_head": "dfaf7c8df509d5abd83fa60a185ad530feadc9b5",
   "one_step": {
-    "branch": "+",
+    "branch": "+ on m0 coordinates; raw CAR selector is not identified",
     "fixed_wiring_weight_1": "2-3*p+a*(4*p-3) < -7/40",
     "next_engine_branch": "- is defined",
-    "output_current": "(1,2/(3+p^40),0,0)",
     "output_current_lorentz_norm": "1-4/(3+p^40)^2 > 5/9",
     "output_first_grade": "a*(4*p-3) < 0",
+    "output_rest_coordinate_current": "(1,2/(3+p^40),0,0)",
     "output_top_grade": "-a*p^20-p != 0",
     "same_comparator_chart": "FAIL: effect weight is negative"
   },
   "schema": "d0-native-common-process-domain/1",
-  "scope": "literal full16 gate and named lambda=1 comparator; AF-image and primitive admission remain unproved",
+  "scope": "gate applied directly to lambda=1 rest coordinates; raw (F,m)->(F',m') adapter, selector identification, AF-image and primitive admission remain unproved",
   "source_pins_sha256": {
     "02_REGISTRY/research/certificates/a4d_native_af_role_orbit_metric_check.py": "b718a3ea3e3f47087b664cc9bb194e0e09c5ae818836efdba3e63b9c11e4f2d5",
     "02_REGISTRY/research/sources/d0_native_adaptive_engine_2026-10-16/adaptive_engine.py": "1eaf0ed625c78d2779da83cf85e65bf1c1e797a3719da3b786c46cd16733b402",
     "02_REGISTRY/research/sources/d0_native_preparation_stationary_2026-10-16/matter_clock_binding.py": "1b2c668bca6c99ca84a4be513274fddc2c9a82a832368abc4a75ee24f58fbb71"
   },
-  "verdict": "FIXED_LAMBDA_ONE_COMMON_PROCESS_DOES_NOT_CLOSE_ON_CURVED_CHART"
+  "verdict": "DIRECT_REST_COORDINATE_UPDATE_DOES_NOT_CLOSE_ON_CURVED_CHART"
 }

@@ -1,9 +1,17 @@
-# The fixed-frame AF update leaves the native metric-binding chart
+# Directly evolving rest coordinates leaves the metric-binding chart
 
-2026-10-16. Exact cross-owner one-step obstruction for the named
-`lambda=1` matter-clock readout. This rejects one fixed-geometry common
-process; it is not a no-go for simultaneous coframe motion or for all native
-physics.
+2026-10-16. Exact cross-owner one-step result for the named `lambda=1`
+matter-clock readout. The checker applies the actual full16 gate directly to
+the chart's rest-coordinate vector `m0` and proves that this direct update
+leaves the probability domain on a curved germ.
+
+The AF/CAR engine owner defines its gate on the raw CAR vector `m`, while the
+matter-clock chart reads `m0=rho(F)^-1 m`. No owner currently identifies the
+gate on `m0` with the raw native transition or derives the simultaneous
+`(F,m)->(F',m')` map. Thus this result rejects the direct rest-coordinate
+update `m0 -> U_+ m0`; it does not yet show that the actual coupled native
+process fails. It is not a no-go for simultaneous coframe motion or all
+native physics.
 
 Inputs are pinned at `dfaf7c8df509d5abd83fa60a185ad530feadc9b5`:
 
@@ -15,7 +23,7 @@ Inputs are pinned at `dfaf7c8df509d5abd83fa60a185ad530feadc9b5`:
 
 ## A genuinely curved input in the same full16 chart
 
-Use the actual native rest vector at the owner's `s=1` reference,
+Use the chart's actual full16 rest-coordinate vector at the owner's `s=1` reference,
 
 \[
 m_*=-2ap\,e_0+(2p-1)e_1+e_{13}+e_{14},\qquad
@@ -53,11 +61,12 @@ the current remains timelike, and `X_3` stays nonzero. The input therefore
 lies on a genuinely curved, oriented part of the named equality chart, not
 only at its flat center.
 
-## One literal common step fails the same readout
+## One literal rest-coordinate step fails the same readout
 
-At the origin the first-grade selector is `2p-1>0`, so the actual full16
-gate uses its positive branch `U_+`. The checker executes the coefficient-
-stored engine state and verifies that this is its literal first transition;
+For this candidate coordinate update, the chart vector `m0` has first-grade
+selector `2p-1>0`, so the literal gate uses its positive branch `U_+`. The
+checker executes the coefficient-stored engine state and verifies that this
+is its literal first transition;
 the next state has a nonzero negative selector, so the actual adaptive
 engine's `U_-` step is defined as well.
 
@@ -80,8 +89,8 @@ Its sign is proved with rational bounds, not floating point. From
 \tag{4}
 \]
 
-The output is still a real full16 engine state in the guard sector. Its
-native current remains timelike,
+The output of this candidate rest-coordinate step is still a real full16
+engine state in the guard sector. Its chart current remains timelike,
 
 \[
 J'=(1,2/(3+p^{40}),0,0),\qquad
@@ -93,14 +102,14 @@ is specifically that the named fixed comparator can no longer form a real
 channel from the evolved matter: its required effect weight is negative.
 The current and orientation did not disappear.
 
-**Scoped verdict:** the literal fixed-frame `m -> U_+m` update does not close
-on the existing `lambda=1` curved metric-binding chart, even for one step.
-It cannot be used as the common moving-metric process by simply evolving
-matter and then reusing the same record readout. An alternative simultaneous
-coframe/readout update could change the next rest-frame coordinates; its
-existence, exact matching in all ten metric slots, admission by the actual AF
-image, and complete differentiated action are not established here. No
-global selector or parent NO-GO follows.
+**Scoped verdict:** the candidate direct rest-coordinate update
+`m0 -> U_+ m0` does not close on the existing `lambda=1` curved
+metric-binding chart, even for one step. The unresolved raw-state transition
+has the form `m=rho(F)m0`, `m'=U_s m`, `m0'=rho(F')^-1 m'`, with the branch
+selected from the raw engine coordinate and `F'` determined by the common
+process. The repository has not derived or admitted this map, nor checked
+its all-ten metric matching, all-sixteen matter components, AF image, or
+complete differentiated action. No global selector or parent NO-GO follows.
 
 Replay the 37 exact controls in ordinary or optimized mode:
 
@@ -111,8 +120,11 @@ python3 -O 02_REGISTRY/research/certificates/a4d_native_common_process_domain_ch
 
 Both modes agree with the pinned
 [`results JSON`](certificates/a4d_native_common_process_domain_results.json).
-The finite AF image and primitive-admission boundary remains explicit.
-The next scientific target is now a concrete simultaneous-step question:
-derive or exclude an admitted `F -> F'` and complete matter update for which
-the engine transition, all ten record/native matching equations, all sixteen
-matter components, and the full action derivative hold together.
+The finite AF image and primitive-admission boundary remains explicit. The
+certificate's selector is computed from `m0[1]`; the raw engine selector is
+computed from the raw CAR vector `m[1]`, and their identification is unproved.
+The next scientific target is now the missing coordinate bridge: derive the
+raw branch selector and the coupled `F,m -> F',m'` transition, then test
+`m'=U_s m`, `m0'=rho(F')^-1m'`, the twelve probability-domain conditions,
+all ten metric matching rows, all sixteen matter components, and the full
+action derivative together.
