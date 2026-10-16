@@ -6,10 +6,24 @@ on:
   pull_request:
     types: [opened, reopened, synchronize, ready_for_review]
   workflow_dispatch:
+    inputs:
+      research_scope:
+        description: Research certificates to replay from the checked commit
+        type: choice
+        options: [full, changed]
+        default: full
+      base_ref:
+        description: Diff base when research_scope is changed
+        type: string
+        default: origin/main
 
 concurrency:
   group: guards-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
+
+permissions:
+  contents: read
+  actions: read
 
 jobs:
   guards:
@@ -68,65 +82,60 @@ jobs:
       - name: Python syntax
         run: python -m compileall -q tools 04_CERTIFICATES
 
-      - name: Execute changed research certificates
-        if: github.event_name != 'workflow_dispatch'
-        # Individual scripts retain their own limits below. A broad research PR
-        # can contain many independently bounded certificates in this serial step.
-        # PR #310 reached the end of 103 passing groups at the 60-minute limit.
-        # Keep all script limits and give the serial batch measured headroom.
+      - name: Fast tooling controls
+        run: |
+          python tools/test_task_dispatch.py
+          python tools/test_run_research_certs.py
+          python tools/test_ci_replay_reuse.py
+
+      - name: Check unchanged scientific inputs against a successful Ready run
+        id: replay_reuse
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/ci_replay_reuse.py --event-path "$GITHUB_EVENT_PATH" --repository "$GITHUB_REPOSITORY" --output "$GITHUB_OUTPUT"
+
+      # Ready replays the cumulative PR diff. A process-doc-only synchronize may
+      # reuse a successful Ready run with the same base and environment; every
+      # missing or changed input/evidence falls back to normal replay.
+      - name: Replay research certificates in isolated worktrees
+        if: (github.event_name != 'pull_request' || github.event.pull_request.draft == false) && steps.replay_reuse.outputs.reuse != 'true'
         timeout-minutes: 90
         shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          CHECKED_REF: ${{ github.sha }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PUSH_BASE: ${{ github.event.before }}
+          MANUAL_SCOPE: ${{ inputs.research_scope || 'full' }}
+          MANUAL_BASE: ${{ inputs.base_ref || 'origin/main' }}
         run: |
           set -euo pipefail
-
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            BASE="${{ github.event.pull_request.base.sha }}"
+          if [[ "$EVENT_NAME" == "workflow_dispatch" && "$MANUAL_SCOPE" == "full" ]]; then
+            python tools/run_research_certs.py --ref "$CHECKED_REF" --all --workers 2
+            exit 0
+          fi
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            BASE="$MANUAL_BASE"
+          elif [[ "$EVENT_NAME" == "pull_request" ]]; then
+            BASE="$PR_BASE"
           else
-            BASE="${{ github.event.before }}"
+            BASE="$PUSH_BASE"
           fi
-
           if [[ -z "$BASE" || "$BASE" =~ ^0+$ ]]; then
-            echo "No usable diff base; skipping changed research certificates."
-            exit 0
+            python tools/run_research_certs.py --ref "$CHECKED_REF" --all --workers 2
+          else
+            python tools/run_research_certs.py --ref "$CHECKED_REF" --base "$BASE" --workers 2
           fi
 
-          mapfile -t CERTS < <(
-            git diff --name-only --diff-filter=ACMR "$BASE" "${{ github.sha }}" -- \
-              '02_REGISTRY/research/certificates/*.py'
-          )
-
-          if (( ${#CERTS[@]} == 0 )); then
-            echo "No changed research certificates."
-            exit 0
-          fi
-
-          echo "Executing ${#CERTS[@]} changed research certificate(s):"
-          printf '  %s\n' "${CERTS[@]}"
-
-          for cert in "${CERTS[@]}"; do
-            [[ -f "$cert" ]] || continue
-
-            timeout_seconds=180
-            mapfile -t timeout_decl < <(
-              sed -n '1,40p' "$cert" \
-                | sed -n 's/^# D0_CI_TIMEOUT_SECONDS=\([0-9][0-9]*\)$/\1/p'
-            )
-            if (( ${#timeout_decl[@]} > 1 )); then
-              echo "Multiple D0_CI_TIMEOUT_SECONDS declarations in $cert" >&2
-              exit 1
-            fi
-            if (( ${#timeout_decl[@]} == 1 )); then
-              timeout_seconds="${timeout_decl[0]}"
-              if (( timeout_seconds < 180 || timeout_seconds > 1800 )); then
-                echo "Invalid research-certificate timeout ${timeout_seconds}s in $cert; allowed range is 180..1800." >&2
-                exit 1
-              fi
-            fi
-
-            echo "::group::research certificate: $cert (timeout=${timeout_seconds}s)"
-            timeout "${timeout_seconds}s" python "$cert"
-            echo "::endgroup::"
-          done
+      - name: Preserve research replay logs and mutation diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-replay-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .build/research-certificates/
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Certificate artifact freshness and semantic mutations
         run: python tools/test_cert_artifact_freshness.py
@@ -136,6 +145,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if [[ "${{ github.event_name }}" == "pull_request" && "${{ github.event.pull_request.draft }}" == "true" ]]; then
+            echo "needs_certs=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [[ "${{ steps.replay_reuse.outputs.reuse }}" == "true" ]]; then
+            echo "needs_certs=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "needs_certs=true" >> "$GITHUB_OUTPUT"
             exit 0
