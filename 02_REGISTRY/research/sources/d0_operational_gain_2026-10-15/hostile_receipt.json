@@ -1,0 +1,46 @@
+{
+  "false_physical_receipt_rejected": true,
+  "mathematical_mutants": [
+    {
+      "gate": "exact_cost_increment_0",
+      "mutation": "lost_pending_branch",
+      "rejected": true
+    },
+    {
+      "gate": "exact_cost_increment_0",
+      "mutation": "wrong_source_for_return",
+      "rejected": true
+    },
+    {
+      "gate": "numeric_full_gram_entropy_1",
+      "mutation": "resplit_pending_in_numeric",
+      "rejected": true
+    },
+    {
+      "gate": "numeric_true_preparation_and_gate_source_1",
+      "mutation": "frozen_instrument_jet",
+      "rejected": true
+    },
+    {
+      "gate": "numeric_true_preparation_and_gate_source_1",
+      "mutation": "frozen_prepared_density",
+      "rejected": true
+    },
+    {
+      "gate": "branch_cost_minus_gain_surprisal",
+      "mutation": "entropy_as_gain",
+      "rejected": true
+    },
+    {
+      "gate": "likelihood_PVM_attains_spectrum",
+      "mutation": "erase_coherent_offdiagonal",
+      "rejected": true
+    },
+    {
+      "gate": "interval_net_theta_positive",
+      "mutation": "wrong_net_source_sign",
+      "rejected": true
+    }
+  ],
+  "status": "PASS"
+}

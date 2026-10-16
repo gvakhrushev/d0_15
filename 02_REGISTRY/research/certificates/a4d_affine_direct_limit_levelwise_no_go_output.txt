@@ -1,0 +1,13 @@
+D0.Research.AffineDirectLimitLevelwiseNoGo.continuousLinearMap_eq_id_of_dense_fixed.{u} {K : Type}
+  [NontriviallyNormedField K] {E : Type u} [NormedAddCommGroup E] [NormedSpace K E] (T : E →L[K] E) (S : Set E)
+  (hS : Dense S) (hfix : ∀ x ∈ S, T x = x) : T = ContinuousLinearMap.id K E
+'D0.Research.AffineDirectLimitLevelwiseNoGo.continuousLinearMap_eq_id_of_dense_fixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.AffineDirectLimitLevelwiseNoGo.directLimit_translation_eq_id.{u, u_1} {K : Type} [NontriviallyNormedField K]
+  {E : Type u} [NormedAddCommGroup E] [NormedSpace K E] {B : Type u_1} (T : B → E →L[K] E) (stages : ℕ → Set E)
+  (hdense : Dense (⋃ n, stages n)) (hlevel : ∀ (b : B) (n : ℕ), ∀ x ∈ stages n, (T b) x = x) (b : B) :
+  T b = ContinuousLinearMap.id K E
+'D0.Research.AffineDirectLimitLevelwiseNoGo.directLimit_translation_eq_id' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

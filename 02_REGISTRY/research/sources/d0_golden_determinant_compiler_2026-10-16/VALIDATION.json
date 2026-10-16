@@ -1,0 +1,25 @@
+{
+  "GR_closed": false,
+  "concurrent_integration_base": "1f936ebfa1b3556245ba708fdeebb0a24500ec4b",
+  "exact_checks": 59,
+  "executed_mathematical_mutants_rejected": 6,
+  "file_sha256": {
+    "02_REGISTRY/research/A4D_GOLDEN_DETERMINANT_COMPILER.md": "c22d21cebacee987642cf2bed2974b6af9bfced8f99b0d4fa7f6292addf8facc",
+    "02_REGISTRY/research/sources/d0_golden_determinant_compiler_2026-10-16/INPUTS.json": "6dad8d667d705b046b8a7ed433196cc107f7185bd5f6f5eb024a30c1a8eefd78",
+    "02_REGISTRY/research/sources/d0_golden_determinant_compiler_2026-10-16/check_golden_determinant.py": "a06eeae8efa70bf99e5e719a1157c8b545cbaba36cc8154ec381923736154855",
+    "02_REGISTRY/research/sources/d0_golden_determinant_compiler_2026-10-16/mutations.json": "c33cd6410836d9d632b22bc2252a3c5091c5155fd94c898c7a42f832b2be1873",
+    "02_REGISTRY/research/sources/d0_golden_determinant_compiler_2026-10-16/result.json": "3f971232e5b7fc535c057dba831bbbaf082ba05503ff1a4ec72b716c061ec962",
+    "02_REGISTRY/research/sources/d0_golden_determinant_compiler_2026-10-16/test_mutations.py": "849a8d92d39fded168f7dadd7a768dcc50ed41291b1fc5702c61c202a74ec49d"
+  },
+  "full_repository_local_replay": false,
+  "independent_scientific_acceptance": false,
+  "native_action_selected": false,
+  "native_primitive_admission": false,
+  "new_Lean_compilation": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "python": "3.13.5",
+  "schema": "d0-golden-determinant-validation/1",
+  "source_base": "df9b5b7a4fa473279695100348db7e3feadf4910",
+  "sympy": "1.14.0"
+}

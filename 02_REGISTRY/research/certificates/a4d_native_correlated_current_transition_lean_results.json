@@ -1,0 +1,732 @@
+{
+  "actual_command": [
+    "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.lean"
+  ],
+  "actual_cwd": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION",
+  "actual_direct_dependency_resolution": [
+    "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean/Init.olean",
+    "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean/Init.olean",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DObserverPositiveExterior.olean",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Representation/GoldenCoherentMemory.olean",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Representation/GoldenOrderInterferometer.olean",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/InnerProductSpace/Basic.olean",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Basic.olean",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Pow.olean",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Mul.olean",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Inv.olean",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Add.olean",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean"
+  ],
+  "actual_environment": {
+    "LEAN_PATH": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/Cli/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/batteries/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/Qq/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/aesop/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/importGraph/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/plausible/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean:/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean:/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean"
+  },
+  "actual_import_olean_sha256": {
+    "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean/Init.olean": "c4f3675f64306af5e7101bbda77bb960f306373873184df01ec972fd1cef372d",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Add.olean": "0d7726a6ad1c0b5621fb7d9241ea2424c6496e2efdb8e3a94514398985594e28",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Basic.olean": "5aa0a297be7f53c4fdced374ba3bf43a933a30f81d56ae686c36bd8edeaae731",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Inv.olean": "4db31a56d15af041d4ef07c2976531c938eb2fd2d60e0f7f9481e0df8362008b",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Mul.olean": "456bfe4e0f1955b34fd5769f48bda802a95c18af53b9fd369e1fc348e10ada05",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Pow.olean": "73f1922ff84623e9b33d2f5137c1f18ccc9d4bcadb41d754eecb542959cc31c8",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/InnerProductSpace/Basic.olean": "3f53fe929ea26faa9e86b54fb23c8b2618fc32d0e0f4785ab59013bac01c68fe",
+    "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "a6af9eb6c91de05f4e1f808efd16609eabf9ddee16929d30e6ddb63c66ea97be",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Algebra/RoleSignature.olean": "92397e6c11cfad1dcaa937172edb4b3a244a2e7e68a418d23c277b7ce03c99a1",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/EulerPhi.olean": "e9324cda7eeacc2b7f948d80e03fcced20be7862c6665cd4c00cfebc5ec75132",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/ForcedReturnWindows.olean": "94615abe22fa37d18f67619b3ab54bef101fcf3cb622a7958f6297b7bae709b7",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/InfinitePhaseTower.olean": "951d7c70d61f2e4d4bf0766f42d36b92b4c0fdacb78e9ecb08c1d75c42a9dcd4",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseTower.olean": "fb89dbd1c95e737257c465a0e70c163ead1792703253382ca0ec434c19aad151",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseTowerControls.olean": "8666bd0043235a9f3ed443e8698f3e8e259df385fb440635ecf4c9d2836046dd",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseTowerMinimality.olean": "0a85dea17822e8b2fa51eb5d1bf0ae270b8fc674ba24a72cf19c9b15ee57769d",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseTowerRecursion.olean": "373820b12e641b72c2ecc0c6265a1c2ecab8b80f1ddb369c30c270872951b202",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseUnfolding.olean": "673c27ed4f53703ac01c825d1df585741f3c42d2657b20cf307f3f5ee4213dec",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Core/DyadABCD.olean": "69955ddefbe3c32a4266a52be958e49568c33a205d42b03f47a4bbb92c075ce2",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Core/FiniteTypes.olean": "9aa80a4992abdfc06ebef96d4523367865457e931bd7acbee24616806d7b1c9a",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Core/Phi.olean": "fe8f51f960ca277c347bdf818017dfc79b88f1db310a63d706710aea34002d92",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Foundation/M1Predicate.olean": "e23e92daebefdfbc0794173c3da4a00c5073fcde980531d4fbb327563faa77d2",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Foundation/ObservableCompletionCanonicity.olean": "5d98999866613aca0d1d38ad2ad1740f4c66861a6fe6c9f7fe010084d1aa7944",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DCoframeParentConstraint.olean": "6344663c10ae3087b3f5d7dc42e31383f5d3ee0c147e56a678c01e135a7a4b8a",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DObserverPositiveExterior.olean": "123b2a5d63a1a0814bd9f5a337f7f3890fece75204ef40a516830ec650a0996d",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DRolePairMetricCarrier.olean": "e84ce4e472a598d8eb2398370df526b3cf0ae392be327a367a2dad006f26c49d",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DSolderMetricCompletion.olean": "a0b8d9819565fa55004d861ae5b8048d1e842a48a4f79bf2cd46f686e71fe47c",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DSymRoleCentralDifference.olean": "c9062e8d1afc5275c234455bd97ce73535bf6af8cca51b7b22250a6757ce3ee5",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveCARFockCarrier.olean": "20d909cacdf6d332ece5515ebc371c4e501a3a9e61b617d72293374105dd5699",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveCARRelations.olean": "40daf7caa66319bdba99e0c144b11e3687a4beb9f56dd7cd68f217b1a08c214c",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveCubicalDifferential.olean": "8c2fe3abeba036dadc5b4eab477ac09880da459d3837d440c973ebba0babe614",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveExteriorFrameLift.olean": "a54bff4571bfff178767cff1e04dc91b559537d179f3f7a8754308fdef9520d7",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveLorentzCompatibility.olean": "cf14f4c2e9676e11344caa957dc3707286f2568aefff41190286a8f42dd748f0",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveModeExponent.olean": "a887342a7ec1a050b79269e37e1546aca60a340744df948d1be35c1a96ef819f",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchivePhaseDistance.olean": "43bc7b18a45bf6941ffa2effd29078694a300f6adaded2cf82a0667050468168",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchivePhaseEdgeMetricScale.olean": "b5076e8f131a84a360ccf88e20c38ed661cf280cde89fce3ed72b8313856fef1",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveRefinementTower.olean": "dc819ac329986fc09a74bd027610a99c248ed232336f34a7736d9313531f7e0c",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveRoleEquivalence.olean": "caf7504d28e4ff1ea30423a97c2c3e46e1a87301194faa55256e65a855038197",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveRolePhaseGroup.olean": "b96b568f22bd3d037606ea647e1aa3255bd82e0f7815b55bac78c029a6ca63be",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveRolePhaseProductCarrier.olean": "71d18b96bd9975abeb3fd9a8fb95b97d1c8b947dbf43bf619f5b223050efdca1",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveWeightedGraph.olean": "3118d4cfd9e06011bcf7b762f044a495ba2efc42f6be4c049d7baab68b57f13b",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/CovarianceTower.olean": "4624abad0136d1ff185afb3b266ea9c14541077a6fadd1e039433b5351ab7f08",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/InfiniteSpectralTower.olean": "a7e507ee1a46ee35d9afc9dbd3637da1ccbbbc565256f3002bb7af1a75884662",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/SpectralTower.olean": "5d412c1d35ca63a85d746953c2271ac463b33625ed4b4d5b4abd9ba2cdaa6aef",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Matter/FiniteSelector.olean": "6f417f0eb3f14066119acddce8b3d724243ac4150f2191be937bb88f11a017d6",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Phase.olean": "f9e6763c6d13c4b4aec67f1d6c26eb464d355e5edfdb0d8e12fc52c560116e9b",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Representation/GoldenCoherentMemory.olean": "efb7d8f9d05528eff8b72be9c71516b0ffe8a8513e6fd9193b18c1e7c3a5ce98",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Representation/GoldenOrderInterferometer.olean": "38bd80cf6663155a96fd851f995228d3d335897cf7ab2b0c9a758074206f50c9",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Representation/GoldenRelativeChannel.olean": "906240c80c8499639cee848050925a1d1238f9be37b5c3a56681322a2a152915"
+  },
+  "axioms": {
+    "D0.Geometry.archiveExteriorFrameLift_contraction_covariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.archiveExteriorFrameLift_creator_covariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.archiveExterior_contraction_creator_car": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.observerMetric_posDef": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.alpha_selfadjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.alpha_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.currentR_at_golden": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.current_causal_from_Clifford_Gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.full_current_curve_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.golden_chart_coefficients_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.golden_current_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.inputU_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.inputV_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.positive_chart_recurrence_impossible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.product_current_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.spectator_gram_retained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.uniform_heat_rational_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CorrelatedCurrentTransition.uniform_heat_source_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "cache_source_comparison": {
+    "D0.Algebra.RoleSignature": "MATCH",
+    "D0.Combinatorics.EulerPhi": "MATCH",
+    "D0.Combinatorics.ForcedReturnWindows": "MATCH",
+    "D0.Combinatorics.InfinitePhaseTower": "MATCH",
+    "D0.Combinatorics.PhaseTower": "MATCH",
+    "D0.Combinatorics.PhaseTowerControls": "MATCH",
+    "D0.Combinatorics.PhaseTowerMinimality": "MATCH",
+    "D0.Combinatorics.PhaseTowerRecursion": "MATCH",
+    "D0.Combinatorics.PhaseUnfolding": "MATCH",
+    "D0.Core.DyadABCD": "MATCH",
+    "D0.Core.FiniteTypes": "MATCH",
+    "D0.Core.Phi": "MATCH",
+    "D0.Foundation.M1Predicate": "MATCH",
+    "D0.Foundation.ObservableCompletionCanonicity": "MATCH",
+    "D0.Geometry.A4DCoframeParentConstraint": "MATCH",
+    "D0.Geometry.A4DObserverPositiveExterior": "MISSING",
+    "D0.Geometry.A4DRolePairMetricCarrier": "MATCH",
+    "D0.Geometry.A4DSolderMetricCompletion": "MISSING",
+    "D0.Geometry.A4DSymRoleCentralDifference": "MATCH",
+    "D0.Geometry.ArchiveCARFockCarrier": "MATCH",
+    "D0.Geometry.ArchiveCARRelations": "MATCH",
+    "D0.Geometry.ArchiveCubicalDifferential": "MATCH",
+    "D0.Geometry.ArchiveExteriorFrameLift": "MISSING",
+    "D0.Geometry.ArchiveLorentzCompatibility": "MATCH",
+    "D0.Geometry.ArchiveModeExponent": "MATCH",
+    "D0.Geometry.ArchivePhaseDistance": "MATCH",
+    "D0.Geometry.ArchivePhaseEdgeMetricScale": "MATCH",
+    "D0.Geometry.ArchiveRefinementTower": "MATCH",
+    "D0.Geometry.ArchiveRoleEquivalence": "MATCH",
+    "D0.Geometry.ArchiveRolePhaseGroup": "MATCH",
+    "D0.Geometry.ArchiveRolePhaseProductCarrier": "MATCH",
+    "D0.Geometry.ArchiveWeightedGraph": "MATCH",
+    "D0.Geometry.CovarianceTower": "MATCH",
+    "D0.Geometry.InfiniteSpectralTower": "MATCH",
+    "D0.Geometry.SpectralTower": "MATCH",
+    "D0.Matter.FiniteSelector": "MATCH",
+    "D0.Phase": "MATCH",
+    "D0.Representation.GoldenCoherentMemory": "MATCH",
+    "D0.Representation.GoldenOrderInterferometer": "MATCH",
+    "D0.Representation.GoldenRelativeChannel": "MATCH"
+  },
+  "capsule_sha256": "c382e6317b6d302e6b490ab91edcb7bcb88146fe4c10f90b0d4f614af4ff763d",
+  "compiler_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "compiler_elapsed_seconds": 2.281869625,
+  "compiler_exit_code": 0,
+  "current_overlay_reuse": {
+    "D0.Algebra.RoleSignature": {
+      "cache_source_sha256": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf",
+      "olean_sha256": "92397e6c11cfad1dcaa937172edb4b3a244a2e7e68a418d23c277b7ce03c99a1",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Algebra/RoleSignature.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Algebra/RoleSignature.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf"
+    },
+    "D0.Combinatorics.EulerPhi": {
+      "cache_source_sha256": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a",
+      "olean_sha256": "e9324cda7eeacc2b7f948d80e03fcced20be7862c6665cd4c00cfebc5ec75132",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Combinatorics/EulerPhi.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/EulerPhi.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a"
+    },
+    "D0.Combinatorics.ForcedReturnWindows": {
+      "cache_source_sha256": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2",
+      "olean_sha256": "94615abe22fa37d18f67619b3ab54bef101fcf3cb622a7958f6297b7bae709b7",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Combinatorics/ForcedReturnWindows.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/ForcedReturnWindows.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2"
+    },
+    "D0.Combinatorics.InfinitePhaseTower": {
+      "cache_source_sha256": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+      "olean_sha256": "951d7c70d61f2e4d4bf0766f42d36b92b4c0fdacb78e9ecb08c1d75c42a9dcd4",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Combinatorics/InfinitePhaseTower.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/InfinitePhaseTower.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05"
+    },
+    "D0.Combinatorics.PhaseTower": {
+      "cache_source_sha256": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+      "olean_sha256": "fb89dbd1c95e737257c465a0e70c163ead1792703253382ca0ec434c19aad151",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Combinatorics/PhaseTower.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseTower.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9"
+    },
+    "D0.Combinatorics.PhaseTowerControls": {
+      "cache_source_sha256": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+      "olean_sha256": "8666bd0043235a9f3ed443e8698f3e8e259df385fb440635ecf4c9d2836046dd",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Combinatorics/PhaseTowerControls.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseTowerControls.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1"
+    },
+    "D0.Combinatorics.PhaseTowerMinimality": {
+      "cache_source_sha256": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+      "olean_sha256": "0a85dea17822e8b2fa51eb5d1bf0ae270b8fc674ba24a72cf19c9b15ee57769d",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Combinatorics/PhaseTowerMinimality.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseTowerMinimality.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a"
+    },
+    "D0.Combinatorics.PhaseTowerRecursion": {
+      "cache_source_sha256": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+      "olean_sha256": "373820b12e641b72c2ecc0c6265a1c2ecab8b80f1ddb369c30c270872951b202",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Combinatorics/PhaseTowerRecursion.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseTowerRecursion.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c"
+    },
+    "D0.Combinatorics.PhaseUnfolding": {
+      "cache_source_sha256": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66",
+      "olean_sha256": "673c27ed4f53703ac01c825d1df585741f3c42d2657b20cf307f3f5ee4213dec",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Combinatorics/PhaseUnfolding.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Combinatorics/PhaseUnfolding.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66"
+    },
+    "D0.Core.DyadABCD": {
+      "cache_source_sha256": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+      "olean_sha256": "69955ddefbe3c32a4266a52be958e49568c33a205d42b03f47a4bbb92c075ce2",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Core/DyadABCD.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Core/DyadABCD.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358"
+    },
+    "D0.Core.FiniteTypes": {
+      "cache_source_sha256": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+      "olean_sha256": "9aa80a4992abdfc06ebef96d4523367865457e931bd7acbee24616806d7b1c9a",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Core/FiniteTypes.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Core/FiniteTypes.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108"
+    },
+    "D0.Core.Phi": {
+      "cache_source_sha256": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+      "olean_sha256": "fe8f51f960ca277c347bdf818017dfc79b88f1db310a63d706710aea34002d92",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Core/Phi.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Core/Phi.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a"
+    },
+    "D0.Foundation.M1Predicate": {
+      "cache_source_sha256": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+      "olean_sha256": "e23e92daebefdfbc0794173c3da4a00c5073fcde980531d4fbb327563faa77d2",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Foundation/M1Predicate.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Foundation/M1Predicate.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2"
+    },
+    "D0.Foundation.ObservableCompletionCanonicity": {
+      "cache_source_sha256": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+      "olean_sha256": "5d98999866613aca0d1d38ad2ad1740f4c66861a6fe6c9f7fe010084d1aa7944",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Foundation/ObservableCompletionCanonicity.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Foundation/ObservableCompletionCanonicity.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634"
+    },
+    "D0.Geometry.A4DCoframeParentConstraint": {
+      "cache_source_sha256": "23bbc1405ae48cbcc1b73f5472140e26397e5508fd7c980fae5fe562f5f7e537",
+      "olean_sha256": "6344663c10ae3087b3f5d7dc42e31383f5d3ee0c147e56a678c01e135a7a4b8a",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/A4DCoframeParentConstraint.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DCoframeParentConstraint.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "23bbc1405ae48cbcc1b73f5472140e26397e5508fd7c980fae5fe562f5f7e537"
+    },
+    "D0.Geometry.A4DObserverPositiveExterior": {
+      "cache_source_sha256": null,
+      "olean_sha256": "123b2a5d63a1a0814bd9f5a337f7f3890fece75204ef40a516830ec650a0996d",
+      "original_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-joint-adjoint-overlay-hb_3i4ex/D0/Geometry/A4DObserverPositiveExterior.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DObserverPositiveExterior.olean",
+      "source_comparison": "VERIFIED_SOURCE_OVERLAY",
+      "source_sha256": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1"
+    },
+    "D0.Geometry.A4DRolePairMetricCarrier": {
+      "cache_source_sha256": "67485d08b195590aa9a9910c281b459c1898474a9223d5cbe26fec2c1734e201",
+      "olean_sha256": "e84ce4e472a598d8eb2398370df526b3cf0ae392be327a367a2dad006f26c49d",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/A4DRolePairMetricCarrier.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DRolePairMetricCarrier.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "67485d08b195590aa9a9910c281b459c1898474a9223d5cbe26fec2c1734e201"
+    },
+    "D0.Geometry.A4DSolderMetricCompletion": {
+      "cache_source_sha256": null,
+      "olean_sha256": "a0b8d9819565fa55004d861ae5b8048d1e842a48a4f79bf2cd46f686e71fe47c",
+      "original_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-joint-adjoint-overlay-hb_3i4ex/D0/Geometry/A4DSolderMetricCompletion.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DSolderMetricCompletion.olean",
+      "source_comparison": "VERIFIED_SOURCE_OVERLAY",
+      "source_sha256": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa"
+    },
+    "D0.Geometry.A4DSymRoleCentralDifference": {
+      "cache_source_sha256": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e",
+      "olean_sha256": "c9062e8d1afc5275c234455bd97ce73535bf6af8cca51b7b22250a6757ce3ee5",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/A4DSymRoleCentralDifference.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/A4DSymRoleCentralDifference.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e"
+    },
+    "D0.Geometry.ArchiveCARFockCarrier": {
+      "cache_source_sha256": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+      "olean_sha256": "20d909cacdf6d332ece5515ebc371c4e501a3a9e61b617d72293374105dd5699",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveCARFockCarrier.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveCARFockCarrier.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1"
+    },
+    "D0.Geometry.ArchiveCARRelations": {
+      "cache_source_sha256": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+      "olean_sha256": "40daf7caa66319bdba99e0c144b11e3687a4beb9f56dd7cd68f217b1a08c214c",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveCARRelations.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveCARRelations.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d"
+    },
+    "D0.Geometry.ArchiveCubicalDifferential": {
+      "cache_source_sha256": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2",
+      "olean_sha256": "8c2fe3abeba036dadc5b4eab477ac09880da459d3837d440c973ebba0babe614",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveCubicalDifferential.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveCubicalDifferential.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2"
+    },
+    "D0.Geometry.ArchiveExteriorFrameLift": {
+      "cache_source_sha256": null,
+      "olean_sha256": "a54bff4571bfff178767cff1e04dc91b559537d179f3f7a8754308fdef9520d7",
+      "original_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-joint-adjoint-overlay-hb_3i4ex/D0/Geometry/ArchiveExteriorFrameLift.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveExteriorFrameLift.olean",
+      "source_comparison": "VERIFIED_SOURCE_OVERLAY",
+      "source_sha256": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
+    },
+    "D0.Geometry.ArchiveLorentzCompatibility": {
+      "cache_source_sha256": "1ba5fa492c928b34392a07d54a6f81d8554e5898cd91c901430647b655e30c8f",
+      "olean_sha256": "cf14f4c2e9676e11344caa957dc3707286f2568aefff41190286a8f42dd748f0",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveLorentzCompatibility.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveLorentzCompatibility.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "1ba5fa492c928b34392a07d54a6f81d8554e5898cd91c901430647b655e30c8f"
+    },
+    "D0.Geometry.ArchiveModeExponent": {
+      "cache_source_sha256": "fb760656ca2b3ca785a44cb5a80729e0f856221696dd40b7dca8c85d8ff8f95c",
+      "olean_sha256": "a887342a7ec1a050b79269e37e1546aca60a340744df948d1be35c1a96ef819f",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveModeExponent.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveModeExponent.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "fb760656ca2b3ca785a44cb5a80729e0f856221696dd40b7dca8c85d8ff8f95c"
+    },
+    "D0.Geometry.ArchivePhaseDistance": {
+      "cache_source_sha256": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707",
+      "olean_sha256": "43bc7b18a45bf6941ffa2effd29078694a300f6adaded2cf82a0667050468168",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchivePhaseDistance.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchivePhaseDistance.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707"
+    },
+    "D0.Geometry.ArchivePhaseEdgeMetricScale": {
+      "cache_source_sha256": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd",
+      "olean_sha256": "b5076e8f131a84a360ccf88e20c38ed661cf280cde89fce3ed72b8313856fef1",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchivePhaseEdgeMetricScale.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchivePhaseEdgeMetricScale.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd"
+    },
+    "D0.Geometry.ArchiveRefinementTower": {
+      "cache_source_sha256": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+      "olean_sha256": "dc819ac329986fc09a74bd027610a99c248ed232336f34a7736d9313531f7e0c",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveRefinementTower.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveRefinementTower.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673"
+    },
+    "D0.Geometry.ArchiveRoleEquivalence": {
+      "cache_source_sha256": "215d9081e23e1e84c51a7b36f252c1540302317db0945d75431cc4f97e1c7920",
+      "olean_sha256": "caf7504d28e4ff1ea30423a97c2c3e46e1a87301194faa55256e65a855038197",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveRoleEquivalence.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveRoleEquivalence.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "215d9081e23e1e84c51a7b36f252c1540302317db0945d75431cc4f97e1c7920"
+    },
+    "D0.Geometry.ArchiveRolePhaseGroup": {
+      "cache_source_sha256": "8958fe3103039ce0ad5aa5aa6607578f9dfa3e4717b966b3dea916241aa68442",
+      "olean_sha256": "b96b568f22bd3d037606ea647e1aa3255bd82e0f7815b55bac78c029a6ca63be",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveRolePhaseGroup.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveRolePhaseGroup.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "8958fe3103039ce0ad5aa5aa6607578f9dfa3e4717b966b3dea916241aa68442"
+    },
+    "D0.Geometry.ArchiveRolePhaseProductCarrier": {
+      "cache_source_sha256": "f307f30401d4110ab7bb2874e62f84e43e0e35eb7fb9fb7b7844c63f59b97d33",
+      "olean_sha256": "71d18b96bd9975abeb3fd9a8fb95b97d1c8b947dbf43bf619f5b223050efdca1",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveRolePhaseProductCarrier.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveRolePhaseProductCarrier.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "f307f30401d4110ab7bb2874e62f84e43e0e35eb7fb9fb7b7844c63f59b97d33"
+    },
+    "D0.Geometry.ArchiveWeightedGraph": {
+      "cache_source_sha256": "a25daa836eacf57042dd96793da6447098fc85895d464b10f0f1804d2249081d",
+      "olean_sha256": "3118d4cfd9e06011bcf7b762f044a495ba2efc42f6be4c049d7baab68b57f13b",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/ArchiveWeightedGraph.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/ArchiveWeightedGraph.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "a25daa836eacf57042dd96793da6447098fc85895d464b10f0f1804d2249081d"
+    },
+    "D0.Geometry.CovarianceTower": {
+      "cache_source_sha256": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+      "olean_sha256": "4624abad0136d1ff185afb3b266ea9c14541077a6fadd1e039433b5351ab7f08",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/CovarianceTower.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/CovarianceTower.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde"
+    },
+    "D0.Geometry.InfiniteSpectralTower": {
+      "cache_source_sha256": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+      "olean_sha256": "a7e507ee1a46ee35d9afc9dbd3637da1ccbbbc565256f3002bb7af1a75884662",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/InfiniteSpectralTower.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/InfiniteSpectralTower.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f"
+    },
+    "D0.Geometry.SpectralTower": {
+      "cache_source_sha256": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef",
+      "olean_sha256": "5d412c1d35ca63a85d746953c2271ac463b33625ed4b4d5b4abd9ba2cdaa6aef",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Geometry/SpectralTower.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Geometry/SpectralTower.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef"
+    },
+    "D0.Matter.FiniteSelector": {
+      "cache_source_sha256": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2",
+      "olean_sha256": "6f417f0eb3f14066119acddce8b3d724243ac4150f2191be937bb88f11a017d6",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Matter/FiniteSelector.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Matter/FiniteSelector.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2"
+    },
+    "D0.Phase": {
+      "cache_source_sha256": "dd710cf7f37874ac5f06a1a57ca19fa2d9544de6e1bfcf35fed7806ea2b56559",
+      "olean_sha256": "f9e6763c6d13c4b4aec67f1d6c26eb464d355e5edfdb0d8e12fc52c560116e9b",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Phase.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Phase.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "dd710cf7f37874ac5f06a1a57ca19fa2d9544de6e1bfcf35fed7806ea2b56559"
+    },
+    "D0.Representation.GoldenCoherentMemory": {
+      "cache_source_sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+      "olean_sha256": "efb7d8f9d05528eff8b72be9c71516b0ffe8a8513e6fd9193b18c1e7c3a5ce98",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Representation/GoldenCoherentMemory.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Representation/GoldenCoherentMemory.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7"
+    },
+    "D0.Representation.GoldenOrderInterferometer": {
+      "cache_source_sha256": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+      "olean_sha256": "38bd80cf6663155a96fd851f995228d3d335897cf7ab2b0c9a758074206f50c9",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Representation/GoldenOrderInterferometer.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Representation/GoldenOrderInterferometer.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c"
+    },
+    "D0.Representation.GoldenRelativeChannel": {
+      "cache_source_sha256": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+      "olean_sha256": "906240c80c8499639cee848050925a1d1238f9be37b5c3a56681322a2a152915",
+      "original_olean": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION/.lake/build/lib/lean/D0/Representation/GoldenRelativeChannel.olean",
+      "overlay_olean": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-reference-memory-overlay-l663896j/D0/Representation/GoldenRelativeChannel.olean",
+      "source_comparison": "MATCH",
+      "source_sha256": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782"
+    }
+  },
+  "declarations": [
+    "D0.Research.CorrelatedCurrentTransition.spectator_gram_retained",
+    "D0.Research.CorrelatedCurrentTransition.alpha_selfadjoint",
+    "D0.Research.CorrelatedCurrentTransition.alpha_square",
+    "D0.Research.CorrelatedCurrentTransition.current_causal_from_Clifford_Gram",
+    "D0.Research.CorrelatedCurrentTransition.product_current_norm",
+    "D0.Research.CorrelatedCurrentTransition.golden_current_norm",
+    "D0.Research.CorrelatedCurrentTransition.golden_chart_coefficients_positive",
+    "D0.Research.CorrelatedCurrentTransition.positive_chart_recurrence_impossible",
+    "D0.Research.CorrelatedCurrentTransition.inputU_derivative",
+    "D0.Research.CorrelatedCurrentTransition.inputV_derivative",
+    "D0.Research.CorrelatedCurrentTransition.full_current_curve_derivative",
+    "D0.Research.CorrelatedCurrentTransition.currentR_at_golden",
+    "D0.Research.CorrelatedCurrentTransition.uniform_heat_rational_margin",
+    "D0.Research.CorrelatedCurrentTransition.uniform_heat_source_normalization",
+    "D0.Geometry.archiveExteriorFrameLift_creator_covariant",
+    "D0.Geometry.archiveExteriorFrameLift_contraction_covariant",
+    "D0.Geometry.archiveExterior_contraction_creator_car",
+    "D0.Geometry.observerMetric_posDef"
+  ],
+  "dependency_closure_scope": "Existing verified 40 D0 modules, unchanged current SOURCE pins and objects; direct new Mathlib dependency pinned. No new module build; original cache unchanged.",
+  "diagnostic_checks": [
+    "D0.Geometry.archiveExteriorFrameLift_creator_covariant",
+    "D0.Geometry.archiveExteriorFrameLift_contraction_covariant",
+    "D0.Geometry.archiveExterior_contraction_creator_car",
+    "D0.Geometry.observerMetric_posDef",
+    "D0.Research.CorrelatedCurrentTransition.spectator_gram_retained",
+    "D0.Research.CorrelatedCurrentTransition.alpha_selfadjoint",
+    "D0.Research.CorrelatedCurrentTransition.alpha_square",
+    "D0.Research.CorrelatedCurrentTransition.current_causal_from_Clifford_Gram",
+    "D0.Research.CorrelatedCurrentTransition.golden_current_norm",
+    "D0.Research.CorrelatedCurrentTransition.positive_chart_recurrence_impossible",
+    "D0.Research.CorrelatedCurrentTransition.full_current_curve_derivative",
+    "D0.Research.CorrelatedCurrentTransition.uniform_heat_source_normalization"
+  ],
+  "diagnostic_prints": [
+    "D0.Research.CorrelatedCurrentTransition.product_current_norm",
+    "D0.Research.CorrelatedCurrentTransition.golden_chart_coefficients_positive",
+    "D0.Research.CorrelatedCurrentTransition.inputU_derivative",
+    "D0.Research.CorrelatedCurrentTransition.inputV_derivative",
+    "D0.Research.CorrelatedCurrentTransition.currentR_at_golden",
+    "D0.Research.CorrelatedCurrentTransition.uniform_heat_rational_margin",
+    "D0.Research.CorrelatedCurrentTransition.inputU",
+    "D0.Research.CorrelatedCurrentTransition.inputV",
+    "D0.Research.CorrelatedCurrentTransition.outputX",
+    "D0.Research.CorrelatedCurrentTransition.outputY",
+    "D0.Research.CorrelatedCurrentTransition.currentR"
+  ],
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Algebra/RoleSignature.lean": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf",
+    "03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a",
+    "03_FORMALIZATION/D0/Combinatorics/ForcedReturnWindows.lean": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2",
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseUnfolding.lean": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66",
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+    "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Foundation/M1Predicate.lean": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+    "03_FORMALIZATION/D0/Foundation/ObservableCompletionCanonicity.lean": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+    "03_FORMALIZATION/D0/Geometry/A4DCoframeParentConstraint.lean": "23bbc1405ae48cbcc1b73f5472140e26397e5508fd7c980fae5fe562f5f7e537",
+    "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
+    "03_FORMALIZATION/D0/Geometry/A4DRolePairMetricCarrier.lean": "67485d08b195590aa9a9910c281b459c1898474a9223d5cbe26fec2c1734e201",
+    "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+    "03_FORMALIZATION/D0/Geometry/A4DSymRoleCentralDifference.lean": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2",
+    "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLorentzCompatibility.lean": "1ba5fa492c928b34392a07d54a6f81d8554e5898cd91c901430647b655e30c8f",
+    "03_FORMALIZATION/D0/Geometry/ArchiveModeExponent.lean": "fb760656ca2b3ca785a44cb5a80729e0f856221696dd40b7dca8c85d8ff8f95c",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseDistance.lean": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseEdgeMetricScale.lean": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRoleEquivalence.lean": "215d9081e23e1e84c51a7b36f252c1540302317db0945d75431cc4f97e1c7920",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseGroup.lean": "8958fe3103039ce0ad5aa5aa6607578f9dfa3e4717b966b3dea916241aa68442",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseProductCarrier.lean": "f307f30401d4110ab7bb2874e62f84e43e0e35eb7fb9fb7b7844c63f59b97d33",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedGraph.lean": "a25daa836eacf57042dd96793da6447098fc85895d464b10f0f1804d2249081d",
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef",
+    "03_FORMALIZATION/D0/Matter/FiniteSelector.lean": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2",
+    "03_FORMALIZATION/D0/Phase.lean": "dd710cf7f37874ac5f06a1a57ca19fa2d9544de6e1bfcf35fed7806ea2b56559",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "mathlib_revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7",
+  "original_cache_olean_sha256": {
+    ".lake/build/lib/lean/D0/Algebra/RoleSignature.olean": "92397e6c11cfad1dcaa937172edb4b3a244a2e7e68a418d23c277b7ce03c99a1",
+    ".lake/build/lib/lean/D0/Combinatorics/EulerPhi.olean": "e9324cda7eeacc2b7f948d80e03fcced20be7862c6665cd4c00cfebc5ec75132",
+    ".lake/build/lib/lean/D0/Combinatorics/ForcedReturnWindows.olean": "94615abe22fa37d18f67619b3ab54bef101fcf3cb622a7958f6297b7bae709b7",
+    ".lake/build/lib/lean/D0/Combinatorics/InfinitePhaseTower.olean": "951d7c70d61f2e4d4bf0766f42d36b92b4c0fdacb78e9ecb08c1d75c42a9dcd4",
+    ".lake/build/lib/lean/D0/Combinatorics/PhaseTower.olean": "fb89dbd1c95e737257c465a0e70c163ead1792703253382ca0ec434c19aad151",
+    ".lake/build/lib/lean/D0/Combinatorics/PhaseTowerControls.olean": "8666bd0043235a9f3ed443e8698f3e8e259df385fb440635ecf4c9d2836046dd",
+    ".lake/build/lib/lean/D0/Combinatorics/PhaseTowerMinimality.olean": "0a85dea17822e8b2fa51eb5d1bf0ae270b8fc674ba24a72cf19c9b15ee57769d",
+    ".lake/build/lib/lean/D0/Combinatorics/PhaseTowerRecursion.olean": "373820b12e641b72c2ecc0c6265a1c2ecab8b80f1ddb369c30c270872951b202",
+    ".lake/build/lib/lean/D0/Combinatorics/PhaseUnfolding.olean": "673c27ed4f53703ac01c825d1df585741f3c42d2657b20cf307f3f5ee4213dec",
+    ".lake/build/lib/lean/D0/Core/DyadABCD.olean": "69955ddefbe3c32a4266a52be958e49568c33a205d42b03f47a4bbb92c075ce2",
+    ".lake/build/lib/lean/D0/Core/FiniteTypes.olean": "9aa80a4992abdfc06ebef96d4523367865457e931bd7acbee24616806d7b1c9a",
+    ".lake/build/lib/lean/D0/Core/Phi.olean": "fe8f51f960ca277c347bdf818017dfc79b88f1db310a63d706710aea34002d92",
+    ".lake/build/lib/lean/D0/Foundation/M1Predicate.olean": "e23e92daebefdfbc0794173c3da4a00c5073fcde980531d4fbb327563faa77d2",
+    ".lake/build/lib/lean/D0/Foundation/ObservableCompletionCanonicity.olean": "5d98999866613aca0d1d38ad2ad1740f4c66861a6fe6c9f7fe010084d1aa7944",
+    ".lake/build/lib/lean/D0/Geometry/A4DCoframeParentConstraint.olean": "6344663c10ae3087b3f5d7dc42e31383f5d3ee0c147e56a678c01e135a7a4b8a",
+    ".lake/build/lib/lean/D0/Geometry/A4DRolePairMetricCarrier.olean": "e84ce4e472a598d8eb2398370df526b3cf0ae392be327a367a2dad006f26c49d",
+    ".lake/build/lib/lean/D0/Geometry/A4DSymRoleCentralDifference.olean": "c9062e8d1afc5275c234455bd97ce73535bf6af8cca51b7b22250a6757ce3ee5",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveCARFockCarrier.olean": "20d909cacdf6d332ece5515ebc371c4e501a3a9e61b617d72293374105dd5699",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveCARRelations.olean": "40daf7caa66319bdba99e0c144b11e3687a4beb9f56dd7cd68f217b1a08c214c",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveCubicalDifferential.olean": "8c2fe3abeba036dadc5b4eab477ac09880da459d3837d440c973ebba0babe614",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveLorentzCompatibility.olean": "cf14f4c2e9676e11344caa957dc3707286f2568aefff41190286a8f42dd748f0",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveModeExponent.olean": "a887342a7ec1a050b79269e37e1546aca60a340744df948d1be35c1a96ef819f",
+    ".lake/build/lib/lean/D0/Geometry/ArchivePhaseDistance.olean": "43bc7b18a45bf6941ffa2effd29078694a300f6adaded2cf82a0667050468168",
+    ".lake/build/lib/lean/D0/Geometry/ArchivePhaseEdgeMetricScale.olean": "b5076e8f131a84a360ccf88e20c38ed661cf280cde89fce3ed72b8313856fef1",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveRefinementTower.olean": "dc819ac329986fc09a74bd027610a99c248ed232336f34a7736d9313531f7e0c",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveRoleEquivalence.olean": "caf7504d28e4ff1ea30423a97c2c3e46e1a87301194faa55256e65a855038197",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveRolePhaseGroup.olean": "b96b568f22bd3d037606ea647e1aa3255bd82e0f7815b55bac78c029a6ca63be",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveRolePhaseProductCarrier.olean": "71d18b96bd9975abeb3fd9a8fb95b97d1c8b947dbf43bf619f5b223050efdca1",
+    ".lake/build/lib/lean/D0/Geometry/ArchiveWeightedGraph.olean": "3118d4cfd9e06011bcf7b762f044a495ba2efc42f6be4c049d7baab68b57f13b",
+    ".lake/build/lib/lean/D0/Geometry/CovarianceTower.olean": "4624abad0136d1ff185afb3b266ea9c14541077a6fadd1e039433b5351ab7f08",
+    ".lake/build/lib/lean/D0/Geometry/InfiniteSpectralTower.olean": "a7e507ee1a46ee35d9afc9dbd3637da1ccbbbc565256f3002bb7af1a75884662",
+    ".lake/build/lib/lean/D0/Geometry/SpectralTower.olean": "5d412c1d35ca63a85d746953c2271ac463b33625ed4b4d5b4abd9ba2cdaa6aef",
+    ".lake/build/lib/lean/D0/Matter/FiniteSelector.olean": "6f417f0eb3f14066119acddce8b3d724243ac4150f2191be937bb88f11a017d6",
+    ".lake/build/lib/lean/D0/Phase.olean": "f9e6763c6d13c4b4aec67f1d6c26eb464d355e5edfdb0d8e12fc52c560116e9b",
+    ".lake/build/lib/lean/D0/Representation/GoldenCoherentMemory.olean": "efb7d8f9d05528eff8b72be9c71516b0ffe8a8513e6fd9193b18c1e7c3a5ce98",
+    ".lake/build/lib/lean/D0/Representation/GoldenOrderInterferometer.olean": "38bd80cf6663155a96fd851f995228d3d335897cf7ab2b0c9a758074206f50c9",
+    ".lake/build/lib/lean/D0/Representation/GoldenRelativeChannel.olean": "906240c80c8499639cee848050925a1d1238f9be37b5c3a56681322a2a152915"
+  },
+  "original_cache_unchanged": true,
+  "output_sha256": "8f9b4ae1e5270abfb93d1032d55bda73dfa3f8433722551385afa43aeccd555a",
+  "scope": "Named rectangular Gram/Clifford/Cauchy/scalar chart/current derivative/rational heat kernels. Actual full CAR matrices and complete recurrence/orbit/Fourier hypotheses separately exact checked; all-time/all-L arguments analytic, physical admission open.",
+  "source_commit": "074b4223c0cae4aa5b1ad379dcd0a78930da1179",
+  "source_overlay_rebuilds": [
+    {
+      "command": [
+        "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "--root=/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION",
+        "-o",
+        "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/A4DObserverPositiveExterior.olean",
+        "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean"
+      ],
+      "compiler_stdout": "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean:47:45: warning: This simp argument is unused:\n  Matrix.diagonal_apply\n\nHint: Omit it from the simp argument list.\n  simp [observerMetric, roleLorentzMetric,\u0335 \u0335M\u0335a\u0335t\u0335r\u0335i\u0335x\u0335.\u0335d\u0335i\u0335a\u0335g\u0335o\u0335n\u0335a\u0335l\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean:48:45: warning: This simp argument is unused:\n  Matrix.diagonal_apply\n\nHint: Omit it from the simp argument list.\n  simp [observerMetric, roleLorentzMetric, M\u0335a\u0335t\u0335r\u0335i\u0335x\u0335.\u0335d\u0335i\u0335a\u0335g\u0335o\u0335n\u0335a\u0335l\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335,\u0335 \u0335h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean:53:8: warning: This simp argument is unused:\n  observerCovector\n\nHint: Omit it from the simp argument list.\n  simp [\u0335o\u0335b\u0335s\u0335e\u0335r\u0335v\u0335e\u0335r\u0335C\u0335o\u0335v\u0335e\u0335c\u0335t\u0335o\u0335r\u0335,\u0335 \u0335r\u0335o\u0335l\u0335e\u0335L\u0335o\u0335r\u0335e\u0335n\u0335t\u0335z\u0335S\u0335i\u0335g\u0335n\u0335_\u0335A\u0335,\u0335[\u0332r\u0332o\u0332l\u0332e\u0332L\u0332o\u0332r\u0332e\u0332n\u0332t\u0332z\u0332S\u0332i\u0332g\u0332n\u0332_\u0332A\u0332,\u0332 roleLorentzSign_B, roleLorentzSign_C, roleLorentzSign_D]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean:53:45: warning: This simp argument is unused:\n  roleLorentzSign_B\n\nHint: Omit it from the simp argument list.\n  simp [observerCovector, roleLorentzSign_A, roleLorentzSign_B\u0335,\u0335\n  \u0335 \u0335 \u0335 \u0335 \u0335r\u0335o\u0335l\u0335e\u0335L\u0335o\u0335r\u0335e\u0335n\u0335t\u0335z\u0335S\u0335i\u0335g\u0335n\u0335_\u0335C, roleLorentzSign_D]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean:54:4: warning: This simp argument is unused:\n  roleLorentzSign_C\n\nHint: Omit it from the simp argument list.\n  simp [observerCovector, roleLorentzSign_A, roleLorentzSign_B, r\u0335o\u0335l\u0335e\u0335L\u0335o\u0335r\u0335e\u0335n\u0335t\u0335z\u0335S\u0335i\u0335g\u0335n\u0335_\u0335C\u0335,\u0335 \u0335roleLorentzSign_D]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean:54:23: warning: This simp argument is unused:\n  roleLorentzSign_D\n\nHint: Omit it from the simp argument list.\n  simp [observerCovector, roleLorentzSign_A, roleLorentzSign_B, r\u0335o\u0335l\u0335e\u0335L\u0335o\u0335r\u0335e\u0335n\u0335t\u0335z\u0335S\u0335i\u0335g\u0335n\u0335_\u0335C\u0335,\u0335 \u0335r\u0335o\u0335l\u0335e\u0335L\u0335o\u0335r\u0335e\u0335n\u0335t\u0335z\u0335S\u0335i\u0335g\u0335n\u0335_\u0335D\u0335]\u0335r\u0332o\u0332l\u0332e\u0332L\u0332o\u0332r\u0332e\u0332n\u0332t\u0332z\u0332S\u0332i\u0332g\u0332n\u0332_\u0332C\u0332]\u0332\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean:75:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean:255:8: warning: This simp argument is unused:\n  Matrix.toBilin'_single\n\nHint: Omit it from the simp argument list.\n  simp [\u0335M\u0335a\u0335t\u0335r\u0335i\u0335x\u0335.\u0335t\u0335o\u0335B\u0335i\u0335l\u0335i\u0335n\u0335'\u0335_\u0335s\u0335i\u0335n\u0335g\u0335l\u0335e\u0335,\u0335 \u0335M\u0335a\u0335t\u0335r\u0335i\u0335x\u0335.\u0335t\u0335o\u0335B\u0335i\u0335l\u0335i\u0335n\u0335'\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335,\u0335[\u0332M\u0332a\u0332t\u0332r\u0332i\u0332x\u0332.\u0332t\u0332o\u0332B\u0332i\u0332l\u0332i\u0332n\u0332'\u0332_\u0332a\u0332p\u0332p\u0332l\u0332y\u0332,\u0332 archiveRoleBasis, Pi.basisFun_apply, Pi.single_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n",
+      "elapsed_seconds": 16.08,
+      "exit_code": 0,
+      "module": "D0.Geometry.A4DObserverPositiveExterior",
+      "olean_sha256": "123b2a5d63a1a0814bd9f5a337f7f3890fece75204ef40a516830ec650a0996d",
+      "output_path": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/A4DObserverPositiveExterior.build_output.txt",
+      "output_sha256": "acd0307ed8a28240bd2736c2418c54f387a8d9b63c1cf4733031678c27675601",
+      "source_sha256": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1"
+    },
+    {
+      "command": [
+        "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "--root=/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION",
+        "-o",
+        "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveExteriorFrameLift.olean",
+        "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean"
+      ],
+      "compiler_stdout": "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean:280:36: warning: This simp argument is unused:\n  LinearEquiv.symm_apply_apply\n\nHint: Omit it from the simp argument list.\n  simp [archiveExteriorFrameLift, archiveExteriorContraction, LinearMap.comp_apply,\n        LinearEquiv.apply_symm_apply,\u0335 \u0335L\u0335i\u0335n\u0335e\u0335a\u0335r\u0335E\u0335q\u0335u\u0335i\u0335v\u0335.\u0335s\u0335y\u0335m\u0335m\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean:330:58: warning: This simp argument is unused:\n  LinearEquiv.symm_apply_apply\n\nHint: Omit it from the simp argument list.\n  simp [archiveExteriorContraction, archiveExteriorCreator, map_add, map_smul,\n        LinearMap.comp_apply, LinearEquiv.apply_symm_apply,\u0335 \u0335L\u0335i\u0335n\u0335e\u0335a\u0335r\u0335E\u0335q\u0335u\u0335i\u0335v\u0335.\u0335s\u0335y\u0335m\u0335m\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean:339:36: warning: This simp argument is unused:\n  LinearEquiv.symm_apply_apply\n\nHint: Omit it from the simp argument list.\n  simp [archiveExteriorContraction, LinearMap.comp_apply, map_neg, L\u0335i\u0335n\u0335e\u0335a\u0335r\u0335E\u0335q\u0335u\u0335i\u0335v\u0335.\u0335a\u0335p\u0335p\u0335l\u0335y\u0335_\u0335s\u0335y\u0335m\u0335m\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335,\u0335 \u0335L\u0335i\u0335n\u0335e\u0335a\u0335r\u0335E\u0335q\u0335u\u0335i\u0335v\u0335.\u0335s\u0335y\u0335m\u0335m\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335]\u0335L\u0332i\u0332n\u0332e\u0332a\u0332r\u0332E\u0332q\u0332u\u0332i\u0332v\u0332.\u0332a\u0332p\u0332p\u0332l\u0332y\u0332_\u0332s\u0332y\u0332m\u0332m\u0332_\u0332a\u0332p\u0332p\u0332l\u0332y\u0332]\u0332\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean:359:43: warning: This simp argument is unused:\n  mul_assoc\n\nHint: Omit it from the simp argument list.\n  simp [RingHom.id_apply, mul_left_comm,\u0335 \u0335m\u0335u\u0335l\u0335_\u0335a\u0335s\u0335s\u0335o\u0335c\u0335]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n",
+      "elapsed_seconds": 20.55,
+      "exit_code": 0,
+      "module": "D0.Geometry.ArchiveExteriorFrameLift",
+      "olean_sha256": "a54bff4571bfff178767cff1e04dc91b559537d179f3f7a8754308fdef9520d7",
+      "output_path": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveExteriorFrameLift.build_output.txt",
+      "output_sha256": "f870539c328f7af7c7ca445aa14eb4934ca175e680c3891e9139c0c4030f3b17",
+      "source_sha256": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
+    },
+    {
+      "command": [
+        "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+        "--root=/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION",
+        "-o",
+        "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/A4DSolderMetricCompletion.olean",
+        "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean"
+      ],
+      "compiler_stdout": "",
+      "elapsed_seconds": 3.55,
+      "exit_code": 0,
+      "module": "D0.Geometry.A4DSolderMetricCompletion",
+      "olean_sha256": "a0b8d9819565fa55004d861ae5b8048d1e842a48a4f79bf2cd46f686e71fe47c",
+      "output_path": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/A4DSolderMetricCompletion.build_output.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa"
+    }
+  ],
+  "status": "PASS",
+  "verified_overlay_receipt": {
+    "path": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_lean_results.json",
+    "sha256": "6aff58a3ebda7ba359681c2aa2db1a263a91aa676be75731bcdbeb10311ec4b3"
+  },
+  "verified_prior_receipt": {
+    "path": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation_lean_results.json",
+    "sha256": "4bc33d9293b748f6cb076562e2548ee43f4920648020d8cc20e73098bfd0122c"
+  }
+}

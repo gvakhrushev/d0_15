@@ -1,0 +1,54 @@
+{
+  "schema": "A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFO_V3",
+  "status": "EXACT_FINITE_PARTITION_SOURCE_AND_JOINT_JET",
+  "source_blobs": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md": "841795793134245e2beb67ea2b59b0e2a1bd730e",
+    "02_REGISTRY/research/A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md": "e5c168024015db4e216141e2139d2cc1f5d3e419",
+    "02_REGISTRY/research/A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md": "2a4f4793cbf45a0691498bc3e0638e7a123ebfcf",
+    "02_REGISTRY/research/certificates/a4d_native_field_instrument_jet_results.json": "82f7aede057b121b9a8eaa817c14f63cc2216abd",
+    "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/RESULT.md": "b687771fb9c24218bdadc00ab79026b81c8c82e0",
+    "02_REGISTRY/research/sources/d0_ward_scene_constitutive_closure_2026-10-15/receipt.json": "eeccb67c568a1a09a280b2e842b4e0661d810c90",
+    "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean": "d7f7f170815cc3ad2052ad48280ae5919652b314",
+    "03_FORMALIZATION/D0/Core/BornFiniteEffects.lean": "80acd67fe5ee15a4f59f0fd2f4d6cff814df5fc5"
+  },
+  "capsule_sha256": "cd81a5e19eabd8ebaeef453b39b7f34f59231223ee448a3b5b40584d590781c4",
+  "lean_output_sha256": "14b38f6cd5d5ef5fa8e6f03aa02eac4b56f268304a2eb0fc3683372a25c5262b",
+  "declarations": [
+    "balanced_contrast_kills_partition_correction",
+    "bookInfo_normalizedWeight_identity",
+    "bookInfo_partition_identity",
+    "expectedPathAction_hasDerivAt",
+    "expectedPathAction_partition_identity",
+    "normalizedLikelihoodInfo_common_shift",
+    "normalizedLikelihoodInfo_hasDerivAt",
+    "normalizedWeight_sum_one",
+    "normalized_base_value",
+    "partition_pos"
+  ],
+  "compiled_declaration_count": 10,
+  "exact_symbolic_control_count": 12,
+  "axiom_check": "STANDARD_ONLY",
+  "proved": {
+    "partition_log_correction_exact": true,
+    "joint_source_includes_q_and_normalizer_jets": true,
+    "unit_normalizer_reduces_to_branch_cocycle": true,
+    "moving_normalizer_control_at_Z1_has_source_1_over_log_phi": true,
+    "partition_correction_is_common_mode_across_outcomes": true,
+    "balanced_branch_contrasts_annihilate_common_mode": true,
+    "native_interface_event_normalizer_jet_is_nonzero_and_free_scale_sensitive": true,
+    "expected_path_action_is_entropy_minus_log_partition": true,
+    "expected_path_action_source_includes_negative_normalizer_jet": true,
+    "event_mean_action_normalizer_source_is_strictly_positive_for_lambda1": true
+  },
+  "remaining_open": [
+    "book history weight bound to the same Born raw-response frame",
+    "physical normalizer and its variation on the native family",
+    "joint q,D,b,m variation owner",
+    "map from the physical source to balanced or common-mode outcome readouts",
+    "identification of the instrument event weights with Book path weights",
+    "physical matter action and its same-carrier field variations"
+  ],
+  "conditional_event_mean_action_normalizer_source_lambda1": "3*(-11 + 9*sqrt(5))/(71*log_phi)",
+  "scientific_scope": "finite outcomes, positive probabilities, explicitly shared history/response interface only"
+}

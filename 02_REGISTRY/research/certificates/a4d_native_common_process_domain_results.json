@@ -1,0 +1,66 @@
+{
+  "exact_checks": 93,
+  "fixed_raw_frame_extension": {
+    "N": "-15*sqrt(13)-10*sqrt(10)-10*sqrt(sqrt(5)-1)+5*sqrt(5)*sqrt(sqrt(5)-1)+20*sqrt(2)+7*sqrt(65)",
+    "coframe": "O=((3,2),(-2,3))/sqrt(13) on first plane, identity on complement",
+    "engine_admission": "NO: raw input remains outside Z[a]^16 for every O",
+    "exact_positive_margin_for_N": "14749/50000 from rational radical bounds",
+    "first_effect": "-2*N/(5*(sqrt(5)-1)^(3/2)) < 0",
+    "guard_rows": "all six owned guard coordinates vanish before and after the extended gate",
+    "operation": "scalar extension of U+ to Q(a,sqrt(2),sqrt(13)) on rho(F)m*, then read back with the same F",
+    "verdict": "FIXED_LIFT_LINEAR_EXTENSION_LEAVES_COMPARATOR_DOMAIN"
+  },
+  "input": {
+    "curved_comparator_scalar": "-1/(1500*p^3)",
+    "engine_guard_sector": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      9
+    ],
+    "initial_effects": "all12 equal p^2",
+    "matter": "owned s=1 lambda=1 rest-coordinate reference + p^20 e15",
+    "top_grade": "p^20 != 0"
+  },
+  "input_head": "dfaf7c8df509d5abd83fa60a185ad530feadc9b5",
+  "local_fixed_lift_instability": {
+    "branch": "input and output selectors are positive; U+ preserves the guard-zero sector",
+    "guard_subspace": "six zero engine guard coordinates; product lattice remains dense there",
+    "input_chart": "strict probability and timelike conditions persist for sufficiently close approximants by openness; choose nonzero top grade off its zero hyperplane",
+    "lattice": "Z[a] contains Z+aZ, dense in R since a is irrational",
+    "scope": "exact engine-ring approximants under this fixed F/readout; not a matched variable-lift evolution or physical admission theorem",
+    "uniform_bound": "if ||delta_raw||_infinity < 1/50, the first fixed-lift output effect remains < -1/25",
+    "verdict": "FIXED_LIFT_CHART_FAILURE_PERSISTS_FOR_NEARBY_ENGINE_RING_STATES"
+  },
+  "one_step": {
+    "branch": "+ on m0 coordinates; raw CAR selector is not identified",
+    "fixed_wiring_weight_1": "2-3*p+a*(4*p-3) < -7/40",
+    "next_engine_branch": "- is defined",
+    "output_current_lorentz_norm": "1-4/(3+p^40)^2 > 5/9",
+    "output_first_grade": "a*(4*p-3) < 0",
+    "output_rest_coordinate_current": "(1,2/(3+p^40),0,0)",
+    "output_top_grade": "-a*p^20-p != 0",
+    "same_comparator_chart": "FAIL: effect weight is negative"
+  },
+  "raw_frame_admission": {
+    "engine_selector": "raw m[1] is unavailable because no O yields a Z[a]^16 state",
+    "field_trace": "-208/5, not an integer; raw m cannot lie in Z[a]^16",
+    "frame_family": "F=sqrt(2/p^3)*O*H^(1/2), all O in O(4)",
+    "grade_one_squared_norm": "26*p^3/5, independent of O",
+    "same_chart_metric": "q=p^3 I/2 at the curved chart center",
+    "verdict": "NO_RAW_ENGINE_INPUT_FOR_THIS_CHART_BASE_FOR_ANY_O"
+  },
+  "schema": "d0-native-common-process-domain/1",
+  "scope": "the fixed raw-frame calculation is only a scalar extension at a point outside Z[a]^16; the gate applied directly to rest coordinates is a separate candidate map; variable-lift adapter, selector identification, AF-image and primitive admission remain unproved",
+  "source_pins_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md": "3e3bf3bb02aeb398dcefd54ca1892ee8d02128cc869f77db6e4818cc75c4aaf6",
+    "02_REGISTRY/research/A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md": "e596c3d2ae0e15a17566f9cfe21b08db2f347faf2c1d2a8b066cf16a82acbedb",
+    "02_REGISTRY/research/A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md": "ec505825642a50505959b2155eee3b0840149c7c17ca0503105ee377befdb152",
+    "02_REGISTRY/research/certificates/a4d_native_af_role_orbit_metric_check.py": "b718a3ea3e3f47087b664cc9bb194e0e09c5ae818836efdba3e63b9c11e4f2d5",
+    "02_REGISTRY/research/sources/d0_native_adaptive_engine_2026-10-16/adaptive_engine.py": "1eaf0ed625c78d2779da83cf85e65bf1c1e797a3719da3b786c46cd16733b402",
+    "02_REGISTRY/research/sources/d0_native_preparation_stationary_2026-10-16/matter_clock_binding.py": "1b2c668bca6c99ca84a4be513274fddc2c9a82a832368abc4a75ee24f58fbb71"
+  },
+  "verdict": "DIRECT_REST_COORDINATE_UPDATE_DOES_NOT_CLOSE_ON_CURVED_CHART"
+}

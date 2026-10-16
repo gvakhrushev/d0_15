@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "executed_mutants": [
+    {
+      "name": "wrong_golden_gain",
+      "status": "REJECTED_AS_EXPECTED",
+      "returncode": 1,
+      "last_error": "AssertionError: strict_upper_effect_identity"
+    },
+    {
+      "name": "missing_echo_inverse",
+      "status": "REJECTED_AS_EXPECTED",
+      "returncode": 1,
+      "last_error": "AssertionError: actual_success_amplitude_0"
+    },
+    {
+      "name": "omit_first_distinguishing_event",
+      "status": "REJECTED_AS_EXPECTED",
+      "returncode": 1,
+      "last_error": "AssertionError: first_record_removes_kernel"
+    },
+    {
+      "name": "drop_count_multiplicity",
+      "status": "REJECTED_AS_EXPECTED",
+      "returncode": 1,
+      "last_error": "AssertionError: actual_count_event_2_1"
+    },
+    {
+      "name": "drop_curvature_in_D_square",
+      "status": "REJECTED_AS_EXPECTED",
+      "returncode": 1,
+      "last_error": "AssertionError: all190_pairs_equal_full_D_square"
+    },
+    {
+      "name": "wrong_adjoint_word_sign",
+      "status": "REJECTED_AS_EXPECTED",
+      "returncode": 1,
+      "last_error": "AssertionError: twenty_words_equal_actual_D"
+    },
+    {
+      "name": "freeze_actual_link_derivative",
+      "status": "REJECTED_AS_EXPECTED",
+      "returncode": 1,
+      "last_error": "AssertionError: actual_link_first_variation_kept"
+    },
+    {
+      "name": "reverse_quadratic_reconstruction_sign",
+      "status": "REJECTED_AS_EXPECTED",
+      "returncode": 1,
+      "last_error": "AssertionError: all190_pairs_equal_full_D_square"
+    }
+  ]
+}

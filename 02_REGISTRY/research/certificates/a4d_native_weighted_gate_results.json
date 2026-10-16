@@ -1,0 +1,32 @@
+{
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_weighted_gate.lean",
+  "capsule_sha256": "c2669179117c8528622648c2d6fed2eab4681bae66391d7628f2e65a774a606d",
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_weighted_gate.lean",
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "output": "02_REGISTRY/research/certificates/a4d_native_weighted_gate_output.txt",
+  "output_sha256": "9f5d34e66fa40580e7cadee36307b22dadcd6e388a4bdedd0b97a42fd5025785",
+  "owner_input_head": "0af401558deca37468c077c40b53ac670a7ccaf3",
+  "printed_axiom_dependencies": 7,
+  "scope": "Research capsule: literal inverse-volume proxy, exact affine-volume profile and complete positive-weight edge gate. No physical volume identification or native continuous lift variation is assumed.",
+  "sorryAx": false,
+  "status": "PASS",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Cosmology/ArchiveHomogeneousState.lean": "71fad2f5fbf00fecd44fd2674b3aacfc322f6b4a7803c6e893a83b61be25cde6",
+    "03_FORMALIZATION/D0/Cosmology/EntropyArchiveFlow.lean": "91273c1b031d295510161fff1d115e9a00613daa8636da76e314afdc6bee918f",
+    "03_FORMALIZATION/D0/Geometry/ConformalLaplacianTrace.lean": "3030b73c15449a76d8dc89e0e1bad95e3c5bb950b7c20135396dbbef0fdb5ba6",
+    "03_FORMALIZATION/D0/Geometry/HeatTraceA2Decomposition.lean": "0e0a5b5241d3955d8e23515f006ab89f2270f81a6ee56e4a6aee203a8abb1e74",
+    "03_FORMALIZATION/D0/Geometry/HeatTraceEHProxy.lean": "dafa6b61a736ad40a5abadaf4e18aea0167a3569534b64def12af9f15b7d8c9e",
+    "03_FORMALIZATION/D0/Gravity/A2CompensatorNoether.lean": "5d9017e1f9dba2fd9dea3032091c9d48b8cefcff6bc32d4d001b64665339719d"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "freeze_phase_lift",
+    "mode": "Python -O",
+    "returncode": 1,
+    "mathematical_rejection": "ArithmeticError: nonuniform normal/source/chi lift"
+  },
+  {
+    "name": "omit_amplitude_connection",
+    "mode": "Python -O",
+    "returncode": 1,
+    "mathematical_rejection": "ArithmeticError: inhomogeneous source-minor nonzero"
+  },
+  {
+    "name": "wrong_twotick_factor",
+    "mode": "Python -O",
+    "returncode": 1,
+    "mathematical_rejection": "ArithmeticError: full repeated-gate leakage"
+  }
+]

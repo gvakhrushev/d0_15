@@ -1,0 +1,50 @@
+{
+  "schema": "d0-full-record-tape-v10/1",
+  "status": "PASS",
+  "exact": {
+    "conditions": 76,
+    "full_program_test_dimension": 96,
+    "algebraic_splitter": "4/5,3/5; unitary control, not golden replacement",
+    "dephasing_energy_increase": "1526408810496/3814697265625"
+  },
+  "interval": {
+    "conditions": 253,
+    "full_modes": 4096,
+    "exact_orbits": 119,
+    "parameters": {
+      "L": 8,
+      "n": 8192,
+      "b": 128,
+      "z": "2^-20",
+      "beta": "2p^2"
+    },
+    "root_center": [
+      "0.063635191594344535042829697433316630182693569761541",
+      "0.0040167350432317252873844519148251220686807163526359"
+    ],
+    "root_radius": "1e-12",
+    "contraction_upper": "1e-6",
+    "positive_modal_tape_tail_upper": "1e-5330",
+    "modal_tail_log10_interval": [
+      "-5335",
+      "-5334"
+    ],
+    "full_dimension": "2^16413",
+    "full_tape_not_enumerated": true
+  },
+  "checks_sha256": "d150e54d61bfbc91a922e7c7b914618121fcfad5a0b50738867f7a2c33350378",
+  "proof_sha256": "df090d17a6c0fbaaccac6af9ce55ce4ae969826550cd094200c1dcdf4ae57a0a",
+  "checker_sha256": "6a3f6dd67bb8b17c9a863e14e282e8599af449fcfef268c841ec8183353678ee",
+  "scope": {
+    "full_outcome_tape_active": true,
+    "same_record_intertwiner_all_n": true,
+    "shared_declared_H_Jprogram_R_root": true,
+    "M1_forcing": false,
+    "old_chronological_J_identified": false,
+    "pi0_placement": false,
+    "AF_or_spatial_refinement_identified": false,
+    "physical_Ward_or_GR": false,
+    "new_Lean_compilation": false,
+    "old_owner_scripts_replayed_here": false
+  }
+}

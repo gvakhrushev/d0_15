@@ -6,11 +6,11 @@ The working target is one derivation from operational admissibility to the
 **full nonlinear gravitational equation with its matter source and a controlled
 refinement limit**. This target remains open.
 
-| Evidence boundary (snapshot: 2026-10-15) | What it means for the next step |
+| Evidence boundary (snapshot: 2026-10-16) | What it means for the next step |
 |---|---|
-| Accepted `main` at `fa2b04b9` | Finite geometry, metric provenance, an Einstein flat tangent and conditional smooth-limit estimates are available inputs. They do not yet supply the complete native action/source or a general joint nonlinear limit. |
-| Research [#310](https://github.com/gvakhrushev/d0_15/pull/310) and intake [#322](https://github.com/gvakhrushev/d0_15/pull/322) | Native record/action work, a one-coordinate exact connection sheet and a fixed-L4 full-4D connection sheet are published research with different scopes. #322 proposes a fixed intake; neither open PR is accepted `main`. |
-| Next scientific work | Bind preparation/retained records to the **same complete action and its source**, while a second lane proves the **joint nonlinear/refinement estimate** on the agreed carrier. Each output must discharge a named premise of the parent derivation. |
+| Accepted baseline `main` at `add17919` | Finite geometry, the Einstein flat tangent and conditional smooth-limit estimates are joined by preparation second variation (#330), the full normal shape/measure covector (#332) and finite source reflection (#333). Their remaining admission/inverse hypotheses are explicit. |
+| Current research [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334) | The [current synthesis](02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md#current-synthesis-and-the-original-terminal-2026-10-16) carries the complete published packet at `4d19564d`, the bounded stored-native program equivalence and a curved-wave obstruction. Historical #310 is closed without merge; #322 is a separate frozen intake. |
+| Next scientific work | Solve the **full joint linearized Euler kernel** on the same conditional native program, retaining preparation, link/observer, all ten metric and all sixteen matter rows. Derive its physical admission and controlled refinement in the common action/source argument. The original fixed-source/raw-response target remains open. |
 
 Start with the [current gravity route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity),
 then the [parallel work and validation flow](00_WORK/README.md).
@@ -442,7 +442,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 
 - **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 1 (Total: 5)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
-- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 0/5
+- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 1/3, WORKER: 0/5
 - **Legacy Scaffolds Remaining**: 0
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
 <!-- D0-WORK-STATUS:END -->

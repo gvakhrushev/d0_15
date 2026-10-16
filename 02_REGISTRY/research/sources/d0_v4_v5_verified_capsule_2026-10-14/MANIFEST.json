@@ -1,0 +1,21 @@
+{
+  "schema": "d0-byte-preserving-source-capsule-intake/1",
+  "source_paths": 83,
+  "utf8_files": 82,
+  "restored_bytes": 342483,
+  "capsule_bytes": 59272,
+  "capsule_sha256": "91b030d62c93afa6bf2a23be28051d764e54f12a7e5a13cd75ed732427c913be",
+  "json_sha256": "3062ab678735883022bdc011471ae438d5a30bdcb013acea549bfd572e97564f",
+  "parts": 8,
+  "original_intake_zip_sha256": "630ea3914a201e6cb2d0634053b4f73397593f67f351770915cda437fc23825a",
+  "storage_format": "82 original UTF-8 source payloads plus exact ZIP metadata recipe; complete original-file SHA256 map inside the hash-pinned capsule",
+  "original_outer_transport_zip_stored": false,
+  "original_nested_v4_zip_restored_byte_identically": true,
+  "default_replay": "restore all83 hashes and run both exact suites with Python -O",
+  "fresh_v4_full_replay": "PASS: exact normal/optimized, interval normal/optimized, seven executed program mutants and two false-scope receipts",
+  "fresh_v4_full_replay_log_sha256": "058e6baba371174df236e6267f49ffd69e4a6d28bb652929d326cbe9e9e05791",
+  "fresh_v5_full_replay": "PASS: fourteen command groups, including exact/power/numerical normal and optimized, seven program mutants and false-native-J receipt",
+  "combined_new_wrapper_full_replay": "external container timeout; separate original v4 and v5 full replays passed; new default wrapper passed",
+  "new_Lean_compilation": false,
+  "physical_admission_or_parent_closure": false
+}

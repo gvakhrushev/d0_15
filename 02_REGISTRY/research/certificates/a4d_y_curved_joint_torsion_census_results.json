@@ -1,0 +1,77 @@
+{
+  "schema": "a4d-y-curved-joint-torsion-census-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-MU8-MU12-CENSUS-CERTIFIED",
+  "background": "z=1 exact Y vacuum; full 136x96 joint symbol",
+  "modulus": 1000033,
+  "orders": {
+    "8": {
+      "character_count": 4096,
+      "rank95_count": 4,
+      "rank96_count": 4092,
+      "singular_ids": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          6,
+          6,
+          6,
+          6
+        ]
+      ]
+    },
+    "12": {
+      "character_count": 20736,
+      "rank95_count": 4,
+      "rank96_count": 20732,
+      "singular_ids": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          6,
+          6,
+          6,
+          6
+        ],
+        [
+          9,
+          9,
+          9,
+          9
+        ]
+      ]
+    }
+  },
+  "conclusion": "for mu_8^4 and mu_12^4 the only joint rank drops are the four quarter-wave diagonal characters already owned exactly by the mu4 certificate",
+  "scope_fence": [
+    "finite exact torsion censuses only",
+    "does not exclude irrational unit-torus zeros or torsion points of untested order",
+    "does not prove a uniform transverse singular-value gap",
+    "does not close nonlinear response decoupling"
+  ]
+}

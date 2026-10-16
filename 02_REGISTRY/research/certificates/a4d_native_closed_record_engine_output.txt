@@ -1,0 +1,16 @@
+D0.Research.ClosedRecordEngine.every_seed_tick_regular (a p : ℝ) (ha0 : 0 < a) (hp0 : 0 < p) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (n : ℕ) : 1 / 5 < |((D0.Research.ClosedRecordEngine.lowerStep a p)^[n] (0, 1)).2|
+D0.Research.ClosedRecordEngine.conjugate_growth (C : ℝ) (hC : 1 ≤ C) (n : ℕ) :
+  0 ≤ (D0.Research.ClosedRecordEngine.chebPair C n).1 ∧
+    (D0.Research.ClosedRecordEngine.chebPair C n).1 ≤ (D0.Research.ClosedRecordEngine.chebPair C n).2 ∧
+      C ^ (n + 1) ≤ (D0.Research.ClosedRecordEngine.chebPair C n).2
+'D0.Research.ClosedRecordEngine.golden_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ClosedRecordEngine.band_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ClosedRecordEngine.seed_enters_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ClosedRecordEngine.band_transitions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ClosedRecordEngine.safe_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ClosedRecordEngine.safe_uniform_first_grade' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ClosedRecordEngine.every_seed_tick_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ClosedRecordEngine.conjugate_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ClosedRecordEngine.conjugate_never_returns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Representation.GoldenCoherentMemory.fullStep_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]

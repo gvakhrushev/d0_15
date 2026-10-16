@@ -1,0 +1,17 @@
+{
+  "schema": "a4d-y-variable-curvature-normal-jet-v1",
+  "terminal": "A4D-Y-VARIABLE-CURVATURE-NORMAL-JET-CERTIFIED",
+  "radial_jacobi_coefficients": {
+    "j_over_r": "1-K0*r^2/6-K1*r^3/12+(K0^2/120-K2/40)*r^4+O(r^5)",
+    "j_squared_over_r_squared": "1-K0*r^2/3-K1*r^3/6+(2*K0^2/45-K2/20)*r^4+O(r^5)"
+  },
+  "normal_metric_jet": "Q-eta = [kappa + (grad(kappa) dot x)/2 - 2*kappa^2*|x|^2/5 + 3*Hess(kappa)(x,x)/20] * (|x|^2 I - x x^T) + O(|x|^5)",
+  "lattice_scaled_metric_jet": "Q_h-eta = h^2*kappa*T(xi) + h^3*(grad(kappa) dot xi)*T(xi)/2 + h^4*[-2*kappa^2*|xi|^2/5 + 3*Hess(kappa)(xi,xi)/20]*T(xi) + O(h^5)",
+  "curvature_normalization": "K=3*kappa",
+  "constant_curvature_control": "Q-eta=kappa*T-(2/5)*kappa^2*|x|^2*T",
+  "scope": "local two-dimensional geodesic-normal metric jet; global lattice transport and periodic mean obstruction remain open",
+  "checks": [
+    "radial Jacobi recurrence solved over Q",
+    "constant-curvature specialization equals the pinned owner jet"
+  ]
+}

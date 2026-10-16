@@ -1,0 +1,226 @@
+{
+  "checks": {
+    "actual_compiler_and_input": 1,
+    "actual_declaration_counts": 1,
+    "actual_flat_operator_spectral_first_moment": 1,
+    "actual_flat_operator_spectral_second_moment": 1,
+    "actual_full_coupled_codifferential_scale": 2,
+    "all_native_sites_and_grades_retained": 2,
+    "all_sixteen_graded_weights": 2,
+    "analytic_formal_boundary": 1,
+    "both_endpoints_full_joint_radial_tangent": 2,
+    "coefficient_curvature_control": 2,
+    "coupled_control_complete_orthogonal_operation": 1,
+    "coupled_control_feedback_survives_orthonormal_frame_transport": 1,
+    "coupled_control_full_paired_spectrum_thermal_jet": 1,
+    "coupled_control_is_actual_positive_graded_dirac_square": 1,
+    "coupled_control_respects_moving_positive_pairing": 1,
+    "coupled_control_same_full_carrier_feedback": 1,
+    "coupled_radial_cancellation_not_universal_no_go": 1,
+    "curved_degree_has_no_nilpotency_premise": 1,
+    "every_added_zero_mode_retained_sign_survives": 6,
+    "fixed_price_contrast_has_wrong_h_order": 4,
+    "freezing_the_adjoint_is_wrong": 2,
+    "frozen_endpoint_is_rejected": 2,
+    "full_dirac_similarity_not_constant_pairing": 2,
+    "full_dirac_weighted_symmetry": 2,
+    "full_squared_similarity_with_curvature_retained": 2,
+    "full_weighted_adjoint": 2,
+    "genuine_derivative_not_totalized_deriv": 1,
+    "genuine_shape_derivative_not_totalized_deriv": 1,
+    "h_squared_normalization_changes_bound": 4,
+    "indefinite_spectrum_sign_control": 1,
+    "literal_flat_full_spectrum_cardinality": 2,
+    "literal_flat_thermal_energy_strict": 2,
+    "literal_geometric_homogeneity_all_degrees": 4,
+    "mixed_metric_retained": 2,
+    "new_capsule_and_output_hashes": 1,
+    "no_sorry_error_warning": 1,
+    "packed_dual_trace_uses_all_ten_slots": 4,
+    "positive_full_compound_factorization": 2,
+    "resolved_proposition_and_transitive_axioms": 26,
+    "same_bootstrap_cayley_derivative_exact": 1,
+    "shape_actual_creator_anticommutators": 32,
+    "shape_actual_weighted_CAR_mixed_slots": 32,
+    "shape_actual_weighted_annihilator_anticommutators": 32,
+    "shape_all_sites_modes_and_zero_modes_retained": 2,
+    "shape_all_ten_exact_heat_covector_slots": 20,
+    "shape_every_fixed_beta_linear_pair_equal_volume": 1,
+    "shape_every_fixed_beta_test_metric_tracefree": 1,
+    "shape_every_fixed_beta_test_metric_unit_volume": 1,
+    "shape_every_fixed_beta_two_axis_Boltzmann_exponents_preserved": 1,
+    "shape_full_joint_identity_link_tangent": 1,
+    "shape_full_sixteen_grade_Fourier_square": 2,
+    "shape_linear_pair_has_exactly_equal_volumes": 1,
+    "shape_metric_tracefree_not_coordinate_tracefree": 1,
+    "shape_radial_sum_matches_prior_thermal_identity": 2,
+    "shape_tracefree_source_strict_not_pure_trace": 2,
+    "shape_uniform_all_L_base_bound_arithmetic": 1,
+    "shape_uniform_all_L_linear_pencil_bound_arithmetic": 1,
+    "shape_volume_preserving_curve_has_same_tangent": 1,
+    "source_pin_primary_and_prior_input_sha256": 11,
+    "source_pin_toolchain_input_sha256": 3,
+    "source_pin_transitive_d0_source_sha256": 71,
+    "strict_operator_domain_at_cancellation_control": 1,
+    "temperature_scale_not_silently_fixed": 1,
+    "zero_operator_is_excluded_hypothesis_control": 1
+  },
+  "constant_positive_metric_shape_source": {
+    "analytic_all_L_estimate_not_finite_rank_extrapolation": true,
+    "beta": "log(2)",
+    "beta_is_selected_native_temperature": false,
+    "cases": [
+      {
+        "L": 2,
+        "directional_energies": [
+          "4/17",
+          "64/18446744073709551617",
+          "16/65537",
+          "16/65537"
+        ],
+        "full_partition": "1346919866533955285808266215441/79228162514264337593543950336",
+        "packed_ten_metric_covector": {
+          "00": "1/17",
+          "01": "32/313594649253062377489",
+          "02": "8/1114129",
+          "03": "8/1114129",
+          "11": "256/18446744073709551617",
+          "12": "128/1208944266358702884323329",
+          "13": "128/1208944266358702884323329",
+          "22": "16/65537",
+          "23": "32/4295098369",
+          "33": "16/65537"
+        },
+        "retained_dimension": 256,
+        "tracefree_derivative": "73786976294838205380/313594649253062377489"
+      },
+      {
+        "L": 4,
+        "directional_energies": [
+          "16/257",
+          "256/340282366920938463463374607431768211457",
+          "64/4294967297",
+          "64/4294967297"
+        ],
+        "full_partition": "2602463109689391599738748898445147247214748923573721188939209831118836307977467574239536939289465234583551927934341153281/161390617380431786853494948250188242145606612051826469551916209783790476376052574664352834580008614464743948248296718336",
+        "packed_ten_metric_covector": {
+          "00": "4/257",
+          "01": "128/87452568298681185110087274109964430344449",
+          "02": "32/1103806595329",
+          "03": "32/1103806595329",
+          "11": "1024/340282366920938463463374607431768211457",
+          "12": "512/1461501637671185285124623296179657627091995721729",
+          "13": "512/1461501637671185285124623296179657627091995721729",
+          "22": "64/4294967297",
+          "23": "128/18446744082299486209",
+          "33": "64/4294967297"
+        },
+        "retained_dimension": 4096,
+        "tracefree_derivative": "5444517870735015415413993718908291317520/87452568298681185110087274109964430344449"
+      }
+    ],
+    "fixed_positive_beta_extension": {
+      "Q": "diag(4*c,c/4,1/c,1/c)",
+      "V": "diag(4*c,-c/4,0,0)",
+      "c": "beta/log(2)",
+      "derivative_lower_bound": "1/(20000*c)",
+      "native_admission_or_varying_beta_law_proved": false,
+      "paired_half_contrast_lower_bound": "epsilon/(2500000*c)"
+    },
+    "pencil_parameter_interval": "[-1/4,1/4]",
+    "primitive_coupled_preparation_or_native_Lorentz_source_derived": false,
+    "uniform_base_derivative_lower_bound": "1/20000",
+    "uniform_pencil_derivative_lower_bound": "1/2500000"
+  },
+  "flat_spectral_controls": [
+    {
+      "L": 2,
+      "energy_at_beta_log2": "64/65537",
+      "full_spectrum": {
+        "0": 16,
+        "16": 64,
+        "32": 96,
+        "48": 64,
+        "64": 16
+      }
+    },
+    {
+      "L": 4,
+      "energy_at_beta_log2": "256/4294967297",
+      "full_spectrum": {
+        "0": 16,
+        "128": 1120,
+        "160": 896,
+        "192": 448,
+        "224": 128,
+        "256": 16,
+        "32": 128,
+        "64": 448,
+        "96": 896
+      }
+    }
+  ],
+  "full_matrix_cases": [
+    {
+      "curved_coefficient_links": false,
+      "d_squared_nonzero": false,
+      "dimension": 256,
+      "dirac_nonzero": true
+    },
+    {
+      "curved_coefficient_links": true,
+      "d_squared_nonzero": true,
+      "dimension": 256,
+      "dirac_nonzero": true
+    }
+  ],
+  "input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md": "2a5dfbbafc9c1c6fe20e31d6a99a949d25abd4f1a5dbe40bb5e08dd392f8d5b4",
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance.lean": "e212da4164e5aadb47a969982cbf6089c52b6ab22b7ecb44c55fe5c877520543",
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_check.py": "59b9c56cd95e29a0924e12e11fa56f109461d7ae8c89bc6d9c8442ba8eaef7c6",
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_output.txt": "2d74685d786f3465cacb6243ed6b53fa7f706071c2761db3255a7ac5f9efd514",
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_results.json": "cbf0f589aa94a6332f29e2e5a9b43e3ad9023d43933078e85468487dfbf51d58"
+  },
+  "radial_cancellation_control": {
+    "feedback_parameter_derivative": "-205/324",
+    "feedback_price_parameter_derivative": "216/205",
+    "full_spectrum": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "is_native_full_joint_root": false,
+    "positive_graded_dirac_square": true,
+    "thermal": "2/3",
+    "total": "0"
+  },
+  "schema": "d0-native-positive-heat-radial-balance-v2",
+  "scope": {
+    "actual_curved_coefficient_degree_proof_rebuilt_by_kernel_decide": true,
+    "actual_genuine_radial_heat_HasDerivAt_compiled": true,
+    "all_nearby_corrected_roots_or_recovery_excluded": false,
+    "all_new_propositions_standard_axioms_only": true,
+    "all_positive_pairings_or_all_coupled_bootstraps_excluded": false,
+    "all_ten_constant_positive_metric_heat_coefficients_derived_analytically": true,
+    "class": "POSITIVE_GRADED_HODGE_WITH_ADMITTED_FULL_JOINT_RADIAL_PATH_AND_FIXED_BETA",
+    "compensating_source_or_stationarity_gate_selected": false,
+    "coupled_one_direction_control_is_admitted_full_joint_root": false,
+    "flat_shape_gap_is_native_Lorentz_GR_no_go": false,
+    "flatness_or_d_squared_zero_required_for_similarity": false,
+    "full_moving_graded_spectral_argument_and_uniform_L_contrast_bound": "ANALYTIC_NOT_FULL_LEAN",
+    "native_beta_log2_or_volume_counterterm_selected": false,
+    "native_h_squared_normalization_or_temperature_law_installed": false,
+    "native_joint_preparation_or_constitutive_uniqueness_derived": false,
+    "price": "LITERAL_EXISTING_FULL_BOOTSTRAP_HEAT_PLUS_ALL_REMAINING_TERMS",
+    "printed_prior_degree_owner_retains_its_explicit_native_decide_leaf": true,
+    "radial_contraction_determines_all_ten_source_components_or_pure_trace": false,
+    "requires_positive_pairing_nonzero_d_and_owned_scaling_admission": true,
+    "retained_zero_modes_or_other_archive_rows_deleted": false,
+    "shape_calculus_and_uniform_L_bound_fully_kernel_formalized": false,
+    "whole_core_F_absence_GR_or_original_parent_terminal_closed": false
+  },
+  "shape_followup_input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+  "total_controls": 319
+}

@@ -1,0 +1,293 @@
+{
+  "schema": "a4d-y-curved-joint-spatial-equal-torus-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-SPATIAL-EQUAL-PHYSICAL-TORUS-LOCUS-CERTIFIED",
+  "surface": "lambda=(mu,mu*r,mu*r,mu*r), |mu|=|r|=1",
+  "rank_off_four_folds": 96,
+  "rank_at_four_folds": 95,
+  "folded_block_ranks_mu_1_i_minus1_minusi": {
+    "trivial": [
+      15,
+      16,
+      15,
+      16
+    ],
+    "sign": [
+      16,
+      15,
+      16,
+      15
+    ],
+    "standard": [
+      32,
+      32,
+      32,
+      32
+    ]
+  },
+  "sign_connection_factor_bidegree": [
+    8,
+    4
+  ],
+  "sign_cubic_reciprocal_gcd_degree": 0,
+  "sign_quadratic_resultant_degree": 16,
+  "standard_connection_factor_bidegree": [
+    32,
+    32
+  ],
+  "standard_metric_factor_bidegree": [
+    12,
+    12
+  ],
+  "standard_resultant_mu_valuation": 144,
+  "standard_resultant_reduced_w_degree": 120,
+  "standard_resultant_reduced_w_coefficients_sha256": "933678ca44e6864a3b1b970b4e65c6ff9f1513f68d90a61b0d039703b5cb2d94",
+  "standard_resultant_reciprocal_gcd_degree": 0,
+  "standard_simple_line_records": [
+    {
+      "line": "r=1",
+      "charts": [
+        {
+          "rows": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            24,
+            25,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "degree": 48
+        },
+        {
+          "rows": [
+            97,
+            98,
+            100,
+            101,
+            102,
+            103,
+            107,
+            108,
+            110,
+            111,
+            112,
+            113,
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            24,
+            25,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "degree": 48
+        }
+      ],
+      "gcd": "x^12"
+    },
+    {
+      "line": "r=-1",
+      "charts": [
+        {
+          "rows": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            24,
+            25,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "degree": 48
+        },
+        {
+          "rows": [
+            97,
+            98,
+            100,
+            101,
+            102,
+            103,
+            107,
+            108,
+            110,
+            111,
+            112,
+            113,
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            24,
+            25,
+            30,
+            31
+          ],
+          "degree": 42
+        }
+      ],
+      "gcd": "x^16"
+    },
+    {
+      "line": "mu*r=1",
+      "charts": [
+        {
+          "rows": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            24,
+            25,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "degree": 80
+        },
+        {
+          "rows": [
+            97,
+            98,
+            100,
+            101,
+            102,
+            103,
+            107,
+            108,
+            110,
+            111,
+            112,
+            113,
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            24,
+            27,
+            28,
+            30
+          ],
+          "degree": 78
+        }
+      ],
+      "gcd": "x^48"
+    }
+  ],
+  "scope_fence": [
+    "continuous two-real-dimensional physical spatial-equal torus",
+    "not all three independent spatial ratios or the full four-torus",
+    "uniform inverse and nonlinear consequences require a separate argument",
+    "no fixed-curved-background normalized response terminal"
+  ]
+}

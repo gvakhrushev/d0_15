@@ -1,0 +1,38 @@
+{
+  "input_head": "551eba1a84fe15ebdcd100b90348f291bd109692",
+  "local_transport": {
+    "solder_null_dimension": 20,
+    "first_adjoint_span_dimension": 35,
+    "second_adjoint_span_dimension": 36,
+    "first_solder_transfer_rank": 15,
+    "first_ward_rank": 6,
+    "ward_preserving_source_transfer_rank": 9,
+    "metric_null_first_adjoint_span_dimension": 36,
+    "initial_curvature": {
+      "02": "J13",
+      "03": "J12"
+    },
+    "first_transported_curvature": {
+      "02": "K3",
+      "03": "K2"
+    },
+    "finite_packed_response": "4*a/(4-a^2) times unit q23",
+    "nonidentity_coframe_coefficient_controls": 2,
+    "all_coframe_extension": "exterior-square role isomorphism; no shift mixing",
+    "scope": "local curvature carrier; shared-link stationarity not asserted"
+  },
+  "all_role_current": {
+    "shape": [
+      2,
+      3,
+      2,
+      2
+    ],
+    "sites": 24,
+    "literal_current_rows": 576,
+    "gauge_covariance_rows": 1728,
+    "wrong_rows_without_transport": 576,
+    "wrong_rows_without_odd_momentum": 576
+  },
+  "parent_status": "PARTIAL / OPEN"
+}

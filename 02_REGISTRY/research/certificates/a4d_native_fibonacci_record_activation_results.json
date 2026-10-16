@@ -1,0 +1,122 @@
+{
+  "actual_command": [
+    "/Users/grigorijvahrusev/.elan/bin/lake",
+    "env",
+    "lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean"
+  ],
+  "actual_cwd": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION",
+  "axioms": {
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.actual_first_fixed_dimensions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.cube_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.delta_corner_and_feedback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.fixed_space_obstruction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.full_cut_idempotent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.inherited_frame_norms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.lift_composition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.lift_on_frame": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.passive_has_no_detail": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.regular_multiplicities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.tensor_feedback_scalar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.tracial_corner_unchanged": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.vieta_implies_both_quadratics": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FibonacciRecordActivation.whole_lift_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule_sha256": "7445b7c3827a372f4a90eaad5acfbd4523b7852e31778162fe17b155374cd30b",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean"
+  ],
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.FibonacciRecordActivation.lift_on_frame",
+    "D0.Research.FibonacciRecordActivation.lift_composition",
+    "D0.Research.FibonacciRecordActivation.whole_lift_orthogonal",
+    "D0.Research.FibonacciRecordActivation.full_cut_idempotent",
+    "D0.Research.FibonacciRecordActivation.passive_has_no_detail",
+    "D0.Research.FibonacciRecordActivation.fixed_space_obstruction",
+    "D0.Research.FibonacciRecordActivation.actual_first_fixed_dimensions",
+    "D0.Research.FibonacciRecordActivation.inherited_frame_norms",
+    "D0.Research.FibonacciRecordActivation.regular_multiplicities",
+    "D0.Research.FibonacciRecordActivation.vieta_implies_both_quadratics",
+    "D0.Research.FibonacciRecordActivation.delta_corner_and_feedback",
+    "D0.Research.FibonacciRecordActivation.cube_normalization",
+    "D0.Research.FibonacciRecordActivation.tensor_feedback_scalar",
+    "D0.Research.FibonacciRecordActivation.tracial_corner_unchanged",
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal"
+  ],
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "output_sha256": "e49e126ebe18a1a26609fb02a19f8f008f30660e411670145caa0be0f1d904fa",
+  "scope": "14 generic research kernel propositions over the real matrix form; complex extension, all-unitary fixed-space classification and actual AF path/frame/spectral binding have separate analytic/exact-certificate status. Physical preparation/refinement and supported CORE remain open. No D0.All claim.",
+  "status": "PASS"
+}

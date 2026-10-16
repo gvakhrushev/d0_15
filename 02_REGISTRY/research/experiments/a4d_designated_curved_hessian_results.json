@@ -1,0 +1,72 @@
+{
+  "metric": "diag(1,-1,-f(x1)^2,-f(x1)^2), f=1+epsilon*(1-cos(2*pi*x1))",
+  "fixed_epsilon": 0.02,
+  "controls": {
+    "flat_symbol_max_error": 2.220446049250313e-16,
+    "curved_gradient_fd_error": 2.6997336224215962e-11,
+    "curved_hessian_fd_error": 1.0036504266563995e-10
+  },
+  "runs": [
+    {
+      "L": 8,
+      "h": 0.125,
+      "fixed_metric_amplitude": 0.02,
+      "normal_center_f_second_derivative": 0.7895683520871487,
+      "newton_steps": 12,
+      "connection_residual_infinity": 8.690964614643804e-16,
+      "max_link_log_operator_norm": 0.014242029267137616,
+      "max_link_log_divided_by_h": 0.11393623413710093,
+      "background_translation_fibre_sigma_min": 0.28454687925761485,
+      "background_translation_fibre_inverse_l1_norm": 6.063097794203129,
+      "quarter_transverse_fibre_sigma_min": 7.840802186601221e-06,
+      "quarter_transverse_fibre_inverse_l1_norm": 192550.2897327377,
+      "quarter_transverse_fibre_eight_smallest": [
+        0.0006266370101929275,
+        0.00038090605945218485,
+        0.00032158455806673885,
+        0.00020378718516789947,
+        0.0001738337778079326,
+        6.186728845504821e-05,
+        1.8221968314541882e-05,
+        7.840802186601221e-06
+      ],
+      "Y_plane_rayleigh_residual_l2": 0.021628107822118808,
+      "Y_plane_residual_ratio_l1": 0.018748881378242835,
+      "status": "NUMERICAL_CONNECTION_CONTINUATION_ONLY",
+      "source": "No independent joint metric source is imposed."
+    },
+    {
+      "L": 12,
+      "h": 0.08333333333333333,
+      "fixed_metric_amplitude": 0.02,
+      "normal_center_f_second_derivative": 0.7895683520871487,
+      "newton_steps": 12,
+      "connection_residual_infinity": 6.661338147750939e-16,
+      "max_link_log_operator_norm": 0.010049672696683712,
+      "max_link_log_divided_by_h": 0.12059607236020453,
+      "background_translation_fibre_sigma_min": 0.28438487713150185,
+      "background_translation_fibre_inverse_l1_norm": 6.032790790181689,
+      "quarter_transverse_fibre_sigma_min": 7.158566498563544e-07,
+      "quarter_transverse_fibre_inverse_l1_norm": 2152216.3834406487,
+      "quarter_transverse_fibre_eight_smallest": [
+        0.0003374653982312504,
+        0.0002802842483876373,
+        0.0002654585461819474,
+        0.0001704772628198312,
+        0.00015846793596722492,
+        5.6779406434416605e-05,
+        7.677974028710923e-06,
+        7.158566498563544e-07
+      ],
+      "Y_plane_rayleigh_residual_l2": 0.02111210094847717,
+      "Y_plane_residual_ratio_l1": 0.017019536223466532,
+      "status": "NUMERICAL_CONNECTION_CONTINUATION_ONLY",
+      "source": "No independent joint metric source is imposed."
+    }
+  ],
+  "nonclaims": [
+    "no exact joint source-compatible witness",
+    "no identification with the #216 cutoff parametrix",
+    "no all-fibre minimum or continuum rate from two grids"
+  ]
+}

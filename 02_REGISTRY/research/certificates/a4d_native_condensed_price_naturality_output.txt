@@ -1,0 +1,232 @@
+D0.Research.CondensedPrice.fibreCard_pos.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (pi : f → c) (hp : Function.Surjective pi) (a : c) :
+  0 < D0.Research.CondensedPrice.fibreCard pi a
+'D0.Research.CondensedPrice.fibreCard_pos' depends on axioms: [propext, Quot.sound]
+D0.Research.CondensedPrice.fibre_count_real.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (pi : f → c) (a : c) :
+  (∑ i, if pi i = a then 1 else 0) = ↑(D0.Research.CondensedPrice.fibreCard pi a)
+'D0.Research.CondensedPrice.fibre_count_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.average_lift.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f] [DecidableEq c]
+  [DecidableEq f] (pi : f → c) (hp : Function.Surjective pi) :
+  D0.Research.CondensedPrice.average pi * D0.Research.CondensedPrice.lift pi = 1
+'D0.Research.CondensedPrice.average_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.lift_gram_is_point_kernel.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (pi : f → c) :
+  D0.Research.CondensedPrice.lift pi * (D0.Research.CondensedPrice.lift pi).transpose = fun i j =>
+    if pi i = pi j then 1 else 0
+'D0.Research.CondensedPrice.lift_gram_is_point_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.record_kernel_operator_readout.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c]
+  [Fintype f] [DecidableEq c] [DecidableEq f] (pi : f → c) (hp : Function.Surjective pi) :
+  D0.Research.CondensedPrice.average pi *
+      (D0.Research.CondensedPrice.lift pi * (D0.Research.CondensedPrice.lift pi).transpose) =
+    (D0.Research.CondensedPrice.lift pi).transpose
+'D0.Research.CondensedPrice.record_kernel_operator_readout' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.split_projection.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (J : Matrix f c ℝ) (C : Matrix c f ℝ) (hCJ : C * J = 1) : J * C * (J * C) = J * C
+'D0.Research.CondensedPrice.split_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.complement_lift_zero.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (J : Matrix f c ℝ) (C : Matrix c f ℝ) (hCJ : C * J = 1) : (1 - J * C) * J = 0
+'D0.Research.CondensedPrice.complement_lift_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.average_complement_zero.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (J : Matrix f c ℝ) (C : Matrix c f ℝ) (hCJ : C * J = 1) : C * (1 - J * C) = 0
+'D0.Research.CondensedPrice.average_complement_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.natural_extension_complete.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (J : Matrix f c ℝ) (C : Matrix c f ℝ) (A : D0.Research.CondensedPrice.Mat c)
+  (L : D0.Research.CondensedPrice.Mat f) (hCJ : C * J = 1) (hL : L * J = J * A) (hC : C * L = A * C) :
+  L = J * A * C + (1 - J * C) * L * (1 - J * C)
+'D0.Research.CondensedPrice.natural_extension_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.completion_is_natural.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (J : Matrix f c ℝ) (C : Matrix c f ℝ) (A : D0.Research.CondensedPrice.Mat c)
+  (B : D0.Research.CondensedPrice.Mat f) (hCJ : C * J = 1) (hBJ : B * J = 0) (hCB : C * B = 0) :
+  (J * A * C + B) * J = J * A ∧ C * (J * A * C + B) = A * C
+'D0.Research.CondensedPrice.completion_is_natural' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.scalar_complement_is_natural.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (J : Matrix f c ℝ) (C : Matrix c f ℝ) (A : D0.Research.CondensedPrice.Mat c) (s : ℝ)
+  (hCJ : C * J = 1) : (J * A * C + s • (1 - J * C)) * J = J * A ∧ C * (J * A * C + s • (1 - J * C)) = A * C
+'D0.Research.CondensedPrice.scalar_complement_is_natural' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.natural_composites.{u_1, u_2, u_3} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] {b : Type u_3} [Fintype b] [DecidableEq b] (J : Matrix f c ℝ) (C : Matrix c f ℝ)
+  (K : Matrix c b ℝ) (D : Matrix b c ℝ) (hCJ : C * J = 1) (hDK : D * K = 1) : D * C * (J * K) = 1
+'D0.Research.CondensedPrice.natural_composites' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.complement_trace.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (J : Matrix f c ℝ) (C : Matrix c f ℝ) (hCJ : C * J = 1) :
+  (1 - J * C).trace = ↑(Fintype.card f) - ↑(Fintype.card c)
+'D0.Research.CondensedPrice.complement_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.complement_keeps_symmetry.{u_2} {f : Type u_2} [Fintype f] [DecidableEq f]
+  (R P : D0.Research.CondensedPrice.Mat f) (hRP : R * P = P * R) : R * (1 - P) = (1 - P) * R
+'D0.Research.CondensedPrice.complement_keeps_symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.uniform_gap_completion.{u_1, u_2, u_3} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] {b : Type u_3} [Fintype b] [DecidableEq b] (J : Matrix f c ℝ) (C : Matrix c f ℝ)
+  (K : Matrix c b ℝ) (D : Matrix b c ℝ) (A : D0.Research.CondensedPrice.Mat b) (s : ℝ) :
+  J * (K * A * D + s • (1 - K * D)) * C + s • (1 - J * C) = J * K * A * (D * C) + s • (1 - J * K * (D * C))
+'D0.Research.CondensedPrice.uniform_gap_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.uniform_gap_all_level_compatibility.{u_1, u_2, u_3} {c : Type u_1} {f : Type u_2} [Fintype c]
+  [Fintype f] [DecidableEq c] [DecidableEq f] {b : Type u_3} [Fintype b] [DecidableEq b] (J : Matrix f c ℝ)
+  (C : Matrix c f ℝ) (K : Matrix c b ℝ) (D : Matrix b c ℝ) (A : D0.Research.CondensedPrice.Mat b) (s : ℝ)
+  (hCJ : C * J = 1) :
+  (J * K * A * (D * C) + s • (1 - J * K * (D * C))) * J = J * (K * A * D + s • (1 - K * D)) ∧
+    C * (J * K * A * (D * C) + s • (1 - J * K * (D * C))) = (K * A * D + s • (1 - K * D)) * C
+'D0.Research.CondensedPrice.uniform_gap_all_level_compatibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.CondensedPrice.gap_shift_trace.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]
+  [DecidableEq c] [DecidableEq f] (J : Matrix f c ℝ) (C : Matrix c f ℝ) (A : D0.Research.CondensedPrice.Mat c) (s t : ℝ)
+  (hCJ : C * J = 1) :
+  (J * A * C + s • (1 - J * C) - (J * A * C + t • (1 - J * C))).trace =
+    (s - t) * (↑(Fintype.card f) - ↑(Fintype.card c))
+'D0.Research.CondensedPrice.gap_shift_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.actual_archive_split (n : ℕ) :
+  D0.Research.CondensedPrice.average (D0.archiveProjection n) *
+      D0.Research.CondensedPrice.lift (D0.archiveProjection n) =
+    1
+'D0.Research.CondensedPrice.actual_archive_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.actual_archive_hidden_dimension_positive (n : ℕ) :
+  0 < Fintype.card (D0.ArchivePoints (n + 1)) - Fintype.card (D0.ArchivePoints n)
+'D0.Research.CondensedPrice.actual_archive_hidden_dimension_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.CondensedPrice.actual_archive_initial_dimensions :
+  Fintype.card (D0.ArchivePoints 0) = 16 ∧
+    Fintype.card (D0.ArchivePoints 1) = 81 ∧ Fintype.card (D0.ArchivePoints 2) = 256
+'D0.Research.CondensedPrice.actual_archive_initial_dimensions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.CondensedPrice.actual_archive_hidden_trace (n : ℕ) :
+  (1 -
+        D0.Research.CondensedPrice.lift (D0.archiveProjection n) *
+          D0.Research.CondensedPrice.average (D0.archiveProjection n)).trace =
+    ↑(Fintype.card (D0.ArchivePoints (n + 1))) - ↑(Fintype.card (D0.ArchivePoints n))
+'D0.Research.CondensedPrice.actual_archive_hidden_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.actual_archive_root_hidden_positive (n : ℕ) (hn : 1 ≤ n) :
+  0 < Fintype.card (D0.ArchivePoints n) - Fintype.card (D0.ArchivePoints 0)
+'D0.Research.CondensedPrice.actual_archive_root_hidden_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.CondensedPrice.actual_record_matrix_first_arrow :
+  D0.Research.CondensedPrice.lift (D0.archiveProjection 0) *
+      (D0.Research.CondensedPrice.lift (D0.archiveProjection 0)).transpose =
+    fun i j => D0.archiveDelta 1 i j
+'D0.Research.CondensedPrice.actual_record_matrix_first_arrow' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.actual_record_operator_naturality_fails :
+  D0.Research.CondensedPrice.average (D0.archiveProjection 0) *
+      (D0.Research.CondensedPrice.lift (D0.archiveProjection 0) *
+        (D0.Research.CondensedPrice.lift (D0.archiveProjection 0)).transpose) ≠
+    1 * D0.Research.CondensedPrice.average (D0.archiveProjection 0)
+'D0.Research.CondensedPrice.actual_record_operator_naturality_fails' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.CondensedPrice.partition_pos (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) :
+  0 < D0.Research.CondensedPrice.partition Z r beta s
+'D0.Research.CondensedPrice.partition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.genuine_hidden_heat_source (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) (hb : beta ≠ 0) :
+  HasDerivAt (D0.Research.CondensedPrice.heat Z r beta) (D0.Research.CondensedPrice.heatSource Z r beta s) s
+'D0.Research.CondensedPrice.genuine_hidden_heat_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.hidden_heat_source_neg (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) :
+  D0.Research.CondensedPrice.heatSource Z r beta s < 0
+'D0.Research.CondensedPrice.hidden_heat_source_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.hidden_heat_source_error (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) :
+  D0.Research.CondensedPrice.heatSource Z r beta s + 1 = Z / D0.Research.CondensedPrice.partition Z r beta s
+'D0.Research.CondensedPrice.hidden_heat_source_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.hidden_heat_source_lower (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) :
+  -1 < D0.Research.CondensedPrice.heatSource Z r beta s
+'D0.Research.CondensedPrice.hidden_heat_source_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.genuine_full_price_source (Z r beta s feedback : ℝ) (hZ : 0 < Z) (hr : 0 < r)
+  (hb : beta ≠ 0) :
+  HasDerivAt (fun x => D0.Research.CondensedPrice.heat Z r beta x + feedback)
+    (D0.Research.CondensedPrice.heatSource Z r beta s) s
+'D0.Research.CondensedPrice.genuine_full_price_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.no_independent_hidden_heat_stationarity (Z r beta s feedback : ℝ) (hZ : 0 < Z) (hr : 0 < r)
+  (hb : beta ≠ 0) : deriv (fun x => D0.Research.CondensedPrice.heat Z r beta x + feedback) s ≠ 0
+'D0.Research.CondensedPrice.no_independent_hidden_heat_stationarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.CondensedPrice.partition_factor (Z r beta s : ℝ) (hr : r ≠ 0) :
+  D0.Research.CondensedPrice.partition Z r beta s =
+    r * Real.exp (-beta * s) * (1 + D0.Research.CondensedPrice.tailRatio Z r beta s)
+'D0.Research.CondensedPrice.partition_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.source_tail_form (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) :
+  D0.Research.CondensedPrice.heatSource Z r beta s = -1 / (1 + D0.Research.CondensedPrice.tailRatio Z r beta s)
+'D0.Research.CondensedPrice.source_tail_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.source_tail_error_bounds (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) :
+  0 < D0.Research.CondensedPrice.heatSource Z r beta s + 1 ∧
+    D0.Research.CondensedPrice.heatSource Z r beta s + 1 ≤ D0.Research.CondensedPrice.tailRatio Z r beta s
+'D0.Research.CondensedPrice.source_tail_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.normalized_heat_identity (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) (hb : beta ≠ 0) :
+  D0.Research.CondensedPrice.heat Z r beta s - beta⁻¹ * Real.log r =
+    -s + beta⁻¹ * Real.log (1 + D0.Research.CondensedPrice.tailRatio Z r beta s)
+'D0.Research.CondensedPrice.normalized_heat_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.normalized_heat_error_bounds (Z r beta s : ℝ) (hZ : 0 < Z) (hr : 0 < r) (hb : 0 < beta) :
+  0 < D0.Research.CondensedPrice.heat Z r beta s - beta⁻¹ * Real.log r + s ∧
+    D0.Research.CondensedPrice.heat Z r beta s - beta⁻¹ * Real.log r + s ≤
+      beta⁻¹ * D0.Research.CondensedPrice.tailRatio Z r beta s
+'D0.Research.CondensedPrice.normalized_heat_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.affine_state_gap_source (Z r beta s v feedback : ℝ) (hZ : 0 < Z) (hr : 0 < r)
+  (hb : beta ≠ 0) :
+  HasDerivAt (fun x => D0.Research.CondensedPrice.heat Z r beta (s + v * x) + feedback)
+    (D0.Research.CondensedPrice.heatSource Z r beta s * v) 0
+'D0.Research.CondensedPrice.affine_state_gap_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.complete_scalar_price_jet_fibre (Z r beta s feedback a : ℝ) (hZ : 0 < Z) (hr : 0 < r)
+  (hb : beta ≠ 0) : ∃ v, HasDerivAt (fun x => D0.Research.CondensedPrice.heat Z r beta (s + v * x) + feedback) a 0
+'D0.Research.CondensedPrice.complete_scalar_price_jet_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.actual_phi_scale_ratio (n : ℕ) :
+  D0.Spectral.CanonicalRefinementScaleFlow.Lambda (n + 1) / D0.Spectral.CanonicalRefinementScaleFlow.Lambda n = D0.phi
+'D0.Research.CondensedPrice.actual_phi_scale_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.actual_phi_gt_one : 1 < D0.phi
+'D0.Research.CondensedPrice.actual_phi_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.fixed_phi_shape_source (Z beta s feedback : ℝ) (hZ : 0 < Z) (hb : beta ≠ 0) :
+  HasDerivAt
+    (fun x => D0.Research.CondensedPrice.heat (Z + 5 * Real.exp (-beta * D0.phi)) 60 beta (D0.phi * x) + feedback)
+    (D0.phi * D0.Research.CondensedPrice.heatSource (Z + 5 * Real.exp (-beta * D0.phi)) 60 beta (D0.phi * s)) s
+'D0.Research.CondensedPrice.fixed_phi_shape_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.fixed_phi_shape_source_nonzero (Z beta s : ℝ) (hZ : 0 < Z) :
+  D0.phi * D0.Research.CondensedPrice.heatSource (Z + 5 * Real.exp (-beta * D0.phi)) 60 beta (D0.phi * s) ≠ 0
+'D0.Research.CondensedPrice.fixed_phi_shape_source_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.fixed_budget_mode_minimum (beta lam ceiling : ℝ) (hb : 0 < beta) (hl : lam ≤ ceiling) :
+  Real.exp (-beta * ceiling) ≤ Real.exp (-beta * lam)
+'D0.Research.CondensedPrice.fixed_budget_mode_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.fixed_budget_mode_equality (beta lam ceiling : ℝ) (hb : 0 < beta) :
+  Real.exp (-beta * lam) = Real.exp (-beta * ceiling) ↔ lam = ceiling
+'D0.Research.CondensedPrice.fixed_budget_mode_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.fixed_budget_partition_minimum.{u_1} {c : Type u_1} [Fintype c] [DecidableEq c]
+  (beta ceiling : ℝ) (lam : c → ℝ) (hb : 0 < beta) (hl : ∀ (i : c), lam i ≤ ceiling) :
+  ↑(Fintype.card c) * Real.exp (-beta * ceiling) ≤ ∑ i, Real.exp (-beta * lam i)
+'D0.Research.CondensedPrice.fixed_budget_partition_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.CondensedPrice.fixed_budget_partition_equality.{u_1} {c : Type u_1} [Fintype c] [DecidableEq c]
+  (beta ceiling : ℝ) (lam : c → ℝ) (hb : 0 < beta) (hl : ∀ (i : c), lam i ≤ ceiling) :
+  ∑ i, Real.exp (-beta * lam i) = ↑(Fintype.card c) * Real.exp (-beta * ceiling) ↔ ∀ (i : c), lam i = ceiling
+'D0.Research.CondensedPrice.fixed_budget_partition_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.archive_record_kernel_projectively_compatible (n : ℕ) (x y : D0.ArchivePoints (n + 1)) :
+  (D0.archiveSpectralStage (n + 1)).Delta x y =
+    (D0.archiveSpectralStage n).Delta ((D0.archiveSpectralProjection n).map x) ((D0.archiveSpectralProjection n).map y)
+'D0.archive_record_kernel_projectively_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.archive_projection_surjective (n : ℕ) : Function.Surjective (D0.archiveProjection n)
+'D0.archive_projection_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.archive_tower_defines_profinite_object : D0.DefinesProfiniteObject D0.archiveProfiniteSystem
+'D0.archive_tower_defines_profinite_object' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.archiveFintypeDiagram_succ (n : ℕ) :
+  D0.archiveFintypeDiagram.map (CategoryTheory.homOfLE ⋯).op = FintypeCat.homMk (D0.archiveProjection n)
+'D0.archiveFintypeDiagram_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.archiveDiagram_transition_surjective (n : ℕ) :
+  Function.Surjective
+    ⇑(CategoryTheory.ConcreteCategory.hom (D0.archiveFintypeDiagram.map (CategoryTheory.homOfLE ⋯).op))
+'D0.archiveDiagram_transition_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Spectral.CanonicalRefinementScaleFlow.scale_ratio_forced (N : ℕ) :
+  D0.Spectral.CanonicalRefinementScaleFlow.Lambda (N + 1) / D0.Spectral.CanonicalRefinementScaleFlow.Lambda N = D0.phi
+'D0.Spectral.CanonicalRefinementScaleFlow.scale_ratio_forced' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.CompatibleOperatorFamily (S : D0.ProjectiveSystem) : Type
+'D0.CompatibleOperatorFamily' depends on axioms: [propext, Quot.sound]
+D0.inducedLimitOperator {S : D0.ProjectiveSystem} (F : D0.CompatibleOperatorFamily S) (x : D0.ProfinitePoint S) :
+  D0.ProfinitePoint S
+'D0.inducedLimitOperator' depends on axioms: [propext, Quot.sound]
+D0.archiveLightProfinite : LightProfinite
+'D0.archiveLightProfinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+structure D0.CompatibleOperatorFamily (S : D0.ProjectiveSystem) : Type
+number of parameters: 1
+fields:
+  D0.CompatibleOperatorFamily.op : (n : ℕ) → S.Stage n → S.Stage n
+  D0.CompatibleOperatorFamily.natural : ∀ {m n : ℕ} (h : n ≤ m) (x : S.Stage m),
+      S.proj h (self.op m x) = self.op n (S.proj h x)
+constructor:
+  D0.CompatibleOperatorFamily.mk {S : D0.ProjectiveSystem} (op : (n : ℕ) → S.Stage n → S.Stage n)
+    (natural : ∀ {m n : ℕ} (h : n ≤ m) (x : S.Stage m), S.proj h (op m x) = op n (S.proj h x)) :
+    D0.CompatibleOperatorFamily S

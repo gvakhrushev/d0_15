@@ -2,7 +2,7 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Snapshot:** 2026-10-15; accepted `main` `fa2b04b9c8aae5a0b8470322d6091712ce56567a`
+**Snapshot:** 2026-10-16; accepted baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334)
 
 ## Current route to general relativity
 
@@ -58,6 +58,31 @@ The [research dependency graph](https://github.com/gvakhrushev/d0_15/blob/f0a6a8
 retains scientific history; its root source pin and older next-step prose lag
 later packets. It is not copied into main as a competing current task registry.
 
+### Consumed native/source synthesis — 2026-10-16
+
+The [current joint-response synthesis](MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md#current-synthesis-and-the-original-terminal-2026-10-16)
+in Draft #334 preserves the entire research input `4d19564d` from the
+closed #310 branch while retaining accepted #330/#332/#333. Its
+[consumer map](MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md#accepted-support-at-the-continuation-baseline)
+places preparation second variation, the full shape/measure covector and
+finite source reflection in the common argument with their remaining premises.
+
+For the bounded stored-native v8 family, the operator, literal program,
+heat/feedback/matter price and first/second source jets now intertwine on
+the whole declared class. That conditional operator/program arrow is proved;
+it does not select physical primitives or the complete native Cost−Info action.
+The concurrent [exact same-price unfolding](A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md)
+removes the mathematical heat-density/feedback-precision blocks with their
+actual source and Schur terms; its auxiliary inverse bounds leave the
+physical field block unresolved. It introduces no physical Gibbs preparation.
+A genuine curved row-wave has an exact full128 matter second lift, but its
+complete price Hessian is positive on that first velocity, so it cannot
+be repaired by acceleration
+alone. The next finite calculation is the complete joint Euler kernel with
+link/observer/preparation terms. The independent physical-admission and
+refinement obligations, and the original fixed-source/raw-norm terminal,
+remain open. Do not restart the already owned root search or a family census.
+
 ### Two linked scientific fronts
 
 | Front | Next bounded output | Where it is consumed |
@@ -88,8 +113,9 @@ not supply an independently fixed-source joint metric/matter solution.
    each usable result immediately and records the remaining premise in the
    existing parent memo/PR. No parallel progress registry or new census is needed.
 
-Reuse the existing #310 execution for its registered native/response obligation;
-do not open a competing execution under a new label. #202 keeps its full-affine
+Continue the registered native/response obligation in [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334).
+Historical #310 is closed without merge; its later source `4d19564d` is
+preserved in the continuation. Do not reopen #310 or launch a duplicate. #202 keeps its full-affine
 stationarity scope; #317 keeps its full complex stratification scope. Use their
 proved inputs, and request only the additional lemma consumed by the current
 argument. Do not falsely retire them or require an exhaustive classification

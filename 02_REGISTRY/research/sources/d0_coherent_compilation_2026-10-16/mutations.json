@@ -1,0 +1,30 @@
+{
+  "mutations": [
+    {
+      "check": "coherent_completion_all_input_vectors",
+      "name": "wrong_completion_direction",
+      "result": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "check": "same_comparator_metric_after_compilation",
+      "name": "frozen_completion_jet",
+      "result": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "check": "AF_dimensions_2",
+      "name": "wrong_AF_path_carry",
+      "result": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "check": "exact_full_code_shift",
+      "name": "unequal_cost_code_block",
+      "result": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "check": "normalized_complete_price_constant_shift",
+      "name": "frozen_probability_denominator",
+      "result": "REJECTED_BY_MATHEMATICS"
+    }
+  ],
+  "schema": "d0-coherent-compilation-mutations/1"
+}

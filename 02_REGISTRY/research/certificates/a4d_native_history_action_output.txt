@@ -1,0 +1,42 @@
+D0.Research.NativeHistoryAction.completeAdditiveFiber :
+  D0.Research.NativeHistoryAction.AdditiveAction ≃ (D0.Research.NativeHistoryAction.Edge → ℝ)
+D0.VNext2.SceneHistoryPerronTrace.scene_history_perron_trace_owner :
+  (∀ (v : Fin 33), D0.Claims.zone31 v = 0 → D0.VNext2.SceneHistoryPerronTrace.m1 v = 24) ∧
+    (∀ (v : Fin 33), D0.Claims.zone31 v = 1 → D0.VNext2.SceneHistoryPerronTrace.m1 v = 22) ∧
+      (∀ (v : Fin 33), D0.Claims.zone31 v = 2 → D0.VNext2.SceneHistoryPerronTrace.m1 v = 20) ∧
+        (∀ (v : Fin 33), D0.Claims.zone31 v = 0 → D0.VNext2.SceneHistoryPerronTrace.m2 v = 502) ∧
+          (∀ (v : Fin 33), D0.Claims.zone31 v = 1 → D0.VNext2.SceneHistoryPerronTrace.m2 v = 476) ∧
+            (∀ (v : Fin 33), D0.Claims.zone31 v = 2 → D0.VNext2.SceneHistoryPerronTrace.m2 v = 458) ∧
+              ∑ v, D0.VNext2.SceneHistoryPerronTrace.m2 v = 15708 ∧
+                D0.VNext2.SceneHistoryPerronTrace.Adj31Sq 0 0 / D0.VNext2.SceneHistoryPerronTrace.m2 0 ≠
+                  D0.VNext2.SceneHistoryPerronTrace.fullTransportSq 0 0
+'D0.Research.NativeHistoryAction.edges_of_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.additive_value_forced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.extension_of_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.completeAdditiveFiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.native_history_family_domain' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeHistoryAction.scene_protocol_verified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.protocol_edges_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.full_positive_edge_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.primitive_cost_cannot_forget_return' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryAction.unit_edge_action_eq_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.coboundary_telescopes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.conditional_edge_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.perron_log_edge_is_length_plus_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryAction.perron_path_log_telescopes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.equal_length_endpoints_have_equal_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryAction.positive_symmetric_coboundary_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryAction.canonical_scene_edge_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.perron_root_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryAction.perron_uniform_two_step_lower_arithmetic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryAction.normalized_constant_reading' depends on axioms: [propext, Classical.choice, Quot.sound]

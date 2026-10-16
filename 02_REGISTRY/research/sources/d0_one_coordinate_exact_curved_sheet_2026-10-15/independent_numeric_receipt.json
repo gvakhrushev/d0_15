@@ -1,0 +1,7 @@
+{
+  "numerical": {
+    "inverse_Jacobian_error": 1.2357375123173142e-09,
+    "status": "FLOATING_DIAGNOSTIC_NOT_INTERVAL"
+  },
+  "scope": "EXACT_NONLINEAR_ONE_COORDINATE_CONNECTION_SHEET_NOT_FULL_D0_OR_FULL_4D_TERMINAL"
+}

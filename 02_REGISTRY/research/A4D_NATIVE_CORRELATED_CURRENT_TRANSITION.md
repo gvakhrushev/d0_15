@@ -1,0 +1,571 @@
+# Full correlations: covariant CAR current and the necessary interaction
+
+Research continuation, 2026-10-13. Input SOURCE
+`074b4223c0cae4aa5b1ad379dcd0a78930da1179`; existing #310 and CONTROL #322.
+The previous turn was progress: it supplied exact collision/history evidence.
+This packet retains the full objective and original #310/#202/#317 terminals.
+No new action, selector, physical clock, refinement trigger or CORE claim is
+installed. An explicit reading of existing CAR composites is constructed;
+its physical admission and selection remain separate obligations.
+
+There are three linked results. First, the previous tensor-marginal Pauli
+reading fails the actual spatial covariance test. Second, preserving only
+spectator/archive inner products cannot repair the entire current P1/top
+endpoint chart, even with arbitrarily growing memory. Third, full native CAR
+correlations supply a covariant causal current and an indefinitely timelike
+golden component. In the actual homogeneous stored-operator class its full
+heat derivative is strictly positive at fixed beta=log(2), uniformly in L.
+This is a concrete source component, not a proof of native on-shell admission.
+
+## 1. Owners and the covariance lost in a tensor marginal
+
+Keep the exact full-sixteen Fock carrier, ACDB/ABCD sign conventions, golden
+fullStep and apparatus4 tensor spectator4 change of coordinates in
+[reference/memory preparation](A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md).
+At fixed rest q=eta, observer n=e0 and top reference Omega, every proper
+spatial rotation R acts in this apparatus as
+
+    I_apparatus tensor (1 direct-sum R).
+
+Consequently the system density obtained by tracing out the record and all
+spectators is unchanged. This is true for every full state, not just the seed.
+Any SO(3)-equivariant Role-vector reading depending only on
+(q,n,Omega,system density) must have zero spatial part: the rotation stabilizer
+fixes its arguments and fixes only the line spanned by n in the vector fibre.
+Its normalized observer pairing is therefore precisely h(n). A general
+symmetric positive vector pairing in this same class can only have one
+temporal and one spatial scalar; cross terms and spatial shape vanish.
+
+The old Pauli substitution j=(1,0,0,p^3) fails this test. A rotation exchanging
+e1 and e3 keeps its system density fixed but moves its asserted spatial axis.
+Its observer pairing must move the mixed temporal/spatial entry -1/2,
+whereas the old reading leaves that entry in the e3 position. Physical time
+reflection gives another exact control, but the proper spatial counterexample
+already suffices. This is a complete stabilizer result for marginal-only
+readings. Full spectator correlations, an explicitly retained spatial frame,
+or other owned arguments lie outside it and are not excluded.
+
+## 2. Passive archive preservation fails the complete fresh-top chart
+
+Let M_j be the current W-normalized four apparatus rows with every spectator
+coordinate retained. Allow any finite dimension d_j, any state-dependent
+isometry V_j:C^d_j -> C^d_(j+1), and the entire endpoint frame intertwiner
+class considered in the preceding proof:
+
+    M_(j+1)=U_C M_j V_j*,
+    U_C=diag(Rplus,Rminus),
+    Rplus=[[a,-p],[p,a]], Rminus=[[a,-p],[-p,-a]],
+    a>0, a^2=p, p>0, p+p^2=1, V_j* V_j=I.          (1)
+
+This includes arbitrary O(4)/U(4) spectator mixing, enlarging the archive,
+and arbitrary true W-normalized endpoint frames. It does not include
+apparatus/spectator interactions that change the apparatus Gram. Such an
+interaction is precisely what a positive continuation must derive.
+
+The Gram S_j=M_j M_j* obeys S_(j+1)=U_C S_j U_C*, independently of V_j.
+The actual self-conditioned chart B(q,m) requires in its distinguished
+scalar column that row0=(x,0,...), row1,0=y>0 and row3,0=z>0. These conditions
+come respectively from aligning P1(m) with n, normalizing its future first
+grade, and freshly normalizing the current top grade. Thus
+
+    h_j=Re[(S_j)_01 conjugate((S_j)_03)]=|x|^2 y z >=0, (2)
+
+strictly if row0 is nonzero. No whole-blank condition is imposed on M_0.
+An independently retained old top reference changes (2) and is not covered.
+
+Put Q=Rplus^2. On even ticks Rminus^(2m)=I. If A is the initial upper
+two-by-two Hermitian block and b its cross column to apparatus row3, then
+
+    h_(2m)=Re[(Q^m A (Q^m)^T)_01 conjugate((Q^m b)_0)].
+
+The frequencies are those of Q and Q cubed. Their exact annihilator is
+
+    P(t)=(t^2-2p^3 t+1)(t^2-2(130p-81)t+1)
+        =t^4+c1 t^3+c2 t^2+c1 t+1,
+    c1=164-264p>0, c2=1366-2208p>0.                 (3)
+
+Hence for every initial Hermitian A and complex b,
+
+    h8+c1 h6+c2 h4+c1 h2+h0=0.                     (4)
+
+One can obtain (3) by the triple tensor representation of Q: its eigenvalues
+are exp(+/- i theta), with cos(theta)=p^3; the cube has cosine
+4(p^3)^3-3p^3=130p-81. The checker instead verifies (4) symbolically for
+arbitrary real and imaginary coefficients, so no irrational-angle premise
+is required. Positivity follows from p<41/66 and p<683/1104; substituting
+those numbers in t^2+t-1 gives 31/4356 and 1705/1218816.
+
+At least one of h0,h2 is strictly positive on an admitted path. If row0
+initially vanishes, the first row of Q=(2p-1,-2ap;2ap,2p-1) gives row0 at
+tick2 as -2ap times the nonzero initial row1, followed by an isometry.
+Thus row0 cannot vanish at both ticks. Equations (2)-(4) contradict existence
+of the chart at ticks 0,2,4,6,8. The entire class (1) has no eight-tick path
+satisfying (2). Several independent scalar archive slots with a different
+current-field reading are outside this distinguished-scalar-line chart.
+Adding heat/observable constraints cannot enlarge it. This does not exclude
+genuine native interactions changing S_j, a retained orientation interface,
+or other admitted readouts, and is not a global D0 NO-GO.
+
+## 3. A current using the actual full CAR correlations
+
+Let W>0 be the full exterior pairing induced by the retained observer u,
+including any common positive site density. Write C(v) for the actual
+exterior creator and A_G(v)=C(v)^dagger for its pairing adjoint. The actual
+CAR give {C(v),A_G(w)}=G(v,w)I. For G(u,u)=1 and v perpendicular to u put
+
+    beta_u=C(u)+A_G(u),
+    gamma_v=C(v)-A_G(v), alpha_u(v)=beta_u gamma_v.    (5)
+
+Here beta is selfadjoint, gamma is skew-adjoint, and they anticommute.
+Consequently alpha is selfadjoint and
+
+    alpha_u(v) alpha_u(w)+alpha_u(w) alpha_u(v)
+       =2G(v,w)I.                                    (6)
+
+Using two positive Euclidean fockGamma operators instead would give a
+skew-adjoint product and a zero real quadratic reading. The sign in (5)
+is therefore tested against the literal creation/annihilation matrices.
+All sixteen components are retained.
+
+For any nonzero full m, define b in the spatial complement by
+
+    G(b,v)=<m,alpha_u(v)m>_W / <m,m>_W,
+    J=u+b.                                           (7)
+
+Equation (7) is basis independent. It is a reading of explicit owned CAR
+composites, not the earlier two-by-two tensor marginal. For a unit spatial
+v, (6) gives alpha(v)^2=I, so Cauchy--Schwarz bounds its normalized expectation
+by one. Choosing v along b gives G(b,b)<=1. The physical Lorentz form ell
+whose observer pairing is G satisfies
+
+    ell(J,J)=1-G(b,b)>=0, ell(u,J)=1.
+
+Thus J is future causal relative to the retained reference, and it is
+timelike precisely when G(b,b)<1. Equality means m is an eigenvector of
+alpha along b; it is not excluded on the whole state space.
+
+Creators, their genuine adjoints and exterior frame lifts transform together.
+Under any invertible coordinate frame E, with ell/G/u/m all transported,
+alpha transforms by Lambda(E) conjugation and the expectation is invariant.
+Therefore J transforms as a vector. This includes joint Lorentz covariance,
+not merely one sampled rotation. Keeping the retained reference fixed while
+transforming the matter alone is a different experiment.
+
+The map requires its retained u. Its existence does not prove that M1 selects
+it uniquely among all possible full-state readings, or grant its physical
+operation admission. Neither an external axis nor an independently adjusted
+coefficient is used in (5)-(7).
+
+## 4. An all-time timelike component on the actual golden apparatus
+
+Use the existing whole-blank isometry B with nonzero entries
+
+    B_0,0=B_14,0=1/sqrt(2), B_3,1=B_13,1=1/sqrt(2),
+    m0=B(x,y), x^2+y^2=1.                            (8)
+
+Take the original rest fullStep U and retained u=e0. Its full cyclic space
+is the eight occupation masks 0,1,2,3,12,13,14,15. On this space alpha_1
+commutes with U^2; alpha_2 and alpha_3 have zero compressed expectation.
+Direct CAR calculation gives, for every integer tick j>=0,
+
+    J_(2j)=e0, J_(2j+1)=e0+2xy e1,
+    ell(J_(2j+1),J_(2j+1))=(x^2-y^2)^2.             (9)
+
+This is an all-time invariant-space proof, not extrapolation from finitely
+many ticks. At the existing golden weights x=a,y=p the odd norm is p^6>0,
+and the squared spatial current is 4p^3, the literal two-tick feedback
+eigenvalue. The normalized observer form
+
+    h_J=-eta+2(eta J)(eta J)^T/(J^T eta J)             (10)
+
+is I at even ticks. At odd ticks its eigenvalues are
+K,K^-1,1,1, where K=(1+2ap)/(1-2ap). Exact golden bounds give 60<K<80.
+The full orbit is uniformly inside the timelike domain, although its old
+P1/top-grade reading fails. This is a positive correlated-current sector;
+it is not a solution of that old chart by reinterpretation.
+
+Use the same normalized owned preparation curve
+
+    u(t)=(1-t^2)/(1+t^2), v(t)=2t/(1+t^2),
+    x(t)=a u(t)-p v(t), y(t)=p u(t)+a v(t).           (11)
+
+It is timelike for every tick throughout |t|<=1/100. For example
+x-y >=7719/80008>0, using 3/5<p<5/8 and 3/4<a<4/5.
+Both x,y remain positive by the preceding preparation bounds. Equation (9)
+then gives a uniform nonzero norm and a uniform pairing bound for this whole
+interval. At t=0 put r=2xy; r=2ap and r'=4p^3>0.
+
+## 5. Genuine first variation and the homogeneous native operator
+
+In a fixed rest frame, r_i=<m,alpha_i m>/N, N=<m,m>, and
+
+    delta r_i=2 Re<delta m,(alpha_i-r_i I)m>/N.        (12)
+
+The denominator term is essential. On jointly moving fields there are also
+the complete delta-W, delta-alpha and reference-frame terms. They follow by
+differentiating (5)-(7), including A_G=W^-1 C* W; none is set to zero on a
+physical metric variation. For ell/J the full derivative of (10) likewise
+retains the numerator and delta(J^T ell J). Simultaneous frame motion is an
+internal covariance identity, not a matter equation or a physical Ward theorem.
+
+There is an exact binding to an already owned operator on a precise component.
+At homogeneous F=eta, raw q=eta, identity links and zero translations, all
+legs v_r=e_r are constant. Take the homogeneous observer n_J=J/sqrt(k),
+pairing h_J and the actual stored d/ell from
+[joint adjoint source](A4D_NATIVE_JOINT_ADJOINT_SOURCE.md). Its complete edge
+criterion is satisfied for every t in (11). Thus ell=d^dagger and its full
+Fourier square, on all sites and all sixteen grades, is
+
+    Delta(k)=lambda_k I16, lambda_k=z(k)* h_J z(k),
+    z_r(k)=L(exp(2pi i k_r/L)-1).                    (13)
+
+No unrelated scalar Laplacian is substituted. This identifies operators on
+this homogeneous component; it does not identify every Hodge binding with
+the native scene D or derive the physical preparation selecting (7).
+
+The full heat term is H=beta^-1 log(16 sum_k exp(-beta lambda_k)). On the odd
+component let K=(1+r)/(1-r), K'>0. With
+A=|z0-z1|^2 and B=|z0+z1|^2,
+
+    lambda=(K/2)A+(1/(2K))B+|z2|^2+|z3|^2,
+    H'=-(K'/2) E_beta[A-K^-2 B].                    (14)
+
+Both transverse heat factors and the sixteenfold multiplicity cancel from
+this derivative, not from the full price.
+
+## 6. A fixed-beta source bound, uniform in every L>=2
+
+At the golden point 60<K<80 and beta=log(2) lies between 1/2 and 1.
+Let d(k)=min(k,L-k). The elementary sine bounds give
+
+    16d(k)^2<=|z(k)|^2<=4pi^2 d(k)^2.
+
+For the folded difference l=k0-k1 mod L the same bounds apply to A.
+The heat is at least KA/2 and at least K^-1(|z0|^2+|z1|^2), hence
+
+    beta lambda>=120d(l)^2+d(k0)^2/20.
+
+On off-diagonal modes A>0, therefore
+
+    sum_off A exp(-beta lambda)
+      <=8pi^2 [sum_(d>=1) d^2 exp(-120d^2)]
+                    [1+2sum_(n>=1) exp(-n^2/20)]
+      <16896/2^30.                                  (15)
+
+Indeed the Gaussian sum is bounded by its decreasing-function integral,
+giving the second bracket <11. With t=exp(-120)<1/2 the first sum is
+at most sum d^2 t^d=t(1+t)/(1-t)^3<12t. Use pi<4 and
+exp(-120)<2^-30. These are bounds on the entire mode set, uniform in L.
+
+The single diagonal mode k0=k1=1 has A=0,
+64<=B<=16pi^2<256; lambda=B/(2K)<256/120<3.
+Thus its negative contribution has magnitude at least
+
+    K^-2 B exp(-beta lambda)>64/(80^2*27)=1/2700,     (16)
+
+using exp(3)<27. All other diagonal contributions have the same sign; the
+negative off-diagonal B terms may be discarded for an upper bound. Exact
+rational comparison of (15)-(16) yields
+
+    sum_(k0,k1)(A-K^-2B)exp(-beta lambda)<-1/3000.
+
+Also lambda>=K^-1(|z0|^2+|z1|^2), so its two-coordinate partition is
+less than [1+2sum_(n>=1) exp(-n^2/10)]^2<81.
+Consequently the complete derivative satisfies
+
+    H'(0)>K'/486000>0, for every L>=2 at beta=log(2). (17)
+
+The deliberately loose constants avoid a mesh-dependent beta or a numerical
+sign test. The bound applies in particular to every required L in 4N.
+The all-L sine/Gaussian argument is analytic; exact rational steps and full
+finite Fourier controls are separately checked. No normalization/readout
+transfer or continuum physical source is inferred from (17).
+
+## 7. Complete feedback and the remaining native source arrow
+
+At every point of this homogeneous observer family, use the actual
+U(h_J,n_J), P=I-N and its genuine full W-adjoint. For the literal two equal
+current-observer ticks, the full sixteen-component fibre pencil is
+
+    det(I-z F_2)=(1-4zp^3)^4.
+
+On the complete periodic carrier the operation and cut act identically at
+all L^4 sites. Therefore the full retained pencil is
+`(1-4zp^3)^(4L^4)`, with 12L^4 zero-feedback directions retained.
+
+Both complete pencils have zero derivative along (11). Combined with (17), the existing
+heat-plus-feedback functional on this explicit static interface therefore
+has strictly positive derivative along the actual full matter curve.
+Its stationary set excludes that golden point if this curve is admitted
+and all remaining price terms have zero derivative on the same curve.
+A remaining term must supply the negative of (17) through its own equations;
+no compensator or source is fitted.
+
+These two equal ticks are a precisely specified feedback experiment. They
+are not silently substituted for the earlier genuinely misaligned sequence
+U_(n_next)U_(n_current) with its original retained cut. That chronology has a
+separate nonconstant price and must enter the native preparation if used.
+
+The original-observer route now has a separate exact owner in
+[the chronological stationary-descent packet](A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md).
+It keeps that moving first-grade observer, the solved next metric and the
+original retained cut, and computes the full sixteen-grade pencil for the
+two actual successive gates. In its complete regular chart, an admitted
+scalar matter Euler equation for that feedback price implies that its whole
+feedback covector vanishes. This is conditional on admission and concerns
+the feedback term alone: it does not derive the heat source, a total
+stationary root, a physical Ward identity or an Einstein limit. The original
+observer/cut readout has not been identified with the separate CAR-current
+readout or with the base AF/CAR weld below.
+
+The next positive interaction must use full correlations and change the
+apparatus Gram or explicitly retain the old orientation interface; passive
+archive growth alone is insufficient by section 2. It must establish the
+joint physical admission of its reading, heat/feedback and refinements, and
+derive the complete source/Ward on genuine field variations. Quantitative
+contrast, native stationarity, curved joint roots, soundness/recovery, GR and
+the original fixed-source/raw-owner #310 terminal remain open.
+
+## 8. The existing record engines do not feed this current source
+
+This cross-owner continuation binds SOURCE baseline
+`39dbaecfb6e1c316c25c6d1898711a74164559ea`, on top of the original
+correlated-current input recorded at the head of this file.
+
+Compare the actual full-CAR current in sections 3–6 with the already owned
+[closed record engine](A4D_NATIVE_CLOSED_RECORD_ENGINE.md), rather than
+identifying their seeds by name. In occupation-mask coordinates let
+
+    V=span{e_0,e_1,e_14,e_15},   P_V be its orthogonal projector.
+
+The engine seed is `e_1+e_15`. For each of its two literal state-selected
+gates U_+ and U_-, the exact sixteen-column comparison with the native CAR
+gate gives
+
+    U_± V=V,   U_± V^perp=V^perp,
+    P_V alpha_i P_V=0, i=1,2,3.                       (18)
+
+Thus for every nonzero real m in V, not merely for sampled orbit states, the
+section-3 full-current readout at q=eta is J(m)=e_0. Its observer pairing is
+h_J=I. The engine's all-time seed orbit stays in S: the two gates preserve
+that sector, its first two coordinates follow the `lowerStep` recursion in
+the closed-engine Lean capsule, and the existing
+`every_seed_tick_regular` theorem keeps the state-selected sign defined.
+The distinct higher-grade records therefore evolve while this particular
+current, its observer pairing, the section-6 current-defined heat and the
+two-tick current feedback remain constant. For any differentiable matter
+variation confined to V at fixed geometry, the pullback of those
+current-mediated terms is zero. This says nothing about other native price
+terms that may depend on the retained record directly.
+
+The positive source in (17) belongs to a different state sector. The
+whole-blank curve B(x(t),y(t)) has support in masks 0,14,3,13; at the golden
+point its positive rescaling has coordinates m_0=m_14=a and m_3=m_13=p.
+It is outside V and fails the closed engine's own collinear-domain guard
+because m_3 is nonzero (its first-grade m_1 is also zero). The engine does
+not accept this source-active state as an input. Conversely, replacing the
+engine's state by the B curve is not one of its state-selected transitions.
+
+This is an exact decoupling result for the closed-record engine and the
+autonomous scene word: neither of those prepared seeds produces the positive
+source curve by itself. It does not exclude another already-owned recording
+operation or source term, and is not a NO-GO for the D0 core. The next
+subsection checks the existing Fibonacci recording owner directly. No
+interpolation or new physical selector is supplied here.
+
+The checker pins the engine and autonomous-scene programs, their exact
+checkers, Lean capsules, compiler outputs/results and proofs. It compares the
+engine's two signs on all sixteen columns, the complete 64-column scene word,
+both reducing blocks, the current compressions and the source-curve
+cross-sector decomposition; hostile controls reject false sector exit and
+false source vanishing. The engine's all-time step is inherited only through
+the pinned existing Lean theorem; finite orbit rows are regression controls,
+not the all-time argument.
+
+### The autonomous scene word also preserves the current-null sector
+
+The other existing engine is the fixed addressed word on all scene histories
+in [the autonomous scene owner](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md). On its
+local 64-dimensional carrier write
+
+    V_hat=R^{ {c,f} } tensor V,   V=span{e_0,e_1,e_14,e_15}.
+
+The exact 64-column word is orthogonal and preserves both V_hat and its full
+orthogonal complement. The existing prepared c=1 seed, with both f
+orientations populated, lies in S_hat. The actual scene program repeats this
+same block on all 359 reversal pairs (all 718 directed histories), so each
+complete state on the 22976-dimensional scene carrier remains in the repeated
+V_hat sector at every finite tick. The full current operator on this local
+carrier is `I_4 tensor alpha_i`; its compression to V_hat is zero for all
+three spatial components. Thus adding the actual scene memory, reversal flag
+and addressed forward word still does not generate the current-active
+component from this seed. The result concerns this exact existing word and
+seed, not every possible native scene interaction.
+
+### The positive current on the prepared curve is cross-sector
+
+For the section-6 source curve put `m(t)=U B(x(t),y(t))`,
+`m_V=P_V m` and `m_perp=(I-P_V)m`. Its norm is one. Exact substitution in the
+actual CAR matrices gives, for each spatial alpha_i and throughout the
+curve, `m_V^T alpha_i m_V=0` and
+`m_perp^T alpha_i m_perp=0`. Therefore
+
+    r_i(t)=2 m_V^T alpha_i m_perp,
+    (r_1(0),r_1'(0))=(2ap,4p^3),   r_2=r_3=0.       (19)
+
+On this candidate source, the response is carried entirely by coherence
+between the current-null sector and its complement. Neither the closed
+engine nor the autonomous scene word transfers its prepared seed out of the
+null sector, so neither owner by itself produces the nonzero term in (19).
+This sharpens the scoped decoupling: merely preserving and copying the
+engine record is insufficient for this particular readout. It does not
+exclude another native action term, another already-owned preparation, or a
+different source route.
+
+### The four-level Fibonacci recording construction has an exact base-level CAR weld
+
+The earlier [full recording inside the Fibonacci refinement](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md)
+proves that three AF inclusions are necessary and sufficient in its stated
+covariant four-copy GNS class. Its working module at AF level zero is
+`C^4 tensor H_0`, with `dim H_0=2`; it carries the same literal four-row
+`fullStep`, price cut `P4=diag(1,1,0,0)` and blank cut
+`B4=diag(1,0,1,0)` as the full CAR preparation. This is a four-level
+representation minimum in that class. The separate identity
+`Q(D)=phi^(D-4)` remains an algebraic normalization, not a derivation of
+four-dimensional spacetime.
+
+There is an exact operator weld at the first AF level. Write the existing
+CAR basis change from `A4D_NATIVE_REFERENCE_MEMORY_PREPARATION` as
+`C_frame=C.B0 (T^T tensor I_4)`. In its apparatus-major column order, let
+
+    K=C_frame[:, {4i+j : 0<=i<4, 0<=j<2}].
+
+Thus `K` keeps the two spectator columns `s=0,1`; its range is the eight-mask
+CAR invariant space
+`span{e_0,e_1,e_2,e_3,e_12,e_13,e_14,e_15}`. Let `V_AF` be the actual AF
+four-frame isometry at `n=0` from the Fibonacci-record activation owner, and
+put `Xi_0=K V_AF^T`. Exact multiplication gives
+
+    Xi_0 W_AF = U_CAR Xi_0,
+    Xi_0 P_AF = P_CAR Xi_0,
+    Xi_0 B_AF = B_CAR Xi_0,                          (20)
+
+with `Xi_0^T Xi_0` equal to the AF working-range projector. Thus this is a
+unitary identification of the complete eight-dimensional working module,
+not an equality of the 34-dimensional AF carrier and the full sixteen-state
+CAR carrier. The AF complement remains present, with its owned identity
+action; the CAR complement is outside this weld. In particular,
+`Xi_0 Xi_0^T=K K^T`, while `Xi_0^T Xi_0=V_AF V_AF^T`.
+
+The eight-mask space is not a reducing subspace for the entire CAR current:
+the exact leakage ranks are
+`rank((I-KK^T) alpha_i K)=(0,8,8)` for `i=1,2,3`. So (20) welds the
+record step and its cuts, while the source current is certified on the
+prepared orbit states through the full CAR readout. It does not yet extend
+the complete current-operator algebra across AF refinement.
+
+The feedback comparison also uses the actual AF complement. Write
+`Wbar=fullStep tensor I_2`, `Pbar=P4 tensor I_2`, and
+`G_2=Pbar (Wbar^2)^T (I-Pbar) Wbar^2 Pbar`. From the owned definitions
+`W_AF=V_AF Wbar V_AF^T+(I-V_AF V_AF^T)` and
+`P_AF=V_AF Pbar V_AF^T`, the full AF feedback is exactly
+`F_AF,2=V_AF G_2 V_AF^T`; it vanishes on the complement because the input
+cut `P_AF` has no support there. The exact check proves
+`G_2^2=(4p^3)G_2`, `rank(G_2)=2`, and
+`trace(G_2)/2=4p^3`. The CAR-side feedback intertwines through `K` as
+`F_CAR,2 K=K G_2`. Thus the shared coefficient is the eigenvalue of the
+owned two-tick feedback operator, not just a matching scalar in two formulas.
+
+Let `e_X,e_Y` be the normalized matrix-unit vectors of the two blocks of
+`H_0`. The whole-blank AF vector
+
+    psi_AF=V_AF(a e_0 tensor e_X+p e_2 tensor e_Y)
+
+maps exactly to the already owned CAR state `m_0=B(a,p)`. After one actual
+record step it maps to `U_CAR m_0`, whose full CAR current is
+`J=e_0+2ap e_1` and whose Lorentz norm is `p^6`. The same exact identities
+give
+
+    r_1'(0)=4p^3=L_AF=8 delta_0,
+    eta(J,J)=p^6=tau_6(e)=4 delta_0^2,
+    L_AF+eta(J,J)=1.                                  (21)
+
+Here `L_AF` is the owned two-tick feedback eigenvalue and `tau_6(e)` is the
+prepared AF corner weight. The operators, cuts, preparation vector and
+readout are fixed by existing owners; no coefficient is fitted. This
+closes the finite CAR/AF representation weld and gives an exact
+representation-level route from the base Fibonacci record to the
+source-active CAR sector.
+
+This weld is restricted to the base-level rest-frame eight-state subspace.
+It does not identify the AF complement with all sixteen CAR states, prove a
+refinement-compatible family `Xi_n` at every later AF depth, or admit the AF
+preparation as physical evolution. Nor does it supply the complete
+ten-component metric/source variation, Ward identity, stationarity, curved
+roots, soundness/recovery or GR. There is also a concrete refinement gate.
+For the actual PF-weighted one-step GNS bonds `J_n`, the passive first copy
+of the canonical AF frame is natural, but the three detail copies are not:
+
+    Delta_n=J_(n+3) V_n - V_(n+1) (I_4 tensor J_n),
+    (d_0,d_1,d_2)=(2,5,13),
+    (rank Delta_0,rank Delta_1,rank Delta_2)=(6,15,39)=3(d_0,d_1,d_2).
+
+These are exact ranks over the algebraic number field of the golden and
+normalizing coefficients. They rule out simply reusing the displayed
+canonical detail frames at every level; the defect itself is only a finite
+canonical-coordinate result.
+The full gauge question for **ordinary-bond naturality of four bimodule
+copies** is now settled by the scoped analytic no-go in
+[the AF limit-frame obstruction](A4D_NATIVE_FIBONACCI_LIMIT_FRAME_OBSTRUCTION.md):
+no allowed gauge-related frame family can be exactly natural in the standard
+multiplicity-one AF GNS limit. This does not rule out a different transition.
+
+The current/AF weld has also advanced beyond the fixed 16-state carrier: the
+[AF-CAR commutant boundary](A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md)
+now constructs a finite level-two weld on the two canonical old-`M2`
+bimodule corners. On its 32-dimensional active subspace it carries the
+doubled CAR current as an abstract operator, together with the actual record
+and cuts, the prepared blank, and the old right-`M2` action. An exact center
+test now shows that, for this fixed path
+binding, the full current components `alpha_1` and `alpha_3` cannot be
+extended as AF-left observables: they mix the two path labels that are the
+simple summands of `A_2`. Thus the Jones-tail step is downstream of finding
+an already owned joint AF/CAR observable or a compatible existing encoding;
+right-`M2` linearity alone does not supply that extension. The same owner now
+has a constructive level-three encoding: both old-`M2` copies sit in one
+`M_5` summand with a common right-column pair, and the full CAR current
+extends to an `A_9` corner as a right-`A_3` module observable. The owned
+all-level Jones homomorphism therefore transports this **operator corner** at
+every later level. A fixed-seed state test now compares the recorded CAR blank
+in regular `L^2(A_9,tau_9)` with the canonical Jones conditional vector
+`e/p^3`. The native source readout is `(1,2ap,0,0)`; the conditional vector
+reads `(1,0,0,0)`, and the source has exact off-corner mass
+`54-86p-94ap+58a-13*sqrt(2)+21*sqrt(2)*p+21*sqrt(2)*a-34*sqrt(2)*a*p`
+(`0.7295098177439909...`, `a=sqrt(p)`). Thus this owned preparation does not
+bind to the canonical conditional state under the fixed path identification.
+Other already-owned preparations, physical admission and the joint
+`(q,D,b,m)` pullback remain open.
+Throughout this proof `V` denotes
+the four-mask current-null space; the distinct ten-dimensional collinear
+carrier is `S` in the CAR joint-sector owner.
+
+## 9. Evidence boundary
+
+The accompanying exact checker retains literal CAR matrices, all components,
+the complex eight-tick identity, full orbit invariant spaces, rotations and
+joint nonrest frame covariance, true adjoints, genuine input derivatives and
+complete Fourier multiplicities. It also pins the AF activation owner and
+checks the explicit `Xi_0` intertwiners, prepared whole-blank vector, CAR
+source current and feedback-jet/corner identities. Its named narrow Lean
+kernels retain their actual propositions and transitive assumptions.
+Neither finite replay nor generic algebraic kernels replace the all-time/all-L
+proofs above or the missing physical admission, matter equations and
+all-level refinement transfer.
+
+Default replay is portable: it validates the immutable compiler output,
+actual proposition/axiom requests, complete SOURCE closure and archived
+object/runtime pin consistency without requiring the original machine's
+temporary overlay directories. On that machine, `--runtime-check` also
+hashes every actual object, the compiler binary and the preserved original
+cache. The original compilation and both audits are recorded; portable
+replay does not claim a new compiler execution on the CI runner.
