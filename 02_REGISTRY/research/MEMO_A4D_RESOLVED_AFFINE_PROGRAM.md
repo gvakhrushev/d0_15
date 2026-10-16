@@ -92,6 +92,16 @@ balances; the [coframe reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTR
 supplies the intrinsic Einstein covector under its geometric assumptions.
 Their physical source equality remains the common bridge.
 
+The [native coframe/source bridge](A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md)
+now embeds +omega_LC in the actual raising channel and computes its true
+curvature/torsion/density a2. Eight leading link equations leave16 tensor
+directions, with a next a4 curvature source and no nonzero constant tensor
+critical point for that coefficient. This is a derived operator result;
+scalar endpoint weights do not supply contorsion. Its exact feedback
+series retains the coefficients multiplying all geometric sources and
+actual matter, so the remaining finite-source/calibration proof cannot
+be replaced by selecting only a2 or adding a desired torsion term.
+
 The [full-price scale balance](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement)
 requires `M z beta Z<1`. Finite minmax, on uniformly controlled full16
 coefficients, gives `Z>=c/beta^2` independently of the integer record-depth

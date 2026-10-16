@@ -1,0 +1,100 @@
+{
+  "schema": "d0-native-coframe-heat-source-validation/1",
+  "publication_parent_ref": "158ae7858352c5c7ece44f565f6da0463b2e646a",
+  "observed_main_ref": "b478ac3c558058e0512d55bf67e90a58aafea035",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T18:58:21.247253+00:00",
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "new_scientific_outputs": {
+    "torsion_a2_gram_check.py": {
+      "result": "GRAM_RESULTS.json",
+      "exact_controls": 331,
+      "bytes": 7619,
+      "sha256": "a737b0c285cca3f0fea6d5d78c9a6e5d48fcaad3b5d2fc47c8cc557c643d3e2e",
+      "normal_optimized": "BYTE_IDENTICAL",
+      "command": "python3 02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/torsion_a2_gram_check.py",
+      "optimized_command": "python3 -O 02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/torsion_a2_gram_check.py"
+    },
+    "torsion_heat_consumer_check.py": {
+      "result": "KERNEL_RESULTS.json",
+      "exact_controls": 453,
+      "bytes": 2273,
+      "sha256": "4e3d8322e4ff6b51084ce3685a2d8027722caf8a5749387d723dd1933399cadc",
+      "normal_optimized": "BYTE_IDENTICAL",
+      "command": "python3 02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/torsion_heat_consumer_check.py",
+      "optimized_command": "python3 -O 02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/torsion_heat_consumer_check.py"
+    },
+    "ppwave_bridge_check.py": {
+      "result": "PPWAVE_RESULTS.json",
+      "exact_controls": 21,
+      "bytes": 2096,
+      "sha256": "7f1111c622ec40e43774a91191cc0069b3b4a225dc6af70ad9756bbb0f7056d9",
+      "normal_optimized": "BYTE_IDENTICAL",
+      "command": "python3 02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/ppwave_bridge_check.py",
+      "optimized_command": "python3 -O 02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/ppwave_bridge_check.py"
+    }
+  },
+  "analytic_proofs": {
+    "native_Lorentz_LC_raised_form_intertwiner": "Section2; independently derived and full16 exact pp-wave control",
+    "full24_torsion_and_density_source": "Section3; pointwise traced derivative cancellation plus full24 exact Gram",
+    "all_constant_tensor16_A4_critical_points": "Section5 analytic positivity/vacuum-cyclicity proof; not inferred from witness or census",
+    "full_price_coefficients": "Section6 exact finite feedback log series; C0,C2,C4 conditional on uniform trace and FIRST SOURCE expansion",
+    "bounded_Julia_window_for_examples": "Section2 scaling estimate for bounded fields/proper parallel transports; matrix domain only"
+  },
+  "independent_reviews": [
+    "native_bridge: Cartan sign, density, generic a2 proof, all-constant A4 theorem and full source coefficients PASS",
+    "geometry_consumer: native LC/pp-wave actual Bochner completions, exterior L_T counterexample and source-series typing PASS",
+    "capsule_check: full24 Gram/tensor/source/density/a4 and analytic consumer static review PASS"
+  ],
+  "scope": {
+    "all16_components_and_full_reference_kept": true,
+    "same_native_forward_true_positive_adjoint_family": true,
+    "new_action_or_residual_stress_added": false,
+    "all_constant_tensor_A4_coefficient_classified": true,
+    "variable_tensor_or_full_v8_stationarity_classified": false,
+    "native_generator_preparation_calibration_selected": false,
+    "uniform_finite_B_trace_and_source_limit_proved": false,
+    "original_fixed_g_fixed_tau_raw_terminal_closed": false
+  },
+  "original_user_text": {
+    "source_path": "/Users/grigorijvahrusev/.codex/attachments/1a6be941-3ea8-4a66-b9fc-dff36e053c49/Вставленный текст.txt",
+    "saved_as": "USER_INPUT_RU.txt",
+    "byte_identical": true,
+    "claims_adopted_without_derivation": false
+  },
+  "old_root_kernel_CAR65_89_211_or_Lean_replays": false,
+  "standard_reference": {
+    "url": "https://arxiv.org/pdf/hep-th/0306138",
+    "equations": [
+      "2.2-2.4",
+      "4.27",
+      "4.28"
+    ],
+    "use": "Laplace-type convention and a2/a4 formula; actual native coefficients derived here"
+  },
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": "c2ac4eb7b0832ea9b2c06cd04ab13c515ecffded7fe3d0a49e9f1f5bdc81df98",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md": "861eb7b753d333b8b51de55145a9a0078773854a74f0f619baa13056604d0eb9",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md": "e596c3d2ae0e15a17566f9cfe21b08db2f347faf2c1d2a8b066cf16a82acbedb",
+    "02_REGISTRY/research/MEMO_A4D_FINITE_GRADED_COFRAME_DRESSING.md": "980cff4e75588f3af5a401917470f586565fcd463cc1bdee1c0e828aa07bb334",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/GRAM_RESULTS.json": "a737b0c285cca3f0fea6d5d78c9a6e5d48fcaad3b5d2fc47c8cc557c643d3e2e",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/KERNEL_PREVIOUS_RESULTS.json": "09a4aa6dd94ef9646a68a09335ab118e070b51c6e5d6ff07a0554616fa2df4df",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/KERNEL_RESULTS.json": "4e3d8322e4ff6b51084ce3685a2d8027722caf8a5749387d723dd1933399cadc",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/PPWAVE_RESULTS.json": "7f1111c622ec40e43774a91191cc0069b3b4a225dc6af70ad9756bbb0f7056d9",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/README.md": "f3582eed2fc33fd9004aa7304da80a30028a6a497864a13486b6b80214608ab0",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt": "ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/ppwave_bridge_check.py": "e43ac9349ec4fc3a28578b4462c0f512312ea1157eb59d4d64a86d68d272e92b",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/torsion_a2_gram_check.py": "e5e8be6fdc750ef3b3b7dba80beaa1e288a7989ded34313cbd4b72dc8ac2a67d",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/torsion_heat_consumer_check.py": "a4a18ec70f364510244f2796763259a4e013c588c654a9f33dcbed7596311da9"
+  },
+  "structural_guards": {
+    "repository": "PASS warnings=0",
+    "work_plane": "PASS",
+    "agent_protocol": "PASS",
+    "generated_work_views": "PASS stale=0"
+  }
+}

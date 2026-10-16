@@ -143,6 +143,25 @@ hostile controls for reference/full trace, moving preparation, unrelated
 beta and coefficient-adjoint omission, plus independent analytic minmax
 review. No unchanged root/kernel/Lean replay or original terminal promotion.
 
+The coframe/source premise now has its own consuming derivation
+`A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md` and disjoint source folder
+`sources/d0_coframe_heat_source_2026-10-16/`. At the differential first
+jet it binds the reconstructed +omega_LC to the existing native raising
+channel, derives the complete24-component torsion/density a2 and follows
+its tensor16 kernel into the actual a4 source. It classifies all constant
+tensor critical points of A4, not the full H+J+R equations. Inputs are
+the unchanged full-Lorentz, coframe-reconstruction, exact-price-unfolding
+and source/dressing owners. The exact supplied text is preserved, while
+its scalar-weight/contorsion matching is tested and rejected. Consumer:
+actual source equality, with no added torsion/YM action, no fitted stress,
+all16/reference/matter terms and actual price coefficients retained.
+Smallest checks: full24 CAR Gram, tensor-kernel/density/a4 consumer and
+full16 pp-wave LC-sign/Bochner/exterior controls; independent analytic
+review of source coefficients and the constant-tensor theorem. Do not
+repeat unchanged roots or promote continuum coefficients to a finite
+source theorem. Remaining estimate: uniform finite-B trace AND first
+source approximation under the derived physical record/calibration law.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
