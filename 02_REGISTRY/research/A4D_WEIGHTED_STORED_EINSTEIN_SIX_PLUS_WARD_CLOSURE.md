@@ -1,5 +1,7 @@
 # D0 → Einstein: genuine weighted-adjoint clock restores both graviton polarizations and makes 6 Euler rows + Ward source-complete
 
+**SCIENTIFIC CORRECTION (17 October, consumed by A4D_WEIGHTED_STAR_CONFORMAL_ROOT_AND_OBSERVER_ACTION_REPAIR_2026_10_17.md):** The six weighted field directions and six+Ward source-completeness theorem below remain correct as **kinematic and conditional source statements**. The former §5A phrase claiming that merely pulling back the FULL-Lorentz #201/#216 Einstein-principal Hessian gives the actual **observer-preserving connection-eliminated** star Hessian is WITHDRAWN. These operations do not commute. On a full-weighted, regular nonconstant timelike conformal coframe with original stored link flat, the restricted canonical star has an exact CONTINUUM constrained stationary family while its intrinsic Lorentz Einstein tensor is nonzero; its conformal Hessian vanishes whereas EH kinetic Hessian is nonzero. Full physical Cost−Info with observer/retained terms could repair this but has NOT been selected. Do not cite this document as proof that D0 has two dynamically correct graviton polarizations or an Einstein physical action. The exact missing observer kinetic/source is now computed by the separately existing three-outcome full16 CAR observer record *as a mathematical candidate*, with genuine physical admission still open.
+
 17 October 2026. Scientific synthesis in EXISTING Draft PR #334 (EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE). Result class: EXACT WEIGHTED NATIVE JOINT-ADJOINT KINEMATICS / COMPLETE GENERIC LINEARIZED EINSTEIN SOURCE / NONLINEAR FIELD REALIZATION / SAME CANONICAL STAR CONSUMER.
 
 **Strict status.** This proves a major missing *physical-domain geometry/source-completeness interface*, NOT full D0⇒GR. Physical selection of the variable site weight/clock by the SAME native Cost−Info history, source of other fields, nonlinear exact joint stationarity/compactness and original h^-2 raw #216 terminal remain unproved. No action, coupling, detector, gate, new task/PR, BOOK/CORE/CLAIM or Einstein scalar is inserted.
@@ -145,7 +147,7 @@ REAL weighted native Hilbert pairing/self-adjointness
 
 No new physical scalar coupling or input EH action was used in the proved kinematic and algebraic links. Status OPEN for unconditional D0⇒GR, precisely for (a)–(d).
 
-## 5A. Not just kinematics: the EXISTING star action's actual two-derivative Hessian now carries BOTH gravitational waves
+## 5A. WITHDRAWN dynamical inference: unrestricted Lorentz Hessian is not the observer-preserving stored reduction
 
 The accepted canonical action S_star was chosen by Role-bivector spatial naturality, independently of this weighted construction. Merged #201 fixes its true Lorentz flat normal metric Hessian two-derivative coefficient \(T_1^{[2]}=\frac14E_\eta\); E-NJET establishes \(E_\eta=-2G^{(1)}_\eta\). Thus, up to the already fixed nonzero scalar, the principal quadratic Euler symbol of the SAME star action is exactly the linearized Einstein operator, not an added effective action.
 
@@ -157,7 +159,7 @@ On the weighted original finite action field chart (7), at the flat critical con
 \]
 This is **exactly symmetric**, rank4, and has a two-dimensional kernel. The fixed-weight old five-by-five restriction had rank4 and a one-dimensional kernel. Therefore BOTH standard massless graviton polarizations are present in the leading true selected-star Hessian *provided the positive node-weight selfadjoint class is physically admitted*. There is no new curvature action, no hidden scalar source and no arbitrarily added oscillator.
 
-This is substantially closer to GR than ten accessible metric symbols: it restores BOTH wave solutions of the original action's physical two-derivative principal equation. It still does not prove finite-h selfadjoint actuator/clock preparation, nonlinear constrained joint roots, uniform continuum Hessian including all resonances or the full physical Cost−Info = S_star identification. Nor does positive weighted Dirac automatically turn the v8 H+J+R into S_star.
+This is an algebraic restriction of the UNCONSTRAINED Einstein symbol, NOT a calculation of the actual observer-preserving stored connection-eliminated star Hessian. The exact conformal counterexample in the correction above invalidates that dynamical inference. It still does not prove finite-h selfadjoint actuator/clock preparation, nonlinear constrained joint roots, uniform continuum Hessian including all resonances or the full physical Cost−Info = S_star identification. Nor does positive weighted Dirac automatically turn the v8 H+J+R into S_star.
 
 A hostile control is decisive: freezing the original site weight \(u=0\) removes exactly the \(\eta\) row and returns the 5×5 Hessian with ONE surviving physical polarization. No additional arbitrary quantum-geometric measurement or better flat metric sampler can repair that dynamic absence.
 
