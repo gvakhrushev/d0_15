@@ -102,6 +102,48 @@ For literal L=4, nu=3/5, chi_0=+1:
 
 At fixed faithful INITIAL preparation this is its genuine one-round partial field covector; later n-round old-memory recycling, moved preparation, code, and clock contribute additional terms to the full Euler source. It is NOT an Einstein null source: all these spatially constant coframes are flat, EH curvature vanishes, while the metric/principal-symbol readout genuinely varies. That **negative control** protects the inference: (7) determines kinematics; the native positive heat operator plus observer/spin-source relation must supply actual curvature/dynamics.
 
+## 2.1. A stronger ORIGINAL CLOCK theorem for a complete retained tape
+
+The finite h readout in (4) is NOT merely a one-round O(h²) curiosity. A fixed Hadamard readdressing on each newly emitted 64-label register, before that register becomes old tape, preserves the exact REDUCED original 128-Kraus matter channel: a unitary on a fresh output commutes with partial tracing that output. Keep the entire tape and define the classical signed score
+
+    T_n=Σ_(j=1)^n [1_(fresh +chi at j)−1_(fresh −chi at j)].
+
+This is a complete, bounded-per-round function of the **entire** measured tape, not a postselected first exit or a new scalar Q entered into a gate. For the genuine unchanged reduced process rho_(j+1)=Phi_h(rho_j),
+
+    E[T_n]=Σ_(j=0)^(n−1) Tr(rho_j Z_chi).                    (11a)
+
+For each translationally invariant constant flat coframe, every literal native Kraus is block diagonal in Fourier momentum, and its complete sum is trace preserving ON EACH momentum block. The exact operator Z_chi(k) in (7) is scalar I16 on the SAME 16 CAR grades for every diagonal role amplitude nu_r. Hence for any initial fixed momentum weights (including full-rank faithful reference128/system shell)
+
+    Tr[rho_j(k) Z_chi(k)]=Tr[rho_0(k)] Z_chi(k)
+
+for ALL rounds j. This holds also under field changes within this class because each block trace is exactly unchanged: the often forgotten term Tr[(d rho_j) Z_chi] is zero by block trace preservation, NOT because we freeze moving preparation. Any independently chosen field-dependent INITIAL momentum weights or an actual non-momentum-conserving scene adds its source and is outside the stated theorem.
+
+For the original equal eight first-shell momenta ±e_r, system marginal rho0=I128/128 and native n_h=128/h² clock, let all nu_r=nu=3/5 at t=0 and vary only nu_0(t)=nu+t, with its TRUE moving Julia defect b_0(t)=sqrt(1−nu_0(t)²). Put w_h=4sin²(pi h). By (7) and its faithful eight-block average:
+
+    d_t E[Z_chi]|_0
+      =−(p² nu w_h/128)(1−nu² w_h/64) chi_0, chi_0=+1.
+
+The source of the **whole** unchanged-clock history (11a) is therefore EXACTLY
+
+    BOX: d_t E[T_(128/h²)]|_0
+        =−p² nu (w_h/h²)(1−nu² w_h/64).                   (11b)
+
+No extra h^-2 post-scaling of a short experiment was inserted: the factor
+n_h=128/h² is the **original actual golden tick count**. Since w_h/h²
+=4pi²+O(h²),
+
+    BOX: lim_(h->0) d_t E[T_nh]|_0
+        =−4pi² p² nu
+        =−9.047648221681405... ≠0.                       (11c)
+
+Literal exact-frequency source diagnostics:
+L=4: −7.251242757571996; L=8: −8.563708423613338;
+L=16: −8.924323566370775; L=32: −9.016668097442352;
+L=64: −9.039893837154407.
+The convergence is O(h²). The full128 tape has not been collapsed to a scalar H+J+R or replaced with classical independent bits; (11a) is an exact first moment identity of its recorded labels and original reduced matter evolution.
+
+**Scientific meaning:** a real *source-bearing* retained-record observable at the original fixed-beta clock now exists in a nontrivial coframe direction **without** an Einstein scalar oracle, field-dependent new SELECT or old-memory actuation. The original source is positive-metric KINEMATIC: these deformed constant coframes are flat, so their intrinsic Lorentz Einstein tensor is zero. The physically chosen full Cost−Info on the readdressed tape, genuine full source under a nonflat curved field, and matching to observer/reflected EH remain new named obligations. An output-basis Hadamard is a fixed CONTROL operation available in the mathematical Walsh grammar; its actual admission, preparation and complete code price are not inferred from this trace computation.
+
 ## 3. Four native Role bits and a 12-element PROPER golden-null orbit
 
 The 4 original Role sites can be labeled by r∈V=(Z/2Z)^2; three nontrivial Walsh characters chi_u(r)=(-1)^(u·r) form the three-dimensional signed readout space. Every permutation of the four Roles is affine r->Lr+b with L∈GL(2,2), b∈V (|AGL(2,2)|=24=S4). On nontrivial chi it sends
