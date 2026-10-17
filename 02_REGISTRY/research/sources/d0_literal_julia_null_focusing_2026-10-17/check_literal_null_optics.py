@@ -72,6 +72,8 @@ rho = sp.diag(sp.Rational(2, 3), sp.Rational(1, 3))
 q0 = sp.simplify(sp.trace(rho*(p*L).T*(p*L)))
 q1 = sp.simplify(sp.trace(rho*(sp.sqrt(p)*L).T*(sp.sqrt(p)*L)))
 require(sp.simplify(q1/(q0+q1)-p) == 0, "actual port constant")
+require(sp.simplify(q1-q0-p**3*(q0+q1)) == 0,
+        "literal golden port imbalance = p^3 times event")
 r, affine = sp.symbols("r affine", real=True)
 pw = p*(1-r*affine**2/2)
 q_toy = pw/(pw+p**2)
