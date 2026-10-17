@@ -177,3 +177,17 @@ $$
 Здесь A2(G,v)=−v A0(G), A0(G)=(det G)^{-1/2} times fixed flat-volume/multiplicity. Для v=0 скалярная кривизна flat G равна0 и A2=0, однако C1 source по G также контролируется H11. Выбрав n_h=round(h^{1/2}/epsilon_h), t_h=n_h epsilon_h≈h^{1/2}, три глубины n_h,2n_h,4n_h **ровно согласованы** и H11 даёт O(h) C1 error на этой declared class. В частности, прежняя §2 «ожидаемая достаточная шкала t≫h» здесь превращается в доказанное СУФФИЦИЕНТНОЕ правило (для homogeneous real SPD symbol only).
 
 **Не переносить H11 на curved coframe:** spatial links/variable metric, local coefficient A2(x), tensor16 connection directions, noncommuting matter and the true reference-preparation source require new variable-coefficient joint small-time estimates. И даже на flat class H11 вычисляет mathematical diagnostic, не доказывает физическую selection трех остановок или равенство текущей v8 fixed-beta цене.
+
+
+## 6. Немедленный native pp-wave negative control из слитого #360
+
+После записи H1–H11 отдельно проверен недавно слитый #360, source d0_heat_e00_covector_2026-10-17/RESULT_RU.md. Там на конкретном H=x²+1/4, e=I+H N физическая Lorentz метрика g=e^T eta e имеет Ricci≠0, R(g)=0; положительная heat density L2=(-4/3)R(e^T e)+q(T)=32x²/3. Для истинной вариации H→H+a phi (которая сохраняет указанную pp-wave форму) exact Euler readings:
+
+$$
+E_{\mathrm{profile}}(S_{\rm EH})=0,\qquad
+E_{\mathrm{profile}}(A_2^{\rm positive})=-32/3\ne0.\tag{H12}
+$$
+
+Независимый поднятый metric probe delta g=phi E00 в том же #360 тоже отвергает constant-proportionality между EH и любой постоянной комбинацией A0,A2. **Следствие**: даже если general curved analog H11 подтвердит \mathscr A_{2,h}→A2 и его C1 source, выделенный positive-frame A2 **сам по себе не может** совпасть с Lorentzian EH covector на этом pp-wave. Трёхглубинный selector устраняет UV spectator coefficients, но НЕ решает физический positive/Lorentz frame, native torsion, measure и independent matter source. Это scoped direct-route obstruction для использования H4 как единственного GR-action, не отрицание A2 extraction theorem и не all-D0 no-go.
+
+Следующий продуктивный backwards Einstein consumer поэтому обязан сначала привести actual connection/metric/observer equations на одном carrier к разрешенному физическому Lorentz torsion/measure сектору или предъявить owned compensating action source. Нельзя заменять этот шаг выбором constant коэффициентов при heat channels: #360 его уже отверг.
