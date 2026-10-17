@@ -1,5 +1,30 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 17 October 2026 — exact full local lattice vacuum recovery for the AF-star experiment
+
+[New full local stationary-family theorem](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
+consumes the user's exact radial reduction and the selected six-plaquette
+star action. It constructs a nonflat two-polarization pp-wave family solving
+**every independent 16 coframe and 24 Lorentz-link Euler row at each interior
+site**, with a fixed boundary collar. The link is the exact nilpotent
+exponential of backward half-gradients of H; sampling the continuum link
+without the half-step correction fails two rows.
+
+The actual golden counts remain nonuniform. An invertible local coframe
+rescaling transports their weighted star action exactly. A prefix-cylinder
+estimate proves positive coverage of every cell and C^j-small weight
+corrections for each fixed j along L_n=n. Local radial homogeneity then
+transfers the exact stationary family to the **full nonlinear AF Book price**
+at finite t, with no entropy remainder. The limit has Ricci=0 and nonzero
+Riemann. This replaces the 25m limitation for this **local fixed-boundary
+geometric vacuum recovery**; it is not a global periodic full-field root.
+
+The complete independent-source transformation is retained in equations
+(2.6)–(2.7) of the new owner. Native physical execution/price, independent
+matter and observer/preparation stationarity, boundary closure and the
+original fixed-g/tau/#216 raw terminal remain OPEN. No physical variable
+or source has been removed to promote this mathematical family to full D0.
+
 ## 17 October 2026 — foundations-to-GR strategic composition
 
 [Current strategic synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

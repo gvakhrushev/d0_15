@@ -1,0 +1,60 @@
+{
+  "symbolic": {
+    "solder_nonzero_before_solving": "-h**3*(a + d)",
+    "link_nonzero_before_solving": [
+      "h**4*(a + 2*cx)/2",
+      "h**4*(2*cy + d)/2"
+    ],
+    "full_rows": 40
+  },
+  "independent": {
+    "independent_action_rows": 40,
+    "signature": "+---",
+    "nonidentity_plaquette": true,
+    "actual_golden_weights": false,
+    "weight_transport": true,
+    "nonzero_link_rows": 0
+  },
+  "golden_counts": [
+    {
+      "n": 12,
+      "L": 2,
+      "words": 233,
+      "minimum_count": 7,
+      "maximum_count": 29,
+      "distinct_weights": 12
+    },
+    {
+      "n": 16,
+      "L": 3,
+      "words": 1597,
+      "minimum_count": 5,
+      "maximum_count": 34,
+      "distinct_weights": 19
+    }
+  ],
+  "weighted_independent": {
+    "independent_action_rows": 40,
+    "signature": "+---",
+    "nonidentity_plaquette": true,
+    "actual_golden_weights": true,
+    "weight_transport": true,
+    "nonzero_link_rows": 0
+  },
+  "untransported_weight_control": {
+    "independent_action_rows": 40,
+    "signature": "+---",
+    "nonidentity_plaquette": true,
+    "actual_golden_weights": true,
+    "weight_transport": false,
+    "nonzero_link_rows": 16
+  },
+  "radial_inverse": "exact; all extra sources retained",
+  "continuum": {
+    "Ric_uu": "a+d",
+    "R_uxux": "-a",
+    "R_uxuy": "-b",
+    "R_uyuy": "-d"
+  },
+  "scope": "full local vacuum coframe/link equations with fixed boundary; native admission and global periodic roots open"
+}

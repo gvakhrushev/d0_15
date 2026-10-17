@@ -34,7 +34,13 @@ selected nonzero Lorentz-star type, including matter, observer, preparation,
 reference and clock. The Palatini/Einstein consumer is available; its
 geometric formula need not be rediscovered. Native physical selection and
 nonempty recovery on a dense full variation class remain load-bearing.
-The AF theorem's growing 25m critical family is not yet that density proof.
+The [exact full local lattice family](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
+now supplies every interior coframe/link row for a nonflat vacuum pp-wave,
+with the actual golden weights and a controlled regular limit. Its explicit
+finite solution uses backward half-gradients and the user's exact radial
+AF/star reduction. This removes the 25m limitation for local recovery on
+the constructed geometric carrier. Physical admission, matter, unrestricted
+global boundary closure and the original fixed-source terminal remain open.
 
 The synthesis proves why a conditional record law does not determine the
 joint law of geometry, and distinguishes the required macroscopic source

@@ -4,6 +4,14 @@
 
 **Precisely scoped theorem:** a theorem about the fully **constructed golden AF / Lorentz-star mathematical experiment**. A complete native-v8/AF **physical selection/execution/cost** proof is NOT asserted. The unchanged one-round v8 full128 instrument is distinct, as proved by the flat zero-mode owner. The established original #216 fixed-nonconstant-g, independent-tau, ALL TEN unweighted raw h^-2 comparison is not replaced by the smooth family limit here.
 
+**Exact local recovery continuation:** [full lattice stationary family](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
+now solves every interior 16-coframe/24-link row of this finite action with
+the actual golden weights, by exact radial reduction and an explicit
+backward-gradient pp-wave connection. It uses a fixed boundary collar and
+the slower geometric schedule L_n=n to control all fixed regularity orders.
+It strengthens the restricted 25m result below to full local vacuum recovery;
+native physical admission, matter and global periodic closure remain open.
+
 ## 1. Inputs: no new curvature functional
 
 Consumed unchanged from the branch/accepted owners:
@@ -400,7 +408,7 @@ Pick increasing \(n_m\ge n(m)\) so that the constructed perturbation is less tha
 \]
 All these tests are sourced by the SAME full golden AF Book record on the SAME Role lattice at each n, not by separately adding an action or density for each patch. Each finite-n critical field is a genuine smooth discrete sample of a curved coframe plus an independent proper Lorentz connection.
 
-This diagonal result is strictly stronger than "one fixed restricted exact root" but explicitly **does not** imply that every independently variable original \(16L_n^4+24(4L_n^4)\) lattice Euler row vanishes: no uniform mesh-scale full-space inverse is used. The purpose of (24) is to provide **actual increasing joint-equation solvability** as the next consumer for the original all-grid GR refinement, not to claim that consumer is already complete.
+This diagonal result is strictly stronger than "one fixed restricted exact root" but explicitly **does not** imply that every independently variable original \(16L_n^4+24L_n^4\) lattice Euler row vanishes: no uniform mesh-scale full-space inverse is used. The purpose of (24) is to provide **actual increasing joint-equation solvability** as the next consumer for the original all-grid GR refinement, not to claim that consumer is already complete. The subsequent exact local recovery owner linked above solves that full interior system with a fixed boundary; it does not infer completeness from this 25m argument.
 
 ## 7. Physical meaning and direct next consumer
 

@@ -12,6 +12,30 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### Full finite stationary-family continuation
+
+The next user request supplies the exact local-radial AF/star reduction.
+Consume it to attack the missing full variation/recovery premise, rather
+than adding another synthesis. On the selected independent relative-solder
+and Lorentz-link carrier, derive the complete 16-site/24-link Euler equations
+for an exact nilpotent pp-wave lattice ansatz. Retain the actual golden
+address weights and prove any needed positive-coverage/weight transport;
+25m critical directions cannot substitute for the full equations. Matter
+and physical native programme admission remain separate obligations, not
+fields deleted from an asserted complete physical theorem.
+
+Inputs: `cb513f74`, the AF-star composition, the supplied radial proof,
+and the original star-density formula/variation owner. Write paths:
+`A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md`,
+`sources/d0_af_star_full_lattice_2026-10-17/`, and existing shared consumers.
+Consumer: a nonempty curved family solving all finite coframe/link rows
+with a controlled regular geometric limit, or the precise failed equation
+needed to repair this particular construction. Smallest decisive check:
+exact symbolic full first derivatives on the local plaquette stencil,
+including transverse variations outside the pp-wave ansatz; analytical
+extension to arbitrary interior sites and refinement. No unchanged
+spectral/root census or global Lean replay.
+
 User priority: the integrator reads the foundations and recent results and
 composes the D0→GR proof before launching further bounded agents. This
 continuation consumes Books 00–03/06/07, the actual foundation Lean owners,

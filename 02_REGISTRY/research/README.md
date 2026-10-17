@@ -6,6 +6,9 @@ Current integrator entrypoint: [D0 → GR strategic synthesis, 17 October](A4D_S
 It connects foundational theorem owners to the positive AF-star nonlinear
 Einstein composition and states the remaining native/source and recovery
 premises. This is research in Draft #334, not a new accepted CORE claim.
+Its [full local lattice recovery consumer](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
+now gives exact nonflat vacuum roots in every interior coframe/link direction,
+with fixed boundary data and actual golden weights; physical admission remains open.
 
 Rules:
 
