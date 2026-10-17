@@ -140,3 +140,34 @@ These numerical tests are **diagnostics of the analytic proofs**, not replacemen
 4. **Nonempty fixed-source joint roots.** A true compatible curved stationary family with independently fixed smooth tau, all ten metric rows and the #216 unweighted raw h^-2 refinement comparator is not constructed. The two-scale order (h→0, then s→infinity) is not the original fixed-g h→0 limit.
 
 **Research conclusion:** the actual original v8 FEEDBACK (not the substitute three-depth operator) has a derived nonzero IR Einstein–Hilbert curvature coefficient and a hierarchy A2→A4 that forces all 24 constant torsion components to zero along any bounded correctly sourced stationary infrared family, with rate (IR7). Neither claim establishes physical GR, but both remove a specific need to posit an auxiliary curvature/torsion action for this restricted mathematical sector.
+
+
+## 7. Непустая точная CONNECTION slice: spatial inversion fixes all24 Euler rows at T=0
+
+This is an additional new **continuum full16** result, not a finite-h/full-joint root. On the very same flat canonical-volume coframe chart used in §4, the owner has
+    D_T=D_flat+Z(T),
+    D_flat=sum_i gamma_i partial_i,
+    Z(T)=-(Q_T+Q_T*) and Z(tT)=tZ(T)
+for every one of the **24** Cartan connection/torsion coordinates. Let U be spatial inversion on the full periodic positive Hilbert space, (Uf)(x)=f(-x), acting trivially on all16 internal grades. Then U D_flat U^-1=-D_flat, whereas U Z(T) U^-1=Z(T) for **constant** T. Thus
+
+    U D_T U^-1=-D_(-T),
+    U Delta_T U^-1=Delta_(-T).                                (IR9)
+
+Consequently every native scalar spectral function, in particular the existing H and J at fixed beta,z,M and any s>0, is exactly even under T→−T. Take the existing uniformly occupied eight-momentum shell rho_0=P_{±e_i}⊗I16/128 (or any inversion-invariant normalized prepared density), keeping the native reference128 intact. Then U rho_0 U^-1=rho_0 and
+
+    R(T)=Tr rho_0 Delta_T = R(-T).                            (IR10)
+
+Therefore **all24 constant-connection partial Euler rows of the unchanged continuum H+J+R vanish exactly at T=0**, on every such flat scale:
+    d_T S_s|_(T=0)=0.                                        (IR11)
+
+This produces an actual nonempty connection-stationary *slice* for the same continuum spectral price, not merely a conditional rate of approach. It does NOT establish metric/coframe Euler equations, actual full matter/preparation Euler equations, physical event/cut admission or any exact finite-h joint root. A literal forward lattice stencil need not intertwine with U by the same continuum sign relation because one-sided finite differences introduce shifted endpoints; IR9 is not silently upgraded to an exact finite-h gate identity.
+
+A reproducible **exact** 16-CAR control computes all24 Z_j=-(Q_j+Q_j*) and checks
+    D(-k,-T)=-D(k,T), Delta(-k,-T)=Delta(k,T)
+for arbitrary real rational k,T, with the same reference shell all16. At any fixed λ in the owned tensor witness, §5's quartic feedback sign remains negative, so IR11 is **stationarity**, not a stable MDL minimum. This is the right distinction for the original GR Euler objective.
+
+## 8. Interface that could complete the Lorentz step
+
+On an admitted physical family of metric/observer transformations, if its full other-source contribution has o(s²) first observer jet and the existing positive-feedback EH coefficient c_R remains nonzero, then observer stationarity to leading order requires the **aether Euler source itself to vanish**. This is NOT automatically Lorentz Einstein and need not hold for arbitrary Einstein solutions: on the owned full-CAR flat-g current family R_g=0 but R_h has a nonzero observer source. To obtain unrestricted GR, the real native archive/record/controller or independent matter/spin first source must supply the same-order observer contribution, or a derived physical comparison must select a Lorentz-covariant action instead. It cannot be manufactured by recoding normalized full-pointer Shannon probabilities: the #334 local gain rigidity and entropy/v8 scale barrier remain in force.
+
+This identifies a concrete matching requirement, NOT a fitted extra term: compare the actual native full-source observer covector with minus c_R times the exact expression from A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md (including moving coframe, CAR-current normalization, measure, boundary and any physically admitted preparation). On a family admitting all three CAR-current variation directions this is a three-component source test, while the metric sector retains all10 rows. It is a sharper common-carrier check than equating the values of R_h and R_g on one background.
