@@ -116,6 +116,12 @@ same(S.factor(ward_matrix(S.Matrix([1,2,3,4])).det()),
      -S.Rational(3558112,615),'exact generic Bianchi+Euler determinant')
 same(S.factor(ward_matrix(S.Matrix([13,3,4,12])).det()),
      S.Rational(35557056,205),'exact Lorentz null Bianchi+Euler determinant')
+# A genuinely timelike Cauchy hypersurface is noncharacteristic for the
+# four Einstein constraints left after six native weighted Euler equations.
+normal=S.Matrix([5,1,1,1])
+same((normal.T*eta*normal)[0],22,'constraint-propagation normal genuinely timelike')
+same(S.factor(ward_matrix(normal).det()),S.Rational(54400,41),
+     'nonlinear analytic Ward Cauchy normal matrix invertible')
 
 # Gauge-transversality is DUAL to Ward source-completeness: <E,a xi^T+xi a^T>=2 xi^T Ea.
 def gauge_condition(H):
