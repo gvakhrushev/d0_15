@@ -664,6 +664,27 @@ Integrator owns common consumers. Decisive input check is the actual
 not a new rank census. Physical price selection, rough raw-source
 uniformity, Einstein equality and original h^-2 terminal remain open.
 
+## Spatial preparation and its Lorentz-source consumer — 17 October 2026
+
+At 2b5bd2af, consume the actual full spatial process, moment and first-source
+owners without replay. For a supplied fixed per-round code whose RELATIVE
+nonblank prices dominate the original golden port code, derive energy
+coercivity of Cost minus a specified coherent entropy. Keep actual normalized
+amplitudes C:C128->H1(T4,C16), rather than optimize over all data densities.
+Prove existence, Gamma convergence of actual grid minimizers and the full weak
+preparation Euler equation through rank births. Then consume the solved
+preparation on the exact-LC cone: check EACH limiting labelled Julia row,
+not just Delta or recycling, and test whether full spatial minimization can
+restore its Lorentz Einstein source. Write owner
+A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md and
+sources/d0_spatial_preparation_2026-10-17/, with integrator-owned consumers.
+Decisive evidence is an analytical coercive/positive-output-cutoff proof and
+labelwise operator intertwining, independently reviewed; no new helper,
+rank/spectral census, old replay or Lean is needed. Code/Info/admission
+selection, higher optimizer field-source regularity and actual h^-2 history
+price remain separate. The user's reattached coframe text is byte-identical
+to the already preserved input; retain its alias, not a duplicate package.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

@@ -492,6 +492,25 @@
     "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/check_observer_curvature.py": "be37647bb8dce0ebb652fa8da0ae6bc7d0156c4060772fd5ba51b0daeb79f700"
   },
   "source": "00471421",
+  "spatial_preparation_variational_checkpoint": {
+    "analytical_reviews": 3,
+    "base": "2b5bd2af3348d5c49937413580878ed046a460cb",
+    "conclusion": "Actual port-dominated positive relative code derives spatial first-energy coercivity; reference128 H1 amplitude minimum exists, actual grid minima converge with minimizing optimizer cluster points, and full weak preparation EL holds through rank births.",
+    "consumer": "Current native-price-to-Einstein route; remove assumed spatial optimizer compactness and reject preparation-only rescue of the missing unscaled Lorentz row.",
+    "geometric_consumer": "Each labelled limiting Julia row is constant on the owned exact-LC cone after the true coordinate-form isometry. The whole unscaled code/coherent functional and its full spatial minimum remain cone-independent while intrinsic Lorentz EH source is nonzero.",
+    "mechanism": "Two-sided corrected Lyapunov bound; output-cutoff positive cost liminf; fixed128-column Rellich and diagonal recovery; energy-derived logarithm vector; unchanged literal labels and waiting-time paths.",
+    "new_scientific_helper": null,
+    "old_scientific_replay": false,
+    "open": "Physical complete price/code/Info/admission and history/clock/scale binding; general optimizer field-source regularity; compatible joint refinement and original fixed-g/tau all-ten raw h^-2/#216 terminal. Actual finite-h h^2 record signal retained.",
+    "scope": "Supplied fixed per-round code/coherent coefficient, actual full16 spatial carrier, reference128, independent observer, controlled smooth chart and positive fixed time. Added positive actual Rayleigh term uses the SAME total EL.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md": "a637d454fb2ff502c643c6ea919eb969028cfd65bda19af65486fd8c472617ac",
+      "02_REGISTRY/research/sources/d0_spatial_preparation_2026-10-17/ANALYTICAL_REVIEW.md": "d31bef2ae9a21de0ac8acc9a37f725c5c9099b34ca0e0c656e5ec6ac22cbb89e",
+      "02_REGISTRY/research/sources/d0_spatial_preparation_2026-10-17/INPUTS.json": "14baa219bab7c75b6005af13493ecaf445e66ec57e29a054f5900d4c1d01c21e",
+      "02_REGISTRY/research/sources/d0_spatial_preparation_2026-10-17/README.md": "766db1573840ee1d4ed1422348950d582209c22237a56d1b785bb2d05951238d",
+      "02_REGISTRY/research/sources/d0_spatial_preparation_2026-10-17/VALIDATION.json": "5bb5f21c8e2012285482532caeea5409697cf4a650106a0a276c3427a2f49705"
+    }
+  },
   "variable_record_conservativity_checkpoint": {
     "base": "aa834d4f867c1efebb6c6805bf1fccd1d37f60ec",
     "conclusion": "Conservative minimal variable-field QDS and strongly continuous CPTP predual on all trace class, plus trace-norm convergence of actual finite-h marginal trajectories for all converging trace-class preparations on the declared full smooth compact carrier.",

@@ -340,6 +340,21 @@ keep their own multipliers. Use this result when the physical contract
 matches, rather than assume an arbitrary fixed preparation. Its shell
 Hessian is not extrapolated to the growing spatial carrier.
 
+The [full spatial variational consumer](A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md)
+now derives, rather than assumes, energy control for the unknown optimal
+preparation of a supplied port-dominated positive-relative code with coherent
+entropy. Actual reference128 amplitudes have a minimum; actual grid minima converge and optimizer cluster
+points minimize the continuum price. The full weak preparation equation retains rank
+births and every column. General limiting field envelopes still require
+regularity beyond this first-energy result. There is also a decisive source
+consequence: on the owned exact-LC cone family, EACH labelled continuum jump
+is constant in coordinate forms, not just the spectral operator. The entire
+coherent/code functional and its full spatial minimum are cone-independent,
+whereas the intrinsic Lorentz EH source is nonzero. Preparation optimization
+therefore cannot restore this missing source in the unscaled candidate.
+The actual order-h^2 history signal remains; its physical price/scale must
+come from the same retained native programme, not an added EH term.
+
 For physical selection, consume the existing operational-gain theorem
 when G0b supplies the feasible effect algebra and the actual/maximal-gain
 contract. Its central-reference/all-POVM premises are not consequences

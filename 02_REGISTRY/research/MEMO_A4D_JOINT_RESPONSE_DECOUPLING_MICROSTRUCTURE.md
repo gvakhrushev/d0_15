@@ -29,6 +29,7 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
+| Actual port-dominated positive-relative code cost derives spatial preparation coercivity. With all16 forms and the true reference128, a minimum exists, actual grid minima converge with minimizing optimizer cluster points, and every preparation row has a weak Euler equation. On the exact-LC cone, each limiting labelled jump and the entire code/coherent objective are invariant; its full spatial minimum therefore cannot restore the nonzero intrinsic Lorentz Einstein source. | [Spatial preparation and Lorentz-source consumer](A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md). This removes assumed optimizer energy/compactness without extending the shell's unique Hessian or selecting physical code/Info. General optimizer field-source regularity and physical admission remain open. The real h² history signal is preserved; its native price/clock/scale is the consuming bridge, not a further unscaled preparation fit. |
 | Every actual retained128-outcome round gives an exact CP matter channel and total-count tilt. Its original port1 observable is `p epsilon Delta`; original golden0/10 code fixes the flat port-cost `n+p beta_h R0`. Flat full16 relaxation, full fixed algebra and strong trace-class continuum process follow without resetting records. Pointer and coherent record information have separate exact source diagrams. | [Complete retained channel/native cost](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md). Consume actual evolution, preparation derivatives and original code weights in the full price bridge. Stationary momentum weights are not Gibbs; finite faithful system stationarity does not give a reference128 purification. Complete code/Info selection, native primitive admission and Einstein/refinement equality remain open. |
 | The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
 | A fixed-forward positive-adjoint completion now has an explicit local full-Lorentz matrix instrument, the same tested v8 scalar price and all transverse sources. The faithful seed remains critical; the old pure seed fails the new boost rows. Two derived occupation balances characterize stationary homogeneous E0 preparations, with an explicit balanced rank8 root on the same geometry. | [Full Lorentz source](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md). The original native primitives must generate its onsite matrix gates, adjoints, preparations and outcomes with their full retained-history cost. This does not select a physical extension or transfer the stored-sector kernel to the new state/domain. |
@@ -6334,3 +6335,49 @@ then compare with the intrinsic nonlinear Einstein covector. No source
 or counterterm is fitted here. Physical selection, nonempty joint
 refinement and the original fixed nonconstant g, independent tau,
 all 10 packed raw h^-2/#216 terminal remain OPEN.
+
+## Actual spatial preparation and the missing Lorentz source — 17 October 2026
+
+The [new variational owner](A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md)
+consumes the full process/energy/source owners and the parallel shell
+preparation theorem. The absolute corrected-energy estimate propagates
+energy in both directions. Hence the original port cost, with any supplied
+nonnegative extra relative branch code, controls INITIAL energy over every
+fixed positive record interval. Entropy grows only logarithmically. This
+derives compactness of unknown optimal spatial preparations on the actual
+reference128 amplitude domain; no arbitrary trace-class purifier is used.
+
+The full domain now has an attained minimum, a Gamma limit with converging
+grid minima and minimizing optimizer cluster points, and the weak all-column equation
+`K_T C+eta B_C=F(C)C`, with the actual entropy logarithm vector in L2.
+Positive OUTPUT cutoffs prove cost liminf; input compression is not ordered.
+Rank births remain. Neither faithful rank, uniqueness nor moment3/4 source
+regularity follows; these are not smuggled into the geometric envelope.
+
+There is a direct geometric consumer that needs no such bootstrap. On the
+owned LC cone family e=s O01(theta(y)), the coordinate-form isometry makes
+both D and EVERY limiting labelled Julia row constant. Thus the full
+continuous-jump record, fixed per-round code and coherent entropy are
+independent of theta for every coordinate-form preparation. Their full
+spatial minimum is independent too, while
+`I_EH=-2s^2 integral(theta_prime^2)` has nonzero source. Including the actual
+positive Rayleigh term in the SAME objective preserves this invariance;
+its own preparation equation must then be used. Optimizing preparation
+therefore cannot supply this missing Lorentz source in the unscaled
+continuum candidate.
+
+This strengthens the older spectral-only cone boundary, without deleting
+the actual order-h^2 retained-history signal. It makes the route decision
+concrete: the physical native price and its clock/scale must bind that
+retained comparison/history information; further unscaled coherent
+preparation regularity cannot manufacture the absent row. No independent
+stress is defined by the Einstein residual. All ten metric tests and the
+restricted stored versus larger positive-adjoint domain remain distinct.
+
+The user's reattached coframe/weighted-edge text is SHA-identical to the
+already preserved input. Its scalar-jet matching claims remain disproved
+by the existing operator/source bridge; no duplicate reconstruction or
+old scientific replay was run. The new results are analytically reviewed
+and pinned in the existing checkpoint intake. Physical price selection,
+compatible joint refinement and the original fixed-g/independent-tau,
+all-ten raw h^-2/#216 terminal remain OPEN.
