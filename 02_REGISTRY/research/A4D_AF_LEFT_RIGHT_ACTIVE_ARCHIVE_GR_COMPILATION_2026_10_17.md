@@ -115,22 +115,16 @@ The retained right law remains \((p,p^2)\) **independent of e**, while
 
 This toy is a **TYPE/PROVENANCE CONTROL ONLY**. The 5/3-outcome source \(P_j(e)\), numerical \(f'_0(p^2)\), full regular AF dimension, raw 128 v8 outputs and Lorentz geometry must come from (2),(6) and their original owners, not from the toy's two flags.
 
-## 4. The one operator equality now standing between an active AF gate and real D0
+## 4. The correct physical target AFTER the zero-mode discriminator
 
-The claim “W_E is **contained in** the right-module commutant” is stronger than an abstract Stinespring existence statement: the owner has actual finite path-by-path V maps, the original full four-copy apparatus, and an explicit six-level AF algebra element. It eliminates **the generic old-record-translation objection** to the correct carrier; it does NOT show that literal v8 SELECT/Julia/golden instructions dynamically produce an arbitrary field-dependent W_E.
+**A further exact native check has now REJECTED the simplest equation previously proposed here.** See [A4D_AF_V8_FLAT_ZERO_MODE_INTERTWINER_BOUNDARY_2026_10_17.md](A4D_AF_V8_FLAT_ZERO_MODE_INTERTWINER_BOUNDARY_2026_10_17.md). The literal unchanged full128 v8 Dirac-zero mode has precisely one certain port0/blank outcome, whereas the original AF golden recording has two positive probabilities \((p,p^2)\). Consequently a same-event, label/provenance-preserving full-instrument equality \(\mathscr J U_{\rm literal}=W_E\mathscr J\) is **IMPOSSIBLE**, even with arbitrary fixed spectator factors, on the flat-zero test. The left/right commutant identity (3) removes the old-register *actuation type* objection to the AF operation; it does NOT remove this distinct *instrument-identification* obstruction.
 
-The exact decisive native gate is an **intertwiner**, not another curvature coefficient. Let \(\mathscr J_h\) be the proposed full coframe/CAR/reference/AF active-left + archive-right embedding. On one physically generated smooth family of original field configurations, prove
+The remaining physical route is **NOT** to identify AF with an unchanged v8 round. It is to execute an independently admissible AF active-left operation as an ADDITIONAL physically selected D0 record transition, preserving the original 128-outcome v8 tape and old right-column provenance in the **same complete joint history**. An actual admitted enlarged operation must have a well-defined full Kraus/Stinespring embedding and an actual chosen cost/Info/cut/clock law for the entire sequence, not a free sum of the two separately constructed positive actions. Its first source must include the moving coframe, link, observer, preparation, old tape and new AF record; the original v8 extensive IR vacuum term cannot disappear by name or by subtracting a constant baseline from another programme.
 
-\[
-\boxed{
-\mathscr J_h\,U_{\rm literal}(q_h,D_h,\rho_h,\mathrm{record})
-   =W_{E(q_h,D_h,\rho_h)}\,\mathscr J_h
-}
-\tag{9}
-\]
+The precisely executable decision test therefore is:
 
-as complete isometries (or a clearly priced complete instrument relation), plus the first field-source identity on all admitted variations. All *other* original 128 outcomes, the full old right reference and the actual coding clock must be retained and its cost included. A same-spectrum or same-likelihood equality without the actual full output register and moving source does NOT prove (9).
+1. Exhibit a literal allowed active-left AF opcode/word, with its full complement, preserving right spectator state and both original 128-outcome controls while *actually producing* the field-dependent \(P_j(e)\) and second ACTIVE cost in one complete programme. Unlike abstract existence of \(W_E\in A_{n+6}\), this must be native executed or admitted by an existing owner.
+2. Prove that the **chosen full composed Cost−Info**, not just the AF marginal relative entropy, has a nonzero Lorentz-normal Jacobian/8+8 spatial source \(D(R_G-2R_3)\), no spurious volume Euler and the real observer/matter equations. The [golden-code capacity theorem](A4D_OPERATIVE_GOLDEN_INFORMATION_AND_GR_GATE_2026_10_17.md) shows an operational Info/source route on repeated commuting outcomes, with independent-copy/resource selection still open.
+3. Verify all ten ADM first sources at a nonstatic chart, then the independently fixed smooth matter source, exact nonflat joint roots and original unweighted \(h^{-2}\) #216 transfer.
 
-Within this strict criterion, the parallel operational coding theorem supplies a concrete LOSSLESS-compression reading of the one-global AF PF action in C¹, rather than postulating an arbitrary Info value. The connection between that coding task and the actually selected physical D0 Info, independent-copy preparation, actual gate execution budget and feedback remains to be proved. A raw original fixed-reference likelihood Info gives the DIFFERENT source of Section1 in its companion note.
-
-**If (9) is physically admitted and its full source equals the owner on the real Lorentz/observer fields**, use the already-owned normal Jacobian + two endpoint spatial comparisons to test \((R_G-2R_3)\) on one nonstatic ADM chart. The exact nonlinear identity then produces all ten Einstein metric sources, with the finite one-global-AF baseline carrying no spurious vacuum Euler. Physical observer, spin/matter, exact curved roots and the original #216 unweighted raw \(h^{-2}\) remain separate named obligations. Do not promote OTO before those pass.
+This corrects a false potential closure route rather than accumulating another coefficient. No new task, claim, physical operator or Einstein action has been installed.
