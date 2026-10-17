@@ -171,3 +171,31 @@ for arbitrary real rational k,T, with the same reference shell all16. At any fix
 On an admitted physical family of metric/observer transformations, if its full other-source contribution has o(s²) first observer jet and the existing positive-feedback EH coefficient c_R remains nonzero, then observer stationarity to leading order requires the **aether Euler source itself to vanish**. This is NOT automatically Lorentz Einstein and need not hold for arbitrary Einstein solutions: on the owned full-CAR flat-g current family R_g=0 but R_h has a nonzero observer source. To obtain unrestricted GR, the real native archive/record/controller or independent matter/spin first source must supply the same-order observer contribution, or a derived physical comparison must select a Lorentz-covariant action instead. It cannot be manufactured by recoding normalized full-pointer Shannon probabilities: the #334 local gain rigidity and entropy/v8 scale barrier remain in force.
 
 This identifies a concrete matching requirement, NOT a fitted extra term: compare the actual native full-source observer covector with minus c_R times the exact expression from A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md (including moving coframe, CAR-current normalization, measure, boundary and any physically admitted preparation). On a family admitting all three CAR-current variation directions this is a three-component source test, while the metric sector retains all10 rows. It is a sharper common-carrier check than equating the values of R_h and R_g on one background.
+
+
+## 9. Количественный тест GR на full-CAR observer: принудительный counter-source на плоском Lorentz фоне
+
+Из уже существующего A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md §5 берём **ровно его full16 CAR matter** с локальной амплитудой a(y)=1+y и настоящим нормированным timelike current u(a). Этот owned witness сохраняет лоренцеву метрику g=eta и объём |det h|=1 на всей семье, но positive-record metric h(a) имеет
+    R_h=-2 [chi_a(a) a_y]^2,  chi_a=-4a/(1+4a²),  R_g=0.
+Канонический owner вычислил genuine integrated **matter Euler** для q(a,a_y)=R_h:
+    E_a(q)|_(a=1,a_y=1,a_yy=0)=-192/125.                       (IR12)
+Это не pointwise derivative q_a, не произвольный новый stress и не потенциал подгонки; получено вариацией полного положительного curvature functional с compact support.
+
+Теперь используем уже полученный (IR3) коэф. полной ИСХОДНОЙ цены J, c_R=M Phi2(q)/(12pi² beta)>0, и физический uniform scale \ell→infinity отдельно от a. Для геометрического чтения, где истинная positive true-adjoint LC оператора D сопоставлена owned h(g,u(a)) и есть uniform C1 heat/source expansion, **на том же offshell CAR-current germ** имеем
+    E_a J_\ell^\mathrm{ren}|_(a=1)
+      = - (192/125)c_R\,\ell² + O(1).                         (IR13)
+
+При фиксированных M=128,z=2^-20,beta=2phi^-2 точное положительное число counter-source, которое потребовалось бы для cancel, равно
+    C_obs=(192/125)c_R
+         = 2.07236322098860455... × 10^-6.                 (IR14)
+
+Вдоль ТАКОЙ matter-only вариации при неизменной flat g лоренцево EH-действие не меняется: E_a S_EH[g]=0. Следовательно, любой будущий **физически выбранный** native action, который претендует на equality of sources с Einstein + independently derived matter and spin, обязан либо:
+- показать, что именно эта full-CAR current/matter вариация не физически admitted и почему;
+- либо предоставить independently derived *actual* retained/observer/preparation source с ведущим +C_obs\,\ell² (и всеми другими источниками в этом же chart);
+- либо вывести настоящую observer/retained equation, которая исключает эту offshell family из stationary physical solution class без приравнивания positive EH к Lorentz EH.
+
+Это сильнее утверждения «возможна aether поправка»: задаётся **численный source-level comparator на собственном full16 current family**. Он не говорит, что недостающая физическая цена обязана равняться именно этой величине на всех конфигурациях, не разрешает её искусственно добавить, и не исключает непустые Einstein roots. Геометрическая family не доказана reachable одной admitted record programme; ограничение explicitly preserved.
+
+Дополнительно, если full H и R продолжены на этой семье с теми же bounded field/normalizer/preparation hypotheses и сохраняют source o(\ell²), то они одни не компенсируют (IR13). Однако H source при moving physical programme/preparation не получил здесь самостоятельного всеобъемлющего bound, поэтому никакого unconditional no-go для H+J+R не заявляем. Возражение из merged #360 остаётся необходимым негативным контролем.
+
+Этот IR14 comparator вычисляется только из input current-owner E_a R_h=-192/125 и input exact native feedback c_R; он не выбирает ни один из множителей.
