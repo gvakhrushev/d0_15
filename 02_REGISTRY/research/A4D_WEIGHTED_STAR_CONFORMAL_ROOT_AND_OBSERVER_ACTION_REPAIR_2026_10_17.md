@@ -200,3 +200,28 @@ for all prepared states and geometries when Cost−Info is any fixed code/locall
 **Independent whole-carrier exact finite witness:** on L=2 periodic 4D, site dimension16 and CAR grades16 (total256), one nonconstant rational profile with nine different positive \(s_x\) gives D_s=M_sD0 and EXACT W_sD_s=D_s^T W_s; all sixteen site-constant input columns are annihilated by D_s and D_s². The 128-output Kraus blank identity follows with no SELECT gate approximation. Local independent 23 guarded SymPy checks PASS, original \(\operatorname{Tr}D_0^2=8192\); see check_weighted_native_blank_kernel.py in the adjacent source packet. This validates original fully finite operators, not a claim of an independently accepted physical vacuum preparation or finite-h constrained star Euler root.
 
 **Physical selection question is now unambiguous:** the actual D0 gravitational action must (i) identify its ADM/coframe/observer-sensitive preparation and full cost, or (ii) use an admitted comparison/history operation beyond this source-blind subspace, and MUST pass the existing exact conformal EH first-source \(-12a''\) with volume/weight properly distinguished. This is the source-law gate before root estimates, not a call for a fourth curvature detector.
+
+
+## 9. The exact NATIVE matter Rayleigh law on this conformal family is not EH either, unless the preparation MOVES with geometry
+
+The previous all16 zero-mode result is a special case of a stronger exact first-source identity. For the SAME literal original true-weighted operator \(D_s=M_sD_0\) with positive site weight \(W_s=M_{1/s}W_0\) and \(D_0^\dagger W_0=W_0D_0\),
+\[
+\boxed{
+\langle\psi,D_s^2\psi\rangle_{W_s}
+=\langle D_0\psi,M_s D_0\psi\rangle_{W_0},\quad
+\langle\psi,\psi\rangle_{W_s}
+=\langle\psi,M_{1/s}\psi\rangle_{W_0}.}
+\tag{15}
+\]
+Hence for ANY **fixed old unwhitened prepared** \(\psi\neq0\):
+\[
+\boxed{\mathcal R_s(\psi)
+=\frac{\sum_x s_x\|(D_0\psi)_x\|_{h_n}^2}
+{\sum_x s_x^{-1}\|\psi_x\|_{h_n}^2}.}
+\tag{16}
+\]
+This is an all-size exact native Rayleigh/normalization formula, not a quadratic small-curvature expansion. Its partial source at fixed raw preparation is purely algebraic in the site values \(s_x\), with no finite difference of \(s\) and no universal \((\partial s)^2\) kinetic source. E.g. on the tested L2 full 256 carrier, the basis input \(\psi=e_{x=0,\mathrm{grade}=1}\) gives true Rayleigh numerator and quotient \(168/5\) for the displayed rational \(s_x\) (both sides of (15) checked exactly).
+
+In particular, **for every profile**, \(\min_\psi \mathcal R_s(\psi)=0\), attained by any of the sixteen old constant CAR modes; at fixed raw preparation, the matter variational minimum cannot force the missing nonzero conformal Einstein kinetic action \(6\int(a')^2\). A physically tied *moving preparation* \(\psi_s\), nonlocal spectral H/J feedback, full controller/old-memory Cost−Info or genuine torsion/observer term may supply derivatives of s, but then its actual first/second preparation/clock source MUST be retained. The original flat faithful first-shell v8 state is NOT this minimizing kernel, so this is not an all-preparation or all-action no-go.
+
+**Physical decision, now precise:** the full actual D0 action must obtain \(-12a''\) from an admitted observer/history/preparation term and must not rely on (a) restricted bare star, (b) fixed-input normalized Rayleigh alone, or (c) ordinary born-pointer surprisal. This is a complete action-level kill-first against THREE tempting identifications on the SAME regular conformal test family, with the exact geometric candidate (7) already available for a genuine future physical splice.
