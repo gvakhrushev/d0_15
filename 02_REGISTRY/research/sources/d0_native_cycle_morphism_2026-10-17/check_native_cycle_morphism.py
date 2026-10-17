@@ -129,6 +129,18 @@ require(D*F == F.T*D, "D_metric_feedback_selfadjoint")
 print("stage: native scene verified",flush=True)
 
 c = s.Rational(23,480)
+# TYPE CHECK: the same-zone triangle consists of *effective F matrix
+# elements*, NOT direct edges in K(9,11,13). Each effective F_ij=-T^2_ij
+# combines valid two-step scene walks. For example 0->9->1->9->2->9->0
+# is a genuine six-step admitted scene walk behind one term.
+require(all(A0[i,j] == 0 for i,j in ((0,1),(1,2),(2,0))),
+        "effective_negative_F_triangle_is_NOT_three_native_scene_edges")
+require(all(A0[i,j] == 1 for i,j in ((0,9),(9,1),(1,9),(9,2),(2,9),(9,0))),
+        "effective_negative_triangle_has_real_six_step_native_scene_lift")
+require(all(F[i,j]==-(T*T)[i,j] for i,j in ((0,1),(1,2),(2,0))),
+        "negative_effective_edges_come_from_owned_Q_equals_I_minus_P")
+require(base_word[0] == 0 and base_word[1] == 9,
+        "cyclic_origin_shift_changes_stage_zero_label_if_stage_is_observable")
 require(all(F[i,j] == -c for i,j in ((0,1),(1,2),(2,0))),
         "native_same_zone_off_diagonals_are_exactly_minus_23_over_480")
 tri = F[0,1]*F[1,2]*F[2,0]
@@ -336,8 +348,8 @@ result={
  "three_cycle_derivative":str(tri_dot),"three_cycle_derivative_float":float(tri_dot),
  "source":source,
  "simultaneous_native_projector_and_link_source":{"dJ_from_P":str(sourceP),"dJ_from_U":str(sourceU),"dJ_total":str(sourcePU),"noncommuting":True},"small_principal_minor":{"det_pencil":str(s.factor(poly)),"trace_class_orbits":rooted_counts},
- "sign_obstruction":"the 3-cycle has negative product in native label basis and survives label phase gauge; raw per-cycle probabilities cannot equal products of F_ij",
- "physical_gates_open":["native admission of signed/phase-coherent return cycle weighting", "cyclic origin unobservability under complete future readouts", "Cost-Info = minus log of this grouped event with retained controller/archive costs", "moving coframe/link/observer/retained history source plus h^-2 GR refinement"],
+ "sign_obstruction":"the EFFECTIVE-F 3-cycle has negative product, from Q=I-P, and survives label rephasing; it is NOT a 3-edge native scene walk, but lifts to 6-step admitted scene walks",
+ "physical_gates_open":["physical realization of signed effective-F return valuation generated algebraically by native Q=I-P", "cyclic origin unobservability under complete future readouts", "Cost-Info = minus log of this grouped event with retained controller/archive costs", "moving coframe/link/observer/retained history source plus h^-2 GR refinement"],
  "checks":checks,"checks_count":len(checks)
 }
 jsonfile=HERE/'RESULT.json'
