@@ -223,3 +223,27 @@ Exact hostile fixture on the fully retained old bit:
 XPX is neither P nor I−P. Therefore a sharp repeated test of THIS tilted old-bit subspace cannot be compiled from the supplied one-way class, even with arbitrary active computation, infinitely many word lengths, fresh spectator workspaces, and any classical output coarse-graining. Pure active phase quadratures do not affect the covariance conclusion. The argument is a direct *consumer* of the already owned all-word theorem, not a claimed native D0-wide no-go.
 
 **Стратегическая развилка.** Для actual two-record P_0,P_1 выяснить, действуют ли they as old-memory sharp tests. Если да и их old-bit image contains a fixture not obeying (27), нельзя продолжать путь через one-way placement без реально допущенной дополнительной операции old-memory control или другого separately proved same-source readout. Если record planes реализованы на full ACTIVE comparison space and old tape is only a spectator, (27) не запрещает их: тогда остаётся проверка native active programme, its true C1 source and cost. Это одна адресная проверка carrier/operation, а не новый каталог POVM.
+
+
+## 8. Обратное необходимое условие: одна и та же запись против самой себя НЕ даёт Einstein first source
+
+Нельзя схлопнуть двухстороннюю архитектуру до проверки вида «насколько текущее native state отличается от этой же native state в reference point» и ожидать полный нелинейный EH covector на открытой metric chart.
+
+**Exact lemma.** Пусть J(t):H→K — гладкая family isometries, J(0)=J_ref, P_ref=J_ref J_ref†. Сравниваем J(t) с фиксированной собственной J_ref:
+
+  F(t)=J(t)†(I−P_ref)J(t),   C(t)=J_ref†J(t).          (29)
+
+В t=0 точно F(0)=0, F'(0)=0. Более точно при V=J'(0):
+
+  F(t)=t² V†(I−P_ref)V+O(t³),
+  −log_phi det[C(t)†C(t)]
+     =t² ||(I−P_ref)V||_HS²/log(phi)+O(t³).          (30)
+
+Следовательно first source такого relative self-comparison в t=0 равен ZERO для любой вариации. Second variation неотрицательна и равна 2||(I−P_ref)V||_HS²/log(phi). Это положительная Grassmann/Fisher-мера отклонения двух близких записей, а не произвольная нелинейная Einstein-action при исходной offshell кривой geometry (для generic curved g её first EH variation может быть ненулевой). Если две записи равны при КАЖДОМ g и движутся одновременно J_0(g)=J_1(g), price вообще тождественно0.
+
+Контроль без матричных каталогов: J_ref=(1,0)^T, J(t)=(cos t,sin t)^T. Тогда P_ref=diag(1,0), relative price=−log_phi(cos²t)=t²/log(phi)+O(t⁴), first source at0=0. При ДВУХ различных исходных golden плоскостях с angle θ_*=acos(sqrt p) price at baseline=1, а derivative по изменению угла
+  d/dθ[−log_phi(cos²θ)]_(θ=θ_*)=2tanθ_*/log(phi)=2sqrt(p)/log(phi)>0.      (31)
+
+Получено **необходимое** условие для предлагаемого relative-price механизма: на реальном baseline полные четырёхмерная и пространственная записи должны быть независимо различимыми, с nonzero principal angles, и их field changes должны иметь genuine relative normal component. Исходный golden p предоставляет кандидат *уже определённого* ненулевого угла без подгоночного параметра; одно только требование ненулевого first source не выбирает p единственным образом. Это не утверждение, что любая такая пара выдаёт Einstein tensor: необходимо фактическое source equality с 4D−2×3D input, matter, Ward и native Cost−Info.
+
+**Сокращённый falsifier перед дорогим SCIENCE:** если предлагаемый same-program morphism реально выдаёт J_0(g)=J_1(g) (либо лишь их right-GL / shared-ambient unitary reparametrization) для всех coframe germs, его two-sided logdet source нулевой и путь через него должен быть отвергнут сразу. Если же есть actual golden-offset pair of distinct record cuts, проверять только d(P_0,P_1) и price/source на одной nonflat variation, не заново tensor catalog.
