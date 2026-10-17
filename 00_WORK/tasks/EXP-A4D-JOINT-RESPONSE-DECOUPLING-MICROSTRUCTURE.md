@@ -12,6 +12,33 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: consume the complete labelled history source
+
+At published `275244e5`, consume the operational CAR-clock reading, exact
+event Cost-Info, full labelled macrohistory, structural stationary-fibre
+results and the regular-natural-source Cartan consumer. Test the positive
+composition of the actual retained AF/scene flag law, not another chosen
+entropy. Exact target: its golden first-source coefficient, a regular
+balanced scene-preparation lift retaining reference128, and the complete
+remaining earlier-history source. Do not replace that earlier history by
+fixed weights without the real programme/trace argument. The conditional
+balancing Jacobian must use actual coupled preparations where required.
+
+Write paths: `A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`,
+`sources/d0_labelled_golden_record_full_source_2026-10-18/`, this brief and
+the existing shared consumers. Independent assistants may review inputs
+read-only or own the named disjoint checker; the integrator owns the
+end-to-end statement and shared files. Carrier: original coframe/link
+variables, all scene modes, full128 reference and every retained label.
+Norm/source: exact finite first derivative; any continuum limit must use
+the unchanged source normalization and its own proved error bound.
+Consumer: identify a nonzero same-history geometric source on the measured
+metric with the actual remaining archive/preparation equations. Smallest
+decisive check: complete flag-chain rule, golden coefficient, full128
+balanced lift and its source, actual prefix preparation failures, and a
+moving-old-label control. Physical selection and original raw/#216 closure
+are not supplied by a terminal marginal or by source classification alone.
+
 ### Whole-source synthesis after the local vacuum result
 
 The user's next request is to try an end-to-end breakthrough, rather than
