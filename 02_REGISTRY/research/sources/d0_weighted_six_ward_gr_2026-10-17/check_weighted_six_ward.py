@@ -152,6 +152,16 @@ Eold=S.Matrix.hstack(*[packet(Einstein(H,kn)) for H in old])
 Enew=S.Matrix.hstack(*[packet(Einstein(H,kn)) for H in weighted])
 check(Eold.rank()==4 and len(Eold.nullspace())==1,'old admitted one vacuum polarization')
 check(Enew.rank()==4 and len(Enew.nullspace())==2,'NEW six weighted directions carry TWO vacuum polarizations')
+# The accepted canonical star two-derivative metric Hessian is proportional to
+# the Einstein symbol: its PULLBACK on the same six REAL weighted velocities
+# is a symmetric rank-four bilinear, with exactly the two GW polarization roots.
+Hstar=S.Matrix([[S.trace(H_i*Einstein(H_j,kn)) for H_j in weighted] for H_i in weighted])
+check(Hstar==Hstar.T,'the original Einstein-principal variational Hessian is symmetric')
+check(Hstar.rank()==4 and len(Hstar.nullspace())==2,
+      'original canonical star principal quadratic action carries both null graviton polarizations')
+Hold=S.Matrix([[S.trace(H_i*Einstein(H_j,kn)) for H_j in old] for H_i in old])
+check(Hold==Hold.T and Hold.rank()==4 and len(Hold.nullspace())==1,
+      'freezing native site weight returns only one physical graviton polarization')
 # Exact finite STAR insertion scales quadratically with SAME original on-site legs.
 # Test on a nondegenerate simple bivector, keeping the original connection fixed.
 u=S.Matrix([1,2,3,4]); v=S.Matrix([4,2,1,3]); tscale=S.symbols('tscale')
@@ -166,6 +176,8 @@ print(json.dumps({
     'full_nonlinear_weighted_unit_observer':True,
     'source_rank_table':rank_table,
     'null_Einstein_weighted_rank':Enew.rank(),
+    'canonical_star_principal_Hessian_weighted_rank':Hstar.rank(),
+    'canonical_star_principal_Hessian_kernel_dim':len(Hstar.nullspace()),
     'original_GR_vacuum_polarizations':2,
     'old_native_admitted':1,'weighted_native_admitted':2,
     'null_gauge_slice_det':str(Gnull.det()),
