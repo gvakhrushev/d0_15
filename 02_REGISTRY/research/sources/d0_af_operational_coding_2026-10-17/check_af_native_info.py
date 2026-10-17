@@ -9,7 +9,7 @@ from collections import Counter
 from decimal import Decimal, getcontext
 from fractions import Fraction
 from itertools import product
-from math import comb, factorial, log, sqrt
+from math import comb, factorial, log, sqrt, prod
 
 getcontext().prec = 90
 PHI_D = (Decimal(1) + Decimal(5).sqrt()) / 2
@@ -80,10 +80,7 @@ def golden_encoder(start: Fraction, mass: Fraction):
 def universal_prob(seq: tuple[int, ...], k: int):
     N = len(seq)
     n = Counter(seq)
-    M = factorial(N)
-    for idx in range(k):
-        M //= factorial(n[idx]) if False else 1
-    M = factorial(N) // __import__("math").prod(factorial(n[i]) for i in range(k))
+    M = factorial(N) // prod(factorial(n[i]) for i in range(k))
     T = comb(N + k - 1, k - 1)
     return Fraction(1, T * M)
 
@@ -133,6 +130,7 @@ def test_one_length(N: int, q, dq):
 
 def test_native_one_way_obstruction():
     """Exact symbolic formula plus bounded numerical normalized-source control."""
+    last_lower = 0.0
     for t in (0.1, 0.03, 0.01, 0.001):
         e_a = P * P
         e_b = e_a * (1 + t * t)
@@ -141,7 +139,9 @@ def test_native_one_way_obstruction():
         lower = 0.5 * diff / (t * t)
         assert lower + 1e-9 >= P / 4
         assert lower < 0.2
-    assert abs(P/4 - 0.1545084971874737) < 1e-12
+        last_lower = lower
+    assert abs(last_lower - sqrt(P)/4) < 1e-6
+    assert abs(sqrt(P)/4 - 0.19653784443935582) < 1e-12
 
 
 def main():
