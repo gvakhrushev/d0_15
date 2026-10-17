@@ -44,3 +44,22 @@ No replay of old roots, entire lattice spectrum, previous Lean proof, scientific
 ## Decisive next SAME-native GR weld
 
 Construct the actual 4D and two 8+8 spatial ENDPOINT full-record isometries in the SAME golden/Julia retained history, with real observer, clock, positive pairing and all128/reference128. Determine the ACTUAL cross K and its polar source, not independently supplied Grams; derive physical old-record comparison access and its true Cost−Info/codes. Test a curved null coframe jet AND a flat global scale/reference jet before identifying their all-ten source with the already-owned nonlinear Lorentz Einstein 4D−2 spatial consumer. The original fixed smooth g/independent tau/unweighted raw h^-2 #216 comparator and nonempty exact nonflat joint roots remain OPEN.
+
+
+## Final native-input simplification: SELECT and D themselves are sufficient
+
+The true 64-row SELECT blank column N and original selfadjoint A=hD/16 already determine the REFLECTED column M=blank−2N A. Differentiating on the same physical source chart gives dM=−2[(dN) A+N dA] without a separate moving-M primitive. Let Z=(dN)A+N dA. Then native original QGT of ALL128 recorded Kraus is EXACTLY
+
+    Q=4p² Z†Z−4p⁴(M†Z)†(M†Z),
+    4p³||Z||²_HS<=Tr Q<=4p²||Z||²_HS.
+
+Consequently the kernel of the FULL native record distinguishability tensor is exactly the kernel of the existing SELECT/Dirac linear source map v↦Z_v; this is a sharply typed next nine-null-plus-scale/real field-admission test, not a claim of rank10 on a restricted stored chart. On homogeneous k=0, A=dA=0 and Z=0, recovering the already-known native zero-mode source blindness analytically.
+
+New independently reproducible two-label rational SELECT class checker:
+
+    python 02_REGISTRY/research/sources/d0_native_full128_qgt_2026-10-17/check_select_reflector_source.py
+    python -O 02_REGISTRY/research/sources/d0_native_full128_qgt_2026-10-17/check_select_reflector_source.py
+
+16 exact controls pass normal and optimized identically (source Git blob b35b1e40983878ce0e09f58bfc213c133a6dd70d; stdout SHA256 36bad27769d64d99a2f7dd269480a5f9d75860821e9abaa5881b239bd4f07d76). The moving square-root/Sylvester jet and nonzero 2×2 skew record connection are rational and noncommuting. This is not an exhaustive new original full16/64-label replay or native physical implementation claim; the analytical formula is all-size, inherited full16 shell control separately supplies actual nonzero source.
+
+Section8 of the main memo also supplies a strict representation-theoretic firewall: a finite-dimensional positive-unitary polar transport cannot furnish a faithful continuous SO+(1,3) boost representation, and a one-round scalar-normalized vector-boost match has the necessary rapidity bound 3 ln(phi)/2. The true physical Lorentz observer and coframe remain indispensable. No GR claim or original raw source terminal promotion.
