@@ -162,3 +162,39 @@
 Независимая точная рациональная модель двух 3D isometries внутри 6D comparison ambient, с noncommuting first field jet, проверена на уровне 18 identity controls: J0/J1 isometries, true first jet, overlap/failure identity, moving projector source, noncommutation, all six alternating-prefix Born moments and all six moving first derivatives. Ни floating tolerance, ни spectral interpolation, ни optimization/certificate count не заменяют аналитические all-d theorems §§1–5. Этот тест не выдаётся за воспроизведение native full16, fixed-beta Einstein/heat, original source norm, or remote CI. Его executable and deterministic results — в sources/d0_relative_subspace_moments_2026-10-17/.
 
 No CORE/BOOK claim, no task registration, no new physical action, no original terminal promotion.
+
+## 4.1. Усиление: raw source bound только через движение ДВУХ пространств записи
+
+Гипотезу (16) можно заменить более близким к native archive condition: она не обязана ссылаться на целиком реконструированный spectral E. При локальном smooth isometric frame J_0 выбираем математическую horizontal trivialization входа: J_0†dJ_0[V]=0. Это возможно в каждой точке для каждого направления V, поскольку J_0†dJ_0 антиэрмитова; нужное right-unitary изменение basis не меняет ни principal-angle traces, ни scalar source цены.
+
+Тогда dJ_0[V] лежит нормально к ran J_0 и
+
+  ||dJ_0[V]||=||dP_0[V]||.                            (22)
+
+Действительно, если B=(I−P_0)dJ_0, то dP_0=B J_0†+J_0 B†; по ортогональному блочному разложению ||dP_0||=||B||. Дифференцируя E=I−(1/p)J_0†P_1J_0 в этой горизонтальной записи, получаем
+
+  ||dE[V]|| ≤ (2||dP_0[V]||+||dP_1[V]||)/p.            (23)
+
+Эта estimate МОЖЕТ быть грубой, потому что общая ambient unitary rotation обеих подпространств имеет нулевой действительный source, но положительную сумму отдельных norms. Для наших целей она достаточна.
+
+Вместо (16) пусть доказано на actual physical field chart для всех допустимых metric velocities V:
+
+  2||dP_(0,h)[V]||+||dP_(1,h)[V]||
+         ≤ B h^(−r)||V||_(raw,l∞),                    (24)
+
+с h-independent B, r≥0, с настоящими moving observer/whitening/retained archive conversions. Тогда без дополнительного поля E-source hypothesis из (14),(22)–(24) и конечной l∞/l1 двойственности:
+
+  h^−2||d(L_h−L_(h,m))||_(raw,l1)
+    ≤ C_d B δ^m h^(−6−r)/[p(1−δ)log(phi)].          (25)
+
+Тот же m_h из (18) даёт O(h^γ). Это **не** вывод (24) из eigenvalue gap: subspace motion could be arbitrarily fast while every principal angle remains inside the gap. Нужный новый input — контролируемая variation именно двух image projectors, а не arbitrary 16×16 unknown metric surrogate.
+
+### Небольшая угловая свобода при исходном z
+
+В имеющемся constructed comparison eigenvalue band все principal angles лежат строго между θ_*=acos(sqrt(p))≈38.172707627° и acos(sqrt(p(1−z)^3)). При z=2^−20 ширина углового интервала около 0.00010425747249°. Это не новый φ-угол космологии и не эмпирическое предсказание. Число показывает, что физический полный Einstein-source candidate считывает **малое относительное движение уже существующих золотых record planes**, а не требует нового независимого большого пространственного поля. Малость значения без bound (24) ещё не доказывает малость source.
+
+## 4.2. Цена извлечения через чередующиеся опыты не подменяет физическую среднюю Cost−Info
+
+В (5) используется Lüders operation K_yes=P и K_no=I−P, а не произвольный instrument с теми же effects. Для (6) важны именно **повторяемые postmeasurement states** на полной comparison K; произвольные дополнительный U_yes/U_no нарушают (7) даже если каждый отдельный Born эффект совпал. Все флаги старых rounds остаются в архиве; projecting на один prefix при READOUT не означает стирание остальных исходов при динамике.
+
+Обращение real programme J_i или некоммутирующих full-archive projectors к literal fixed one-way active→record gate set не установлено. Если физика допускает только старое X_t-commuting управление и не допускает такие projectors, (5) является математическим альтернативным экспериментом, а не замкнутым operational proof. Если допускает, полная BOOK Cost−Info *всё равно* может отличаться от surprise конкретного prefix или реконструированной logdet scalar diagnostic; conditional theorem §3 не заменяет actual test/cut/clock/stress selection. Existing full-pointer Shannon vs fixed-beta v8 source separation therefore remains in force.
