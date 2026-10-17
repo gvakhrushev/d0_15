@@ -1,0 +1,35 @@
+{
+  "concurrent_entropy_source": "b918296e9fb7a429d6586c4281753ee40a670391",
+  "execution_pr": 334,
+  "initial_source": "96041dac11b79ab528acd498c7cd326431b3e01c",
+  "latest_concurrent_source_read": "5cfabc8534197beeb3d8eeedf6978bc16254eeac",
+  "owners": [
+    {
+      "git_blob": "a1c54f5d0bd9bde1bf0f9b4078243a49db25dfb4",
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "ref": "b918296e9fb7a429d6586c4281753ee40a670391",
+      "used": "actual128 channel, full8/all16 recycling, existing span22/support/2048 entropy and source; not rediscovered"
+    },
+    {
+      "git_blob": "d73937a418b86f774e5159fb3b7ba06f05571163",
+      "path": "02_REGISTRY/research/A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md",
+      "ref": "7bc607dfa142b45bd46bbbcd9255f4891dbcb3a1",
+      "used": "conditional preparation-to-metric Schur interface; remaining retained fields not eliminated"
+    },
+    {
+      "git_blob": "8fe8059b98c60425fb570a10cb8d06c8adb13073",
+      "path": "02_REGISTRY/research/A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md",
+      "ref": "23c82df4d4ac8b9b1761fc2c79f1177fe195bd54",
+      "used": "new peer theorem on variable-field trace-class dynamics, not a full entropy/optimizer theorem on that carrier"
+    },
+    {
+      "git_blob": "1fda19f9e4d0d559ee134e69a863e14af8e78a09",
+      "path": "02_REGISTRY/research/A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md",
+      "ref": "5cfabc8534197beeb3d8eeedf6978bc16254eeac",
+      "used": "later peer whole-lattice entropy/code value limit; not uniform optimizer or source-jet convergence"
+    }
+  ],
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-complete-preparation-inputs/1",
+  "scope": "Documentary source pins; exact new algebra and analytic proof only, no old suite replay or native physical selection."
+}

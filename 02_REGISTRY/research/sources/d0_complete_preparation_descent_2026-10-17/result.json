@@ -1,0 +1,27 @@
+{
+  "GR_closed": false,
+  "Lorentz_metric_only_descent_proved": false,
+  "additive_full_code_limit": "A_h-n*g_blank -> Tr(C_beta rho)-S(Gamma_beta(rho)); C_beta=integral_0^beta Phi_t^*(V_code) dt",
+  "check_count": 483,
+  "check_names_sha256": "c82cfcdba0a56fccd77f9ee9c857be8a515353948420262fa344a0a5282d16b4",
+  "coherent_candidate_preparation_equation_solved_in_observed_algebra": true,
+  "complete_code_or_Info_selected": false,
+  "exact_basis_reconstructions": {
+    "basis_elements": 2048,
+    "coefficient_l1": "1",
+    "jump_bound": 11
+  },
+  "full_physical_density_replaced_by_pinching": false,
+  "information_recovery_probability_bound": "delta(t,nu)=exp(-t)*min_{0<=j<=11}(t*w*)^j/j!/8; finite-grid lower bound delta/2 for small h",
+  "observed_density_dimension": 2047,
+  "pointer_tomography_asserted": false,
+  "schema": "d0-complete-preparation-descent/1",
+  "scope": "same flat all8 first-shell coherent record; all16 forms and reference128 retained",
+  "unrestricted_rank_birth_stationarity_classified": false,
+  "weights": {
+    "nu_fixture": "3/5",
+    "wI": "81/100",
+    "wM": "9/400",
+    "wZ": "1/400"
+  }
+}

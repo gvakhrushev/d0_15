@@ -1,0 +1,30 @@
+{
+  "GR_closed": false,
+  "actual_native_decoder_admission": false,
+  "check_count": 483,
+  "exact_full_shell_basis_reconstructions": 2048,
+  "executed_mathematical_mutants_rejected": 4,
+  "finite_checks_are_general_analytic_proofs": false,
+  "general_variable_field_entropy_limit_proved": false,
+  "independent_scientific_acceptance": false,
+  "latest_concurrent_source_read": "5cfabc8534197beeb3d8eeedf6978bc16254eeac",
+  "new_Lean_compilation": false,
+  "optimized": "PASS_BYTE_IDENTICAL",
+  "ordinary": "PASS",
+  "physical_complete_code_or_Info_selected": false,
+  "prior_suites_replayed": false,
+  "python": "3.13.5",
+  "schema": "d0-complete-preparation-validation/1",
+  "sha256": {
+    "A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md": "6450740a9916bc6b3334528c94c110bacee2940b63be568ff0c8f6820f1e6916",
+    "CURRENT_SOURCE_DELTA.md": "15e727df3c5380cd0f431156e47efb5a18882db7e0ce4fe0cec003d954f5d2de",
+    "INPUTS.json": "6eec99832ce6ba56a70913ff28cea21179e85d235ea94656a4f218f5d064a35f",
+    "README.md": "3e844325a07b5961fa7f9fa77169e31b82acfd0f6420f74a0f1f10c3743c544a",
+    "check_preparation_descent.py": "4c61a011fe3e7648d20c482f2e93b8346c26f5784ce84b35e078e8a61f585f20",
+    "mutations.json": "468b4a7ba5dd09efbe92f2b4abbc6e1d4987b7cea9fce8f27499125db9396e09",
+    "result.json": "fb90f203aa18c21b560e542951142ab3d18107cfb672a8bc3df784c326ef3707",
+    "test_mutations.py": "5f0ab85490c7641993ce385b3925212f7971836835355c5f8fec19a4ad067ced"
+  },
+  "sympy": "1.14.0",
+  "whole_apparatus_eliminated": false
+}
