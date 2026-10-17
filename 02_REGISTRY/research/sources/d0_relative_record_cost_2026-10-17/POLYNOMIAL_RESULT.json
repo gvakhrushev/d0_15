@@ -1,0 +1,21 @@
+{
+  "schema": "d0-positive-polynomial-gram-controls/1",
+  "source_git_blob_sha": "73b3a67efa271f2ae5f0d392e7e71b1816dd7123",
+  "source_sha256": "9f1d50cec92abc41d68aef9e31f5665ae8eddb8a4ae021d792ddb8d18a9dbd2b",
+  "normal_exit_code": 0,
+  "optimized_exit_code": 0,
+  "stdout_byte_identical": true,
+  "result": {
+    "controlled_gap_delta": "199/10000",
+    "exact_controls": 47,
+    "moving_first_source": true,
+    "native_polynomial_actuation_selected": false,
+    "original_raw_terminal_closed": false,
+    "positive_effect": true,
+    "rational_reference_p": "9/16",
+    "status": "PASS",
+    "tested_mode_orderings": 2,
+    "tested_polynomial_degrees": [0,1,2]
+  },
+  "boundary": "rational independent matrix fixture; actual golden spectral corridor inherited analytically; native gate, full Cost-Info and GR terminal remain open"
+}
