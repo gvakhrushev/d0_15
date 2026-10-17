@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
-    },
-    {
-      "id": "WRK-A4D-ROLE-COFRAME-INDUCTION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Certify one Role-indexed induction from a symmetric variation to a coframe variation on the pinned pp-wave family, and compare its curvature source with an independent Christoffel source on one non-vacuum jet. The certificate stays a candidate and does not identify the native price with the geometric action.",
-      "brief": "00_WORK/tasks/WRK-A4D-ROLE-COFRAME-INDUCTION.md"
     }
   ]
 }
