@@ -2,6 +2,11 @@
 
 This directory contains CONTROL-curated research packets that materially affect D0 roadmap decisions but are not yet proof owners.
 
+Current integrator entrypoint: [D0 → GR strategic synthesis, 17 October](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md).
+It connects foundational theorem owners to the positive AF-star nonlinear
+Einstein composition and states the remaining native/source and recovery
+premises. This is research in Draft #334, not a new accepted CORE claim.
+
 Rules:
 
 - A research packet is not a substitute for Lean, a finite certificate, a registered external theorem, or an empirical passport.

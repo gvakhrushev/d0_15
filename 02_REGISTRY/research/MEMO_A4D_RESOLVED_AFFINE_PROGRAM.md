@@ -2,7 +2,7 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Snapshot:** 2026-10-16; accepted baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334)
+**Snapshot:** 2026-10-17; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334)
 
 ## Current route to general relativity
 
@@ -20,6 +20,29 @@ Progress means a transition proved and used in this chain, or a scoped
 counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
+
+### Consuming strategic synthesis — 2026-10-17
+
+Read the [foundations-to-GR synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+before another candidate calculation. It consumes the actual foundation
+owners and the positive [AF-star nonlinear Einstein composition](A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md),
+at input `ec4256c9`, alongside the accepted coupling boundary at main
+`1aa3ff8b` (#367). The tables below preserve earlier inputs and their scopes.
+
+The next proof is the complete **native first-source** map into the already
+selected nonzero Lorentz-star type, including matter, observer, preparation,
+reference and clock. The Palatini/Einstein consumer is available; its
+geometric formula need not be rediscovered. Native physical selection and
+nonempty recovery on a dense full variation class remain load-bearing.
+The AF theorem's growing 25m critical family is not yet that density proof.
+
+The synthesis proves why a conditional record law does not determine the
+joint law of geometry, and distinguishes the required macroscopic source
+limit from the stronger original fixed-source/raw comparison. The latter's
+all-ten unweighted h^-2 terminal stays OPEN and unchanged. No weak limit
+retires it; no theorem currently makes it a prerequisite of every possible
+macroscopic GR derivation. New agent dispatch waits for a fixed shared
+native/source interface; the present work is the integrator's composition.
 
 ### Strategic context and preserved inputs
 

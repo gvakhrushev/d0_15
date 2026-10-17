@@ -1,5 +1,26 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 17 October 2026 — foundations-to-GR strategic composition
+
+[Current strategic synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+consumes Books 00–03/06/07, actual foundation theorem owners and the recent
+positive/negative results in this same Draft. The positive AF-star theorem
+below is the available geometric consumer. The remaining proof is the
+complete native first-source map into its selected nonzero Lorentz-star
+type, physical classical selection, and nonempty recovery with all
+admissible field variations. No new agent wave is launched for this step.
+
+Three analytic distinctions now control the composition: conditional
+record probabilities versus the joint geometry/history law; smooth
+nonzero first-response universality versus literal equality of two
+microscopic instruments; and macroscopic source convergence versus the
+original stronger fixed-g/tau unweighted raw comparison. In the original
+`I_h=h² A_h` convention, the dual norm of the integrated source difference
+is exactly `h⁴` times the original raw norm when all bounded lattice probes
+are allowed. This does not prove either actual source estimate, supply a
+joint root, or change the original terminal below. Full physical GR and
+this fixed-source task both remain OPEN for their stated reasons.
+
 
 
 ## 17 October 2026 — direct POSITIVE A4D→OTO composition: one global AF Book record → Lorentz Palatini → Einstein

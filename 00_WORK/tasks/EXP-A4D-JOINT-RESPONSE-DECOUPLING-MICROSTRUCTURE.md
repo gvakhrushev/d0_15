@@ -10,6 +10,37 @@ Branch: `exp/a4d-joint-response-continuation-2026-10-16`
 Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`  
 Execution: `GitHub-first`
 
+## Strategic synthesis continuation — 2026-10-17
+
+User priority: the integrator reads the foundations and recent results and
+composes the D0→GR proof before launching further bounded agents. This
+continuation consumes Books 00–03/06/07, the actual foundation Lean owners,
+the existing foundation-forcing synthesis, and the positive AF-star
+composition at `ec4256c9146530d3e98774cad755024b4aaa247d`. The separate
+accepted AF coupling boundary is read at main
+`1aa3ff8b35133b1209164e0cd7da62ffefa647e2` (#367).
+
+Exact output: a composed conditional GR theorem with its missing native
+premises; analytic distinctions between conditional record and joint law,
+full first-source convergence and the original raw comparison; a concrete
+next source-universality statement consuming the selected Role-star owner.
+Carrier: retained complete histories, all16 matter grades/reference when
+present, independent coframe/link/matter/observer variations (16 coframe
+components, 24 Lorentz connection components). The original fixed g/tau,
+ten packed metric rows, unweighted raw norm and #216 comparator below are
+unchanged and remain OPEN. A separately stated macroscopic response theorem
+must not be substituted for this task's stronger terminal.
+
+Write paths: `02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md`,
+this brief, the existing primary artifact/current route/research README,
+and the scientific introduction of the root README. Consumer: distinguish
+already owned foundations/Palatini algebra from the remaining complete
+native source, physical selection and nonempty all-field recovery premises.
+Smallest decisive checks: analytic proofs with all quantifiers and norm
+factors explicit; existing-owner/link consistency and the affected document
+guards. No new action, source fitting, claim promotion, agent dispatch or
+unchanged mathematical/Lean replay is part of this synthesis.
+
 ## Bounded continuation — 2026-10-17
 
 The cone premise below is now resolved by
