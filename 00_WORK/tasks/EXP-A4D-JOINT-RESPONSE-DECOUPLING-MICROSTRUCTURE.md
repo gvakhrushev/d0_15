@@ -764,6 +764,34 @@ No old replay, census or Lean.
 Physical test admission, actual price/source and the original h^-2 terminal
 remain unchanged unless derived on the same native process.
 
+
+## Backward Einstein source-completion continuation — 17 October 2026
+
+At source3f368179, consume the existing central signed-loop programme,
+density/coframe dressing, complete Ward and feasible-gain owners. Work
+backward from the full symmetric source: prove fixed-pointer central
+chain factorization, the exact tilted preparation envelope and stationary
+fibre; derive nine exact determinant-preserving null coframe paths plus
+the existing full scale, with an explicit inverse in the original
+packed10 raw h^-2 norm, including the bounded frame/packing conversion.
+Keep equation residual separate from the designated comparator residual. Do not require universal quantum-gain saturation
+or unique full preparation for this narrower first-source consumer.
+
+Write A4D_BACKWARD_EINSTEIN_SOURCE_COMPLETION.md and only its packet
+sources/d0_backward_einstein_2026-10-17/, with integrator-owned intake in
+the existing primary synthesis and current route. The smallest decisive
+checks are exact rational null/source inversion and finite coframe paths,
+plus central pointer chain/Gibbs identities and their source controls.
+Use check_null_source_basis.py and check_central_pointer.py; no old
+scientific replay, rank/spectrum census, Lean, new action or selector.
+This consumes the actual same-program output/reference/cost first-jet
+binding. It does not identify terminal relative price with SAME-history
+likelihood price, enlarge a restricted stored-native admissible image,
+assert preparation reachability, or close the original joint-critical
+source/comparator/refinement terminal. All source terms share any derived
+multiplier; approximate splice error must be o(lambda_h h^2) in the
+original dual norm.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

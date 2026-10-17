@@ -204,6 +204,52 @@ inserted by hand. The next consumer is the uniform finite-B trace/source
 estimate and the actual native calibration/preparation law; an a2 or a4
 stationary equation alone is not the full price equation.
 
+
+## Backward Einstein composition: central pointer and complete source basis — 2026-10-17
+
+The new [source-completion memo](A4D_BACKWARD_EINSTEIN_SOURCE_COMPLETION.md)
+consumes this same continuation at scientific source
+`3f368179627acc9f2c3e9616df729ac2280a77a0`; it adds no physical price or
+independent task. The bounded packet is
+[sources/d0_backward_einstein_2026-10-17/](sources/d0_backward_einstein_2026-10-17/).
+
+For the existing central compiler, full block-preserving pointer output
+factorizes as `q_alpha,k=q_alpha P_jk(z)`, with the corresponding complete
+reference. Exact classical KL chain rule gives the same geometric
+`lambda a dQ` as the quantum terminal price, for every old preparation.
+The true pointer optimum is the already derived quantum faithful envelope,
+while its minimizing preparations form an entire convex fibre of fixed
+measured masses. This removes universal quantum gain and unique full
+preparation from this particular first-source route. It preserves actual
+test admission, preparation reachability, additional original costs and
+the distinction from SAME-history likelihood price.
+
+The memo also constructs nine finite nilpotent coframe shears
+`hat_e_epsilon=(I-epsilon ell ell_flat/2)hat_e`, with exact
+`g_epsilon^-1=g^-1+epsilon k tensor k` and unchanged determinant.
+Together with full scale they form an explicitly invertible basis for
+all10 symmetric source rows. The fixed-mass density dressing is an
+involution; scale is available without violating normalized masses.
+The reconstruction has internal-frame packed10 raw-l1 inverse bound5/2 for the nine null
+rows and1 for trace (full16:17/4 and1). After the explicitly bounded original frame/packing conversion C_T, one
+common cell sum and the original h^-2 normalization are preserved. A restricted native chart is
+not extended by this geometric algebra, and no invisible connection mode
+is declared gauge.
+
+This is an equivalent complete testing interface for the original
+`E_Q(Q_h,K_h)-E_Q(Q_h,K_h^sm)` gap, NOT the tautology from comparing two
+identical prescribed-source equations. Actual Lorentz descent and the
+common bounded frame conversion remain required. The next central
+consumer is the same complete native output/reference/cost source splice
+`dA_native=lambda_h a_h dcalQ_h+r_h`, including the independently specified
+matter/source in the SAME calQ. Exact splice preserves roots even when
+lambda_h decreases; approximate splice needs
+`||r_h||=o(lambda_h h^2)`. The equation residual and the designated comparator residual are explicitly
+separated in memo(37a); the source splice only controls the former. Native
+programme/price selection and the non-tautological joint-refinement terminal
+remain open. No status or
+claim promotion follows from the bounded algebra.
+
 ## Accepted support at the continuation baseline
 
 The accepted baseline includes three bounded outputs that now have named

@@ -1,0 +1,39 @@
+{
+  "source_ref": "3f368179627acc9f2c3e9616df729ac2280a77a0",
+  "integration_base_observed": "cea62e743610ccbf70a8c7de55ecb1f2475d22c7",
+  "task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr": 334,
+  "scope": "new central pointer/source composition and exact null-plus-scale algebra; no native admission or original refinement terminal",
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_BACKWARD_EINSTEIN_SOURCE_COMPLETION.md",
+      "sha256": "5c63c481dbe70996f168998afb108a9ac1a2efc74ab6dc353fc55ea19232298d",
+      "bytes": 40538
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_backward_einstein_2026-10-17/POINTER_RESULTS.txt",
+      "sha256": "c79c83b2f8155931a8d96ba28075c29e0a5a1f3a636e15e046a4060f6487f5e9",
+      "bytes": 1413
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_backward_einstein_2026-10-17/RESULTS.txt",
+      "sha256": "218f9bda07c9b2e5eaa9871808c1dbe50dd4a2a88c1f85ca436374529df754e8",
+      "bytes": 980
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_backward_einstein_2026-10-17/RESULT_RU.md",
+      "sha256": "66fc8adec9f5f8cc7f7b85d2c70e9aff031f4265931d2e68adb845d0fe9dbdbc",
+      "bytes": 6951
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_backward_einstein_2026-10-17/check_central_pointer.py",
+      "sha256": "9259c774eeab89521bfb1533dab65e8c8474c634849678aed66e944354521f2f",
+      "bytes": 15798
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_backward_einstein_2026-10-17/check_null_source_basis.py",
+      "sha256": "05780e3e6b7fc8b439873b90cb6ead949ec31b65e03bd8da32115ecf210b11a9",
+      "bytes": 13762
+    }
+  ]
+}

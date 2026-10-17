@@ -517,6 +517,48 @@ nonflat joint roots, uncontrolled microstructure and the original
 fixed-source/raw-norm terminal remain open. Do not restart an owned root
 search or an unchanged family census.
 
+
+### Backward source-completion intake — 2026-10-17
+
+The [backward Einstein composition](A4D_BACKWARD_EINSTEIN_SOURCE_COMPLETION.md)
+consumes the central signed-loop compiler, full density/coframe map and
+Ward descent at source `3f368179627acc9f2c3e9616df729ac2280a77a0`.
+It proves a narrower sufficient route for the existing central programme:
+a fixed complete block-preserving pointer has the same geometric source
+`d_X A_ptr=lambda a dQ`, `2/5<a<5/2`, without universal quantum-gain
+saturation. Its true preparation minimum is exactly
+`6-log(sum_j d_j mu_j exp(-ell f_j))/ell`, equal to the quantum faithful
+geometric envelope. All states with the optimal measured masses form a
+connected convex fibre in the full AF density space; their first source is
+the same. Actual reachability, extra preparation costs and full price
+binding remain explicit.
+
+Nine rational null coframe shears and one full-coframe scale give an
+explicit inverse for all ten symmetric metric rows. The inverse preserves
+the original cell-summed raw norm with null coefficient 5/2 for packed10
+and 17/4 for full16, and commutes with the unchanged h^-2 prefactor.
+The fixed-mass dressing is an involution, so normalized masses do not
+remove the full geometric chart's scale direction. These algebraic paths
+do not enlarge a restricted stored-native admissible image; its conormal
+remains until actual source-complete admission/descent is proved.
+
+The original coordinate/packing norm additionally carries the actual bounded
+frame-conversion constant C_T, as specified in memo(29a). Source-equation
+residual and the designated smooth-comparator residual remain separate;
+compiler transfer alone does not control their sum.
+
+**Route change:** universal old-memory tomography/gain and a unique full
+preparation are no longer prerequisites for this central first-source
+consumer. Consume the actual complete output/reference/cost first jet,
+with one common multiplier on geometry AND independently specified source.
+The central terminal relative-price theorem is not a substitution for the
+SAME-history `(H-log N_raw)/ell` contract. If the splice is only approximate,
+its source error must be `o(lambda_h h^2)` in the original norm.
+The original joint-critical/refinement terminal against #216 remains
+unchanged. The [bounded packet](sources/d0_backward_einstein_2026-10-17/)
+checks the new inverse, finite paths and central chain/Gibbs algebra;
+no old scientific replay or claim/lifecycle promotion is consumed.
+
 ### Two linked scientific fronts
 
 | Front | Next bounded output | Where it is consumed |
