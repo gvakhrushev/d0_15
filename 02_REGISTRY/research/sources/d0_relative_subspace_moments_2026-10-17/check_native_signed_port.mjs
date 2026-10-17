@@ -60,7 +60,7 @@ for(let wi=0;wi<Ws.length;wi++)for(let mi=0;mi<Ms.length;mi++){
 // Fixed *signed* output-port contrast of two golden-branch full images.
 // Unlike the SO(2) port rotation, its cross overlap is nontrivial.
 const signPort=grid(8,8,(i,j)=>i===j?(i<4?one:neg(one)):zero);
-const p3=mul(a,amp),p5=mul(psq,p3),twoPsq=add(psq,psq);
+const p3=mul(p,psq),twoPsq=add(psq,psq);
 let signedCases=[];
 for(let wi=0;wi<Ws.length;wi++)for(let mi=0;mi<Ms.length;mi++){
  const W=Ws[wi],pre=Ms[mi];
