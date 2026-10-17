@@ -467,3 +467,35 @@ cost, preparation, mark/cut/normalizer, clock/source, плюс реальное
 Остаётся обнаружить или исключить именно такое geometry-dependent
 branching в **существующей реальной** D0 instrument, не изобретая
 после результата новую функцию Info.
+
+
+## 11. Настоящий Julia gate вместо гипотетического \(p\,w(s)\): closed one-cone optical splice
+
+**Потреблено новое буквальное исследование:** [A4D_LITERAL_JULIA_NULL_FOCUSING_AND_PORT_BOUNDARY.md](A4D_LITERAL_JULIA_NULL_FOCUSING_AND_PORT_BOUNDARY.md), со ссылками на первичного владельца всего 128-выходного complete instrument и first-exit истории. Этот результат **уточняет гипотетический** §10: модель сырых весов \(p\,w,p^2\) может иметь вычисленный там entropy/Ricci second-jet, но она **не** является двумя условными golden-портами реального Julia-прибора. У последних точно \(K_{0j}=pL_j\), \(K_{1j}=\sqrt pL_j\) для каждого nonblank j, и потому field-dependent port response строго нулевой. Нельзя использовать formula(26)–(27) из §10 как native source.
+
+Вместо неё существует **уже принадлежащая исходному прибору** complete first-exit вероятность \(q_{\chi,h}\) метки 16, coefficient0, оба golden-порта, с действительной исходной C1-нормировкой. На целой кривой \(e=sO_{01}(\theta(y))\), \(s>1\), без слабополевого разложения, для двух нормированных null векторов
+\[
+k_x=s^{-1}(\cos\theta-\sin\theta,\sin\theta+\cos\theta,0,0),
+\quad k_y=s^{-1}(\cos\theta,\sin\theta,1,0)
+\]
+имеем \(\operatorname{Ric}(k_x,k_x)=2\theta''/s^2\),
+\(\operatorname{Ric}(k_y,k_y)=2(\theta')^2/s^2\). Из **фактического**, ранее доказанного first-exit source
+\[
+Q_\chi[\theta]=\lim h^{-2}q_{\chi,h}[\theta]
+ =\frac{1-e^{-\beta/s^2}}{256s^2}
+  \bigl(1+2\langle(\theta')^2\rangle\bigr)
+\]
+следует **точно**
+\[
+\boxed{Q_\chi[\theta]-Q_\chi[0]
+ =\frac{1-e^{-\beta/s^2}}{256}\langle\operatorname{Ric}(k_y,k_y)\rangle},
+\quad
+\boxed{\mathcal E_{\chi,\theta}
+ =-\frac{1-e^{-\beta/s^2}}{128}\operatorname{Ric}(k_x,k_x)}.
+\]
+
+Это и есть действительный scoped носитель перехода от **одной** full retained record к двум null Ricci components: один в значении вероятности, другой в ее настоящем variational source. Он сильнее первоначального искусственного Bernoulli кандидата и меньше требует от аппарата (никаких новых gates или per-ray area-weighted probabilities), но ограничен owned faithful cone; связь с **выбранным полным Cost−Info**, physical matter, десятью native метрическими вариациями и independently sourced exact joint-refinement не появилась автоматически.
+
+Реальный golden фактор \(p^3=\varphi^{-3}\) уже содержится в **условном gain на один nonblank occurrence**, а не в \(q_{\rm port}''\). Actual rare-event coarse Shannon имеет иной порядок: \(H(Y_\chi)=2h^2Q_\chi\log(1/h)+O(h^2)\), при настоящем \(N=1\) полного Born cut. Для этой отдельной бинарной метки это даёт ту же null-Ricci в коэффициенте, но полный 128-label tape Info может иметь компенсации. На той же cone leading \(H+J+R\) может оставаться \(\theta\)-независим, поэтому узкий физический splice теперь формулируется точнее: **вывести source конкретно всей finely retained history-price и проверить, сохраняется ли показанный \(h^2\) χ-сигнал после включения sibling labels, blank, controller, moving preparation/normalizer**. Отдельный readout не назначается физическим действием только потому, что он красиво читает Ricci. При winding \(\theta=my\) вариационная χ-строка равна0, а \(\operatorname{Ric}(k_y,k_y)>0\): это не полная stationary Einstein-система.
+
+**Технический результат:** независимый exact SymPy-контроль двух null-свёрток непосредственно из вычисленных Christoffels, условия null, true port Kraus ratio, \(p^3\) и источника записан в [check_literal_null_optics.py](sources/d0_literal_julia_null_focusing_2026-10-17/check_literal_null_optics.py). Никакие старые native certificate, root/spectrum suites или Lean не изменены.
