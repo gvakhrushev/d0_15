@@ -212,3 +212,29 @@ I(A:B)=\frac12\log\frac{\det C_{00}\det C_{11}}{\det C}\tag{16}
 ## 7. Проверка
 
 `check_reverse_ir.py` независимо строит Riemann/Ricci из metric jets на двух полных4D ADM fixtures с ненулевыми lapse, shift, spatial curvature и variable temporal h; проверяет все10 ADM directions, Hodge Weitzenbock trace identities, fixed-beta original v8 polylog coefficients, Poisson equality двух 4D thermal representations и падение global flat-shape response при growing R. Отрицательный scope: это **не** Lean proof физической primitive admission, не replay expensive root, не C² full native UV/stationary theorem. `python -O` и обычный Python дают один deterministic JSON с теми же source parameters; он поддерживает аналитический синтез, но не заменяет его.
+
+## 8. Сильная обратная сцепка, найденная после сборки: пространственный носитель УЖЕ в accepted `main`
+
+Это уже не предложение построить новый 3D носитель. В **принятом main** файл `03_FORMALIZATION/D0/Geometry/ArchiveSpatialHistorySplit.lean` (Git blob `e019851589ad7e750e183ff1098c24283a093d19`) формализует:
+
+- `SpatialRole := {r : Role // r ≠ A}`, `spatialRole_card_three = 3`;
+- `archiveRolePhase_timeSpatialEquiv`: точную факторизацию **циклической** Role-A-координаты и трёх spatial Role координат;
+- `axisInvariantCochainEquivSpatial`: A-инвариантный подноситель с сохранением **всех 16 CAR grades**;
+- `spatialCochainPullback_hodgeSquare` и `axisInvariant_hodgeSquare_equiv_spatialLaplacian`: буквальный интертвининг уже существующего квадрата Hodge-CAR на A-инвариантном секторе с **трёхмерным пространственным Laplacian**.
+
+Следовательно, в исходном D0 уже физически *не* приходится выдумывать 3D граф/новую многокомпонентную Fock оболочку ради (8). Размерностная, flat finite-Hodge и spatial-cochain часть обратной стрелки имеет **принятых владельцев**. Но это **не** равенство curved spatial `a2=-4R3/3`, не полная 3D Levi–Civita на произвольном coframe, не выбор его физической цены и не автоматическое распараллеливание настоящего такта.
+
+`HistoryIndex` в том же Lean-модуле сознательно берёт **отдельный** Feshbach history grammar. Старое направление "приравнять Role A-phase к настоящему времени" не разрешено: `A4D_CAUSAL_TIME_ROLE_INTERTWINER.md` уже показывает, что конечная циклическая трансляция не может быть сопряжена гиперболическому Pisot-flow. Нужны **same-axis/orientation bridge** и временная распаковка \(\mathbb R\times T^3\) — не новая непрерывная масса/константа. Для GR требуется настоящее поле lapse/shift и его source, а не имя `A`.
+
+### Теперь точный минимальный native consumer
+
+Вместо десятков новых независимых «первых шагов» нужно взять **вместе** четыре уже имеющихся входа:
+
+1. `ArchiveSpatialHistorySplit.lean`: spatial 3D Hodge square / all16 readout в accepted main;
+2. `A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md`: полный full16 curved positive Hodge +omega_LC с источником;
+3. `A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md` плюс `A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md`: recover g from observer/coframe и true moving density/clock;
+4. `A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md` вместе с `A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md`: фактическая native retained full-price/Info и его полный первый источник.
+
+**Требование на одну композицию:** построить из **этих входов без новых полей** spatially restricted curved Hodge readout на A-инвариантной/observer-spatial карте и показать, что тот же actual `Cost−Info` выбирает её relative coefficient `−2` с правильным `Ndt` clock density, **включая все derivative jets**. Его lead two-derivative covector должен совпасть с (14), что затем даёт (15) и все10 Einstein equations без отдельного nonlinear symbol search. Если physical clock/restricted likelihood уже содержит подходящий conditioning, установить точную equivalence/Schur; если нет — фиксировать одну конкретную неподставляемую стрелку, не писать произвольный Einstein residual.
+
+Это сужает настоящую открытую часть: 3D spatial support и плоский Hodge-square уже являются **принятым математическим input**, а не новой гипотезой. Переход от flat spatial readout к curved physical relative price остаётся источником, который надо получить; доказательство GR ещё не объявляется завершённым.
