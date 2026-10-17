@@ -30,3 +30,13 @@ Both modes use explicit RuntimeError guards rather than assert. The 19 exact loc
 ## Scope
 
 No previous source/certificate replay, Lean run, additional action/primitive, branch, task or CORE promotion. This is a consuming research result; all physical admission and original GR tasks remain open.
+
+
+## Additive innovation projector result
+
+The stronger deterministic realization does not feed q_j as a scalar oracle. For c_j=C e_j, the orthogonal innovation norm squared against span(c_1,...,c_(j−1)) is exactly q_j. Apply the previously constructed full Julia U_C to (e_j,0) and measure the success projection (I−P_(j−1))⊕0. Both success and failure retain the complete workspace. The physical question is whether the same native programme implements the moving projector/readout and accounts for its source/cost; the algebraic construction does not assert it.
+
+    python 02_REGISTRY/research/sources/d0_relative_record_cost_2026-10-17/check_moving_innovations.py
+    python -O 02_REGISTRY/research/sources/d0_relative_record_cost_2026-10-17/check_moving_innovations.py
+
+This separate helper passed 24 exact controls with byte-identical normal/-O stdout. Its source Git blob SHA 6a1e30d6d7d948ee513c0116ba6c209b3235ba2c was checked against the published branch. The exact moving-projector source differs in sign from the false frozen-projector source (−1/3 versus +71/1725). See INNOVATION_RESULT.json; original geometric/source/no-go owners are unchanged.
