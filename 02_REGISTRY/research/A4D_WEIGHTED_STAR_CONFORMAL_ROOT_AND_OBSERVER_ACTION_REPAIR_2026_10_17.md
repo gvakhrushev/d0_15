@@ -130,3 +130,30 @@ The other mandatory tasks remain full physical input admission and Info/cut sele
 ## 6. Narrow direct validation
 
 The exact SymPy/source checker is in sources/d0_weighted_star_conformal_2026-10-17/check_conformal_gate.py. It independently computes all SIX Sigma_ab exterior forms and first derivatives, verifies all THREE rotation Euler zeroes and THREE missing boost Euler sources, the complete 4D Christoffel/Ricci/Einstein tensor, scalar action/first variation/second variation, exact observer Qobs Born identity, its boundary term, and a genuine rational future observer with all four own-leg spatial norms >0 and integer torus Fourier phase. Normal and python -O produce identical JSON. This is an exact all-amplitude continuum lemma, not remote CI, not an actual finite original star root, and not independent acceptance.
+
+
+## 7. Physical price KILL-FIRST: ordinary complete-cut Born surprisal is NOT the needed Einstein action
+
+The previous §4 recovers the full conformal EH value from a signed **relative probability score**. This is not the normalized expectation of the ACTUAL completed cut's ordinary branch surprisal. The distinction can be tested without guessing any nonlocal Info law.
+
+Let \(a_u(t)=1+u\sin t\) and \(P_c(u,t)=3\epsilon_{\rm control}^2(a_u'/a_u^2)^2\). Along this pure observer-isotropic family \(P_o=0\), \(P_b=1-P_c\). As \(u\to0\) with \(u\ne0\):
+\[
+P_c=3\epsilon_{\rm control}^2u^2\cos^2t+O(u^3),\qquad
+\frac{H(P_c,1-P_c)}{\log\varphi}
+=\frac{6\epsilon_{\rm control}^2}{\log\varphi}
+ u^2\cos^2t\,\log(1/|u|)+O(u^2).
+\]
+Integrating \(t\in[0,2\pi]\) gives
+\[
+\boxed{
+\int H_\varphi\,dt
+=\frac{6\pi\epsilon_{\rm control}^2}{\log\varphi}\,
+ u^2\log(1/|u|)+O(u^2)
+}
+\tag{11}
+\]
+whereas the EXACT target Einstein action is \(6\pi u^2\). Thus the ordinary normalized complete-cut Shannon/locally projective Cost−Info functional has a **divergent second source** at the same flat point where EH has the FINITE Hessian \(12\pi\). Field-independent code shifts, constants and finite nonzero overall rescalings cannot repair the \(u^2\log|u|\) discrepancy; their first/second derivatives have no compensating log.
+
+This consumes, rather than rediscovering, the already-owned exact scalar-event-local/projective gain rigidity and observer-Born entropy-rank-birth obstruction. It DISQUALIFIES a very natural but FALSE physical selection of (5) as the direct full action. A coherent central full-record interference and its single analytic terminal AF price can avoid rank-birth logs mathematically (the existing five-word construction holds \(z_*>0\)), but the original one-way old-reference actuation, **full cost of the controller**, and physical selection of precisely that complete-price semantics remain open. Do not treat signed \(2P_c-P_o\) as automatically equal to observed Cost−Info.
+
+**Minimal actual physical target:** one SAME native history/clock/reference instrument must supply the *analytic* first-source \(-12a''\) on this conformal witness while retaining all failed/exited words and full controller costs. Test this BEFORE new curvature or rank certificates. If it cannot, the canonical observer-preserving bare star plus locally projective branch pricing cannot yield the complete Lorentz Einstein vacuum dynamics, even though its weighted metric domain contains all near-flat Lorentz geometries and satisfies conditional six-plus-Ward source completeness.
