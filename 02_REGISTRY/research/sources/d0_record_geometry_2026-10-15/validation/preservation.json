@@ -1,0 +1,15 @@
+{
+  "GR_closure": false,
+  "counts": {
+    "binary_chunk_occurrences": 10,
+    "nested_archive_occurrences": 7,
+    "outer_text_occurrences": 150,
+    "outer_unique_text_contents": 77,
+    "previous_strategy_text_occurrences": 21,
+    "published_unique_text_contents": 78,
+    "unique_nested_archives": 4
+  },
+  "original_zip_compared": true,
+  "scientific_acceptance": false,
+  "status": "PASS_READABLE_RESEARCH_PRESERVATION"
+}

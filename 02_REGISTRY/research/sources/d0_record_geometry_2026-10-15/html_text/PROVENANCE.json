@@ -1,0 +1,14 @@
+[
+  {
+    "source": "original/inputs/D0_otobrazhenie_pole_pribor.html",
+    "source_sha256": "95bfe3c82f74f8bee9b90f78e02d4d5e7a2ba41a52d418e9016844a5cccc1222",
+    "text_view": "html_text/D0_otobrazhenie_pole_pribor.md",
+    "text_view_sha256": "310fe8e520688cef4980c0c389f2b0cf6b295f7f00d6ed50d0cec55e6082369d"
+  },
+  {
+    "source": "original/inputs/D0_sintez_bashnya_phi_predel.html",
+    "source_sha256": "cc327e05d246a86847248c690469aae47cab3c27f68d49c9c9d4500dc1f3a84b",
+    "text_view": "html_text/D0_sintez_bashnya_phi_predel.md",
+    "text_view_sha256": "eceb1455ed826a54659179eb5a863612c0b7a2389170c977edc7996cc1f52584"
+  }
+]

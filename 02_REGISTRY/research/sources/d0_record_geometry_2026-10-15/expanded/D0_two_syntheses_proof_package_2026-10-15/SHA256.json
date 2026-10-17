@@ -1,0 +1,15 @@
+{
+  "PROVENANCE.json": "6476e7ac4eb2b816f000b90a9783c64cc27dcd47ff9afed2870031b95556525a",
+  "README.md": "36a867aeeb70fb0a3387cf0c731e07a963672c27553ce29fab41586270ae45ad",
+  "SYNTHESIS_RU.md": "105db0d8f45b88904e25cbb5b798a0afe86dcb363886dc59c935688484c1efb0",
+  "inputs/cold_start_audit.md": "466e7421dddb86675154ffbfb6c9c08ac6b6d50a1146dc58441d37b479784c27",
+  "inputs/cold_start_audit_response.txt": "ddd974f2f00688aa577558e4636ed30eae6dc46a5e0b519f5a8c1f77186c1560",
+  "inputs/prior_joint_ward_result.md": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+  "inputs/prior_resonant_proof_package.zip": "fe2a0519250980de4990f2019c1b8a82cdf0471844942d3063cd2d048793cec6",
+  "inputs/prior_resonant_synthesis.md": "3b214280de423dcf48da85c9ec8a816c9e35deca443f0a153ebab0ca621e4ec3",
+  "new_identities.py": "55cd845e09d62147138b3faf04506895ec7bad75ac1f75a4c528e047dec964bb",
+  "results.json": "2dd9ab48310264a452c2e951cad7d796ae914c62a5e46abc7b1ca27d97081a32",
+  "results_optimized.json": "2dd9ab48310264a452c2e951cad7d796ae914c62a5e46abc7b1ca27d97081a32",
+  "run.log": "65210db321e4126c7df6d0591875f5b203cdb1e881a92c877452ccb79500ac6f",
+  "run_optimized.log": "65210db321e4126c7df6d0591875f5b203cdb1e881a92c877452ccb79500ac6f"
+}

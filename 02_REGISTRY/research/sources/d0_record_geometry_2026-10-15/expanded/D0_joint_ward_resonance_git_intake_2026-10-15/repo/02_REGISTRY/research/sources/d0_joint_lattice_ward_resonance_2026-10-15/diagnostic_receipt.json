@@ -1,0 +1,63 @@
+{
+  "status": "FLOATING_POINT_DIAGNOSTICS_NOT_PROOF",
+  "expansion": [
+    {
+      "name": "transverse_to_resonance",
+      "h": 0.01,
+      "scaled_error": 0.0015910344609860634,
+      "scaled_inverse": 3.518187013263843
+    },
+    {
+      "name": "transverse_to_resonance",
+      "h": 0.005,
+      "scaled_error": 0.0007958658073298271,
+      "scaled_inverse": 3.5090779211780485
+    },
+    {
+      "name": "transverse_to_resonance",
+      "h": 0.0025,
+      "scaled_error": 0.00039802229378514735,
+      "scaled_inverse": 3.5045350950998073
+    },
+    {
+      "name": "tangent_noncharacteristic",
+      "h": 0.01,
+      "scaled_error": 4.997272445976367e-05,
+      "scaled_inverse": 2.2411144961726848
+    },
+    {
+      "name": "tangent_noncharacteristic",
+      "h": 0.005,
+      "scaled_error": 1.249267760986351e-05,
+      "scaled_inverse": 2.2412976551552726
+    },
+    {
+      "name": "tangent_noncharacteristic",
+      "h": 0.0025,
+      "scaled_error": 3.123138252157249e-06,
+      "scaled_inverse": 2.241343447049901
+    }
+  ],
+  "independent_full_action_autodiff": [
+    {
+      "modes": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "complete_rows": 6144,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "modes": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "complete_rows": 6144,
+      "max_error": 2.220446049250313e-16
+    }
+  ]
+}

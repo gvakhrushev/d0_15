@@ -1,0 +1,56 @@
+stage: input restored
+stage: ranks and selection done
+stage: diagonal coefficients done
+stage: mixed coefficients done
+stage: zero mode and cubic done
+{
+  "status": "EXACT_FINITE_SECOND_ORDER_COMPATIBILITY",
+  "historical_input_zip_sha256": "441c5c503737c375600cd119ef5bf0d0c343b0445d425b1e755acd99ddd7b47f",
+  "linear_input_sha256": "8a25e81936ef10346c41cdc9d9bea899f415cd6c55c847b604d94a4a48d01474",
+  "rank_rows_J_H_HC_G": [
+    [
+      24,
+      24,
+      24,
+      0
+    ],
+    [
+      28,
+      22,
+      23,
+      4
+    ],
+    [
+      30,
+      24,
+      24,
+      4
+    ],
+    [
+      28,
+      22,
+      23,
+      4
+    ]
+  ],
+  "real_microcell_dimensions": {
+    "total": 136,
+    "kernel": 26,
+    "normal": 110
+  },
+  "fourier_normalization": "x_j=Y chi i^j+conjugate; Y^*Y=I/7; sum four faces-of-cell sites",
+  "kernel_force_pi": "(32/49)*Re(chi1^2-chi2^2)*(0,1,1,0)",
+  "kernel_force_zero": "all ten components identically zero",
+  "quadratic_compatibility": "Re(chi1^2-chi2^2)=0",
+  "scope": "fixed four-phase translation-invariant microcell; original naked-star action; affine coframe chart",
+  "not_proved": [
+    "exact nonlinear resonant roots",
+    "positive physical energy",
+    "native full Cost-Info identification",
+    "all-mode refining limit",
+    "nonlinear gauge symmetry",
+    "GR closure"
+  ],
+  "claim_of_lean_compilation": false,
+  "sympy_version": "1.14.0"
+}

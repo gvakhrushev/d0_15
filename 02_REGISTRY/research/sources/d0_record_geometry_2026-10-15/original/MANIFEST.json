@@ -1,0 +1,25 @@
+{
+  "schema": "d0-source-faithful-record-handoff/1",
+  "files": {
+    "EXPENSIVE_AI_BRIEF_RU.md": "396f5b51b35579be1e2457c4121d3b29bd5265246bd5112ed4aca0e670b1867c",
+    "README.md": "3218a1c5e0bd41a0146fd17114f9a2b5e3a6862522cfe22a7716d44ba5ad1a16",
+    "SYNTHESIS_RU.md": "4f57d080dbd52e52961427d8c89c6f4b5a9db8788c17de576f2bfd48c400c5b4",
+    "VALIDATION.json": "dfce8197321b5881cfdbbda63ff6b6cb468e2576923a842d0d0ed80c2fcff5de",
+    "check_heat_window.py": "0c6e785de2454c72862ff96832a03d921edd69beda8cdc070d0b42f339bd4d25",
+    "check_mutations.py": "5ae10c73579273a15009316d48a61d5c894e151953044df3c83a1e89e0a1495c",
+    "check_record_2jet.py": "2b99efc7c09df0aad2b3c8df25600d423582d203031c19c98af71d293931c3a3",
+    "exact_result.json": "7a116160367984995b9bf9ed6631fa58bf432a135ea6b9e679fbafde11b1ac2a",
+    "exact_result_optimized.json": "7a116160367984995b9bf9ed6631fa58bf432a135ea6b9e679fbafde11b1ac2a",
+    "heat_diagnostic.json": "7e86fae146d36fb7c24deed63761806eddb20f628669a0493f2c1599a205775c",
+    "heat_diagnostic_optimized.json": "7e86fae146d36fb7c24deed63761806eddb20f628669a0493f2c1599a205775c",
+    "inputs/D0_deep_audit_2026-10-15(1).md": "466e7421dddb86675154ffbfb6c9c08ac6b6d50a1146dc58441d37b479784c27",
+    "inputs/D0_joint_lattice_ward_resonance_result_2026-10-15.md": "c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+    "inputs/D0_otobrazhenie_pole_pribor.html": "95bfe3c82f74f8bee9b90f78e02d4d5e7a2ba41a52d418e9016844a5cccc1222",
+    "inputs/D0_resonant_synthesis_proof_package_2026-10-15.zip": "fe2a0519250980de4990f2019c1b8a82cdf0471844942d3063cd2d048793cec6",
+    "inputs/D0_resonant_synthesis_to_GR_2026-10-15.md": "3b214280de423dcf48da85c9ec8a816c9e35deca443f0a153ebab0ca621e4ec3",
+    "inputs/D0_sintez_bashnya_phi_predel.html": "cc327e05d246a86847248c690469aae47cab3c27f68d49c9c9d4500dc1f3a84b",
+    "inputs/D0_two_syntheses_proof_package_2026-10-15.zip": "4df85b9530d9c9264d3bbbbd9a3865ec6b27e2f19f1dda660709bf94a7f037f7",
+    "inputs/D0_two_syntheses_to_GR_2026-10-15.md": "105db0d8f45b88904e25cbb5b798a0afe86dcb363886dc59c935688484c1efb0",
+    "mutation_result.json": "d2f20ed9fbace4cb506de667bb560654ef658248f11876cc402ebcbcd8574210"
+  }
+}

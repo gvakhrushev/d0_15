@@ -1,0 +1,14 @@
+{
+  "content_change": {
+    "rejected": true,
+    "reason": "Preserved text differs"
+  },
+  "missing_file": {
+    "rejected": true,
+    "reason": "[Errno 2] No such file or directory"
+  },
+  "missing_occurrence": {
+    "rejected": true,
+    "reason": "Count mismatch"
+  }
+}

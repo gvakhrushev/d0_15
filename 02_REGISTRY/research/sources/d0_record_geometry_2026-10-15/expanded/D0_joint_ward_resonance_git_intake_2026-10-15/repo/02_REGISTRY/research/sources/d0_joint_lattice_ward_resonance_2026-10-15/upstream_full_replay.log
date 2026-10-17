@@ -1,0 +1,51 @@
+hessian site 0
+hessian site 1
+hessian site 2
+hessian site 3
+hessian site 4
+hessian site 5
+hessian site 6
+hessian site 7
+hessian site 8
+hessian site 9
+hessian site 10
+hessian site 11
+hessian site 12
+hessian site 13
+hessian site 14
+hessian site 15
+hessian site 0
+hessian site 1
+hessian site 2
+hessian site 3
+hessian site 4
+hessian site 5
+hessian site 6
+hessian site 7
+hessian site 8
+hessian site 9
+hessian site 10
+hessian site 11
+hessian site 12
+hessian site 13
+hessian site 14
+hessian site 15
+EXACT ROOT {'radius': 2.2737367544323206e-13, 'contraction_upper': 1.232213056621168e-06, 'displacement_upper': 1.7129739995119345e-18, 'image_radius_upper': 1.9931468111250295e-18, 'variables': 384, 'all_connection_rows': 6144, 'test': 'strict outward Banach enclosure'}
+BLOCH 0 0 eta 3.574403742699774e-06 inverse norm bound 42086.76391795605
+BLOCH 0 1 eta 5.096982999515847e-07 inverse norm bound 5480.770530740964
+BLOCH 0 2 eta 5.034690546784476e-06 inverse norm bound 63601.799926074455
+BLOCH 0 3 eta 5.096982999515847e-07 inverse norm bound 5480.770530740964
+BLOCH 1 0 eta 3.386763625810448e-07 inverse norm bound 3785.3779410291563
+BLOCH 1 1 eta 0.0007510706881723443 inverse norm bound 7813789.387831605
+BLOCH 1 2 eta 1.738015597908691e-07 inverse norm bound 1863.5979545121186
+BLOCH 1 3 eta 5.080588342310781e-06 inverse norm bound 50515.597028489996
+BLOCH 2 0 eta 1.9022421288241149e-06 inverse norm bound 24584.87827686763
+BLOCH 2 1 eta 3.7937726409245616e-07 inverse norm bound 4093.1163162868966
+BLOCH 2 2 eta 3.4310676789662583e-06 inverse norm bound 42133.78168303846
+BLOCH 2 3 eta 3.7937726409245616e-07 inverse norm bound 4093.1163162868966
+BLOCH 3 0 eta 3.386763625810448e-07 inverse norm bound 3785.3779410291563
+BLOCH 3 1 eta 5.080588342310781e-06 inverse norm bound 50515.597028489996
+BLOCH 3 2 eta 1.738015597908691e-07 inverse norm bound 1863.5979545121186
+BLOCH 3 3 eta 0.0007510706881723443 inverse norm bound 7813789.387831605
+FULL PASS 15931462.919009278
+PASS_FINITE_FULL_4D_SHEET 56 named structural conditions; interval gates separately in receipt
