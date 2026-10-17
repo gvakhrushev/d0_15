@@ -139,3 +139,24 @@ Same disjoint new source folder contains:
 - RESULTS.json: pinned outputs and failure controls.
 
 No old root/kernel/L8 spectrum, broad CAR catalog, Lean or expensive heat certificate replay. Local finite checks illustrate the general tensor identity proved algebraically here; they do not install a physical comparison/Cost−Info law.
+
+
+## 8. Лоренцев буст НЕ может целиком жить в компактной полярной части: строгий firewall
+
+Полярный \(U_{yx}\) из §3 лежит в unitary/orthogonal group относительно уже имеющегося положительного record inner product. **Он не может быть faithful continuous representation всей группы \(\mathrm{SO}^+(1,3)\)** на фиксированном конечномерном положительном Hilbert carrier.
+
+Элементарное доказательство без классификации представлений: в вещественной простой алгебре \(\mathfrak{so}(1,3)\) имеются spatial rotations \(J_i\) и boosts \(K_i\) с \([J_i,K_j]=\epsilon_{ijk}K_k\), \([K_i,K_j]=-\epsilon_{ijk}J_k\). Оператор \(\mathrm{ad}_{K_1}\) на real span \((J_2,K_3)\) имеет матрицу \(\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)\) и два НЕнулевых вещественных собственных значения \(+1,-1\). Если бы существовало ненулевое дифференциальное представление \(\rho:\mathfrak{so}(1,3)\to\mathfrak u(N)\), простота делала бы \(\rho\) инъективным. Но \(\mathrm{ad}_{\rho(K_1)}\) на compact \(\mathfrak u(N)\) кососамосопряжённо относительно положительной формы \(-\mathrm{Tr}(XY)\) и потому не может иметь действительных ненулевых собственных значений на invariant image. Противоречие. Значит \(\rho=0\). Для связной \(\mathrm{SO}^+(1,3)\) соответствующий непрерывный конечномерный unitary group homomorphism тривиален.
+
+Это **не no-go D0**: фактический native operator дополнительно имеет положительную \(H_{yx}=(C^\dagger C)^{1/2}\), а физическая Lorentz tetrad/observer pairing в native теории не положительно-унитарна для boosts. Но искомый полный Einstein bridge НЕ может просто объявить полярный record \(U_{yx}\) already-owned full Lorentz \(L_{yx}\). Должна быть доказана совместная непрерывная карта \(C\)+positive dressing/observer → physical Lorentz transport, со своей реальной source/clock стоимостью.
+
+**Ещё один проверяемый конечный предел.** Из \(p^3\le s_i(C)\le1\) для любого one-round full-native comparison
+\[
+\operatorname{cond}(C)\le p^{-3}=\varphi^3=2+\sqrt5.
+\]
+У любого предполагаемого прямого vector-representation positive boost \(B(\eta)\), собственные singular values \(e^{|\eta|},e^{-|\eta|},1,1\), так что \(\operatorname{cond}(B)=e^{2|\eta|}\). Если кто-то предлагает идентифицировать \(H_{yx}\) с \(B(\eta)\) up to scalar and conjugation by a FIXED positive orthogonal frame, необходимо
+\[
+|\eta|\le\frac32\ln\varphi=0.7218177375894053\ldots.
+\]
+Это ограничивает только указанный *direct one-round singular-value matching*. Составной multi-round/product scheme или настоящая indefinite-metric coframe representation не подпадают под этот bound. Более того, one-round gap НЕ доказывает существование global invertible n-round polar source.
+
+Следовательно, реальный выигрыш новой record geometry следующий: скалярная положительная часть \(H\) и операторный compact transport \(U\) построены из ОДНОГО actual \(C\), а причинно-лоренцева интерпретация должна пройти проверку через уже собственные observer/coframe/link источники. Попытки отождествить U напрямую со всеми six Lorentz generators математически закрыты; это снимает ещё один бесполезный этап поиска.
