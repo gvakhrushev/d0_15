@@ -144,7 +144,7 @@ Moving-rho вклад ограничен k beta^(N+1)||drho||_1. Движени�
 Берём настоящий comparator владельца: J_x isometry, P_x=J_xJ_x*,
 
     L_xy=J_x*(I-P_y)J_x, L_xx=0, D_y L_xx=0,
-    q_J(V,W)=ReTr(DJ[V]*(I-P_x)DJ[W])/m.
+    q_J(V,W)=ReTr(DJ[V]*(I-P)DJ[W])/m.
 
 Для полного AF/comparator/scene процесса на скалярном AF-адресе
 
@@ -202,10 +202,10 @@ Moving-rho вклад ограничен k beta^(N+1)||drho||_1. Движени�
 
     I_full=diag(1/[e(1-e)],1/[b(1-b)]).                  (19)
 
-Это производная измеримого likelihood, НЕ новая физическая Info. На исходном компенсационном графике b(e)=1-c0/(1-e) determinant постоянен, но
+Это производная измеримого likelihood, НЕ новая физическая Info. На исходном компенсационном графике b(e)=1-c0/(1-e) determinant постоянен. Для tangent=(1,-(1-b)/(1-e)), однако,
 
-    I_full[(1,-(1-b)/(1-e))]^2
-       =1/[e(1-e)]+(1-b)/[b(1-e)²]>0.                 (20)
+    I_full(tangent,tangent)
+       =1/[e(1-e)]+(1-b)/[b(1-e)²]>0.                  (20)
 
 При e=b=p² коэффициент 2p^-3. Один объединённый флаг имеет rank1 и не видит этого направления. Поэтому канонизация, сохраняющая полные флаги, не может отождествить эти состояния по постоянству J.
 
@@ -261,4 +261,4 @@ Moving-rho вклад ограничен k beta^(N+1)||drho||_1. Движени�
 
 `check_operational_metric.py` независимо строит CAR16 и проверяет scalar effects пяти элементарных и десяти составных проб, два observer на одном F, все10 metric lifts, full128 и rank-one preparations, source (21), alternating history, noncommuting susceptibility, tails, meter factor, полные флаги и compensation. Общие утверждения доказаны аналитически выше, не экстраполированы из fixtures.
 
-Исполнены Python 3.13.5 / SymPy 1.14.0, 153 точных проверки; normal и python -O побайтно совпали. Все проверки используют explicit exceptions. Результат в RESULT.json. Старые suites, Lean, full CI и глобальные repository validators здесь не запускались. Публикация не равна независимой CONTROL-приёмке.
+Финальный checker усилен прямым восстановлением метрики преобразованного кадра и выводом конечного метрического множителя по golden polynomial, вместо двух избыточных algebraic sanity checks раннего checkpoint. Исполнены Python 3.13.5 / SymPy 1.14.0, **155 точных проверок**; normal и python -O побайтно совпали. Все проверки используют explicit exceptions. Результат в RESULT.json. Старые suites, Lean, full CI и глобальные repository validators здесь не запускались. Публикация не равна независимой CONTROL-приёмке.
