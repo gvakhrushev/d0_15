@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
-    },
-    {
-      "id": "WRK-A4D-AF-COST-INFO-COUPLING",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The owned second-AF probe price is differentiated on the lapse, on a constant shift, and on a matter amplitude. The record states coupling_holds false unless those partials equal the Einstein-Hilbert interior source plus an independent matter partial. No coefficient is chosen to force that equality.",
-      "brief": "00_WORK/tasks/WRK-A4D-AF-COST-INFO-COUPLING.md"
     }
   ]
 }
