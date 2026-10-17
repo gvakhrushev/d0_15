@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
-    },
-    {
-      "id": "WRK-A4D-HEAT-E00-COVECTOR",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "On H=x^2+1/4, certify the Euler-Lagrange densities of the Einstein-Hilbert density and the owned heat density along E_00 and along k k^T, and show that no constant calibration of the heat volume and a2 channels reproduces the geometric covector. Keep gr_derived and equation_20_closed false and do not mint claims.csv.",
-      "brief": "00_WORK/tasks/WRK-A4D-HEAT-E00-COVECTOR.md"
     }
   ]
 }
