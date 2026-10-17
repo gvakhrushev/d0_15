@@ -6294,3 +6294,43 @@ clock derivative convergence and rank-birth logarithmic control, plus
 the native full-history/ensemble/workspace and test/Info laws. Einstein
 source equality and the original fixed nonconstant g, independent tau,
 all 10 packed raw h^-2/#216 terminal remain OPEN.
+
+## Full spatial first sources and retained preparation — 17 October 2026
+
+The [first-source owner](A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md)
+now consumes the variable process and energy estimates to prove actual
+smooth field/preparation derivatives. All integer moments have the same
+periodic-symbol correction. Weighted trace-class propagation and the
+exact discrete Duhamel formula give state C1 convergence under a third
+initial moment and locally uniform normalized initial tangent convergence.
+The real 128-output isometry has a skew connection plus orthogonal
+innovation; its repeated derivative is bounded by first/second energies.
+This supplies a uniform actual purification-jet norm, without requiring
+its convergence or a common varying tape embedding.
+
+A first-energy Renyi bound controls the logarithm regularization tail.
+Together with the state-source limit it proves convergence of the
+complete coherent entropy first source even at rank birth. A fourth
+initial moment gives the original port and every supplied fixed-round
+code source. All coframe/link/observer/density/preparation jets remain;
+clock jets come only from a given smooth programme at locally fixed n.
+These are controlled M'_h=O(h) smooth-field covectors, not rough raw-link
+uniformity or the h^-2 comparator criterion.
+
+The parallel [preparation descent](A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md)
+is preserved from 9366f3e8, with producer-reported 483 exact checks and
+four executed mutations, without replay. It solves the observable
+coherent-code preparation equation on the full eight-momentum shell,
+with quantitative recovery/Hessian, a unique interior extremum, exact
+gap and true envelope/Schur source. Invisible coherences remain, and
+fixed momentum masses require their own multipliers. This removes the
+assumed invertibility of that declared preparation block, not the other
+retained equations or native physical code/Info selection. Its finite
+shell bound does not prove spatial variational compactness.
+
+The next source equality must use the actual admitted full price and
+retained preparation, including history/ensemble/workspace/clock terms,
+then compare with the intrinsic nonlinear Einstein covector. No source
+or counterterm is fitted here. Physical selection, nonempty joint
+refinement and the original fixed nonconstant g, independent tau,
+all 10 packed raw h^-2/#216 terminal remain OPEN.

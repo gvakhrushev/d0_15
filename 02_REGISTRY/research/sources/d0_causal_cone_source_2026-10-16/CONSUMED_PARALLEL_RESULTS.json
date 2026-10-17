@@ -330,6 +330,27 @@
     }
   },
   "integration": "additive merge preserves all13 incoming paths; no old scientific replay",
+  "parallel_complete_preparation_descent_intake": {
+    "all_source_bytes_match": true,
+    "consumer": "Conditional retained preparation equation and envelope/Schur source for supplied coherent code; current route and primary synthesis.",
+    "old_scientific_replay": false,
+    "preserved_paths": 9,
+    "producer_reported_exact_checks_not_reexecuted": 483,
+    "producer_reported_executed_mutants_not_reexecuted": 4,
+    "scope": "Actual all-eight-momentum/all16/reference128 shell; unique interior observable extremum with invisible coherences preserved, prescribed masses retaining multipliers. No growing-spatial Hessian, physical code/Info or Einstein admission follows.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md": "6450740a9916bc6b3334528c94c110bacee2940b63be568ff0c8f6820f1e6916",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/CURRENT_SOURCE_DELTA.md": "15e727df3c5380cd0f431156e47efb5a18882db7e0ce4fe0cec003d954f5d2de",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/INPUTS.json": "6eec99832ce6ba56a70913ff28cea21179e85d235ea94656a4f218f5d064a35f",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/README.md": "3e844325a07b5961fa7f9fa77169e31b82acfd0f6420f74a0f1f10c3743c544a",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/VALIDATION.json": "32bead258c807de96f5fb1375d14855945ec1d68f67e9e2a5e5155df37eec6a8",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/check_preparation_descent.py": "4c61a011fe3e7648d20c482f2e93b8346c26f5784ce84b35e078e8a61f585f20",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/mutations.json": "468b4a7ba5dd09efbe92f2b4abbc6e1d4987b7cea9fce8f27499125db9396e09",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/result.json": "fb90f203aa18c21b560e542951142ab3d18107cfb672a8bc3df784c326ef3707",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/test_mutations.py": "5f0ab85490c7641993ce385b3925212f7971836835355c5f8fec19a4ad067ced"
+    },
+    "source": "9366f3e82f0ce5fdca0206c96af6fd1443b12681"
+  },
   "parallel_complete_price_and_source_intake": {
     "all_disjoint_source_bytes_match": true,
     "boundary": "positive fixed-beta scalar-price longitudinal source is not pure EH; Slater/no-leak price reader enlarges carrier and requires coin/preparation/admission; original fixed-g/tau terminal remains open",
@@ -504,6 +525,24 @@
       "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/RESULTS.json": "9c25eb9a26f526c098170b33896b9643b19dd38153c4b439ae6c738bf8d453f6",
       "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/VALIDATION.json": "9830c60b0d0d2df2adcff837986b84e9dbc1ed6c8a1c06f3c4fb83cb4ee5abbb",
       "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/check_uniform_energy_inputs.py": "7dab23195b5df5da7d101dffe3404d88de692585c92b80ac2b413f79d6a570b8"
+    }
+  },
+  "variable_record_first_source_checkpoint": {
+    "base": "5cfabc8534197beeb3d8eeedf6978bc16254eeac",
+    "conclusion": "Actual state/coherent-entropy C1 sources under third initial moment and converging actual prep jets; original port, exit and supplied fixed-round-code sources under fourth moment.",
+    "consumer": "Full spatial code/coherent-information first covectors and retained-preparation consumer in current native-price-to-Einstein route.",
+    "integration_parent": "9366f3e82f0ce5fdca0206c96af6fd1443b12681",
+    "mechanism": "Weighted CP moment propagation and exact Duhamel; true128-output orthogonal innovation bound; energy-derived Renyi/log-tail regularization across rank births.",
+    "new_bounded_exact_checks": 40,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Physical complete history/code/Info/admission and ensemble/workspace price, full Einstein equality and nonempty joint refinement, raw rough-source uniformity and original fixed-g/tau all-10 h^-2/#216 terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md": "bacfeb70e261f600cd4d1e305612eaf3ab6fe6f71bd384aab2f04fd588493d93",
+      "02_REGISTRY/research/sources/d0_variable_record_first_source_2026-10-17/README.md": "d348d448b699a6bae9ead129e08d6167ae82d7b0980f4c60ce19f29b54b69a79",
+      "02_REGISTRY/research/sources/d0_variable_record_first_source_2026-10-17/RESULTS.json": "5e84680642103b7bcab201626f641eb924380ccaf2a3fae4c58fe7bd058265b6",
+      "02_REGISTRY/research/sources/d0_variable_record_first_source_2026-10-17/VALIDATION.json": "9e314ea92d412c29a7630fee1c43c4371d8c368ed400ed9fe070d4cf80c77bc2",
+      "02_REGISTRY/research/sources/d0_variable_record_first_source_2026-10-17/check_first_source_inputs.py": "cdb9bba674651862cfd816772b8f8f2a7af50b50f71b6ab5c63d367bc1c4c6f8"
     }
   }
 }

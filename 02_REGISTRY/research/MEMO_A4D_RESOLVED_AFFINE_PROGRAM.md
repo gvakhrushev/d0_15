@@ -317,12 +317,35 @@ baseline remains explicit. A full-reference UV control shows why
 trace-norm convergence alone would not suffice. These are moment-class
 value theorems, not native admission, clock or field-source theorems.
 
+The [full spatial first-source owner](A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md)
+now proves the next derivative arrow. Integer moment bounds and weighted
+trace-class Duhamel sums give actual state C1 convergence under a third
+initial moment and locally uniform normalized preparation tangents.
+Orthogonal innovations bound the true retained-tape purification jet;
+an energy-derived Renyi/log tail removes entropy regularization even
+through rank births. No fixed support, spectral floor or common tape-jet
+limit is assumed. A fourth moment gives the original port and supplied
+fixed-code first sources, including the actual preparation, coframe,
+proper-link, observer/density and supplied clock jets. Integer n stays
+locally fixed. This is smooth M'_h=O(h) source convergence, not a rough
+raw all-grid norm or an h^-2 comparator rate.
+
+The parallel [complete preparation descent](A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md)
+solves a complementary retained block for the supplied coherent code on
+the actual all-eight-momentum shell. Quantitative record recovery gives
+an invertible preparation Hessian, a unique interior observable extremum,
+an exact relative-entropy gap and its true envelope/Schur source. The
+invisible intermomentum/reference data remain; prescribed momentum masses
+keep their own multipliers. Use this result when the physical contract
+matches, rather than assume an arbitrary fixed preparation. Its shell
+Hessian is not extrapolated to the growing spatial carrier.
+
 For physical selection, consume the existing operational-gain theorem
 when G0b supplies the feasible effect algebra and the actual/maximal-gain
 contract. Its central-reference/all-POVM premises are not consequences
 of retaining coherent records. Full-history/workspace/ensemble price,
-inhomogeneous field-source convergence, rank-birth jets and the original
-GR/source terminal remain separate.
+physical field/test/admission binding, rough-source uniformity, second
+rank-birth jets and the original GR/source terminal remain separate.
 
 The parallel [native-cycle morphism packet](sources/d0_native_cycle_morphism_2026-10-17/RESULT_RU.md)
 also removes a computational detour: finite Newton identities and signed

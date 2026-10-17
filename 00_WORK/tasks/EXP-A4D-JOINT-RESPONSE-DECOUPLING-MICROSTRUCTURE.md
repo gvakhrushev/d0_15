@@ -645,6 +645,25 @@ Integrator owns common consumers. Decisive bounded inputs are the
 global Hermitian Kraus and double-commutator identities, not a spectrum
 or rank census. Field-source/clock/admission and original terminal remain open.
 
+## Full spatial first-source continuation — 17 October 2026
+
+At 5cfabc85, derive actual first field/preparation sources from the
+proved variable process and moment estimates. Extend the same periodic
+Lyapunov argument to the needed integer moments. Use weighted trace
+classes and the exact discrete Duhamel formula, with all real Julia,
+adjoint, observer, density, normalization and proper-link jets retained.
+Control the true tape purification derivative by orthogonal innovations;
+use energy-derived Renyi/log tails to remove entropy regularization
+without a spectral floor or fixed support. Derive actual port and
+supplied per-round-code first sources. Keep integer n locally fixed;
+clock jets require an actual supplied smooth programme law. Owner
+A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md; sole new helper
+sources/d0_variable_record_first_source_2026-10-17/check_first_source_inputs.py.
+Integrator owns common consumers. Decisive input check is the actual
+128-output isometry/innovation jet and its 64-row generator derivative,
+not a new rank census. Physical price selection, rough raw-source
+uniformity, Einstein equality and original h^-2 terminal remain open.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

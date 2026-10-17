@@ -870,3 +870,32 @@ displaying its actual n-times-blank baseline. This neither chooses that
 code nor subtracts its baseline from the physical action. History-based
 codes, ensemble/workspace prices, pointer entropy, field/clock/rank-birth
 sources and the original Einstein/refinement terminal remain separate.
+
+## 16. Full spatial first sources and their retained preparation consumer
+
+The [first-source theorem](A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md)
+extends integer moment control and proves weighted trace-class state
+derivative convergence from the exact finite Duhamel sum. A uniform
+third initial moment, locally uniform normalized initial tangents and
+a bounded actual initial purification tangent give convergence of the
+complete coherent-record entropy first source. Orthogonal innovations
+control the true tape derivative, and energy bounds the small-eigenvalue
+logarithms. Rank births require no fixed support or positive floor.
+
+A fourth initial moment additionally gives the original port and any
+supplied fixed per-round-code first sources. Coherent information and
+code derivatives now belong to the same spatial process, with actual
+coframe, proper-link, observer/density and normalized preparation jets.
+Any clock derivative uses its given smooth programme with locally fixed
+integer n. These smooth-field covectors do not prove the rough all-grid
+raw h^-2 terminal or select the physical full-history price.
+
+The parallel [complete preparation descent](A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md)
+also solves a retained consumer on the fixed all-eight-momentum shell:
+for a supplied coherent code, record recoverability gives a quantitative
+information Hessian, a unique interior observable preparation, exact
+action gap and true envelope/Schur source. Prescribed momentum masses
+keep their multipliers; invisible coherences and other retained fields
+are not removed. Its positive shell Hessian is not a uniform infinite-UV
+claim. Physical code/Info/admission and Einstein-source equality remain
+the common programme's next substantive obligations.
