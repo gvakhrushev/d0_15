@@ -389,6 +389,24 @@ now converges on a common waiting-path measure under explicit moment/jet
 bounds at fixed clock. This removes an analytical O(1)-remainder premise,
 without selecting a physical subtraction or dropping dlog N.
 
+The [all-word feasible-gain theorem](A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md)
+now closes a false implication in that selection. One-way active/record
+words give translation-covariant pointer POVMs even when tomographically
+complete. A central tilted-qubit response has a quantitative maximal-gain
+deficit; the exact restricted source is a scalar envelope, with second
+coefficient max(x²,z²) rather than the quantum x²+z². Active quadrature
+preserves this obstruction. A universal complete-D route must derive an
+actual memory operation/cut outside this commutant, or carry the genuinely
+restricted gain/source and its complete programme cost. The fixture is not
+a native-reachable-state or all-ten GR no-go claim.
+
+The fixed scene-Perron history law does supply a positive projectivity
+example; its action/Info binding and field-to-scene morphism remain distinct.
+An actual amplitude-word map with a complete outcome cut yields operator
+projectivity and therefore N=1 with all jets. Signed cyclic valuations cannot
+be identified entry-by-entry with positive Born events. These are precise
+operational source interfaces, not alternative entropy conventions.
+
 The native selection target is therefore history/test cut, raw normalization
 and full action/clock scale. A different code under the likelihood binding,
 or treating the coherent correction as a log-free EH coefficient, cannot

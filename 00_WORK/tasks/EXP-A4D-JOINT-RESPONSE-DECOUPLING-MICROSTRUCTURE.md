@@ -734,6 +734,36 @@ are decisive. No old scientific replay, census or Lean. Physical placement,
 Info/gain selection, price normalization and the original h^-2 terminal remain
 open unless proved by the same actual programme.
 
+## Feasible-gain and source continuation — 17 October 2026
+
+At 21f8a25f, consume the constructive history test rather than assume
+informational completeness gives access to every optimal measurement.
+Prove the all-word translation covariance of joint pointer effects in the
+existing one-way active/record generator class. Derive a quantitative
+central-reference qubit gain deficit valid for every length/active extension
+and a full directional second-source comparison, including the possible
+absence of a Frechet Hessian for optimized restricted gain. Preserve the
+entire record carrier in tensor extensions; a record response fixture is
+not asserted reachable by literal v8. Distinguish supplied active orthogonal
+controls/old-bit placement from native forcing. Show why an active complex
+quadrature alone leaves the covariance obstruction intact, and state the
+necessary kind of admitted memory operation for the complete-gain route.
+Consume the actual scene-Perron trace as a positive local projectivity
+example with its correct cost/Info and source boundary; do not identify its
+paths with Julia outputs or signed cycles. Consumer: the same physical
+Info/test/price-to-source arrow, not a new entropy convention or action term.
+Write A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md and
+sources/d0_feasible_gain_source_2026-10-17/; sole helper
+check_feasible_gain.py checks generic covariance, Jensen/variance and
+source algebra with exact negative controls. Retain in the same packet a
+bounded POINTER_BIRTH_CONTINUATION.md: the actual selected-six rare-history
+finite-part coefficient/source and an exact ordinary zero-word separator,
+without equating that component with the complete pointer birth coefficient.
+This is consumed by the missing whole-pointer h^-2/log source comparison.
+No old replay, census or Lean.
+Physical test admission, actual price/source and the original h^-2 terminal
+remain unchanged unless derived on the same native process.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

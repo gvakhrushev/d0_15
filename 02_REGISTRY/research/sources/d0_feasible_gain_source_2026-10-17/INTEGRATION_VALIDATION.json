@@ -1,0 +1,36 @@
+{
+  "checked_at_utc": "2026-10-17T02:01:37.837071+00:00",
+  "input_pins_verified": 24,
+  "new_local_links_verified": 8,
+  "owner_sha256": "93f44b61c590d30bfe8205f61c477f88d9f2219ef30ecdf48e33d796966556d1",
+  "pointer_component_sha256": "5cb666b021cac1e3e724e117ca30a524f190c3d7d106081266641cc21b200554",
+  "helper_sha256": "4677a4f4fb3c546bdcfa6ddfac375e6077a61481c7d1cf6edf0645b1e6fd7341",
+  "results_sha256": "7e80c4552001a72816e36dfe0cf8040a6083b79b0e0a31ecff531a1eeecf44b8",
+  "new_exact_checks": 49,
+  "analytical_reviews": [
+    "root",
+    "capsule_check",
+    "native_bridge",
+    "geometry_consumer"
+  ],
+  "corrections": [
+    "pointer-equivariant cut needed in faithful extensions",
+    "normalized-density traceless variations plus base state, no identity tangent",
+    "normalizer logs absent only if nonvanishing leading N0>0",
+    "selected coefficient0 sector distinct from coefficient1 equal-norm sector"
+  ],
+  "local_structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS"
+  },
+  "scope": "Supplied tensor/unchanged-pointer one-way class; central-reference qubit response not asserted native-reachable. Pointer companion is a selected component, not full entropy coefficient.",
+  "old_scientific_replay": false,
+  "lean_build": false,
+  "independent_CONTROL_acceptance": false,
+  "remote_CI_claimed": false,
+  "physical_Info_or_new_memory_actuation_selected": false,
+  "physical_GR_closure": false,
+  "open": "Actual admitted memory/test/reference/cost and amplitude-to-cut/raw-weight law; complete whole-pointer birth/count/normalizer source; Einstein equality, nonempty compatible joint refinement and original raw h^-2/#216 terminal",
+  "producer_helper_results_hashes_verified": true
+}

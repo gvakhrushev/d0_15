@@ -31,6 +31,7 @@ record results below is substituted for that terminal. The historical
 | --- | --- |
 | On the SAME likelihood-bound complete history, code and all code jets cancel from Cost-Info. The actual full128 pointer entropy and smooth first covectors have derived leading scale log(1/epsilon) times total exit count/source, with bounded remainders. The coherent alternative has a real positive h² log(1/h) Schmidt-birth term on the faithful LC cone, including arbitrary first preparation/field correctors and the original winding. | [Complete history information/scale](A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md), [full coherent normal birth](A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md). Select the actual history/test cut, raw normalizer and complete action/clock scale. Fixed finite code cannot cancel the coherent logarithm; a new code under likelihood binding cancels pointwise instead. The subleading source is distributional on controlled parameter charts, not the original raw norm; no physical Info, all-rank leading preparation, joint root or universal GR no-go is inferred. |
 | Existing golden/registration words give all real-symmetric tape matrix units and an explicit source left inverse, conditional on old-bit placement. Raw prefix projectivity is exactly the local gain equation, and the actual open effect-tree normalizer differs from a return cut on that same process. Full pointer finite part and fixed-clock smooth source now have a waiting-path proof. | [Coherence test](A4D_RETAINED_HISTORY_COHERENCE_TEST.md), [normalizer binding](A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md), [finite part/source](A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md). No arbitrary complex POVMs, free old-bit access, physical Info, subtraction, or Book-to-open-cut identification is assumed. The original raw h^-2 terminal is unchanged. |
+| Every test word in the supplied one-way class gives a translation-covariant joint pointer POVM. For a central-reference tilted qubit its gain deficit is at least min(x²,z²)/4 nats, even with active complex phases. The exact real-covariant optimum/source is a compact scalar envelope; its second directional coefficient max(x²,z²) has no Frechet Hessian at the mixed state. | [Feasible native gain/source](A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md). This forbids importing the complete-POVM entropy law from informational completeness alone. The record fixture is not asserted native-reachable; the full physical test/reference/price must be derived. A universal full-D route needs a memory operation/cut outside this commutant; active quadrature alone does not suffice. |
 | Actual port-dominated positive-relative code cost derives spatial preparation coercivity. With all16 forms and the true reference128, a minimum exists, actual grid minima converge with minimizing optimizer cluster points, and every preparation row has a weak Euler equation. On the exact-LC cone, each limiting labelled jump and the entire code/coherent objective are invariant; its full spatial minimum therefore cannot restore the nonzero intrinsic Lorentz Einstein source. | [Spatial preparation and Lorentz-source consumer](A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md). This removes assumed optimizer energy/compactness without extending the shell's unique Hessian or selecting physical code/Info. General optimizer field-source regularity and physical admission remain open. The real h² history signal is preserved; its native price/clock/scale is the consuming bridge, not a further unscaled preparation fit. |
 | Every actual retained128-outcome round gives an exact CP matter channel and total-count tilt. Its original port1 observable is `p epsilon Delta`; original golden0/10 code fixes the flat port-cost `n+p beta_h R0`. Flat full16 relaxation, full fixed algebra and strong trace-class continuum process follow without resetting records. Pointer and coherent record information have separate exact source diagrams. | [Complete retained channel/native cost](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md). Consume actual evolution, preparation derivatives and original code weights in the full price bridge. Stationary momentum weights are not Gibbs; finite faithful system stationarity does not give a reference128 purification. Complete code/Info selection, native primitive admission and Einstein/refinement equality remain open. |
 | The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
@@ -6495,3 +6496,78 @@ binding. Full source equality to intrinsic Einstein still requires that
 native binding and a compatible nonempty joint refinement; the original
 fixed-g/independent-tau/all-ten unweighted raw h^-2/#216 target remains open.
 No old certificate or Lean replay is used by this continuation.
+
+
+## Feasible gain and the full-source interface — 17 October 2026
+
+The [new all-word test/source theorem](A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md)
+changes the physical Info consumer of the previous tomography result. Every
+supplied active operation and one-way C_f commutes with old translations.
+Consequently its complete joint pointer POVM is translation-covariant on
+the entire old tape. This includes all word lengths, active extensions and
+an independently supplied active complex quadrature. Tomographic matrix
+span is not maximal relative-entropy gain in one allowed experiment.
+
+For a faithful real qubit response sigma=(I+xX+zZ)/2, mu=I/2, the elementary
+convexity of t log t-t²/4 and orbit covariance give a uniform measured-gain
+loss at least min(x²,z²)/4. The x=z=1/2 fixture gives a strict1/16-nat loss.
+It can be tensored with the unchanged full carrier for an algebraic response
+test; no actual native preparation or central PF block identification is
+asserted. Thus this is a necessary operational test of a proposed universal
+full-D law, not an all-ten geometric source or a D0 no-go.
+
+The new theorem goes beyond that obstruction: the optimum over real covariant
+POVMs is an exact compact one-variable moment problem, with at most two
+orbit seeds and an explicit supplied-class two-rotation/two-registration
+implementation. Danskin gives its genuine one-sided all-state source.
+A uniform Taylor estimate over every test yields the second directional
+coefficient max(x²,z²), whereas quantum relative entropy gives x²+z².
+The former violates the parallelogram identity and cannot be replaced by a
+smooth quantum-entropy Hessian. State-dependent physical test preparation,
+clock, code/reference and programme cost still carry their own sources.
+
+The quarter-turn owners were inspected at their exact types. A commuting
+right-i complex reading and a controlled left-i spin action do not supply
+scalar active diag(1,i) on full16/reference128 for free. Even granting that
+phase gives imaginary tomography while preserving the same gain bound.
+The needed universal-complete-gain route must prove an operation/measurement
+outside the old-translation commutant, or derive and use its actual restricted
+gain law. It cannot be repaired by another phase test in the same class.
+
+The existing scene-Perron tower supplies a true projective normalized
+history law. Its fixed-scene logarithm is length plus an endpoint boundary,
+with no interior field source at fixed endpoints. Binding its surprisal
+to Book action/Info and mapping that scene to Julia remain separate.
+The correct positive binding is amplitude-word map PLUS a complete admitted
+outcome cut: effects compose as K_omega* E_alpha K_omega, not E_omega E_alpha.
+For all faithful preparations, scalar projectivity is equivalent to this
+operator identity; then N=1 and all normalization jets follow. Literal
+signed cycle components cannot individually be that positive event cut.
+
+README now gives the small set of current consuming interfaces; detailed
+prior results remain here and in the current route. No source, action,
+phase, old-memory placement or physical information law is installed.
+Full Einstein equality, nonempty compatible joint refinement and the original
+fixed-g/independent-tau/all-ten raw h^-2/#216 terminal remain OPEN.
+
+
+The companion [pointer-birth continuation](sources/d0_feasible_gain_source_2026-10-17/POINTER_BIRTH_CONTINUATION.md)
+also removes a false equality at the next history scale. For the three literal
+coefficient0 role contrasts and BOTH ports, the event of at least one such
+mark has probability h² r2+O(h³), with
+`r2=T[3+4<theta_prime²>+2<theta_prime² cos²(2theta)>]/(256s⁴)`.
+The actual first-rare path map and weighted log tails give its contribution
+`2 r2 h² log(1/h)+h² J_R+o(h²)` to the full pointer finite part, with a
+locally distributional parameter source2 dr2 and its actual state/adjoint
+coefficient source. This is not the coherent Schur birth. At theta=y it
+retains the kinetic baseline and gives r2=T/(32s⁴).
+
+It is not the entire pointer birth coefficient. Four ordinary nonzero
+coefficient1 rows have a zero four-letter word by the full16 Hadamard
+occupation/parity identity, so zero-leading histories extend beyond those
+six rare marks. A complete raw h^-2/log-source comparison must include all
+such births, the actual count correction m2 and the SAME -log N. Matched-time
+boundary/collision strips are not automatically logarithmic births; nor
+can normalizer logs be excluded without a nonvanishing leading N0>0.
+This identifies the next whole-history consumer without replacing the
+full information functional by a selected positive event.

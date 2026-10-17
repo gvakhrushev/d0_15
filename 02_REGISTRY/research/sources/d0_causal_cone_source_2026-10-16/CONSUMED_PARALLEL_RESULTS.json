@@ -299,6 +299,27 @@
     "flat_moduli": "finite genuine-root second-response mismatch rules out unqualified EH+Lambda+sameR identity; fixedbeta theta source retains global shape",
     "observer_scalar": "exact zero-shift/twist-free R_L/R_E/spatial-curvature contrast; not imposed on general twisting observer"
   },
+  "feasible_history_gain_source_checkpoint": {
+    "base": "21f8a25fe7f254c24945536d9701a232e0454077",
+    "conclusion": "All-word pointer covariance and quantitative restricted-gain deficit; constructive compact optimum/Danskin source and nonquadratic second response. Scene-Perron source/amplitude-cut typing retained. Exact selected-six pointer component and ordinary dark-word separator consumed without claiming full entropy closure.",
+    "consumer": "Actual admitted test/Info/full-price source and complete pointer h^-2/log comparison",
+    "integration_parent": "fbde4b3476599d9eeee282d74fd14f4efb8839a3",
+    "new_bounded_exact_checks": 49,
+    "old_scientific_replay": false,
+    "open": "Actual admitted memory/test/reference/cost and amplitude-to-cut/raw-weight law; complete whole-pointer birth/count/normalizer source; Einstein equality, nonempty compatible joint refinement and original raw h^-2/#216 terminal",
+    "scope": "Supplied tensor/unchanged-pointer one-way class; central-reference qubit response not asserted native-reachable. Pointer companion is a selected component, not full entropy coefficient.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md": "93f44b61c590d30bfe8205f61c477f88d9f2219ef30ecdf48e33d796966556d1",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/ANALYTICAL_REVIEW.md": "b5b14fcf4aa2786a4c9e8b508e711f1d48a0c2f961f3c14f168bd4aea10c6793",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/INPUTS.json": "fc7357e7f5554a55b4098b1ff73aa9167538a3a0eb5b5e7a5aa86a3c621fc4e0",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/INTEGRATION_VALIDATION.json": "53fb99525c54c50d8f5afd2ba85a6f6909f104c71a3ccf1cd9c2305a41763090",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/POINTER_BIRTH_CONTINUATION.md": "5cb666b021cac1e3e724e117ca30a524f190c3d7d106081266641cc21b200554",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/README.md": "00f60bce1c654abfda0d522507ba8b9d4e06b526822319215bfaedd382b8e4a1",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/RESULTS.json": "7e80c4552001a72816e36dfe0cf8040a6083b79b0e0a31ecff531a1eeecf44b8",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/VALIDATION.json": "0d5baf3a0770b0005347ccb0816ebab37449023f6caba8a45f9eba5ac3e8486b",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/check_feasible_gain.py": "4677a4f4fb3c546bdcfa6ddfac375e6077a61481c7d1cf6edf0645b1e6fd7341"
+    }
+  },
   "full_preparation_and_history_checkpoint": {
     "base": "e6f4701e7743952b95b5fd281bebe10106d56163",
     "conclusion": "Full first-shell source constraints obstruct all ranks on the unchanged cone jet and faithful full shell even after real smooth field jets. An actual retained first-exit event has a derived h^-2 causal source and exact fixed-scale one-cone EH relation; full price/stationarity/admission remain open.",
