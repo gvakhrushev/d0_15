@@ -151,3 +151,42 @@ For this regular null k, one such admitted independent scalar can recover the se
 Do not repeat the ten positive Fourier symbol rank, generic gold QGT checks, nine hypothetical coframe null geometries or another rank census. Test whether an OWNED D0 same-history clock/observer/edge update actually provides (13) on the full all128/readout/spin/matter carrier with its true Code−Info, moving reference128 and Ward. If it does not, maintain the identified one-polarization loss as a scoped no-go. If it does, compose its full source with the already-owned 4D−2×3D Einstein covector and control the exceptional Fourier modes and original all-ten raw h^-2/#216 norm. Nonempty exact curved joint solutions and independently fixed physical matter source remain unproved.
 
 Reproducibility in sources/d0_stored_null_admission_2026-10-17: full regular exact nonlinear constraint/Bianchi check, independent linearized Einstein polarization check, independent one-scalar nonlinear clock check. Ordinary and Python -O identical; validation of finite algebra does not turn the conditional clock extension into native physics.
+
+
+## 7. Уточнение: переименование узлов не восстанавливает потерянный scalar clock; единственная положительная edge-transport ratio
+
+На использованном homogeneous background все исходные tau_r постоянны. Пусть разрешено произвольно двигать endpoints старой own-edge embedding \(y_r(x,t)=x+he_r+t\,\xi_r(x)+O(t^2)\), НЕ меняя закон (1). Вариация transport equality
+\[
+\tau_r(y_r(x,t),t)-\tau_r(x,t)=0
+\]
+при t=0 даёт
+\[
+\delta\tau_r(x+he_r)-\delta\tau_r(x)
++\nabla\tau_{r,0}(x+he_r)\cdot\xi_r(x)=0.
+\]
+Но \(\nabla\tau_{r,0}=0\). Поэтому простое движение координат/концов рёбер не компенсирует \(\delta\tau_r=\gamma(x)\tau_{0r}\): для full-support Fourier всё равно \(\delta\tau_r=0\). Не утверждать, что один readdressing/clock-label gauge автоматически возвращает вторую поляризацию.
+
+Самая короткая *математическая* модификация типа инварианта — положительный multiplicative clock transport, определённый ОДНИМ scalar \(s(x)>0\):
+\[
+\tau(x)=s(x)\tau_0,\quad
+\boxed{\chi_r(x,y)=s(y)/s(x),\qquad
+\tau_r(y)=\chi_r(x,y)\tau_r(x).}
+\tag{15}
+\]
+На exact extension (14) это не новая измеренная константа:
+\[
+s(x)=[\tau_0^TQ(x)^{-1}\tau_0]^{-1/2},\quad
+\chi_r(x,y)=\sqrt{\frac{\tau_0^TQ(x)^{-1}\tau_0}
+                        {\tau_0^TQ(y)^{-1}\tau_0}}.
+\]
+Если все четыре \(\tau_{0r}\ne0\), \(\chi_r=s(y)/s(x)\) ЕДИНСТВЕННЫЙ положительный scalar multiplier, совместимый со всеми компонентами; его holonomy по любому замкнутому edge-cycle равна ровно 1 (telescoping ratios). Его first source:
+\[
+d\log\chi_r(x,y)=\gamma(y)-\gamma(x),\qquad
+\gamma=\tfrac12\lambda^TH\lambda.
+\tag{16}
+\]
+Для исключённой H0 это \(\gamma=-271512/89557\) times its local scalar wave profile, so the factor is nontrivial on all-support edges.
+
+**Статус типа:** (15)–(16) — уникальный полный *плоский clock cocycle* для уже заданной scalar field family. Это НЕ старый собственный proper-Lorentz link: такой link сохраняет tau exactly и не допускает положительного clock dilation. Из того, что ratio telescope равно1, не следует бесплатная native реализация либо нулевой controller/normalizer/Info source. Существующий A4D_NATIVE_RELATIVE_HISTORY_CLOCK_COCYCLE_2026_10_17.md использует matching-likelihood clock на full128, но НЕ доказывает его отождествление с данным observer normalization s; эти носители нельзя назвать одним clock только из-за слова cocycle.
+
+Решающий физический proof object теперь можно сформулировать конкретно: найти в исходном retained D0 programme admitted positive edge-clock transfer со ВСЕМ source (16), таким что он совместим с full16 adjoint, observer unit norm и original action/Cost−Info, без fitted Einstein scalar. Если такой full programme невозможен, явно зафиксировать one-polarization no-go для настоящего fixed-own-edge класса, не повышая его до all-D0 no-go.
