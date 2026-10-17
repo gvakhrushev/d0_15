@@ -238,3 +238,71 @@ I(A:B)=\frac12\log\frac{\det C_{00}\det C_{11}}{\det C}\tag{16}
 **Требование на одну композицию:** построить из **этих входов без новых полей** spatially restricted curved Hodge readout на A-инвариантной/observer-spatial карте и показать, что тот же actual `Cost−Info` выбирает её relative coefficient `−2` с правильным `Ndt` clock density, **включая все derivative jets**. Его lead two-derivative covector должен совпасть с (14), что затем даёт (15) и все10 Einstein equations без отдельного nonlinear symbol search. Если physical clock/restricted likelihood уже содержит подходящий conditioning, установить точную equivalence/Schur; если нет — фиксировать одну конкретную неподставляемую стрелку, не писать произвольный Einstein residual.
 
 Это сужает настоящую открытую часть: 3D spatial support и плоский Hodge-square уже являются **принятым математическим input**, а не новой гипотезой. Переход от flat spatial readout к curved physical relative price остаётся источником, который надо получить; доказательство GR ещё не объявляется завершённым.
+
+## 9. Более короткий обратный путь: конечный золотой 4D−2×3D Einstein readout БЕЗ heat asymptotic
+
+Это отдельный, ещё более сильный математический consumer. Исходные `A4D_RECORD_PRICE_METRIC_SOURCE_INTEGRATION.md`, `A4D_RECORD_NORMAL_VOLUME_SOURCE.md`, `A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md`, `A4D_GOLDEN_DETERMINANT_COMPILER.md` и `A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md` уже содержат конечную проекторную метрику, нормальную форму и золотой детерминантный компилятор. Ниже — их **новая** совместная пространственная специализация; физический выбор этого composed programme остаётся отдельно.
+
+### 9.1 Один и тот же полный golden cylinder имеет очень разные 4D и 3D исходы
+
+Примитивные двухбуквенные истории `FF, FR, RF, RR` имеют **исходные** веса `(p²,p³,p³,p⁴)` и signed character `epsilon=(0,+1,−1,0)`. Они дают `E epsilon=E epsilon³=0`, `E epsilon²=E epsilon⁴=2p³`. Ни один исход не отброшен.
+
+Для гладкой positive four-dimensional record immersion \(P:M^4\to E\) с metric \(G=P^*\langle,\rangle\) и полным Parseval normal-family self-adjoint shape matrices \(A_j^{(4)}\) предыдущий owner доказал точный **полином степени четыре**:
+
+\[
+M_4(u)=D_4+p^3u^2R_G+2p^3u^4Q_4,\qquad Q_4=\sum_j\det A_j^{(4)}.\tag{17}
+\]
+
+Здесь D4 — фактическая сумма baseline установок, не заменённая числом1, и Q4 не объявлена topological. У него уже есть законная трёхмасштабная отмена quartic:
+
+\[
+\boxed{R_G=\frac{16[M_4(u)-D_4]-[M_4(2u)-D_4]}{12p^3u^2}.}\tag{18}
+\]
+
+Теперь **не вводя новую геометрию**, ограничим тот же P на пространственный срез \(\Sigma_t\); его induced metric h из (1) совпадает с spatial G. Normal space для **3D immersion** — ортогональное дополнение трёх spatial касательных в том же E, оно включает дополнительные нормали, которые могли быть касательными к полной 4D immersion. Их нельзя пропускать. Пусть \(A_j^{(3)}\) — настоящие трехмерные shape matrices, построенные из того же P и h. Gauss identity для их полного Parseval normal-family даёт
+
+\[
+\sum_j[(\operatorname{tr}A_j^{(3)})^2-\operatorname{tr}(A_j^{(3)2})]=\mathcal R_3.
+\]
+
+В 3D \(\det(I-u\epsilon A_j^{(3)})\) **только кубический**, поэтому симметрия FR/RF сразу устраняет все нечётные степени, а quartic **отсутствует тождественно**:
+
+\[
+\boxed{M_3(u)=D_3+p^3u^2\mathcal R_3,\qquad
+\mathcal R_3=\frac{M_3(u)-D_3}{p^3u^2}.}\tag{19}
+\]
+
+Для **математической совместимости с уже построенным four-dimensional golden matrix compiler** достаточно вкладывать `A_j^(3) -> diag(0,A_j^(3))` в его исходный четырехмерный вход: \(\det_4(I-u\epsilon\operatorname{diag}(0,A_3))=\det_3(I-u\epsilon A_3)\). Это тот же размер4 вход, все golden returns/failures сохранены и никакой 3D determinant oracle не нужен. Но естественные 3D shape matrices и их управляемое изменение из действительного D0 engine требуют собственного допуска.
+
+### 9.2 Точная конечная формула для integrated Lorentz Einstein–Hilbert
+
+Объединяя (4),(18),(19), получаем **из конечных исходов того же golden-кода** функцию
+
+\[
+\boxed{\begin{aligned}
+\mathcal C_{\rm GR}(x;u)=&\;
+\frac{16[M_4(u)-D_4]-[M_4(2u)-D_4]}{12p^3u^2}\\
+&-\frac{2[M_3(u)-D_3]}{p^3u^2}
+=R_G(x)-2\mathcal R_3(x).
+\end{aligned}}\tag{20}
+\]
+
+На closed spatial leaves **точно** (не только при `u→0`):
+
+\[
+\boxed{\int\mathcal C_{\rm GR}\,N\sqrt h\,dt\,d^3x
+=\int R(g_L)dV_{g_L}.}\tag{21}
+\]
+
+Здесь `u` — малый **пробный параметр золотого determinant readout**, а не timelike observer `u^a`; он выбирается в едином admissible positive window у всех shape matrices. Масштабы u,2u — две сравниваемые настройки ОДНОЙ программы для удаления quartic, а не два независимых физических coupling. У каждой настройке должен учитываться её настоящий контроллерный/code cost.
+
+**Стратегический выигрыш:** ни heat/short-time theorem, ни бесконечная nonlinear Einstein expansion для (20)–(21) вообще не нужны. Геометрическое nonlinear действие воспроизводится конечными **четырьмя** оригинальными golden outcomes, 4D normal estimator и его 3D spatial restriction. Его **первый source** также совпадает с δEH при всех 10 ADM variations автоматически, если все матричные/нормальные/observer/frame changes перенесены совместно и прочитаны в одном физическом действии. Здесь не постулируются ещё не имеющиеся physical native variations.
+
+**Сопоставление с `A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md`.** Предыдущий `W_E` центральный AF terminal уже доказал, что для любого **независимо заданного** знакового геометрического скаляра Q в его declared window можно построить условную программу с `d_A A=\lambda a(z,\sigma)dQ`, \(\lambda a>0\), включая moving preparation. Формулы (20)–(21) теперь задают Q как **конечный вычислимый golden-geometric readout**, а не неизвестный Einstein oracle. Это сильная конструктивная компоновка, но ещё не доказательство, что native D0 физически выбирает именно такую composed программу или что её архивный код/контроллер бесплатны. Нельзя заменить исходную физическую v8 цену новым Q без typed primitive-to-program law.
+
+### 9.3 Два решающих контроля
+
+1. В пространственном static-product образце positive 4D normal shape есть `diag(0,A3)`, поэтому `R_G=R3`; Lorentz `R_L=−R3`. (20) даёт ровно этот знак. Требование `R_G+cR3=R_L` вынуждает `c=−2`, без вариантов.
+2. Для **настоящей generic** 4D normal shape quartic term Q4 ненулевой. Попытка заменить (18) одним M4(u) даёт ложный R4; это проверено на двух некоммутирующих рациональных shape matrices и их moving source. Для 3D quartic отсутствует алгебраически, поэтому (19) не требует такого дополнительного измерения.
+
+Код `check_finite_golden_spatial.py` и `GOLDEN_RESULTS.json` проверяют 24 точных symbolic контролей, включая полный moving first source, spatial zero-mode embedding, негативный quartic-control и static-product Lorentz sign. Это новая **finite geometry + readout identity**, а не новый physically selected action.
