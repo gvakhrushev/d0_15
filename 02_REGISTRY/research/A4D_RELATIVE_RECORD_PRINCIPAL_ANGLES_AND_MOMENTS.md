@@ -284,3 +284,81 @@ The full one-round Stinespring record image is
 Эта теорема НЕ говорит, что full D0 4D-vs-3D relative comparison тоже source-free: она испытывает только **same one-round full record against uniform port rotation**. Для ОТО остаётся реальная возможность distinct 4D/spatial (или иной native path/role) image subspaces whose principal angles vary relatively with coframe. Их несовпадающие field-dependent K, complete cut and Cost−Info must be deduced. Но повторять random port-angle или same-frame rotations как поиск гравитационной кривизны больше не требуется.
 
 Это дополнительно объясняет, почему локальные source результаты на отдельных record labels нельзя автоматически перенести на полную цену: при полном суммировании антисимметричный port cross source может сократиться EXACTLY. Старые record contrast источники остаются настоящими источниками **своих** declared readout, но не доказывают full-price Einstein source.
+
+
+## 10. Конструктивный ответ на port-only no-go: **полный золотой signed contrast** имеет настоящий native операторный источник и равномерный gap
+
+Раздел9 запретил только полное *SO(2) вращение порта* как гравитационный источник. Из тех же буквальных K_0,K_1 можно получить НЕНОМИНАЛЬНЫЙ operator-valued relative overlap без oracle, если использовать разницу между двумя исходами порта, но сохранять полную нормировку через ещё одно уже имеющееся golden branch. Это другой full comparison и пока НЕ выбранный physics action.
+
+### 10.1. Данные исходного literal full128 experiment
+
+Используем полный native one-round record Stinespring J=(K_0M,K_1M)^T §9, J†J=I. Оператор паритета выходного порта
+
+  Z_port=diag(+I_0,−I_1),   Z_port†Z_port=I,            (37)
+
+сохраняет остальные labels, full16, sites и reference как часть ambient. Сам этот символ означает FIXED SIGN на уже существующих исходах; физически coherent placement знака после записи пока отдельный gate-admission вопрос. Но его operator expectation задан фактическими complete output probabilities **без такого placement**:
+
+  J† Z_port J=E_port0−E_port1=I−2E_port1,             (38)
+  E_port1 = p ε_h Δ_h,                               (39)
+
+где (39) — ранее owned EXACT literal native 128-outcome theorem A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md §3, не новая подстановка desired curvature.
+
+Берём **те же** p, a=sqrt(p) и TWO golden-copy full images на дополнительном, сохраняемом двухветвевом flag:
+
+  J_A=(a J, p J)^T,
+  J_B=(a J, p Z_port J)^T.                            (40)
+
+Обе карты — exact full isometries: J_A†J_A=J_B†J_B=(p+p²)I=I, с полными complementary flags и data. Их физическая подготовка из фактического D0 controller (fresh golden branch plus coherent port sign) ещё НЕ доказана; это конкретная короткая operator-level native-data construction, не новая externally prescribed scalar action.
+
+**Exact positive overlap from the native effect**:
+
+  C_signed:=J_B†J_A
+   =pI+p²(I−2E_port1)
+   =I−2p² E_port1
+   =I−2p³ ε_h Δ_h .                                 (41)
+
+Так как полный native E_port1 есть действительный POVM effect, 0≤E_port1≤I. Получаем **uniform positive margin на ВСЁМ полном carrier**:
+
+  p³ I=(1−2p²)I ≤ C_signed ≤ I,                        (42)
+
+без спектрального отсечения, без z→0, без beta→0. В частности det C_signed>0 на каждом конечном h, и relative subspace price/angles строго определены. Более сильная bound при exact W²=I есть E_port1≤4p³ I, поэтому C_signed≥(1−8p⁵)I≈0.27864 I; для source достаточно (42).
+
+Наличие signed output contrast НЕ означает signed Born probability: в настоящем измерении исходы port0/port1 всегда имеют положительные массы, знак применяется к статистическому operator contrast / candidate coherent comparison, а не к вероятности отдельной ветви.
+
+### 10.2. Первый источник следует из существующего Δ, без отдельного scalar Einstein oracle
+
+Для этого НОВОГО (а не принятого как physical) logdet comparator define
+
+  L_signed=−log_phi det(C_signed†C_signed)
+          =−2/log(phi) Tr log C_signed .              (43)
+
+Поскольку C_signed≥p³I, настоящая finite first-source identity при любых genuine field/preparation/observer/clock variations V:
+
+  dL_signed[V]
+  = (4p²/log(phi))Tr[C_signed^−1 dE_port1[V]]
+  = (4p³/log(phi))Tr[C_signed^−1 d(ε_h Δ_h)[V]].      (44)
+
+При fixed ε_h второй член есть ε_h dΔ_h; при moving physical clock его derivative dε_h Δ_h обязательна. Если actual native 128-outcome E_port1 меняется через moving preparation, эффект как оператор на system по определению зависит от W_h/M_h; исходная подготовка имеет самостоятельную score в Born probabilities и полную physical Cost−Info. Не замораживать reference128 и controller code из (44) при claim о полном действии.
+
+Есть точный **реальный finite native-field sensitivity consumer**: на уже вычисленном homogeneous first-shell radial G(t)=(1+t)G_* из источника d0_native_entropy_action_obstruction_2026-10-17/RESULT_RU.md оператор Δ_h(t)=λ_h(t)I на каждом eigenshell, λ'_h(0)>0, при fixed native ε_h. Для такого отдельного shell rank d_sh, где denominator positive by (42),
+
+  d_t L_signed|_0
+    =4p³ ε_h d_sh λ'_h(0)/
+      [log(phi)(1−2p³ ε_h λ_h(0))] >0.                (45)
+
+Это не fitted source, а производная фактического spectral operator in a positive shell. Не утверждается, что full trace on all Fourier modes, реальная v8 stationary root или Lorentz EH имеет этот один знак; shell witness показывает, что (41) **не тождественно source-free** в отличие от (35).
+
+Отдельная exact rational/quartic control использует full golden algebra Z[a]/(a⁴+a²−1), selfadjoint involutions W и isometries M. Verified operator identities (33),(40)–(42) on six combinations and a true nonzero determinant first jet from moving M; это finite MATRIX witness допустимого algebraic class, а не actual geometric full16 coframe root. Reproduced test: sources/d0_relative_subspace_moments_2026-10-17/check_native_signed_port.mjs.
+
+### 10.3. Почему это НЕ уже выбранная ОТО, но переход действительно новый
+
+Положительный результат (41) отвечает на ограниченный вопрос: **native full retained 128-output process уже содержит source-sensitive operator contrast, который можно записать как overlap двух положительно нормированных golden-branched full histories без Fock-расширения и ручной подачи R_g.** Для native SOURCE арифметики сам оператор не нуждается в том, чтобы кто-то «угадал» Gram values: его коэффициенты выражены точным оригинальным эффектом E_port1.
+
+Остаются следующие обязательные отличия.
+
+- J_B в (40) требует coherent port-sign placement, и BOOK Cost−Info не установлено равным (43); доступность статистического contrast (38) НЕ равна admission coherent comparison (40) и не делает программу бесплатной.
+- (41) является **single positive Δ-channel** без двух curved spatial endpoint source corrections из peer full Lorentz 4D−2×3D relative comparison. Merged #360 pp-wave/positive A2 obstruction запрещает объявить его односложный heat-source универсальным Einstein tensor. Нельзя добавить −2 spatial вручную; надо вывести её из фактических ДВУХ complete record сравнения/нормировок.
+- Новый gap [p³,1] существенно шире предыдущего искусственно построенного peer corridor [p(1−z)^3,p]. Его spectral-moment δ из §3 нельзя подставить в (41); для full signed contrast допустима своя δ_signed≤1−p⁶<1 с соответствующей худшей convergence, а сужение возможно лишь на реально подтверждённом energy block.
+- Активные full fields, actual 16 CAR/reference128/preparation, настоящие метрические десять sources и original independent g/tau/raw h^−2/#216 comparator не восстановлены из одной derived radial shell variation.
+
+**Стратегический вывод:** бессмысленно тратить ресурсы на uniform SO(2)-port matching: он точно стирает source. Но порог "существует НЕНУЛЕВОЙ операторный source уже на полном исходном native record" для простейшего signed-port comparison теперь показан. Следующий физически содержательный ход — найти именно **двухстороннее spatial-history** сравнение, для которого реальный analogue of (41) имеет нужный 4D−2×3D first source, а не навязывать эту комбинацию после расчёта.
