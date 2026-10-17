@@ -84,7 +84,7 @@
       "id": "WRK-A4D-HEAT-E00-COVECTOR",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
