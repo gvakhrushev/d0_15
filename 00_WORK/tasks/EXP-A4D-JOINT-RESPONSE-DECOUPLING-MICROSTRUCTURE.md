@@ -39,6 +39,16 @@ balanced lift and its source, actual prefix preparation failures, and a
 moving-old-label control. Physical selection and original raw/#216 closure
 are not supplied by a terminal marginal or by source classification alone.
 
+Consumed result: the full five-outcome law solves its free prefix probability
+by a logistic equation and has a scalar whole-carrier preparation gradient,
+retaining reference128. The SAME periodic extension has scalar f=0 globally;
+the fixed exterior geometric rows remain unsolved. The curved interior
+family transfers to this complete configured price. The actual T_E factors
+along one existing golden axis, with exact first jet
+`(sqrt(p)/2)t² T_(p²)J DF_star`; native geometric SELECT, old-history source,
+physical choice and global/matter closure remain open. The checker consumes
+the actual controlled-gate and compiler owners, with a read-only default.
+
 ### Whole-source synthesis after the local vacuum result
 
 The user's next request is to try an end-to-end breakthrough, rather than

@@ -2,7 +2,7 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Snapshot:** 2026-10-17; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334)
+**Snapshot:** 2026-10-18; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `1aa3ff8b` integrated
 
 ## Current route to general relativity
 
@@ -21,7 +21,47 @@ counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
 
-### Consuming strategic synthesis — 2026-10-17
+### Consuming strategic synthesis — 2026-10-18
+
+The [complete labelled golden-record source](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+is the new consuming result. Its five-outcome same-history Cost−Info
+includes preparation failure and both success flags. The prefix probability
+is solved by its own logistic equation; fixing canonical p^6 would fail that
+equation. The full preparation gradient is scalar on the whole carrier,
+so all normalized AF/scene/reference directions are stationary, including
+entangling and first-order rank directions. The scene retains all528 modes
+and a full reference128 purification. No matter component is deleted.
+
+At f=0 the exact complete source is `s_* p² t² Σ μ_y Df_y` with
+`s_*>0`. The existing periodic continuation already has scalar f=0 at every
+site, including the fixed exterior, and its nonflat interior geometric
+family transfers to this complete configured price. This solves its
+preparation rows; it does not solve the fixed exterior geometric rows.
+The [actual CAR/clock coefficients](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
+recover `q=FηFᵀ`, `g=q^-1` and all ten metric entries independently of
+scene state. The source uses this original metric, without replacing g by χg.
+
+The [actual event-price owner](sources/d0_cost_info_event_source_2026-10-17/RESULT_RU.md)
+separates this entropy mean from event surprisal and the literal H+J+R.
+The open-Julia mean has zero D-vacuum source; it cannot supply nonzero
+c_native there. The [full spectral tensor signature](A4D_FULL_SPECTRAL_TENSOR_SIGNATURE_2026_10_17.md)
+also rules out identifying the positive spectral metric with Lorentz g by
+renaming it. The [regular-natural-source → Cartan theorem](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)
+is a sufficient final classifier, requiring actual regularity at degenerate
+coframes, pure naturality, variational integrability and a nonzero native
+coefficient. These hypotheses are not supplied by a passing source check.
+
+The remaining shared interface is concrete: derive the geometrically
+controlled programme from native primitives on the same carrier, including
+every old history/execution source. With old labels w, the exact remaining
+term includes `DH(w)/log φ`; balancing terminal flags does not remove it.
+Independent physical matter/spin, classical selection and global recovery
+still need the same full source. The configured preparation equations and
+the geometric Palatini consumer are available and should be consumed.
+The actual controlled gate now factors along one existing golden rotation
+axis, with exact jet `(sqrt(p)/2)t² T_(p²)J DF_star`. Its native geometric
+SELECT and complete execution source remain the primitive interface;
+fixed-gate approximation cannot manufacture a moving query.
 
 The [whole-source normal form](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
 now joins the full AF/scene feedback to the existing exact logdet and
@@ -29,9 +69,9 @@ density/coframe owners. It preserves all joint stationary equations away
 from vacuum, including the graph source of a geometry-dependent scene.
 It does not identify the transformed metric with the operational metric or
 turn its retained constraint source into independently derived physical
-matter. An exact source-compensation control rejects that shortcut. Use
-its sections 6–7 to consume the full leading-price stationary manifold and
-its metric lifts; another local vacuum family does not settle this step.
+matter. An exact source-compensation control rejects that shortcut. Its
+sections 6–7 concern the stationary manifold of that distinct leading
+price and its metric lifts; they are retained as a separate conditional route.
 
 Read the [foundations-to-GR synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 before another candidate calculation. It consumes the actual foundation

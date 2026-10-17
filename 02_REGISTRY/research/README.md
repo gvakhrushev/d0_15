@@ -2,7 +2,7 @@
 
 This directory contains CONTROL-curated research packets that materially affect D0 roadmap decisions but are not yet proof owners.
 
-Current integrator entrypoint: [D0 → GR strategic synthesis, 17 October](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md).
+Current integrator entrypoint: [D0 → GR strategic synthesis, updated 18 October](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md).
 It connects foundational theorem owners to the positive AF-star nonlinear
 Einstein composition and states the remaining native/source and recovery
 premises. This is research in Draft #334, not a new accepted CORE claim.
@@ -10,14 +10,29 @@ Its [full local lattice recovery consumer](A4D_AF_STAR_FULL_LATTICE_STATIONARY_F
 now gives exact nonflat vacuum roots in every interior coframe/link direction,
 with fixed boundary data and actual golden weights; physical admission remains open.
 
-The next [full-source synthesis](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
+The [complete labelled golden-record source](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now derives the actual five-outcome same-history price, retains preparation
+failure, and solves the free AF/scene/reference128 preparation equations.
+Its full first source is a nonzero multiple of the existing weighted-star
+source on the vacuum family. The same periodic extension has scalar f=0
+globally; its fixed exterior geometric rows are not claimed stationary.
+Native programme selection, earlier history and physical matter remain open.
+The [CAR/clock readout](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
+recovers the original metric, without an Einstein-frame rescaling. The
+[regular-natural-source classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)
+is an available final consumer with explicit unproved native hypotheses.
+
+The distinct [full-source normal form](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
 consumes the [complete AF/scene feedback](sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md)
 and exact logdet/density owners. It gives an off-shell action identity and
 complete stationary-set bijection, retaining a geometry-dependent scene
 through its actual constraint source. The non-vacuum source is preserved;
 the new metric and residual stress are not automatically physical D0/GR.
-The stationary manifold of the complete leading price is the next source
-consumer, not another restricted vacuum root.
+For that singular leading-price route the stationary manifold and its
+metric lifts remain the consumer. It is not the same-history five-outcome
+source above. The open-Julia mean is zero on its D-vacuum; the literal
+H+J+R has a different, positive-metric tensor signature. Those results
+must not be combined as if they were derivatives of one price.
 
 Rules:
 

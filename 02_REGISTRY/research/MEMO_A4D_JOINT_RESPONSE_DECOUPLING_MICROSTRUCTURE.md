@@ -1,5 +1,48 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — complete labelled source with solved free preparation
+
+The [labelled golden-record theorem](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consumes the actual CAR/clock metric, same-history event-price identity,
+native AF corner and the full local weighted-star family. Its complete
+five-outcome law retains failure and both successful pointers. The free
+prefix equation fixes `s_*=logistic(h(p²)+log2)`, rather than the
+nonstationary canonical p^6. A full POVM calculation gives a scalar input
+entropy gradient on the whole AF/scene/reference carrier, proving every
+normalized preparation row zero, including entangling/rank directions.
+The scene construction keeps all528 modes and a full reference128 marginal.
+
+At f=0 its exact complete first source is `s_* p²t² Σ μ_y Df_y`,
+with no Einstein-frame change of the CAR/clock-read metric. The SAME
+periodic extension used in the prior local lattice theorem has scalar
+f=0 globally: its three potentially curved plaquettes and complementary
+solder legs lie in one three-dimensional null-frame subspace, so every
+epsilon contraction vanishes. This supplies the scalar AF effect on the
+entire carrier and transfers the curved interior family to the full
+configured price. Exterior coframe/link rows remain fixed and may be
+nonzero; global free geometric recovery is not inferred.
+
+The new 17–18 October inputs now have explicit consumers. The
+[actual same-history mean](sources/d0_cost_info_event_source_2026-10-17/RESULT_RU.md)
+is different from literal H+J+R and from a single-event surprisal. On the
+open Julia D-vacuum its source is identically zero. The
+[full spectral tensor signature](A4D_FULL_SPECTRAL_TENSOR_SIGNATURE_2026_10_17.md)
+prevents converting the positive spectral metric into Lorentz g by
+relabelling. The [regular natural source → Cartan classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)
+closes a nonzero integrable, purely natural source regular also at
+degenerate coframes, once those native hypotheses are established. The
+[stationary-fibre source descent](sources/d0_structural_source_closure_2026-10-17/RESULT_RU.md)
+does not require a unique internal state, but does require the actual
+regular fibres, full kernel compatibility and locality estimates.
+
+The physical interface still requires native selection/execution of the
+geometry-controlled programme, old history and execution sources,
+independent matter/spin and global physical recovery. Appending this block
+after old labels w leaves the exact `DH(w)/log φ` source; its own terminal
+equations cannot cancel that term. This is a solved full source for the
+declared configured experiment, not a claim that every native history has
+that source. The original fixed-g/tau/all-ten raw h^-2 terminal remains OPEN.
+
 ## 17 October 2026 — whole-source synthesis beyond vacuum equivalence
 
 The [full AF source normal form](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
