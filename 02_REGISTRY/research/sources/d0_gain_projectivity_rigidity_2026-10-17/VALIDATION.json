@@ -1,0 +1,20 @@
+{
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "ordinary": "PASS",
+  "optimized": "PASS_IDENTICAL",
+  "exact_checks": 70,
+  "mutants_rejected": 3,
+  "source_initial": "e92d4714183aec5b8838906be1dfd23844178042",
+  "source_consumed": "9e2a28eecd1630d692329b3820a6761fbcfc757c",
+  "independent_review": false,
+  "native_Info_selected": false,
+  "GR_closed": false,
+  "sha256": {
+    "A4D_LOCAL_GAIN_PROJECTIVITY_RIGIDITY.md": "d3c07fafec2a864003e99e70e28c1a3dce4177156c671002a665780776919a1a",
+    "check_gain_rigidity.py": "d9d9d52b86a9e89e2dad2b563038bea3dc878ade4a22f1cc6925a7e70cecbf57",
+    "result.json": "c4fb89731da843dc47a58df1838e7bd9adb16381018bcf580ff0d583cc6ec8ab",
+    "mutations.json": "47efef09b77cf13a472145b744153b706a9fc2af23106451013d6968f9b735cd",
+    "README.md": "5f5544c0f72db0af6b47f54e2012a3056330f374170f01e03ffa52559cb8db47"
+  }
+}
