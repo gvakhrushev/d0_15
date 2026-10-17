@@ -35,10 +35,11 @@ H2 = Hprime_at_p*q2
 check(S.simplify(H2/ell-p**3*Ric)==0, "linear Shannon Ricci response")
 cost2 = H2/ell-n2/ell
 check(S.simplify(cost2-(p**3+p/ell)*Ric)==0, "moving-weight Cost-Info jet")
-D2 = S.Integer(0)  # D(q||p) is quadratically flat at q=p and q'(0)=0
-D4coeff = S.simplify(q2**2/(8*p*(1-p)))
+KL = q*S.log(q/p)+(1-q)*S.log((1-q)/p**2)
+D2 = S.simplify(S.diff(KL,t,2).subs(t,0))
+D4coeff = S.simplify(S.diff(KL,t,4).subs(t,0)/24)
 check(S.simplify(D4coeff-p**3*Ric**2/8)==0, "KL fourth-order obstruction")
-check(S.simplify(D2)==0, "KL cannot supply Ric at second order")
+check(D2==0, "KL cannot supply Ric at second order")
 check(S.simplify(S.log((1-S.Rational(1,2))/S.Rational(1,2)))==0,
       "balanced prior has no first-order entropy slope")
 print("PASS complete golden probabilities and moving-normalizer source")
