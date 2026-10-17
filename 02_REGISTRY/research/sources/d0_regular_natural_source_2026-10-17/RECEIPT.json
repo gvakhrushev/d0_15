@@ -1,0 +1,37 @@
+{
+  "schema": "d0-regular-natural-source-check/1",
+  "source_ref": "2c500cd63f7a5923809a2208d81f58a12cc709a9",
+  "proof_path": "02_REGISTRY/research/A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md",
+  "extended_proof_in_conversation_package": "D0_source_closure_gate_2026_10_17/THEOREM_RU.md",
+  "checker_git_blob": "229bdb78d6fa9387fdc8f15ec358bdbf4abcd84a",
+  "environment": {"python": "3.13.5", "sympy": "1.14.0"},
+  "executed": {
+    "normal": true,
+    "optimized": true,
+    "stdout_byte_identical": true,
+    "stdout_sha256": "fba0e28b2467806ac5125814d4c6a588edbfa86191057d01f4c545076826c56c",
+    "checks": 26,
+    "public_checker_blob_matches_executed_local_bytes": true
+  },
+  "source_space_dimensions": {
+    "coframe_eee": 1,
+    "coframe_eT": 0,
+    "coframe_eR": 2,
+    "connection_eee": 0,
+    "connection_eT": 2,
+    "connection_eR": 0,
+    "before_variationality": 5,
+    "after_variationality_analytic_proof": 3
+  },
+  "scope": {
+    "locality_regularity_proved_for_native_source": false,
+    "full_physical_Cost_Info_selected": false,
+    "native_palatini_coefficient": null,
+    "native_matter_identified": false,
+    "native_joint_refinement_proved": false,
+    "D0_to_GR_proved": false,
+    "old_suites_replayed": false,
+    "Lean_or_full_CI_run": false
+  },
+  "note": "This receipt summarizes executed finite identities. Peetre/naturality and nonlinear closure are analytical statements with explicit assumptions, not consequences of the PASS count. It is not an independent CONTROL acceptance."
+}
