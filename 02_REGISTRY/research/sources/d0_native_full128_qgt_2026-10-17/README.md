@@ -63,3 +63,27 @@ New independently reproducible two-label rational SELECT class checker:
 16 exact controls pass normal and optimized identically (source Git blob b35b1e40983878ce0e09f58bfc213c133a6dd70d; stdout SHA256 36bad27769d64d99a2f7dd269480a5f9d75860821e9abaa5881b239bd4f07d76). The moving square-root/Sylvester jet and nonzero 2×2 skew record connection are rational and noncommuting. This is not an exhaustive new original full16/64-label replay or native physical implementation claim; the analytical formula is all-size, inherited full16 shell control separately supplies actual nonzero source.
 
 Section8 of the main memo also supplies a strict representation-theoretic firewall: a finite-dimensional positive-unitary polar transport cannot furnish a faithful continuous SO+(1,3) boost representation, and a one-round scalar-normalized vector-boost match has the necessary rapidity bound 3 ln(phi)/2. The true physical Lorentz observer and coframe remain indispensable. No GR claim or original raw source terminal promotion.
+
+
+## Ten positive metric symbols directly from the REAL native blank output
+
+The old actual golden-reflection blank row is M0=I−2(hD/16)². Its correct independent first source at fixed lattice mesh is exactly dM0=−h² d(D²)/128; no extra curvature oracle or newly picked gate.
+
+On the clearly scoped unrestricted 4D **positive** constant-coframe Hodge/CAR symbol, D(k)=Σ_a(F z(k))_a c_a+adjoint with all16 grades and flat F invertible, CAR implies
+    D(k)²=z(k)†(F†F) z(k) I16.
+
+Take four coordinate Fourier vectors and their six pairwise sums, all with a common nonzero finite Fourier phase. For H=F†F, the ten first symbol rows normalize to
+    r_i=dH_ii,  r_ij=dH_ii+dH_jj+2dH_ij.
+They have determinant 64 and the EXACT universal inverse
+    dH_ii=r_i, dH_ij=(r_ij−r_i−r_j)/2.
+The inverse packed-l1 constant is ≤(5/2)Σ_i|r_i|+(1/2)Σ_ij|r_ij|, independent of h and sample count. With full-record coercivity and real blank output,
+    Tr Q(v,v)≥(p³ h⁴/16384)||d(D²)||²_HS
+for each tested carrier. This is **source visibility**, not equality of the native paid action with EH, not admissibility of all four physical coordinate Fourier directions and not a local raw h^-2 theorem.
+
+New *full16 literal CAR creator/annihilator* checker on a NONORTHOGONAL rational invertible frame:
+    python 02_REGISTRY/research/sources/d0_native_full128_qgt_2026-10-17/check_flat_ten_metric_blank.py
+    python -O 02_REGISTRY/research/sources/d0_native_full128_qgt_2026-10-17/check_flat_ten_metric_blank.py
+
+110 exact controls (100 full-matrix first jets and 10 full Laplacian identities; determinant/rank/inverse controls also tested), normal/-O byte-identical. Two genuine wrong-definition mutants were rejected (missing coframe factor 1/2 and duplicated Fourier settings). The exact published source Git blob is 9a7a8619148d365e2611ea56b8ff361f613e9b70, stdout SHA256 5a9e8663cb644f1f5179c9932ec6e2f88b461ec4ee1c5d88202a9549dfa6044f; receipt BLANK_TEN_METRIC_RESULT.json.
+
+**Scope firewall:** genuine rank10 is proved for the unrestricted flat positive coframe *symbol* and chosen ten independent Fourier probes, not generic curved original stored-adjoint Lorentz field tangent image, not real-time clock/test gate admission, not ten pointwise Euler source equalities, not material/spin/gravitational Cost−Info, not joint-critical refinement nor original #216 raw h^-2 terminal. The next physical task must consume this rank10 inverse without enlarging the allowed native chart or postulating freely accessible coherence tests.
