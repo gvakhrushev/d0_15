@@ -130,6 +130,24 @@ def main():
         "probe_lift_reproduces_metric_variation",
         induction.recovered_metric_variation(family["e"].subs(nonvacuum), lifted_probe) == probe_direction,
     )
+    slots = S.symbols("v00 v01 v02 v03 v11 v12 v13 v22 v23 v33", real=True)
+    generic = S.zeros(4)
+    position = 0
+    for left in range(4):
+        for right in range(left, 4):
+            generic[left, right] = generic[right, left] = slots[position]
+            position += 1
+    generic_lift = induction.induce_coframe(family["e"], generic)
+    require(
+        "generic_symmetric_variation_round_trips",
+        induction.recovered_metric_variation(family["e"], generic_lift) == generic,
+    )
+    skew = S.zeros(4)
+    skew[0, 1] = 1
+    require(
+        "nonsymmetric_matrix_is_not_reproduced",
+        induction.recovered_metric_variation(family["e"], induction.induce_coframe(family["e"], skew)) != skew,
+    )
 
     origin = dict(nonvacuum)
     origin[height] = 0

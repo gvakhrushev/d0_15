@@ -85,7 +85,9 @@ python3 02_REGISTRY/research/sources/d0_role_coframe_induction_2026-10-17/test_r
 python3 -O 02_REGISTRY/research/sources/d0_role_coframe_induction_2026-10-17/test_role_induction.py
 ```
 
-Оба режима дают один JSON, `exact_check_count=35`, `status=PASS`. Поля `native_price_equals_geometric_action` и `gr_derived` равны false.
+Оба режима дают один JSON, `exact_check_count=37`, `status=PASS`. Поля `native_price_equals_geometric_action` и `gr_derived` равны false. Общая симметричная `V` при символическом `H` возвращается из подъёма; несимметричная матрица не возвращается.
+
+Независимый проход по предусмотренной атаке: SURVIVES. Блокер не снят: нет отдельного `S_matter`, чья вариация равна этому probe без копирования из `G`. Равенство (20) открыто. Левое лоренцево действие сохраняет метрику и меняет coframe, поэтому сечение не каноническое.
 
 ## Оставшийся blocker
 
