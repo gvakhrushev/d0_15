@@ -1,5 +1,15 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+
+## 17 October 2026 — actual fixed-beta v8 infrared feedback: curvature and conditional connection selection
+
+[New original-feedback IR theorem](A4D_NATIVE_FEEDBACK_IR_EINSTEIN_TORSION_SELECTION_2026_10_17.md) uses the **unchanged** native H+J+R feedback log series, not a newly selected three-depth spectral action. On the full16 true-adjoint positive Laplace-type carrier with the existing beta=2phi^-2, M=128, z=2^-20, the large *physical* coframe scaling e_s=s e yields a two-scale expansion with nonzero derived curvature coefficient c_R=M[-Li_2(-z/(1-z))]/(12pi² beta)≈1.3491948053e-6 and simultaneously a field-dependent extensive volume term. Same action, full16 and original multiplicities. Positive metric only: the owned reflection identity introduces an observer/aether source at the SAME order; the merged #360 pp-wave covector mismatch is retained. Fixed-beta arbitrary-q nonlocality and the original fixed-g raw h^-2/#216 terminal are not claimed resolved. [Scalar/full16 diagnostic](sources/d0_native_feedback_ir_2026_10_17/check_feedback_ir_polylog.py) and [exact CAR tensor-witness/numeric cross-check](sources/d0_native_feedback_ir_2026_10_17/check_tensor_ir_full16.py) are bounded checks, not stationary certificates.
+
+A new quantitative **conditional native connection** consumer uses the already-owned A2 4+4+16 decomposition and the genuine A4 tensor quartic. For any bounded *flat constant* 24-component connection-stationary branch whose actual normalized preparation first source is O(s^-2), the unchanged native v8 Euler rows force trace+threeform torsion O(s^-2) and tensor16 torsion O(s^-2/3). This is a stationarity-to-Levi-Civita constraint on this declared sector, NOT existence of a joint root or minimizer stability: the quartic feedback coefficient is negative and additional physically selected preparation may change minima. Do not insert torsion-free as a separate equation.
+
+**Parent route change:** compare the actual full Info/record/cut law with this fixed-beta feedback source before new synthetic action construction; derive/solve its Lorentz observer and independent matter/spin sources, and construct a nonempty curved joint refined family on the original 10-row raw norm. The existing full-pointer selected birth and matched-clock comparative KL findings remain separate observables until physically identified. This result narrows the positive-metric and constant-torsion gates but does not promote GR or retire #334.
+
+
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`.
 Current execution: **[Draft #334](https://github.com/gvakhrushev/d0_15/pull/334) / IN_PROGRESS**,
 branch `exp/a4d-joint-response-continuation-2026-10-16`, from accepted main
