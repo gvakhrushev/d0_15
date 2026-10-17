@@ -198,3 +198,28 @@ No CORE/BOOK claim, no task registration, no new physical action, no original te
 В (5) используется Lüders operation K_yes=P и K_no=I−P, а не произвольный instrument с теми же effects. Для (6) важны именно **повторяемые postmeasurement states** на полной comparison K; произвольные дополнительный U_yes/U_no нарушают (7) даже если каждый отдельный Born эффект совпал. Все флаги старых rounds остаются в архиве; projecting на один prefix при READOUT не означает стирание остальных исходов при динамике.
 
 Обращение real programme J_i или некоммутирующих full-archive projectors к literal fixed one-way active→record gate set не установлено. Если физика допускает только старое X_t-commuting управление и не допускает такие projectors, (5) является математическим альтернативным экспериментом, а не замкнутым operational proof. Если допускает, полная BOOK Cost−Info *всё равно* может отличаться от surprise конкретного prefix или реконструированной logdet scalar diagnostic; conditional theorem §3 не заменяет actual test/cut/clock/stress selection. Existing full-pointer Shannon vs fixed-beta v8 source separation therefore remains in force.
+
+
+## 6.1. KILL-FIRST уже известного one-way admission: sharp tilted old-bit projection невозможна в этом классе
+
+Здесь есть содержательная проверка, не требующая ещё одного полного native spectrum search. Existing A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md §1 proves для class "arbitrary active U_A, one-way active→old-R C_f, unchanged/equivariantly transported pointer" all-word covariance effects:
+
+  X E_y X = E_{τ(y)},                              (26)
+
+где X — translation/flip конкретного старого bit, τ — permutation **полных** финальных pointer labels. Любое позднее классическое coarse-graining старых меток — сумма SOME positive E_y.
+
+**Lemma (qubit, any word length).** Если в ЭТОМ классе грубое двухисходное чтение якобы даёт SHARP rank-one projector P и I−P на старом qubit, тогда необходимо
+
+  X P X = P    OR    X P X = I−P.                  (27)
+
+Proof: P=Σ_(y∈S)E_y rank1 ⇒ each nonzero E_y in S is positive scalar multiple λ_y P. Every remaining E_y is positive scalar multiple of I−P since Σ_(y∉S)E_y=I−P. Take one λ_y>0. Covariance sends E_y to λ_y XPX, which is again one of original POVM effects. This effect has support only either in P or its orthogonal complement. As XPX is rank1, it must equal P or I−P. No assumption that the coarse event itself transforms covariantly is needed: the full original label-level covariance is sufficient.
+
+Exact hostile fixture on the fully retained old bit:
+
+  |v>=(3/5,4/5), P=|v><v|,
+  X=[[0,1],[1,0]],
+  <v|Xv>=24/25,       |<v|Xv>|²=576/625.          (28)
+
+XPX is neither P nor I−P. Therefore a sharp repeated test of THIS tilted old-bit subspace cannot be compiled from the supplied one-way class, even with arbitrary active computation, infinitely many word lengths, fresh spectator workspaces, and any classical output coarse-graining. Pure active phase quadratures do not affect the covariance conclusion. The argument is a direct *consumer* of the already owned all-word theorem, not a claimed native D0-wide no-go.
+
+**Стратегическая развилка.** Для actual two-record P_0,P_1 выяснить, действуют ли they as old-memory sharp tests. Если да и их old-bit image contains a fixture not obeying (27), нельзя продолжать путь через one-way placement без реально допущенной дополнительной операции old-memory control или другого separately proved same-source readout. Если record planes реализованы на full ACTIVE comparison space and old tape is only a spectator, (27) не запрещает их: тогда остаётся проверка native active programme, its true C1 source and cost. Это одна адресная проверка carrier/operation, а не новый каталог POVM.
