@@ -89,6 +89,12 @@ for H in old:
     check(all(H[i,i]==0 for i in range(4)),'old own-leg constraints')
     same((lam.T*H*lam)[0],0,'old observer constraint')
 
+# The moving positive endpoint source survives after the 1/h difference quotient.
+t=S.symbols('t',real=True)
+ux,uy=S.symbols('ux uy',real=True)
+alpha=S.exp((uy-ux)*t/2)
+same(S.diff(alpha,t).subs(t,0),(uy-ux)/2,'true weighted half-density edge first source')
+
 # Source covectors: 4 exact Bianchi slots Ea=0 + 6 exact weighted Euler pairings.
 all_sym=[S.diag(*[int(i==j) for i in range(4)]) for j in range(4)]+[P(*ij) for ij in pairs]
 def ward_matrix(k):
