@@ -375,6 +375,20 @@ and field correctors cannot remove that sector. Fixed finite code prices have
 regular power expansions and do not cancel the logarithm. This is a full
 entropy result, not an event substituted for the price. Its weak parameter
 source is explicit; no pointwise raw-source rate or physical Info is assumed.
+The [constructive golden/registration readout](A4D_RETAINED_HISTORY_COHERENCE_TEST.md)
+now separates every real tape coherence using an explicit finite word. It
+needs actual old-bit addressing and a costed joint cut; literal fresh-workspace
+v8 does not derive that placement, and complex quadratures remain distinct.
+The [local normalization theorem](A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md)
+reduces raw prefix projectivity to sum(mu_alpha phi^I_alpha)=1, with the actual
+field jet. The complete open effect tree has normalizer1, while a return
+cut on the SAME channel has a nonconstant entanglement-fidelity normalizer.
+The Book-to-cut binding is therefore substantive. The
+[full pointer finite part/source](A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md)
+now converges on a common waiting-path measure under explicit moment/jet
+bounds at fixed clock. This removes an analytical O(1)-remainder premise,
+without selecting a physical subtraction or dropping dlog N.
+
 The native selection target is therefore history/test cut, raw normalization
 and full action/clock scale. A different code under the likelihood binding,
 or treating the coherent correction as a log-free EH coefficient, cannot

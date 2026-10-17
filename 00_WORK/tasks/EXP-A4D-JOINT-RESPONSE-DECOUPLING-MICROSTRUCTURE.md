@@ -708,6 +708,32 @@ topology of the subleading entropy is distributional in controlled smooth
 parameters, not the original raw h^-2 terminal. Physical test/cut/normalizer/
 action-scale selection and compatible joint refinement remain separate.
 
+## Retained-history readout and normalization continuation — 17 October 2026
+
+At efa3f8f3, consume the complete-history information/source scale and the
+actual golden/CNOT definitions. The repeated user text is byte-identical to
+sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt; do not replay its
+already disproved scalar-weight/contorsion inference. Prove a concrete
+coherence test by two golden gates and one-way active-to-old-record
+registrations on the entire retained tape. Distinguish supplied old-bit
+addressing from the literal fresh-workspace schedule, real informational
+completeness from arbitrary complex POVMs, and readout cost from free access.
+Prove the exact local gain/projectivity identity and its full differential;
+compare the actual open effect-tree normalizer with a return cut on that same
+process. Derive the full pointer-entropy finite part and a rigorously scoped
+smooth-field source from the published path/moment/Fisher estimates, retaining
+all128 outcomes, all16 grades, spatial modes and reference128. The consumer is
+the missing physical readout/cut/normalizer arrow in the SAME native price,
+not a fitted Einstein term. Write disjoint owners
+A4D_RETAINED_HISTORY_COHERENCE_TEST.md,
+A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md and
+A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md, and one packet
+sources/d0_retained_history_readout_2026-10-17/. Sole bounded helper:
+check_readout_splice.py; exact golden algebra, completeness and source identity
+are decisive. No old scientific replay, census or Lean. Physical placement,
+Info/gain selection, price normalization and the original h^-2 terminal remain
+open unless proved by the same actual programme.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

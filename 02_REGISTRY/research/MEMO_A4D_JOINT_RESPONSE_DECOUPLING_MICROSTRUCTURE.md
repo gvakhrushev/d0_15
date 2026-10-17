@@ -30,6 +30,7 @@ record results below is substituted for that terminal. The historical
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
 | On the SAME likelihood-bound complete history, code and all code jets cancel from Cost-Info. The actual full128 pointer entropy and smooth first covectors have derived leading scale log(1/epsilon) times total exit count/source, with bounded remainders. The coherent alternative has a real positive h² log(1/h) Schmidt-birth term on the faithful LC cone, including arbitrary first preparation/field correctors and the original winding. | [Complete history information/scale](A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md), [full coherent normal birth](A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md). Select the actual history/test cut, raw normalizer and complete action/clock scale. Fixed finite code cannot cancel the coherent logarithm; a new code under likelihood binding cancels pointwise instead. The subleading source is distributional on controlled parameter charts, not the original raw norm; no physical Info, all-rank leading preparation, joint root or universal GR no-go is inferred. |
+| Existing golden/registration words give all real-symmetric tape matrix units and an explicit source left inverse, conditional on old-bit placement. Raw prefix projectivity is exactly the local gain equation, and the actual open effect-tree normalizer differs from a return cut on that same process. Full pointer finite part and fixed-clock smooth source now have a waiting-path proof. | [Coherence test](A4D_RETAINED_HISTORY_COHERENCE_TEST.md), [normalizer binding](A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md), [finite part/source](A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md). No arbitrary complex POVMs, free old-bit access, physical Info, subtraction, or Book-to-open-cut identification is assumed. The original raw h^-2 terminal is unchanged. |
 | Actual port-dominated positive-relative code cost derives spatial preparation coercivity. With all16 forms and the true reference128, a minimum exists, actual grid minima converge with minimizing optimizer cluster points, and every preparation row has a weak Euler equation. On the exact-LC cone, each limiting labelled jump and the entire code/coherent objective are invariant; its full spatial minimum therefore cannot restore the nonzero intrinsic Lorentz Einstein source. | [Spatial preparation and Lorentz-source consumer](A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md). This removes assumed optimizer energy/compactness without extending the shell's unique Hessian or selecting physical code/Info. General optimizer field-source regularity and physical admission remain open. The real h² history signal is preserved; its native price/clock/scale is the consuming bridge, not a further unscaled preparation fit. |
 | Every actual retained128-outcome round gives an exact CP matter channel and total-count tilt. Its original port1 observable is `p epsilon Delta`; original golden0/10 code fixes the flat port-cost `n+p beta_h R0`. Flat full16 relaxation, full fixed algebra and strong trace-class continuum process follow without resetting records. Pointer and coherent record information have separate exact source diagrams. | [Complete retained channel/native cost](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md). Consume actual evolution, preparation derivatives and original code weights in the full price bridge. Stationary momentum weights are not Gibbs; finite faithful system stationarity does not give a reference128 purification. Complete code/Info selection, native primitive admission and Einstein/refinement equality remain open. |
 | The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
@@ -58,7 +59,7 @@ record results below is substituted for that terminal. The historical
 | The complete faithful finite joint kernel and local critical locus are classified: all Fourier blocks are solved, and every nearby solution lies in the exact flat family with the density and three extra Lorentz-Gram moduli retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Section11. Small nonflat continuation from this same full-rank root is excluded. The next input is rank-free native preparation/joint dynamics; physical admission and refinement remain open. |
 | The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
 | The three homogeneous connection-source components have an exact attainable-set support function at the fixed root; a pure preparation explicitly realizes an ellipsoid inside it. Rank-aware equations retain every preparation Euler row. | [Source capacity and nonlinear selection](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md). Consume at the rank8 boundary or preparation-distant stationary points after the faithful local classification. This is not a full field source inverse; a frozen-preparation spectral crossing is not a coupled branch. |
-| The actual rank8 preparation is now locally classified on the full amplitude domain: all40806 normal field directions are nonzero, with inertia33954+/6852-. Every nearby joint root belongs to the exact57195-dimensional flat family, including rank births. The preparation path from the faithful endpoint must nevertheless contain extra joint linearized kernels. | [Complete pure-memory result](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_NORMAL_FIELD_RESULT.md), [joint owner, Section14](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md). The pure nearby search is exhausted. Consume the forced interior degeneracy in the full nonlinear M_v/source test; physical preparation/action admission and refinement remain open. |
+| The actual rank8 preparation is now locally classified on the full amplitude domain: all40806 normal field directions are nonzero, with inertia33954+/6852-. Every nearby joint root belongs to the exact57195-dimensional flat family, including rank births. The preparation path from the faithful endpoint must nevertheless contain extra joint linearized kernels. | [Complete pure-memory result](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_NORMAL_FIELD_RESULT.md), [joint owner, Section14](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md). The pure nearby search is exhausted. Section14 now consumes a certified unique q3300 interior crossing and nonzero memory-source pairing; the mixed-memory proof excludes the pure q/−q field crossing even with arbitrary first velocity along that memory fibre. Additional field modes and general nonlinear branches remain open, together with physical admission/refinement. |
 | The coordinated q3300 packet localizes one unique legacy Schur crossing to `[0.43032,0.430405]` and encloses the grade-four source-neutral pairing in `[0.3110574666,0.8594475318]`, strictly positive. | [Legacy crossing witness](sources/d0_q3300_mixed_crossing_witness_2026-10-16/README.md), source `5ff922083b5481682a82488c2f984a030162eeb4`. It excludes that particular four-source fibre test, not a full-Lorentz branch. The mixed old-pure path already fails the extra boost equations. Fixed inputs/checker/output match the source receipt; its reported normal/optimized runs are preserved without replay. |
 | The actual stored Dirac on the entire bounded exact adjoint class has a full16 positive representation with unitary returns. The same literal v8 instrument, heat/feedback/matter price and all observer/preparation source jets intertwine on every admitted curve. A genuinely curved native row-rotation has an explicit full128 matter second lift, but its complete directional Hessian lies strictly between0.089 and0.091. | [Unified source, Sections 0.3 and 3.3–3.5](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). The operator/program arrow is established for the declared conditional v8 price; physical primitive/price admission and native refinement remain. The native wave's first velocity is excluded from the joint critical kernel, not all curved roots. |
 | One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
@@ -6440,3 +6441,57 @@ its actual cut/reference/weights/scale with all equations, then its source
 must match the intrinsic Einstein covector. No desired stress or action
 term is inserted. Compatible joint refinement and the original fixed-g,
 independent-tau/all-ten raw h^-2/#216 terminal remain OPEN.
+
+
+## Constructive history reading and the remaining price law — 17 October 2026
+
+The user's coframe/weighted-edge text is byte-identical to the already
+preserved input (SHA256 ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61).
+Its scalar-contorsion assertion was disproved in the existing coframe/source
+bridge; its full-work request does not call for another reconstruction.
+The current continuation instead supplies three missing consumers of the
+complete native history argument.
+
+First, the [golden/CNOT construction](A4D_RETAINED_HISTORY_COHERENCE_TEST.md)
+uses two actual G gates and active-to-old-bit registrations. For the flip
+X_t it gives K0=pI-p²X_t and K1=ap(I+X_t). The joint pointer effect is
+p³(P_i+P_j+|i><j|+|j><i|). Together with old diagonals these effects
+reconstruct every REAL coherence and its genuine normalized derivative.
+The generic matrix-unit proof covers the full128^n tape; it is not a
+rank census or arbitrary-POVM assertion. All outcomes remain. Literal v8
+uses fresh workspaces and does not derive this old-target placement; the
+costed admissible placement and complex quadratures are explicit remaining
+premises. The conserved old-translation charge can be read by this word,
+so its preparation invariant does not imply pointer-only feasible tests.
+
+Second, the [raw-weight law](A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md)
+reduces normalization to an exact local target. For w_child=w_parent
+mu_child phi^I_child, prefix projectivity holds iff sum mu_child phi^I_child=1.
+Its actual field derivative must also vanish. A telescoping debt formula
+retains violations and their covector at every prefix. The actual open
+Julia effect-tree satisfies projectivity with normalized preparation.
+But the SAME channel on faithful shell/reference128 has return-cut
+normalizer F_e(I/128,Phi^n), with one-round value1-epsilon gamma,
+gamma>0 by a literal non-scalar Walsh row. Empty normalization therefore
+does not identify Book geometry/cyclic sums with the open cut. Choosing
+that binding is the remaining physical proof, not a numerical convention.
+
+Third, the [pointer finite-part theorem](A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md)
+places all waiting paths and marks in one finite analytical measure.
+The actual path-amplitude convergence and log-tail control give
+H_h-log(1/epsilon_h) E N_h -> -integral f log f. Under the stated stronger
+moment/preparation-jet bounds, actual differentiated path products and the
+uniform tape-innovation bound give weak path-jet convergence. Pairing with
+the strongly convergent amplitude-log vector proves the full fixed-clock
+first covector, including rank births, without differentiating a value limit.
+The common measure is analytical; it neither chooses a physical code nor
+authorizes the leading subtraction as an action counterterm. Moving clock
+cells need the actual programme's transport terms.
+
+Thus the history argument now has explicit tests, a local raw-normalizer
+criterion, and the complete pointer finite-part/source consumer. They are
+substituted in E S=(H-log N)/log(phi) only under the SAME physical likelihood
+binding. Full source equality to intrinsic Einstein still requires that
+native binding and a compatible nonempty joint refinement; the original
+fixed-g/independent-tau/all-ten unweighted raw h^-2/#216 target remains open.
+No old certificate or Lean replay is used by this continuation.

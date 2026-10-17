@@ -467,6 +467,29 @@
     "curved_tensor_mutations": 4,
     "flat_output_sha256": "53e542e245ca08915082891ea8d92b4e88f51b1294d95cd05839929cc34e4ac4"
   },
+  "retained_history_readout_normalizer_finite_part_checkpoint": {
+    "base": "efa3f8f3b329e606e0bd6df7cdd0f72a51edb458",
+    "conclusion": "Explicit golden/registration real-coherence tests and normalized source left inverse; exact local gain/projectivity law with all jets and same-process return normalizer separator; full pointer finite-part and fixed-clock C1 source limit.",
+    "consumer": "Same complete native history/readout/cut/raw-weight source, then intrinsic Einstein comparison",
+    "integration_parent": "3f443e120d843c02c409aee6b5618847edc0ba91",
+    "new_bounded_exact_checks": 40,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "admitted history/test/cut and raw weight/gain law, physical clock/action scale, full source equality and compatible joint refinement, original all-ten raw h^-2/#216 terminal",
+    "scope": "smooth compact actual chart, fixed native clock, actual normalized Hilbert preparation jets and moment8; value needs moment4",
+    "sha256": {
+      "02_REGISTRY/research/A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md": "e0a7a9139fc469568111393c9ededdc6dde86e28c4c5a7b85795731183aa371b",
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_COHERENCE_TEST.md": "3a55980ed2051b34bfba3570731622489a2e11e48d49a9f42bce034cae2ef1d6",
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md": "98b02b22f8678be211f555c2ec0c1d8ac3d2cc43f7dd50b002b8e1424460407b",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/ANALYTICAL_REVIEW.md": "1d299ce77fa910355745a03ef3dcd55c099e41bfd1f0cfa6c6b7b4d92334951c",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/INPUTS.json": "fc951a82d49d84f99f9a07c74b9bee369d107c0f146832ec155114783925b28c",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/INTEGRATION_VALIDATION.json": "a709ade4c8118300be651c1547cb19e43794f62a4fea155739be0a6e003bd652",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/README.md": "34fce7f64716b2d86978765e9937e156d5203f937132817ec4b49865b1ca30cd",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/RESULTS.json": "46956ba27f2592490a989d9dcc277aa559472296c97d92103d7c2865ffc418ae",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/VALIDATION.json": "6e2d574475d4011cd14ecec696421fc0f0fc65b4fe28699a779fc68b847e9fd2",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/check_readout_splice.py": "015863a4a4968d49cb41365927dcad63d96a704da3cd6f2ab1e21b59027eeb56"
+    }
+  },
   "second_order_source_checkpoint": {
     "base": "ac79c0ed7cc5f2508d61bec32d2d82d323354c94",
     "conclusion": "Controlled fixed-beta H+J raw same-grid second source remainder O(h^(9/4)); actual matter continuation and native reference law separate. First faithful exact-LC cone amplitude corrector is obstructed.",
