@@ -79,6 +79,17 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
+    },
+    {
+      "id": "WRK-A4D-SOLUTION25-PROFILE-REMAINDER",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "On Palatini solution (25), record the profile Euler densities of L2, the scalar piece, and q as -(16/3)s^2/c, -(4/3)s^2/c, and -4 s^2/c, with the profile Ricci pairing equal to 0 and covector identification false. Keep gr_derived, equation_20_closed, and equation_28_closed false and do not mint claims.csv.",
+      "brief": "00_WORK/tasks/WRK-A4D-SOLUTION25-PROFILE-REMAINDER.md"
     }
   ]
 }
