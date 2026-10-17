@@ -29,6 +29,7 @@ record results below is substituted for that terminal. The historical
 
 | Constructive result | Current owner and remaining physical obligation |
 | --- | --- |
+| On the SAME likelihood-bound complete history, code and all code jets cancel from Cost-Info. The actual full128 pointer entropy and smooth first covectors have derived leading scale log(1/epsilon) times total exit count/source, with bounded remainders. The coherent alternative has a real positive h² log(1/h) Schmidt-birth term on the faithful LC cone, including arbitrary first preparation/field correctors and the original winding. | [Complete history information/scale](A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md), [full coherent normal birth](A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md). Select the actual history/test cut, raw normalizer and complete action/clock scale. Fixed finite code cannot cancel the coherent logarithm; a new code under likelihood binding cancels pointwise instead. The subleading source is distributional on controlled parameter charts, not the original raw norm; no physical Info, all-rank leading preparation, joint root or universal GR no-go is inferred. |
 | Actual port-dominated positive-relative code cost derives spatial preparation coercivity. With all16 forms and the true reference128, a minimum exists, actual grid minima converge with minimizing optimizer cluster points, and every preparation row has a weak Euler equation. On the exact-LC cone, each limiting labelled jump and the entire code/coherent objective are invariant; its full spatial minimum therefore cannot restore the nonzero intrinsic Lorentz Einstein source. | [Spatial preparation and Lorentz-source consumer](A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md). This removes assumed optimizer energy/compactness without extending the shell's unique Hessian or selecting physical code/Info. General optimizer field-source regularity and physical admission remain open. The real h² history signal is preserved; its native price/clock/scale is the consuming bridge, not a further unscaled preparation fit. |
 | Every actual retained128-outcome round gives an exact CP matter channel and total-count tilt. Its original port1 observable is `p epsilon Delta`; original golden0/10 code fixes the flat port-cost `n+p beta_h R0`. Flat full16 relaxation, full fixed algebra and strong trace-class continuum process follow without resetting records. Pointer and coherent record information have separate exact source diagrams. | [Complete retained channel/native cost](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md). Consume actual evolution, preparation derivatives and original code weights in the full price bridge. Stationary momentum weights are not Gibbs; finite faithful system stationarity does not give a reference128 purification. Complete code/Info selection, native primitive admission and Einstein/refinement equality remain open. |
 | The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
@@ -6381,3 +6382,61 @@ old scientific replay was run. The new results are analytically reviewed
 and pinned in the existing checkpoint intake. Physical price selection,
 compatible joint refinement and the original fixed-g/independent-tau,
 all-ten raw h^-2/#216 terminal remain OPEN.
+
+## Complete information law and the actual history scales — 17 October 2026
+
+The [full-history source owner](A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md)
+removes a false freedom in the physical-price search. If Book raw weights,
+Born-normalized q, code and Info are bound on the SAME complete history,
+then pointwise Cost-Info=(-log q-log N)/log(phi). A change of code changes
+Cost and Info equally, including moving-code and all-field derivatives.
+The actual forcing target is history/test cut, raw normalizer and action
+scale. It is not necessary to force a unique syntactic decoder in this
+likelihood contract. The normalizer's source is not fixed by q alone.
+
+The entire native128-outcome pointer tape now has a quantitative source
+law. Conditional log-likelihood increments have a bounded L2 sum by
+unconditional fourth moments. The actual tape purification tangent bounds
+classical Fisher information, so BOTH full entropy and every smooth first
+source equal log(1/epsilon) times total-exit count/source plus O(1).
+Thus their normalized limits are the actual integral Tr Delta rho and
+its complete covector. Clock terms cancel exactly at fixed integer depth;
+there is no formal differentiation of an entropy value limit. This applies
+to the stated initial moment/jet class, without history enumeration or a
+positive floor on individual outcomes. Native physical binding is separate.
+
+The [coherent normal-birth owner](A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md)
+then closes a different analytic premise at the next history scale. An
+actual one-step weighted residual proves the second output expansion,
+including the Euler clock correction. Inverting only the previously proved
+positive2048 leading support gives its true Schur birth operator. Its trace
+b contributes +2b h^2 log(1/h) to the complete coherent record entropy.
+It is not the old squared matter-corrector norm or a rare probability.
+
+Six literal rare outputs (three role characters and BOTH golden ports)
+form a positive sector of the real retained history. Their event map,
+with the two-mark error O(h^4), proves
+`b >= T/(128s^4) [2 Var(theta_prime)+<theta_prime^2 cos^2(2theta)>]`.
+It survives every normalized prep firstjet and h-order field corrector.
+For theta=y the bound is T/(256s^4): the other two characters resolve
+the single-character winding exception. All8 momenta/full16/reference128
+remain. The stated H24/link-Taylor assumptions are analytic, not newly
+proved physical admission or a claim about every leading preparation rank.
+
+A fixed finite per-round code has a regular power expansion and cannot
+cancel this coherent logarithm. On canonical sampling b is zero at a
+constant cone and positive on every nonconstant one. The locally uniform
+value expansion therefore supplies a distributional parameter source and
+rules out a uniformly finite log-free h^-2 source on that whole declared
+family without a separately derived cancellation. No pointwise C1 remainder
+or rough raw-source norm follows merely by differentiating the value.
+
+The route now uses both concrete laws: likelihood Info cancels code and
+leaves pointer entropy minus the real raw normalizer; the declared coherent
+Cost-S candidate retains a genuine logarithmic birth contribution. Maximal
+operational gain has its own central-reference/test hypotheses and is not
+an arbitrary sign change between them. The physical morphism must select
+its actual cut/reference/weights/scale with all equations, then its source
+must match the intrinsic Einstein covector. No desired stress or action
+term is inserted. Compatible joint refinement and the original fixed-g,
+independent-tau/all-ten raw h^-2/#216 terminal remain OPEN.

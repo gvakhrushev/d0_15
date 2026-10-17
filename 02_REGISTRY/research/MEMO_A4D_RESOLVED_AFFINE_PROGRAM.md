@@ -356,6 +356,31 @@ The actual order-h^2 history signal remains; its physical price/scale must
 come from the same retained native programme, not an added EH term.
 
 For physical selection, consume the existing operational-gain theorem
+with the exact information/cut distinction now supplied by the
+[complete-history scale/source theorem](A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md).
+On the SAME likelihood-bound history, code cancels pointwise from Cost-Info;
+the physical expected source is dH(q)-dlog N, not an independently adjustable
+code source. The actual full128 pointer H and smooth sources have derived
+leading scale log(1/epsilon_h) times the total-exit functional/source, with
+bounded remainders. Its proof uses the actual tape derivative and unconditional
+fourth moments, not history enumeration or differentiation of a value limit.
+
+The [coherent normal-birth consumer](A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md)
+now tests the h² escape from continuum cone blindness. A weighted modified
+equation gives the second actual output jet, with the native Euler correction.
+The positive Schur birth block yields h² log(1/h) in complete coherent entropy.
+All three literal rare characters and both ports give a positive lower bound
+on every nonconstant faithful LC cone, including theta=y; first preparation
+and field correctors cannot remove that sector. Fixed finite code prices have
+regular power expansions and do not cancel the logarithm. This is a full
+entropy result, not an event substituted for the price. Its weak parameter
+source is explicit; no pointwise raw-source rate or physical Info is assumed.
+The native selection target is therefore history/test cut, raw normalization
+and full action/clock scale. A different code under the likelihood binding,
+or treating the coherent correction as a log-free EH coefficient, cannot
+replace that derivation.
+
+Use the existing operational-gain theorem
 when G0b supplies the feasible effect algebra and the actual/maximal-gain
 contract. Its central-reference/all-POVM premises are not consequences
 of retaining coherent records. Full-history/workspace/ensemble price,

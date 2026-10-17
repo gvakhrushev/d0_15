@@ -134,6 +134,30 @@
       "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/check_exit_inverse_uv.py": "d700850b4920c14229b76d09b8d589ca67c9fda6e5ea80d0a5307b89bc54d332"
     }
   },
+  "complete_history_information_scale_checkpoint": {
+    "analytical_cross_reviews": 3,
+    "base": "090c957fddde61946da03cac7d1e658a6197f4e5",
+    "binding_conclusion": "Under SAME-history likelihood binding, code and all code jets cancel pointwise; expected physical action is [H(q)-log N]/log(phi). Raw normalizer, test/cut and action scale are the forcing target.",
+    "coherent_conclusion": "Weighted native second output expansion with actual Euler correction gives a positive Schmidt Schur birth B and +2 Tr(B) h^2 log(1/h) entropy. Six real rare outputs bound Tr(B)>=T[2Var(theta_prime)+<theta_prime^2 cos^2(2theta)>]/(128s^4), including T/(256s^4) on winding theta=y, independently of first prep/field correctors.",
+    "consumer": "Determine actual complete information-price scale before Einstein-source comparison; fixed finite code cannot cancel coherent birth logarithm, and likelihood code changes cancel instead.",
+    "new_bounded_exact_checks": 25,
+    "old_scientific_replay": false,
+    "open": "Physical native history/test/cut, raw weights and action/clock scale; other leading preparation ranks, full admitted Einstein source, compatible joint roots/refinement and original all-ten raw h^-2/#216 terminal.",
+    "pointer_conclusion": "On the actual full128 history, H=log(1/epsilon) E total exits+O(1), and every declared smooth first source has the same bounded remainder. Normalized values/sources converge to the actual integrated Rayleigh/exit functional.",
+    "producer_normal_optimized_outputs_identical": true,
+    "scope": "Full spatial pointer source under fourth moments/actual prep jets; coherent result on controlled faithful eight-shell LC cone, reference128/full16, H24 normalized prep germ and actual normalized-link Taylor. Subleading source only distributional in smooth parameters.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md": "ca686aba406b81cd88e78def81750d830bba151783d6ac614013b146079e5291",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/ANALYTICAL_REVIEW.md": "1defb91281e3594f881ccf8b870b84dc5d378e23b015c52038fc6a2a190962fd",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/INPUTS.json": "8755ca6147b21d669b258f0d2a6144c3a264bf51427ef1eca8df7c20914cb7d8",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/INTEGRATION_VALIDATION.json": "fca63c73e078179a5b232fff911ac8882950b25f16d5dace273815adf98f944b",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/README.md": "2108524dc0e9f810adff313693b4c8322432a586111a2fc8d77b47d96975c386",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/RESULTS.json": "9ea20c9a1192535c5616af8154077b1a697c897eb38c511ba42f1d358571ae0f",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/VALIDATION.json": "5e81ec118fefad0b3f6a81bb0f89649640b9003922d6210a4641a34d9b8fded3",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/check_normal_birth_inputs.py": "373f1e20b7319269d5805672da8cc12c845d9bfced0f9ec572108f816356f231"
+    }
+  },
   "complete_record_channel_native_cost_checkpoint": {
     "analytic_proofs_distinct_from_finite_checks": true,
     "base": "ec5d6a00b14dcb26026c687bc37d49b0b31f73be",

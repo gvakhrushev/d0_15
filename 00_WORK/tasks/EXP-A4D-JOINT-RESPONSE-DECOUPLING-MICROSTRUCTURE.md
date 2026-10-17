@@ -685,6 +685,29 @@ selection, higher optimizer field-source regularity and actual h^-2 history
 price remain separate. The user's reattached coframe text is byte-identical
 to the already preserved input; retain its alias, not a duplicate package.
 
+## Complete-history information/source scale — 17 October 2026
+
+At 090c957f, consume the now labelwise cone-independent continuum process;
+derive what the actual complete history contributes at the next scales.
+Use SAME-history branch/partition binding to eliminate syntactic-code
+ambiguity, while retaining raw normalizer and cut. Prove full128 pointer
+entropy and smooth first sources have the derived log(1/epsilon) exit-count
+scale via conditional log-density martingales and actual tape Fisher bounds.
+For the declared coherent alternative, prove a weighted second output
+expansion by a native one-step residual, including Euler clock. Extract the
+Schmidt-normal Schur birth and test the real h² log(1/h) term using all three
+rare role characters/both ports on the faithful eight-shell LC cone. Retain
+all128 columns and arbitrary preparation/field first correctors; do not
+replace entropy by a rare probability or assert a strong whole-tape h-jet.
+Owners A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md and
+A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md; sole bounded helper/packet
+sources/d0_complete_history_information_2026-10-17/check_normal_birth_inputs.py.
+Smallest exact check is the full16 three-word/Walsh/adjoint variance identity,
+including winding. No old replay, spectral/rank census or Lean. Source
+topology of the subleading entropy is distributional in controlled smooth
+parameters, not the original raw h^-2 terminal. Physical test/cut/normalizer/
+action-scale selection and compatible joint refinement remain separate.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

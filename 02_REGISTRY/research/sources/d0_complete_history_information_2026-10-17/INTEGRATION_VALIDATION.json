@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-10-17T01:26:32.311808+00:00",
+  "input_commit": "090c957fddde61946da03cac7d1e658a6197f4e5",
+  "input_pins_verified": 14,
+  "owner_sha256": {
+    "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md": "ca686aba406b81cd88e78def81750d830bba151783d6ac614013b146079e5291"
+  },
+  "producer_bounded_checks": 25,
+  "producer_normal_optimized_outputs_identical": true,
+  "producer_helper_and_result_hashes_verified": true,
+  "analytical_cross_reviews": 3,
+  "corrections_applied": [
+    "normalized link h-jet through h^2 requires exterior link through h^3 with O(h^4) remainder",
+    "Q sigma1 Q vanishes structurally, not from one-sided positivity",
+    "birth source is distributional after displayed leading and h-linear regular terms; no pointwise C1 promotion"
+  ],
+  "local_structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "old_scientific_replay": false,
+  "lean_build": false,
+  "remote_CI_claimed": false,
+  "independent_CONTROL_acceptance": false,
+  "physical_GR_closure": false
+}
