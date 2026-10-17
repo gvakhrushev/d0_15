@@ -211,6 +211,45 @@ R(g)=-R(G)+2\big[(\operatorname{tr}C)^2-\operatorname{tr}(C^T C)\big]
 
 Движение `e,n,h_n` входит в `dC` через истинную Levi–Civita derivative и projector/frame transport, а изменение объёма не заморожено. Проверка на несимметричном `C` отвергает замену `tr(C^TC)` на `tr(C²)` — такая подмена даёт **неверный twist-source**.
 
+### 3.1. Канонический пространственный split из конечной симметрии D0, а не дополнительный источник
+
+Есть ещё один обратный шаг к физической интерпретации (20). Действительный трёхмерный spatial Role sector уже выделен в принятом
+`03_FORMALIZATION/D0/Geometry/ArchiveSpatialHistorySplit.lean`.
+Рассмотрим **математически** 24 ориентационно-сохраняющих signed permutations этих трёх осей и их буквальный exterior lift `rho(R)` на том же `Lambda^* R^4` размера16. Каждый `rho(R)` ортогонален и переносит одновременно
+`gamma_i -> sum_j R_ji gamma_j`, `hatgamma_i -> sum_j R_ji hatgamma_j`.
+
+Единственная естественная Reynolds-карта на квадратичном observer-блоке имеет вид
+
+\[
+\Pi_{\rm iso}(X)=\frac1{24}\sum_{R}\rho(R)X\rho(R)^T.
+\]
+
+Точное равенство проверено **на всех девяти матричных единицах** пространственного тензора и на исходном full16 CAR:
+
+\[
+\boxed{\Pi_{\rm iso}\mathsf O(C)
+=\mathsf O\!\left(\frac{\operatorname{tr}C}{3}I_3\right).}\tag{20a}
+\]
+
+Следовательно пространственная trace-компонента и весь anisotropic/twist complement выделены **проекцией, определённой только пространственными ролями**:
+
+\[
+\boxed{\mathcal Q_{\rm obs}(C)
+=2\|\Pi_{\rm iso}\mathsf O(C)\|_{16}^2
+ -\|(I-\Pi_{\rm iso})\mathsf O(C)\|_{16}^2,\quad
+\|X\|_{16}^2=\operatorname{Tr}_{16}(X^2)/16.}\tag{20b}
+\]
+
+Доказательство: `||Pi O||²=(tr C)²/3`, а ортогональность Reynolds
+обеспечивает `||O||²=||Pi O||²+||(I-Pi)O||²`. Подставляя,
+`2||Pi O||²-||complement||²=3||Pi O||²-||O||²=(tr C)²-||C||²`.
+
+**Нетривиальное следствие:** интегральный observer source уже допускает описание как **относительный, знаковый баланс invariant-archive** на той же конечной CAR-записи. Это математически канонизирует *само разбиение* и показывает, что не требуется новый девятимерный материал для source. Но сам signed price `+2/-1` не становится физически выбранным автоматически: коэффициенты фиксируются Lorentz reflection, а не одной лишь симметрией или единичной золотой ценой. 24 групповых элемента не объявлены 24 физически исполнимыми контроллерами; равномерный Reynolds trace — алгебраическое среднее, не доказанная модель реально оплаченного раунда. В частности, его нельзя без доказательства отождествить с нативной `Cost−Info`.
+
+`check_spatial_role_twirl.py` буквально строит каждое из 24 exterior matrix lifts,
+проверяет сохранение исходных CAR generators, полный `9x9` Reynolds,
+ненулевой twist, настоящую производную moving C и ковариантность полного источника при совместной смене frame.
+
 ## 4. Одно точное Golden+CAR reading полного Lorentz scalar
 
 Четыре исходных двубуквенных Golden-исхода `FF,FR,RF,RR` сохраняются с весами `(p²,p³,p³,p⁴)` и знаком `ε=(0,+1,−1,0)`. Для *той же* rank16 projector immersion P и полного normal Parseval-family (как в `A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md`) обозначим матричные determinant ожидания `M_4(t)`. Тогда
@@ -248,6 +287,28 @@ M_4(t)=D_4+p^3t^2R(G)+2p^3t^4Q_4,
 
 Однако точечная теорема (5)–(16) **не** доказывает эту глобальную гипотезу. И даже её доказательство не заставило бы исходную `Cost−Info` выбирать именно signed scalar (23). Этот выбор — конкретная физическая/operational задача, а не следствие алгебраического программирования желаемого результата.
 
+### 4.1. Сцепка с уже существующей *одной* полной AF-программой — условное полное Einstein-уравнение
+
+Применим не новый action, а уже установленную theorem-схему из
+[`A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md`](../../A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md)
+и её full pointer descent [`A4D_BACKWARD_EINSTEIN_SOURCE_COMPLETION.md`](../../A4D_BACKWARD_EINSTEIN_SOURCE_COMPLETION.md). Пусть **один и тот же** native прибор действительно реализует на общей допустимой семье (включая matter/preparation/observer)
+
+\[
+\mathcal Q(X)=\int\mathcal C_{Ein}(X)\,dV_G+\mathcal S_{m}(X),\quad
+z(X)=p^2+\lambda\mathcal Q(X),\quad
+\frac25<a(z,\sigma)<\frac52,
+\]
+
+со всеми controller/reference costs, а не получает \(\mathcal Q\) как внешний числовой oracle. Тогда уже доказанная точная полная chain rule для central `E=zI` даёт
+
+\[
+\boxed{d_X\mathcal A_{AF}=\lambda a(z,\sigma)\,d_X\mathcal Q.}\tag{24a}
+\]
+
+Здесь **один общий положительный множитель** относится к *геометрии и той же материи*: нельзя умножать только Einstein term и потом произвольно подставлять чужой \(T\). В любой полной stationary preparation, действительно достижимой из native-процесса, \(\lambda a>0\) означает эквивалентность **всех десяти** coframe/metric Euler-нулей `d_X A_AF=0 iff d_X Q=0`. При одной глобальной source-preserving isometric карте (а не просто локальных jet witnesses) тождество (24) переписывает их как полные нелинейные Einstein–matter equations с выбранным физически coefficient sign/convention. Дополнительные links/preparation equations надо решать одновременно.
+
+Таким образом, **условный геометрический конец доказательства уже закончен алгебраически и без малости кривизны**. Недостающий шаг — вовсе не вывод формулы Эйнштейна: он состоит в **операционном** утверждении, что реальная native Cost−Info программа именно это \(\mathcal Q\) исполняет и оплачивает; плюс в её глобальном field/readout/source-refinement intertwiner. Программируемость \(E=zI\) не доказывает физическую вынужденность этой программы. Исходное v8 `H+J+R` нельзя тихо заменить \(\mathcal A_{AF}\): для такого перехода требуется отдельная same-native price/source theorem, с уже зарегистрированными fixed-β и history-normalization hostile controls.
+
 ## 5. Что теперь остаётся для настоящей ОТО, если идти строго назад
 
 Оригинальная цель — не просто вычислить кривизну: она требует **вынужденно выбранного** полного `S_native` на одном native process, независимой материи, настоящих field/preparation/observer Euler equations и точных nonlinear joint roots с `h^-2` raw refinement. Представленный ход убирает математическую необходимость искать новый metric carrier, новый нормальный detector и ещё одно приближение к Einstein tensor. Следующее решающее утверждение теперь должно иметь вид:
@@ -271,7 +332,7 @@ D S_{\rm native,h}(X)
 
 ## 6. Исполняемая проверка и scope
 
-`check_same_car_twojet.py`:
+`check_same_car_twojet.py` и `check_spatial_role_twirl.py`:
 
 - на **всех16** CAR masks собирает исходные `c_a`, `i_a`, `gamma_a`, `hatgamma_a`, проверяет Clifford и `J_U` с исходным `p+p²=1`;
 - проверяет сохранение Golden-weights и **всех10** coframe Gram/source slots с движущимся рациональным timelike observer и ненулевыми off-diagonal смешанными вариациями;
