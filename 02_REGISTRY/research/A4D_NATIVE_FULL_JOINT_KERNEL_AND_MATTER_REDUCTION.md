@@ -1504,9 +1504,9 @@ representative3003 связан точной spatial S3). Поскольку q33
 закреплённый `(d,o)` root-box; SHA `pure_memory_interval.py` и
 `PURE_MEMORY_CHOICES.json` совпадают с входными pin-ами pure rank8 endpoint
 result, а memory-source owner отдельно закреплён crossing checker. На
-точном стационарном пути (47) инерция меняется с `12+/1-` на `11+/2-` между `t=0.42` и
-`t=0.44`. Outward-оценка даёт ровно одно простое пересечение для каждой
-пары параметров и
+точном стационарном пути (47) инерция меняется с `12+/1-` на `11+/2-`
+между `t=0.42` и `t=0.44`. Outward-оценка даёт ровно одно простое
+пересечение для каждой пары параметров и
 `Tr((|chi><chi|-I/16) M_v) < -0.8441` для любого единичного crossing-вектора.
 Точная spatial-S3 и CAR-parity передача сохраняет actual native seed.
 Поскольку q3300 вне `Omega-Omega`, полный joint kernel lift сохраняет все
