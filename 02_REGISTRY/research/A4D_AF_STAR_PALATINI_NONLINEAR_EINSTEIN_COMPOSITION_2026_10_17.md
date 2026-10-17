@@ -318,6 +318,26 @@ By the quantitative C² convergence (13) and the elementary nondegenerate-critic
 
 This is a **nonempty genuinely curved exact restricted joint-stationary refinement family**, not merely one fixed nonflat value of the Einstein action. The spacetime curvature stays nonzero on the chosen patch for all large n by continuity. The result is rigorous for the explicitly constructed C² AF-star experiment and the declared 25 directions. It does NOT claim that all other independently fluctuating lattice Euler rows also vanish; a full field-space inverse with its gauge/resonance control is a strictly stronger theorem.
 
+### 6.1 Growing-dimensional exact critical refinement, not only a fixed 25-direction slice
+
+The same IFT argument can be used **constructively with an unbounded number of genuine native coframe/link Euler directions**, without assuming a uniform inverse of the full original lattice system.
+
+Choose any integer \(m\ge1\), and inside the exact pp-wave region of (19) select \(m\) pairwise disjoint smaller open balls \(U_1,\ldots,U_m\), each with a compact-support bump \(\rho_j\) whose Lorentz-gradient norm has nonzero integral. Use independently, on each ball, the one conformal coframe mode and the same COMPLETE 24 Lorentz contorsion types from (20). This defines a \(25m\)-dimensional TRUE joint coframe/connection family \(\mathcal K_m\) on the **same global Role and AF record**, not m independently paid AF programmes.
+
+Because the limiting Palatini density is local and the supports do not overlap, the full \(25m\times25m\) limiting Hessian is **block diagonal** with m copies of the nonsingular conformal-plus-Cartan block (each Cartan determinant \(2^{32}\) times its positive support-volume factor). Every off-diagonal mixed variation vanishes exactly at the Einstein background. Its first derivative vanishes in all \(25m\) directions. For each **fixed** m, the full C² convergence (13) applies uniformly on a sufficiently small compact chart \(\mathcal K_m\); nondegenerate critical-point stability therefore yields \(n(m)\) such that for ALL \(n\ge n(m)\) the ONE finite AF Book action has an **exact** stationary point for all \(25m\) genuine test variations simultaneously, and the corresponding coframe/connection remains nonflat and converges to the pp-wave on that fixed m-family.
+
+Pick increasing \(n_m\ge n(m)\) so that the constructed perturbation is less than \(1/m\) in a fixed desired low-order smooth norm (possible by convergence for fixed m). A diagonal choice \(m=m(n)\uparrow\infty\) sufficiently slowly yields a **growing-rank nonflat exact projected-stationary sequence** with
+\[
+\boxed{
+\#\{\text{independent exact AF-star coframe/link Euler tests solved}\}
+ =25\,m(n)\longrightarrow\infty.
+}
+\tag{24}
+\]
+All these tests are sourced by the SAME full golden AF Book record on the SAME Role lattice at each n, not by separately adding an action or density for each patch. Each finite-n critical field is a genuine smooth discrete sample of a curved coframe plus an independent proper Lorentz connection.
+
+This diagonal result is strictly stronger than "one fixed restricted exact root" but explicitly **does not** imply that every independently variable original \(16L_n^4+24(4L_n^4)\) lattice Euler row vanishes: no uniform mesh-scale full-space inverse is used. The purpose of (24) is to provide **actual increasing joint-equation solvability** as the next consumer for the original all-grid GR refinement, not to claim that consumer is already complete.
+
 ## 7. Physical meaning and direct next consumer
 
 This construction has a non-circular end-to-end mathematical chain:
