@@ -6254,3 +6254,14 @@ with intrinsic Einstein sources remain separate. No quantitative h^-2
 source bound follows from qualitative trajectory convergence. The
 original fixed nonconstant g, independent tau, all 10 packed rows,
 unweighted raw h^-2/#216 terminal remains OPEN.
+
+The parallel [native-cycle morphism intake](sources/d0_native_cycle_morphism_2026-10-17/RESULT_RU.md)
+is preserved from 03ccb728 without rerunning its producer's 81 exact
+checks. It supplies finite determinant/source arithmetic on the actual
+recorded scene and the full moving-(P,U) five-term derivative, without
+an additional Fock carrier. Its negative effective-F triangle lifts
+to primitive six-step scene paths; it is not a negative probability
+for a primitive event. Physical signed-cycle valuation, cyclic-origin
+future-test equivalence, the scene-to-v8 map and full Cost-Info selection
+remain open. This consumes the algebra while leaving the physical
+morphism with the coordinated owner.

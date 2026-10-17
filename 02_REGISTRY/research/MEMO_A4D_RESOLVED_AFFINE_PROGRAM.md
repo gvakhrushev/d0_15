@@ -311,6 +311,17 @@ of retaining coherent records. Complete code cost, inhomogeneous entropy
 and source convergence, rank births and the original GR/source terminal
 remain separate.
 
+The parallel [native-cycle morphism packet](sources/d0_native_cycle_morphism_2026-10-17/RESULT_RU.md)
+also removes a computational detour: finite Newton identities and signed
+cycle covers compute the complete determinant and its noncommuting
+source on the existing recorded carrier, without an added Fock space.
+Its actual 33-label scene example separates a negative effective-F
+matrix cycle from the positive primitive six-step paths underneath it.
+The remaining physical arrow is the signed cycle valuation and the
+future-test equivalence of forgetting the cyclic origin, followed by
+the actual scene-to-v8 operator map and complete price/source. The
+algebraic determinant construction does not grant these admissions.
+
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
 strictly positive on a longitudinal germ with all10 linearized Einstein

@@ -375,6 +375,21 @@
     },
     "source": "9ece9146"
   },
+  "parallel_native_cycle_morphism_intake": {
+    "all_disjoint_source_bytes_match": true,
+    "consumer": "Physical native-history-to-price morphism in current route; algebraic determinant computation no longer needs an added Fock carrier.",
+    "old_scientific_replay": false,
+    "open": "Future-test equivalence of cyclic-origin quotient, actual signed-cycle price/cost/Info, scene-to-v8 field map, complete sources and original GR refinement.",
+    "preserved_paths": 3,
+    "producer_reported_exact_checks_not_reexecuted": 81,
+    "scope": "Finite actual 33-label complete recorded scene; signed effective-F cycles lift to primitive six-step paths. Full moving-(P,U) source and finite Newton/cycle-cover identities do not select physical signed-cycle valuation or scene-to-v8 map.",
+    "sha256": {
+      "02_REGISTRY/research/sources/d0_native_cycle_morphism_2026-10-17/RESULT.json": "24c11d1008f96fa0338f903cf7cbe7b493e5d756854faa533df28e28a16ed54a",
+      "02_REGISTRY/research/sources/d0_native_cycle_morphism_2026-10-17/RESULT_RU.md": "841614f99c164455db35705b88eb54a337a7aa95c5ccbbe5db448ab9c24d86c2",
+      "02_REGISTRY/research/sources/d0_native_cycle_morphism_2026-10-17/check_native_cycle_morphism.py": "6a66d1bb9bc8964663dc445c7ed8ccdfa1e3d5cb869ce2cbb0e0bfaf611648eb"
+    },
+    "source": "03ccb728b9f3c3f95e8e28dfa3702115f8a315a4"
+  },
   "parallel_ward_and_resource_followup": {
     "consumer": "actual homogeneous retained section and complete native price/clock consumer",
     "old_scientific_replay": false,
