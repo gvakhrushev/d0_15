@@ -396,7 +396,7 @@ class RunnerHookTests(ClosureFixture):
         )
 
 
-class LiveBoundaryTests(unittest.TestCase):
+class LiveBoundaryTests(ClosureFixture):
     def test_runner_and_workflow_call_this_selector(self) -> None:
         root = Path(__file__).resolve().parents[1]
         runner_source = (root / "tools/run_research_certs.py").read_text(encoding="utf-8")
@@ -421,11 +421,28 @@ class LiveBoundaryTests(unittest.TestCase):
 
     def test_pinned_source_is_readable_and_not_merged(self) -> None:
         root = Path(__file__).resolve().parents[1]
+        # Share only Git objects: this independent fixture's committed tree has
+        # no pinned sources, regardless of what the current research branch owns.
+        objects = Path(runner.git(root, "rev-parse", "--git-path", "objects").decode().strip())
+        if not objects.is_absolute():
+            objects = root / objects
+        alternates = self.repo / ".git/objects/info/alternates"
+        alternates.write_text(str(objects.resolve()) + "\n", encoding="utf-8")
+        head = self.git("rev-parse", "HEAD")
+        tree = closure.tree_paths(self.repo, head)
+        receipt = self.receipt_bytes()
+        self.assertEqual(closure.resolve_commit(self.repo, PIN), PIN)
         for rel in PINNED_SOURCES:
-            blob = runner.git(root, "show", f"{PIN}:{rel}")
+            self.assertNotIn(rel, tree)
+            self.assertFalse((self.repo / rel).exists(), rel)
+            blob = closure.blob(self.repo, PIN, rel)
+            self.assertIsNotNone(blob, rel)
             self.assertTrue(blob.startswith(b"#"), rel)
-            self.assertFalse((root / rel).exists(), rel)
-        self.assertIn(b"not a native-action or GR theorem", runner.git(root, "show", f"{PIN}:{PINNED_SOURCES[0]}"))
+            self.assertFalse((self.repo / rel).exists(), rel)
+        self.assertIn(b"not a native-action or GR theorem", closure.blob(self.repo, PIN, PINNED_SOURCES[0]))
+        self.assertEqual(self.git("rev-parse", "HEAD"), head)
+        self.assertNotIn(PIN, self.git("rev-list", "HEAD").splitlines())
+        self.assert_repo_untouched(receipt)
 
     def test_live_index_is_read_only_and_does_not_weaken_full_selection(self) -> None:
         root = Path(__file__).resolve().parents[1]
