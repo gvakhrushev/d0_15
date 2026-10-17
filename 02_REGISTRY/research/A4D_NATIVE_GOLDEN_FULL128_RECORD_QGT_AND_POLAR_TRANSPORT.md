@@ -209,3 +209,57 @@ M^\top dM=\begin{pmatrix}0&256/3185\\-256/3185&0\end{pmatrix}\ne0,
 \frac{2786048-884992\sqrt5}{10144225}>0.
 \]
 16 algebraic checks verify actual reflected derivative, true moving-SELECT isometry, full native two-port QGT, positivity and null-zero control. Этот 2-label fixture проверяет универсальную (19)–(21), НЕ physical 64-label Walsh/CAR rank10 либо arbitrary gate admissibility.
+
+
+## 10. Один actual blank native mark различает ВСЕ10 плоских metric slots: полный16 CAR symbol proof
+
+Связка (19) даёт ещё более сильный результат для настоящего отражения:
+\[
+\boxed{M_0=I-2A^2,\quad A=hD/16=A^\dagger,\quad
+dM_0=-2\,d(A^2)=-\frac{h^2}{128}d\Delta\quad (\Delta=D^2),}
+\tag{22}
+\]
+при fixed lattice h. Это actual blank OUTPUT amplitude original golden reflection, а не выбранный новый spectral curvature detector. Так как stacked M содержит blank, положительность (5) немедленно даёт количественный lower bound для реального native information tensor:
+\[
+\boxed{\operatorname{Tr}\mathfrak Q(v,v)
+\ge p^3\|dM_v\|_{\rm HS}^2
+\ge \frac{p^3h^4}{16384}\|d\Delta_v\|_{\rm HS}^2.}
+\tag{23}
+\]
+При сумме по конечным Fourier-настройкам правая часть тоже суммируется. Бланковый output не объявляется доступным отдельным eigenvalue oracle: это inequality на полной Stinespring source geometry, а физически costed coherent comparison остаётся открытым.
+
+**Точная 10-строчная flat full16 Hodge/CAR реализация.** На постоянном невырожденном positive-coframe \(F\in GL(4,\mathbb R)\) положим \(H=F^\top F>0\). На буквальном \(\Lambda^*\mathbb C^4\) с 16 occupation grades original CAR \(c_a,\iota_a=c_a^\dagger\) имеем для постоянного proper Euclidean/Hodge символа
+\[
+d_h(k)=\sum_{a,r}F_{ar}\zeta_r(k)c_a,\qquad
+D_h(k)=d_h(k)+d_h(k)^\dagger,\qquad
+\zeta_r(k)=\frac{\exp(2\pi i k_r/L)-1}{h}.
+\]
+CAR \(\{c_a,\iota_b\}=\delta_{ab}\), \(\{c,c\}=0\), \(\{\iota,\iota\}=0\) дают НА ВСЁМ full16, без проекции на scalar grade:
+\[
+\boxed{\Delta_h(k)=D_h(k)^2
+       =\sum_{r,s}\overline{\zeta_r(k)}\,H_{rs}\zeta_s(k)\ I_{16}.}
+\tag{24}
+\]
+Каждый симметричный \(dH\) имеет genuine first coframe lift \(dF=\tfrac12F^{-\top}dH\) на unrestricted positive full-coframe chart; нельзя назвать его automatically admitted restricted stored-native Lorentz lift.
+
+Выберем РОВНО десять независимых настроек \(k=e_i\) (4 осевых) и \(k=e_i+e_j\) (6 парных). Для всех ненулевых координат этих settings один общий ненулевой \(\zeta=(\exp(2\pi i/L)-1)/h\), \(\chi_h=|\zeta|^2=4h^{-2}\sin^2(\pi/L)>0\). Определим скалярные ответы \(r_S\) через
+\(d\Delta_h(k_S)=\chi_h\,r_S I_{16}\).
+Тогда
+\[
+r_i=dH_{ii},\quad r_{ij}=dH_{ii}+dH_{jj}+2dH_{ij},
+\quad
+\boxed{dH_{ii}=r_i,\quad dH_{ij}=(r_{ij}-r_i-r_j)/2.}
+\tag{25}
+\]
+Матрица между packed 10 metric slots и десятью settings имеет determinant \(2^6=64\), rank10, и фиксированный h-independent inverse. В частности
+\[
+\boxed{\|dH\|_{\ell^1_{\rm packed}}
+\le\frac52\sum_{i=0}^3|r_i|
++\frac12\sum_{i<j}|r_{ij}|.}
+\tag{26}
+\]
+Таким образом blank-source (22) имеет injective full ten-metric symbol image на **объявленном unrestricted homogeneous positive Hodge chart**, если доступны все10 proper momentum tests; (23) даёт положительную нижнюю оценку нативной record-geometry sensitivity. Это сильнее фразы «геометрия где-то есть»: предъявлена полная обратная матрица и буквальный old-native output, и без новой физической цены.
+
+**Scope firewall.** Этот flat symbol image НЕ доказывает, что действительная joint stored-Lorentz source-image содержит все десять вариаций на произвольном нестационарном искривлённом поле. В частности существующий stored-adjoint conormal, Minkowski signature, moving observer, own-edge restrictions, proper boosts, memory/preparation/source, original all-site raw h^-2 comparator, independent matter and nonempty exact roots остаются отдельными. Fourier tests измеряют разные моды, а не ten arbitrary **local** Euler covectors на одном узле без дополнительной пространственной обратимости. Bound (23) теряет h^4 на один native round: O(h^-2) original history clock, UV estimates and field-to-test cost обязательно сохраняются. Не подменять scalar \(\Delta\) всем Einstein tensor и не заключать physical stationarity из источников отдельных исходов.
+
+Всё доказательство (24)–(26) следует из буквальной CAR anti-commutation и элементарной поляризации. Новый bounded checker на реальных16 occupation states использует nonorthogonal rational invertible F, все10 независимых симметричных dH, ten settings, 100 exact full-matrix dDelta controls, ещё10 exact full16 \(\Delta\) identities, exact rank/determinant/inverse и два hostile modifications. Он не воспроизводит старую full-price спектральную программу. Expected simplified value \(\chi_{h=1/4}=32\); normalized 10×10 determinant 64. Потребитель следующего физического шага: ДОКАЗАТЬ допустимость actual Lorentz coframe/source and full-retained 4D/spatial reference matching on this now explicit ten-dimensional readout, а не повторять символический rank.
