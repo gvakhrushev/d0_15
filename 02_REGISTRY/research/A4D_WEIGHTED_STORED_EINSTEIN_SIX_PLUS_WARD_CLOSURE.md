@@ -144,3 +144,19 @@ REAL weighted native Hilbert pairing/self-adjointness
   ⇒ genuine GR after real action/source/refinement + exceptional sectors.
 
 No new physical scalar coupling or input EH action was used in the proved kinematic and algebraic links. Status OPEN for unconditional D0⇒GR, precisely for (a)–(d).
+
+## 5A. Not just kinematics: the EXISTING star action's actual two-derivative Hessian now carries BOTH gravitational waves
+
+The accepted canonical action S_star was chosen by Role-bivector spatial naturality, independently of this weighted construction. Merged #201 fixes its true Lorentz flat normal metric Hessian two-derivative coefficient \(T_1^{[2]}=\frac14E_\eta\); E-NJET establishes \(E_\eta=-2G^{(1)}_\eta\). Thus, up to the already fixed nonzero scalar, the principal quadratic Euler symbol of the SAME star action is exactly the linearized Einstein operator, not an added effective action.
+
+On the weighted original finite action field chart (7), at the flat critical configuration its Hessian pulls back by the *real admitted weighted metric Jacobian*. The extra second-derivative of chart acceleration makes no Hessian contribution at a genuinely critical flat background. At the same rational null vector \(k_N=(13,3,4,12)\) define the honest six-by-six quadratic form
+\[
+\mathcal H_{ij}(k_N)
+=\operatorname{Tr}\bigl(W_i\,G_\eta^{(1)}[W_j;k_N]\bigr),
+\quad W_1=\eta,\ W_{2\ldots6}\in\ker(\mathrm{diag},\lambda^TH\lambda).
+\]
+This is **exactly symmetric**, rank4, and has a two-dimensional kernel. The fixed-weight old five-by-five restriction had rank4 and a one-dimensional kernel. Therefore BOTH standard massless graviton polarizations are present in the leading true selected-star Hessian *provided the positive node-weight selfadjoint class is physically admitted*. There is no new curvature action, no hidden scalar source and no arbitrarily added oscillator.
+
+This is substantially closer to GR than ten accessible metric symbols: it restores BOTH wave solutions of the original action's physical two-derivative principal equation. It still does not prove finite-h selfadjoint actuator/clock preparation, nonlinear constrained joint roots, uniform continuum Hessian including all resonances or the full physical Cost−Info = S_star identification. Nor does positive weighted Dirac automatically turn the v8 H+J+R into S_star.
+
+A hostile control is decisive: freezing the original site weight \(u=0\) removes exactly the \(\eta\) row and returns the 5×5 Hessian with ONE surviving physical polarization. No additional arbitrary quantum-geometric measurement or better flat metric sampler can repair that dynamic absence.
