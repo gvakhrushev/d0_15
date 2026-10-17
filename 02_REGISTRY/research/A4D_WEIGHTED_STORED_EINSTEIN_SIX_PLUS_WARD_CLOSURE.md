@@ -205,3 +205,62 @@ Its analytic solution with the four original Einstein constraint data \(z|_{\Sig
 **Critical limitations:** Cauchy–Kowalevskaya is an analytic uniqueness theorem, not proof of global smooth hyperbolic well-posedness or existence of D0 solutions. The determinant polynomial can be nonhyperbolic for a given timelike slicing (complex spatial characteristic roots exist), so do NOT promote CP3 to a uniform Sobolev energy estimate or a physical evolution equation without a symmetrizer. Pointwise six local Euler conditions presuppose the genuine full link/observer/matter stationary descent, not only a single measured event or stored amplitude. Physical full site omega law and full Cost−Info selection still need independent forcing. The **original finite-grid** h^-2 raw metric comparator, exact nonflat joint roots and independent matter sources remain as before. The theorem proves an actual nonlinear source-completion mechanism, not those absent native premises.
 
 For the EXISTING canonical star Palatini action, if its full continuum physical limit is the intrinsic EH+matter action (already-owned coframe/Cartan theorem, with its real source and limits), then \(E=G+\Lambda g-\kappa T\). CP1–CP3 imply the *exact nonlinear Einstein equation* in this analytic weighted class whenever its six field equations, the other fields, Ward and four initially vanishing constraints hold. No desired Einstein equation is fed to the history/record instrument; this is a theorem about the consequence of its selected action. Identifying that action with the ORIGINAL complete native Cost−Info and constructing nonempty exact discrete joint-refinement sequences are still the scientifically decisive missing steps.
+
+
+## 8. MUCH STRONGER: any near-flat analytic Lorentz Einstein geometry is locally representable by the SAME weighted native stored-adjoint fields
+
+The earlier conformal extension §4 was an explicit curved example. It is actually a complete local **coordinate realization theorem**, not just a set of measured modes, and includes exact fully nonlinear two-polarization Ricci-flat waves.
+
+Fix the real regular rational original \(\eta,F_0,n=e_0,\tau_0=\eta\lambda\) of §2. For an arbitrary analytic Lorentz contravariant metric \(\bar Q\) sufficiently near \(\eta\), look for a local analytic diffeomorphism \(f\) whose transported tensor \(Q=f^*\bar Q\) obeys FOUR exact (NOT linearized) coordinate conditions:
+\[
+\boxed{
+ Q_{00}+Q_{ii}=0\ (i=1,2,3),\qquad
+ Q_{00}\,\tau_0^\top Q^{-1}\tau_0=1.
+}
+\tag{CG1}
+\]
+At \(\eta\) these constraints vanish. Their first metric derivatives are
+\[
+ d\mathcal G_i[H]=H_{00}+H_{ii},\quad
+ d\mathcal G_4[H]=H_{00}-\lambda^\top H\lambda.
+\tag{CG2}
+\]
+A coordinate change with vector generator \(\xi\) has at flat constant \(\eta\) the inverse-metric principal tangent \(H=\pm(a\xi^\top+\xi a^\top)\), \(a=\eta k\); the common sign does not change invertibility. For the ACTUAL TIMELIKE normal \(n=(5,1,1,1)\), \(n^\top\eta n=22>0\), the four-by-four matrix of (CG2) on the four coordinate generators has EXACT determinant
+\[
+ \boxed{|\det G_{\rm gauge}(n)|=19584000/6889\ne0.}
+\tag{CG3}
+\]
+(The sign of the fourth row depends on whether CG4 is written as \(Q_{00}\tau_0^\top Q^{-1}\tau_0-1\) or its negative; only the nonzero absolute value matters.)
+
+**Proof of nonlinear local realizability:** Let \(f\) be four unknown coordinate functions, with \(f|_{\Sigma}=\mathrm{id}\) on an analytic hyperplane whose conormal is \(n\). The inverse-metric pullback \(Q=f^*\bar Q\) depends analytically on \(x,f,\partial f\) near identity. CG1 therefore is a four-component first-order analytic nonlinear PDE in \(\partial f\). The normal derivative Jacobian at \((\bar Q,f)=(\eta,\mathrm{id})\) is exactly CG3, so the analytic implicit-function theorem solves all four normal derivatives as analytic functions of tangential derivatives and fields. Cauchy–Kowalevskaya then constructs a local analytic \(f\) near identity for every sufficiently near-flat analytic \(\bar Q\). The inverse function theorem keeps \(Df\) invertible. CG1 holds EXACTLY, not modulo quadratic curvature corrections. This is an ordinary coordinate gauge existence argument; native D0 physical diffeomorphism covariance of its full retained action is NOT inferred from it.
+
+Now write
+\[
+ s(x)=\sqrt{Q_{00}(x)}>0,\quad
+ \tilde Q=Q/s^2,\quad \tilde\tau=\tau_0,\quad
+ \omega_x\propto1/s_x,\quad \tau(x)=s_x\tau_0 .
+\]
+The three CG1 diagonal equalities give \(\tilde Q_{rr}=\eta_{rr}\) on ALL sites. Its fourth identity becomes \(\tau_0^\top\tilde Q^{-1}\tau_0=1\). By the ACTUAL previously proved nonlinear stored projection necessity/sufficiency theorem, every such near-regular \(\tilde Q\) has a true coframe \(\tilde F\), observer \(n\), rank3 positive Gram and near-identity own-edge proper Lorentz links that preserve \(\tilde\tau_r,\tilde Q_{rr}\) exactly. Multiplying the legs by \(s\) and setting the positive site weight \(1/s\) produces a full true-weighted selfadjoint stored Dirac as in §1. Sampling any sufficiently fine lattice retains exact weighted selfadjoint kinematic edge constraints; no continuum-only fake connection was introduced.
+
+Therefore:
+\[
+\boxed{\text{every sufficiently near-flat analytic Lorentz metric}}
+\quad\xrightarrow[\text{analytic coordinate gauge}]{CG1}
+\quad\boxed{\text{a genuine locally weighted native stored-adjoint coframe}.}
+\tag{CG4}
+\]
+
+**Explicit physical GR solution contained.** In analytic Brinkmann coordinates take
+\[
+ ds^2=2\,du\,dv-dx^2-dy^2+
+ \epsilon[f_+(u)(x^2-y^2)+2f_\times(u)xy]\,du^2.
+\tag{CG5}
+\]
+For arbitrary analytic \(f_+,f_\times\) and small \(\epsilon\), direct Christoffel/Ricci calculation gives \(\mathrm{Ric}_{\mu\nu}=0\) EXACTLY because \(\partial_x^2H+\partial_y^2H=0\), while \(\mathrm{Riem}_{uxux}\sim-\epsilon f_+\), \(\mathrm{Riem}_{uxuy}\sim-\epsilon f_\times\) are generally nonzero. Thus both independent **exact nonlinear vacuum gravitational-wave polarizations** occur in the target class, not just their first-order waves. CG1–CG4 embed their metrics and genuine weighted proper-Lorentz kinematic link/coframe data on a small analytic chart into the D0 carrier.
+
+**Boundary that MUST remain:** CG4 proves **kinematic representability** of an entire local Einstein solution family, not existence of an exact stationary solution of the original finite D0 Cost−Info/star+matter action or a source-faithful h→0 refinement. In particular the reconstructed Levi–Civita connection of the exact Einstein metric generally differs from the original observer-preserving stored links (the already-owned complete torsion-to-LC reconstruction gives the exact difference). Any physical claim must obtain their relation from actual link Euler equations and full action, not simply assert that stored links equal LC. The analytic coordinate choice is not a new physical D0 gauge operation; to identify predictions the true full retained reference/observer/clock law must transform covariantly.
+
+CG4 + §7 are the TWO nonlinear halves of a bona fide GR field-equation architecture:
+(a) nonempty exact **GR metric solution geometry** inside the weighted native domain (this section),
+(b) complete nonlinear **Einstein Euler constraint propagation** from six actual weighted field variations + full Ward (previous section).
+The only unfinished physical content lies in selection and source-equality of the SAME native action, independent matter/observer/spin and exact joint-refinement with the original strong norm. This distinction is scientifically decisive; no fake GR completion is reported.
