@@ -1,0 +1,92 @@
+{
+  "actual_command": [
+    "/Users/grigorijvahrusev/.elan/bin/lake",
+    "env",
+    "lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_closed_record_engine.lean"
+  ],
+  "actual_cwd": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION",
+  "axioms": {
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.band_signs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.band_transitions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.conjugate_growth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.conjugate_never_returns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.every_seed_tick_regular": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.golden_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.safe_invariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.safe_uniform_first_grade": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ClosedRecordEngine.seed_enters_band": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule_sha256": "d8a8815866a829d026d3331aa75996563f796639e2026027cb63c7c0c30de096",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_closed_record_engine.lean"
+  ],
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.ClosedRecordEngine.golden_bounds",
+    "D0.Research.ClosedRecordEngine.band_signs",
+    "D0.Research.ClosedRecordEngine.seed_enters_band",
+    "D0.Research.ClosedRecordEngine.band_transitions",
+    "D0.Research.ClosedRecordEngine.safe_invariant",
+    "D0.Research.ClosedRecordEngine.safe_uniform_first_grade",
+    "D0.Research.ClosedRecordEngine.every_seed_tick_regular",
+    "D0.Research.ClosedRecordEngine.conjugate_growth",
+    "D0.Research.ClosedRecordEngine.conjugate_never_returns",
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal"
+  ],
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "output_sha256": "451a5901dd8b7b6b621f25ca97627d016a22de0c4661ef8b3c7f853f1bb611a2",
+  "scope": "9 generic all-time-domain and conjugate-growth propositions plus the actual gate orthogonality owner; no supported CORE registration or D0.All claim",
+  "status": "PASS"
+}

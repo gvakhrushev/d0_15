@@ -1,0 +1,18 @@
+'D0.Research.NativeCochainRefinement.b0_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.b1_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.incidence_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.incidence_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.owner_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.b0_literal_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.b0_literal_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.b1_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.scaled_incidence_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeCochainRefinement.incidence_energy_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCochainRefinement.metric_measure_all_degrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCochainRefinement.metric_measure_refinement_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

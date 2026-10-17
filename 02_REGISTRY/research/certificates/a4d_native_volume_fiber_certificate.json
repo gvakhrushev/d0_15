@@ -1,0 +1,363 @@
+{
+  "Einstein_probe_density": "2*p**2 - q*w",
+  "auxiliary_elimination": {
+    "full_edge_gate": false,
+    "kernel": [
+      [
+        "1"
+      ],
+      [
+        "-1"
+      ],
+      [
+        "1"
+      ],
+      [
+        "-1"
+      ]
+    ],
+    "phi": [
+      [
+        "1/(2*s + 4)"
+      ],
+      [
+        "2*(s + 1)/(2*s + 4)"
+      ],
+      [
+        "-(s + 1)/(2*s + 4)"
+      ],
+      [
+        "0"
+      ]
+    ],
+    "profile": "(s + 1)/(s + 2)",
+    "residual": [
+      [
+        "1/(2*(s + 2))"
+      ],
+      [
+        "(-s - 1)/(2*(s + 2))"
+      ],
+      [
+        "(s + 1)/(2*(s + 2))"
+      ],
+      [
+        "-1/(2*s + 4)"
+      ]
+    ],
+    "third_derivative": "3/8",
+    "weights": [
+      [
+        "s + 1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "s + 1"
+      ]
+    ]
+  },
+  "checks": [
+    "LITERAL_NULL_GRAM_HYPOTHESES",
+    "LITERAL_RAW_GRAM_PENCIL",
+    "BOTH_RAW_COFRAME_AND_METRIC_ARE_AFFINE",
+    "EXACT_STRAIGHT_METRIC_ENDPOINTS",
+    "POSITIVE_ORIENTATION_SOLDER",
+    "EXACT_POINTWISE_VOLUME_FIBER",
+    "NONDEGENERATE_METRIC_INVERSE",
+    "METRIC_SHAPE_REALLY_CHANGES",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_00",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_01",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_02",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_03",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_11",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_12",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_13",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_22",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_23",
+    "ALL_VOLUME_METRIC_SLOTS_AND_PACKING_33",
+    "VOLUME_KERNEL_HAS_NINE_SHAPE_DIRECTIONS",
+    "PROBE_LIES_IN_FULL_VOLUME_KERNEL",
+    "ALL_RICCI_ENTRIES_SYMMETRIC",
+    "EXACT_STANDARD_RICCI_SCALAR",
+    "LITERAL_OWNER_ACTION_SIGN_AND_NORMALIZATION",
+    "PERIODIC_ACTION_COEFFICIENT",
+    "INDEPENDENT_EINSTEIN_FIRST_VARIATION",
+    "EINSTEIN_TEN_SLOT_PACKED_RESPONSE",
+    "EINSTEIN_DENSITY_DIFFERS_BY_TOTAL_DERIVATIVE",
+    "VOLUME_SOURCE_IS_INVISIBLE_TO_THE_PROBE",
+    "PHYSICAL_SPIN_CONNECTION_LORENTZ_0",
+    "PHYSICAL_SPIN_CONNECTION_LORENTZ_1",
+    "PHYSICAL_SPIN_CONNECTION_LORENTZ_2",
+    "PHYSICAL_SPIN_CONNECTION_LORENTZ_3",
+    "CONTINUUM_TORSION_ROW_01_0",
+    "CONTINUUM_TORSION_ROW_01_1",
+    "CONTINUUM_TORSION_ROW_01_2",
+    "CONTINUUM_TORSION_ROW_01_3",
+    "CONTINUUM_TORSION_ROW_02_0",
+    "CONTINUUM_TORSION_ROW_02_1",
+    "CONTINUUM_TORSION_ROW_02_2",
+    "CONTINUUM_TORSION_ROW_02_3",
+    "CONTINUUM_TORSION_ROW_03_0",
+    "CONTINUUM_TORSION_ROW_03_1",
+    "CONTINUUM_TORSION_ROW_03_2",
+    "CONTINUUM_TORSION_ROW_03_3",
+    "CONTINUUM_TORSION_ROW_12_0",
+    "CONTINUUM_TORSION_ROW_12_1",
+    "CONTINUUM_TORSION_ROW_12_2",
+    "CONTINUUM_TORSION_ROW_12_3",
+    "CONTINUUM_TORSION_ROW_13_0",
+    "CONTINUUM_TORSION_ROW_13_1",
+    "CONTINUUM_TORSION_ROW_13_2",
+    "CONTINUUM_TORSION_ROW_13_3",
+    "CONTINUUM_TORSION_ROW_23_0",
+    "CONTINUUM_TORSION_ROW_23_1",
+    "CONTINUUM_TORSION_ROW_23_2",
+    "CONTINUUM_TORSION_ROW_23_3",
+    "FIXED_CURVED_FACTOR_GRADIENT_INTEGRAL",
+    "STRICT_FIXED_VOLUME_EINSTEIN_CONTRAST",
+    "CURVED_BASE_OWNER_SCALAR",
+    "FLAT_FACTOR_CONTROL",
+    "TRACEFREE_EINSTEIN_RESPONSE_IS_NONZERO",
+    "LITERAL_RHO_PRODUCT_WEIGHTS",
+    "ALL_FOUR_AUXILIARY_NORMAL_ROWS",
+    "AUXILIARY_KERNEL_IS_RETAINED",
+    "ACTUAL_RESIDUAL_UNIQUE_ALONG_KERNEL",
+    "GENUINELY_NONPOLYNOMIAL_AUXILIARY_PROFILE",
+    "AUXILIARY_GATE_NOT_FULL_EDGE_GATE",
+    "TOTAL_VOLUME_IS_NOT_POINTWISE_DENSITY",
+    "SHAPE_DEPENDENT_OPERATOR_IS_OUTSIDE_CLASS",
+    "GENERAL_CRITICAL_VALUES_NEED_NOT_BE_UNIQUE",
+    "SMALL_INPUT_ERROR_MAY_HAVE_ORDER_ONE_VALUE",
+    "RECORDING_ERROR_SCALE_CANNOT_REPAIR_CONSTANT"
+  ],
+  "consumed_physical_probe": {
+    "consumption": "Constructively nonempty smooth midpoint endpoint preparations; all 24 finite Euler rows O(h^2), and the uniform action/contrast theorem. These are not exact joint roots.",
+    "path": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+    "source_head": "af221e2fed92821c52afc88a5500774de8cd9a93"
+  },
+  "continuum_spin": [
+    [
+      [
+        "0",
+        "0",
+        "p*(s + 1)/w",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "p*(s + 1)/w",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "p*s/(2*w)",
+        "0",
+        "0"
+      ],
+      [
+        "p*s/(2*w)",
+        "0",
+        "p*(s + 2)/(2*w)",
+        "0"
+      ],
+      [
+        "0",
+        "p*(-s - 2)/(2*w)",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0",
+        "p*s/w",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "p*s/w",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0",
+        "0",
+        "p*s/(2*w)"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "p*(-s - 2)/(2*w)"
+      ],
+      [
+        "p*s/(2*w)",
+        "0",
+        "p*(s + 2)/(2*w)",
+        "0"
+      ]
+    ]
+  ],
+  "continuum_torsion_rows": 24,
+  "finite_connection_status": "Consumed published all-24-row O(h^2) preparation theorem; no exact finite joint solution asserted.",
+  "gram": [
+    [
+      "w**2*(s + 1)",
+      "0",
+      "s*w**2",
+      "0"
+    ],
+    [
+      "0",
+      "-w**2",
+      "0",
+      "0"
+    ],
+    [
+      "s*w**2",
+      "0",
+      "w**2*(s - 1)",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-w**2"
+    ]
+  ],
+  "input_head": "ff5baf86642fca81714843b8ab48bed50939fe54",
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md": "b4224373b6e30632075b612feea65e2a585430d13b40742646e6d3b80ebc9e93",
+    "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_TRACE_LIFT_BOUNDARY.md": "36ca09057ea0542310a85290e914c21e7b8eb1d589c3afa7061877077b5ff271",
+    "03_FORMALIZATION/D0/Cosmology/EntropyArchiveFlow.lean": "91273c1b031d295510161fff1d115e9a00613daa8636da76e314afdc6bee918f",
+    "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean": "4096e0a3b132841a60907f71bb48b726399c789231b804b869708249f7087438",
+    "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+    "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean": "12e9eb554f7535da65f1289894fbd91d2e5dbdf83a741873eedf092f13b72b0f",
+    "03_FORMALIZATION/D0/Geometry/ConformalLaplacianTrace.lean": "3030b73c15449a76d8dc89e0e1bad95e3c5bb950b7c20135396dbbef0fdb5ba6",
+    "03_FORMALIZATION/D0/Geometry/HeatTraceEHProxy.lean": "dafa6b61a736ad40a5abadaf4e18aea0167a3569534b64def12af9f15b7d8c9e",
+    "03_FORMALIZATION/D0/Gravity/A2CompensatorNoether.lean": "5d9017e1f9dba2fd9dea3032091c9d48b8cefcff6bc32d4d001b64665339719d"
+  },
+  "inverse": [
+    [
+      "(1 - s)/w**2",
+      "0",
+      "s/w**2",
+      "0"
+    ],
+    [
+      "0",
+      "-1/w**2",
+      "0",
+      "0"
+    ],
+    [
+      "s/w**2",
+      "0",
+      "(-s - 1)/w**2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-1/w**2"
+    ]
+  ],
+  "lean_capsule_receipt_sha256": "d86ff07cea805a6bebff2996379de9ecc077490d8eda171d6e442edc742c6fe5",
+  "owner_action_density": "-3*q*w*(s + 1)",
+  "packed_metric_slots": 10,
+  "periodic_action": "pi**2*(3*s + 3)/50",
+  "pointwise_volume": "w**4",
+  "ricci": [
+    [
+      "(p**2 + q*w)*(s + 1)**2/w**2",
+      "0",
+      "s*(p**2 + q*w)*(s + 1)/w**2",
+      "0"
+    ],
+    [
+      "0",
+      "-(p**2 + q*w)*(s + 1)/w**2",
+      "0",
+      "0"
+    ],
+    [
+      "s*(p**2 + q*w)*(s + 1)/w**2",
+      "0",
+      "(p**2*s**2 + 3*p**2 + q*s**2*w - 3*q*w)/w**2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-(p**2 + q*w)*(s + 1)/w**2"
+    ]
+  ],
+  "scope": "All volume-factorized values and actual unique-value auxiliary preparations on the admitted curved pencil. No full-core completeness or exclusion of native metric-shape data.",
+  "standard_scalar": "6*q*(s + 1)/w**3",
+  "status": "PASS",
+  "strict_contrast_limit": "3*pi**2/50",
+  "volume_kernel_dimension": 9
+}

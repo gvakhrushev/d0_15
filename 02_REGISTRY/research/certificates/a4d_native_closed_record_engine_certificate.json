@@ -1,0 +1,233 @@
+{
+  "Lean_receipt_sha256": "78ca33f8b840dbc97835ca92721a48a0f77c387cf401bae6406386ecef082101",
+  "checker_sha256": "7d4cd83521729b780758c8559b9168668f6aac8437f89c9b8652b1141f2692f8",
+  "checks": {
+    "REJECT_ALL_BLANKS_ARE_CLOSED": 1,
+    "REJECT_DISTANT_MODULO_IS_COMPOSED_PROJECTION": 1,
+    "REJECT_DROP_SPATIAL_TOP_WITHOUT_INFORMATION_LOSS": 1,
+    "REJECT_FIXED_OBSERVER_CAN_REPLACE_CURRENT_STATE": 1,
+    "REJECT_INVERSE_USES_OUTPUT_SIGN": 1,
+    "REJECT_NEW_BLANK_IS_RETAINED_MEMORY": 1,
+    "REJECT_OVERSIZED_INPUT_IS_FREE": 1,
+    "REJECT_TRUNCATED_STATE_RETENTION": 1,
+    "REJECT_TWO_TICK_PRICE_DISTINGUISHES_ALL_STATES": 1,
+    "REJECT_UNBOUNDED_RECORD_FITS_256_BITS": 1,
+    "REJECT_UNDECLARED_TRAILING_HISTORY": 1,
+    "REJECT_UNWEIGHTED_COUNTING_CLONE_IS_ISOMETRY_STAGE_0": 1,
+    "REJECT_UNWEIGHTED_COUNTING_CLONE_IS_ISOMETRY_STAGE_1": 1,
+    "REJECT_UNWEIGHTED_COUNTING_CLONE_IS_ISOMETRY_STAGE_2": 1,
+    "REJECT_VISIBLE_RETURN_IS_FULL_RETURN": 1,
+    "actual_archive_projection_surjective": 3,
+    "actual_archive_pullback_intertwines_local_engine": 3,
+    "actual_visible_two_cycle": 1,
+    "all16_columns_are_literal_native_CAR": 32,
+    "bounded_internal_store_stops": 1,
+    "canonical_height_explicit_growth_bound": 2047,
+    "conditional_hereditary_weight_isometry": 3,
+    "conditional_hereditary_weights_sum_to_one": 3,
+    "conjugate_return_trace": 1,
+    "conjugate_root_satisfies_same_equation": 1,
+    "consumed_chronology_checker_hash": 1,
+    "consumed_chronology_proof_hash": 1,
+    "consumed_chronology_transitive_input": 15,
+    "exact_integer_ring_product": 16,
+    "exact_quartic_sign_oracle": 11,
+    "full_gate_orthogonality": 2,
+    "full_gate_transpose_inverse": 32,
+    "full_state_exact_codec_roundtrip": 4097,
+    "full_state_norm_squared_two": 4097,
+    "full_state_not_a_visible_only_repeat": 4097,
+    "genuine_Lean_transitive_input": 6,
+    "genuine_new_Lean_capsule_hash": 1,
+    "genuine_new_Lean_output_hash": 1,
+    "genuine_new_Lean_receipt": 1,
+    "hereditary_homogeneous_field_stays_homogeneous": 1,
+    "higher_grade_actual_return": 1,
+    "index_free_full_predecessor": 4096,
+    "integer_golden_relations": 1,
+    "literal_full_price_constant_on_both_actual_angles": 2,
+    "lower_band_A": 1,
+    "lower_band_B": 1,
+    "nine_generic_Lean_propositions": 1,
+    "no_custom_Lean_axioms": 1,
+    "old_genuine_blank_singularity_retained": 1,
+    "original_price_cut_is_retained": 1,
+    "quadratic_root_norm_negative": 1,
+    "recover_each_whole_parent_state": 3,
+    "return_norm_identity": 1,
+    "seed_is_actual_whole_blank": 1,
+    "top_return_is_in_quadratic_subfield": 2047,
+    "uniform_first_grade_bound": 4097
+  },
+  "engine_sha256": "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9",
+  "exact_controls": 24745,
+  "exact_transitions_exercised": 4096,
+  "executed_mathematical_mutants": [
+    "VISIBLE_RETURN_IS_FULL_RETURN",
+    "FIXED_OBSERVER_CAN_REPLACE_CURRENT_STATE",
+    "INVERSE_USES_OUTPUT_SIGN",
+    "NEW_BLANK_IS_RETAINED_MEMORY",
+    "DROP_SPATIAL_TOP_WITHOUT_INFORMATION_LOSS",
+    "ALL_BLANKS_ARE_CLOSED",
+    "TRUNCATED_STATE_RETENTION",
+    "UNDECLARED_TRAILING_HISTORY",
+    "UNBOUNDED_RECORD_FITS_256_BITS",
+    "OVERSIZED_INPUT_IS_FREE",
+    "UNWEIGHTED_COUNTING_CLONE_IS_ISOMETRY_STAGE_0",
+    "UNWEIGHTED_COUNTING_CLONE_IS_ISOMETRY_STAGE_1",
+    "UNWEIGHTED_COUNTING_CLONE_IS_ISOMETRY_STAGE_2",
+    "DISTANT_MODULO_IS_COMPOSED_PROJECTION",
+    "TWO_TICK_PRICE_DISTINGUISHES_ALL_STATES"
+  ],
+  "finite_run": [
+    {
+      "canonical_state_bits": 68,
+      "diagnostic_iteration_not_transition_input": 0,
+      "max_coefficient_bits": 1,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 1,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 72,
+      "diagnostic_iteration_not_transition_input": 1,
+      "max_coefficient_bits": 1,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 1,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 76,
+      "diagnostic_iteration_not_transition_input": 2,
+      "max_coefficient_bits": 2,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 1,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 90,
+      "diagnostic_iteration_not_transition_input": 3,
+      "max_coefficient_bits": 3,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 2,
+      "observer_sign": -1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 84,
+      "diagnostic_iteration_not_transition_input": 4,
+      "max_coefficient_bits": 2,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 2,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 228,
+      "diagnostic_iteration_not_transition_input": 16,
+      "max_coefficient_bits": 20,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 2,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 816,
+      "diagnostic_iteration_not_transition_input": 64,
+      "max_coefficient_bits": 93,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 4,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 3168,
+      "diagnostic_iteration_not_transition_input": 256,
+      "max_coefficient_bits": 387,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 6,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 12574,
+      "diagnostic_iteration_not_transition_input": 1024,
+      "max_coefficient_bits": 1563,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 9,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    },
+    {
+      "canonical_state_bits": 50204,
+      "diagnostic_iteration_not_transition_input": 4096,
+      "max_coefficient_bits": 6267,
+      "minimum_archive_stage_if_one_audit_bit_per_point": 13,
+      "observer_sign": 1,
+      "stored_exterior_coordinates": 16
+    }
+  ],
+  "first_256_bit_store_overflow_before_tick": 19,
+  "hereditary_projection_controls": [
+    {
+      "child_points": 81,
+      "fibre_cardinalities": [
+        5,
+        6
+      ],
+      "parent_points": 16,
+      "stage": 0
+    },
+    {
+      "child_points": 256,
+      "fibre_cardinalities": [
+        3,
+        4
+      ],
+      "parent_points": 81,
+      "stage": 1
+    },
+    {
+      "child_points": 625,
+      "fibre_cardinalities": [
+        2,
+        3
+      ],
+      "parent_points": 256,
+      "stage": 2
+    }
+  ],
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+    "02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md": "d85e57979a61972e641eae24442a776133c429c8696d0948590f6d290a60b045",
+    "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json": "0b91e13d823568898a006dd468f9963ffbbc1949f0976a21e8530af465ecfbbe",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
+    "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7"
+  },
+  "input_source_head": "585a6c21e09c07d7704c6c7ef1e2e0b45ba9b83a",
+  "new_Lean_declarations": 9,
+  "proof": "02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md",
+  "proof_sha256": "36eaeb8617630acaeace297fa64e7b8c33b92fc4824133a2b8e3515c4c79520a",
+  "scope": {
+    "all_ten_metric_derivatives_proved_zero": false,
+    "all_time_nonempty_sector": "COLLINEAR_TWO_BAND_DOMAIN_PLUS_ACTUAL_BLANK_SEED",
+    "bound_for_every_possible_compressed_codec": false,
+    "canonical_coefficient_height_bound": "H_k>4^k/3_ON_COMPLETE_RETURNS",
+    "endpoint_binding": "PREVIOUS_CONDITIONAL_POSITIVE_PAIRING_SAME_Q",
+    "exact_real_storage_free": false,
+    "external_tick_history_randomness_or_reset_in_step": false,
+    "feedback_reads_all_retained_history": false,
+    "fixed_seed_uniform_first_grade_bound": "abs(m_1)>1/5",
+    "full_seed_orbit_distinct": "ANALYTIC_CONJUGATE_GROWTH_PROOF",
+    "heredity": "ACTUAL_ARCHIVE_PROJECTION_PULLBACK_COMMUTES_WITH_LOCAL_TRANSITION",
+    "heredity_pairing": "ISOMETRY_CONDITIONAL_ON_EXPLICIT_FIBRE_NORMALIZATION",
+    "intrinsic_source_Ward_curved_roots_soundness_recovery_GR": false,
+    "native_physical_admission_or_all_state_closure": false,
+    "native_refinement_trigger_link_interaction_capacity_or_physical_measure_derived": false,
+    "new_supported_CORE_owner_or_parent_terminal": false,
+    "past_recoverable": "ALGEBRAIC_SEED_ORBIT_DECODER_NOT_PHYSICAL_INVERSE_ADMISSION",
+    "seed_adjacent_feedback_pencil": "(1-4*z*p^3)^4_AT_BOTH_OBSERVER_SIGNS",
+    "state": "ALL_16_REAL_EXTERIOR_COMPONENTS_EXACT_INTEGER_GOLDEN_COEFFICIENTS",
+    "transition": "ACTUAL_CURRENT_FIRST_GRADE_CONDITIONS_LITERAL_FULL_RECORD"
+  },
+  "status": "PASS"
+}

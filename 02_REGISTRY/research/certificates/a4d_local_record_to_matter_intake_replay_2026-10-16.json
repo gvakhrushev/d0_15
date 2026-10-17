@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "name": "v1_full_replay",
+      "returncode": 0,
+      "seconds": 6.033,
+      "output": "exact_algebra PASS\nexact_algebra_optimized PASS\nfull_local_operator PASS\ninterval_L8 PASS\ninterval_L8_optimized PASS\npi0_phase_hostile PASS\nactual_code_mutations PASS\nfinite_refinement_diagnostics PASS\n\n"
+    },
+    {
+      "name": "v2_full_replay",
+      "returncode": 0,
+      "seconds": 10.166,
+      "output": "input_v1_manifest 0\nexact_operations 0\nexact_operations_optimized 0\nfull_curved_words 0\nfull_curved_words_optimized 0\nrare_history_interval 0\nfrequency_filter_interval 0\nfrequency_filter_interval_optimized 0\nactual_mutations 0\nPASS_V2_REPLAY 9 commands\n\n"
+    },
+    {
+      "name": "v3_exact",
+      "returncode": 0,
+      "seconds": 3.152,
+      "output": "PASS_MOVING_PREPARATION_EXACT 169 controls; 5 negative controls\nSCOPE: actual diagonal jet, not full polynomial family, physical admission open\n\n"
+    },
+    {
+      "name": "v3_exact_optimized",
+      "returncode": 0,
+      "seconds": 4.295,
+      "output": "PASS_MOVING_PREPARATION_EXACT 169 controls; 5 negative controls\nSCOPE: actual diagonal jet, not full polynomial family, physical admission open\n\n"
+    },
+    {
+      "name": "v3_interval",
+      "returncode": 0,
+      "seconds": 0.403,
+      "output": "PASS_MOVING_PREPARATION_INTERVAL 56 T 20531 event [355, 1064]\nacceptance_probability_interval [0.001953125000000000000000006620764416800063698897680202108774853339236279, 0.001953125000000000000000006620764416800063698897680202108774853473727458]\ntrace_distance_interval [3.389831381402205339750088256481339588028779546269826507074175397229243e-24, 3.389831381402205339750088256481339588028779546269826507074175905316489e-24]\npreparation_covector_trace_norm_interval [0.00000000000000000005068638218337142579232063407894561672486293512072650730761700989871765, 0.00000000000000000005068638218720185996832793674125438762335778987271071011228612564471237]\nhminus2_full_prepared_source_bound_interval [0.000000000000802989107599463426663709201384030771556293793790536598226220709113746, 0.0000000000008029891076601461370319091175440420963319485095499775223680668486873959]\nhminus2_full_matter_Hilbert_residual_interval [0.0000000006364977589423127630341197655273004553866339727773833398504184219793001, 0.0000000006364977589904276213306414409773911047545837720740944568905902405309532]\n\n"
+    },
+    {
+      "name": "v3_interval_optimized",
+      "returncode": 0,
+      "seconds": 0.771,
+      "output": "PASS_MOVING_PREPARATION_INTERVAL 56 T 20531 event [355, 1064]\nacceptance_probability_interval [0.001953125000000000000000006620764416800063698897680202108774853339236279, 0.001953125000000000000000006620764416800063698897680202108774853473727458]\ntrace_distance_interval [3.389831381402205339750088256481339588028779546269826507074175397229243e-24, 3.389831381402205339750088256481339588028779546269826507074175905316489e-24]\npreparation_covector_trace_norm_interval [0.00000000000000000005068638218337142579232063407894561672486293512072650730761700989871765, 0.00000000000000000005068638218720185996832793674125438762335778987271071011228612564471237]\nhminus2_full_prepared_source_bound_interval [0.000000000000802989107599463426663709201384030771556293793790536598226220709113746, 0.0000000000008029891076601461370319091175440420963319485095499775223680668486873959]\nhminus2_full_matter_Hilbert_residual_interval [0.0000000006364977589423127630341197655273004553866339727773833398504184219793001, 0.0000000006364977589904276213306414409773911047545837720740944568905902405309532]\n\n"
+    },
+    {
+      "name": "v3_actual_mutations",
+      "returncode": 0,
+      "seconds": 6.38,
+      "output": "REJECTED freeze_preparation_jet AssertionError: actual_diagonal_jet_T1_k0_j1\nREJECTED omit_event_normalization AssertionError: normalized_preparation_full_chain_rule_T2\nREJECTED reverse_count_boundary_sign AssertionError: exact_count_window_boundary_derivative_T3\nREJECTED wrong_reference_effect AssertionError: failure_effect_matches_actual_output_block\n\n"
+    }
+  ],
+  "release_tree_preserved": true,
+  "physical_forcing_or_GR_closed": false,
+  "new_Lean_compilation": false,
+  "manifest_sha256": "b5a4193dbe1cf746fecf6648a33725ead1079e0378d5f49aa59533b29610d94d"
+}

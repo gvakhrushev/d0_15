@@ -1,0 +1,38 @@
+D0.Research.ModularPreparationBoundary.isometric_eigenvector_zero.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [NormedSpace ℝ E] (U : E →ₗ[ℝ] E) (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (v : E) (r : ℝ) (hr : |r| ≠ 1) (hv : U v = r • v) :
+  v = 0
+D0.Research.ModularPreparationBoundary.golden_columns_zero.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  (U : E →ₗ[ℝ] E) (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (a b : E) (ha : U a = b) (hb : U b = a - b) (p : ℝ) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hp1 : p < 1) : a = 0 ∧ b = 0
+D0.Research.ModularPreparationBoundary.blank_zero_output (a p : ℝ) :
+  (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec ![1, 0, 0, 0] = ![a, 0, 0, p]
+D0.Research.ModularPreparationBoundary.separating_input_output (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  a ^ 2 + (-p) ^ 2 = 1 ∧ (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec ![a, 0, -p, 0] = ![1, 0, 0, 0]
+structure D0.Bridge.BridgeAssumption.TomitaModularFlow : Type
+number of parameters: 0
+fields:
+  D0.Bridge.BridgeAssumption.TomitaModularFlow.d0PisotTimeLayer : Prop
+  D0.Bridge.BridgeAssumption.TomitaModularFlow.timeEqualsModularFlow : Prop
+  D0.Bridge.BridgeAssumption.TomitaModularFlow.d0Witness : self.d0PisotTimeLayer
+  D0.Bridge.BridgeAssumption.TomitaModularFlow.cited : self.timeEqualsModularFlow
+constructor:
+  D0.Bridge.BridgeAssumption.TomitaModularFlow.mk (d0PisotTimeLayer timeEqualsModularFlow : Prop)
+    (d0Witness : d0PisotTimeLayer) (cited : timeEqualsModularFlow) : D0.Bridge.BridgeAssumption.TomitaModularFlow
+D0.Bridge.tomita_modular_flow_conditional (h : D0.Bridge.TomitaModularFlow) :
+  h.d0PisotTimeLayer ∧ h.timeEqualsModularFlow
+def D0.Dynamics.T : D0.Dynamics.ZMat2 :=
+!![0, 1; 1, -1]
+D0.Representation.GoldenCoherentMemory.blank_record_evolution (a p u v : ℝ) :
+  (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec ![u, 0, v, 0] = ![a * u - p * v, 0, 0, p * u + a * v]
+'D0.Research.ModularPreparationBoundary.isometric_eigenvector_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.ModularPreparationBoundary.golden_columns_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ModularPreparationBoundary.blank_zero_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.ModularPreparationBoundary.separating_input_output' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Bridge.tomita_modular_flow_conditional' does not depend on any axioms
+'D0.Representation.GoldenCoherentMemory.blank_record_evolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

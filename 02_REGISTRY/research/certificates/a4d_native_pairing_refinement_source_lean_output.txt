@@ -1,0 +1,111 @@
+def D0.Geometry.hodgeMetricMeasureWeight : ℕ → ℝ → ℝ → ℝ :=
+fun k mu prod_c => mu ^ D0.Geometry.muExponent k * prod_c
+def D0.Geometry.hodgeGramTraceDegree : ℕ → ℕ :=
+fun k => 3 ^ (4 - k)
+def D0.Geometry.totalHodgeGramTraceSum : ℕ :=
+1 * 81 + 4 * 27 + 6 * 9 + 4 * 3 + 1 * 1
+theorem D0.Geometry.archive_metric_measure_hodge_lift_owner : ∀ (mu c_r : ℝ),
+  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧
+    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧
+      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4 :=
+fun mu c_r =>
+  ⟨D0.Geometry.hodge_weight_0_eq_mu mu,
+    ⟨D0.Geometry.hodge_weight_1_eq_conductance mu c_r, ⟨D0.Geometry.card_archive_fock_state, D0.card_role⟩⟩⟩
+theorem D0.Geometry.archive_refinement_hodge_weights_owner : D0.Geometry.hodgeGramTraceDegree 0 = 81 ∧
+  D0.Geometry.hodgeGramTraceDegree 4 = 1 ∧ D0.Geometry.totalHodgeGramTraceSum = 256 ∧ Fintype.card D0.Role = 4 :=
+⟨rfl, ⟨rfl, ⟨rfl, D0.card_role⟩⟩⟩
+D0.Geometry.archive_metric_measure_hodge_lift_owner (mu c_r : ℝ) :
+  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧
+    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧
+      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4
+D0.Geometry.archive_refinement_hodge_weights_owner :
+  D0.Geometry.hodgeGramTraceDegree 0 = 81 ∧
+    D0.Geometry.hodgeGramTraceDegree 4 = 1 ∧ D0.Geometry.totalHodgeGramTraceSum = 256 ∧ Fintype.card D0.Role = 4
+D0.Research.PairingRefinementSource.weighted_compressed_square.{u_1, u_2} {ι : Type u_1} {ν : Type u_2} [Fintype ι]
+  [Fintype ν] [DecidableEq ι] [DecidableEq ν] (J : Matrix ν ι ℝ) (C : Matrix ι ν ℝ) (D Gf Gfi : Matrix ν ν ℝ)
+  (Gci Dc : Matrix ι ι ℝ) (hCJ : C * J = 1) (hf : Gf * Gfi = 1)
+  (hC : C = D0.Research.PairingRefinementSource.rectAdjoint Gci Gf J) (hD : Gfi * D.transpose * Gf = D)
+  (hQ : Gfi * (1 - J * C).transpose * Gf = 1 - J * C) (hcomp : C * D * J = Dc) :
+  C * (D * D) * J =
+    Dc * Dc + D0.Research.PairingRefinementSource.rectAdjoint Gci Gf ((1 - J * C) * D * J) * ((1 - J * C) * D * J)
+D0.Research.PairingRefinementSource.orthogonal_square_intertwining_iff.{u_1, u_2} {ι : Type u_1} {ν : Type u_2}
+  [Fintype ι] [Fintype ν] [DecidableEq ι] [DecidableEq ν] (J : Matrix ν ι ℝ) (D : Matrix ν ν ℝ)
+  (hJ : J.transpose * J = 1) (hD : D.transpose = D) :
+  D * D * J = J * (J.transpose * D * J * (J.transpose * D * J)) ↔ D * J = J * (J.transpose * D * J)
+D0.Research.PairingRefinementSource.rectangular_adjoint_first_jet.{u_1, u_2} {ι : Type u_1} {ν : Type u_2} [Fintype ι]
+  [Fintype ν] [DecidableEq ι] [DecidableEq ν] (R E : Matrix ν ι ℝ) (Gci Gcdot : Matrix ι ι ℝ)
+  (Gf Gfi Gfdot : Matrix ν ν ℝ) (hi : Gf * Gfi = 1) :
+  -Gci * Gcdot * Gci * R.transpose * Gf + Gci * E.transpose * Gf + Gci * R.transpose * Gfdot =
+    D0.Research.PairingRefinementSource.rectAdjoint Gci Gf E -
+        Gci * Gcdot * D0.Research.PairingRefinementSource.rectAdjoint Gci Gf R +
+      D0.Research.PairingRefinementSource.rectAdjoint Gci Gf R * (Gfi * Gfdot)
+D0.Research.PairingRefinementSource.rectangular_balanced_adjoint.{u_1, u_2} {ι : Type u_1} {ν : Type u_2} [Fintype ι]
+  [Fintype ν] [DecidableEq ι] [DecidableEq ν] (R E : Matrix ν ι ℝ) (Gci Kc : Matrix ι ι ℝ) (Gf Kf : Matrix ν ν ℝ)
+  (hc : Gci * Kc.transpose = Kc * Gci) (hf : Kf.transpose * Gf = Gf * Kf) :
+  D0.Research.PairingRefinementSource.rectAdjoint Gci Gf (E + E + Kf * R - R * Kc) =
+    D0.Research.PairingRefinementSource.rectAdjoint Gci Gf E +
+          D0.Research.PairingRefinementSource.rectAdjoint Gci Gf E +
+        D0.Research.PairingRefinementSource.rectAdjoint Gci Gf R * Kf -
+      Kc * D0.Research.PairingRefinementSource.rectAdjoint Gci Gf R
+'D0.Research.PairingRefinementSource.isometric_readback_left_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.complement_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PairingRefinementSource.chain_adjoint_readback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PairingRefinementSource.adjoint_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PairingRefinementSource.dirac_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PairingRefinementSource.leakage_is_intertwining_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.compressed_square_reaction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.compressed_square_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.leakage_weighted_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.leakage_zero_iff_intertwining' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.weighted_complement_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.weighted_compressed_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.rectangular_adjoint_first_jet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.reaction_first_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PairingRefinementSource.reaction_twice_balanced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PairingRefinementSource.rectangular_balanced_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.moving_complement_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PairingRefinementSource.rectangular_adjoint_basis_covariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.reaction_basis_covariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.reaction_diagonal_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.reaction_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PairingRefinementSource.orthogonal_compressed_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.orthogonal_square_intertwining_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.source_covector_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.symmetric_reaction_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.PairingRefinementSource.source_internal_ward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archive_metric_measure_hodge_lift_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archive_refinement_hodge_weights_owner' depends on axioms: [propext, Classical.choice, Quot.sound]

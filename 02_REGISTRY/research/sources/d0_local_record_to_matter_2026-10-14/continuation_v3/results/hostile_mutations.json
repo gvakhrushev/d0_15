@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "executed_mutants": [
+    {
+      "name": "freeze_preparation_jet",
+      "returncode": 1,
+      "rejection": "AssertionError: actual_diagonal_jet_T1_k0_j1"
+    },
+    {
+      "name": "omit_event_normalization",
+      "returncode": 1,
+      "rejection": "AssertionError: normalized_preparation_full_chain_rule_T2"
+    },
+    {
+      "name": "reverse_count_boundary_sign",
+      "returncode": 1,
+      "rejection": "AssertionError: exact_count_window_boundary_derivative_T3"
+    },
+    {
+      "name": "wrong_reference_effect",
+      "returncode": 1,
+      "rejection": "AssertionError: failure_effect_matches_actual_output_block"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "actual_archive_stages": [
+    {
+      "coarse": 16,
+      "fibre_sizes": [
+        5,
+        6
+      ],
+      "fine": 81,
+      "new_modes": 65
+    },
+    {
+      "coarse": 81,
+      "fibre_sizes": [
+        3,
+        4
+      ],
+      "fine": 256,
+      "new_modes": 175
+    },
+    {
+      "coarse": 256,
+      "fibre_sizes": [
+        2,
+        3
+      ],
+      "fine": 625,
+      "new_modes": 369
+    },
+    {
+      "coarse": 625,
+      "fibre_sizes": [
+        2,
+        3
+      ],
+      "fine": 1296,
+      "new_modes": 671
+    },
+    {
+      "coarse": 1296,
+      "fibre_sizes": [
+        1,
+        2
+      ],
+      "fine": 2401,
+      "new_modes": 1105
+    },
+    {
+      "coarse": 2401,
+      "fibre_sizes": [
+        1,
+        2
+      ],
+      "fine": 4096,
+      "new_modes": 1695
+    },
+    {
+      "coarse": 4096,
+      "fibre_sizes": [
+        1,
+        2
+      ],
+      "fine": 6561,
+      "new_modes": 2465
+    },
+    {
+      "coarse": 6561,
+      "fibre_sizes": [
+        1,
+        2
+      ],
+      "fine": 10000,
+      "new_modes": 3439
+    },
+    {
+      "coarse": 10000,
+      "fibre_sizes": [
+        1,
+        2
+      ],
+      "fine": 14641,
+      "new_modes": 4641
+    },
+    {
+      "coarse": 14641,
+      "fibre_sizes": [
+        1,
+        2
+      ],
+      "fine": 20736,
+      "new_modes": 6095
+    }
+  ],
+  "check_count": 41107,
+  "checker_sha256": "74d0c2c3746029ecf8982b36fc4f49171ad580411e3de4618e666e38c59b0ba2",
+  "checks": {
+    "actual_CJ_and_projection": 2,
+    "actual_all_size_capacity_fixture": 10,
+    "actual_capacity_vs_history_counts": 10,
+    "actual_counting_record_multiplicities": 1,
+    "actual_operator_defect_entry": 1,
+    "actual_phi_arithmetic": 1,
+    "actual_point_operator_type": 1,
+    "all_finite_phi_prefix_multiplicities": 10,
+    "all_hidden_basis_positive_weight": 240,
+    "all_hidden_basis_projection": 240,
+    "all_hidden_basis_readout_zero": 240,
+    "all_intrinsic_phi_shape_directions": 65,
+    "all_level_lift_readout": 2,
+    "all_prefix_phi_shape_derivative": 10,
+    "all_scalar_jet_fibre": 1,
+    "analytic_boundaries": 1,
+    "both_full_readouts_retained": 2,
+    "capsule_hash": 1,
+    "compiled_declarations": 1,
+    "complete_hidden_basis": 2,
+    "complete_intrinsic_shape_symmetry_generators": 79,
+    "complete_nonempty_fibres": 39973,
+    "exact_source_error": 1,
+    "finite_budget_floor_bound": 1,
+    "first_actual_sizes": 1,
+    "first_intrinsic_fibre_orbits": 1,
+    "genuine_fixed_phi_shape_source": 1,
+    "genuine_full_fixed_feedback_derivative": 1,
+    "genuine_heat_derivative": 1,
+    "intrinsic_phi_projections": 1,
+    "intrinsic_phi_ranks": 1,
+    "intrinsic_shape_natural_and_selfadjoint": 2,
+    "native_hidden_trace": 2,
+    "native_point_kernel_exact": 2,
+    "no_diagnostics_or_sorry": 1,
+    "normalized_heat_factorization": 1,
+    "output_hash": 1,
+    "paired_phi_norm_exact_stronger_control": 10,
+    "pinned_input_primary_and_prior_input_sha256": 38,
+    "pinned_input_toolchain_input_sha256": 3,
+    "pinned_input_transitive_d0_source_sha256": 15,
+    "positive_pairing_adjoint": 2,
+    "positive_pairing_isometry": 2,
+    "primary_owner_diagnostics": 1,
+    "primary_transitive_sizes": 1,
+    "real_capsule_status": 1,
+    "reject_direct_modulo_composite": 1,
+    "reject_empty_fibre": 1,
+    "reject_kernel_operator_naturality": 1,
+    "reject_nonattained_unbounded_gap_minimum": 1,
+    "reject_rank_as_physical_gauge": 1,
+    "resolved_printed_declarations": 55,
+    "retain_heat_invisible_but_price_visible": 1,
+    "same_base_price_different_state_jets": 1,
+    "source_error_bound_algebra": 1,
+    "source_tail_identity": 1,
+    "transitive_standard_axioms": 55,
+    "whole_chain_heat_naturality": 2,
+    "whole_chain_pairing_symmetry": 2
+  },
+  "compiled_propositions": 46,
+  "first_arrow_symmetry_generators": 79,
+  "first_two_complete_hidden_bases": [
+    {
+      "new_dimension": 65,
+      "paired_selfadjoint_block_dimension": 2145
+    },
+    {
+      "new_dimension": 175,
+      "paired_selfadjoint_block_dimension": 15400
+    }
+  ],
+  "input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
+  "intrinsic_phi_first_hidden_ranks": [
+    5,
+    60
+  ],
+  "lean_receipt_sha256": "9c36a6f01a8b9f5d60c23cc4040c06c68e70bf35ccc0c1d645e8aa70c6a3709d",
+  "native_field_preparation_or_source_derived": false,
+  "primary_and_prior_pins": 38,
+  "printed_primary_owner_propositions": 6,
+  "proof_sha256": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+  "schema": "d0-condensed-price-naturality/1",
+  "scope": {
+    "G0_G1_G2_G3_G4_or_original_parent_terminal_closed": false,
+    "actual_native_spectral_ceiling_or_minimum_preparation_derived": false,
+    "actual_nonuniform_archive_and_real_LightProfinite_owner_consumed": true,
+    "all_level_linear_extension_class_and_hidden_blocks_classified": true,
+    "all_scalar_interface_first_jets_realized_not_native_sources": true,
+    "archive_complement_is_physical_gauge": false,
+    "bounded_hidden_gap_limit_ordinary_heat_trace_finite": false,
+    "capacity_level_is_physical_A4D_mesh": false,
+    "class": "COMPLETE_DECLARED_LINEAR_HEAT_NATURALITY_ON_OWNED_ARCHIVE_NOT_PHYSICAL_NATIVE_ACTION",
+    "entrywise_record_kernel_implies_counting_operator_naturality": false,
+    "fixed_gap_full_price_derivative_genuine": true,
+    "fixed_phi_norm_and_trace_class_limit_force_shape_source": false,
+    "fixed_spectral_ceiling_profile_minimum_classified": true,
+    "independent_hidden_heat_no_stationarity_is_whole_D0_no_go": false,
+    "kernel_spectral_Hilbert_limit_and_matrix_heat_trace_binding": "ANALYTIC_WITH_EXACT_FINITE_CONTROLS",
+    "native_heat_carrier_and_field_preparation_derived": false,
+    "native_record_kernel_is_physical_heat_operator": false,
+    "native_source_Ward_contrast_curved_roots_or_GR_derived": false,
+    "phi_scale_owner_derives_thermal_ceiling": false,
+    "set_point_endomorphism_is_Hilbert_heat_generator": false
+  },
+  "transitive_D0_pins": 15,
+  "typed_owner_definitions": 3,
+  "uniform_bounded_gap_capacity_source_limit": -1
+}

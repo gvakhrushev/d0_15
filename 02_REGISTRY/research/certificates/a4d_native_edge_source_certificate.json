@@ -1,0 +1,329 @@
+{
+  "Riesz_Gram": "c^2 (2 I + A^T A)",
+  "checks": [
+    "COMPILED_ACTUAL_LOCAL_SOURCE_QUOTIENT",
+    "EXACT_SIMPLE_GRAPH_GRAM_1d_L2",
+    "ACTUAL_CONDUCTANCE_FORWARD_AND_POSITIVITY_1d_L2",
+    "ALL_NATIVE_EDGE_READOUTS_AND_PACKED_FACTOR_1d_L2",
+    "LITERAL_RECOVER_CONDUCTANCE_1d_L2",
+    "COMPLETE_SYMBOL_FOUR_EXACT_TRACE_MOMENTS_1d_L2",
+    "EXACT_SIMPLE_GRAPH_GRAM_1d_L3",
+    "ACTUAL_CONDUCTANCE_FORWARD_AND_POSITIVITY_1d_L3",
+    "ALL_NATIVE_EDGE_READOUTS_AND_PACKED_FACTOR_1d_L3",
+    "LITERAL_RECOVER_CONDUCTANCE_1d_L3",
+    "COMPLETE_SYMBOL_FOUR_EXACT_TRACE_MOMENTS_1d_L3",
+    "EXACT_SIMPLE_GRAPH_GRAM_1d_L4",
+    "ACTUAL_CONDUCTANCE_FORWARD_AND_POSITIVITY_1d_L4",
+    "ALL_NATIVE_EDGE_READOUTS_AND_PACKED_FACTOR_1d_L4",
+    "LITERAL_RECOVER_CONDUCTANCE_1d_L4",
+    "COMPLETE_SYMBOL_FOUR_EXACT_TRACE_MOMENTS_1d_L4",
+    "EXACT_SIMPLE_GRAPH_GRAM_2d_L2",
+    "ACTUAL_CONDUCTANCE_FORWARD_AND_POSITIVITY_2d_L2",
+    "ALL_NATIVE_EDGE_READOUTS_AND_PACKED_FACTOR_2d_L2",
+    "LITERAL_RECOVER_CONDUCTANCE_2d_L2",
+    "COMPLETE_SYMBOL_FOUR_EXACT_TRACE_MOMENTS_2d_L2",
+    "EXACT_SIMPLE_GRAPH_GRAM_2d_L3",
+    "ACTUAL_CONDUCTANCE_FORWARD_AND_POSITIVITY_2d_L3",
+    "ALL_NATIVE_EDGE_READOUTS_AND_PACKED_FACTOR_2d_L3",
+    "LITERAL_RECOVER_CONDUCTANCE_2d_L3",
+    "COMPLETE_SYMBOL_FOUR_EXACT_TRACE_MOMENTS_2d_L3",
+    "EXACT_SIMPLE_GRAPH_GRAM_4d_L2",
+    "ACTUAL_CONDUCTANCE_FORWARD_AND_POSITIVITY_4d_L2",
+    "ALL_NATIVE_EDGE_READOUTS_AND_PACKED_FACTOR_4d_L2",
+    "LITERAL_RECOVER_CONDUCTANCE_4d_L2",
+    "COMPLETE_SYMBOL_FOUR_EXACT_TRACE_MOMENTS_4d_L2",
+    "EXACT_SIMPLE_GRAPH_GRAM_4d_L3",
+    "ACTUAL_CONDUCTANCE_FORWARD_AND_POSITIVITY_4d_L3",
+    "ALL_NATIVE_EDGE_READOUTS_AND_PACKED_FACTOR_4d_L3",
+    "LITERAL_RECOVER_CONDUCTANCE_4d_L3",
+    "COMPLETE_SYMBOL_FOUR_EXACT_TRACE_MOMENTS_4d_L3",
+    "EXACT_SIMPLE_GRAPH_GRAM_4d_L4",
+    "ACTUAL_CONDUCTANCE_FORWARD_AND_POSITIVITY_4d_L4",
+    "ALL_NATIVE_EDGE_READOUTS_AND_PACKED_FACTOR_4d_L4",
+    "LITERAL_RECOVER_CONDUCTANCE_4d_L4",
+    "COMPLETE_SYMBOL_FOUR_EXACT_TRACE_MOMENTS_4d_L4",
+    "EXACT_UNIQUE_LOCAL_SOURCE_RECOVERY",
+    "RECOVERED_LOCAL_SOURCE_IS_SYMMETRIC_CONSERVED",
+    "NONZERO_CONSERVED_SOURCE_KERNEL_IS_RETAINED",
+    "ALL_ONES_SHIFT_INVISIBLE_BUT_IDENTITY_VISIBLE",
+    "SYMMETRY_HYPOTHESIS_CANNOT_BE_REMOVED",
+    "LITERAL_PHASE_TWO_LOCAL_SOURCE_TESTS_3",
+    "SIGNED_LOCAL_SOURCE_RECOVERY_PROTECTS_WEAK_GATE_3",
+    "LITERAL_PHASE_TWO_LOCAL_SOURCE_TESTS_4",
+    "SIGNED_LOCAL_SOURCE_RECOVERY_PROTECTS_WEAK_GATE_4",
+    "LITERAL_PHASE_TWO_LOCAL_SOURCE_TESTS_5",
+    "SIGNED_LOCAL_SOURCE_RECOVERY_PROTECTS_WEAK_GATE_5",
+    "LITERAL_PHASE_TWO_LOCAL_SOURCE_TESTS_8",
+    "SIGNED_LOCAL_SOURCE_RECOVERY_PROTECTS_WEAK_GATE_8",
+    "LITERAL_PHASE_TWO_LOCAL_SOURCE_TESTS_12",
+    "SIGNED_LOCAL_SOURCE_RECOVERY_PROTECTS_WEAK_GATE_12",
+    "LITERAL_PHASE_TWO_LOCAL_SOURCE_TESTS_16",
+    "SIGNED_LOCAL_SOURCE_RECOVERY_PROTECTS_WEAK_GATE_16",
+    "SHARP_TWO_PROBE_SCALAR_SOURCE_RESIDUAL"
+  ],
+  "finite_graph_spectra": {
+    "1d_L2": {
+      "conserved_symmetric_source_kernel_dimension": 0,
+      "edges": 1,
+      "scale": 4,
+      "symmetric_source_kernel_dimension": 2,
+      "unscaled_Riesz_eigenvalues": {
+        "4": 1
+      },
+      "vertices": 2
+    },
+    "1d_L3": {
+      "conserved_symmetric_source_kernel_dimension": 0,
+      "edges": 3,
+      "scale": 9,
+      "symmetric_source_kernel_dimension": 3,
+      "unscaled_Riesz_eigenvalues": {
+        "3": 2,
+        "6": 1
+      },
+      "vertices": 3
+    },
+    "1d_L4": {
+      "conserved_symmetric_source_kernel_dimension": 2,
+      "edges": 4,
+      "scale": 16,
+      "symmetric_source_kernel_dimension": 6,
+      "unscaled_Riesz_eigenvalues": {
+        "2": 1,
+        "4": 2,
+        "6": 1
+      },
+      "vertices": 4
+    },
+    "2d_L2": {
+      "conserved_symmetric_source_kernel_dimension": 2,
+      "edges": 4,
+      "scale": 4,
+      "symmetric_source_kernel_dimension": 6,
+      "unscaled_Riesz_eigenvalues": {
+        "2": 1,
+        "4": 2,
+        "6": 1
+      },
+      "vertices": 4
+    },
+    "2d_L3": {
+      "conserved_symmetric_source_kernel_dimension": 18,
+      "edges": 18,
+      "scale": 9,
+      "symmetric_source_kernel_dimension": 27,
+      "unscaled_Riesz_eigenvalues": {
+        "10": 1,
+        "2": 9,
+        "4": 4,
+        "7": 4
+      },
+      "vertices": 9
+    },
+    "4d_L2": {
+      "conserved_symmetric_source_kernel_dimension": 88,
+      "edges": 32,
+      "scale": 4,
+      "symmetric_source_kernel_dimension": 104,
+      "unscaled_Riesz_eigenvalues": {
+        "10": 1,
+        "2": 17,
+        "4": 4,
+        "6": 6,
+        "8": 4
+      },
+      "vertices": 16
+    },
+    "4d_L3": {
+      "conserved_symmetric_source_kernel_dimension": 2916,
+      "edges": 324,
+      "scale": 9,
+      "symmetric_source_kernel_dimension": 2997,
+      "unscaled_Riesz_eigenvalues": {
+        "12": 24,
+        "15": 8,
+        "18": 1,
+        "2": 243,
+        "6": 16,
+        "9": 32
+      },
+      "vertices": 81
+    },
+    "4d_L4": {
+      "conserved_symmetric_source_kernel_dimension": 31616,
+      "edges": 1024,
+      "scale": 16,
+      "symmetric_source_kernel_dimension": 31872,
+      "unscaled_Riesz_eigenvalues": {
+        "10": 70,
+        "12": 56,
+        "14": 28,
+        "16": 8,
+        "18": 1,
+        "2": 769,
+        "4": 8,
+        "6": 28,
+        "8": 56
+      },
+      "vertices": 256
+    }
+  },
+  "four_role_condition_number_L_ge_3": "9",
+  "four_role_sharp_lower_eigenvalue": "2 L^4",
+  "input_head": "2cba34623e346eb75a7a9ae42a550e4a52178a54",
+  "inputs_sha256": {
+    "03_FORMALIZATION/D0/Frozen/ConservedStressProjection.lean": "a54c353ee0182a50b081a3d94d6ee31702bdff86cadbf50e6e974af9c1845624",
+    "03_FORMALIZATION/D0/Geometry/ArchiveFieldEquation.lean": "9bbb068e712ad0aebdc0c2c9e89f5ed1be99a0021e69e284ece817ab0b83ae2b",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean": "511f40788d047494419ab9263edd3e82446085bbb2a483f58d5ff66d04d00a42",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseEdgeMetricScale.lean": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveStressEdgeReadout.lean": "661aabe6dc7b6e4989eb0a70fee51a3877b27f55bc29f33c1009059f4c997b52",
+    "03_FORMALIZATION/D0/Geometry/ArchiveVariation.lean": "58224658cc1d53e4fc21403633f708ed47838ce1a1c5b911bf3149445dbfc4c8",
+    "03_FORMALIZATION/D0/Matter/ArchiveStressCoupling.lean": "850b71489de8b9ef6383fd51b6f1f59b06badf61bc2f3d540139da0c9c31316c"
+  },
+  "lean_receipt_sha256": "9a0b1f20ee0e88ec14a261135065059b25b206ebf8ac8af10251f1bbee71735a",
+  "phase_source_controls": {
+    "12": {
+      "edge_response": [
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6"
+      ],
+      "unique_unscaled_local_weights": [
+        "989/780",
+        "-53/156",
+        "71/780",
+        "-19/780",
+        "1/156",
+        "-1/780",
+        "-1/780",
+        "1/156",
+        "-19/780",
+        "71/780",
+        "-53/156",
+        "989/780"
+      ]
+    },
+    "16": {
+      "edge_response": [
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6"
+      ],
+      "unique_unscaled_local_weights": [
+        "13775/10864",
+        "-3691/10864",
+        "989/10864",
+        "-265/10864",
+        "71/10864",
+        "-19/10864",
+        "5/10864",
+        "-1/10864",
+        "-1/10864",
+        "5/10864",
+        "-19/10864",
+        "71/10864",
+        "-265/10864",
+        "989/10864",
+        "-3691/10864",
+        "13775/10864"
+      ]
+    },
+    "3": {
+      "edge_response": [
+        "6",
+        "0",
+        "6"
+      ],
+      "unique_unscaled_local_weights": [
+        "4/3",
+        "-2/3",
+        "4/3"
+      ]
+    },
+    "4": {
+      "edge_response": [
+        "6",
+        "0",
+        "0",
+        "6"
+      ],
+      "unique_unscaled_local_weights": [
+        "5/4",
+        "-1/4",
+        "-1/4",
+        "5/4"
+      ]
+    },
+    "5": {
+      "edge_response": [
+        "6",
+        "0",
+        "0",
+        "0",
+        "6"
+      ],
+      "unique_unscaled_local_weights": [
+        "14/11",
+        "-4/11",
+        "2/11",
+        "-4/11",
+        "14/11"
+      ]
+    },
+    "8": {
+      "edge_response": [
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6"
+      ],
+      "unique_unscaled_local_weights": [
+        "71/56",
+        "-19/56",
+        "5/56",
+        "-1/56",
+        "-1/56",
+        "5/56",
+        "-19/56",
+        "71/56"
+      ]
+    }
+  },
+  "phase_two_probe_residual_squared_minimum": "18",
+  "protected_exceptions": [
+    "Non-symmetric raw source uses both off-diagonal entries",
+    "L=2 simple graph merges plus/minus neighbors",
+    "Readout-kernel is not automatically physical gauge",
+    "A reconstructed source is not independently generated matter",
+    "Counting readout inverse does not solve metric-connection-matter equations",
+    "Phase and four-Role carriers and normalizations remain distinct"
+  ],
+  "scope": "Actual finite local stress quotient and counting Riesz inverse, plus separately stated canonical phase-source obstruction; no physical source action or coupled GR range theorem.",
+  "status": "PASS"
+}

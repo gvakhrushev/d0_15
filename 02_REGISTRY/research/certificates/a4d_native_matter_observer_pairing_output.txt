@@ -1,0 +1,25 @@
+D0.Research.MatterObserverPairing.normContraction_hasDerivAt.{u_1} {I : Type u_1} [Fintype I] (a : ℝ → I → I → ℝ)
+  (v : ℝ → I → ℝ) (da : I → I → ℝ) (w : I → ℝ) (t : ℝ) (ha : ∀ (i j : I), HasDerivAt (fun s => a s i j) (da i j) t)
+  (hv : ∀ (i : I), HasDerivAt (fun s => v s i) (w i) t) :
+  HasDerivAt (fun s => D0.Research.MatterObserverPairing.normContraction (a s) (v s))
+    (D0.Research.MatterObserverPairing.normTangent (a t) da (v t) w) t
+D0.Research.MatterObserverPairing.pairingEntry_hasDerivAt (q vi vj k : ℝ → ℝ) (dq wi wj dk t : ℝ)
+  (hq : HasDerivAt q dq t) (hi : HasDerivAt vi wi t) (hj : HasDerivAt vj wj t) (hk : HasDerivAt k dk t)
+  (hk0 : k t ≠ 0) :
+  HasDerivAt (fun s => D0.Research.MatterObserverPairing.pairingEntry (q s) (vi s) (vj s) (k s))
+    (-dq + 2 * (wi * vj t + vi t * wj) / k t - 2 * dk * vi t * vj t / k t ^ 2) t
+'D0.Research.MatterObserverPairing.normContraction_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.MatterObserverPairing.pairingEntry_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.MatterObserverPairing.pairingEntry_scale_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.MatterObserverPairing.pairingEntry_radial_matter_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.MatterObserverPairing.pairingEntry_metric_dilation_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Geometry.observerMetric_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.observerExteriorBladeGram_pos' depends on axioms: [propext, Classical.choice, Quot.sound]

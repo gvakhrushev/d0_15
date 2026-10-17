@@ -1,0 +1,82 @@
+[
+  {
+    "filename": "d0_car_record_sector_exact_check.py",
+    "sha256": "d04f0ddbcdbaac60195eb206fcf13d5f25758a5079ab54e6aff1ab774eb9c397",
+    "size_bytes": 4382
+  },
+  {
+    "filename": "d0_tome_10_faq_empirical.md",
+    "sha256": "bf7f8cf7e267bbdfb6130c96d2f99a13beb95795a8c1a6476f940d235c7b9681",
+    "size_bytes": 24250
+  },
+  {
+    "filename": "d0_tome_1_logic_of_distinguishability.md",
+    "sha256": "eebf4585fbe1fe1f7741e88cda0e3ef44ee73d0688d081a5ec7c5c5e0ff5fbde",
+    "size_bytes": 66654
+  },
+  {
+    "filename": "d0_tome_2_quantum_of_distinguishability_13d.md",
+    "sha256": "ab27e90e206079b5b059405b405b56fdd2a5db8583340aec842d8d0df42d949e",
+    "size_bytes": 124240
+  },
+  {
+    "filename": "d0_tome_3_geometry_phi_graph_qft_qg.md",
+    "sha256": "7c99c0d79ad1a7cf365b065472374cac29d25818f33b3ffd18ca2d1d9e4c3d88",
+    "size_bytes": 51087
+  },
+  {
+    "filename": "d0_tome_4_geometry_physics_apple_torus_dm_de.md",
+    "sha256": "227ae7169f5d66c9a61d12eadddf9aa8a0a937e76fe564ecefb5bdfc1e81df56",
+    "size_bytes": 45082
+  },
+  {
+    "filename": "d0_tome_5_methodology_faq_fundamental.md",
+    "sha256": "cc1ced5782ccfd0b01c145d75f2b626a894cecf2d7a1fd96e592c2336c92a477",
+    "size_bytes": 23121
+  },
+  {
+    "filename": "d0_tome_9_reference_map.md",
+    "sha256": "39e57dc5c12e5bdedf90a89f2824acd963fe335e6d11c6fe2580e65db2652650",
+    "size_bytes": 25878
+  },
+  {
+    "filename": "do topology.txt",
+    "sha256": "858e9542fb27ce12c1f665b689d945d6f6a761e3264977c753d541062625876c",
+    "size_bytes": 11161
+  },
+  {
+    "filename": "p_equals_np_complete.md",
+    "sha256": "05edc5634a4c6c4d457bae0106e5993836fbabea2786652654c8dc67af1e935a",
+    "size_bytes": 38170
+  },
+  {
+    "filename": "tome_2_c_phi_light.md",
+    "sha256": "cb16cc3bab643c5e91589155f268c74f2b622faa2e7a0f0d0863f7f30c28acce",
+    "size_bytes": 22514
+  },
+  {
+    "filename": "tome_2_e_alpha_mass_13d_compactification.md",
+    "sha256": "53270f7efccf9dfd02727125238f3f5df39f6ed0c7e69d16e68c41c069d9b4e3",
+    "size_bytes": 15544
+  },
+  {
+    "filename": "tome_6_φ_pdg_mass_lattice_and_φ_graph_of_distinguishability_v_2.md",
+    "sha256": "d5c06bdcf62c5825113f2c2d8877a8ff81fd6585337a6f95e812929bf744a5f2",
+    "size_bytes": 41445
+  },
+  {
+    "filename": "tome_7_phi_graph_empirical_invariants_draft.md",
+    "sha256": "69094f8ae43c6d8685a0f416c1a4cde7c3c2ebc05efe4c2498b7205960f4eb53",
+    "size_bytes": 26603
+  },
+  {
+    "filename": "tome_8_φ_космология_smbh_и_инварианты_черновик_v_1.md",
+    "sha256": "8d73d17e03049ac40da9f9b04f0fa71c1eac3b47b9e21d25947234dcd5e35844",
+    "size_bytes": 44688
+  },
+  {
+    "filename": "φ_d_0_pdg_единый_черновик.md",
+    "sha256": "b3ea5bd38ff077d543304bbf8512c29585c0fa039fef3fc09558b02d9c4d18c3",
+    "size_bytes": 31603
+  }
+]

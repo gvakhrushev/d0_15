@@ -34,9 +34,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | BRIDGE-ASSUMPTIONS-EXPLICIT | 30 |
 | BRIDGE-CALIBRATION | 3 |
 | CERT-CLOSED | 193 |
-| CORE-FORMALIZED | 390 |
+| CORE-FORMALIZED | 389 |
 | CORE_BRIDGE_SPLIT | 17 |
-| DEPRECATED | 5 |
+| DEPRECATED | 6 |
 | EMPIRICAL-PASSPORT | 13 |
 | EXTERNAL-BACKGROUND | 1 |
 | FORMALISM | 4 |

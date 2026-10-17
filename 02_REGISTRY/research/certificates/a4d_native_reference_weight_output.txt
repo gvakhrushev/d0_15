@@ -1,0 +1,29 @@
+'D0.Research.NativeReferenceWeight.scalar_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.constant_scalar_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.half_scalar_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.scalar_unit_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.coefficient_one_has_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeReferenceWeight.coefficient_two_same_field_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeReferenceWeight.half_scalar_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.boost_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.scalar_flat_boost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.scalar_second_boost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.no_coefficient_scalar_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeReferenceWeight.critical_scalar_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeReferenceWeight.tested_frame_is_literal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.tested_gram_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.exterior_vacuum_is_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeReferenceWeight.exterior_fixes_actual_vacuum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeReferenceWeight.uniform_scalar_frame_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

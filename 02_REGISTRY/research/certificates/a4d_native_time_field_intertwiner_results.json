@@ -1,0 +1,52 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner.lean",
+  "capsule_sha256": "afb659f0b585cb6f5f8c592214f701114d118d8ac40c5a9636f8a5d92089db0d",
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner.lean",
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "declarations": [
+    "owned_integer_update",
+    "owned_rational_update",
+    "native_inverse_right",
+    "native_inverse_left",
+    "native_quadratic",
+    "parent_inverse_right",
+    "parent_inverse_left",
+    "parent_quadratic_defect",
+    "intertwiner_range_in_kernel",
+    "complete_linear_readout",
+    "injective_spatial_operator_forces_zero",
+    "surjective_readout_forces_zero_spatial_operator",
+    "derivative_of_equivariant_readout",
+    "quantitative_defect_identity",
+    "native_continuous_binding",
+    "parent_continuous_binding",
+    "nonlinear_readout_derivative_range",
+    "nonlinear_submersive_readout_forces_zero",
+    "nonlinear_zero_jet_control",
+    "nonlinear_control_nonconstant"
+  ],
+  "output": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_output.txt",
+  "output_sha256": "959d88cc6d6cd52cc00a82410e181be5da42b3ffc201a23430a11d63c1d66402",
+  "owner_input_head": "ad2e43f4eae418d6fe7386d37c7ee4c76400ed42",
+  "printed_axiom_dependencies": 20,
+  "printed_propositions": 20,
+  "scope": "Complete arbitrary-linear-A readout classification; genuine nonlinear first jet at native zero; exact defect identity; actual integer and rational native bindings. Norm, uniform-limit and smooth elliptic countercontrol proofs remain analytic. No full native preparation/action, physical time, GR or parent terminal closure.",
+  "sorryAx": false,
+  "status": "PASS",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Core/FixedDetectorTimeLadder.lean": "f84a8726efe4f853e2215a8cdaa1b9434abb262f0d4e5c8b498b7e9f3e3dbbde",
+    "03_FORMALIZATION/D0/Dynamics/ToralAutomorphism.lean": "c54784e5be5c24c2472fd3df3dbe37e3f7317e57a722ea22534639af693190cf",
+    "03_FORMALIZATION/D0/Dynamics/TwoTickSymplectic.lean": "4383082365ffb6f226c0aced9563e7e0f0f9cd7e54b66f7c5f73db8dcbc41bcb"
+  }
+}

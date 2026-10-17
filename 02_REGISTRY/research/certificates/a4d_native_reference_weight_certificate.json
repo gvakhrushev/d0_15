@@ -1,0 +1,308 @@
+{
+  "all_sector_symbols": [
+    {
+      "degree": 0,
+      "minimum_on_unit_torus": "c - 1",
+      "sector_ABCD": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "symbol": "c - z0/4 - z1/4 - z2/4 - z3/4 + 1 - 1/(4*z3) - 1/(4*z2) - 1/(4*z1) - 1/(4*z0)"
+    },
+    {
+      "degree": 1,
+      "minimum_on_unit_torus": "c/4",
+      "sector_ABCD": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "symbol": "c/4 - z1/4 - z2/4 - z3/4 + 3/2 - 1/(4*z3) - 1/(4*z2) - 1/(4*z1)"
+    },
+    {
+      "degree": 1,
+      "minimum_on_unit_torus": "c/4",
+      "sector_ABCD": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "symbol": "c/4 - z0/4 - z2/4 - z3/4 + 3/2 - 1/(4*z3) - 1/(4*z2) - 1/(4*z0)"
+    },
+    {
+      "degree": 2,
+      "minimum_on_unit_torus": "c/2 + 1",
+      "sector_ABCD": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "symbol": "c/2 - z2/4 - z3/4 + 2 - 1/(4*z3) - 1/(4*z2)"
+    },
+    {
+      "degree": 1,
+      "minimum_on_unit_torus": "c/4",
+      "sector_ABCD": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "symbol": "c/4 - z0/4 - z1/4 - z3/4 + 3/2 - 1/(4*z3) - 1/(4*z1) - 1/(4*z0)"
+    },
+    {
+      "degree": 2,
+      "minimum_on_unit_torus": "c/2 + 1",
+      "sector_ABCD": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "symbol": "c/2 - z1/4 - z3/4 + 2 - 1/(4*z3) - 1/(4*z1)"
+    },
+    {
+      "degree": 2,
+      "minimum_on_unit_torus": "c/2 + 1",
+      "sector_ABCD": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "symbol": "c/2 - z0/4 - z3/4 + 2 - 1/(4*z3) - 1/(4*z0)"
+    },
+    {
+      "degree": 3,
+      "minimum_on_unit_torus": "3*c/4 + 2",
+      "sector_ABCD": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "symbol": "3*c/4 - z3/4 + 5/2 - 1/(4*z3)"
+    },
+    {
+      "degree": 1,
+      "minimum_on_unit_torus": "c/4",
+      "sector_ABCD": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "symbol": "c/4 - z0/4 - z1/4 - z2/4 + 3/2 - 1/(4*z2) - 1/(4*z1) - 1/(4*z0)"
+    },
+    {
+      "degree": 2,
+      "minimum_on_unit_torus": "c/2 + 1",
+      "sector_ABCD": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "symbol": "c/2 - z1/4 - z2/4 + 2 - 1/(4*z2) - 1/(4*z1)"
+    },
+    {
+      "degree": 2,
+      "minimum_on_unit_torus": "c/2 + 1",
+      "sector_ABCD": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "symbol": "c/2 - z0/4 - z2/4 + 2 - 1/(4*z2) - 1/(4*z0)"
+    },
+    {
+      "degree": 3,
+      "minimum_on_unit_torus": "3*c/4 + 2",
+      "sector_ABCD": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "symbol": "3*c/4 - z2/4 + 5/2 - 1/(4*z2)"
+    },
+    {
+      "degree": 2,
+      "minimum_on_unit_torus": "c/2 + 1",
+      "sector_ABCD": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "symbol": "c/2 - z0/4 - z1/4 + 2 - 1/(4*z1) - 1/(4*z0)"
+    },
+    {
+      "degree": 3,
+      "minimum_on_unit_torus": "3*c/4 + 2",
+      "sector_ABCD": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "symbol": "3*c/4 - z1/4 + 5/2 - 1/(4*z1)"
+    },
+    {
+      "degree": 3,
+      "minimum_on_unit_torus": "3*c/4 + 2",
+      "sector_ABCD": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "symbol": "3*c/4 - z0/4 + 5/2 - 1/(4*z0)"
+    },
+    {
+      "degree": 4,
+      "minimum_on_unit_torus": "c + 3",
+      "sector_ABCD": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "symbol": "c + 3"
+    }
+  ],
+  "c1_range_gaps": {
+    "12": "1/2 - sqrt(3)/4",
+    "2": "1/4",
+    "3": "1/4",
+    "4": "1/4",
+    "8": "1/2 - sqrt(2)/4"
+  },
+  "c2_uniform_lower_bound": "1/2",
+  "checks": [
+    "COMPILED_LITERAL_OPERATOR_AND_FRAME_BINDINGS",
+    "ALL_16_CAR_ENDS_ANNIHILATE_ACTUAL_VACUUM",
+    "FULL_16_COMPONENT_LITERAL_CONSTANT_WEIGHT",
+    "ALL_SIXTEEN_SCALAR_READOUT_DERIVATIVES",
+    "NONZERO_FIELD_KERNEL_DEPENDS_ON_COEFFICIENT",
+    "FULL_SCALAR_CRITICAL_COMPLETION",
+    "CRITICAL_NONDEGENERATE_RAW_GRAM",
+    "KERNEL_NOT_ALREADY_PRESENT_AT_FLAT",
+    "BOOST_PROPER_TIME_ORIENTED",
+    "RAW_GRAM_AND_ORIENTATION_PRESERVED_flat",
+    "RAW_GRAM_AND_ORIENTATION_PRESERVED_second",
+    "RAW_GRAM_AND_ORIENTATION_PRESERVED_critical",
+    "FIRST_FRAME_DEFECT_FORCES_C_ZERO",
+    "SECOND_FRAME_DEFECT_REJECTS_C_ZERO",
+    "COEFFICIENT_INDEPENDENT_DEFECT_COMBINATION",
+    "SHARP_UNIFORM_FRAME_GAP_5_OVER_86",
+    "FIELD_KERNEL_NOT_LORENTZ_INVARIANT",
+    "ACTUAL_EXTERIOR_SCALAR_IS_FIXED",
+    "GENERAL_SMALL_BOOST_IS_LORENTZ",
+    "GENERAL_NEAR_FLAT_DEFECT",
+    "SMALL_BOOST_FLAT_FORCES_C_ZERO",
+    "C_ZERO_FAILS_ARBITRARILY_NEAR_FLAT",
+    "ALL_TEN_GRAM_ROWS_AND_VERTICAL_RESPONSE_flat_c1",
+    "NO_METRIC_COVECTOR_FIT_flat_c1",
+    "ALL_TEN_GRAM_ROWS_AND_VERTICAL_RESPONSE_flat_c2",
+    "NO_METRIC_COVECTOR_FIT_flat_c2",
+    "ALL_TEN_GRAM_ROWS_AND_VERTICAL_RESPONSE_second_c0",
+    "NO_METRIC_COVECTOR_FIT_second_c0",
+    "ALL_16_LAURENT_BLOCKS_WITH_LITERAL_SHIFT_PLACEMENT",
+    "C1_ONLY_POSSIBLE_KERNEL_SECTOR_IS_SCALAR",
+    "C2_UNIFORM_LOWER_BOUND_IS_ONE_HALF",
+    "FULL_REAL_SPACE_C1_KERNEL_EXACTLY_CONSTANT_SCALAR",
+    "FULL_REAL_SPACE_C2_POSITIVE_WITH_SHARP_GAP",
+    "SCALAR_FIRST_NONZERO_FOURIER_MODE_2",
+    "SCALAR_FIRST_NONZERO_FOURIER_MODE_3",
+    "SCALAR_FIRST_NONZERO_FOURIER_MODE_4",
+    "SCALAR_FIRST_NONZERO_FOURIER_MODE_8",
+    "SCALAR_FIRST_NONZERO_FOURIER_MODE_12",
+    "C1_RANGE_GAP_VANISHES",
+    "SINGULAR_WEIGHT_ROOT_IS_NOT_A_POSITIVE_WEIGHT"
+  ],
+  "constant_coframe": [
+    [
+      "-1/2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-1/2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-1/2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-1/2"
+    ]
+  ],
+  "frame_controls": {
+    "critical": {
+      "after": "45*c/16 - 5/4",
+      "before": "c - 1",
+      "defect": "29*c/16 - 1/4",
+      "raw_determinant": "-27/16"
+    },
+    "flat": {
+      "after": "5*c/4 + 1",
+      "before": "1",
+      "defect": "5*c/4",
+      "raw_determinant": "-1"
+    },
+    "second": {
+      "after": "41*c/8 - 1/4",
+      "before": "c",
+      "defect": "33*c/8 - 1/4",
+      "raw_determinant": "-2"
+    }
+  },
+  "input_head": "75527846bf3603a1c51acf445f8354e3254341be",
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Geometry/A4DDiscreteEnergyKernel.lean": "e5adf60c7d97b700cc276aab736667bc1d8eac078f15fa84206feb6c04c4f9a6",
+    "03_FORMALIZATION/D0/Geometry/A4DLocatedMatterCellEnergy.lean": "eb3cd93c09d17d7110e8f624f0cf238f6357f3c2d4adf0af5f62d2bb1629018c",
+    "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean": "4096e0a3b132841a60907f71bb48b726399c789231b804b869708249f7087438",
+    "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARDegreePreserving.lean": "8e5a7d06e6cdbc0df08df1c7277ed22ed32271b2e4c8db6af4b6f915b7259c0f",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
+  },
+  "lean_capsule_receipt_sha256": "ccb329ad17a23c7ee19b7cea465fb7e42d83bfa872931d2c96741c31487c69cf",
+  "metric_covector_controls": {
+    "flat_c1": {
+      "Gram_rank": 10,
+      "augmented_rank": 11,
+      "vertical_response": "9/2"
+    },
+    "flat_c2": {
+      "Gram_rank": 10,
+      "augmented_rank": 11,
+      "vertical_response": "9"
+    },
+    "second_c0": {
+      "Gram_rank": 10,
+      "augmented_rank": 11,
+      "vertical_response": "-3/4"
+    }
+  },
+  "scope": "Existing reference weight operator, scalar readout/frame descent and kernel/range classification at a fixed nondegenerate flat Gram. No new action, coupled source/Ward, continuum recovery, positive GR or full-core no-go.",
+  "sharp_coefficient": "2/43",
+  "status": "PASS",
+  "uniform_frame_defect_lower_bound": "5/86"
+}
