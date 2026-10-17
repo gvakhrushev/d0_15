@@ -176,6 +176,18 @@ chk(np.allclose(U_np,np.block([[S_np,-A_np],[A_np,S_np]]),atol=1e-13),
     'generic_noncommuting_same_original_Julia_exact_port_form')
 chk(np.allclose(U_np.T@U_np,np.eye(32),atol=1e-13),'full32_same_Julia_port_unitary')
 
+# The coherent projector needs NO sqrt(3) as a matrix: T is integral,
+# vec(T)^T vec(T)=48 and Pi=vec(T)vec(T)^T/48, W=I-vec(T)vec(T)^T/24.
+# The rational Householder reflection is mathematically exact; its native
+# implementation/denominator/code cost is a *separate* admission question.
+vecT=sp.Matrix(list(T))
+chk(all(x.is_Integer for x in vecT),'coherent_T_has_integer_original_CAR_entries')
+chk(eq0((vecT.T*vecT)[0]-48),'coherent_rank_one_integer_vector_squared_norm48')
+# Exact rank-one multiplication gives W²-I = (-2/24 + 48/24²) v v^T = 0.
+chk(eq0(-sp.Rational(2,24)+sp.Rational(48,24**2)),'coherent_Householder_rational_reflection_squared_identity')
+# Pi=v v^T/48 equals the projective |iota><iota| with |iota>=v/sqrt48.
+chk(eq0(sp.Rational(1,48)*48-1),'coherent_rational_projector_idempotent')
+
 # Stronger literal v8 shell realization: eight Fourier first-shell momenta x all16
 # CAR grades, Schmidt-purified against exactly reference128 (pure rank128 state).
 # This uses the ORIGINAL 8x16 shell, not a new CAR or reference carrier.
@@ -272,6 +284,73 @@ chk(eq0((a_coeff*tval**2 +3*(1-(a_coeff+b_coeff)*tval**2)
          +4*b_coeff*tval**2 - 3) + eps**2*tval**2*obs(Cg)),
     'centered_native_code_finite_exact_quadratic')
 
+# Stronger CENTRAL route: the actual Golden accumulated-cost >=3 cut has
+# FIVE unpostselected words: FFF,FR,RF of cost3 and FFR,RR of cost4.
+# Three selected words have IDENTICAL amplitude p^(3/2), the two pending
+# have amplitude p². Their weights add to one, with NO new sqrt(3).
+chk(eq0(3*p**3+2*p**4-1),'golden_cost3_five_full_histories_normalize')
+reference_words={'FFF':3,'FR':3,'RF':3,'FFR':4,'RR':4}
+chk(sorted(reference_words.values())==[3,3,3,4,4],'golden_cost3_3_equal_branch_2_pending')
+# Conditioned on the three equal-weight words, apply the same full
+# reference-projector reflection -W_coh to FFF,FR and +W_orth to RF;
+# the other two words get I. Exact full-state overlap can be fed to the
+# previously owned CENTRAL Golden-AF scalar-flag interface, WITHOUT feeding
+# Q_obs as a computed number and WITHOUT measuring/projection first.
+import math as _math
+p_float=(math.sqrt(5)-1)/2
+h0_exact=sp.expand(1-4*p**3)
+z0_exact=sp.expand(p**2+2*p**12*h0_exact)
+chk(sp.N(h0_exact)>0,'central_history_reference_overlap_nonzero')
+chk(sp.Rational(3,8)<sp.N(z0_exact)<sp.Rational(25,64),'central_history_flat_parameter_inside_existing_AF_interval')
+central_cases={}
+for name,C in C_samples.items():
+    Xsmall=np.array(X_from(C),dtype=float)
+    A16=float(eps)*Xsmall
+    eig,V=np.linalg.eigh(A16)
+    chk(np.max(np.abs(eig))<1,f'{name}_central_first_Julia_gap')
+    S16=(V*np.sqrt(1-eig*eig))@V.T
+    A128=np.kron(np.eye(8),A16)
+    S128=np.kron(np.eye(8),S16)
+    psi_exit=A128@psi128
+    psi_blank=S128@psi128
+    norm=np.sum(psi_exit**2)+np.sum(psi_blank**2)
+    chk(np.isclose(norm,1,atol=1e-13),f'{name}_central_first_program_full_normalization')
+    # Existing eight coherent projector vectors, one for each reference16 block.
+    PC=np.zeros_like(psi_exit)
+    T16=np.array(T,dtype=float)
+    for k in range(8):
+        iso=np.zeros_like(psi_exit)
+        iso[16*k:16*(k+1),16*k:16*(k+1)]=T16/(4*math.sqrt(3))
+        coeff=np.sum(iso*psi_exit)
+        PC+=coeff*iso
+    PO=psi_exit-PC
+    qc=float(np.sum(PC**2));qo=float(np.sum(PO**2))
+    chk(np.isclose(qc,float(eps**2*sp.trace(C)**2/3),atol=1e-14),f'{name}_central_coh_probability')
+    chk(np.isclose(qo,float(eps**2*(sqn(C)-sp.trace(C)**2/3)),atol=1e-14),f'{name}_central_orth_probability')
+    # Reflections Wcoh=I-2Πcoh and Worth=I-2Πorth act on complete port1.
+    wc=np.sum(psi_blank**2)+np.sum(psi_exit*(psi_exit-2*PC))
+    wo=np.sum(psi_blank**2)+np.sum(psi_exit*(psi_exit-2*PO))
+    chk(np.isclose(wc,1-2*qc,atol=1e-13),f'{name}_coherent_reflection_correct')
+    chk(np.isclose(wo,1-2*qo,atol=1e-13),f'{name}_orthogonal_reflection_correct')
+    chk(np.isclose(np.sum(psi_blank**2)+np.sum((psi_exit-2*PC)**2),1,atol=1e-13),f'{name}_Wcoh_complete_unitarity')
+    chk(np.isclose(np.sum(psi_blank**2)+np.sum((psi_exit-2*PO)**2),1,atol=1e-13),f'{name}_Worth_complete_unitarity')
+    overlap = p_float**3*(-2*wc+wo)+2*p_float**4
+    exactH=h0_exact+2*p**3*eps**2*obs(C)
+    chk(np.isclose(overlap,float(exactH),atol=1e-13),f'{name}_all_five_history_central_overlap_no_oracle')
+    zz=p**2+2*p**12*exactH
+    dz=4*p**15*eps**2*(2*sp.trace(C)*sp.trace(V_samples[name])
+          -2*sum(C[i,j]*V_samples[name][i,j] for i in range(3) for j in range(3)))
+    tvar=sp.symbols('tvar',real=True)
+    C_t=C+tvar*V_samples[name]
+    Hz=h0_exact+2*p**3*eps**2*obs(C_t)
+    zt=p**2+2*p**12*Hz
+    chk(eq0(sp.diff(zt,tvar).subs(tvar,0)-dz),f'{name}_CENTRAL_AF_exact_noncommuting_first_source')
+    chk(sp.Rational(3,8)<sp.N(zz)<sp.Rational(25,64),f'{name}_central_z_in_old_positive_source_window')
+    central_cases[name]={'coherent_full_overlap':str(sp.simplify(exactH)),
+                         'AF_z':str(sp.simplify(zz)),'AF_z_prime':str(sp.simplify(dz)),
+                         'AF_z_numeric':float(zz)}
+
+
 # Deterministic invariant gauge / co-moving frame check: C -> R C R^T.
 R=sp.Matrix([[sp.Rational(3,5),sp.Rational(-4,5),0],[sp.Rational(4,5),sp.Rational(3,5),0],[0,0,1]])
 chk(eq0(R.T*R-sp.eye(3)),'moving_observer_frame_orthogonal')
@@ -315,7 +394,7 @@ receipt={'status':'PASS','scope':'research: finite complete 3-outcome Born reali
  'checks_count':len(CHECKS),'checks':CHECKS,'reference':{'data':16,'reference':128,'reference_blocks':8,'reference_marginal':'I128/128',
  'input_rank':8,'old_bit_translation_overlap_sq':overlap_sq},
  'epsilon':str(eps),'score':{'coherent':2,'orthogonal':-1,'blank':0,'unique_for_spatial_d3':True},
- 'cases':values,'entropy_negative_control':{'Shannon_source':shannon,'signed_score_source':score,'same':False}}
+ 'cases':values,'central_five_word':{'full_leaf_costs':reference_words,'flat_overlap':str(h0_exact),'flat_z':str(z0_exact),'cases':central_cases},'entropy_negative_control':{'Shannon_source':shannon,'signed_score_source':score,'same':False}}
 result_json=json.dumps(receipt,sort_keys=True,indent=2,ensure_ascii=False)+'\n'
 (BASE/'RESULT.json').write_text(result_json,encoding='utf-8')
 print('PASS',len(CHECKS),'controls; three complete Born outcomes, full16×reference128')
