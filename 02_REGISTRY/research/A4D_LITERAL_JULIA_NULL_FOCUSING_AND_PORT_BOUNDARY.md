@@ -52,7 +52,22 @@ Its actual C1 source with periodic/compact boundary is
 \]
 This is a pair of exact whole-angle optical identities of one positive complete-history event, not weak-field matching, a fitted EH term, or full ten-slot GR. The same C1 limit transfers these relations to the controlled finite h family with O(h) error after h^-2; no claim of the original rough raw-l1 comparator rate.
 
-The conditional port-gain contribution of this event is p³ q_chi. Its h^-2 *difference* therefore reads (p³ A_beta/256)<Ric(k_y,k_y)>. This is the correct place for the existing p³, not a fictitious port-area derivative. Other labels' gain and the physical full Info/cost law are NOT removed.
+**Более сильное буквальное тождество — две реально различимые портовые частоты.** Разделим ПОЛНОЕ первое χ-событие по запомненному порту, не изменяя самого опыта: \(\Pr(\chi,0)=q_{\chi,0,h}\), \(\Pr(\chi,1)=q_{\chi,1,h}\). Из уже указанных \(K_{j,0}=pL_j\), \(K_{j,1}=\sqrt p L_j\) на **каждой конечной сетке** и для каждого номера первого выхода:
+\[
+q_{\chi,0,h}=p^2q_{\chi,h},\quad
+q_{\chi,1,h}=p q_{\chi,h},\quad
+\boxed{q_{\chi,1,h}-q_{\chi,0,h}=p^3q_{\chi,h}.}
+\]
+Это **измеримая разность вероятностей двух положительных полных исходов**, а не произведение условно выбранного информационного gain на искусственный detector. В частности,
+\[
+\boxed{
+\lim_{h\to0}h^{-2}\bigl[
+(q_{\chi,1,h}-q_{\chi,0,h})[\theta]
+-(q_{\chi,1,h}-q_{\chi,0,h})[0]\bigr]
+=\frac{p^3(1-e^{-\beta/s^2})}{256}
+\langle\operatorname{Ric}(k_y,k_y)\rangle.}
+\]
+И её собственный \(\theta\)-source есть \(-p^3(1-e^{-\beta/s^2})\operatorname{Ric}(k_x,k_x)/128\) на том же гладком chart. Здесь именно \(p^3=\varphi^{-3}\) возникает **из исходной разности портов**, без новой Info law. Если отдельно использовать условную likelihood-интерпретацию, её gain на один nonblank occurrence тоже \(p^3\), но это другой статистический функционал и не выбирает автоматически полную Cost−Info цену. Остальные метки и их реальные источники сохраняются.
 
 ## 4. Correct information scale of the real rare event
 
