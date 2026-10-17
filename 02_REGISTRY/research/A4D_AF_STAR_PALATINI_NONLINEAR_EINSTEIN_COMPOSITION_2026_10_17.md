@@ -71,6 +71,14 @@ W_{E}=V
 
 All the canonical ready/pending complement, original AF right-module provenance, both success/failure amplitudes and both PF blocks remain. The **subsequent second active AF record** is the existing fixed golden activation. Its fixed pointer projectors \(\{R_j|i\rangle\langle i|R_j^\dagger\}\) plus dark complement are field-independent; this is one complete measurement on that selected experiment. These are the *constructed* operators, not a claim that literal unchanged v8 already implements (4).
 
+### 2.1. Why the geometric input is not a free Einstein-shaped scalar in this carrier
+
+The active input (2) was not reverse-engineered by guessing \(R\) or \(G_{\mu\nu}\). The accepted canonical Role/Lorentz insertion classification underlying the original \(S_\star\) has \(\dim \mathcal A_{\rm natural}=1\) for local based-plaquette scalars of the declared type: one insertion **odd in the Lorentz curvature**, quadratic in the existing four relative-solder legs, with the fixed complementary Role orientation, \(G_2\), and internal \(\star\). The selected generator is exactly (1). This is a **scoped classification** (not uniqueness of all conceivable gravity actions, nor independent proof of the physical AF programme).
+
+Thus on the particular already-owned finite fields, any same-type geometric **first response** of a single golden AF record must be \(\lambda{\cal P}_{\star,h}\) for some overall constant \(\lambda\). The original \(\mathcal P_{\star,h}\) normalization fixes our explicit formula (2); its sign/overall constant is carried into \(\gamma_\star\), not adjusted to cancel a target Einstein residual. On the vacuum Euler equations, any nonzero \(\lambda\) merely multiplies ALL coframe and connection equations and cannot alter their zero set. The forced AF derivative \(H'_0(p^2)\ne0\) then means a genuine nonzero first sensitivity to this owned star insertion immediately yields the **same** full nonlinear vacuum Einstein equations under the continuum and joint-stationarity hypotheses of §§4–5.
+
+This is the useful operational uniqueness result: **within the certified first-order local naturality type, no freedom to substitute a second gravitational tensor/operator exists**. Physical execution/selection of a nonzero star-sensitive AF test is a different, explicitly preserved contract, not inferred from the one-dimensional mathematical span.
+
 ## 3. The SAME Book Cost−Info expected action, not a fitted Palatini action
 
 Denote the complete measured Book \(w=q\) entropy of the SECOND active AF record by \(S_{n,t}[e,\omega]\). Its source owner gives the **exact finite** identity on the diagonal READY/type-0 family:
