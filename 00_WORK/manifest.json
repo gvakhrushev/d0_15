@@ -79,6 +79,17 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
+    },
+    {
+      "id": "WRK-A4D-NATIVE-PHASE-REFLECTION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "Record the literal blank-row reflection cross for all real amplitudes at phases (I,1,1,1) as (1-2*f/128)*I16, and the role-1 sign flip as mu*I16+gamma*Q with gram shift 2*p^4*gamma^2. Keep sources_coincide false, ten_metric_components_evaluated at 0, gr_derived false, equation_20_closed false, and equation_28_closed false. Do not mint claims.csv.",
+      "brief": "00_WORK/tasks/WRK-A4D-NATIVE-PHASE-REFLECTION.md"
     }
   ]
 }
