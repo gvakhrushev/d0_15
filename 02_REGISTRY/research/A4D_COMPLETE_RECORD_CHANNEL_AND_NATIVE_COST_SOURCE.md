@@ -26,6 +26,13 @@ makes either candidate equal the unchanged v8 price on that open family.
 Sections8–10 give the actual new preparation equations and partition
 source required by a proposed physical binding.
 
+Sections11–13 now remove the frozen-support premise for coherent entropy:
+the exact jump algebra gives a positive2048-dimensional Choi carrier,
+an exact Gram compression and full regular source. Entropy/preparation
+and homogeneous proper-field sources have a controlled C1 limit at
+positive time. Physical feasible measurements and the Info contract
+remain the existing operational-gain/G0b interface.
+
 ## 1. Full output channel, not just survival
 
 Put A=hD_h/16=A*, alpha=p²h²/128, epsilon=2alpha, B=I-2p²A²,
@@ -576,3 +583,231 @@ normalization identity. Thus this continuation computes the missing
 matter source, rather than silently imposing unit partition or dropping
 it. All original native-admission, Einstein-source and refinement
 obligations remain open.
+
+## 11. The complete coherent-record support is now proved
+
+Continuation from96041dac. For the actual flat positive first shell the
+smooth-support condition in the entropy/source formulas can be proved,
+rather than assumed. The full record's nonzero spectrum has a fixed
+2048-dimensional algebraic carrier, independent of record depth. This preserves
+all eight momenta, all16 forms and the original reference128.
+
+Let H_s=directsum_(k=±e_r) C16. On this shell D_h²=lambda_h I128,
+lambda_h>0. Write xi=(beta_r,eta_r), beta_r=c_r+c_r*, eta_r=i(c_r-c_r*).
+The native symbol at phase theta_h=2pi/L, with h=1/L, is
+
+```text
+D_h(±e_r)=(nu/h)[(cos theta_h-1)beta_r
+                            ±sin(theta_h)eta_r].
+```
+
+Every actual recycling jump is J_kappa=N_kappa*D_h. Walsh inversion of
+the literal unshifted C,C*,L,R words, with L+R=(1+b)I, puts D_h and
+all xi_j D_h in their linear span. Their associative word algebra
+therefore contains I=D_h²/lambda_h and xi_j=(xi_j D_h)D_h/lambda_h.
+It also contains the central momentum coordinates
+
+```text
+K_r={D_h,eta_r}/(2 nu sin(theta_h)/h),
+K_r(k)=+1 at +e_r, -1 at -e_r, and0 at the other six momenta,
+P_(r,±)=(K_r²±K_r)/2.                                   (26)
+```
+
+The eight P are exact orthogonal projectors summing to I. Products of
+the eight Majoranas span the entire M16 in each block by the full CAR
+representation. Thus the associative jump algebra, without adjoining
+extra adjoints, is exactly
+
+```text
+A=directsum_8 M16, dim_C A=8*16²=2048.                   (27)
+```
+
+There is a finite degree bound: xi uses two jumps, K uses at most three,
+P at most six, and a full Clifford monomial at most sixteen. Hence words
+of length at most22 span A. This is an algebraic proof, not a numerical
+rank census. It holds when 0<theta_h<pi and strict0<nu<1, including the
+actual L4 control and every finer grid. At h=0 the same formulas use
+the nonzero limit nu sin(theta_h)/h=2pi nu.
+
+Put Psi_h(rho)=sum J_kappa rho J_kappa*, so
+Phi_h=(1-epsilon lambda_h)Id+epsilon Psi_h. All native coefficients are
+positive and epsilon lambda_h<1. With the unnormalized Choi convention
+C(Phi)=sum_a |vec K_a><vec K_a|, the exact finite-depth expansion is
+
+```text
+C(Phi_h^n)=sum_(m=0)^n binom(n,m)(1-epsilon lambda_h)^(n-m)
+                     epsilon^m sum_(|w|=m)|vec J_w><vec J_w|.
+```
+
+Every word remains in A and every weight is positive. The degree bound
+therefore proves support C(Phi_h^n)=vec A for n>=22. The positive-time
+continuum channel has the equally exact convergent expansion
+
+```text
+C(exp(beta L0))=exp(-beta lambda0)
+              sum_(m>=0) beta^m/m! sum_(|w|=m)|vec J_w><vec J_w|.
+```
+
+Its support is exactly vec A and it is strictly positive on that2048D
+space for every beta>0. On compact positive beta ranges and strict nu
+ranges, this positive matrix depends continuously on parameters, so
+its smallest eigenvalue on vec A has a uniform positive lower bound.
+Finite-h Choi convergence then gives the same eventual spectral floor.
+Neither beta=0, zero-energy blocks nor a growing UV carrier is included.
+
+Positivity is also open under homogeneous regular deformations: if an
+actual nearby translation-invariant channel stays block diagonal on
+this fixed A and its Choi matrix is continuous, it remains positive on
+vec A in a small parameter neighbourhood. This assertion does not need
+scalar D² or the binomial proof away from the base point. Source limits
+on that larger chart additionally require its actual C1 generator limit;
+a raw link angle independent of h must not be confused with a controlled
+proper-link generator in exp(h Omega).
+
+The required coefficient limit can be proved on that explicit homogeneous
+proper-link chart. Keep a regular smooth constant coframe/observer family,
+strict Julia margins and bounded Omega_r in so(1,3), and use the actual
+links `M_r(h)=L(n)exp(h Omega_r)L(n)^(-1)`. On each fixed shell momentum,
+with B_r=L(n)Omega_r L(n)^(-1) and Gamma the derivative of the full16
+exterior representation, the forward word is
+
+```text
+P_r(h,k)=C_r+h C_r[Gamma(B_r)+i 2pi k_r I]+O_C1(h²).
+```
+
+Therefore the true forward-plus-adjoint D_h has a C1 limit with error
+O(h). Strict positive Julia roots are analytic in P_r,P_r*, so every
+N_kappa,h=N_kappa,0+O_C1(h), including coframe, observer and proper-link
+jets. The exact channel formula (2) then gives L_h=L0+O_C1(h) on this
+fixed momentum space. This discharges the generator premise for the
+actual homogeneous chart near the isotropic point. Positivity openness
+now retains support vec A there even though D² need not remain scalar.
+Away from the base point this is the same eight-momentum window, not
+a claim that it remains an eigenshell. No spatially varying fields,
+unscaled raw-link angles or physical admission theorem are imported.
+
+## 12. Exact2048-dimensional entropy and its complete regular source
+
+Fix once an HS-orthonormal basis A_i of A and let Q have columns vec A_i.
+For either the finite-depth or continuum channel put
+
+```text
+C(Phi)=Q S Q*, S>0,
+G(rho)_ij=Tr(A_i* A_j rho), R=S^(1/2), K=R G(rho) R.       (28)
+```
+
+For any faithful shell density rho, G>=lambda_min(rho)I: apply the
+HS orthonormality to X=sum_i x_i A_i in Tr(rho X*X). Hence
+
+```text
+K>=lambda_min(rho) lambda_min(S)I>0, Tr K=1.
+```
+
+Factoring the Choi matrix gives minimal Kraus operators with coefficient
+matrix R. Their system/reference output columns have Gram matrix RGR;
+the coherent record matrix is its transpose in the convention of (17).
+Thus **all nonzero eigenvalues** of the full record and final
+system/reference state are exactly the eigenvalues of K. For any
+invertible purification C with CC*=rho the physical output support is
+vec(A C), which need not equal vec A; this moving support is retained
+by (28). No old record is erased, reweighted or physically recombined.
+This is a spectral calculation, not an admitted new record readout.
+
+In particular the coherent entropy is exactly
+
+```text
+S_record=-Tr(K log K), 0<=S_record<=log2048.               (29)
+```
+
+It requires neither a128^n tape matrix nor a logarithm on the null part
+of the128-by128 system/reference carrier. All reference correlations
+remain in the Schmidt/Gram identity. Intermomentum coherences of rho
+are invisible to this fixed flat record: A_i* A_j is block diagonal,
+so G depends precisely on its eight full16 diagonal blocks. Conversely
+the Kraus span at n>=22 is A and contains I; their cross products then
+span A too. Equality of complete record states therefore implies
+equality of these eight marginals; the continuum Poisson span gives the
+same conclusion at beta>0. This is the exact mathematical
+preparation response quotient, not full tomography of all128² entries
+or a physical superselection rule.
+
+Here is the full regular differential, with H=log K+I. For arbitrary
+actual channel/preparation jets in this fixed algebra solve the positive
+Sylvester equations
+
+```text
+R dR+dR R=dS,
+R T+T R=G R H+H R G.
+```
+
+Ordered differentiation of K and selfadjointness of the Sylvester
+inverse give
+
+```text
+dS_record=-Tr(T dS)-Tr(R H R dG),
+dG_ij=Tr(A_i* A_j d rho).                               (30)
+```
+
+The first term is the true channel/geometric source, the second the
+normalized preparation source. Neither can be dropped. For a moving
+orthonormal basis of A, S and G both conjugate by its unitary coordinate
+change; the extra commutator in dK has zero trace against log K+I.
+Thus (30) is basis independent when those basis jets are both retained.
+It is the entropy part only; the existing full-code cross-entropy and
+calibration/source terms must still be added for a given complete price.
+
+### A controlled fixed-time source limit
+
+On this fixed128-dimensional invariant shell the actual coefficient
+matrices obey L_h->L0 in C1 on compact strict flat parameter families.
+Use the genuine schedule beta_h=n epsilon and keep integer n fixed
+during each smooth parameter variation. The matrix identity
+
+```text
+n log(I+epsilon L_h)=beta_h L_h
+                   -(beta_h epsilon/2)L_h²+O_C1(epsilon²)
+```
+
+and the finite-dimensional exponential/Duhamel formula give
+`||Phi_h^n-exp(beta L0)||_C1<=C(h+epsilon+||beta_h-beta||_C1)`.
+This requires the stated C1 clock/preparation convergence, not merely
+value convergence or an invented differentiable integer depth.
+Choi conversion is linear in fixed dimension; its support is now proved
+to be vec A. The positive floor above makes the square root and log in
+(28)–(30) uniformly smooth. Therefore, for faithful compact preparations
+with their actual C1 jets, the complete coherent entropy and its regular
+sources converge, with error bounded by
+`C[h+epsilon+||beta_h-beta||_C1+||rho_h-rho0||_C1]`.
+At one identical preparation the last term is zero; mere preparation
+convergence cannot be assigned an unproved quantitative rate.
+The moving-support premise
+has been discharged for this family rather than frozen by convention.
+
+This does not prove pointer-entropy convergence, a full-code continuum
+price, arbitrary spatial field variations that leak out of the shell,
+rank-birth source bounds or uniform UV preparation control. Full-grid
+thermal traces retain their original independent sources; (29) is not
+a replacement for them. No physical choice of Info or Einstein equality
+follows from the compression.
+
+## 13. Consume the existing operational-gain theorem at its actual interface
+
+The [operational-gain owner](sources/d0_operational_gain_2026-10-15/RESULT.md)
+already proves the maximum measured branch gain for its central PF
+reference **if all POVMs in its represented algebra are available**.
+Its further binding Info=maximal gain gives net action S_vN/log(phi).
+The older [coherent-AF contract](A4D_NATIVE_COHERENT_AF_COST_INFO.md)
+instead sets Info=S_vN/log(phi), giving relative entropy as the net price.
+These are distinct conditional contracts, not two names for the same
+Info. Equations(28)–(30) compute the coherent entropy source needed by
+either contract, with its corresponding sign and code term.
+
+Existing operational-cut and retained-record owners neither grant
+all coherent POVMs nor force a diagonal physical algebra. The coherence
+norm witness is explicitly not an admitted detector. The remaining G0b
+consumer is therefore the actual feasible test/effect algebra and cut,
+plus the meaning of actual versus maximal gain. Once supplied, consume
+the existing maximum theorem where its central-reference premise holds;
+do not infer that premise from a nonuniform golden terminal-code prior.
+The computation here removes an entropy/source obstacle while keeping
+that physical operational obligation explicit.

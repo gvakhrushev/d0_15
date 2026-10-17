@@ -271,6 +271,25 @@ price; do not transfer the v8 Rayleigh preparation equation unchanged.
 This is an off-shell binding result, not an exclusion of joint roots,
 other physical Info laws or a smaller independently admitted family.
 
+The coherent source interface now has a constructive positive closure on
+the full128 shell. The actual jump algebra is directsum8 M16, proved by
+central momentum projectors and CAR words of degree<=22. Its positive-time
+Choi matrix is faithful on this exact2048-dimensional carrier. The complete
+record entropy is therefore the entropy of the positive Gram compression
+`K=S^(1/2)G(rho)S^(1/2)`, with its ordered Sylvester field/preparation
+source and controlled C1 fixed-time limit. The actual homogeneous
+proper-link chart has the required generator limit; no frozen support,
+record enumeration or full-grid thermal substitution is needed. This
+also gives the exact preparation response quotient: all eight full16
+momentum marginals, with their intermomentum coherences invisible to this
+record alone. Physical superselection is not inferred.
+
+For physical selection, consume the existing operational-gain theorem
+when G0b supplies the feasible effect algebra and the actual/maximal-gain
+contract. Its central-reference/all-POVM premises are not consequences
+of retaining coherent records. Complete code cost, inhomogeneous leakage,
+rank births and the original GR/source terminal remain separate.
+
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
 strictly positive on a longitudinal germ with all10 linearized Einstein

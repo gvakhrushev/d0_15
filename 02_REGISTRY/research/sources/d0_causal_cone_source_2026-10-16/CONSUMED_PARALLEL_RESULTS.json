@@ -54,6 +54,31 @@
     },
     "source": "ac79c0ed"
   },
+  "coherent_record_regular_source_compression_checkpoint": {
+    "base": "96041dac11b79ab528acd498c7cd326431b3e01c",
+    "conclusions": [
+      "Actual global jump algebra directsum8 M16 is spanned by words of length<=22, retaining every momentum/form/reference sector.",
+      "Finite n>=22 and positive continuum beta have Choi support exactlyvecA with a uniform positive spectral floor on compact regular parameters.",
+      "K=sqrtS G(rho)sqrtS is positive2048 and has the full retained record nonzero spectrum; its ordered Sylvester differential includes both channel and normalized preparation sources.",
+      "The regular entropy/source C1 error includes h, epsilon, actual clock and actual preparation errors. The homogeneous coframe/observer/proper-link chart supplies its generator limit; neighbouring window need not remain an energy shell.",
+      "Complete record preparation quotient is the eight full16 momentum marginals. It does not imply physical superselection or erase their data coherences.",
+      "Existing operational-gain theorem is consumed only with feasible-effect/all-POVM, central-reference and maximal-gain premises; no physical Info is selected."
+    ],
+    "consumer": "Complete coherent entropy and its true preparation/homogeneous-field source, without exponential tape or assumed frozen support.",
+    "general_proofs_analytical_not_inferred_from_fixtures": true,
+    "new_exact_checks": 40,
+    "normal_optimized_byte_identical": true,
+    "old_scientific_replay": false,
+    "rank_spectrum_or_history_census": false,
+    "scope": "Regular fixed momentum window, reference128 and controlled homogeneous proper fields. No pointer/full-code continuum law, inhomogeneous leakage/rank-birth or UV theorem, native admission, Einstein equality or original terminal closure.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "b150471a01a7278a5b388013016b5ba3ed5d7b69fb30947cf3e0dddc972286e8",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/COMPRESSION_RESULTS.json": "ceecf31863d2fccbda01c7a3b6a5544723a4ef2438eb56d745feabcb790b06ef",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/COMPRESSION_VALIDATION.json": "4838ec8a654682916a2120c9a10358fcc510f4c855c261ede330e41bb47e3ac6",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/README.md": "e1be4510fdb1e135b92885678625dbbed5e916e75823806e6f630f8cac0dc7ca",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_coherent_record_compression.py": "d75d1079efc68bebc156ffae393addfdc9d114eccc6690d92fdc6900a73d0150"
+    }
+  },
   "complete_common_plane_joint_first_corrector": {
     "conclusion": "Every common vacuum/top density is excluded: the complete first causal field row requires equal populations, whereas every balanced density has projected amplitude residual squared >=1/(8s^4) for arbitrary real first field corrections.",
     "constructive_intermediate": "All resonant amplitude rows explicitly solved for real pure unbalanced lines; those solutions violate the actual causal field equation.",

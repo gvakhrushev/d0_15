@@ -6203,3 +6203,18 @@ repair this mismatch. The exact nonlinear information/preparation
 equations are supplied as the consuming source. Physical Info and
 admission, all field equations and the original terminal are not thereby
 selected or closed.
+
+The same complete-record owner's Sections11–13 now discharge the regular
+coherent entropy/source premise on the actual eight-momentum window.
+Jump words of length<=22 generate exactly directsum8 M16; finite n>=22
+and every positive continuum record time have a faithful Choi matrix on
+its2048-dimensional span. An exact positive Gram compression retains
+the complete coherent-record spectrum with reference128 and gives the
+ordered Sylvester field/preparation source. Its C1 error includes the
+actual clock and preparation errors. The explicit homogeneous coframe/
+observer/proper-link chart supplies the generator limit; a neighbouring
+window need not remain an energy shell. The exact response quotient reads
+all eight full16 marginal densities, not intermomentum coherences.
+This removes an exponential-record calculation and an assumed fixed
+support from the constructive source route. Physical tests/Info, full code
+cost, inhomogeneous/rank-birth limits and Einstein equality remain open.

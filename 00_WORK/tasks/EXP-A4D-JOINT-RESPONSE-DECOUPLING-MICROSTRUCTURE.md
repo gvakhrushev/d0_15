@@ -591,6 +591,23 @@ smallest decisive calculation is the actual label6/coefficient1 effect,
 full128 normalized preparation jets and exact marked-event complement.
 No old record/channel/root suite or lattice spectrum replay is required.
 
+## Coherent record source continuation — 17 October 2026
+
+Bounded consumer at96041dac: remove the frozen-support premise from the
+coherent entropy/source interface on the actual flat positive first shell.
+Retain all8 momenta,16 forms and reference128. Prove the full jump-word
+algebra and positive-time Choi support, then compress the complete record
+entropy to its fixed algebraic carrier and derive its true field/preparation
+source and C1 fixed-time limit. The operational-gain/readout owners are
+consumed with their existing premises; G0b primitive actuation remains the
+coordinated other chat's lane. Extend the same record/channel owner and
+packet, sole new helper check_coherent_record_compression.py. Decisive check:
+actual central momentum projectors, CAR word-span and noncommuting
+Gram/Sylvester source identities; no rank/spectrum census, oldrun or Lean.
+This is not a full-code continuum price, pointer-entropy theorem or a
+spatially varying field/shell-leakage source theorem. Original terminal
+and physical admission remain unchanged.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

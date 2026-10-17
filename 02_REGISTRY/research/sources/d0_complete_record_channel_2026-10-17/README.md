@@ -60,3 +60,26 @@ new output and its source pins, normal/optimized identity and analytical
 review. The two earlier outputs/receipt remain unchanged. The new helper
 extracts only the pinned row/creator definitions; it does not run either
 earlier calculation, an entropy history enumeration, spectrum or Lean.
+
+## Positive coherent carrier and compressed source
+
+Owner Sections11–13 prove the actual jump algebra directsum8 M16 and
+its22-word bound. Positive-time Choi support is exactly its2048-dimensional
+span; a positive Gram compression gives the complete coherent-record
+entropy and ordered Sylvester preparation/homogeneous-field source.
+The actual proper-link chart supplies a C1 generator limit, with clock
+and normalized preparation errors retained. The full code-price limit,
+spatial leakage and physical feasible tests/Info remain separate.
+
+Changed bounded controls only:
+
+```sh
+python3 02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_coherent_record_compression.py
+```
+
+COMPRESSION_RESULTS.json/COMPRESSION_VALIDATION.json preserve actual
+central projectors, Walsh jump identities and complex Gram/Sylvester
+controls. The2048 support and source convergence are analytic proofs,
+not inferred from a finite matrix rank. The helper builds no full Choi,
+record matrix, spectrum census or old checker execution. All earlier
+outputs and receipts remain unchanged.
