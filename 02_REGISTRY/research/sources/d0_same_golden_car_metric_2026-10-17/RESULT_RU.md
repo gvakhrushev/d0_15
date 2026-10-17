@@ -155,6 +155,36 @@ H=VV^T>0,
 
 **Строгий смысл:** доказана *точечная локальная surjectivity* всех metric-2jets **с точностью до локальной координатной нормализации**. Это не доказывает, что независимо выбранные в каждой точке projector jets интегрируются в **один гладкий глобальный U(x)**. Для этого нужны Gauss–Codazzi–Ricci/holonomic identities вместе с реальной physical coframe→record map. Утверждать глобальный Einstein action только на основании (12)–(16) было бы ошибкой.
 
+### 2.2. Не требуется внешний экспоненциальный оракул: точный рациональный CAR-компилятор того же 2-jet
+
+Предыдущий локальный construction записывал `U(y)=exp K(y)`. Для **всех**
+исходных real-skew CAR operators `K(y)` той же области можно заменить его на
+точную рациональную ортогональную карту
+
+\[
+  \boxed{U_{\rm Cayley}(y)=(I-K(y)/2)^{-1}(I+K(y)/2)\in SO(16).}\tag{16a}
+\]
+
+`I-K/2` обратим на всей вещественной кососимметрической области:
+`||(I-K/2)v||²=||v||²+||Kv||²/4`. При `K(0)=0` дифференцирование равенства
+`(I-K/2)U=I+K/2` даёт **без коммутативности полевых джетов**
+
+\[
+ U_{,\mu}(0)=K_{,\mu}(0),\qquad
+ U_{,\mu\nu}(0)=K_{,\mu\nu}(0)
+      +\tfrac12(K_{,\mu}K_{,\nu}+K_{,\nu}K_{,\mu})(0).\tag{16b}
+\]
+
+Это ровно первые два джета `exp K`. Поэтому **тот же** `Gauss map`/правый
+обратный для всех 20 компонент Римана и всех первых metric/source jets
+реализуется без матричной экспоненты, eigenbasis oracle или дополнительного
+Fock-пространства. Реализуемость рационального `inverse/response` из
+физически допущенных *native* gates, цена этого контроля и source при
+движении preparation/controller **не следуют** из алгебраической формулы.
+Проверка `check_same_car_twojet.py` предъявляет exact SO16 Cayley для
+некоммутирующего Clifford-входа и два настоящих некоммутирующих вторых
+джета; это не проверка новой аппаратной реализации.
+
 ## 3. Ещё более короткая обратная формула: без отдельного 3D прибора и без twist-free
 
 Для actual `g=e^Tηe` и `G=e^Th_ne` положим `u=e^{-1}n` (`G(u,u)=1`), `ω=G(u,·)`. **Точно** `g=2ω⊗ω−G`, обе плотности объёма совпадают.
@@ -250,6 +280,110 @@ R(g)=-R(G)+2\big[(\operatorname{tr}C)^2-\operatorname{tr}(C^T C)\big]
 проверяет сохранение исходных CAR generators, полный `9x9` Reynolds,
 ненулевой twist, настоящую производную moving C и ковариантность полного источника при совместной смене frame.
 
+### 3.2. Сильный нелинейный curved witness: плоский positive record, но полный Einstein-тензор из CAR observer
+
+Возьмём обычную положительную **совершенно плоскую** метрику `G=dt²+dx²+dy²+dz²` и `G`-единичного наблюдателя, реально изменяющегося с x:
+
+\[
+u=(\cos kx,0,\sin kx,0),\qquad
+u^\flat\wedge d u^\flat=k\,dt\wedge dx\wedge dy\ne0\quad(k\ne0).
+\]
+
+Следовательно ни zero twist, ни фолиация \(u^\perp\) не разрешены; путь через отдельные пространственные листья здесь непригоден. Однако непосредственный 4D вычислитель Christoffel/Ricci **для полной нелинейной** метрики `g=2u^flat⊗u^flat−G` даёт точно
+
+\[
+\boxed{\operatorname{Ric}(g)_{xx}=2k^2,\quad
+\operatorname{Ric}(g)_{\mu\nu}=0\ (\mu\nu\ne xx),\quad
+R(g)=-2k^2,}
+\]
+\[
+\boxed{G_{\mu\nu}(g)=k^2g_{\mu\nu}+2k^2(dx)_\mu(dx)_\nu\ne0.}\tag{21a}
+\]
+
+В G-подвижной ортонормированной пространственной рамке `e_x=∂x`, `e_y=−sin(kx)∂t+cos(kx)∂y`, `e_z=∂z` единственная ненулевая компонента \(C\) из (17) есть \(C_{xy}=k\); \(\theta=0\), \(\mathcal Q_{obs}=-k^2\). Поэтому **та же** quadratic CAR trace (20) даёт
+
+\[
+\boxed{-R(G)+2\mathcal Q_{obs}=-2k^2=R(g),\quad
+\partial_k(-R_G+2Q_{obs})=-4k=\partial_kR(g).}\tag{21b}
+\]
+
+Здесь нет граничного divergence, поскольку \(\theta=0\). Это прямой nonperturbative контроль **всех Ricci и Einstein компонент** и реального вариационного источника; он не использует заранее подставленный классический Einstein equation. Положительный Hodge heat curvature здесь невидим, но observer CAR readout восстанавливает ровно потерянную лоренцеву кривизну. Ранее рассмотренное `4D−2×3D` чтение само по себе не могло пройти этот twist-fixture.
+
+**Ограничение:** метрика (21a) является геометрическим свидетелем с ненулевым Einstein source, **не** решением исходного native стационарного действия без дополнительно полученного источника материи. Сам факт его вычисления не выбирает физическую стоимость (20).
+
+`check_twisting_cone_witness.py` независимо собирает полную 4D LC-связь из `g`, Ricci, scalar и tensor Einstein; его exact normal/optimized checks отвергают случайно нулевой observer либо twist-подмену.
+
+### 3.3. Глобально интегрируемая flat-G/curved-Lorentz ветвь с одним и тем же U на первоначальных CAR (новый результат)
+
+Предыдущая теорема §2 воспроизводит заданный геометрический 2-jet в **одной**
+точке; это не глобальное theorem. Для конкретного неплоского Lorentz семейства
+есть более сильная **полностью глобальная** реализация без дополнительных
+`SO(16)` степеней свободы. Возьмём четыре CAR quadratic generators
+
+\[
+ J_0=\gamma_0\gamma_1,\quad J_1=\gamma_2\gamma_3,\quad
+ J_2=\hat\gamma_0\hat\gamma_1,\quad J_3=\hat\gamma_2\hat\gamma_3.
+\]
+
+Все четыре вещественно кососимметричны, `J_mu²=-I`, **попарно коммутируют**,
+`Tr16(J_mu^T J_nu)=16 delta_mu nu`. Поэтому единая гладкая запись
+
+\[
+ U(x)=\prod_{\mu=0}^3 e^{x^\mu J_\mu}\in SO(16),\quad
+ U(x+2\pi e_\mu)=U(x),\quad
+ q_{\mu\nu}(x)=\frac{p^3}{16}\operatorname{Tr}(J_\mu^T J_\nu)
+      =p^3\delta_{\mu\nu}\quad \forall x                                  \tag{24b}
+\]
+
+имеет **глобальную**, не jet-only, метрику `q=p³ I` на
+`R × T³` (сама 16-компонентная запись периодична также по real time,
+но физический timelike coordinate не компактифицируется). Оба золотых
+порта фиксированы одним `p+p²=1` и никакой extra CAR carrier нет.
+
+Пусть `s²=p³`, `theta(x)=A sin(x¹)` — периодическое наблюдательное
+вращение в Euclidean `0,2`-плоскости, `n=e0`, а coframe
+`e(x)=s R_02(theta(x))`. Тогда по всему пространству
+
+\[
+ G=e^Te=s²I=q,\quad
+ g=e^T\eta e,
+ \quad u=s^{-1}(\cos\theta,0,\sin\theta,0),
+ \quad R(G)=0,\quad
+ \boxed{R(g)=-2s^{-2}A^2\cos^2 x^1}.                     \tag{24c}
+\]
+
+Сигнатура лоренцева, `g` гладкая и глобально определённая; observer twist
+ненулевой при `A cos x¹ !=0`. В G-ортонормированном пространственном frame
+одна компонента `C` равна `A cos x¹/s`, θ_expansion=0,
+`Qobs=-(A cos x¹/s)²`. Таким образом формула (23) даёт **всю** Lorentz
+scalar со всеми moving observer terms, в отличие от pure positive-record
+heat. По пространственному 3-тору периода `2π` и конечному временному
+окну `T` получаем
+
+\[
+ \int_{[0,T]\times T^3}\!R(g)dV_G
+    =-8\pi^3 T\,p^3 A^2,\quad
+ \boxed{\left.\partial_A^2 \int R(g)dV_G\right|_{A=0}
+           =-16\pi^3T\,p^3\ne0}.                         \tag{24d}
+\]
+
+Это **более сильный, чем точечный** метрический контроль: одна и та же
+периодическая GOLDEN CAR-запись `U(x)` сохраняет `q=G` при всех `x,A`, тогда
+как лоренцево действие имеет ненулевое второе полевое изменение. Он не
+объявляет `A` физически выбранной native amplitude или эту coframe
+совместным stationarity root. Сама математическая запись `U` здесь задана
+из исходных CAR operators, но её допуск, источники аппаратной стоимости,
+действительный global functor `e(x) -> U(x)` и физический выбор
+signed observer-CAR price по-прежнему **открыты**. Поскольку равенство
+`q=G` доказано только для данной глобальной ветви, оно не заменяет
+общего global isometric embedding theorem на произвольном кривом фоне.
+
+`check_global_flat_record.py` проверяет полный 16×16 CAR на 4 generators,
+все коммутаторы, exact global Golden Gram, независимый Ricci scalar
+при **произвольной** гладкой `theta(x¹)`, затем непрерывное periodic
+`theta=A sin x¹` и полный ненулевой Einstein–Hilbert second variation.
+Проверка не постулирует внешний физический action.
+
 ## 4. Одно точное Golden+CAR reading полного Lorentz scalar
 
 Четыре исходных двубуквенных Golden-исхода `FF,FR,RF,RR` сохраняются с весами `(p²,p³,p³,p⁴)` и знаком `ε=(0,+1,−1,0)`. Для *той же* rank16 projector immersion P и полного normal Parseval-family (как в `A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md`) обозначим матричные determinant ожидания `M_4(t)`. Тогда
@@ -332,7 +466,7 @@ D S_{\rm native,h}(X)
 
 ## 6. Исполняемая проверка и scope
 
-`check_same_car_twojet.py` и `check_spatial_role_twirl.py`:
+`check_same_car_twojet.py`, `check_spatial_role_twirl.py`, `check_twisting_cone_witness.py` и `check_global_flat_record.py`:
 
 - на **всех16** CAR masks собирает исходные `c_a`, `i_a`, `gamma_a`, `hatgamma_a`, проверяет Clifford и `J_U` с исходным `p+p²=1`;
 - проверяет сохранение Golden-weights и **всех10** coframe Gram/source slots с движущимся рациональным timelike observer и ненулевыми off-diagonal смешанными вариациями;
