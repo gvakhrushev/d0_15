@@ -1,0 +1,136 @@
+{
+  "intake_date": "2026-10-17",
+  "archive": {
+    "supplied_filename": "D0_AF_full_source_2026-10-17.zip",
+    "sha256": "fc92f1ea1e4d5923ce4af66c7af1245f923a293fc5023414e8b7f14335ce4b4a",
+    "members": 11,
+    "repository_policy": "expanded readable source; ZIP itself not duplicated in Git"
+  },
+  "standalone_attachments": [
+    {
+      "supplied_filename": "RECOVERY_COMPOSITION_RU.md",
+      "sha256": "6f06b3c2b2fbe99aa504970e2489055f43cd8a01e3c7bdb31805441d81840467",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/RECOVERY_COMPOSITION_RU.md",
+      "disposition": "already_integrated_byte_identical"
+    },
+    {
+      "supplied_filename": "RESULT_RU (1).md",
+      "sha256": "4b3b78274de1cc700dbdae605bb8fe0047e121ef55b611034162e41cea338086",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md",
+      "disposition": "already_integrated_byte_identical"
+    }
+  ],
+  "archive_members": [
+    {
+      "archive_member": "d0_af_feedback_source/PUBLICATION.json",
+      "sha256": "739b5390371489aa88edb4c9459ba72b9beeb364f46a811baef073f6d0004476",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/PUBLICATION.json",
+      "disposition": "added_publication_provenance"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/README_RU.txt",
+      "sha256": "b8ea200043d1d975b54e7a413cb3c15296ad38eed83a3ef4d614953878b1c6fe",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/README_RU.txt",
+      "disposition": "added_readable_entrypoint"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/RECOVERY_COMPOSITION_RU.md",
+      "sha256": "6f06b3c2b2fbe99aa504970e2489055f43cd8a01e3c7bdb31805441d81840467",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/RECOVERY_COMPOSITION_RU.md",
+      "disposition": "already_integrated_byte_identical"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/RESULT_RU.md",
+      "sha256": "4b3b78274de1cc700dbdae605bb8fe0047e121ef55b611034162e41cea338086",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md",
+      "disposition": "already_integrated_byte_identical"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/check_feedback_source.py",
+      "sha256": "1a665162fe2a582da28d5d5be4b9cf4b7d029015ba53712e7de663dab81099a6",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/check_feedback_source.py",
+      "disposition": "already_integrated_byte_identical"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/check_joint_extension.py",
+      "sha256": "e7a4b506c3486bd38496adc1d2937dbe33329b6c74be3b7623571e2f41f53ade",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/check_joint_extension.py",
+      "disposition": "already_integrated_byte_identical"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/joint_receipt.json",
+      "sha256": "a33d79eef14429475cc1206ed9f90ac5bdb8a7ce0182b0a39e581d32191ec6a0",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/joint_receipt.json",
+      "disposition": "already_integrated_byte_identical"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/joint_receipt_optimized.json",
+      "sha256": "a33d79eef14429475cc1206ed9f90ac5bdb8a7ce0182b0a39e581d32191ec6a0",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/joint_receipt.json",
+      "disposition": "exact_alias_of_normal_receipt",
+      "alias_of": "d0_af_feedback_source/joint_receipt.json"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/manifest.json",
+      "sha256": "923fcfae4d177c7b80c0ed49eeda191fd4ae2638d012c168c410d1b895c350f1",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/manifest.json",
+      "disposition": "already_integrated_byte_identical"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/receipt.json",
+      "sha256": "5e114c232b75143651e04432dab659428f85cc53b3ccd2c6bb6b1bd976743f79",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/receipt.json",
+      "disposition": "already_integrated_byte_identical"
+    },
+    {
+      "archive_member": "d0_af_feedback_source/receipt_optimized.json",
+      "sha256": "5e114c232b75143651e04432dab659428f85cc53b3ccd2c6bb6b1bd976743f79",
+      "repository_path": "02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/receipt.json",
+      "disposition": "exact_alias_of_normal_receipt",
+      "alias_of": "d0_af_feedback_source/receipt.json"
+    }
+  ],
+  "publication": {
+    "repository": "gvakhrushev/d0_15",
+    "pull_request": 334,
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "source_ref": "cb513f74b3b9ae74d5f2dc02c126d21c9dfbefa7",
+    "feedback_checkpoint": "c882fd25edfa9da1cfb861a86f6ef2de33b80967",
+    "recovery_checkpoint": "3034688a3e93b79f5a96ee61967f75abddc85e70",
+    "verified_comment_urls": [
+      "https://github.com/gvakhrushev/d0_15/pull/334#issuecomment-6233389024",
+      "https://github.com/gvakhrushev/d0_15/pull/334#issuecomment-6233449145"
+    ],
+    "merged": false
+  },
+  "replay": {
+    "python": "3.9.6",
+    "sympy": "1.14.0",
+    "results": {
+      "check_feedback_source.py": {
+        "normal": "PASS",
+        "optimized": "PASS",
+        "checks": 78,
+        "status": "PASS_SCOPED_EXACT_IDENTITIES",
+        "normal_optimized_output_identical": true,
+        "matches_archive_receipt": true
+      },
+      "check_joint_extension.py": {
+        "normal": "PASS",
+        "optimized": "PASS",
+        "checks": 11,
+        "status": "PASS_SCOPED_JOINT_EXTENSION",
+        "normal_optimized_output_identical": true,
+        "matches_archive_receipt": true
+      }
+    }
+  },
+  "scope": {
+    "complete_cost_info_identified": false,
+    "joint_nonlinear_roots_constructed": false,
+    "physical_program_selected": false,
+    "GR_closed": false,
+    "lean_run": false,
+    "full_repository_ci_claimed": false
+  }
+}
