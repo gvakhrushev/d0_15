@@ -57,8 +57,10 @@ verify(all(S.simplify(v) == 0 for v in T*K-S.eye(10)),
        "left inverse")
 verify(all(S.simplify(v) == 0 for v in K*T-S.eye(10)),
        "right inverse")
-verify(all(S.simplify(v) == 0 for v in T*S.Matrix([1,0,0,0,-1,-1,-1,0,0,0])[:-1]) if False else True,
-       "not used")  # completeness is established by determinant.
+# Nine null rows annihilate eta, and determinant proves full rank with trace.
+verify(all(S.simplify(v) == 0 for v in T[:9, :] *
+           S.Matrix([1, 0, 0, 0, -1, -1, -1, 0, 0, 0])),
+       "null kernel must contain eta")
 
 # Column-sum formulas, derived analytically from the inverse above.
 vmax = 1+(1+a)/(2*b)
