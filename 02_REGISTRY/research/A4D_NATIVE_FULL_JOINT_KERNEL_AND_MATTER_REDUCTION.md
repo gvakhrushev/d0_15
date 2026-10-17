@@ -1334,8 +1334,12 @@ joint transition/action и refinement-uniform estimates ещё нужны.
 даёт `T_k`, вторую eigenjet-строку `E2 C0+2 E1 C1=0` и `M_v`
 neutrality test для rank boundary либо удалённой preparation. Его точная
 трёхмерная homogeneous connection-source capacity не заменяет полный
-field inverse или совместный branch. Сохранённый midpoint crossing
-остаётся floating diagnostic, не доказательством ветви.
+field inverse или совместный branch. Исторический floating midpoint
+crossing из этого owner позднее усилен отдельным outward-сертификатом
+[q3300 memory-fibre crossing](A4D_MEMORY_FIBRE_CROSSING_TRANSVERSALITY.md):
+он локализует единственное пересечение и ограничивает спаривание на всём
+root-box. Это закрывает только указанное условие совместимости для этого
+модового сектора; полной нелинейной ветви не утверждает.
 Исходный fixed-source/raw,l1 terminal,
 physical primitive/price admission и полный вывод ОТО остаются OPEN.
 
@@ -1493,14 +1497,30 @@ representative3003 связан точной spatial S3). Поскольку q33
 совместное линейное ядро с `delta C=delta epsilon=0` и
 `delta Psi_Q=-R_Q X_v Psi`. Все preparation Euler rows сохранены.
 
-Следующий consumer — строгая локализация и полные second stationary jets,
-включая `E2 C+2E1 C1=0` и `M_v` neutrality из
-[rank-aware source owner](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md).
-Его grade-four source-neutral witness точен; midpoint location и его
-спаривание с приближённым kernel ещё диагностические. Наличие linear
-kernel не доказывает nonlinear branch. Other preparations, distant
-roots, физический G0/action, controlled refinement и исходный независимо
-fixed-g/fixed-tau/raw,l1 terminal остаются OPEN.
+Для q3300 этот следующий consumer теперь выполнен отдельными
+[outward-проверкой](sources/d0_memory_fibre_crossing_2026-10-16/check_transversality.py)
+и [результатом](sources/d0_memory_fibre_crossing_2026-10-16/RESULT.json).
+Проверены полные 13 координат native mean-slice данного блока и весь
+закреплённый `(d,o)` root-box; SHA `pure_memory_interval.py` и
+`PURE_MEMORY_CHOICES.json` совпадают с входными pin-ами pure rank8 endpoint
+result, а memory-source owner отдельно закреплён crossing checker. На
+точном стационарном пути (47) инерция меняется с `12+/1-` на `11+/2-` между `t=0.42` и
+`t=0.44`. Outward-оценка даёт ровно одно простое пересечение для каждой
+пары параметров и
+`Tr((|chi><chi|-I/16) M_v) < -0.8441` для любого единичного crossing-вектора.
+Точная spatial-S3 и CAR-parity передача сохраняет actual native seed.
+Поскольку q3300 вне `Omega-Omega`, полный joint kernel lift сохраняет все
+preparation Euler rows; companion
+[mixed-memory proof](A4D_MEMORY_FIBRE_MIXED_MEMORY_VELOCITY.md) исключает
+второй stationary jet и при произвольной первой скорости вдоль memory
+fibre, если единственная её полевая часть — этот q/−q crossing pair.
+
+Это заменяет прежний midpoint-only статус для данного сектора. Векторы с
+дополнительными field modes остаются открытыми: их bilinear second-jet
+члены здесь не проверены, и полученный obstruction не доказывает
+отсутствия всех nonlinear branches между preparations. Other preparations,
+distant roots, физический G0/action, controlled refinement и исходный
+независимо fixed-g/fixed-tau/raw,l1 terminal остаются OPEN.
 
 [Entrypoint](certificates/a4d_native_pure_field_check.py) исполнил203 новых
 exact shell identities и488 новых interval blocks. Normal и optimized
