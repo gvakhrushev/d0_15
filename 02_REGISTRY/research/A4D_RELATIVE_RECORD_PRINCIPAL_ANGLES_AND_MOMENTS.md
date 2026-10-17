@@ -247,3 +247,40 @@ XPX is neither P nor I−P. Therefore a sharp repeated test of THIS tilted old-b
 Получено **необходимое** условие для предлагаемого relative-price механизма: на реальном baseline полные четырёхмерная и пространственная записи должны быть независимо различимыми, с nonzero principal angles, и их field changes должны иметь genuine relative normal component. Исходный golden p предоставляет кандидат *уже определённого* ненулевого угла без подгоночного параметра; одно только требование ненулевого first source не выбирает p единственным образом. Это не утверждение, что любая такая пара выдаёт Einstein tensor: необходимо фактическое source equality с 4D−2×3D input, matter, Ward и native Cost−Info.
 
 **Сокращённый falsifier перед дорогим SCIENCE:** если предлагаемый same-program morphism реально выдаёт J_0(g)=J_1(g) (либо лишь их right-GL / shared-ambient unitary reparametrization) для всех coframe germs, его two-sided logdet source нулевой и путь через него должен быть отвергнут сразу. Если же есть actual golden-offset pair of distinct record cuts, проверять только d(P_0,P_1) и price/source на одной nonflat variation, не заново tensor catalog.
+
+
+## 9. Существенный native KILL-FIRST: один золотой поворот выходного порта создаёт golden angle, но ZERO Einstein-source
+
+Это потребляет **буквальный** полный gate owner A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md §1, не конструирует произвольный comparator из EH. Пусть M(X):H_in→K_active — весь pre-port full Julia/label isometry (all labels included; spectator reference retained), M†M=I. Пусть W(X)=W(X)†=W(X)^−1 — действительный full gate involution на его active comparison carrier. Existing two golden output Kraus maps are
+
+  K_0=pI+p²W,  K_1=a p(W−I),
+  p=phi^−1, a=sqrt(p), p+p²=1.                      (32)
+
+**Operator fact valid for EVERY field X, not small-curvature expansion:**
+
+  K_0†K_0+K_1†K_1=I,
+  K_0†K_1−K_1†K_0=0.                               (33)
+
+Это следует из polynomial-in-W commutation и
+  (pI+p²W)² + p³(W−I)² = (p+p²)²I=I.
+Никакой fixed observer или commutative COFRAME не предполагается; K_0,K_1 оба функции одного W, даже если W(X) не коммутирует с M(X) или другим полевым оператором.
+
+The full one-round Stinespring record image is
+
+  J(X)=(K_0M,K_1M)^T,   J†J=I.                     (34)
+
+Возьмём fixed SO(2) rotation R_θ=[[cosθ,−sinθ],[sinθ,cosθ]] только одного полного **выходного порта** (тождественный по всем остальным labels, CAR grades, spatial sites and reference128) и сравним two full subspaces J and (R_θ⊗I)J. Тогда
+
+  C_θ(X)=J(X)†(R_θ⊗I)J(X)
+        =cosθ I+sinθ M†(K_1†K_0−K_0†K_1)M
+        =cosθ I.                                           (35)
+
+При θ=θ_*=acos(sqrt(p)) native G-port имеет cosθ=a и sinθ=p. Тогда
+
+  C_G†C_G=pI,   −log_phi det(C_G†C_G)=d,   d_X price=0       (36)
+
+НА ВСЁМ field chart. Это строгий, неожиданный **native whole-port obstruction**: native golden angle сам по себе не содержит curvature, даже если primitive W, M и archive зависят от всей geometry. Сумма over ALL labels обязательна; постселекция одной label/port и поиск ненулевого source после discarded outcomes — другой, нефизически неподтверждённый опыт. Аналогично любой fixed SO(2)-port rotation не даёт source. Если подставить field-dependent θ(X), source придёт из назначенного θ(X), то есть нужен independently owned physical field→control law; EH нельзя спрятать туда как scalar oracle.
+
+Эта теорема НЕ говорит, что full D0 4D-vs-3D relative comparison тоже source-free: она испытывает только **same one-round full record against uniform port rotation**. Для ОТО остаётся реальная возможность distinct 4D/spatial (или иной native path/role) image subspaces whose principal angles vary relatively with coframe. Их несовпадающие field-dependent K, complete cut and Cost−Info must be deduced. Но повторять random port-angle или same-frame rotations как поиск гравитационной кривизны больше не требуется.
+
+Это дополнительно объясняет, почему локальные source результаты на отдельных record labels нельзя автоматически перенести на полную цену: при полном суммировании антисимметричный port cross source может сократиться EXACTLY. Старые record contrast источники остаются настоящими источниками **своих** declared readout, но не доказывают full-price Einstein source.
