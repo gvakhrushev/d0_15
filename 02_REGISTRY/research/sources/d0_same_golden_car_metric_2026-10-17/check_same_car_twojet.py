@@ -67,6 +67,27 @@ for i in range(4):
     for j in range(4):
         eq(sigma*S.trace(A[i].T*A[j])/n,int(i==j),f'golden_q_metric_full16_{i}{j}')
 
+# Non-exponential exact orthogonal completion using *rational* CAR operations:
+# Cayley(K)=(I-K/2)^-1 (I+K/2), valid for any real skew K.
+K0=gamma[0]/3+gamma[0]*gamma[1]*S.Rational(2,5)
+ck(K0.T==-K0,'noncommuting_quadratic_CAR_Cayley_input_skew')
+ck(K0*gamma[0]!=gamma[0]*K0,'Cayley_fixture_genuinely_noncommuting')
+Uc=(I-K0/2).inv()*(I+K0/2)
+eq(Uc.T*Uc,I,'exact_16_CAR_Cayley_unitary_without_exponential')
+eq(Uc.det(),1,'exact_16_CAR_Cayley_proper_orientation')
+# Derive exact first/second jets by differentiating (I-K/2)U=I+K/2;
+# an independent genuinely noncommuting 3x3 numerical symbolic jet checks it.
+Tpar=S.symbols('tpar',real=True)
+Ar=S.Matrix([[0,1,0],[-1,0,2],[0,-2,0]])
+Br=S.Matrix([[0,0,3],[0,0,1],[-3,-1,0]])
+ck(Ar*Br!=Br*Ar,'Cayley_second_jet_noncommuting_A_B')
+Kt=Tpar*Ar+(Tpar**2)*Br/2
+Ut=(S.eye(3)-Kt/2).inv()*(S.eye(3)+Kt/2)
+eq(Ut.subs(Tpar,0),S.eye(3),'Cayley_origin_exact')
+eq(Ut.diff(Tpar).subs(Tpar,0),Ar,'Cayley_full_first_CAR_germ_exact')
+eq(Ut.diff(Tpar,2).subs(Tpar,0),Br+Ar**2,
+ 'Cayley_full_second_noncommuting_CAR_germ_exact')
+
 # Ten normal directions from ten quadratic Majorana bilinears *in that same*
 # sixteen-dimensional CAR, not arbitrary SU(16) or external Fock generators.
 zb=[]
@@ -296,6 +317,7 @@ output={
  'check_labels_sample':checks[:5]+checks[-8:],
  'native_complete_car_dimension':16,'golden_total_two_port_dimension':32,
  'golden_p':str(p),'golden_p3':str(sigma),'golden_projector_ambient_curvature':str(kap),
+ 'local_exact_rational_CAR_controller':'Cayley(K)=(I-K/2)^(-1)(I+K/2) shares all first+second jets with exp(K), fixed Golden branches; operational gate admission unproved',
  'coframe_covariant_metric':'q_P=p^3/16 Tr(dU^T dU)=e^T h_n e for U_mu=p^(-3/2) gamma(L(n)e_mu)',
  'curvature_components':'all 20 algebraic 4D Riemann directions, smooth same-operator 2-jet Gram right inverse',
  'normal_rotations':znames, 'normal_count':10,
