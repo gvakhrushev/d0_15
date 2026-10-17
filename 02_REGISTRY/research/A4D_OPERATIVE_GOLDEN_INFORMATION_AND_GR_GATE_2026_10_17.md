@@ -203,7 +203,8 @@ Choose \(u_0=0,u_1=t^2\), where \(t\) is the same geometric curvature probe scal
 
 \[
 \liminf_{t\to0}\frac{\inf_{[V,X]=0}\|W_u-V\|}{t^2}
-\ge p/4=0.154508497187\ldots>0.                 \tag{14}
+\ge \frac{\sqrt p}{4}
+=0.196537844439\ldots>0.                 \tag{14}
 \]
 
 Thus direct **old-retained-register controlled rotations cannot approximate the exact nonconstant geometry gate to o(t²)** in this precise one-way grammar. Dividing the AF source by t² does NOT remove the obstruction. This is a genuine targeted program no-go, not an all-D0 no-go: the old AF right-module register need not automatically be identified with the Z₂ tape of that theorem.
