@@ -24,11 +24,11 @@
 
     d(dt)=0,
     d_G^dagger(dt)=-partial_mu G^(mu0)=0,
-    ||dt||_G²=1.
+    ||dt||_G,pointwise²=1.
 
-Поэтому D C=0 и R=0. Полный первый differential нормированного ||DC||²/||C||² равен0 по всем гладким совместным directions, не только по данному ansatz. Все16 matter components сохраняются. На принадлежащем single16 P1 chart U_e=Lambda(e^T eta) переводит native e0 в dt, поэтому P1 psi=e0 timelike и собственное правило n=P1 psi/|P1 psi|_eta выполнено. Это не scalar/P1=0 контроль.
+Поэтому D C=0 и R=0. Полный первый differential нормированного ||DC||²/||C||² равен0 по всем гладким совместным directions, не только по данному ansatz. Все16 matter components сохраняются. На принадлежащем single16 P1 chart U_e=Lambda(e^T eta) переводит ненормированное native e0 в dt. У нормированной подготовки P1 psi=e0/sqrt(Vol_G), поэтому оно timelike и собственное правило n=P1 psi/|P1 psi|_eta даёт e0. Это не scalar/P1=0 контроль.
 
-Reference128 можно сохранить как C_form tensor r с произвольным нормированным r, без выделения reference-колонки. Это rank1 system/reference state, не faithful128 preparation. Закон observer для произвольного 4x128 P1-блока и физическое порождение этой подготовки не объявляются доказанными. При физическом масштабе e_s=s e нормированная форма равна dt/(s sqrt(Vol_G)); гармоничность и R=0 сохраняются.
+Reference128 можно сохранить как C_form tensor r с произвольным нормированным r, без выделения reference-колонки. Это rank1 system/reference state, не faithful128 preparation. Закон observer для произвольного 4x128 P1-блока и физическое порождение этой подготовки не объявляются доказанными. При физическом масштабе e_s=s e нормированная форма равна dt/(s sqrt(Vol_G)), а native amplitude — e0/(s² sqrt(Vol_G)); гармоничность и R=0 сохраняются.
 
 ## 3. Точная граница для всех spectral functions
 
