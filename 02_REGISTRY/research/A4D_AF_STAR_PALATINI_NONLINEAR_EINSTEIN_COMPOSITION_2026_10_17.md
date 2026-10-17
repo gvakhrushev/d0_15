@@ -188,6 +188,32 @@ One concrete, endogenous-looking DIAGONAL analytic schedule is
 
 The schedule is a **sufficient calculation**, not a claim that physical D0 already selects this clock. Equations (13),(14) are new joint source/Hessian integration of independently owned results, not a new Einstein-looking curvature functional.
 
+### 4.1. A direct finite-level scale test: no hidden \(s^4\) cosmological Euler
+
+The selected original star density is exactly quadratic in the *complete* relative-solder legs, with its based Lorentz plaquette independent of those legs at fixed proper links. Therefore at EVERY finite h, even off shell,
+
+\[
+{\cal P}_{\star,h}(s e,U)=s^2{\cal P}_{\star,h}(e,U)
+\quad(s>0),
+\tag{14a}
+\]
+when the full physical solder/edge fields (including the relative-affine completion) are scaled together. The existing AF controller is then \(E_{n,t}(se,U)=p^2[I+t^2s^2\sum_w f_h(e,U)Q_w]\). On the same complete AF/Book chart, Taylor at the unchanged golden E gives the **exactly sourced** scale expansion
+
+\[
+\boxed{
+S_{n,t}(se,U)-B_n
+=t^2s^2\,2p^5H'_0(p^2)\sum_{w\in{\cal W}_n}p^n f_h(X_w)
+ +O_{\mathcal K}(t^4s^4).
+}
+\tag{14b}
+\]
+
+Differentiating in an allowed fixed-compact scale chart gives
+\(\partial_sS_{n,t}=2t^2s\,2p^5H'_0(p^2)\sum_wp^n f_h+O(t^4s^3)\).
+There is **NO \(s^4\) volume term at \(t=0\)**, because the entire empty-path AF baseline is ONE field-independent \(B_n\), not \(B_n\) times the number of geometric cells. This is an EXACT finite algebraic homogeneity consequence of the same selected star and global AF spectrum; no vacuum counterterm is inserted. The \(t^4s^4\) nonlinear response is real and retained; the theorem uses the controlled \(t\to0\) Einstein-source limit, not arbitrary large s with \(t^2s^2\) outside its positivity radius.
+
+This directly removes the leading extensive-vacuum *mathematical* obstruction of the old one-time positive v8 feedback **for this distinct one-AF star construction**; it does NOT assert a cancellation of the old v8 source in an unspecified physically composed v8+AF experiment.
+
 ## 5. Euler variation ⇒ torsion zero ⇒ all ten nonlinear Einstein equations
 
 The previous result already supplies one **actual** coframe/link source, without introducing an independent freely optimized AF gate. Now vary the limiting functional itself, with compact-supported variations (or boundary terms held fixed). Put \(T^a=de^a+\omega^a{}_b\wedge e^b\).
