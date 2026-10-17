@@ -160,3 +160,48 @@ This is **exactly symmetric**, rank4, and has a two-dimensional kernel. The fixe
 This is substantially closer to GR than ten accessible metric symbols: it restores BOTH wave solutions of the original action's physical two-derivative principal equation. It still does not prove finite-h selfadjoint actuator/clock preparation, nonlinear constrained joint roots, uniform continuum Hessian including all resonances or the full physical Cost−Info = S_star identification. Nor does positive weighted Dirac automatically turn the v8 H+J+R into S_star.
 
 A hostile control is decisive: freezing the original site weight \(u=0\) removes exactly the \(\eta\) row and returns the 5×5 Hessian with ONE surviving physical polarization. No additional arbitrary quantum-geometric measurement or better flat metric sampler can repair that dynamic absence.
+
+
+## 7. NONLINEAR analytic completion, not just individual Fourier ranks: six local Euler fields + initial Einstein constraints + genuine Ward propagate all TEN
+
+The Fourier rank10 theorem §3 detects generic modes, but a standalone Fourier symbol result is not the nonlinear Einstein law. More importantly, an exceptional Fourier mode need NOT invalidate local propagation of the four GR constraints: use the same exact weighted six-function analytic field manifold and the original full *diffeomorphism* Ward identity.
+
+**Precise theorem (conditional only on a real physical SAME action / independent matter and real link stationarity):** Let \(\mathcal U\) be a simply connected analytic Lorentz chart near the above rational flat weighted background. Assume:
+(i) the original positive site-weighted joint-adjoint domain is PHYSICALLY admitted, and its nonlinear own-leg/observer Gram construction provides six independently localized analytic geometric fields \(s\) and five non-diagonal \(O\) (the analytic local IFT from §4); real observer/link/retained variables remain present;
+(ii) one physically selected full action \(S_{\rm actual}\) has an analytic local metric Euler tensor \(E_{\mu\nu}\), and all its independent link, observer, reference, clock, spin/matter Euler equations are satisfied, so the SAME total action's true Ward identity is \(\nabla_\mu E^{\mu\nu}=0\);
+(iii) the six variational equations along the actual weighted family hold pointwise (including induced link/measure/source variations), hence \(E(x)\) annihilates the six-dimensional \(W_x\);
+(iv) on an analytic initial hypersurface \(\Sigma\), the missing FOUR initial Euler constraints vanish; the hypersurface normal is noncharacteristic for the constrained Ward system.
+
+Then the entire ten-component nonlinear metric Euler tensor vanishes in an analytic neighborhood of \(\Sigma\).
+
+**Proof (not an extra Lagrangian):** From the six independent algebraic Euler constraints and a smooth analytic rank6 field \(W_x\), the conormal bundle \(\operatorname{Ann}W_x\) has rank FOUR. Choose an analytic frame \(N_A^{\mu\nu}(x)\), \(A=1,\ldots,4\), and write
+\[
+ E^{\mu\nu}(x)=\sum_{A=1}^4 z_A(x)N_A^{\mu\nu}(x).
+\]
+The FULL on-shell Ward identity becomes the linear homogeneous FIRST-order constraint propagation system
+\[
+ A^\mu_{\nu A}(x)\partial_\mu z_A+B_{\nu A}(x)z_A=0,
+ \qquad A^\mu_{\nu A}=N_A^{\mu}{}_{\nu}
+\tag{CP1}
+\]
+with all covariant Christoffel/source terms in the analytic zero-order \(B(x)\). The normal principal matrix \(A(n)\) is invertible exactly when the 10×10 map consisting of six weighted Euler evaluations and four Ward rows \(E n\) is invertible (§3). For the explicit rational flat data an ACTUAL timelike normal
+\[
+ n=(5,1,1,1),\qquad n^\top\eta n=22>0
+\]
+has the exact determinant
+\[
+ \boxed{\det[\,6W;\,4{\rm Ward}(n)\,]=54400/41\ne0.}
+\tag{CP2}
+\]
+By continuity it remains nonzero throughout a sufficiently small analytic curved neighborhood. Choose analytic local coordinates with \(n\) normal to \(\Sigma\); solving (CP1) for the normal derivatives gives the Cauchy–Kowalevskaya system
+\[
+ \partial_t z=-A(n)^{-1}(A^i\partial_i z+Bz).
+\tag{CP3}
+\]
+Its analytic solution with the four original Einstein constraint data \(z|_{\Sigma}=0\) is UNIQUE, and identically \(z=0\) is such a solution. Therefore \(E=0\) throughout the local analytic neighborhood, not only for generic Fourier modes. This is a standard Cauchy–Kowalevskaya uniqueness consequence, NOT an assumption that four algebraic Bianchi equations alone annihilate E pointwise.
+
+**What is genuinely gained:** the original full nonlinear *field-equation propagation* needs only SIX locally admitted variational equations plus the SAME physical Ward and four INITIAL constraints. No arbitrary nine additional null variations, no scalar curvature oracle and no independent Einstein stress are inserted. The four exceptional Fourier rows do not have to be separately forced to zero by a FALSE algebraic invertibility statement: they are subject to a local propagation theorem after initial data.
+
+**Critical limitations:** Cauchy–Kowalevskaya is an analytic uniqueness theorem, not proof of global smooth hyperbolic well-posedness or existence of D0 solutions. The determinant polynomial can be nonhyperbolic for a given timelike slicing (complex spatial characteristic roots exist), so do NOT promote CP3 to a uniform Sobolev energy estimate or a physical evolution equation without a symmetrizer. Pointwise six local Euler conditions presuppose the genuine full link/observer/matter stationary descent, not only a single measured event or stored amplitude. Physical full site omega law and full Cost−Info selection still need independent forcing. The **original finite-grid** h^-2 raw metric comparator, exact nonflat joint roots and independent matter sources remain as before. The theorem proves an actual nonlinear source-completion mechanism, not those absent native premises.
+
+For the EXISTING canonical star Palatini action, if its full continuum physical limit is the intrinsic EH+matter action (already-owned coframe/Cartan theorem, with its real source and limits), then \(E=G+\Lambda g-\kappa T\). CP1–CP3 imply the *exact nonlinear Einstein equation* in this analytic weighted class whenever its six field equations, the other fields, Ward and four initially vanishing constraints hold. No desired Einstein equation is fed to the history/record instrument; this is a theorem about the consequence of its selected action. Identifying that action with the ORIGINAL complete native Cost−Info and constructing nonempty exact discrete joint-refinement sequences are still the scientifically decisive missing steps.
