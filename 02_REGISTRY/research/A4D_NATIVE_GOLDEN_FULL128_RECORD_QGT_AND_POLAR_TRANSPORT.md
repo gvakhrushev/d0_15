@@ -160,3 +160,52 @@ No old root/kernel/L8 spectrum, broad CAR catalog, Lean or expensive heat certif
 Это ограничивает только указанный *direct one-round singular-value matching*. Составной multi-round/product scheme или настоящая indefinite-metric coframe representation не подпадают под этот bound. Более того, one-round gap НЕ доказывает существование global invertible n-round polar source.
 
 Следовательно, реальный выигрыш новой record geometry следующий: скалярная положительная часть \(H\) и операторный compact transport \(U\) построены из ОДНОГО actual \(C\), а причинно-лоренцева интерпретация должна пройти проверку через уже собственные observer/coframe/link источники. Попытки отождествить U напрямую со всеми six Lorentz generators математически закрыты; это снимает ещё один бесполезный этап поиска.
+
+
+## 9. Последняя алгебраическая сцепка к ИСХОДНОМУ Dirac/Julia: полный native source-map без нового M
+
+Не надо искать действие или новое пространство операторов, чтобы определить dM. У реальной native SELECT уже имеется изометрия
+\[
+\mathsf N_x:\mathcal H\to\mathcal H^{\oplus64},\quad
+(\mathsf N_xv)_\alpha=N_{\alpha,x}^\dagger v,\quad
+\mathsf N^\dagger\mathsf N=I,\quad
+N_{0,x}=A_x=A_x^\dagger=hD_x/16.
+\]
+Пусть \(\iota_0:\mathcal H\to\mathcal H^{\oplus64}\) — fixed inclusion в фактический blank-label slot. Тогда именно исходный отражённый столбец равен
+\[
+\boxed{\mathsf M_x=\iota_0-2\mathsf N_x A_x,\qquad
+d_v\mathsf M=-2[(d_v\mathsf N)A+\mathsf N(d_v A)].}
+\tag{19}
+\]
+При фиксированной сетке \(d_vA=(h/16)d_vD\); при moving mesh/clock надо дифференцировать также h. Действительные Julia roots, observer/coframe и density adjoint jets содержатся в \(d\mathsf N\), не заморожены. Из \(\mathsf N^\dagger\mathsf N=I,\ \iota_0^\dagger\mathsf N=A\) и \(A=A^\dagger\) следует \(\mathsf M^\dagger\mathsf M=I\) точно.
+
+Положим \(Z_v=(d_v\mathsf N)A+\mathsf N(d_v A)\). Подставляя \(d_v\mathsf M=-2Z_v\) в общую полную native QGT (4), имеем
+\[
+\boxed{\mathfrak Q(v,v)
+=4p^2Z_v^\dagger Z_v
+-4p^4(\mathsf M^\dagger Z_v)^\dagger(\mathsf M^\dagger Z_v).}
+\tag{20}
+\]
+Это источник только из уже реальных D,N и их первого движения. Его положительная форма удовлетворяет
+\[
+\boxed{
+4p^3\|Z_v\|_{\rm HS}^2
+\le\operatorname{Tr}\mathfrak Q(v,v)
+\le4p^2\|Z_v\|_{\rm HS}^2,
+\qquad
+\ker\mathfrak Q=\ker[v\mapsto Z_v].
+}
+\tag{21}
+\]
+Kernel относится к реальным field tangents: Q(v,v)=0 iff Z_v=0. Это НЕ proof injectivity всего field-to-D,N отображения. Теперь вместо ещё одного полного Hessian census имеется одна точная линейная native source-карта, которую надо вычислять на девяти null плюс scale coframe-directions из уже существующего A4D_BACKWARD_EINSTEIN_SOURCE_COMPLETION, сохраняя restrictions actual stored metric image и full Lorentz Ward. Инъективность такой карты дала бы различимость всех соответствующих вариаций, но не равенство EH-source без independent same-action/cut law.
+
+Для нулевого homogeneous Fourier мода D=0 и его постоянной coframe-вариации dD=0. Значит A=dA=0, Z_v=0 и Q(v,v)=0. Это выводит уже известный zero-mode blind sector напрямую из native source-map без spectral replay. Остальные occupied momenta/history-settings могут иметь ненулевой источник.
+
+В строгом rational SELECT-class control возьмём N=[A;B], A=diag(3/5,5/13), B=diag(4/5,12/13), offdiagonal dA=[[0,1/7],[1/7,0]], а dB получим из Sylvester linearization d(A²+B²)=0. Тогда exact reflected M имеет
+\[
+M^\top dM=\begin{pmatrix}0&256/3185\\-256/3185&0\end{pmatrix}\ne0,
+\quad
+\operatorname{Tr}\mathfrak Q=
+\frac{2786048-884992\sqrt5}{10144225}>0.
+\]
+16 algebraic checks verify actual reflected derivative, true moving-SELECT isometry, full native two-port QGT, positivity and null-zero control. Этот 2-label fixture проверяет универсальную (19)–(21), НЕ physical 64-label Walsh/CAR rank10 либо arbitrary gate admissibility.
