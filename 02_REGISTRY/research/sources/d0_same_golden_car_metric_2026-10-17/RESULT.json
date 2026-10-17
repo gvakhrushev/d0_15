@@ -14,8 +14,8 @@
     "general_twisting_observer_not_replaced_by_nonintegrable_ADM_leaf",
     "one_record_arbitrary_observer_full_first_source"
   ],
-  "check_labels_sha256": "a54138cf4dbbb10c1bda3bdc922d5904213c4221cfed0830398bea01a92ce5fe",
-  "checks_count": 1517,
+  "check_labels_sha256": "f39238771ebdc75669a691ad3f313ca3257442a50fb4fe3d846f917fc7907c8e",
+  "checks_count": 1525,
   "coframe_covariant_metric": "q_P=p^3/16 Tr(dU^T dU)=e^T h_n e for U_mu=p^(-3/2) gamma(L(n)e_mu)",
   "curvature_components": "all 20 algebraic 4D Riemann directions, smooth same-operator 2-jet Gram right inverse",
   "example_R_G": "164590717/7938000",
@@ -28,6 +28,7 @@
   "golden_projector_ambient_curvature": "2 + sqrt(5)",
   "golden_total_two_port_dimension": 32,
   "inverse_frobenius_square": "22",
+  "local_exact_rational_CAR_controller": "Cayley(K)=(I-K/2)^(-1)(I+K/2) shares all first+second jets with exp(K), fixed Golden branches; operational gate admission unproved",
   "majorant_bound_GramR_entry": "7340/1323",
   "native_complete_car_dimension": 16,
   "normal_count": 10,
