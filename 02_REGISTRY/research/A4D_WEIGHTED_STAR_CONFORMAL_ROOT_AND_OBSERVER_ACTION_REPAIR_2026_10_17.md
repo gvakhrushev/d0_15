@@ -157,3 +157,46 @@ whereas the EXACT target Einstein action is \(6\pi u^2\). Thus the ordinary norm
 This consumes, rather than rediscovering, the already-owned exact scalar-event-local/projective gain rigidity and observer-Born entropy-rank-birth obstruction. It DISQUALIFIES a very natural but FALSE physical selection of (5) as the direct full action. A coherent central full-record interference and its single analytic terminal AF price can avoid rank-birth logs mathematically (the existing five-word construction holds \(z_*>0\)), but the original one-way old-reference actuation, **full cost of the controller**, and physical selection of precisely that complete-price semantics remain open. Do not treat signed \(2P_c-P_o\) as automatically equal to observed Cost−Info.
 
 **Minimal actual physical target:** one SAME native history/clock/reference instrument must supply the *analytic* first-source \(-12a''\) on this conformal witness while retaining all failed/exited words and full controller costs. Test this BEFORE new curvature or rank certificates. If it cannot, the canonical observer-preserving bare star plus locally projective branch pricing cannot yield the complete Lorentz Einstein vacuum dynamics, even though its weighted metric domain contains all near-flat Lorentz geometries and satisfies conditional six-plus-Ward source completeness.
+
+
+## 8. Much stronger ORIGINAL NATIVE finite-h gate: all 16 constant CAR states are EXACTLY invisible to the full128 tape on nonflat weighted conformal geometry
+
+Unlike the constrained smooth continuum stationary star (§2), this theorem is **literal finite-mesh operator algebra in the old D0 golden/Julia instrument** and needs no Einstein source, Born-branch chosen by hand or thermodynamic limit.
+
+At ANY finite periodic four-Role lattice, take the ACTUAL original fixed-coframe stored Dirac D_0, with complete \(\Lambda^*\mathbb R^4\) (all16 grades), proper links \(A_{xy}=I\) and one fixed positive observer form \(h_n\). For any sitewise positive real \(s_x\), set every ORIGINAL stored leg \(v_r(x)=s_x v_r^{(0)}\), and Hilbert node weight \(\omega_x=c/s_x\) with any positive global normalizer c. Because creation and contraction are linear in v, and the actual stored shift/adjoint law uses THE SAME SITE v on both forward/backward terms, we have the EXACT matrix identity
+\[
+\boxed{D_s=M_s D_0,\qquad W_s=cM_{1/s}\otimes h_n,\qquad
+W_sD_s=c(\mathbf1\otimes h_n)D_0=D_s^\dagger W_s.}
+\tag{12}
+\]
+This is true for arbitrarily VARIABLE \(s_x\); D_s need not commute with M_s. The whitened counting representative is
+\[
+\widehat D_s=M_{\sqrt{s}}\,\widehat D_0\,M_{\sqrt{s}},
+\tag{13}
+\]
+not \(M_s D_0\) with a forgotten adjoint. The positive weight is not equated with volume a^4. This is the exact finite version of the previously owned weighted source laws, with true endpoint factor \(\sqrt{\omega_x/\omega_y}\).
+
+Since \(M_s\) is invertible, \(\ker D_s=\ker D_0\). In the original connected periodic four-role cochain operator, all 16 spatially CONSTANT CAR-basis sections \(e_S\) satisfy \((T_r-I)e_S=(T_r^{-1}-I)e_S=0\), so \(D_s e_S=0\) **for every site scale**, with true 16-dimensional kernel when the old constant-only kernel theorem applies. Consequently \(\Delta_s=D_s^2\) annihilates them, with the full original measure/adjoint. The real native blank SELECT is
+\[
+A=hD_s/16,\quad N_0=A,\quad
+M_0=I-2A^2,\quad M_{\alpha\ne0}=-2N_\alpha^\dagger A.
+\]
+For EVERY such constant-grade input e_S:
+\[
+M_0e_S=e_S,\quad M_{\alpha\ne0}e_S=0,\quad
+K_{0,0}e_S=(p+p^2)e_S=e_S,\quad
+K_{1,0}e_S=K_{q,\alpha\ne0}e_S=0.
+\tag{14}
+\]
+This uses the COMPLETE actual 128 output Kraus (both golden ports, 64 labels; reference128 may be tensored as spectator), not SELECT alone or a selected measurement. By induction the **whole n-round marked tape** has exactly one outcome \(\omega_{\rm allblank}\) with probability1 for EVERY n and EVERY positive site scale \(s_x\); all new mark/Fisher sources vanish on preparations supported entirely on this invariant 16-dimensional kernel.
+
+Thus the FULL original native pointer process genuinely has a source-blind state sector across NONCONSTANT conformal geometries with nonzero Lorentz Einstein tensor. No finite word length, additional old mark inspection, all-outcomes restoration or better control of the QGT can make the empty tape distinguish those geometries **on this preparation sector**. This is a strict finite-input obstruction to the naive UNIVERSAL identification
+\[
+d(\mathrm{Cost}-\mathrm{Info})_{\rm full\ literal\ pointer,\ fixed\ prepared\ kernel}
+\equiv c\,dS_{\rm EH}
+\]
+for all prepared states and geometries when Cost−Info is any fixed code/locally projective complete-pointer functional. It is NOT an obstruction to a different physically selected preparation, a retained old-reference comparison with its true upstream preparation cost, or spectral full-carrier trace price H+J+R. In particular the original full128 v8 faithful first-shell preparation uses NONZERO Fourier modes and is not claimed to lie in this kernel. Nor are field-dependent costs of preparing the kernel state included in the blank tape score; if they are part of the physical action, they must be derived and differentiated, not silently ignored.
+
+**Independent whole-carrier exact finite witness:** on L=2 periodic 4D, site dimension16 and CAR grades16 (total256), one nonconstant rational profile with nine different positive \(s_x\) gives D_s=M_sD0 and EXACT W_sD_s=D_s^T W_s; all sixteen site-constant input columns are annihilated by D_s and D_s². The 128-output Kraus blank identity follows with no SELECT gate approximation. Local independent 23 guarded SymPy checks PASS, original \(\operatorname{Tr}D_0^2=8192\); see check_weighted_native_blank_kernel.py in the adjacent source packet. This validates original fully finite operators, not a claim of an independently accepted physical vacuum preparation or finite-h constrained star Euler root.
+
+**Physical selection question is now unambiguous:** the actual D0 gravitational action must (i) identify its ADM/coframe/observer-sensitive preparation and full cost, or (ii) use an admitted comparison/history operation beyond this source-blind subspace, and MUST pass the existing exact conformal EH first-source \(-12a''\) with volume/weight properly distinguished. This is the source-law gate before root estimates, not a call for a fourth curvature detector.
