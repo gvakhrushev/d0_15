@@ -139,6 +139,35 @@ A_{\mathrm{AF},n}(t,f)-B_n
 
 The \(O_{C^1}(t^4)\) is uniform at bounded f and df, and the n-limit is after fixing sufficiently small t; the error is NOT silently promoted to zero at fixed t. No independent geometric integration *weight* has been inserted. Crucially, the **zeroth-order vacuum part has identically ZERO metric/source jet for every finite n**, unlike the unweighted v8 feedback's O(s⁴) volume term. This is a genuine alternative native-priced **operator family**, not an illicit assertion that the old v8 H+J+R equals (7).
 
+### 3.1. Quantitative simultaneous curvature-source and refinement limit
+
+The two uniform C¹ estimates in §§2–3 compose without requiring a staged limit. For a bounded smooth family f and its genuine field derivatives, put
+
+\[
+{\mathscr E}_{n,t}[f]=t^{-2}(A_{\mathrm{AF},n}(t,f)-B_n).
+\]
+
+Equations (4) and (9), including the moving f-source but a fixed **address-coordinate** golden grammar, give the explicit dual C¹-chart bound
+
+\[
+\boxed{\|d{\mathscr E}_{n,t}
+ -\kappa_{\rm AF}a_\infty\,d\int f(x)\,d^4x\|
+ \le C\bigl(t^2+p^{\lfloor n/16\rfloor}\bigr).}
+\tag{10}
+\]
+
+The same estimate holds for the value, and also when f includes a **physically derived moving geometric Jacobian** and its field source, provided its pulled-back smooth norm is uniformly bounded. Every diagonal choice \(t_n\to0,\ n\to\infty\) closes this *smooth source* bridge. To make the pure sampling remainder \(o(h^2)\), for example, it suffices to take \(n_h \ge 16(2+\gamma)\log_\varphi(1/h)\), \(\gamma>0\), up to the harmless floor factor; the tube remainder separately requires \(t_h^2=o(h^2)\). This is **not** the original unweighted raw h^-2 ten-row norm: that transfer requires a proved map from smooth source duals to the full raw metric row l1 norm, including all local high-frequency directions. No missing norm factor is silently declared one.
+
+When the already-owned normal-volume and two-sided spatial record operator actually supplies a non-fitted f with
+\(\int f\,dx=\int R_L\,dV_L\) modulo controlled boundary, (10) reads
+
+\[
+d{\mathscr E}_{n,t}\longrightarrow
+\kappa_{\rm AF}a_\infty\,dS_{\rm EH}[g_L]
+\]
+
+on **all ten actual admissible ADM chart directions**. This is the precise consuming mathematical conclusion; the physical field→AF-gate admission, independent matter and exact stationary roots remain distinct.
+
 ## 4. Why this is a DIRECT Einstein consumer, not a generic scalar coincidence
 
 The owner A4D_RECORD_NORMAL_VOLUME_SOURCE.md already gives a full 4D normal-Parseval shape-family whose \( \sum_A e_2(A_A)=R_G/2 \) (with a finite exact Jacobian and fourth-order remainder). Its source is an actual positive projector-record geometric invariant, NOT an oracle taking an arbitrary Einstein tensor as input. The owner A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md already gives the moving native four-coordinate map and the true Jacobian for its pushforward to a physical chart.
