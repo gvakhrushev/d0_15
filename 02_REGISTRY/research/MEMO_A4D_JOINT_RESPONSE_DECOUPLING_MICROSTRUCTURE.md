@@ -1,5 +1,28 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 17 October 2026 — whole-source synthesis beyond vacuum equivalence
+
+The [full AF source normal form](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
+consumes the actual AF/scene source at `360b28b6`, exact logdet unfolding
+and the owned quadratic density/coframe map. It proves an off-shell action
+identity and a bijection of complete stationary sets on the declared
+positive domain, without imposing f=0, a fixed scene spectrum or a wave
+ansatz. A geometry-dependent scene is retained through its actual graph
+constraint, with every original source. No global joint root is inferred
+from this bijection.
+
+An exact control shows why the old radial row transport cannot by itself
+define an independent matter action: a transported exact one-form can have
+nonzero curl. The new full-action construction resolves that integrability
+problem. Its graph source can nevertheless exactly compensate the separated
+star source, and its Einstein-frame metric can differ from the operational
+metric by a moving scalar even as t tends to zero. Physical GR is therefore
+not closed by the normal form. For a full leading price, the next reduced
+equation acts on its actual stationary manifold; full metric lifts there
+must be established. Native execution/complete Cost-Info, physical reading,
+classical selection, full joint recovery and the original fixed-g/tau/raw
+terminal remain OPEN. The previous positive local lattice family is retained.
+
 ## 17 October 2026 — exact full local lattice vacuum recovery for the AF-star experiment
 
 [New full local stationary-family theorem](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)

@@ -23,6 +23,16 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-17
 
+The [whole-source normal form](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
+now joins the full AF/scene feedback to the existing exact logdet and
+density/coframe owners. It preserves all joint stationary equations away
+from vacuum, including the graph source of a geometry-dependent scene.
+It does not identify the transformed metric with the operational metric or
+turn its retained constraint source into independently derived physical
+matter. An exact source-compensation control rejects that shortcut. Use
+its sections 6–7 to consume the full leading-price stationary manifold and
+its metric lifts; another local vacuum family does not settle this step.
+
 Read the [foundations-to-GR synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 before another candidate calculation. It consumes the actual foundation
 owners and the positive [AF-star nonlinear Einstein composition](A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md),

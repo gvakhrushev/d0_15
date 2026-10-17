@@ -10,6 +10,15 @@ Its [full local lattice recovery consumer](A4D_AF_STAR_FULL_LATTICE_STATIONARY_F
 now gives exact nonflat vacuum roots in every interior coframe/link direction,
 with fixed boundary data and actual golden weights; physical admission remains open.
 
+The next [full-source synthesis](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
+consumes the [complete AF/scene feedback](sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md)
+and exact logdet/density owners. It gives an off-shell action identity and
+complete stationary-set bijection, retaining a geometry-dependent scene
+through its actual constraint source. The non-vacuum source is preserved;
+the new metric and residual stress are not automatically physical D0/GR.
+The stationary manifold of the complete leading price is the next source
+consumer, not another restricted vacuum root.
+
 Rules:
 
 - A research packet is not a substitute for Lean, a finite certificate, a registered external theorem, or an empirical passport.

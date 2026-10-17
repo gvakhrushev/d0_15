@@ -12,6 +12,30 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### Whole-source synthesis after the local vacuum result
+
+The user's next request is to try an end-to-end breakthrough, rather than
+another local vacuum family. At `360b28b6`, compose the exact full AF/scene
+feedback source, the owned logdet variational unfolding and the quadratic
+star density/coframe transport. Target: an all-field, off-shell finite
+action identity and a bijection of complete stationary sets, including a
+geometry-dependent scene and all its constraint sources. The old radial
+row transform alone must not be assumed to produce a variational matter
+source. Input owners: `sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md`,
+`A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md`,
+`A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md` and the full-lattice owner below.
+Write paths: `A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md`,
+`sources/d0_af_full_source_normal_form_2026-10-17/`, and existing shared
+consumers. Carrier: all independent coframes/links and original retained
+fields; auxiliary matrices are an exact mathematical representation, not
+new physical preparation. Preserve actual positive weights, full scene
+trace, all source terms and the original raw terminal. Consumer: decide
+whether an Einstein-form rewrite supplies the missing physical source
+theorem, or identify the exact surviving stress/readout obligation.
+Smallest decisive check: noncommuting matrix/graph-source identities,
+an explicit nonintegrable row-transport control, and a same-price
+source-compensation control. No old root, spectrum or Lean replay.
+
 ### Full finite stationary-family continuation
 
 The next user request supplies the exact local-radial AF/star reduction.
