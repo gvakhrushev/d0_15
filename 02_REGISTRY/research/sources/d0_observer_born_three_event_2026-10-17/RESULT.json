@@ -377,6 +377,7 @@
     "Shannon_has_no_finite_second_variation_at_zero",
     "centered_native_code_finite_exact_quadratic",
     "golden_cost3_five_full_histories_normalize",
+    "five_word_controller_literal_code_cost_field_independent",
     "golden_cost3_3_equal_branch_2_pending",
     "central_history_reference_overlap_nonzero",
     "central_history_flat_parameter_inside_existing_AF_interval",
@@ -438,7 +439,7 @@
     "coherent_effect_not_invariant_under_old_low_bit_translation",
     "Shannon_source_not_born_signed_score"
   ],
-  "checks_count": 354,
+  "checks_count": 355,
   "entropy_negative_control": {
     "Shannon_source": 0.0015379374103409223,
     "same": false,
