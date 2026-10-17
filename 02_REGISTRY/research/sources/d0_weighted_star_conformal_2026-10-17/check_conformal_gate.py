@@ -111,7 +111,7 @@ sx,sy=S.symbols("s_x s_y",positive=True)
 for r in range(4):
     v=eta*S.eye(4)[:,r]
     chk(sy*v==(sy/sx)*sx*v,"weighted actual selfadjoint own-leg condition")
-chk((sx/sy)**4!=sy/sx,"naive full-volume weight a^4 is not the native Hilbert-site weight for generic scale")
+chk((sy/sx)**4!=sy/sx,"naive full-volume weight a^4 is not the native Hilbert-site weight for generic scale")
 
 print(json.dumps({
     "status":"PASS","exact_controls":total,
