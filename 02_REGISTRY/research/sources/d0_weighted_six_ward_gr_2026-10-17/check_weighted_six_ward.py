@@ -146,8 +146,13 @@ Eold=S.Matrix.hstack(*[packet(Einstein(H,kn)) for H in old])
 Enew=S.Matrix.hstack(*[packet(Einstein(H,kn)) for H in weighted])
 check(Eold.rank()==4 and len(Eold.nullspace())==1,'old admitted one vacuum polarization')
 check(Enew.rank()==4 and len(Enew.nullspace())==2,'NEW six weighted directions carry TWO vacuum polarizations')
-# A true SAME-action finite-star scalar Euler is already sourced, without adding action:
-s=symbols=None  # leave no standing unexamined simulation
+# Exact finite STAR insertion scales quadratically with SAME original on-site legs.
+# Test on a nondegenerate simple bivector, keeping the original connection fixed.
+u=S.Matrix([1,2,3,4]); v=S.Matrix([4,2,1,3]); tscale=S.symbols('tscale')
+wedge=lambda a,b:S.Matrix([a[i]*b[j]-a[j]*b[i] for i,j in pairs])
+same(wedge(tscale*u,tscale*v),tscale**2*wedge(u,v),'finite native bivector quadratic scale')
+check(wedge(u,v)!=S.zeros(6,1),'nontrivial star volume component')
+same(S.diff(tscale**2,tscale).subs(tscale,1),2,'finite star logarithmic scale Euler row')
 print(json.dumps({
     'status':'PASS','exact_controls':checks,
     'original_stored_tangent':5,'weighted_native_tangent':6,
