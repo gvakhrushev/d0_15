@@ -97,9 +97,29 @@ for chi in chars[1:]:
 for item in results:
     check(s.Rational(7,8)<=1-s.Rational(item["W"])/128,
           "uniform positive reflection-blank margin")
+
+# All original rounds: the outgoing label may be rotated BEFORE retention.
+# The reduced native matter channel still equals Phi_h because a unitary on
+# the fresh output does not change its partial trace. On homogeneous Fourier
+# blocks every Kraus preserves momentum, block trace is constant, and each
+# contrast is scalar in the whole CAR16 block. Thus E[T_n]=n E[Z] exactly.
+hl=s.symbols("hl",positive=True)
+wh=4*s.sin(s.pi*hl)**2
+fulljet=-p**2*nu*wh/hl**2*(1-nu**2*wh/64)
+same(s.limit(fulljet,hl,0),-4*s.pi**2*p**2*nu,
+     "nonzero original native n_h=128/h² clock source limit")
+clock_values=[]
+for L in (4,8,16,32,64):
+    value=s.simplify(fulljet.subs(hl,s.Rational(1,L)))
+    check(float(s.N(value))<0,"finite full-tape signed source negative")
+    clock_values.append([L,float(s.N(value))])
+same(s.simplify(fulljet.subs(hl,s.Rational(1,4))),s.simplify(2048*source),
+     "exact 2048-round original clock result at L=4")
 out={"status":"PASS","exact_checks":tests,"golden_reference":"p=(sqrt5-1)/2",
      "momenta":results,"faithful_8shell_anisotropic_source_exact":str(s.simplify(source)),
      "faithful_8shell_anisotropic_source_float":float(source),
      "fresh_output_readout_admitted":False,"whole_Cost_minus_Info_selected":False,
-     "original_Einstein_raw_terminal_closed":False}
+     "original_Einstein_raw_terminal_closed":False,
+     "full_original_clock_source_limit":str(s.N(-4*s.pi**2*p**2*nu,16)),
+     "full_original_clock_levels":clock_values}
 print(json.dumps(out,sort_keys=True))
