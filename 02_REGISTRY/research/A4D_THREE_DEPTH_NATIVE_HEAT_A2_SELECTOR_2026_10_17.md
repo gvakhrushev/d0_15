@@ -110,3 +110,70 @@ $$
 Связанная native relative-clock схема: A4D_NATIVE_RELATIVE_HISTORY_CLOCK_COCYCLE_2026_10_17.md. Two possible routes (relative path KL vs three-depth heat selector) НЕ смешиваются в новую составную action до физического выборщика.
 
 **Решающий next owner consumer**: на actual full16 coframe/operator проверить joint t_h,h uniform C1 source estimate для 3 nested blank powers на одном curved test при сохранении all connection and prepared fields. Если проходит — использовать его только как geometric target extractor при поиске физически выбранного native action. Не переписывать v8 fixed-beta result как этот новый мультичасовой объект.
+
+
+## 5. Усиление: literal B_h^{2n} имеет joint small-time C1 selector на flat constant-Gram carrier
+
+Это уже не эвристика: следующий **ограниченный аналитический вывод** закрывает joint time/mesh estimate для конкретного, существующего homogeneous Fourier symbol (но не для variable curved links).
+
+Пусть h=1/L, real symmetric SPD G лежит в fixed compact subset of SPD4, v=m²≥0 ограничен. На centered Brillouin k∈[-L/2,L/2)^4 положим
+
+$$
+z_{h,r}(k)=L(e^{2\pi i k_r/L}-1),\qquad
+\lambda_h(k)=z_h(k)^*Gz_h(k)+v.
+$$
+
+Это тот же fixed homogeneous native scalar spectral form, с optional constant zeroth-order test v (не объявляется физическим mass term); для v=0 он совпадает с actual stored spectral symbol. Его Euclidean continuum comparator есть \lambda_0(k)=(2\pi k)^TG(2\pi k)+v. На fixed compact SPD chart и для всех k в Brillouin:
+
+$$
+c(|k|^2+v)\le\lambda_h(k),\lambda_0(k)\le C(|k|^2+v),
+\quad |\lambda_h-\lambda_0|+\|\partial_G(\lambda_h-\lambda_0)\|
+\le C h^2|k|^4.\tag{H7}
+$$
+
+Условие REAL SYMMETRIC G существенно: O(h|k|³) cross term между imaginary leading symbol и real O(h) correction сокращается при contraction z*Gz. Для произвольного complex nonsymmetric principal coefficient H7 автоматически не следует.
+
+Возьмём epsilon_h=p²h²/64 и тот же literal native B_h=I−epsilon_h Delta_h/2, причем u_h=epsilon_h lambda_h/2≤u_*<1 (как в actual positive Julia window). При t=n epsilon_h, n∈N:
+
+$$
+K_h^B(t;G,v)=\sum_{k\in Brillouin}\left(1-\frac{\varepsilon_h\lambda_h(k)}2\right)^{2n}.
+$$
+
+Это буквально BLANK-произведение одного и того же B_h, без подмены на exp. Для каждого eigenvalue log inequality
+
+$$
+0\le -\log(1-u)-u\le\frac{u^2}{2(1-u_*)}
+$$
+
+даёт
+
+$$
+0\le e^{-t\lambda_h}-
+\left(1-\frac{\varepsilon_h\lambda_h}{2}\right)^{2n}
+\le C\varepsilon_h t\,\lambda_h^2 e^{-t\lambda_h}.\tag{H8}
+$$
+
+Gaussian lattice moment in four dimensions: sum_k |k|^{2q} e^{-ct|k|²}≤C_q t^{-2-q}, 0<t≤1. Поэтому суммирование H8 даёт C epsilon_h t^{-3}. Из H7 и mean-value theorem:
+
+$$
+\left|\sum_{Brill}e^{-t\lambda_h}-\sum_{\mathbb Z^4}e^{-t\lambda_0}\right|
+\le C h^2t^{-3}+C t^{-2}e^{-c t/h^2}.\tag{H9}
+$$
+
+Те же оценки верны для FIRST derivatives по real G,v на fixed compact chart: прямые derivative corrections O(h²|k|⁴), product-rule terms bound O(t²h² sum |k|⁶ e^{-ct|k|²})=O(h² t^{-3}), а derivative of H8 retains the same scaling. Таким образом при eps_h/t→0 и t/h²→∞:
+
+$$
+\|K_h^B(t)-K_{\mathrm{cont}}(t)\|_{C^1(G,v)}
+\le C\big(h^2t^{-3}+t^{-2}e^{-c t/h^2}\big).\tag{H10}
+$$
+
+**Количественный итог для именно трех NESTED depths n,2n,4n.** Подставляя H10 в H4, с exact same integer t,2t,4t, получаем на flat homogeneous scalar/full16-multiplicity carrier
+
+$$
+\boxed{\|\mathscr A^B_{2,h}(t)-A_2(G,v)\|_{C^1}
+\le C\left(t^2+\frac{h^2}{t^2}+\frac{e^{-c t/h^2}}{t}\right).}\tag{H11}
+$$
+
+Здесь A2(G,v)=−v A0(G), A0(G)=(det G)^{-1/2} times fixed flat-volume/multiplicity. Для v=0 скалярная кривизна flat G равна0 и A2=0, однако C1 source по G также контролируется H11. Выбрав n_h=round(h^{1/2}/epsilon_h), t_h=n_h epsilon_h≈h^{1/2}, три глубины n_h,2n_h,4n_h **ровно согласованы** и H11 даёт O(h) C1 error на этой declared class. В частности, прежняя §2 «ожидаемая достаточная шкала t≫h» здесь превращается в доказанное СУФФИЦИЕНТНОЕ правило (для homogeneous real SPD symbol only).
+
+**Не переносить H11 на curved coframe:** spatial links/variable metric, local coefficient A2(x), tensor16 connection directions, noncommuting matter and the true reference-preparation source require new variable-coefficient joint small-time estimates. И даже на flat class H11 вычисляет mathematical diagnostic, не доказывает физическую selection трех остановок или равенство текущей v8 fixed-beta цене.
