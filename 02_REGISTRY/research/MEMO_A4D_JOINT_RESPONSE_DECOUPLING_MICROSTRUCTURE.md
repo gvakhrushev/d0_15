@@ -6265,3 +6265,32 @@ for a primitive event. Physical signed-cycle valuation, cyclic-origin
 future-test equivalence, the scene-to-v8 map and full Cost-Info selection
 remain open. This consumes the algebra while leaving the physical
 morphism with the coordinated owner.
+
+## Whole-lattice coherent entropy and code values — 17 October 2026
+
+The [whole-lattice entropy/code owner](A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md)
+now removes the uniform-integrability premise for declared moment
+classes of actual preparations. The exact global Hermitian Julia Kraus
+formula gives a trace-free double-commutator defect at every frequency.
+Finite-grid Fourier composition, with its controlled alias remainders,
+constructs periodic first- and third-order analytic correctors. They
+prove uniform Lyapunov estimates for I+Delta_h and its square on the
+entire Brillouin cube, retaining all 16 forms, proper links, moving
+observer/density and reference 128. No physical energy, action, state
+or source is replaced.
+
+A uniform initial first moment therefore gives coherent-record entropy
+value convergence for actual pure system/reference preparations on the
+full spatial carrier. Uniform second moment additionally controls the
+Rayleigh tails, actual total exit count and original port-code limit
+n+p integral Tr Delta rho(t)dt+o(1). The value of every supplied fixed
+per-round code has the analogous limit, with its blank baseline kept
+explicit. A full faithful reference-128 UV preparation shows why mere
+trace convergence would miss a finite entropy defect.
+
+These are actual process/value results rather than a new selected
+physical price. Their source consumer still needs field/preparation/
+clock derivative convergence and rank-birth logarithmic control, plus
+the native full-history/ensemble/workspace and test/Info laws. Einstein
+source equality and the original fixed nonconstant g, independent tau,
+all 10 packed raw h^-2/#216 terminal remain OPEN.

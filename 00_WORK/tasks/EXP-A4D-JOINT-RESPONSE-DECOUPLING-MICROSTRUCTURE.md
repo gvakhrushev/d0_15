@@ -627,6 +627,24 @@ trace class. No grid/rank/spectrum census or old replay. Entropy/source
 convergence, native admission, physical time, code/Info and the original
 h^-2 terminal remain separate obligations.
 
+## Whole-lattice entropy and code continuation — 17 October 2026
+
+At 23c82df4, consume the proved variable-field marginal process rather
+than repeat its convergence test. Construct uniform whole-lattice
+Lyapunov estimates for first and second energy moments using the exact
+global Hermitian Julia Kraus identity and a periodic-symbol corrector.
+Prove the finite-grid Fourier calculus/remainders, including aliasing
+and the low-frequency cutoff, without discarding Nyquist modes. Use
+the first moment to obtain full spatial coherent-entropy convergence;
+use the second to control actual port cost, exit counts and any supplied
+fixed per-round code. No Info/prior is selected physically. Preserve a
+full-reference preparation countercontrol to the false entropy claim
+from trace convergence alone. Owner A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md;
+sole new helper sources/d0_variable_record_entropy_2026-10-17/check_uniform_energy_inputs.py.
+Integrator owns common consumers. Decisive bounded inputs are the
+global Hermitian Kraus and double-commutator identities, not a spectrum
+or rank census. Field-source/clock/admission and original terminal remain open.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

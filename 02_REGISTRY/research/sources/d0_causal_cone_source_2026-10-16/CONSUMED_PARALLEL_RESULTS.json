@@ -487,5 +487,23 @@
       "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/VALIDATION.json": "b60f9ef7570ef33a5825da430e92a592bfa5c81bd558099917ee2374c7ea7daf",
       "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/check_variable_channel.py": "e88a8f9be6cad9b6cfdca5c6a928861b7ec151589f997e5911aabae13b1d205f"
     }
+  },
+  "variable_record_entropy_code_checkpoint": {
+    "base": "23c82df4d4ac8b9b1761fc2c79f1177fe195bd54",
+    "conclusion": "Whole-lattice uniform first/second moment bounds; first-energy coherent-entropy value limit and second-energy actual exit/port/supplied fixed per-round-code limits.",
+    "consumer": "Full spatial coherent information and actual code values in complete native price/source argument; current route and primary synthesis.",
+    "mechanism": "Exact global Hermitian Julia Kraus double commutator, uniform finite-grid Fourier calculus with aliases, periodic symbol correction and true energy-form tails.",
+    "new_bounded_exact_checks": 103,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Field/preparation/clock derivatives, rank-birth logarithmic jets, pointer entropy, actual history-based/ensemble/workspace price, physical code/Info/admission, Einstein-source equality and original fixed-g/tau all-10 raw h^-2/#216 terminal.",
+    "scope": "Uniformly smooth actual full16 spatial chart and reference128; explicit initial first/second moment hypotheses, without selecting physical admission or Info.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md": "e934b157a7bb34c11a9ad377b32bb8838a6e342da31ab716bf0f14c4c913787f",
+      "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/README.md": "78eccd09278bce500d8b3954e2ad6addbae0b02563288d0402b8b26b46a005e7",
+      "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/RESULTS.json": "9c25eb9a26f526c098170b33896b9643b19dd38153c4b439ae6c738bf8d453f6",
+      "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/VALIDATION.json": "9830c60b0d0d2df2adcff837986b84e9dbc1ed6c8a1c06f3c4fb83cb4ee5abbb",
+      "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/check_uniform_energy_inputs.py": "7dab23195b5df5da7d101dffe3404d88de692585c92b80ac2b413f79d6a570b8"
+    }
   }
 }

@@ -304,12 +304,25 @@ layers compose on a common waiting-time cube. Conservation controls the
 remaining positive tails, completing the full process limit. This is a
 proof beyond core-generator consistency, with no h^-2 or source rate.
 
+The [whole-lattice entropy/code owner](A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md)
+now proves the missing discrete moment estimates. The exact global
+Hermitian Julia Kraus representation makes the high-frequency defect
+a double commutator. A periodic corrector and finite-grid Fourier
+calculus control the complete Brillouin cube, including aliasing and
+Nyquist modes. Uniform initial first energy then gives coherent-record
+entropy convergence on the full spatial carrier. A second initial
+moment gives the actual total-exit and original port-cost limits, and
+the value of any supplied fixed per-round code. The divergent blank
+baseline remains explicit. A full-reference UV control shows why
+trace-norm convergence alone would not suffice. These are moment-class
+value theorems, not native admission, clock or field-source theorems.
+
 For physical selection, consume the existing operational-gain theorem
 when G0b supplies the feasible effect algebra and the actual/maximal-gain
 contract. Its central-reference/all-POVM premises are not consequences
-of retaining coherent records. Complete code cost, inhomogeneous entropy
-and source convergence, rank births and the original GR/source terminal
-remain separate.
+of retaining coherent records. Full-history/workspace/ensemble price,
+inhomogeneous field-source convergence, rank-birth jets and the original
+GR/source terminal remain separate.
 
 The parallel [native-cycle morphism packet](sources/d0_native_cycle_morphism_2026-10-17/RESULT_RU.md)
 also removes a computational detour: finite Newton identities and signed

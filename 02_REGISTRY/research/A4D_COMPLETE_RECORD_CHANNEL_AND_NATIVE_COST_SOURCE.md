@@ -845,3 +845,28 @@ the finite 2048-dimensional compression to a growing UV carrier or
 grant entropy differentiability at a rank birth. These and the physical
 code/Info/admission and Einstein-source equality remain distinct
 consumers, with the original fixed-g/tau raw h^-2 terminal still open.
+
+## 15. Full spatial entropy and known code values have controlled limits
+
+The [whole-lattice entropy/code theorem](A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md)
+proves uniform first- and second-moment bounds for the exact variable
+channel, using its global Hermitian Julia Kraus representation and a
+periodic analytic corrector. A finite-grid Fourier proof retains aliases
+and every Nyquist mode. No physical operator or action is modified.
+
+Uniform first initial energy now suffices for convergence of the full
+system/reference entropy, hence coherent-record entropy for the actual
+pure normalized preparations. This uses the whole spatial carrier,
+all 16 forms and reference 128; the finite 2048 compression is not
+extrapolated to the UV. A faithful full-reference preparation control
+shows that trace-norm convergence alone would leave a nonzero entropy
+defect if the energy bound were omitted.
+
+Uniform second initial energy moment additionally gives
+E N_exit -> integral Tr Delta rho(t)dt and
+E Cost_port=n+p integral Tr Delta rho(t)dt+o(1).
+The value of any supplied fixed per-round code also converges after
+displaying its actual n-times-blank baseline. This neither chooses that
+code nor subtracts its baseline from the physical action. History-based
+codes, ensemble/workspace prices, pointer entropy, field/clock/rank-birth
+sources and the original Einstein/refinement terminal remain separate.
