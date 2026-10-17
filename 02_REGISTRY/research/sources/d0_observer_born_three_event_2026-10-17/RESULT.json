@@ -45,6 +45,43 @@
       "trace_C": "0"
     }
   },
+  "central_five_word": {
+    "cases": {
+      "generic": {
+        "AF_z": "234998349469/40642560 - 462385035127*sqrt(5)/178827264",
+        "AF_z_numeric": 0.38230938320398167,
+        "AF_z_prime": "-659649/671840 + 1298019*sqrt(5)/2956096",
+        "coherent_full_overlap": "8050603459/894136320 - 7156467139*sqrt(5)/1788272640"
+      },
+      "isotropic": {
+        "AF_z": "576927/100 - 103197*sqrt(5)/40",
+        "AF_z_numeric": 0.38232314885506746,
+        "AF_z_prime": "-3503/1260 + 6893*sqrt(5)/5544",
+        "coherent_full_overlap": "1797/200 - 1597*sqrt(5)/400"
+      },
+      "pure_shear": {
+        "AF_z": "2265905/392 - 2026553*sqrt(5)/784",
+        "AF_z_numeric": 0.3823112166692492,
+        "AF_z_prime": "0",
+        "coherent_full_overlap": "7057/784 - 6273*sqrt(5)/1568"
+      },
+      "twist": {
+        "AF_z": "832589/144 - 744641*sqrt(5)/288",
+        "AF_z_numeric": 0.3823096061774329,
+        "AF_z_prime": "(1 - sqrt(5))**15/7077888",
+        "coherent_full_overlap": "2593/288 - 2305*sqrt(5)/576"
+      }
+    },
+    "flat_overlap": "9 - 4*sqrt(5)",
+    "flat_z": "11559/2 - 5169*sqrt(5)/2",
+    "full_leaf_costs": {
+      "FFF": 3,
+      "FFR": 4,
+      "FR": 3,
+      "RF": 3,
+      "RR": 4
+    }
+  },
   "checks": [
     "CAR_skew_0_0",
     "CAR_sym_0_0",
@@ -255,6 +292,10 @@
     "all_outcomes_unitary_if_native_Julia_defect_identity",
     "generic_noncommuting_same_original_Julia_exact_port_form",
     "full32_same_Julia_port_unitary",
+    "coherent_T_has_integer_original_CAR_entries",
+    "coherent_rank_one_integer_vector_squared_norm48",
+    "coherent_Householder_rational_reflection_squared_identity",
+    "coherent_rational_projector_idempotent",
     "pure_128_firstshell_system_marginal",
     "pure_128_reference_full_marginal",
     "isotropic_pure128_iso0_normalized",
@@ -335,6 +376,54 @@
     "shannon_t2_log_divergence_coefficient",
     "Shannon_has_no_finite_second_variation_at_zero",
     "centered_native_code_finite_exact_quadratic",
+    "golden_cost3_five_full_histories_normalize",
+    "golden_cost3_3_equal_branch_2_pending",
+    "central_history_reference_overlap_nonzero",
+    "central_history_flat_parameter_inside_existing_AF_interval",
+    "isotropic_central_first_Julia_gap",
+    "isotropic_central_first_program_full_normalization",
+    "isotropic_central_coh_probability",
+    "isotropic_central_orth_probability",
+    "isotropic_coherent_reflection_correct",
+    "isotropic_orthogonal_reflection_correct",
+    "isotropic_Wcoh_complete_unitarity",
+    "isotropic_Worth_complete_unitarity",
+    "isotropic_all_five_history_central_overlap_no_oracle",
+    "isotropic_CENTRAL_AF_exact_noncommuting_first_source",
+    "isotropic_central_z_in_old_positive_source_window",
+    "pure_shear_central_first_Julia_gap",
+    "pure_shear_central_first_program_full_normalization",
+    "pure_shear_central_coh_probability",
+    "pure_shear_central_orth_probability",
+    "pure_shear_coherent_reflection_correct",
+    "pure_shear_orthogonal_reflection_correct",
+    "pure_shear_Wcoh_complete_unitarity",
+    "pure_shear_Worth_complete_unitarity",
+    "pure_shear_all_five_history_central_overlap_no_oracle",
+    "pure_shear_CENTRAL_AF_exact_noncommuting_first_source",
+    "pure_shear_central_z_in_old_positive_source_window",
+    "twist_central_first_Julia_gap",
+    "twist_central_first_program_full_normalization",
+    "twist_central_coh_probability",
+    "twist_central_orth_probability",
+    "twist_coherent_reflection_correct",
+    "twist_orthogonal_reflection_correct",
+    "twist_Wcoh_complete_unitarity",
+    "twist_Worth_complete_unitarity",
+    "twist_all_five_history_central_overlap_no_oracle",
+    "twist_CENTRAL_AF_exact_noncommuting_first_source",
+    "twist_central_z_in_old_positive_source_window",
+    "generic_central_first_Julia_gap",
+    "generic_central_first_program_full_normalization",
+    "generic_central_coh_probability",
+    "generic_central_orth_probability",
+    "generic_coherent_reflection_correct",
+    "generic_orthogonal_reflection_correct",
+    "generic_Wcoh_complete_unitarity",
+    "generic_Worth_complete_unitarity",
+    "generic_all_five_history_central_overlap_no_oracle",
+    "generic_CENTRAL_AF_exact_noncommuting_first_source",
+    "generic_central_z_in_old_positive_source_window",
     "moving_observer_frame_orthogonal",
     "isotropic_spatial_frame_invariant",
     "isotropic_source_covariant",
@@ -349,7 +438,7 @@
     "coherent_effect_not_invariant_under_old_low_bit_translation",
     "Shannon_source_not_born_signed_score"
   ],
-  "checks_count": 302,
+  "checks_count": 354,
   "entropy_negative_control": {
     "Shannon_source": 0.0015379374103409223,
     "same": false,
