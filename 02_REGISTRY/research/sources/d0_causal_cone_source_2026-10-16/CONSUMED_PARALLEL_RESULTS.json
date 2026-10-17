@@ -167,7 +167,7 @@
     "base": "d0e49f1288126cee72996b54c9b0916b04dd1642",
     "conclusions": [
       "Actual label6/coefficient1 both-port effect separates faithful full128 first-shell preparations with constant R and unchanged geometric fields.",
-      "Full-tape first-exit marked event has probability C_h(1+t), C_h\u2192(1-exp(-beta lambda0))(1-b)^2/16>0. It is a diagnostic event, not a replacement entropy.",
+      "Full-tape first-exit marked event has probability C_h(1+t), C_h→(1-exp(-beta lambda0))(1-b)^2/16>0. It is a diagnostic event, not a replacement entropy.",
       "Full pointer entropy has a strictly negative Fisher matter Hessian; full coherent relative entropy has a positive BKM Hessian, with uniform fixed-time Jensen gap.",
       "Every fixed complete code has affine expected cost; neither full-information candidate equals unchanged v8 on a full relative-open fixed-shell preparation family.",
       "Exact nonlinear preparation covectors and necessary preparation-dependent partition curvature are explicit; a geometry-only heat partition cannot repair the missing source."
@@ -311,7 +311,7 @@
     "old_scientific_replay": false,
     "previous99_receipts_preserved": true,
     "rejected_mutations": 4,
-    "remaining_native_consumer": "Same-process Cost\u2212Info/action source; nonzero-N0 second stencil and clock jets, moving/nonlocal detectors, signed/nonlinear price and actual admission/preparation. Original fixed-g/tau/raw terminal remains open.",
+    "remaining_native_consumer": "Same-process Cost−Info/action source; nonzero-N0 second stencil and clock jets, moving/nonlocal detectors, signed/nonlinear price and actual admission/preparation. Original fixed-g/tau/raw terminal remains open.",
     "scope": {
       "fixed_positive_record_detector_only": true,
       "nonblank_zero_N0_rows": 18,
@@ -455,5 +455,22 @@
     "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/check_flatmoduli.py": "52a8769a515bc433206a05fb0381bca44dc75eee40ee51cfe53330b0beb957a9",
     "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/check_observer_curvature.py": "be37647bb8dce0ebb652fa8da0ae6bc7d0156c4060772fd5ba51b0daeb79f700"
   },
-  "source": "00471421"
+  "source": "00471421",
+  "variable_record_conservativity_checkpoint": {
+    "base": "aa834d4f867c1efebb6c6805bf1fccd1d37f60ec",
+    "conclusion": "Conservative minimal variable-field QDS and strongly continuous CPTP predual on all trace class, plus trace-norm convergence of actual finite-h marginal trajectories for all converging trace-class preparations on the declared full smooth compact carrier.",
+    "consumer": "Full spatial record evolution in complete native source argument; current route and primary synthesis.",
+    "mechanism": "Native fixed-phase Julia rows, full CAR gap and auxiliary order-one Lyapunov correction prove conservation; literal 127-slot first-jump contractions and positive mass tails prove actual finite-h marginal trajectory convergence.",
+    "new_bounded_exact_checks": 43,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Uniform entropy/source and rank-birth limits, physical clock/code/Info/admission, intrinsic Einstein-source equality and the original fixed-g/tau all-10 raw h^-2/#216 terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md": "44578338d793d96fbd8d575d182cf4087c721e3010c69a77163da0f40bef4715",
+      "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/README.md": "d7730d6eeed2d8511519669bff3931238bb8bef678775b3f6b077b34dc0446d0",
+      "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/RESULTS.json": "12b6285cd983af0081342e740d7b758a9190beabc62b69eb6b702eed7cde7aa8",
+      "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/VALIDATION.json": "b60f9ef7570ef33a5825da430e92a592bfa5c81bd558099917ee2374c7ea7daf",
+      "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/check_variable_channel.py": "e88a8f9be6cad9b6cfdca5c6a928861b7ec151589f997e5911aabae13b1d205f"
+    }
+  }
 }

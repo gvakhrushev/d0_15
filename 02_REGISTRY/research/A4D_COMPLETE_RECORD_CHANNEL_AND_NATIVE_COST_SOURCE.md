@@ -811,3 +811,37 @@ the existing maximum theorem where its central-reference premise holds;
 do not infer that premise from a nonuniform golden terminal-code prior.
 The computation here removes an entropy/source obstacle while keeping
 that physical operational obligation explicit.
+
+## 14. Spatially varying fields: the limiting channel is conservative
+
+The [variable-field owner](A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md)
+extends existence and probability conservation beyond the flat invariant
+Fourier windows above. On the full compact torus the actual limiting
+jumps J_k=N_k*D generate a unique conservative minimal QDS and a strongly
+continuous CPTP predual on the entire trace class, including reference
+128 and every form component. No preparation-rank or energy cutoff is
+imposed on its state space.
+
+The actual native rows have fixed Hermitian/anti-Hermitian phases, a
+stronger identity than pointwise bistochasticity. Together with the
+full 16-component CAR gap this makes the genuine cubic energy defect
+solvable by an explicit first-order Lyapunov corrector. An actual proper
+boost proves that the uncorrected Delta estimate would fail. The
+corrector is solely an analytic estimate; the original Delta, jumps,
+action, record and physical fields are unchanged. The common operator
+core and all assumptions of the conservation theorem are verified.
+
+The actual finite-h marginal trajectories also converge in trace norm,
+for every converging trace-class preparation. The exact positive split
+keeps all 127 literal nonblank outcomes; its first-jump integrated norm
+identity proves strong Hilbert-map convergence. Finite jump layers
+compose on a common waiting-time cube, while conservation controls all
+remaining positive tails. This avoids a trace-class generator-core
+assumption and any high-energy input cutoff.
+
+This supplies a well-defined full spatial channel and its actual
+discrete approximation for the source programme. It does not extend
+the finite 2048-dimensional compression to a growing UV carrier or
+grant entropy differentiability at a rank birth. These and the physical
+code/Info/admission and Einstein-source equality remain distinct
+consumers, with the original fixed-g/tau raw h^-2 terminal still open.

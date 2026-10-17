@@ -6218,3 +6218,39 @@ all eight full16 marginal densities, not intermomentum coherences.
 This removes an exponential-record calculation and an assumed fixed
 support from the constructive source route. Physical tests/Info, full code
 cost, inhomogeneous/rank-birth limits and Einstein equality remain open.
+
+## Variable-field record evolution — 17 October 2026
+
+The [variable-field channel owner](A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md)
+removes a further analytic premise: the actual limiting generator has a
+unique conservative minimal QDS on the full smooth torus and a strongly
+continuous CPTP predual on its entire trace class. All 16 form components
+and reference 128 remain; neither a Fourier window nor a fixed
+preparation rank defines the state space.
+
+This uses a native structure, not the formal identity L*(I)=0 alone.
+The actual Julia/Walsh rows have spatially fixed adjoint phases, making
+the cubic energy defect internally traceless. Their full CAR mixing gap
+inverts the principal cell equation. Its explicit order-one correction
+cancels the defect in an auxiliary Lyapunov estimate. The actual proper
+boost control has a nonzero signed cubic defect and rejects the opposite
+correction sign. The original operator, energy, action and physical
+process are unchanged. The common H2 graph core verifies every hypothesis
+of the cited conservation criterion.
+
+The actual finite-h marginal trajectories also converge for every
+converging trace-class preparation. The exact blank/nonblank CP split
+retains all 127 literal nonblank slots. Its first-jump integrated norm
+identity gives strong Hilbert-map convergence; finite compositions on
+the waiting-time cube give every fixed jump layer, with adjacent jumps
+included. Lattice trace preservation and continuum conservation control
+all positive tails. Neither a trace-class generator-core assumption nor
+a high-energy input moment is needed.
+
+The consumer is now the full spatial process and its actual discrete
+approximation in the native source argument. Uniform entropy/source and
+rank-birth estimates, physical clock/code/Info/admission and the equality
+with intrinsic Einstein sources remain separate. No quantitative h^-2
+source bound follows from qualitative trajectory convergence. The
+original fixed nonconstant g, independent tau, all 10 packed rows,
+unweighted raw h^-2/#216 terminal remains OPEN.

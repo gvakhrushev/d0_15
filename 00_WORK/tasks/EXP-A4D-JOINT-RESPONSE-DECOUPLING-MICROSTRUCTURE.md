@@ -608,6 +608,25 @@ This is not a full-code continuum price, pointer-entropy theorem or a
 spatially varying field/shell-leakage source theorem. Original terminal
 and physical admission remain unchanged.
 
+## Variable-field record continuation — 17 October 2026
+
+Bounded variable-field continuation at aa834d4f: construct the conservative
+unbounded continuum channel identified by the actual full-record generator,
+on the full smooth torus carrier and reference128. Use the real local
+Julia rows, full16 internal gap and a subprincipal Lyapunov corrector;
+do not impose vanishing recycling drift or replace Delta/action. Check
+the joint operator core and apply the precise published conservation
+criterion. Owner A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md and sole
+new packet sources/d0_variable_record_channel_2026-10-17/check_variable_channel.py,
+plus integrator-owned consumers. Decisive control is the actual nonzero
+constant-boost cubic energy symbol, its cancellation, and the native
+fixed-phase trace identity. The actual positive blank/nonblank split,
+contractive first-jump Hilbert maps and conservative mass tails then
+give qualitative finite-h marginal trajectory convergence on the entire
+trace class. No grid/rank/spectrum census or old replay. Entropy/source
+convergence, native admission, physical time, code/Info and the original
+h^-2 terminal remain separate obligations.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether

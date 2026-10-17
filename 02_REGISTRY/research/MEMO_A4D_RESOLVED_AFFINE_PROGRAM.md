@@ -284,11 +284,32 @@ also gives the exact preparation response quotient: all eight full16
 momentum marginals, with their intermomentum coherences invisible to this
 record alone. Physical superselection is not inferred.
 
+The [variable-field record theorem](A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md)
+now removes the invariant-window restriction for existence and conservation
+of the limiting evolution. The full spatially varying operator on the
+compact torus has a unique conservative minimal QDS whose predual acts
+on the entire trace class, retaining all 16 forms and reference 128. Its actual fixed-phase
+Julia rows make the cubic recycling defect internally traceless. The
+full CAR gap then inverts the principal cell equation and constructs an
+order-one Lyapunov correction. An actual constant proper boost shows why
+the bare Delta estimate fails and verifies the correction's sign. This
+changes no physical energy, jump, record, action or preparation. The
+published conservation criterion's joint core and domain hypotheses are
+verified explicitly. The actual finite-h marginal trajectories also
+converge in trace norm for every converging trace-class preparation.
+The exact positive blank/nonblank split and its 127 literal output slots
+give contractive first-jump Hilbert maps; their integrated norm identities
+prove strong convergence without high-energy input moments. Fixed jump
+layers compose on a common waiting-time cube. Conservation controls the
+remaining positive tails, completing the full process limit. This is a
+proof beyond core-generator consistency, with no h^-2 or source rate.
+
 For physical selection, consume the existing operational-gain theorem
 when G0b supplies the feasible effect algebra and the actual/maximal-gain
 contract. Its central-reference/all-POVM premises are not consequences
-of retaining coherent records. Complete code cost, inhomogeneous leakage,
-rank births and the original GR/source terminal remain separate.
+of retaining coherent records. Complete code cost, inhomogeneous entropy
+and source convergence, rank births and the original GR/source terminal
+remain separate.
 
 The parallel [full finite causal-response test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
 now supplies a decisive Einstein boundary: its actual H+J coefficient is
