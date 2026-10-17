@@ -289,6 +289,7 @@ chk(eq0((a_coeff*tval**2 +3*(1-(a_coeff+b_coeff)*tval**2)
 # Three selected words have IDENTICAL amplitude p^(3/2), the two pending
 # have amplitude p². Their weights add to one, with NO new sqrt(3).
 chk(eq0(3*p**3+2*p**4-1),'golden_cost3_five_full_histories_normalize')
+chk(eq0(9*p**3+8*p**4-(7-6*p)),'five_word_controller_literal_code_cost_field_independent')
 reference_words={'FFF':3,'FR':3,'RF':3,'FFR':4,'RR':4}
 chk(sorted(reference_words.values())==[3,3,3,4,4],'golden_cost3_3_equal_branch_2_pending')
 # Conditioned on the three equal-weight words, apply the same full
