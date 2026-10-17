@@ -233,6 +233,36 @@ If independently sourced *spin-free* native matter has a genuine same-programme 
 
 **Precisely proved mathematical implication:** if there is a physically admitted smooth sequence of **joint stationary** one-AF programme configurations satisfying (14) and locally dense admissible coframe/link variations, any regular limiting nondegenerate field is a vacuum Einstein metric. Conversely any Einstein metric with its LC connection is stationary for the continuum AF-Palatini limiting functional. This implication is nonlinear (no J² or TT-only approximation).
 
+### 5.1. An EXACT finite Lorentz Ward identity of the same AF Book price
+
+This is not merely a continuum symmetry claim. For any allowed site-dependent proper Lorentz frame \(g_x\) (and the correct relative affine solder rather than the raw translation-variant one), transform the original same-cell data by
+
+\[
+v_{x,r}\mapsto g_xv_{x,r},\quad
+U_{x,r}\mapsto g_x U_{x,r}g_{x+r}^{-1},\quad
+P_{rs}(x)\mapsto g_x P_{rs}(x)g_x^{-1}.
+\]
+
+The odd curvature \((P-P^{-1})/2\) transforms by conjugation, and the exact \(G_2\star\) pairing on \(\Lambda^2\) is Lorentz invariant. Therefore \({\cal P}_{\star,h}(x)\), every actual golden address coefficient \(f_h(\pi_hX_w)\), the complete AF effect (3), and the **full measured Book action** (5) are invariant at EVERY finite n,h,t. No global spatial averaging is necessary to make this statement true.
+
+For \(\lambda_x\in\mathfrak{so}(1,3)\) the infinitesimal variations
+\(\delta_\lambda v_{x,r}=\lambda_xv_{x,r}\),
+\(\delta_\lambda U_{x,r}=\lambda_xU_{x,r}-U_{x,r}\lambda_{x+r}\)
+give the exact per-site Ward identity
+
+\[
+\boxed{
+\sum_r\langle E_{v_{x,r}},\lambda_xv_{x,r}\rangle
++\sum_{x\to y}\langle E_{U_{xy}},\lambda_xU_{xy}\rangle
+-\sum_{y\to x}\langle E_{U_{yx}},U_{yx}\lambda_x\rangle=0
+}
+\tag{18a}
+\]
+
+for ALL six independent \(\lambda_x\) at each site, with the Euler covectors of the SAME complete AF action. On a true link-critical branch, the antisymmetric tetrad Euler directions vanish **because of this exact Ward relation**, leaving precisely the ten symmetric metric equations on a nondegenerate coframe; no frame null direction is silently discarded or counted as an independent Einstein row.
+
+This exact Lorentz Ward identity does not by itself supply discrete diffeomorphism/refoliation Ward at finite h. Its smooth Palatini limit does yield the standard continuous Bianchi identity on the joint torsion-free Einstein equations.
+
 ## 6. Nonflat nonempty witness plus EXACT finite-dimensional joint roots of the SAME AF action
 
 Unlike a pure curvature-comparison theorem, (13) also yields a genuine nonempty **exact finite stationary family on a declared finite-dimensional coframe/connection test space**. This is NOT a claim of exact roots in the entire \(16L^4+24\times4L^4\) unconstrained original native field space.
