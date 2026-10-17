@@ -153,24 +153,17 @@ The UV fixed-carrier term \(3\,\dim H\log(1-z)\) present in (6) is constant on a
 
 **This simultaneously solves two mathematical obstructions:** the former +1,+1,-1 mismatch and the leading 3/2 volume runaway, on one *conditional* relative score. It does NOT assert that the original v8 H+J+R, ordinary Shannon entropy, or the actual Book Cost−Info equals (9).
 
-## 4. Nonempty genuinely curved metric solutions of the leading equations
+## 4. A genuinely curved, exact LOCAL Einstein-source control; no false global root
 
-On a local foliated causal chart admitting compactly supported variations choose a classical Lorentz Ricci-flat pp-wave
+On a local time-oriented foliated chart, with variations compactly supported inside that chart, choose the classical Lorentz Ricci-flat pp-wave
 
 \[
 g_{\rm pp}=2\,du\,dv+a(x^2-y^2)\,du^2-dx^2-dy^2,\qquad a\ne0.
 \]
 
-Its Ricci tensor vanishes and its Riemann tensor does not. Locally choose a timelike ADM chart and take \(g_s=s^2g_{\rm pp}\). Equation (10), differentiated on every smooth compactly supported ten-component ADM variation, gives
+Its Ricci tensor vanishes while the Riemann tensor is nonzero. On a small neighborhood a timelike ADM chart and the positive observer-reflected coframe exist. The **local coefficient-density** identity behind (10) is exact: its leading source is the vacuum Einstein covector and hence vanishes on this nonflat metric in **every compactly supported ADM direction**. If a corresponding compact global smooth heat-carrier and controlled boundary/setting completion satisfying the same stationary fields are independently supplied, then the global uniform C¹ expansion would give \(s^{-2}dS_{\rm rel,GR}(g_s)=O(s^{-2})\) on these directions.
 
-\[
-s^{-2}dS_{\mathrm{rel,GR}}(g_s)[V]
-=c_R\,d\int R_L dV\big|_{g_{\rm pp}}[V]+O(s^{-2})
-=O(s^{-2}).
-\tag{11}
-\]
-
-Thus the **mathematical vacuum-free two-clock relative score has a nonempty genuinely curved, asymptotically metric-stationary IR sequence**, unlike the runaway ORIGINAL v8 scaling sector of §1. It is NOT an exact joint finite-h original D0 stationary root, an arbitrary-tau result or a #216 raw h^-2 convergence theorem. This example is a sharp *positive* control for the entire field-source normalization of (9).
+**Important correction to the tempting overclaim:** a local pp-wave is not by itself a compact globally stationary root of a heat-trace functional. Patching it to a compact torus can introduce nonzero Einstein source outside the patch; the full global integral, physical admission, and boundary/refinement equations are NOT solved. Therefore §4 is an exact **nonflat local all-ten Einstein-source positive control**, NOT a proof of nonempty globally stationary D0 families. This distinction is required for the original #216 terminal.
 
 ## 5. Only one physical selection problem should be attacked now
 
