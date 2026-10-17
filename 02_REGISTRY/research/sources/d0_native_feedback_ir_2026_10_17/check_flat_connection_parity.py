@@ -34,7 +34,7 @@ combined=sum(((k+1)*Zk/17 for k,Zk in enumerate(Z)),zeros(16,16))
 D_plus=D0+combined
 D_negative=-D0-combined
 ensure(D_plus+D_negative==zeros(16,16),"D(-k,-T) != -D(k,T)")
-ensure(D_plus*D_plus==D_negative*D_negative,"squared parity failed")
+ensure(D_plus+D_negative==zeros(16,16),"squared parity follows from exact opposite operators")
 # All 24 connection sources vanish on the full original ±momentum, full16 shell.
 shell=[Matrix([sign if j==r else 0 for j in range(4)])
        for r in range(4) for sign in (+1,-1)]
