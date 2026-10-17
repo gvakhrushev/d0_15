@@ -40,3 +40,48 @@ The stronger deterministic realization does not feed q_j as a scalar oracle. For
     python -O 02_REGISTRY/research/sources/d0_relative_record_cost_2026-10-17/check_moving_innovations.py
 
 This separate helper passed 24 exact controls with byte-identical normal/-O stdout. Its source Git blob SHA 6a1e30d6d7d948ee513c0116ba6c209b3235ba2c was checked against the published branch. The exact moving-projector source differs in sign from the false frozen-projector source (−1/3 versus +71/1725). See INNOVATION_RESULT.json; original geometric/source/no-go owners are unchanged.
+
+
+## Positive polynomial Gram innovation: a finite-gate-friendly approximation
+
+A consuming strengthening (§2.3 of the main research memo) removes the need to
+input either scalar conditional q_j or exact Gram inverses at the mathematical
+instrument level. Under the peer's **uniform** positive two-sided-comparison
+bound
+
+    αI ≤ G_j ≤ pI,  α=p(1-z)^3, p=φ^-1, z=2^-20,
+
+write δ=1-(1-z)^3<3z and D_j=I-G_j/p (0≤D_j≤δI). Use the **positive polynomial**
+
+    B_m(G_j)=p^-1 Σ_(k=0)^m (I-G_j/p)^k,
+    P_(j,m)=V_j B_m(G_j)V_j†.
+
+Then 0≤P_(j,m)≤P_j≤I; the exact remainder is Q_j D_j^(m+1) Q_j†
+with Q_j=V_j G_j^-1/2, so its operator norm is ≤δ^(m+1).
+Thus (I−P_(j,m))⊕0 is itself a valid positive success POVM effect,
+even though it is not an exact projection. Its complementary failure
+effect remains on the full Julia comparison/workspace carrier.
+
+The **moving first-source** error is bounded by
+
+    2||dQ_j||δ^(m+1)+(m+1)||dD_j||δ^m,
+
+with no [D_j,dD_j]=0 assumption. Under separately proved uniform mode/source
+bounds the total additional error in the old h^-2 raw norm is controlled by
+h^-6(m_h+1)δ^(m_h), hence m_h=ceil((6+γ)log(1/h)/|logδ|) suffices
+for any γ>0. This is a conditional *polynomial stage* result, not original
+GR/refinement closure. Physical native input G_j, polynomial actuation,
+cost, C1/C2 source fidelity and mode→metric source transfer remain unproved.
+
+New focused reproductions (47 independent rational-matrix controls,
+normal and optimized outputs match):
+
+    python 02_REGISTRY/research/sources/d0_relative_record_cost_2026-10-17/check_polynomial_gram.py
+    python -O 02_REGISTRY/research/sources/d0_relative_record_cost_2026-10-17/check_polynomial_gram.py
+
+Exact fixture uses p=9/16 and epsilon=1/100 as independent rational
+controls, **not** as D0 calibration. In the actual peer golden corridor
+δ≈2.861e-6 analytically; already degree m=2 yields δ³≈2.34e-17.
+Published Python Git blob SHA 73b3a67efa271f2ae5f0d392e7e71b1816dd7123;
+exact-result receipt POLYNOMIAL_RESULT.json (47 controls). No remote CI
+or independent scientific acceptance is claimed.
