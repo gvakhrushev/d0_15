@@ -5,10 +5,10 @@
     "base_commit": "622d96b68f0195aaed4ae856e90429225de9c580",
     "source_path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
     "prior_owner_sha256": "ee5ce8bf76882dc02fada7cfeb9b2371eac1626979c09e84119a322368362169",
-    "current_owner_sha256": "f9a1086e3114af1c82769a8d4e70776d8f69a957431af1cc5b0994634670a026",
+    "current_owner_sha256": "e69f5f83eba403a3f195bd27f446f40bbe0e9ed617697abab8b04d114498e506",
     "prior_math": "All pre-existing source bytes including6.46-6.52 are identical after removing only inserted6.53 onward. Prior null/source math receipt is reused; only this owner fingerprint is refreshed."
   },
-  "checker_sha256": "9bfc0b27999ee4078ee79ab65418d2769c0bc2987f7eed7ecc3cff8baf40be80",
+  "checker_sha256": "31024712b79e6b0a1902dff62f6d478d5f84937b58536d1004bb42ea0fa98c88",
   "complete_price_scale": {
     "status": "PASS_EXACT_TRACE_AND_SATURATION_CONTROLS",
     "checks": [
@@ -1545,6 +1545,34 @@
     "actual_marginal": "rho1=(1-eps)|m0><m0|+eps(P0+P15)/2 exactly, eps=<n_exc>/N<1 and eps<=19/sqrtN. Thus trace distance from actual coherent13gh vacuum m0 is<=min(2,38/sqrtN), and k-copy distance<=min(2,2sqrt(19k)N^-1/4). Native current spatial numerators vanish and P1 density p(1-eps)e0e0* is nonzero.",
     "affine_source": "For an actually owned compression A_N(g)=a(g)I+b(g)H/binom(N,2), fixed trial gives e_N=<H>/binom(N,2) in[-2p/(N-1),0]. Hence ||D^j(q_N-a)||<=2p||D^j b||/(N-1), j0..2, while preparation log-source norm is<=96|b|/[q_floor logphi sqrtN(N-1)]. Any physical signal divisor must divide this residual too.",
     "scope": "Approximate source-normalized prep root only. No exact full polynomial E_N root, fitted occupation term, fixedRIGHT128/reference/site extension, indefiniteLorentz/higher-query/fullprice/PREP admission or physical clock law."
+  },
+  "full_polynomial_vacuum_preparation": {
+    "status": "PASS",
+    "checks": [
+      "exact allmixedIID polynomial for order2",
+      "same allmixedIID polynomial for order3 paddedkernel",
+      "fulloperator firstconditional equalsgI pure",
+      "fulloperator firstconditional equalsgI mixed",
+      "disjoint covariance vanishes exactly",
+      "single-overlap covariance vanishes exactly",
+      "two-overlap covariance remains genuinely nonzero",
+      "actual finite hypergeometric overlap tail bounded bypairmoment",
+      "hypergeometric pairmoment has exact statedconstant",
+      "paddedorder3 variance equals sameorder2 effect",
+      "wholepositiveeffect finite prepnormal is nonzero",
+      "degenerate order2 bound exact with centeredkernelnormb",
+      "hostile onebody Hilbertnormal shrinks1oversqrtN",
+      "physical productlift norm is exactlysqrtN",
+      "hostile simultaneousrotation source staysfinite",
+      "hostile positive-effect logsource doesnotvanish",
+      "degeneratecentre firstsource zero but actualsecondjet retained",
+      "productpurification preserves exactcompleteRIGHTGram"
+    ],
+    "kernel": "Let K=K* be symmetric of orderk, ||K||<=B, and Tr K rho^tensor k=g(rho) EXACT for every mixed density. If Dg(rho0)[X]=0 for EVERYtracezeroHermitianX, then K1=Tr_(2..k) K rho0^tensor(k-1)=g0I on theFULLonecopycarrier, including outside support rho0.",
+    "wholevariance": "For A_N=exactsubsetaverageK, N>=max(k,2), original productpurification Psi0^tensorN has ||(A_N-g0)Psi0^tensorN||<=B k(k-1)/sqrt[2N(N-1)]. Both disjoint and overlap1 covariances vanish; overlap>=2 probability is bounded by[k(k-1)]²/[2N(N-1)] and each covariance byB².",
+    "geometry": "If the ACTUALfixedquery family remains matterdegree>=2 in the same scalarfeatures around the SAMEscalarfree rho0, derivativekernels K_j have the same degeneracy forj0..2. Thus the corresponding normalvector derivatives obey the sameconstant withB_j=||D^jK||. ExactIIDgeometric2jets themselves hold without this extraoperator-degeneracy premise.",
+    "physicalsource": "For a constant prep multiplier gamma in S=-gamma logq/logphi (or an independently proved gradient-prefactor, not the action gamma(q)logq), q>=mu, a matter tangent ofFULLpurification normL_N gives |DS|/signal<=2gamma B k(k-1)L_N/[mu logphi signal sqrt(2N(N-1))]. If L_N<=ell sqrtN and all otherbudgetfactors arecontrolled this isO(N^-1/2). Generic shrinking Hilbertnormal WITHOUTthis tangentscale argument proves no physicalstationarity.",
+    "scope": "This uses the ACTUALfullpolynomial kernel and original productinput, retaining spatialL, allCAR and fullRIGHT. It is a quantitative approximate conditional-prep consumer at a fullmixed-domain criticalcentre, not an exactfiniteNroot, arbitrarybackground theorem, freecopy/PREP admission, oldHJR/upstreamcost control or fullBook/GR closure."
   },
   "full_D0_price_selected": false,
   "generic_joint_recovery": false,

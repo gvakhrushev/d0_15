@@ -24,6 +24,22 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-18
 
 Current full-source consumer:
+[strategic7.24](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.78](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The WHOLE fixed-query polynomial now has a controlled vacuum matter-
+preparation normal on the ORIGINAL input, with exact clock/site/RIGHT
+marginals. Its full mixed-domain first derivative vanishes, so subset
+intersection0/1 covariance cancels and the normal isO(Bk²/N). The physical
+lift L_N, q-floor, actual signal and full-price/copy coefficients stay in
+the bound; with L_N=O(√N) and controlled budgets the physical contribution
+vanishes. Exact IID geometric2jets remain the original source, not an
+affine surrogate. C² normal transfer has its own scalar-free/moving-pullback
+hypotheses. Together with the derived upperclock this advances the vacuum
+limit; native Book/PREP/copy choice, upstreamHJR, free query normals and
+exact full joint roots remain the next same-price transition. No physical
+GR or raw#216 closure is inferred.
+
+Preceding clock/coherent-preparation consumer:
 [strategic7.23](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source6.72–6.77](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The ORIGINAL full-prefix bank has regular massW≥21/85. Positivity of the

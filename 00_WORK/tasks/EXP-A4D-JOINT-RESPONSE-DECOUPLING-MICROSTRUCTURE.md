@@ -12,6 +12,20 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: whole-polynomial vacuum preparation consumer
+
+Inputfbe3613c; same Draft334 and eight owned paths. Consume the ACTUAL
+full E_N query-compressed kernel, not the quadratic substitute. At the
+scalar-free6.64 centre, all-mixed first derivative implies K1=g0I; exact
+subset overlap0/1 cancellation gives O(Bk²/N) normal on the ORIGINAL
+product purification, keeping site/coherentclock/fullRIGHT exactly.
+Carry physical lift L_N, kernel/query jets, q-floor and the ALREADY owned
+signal/full-price factors. The positive one-body hostile control prevents
+LLN fake closure. Next same-parent step is full native Book/PREP/copy/
+clock/upstreamHJR and genuine joint recovery. Smallest check: new exact
+kernel/overlap/mixed-domain identities; independent analytic intake.
+Reuse all34 prior groups unchanged. No new task, action, norm or workflow.
+
 ### 18 October: actual curved forced-clock and coherent preparation transfer
 
 Input180ddd18; preceding goal turn PROGRESS. Continue the same Draft334

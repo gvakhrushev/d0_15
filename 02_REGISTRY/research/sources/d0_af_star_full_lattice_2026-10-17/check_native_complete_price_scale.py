@@ -2814,6 +2814,82 @@ def coherent_hodge_approx_preparation(root=None):
         ck('actual current on all four coherent grades ' + str(k), ((cr[0] + cr[0].T) * (cr[k] - cr[k].T)).extract([0, 1, 14, 15], [0, 1, 14, 15]) == s.zeros(4))
     return {'status': 'PASS', 'checks': checks, 'source_sha256': {'creator_AST': pin}, 'trial': 'For N=2n>=8 let B=sqrtp clock1+sqrt(1-p) dark14, D orthogonal; Psi_N proportional to (Bdag²-s(adag²+bdag²))^n|vac>, s²=1-n^-1/2. This is permutation-symmetric fourgrade preparation inside full ambientCAR16.', 'moments': 'Pair count k has weights q^k c_(n-k), q=s²,c_j=binom(2j,j)/4^j. E k<=13sqrtn, E k²<=70n, E k4<=7400n².', 'actual_residual': 'All actual H(clock) leakage is retained: H Psi=pH(B)Psi-sqrt[p(1-p)]Ddag F Psi+(1-p)Ddag²Q Psi/2; F=(B n_exc+BdagQ)Psi=[(1-s)n_exc-2s]B Psi. Its Hermitian residual is <=24sqrtN, hence ||[(H-<H>)/binom(N,2)]Psi||<=48/[sqrtN(N-1)].', 'actual_marginal': 'rho1=(1-eps)|m0><m0|+eps(P0+P15)/2 exactly, eps=<n_exc>/N<1 and eps<=19/sqrtN. Thus trace distance from actual coherent13gh vacuum m0 is<=min(2,38/sqrtN), and k-copy distance<=min(2,2sqrt(19k)N^-1/4). Native current spatial numerators vanish and P1 density p(1-eps)e0e0* is nonzero.', 'affine_source': 'For an actually owned compression A_N(g)=a(g)I+b(g)H/binom(N,2), fixed trial gives e_N=<H>/binom(N,2) in[-2p/(N-1),0]. Hence ||D^j(q_N-a)||<=2p||D^j b||/(N-1), j0..2, while preparation log-source norm is<=96|b|/[q_floor logphi sqrtN(N-1)]. Any physical signal divisor must divide this residual too.', 'scope': 'Approximate source-normalized prep root only. No exact full polynomial E_N root, fitted occupation term, fixedRIGHT128/reference/site extension, indefiniteLorentz/higher-query/fullprice/PREP admission or physical clock law.'}
 
+def full_polynomial_hoeffding_prep(root=None):
+    import sympy as s
+    from itertools import combinations
+    checks = []
+
+    def ck(name, v):
+        if not bool(v):
+            raise ArithmeticError(name)
+        checks.append(name)
+
+    def zero(M):
+        return M.applyfunc(s.simplify) == s.zeros(*M.shape)
+    X = s.Matrix([[0, 1], [1, 0]])
+    I = s.eye(2)
+    a = s.Rational(1, 2)
+    b = s.Rational(1, 4)
+    K2 = a * s.eye(4) + b * s.kronecker_product(X, X)
+    K3 = a * s.eye(8) + b * (s.kronecker_product(X, X, I) + s.kronecker_product(X, I, X) + s.kronecker_product(I, X, X)) / 3
+    (u, v, w) = s.symbols('rho00 real_coherence imaginary_coherence', real=True)
+    rho = s.Matrix([[u, v + s.I * w], [v - s.I * w, 1 - u]])
+    ck('exact allmixedIID polynomial for order2', s.simplify(s.trace(K2 * s.kronecker_product(rho, rho)) - a - b * (2 * v) ** 2) == 0)
+    ck('same allmixedIID polynomial for order3 paddedkernel', s.simplify(s.trace(K3 * s.kronecker_product(rho, rho, rho)) - a - b * (2 * v) ** 2) == 0)
+    for (name, R) in [('pure', s.diag(1, 0)), ('mixed', s.eye(2) / 2)]:
+        conditional = s.zeros(2)
+        RR = s.kronecker_product(R, R)
+        for i in range(2):
+            for j in range(2):
+                conditional[i, j] = sum((K3[4 * i + e, 4 * j + f] * RR[f, e] for e in range(4) for f in range(4)))
+        ck('fulloperator firstconditional equalsgI ' + name, zero(conditional - a * I))
+    S = (0, 1, 2)
+
+    def covariance(A, B):
+        return b * b * s.Rational(len(set(combinations(A, 2)) & set(combinations(B, 2))), 9)
+    ck('disjoint covariance vanishes exactly', covariance(S, (3, 4, 5)) == 0)
+    ck('single-overlap covariance vanishes exactly', covariance(S, (0, 3, 4)) == 0)
+    ck('two-overlap covariance remains genuinely nonzero', covariance(S, (0, 1, 4)) == b * b / 9)
+    NN = 6
+    kk = 3
+    subsets = list(combinations(range(NN), kk))
+    Rs = [len(set(S) & set(T)) for T in subsets]
+    probability = s.Rational(sum((r >= 2 for r in Rs)), len(Rs))
+    pairmean = sum((s.binomial(r, 2) for r in Rs)) / len(Rs)
+    ck('actual finite hypergeometric overlap tail bounded bypairmoment', probability <= pairmean)
+    ck('hypergeometric pairmoment has exact statedconstant', pairmean == s.Rational((kk * (kk - 1)) ** 2, 2 * NN * (NN - 1)))
+    covmean = sum((covariance(S, T) for T in subsets)) / len(subsets)
+    ck('paddedorder3 variance equals sameorder2 effect', covmean == b * b / s.binomial(NN, 2))
+
+    def on_site(N, j):
+        ops = [I] * N
+        ops[j] = X
+        return s.kronecker_product(*ops)
+    N = 4
+    Xs = [on_site(N, j) for j in range(N)]
+    U2 = sum((Xs[i] * Xs[j] for (i, j) in combinations(range(N), 2)), s.zeros(2 ** N)) / s.binomial(N, 2)
+    A = a * s.eye(2 ** N) + b * U2
+    psi = s.zeros(2 ** N, 1)
+    psi[0] = 1
+    residual = (A - a * s.eye(2 ** N)) * psi
+    ck('wholepositiveeffect finite prepnormal is nonzero', s.simplify((residual.T * residual)[0]) == b * b / s.binomial(N, 2))
+    ck('degenerate order2 bound exact with centeredkernelnormb', s.simplify((residual.T * residual)[0] - b * b * 4 / (2 * N * (N - 1))) == 0)
+    U1 = sum(Xs, s.zeros(2 ** N)) / N
+    A1 = a * s.eye(2 ** N) + b * U1
+    r1 = (A1 - a * s.eye(2 ** N)) * psi
+    ck('hostile onebody Hilbertnormal shrinks1oversqrtN', s.simplify((r1.T * r1)[0] - b * b / N) == 0)
+    velocity = sum((Xs[j] * psi for j in range(N)), s.zeros(2 ** N, 1))
+    ck('physical productlift norm is exactlysqrtN', (velocity.T * velocity)[0] == N)
+    ck('hostile simultaneousrotation source staysfinite', (2 * velocity.T * r1)[0] == 2 * b)
+    theta = s.symbols('theta', real=True)
+    q1 = a + b * s.sin(2 * theta)
+    q2 = a + b * s.sin(2 * theta) ** 2
+    ck('hostile positive-effect logsource doesnotvanish', s.simplify(s.diff(-s.log(q1), theta).subs(theta, 0)) == -2 * b / a)
+    ck('degeneratecentre firstsource zero but actualsecondjet retained', s.diff(q2, theta).subs(theta, 0) == 0 and s.diff(q2, theta, 2).subs(theta, 0) == 8 * b)
+    C = s.Matrix([[1, 0], [0, s.sqrt(2)]]) / s.sqrt(3)
+    ck('productpurification preserves exactcompleteRIGHTGram', s.kronecker_product(C, C).T * s.kronecker_product(C, C) == s.kronecker_product(C.T * C, C.T * C))
+    return {'status': 'PASS', 'checks': checks, 'kernel': 'Let K=K* be symmetric of orderk, ||K||<=B, and Tr K rho^tensor k=g(rho) EXACT for every mixed density. If Dg(rho0)[X]=0 for EVERYtracezeroHermitianX, then K1=Tr_(2..k) K rho0^tensor(k-1)=g0I on theFULLonecopycarrier, including outside support rho0.', 'wholevariance': 'For A_N=exactsubsetaverageK, N>=max(k,2), original productpurification Psi0^tensorN has ||(A_N-g0)Psi0^tensorN||<=B k(k-1)/sqrt[2N(N-1)]. Both disjoint and overlap1 covariances vanish; overlap>=2 probability is bounded by[k(k-1)]²/[2N(N-1)] and each covariance byB².', 'geometry': 'If the ACTUALfixedquery family remains matterdegree>=2 in the same scalarfeatures around the SAMEscalarfree rho0, derivativekernels K_j have the same degeneracy forj0..2. Thus the corresponding normalvector derivatives obey the sameconstant withB_j=||D^jK||. ExactIIDgeometric2jets themselves hold without this extraoperator-degeneracy premise.', 'physicalsource': 'For a constant prep multiplier gamma in S=-gamma logq/logphi (or an independently proved gradient-prefactor, not the action gamma(q)logq), q>=mu, a matter tangent ofFULLpurification normL_N gives |DS|/signal<=2gamma B k(k-1)L_N/[mu logphi signal sqrt(2N(N-1))]. If L_N<=ell sqrtN and all otherbudgetfactors arecontrolled this isO(N^-1/2). Generic shrinking Hilbertnormal WITHOUTthis tangentscale argument proves no physicalstationarity.', 'scope': 'This uses the ACTUALfullpolynomial kernel and original productinput, retaining spatialL, allCAR and fullRIGHT. It is a quantitative approximate conditional-prep consumer at a fullmixed-domain criticalcentre, not an exactfiniteNroot, arbitrarybackground theorem, freecopy/PREP admission, oldHJR/upstreamcost control or fullBook/GR closure.'}
+
 def append_only_source_provenance(root):
     owner='02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md'
     raw=(Path(root)/owner).read_bytes()
@@ -2871,6 +2947,7 @@ def main():
         necessary_global_probability_clock=golden_global_probability_clock_bound(args.root),
         actual_curved_centre_clock=curved_centre_forced_clock(args.root),
         coherent_quadratic_approx_preparation=coherent_hodge_approx_preparation(args.root),
+        full_polynomial_vacuum_preparation=full_polynomial_hoeffding_prep(args.root),
         full_D0_price_selected=False, generic_joint_recovery=False, GR_closed=False)
     output = json.dumps(result, ensure_ascii=False, indent=2, default=str)+'\n'
     if args.output:

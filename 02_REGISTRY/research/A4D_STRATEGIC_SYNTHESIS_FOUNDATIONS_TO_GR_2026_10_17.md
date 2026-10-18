@@ -2730,3 +2730,40 @@ upstream H/J/R, fixedRIGHT/reference, all Lorentz/site rows and the genuine
 source denominator. New bounded identities consume these arrows; unchanged
 old expensive suites are pinned. Physical GR, global D0 closure and original
 raw#216 remain OPEN. Publication/checks do not change that status.
+
+### 7.24. Вакуумный consumer перенесён на ВЕСЬ actual polynomial kernel
+
+Inputfbe3613c; the next step after7.23 is now consumed in
+[full-source6.78](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+This does not substitute the quadratic trial for E_N. Constrain the actual
+query as before and keep its WHOLE symmetric order-k kernel K_g, all spatial
+L/address/higher-degree terms and boundB. At the scalar-free vacuum, the
+SAME observable-defined polynomial has zero derivative in EVERY tracezero
+Hermitian matter-density direction. Therefore its first conditional operator
+is exactly g₀I on the full data carrier. In the subset-average variance,
+intersection0 and1 covariances vanish. The remaining exact overlap bound gives
+
+    ||(A_N−g₀)Ψ₀^⊗N||≤B k(k−1)/√[2N(N−1)].
+
+Here Ψ₀ is the ORIGINAL complete product purification. All coherent clock/
+grade14, site and each copy's full RIGHT/reference Gram are retained exactly,
+without a new correlated-state ansatz. Finite entangling normals remain;
+their complete conditional preparation contribution now has an explicit
+controlled limit for the FULL polynomial. At fixedN its IID physical value/
+first/second jets are already exact. C² normal bounds additionally require
+the scalar-free neighbourhood structure or the actual moving fixedRIGHT
+pullback with all its kernel jets.
+
+The physical tangent norm is load bearing: with whole-purification velocity
+L_N≤ell_h√N, the log-source bound scalesO(N^-1/2) only AFTER keeping
+B,k, q-floor, the ALREADY owned physical signal and actual full-price
+prefactors. A one-body positive-effect hostile control has sphere normal
+O(N^-1/2) but finite simultaneous physical source, showing why ordinary
+LLN concentration would not suffice. The extra first-projection cancellation
+is the used premise. Supplied copies and their native price are not free;
+if coefficients depend onN the displayed source/copy inequalities must be
+checked jointly. This gives quantitative approximate vacuum MATTER-preparation
+criticality, not exact finite joint roots, free query-normal stationarity,
+upstreamHJR cancellation or native Book/PREP/copy admission. Those complete
+price/source equations remain the next physical transition. GR_closed=false;
+original raw#216 and the existing scope/norm are preserved.

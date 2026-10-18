@@ -1,5 +1,21 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — whole-polynomial vacuum preparation source with exact original input
+
+[Strategic7.24](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.78](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now consume the FULL fixed-query polynomial, retaining all spatialL and
+higher degrees. At the scalar-free vacuum its first conditional kernel is
+g₀I on the entire one-copy matter space. Exact cancellation of subset
+overlap0/1 gives normal≤B k(k−1)/√[2N(N−1)] on the ORIGINAL product
+purification: clock/grade14, site and each full RIGHT Gram remain exact.
+The actual physical lift norm, q-floor, owned signal and full-price factors
+are explicit; with controlled budgets and L_N=O(√N) the conditional matter
+source vanishesO(N^-1/2). The hostile one-body control prevents using a
+shrinking sphere normal alone as physical closure. No quadratic action is
+substituted. Exact finite joint roots, upstreamHJR, free query normals and
+native Book/PREP/copy price remain open; GR_closed=false, raw#216 OPEN.
+
 ## 18 October 2026 — derived upper clock and coherent approximate preparation
 
 [Strategic7.23](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

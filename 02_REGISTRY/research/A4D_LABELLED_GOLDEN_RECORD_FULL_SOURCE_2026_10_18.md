@@ -6635,6 +6635,110 @@ null roots, heat и Lean math не повторяются; prior owner bytes з�
 append-only provenance. GR_closed=false, full_D0_price_selected=false.
 
 
+### 6.78. Вакуумная preparation-нормаль ВСЕГО полинома: точное overlap cancellation вместо quadratic substitution
+
+Следующий consumer уже не заменяет actual E_N квадратичным действием.
+Пусть H_k — ТОТ ЖЕ symmetric Hermitian homogeneous kernel6.62/6.64,
+E_N — его exact subset average на N≥max(k,2) supplied copies. После
+constrained actual query compression ω_V(g)^⊗N имеем
+
+    A_N(g)=binom(N,k)^−1 Σ_|S|=k K_g,S,
+    K_g=Tr_query[H_k ω_V(g)^⊗k], ||K_g||≤B₀.     (13ir)
+
+В K_g сохранены ВСЕ higher-degree terms, actual spatialL, address weights
+и old AF multiplicities исходного polynomial. Ни kernel degreek, ни B_j
+не считаются малыми/равномерными без отдельного bound. Это finite-copy
+operator на прежнем ресурсе, а не новый feedback или физическая цена.
+
+На scalar-free vacuum section6.61 actual data purification факторизуется
+Ψ₀=Γ_(site,AF,ref)⊗m₀, m₀=√p|1>+√(1−p)|14>. Site/old RIGHT/ref128
+в Γ не выбраны удобным column и могут быть correlated. Both fixed13gs
+scalar/top coherences равны0. При scalar-free Taylor centre6.64 все
+matter dependence near query остаётся degree≥2 в этих linear readings.
+Поэтому для КАЖДОГО tracezero Hermitian X, не только physical tangents,
+
+    D_ρ g_ℓ(ρ₀)[X]=0,
+    K_(g,1):=Tr_(2..k)[K_g ρ₀^⊗(k−1)]=g₀(g)I,
+    g₀=Tr(K_gρ₀^⊗k).                            (13is)
+
+Proof второго equality: derivative равна kTr(K_(g,1)X); orthogonality
+ко всем tracezero Hermitian matrices даёт scalarI, trace сρ₀ определяет
+scalar=g₀. Rank-deficientρ₀ не мешает: первая equality — polynomial
+identity на affine Hermitian space, не вывод из одностороннего PSD cone.
+Если разрешены лишь выбранные physical variations, этот вывод неверен.
+Для nonzero matter background generic cancellation не утверждается.
+
+Действуем actualA_N на ORIGINAL product purification Ψ₀^⊗N, с kernel
+identity на ВСЕХ reference factors. В squared residual expand ordered
+pairs subsets S,T. При |S∩T|=0 covariance0 по product factorization;
+при |S∩T|=1 она ТОЧНО0 по(13is). Для остальных pairs state Cauchy даёт
+|cov(K_S,K_T)|≤Var(K)≤B₀². Hypergeometric intersection obeys
+P(|S∩T|≥2)≤E binom(|S∩T|,2)=[k(k−1)]²/[2N(N−1)]. Значит
+
+    ||(A_N−g₀)Ψ₀^⊗N||
+          ≤B₀ k(k−1)/√[2N(N−1)].                (13it)
+
+Это ОЦЕНКА ВСЕГО specified polynomial operator на full purification,
+включая entangling normals6.67. Они nonzero finiteN, но controlled limit
+теперь дан без affine-quadratic surrogate и без изменения marginal.
+Каждая исходная data density и clock-density сохранена ТОЧНО; полный
+N-copy RIGHT/reference Gram равен прежнему σ_R^⊗N. Не объявляется, что
+128^N reference carrier есть один reference128 или что N supplied copies
+бесплатны/клонируются. Умножение нормали на physical tangent norm и
+деление на actual signal остаются следующими явными операциями.
+
+Более того, IID expectation identity — ТОЧНАЯ при каждомN:
+Tr[A_N(g)ρ(g)^⊗N]=g_ℓ(ω_V(g)⊗ρ(g)). Её physical value/first/second
+jets совпадают после настоящего moving-encoder pullback, а не только
+в N→∞. Это прежний источник6.64, не новая универсальная geometry.
+Для FIXED vacuumρ₀ и neighbourhood, где mixed first derivative в(13is)
+исчезает тождественно, то же доказательство для D_g^jK_g даёт
+
+    ||D_g^j[(A_N−g₀)Ψ₀^⊗N]||
+          ≤B_j k(k−1)/√[2N(N−1)], j≤2.          (13iu)
+
+Если physical Γ/clock/frame движется, требуется actual owned fixedRIGHT
+unitary pullback к fixedΨ₀; его k-copy jets входят в B_j. Одного
+совпадения marginals для этого не хватает. При отсутствии этого map
+утверждается исходная exact IID pullback identity, а не выдуманная
+uniformC² normal. Curved nonzero-matter centre не подменяет vacuum
+neighbourhood premise.
+
+Для S=−logq/logφ, q=g₀≥μ>0, bounded-speed physical preparation lift
+||dotΨ_N||≤L_N и σ_h — УЖЕ заданного physical signal (напримерν528K g_t с его
+объявленными factors), не свободной перенормировки, имеем
+
+    |D_prep S|/σ_h
+      ≤√2 B₀k(k−1)L_N/[μ logφ σ_h √[N(N−1)]].    (13iv)
+
+Для истинного retained-mean law6.66 RHS дополнительно умножается на
+его actualγ=κ(g₀)>0; moving prefix/raw normalizer/clock/work не исчезают.
+Если L_N≤ℓ_h√N, достаточно γ_N B₀k(k−1)ℓ_h/(μσ_h√(N−1))→0
+(γ_N=1 для MAP, actualκ(g₀) для proved mean-gradient bridge), наряду
+с исходным deFinetti copy/compile budget. При controlled N-independent
+factors toleranceε обеспечивается N−1≥[√2γ B₀k(k−1)ℓ_h/
+(ε μlogφσ_h)]² вместе с N>8BD²k/min(m,1−M), μ=m/2. Нельзя держать B,k,μ,σ или
+ℓ неучтёнными при h→0. Это explicit finite, возможно enormous N
+choice внутри условно supplied-copy programme, не native-cost theorem.
+
+**Hostile control нормы необходим.** U_N=ΣX_r/N, Ψ=|0>^⊗N имеет
+sphere residual1/√N, но simultaneous single-copy rotation даёт derivative2
+и state velocity√N. Поэтому generic LLN smallgradient НЕ доказывает
+physical stationarity. Здесь дополнительное exact first-projection
+cancellation улучшает residual до1/N, и physicalL_N сохранён в(13iv).
+Если допустимые entangling tangent speeds растут быстрее, их собственный
+L_N должен быть подставлен, а не исключён из variation domain.
+
+Потреблён новый load-bearing переход: actual full-polynomial vacuum
+preparation component имеет controlled approximate stationarity,
+с ТОЧНО сохранёнными исходными clocks/RIGHT/site и source jets на IID
+section. Exact finite joint roots, source recovery inverse, native query/
+PREP/copy admission и полная цена upstreamH/J/R/Book не выведены из этого.
+Их equations не отменены слабостью нормали отдельного detector. Вместе
+с6.76 это два условных математических перехода к vacuum source limit;
+физический D0→ОТО terminal остаётся OPEN до SAME whole-price map.
+
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная
