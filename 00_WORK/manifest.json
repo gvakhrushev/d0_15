@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
-    },
-    {
-      "id": "WRK-A4D-MATTER-ON-DRESSED-METRIC",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The owned CAR16 and Fock chronological feedback metric response is evaluated on the density-dressed metric and on the raw metric. The record states an explicit stress built from owned correlators on the dressed metric, or a scoped no-go. The stress is not defined to equal the Einstein tensor.",
-      "brief": "00_WORK/tasks/WRK-A4D-MATTER-ON-DRESSED-METRIC.md"
     }
   ]
 }
