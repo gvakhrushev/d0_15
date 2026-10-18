@@ -12,6 +12,29 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: actual preparation Euler and same-source nonlinear stress
+
+Input318f0891; previous goal turn PROGRESS: full archived history,
+fixed native input response, correlated RIGHT/ref lift and targeted
+same-price limits were published, with exact-head Draft CI. Continue
+through the actual full-source/preparation transition, rather than a
+new normalization or arbitrary detector. Root owns this brief and the
+same primary/full-source/strategic/current-route/checker/receipt paths.
+Read-only premises use /tmp: (1) solve or refute the true fixedFULLRIGHT
+preparation Euler of the Hodge family on the literal old operator,
+including full current and all available grades; (2) construct BOTH
+actual direct-density operands from existing raising/transport access
+and the SAME unknown input with no amplitude-to-angle oracle, retaining
+clock/frame/normalization jets and full failures; (3) test the proposed
+spin2 bootstrap on the SAME scalar cubic Ward, distinguishing naked-star
+Schur and passive embedding Ward from the whole native action. Consumer:
+§6.62→actual coherent query/full-price joint recovery. Preserve old H/J/R,
+all source normals, real/complex and full-history domains. Smallest
+checks are one exact spectral/preparation identity and source bound,
+one actual anchored-code/source construction, and the mixed Noether
+identity. No extra physical action, selector, frozen preparation or new
+research execution; unchanged expensive suites remain pinned.
+
 ### 18 October: full retained-history and actual field-input consumer
 
 Input f28d4240; previous goal turn PROGRESS: published exact golden

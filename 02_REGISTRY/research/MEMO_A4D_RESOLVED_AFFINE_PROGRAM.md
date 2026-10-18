@@ -23,7 +23,23 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-Current operational consumer:
+Current full-source consumer:
+[strategic§7.21](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source§§6.63–6.65](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The locally pure Hodge/clock section has a uniform oldflat-v8
+preparation-normal obstruction for ALL RIGHT correlations. A mixed
+isospectral control solves preparation but has different full CAR
+stress; keep all grades/source contributions. The targeted WHOLE-bank
+anchored code plus SAME unknown input now constructs both direct-density
+operands and exact2sourcejets on the supplied internal clock section,
+conditional on actual query/PREP/copy resources. The old q-only cubic
+metric–scalar Ward fails; the existing volume-dressed Jq source passes
+it exactly. Next consume actual native/full Book price and its complete
+joint normals, including clock/prep/embedding mixed jets. Do not repeat
+arbitrary detector design or identify naked-star Schur with whole-price
+PF dynamics. Physical selection/recovery and raw#216 remain open.
+
+The preceding archive/input consumer:
 [strategic §7.20](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source §§6.59–6.62](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 A fresh common execute-all detector preserves all old archive/ref

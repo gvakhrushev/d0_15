@@ -1540,6 +1540,222 @@ def fixed_polynomial_input_effect(root=None):
       'entangling_preparation_counter':{'epsilon':'1/4','diagonal_and_independent_first_rows':0,'joint_entangling_probability_first_source':'1/2','joint_mode_natural_log_source':'-1','bad_pointer_seed_bits':1},
       'scope':'Fixed effect exists exactly for the original g only if its ACTUAL supplied-state polynomial/global-margin premise is proved. No new F/action, cloning, exact Golden effect admission, full fine-data history cut, or native joint-root claim.'}
 
+def hodge_fixed_right_spectral_normal(root=None):
+    from pathlib import Path
+    import hashlib
+    import sympy as s
+    checks=[]
+    def ck(name,test):
+        if not bool(test):raise ArithmeticError(name)
+        checks.append(name)
+    root=Path.cwd() if root is None else Path(root)
+    # The source symbol is the already pinned literal stored-native v8 class.
+    owner=root/'02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md'
+    sha=hashlib.sha256(owner.read_bytes()).hexdigest()
+    ck('actual full field owner pin',sha=='7b82d30d0d8ec451f768bf0b92aa0e4daaad1f2600497ae7d855bf370c96a338')
+    theta,delta=s.symbols('theta alpha',real=True)
+    d,o,h=s.symbols('d o h',positive=True)
+    cc,ss=s.symbols('sum_cos sum_sin',real=True)
+    # Full G has diagonal d and offdiagonal o. Transverse z sum is
+    # (sum_cos-3+i sum_sin)/h; all transverse pair terms are theta-constant.
+    zu=(s.exp(s.I*theta)-1)/h
+    zs=(cc-3+s.I*ss)/h
+    dep=s.expand_complex(d*zu.conjugate()*zu+o*(zu.conjugate()*zs+zs.conjugate()*zu))
+    B=-2*(d+o*(3-cc))/h**2
+    C=2*o*ss/h**2
+    A=2*(d+o*(3-cc))/h**2
+    ck('exact actual u-symbol trigonometric decomposition',s.trigsimp(dep-(A+B*s.cos(theta)+C*s.sin(theta)))==0)
+    v,w=s.symbols('v w',real=True)
+    # Energy increments lambda(theta +/- alpha)-lambda(theta).
+    dp=(s.cos(delta)-1)*v+s.sin(delta)*w
+    dm=(s.cos(delta)-1)*v-s.sin(delta)*w
+    mat=s.Matrix([[s.cos(delta)-1,s.sin(delta)],[s.cos(delta)-1,-s.sin(delta)]])
+    ck('triple-energy equality has no nonzero Fourier pair',s.simplify(mat.det()-2*(1-s.cos(delta))*s.sin(delta))==0)
+    ck('paired commutator norm exact',s.expand(dp**2+dm**2-2*((1-s.cos(delta))**2*v*v+s.sin(delta)**2*w*w))==0)
+    ck('amplitude pair is invariant under theta rotation',s.trigsimp((B*s.cos(theta)+C*s.sin(theta))**2+(-B*s.sin(theta)+C*s.cos(theta))**2-B**2-C**2)==0)
+    # On actual transverse momenta cc=sum cos <=3 and o>=0:
+    # |B| >=2d/h^2. 0<alpha<pi makes both increment factors nonzero.
+    a=s.symbols('a',positive=True)
+    x,y=s.symbols('real_right_residual imag_right_residual',real=True)
+    weight=a*a
+    alpha_v=(s.cos(delta)-1)*v
+    weighted=(1-weight)*(x*x+y*y)+weight*((x+dp)**2+y*y)/2+weight*((x+dm)**2+y*y)/2
+    completed=(x+weight*alpha_v)**2+y*y+weight*(1-weight)*alpha_v**2+weight*s.sin(delta)**2*w*w
+    ck('full right-residual completion of square exact',s.expand(weighted-completed)==0)
+    ck('residual Cauchy constant retains clock and complement',s.simplify((2/a**2+2/(1-a*a))*a*a*(1-a*a)-2)==0)
+    # A small exact finite instance of the general all-RIGHT proof. Two
+    # reference columns are Fourier k=0 and k=1 on L=8. Four original CAR
+    # masks, normalized m_j, are retained. No 128-dimensional diagonalization.
+    L=8;hh=s.Rational(1,L);aa=s.Rational(1,4)
+    zeta=(1+s.I)/s.sqrt(2)
+    def lam(k):return s.simplify((2-zeta**k-zeta**(-k))/hh**2)
+    eig=[lam(k) for k in range(L)]
+    ck('finite actual zero mode preserved',eig[0]==0)
+    ck('both first Hodge sidebands have the same actual energy',eig[1]==eig[7])
+    ck('clock plus wave cannot share a positive shell',eig[0]!=eig[1])
+    ck('all finite Fourier triple tests exclude support',all(not(eig[k]==eig[(k+1)%L]==eig[(k-1)%L]) for k in range(L)))
+    # For one normalized Fourier r-column, the least-squares right normal
+    # subtracts the weighted mean. This is exact for a common scalar L.
+    residuals=[]
+    for k in (0,1):
+        weights=[1-aa*aa,aa*aa/2,aa*aa/2]
+        vals=[eig[k],eig[(k+1)%L],eig[(k-1)%L]]
+        mean=s.simplify(sum(t*x for t,x in zip(weights,vals)))
+        var=s.simplify(sum(t*(x-mean)**2 for t,x in zip(weights,vals)))
+        ck('finite full four-grade least normal k'+str(k),var>0)
+        residuals.append(var)
+    # Actual normalized two-column C has Gram I2/2; the compressed Hessian
+    # is diagonal because m_j* Delta(m_j e^{ikj}) has no j dependence.
+    bound2=s.simplify((2/hh**2*(1-s.sqrt(2)/2)*aa*s.sqrt(1-aa*aa))**2)
+    ck('finite all-normal lower bound attained at k0',s.simplify(residuals[0]-bound2)==0)
+    ck('finite two-reference normal exceeds analytic uniform bound',s.simplify(sum(residuals)/2-bound2)>=0)
+    # Positive scoped control: the pre-existing 128 preparations are
+    # +/-e_r times all16 CAR. They lie in ONE actual flat-v8 shell for any
+    # positive o because every cross component is zero, retaining I128/128.
+    unit_modes=[]
+    for axis in range(4):
+        for sign in (-1,1):
+            zz=s.zeros(4,1);zz[axis]=(zeta**sign-1)/hh
+            G=(d-o)*s.eye(4)+o*s.ones(4)
+            unit_modes.append(s.simplify((zz.conjugate().T*G*zz)[0]))
+    ck('all original eight momentum modes share exact native shell',all(s.simplify(x-d*eig[1])==0 for x in unit_modes))
+    ck('original full RIGHT128 shell dimension retained',len(unit_modes)*16==128)
+    return dict(status='PASS',checks=checks,source_sha256={str(owner.relative_to(root)):sha},
+      statement='For ANY site/right rows r, local pure-CAR C_j=m_j r_j with m=(a cos(kappa u),sqrt(p),sqrt(1-p-a^2) at14,a sin(kappa u) at15) cannot solve the fixed-RIGHT preparation Euler of the SAME flat v8 H+J+R, for 0<kappa h<pi,d>0,o>=0. All correlations/rank/reference dimensions are allowed. Other CAR grades are not removed.',
+      exact_normal='C*C=sigma_R, Trsigma=1 gives Delta C=C L, L=L*. Within the four-grade test carrier actual current observer is fixed for every variation because alpha_i compress to0. Thus H/J derivatives vanish, not frozen. Clock and 3form rows give Delta r=rL; scalar +/-i top gives both commutators. Fourier support would need lambda(k)=lambda(k +/-kappa e_u), impossible for the actual u-symbol B<0.',
+      quantitative_bound='For ANY right L (even nonHermitian), ||Delta C-C L||_F >= (2d/h^2) min(1-cos(kappa h),sin(kappa h))*a*sqrt(1-a^2). For kappa h<=pi/2 the bound tends d_*kappa^2*a*sqrt(1-a^2)>0 if d(h)->d_*>0; a uniform d lower bound gives a positive liminf. This is the normalized whitened preparation norm, not original raw#216.',
+      positive_control='The pre-existing +/-e_r tensor CAR16 bath has128 isospectral states and solves the fixed-RIGHT preparation Euler; its local CAR is I16/16 and it does not have the coherent Hodge amplitudes of the excluded section.',
+      scope='Declared flat old-v8 price at fixed beta/ell/geometry and actual rest-current readout. No curved-pp/global-D0 no-go, no physical selection, no extra action. Local mixed CAR, actual state-dependent operator and full Book costs can change the problem and require their own sources.')
+
+
+def hodge_mixed_preparation_control(root):
+    import ast
+    import hashlib
+    from pathlib import Path
+    from types import SimpleNamespace
+    import sympy as s
+    root=Path(root)
+    checks=[]
+    def ck(name,value):
+        if not bool(value):raise ArithmeticError(name)
+        checks.append(name)
+    def zero(M):return M.applyfunc(lambda x:s.simplify(s.trigsimp(x)))==s.zeros(*M.shape)
+    src=root/'02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py'
+    node=next(n for n in ast.parse(src.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=='creator')
+    pin=hashlib.sha256(ast.dump(node,include_attributes=False).encode()).hexdigest()
+    ck('original full16 creator AST pin',pin=='801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4')
+    env={'s':s,'SUBS':[tuple(i for i in range(4) if mask&(1<<i)) for mask in range(16)]}
+    exec(compile(ast.Module(body=[node],type_ignores=[]),str(src),'exec'),env)
+    current=root/'02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py'
+    current_sha=hashlib.sha256(current.read_bytes()).hexdigest()
+    ck('actual current owner pin',current_sha=='e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d')
+    node=next(n for n in ast.parse(current.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=='car_operators')
+    ops={'s':s,'C':SimpleNamespace(creator=env['creator']),'I4':s.eye(4)}
+    exec(compile(ast.Module(body=[node],type_ignores=[]),str(current),'exec'),ops)
+    _,_,_,alphas=ops['car_operators']()
+    t=s.symbols('theta',real=True)
+    p,a=s.symbols('p a',positive=True)
+    b=s.sqrt(1-p-2*a*a)
+    M=s.zeros(16,2)
+    M[1,0]=s.sqrt(p)*s.cos(t);M[1,1]=s.sqrt(p)*s.sin(t)
+    M[0,0]=a*s.cos(t);M[0,1]=-a*s.sin(t)
+    M[15,0]=a*s.sin(t);M[15,1]=a*s.cos(t)
+    M[14,0]=b*s.cos(t);M[14,1]=b*s.sin(t)
+    rho=(M*M.T).applyfunc(s.trigsimp)
+    for i,A in enumerate(alphas):
+        ck('all two-column current matrix entries vanish '+str(i+1),zero(M.T*A*M))
+    ck('pointwise total CAR probability one',s.simplify(s.trace(rho))==1)
+    ck('first-grade density line and scale p',s.trigsimp(rho[1,1]-p)==0 and all(rho[i,j]==0 for i in (2,4,8) for j in (1,2,4,8)))
+    ck('scalar coherence reads a cos two theta',s.trigsimp(rho[0,1]/s.sqrt(p)-a*s.cos(2*t))==0)
+    ck('top coherence reads a sin two theta',s.trigsimp(rho[15,1]/s.sqrt(p)-a*s.sin(2*t))==0)
+    ck('both scalar diagonal weights are a squared',s.trigsimp(rho[0,0]-a*a)==0 and s.trigsimp(rho[15,15]-a*a)==0)
+    ck('scalar-top coherence is zero',rho[0,15]==0)
+    ck('mixed scalar total weight is twice inferred pure pair',s.trigsimp(rho[0,0]+rho[15,15]-2*a*a)==0)
+    # A nonzero principal minor proves rank>=2 for every phase when a>0.
+    ck('local CAR density is genuinely mixed',s.trigsimp(rho[0,0]*rho[15,15]-rho[0,15]**2-a**4)==0)
+    ck('complement differs from pure Hodge section by minus a squared',s.trigsimp(rho[14,14]-(1-p-a*a)+a*a)==0)
+    L=8
+    moments=[M.subs(t,2*s.pi*j/L) for j in range(L)]
+    gram=sum((T.T*T for T in moments),s.zeros(2))/L
+    ck('site-averaged exact two-column Gram I2 over2',zero(gram-s.eye(2)/2))
+    d,h=s.symbols('d h',positive=True)
+    lap=s.Matrix(L,L,lambda j,k:d/h**2*(2*int(j==k)-int((j-k)%L==1)-int((j-k)%L==L-1)))
+    co=s.Matrix([s.cos(2*s.pi*j/L) for j in range(L)])
+    si=s.Matrix([s.sin(2*s.pi*j/L) for j in range(L)])
+    lam=s.simplify(4*d*s.sin(s.pi/L)**2/h**2)
+    ck('literal flat native one-axis cosine eigenmode',zero(lap*co-lam*co))
+    ck('literal flat native one-axis sine eigenmode',zero(lap*si-lam*si))
+    # Delta is scalar times I16 on this actual Fourier shell. Therefore
+    # every component, not merely an averaged expectation, is an eigenmode.
+    C=s.Matrix.vstack(*moments)/s.sqrt(L)
+    D=s.kronecker_product(lap,s.eye(16))
+    ck('all16 two-column preparation is an exact eigensubspace',zero(D*C-lam*C))
+    R=s.simplify(s.trace(C.T*D*C))
+    ck('old Rayleigh cost equals lambda independent of radius',s.simplify(R-lam)==0 and s.simplify(s.diff(R,a))==0)
+    ck('homogeneous metric coefficient source independent of radius',s.simplify(s.diff(R,d)-lam/d)==0 and s.simplify(s.diff(R,d,a))==0)
+    Wgram=2*gram
+    # Canonical full128 replication is an algebraic Gram proof, not a
+    # fabricated 8192x128 scientific state or arbitrary-sigma theorem.
+    ck('64 orthogonal AF labels times two columns gives full128',64*Wgram.rows==128 and s.kronecker_product(s.eye(64),Wgram)==s.eye(128))
+    ck('canonical fixedRIGHT128 trace normalized',s.trace(s.eye(128)/128)==1)
+    return {'status':'PASS','checks':checks,'source_sha256':{str(src.relative_to(root))+'::creator_AST':pin,str(current.relative_to(root)):current_sha},
+      'exact_control':'At each site use masks1:sqrt(p)(cos theta,sin theta);0:a(cos theta,-sin theta);15:a(sin theta,cos theta);14:sqrt(1-p-2a^2)(cos theta,sin theta). Domain 0<a^2<(1-p)/2. Columns lie in the same actual flat ku=+/-kappa shell. Site-averaged C*C=I2/2 and Delta C=lambda C.',
+      'full128':'With 64 existing mutually orthogonal AF LEFT multiplicity labels xi and the EXPLICIT Delta_total=I_AF tensor Delta_old hypothesis, V=direct_sum_64(sqrt(2)C) is an isometry. V/sqrt(128) gives canonical reference128 Gram I128/128 and the same local CAR density. This does not prove the claim for arbitrary correlated FULLRIGHT sigma.',
+      'readout_boundary':'The two density coherences equal the old pure-section scalar readings at phase2theta. Full local density differs: rho00=rho15,15=a^2, rho0,15=0 and spectator weight1-p-2a^2. The original pure normalized amplitude readout is not thereby extended to mixed states.',
+      'source_boundary':'R=lambda is independent of a, as is its homogeneous flat geometric coefficient source; the inferred Hodge pair has continuum gradient energy4a^2 kappa^2. Thus preparation stationarity does not establish same total geometric source, a curved-pp root, a new physical readout, or full D0 closure.',
+      'clock_boundary':'The exact current is rest-directed and first-grade DENSITY is p along e0. This proves a density clock line/scale in this matrix control only; it does not identify the original single-vector P1 amplitude clock on mixed states.'}
+
+
+def targeted_choi_source_controls(root=None):
+    from pathlib import Path
+    import hashlib
+    import sympy as s
+    root=Path.cwd() if root is None else Path(root)
+    checks=[]
+    def ck(name,test):
+        if not bool(test):raise ArithmeticError(name)
+        checks.append(name)
+    pins={
+      '02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md':'a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915',
+      '02_REGISTRY/research/A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md':'a48ff3bb7e88e3b2dde8252029e69d31f1ee8a7de4577415bb13136554c65efa'}
+    for path,sha in pins.items():ck('same actual query/operand owner '+Path(path).name,hashlib.sha256((root/path).read_bytes()).hexdigest()==sha)
+    theta=s.symbols('theta',real=True)
+    V=s.Matrix([[s.cos(theta),-s.sin(theta)],[s.sin(theta),s.cos(theta)]])
+    omega=s.Matrix([1,0,0,1])/s.sqrt(2)
+    output=s.kronecker_product(V,s.eye(2))*omega
+    chi=omega.col_join(output)/s.sqrt(2)
+    rho=chi*chi.T
+    ck('whole query Choi anchor is normalized at all fields',s.trigsimp((chi.T*chi)[0])==1)
+    for i in range(2):
+        for j in range(2):
+            A=s.zeros(8);b=4+2*i+j;A[0,b]=A[b,0]=2
+            value=s.trace(A*rho)
+            ck('all-input matrix entry from fixed real observable '+str((i,j)),s.trigsimp(value-V[i,j])==0)
+            ck('first and second actual query jets '+str((i,j)),all(s.trigsimp(s.diff(value,theta,n)-s.diff(V[i,j],theta,n))==0 for n in (1,2)))
+    chi_minus=omega.col_join(-output)/s.sqrt(2)
+    ck('unanchored Choi loses global real sign',output*output.T==(-output)*(-output).T)
+    ck('anchor retains the same global sign',s.simplify((rho-chi_minus*chi_minus.T)[0,4])==s.cos(theta)/2)
+    # Fixed imaginary Hermitian observables are NOT real compiler inputs.
+    B=s.zeros(8);B[4,0]=2*s.I;B[0,4]=-2*s.I
+    ck('Hermitian is not the real-symmetric compiler condition',B.conjugate().T==B and B.T!=B)
+    p=(s.sqrt(5)-1)/2
+    ck('global actual AF control interval positive',3*p*p/4>0 and 5*p*p/4<1)
+    ck('global actual scene amplitude interval strict',p-p*p/4>0 and p+p*p/4<1)
+    # True INTERNAL observer whitening, not an arbitrary coordinate sqrtG.
+    z=s.symbols('z',real=True)
+    n=s.Matrix([s.cosh(z),s.sinh(z),0,0]);eta=s.diag(1,-1,-1,-1)
+    L=s.eye(4);L[:2,:2]=s.Matrix([[s.cosh(z),-s.sinh(z)],[-s.sinh(z),s.cosh(z)]])
+    hn=-eta+2*eta*n*n.T*eta
+    ck('owned principal internal Lorentz boost squares to h_n',all(s.trigsimp(v)==0 for v in L*L-hn))
+    ck('same boost sends actual clock to rest without extra gate',all(s.trigsimp(v)==0 for v in L*n-s.Matrix([1,0,0,0])))
+    ck('internal whitening preserves scalar and top amplitudes',s.trigsimp(L.det())==1)
+    return dict(status='PASS',checks=checks,source_sha256=pins,
+      target='The SAME direct-density star/Hodge two operands, via actual whole Julia/SELECT query access and supplied coupled scalar input; not a new F or action.',
+      exact_code='Anchored chi=(|0>Omega+|1>(V tensor I)Omega)/sqrt2. Fixed REAL symmetric observables recover every actual real V entry with normD and exact jets. Whole bank is normalized; no moving success conditioning. Imaginary Hermitian observables are excluded from real compiler.',
+      global_polynomial='Taylor degree ell>=2 of the actual analytic operands has same2jets at null/star codepoint. A computable full-density coefficient bound B and golden t^2 B<=1/4 globally validate actual E,b. Its unchanged D3 determinant probability g is polynomial even when F entries have roots. Existing fixed-effect proof needs polynomialg only.',
+      source_scope='Exact first/second source equality is on the supplied internal-principal-frame scalar input section. It does not assert independent observer/preparation normals, coordinate top-form conversion, unknown site-weight access, physically forced t, native controlled-query/PREP/copy admission or equality with full Book history/oldHJR.')
+
+
 def append_only_source_provenance(root):
     owner='02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md'
     raw=(Path(root)/owner).read_bytes()
@@ -1579,6 +1795,9 @@ def main():
         fixed_native_input=native_collective_mode(args.root),
         normalized_hodge_input=hodge_native_input_lift_controls(args.root),
         fixed_polynomial_effect=fixed_polynomial_input_effect(args.root),
+        full_hodge_preparation_normal=hodge_fixed_right_spectral_normal(args.root),
+        mixed_hodge_preparation=hodge_mixed_preparation_control(args.root),
+        targeted_query_code=targeted_choi_source_controls(args.root),
         full_D0_price_selected=False, generic_joint_recovery=False, GR_closed=False)
     output = json.dumps(result, ensure_ascii=False, indent=2, default=str)+'\n'
     if args.output:

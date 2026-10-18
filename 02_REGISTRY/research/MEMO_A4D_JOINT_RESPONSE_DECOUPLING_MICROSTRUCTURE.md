@@ -1,5 +1,45 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — actual preparation normal, both query sources and nonlinear stress test
+
+[Strategic§7.21](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source§§6.63–6.65](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+replace three remaining sketches with concrete results. FixedRIGHT
+preparation stationarity is [Δ,CC*]=0, with the true Hermitian right
+multiplier and all current-preserving normals retained. The SAME locally
+pure Hodge/clock input cannot satisfy it for ANY site/reference
+correlations in the literal flat old-v8 class. A quantitative normal
+bound stays positive under its stated refinement; phases/ref mixing
+cannot repair that branch. A genuine mixed-input eigenshell control
+closes preparation, but changes full CAR density and does not have the
+same geometric stress as its two inferred scalar coherences.
+
+A targeted anchored code of the WHOLE actual Julia bank plus the SAME
+unknown input now constructs BOTH direct-density operands without an
+amplitude-to-angle oracle. It includes the true internal clock section,
+volume/PF/normalization jets and failed columns. Fixed global polynomials
+of the actual operand functions have the exact2jets at the null/star
+point; their SAME detector probability has the existing positive
+finite-copy effect. Thus the conditional source bridge is constructive,
+with actual controlledquery/PREP/copies/resources explicit. Independent
+clock/prep normals and missing affine/site-weight data are not invented.
+
+The proposed spin2 bootstrap now has an actual mixed cubic test: the
+old q-only channel fails its metric-only Ward by a volume trace term;
+the already-owned direct-density Jq cancels it exactly off shell.
+This is a positive stress consistency result. Whole-price PF/gauge
+hypotheses and actual clock/prep/embedding cubic leakage still require
+same-source proof; passive covariance and a naked-star Schur are distinct.
+
+Continue through native/full-Book-price admission of this targeted
+programme and its actual joint normals/recovery, with the full mixed-CAR
+stress preserved. No new action, selector or frozen matter is introduced.
+Physical GR closure and original raw#216 remain OPEN. Concurrent
+f81846b7/e476c65b's finite-cylinder likelihood classification is integrated
+and consumed in strategic7.21. The actual conditional positive effect has
+M_good=E_N/p,M_bad=(I−E_N)/p²; this instantiates the measured-operator
+likelihood without imposing q=mu. Physical native/Info binding is separate.
+
 ## 18 October 2026 — immutable archive, genuine unknown-input source and full preparation
 
 [Strategic §7.20](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

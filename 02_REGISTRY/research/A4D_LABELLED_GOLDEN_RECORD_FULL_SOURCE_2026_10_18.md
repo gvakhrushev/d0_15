@@ -5536,6 +5536,291 @@ U₁(x)=G R(x) имеют один reference gate/cut/detector, но разны�
 field-to-return pullback. Нужен actual independently owned rule и
 refinement, а не ещё один вариант detector.
 
+### 6.63. FixedRIGHT preparation Euler: all-correlation obstruction и точный mixed control
+
+Теперь проверяется СОБСТВЕННАЯ preparation equation старого исполнения,
+а не только существование normalized input. При C*C=σ_R, Trσ_R=1,
+на support σ_R и fixed actual operator/β/ell старая цена имеет
+R=Tr(C*ΔC), а H,J не зависят от C. Её constrained Euler равен
+
+    ΔC=CΞ, Ξ=Ξ*, [Ξ,σ_R]=0,
+    эквивалентно [Δ,CC*]=0.                       (13gn)
+
+Для nonuniform σ_R одной invariance ranC недостаточно. При singular
+σ_R работают на её носителе: Gram-zero columns не приобретают норму.
+На исходных masks{0,1,14,15} actual α_i compress to0 для ВСЕХ
+amplitudes, включая arbitrary RIGHT correlations. Поэтому variations
+внутри этого test carrier действительно сохраняют full-current observer
+line; это не freezing его source. Остальные12 grades остаются частью
+полного carrier и только добавляют equations. Clock SCALE этим не
+выводится из raw local density: fixed β/ell — явная область old-v8 price.
+
+**Нельзя спасти ту же pure Hodge section выбором reference phases.**
+Пусть r_j — ПРОИЗВОЛЬНЫЕ site/AF/RIGHT rows, ||r||_F²=1. Сохраним
+локально чистую CAR section с 0<a²<1−p:
+
+    C1=√p r, C14=√(1−p−a²) r,
+    C0=a cos(κu)r, C15=a sin(κu)r.
+
+Это включает любой oldRIGHT/ref state, если он допускает такую section;
+продукт Fourier preparations из(13gi) не предполагается. Clock row
+в(13gn) даёт Δr=rΞ. Scalar±i top rows затем требуют
+[Δ,M_exp(±iκu)]r=0. Для actual FLAT old-v8 scalar symbol это означает
+для КАЖДОГО ненулевого Fourier row r_k. Если r дополнительно хранит
+LEFT_AF multiplicity, требуется тот же явно заданный identity tensor
+factor Δ_total=Δ_old⊗I_AF; один размер GNS этого не доказывает.
+
+
+    λ(k)=λ(k+κe_u)=λ(k−κe_u),
+    λ=z*[(d−o)I+o11*]z, z_r=(exp(ik_rh)−1)/h.
+
+При θ=k_u h, α=κh и fixed transverse momenta
+
+    λ(θ)=A+Bcosθ+Csinθ,
+    B=−2[d+oΣ_(r≠u)(1−cos k_rh)]/h²<0,
+    C=2oΣ_(r≠u)sin k_rh/h².                      (13go)
+
+Здесь d>0,o≥0, как в literal v8. Две energy differences равны
+(cosα−1)v±sinα w, где v=Bcosθ+Csinθ,w=−Bsinθ+Ccosθ.
+Для 0<α<π обе могут исчезнуть лишь при v=w=0, то есть B=C=0.
+Противоречие. Следовательно НИКАКИЕ r и fullRIGHT correlations не
+сделают ту же locally pure coencoded Hodge/clock family preparation
+root этого оператора. Не предполагалось, что каждый column — один mode.
+
+Есть количественная версия без выбора Ξ. Fourier norm decomposition
+и completion of square дают для ЛЮБОЙ right matrix Ξ, даже nonHermitian,
+
+    ||ΔC−CΞ||_F ≥ (2d/h²)min(1−cosα,sinα)a√(1−a²). (13gp)
+
+Действительно, при A_k=r_k(λ_k I−Ξ) полный residual² имеет веса
+1−a²,a²/2,a²/2 на A_k,A_k+δ_+r_k,A_k+δ_-r_k. После выделения
+квадрата остаётся
+[a²(1−a²)(1−cosα)²v²+a²sin²α w²]||r_k||².
+Используем v²+w²=B²+C²≥4d²/h⁴ и Σ||r_k||²=1.
+При fixed κ и d(h)→d_*>0 правая часть стремится к
+ d_*κ²a√(1−a²)>0. Uniform positive lower bound d даёт положительный
+liminf. Поэтому исчезновения нормального residual в этом refining
+классе тоже нет. Это normalized whitened preparation norm, не raw#216.
+Исходная128-state bath {±e_r}⊗CAR16 лежит в одной native eigenshell
+и удовлетворяет preparation Euler; пустоты всего native state space
+или невозможности всякой материи здесь не утверждается.
+
+**Mixed control показывает точную область препятствия.** На двух
+REAL reference columns зададим local16×2 matrix M(θ), θ=κu:
+
+    M1=√p(cosθ,sinθ), M0=a(cosθ,−sinθ),
+    M15=a(sinθ,cosθ),
+    M14=√(1−p−2a²)(cosθ,sinθ),
+    0<a²<(1−p)/2.                                 (13gq)
+
+Для C_j=M_j/√S site average даёт C*C=I2/2. Все entries — ±κ modes,
+поэтому ΔC=λκC, λκ=4d sin²(κh/2)/h². Full current restline, norm1
+и first-grade local DENSITY p постоянны. Обозначим ρ_loc=MM*=S(CC*)_jj;
+это точный rescaled block с known S, не новый измерительный cut.
+Две прежние coherence readings равны ρ_loc,01/√p=a cos2θ и
+ρ_loc,15,1/√p=a sin2θ. Но ρ_loc,00=ρ_loc,15,15=a², ρ_loc,0,15=0: ВСЯ local CAR density отличается от(13gi). Это не перенос
+original pure amplitude readout на mixed state без собственного закона.
+R=λκ и его homogeneous flat geometric source независимы от a, тогда
+как градиентная энергия inferred pair равна4a²κ² в пределе. Исправить
+preparation Euler недостаточно, чтобы получить тот же полный stress.
+
+Для canonical reference128 достаточно64 orthogonal AF LEFT labels и
+V=⊕_64(√2 C), C128=V/√128. Такой размер уже имеется в matched carrier,
+но eigenclaim требует ACTUAL Δ_total=I_AF⊗Δ_old на этих labels;
+размер GNS сам эту factorization не доказывает. Arbitrary correlated
+σ_R mixed-control theorem здесь не подменяется canonical I128/128.
+Ни curved pp Δ, ни physical PREP/clock selection, ни полный Book source
+не заменяются этим flat Fourier результатом.
+
+### 6.64. Оба actual operands из query-кода и того же unknown input
+
+Следующий конструктивный шаг потребляет ИМЕННО D1/D25
+[direct-density owner](A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md),
+а не ещё одну произвольную цену. Resources — already specified coherent
+access к WHOLE Julia/SELECT bank V из actual C(u_r),C(u_r)Λ(M_r),
+включая все defect/nonblank columns, known bare shifts и SAME input C.
+Physical generation этой full-Lorentz bank остаётся admission premise.
+
+На finite grid выберем strict REAL oriented inverse chart, oldLEFT
+counts w_x>0 и существующую null/star point. Здесь proper internal
+observer имеет n^Tηn=1,n0>0, h_n=−η+2ηnn^Tη. Его ПРЕЖНИЙ principal
+L_n=√h_n есть positive proper Lorentz boost: L_nηL_n=η, L_n n=e0,
+detL_n=1. Это не универсальное утверждение о coordinate sqrtG(q,J).
+На coupled input section Ψ=Λ(L_n)^−1 C(ψ0,ψ4) из(13gi′)
+локальный matter factor имеет P1=√p n, а его grade0/top amplitudes
+unchanged. В ПОЛНОЙ purification site/AF/ref factors сохранены;
+local grade1 density block равен(p/S)nn*, а не одному4-vector. Все L_n jets сохраняются. Полные
+независимые transverse preparation/clock normals этой section не
+объявляются параметризованными ею.
+
+**Anchored Choi PREP без moving success normalization.** Для full
+finite bank dimension D приготовим known Ω_D=D^−1/²Σ_j|j,j> и
+
+    |χ_V>=(|0>Ω_D+|1>(V⊗I)Ω_D)/√2, ω_V=|χ_V><χ_V|,
+    (ω_V)_(1,i,j;0,0,0)=V_ij/(2D).                (13gr)
+
+Нормировка равна1 вследствие unitarity ВСЕЙ V. Fixed REAL symmetric
+A_ij=D(|0,0,0><1,i,j|+transpose) имеет expectation ReV_ij и normD.
+Для real bank это ВСЕ нужные entries. Imaginary Hermitian observables
+не выдаются за real matrices: complex-query variant требует собственного
+complex compiler. Complex supplied matter inputs допустимы и с real effect.
+Anchor branch сохраняет global phase, которую unanchored Choi теряет.
+Known maxent/flag PREP и controlled query — фактические ресурсы, не
+новое разрешение готовить любое неизвестное состояние. При не-power-two
+размере требуется реальная known embedding/preparation; exact Golden
+uniform seed в любой размерности не постулируется.
+
+На fixed local density из(13gi′) два скаляра являются fixed observables
+ТОГО ЖЕ complete unknown input ρ_C:
+
+    ψ0(x)=S Reρ_C(x0,x1)/√p,
+    ψ4(x)=S Reρ_C(x15,x1)/√p,
+    σ=ω_V⊗ρ_C.                                   (13gs)
+
+Здесь reference/AF trace уже взят как настоящая reduced density, а не
+выбрана удобная reference column. Norm observables S/(2√p) сохраняется
+в bounds. Эти формулы читают scalar/top coefficients на данной coupled
+section, не всю mixed-CAR amplitude chart, как показывает(13gq).
+Если input хранится в coordinate basis m=Λ(F)ψ, top coefficient
+дополнительно делится на ACTUAL detF в том же oriented frame; determinant
+и все его jets входят из coframe query. Если используется coordinate
+4-form a4 dx^4, scalar coefficient равен a4/J. Без этого coordinate-top вариант
+не покрыт internal формулой. Если actual Hilbert whitening дополнительно
+содержит √ω_x, требуются его ACTUAL code и factors
+ψ0,raw=ψ0,code/√ω_x, ψ4,raw=ψ4,code/√ω_x со всеми jets. PF weight w_x
+не отождествляется с этим ω_x. На counting-site internal-L_n варианте
+такого дополнительного site factor нет.
+
+Actual raising-block reconstruction §§8.4–8.5, fixed clock/frame data и
+linear coordinates(13gr–gs) задают аналитически ОБА тех же operands:
+U_x=A_h,x/w_x и V_x=M_h,x/w_x, включая coframe, proper links,
+J=1/√(−det Q), finite differences и exact rational inverse-PF counts.
+Здесь M_h — сумма двух прежних Hodge Clifford squares с той же volume.
+Не вводится независимая метрика, scalar action или новая curvature Q.
+Старый access слеп к independent affine shift b; эти operands от b
+не зависят. Другие b-dependent price/source rows нуждаются в своём
+actual affine query, а injective encoder всего(q,D,b,m) не заявляется.
+
+**Finite polynomial для ЭТОГО источника.** Пусть y — fixed REAL matrix
+coordinates σ. На меньшем strict polydisc Taylor polynomials U_ℓ,V_ℓ
+actual analytic functions convergent через C³. При ℓ≥2 они имеют ТОЧНО
+те же value,first,second jets в выбранной null/star point. Это верно
+после actual joint field/input pullback; сохранены D²encoder terms.
+Если polynomial P(y)=Σc_α y^α, то
+
+    B(P)=Σ|c_α|∏||A_j||^(α_j) ≥ |P(σ)|
+
+для КАЖДОЙ density σ, не только физического code manifold. Возьмём
+B_ℓ=max(1,all B(U_ℓ),all B(V_ℓ)) и field-independent golden t²=p^m
+с t²B_ℓ≤1/4. Тогда во всём density domain
+
+    E_i=p²(1+t²U_ℓ,x)∈[3p²/4,5p²/4]⊂(0,1),
+    b_i=(p+varsigma p²t²V_ℓ,x)²∈(0,1).            (13gt)
+
+Это sufficient resource choice, не вынужденный physical clock schedule.
+Сам actual two-tick F имеет root entries и не обязан быть polynomial.
+Но его ПРЕЖНИЙ spectral factorization D3 даёт exactly polynomial
+вероятность ТОГО ЖЕ golden determinant detector:
+
+    B_i=4b_i(1−b_i), λ_i=4E_i(1−E_i),
+    g_ℓ(σ)=∏_i[(w₀−w₁B_i)
+           (w₀−w₁{λ_i+(1−λ_i)B_i})]^(2ν528D_type(i)),
+    (w₀−w₁)^(2d)≤g_ℓ≤w₀^(2d), degree g_ℓ≤12ℓd.  (13gu)
+
+Все дополнительные return complements входят своими actual constant
+factors и rankd. Polynomial g ДОСТАТОЧЕН для доказательства(13gl):
+polynomial F entries были sufficient stronger premise, а не нужной
+частью proof. Не подставляется диагональный surrogate вместо F.
+Поэтому существующий subset/de Finetti construction даёт один FIXED
+positive effect и real Naimark на finite N действительно supplied code
+copies. В идеальном effect на данной section/null point
+
+    DS_pointer=(2/logφ)DJ_loc(r),
+    D²S_pointer=(2/logφ)D²J_loc(r), r=p³/4.        (13gv)
+
+Это actual D9/D11, с λ_mat(r)=varsigma(33+27√5)/4 и всеми density,
+clock, PF, Cartan/metric/scalar chain terms данной section. Finite Hessian
+не объявляется чистым Einstein: его nonlinear D11 terms сохранены.
+Fixed Golden approximation имеет прежние ηN M1 и η[NM2+N(N−1)M1²]
+input error budgets с положительным floor и физическим signal divisor.
+N,D^N и maxent/query resources могут быть огромными; efficiency, free
+copies, forced native t(h) и подавление upstream price не выведены.
+
+Следовательно conditional query→BOTH-operands C² source теперь имеет
+конструктивного потребителя из actual access. Physical query/PREP/copy
+admission, полная pointer-vs-Book history, raw weight и дополнительные
+prep/clock/cost rows остаются своими equations. Если есть old prefixy,
+strict joint-mode source равен−Dlog[q_y*g_ℓ(σ_y)]/logφ, а не одному
+новому DJ. Quantum work, дополнительно emitted как record, меняет cut.
+Спектральное препятствие(13gp) не исчезает от existence этого decoder.
+
+### 6.65. Mixed cubic Ward: проверка именно того nonlinear bootstrap
+
+Пользовательский путь от linear graviton к nonlinear interaction
+проверяется на SAME source. Старый full10-slot naked-star IR Schur
+действительно равен −K_Einstein/2, не только TT. Но это не free healthy
+PF germ ВСЕЙ native H+J+R. Full experiment Ward сохраняет joint embedding
+X и все clock/preparation/24link rows; passive representation covariance
+не доказывает active metric-only diffeomorphism symmetry. Soft elimination
+из§6.49 также не допускает заменить whole-price Hessian naked-star.
+
+На настоящем C³ stationary constraint chart одной цены S и её Ward
+vector R двойное дифференцирование DS[R]=0 даёт
+
+    D³S(v,w,R0)+D²S(v,DR[w])+D²S(w,DR[v])=0.     (13gw)
+
+Член DS[D²R] исчезает из-за ПОЛНОЙ stationarity background, не от
+freezing normal. При scalar background0 metric/scalar часть имеет
+справа реальные −T_(zφφ)[R_z0]−T_(Xφφ)[R_X0], где z — все остальные
+неустранённые variables. Если scalar lift движет prep/clock, в(13gw)
+подставляются его настоящие tangent vectors. E_z=0 лишь в точке не
+зануляет mixed cubic T_(zφφ). Исключать z можно только через regular
+эквивариантную stationary section, сохраняя её Schur и lifted third jet.
+
+Есть новый решающий SAME-owner test. Старый inverse-PF q-only matter
+channel(13ed) на homogeneous fixed-coordinate-measure chart имеет
+LEADING two-derivative scalar/cubic jet S_m=c∫q,
+q=g^{μν}∂μφ∂νφ,c≠0 — его настоящий коэффициент. Это не вся finite J₂
+цена; higher nonlinear terms сохраняются в её собственном source.
+При g=η+h его polarized scalar cubic vertex равен
+−2c∫h^{μν}∂μφ1∂νφ2. Положим R_g0=L_ξη и δφ=L_ξφ.
+Прямая дифференциация даёт off shell, при compact/periodic boundaries,
+
+    W_old=T_(gφφ)(L_ξη,φ1,φ2)
+          +H_(φφ)(L_ξφ1,φ2)+H_(φφ)(φ1,L_ξφ2)
+         =−2c∫(∂·ξ)(∂φ1·∂φ2).                  (13gx)
+
+Например φ1=φ2=φ(t), compact supported, ξ0=[(φ′)²]′ на R×T³,
+даёт W_old=2c Vol(T³)∫{[(φ′)²]′}²≠0. Это cubic форма уже owned
+pressure deficit, не универсальный D0 no-go: полный embedding/measure
+Ward несёт эту правую часть. q² начинается с quartic matter и не
+чинит вершину; f*q содержит linear curvature с δ₀R^(1)=0 и также
+не даёт отсутствующего trace term в этой two-derivative comparison.
+
+В том же leading two-derivative cubic sector уже построенный
+direct-density operand M=Jq содержит ровно его:
+
+    T_dense(h,φ1,φ2)=2c∫[(trh/2)(∂φ1·∂φ2)
+                         −h^{μν}∂μφ1∂νφ2],
+    W_dense=W_old+2c∫(∂·ξ)(∂φ1·∂φ2)=0.          (13gy)
+
+Это положительная off-shell scalar-stress consistency проверка прежнего
+D1/D25 source без добавления action. Она действует для обеих Hodge
+components по сумме и использует их действительный kinetic coefficient;
+его ненулевость не заменяет полную gauge-consistency hypothesis.
+
+[BDGH theorem1.1/§9](https://arxiv.org/html/hep-th/0007220v2#S9)
+требует locality, Poincaré invariance, healthy PF free limit, ≤2 derivatives
+и orderwise gauge consistency; допускается также свободная ветвь.
+Его scalar condition2ξ²−aξ=0 сравнивает normalized scalar vertex с
+СОБСТВЕННОЙ graviton cubic. Native λ_mat сама не есть эта ξ: scalar
+kinetic normalization сокращается между free и mixed vertex.
+[Deser](https://arxiv.org/pdf/gr-qc/0411023) требует stress того же полного
+free/matter действия. Поэтому positive(13gy) нельзя расширять на всю
+Book цену без actual full-source mixed jets, stationary normal descent,
+physical continuum domain и self-stress coupling. Это конкретный следующий
+bootstrap test, а не разрешение поставить Einstein source извне.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

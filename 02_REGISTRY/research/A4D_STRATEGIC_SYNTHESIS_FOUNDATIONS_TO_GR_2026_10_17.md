@@ -2329,6 +2329,85 @@ rawF/D/b register или star/scalar/neighbor decoder. Это точная гр�
 УЖЕ построенный conditional operator map с реально admitted кодом и его
 полной ценой, сохранив отдельный настоящий scalar-input source.
 
+### 7.21. Собственная preparation equation, оба query и mixed nonlinear stress
+
+Input318f0891; prior goal turn PROGRESS. Новый consumer
+[full-source §§6.63–6.65](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+проверяет именно оставшиеся тяжёлые стрелки, не производя новый каталог.
+
+**Preparation equation теперь решена как необходимое условие.** Для
+полного fixedRIGHT C*C=σ_R: ΔC=CΞ, Ξ=Ξ*, [Ξ,σ_R]=0, то есть
+[Δ,CC*]=0. Все actual observer/current-preserving four-grade tests
+сохраняются, остальные grades не удаляются. На locally pure Hodge/clock
+section с arbitrary site/RIGHT rows r никакие reference correlations
+не спасают oldflat-v8 preparation root. Clock и scalar±itop требуют
+λ(k)=λ(k±κe_u); actual symbol имеет Bcosθ+Csinθ с
+B=−2[d+oΣ(1−cos k_perp h)]/h²<0. Для0<κh<π это невозможно.
+Есть nonvanishing residual lower bound
+||ΔC−CΞ||≥(2d/h²)min(1−cosκh,sinκh)a√(1−a²), для ЛЮБОЙ Ξ.
+Нельзя продолжать ту же секцию к whole-price roots сменой phases/ref
+или уменьшением h. Область — именно fixed β/ell flat old-v8 operator;
+это не curved-pp/globalD0 no-go и не замена original raw#216.
+
+**Положительный mixed контроль не даёт бесплатно тот же stress.**
+Две реальные isospectral columns решают preparation Euler, сохраняя
+current и две Hodge coherence readings. Но full local CAR density другая,
+а R=λκ и его homogeneous geometric source независимы от амплитуды a,
+в отличие от inferred scalar stress4a²κ². Canonical128 replica имеет
+явный Δ⊗I_AF и64labels premise; arbitrary correlatedσ не подменён
+canonicalstate. Поэтому localmixed escape требует собственного SAME
+full-input readout/source, не удаления clock/3form matter contributions.
+
+**Conditional operator/input→BOTH operands теперь конструктивен.**
+Anchored Choi code WHOLE actual Julia bank и SAME normalized input
+дают fixed REAL observables для raising/transport blocks и обоих
+scalar/top coefficients на supplied principal-internal-clock section.
+Known maxent PREP, controlledquery и input copies — explicit resources.
+Actual D1/D25 star/kinetic/volume/PF functions на strict chart имеют
+целевые Taylor polynomials, совпадающие через2jets в настоящей null/star
+точке. Их global coefficient bound и golden t² позволяют построить
+positive polynomial probability ТОГО ЖЕ detector на ВСЁМ density domain.
+Существующий fixed-effect consumer даёт EXACT DS,D²S=(2/logφ)DJ_loc(r),
+r=p³/4, с полными chain terms этой section. Independent clock/prep normals,
+coordinate-top/site-weight conversions и b-dependent другие prices
+не объявляются декодированными. Physical admission/selection/full Book
+cost/refinement не следуют из conditional query access.
+
+**Пользовательский spin2 bootstrap теперь имеет вычисленный cubic test.**
+Старый q-only channel даёт W_old=−2c∫divξ(∂φ1·∂φ2)≠0.
+УЖЕ опубликованный direct-density Jq даёт точно W_dense=0: volume
+trace vertex чинит именно этот off-shell stress deficit. Это необходимая
+положительная mixed-cubic проверка источника, без новой action. Для
+ВСЕЙ цены нужны actual clock/prep/embedding mixed third jets и regular
+stationary descent, а не только E_z=0 в одной точке. Naked-star full10-slot
+Einstein Schur нельзя объявлять whole native PF germ; soft-source
+limit§6.49 остаётся потреблённым ограничением. Условия известного
+spin2 uniqueness theorem проверяются на этой same-source карте,
+а не используются для выбора действия извне.
+
+Следующий consumer — native/full-price admission полученной targeted
+query программы и её действительные joint normals/source. Pure input
+ветвь исключена точно; mixed input имеет всю CAR stress bookkeeping.
+Нужен полный physical source с имеющимися у ядра CODE/history/clock costs,
+либо его собственная surviving nonlinear metric/matter/Ward система.
+Ещё одна programmable цена или ещё один условный Einstein action эту
+стрелку не заменит. Native forcing, same-programme recovery и original
+raw#216 остаются end-to-end целями; никакой CORE promotion не сделан.
+
+Concurrent f81846b7/e476c65b,
+[Info contract / finite-cylinder fiber](A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md),
+интегрирован без переписывания его владельцев. Positivity/refinement
+классифицируют golden martingale likelihood, но не выбирают physical law;
+measured q=μ из них не следует. Для НАШЕГО conditional positive effect
+есть уже явный measured-likelihood consumer:
+M_good=E_N/p, M_bad=(I−E_N)/p² и pM_good+p²M_bad=I.
+На complete actual word tree M_w=K_w*K_w/μ(w),
+q_ρ(w)=μ(w)TrρM_w. Его source получается из ТОГО ЖЕ encodedσ(z),
+а не произвольного параметра cylinder family. Это concrete conditional
+field→instrument→measured-law diagram. Native generation ресурсов и
+физическое Info/Book binding к этому RN likelihood всё ещё нужны;
+само существование M_w не выбирает нужную цену или её станционарность.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

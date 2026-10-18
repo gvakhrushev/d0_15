@@ -5,10 +5,10 @@
     "base_commit": "622d96b68f0195aaed4ae856e90429225de9c580",
     "source_path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
     "prior_owner_sha256": "ee5ce8bf76882dc02fada7cfeb9b2371eac1626979c09e84119a322368362169",
-    "current_owner_sha256": "262ff822817ac02aa5c7fcd87025bb40987b0d25b9d3fa538a09a2ac580a50e0",
+    "current_owner_sha256": "0b99d673e7bae82697e8dca134404f37288756414b504b27a81894a08d94a95d",
     "prior_math": "All pre-existing source bytes including6.46-6.52 are identical after removing only inserted6.53 onward. Prior null/source math receipt is reused; only this owner fingerprint is refreshed."
   },
-  "checker_sha256": "e3e4a8a73d0a25d89d3f9b559306ee8dbc023f1ddf094e424eafa5f8da29f9d0",
+  "checker_sha256": "217f9e6b2035f3eaf24a7d0ec2836b9164cf425930845099233607babaca837d",
   "complete_price_scale": {
     "status": "PASS_EXACT_TRACE_AND_SATURATION_CONTROLS",
     "checks": [
@@ -828,6 +828,104 @@
       "bad_pointer_seed_bits": 1
     },
     "scope": "Fixed effect exists exactly for the original g only if its ACTUAL supplied-state polynomial/global-margin premise is proved. No new F/action, cloning, exact Golden effect admission, full fine-data history cut, or native joint-root claim."
+  },
+  "full_hodge_preparation_normal": {
+    "status": "PASS",
+    "checks": [
+      "actual full field owner pin",
+      "exact actual u-symbol trigonometric decomposition",
+      "triple-energy equality has no nonzero Fourier pair",
+      "paired commutator norm exact",
+      "amplitude pair is invariant under theta rotation",
+      "full right-residual completion of square exact",
+      "residual Cauchy constant retains clock and complement",
+      "finite actual zero mode preserved",
+      "both first Hodge sidebands have the same actual energy",
+      "clock plus wave cannot share a positive shell",
+      "all finite Fourier triple tests exclude support",
+      "finite full four-grade least normal k0",
+      "finite full four-grade least normal k1",
+      "finite all-normal lower bound attained at k0",
+      "finite two-reference normal exceeds analytic uniform bound",
+      "all original eight momentum modes share exact native shell",
+      "original full RIGHT128 shell dimension retained"
+    ],
+    "source_sha256": {
+      "02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md": "7b82d30d0d8ec451f768bf0b92aa0e4daaad1f2600497ae7d855bf370c96a338"
+    },
+    "statement": "For ANY site/right rows r, local pure-CAR C_j=m_j r_j with m=(a cos(kappa u),sqrt(p),sqrt(1-p-a^2) at14,a sin(kappa u) at15) cannot solve the fixed-RIGHT preparation Euler of the SAME flat v8 H+J+R, for 0<kappa h<pi,d>0,o>=0. All correlations/rank/reference dimensions are allowed. Other CAR grades are not removed.",
+    "exact_normal": "C*C=sigma_R, Trsigma=1 gives Delta C=C L, L=L*. Within the four-grade test carrier actual current observer is fixed for every variation because alpha_i compress to0. Thus H/J derivatives vanish, not frozen. Clock and 3form rows give Delta r=rL; scalar +/-i top gives both commutators. Fourier support would need lambda(k)=lambda(k +/-kappa e_u), impossible for the actual u-symbol B<0.",
+    "quantitative_bound": "For ANY right L (even nonHermitian), ||Delta C-C L||_F >= (2d/h^2) min(1-cos(kappa h),sin(kappa h))*a*sqrt(1-a^2). For kappa h<=pi/2 the bound tends d_*kappa^2*a*sqrt(1-a^2)>0 if d(h)->d_*>0; a uniform d lower bound gives a positive liminf. This is the normalized whitened preparation norm, not original raw#216.",
+    "positive_control": "The pre-existing +/-e_r tensor CAR16 bath has128 isospectral states and solves the fixed-RIGHT preparation Euler; its local CAR is I16/16 and it does not have the coherent Hodge amplitudes of the excluded section.",
+    "scope": "Declared flat old-v8 price at fixed beta/ell/geometry and actual rest-current readout. No curved-pp/global-D0 no-go, no physical selection, no extra action. Local mixed CAR, actual state-dependent operator and full Book costs can change the problem and require their own sources."
+  },
+  "mixed_hodge_preparation": {
+    "status": "PASS",
+    "checks": [
+      "original full16 creator AST pin",
+      "actual current owner pin",
+      "all two-column current matrix entries vanish 1",
+      "all two-column current matrix entries vanish 2",
+      "all two-column current matrix entries vanish 3",
+      "pointwise total CAR probability one",
+      "first-grade density line and scale p",
+      "scalar coherence reads a cos two theta",
+      "top coherence reads a sin two theta",
+      "both scalar diagonal weights are a squared",
+      "scalar-top coherence is zero",
+      "mixed scalar total weight is twice inferred pure pair",
+      "local CAR density is genuinely mixed",
+      "complement differs from pure Hodge section by minus a squared",
+      "site-averaged exact two-column Gram I2 over2",
+      "literal flat native one-axis cosine eigenmode",
+      "literal flat native one-axis sine eigenmode",
+      "all16 two-column preparation is an exact eigensubspace",
+      "old Rayleigh cost equals lambda independent of radius",
+      "homogeneous metric coefficient source independent of radius",
+      "64 orthogonal AF labels times two columns gives full128",
+      "canonical fixedRIGHT128 trace normalized"
+    ],
+    "source_sha256": {
+      "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py::creator_AST": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+      "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d"
+    },
+    "exact_control": "At each site use masks1:sqrt(p)(cos theta,sin theta);0:a(cos theta,-sin theta);15:a(sin theta,cos theta);14:sqrt(1-p-2a^2)(cos theta,sin theta). Domain 0<a^2<(1-p)/2. Columns lie in the same actual flat ku=+/-kappa shell. Site-averaged C*C=I2/2 and Delta C=lambda C.",
+    "full128": "With 64 existing mutually orthogonal AF LEFT multiplicity labels xi and the EXPLICIT Delta_total=I_AF tensor Delta_old hypothesis, V=direct_sum_64(sqrt(2)C) is an isometry. V/sqrt(128) gives canonical reference128 Gram I128/128 and the same local CAR density. This does not prove the claim for arbitrary correlated FULLRIGHT sigma.",
+    "readout_boundary": "The two density coherences equal the old pure-section scalar readings at phase2theta. Full local density differs: rho00=rho15,15=a^2, rho0,15=0 and spectator weight1-p-2a^2. The original pure normalized amplitude readout is not thereby extended to mixed states.",
+    "source_boundary": "R=lambda is independent of a, as is its homogeneous flat geometric coefficient source; the inferred Hodge pair has continuum gradient energy4a^2 kappa^2. Thus preparation stationarity does not establish same total geometric source, a curved-pp root, a new physical readout, or full D0 closure.",
+    "clock_boundary": "The exact current is rest-directed and first-grade DENSITY is p along e0. This proves a density clock line/scale in this matrix control only; it does not identify the original single-vector P1 amplitude clock on mixed states."
+  },
+  "targeted_query_code": {
+    "status": "PASS",
+    "checks": [
+      "same actual query/operand owner A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "same actual query/operand owner A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md",
+      "whole query Choi anchor is normalized at all fields",
+      "all-input matrix entry from fixed real observable (0, 0)",
+      "first and second actual query jets (0, 0)",
+      "all-input matrix entry from fixed real observable (0, 1)",
+      "first and second actual query jets (0, 1)",
+      "all-input matrix entry from fixed real observable (1, 0)",
+      "first and second actual query jets (1, 0)",
+      "all-input matrix entry from fixed real observable (1, 1)",
+      "first and second actual query jets (1, 1)",
+      "unanchored Choi loses global real sign",
+      "anchor retains the same global sign",
+      "Hermitian is not the real-symmetric compiler condition",
+      "global actual AF control interval positive",
+      "global actual scene amplitude interval strict",
+      "owned principal internal Lorentz boost squares to h_n",
+      "same boost sends actual clock to rest without extra gate",
+      "internal whitening preserves scalar and top amplitudes"
+    ],
+    "source_sha256": {
+      "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "02_REGISTRY/research/A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md": "a48ff3bb7e88e3b2dde8252029e69d31f1ee8a7de4577415bb13136554c65efa"
+    },
+    "target": "The SAME direct-density star/Hodge two operands, via actual whole Julia/SELECT query access and supplied coupled scalar input; not a new F or action.",
+    "exact_code": "Anchored chi=(|0>Omega+|1>(V tensor I)Omega)/sqrt2. Fixed REAL symmetric observables recover every actual real V entry with normD and exact jets. Whole bank is normalized; no moving success conditioning. Imaginary Hermitian observables are excluded from real compiler.",
+    "global_polynomial": "Taylor degree ell>=2 of the actual analytic operands has same2jets at null/star codepoint. A computable full-density coefficient bound B and golden t^2 B<=1/4 globally validate actual E,b. Its unchanged D3 determinant probability g is polynomial even when F entries have roots. Existing fixed-effect proof needs polynomialg only.",
+    "source_scope": "Exact first/second source equality is on the supplied internal-principal-frame scalar input section. It does not assert independent observer/preparation normals, coordinate top-form conversion, unknown site-weight access, physically forced t, native controlled-query/PREP/copy admission or equality with full Book history/oldHJR."
   },
   "full_D0_price_selected": false,
   "generic_joint_recovery": false,
