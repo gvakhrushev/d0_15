@@ -46,6 +46,8 @@ supplied coherent Julia class. Scalar work/leakage, whole-price and
 physical admission remain explicit. The new helper checks the precise
 null/mixed row, full-Gram transport, all16 scalarization and echo algebra;
 no old suite was replayed. A kernel is not a no-nearby-root theorem.
+The subsequent disjoint372237e7 source normal form is preserved and
+consumed in strategic §7.10, retaining its actual-material-jet premise.
 
 ### 18 October: consume the native feedback price instead of choosing a mean
 

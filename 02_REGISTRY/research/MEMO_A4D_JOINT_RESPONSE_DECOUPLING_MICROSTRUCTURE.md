@@ -22,6 +22,10 @@ actual metric-family reduced source and full heat/matter first-jet bridge
 of the SAME programme, with work/resource costs retained. One new
 bounded calculation checks symbolic mixed rows, the nonzero forward
 control, whole-Gram source and all16 scalarization. No old suite replay.
+Disjoint source372237e7 is preserved and consumed in strategic §7.10:
+the same-feedback weak scene jet has a fixed relative coefficient, but
+the actual intrinsic scene has no independent material jet. It does not
+replace the whole-price first-jet or critical-family equations.
 
 **Direct Book-feedback consumer, input `423836c7`:**
 [full-source §§6.18–6.22](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)

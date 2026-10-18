@@ -37,6 +37,8 @@ queries with C3 clean-scalar convergence. Continue with the reduced source on th
 family and SAME-program heat/matter root/first-jet bridge. Do not infer
 exact roots from C3 proximity or erase the coordinate-like null rows
 through Lorentz gauge-fixing. No native price or physical action is added.
+The disjoint372237e7 same-feedback weak-source normal form is consumed
+in §7.10 with its native material-jet premise; the literal scene has M=0.
 
 Previous direct-feedback consumer, input `423836c7`: [strategic §7.9](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 uses the existing Book03 feedback price directly, rather than choosing a

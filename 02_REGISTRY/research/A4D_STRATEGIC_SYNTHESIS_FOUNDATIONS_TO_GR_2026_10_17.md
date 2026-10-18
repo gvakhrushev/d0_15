@@ -1449,6 +1449,20 @@ TYPE controls остаются. Whole native source/admission, metric-kernel
 reduction, независимая материя и совместный physical/global limit
 по-прежнему обязательны для D0→ОТО.
 
+Параллельный [same-feedback source consumer](A4D_SINGLE_NATIVE_FEEDBACK_SOURCED_EINSTEIN_BRIDGE_2026_10_18.md),
+SOURCE `372237e7`, совместим с этим переходом. Если SAME programme
+действительно имеет E=e₀+cF и B=B₀+cM, fixed z,B₀, его одна
+feedback цена после одной fixed normalization даёт
+`barF+(L C₀)⁻¹Tr(W₀M)+O_(C²)(c)`, где
+`C₀=Tr[(I−B₀)R₀⁻¹]`, `W₀=Q₀⁻¹+p⁶R₀⁻¹`. Относительный
+source coefficient уже фиксирован исходным tensor determinant.
+Это не физическая подстановка M: у literal сцены §6.23 M=0, а
+изоспектральное M=[K,B₀] также даёт нулевой trace source. Следующий
+material consumer — реальный independently varied native M либо
+собственный state-dependent R/record source с сохранением всей цены.
+Произвольный spectral-controller witness не является материей и не
+заменяет ни (7.25), ни metric-family reduced equations.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября
