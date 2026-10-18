@@ -135,3 +135,66 @@ H(b_1)-H(b_2)=(Q_1-Q_2)*
 ## 7. Проверки
 
 [Targeted checker](certificates/a4d_single_native_feedback_sourced_einstein_bridge_check.py) проверяет golden identities, полный actual scene528 spectrum, independent geometric/scene source at weak scaling versus exact nonlinear logdet, same-source coefficient, positive/negative and isocoupling hostile controls. Аналитические доказательства §2–§5 верны для всего конечного carrier и noncommuting operator variations. Статус checks относится к математическому исследованию, не к физическому native admission, полному Lean или всей original dynamic.
+
+
+## 8. Сильнее обычного Ward: весь H+R source на metric kernel равен одному spectral pinching defect
+
+**Новый direct consumer** принятого параллельного [full-source §§6.23–6.25](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) и [strategic §7.10](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md): на точной искривлённой AF/star critical family остаётся coframe *backward-null translation*
+`delta v_r(z)=[psi(z)-psi(z-hr)] e_-`, `delta U=0`. Это не internal Lorentz, и IFT после Lorentz gaugefix по-прежнему запрещён. Чтобы замкнуть полную цену, надо вычислить именно её источник вдоль этого metric kernel, а не искать ещё один Einstein coefficient.
+
+Но owner уже вычислил при fixed beta **один полный реальный источник** для `H+R` на genuine eigenpreparation. Пусть `Delta=Delta(y)` — действительный fixed-Hilbert selfadjoint *whole-carrier* native operator (со всеми raw16/reference modes), `Psi` — нормированная eigenpreparation `Delta Psi=lambda Psi` и `rho=|Psi><Psi|`. Пусть
+
+```
+H=beta^-1 log Tr exp[-beta h(Delta)],
+R=<Psi,Delta Psi>,
+tau=exp[-beta h(Delta)]/Tr exp[-beta h(Delta)],
+A=rho-tau h'(Delta).
+```
+
+При любом genuine field/coframe/embedding jet `dot Delta` точный first source равен
+
+```
+D(H+R)=Tr(A dot Delta),     [A,Delta]=0.                  (9)
+```
+
+Здесь не теряются moving-preparation terms: для eigenpreparation `D_Psi R=2 Re<Psi_dot,(Delta-lambda)Psi>=0` на ВСЕХ нормированных pure вариациях, включая старые reference/entangling directions. `H` state-independent, но движущийся `beta` добавляет собственный clock source, не включённый в (9). Это точное stationary-preparation утверждение для предоставленной `H+R` цены, не вывод eigenpreparation из Book03.
+
+Пусть `Delta=sum_lambda lambda P_lambda` — полный finite spectral resolution **в одной frozen точке**, БЕЗ предположения gaps или дифференцирования проекторов. Обозначим
+
+```
+Pinch_Delta(T)=sum_lambda P_lambda T P_lambda.
+```
+
+Поскольку A коммутирует с Delta, имеем тождественно для КАЖДОГО `K`:
+
+```
+Tr(A dot Delta)
+ = Tr[A Pinch_Delta(dot Delta)]
+ = Tr[A (dot Delta-[K,Delta])].                          (10)
+```
+
+В частности, если metric-null variation и её реальные изменения observer, links, sampling X, return/readout приводят на одном genuine carrier к операторной conjugacy `dot Delta=[K,Delta]`, то ВСЁ `H+R` строго не видит эту моду. Это не объявление дискретной backward-null translation физическим diffeomorphism по аналогии: требуется доказать операторную идентичность (или явную малую ошибку) для ТОГО ЖЕ native Delta с clock/measure.
+
+**Размерностно равномерная quantitative оценка:**
+
+```
+|D(H+R)| <= (1+||h'(Delta)||_op)
+              ||Pinch_Delta(dot Delta)||_op
+          <= (1+||h'(Delta)||_op)
+              ||dot Delta-[K,Delta]||_op              (11)
+```
+
+для любого `K`. Доказательство: `||rho||_1=1`, `tau` density и `tau h'(Delta)` commuting, так что `||A||_1<=1+||h'(Delta)||`. Первая оценка не содержит числа spectral levels, sizes AF/ref и inverse Hessian. Для настоящего v8 `h'(Delta)=(I-alpha Delta)^-1`, `I-alpha Delta>=p³I` даёт `1+p^-3`; для direct heat `h'=I` коэффициент равен2. Estimate справедлив и при degenerate eigenspaces, но `Pinch_Delta` НЕ объявлен smooth field-dependent family через spectral crossings: нужен только pointwise source.
+
+**Точное соединение с full experiment Ward.** Если принадлежащее execution действительно ковариантно при совместном преобразовании `(Phi,X)`, `dot Delta_Phi+dot Delta_X=[K,Delta]` (в transported inner-product frame), тогда (10) даёт
+
+```
+D_Phi(H+R)[delta_xi Phi]
+  = -D_X(H+R)[delta_xi X].                              (12)
+```
+
+Поэтому actual stationary `X`-equation (если X физически варьируется, а не только bookkeeping) занулила бы этот metric-null source **точно**. Когда physical X не является variational field, справа надо вычислять реальную detector-embedding costate, а не считать null-контраст gauge. Это тот же scoped Ward из владельца, теперь усиленный конкретным spectral pinching source test и norm bound.
+
+**Главный потребитель к ОТО:** вместо попытки invert singular metric Hessian проверить на **одной уже построенной pp-wave branch** реальный `dot Delta_h` для backward-null translation и вычислить `Pinch_(Delta_h)(dot Delta_h)` вместе с moving sampling/clock effect. Если он исчезает или имеет достаточно малую norm после УЖЕ принадлежащей общей normalization/spatial reconstruction, `H+R` не препятствует metric-kernel reduction. После этого истинное Lyapunov–Schmidt reduced equation должно включить также J_v8, controller и остальные `S_rest`; одна (11) не доказывает exact compiled roots или physical Einstein. Если pinched source survives O(1) on shell, это точная препятствующая строка и предложение нового action запрещено.
+
+**Отрицательный контроль:** если `Delta=diag(lambda1,lambda2)` и `dot Delta` только off-diagonal, pinching0 и (9)0 при eigenpreparation, несмотря на ненулевое `dot Delta`. Если `dot Delta=diag(d,0)`, `rho=diag(1,0)` и `tau=diag(1/4,3/4)`, `h'=I`, то `A=diag(3/4,-3/4)` и `D(H+R)=3d/4`. Значит приписать любую backward-null translation gauge на основании «она похожа на diffeomorphism» ложно. Условие источника — именно spectral pinching/operator-conjugacy.
