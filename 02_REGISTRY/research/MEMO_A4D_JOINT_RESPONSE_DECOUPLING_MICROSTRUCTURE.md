@@ -2,25 +2,33 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `c4e78035`:** §§8.29–8.30 of the
+**Latest consumed transition, input `ba3902b3`:** §§8.31–8.33 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
-continue the limiting solution to EXACT finite preparation and strength
-equations for every sufficiently large fixed history length. Compactness,
-uniform values and the existing finite preparation theorem replace an
-unjustified IFT. All external amplitude and reference128 first variations
-remain. Translation covariance additionally solves every nonzero-Fourier
-field row for address-independent supplied code costs.
+prove exact finite solutions of ALL preparation, strength, coframe and
+observer equations for a supplied finite additive full code with β>0.
+A compact minimum over the actual unit-coframe Gram tetrahedron cannot
+have singular geometry: an explicit original-label null history acquires
+a positive entropy birth that dominates every finite code variation.
+Phase-only V₄ covariance transfers the solved angles/scale to all16
+coframe rows without assuming an isotropic code. Reference128, external
+amplitude directions and every nonzero-Fourier field row remain solved.
 
-The first actual weak rank-birth term selects an explicit moment fibre:
-Bell maximizes its coefficient, and every cluster point of the finite
-minimizers belongs to that fibre. Bell is not uniquely selected. The
-full shifted recycling, Euler-clock correction and actual next code
-source are now explicit; scalar flat identities cannot be differentiated
-as if their transverse sources vanished. The remaining finite field
-equations are the complete homogeneous geometric covector beyond the
-solved strength and true Ward rows. The full physical code/Info binding,
-extra calibration sources, independent matter and GR refinement remain
-open. A finite partial solution is not labelled a full Einstein solution.
+The first weak correction selects G1=1 but retains two physical shear
+directions; an exact finite source shows why arbitrary label costs do not
+force the Bell/isotropic point. The finite existence theorem allows the
+true preparation and geometry to move instead. It gives no uniform lower
+bound on det G as history length grows.
+
+The remaining homogeneous Lorentz-link source is now explicit:
+`2J_r(Ω_r)=−B_r(Ω_r u_r)`, with ν included in the forward-only probe B.
+Twelve stabilizer directions vanish. On the canonical circulant embedding,
+all24 link equations are equivalent to four costate-number conditions;
+the source owner gives their exact sum of squares and finite recursion.
+Their vanishing is not inferred from coframe stationarity. This is the
+next geometric consumer, allowing genuine physical link continuation if
+needed. Physical code/Info binding, resource/controller sources, independent
+matter and spatial/global GR recovery remain open. No full joint Einstein
+solution or new physical price is declared.
 
 **Prior consumed transition, input `36ad880c`:** §§8.27–8.28 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)

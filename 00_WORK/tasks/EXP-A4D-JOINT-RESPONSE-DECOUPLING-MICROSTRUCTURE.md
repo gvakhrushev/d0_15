@@ -12,6 +12,38 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: resolve the remaining homogeneous coherent source
+
+Input `ba3902b3`. Consume the exact finite preparation/strength solutions
+and translation-source reduction of §§8.29–8.30. Determine the actual
+homogeneous coframe/link/observer covector and whether the remaining
+equations admit a finite continuation near the balanced weak root.
+Keep the supplied full code symbolic where its physical definition is
+not owned; do not impose role symmetry or assign missing label costs.
+Root owns the same full-source owner, brief and consumers. Read-only
+assistants inspect actual symmetry/label transformations, the full
+homogeneous source and its singular perturbation. The decisive check
+is an analytic native identity or a bounded source calculation that
+settles a remaining homogeneous row, with all preparation response and
+reference128 retained. Any conditional existence theorem must identify
+its true symmetry, invertibility and compactness hypotheses. No new
+price, selector, code prior, workflow or old-suite replay.
+
+Consumed in §§8.31–8.33: compact finite minimization and an explicit
+original-label null-history entropy birth give nondegenerate geometry
+and solve every preparation/coframe/observer equation. Phase-only V₄
+covariance carries the four angle/scale equations to all coframe rows
+without symmetric code costs. All nonzero-Fourier field sources remain
+solved. The actual first weak selection is G1=1, not forced isotropy.
+The remaining homogeneous Lorentz-link source is exactly
+2J_r(Ω_r)=−B_r(Ω_r u_r), and all24 components have a four-number
+sum-of-squares criterion on the canonical circulant embedding. Its
+vanishing remains the consuming proof; coframe stationarity alone does
+not imply it. No uniform geometric gap, full joint root, physical price
+admission or spatial/global GR closure is claimed. Independent analytic
+review checked the actual history normalization, rank birth, complete
+coframe source, literal-code witness and ordered link differential.
+
 ### 18 October: continue the coherent joint root toward finite native rounds
 
 Input `c4e78035`. Consume the actual finite preparation-descent,

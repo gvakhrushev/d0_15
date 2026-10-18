@@ -120,24 +120,28 @@ history/price, её native calibration law и допустимую оценку 
 
 ## 1. Итог сборки
 
-На входе `c4e78035` §§8.29–8.30 переносят решение на конечный
-исходный процесс: при заданном полном коде с β>0 для всех достаточно
-больших фиксированных n существуют точные решения всех preparation
-и strength строк. Доказательство использует compactness и уже owned
-finite preparation theorem, без uniform inverse сингулярной Hessian.
-Внешние amplitude directions и reference128 сохранены. Ковариантность
-переносов дополнительно обнуляет все nonzero-Fourier field sources.
+На входе `ba3902b3` §§8.31–8.33 доказывают точное конечное
+существование всех preparation/coframe/observer equations условной
+полной code−coherent цены при заданном конечном коде с β>0. Минимум
+берётся по реальной подготовке, масштабу и coframe Gram tetrahedron.
+Вырожденную геометрию исключает explicit null-history entropy birth;
+phase-only V₄ covariance переносит angle/scale equations на все16
+coframe строки без изотропного prior. Все reference128, внешние
+amplitude directions и nonzero-Fourier field equations сохранены.
 
-Первое слабое рождение ранга теперь выбирает явное moment fibre:
-Bell максимизирует его коэффициент, и все cluster points настоящих
-конечных minimizers входят в это fibre. Единственность Bell не заявлена.
-Получены actual shifted recycling, Euler-clock correction и следующий
-полный code source; их transverse derivatives не заменены плоскими
-scalar identities. Оставшийся конечный геометрический шаг — homogeneous
-covector после решённых scale/Ward строк. Physical code/Info binding,
-controller sources, independent matter и пространственный вывод ОТО
-остаются явными задачами. Это потреблённый finite partial lift, а не
-объявление полной физической стационарности.
+Первый logarithmic correction выбирает G1=1, оставляя две физические
+shear координаты. Полный конечный код действительно различает их,
+поэтому Bell/isotropic point не назначается решением. Теорема позволяет
+подготовке и геометрии сместиться. Uniform det G>0 в n→∞ не доказан.
+
+Остаток теперь точно определён: homogeneous Lorentz-link source
+`2J_r(Ω_r)=−B_r(Ω_r u_r)`. Двенадцать stabilizer directions исчезают;
+в canonical circulant embedding все24 link equations равносильны
+четырём scalar costate conditions. Их точная сумма квадратов и recursion
+выведены из той же полной цены. Это следующий геометрический шаг,
+а не ещё один preparation census. Physical full-code/Info admission,
+resource/controller equations, independent matter и spatial/global
+переход к ОТО остаются открытыми. Полный finite joint root пока не заявлен.
 
 На входе `36ad880c` §§8.27–8.28 дают следующий положительный шаг:
 полный coherent-memory source сходится в C¹ даже через rank births,

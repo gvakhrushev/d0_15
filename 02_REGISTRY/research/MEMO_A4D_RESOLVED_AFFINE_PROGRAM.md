@@ -23,18 +23,26 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-Input `c4e78035`, §§8.29–8.30 of the
+Input `ba3902b3`, §§8.31–8.33 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
-now gives exact finite native preparation/strength solutions using
-compactness and the owned finite preparation theorem. Translation
-covariance kills every nonzero-Fourier field row, retaining all external
-amplitude variations and reference128. The first actual weak-birth term
-forces limiting preparations into an explicit moment fibre containing
-Bell; it does not choose a unique density. The next code/source correction
-is computed on the general primitive chart so transverse field sources
-are retained. The remaining finite geometric step is the homogeneous
-covector with the actual full code and calibration rows. Physical price
-binding, independent matter and spatial GR refinement remain open.
+now proves exact finite preparation/coframe/observer solutions for the
+supplied complete code. The actual null-history entropy birth excludes
+singular geometry from a compact minimum. Phase-only V₄ covariance
+solves all16 coframe rows without equal label costs; translation covariance
+retains all nonzero-Fourier field equations and reference128 variations.
+The first weak geometry selection is G1=1, with two physical shear
+parameters left for the full finite price; isotropy is not imposed.
+
+The next finite geometric step is now the actual homogeneous link source:
+`2J_r(Ω_r)=−B_r(Ω_r u_r)`. Twelve stabilizer directions vanish; on the
+canonical circulant embedding the remaining equations reduce to four
+explicit forward-source costate numbers, with an exact sum-of-squares
+criterion. Coframe stationarity does not set those numbers to zero.
+Solve them or continue jointly in physical links; do not repeat the
+preparation/coframe proof or promote slice covariance to full Lorentz
+symmetry. Physical full-code/Info admission, resource/controller equations,
+independent matter, uniform geometric control and spatial/global GR
+refinement remain open.
 
 Input `36ad880c`, §§8.27–8.28 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),

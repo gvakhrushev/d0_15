@@ -53,6 +53,15 @@ count divergence. Уникальный максимальный word не кон
 массу. Для classical GR consumer поэтому требуется настоящий
 history-to-memory-class map с полной multiplicity и source.
 
+**Конечное геометрическое продолжение §§8.31–8.33, вход `ba3902b3`:**
+для заданного полного кода с β>0 доказано существование exact finite
+решений всех preparation/coframe/observer equations. Новые различимые
+истории исключают вырожденную геометрию из compact minimum; никакой
+изотропный prior не вводится. Translation covariance решает остальные
+nonzero-Fourier rows. Homogeneous Lorentz-link source сведён к четырём
+actual costate numbers, с точной суммой квадратов всех24 компонентов.
+Их зануление и physical price binding ещё не доказаны.
+
 **Физический D0→ОТО ещё не доказан:** physical admission исходных
 Julia/resources и обязательность именно этого процесса не выведены; не доказаны
 независимый общий matter-source, native constraint compatibility и глобальное
@@ -3998,7 +4007,339 @@ selection доказан (168)–(169). Первый unresolved finite geometric
 rows, physical code/Info admission, independent matter и spatial GR
 refinement не добавляются как предпосылки без собственного вывода.
 
+### 8.31. Точное конечное существование: все coframe и observer equations
+
+Вход `ba3902b3`. Теперь (160) продолжается на настоящую геометрию.
+Пусть L≥3, θ=2π/L, λ=|exp(iθ)−1|/16; сохраняются все8 первых
+импульсов, CAR16 и reference128. Код тот же: фиксированный конечный
+address-independent additive128-code из (170), β>0. Это теорема
+для уже определённой условной code−coherent цены, без выбора её
+физического prior или нового Info law.
+
+Возьмём real unit coframe vectors u_r, physical links I и n=e₀:
+
+    C_r=ν c(u_r), P_r=C_r S_r, G_rs=u_r·u_s,
+    diag G=1, ν=√(t/n), A_0²=λ² I_shell.          (173)
+
+G здесь — положительный CAR Gram, не Lorentz metric. Последнее
+равенство следует по каждому axis momentum: только одна разность
+S_r−I ненулевая, и CAR дают {c(u_r),c(u_r)*}=I. Поэтому ведущая
+минимальная цена (159) одинакова для ВСЕХ этих G, включая singular G.
+Trace A_0=0, а Bell preparation всегда balanced. Пространственная
+решётка фиксирована; этот n→∞ не есть spatial GR refinement.
+
+Пусть H — нормированная real Walsh matrix порядка4. Рассмотрим compact
+tetrahedron и его canonical coframe:
+
+    G=H diag(x₀,x₁,x₂,x₃)Hᵀ, x_χ≥0, Σ_χ x_χ=4,
+    U=[u₀ … u₃]=√G, G_rr=1.                     (174)
+
+Это все symmetric V₄-circulant unit-diagonal Grams. На
+[t_-,t_+]×tetrahedron×{ρ≥0,Trρ=1} точная F_n непрерывна.
+Weak-limit value convergence из (158) равномерна и по этому compact
+coframe carrier: все unit creators и их Julia defects имеют общие
+нормовые оценки при ν<ν_max<1. Поэтому тот же endpoint gap f(t)
+при всех достаточно больших n исключает t=t_±. Он не требует
+невырожденности G или uniform preparation gap.
+
+**Вырожденная геометрия исключается исходной записью.** Предположим,
+что минимум достигнут при rank G=r<4. После фиксированного внутреннего
+CAR basis change каждый старый K_ω лежит в
+
+    End(H_momentum⊗ΛV_active) ⊗ I_unused.
+
+Заменим ρ его partial trace по unused CAR factors, тензорно с
+I_unused/2^(4−r). Это ТОЧНО сохраняет весь record matrix Γ_n(ρ)
+и code cost, а не только leading value. Исходного reference128
+достаточно для её purification. Внутренняя active preparation может
+быть singular; следующему аргументу её faithfulness не нужна.
+
+Откроем границу по двухстороннему analytic amplitude path
+
+    G_ε=(1−ε²)G+ε² I.                            (175)
+
+Для positive eigenvalues coframe имеет coefficients
+√((1−ε²)x_χ+ε²); для missing eigenvalues берём ε, а не |ε|.
+Тогда U_εᵀU_ε=G_ε и все нормы ножек остаются1. Gram лежит в (174);
+при ε>0 coframe canonical. Отрицательная ветвь — analytic extension,
+связанное с положительной missing-mode parity; сравнение минимума
+потребует только ε>0.
+Любой real unit h∈ker U даёт c(Σ_r h_r u_r)=0 при ε=0,
+но его derivative есть creation operator c(e_new) отсутствовавшего
+unit CAR-направления.
+
+Нужна настоящая нулевая история, а не просто вращение старого support.
+Пусть χ_l(j)=(-1)^popcount(l&j), j,l=0,…,31. Дублированные negative-C
+слова имеют j=8r+4,8r+5. На golden port1 зададим history coefficients
+
+    v_(l,0)=−⅛ Σ_r h_r[χ_l(8r+4)+χ_l(8r+5)],
+    v_(l,1)=0, Σ_l |v_(l,0)|²=1.
+
+Walsh inversion actual rows и K_(1,i)=−2p^(3/2)N_i*νA_0 дают точно
+
+    Σ_i v_i K_(1,i)
+      =−(p^(3/2)/2)ν² c(Σ_r h_r u_r)* A_0.       (176)
+
+Остальные n−1 исходов истории фиксируем равными actual port0 blank,
+чья map здесь b_ν I, b_ν=1−2p²ν²λ²>0. Полученный единичный vector v
+лежит в kernel старого полного record Gram. Его производная действует
+как c(e_new)* на tracial-unused purification и ортогональна всем
+старым output vectors. Её squared norm равна
+
+    a_birth=p³ν⁴λ² b_ν^(2n−2)/8>0.               (177)
+
+Missing-mode parity сопрягает каждый K_ω(ε) в K_ω(−ε), не меняя
+НИ ОДНОЙ исходной метки; выбранная ρ инвариантна. Поэтому Γ_n(ε)
+и весь code cost чётны. В частности Γ_n'(0)=0. Compression его
+ε²-coefficient на старый kernel положителен и имеет trace c≥a_birth.
+Здесь нет first-order support-rotation subtraction. Конечномерное
+спектральное разложение даёт
+
+    S(Γ_n(ε))−S(Γ_n(0))
+       =c ε² log(1/ε²)+O(ε²), c>0,
+    Cost_n(ε)−Cost_n(0)=O(ε²).                   (178)
+
+Число n фиксировано в этом сравнении. Константа (177) может быть
+очень мала: её положительности достаточно, uniform bound не требуется.
+Следовательно F_n(ε)<F_n(0) при достаточно малом ε≠0. Ни одна
+singular boundary geometry не может быть минимумом при конечном коде.
+
+Итак, для всех достаточно больших fixed n существует exact minimizer
+
+    t_n∈(t_-,t_+), G_n>0, ρ_n,
+    D_t F_n=0, D_(three circulant angles)F_n=0,
+    D_preparation F_n=0.                         (179)
+
+При G_n>0 creators c(u_r) порождают весь CAR16. Старый finite span22
+сохраняется: A_0 доступен из scalar coefficient1 row, C_r и P_r —
+из two-round Kraus products, {P_r,C_r*}/ν²=S_r — из length4 words.
+На8 axis momenta I,S_r,S_r* выделяют каждый momentum projector;
+full CAR monomials требуют не более16 дополнительных letters этой
+оценки. Scalar blank padding даёт span ⊕₈M₁₆ при n≥22. Поэтому
+observable block-diagonal minimizer ρ_n единственен и faithful по
+существующему preparation-descent owner. Все внешние amplitude,
+невидимые межимпульсные coherence и reference128 variations остаются;
+их первые источники исчезают ровно по аргументу (160)–(161).
+
+**Почему решены все16 coframe rows.** Это не stationarity только
+на выбранном tetrahedron. Role translation r↦r⊕a, a∈F₂²,
+переставляет raw words j↦j⊕8a. Walsh row l получает только scalar
+phase χ_l(8a). В (174) совместные lattice-axis permutation и CAR
+orthogonal conjugacy фиксируют coframe. Каждый исходный K_j
+сопрягается с такой фазой, без перестановки labels. Поэтому ЛЮБОЙ
+заданный diagonal code и полная coherent entropy сохраняются.
+Единственная observable preparation наследует V₄ symmetry.
+
+На M=I slice общий O(4) conjugacy тоже сохраняет labelwise цену и
+решённую preparation. Coframe covector поэтому спускается к Sym₄
+Gram tangent. Его V₄-invariant part имеет ровно4 координаты: общая
+scale и три circulant angles. Они все решены в (179). Group averaging
+любой другой Gram tangent доказывает нулевой source на нём; O(4)
+orbit directions уже имеют нулевой source. Значит при (179)
+
+    D_coframe F_n=0 на всех16 homogeneous directions.       (180)
+
+Homogeneous observer variation при physical links I оставляет
+M=L(n) I L(n)^−1=I. Она меняет только whitened coframe и preparation,
+чьи equations уже решены. Observer source также равен0.
+Block-diagonal ρ_n и address-independent code сохраняют translation
+covariance, поэтому (161) решает ВСЕ nonzero-Fourier field rows,
+включая coframe, observer и links. Это finite exact theorem; остаток
+локализован в homogeneous Lorentz-link rows следующего раздела.
+V₄/O(4) covariance coframe slice не объявляется симметрией полного
+Lorentz-link domain. Не доказаны uniform det G_n>0, stability,
+physical code/Info admission или spatial/global Einstein limit.
+
+### 8.32. Что конечная запись выбирает в геометрии
+
+Теорема (179) не постулирует isotropy. Для её потребителя можно
+точно разрешить первый logarithmic selection на всём unit-frame
+carrier. Пусть a_r — сумма масс двух ±r momenta, d_r — их разность,
+ā=¼1, h=sin(θ/2)=8λ, c=cos(θ/2). CAR дают независимо от внутренних
+density coordinates
+
+    (q₁+q₂)_(C_r)=−h(Ga)_r−ic(Gd)_r,
+    (q₁+q₂)_(P_r)=h(2a−Ga)_r−ic(Gd)_r.           (181)
+
+Completed-square identity (168) сохраняется при unit G с теми же
+reference constants z_C=−λ,z_P=λ и b₀=κtλ²(½−λ²): это следует
+из Σ_Q{Q,Q*}=8I и Σ_Q z_Q(Q+Q*)=16λA, а не из orthogonality ножек.
+Неравенство |q₁−z|²+|q₂−z|²≥½|q₁+q₂−2z|² даёт точную редукцию
+
+    b_max(G)=b₀−4κtλ⁴ min_(a≥0,1ᵀa=1)
+                  [||a−ā||²+||(G−I)a||²].       (182)
+
+Граница достигается ρ_(±r)=(a_r/2)I₁₆/16, d=0; все q₀,q₃=0,
+q₁=q₂. Это максимум по ВСЕЙ balanced preparation, а не только Bell
+ansatz. При Q_G=I+(G−I)² внутренний minimizer равен
+Q_G^−1 1/(1ᵀQ_G^−1 1); эта формула вне окрестности I требует
+проверить positivity масс. На (174) она положительна глобально:
+
+    a*=ā, b_max(G)=b₀−κtλ⁴(x₀−1)²,
+    b_max=b₀ ⇔ G1=1.                            (183)
+
+Uniform value expansion (169), сравнение с Bell trial при G=I и
+неотрицательный leading gap (159) теперь дают для minimizers (179):
+t_n→t_*, balance→½, а каждый cluster Gram удовлетворяет G1=1.
+Тем самым запись выбирает одну из четырёх circulant eigenvalues,
+оставляя три nonnegative eigenvalues с суммой3. На полном six-angle
+unit Gram carrier условие G1=1 фиксирует четыре сочетания углов.
+Оно оставляет две физические shear directions, не scale redundancy.
+Finite G_n>0 не доказывает положительный uniform gap у cluster Gram.
+
+Вблизи I эти оставшиеся tangents имеют вид
+
+    H₀₁=H₂₃=a, H₀₂=H₁₃=b, H₀₃=H₁₂=−a−b,
+    H_rr=0, H1=0.                               (184)
+
+При U=√G это меняет, в частности, spatial off-diagonal компоненты
+actual Lorentz coframe metric; положительный G не подменяет её.
+Из настоящих Walsh coefficient0 rows, с d из (170), положим
+D₁₂=d_(12,0)+d_(14,0), D₂₀=d_(20,0)+d_(22,0),
+D₂₈=d_(28,0)+d_(30,0). Их полный code correction на (184) равен
+
+    D C_(1,code)[H]=tλ²(3+cosθ)/8
+                ·[(D₂₀−D₂₈)a+(D₁₂−D₂₈)b].       (185)
+
+Например D Tr_Bell(n_(20,0)n_(20,0)*)=(3+cosθ)a/32.
+Соседний label22 имеет тот же source; label12/14 читает b,
+label28/30 — −a−b. Здесь n_i n_i* скалярен в каждом CAR16 block;
+на выбранном moment fibre массы ±r равны1/8, поэтому внутренние
+density coordinates этот code вклад не стирают.
+
+Можно проверить source непосредственно на exact finite Bell point
+G=I. Unitality на scalar-energy shell даёт Cost_n=n Tr_Bell G_c.
+Coefficient1 defect rows имеют нулевую первую shear derivative в I.
+Полная coherent entropy инвариантна под всеми role permutations
+(это утверждение об entropy, не о произвольном code), и её source
+на (184) равен0. Поэтому ТОЧНО, при fixed n,ν,
+
+    D F_n(I,ρ_Bell)[H]=nν⁴λ²(3+cosθ)/8
+                ·[(D₂₀−D₂₈)a+(D₁₂−D₂₈)b].       (186)
+
+Так проверяется, почему нельзя заменить (179) утверждением, что
+Bell/isotropic point автоматически решает finite geometry для любого
+кода. Теорема существования позволяет подготовке и геометрии сместиться
+и использует всю конечную entropy; равенства D₁₂=D₂₀=D₂₈ не вводятся.
+Следующий source (172) на G1=1 остаётся настоящим code-dependent
+finite part, но для существования (179) его не нужно назначать или
+решать через недоказанный uniform IFT.
+
+### 8.33. Точный оставшийся Lorentz-link источник
+
+После (180) нельзя занулить link equations по coframe symmetry.
+Запишем их как небольшой точный residual той же конечной цены.
+Внутри homogeneous strict-contraction primitive chart пусть f(C,P)
+означает цену после её собственного observable preparation minimum.
+При G>0,n≥22 это finite faithful minimum; его envelope derivative
+определён без uniform n→∞ inverse. Для unscaled real v определим
+
+    A_r(v)=D f[δC_r=νc(v), δP=0],
+    B_r(v)=D f[δP_r=νc(v)S_r, δC=0],
+    E_r(v)=A_r(v)+B_r(v).                        (187)
+
+Это Fréchet probes исходной Julia programme, не добавленные независимые
+физические поля. Coframe theorem решает E_r=0, а не A_r=B_r=0.
+
+Пусть F — полный CAR particle-hole unitary, I_lat — lattice inversion.
+Имеем Fc(u)F*=c(u)* и FΓ(Ω)F*=TrΩ−Γ(Ωᵀ). Одновременная
+word-adjoint замена всех P,C переставляет только adjoint-pair bit
+raw word; Walsh rows получают фазу (−1)^u. В композиции с F I_lat
+это фиксирует исходные C,P при M=I, сохраняет ЛЮБОЙ diagonal full
+code и coherent entropy. Unique observable preparation инвариантна.
+
+Для actual link variation Ω_r∈so(1,3) имеем
+δP_r=νc(u_r)Γ(Ω_r)S_r. TrΩ_r=0 и commutator identity
+Γ(Ω)c(u)=c(u)Γ(Ω)+c(Ωu) переводят этот jet в
+
+    δP_r ↦ −δP_r−νc(Ω_r u_r)S_r, δC=0.
+
+Инвариантность differential даёт точную finite формулу
+
+    2 J_r(Ω_r)=−B_r(Ω_r u_r).                    (188)
+
+Итак, все12 own-leg-stabilizer directions Ω_r u_r=0 исчезают.
+Оставшиеся12 link directions не исчезают из E_r=0. Их exact условие,
+при B_r(v)=b_r·v и η=diag(1,−1,−1,−1), есть
+
+    b_r ∈ span{ηu_r} для каждого r.              (189)
+
+Это верно и для nonzero null u_r: образ Ω↦Ωu_r равен
+{v:u_rᵀηv=0} и имеет dimension3.
+
+На canonical embedding U=√G из (174) primitive covector matrix
+V=[b₀ … b₃] real V₄-circulant: действие на forward-only probes
+сохраняет исходные phases и solved preparation. Поэтому residual
+описывается четырьмя числами. При U=I (189) требует нуля трёх
+off-diagonal coefficients V; diagonal свободен. Если у positive
+circulant U есть хотя бы один nonzero off-diagonal entry, (189)
+эквивалентно V=0. Действительно, из diagonal entries
+V₀₀=α_r η_rr U₀₀ следуют α_r=η_rr V₀₀/U₀₀. Для любого nonzero
+displacement a множитель η_rr η_(r⊕a,r⊕a) принимает оба знака.
+Circulant off-diagonal equality поэтому заставляет V₀₀=0, затем
+все α_r и V равны0.
+
+Есть единый exact residual norm, включающий isotropy. Пусть
+U_rs=f_(r⊕s), b_h=B₀(e_h), ε=(1,−1,−1,−1) и
+L_ab=E_ab−ε_a ε_b E_ba, a<b — шесть явно заданных Lorentz
+генераторов. Из (188) следует
+
+    J_(r;ab)=−½[b_(r⊕a) f_(r⊕b)
+                      −ε_a ε_b b_(r⊕b) f_(r⊕a)],
+    Σ_(r,a<b) J_(r;ab)²=Σ_h (1−f_h²)b_h².        (189a)
+
+Здесь ||f||²=1, а ν уже ВКЛЮЧЕНО в определение B в (187).
+Cross terms сокращаются по
+Σ_r ε_(r⊕h)ε_(r⊕k)=0 при h≠k. Это евклидова сумма квадратов
+24 указанных source components, а не Lorentz-invariant action.
+Все24 link equations поэтому эквивалентны четырём scalar условиям
+(1−f_h²)b_h=0. При isotropy одно из них тождественное; при positive
+non-isotropic circulant U все четыре веса положительны.
+
+Этот четырёхчисленный тест относится к указанному embedding. Общий
+O(4) coframe rotation не есть Lorentz gauge при фиксированных η,n;
+нельзя переносить (189) между такими embeddings без преобразования η.
+V₄ перемещает также time role и не сохраняет весь Lorentz-link chart.
+Использованное primitive differential identity (188) не требует такого
+ложного физического расширения симметрии.
+
+B вычисляется без новой цены и без finite-difference census. В φ units
+пусть R_j — actual full data/reference state, G_c=Σ c_a K_a*K_a,
+
+    Y_n=(log R_n+I)/ℓ, Y_j=G_c+Φ*Y_(j+1),
+    B_r(v)=Σ_(j<n) Tr[(δ_r,v G_c)R_j
+                           +Y_(j+1)(δ_r,v Φ)(R_j)].       (190)
+
+В δ_r,v подставляется именно forward-only probe (187), со всеми
+Julia-root derivatives и actual labels. Tensor I_reference подразумевается.
+Homogeneous full-span neighbourhood имеет постоянный Choi carrier и
+гладкий положительный occupied support постоянного ранга. При частной
+производной с фиксированной оптимальной подготовкой output support
+фиксирован; при движении самой подготовки он может двигаться.
+Для других directions действует уже доказанное C¹ birth continuation,
+а не frozen-support logarithm. Preparation-response term исчезает по
+его собственному Euler equation, а не по фиксации материи.
+
+**Потребитель:** (179)–(180) теперь решают все finite preparation,
+coframe, observer и nonzero-Fourier field equations; (188) решает
+ещё12 homogeneous link directions. Оставшийся geometric шаг — actual
+три/четыре forward-source numbers (189)–(190), либо их совместное
+продолжение при nontrivial physical links. Само их малое число не
+доказывает solvability. Physical full-code/Info admission, дополнительные
+resource/controller equations, independent matter и spatial/global GR
+recovery остаются отдельными непотреблёнными переходами. Полная ОТО
+и полный finite joint root здесь не объявляются.
+
 ## 9. Проверка
+
+§§8.31–8.33 проверены независимо по настоящему null-history witness,
+его Walsh normalization, unused-factor purification, parity и finite
+entropy birth; compactness не предполагает uniform spectral gap.
+Отдельно проверены phase-only V₄ covariance, перенос на все coframe/
+observer rows, полная preparation reduction (182), literal-code shear
+source (186) и ordered particle-hole link differential (188). Граница
+coframe-slice symmetry / physical Lorentz link domain сохранена.
+Новые numerical/rank/Lean replays для этих аналитических теорем не нужны.
 
 §§8.29–8.30 проверены аналитически по finite compactness/convexity,
 actual span22, full-carrier preparation и translation sources. Независимо
