@@ -82,7 +82,7 @@ def creator(i):
     a = matzero()
     for mask in range(CAR_N):
         if not (mask & (1 << i)):
-            sign = -ONE if ((mask & ((1 << i) - 1)).bit_count() % 2) else ONE
+            sign = -ONE if (bin(mask & ((1 << i) - 1)).count('1') % 2) else ONE
             a[mask | (1 << i)][mask] = sign
     return a
 
