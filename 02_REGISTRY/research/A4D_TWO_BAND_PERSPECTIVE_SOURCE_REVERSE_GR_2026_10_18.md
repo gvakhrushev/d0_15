@@ -244,3 +244,33 @@ The exact chain on the constructed complete feedback is now:
 This does NOT assert that an old fixed nine-word, unknown amplitude processing, or physical M1 has already selected the one local LEFT-controlled scene programme. The strictly remaining full-physics question is WHETHER THE TRUE EXECUTED same-history price has the 2-channel source quotient (TB14) after its own clock/scene/work/preparation equations. Owned scoped no-gos #369/#370 and full-price fixed-counting lapse test make it falsifiable. If the full quotient is positive, a strong nonlinear Einstein-plus-derived-matter representation is already available; if not, the exact residual operator/source must be registered rather than hidden in an Einstein fit.
 
 **Do not relabel this theorem as general physical GR:** even if (TB20) is an exact Einstein-frame decomposition for the constructed analytic scalar programme, an arbitrary spinor/SM/observer matter law and its conserved stress require independent native execution and source. A choice of Einstein frame from measured response is not proof that all physical D0 matter reads that frame off-null. The result consumes a mathematical action/field-redefinition obligation, not compulsory physical selection.
+
+
+## 8. A one-line physical closure passport: the SAME true full-price source minus TWO visible bands
+
+The previous theorems supply a more decisive TEST than asking for a ten-point theoretical inventory. On exactly the declared actual full retained AF×scene return carrier, and for every genuine internal/matter/coframe/clock tangent V at fixed p,z,t, the derivative of the *entire constructed operator feedback* is the exact directly band-readable covector
+
+    DJ_loc[V]
+      =ν528 Σ_(j,i∈j)D_j z[
+           Du_i[V]/(1−zu_i)+Dv_i[V]/(1−zv_i)] .       (TB22)
+
+This comes from actual −Trlog with original plus/minus and all retained/matching multiplicities, not an assumed Shannon mean. No unknown geometric operator or Riemann curvature is inserted into (TB22). The REAL native Book/GOLDEN whole history price S_full may include earlier H,J,R, entropy, control and preparation, its actual z-clock and full work costs. Its **complete physical mismatch** with the constructed source is the ONE exact differential
+
+    Ω_h[V]:=D S_full,h[V]−DJ_loc,h[V].              (TB23)
+
+This is not an invented counterterm: it is subtraction of two ACTUAL candidate sources to determine whether they belong to the SAME physically selected programme. If J_loc is not literally a component of the selected S_full, Ω_h describes a comparison of DIFFERENT programmes and cannot be treated as a physical compensation; the first test is TYPE/admission equality.
+
+On the existing exact null-star pp-wave, by (TB10), the necessary and sufficient source-level condition for that same geometric+grade0 material Euler to survive *without changing its relative coupling* is
+
+    Ω_h[V]=0 for every admitted V in the actual
+    joint interior coframe/link/grade0/observer/clock/old-source
+    tangent after genuine necessary internal Euler rows,             (TB24)
+
+or a quantitatively proved Ω_h/a_h→0 in its ACTUAL source/reconstruction norm along a joint stationary refining sequence. If Ω_h is instead in the same space-uniform span of DΣ fhat,DΣqhat, the Einstein–scalar **form** may survive with a changed two-channel coupling: do not report the ratio ±23.416... unchanged. The fixed-counting v8 lapse Hessian 0.005723 and #369/#370 provide named hostile tangents for this test; they must not be concealed inside an assumed vanishing residual.
+
+All the apparent ten separate gaps collapse into one *typed operational experiment*: measure the two actual return bands and their moving first source, execute the whole retained Book record with its real code/clock/controller preparation, and evaluate Ω_h on the same physically admitted tangent. The built nonlinear Einstein-frame proof guarantees the geometric outcome **if** this comparison passes. It does not guarantee that nature, M1 or the current native gate alphabet will select that programme, that auxiliary material volume is covariant off-null or that the original raw #216 is solved. This is a falsifiable route, not a numerical Einstein fit.
+
+**Three independent source domains must not be falsely conflated:**
+the exact positive density residual P=−V of this same J_loc;
+the separately owned π0/golden **fibre** cochain operator residual (#369);
+and the genuinely physical complete-price mismatch Ω_h. Equality of any two requires an actual same-carrier effect/source intertwining. In particular P(0)=0 on every sourced null pp-wave, while a π0 archive residual may remain nonzero and invisible on the coarse address.
