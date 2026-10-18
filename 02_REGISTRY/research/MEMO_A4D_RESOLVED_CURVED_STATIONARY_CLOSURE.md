@@ -3037,3 +3037,137 @@ Validation: the extended untruncated checker passes, including its inherited
 24-link/16-solder checks, both Hessian constructions, exact determinant,
 independent modular determinant and hostile controls. This is an exact finite
 certificate and an elementary continuity consequence, not a Lean theorem.
+
+### 9.39 Candidate: rational points of one Cayley segment
+
+Status of this section: **candidate**. It is not a terminal witness, not a
+closure of `full_affine_stationarity`, and not a statement about irrational
+parameters. The open neighbourhood in §9.38 is not used and is not extended.
+No joint nonlinear solution is constructed. No coefficient of the four
+channels is chosen. L=3 stays unopened. The task stays `IN_PROGRESS`.
+
+**Owned inputs, quoted.**
+
+The original channel integrand has no solder argument
+(`02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_f4_check.py:223-224`):
+
+```text
+def four_channel_I(links, bfield):
+    """Return (I_eta_adj, I_eta_opp, I_n_adj, I_n_opp) exact."""
+```
+
+The owned solder Hessian writes one site at a time
+(`a4d_resolved_curved_stationary_f4_check.py:128-129` and `:139`):
+
+```text
+    for x in SITES:
+        for r, s in PAIRS:
+                        H[vidx(x, u, a), vidx(x, v, b)] += A[a, b]
+```
+
+At the frozen seed, §9.12 records rank 6, not a new computation here:
+
+```text
+The star density is bilinear in the two complementary solder legs, so at
+this fixed link the absolute-solder gradient is exactly the constant
+symmetric Hessian `H` of §9.8. That Hessian has rank 6.
+```
+
+§9.38 gives the chart-point determinant reproduced below. Its links are the
+endpoint `s=1` of the segment, not the whole segment.
+
+**Object.** Let `generators0` be the parabolic seed of the order-1 owner.
+Let `G_chart` be the four Cayley generators of §9.37: `(rho,t,u)=(1,0,8/3)`
+plus the particular amplitude `(0,0,-10/3,-8/3,0,4/9,0)` on support 5.
+The segment is the straight generator line
+
+```text
+G(s) = generators0 + s*(G_chart - generators0).
+```
+
+Its Cayley denominators factor as
+
+```text
+role 0: -2*(2*s-1)*(2*s+1)
+role 1: 2
+role 2: -(233*s^2+16*s-36)/36
+role 3: -(s-2)*(s+2)/4.
+```
+
+The quadratic `233*s^2+16*s-36` has discriminant `33808`, which is not a
+square, so its roots are irrational. The only rational parameters where a
+chart closes are `s=±1/2` and `s=±2`. Those four rationals are not points
+of this Cayley family.
+
+**Exact determinant.** On the open chart, the homogeneous 16-site star
+Hessian `H(s)` in the row-major coframe coordinate of §9.38 satisfies
+
+```text
+det H(s) = det(M)(s) / Delta(s)^16,
+Delta = 81*(s-2)^2*(s+2)^2*(2*s-1)^2*(2*s+1)^2*(233*s^2+16*s-36)^2.
+```
+
+`M=Delta*H` is a polynomial matrix of entry degree at most 12. Its
+determinant is the integer polynomial
+
+```text
+det(M) = C * s^12 * (s-2)^16 * (s+2)^16 * (2*s-1)^18 * (2*s+1)^18
+         * (233*s^2+16*s-36)^16 * q(s),
+C = 3117343613342156762592422345852808301028220510142464,
+```
+
+with `q` primitive of degree 70, nonzero constant term, and no rational
+root. The last point is the factorization of `q` modulo `104729`: the
+factor degrees are `7,10,11,42`, the leading coefficient is nonzero modulo
+that prime, and a rational root of a primitive polynomial would reduce to a
+linear factor. Each chart factor of `det(M)` has valuation strictly below
+its valuation in `Delta^16` (`16<32` or `18<32`), so those factors are poles
+of `det H`, not zeros. Therefore, for rational `s` with all four charts
+open,
+
+```text
+det H(s) = 0  if and only if  s = 0.
+```
+
+At `s=1` the formula returns the §9.38 determinant
+
+```text
+40765604576726345069227791532913732955215768490597607321403042878734640884143996245433663881216
+/
+1043809895872838655329569143133917752420140067322792752999568729.
+```
+
+The same `H(1)` equals the polarization of the 16-weighted homogeneous star
+action, and `H(0)` has rank 6. Flat links give the zero matrix, so every
+open-chart rational point with `s≠0` is curved: an invertible Hessian is not
+the flat Hessian.
+
+**Solder row of the original action.** Because `four_channel_I` depends on
+links and translations only, every channel coefficient drops out of the
+solder row. Translations drop out of that row for the same reason. For
+rational open `s≠0`, the only homogeneous coframe critical for the original
+four-channel action is the zero coframe. Zero is degenerate, so this segment
+has no nondegenerate homogeneous-coframe stationary point at any such
+rational parameter. The seed `s=0` remains the singular link already
+described in §9.12; its link-Euler kernel is not recomputed here.
+
+At the two rational points `s=1` and `s=3`, the one-site block in the f4
+leg/component index equals `H/16`. Together with the per-site support quoted
+above, both of those links force every site coframe, not only the
+homogeneous one, to zero. That block identity is not claimed for every `s`.
+
+**Pre-registered strongest attack.** The primitive cofactor `q` may have
+real roots. Any such root whose four Cayley charts stay open is a singular
+Hessian point of this same segment and is unclassified here. Isolating one
+real root of `q`, then testing whether its kernel contains an invertible
+coframe, is the reopening hook. Separately, `s=±1/2` and `s=±2` are
+chart walls, not counterexamples. This line is not the selected
+four-channel family: other supports, other backgrounds, and site-dependent
+links off `s=1` and `s=3` stay open. A zero on a different carrier does not
+close this segment, and this segment does not close the obligation. A
+normalization in which the channels depended on the absolute solder would
+be a different row; that is not the quoted integrand.
+
+Certificate:
+`02_REGISTRY/research/sources/a4d_rational_segment_solder_hessian/check.py`.
+It exits 0. Candidate only.
