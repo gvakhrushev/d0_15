@@ -172,8 +172,69 @@ assert abs(work_expected)>1e-5
 # In this classical complete-record scenario H(W|Y,J)=0 identically.
 assert all(H([1.0]) == 0.0 for _ in range(2))
 
+
+# Global measured-capacity theorem for an arbitrary correlated full classical cut.
+def KL(x,y):
+    return sum(v*math.log(v/w) for v,w in zip(x,y) if v>0)
+def bern_kl(v,w):
+    return KL([1-v,v],[1-w,w])
+
+a_cap=[.30,.39,.27]
+r_cap=[.20,.50,.30]
+s_cap=[.75,.66,.88]
+b_cap=[.23,.68,.47]
+corr_cap=[.012,-.016,.005]
+joint_cap=[]
+for ai,bi,corr in zip(a_cap,b_cap,corr_cap):
+    joint_cap.append([(1-ai)*(1-bi)+corr,
+                      (1-ai)*bi-corr,
+                      ai*(1-bi)-corr,
+                      ai*bi+corr])
+    assert min(joint_cap[-1])>0
+all_cap=[[r_cap[i]*(1-s_cap[i])]
+         +[r_cap[i]*s_cap[i]*zv for zv in joint_cap[i]]
+         for i in range(len(r_cap))]
+H_cap=H(v for row in all_cap for v in row)
+D_cap=sum(z(ai) for ai in a_cap)
+r_star=[z(ai)/D_cap for ai in a_cap]
+s_star=[s(ai) for ai in a_cap]
+KL_leaf=KL(r_cap,r_star)
+KL_success=sum(r_cap[i]*bern_kl(s_cap[i],s_star[i])
+               for i in range(len(r_cap)))
+KL_scene_MI=0.0
+for i in range(len(r_cap)):
+    pa=[1-a_cap[i],a_cap[i]]
+    pb=[1-b_cap[i],b_cap[i]]
+    mi=sum(
+        joint_cap[i][idx]*
+        math.log(joint_cap[i][idx]/(pa[idx//2]*pb[idx%2]))
+        for idx in range(4)
+    )
+    assert mi>=-1e-14
+    KL_scene_MI+=r_cap[i]*s_cap[i]*(bern_kl(b_cap[i],.5)+mi)
+global_deficit=math.log(D_cap)-H_cap
+assert abs(global_deficit-KL_leaf-KL_success-KL_scene_MI)<1e-12
+assert KL_leaf>0 and KL_success>0 and KL_scene_MI>0
+
+# Attaining EVERY bound gives the unique maximum on the same fixed-a
+# positive classical-probability fibre, not a native M1 selection theorem.
+opt_cap=[]
+for i,ai in enumerate(a_cap):
+    opt_cap.extend([
+        r_star[i]*(1-s_star[i]),
+        r_star[i]*s_star[i]*(1-ai)/2,
+        r_star[i]*s_star[i]*(1-ai)/2,
+        r_star[i]*s_star[i]*ai/2,
+        r_star[i]*s_star[i]*ai/2
+    ])
+assert abs(H(opt_cap)-math.log(D_cap))<1e-12
+assert sum(abs(r_cap[i]-r_star[i]) for i in range(len(r_cap))) <= math.sqrt(2*global_deficit)
+
 print(json.dumps({
     "status":"PASS",
+    "exact_global_capacity_deficit":global_deficit,
+    "capacity_deficit_parts":[KL_leaf,KL_success,KL_scene_MI],
+    "capacity_Pinsker_control":True,
     "retained_work_source_nonzero_negative_control":work_expected,
     "deterministic_work_copy_classical_Shannon_source_neutral":True,
     "stationary_failure_source_identity":True,
