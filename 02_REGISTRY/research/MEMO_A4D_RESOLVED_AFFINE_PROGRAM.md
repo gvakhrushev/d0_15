@@ -23,6 +23,26 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+The same owner's §§8.4–8.6 now close a constructive part of this interface.
+The actual raising operator `X=C(u)Lambda(M)` determines u and the full M,
+smoothly even across a nonzero null direction. Principal whitening has
+fixed eta, so observer jets enter the actual queries without an independent
+moving-metric oracle. All coframe/link jets survive on the full matrix
+domain. The recovered star query is compiled coherently from the supplied
+Julia queries and constant addressed controls; all work outcomes remain.
+An explicit amplitude bound transfers the complete finite Shannon first
+source, including born labels. This is an execution theorem in the stated
+oracle/resource class, not physical selection of that class or programme.
+The next forcing target is its actual nonzero chiral source with the old
+history included; do not reintroduce an independent transport/trace oracle
+or repeat the solved reconstruction.
+Section8.7 consumes the existing Role/site sign-twisted selector: inside
+the canonical local linear-curvature oriented-density class the insertion
+is already c*star. The remaining question is the native membership and
+nonzero coefficient, not choosing star again. All geometric uses first
+invert the recovered native F=e^-1 to the original coframe; inverse-frame
+coefficients must not be substituted directly into solder wedges.
+
 The [complete labelled golden-record source](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 is the new consuming result. Its five-outcome same-history Cost−Info
 includes preparation failure and both success flags. The prefix probability
@@ -60,8 +80,9 @@ still need the same full source. The configured preparation equations and
 the geometric Palatini consumer are available and should be consumed.
 The actual controlled gate now factors along one existing golden rotation
 axis, with exact jet `(sqrt(p)/2)t² T_(p²)J DF_star`. Its native geometric
-SELECT and complete execution source remain the primitive interface;
-fixed-gate approximation cannot manufacture a moving query.
+SELECT is now constructively obtained from supplied full-Lorentz Julia
+queries by §8.6. Their physical admission, resources, complete prior source
+and forced programme choice remain; fixed controls alone are still insufficient.
 
 The same owner's §§7.1–8.3 now resolve the actual composition test.
 The scene's528-dimensional cut belongs to a full22976-dimensional

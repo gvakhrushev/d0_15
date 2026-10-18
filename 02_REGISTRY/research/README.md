@@ -24,6 +24,14 @@ and rules out embedding the curved unipotent family in old positive
 unitary returns. The current consumer is the full-Lorentz Julia source
 with its retained defect branches; the finite UV result is not a general
 GR no-go or a physical admission theorem.
+Sections8.4–8.6 now compose that query from the actual forward operators:
+smooth full16 transport reconstruction also covers nonzero null vectors,
+then a coherent Julia-word compiler transfers the complete finite Shannon
+first source with all work leakage retained. The principal whitening has
+fixed Lorentz form; moving observer jets remain in its native inputs.
+Addressability, physical preparation/admission and forced chiral selection
+remain explicit inputs. No independent transport oracle or measured-entry
+tomography is required by this conditional execution theorem.
 The [CAR/clock readout](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
 recovers the original metric, without an Einstein-frame rescaling. The
 [regular-natural-source classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)

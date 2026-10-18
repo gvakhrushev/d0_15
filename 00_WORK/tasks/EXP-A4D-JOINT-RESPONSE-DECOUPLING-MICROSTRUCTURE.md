@@ -63,6 +63,24 @@ check_native_pure_time_source.py and their named receipts in the same
 source directory. No historical replay or new task is required. Pure-time
 source scope, reference rank and all zero outcomes must remain explicit.
 
+Forward-query continuation at `3447a184`: prove that actual `X=C(u)Lambda(M)`
+recovers u and full Lorentz transport smoothly across nonzero null vectors,
+then construct the geometric query from provided Julia queries rather than
+an independent U oracle. Consume actual principal whitening, the existing
+eight-word star trace, addressed G/CNOT compiler and same-history price.
+Common carrier: CAR16, genuine endpoint data and explicitly prepared
+retained work records; no new matter oracle. Preserve full clock/coframe/link
+jets, all complement outcomes and the genuine old-history source. A bounded
+assistant owns only check_native_transport_reconstruction.py and
+NATIVE_TRANSPORT_RESULT.json in the existing source folder; root owns the
+same owner and shared consumers. Smallest decisive checks: actual null
+reconstruction and transverse jets, true inverse, principal clock frame,
+Julia dark state, double-projector polynomial and coherent generator.
+The analytic consumer proves complete finite Shannon C1 source transfer
+with work leakage. No old replay is needed. Physical oracle/resource
+admission, chiral forcing and exact joint/refinement recovery are not
+consequences of compiler approximation and remain the consuming obligations.
+
 ### Whole-source synthesis after the local vacuum result
 
 The user's next request is to try an end-to-end breakthrough, rather than

@@ -16,15 +16,19 @@ refinement limit**. This target remains open.
 | [Exact full local lattice recovery](02_REGISTRY/research/A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md) | A nonflat pp-wave family solves every interior 16-coframe/24-link row with actual golden weights and a smooth Ricci-flat limit. Its same periodic extension has scalar f=0 everywhere, supplying the new preparation theorem; exterior geometric Euler rows remain fixed and can be nonzero. |
 | [Full AF source normal form](02_REGISTRY/research/A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md) | Retains the off-shell action identity and complete stationary-set bijection for its distinct declared AF/scene price. Its changed metric and constraint stress need physical identification. The literal spectral H+J+R, open-Julia mean and new labelled price are different sources. |
 | [Common research / Draft #334](02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md) | Retains the full source, history, matter, preparation, geometry and joint-root results with their scopes. Scoped obstructions change the consuming arrow; they do not erase the positive construction or establish a general GR no-go. |
-| Next consuming proof | Derive the geometry-controlled programme from the **actual native operations and complete history**, retaining every earlier record and execution source. Use the solved configured preparation equations and existing Palatini/Cartan consumers. Establish independent matter coupling and global physical recovery on that same carrier. |
+| Next consuming proof | Derive physical admission and selection of the now constructively compiled chiral programme, retaining its actual earlier-history source. Use its complete configured first source and the existing Palatini/Cartan consumer; establish independent matter coupling and exact global recovery on that same carrier. |
 
-The latest native-interface calculation solves a complete preparation equation
-for the real128-outcome instrument. Its full source rules out a free scale
-root on that pure-time block for every preparation. The geometric query
-also has an exact CAR-word expression, while the curved pp-wave family
-requires the full-Lorentz Julia interface: the older positive-unitary
-returns cannot carry its nontrivial unipotent loops. These results change
-the next consuming step; full GR remains open.
+The latest composition recovers the full metric and Lorentz transport from
+the actual raising operators, including the null directions of the curved
+pp-wave family. On the supplied addressed full-Lorentz Julia interface it
+constructs a coherent geometric query and transfers its complete finite
+Shannon first source, retaining all work leakage. It needs no independent
+transport oracle or intermediate measurement. Physical admission and the
+reason D0 must execute this chiral programme remain unproved; compiling a
+configured GR experiment does not yet select the law of D0.
+The existing Role/site naturality theorem already selects the star type
+within its canonical insertion class. The remaining forcing question is
+whether the complete native price has a nonzero component of that type.
 
 The original fixed-g/fixed-tau, all-ten unweighted raw h^-2/#216 task remains
 **OPEN with its exact terminal unchanged**. The [source-norm comparison](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md#5-точное-различие-двух-требований-к-пределу)

@@ -2,6 +2,24 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
+**Latest consumed transition, input `3447a184`:** §§8.4–8.6 of the owner
+below reconstruct u and full Lorentz transport from the actual raising
+operator, including the active pp-wave null direction and every transverse
+jet. Principal whitening fixes eta while retaining observer jets in X.
+A coherent polynomial/word construction then implements the star/golden
+query from supplied Julia operations, with explicit full work handling.
+The full finite Shannon first-source bound includes every failure label;
+it closes the configured source-transfer step in that addressed oracle
+class. Physical admission, preparation resources, compulsory chiral
+selection, old-history source and exact joint/global recovery remain.
+This improves the execution statement below without identifying a compiled
+configured experiment with the physically selected D0 law.
+Section8.7 also consumes the existing canonical Role/site selector rather
+than rediscovering chirality: the same-type nonzero source must be star.
+Its membership/nonzero weight in the full physical price remains the next
+forcing premise. Recover F=e^-1 first, then invert to the original coframe
+before using the existing solder legs; the operational metric is unchanged.
+
 The [labelled golden-record theorem](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consumes the actual CAR/clock metric, same-history event-price identity,
 native AF corner and the full local weighted-star family. Its complete
