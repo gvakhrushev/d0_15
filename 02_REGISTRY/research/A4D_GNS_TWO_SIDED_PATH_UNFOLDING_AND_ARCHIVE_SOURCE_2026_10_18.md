@@ -54,7 +54,7 @@ Therefore **as normalized states on the ENTIRE coarse algebra A_k**,
 tau^(LR)_(k,N) = tau^(LEFT)_(k,2N),                    (F5)
 ```
 
-where tau^(LEFT)_(k,m) is the state resulting from uniform probabilities of every full LEFT path leaf at level m, restricted to level k. Equality includes arbitrary **non-diagonal old algebra observables**, since both are tracial states with exactly the same two trace coefficients; this conclusion for states does not mean their instruments are the same.
+where tau^(LEFT)_(k,m) is the **tracial/fully dephased** state constructed from uniform probabilities on every LEFT leaf at level m, restricted to level k. (F5) is unconditional **for classical prefix probability measures**. For arbitrary full GNS *premeasurement* states that merely have the same diagonal pair outcome probabilities, equality on **non-diagonal old algebra observables does NOT follow**: for N=1 the uniform pure amplitude on the four READY 2x2 matrix units gives a LEFT 01 coherence of 2/5, whereas the fully dephased state gives zero. Only after dephasing in the complete pair PVM (or separately assuming traciality/vanishing coherences) are the two states equal on all old A_k observables. This is a necessary all-source distinction, not a cosmetic quantum representation point. Equality of their instruments is never inferred.
 
 The same identity follows from the Fibonacci addition formula:
 `F_(N-k+1)F_(N+2)+F_(N-k)F_(N+1)=F_(2N-k+2)`
