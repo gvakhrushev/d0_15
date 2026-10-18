@@ -174,41 +174,73 @@ C_(kk)[g_chi,r] = G[g_chi]_(kk) -2 r^(-1) Hess_g(r)_(kk)
 
 is an **identity of two metric descriptions**. It cannot be promoted to D0 dynamics or used to rename the native operational metric into an Einstein-frame metric. Conversely null directions/projectors depend on the conformal cone, not its scale: at fixed CAR matter state and normalized clock direction, `P_chi(s)=P(s)` under the coframe rescaling. Hence a pure angle-based nine-probe measurement cannot *by itself* remove the #334 `chi` degeneracy. A silent `rho` plus nonconstant `chi` explicitly has all nine `q=0` but `G[g_chi]_(uu)!=0`. This is the decisive negative control against the false inference `nine Born zeros => Einstein vacuum`.
 
-## 5. Single mathematically sufficient native exit: the **inherited address Cost−Info**, if admitted
+## 5. Exact Cost−Info/Info discriminator: KL is NOT the Book action
 
-The correct way to try to remove `chi` is not to add a chosen `R`-source. It is to test whether the actual *older, fully retained* history already measures **the same AF/GNS address weights** that the five-cut leaves free. Let positive reference weights `(mu_x,mu_c)` sum to1, with `mu_c>0`, and let `w_chi,x=mu_x chi_x`, `w_chi,c=mu_c c_c=1-sum_x mu_x chi_x`. Conditional on a genuinely inherited complete address measurement with these Born probabilities and a fixed, supplied φ-code `c_i=-log_phi mu_i`, its actual measured average price would have the **computed** form
+The next missing scalar may be controlled by old physical history, but the **sign and type of its price are already fixed** by [the pathwise branch-information cocycle](A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md) and [the fixed-AF pointer owner](A4D_AF_FIXED_POINTER_BOOK_INFORMATION_SOURCE_2026_10_17.md). A previous tempting shortcut would have put `D_KL(w||mu)` into the `Cost−Info` action just because the address reference code has `c_i=-log_phi mu_i`. That is **not the native Book pathwise Info law**. Do not perform this substitution.
 
-```
-Cost(w_chi)-Info(w_chi)
-  =sum_i w_chi,i c_i -H(w_chi)/log(phi)
-  =D_KL(w_chi || mu)/log(phi).                           (N6)
-```
-
-This equation is an elementary identity for that fully specified code/Info contract. It is **NOT** an assertion that the old 128 words have these probabilities or that D0 selected that complete measurement. In the old owner, `q_rho(word)=mu_PF(word)Tr(rho M_word)`, generally not `mu_PF(word)`. The present five-flag protocol explicitly did not measure the address `x`; adding the distribution (N6) without proving those effect/source identities would violate the existing source firewall.
-
-Nevertheless, (N6) has an unusually sharp consequence **if the binding is proved**. At `chi=1` its first derivative vanishes, and its full Hessian on actual relative GNS variation `xi_x=dchi_x` is
+Let an actual *complete* measured address word distribution be `w=(w_x,w_c)`, normalized, with fixed positive golden/Fibonacci reference `mu=(mu_x,mu_c)`, `sum mu=1`. For the original Book history binding `w=Pr(actual word)` its pathwise information is
 
 ```
-D²(Cost-Info)(xi,xi) = (1/log phi) *
-    [sum_x mu_x xi_x² + (sum_x mu_x xi_x)²/mu_c] > 0       (N7)
+Cost_i = -log_phi mu_i,
+Info_i = log_phi(w_i/mu_i),
+Cost_i - Info_i = -log_phi w_i.                           (N6a)
 ```
 
-for every nonzero xi. Strict convexity/relative-entropy positivity fixes `chi=1` uniquely along the exact compensating orbit of the *same star action*; it does not disturb the existing correct `chi=1` root because its source vanishes there. The checker tests the Hessian with an explicit rational complete-address example. **This is the exact one-scalar-source mechanism capable of killing the explicit non-Einstein #334 family without fitting an Einstein curvature term.** It is conditional on a native inherited-address measurement and its complete price/source, not a suggested insertion of KL by fiat.
+Thus, on the **same** complete fixed-round partition,
 
-There are therefore precisely two admissible **research forks** rather than a fake theorem:
+```
+E_w[Cost-Info] = H(w)/log(phi),
+E_w[Info]      = D_KL(w||mu)/log(phi),
+E_w[Cost]      = [H(w)+D_KL(w||mu)]/log(phi).             (N6b)
+```
 
-1. **Operational metric really is `g_chi` (as currently typed).** Derive the old address-price binding (N6) as the same history/measurement; then (N7) fixes the conformal weight and removes this known counterexample. The nine projector effects provide the separate candidate null-matter readout, which still needs source conservation/normalization and complete cost compatibility.
-2. **The physical clock/rods actually couple to the combined `g=chi g_chi`.** Then the scalar is a potential Weyl compensator, and (N5) explains its null focusing. But the *same experiment's* operational clock and matter response must select that composite metric. Merely noticing action invariance (7.7) cannot turn `chi` into gauge; the old native CAR metric reads `g_chi` and can distinguish it.
+The alternative mathematical contract `Cost - H(w)/log(phi) = D_KL(w||mu)/log(phi)` treats Shannon entropy as *Info*; (N6a–b) instead give expected surprisal as `Cost−Info`. The former contract could have a strictly positive Fisher Hessian and fix `chi=1`, but **does not follow from Book and cannot be inserted to repair gravity**. These are distinguishable experiments, not naming conventions.
 
-Neither fork can infer the full physical Einstein equation without admitting, differentiating and refining the **same complete native price**, as in [strategic synthesis §§7.1–7.4](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md). The selected naked-star Schur relation is not the full native Hessian; the cubic same-source Ward test, actual finite Lorentz-link rows and matter equations remain open.
+The danger is more precise on the actual #334 conformal orbit. Suppose, *conditionally*, that a previously measured complete native history even had exactly the AF address probabilities
 
-## 6. Actionable single-PR consumer and acceptance criteria
+```
+w_chi,x=mu_x chi_x,  w_chi,c=1-sum_x mu_x chi_x,
+mu_c>0, w_(chi=1)=mu.
+```
 
-The next experiment should not rebuild the Einstein projector or introduce a preferred prior. **On the existing full AF/GNS plus CAR16/reference128 experiment**, test whether the *already retained old history* has a physical pointer effect `E_x` equal, on the very same admitted state and normalization, to the AF address observable `Q_x`, and whether its complete Cost−Info contains the fixed code contribution with the differential (N6). Its source must be differentiated with all work/controller/failure and preparation variations retained. **A mismatch of `E_x` and `Q_x`, or a nonzero residual source, kills fork 1 for this owned programme.** No new task or parallel project is needed until that one native-binding test has a definite input.
+Then its genuine expected Book price has derivative and Hessian at `chi=1`:
 
-In parallel as a bounded algebra-only sublemma, check whether the two commuting Clifford dichotomic measurements `A(s),B(s)` can be implemented *without adding new oracles* from the existing addressed Julia/G/CNOT grammar, with all four outcomes and their execution price. Their mathematical completeness (N1) is proven; their native operational admission is not.
+```
+D S_Book[ξ] = -[sum_x mu_x log(mu_x/mu_c) ξ_x]/log(phi),
+D² S_Book[ξ,ξ] = -[sum_x mu_x ξ_x² +
+                      (sum_x mu_x ξ_x)²/mu_c]/log(phi).    (N7)
+```
 
-If source binding holds and the compensation is genuinely eliminated, then recover the actual null geometry/matter response and use the nine-direction algebraic lemma (rank9) to reconstruct the tensor only **after** proving the nine scalar field laws. Conservation of the independent matter source then determines the metric-proportional remainder (constant Λ on a connected region). The complete physical route still needs the same-source cubic Ward/refinement/observer sector; finite null tomography is not itself gravitational dynamics.
+For unequal reference weights, the first source is **NONZERO** at `chi=1`, and the Hessian is strictly **negative**, the exact opposite sign from the attractive but wrong KL-as-action Hessian. Independent free address variations of entropy would instead select uniform *measured* weights (`w_x=w_c`), generally not the unequal golden/Perron profile. An old measured history therefore does **not automatically** fix the conformal mode to the desired Einstein branch. Its actual source may even move the configuration away from that branch. Further real preparation/controller terms can cancel this source only by their own derived equations. The checker confirms (N7) and the distinct positive KL information Hessian on an explicit rational complete address example.
+
+This is a physical-selection distinction, not a no-go for all native histories: the required address distribution and admissible independent ξ are not yet derived for the composed #334 five-cut, and other retained terms must enter the same price.
+
+## 6. The surviving positive route: canonical trace **as an actual preparation marginal**
+
+[The owned AF trace preparation theorem](A4D_NATIVE_AF_TRACE_PREPARATION.md) proves a unique **positive compatible tracial state across the full Fibonacci tower**:
+
+```
+tau_n(A,B)=p^(n+1)Tr A+p^(n+2)Tr B.
+```
+
+The theorem applies to *tracial compatible states*. It does NOT show that every allowed physical GNS density is tracial, and its owner explicitly exhibits surviving full-state freedom. Nevertheless the conformal obstruction only needs one much narrower interface, not a full density selector. If an independently justified native admission/record compatibility law makes the **actual prepared address marginal** agree with that already-owned trace on the original address projections, then
+
+```
+Tr(rho_chi Q_x)=tau(Q_x)=mu_x  for every original address x,
+Tr(rho_chi Q_x)=w_chi,x=mu_x chi_x,
+mu_x>0  ==>  chi_x=1 for all x.                       (N8)
+```
+
+The complement normalization then also fixes `c_c=1`. This removes precisely the known non-Einstein GNS conformal family at **finite** level, without modifying the star action, prescribing a geometric counterterm, or adding a metric-independent choice of uniform probabilities. It is an elementary exact consequence *if* the two lines in (N8) belong to one physically admitted full history. It does not prove their native binding. The compatibility requirement is substantively stronger than the entropy Euler equation (N7) and has a separate preparation/admissibility provenance. The existing PF trace theorem fixes the reference, not all actual prepared-state probabilities.
+
+This leaves two real branches:
+
+- **Trace-selected branch:** show from the actual old retained verification programme that its admissible AF address marginal is constrained by the already-owned compatible trace; consume (N8), so the `chi` escape dies. Then derive and compare the complete nine null field sources of the same process, conserving observer/link/clock/matter and all outcomes.
+- **Dynamical-compensator branch:** if physical preparations may vary `chi`, retain `r=sqrt(chi)` as a genuine scalar with its own Euler/source equation. The exact geometric null identity (N5) identifies its necessary focusing correction, but cannot declare `chi g_chi` the physical metric unless the actual rods/clocks/matter readout proves that coupling. Scalar-tensor or Weyl-interpreted gravity is not yet Einstein GR for the original operational metric.
+
+**Single decisive native experiment:** on the same original AF/GNS+CAR16/reference128 full retained process, test whether the *inherited* address projectors/effects register exactly `Q_x` at the original AF carrier and whether genuine admissibility forces their state to be trace-compatible across the Fibonacci inclusions. If either effect identity or tracial-preparation selection fails, (N8) cannot be used. Independently inspect the complete measured entropy source (N7), never a hand-inserted KL term. The original five-flag cut does not measure those addresses, so no automatic inheritance is claimed.
+
+The two-sided CAR projectors form a four-outcome mathematical experiment per direction, but **nine directions are incompatible settings**, and their registration, preparation, code, failure terms, clock and work remain physical inputs. Once the source is derived, their rank-nine map reconstructs the trace-free tensor only **after** actual null field equations are proved. The matter tensor/normalization/divergence and physical nonlinear/refinement bridge remain OPEN, as do #334's remaining Lorentz-link equations and source-preserving cubic Ward test. No new task or parallel action is created in this intake.
 
 ## 7. Reproduction and hostile controls
 
@@ -218,6 +250,6 @@ Run:
 python3 02_REGISTRY/research/certificates/a4d_two_sided_car_null_tomography_check.py
 ```
 
-The checker uses exact SymPy rational CAR16 matrices; no floating tolerance, fitted coefficient or external Einstein input. It verifies Clifford anticommutators and left/right commutativity, the nontrivial central chirality correction, `4+12` idempotents, the complete four-outcome projector algebra, rational `SO(3)` covariance on the genuine exterior lift, (N1), the two exact Gram determinants, all nine trace-free null tensor source rows, small-positive-state interpolation, the complete **nonblank** singlet pointer law, and the conformal Christoffel control. It rejects the raw-chirality shortcut, wrong central orientation, one-sided rank4 in place of rank9, repeated ninth ray and `null q=0 => Ricci vacuum` shortcut. The address Fisher Hessian is checked as a conditional algebraic lemma and is *not* treated as an observed code-source identification.
+The checker uses exact SymPy rational CAR16 matrices; no floating tolerance, fitted coefficient or external Einstein input. It verifies Clifford anticommutators and left/right commutativity, the nontrivial central chirality correction, `4+12` idempotents, the complete four-outcome projector algebra, rational `SO(3)` covariance on the genuine exterior lift, (N1), the two exact Gram determinants, all nine trace-free null tensor source rows, small-positive-state interpolation, the complete **nonblank** singlet pointer law, and the conformal Christoffel control. It rejects the raw-chirality shortcut, wrong central orientation, one-sided rank4 in place of rank9, repeated ninth ray and `null q=0 => Ricci vacuum` shortcut. The genuine Book entropy first-source and its negative Hessian are checked against the positive KL/Info Hessian as a hostile source-discriminator; no KL term is treated as the native Cost−Info action.
 
-**Terminal:** `CAR16-TWO-SIDED-NINE-NULL-PROJECTORS-EXACT; FOUR-PLUS-TWELVE-CHIRAL-SPLIT; GNS-SQRT-CONFORMAL-FOCUSING-IDENTITY; REAL-ADDRESS-SOURCE-BINDING-OPEN`. Physical D0→GR is OPEN. This research does not change the #334 finite roots, independent AF/star vacuum recovery, original raw `h^-2`/#216 terminal, claims, books or release levels.
+**Terminal:** `CAR16-TWO-SIDED-NINE-NULL-PROJECTORS-EXACT; FOUR-PLUS-TWELVE-CHIRAL-SPLIT; GNS-SQRT-CONFORMAL-FOCUSING-IDENTITY; TRACIAL-ADDRESS-MARGINAL-ADMISSION-OPEN`. Physical D0→GR is OPEN. This research does not change the #334 finite roots, independent AF/star vacuum recovery, original raw `h^-2`/#216 terminal, claims, books or release levels.
