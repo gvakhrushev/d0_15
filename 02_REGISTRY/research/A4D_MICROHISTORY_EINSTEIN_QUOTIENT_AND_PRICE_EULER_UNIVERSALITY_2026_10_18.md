@@ -231,3 +231,50 @@ Numerically independent bounded controls were performed against the stated algeb
 **New strategic conclusion:** D0 does not need a unique microhistory or a chosen quantum amplitude to have a unique GR response on this nonempty curved sector. It needs only a physically admitted COMPLETE source whose two genuine first derivatives match the canonical oriented-star and CAR kinetic channels and whose independent upstream/clock/preparation equations vanish on the same carrier. The original GOLDEN two-tick J₂ is ONE explicit successful mathematical representative, with an entire growing moduli torus and the exact mean/MAP Euler equivalence when the same complete detector is admitted.
 
 **Remaining boundary stated once, rather than reopening a catalogue:** compulsory source/old-history/Book-code selection for the ORIGINAL D0 universe, joint full-preparation/observer/clock/material dynamics, true entire H+J+R (if part of the physical programme), global causal manifold and original #216 full periodic, independently fixed matter tau, unweighted raw h^-2 remain OPEN. The new theorem **does not** declare the full physical D0⇒ОТО proof complete or confuse a complete constructed readout with a mandatory physical law.
+
+
+## 6. The REVERSE EINSTEIN theorem: a constructive right inverse from sourced GR into complete D0 microhistories
+
+The user-specified reverse strategy can now be formulated as a nontrivial actual theorem rather than "work towards EH coefficients". Specify ANY smooth constant-flux positive-null Einstein pp-wave metric in this open finite-parameter class:
+\[
+g_{\rm target}=2\,du\,dv+
+ [A x^2+2W_\times xy+D y^2]du^2-dx^2-dy^2,
+\quad R_{\rm target}:=A+D>0,
+\tag{22}
+\]
+with independent \(W_+=(A-D)/2,W_\times\), and require the physically owned source range
+\[
+0<s^2:=\frac{R_{\rm target}}{-2\lambda_-(2^{-20})}
+<4(1-p).
+\tag{23}
+\]
+This is the normalized full-CAR amplitude corridor; no unbounded-field extension or physical rescaling of p/z is assumed. The target Einstein equation \(R_{uu}=-2\lambda_-s^2\) is PART OF THE INPUT to this inverse map, not something fit by an independently adjustable Newton constant.
+
+For ANY smooth half-periodic microhistory phase shape \(f(u)\), the construction gives an **explicit, source-preserving RIGHT INVERSE**
+\[
+\boxed{
+(g_{\rm target},f)
+\mapsto
+\{\text{one original complete golden AF/scene word,
+true n-cost F/R labels,
+source-compatible full16 coframe/links,
+normalized CAR16 scalar/top material state,
+retained RIGHT/ref128}\}_h
+}
+\tag{24}
+\]
+at every EVEN lattice L, by the following finite formulas supplied and proved in §§1–2:
+
+1. Take \(h=1/L\), and choose sufficiently deep TRUE original cost n(L) such that every native Role cell is hit by a READY golden word. The existing coverage owner guarantees a finite such n(L); the individual site weights \(w_x\) are computed from the **literal** native descendant/multiplicity integers rather than fitted to geometric volume.
+2. Sample the target coframe \(\widehat e\) at the original Role sites, and pull it back via the unique already-owned source-compatible density dressing
+   \(v_{x,r}=\sqrt{\bar w/w_x}\,h\,\widehat e_{x,r}\).
+   Use the same EXACT original proper-Lorentz nilpotent pp-wave plaquette links with
+   \(c_x=-A/2,\ c_y=-D/2\), NOT a sampled smooth connection with forgotten halfstep. Their true full old-star40 variation is zero except the one Ricci trace row balanced by matter.
+3. Define \(n_f(u)=(\cos(2\pi u+f(u)),\sin(\dots))\); sample its first half and append opposite native increments. Integrate the true **finite** gradient \(D_u^+\Psi_j=s n_f(jh)\) with exact closure, and prepare the original full16 matter vector (4), with exact normalized one-clock/current section and the retained reference128.
+4. Coherently address the already-owned original GOLDEN scene and AF effects by these original star \(f_x\) and CAR Clifford \(q_x\) operands. At the final fields both operands vanish as SCALAR VALUES and all old return pencils have the original fixed golden baseline, but their genuine first coframe source is nonzero and enforces the target positive \(R_{uu}\). The unchanged two-tick logdet Book feedback provides the original \(\lambda_-\) coefficient (corrected 23.416..., not a chosen source parameter).
+
+Every interior \(\mathrm{Euler}_{e,U,\Psi}=0\) EXACTLY for the resulting **same one priced AF×scene word**, for each finite L. The resulting **operational** metric computed from the SAME recorded old AF weights and original CAR16 coefficients is exactly \(g_{\rm target}\) at the Role sites, and the material state converges to the arbitrary smooth unit-speed microhistory with O(h) strong sampling error. The density-corrected original metric is not separately fitted after solving the action: the forward readout is the left inverse of the construction (24) by explicit calculation.
+
+This is a **NONEMPTY OPEN sourced-GR family with a CONSTRUCTIVE D0 finite-microhistory realization**. It is NOT a right inverse for arbitrary curved metrics, general matter, spin or global topology. It does NOT assert that the exact configured code/controller/history word is compulsory under foundational D0, or that the independent full original H+J+R preparation/clock equations also hold. Those requirements are now separated from the explicit Einstein solution recovery map, and any promoted physical D0⇒GR statement must prove the full source/admission passes on exactly this same complete carrier.
+
+**Strategic prize:** "derive GR from microscopic D0" is factored into two precise mathematical arrows rather than an unstructured final 1%. The constructive geometric/matter *reverse Einstein* arrow (24) is an actual theorem on an extensive Einstein sector; the remaining physical forcing arrow is the self-verification/complete-price selection of its two real first-source channels and the stationary old/internal histories, together with general curved recovery beyond this sourced class. No alternative GR-like action or novel curvature operator is requested by this theorem.
