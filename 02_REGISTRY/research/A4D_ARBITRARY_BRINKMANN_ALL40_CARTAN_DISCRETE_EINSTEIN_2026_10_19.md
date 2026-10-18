@@ -221,7 +221,7 @@ D\mathcal S_h\big|_{\{f_i=q_i=0\}}
 with site-independent coefficients (true PF/site masses already transported into the single operational metric), all old-history/work/clock effects included, and positive regular link/solder chart. The two numbers \(a_h,b_h\) are **measured derivatives of that ACTUAL price**, not adjustable Einstein coefficients. Then the EXACT original 40→3→1 proof implies that every Brinkmann + original CAR16 scalar/top history solves the entire reduced complete-price Euler if and only if, on its interior,
 \[
 \boxed{\begin{aligned}
-K_a(u,x,y)&=\tfrac12[H(u+h,x,y)-H(u+h,x-h\hat a,y)],\\
+K_a(u,\mathbf x)&=\tfrac12[H(u+h,\mathbf x)-H(u+h,\mathbf x-h\hat e_a)],\quad a\in\{x,y\},\\
 \Delta_h^\perp H(u+h,x,y)&=-4(b_h/a_h)\,
                          |D_u^+\Psi(u)|^2 ,
 \end{aligned}}\tag{19}
