@@ -158,3 +158,47 @@ Exact finite null-CAR positive projectors in the separate two-sided tomography o
 [certificates/a4d_fine_history_mutual_information_source_check.py](certificates/a4d_fine_history_mutual_information_source_check.py) validates the COMPLETE five-outcome q including failure, the entropy/logsum identity, exact chain rule (3), positive mutual information away from equal e, and the coefficient (6) against decreasing t. It independently tests the source first/second derivatives of (11) and shows the fixed-t sourced weights differ, while the normalized discrepancy falls as O(t^2). Fisher for one sample scales as t^4 (halving t reduces it by sixteen), not N t^4. The checker is a finite sample/analytic verifier; rigorous signs and uniformity are proved above, and no full native Julia experiment or physical matter was run.
 
 Exact older paths, results and open scientific gates remain the property of #334 and its child owners. No parallel EXEC task or workflow change.
+
+
+## 8. Exact stationary failure-event compression and measured log-odds source
+
+There is a stronger *same-price* simplification that cannot be obtained from geometric symbol matching. The optimized complete law (1) has equal **unconditional failure probability per fine leaf**:
+
+    q(i,F)=1/D  for every i.
+
+Thus for the already-retained aggregate F flag,
+
+    Pr(F)=N/D,
+    Gamma = log D/ell
+          = [log N-log Pr(F)]/ell.                       (17)
+
+This is an **exact identity on the full stationary preparation fibre**, at every admissible finite t and arbitrary inhomogeneous a_i, not a weak-probe expansion. Its source, with all preparation responses included by the envelope theorem, is
+
+    D_geom Gamma = -D_geom log Pr(F)/ell.               (18)
+
+N is the actual fixed integer leaf count; log N is field-independent only on a fixed finite carrier. Varying integer program length is not differentiated. Crucially, (17) is **not** a claim that the native full Cost−Info was event surprisal before stationary reduction. Away from the proven fine-preparation stationarity, Shannon H(Y,J) generally differs from log N-log Pr(F). The prior tagged-bypass/MAP zero-source terminal is not automatically applicable: this optimal failure mass is field-sensitive through its genuine s_i preparations.
+
+There is also a direct *outcome-level geometric source witness*. Define the positive success mass at leaf i by
+
+    S_i = q(i,00)+q(i,01)+q(i,10)+q(i,11)
+        = 2 exp(h(a_i))/D.
+
+The original recorded AF flag odds obey
+
+    q(i,00)/q(i,10)=(1-a_i)/a_i.
+
+Differentiating the SAME optimized full entropy gives
+
+    d Gamma / d f_i
+        = (c/ell) S_i log[q(i,00)/q(i,10)].             (19)
+
+The original geometric f_i can likewise be read from conditional outcomes:
+
+    a_i = [q(i,10)+q(i,11)] / S_i,
+    f_i = (a_i/p^2-1)/t^2.                             (20)
+
+Equations (17)–(20) are reproducible from the full five-output probabilities, not from an inserted curvature tensor, a fitted stress, or a new info functional. They give two independent exact descriptions of the same source: the aggregate failure-surprisal derivative (18), and the leaf-resolved success-weighted log odds (19). They are algebraic tests of the parent experimental readout, **conditional on native admission of that fine history and its full actual Cost−Info.**
+
+At the common vacuum, the measured log odds are the same at every leaf. At finite t with inhomogeneous matter, (19) tests universality directly: distinct success-weighted log-odds coefficients signal the non-Einstein source deformation of §3. Conversely a future physical clock/matter register must be tested against (19) rather than against one integrated static sum. This observed-source criterion is stronger than comparing the value of Gamma alone.
+
+**Strategic consumption:** after solving preparation using the full old fine record, one needs only the existing global failure flag to evaluate the stationary geometric source; one must still retain the full past leaf record as the *selector* of the stationary preparation. This may reduce the downstream source-readout resources, but cannot remove the cost of obtaining and storing Y, the detector/controller source or the independent matter/clock equations. The two roles must not be conflated.
