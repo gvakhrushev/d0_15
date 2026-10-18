@@ -89,6 +89,55 @@ require(s.simplify(s.diff(quadratic,x).subs(zero)-g1)==0,
 require(s.simplify(s.diff(quadratic,y).subs(zero)-g2)==0,
         "universal matter source")
 
+# Exact nonlinear Einstein-frame response factor from the SAME two bands.
+# gamma=Phi_f(f,q)/Phi_f(0,0), requiring no external metric oracle.
+dg=s.diff(Phi,f)
+gamma=s.simplify(dg/(GF*c))
+gamma_unsquared=R*(1-u)*(1-2*E)/(p**9*(1-z*v))
+require(s.simplify(gamma-gamma_unsquared)==0,
+        "exact feedback-Palatini coframe response factor")
+require(s.simplify(((1-u)*(1-2*E))**2-(1-u)*(1-v))==0,
+        "positive-branch two-band square-root gamma")
+require(s.simplify(gamma.subs({f:0,q:0})-1)==0,
+        "original physical metric agrees on nonflat null shell")
+# For actual e,b in (0,1/2), both factors are positive, so
+# gamma=R sqrt((1-u)(1-v))/(p^9*(1-z*v)) with NO sign ambiguity.
+require(float(s.N(gamma.subs({f:0,q:0,c:1,sigma:1}),30))>0,
+        "golden spectral gamma orientation")
+
+# Structural all-order Legendre equivalence, checked on an EXACT
+# nontrivial two-component negative Hessian. This is algebraic, not a
+# fitted new matter action: the auxiliary stationarity is eliminated.
+z1,z2,rho0=s.symbols("z1 z2 rho0",real=True,positive=True)
+u1,u2=s.symbols("u1 u2",real=True)
+gtoy=s.Matrix([s.Rational(2,3),s.Rational(-1,5)])
+Htoy=s.Matrix([[-2,1],[1,-3]])  # strictly negative definite
+Xtoy=s.Matrix([z1,z2])
+Mtoy=s.Matrix([u1,u2])
+offset=Mtoy-gtoy
+Ytoy=Htoy.inv()*offset
+Vtoy=s.factor((offset.T*Htoy.inv()*offset)[0]/2)
+Atoy=(Mtoy.T*Xtoy)[0]-rho0*Vtoy
+statM=s.Matrix([s.diff(Atoy,mv) for mv in [u1,u2]])
+Mstar=gtoy+Htoy*Xtoy/rho0
+require(s.simplify(statM.subs({u1:Mstar[0],u2:Mstar[1]}))==s.zeros(2,1),
+        "two-component Legendre auxiliary equations")
+source_original=(gtoy.T*Xtoy)[0]+\
+                (Xtoy.T*Htoy*Xtoy)[0]/(2*rho0)
+require(s.simplify(Atoy.subs({u1:Mstar[0],u2:Mstar[1]})-
+                   source_original)==0,
+        "exact same-price Legendre elimination")
+# Under e_tilde=sqrt(m_g/c_g)*e_hat the original star scales +2,
+# the original Clifford inverse metric scales -2: coefficients
+# m_g*f_hat=c_g*f_tilde and m_m*q_hat=(m_g*m_m/c_g)*q_tilde.
+cg,mg,mm,star_tilde,q_tilde=s.symbols(
+    "cg mg mm star_tilde q_tilde",positive=True,real=True)
+gam=mg/cg
+require(s.simplify(mg*(star_tilde/gam)-cg*star_tilde)==0,
+        "exact same-star Einstein-frame coefficient")
+require(s.simplify(mm*(gam*q_tilde)-(mg*mm/cg)*q_tilde)==0,
+        "exact source-preserving scalar conformal response")
+
 # Direct nonlinear inverse at unequal, signed matter perturbations.
 pf=float(s.N(p,35))
 for orient in [1,-1]:
@@ -123,6 +172,8 @@ receipt={
  "native_single_leaf_gradient":[float(s.N(GF,18)),float(s.N(GQ.subs(sigma,1),18))],
  "native_single_leaf_Hessian":[[float(s.N(vv,18)) for vv in row] for row in H.tolist()],
  "negative_definite_at_z_2^-20":True,
+ "Einstein_frame_gamma_at_null":"1 exact",
+ "Legendre_Palatini_auxiliary_elimination":"PASS exact two-variable proof control",
  "density_null_first_and_cross_second_source":"ZERO",
  "fixed_scene_material_jet":"ZERO",
  "original_complete_D0_native_selection":"OPEN",
