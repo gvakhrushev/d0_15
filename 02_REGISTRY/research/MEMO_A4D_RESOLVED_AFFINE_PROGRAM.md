@@ -23,6 +23,21 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+Input `420f6545`, §8.26 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
+now consumes the separate Book03 minimal-code-history reading. The tagged
+programme has a globally constant bypass MAP, with a uniform one-unit
+surprisal gap. The original native long-history MAP instead has a finite
+survival-log C¹ source, positive on its admitted strength direction.
+Its largest individual word does not concentrate total probability:
+the other histories retain positive combined mass. Switching mean to MAP
+therefore does not supply the selected geometric price. The next proof
+must construct the native history-to-memory-class/geometry readout with
+its actual multiplicity, holonomy and resources, and transfer its full
+source into S_stack. Book03's coherent geometry sum is explicitly distinct
+from its feedback partition. Neither scalar pointer normalization nor
+the trace-log series alone establishes that assembly.
+
 At input `4838004d`, the same source owner's §§8.19–8.20 now settle
 the complete Julia/golden mean on the whole preparation carrier. Its
 strength source is positive for every nonblank preparation at νR≤1/64;

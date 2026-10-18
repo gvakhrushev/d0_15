@@ -6,7 +6,16 @@ Current integrator entrypoint: [D0 → GR strategic synthesis, updated 18 Octobe
 It connects foundational theorem owners to the positive AF-star nonlinear
 Einstein composition and states the remaining native/source and recovery
 premises. This is research in Draft #334, not a new accepted CORE claim.
-Latest consumer: §§8.22–8.25 of the
+Latest consumer: §8.26 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+computes the minimal-code/MAP reading separately from the mean. The tagged
+law has a globally constant bypass MAP. The native long-history MAP has
+a full C¹ survival source, while aggregate nonblank mass survives despite
+individual-word dominance. The physical consumer needs the actual
+history-to-memory-class map, coherent multiplicity and source transfer;
+mean, MAP and scalar partition cannot be interchanged.
+
+Prior consumer: §§8.22–8.25 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 give an exact history-copy routing word and the entire unfiltered golden
 law for #363's positive tagged comparison. Its complete entropy mean and

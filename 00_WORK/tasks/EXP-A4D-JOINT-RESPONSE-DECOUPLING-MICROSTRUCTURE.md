@@ -12,6 +12,36 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: consume the literal MDL and coarse-history price rule
+
+Input `420f6545`. Book03 §§03.3.0–03.3.0b speaks about a minimal-code
+history, not the Shannon mean by itself. Test that separate aggregation
+on the SAME complete native and tagged laws already derived. Prove the
+exact maximizing pointer coordinate and source, including raw conditional
+normalization and any retained classical prefix. For the original native
+history, determine the MAP source in the fixed-data long-history regime
+and whether the most probable individual word concentrates total mass.
+Consume the actual Book/Lean history and cycle-assembly owners before
+claiming a physical aggregation. Root owns the existing source owner,
+brief and consumers; bounded assistants work read-only. Decisive check:
+analytic complete-law inequalities and matrix-log/Duhamel C¹ bounds,
+not a new outcome census or repeated certificate. Physical history-to-
+pointer binding, coarse memory classes, source-preserving aggregation and
+native execution remain explicit; no new price or classical-limit
+postulate is introduced. The consumer is the GR action-selection arrow.
+
+Consumed in §8.26: all native nonblank words have probability O(ν²)
+while the unique blank MAP retains a positive lower bound for nν²≤T.
+Its full C¹ limit is −log Tr(ρ exp(−4p²T A_0²))/log φ, with a positive
+fixed-n scale source at every nonblank input. Individual-word dominance
+does not imply concentration: nonblank total mass stays positive. For
+the complete tagged golden programme, a unique field-independent bypass
+wins globally by at least one φ-unit of surprisal. Correct raw conditioning
+and any classical prefix retain their full sources. The actual Book03
+coherent/geometry sums remain distinct from a scalar pointer sum; the
+next map must preserve history-class multiplicity, holonomy, resources
+and derivatives, rather than choose mean, MAP or logdet by name.
+
 ### 18 October: execute and price the positive tagged comparator
 
 Input parent `2bfb8974` and disjoint producer #363 at

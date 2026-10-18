@@ -45,6 +45,14 @@ finite first source с учётом work leakage. Отдельный U-oracle н
 нормировка или выбор clock не устраняют это различие. Следующий
 переход требует выведенной полной valuation либо native constraint.
 
+**Literal MDL consumer §8.26, вход `420f6545`:** наиболее вероятная
+история и средняя цена различены и вычислены на тех же полных законах.
+У tagged прибора MAP всегда field-independent bypass; у native long
+history MAP имеет конечный survival source, хотя Shannon mean имеет
+count divergence. Уникальный максимальный word не концентрирует всю
+массу. Для classical GR consumer поэтому требуется настоящий
+history-to-memory-class map с полной multiplicity и source.
+
 **Физический D0→ОТО ещё не доказан:** physical admission исходных
 Julia/resources и обязательность именно этого процесса не выведены; не доказаны
 независимый общий matter-source, native constraint compatibility и глобальное
@@ -3167,7 +3175,230 @@ amplitude-C¹ продолжение суммы, а неопределённые
 D0→ОТО. Устранена конкретная попытка получить компенсатор, выделив
 удобное событие из уже вычисленного полного опыта.
 
+### 8.26. Буквальный MDL consumer: полная наиболее вероятная история и её источник
+
+Вход `420f6545`. Book03 §§03.3.0–03.3.0b связывает минимальный code
+с наиболее вероятной ИСТОРИЕЙ; это не теорема о стационарности Shannon
+mean. Поэтому предыдущий mean-source результат нельзя объявить тестом
+всех её возможных прочтений. Проверим другое определённое чтение на
+том же actual полном законе, без изменения приборов или удаления
+failure outcomes:
+
+    S_MAP= min_(h:q_h>0)[−log_φ q_h]
+          =−log_φ max_h q_h.                       (132)
+
+Это именно fine pointer history, условно на `w_h=q_h`. Book03 γ и
+его memory class `[q(γ)]` не отождествляются с этим h по названию.
+Стационарность (132) по geometry требует, чтобы такой pullback был
+физически выведен. Ни (132), ни mean не назначается новой native ценой.
+
+**Все исходные native histories: единственный максимум без перечисления.**
+Пусть δ=ν², `B=I−2p²δ A_0²>0`, `||A_0||≤R`, n≥1; K_j — все128
+ОДНОРАУНДОВЫХ Kraus maps (89). Из их completeness и (89)
+
+    Σ_(j≠blank) K_j* K_j
+       =4p²δ A_0²−4p⁴δ² A_0⁴≤4p²R²δ I.
+
+Каждый K_j — contraction. Поэтому любое полное n-word, содержащее
+хотя бы один nonblank, имеет вероятность не больше4p²R²δ для любой
+нормированной подготовки с reference128. Само полное blank word имеет
+
+    q_B=Trρ B^(2n)≥(1−2p²R²δ)^(2n).
+
+Если `nδ≤T_max`, `2p²R²δ≤1/2`, то `log(1−x)≥−2x` даёт
+
+    q_B≥exp(−8p²R²T_max),
+    max_(ω≠B)q_ω≤4p²R²δ.
+
+При `4p²R²δ<exp(−8p²R²T_max)` полный blank — единственный
+MAP word, равномерно по ВСЕМ ρ и по этим растущим n. Тем самым
+победитель не переключается, и в этой области (132) имеет точный source
+
+    S_MAP=−log(Trρ B^(2n))/ℓ,
+    ∂_ν S_MAP=8np²ν Tr[ρ A_0² B^(2n−1)]/(ℓ q_B)>0             (133)
+
+при `a_ρ=Trρ A_0²>0`, fixed ρ,A_0,n. Нижняя граница на a_ρ
+не нужна. При a_ρ=0 native history детерминированно blank и все
+geometry/data-reference amplitude first sources (133) равны0.
+Следовательно замена mean на MAP в этом weak-window programme тоже
+не даёт nonblank joint root, если независимая scale variation допустима.
+Это statement о выбранном scalar pullback, не о всех физически
+разрешённых history variations Book03.
+
+**Полный C¹ предел MAP отличается от count-source средней.**
+Для `t=nδ` на ограниченном fixed-data C¹ chart, с κ=4p², положим
+
+    E_t=exp(−κt A_0²), v_t=Trρ E_t,
+    M_t=−log(v_t)/ℓ.
+
+Ряд matrix log в операторной норме вместе со всеми base-field jets даёт
+`2n log(I−2p²δ A_0²)=−κt A_0²+O_C¹(δ)` при t≤T_max.
+Frechet stability экспоненты и нижняя граница
+`v_t≥exp(−κT_max R²)>0` дают
+
+    S_MAP=M_(nδ)+O_C¹(δ),
+    nδ→T>0 ⇒ S_MAP→M_T в C¹.                       (134)
+
+Ошибка относительно M_T имеет порядок `O(δ+|nδ−T|)` на этих
+charts. Это геометрические/preparation jets при фиксированном t;
+движущееся собственное pairing уже включено в actual A_0 и ρ.
+Полный первый source при fixed T равен
+
+    D M_T={κT ∫_0^1 Tr[ρ exp(−(1−s)κT A_0²)
+                           D(A_0²) exp(−sκT A_0²)] ds
+                    −Tr[(Dρ)E_T]}/(ℓ v_T).         (135)
+
+Это Duhamel formula, без `[A_0,D A_0]=0` или замораживания материи.
+Если limit-clock T действительно меняется, добавляется
+`κ DT Tr(ρ A_0²E_T)/(ℓ v_T)`. Для исходного finite scale derivative
+каждый integer n, напротив, фиксирован, и (133) даёт
+
+    ν∂_ν S_MAP →8p²T Tr(ρ A_0²E_T)/(ℓ v_T)=2T∂_T M_T.
+
+Никакая derivative расписания n(ν) здесь не берётся. По тому же
+источнику видно, что конечный MAP limit не является Shannon count
+divergence из (103)–(111); замена одного другим меняла бы цену.
+
+**Наиболее вероятная история не обязана собирать всю массу.**
+При fixed nonblank preparation и T>0 получено одновременно
+
+    q_B→v_T∈(0,1), max_(ω≠B)q_ω→0,
+    Σ_(ω≠B)q_ω→1−v_T>0.                            (136)
+
+Отношение q_B к каждой отдельной конкурирующей вероятности стремится
+к бесконечности, но probability concentration на B отсутствует.
+Растущее число retained histories сохраняет конечный общий вес.
+В частности из `w=φ^(−S)` и существования единственного shortest word
+нельзя в этой семье вывести, что остальные истории исчезли после
+coarse-graining. Для такого классического consumer нужна собственная
+оценка общей массы соответствующих memory classes.
+
+На одном и том же полном native законе различаются три величины:
+
+| Чтение | Значение в nδ→T>0 при a_ρ>0 |
+|---|---|
+| Минимальный path surprisal | Конечный M_T с source (135) |
+| Средний path surprisal | `H_n/ℓ=(κnδ a_ρ/ℓ)log(1/δ)+O_C¹(1)` |
+| Surprisal полного scalar sum | `−log_φ Σ_ω q_ω=0` точно |
+
+Последняя строка не заменяет algebra-valued `Z_D=Σ w(γ)[q(γ)]`
+на число1: memory phases и raw Book weights требуют отдельного чтения.
+Таблица не выбирает физическую агрегацию и не опровергает весь D0.
+
+**Tagged golden programme: глобальный победитель вообще field-independent.**
+Теперь используем весь закон (116)–(118), z=p²,a=p, при любых
+допустимых native maps, m,n и нормированной data/reference подготовке.
+Положим `U_*=(p+p^(5/2))²`. Его coordinate — central bypass,
+comparison-port0, overlap-bit0 — имеет Kraus, пропорциональный I, и
+
+    q_*=p²U_*=p⁴(1+p^(3/2))².
+
+Точно `U_*−p=p^(7/2)(2−sqrt(p))>0`. Все остальные U coordinates
+строго меньше p², а max V=p². Поэтому ВСЕ остальные исходы охватываются
+следующими bounds:
+
+| Категория | Максимальная вероятность |
+|---|---|
+| Другие bypass coordinates | `<p⁴` |
+| Central blank | `≤p³U_*=p q_*` |
+| Private central exits | `≤p³ max V=p⁵` |
+| Private spatial outcomes обеих программ | `≤p⁴` |
+
+Так как `p q_*>p⁴`, имеем глобально
+
+    q_h≤p q_*<q_* для h≠h_*,
+    S_MAP=4−2log_φ(1+p^(3/2))=:S_*, D S_*=0.        (137)
+
+Разрыв до любого другого positive-probability outcome составляет хотя
+бы одну φ-единицу code price. Нет hidden switches или nonsmooth Euler;
+этот zero-source вывод не использует weak-strength или heat expansion.
+Data state не измеряется дополнительно: это в точности pointer frame
+`q_(bα)=Trρ L_(bα)*L_(bα)` из (116).
+
+Raw cut (115) сохраняет h_*, поэтому
+
+    max_(h∈raw)q_(h|raw)=q_*/g,
+    S_MAP,cond=S_*+log_φ g,
+    min_(h∈raw)[−log_φ(g q_(h|raw))]=S_*.           (138)
+
+У normalized conditional MAP source `Dg/(ℓg)` может быть отрицателен
+на endpoint scale; при переходе к действительному raw-event weight он
+точно сокращается с `−Dg/(ℓg)`. Кроме того, `g=pg_0+p²g_1`
+независим от central programme, поскольку cut сохраняет его ЦЕЛИКОМ.
+При independent central variation и fixed ρ даже conditional MAP имеет
+нулевой source, тогда как selected logdet содержит `−2Tr log E_4`
+с обычно ненулевым source. Одного совпадения endpoint знаков недостаточно.
+
+Если сохраняется classical prefix ω с законом w_ω и настоящими
+conditional data states, то тот же uniform bound даёт
+`max_(ω,h)q_(ω,h)=q_* max_ω w_ω`. Его старый MAP source сохраняется;
+новая программа добавляет только S_*. Когерентный старый архив не
+подменяется classical prefix без его собственного readout map.
+
+**Что должен сохранять физический coarse-history map.** Для действительно
+заданного memory class C с фиксированным membership на chart и
+same-history raw weights w_h>0 величина
+`W_C=Σ_(h∈C)w_h` даёт `S_C=−log_φ W_C`, а не минимум individual S_h.
+С conditional weights `r_(h|C)=w_h/W_C` точно
+
+    S_C=E_(r|C) S_h−H(r|C)/ℓ,
+    D S_C=Σ_(h∈C)r_(h|C) D S_h.                    (139)
+
+Формула требует полного source того же raw frame. При изменении самого
+class/readout map его собственный source входит в D W_C. Исчезающие
+raw weights требуют своего amplitude/support law; Born-регулярность
+без соответствующего binding им не приписывается. Entropic multiplicity term не
+исчезает из-за одного названия MDL. При нескольких возможных MAP classes
+их crossings требуют собственного variational анализа. Для finite n
+map, carrier и исходные weights должны быть заданы до (139).
+
+В области с одним фиксированным minimizing h_* положим
+`R_C=Σ_(h≠h_*,h∈C)exp[−ℓ(S_h−S_h_*)]`. Тогда буквально
+`S_C=S_h_*−log(1+R_C)/ℓ` и
+`D S_C=D S_h_*−D R_C/[ℓ(1+R_C)]`.
+Следовательно даже concentration R_C→0 сама по себе не разрешает
+удалять source correction без контроля D R_C. Для C=всех pointer
+исходов исходной native семьи в MAP window имеем
+`R_C=(1−q_B)/q_B`; поправка точно отменяет весь
+MAP source, давая scalar partition source0. Это computed coarse sum,
+а не выбранный физический counterterm.
+
+Этот consumer использует существующий
+[all-history/scene owner](A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md): его
+canonical Perron likelihood при fixed length/endpoints имеет только
+length и boundary, и сам по себе не supplies geometric interior source.
+Также уже принадлежащая
+[cycle-weight проверка](sources/d0_native_action_selection_2026-10-16/RESULT_RU.md)
+различает `Σ z^j Tr F^j/j` и rooted repeated returns. Из (139) не
+выводится автоматически ни factor1/j, ни signed memory-class trace,
+ни выбранный determinant ratio.
+
+Book03 §03.10(c,e) отдельно требует суммирования holonomy-valued
+amplitudes ДО Born readout, поэтому его классы сохраняют cross Gram
+terms. А §03.10(f) прямо различает geometry sum
+`Z_k=Σ_(G,J)φ^(−A(G,J))` и feedback partition. Ни scalar complete
+pointer sum, ни (139) не подменяет эти два объекта. Текущая
+[feedback Lean capsule](../../03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean)
+принимает `returnCycleExpansion=true` предпосылкой; она не строит
+требуемое history assembly. Положительное determinant event из уже
+принадлежащего [filled-Slater owner](sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md)
+сохраняет свой отдельный resource/admission и full-price gate.
+
+Следующий переход теперь требует native geometry/history-to-class map,
+его scalar action/readout с полной multiplicity и sources, и оценки
+классической концентрации, если она используется. Подмена mean на MAP
+или scalar partition этого перехода не закрывает: здесь все три
+вычислены на одном исходном процессе. Положительная conditional
+Einstein composition сохраняется; её physical selection остаётся открытой.
+
 ## 9. Проверка
+
+§8.26 проверен аналитически на полном pointer carrier: uniform
+nonblank-word bound, matrix-log/Duhamel C¹ limit, отсутствие mass
+concentration и global golden MAP gap. Independent checks сохраняют
+fixed-integer-n derivative, moving raw normalizer и старый prefix source.
+Mean, path maximum, coarse-class sum и algebra-valued Book partition
+различены по actual типам. Нового numerical/Lean replay не требуется.
 
 §§8.22–8.24 проверены аналитически независимо по трём интерфейсам:
 буквальное обратимое routing слово и его ресурсы; все golden pointer

@@ -2,7 +2,29 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `2bfb8974`:** §§8.22–8.25 of the
+**Latest consumed transition, input `420f6545`:** §8.26 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+tests the literal Book03 minimal-code reading separately from the mean.
+On the complete tagged golden law, one central bypass is the unique MAP
+coordinate for every geometry/preparation, with a gap of at least one
+φ-unit of surprisal. Its source is zero. Raw conditional MAP keeps its
+moving normalizer, which cancels in the raw-event action; its central
+source is already zero before that cancellation. A retained classical
+prefix keeps its own source.
+
+For the original native long history, the unique MAP is blank. Its full
+C¹ limit is `−log Tr(ρ exp(−4p²T A_0²))/log φ`, including noncommuting
+field and preparation jets; its fixed-integer-n scale source is positive
+at every nonblank input. Yet the combined nonblank probability remains
+positive while each individual competing history tends to zero. Thus
+largest-word dominance does not establish the classical concentration
+needed by a geometric MDL reading. Mean, MAP and scalar partition are
+computed on the SAME complete law and have different sources. The next
+consumer is the actual history-to-memory-class/geometry map, its full
+multiplicity and coherent readout, and source-preserving identification
+with the native stack. No new aggregation or physical law is selected.
+
+**Prior consumed transition, input `2bfb8974`:** §§8.22–8.25 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consume the positive tagged-exit producer #363 at `33911def`. An explicit
 CNOT history-copy word replaces the new exit oracle, preserving every
