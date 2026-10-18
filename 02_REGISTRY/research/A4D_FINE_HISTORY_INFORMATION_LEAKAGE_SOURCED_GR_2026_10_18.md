@@ -230,3 +230,65 @@ The same-history Book action agrees with Gamma in first variation **if and only 
 **Strict negative control.** A field-independent extra work coin with Bernoulli conditional probabilities (.2,.8) for leaf1 and (.4,.6) for leaf2 has different conditional entropies. On two leaves with f=(+1,-1), a_i=a0+c f_i and c=.02, the second term of (22) is nonzero (~-0.000661501819), even though all its conditional work probabilities are field-independent. If instead every branch had the same constant conditional entropy, the extra entropy would be a field-independent constant and its first source would disappear; this is a different sufficient condition and still needs an actual source/effect proof. The check is numerical only; nonvanishing follows symbolically from z'(a)>0, f1!=f2 and h(.2)!=h(.4).
 
 **CRITICAL qualification.** The complete native memory may be a coherent quantum record rather than this classical measured work partition, with noncommuting conditional effects and rank births. Equations (21)–(22) do not identify von Neumann entropy, quantum conditional entropy or original H+J+R with measured Shannon by name. They define the **next exact admission/source test** for the already owned compiler: establish its actual retained work outcome channel (if any), its conditional entropy/source, and whether the full Book Cut is this same joint classical partition, BEFORE using the successful geometric \`-D log P_failure/ell\` reduction as physical gravity.
+
+
+## 10. A GLOBAL entropy-capacity identity, not just a local stationary fibre
+
+The stationary profile in the parent can now be characterized by an exact, completely nonperturbative **defect sum** valid for every strictly positive complete classical fine-leaf/five-flag probability law with the prescribed scalar AF marginal a_i on each successful leaf. It is independent of weak t, geometry uniformity and leaf count.
+
+Let the actual law have leaf marginal r_i>0, conditional success s_i∈(0,1), AF-success marginal a_i∈(0,1), and a possibly correlated conditional (AF=A,scene=B) distribution P_i(A,B) with Pr(A=1)=a_i. Let b_i=Pr(B=1|i,success). Put
+
+    H_i=h(a_i)+log2,   Z_i=1+exp(H_i),
+    r_i*=Z_i/D, D=sum Z_i,
+    s_i*=exp(H_i)/Z_i.
+
+Write D_Ber(x||y)=x log(x/y)+(1-x)log((1-x)/(1-y)).
+The ENTIRE complete same-history Shannon gap has the **exact identity**
+
+    log D - H(Y,F,A,B)
+       = D_KL(r || r*)
+         + sum_i r_i D_Ber(s_i || s_i*)
+         + sum_i r_i s_i [
+             D_Ber(b_i || 1/2)
+             + I_i(A;B | success,Y=i) ].                 (23)
+
+All four terms are nonnegative, and equality holds iff every measured
+leaf has r_i=r_i*, s_i=s_i*, b_i=1/2 and independent AF/scene bits.
+No product-state ansatz, frozen PF prior, quantum spectral-floor assumption
+or guessed cost is needed for this **classical outcome** theorem.
+
+Derivation: the exact entropy chain
+H(Y,F,A,B)=H(r)+sum_i r_i{h(s_i)+s_i H(P_i(A,B))}
+and
+H(P_i)=h(a_i)+h(b_i)-I_i(A;B)
+gives the final bracket. The log-sum-exp variational identity
+log Z_i-[h(s_i)+s_i H_i]=D_Ber(s_i||s_i*) and
+log D-H(r)-sum r_i log Z_i = D_KL(r||r*)
+then yields (23) without a remainder.
+
+This upgrades the parent's local balanced stationary profile to the unique
+GLOBAL **maximum** of Shannon entropy on the complete positive **classical
+probability polytope** with freely variable leaf/success/scene/correlation
+probabilities and fixed a_i. It does **not** prove that the physical D0
+preparation reaches that maximum, that all such probability directions are
+admissible on its GNS/matter/observer carrier, or that maximum entropy is the
+Book-selected physical variational principle (Book also discusses minimum
+description cost). It classifies the conditional measured-capacity envelope,
+not other quantum/coherent/eigenpreparation branches.
+
+A useful quantitative result follows from Pinsker (natural logs). If the
+complete measured price is within Δ/ell of this maximum, i.e.
+Δ=log D-H(Y,F,A,B)≥0, then
+
+    ||r-r*||_1 <= sqrt(2Δ),
+    sum_i r_i(s_i-s_i*)^2 <= Δ/2,
+    sum_i r_i s_i(b_i-1/2)^2 <= Δ/2.                  (24)
+
+Thus a genuinely capacity-selecting, nearly optimal *recorded* preparation
+would suppress arbitrary large fine-leaf probability reallocations at
+finite level without an invented quadratic penalty. However, TV/L1 control
+alone does NOT imply uniform pointwise chi_x, C2 metric control, or control
+of the unmeasured work/quantum record; extra structural estimates are
+required for physical smooth Einstein recovery. The real outstanding
+question becomes whether the admitted full D0 process actually both
+records this entire cut and selects/saturates its Shannon capacity.
