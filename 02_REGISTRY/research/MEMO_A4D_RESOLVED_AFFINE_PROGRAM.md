@@ -23,6 +23,23 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+One actual return programme and complete-source scale:
+[strategic §7.17](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.53–6.55](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+construct noncommuting prefilter M with exact analytic survival
+M*SM=c(I−epsilon Q), all failures retained. The ONE Book feedback
+has real signal d*zc*epsilon/(1−z+zc). With c=p^(3m+4), its weak
+source limit follows from the old survival clock at fixed epsilon.
+Dimension-free C2 H/R bounds include all16/reference128 preparation
+normals and correct INPUT Rayleigh/observer whitening. Sufficient
+N>=2m suppresses these sources for m~h^-2; actual costs and schedule
+still need native binding. The finite compiler error is divided by this
+small real signal. Free control M is not a stationary normal, and the
+construction implements arbitrary Q. Continue through physical control
+law and exact joint recovery; programmable geometry is not forced GR.
+The parallel two-band Einstein-frame algebra remains preserved.
+
+
 Actual null-source and general matter, input `2f02612a`:
 [strategic §7.16](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source §§6.46–6.52](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)

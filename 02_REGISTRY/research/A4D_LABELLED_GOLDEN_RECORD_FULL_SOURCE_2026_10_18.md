@@ -4363,6 +4363,391 @@ work/return test и evaluation law, whole old H/R/history/observer цена,
 specified J₂ query-source composition при названных interfaces,
 а не compulsory native selection либо завершённый D0→ОТО.
 
+### 6.53. Полный источник H+R теперь ограничен, включая подготовку и observer
+
+Используем ordinary Tr из Book03, НЕ нормированный AF trace.
+Само первое-source spectator наблюдение уже принадлежит §6.21;
+оно здесь не переоткрывается. Новый consumer — second-source bound
+на ДЕЙСТВИТЕЛЬНОМ full operator, без фиктивного Δ_old⊗I.
+Пусть B=I−αΔ≥b₀I>0, β=m_heatα, а calibrations α,β,m_heat и cut
+фиксированы внутри каждого опыта. На joint chart обозначим
+
+    ||Δ||≤A₀, ||DΔ||≤A₁, ||D²Δ||≤A₂,
+    L_eff=−α⁻¹log B,
+    B₁=A₁/b₀, B₂=A₂/b₀+αA₁²/b₀².              (13eu)
+
+Resolvent integral log B даёт ||DL_eff||≤B₁ и ||D²L_eff||≤B₂
+даже для некоммутирующих jets. Для точного finite-B
+H=β⁻¹logTr exp(−βL_eff) получаем
+
+    |DH|≤B₁,
+    ||D²H||≤B₂+2βB₁².                           (13ev)
+
+Первая строка есть Gibbs expectation. Во второй Duhamel integral
+двух insertions ограничен произведением operator norms, как и
+произведение двух expectations. Поэтому здесь нет ни числа
+eigenvalues, ни AF K, ни CAR16/ref128 множителя. Это source bound,
+не утверждение о равенстве разных Laplacians. При moving α,β или
+normalizer надо включать их настоящие jets, например D(log m/β);
+они не были объявлены нулевыми другим representation change.
+
+**Какой именно R.** В literal v8 R=⟨C,ΔC⟩, ||C||=1, на INPUT
+full carrier. В raw native Hilbert coordinates тот же scalar записан
+как Tr(w*Δw)/N, w=I_normΨ, N=Tr(w*w). I_norm=Λ(sqrt(h_observer))
+есть WHITENING, не один Kraus outcome и не direct sum recorder.
+На native G-normalized sphere Ψ*GΨ=1 имеем C=I_normΨ и N=1
+ТОЧНО; fixed-RIGHT constraint Ψ*GΨ=σ переходит в C*C=σ.
+Reference128, entangling directions и все16 grades при этом остаются.
+Completeness ΣK_y*K_y=I нормирует полный OUTPUT, но не меняет
+INPUT energy: ΣK_y*ΔK_y=Δ — отдельная identity, вообще неверная.
+Ни blank-work cut §6.52, ни сохранение всех records не заменяют R
+суммой conditional output energies. На literal исходном32-word/128-output
+v8 это проверено ТОЧНО на двух узлах с role0 coefficients(3/5,4/5):
+на grade1 energy2 eigenvector(0,3,0,−4)/5 имеем
+R_output−R_input=−173p²/640000≠0. Остальные три nonzero Role
+coefficients, все16 grades и ref128 сохранены. Проверка использует
+исходные BetaHat/ZetaHat words, не произвольный Stinespring пример.
+
+В canonical normalized preparation chart ||DC||≤s₁,
+||D²C||≤s₂ реальные product-rule estimates дают
+
+    |DR|≤A₁+2A₀s₁,
+    ||D²R||≤A₂+4A₁s₁+2A₀s₂+2A₀s₁².            (13ew)
+
+На продуктовом chart fields×full normalized sphere, с unit preparation
+tangents и их geodesic second jets, можно взять s₁=s₂=1. Это не
+freezing материи. Actual code/preparation pullback требует СВОИХ
+s₁,s₂. Например C_K=(cosKθ I₁₂₈;sinKθ I₁₂₈)/sqrt128 имеет
+C_K*C_K=I₁₂₈/128, но при Δ=diag(1,2)⊗I₁₂₈ R=1+sin²Kθ,
+R′(π/(4K))=K и R″(0)=2K². Fixed RIGHT и bounded R value не
+дают bounds jets секции. Если ψ в(13eq) — координата этой же CAR
+материи, её нельзя заменить независимым внешним classical code.
+
+При supplied unitary preparation V(θ)C все free C сохраняются.
+Для ||DV||≤v₁, ||D²V||≤v₂ pulled-back Δ имеет реальные bounds
+
+    Atilde₀≤A₀,
+    Atilde₁≤A₁+2v₁A₀,
+    Atilde₂≤A₂+4v₁A₁+2(v₂+v₁²)A₀.              (13ex)
+
+Для genuine fixed-address V=ΣP_i⊗V_i operator jets равны maximum
+по leaves, не сумме K. Это constructive source estimate, но actual
+V и его code/matter binding должны принадлежать программе.
+
+**Native four-Role norm, не spectator догадка.** Для настоящего
+D=d+d*, d=ell⁻¹Σ_{r=0}³C_r(T_r−I), где полный T_r включает
+proper exterior link и shift, обозначим ||D^jC_r||≤u_j,
+||D^jT_r||≤m_j, j≤2. На bounded observer/coframe/link chart
+
+    d₀=8u₀(m₀+1)/ell,
+    d₁=8[u₁(m₀+1)+u₀m₁]/ell,
+    d₂=8[u₂(m₀+1)+2u₁m₁+u₀m₂]/ell,
+    A₀=d₀², A₁=2d₀d₁, A₂=2d₀d₂+2d₁².         (13ey)
+
+Это operator bounds на всём actual carrier: четыре bounded Role
+operators, а не сумма по вершинам или по16 grades. Если whole
+controller/geometry operator иной, его надо проверить отдельно;
+нельзя объявлять его этим D. При uniform u_j,m_j,s_j, b₀>0,
+fixed-positive β и α=O(ell²), source budgets(13ev–ew) суть
+C₁=O(ell⁻²), C₂=O(ell⁻⁴), включая observer и full preparation.
+
+**Полный conditional source theorem.** Пусть actual whole tuple
+(Δ_N,U_N,P_N,C_N) имеет ОДИН feedback J_N, который действительно
+реализует compiled J₂ §6.52, и полная рассматриваемая функция есть
+S_N=H_N+J_N+R_N. Никакой отдельный extensive old J не опущен.
+Положим σ_N=νK_Na₀c_AF t_N² — СОБСТВЕННЫЙ field-independent
+signal(13ef). Делится ВСЯ функция, что не меняет finite Euler.
+Если E_J,N — уже выведенная normalized C² error J_N к Γ, то
+
+    ||D(S_N/σ_N)−DΓ||_(C¹)
+      ≤E_J,N+(B₁+B₂+2βB₁²+A₁+2A₀s₁
+             +A₂+4A₁s₁+2A₀s₂+2A₀s₁²)/σ_N.       (13ez)
+
+Centered action contrast имеет ту же оценку с diameter chart factor;
+field-independent H(base) не даёт Euler. Все actual N,h-dependent
+constants сохранены. Остальные Book03/history penalties не объявлены
+нулевыми: theorem относится к указанной complete conditional H+J+R.
+
+Например, если ell=h, t_n²=h_n, h_n=ceil(φ^(n/16))⁻¹, N_n≥n,
+то K_N=F_(2N+9)≥φ^(2N+7) и h_n⁻⁵/K_N=O(p^(27n/16)).
+При uniform constants остаток H+R в(13ez) убывает с этой явной
+скоростью. Это ДОСТАТОЧНОЕ accuracy/resource schedule, не native
+forcing t(h) или новый relative physical prefactor. Other owned
+J₂ stencil/weak/quadrature/compiler errors по-прежнему входят E_J,N.
+
+Если последовательность точных joint roots сходится в топологии этого
+же chart, а нормированная ошибка источника стремится к нулю, её предел
+стационарен для Γ и удовлетворяет equations(13eg) с нормировкой(13em)
+при собственных Cartan/scalar/scale premises. Одной ограниченности на
+меняющихся носителях недостаточно: нужна соответствующая компактность
+или recovery. Само estimate НЕ строит roots и не доказывает такую
+компактность. Exact counter
+S_ε=(x−1)²/2+εxy+ε²y²/2 сходится в C² к(x−1)²/2, но его own
+normal y=−x/ε меняет Schur на1; совместных roots вообще нет.
+Нужны actual normal gap/quotient и recovery. Ошибка из §6.49
+здесь не повторяется как неявный interchange of limits.
+
+### 6.54. Старый feedback нельзя спрятать ни в AF кратности, ни в saturation
+
+Accepted receipt §6.21 переиспользован с SHA pin: canonical Book03
+есть ordinary −logdet, старый spectator J_v8 умножается на
+m_N=F_(2N+15), m_N/K_N→φ⁶. Поэтому(13ez) нельзя применить,
+оставив старый J_v8 в остатке и назвав J₂ отдельной добавкой.
+Один истинный tensor composition имеет F_total=I−S_AF⊗S_old,
+а не сумму двух feedback prices.
+
+Для old scalar feedback eigenmode b∈[0,1] реальный двухветвевой
+AF cut сохраняет обе eigenbranches λ(E)=4E(1−E) и0. Поэтому
+
+    j₂=−log(1−zb)−log[1−z(λ+(1−λ)b)],
+    ∂_b j₂=z/(1−zb)+z(1−λ)/R≥z.                (13fa)
+
+Даже при λ→1 source старой ветви не исчезает. Удалить первый
+factor значило бы удалить настоящий retained zero-AF mode. Это
+не запрещает полезный scalar q-source; речь именно о попытке
+спрятать старый v8 feedback таким composition.
+
+**Почему nonlinear saturation не обходит препятствие.** Даже если
+новый word насыщает ВСЕ AF branches, положим A_N=I−F_AF,N≥0,
+F_total=I−(1−b)A_N, fixed0<z<1. Когда admitted variation image
+действительно содержит независимое old Db при fixed query, имеем
+
+    zTr A_N≤∂_b J_N≤zTr A_N/(1−z).
+
+Если хотим подавить этот source относительно настоящего положительного
+signal σ_N, то Tr A_N(0)/σ_N→0. Однако positivity даёт для ЛЮБОЙ
+нелинейной geometric parameterization g на том же cut
+
+    J_N(g)≤Jmax,N=−rank(P_N)log(1−z),
+    0≤Jmax,N−J_N(0)≤z(1−b)Tr A_N(0)/(1−z).
+
+Следовательно limsup[J_N(g)−J_N(0)]/σ_N≤0 при каждом fixed g.
+Ненулевой linear limit κg на fixed TWO-SIDED chart невозможен:
+одна из±g дала бы положительное значение. Это не предполагает
+affine E, commuting variations или особый compiler. Moving z/cut,
+shrinking/one-sided charts, cancellations с другими настоящими
+sources и word без независимой old b variation здесь не исключены.
+Существование именно такого Db на physical variation image надо
+доказать, а не вывести из обозначения eigenvalue.
+
+Для affine probe E=1/2+δ+c f это видно уже точно:
+
+    D=1−z+4z(1−b)(δ+cf)², j=−logD,
+    j_b/j_f=−δ/[2c(1−b)],
+    j_ff/(2j_f)=c/(2δ)[1−8z(1−b)δ²/D(0)],
+    (j_b/j_f)(j_ff/(2j_f))→−1/[4(1−b)].          (13fb)
+
+Нельзя одновременно занулить old source и quadratic deformation
+нормированного linear star germ. При исходном golden E=p²
+не исчезает даже loss1−λ=p⁶. Новое saturation no-go меняет следующий
+шаг: нужен ACTUAL ONE-feedback word всей программы, его canonical
+input preparation/heat и full price, не искусственно домноженный J₂
+или новый canceling counterterm. Затем требуется bounded normal
+recovery; оценки(13ez) не подменяют её. Физический D0→ОТО этим
+ещё не закрыт, а старые fixed-g/tau raw#216 остаются своими.
+
+### 6.55. Один полный feedback: обратимый return equalizer и его действительный signal
+
+Saturation §6.54 оставляет старый source потому, что предполагает
+независимое изменение старого b при fixed AF query. Можно построить
+ДРУГОЙ настоящий word, где управление меняется вместе со старым return.
+Это construction, не вывод compulsory control law. Цена −logdet не
+меняется, не складывается с отдельным J₂ и не вычитает старое действие.
+
+**Все входы и исходы.** На исходном конечном Hilbert carrier H_old
+заданы unitary U_old и его настоящий fixed return cut P_old. На ran P_old
+
+    C=P_old U_old P_old, S=C* C≥s I>0,
+    R=I−εQ, 0<r₀I≤R≤r₁I,
+    M=√c S^(−1/2)R^(1/2), c r₁/s≤p²<1.       (13fc)
+
+Q — уже заданный self-adjoint field/matter query. В mean-price
+consumer это fixed-address diagonal query с leaf value
+Q_i=r_h(T_ρ(c_i))+λ_mat q_h(T_ρ(c_i)), ρ=J/V, как в §6.52;
+здесь не спрятана конечная t-dependent Φ_t. ε,c положительны и
+FIELD-INDEPENDENT внутри опыта. На P_old^perp продолжим M оператором pI. Для этого strict
+contraction Mhat его Julia matrix
+
+    J(Mhat)=[ Mhat,         sqrt(I−Mhat Mhat*) ;
+              sqrt(I−Mhat* Mhat),       −Mhat* ]
+
+унитарна на ВСЁМ H_old×flag2. Реальный word сначала применяет J(Mhat)
+к новому blank flag0, затем U_old только при flag0, identity при flag1.
+Failure flag не сбрасывается. Общий return cut есть P=P_old⊗|0><0|,
+а не P_old⊗I_flag. Поэтому на КАЖДОМ input column из ran P_old
+
+    C_total=C M,
+    C_total* C_total=M* S M=cR,
+    F_total=P−C_total* C_total=I−cR на ran P.    (13fd)
+
+За cut F=0. Старые failure outputs, новые flag1 outputs и все
+reference128/CAR16 columns сохранены. Равенство не требует [S,R]=0:
+R^(1/2)S^(−1/2)S S^(−1/2)R^(1/2)=R. Это coherent prefilter,
+не conditional renormalization успешной ветви. Это ТОЧНОЕ равенство
+для указанного analytic Julia macro. Конечное golden/CNOT выполнение
+обычно лишь приближает его; для него сохраняется выведенная ниже
+compiler error. Exact functional control нельзя молча объявить конечным
+золотым словом.
+
+На одном полном cut ранга d получена ровно собственная цена Book03
+
+    J=−Tr log[(1−z)I+zcR]
+      =−d log(1−z+zc)−Tr log(I−θQ),
+    θ=zcε/(1−z+zc)>0.                         (13fe)
+
+Первый член field-independent. При ||θQ||≤1/2, bounded Q,DQ,D²Q,
+разложение log/resolvent в operator norm даёт
+
+    || [J−J(base)]/(dθ)−[τ_d(Q)−τ_d(Q_base)] ||_(C²)
+       ≤C_Q θ,   τ_d=Tr/d.                    (13ff)
+
+Это нормировка ВСЕЙ функции по её измеримому signal, а не замена
+обычного trace в исходной цене. Произвольные некоммутирующие Q jets
+допустимы. Старый DS cancel происходит через настоящее DM(S,Q);
+при fixed Q источник J по S равен нулю точно, включая second jets.
+Именно поэтому независимая-b предпосылка §6.54 здесь не выполнена.
+
+**Не требуется новый weak-clock закон для этого word.** Пусть на
+actual native window S=B^m, p³I≤B≤I, где m — показатель SURVIVAL,
+не автоматически число golden gates или half-ticks. На chart R≤p⁻²I
+можно взять c=p^(3m+4). Тогда ||M||²≤p², и θ→0 при старом m→∞
+даже с FIXED ε>0. Малость geometric readout возникает из цены
+редкого полного возврата, не из отдельно назначенного t(h)→0.
+Это снимает техническую weak-price premise ДАННОЙ constructed family;
+связь Q с реальным geometric execution и compulsory schedule не
+доказывается. Если в исходном word S=B^(2n), здесь m=2n.
+
+Сингулярный s=p^(3m) нельзя спрятать в compiler constant. Однако для
+этого настоящего heat survival scaled inverse имеет более сильный bound:
+при a=m/2, b₀=p³
+
+    √c S^(−1/2)=p² b₀^a B^(−a),
+    ||D^j_B[p²b₀^a B^(−a)]||≤p²(a)_j b₀^(−j), j≤3. (13fg)
+
+Следует из Laplace/resolvent integral; mixed physical jets B учитываются
+product rule. Более сильная constructive связь с БУКВАЛЬНЫМ v8 не
+требует глобального inverse-matrix oracle. Для m=2n его старый
+32-word block query имеет A=<blank|Q₃₂|blank>=ell D/16 и
+
+    B=I−2p²A*A, q₀=1−p³=2p²,
+    Y=(I−B)/q₀=A*A, 0≤Y≤I,
+    √c S^(−1/2)=p² Σ_(k≥0)w_(n,k)Y^k,
+    w_(n,k)=binom(n+k−1,k)(p³)^n q₀^k,
+    Σ_k w_(n,k)=1.                            (13fg″)
+
+Y block-encoded старым A, затем A* на ДВУХ новых work banks; одна
+неочищенная общая bank не даёт product compression. Коэффициенты —
+negative-binomial law числа failures перед n successes с success p³.
+Три golden trials дают этот success; все семь microscopic failure
+histories остаются. Можно исполнить ровно T=n+L triples независимо
+от поля, reversible logic считает failures до nth success; отсутствие
+его кT идёт в timeout flag ВНЕ return. На ветви k≤L применяются k
+block queries Y с новыми banks. Uncompute NEW coherent scratch/coins
+даёт clean compression Σ_(k≤L)wY^k. Старый measured archive не
+стирается. До этой суммы исполняется contraction p²R^(1/2), norm≤p;
+получается M_L в правильном НЕкоммутирующем порядке. После него U_old
+работает только при all-new-work-blank. Любой такой полный block encoding
+M_L достаточен, literal two-by-two Julia не обязательна.
+
+При ρ=(1+q₀)/(2q₀)>1 factorial-moment tail даёт
+
+    E[ρ^K]=2^n,
+    E[(K)_j ρ^K]=2^n(n)_j[(1+q₀)/p³]^j,
+    tail_(C³)≤p² 2^n ρ^(−L)
+                   max_(j≤3)(n)_j[(1+q₀)/(p³q₀)]^j.
+
+Поэтому L=O(n+log(1/η)) достаточно для C³ accuracy η; ℓ¹ coefficient
+norm равен p², derivative moments polynomial вn. Это finite ideal
+coherent QUERY circuit из старого A и его adjoint/control interface,
+не новый Y/inverse oracle и не unknown preparation amplitude readout.
+Counting logic, controlled queries, scalar R_i^(1/2) и allworkblank test
+ещё требуют настоящего admission и finite compilation; ширина/work
+grow сn,L и не объявлены бесплатными. Старое измеренное прошлое нельзя
+сделать coherent query этой формулой. Full-work-cut compiler §6.52
+применим с actual word/cut/rank и этими интерфейсами.
+На рассматриваемом real native matrix chart S,Q вещественны и
+существующий real orthogonal compiler имеет нужный target. Произвольные
+complex controls требуют отдельного допуска/realification, не следуют
+из этой формулы. Его C² price error надо делить на dθ, поэтому нужна
+относительная точность η=o(cε) с настоящими word-length/jet factors,
+не только η→0. Никакой полиномиальной gate/runtime эффективности здесь
+не заявлено. Более точно, при queried S_tilde,R_tilde и true S
+
+    M_tilde* S M_tilde=c[R_tilde+R_tilde^(1/2)S_tilde^(−1/2)
+                         (S−S_tilde)S_tilde^(−1/2)R_tilde^(1/2)].
+
+В jet Banach norm ||A||₂=||A||+||DA||+||D²A||/2 это даёт
+normalized C² error ≤C[δ_Q+C_H²C_A²δ_S/ε], где
+C_H=||R_tilde^(1/2)||₂, C_A=||S_tilde^(−1/2)||₂.
+C зависит от actual pencil bounds≥1−z, не от rank. Structured S-query
+error получает factor c ДО нормировки; generic finite-word output
+error η имеет bound const·zL⁶η/[(1−z)⁴θ]. Оба типа error надо
+различать. При rapidly growing word length одного η=o(cε) недостаточно.
+
+
+**Какой H принадлежит новой записи.** Если heat читается с полного
+нового blank event, его Gram теперь cR. Тогда настоящий generated heat
+при fixed β есть
+
+    H_gen=β⁻¹log[C_new c Tr R]=const+β⁻¹log τ_d(R),
+    |DH_gen|≤ε||DQ||/(βr₀),
+    ||D²H_gen||≤ε||D²Q||/(βr₀)+ε²||DQ||²/(βr₀²). (13fg′)
+
+C_new — действительная field-independent multiplicity этого readout.
+Равенство старому H=β⁻¹logTr B^m НЕ следует из identity extension
+input Δ: новый return изменился. Если старый heat readout сохраняется
+отдельным измерением, его source считается отдельно по §6.53.
+
+Scalar Rayleigh R_in (НЕ matrix R из(13fc)) остаётся INPUT
+Rayleigh того Δ, который задан настоящим tuple.
+Для genuine identity extension input Δ его bounds §6.53 сохраняют все
+старые preparation/observer variations; blank flag не заменяет R
+выходной энергией. Но если Δ также определяется из НОВОГО heat/return,
+надо пересчитать его actual jets. Нельзя совместить новый H_gen со старым
+Δ на основании одного названия native v8: требуется настоящий общий
+operator/readout interface. Другие controller/history sources тоже
+должны входить в C_H+C_R или отдельный actual budget.
+
+При таком ПРОВЕРЕННОМ tuple с рассматриваемой conditional
+S_full=H+J+R_in оценки §6.53 либо(13fg′) и(13ff) дают
+
+    ||D(S_full/(dθ))−Dτ_d(Q)||_(C¹)
+      ≤ C_Q θ + E_compile + (C_H+C_R)/(dθ).     (13fh)
+
+Если actual AF regular trace query из §6.49/6.52 имеет
+τ_d(Q)→Γ=A/V, то добавляются ЕГО stencil/quantile/Binet errors;
+получается тот же general Einstein–scalar consumer, не новый fit.
+Например d содержит K_N≥φ^(2N+7), m≈h⁻², C_H+C_R=O(h⁻⁴),
+ε,z fixed, N≥2m. Тогда dθ растёт не медленнее const·p^(−m),
+а normalized H+R error=O(h⁻⁴p^m)→0 и θ=O(p^(3m)).
+Старое достаточное N≈n для неизменённого J₂ НЕ обеспечивает этого
+нового c-suppressed signal. N≥2m — sufficient ресурсная семья;
+D0 пока не вынуждает её реализовать и оплатить.
+
+**Решающий предел утверждения.** Нельзя считать M свободным внутренним
+полем и затем исключить его своей стационарностью. При fixed S>0
+и A=(1−z)I+zM*SM собственная вариация настоящего feedback даёт
+
+    DJ[δM]=−2z Re Tr[A^(−1)M*S δM].            (13fi)
+
+Для interior variation δM=M и M≠0 эта строка строго отрицательна.
+Нужный ненулевой M НЕ является свободным stationary normal. Требуется
+actual control-law binding; нельзя назвать его найденной Euler section.
+Более того, та же construction исполняет любые bounded Q, −Q и Q+Q⁴
+на bounded charts. Поэтому native palette/return positivity НЕ выбирают
+Palatini/Einstein source. Это строгий constructive analytic ONE-feedback
+consumer с full-cut finite compilation, который устраняет прежнюю композиционную дыру, но не physical
+forcing. Собственные exact joint roots/compactness/normal recovery,
+compulsory Q/control/clock и полный независимый spin stress ещё нужны.
+Сходимость(13fh) не превращается в roots; counter §6.53 сохраняется.
+Raw#216 и прежние native source obstructions не переименовываются.
+
+Новые identities и scope проверяются одним bounded
+[entrypoint](sources/d0_af_star_full_lattice_2026-10-17/check_native_complete_price_scale.py)
+и его [receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_COMPLETE_PRICE_SCALE_RESULT.json).
+Прежние §§6.46–6.52 сохранены byte-identical; в их старом receipt
+обновлён только fingerprint этого дополненного prose owner.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

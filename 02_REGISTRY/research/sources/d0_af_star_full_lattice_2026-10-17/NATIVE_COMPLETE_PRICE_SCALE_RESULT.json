@@ -1,0 +1,312 @@
+{
+  "status": "PASS",
+  "provenance": {
+    "status": "PASS_UNCHANGED_PRIOR_SOURCE_BYTES",
+    "base_commit": "622d96b68f0195aaed4ae856e90429225de9c580",
+    "source_path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+    "prior_owner_sha256": "ee5ce8bf76882dc02fada7cfeb9b2371eac1626979c09e84119a322368362169",
+    "current_owner_sha256": "50d2d21f56f6fad26108bd1f704a1a8eeba0ac1029abbced7e4162b0c86adf0b",
+    "prior_math": "All pre-existing source bytes including6.46-6.52 are identical after removing only inserted6.53-6.55. Prior null/source math receipt is reused; only this owner fingerprint is refreshed."
+  },
+  "checker_sha256": "c83e862d5c06f350168dbda2d7d642c566aa7ae1e86f86608d4b8c92b9095af9",
+  "complete_price_scale": {
+    "status": "PASS_EXACT_TRACE_AND_SATURATION_CONTROLS",
+    "checks": [
+      "canonical_BOOK03_ordinary_trace_pin",
+      "ordinary_trace_heat_first_intensive",
+      "ordinary_trace_heat_second_intensive",
+      "moving_beta_keeps_log_dimension_source",
+      "normalized_entangled_Rayleigh_no_multiplicity",
+      "free_preparation_row_not_removed_by_scaling",
+      "ordinary_feedback_trace_extensive",
+      "normalized_trace_cancels_amplification",
+      "accepted6_21_tower_receipt_pin",
+      "consume_actual_Fibonacci_multiplier_no_replay",
+      "four_role_d1_product_rule",
+      "four_role_d2_product_rule",
+      "full_Delta_second_product_rule",
+      "golden_sufficient_source_exponent",
+      "one_composed_survival_product",
+      "saturated_complete_pencil",
+      "old_source_over_linear_star",
+      "quadratic_star_over_linear_star",
+      "shielding_linearity_product_nonzero",
+      "mandatory_zero_AF_branch_source_floor",
+      "general_loss_source_lower",
+      "general_loss_source_upper",
+      "saturated_price_gap_log_upper"
+    ],
+    "canonical_BOOK03_formula_SHA256": "104e0509d16e60e8b5648a15ec40ea907d9269f7b4e3d5e58a80cfca14c835df",
+    "accepted6_21_receipt_SHA256": "a877c1a5567f4b35d94f371fcb4c79920f71a9e9549a3c4611846ecfdbba32f1",
+    "canonical": "BOOK03.0 Sfb=-logdet(I-zF), dSfb=Tr[(I-zF)^-1 z dF]; BOOK03.25 bootstrap uses beta^-1 logTr exp(-beta Delta)-logdet(I-zF). It is ordinary Tr, not normalized tau.",
+    "actual_tower": "K_N=F_(2N+9), full AF carrier multiplicity m_N=D0^2+D1^2=F_(2N+15), m_N/K_N->phi^6=9+4sqrt5. This is the actual tower, not freely added spectator copies.",
+    "old_owner": "full-source6.21 already proves H/R first-source intensity on genuine spectator lifts and J_v8,m=m J_v8. That scoped obstruction must not be rebranded as new.",
+    "actual_four_Role_bound": {
+      "D_norm": "8*u0*(m0 + 1)/ell",
+      "D_first": "(8*m1*u0 + 8*u1*(m0 + 1))/ell",
+      "D_second": "(16*m1*u1 + 8*m2*u0 + 8*u2*(m0 + 1))/ell",
+      "Delta_norm": "64*u0**2*(m0 + 1)**2/ell**2",
+      "Delta_first": "16*u0*(m0 + 1)*(8*m1*u0 + 8*u1*(m0 + 1))/ell**2",
+      "Delta_second": "16*u0*(m0 + 1)*(16*m1*u1 + 8*m2*u0 + 8*u2*(m0 + 1))/ell**2 + 2*(8*m1*u0 + 8*u1*(m0 + 1))**2/ell**2",
+      "scope": "Actual D=d+d*, d=ell^-1 sum_4 C_r(T_r-I), with uniform full-carrier jets u_j,m_j. Operator norms do not scale with dimension or graph vertex count because there are four bounded Role operators. No statement that an unrelated controller Laplacian equals this operator is made."
+    },
+    "sufficient_schedule": "If actual operator/record jets u_j,m_j,w1,w2 are bounded and n>=n0,beta fixed,B>=b0, centered H+R C2 source=O(ell^-4). With ell=h_n=1/ceil(phi^(n/16)), t_n^2=h_n and actual AF level N>=n, h_n^-5/K_N=O(p^(27n/16))->0. This is sufficient explicit scaling, NOT a derived native N(h) or t(h) law.",
+    "H_C2": "At fixed alpha,beta=m_heat*alpha, B=I-alpha Delta>=b0I, ||DDelta||<=d1,||D2Delta||<=d2: |DH|<=d1/b0; ||D2H||<=d2/b0+(alpha+2beta)*d1^2/b0^2. These are dimension-free and include observer/preparation dependence THROUGH Delta.",
+    "R_C2": "Actual I_norm is the observer/metric WHITENING map, not a recorder. For canonical C=I_norm Psi with ||C||=1, ||DC||<=s1,||D2C||<=s2, 0<=Delta<=d0I: |DR|<=d1+2d0*s1; ||D2R||<=d2+4d1*s1+2d0*s2+2d0*s1^2. These derivatives include all whitening/preparation/observer jets and entangling tangents. For a more general normalization pullback w=I_norm Psi with ||w||^2>=n0, the safe annulus bound is d2+4d1*w1/sqrt(n0)+2d0*w2/sqrt(n0)+14d0*w1^2/n0. Original v8 R is not replaced by an outcome-averaged recorded energy.",
+    "conditional_whole_source": "ONLY IF the actual full programme has ONE feedback J_N already equal/close to the compiled J2 word, S_N=H_N+J_N+R_N with no omitted extensive component: (||H_N||C2_centered+||R_N||C2_centered)/(nu*K_N*a0*cAF*t_N^2)->0 and the owned normalized J_N source error->0 imply normalized complete source->D Gamma. This does not prove existence of exact finite joint roots.",
+    "saturation": {
+      "pencil": "-z*(b*(-(-c_probe*f_star - delta + 1/2)*(4*c_probe*f_star + 4*delta + 2) + 1) + (-c_probe*f_star - delta + 1/2)*(4*c_probe*f_star + 4*delta + 2)) + 1",
+      "old_over_linear": "delta/(2*c_probe*(b - 1))",
+      "quadratic_over_linear": "-c_probe*(4*b*delta**2*z - 4*delta**2*z - z + 1)/(2*delta*(4*b*delta**2*z - 4*delta**2*z + z - 1))",
+      "product": "-(4*b*delta**2*z - 4*delta**2*z - z + 1)/(4*(b - 1)*(4*b*delta**2*z - 4*delta**2*z + z - 1))",
+      "limit": "-1/[4(1-b)] for fixed b<1 and fixed0<z<1; cannot both shield old source and obtain a uniform C2-linear Palatini query near lambda=1"
+    },
+    "full_two_AF_branches": "Both lambda(E) and0 are retained. j2=-log(1-z*b)-log(1-z*(lambda+(1-lambda)*b)); d_b j2-z=z^2*b/(1-z*b)+z*(1-lambda)/R>=0. Thus d_bj2>=z for an independent old scalar b direction, even if lambda->1.",
+    "general_nonlinear_saturation": "Let A_N=I-F_AF,N>=0 and F_total,N=I-(1-b)A_N at a fixed0<z<1. z Tr A_N<=d_b J_N<=z Tr A_N/(1-z). If this independent old source divided by the true positive signal sigma_N vanishes, Tr A_N/sigma_N->0. But for EVERY admissible nonlinear g-parameterization, J_N(g)<=Jmax,N=-rank(P)log(1-z), while Jmax,N-J_N(0)<=z(1-b)Tr A_N/(1-z). Hence limsup[J_N(g)-J_N(0)]/sigma_N<=0. A nonzero linear limit kappa*g on a fixed two-sided chart is impossible. No affine E assumption or convenient reparameterization escapes this. This does not exclude shrinking-chart, nonlinear source cancellation or a programme without the independent old b direction.",
+    "failure_cases": [
+      "retained original J_v8 is extensive and not diluted by the actual AF tower",
+      "a normalized feedback trace would remove the K amplification, but that is not canonical BOOK03",
+      "an operator not actually a spectator lift needs its own operator-jet bounds",
+      "moving beta produces a log(m)/beta source",
+      "a general normalization norm approaching zero or controller/operator jets growing as K defeat the bound; canonical v8 whitened C has norm1",
+      "fixed-N constants cannot be discarded in a varied rank/word-length equation",
+      "small normalized prep rows are not exact prep stationarity, and do not establish joint roots"
+    ]
+  },
+  "preparation_and_recovery": {
+    "status": "PASS_EXACT_PREPARATION_AND_RECOVERY_CONTROLS",
+    "checks": [
+      "fixed_RIGHT128_full_schmidt_gram",
+      "fixed_RIGHT128_fast_source",
+      "fixed_RIGHT128_fast_second_source",
+      "own_soft_normal_equation",
+      "nonzero_soft_Schur_correction",
+      "limiting_stationarity_does_not_supply_joint_roots",
+      "native_G_normalization_is_canonical_sphere",
+      "whitening_norm_is_exactly_one"
+    ],
+    "full_RIGHT128": "C_K=(cos(Ktheta) I128; sin(Ktheta) I128)/sqrt128, Delta=diag(1,2) tensor I128. C_K^*C_K=I128/128; all16 CAR grades, multiplicity8 and reference128 retained.",
+    "source_boundary": "R=1+sin^2(Ktheta): bounded values and fixed RIGHT do not bound an arbitrary physical pullback section jet.",
+    "recovery_boundary": "S_epsilon=(x-1)^2/2+epsilon*x*y+epsilon^2*y^2/2 converges in C2 on fixed compact charts but has no joint critical point; its normal elimination changes the metric Schur by exactly1.",
+    "actual_R_type": "I_norm is observer whitening, not a recording Kraus map. C=I_norm Psi and Psi^*G Psi=1 imply ||C||=1; the input Rayleigh is not replaced by a sum over outputs.",
+    "coupling_boundary": "When scalar psi is a coordinate of this same CAR preparation, a classical code or independent density cannot silently replace its actual coupling map."
+  },
+  "canonical_input_R": {
+    "status": "PASS",
+    "checks": [
+      "actual normalized timelike observer",
+      "actual positive whitening root",
+      "all16 whitening identity",
+      "arbitrary fixedRIGHT Gram identity",
+      "full16 canonical Rayleigh normalizer",
+      "counting normalization cannot replace native G normalization",
+      "whitening is invertible not a selected Kraus output",
+      "exact golden Heisenberg polynomial",
+      "exact complete golden port coefficients",
+      "complete labels coefficient ports retained",
+      "literal BetaHat is unitary",
+      "literal ZetaHat is unitary",
+      "literal original signed-word compression",
+      "all16 other role energy commutant 1",
+      "all16 other role signed word sum 1",
+      "all16 other role literal dilation norm 1",
+      "all16 other role energy commutant 2",
+      "all16 other role signed word sum 2",
+      "all16 other role literal dilation norm 2",
+      "all16 other role energy commutant 3",
+      "all16 other role signed word sum 3",
+      "all16 other role literal dilation norm 3",
+      "eight padding words cancel",
+      "counter preparation normalized and timelike at both sites",
+      "counter is genuine energy2 eigenpreparation",
+      "literal complete128 output changes old input Rayleigh"
+    ],
+    "creator_AST_sha256": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "original_v8_exact_AST_sha256": "9f62da27fd64a07005a5ee30eaedbf665f309f15b3799e8049e6f7290dac27ff",
+    "original_v8_RESULT_sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+    "canonical_input_R": "v8 RESULT.md94-110 eq(3): R=<Psi,(Delta tensor I_ref128 tensor I_workspace)Psi>, ||Psi||=1. Input whole-carrier Rayleigh, not a selected Kraus branch or an output average.",
+    "whitening": "Full-source/transport216-222: I_x=Lambda(sqrt(h_x)), I_x^* I_x=G_x. I extends as identity on all apparatus/reference246. FullLorentz139 eq(8): w=I Psi,N=||w||². It is not the recording instrument.",
+    "canonical_normalization": "For Psi^*G Psi=sigma_RIGHT, C=I Psi has C^*C=sigma_RIGHT, hence N=Tr sigma_RIGHT=1. Every full16/reference direction remains. Raw counting-unit input instead needs the actual G lower bound and moving-whitening jets; do not switch physical normalization constraints.",
+    "actual_complete128": "K0=pI+p²W,K1=sqrt(p)p(W-I), W=Q^*(I-2P)Q. All32 labels x2 coefficient x2 ports retained. Their Heisenberg mixture is pO+p²WOW; completeness alone is not energy conservation.",
+    "exact_record_counter": "Literal original6signedwords per role plus4I+4(-I), ell=1, role0 coefficient(3/5,4/5), other3 independent nonzero coefficients3/5 at zero transverse momenta. On normalized grade1 energy2 eigenvector(0,3,0,-4)/5: R_output-R_input=-173*p²/640000. The fullCAR16 commutants are checked and referenceI128 tensoring preserves the operator identity.",
+    "output_minus_input_div_p_squared": [
+      [
+        "-1441/4000000",
+        "0",
+        "1441/4000000",
+        "0"
+      ],
+      [
+        "0",
+        "-1557/16000000",
+        "0",
+        "519/4000000"
+      ],
+      [
+        "1441/4000000",
+        "0",
+        "-1441/4000000",
+        "0"
+      ],
+      [
+        "0",
+        "519/4000000",
+        "0",
+        "-173/1000000"
+      ]
+    ],
+    "scope": "New exact variable-coefficient word control, not old homogeneous root replay. Full recorder norm1 cannot change the original R definition. Conditional clock/HALT, observer/code admissibility, full original stack and joint-root recovery remain separate."
+  },
+  "one_full_return": {
+    "status": "PASS_EXACT_EQUALIZED_FULL_RETURN",
+    "checks": [
+      "positive_old_survival",
+      "positive_target_R",
+      "genuinely_noncommuting_S_R",
+      "noncommuting_equalization",
+      "fixture_obeys_native_old_gap",
+      "fixture_R_native_window",
+      "native_scaled_inverse_strict_contraction",
+      "fixture_whole_contraction_margin",
+      "left_right_defect_same_trace_det",
+      "positive_root_right_exact",
+      "positive_root_left_exact",
+      "Julia_defect_intertwiner",
+      "complement_Julia_is_full_unitary",
+      "entire_Julia8_is_direct_sum_of_unitary_blocks",
+      "old_unitary_on_every_input_column",
+      "old_control_is_identity_on_failure_flag",
+      "actual_return_cut_rank_preserved",
+      "complete_macro_return_compression",
+      "old_archive_outputs_retained",
+      "new_failure_outputs_retained",
+      "failure_Gram_includes_both_branches",
+      "all_output_columns_norm_one",
+      "all_input_complement_feedback_zero",
+      "entire_noncommuting_survival_jet_0",
+      "entire_noncommuting_survival_jet_1",
+      "entire_noncommuting_survival_jet_2",
+      "query_survival_defect_identity",
+      "one_full_price_factorization",
+      "full8_det_equals_actual_rank2_pencil",
+      "free_controller_radial_source_nonzero",
+      "same_blank_heat_first_source",
+      "same_blank_heat_second_source",
+      "scaled_inverse_binomial_tail_radius",
+      "actual_native_signal_exponent_N2m"
+    ],
+    "fixture": {
+      "old_S": [
+        [
+          "1/4",
+          "0"
+        ],
+        [
+          "0",
+          "1/9"
+        ]
+      ],
+      "target_R": [
+        [
+          "10/9",
+          "2/3"
+        ],
+        [
+          "2/3",
+          "10/9"
+        ]
+      ],
+      "M": [
+        [
+          "2*k",
+          "2*k/3"
+        ],
+        [
+          "k",
+          "3*k"
+        ]
+      ],
+      "native_fixture_sqrt_c": "(-1/2 + sqrt(5)/2)**5",
+      "native_fixture_m": 2,
+      "full_unitary_dimension": 8,
+      "return_rank": 2,
+      "work_failure_preserved": true
+    },
+    "exact_target": "On Pold, S=C* C>=sI, R=I-epsilon Q>0. Set M=sqrt(c)S^-1/2 R^1/2 and extend Mhat=M directsum p I_(Poldperp). Julia(Mhat) acts on the FULL oldspace times flag. Follow it by old U on flag0, identity on flag1. Actual P=Pold tensor|0><0| gives Ctotal=C M and survival=M*SM=cR, so F=P-cR on P and0 outside. Both old-archive and new-flag failure outputs remain.",
+    "actual_native_c": "For old S=B^m, B>=p^3 I, choose c=p^(3m+4) and ||R||<=p^-2. Then ||M||^2<=p^2<1/2. m is the SURVIVAL exponent: if S=B^(2n), m=2n. c is field-independent for each fixed-clock experiment; this is a new gate programme, not unchanged old feedback or a compulsory selector.",
+    "price_linearization": "A=1-z+zc, vartheta=zc*epsilon/A. J=-rank(P)log A-Tr log(I-vartheta Q). Dividing the complete contrast by rank(P)*vartheta gives tau_P Q+O_C2(vartheta). Thus fixed epsilon is allowed: old-clock m->infty makes c->0 and produces the weak-price parameter. No separate prescribed t(h) is needed for this constructed price.",
+    "same_blank_heat": "If H is generated by this SAME whole blank Gram, H_new=beta^-1 logTr(cR)=field-constant+beta^-1 log tau_P R. Its derivatives are bounded by epsilon*Q1/(beta*r0) and epsilon*Q2/(beta*r0)+epsilon^2*Q1^2/(beta*r0^2), R>=r0I. This does NOT identify H_new with the old Hodge heat or independently redefine the actual input Rayleigh operator.",
+    "exact_error_identity": "If the controller queries S_tilde,R_tilde, while the actual old survival is S, then M_tilde* S M_tilde=c[R_tilde+R_tilde^1/2 S_tilde^-1/2(S-S_tilde)S_tilde^-1/2 R_tilde^1/2]. This controls structured operand errors with a factor c before source normalization.",
+    "C2_source_error": "Use jet algebra ||A||J2=||A||+||DA||+0.5||D2A||. Let C_A bound ||S_tilde^-1/2||J2 and C_H bound ||R_tilde^1/2||J2, stable positive gaps. Then ||Z||J2<=epsilon*delta_Q+C_H^2*C_A^2*delta_S. For the straight pencil path D_t>=dI,d=1-z with derivative bounds D1,D2, C_inv=1/d+D1/d^2+0.5D2/d^2+D1^2/d^3. The complete normalized price error is <=A*C_inv[delta_Q+C_H^2*C_A^2*delta_S/epsilon]. Generic finite-word whole-output C3 error eta separately contributes <=2^14*z*L^6*eta/[(1-z)^4*vartheta].",
+    "inverse_gap_cost": "Generic S^-1/2 bounds depend on s: a0=s^-1/2,a1=0.5*s^-3/2*S1,a2=0.5*s^-3/2*S2+0.75*s^-5/2*S1^2; C_A=a0+a1+0.5*a2. All constants and actual query jets remain explicit. No unknown-state amplitude tomography is used.",
+    "actual_B_scaled_inverse": "When S=B^m, a=m/2, b0=p^3, the scaled inverse is p^2*b0^a*B^-a, with operator j-derivative coefficients <=p^2*(a)_j*b0^-j times B jets. Expand in X=I-B with ||X||<=1-b0. For rho=(2-b0)/[2(1-b0)]>1, the degreeD derivative tails are bounded by p^2*rho^-D*2^a*(a)_j*(2rho/b0)^j. Thus fixed-jet polynomial degree O(m+log(1/eta)) is sufficient; actual word length/work/control costs still must be counted.",
+    "source_scale": "The signal is rank(P)*vartheta, asymptotically proportional to actual AF K_N*c*epsilon. With K_N~p^-2N, c=p^(3m+4), N>=2m gives exponential dominance over polynomial old heat/prep bounds in m. This sufficient signal schedule is not a proved native rank law or a literal compiler/runtime budget.",
+    "limitations": [
+      "Julia(Mhat) is the exact analytic target; finite Golden words generally only approximate it with full-output error budget",
+      "coherent old and matrix-entry queries, controls, positive inverse gap, actual flag preparation/return test and physical admission must exist",
+      "controls M(S,Q) must be genuinely generated by the fixed programme; free M has nonzero radial Euler source and cannot be eliminated by stationarity",
+      "Q is still an independently specified existing geometric/matter programme; this construction does not force its selection from D0",
+      "other H/R, all preparation/observer equations, varied clock/rank source, exact finite joint roots and raw#216 remain separate"
+    ]
+  },
+  "native_inverse_word": {
+    "status": "PASS",
+    "checks": [
+      "actual golden survival loss factor",
+      "negative binomial PGF normalized",
+      "valid fixed Chernoff radius",
+      "exact factorial moment 0",
+      "exact tilted moment 0",
+      "exact factorial moment 1",
+      "exact tilted moment 1",
+      "exact factorial moment 2",
+      "exact tilted moment 2",
+      "exact factorial moment 3",
+      "exact tilted moment 3",
+      "finite count coefficient recurrence",
+      "finite count initial coefficient",
+      "all eight actual golden histories retained",
+      "native success probability from three trials",
+      "seven distinct failures have actual total q",
+      "complete three-trial preparation norm",
+      "query unitary on every input column",
+      "two fresh-bank full word unitary",
+      "two fresh-bank compression is Y",
+      "reusing the bank would give wrong identity",
+      "actual Y requires no matrix-rescaling oracle",
+      "actual positive native survival window"
+    ],
+    "original_v8_exact_AST_sha256": "9f62da27fd64a07005a5ee30eaedbf665f309f15b3799e8049e6f7290dac27ff",
+    "actual_identity": "B=I-2p² A* A, A=ell D/16, q=1-p³=2p²; hence Y=(I-B)/q=A* A is available from TWO fresh A/A* query banks. No globally normalized Y or inverse-S oracle is assumed.",
+    "scaled_inverse": "For m=2n,c=p^(3m+4): sqrt(c)S^-1/2=p²(p³B^-1)^n=p² sum_k w_nk Y^k, w_nk=binom(n+k-1,k)p^(3n)q^k; sum w=1.",
+    "factorial_moments": [
+      "1",
+      "n*(3 - sqrt(5))/(-1/2 + sqrt(5)/2)**3",
+      "n*(3 - sqrt(5))**2*(n + 1)/(-1/2 + sqrt(5)/2)**6",
+      "n*(3 - sqrt(5))**3*(n + 1)*(n + 2)/(-1/2 + sqrt(5)/2)**9"
+    ],
+    "tilted_moments": [
+      "2**n",
+      "2**n*n*(4 - sqrt(5))/(-1/2 + sqrt(5)/2)**3",
+      "2**n*n*(4 - sqrt(5))**2*(n + 1)/(-1/2 + sqrt(5)/2)**6",
+      "2**n*n*(4 - sqrt(5))**3*(n + 1)*(n + 2)/(-1/2 + sqrt(5)/2)**9"
+    ],
+    "tail": "lambda=(1+1/q)/2; C3 B-jet tail <=p²2^n lambda^-L max_(j<=3) rising(n,j)[(1+q)/(p³q)]^j. Therefore L=O(n+log(1/eta)). Physical jets require the true B chain rule.",
+    "microscopic_history_weights": {
+      "000": "-2 + sqrt(5)",
+      "001": "(1 - sqrt(5))**4/16",
+      "010": "(1 - sqrt(5))**4/16",
+      "011": "-11/2 + 5*sqrt(5)/2",
+      "100": "(1 - sqrt(5))**4/16",
+      "101": "-11/2 + 5*sqrt(5)/2",
+      "110": "-11/2 + 5*sqrt(5)/2",
+      "111": "9 - 4*sqrt(5)"
+    },
+    "finite_history_word": "Draw T=n+L triples unconditionally. Keep all eight microscopic histories per trial. Reversibly count first nth success. On success control Y^k, using fresh query banks; on timeout route a flag outside the return. Unprepare only NEW coherent work. The clean compression is the truncated positive series; no failed branch is discarded.",
+    "target_factor": "Apply the admitted fixed-address analytic contraction p² sqrt(I-epsilon Q) first (norm<=p on R<=p^-2 I), then the normalized series block. The noncommuting product equals M_L.",
+    "implementation_scope": "Exact ideal controlled-query/counter circuit identities. Counting and controlled queries are not asserted exact finite G/CNOT words; use existing C3 full-column compiler and actual ALL-work-blank return cut, with error relative to c*epsilon, every flag/timeout/output and true word/width cost retained. Old measured archives are not uncomputed. No efficient or compulsory N(m), target Q, or control-law selection is proved."
+  },
+  "full_D0_price_selected": false,
+  "generic_joint_recovery": false,
+  "GR_closed": false
+}

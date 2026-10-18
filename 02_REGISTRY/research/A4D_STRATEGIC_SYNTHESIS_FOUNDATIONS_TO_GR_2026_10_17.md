@@ -2055,6 +2055,68 @@ isometry или знание готового EH не заменяют этог�
 с exact/interval receipt проверяет только эти новые несущие переходы;
 старые root/heat/Lean suites повторно не запускаются.
 
+### 7.17. Одна полная цена: измеримый return signal и связанное управление
+
+[Full-source §§6.53–6.55](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+замыкают техническую ONE-feedback композицию, оставленную в §7.16.
+На старом full return cut C=PUP, S=C*C>0 и новом positive
+R=I−εQ зададим M=√c S^(−1/2)R^(1/2). Julia(M) с настоящим blank
+flag, затем old U controlled flag0, сохраняет все failure outputs и
+даёт C_total*C_total=cR даже при [S,R]≠0. На complement старого
+cut M продолжен strict contraction; reference128 и все16 grades остаются.
+Это точная analytic macro; конечное native compiler выполнение имеет
+свою explicit full-cut error, делённую на настоящий signal.
+
+У всей программы теперь ОДИН J=const−Trlog(I−θQ),
+θ=zcε/(1−z+zc), и normalized source стремится к Dτ(Q) с C² error
+O(θ). При actual S=B^m, p³I≤B≤I можно взять field-independent
+c=p^(3m+4): θ→0 с уже имеющимся survival clock m даже при fixed ε.
+Технический weak-price limit больше не требует отдельного t(h)→0.
+Scaled inverse имеет polynomial-in-m C³ jets. Он также конструктивен
+из старого A=ell D/16: Y=A*A=(I−B)/(2p²), а inverse filter есть
+positive negative-binomial series поY с coefficient norm p². Два fresh
+work banks, все seven failure histories, timeout и true return cut
+сохранены. Global inverse oracle не нужен; counting/controlled-query
+admission и finite compilation остаются. Compiler accuracy всё
+равно должна быть относительной к cε. Gate/runtime эффективность и
+физически выбранный AF уровень этим не доказаны.
+
+Другой нужный переход — full H+R source. Его C² bound не содержит
+размерности AF/CAR/ref и сохраняет observer и preparation derivatives.
+Настоящий R есть INPUT Rayleigh; I=Λsqrt(h_observer) есть whitening.
+На native G-normalized sphere C=IΨ имеет norm1. Если heat берётся
+с нового полного blank event, H_gen=const+β⁻¹logτ(R), а не старый
+heat: его dimension-free source оценён отдельно. Общий heat/input-Δ
+interface всё ещё должен принадлежать одному реальному tuple. На буквальном
+32-word/128-output v8 найден точный separator
+R_output−R_input=−173p²/640000: выходную энергию нельзя подставить
+вместо исходной. При full four-Role operator budget O(h⁻⁴), m≈h⁻²
+и actual K_N≈φ^(2N), достаточный N≥2m даёт
+
+    ||D[(H+J+R)/(dθ)]−Dτ(Q)||_(C¹)
+      ≤O(p^(3m))+E_compile+O(h⁻⁴p^m)→0.
+
+Это пример достаточной resource family с fixed ε; прежнее N≈log(1/h)
+не подавляет exponentially small c. Все true controller/history costs
+должны принадлежать тому же bound. Если Q — именно исполненный
+volume-quantile query §7.16, τ(Q)→A/V, потребляется уже выведенный
+общий Einstein–scalar source и его oriented coupling. Отдельный
+конкурирующий Einstein-frame/two-band owner сохранён: его algebraic
+Legendre normal block не является normal gap всей цены H+J+R.
+
+**Следующий самый трудный переход теперь точен.** M(S,Q) должен быть
+собственным связанным управлением, а Q — физически выбранным native
+query. Свободный M не стационарен: DJ[M]<0 при M≠0. Та же construction
+исполняет произвольные bounded Q, поэтому наличие palette не вынуждает
+именно GR. Нельзя заменить actual control law внешней программой и
+объявить физический вывод законченным. Нужны также собственные exact
+joint roots/compactness: C² source convergence само по себе их не даёт,
+что показано explicit soft-normal counter без совместных roots.
+Original raw#216 и независимый полный spin source остаются своими.
+Новый bounded consumer проверяет только новые source/word identities;
+старые expensive suites не переигрывались.
+
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

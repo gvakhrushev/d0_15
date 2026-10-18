@@ -12,6 +12,37 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: the ONE complete feedback and the remaining heat/preparation source
+
+Input `622d96b6`; the previous goal turn made progress: published the
+full finite null-source/soft-channel theorem, the general scalar mean
+source and oriented coupling, the all16 density/edge bridge and fixed-
+address query/cut execution; integrated main `77d3ab60`. Exact-head
+Draft CI passed. This turn tackles the actual remaining whole source.
+Reuse §6.21: simple spectator amplification retains old v8 feedback at
+the same extensive order, so it is not a new escape. Derive dimension-
+independent H+R source bounds on the genuine full native Role operator,
+all CAR16/reference128 preparation normals and actual physical pullback
+jets. The consumer is §6.52→complete-price source convergence on ONE
+actual feedback word, without adding or dropping a separate old J.
+Test tensor composition and the saturation escape with every branch
+retained; do not mistake convergence for normal recovery. Root alone
+edits this brief, existing source/strategic/parent owners and one bounded
+consumer in the same packet. Read-only assistants derive the thermal/
+preparation estimate and independently test full feedback composition.
+No new physical price, free relative prefactor, state freezing, removed
+grade, unproved same-carrier embedding or changed raw#216 is admitted.
+Use accepted prior results rather than rerunning old suites.
+The constructive consumer now also includes the exact analytic
+noncommuting return equalizer M=sqrt(c) S^-1/2 R^1/2 and finite
+full-cut compilation. Prove its actual signal, scaled-inverse jets and
+free-control Euler obstruction. Bound controls must not be treated as
+free stationary normals. At fixed epsilon, c=p^(3m+4) supplies the
+weak-price limit from the old survival clock; sufficient N>=2m is a
+resource family, not a forced physical law. Consume concurrent published
+two-band/Einstein-frame work without editing its owners. Only root
+updates existing strategic/current-route/primary intake; no new task.
+
 ### 18 October: actual null-projected source after the full normal equations
 
 Input `2f02612a`; the previous goal turn made progress by publishing

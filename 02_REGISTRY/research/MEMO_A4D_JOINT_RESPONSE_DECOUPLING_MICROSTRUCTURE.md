@@ -1,5 +1,29 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — one full return word and complete-source scale
+
+[Strategic §7.17](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.53–6.55](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+construct an analytic one-feedback programme with exact noncommuting
+return survival M*SM=c(I−epsilon Q). The actual blank flag cut retains
+all failure outputs and old input columns. Finite golden compilation
+has its actual C2 relative error; it is not called exact analytic control.
+The measured source scale is d*theta, theta=zc*epsilon/(1−z+zc).
+For old S=B^m and c=p^(3m+4), theta tends to zero at fixed epsilon;
+no additional weak t(h) is needed for this constructed price limit.
+
+Dimension-free C2 H/R bounds include all observer/preparation jets.
+R is the original INPUT Rayleigh and I is whitening, not a Kraus
+recorder. A literal old128-output counter proves these energies differ.
+With the genuine four-Role bounds, m~h^-2 and sufficient actual AF
+level N>=2m, the H+R normalized source is O(h^-4 p^m). Applying this
+to the owned moving-volume mean query still requires its real native
+binding and all controller/history sources. Free M has no nonzero
+interior stationary row; arbitrary Q programmability does not select GR.
+Exact joint recovery and compulsory physical control remain OPEN.
+The parallel nonlinear Einstein-frame/two-band results are preserved;
+their auxiliary Hessian does not replace a gap for the whole price.
+
 ## 18 October 2026 — actual full normal source, finite soft limit and general matter
 
 [Strategic §7.16](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
