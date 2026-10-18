@@ -17,9 +17,12 @@ import sympy as S
 
 ROOT = Path(__file__).resolve().parents[4]
 PIN_REF = "origin/exp/a4d-joint-response-continuation-2026-10-16"
-PIN_SHA = "3e4330235b9cea8adae9bb58a2b3e045af89f5d2"
+AUDITED_PIN = "50a2729c22848694ccea4d25ed10ced475909759"
+ENGINE_BASELINE = "3e4330235b9cea8adae9bb58a2b3e045af89f5d2"
 PIN_AT_LEAST = "c3ae03b735dbde690bf1774fc3761846aff93248"
 ABSENT_AT = "cd077973b267dfd271d831c78dab2e9fe5b0c2fb"
+ALGEBRAIC_DENIAL = '"physical_execution":"NOT PROVED"'
+FIXED_ADDRESS_CUT = "cut=lo[j]+p*(hi[j]-lo[j])"
 CERT = "02_REGISTRY/research/certificates/a4d_golden_quantile_clock_source_check.py"
 ADDRESS = (
     "02_REGISTRY/research/sources/d0_history_density_palatini_2026-10-16/"
@@ -99,13 +102,34 @@ def read_pin() -> dict[str, object]:
     if pin.returncode != 0:
         raise RuntimeError(pin.stderr.strip() or "pin ref missing")
     sha = pin.stdout.strip()
-    if sha != PIN_SHA:
-        raise RuntimeError("pin tip moved; re-read before reusing this comparison")
     if len(sha) != 40:
         raise RuntimeError("pin sha is not 40 hex characters")
-    ancestor = _git("merge-base", "--is-ancestor", PIN_AT_LEAST, sha)
+    ancestor = _git("merge-base", "--is-ancestor", AUDITED_PIN, sha)
     if ancestor.returncode != 0:
+        raise RuntimeError("live tip is not the audited pin or a descendant")
+    floor = _git("merge-base", "--is-ancestor", PIN_AT_LEAST, sha)
+    if floor.returncode != 0:
         raise RuntimeError("pin does not contain the required commit")
+    if not _exists(sha, CERT):
+        raise RuntimeError("algebraic checker missing at the re-read tip")
+    cert = _show(sha, CERT)
+    _require("algebraic_checker_denies_execution", ALGEBRAIC_DENIAL in cert)
+    _require(
+        "algebraic_checker_denies_julia_gate",
+        "No physical Julia gate" in cert,
+    )
+    _require("algebraic_checker_keeps_fixed_cut", FIXED_ADDRESS_CUT in cert)
+    if _exists(ENGINE_BASELINE, CERT) or _exists(ABSENT_AT, CERT):
+        raise RuntimeError("algebraic checker was already present before the engine baseline")
+    for path in ENGINE:
+        old_blob = _git("rev-parse", f"{ENGINE_BASELINE}:{path}")
+        new_blob = _git("rev-parse", f"{sha}:{path}")
+        if old_blob.returncode != 0 or new_blob.returncode != 0:
+            raise RuntimeError(f"engine blob missing for {path}")
+        _require(
+            "engine_blob_unchanged_" + path,
+            old_blob.stdout.strip() == new_blob.stdout.strip(),
+        )
     address = _show(sha, ADDRESS)
     start = address.index("def split(leaf):")
     end = address.index("def mass(leaf)", start)
@@ -142,9 +166,13 @@ def read_pin() -> dict[str, object]:
                 hits.append(f"{path}:{marker}")
     return {
         "pin_sha": sha,
+        "audited_pin": AUDITED_PIN,
         "pin_at_least": PIN_AT_LEAST,
-        "certificate_present_at_tip": _exists(sha, CERT),
-        "certificate_present_at_cd077973": _exists(ABSENT_AT, CERT),
+        "certificate_present_at_tip": True,
+        "certificate_present_at_previous_pin": False,
+        "certificate_present_at_cd077973": False,
+        "algebraic_checker_executes_map": False,
+        "engine_unchanged_since": ENGINE_BASELINE,
         "marker_hits": hits,
         "owned_cocycle": OWNED_COCYCLE,
         "address_rule": "axis=len(word)%4; F width p, R width p**2; no density argument",
@@ -294,9 +322,13 @@ def run() -> dict[str, object]:
         "qrho_identified_with_mu": qrho_identified_with_mu,
         "owned_cocycle": pin["owned_cocycle"],
         "pin_sha": pin["pin_sha"],
+        "audited_pin": pin["audited_pin"],
         "pin_at_least": pin["pin_at_least"],
         "certificate_present_at_tip": pin["certificate_present_at_tip"],
+        "certificate_present_at_previous_pin": pin["certificate_present_at_previous_pin"],
         "certificate_present_at_cd077973": pin["certificate_present_at_cd077973"],
+        "algebraic_checker_executes_map": pin["algebraic_checker_executes_map"],
+        "engine_unchanged_since": pin["engine_unchanged_since"],
         "ci_ran_absent_certificate": False,
         "marker_hits": pin["marker_hits"],
         "address_rule": pin["address_rule"],

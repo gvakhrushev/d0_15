@@ -2,11 +2,11 @@
 
 Статус: кандидат. `gr_derived = false`. Это не вывод ОТО. Строка `claims.csv` не заводилась. `D0-HODGE-LINKS-001` не закрыт. PR #334 не изменялся и не сливался.
 
-Чтение только через `git show` / `git cat-file` / `git merge-base`. Голова `origin/exp/a4d-joint-response-continuation-2026-10-16` на момент сравнения: `3e4330235b9cea8adae9bb58a2b3e045af89f5d2`. Она содержит требуемый коммит `c3ae03b735dbde690bf1774fc3761846aff93248`. Blob мемо `A4D_GOLDEN_QUANTILE_CLOCK_SAME_CAR_VOLUME_BRIDGE_2026_10_18.md` тот же, что на `c3ae03b7`: `a5e1ad86319ec9449c863d6a78dff3985ffc2e01`.
+Чтение только через `git show` / `git cat-file` / `git merge-base`. Проверенное чтение `origin/exp/a4d-joint-response-continuation-2026-10-16`: `50a2729c22848694ccea4d25ed10ced475909759`. Оно содержит `3e4330235b9cea8adae9bb58a2b3e045af89f5d2` и требуемый коммит `c3ae03b735dbde690bf1774fc3761846aff93248`. Более поздний потомок принимается только если blob-ы записи остаются равными blob-ам `3e433023`, а алгебраический checker по-прежнему отрицает физическое исполнение. Иное движение нужно перечитать. Receipt JSON не писался.
 
-## Чего нет в pin
+## Алгебраический checker не есть движок
 
-Файл `02_REGISTRY/research/certificates/a4d_golden_quantile_clock_source_check.py` отсутствует и на `cd077973b267dfd271d831c78dab2e9fe5b0c2fb`, и на голове `3e433023`. Зелёный CI этого pin не является прогоном отсутствующего сертификата. Receipt JSON не писался.
+Файл `02_REGISTRY/research/certificates/a4d_golden_quantile_clock_source_check.py` отсутствует на `cd077973b267dfd271d831c78dab2e9fe5b0c2fb` и на `3e433023`. На проверенном чтении он есть. Его печать ставит `physical_execution` равным `NOT PROVED`, адресный разрез остаётся `cut=lo[j]+p*(hi[j]-lo[j])`, а поздний null-rank блок сам говорит, что в нём нет quantile clock jet. Раздел 11 мемо часов оставляет физический закон часов и объёма невыбранным. Blob-ы закрытой записи, Fock, хронологии, joint-reduction, золотого адреса и золотой цены на `3e433023` и на проверенном чтении совпадают. Зелёный CI старого pin не является прогоном файла, которого там не было. Этот checker контролирует алгебру карты. Он не заменяет `split` и не делает `engine_executes_map` истинным.
 
 ## Положительный контроль самой карты
 

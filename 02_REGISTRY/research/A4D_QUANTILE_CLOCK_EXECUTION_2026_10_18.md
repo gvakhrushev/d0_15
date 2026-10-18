@@ -2,9 +2,9 @@
 
 **Status:** DRAFT candidate. `gr_derived = false`. No row was added to `claims.csv`. `D0-HODGE-LINKS-001` stays open. Draft #334 and `exp/*` were not edited. This comparison does not derive GR.
 
-Read-only pin: `origin/exp/a4d-joint-response-continuation-2026-10-16` at `3e4330235b9cea8adae9bb58a2b3e045af89f5d2` (2026-10-18). That tip contains `c3ae03b735dbde690bf1774fc3761846aff93248`. The quantile-clock memo blob is unchanged from that commit: `a5e1ad86319ec9449c863d6a78dff3985ffc2e01`.
+Audited read of `origin/exp/a4d-joint-response-continuation-2026-10-16`: `50a2729c22848694ccea4d25ed10ced475909759`. It contains `c3ae03b735dbde690bf1774fc3761846aff93248` and `3e4330235b9cea8adae9bb58a2b3e045af89f5d2`. A later descendant of this read is accepted only while the recording blobs stay equal to the `3e433023` blobs and the algebraic checker still denies physical execution. Any other move must be re-read. No receipt JSON is written.
 
-The cited checker `02_REGISTRY/research/certificates/a4d_golden_quantile_clock_source_check.py` is absent at `cd077973b267dfd271d831c78dab2e9fe5b0c2fb` and still absent at the tip. A green CI run of the pin is not a run of that missing file. No receipt JSON is written.
+The cited checker `02_REGISTRY/research/certificates/a4d_golden_quantile_clock_source_check.py` is absent at `cd077973b267dfd271d831c78dab2e9fe5b0c2fb` and absent at `3e433023`. It is present at the audited read. Its own print sets `physical_execution` to `NOT PROVED`, and its address cut remains `cut=lo[j]+p*(hi[j]-lo[j])`. The same file's later null-rank block says it has no quantile clock jet. Section 11 of the clock memo keeps the physical clock/volume law unselected. The closed-record, Fock, chronology, joint-reduction, golden-address, and golden-cost blobs are identical on `3e433023` and the audited read. A green CI run of an older pin is not a run of the file that was absent there. The checker is a map-algebra control. It is not the recording engine, and it does not make `engine_executes_map` true.
 
 ## Question
 
@@ -35,7 +35,7 @@ Scanned at the pin, with no new placement gate:
 - Golden address, `sources/d0_history_density_palatini_2026-10-16/check_density_palatini.py`: `split(leaf)` uses `axis = len(word) % 4`, F-width `p * width`, R-start `lo + p * width`, R-width `p**2 * width`. The function body has no density, `ε`, or Jacobian argument.
 - Golden cost, `certificates/a4d_native_golden_cost_refinement_check.py`: `weight(w) = p**cost(w)`.
 
-No scanned file contains a conditional-CDF, quantile, or `T_rho` placement. The executed sampler is therefore the fixed address rectangle `B_w` with `|B_w| = p^{cost}`.
+No scanned engine file contains a conditional-CDF, quantile, or `T_rho` placement. The algebraic checker named above is outside that scan and is not a placement primitive. The executed sampler is therefore the fixed address rectangle `B_w` with `|B_w| = p^{cost}`.
 
 The owned cocycle is left as written in `A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md`: `qρ(ω) = μ(ω) Tr(ρ Mω)`. This comparison does not set `qρ = μ`.
 
@@ -64,7 +64,7 @@ residual = lapse fixed-cell mass error eps*sin(2*pi*p)/(2*pi) = -eps*sin(pi*sqrt
 
 2. Set `qρ = μ` because `|B_w| = μ(w)`. The owned path weight is `qρ(ω) = μ(ω) Tr(ρ Mω)`. Reference cylinder volume is not that Born weight. The flag `qrho_identified_with_mu` stays false.
 
-3. Treat a green CI result on the pin as a run of `a4d_golden_quantile_clock_source_check.py`. The path is absent at `cd077973` and at `3e433023`. `ci_ran_absent_certificate` stays false.
+3. Treat a green CI result on an older pin, or the algebraic checker at the audited read, as execution of `T_ρ`. The path is absent at `cd077973` and at `3e433023`. At the audited read the file denies physical execution, its null-rank block has no clock jet, and the engine blobs are unchanged. `ci_ran_absent_certificate` stays false. `algebraic_checker_executes_map` stays false.
 
 4. Call `|B_w| = p^{cost}` the physical cell mass under the nonconstant lapse. For the first F-cell the physical mass is `p + ε sin(2π p)/(2π)`, not `p`. Agreement of the address volume with `μ(F)` does not cancel (Q7).
 

@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import check_quantile_clock_execution as clock
 
-PIN = "3e4330235b9cea8adae9bb58a2b3e045af89f5d2"
+AUDITED = "50a2729c22848694ccea4d25ed10ced475909759"
 
 
 def _fail(name: str) -> None:
@@ -54,14 +54,22 @@ def main() -> None:
         _fail("moving mass label")
     if result["owned_cocycle"] != "qρ(ω)=μ(ω) Tr(ρ Mω)":
         _fail("cocycle")
-    if result["pin_sha"] != PIN:
+    if result["audited_pin"] != AUDITED:
+        _fail("audited pin")
+    if result["pin_sha"] != clock._git("rev-parse", clock.PIN_REF).stdout.strip():
         _fail("pin")
     if result["pin_at_least"] != clock.PIN_AT_LEAST:
         _fail("ancestor")
-    if result["certificate_present_at_tip"] is not False:
+    if result["certificate_present_at_tip"] is not True:
         _fail("certificate tip")
+    if result["certificate_present_at_previous_pin"] is not False:
+        _fail("certificate previous")
     if result["certificate_present_at_cd077973"] is not False:
         _fail("certificate cd077973")
+    if result["algebraic_checker_executes_map"] is not False:
+        _fail("algebraic checker")
+    if result["engine_unchanged_since"] != clock.ENGINE_BASELINE:
+        _fail("engine blob")
     if result["ci_ran_absent_certificate"] is not False:
         _fail("ci")
     if result["marker_hits"] != []:
