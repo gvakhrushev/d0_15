@@ -5200,6 +5200,342 @@ admission и joint recovery с retained matter/preparation/clock rows,
 а не новый подбор эйнштейновского функционала. Raw#216 и физическое
 принуждение программы остаются отдельными обязательствами.
 
+### 6.59. Старый архив сохраняется буквально: полный all-block detector и его источник
+
+Обозначим h РЕАЛЬНУЮ уже записанную историю с Born weight π_h,
+а i — блоки старого оператора с defining-trace multiplicities m_i.
+Это разные индексы; π_h не отождествляется с m_i/K. Полный старый
+ρ_old может иметь любые CAR16/RIGHT/reference128 correlations.
+
+Есть положительная композиция без действий над этим архивом:
+исполнить I_old⊗V_det на независимом новом apparatus. Тогда ВСЯ
+старая density matrix, включая offdiagonal h blocks, неизменна, и
+
+    q(h,S)=π_h q_det(S),
+    max_(h,S)q=π_max g_det,
+    logφ DS_joint=−Dlogπ_max+D[−logdet(K*K)].       (13gd)
+
+Это полная совместная мода, не подставленная вместо неё conditional
+цена. При unique old winner h* первый член равен −Dπ_h*/π_h*.
+Для C² identity нужны также настоящие second jets этого фактора.
+Действительно fixed prefix law делает его константой, даже при ties
+старых labels. Causal future variations с фиксированным прошлым имеют
+такое допустимое прочтение. Они не исчерпывают joint variations
+upstream matter/preparation/observer/clock всей native задачи.
+
+**Как прочитать ПОЛНЫЙ trace, не выбирая случившийся h.** Если
+F_total=⊕_i(I_(m_i)⊗F_i), исполним новые detector banks для ВСЕХ i
+и всех actual integer m_i, независимо от исхода прошлой истории.
+Каждый bank имеет своё filled input и complete failure outputs.
+Это эквивалент exterior direct sum со ВСЕМИ cuts occupied, а не
+случайному выбору одного summand. При D=Σm_i rankP_i
+
+    q(h,{S_ia})=π_h ∏_(i,a)q_i(S_ia),
+    logφ S_joint=−logπ_max−2Dlogw₀+2J_r(F_total),
+    J_r(F_total)=Σ_i m_i J_r(F_i).                (13ge)
+
+Следовательно archive coexistence и реальные regular multiplicities
+сами по себе не мешают determinant source. Ни один старый record
+не стёрт или переименован scratch. Для general non-block F нужен
+один full-matrix bank, а не выдуманное разбиение. Все новые banks,
+их preparation/query/code/clock costs остаются частью аппарата;
+finiteness не доказывает, что native процесс выбирает execute-all.
+
+При h-controlled bank закон другой: max_h π_h g_h. Выигрывающая
+ветвь может смениться, а sampled history не порождает Σ_i logdet.
+Даже nondemolition control Σ_h Z_h⊗V_h сохраняет лишь pointer law;
+offdiagonal old block получает overlap <Ω,V_h'*V_hΩ> после trace
+apparatus. Общий I_old⊗V_det избегает этого изменения. Если новый
+detector действует непосредственно на conditional old state ρ_h,
+его source дополнительно содержит Dρ_h с настоящим normalizer.
+
+Новый literal128-output scalar LCU control и полный old GHZ state
+проверяют joint factorization вместе с RIGHT/ref correlations.
+При π₀(x)=3/5+x/10 пропущенный old MAP source вx0 равен−1/6
+в natural-log units. Actual two-bank full mode отличается от
+sampled-h mode. Если Book weights=w=𝒩q, к цене logφ S_joint в(13ge) добавляется
+−log𝒩, а к source logφ DS_joint в(13gd) — −Dlog𝒩. Born normalization
+не доказывает Book 𝒩≡1.
+
+Существенная граница: independent product dynamics не читает
+неизвестную старую Ψ. V_det должен получить свой actual operator/
+code/input query; это не процедура вычисления field coefficients
+из одного неизвестного старого state. Теперь снимается именно
+archive-coexistence premise, а не вся native field/action стрелка.
+
+### 6.60. Настоящий C² input-source у одного фиксированного native слова
+
+Book01 разрешает continuous FORMALISM states при finite operational
+readout. Countability finite gate words не запрещает гладкий ответ
+одного fixed detector на moving unknown input. Это отличается от
+подстановки разного discrete word в каждой field point.
+
+Используем УЖЕ принадлежащую exact identity
+R=(I⊗G)CX(I⊗G*)CX=diag(I,G²). Её квадрат есть fixed W=diag(I,G⁴)
+на ВСЕХ input columns. Для actual CAR occupation projector N_r,
+identity на остальных grades и reference128,
+
+    W=(I−N_r)⊗I_flag+N_r⊗G⁴,
+    E_good=I−δN_r, E_bad=δN_r,
+    δ=sin²(4θ)=16p⁹=1−(1−2p⁶)²<1/2,
+    q_good=1−δf, f=Tr(ρN_r), q_bad=δf.           (13gf)
+
+Неизвестные amplitudes НЕ превращаются в управляющий угол. Это
+literal G/CNOT word, inverse уже реализован retained basis-one echo;
+forward-only нужны4G+8CNOT с его actual supplied control. Для любого
+normalized full ρ один и тот же flag-good — unique POINTER mode.
+Ни programme state, ни quantum environment не удалены. W сохраняет
+occupation probabilities и RIGHT marginal, но может изменить старые
+programme coherences после trace flag; весь joint state остаётся
+unitary. Не утверждается неизменность старого density как в(13gd).
+
+На k независимо ПРЕДОСТАВЛЕННЫХ подготовках и k fresh flags
+
+    S_mode=−k log(1−δf)/logφ,
+    DS_mode=kδ Df/[(1−δf)logφ],
+    D²S_mode=(k/logφ)[δD²f/(1−δf)
+                        +δ² Df Df/(1−δf)²].      (13gg)
+
+Все true preparation/whitening jets входят в Df. Никакого unknown
+state cloning здесь нет: independence и сама повторная preparation
+являются resource law, который должен быть предоставлен исполнением.
+Occupation observable не объявляется scalar curvature или kinetic
+matter vertex. Для потребления(13ga) требуется его РЕАЛЬНАЯ field
+связь с теми же геометрическими operands.
+
+**Coherent sample mixture также сохраняет моду.** Для fixed word
+Σ_αP_α⊗W_α и commuting sample projectors complete pointer effect
+I_programme⊗Π_S даёт q_S=Σ_αTr(P_αρ)q_S(α). Full programme state
+не dephased: cross terms исчезают лишь в этом pointer probability.
+Если q_other(α)≤r_max g_α с одним r_max<1 и общим good label,
+то q_other≤r_max E g_α. Цена равна −log E g_α, а не E(−logg_α).
+Повторное использование одного sample даёт E(g_α^k), independent
+banks дают (E g_α)^k. Их sources вообще различны.
+
+History cut здесь действительно существенен. Если programme bit
+также emitted, при f=1/2 joint outcomes имеют probabilities
+1/2,(1−δ)/2,δ/2, и полная joint mode равна1/2. Pointer-good mass
+из(13gf) равна1−δ/2. Retaining quantum work доказывает no erasure,
+но не отождествляет pointer frame с полной Book microhistory.
+
+Это снимает необходимость continuous angle oracle для указанного
+настоящего input observable. Оно не снимает programming obstruction
+для deterministic clean unitary processor: inner products конечных
+nonorthogonal programme states заставляли бы R_g*R_h быть scalar.
+Correlated recorded effects и probabilistic inputs — другой interface.
+
+### 6.61. Полная normalized Hodge input section, fixedRIGHT128 и actual upstream source
+
+Периодическую Hodge пару можно поднять в настоящую full-CAR
+подготовку, удержав ОБА current/clock readings, а не только norm.
+В исходном16-mask rest basis на открытом disk ψ₀²+ψ₄²<1−p
+
+    m₀=√p|1>+ψ₀|0>+ψ₄|15>
+                +√(1−p−ψ₀²−ψ₄²)|14>.            (13gh)
+
+Mask14 — уже существующая spatial3-form. Для literal native
+α_i=(c₀+c₀*)(c_i−c_i*) compressed operator на masks{0,1,14,15}
+равен0: ни одна пара этих masks не отличается ровно bits{0,i}.
+Поэтому ||m₀||=1, <m₀,α_i m₀>=0 для всехi, P₁m₀=√p e₀.
+Полный current restline и nonzero first-grade clock постоянны
+при любых phase/radius variations Hodge pair. 2-form mask3 вместо14
+дала бы current2ψ₀·spectator: один P₁ не обеспечивал этого свойства.
+Section(13gh) есть smooth right inverse обоих scalar/top projections:
+независимые compact-supported δψ₀,δψ₄ имеют genuine norm/current-
+preserving lifts, не только касательные к circular wave ansatz.
+Другие grades остаются во всём variational carrier.
+
+Для каждого L≥max(8,2m+1), S=L⁴ выберем128 distinct старых site
+characters f_a(j)=S⁻¹/² exp[2πi(k_vj_v+k_xj_x+k_yj_y)/L],
+k_u=0,k_v=0..7,k_x,k_y=0..3. Тогда
+
+    C_(j,mask;a)=f_a(j)m₀,j(mask)/√128,
+    C*C=I128/128,
+    ρ_CAR(j)=|m₀,j><m₀,j|/S.                     (13gi)
+
+Полный reference128 сохранён. Более сильно, product старой AF
+purification и ref НЕ требуется. Пусть σ_R — вся ЗАДАННАЯ admitted
+joint density на oldAF_RIGHT⊗reference128, Tr_AF σ_R=I128/128,
+с произвольными quantum AF/ref correlations внутри центральных блоков.
+В actual GNS H_AF=⊕_i L_i⊗R_i имеем dimL_i=dimR_i; в refined
+right-module multiplicities также достаточно места. Поэтому существуют
+blockwise isometries T_i:R_i→L_i. Если B:ref128→site — Fourier
+isometry из(13gi), а S_m вставляет normalized m₀,j на каждом site, то
+
+    V=S_m(T⊗B), V*V=I, C=V√σ_R,
+    C*C=σ_R,
+    ρ_CAR(j)=|m₀,j><m₀,j|·b_j(Tr_AF σ_R)b_j*
+            =|m₀,j><m₀,j|/S, b_j=<j|B.           (13gi′)
+
+Здесь actual RIGHT algebra есть ⊕_i B(R_i): matching-block GNS
+обязательно требует [σ_R,P_i]=0 по AF ЦЕНТРУ. Cross-center matrix
+entries на большем full tensor carrier не являются такими данными;
+их не сохраняют ценой молчаливого расширения носителя. Это условие
+не исключает никакую quantum AF/ref entanglement ВНУТРИ блока.
+Tiny exact control использует faithful entangled σ=I4/8+P_Bell/2,
+ref marginal I2/2, и проверяет C*C=σ и оба local CAR blocks. Это
+малый пример общей формулы; сам reference128 не заменён наref2.
+
+Если I_norm*I_norm=G — ACTUAL native whitening с site density, то
+Ψ=I_norm⁻¹C имеет Ψ*GΨ=σ_R; все moving I_norm jets остаются.
+Это существование НОВОГО compatible state, а не операция, сохраняющая
+заданный старый LEFT vector/архив, и не PREP admission каждого complex
+Fourier input одним finite golden word. Сохранность всего old archive
+у fresh apparatus в(13gd) остаётся отдельной точной теоремой.
+
+При независимо заданном raw frame F, q=FηF* и
+D_edge=F_source M_edge F_target⁻¹ получается raw tuple с
+D_edge q_target D_edge*=q_source. Full exterior covariance переносит
+current/clock line. Physical geometric coframe получается прежним
+operator readout со всеми density/clock factors. Он не выведен
+из(13gh): F остаётся
+самостоятельной native переменной. Literal Lean определяет
+solderLegVector(e)=η·rawSolderRow(e)^T, а затем C(v(e)) действует на
+pulled difference материи. На owned flat baseline e=0, constant m и
+U=I имеем v_r=basis_r≠0, но D_r m=0. Поэтому добавлять закон e=Dm
+и условие T=Rm было бы ошибкой. В другом matter-clock endpoint
+comparator новая m₀(u) даёт readout rank≤1, а не4D metric; этот старый
+компаратор не подставляется вместо CAR raising/operator readout.
+
+**Цена старого исполнения действительно остаётся.** На literal FLAT
+old-v8 full16 symbol Δ(k)=[z(k)*G z(k)]I16,
+G=(d−o)I+o11*, d,o>0, z_r=(exp(ik_rh)−1)/h, section(13gi)
+с ψ₀=a_h cosκu,ψ₄=a_h sinκu даёт sideband identity
+
+    [Δ(k+κe_u)+Δ(k−κe_u)]/2−Δ(k)
+      =λ_u[d+oΣ_(r≠u)(1−cos k_rh)],
+    λ_u=4sin²(κh/2)/h².
+
+Для product AF/ref special case(13gi), при128 указанных characters
+иL8 среднее Σ равно5/2, откуда
+
+    R_in=E_transverse+a_h²λ_u(d+5o/2),
+    ∂_(a_h)R_in=2a_hλ_u(d+5o/2)>0.               (13gj)
+
+При fixed geometry/operator и доказанном current/clock-preserving
+radius tangent источники H_old и J_old равны0. Поэтому эта FLAT
+fullRIGHT input section не является совместным root старого H+J+R.
+Это настоящий upstream control без frozen reference или observer;
+он не переносится автоматически на curved pp Δ со spin/frame terms
+или на все correlated σ_R из(13gi′).
+Нужен actual curved full source, а не предположение о его исчезновении.
+
+На(13gi) scalar coefficients математически читаются из
+S Reρ_(0,1)/√p и S Reρ_(15,1)/√p. Это не бесплатное извлечение
+unknown amplitudes из одного specimen. Один retained CODE должен
+снабдить эту PREP и те же coframe/scalar queries, либо нужен реальный
+input-effect processor со всеми копиями, records и source terms.
+
+### 6.62. Из полинома исходного detector в фиксированный finite-copy effect
+
+Следующая теорема даёт более общий input consumer, чем(13gf), без
+continuous unitary programming. Она НЕ подставляет новый F. Пусть
+ACTUAL supplied state ρ размерности D действительно кодирует тот же
+native feedback F(ρ), entries polynomial degree≤s, и 0≤F(ρ)≤I
+для ВСЕХ density matrices. Для прежнего detector
+
+    g(ρ)=det(w₀I−w₁F(ρ))²,
+    m=(w₀−w₁)^(2d)≤g≤M=w₀^(2d), 0<m≤M<1,
+    degree(g)≤k=2ds.                             (13gk)
+
+Это load-bearing encoding/global-bound premise, пока не доказанная
+для inverse-coframe/volume/cell operands(13ga). Она не заменяется
+bound лишь на выбранном smooth chart или придуманным состоянием.
+
+**Конструкция effect.** Запишем g через x_j=Tr(A_jρ) и homogenize
+каждый monomial тензорными factors A_j на разных копиях, padding I
+до degree k и усреднением всех permutations. Получаем known symmetric
+Hermitian H_k с Tr(H_kρ^⊗k)=g и computable ||H_k||≤B, где B есть
+сумма |coefficients|·products||A_j||. H_k может быть НЕ positive.
+На N≥k copies положим E_N=среднее H_k по всем k-subsets[N].
+Для IID inputs Tr(E_Nρ^⊗N)=g EXACT при каждомN.
+
+Для полного operator positivity применим
+[CKMR, Theorem II.7, p.4](https://arxiv.org/pdf/quant-ph/0602130#page=4).
+Его norm convention — half ordinary trace norm, p.2. В обычной норме
+любая permutation-invariant N-state имеет k-marginal на расстоянии
+≤4D²k/N от mixture σ^⊗k, где σ пробегает ВСЕ density matrices.
+Symmetrize любой eigenvector E_N и применим это к expectation H_k.
+Новая собственная inference даёт на ВСЁМ D^N carrier
+
+    spec(E_N)⊂[m−ε_N,M+ε_N], ε_N=4BD²k/N,
+    N>8BD²k/min(m,1−M) ⇒0<E_N<I.                 (13gl)
+
+Так построен FIXED positive effect, exactly reproducing прежний g
+на независимо supplied unknown inputs, без state tomography/clone/
+angle oracle. Цена — фактическое N и D^N work; efficient execution
+не следует, floor m может быть exponentially small in d.
+
+**Полный pointer mode.** Fixed Naimark unitary имеет blocks
+[[√E_N,−√(I−E_N)],[√(I−E_N),√E_N]]. На good flag seed registers
+остаются blank. На bad flag исполняются T exact native controlledG²
+coins с weights p⁶ и b=4p³<1; все seed histories retained. Выберем
+T так, чтобы (1−μ)b^T<μ, μ=m−ε_N>0. Тогда один good POINTER label
+имеет вероятность g на IID inputs, любой bad label≤(1−g)b^T<g.
+Mode −logg/logφ получена из actual complete pointer law, без удаления
+неудач. На arbitrary correlated N-input тот же spectral floor
+сохраняет моду, но good probability есть Tr(E_Nσ_N), а не g marginal.
+Дополнительное измерение data/programme изменяет fine-history mode;
+Book cut, raw normalizer и все preparation records остаются явными.
+Failure-refinement есть реальная дополнительная программа со своей
+ценой, не selector обязательной физической динамики.
+
+Naimark matrix фиксирована для всей неизвестной input family. Для
+real E_N существует прежний constant real Golden compiler; это
+approximate finite word, не обещание exact gate synthesis. Complex
+effects требуют своего actual complex interface; complex input states
+сами по себе не запрещены real detector. Если actual effect error≤η,
+при trace-norm input jets M₁,M₂ multilinearity даёт
+
+    |q−g|≤η,
+    ||D(q−g)||≤ηNM₁,
+    ||D²(q−g)||≤η[NM₂+N(N−1)M₁²].                (13gm)
+
+Это настоящие C² derivatives одного fixed word на moving inputs,
+не derivative выбранного circuit index. При η≤m/2
+||Dlogq−Dlogg||≤2ηNM₁/m+2||Dg||η/m². Второй jet получается тем же
+дифференцированием, сохраняя N²,m⁻¹ и physical source normalization.
+Exact bad seeds удерживают mode gap Δ=μ−(1−μ)b^T при
+η(1+b^T)<Δ. Никакая новая константа в action не вставлена.
+
+**Own preparation rows не сокращены до диагонали.** Symmetry E_N
+даёт на IID point D_jQ[X]=(1/N)Dg[X] для каждой independently
+supplied copy и trace-zero tangent X. Поэтому все такие first rows
+исчезают при diagonal stationarity. Но unrestricted entangling rows
+могут остаться. Exact control H=I/2+(Z⊗Z)/4, input|+>⊗|+> имеет
+нулевые IID и все independent-copy first rows. На normalized
+Ψ(t)=cos t|++>+sin t|--> вероятность имеет derivative1/2; после
+одного bad seed good — strict mode, а его natural-log source=−1.
+Внешние RIGHT/ref могут оставаться spectators. Поэтому ни наличие
+fixed effect, ни IID C² limit не доказывает full joint-root recovery.
+
+Новый bounded witness проверяет механизм на диагностическом
+g=2/5+Trρ²/2: H₂=2I/5+SWAP/2 имеет eigenvalue−1/10, а полный
+subset lift H₃ на всех8 directions имеет spectrum{2/5,9/10} и ТО ЖЕ
+ожидание на каждом complex qubit state. Это не новый native F или
+физическая цена. Проверены fixed16×16 Naimark, все Bloch C² jets,
+copy rows и entangling counter. Старые suites не повторяются.
+
+**Что теперь надо замкнуть.** Fixed N-copy effect всегда polynomial
+in supplied ρ; Dρ[V]=0 обязательно влечёт Dg[V]=0. Native coframe
+и matter независимы, поэтому один m/current input не обязан кодировать
+всю geometry/link family. Нужно предъявить ONE actual encoding всего
+нужного tuple/code/query, доказать(13gk) либо controlled nonpolynomial
+approximation, определить полный Book history/price и solve admitted
+preparation/clock/old-source rows. Это constructive замена именно
+unknown-input oracle premise; физическое принуждение GR и raw#216
+не следуют из универсальной возможности измерять полиномы.
+
+Concurrent disjoint result581374fe,
+[golden-mode field-pullback boundary](A4D_GOLDEN_MODE_FIELD_PULLBACK_BOUNDARY_2026_10_18.md),
+уже даёт точную проверку этой последней стрелки: U₀(x)=G и
+U₁(x)=G R(x) имеют один reference gate/cut/detector, но разные
+ненулевые/нулевые sources на genuine nongauge metric tangent. Это
+два kinematic smooth germs, не две admitted физические D0 программы.
+Следовательно сама golden-mode формула не определяет её native
+field-to-return pullback. Нужен actual independently owned rule и
+refinement, а не ещё один вариант detector.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

@@ -1,5 +1,54 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — immutable archive, genuine unknown-input source and full preparation
+
+[Strategic §7.20](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.59–6.62](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+construct a fresh execute-all-blocks detector preserving the ENTIRE old
+archive/data/RIGHT/reference density. Full mode is past-mode times the
+product of bank modes with true integer trace multiplicities. Fixed past
+gives exactly the determinant source; upstream past and raw Book
+normalization sources remain. Sampled old history is a different price.
+
+One fixed G/CNOT word now supplies a genuine smooth unknown-input
+source: controlledG4 reads actual CAR occupation N_r with effect
+I−16p9 N_r, unique good pointer mode and exact C2 input derivatives.
+No unknown amplitude is programmed into an angle. More generally, a
+globally strictly bounded polynomial of an ACTUAL supplied density has
+a fixed finite-copy positive effect with the SAME probability exactly;
+the subset-averaging/de Finetti construction and constant-compiler
+input/source budgets are explicit. This consumes the old detector g
+only after its true native encoding/global bounds are proved. No new
+F or physical action is chosen. Pointer-only and emitted-programme
+full-history modes are explicitly different.
+
+The Hodge scalar/top wave also has an explicit normalized full16 input
+with constant actual current/clock and exact FULL joint RIGHT_AF/ref128
+marginal, including arbitrary within-block AF/ref quantum correlations.
+It is a new compatible state; it does not preserve a specified old LEFT
+archive or establish autonomous PREP admission. It admits both
+independent scalar variations. It does not supply the
+independent native coframe or its query code. On a literal flat old-v8
+amplitude tangent its input Rayleigh source is strictly positive while
+old heat/feedback sources vanish, so the whole old price is not solved.
+The curved full source must be evaluated on its actual own domain.
+
+The next consumer is ONE actual retained-code/operator/input diagram
+for the complete(q,D,b,m) tuple, both old queries and full physical
+Book history/weight, followed by all admitted preparation/clock/source
+rows. Diagonal or independent-copy stationarity does not cover
+entangling preparation: a new exact counter retains that distinction.
+Further arbitrary detector design cannot select GR. Concurrent581374fe's
+[exact field-pullback boundary](A4D_GOLDEN_MODE_FIELD_PULLBACK_BOUNDARY_2026_10_18.md)
+is now consumed: identical reference gate/cut/detector does not determine
+the source along a genuine metric tangent without the actual native
+field-to-return germ. Its kinematic alternatives are not physical D0
+solutions. The finite root, native forcing and original raw#216
+obligations remain OPEN. Strategic§7.20 also consumes the existing
+conditional bounded32-word field/source map and the literal executor's
+matter-only type. The missing native encoder is distinguished from an
+already explicit geometric matrix family; that family is not rederived.
+
 ## 18 October 2026 — a finite golden determinant MODE and its actual history price
 
 [Strategic §7.19](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

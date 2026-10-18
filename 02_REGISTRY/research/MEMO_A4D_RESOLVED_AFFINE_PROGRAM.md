@@ -23,7 +23,38 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-The current whole-price consumer is now
+Current operational consumer:
+[strategic §7.20](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.59–6.62](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+A fresh common execute-all detector preserves all old archive/ref
+correlations and gives the full trace determinant with an explicit
+past-mode/Book-normalizer source. A literal fixed G/CNOT word has a
+true C2 unknown-input occupation source. The finite-copy polynomial
+effect theorem gives a broader fixed-input route, conditional on the
+SAME original g being globally encoded by the supplied state. No
+continuous amplitude-to-angle oracle or new physical price is added.
+
+The normalized Hodge input now has constant full CAR current/clock,
+all16 grades retained and exact FULL joint RIGHT_AF/ref128, including
+within-block quantum correlations. This new compatible state does not
+preserve a specified old LEFT archive or establish PREP admission.
+It does not determine the independent coframe, and a literal flat old-v8 tangent still has a
+positive upstream Rayleigh source. Complete pointer history, quantum
+work, actual past and entangling preparation normals stay distinct.
+Continue with ONE actual retained-code/operator/input map for the whole
+tuple and both old queries, full Book price and its own joint roots.
+The general measurement construction means another family of designed
+detectors cannot substitute for physical programme/source selection.
+The concurrent [field-pullback boundary](A4D_GOLDEN_MODE_FIELD_PULLBACK_BOUNDARY_2026_10_18.md)
+at581374fe is consumed here: two same-base smooth germs have different
+sources on a genuine metric tangent, locating the missing native rule
+without asserting two physically admitted programmes.
+The existing [complete field-source §0.3](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+already supplies the conditional bounded32-word operator/source map.
+Its native code admission and the independent scalar-input query remain
+separate; the current matter-only fixed-geometry executor does not supply them.
+
+The preceding golden-mode consumer is
 [strategic §7.19](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source §§6.56–6.58](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The full linked Rayleigh/control Euler retains the signal bound and

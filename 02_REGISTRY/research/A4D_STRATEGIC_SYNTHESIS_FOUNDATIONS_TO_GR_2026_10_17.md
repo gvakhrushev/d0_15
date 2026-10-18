@@ -2243,6 +2243,92 @@ max_(h,S)q(h,S) со всеми его источниками. Immutable interme
 logdet-функции, но не замена полной H+J+R и не утверждение закрытой
 физической ОТО. Original raw#216 остаётся своим сравнением.
 
+### 7.20. Полная история и настоящий вход: какие operational premises уже сняты
+
+Входf28d4240, previous goal turn PROGRESS. Новый consumer
+[full-source §§6.59–6.62](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+снимает три конкретных препятствия без очередной геометрической модели.
+
+**Архив.** Общий fresh detector I_old⊗V оставляет ВСЮ old density
+matrix с CAR/RIGHT/ref correlations неизменной. Если он исполняет
+все настоящие matrix blocks i с integer defining multiplicities m_i,
+полная mode price равна
+logφ S=−logπ_past,max−2Dlogw₀+2J_r(⊕_iI_(m_i)⊗F_i).
+Реальная старая история h и operator index i различны; sampled-h
+detector даёт max_hπ_hg_h, а не trace. При genuinely fixed past
+источник детерминанта переносится точно. Upstream preparation и
+Book raw normalizer сохраняют −Dlogπ_max−Dlog𝒩, не overhead0.
+
+**Fixed native word может иметь true input source.** ControlledG⁴
+на actual occupation N_r имеет good effect I−16p⁹N_r и unique good
+POINTER mode для любого неизвестного full-CAR/ref input. Его C²
+source идёт от TrρN_r, без чтения amplitudes как gate angles.
+Все quantum outputs сохранены; programme remains quantum work.
+Если этот programme также emitted, полная joint mode меняется.
+Следовательно реальный Book history cut — содержательная часть
+физической теоремы, а не имя регистра.
+
+Общий finite-copy construction теперь устраняет именно unknown-
+input oracle, если SAME native detector g действительно globally
+bounded polynomial функции ACTUAL supplied ρ. Symmetric monomial
+operator H_k, усреднённый по k-subsets большого N, становится
+positive effect на ВСЁМ carrier по finite de Finetti bound; его
+IID expectation равен исходному g EXACT при конечномN. Один fixed
+Naimark/Golden approximation тогда имеет настоящие input C² jets,
+с явными N² и positive-floor budgets. Не вводится новый F/price.
+Но actual encoding всего(q,D,b,m), global bound, copies, real/complex
+gate interface и полный resource/source ещё нужны. Возможность
+измерить полином не выбирает именно Einstein динамику; больше
+конкурирующих programmable prices строить ради этого не требуется.
+
+**Подготовка.** Explicit section на old masks{0,1,14,15} держит
+norm1, actual full-CAR current restline и P₁ clock√p.128 old Fourier
+characters дают exact C*C=I128/128 и genuine независимые scalar/top
+tangent lifts, не только wave ansatz. Более общий blockwise lift
+C=V√σ_R сохраняет ВЕСЬ заданный admitted RIGHT_AF/ref joint state,
+с arbitrary correlations внутри actual AF central blocks. Никакого
+product AF/ref предположения здесь нет. True whitening сохраняется.
+Это новое compatible state, не операция сохранения заданного old LEFT
+архива и не автономный native PREP.
+Это непустой input domain для уже построенной Hodge wave, но не
+автономная PREP/code-to-query реализация. В native definitions coframe
+F и matter независимы; current section не восстанавливаетF.
+На literal FLAT old-v8 radius tangent даёт
+∂_a_hR_in=2a_hλ_u(d+5o/2)>0, DH_old=DJ_old=0.
+Поэтому даже эта exact norm/clock/reference подготовка не решает
+весь old H+J+R. Curved pp source этим не заменяется.
+
+**Следующая несущая задача стала уже.** Нужен ONE retained-code/
+operator/input map, снабжающий именно полный tuple, эту preparation
+и ОБА actual star/scalar operands на том же field domain. После
+этого — истинная Book history/weight/normalizer и все source rows
+этой программы. Symmetric finite-copy effect решает independent-copy
+first rows при diagonal stationarity, но exact entangling counter
+показывает, почему полный preparation normal нельзя удалить.
+Не запускать новую серию detector designs как замену этой стрелки.
+Finite full-price stationarity/refinement, physical forcing и raw#216
+остаются теми же end-to-end обязательствами.
+Concurrent [exact field-pullback boundary](A4D_GOLDEN_MODE_FIELD_PULLBACK_BOUNDARY_2026_10_18.md)
+из581374fe уже показывает source-visible различие двух smooth germs
+с одинаковым base gate/cut/detector на genuine metric tangent. Это
+не physical nonuniqueness: оба native admissions ещё надо доказать.
+Он независимо локализует именно missing field-to-return/refinement rule.
+
+Последняя узкая проверка этой стрелки не требует нового operator search.
+[Complete field-source §0.3](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+УЖЕ строит одну и ту же literal32-word family, intertwining и все observer/
+whitening jets на bounded stored-adjoint классе. Её primitives названы
+условной v8 программой; native admission не следует из их матричного
+существования. При fixed geometry/observer это operator family, не decoder
+независимой matter preparation C для нового scalar query. В реальном
+[closed-record executor](certificates/a4d_native_closed_record_engine.py)
+State хранит matter16[Golden], Q=I и q=η заданы, а step читает только знак
+first grade внутри certified collinear sector. Он не содержит retained
+rawF/D/b register или star/scalar/neighbor decoder. Это точная граница
+этого исполнителя, не общий D0 no-go. Следующий consumer должен соединить
+УЖЕ построенный conditional operator map с реально admitted кодом и его
+полной ценой, сохранив отдельный настоящий scalar-input source.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

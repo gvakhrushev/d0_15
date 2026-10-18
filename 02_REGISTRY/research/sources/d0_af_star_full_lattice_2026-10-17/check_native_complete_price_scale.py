@@ -7,6 +7,7 @@ receipt is pinned and reused, never replayed. Default output is read-only.
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 import re
 from itertools import permutations, product
@@ -1139,6 +1140,406 @@ def adjacent_even_exterior(root=None):
       'scope':'Exact structure for actual adjacent-even word; constant target approximation only unless a smooth native local-query interface is supplied. No exact odd-G lift, no old LCU sign/control identity, no immutable record erasure, no physical MDL/Info selection or GR closure.'}
     return result
 
+def fresh_detector_archive_composition(root=None):
+    import sympy as sp
+    import numpy as np
+    p,f,x=sp.symbols('p f x',real=True)
+    checks={}
+    def ck(name, value):
+        checks[name]=bool(value)
+        if not checks[name]: raise AssertionError(name)
+    def red(v):
+        return sp.rem(sp.Poly(sp.expand(v),p),sp.Poly(p*p+p-1,p)).as_expr()
+    # Actual scalar old query U_f, P=|0><0|, Q=|1><1| has F=f.
+    # Three fresh flag banks retain its complete V_F input column.
+    # Nonzero old/flag rows:0,9,2,11 in data/in/mid/out bit order.
+    q=[sp.Integer(0)]*128
+    old_rows=(0,9,2,11)
+    for coin in range(8):
+        j=bin(coin).count('1')
+        weight=p**(12-j) # (p^3 * (G^tensor3)_(111,coin))^2
+        values=[weight*(1+f)**2,weight*f*(1-f),weight*(1-f)**2,weight*f*(1-f)]
+        if coin==0: values[0]=(1-p**6*(1+f))**2
+        for row,value in zip(old_rows,values): q[16*coin+row]=value
+    g=(1-p**6*(1+f))**2
+    ck('actual_scalar_LCU_all_128_pointer_rows_retained',len(q)==128 and sum(v!=0 for v in q)==32)
+    ck('scalar_old_query_three_fresh_flag_column_normalized',sp.expand(f*f+(1-f)**2+2*f*(1-f))==1)
+    ck('fresh_pointer_probabilities_normalize_exactly',red(sum(q)-1)==0)
+    ck('full_pointer_first_source_normalizes',red(sp.diff(sum(q),f))==0)
+    ck('selected_complete_mode_weight_is_owned_K_squared',q[0]==g)
+    # The mode property is CONSUMED from the prior lemma, not reproved here.
+    p0=(math.sqrt(5)-1)/2
+    def probs(f0):
+        return np.array([float(v.subs({p:p0,f:f0})) for v in q])
+    def amplitudes(f0):
+        out=np.zeros(128)
+        v=np.array([f0,math.sqrt(f0*(1-f0)),1-f0,-math.sqrt(f0*(1-f0))])
+        for coin in range(8):
+            t=p0**(6-bin(coin).count('1'))*math.sqrt(p0)**bin(coin).count('1')
+            for k,row in enumerate(old_rows):
+                out[coin*16+row]=(1. if coin==0 and k==0 else 0.)-t*(v[k]+(1. if k==0 else 0.))
+        return out
+    q0,q1=probs(.25),probs(.75)
+    amp=amplitudes(.25)
+    ck('actual_signed_pointer_column_matches_all_probability_rows',np.max(abs(amp*amp-q0))<1e-13)
+    ck('actual_pointer_column_has_unit_norm',abs(np.sum(amp*amp)-1)<1e-13)
+    # Full old archive+data+RIGHT+reference state. Keep offdiagonal
+    # GHZ correlations rather than relabeling or dephasing the archive.
+    r0=.6
+    psi=np.zeros(16)
+    psi[0],psi[15]=math.sqrt(r0),math.sqrt(1-r0)
+    rho=np.outer(psi,psi)
+    A=np.einsum('i,j->ij',psi,amp)
+    reduced=np.einsum('ik,jk->ij',A,A)
+    ck('fresh_common_detector_preserves_full_old_density_including_RIGHT_reference',np.max(abs(reduced-rho))<1e-13)
+    joint=np.zeros((2,128))
+    for h in range(2): joint[h]=np.sum(A[h*8:(h+1)*8,:]**2,axis=0)
+    ck('unmodified_archive_joint_readout_factors_exactly',np.max(abs(joint-np.array([r0,1-r0])[:,None]*q0[None,:]))<1e-13)
+    ck('common_detector_full_history_mode_includes_old_past_factor',abs(joint.max()-r0*q0[0])<1e-13)
+    # A product detector uses both operator blocks, irrespective of which
+    # old h happened.  Only 2x128x128 outcomes, not any old replay.
+    bank_law=np.einsum('i,j->ij',q0,q1)
+    full=np.einsum('h,ij->hij',np.array([r0,1-r0]),bank_law)
+    ck('both_fresh_banks_full_joint_law_normalizes',abs(np.sum(full)-1)<1e-13)
+    ck('execute_all_blocks_joint_mode_is_past_mode_times_product',abs(np.max(full)-r0*q0[0]*q1[0])<1e-13)
+    ck('sampled_archive_control_is_different_from_product',abs(max(r0*q0[0],(1-r0)*q1[0])-np.max(full))>1e-3)
+    ck('marginal_archive_good_mass_is_arithmetic_mixture',abs(r0*q0[0]+(1-r0)*q1[0]-q0[0]*q1[0])>1e-3)
+    # Operator trace multiplicity is integer bank count, not Born weight.
+    r=sp.Rational(3,5)+x/10
+    f0=sp.Rational(1,4)+x/11
+    f1=sp.Rational(3,4)-x/13
+    g0=g.subs(f,f0)
+    g1=g.subs(f,f1)
+    m1=2
+    mode=r*g0*g1**m1
+    logsrc=lambda z: sp.diff(z,x)/z
+    ck('full_joint_mode_source_has_exact_old_history_debt',sp.factor(-logsrc(mode)+logsrc(r)+logsrc(g0)+m1*logsrc(g1))==0)
+    ck('fixed_past_gives_exact_sum_of_detector_sources',sp.factor(-logsrc(mode/r)+logsrc(g0)+m1*logsrc(g1))==0)
+    ck('moving_past_source_at_base_is_minus_one_sixth',(-logsrc(r)).subs(x,0)==-sp.Rational(1,6))
+    ck('sampled_history_drops_unexecuted_operator_block_source',sp.factor(-logsrc(r*g0)+logsrc(mode)-m1*logsrc(g1))==0)
+    ck('whole_trace_determinant_is_integer_multiplicity_product',sp.cancel(g0*g1**m1-(1-p**6)**(2*(1+m1))*(1-(p**6/(1-p**6))*f0)**2*(1-(p**6/(1-p**6))*f1)**(2*m1))==0)
+    # Conditional detector can change which old history wins. Neither
+    # pointer mass nor any old label is erased in this control.
+    close_past=np.array([.51,.49])
+    cond=np.array([probs(1.)[0],probs(0.)[0]])
+    ck('conditional_detector_can_switch_old_MAP_branch',int(np.argmax(close_past))==0 and int(np.argmax(close_past*cond))==1)
+    # A read-only control on a coherent h register preserves its pointer
+    # but need not preserve the complete old density after marginalization.
+    a1=amplitudes(.75)
+    overlap=float(amp@a1)
+    ck('different_archive_controlled_detectors_can_change_old_offdiagonals',abs(overlap-1)>1e-5)
+    rawN=1+x
+    ck('Book_raw_normalizer_is_additional_source',sp.factor(-logsrc(rawN*mode)+logsrc(mode)+logsrc(rawN))==0)
+    return {'status':'PASS','checks':len(checks),'check_results':checks,
+      'fixture':{'actual_old_query':'U_f=[[sqrt(1-f),-sqrt(f)],[sqrt(f),sqrt(1-f)]]; P=diag(1,0), F=f',
+                 'fresh_complete_pointer_rows_per_bank':128,'old_archive_data_RIGHT_reference_dimension':16,
+                 'past_probabilities':[.6,.4],'conditional_good_weights':[float(q0[0]),float(q1[0])],
+                 'parallel_two_bank_full_joint_mode':float(np.max(full)),
+                 'sampled_history_full_joint_mode':float(max(r0*q0[0],(1-r0)*q1[0])),
+                 'moving_past_additional_mode_source':-1/6,
+                 'conditional_control_offdiagonal_overlap':overlap,
+                 'close_past_conditional_mode_products':list(close_past*cond)},
+      'scope':'Exact causal composition of already supplied fresh detector. Does not admit physical fields/queries/resources, identify old history labels with trace addresses, set raw Book N=1, freeze upstream preparation or replace full H+J+R.'}
+
+def native_collective_mode(root=None):
+    checks=[]
+    def ck(name,test):
+        if not bool(test):raise ArithmeticError(name)
+        checks.append(name)
+    a,p,f,c,k=s.symbols('a p f c k',real=True)
+    ideal=s.groebner([a*a-p,p*p+p-1],a,p,domain=s.QQ.frac_field(f,c,k))
+    def zero(expr):
+        if isinstance(expr,s.MatrixBase):return all(zero(v) for v in expr)
+        num=s.fraction(s.cancel(expr))[0]
+        return ideal.reduce(s.expand(num))[1]==0
+    G=s.Matrix([[a,-p],[p,a]])
+    CX=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+    I=s.eye(2)
+    R=s.kronecker_product(I,G)*CX*s.kronecker_product(I,G.T)*CX
+    ck('owned_controlled_G_square_identity_on_ALL_columns',zero(R-s.diag(I,G*G)))
+    W=R*R
+    ck('fixed_word_is_controlled_G_four',zero(W-s.diag(I,G**4)))
+    ck('whole_fixed_word_is_unitary',zero(W.T*W-s.eye(4)))
+    delta=16*p**9
+    ck('actual_failure_coefficient_derived_from_G_four',zero((G**4)[1,0]**2-delta))
+    ck('actual_good_coefficient_derived_from_G_four',zero((G**4)[0,0]**2-(1-delta)))
+    ck('strict_global_good_mode_bound',16*s.Rational(5,8)**9<s.Rational(1,2))
+    J=s.Matrix([[1,0],[0,0],[0,1],[0,0]])
+    Pgood=s.diag(1,0,1,0)
+    Eg=J.T*W.T*Pgood*W*J
+    Eb=J.T*W.T*(s.eye(4)-Pgood)*W*J
+    N=s.diag(0,1)
+    ck('actual_good_effect_is_I_minus_delta_N',zero(Eg-(I-delta*N)))
+    ck('actual_bad_effect_is_delta_N',zero(Eb-delta*N))
+    ck('all_pointer_effects_complete',zero(Eg+Eb-I))
+    rho=s.Matrix([[1-f,c],[c,f]])
+    qg=s.trace(rho*Eg);qb=s.trace(rho*Eb)
+    ck('unknown_input_probability_linear_in_native_occupation',zero(qg-(1-delta*f)))
+    ck('unknown_input_coherences_not_needed_as_angle_code',zero(s.diff(qg,c)))
+    ck('all_unknown_input_pointer_outcomes_normalize',zero(qg+qb-1))
+    # Correlations with the programme are retained, not dephased or reset.
+    joint=W*J*rho*J.T*W.T
+    ck('retained_quantum_programme_trace_preserved',zero(s.trace(joint)-1))
+    ck('retained_quantum_programme_has_original_offdiagonal_coherence',zero(joint[0,2]-c*(G**4)[0,0]))
+    two=s.kronecker_product(rho,rho)
+    Qgg=s.kronecker_product(Eg,Eg)
+    Qgb=s.kronecker_product(Eg,Eb)
+    Qbg=s.kronecker_product(Eb,Eg)
+    Qbb=s.kronecker_product(Eb,Eb)
+    qgg=s.trace(two*Qgg)
+    ck('two_SUPPLIED_independent_inputs_product_good_probability',zero(qgg-(1-delta*f)**2))
+    ck('all_four_two_input_pointer_patterns_complete',zero(s.trace(two*(Qgg+Qgb+Qbg+Qbb))-1))
+    ck('one_bad_pattern_actual_odds',zero(s.trace(two*Qgb)-delta*f*(1-delta*f)))
+    ck('two_bad_pattern_actual_odds',zero(s.trace(two*Qbb)-delta**2*f**2))
+    # Exact C2 scalar source, retaining full actual input-density derivatives.
+    x,t1,t2=s.symbols('x t1 t2',real=True)
+    ft=f+t1*x+t2*x*x/2
+    Snat=-k*s.log(1-delta*ft)
+    ck('true_first_input_mode_source',zero(s.diff(Snat,x).subs(x,0)-k*delta*t1/(1-delta*f)))
+    ck('true_second_input_mode_source',zero(s.diff(Snat,x,2).subs(x,0)-k*(delta*t2/(1-delta*f)+delta**2*t1**2/(1-delta*f)**2)))
+    # Pointer coarse grain is substantive: emitting the programme changes mode.
+    delta_symbol=s.symbols('delta',real=True)
+    ck('emitting_programme_changes_mode_probability',
+       s.simplify((1-delta_symbol/2)-s.Rational(1,2))==(1-delta_symbol)/2)
+    # Common-label mixture odds hold even though log of the mixture is not
+    # the average log. This fixture needs no dephasing of retained quantum work.
+    w,g0,g1,q0,q1,rmax=s.symbols('w g0 g1 q0 q1 rmax',real=True)
+    mixed_good=w*g0+(1-w)*g1;mixed_other=w*q0+(1-w)*q1
+    ck('common_mode_odds_survive_quantum_programme_mixture',
+       s.expand(rmax*mixed_good-mixed_other
+                -(w*(rmax*g0-q0)+(1-w)*(rmax*g1-q1)))==0)
+    pins=[]
+    if root is not None:
+        base=Path(root)
+        paths=[
+            ('02_REGISTRY/research/A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md',
+             ['(I tensor G) CNOT (I tensor G^transpose) CNOT = diag(I,G^2).']),
+            ('02_REGISTRY/research/A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md',
+             ['X G X=G^T','preserving that control']),
+            ('01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md',
+             ['nonnegative effects E_i(s) >= 0','finite_effect_born_readout_unique']),
+            ('02_REGISTRY/research/A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md',
+             ['universal exact','requires orthogonal retained references'])]
+        for path,fragments in paths:
+            data=(base/path).read_bytes();text=data.decode()
+            ck('existing_native_interface_pin:'+path,all(v in text for v in fragments))
+            pins.append(dict(path=path,sha256=hashlib.sha256(data).hexdigest()))
+    return dict(status='PASS_EXACT_NATIVE_COLLECTIVE_POINTER_MODE',checks=checks,pins=pins,
+        actual_word='R=(I tensor G) CNOT (I tensor G*) CNOT=controlled G^2, W=R^2=controlled G^4. The whole 4x4 word is fixed, unitary on all columns, and consists only of already owned addressed golden/CNOT operations. Forward-only implementation uses four G and eight CNOT with the old supplied retained basis-one inverse control. Its preparation/address price remains actual.',
+        actual_observable='The programme is the actual native computational occupation N_r on one CAR bit, tensor identity on the other three bits and reference128. W=(I-N_r) tensor I_flag+N_r tensor G^4. No physical matter grade or correlation is discarded, and the input can be an arbitrary unknown density on the full carrier. This diagram needs no field-code angle oracle.',
+        probability='With the new flag initially blank, q_good=1-delta*f, q_bad=delta*f, f=Tr(rho N_r), delta=16p^9. Since delta<1/2, the same pointer outcome is uniquely most probable for EVERY normalized unknown input, including entangled full CAR/reference states. Only the detector flag is read; the programme remains retained quantum work.',
+        supplied_copies='For k genuinely independently supplied preparations and one fresh detector flag per preparation, all pointer patterns factor. The unique all-good mode has q_good=(1-delta*f)^k. This is an actual finite multilinear-input experiment; it does not clone unknown states or require continuous matrix/gate programming.',
+        mode_C2='If the declared pointer cut has actual history weights q and native MDL mode reading, S_mode=-k log(1-delta*f)/logphi. DS=k delta Df/((1-delta*f)logphi). D2S=k[delta D2f/(1-delta*f)+delta^2 Df Df/(1-delta*f)^2]/logphi. The input map and its true normalization/preparation jets determine Df, not an arbitrary sampled-price interpolation.',
+        common_mode_mixture='More generally, use a fixed coherent controlled unitary sum_alpha P_alpha tensor W_alpha with commuting actual programme projectors and the same pointer-good outcome. For the unmeasured retained programme, q_S=sum_alpha Tr(P_alpha sigma) q_S(alpha) exactly, without dephasing its full state. If every conditional branch has q_other(alpha)<=rmax*g_alpha, rmax<1, the same inequality holds after summation and the good pointer mode remains unique. Its price is -log E(g_alpha), not E(-log g_alpha).',
+        important_history_boundary='Emitting programme outcomes changes the complete mode. At f=1/2, the quantum-work pointer-good probability is 1-delta/2, whereas the joint emitted-programme mode has probability 1/2. Full unitarity and retaining work therefore do not by themselves prove that pointer coarse history is the native complete Book history cut. Initial-state/preparation cost, physical history/Info binding and all additional actual terms must be checked rather than silently omitted.',
+        approximation_route='A fixed finite sample-register-controlled programme may approximate a known function of actual commuting input-readout probabilities, using one circuit chosen for the whole chart. Bernstein/collective polynomial approximation then uses input variation, not a discontinuously chosen gate word. It still needs its actual C2 approximation/resource theorem, common positive mode, programme/history binding and physical preparation copies. For rare target g, absolute probability error must be o(g); only preserved per-trial product structure avoids generic exponential relative precision.',
+        scope='This is a constructive real native finite-word INPUT-source component for the specified existing observable. It does not turn occupation probability into curvature, bind unknown amplitudes to a Julia angle, produce the section6.58 geometric query, select Einstein dynamics or prove native stationary/refining roots. Those require the same actual field-to-observable/input law and full-price domain.')
+
+def hodge_native_input_lift_controls(root):
+    import ast
+    import hashlib
+    from itertools import product
+    from pathlib import Path
+    from types import SimpleNamespace
+    import sympy as s
+    root=Path(root)
+    path=root/'02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py'
+    creator=next(n for n in ast.parse(path.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=='creator')
+    pin=hashlib.sha256(ast.dump(creator,include_attributes=False).encode()).hexdigest()
+    if pin!='801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4':raise ArithmeticError('literal creator pin')
+    ns={'s':s,'SUBS':[tuple(i for i in range(4) if mask&(1<<i)) for mask in range(16)]}
+    exec(compile(ast.Module(body=[creator],type_ignores=[]),str(path),'exec'),ns)
+    current=root/'02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py'
+    current_pin=hashlib.sha256(current.read_bytes()).hexdigest()
+    if current_pin!='e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d':raise ArithmeticError('actual current owner pin')
+    node=next(n for n in ast.parse(current.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=='car_operators')
+    ops={'s':s,'C':SimpleNamespace(creator=ns['creator']),'I4':s.eye(4)}
+    exec(compile(ast.Module(body=[node],type_ignores=[]),str(current),'exec'),ops)
+    creators,beta,gammas,alphas=ops['car_operators']()
+    vp=root/'02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/verify.py'
+    vnode=next(n for n in ast.parse(vp.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=='exact')
+    vpin=hashlib.sha256(ast.dump(vnode,include_attributes=False).encode()).hexdigest()
+    if vpin!='9f62da27fd64a07005a5ee30eaedbf665f309f15b3799e8049e6f7290dac27ff':raise ArithmeticError('literal v8 exact word pin')
+    rpin=hashlib.sha256(vp.with_name('RESULT.md').read_bytes()).hexdigest()
+    if rpin!='f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c':raise ArithmeticError('literal v8 input price pin')
+    checks=[]
+    def ck(name,val):
+        if not val:raise ArithmeticError(name)
+        checks.append(name)
+    P,x,y,z=s.symbols('P psi0 psi4 spectator3',real=True)
+    m=s.zeros(16,1);m[1]=P;m[0]=x;m[15]=y;m[14]=z
+    for i,A in enumerate(alphas):ck('full16 original CAR current numerator '+str(i+1),s.expand((m.T*A*m)[0])==0)
+    ck('all16 source domain retained',len(m)==16 and len(creators)==4)
+    ck('first-grade clock independent of Hodge phase',m[1]==P and all(m[i]==0 for i in (2,4,8)))
+    ck('normalization has one exact real complement',s.expand((m.T*m)[0]).subs(z*z,1-P*P-x*x-y*y)==1)
+    bad=m.copy();bad[14]=0;bad[3]=z
+    ck('2form complement need not keep actual current fixed',s.expand((bad.T*alphas[0]*bad)[0])==2*x*z)
+    # Exactly one small actual L=8 fiber. Orthogonality follows by a product
+    # of geometric sums, not a 65536-dimensional state computation.
+    L=8;N=L**4
+    zeta=(1+s.I)/s.sqrt(2)
+    sums=[s.simplify(sum(zeta**(d*j) for j in range(L))) for d in range(L)]
+    ck('all Fourier differences have exact geometric sum',sums==[L]+[0]*7)
+    modes=list(product(range(8),range(4),range(4)))
+    ck('128 existing site characters, no CAR/ref copy',len(modes)==128 and len(set(modes))==128)
+    ck('full fixedRIGHT128 character Gram',all(
+        sums[(a[0]-b[0])%L]*sums[(a[1]-b[1])%L]*sums[(a[2]-b[2])%L]*L
+        ==(N if a==b else 0) for a in modes for b in modes))
+    ck('uniform site probability with all reference columns',s.Rational(1,128*N)*len(modes)==s.Rational(1,N))
+    # A faithful ENTANGLED full RIGHT example in one actual M2 block.
+    # Here reference dimension2 is only a tiny exact instance of the general
+    # algebraic formula; the preceding original128 Gram remains unchanged.
+    bell=s.Matrix([1,0,0,1])/s.sqrt(2)
+    Pbell=bell*bell.T
+    sigma=s.eye(4)/8+Pbell/2
+    sigroot=s.eye(4)/s.sqrt(8)+(s.sqrt(s.Rational(5,8))-1/s.sqrt(8))*Pbell
+    ck('correlated fullRIGHT exact positive square root',(sigroot*sigroot-sigma).applyfunc(s.simplify)==s.zeros(4))
+    sigref=s.Matrix(2,2,lambda i,j:sum(sigma[2*b+i,2*b+j] for b in range(2)))
+    ck('correlated fullRIGHT has fixed reference marginal',sigref==s.eye(2)/2)
+    singlet=s.Matrix([0,1,-1,0])/s.sqrt(2)
+    pt=s.Matrix(4,4,lambda i,j:sigma[2*(i//2)+(j%2),2*(j//2)+(i%2)])
+    ck('example is quantum correlated not product',(singlet.T*pt*singlet)[0]==-s.Rational(1,8))
+    pp=(s.sqrt(5)-1)/2
+    ms=[]
+    for q0,q4 in ((s.Rational(1,10),0),(0,s.Rational(1,10))):
+        mm=s.zeros(16,1);mm[1]=s.sqrt(pp);mm[0]=q0;mm[15]=q4;mm[14]=s.sqrt(1-pp-s.Rational(1,100));ms.append(mm)
+    BF=s.Matrix([[1,1],[1,-1]])/s.sqrt(2)
+    V=s.zeros(64,4)
+    for b,j,mask,a in product(range(2),range(2),range(16),range(2)):
+        V[32*b+16*j+mask,2*b+a]=BF[j,a]*ms[j][mask]
+    ck('fullRIGHT insertion isometry all CAR16',(V.T*V-s.eye(4)).applyfunc(s.simplify)==s.zeros(4))
+    CC=V*sigroot
+    ck('full correlated joint Gram preserved',(CC.T*CC-sigma).applyfunc(s.simplify)==s.zeros(4))
+    for j in range(2):
+        rhoj=sum((CC[32*b+16*j:32*b+16*j+16,:]*CC[32*b+16*j:32*b+16*j+16,:].T for b in range(2)),s.zeros(16))
+        ck('correlated local CAR factor at site '+str(j),(rhoj-ms[j]*ms[j].T/2).applyfunc(s.simplify)==s.zeros(16))
+    # If the SAME AF index were two CENTRAL M1 blocks instead of one M2,
+    # off-center sigma would not be a matching-block GNS marginal.
+    Pcenter=s.diag(1,1,0,0)
+    ck('cross-center coherence is not an admitted matching GNS marginal',sigma*Pcenter!=Pcenter*sigma)
+    # Literal old-v8 full16 scalar Fourier symbol, NOT a new Delta:
+    # G=(d-o)I+o11*, all128 input columns and both Hodge sidebands retained.
+    a,kappa,hh,Ebar=s.symbols('a kappa h Ebar',positive=True)
+    diag,off=s.symbols('d o',positive=True)
+    ct,st=s.symbols('cos_theta sin_theta',real=True)
+    re=s.symbols('rv rx ry',real=True);im=s.symbols('iv ix iy',real=True)
+    trans=[re[i]+s.I*im[i] for i in range(3)]
+    G=(diag-off)*s.eye(4)+off*s.ones(4)
+    def energy(z0):
+        zz=s.Matrix([z0]+trans)
+        return s.expand((zz.conjugate().T*G*zz)[0])
+    side=s.expand((energy((ct-1+s.I*st)/hh)+energy((ct-1-s.I*st)/hh))/2-energy(0))
+    side=s.expand(side).subs(st**2,1-ct**2)
+    target=2*(1-ct)/hh**2*(diag-off*hh*sum(re))
+    ck('literal v8 symbol exact two-sideband identity',s.simplify(side-target)==0)
+    cosines=[s.simplify(s.re(zeta**i)) for i in range(L)]
+    cbar=s.simplify(3-sum(cosines)/8-2*sum(cosines[:4])/4)
+    ck('all128 actual L8 transverse modes average factor',cbar==s.Rational(5,2))
+    ah=a*kappa*hh/(2*s.sin(kappa*hh/2))
+    eig=4*s.sin(kappa*hh/2)**2/hh**2
+    R=Ebar+ah**2*eig*(diag+off*cbar)
+    ck('finite literal input energy with original offdiagonal Gram',s.simplify(R-(Ebar+a*a*kappa*kappa*(diag+off*cbar)))==0)
+    ck('fixedRIGHT amplitude tangent has positive upstream source',s.simplify(s.diff(R,a)-2*a*kappa*kappa*(diag+off*cbar))==0 and diag+off*cbar>0)
+    return dict(status='PASS',checks=checks,creator_AST_sha256=pin,current_owner_sha256=current_pin,original_v8_exact_AST_sha256=vpin,original_v8_price_sha256=rpin,
+      input='m0=√p e1+psi0 e0+psi4 e15+√(1−p−a_h²)e14, psi0²+psi4²=a_h². Original alpha_i expectation0, norm1, first-grade coefficient√p. e14 is original spatial3-form, not a new carrier.',
+      full_right='For L>=8 choose f_a(j)=L^-2 exp(2pi i(k_v j_v+k_x j_x+k_y j_y)/L), k_v=0..7,k_x/y=0..3. C_(j,mask;a)=f_a(j)m0,j(mask)/sqrt128; C*C=I128/128. All k_u=0, local reduced CAR=|m0,j><m0,j|/L^4. Raw input I_norm^-1C has exact native G normalization, with all moving I jets.',
+      full_right_general='For any ACTUAL center-block-diagonal full sigma_R on oldAF_RIGHT tensor ref128, with Tr_AF sigma_R=I128/128: choose blockwise oldR-to-oldL isometry T, Fourier isometry B, and site insertion S_m. V=S_m(T tensor B) isometry; C=V sqrt(sigma_R) has C*C=sigma_R, and local CAR=|m_j><m_j|/S. No product AF/ref assumption. Does not preserve a specified old LEFT state/archive. Cross-center coherences need a larger carrier and are not standard matching-block GNS data.',
+      scope='Exact kinematic input section and full finite operator controls. Not native primitive PREP/query admission, equality with twelve-channel endpoint clock metric, state-to-code cloning, whole-price stationarity or arbitrary fixedRIGHT tangent surjectivity. Literal flat old-v8 G=(d−o)I+o11* gives R=Etrans+a_h² lambda_u(d+5o/2), all128 full columns; dR/da>0 with fixed geometry/current/clock. This refutes whole old-HJR stationarity of this flat input section, not a curved-pp extrapolation.')
+
+def fixed_polynomial_input_effect(root=None):
+    import sympy as sp
+    checks={}
+    def ck(name,v):
+        checks[name]=bool(v)
+        if not checks[name]: raise AssertionError(name)
+    I2=sp.eye(2)
+    X=sp.Matrix([[0,1],[1,0]])
+    Y=sp.Matrix([[0,-sp.I],[sp.I,0]])
+    Z=sp.diag(1,-1)
+    def swap(N,a,b):
+        W=sp.zeros(2**N)
+        for j in range(2**N):
+            bits=[(j>>(N-1-i))&1 for i in range(N)]
+            bits[a],bits[b]=bits[b],bits[a]
+            k=sum(t<<(N-1-i) for i,t in enumerate(bits))
+            W[k,j]=1
+        return W
+    S2=swap(2,0,1)
+    H2=sp.Rational(2,5)*sp.eye(4)+sp.Rational(1,2)*S2
+    P3=(swap(3,0,1)+swap(3,0,2)+swap(3,1,2))/3
+    H3=sp.Rational(2,5)*sp.eye(8)+sp.Rational(1,2)*P3
+    ck('diagnostic_initial_polynomial_operator_is_not_positive',-sp.Rational(1,10) in H2.eigenvals())
+    ck('symmetrized_three_copy_operator_is_strict_effect',H3.eigenvals()=={sp.Rational(2,5):4,sp.Rational(9,10):4})
+    ck('purity_witness_uses_entire_three_copy_carrier',H3.shape==(8,8) and P3*P3==P3)
+    for a,b in [(0,1),(0,2),(1,2)]:
+        W=swap(3,a,b)
+        ck('three_copy_effect_permutation_invariant_'+str(a)+str(b),W*H3*W.T==H3)
+    x,y,z,t=sp.symbols('x y z t',real=True)
+    rho=(I2+x*X+y*Y+z*Z)/2
+    g=sp.Rational(2,5)+sp.Rational(1,2)*sp.trace(rho*rho)
+    q2=sp.trace(H2*sp.kronecker_product(rho,rho))
+    q3=sp.trace(H3*sp.kronecker_product(rho,rho,rho))
+    ck('exact_two_copy_polynomial_representation',sp.expand(q2-g)==0)
+    ck('positive_elevation_does_not_change_any_IID_input_probability',sp.expand(q3-g)==0)
+    ck('all_Bloch_coordinate_first_sources_match',all(sp.expand(sp.diff(q3-g,v))==0 for v in [x,y,z]))
+    ck('all_Bloch_coordinate_second_sources_match',all(sp.expand(sp.diff(q3-g,v,w))==0 for v in [x,y,z] for w in [x,y,z]))
+    for A,v in [(X,x),(Y,y),(Z,z)]:
+        qfirst=sp.trace(H3*sp.kronecker_product(rho+t*A/2,rho,rho))
+        ck('independent_first_copy_row_is_one_third_diagonal_'+str(v),sp.expand(sp.diff(qfirst,t).subs(t,0)-sp.diff(g,v)/3)==0)
+    # Fixed algebraic Naimark, independent of x,y,z, with all input work kept.
+    C=sp.sqrt(sp.Rational(2,5))*sp.eye(8)+(sp.sqrt(sp.Rational(9,10))-sp.sqrt(sp.Rational(2,5)))*P3
+    B=sp.sqrt(sp.Rational(3,5))*sp.eye(8)+(sp.sqrt(sp.Rational(1,10))-sp.sqrt(sp.Rational(3,5)))*P3
+    U=C.row_join(-B).col_join(B.row_join(C))
+    ck('fixed_Naimark_good_effect_is_H3',all(sp.simplify(v)==0 for v in C.T*C-H3))
+    ck('fixed_Naimark_bad_effect_is_complement',all(sp.simplify(v)==0 for v in B.T*B-(sp.eye(8)-H3)))
+    ck('fixed_Naimark_unitary_on_all_sixteen_directions',all(sp.simplify(v)==0 for v in U.T*U-sp.eye(16)))
+    ck('fixed_detector_matrix_has_no_unknown_state_parameters',not any(v.free_symbols for v in U))
+    # Source convention in CKMR uses HALF trace norm. The chosen conservative
+    # full-trace norm bound is 4 D^2 k/N; do not execute a huge N tensor.
+    D,k,L=2,2,sp.Rational(9,10)
+    m,M=sp.Rational(13,20),sp.Rational(9,10)
+    delta=min(m,1-M)
+    Nbound=math.ceil(float(8*L*D*D*k/delta))+1
+    eps=4*L*D*D*k/Nbound
+    ck('CKMR_full_trace_norm_conservative_copy_budget_strict',eps<delta/2)
+    ck('CKMR_spectral_certificate_places_lift_inside_effect_interval',m-eps>0 and M+eps<1)
+    # Failure refinement uses the OWNED G^2 seed weights p^6,4p^3.
+    p=(sp.sqrt(5)-1)/2
+    w1=p**6; w0=1-w1; b=4*p**3
+    ck('owned_controlled_square_seed_normalizes',sp.simplify(p**6+b-1)==0)
+    d=8
+    floor=(w0-w1)**(2*d)
+    ceiling=w0**(2*d)
+    T=0
+    while float((1-floor)*b**T)>=float(floor): T+=1
+    gap=sp.simplify(floor-(1-floor)*b**T)
+    ck('original_golden_determinant_uniform_floor_is_positive',float(floor)>0 and float(ceiling)<1)
+    ck('finite_failure_split_makes_one_good_pointer_strict_global_mode',float(gap)>0)
+    ck('failure_split_copy_bound_is_minimal_for_fixture',T==0 or float((1-floor)*b**(T-1))>=float(floor))
+    # Complete-preparation hostile control. The IID diagonal and all
+    # independent-copy first rows are stationary, but an entangler is not.
+    e=sp.Rational(1,4)
+    Hent=sp.eye(4)/2+e*sp.kronecker_product(Z,Z)
+    plus=sp.Matrix([1,1])/sp.sqrt(2)
+    minus=sp.Matrix([1,-1])/sp.sqrt(2)
+    pp=sp.kronecker_product(plus,plus)
+    mm=sp.kronecker_product(minus,minus)
+    pure=sp.cos(t)*pp+sp.sin(t)*mm
+    qent=(pure.T*Hent*pure)[0]
+    ck('entangling_counter_effect_is_strictly_positive_bounded',Hent.eigenvals()=={sp.Rational(1,4):2,sp.Rational(3,4):2})
+    ck('IID_diagonal_first_source_vanishes_at_plus',sp.diff(sp.Rational(1,2)+e*z*z,z).subs(z,0)==0)
+    rplus=plus*plus.T
+    ck('all_independent_copy_traceless_first_rows_vanish_at_plus',all(sp.trace(Hent*sp.kronecker_product(A/2,rplus))==0 for A in [X,Y,Z]))
+    ck('entangling_joint_preparation_has_nonzero_exact_first_source',sp.simplify(sp.diff(qent,t).subs(t,0))==2*e)
+    ck('entangling_counter_one_owned_seed_makes_good_mode_strict_at_base',float((1-qent.subs(t,0))*b)<float(qent.subs(t,0)))
+    ck('entangling_mode_action_source_is_not_stationary',sp.simplify(-sp.diff(qent,t).subs(t,0)/qent.subs(t,0))==-1)
+    return {'status':'PASS','checks':len(checks),'check_results':checks,
+      'primary_source':{'url':'https://arxiv.org/pdf/quant-ph/0602130','theorem':'II.7, page4; norm convention page2 is half trace norm','half_trace_distance_bound':'2 D^2 k/N','ordinary_trace_norm_bound_used':'4 D^2 k/N'},
+      'diagnostic_purity_witness':{'g':'2/5+(1/2)Tr(rho^2)','status':'generic polynomial mechanism diagnostic, NOT a new physical F or native price','H2_spectrum':['-1/10','9/10'],'H3_spectrum':['2/5','9/10'],'conservative_general_bound_N':Nbound},
+      'owned_seed_consumer':{'d':d,'determinant_lower_floor':float(floor),'determinant_upper_bound':float(ceiling),'T':T,'strict_complete_pointer_mode_gap':float(gap)},
+      'entangling_preparation_counter':{'epsilon':'1/4','diagonal_and_independent_first_rows':0,'joint_entangling_probability_first_source':'1/2','joint_mode_natural_log_source':'-1','bad_pointer_seed_bits':1},
+      'scope':'Fixed effect exists exactly for the original g only if its ACTUAL supplied-state polynomial/global-margin premise is proved. No new F/action, cloning, exact Golden effect admission, full fine-data history cut, or native joint-root claim.'}
+
 def append_only_source_provenance(root):
     owner='02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md'
     raw=(Path(root)/owner).read_bytes()
@@ -1174,6 +1575,10 @@ def main():
         golden_mode_word=golden_copy_mdl_lcu(args.root),
         golden_mode_density_source=golden_mdl_densitized_source_controls(args.root),
         structured_even_exterior=adjacent_even_exterior(args.root),
+        complete_archive_composition=fresh_detector_archive_composition(args.root),
+        fixed_native_input=native_collective_mode(args.root),
+        normalized_hodge_input=hodge_native_input_lift_controls(args.root),
+        fixed_polynomial_effect=fixed_polynomial_input_effect(args.root),
         full_D0_price_selected=False, generic_joint_recovery=False, GR_closed=False)
     output = json.dumps(result, ensure_ascii=False, indent=2, default=str)+'\n'
     if args.output:

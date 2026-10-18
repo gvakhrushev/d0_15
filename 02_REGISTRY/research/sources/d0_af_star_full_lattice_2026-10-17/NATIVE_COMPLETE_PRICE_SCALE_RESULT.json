@@ -5,10 +5,10 @@
     "base_commit": "622d96b68f0195aaed4ae856e90429225de9c580",
     "source_path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
     "prior_owner_sha256": "ee5ce8bf76882dc02fada7cfeb9b2371eac1626979c09e84119a322368362169",
-    "current_owner_sha256": "cff530e4108d8d312e5e9a811c7794ac4ed01988ac3bbf32560367cc2762545a",
+    "current_owner_sha256": "262ff822817ac02aa5c7fcd87025bb40987b0d25b9d3fa538a09a2ac580a50e0",
     "prior_math": "All pre-existing source bytes including6.46-6.52 are identical after removing only inserted6.53 onward. Prior null/source math receipt is reused; only this owner fingerprint is refreshed."
   },
-  "checker_sha256": "bb026469ca16ff5fd073041310283863e58b87931083643217d6cb855cb33ef8",
+  "checker_sha256": "e3e4a8a73d0a25d89d3f9b559306ee8dbc023f1ddf094e424eafa5f8da29f9d0",
   "complete_price_scale": {
     "status": "PASS_EXACT_TRACE_AND_SATURATION_CONTROLS",
     "checks": [
@@ -615,6 +615,219 @@
       }
     },
     "scope": "Exact structure for actual adjacent-even word; constant target approximation only unless a smooth native local-query interface is supplied. No exact odd-G lift, no old LCU sign/control identity, no immutable record erasure, no physical MDL/Info selection or GR closure."
+  },
+  "complete_archive_composition": {
+    "status": "PASS",
+    "checks": 22,
+    "check_results": {
+      "actual_scalar_LCU_all_128_pointer_rows_retained": true,
+      "scalar_old_query_three_fresh_flag_column_normalized": true,
+      "fresh_pointer_probabilities_normalize_exactly": true,
+      "full_pointer_first_source_normalizes": true,
+      "selected_complete_mode_weight_is_owned_K_squared": true,
+      "actual_signed_pointer_column_matches_all_probability_rows": true,
+      "actual_pointer_column_has_unit_norm": true,
+      "fresh_common_detector_preserves_full_old_density_including_RIGHT_reference": true,
+      "unmodified_archive_joint_readout_factors_exactly": true,
+      "common_detector_full_history_mode_includes_old_past_factor": true,
+      "both_fresh_banks_full_joint_law_normalizes": true,
+      "execute_all_blocks_joint_mode_is_past_mode_times_product": true,
+      "sampled_archive_control_is_different_from_product": true,
+      "marginal_archive_good_mass_is_arithmetic_mixture": true,
+      "full_joint_mode_source_has_exact_old_history_debt": true,
+      "fixed_past_gives_exact_sum_of_detector_sources": true,
+      "moving_past_source_at_base_is_minus_one_sixth": true,
+      "sampled_history_drops_unexecuted_operator_block_source": true,
+      "whole_trace_determinant_is_integer_multiplicity_product": true,
+      "conditional_detector_can_switch_old_MAP_branch": true,
+      "different_archive_controlled_detectors_can_change_old_offdiagonals": true,
+      "Book_raw_normalizer_is_additional_source": true
+    },
+    "fixture": {
+      "actual_old_query": "U_f=[[sqrt(1-f),-sqrt(f)],[sqrt(f),sqrt(1-f)]]; P=diag(1,0), F=f",
+      "fresh_complete_pointer_rows_per_bank": 128,
+      "old_archive_data_RIGHT_reference_dimension": 16,
+      "past_probabilities": [
+        0.6,
+        0.4
+      ],
+      "conditional_good_weights": [
+        0.8655323062715561,
+        0.8144626462934277
+      ],
+      "parallel_two_bank_full_joint_mode": 0.422966239571031,
+      "sampled_history_full_joint_mode": 0.5193193837629336,
+      "moving_past_additional_mode_source": -0.16666666666666666,
+      "conditional_control_offdiagonal_overlap": 0.9860679774997898,
+      "close_past_conditional_mode_products": [
+        0.4026501612291733,
+        0.4369082256065951
+      ]
+    },
+    "scope": "Exact causal composition of already supplied fresh detector. Does not admit physical fields/queries/resources, identify old history labels with trace addresses, set raw Book N=1, freeze upstream preparation or replace full H+J+R."
+  },
+  "fixed_native_input": {
+    "status": "PASS_EXACT_NATIVE_COLLECTIVE_POINTER_MODE",
+    "checks": [
+      "owned_controlled_G_square_identity_on_ALL_columns",
+      "fixed_word_is_controlled_G_four",
+      "whole_fixed_word_is_unitary",
+      "actual_failure_coefficient_derived_from_G_four",
+      "actual_good_coefficient_derived_from_G_four",
+      "strict_global_good_mode_bound",
+      "actual_good_effect_is_I_minus_delta_N",
+      "actual_bad_effect_is_delta_N",
+      "all_pointer_effects_complete",
+      "unknown_input_probability_linear_in_native_occupation",
+      "unknown_input_coherences_not_needed_as_angle_code",
+      "all_unknown_input_pointer_outcomes_normalize",
+      "retained_quantum_programme_trace_preserved",
+      "retained_quantum_programme_has_original_offdiagonal_coherence",
+      "two_SUPPLIED_independent_inputs_product_good_probability",
+      "all_four_two_input_pointer_patterns_complete",
+      "one_bad_pattern_actual_odds",
+      "two_bad_pattern_actual_odds",
+      "true_first_input_mode_source",
+      "true_second_input_mode_source",
+      "emitting_programme_changes_mode_probability",
+      "common_mode_odds_survive_quantum_programme_mixture",
+      "existing_native_interface_pin:02_REGISTRY/research/A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md",
+      "existing_native_interface_pin:02_REGISTRY/research/A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md",
+      "existing_native_interface_pin:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "existing_native_interface_pin:02_REGISTRY/research/A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md"
+    ],
+    "pins": [
+      {
+        "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md",
+        "sha256": "f15fe957c6c9d7029d9b1a3faa61baa6aa04f15a81eeeeabc847b4b0e7870220"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md",
+        "sha256": "f09c24bb7b8ef5f512555257dcd9a335571c052b452482d2c31a3b8e586efdc5"
+      },
+      {
+        "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+        "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md",
+        "sha256": "04d38a6a126830fa857f4f7a06bf74789f21e283ed540d676ba8ea1de50e9184"
+      }
+    ],
+    "actual_word": "R=(I tensor G) CNOT (I tensor G*) CNOT=controlled G^2, W=R^2=controlled G^4. The whole 4x4 word is fixed, unitary on all columns, and consists only of already owned addressed golden/CNOT operations. Forward-only implementation uses four G and eight CNOT with the old supplied retained basis-one inverse control. Its preparation/address price remains actual.",
+    "actual_observable": "The programme is the actual native computational occupation N_r on one CAR bit, tensor identity on the other three bits and reference128. W=(I-N_r) tensor I_flag+N_r tensor G^4. No physical matter grade or correlation is discarded, and the input can be an arbitrary unknown density on the full carrier. This diagram needs no field-code angle oracle.",
+    "probability": "With the new flag initially blank, q_good=1-delta*f, q_bad=delta*f, f=Tr(rho N_r), delta=16p^9. Since delta<1/2, the same pointer outcome is uniquely most probable for EVERY normalized unknown input, including entangled full CAR/reference states. Only the detector flag is read; the programme remains retained quantum work.",
+    "supplied_copies": "For k genuinely independently supplied preparations and one fresh detector flag per preparation, all pointer patterns factor. The unique all-good mode has q_good=(1-delta*f)^k. This is an actual finite multilinear-input experiment; it does not clone unknown states or require continuous matrix/gate programming.",
+    "mode_C2": "If the declared pointer cut has actual history weights q and native MDL mode reading, S_mode=-k log(1-delta*f)/logphi. DS=k delta Df/((1-delta*f)logphi). D2S=k[delta D2f/(1-delta*f)+delta^2 Df Df/(1-delta*f)^2]/logphi. The input map and its true normalization/preparation jets determine Df, not an arbitrary sampled-price interpolation.",
+    "common_mode_mixture": "More generally, use a fixed coherent controlled unitary sum_alpha P_alpha tensor W_alpha with commuting actual programme projectors and the same pointer-good outcome. For the unmeasured retained programme, q_S=sum_alpha Tr(P_alpha sigma) q_S(alpha) exactly, without dephasing its full state. If every conditional branch has q_other(alpha)<=rmax*g_alpha, rmax<1, the same inequality holds after summation and the good pointer mode remains unique. Its price is -log E(g_alpha), not E(-log g_alpha).",
+    "important_history_boundary": "Emitting programme outcomes changes the complete mode. At f=1/2, the quantum-work pointer-good probability is 1-delta/2, whereas the joint emitted-programme mode has probability 1/2. Full unitarity and retaining work therefore do not by themselves prove that pointer coarse history is the native complete Book history cut. Initial-state/preparation cost, physical history/Info binding and all additional actual terms must be checked rather than silently omitted.",
+    "approximation_route": "A fixed finite sample-register-controlled programme may approximate a known function of actual commuting input-readout probabilities, using one circuit chosen for the whole chart. Bernstein/collective polynomial approximation then uses input variation, not a discontinuously chosen gate word. It still needs its actual C2 approximation/resource theorem, common positive mode, programme/history binding and physical preparation copies. For rare target g, absolute probability error must be o(g); only preserved per-trial product structure avoids generic exponential relative precision.",
+    "scope": "This is a constructive real native finite-word INPUT-source component for the specified existing observable. It does not turn occupation probability into curvature, bind unknown amplitudes to a Julia angle, produce the section6.58 geometric query, select Einstein dynamics or prove native stationary/refining roots. Those require the same actual field-to-observable/input law and full-price domain."
+  },
+  "normalized_hodge_input": {
+    "status": "PASS",
+    "checks": [
+      "full16 original CAR current numerator 1",
+      "full16 original CAR current numerator 2",
+      "full16 original CAR current numerator 3",
+      "all16 source domain retained",
+      "first-grade clock independent of Hodge phase",
+      "normalization has one exact real complement",
+      "2form complement need not keep actual current fixed",
+      "all Fourier differences have exact geometric sum",
+      "128 existing site characters, no CAR/ref copy",
+      "full fixedRIGHT128 character Gram",
+      "uniform site probability with all reference columns",
+      "correlated fullRIGHT exact positive square root",
+      "correlated fullRIGHT has fixed reference marginal",
+      "example is quantum correlated not product",
+      "fullRIGHT insertion isometry all CAR16",
+      "full correlated joint Gram preserved",
+      "correlated local CAR factor at site 0",
+      "correlated local CAR factor at site 1",
+      "cross-center coherence is not an admitted matching GNS marginal",
+      "literal v8 symbol exact two-sideband identity",
+      "all128 actual L8 transverse modes average factor",
+      "finite literal input energy with original offdiagonal Gram",
+      "fixedRIGHT amplitude tangent has positive upstream source"
+    ],
+    "creator_AST_sha256": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "current_owner_sha256": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
+    "original_v8_exact_AST_sha256": "9f62da27fd64a07005a5ee30eaedbf665f309f15b3799e8049e6f7290dac27ff",
+    "original_v8_price_sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+    "input": "m0=√p e1+psi0 e0+psi4 e15+√(1−p−a_h²)e14, psi0²+psi4²=a_h². Original alpha_i expectation0, norm1, first-grade coefficient√p. e14 is original spatial3-form, not a new carrier.",
+    "full_right": "For L>=8 choose f_a(j)=L^-2 exp(2pi i(k_v j_v+k_x j_x+k_y j_y)/L), k_v=0..7,k_x/y=0..3. C_(j,mask;a)=f_a(j)m0,j(mask)/sqrt128; C*C=I128/128. All k_u=0, local reduced CAR=|m0,j><m0,j|/L^4. Raw input I_norm^-1C has exact native G normalization, with all moving I jets.",
+    "full_right_general": "For any ACTUAL center-block-diagonal full sigma_R on oldAF_RIGHT tensor ref128, with Tr_AF sigma_R=I128/128: choose blockwise oldR-to-oldL isometry T, Fourier isometry B, and site insertion S_m. V=S_m(T tensor B) isometry; C=V sqrt(sigma_R) has C*C=sigma_R, and local CAR=|m_j><m_j|/S. No product AF/ref assumption. Does not preserve a specified old LEFT state/archive. Cross-center coherences need a larger carrier and are not standard matching-block GNS data.",
+    "scope": "Exact kinematic input section and full finite operator controls. Not native primitive PREP/query admission, equality with twelve-channel endpoint clock metric, state-to-code cloning, whole-price stationarity or arbitrary fixedRIGHT tangent surjectivity. Literal flat old-v8 G=(d−o)I+o11* gives R=Etrans+a_h² lambda_u(d+5o/2), all128 full columns; dR/da>0 with fixed geometry/current/clock. This refutes whole old-HJR stationarity of this flat input section, not a curved-pp extrapolation."
+  },
+  "fixed_polynomial_effect": {
+    "status": "PASS",
+    "checks": 29,
+    "check_results": {
+      "diagnostic_initial_polynomial_operator_is_not_positive": true,
+      "symmetrized_three_copy_operator_is_strict_effect": true,
+      "purity_witness_uses_entire_three_copy_carrier": true,
+      "three_copy_effect_permutation_invariant_01": true,
+      "three_copy_effect_permutation_invariant_02": true,
+      "three_copy_effect_permutation_invariant_12": true,
+      "exact_two_copy_polynomial_representation": true,
+      "positive_elevation_does_not_change_any_IID_input_probability": true,
+      "all_Bloch_coordinate_first_sources_match": true,
+      "all_Bloch_coordinate_second_sources_match": true,
+      "independent_first_copy_row_is_one_third_diagonal_x": true,
+      "independent_first_copy_row_is_one_third_diagonal_y": true,
+      "independent_first_copy_row_is_one_third_diagonal_z": true,
+      "fixed_Naimark_good_effect_is_H3": true,
+      "fixed_Naimark_bad_effect_is_complement": true,
+      "fixed_Naimark_unitary_on_all_sixteen_directions": true,
+      "fixed_detector_matrix_has_no_unknown_state_parameters": true,
+      "CKMR_full_trace_norm_conservative_copy_budget_strict": true,
+      "CKMR_spectral_certificate_places_lift_inside_effect_interval": true,
+      "owned_controlled_square_seed_normalizes": true,
+      "original_golden_determinant_uniform_floor_is_positive": true,
+      "finite_failure_split_makes_one_good_pointer_strict_global_mode": true,
+      "failure_split_copy_bound_is_minimal_for_fixture": true,
+      "entangling_counter_effect_is_strictly_positive_bounded": true,
+      "IID_diagonal_first_source_vanishes_at_plus": true,
+      "all_independent_copy_traceless_first_rows_vanish_at_plus": true,
+      "entangling_joint_preparation_has_nonzero_exact_first_source": true,
+      "entangling_counter_one_owned_seed_makes_good_mode_strict_at_base": true,
+      "entangling_mode_action_source_is_not_stationary": true
+    },
+    "primary_source": {
+      "url": "https://arxiv.org/pdf/quant-ph/0602130",
+      "theorem": "II.7, page4; norm convention page2 is half trace norm",
+      "half_trace_distance_bound": "2 D^2 k/N",
+      "ordinary_trace_norm_bound_used": "4 D^2 k/N"
+    },
+    "diagnostic_purity_witness": {
+      "g": "2/5+(1/2)Tr(rho^2)",
+      "status": "generic polynomial mechanism diagnostic, NOT a new physical F or native price",
+      "H2_spectrum": [
+        "-1/10",
+        "9/10"
+      ],
+      "H3_spectrum": [
+        "2/5",
+        "9/10"
+      ],
+      "conservative_general_bound_N": 577
+    },
+    "owned_seed_consumer": {
+      "d": 8,
+      "determinant_lower_floor": 0.15095990360721875,
+      "determinant_upper_bound": 0.39953343508787253,
+      "T": 31,
+      "strict_complete_pointer_mode_gap": 0.0074316540058587946
+    },
+    "entangling_preparation_counter": {
+      "epsilon": "1/4",
+      "diagonal_and_independent_first_rows": 0,
+      "joint_entangling_probability_first_source": "1/2",
+      "joint_mode_natural_log_source": "-1",
+      "bad_pointer_seed_bits": 1
+    },
+    "scope": "Fixed effect exists exactly for the original g only if its ACTUAL supplied-state polynomial/global-margin premise is proved. No new F/action, cloning, exact Golden effect admission, full fine-data history cut, or native joint-root claim."
   },
   "full_D0_price_selected": false,
   "generic_joint_recovery": false,

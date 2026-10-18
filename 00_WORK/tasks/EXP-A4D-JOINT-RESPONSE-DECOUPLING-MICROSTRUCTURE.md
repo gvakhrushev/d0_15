@@ -12,6 +12,35 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: full retained-history and actual field-input consumer
+
+Input f28d4240; previous goal turn PROGRESS: published exact golden
+detector MODE, derived r=p3/4, all16+24+scalar finite-root transfer,
+adjacent-even G/CNOT exterior lift, and integrated the fixed-g charged
+Hodge family through8fea3826. Exact-head Draft CI passed. The next
+consumer is6.58's actual native history/field-source interface, not
+another determinant or curvature classification. Concurrent disjoint
+581374fe's exact field-pullback boundary is now consumed in this same
+step. The finite-copy input-effect proof preserves the SAME supplied
+global polynomial g and retains all entangling preparation normals.
+Root alone writes the existing source/strategic/primary/current route
+and bounded checker.
+Three read-only premises use /tmp: (1) construct the complete joint law
+with IMMUTABLE old archive, actual field/preparation correlations and
+regular-trace block multiplicities; distinguish sampled-h from a fresh
+all-block apparatus; (2) exhibit actual continuous input/cut/query
+dependence for a FIXED finite native word, distinguishing continuous
+state variation from discrete pointwise compilation or an unknown-state
+programmable gate oracle; (3) lift the owned nonvacuum field root to
+the real CAR16/fixed-RIGHT128/clock state map, with every own source,
+or derive its exact smallest obstruction. Consumers are6.58→native
+whole-price and SAME joint-root/refinement, including Book03 §03.8.
+Keep Born/Book normalization, finite MDL vs field stationarity and
+all grades/preparation normals distinct. Smallest decisive evidence:
+one actual complete history/word diagram and its first/second source,
+or one literal constrained counter. No new action, selector, frozen
+matter, task registry or replay of unchanged expensive suites.
+
 ### 18 October: the genuinely linked heat/Rayleigh control source
 
 Input14cdcf28; prior turn made progress: one-feedback construction,
