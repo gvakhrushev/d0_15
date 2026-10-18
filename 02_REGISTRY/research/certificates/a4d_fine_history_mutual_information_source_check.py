@@ -230,8 +230,36 @@ for i,ai in enumerate(a_cap):
 assert abs(H(opt_cap)-math.log(D_cap))<1e-12
 assert sum(abs(r_cap[i]-r_star[i]) for i in range(len(r_cap))) <= math.sqrt(2*global_deficit)
 
+
+# Uniform leading geometric source for an approximately prepared measured
+# leaf distribution: the KL defect source is quadratic in relative errors,
+# provided the error jets come from the same smooth source chart.
+near_f=[-.9,-.2,.4,.95]
+near_u=[.8,-.9,.25,-.05]
+near_c=.012
+def near_KL(lam,delta):
+    aa=[a0+near_c*lam*fi for fi in near_f]
+    weights=[z(ai) for ai in aa]
+    rstar=[vv/sum(weights) for vv in weights]
+    umean=sum(rstar[i]*near_u[i] for i in range(4))
+    epsilons=[delta*(ui-umean) for ui in near_u]
+    assert max(abs(e) for e in epsilons)<.5
+    ractual=[rstar[i]*(1+epsilons[i]) for i in range(4)]
+    assert abs(sum(ractual)-1)<1e-12
+    return KL(ractual,rstar)
+near_derivative_ratios=[]
+for delta in [.10,.05,.025,.0125]:
+    step=1e-4
+    deriv=(near_KL(1+step,delta)-near_KL(1-step,delta))/(2*step)
+    near_derivative_ratios.append(deriv/(near_c*delta**2))
+assert all(abs(v)<.1 for v in near_derivative_ratios)
+assert abs(near_derivative_ratios[-1]-near_derivative_ratios[-2])<.001
+assert abs(near_derivative_ratios[0])>.01
+
 print(json.dumps({
     "status":"PASS",
+    "C1_approximate_leaf_source_KL_quadratic_ratios":near_derivative_ratios,
+    "source_stability_independent_of_N_analytic_condition":True,
     "exact_global_capacity_deficit":global_deficit,
     "capacity_deficit_parts":[KL_leaf,KL_success,KL_scene_MI],
     "capacity_Pinsker_control":True,
