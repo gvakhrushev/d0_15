@@ -2,7 +2,7 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Snapshot:** 2026-10-18; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `5d23e90a` integrated
+**Snapshot:** 2026-10-19; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `5d23e90a` integrated
 
 ## Current route to general relativity
 
@@ -21,39 +21,56 @@ counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
 
-### Consuming strategic synthesis — 2026-10-18 checkpoint
+### Consuming strategic synthesis — 2026-10-19 checkpoint
 
-Current full-source consumer:
-[strategic §§7.25–7.30](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
-[full-source §§6.79–6.81](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
-and its separate conditional finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
-The full-polynomial vacuum bound now transfers to the actual mixed-CAR
-§6.68 root while retaining every RIGHT/reference128. The free-equalizer
-CASE A has a native-clock C² obstruction, so return rank alone cannot make
-its old Rayleigh source negligible. The Book identity and copy-budget window
-keep the complete raw normalizer, factory histories, mean/MAP distinction,
-copy lower bound and compiler/recovery errors in one source estimate. The
-reattached C_Y text is byte-identical to its archived owner and adds no new
-actuator or price theorem. Both new narrow checkers pass; the unchanged full
-price receipt preserves its prior outputs and updates only the source hash.
+Current consumer:
+[strategic §§7.25–7.32](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
+[full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+and its separate finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The new owner composes the corrected same two-tick AF×scene feedback, the
+original exact 40-row Lorentz-star table and full CAR16 Hodge matter into a
+nonempty finite Einstein+matter sector. It constructs a growing torus of
+distinct CAR histories with one metric and reduces any further complete-price
+transfer on that stratum to two first-source coefficients plus solved
+internal Euler rows. Its bounded checker passes after repairing a profile
+control that had accidentally tested only a global rotation at `L=4`.
 
-The latest full-source continuation proves finite conditional preparation,
-coframe, observer and nonzero-Fourier stationarity, then reduces the remaining
-homogeneous Lorentz-link equations to the exact source in §§8.33–8.36. A
-CAR16 counterexample rules out the assumed uniform link-curvature bound, and
-the weak-history operational metric collapses on a fixed grid. This branch
-does not close the link root, physical code/Info admission or spatial metric
-recovery. The repeated field→instrument proposal is already byte-identical
-to its archived input; §§7.29–7.30 record its tangent and dimension audit.
+The direct density owner extends the same `J₂` source to the proper cell
+operand `M=h⁴Jq`, passes the volume-pressure control, and proves a conditional
+C² Einstein–scalar source limit; its narrow source checker passes. This is an
+exact finite sourced root for the declared feedback, not a physical
+selection theorem for the complete D0 programme. The separate `C_Y` capacity
+branch already has an exact finite-`t` vacuum transfer on its capacity profile
+(§§6.10–6.17, 6.33), while §6.70 blocks that profile in the stated
+fine-RIGHT-preserving class. Strategic §7.31 now derives a conditional joint
+pointer for the two pieces: the retained leaf `α` is followed by its own full
+Golden good/failure outcomes. At the common `f=q=0` source, its Shannon price
+has derivative `D H(π)+2κ Σα π_α D J_α`; with a fixed old prefix this is a
+positive multiple of the exact two-tick source, including the CAR matter
+row. This resolves the source-level composition without adding two prices,
+but the branchwise good effect `g_α=exp(−2J_α)` is not yet shown to meet the
+global positive-effect/copy premise of §6.62. For the direct density query,
+the two operands are the star density and the CAR principal-Gram formula
+`D25`; their admission and compiler/source budget remain open. Moving
+old-history probabilities also retain their own `D H(π)` source. Physical
+query/PREP and controller
+admission, the entire `H+J+R` if retained, and global spatial/causal recovery
+remain open. For the D1/D25 branch, the next route step is to prove or refute that branchwise effect
+from the native execution and solve its old-history, preparation, observer,
+clock and resource rows in the same complete pointer. The fixed-grid
+weak-history collapse and the independent raw `#216` terminal remain separate
+gates.
 
-These results refine the current price and preparation route but do not
-select a physical action or establish an exact finite root of the combined
-programme. The next same-source step is to bind the actual complete Book
-history and copy factory to the full action, obtain its admitted joint roots,
-and control the source jets and nonempty recovery on that same carrier.
-Physical query/PREP admission, the actual per-copy price `P_h`, common
-sources, and the nonlinear metric-response limit remain open. No extra
-signal or free-copy assumption enters the route.
+The new strategic §7.32 contributes a separate preparation candidate: a
+coherent equal-energy null sideband in the literal flat old-v8 symbol gives a
+CAR-only Rayleigh root and a nonzero null Hodge readout. It escapes the same-row
+pure-section ansatz of §6.63 without contradicting that scoped no-go. Its
+bounded consumer checks normalization, readouts, CAR current compression and
+finite null identities on 24,832 sites. The actual curved preparation
+operator, full H+J+R/Book source, AF/RIGHT factorization and physical query
+admission are still open; this is not substituted for the sourced pp-wave
+root.
 
 Preceding clock/coherent-preparation consumer:
 [strategic7.23](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

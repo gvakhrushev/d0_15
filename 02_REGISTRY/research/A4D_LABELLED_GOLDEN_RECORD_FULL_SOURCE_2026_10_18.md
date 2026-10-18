@@ -11305,3 +11305,29 @@ opt-in --output и pinned inputs. Общий source diagnostic теперь пр
 аналитически и независимо проверены; старые root/thermal/Lean suites
 для них не воспроизводились. Численный timeflip результат не является
 предпосылкой отрицательного exact finite source theorem.
+
+
+### 6.82. Когерентная null-sideband preparation — точный flat equalizer, не полный root
+
+§6.63 исключает конкретную pure same-row секцию \(C_1,C_{14},C_0,C_{15}\), где все четыре ряда пропорциональны одному RIGHT-row, а \(C_0,C_{15}\) имеют действительные коэффициенты \(\cos(\kappa u),\sin(\kappa u)\). Он не классифицирует все CAR-подготовки с теми же двумя density readout.
+
+Для \(p=\varphi^{-1}\), \(0<2a^2<1-p\), и периодического \(N^4\)-тора положим \(m=(1,-1,-1,-1)\), \(m'=(-1,1,-1,-1)\), \(q=m'-m=(-2,2,0,0)\). Локальная полная CAR16-запись
+
+    c(X)=sqrt(p)e^(2πim·X)|1>
+         +sqrt(1-p-2a²)e^(2πim·X)|14>
+         +a e^(2πim'·X)|0>
+         −ia e^(2πim'·X)|15>
+
+имеет норму один в каждой точке и сохраняет first-grade density p. При прежних чтениях \(\Re\rho_{0,1}/\sqrt p\), \(\Re\rho_{15,1}/\sqrt p\) она даёт
+\[
+(\psi_0,\psi_4)=a(\cos(2\pi q\cdot X),\sin(2\pi q\cdot X)).
+\]
+Дополнительные CAR coherences остаются частью исходного состояния.
+
+Это **точный constrained eigenstate старого flat preparation operator**. Для \(\Delta(k)=z^*[(d-o)I+o11^*]z\,I_{16}\) координатная перестановка \(1\leftrightarrow2\) переводит \(m\) в \(m'\), поэтому \(\lambda(m)=\lambda(m')\) тождественно для всех конечных \(N\). Каждая ненулевая CAR-компонента \(c\) лежит в одной энергетической оболочке; у глобально нормированного одного CAR-столбца \(\Delta C=C\lambda(m)I\). Используется literal flat symbol §6.61, а не общий curved soldered operator.
+
+Одновременно \(q\) Minkowski-null. Readout точно решает центральную конечную wave equation на торе, имеет ненулевой null stress в стандартном двухскалярном кинетическом источнике и постоянную длину forward Hodge-инкремента \(2a|\sin(2\pi/N)|/h\) по двум ненулевым координатам. Для исходных масок \(\{0,1,14,15\}\) сжатия трёх CAR-current generators равны нулю; эта точка пересчитана в полном CAR16 и правильном exterior order.
+
+Bounded consumer sources/d0_flat_null_sideband_2026-10-19/check_flat_null_sideband_equalizer.py проверил 36 видов контролей на всех 24 832 узлах сеток \(N=8,12\). Результат: PASS. Аналитическое равенство Fourier-энергий следует из перестановочной симметрии символа, а не из конечного сканирования.
+
+Это новый согласованный **flat CAR-only preparation root для null Hodge-profile**, который может служить кандидатом для постоянного-скоростного matter профиля reverse pp-wave владельца. Он выходит за ansatz §6.63 и не опровергает его no-go. До полного результата нужны как минимум: actual AF/RIGHT factorization старого оператора; eigen-equation на целевой curved pp-wave operator с frame/spin terms; совместная стационарность всех H+J+R, Book-history, observer/clock/query строк на том же carrier; admission реального чтения coherences. Никакой из этих переходов checker не утверждает. См. отдельный аудит [NULL_SIDEBAND_EQUALIZER_AUDIT_2026_10_19.md](sources/d0_flat_null_sideband_2026-10-19/NULL_SIDEBAND_EQUALIZER_AUDIT_2026_10_19.md).

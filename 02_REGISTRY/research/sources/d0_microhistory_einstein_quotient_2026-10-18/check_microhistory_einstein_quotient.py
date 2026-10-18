@@ -3,13 +3,15 @@
 
 Reproducible standard-library-only narrow controls for:
 A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md
+plus the conditional retained-prefix Shannon-source chain rule recorded in
+A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md §7.31.
 
 Consumes the owned symbolic exact 16-coframe+24-Lorentz-link six-plaquette
 Euler table; does NOT re-prove that table, native full Book selection, root of
 all historical preparations, or original full-periodic #216 raw terminal.
 """
 from collections import Counter
-from math import cos, log, pi, sin, sqrt
+from math import asin, cos, log, pi, sin, sqrt
 
 P=(sqrt(5.)-1.)/2.
 Z=2.**-20
@@ -127,19 +129,75 @@ def mean_map_same_detector(g,T):
     # including genuine matter and preparation, when the SAME detector is used.
     return Hmean,-log(g),kappa
 
+def conditional_prefix_detector(pi,g,dg,T):
+    """One retained old-leaf label followed by its conditional full detector.
+
+    At a common root all branch good probabilities equal g, but their field
+    derivatives dg may differ. This checks the Shannon first-source identity
+    without assuming a single global good outcome or a MAP rule for the prefix.
+    """
+    assert len(pi)==len(dg) and abs(sum(pi)-1.)<1e-13
+    p6=P**6; p1=4.*P**3
+    beta=[p6**(T-bin(k).count("1"))*p1**bin(k).count("1")
+          for k in range(1<<T)]
+    nearly(sum(beta),1.,1e-12)
+    Hbeta=-sum(x*log(x) for x in beta if x>0.)
+    nearly(Hbeta,T*(-p6*log(p6)-p1*log(p1)),1e-11)
+    assert g>(1.-g)*max(beta)  # strict good mode inside every prefix branch
+    q=[]; dq=[]
+    for weight,slope in zip(pi,dg):
+        q.append(weight*g); dq.append(weight*slope)
+        for b in beta:
+            q.append(weight*(1.-g)*b); dq.append(-weight*slope*b)
+    nearly(sum(q),1.,1e-12)
+    nearly(sum(dq),0.,1e-12)
+    dH=-sum((1.+log(prob))*slope for prob,slope in zip(q,dq) if prob>0.)
+    dH_chain=sum(weight*(log((1.-g)/g)-Hbeta)*slope
+                 for weight,slope in zip(pi,dg))
+    kappa=g*(Hbeta-log((1.-g)/g))
+    dJ=sum(weight*(-slope/(2.*g)) for weight,slope in zip(pi,dg))
+    nearly(dH,dH_chain,1e-11)
+    nearly(dH,2.*kappa*dJ,1e-11)
+    assert kappa>0.
+    return dH,kappa
+
+def linear_angle_first_source(t=0.37):
+    """Check the exact-root controller can keep only the owned angle 1-jets."""
+    theta0=asin(P)
+    for sigma in (-1.,1.):
+        E0=sin(theta0)**2
+        b0=sin(theta0)**2
+        dE_linear=2*sin(theta0)*cos(theta0)*(.5*sqrt(P)*t*t)
+        db_linear=2*sin(theta0)*cos(theta0)*(sigma*P**1.5*t*t)
+        dE_owned=P*P*t*t
+        db_owned=2*sigma*P**3*t*t
+        nearly(E0,P*P,1e-13)
+        nearly(b0,P*P,1e-13)
+        nearly(dE_linear,dE_owned,1e-13)
+        nearly(db_linear,db_owned,1e-13)
+        dB_linear=4*(1.-2*b0)*db_linear
+        dB_owned=4*(1.-2*P*P)*db_owned
+        nearly(dB_linear,8*sigma*P**6*t*t,1e-13)
+        nearly(dB_linear,dB_owned,1e-13)
+
 def test():
     nearly(LAMBDA,-23.41640675188407,1e-11)
     for n,L in ((20,4),(24,8)):
         hits,weights,mean=exact_cost_golden_cells(n,L)
-        ang=[2*pi*j/L+.4*sin(4*pi*j/L)+.17*cos(8*pi*j/L)
-             +.13*cos(4*pi*j/L) for j in range(L//2)]
+        # The original trigonometric profile differs from a circle for L>=6,
+        # but at L=4 its two sampled angles differ only by a global rotation.
+        # Use a genuinely different relative angle on that smallest lattice.
+        ang=([0.,1.7] if L==4 else
+             [2*pi*j/L+.4*sin(4*pi*j/L)+.17*cos(8*pi*j/L)
+              +.13*cos(4*pi*j/L)
+              for j in range(L//2)])
         psi,d,E,current=polygon(L,RATE,ang)
         psi_circle,_,E_circle,current_circle=polygon(
             L,RATE,[2*pi*j/L for j in range(L//2)])
+        assert max(abs(x-y) for a,b in zip(psi,psi_circle)
+                   for x,y in zip(a,b))>1e-5
         assert max(abs(a-b) for a,b in zip(current,current_circle))>1e-6
         assert max(abs(a-b) for a,b in zip(E,E_circle))<1e-13
-        assert max(abs(x-y) for v,w in zip(psi,psi_circle)
-                   for x,y in zip(v,w))>1e-5
         trace=full_native_book_source(weights,mean,RATE)
         # 2 full original scalar Euler rows at every (u,v) vanish:
         # at q=0 the first source is Σ_{u,v} D_u Psi D_v deltaPsi;
@@ -161,8 +219,14 @@ def test():
     entropy,map_surprisal,kappa=mean_map_same_detector(.23,32)
     print(f"ONE retained Golden good+bad detector: mean={entropy:.12f}, "
           f"MAP={map_surprisal:.12f}; exact gradient ratio κ={kappa:.12f}>0")
+    prefix_weights=[.11,.23,.66]
+    dH,kappa=conditional_prefix_detector(prefix_weights,.73,[.001,-.0007,.0002],8)
+    print(f"ONE conditional prefix+detector pointer: dH={dH:.12g}; "
+          f"same weighted trace-log source factor 2κ={2*kappa:.9f}")
+    linear_angle_first_source()
+    print("LINEAR native-angle 1-jets: same exact finite-root source as both arcsin controls.")
     print("PASS: growing microhistory torus, exact constant stress, old PF counts,")
-    print("      SAME corrected two-tick J2 Euler and full-detector mean/MAP gradients.")
+    print("      SAME corrected two-tick J2 Euler and complete-pointer first sources.")
     print("SCOPE: constructed Einstein+CAR source, not compulsory full native D0 GR.")
 if __name__=="__main__":
     test()
