@@ -12,6 +12,28 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: consume fixed-t full-root recovery and the AF weight mode
+
+Input `0e7ad4d9`, followed by the user's explicit AF–Palatini limit
+synthesis. Root owns the same strategic synthesis, labelled-source owner,
+full-lattice owner, its one new narrow checker/receipt, primary memo and
+route consumers. Read-only assistants independently checked fixed-t
+Euler equivalence, actual source/metric typing and the new AF preparation
+mode. No concurrent edits or new workflow/task/price are introduced.
+
+Consumed: exact full local vacuum roots need no t→0; t is a modulus
+on this branch. The same40-row family admits quantitative C² recovery
+with L_n=ceil(phi^(2n/67)), giving Einstein residual O(p^(2n/67)).
+But free conditional AF weights admit an exact boundary-preserving
+conformal compensator, with all configured five-cut joint rows solved
+and non-Einstein metric. Its mixed weight/geometry Hessian is computed;
+the conditional-weight block is singular, not a legitimate inverse-Schur
+auxiliary. This is a configured-protocol obstruction, not a D0 no-go.
+An inherited measured-history/effect/source identity could remove the
+mode; fixed canonical trace or golden gates alone do not supply it.
+The native cubic/bootstrap route remains active with this actual scalar
+sector retained. Publication stays in Draft #334; no full GR closure.
+
 ### 18 October user priority: same-source nonlinear spin-2 bootstrap
 
 The user supplied the reverse Einstein/Λ synthesis and explicitly asks

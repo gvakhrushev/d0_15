@@ -14,6 +14,15 @@ now exactly the mixed detector/embedding source; no new action is chosen.
 The supplied Λ is preserved as a conditional coefficient, with its
 stationary-background and controlled-IR boundaries.
 
+Latest same-price consumer: [§7.4](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+uses exact fixed-t vacuum equations rather than demanding a t(h) law.
+The full local40-row AF family now has explicit C² metric recovery and
+Einstein residual O(p^(2n/67)). Free conditional AF preparation also has
+an exact conformal compensator: all configured five-cut Euler rows can
+vanish while the original coframe metric is non-Einstein. This surviving
+weight sector must be sourced/constrained before pure spin-2 uniqueness
+applies. The complete complement, fixed collar and reference128 remain.
+
 Latest finite continuation: full-source §§8.34–8.36 prove a uniform
 normalized Gram-shape gap and retain a genuine Lorentz fixed family with
 all six invariant link equations. An exact native kernel rejects a false

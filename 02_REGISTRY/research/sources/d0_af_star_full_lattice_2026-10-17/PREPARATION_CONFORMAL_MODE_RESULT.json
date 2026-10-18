@@ -1,0 +1,19 @@
+{
+  "C2_recovery_exponents": {
+    "mesh": "2/67",
+    "prefix": "32/67",
+    "weight_sup": "6/67"
+  },
+  "arbitrary_positive_weights": true,
+  "conformal_metric": {
+    "G_uu": "2*k**2",
+    "other_Einstein_rows": "zero",
+    "scalar_curvature": "0",
+    "torsion": "-k du wedge e_prime"
+  },
+  "finite_exact_rows": 40,
+  "fixed_t_vacuum_roots": true,
+  "physical_D0_selection": "not_proved",
+  "scope": "configured_free_AF_five_cut_local_vacuum",
+  "uncompensated_weight_control": "rejected"
+}

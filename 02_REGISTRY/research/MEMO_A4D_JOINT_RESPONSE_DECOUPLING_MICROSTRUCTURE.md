@@ -2,6 +2,20 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
+**Latest same-price consumer, input `0e7ad4d9`:** the user's AF–Palatini
+limit has been consumed beyond its sufficient t²=h schedule. Exact vacuum
+Euler equivalence needs only fixed t>0. The [full-lattice §5.2](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
+now proves C² recovery and Einstein residual O(p^(2n/67)) for the same
+complete40-row family with actual golden counts. The [labelled §§6.4–6.6](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+also compute its same-section quadratic/cubic jets, then exhibit an exact
+free-AF preparation compensator preserving all joint five-cut Euler rows
+and the fixed boundary while allowing non-Einstein conformal metrics.
+The actual mixed weight/geometry source survives; its conditional-weight
+block is singular. Therefore t(h) is not the sole missing physical step,
+and metric-only spin-2 uniqueness cannot discard this scalar sector.
+An inherited full-history/effect/source law must remove it by its own
+equations. This is not a D0-wide no-go or a new selected action.
+
 **Current priority, user synthesis of 18 October:** nonlinear spin-2
 bootstrap of the SAME native source. The [strategic synthesis §§7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 verifies the complete10×10 Lorentz Schur/linear-Einstein seed and derives
