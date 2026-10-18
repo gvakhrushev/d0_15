@@ -188,6 +188,24 @@ R_{uiuj}=-\begin{pmatrix}A&W_\times\\W_\times&D\end{pmatrix}_{ij},
 \]
 It has two independent proper-Lorentz Weyl wave polarizations \(W_+,W_\times\) AND a nonzero *trace/source* from independent real material kinetic gradients on one original CAR16 plane, both from one complete finite feedback first source.
 
+### 3.1. The UNWEIGHTED interior raw h⁻² residual is identically zero for this SAME feedback
+
+Because the previous construction satisfies the ORIGINAL independent 16 coframe Euler rows, ALL 24 proper-Lorentz link rows, and BOTH independent scalar/toplevel material Euler rows AT EVERY FREE INTERNAL CELL, it also meets a very strong **raw (not merely weak tested)** statement for this explicitly constructed complete J₂ process:
+\[
+\boxed{
+\frac1{h^2}\sum_{x\in\mathrm{interior}}
+ \left(
+ \sum_{a,r=0}^3|E_{e_{x,r}^a}^{J_2}|
+ +\sum_{r=0}^3\sum_{\alpha=1}^6|E_{U_{x,r},\alpha}^{J_2}|
+ +|E_{\psi_0(x)}^{J_2}|+|E_{\psi_4(x)}^{J_2}|
+ \right)=0
+}
+\tag{13a}
+\]
+**exactly for every h**, even with the actual nonuniform old regular AF weights and the fixed source-compatible target smooth metric. No uniform inverse, spectral Hessian gap, weak-* to strong transfer, or h→0 diagonal argument is needed to establish (13a); every summand is individually zero at finite h on the genuine free field directions.
+
+This solves the *unweighted raw source-norm form* inside the constructed local geometric-plus-Hodge-matter one-feedback programme. It MUST NOT be relabelled the original #216 theorem: that terminal is specifically the unchanged physical v8/old-price fixed-source comparison on the full periodic carrier, including independently sourced \(\tau\), all its real auxiliary variables, old history, observation and boundary rows. Here the transverse collar is fixed and the historical/physical price-selection step is not yet completed. The exact zero is nevertheless a direct constructive consumer for any native whole-programme identification preserving this instrument and its field derivatives.
+
 ## 4. Genuine exact Noether charge: original Hodge plane → retained matter conservation
 
 The complete finite J₂ price (5) is **exactly invariant** under global fixed rotations \(\Psi\mapsto e^{\alpha J_H}\Psi\) at arbitrary f/q on its declared encoded matter chart, because the only matter input is the ORIGINAL two-grade \(q\) (3), a true O(2) quadratic scalar. No separate kinetic Lagrangian or postulated matter continuity equation is introduced. Let the rotation parameter become an arbitrary site function \(\alpha_x\). At the null-star branch, the actual first source (6) gives
