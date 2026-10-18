@@ -292,3 +292,43 @@ of the unmeasured work/quantum record; extra structural estimates are
 required for physical smooth Einstein recovery. The real outstanding
 question becomes whether the admitted full D0 process actually both
 records this entire cut and selects/saturates its Shannon capacity.
+
+
+## 11. Uniform C1 source stability under approximately compiled fine-leaf preparation
+
+The parent exact r_i=r_i* envelope need not be implemented **exactly** at the level of measured classical leaf probabilities to retain its leading continuum geometric source. Here is a quantitative source-preserving sufficient theorem, consuming the exact defect (23).
+
+Assume all success and scene/correlation conditional profiles are already at their measured optimum (the genuinely free deviations of those rows remain separate). Let the actual positive leaf probabilities be
+
+    r_i = r_i*(1+epsilon_i),   r_i*=Z_i/D,
+    |epsilon_i|<=delta<1/2,   sum_i r_i*epsilon_i=0.     (25)
+
+Then the ENTIRE difference from the exact stationary measured Shannon value is
+
+    ell[Gamma - S_actual]= KL(r||r*)
+      =sum_i r_i* F(epsilon_i),
+    F(e)=(1+e)log(1+e)-e >=0.                           (26)
+
+Here S_actual=H(Y,J)/ell on the same complete recorded outcomes, with s_i,b_i conditional profiles fixed. The linear term disappears by normalization; no new potential is added.
+
+Differentiating (26) along any actual smooth field/preparation path V gives exactly
+
+    ell D_V(Gamma-S_actual)
+      =sum_i (D_V r_i*)F(epsilon_i)
+        +sum_i r_i*log(1+epsilon_i) D_V epsilon_i.       (27)
+
+This includes moving normalized denominators and is NOT a frozen-probability calculation. On a compact a_i-window where |z'(a)/z(a)|<=M and |D_V f_i|<=B, we have
+
+    sum_i |D_V r_i*| <= 2 M c B,     c=p² t².
+
+Using |F(e)|<=delta² and |log(1+e)|<=2delta for |e|<=delta<1/2, we obtain the leaf-count-uniform **source error**
+
+    ell |D_V(Gamma-S_actual)|
+       <= 2 M c B delta²
+             +2delta sum_i r_i*|D_V epsilon_i|.         (28)
+
+A source-regular compilation with sup_i |D_V epsilon_i|<=C c delta therefore gives normalized source error O(delta²) for ANY finite N (after the fixed positive c normalization of §4). If only sup|D_V epsilon_i|<=C delta is known, the normalized error is O(delta²/c); in that weaker case delta=o(sqrt(c))=o(t) suffices for the geometric source limit.
+
+This is a real *approximate-preparation/source* consumer for the owned native compiler bounds, **not a claim that the existing golden words achieve these pointwise relative probabilities and C1 derivatives**, which may be difficult when N grows. It also does not give C2 metric regularity, control rank births of coherent quantum entropy, fix source coefficients for independent matter, or prove the physical work/history admission. The distinction between source regularity and value closeness is mathematically decisive: an L1-close prepared distribution alone does not imply (28)'s small derivative term.
+
+An independent four-leaf controlled check, with epsilon_i=delta(u_i-sum_j r_j*u_j) for fixed u, f and lambda-dependent r*(lambda), gives D KL/dlambda = Theta(c delta²), uniformly after halving delta. Both nonzero and source-small outcomes are tested. This demonstrates that exact equality at finite N is unnecessary for the conditional GR-source limit, without erasing the genuine compiler price.
