@@ -23,6 +23,27 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+At input `8c3a615c`, the same owner's §§8.10–8.12 perform the stationary
+reduction rather than leave it as a premise. A vacuum-grade tensor identity
+gives exact rank27 for observer3 plus all24 Lorentz links. Their dual-density
+equations give a genuine source-preserving section over all ten constant
+metric components, with reference128 and2020 free density parameters.
+Its reduced function retains the flat-shape potential of the homogeneous
+owner; only that identical function's Hessian is transferred.
+
+The spatial extension has a decisive boundary: on Q=e0+e1 a polynomial
+full-CAR identity forces `2 delta q01+exp(i*pi/4)(delta q00+delta q11)=0`
+at the actual faithful root. A real off-diagonal metric wave violates it
+even with arbitrary observer, links and preparation variations. Thus that
+faithful section is not a submersion onto all nearby metric fields. On the
+different Q=2e1 mode a constructive Cartan lift covers all ten metric slots;
+five genuine internal directions remain after representation directions.
+Do not delete nine metric directions by treating the inactive12 block as
+apparatus. The consumer is an actual spatial stationary/source branch or
+complete intrinsic history price, not another homogeneous elimination or
+an assumed transfer of the old stored-domain classification. No general
+D0/GR no-go, physical price selection or refinement theorem follows.
+
 On input `6c78c60e`, the same owner's §§8.8–8.9 now consume the native
 forcing question directly. The coherent amplitude/Gram formula gives a
 complete event source, including interference and normalizer jets. Golden

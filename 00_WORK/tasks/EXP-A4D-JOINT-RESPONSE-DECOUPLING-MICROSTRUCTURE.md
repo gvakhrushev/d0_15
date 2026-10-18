@@ -105,6 +105,40 @@ stationary reduction of a specified complete price or the complete native
 geometry-history amplitude/price binding. A partial off-shell mismatch
 does not itself exclude a stationary reduction or global D0/GR.
 
+Stationary-reduction continuation at `8c3a615c`: solve the actual conditional
+full-Lorentz price's internal equations above the original physical metric.
+The retained variables are observer3 and all24 proper-Lorentz link directions,
+with full CAR16, reference128 and preparation equations. First prove the
+homogeneous shell-map rank analytically and construct its genuine paired
+field/density elimination; do not invert a zero density block or transfer a
+stored-domain Hessian by assumption. Then test the faithful preparation lift
+at nonzero Fourier modes with all connection directions present. Inputs:
+the full-Lorentz adjoint/source owner, exact Q-amplitude reduction, homogeneous
+physical-metric reduction and the complete-source owner §§8.8–8.9. Write
+paths remain the existing complete-source owner/source directory and shared
+consumers. Read-only assistants own distinct analytical checks. Consumer:
+a smooth source-preserving metric reduction of the same price, or an exact
+failed lifting equation locating the next native branch. Smallest decisive
+check: vacuum grade2 Lorentz-injectivity identity, observer Jacobian and
+actual shell/CAR obstruction; no old root or thermal replay.
+One bounded assistant additionally owns only check_spatial_shell_lift.py
+and SPATIAL_SHELL_LIFT_RESULT.json in the same source directory: the exact
+q0200 full-Lorentz first preparation lift, including reality and all ten
+physical metric slots. This does not claim a complete stationary section.
+The independent q1100 reviewer owns only check_spatial_shell_obstruction.py,
+SPATIAL_SHELL_OBSTRUCTION_RESULT.json and, if needed, its explicit separator
+data in that directory. Its consumer is one general-a,b separating identity
+against every retained link/observer column, not a numerical rank census.
+
+Consumed: §8.10 solves all27 retained homogeneous rows through exact
+dual-density equations and transfers only the identical reduced function's
+7+/3zero metric Hessian/flat-shape source. §8.11 proves a general-a>b>0
+full-CAR obstruction to a faithful spatial metric section on Q=e0+e1.
+§8.12 constructs all ten metric first lifts on Q=2e1; five internal source
+equations remain there. The next branch must address this spatial lifting
+boundary, keeping all physical metric directions, rather than repeating
+homogeneous elimination or assigning a new price.
+
 ### Whole-source synthesis after the local vacuum result
 
 The user's next request is to try an end-to-end breakthrough, rather than

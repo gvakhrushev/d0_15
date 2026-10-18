@@ -40,6 +40,15 @@ consumer is an actual source-preserving stationary reduction, or the full
 intrinsic geometry-history amplitude/price map. The named Book03 stack
 does not yet specify all its scalar functions. This does not exclude GR
 after a justified reduction or substitute the distinct full128 Shannon price.
+Sections8.10–8.12 now construct that reduction for every nearby constant
+metric with observer3, all24 Lorentz links and full preparation solved.
+An exact rank27 theorem gives the genuine dual-density saddle; the reduced
+finite price retains its flat-shape source. A spatial full-CAR separator
+blocks an off-diagonal metric wave at Q=e0+e1, while an explicit Cartan
+construction lifts all ten metric slots at Q=2e1. Thus the faithful section
+does not cover all nearby metric fields; the latter mode still needs five
+internal source equations. These are branch-specific results, with no
+transfer of the old full stored Hessian or declaration of physical GR.
 The [CAR/clock readout](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
 recovers the original metric, without an Einstein-frame rescaling. The
 [regular-natural-source classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)

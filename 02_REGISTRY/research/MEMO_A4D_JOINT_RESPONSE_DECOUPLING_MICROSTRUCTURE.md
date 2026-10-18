@@ -2,7 +2,21 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `6c78c60e`:** §§8.8–8.9 of the
+**Latest consumed transition, input `8c3a615c`:** the same source owner's
+§§8.10–8.12 solve a real full-Lorentz homogeneous reduction: rank27 pairs
+observer3 and links24 with dual preparation coordinates, preserving all128
+reference columns and2020 free shell-density parameters. All ten constant
+metric components lift; the exact reduced price retains its flat-shape
+source and metric Hessian7+/3zero. A separate exact polynomial identity
+prevents a faithful preparation lift of an off-diagonal metric wave at
+Q=e0+e1, so this section does not extend to arbitrary spatial metric fields.
+On Q=2e1 an explicit Cartan inverse instead lifts all ten physical metric
+slots, with five internal kernel directions still requiring their own
+source equations. This replaces an assumed stationary reduction by its
+actual positive sector and failed extension. It does not select the native
+price, classify all preparation branches or close physical GR/raw #216.
+
+**Consumed source comparison, input `6c78c60e`:** §§8.8–8.9 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 derive the coherent amplitude/Gram event source and test the actual complete
 finite H+J+R against the existing Palatini stencil. Its matched mixed

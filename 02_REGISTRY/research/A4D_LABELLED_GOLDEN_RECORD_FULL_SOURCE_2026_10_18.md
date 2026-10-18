@@ -1393,6 +1393,346 @@ P_23(j)=exp[t(v_(j+e_2)−v_j)B_23]. С исходными solder legs h e_0,h e
 шаг. Положительные reconstruction/compiler/Cartan результаты остаются
 готовыми потребителями; повторно доказывать их для обхода (43) не нужно.
 
+### 8.10. Полная Lorentz-связь: настоящая однородная stationary reduction
+
+Вход `8c3a615c`. Теперь потребляется оставленная в §8.9 возможность
+исключить внутренние переменные по **их собственным** уравнениям.
+Результат положителен для всех десяти **постоянных** метрических slots:
+наблюдатель, все24 компоненты независимой Lorentz-связи и подготовка
+решены совместно. Старая stored-domain редукция не переносится по имени;
+ниже доказывается новый rank27 и новая локальная секция. Её полная цена
+совпадает с прежней homogeneous функцией, поэтому положительный отклик
+на форму плоского тора сохраняется и после всех новых link equations.
+
+Это теорема условной заданной H+J+R, а не выбор физической цены D0.
+Её reference128-подготовка рассматривается как внутренняя переменная
+данного эксперимента. Она не удаляет независимую физическую материю из
+будущей Einstein–matter теоремы и не доказывает секцию над всеми g(x).
+
+**Носитель и уравнение подготовки.** Берём настоящий faithful joint root
+[full-Lorentz владельца](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md),
+а не корень старого ограниченного link chart. Сохраняются L=8,
+ℓ=1/8, full CAR16, reference128, все4096 тепловых momenta и исходные
+α,β,z,M,C,m. В principal frame
+
+    F*=cI+b11ᵀ, c=a−b>0, b>0, n*=e0, M_r=I,
+    q=FηFᵀ, g=q⁻¹, G=F(−η+2nnᵀ)Fᵀ,
+    P=P_Ω⊗I16, Ω={±e_j:j=0,…,3}, ρ*=P/128,
+    ΔP=εP, ε=γd, γ=128−64√2, d=G_jj.                (50)
+
+G — положительный Gram оператора, q — исходная контравариантная
+Lorentz-метрика; они не отождествляются. Для полной нормированной
+amplitude Ψ собственное уравнение есть `(Δ−ε)Ψ=0`.
+При rank128 подготовке его первая необходимая compatibility-строка
+
+    T(v)=P X_v P−Tr(P X_v)P/128=0, X_v=DΔ[v].         (51)
+
+Она не содержит свободной δρ, способной погасить T: Δ−ε зануляется
+на всём P. Внешние Q-amplitudes решаются настоящим signed resolvent из
+[владельца полного joint kernel](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md),
+§3. В однородной секции ниже Δ сохраняет каждый momentum, поэтому
+P/Q смешивание вообще отсутствует и все amplitude rows решены точно.
+
+**Все24 link направления независимы в (51).** Пусть u_r — четыре
+независимых principal vectors и Ω_r∈so(η) — произвольные постоянные
+link jets. Пишем `Γ(Ω)=Σ_ab Ω_ab C_a C_b*`, `ζ_j=t_j−1`. Тогда
+
+    d(k)=ℓ⁻¹Σ_r ζ_r C(u_r),
+    δd(k)=ℓ⁻¹Σ_r t_r C(u_r)Γ(Ω_r),
+    P₂ X(k)|vac> = ℓ⁻² Σ_rs t_r ζ_s u_r∧Ω_r u_s.    (52)
+
+Это literal exterior representation: Γ(Ω)|vac>=0 и
+Γ(Ω)C(v)|vac>=C(Ωv)|vac>. Adjoint-часть δD тоже убивает vacuum;
+grade2 X получается именно из δd·d|vac>, без trace-усреднения.
+На двух shell points k=±e_j формула (52) равна
+
+    ℓ⁻² ζ_± [M_j+ζ_±N_j],
+    M_j=Σ_r u_r∧Ω_r u_j, N_j=u_j∧Ω_j u_j,
+    ζ_±=exp(±iπ/4)−1.                               (53)
+
+Оба ζ ненулевые и различны. Если (51) выполнено, grade2 в (53)
+равен0 на обоих points, откуда M_j=N_j=0. Постоянные coframe/observer
+jets на каждом таком shell дают scalar X и не могут компенсировать
+этот grade2. Поскольку u_j образуют базис, получено
+`Σ_r u_r∧Ω_r v=0` для всех v. Опустив индексы η, задаём
+
+    Γ_abc=Σ_r (ηu_r)_a(ηΩ_r)_bc.
+
+Wedge equation делает Γ симметричным по a,b, а Lorentz compatibility —
+антисимметричным по b,c. Поэтому
+
+    Γ_abc=Γ_bac=−Γ_bca=−Γ_cba=Γ_cab=Γ_acb=−Γ_abc.
+
+Значит Γ=0 и, по обратимости базиса u_r, все Ω_r=0. Получена
+инъективность **всех24** link directions, без численного minor и без
+предположения о старом own-leg/positive-isometry constraint.
+
+**Три оставшихся observer directions.** При fixed F=F*, δn=(0,ν)
+разности diagonal G имеют Jacobian
+
+    J_obs=4bc(I₃−11ᵀ), det J_obs=−128b³c³≠0,
+    J_obs⁻¹=(I₃−11ᵀ/2)/(4bc).                       (54)
+
+Это тот же явный geometric Jacobian из
+[homogeneous metric owner](A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md),
+§2, теперь на полном link domain. Scalar observer image не может
+сократить ненулевой link image по (52)–(53). Поэтому restriction (51)
+на `y=(observer3,links24)` имеет **точный rank27** в настоящем корне.
+
+**Нелинейная секция и все собственные внутренние equations.** Для
+каждой близкой постоянной q выбираем smooth F(q) с FηFᵀ=q. По (54)
+существует единственный близкий n(q), выравнивающий все четыре diagonal
+G. Ставим M_r=I. Это уже предъявленное точное решение **всех** matter
+constraints, а не вывод нелинейной разрешимости из одного linear rank.
+ΔP=γd(q)P, и любая нормированная density на P решает полное уравнение
+подготовки, включая reference rotations, coherences и внешние amplitudes.
+
+Translation-invariant density на P имеет2047 real coordinates. Выбираем
+27 направлений E_A, dual к T_y в корне, и оставляем остальные2020 как
+свободные малые neutral параметры ξ. Все27 observer/link source equations
+точно линейны по этим density coordinates:
+
+    D_y F_price(Δ)+Tr(ρ D_yΔ)=0,
+    ρ=P/128+Σ_A r_A E_A+ξ.                          (55)
+
+Их Jacobian по r_A — обратимая dual pairing T_y*. В достаточно малой
+окрестности (55) однозначно решает r=r(q,ξ,frame6), и ρ остаётся строго
+положительной на P. Это новые **собственные** поля источника той же цены;
+никакой residual-defined stress не добавлен. Ψ=√ρ U_ref сохраняет все128
+reference columns. Число2020 относится к block-diagonal shell densities:
+оно не выдаётся за число всех amplitude/reference нулевых направлений.
+Исходный neutral basis не обязан оставаться kernel при изменении q:
+его изменившийся source поглощается той же dual correction r(q,ξ).
+
+Шесть однородных frame rows следуют из точной совместной Lorentz Ward
+identity после решения observer/link/matter rows. Преобразуется также
+подготовка; зависимость principal whitening не замораживается. Все
+ненулевые Fourier field rows равны0 по translation invariance полей и
+ρ. Поэтому секция решает внутренние уравнения исходного **полного**
+пространственного опыта над постоянными метриками. Десять homogeneous
+metric rows сохраняются как производные reduced цены, а не объявляются
+решёнными вне исходного joint root.
+
+Обращается настоящий paired saddle block, после выбора dual coordinates,
+
+    K=[[H_yy,T_y*],[T_y,0]],
+    K⁻¹=[[0,T_y⁻¹],[(T_y*)⁻¹,−(T_y*)⁻¹ H_yy T_y⁻¹]]. (56)
+
+Его inertia=(27,27,0), независимо от H_yy. Нулевой density block не
+инвертируется; neutral equations не исчезают из-за pseudoinverse.
+Именно тождество ΔP=εP решает их нелинейно на найденной секции.
+
+**Результирующий полный источник.** На секции
+
+    Γ(q)=F_price(G(q,n(q)))+γd(q),
+    DΓ[δq]=DS[любой lift δq на этой секции].          (57)
+
+Envelope identity следует из уже решённых внутренних rows. Γ не зависит
+от neutral ξ и frame/reference choices в этой локальной семье. Все
+finite-B, feedback и moving-Z derivatives остаются в F_price. Выражение
+(57) в точности совпадает с функцией, аналитически исследованной в
+homogeneous owner §§4–5. Поэтому переносятся **её** результаты:
+metric Hessian имеет inertia=(7 positive,0 negative,3 zero); существует
+constant-diagonal, constant-det G(t), на которой Γ''(0)>0, хотя
+
+    I_EH(g(t))=0, Vol(g(t))=const, R_actual(t)=γd*=const.
+
+Старый полный stored-domain Hessian, его spatial spectrum и число
+нулевых направлений здесь не переносятся. Доказанное совпадение функции
+(57) достаточно для её десятиметрического Hessian и flat-shape test.
+Следовательно, даже после **всех24** link equations эта finite ветвь
+не равна `c I_EH+Λ Vol+same R+const` в близкой homogeneous окрестности.
+Это не исключает другой native price, derived дополнительный сектор
+или иной контролируемый limit; ни один из них не подставлен вместо (57).
+
+**Почему нельзя оставить произвольную независимую связь.** Иная
+постановка — исключить только observer/preparation над всеми (e,ω) —
+уже не имеет smooth lift в том же faithful root. Для homogeneous
+δM₂=B₀₁ и shell k=e₃ literal CAR16 даёт
+
+    X_vac,vac=0,
+    Tr₁₆ X/16=b²(√2−2)/ℓ²≠0.                       (58)
+
+Значит X не scalar. Ни constant coframe/observer correction (scalar
+на каждом shell), ни δΨ, ни другой Fourier mode не исправляют (51)
+в этом diagonal block. В (55) связь сама решается внутренне; поэтому
+(58) не противоречит положительной секции и не является fixed-observer
+metric no-go. Следующий физический переход должен решать настоящий
+пространственный connection/preparation system на своём carrier, а не
+называть все независимые (e,ω) готовой базой гладкой редукции.
+
+### 8.11. Пространственная metric section: точное препятствие faithful ветви
+
+Однородная секция §8.10 не продолжается в smooth stationary section над
+**всеми** близкими пространственными метриками того же faithful root.
+Это доказано одной необходимой строкой matter equation, при свободных
+observer, всех24 Lorentz links и всех preparation/reference variations.
+Ни heat Hessian, ни предположение о знаке internal Schur здесь не нужны.
+
+Обозначим Fourier mode через Q, чтобы не смешивать его с physical q.
+Для Q=e₀+e₁ среди occupied shell pairs находятся
+
+    (k,l)=(−e₀,e₁), (−e₁,e₀), l=k+Q.
+
+На каждой паре собственное preparation equation требует
+
+    X_lk=D_l J_lk+J_lk D_k=0.                        (59)
+
+Обе стороны принадлежат полному CAR16. Это не только trace, vacuum или
+compression на одной выбранной материи: faithful rank128 Ψ обратима
+на всём P. Член `(Δ−ε)δΨ` после P-projection исчезает, а δεP не имеет
+off-diagonal momentum block и не исправляет (59).
+
+Здесь J — настоящий derivative D=d+d*, вычисленный **до** сжатия.
+Если `t_r(k)=exp(iπk_r/4)`, `C_r=C(u_r)`, то в complexified Fourier
+coordinates
+
+    ℓ J_lk=Σ_r [(t_r(k)−1)C(δu_r)
+                  +(t_r(l)⁻¹−1)A(δu_r)
+                  +t_r(k) C_r Γ(Ω_r)
+                  +t_r(l)⁻¹ Γ(Ω_r)ᵀ C_rᵀ],
+    A(v)=Σ_a v_a C_aᵀ.                             (60)
+
+Transpose в (60) действует на fixed real CAR matrices, без сопряжения
+Fourier amplitudes. Hermitian reality связывает Q с −Q посредством
+комплексного сопряжения всего jet. Подмена `A(δu)` на conjugate-linear
+adjoint в одном Q-block дала бы другую, неверную систему.
+
+**Общая algebraic identity.** Положим r=a/b>1, t=exp(iπ/4), и нормируем
+u→u/b, δu→δu/b, X→ℓ²X/b², δq→δq/b². У двух16×16 blocks (59) есть
+явный linear functional с коэффициентами L_i(r)∈Q(t)[r], degree≤4:
+
+    Σ_i L_i(r) [ℓ²X/b²]_i
+      =(r²−1) [2δq¹⁰+t(δq⁰⁰+δq¹¹)]/b².           (61)
+
+Здесь q¹⁰=q⁰¹, а q — именно Lorentz metric `q_rs=u_rᵀηu_s`.
+Полный список L_i и literal-CAR проверка (60) находятся в
+[пространственном checker](sources/d0_labelled_golden_record_full_source_2026-10-18/check_spatial_shell_obstruction.py)
+с его [явным separator](sources/d0_labelled_golden_record_full_source_2026-10-18/SPATIAL_SHELL_SEPARATOR.json).
+Проверка раскрывает identity по
+всем16 coframe и24 независимым Lorentz-link columns и всем степеням r.
+Это точное polynomial equality над Q(t), а не extrapolation численного
+rank или подстановка рационального fixture вместо настоящего корня.
+Исходные b>0 и ℓ>0 восстанавливаются указанным scaling. Поскольку
+r²−1≠0 на actual root, (59)–(61) дают необходимое условие
+
+    2δq⁰¹+t(δq⁰⁰+δq¹¹)=0.                          (62)
+
+Слева annihilated все link columns, а также observer/internal-frame
+directions: при fixed physical q они имеют δq=0. В частности,
+`Dq¹⁰=u₁ᵀηδu₀+u₀ᵀηδu₁`, что проверяет type условия независимо от
+вычисленного separator. Moving principal whitening и induced link jets
+уже входят в пространство (60), поэтому исключать их не требуется.
+
+**Реальное метрическое направление без lift.** Берём только
+
+    δq⁰¹(x)=δq¹⁰(x)=cos[2π(x₀+x₁)/8],              (63)
+
+остальные восемь symmetric metric slots равны0. Эта малая вариация
+сохраняет Lorentz signature. Её +Q amplitude нарушает (62); −Q имеет
+сопряжённое нарушение. Следовательно, для (63) не существует даже
+первого faithful matter-stationary lift, а значит и smooth section всех
+internal Euler equations над открытой окрестностью полных q(x).
+Вариации других Fourier modes не смешиваются с (59) в translation-invariant
+корне. Произвольные reference и rank-changing **tangents через этот же
+faithful root** также не помогают: препятствие следует из проекции
+исходного amplitude equation, а не из фиксации δρ или reference rank.
+
+Этот вывод не требует полного rank census или второго предполагаемого
+constraint. Он меняет consuming route: повторное исключение observer
+или добавление пропущенных Lorentz links не продолжит данную faithful
+секцию до unconstrained metric action. Другая начальная preparation,
+другая spectral support, обоснованный предел или полный собственный
+history price требуют своего настоящего lifting/source аргумента.
+Einstein–matter теория на иной ветви и исходный raw/#216 terminal здесь
+не исключены и не объявлены решёнными.
+
+### 8.12. Положительный пространственный подъём всех десяти metric slots
+
+Препятствие §8.11 не превращается в утверждение, что полная Lorentz-связь
+вообще не допускает пространственной metric response. На Q=2e₁ есть
+точный **первый preparation lift всех десяти** физических metric slots.
+Он содержит три дополнительных направления, которых не было в прежнем
+stored link chart. Полные внутренние Euler rows этим ещё не решены.
+
+Единственная occupied ordered pair здесь k=−e₁,l=e₁. Пусть
+`U=[u₀,u₁,u₂,u₃]=ηF*ᵀ`, u=u₁, θ=π/4. Для каждого Sᵀ=−S из so(4)
+определим четыре **Lorentz-skew** A_r следующим алгебраическим inverse:
+
+    L_abc=(ηu)_a(ηS)_bc−(ηu)_b(ηS)_ac,
+    G_abc=(L_abc−L_bca+L_cab)/2,
+    (ηA_r)_bc=Σ_a [(ηU)⁻¹]_ra G_abc.                (64)
+
+Тогда A_rᵀη+ηA_r=0 и точно
+
+    Σ_r C(u_r)Γ(A_r)=C(u)Γ(S).
+
+Это Cartan inverse на raising cubics; тензорный uniqueness argument
+§8.10 также показывает его однозначность. S с временным индексом сам
+не принадлежит so(η); связь строится из настоящих A_r, а не из S.
+Следующие Fourier coefficients имеют нулевой full16 matter residual:
+
+    δu₁=Su, δu_(r≠1)=0,
+    Ω₁=(1−i)A₁, Ω_(r≠1)=−i√2 A_r,
+    J_lk=Γ(S)D_k−D_lΓ(S),
+    X_lk=D_lJ_lk+J_lkD_k=0.                         (65)
+
+Последнее равенство использует D_k²=D_l²=εI16, а формула для J
+проверяется непосредственно по (60),(64). Сопряжённые coefficients
+на −Q дают J_kl=J_lk*, поэтому это допустимые real field variations.
+Все12 inactive coframe entries δu_(r≠1) тоже имеют X_lk=0: их
+incoming/outgoing phases в (60) равны1. Других occupied pair для Q нет.
+Внешние Q-amplitude rows получают единственный signed-resolvent lift
+из §8.10; никакой reference column не отбрасывается.
+
+**Полнота на этом Fourier mode.** Invertible Cartan map превращает
+active coframe4+links24 в пространство jets
+
+    J=β(v)+B+Bᵀ, β(v)=C(v)+C(v)ᵀ,
+    B∈span{C_iC_jC_kᵀ:i<j}, dim=24.
+
+Скалярный ненулевой factor ζ=exp(−iθ)−1 поглощён в v. Это пространство
+имеет dimension28: cubic B убивает vacuum, а β(v) выделяет все четыре
+one-particle entries. Для вычисления rank можно ортогонально повернуть
+**CAR-базис** так, чтобы u∥e₀; physical Lorentz gauge этим не заменяется.
+После Cartan inverse весь cubic24 и β-space инвариантны при таком
+CAR rotation; сохранение исходной so(η) этим поворотом не предполагается.
+Разделив полную Λ•(C⁴) по occupation активного e₀, получаем
+
+    ℓD_k=|u|[[0,ζ̄I],[ζI,0]], ℓD_l=|u|[[0,ζI],[ζ̄I,0]],
+    X=0 ⇔ J₀₁+J₁₀=0, ζJ₁₁+ζ̄J₀₀=0.
+
+Поскольку J=Jᵀ, первая строка оставляет три skew one-body coefficients:
+active v₀, три pair coefficients и symmetric one-body part зануляются.
+Вторая зануляет девять all-spatial cubics и определяет три remaining
+active-occupation coefficients через три свободных spatial v. Поэтому
+kernel в active28 имеет dimension6, и rank_C X=22. Шесть (65) независимы
+и исчерпывают его; вместе с inactive12 получен весь18-dimensional kernel
+на coframe16+links24. Это аналитический normal-form proof, подтверждённый
+точной алгебраической rank-проверкой на том же CAR16.
+
+**Physical metric image.** Для q=UᵀηU inactive12 дают все девять
+symmetric variations с δq¹¹=0. Явный lift: для такой V выберем матрицу
+E с E_s1=0, E_1r=V_1r и E_sr=V_sr/2 при s,r≠1. Тогда
+δU=ηU⁻ᵀE имеет δu₁=0 и δq=E+Eᵀ=V. Представитель S₀₁ в (65) даёт
+
+    δq¹¹=2uᵀηS₀₁u=−4ab≠0,
+    u=(b,−a,−b,−b)ᵀ.                              (66)
+
+Для любой V сначала вычитаем этот представитель с coefficient
+`−V¹¹/(4ab)`, затем поднимаем оставшиеся девять slots. Это правый
+обратный на **всех десяти** metric components при настоящих a>b>0.
+
+**Конкретный остаток.** После сохранения observer3 и учёта шести
+representation directions остаётся15 направлений preparation-compatible
+field kernel: десять метрических и пять внутренних. Поэтому следующая
+source-preserving редукция на этой моде обязана решать пять настоящих
+внутренних уравнений. Inactive12 содержат девять физических метрических
+направлений; обращение всего их Hessian как «прибора» удалило бы часть
+самой метрики. Никакой такой Schur здесь не применён. Этот положительный
+first-order lift не снимает §8.11 на другой моде, не является нелинейной
+joint family и не повышает conditional H+J+R до выбранной цены D0.
+
 ## 9. Проверка
 
 [Новый узкий checker](sources/d0_labelled_golden_record_full_source_2026-10-18/check_labelled_source.py)
@@ -1444,3 +1784,34 @@ normalization control и все исходные component types.
 вывод (46)–(48) доказан аналитически. Default read-only; --output сохраняет
 receipt явно. Старые suites не повторялись. Physical c_native остаётся
 не вычисленным; полный128 Shannon mixed source не объявляется проверенным.
+
+[Full-Lorentz stationary reduction check](sources/d0_labelled_golden_record_full_source_2026-10-18/check_full_lorentz_stationary_reduction.py)
+проверяет literal CAR vacuum/one-particle identities на всех шести Lorentz
+генераторах, нулевое пространство symmetry/antisymmetry tensor, настоящий
+boost trace/vacuum witness (58) и observer Jacobian (54). Его
+[FULL_LORENTZ_STATIONARY_REDUCTION_RESULT.json](sources/d0_labelled_golden_record_full_source_2026-10-18/FULL_LORENTZ_STATIONARY_REDUCTION_RESULT.json)
+содержит29 exact checks, Python3.9.6/SymPy1.14.0. Rank27, nonlinear section,
+envelope source и область переноса homogeneous Hessian доказаны в §8.10
+аналитически и независимо проверены. Default read-only; receipt opt-in.
+Старые root/thermal suites не повторяются.
+
+[Spatial shell obstruction](sources/d0_labelled_golden_record_full_source_2026-10-18/check_spatial_shell_obstruction.py)
+проверяет (61) как exact polynomial identity по всем40 columns, без
+root fixture или rank census. Signed permutation переводит literal ACDB
+CAR в basis сохранённого separator, сохраняя все16 grades. Оба ordered
+blocks, complex conjugation Fourier-моды и Hermitian обращение endpoints
+проверены отдельно; wrong adjoint order и positive Gram дают отрицательные
+контроли. [Receipt](sources/d0_labelled_golden_record_full_source_2026-10-18/SPATIAL_SHELL_OBSTRUCTION_RESULT.json)
+содержит592 checks, Python3.9.6/SymPy1.14.0. Объявлено ровно необходимое
+условие (62), без полного rank или утверждения о balanced rank8.
+
+[Spatial shell lift](sources/d0_labelled_golden_record_full_source_2026-10-18/check_spatial_shell_lift.py)
+проверяет все шесть (64)–(65) при symbolic a,b, full16 intertwining,
+Lorentz compatibility каждого A_r, real −Q partner и явный right inverse
+на произвольную symmetric physical δq. Exact normal-form rank22 и
+independence шести представителей подтверждают аналитическую полноту.
+[Receipt](sources/d0_labelled_golden_record_full_source_2026-10-18/SPATIAL_SHELL_LIFT_RESULT.json)
+содержит100 checks, Python3.9.6/SymPy1.14.0. Это linear preparation lift;
+все internal Euler rows и nonlinear metric section в нём остаются false.
+Оба checker имеют read-only default и явный --output для receipt; все
+три новых receipts сверены с выводом отдельных default запусков.

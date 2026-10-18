@@ -17,7 +17,8 @@ refinement limit**. This target remains open.
 | [Full AF source normal form](02_REGISTRY/research/A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md) | Retains the off-shell action identity and complete stationary-set bijection for its distinct declared AF/scene price. Its changed metric and constraint stress need physical identification. The literal spectral H+J+R, open-Julia mean and new labelled price are different sources. |
 | [Common research / Draft #334](02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md) | Retains the full source, history, matter, preparation, geometry and joint-root results with their scopes. Scoped obstructions change the consuming arrow; they do not erase the positive construction or establish a general GR no-go. |
 | [Native price comparison, §§8.8–8.9](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Derives the coherent amplitude/Gram event source. An exact full finite H+J+R mixed variation is zero where the same star stencil is nonzero; direct source identification fails. Book03's remaining named stack blocks are not yet one defined geometric functional. |
-| Next consuming proof | Derive a source-preserving stationary reduction of an actually specified complete price, or derive the full geometry-history amplitude/price map from D0. Carry its interference, old-history, preparation and normalizer sources. The existing compiler and Cartan theorem consume that result; they do not choose the price. |
+| [Full-Lorentz stationary reduction, §§8.10–8.12](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Solves observer, all24 link and full preparation equations above every nearby constant metric. The same finite price retains its flat-shape potential. One spatial mode lifts all ten metric slots, but another has an exact metric obstruction, so this faithful section cannot cover all nearby metric fields. |
+| Next consuming proof | Establish an actual spatial stationary/source branch with its native preparation and complete price. The faithful branch's failed metric lift cannot be repaired by repeating observer elimination. Preserve the different positive spatial lift and all matter/history sources; the existing compiler and Cartan theorem consume a justified physical branch. |
 
 The latest composition recovers the full metric and Lorentz transport from
 the actual raising operators, including the null directions of the curved
@@ -30,11 +31,15 @@ configured GR experiment does not yet select the law of D0.
 The existing Role/site naturality theorem already selects the star type
 within its canonical insertion class. The remaining forcing question is
 whether the complete native price has a nonzero component of that type.
-The new exact curvature probe prevents substituting the old H+J+R directly:
+The exact curvature probe prevents substituting the old H+J+R directly:
 its full mixed source vanishes on a matched coframe/link variation while
-the Palatini source does not. This is a scoped off-shell distinction;
-an actual stationary reduction may retain additional contributions and
-has not been excluded. The next work acts on that variational interface.
+the Palatini source does not. The subsequent full-Lorentz reduction now
+solves the actual internal equations for constant metrics, retaining the
+flat-shape source. An exact nonzero-mode preparation equation prevents
+extension of that faithful section to arbitrary metric fields. This
+locates a branch obstruction, not a general D0/GR no-go. A different mode
+has a constructive all-ten metric lift with five internal equations still
+to solve; the old restricted-link classification does not cover it.
 
 The original fixed-g/fixed-tau, all-ten unweighted raw h^-2/#216 task remains
 **OPEN with its exact terminal unchanged**. The [source-norm comparison](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md#5-точное-различие-двух-требований-к-пределу)
