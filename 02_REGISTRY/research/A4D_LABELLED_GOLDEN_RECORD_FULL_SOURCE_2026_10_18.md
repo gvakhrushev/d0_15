@@ -4194,6 +4194,175 @@ premises: admission moving scalar-query/controller, entire price/cut,
 его free-scale row при Γ=0, exact joint roots и physical refinement.
 Эта algebra не переносит старый finite pp-root на другой query word.
 
+### 6.51. Full16 density bridge: вес, амплитуда и настоящая связь — разные объекты
+
+Потреблён новый merged worker [matter on dressed metric](A4D_MATTER_ON_DRESSED_METRIC_2026_10_18.md),
+main `77d3ab60`. Его scoped no-go корректен: прежняя grade0/null
+строка и chronology angle jet не дают независимого полного spin stress
+на ghat. Нельзя называть raw conformal Einstein defect материей ghat,
+отбрасывать matter/preparation Euler или выдавать старую raw partial
+за full joint source после смены physical coordinates; T=G не задаётся.
+Metric partial при фиксированных независимых matter coordinates сама
+по себе допустима и является правильным способом определить stress.
+Программа(13ee) даёт собственный scalar stress; она не выводит
+динамику остальных15 amplitudes из original whole D0 price.
+
+Есть конструктивное уточнение, позволяющее правильно собрать уже
+имеющийся full16 pairing. Пусть χ=μ/barμ>0, q_raw=χqhat и N —
+exterior degree. Owned positive heat-candidate pairing имеет weight
+W_k(raw)=χ^(2−k)W_k(hat). Его квадратный корень НЕ второй закон веса:
+
+    A_χ=χ^(1−N/2),
+    A_χᵀ W_hat A_χ=W_raw,
+    A_χ C(u)ρ(M)A_χ⁻¹=χ⁻¹/² C(u)ρ(M).          (13en)
+
+ρ(M) здесь grade-preserving, mhat=A_χm_raw, а radial observer scaling
+сохраняет его line. Это exact full16 amplitude isometry
+между ДВУМЯ указанными weighted pairings. В отличие от uniform
+√χI она действительно воспроизводит dressed creator и не теряет
+grades0,2,3,4. det A_χ=1, однако в старом fixed-counting CAR norm
+A_χᵀA_χ≠I. Weighted pairing нельзя отождествить с original positive
+counting adjoint только по слову «isometry».
+
+При χ_x≠χ_y возникает обязательный edge factor:
+
+    A_x X_xy A_y⁻¹=χ_x⁻¹/² X_xy (χ_x/χ_y)^(1−N/2),
+    Q=I−N/2, K_xy=exp[Q(logχ_x−logχ_y)].         (13eo)
+
+K_xyK_yz=K_xz, то есть это flat exact grading/density connection.
+Proper Lorentz exterior lift фиксирует grade0 и grade4, а K_xy
+меняет их в противоположных степенях; его нельзя удалить или назвать
+той же proper-Lorentz связью. В continuum
+A∂_μA⁻¹=∂_μ−Q∂_μlogχ. Для degree-raising exterior derivative ещё
+есть creator prefactor:
+
+    AdA⁻¹=χ⁻¹/²Σ_μ C(dx^μ)[∂_μ−Q∂_μlogχ],      (13ep)
+
+где Q действует на incoming grade. Это не основание вводить новый
+physical gauge field: формула только показывает недостающий transport
+при данном change of representation.
+
+Новый full16 adjoint control решает, почему этот bridge не отменяет
+§6.49. Для D=i(C₀−C₀ᵀ) имеем D²=I16; ADA⁻¹ тоже имеет square I16.
+Но rebuilding по dressed creator и СТАРОМУ counting adjoint даёт
+D_count=iχ⁻¹/²(C₀−C₀ᵀ), D_count²=I16/χ. Его настоящий heat trace
+16exp(−β/χ) отличается от16exp(−β). Следовательно kinematic weighted
+intertwiner сам по себе НЕ переносит old H+J+R, preparation/cut или
+физический adjoint. Positive bridge теперь точен; оставшийся whole
+source transition также назван точно и не замаскирован новым T.
+
+Для будущего spin consumer отсутствие уже выписанного symmetric T
+не является общим запретом. На first-order Cartan carrier надо сначала
+вычислить пару tetrad/connection sources(τ_a,σ_ab) той же настоящей
+цены и её Lorentz identity, включая matter Euler. До исключения
+связи antisymmetric tetrad row не обязана быть нулевой отдельно от
+spin row. FullCAR здесь exterior representation; grade0 proof не
+заменяет эти строки и не превращает16 grades в независимый Dirac
+spinor. Новый bridge решает representation interface, не эти Euler rows.
+
+### 6.52. Moving query исполняется без нового sampler: тот же trace cut и полная цена компиляции
+
+Quantile execution worker проверял истинное ограничение СТАРОГО
+fixed-cell sampler. Но programme(13ee) не требует менять golden
+p/p² splitting. Здесь π_i=D_type(i)/K — intrinsic regular TRACE
+multiplicities J₂, а не Born leaf probabilities. Достаточно оставить
+все адреса и их π_i на месте и компилировать operands
+
+    r_i(θ)=r_h(θ,T_θ(c_i)), q_i(θ)=q_h(θ,T_θ(c_i)),
+    T_θ=T_(J_θ/V_θ).                                (13eq)
+
+Все LEFT projectors продолжаются на те же four AF copies, как в
+старом controlled word. Guarded block word Σ_iP_i⊗W_i коммутирует
+с P_i. Поэтому настоящий Born law Tr(ρP_i) сохраняется для любого
+ρ и его корреляций; он НЕ обязан равняться π_i или PF μ_i. Именно
+regular trace и Binet→PF дают quadrature limit(13ef). При generic
+approximate compiler guard commutation не предполагается: его error
+учитывается в whole-output norm ниже. Требовать
+новый stochastic sampler с Born probabilities=π здесь было лишней
+premise. Другие preparation/H/R/history terms всё ещё видят ρ.
+
+**Конечная исполнимая inverse-CDF композиция.** На одном compact
+positive chart для каждого из четырёх triangular stages возьмём
+fixed0<m≤F_θ′≤M и F_θ(0)=0,F_θ(1)=1. Тогда фиксированная iteration
+
+    x₀=u, x_{j+1}=x_j+[u−F_θ(x_j)]/M              (13er)
+
+сохраняет[0,1] и имеет contraction q=1−m/M<1. Её endpoints равны
+u/M и1−(1−u)/M; derivative лежит в[0,q]. При fixed bounded C³
+chart после n steps C² error inverse и всех composed query jets
+ограничен C(1+n)²q^(n−2). Для C³ требуется bounded C⁴ chart и
+C(1+n)³q^(n−3). q=0 — constant-density one-step case. Constants
+включают θ/address derivatives всех stages; M не меняется при variation.
+Это finite analytic composition на genuine operand chart, без
+field-dependent integer crossing. Bare nearest-cell assignment таким
+source theorem не является.
+
+На fixed h, finite macro cut и заданной analytic interpolation/evaluation
+model каждое(13eq) есть analytic function конечной коллекции исходных
+continuous Julia entries и scalar queries. Старый addressed polynomial/
+C³ compiler из §§6.12,6.14,6.19 и §8.6 компилирует СРАЗУ angle_i,
+с fixed control word. Для просто smooth model применяется C³ polynomial
+approximation с её actual higher-derivative bounds, без автоматически
+приписанной analytic rate. Intermediate T не обязан становиться отдельным
+physical sampler или новым перемещающимся носителем. Ошибка δ operands
+должна включать полный h⁻⁴ star interpolation и все field/address jets;
+для нормированной weak price она O(δ), поскольку Dr j_t,Dq j_t=O(t²).
+Actual interpolation, query norm и runtime считаются, а не объявляются
+uniform по одному существованию analytic function.
+
+**Цена всего compute/uncompute word.** Здесь используется ровно
+достаточный actual return interface §6.19:
+
+    P=P_old⊗|0_work><0_work|,
+    F_U=P U†(I−P)UP.                               (13es)
+
+Если идеальный macro на ВСЕХ old/data/CAR16 input columns удовлетворяет
+U(v⊗0)=(U_old v)⊗0, то F_U=F_old⊗|0><0| на всём расширенном
+carrier и det(I−zF_U)=det(I−zF_old). Это следует из равенства
+WHOLE output columns, а не из выкидывания work. Input complement
+даёт F=0 из реальных P-compressions; все leakage OUTPUTS остаются
+в I−P. Произвольное offblank действие U не нужно объявлять identity.
+При P_old⊗I_work вывод неверен: exact2×2 work control добавляет
+factor1−z sin²b, даже когда blank input вернулся чистым. Leakage
+angle ε в actual cut добавляет cos²a sin²ε к sin²a — не удаляется.
+
+При whole-output C³ compiler error η и actual jet bound L≥1 estimate
+(13ba) даёт после СОБСТВЕННОЙ нормировки(13ef)
+
+    E_compile≤2¹⁴ z r L⁶ η /
+             [(1−z)⁴ νK a₀ c_AF t²].               (13et)
+
+Здесь r — настоящий rank return cut, а не число активных scalar
+leaves; для прежнего full word r=1056νK. Все размеры, CAR16/ref128,
+leakage и source denominator сохранены. Не добавляется fictitious
+Shannon price контроллера, reset или бесплатный discarded workspace.
+Физическое наличие именно blank return test остаётся admission premise:
+его нельзя вывести из самого факта clean computation.
+ν включает ВСЕ реальные tensor-identity multiplicities query carrier;
+если добавлена отдельная копия, её rank не считается бесплатно или
+снятым normalized Clifford trace. В следующей строке normalization
+и rank должны относиться к одному и тому же полному carrier.
+
+Есть полезная специализация budget: corrections к ТОЧНОМУ baseline
+golden angle имеют вид Δθ=t²a_t(r,q), a_t analytic bounded на данном
+chart. Можно компилировать a_t с ошибкой δ, а double-P/product formula
+применять к Hamiltonian norm O(t²). Тогда whole-output error имеет
+вид C_h(t²δ+t⁴/n)+η_controls. С фактическим
+η_controls≤t²δ estimate(13et) превращается в C′_h(δ+t²/n).
+Это allocation реальной compiler accuracy, не новый physical prefactor
+и не вывод закона t(h). Constants C_h,C′_h включают actual query jets,
+word lengths и цену normalized cut; рост с h отдельно контролируется.
+
+Таким образом новый density-dependent branching primitive больше не
+нужен для математической программы(13ee). Потреблён конкретный
+существующий compiler/cut interface, а не только formal covariance.
+Остались настоящие native inputs: coherent geometry/scalar queries
+(unknown raw amplitudes не становятся readable scalars), физический
+work/return test и evaluation law, whole old H/R/history/observer цена,
+собственные joint roots/refinement. Это положительное исполнение
+specified J₂ query-source composition при названных interfaces,
+а не compulsory native selection либо завершённый D0→ОТО.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

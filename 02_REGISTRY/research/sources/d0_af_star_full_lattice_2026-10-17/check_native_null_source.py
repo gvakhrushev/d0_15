@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Actual full-price null-source consumer and covariant matter mean limit.
 
-Runs only new exact CAR/block/price identities and one bounded interval sum.
+Runs new exact CAR/block/query/price identities and bounded interval moments.
 Reuses the pinned accepted root enclosure; no old root/heat/Lean suite is run.
 Default is read-only; --output writes the single requested receipt.
 """
@@ -967,6 +967,125 @@ def exact_star_eh_normalization(root):
     return dict(status='PASS', checks=checks, literal_star_AST_sha256=sourcepin, creator_AST_sha256=cpin, unit=dict(face='01', F='B01=E01+E10', e='I', Pstar=1, R=-2, Palatini=-2), identity='Pstar=-(c_star/2) det(e) R(e,omega); normalized checker has c_star=1. Equivalently Pstar=-(c_star/2)*(1/2 epsilon_abcd e^a wedge e^b wedge F^cd).', density_gamma='For J=abs(det e), gamma_star=-(c_star/2)*sgn(det e) on each nondegenerate orientation component. Positive density dressing preserves this sign.', old_local='The literal old null-frame e has owned-diagonal representative T*e_null, det T=-1 and det e_null=+1. Thus its gamma_star=+1/2 relative to J R, and kappa=-2 lambda_mat, matching old Ric_uu=-2 Lambda_sigma s^2 without a pp-wave fit.', full16='Tr16 Gamma(v)^2 /16=v^T eta v; no extra16 or128 enters gamma. With column coframe, v=e^-T Dpsi.', source='The 36 exact arbitrary-coframe curvature coefficient identities imply the full16 coframe first-source identity and all independent curvature/connection sources by differentiation. This is a local algebraic normalization, not finite-root existence or native whole-price admission.')
 
 
+def graded_density_intertwiner(root):
+    root = Path(root)
+    source = root / '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py'
+    creator = next((n for n in ast.parse(source.read_text()).body if isinstance(n, ast.FunctionDef) and n.name == 'creator'))
+    pin = hashlib.sha256(ast.dump(creator, include_attributes=False).encode()).hexdigest()
+    if pin != '801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4':
+        raise ArithmeticError('literal creator pin')
+    subs = [tuple((i for i in range(4) if mask & 1 << i)) for mask in range(16)]
+    ns = dict(s=s, SUBS=subs)
+    exec(compile(ast.Module(body=[creator], type_ignores=[]), str(source), 'exec'), ns)
+    C = [ns['creator'](s.eye(4)[:, i]) for i in range(4)]
+    N = s.diag(*map(len, subs))
+    I = s.eye(16)
+    (a, ax, ay) = s.symbols('a ax ay', positive=True)
+    A = lambda b: s.diag(*[b ** (2 - len(q)) for q in subs])
+    zero = s.zeros(16)
+    checks = []
+
+    def ck(name, value):
+        if not value:
+            raise ArithmeticError(name)
+        checks.append(name)
+    ck('full16 grade multiplicities', [sum((len(q) == k for q in subs)) for k in range(5)] == [1, 4, 6, 4, 1])
+    ck('amplitude square equals OWNED pairing weight', A(a).T * A(a) == s.diag(*[a ** (4 - 2 * len(q)) for q in subs]))
+    ck('amplitude is volume/degree exterior lift', A(a) == a ** 2 * s.diag(*[a ** (-len(q)) for q in subs]))
+    ck('full16 determinant one', s.simplify(A(a).det()) == 1)
+    for (i, c) in enumerate(C):
+        ck(f'creator[{i}] conjugates to density-dressed operator', s.simplify(A(a) * c * A(a).inv() - c / a) == zero)
+        ck(f'annihilator[{i}] has inverse scale', s.simplify(A(a) * c.T * A(a).inv() - a * c.T) == zero)
+        ck(f'number commutator creator[{i}]', N * c - c * N == c)
+    ck('identity grading connection', s.simplify(A(ax) * A(ay).inv() - A(ax / ay)) == zero)
+    for (i, c) in enumerate(C):
+        ck(f'actual edge[{i}] includes relative grading connection', s.simplify(A(ax) * c * A(ay).inv() - c / ax * A(ax / ay)) == zero)
+    ck('edge grading term cannot be proper Lorentz', A(ax / ay)[0, 0] == (ax / ay) ** 2 and A(ax / ay)[15, 15] == (ay / ax) ** 2)
+    ck('fixed counting CAR not an isometry', A(s.Integer(2)).T * A(s.Integer(2)) != I)
+    ck('graded pairing differs from uniform density multiplier', A(s.Integer(2)) != 2 * I)
+    for k in range(5):
+        idx = [j for (j, q) in enumerate(subs) if len(q) == k]
+        for i in idx:
+            for j in idx:
+                ck(f'generic grade{k} pairing coefficient {i},{j}', s.simplify(A(a)[i, i] * A(a)[j, j] - a ** (4 - 2 * k)) == 0)
+    Q = I - N / 2
+    ck('connection grading generator', s.diff(A(a), a).subs(a, 1) / 2 == Q)
+    ck('connection is flat by scalar potential', s.simplify(A(ax) * A(ay).inv() * A(ay) * A(a).inv() - A(ax) * A(a).inv()) == zero)
+    Draw = s.I * (C[0] - C[0].T)
+    Dconj = s.simplify(A(a) * Draw * A(a).inv())
+    Dcount = s.I * (C[0] / a - C[0].T / a)
+    ck('raw complete CAR16 one-leg square', s.simplify(Draw ** 2 - I) == zero)
+    ck('true conjugated square unchanged', s.simplify(Dconj ** 2 - I) == zero)
+    ck('counting-adjoint rebuilding square changes', s.simplify(Dcount ** 2 - I / a ** 2) == zero)
+    ck('dressed counting Dirac differs from weighted conjugation', Dcount.subs(a, 2) != Dconj.subs(a, 2))
+    return dict(status='PASS', checks=checks, creator_AST_sha256=pin, chi_convention='a=sqrt(chi), chi=mu/mubar, ghat=chi*g_raw, qraw=chi*qhat', amplitude='A_chi=chi^(1-N/2), NOT the weight W_chi=chi^(2-N)', exact_pairing='A_chi^T W(qhat,mhat) A_chi=W(qraw,mraw); mhat=A_chi*mraw and observer radial rescaling leaves its line unchanged', local_operator='A_chi X A_chi^-1=chi^-1/2 X for X=C(u)rho(M), with M grade-preserving', actual_edge='A_x X_xy A_y^-1=chi_x^-1/2 X_xy (chi_x/chi_y)^(1-N/2)', connection='Q=I-N/2; edge factor=exp[Q*(log chi_x-log chi_y)], a flat exact grading/density connection', continuum='A_chi partial_mu A_chi^-1=partial_mu-Q*partial_mu log(chi) for the degree-preserving fiber derivative. Thus A_chi d A_chi^-1=chi^-1/2 sum_mu C(dx_mu)[partial_mu-Q*partial_mu log(chi)], with Q acting on the incoming grade. Creator scaling must not be omitted.', proper_Lorentz_obstruction='rho(M) fixes grade0/4; new relative factor scales them by chi_x/chi_y and inverse. Cannot delete it while claiming the old proper-Lorentz word.', complete_CAR16_adjoint_counter='D=i(C0-C0^T) has D^2=I. A D A^-1 still squares to I. Rebuilding Dcount=i chi^-1/2(C0-C0^T) with the OLD counting adjoint squares to I/chi. Hence its full16 heat trace is 16 exp(-beta/chi), not 16 exp(-beta). Weighted isometry alone does not preserve the old price.', scope='Exact kinematic weighted-Hilbert intertwiner. It does not establish fixed-counting CAR unitarity, old cut/preparation/adjoint transport, equality of whole native price, independently derived spin stress, or Einstein recovery. Existing full H+J+R soft-source obstruction is not changed.')
+
+
+def native_moving_query(root=None):
+    checks = []
+
+    def ck(name, test):
+        if not bool(test):
+            raise ArithmeticError(name)
+        checks.append(name)
+    (u, x, theta) = s.symbols('u x theta', real=True)
+    F = x + theta * (x * x - x)
+    M = s.Rational(3, 2)
+    Phi = s.expand(x + (u - F) / M)
+    ck('CDF_unit_endpoints', F.subs(x, 0) == 0 and F.subs(x, 1) == 1)
+    ck('CDF_density', s.diff(F, x) == 1 + theta * (2 * x - 1))
+    ck('CDF_uniform_positive_window', s.simplify(s.diff(F, x).subs({theta: s.Rational(1, 2), x: 0})) == s.Rational(1, 2))
+    ck('CDF_upper_window', s.simplify(s.diff(F, x).subs({theta: s.Rational(1, 2), x: 1})) == s.Rational(3, 2))
+    ck('inverse_iteration_lower_endpoint', s.expand(Phi.subs(x, 0) - u / M) == 0)
+    ck('inverse_iteration_upper_endpoint', s.expand(Phi.subs(x, 1) - (1 - (1 - u) / M)) == 0)
+    ck('inverse_iteration_derivative', s.expand(s.diff(Phi, x) - (1 - s.diff(F, x) / M)) == 0)
+    a = u - u * u
+    b = 2 * (1 - 2 * u) * a
+    Tjet = u + theta * a + theta ** 2 * b / 2
+    residual = s.Poly(s.expand(F.subs(x, Tjet) - u), theta)
+    for j in range(3):
+        ck('inverse_CDF_jet_' + str(j), residual.coeff_monomial(theta ** j) == 0)
+    an = bn = s.S(0)
+    r = s.Rational(1, 3)
+    for n in range(1, 17):
+        (an, bn) = (s.expand(r * an + (1 - r) * a), s.expand(r * bn + 2 * (1 - r) * (1 - 2 * u) * an))
+        ck('static_inverse_first_jet_' + str(n), s.expand(an - a * (1 - r ** n)) == 0)
+        ck('static_inverse_second_jet_' + str(n), s.expand(bn - b * (1 - r ** n - (1 - r) * n * r ** (n - 1))) == 0)
+    ck('frozen_sample_has_nonzero_cell_mass_source', s.diff(F, theta).subs(x, s.Rational(1, 2)) == -s.Rational(1, 4))
+    ck('moving_query_source_is_present', s.expand(s.diff(Tjet ** 2, theta).subs(theta, 0) - 2 * u * (u - u * u)) == 0)
+    (aa, bb) = s.symbols('angle0 angle1', real=True)
+    rot = lambda t: s.Matrix([[s.cos(t), -s.sin(t)], [s.sin(t), s.cos(t)]])
+    P0 = s.diag(1, 0)
+    P1 = s.eye(2) - P0
+    Word = s.kronecker_product(P0, rot(aa)) + s.kronecker_product(P1, rot(bb))
+    for (i, Pleaf) in enumerate((P0, P1)):
+        Q = s.kronecker_product(Pleaf, s.eye(2))
+        ck('actual_leaf_guard_commutator_' + str(i), Word * Q - Q * Word == s.zeros(4))
+    V = s.kronecker_product(rot(aa), P0) + s.kronecker_product(rot(bb), P1)
+    P = s.kronecker_product(P0, P0)
+    Pwrong = s.kronecker_product(P0, s.eye(2))
+    simp = lambda A: A.applyfunc(s.trigsimp)
+    feed = lambda W, Q: simp(Q * W.T * (s.eye(4) - Q) * W * Q)
+    FF = feed(V, P)
+    Fwrong = feed(V, Pwrong)
+    ck('whole_unitary_completion', simp(V.T * V) == s.eye(4))
+    ck('feedback_on_actual_retained_cut', simp(FF - s.sin(aa) ** 2 * P) == s.zeros(4))
+    ck('all_input_complement_feedback_zero', FF * (s.eye(4) - P) == s.zeros(4))
+    ck('wrong_Iwork_cut_adds_feedback', simp(Fwrong - s.sin(aa) ** 2 * P - s.sin(bb) ** 2 * s.kronecker_product(P0, P1)) == s.zeros(4))
+    z = s.symbols('z', real=True)
+    ck('same_full_feedback_determinant', s.factor((s.eye(4) - z * FF).det()) == 1 - z * s.sin(aa) ** 2)
+    ck('wrong_cut_changes_determinant', s.simplify((s.eye(4) - z * Fwrong).det() - (1 - z * s.sin(aa) ** 2) * (1 - z * s.sin(bb) ** 2)) == 0)
+    leak = s.symbols('leak', real=True)
+    Veps = s.kronecker_product(s.eye(2), rot(leak)) * V
+    Feps = feed(Veps, P)
+    ck('all_workspace_leakage_outputs_count', simp(Feps - (s.sin(aa) ** 2 + s.cos(aa) ** 2 * s.sin(leak) ** 2) * P) == s.zeros(4))
+    (pi0, pi1, theta0, theta1) = s.symbols('pi0 pi1 theta0 theta1', real=True)
+    Trace = s.diag(pi0, pi1)
+    H = s.diag(theta0, theta1)
+    ck('fixed_trace_weight_factorization', s.trace(Trace * H) == pi0 * theta0 + pi1 * theta1)
+    return dict(status='PASS_EXACT_MOVING_QUERY_AND_FEEDBACK_CUT', checks=checks, inverse_CDF=dict(map=str(Phi), window='|theta|<=1/2, x,u in[0,1]', density_bounds=['1/2', '3/2'], fixed_M='3/2', contraction='2/3', generic='For 0<m<=Fprime<=M, F(0)=0,F(1)=1, x_next=x+(u-F(x))/M maps[0,1] to itself and contracts by q=1-m/M. M is fixed on one field chart, not varied with the field. q=0 is the constant-density one-step case.', first_inverse_jet=str(a), second_inverse_jet=str(b), C2_rate='C(1+N)^2 q^(N-2) on a fixed C3-bounded positive chart; all four triangular stages retain this rate with larger constants. C3 version uses a C4-bounded chart and C(1+N)^3 q^(N-3).'), implementation='At fixed h and macro cut, compile angle_i(z)=theta(r_h(T_(J/V)(c_i);z),q_h(T_(J/V)(c_i);z)) directly as a smooth analytic function of a finite collection of ACTUAL continuous Julia/scalar query operands. Use a fixed analytic interpolation/evaluation model and fixed inverse-CDF iterations; a merely smooth model instead uses the owned C3 approximation with actual higher-derivative bounds, without an asserted analytic rate. This is an address-controlled operand word, not a change to golden p/p^2 branching.', branch_law='A structured block word sum_i P_i LEFT tensor W_i commutes with every old leaf projector. Hence Tr(rho P_i) is preserved for every input rho, including unknown correlations. It need not equal pi_i or PF mu_i. The J2 weights pi_i=D_type(i)/K are regular trace multiplicities; Binet supplies their PF limit without any Born preparation law.', exact_cut='With actual P=P_old tensor |0work><0work|, a complete ideal macro satisfying U_ideal(v tensor0)=(U_old v)tensor0 for ALL old input columns gives F_ideal=F_old tensor |0><0| and det(I-z F_ideal)=det(I-z F_old). F=0 on every INPUT complement due to the actual P compression. Arbitrary offblank U action is retained and need not be identity. Clean return on ONE state is insufficient.', finite_compiler='For whole-output operator C3 error eta on the actual retained input cut, existing6.19 gives ||J_U-J_V||C3<=2^14*z*r*L^6*eta/(1-z)^4. All leaked OUTPUT sectors belong to I-P and contribute to F. No reset, postselection, additive controller Shannon price or discarded complement is used.', source_budget='After normalization by nu*K*a0*c_AF*t^2, compiler error<=2^14*z*r*L^6*eta/[(1-z)^4*nu*K*a0*c_AF*t^2]. Operand-evaluation error delta in (r_h,q_h) propagates as Cdelta because Dj_t/Dr,Dj_t/Dq=O(t^2). delta must include h^-4*star interpolation and every field/address jet; a bare nearest-cell map has no C2 guarantee.', remaining=['actual native admission of coherent Julia/scalar operands and scalar work/return test', 'unknown raw matter amplitudes are not supplied as readable scalar queries', 'physical interpolation/evaluation and actual finite word runtime/cut binding', 'other H/R, preparation, controller and immutable history terms need their OWN complete price/source theorem', 'this is a constructive J2 query-source consumer, not compulsory selection, nonlinear finite roots or D0=>GR'])
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[4])
@@ -980,6 +1099,8 @@ def main():
         finite_soft_interval=soft_interval(args.root),
         general_matter_source=general_source(args.root),
         exact_star_normalization=exact_star_eh_normalization(args.root),
+        graded_density_bridge=graded_density_intertwiner(args.root),
+        moving_query_and_actual_cut=native_moving_query(args.root),
         GR_closed=False, native_execution_forced=False,
         generic_joint_critical_recovery=False)
     output = json.dumps(result, ensure_ascii=False, indent=2, default=str)+'\n'

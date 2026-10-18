@@ -1944,7 +1944,7 @@ Shannon и J₂, composite principal metric и operator-measure variation
 
 ### 7.16. Весь normal quotient, finite soft limit и общий источник материи
 
-Вход `2f02612a`. [Full-source §§6.46–6.50](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+Вход `2f02612a`. [Full-source §§6.46–6.52](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 разрешают оставленный в §7.15 null-source тест на собственном native
 H+J+R background, CAR16/reference128. Все24 proper Lorentz-link rows
 имеют точную block congruence и inertia(3+,21−,0); full27 observer/link
@@ -2017,13 +2017,39 @@ source residual. Новый null test сохраняет volume точно и у
 P. Считать его old LEFT observable нельзя; phase P и coframe Q_x
 также требуют настоящего интерфейса. Это не запрет field-dependent
 query после retained address copy и не опровержение построенного mean
-programme. Три worker tasks уже retired в main, здесь они не перезапущены.
+programme. Эти worker tasks уже retired в main, здесь они не перезапущены.
 
-Следующий общий шаг один: выполнить на том же retained carrier
-(e,U,ψ,address)↦(r_h,q_h,T_(J/V)(c_w)), доказать его actual branch
-law и whole price/source/error bound. Затем — его собственные finite
-joint roots и refinement. Нельзя заменить этот шаг доступностью CDF,
-копированием адреса, формальной covariance или знанием готового EH.
+Четвёртый merged [matter result](A4D_MATTER_ON_DRESSED_METRIC_2026_10_18.md),
+main `77d3ab60`, потреблён в full-source §6.51. Ни chronology angle,
+ни grade0 square не устанавливают whole spin stress на ghat. Новый
+exact full16 bridge A_χ=χ^(1−N/2) есть квадратный корень owned pairing
+weight χ^(2−N), а не новый закон веса. Он воспроизводит dressed
+creator, но на ребре сохраняет flat factor(χ_x/χ_y)^(1−N/2).
+Это не proper-Lorentz transport и не unitary старого counting adjoint.
+Exact full16 heat control показывает, почему whole price не переносится
+одним этим isometry. Для spin нужны actual tetrad/connection source
+pair и её Lorentz identity, а не назначенный symmetric T.
+
+**Положительное снятие лишней предпосылки, §6.52:** для программы
+(e,U,ψ,address)↦(r_h,q_h,T_(J/V)(c_w)) новый density-dependent
+sampler НЕ требуется. Fixed LEFT trace weights π_i — не Born law.
+Старый query compiler может сразу реализовать composed angles на
+гладком finite query chart; fixed contraction iteration даёт inverse
+CDF с C² error C(1+n)²q^(n−2), включая moving field/address jets.
+Guarded word сохраняет actual Born law, не отождествляя его с PF.
+При настоящем P=P_old⊗|0_work><0_work| clean macro на ВСЕХ input
+columns даёт F_new=F_old⊗|0><0|, следовательно точное равенство J₂
+determinants; все leaked outputs остаются. Старый estimate(13ba)
+переносит compiler error с реальным rank и signal t². Relative t²
+allocation делает его O(δ+t²/n) при actual control-error bound.
+Это execution/source theorem specified J₂, без нового price law.
+
+Следующий общий шаг теперь уже: предоставить coherent geometry/scalar
+queries, actual blank return/evaluation law и источник остальных
+H/R/history/preparation/observer terms. Unknown raw amplitudes не
+считаются readable queries. Затем — собственные finite joint roots и
+refinement всей программы. CDF algebra, address copy, kinematic
+isometry или знание готового EH не заменяют этого physical binding.
 Исходный raw#216 и другие material/spin sectors остаются своими
 обязательствами. [Один новый bounded consumer](sources/d0_af_star_full_lattice_2026-10-17/check_native_null_source.py)
 с exact/interval receipt проверяет только эти новые несущие переходы;

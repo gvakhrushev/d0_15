@@ -3,7 +3,7 @@
 ## 18 October 2026 — actual full normal source, finite soft limit and general matter
 
 [Strategic §7.16](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
-and [full-source §§6.46–6.50](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+and [full-source §§6.46–6.52](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consume the null-source step on the actual H+J+R CAR16/reference128 root.
 All24 proper link rows have exact inertia(3+,21−,0); the full27 normal
 kernel has exactly three compatible observer directions. Their finite
@@ -30,16 +30,25 @@ No extra16/ref128 normalization enters. The displayed local Clifford
 query uses the correct inverse transpose. No fitting, discarded volume
 jet or automatic transfer of the old finite pp-root is used.
 
-The three merged/retired worker comparisons from main `bba70fe5` are
-consumed: old fixed golden splits do not execute density-dependent
-quantiles; cell-mass Reynolds Ward differs from the complete-price
-lapse source; the proposed RG residual does not descend to phase LEFT
-fibres, and phase/coframe sites require a real binding. The concrete
-next premise is one admitted retained-address/scalar-query controller
-with actual branch law, whole price/source and normalized error, then
-its own joint roots and physical refinement. The bounded new entrypoint
-and receipt separate exact symbols from interval sums; unchanged suites
-are reused. Task IN_PROGRESS, physical GR and original raw#216 OPEN.
+All four merged/retired worker comparisons from main `77d3ab60` are
+consumed: quantile execution, distinct cell-mass/full-price variations,
+non-descending phase residual and the dressed-matter source boundary.
+Full-source §6.51 also gives an exact all16 graded amplitude intertwiner,
+its mandatory non-Lorentz edge factor and the counting-adjoint heat
+control; weighted isometry alone does not preserve the original price.
+
+Full-source §6.52 removes an unnecessary sampler prerequisite. The mean
+J2 programme compiles moving query operands at fixed LEFT addresses;
+regular trace weights are distinct from Born probabilities. A fixed
+inverse-CDF contraction controls all moving C2 jets. The existing full
+feedback compiler applies on the ACTUAL blank-work return cut, with
+all input columns, leakage and true rank retained. Clean-macro feedback
+determinants agree exactly; a relative t2 allocation controls compiled
+source error without choosing a clock law. Physical query/work/cut
+admission, other H/R/history/preparation sources, its own finite joint
+roots and refinement remain. Unknown amplitudes are not readable queries.
+The bounded receipt separates exact symbols from interval sums; unchanged
+suites are reused. Task IN_PROGRESS, physical GR and raw#216 OPEN.
 
 ## 18 October 2026 — complete adaptive source, priced proper clock and corrected sourced wave
 

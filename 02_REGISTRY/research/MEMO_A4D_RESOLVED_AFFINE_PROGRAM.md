@@ -2,7 +2,7 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Snapshot:** 2026-10-18; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `bba70fe5` integrated
+**Snapshot:** 2026-10-18; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `77d3ab60` integrated
 
 ## Current route to general relativity
 
@@ -25,7 +25,7 @@ connection root alone establishes the full native gravitational law.
 
 Actual null-source and general matter, input `2f02612a`:
 [strategic §7.16](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
-and [full-source §§6.46–6.50](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+and [full-source §§6.46–6.52](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 solve all24 link normals and retain the three observer soft modes before
 refinement. Seven exact spectral moments give a full finite reduced null
 limit in(−0.3300812,−0.3300809), while the same EH self-Hessian is zero.
@@ -42,11 +42,17 @@ multiplier remains. Old exact pp-roots are not automatically transferred
 to the changed query word. Full-source §6.50 fixes the relative constant
 independently: gamma_star=-sgn(det e)/2, kappa=2*sgn(det e)*lambda_mat
 for the literal c_star=1. This is no empirical Newton calibration.
-Merged worker results `bba70fe5` retain the
-three real execution gaps: density-dependent split, same-price versus
-cell-mass source, and phase-fibre versus coframe address. Next execute
-one retained-address/query controller and derive its actual whole price,
-then its own joint roots/refinement. Original raw#216 stays OPEN.
+All four merged/retired worker comparisons, main `77d3ab60`, are consumed.
+The graded CAR16 bridge and its required edge factor do not preserve the
+old counting-adjoint price by themselves. Full-source §6.52 resolves a
+concrete execution issue positively: moving operands can be compiled at
+fixed addresses, so no density-dependent stochastic sampler is required.
+J2 uses regular trace weights, not a prescribed Born law. The actual
+blank-work return cut and whole-output error transfer the complete
+feedback determinant/source, preserving every leakage sector. Next admit
+the required continuous queries and actual return/evaluation interface,
+compose other H/R/history/preparation rows, then prove its own joint
+roots/refinement. Raw#216 stays OPEN.
 
 Actual execution/source composition, input `135206e7` with parallel
 `3e433023`: [strategic §7.15](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

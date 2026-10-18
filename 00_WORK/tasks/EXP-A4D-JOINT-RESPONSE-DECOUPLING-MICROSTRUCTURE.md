@@ -33,7 +33,7 @@ stress, removed grade or altered raw#216 terminal is admitted. Any
 numerical scout remains exploratory until an exact or bounded argument
 supports its claimed conclusion; unchanged suites are reused.
 
-Consumed in full-source §§6.46–6.50 / strategic §7.16: exact full24
+Consumed in full-source §§6.46–6.52 / strategic §7.16: exact full24
 normal congruence/inertia and compatible three-kernel full27 quotient;
 strict bounded-null source; exact seven-moment finite soft reduction
 with full finite null limit(-0.3300812,-0.3300809) and observer response
@@ -46,7 +46,14 @@ quantile execution gap, cell-mass/source type mismatch and non-descending
 phase residual. Next: one actual retained-address/query programme, its
 whole price and own joint roots/refinement. The original oriented star contraction now fixes gamma_star=-sgn(det e)/2
 and kappa=2*sgn(det e)*lambda_mat at c_star=1, independently of the
-pp-wave; full16 inverse-transpose query is corrected. No new execution launched.
+pp-wave; full16 inverse-transpose query is corrected. The fourth merged
+matter comparison is consumed with the exact graded-density amplitude/
+edge bridge and its old-adjoint counter. Fixed-address moving queries
+now consume the existing C3 compiler/actual blank-work cut: no new
+stochastic sampler or Born=trace law is needed. Whole-output leakage,
+rank and normalized t2 accuracy remain. Next: actual coherent query/
+work/cut/evaluation admission and whole H/R/history/preparation source,
+then own joint roots/refinement. No new execution launched.
 
 ### 18 October: close the native clock and adaptive-query source interfaces
 
