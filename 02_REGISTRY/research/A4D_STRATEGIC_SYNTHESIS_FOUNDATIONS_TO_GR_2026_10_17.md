@@ -2655,3 +2655,78 @@ Einstein rows из одной curvature probe. Эти маршруты уже и
 Процент готовности не выводится из числа файлов, пройденных проверок или
 числа закрытых промежуточных задач. Следующее продвижение должно закрыть
 одну из этих связей в общей теореме, а не снова обнаружить формулу ОТО.
+
+### 7.23. Выведенный upper clock и coherent approximate preparation: два использованных перехода
+
+Input180ddd18; previous goal turn PROGRESS. Same Draft334 and eight owned
+paths continue; original attachment is already preserved byte-for-byte in
+6.33/6.70. No action, physical selector or new execution is introduced.
+[Full-source6.72–6.77](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now composes the actual full-prefix effect with the coherent-preparation
+consumer. Independent intake corrected two type mismatches before publication:
+freeze the ACTUAL Taylor query centre, and price the real return rank1056νK
+rather than filling the ambient22448 scene columns. All ambient columns
+remain in the Hilbert carrier.
+
+**Upper clock is necessary inside this specified global realization.**
+The ORIGINAL all-exact-cost FR/RF prefix bank already has regular mass
+W≥21/85, with the SAME golden-address count density and weights w_x~h⁴.
+A normalized PURE scalar0/clock1/dark14 input, using three-axis positive
+smoothing and a spatial checkerboard, gives V_x≤−c_chart/(Wh²) at every
+cell. Its current/clock direction and the fixed13gs decoder are explicit.
+At the ACTUAL bounded curved pp/nonzero-matter Taylor centre, the same
+polynomial restriction is exactly quadratic. Retaining all uncovered old
+return factors, g≤1 now forces t²≤C_chart h². The curved proof keeps
+Lorentzian cross terms; a fixed uniformly spacelike coordinate direction,
+volume and decoder bounds are explicit. Arbitrary large-shift ADM or another
+clock decoder is not silently included. Global compiled effect errorη changes
+the probability threshold by (1+η)^[1/(2ν528KW)].
+
+Thus the SAME D25 normalized source's t²-remainder is O(h²); its owned
+spatialO(h), count/Taylor/compilation terms remain. An assigned sufficient
+upper schedule is no longer needed for THIS globally encoded full-prefix
+programme. This does not select that global extension physically: another
+extension agreeing only on local physical jets needs its own proof. Neither
+a lower clock nor compiler/source errors divided by t² are controlled by
+an upper clock bound. The different earlier five-outcome probe is not
+identified with this execution.
+
+**Coherent preparation has a constructive approximate route.**
+Exact stitching of the successful polar ground states fails: adjacent
+ground energies strictly separate for activeM>225, forcing average clock–
+grade14 coherence≤√(226/N) rather than p^(3/2). This is a branch obstruction,
+not a blanket superselection claim. The full marginal-feature effect has
+each-copy grade3 covariance, but exact common-energy blocks may carry
+coherence; an explicit four-copy singlet counter shows why they cannot
+be discarded by an occupation-only argument.
+
+A new finite trial Ψ_N∝(B†²−s(a†²+b†²))^(N/2)|vac>, B=m₀,
+s²=1−(N/2)^−1/2, preserves BOTH Hodge modes and the actual clock/grade14
+mixture. All one- and two-orthogonal-dark leakage is included. Its actual
+quadratic preparation residual divided by binom(N,2) is≤48/[√N(N−1)];
+one-copy trace error≤38/√N, fixed-k error≤2√(19k)N^−1/4. For an actual
+a(g)I+b(g)H_N/binom(N,2) compression, C² geometric error isO(1/N).
+The log preparation-source bound carries its true q-floor and physical
+signal divisor. This removes the coherent-marginal obstacle for controlled
+approximate roots in that definite quadratic block; it is not an exact
+full-polynomial/fixedRIGHT128/site/Lorentz/Book root.
+
+**The C_Y preparation route has an explicit actuator boundary.**
+The genuine six-step GNS Jones projection plus L(B) generates R(oldA)'.
+Its complete G/sign/CNOT flag formula is exhibited on all columns, but
+requires that placement on FRESH descendant multiplicity wires. Existing
+three-step transported LEFT Jones corner is a different full operator
+(rank34 versus2 already atN0). Named chronological LEFT actions and passive
+inclusions preserve the earlier fineRIGHT probe; their full-column reflection/
+flag error has floor2p^(3/2), effect error floorp^(3/2), independent of depth.
+An admitted fresh-wire actuator preserving only OLD RIGHT escapes that
+class. No physical primitive or free capacity preparation is inferred from
+algebra generation, and the canonical trace seed makes the lone Jones flag
+deterministic. Its own full history/price must still be supplied.
+
+The next parent step is the SAME native Book/PREP/copy/clock map and controlled
+FULL correlated-source recovery: keep the complete polynomial kernels,
+upstream H/J/R, fixedRIGHT/reference, all Lorentz/site rows and the genuine
+source denominator. New bounded identities consume these arrows; unchanged
+old expensive suites are pinned. Physical GR, global D0 closure and original
+raw#216 remain OPEN. Publication/checks do not change that status.

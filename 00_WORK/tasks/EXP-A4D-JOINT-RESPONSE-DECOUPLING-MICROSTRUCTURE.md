@@ -12,6 +12,25 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: actual curved forced-clock and coherent preparation transfer
+
+Input180ddd18; preceding goal turn PROGRESS. Continue the same Draft334
+and eight owned paths. Read-only /tmp premises now consumed in6.72–6.77:
+actual ground-branch/energy-overlap criterion; full Jones G/sign/CNOT word
+with its physical placement boundary; SAME original FR/RF full-prefix
+coverage W≥21/85; pure Lorentzian all-density witness; necessary upper
+clock t²≤C_chart h² at the ACTUAL curved Taylor centre and real return
+rank1056νK; explicit coherent clock/grade14 TWO-Hodge approximate
+preparation with all dark leakage and O(N^-3/2) normalized residual.
+Parent consumer:6.64→D25 source limit→complete Book/PREP/copy/clock
+and FULL correlated joint recovery. Preserve exact global-extension scope,
+all source floors/denominators, fixedRIGHT/reference/site/Lorentz kernels,
+old H/J/R and raw#216 norm. Root alone edits shared owners; no physical
+action, selector, fitted occupation term, task or workflow rewrite.
+Smallest checks are the new exact finite identities and hostile centre/
+rank/large-shift controls. Reuse all prior unchanged math receipts;
+no old root/heat/Lean expensive replay. Full native GR remains OPEN.
+
 ### 18 October: complete SAME-law price and correlated preparation consumer
 
 Input31f7926, companion05767255/d26199b7; previous goal turn PROGRESS. The same

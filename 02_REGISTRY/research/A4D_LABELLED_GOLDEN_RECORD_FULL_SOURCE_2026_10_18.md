@@ -6221,6 +6221,420 @@ quadratic product-preparation препятствие и даёт recovery mechan
 но full-code/source transfer, native PREP и forced ОТО остаются работой.
 
 
+### 6.72. Coherent grade14: точный предел успешной ground-preparation и общий spectral consumer
+
+Consumer: предыдущая(13ho) должна восстановить именно
+m₀=√p c+√(1−p)d, c=|1>,d=|14>, а не только pureclock.
+Два ПРЕЖНИХ scalar operators A₀=|0><c|+h.c., A₄=|15><c|+h.c.
+дают H_N=Σ_(r<s)(A₀,rA₀,s+A₄,rA₄,s). В symmetric four-mode block
+
+    H_M=n_c n_exc+½[c†²Q+Q†c²], Q=a²+b²,
+    [H,c†d]=(c†n_exc+Q†c)d, M=n_c+n_exc.          (13hp)
+
+Это реальная mixed preparation row. Нельзя назначить dark fraction
+независимым scalar equation. Все остальные CAR grades остаются в carrier.
+Для radial ground φ_M предыдущая теорема даёт E_M≤−M+5√M,
+<n_exc>≤10√M. Clock creation R=c† между двумя radial spaces удовлетворяет
+ТОЧНОМУ Hermitian rectangular identity
+
+    R*H_(M+1)R=½{n_c+1,H_M}+H_M+n_exc,
+    E_(M+1)≤E_M+(E_M+<n_exc>)/(<n_c>+1)<E_M
+                                      при M>225. (13hq)
+
+Последний знак следует из −M+15√M<0; он не экстраполирует малые
+спектры. Exact stationary density, собранная ТОЛЬКО из этих ground
+branches и dark occupations при totalN, может иметь c–d coherence лишь
+на adjacent edges M≤225. Weighted-shift norm/Cauchy дают
+
+    |<Σ_r|c_r><d_r|>|/N≤√(226/N),
+    ||ρ₁−|m₀><m₀|||₁≥2max(0,p^(3/2)−√(226/N)). (13hr)
+
+Поэтому ground-stitch не переносит(13ho) на действительный13gh.
+Scalar coefficients a(g)I+b(g)H_N/binom(N,2), b≠0, этого не исправляют.
+Это scoped obstruction этой ветви, а не запрет correlated recovery.
+
+Для полного marginal-feature polynomial6.64 все matter observables
+соединяют clock только со scalar0/top15; query factors — matter identity.
+Поэтому E_N и actual query compression A_N(g) коммутируют с EACH-copy
+projector D_r на весь grade3, Lorentz-invariant как exterior grade.
+Block diagonality не запрещает stationary coherence при exact degeneracy.
+Для spectral projectors R_e actual A_N и C=Σ_r|c_r><d_r| имеем
+
+    TrτC=TrτΣ_eR_eCR_e, [τ,A_N]=0,
+    sup ReTrτC/N=max_e λmax[R_e(C+C*)R_e/2]/N.    (13hs)
+
+С fixedRIGHT ranks это upper bound, не автоматическая attainable PREP.
+Нужны общие EXACT энергии dark patterns, отличающихся одной копией;
+почти совпавших энергий недостаточно для exact finite Euler. В unchanged
+quadratic H есть настоящий counter к blanket-zero: normalized determinant
+ε∈∧³span(c,0,15) annihilated обеими collective A, H₃ε=−2ε. Тогда
+ε⊗(αc+βd) — exact H₄ eigenvector −2 с average coherence α*β/4.
+Его первые три marginal имеют O(1) scalar population, поэтому это НЕ
+full-code recovery. Actual large common-energy blocks, RIGHT spectrum,
+nonlinear/source jets или controlled approximate-root inverse ещё нужны.
+Whole-Book costs могут нарушать dark covariance и не вычеркнуты.
+
+### 6.73. Fresh multiplicity actuator: full Jones word и точная граница его native placements
+
+Consumer6.70 требует менять FRESH right descendants при сохранении
+ВСЕГО OLD RIGHT/ref. Для A=A_N⊂B=A_(N+6), H_B=L²(B), реальных
+six-step inclusion J и expectation C=J* положим E_A=JC. Тогда
+
+    alg*(L(B),E_A)=R(A)', rankE_A=dimH_A.         (13ht)
+
+Proof: L(B)'=R(B); если R_b коммутирует E_A, его действие на Ω=1
+даёт E_A(b)=b, значит b∈A. Обратное — bimodularity expectation;
+finite double commutant завершает proof. Algebra generation использует
+E_A как ДОПОЛНИТЕЛЬНЫЙ operator и не исполняет его физически.
+Owned three-step working Jones corner в A_(N+6) — другой полный
+operator: приN0 rank шестишагового GNS E_A равен2, а rank LEFT
+умножения transported e₀ на regular H₆ равен34 (dimH₆=610).
+Их нельзя отождествить численным golden angle.
+
+Полный one-step пример на(E00,E01,E10,E11;ss): J_X=aE00+p ss,
+J_Y=E11, a=√p. На duplicated pair(E00,ss)
+
+    e=[[p,ap],[ap,p²]], G=[[a,−p],[p,a]],
+    I−2e=Gdiag(−1,1)G*=G²diag(−1,1).             (13hu)
+
+На carriedB e=I, на ОБОИХ rectangular sectors e=0. Если Q=G на этой
+паре и identity на остальных columns, P_blank=diag(1,0,0,1,0), то
+E_A=QP_blankQ*. Full coherent instrument
+W_E=E_A⊗X+(I−E_A)⊗I имеет на паре exact word
+(G⊗I)[P₀⊗X+P₁⊗I](G*⊗I); carriedB flips flag, rectangles leave it.
+Все входы/неудачи сохранены. Нужное placement G/sign/control — именно
+на fresh descendant-copy wire; обычный LEFT/scene/port/CAR G не является
+им по одному совпадению матрицы. Passive J задаёт blank column, не
+complete unitary Q. Book03§03.26.1–2 также сохраняет physical port
+addressability как предпосылку, а не даёт этот fresh-wire operand.
+
+Это различие проверяется без circuit census. Пусть Z — fineRIGHT
+central projector, diag(1,0) на duplicated pair. Chronological LEFT
+words и genuine passive refinements V obey VZ=Z_newV; их U commute
+Z_new. Для T=I−2E_A или full W_E compress offdiagonal error:
+
+    (I−Z_new)(UV−VT)Z=−V(I−Z)TZ,
+    ||UV−VT||≥2ap;  ||F−E_A||≥ap               (13hv)
+
+для induced commuting effect F. В flag случае bound относится ко
+ВСЕМ flag columns; spectators и further passive depth его сохраняют.
+Последняя оценка следует из ||(I−Z)E_A Z||=ap. Это сильнее грубого
+commutator/2 bound. Реально admitted fresh-copy placement, которое
+сохраняет OLD RIGHT, но меняет fineRIGHT, выходит из этого класса;
+общего запрета encoded-Hilbert control здесь нет.
+
+Если W_E физически supplied, его полный law q₁=||E_AΨ||²,q₀=1−q₁.
+Under SAME binding w=𝒩q mean(C−Info)=[h(q₁)−log𝒩]/logφ; prefix,
+normalizer и все conditional sources остаются. Это цена этого flag,
+не автоматически C_Y capacity. У canonical trace seed E_AΩ=Ω, так что
+один flag deterministic и reflection лишь global sign. Для capacity
+нужны действительное дополнительное взаимодействие и его полная цена.
+
+### 6.74. Исходный full-prefix bank уже имеет покрытие W≥21/85
+
+Consumer forced-clock не должен вводить новую sampling law или делить
+action на success probability. Исходный
+[A4D_GLOBAL_GOLDEN_AF_VOLUME_FREE_CURVATURE](A4D_GLOBAL_GOLDEN_AF_VOLUME_FREE_CURVATURE_2026_10_17.md)
+использует ВСЕ exact-cost n words W_n, |W_n|=F_(n+1), и их rank2
+Q_w=1_wFR+1_wRF на старом cut N=n+2. При actual ordinary regular weights
+
+    A=F_(N+2), B=F_(N+1), D₀=13A+8B,D₁=8A+5B,
+    K=AD₀+BD₁,
+    34AD₀−21K=(A−B)(169A+105B)≥0.                (13hw)
+
+Положив f=F_(n+1),g=F_n≤f, A=3f+2g≤5f, получаем
+
+    W=Σ_wTr_regularQ_w/K=(2f/A)(AD₀/K)≥21/85.    (13hx)
+
+Группируем эти ЖЕ пары по тому же golden address π_hX_w, не по новому
+lex partition. Тогда w_x=(2D₀/K)N_(n,B_x),
+ρ_x=w_x/(Wh⁴)=N_(n,B_x)/(F_(n+1)h⁴) — в точности прежний count density
+full-lattice§5(5.4–5.5). При2m≤n, δ_m=p^floor(m/4)≤h/4 прежние bounds
+дают все cells nonempty и
+
+    1/48≤ρ_x≤243/16,
+    (7/1360)h⁴≤w_x≤(243/16)h⁴.                  (13hy)
+
+Ни individual D_i/K, ни carrier, ни trace-log price не менялись.
+Selecting одну пару на cell дало бы другой sparse programme с W→0;
+это не исходный all-W_n bank. Физическое выполнение address decoder,
+query/copy/PREP и его retained work/history остаётся отдельным ресурсом.
+Здесь потреблён projectors/address bank старого PF-KL owner, а не его
+PF-KL action вместо actual ordinary J determinant.
+
+### 6.75. SAME глобальная вероятность вынуждает t²=O(h²): полный flat-centred proof
+
+Сначала рассмотрим flat-CENTRED instance6.64 observable-based polynomial
+extension с Taylor degreeℓ≥2, even periodic L⁴ grid, h=L⁻¹,S=h⁻⁴ и
+positivew_x, W=Σw_x≤1. При query, fixed В ЭТОМ Taylor centre, U_ℓ=0,
+V_ℓ=h⁴q/w_x — ТОЧНО quadratic по scalar readings на ВСЕХ density inputs.
+У actual curved-centred polynomial его значение в ДРУГОЙ flat query
+не обязано давать эти coefficients; curved consumer строится ниже при
+fixed actual centre. Подменять центры нельзя. Определим time-circle
+kernel k_m=(2/3)^dist_L(m,0), Σk=5[1−(2/3)^(L/2)]<5, a_amp=p²,
+
+    A_x=a_amp h⁻²/(5√W) Σ_m k_m√w_(x+me₀),
+    ψ_x=(−1)^x¹A_x.                              (13hz)
+
+Cauchy даёт ΣA≤a_ampS, A_x≥a_amp h⁻²√w_x/(5√W). Neighbor time ratio
+в[2/3,3/2], поэтому |D₀A|≤A/(2h). Spatial checkerboard имеет
+|D₁ψ|≥A/h; остальные spatial terms nonpositive. С ПОЛНЫМ Lorentz sign
+
+    q_x≤−3A_x²/(4h²),
+    V_x≤−3a_amp²/(100Wh²).                       (13ia)
+
+Это реализовано ЧИСТЫМ normalized actual CAR input
+η=Σ_x√(√pA_x/S)[(−1)^x¹|x,0>+|x,1>]
+  +√(1−2√pΣA/S)|padding,14>.
+Norm slack2√p p²<1; scalar sign расположен наgrade0, все grade1 clock
+amplitudes future-positive. Actual α_i compression на{0,1,14} равен0,
+включая dark padding. Fixed decoder13gs даёт ψ; pure anchored query
+сохраняет pure whole input. Это all-density effect test, не supplied
+fixedRIGHT128 physical PREP или новое physical large-field solution.
+
+Пусть w₁=p⁶,w₀=1−p⁶=4p³,L_g=4p³, κ₀=w₀−w₁>0. При flatquery
+E=p², y=p+varsigma p²t²V, b=y²,B=4b(1−b), λ=L_g.
+Если −B≥X≥0, actual active pair product не меньше
+
+    P(X)=(w₀+w₁X)(w₀−w₁L_g+w₁p⁶X).             (13ib)
+
+P strictly increasing, leading coefficientp¹⁸. ДляT≥1 возьмём positive
+rootP(X_T)=T и Y_T=√[(1+√(1+X_T))/2]. Тогда |y|>Y_T⇒−B>X_T.
+Не предполагается b∈[0,1]: один b>1 может давать fullg<1.
+
+Actual return rank равен1056νK; ambient scene22976 сохранены, но22448
+columns вне retainP не объявляются occupied detector modes. Положим
+A_c=ν528K и P_base=(w₀−w₁L_g)(w₀−w₁L_g(1+p⁶)). На actual return
+со ВСЕМИ uncovered old baseline factors имеем
+
+    g≥P_base^[2A_c(1−W)] P(X)^[2A_cW].           (13ic)
+
+Поэтому g≤1 требует
+
+    P(X)≤T_W=P_base^(−(1−W)/W).                 (13id)
+
+T_W=P_base exp(C₀/W), C₀=−logP_base>0, decreasing поW. С(13hx)
+имеем T_W≤T_(21/85)=T_*. Combining(13ia–id), W≤1,a_amp=p² даёт
+
+    t²≤C_GR h²,
+    C_GR=100[p+Y_(T_*)]/(3p⁶)≈1379.9750.        (13ie)
+
+Все K,ν cancel, но все inactive old leaves остаются. Умножение нижнего
+bound на w₀^(4ν22448K)≤1 дало бы более грубое C≈16457.6861; это
+допустимое ослабление inequality, но не actual occupied ambient factor,
+не новая запись, цена или изменение returnP.
+Это НЕ назначенное достаточное расписание: для данного SAME global
+polynomial оно НЕОБХОДИМО, если Tr(E_Nσ^⊗N)=g(σ),0≤E_N≤I на полном
+input carrier. Не надо postulate отдельную positivity каждого factor
+или более сильноеg≤w₀^(2d). При arbitrary sparseW→0 T_W росло бы
+exponentially, masking локальную проблему; original fullbank избегает
+этой потери по(13hx). Global positivity принадлежит выбранному6.64
+extension: другой saturating extension с теми же local2jets нужно
+анализировать отдельно. Это не universal native clock theorem.
+
+Для SAME D1/D25 source уже имеется C³ remainderO(t²) при uniform C³
+bounds на A_h/w_x,M_h/w_x. На compact smooth chart эти ratios bounded
+по(13hy). Поэтому если его СОБСТВЕННЫЙ spatial/count comparison даёт
+C² error≤C_chart(t²+h+ε_count), то(13ie) делает её
+≤C_chart[(1+C_GR)h+ε_count]. Это источник этого two-tick programme,
+не автоматический перенос на более ранний five-outcome A_(n,t).
+Uniform chart Taylor error остаётся отдельным; exact degreeℓ≥2
+обеспечивает2jets только в выбранном центре. Ни lowerboundt, ни
+compile error/signal divisor~t⁻², neither full Book/PREP/clock/source
+rows, exact correlated roots и recovery inverse этим не закрыты.
+
+
+### 6.76. Forced upper clock в ACTUAL curved/nonzero-matter centre, не flat extrapolation
+
+Теперь fixed query равен ИМЕННО chosen Taylor centre6.64, включая
+curved pp/null-scalar fields. На affine slice frozenquery actual U=A_h/w
+не зависит от scalar readings, а V=M_h/w quadratic по обоим scalars.
+Любой total Taylor degreeℓ≥2 на этой slice совпадает с этим quadratic
+ТОЧНО, даже при nonzero scalar background: все query-displacement terms
+исчезают. В частности uniform large all-density input не обязан лежать
+в physical polydisc. Это утверждение о данном polynomial extension;
+другие density coordinates/clock/whitening factors не добавляются.
+
+Предположим на compact regular chart одно fixed coordinate direction s
+с g_x^{ss}≤−c<0, |g_x^{μν}|≤M, J_x≥j>0. Это имеет место на bounded
+original pp chart с transverse s=x, g^{xx}=−1,J=1 и internal restclock
+n=e0. Arbitrary large-shift ADM coordinates такого chosen axis не
+гарантируют. Coordinate change требует своего actual embedding/query,
+а не переименования. Используем actual counting-site decoder13gs.
+Для raw boosted/whitened input требуются настоящие inverse factors;
+лишь uniform nonzero decoder gap позволяет заменить amplitude budget
+меньшей константой. PF weights не являются Hilbert whitening.
+
+Положим δ=c/(30M)≤1/30, r=(1+δ)⁻¹, K_c=[(1+r)/(1−r)]³. В трёх
+направлениях μ≠s convolve√w с product cyclic kernel r^distance и
+определим A_x=a_amp h⁻²(kernel*√w)_x/(K_c√W), ψ_x=(−1)^x_s A_x.
+Kernel mass≤K_c, origin coefficient1. Отсюда ΣA≤a_ampS,
+A≥a_amp h⁻²√w/(K_c√W), |D_μψ|≤δA/h для μ≠s и |D_sψ|≥A/h.
+Те же normalized PURE scalar0/clock1/dark14 amplitudes13hz дают этот
+readout на ALL-density domain, сохраняя futureclock и actual currents.
+Полная quadratic Lorentz form, включая ВСЕ cross terms, имеет bound
+
+    q=dᵀg⁻¹d≤(−c+6Mδ+9Mδ²)d_s²≤−cA²/(2h²),
+    V_x≤−c j a_amp²/(2K_c²W h²).                (13if)
+
+Proper Lorentz links на grade0 trivial. Тop readout в witness равен0;
+сам top/весь CAR16 carrier остаётся. Это test effect positivity, а не
+новое физически подготовленное решение/ограничение matter variations.
+
+Curvature operand не обязан равняться0. Для ЛЮБОГО realE и b=y²
+λ=4E(1−E)≤1,B=4b(1−b)≤1, и actual second factor удовлетворяет
+
+    w₀−w₁[λ+(1−λ)B]−κ₀
+           =w₁(1−λ)(1−B)≥0.                    (13ig)
+
+Поэтому при−B≥X active pair≥κ₀(w₀+w₁X). На ACTUAL filled return
+rank1056νK, A_c=ν528K, со всеми uncovered old baseline factors
+
+    g_ℓ≥P_base^[2A_c(1−W)] [κ₀(w₀+w₁X)]^[2A_cW]. (13ih)
+
+Outside-P22448 scene columns остаются в Hilbert space, но не оценены
+как дополнительные occupied modes. Изg≤1 следует pair≤T_W, где теперь
+T_W=P_base^(−(1−W)/W) — actual return threshold без фиктивного damping.
+X_T=(T/κ₀−w₀)/w₁>0, Y_T=√[(1+√(1+X_T))/2]. С(13if) иW≥21/85:
+
+    t²≤C_curved h²,
+    C_curved=2K_c²[p+Y_(T_*)]/(c j a_amp²p²)<∞,
+    T_*=P_base^(−64/21), a_amp=p².              (13ii)
+
+Это necessary bound для SAME globally measured polynomial в actual
+curved centre. Uniform c,M,j и decoder gap делают C uniform; большой
+coarse constant не является resource-efficiency result. Fixed approximate
+compiler с |q−g|≤η,0≤q≤1 даёт g≤1+η и тот же proof с порогом
+T_W(1+η)^[1/(2A_cW)]. Uniform boundedη и originalWfloor сохраняют
+O(h²). Но source/relative precisionη/g иη/t² сохраняют свои настоящие
+знаменатели; probability upper bound сам их не контролирует.
+
+Consumer SAME D25(D15): original w_x~h⁴ по13hy и uniform smoothfield
+jets дают uniformC³(A_h/w_x,M_h/w_x). Его normalized t²-remainder
+теперь O(h²); к spatialO(h), count/Taylor/compilation errors прибавляется
+выведенная, а не назначенная upperclock поправка. Это снимает ровно
+одну предпосылку source limit ЭТОГО two-tick programme. Оно не выбирает
+programme/extension как обязательный native закон, не выводит lowerclock
+или полную цену, не решает all preparation/24link/clock roots и не
+переносится на distinct five-outcome price без SAME-execution identity.
+Raw#216 не заменён smooth-chart norm. Full correlated-state и oldBook
+sources остаются следующим совместным уравнением.
+
+
+### 6.77. Положительный coherent-grade14 consumer: явная approximate preparation с O(N^−3/2) residual
+
+После(13hr) нельзя использовать exact ground-stitch. Вместо него
+построим ОДИН explicit normalized trial на том же definite quadratic
+H_N, не добавляя occupation potential. Пусть B=√p c+√(1−p)d=m₀,
+D=−√(1−p)c+√p d, a=scalar0,b=top15, N=2n≥8, s²=q=1−n⁻¹/².
+В symmetric four-grade sector actual full CAR16 tensor power положим
+
+    Ψ_N=Z_N^−1/2(B†²−sQ†)^n|vac>, Q†=a†²+b†²,
+    Z_N=(n!)²4^n Σ_(k=0)^n q^k c_(n−k),
+    c_j=binom(2j,j)/4^j.                          (13ij)
+
+Здесь k — число пар excitations, n_exc=2k. D occupation ровно0;
+вся исходная clock–grade14 coherence находится в B. Оба Hodge modes
+сохранены изотропно, остальные12 grades остаются в ambient carrier и
+во всём normal variation domain. H_N на них annihilates; их другие
+native operators не объявлены нулевыми.
+
+Все следующие estimates — для ЭТОГО finite normalized vector.
+Индукция даёт c_j≤1/√(j+1), c_n≥1/(2√n). Для relative weight
+r_k=c_(n−k)/c_n имеем r_k≥1, r_k≤3 приk≤n/2 и r_k≤2√n всегда.
+Поэтому Σq^k r_k≥(1−e^−√n)√n>(6/7)√n. Разбивая moment sum на
+k≤n/2 и его tail, получаем для integerj≥1 numerator bounds
+3j!n^((j+1)/2) и2n^(j+1)e^−√n/2. Используем
+sup_(x≥2)x^(j+1)e^−x/2=[2(j+1)/e]^(j+1)<(j+1)^(j+1):
+
+    E k≤13√n, E k²≤70n, E k⁴≤7400n².            (13ik)
+
+Не подставлено infinite squeezed state. Actual bright radial multiplier
+на amplitudes(−s)^k√c_(n−k) равен
+
+    (H(B)Ψ)_k=[−sN+A k+C k²]Ψ_k,
+    A=2s−s⁻¹−N(1−s)²/s, C=2(1−s)²/s,
+    |A|≤1, C≤1/n,
+    ||(H(B)−<H(B)>)Ψ||≤52√n.                    (13il)
+
+Важно: физический H(c) НЕ равен H(B). Из pair polynomial следуют
+B†aΨ=−s a†BΨ и аналогично дляb; отсюда
+FΨ=(B n_exc+B†Q)Ψ=[(1−s)n_exc−2s]BΨ. Сохраняем ВСЮ утечку:
+
+    H(c)Ψ=pH(B)Ψ−√[p(1−p)]D†FΨ
+                         +(1−p)D†²QΨ/2.         (13im)
+
+Это три orthogonal D-number sectors0,1,2. По(13ik)
+||FΨ||²≤144N и ||QΨ||²≤140N: последнее использует exact radial
+Q†Q=n_exc². Поэтому
+
+    ||[H(c)−<H(c)>]Ψ||²
+      ≤N[1352p²+144p(1−p)+70(1−p)²]
+      =N(1348−1274p)<24²N,
+    ||[(H_N−<H_N>)/binom(N,2)]Ψ_N||
+                         ≤48/[√N(N−1)].         (13in)
+
+Ни one-dark, ни two-dark source не отброшены. Это approximate-root
+estimate на actual four-grade quadratic, не ложное exact eigenstate.
+
+SO2 symmetry и excitation parity дают ТОЧНУЮ one-copy density
+
+    ρ₁=(1−ε_N)|m₀><m₀|+ε_N(P₀+P₁₅)/2,
+    ε_N=<n_exc>/N<1, ε_N≤19/√N,
+    ||ρ₁−|m₀><m₀|||₁=2ε_N≤min(2,38/√N).        (13io)
+
+Таким образом c–d coherence=(1−ε_N)p^(3/2), а не0 как в failed
+exact-ground-stitch. Union bound on fixedk projectors ontoB даёт
+||ρ_k−|m₀><m₀|^⊗k||₁≤min(2,2√(19k)N^−1/4).
+Actual current matrices vanish на всех{0,1,14,15}; first-grade density
+равна p(1−ε_N)e₀e₀* и nonzero. Mixed marginal не объявлена новым
+single-vector clock readout.
+
+Для реального affine-quadratic query compression
+A_N(g)=a(g)I+b(g)H_N/binom(N,2) используем тот же FIXED Ψ_N при всехg.
+Средняя энергия отрицательна: <H(B)>=<n_B[(1−s)n_exc−2s]>. В
+n_B-weighted radial distribution adjacent ratio равен
+q·2(n−k−1)/[2(n−k)−1]<q, значит weightedEk≤q/(1−q), и bracketmean<0.
+С H(B)+NI≥0 это даёт
+
+    e_N=<H(c)>/binom(N,2)∈[−2p/(N−1),0],
+    q_N=a+e_N b,
+    ||D^j(q_N−a)||≤2p||D^j b||/(N−1), j≤2.      (13ip)
+
+Отдельной derivative выбранного eigenvector нет. Для conditional
+S_N=−logq_N/logφ, q_N≥μ_N>0, normalized full-sphere preparation gradient
+ограничен
+
+    ||D_prep S_N||≤96|b|/[μ_N logφ√N(N−1)].     (13iq)
+
+Physical signal divisorσ_N ДОЛЖЕН делить и эту величину. Его исчезновение
+до деления не доказывает native root recovery. Для geometric log-source
+приa,q_N≥μ, A_j=||D^j a||,B_j=||D^j b||,e=|e_N| имеем
+|S_N−S₀|≤eB₀/(μlogφ),
+||DS_N−DS₀||≤e[B₁/μ+B₀A₁/μ²]/logφ,
+||D²S_N−D²S₀||≤e[B₂/μ+B₀A₂/μ²+(2A₁B₁+eB₁²)/μ²+2B₀A₁²/μ³]/logφ.
+Не скрыты floors и coefficient jets.
+
+Потреблён положительный переход: full coherent vacuum marginal теперь
+совместим с controlled APPROXIMATE preparation normal в definite two-Hodge
+quadratic block. Это не exact full-polynomial E_N root и не автоматический
+fixedRIGHT128/site/Lorentz lift. Actual full polynomial kernels, indefinite
+geometric combinations, changing frames, upstreamH/J/R, Book/PREP/copy
+price и same-source recovery inverse требуют собственных bounds. Никакой
+свободный scalar cost, fitting term или новая physical variation restriction
+не введены. На smooth source family следующим consumer остаются именно
+эти full-price/correlated-root equations; raw#216 не переопределён.
+
+Новые bounded groups в прежнем check_native_complete_price_scale.py:
+actual_coherent_ground_branch; actual_dark_energy_overlap;
+actual_fresh_Jones_actuation; pure_global_input_witness;
+original_full_prefix_coverage; necessary_global_probability_clock;
+actual_curved_centre_clock; coherent_quadratic_approx_preparation.
+Их finite identities несут proofs6.72–6.77. Unchanged старые suites,
+null roots, heat и Lean math не повторяются; prior owner bytes закреплены
+append-only provenance. GR_closed=false, full_D0_price_selected=false.
+
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

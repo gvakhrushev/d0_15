@@ -24,6 +24,23 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-18
 
 Current full-source consumer:
+[strategic7.23](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.72–6.77](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The ORIGINAL full-prefix bank has regular massW≥21/85. Positivity of the
+SAME globally measured polynomial now forces t²≤C_chart h² at bounded
+curved centres with the actual13gs decoder; the t² source remainder isO(h²).
+This is specific to that full global realization and actual returnrank1056νK,
+not a native choice of all local-jet-equivalent programmes. A coherent
+clock/grade14 TWO-Hodge trial also gives normalized preparation residual
+O(N^−3/2), one-copy errorO(N^−1/2) and affine-quadratic queryC² errorO(1/N),
+retaining all orthogonal-dark leakage. Exact full-polynomial/fixedRIGHT128/
+site/Lorentz/Book roots remain open. The C_Y Jones candidate requires an
+actual fresh-descendant placement; chronological LEFT/passive refinement
+has a sharp all-depth obstruction. Next consume the SAME complete native
+price/PREP/copy/clock map and source-normalized FULL correlated recovery;
+no new action, frozen grades or replaced raw#216 norm.
+
+Preceding full-price consumer:
 [strategic7.22](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source6.66–6.71](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The SAME retained failure word gives a positive mean/MAP Euler equivalence

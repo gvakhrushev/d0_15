@@ -2270,6 +2270,550 @@ def hodge_polar_radial_trial(root=None):
       'scope':'Only this definite quadratic single-site two-Hodge qutrit block. Its marginals recover the pure CLOCK conditional block, not the full13gh vacuum sqrt(p)|1>+sqrt(1-p)|14>. Grade14 is a coherent direct-sum spectator, not a tensor factor. No full Lorentz indefinite grid, fullCAR16/source transfer, canonicalRIGHT128, higher-query/source, native PREP or full Book-price claim.'}
 
 
+def hodge_dark_ground_branch_control(root=None):
+    import sympy as s
+    checks = []
+
+    def ck(name, v):
+        if not bool(v):
+            raise ArithmeticError(name)
+        checks.append(name)
+
+    def zero(M):
+        return M.applyfunc(s.simplify) == s.zeros(*M.shape)
+    c = s.eye(4)[:, 1]
+    x = s.eye(4)[:, 0]
+    y = s.eye(4)[:, 2]
+    d = s.eye(4)[:, 3]
+    A = x * c.T + c * x.T
+    B = y * c.T + c * y.T
+    active = s.diag(1, 1, 1, 0)
+    ck('both actual scalar-clock operators annihilate dark14', A * d == s.zeros(4, 1) and B * d == s.zeros(4, 1))
+    H2 = s.kronecker_product(A, A) + s.kronecker_product(B, B)
+    Md = s.kronecker_product(active, s.eye(4)) + s.kronecker_product(s.eye(4), active)
+    ck('full fourgrade quadratic preserves active-copy number', H2 * Md == Md * H2)
+    X = c * d.T
+    T = s.kronecker_product(X, s.eye(4)) + s.kronecker_product(s.eye(4), X)
+    expected = s.kronecker_product(x * d.T, A) + s.kronecker_product(A, x * d.T) + s.kronecker_product(y * d.T, B) + s.kronecker_product(B, y * d.T)
+    ck('actual darkclock preparation commutator is a mixed correlation source', H2 * T - T * H2 == expected)
+
+    def radial(M):
+        last = M // 2
+        H = s.zeros(last + 1)
+        for k in range(last + 1):
+            H[k, k] = 2 * k * (M - 2 * k)
+            if k < last:
+                H[k, k + 1] = H[k + 1, k] = (k + 1) * s.sqrt((M - 2 * k) * (M - 2 * k - 1))
+        return H
+    for M in (1, 2, 3, 4):
+        H = radial(M)
+        Hp = radial(M + 1)
+        nc = s.diag(*[M - 2 * k for k in range(H.rows)])
+        ne = s.diag(*[2 * k for k in range(H.rows)])
+        R = s.zeros(Hp.rows, H.rows)
+        for k in range(H.rows):
+            R[k, k] = s.sqrt(M - 2 * k + 1)
+        ck('clock creation is exact rectangular radial map M' + str(M), zero(R.T * R - nc - s.eye(H.rows)))
+        ident = ((nc + s.eye(H.rows)) * H + H * (nc + s.eye(H.rows))) / 2 + H + ne
+        ck('exact Hermitian adjacentM variational numerator M' + str(M), zero(R.T * Hp * R - ident))
+    z = s.symbols('sqrtM_minus15', positive=True)
+    m = (z + 15) ** 2
+    ck('strict ground branch energy drop above225', s.expand(-m + 15 * (z + 15)) == -z * z - 15 * z)
+    (E, nc, ne) = s.symbols('E n_clock n_exc', real=True)
+    quotient = (E * (nc + 2) + ne) / (nc + 1)
+    ck('normalized clock creation Rayleigh difference', s.simplify(quotient - E - (E + ne) / (nc + 1)) == 0)
+    (M, N) = s.symbols('M N', integer=True, nonnegative=True)
+    ck('allowed lowM clock-dark edge norm bound', s.expand(226 * N - (N - M) * (M + 1) - M * M - M - N * (225 - M)) == 0)
+    p = (s.sqrt(5) - 1) / 2
+    ck('actual golden target coherence squared is p cubed', s.simplify(p * (1 - p) - p ** 3) == 0)
+    return {'status': 'PASS', 'checks': checks, 'actual_operator': 'The fourgrade quadratic annihilates grade14 and conserves active M=n_clock+n_scalar0+n_top15. The clock-dark generator commutator is an actual two-copy mixed-correlation source, not a freely chosen scalar condition.', 'positive_input': 'Use only the already proved active-M radial ground family, lambda_M of H_M+M with0<=lambda_M<=min(M,5sqrtM), so E_M=-M+lambda_M and <exc><=10sqrtM.', 'exact_drop': 'Clock creation gives E_(M+1)<=E_M+(E_M+<exc>)/(<n_clock>+1). Therefore E_(M+1)<E_M for every M>225. This is an all-M analytic bound, not a small-spectrum conjecture.', 'coherence_bound': 'Any exact full-H_N eigenstate made by stitching these radial ground branches can have clock-dark14 coherence only on adjacent edges M<=225. Hence |<c_dag d>|/N<=sqrt(226/N). Its one-copy trace distance from sqrt(p)|clock>+sqrt(1-p)|14> is at least2[max(0,p^(3/2)-sqrt(226/N))].', 'coefficient_source': 'Changing only the genuine scalar coefficients in a(g)I+b(g)H_N/binomial(N,2), b!=0, does not change the equal-energy criterion or this ground-branch obstruction. A new independently derived non-affine preparation operator could change it; no such term is inserted.', 'scope': 'Only the successful active radial GROUND branch, not arbitrary excited-sector degeneracies, nonsymmetric fullcarrier states, fullRIGHT128 or fullD0. Other12 grades are not removed from the ambient carrier; their physical effects and allsite/Lorentz/higher query couplings require their actual operator/source.'}
+
+def coherent_dark_energy_overlap(root=None):
+    from itertools import permutations
+
+    def add(a, b, scale=1):
+        z = dict(a)
+        for (k, v) in b.items():
+            z[k] = z.get(k, 0) + scale * v
+            if z[k] == 0:
+                del z[k]
+        return z
+
+    def h_apply(v):
+        z = {}
+        for (x, coef) in v.items():
+            for i in range(len(x)):
+                for j in range(i + 1, len(x)):
+                    for e in (1, 2):
+                        if x[i] in (0, e) and x[j] in (0, e):
+                            y = list(x)
+                            y[i] = e if x[i] == 0 else 0
+                            y[j] = e if x[j] == 0 else 0
+                            y = tuple(y)
+                            z[y] = z.get(y, 0) + coef
+        return {k: v for (k, v) in z.items() if v}
+
+    def c_apply(v):
+        z = {}
+        for (x, coef) in v.items():
+            for (i, a) in enumerate(x):
+                if a == 3:
+                    y = list(x)
+                    y[i] = 0
+                    y = tuple(y)
+                    z[y] = z.get(y, 0) + coef
+        return z
+
+    def dark(v, i):
+        return {x: c for (x, c) in v.items() if x[i] == 3}
+
+    def inner(v, w):
+        return sum((c * w.get(x, 0) for (x, c) in v.items()))
+    checks = []
+
+    def ck(label, condition):
+        if not condition:
+            raise ArithmeticError(label)
+        checks.append(label)
+    eps = {}
+    for x in permutations((0, 1, 2)):
+        inv = sum((x[i] > x[j] for i in range(3) for j in range(i + 1, 3)))
+        eps[x] = (-1) ** inv
+    ck('epsilon_norm6', inner(eps, eps) == 6)
+    ck('epsilon_H3_minus2', h_apply(eps) == {x: -2 * c for (x, c) in eps.items()})
+    ec = {x + (0,): c for (x, c) in eps.items()}
+    ed = {x + (3,): c for (x, c) in eps.items()}
+    ck('orthogonal_clock_dark', inner(ec, ed) == 0)
+    ck('same_energy_clock', h_apply(ec) == {x: -2 * c for (x, c) in ec.items()})
+    ck('same_energy_dark', h_apply(ed) == {x: -2 * c for (x, c) in ed.items()})
+    ck('nonzero_exact_clock_dark_intertwiner', c_apply(ed) == ec)
+    ck('unit_normalized_coherence_matrix_element', inner(ec, c_apply(ed)) == 6)
+    for i in range(4):
+        ck('dark_pattern_commutator_' + str(i), h_apply(dark(add(ec, ed), i)) == dark(h_apply(add(ec, ed)), i))
+    from itertools import product
+    for i in range(3):
+        ck('all_basis_dark_commutator_N3_' + str(i), all((h_apply(dark({x: 1}, i)) == dark(h_apply({x: 1}), i) for x in product(range(4), repeat=3))))
+    ck('nonzero_overlap_not_wholecode_recovery', sum((c * c for (x, c) in ec.items() if x[0] in (1, 2))) == 4)
+    return {'status': 'PASS', 'checks': len(checks), 'labels': checks, 'eigenvalue': -2, 'copies': 4, 'coherence_per_average_copy': 'alpha*beta/4', 'scope': 'full four-grade quadratic counter to blanket zero coherence; not asymptotic recovery'}
+
+def jones_fresh_actuation_controls(root=None):
+    from pathlib import Path
+    from hashlib import sha256
+    import sympy as s
+    root = Path.cwd() if root is None else Path(root)
+    checks = []
+
+    def ck(name, v):
+        if not bool(v):
+            raise ArithmeticError(name)
+        checks.append(name)
+    pin = '02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md'
+    digest = '9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3'
+    ck('actual inclusion/conditional-expectation owner unchanged', sha256((root / pin).read_bytes()).hexdigest() == digest)
+    rankpin = '02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md'
+    ranksha = '012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6'
+    ck('actual working-versus-regular representation owner unchanged', sha256((root / rankpin).read_bytes()).hexdigest() == ranksha)
+    p = (s.sqrt(5) - 1) / 2
+    a = s.sqrt(p)
+    simp = lambda M: M.applyfunc(s.simplify)
+    J = s.zeros(5, 2)
+    J[0, 0] = a
+    J[4, 0] = p
+    J[3, 1] = 1
+    e = simp(J * J.T)
+    I = s.eye(5)
+    ck('actual normalized inclusion is isometric', simp(J.T * J) == s.eye(2))
+    ck('Jones projection is the owned full conditional expectation', simp(e * e) == e)
+    Zfine = s.diag(1, 1, 1, 1, 0)
+    Zold = s.diag(1, 0, 1, 0, 1)
+    ck('Jones projection preserves oldRIGHT, not a second-copy oracle', simp(e * Zold - Zold * e) == s.zeros(5))
+    C = simp(e * Zfine - Zfine * e)
+    Pdup = s.diag(1, 0, 0, 0, 1)
+    ck('actual fineRIGHT commutator has exact nonzero norm ap', simp(C.T * C - p ** 3 * Pdup) == s.zeros(5))
+    R = I - 2 * e
+    ck('Jones reflection is unitary on every full GNS column', simp(R.T * R) == I)
+    CR = simp(R * Zfine - Zfine * R)
+    ck('reflection commutator gives uniform all-depth approximation floor 2ap', simp(CR.T * CR - 4 * p ** 3 * Pdup) == s.zeros(5))
+    X = s.Matrix([[0, 1], [1, 0]])
+    W = s.kronecker_product(e, X) + s.kronecker_product(I - e, s.eye(2))
+    ck('coherent Jones instrument keeps both complete flag outputs', simp(W.T * W) == s.eye(10))
+    Z = s.kronecker_product(Zfine, s.eye(2))
+    CW = simp(W * Z - Z * W)
+    Pminus = (s.eye(2) - X) / 2
+    ck('coherent Jones control has the same exact commutator norm', simp(CW.T * CW - 4 * p ** 3 * s.kronecker_product(Pdup, Pminus)) == s.zeros(10))
+    G = s.Matrix([[a, -p], [p, a]])
+    Z0 = s.diag(-1, 1)
+    P0 = s.diag(1, 0)
+    P1 = s.diag(0, 1)
+    U0 = s.kronecker_product(G, s.eye(2)) * (s.kronecker_product(P0, X) + s.kronecker_product(P1, s.eye(2))) * s.kronecker_product(G.T, s.eye(2))
+    epair = s.Matrix([[p, a * p], [a * p, p ** 2]])
+    ck('positive reflection candidate equals G Z G^-1 and G^2 Z exactly', simp(s.eye(2) - 2 * epair - G * Z0 * G.T) == s.zeros(2) and simp(G * Z0 * G.T - G * G * Z0) == s.zeros(2))
+    ck('explicit G/CNOT conjugation on the actual fresh duplicated pair', simp(U0 - s.kronecker_product(epair, X) - s.kronecker_product(s.eye(2) - epair, s.eye(2))) == s.zeros(4))
+    Q = s.eye(5)
+    Q[0, 0] = Q[4, 4] = a
+    Q[0, 4] = -p
+    Q[4, 0] = p
+    Pblank = s.diag(1, 0, 0, 1, 0)
+    ck('whole-column Q Pblank Q^-1 includes carried B and both rectangular inputs', simp(Q * Pblank * Q.T - e) == s.zeros(5))
+    omega = s.Matrix([p, 0, 0, p, a * p])
+    ck('canonical fine trace seed remains an eigenvector of Jones projection', simp(e * omega - omega) == s.zeros(5, 1))
+    Pss = s.diag(0, 0, 0, 0, 1)
+    LE00 = s.diag(1, 1, 0, 0, 0)
+    cross = s.zeros(5)
+    cross[4, 0] = a * p
+    ck('basic construction supplies the missing fresh cross-copy matrix unit', simp(Pss * e * LE00 - cross) == s.zeros(5))
+    M = s.Matrix([[1, 1], [1, 0]])
+    sizes = M ** 6 * s.Matrix([1, 1])
+    work = M ** 3 * s.Matrix([1, 1])
+    ck('native transported corner rank34 is not GNS conditional projection rank2', sum(sizes) == sum((x * x for x in work)) == 34 and 1 ** 2 + 1 ** 2 == 2)
+    Pfirst = s.diag(1,0,0,0,0)
+    Oe = (I-Zfine)*e*Zfine
+    Or = (I-Zfine)*R*Zfine
+    ck('offdiagonal compression gives sharp effect ap and reflection2ap floors', simp(Oe.T*Oe-p**3*Pfirst)==s.zeros(5) and simp(Or.T*Or-4*p**3*Pfirst)==s.zeros(5))
+    Ow = (s.eye(10)-Z)*W*Z
+    ck('full flag column offdiagonal compression gives sharp2ap floor', simp(Ow.T*Ow-4*p**3*s.kronecker_product(Pfirst,Pminus))==s.zeros(10))
+    return dict(status='PASS', checks=checks, source_sha256={pin: digest, rankpin: ranksha}, theorem='For actual A subset B and e=J C on L2(B), the finite star algebra generated by L(B) and e is R(A) prime. Proof: L(B) prime=R(B), and R_b commutes e iff E_A(b)=b iff b in A, already by acting on Omega. This algebra statement does not admit coherent e control as a native primitive.', chronological_obstruction='All full LEFT words at later levels and passive trace-preserving inclusions preserve the transported earlier fineRIGHT probe. The actual Jones reflection or coherent flag has commutator norm2ap with that probe, so full-column implementation error is at least2ap at every depth, even with retained spectator ancillas. A pointer effect from a similarly commuting complete word/cut has effect-error floor ap.', scope='This is the named chronological fineLEFT/passive-inclusion class, not the full generous encoded-Hilbert G/CNOT class. A physical G placement on the fresh right-copy wire would escape it while preserving oldRIGHT/ref; the explicit pair formula shows exactly that missing placement. The folded A_(N+12) action on H_(N+6) is not automatically the chronological left action on H_(N+12).', price='If coherent Jones flag is actually supplied, q1=norm(e Psi)^2, q0=norm((I-e)Psi)^2 retain both outputs. Under independently bound SAME Book w=q its mean is h(q1)/logphi, plus actual old prefixes and any raw normalizer; it is not free factory overhead or automatically the C_Y capacity price.')
+
+def pure_clock_checkerboard_witness(root):
+    import ast, hashlib
+    from itertools import product
+    from pathlib import Path
+    import sympy as s
+    root = Path(root)
+    checks = []
+
+    def ck(name, v):
+        if not bool(v):
+            raise ArithmeticError(name)
+        checks.append(name)
+    f = root / '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py'
+    creator = next((n for n in ast.parse(f.read_text()).body if isinstance(n, ast.FunctionDef) and n.name == 'creator'))
+    pin = hashlib.sha256(ast.dump(creator, include_attributes=False).encode()).hexdigest()
+    ck('actual full16 creator AST pin', pin == '801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4')
+    ns = {'s': s, 'SUBS': [tuple((i for i in range(4) if m & 1 << i)) for m in range(16)]}
+    exec(compile(ast.Module(body=[creator], type_ignores=[]), str(f), 'exec'), ns)
+    cr = [ns['creator'](s.eye(4)[:, i]) for i in range(4)]
+    support = [0, 1, 14]
+    for i in range(1, 4):
+        alpha = (cr[0] + cr[0].T) * (cr[i] - cr[i].T)
+        ck('all16 actual current vanishes including dark padding ' + str(i), alpha.extract(support, support) == s.zeros(3))
+    p = (s.sqrt(5) - 1) / 2
+    a = p * p
+    ck('native golden amplitude has strict norm slack', s.simplify(1 - 4 * p ** 5) > 0)
+    (A, S, P) = s.symbols('A S p', positive=True)
+    amp = s.sqrt(s.sqrt(P) * A / S)
+    for sg in (-1, 1):
+        psi0 = sg * amp
+        psi1 = amp
+        ck('same fixed decoder reads signed A ' + str(sg), s.simplify(S * psi0 * psi1 / s.sqrt(P) - sg * A) == 0)
+        ck('firstgrade clock future-positive ' + str(sg), psi1.is_positive is True)
+    r = s.Rational(2, 3)
+    for L in (2, 4, 6):
+        kernel = [r ** min(m, L - m) for m in range(L)]
+        ck('exact cyclic temporal kernel mass L' + str(L), sum(kernel) == 5 * (1 - r ** (L // 2)))
+        ck('all cyclic kernel neighboring ratios bounded L' + str(L), all((s.Rational(2, 3) <= kernel[(m + 1) % L] / kernel[m] <= s.Rational(3, 2) for m in range(L))))
+        ck('spatial checkerboard reverses across every periodic edge L' + str(L), all(((-1) ** ((j + 1) % L) == -(-1) ** j for j in range(L))))
+    L = 2
+    h = s.Rational(1, L)
+    sites = list(product(range(L), repeat=4))
+    count = len(sites)
+    b = {x: s.Integer(1 + x[0] + 2 * x[1] + 3 * x[2] + 5 * x[3]) for x in sites}
+    w = {x: b[x] ** 2 for x in sites}
+    W = sum(w.values())
+    kernel = [r ** min(m, L - m) for m in range(L)]
+
+    def shift(x, mu, step=1):
+        y = list(x)
+        y[mu] = (y[mu] + step) % L
+        return tuple(y)
+    AA = {x: h ** (-2) * sum((kernel[m] * b[shift(x, 0, m)] for m in range(L))) for x in sites}
+    ck('S is exactly h power minus4', count == h ** (-4))
+    ck('convolution l1 preserves exact mass', sum(AA.values()) == h ** (-2) * sum(kernel) * sum(b.values()))
+    ck('actual weights satisfy Cauchy normalization bound', sum(b.values()) ** 2 <= count * W)
+    ck('every smoothed amplitude dominates its own weight', all((AA[x] >= h ** (-2) * b[x] for x in sites)))
+    ck('time smoothing bounds both neighboring ratios', all((s.Rational(2, 3) * AA[x] <= AA[shift(x, 0)] <= s.Rational(3, 2) * AA[x] for x in sites)))
+    ck('time difference never exceeds half own amplitude', all((abs(AA[shift(x, 0)] - AA[x]) <= AA[x] / 2 for x in sites)))
+    phi = {x: (-1) ** x[1] * AA[x] for x in sites}
+    q = {}
+    for x in sites:
+        D = [(phi[shift(x, i)] - phi[x]) / h for i in range(4)]
+        q[x] = D[0] ** 2 - sum((z * z for z in D[1:]))
+    ck('actual Lorentz time term retained in negative q bound', all((q[x] <= -s.Rational(3, 4) * AA[x] ** 2 / h ** 2 for x in sites)))
+    ck('exact normalized everycell matter operand bound', all((h ** 4 * q[x] / w[x] <= -s.Rational(3, 4) / h ** 2 for x in sites)))
+    R = s.symbols('R', nonnegative=True)
+    ck('dark14 pad normalizes pure vector exactly', s.simplify(R + (1 - R) - 1) == 0)
+    return {'status': 'PASS', 'checks': checks, 'source_sha256': {'creator_AST': pin}, 'construction': 'On an even periodic L^4 grid h=1/L,S=h^-4,w_x>0,W=sumw, set k_m=(2/3)^dist_L(m,0), A_x=(a h^-2/(5sqrtW))sum_m k_m sqrt(w_(x+m e0)), a=p². Put eta_x=sqrt(sqrtp A_x/S)[(-1)^x1 |x,0>+|x,1>] and pad remaining norm with grade14 at one cell.', 'exact_bounds': 'sumA<=aS, norm_before_pad<=2sqrtp a<1, A_x>=a h^-2 sqrt(w_x)/(5sqrtW), neighboring temporal amplitude ratio in[2/3,3/2]. Everycell q=(D0phi)^2-sum_i(Diphi)^2<=-3A_x²/(4h²); v_x=h⁴q/w_x<=-3a²/(100Wh²).', 'same_input': 'The fixed6.64 decoder S Re rho_x01/sqrtp reads exactly phi_x=(-1)^x1 A_x. P1eta_x has positive future e0 coefficient at everycell. All actual alpha_i current numerators vanish, including the grade14 padding. The data input is rank1; anchored Choi code omega_V is also pure, so their product sigma is pure.', 'polynomial_scope': 'At a fixed flat real query with U=0, the actual V matter operand is quadratic in these fixed density coordinates; its Taylor restriction of degree>=2 equals that quadratic on every matter density. This is an ALL-density positivity witness, not a claim that the large decoded field belongs to the physical13gi chart.', 'boundary': 'Requires even periodic spatialcheckerboard grid, fixed flat +--- query and the actual S and w factors. No mixed-state trick, new AF factor, selected reference column, fixedRIGHT128 root, supplied-PREP admission, full Book stationarity or physical clock selection is asserted.'}
+
+def same_cut_ready_coverage_controls(root=None):
+    from pathlib import Path
+    from hashlib import sha256
+    import sympy as s
+    root = Path.cwd() if root is None else Path(root)
+    checks = []
+
+    def ck(name, v):
+        if not bool(v):
+            raise ArithmeticError(name)
+        checks.append(name)
+    pins = {'02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md': '828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b', '02_REGISTRY/research/A4D_GLOBAL_GOLDEN_AF_VOLUME_FREE_CURVATURE_2026_10_17.md': '55212db3ffb46de43226827dd67104444cd701b891a8332185756479d7a5466e', '02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md': '4b3b78274de1cc700dbdae605bb8fe0047e121ef55b611034162e41cea338086'}
+    for (p, h) in pins.items():
+        ck('actual unchanged owner ' + Path(p).name, sha256((root / p).read_bytes()).hexdigest() == h)
+    (A, B) = s.symbols('A B', positive=True)
+    (D0, D1) = (13 * A + 8 * B, 8 * A + 5 * B)
+    K = A * D0 + B * D1
+    ck('full defining regular weights normalize without PF substitution', s.cancel(A * D0 / K + B * D1 / K - 1) == 0)
+    ck('sharp full READY mass lower bound21/34 is exact for A>=B', s.expand(34 * A * D0 - 21 * K - (A - B) * (169 * A + 105 * B)) == 0)
+    ck('full READY mass bound attains equality on actual first cut', s.cancel((A * D0 / K).subs({A: 1, B: 1})) == s.Rational(21, 34))
+    (f, g) = s.symbols('f g', positive=True)
+    ck('all FR/RF pair bank consumes a uniform fraction of READY leaves', s.expand(10 * f - 2 * (3 * f + 2 * g) - 4 * (f - g)) == 0)
+    ck('pair bank lower bound is21/85 with actual regular weights', s.Rational(2, 5) * s.Rational(21, 34) == s.Rational(21, 85))
+    (S, c, nx) = s.symbols('S c nx', positive=True)
+    ck('pair multiplicity cancels in exactly the owned normalized count density', s.cancel(2 * c * nx / (2 * c * f / S) - S * nx / f) == 0)
+    ck('all READY grouping has the same normalized count density', s.cancel(c * nx / (c * A / S) - S * nx / A) == 0)
+    ck('sparse one-pair-per-cell is a genuine smaller mass, not the full bank', s.cancel(2 * S * D0 / K - 2 * S / A * (A * D0 / K)) == 0)
+    return dict(status='PASS', checks=checks, source_sha256=pins, exact_all_READY='At actual old cut N, A=F_(N+2), B=F_(N+1), D0=13A+8B,D1=8A+5B,K=A D0+B D1. Group every READY leaf by the existing address-to-grid map; sum Q_x=P_READY and W=A D0/K>=21/34. Individual trace weights/action/carrier are unchanged.', exact_original_pairs='The original global owner already activates ALL exact-cost n prefixes, each Q_w=1_wFR+1_wRF, at old N=n+2. W_pair=2F_(n+1)D0/K >=21/85, because F_(n+4)=3F_(n+1)+2F_n<=5F_(n+1). Group by the original pi_h X_w. This retains even the original rank2 pair semantics.', coverage_scope='Nonempty cells require the existing full-lattice count condition h>2 p^floor(m/4), 2m<=n and its positive Binet bound. Full prefix-bank grouping inherits that result exactly. Arbitrary balanced lex grouping is allowed by the D1 matrix class but changes the old geometric address readout unless separately identified; it is not silently substituted.', native_scope='Activating all READY instead of an actually sparse selected bank changes that controller argument, though not the cut/carrier/trace-log action law. The conservative all-original-FR/RF-prefix bank is already the published global mathematical programme. Physical all-address decoder/query execution, full work return/history/price and Book binding remain required; no q_Born=pi or sampling renormalization is asserted.')
+
+def golden_global_probability_clock_bound(root=None):
+    checks = []
+
+    def ck(name, cond):
+        if not bool(cond):
+            raise ArithmeticError(name)
+        checks.append(name)
+    p = (s.sqrt(5) - 1) / 2
+    w1 = s.simplify(p ** 6)
+    w0 = s.simplify(1 - w1)
+    L = s.simplify(4 * p ** 3)
+    aa = w1
+    kappa = s.simplify(w0 - w1)
+    ck('golden_coin_identity', s.simplify(w0 - 4 * p ** 3) == 0)
+    ck('flat_AF_identity', s.simplify(L + aa - 1) == 0)
+    ck('all_constant_mode_factor_positive', kappa > 0)
+    X = s.symbols('X', nonnegative=True)
+    P = s.expand((w0 + w1 * X) * (w0 - w1 * L + w1 * aa * X))
+    A = s.simplify(P.coeff(X, 2))
+    B = s.simplify(P.coeff(X, 1))
+    C = s.simplify(P.coeff(X, 0))
+    ck('leading_growth_p18', s.simplify(A - p ** 18) == 0)
+    ck('positive_linear_growth', B > 0)
+    ck('positive_constant_growth', C > 0)
+    ck('baseline_product_below1', C < 1)
+    y = s.symbols('y', real=True)
+    ck('continued_B_never_above1', s.expand(1 - 4 * y * y * (1 - y * y) - (2 * y * y - 1) ** 2) == 0)
+    (e, z) = s.symbols('e z', real=True)
+    ck('continued_lambda_never_above1', s.expand(1 - 4 * e * (1 - e) - (2 * e - 1) ** 2) == 0)
+    lam = s.symbols('lam', real=True)
+    bb = s.symbols('bb', real=True)
+    ck('second_feedback_upper_identity', s.expand(1 - (lam + (1 - lam) * bb) - (1 - lam) * (1 - bb)) == 0)
+    xx = s.symbols('xx', real=True)
+    Epoly = p * p * (1 + xx)
+    bpoly = (p + p * p * xx) ** 2
+    Bpoly = 4 * bpoly * (1 - bpoly)
+    lpoly = 4 * Epoly * (1 - Epoly)
+    ck('active_first_growth_degree4', s.degree(s.expand(Bpoly), xx) == 4)
+    ck('active_second_growth_degree6', s.degree(s.expand(lpoly + (1 - lpoly) * Bpoly), xx) == 6)
+    ck('active_pair_growth_degree10', s.degree(s.expand((w0 - w1 * Bpoly) * (w0 - w1 * (lpoly + (1 - lpoly) * Bpoly))), xx) == 10)
+    Bb = s.Rational(-101, 2500)
+    pair = s.simplify((w0 - w1 * Bb) * (w0 - w1 * (L + aa * Bb)))
+    ck('b_above1_can_still_have_probability', pair > 0 and pair ** 2 < 1)
+    pair2 = s.simplify(P.subs(X, 8))
+    ck('growing_pair_alone_exceeds1', pair2 > 1)
+    ck('retained_complement_can_mask_same_pair', s.simplify(kappa ** 16 * pair2 ** 2) < 1)
+    for (Pairs, comp) in ((1, 0), (1, 8), (3, 2), (7, 18)):
+        rho = s.Rational(2 * Pairs + comp, 2 * Pairs)
+        T = kappa ** (-2 * (rho - 1))
+        ck('all_factor_boundary_' + str(Pairs) + '_' + str(comp), s.simplify(kappa ** (2 * comp) * T ** (2 * Pairs) - 1) == 0)
+    (AA, BB) = s.symbols('AA BB', positive=True)
+    D0 = 13 * AA + 8 * BB
+    D1 = 8 * AA + 5 * BB
+    KK = AA * D0 + BB * D1
+    ck('same_cut_READY_lower_bound_identity', s.expand(34 * AA * D0 - 21 * KK - (AA - BB) * (169 * AA + 105 * BB)) == 0)
+    (ff, gg) = s.symbols('ff gg', nonnegative=True)
+    ck('owned_fibonacci_selected_fraction', s.expand(5 * ff - (3 * ff + 2 * gg) - 2 * (ff - gg)) == 0)
+    ck('owned_pair_coverage_21_85', s.Rational(2, 5) * s.Rational(21, 34) == s.Rational(21, 85))
+    Wmin = s.Rational(21, 85)
+    Rs = s.Rational(22448, 528)
+    Pbase = s.simplify((w0 - w1 * L) * (w0 - w1 * L * (1 + aa)))
+    ck('actual_baseline_is_strict_probability_amplitude', Pbase > 0 and Pbase < 1)
+    Tstar = Pbase ** (-(1 - Wmin) / Wmin)
+    ck('actual_return_threshold_positive_exponent', (1 - Wmin) / Wmin > 0)
+    Xstar = 2 * (Tstar - C) / (B + s.sqrt(B * B + 4 * A * (Tstar - C)))
+    Ystar = s.sqrt((1 + s.sqrt(1 + Xstar)) / 2)
+    Cclock = 100 * (p + Ystar) / (3 * p ** 6)
+    ck('full_prefix_clock_positive_finite_parameters', 100 / (3 * p ** 6) > 0 and p > 0 and (Wmin > 0) and (Wmin < 1))
+    u = s.symbols('u', nonnegative=True)
+    ck('B_to_y_threshold_identity', s.expand(4 * u * (u - 1) - ((2 * u - 1) ** 2 - 1)) == 0)
+    return {'status': 'PASS', 'checks': len(checks), 'labels': checks, 'kappa': str(kappa), 'active_pair_polynomial': str(P), 'rank_ratio': 'actual return rho=1/W; d_return=1056*nu*K', 'necessary_bound': 't^2 <= [100 W/(3 a_amp^2 p^2)](p+Y_rho) h^2', 'owned_full_prefix_coverage': 'W>=21/85', 'owned_full_prefix_Cclock_approx': str(s.N(Cclock, 24)), 'owned_full_prefix_bound': 't^2<=Cclock*h^2 (a_amp=p^2)', 'scope': 'Same globally valid probability polynomial, fixed query at flat Taylor centre only. Actual return1056; all Hilbert complements retained. Not universal physical clock or programme selection.'}
+
+def curved_centre_forced_clock(root=None):
+    from fractions import Fraction as F
+    labels = []
+
+    def ck(name, value):
+        if not bool(value):
+            raise ArithmeticError(name)
+        labels.append(name)
+    L = 2
+    h = F(1, L)
+    sites = list(product(range(L), repeat=4))
+    dirs = (0, 2, 3)
+    c = F(1)
+    M = F(2)
+    delta = c / (30 * M)
+    r = 1 / (1 + delta)
+    K = ((1 + r) / (1 - r)) ** 3
+    ck('uniform_cross_error_margin', 6 * M * delta + 9 * M * delta * delta <= c / 2)
+    n = {x: 1 + sum((2 ** j * x[j] for j in range(4))) for x in sites}
+
+    def shift(x, mu, k=1):
+        y = list(x)
+        y[mu] = (y[mu] + k) % L
+        return tuple(y)
+    A = {}
+    for x in sites:
+        a = F(0)
+        for ms in product(range(L), repeat=3):
+            y = list(x)
+            k = F(1)
+            for (mu, m) in zip(dirs, ms):
+                y[mu] = (y[mu] + m) % L
+                k *= r ** min(m, L - m)
+            a += k * n[tuple(y)]
+        A[x] = a
+    ck('three_axis_kernel_l1_bound', sum(A.values()) <= K * sum(n.values()))
+    ck('pointwise_keeps_original_weight', all((A[x] >= n[x] for x in sites)))
+    ck('all_transverse_neighbor_ratios', all((r * A[x] <= A[shift(x, mu)] <= A[x] / r for x in sites for mu in dirs)))
+    psi = {x: (-1) ** x[1] * A[x] for x in sites}
+    qs = {}
+    has_cross = False
+    for x in sites:
+        H = F(x[1] * x[1] - x[2] * x[2], 10)
+        G = [[1 - H, 0, 0, -H], [0, -1, 0, 0], [0, 0, -1, 0], [-H, 0, 0, -1 - H]]
+        d = [(psi[shift(x, mu)] - psi[x]) / h for mu in range(4)]
+        q = sum((G[mu][nu] * d[mu] * d[nu] for mu in range(4) for nu in range(4)))
+        qs[x] = q
+        has_cross = has_cross or G[0][3] * d[0] * d[3] != 0
+        ck('curved_q_negative_' + ''.join(map(str, x)), q <= -c * A[x] ** 2 / (2 * h * h))
+    ck('fixture_includes_actual_time_cross_term', has_cross)
+    ck('full_inverse_metric_bound', all((abs(v) <= M for x in sites for row in [[1 - F(x[1] * x[1] - x[2] * x[2], 10), 0, 0, -F(x[1] * x[1] - x[2] * x[2], 10)], [0, -1, 0, 0], [0, 0, -1, 0], [-F(x[1] * x[1] - x[2] * x[2], 10), 0, 0, -1 - F(x[1] * x[1] - x[2] * x[2], 10)]] for v in row)))
+    HH = s.symbols('HH', real=True)
+    GG = s.Matrix([[1 - HH, 0, 0, -HH], [0, -1, 0, 0], [0, 0, -1, 0], [-HH, 0, 0, -1 - HH]])
+    ck('curved_pp_J_exactly1', s.expand(GG.det() + 1) == 0)
+    ck('actual_density_operand_uniform_inverse_h2', all((2 * qs[x] / (n[x] * n[x]) <= -c / (h * h) for x in sites)))
+    (q, u, v) = s.symbols('q u v', real=True)
+    vals = {q: s.Rational(1, 5), u: s.Rational(2, 7), v: s.Rational(-1, 3)}
+    fun = (u * u + 2 * u * v - 3 * v * v) / (1 - q)
+    tay = 0
+    for alpha in product(range(3), repeat=3):
+        if sum(alpha) > 2:
+            continue
+        term = fun
+        for (var, power) in zip((q, u, v), alpha):
+            term = s.diff(term, var, power)
+        term = term.subs(vals)
+        for (var, power) in zip((q, u, v), alpha):
+            term *= (var - vals[var]) ** power / s.factorial(power)
+        tay += term
+    ck('nonzero_matter_centre_still_exact_quadratic', s.simplify(tay.subs(q, vals[q]) - fun.subs(q, vals[q])) == 0)
+    (lam, B, w0, w1) = s.symbols('lam B w0 w1', real=True)
+    ck('arbitrary_curvature_second_factor_lower_identity', s.expand(w0 - w1 * (lam + (1 - lam) * B) - (w0 - w1) - w1 * (1 - lam) * (1 - B)) == 0)
+    ck('actual_filled_return_rank1056', 2 * 528 == 1056)
+    Wmin = s.Rational(21, 85)
+    ck('same_owned_coverage_threshold_exponent', (1 - Wmin) / Wmin == s.Rational(64, 21))
+    Pbase = s.symbols('Pbase', positive=True)
+    ck('actual_global_return_threshold_boundary', s.simplify(Pbase ** 128 * (Pbase ** (-s.Rational(64, 21))) ** 42 - 1) == 0)
+    bad = s.Matrix([[1, 2, 0, 0], [2, 3, 0, 0], [0, 0, -1, 0], [0, 0, 0, -1]])
+    ck('hostile_large_shift_ADM_needs_spacelike_scope', bad.det() == -1 and bad[1, 1] > 0)
+    return {'status': 'PASS', 'checks': len(labels), 'labels': labels, 'scope': 'bounded curved centre with uniformly spacelike dx1 and declared counting-site/rest scalar decoder', 'matter_bound': 'V_x<=-c*j*a^2/(2*K^2*W*h^2)', 'clock_bound': 't^2<=[2*K^2/(c*j*a^2*p^2)]*(p+Y_Tstar)*h^2', 'polynomial_family': 'same two-tick D1/D25; not five-outcome probe'}
+
+def coherent_hodge_approx_preparation(root=None):
+    import ast, hashlib
+    from pathlib import Path
+    import sympy as s
+    checks = []
+
+    def ck(name, v):
+        if not bool(v):
+            raise ArithmeticError(name)
+        checks.append(name)
+
+    def zero(M):
+        return M.applyfunc(s.simplify) == s.zeros(*M.shape)
+    N = 2
+    bas = [(b, d, a, N - b - d - a) for b in range(N + 1) for d in range(N - b + 1) for a in range(N - b - d + 1)]
+    ix = {v: i for (i, v) in enumerate(bas)}
+    D = len(bas)
+
+    def E(dst, src):
+        T = s.zeros(D)
+        for (j, v) in enumerate(bas):
+            if v[src]:
+                u = list(v)
+                u[dst] += 1
+                u[src] -= 1
+                T[ix[tuple(u)], j] = s.sqrt((v[dst] + 1) * v[src])
+        return T
+    nums = [s.diag(*[v[k] for v in bas]) for k in range(4)]
+    (alpha, beta, sq) = s.symbols('alpha beta s', real=True)
+    ne = nums[2] + nums[3]
+    nc = alpha ** 2 * nums[0] + beta ** 2 * nums[1] - alpha * beta * (E(0, 1) + E(1, 0))
+    Jx = alpha * (E(0, 2) + E(2, 0)) - beta * (E(1, 2) + E(2, 1))
+    Jy = alpha * (E(0, 3) + E(3, 0)) - beta * (E(1, 3) + E(3, 1))
+    H = (Jx * Jx + Jy * Jy - 2 * nc - (alpha ** 2 + beta ** 2) * ne) / 2
+    psi = s.zeros(D, 1)
+    psi[ix[2, 0, 0, 0]] = s.sqrt(2)
+    psi[ix[0, 0, 2, 0]] = psi[ix[0, 0, 0, 2]] = -sq * s.sqrt(2)
+    pred = s.zeros(D, 1)
+    pred[ix[2, 0, 0, 0]] = -2 * alpha ** 2 * sq * s.sqrt(2)
+    pred[ix[0, 0, 2, 0]] = pred[ix[0, 0, 0, 2]] = alpha ** 2 * s.sqrt(2)
+    pred[ix[1, 1, 0, 0]] = 4 * alpha * beta * sq
+    pred[ix[0, 2, 0, 0]] = -2 * beta ** 2 * sq * s.sqrt(2)
+    ck('actual clock operator includes all one-dark and two-dark leakage', zero(H * psi - pred))
+    ck('leakage sectors are orthogonal not cancelled', all((bas[ix[v]][1] == j for (j, v) in ((0, (2, 0, 0, 0)), (1, (1, 1, 0, 0)), (2, (0, 2, 0, 0))))))
+    for n in (2, 3):
+        NN = 2 * n
+        cc = lambda j: s.binomial(2 * j, j) / 4 ** j
+        f = s.Matrix([(-sq) ** k * s.sqrt(cc(n - k)) for k in range(n + 1)])
+        T = s.zeros(n + 1)
+        for k in range(n + 1):
+            T[k, k] = 2 * k * (NN - 2 * k)
+            if k < n:
+                T[k, k + 1] = T[k + 1, k] = (k + 1) * s.sqrt((NN - 2 * k) * (NN - 2 * k - 1))
+        aa = 2 * sq - 1 / sq - NN * (1 - sq) ** 2 / sq
+        bb = 2 * (1 - sq) ** 2 / sq
+        diag = s.diag(*[-sq * NN + aa * k + bb * k * k for k in range(n + 1)])
+        ck('exact pair-polynomial radial action N' + str(NN), zero(T * f - diag * f))
+    j = s.symbols('j', integer=True, nonnegative=True)
+    ck('centralbinomial upper induction polynomial', s.expand(4 * (j + 1) ** 3 - (2 * j + 1) ** 2 * (j + 2)) == 3 * j + 2)
+    ck('centralbinomial lower induction polynomial', s.expand((2 * j + 1) ** 2 - 4 * j * (j + 1)) == 1)
+    moments = {1: s.Rational(7, 6) * (3 * s.factorial(1) + 2 * 2 ** 2), 2: s.Rational(7, 6) * (3 * s.factorial(2) + 2 * 3 ** 3), 4: s.Rational(7, 6) * (3 * s.factorial(4) + 2 * 5 ** 5)}
+    ck('uniform first moment constant13', moments[1] < 13)
+    ck('uniform second moment constant70', moments[2] == 70)
+    ck('uniform fourth moment constant7400', moments[4] < 7400)
+    lo = 1 / s.sqrt(2)
+    ck('coefficient bound 2 over s times1pluss squared at most1', s.simplify(lo * (1 + lo) ** 2 - 2) > 0)
+    ck('sharp delta squared n at mostonehalf', s.simplify((1 + lo) ** 2 - 2) > 0)
+    ck('bright variance constant52 follows moment bounds', 70 < s.Rational(17, 2) ** 2 and 7400 < 87 ** 2 and (s.Rational(17, 2) + s.Rational(87, 2) == 52))
+    p = (s.sqrt(5) - 1) / 2
+    coeff = s.simplify(1352 * p * p + 144 * p * (1 - p) + 70 * (1 - p) ** 2)
+    ck('all leakage included in native residual constant24', s.simplify(24 ** 2 - coeff) > 0)
+    ck('native residual coefficient exact golden reduction', s.simplify(coeff - (1348 - 1274 * p)) == 0)
+    ck('onecopy excitation constant19', 26 ** 2 < 2 * 19 ** 2)
+    z = s.symbols('z', positive=True)
+    ck('clock weighted tail ratio is belowq', s.simplify(1 - 2 * z / (2 * z + 1)) == 1 / (2 * z + 1))
+    ck('mean energy is strictly negative by weighted geometric bound', s.simplify(2 * sq ** 2 / (1 + sq) - 2 * sq + 2 * sq / (1 + sq)) == 0)
+    target = Path('/Users/grigorijvahrusev/.codex/worktrees/native-source-synthesis/d0_15') if root is None else Path(root)
+    path = target / '02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py'
+    creator = next((n for n in ast.parse(path.read_text()).body if isinstance(n, ast.FunctionDef) and n.name == 'creator'))
+    pin = hashlib.sha256(ast.dump(creator, include_attributes=False).encode()).hexdigest()
+    ck('actual full16 creator AST pin', pin == '801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4')
+    ns = {'s': s, 'SUBS': [tuple((i for i in range(4) if m & 1 << i)) for m in range(16)]}
+    exec(compile(ast.Module(body=[creator], type_ignores=[]), str(path), 'exec'), ns)
+    cr = [ns['creator'](s.eye(4)[:, i]) for i in range(4)]
+    for k in range(1, 4):
+        ck('actual current on all four coherent grades ' + str(k), ((cr[0] + cr[0].T) * (cr[k] - cr[k].T)).extract([0, 1, 14, 15], [0, 1, 14, 15]) == s.zeros(4))
+    return {'status': 'PASS', 'checks': checks, 'source_sha256': {'creator_AST': pin}, 'trial': 'For N=2n>=8 let B=sqrtp clock1+sqrt(1-p) dark14, D orthogonal; Psi_N proportional to (Bdag²-s(adag²+bdag²))^n|vac>, s²=1-n^-1/2. This is permutation-symmetric fourgrade preparation inside full ambientCAR16.', 'moments': 'Pair count k has weights q^k c_(n-k), q=s²,c_j=binom(2j,j)/4^j. E k<=13sqrtn, E k²<=70n, E k4<=7400n².', 'actual_residual': 'All actual H(clock) leakage is retained: H Psi=pH(B)Psi-sqrt[p(1-p)]Ddag F Psi+(1-p)Ddag²Q Psi/2; F=(B n_exc+BdagQ)Psi=[(1-s)n_exc-2s]B Psi. Its Hermitian residual is <=24sqrtN, hence ||[(H-<H>)/binom(N,2)]Psi||<=48/[sqrtN(N-1)].', 'actual_marginal': 'rho1=(1-eps)|m0><m0|+eps(P0+P15)/2 exactly, eps=<n_exc>/N<1 and eps<=19/sqrtN. Thus trace distance from actual coherent13gh vacuum m0 is<=min(2,38/sqrtN), and k-copy distance<=min(2,2sqrt(19k)N^-1/4). Native current spatial numerators vanish and P1 density p(1-eps)e0e0* is nonzero.', 'affine_source': 'For an actually owned compression A_N(g)=a(g)I+b(g)H/binom(N,2), fixed trial gives e_N=<H>/binom(N,2) in[-2p/(N-1),0]. Hence ||D^j(q_N-a)||<=2p||D^j b||/(N-1), j0..2, while preparation log-source norm is<=96|b|/[q_floor logphi sqrtN(N-1)]. Any physical signal divisor must divide this residual too.', 'scope': 'Approximate source-normalized prep root only. No exact full polynomial E_N root, fitted occupation term, fixedRIGHT128/reference/site extension, indefiniteLorentz/higher-query/fullprice/PREP admission or physical clock law.'}
+
 def append_only_source_provenance(root):
     owner='02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md'
     raw=(Path(root)/owner).read_bytes()
@@ -2319,6 +2863,14 @@ def main():
         full_K_bath_source_transfer=parity_graph_proper_link_transfer(args.root),
         actual_CY_preparation_supply=cy_fine_right_capacity_controls(args.root),
         correlated_two_Hodge_radial=hodge_polar_radial_trial(args.root),
+        actual_coherent_ground_branch=hodge_dark_ground_branch_control(args.root),
+        actual_dark_energy_overlap=coherent_dark_energy_overlap(args.root),
+        actual_fresh_Jones_actuation=jones_fresh_actuation_controls(args.root),
+        pure_global_input_witness=pure_clock_checkerboard_witness(args.root),
+        original_full_prefix_coverage=same_cut_ready_coverage_controls(args.root),
+        necessary_global_probability_clock=golden_global_probability_clock_bound(args.root),
+        actual_curved_centre_clock=curved_centre_forced_clock(args.root),
+        coherent_quadratic_approx_preparation=coherent_hodge_approx_preparation(args.root),
         full_D0_price_selected=False, generic_joint_recovery=False, GR_closed=False)
     output = json.dumps(result, ensure_ascii=False, indent=2, default=str)+'\n'
     if args.output:

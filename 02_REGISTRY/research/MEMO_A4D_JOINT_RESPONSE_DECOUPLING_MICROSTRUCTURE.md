@@ -1,5 +1,29 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — derived upper clock and coherent approximate preparation
+
+[Strategic7.23](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.72–6.77](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+remove the assigned upper-clock premise for the SAME globally encoded
+full-prefix programme: actual regular coverage W≥21/85 plus ALL-input effect
+positivity forces t²≤C_chart h² at bounded curved pp/nonzero-matter centres.
+The original return rank1056νK and uncovered factors are retained; outside-P
+scene modes are not priced as filled records. This makes this programme's
+normalized t² source remainderO(h²), keeping all spatial/count/Taylor/compiler
+and signal-denominator budgets. A different global extension or five-outcome
+instrument does not inherit this theorem.
+
+The actual clock/grade14 coherent marginal now has an explicit TWO-Hodge
+approximate preparation with normalized residual≤48/[√N(N−1)] and one-copy
+trace error≤38/√N. All orthogonal-dark leakage is kept. It givesO(1/N)C²
+source error for the actual affine-quadratic compression only; full polynomial,
+fixedRIGHT128/site/Lorentz/Book source and native PREP remain the next transfer.
+The failed exact-ground-stitch and exact energy-overlap criterion are preserved.
+The C_Y route also has a full Jones-flag word candidate and a sharp obstruction
+for chronological LEFT/passive placements, rather than an assumed fresh-wire
+actuator. No new action or occupation term is inserted. Continue the SAME
+full-price/correlated joint-root recovery. GR_closed=false, raw#216 OPEN.
+
 ## 18 October 2026 — SAME-law Euler equivalence and complete preparation/root consumer
 
 [Strategic7.22](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
