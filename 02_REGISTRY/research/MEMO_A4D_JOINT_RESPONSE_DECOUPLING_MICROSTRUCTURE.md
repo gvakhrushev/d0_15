@@ -2,7 +2,7 @@
 
 ## 18 October 2026 — a finite golden determinant MODE and its actual history price
 
-[Strategic §7.18](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+[Strategic §7.19](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source §§6.56–6.58](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consume the full linked heat/input source and then construct a positive
 Book-MDL price consumer. Linked Rayleigh does not free the amplified
@@ -49,6 +49,36 @@ immutable intermediate records can destroy its interference. The new
 known probe is not a frozen old physical matter state. Mean H(q), mode
 price and the original whole H+J+R are distinct. Then establish exact
 joint roots/refinement of that SAME admitted price. GR remains OPEN.
+
+## 18 October 2026 — charged native Hodge scalar: exact fixed-metric nonvacuum Einstein refinement
+
+**New POSITIVE direct consumer, same PR #334:** [A4D_NATIVE_HODGE_CHARGED_NULL_MATTER_FIXED_METRIC_EINSTEIN_2026_10_18.md](A4D_NATIVE_HODGE_CHARGED_NULL_MATTER_FIXED_METRIC_EINSTEIN_2026_10_18.md) + [independent bounded Clifford/Golden source check](sources/d0_hodge_charged_null_einstein_2026-10-18/check_hodge_charged_wave.py). This is a substantial extension of the corrected **LOCAL** LEFT-code/full two-tick Book J₂ Einstein–null-scalar source, not a new action or test grammar. The original CAR16 already contains the invariant scalar/top-form Hodge plane \(\Lambda^0\oplus\Lambda^4\) with \(J_H^2=-I\); the positive observer pairing gives these two original grades equal norm (\(\det h_n=1\)). On one FULL native matter vector their two amplitudes \(\Psi=(\psi_0,\psi_4)\) form a genuine locally fluctuating real Hodge pair, with no new field or second CAR copy. The unique quadratic first-derivative **Lorentz+Hodge** scalar in that declared class is the sum of their two genuine Clifford squares:
+\[
+q_x=\tfrac1{16}\mathrm{Tr}_{16}[\Gamma(\widehat e^{-T}D^+\psi_0)^2+
+\Gamma(\widehat e^{-T}D^+\psi_4)^2]
+=\widehat g^{\mu\nu}\sum_{A=0,4}D^+_\mu\psi_A D^+_\nu\psi_A.
+\]
+This is fed into the ALREADY corrected double-tick scene control \(b_i=(p+\sigma p^2t^2(\bar w/w_x)q_x)^2,\ B_i=4b_i(1-b_i)\), with all old LEFT weights, RIGHT/reference128 and528+22448 scene modes. Its ONE full ordinary Book determinant at \(f_i=q_i=0\) has the genuine two-source coefficient \(\lambda_-=-23.416406751884\ldots\) (not previous incorrect one-tick 2.236).
+
+**NEW exact finite family with one FIXED smooth target metric:** for every lattice h=1/L,L>2m, let the two *existing* scalar/top amplitudes rotate as
+\[
+\Psi_h(j_u)=a_h(\cos(2\pi m j_u/L),\sin(2\pi m j_u/L)),\quad
+a_h=\frac{a(2\pi m)h}{2\sin(\pi m h)}.
+\]
+Then \( |D_u^+\Psi_h|^2=a^2(2\pi m)^2=:E>0\) **EXACTLY at every u and every h**, despite nonconstant individual amplitudes. On the pp-wave \(\widehat g=2du\,dv+[Ax^2+2W_\times xy+Dy^2]du^2-dx^2-dy^2\), each \(q_x=0\) but \(D_{\widehat v_v^+}q_x=-2E/h\ne0\). Every scalar Euler from the SAME Book J₂ vanishes by exact \(v\)-difference telescoping; the original full16+24 finite Lorentz star table gives the remaining one coframe trace condition, solved with the old exact half-grid connections by
+\[
+\boxed{A+D=-2\lambda_-E
+=+46.832813503768\ldots\,a^2(2\pi m)^2}.
+\]
+Choose A,D,W_\times **independent of L**. Then the source-compatible metric \(\widehat g\) is the SAME fixed nonflat smooth sampled metric at EVERY lattice level after true nonuniform Fibonacci/PF dressing, not merely a convergent family. Both Weyl polarizations remain independent; the scalar/top matter state varies periodically along null u, while all geometric/matter field Euler rows are solved at each transverse interior node (u,v directions fully periodic as a mathematical regulator; x/y collar fixed).
+
+**NEW matter dynamics/Noether law, no external stress axiom:** the SAME complete J₂ is exactly invariant under constant Hodge rotations of those two old grades. Its locally varied parameter produces the native finite \(j_h^v=2a_h^2\sin(2\pi m/L)/h\ne0\) with **exact** \(D_v^-j_h^v=0\), converging to \(2a^2(2\pi m)\). Metric variation of the same source gives the Lorentz scalar stress
+\(\mathcal T_{\mu\nu}=2\partial_\mu\Psi\cdot\partial_\nu\Psi-\widehat g_{\mu\nu}(\partial\Psi)^2\), and the **same independently varied scalar Euler** implies its contracted-divergence Ward \(\nabla^\mu\mathcal T_{\mu\nu}=2(\Box\Psi)\cdot\partial_\nu\Psi=0\). Thus both native Hodge charge and matter stress are conserved on the EXACT nonvacuum Einstein-wave family, with no separately postulated scalar action.
+
+A bounded control on REAL native cost-n Fibonacci words (n=16,L=3 and n=20,L=4) enumerates1597/10946 actual leaves, all81/256 sites positive and unequally weighted. With a=0.008,m=1, both have the **same** \(E=0.002526618727...\) and \(\operatorname{Ric}_{uu}=0.118328663622...\); true finite conserved currents are0.000486248001 and0.000631654682, approaching0.000804247719. The exact 40-row star table is consumed from its existing symbolic owner; it is not falsely claimed rerun by this narrow script.
+
+**Physical boundary:** this establishes a stronger, dynamically charged, full finite interior Einstein+matter solution for one constructed LEFT-controlled native golden feedback price, not compulsory self-verification/Book selection of that programme, native code access to unknown quantum amplitudes, whole H+J+R/upstream-source equality, or the original all10 unweighted fixed-g/tau raw h⁻² #216. The positive result is ready for the existing one-programme selection/source and physical matter/clock consumer, not a new curvature or mass-fitting direction.
+
 
 ## 18 October 2026 — one full return word and complete-source scale
 

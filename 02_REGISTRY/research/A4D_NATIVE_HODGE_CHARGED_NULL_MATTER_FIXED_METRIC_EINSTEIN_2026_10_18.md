@@ -45,6 +45,21 @@ q_x=\frac1{16}\mathrm{Tr}_{16}
 \]
 Это не обычный положительный Euclidean grad²: обе Clifford squares — ЛОРЕНЦЕВЫ. Действие \(\Psi\mapsto e^{\alpha J_H}\Psi\) при ПОСТОЯННОЙ \(\alpha\) оставляет (3) **точно** неизменным при каждом конечном h, поскольку используется собственная равная CAR-норма на \(H_{0,4}\). Следовательно тот же J₂ ниже имеет настоящее непрерывное SO(2) internal symmetry на заявленном classical encoded \(0\oplus4\) chart: никакой новый charged field/dimension не добавлен.
 
+### 1.1. Uniqueness of this Hodge-scalar kinetic type, without an independent matter action
+
+The two true scalar coefficients are each Lorentz singlets under proper local SO⁺(1,3), and the internal real complex structure \(J_H\) in (1) commutes with that representation. Work in the finite symbolic continuum/low-jet class of **local, quadratic first-derivative principal matter sources**, with no extrinsic vector, density, new gauge gauge field or parity catalog. Every real Lorentz-invariant contraction of two scalar gradients has the form
+\[
+Q[g,\Psi]=g^{\mu\nu}M_{AB}\,\partial_\mu\Psi_A\,\partial_\nu\Psi_B
+\]
+because the only invariant rank-two spacetime tensor supplied by this carrier is \(g^{\mu\nu}\); an antisymmetric spacetime rank-two invariant does not exist without extra datum. The antisymmetric part of M drops out by the symmetry of the contracted gradient product. Invariance under **the existing internal Hodge rotation** \(e^{\theta J_H}\) demands
+\(J_H^T M+M J_H=0\), which for real symmetric \(2\times2\) matrices forces \(M=cI_2\). Thus
+\[
+\boxed{Q[g,\Psi]\propto
+ g^{\mu\nu}(\partial_\mu\psi_0\partial_\nu\psi_0+
+           \partial_\mu\psi_4\partial_\nu\psi_4)}
+\]
+is **the only quadratic first-derivative principal scalar coupling in this declared Lorentz+Hodge type**, up to overall response. Equation (3) supplies that relative 1:1 response from the original positive CAR pairing and the two original Clifford squares. The overall material-versus-gravitational coefficient comes from the SAME two-tick full feedback derivative (6), not a fitted field coefficient. This scoped naturality result does NOT say the complete physical D0 requires Hodge SO(2) as a separate physical symmetry, excludes higher-derivative interactions, or eliminates additional matter representations.
+
 ## 2. РОВНО тот же исправленный двухтактовый feedback: сильное равенство полных источников
 
 Берём прежнюю original old LEFT READY/PENDING regular пробу с positive native weights \(\pi_i=D_{{\rm type}(i)}/K\), \(w_x=\sum_{i\in Q_x}\pi_i>0\), \(\bar w=L^{-4}\sum_xw_x\) и **одну** полную J₂-операцию из исправленного owner (нельзя забывать второй такт):
@@ -173,6 +188,24 @@ R_{uiuj}=-\begin{pmatrix}A&W_\times\\W_\times&D\end{pmatrix}_{ij},
 \]
 It has two independent proper-Lorentz Weyl wave polarizations \(W_+,W_\times\) AND a nonzero *trace/source* from independent real material kinetic gradients on one original CAR16 plane, both from one complete finite feedback first source.
 
+### 3.1. The UNWEIGHTED interior raw h⁻² residual is identically zero for this SAME feedback
+
+Because the previous construction satisfies the ORIGINAL independent 16 coframe Euler rows, ALL 24 proper-Lorentz link rows, and BOTH independent scalar/toplevel material Euler rows AT EVERY FREE INTERNAL CELL, it also meets a very strong **raw (not merely weak tested)** statement for this explicitly constructed complete J₂ process:
+\[
+\boxed{
+\frac1{h^2}\sum_{x\in\mathrm{interior}}
+ \left(
+ \sum_{a,r=0}^3|E_{e_{x,r}^a}^{J_2}|
+ +\sum_{r=0}^3\sum_{\alpha=1}^6|E_{U_{x,r},\alpha}^{J_2}|
+ +|E_{\psi_0(x)}^{J_2}|+|E_{\psi_4(x)}^{J_2}|
+ \right)=0
+}
+\tag{13a}
+\]
+**exactly for every h**, even with the actual nonuniform old regular AF weights and the fixed source-compatible target smooth metric. No uniform inverse, spectral Hessian gap, weak-* to strong transfer, or h→0 diagonal argument is needed to establish (13a); every summand is individually zero at finite h on the genuine free field directions.
+
+This solves the *unweighted raw source-norm form* inside the constructed local geometric-plus-Hodge-matter one-feedback programme. It MUST NOT be relabelled the original #216 theorem: that terminal is specifically the unchanged physical v8/old-price fixed-source comparison on the full periodic carrier, including independently sourced \(\tau\), all its real auxiliary variables, old history, observation and boundary rows. Here the transverse collar is fixed and the historical/physical price-selection step is not yet completed. The exact zero is nevertheless a direct constructive consumer for any native whole-programme identification preserving this instrument and its field derivatives.
+
 ## 4. Genuine exact Noether charge: original Hodge plane → retained matter conservation
 
 The complete finite J₂ price (5) is **exactly invariant** under global fixed rotations \(\Psi\mapsto e^{\alpha J_H}\Psi\) at arbitrary f/q on its declared encoded matter chart, because the only matter input is the ORIGINAL two-grade \(q\) (3), a true O(2) quadratic scalar. No separate kinetic Lagrangian or postulated matter continuity equation is introduced. Let the rotation parameter become an arbitrary site function \(\alpha_x\). At the null-star branch, the actual first source (6) gives
@@ -197,6 +230,59 @@ j_{h}^{v}
 \lim_{h\to0}j_h^v=2a^2\kappa>0,
 \]
 with O(h²) convergence. Equation \(D_v^-j_h^v=0\) follows EXACTLY from the same locally encoded Book-feedback scalar equations (11), not from a second hand-inserted charge-conservation law. The worldline/loop winding m is the INTEGER phase index of the original finite periodic Hodge plane, not a new dimension or a fitted energy scale. Mathematically periodic u does not assert that physical D0 time is compact/null.
+
+### 4.1. The SAME Book-feedback source supplies a conserved Lorentz stress
+
+The smooth-limit metric variation of the true CAR16 kinetic input (3) produces, BEFORE using Einstein's equation, the directly sourced matter tensor
+\[
+\mathcal T_{\mu\nu}
+=2\partial_\mu\Psi\cdot\partial_\nu\Psi
+-\widehat g_{\mu\nu}\widehat g^{\alpha\beta}
+ \partial_\alpha\Psi\cdot\partial_\beta\Psi.
+\tag{16}
+\]
+Its overall coefficient is the already computed full-feedback source ratio, NOT chosen from the desired geometry. Ordinary scalar covariant differentiation yields the exact Ward identity
+\[
+\boxed{\nabla^\mu\mathcal T_{\mu\nu}
+=2(\square_{\widehat g}\Psi)\cdot\partial_\nu\Psi.}
+\tag{17}
+\]
+The independently varied two material Euler rows (11) therefore imply stress conservation without an external conservation axiom. On the exact Hodge rotating null wave,
+\[
+q=0,\qquad
+\mathcal T_{uu}=2a^2\kappa^2>0,\quad
+\mathcal T_{\mu\nu}=0\ \text{for all other pairs},\quad
+\nabla^\mu\mathcal T_{\mu\nu}=0.
+\tag{18}
+\]
+This is the SAME matter source that balances the 16 coframe Euler rows in (12), with the original Lorentz-star orientation. Both the Hodge U(1) charge Ward and the Lorentz stress Ward are sourced by the ONE Book-feedback, not postulated as separate matter equations.
+
+### 4.2. Eliminate the prepared matter amplitude: an EXACT FINITE curvature–charge law
+
+The existence proof does NOT need a freely fitted input matter amplitude to state a physical source relation. The SAME finite Hodge rotating wave has
+\[
+E=\frac{4a_h^2}{h^2}\sin^2(\kappa h/2),\quad
+j_h^v=\frac{2a_h^2}{h}\sin(\kappa h).
+\]
+For \(\sin(\kappa h)\ne0\), eliminate the **entire** prepared amplitude \(a_h^2\) algebraically:
+\[
+\boxed{
+E=\frac{\tan(\kappa h/2)}{h}\,j_h^v,\qquad
+\frac{\operatorname{Ric}_{uu}}{j_h^v}
+=-\frac{2\lambda_-(z)}{h}\tan(\kappa h/2).
+}
+\tag{19}
+\]
+This is an **EXACT** source/geometry identity of every finite locally stationary native Golden-feedback wave in the constructed family. The only remaining ingredients are the already-derived **two-tick** feedback coefficient \(\lambda_-(z)\), original Role step h, and integer phase winding \(\kappa=2\pi m\) of the original Hodge CAR0/top plane. No independent material normalization or empirical Newton parameter is fitted. The source-normalized \(j_h^v\) in (15) can be operationally *defined as the first local Hodge-control response of this SAME measured Book feedback* divided by the known full native prefactor \(\nu K\bar w C_\star\lambda_-\); this is a readout definition on the constructed programme, not a guarantee the physical controller can implement it.
+
+In the smooth fixed-g refinement,
+\[
+\boxed{\operatorname{Ric}_{uu}
+=-\lambda_-(z)\,\kappa j^v,\qquad
+j^v=2a^2\kappa,\quad \kappa=2\pi m.}
+\tag{20}
+\]
+Both finite and limiting relations are an amplitude-free, falsifiable **consistency relation** between independently readable Lorentz plaquette curvature and the internal Hodge-current response of ONE declared programme. An orientation/winding reversal changes the signed current and \(\kappa\) together while preserving the positive matter focusing. The physical selection and independently calibrated measurement of that programme remain open; the source relation itself is not a new action or field equation.
 
 ## 5. Verification, reproduction and precise scientific status
 

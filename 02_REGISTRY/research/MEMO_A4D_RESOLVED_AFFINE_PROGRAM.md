@@ -24,7 +24,7 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-18
 
 The current whole-price consumer is now
-[strategic §7.18](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+[strategic §7.19](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source §§6.56–6.58](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The full linked Rayleigh/control Euler retains the signal bound and
 allows occupied/unoccupied bands; it does not select an amplified GR
