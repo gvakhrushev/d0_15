@@ -103,9 +103,36 @@ assert abs(H(joint)-H(left)-sum(float(w)*log(mi)
 # dephased pair law gives rho_01=0.
 assert Fraction(2,5)!=Fraction(0)
 
-# RIGHT copying leaves the GLOBAL unitary reversible, but tracing over
-# its retained work/pointer register kills right off-diagonal coherence.
-assert Fraction(1,2)!=Fraction(0)  # rho_R(0,1), before / after copy
+# EXACT 2x2 LEFT x 2x2 RIGHT source preservation versus right disturbance:
+# full density rho = |(1,2,3,4)/sqrt(30)><...|, with all off-diagonal
+# matrix-unit coherences retained before the pointer copy.
+vec=(1,2,3,4)
+rho=[[Fraction(vec[i]*vec[j],30) for j in range(4)] for i in range(4)]
+def D_R(matrix):
+    return [[matrix[i][j] if (i%2)==(j%2) else Fraction(0)
+             for j in range(4)] for i in range(4)]
+def left_op(two):
+    return [[two[i//2][j//2] if (i%2)==(j%2) else Fraction(0)
+             for j in range(4)] for i in range(4)]
+def pairing(matrix, op):
+    return sum(matrix[i][j]*op[j][i] for i in range(4)
+               for j in range(4))
+geo=left_op([[Fraction(1,2),Fraction(1,4)],
+             [Fraction(1,4),Fraction(3,4)]])
+geo_jet=left_op([[Fraction(0),Fraction(1)],
+                 [Fraction(1),Fraction(0)]])
+# Independent trace-zero Hermitian pure-state FIRST variation representative.
+xi=(1,0,0,1)
+tangent=[[Fraction(xi[i]*xi[j],2) -
+          (Fraction(1,4) if i==j else Fraction(0))
+          for j in range(4)] for i in range(4)]
+for state in [rho,tangent]:
+    for effect in [geo,geo_jet]:
+        assert pairing(state,effect)==pairing(D_R(state),effect)
+R01=[[Fraction(1) if i//2==j//2 and i%2==0 and j%2==1
+      else Fraction(0) for j in range(4)] for i in range(4)]
+archive_gap=pairing(rho,R01)-pairing(D_R(rho),R01)
+assert archive_gap==Fraction(7,15)
 
 p=(5**.5-1)/2
 def fine_tv(N, paired):
