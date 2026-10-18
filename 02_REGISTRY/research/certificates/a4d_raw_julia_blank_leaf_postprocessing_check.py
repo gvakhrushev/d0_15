@@ -121,3 +121,24 @@ center_gap = sp.simplify(phi/sp.sqrt(5)-p)
 assert sp.simplify(center_gap-(1-2/sp.sqrt(5)))==0
 print("AF_RIGHT_CENTER_CONSERVATION: EXACT PASS; moving-level TV=",
       center_gap, float(center_gap))
+
+# A minimal connected LEFT preparation graph is sufficient mathematically
+# to span the probability-simplex tangent and force uniform stationary r.
+# Intra-block trees have rank d-2; one X/Y bridge upgrades it to d-1.
+aN, bN = 5, 3
+dN = aN + bN
+inside_edges = [(i,i+1) for i in range(aN-1)] + [
+    (aN+i,aN+i+1) for i in range(bN-1)]
+bridge_edge = (aN-1,aN)
+def incidence_weighted(edges):
+    columns=[]
+    for i,j in edges:
+        v=[0]*dN
+        v[i]=sp.Rational(2,dN)
+        v[j]=-sp.Rational(2,dN)
+        columns.append(v)
+    return sp.Matrix(columns).T
+assert incidence_weighted(inside_edges).rank()==dN-2
+assert incidence_weighted(inside_edges+[bridge_edge]).rank()==dN-1
+print("AF_ONE_CROSS_BLOCK_MIXER: EXACT PASS, probability tangent ranks",
+      dN-2, dN-1)
