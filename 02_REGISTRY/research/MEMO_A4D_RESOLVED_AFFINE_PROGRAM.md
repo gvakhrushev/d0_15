@@ -23,6 +23,25 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+The user now prioritizes consistent nonlinear spin-2 interaction as the
+forcing route. Consume [strategic synthesis §§7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md):
+the Schur seed is a complete10-slot Lorentz principal symbol, but belongs
+to the selected star action. The next actual calculation is the SAME-price
+quadratic/cubic jet and mixed detector/embedding Ward source (7.2)–(7.4),
+with genuine retained elimination, C³ regularity and independent matter.
+Nonlinear gauge consistency, locality and the leading derivative bound
+must be proved before the uniqueness theorem can force EH; a cubic pass
+also needs quartic consistency. Do not manufacture another EH readout.
+The supplied nonzero Λ has no stationary Minkowski vacuum and its formal
+|βR|≥24 is outside the controlled large-radius truncation.
+
+Input `838b452e`, full-source §§8.34–8.36, preserves the finite branch
+without overstating it: true-Lorentz V₄ leaves six invariant link rows,
+uniform Gram-shape nondegeneracy does not prevent the actual metric scale
+from collapsing, and an exact native splitting kernel blocks the uniform
+saddle shortcut. This is subsidiary existence work, not the physical
+spin-2 forcing theorem. The original raw/#216 terminal remains unchanged.
+
 Input `ba3902b3`, §§8.31–8.33 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
 now proves exact finite preparation/coframe/observer solutions for the

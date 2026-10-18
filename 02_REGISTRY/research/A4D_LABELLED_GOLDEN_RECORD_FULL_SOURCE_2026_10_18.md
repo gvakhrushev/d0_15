@@ -4330,7 +4330,292 @@ resource/controller equations, independent matter и spatial/global GR
 recovery остаются отдельными непотреблёнными переходами. Полная ОТО
 и полный finite joint root здесь не объявляются.
 
+### 8.34. Ориентация, в которой V₄ сохраняет весь Lorentz domain
+
+Вход `838b452e`. Ограничение canonical embedding в (189) существенно:
+при U=√G role translations двигают time axis. Но та же native flat
+цена допускает ДРУГОЙ физический coframe, без объявления O(4) gauge.
+Пусть χ=0,1,2,3 — characters F₂², H_χr=χ(r)/2 и
+
+    a_χ=√x_χ, U_al=diag(a_χ)Hᵀ,
+    u_r=S_r a/2, S_r=diag(χ(r)), η=diag(1,−1,−1,−1).       (191)
+
+Этот coframe имеет тот же Gram (174). При M=I его цена и решённая
+preparation получаются из canonical coframe одним внутренним CAR
+orthogonal conjugacy. Это равенство цен разных flat coframes,
+не отождествление их физических метрик при фиксированных clock/η.
+Теперь каждый S_r фиксирует e₀, имеет два spatial знака минус при
+r≠0, det S_r=1 и S_rᵀηS_r=η. Следовательно V₄ — настоящая
+симметрия ВСЕГО physical Lorentz-link domain в этой ориентации.
+
+Все её fixed homogeneous links имеют вид
+
+    M_r=S_r M₀ S_r, M₀∈SO⁺(1,3).                (192)
+
+Fixed coframe carrier имеет четыре real coordinates a_χ; fixed
+observer tangent равен0. После полного preparation solve достаточно
+решить четыре coframe и ШЕСТЬ M₀ first equations на этом fixed
+carrier: group averaging тогда решает все homogeneous field rows.
+Translation averaging по-прежнему решает nonzero Fourier rows.
+Уменьшение размерности здесь следует из точной симметрии исходных
+labels, а не из удаления rotations или matter variations.
+
+На M₀=I пусть v_χ — eigenvalues canonical circulant B из (187).
+После той же ориентации B_r имеет coordinates v_χχ(r)/2.
+Подстановка в (188) для invariant Ω_r=S_rΩS_r даёт общий source
+
+    J_inv(L_χψ)=−½[v_χ a_ψ−η_χχ η_ψψ v_ψ a_χ].           (193)
+
+В частности три условия v₀a_i+v_i a₀=0, i=1,2,3, зануляют
+на этой точке и три spatial rotation rows. Но при M₀≠I это
+сокращение до трёх equations уже не доказано.
+
+Почему нельзя его продолжить по одному слову «transpose»: точные
+particle-hole/inversion/word-adjoint maps дают
+
+    (c(u), c(u)ΛM S)
+      ↦(c(u), c(M⁻¹u)Λ(M⁻¹)S).
+
+Forward anchor стал M⁻¹u, onsite anchor остался u. После дополнительного
+η conjugacy link становится Mᵀ, но anchors всё равно различаются,
+если Mu≠u. Поэтому pure-boost ansatz в (192) не решает автоматически
+три отсутствующие rotation equations. Следующий совместный consumer
+должен сохранять все шесть M₀ coordinates.
+
+### 8.35. Равномерная невырожденность формы и её физический предел
+
+Можно устранить ещё одну настоящую недостающую предпосылку: uniform
+shape gap у конечных минимумов (179). В (191) V₄, CAR parity,
+particle-hole×lattice inversion FI и комплексное сопряжение real
+position-basis programme задают действия на observable preparation,
+НЕ ЗАВИСЯЩИЕ от x_χ. Обозначим их общий fixed convex compact class
+через ℳ. Конечная цена выпукла по ρ и инвариантна под этими
+действиями, включая антилинейное complex conjugation. Усреднение
+минимизатора поэтому сохраняет его минимум и даёт ρ∈ℳ, в том числе
+при singular coframe. При positive G finite observable minimum
+единственен, так что он сам принадлежит ℳ.
+
+Симметрии имеют точные следствия для ВСЕХ ρ∈ℳ. Parity даёт
+TrρU=0 и q₀=q₃=0; real programme вместе с FI даёт q₁=q₂ real.
+V₄ даёт a_r=1/4, FI — d_r=0. Из (181) получаем
+
+    q₁(C_r)=q₂(C_r)=−λx₀,
+    q₁(P_r)=q₂(P_r)=λ(2−x₀),
+    b(t,G,ρ)=b₀(t)−κtλ⁴(x₀−1)²                 (194)
+
+ТОЧНО, без n→∞ или Bell prior. В частности это не только условие
+для cluster preparations из (168).
+
+Можно усилить preparation conclusion. В Fourier basis antiunitary
+C₀ψ_k=F overline(ψ_k) оставляет momentum k фиксированным. Оно
+переводит P_r(k) в P_r(k)* и C_r в C_r*, меняет только adjoint-pair
+Walsh phase и потому сохраняет каждый исходный label/code. Unique
+observable finite minimum C₀-invariant по каждому k. C₀ фиксирует
+все eight Hermitian Majoranas, но меняет знак iγ_aγ_b, a≠b.
+Все conditional quadratic CAR moments поэтому tracial, а parity
+обнуляет odd moments. На V₄ carrier с masses1/8 первый birth Gram,
+high compression и Ψ фактической конечной подготовки совпадают с Bell
+при том же G. Это не выбирает всю плотность и не даёт density gap.
+
+**Следующий функционал существует в значениях и на boundary ρ.**
+На компактном balanced carrier оба high eigenvalues ведущего output
+отделены от0. Его low block равен δB_δ, B_δ=B+O(δ). Непрерывность
+Tr X log X на bounded PSD matrices даёт
+Tr B_δlogB_δ=Tr BlogB+O(δlog(1/δ)), без floor у B. High cluster
+имеет обычное uniform Taylor expansion. Поэтому value-версия (172)
+продолжается равномерно на весь compact tetrahedron×ℳ:
+
+    F_n=f(t)−(δlog(1/δ)/ℓ)b(t,G,ρ)
+                   +δ Ψ(t,G,ρ)+o(δ),
+    Ψ=Tr(ρ C₁^op)−s₁/ℓ, δ=t/n.                 (195)
+
+Ψ непрерывен; запись B logB использует 0log0=0. Это uniform VALUE
+theorem, не C¹ density theorem на односторонней boundary.
+
+Чтобы не предполагать скорость t_n→t_*, положим e=1/n, L_e=log(1/e),
+g_e(t)=f(t)−eL_e·t b₀(t)/ℓ, m_e=min_t g_e(t). Тогда
+
+    F_n−m_e=[g_e(t)−m_e]
+       +(eL_e/ℓ)κt²λ⁴(x₀−1)²
+       +e[tΨ−t log(1/t)b/ℓ]+o(e).               (196)
+
+Первые два слагаемых неотрицательны. Compactness и recovery sequence
+при x₀=1, t=minarg g_e доказывают: каждый cluster point настоящих
+конечных минимумов минимизирует Ψ на t=t_*, x₀=1, ρ∈ℳ.
+При этих fixed t,x₀ добавка −t log(1/t)b/ℓ постоянна и не меняет
+минимизаторы. Ни скорость сходимости, ни limiting faithfulness ρ
+не использованы.
+
+**Граница Ψ тоже исключается фактической историей.** Пусть один
+нетривиальный eigenvalue x_χ=0 на x₀=1 simplex. Заменим ρ на
+active marginal тензорно с tracial unused state, как в (175)–(178).
+Это сохраняет всю цену, Ψ и ℳ: общие симметрии факторизуются по
+active/unused modes. Откроем x_χ=ε², компенсируя positive spatial
+eigenvalue на O(ε²), сохранив x₀=1 и Σx=4. Та же ρ остаётся в ℳ
+и потому сохраняет b=b₀ на всём пути. Потери первого logarithmic
+уровня здесь нет.
+
+Нулевую историю (176) можно поставить на любой из n slots с blank
+на остальных. Record coefficient vectors v_j ортонормальны, а их
+output derivatives ОДИНАКОВЫ, поскольку blank=b_νI. Поэтому
+v_Σ=n⁻¹/²Σ_jv_j — единичная нулевая история с birth n a_birth:
+
+    lim_(n→∞) n a_birth/δ
+       =p³tλ² exp(−κtλ²)/8=:c₀>0.              (197)
+
+Для missing нетривиального character h имеем Σh_r=0; leading
+{I,U} overlaps этой истории равны0 на всём x₀=1 пути по (194).
+Следовательно (197) — новый kernel birth первого B, а не high-cluster
+перенос. Его также можно получить непосредственно из one-insertion
+Gram в (164)–(166). Для этого утверждения используем fixed coherent-
+record one-insertion Gram representation: missing-mode parity делает
+её B_ε чётным, поэтому first-order support rotation не отнимает этот
+coefficient. Data/reference compression ΠYΠ из (165) имеет те же
+nonzero eigenvalues по Schmidt identity, но сама может сопрягаться
+moving unitary; её матричная чётность здесь не предполагается. Отсюда
+
+    Ψ(G_ε,ρ)−Ψ(G_0,ρ)
+       =−(c/ℓ)ε²log(1/ε²)+O(ε²), c≥c₀>0.
+
+Никакая boundary point не минимизирует Ψ. Её min-set компактен,
+а x₀=1; значит для фиксированных L и supplied code существует γ>0,
+такое что у ВСЕХ достаточно поздних конечных минимумов (179)
+
+    min_χ x_(χ,n)≥γ.                            (198)
+
+Это uniform shape gap, которого finite positivity (179) не давала.
+Он не есть uniform preparation gap. Например blockwise even state
+(vac+top)/√2 при равных momentum masses имеет те же quadratic CAR
+моменты, first-birth Gram и Ψ, что Bell при том же G. Первое finite
+correction поэтому не различает эти rank8 и rank128 preparations;
+настоящий finite minimum всё ещё faithful по span theorem, но uniform
+lower density bound отсюда не следует.
+
+**Точная граница потребления в ОТО.** Исходный positive-adjoint owner
+(4) определяет C_r=C(u_actual,r), u_actual=L v_r. В этой weak семье
+C_r=ν c(u_shape,r), а отдельный физический coupling ν не введён.
+Поэтому при observer e₀ actual operational inverse metric равен
+
+    q_n=ν_n² U_nᵀηU_n,
+    g_n=ν_n⁻²(U_nᵀηU_n)⁻¹, ν_n²∼t_*/n.         (199)
+
+(198) контролирует только ν_n⁻² q_n и её inverse. На той же fixed
+решётке и с тем же clock q_n→0; этот history limit не даёт регулярной
+ненулевой Lorentz metric и не есть spatial GR recovery. Деление метрики
+на ν² не разрешено как физическая замена единиц без источника clock/
+calibration. Даже полное решение оставшихся links должно затем иметь
+собственное совместное spatial/clock refinement. Нельзя переименовать
+weak record coupling в независимый physical parameter задним числом.
+
+### 8.36. Почему одного logarithmic Hessian недостаточно для links
+
+Uniform shape gap (198) позволяет работать в настоящем nondegenerate
+coframe neighbourhood. Но он не обосновывает local link saddle.
+Это можно проверить на самом native операторе, а не на общей аналогии.
+
+На (191) при M₀=I обозначим U=A_0/λ, X=16 δA_0 для actual
+invariant link jet Ω_r=S_r K S_r, K∈so(1,3). Same-sign splitting есть
+
+    S(K)={U,X}/2, [S(K),U]=0.                   (200)
+
+CAR parity даёт S even и US odd. При точной подготовке ℳ средние
+S в обеих ± energy branches равны0. Действительно FI с word-adjoint
+переводит jet в minus jet и forward-only correction из (188).
+Антикоммутатор U с этим correction скалярен в каждом axis momentum.
+Его среднее при axis masses1/4 пропорционально
+
+    2 a·Ka−4a₀(Ka)₀=0,
+    TrρS=TrρUS=TrρΠ_±S=0.                      (201)
+
+Здесь использовано K∈so(1,3), а не евклидова skew-симметрия K.
+Нормированные branch means также0, поскольку их массы1/2.
+
+Однако необходимая для простого saddle lift оценка
+S(K)²≥c||K||²I, c>0, ЛОЖНА даже при L=4,G=I. Возьмём
+
+    K(x)=L₀₂+L₀₃+x(L₁₂+L₁₃), x real.           (202)
+
+На +axis0 имеем t₀=i,t₁=t₂=t₃=1, c_r=c(u_r),
+Z=(i−1)c₀+(−i−1)c₀*=16A_0, Z²=2I,
+
+    X=Σ_r[t_r c_r Γ(S_rK(x)S_r)
+                 +bar t_r Γ(S_rK(x)S_r)* c_r*],
+    T={Z,X}/2=√2 S.
+
+В исходном полном CAR16, на even8 block точное тождество равно
+
+    det T_even(x)=P(x)²/16,
+    P(x)=x⁴+10x³−10x²−2x+5,
+    P(−1)=−12, P(−½)=37/16.                    (203)
+
+Существует x_*∈(−1,−½), при котором nonzero physical K(x_*) имеет
+настоящее kernel splitting. Это точный алгебраический пример, не
+numerical eigenvalue tolerance. Все шесть Lorentz directions и все
+CAR grades сохранены; при x=0 determinant25/16 является control.
+
+Контроль можно усилить до допустимой подготовки. Пусть σ — нормированный
+проектор на even kernel T(x_*). Он коммутирует с CAR parity.
+Antiunitary F·complex-conjugation
+фиксирует все eight Hermitian Majoranas и меняет знак их Hermitian
+quadratic products iγ_aγ_b; следовательно он переводит T в −T,
+сохраняя σ. Поэтому у σ все нечётные и все quadratic CAR moments
+совпадают с I₁₆/16. Перенесём σ по S_r на +axisr blocks, а на
+negative blocks возьмём complex conjugate, с masses1/8. Полученная
+полная shell preparation принадлежит ℳ, допускает исходный reference128
+и удовлетворяет Sρ=0 на всех блоках.
+
+Это не обязательно actual finite minimizer. Но её first-birth B,
+high Y compression и s₁ совпадают с Bell: one-insertion operators
+линейны по CAR либо имеют вид L U, где L — линейная CAR-форма;
+их same-parity products сводятся
+к quadratic CAR, а cross products нечётны. Из (171) C₁ здесь тоже
+совпадает: coefficient0 n_i n_i* скалярен по каждому momentum,
+G₁*(A²)=0 в значении. Поэтому подготовка не различается с Bell
+предыдущим Ψ для ЛЮБОГО supplied full code, хотя её splitting
+variance в (202) равна0.
+
+Следовательно positivity первого birth-support, finite faithfulness
+actual minimizer и Hilbert–Schmidt independence шести link maps не
+дают нужной uniform link curvature. Контроль (203) меняет следующий
+шаг: нужен реальный higher-birth preparation selection, сохраняющий
+все labels/costs, либо иной совместный existence argument. Он не
+является no-go для finite roots и тем более для D0→ОТО.
+
+[Узкая точная проверка](sources/d0_labelled_golden_record_full_source_2026-10-18/check_aligned_lorentz_splitting.py)
+загружает только pinned literal creator, строит actual Lorentz jets,
+вычисляет (203), проверяет antiunitary и nonsingular control. Её
+[результат](sources/d0_labelled_golden_record_full_source_2026-10-18/ALIGNED_LORENTZ_SPLITTING_RESULT.json)
+не запускает прежние root/thermal/Lean suites. Default read-only;
+сохранение результата opt-in. Source-preserving продолжение всех
+шести link equations (192) остаётся следующим finite consumer.
+
+**Приоритет пользовательского синтеза 18 октября.** Физическая
+вынужденность ОТО теперь проверяется через nonlinear spin-2 bootstrap
+ТОГО ЖЕ полного источника; её новый consumer выведен в
+[стратегическом синтезе, §§7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md).
+Там подтверждён полный10-slot Schur seed выбранной star-цены и
+получена точная формула кубического native Ward с сохраняемым
+detector/embedding jet. Эта задача имеет приоритет над ещё одним
+restricted link scout. Результаты (191)–(203) сохраняют собственную
+область: ни shape gap, ни свободный finite matter solve не выбирает
+physical price или её нелинейную gauge algebra.
+
 ## 9. Проверка
+
+§8.36 проверен точным symbolic determinant на actual even8 block
+полного CAR16, с положительным/отрицательным interval endpoint,
+true Lorentz compatibility, energy projection, parity и antiunitary
+controls. Дополнительный analytic preparation argument сохраняет
+reference128 и отделяет admissible moment-fibre control от настоящего
+finite minimizer. Опровергнута конкретная uniform saddle premise;
+finite joint existence и physical GR не объявлены невозможными.
+
+§§8.34–8.35 независимо проверены по phase-only V₄ action в aligned
+Lorentz domain, общему preparation symmetry class, exact moment
+saturation, uniform boundary-safe value expansion, двум уровням
+вариационного предела и n-slot normalized history birth. Uniform
+Gram-shape gap не повышен до density gap или actual metric gap;
+операционное scale identity (199) сверено с исходными владельцами.
 
 §§8.31–8.33 проверены независимо по настоящему null-history witness,
 его Walsh normalization, unused-factor purification, parity и finite

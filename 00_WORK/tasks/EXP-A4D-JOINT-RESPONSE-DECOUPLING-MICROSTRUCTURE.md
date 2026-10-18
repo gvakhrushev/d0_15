@@ -12,6 +12,49 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October user priority: same-source nonlinear spin-2 bootstrap
+
+The user supplied the reverse Einstein/Λ synthesis and explicitly asks
+to test forcing through consistent nonlinear interaction of the D0
+spin-2 sector. This now has priority over another finite link-root scout.
+Consume the full10×10 selected-star principal Schur theorem; do not
+promote it to the free Hessian of a different native price. Root owns
+the existing strategic synthesis §§7.1–7.3, primary memo, full-source
+owner and current-route consumers. Read-only assistants inspect the
+actual Schur carrier, full nonlinear Ward and primary deformation theorem.
+The immediate consumer is the same-source cubic gate (7.2)–(7.4): a real
+C³ germ, genuine retained equations/linear lifts, full quadratic operator
+and mixed detector/embedding jet, with independent matter retained.
+No chosen action, EH cubic replacement, volume subtraction, free physical
+clock rescaling, assumed nonlinear gauge symmetry or repeated old suite.
+Cubic success must still pass the real quartic/gauge-closure obstruction.
+
+Consumed so far: the seed is the complete10-slot Lorentz degree-two
+symbol, but only of the selected star action. Actual auxiliary elimination
+gives the cubic pullback formula without solving nonlinear auxiliary jets;
+twice differentiating the existing full Ward identifies exactly the
+uncomputed native mixed embedding source. The formal Λ vacuum from the
+fixed-β truncation has |βR|≥24 and is not a controlled flat/large-radius
+vacuum. Thus the same native source/background must be established before
+using spin-2 uniqueness. The mathematical bootstrap route is active;
+physical D0→GR, universal matter and controlled recovery remain open.
+
+### 18 October: solve the actual homogeneous Lorentz-link residual
+
+Input `838b452e`. Consume finite preparation/coframe/observer existence
+and the exact four-number link criterion (187)–(190). Determine the
+actual remaining source or construct a joint finite continuation in
+proper Lorentz links; do not repeat the solved coframe minimization.
+Keep the complete supplied code symbolic, all grades/reference128,
+the original operational metric and every admissible link/observer jet.
+Root owns this brief, the same source owner and its consumers. Bounded
+read-only assistants test actual forward-source identities and the
+compactness/admissibility boundary of a full geometric continuation.
+The decisive result is a source-preserving solution/existence theorem
+or an exact obstruction that changes the parent route. No chosen prior,
+fitted action, uniform inverse, unproved symmetry of the Lorentz domain,
+new workflow or historical-suite replay is authorized by this brief.
+
 ### 18 October: resolve the remaining homogeneous coherent source
 
 Input `ba3902b3`. Consume the exact finite preparation/strength solutions

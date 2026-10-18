@@ -2,6 +2,32 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
+**Current priority, user synthesis of 18 October:** nonlinear spin-2
+bootstrap of the SAME native source. The [strategic synthesis §§7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+verifies the complete10×10 Lorentz Schur/linear-Einstein seed and derives
+the exact next cubic Ward gate. That seed belongs to the selected naked
+star action; it is not yet the free Hessian of the full native price.
+True retained elimination gives the cubic jet directly from the full
+third differential and linear stationary lifts. The remaining cubic
+Noether defect equals an explicit mixed detector/embedding jet; current
+relabeling covariance does not prove it zero. C¹ entropy control does
+not supply the required C³ germ, and cubic success still needs quartic
+consistency and actual nonlinear gauge closure. This route takes priority
+over another restricted link search.
+
+The user’s fixed-β Λ is retained with its full polylog ratio. Its formal
+vacuum has |βR|≥24, so it is not a controlled vacuum of the large-radius
+truncation and cannot serve as a stationary Minkowski bootstrap background.
+No volume subtraction, new price or metric rescaling is introduced.
+
+**Latest finite input, `838b452e`:** §§8.34–8.36 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+put the partial roots in a true full-Lorentz V₄ orientation, prove a
+uniform normalized Gram-shape gap, and give an exact native kernel control
+against an unjustified six-link saddle lift. Actual metric scale still
+collapses as ν²~1/n; this history limit is not spatial GR recovery.
+All six invariant link equations remain in the finite continuation.
+
 **Latest consumed transition, input `ba3902b3`:** §§8.31–8.33 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 prove exact finite solutions of ALL preparation, strength, coframe and

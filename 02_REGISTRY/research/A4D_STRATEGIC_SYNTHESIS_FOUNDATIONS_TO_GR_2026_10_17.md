@@ -645,6 +645,157 @@ Palatini consumer существующей композиции, без TT/ли�
 фиксированной границы. V для полного физического семейства ещё не закрыта. Пустая exact-source
 fibre старого warp также не служит положительной recovery теоремой.
 
+### 7.1. Приоритет 18 октября: нелинейный bootstrap того же spin-2 источника
+
+Новый пользовательский синтез меняет приоритет: вместо следующей
+настройки Einstein readout проверять, вынуждает ли согласованное
+взаимодействие собственного spin-2 сектора именно нелинейную ОТО.
+Конечные preparation/coframe/observer roots сохраняются как отдельный
+вход существования с шестью незакрытыми aligned-link equations;
+их продолжение не подменяет эту задачу физической вынужденности.
+
+**Линейный кирпич действительно полный.**
+[Direct Schur owner](A4D_SCHUR_EINSTEIN_DIRECT_IDENTIFICATION.md), §§2–7,
+независимо сравнивает все100 polynomial entries:
+
+    K_Schur^[2](k)=−C₁(k)ᵀ A₀⁻¹ C₁(k)
+                 =−½ K_G^(1)(k), det A₀=256.             (7.1)
+
+Это все10 symmetric Lorentz slots, включая lapse/shift, четыре Bianchi
+identities и generic gauge-kernel dimension4. Это НЕ только TT-проекция.
+Но (7.1) — degree-two flat IR coefficient выбранного naked-star action,
+не полный finite-UV Schur и не уже Hessian физической full128 цены.
+Две characteristic excess directions сами не доказывают propagation,
+positive residues, единственность физического graviton или matter coupling.
+Отозванный перенос на observer-preserving stored reduction не возобновляется.
+
+При локальной, Poincaré-инвариантной, согласованной по порядкам деформации
+здорового Pauli–Fierz поля с не более чем двумя производными взаимодействующая
+ветвь есть EH с возможной Λ, modulo local field redefinitions/boundaries.
+Свободная ветвь тоже разрешена: ненулевое взаимодействие надо доказать.
+Это [теорема Boulanger–Damour–Gualtieri–Henneaux, Thm1.1 и §7](https://arxiv.org/html/hep-th/0007220v2);
+[Deser](https://arxiv.org/abs/gr-qc/0411023) даёт self-coupling construction.
+Они не выводят полную D0-материю, не доказывают сходимость формального ряда
+и не заменяют same-source identification.
+
+Bootstrap может обойти прежнее требование регулярности источника при
+det e=0 из [Cartan-classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md).
+Взамен требуется доказанный smooth effective germ того же native процесса,
+его настоящий PF free operator, отсутствие иных unsuppressed polarizations,
+локальность и двухпроизводный leading sector, нелинейная gauge consistency
+и nonzero self-coupling. Cluster factorization из Book03 не является
+сама по себе finite-jet locality внутри связной сцены. Higher-curvature
+вершины с тем же flat quadratic seed также требуют контролируемого IR
+подавления; их отсутствие нельзя вывести из (7.1).
+
+### 7.2. Первый расчёт bootstrap: кубический Ward без подбора действия
+
+Пусть S(y,r) — ОДНА самостоятельно определённая полная цена,
+y=(a,X), a включает operational metric и независимую matter, X —
+сохраняемое представление sampling/paths. r содержит только поля,
+которые действительно разрешено устранить по собственным equations.
+Нужны C³ chart, эквивариантная stationary section S_r=0 и обратимость
+A=S_rr на честном gauge-fixed complement. Uniform UV inverse здесь
+не предполагается. Полная entropy C¹ через rank births из §§8.27–8.35
+этого C³ входа НЕ предоставляет.
+
+Для Γ(y)=S(y,r_*(y)) имеем
+
+    L v=(v,−A⁻¹S_ry v),
+    H_Γ=S_yy−S_yr A⁻¹S_ry,
+    T_Γ(v₁,v₂,v₃)=D³S(Lv₁,Lv₂,Lv₃).                      (7.2)
+
+Последнее равенство сокращает тяжёлую задачу: nonlinear r'' не нужно
+искать для кубического jet. Дифференцируем DΓ=S_y дважды; все
+добавочные члены имеют вид D²S[(0,r''),Lv]=0 по линейному stationary
+equation. При S∈C³ section r_*∈C² достаточно; r''' не предполагается.
+Independent matter не становится auxiliary по названию.
+
+[Полный конечный Ward](A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md)
+уже доказывает совместную covariance Γ(a,X)=Γ(f*a,f⁻¹∘X).
+Его генераторы R_a=L_ξa и R_X=−ξ∘X дают
+D_aΓ R_a+D_XΓ R_X=0. Дважды дифференцируя по настоящим physical
+направлениям h,w при δX=0, на full stationary background получаем
+
+    T_Γ(h,w,R_a0)
+      +H_Γ(h,R_a1 w)+H_Γ(w,R_a1 h)
+        =−Γ_aaX(h,w,R_X0).                              (7.3)
+
+R_X не зависит от a. В affine tensor charts R_a линейно зависит от a;
+в constrained charts возможные DS·D²R слагаемые исчезают по полной
+стационарности фона, а не по фиксации observer/preparation variables.
+Все surviving matter/observer/measure rows остаются на левой стороне.
+
+В physical chart g=η+h, с H_Γ,T_Γ производными по actual δg,
+pure metric cubic test применим только к действительно metric-only
+reduced vacuum germ. Все прочие секторы должны быть устранены по
+собственным equations либо их mixed contributions доказанно равны0;
+одного исчезновения X-source недостаточно. Тогда необходимое тождество
+равно
+
+    W₃(h,w;ξ)=T_Γ(h,w,2∂_(μξ_ν))
+             +H_Γ(h,L_ξw)+H_Γ(w,L_ξh)=0.                (7.4)
+
+Это polarized форма δ₀S₃+δ₁S₂=0. При произвольной spin-2 координате
+вместо operational g проверяется actual δ₁ с допустимыми local field
+redefinitions; нельзя назначить δ₁=L_ξh и объявить иной результат no-go.
+Правая часть (7.3) — точный недостающий mixed detector/embedding jet.
+Она пока НЕ вычислена для действительно редуцированной полной native
+цены. Passive relabeling не зануляет её. Старые cone controls и пример
+scalar-clock action не являются вычислением этого same-source jet.
+
+Так новый маршрут имеет один конкретный первый consumer: получить
+H_Γ и T_Γ той же native цены по (7.2), проверить её quadratic PF
+identification и (7.3) на полном carrier. Не нужно снова изготавливать
+curvature readout или предполагать бесконечную EH-вершину. У bare-star
+цены nonlinear Palatini completion уже известен; повторить его — не
+доказательство native forcing.
+
+После W₃=0 остаются actual quartic consistency и замыкание gauge algebra:
+δ₀S₄+δ₁S₃+δ₂S₂=0. В BV-обозначениях следующий obstruction есть
+s₀W₂=−½(W₁,W₁); он должен быть локально s₀-exact, а не заменён
+подобранным EH quartic. См. [первичный deformation framework](https://arxiv.org/abs/hep-th/9304057).
+Полная nonlinear consistency вместе с указанными hypotheses потребляет
+теорему уникальности; один cubic pass её не заменяет.
+
+### 7.3. Космологический член нельзя смешивать с flat bootstrap
+
+Пользовательский fixed-β синтез потребляет
+[two-sided full-record owner](A4D_TWO_SIDED_SPATIAL_RECORD_EINSTEIN_SOURCE.md):
+J_cal=J₄−J_ref,left−J_ref,right+constant. Оба reference сохраняют
+свой настоящий a₀ volume term. Поэтому leading цена равна
++λ_J Vol+c_J∫R_L; это НЕ (15) reverse-IR owner, где добавлен лишь
+пространственный curvature source и сохранён −λ_J Vol. Числа c_J,λ_J
+потребляются из [reverse-IR (12)](sources/d0_reverse_einstein_ir_2026-10-17/RESULT_RU.md).
+Для данного two-sided J₄−2J_ref геометрическая вариация даёт
+
+    G_μν+Λg_μν=T_μν/(2c_J),
+    Λ=−6 F₃(r)/(βF₂(r)), r=z/(1−z),
+    F_s(r)=−Li_s(−r), c_J>0.                             (7.5)
+
+При z=2⁻²⁰, β=3−√5 точное значение содержит ratio:
+F₃/F₂≈1.00000011920936429, Λ≈−7.85410290253218701.
+Число −(9+3√5)/2 — leading z→0 значение, не точное равенство при
+этом ненулевом z. Для z=p² ratio≈1.06472863922942852,
+Λ≈−8.36248729889420551. Tagged double clock сохраняет curvature
+ratio и умножает этот formal Λ на3/2; это не выбор физической цены.
+
+На formal vacuum shell (7.5) βR=−24F₃/F₂ (tagged: −36F₃/F₂).
+Это НЕ малый controlled curvature parameter. Large-radius expansion
+из reverse-IR owner, J=−λ_J R_macro⁴Vol+c_J R_macro²∫R+O(1),
+не контролирует такие сильно искривлённые solutions. Поэтому R=4Λ
+здесь — следствие truncated conditional equation; оно не доказанный
+вакуум исходного exact v8 опыта. Exact finite estimator C_GR обходит
+heat truncation как readout identity, но не выбирает свою physical price.
+
+Кроме того, при Λ≠0 Minkowski не stationary vacuum. Действительный
+bootstrap следует ставить на собственном (A)dS фоне либо вывести
+vanishing total tadpole из того же full source. Нельзя совместить
+flat star Schur и volume term другой цены как один free graviton:
+на nonstationary фоне Hessian Ward содержит DS·DR, а не H R₀=0.
+Это новый обязательный same-background consumer, не предложение
+вычесть volume counterterm или назначить Λ=0.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

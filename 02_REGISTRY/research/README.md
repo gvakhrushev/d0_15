@@ -6,6 +6,20 @@ Current integrator entrypoint: [D0 → GR strategic synthesis, updated 18 Octobe
 It connects foundational theorem owners to the positive AF-star nonlinear
 Einstein composition and states the remaining native/source and recovery
 premises. This is research in Draft #334, not a new accepted CORE claim.
+Current priority: [same-source nonlinear spin-2 bootstrap, §§7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md).
+The selected-star Schur seed is a full10×10 Lorentz principal symbol.
+The actual full native price still needs its own smooth quadratic/cubic
+jet, retained equations and nonlinear Ward closure. The cubic defect is
+now exactly the mixed detector/embedding source; no new action is chosen.
+The supplied Λ is preserved as a conditional coefficient, with its
+stationary-background and controlled-IR boundaries.
+
+Latest finite continuation: full-source §§8.34–8.36 prove a uniform
+normalized Gram-shape gap and retain a genuine Lorentz fixed family with
+all six invariant link equations. An exact native kernel rejects a false
+uniform saddle premise. Actual metric scale shrinks in this history
+limit, which therefore is not a spatial GR recovery theorem.
+
 Latest consumer: §§8.31–8.33 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 prove exact finite preparation, coframe and observer solutions for a
