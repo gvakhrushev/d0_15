@@ -2,7 +2,7 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Snapshot:** 2026-10-18; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `79c7d906` integrated
+**Snapshot:** 2026-10-18; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `5d23e90a` integrated
 
 ## Current route to general relativity
 
@@ -21,23 +21,29 @@ counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
 
-### Consuming strategic synthesis — 2026-10-18
+### Consuming strategic synthesis — 2026-10-18 checkpoint
 
 Current full-source consumer:
-[strategic7.24](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
-and [full-source6.78](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
-The WHOLE fixed-query polynomial now has a controlled vacuum matter-
-preparation normal on the ORIGINAL input, with exact clock/site/RIGHT
-marginals. Its full mixed-domain first derivative vanishes, so subset
-intersection0/1 covariance cancels and the normal isO(Bk²/N). The physical
-lift L_N, q-floor, actual signal and full-price/copy coefficients stay in
-the bound; with L_N=O(√N) and controlled budgets the physical contribution
-vanishes. Exact IID geometric2jets remain the original source, not an
-affine surrogate. C² normal transfer has its own scalar-free/moving-pullback
-hypotheses. Together with the derived upperclock this advances the vacuum
-limit; native Book/PREP/copy choice, upstreamHJR, free query normals and
-exact full joint roots remain the next same-price transition. No physical
-GR or raw#216 closure is inferred.
+[strategic §§7.25–7.28](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.79–6.81](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The full-polynomial vacuum bound now transfers to the actual mixed-CAR
+§6.68 root while retaining every RIGHT/reference128. The free-equalizer
+CASE A has a native-clock C² obstruction, so return rank alone cannot make
+its old Rayleigh source negligible. The Book identity and copy-budget window
+keep the complete raw normalizer, factory histories, mean/MAP distinction,
+copy lower bound and compiler/recovery errors in one source estimate. The
+reattached C_Y text is byte-identical to its archived owner and adds no new
+actuator or price theorem. Both new narrow checkers pass; the unchanged full
+price receipt preserves its prior outputs and updates only the source hash.
+
+These results refine the current price and preparation route but do not
+select a physical action or establish an exact finite root of the combined
+programme. The next same-source step is to bind the actual complete Book
+history and copy factory to the full action, obtain its admitted joint roots,
+and control the source jets and nonempty recovery on that same carrier.
+Physical query/PREP admission, the actual per-copy price `P_h`, common
+sources, and the nonlinear metric-response limit remain open. No extra
+signal or free-copy assumption enters the route.
 
 Preceding clock/coherent-preparation consumer:
 [strategic7.23](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
