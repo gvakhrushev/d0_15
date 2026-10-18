@@ -62,6 +62,18 @@ nonzero-Fourier rows. Homogeneous Lorentz-link source сведён к четыр
 actual costate numbers, с точной суммой квадратов всех24 компонентов.
 Их зануление и physical price binding ещё не доказаны.
 
+**Полный scalar-source consumer §§6.36–6.40, вход `8b331ce8`:**
+пять complex normals включают observer-relative coframe boost; их
+continuum kernel и mixed compatibility доказаны точно. После bounded
+internal reduction full fixed-beta цена сохраняет положительный lapse
+Hessian в(13di). Настоящий time-pullback с operator measure восстанавливает
+whole-price Ward, но требует native sampling/embedding law. Неколлинеарный
+двухзаписный переход исполнен существующим Golden-кодом; его physical
+all-input gate не содержится в прежнем G/CNOT palette с integral returned
+work. Короткое достаточное controlled-G слово выписано. Следующие входы —
+физическое управление, локальная мера и их полный SAME-programme source,
+а не ещё один heat coefficient или назначенное действие Эйнштейна.
+
 **Физический D0→ОТО ещё не доказан:** physical admission исходных
 Julia/resources и обязательность именно этого процесса не выведены; не доказаны
 независимый общий matter-source, native constraint compatibility и глобальное
@@ -3146,6 +3158,395 @@ input state. Поэтому B₁ и M chronology не возникают так�
 consumer, не запрет всякого adaptive/coherent protocol и не новый oracle
 из одних неизменных входов. Материальный источник этой программы остаётся
 невыведенным, пока данный переход не исполнен и не оценена его полная цена.
+
+### 6.36. Полный scalar normal: ещё одно направление наблюдателя и точное ядро
+
+Вход `8b331ce8`. Четыре link-направления(13dd) — весь scalar LINK
+block, но не весь normal block при фиксированной операционной метрике.
+В gauge n=e₀ остаётся физический observer-relative boost coframe.
+Его удаление заморозило бы наблюдателя. Для δU=S U, U=√d η,
+scalar coframe basis состоит из
+
+    E₀₀, J=Σ_i(E₀ᵢ−Eᵢ₀), I_sp, O_sp, B=Σ_i(E₀ᵢ+Eᵢ₀),
+
+где O_sp имеет единицы вне диагонали пространственного3×3 блока.
+Первые четыре S являются η-selfadjoint metric directions; B —
+η-skew normal при фиксированном q=UᵀηU. Итак нужны4 metric и5
+normal COMPLEX coordinates: B плюс четыре links, с обеими реальными
+Fourier phases. Для принятой +q normalization real Hessian есть
+
+    H_real=½[[Re K, Im K], [−Im K, Re K]].          (13de)
+
+Schur только Re K потерял бы quadrature response. Raw observer row
+не выбрасывается: на constraint bundle он следует из настоящего
+Lorentz Ward после preparation и всех оставленных coframe/link rows.
+
+Finite L8 расчёт по всем4096 momenta даёт invertible normal5 для всех
+puretime q₀=0,…,4; но это только float64 exploration. Его [код](sources/d0_af_star_full_lattice_2026-10-17/explore_native_scalar_hessian.py)
+и [полные матрицы](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_SCALAR_FINITE_EXPLORATION.json)
+сохраняются как EXPLORATORY, без interval inertia, IFT или существования
+curved branch. L16/L32 roots в этом файле численные; L32 matrix sum
+усечён отдельно от полной root calibration. Эти числа не являются
+доказательством предела Schur.
+
+В continuum symbol normal5, напротив, имеет точное ядро. При physical
+q=(ω,0,0,0), ω=2π, в порядке(B,link1,…,link4)
+
+    z=(1,−iω,0,0,0),
+    V_z=T_q D_k−D_l T_q,  Q_z=(E_k−E_l)T_q,
+    T_q=(2Σ_i κ_i/ω)I₁₆−Γ(J), l=k+e₀.           (13df)
+
+Здесь κ=2πk, D_k=i√d(κ₀γ₀−Σ_iκ_iγ_i), γ=C−I.
+Это literal CAR₁₆ identity, а не обнаруженный numerical small eigenvalue.
+Все четыре link operators независимы; их Gram/d равен
+[[24,0,0,24],[0,48,0,0],[0,0,24,0],[24,0,0,72]].
+Нуль не является pure-link Lorentz gauge: (13df) соединяет
+volume-preserving spatial shear и положительную SO(4) frame rotation.
+Native24 zero-order image замкнут под этим действием. Подстановка
+(13df) в полный divided-difference Hessian превращает mixed row в
+сумму уже нулевых homogeneous coframe и actual link first sources.
+Поэтому Kz=0 также во всех mixed metric rows. Проверка [literal symbol](sources/d0_af_star_full_lattice_2026-10-17/check_native_scalar_symbol.py)
+использует закреплённый original creator и все16 components.
+
+Допустим совместимый LINEAR quotient: вычесть multiple z, положить
+boost coordinate0 и решать four-link block лишь если он обратим.
+Ни inverse normal5, ни произвольный pseudoinverse не применяются.
+Нелинейная секция при фиксированном metric этим не построена.
+Даже entrywise H_h→H_∞ не даёт Schur_h→Schur_∞: soft channel
+оставляет t_h* t_h/s_h, который может иметь ненулевой предел при
+t_h=O(h), s_h=O(h²). Это отдельная остающаяся конечная задача.
+
+### 6.37. Полная fixed-beta цена: внутренние строки не зануляют lapse source
+
+Следующий результат относится к continuum conditional H+J+R, а не к
+выбранному heat coefficient и не к полной physical D0 цене. Сохраняем
+β=2p², z=2⁻²⁰, M=128, CAR₁₆, RIGHT128 и полный thermal spectrum.
+Actual refining root имеет a_∞=4βπ²d_∞ в (1.80,1.82). Для θ(a)=Σ_j e^(−aj²),
+M₂(a)=Σ_j j²e^(−aj²), r=z/(1−z) его уравнение есть
+
+    4M₂(a)/θ(a)−2048βΣ_(n≥1)(−1)^(n+1)r^n
+                          ·4θ(na)³M₂(na)−1=0.      (13dg)
+
+Здесь a_∞ не golden a=√p. Существующая uniqueness на этом интервале
+и новые interval endpoint signs выделяют тот же root:
+a_∞=1.8074021052768204657855681024919667… с bracket radius10⁻³⁰.
+Z=16θ(a_∞)⁴, E_k=4π²d_∞|k|², Ω={±e_r},
+
+    w_k=−exp(−βE_k)/Z
+          +Mzβexp(−βE_k)/(1−z+zexp(−βE_k))+1_Ω(k)/128.
+
+Для V_a(k+e₀,k), Q_a=D_lV_a+V_aD_k exact complex Hessian base есть
+
+    K_ab=Σ_k[(w_k+w_l)Tr₁₆(V_a*V_b)
+                   +(w_l−w_k)/(E_l−E_k)Tr₁₆(Q_a*Q_b)]. (13dh)
+
+При равных energies используется derivative без деления0; для этой
+пары E_l−E_k=4π²d_∞(2k₀+1)≠0. Proper mixed jets сократились по
+actual joint-root moments §6.34; global normalizer0 при q≠0. Таким
+образом prep response и весь source сохранены до этих сокращений.
+
+Lapse S=E₀₀ связывается только с link2 из(13dd). Остальные link1,3,4
+cross traces0 поточечно; observer-boost cross нечётен по Σ_iκ_i.
+Полные signed spatial sums зануляют его. Enhanced signed-permutation
+symmetry isotropic root также исключает остальные irreps all24.
+Это continuum symmetry; forward finite stencil не объявляется точно
+reflection-invariant. Spatial trace metric I_sp — другой scalar,
+поэтому его mixed METRIC row этой симметрией не исключается.
+
+Положим x=κ₀, y=(κ₁,κ₂,κ₃), N_sp=Σ_iC_iI_i. Нужные literal matrices:
+
+    V_p=i√d[xC₀−(x+ω)I₀], V_n=√d N_sp hatγ₀,
+    Q_p=d[2x(x+ω)I+ω²N₀],
+    Q_n=id[ωN_sp(2N₀−I)+Σ_i y_i hatγ_i hatγ₀].
+
+Их шесть полных traces, без выбора grade/subcarrier:
+
+| Trace | Значение |
+| --- | --- |
+| Tr V_p*V_p | 8d[x²+(x+ω)²] |
+| Tr Q_p*Q_p | 8d²[8x²(x+ω)²+4x(x+ω)ω²+ω⁴] |
+| Tr V_p*V_n | 12idω |
+| Tr Q_p*Q_n | 12id²ω³ |
+| Tr V_n*V_n | 48d |
+| Tr Q_n*Q_n | d²[48ω²+16|y|²] |
+
+Суммирование(13dh) даёт K_(p,n)=[[A,iB],[−iB,C]] и строгие bounds
+
+    0.0054788 < A < 0.0054789,
+    0.0026159 < B < 0.0026160,
+   −0.0280215 < C <−0.0280214,
+    0.0057230 < A−B²/C < 0.0057231.                (13di)
+
+Нормальная строка C≠0 решается, а reduced lapse Hessian всё ещё
+положителен. Для unit cosine physical Hessian равен половине последнего
+числа. Совместимое ядро(13df) не влияет на эту строку. Результат
+покрывает все bounded linear internal corrections на этом continuum base,
+а не предполагает inverse полного singular normal5.
+
+**Почему бесконечная сумма проверена.** [Interval calculation](sources/d0_af_star_full_lattice_2026-10-17/check_native_scalar_price_response.py)
+сначала ограничивает root(13dg), затем матрицу. В θ,M₂ используются
+|j|≤12 с хвостами <10⁻¹²⁸,<10⁻¹²⁶; feedback series n≤10 имеет
+остаток <10⁻⁵⁵. Проверены θ(1.80)<3, M₂(1.80)<10 и root внутри
+owned interval. Matrix rectangle k₀∈[−8,7], k_i∈[−7,7] содержит весь
+cube; preparation-cross terms целиком внутри. Для всех9 выбранных
+направлений ||V||≤12(1+|k|)≤12(1+2j) на supnorm shell j:
+||S||≤2 и 8π√d<12 дают первую оценку для coframe, links имеют
+||V||≤12√d<12. Также ||Q||≤||D_l||||V||+||V||||D_k||.
+С C_w=1/16+Mzβ/(1−z) остаток ограничен
+
+    16 C_w·144 Σ_(j≥8)(64j³+16j)(1+2j)²
+                 ·[2+1.82(4j+1)²]exp[−1.80(j−1)²] <10⁻²⁵.
+
+Число(64j³+16j) — полный4D supnorm shell. Ratio bound
+(1+1/j)^7 exp[−1.80(2j−1)]<1 замыкает бесконечный хвост;
+collisions оцениваются integral representation κ^[1].
+[Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_SCALAR_PRICE_RESPONSE_RESULT.json)
+содержит exact symbol controls, CAR traces и outward interval bounds.
+
+Entrywise finite-B→continuum source на fixed smooth directions также
+имеет dominated convergence: E_h≥16c|k|², V_h растёт не быстрее
+линейного polynomial, Q_h — quadratic, B≥b₀; κ,κ′ имеют uniform
+Gaussian domination. Occupied shell конечен и имеет owned gap.
+Но rates soft Schur по §6.36 отсюда не следуют. (13di) — утверждение
+о continuum price, не доказанный предел finite reduced matrices.
+
+На e⁰=N(t)dt, eⁱ=const·dxⁱ, Ω=0 Lorentz geometry точно плоская.
+Einstein vacuum source/Jacobi вдоль этой coordinate family0, тогда как
+(13di) ненулевой. Значит bounded internal elimination в данной
+fixed-counting conditional цене не делает её автоматически EH.
+Это не D0 no-go: настоящий sampling/embedding source ниже способен
+изменить именно эту строку; его native ownership ещё нужно вывести.
+
+Даже разрешение полной sphere preparation не устраняет этот тест на
+первом source уровне: e₀∉Ω−Ω={0,±2e_r,±e_r±e_s}, поэтому P_ΩQ_e₀P_Ω=0.
+Дополнительные intrashell/RIGHT-weight tangents не связаны с этой
+модой. Это не строит nonlinear common-energy section. Global clocks
+и calibrations имеют momentum0 и не смешиваются с q=e₀ по translation;
+новый LOCAL law был бы отдельным полем/источником, а не выбором числа.
+
+### 6.38. Исполнен неколлинеарный переход известного Golden-кода
+
+Материальный consumer §6.35 получил положительный runtime result,
+а не ещё одну формулу updated tuple. В исходном Golden ring
+A=Z[a], a²=p, a⁴+a²=1, хранится весь сырой16-vector
+
+    m=e₀+e₀₁+e₀₂₃+Ω, ||m||²=4.
+
+После actual literal_axis_gate первый grade равен w=(a,−p,0,0),
+wᵀw=p+p²=1. Следовательно n₊=w и q₊=−I+2wwᵀ вычисляются
+из СОХРАНЁННЫХ coefficients, без sqrt, division или нового codec.
+Для R=[[a,p],[−p,a]]⊕I₂ имеем exact all-column identity
+
+    U_(n₊)=Λ(R) U_(e₀) Λ(R)ᵀ.                    (13dj)
+
+[Исполнитель](sources/d0_af_star_full_lattice_2026-10-17/check_native_coded_chronology.py)
+строит ΛR signed minors существующими +,* Golden, исполняет оба
+полных16 outputs и сверяет(13dj) с literal original CAR record на всех
+16 inputs. Кодек сохраняет и восстанавливает72→80→150 бит.
+Нормированный представитель m/2 не записывается как дробный Golden.
+Для ФИКСИРОВАННЫХ вычисленных параметров оператор ортогонален, поэтому
+его tensor I_reference сохраняет любой spectator RIGHT точно.
+[Результат](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_CODED_CHRONOLOGY_RESULT.json)
+сохраняет actual outputs, параметры и owner SHA256. Прежний closed
+engine отвергает этот input своим collinear-domain guard, а не
+арифметической невозможностью перехода.
+
+Различие типов необходимо. Для неизвестной квантовой семьи
+m_r=e₀+Ω+r(e₀₁+e₀₂₃), ||m_r||²=2(1+r²), буквальное nonlinear
+updated-tuple правило даёт vacuum numerator
+
+    ||m_r||² q_vac=p³(1+√(1+pr²))²,
+    [r⁴]numerator=−p⁵/4≠0.                         (13dk)
+
+Любой фиксированный input-independent instrument с fixed ancilla,
+cut/effect имеет numerator m_r* A m_r, quadratic по r. Поэтому он
+не исполняет всё это правило на неизвестных amplitudes. Классический
+переход по уже известному коду этим не запрещён; наличие такого кода
+для произвольного неизвестного Ψ этим не создано. Book01 различает
+чтение записанного кода, представление состояния и физическое событие.
+
+Следующий consumer — физическое управление этим second query,
+допуск работы контроллера и ПОЛНАЯ его цена. Числа codec bits не
+являются Cost−Info, а вычисленное ΛR не считается автоматически
+словом разрешённого физического gate alphabet.
+
+### 6.39. Почему вычисленный updated query ещё не является старым физическим словом
+
+Для(13dj) физическая compilation проверена отдельно от классической
+арифметики. В A/2A=F₂[a]/(a⁴+a²+1) положим b=a+a²; b²=1.
+У каждого addressed G,Gᵀ и old U_(e₀)/fullStep все row и column sums
+равны b; у CNOT, перестановок и знаков —1. Multiplication, tensor
+placement и inverse сохраняют uniform augmentation b^N∈{1,b}.
+Но у actual literal U_(n₊) все16 row/column sums равны
+
+    d=1+a+a²+a³, d≠1, d≠b в A/2A.                (13dl)
+
+Поэтому точного all-input G/CNOT слова для этого updated query нет,
+включая возможность добавить прежний U_(e₀) как primitive. Здесь
+проверяется весь оператор, не один подготовленный state. Для любого
+norm-one integral ancilla η, точно возвращаемого тем же η, его
+σ=Ση_i имеет σ²=Ση_i²=1 mod2 и потому обратим. Равенство
+W(e_j⊗η)=U_(n₊)e_j⊗η дало бы b^Nσ=dσ, противоречие(13dl).
+Если различающиеся input/output work states оба приготовлены старыми
+G/CNOT словами из basis blanks, их augmentations тоже powers b,
+и тот же запрет сохраняется. Четвертьоборотные ±i monomial phases
+не помогают: A[i]→A/2A, i↦1 сохраняет argument и normalization.
+
+Есть явное ДОСТАТОЧНОЕ расширение, а не только запрет. Для масок
+j=bit₀+2bit₁, G=[[a,−p],[p,a]],
+
+    E=CX_(0→1) C₁(G₀) CX_(0→1) ⊗ I_(bits2,3)=ΛR,
+    U_(n₊)=E U_(e₀) Eᵀ.                          (13dm)
+
+Literal CAR calculation в том же [chronology checker](sources/d0_af_star_full_lattice_2026-10-17/check_native_coded_chronology.py)
+проверяет обе матрицы и residue classes. Управляемый G имеет
+неравные column augmentations(1,1,b,b); поэтому это настоящий
+дополнительный тип операции, не переименование старого слова.
+
+**Синтез с уже существующим Julia interface.** Этот sufficient resource
+не остаётся абстрактным controlled gate. В точной convention
+[full-Lorentz owner §2(5)](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md)
+один ПРЕДОСТАВЛЕННЫЙ query J(pC₀) имеет defect roots
+D_out=I+(a−1)N₀, D_in=I+(a−1)(I−N₀), все entries в прежнем A.
+Нумеруем CAR bits0,…,3 и уже имеющийся coefficient bit4. Тогда
+
+    P=SWAP₀₁ SWAP₄₀,
+    CG=Pᵀ X₀ CX_(4→0) X₄ J(pC₀) CX_(4→0) X₀ P
+      =C₁(G₀)⊗I_coeff.                            (13dm1)
+
+Подстановка CG в(13dm) проверена на полном32-dimensional carrier:
+результат I_coeff⊗U_(n₊). Coefficient bit возвращается точно для
+ЛЮБОГО входа, в том числе entangled с историей/reference; fresh blank,
+projection или reset не нужны. Неоптимизированное слово имеет2 Julia
+(один adjoint),32 CNOT,6 X и1 old U_(e₀). X требует действительно
+допущенного flip/basis-one control. Это syntax count, не Book price.
+
+Таким образом остался конкретный query operand pC₀ и его actual
+physical generation/source. Доступность J(pC₀) не следует из одного
+matrix definition: full-Lorentz owner прямо оставляет native generation
+новых onsite defects открытой. Старые scalar BetaHat/ZetaHat этого
+допуска не дают. (13dm1) — сокращение достаточного ресурса до уже
+описанного TYPE запроса, не доказательство его получения. Всё это
+r=1; независимый matter jet не выводится из одного этого exact value.
+Но ТО ЖЕ fixed control word работает как source-capable family:
+
+    b(r)=√(p+p²r²), x(r)=pr/b(r), y(r)=a/b(r)>0,
+    J(x(r)C₀) → E(r)=I_coeff⊗Λ([[y,x],[−x,y]]⊕I₂)
+              → I_coeff⊗U_(y,−x),
+    ∂_r=(ap/b²)(y∂_x−x∂_y).                     (13dm2)
+
+Проверены generic positive defect squares, all32 coefficient return,
+literal CAR conjugacy и первый jet на x²+y²=1. Он ненулевой:
+[(y∂_x−x∂_y)U]_(0,1)|_(r=1)=p². При r=1 имеем x′=p²,
+y′=−ap². Таким образом интерфейс переносит настоящий matter source
+при ФАКТИЧЕСКИ меняющемся query J(x(m)C₀), включая его defect-root
+derivative. Нужный native шаг теперь явен: retained code→x(m)→query,
+с полной ценой управления. Постоянный J(pC₀) этого jet не даёт;
+нелинейный processor неизвестных amplitudes по-прежнему не создан.
+
+Scope(13dl) не включает supplied field-dependent Julia/SELECT queries,
+неинтегральные seed states или произвольное невозвращаемое dirty work.
+Нельзя ни молча использовать эти ресурсы, ни объявлять их невозможными.
+Это точный execution boundary объявленного palette. Приближённый
+compiler остаётся отдельным результатом со своими source/resource
+оценками; exact finite root из approximation не следует. Полная Book
+цена контроллера(13dm) не вычисляется из числа gates или codec bits.
+Дальнейший положительный native переход должен предоставить именно
+физическое управление и его полный источник на имеющемся carrier.
+
+### 6.40. Настоящий компенсатор lapse — локальная мера того же исполнения
+
+(13di) не закрывает положительный маршрут: уже принадлежащая
+operator-measure row(13cb) меняет именно этот source. Для lapse
+amplitude a и f=δlogω её literal jet на полном CAR₁₆ даёт
+
+    V_f=−i√d ω f hatγ₀/2,
+    aV_p+V_f|_(f=−a)=i√d a(x+ω/2)γ₀=[K_ξ,D],
+    K_ξ=ξ∂₀+ξ′/2, ξ_q=ia/ω.                     (13dn)
+
+Это реальная вариация operator measure/adjoint. Пассивная смена
+Hilbert frame, одновременно перемещающая D и ρ, не создала бы этой
+дополнительной физической строки. Здесь δlogdet e=−a; никакая новая
+action для вывода тождества не нужна.
+
+Есть точная нелинейная continuum семья, не только первый jet. Пусть
+F_ε(t)=t+εξ(t) — periodic orientation-preserving time diffeomorphism,
+J=F_ε′>0, c=√d. Положим
+
+    e_ε=c⁻¹diag(J,1,1,1), ω_ε=J, Ω_ε=0,
+    (U_Fψ)(t,x)=√J(t) ψ(F_ε(t),x).
+
+Все coframe one-forms замкнуты; Cartan torsion0 и дополнительная
+connection correction не нужна. На L²(dx) после настоящего whitening
+
+    Dhat_ε=cγ₀ J⁻¹/²∂₀J⁻¹/²−cΣ_iγ_i∂ᵢ
+          =U_F D₀ U_F⁻¹, Δhat_ε=U_FΔ₀U_F⁻¹.    (13do)
+
+U_F унитарен на всех16 INTERNAL coframe components. В coordinate-form
+basis pullback включает полный exterior ΛDF; grades не скаляризуются.
+Observer internal n=e₀, но physical clock Jdt/c перемещается вместе
+с coframe. Riesz projector, ρ и purification переносятся тем же U_F,
+а reference128 и все Schmidt weights сохраняются точно. Поэтому
+TrρΔ, heat trace и feedback spectral trace ТОЙ ЖЕ conditional цены
+постоянны на семье. В continuum feedback используется relative logdet
+с удалением только field-independent бесконечной константы; literal
+finite-B positivity на unbounded continuum carrier не предполагается.
+
+Новый exact all16 контроль включён в [scalar-symbol checker](sources/d0_af_star_full_lattice_2026-10-17/check_native_scalar_symbol.py)
+и общий [receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_SCALAR_PRICE_RESPONSE_RESULT.json).
+Он проверяет (13dn), differential expression(13do) и determinant jet,
+не запускает старый spectral/root suite. Analytic unitary change of
+variables доказывает whole conditional price equality.
+
+**Потреблённый переход:** positive lapse result теперь указывает на
+конкретный missing native input, а не на ещё одну подбираемую цену.
+Нужно вывести из SAME исполнения локальный sampling/time-embedding
+law с Dlogω=−tr S на этой семье и учесть его собственный source,
+preparation transport и стоимость контроллера. Fixed PF/word counts
+этого jet не дают (§6.28). Сильнейший существующий положительный
+вход [history-density §1](A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md)
+строит |B_w|=p^cost(w) и X_∞*μ=dx на АДРЕСНОМ кубе, но прямо
+оставляет subsequent physical chart/Jacobian отдельным входом.
+[Golden refinement](A4D_NATIVE_GOLDEN_COST_REFINEMENT.md) также не
+отождествляет cost с proper time.
+
+Уже первый полный F/R cut показывает точный недостающий binding.
+При B_F=[0,p]×[0,1]³ и том же μ(F)=p, μ(R)=p² коframe
+e_ε=c⁻¹diag(1+εcos2πt,1,1,1) имеет normalized physical volume
+
+    Vol_ε(B_F)/Vol_ε(total)=p+ε sin(2πp)/(2π)≠p.
+
+Все branches и full normalization сохранены; p иррационально, поэтому
+sin2πp≠0. Old same-history word price имеет source0 при fixed code/law,
+а physical cellvolume меняется. Это отсутствие связи между заданными
+объектами, не независимо допущенная physical counter-universe.
+Положительное исправление точно известно: X_ε=F_ε⁻¹X_word сохраняет
+каждую μ(w), RIGHT и ∫_(F_ε⁻¹B_w)det e_ε/const=μ(w). Нужен native
+закон именно такого inverse proper-clock placement и его цена;
+назначение coordinates задним числом не является этим законом.
+
+Ward restoration по(13do) не выбирает
+Einstein equations: необходимо сравнение всего reduced metric source.
+Fixed-grid forward stencil не объявляется точно diffeo-covariant;
+finite whole-experiment identity также двигает embedding X. Native
+measure admission, soft finite-Schur rates и физический GR consumer
+остаются открыты. Точные(13di),(13dl) исключают два shortcut, а
+(13dj),(13dm),(13do) дают их конструктивные следующие входы.
+
+**Согласование с параллельным входом `ca86e31c`.** Сохранены
+[density/CAR metric weld](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md)
+и [exact radial equivalence/cubic consumer](A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md).
+Их Xhat=√(barμ/μ)X — составное чтение, согласованное с weighted
+star-source и principal CAR symbol. Это не operator-measure variation
+(13dn) и не замена raw D в условной v8 цене(13di). Radial Φ-map
+тождествен на f=0; отдельное density dressing при nonconstant μ
+остаётся и задаёт source-compatible metric. Нормировки h⁻⁴ источника
+и h⁻¹ relative-solder→coframe сохраняются при композиции. Same-cut
+совместное чтение(X,μ) полезно, но само не выводит law μ→physical
+sampling ω, subprincipal/clock jets или actually varying Julia operand.
+Общий следующий consumer — эти native законы и whole-price/scene
+sources одного исполнения; математические positive AF-star результаты
+при этом сохранены, а fixed-counting counter не перенесён на них.
 
 ## 7. Вся более ранняя история остаётся своим источником
 
@@ -7364,6 +7765,20 @@ restricted link scout. Результаты (191)–(203) сохраняют с�
 physical price или её нелинейную gauge algebra.
 
 ## 9. Проверка
+
+§§6.36–6.40 независимо проверены по полному pinned CAR₁₆ creator,
+complex Fourier convention, proper-root cancellations, compatible exact
+kernel, шести lapse traces, знаку Schur и бесконечным thermal/feedback
+хвостам. [Scalar source](sources/d0_af_star_full_lattice_2026-10-17/check_native_scalar_price_response.py)
+включает outward interval root/matrix bounds и exact time-pullback Ward.
+[Coded chronology](sources/d0_af_star_full_lattice_2026-10-17/check_native_coded_chronology.py)
+проверяет два literal outputs, all16 intertwining, original codec,
+unknown-input type boundary, augmentation obstruction и sufficient EXTRA
+controlled word. Shared owners только читаются; старые suites не
+вызываются. Новые результаты имеют отдельные receipts в том же packet.
+Finite matrix [exploration](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_SCALAR_FINITE_EXPLORATION.json)
+не является interval inertia, exact curved root или доказанным пределом
+finite Schur. Нативная мера, gate/controller price и physical GR открыты.
 
 §8.36 проверен точным symbolic determinant на actual even8 block
 полного CAR16, с положительным/отрицательным interval endpoint,

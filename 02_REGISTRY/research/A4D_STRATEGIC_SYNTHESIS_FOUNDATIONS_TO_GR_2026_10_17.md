@@ -1768,6 +1768,84 @@ CAR link/prep rows и exact finite-B functional identity; старые root,
 heat и Lean suites не переигрываются. Native dynamics, независимый
 источник и полный D0→ОТО остаются целью, не объявляются доказанными.
 
+### 7.14. Полный scalar source решён; следующие native входы теперь конкретны
+
+Вход `8b331ce8`; [full-source §§6.36–6.40](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+потребляют оставленный actual-root matrix consumer. Его normal block
+имеет5, а не4 complex coordinates: в observer gauge n=e₀ нужно
+сохранить ещё observer-relative boost coframe при fixed metric.
+Real/cos-sin Hessian требует всей complex matrix. Ни pure-link gauge
+deletion, ни inverse heat truncation не используются.
+
+На continuum base найдено и доказано exact normal kernel
+z=(1,−i2π,0,0,0). Полный CAR₁₆ commutator identity и joint-root
+moments дают также mixed metric compatibility. Поэтому используется
+только совместимый linear quotient; nonlinear normal section этим
+не построена. Entrywise finite Hessian convergence не достаточно:
+soft response t_h* t_h/s_h должен контролироваться отдельно.
+
+Решающий full-spectrum тест fixed β=2p²,z=2⁻²⁰ даёт для lapse и
+единственного coupled link scalar K=[[A,iB],[−iB,C]], где
+
+    0.0057230 < A−B²/C < 0.0057231, C<−0.0280214.  (7.34)
+
+Все thermal modes, preparation Schur, CAR16/reference128 и actual
+root сохранены; matrix infinite tail<10⁻²⁵. Lapse family плоская,
+но этот reduced source не нулевой. Таким образом bounded continuum
+internal compensation сама по себе не превращает данную conditional
+цену в Einstein vacuum. Это не full-D0 no-go и не предел native
+finite Schur. Остальные local observer/link/preparation rows этого
+base учтены; global clocks/calibrations не смешиваются с q=e₀.
+
+**Положительный геометрический consumer:** реальная operator-measure
+row(13cb) исправляет именно эту вариацию. Для настоящего time-pullback
+F(t), J=F′>0, e=c⁻¹diag(J,1,1,1), ω=J, Ω=0 получено
+
+    Dhat=U_F D₀ U_F⁻¹, (U_Fψ)(t)=√J ψ(F(t)),
+    δlogω=−tr S, δDhat=[ξ∂₀+ξ′/2,D₀].             (7.35)
+
+Unitary transport всей preparation сохраняет RIGHT128 и полную
+conditional H+J+R. Это не пассивный frame trick: physically supplied
+measure меняет сам adjoint/instrument. Собственный native sampling/
+embedding law с этим determinant jet и его полная цена ещё не
+выведены. Восстановление diffeomorphism Ward не выбирает Einstein
+source; finite grid также требует своего X/refinement transport.
+
+**Положительный материальный consumer:** updated noncollinear tuple
+при r=1 теперь действительно вычислен и исполнен классическим
+Golden-кодом без новых radicals, с сохранением всех16 компонентов.
+Но неизвестные amplitudes нельзя так прочитать одним fixed quantum
+instrument: actual vacuum numerator имеет ненулевой r⁴ coefficient.
+Exact physical all-input query дополнительно проверен: mod2 uniform
+augmentation исключает его в старом G/CNOT palette даже с integral
+точно возвращаемой нормированной work state. Один controlled-G species
+даёт явное sufficient слово(13dm) на всёмCAR16; его physical admission
+и полный controller source не установлены. Это слово теперь сведено
+к одному TYPE уже описанного supplied Julia query J(pC₀), с точным
+возвратом existing coefficient bit на всех32 inputs(13dm1). Доступность
+этого operand ещё нужно вывести. Supplied Julia/nonintegral resources,
+dirty work и approximation не исключаются palette no-go.
+Для меняющегося operand J(x(m)C₀) теперь доказан и настоящий family
+jet(13dm2) с ненулевым material derivative, не только value при r=1.
+Следовательно контроллер нужен вместе со своим parametric source.
+
+Маршрут поэтому изменён предметно. Нужно вывести native time/sampling
+law и управляемый обновлённый query из SAME исполнения с полной ценой,
+затем сравнить весь reduced metric/matter source и построить exact
+joint recovery. Пересчитывать прежний4×4 или назначать новую entropy,
+volume measure, controlled gate либо external stress для этого нельзя.
+Два новых узких entrypoints проверяют symbol/source и coded/runtime
+boundary. Float64 finite matrix exploration хранится отдельно от
+теоремы; старые root/heat/Lean suites не переигрываются.
+
+Параллельный `ca86e31c` [density/CAR weld](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md)
+сохранён и согласован в full-source §6.40: composite Xhat-reading
+для weighted star не отождествляется с изменением adjoint measure
+или полной raw v8 ценой. В source transfer сохранён h⁻⁴, в recovery
+relative legs — h⁻¹. Phi-radial dressing исчезает при f=0, density
+dressing при nonconstant weights остаётся. Оба результата требуют
+того же native execution law, затем полного metric/matter source.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

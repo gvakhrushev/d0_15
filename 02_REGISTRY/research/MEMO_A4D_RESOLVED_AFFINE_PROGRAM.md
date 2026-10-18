@@ -23,7 +23,46 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-Actual-root reduction, input `bf74b2b9`: [full-source §§6.34–6.35](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+Full scalar-source result, input `8b331ce8`: [strategic §7.14](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.36–6.40](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the actual-root matrix problem. Retaining the observer-relative
+coframe normal gives five complex normals; their continuum kernel and
+all mixed compatibility are exact. The full fixed-beta conditional price
+has strictly positive reduced lapse coefficient in (0.0057230,0.0057231)
+after bounded internal compensation. All CAR16/reference128 and infinite
+thermal modes remain. This is not a native finite-Schur limit or D0 no-go.
+An exact time-pullback with the genuine local measure restores this Ward
+on the same complete conditional price. Its native sampling/embedding
+law and full source are now the concrete geometric consumer; fixed
+word/PF counts do not provide the determinant jet. Ward alone does not
+select Einstein dynamics.
+
+The noncollinear two-record update is now executed on known Golden code
+without a new number field. Exact physical compilation is a different
+step: a mod2 invariant excludes the updated all-input query in the old
+G/CNOT palette with returned integral workspace. One controlled-G species
+gives an explicit sufficient full16 word; physical controller resources,
+their full price and independent matter remain to be derived. That word
+is now exact on all32 inputs from a supplied creator-Julia query, with
+the existing coefficient bit returned identically. Query generation is
+still a native execution premise. Supplied
+Julia queries/nonintegral resources and approximation are not excluded.
+The same word now transfers the material first jet for the actually
+varying creator-Julia operand; constant-query availability is insufficient.
+Next derive those two native execution laws, then compare the full
+reduced metric/matter source and construct controlled joint recovery.
+Finite matrix exploration remains exploratory; no unproved inverse,
+new action, measure law, gate or stress is installed.
+
+The parallel `ca86e31c` [density-normalized CAR/star result](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md)
+is retained and composed in full-source §6.40. Its composite principal
+metric reading is distinct from the physical adjoint measure and from
+the raw conditional v8 operator. Source h^-4 and coframe h^-1 factors
+are explicit; removing the Phi-radial dressing does not remove density
+dressing for nonconstant weights. The common next consumer is native
+sampling and variable-query execution with the whole retained price.
+
+Previous actual-root reduction, input `bf74b2b9`: [full-source §§6.34–6.35](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consume the existing full-shell gap to obtain an exact local fixed-RIGHT
 preparation section on the actual joint root. Root moments cancel the
 proper second-link jet after trace; nonzero Fourier grading removes the

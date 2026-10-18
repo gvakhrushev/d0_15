@@ -1,0 +1,539 @@
+{
+  "status": "PASS",
+  "owner_sha256": {
+    "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py": "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9",
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527"
+  },
+  "coded_runtime": {
+    "status": "PASS",
+    "checks": [
+      "stored_unnormalized_norm_four",
+      "stored_first_grade_unit",
+      "computed_noncollinear_observer",
+      "all16_norm_first_second",
+      "old_codec_roundtrip_initial",
+      "old_codec_roundtrip_first",
+      "old_codec_roundtrip_second",
+      "full16_exterior_intertwining",
+      "first_full16_literal",
+      "second_full16_literal",
+      "full16_second_gate_orthogonal",
+      "computed_metric_matches_owner",
+      "noncollinear_initial_grade2_retained"
+    ],
+    "outputs": {
+      "initial": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "first": [
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ]
+      ],
+      "second": [
+        [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -2,
+          1,
+          2
+        ],
+        [
+          -2,
+          0,
+          3,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          -3,
+          -1
+        ],
+        [
+          4,
+          2,
+          -7,
+          -2
+        ],
+        [
+          2,
+          -4,
+          -3,
+          5
+        ],
+        [
+          0,
+          2,
+          1,
+          -2
+        ]
+      ]
+    },
+    "code_lengths": {
+      "initial": 72,
+      "first": 80,
+      "second": 150
+    },
+    "observer": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "scope": "Classical known-code runtime on actual noncollinear r=1 family. All16 retained; fixed-parameter local orthogonality preserves arbitrary reference spectator. Normalized amplitudes are raw values/2, not stored in Golden. No physical gate generation, admission, peak-workspace cost or whole-price identity claimed."
+  },
+  "unknown_input_boundary": {
+    "status": "PASS",
+    "checks": [
+      "initial_full_blank",
+      "whole_input_norm",
+      "first_scalar",
+      "first_grade",
+      "updated_observer_unit",
+      "second_scalar_actual_literal_gate",
+      "full_first_gate_orthogonal",
+      "full_updated_gate_orthogonal",
+      "endpoint_metric_involution",
+      "endpoint_metric_determinant",
+      "endpoint_timelike_pairing",
+      "endpoint_Q_is_I",
+      "all16_second_norm",
+      "fixed_parameter_reference_isometry",
+      "nonquadratic_r4",
+      "fourth_derivative_at_zero",
+      "all_fixed_effects_are_quadratic"
+    ],
+    "source_definition_pins": {
+      "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": {
+        "creator": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+        "ext": "765d4a2bc391340857f93680945542e051522209e5205e4f788984b590d1ca1d",
+        "record_basis": "2b668156055dd15f9150c2fb1b60cf457497f1dbcd1f9132b1699a6f944c33dd"
+      },
+      "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": {
+        "record": "bf4d35fb9e1223a26016bda1a5d5a3d56e1567961d134460431eafb63172390b"
+      }
+    },
+    "input_norm": "2*r**2 + 2",
+    "vacuum_probability": "p^2*(a+sqrt(p+p^2*r^2))^2/(2*(1+r^2))",
+    "first_output": {
+      "0": "-p",
+      "1": "a",
+      "2": "-p*r",
+      "3": "a*r",
+      "12": "-p*r",
+      "13": "-a*r",
+      "14": "-p",
+      "15": "-a"
+    },
+    "second_output": {
+      "0": "(-a*b*p - 2*p*r**2 + p + r**2 - 1)/b",
+      "1": "(-21*a*p*r**8 + 18*a*p*r**6 + 15*a*p*r**4 - 19*a*p*r**2 + 5*a*p + 13*a*r**8 - 11*a*r**6 - 9*a*r**4 + 12*a*r**2 - 3*a - 13*b*p*r**6 + 24*b*p*r**4 - 15*b*p*r**2 + 3*b*p + 8*b*r**6 - 15*b*r**4 + 9*b*r**2 - 2*b)/(8*b*p*r**6 - 15*b*p*r**4 + 9*b*p*r**2 - 2*b*p - 5*b*r**6 + 9*b*r**4 - 6*b*r**2 + b)",
+      "2": "(13*a*b*p*r**7 - 24*a*b*p*r**5 + 15*a*b*p*r**3 - 3*a*b*p*r - 8*a*b*r**7 + 15*a*b*r**5 - 9*a*b*r**3 + 2*a*b*r - 55*p*r**7 + 102*p*r**5 - 63*p*r**3 + 13*p*r + 34*r**7 - 63*r**5 + 39*r**3 - 8*r)/(8*b*p*r**6 - 15*b*p*r**4 + 9*b*p*r**2 - 2*b*p - 5*b*r**6 + 9*b*r**4 - 6*b*r**2 + b)",
+      "3": "(-13*p*r**7 + 24*p*r**5 - 15*p*r**3 + 3*p*r + 8*r**7 - 15*r**5 + 9*r**3 - 2*r)/(8*p*r**6 - 15*p*r**4 + 9*p*r**2 - 2*p - 5*r**6 + 9*r**4 - 6*r**2 + 1)",
+      "12": "(-a*b*p*r - 3*p*r + 2*r)/b",
+      "13": "(1974*a*p*r**15 - 8540*a*p*r**13 + 15834*a*p*r**11 - 16310*a*p*r**9 + 10080*a*p*r**7 - 3738*a*p*r**5 + 770*a*p*r**3 - 68*a*p*r - 1220*a*r**15 + 5278*a*r**13 - 9786*a*r**11 + 10080*a*r**9 - 6230*a*r**7 + 2310*a*r**5 - 476*a*r**3 + 42*a*r + 610*b*p*r**15 - 665*b*p*r**13 - 2427*b*p*r**11 + 6270*b*p*r**9 - 6205*b*p*r**7 + 3165*b*p*r**5 - 830*b*p*r**3 + 89*b*p*r - 377*b*r**15 + 411*b*r**13 + 1500*b*r**11 - 3875*b*r**9 + 3835*b*r**7 - 1956*b*r**5 + 513*b*r**3 - 55*b*r)/(377*b*p*r**14 - 1631*b*p*r**12 + 3024*b*p*r**10 - 3115*b*p*r**8 + 1925*b*p*r**6 - 714*b*p*r**4 + 147*b*p*r**2 - 13*b*p - 233*b*r**14 + 1008*b*r**12 - 1869*b*r**10 + 1925*b*r**8 - 1190*b*r**6 + 441*b*r**4 - 91*b*r**2 + 8*b)",
+      "14": "(-1364*a*b*p*r**14 + 4681*a*b*p*r**12 - 6417*a*b*p*r**10 + 4280*a*b*p*r**8 - 1205*a*b*p*r**6 - 87*a*b*p*r**4 + 128*a*b*p*r**2 - 21*a*b*p + 843*a*b*r**14 - 2893*a*b*r**12 + 3966*a*b*r**10 - 2645*a*b*r**8 + 745*a*b*r**6 + 54*a*b*r**4 - 79*a*b*r**2 + 13*a*b + 1597*p*r**16 - 5922*p*r**14 + 8540*p*r**12 - 5278*p*r**10 + 2016*p*r**6 - 1246*p*r**4 + 330*p*r**2 - 34*p - 987*r**16 + 3660*r**14 - 5278*r**12 + 3262*r**10 - 1246*r**6 + 770*r**4 - 204*r**2 + 21)/(377*b*p*r**14 - 1631*b*p*r**12 + 3024*b*p*r**10 - 3115*b*p*r**8 + 1925*b*p*r**6 - 714*b*p*r**4 + 147*b*p*r**2 - 13*b*p - 233*b*r**14 + 1008*b*r**12 - 1869*b*r**10 + 1925*b*r**8 - 1190*b*r**6 + 441*b*r**4 - 91*b*r**2 + 8*b)",
+      "15": "(21*a*p*r**8 - 18*a*p*r**6 - 15*a*p*r**4 + 19*a*p*r**2 - 5*a*p - 13*a*r**8 + 11*a*r**6 + 9*a*r**4 - 12*a*r**2 + 3*a - 13*b*p*r**6 + 24*b*p*r**4 - 15*b*p*r**2 + 3*b*p + 8*b*r**6 - 15*b*r**4 + 9*b*r**2 - 2*b)/(8*b*p*r**6 - 15*b*p*r**4 + 9*b*p*r**2 - 2*b*p - 5*b*r**6 + 9*b*r**4 - 6*b*r**2 + b)"
+    },
+    "numerator_r4": "-p**5/4",
+    "scope": "fixed input-independent instrument on unknown CAR amplitudes; does not prohibit a classical coded-tuple update"
+  },
+  "physical_gate_boundary": {
+    "status": "PASS",
+    "checks": [
+      "b_square_one",
+      "target_class_distinct_even",
+      "target_class_distinct_odd",
+      "target_class_square_one",
+      "G_row_augmentation",
+      "G_col_augmentation",
+      "G_inverse_row_augmentation",
+      "G_inverse_col_augmentation",
+      "quarter_turn_row_augmentation",
+      "quarter_turn_col_augmentation",
+      "CNOT_row_augmentation",
+      "CNOT_col_augmentation",
+      "fullStep_row_augmentation",
+      "fullStep_col_augmentation",
+      "U_e0_row_augmentation",
+      "U_e0_col_augmentation",
+      "tensor_golden_even_augmentation",
+      "literal_target_all16_row_class_d",
+      "literal_target_all16_col_class_d",
+      "literal_target_orthogonal",
+      "extra_control_exact_two_mode_word",
+      "extra_control_all16_exterior_word",
+      "extra_control_target_exact",
+      "nonuniform_control_not_in_existing_palette",
+      "integral_workspace_square_identity",
+      "fair_raw_seed_has_zero_augmentation"
+    ],
+    "source_definition_pins": {
+      "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": {
+        "creator": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+        "ext": "765d4a2bc391340857f93680945542e051522209e5205e4f788984b590d1ca1d"
+      },
+      "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": {
+        "record": "bf4d35fb9e1223a26016bda1a5d5a3d56e1567961d134460431eafb63172390b"
+      }
+    },
+    "coefficient_ring": "A=Z[a]/(a^4+a^2-1), p=a^2",
+    "residue_ring": "A/2A=F2[a]/(a^4+a^2+1)",
+    "native_word_class": "b^N in {1,a+a^2}",
+    "target_class": "a**3 + a**2 + a + 1",
+    "exact_extra_control_word": "E=CX_0to1 C_1(G_0) CX_0to1 tensor I_(bits2,3); U_nplus=E U_e0 E^T",
+    "workspace": "Any normalized integral workspace returned exactly unchanged is excluded; different output workspace is excluded if both input/output are native G/CNOT-preparable from basis. Arbitrary dirty output and nonintegral supplied resources are not excluded.",
+    "excluded_from_palette": "Supplied field-dependent Julia/SELECT, arbitrary controlled rotations, nonintegral Hadamard/prepared seeds. Their existence or cost is not inferred.",
+    "price_scope": "This is an execution/type result. No controller/full Book price identity or physical admission is claimed."
+  },
+  "supplied_Julia_resource": {
+    "status": "PASS",
+    "checks": [
+      "creator_full16",
+      "actual_defect_in",
+      "actual_defect_out",
+      "full32_Julia_unitary",
+      "single_query_controlled_G",
+      "all32_logical_controlled_G_tensor_identity",
+      "all32_exterior_R_tensor_identity",
+      "chronology_all32_tensor_identity",
+      "all32_full_complement_unitarity",
+      "owned_seed_two_CNOT_fairbit_decoder"
+    ],
+    "source_definition_pins": {
+      "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": {
+        "creator": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+        "ext": "765d4a2bc391340857f93680945542e051522209e5205e4f788984b590d1ca1d"
+      },
+      "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": {
+        "record": "bf4d35fb9e1223a26016bda1a5d5a3d56e1567961d134460431eafb63172390b"
+      }
+    },
+    "exact_required_operand": "X=p*C(e0), coefficient bit4; J(X) plus adjoint for reverse word",
+    "formula": "CG=P^T X0 CX4to0 X4 J(pC0) CX4to0 X0 P; P=SWAP01 SWAP40; E=CX0to1 CG CX0to1; compiled=E (I2 tensor U_e0) E^T",
+    "syntactic_counts": {
+      "Julia": 2,
+      "CNOT": 32,
+      "X": 6,
+      "U_e0": 1
+    },
+    "counts_scope": "Unoptimized syntax: each SWAP costs3 CNOT. X gates require existing admitted flips or basis-one control, retained unchanged. These counts are NOT a Book action or full price.",
+    "workspace": "Existing coefficient bit returns identically for all states; no blank, projection, trace or reset. RIGHT/reference and all old histories are spectator identities.",
+    "resource_scope": "Specified Julia matrix is an exact sufficient resource inside the declared Julia-query class. Full-Lorentz owner explicitly leaves its native physical generation/controller price open. Original seed decoding does not supply an additional independent seed or its preparation adjoint."
+  },
+  "variable_Julia_family": {
+    "status": "PASS",
+    "checks": [
+      "generic_four_coordinate_Julia_unitarity",
+      "generic_same_query_controlled_rotation",
+      "full16_actual_positive_defect_squares",
+      "generic_all32_controlled_rotation_work_identity",
+      "generic_all32_exterior_rotation_work_identity",
+      "generic_all16_literal_record_intertwining",
+      "generic_all16_first_angle_jet",
+      "first_angle_jet_is_not_frozen",
+      "actual_family_differentiated_dx",
+      "actual_family_differentiated_dy",
+      "actual_family_angle_chain_rule",
+      "actual_r1_unit_radius",
+      "actual_r1_query_has_nonzero_derivative"
+    ],
+    "source_definition_pins": {
+      "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": {
+        "creator": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+        "ext": "765d4a2bc391340857f93680945542e051522209e5205e4f788984b590d1ca1d"
+      },
+      "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": {
+        "record": "bf4d35fb9e1223a26016bda1a5d5a3d56e1567961d134460431eafb63172390b"
+      }
+    },
+    "domain": "x,y real, x^2+y^2=1, y>0; strict |x|<1 makes defects positive and smooth",
+    "literal_query_owner": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md, section2 equation(5)",
+    "operator_identity": "E(x,y)=I_coeff tensor Lambda([[y,x],[-x,y]] directsum I2); E(I_coeff tensor U_e0)E^T=I_coeff tensor U_(y,-x)",
+    "angle_derivative": "T=y*d/dx-x*d/dy; identity holds exactly also for T",
+    "nonzero_angle_jet_entry": [
+      0,
+      1,
+      "1 - p"
+    ],
+    "original_matter_family": {
+      "b": "sqrt(p+p^2*r^2)",
+      "x": "p*r/b",
+      "y": "a/b",
+      "dx_dr": "p^2/b^3",
+      "dy_dr": "-a*p^2*r/b^3",
+      "d_dr": "(a*p/b^2)*T",
+      "at_r1": "x=p,y=a,dx=p^2,dy=-a*p^2"
+    },
+    "source_scope": "Actual full-feedback first jets transfer by the chain rule only if the varying Julia operand x(m)*C0 is really supplied, including its derivative. A fixed J(pC0) proves only the r=1 operator value. No physical parameter-update or controller-price law is asserted."
+  }
+}

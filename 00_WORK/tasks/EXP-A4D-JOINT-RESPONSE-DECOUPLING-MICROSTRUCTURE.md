@@ -12,6 +12,50 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: evaluate the actual scalar normal matrix and its metric source
+
+Input `8b331ce8`; the preceding goal turn made progress by publishing the
+exact finite-B Hessian, the actual-root Riesz preparation section and the
+S3 scalar reduction. This turn computes that matrix, not another abstract
+rank or heat truncation. Use the accepted L8 root box, all4096 momenta,
+CAR16/reference128, fixed v8 clock and feedback, and the true cluster
+weights from (13db). Retain both real Fourier phases. The first consumer
+is the mixed metric/current source after normal elimination. A full scalar
+test also retains the S3 observer direction: in observer gauge n=e0 this
+is the one Lorentz-boost coframe direction at fixed operational metric,
+in addition to the four scalar link normals. Root owns shared files and
+one new bounded calculation in the existing full-lattice packet; read-only
+assistants check exact source conventions, nonlinear symmetry/gauge and
+the original updated-tuple runtime. Numerical exploration is labelled as
+such until error bounds or exact identities justify stronger statements.
+No measure, price, gate, source or preparation rank is changed. Preserve
+the original raw terminal and physical/native admission requirements.
+
+Consumed in full-source §§6.36–6.40 / strategic §7.14: the full scalar
+problem has five complex normals including the observer-relative coframe
+boost. Its continuum kernel/mixed compatibility are exact; the full
+fixed-beta infinite-spectrum reduced lapse coefficient is strictly positive
+in (0.0057230,0.0057231). Bounded internal compensation is insufficient
+for Einstein vacuum in this conditional price. Finite native Schur rates
+remain separate. The actual local measure row restores the precise
+time-pullback Ward, with an exact all16/fullRIGHT128 family. Its native
+sampling/embedding law and full resource/source ownership are the next
+geometric premise, not a newly assigned determinant measure.
+
+The noncollinear r=1 chronology now executes on known Golden code using
+the original codec. An exact all-input palette invariant excludes its
+updated query in G/CNOT with returned integral workspace; one additional
+controlled-G species supplies an explicit sufficient word. Native query
+control is reduced to one specified creator-Julia query with exact all32
+coefficient return. Its generation, complete price and independent matter remain the next
+execution consumer. Preserve the quantum-unknown versus classical-known
+code distinction. The same variable-query word transfers the actual
+nonzero material jet; its parameter update must be executed and priced.
+Two bounded exact/interval entrypoints and separate
+EXPLORATORY finite matrices consume these results; no old suite replay.
+Continue the same PR through the two native laws and their full reduced
+metric/matter source, rather than redoing the already tested scalar block.
+
 ### 18 October: solve the actual connection/normal source, not just the measure operator
 
 Input `af0a6d07`; the preceding goal turn made progress by publishing

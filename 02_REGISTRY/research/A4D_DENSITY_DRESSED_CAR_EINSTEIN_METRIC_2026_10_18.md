@@ -250,8 +250,8 @@ D_\sigma\mathcal A_{\mu,t}
 \[
 \boxed{
 D\mathcal A_{\mu,t}\big|_{f=0}
-=c_t D\mathcal P_\mu
-=c_t\bar\mu D\mathcal P_\star(\widehat v,U).
+=c_t h^{-4} D\mathcal P_\mu
+=c_t h^{-4}\bar\mu D\mathcal P_\star(\widehat v,U).
 }
 \tag{14}
 \]
@@ -291,7 +291,7 @@ v_{n,x}^{(\chi)}=\chi_x^{-1/2}v_{n,x},
 \boxed{
 \widehat g_n^{(\chi)}
  =\frac{\mu_{n,x}^{(\chi)}}{\bar\mu}
-     g(v_{n,x}^{(\chi)})
+     g(h_n^{-1}v_{n,x}^{(\chi)})
  =\widehat g_n
  \xrightarrow[C^2]{}g_{\rm pp}.
 }\tag{17}

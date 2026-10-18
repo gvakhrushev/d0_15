@@ -11,7 +11,7 @@ with the FULL 16 tetrad/24 link/independent weight first jets. From the **actual
 
 On the actual free-preparation stationary orbit \((\mu,e)\mapsto(\chi\mu,\chi^{-1/2}e)\), the **gravitational** \(\widehat g\), \(\widehat X\), full10 metric readout and Clifford principal symbol are ALL invariant on the native mathematical carrier. The full nonlinear AF entropy's Weyl defect is \(2\sum_x\sigma_x\mu_x[\Phi(f_x)-f_x\Phi'(f_x)]=O(\sum\mu_x f_x^2)\); therefore on the exact \(f=0\) 40-row roots its first source is precisely proportional to \(D{\cal P}_\star(\widehat e,U)\) at any fixed valid probe t. The already-owned true-golden full-lattice pp-wave family has \(\widehat e_n=\bar e_n\) exactly at each finite level, and its **whole \(\chi\)-family** converges to ONE Ricci-flat nonflat \(\widehat g_{\rm pp}\) in C². This resolves the apparent conformal preparation scalar **inside the gravitational source-defined metric**, without pretending it is gauge of every retained AF/history/matter test.
 
-The mathematical compatibility checker [full16 Fraction test](sources/d0_density_dressed_car_metric_2026-10-18/check_dressed_car_metric.py) exercises a nontrivial proper Lorentz exterior lift, CAR anticommutators, the native vacuum-to-grade1 \(u\) readout, field/weight first jets, two independent weighted \(\star\) sites, finite radial Ward, and quadratic nonlinear AF Weyl defect. Its file is published; current session's independent JS sanity control of CAR16 and weight compensation passes. A fresh Python/Lean/CI run is not claimed.
+The mathematical compatibility checker [full16 Fraction test](sources/d0_density_dressed_car_metric_2026-10-18/check_dressed_car_metric.py) exercises a nontrivial proper Lorentz exterior lift, CAR anticommutators, the native vacuum-to-grade1 \(u\) readout, field/weight first jets, two independent weighted \(\star\) sites, finite radial Ward, and quadratic nonlinear AF Weyl defect. Its exact Fraction entrypoint now passes on the integrated tree; the independent JS sanity control also passes. This small source/readout check does not establish physical admission; no Lean or old mathematical suite was replayed.
 
 **Next same-owner physical consumer:** take the declared common retained AF leaf \(\mu_x\) and the original full-Lorentz Julia raising \(X_{x,r}\) in ONE physically admitted stored experiment; show that its physically chosen clock/metric reading is the source-compatible conditional normalization \(\widehat X\) (including the real moving endpoint half-density/observer jets), and transport the true CAR/matter equations through that SAME metric. The parent original fixed-g, independent tau, ten raw rows and unweighted \(h^{-2}\) #216 refinement are preserved. No separate coframe action, Euclidean observer counterterm or freely chosen \(\chi\) potential is installed.
 
@@ -35,7 +35,42 @@ On the already-owned exactly curved full-interior lattice roots, both wave polar
 
 
 
-**Actual-root reduction, input `bf74b2b9`:**
+The parallel `ca86e31c` density/CAR and radial-equivalence results above
+are preserved. Their integration in full-source §6.40 retains the h^-4
+source and h^-1 coframe normalizations and separates the composite
+principal metric from physical operator-measure and full-price dynamics.
+
+**Consumed full scalar-source test, input `8b331ce8`:**
+[Strategic §7.14](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.36–6.40](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+evaluate the actual full-price consumer. The scalar normal space must
+retain the observer-relative boost coframe direction in addition to four
+links and both Fourier phases. Its continuum kernel/mixed compatibility
+are exact. The fixed-beta infinite-spectrum reduced lapse coefficient is
+strictly positive in (0.0057230,0.0057231); bounded internal compensation
+does not produce the Einstein vacuum gauge source. This is a continuum
+conditional-price result, not a finite native Schur limit or D0 no-go.
+The exact time-pullback plus genuine operator measure restores the whole
+conditional Ward. Its native sampling/embedding law, determinant jet and
+own complete source are the remaining geometric execution consumer.
+
+The original noncollinear chronology now executes on known Golden code
+with all16 coefficients and the existing codec. A separate exact all-input
+compilation test excludes its updated query in the G/CNOT palette with
+returned integral workspace; an explicit controlled-G word is sufficient.
+A supplied creator-Julia query realizes that word on all32 inputs and
+returns the existing coefficient bit exactly; its native generation and
+controller price remain unproved. Classical computation on known code
+is distinct from an unknown-input quantum update. The same word transfers a nonzero
+material first jet if its Julia operand actually varies with retained code.
+This supplied family is not an autonomous unknown-amplitude update.
+The parent route now continues through the two native execution laws, followed
+by the same full reduced source and joint recovery. The finite float64
+explorations are explicitly separate; no new price/measure/stress or GR
+closure is asserted. Two bounded entrypoints check the new exact/interval
+consumers without old root/heat/Lean replay.
+
+**Previous actual-root reduction, input `bf74b2b9`:**
 [Full-source §§6.34–6.35](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consume the already proved full rank128 shell gap. The exact fixed-RIGHT
 Riesz preparation section exists on the actual faithful joint root;
