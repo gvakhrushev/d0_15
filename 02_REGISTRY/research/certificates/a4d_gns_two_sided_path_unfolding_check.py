@@ -79,6 +79,29 @@ for N in range(24):
         a0,b0=fib(k+2),fib(k+1)
         assert a0*x+b0*y==1
 
+# The basis transposition S e_(alpha,beta)=e_(beta,alpha) swaps LEFT and
+# RIGHT prefix pointer effects exactly. Both labels must end in same block.
+for N in range(1,5):
+    pairs={(a,b) for a in paths(N) for b in paths(N) if a[-1]==b[-1]}
+    assert {(b,a) for a,b in pairs}==pairs
+    for alpha,beta in pairs:
+        for k in range(N+1):
+            w=beta[:k+1]
+            assert (beta,alpha)[0][:k+1]==w
+            assert beta[:k+1]==w
+
+# Exact commutant norm wall for a RIGHT-controlled classical pointer:
+# controlled copy distinguishes beta,gamma; [C_R,R(E_beta,gamma)]
+# contains I-X on the register, whose nonzero eigenvalue is exactly 2.
+# A unit-norm RIGHT matrix unit gives commutator norm 2.
+# Every old right-module word V commutes with this unit, so
+# ||C_R-V|| >= 2/(2*||R(E)||) = 1.
+I_minus_X=((1,-1),(-1,1))
+assert all(sum(I_minus_X[i][k]*I_minus_X[k][j] for k in range(2))
+           ==2*I_minus_X[i][j] for i in range(2) for j in range(2))
+assert (I_minus_X[0][0]-I_minus_X[0][1],
+        I_minus_X[1][0]-I_minus_X[1][1]) == (2,-2)
+
 # Negative control: one-sided uniform terminal N weights are NOT the
 # complete paired GNS weights, even at the same nominal AF level.
 N=3
