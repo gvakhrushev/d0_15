@@ -213,6 +213,32 @@ j_{h}^{v}
 \]
 with O(h²) convergence. Equation \(D_v^-j_h^v=0\) follows EXACTLY from the same locally encoded Book-feedback scalar equations (11), not from a second hand-inserted charge-conservation law. The worldline/loop winding m is the INTEGER phase index of the original finite periodic Hodge plane, not a new dimension or a fitted energy scale. Mathematically periodic u does not assert that physical D0 time is compact/null.
 
+### 4.1. The SAME Book-feedback source supplies a conserved Lorentz stress
+
+The smooth-limit metric variation of the true CAR16 kinetic input (3) produces, BEFORE using Einstein's equation, the directly sourced matter tensor
+\[
+\mathcal T_{\mu\nu}
+=2\partial_\mu\Psi\cdot\partial_\nu\Psi
+-\widehat g_{\mu\nu}\widehat g^{\alpha\beta}
+ \partial_\alpha\Psi\cdot\partial_\beta\Psi.
+\tag{16}
+\]
+Its overall coefficient is the already computed full-feedback source ratio, NOT chosen from the desired geometry. Ordinary scalar covariant differentiation yields the exact Ward identity
+\[
+\boxed{\nabla^\mu\mathcal T_{\mu\nu}
+=2(\square_{\widehat g}\Psi)\cdot\partial_\nu\Psi.}
+\tag{17}
+\]
+The independently varied two material Euler rows (11) therefore imply stress conservation without an external conservation axiom. On the exact Hodge rotating null wave,
+\[
+q=0,\qquad
+\mathcal T_{uu}=2a^2\kappa^2>0,\quad
+\mathcal T_{\mu\nu}=0\ \text{for all other pairs},\quad
+\nabla^\mu\mathcal T_{\mu\nu}=0.
+\tag{18}
+\]
+This is the SAME matter source that balances the 16 coframe Euler rows in (12), with the original Lorentz-star orientation. Both the Hodge U(1) charge Ward and the Lorentz stress Ward are sourced by the ONE Book-feedback, not postulated as separate matter equations.
+
 ## 5. Verification, reproduction and precise scientific status
 
 **Direct bounded validation (not main CI):** on the original exact-cost native golden word families \(n=16,L=3\) and \(n=20,L=4\), the integer descendant algorithm gives F17=1597 / F21=10946 true positive READY addresses, ALL 81 / 256 Role cells covered, genuinely unequal regular LEFT masses. Using \(a=0.008,\ m=1,\kappa=2\pi\), both levels yield EXACT analytic
