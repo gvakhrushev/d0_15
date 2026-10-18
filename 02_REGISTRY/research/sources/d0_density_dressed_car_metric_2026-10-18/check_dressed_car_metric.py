@@ -196,8 +196,19 @@ def test():
             u = F[r]
             X = raising(u, M)
             X2 = raising([sf * t for t in u], M)
+            # The operational vacuum-to-grade1 column extracts u directly.
+            for i in range(4):
+                assert X[1 << i][0] == u[i]
             # sqrt(mu_bar/mu_after)*sqrt(chi)=sqrt(mu_bar/mu)
             assert mscale(a, X) == mscale(a / sf, X2)
+            # Genuine moving-weight plus moving-CAR source (no frozen mu).
+            dmu_over_mu = Q(2, 7)
+            du = [Q(1, 13), Q(-2, 17), Q(3, 19), ZERO]
+            dX = raising(du, M)
+            left_jet = madd(mscale(a, dX), mscale(-a * dmu_over_mu / 2, X))
+            right_jet = raising([a * (du[i] - u[i] * dmu_over_mu / 2)
+                                  for i in range(4)], M)
+            assert left_jet == right_jet
             Gu = gamma([a * x for x in u])
             for s in range(4):
                 Gv = gamma([a * x for x in F[s]])
@@ -235,9 +246,17 @@ def test():
         star_density([[invsqrtchi[1] * v for v in x] for x in legs2], curvature)
     )
     assert transformed == weighted
-    for mu, f in zip(mus, (f1, f2)):
-        # Exact finite Euler/Ward from local quadratic homogeneity:
-        assert 2 * mu * f - 2 * mu * f == 0
+    for mu, legs, f in zip(mus, (legs1, legs2), (f1, f2)):
+        # Non-tautological centred EXACT radial derivative of quadratic
+        # star density: v(lambda)=(1+lambda)v, lambda=+/-1/2.
+        plus = [[Q(3, 2) * v for v in row] for row in legs]
+        minus = [[Q(1, 2) * v for v in row] for row in legs]
+        radial_derivative = mu * (star_density(plus, curvature)
+                                  - star_density(minus, curvature))
+        assert radial_derivative == 2 * mu * f
+        # Independent density source is f; local compensator Ward.
+        density_derivative = f
+        assert 2 * mu * density_derivative - radial_derivative == ZERO
 
     # Real finite Book entropy has a nonlinear analytic Phi. Demonstrate
     # its exact Weyl defect for a quadratic jet and O(f²) vanishing.
