@@ -332,3 +332,13 @@ A source-regular compilation with sup_i |D_V epsilon_i|<=C c delta therefore giv
 This is a real *approximate-preparation/source* consumer for the owned native compiler bounds, **not a claim that the existing golden words achieve these pointwise relative probabilities and C1 derivatives**, which may be difficult when N grows. It also does not give C2 metric regularity, control rank births of coherent quantum entropy, fix source coefficients for independent matter, or prove the physical work/history admission. The distinction between source regularity and value closeness is mathematically decisive: an L1-close prepared distribution alone does not imply (28)'s small derivative term.
 
 An independent four-leaf controlled check, with epsilon_i=delta(u_i-sum_j r_j*u_j) for fixed u, f and lambda-dependent r*(lambda), gives D KL/dlambda = Theta(c delta²), uniformly after halving delta. Both nonzero and source-small outcomes are tested. This demonstrates that exact equality at finite N is unnecessary for the conditional GR-source limit, without erasing the genuine compiler price.
+
+
+**Pointwise conformal selection, if the stronger relative hypothesis is owned.** Suppose the geometric address x contains n_x measured leaves with the same f_x, and define mu_x=n_x/N and chi_x=w_x/mu_x. At the optimum chi_x*=Z_x/(D/N). Summing (25) over the leaves of x, with every r_i*>0, immediately gives
+
+    (1-delta)chi_x* <= chi_x <= (1+delta)chi_x*,
+    ||chi-1||_infty <= delta||chi*||_infty
+                         +||chi*-1||_infty
+                      <= C(delta+c),                 (29)
+
+uniformly in leaf count and numbers of descendants. This is stronger than the mere L1 Pinsker estimate (24) and explicitly suppresses the **amplitude** of the original conformal escape under a relative source approximation. However, (29) alone does not bound spatial first/second derivatives of chi, so Einstein curvature can still be large under rapidly oscillating chi. Such regularity and the actual metric-clock field transport must be proved separately.
