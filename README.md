@@ -8,7 +8,7 @@ refinement limit**. This target remains open.
 
 | Current result | What it establishes; what the derivation still needs |
 |---|---|
-| [Current priority: nonlinear spin-2 bootstrap, §§7.1–7.3](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) | Verifies the full10-slot Lorentz Schur seed of the selected star action and derives the cubic Ward test for the same native price. The uncomputed mixed detector/embedding jet, smooth reduced germ and nonlinear gauge closure are the next forcing step. A linear match does not choose the physical action or its stationary background. |
+| [Current priority: complete price and vacuum preparation, §§7.23–7.24](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) | The specified full-prefix polynomial instrument forces an upper clock bound on its declared curved chart. The whole-polynomial vacuum preparation source is controlled on the original coherent input, with physical tangent and signal budgets explicit. Native execution/full history price, upstream H/J/R and joint recovery remain the next transition. |
 | [Complete labelled golden-record source — 18 October](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Derives the five-outcome same-history Cost−Info, solves the free preparation and full reference128 scene equations, and transfers the curved interior lattice family to this complete configured price. The operational metric is unchanged. Native selection/execution of the geometry-controlled programme, earlier-history sources, physical matter and global recovery remain open. |
 | [Operational CAR/clock metric](02_REGISTRY/research/sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md) and [regular natural source → Cartan](02_REGISTRY/research/A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md) | The retained CAR coefficients and clock recover all ten entries of the original Lorentz metric. The Cartan classifier finishes a nonzero regular, purely natural variational source once its hypotheses are established for the actual full price; it does not establish those hypotheses. |
 | [Foundations-to-GR synthesis — updated 18 October](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) | Connects Books 00–03/06/07 to the geometric and complete-price results. Separates operational necessity, conditional GR derivation and the remaining native physical premises. |
@@ -26,7 +26,8 @@ refinement limit**. This target remains open.
 | [Minimal-code history and full aggregation, §8.26](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | The tagged programme's most probable outcome is a constant bypass. The original native long-history MAP has a finite survival-log source; its unique largest word does not concentrate total probability. Mean, MAP and scalar partition give different sources on the same full law. |
 | [Coherent source and a full conditional stationary solution, §§8.27–8.28](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Proves C¹ coherent-source convergence through rank births. For a supplied positive additive-code coefficient, a balanced native preparation solves every operator, preparation and clock first equation of the limiting code−coherent price. All reference128 and transverse variations remain. Physical price binding remains open; the finite continuation is developed in the following rows. |
 | [Finite geometric existence and remaining link source, §§8.29–8.33](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Proves exact finite preparation/coframe/observer solutions for a supplied complete code. Actual entropy birth excludes singular geometry; phase-only symmetry solves every coframe row without choosing isotropic prices. All nonzero-Fourier sources and reference128 variations remain solved. The Lorentz-aligned fixed family retains six link equations; an exact kernel rejects a uniform saddle shortcut. Uniform shape nondegeneracy is proved, while the actual metric scale shrinks in the history limit. |
-| Next consuming proof | Compute the quadratic/cubic jet of the same native source and its mixed embedding Ward term; establish actual nonlinear spin-2 consistency. Retain the full code/Info, matter and clock equations and a controlled regular spatial limit. |
+| Next consuming proof | Bind the actual preparation, queries, supplied copies and retained records to the same complete price and source; solve its joint equations with controlled refinement. Keep the original raw response and positive native GR obligations separate. |
+| Historical research [#310](https://github.com/gvakhrushev/d0_15/pull/310) and intake [#322](https://github.com/gvakhrushev/d0_15/pull/322) | Native record/action work and finite connection sheets are pinned research with different scopes. #310 closed without merge; resolve the registered task through the live dispatcher. The frozen intake does not close the parent scientific obligations. |
 
 The latest composition recovers the full metric and Lorentz transport from
 the actual raising operators, including the null directions of the curved
@@ -78,6 +79,12 @@ before launching another execution. Iterate with the smallest relevant check;
 run the affected integration checks at Ready. See the
 [validation matrix](00_WORK/README.md#validation-budget).
 
+The [D0 to GR assembly overview](02_REGISTRY/gr_assembly/VIEW.md) connects
+obligations, exact interfaces and accepted applications. Run
+`python tools/gr_assembly.py next` for live owners and the next consuming steps,
+or `why` / `search` / `attempts` for a bounded lookup. Historical research stays
+searchable with its original scope; it does not automatically close a premise.
+
 ---
 
 > **How can a closed finite system produce reproducible facts without an external classical observer?**
@@ -94,6 +101,7 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
 
 - [Current objective and scientific route](#current-objective-derive-general-relativity-ото)
 - [Parallel execution and validation](00_WORK/README.md)
+- [Gravity assembly and result intake](02_REGISTRY/gr_assembly/README.md)
 - [1. The Core Inversion (Read This First)](#1-the-core-inversion-read-this-first)
   - [The Foundational Premise](#the-foundational-premise)
 - [2. Architecture & Flow of Forcing](#2-architecture--flow-of-forcing)

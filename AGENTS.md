@@ -51,12 +51,35 @@ main remain PLANNED. A free slot alone does not establish mathematical inputs.
 Each new or revised scientific brief records, in its existing text: exact
 statement and remaining assumptions; input refs; carrier/norm/source convention;
 write paths; the consuming parent step; the smallest decisive check. No new
-status registry is needed. A certificate is useful when it resolves that step;
+task-status registry is needed. The [gravity assembly](02_REGISTRY/gr_assembly/README.md)
+records the missing composition information: exact obligations, interface
+versions, applications and scoped prior attempts. For a named task, the normal
+dispatch command prints its interface and consumer; for route selection use
+`python tools/gr_assembly.py next`. Read only that result's relevant owners.
+A certificate is useful when it resolves that step;
 do not produce rank catalogues, audit memos or formalizations without a consumer.
 
 When an interface does not type-check, the integrator resolves that mismatch
 before dispatching dependent work. A scoped no-go must change the parent route,
 not trigger an unbounded new census. Keep independent work moving.
+
+Every queued gravity execution has one `Assembly: TASK-ID` line and a semantic
+binding in `02_REGISTRY/gr_assembly/contract.json`. CONTROL records the exact
+statement, interface, work key, start prerequisites, retained assumptions,
+consumer and completion premises. Different task names do not authorize the
+same scientific work. Independent verification is an explicit mode. Logical
+dependencies constrain acceptance; only `start_requires` constrain an otherwise
+independent conditional lemma's start. Live WIP and existing executions still
+apply. Lifecycle start and Ready checks enforce these boundaries.
+
+At a result checkpoint, use `python tools/gr_assembly.py template TASK-ID` and
+record the precise parent substitution. An independent pinned acceptance binds
+the result, target, all hypotheses, interface maps and proof method. A PASS,
+historical graph status, scoped no-go or copied pointer cannot close a positive
+existence premise. A scoped negative changes only its declared route; retained
+physical assumptions remain open. Check `search`, `attempts` and `why` before
+repeating a construction; use `impact --base REF` for changed inputs. Claims,
+scientific evidence and the original raw terminal retain their existing scope.
 
 ## Validation budget
 

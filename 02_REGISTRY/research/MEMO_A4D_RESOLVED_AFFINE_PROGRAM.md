@@ -2,7 +2,7 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Snapshot:** 2026-10-18; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `77d3ab60` integrated
+**Snapshot:** 2026-10-18; launch baseline `main` `add17919b344f0e46115619aa53d2173ecdcf219`; current native/response continuation [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334), with main `79c7d906` integrated
 
 ## Current route to general relativity
 
@@ -773,9 +773,13 @@ execution uses the existing `00_WORK` manifest, briefs and dispatch flow.
 
 These are pinned input snapshots, not live runtime status or a claim that all
 research is independently reproduced. Use live PR dispatch for current heads.
-The [research dependency graph](https://github.com/gvakhrushev/d0_15/blob/f0a6a85111c28f21a18ebf6ad9276eaa713abbd8/02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json)
+The [historical research dependency graph](https://github.com/gvakhrushev/d0_15/blob/f0a6a85111c28f21a18ebf6ad9276eaa713abbd8/02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json)
 retains scientific history; its root source pin and older next-step prose lag
-later packets. It is not copied into main as a competing current task registry.
+later packets. The [composition layer](../gr_assembly/README.md) preserves all
+44 historical IDs in a frozen source catalogue, separately from the current
+obligations and reviewed applications. It does not import historical statuses
+as accepted premises or task authorization. This page remains the scientific
+route; `00_WORK` and live PRs remain the execution authorities.
 
 ### Consumed native/source synthesis — 2026-10-16
 
@@ -1306,11 +1310,24 @@ not supply an independently fixed-source joint metric/matter solution.
    independent mathematical work on declared inputs.
 3. Executors work in isolated branches/worktrees; the integrator substitutes
    each usable result immediately and records the remaining premise in the
-   existing parent memo/PR. No parallel progress registry or new census is needed.
+   existing parent memo/PR. Its assembly application names the exact substitution,
+   carries every remaining hypothesis and pins independent acceptance. The
+   generated overview derives composition state from those applications; it
+   does not create another task queue or demand a new census.
 
-Continue the registered native/response obligation in [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334).
-Historical #310 is closed without merge; its later source `4d19564d` is
-preserved in the continuation. Do not reopen #310 or launch a duplicate. #202 keeps its full-affine
+Use `python tools/gr_assembly.py next` for live owners and pending scoped intake,
+`why positive_gr` for the missing composition premises, and `search QUERY` or
+`attempts QUERY` for existing scoped work. An input mismatch is resolved before
+dependent execution; it does not stop an independent conditional lemma on the
+declared interface. The original raw contract has its own goal and completion
+premise. Neither its classification nor a bridge/passport is positive native GR.
+
+Resolve `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE` with the live dispatcher
+and continue its existing [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334). Historical #310 closed without merge;
+its published input snapshots, including `4d19564d`, remain evidence preserved
+in this continuation, not a runtime to reopen. The
+composition binding preserves the original raw terminal alongside the positive
+native route. Do not open a competing execution under a new label. #202 keeps its full-affine
 stationarity scope; #317 keeps its full complex stratification scope. Use their
 proved inputs, and request only the additional lemma consumed by the current
 argument. Do not falsely retire them or require an exhaustive classification

@@ -62,3 +62,12 @@ Previously proved theorems must be imported through stable interface modules whe
 Closure is monotonic only at the interface boundary: once a theorem is frozen, downstream active modules depend on its statement, not on rewriting its proof body.
 
 CP1 does not yet provide a machine-enforced claim impact graph; downstream invalidation requires explicit CONTROL review. Machine impact propagation belongs to future CP3.
+
+The [gravity assembly](gr_assembly/README.md) now checks the declared composition
+contracts for the current GR route, with a generated overview, exact evidence
+pins and scoped independent result applications. It keeps global classification,
+positive native GR and the original raw terminal separate. It is not the global
+claim impact graph: claims and their release vocabulary remain authoritative
+here. Its `impact` query reuses the research-certificate dependency selector and
+identifies applications for compatibility review; it never rewrites scientific
+evidence or turns a selected check into an executed replay.
