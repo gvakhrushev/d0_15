@@ -81,17 +81,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
     },
     {
-      "id": "WRK-A4D-LEFT-RESIDUAL-EXECUTED-SOURCE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The owned LEFT recording word is compared with the owned address marginal. The record states an exact identity in which the residual golden or pi0 defect equals an executed stress on the identified dressed metric, or a scoped no-go naming the missing owned primitive. No new functional is introduced.",
-      "brief": "00_WORK/tasks/WRK-A4D-LEFT-RESIDUAL-EXECUTED-SOURCE.md"
-    },
-    {
       "id": "WRK-A4D-MATTER-ON-DRESSED-METRIC",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
