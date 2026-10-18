@@ -142,3 +142,26 @@ assert incidence_weighted(inside_edges).rank()==dN-2
 assert incidence_weighted(inside_edges+[bridge_edge]).rank()==dN-1
 print("AF_ONE_CROSS_BLOCK_MIXER: EXACT PASS, probability tangent ranks",
       dN-2, dN-1)
+
+# Positive two-sided GNS history consumer with fixed RIGHT X/Y center:
+# this does not reassign KL as the Book action. KL is the exact
+# difference between constrained and free optimizations of SAME entropy.
+Dx,Dy,u0,dDx,dDy = sp.symbols("Dx Dy u0 dDx dDy",positive=True)
+qX=Dx/(Dx+Dy)
+src_f=(dDx+dDy)/(Dx+Dy)
+src_c=u0*dDx/Dx+(1-u0)*dDy/Dy
+assert sp.simplify(src_c-src_f-(u0-qX)*(dDx/Dx-dDy/Dy))==0
+hh = -u0*sp.log(u0)-(1-u0)*sp.log(1-u0)
+gamma_f = sp.log(Dx+Dy)
+gamma_c = hh+u0*sp.log(Dx)+(1-u0)*sp.log(Dy)
+KL = u0*sp.log(u0/qX)+(1-u0)*sp.log((1-u0)/(1-qX))
+assert sp.simplify(sp.expand_log(gamma_f-gamma_c-KL,force=True))==0
+for n in range(12):
+    aN,bN=sp.fibonacci(n+2),sp.fibonacci(n+1)
+    uc=sp.simplify(aN*p**(n+1))
+    ufree=sp.Rational(aN*aN,aN*aN+bN*bN)
+    q=-p*p
+    ratio=(1-q**(n+2))/(1-q**(2*n+3))
+    assert sp.simplify(ufree/uc-ratio)==0
+print("GNS_PAIRED_CENTER_CONSTRAINED_SOURCE: EXACT PASS; "+
+      "KL and first source identities, Fibonacci N=0..11")
