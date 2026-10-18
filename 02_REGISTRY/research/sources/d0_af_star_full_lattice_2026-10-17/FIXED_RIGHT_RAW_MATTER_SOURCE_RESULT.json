@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "multiplicity_reference": {
+    "success": [
+      [
+        "13",
+        "8"
+      ],
+      [
+        "8",
+        "5"
+      ]
+    ],
+    "failure": [
+      [
+        "220",
+        "136"
+      ],
+      [
+        "136",
+        "84"
+      ]
+    ],
+    "minimum_success_scene_capacity": 165,
+    "reference_rank": 128,
+    "noncommutative_old_block": 2,
+    "joint_marginal": "rho_RIGHT tensor I128/128",
+    "ideal_commutant_lift": "real frame extension; no finite-word admission"
+  },
+  "complete_source": {
+    "complete_gradient": "sum_i lambda_i L(P_i)",
+    "constrained_source": "zero for all fixed-RIGHT pure tangents",
+    "geometric_prefactor": "s_star p^2 t^2",
+    "not_inferred": "unconstrained stationary root, capacity selection or C2 entropy"
+  },
+  "raw_matter": {
+    "raw_CAR_components": 16,
+    "pure_factor": true,
+    "first_grade_timelike": true,
+    "top_nonzero": true,
+    "balance": "1/2",
+    "variance": "(2L-1)/4 > 0",
+    "matter_source": "zero on this vacuum profile; no independent stress",
+    "chronology": "full coherent B effect; branchwise observer update not inferred"
+  },
+  "book_binding_test": {
+    "shape_test": "sum_alpha w_i_alpha = <P_i>",
+    "sufficiency": "native expected-gain saturation AND raw N<=1 imply w=q",
+    "native_saturation_or_mean_selection_proved": false,
+    "supplied_input_sha256": "d5706efac0dc8791f010557810a1e1ad835b3fdc2f8578432e5f13f883bd2570"
+  },
+  "physical_D0_GR_proved": false
+}

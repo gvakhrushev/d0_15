@@ -23,7 +23,23 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-Latest consumer, input `919a7d11`: [strategic §§7.5–7.7](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+Latest consumer, input `ce063b4d`: [strategic §7.8](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+constructs a fixed-past preparation branch with the actual PF weights,
+without free variations of immutable RIGHT probabilities. Its complete
+gradient is right-conormal; all admitted preparation first equations
+vanish and the exact finite-t geometric source is radially equivalent
+to the PF-weighted star. Actual six-step AF multiplicities accommodate
+reference128 and a pure raw16 timelike-observer factor simultaneously,
+with an ideal real RIGHT-commutant preparation lift. All coupled matter
+rows vanish on this vacuum branch; a capacity defect is not an independent
+stress. The physical Book binding is now an explicit leaf-response/gain
+test, not a consequence of copying or maximizing entropy. Prove that
+binding and the native VARIED full price, including its upstream retained
+history and operation/resource admission. The same-branch construction
+removes a preparation/observer mismatch; it does not prove physical GR,
+independent matter or raw/#216/global closure.
+
+Earlier instrument consumer, input `919a7d11`: [strategic §§7.5–7.7](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 now composes the complete-price profile, nonlinear star source equivalence
 and an exact fixed-level LEFT recording word. Copying n active path bits
 through n CNOTs realizes the PVM on full GNS, preserves RIGHT/reference128

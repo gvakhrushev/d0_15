@@ -2,6 +2,27 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
+**Fixed-past/raw-matter bridge, input `ce063b4d`:**
+[full-source §§6.15–6.17](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now gives a different exact stationary preparation section which preserves
+the genuine old RIGHT⊗reference state. Its r_i are the actual fixed PF
+weights; no free leaf simplex or entropy-maximum selection is assumed.
+The full POVM gradient is right-conormal at the matched section, so ALL
+allowed preparation first equations vanish, including entangling directions.
+Γ_PF=[H(μ)+Σμ_i logZ_i]/logφ has an invertible radial source map to the
+PF-weighted star at finite t. Actual six-step AF multiplicities provide
+enough room for reference128 together with a PURE raw-CAR16 factor with
+timelike P1, nonzero top and balance b=1/2; the old imΠ_s seed did not.
+A real RIGHT-commutant frame extension realizes the ideal preparation
+without altering the joint archive/reference. Coupled moving-observer and
+all16 matter sources vanish on this vacuum branch; independent stress
+is not obtained by naming a capacity defect. The true native Book binding
+now has an explicit leaf-response shape test and a sharp gain/Kraft
+sufficiency criterion, neither asserted as proved by the copy. Physical
+valuation/mean selection, operation/resource admission, retained upstream
+price, chronological branch updates and independent matter remain open.
+See strategic §7.8; the new supplied synthesis is preserved byte-for-byte.
+
 **Constructed LEFT instrument, input `919a7d11`:**
 [full-source §§6.13–6.14](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 now gives an exact n-CNOT recording word for the fixed-level active LEFT

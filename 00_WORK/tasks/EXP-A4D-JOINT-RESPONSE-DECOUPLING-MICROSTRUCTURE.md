@@ -12,6 +12,37 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: bind the preparation, raw matter and physical Book source
+
+Input `ce063b4d`; root continues the same full-source argument rather
+than rebuilding the LEFT word. Read-only assistants check (i) the actual
+Cost/gain-to-Born response morphism, (ii) preparations compatible with an
+unchanged RIGHT archive, and (iii) the literal raw16 observer/scene balance
+on the same reference128 carrier. Root owns this brief and the existing
+full-source/strategic/primary/current-route owners; a bounded new check
+is allowed only for the resulting interface. The consumer is the native
+variational realization of (13n–13q), including its coupled field and
+matter tangents. A free sphere or capacity maximum is not a physical
+selection law. Preserve the full GNS, every outcome, raw16 and reference;
+do not install an action, fitted stress or a new mixed-state observer.
+The supplied 18 October synthesis is an input to test against these
+owners, not a replacement for their hypotheses or a native admission.
+
+Consumed in full-source §§6.15–6.17 / strategic §7.8: a fixed-RIGHT
+conormal preparation section keeps the actual PF law and solves every
+admissible preparation first row without a free r-simplex. Its exact
+finite-t radial source map transfers the weighted-star vacuum family.
+Six-step regular AF multiplicities preserve the JOINT RIGHT⊗ref128
+state while allowing a pure raw16 factor with timelike P1 and balanced
+scene feedback. The ideal frame-to-frame map belongs to the old RIGHT
+commutant. All coupled matter/observer first rows vanish on this vacuum
+branch; independent stress is not inserted. The true Book gain is tested
+by a leaf-response identity; sharp expected-gain saturation plus raw
+Kraft would suffice, but the operational owner does not supply them.
+The newly supplied synthesis is preserved as exact text and consumed
+with these scope corrections. Native price/admission and upstream full
+history remain before a physical GR claim; no extra old replay is used.
+
 ### 18 October: construct the LEFT instrument and full-carrier compiler
 
 Input `919a7d11`; the preceding goal turn made progress by publishing

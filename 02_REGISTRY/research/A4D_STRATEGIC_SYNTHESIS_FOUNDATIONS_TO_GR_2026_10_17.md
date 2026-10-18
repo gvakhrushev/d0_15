@@ -1135,6 +1135,127 @@ polytope, не физический выбор maximum и не новую KL-act
 реального относительного matter coupling; физический clock law оттуда
 не следует. Обе ветви сведены к одной цене, без потери этих границ.
 
+### 7.8. PF-ветвь при настоящем фиксированном прошлом и совместимый raw16
+
+На входе `ce063b4d` снят иной preparation gate, чем gate компилятора.
+Если RIGHT — уже измеренное неизменяемое прошлое, свободные r_i
+профиля (7.10) не являются автоматически native variations. В его
+явной section LEFT и RIGHT leaf совпадают. Менять r_i там означает
+менять прошлые RIGHT probabilities. Сохранить reference128 для
+легализации такого изменения недостаточно.
+
+Но из этого НЕ следует необходимость выбросить условный vacuum
+bridge. [Full-source §§6.15–6.17](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+дают новую section при фиксированной JOINT RIGHT⊗ref density:
+
+    r_i=μ_i, s_i=1−1/Z_i, b_i=1/2,
+    Γ_PF=[H(μ)+Σ_i μ_i log Z_i]/ℓ,
+    GΨ=R(Σ_i[−log μ_i+log Z_i−1]P_i)Ψ.                (7.15)
+
+Последнее равенство зануляет весь preparation source на constraint
+`Dρ_R=0`, даже для entangling tangents, нарушающих L/R matching или
+CAR-product вне рассматриваемой точки. Оно не требует surjectivity
+r-simplex, свободной сферы или capacity-maximum принципа. При полном
+Book binding это stationarity собственной complete price, а не новой
+назначенной энтропии. Физический upstream source при изменении старой
+ρ_R остаётся за пределами этого fixed-past consumer.
+
+При PF weights μ_i=p^(N+1) или p^(N+2) они сохраняются точно. Для
+этой ветви PF-прошлое — явный вход, а не следствие tracial uniqueness
+или physical state selection. При ином фиксированном μ соответствующие
+weights и возможный χ-sector сохраняются; происхождение PF остаётся
+native obligation. Для
+`c=p²t²`, `L=log Z`, `e₀=p²`, `L′(e₀)=s_*ℓ` получаем
+
+    Φ_PF(f)=[L(e₀+c f)−L(e₀)]/[c L′(e₀)],
+    DΓ_PF=s_*p²t² M_PF* D(Σ_x μ_x f_x).               (7.16)
+
+Тот же radial rank-one inverse доказывает exact vacuum Euler
+equivalence при фиксированном t>0 на actual free-radial domain.
+Fixed-collar full-lattice family с f=0 всюду переносится прямо,
+со всеми16+24 interior rows. Используются прежние родные count/volume
+weights и C² metric recovery; нового расписания t(h) для вакуума
+не нужно. Не требуется делать эти PF weights результатом свободного
+максимума на всех листьях.
+
+Устранена также конкретная несовместимость прежнего scene seed с
+observer. Seed в imΠ_s имеет N₀=0, поэтому P₁ пространственен и
+не может быть тем же timelike raw m. Вместо него на полном CAR16
+
+    m₀=sqrt(1−α)(cosθ e₀+sinθ e₀₁₂₃)+sqrtα e₁₂,
+    α=1/(8p³), 0<θ<π/2.                              (7.17)
+
+На U_Γ=imP_Γ⊗|c=1>,dim33, literal B имеет значение L_scene=4p³
+на e₁₂ и0 на e₀,e₀₁₂₃. Поэтому b=1/2, VarB=(2L_scene−1)/4>0,
+P₁m₀ timelike, top≠0 и ∂_αb=L_scene>0. Это pure raw factor,
+не новая mixed-state convention или выбор reference-column.
+
+Reference128 не добавляется к нему вторым matter-фактором. Native
+шестишаговая activation даёт для matched old L/R leaf success
+multiplicity13 или5, failure220 или84. Tensor scene33 даёт минимум
+165 ортогональных success slots, достаточно128. Ортогональные S/F
+frames на этом carrier строят (7.15) с ТОЧНОЙ исходной
+`ρ_(R,ref)=ρ_R⊗I128/128`, включая все noncommutative RIGHT tests.
+Real blockwise frame extension лежит в commutant всей RIGHT algebra.
+Это снимает incompatible raw/reference lift, но не доказывает physical
+admission и exact finite-word preparation. Generic SO approximation
+не гарантирует exact RIGHT preservation; нужен actual structured
+multiplicity-wire implementation, если past immutable на каждом шаге.
+
+На raw field map `q=FηFᵀ`, `m=ρ(F)m₀` pairing даёт k>0 и
+Q=FFᵀ; CAR/clock reconstruction читает тот же curved q,g.
+Coupled δn(m,F), δL и moving-B jets сохранены: star f invariant
+под одновременным `(e,U)→(Le,L_xUL_y⁻¹)`, а h′(b)=0 зануляет
+весь DB-source. Все16 matter строки решены без удаления grades.
+Независимого T на этой ветви нет. Failure log odds зависит от того
+же e_i; capacity deficit без настоящего metric/link pullback не
+объявляется новым stress. Измерение Π_s с последующим переопределением
+observer из branchwise state могло бы убить P₁; такой chronological
+update здесь не построен и не скрывается формулой полного B-effect.
+
+Присланный пользователем синтез сохранён [исходным текстом](sources/d0_af_star_full_lattice_2026-10-17/USER_NATIVE_PRICE_SYNTHESIS_2026_10_18.txt),
+SHA256 `d5706efac0dc8791f010557810a1e1ad835b3fdc2f8578432e5f13f883bd2570`.
+Его точный finite-t vacuum не опровергается singular second derivative
+compiled zero outcomes; это разные scopes. Но вывод maximum из
+«отсутствия смещения» не является native law. Результат (7.15–7.17)
+сильнее по совместимости и уже по физическому утверждению: имеется
+полная constrained stationary section, без доказанного её forcing.
+
+Перед физическим утверждением остался конкретный Book consumer.
+Для actual LEFT effects `Σ_αF_iα=P_i` его native gain обязан дать
+`Σ_α φ^(Info_iα−Cost_iα)=<P_i>`, вместе с вариациями conditional
+terminal law. Одного нормировщика недостаточно. Поле response_rule
+в finite Born theorem есть отдельная предпосылка, а не её доказательство.
+Точное gain-defect identity
+
+    D(q||ν)/ℓ−E_q Info
+      =[D(q||w/N)−log N]/ℓ                            (7.18)
+
+показывает кратчайший sufficient test: native expected-gain saturation
+и raw Kraft N≤1 вынудят N=1,w=q на whole cut. Текущий operational
+gain owner сначала подставляет likelihood ratio и потому не даёт
+обратного доказательства. Даже w=q ещё требует native mean/stack
+идентификации; MAP индивидуального пути её не заменяет. Следующий
+шаг должен вывести эту полную varied price/историю и её admitted
+operations. Никакая новая κ, entropy selector или fitted matter не
+вводится. Physical GR, независимая материя и global/raw #216 остаются
+отдельными незакрытыми требованиями.
+
+Параллельный intake `ce063b4d..cd8e2a9e` принят как disjoint input:
+[bimodule/blank/center theorem](A4D_RAW_JULIA_BLANK_SHARP_LEAF_POSTPROCESS_NOGO_2026_10_18.md)
+отделяет active LEFT test от unchanged native neutral recorder.
+Его center obstruction относится к свободной uniform profile; (7.15)
+оставляет canonical RIGHT массы неизменными и потому не требует этого
+cross-block transfer. [Two-sided fold](A4D_GNS_TWO_SIDED_PATH_UNFOLDING_AND_ARCHIVE_SOURCE_2026_10_18.md)
+даёт точное source identity другой complete-pointer architecture,
+если RIGHT действительно измерен. Её log average Z и наше average
+log Z не совпадают off shell; RIGHT recording меняет полный архив.
+Ни дополнительная multiplicity entropy, ни passive decoder не
+подставляются в (7.15). Чужие owner/checker сохранены без правок.
+Его новый minimal tree+bridge относится к свободной branch, а
+RIGHT-dephasing сохраняет только actual commuting geometric effects
+и jets; полная новая RIGHT entropy/source остаётся самостоятельной.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

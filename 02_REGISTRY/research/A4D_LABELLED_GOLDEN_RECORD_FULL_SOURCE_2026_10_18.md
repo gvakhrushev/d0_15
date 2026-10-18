@@ -1358,6 +1358,338 @@ relative C¹ leaf-source estimate. Последняя требует сущес�
 полным Einstein–matter законом. Отдельные source/norm/clock premises
 его weak-probe limit сохраняются. Чужие owner и checker не изменяются.
 
+### 6.15. Неизменяемое RIGHT-прошлое: собственная PF-стационарная ветвь
+
+Продолжение от `ce063b4d`. У свободного профиля (13n) есть существенная
+физическая предпосылка: допустимы изменения всех r_i. Она НЕ следует
+из compiler или сохранения reference. В предъявленной section
+`R(P_i)η_j^S/F=δ_ij η_j^S/F`; поэтому r_i там одновременно являются
+вероятностями старых RIGHT leaves. Операция, коммутирующая с настоящей
+неизменяемой RIGHT-алгеброй, эти вероятности менять не может. Если
+RIGHT уже является прошлым, уравнение r_i=1/d_N нельзя применять к
+нему как свободное. Book03 stationary stack также не определяет своё
+множество X_N как замыкание всех достижимых gate preparations.
+
+Однако это ограничение НЕ разрушает вакуумный source bridge. Теперь
+предъявим constrained stationary section без всякого r-simplex input.
+Пусть actual old RIGHT density фиксирована и равна родной PF density:
+`ρ_R=⊕_j μ_j I_(d_j)`, `μ_X=p^(N+1)`, `μ_Y=p^(N+2)`.
+В общей формуле ниже μ_i>0 могут быть иными фиксированными весами.
+Сохраняется также JOINT old-RIGHT⊗reference state, а не лишь две
+маргинали отдельно. Правое представление на данном carrier постоянно
+при field variations; при движущемся представлении его источник
+нельзя опускать.
+
+На той же полной записи (13ab) выбираем matched point
+`L(P_i)Ψ=R(P_i)Ψ` и собственные conditional probabilities
+
+    r_i=μ_i, b_i=1/2, Z_i=1+2 exp h(e_i),
+    s_i=1−1/Z_i,
+    q_iF=μ_i/Z_i, q_iab=μ_i exp h(e_i) p_a(e_i)/Z_i,
+    Γ_PF=[H(μ)+Σ_i μ_i log Z_i]/ℓ.                     (13ai)
+
+Здесь r_i НЕ оптимизируются и не объявляются выбранным prior: это
+данное неизменяемое прошлое. Его совместимая full reference128
+purification строится в §6.16. Mean formula остаётся условной по
+SAME complete Book binding, ровно как (13ae).
+Совместимость и tracial uniqueness AF reference не доказывают, что
+именно эта PF density является физическим прошлым. Для иного
+фиксированного μ та же section существует, но её geometric weights
+другие и возможный χ-sector автоматически не устраняется. Здесь
+физическая PF-подготовка не постулируется: theorem условен по этому
+input, а его происхождение остаётся задачей native исполнения.
+
+Буквальный полный POVM-gradient теперь НЕ scalar. Прямая сумма по
+обоим флагам даёт на всём исходном carrier
+
+    G=−Σ_(i,α)(log q_iα+1)F_iα=Σ_i λ_i L(P_i),
+    λ_i=−log μ_i+log Z_i−1,
+    GΨ=R(Σ_i λ_i P_i)Ψ,
+    D_prep S=(1/ℓ)Σ_i λ_i D Tr(ρ_R P_i)=0.             (13aj)
+
+На success `Σ_a p_a log p_a=−h(e_i)` точно сокращает exp h(e_i);
+равенство двух scene coefficients при b_i=1/2 сокращает ВЕСЬ B.
+Failure даёт тот же λ_i. Поэтому (13aj) решает ВСЕ pure preparation
+первые строки при фиксированной ρ_R, включая offdiagonal, entangling,
+reference и направления, НАРУШАЮЩИЕ L/R matching вне данной точки.
+Matching служит доказательству conormal identity в точке, а не запретом
+таких вариаций. Для нового blank Y применяется block argument (13ad),
+с тем же right-conormal вместо scalar λ. Invalid outcomes сохранены;
+ambient C² через них по-прежнему не заявляется.
+
+Это обычный conormal fixed-density constraint: GΨ лежит в образе
+реальных RIGHT Lagrange multipliers. Ни свободная сфера, ни entropy
+maximum, ни независимость r_i при этом не нужны. При конечном поле
+e_i, неодинаковом по i, все эти первые строки также зануляются.
+Полное условие `Dρ_(R,ref)=0` сильнее использованного `Dρ_R=0` и
+потому допустимо. Если физическое исполнение разрешает менять старую
+ρ_R upstream, её СОБСТВЕННЫЕ источники должны быть возвращены; (13aj)
+не зануляет их и не объявляет всё прошлое свободным.
+
+Положим `c=p²t²`, `L(e)=log Z(e)`, `e₀=p²`. Тогда
+`L′(e)=s(e)h′(e)>0` в окне `0<e<1/2`, и `L′(e₀)=s_*ℓ`.
+Для actual geometric weights `μ_x=Σ_(i∈Q_x)μ_i` имеем ТОЧНО
+
+    Φ_PF(f)=[L(e₀+c f)−L(e₀)]/[c L′(e₀)],
+    Φ_PF′(0)=1, a_PF=c L′(e₀)/ℓ=s_*p²t²>0,
+    DΓ_PF=a_PF Σ_x μ_x Φ_PF′(f_x) Df_x
+          =a_PF M_PF* DP_PF,
+    P_PF=Σ_x μ_x f_x.                                 (13ak)
+
+`M_PF` и его обратный оператор задаются формулой (13p) с Φ_PF вместо
+Φ. Доказательство `N_xN_y=2δ_xy f_x N_x` не меняется. В отличие от
+(13p) внешний множитель не содержит D; PF weights сохранены точно,
+а не получаются через равномерные terminal counts. Родной count/volume
+owner уже переносит эти μ_x в взвешенную star и C² metric recovery.
+
+Следовательно на той же actual free-radial geometric domain
+`Crit Γ_PF=Crit P_PF` при фиксированном t>0. Для fixed-collar семьи
+с f_x=0 ВЕЗДЕ достаточно прямого равенства первых источников в (13ak);
+обратная эквивалентность на произвольно зажатой границе не требуется.
+Переносятся все внутренние16 coframe+24 link строки прежнего владельца.
+Это точная constrained-vacuum ветвь заданной complete price, не теорема
+о выборе этой ветви native динамикой или об upstream цене прошлого.
+
+### 6.16. Raw16 и reference128 одновременно: используем уже имеющуюся AF multiplicity
+
+Прежний scene seed (8) лежит в im Π_s, где N₀=0. Его first grade
+пространственен, поэтому `k=(P₁ψ)ᵀη(P₁ψ)≤0`; его нельзя молча
+назначить тем же raw m, который определяет timelike observer в
+[native pairing](A4D_NATIVE_MATTER_OBSERVER_PAIRING.md), §2.
+Reference128 само по себе этого не исправляет.
+
+Есть положительное исправление на ТОМ ЖЕ carrier. Из буквального
+[двухтактового scene word](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md), §4,
+на U_Γ=im P_Γ⊗|c=1>, dim U_Γ=33, имеем
+`B=L I_(U_Γ)⊗P_high`, `L=4p³>1/2`, где P_high есть N₀=0,
+spatial degree2 или3. Весь остальной scene carrier, включая c=0,
+остаётся. Для unit top form Ω=e₀₁₂₃ выберем
+
+    m₀=sqrt(1−α)(cos θ e₀+sin θ Ω)+sqrt(α)e₁₂,
+    α=1/(2L), 0<θ<π/2,
+    ||m₀||=1, <B>=Lα=1/2,
+    Var(B)=L/2−1/4=(2L−1)/4>0,
+    P₁m₀=sqrt(1−α)cos θ e₀, P₄m₀≠0.                 (13al)
+
+Это настоящий ЧИСТЫЙ CAR16 фактор, а не выбранная reference-column
+или новая mixed-state definition observer. Вариация α сохраняет ray
+observer и имеет `∂_α b=L>0`. Поэтому balanced b-equation имеет
+локальный lift внутри raw matter на общей scene section ниже при
+малом изменении того же общего B. Нулевые в данной точке grades
+не исключаются из ambient tangent space; их первые строки решаются
+(13aj), а не запретом нарушить balanced section.
+
+Остаётся разместить reference128 так, чтобы не испортить raw product
+и полное RIGHT-прошлое. Просто перенести reference в128 RIGHT columns
+недостаточно: нужно сохранить JOINT ρ_(R,ref). Здесь хватает УЖЕ
+существующего шестишагового AF carrier, без нового ancilla-фактора.
+Пусть `(d_X,d_Y)=(A,B)`, `m=M⁶=[[13,8],[8,5]]`. Из конкретного
+[regular-carrier realization](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md),
+§4, в fine block v имеется m_vj copies old type j. Для фиксированных
+old LEFT leaf i типа j и old RIGHT column b типа k их GNS multiplicity
+равна `(M¹²)_jk`. Success corner Π оставляет одну old-left copy типа j
+в fine block j; поэтому точные multiplicities равны
+
+    success: m_jk,
+    failure: (M¹²−M⁶)_jk=[[220,136],[136,84]]_jk.        (13am)
+
+Для matched i=b получаем success13/5 и failure220/84. После tensor
+U_Γ минимум success dimension есть `5·33=165≥128`; failure тоже
+достаточна. Можно даже выбрать failure в одной дополнительной old-left
+copy fine block j, с теми же m_jj right-copy labels. Все остальные
+copy directions остаются в полном пространстве. Это не подмена
+рабочего модуля меньшим регулярным carrier и не approximate count.
+
+В каждом matched leaf выберем128 ортонормальных REAL multiplicity
+vectors `ξ_i,a^S`, `ξ_i,a^F`, a=1..128, из этих двух ортогональных
+секторов tensor U_Γ. Например a кодирует пару (right-copy,u_Γ);
+достаточно четырёх из как минимум пяти copies, так как4·33≥128.
+Используем ОДНУ И ТУ ЖЕ enumeration a↦(copy,u_Γ) во всех i/type
+и S/F. Их conditional Γ densities тогда одинаковы, и общий α
+решает все b_i=1/2 при том же общем moving B. Независимые изменения
+frames вне этой section допустимы, их source покрывает (13aj).
+Выборы согласованы с right matrix units: операция R(E_ib) меняет
+только old column, сохраняя copy labels. С normalized GNS coordinates
+section есть
+
+    Ψ_PF=Σ_i sqrt(μ_i/128) Σ_a
+          [sqrt(s_i) ξ_i,a^S+sqrt(1−s_i) ξ_i,a^F]
+          ⊗|i>_R⊗m₀⊗|a>_ref,
+    (L(P_i)−R(P_i))Ψ_PF=0,
+    ρ_(R,ref)=(⊕_j μ_j I_(d_j))⊗I128/128.              (13an)
+
+Здесь ξ — MULTIPLICITY coordinate; |i>_R — уже имеющийся old-right
+matrix index, не новый register. Разные i имеют ортогональные LEFT
+rows, разные a — ортогональные (copy,Γ) labels, success/failure
+ортогональны. Это доказывает norm1 и ВСЕ entries joint marginal,
+включая noncommutative RIGHT и offdiagonal reference tests.
+Условные вероятности равны (13ai), b=1/2 на каждом leaf/success.
+
+У исходного trace seed с прежней reference purification та же
+ρ_(R,ref). В decomposition по старым right simple blocks его128d_j
+REAL multiplicity columns ортонормальны; у (13an) они тоже
+ортонормальны. Blockwise real frame extension даёт data-only
+`O=⊕_j O_j⊗I_(d_j)`, коммутирующий со ВСЕЙ old RIGHT algebra,
+identity на reference, переводящий один seed в другой. Это идеальный
+constant operator в данной точке, а не Ψ(g) oracle. Теоремы exact
+finite-basis obstruction/approximation §§6.12–6.14 сохраняют силу;
+реальный допуск такого управления, его подготовительная история и
+её собственная цена этим существованием не доказаны.
+Также generic full-operator approximation O_η≈O не обеспечивает
+ТОЧНОГО [O_η,R(A_N)]=0. Для finite programmes с immutable past
+нужен structured compiler на actual multiplicity wires с I_R spectator
+и разрешённым чтением central type. Ideal commutant lift выше доказан;
+его native finite implementation не приписывается общему SO compiler.
+Тип commutant также существенен: на ПОЛНОМ regular H_(N+6)
+его AF blocks имеют размеры `(M¹²d)_j`, то есть folding даёт A_(N+12).
+Это не left A_(N+6), которая была commutant на меньшем WORKING
+H_(N+3). O выше — оператор на declared encoded Hilbert carrier;
+новая native left multiplication в A_(N+6) не объявляется построенной.
+
+Для actual raw variables положим, как у pairing owner,
+`q=FηFᵀ`, `D_xy=F_x U_xy F_y⁻¹`, `m=ρ(F)m₀`. Тогда
+
+    k=(P₁m)ᵀq⁻¹(P₁m)=(1−α)cos²θ>0,
+    n=e₀, Q=FFᵀ, G=F⁻ᵀF⁻¹.                         (13ao)
+
+Таким образом observer pairing совпадает с прежним CAR/clock
+reconstruction исходного q,g и на curved F, а не лишь на плоской
+матрице. Это совместимость ТЕХ ЖЕ raw fields и recording state.
+При общих вариациях n не заморожен: `v=P₁m`, `j=F⁻¹v`,
+`k=vᵀq⁻¹v`,
+
+    δk=2(q⁻¹v)ᵀP₁δm−(q⁻¹v)ᵀδq(q⁻¹v),
+    δn=(F⁻¹P₁δm−F⁻¹δF j)/sqrt(k)−n δk/(2k).          (13ap)
+
+Соответствующие δL(n) входят в raised coefficients и links. Но
+`(e_bar,M)=(Le,L_x U_xy L_y⁻¹)` — совместное Lorentz-преобразование;
+star f и прочитанное `q=FηFᵀ` от n не зависят. В полном source
+коэффициенты Ds_i и Db_i равны нулю, (13aj) убивает остальные
+preparation jets. Поэтому все16 raw matter строки на этой ветви
+зануляются без фиксации grades; новый независимый T здесь равен0.
+Ненулевое raw m не означает ненулевой независимый stress данного
+functional. `Dlog[s_i/(1−s_i)]=h′(e_i)De_i`, тот же геометрический
+source, а не второй matter action.
+
+Точная chronological граница остаётся: если отдельно ИЗМЕРИТЬ Π_s
+перед word и затем переопределить n из условного success-state,
+в (13al) останется e₁₂ и P₁=0. Доказан stated full-B coherent-effect
+consumer §3, не новый branchwise observer-update закон. Его реальный
+instrument, как и прежнее физическое admission, нельзя подменить
+конечной формулой эффекта.
+
+### 6.17. Book binding теперь имеет точный shape-тест, а не только normalizer
+
+Новый [присланный синтез](sources/d0_af_star_full_lattice_2026-10-17/USER_NATIVE_PRICE_SYNTHESIS_2026_10_18.txt)
+сохранён побайтно (15739 bytes, SHA256
+`d5706efac0dc8791f010557810a1e1ad835b3fdc2f8578432e5f13f883bd2570`).
+Его верное различение точного вакуума и
+approximate compiled residual потреблено выше. Однако переход «без
+смещения единственное пополнение — entropy maximum» не выведен из
+native исполнения. §§6.15–6.16 дают constrained stationary branch,
+не принцип выбора maximum. В частности, старые RIGHT probabilities
+нельзя одновременно считать фиксированными и свободно варьировать.
+
+Для constructed actual LEFT instrument справедливо
+`Σ_αF_iα=P_i`. Следовательно SAME complete Book binding обязан
+удовлетворять на ВСЕХ допустимых preparations
+
+    Σ_α φ^(Info_iα−Cost_iα)=<Ψ,P_iΨ>.                  (13aq)
+
+Канонический leaf code этого не даёт: постоянная сумма raw weights
+на всех preparations потребовала бы `P_i=μ_i I`, что ложно для
+собственного projector. Для actual upstream curve
+`Ψ_r=sqrt(r)ξ₀+sqrt(1−r)ξ₁`, ξ_i∈im P_i, если она допустима,
+даже слабое `w=Nq` требует
+
+    D_r log_φ(W₀/W₁)=1/[ℓ r(1−r)],
+    W_i=Σ_α φ^(Info_iα−Cost_iα).                       (13ar)
+
+Общий N здесь сокращается. Это отсутствующее state-dependent
+shape/source равенство собственного native gain, не ещё одна
+проверка нормировки. На fixed-past ветви (13ai) r не варьируется;
+тогда (13aq) проверяет только эту leaf mass. SAME binding сверх него
+требует pointwise `w_iα=q_iα` и правильного conditional terminal
+source: произвольная другая normalized conditional law проходит
+одну лишь marginal проверку (13aq). Цена upstream подготовки остаётся
+своей.
+
+Формальная граница видна в
+[FiniteBornReadout](../../03_FORMALIZATION/D0/Core/BornFinite.lean):
+поле `response_rule` отдельно требует восстановления raw detector
+response. Born uniqueness использует именно его, а не выводит
+native Book weights из кода. Здесь total response=1 и response=q_iα.
+`OperationalProcess` задаёт run/pullTest compatibility, `ActionProtocol`
+endpoint action, но ни один не заполняет это поле Book-весами.
+В Book03 `[q(γ)]` — класс памяти, не Born probability; MAP individual
+history, algebra-valued partition и stationary stack также различны.
+Даже w=q доказывает mean H/ℓ, но ещё не отождествляет native
+варьируемый stack с этим mean.
+
+Есть более короткий положительный критерий binding без branchwise
+locality. Для actual code ν_h=φ^(−Cost_h)>0, raw
+`w_h=ν_h exp(ℓ Info_h)`, `N=Σw_h`, actual Born q:
+
+    D(q||ν)/ℓ−E_q Info
+       =[D(q||w/N)−log N]/ℓ.                          (13as)
+
+Если собственное execution даёт saturation `E_q Info=D(q||ν)/ℓ`
+и raw Kraft bound N≤1, оба правых слагаемых неотрицательны;
+поэтому N=1 и w=q (включая отсутствие лишней массы вне support q).
+Для q_h=0 это требует w_h=0: при ν_h>0 нужен extended Info_h=−∞
+или действительный zero-response rule. При строго конечном Info
+на всех тёмных исходах saturation недостижима. Zero-outcome binding
+также нельзя вывести из positivity кода.
+Если это доказано на всём гладком chart, source binding переносится
+также. Здесь `D(q||ν)=Σq log(q/ν)` допустимо и для subnormalized
+code ν; это алгебраическое identity, не новая физическая Info.
+Текущий [operational-gain owner](sources/d0_operational_gain_2026-10-15/RESULT.md)
+сначала определяет gain как likelihood ratio, а его native binding
+оставляет отдельным контрактом. Его максимум нельзя использовать
+для обратного доказательства той же подстановки: это был бы круг.
+Один data-processing/retained-copy принцип не выбирает KL: Shannon
+и order2 Rényi relative divergences оба сохраняются при injective
+copy и аддитивны на independent products, но дают разные источники.
+Этот контроль не предлагает заменять существующую Info.
+
+Итак потреблён НОВЫЙ положительный переход: fixed-RIGHT prep и
+чистый raw16/reference128 lift больше не требуют свободной uniform
+preparation или неправильного P₁ seed. (13ak) переносит точные
+вакуумные корни при конечном t. Перед физическим D0→ОТО остаётся
+вывести actual Cost/gain и VARIED full price этого исполнения,
+допустить его operations/resources с их retained history, и получить
+собственный независимый matter source, если он есть. Ни поляризация,
+ни capacity deficit не назначаются материей без их реального
+metric/link pullback и всех собственных equations. Сырая #216 норма,
+global closure и выбор данной branch не повышены этим результатом.
+
+Параллельный intake `ce063b4d..cd8e2a9e` сохранён без изменений:
+[raw-blank/bimodule/RIGHT-center owner](A4D_RAW_JULIA_BLANK_SHARP_LEAF_POSTPROCESS_NOGO_2026_10_18.md)
+исключает passive sharp-leaf recovery и выделяет conserved center
+contrast. Новая PF section (13ai) НЕ пытается изменить эти массы;
+cross-block preparation contrast uniform (13f) ей не требуется.
+Но active LEFT test (13aa) всё ещё не принадлежит unchanged neutral
+recorder, и его native admission не отменён. [Two-sided GNS folding](A4D_GNS_TWO_SIDED_PATH_UNFOLDING_AND_ARCHIVE_SOURCE_2026_10_18.md)
+даёт другой условный complete-pointer price log weighted average Z,
+а (13ai) — weighted average log Z при фиксированном RIGHT. Их нельзя
+отождествить off shell. Измерять RIGHT ради multiplicity entropy
+означает изменить его noncommutative observable transport; здесь
+RIGHT не копируется и новое H(R|L) в цену не добавляется.
+Его новый spanning-tree-plus-one-bridge consumer даёт минимальную
+достаточную variation image для СВОБОДНОЙ uniform branch. Нашей
+fixed-RIGHT branch этот запрещённый cross-block bridge не нужен.
+Его exact RIGHT-dephasing identity сохраняет LEFT geometric effects
+и их jets, если они коммутируют с постоянными right projectors;
+полный entropy source вновь записанного RIGHT от этого не исчезает.
+
+[Новый bounded check](sources/d0_af_star_full_lattice_2026-10-17/check_fixed_right_raw_matter_source.py)
+потребляет именно (13ai–as): actual integer multiplicities, полный
+joint RIGHT⊗ref128 frame, success/failure gradient cancellation,
+matching-breaking fixed-RIGHT tangent и nonzero upstream control,
+raw pure balance/metric identity и точное gain-defect identity.
+[Receipt](sources/d0_af_star_full_lattice_2026-10-17/FIXED_RIGHT_RAW_MATTER_SOURCE_RESULT.json)
+не означает physical admission или полную Lean-проверку.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная
