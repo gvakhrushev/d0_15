@@ -34,8 +34,19 @@ an ordinary-word dark-sector separator. It does not identify that component
 with the whole pointer coefficient, drop the count correction, or treat
 rounding/collision strips as logarithmic births.
 
-`check_feasible_gain.py` is the sole new helper: 49 exact finite identities
-and negative controls, no old imports or runs. `RESULTS.json` and
+The all-depth support language for the four ordinary coefficient-1 rows is
+now derived and checked in
+[POINTER_ZERO_WORD_LANGUAGE_2026_10_18.md](POINTER_ZERO_WORD_LANGUAGE_2026_10_18.md).
+Its exact [checker](check_pointer_zero_word_language.py) exhausts every word through length 8
+on all 16 occupations, four shell axes and both momentum signs. This classifies
+zero words in that subalphabet only; it does not compute the full pointer
+birth coefficient or its source. The exact
+[output](POINTER_ZERO_WORD_RESULTS.json) and
+[ordinary/optimized replay](POINTER_ZERO_WORD_VALIDATION.json) are recorded
+with pinned source provenance.
+
+The original check_feasible_gain.py records 49 exact finite identities
+and negative controls, with no old imports or runs. RESULTS.json and
 `VALIDATION.json` record identical ordinary/optimized stdout. The helper
 checks the finite algebraic inputs; the all-word inequality, compact/source
 proofs and physical boundaries are analytical statements in the main owner.

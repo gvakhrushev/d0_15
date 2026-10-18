@@ -1,0 +1,105 @@
+{
+  "alphabet_labels": [
+    6,
+    22,
+    14,
+    30
+  ],
+  "carrier_scope": "four ordinary coefficient-1 rows on the fixed full-16 shell; nonzero D0 toggle scalars omitted only for support",
+  "exact_checks": 699189,
+  "hadamard_rows": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      1
+    ]
+  ],
+  "hostile_controls": {
+    "nonzero_alternating": {
+      "labels": [
+        6,
+        22,
+        6,
+        22
+      ],
+      "nonzero_on_every_shell": true
+    },
+    "nonzero_constant": {
+      "labels": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "nonzero_on_every_shell": true
+    },
+    "nonzero_one_constant_class": {
+      "labels": [
+        6,
+        22,
+        6,
+        6
+      ],
+      "nonzero_on_every_shell": true
+    },
+    "zero_crossing": {
+      "labels": [
+        6,
+        22,
+        22,
+        6
+      ],
+      "nonzero_on_every_shell": false
+    }
+  },
+  "max_word_length": 8,
+  "occupations": 16,
+  "shell_axes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "shell_signs": [
+    -1,
+    1
+  ],
+  "source": {
+    "git_blob_sha1": "58bc4a070f6ef3690442ef11f9b0c578b7e59946",
+    "path": "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/POINTER_BIRTH_CONTINUATION.md",
+    "sha256": "5cb666b021cac1e3e724e117ca30a524f190c3d7d106081266641cc21b200554"
+  },
+  "status": "PASS",
+  "support_comparisons": 699040,
+  "total_words_checked": 87380,
+  "zero_word_counts": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 144,
+    "5": 720,
+    "6": 3600,
+    "7": 15120,
+    "8": 63504
+  },
+  "zero_word_rule": "m>=4: both alternating subsequences are nonconstant; for m<=3 there are no zero words"
+}

@@ -7436,3 +7436,14 @@ boundary/collision strips are not automatically logarithmic births; nor
 can normalizer logs be excluded without a nonvanishing leading N0>0.
 This identifies the next whole-history consumer without replacing the
 full information functional by a selected positive event.
+
+The four-row ordinary subalphabet is now classified at every depth. For a
+word of labels $(j₁,…,j_m)$, the leading product is nonzero exactly when at
+least one of $(j₁,j₃,…)$ and $(j₂,j₄,…)$ is constant; for $m≥4$, zero
+words therefore number $4^m-4^{\lfloor m/2\rfloor+1}-4^{\lceil m/2\rceil+1}+16$. The exact
+support checker verifies all 87,380 words of lengths 1–8 on every Fock grade,
+shell axis and momentum sign. See
+[the zero-word result and its scope](sources/d0_feasible_gain_source_2026-10-17/POINTER_ZERO_WORD_LANGUAGE_2026_10_18.md).
+This closes the combinatorial language for those four leading rows, while
+their first-jet weights and the complete pointer $h^2 log$ source, count
+correction, strips and raw normalizer remain open.
