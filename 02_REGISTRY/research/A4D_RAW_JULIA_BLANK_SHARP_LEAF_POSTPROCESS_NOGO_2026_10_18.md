@@ -158,3 +158,59 @@ It is **RIGHT-linear but not LEFT-neutral**. Exactly this class is realized *con
 **Strategic fork:** the remaining execution/admission lemma is no longer “does Fibonacci memory exist?” or “does Julia have enough outcomes?”. It is the specific operational forcing/admission of a **RIGHT-preserving, LEFT-sensitive** test, plus the actual SAME-history price and its stationary preparation. If D0 only admits old-bimodule-neutral record operations, its full fine-leaf source (13n) is not physically derivable by passive recording, and the non-Einstein \(\chi\) branch remains. If such an active test is admitted and physically selected, the previously proved source-preserving construction supplies the needed next conditional step; matter and global GR still remain.
 
 **Independent exact control:** on \(H=\mathbb C^2\otimes\mathbb C^2\) set \(P_i=|i\rangle\langle i|\otimes I\), \(U=X\otimes I\), \(F=I\otimes D\), \(0\preceq D\preceq I\). Then \([F,U]=0\), \(UP_0U^\dagger=P_1\) and \(\|F-P_0\|_{\rm op}\ge1/2\), with equality at \(D=I/2\). This is a finite control of (A10), not a replacement for the general bimodule intertwining already proved upstream.
+
+
+## 8. Exact remaining preparation rank: right-center conservation prevents choosing both AF block masses
+
+The sharper joint consequence is **not** just that the old instrument cannot measure a noncentral LEFT leaf: its fully retained *right-module* dynamics cannot **prepare** the full stationary leaf simplex from an arbitrary prior right-sector marginal. This identifies a single additional independent physical weight direction.
+
+At level \(N\), [the tower owner](A4D_NATIVE_AF_TRACE_PREPARATION.md) has
+\[
+A_N=M_{a_N}(\mathbb C)\oplus M_{b_N}(\mathbb C),\quad
+a_N=F_{N+2},\ b_N=F_{N+1},\ d_N=a_N+b_N.
+\]
+The two block-central projections \(Z_X=(I_{a_N},0)\), \(Z_Y=(0,I_{b_N})\) act identically from LEFT and RIGHT on the respective GNS direct-sum sectors. In particular \(Z_X\in R(A_N)\). Every complete instrument with Kraus operators \(K_\omega\in R(A_N)'\) obeys
+\[
+\begin{aligned}
+\mathcal T^*(Z_X)
+&=\sum_\omega K_\omega^\dagger Z_X K_\omega\\
+&=Z_X\sum_\omega K_\omega^\dagger K_\omega=Z_X.
+\end{aligned}\tag{A12}
+\]
+Thus its **unconditional** \(X/Y\) masses are exact conserved quantities. All work/failure exits must be included for (A12). Conditional success marginals may differ, but their failure complement carries the missing mass and source; it cannot be silently erased. A passive neutral recorder and the active controlled LEFT-label copy \(C_Y\) from §6.13 both commute with these centers, so neither *alone* changes the two block populations.
+
+This matters immediately for [the full-source preparation equation (13f)](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md). Compare its exact *uniform terminal leaf* stationary state \(\zeta_N\) to the compatible **canonical tracial** cyclic state \(\Omega_N\), at the **same** level \(N\):
+\[
+\begin{array}{c|cc}
+ &X\text{-block mass}&Y\text{-block mass}\\
+\hline
+\Omega_N &a_Np^{N+1}&b_Np^{N+2}\\
+\zeta_N&a_N/d_N&b_N/d_N
+\end{array}
+\tag{A13}
+\]
+where \(p=\varphi^{-1}\). Both are legitimate normalized states, but these probabilities differ at every finite level. From Binet asymptotics,
+\[
+\boxed{
+\lim_{N\to\infty}\mathrm{TV}
+\bigl(\Omega_N|_{\mathrm{center}},
+      \zeta_N|_{\mathrm{center}}\bigr)
+=\frac{\varphi}{\sqrt5}-\varphi^{-1}
+=1-\frac{2}{\sqrt5}
+\approx0.105572809.
+}\tag{A14}
+\]
+This is a persistent **moving-level central-sector** mismatch, not a contradiction with §6.7's separately proved convergence of the uniform *fine descendant* law to the PF trace on every **fixed earlier** level \(k\) as \(N-k\to\infty\). Fixed-\(k\) and moving-\(N\) claims have different quantifiers.
+
+Therefore a physically imposed canonical RIGHT-center preparation at level \(N\), followed only by complete right-linear dynamics/copies preserving that center, cannot reach the exact uniform-fine-leaf stationary preparation of (13f); refinement by merely increasing \(N\) does not remove its center-TV gap. No right-unitary symmetry or left-CNOT readout is a center-population selector.
+
+**Exact tangent implication.** If both block masses are preserved, the admissible real leaf-probability variations satisfy
+\[
+\sum_{i\in X}\delta r_i=0,\qquad
+\sum_{i\in Y}\delta r_i=0.
+\tag{A15}
+\]
+Even after introducing *all* right-linear LEFT mixers within each block, their image has dimension at most
+\((a_N-1)+(b_N-1)=d_N-2\). The entropy derivation (13f) assumes the entire normalized leaf simplex of dimension \(d_N-1\). Hence at least **one cross-block contrast** and its physical source/preparation permission remain indispensable. The original old-neutral recorder has even smaller image (zero for all old leaf populations). This dimension count is for fixed level and fixed RIGHT centers, not a no-go for a dynamic refinement that truly changes its retained center/provenance or for an independently admitted initial preparation with the stationary masses already present.
+
+**Shortest constructive route:** the known active LEFT copy provides the measurement. For physical preparation selection, supply an admitted right-preserving within-block mixing programme **and** either an actual center-changing, fully recorded cross-block preparation/refinement operation, or prove the required block masses are supplied by an independently selected admissible initial state. Count the center transfer and its whole-work source. This replaces a vague all-state preparation oracle with one identified missing block-contrast equation; it does **not** assume that the existing Fibonacci inclusion automatically performs this change.
