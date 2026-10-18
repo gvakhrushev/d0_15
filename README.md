@@ -9,7 +9,7 @@ refinement limit**. This target remains open.
 | Evidence boundary (snapshot: 2026-10-15) | What it means for the next step |
 |---|---|
 | Accepted `main` at `fa2b04b9` | Finite geometry, metric provenance, an Einstein flat tangent and conditional smooth-limit estimates are available inputs. They do not yet supply the complete native action/source or a general joint nonlinear limit. |
-| Research [#310](https://github.com/gvakhrushev/d0_15/pull/310) and intake [#322](https://github.com/gvakhrushev/d0_15/pull/322) | Native record/action work, a one-coordinate exact connection sheet and a fixed-L4 full-4D connection sheet are published research with different scopes. #322 proposes a fixed intake; neither open PR is accepted `main`. |
+| Historical research [#310](https://github.com/gvakhrushev/d0_15/pull/310) and intake [#322](https://github.com/gvakhrushev/d0_15/pull/322) | Native record/action work and finite connection sheets are pinned research with different scopes. #310 closed without merge; resolve the registered task through the live dispatcher. The frozen intake does not close the parent scientific obligations. |
 | Next scientific work | Bind preparation/retained records to the **same complete action and its source**, while a second lane proves the **joint nonlinear/refinement estimate** on the agreed carrier. Each output must discharge a named premise of the parent derivation. |
 
 Start with the [current gravity route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity),

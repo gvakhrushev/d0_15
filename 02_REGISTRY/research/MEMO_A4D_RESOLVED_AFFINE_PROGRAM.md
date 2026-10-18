@@ -102,8 +102,11 @@ dependent execution; it does not stop an independent conditional lemma on the
 declared interface. The original raw contract has its own goal and completion
 premise. Neither its classification nor a bridge/passport is positive native GR.
 
-Reuse the existing #310 execution for its registered native/response obligation;
-do not open a competing execution under a new label. #202 keeps its full-affine
+Resolve `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE` with the live dispatcher
+and continue its existing execution. Historical #310 closed without merge;
+its published input snapshots remain evidence, not a runtime to reopen. The
+composition binding preserves the original raw terminal alongside the positive
+native route. Do not open a competing execution under a new label. #202 keeps its full-affine
 stationarity scope; #317 keeps its full complex stratification scope. Use their
 proved inputs, and request only the additional lemma consumed by the current
 argument. Do not falsely retire them or require an exhaustive classification

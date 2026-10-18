@@ -131,7 +131,9 @@ Assembly-Acceptance: APPLICATION-ID DIGEST
 Then set the application review to `accepted`, with that reviewer, digest and
 the decision's full ref/path/SHA-256. The reviewer differs from the result owner.
 The marker binds the statement, method, interfaces, maps, source evidence,
-quantifiers and hypothesis map. Changing any of these requires a new decision.
+quantifiers, hypothesis map and exact consumed prerequisite contracts. Changing
+any of these requires a new decision. An unrelated unused alternative method
+does not invalidate the existing proof.
 Rejected/proposed applications do not close anything. Ordinary prose changes
 outside the bound contract do not manufacture a new scientific result.
 
@@ -141,10 +143,15 @@ conditional applications retain their open assumptions. Machine validation
 checks the declared contract and immutable evidence, while mathematical
 applicability and the truth of a transport remain the reviewer's responsibility.
 
-Retirement and Ready PR validation require the binding's accepted completion
-premises. A useful reviewed slice may be consumed while its parent PR remains
-open. The original native response task retains its original raw terminal;
-intermediate positive constructions do not retire it.
+Retirement and Ready PR validation require a complete scoped terminal submission
+for every original completion premise. Proposed applications can satisfy this
+submission check, with all inputs supplied and no remaining extrinsic physical
+assumption. This lets a review candidate reach Ready for final replay and
+independent acceptance. Submission readiness never discharges a scientific
+premise or goal. CONTROL checks the pinned acceptance before scientific delivery
+and parent use. A useful reviewed slice may be consumed while its parent PR
+remains open; the original raw terminal still prevents retiring that parent on
+an intermediate positive construction.
 
 ## Prior attempts and input changes
 

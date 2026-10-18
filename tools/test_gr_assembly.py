@@ -117,6 +117,10 @@ class AssemblyTests(unittest.TestCase):
                                       "sha256": hashlib.sha256(decision.read_bytes()).hexdigest()}}
         return app
 
+    def sign_attempt(self, attempt):
+        model = self.model()
+        return self.sign_record(attempt, gr.attempt_digest(model, model["attempts"][attempt["id"]]))
+
     def git(self, *args):
         return subprocess.check_output(["git", *args], cwd=self.root, stderr=subprocess.PIPE, text=True)
 
@@ -280,7 +284,7 @@ class AssemblyTests(unittest.TestCase):
                    "question_digest": gr.work_digest(self.model(), self.contract["task_bindings"][TASK]),
                    "review": {"state": "proposed"}}
         self.intake["attempts"].append(attempt)
-        self.sign_record(attempt, gr.digest({k: v for k, v in attempt.items() if k != "review"}))
+        self.sign_attempt(attempt)
         model = self.model()
         self.assertFalse(gr.launch_check(model, TASK, [])["allowed"])
         self.assertTrue(gr.launch_check(model, OTHER, [])["allowed"])
@@ -307,7 +311,7 @@ class AssemblyTests(unittest.TestCase):
                    "question": {"statement": "Prove A", "assumes": []},
                    "question_digest": question, "review": {"state": "proposed"}}
         self.intake["attempts"].append(attempt)
-        self.sign_record(attempt, gr.digest({k: v for k, v in attempt.items() if k != "review"}))
+        self.sign_attempt(attempt)
         self.contract["task_bindings"][TASK]["assumes"] = ["A genuinely different declared hypothesis"]
         self.assertFalse(gr.launch_check(self.model(), TASK, [])["allowed"])
         self.contract["task_bindings"][TASK]["reopens"] = {"attempt": "dead", "delta": "The fixed old hypothesis is replaced by this independently justified new one."}
@@ -435,7 +439,7 @@ class AssemblyTests(unittest.TestCase):
         self.assertTrue((self.root / self.queue["tasks"][0]["brief"]).exists())
 
     def test_retire_requires_actual_accepted_completion(self):
-        with self.assertRaisesRegex(gr.AssemblyError, "accepted completion"):
+        with self.assertRaisesRegex(gr.AssemblyError, "complete reviewable terminal"):
             gr.retirement_check(self.model(), TASK)
         self.add_result()
         self.sign(self.add_app())
@@ -448,8 +452,75 @@ class AssemblyTests(unittest.TestCase):
         event = {"number": 17, "pull_request": {"number": 17, "draft": False, "head": {"ref": "wrk/one"},
                  "body": f"Repository: `gvakhrushev/d0_15`\nTask: `{TASK}`\nClass: `WORKER`\nLifecycle: `REVIEW`\n"
                          f"Baseline: `{'a' * 40}`\nPrimary-Artifact: `proof.md`\n"}}
-        with self.assertRaisesRegex(validate_pr_contract.ContractError, "accepted completion"):
+        with self.assertRaisesRegex(validate_pr_contract.ContractError, "complete reviewable terminal"):
             validate_pr_contract.validate_event(event, self.root)
+
+    def test_ready_review_candidate_does_not_need_its_later_scientific_acceptance(self):
+        self.add_result()
+        self.add_app()
+        model = self.model()
+        gr.retirement_check(model, TASK)
+        self.assertEqual(gr.evaluate(model)["closed"], set())
+        self.assertEqual(gr.evaluate(model, submission=True)["closed"], {"A"})
+
+    def test_ready_rejects_a_partial_result_with_remaining_physical_assumptions(self):
+        self.add_result(hypotheses={"admission": "The needed admission is unproved"})
+        self.add_app(bindings={"admission": {"assumption": "The needed admission is unproved"}})
+        with self.assertRaisesRegex(gr.AssemblyError, "complete reviewable terminal"):
+            gr.retirement_check(self.model(), TASK)
+
+    def test_consumed_prerequisite_statement_is_bound_into_acceptance(self):
+        self.add_result()
+        self.sign(self.add_app(target="B"))
+        self.contract["obligations"][0]["statement"] = "A weaker replacement for A"
+        with self.assertRaisesRegex(gr.AssemblyError, "stale acceptance"):
+            self.model()
+
+    def test_consumed_hypothesis_contract_is_bound_into_acceptance(self):
+        self.contract["obligations"][1]["methods"][0]["requires"] = []
+        self.add_result(hypotheses={"h": "Exact B"})
+        self.sign(self.add_app(bindings={"h": {"obligation": "B"}}))
+        self.contract["obligations"][1]["statement"] = "A changed statement for the consumed B hypothesis"
+        with self.assertRaisesRegex(gr.AssemblyError, "stale acceptance"):
+            self.model()
+
+    def test_unused_alternative_method_does_not_invalidate_existing_proof(self):
+        self.add_result()
+        self.sign(self.add_app())
+        self.contract["obligations"][0]["methods"].append({"id": "another", "requires": []})
+        self.assertEqual(gr.evaluate(self.model())["closed"], {"A"})
+
+    def test_negative_result_replacement_invalidates_attempt_acceptance(self):
+        self.add_result(outcome="negative")
+        attempt = {"id": "dead", "result": "r", "interface": "native", "work_key": "question-a",
+                   "scope": "The old exact negative theorem", "reopen_when": "A changed hypothesis",
+                   "question": {"statement": "Prove A", "assumes": []},
+                   "question_digest": gr.work_digest(self.model(), self.contract["task_bindings"][TASK]),
+                   "review": {"state": "proposed"}}
+        self.intake["attempts"].append(attempt)
+        self.sign_attempt(attempt)
+        self.intake["results"][0]["statement"] = "A completely different negative theorem"
+        with self.assertRaisesRegex(gr.AssemblyError, "stale acceptance"):
+            self.model()
+
+    def test_case_insensitive_live_metadata_matches_the_canonical_dispatcher(self):
+        candidate = self.pr()
+        candidate["body"] = candidate["body"].replace("Task:", "task:").replace("Class:", "class:").replace("Lifecycle:", "lifecycle:")
+        self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
+        model = self.model()
+        self.assertFalse(gr.launch_check(model, OTHER, [candidate])["allowed"])
+        self.assertEqual(next(a for a in gr.next_actions(model, [candidate]) if a["task"] == TASK)["action"], "resume")
+        self.queue["limits"]["WORKER"] = 1
+        self.contract["task_bindings"][OTHER]["work_key"] = "question-b"
+        self.assertIn("WIP is 1/1", " ".join(gr.launch_check(self.model(), OTHER, [candidate])["reasons"]))
+
+    def test_independent_verification_does_not_block_resuming_the_original_work(self):
+        self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
+        self.contract["task_bindings"][OTHER]["mode"] = "verification"
+        model = self.model()
+        self.assertTrue(gr.launch_check(model, TASK, [self.pr(task=OTHER)])["allowed"])
+        actions = gr.next_actions(model, [self.pr(), self.pr(task=OTHER, number=13)])
+        self.assertEqual({a["action"] for a in actions}, {"resume"})
 
     def test_impact_reuses_existing_dependency_selector_without_replay(self):
         import research_input_closure

@@ -120,9 +120,12 @@ actually revised, not a bulk cosmetic migration.
    it cannot fill a positive existence slot. The original raw response and
    positive physical GR remain separate goals.
 
-   Retirement and the Ready PR gate require the binding's accepted completion
-   premises. Parent research can remain open while a narrower result application
-   is accepted. Do not retire an unresolved parent to publish a useful slice.
+   Retirement and the Ready PR gate require a complete, scoped, reviewable
+   submission for the binding's original completion premises. Proposed intake
+   can reach Ready so final replay and independent review can occur. It does not
+   discharge an accepted premise or goal until its pinned acceptance exists.
+   Parent research can remain open while a narrower result is accepted; do not
+   retire an unresolved parent to publish a useful slice.
 
 Preserve all specified components, source terms and resonant directions.
 Compare actions only when action equality is necessary; equality of physical

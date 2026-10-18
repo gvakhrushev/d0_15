@@ -29,6 +29,8 @@ For executable WORKER/EXPENSIVE PRs:
 - do not report the task complete until this PR is merged.
 
 For gravity executions, retain the registered Assembly binding and its exact
-completion premises. Ready validation checks the independently accepted result
-application; retiring a queue row alone does not establish scientific completion.
+completion premises. Ready validation checks a complete scoped terminal
+submission. Final replay/review and independent acceptance follow at Ready;
+proposed intake does not discharge scientific premises or goals. Retiring a
+queue row alone does not establish scientific completion.
 The original raw terminal and positive native GR remain separate obligations.

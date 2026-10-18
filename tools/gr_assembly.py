@@ -153,16 +153,32 @@ def load(root: Path) -> dict:
     return model
 
 
+def premise_contract(model: dict, name: str) -> dict:
+    ob = model["obligations"][name]
+    return {k: ob.get(k) for k in ["id", "statement", "interface", "outcome", "scope_level", "hypotheses", "allow_passport"]} | {
+        "interface_definition": model["contract"]["interfaces"][ob["interface"]]}
+
+
 def application_digest(model: dict, app: dict) -> str:
     target = model["obligations"][app["obligation"]]
     result = model["results"][app["result"]]
     interface = model["contract"]["interfaces"]
+    method = next(m for m in target["methods"] if m["id"] == app["method"])
+    dependencies = set(method["requires"]) | {b["obligation"] for b in app["hypothesis_map"].values() if "obligation" in b}
     return digest({
         "application": {k: v for k, v in app.items() if k != "review" and not k.startswith("_")},
-        "target": target, "result": result,
+        "target": premise_contract(model, target["id"]), "result": result,
+        "method": {"id": method["id"], "requires": sorted(method["requires"])},
+        "prerequisite_contracts": {name: premise_contract(model, name) for name in sorted(dependencies)},
         "target_interface": interface[target["interface"]],
         "result_interface": interface.get(result.get("interface")),
     })
+
+
+def attempt_digest(model: dict, attempt: dict) -> str:
+    return digest({"attempt": {k: v for k, v in attempt.items() if k != "review" and not k.startswith("_")},
+                   "result": model["results"][attempt["result"]],
+                   "interface": model["contract"]["interfaces"][attempt["interface"]]})
 
 
 def accepted_review(model: dict, record: dict, expected_digest: str) -> bool:
@@ -308,19 +324,19 @@ def validate(model: dict) -> None:
         text_field(attempt.get("work_key"), "attempt work key", 200)
         text_field(attempt.get("scope"), "attempt scope")
         text_field(attempt.get("reopen_when"), "attempt reopen condition")
-        payload = {k: v for k, v in attempt.items() if k != "review" and not k.startswith("_")}
-        attempt["_accepted"] = accepted_review(model, attempt, digest(payload))
+        attempt["_accepted"] = accepted_review(model, attempt, attempt_digest(model, attempt))
     acyclic(edges, "proof dependencies")
 
 
-def evaluate(model: dict, additionally_closed=()) -> dict:
+def evaluate(model: dict, additionally_closed=(), *, submission=False) -> dict:
     """OR across proof methods/applications, AND across their actual inputs."""
     closed, witnesses = set(additionally_closed), {}
     changed = True
     while changed:
         changed = False
         for aid, app in model["applications"].items():
-            if not app.get("_accepted") or app["obligation"] in closed:
+            eligible = app.get("_accepted") or (submission and app["review"]["state"] == "proposed")
+            if not eligible or app["obligation"] in closed:
                 continue
             ob = model["obligations"][app["obligation"]]
             method = next(m for m in ob["methods"] if m["id"] == app["method"])
@@ -362,7 +378,8 @@ def validate_queue(root: Path, model: dict) -> None:
 
 
 def metadata(body: str, field: str) -> list[str]:
-    return [v.strip() for v in re.findall(rf"^{re.escape(field)}:[ \t]*`?([^`\r\n]+)`?", body, re.MULTILINE)]
+    from task_dispatch import metadata as canonical_metadata
+    return canonical_metadata(body, field)
 
 
 def task_for_pr(pr: dict) -> str | None:
@@ -395,7 +412,7 @@ def launch_check(model: dict, task_id: str, prs: list[dict]) -> dict:
         other_id = task_for_pr(pr)
         other = bindings.get(other_id)
         if other and other_id != task_id and collision_key(other) == collision_key(binding):
-            if binding["mode"] != "verification":
+            if binding["mode"] != "verification" and other["mode"] != "verification":
                 reasons.append(f"same scientific work already executes in #{pr['number']} ({other_id})")
     missing = set(binding["start_requires"]) - state["closed"]
     if missing:
@@ -429,8 +446,8 @@ def retirement_check(model: dict, task_id: str) -> None:
     binding = model["contract"]["task_bindings"].get(task_id)
     require(binding is not None or "A4D" not in task_id, f"{task_id}: missing assembly binding at retirement")
     if binding:
-        missing = set(binding["completion_requires"]) - evaluate(model)["closed"]
-        require(not missing, "scientific retirement requires accepted completion premises: " + ", ".join(sorted(missing)))
+        missing = set(binding["completion_requires"]) - evaluate(model, submission=True)["closed"]
+        require(not missing, "Ready submission requires complete reviewable terminal premises: " + ", ".join(sorted(missing)))
 
 
 def context(model: dict, task_id: str) -> str:
@@ -486,7 +503,8 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
             for other in prs:
                 other_id = task_for_pr(other)
                 other_binding = model["contract"]["task_bindings"].get(other_id)
-                if other_id != tid and other_binding and binding["mode"] != "verification" and collision_key(binding) == collision_key(other_binding):
+                if (other_id != tid and other_binding and binding["mode"] != "verification"
+                        and other_binding["mode"] != "verification" and collision_key(binding) == collision_key(other_binding)):
                     action = "resolve-overlap"
                     reasons.append(f"same scientific work also owned by #{other['number']}")
         elif prs is None:
@@ -699,7 +717,7 @@ def main(argv=None) -> int:
             record = model["applications"].get(args.application) or model["attempts"].get(args.application)
             require(record is not None, "unknown application or scoped attempt")
             app = {k: v for k, v in record.items() if not k.startswith("_")}
-            value = application_digest(model, app) if args.application in model["applications"] else digest({k: v for k, v in app.items() if k != "review"})
+            value = application_digest(model, app) if args.application in model["applications"] else attempt_digest(model, app)
             data = {"id": app["id"], "digest": value,
                     "acceptance_marker": f"Assembly-Acceptance: {app['id']} {value}"}
         else:
