@@ -34,7 +34,7 @@ real vacuum remains explicit; the pureclock lemma is not that full code.
 The latest C_Y attachment is already preserved byte-for-byte and consumed
 in6.33. Its finite-t conditional vacuum theorem remains its OWN instrument's
 result. It supplies neither native capacity PREP nor the other detector's
-full-price binding. Concurrent05767255 is integrated without overwriting
+full-price binding. Concurrent05767255/d26199b7 are integrated without overwriting
 its history-source/Lean owners. Continue the actual native/Book/PREP and
 correlated-recovery transition; GR_closed=false, original raw#216 OPEN.
 

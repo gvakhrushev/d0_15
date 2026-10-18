@@ -44,7 +44,7 @@ which a pureclock qutrit does not cover. Actual spectral-rank/overlap and
 source-jet criteria are given for the constrained-query matter operator.
 Next derive ONE actual complete history/price/PREP/clock map and its
 controlled correlated joint solutions/refinement. Physical GR and raw#216
-remain open; current disjoint05767255 is integrated.
+remain open; current disjoint05767255/d26199b7 are integrated.
 
 Preceding full-source consumer:
 [strategic§7.21](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
@@ -61,6 +61,17 @@ it exactly. Next consume actual native/full Book price and its complete
 joint normals, including clock/prep/embedding mixed jets. Do not repeat
 arbitrary detector design or identify naked-star Schur with whole-price
 PF dynamics. Physical selection/recovery and raw#216 remain open.
+
+The G0 operator-side variation of the actual Book 03 feedback factor is now
+classified in [the native history/action boundary, §7](A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md#7-book-03-feedback-component-complete-operator-variation):
+all projector and unitary tangents, the complete P/U/Q/z source pullback,
+and its exact operator Euler equations. An exact same-base control confirms
+that these do not determine a metric source until the admitted field-to-
+(P,Q,U,z) map is supplied. This closes the feedback component's operator
+calculus only; it does not bind the other terms in the full price, select a
+physical query, or establish matter/Ward/refinement. The next shared owner
+must put its field and retained-history variables through this same map and
+full action, with the actual independent variations.
 
 The preceding archive/input consumer:
 [strategic §7.20](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

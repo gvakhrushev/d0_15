@@ -2416,6 +2416,14 @@ action tangent is an interface result, not an admitted metric source.
 [Full-source6.66–6.71](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 now consumes the complete SAME-word price/preparation transition.
 
+Concurrent d26199b7 is also integrated. Its
+[Book03 feedback operator variation](A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md#7-book-03-feedback-component-complete-operator-variation)
+keeps every P/U/Q/z chain term and classifies the isolated operator Euler.
+The conditional geometric matrix/source map already exists in0.3; its
+native admission and full history/price binding remain the needed physical
+arrow. Independent operator stationarity is not imposed on the constrained
+geometry query, and free z requires its own whole-price balance.
+
 **Положительный equation bridge.** У actual Choi/fixed-effect detector
 с retained failure coins q_good=g, q_bad,z=(1−g)β_z, β fixed.
 Strictgood mode gives DH=κ(g)D(−logg), κ>0, on the WHOLE correlated-input

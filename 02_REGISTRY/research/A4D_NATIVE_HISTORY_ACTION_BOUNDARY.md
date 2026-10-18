@@ -350,6 +350,10 @@ or the Euler equations of a resulting geometric and matter action.
 Canonical counting, a fixed positive trace and path additivity do not
 specify that map. If a different history owner is used, its identification
 with these scene paths must be proved; similarity of names is insufficient.
+The isolated Book 03 feedback component now has its full operator-level
+state, tangent, first-source and stationary equations in §7; those formulas
+still require the native field-to-operator lift and do not complete the
+remaining action-stack terms.
 
 The next exact G0 obligation is therefore the **field-dependent history
 readout/composition law**, or a complete independence theorem for the full
@@ -366,3 +370,101 @@ The [Lean capsule](certificates/a4d_native_history_action.lean),
 [immutable control ledger](certificates/a4d_native_history_action_certificate.json)
 separate compiled statements, analytic universal proofs and finite controls.
 No supported source, claim, BOOK entry or task lifecycle is changed.
+
+## 7. Book 03 feedback component: complete operator variation
+
+This section consumes the actual Book 03 factorization
+\[
+F=P U^* Q U P,\qquad I_{fb}=-\log\det(I-zF),\qquad
+\Pi=z(I-zF)^{-1}.
+\]
+It characterizes the full unrestricted factorized operator manifold at fixed
+projection ranks for this component, not the unprovided full geometric/matter
+stack. Let \(P,Q\) be orthogonal projections, \(U\) unitary and \(0<z<1\).
+Then \(F\) is a positive contraction and the action is smooth. The source formula
+\(D I_{fb}[\dot F]=\operatorname{Tr}(\Pi\dot F)\) is Book 03's owner.
+
+Every differentiable operator path has tangents
+\[
+X=\dot P=X^*,\quad XP+PX=X,
+\qquad
+Y=\dot Q=Y^*,\quad YQ+QY=Y,
+\qquad
+\dot U=KU,\quad K^*=-K.
+\]
+Conversely these are precisely the tangent spaces of the two finite
+Grassmannians and \(U(n)\). Differentiating \(P^2=P\) gives \(XP+PX=X\);
+for Hermitian \(X\) satisfying this equation, \(PXP=(I-P)X(I-P)=0\).
+Conversely \(K_P=XP-PX\) is skew-Hermitian and \([K_P,P]=X\), so
+\(P(t)=e^{tK_P}Pe^{-tK_P}\) realizes every such tangent. The same proof
+applies to \(Q\); every \(K^*=-K\) is realized by \(U(t)=e^{tK}U\).
+These are all mathematical operator tangents. Their admission as variations
+of a D0 metric, record, or matter field is a separate question.
+
+Put \(R=U^*QU\). Differentiating the actual returned operator gives
+\[
+\dot R=U^*(Y+[Q,K])U,\qquad
+\dot F= X R P+P U^*(Y+[Q,K])UP+P R X.                 \tag{7.1}
+\]
+If the same admitted field variation \(v\) moves all inputs and the scalar,
+write \(X=D P[v]\), \(Y=D Q[v]\), \(K=D U[v]U^*\), and
+\(\dot z=Dz[v]\). Its exact Book-feedback covector is
+\[
+D I_{fb}[v]=\operatorname{Tr}(\Pi\dot F)
+ +\operatorname{Tr}((I-zF)^{-1}F)\,\dot z.          \tag{7.2}
+\]
+This is the complete chain rule for this owner, including the projector,
+query, and fugacity legs. It makes clear which data a metric or matter source
+must receive from a separate field-lift owner.
+
+For independent variations of \(P,Q,U\), define
+\[
+G_P=RP\Pi+\Pi PR,\qquad G_Q=UP\Pi PU^*.
+\]
+The exact stationary equations are
+\[
+[P,G_P]=0,\qquad [Q,G_Q]=0.                          \tag{7.3}
+\]
+Indeed cyclicity gives
+\(D_P I_{fb}[X]=\operatorname{Tr}(G_PX)\) and
+\(D_{Q,U}I_{fb}[Y,K]=\operatorname{Tr}(G_Q(Y+[Q,K]))\).
+Vanishing against every off-diagonal Hermitian projector tangent is
+equivalent to the first commutator equation; vanishing against all
+independent projector and unitary tangents gives the second.
+The second equation is both the \(Q\)- and \(U\)-Euler equation: the
+feedback depends on those two coordinates only through \(U^*QU\).
+Indeed \((U,Q)\mapsto(VU,VQV^*)\) leaves \(F\) unchanged for every
+unitary \(V\). This is a genuine representation redundancy of the isolated
+feedback component; it is not promoted to gauge freedom of the full D0 price,
+which may contain terms reading \(U\) or \(Q\) separately. If \(z\) is
+also freely varied in this component, then
+\[
+D_z I_{fb}=\operatorname{Tr}((I-zF)^{-1}F)>0
+\]
+whenever \(F\ne0\). Thus a nonzero-return stationary point requires
+\(z\) to be fixed by another native constraint or balanced by other terms
+of the same full action.
+
+The missing physical pullback is detectable even with the same base
+operator and the same action. On \(\mathbb R^2\), take
+\(P=Q=\operatorname{diag}(1,0)\) and \(U_\theta\) the rotation by
+\(\theta\). Then \(F_\theta=\cos^2\theta\,P\). At the same base
+\(\theta=\pi/4\), a constant lift \(\theta(q)=\pi/4\) has
+\(D_q I_{fb}=0\), while \(\theta(q)=\pi/4+q\) has
+\[
+D_q I_{fb}=-\frac{z}{1-z/2}\ne0.
+\]
+Both use the identical \(P,Q,U(0),z,F(0)\) and obey the same finite
+feedback law. This is an exact witness that the operator action alone does
+not specify its metric pullback. It is not a claim that either lift is a
+physically admitted D0 programme; admission and refinement of the map remain
+the next G0 datum.
+
+The derivation and [exact 2-by-2 source controls](certificates/a4d_book03_feedback_variation_check.py),
+with the [replay receipt](certificates/a4d_book03_feedback_variation_result.json),
+are pinned to Book 03 blob
+ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa
+(SHA-256 dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d).
+The checker reports exact operator identities only. It does not certify
+native field admission, the remaining \(S_{coeff},S_{heat},S_{terminal}\)
+terms, matter Ward identity, refinement, or a physical Einstein equation.

@@ -14,7 +14,7 @@ Execution: `GitHub-first`
 
 ### 18 October: complete SAME-law price and correlated preparation consumer
 
-Input31f7926, companion05767255; previous goal turn PROGRESS. The same
+Input31f7926, companion05767255/d26199b7; previous goal turn PROGRESS. The same
 owned full-source/strategy/primary/route/checker paths continue in Draft334.
 Read-only /tmp premises now consume the SAME Choi/D3 word: (1) complete
 retained bad-seed/prefix/Born/Book law and equation-level mean/MAP relation;
