@@ -198,3 +198,69 @@ D_Phi(H+R)[delta_xi Phi]
 **Главный потребитель к ОТО:** вместо попытки invert singular metric Hessian проверить на **одной уже построенной pp-wave branch** реальный `dot Delta_h` для backward-null translation и вычислить `Pinch_(Delta_h)(dot Delta_h)` вместе с moving sampling/clock effect. Если он исчезает или имеет достаточно малую norm после УЖЕ принадлежащей общей normalization/spatial reconstruction, `H+R` не препятствует metric-kernel reduction. После этого истинное Lyapunov–Schmidt reduced equation должно включить также J_v8, controller и остальные `S_rest`; одна (11) не доказывает exact compiled roots или physical Einstein. Если pinched source survives O(1) on shell, это точная препятствующая строка и предложение нового action запрещено.
 
 **Отрицательный контроль:** если `Delta=diag(lambda1,lambda2)` и `dot Delta` только off-diagonal, pinching0 и (9)0 при eigenpreparation, несмотря на ненулевое `dot Delta`. Если `dot Delta=diag(d,0)`, `rho=diag(1,0)` и `tau=diag(1/4,3/4)`, `h'=I`, то `A=diag(3/4,-3/4)` и `D(H+R)=3d/4`. Значит приписать любую backward-null translation gauge на основании «она похожа на diffeomorphism» ложно. Условие источника — именно spectral pinching/operator-conjugacy.
+
+
+## 9. Как quotient metric-null может появиться в пределе: точный finite Leibniz defect + THERMAL spectral pinching
+
+Разница между конечной backward-null метрикой §§6.23–6.25 и настоящим continuum diffeomorphism не должна исчезать в `|| · ||_op` на ВСЕХ Fourier modes: UV momenta живут на масштабе `h^-1`. Поэтому estimate (11) с глобальным operator norm достаточен, но в общем излишне силён. Положительный путь — **спектрально взвешенный остаток источника**, а не абсолютная ковариантность любого частотного режима.
+
+### 9.1. Более сильное точное условие: только диагональ дефекта в native spectrum
+
+На fixed eigenpreparation из (9), `rho` поддержана в `lambda_m`, `A=rho-tau h'(Delta)`, и для ЛЮБОГО `K` пишем `R_K=dot Delta-[K,Delta]`. Сразу из (10), положительности tau и собственной декомпозиции Delta:
+
+```
+|D(H+R)| <= ||P_(lambda_m) R_K P_(lambda_m)||_op
+ + Σ_lambda Tr(tau P_lambda) |h'(lambda)|
+               ||P_lambda R_K P_lambda||_op.            (13)
+```
+
+Никакого выбора fixed eigenbasis внутри degeneracy нет. Это оценка **действительного source**, а не all-mode Hessian. Она убирает любые off-diagonal commutator directions точно. При истинных `rho,` `tau` с trace1 constants НЕ растут вместе с AF/reference dimension. Для direct heat `h'=I`; для native v8 `h'=(I-alpha Delta)^-1` и positive spectral floor даёт `|h'|<=p^-3`.
+
+**Один общий достаточный контролируемый переход.** Допустим на той же actual full-carrier последовательности
+
+```
+||P_lambda R_(K_h) P_lambda|| <= C h (1+|lambda|)^s,
+|lambda_m,h|<=L_m,
+sup_h Tr[tau_h |h'(Delta_h)|(1+|Delta_h|)^s] <= M_s.  (14)
+```
+
+Тогда БЕЗ uniform operator-norm covariance, spectral gap, inverse Hessian или finite exact diffeomorphism
+
+```
+|D(H_h+R_h)[backward-null]|
+ <= C h[(1+L_m)^s+M_s] -> 0.                            (15)
+```
+
+Это exact consuming theorem: если actual operator metric-null jet имеет форму commutator + spectral residual `O(h)` с polynomial energy growth, а actual thermal weights имеют соответствующий момент, то недостающий H+R **tangential source** не препятствует continuum quotient.
+
+**Критическая дисциплина:** имеющаяся в full-channel owner fourth-moment bound для actual matter preparation `rho_h` НЕ есть автоматически момент `tau_h` для независимой heat density. Нужен реальный same-price/calibration proof (14), и clock `beta_h` со своим source. Другие terms `J_v8,S_rest` остаются в редуцированном Euler equation.
+
+### 9.2. Почему именно здесь у discrete D0 был UV-блокер: точный одномерный модельный закон
+
+Это НЕ утверждение, что настоящий full16 Dirac уже эквивариантен. Но на буквальном finite-difference carrier можно вывести точный механизм, объясняющий нужный характер (14), вместо фантазии об exact finite smooth gauge.
+
+Возьмём одну periodic coordinate, shift `Tf(x)=f(x+h)`, `D=(T-I)/h`, multiplication `M_psi`, а smooth infinitesimal translation `K=M_psi D`. Исходный finite Leibniz rule
+
+```
+D(psi f)=(D psi) T f+psi D f
+```
+
+даёт ТОЧНО
+
+```
+[K,D] = -M_(D psi) T D.                                 (16)
+```
+
+Геометрически желаемое изменение derivative при inverse-solder `1−eps Dpsi` равно `dot D_geom=-M_(Dpsi)D`. Следовательно на каждом finite h
+
+```
+dot D_geom-[K,D] = h M_(Dpsi) D².                     (17)
+```
+
+Это точный residual discrete chain rule, НЕ continuum approximation. Для backward difference `D^-=(I-T^-1)/h` соответствующий знак обратный: `dot D_geom^--[M_psi D^-,D^-]=-h M_(D^-psi)(D^-)²`. Именно backward-difference архитектура присутствует у конкретной pp-wave нулевой моды #334.
+
+На smooth mode `f=e^(ikx)` при fixed k residual (17) имеет norm `O(h k²)`. На Nyquist `k≈π/h` он может быть `O(h^-1)`. Значит попытка доказать `||dot Delta-[K,Delta]||_op→0` на всём конечном spectral carrier в общем заведомо неверна уже в одномерном model. Нужна **thermal/sourced norm** (13–15) или специальный точный symbol cancellation, и нельзя убирать high modes вручную.
+
+Данный identity не доказывает (14) для actual 4D Lorentz-CAR16/Julia operator: в нём имеются mixed creators, true adjoints, observer, proper noncommuting links, full measure и real return effects. Но он задаёт точный next full GR consumer: вычислить operator covariance residual под конечной backwards-null `delta v`, отделить его commutator и оценить только spectral diagonal against actual tau/rho, в настоящих h- и spatial-reconstruction norms.
+
+**Стратегическое следствие:** два прежних препятствия — noninvertible metric kernel и UV failure exact covariance — не требуют двух новых постулатов. Общий источник этих препятствий один: отсутствие конечного product rule для непрерывной координатной диффеоморфной вариации. Его actual thermal *first-source* residue (14) и есть математическая проверка, снимающая оба в пределе, если она положительна. Действительный независимый matter source из §§2–6 и полный native Book binding остаются другой обязательной стрелкой к ОТО.
