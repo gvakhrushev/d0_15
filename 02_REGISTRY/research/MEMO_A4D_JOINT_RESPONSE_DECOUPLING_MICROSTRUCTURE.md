@@ -1,6 +1,37 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
-## 18 October 2026 — complete labelled source with solved free preparation
+## 18 October 2026 — native source, preparation and nonlinear GR synthesis
+
+**Direct Book-feedback consumer, input `423836c7`:**
+[full-source §§6.18–6.22](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consumes the ALREADY owned feedback price/source of17 October. The
+full two-tick AF/scene determinant supplies the monotone star source
+without any Shannon-mean identification or physical input probabilities.
+Regular multiplicities give exact doubled-depth LEFT trace weights
+without a RIGHT-copy; all528 retained scene modes and22448 ambient
+complement directions are correctly kept. A new clean-return estimate
+transfers the feedback price in C3 through zero modes. After the actual
+normalization its first-source error is independent of AF/reference
+dimension, with the true t^-2 and spatial reconstruction budget retained.
+This requires an ACTUAL work-return cut and all-data clean-domain
+operator estimates, not one prepared input or discarded offblank work.
+The whole-stack remainder is explicitly nu*H_B:DB+D S_rest; moving
+scene, clock and other native prices are not silently removed. The old
+fixed-scene seed has a conserved charge preventing bhalf within its
+own word, while full Julia primitives break that charge. It is a real
+preparation/resource gate, not an independent stress theorem. Physical
+geometric SELECT and the remaining full source are now the consumer;
+do not repeat another entropy selection or the old one-tick calculation.
+The honest spectator bound controls H/R but does not suppress the old
+feedback: its full AF trace multiplies J_v8 by F_(2N+15)=O(K).
+A flat scaling family distinguishes the named v8 and AF-star feedbacks;
+shared primitives do not identify their whole programme. The disjoint
+paired-GNS shift-seed preparation at742840ab is consumed with its own
+pointer/source boundary, without mixing its price into the operator-J route.
+The exact finite-word shortcut is excluded on an explicit open full-field
+patch: native query source is O(s^3), while the star source is a nonzero
+constant in s. This preserves compact C3 approximation but requires an
+actual critical-family argument for exact compiled roots.
 
 **Fixed-past/raw-matter bridge, input `ce063b4d`:**
 [full-source §§6.15–6.17](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)

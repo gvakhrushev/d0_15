@@ -12,6 +12,36 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: consume the native feedback price instead of choosing a mean
+
+Input `423836c7`; the preceding goal turn made progress by publishing
+the fixed-RIGHT PF preparation/raw16 compatibility bridge. Root now
+consumes the ALREADY owned direct feedback source of 17 October rather
+than deriving its one-tick formula again. Read-only assistants verify
+the full two-tick AF/scene determinant and moving-scene covector,
+the actual carrier/trace multiplicities, and native charge-changing
+preparation boundaries. Root owns the same existing full-source,
+strategic, primary and current-route files plus one bounded new check.
+The new consumer is the smooth full-feedback source of the compiled
+geometric word, including every work exit. A clean-work return cut
+must be an explicit actual projector; it is not inferred from a
+one-input implementation. Preserve the full regular carrier, scene528
+retained modes and22976 ambient coordinates, raw16 and reference128.
+Do not replace the varied whole stack by its feedback component;
+moving scene, clock and remaining-price sources stay in the equation.
+
+Consumed in full-source §§6.18–6.22 / strategic §7.9: complete two-tick
+tensor feedback with exact regular trace folding and moving-scene source;
+new clean-return C1/C3 bounds have dimension-independent relative
+normalization and cover zero feedback modes. Existing17 October price
+and radial-reduction proofs are reused, not reissued as discoveries.
+The source remains nu*H_B:DB+D S_rest for the actual whole programme;
+state balance cannot cancel it. Fixed-seed scene-charge obstruction is
+scoped to its real word, and full Julia primitives have no CAR-only
+charge. One bounded exact calculation covers the new tensor/source,
+offblank-cut countercontrol, smooth birth and charge consumer. No old
+certificate or Lean replay is required for this checkpoint.
+
 ### 18 October: bind the preparation, raw matter and physical Book source
 
 Input `ce063b4d`; root continues the same full-source argument rather
@@ -1517,6 +1547,25 @@ assert preparation reachability, or close the original joint-critical
 source/comparator/refinement terminal. All source terms share any derived
 multiplier; approximate splice error must be o(lambda_h h^2) in the
 original dual norm.
+
+## Same-program source consumer — 18 October 2026
+
+Continue the direct Book-feedback source in full-source §§6.18–6.22.
+Use fixed-z C3 whole-output estimates on the actual clean return cut,
+with every CAR/data column and all work leakage retained. The complete
+remaining covector is nu*H_B:DB+D S_rest under ONE fixed action scale.
+For a genuine AF spectator, H/R bounds are dimension independent, but
+the retained v8 feedback is multiplied by the full spectator dimension
+F_(2N+15)=O(K). Do not infer whole-price domination from J_AF~K.
+The smallest additional control is homogeneous flat scaling: v8 feedback
+vanishes as u=delta*u0 tends to0 at fixed n, while the named AF-star
+active branch remains positive. This tests same-program identification,
+not continuum GR. Preserve the parallel742840ab paired-GNS seed source
+with its separate readout/admission and preparation-price boundary.
+The exact finite-word scalar-star identity is also excluded on an open
+full-field patch; compact C3 approximation is retained, while exact roots
+require actual constrained critical-family stability. Same write surfaces
+and one bounded helper; no old scientific replay.
 
 ## Objective
 

@@ -1690,6 +1690,357 @@ raw pure balance/metric identity и точное gain-defect identity.
 [Receipt](sources/d0_af_star_full_lattice_2026-10-17/FIXED_RIGHT_RAW_MATTER_SOURCE_RESULT.json)
 не означает physical admission или полную Lean-проверку.
 
+### 6.18. Прямой Book-feedback: потребляем уже принадлежащую цену
+
+Вход `423836c7`. Для следующей стрелки не нужно ждать выбора Shannon
+mean: [feedback owner от17 октября](sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md),
+§§2–8, уже вычислил собственный Book03 компонент
+`J=−Trlog(I−zF)` того же W_E. Его one-tick source, F₂, regular/PF
+сравнение и radial reduction НЕ являются новым результатом этого
+продолжения. Здесь они потребляются полным двухтактовым AF×scene
+словом и smooth compiler estimate ниже. J остаётся компонентом
+varied stack, не переименовывается во всю Cost−Info.
+
+На исходном price cut `P_AF=diag(I,I,0,0)` два исполнения T_E дают
+`F_AF,2≃diag(λ(E),0)`, `λ(E)=4E(I−E)`. Обе ветви обязательны.
+Пусть B — двухтактовый scene feedback на retained scene cut rank528,
+Q=I−zB. На полном регулярном AF carrier
+
+    d=(F_(N+2),F_(N+1)), D=M⁶d=(F_(N+8),F_(N+7)),
+    K=dᵀD=F_(2N+9),
+    R_j=(1−z)I+z(I−λ(E_j))⊗(I−B),
+    J₂⁰=−K Tr_s log Q−Σ_j D_j Tr_(old,s) log R_j.       (13at)
+
+Tr_s здесь включает ВСЕ528 retained scene-моды:0×264,L×184,
+L₃×36,L_v×44. Остальные22448 из22976 scene coordinates не удалены:
+вне составного return cut F=0 и pencil=I. Нельзя продолжать tensor
+формулу `I−(I−F_AF)⊗(I−B)` на scene complement: это ошибочно создало
+бы там дополнительный AF feedback. Аналогично сохраняется весь
+AF complement. Если reference входит в declared determinant carrier
+как tensor-I spectator кратности ν, actual J₂=νJ₂⁰;
+новую кратность произвольно не выбираем.
+
+Для диагональных e_i это `J₂⁰=Σ_(j,i∈j)D_j g_B(e_i)`, где
+
+    g_B(e)=−Tr_s log(I−zB)
+           −Tr_s log[I−z(λ(e)I+(1−λ(e))B)],
+    g_B′(e)=4z(1−2e)Tr_s[(I−B)R(e,B)⁻¹]>0             (13au)
+
+при0<e<1/2,B≠I. При e=p², L=4p³,1−L=p⁶, формула в ТОЧНОСТИ
+восстанавливает полный determinant activation(14), включая exponent448
+у L и остальные184,36,44. Это цена существующего operator word,
+без occupied state, entropy maximum, tracial preparation или нового Info.
+
+Интринсические trace weights имеют более сильный точный consumer,
+чем одно асимптотическое сравнение с PF. `w_j=D_j/K` есть pullback
+РАВНОМЕРНОГО defining LEFT trace уровня2N+6. Число его продолжений
+old leaf равно D_j. На любом A_k,k≤N коэффициенты равны
+
+    x_(k,N)=F_(2N−k+8)/F_(2N+9),
+    y_(k,N)=F_(2N−k+7)/F_(2N+9).                       (13av)
+
+Это тот же Fibonacci folding count, но источник его здесь — обычный
+determinant и полные regular multiplicities. Измерять RIGHT и добавлять
+H(R|L) не требуется. Состояние физического прошлого не объявляется
+tracial. Для geometric Q_x из READY words одной стоимости k все их
+веса отличаются от PF одним ОБЩИМ положительным числом. Поэтому
+finite weighted-star zero set точно тот же уже при конечном N.
+Для нормировки относительного matter coupling остаются точные
+коэффициенты; их Binet discrepancy ограничена
+`[p^(2N+14)+p^(4N+18)]/[1−p^(4N+18)]` на A_N.
+
+Положим c=p²t²,e₀=p²,w_x=Σ_(i∈Q_x)D_type(i)/K и
+
+    Φ_J(f)=[g_B(e₀+c f)−g_B(e₀)]/[c g_B′(e₀)],
+    a_N=ν K c g_B′(e₀)>0, P_w=Σ_x w_x f_x.
+
+При фиксированной intrinsic scene tuple или её подлинном simultaneous
+transport существующий radial inverse даёт
+
+    DJ₂=a_N M_J* DP_w, Crit J₂=Crit P_w.                (13aw)
+
+Используются ровно прежние radial variations; на fixed-collar f=0
+семье достаточно forward identity всех16+24 interior строк. Подготовки,
+reference128 и их entangling first rows в operator J тождественно
+нулевые, если они не меняют его операторы. Поэтому J-стрелка не
+требует ни s*, ни uniform input weights, ни balanced scene state.
+Здесь не требуется готовить новый m₀: исходный timelike clock seed
+может остаться, но остальные члены полного действия всё равно видят его.
+
+Полная moving-scene строка НЕ исчезает от b=1/2. Для некоммутирующих
+DE_j,DB cyclic trace даёт точно
+
+    DJ₂⁰=Σ_j D_j Tr(C_j DE_j)+Tr_s(H_B DB),
+    C_j=4z(I−2E_j)Tr_s[(I⊗(I−B))R_j⁻¹],
+    H_B=z[KQ⁻¹+Σ_jD_j Tr_old[((I−λ(E_j))⊗I)R_j⁻¹]].   (13ax)
+
+В golden точке `H_B=zK[Q⁻¹+p⁶R₀⁻¹]`,
+`R₀=I−z(LI+p⁶B)`. Этот положительный covector зануляется при
+подлинном DB=[X,B] либо по СОБСТВЕННЫМ scene equations, не occupied
+preparation. Продуктовая factorization уже доказана feedback owner§8:
+при actual Z_xB=0
+`Crit J₂=Crit P_w × Crit K_scene`,
+`K_scene=−νK Tr_s(logQ+logR₀)`. Непустота Crit K_scene и право
+независимых variations остаются входами. Если B=B(q,D,m), сохраняется
+именно его pullback (13ax), а не искусственно фиксированный spectrum.
+При genuinely free z добавляется положительный
+`∂_zJ=Tr[F(I−zF)⁻¹]`; interior nonzero-F J-only z-root отсутствует.
+
+### 6.19. Smooth full-feedback source компиляции: чистый вход и все выходы
+
+Новый consumer снимает аналитический zero-outcome barrier, который
+принадлежит Shannon price. Для ЛЮБОГО actual finite unitary U и
+field-independent orthogonal return cut P ранга r
+
+    F_U=P U†(I−P)UP, 0≤F_U≤P,
+    I−zF_U≥(1−z)I,
+    J_U=−Tr log(I−zF_U), 0<z<1.                       (13ay)
+
+Нулевые feedback modes здесь регулярны, в отличие от `−q logq`.
+Если UP и VP близки в operator C¹ norm с ошибкой ε, а их first
+derivatives ограничены L≥1, то
+
+    ||F_U−F_V||≤2ε, ||DF_U−DF_V||≤4Lε,
+    |J_U−J_V|≤2zrε/(1−z),
+    ||DJ_U−DJ_V||≤4zrLε/(1−z)².                       (13az)
+
+Доказательство: F=( (I−P)UP )†((I−P)UP), resolvent identity
+даёт `||R_U−R_V||≤2zε/(1−z)²`; затем используем
+`DJ=zTr(R DF)` на ранге r. Нужна whole-output norm UP, включая
+всю leakage, а не только проекция выхода на clean subspace.
+
+При ФИКСИРОВАННОМ z для многопараметрических germs с `||D^jUP||,||D^jVP||≤L`,
+`||D^j(UP−VP)||≤ε`, j=0..3, можно взять явную более грубую оценку
+
+    ||J_U−J_V||_(C³)≤2¹⁴ z r L⁶ ε/(1−z)⁴.            (13ba)
+
+Используем `||D^jF||≤2^jL²`,
+`||D^j(F_U−F_V)||≤2^(j+1)Lε` и chain rule до третьего порядка.
+Для trace-log k-дифференциал ограничен
+`(k−1)! z^k r/(1−z)^k`; изменение его коэффициента при ΔF
+требует следующий resolvent и bound k! при k≤3. Для коэффициента
+нулевого jet используем более сильное ||ΔF||≤2ε из унитарности,
+без лишнего L. Сумма оценок
+третьей производной не больше13856 z r L⁶ε/(1−z)⁴;
+2¹⁴ покрывает её и все lower jets. Никакая positive pointer floor
+или C³ энтропии при rank birth не предполагается.
+
+Для word с дополнительным work последнее утверждение имеет существенный
+TYPE gate. Clean-subspace implementation не задаёт полного offblank
+действия V и потому не переносит ordinary determinant на старом
+`P_AF⊗Π_s⊗I_work`. Законный достаточный интерфейс — ACTUAL return
+test `P=P_AF⊗Π_s⊗|0_work><0_work|` на ПОЛНОМ carrier. Он имеет
+тот же r, что исходный cut. Весь offblank input complement даёт
+F=0, а все leakage OUTPUTS остаются в I−P и входят в F. Это не
+postselection и не удаление failed work. Две стадии U берутся одним
+полным словом, без промежуточного reset или выдачи нового blank.
+
+Если такого return test в original protocol нет, его добавление
+меняет instrument и требует реального admission/record-price consumer.
+Нельзя объявлять этот cut уже принадлежащим старому опыту только
+потому, что computation начиналось с blank. Также estimate должен
+работать на ВСЕХ old/data/CAR16 колонках clean domain, не на одном
+удобном clock seed. Полный constant-control compiler §6.14 и query-jet
+telescoping §6.12 применяются, когда именно этот интерфейс предоставлен.
+
+У полного AF×scene word `r=1056νK`. Поэтому после собственной
+нормировки a_N из (13aw) множители K и ν ТОЧНО сокращаются:
+
+    ||DJ_η−DJ₀||/a_N
+      ≤4224 z L ε/[(1−z)² p²t²g_B′(p²)].              (13bb)
+
+264 нулевые retained scene-моды дают
+`g_B′(p²)≥1056zp³/(1−zL_scene)>0`, так что правая часть не больше
+`4(1−zL_scene)L ε/[p⁵t²(1−z)²]`. Здесь L обозначает derivative
+bound, L_scene=4p³ — scene eigenvalue. Аналогично (13ba) переносит
+C² source с dimension-independent relative constant и t⁻² budget.
+Spatial reconstruction и M_J⁻¹ по-прежнему умножают эту ошибку;
+для C² source потребляются также их actual jets до второго порядка.
+Это не сырая h⁻²/#216 norm или C² convergence самой метрики.
+Точные compiled roots требуют ещё устойчивости actual constrained
+critical family; одна C³ близость не доказывает invertible Hessian.
+
+Таким образом имеется smooth source-preserving route собственного
+Book feedback, которому не мешают zero-probability entropy births.
+Это не получение whole-stack source из одного feedback компонента.
+Для S_full=J₂+S_rest в той же геометрической domain ровно
+
+    a_N DP_w+(M_J⁻¹)*[νH_B:DB+DS_rest]=0              (13bc)
+
+после переноса actual E-source; H_B:DB здесь выделен из J₂ и не
+считается второй раз. В (13at,13ax) J₂⁰,C_j,H_B написаны для ν=1;
+при actual spectator multiplicity ν весь covector умножается на ν.
+При moving B величина a_N(B) меняется; (13bc) тогда POINTWISE row
+transport без дифференцирования a_N, не вариация S_full/a_N(B).
+Для action/source limit нормируем ВСЮ цену одним field-independent
+a_ref=νKc g_(B_ref)′(e₀), сохраняя отношение a_N(B)/a_ref.
+Нормировать только гравитационный J₂ нельзя.
+Обязательная следующая стрелка — собственная remaining source этой
+же исполняемой программы и native geometric SELECT, а не повторная
+дискреционная entropy/action selection. Исходный Julia128/H+J+R
+нельзя отождествить с новым AF word: прежние source no-go сохранены.
+
+### 6.20. Реальный preparation charge и точная граница matter-аргумента
+
+Собственная fixed-scene subpalette даёт конкретный preparation gate,
+не независимый stress. `H=1_(spatial degree≥2)` коммутирует со всеми
+факторами nine-word autonomous-scene owner, c=1 также conserved.
+У исходного seed `(e₀+Ω)/sqrt2` и всех его owned successors
+`<H>=1/2`; на c=1 `B=L_scene P_ΓP_high≤L_scene H`. Следовательно
+вся эта полностью retained preparation subpalette удовлетворяет
+`b≤L_scene/2<1/2`, включая произвольный reference128. Новый чистый
+m₀ из (13al) имеет `<H>=α+(1−α)sin²θ>α>1/2` и требует действительного
+charge-changing operation. Ideal commutant lift §6.16 такой физический
+операции из fixed word НЕ выводил.
+
+Полный native geometric query не сохраняет этот CAR-only charge.
+Если CAR-only charge в coefficient⊗CAR порядке, `diag(Q_CAR,Q_CAR)`,
+коммутирует со ВСЕМИ r=0,…,3 actual Julia matrices
+`J(C_r)=[[C_r,sqrt(I−C_rC_r†)],[sqrt(I−C_r†C_r),−C_r†]]`,
+то её diagonal blocks требуют `[Q_CAR,C_r]=[Q_CAR,C_r†]=0`.
+При невырожденном coframe {u_r} — базис, C_r=C(u_r); поэтому Q
+коммутирует со всеми creators/annihilators. Они порождают полный
+M₁₆ и Q scalar для complex-linear Q либо real16×16 Q; для
+selfadjoint charge коэффициент real. Произвольные R-linear maps
+на C¹⁶ и антиунитарные maps здесь не классифицированы.
+Это утверждение о named primitive algebra, не вывод
+управляемости из одной irreducibility и не утверждение, что whole
+record cut сохраняет именно ту же elementary algebra.
+
+Значит H — реальное ограничение прежнего seed/subpalette, но его
+нельзя поднять до full-Cartan superselection и назвать неизбежной
+материей. У fixed word L_scene и conserved sector masses сами по
+себе не дают metric/link source. Для независимой материи требуется
+источник реального charge-changing interaction или другого принадлежащего
+действия с его собственными уравнениями. Ни зажатое b, ни capacity
+deficit не подставляются вместо T или Cartan spin source.
+
+[Новый bounded calculation](sources/d0_af_star_full_lattice_2026-10-17/check_native_feedback_compilation_source.py)
+проверяет именно этот consumer: два actual AF ticks, regular trace
+folding, полный некоммутирующий tensor covector и nonzero DB при
+сохранённом balanced expectation; затем clean/offblank countercontrol,
+retained leakage и smooth zero-mode birth. CAR calculation проверяет
+named charge subpalette и matrix-unit generation всеми creators/
+annihilators, без нового rank census. [Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_FEEDBACK_COMPILATION_SOURCE_RESULT.json)
+не доказывает whole-stack remainder или physical admission.
+
+### 6.21. Полная цена того же процесса: trace amplification не убирает feedback
+
+Следующий source нельзя убрать одним ростом AF-размерности. Для
+ДЕЙСТВИТЕЛЬНОГО spectator lift `Δ_m=I_m⊗Δ`, fixed β и нормированной
+полной подготовки Ψ имеем
+
+    H_m=β⁻¹log[m Tr exp(−βΔ)],
+    DH_m=−Tr(ρ_β DΔ), |DH_m|≤||DΔ||,
+    DR_m=<Ψ,(I_m⊗DΔ)Ψ>
+          +2 Re<DΨ,(I_m⊗Δ−R_m)Ψ>.                  (13bd)
+
+У eigenpreparation второй член равен нулю на ВСЕХ normalized pure
+tangents, включая reference/AF entangling. Это допустимый источник
+нормированного matter-компонента, не объявление всех preparations
+собственными. Для actual v8 heat используется
+`Λ=−α⁻¹log B`, `B=I−αΔ≥p³I`, а не Δ. При fixed β=2nα
+
+    DH_v8=−Tr(τ B⁻¹DΔ), τ=B^(2n)/Tr B^(2n),
+    |D(H_v8+R_m)|≤(1+p⁻³)||DΔ||
+                   +2||(I_m⊗Δ−R_m)Ψ|| ||DΨ||.       (13be)
+
+Это bound без множителя m, но не автоматически uniform mesh-bound:
+у actual Dirac jets ||DΔ|| может расти как ell⁻². При moving β
+также сохраняется derivative `β⁻¹log m`. Нельзя использовать (13be)
+для оператора, не являющегося указанным spectator lift.
+
+Решающий компонент прежней цены — её собственный feedback. Если
+`U_m=I_m⊗U_v8`, `P_m=I_m⊗P_v8`, то ТОЧНО
+
+    F_m=I_m⊗F_v8, J_v8,m=m J_v8, DJ_v8,m=m DJ_v8.    (13bf)
+
+Для полного AF carrier уровняN+6 кратность m_N=D₀²+D₁²=F_(2N+15),
+а не K=F_(2N+9); m_N/K→φ⁶. Обе имеют один порядок роста.
+
+Поэтому `J₂∼K` не доказывает `DS_rest/a_N→0`, если S_rest сохраняет
+исходный J_v8. Он также экстенсивен. Удаление его или замена другим
+feedback — изменение исполняемой программы и всей цены, не асимптотика
+остатка. При последовательном tensor составлении survival вообще
+перемножается: новый feedback `I−C_AF†C_AF⊗B^(2n)` не является
+суммой двух feedback-операторов.
+
+Отождествление двух программ опровергается уже плоской семьёй,
+без нового root/spectrum поиска. На bounded однородных nondegenerate
+coframes `u_r=δu_r⁰`, links I, fixed α,n, при δ↓0
+
+    D_δ=δD₀, F_v8,δ=I−(I−αδ²D₀²)^(2n)→0,
+    f_star=0, E=p²I, λ(E)=L_scene>0.                  (13bg)
+
+У AF×scene word на его retained active branch
+`F=L_scene I+(1−L_scene)B≥L_scene I`, B≥0; его J₂ отделён от0
+уже на этой фиксированной положительной размерности. Scene complement
+по-прежнему даёт unit pencils, а не дополнительные feedback modes.
+Следовательно это не один и тот же field-dependent feedback даже
+после изменения базиса. Fixed n существенно: growing-word limits
+здесь не исключаются. Предел F_v8→0 относится к собственному v8 cut;
+добавление к нему той же сцены меняет прибор и даёт предел I⊗B.
+При B=I такая дополнительная сцена скрыла бы различие полностью.
+
+[Полный native transport owner](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md#03-полный-bounded-stored-native-класс-один-и-тот-же-прибор-на-всём-семействе),
+§0.3, сохраняет цену и source jets ДАННОГО v8 H+J_program+R.
+Общность creators/Julia queries сама по себе не отождествляет его с
+W_E. Поэтому positive consumer (13ba–bc) остаётся рабочим: вывести
+actual same-program heat/feedback/record interface и его остаточный
+source. Простое добавление spectator памяти не делает его физическим
+выводом ОТО. Это конкретный process/source test, не общий GR no-go.
+
+### 6.22. Почему конечный query compiler не сохраняет точную star-factorization
+
+Оставшуюся exact-root задачу нельзя решить объявлением
+`J_compiled=Σw g_η(p²+c f_x)` для каждой конечной компиляции.
+Это тождество исключается на полной открытой матричной области около
+следующего flat-link поля. Фиксируем конечную periodic сетку, observer
+n=e₀, full carrier, scene и field-independent return cut. Разрешены
+actual Julia(C_r), Julia(P_r), их adjoints и constant controls, где
+`C_r=C(u_r)`, `P_r=C(u_r)Λ(A_r)S_r`, `u_r=ηF_rᵀ`, F=e⁻¹.
+Это ровно [full-Lorentz query domain](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md),
+а не новый inverse/normalized field oracle.
+
+Выбираем непостоянную periodic q(x⁰), `d_x=q(x⁰+h)−q(x⁰)`,
+`r_x=1+εd_x>0` и independent coframe/link family
+
+    e_s=s⁻¹diag(1,1,r_x,1),
+    A₁(x)=exp(s²a q(x⁰)J₀₁), A₀=A₂=A₃=I.            (13bh)
+
+Для малых s>0,a она невырождена и лежит в strict contraction window.
+Здесь C_r,P_r=O(s), `∂_aP_r(s,0)=O(s³)`. Julia square roots
+аналитичны около общего swap limit; конечный product rule и fixed-z
+resolvent поэтому дают для ЛЮБОГО fixed finite word W
+
+    ∂_aJ_W(s,0)=O(s³)→0,                            (13bi)
+
+причём левая часть real-analytic по s вплоть до0. Actual
+[star stencil](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
+использует две coframe legs, не u: две степени s⁻¹ точно сокращают
+s² у first plaquette curvature. Поэтому ТОЧНО
+
+    f_x(s,0)=0, ∂_af_x(s,0)=κh⁻²r_xd_x, κ≠0.        (13bj)
+
+При любых fixed positive weights можно выбрать сколь угодно малое ε
+с `Σw_xr_xd_x≠0`: коэффициент при ε равен Σw_xd_x²>0.
+Если бы на открытой окрестности (13bh) выполнялось
+`J_W=const+Σw_x g(p²+c f_x)`, c g′(p²)≠0, его a-source
+был бы ненулевой константой по s. Аналитичность native source
+продолжает это равенство с локального s-интервала к0, противореча
+(13bi). Достаточно g∈C¹; аналитичность g не предполагается.
+
+Это obstruction exact scalar-factorization заданной КОНЕЧНОЙ query
+палитры, не запрет GR или отдельных exact roots. В (13bh) не
+утверждается literal physical admission, stored-adjoint constraint
+или вакуумность. Fixed word/cut существенны: growing words,
+field-dependent controls/cuts, postselection и inverse oracles
+теоремой не охвачены. Условная C³ approximation на compact
+nondegenerate chart s≥s_min>0 остаётся допустима и именно
+использует (13ba). Для exact compiled joint roots нужен настоящий
+constrained critical-family argument, не автоматическое наследование
+идеального radial scalar identity.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

@@ -1256,6 +1256,115 @@ log Z не совпадают off shell; RIGHT recording меняет полны
 RIGHT-dephasing сохраняет только actual commuting geometric effects
 и jets; полная новая RIGHT entropy/source остаётся самостоятельной.
 
+### 7.9. Собственный Book-feedback и smooth source вместо новой энтропии
+
+Продолжение от `423836c7` потребляет уже принадлежащий
+[прямой feedback source](sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md)
+от17 октября. Его one-tick формулы, F₂, regular/PF сравнение и radial
+vacuum equivalence не открываются заново. [Full-source §§6.18–6.22](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+усиливают consumer полным двухтактовым AF×scene word и переносом
+compiled source через НУЛЕВЫЕ feedback modes.
+
+Для actual λ(E)=4E(I−E), scene B на ПОЛНОМ retained528 cut,
+Q=I−zB,R_j=(1−z)I+z(I−λ(E_j))⊗(I−B) собственная Book03 цена есть
+
+    J₂=ν[−K Tr_s logQ−Σ_jD_j Tr logR_j],
+    D=M⁶d, K=dᵀD=F_(2N+9).                           (7.19)
+
+22448 ambient scene directions вне cut дают unit pencils;264 нулевые
+моды ВНУТРИ cut участвуют в AF-coupled source. Никакой preparation,
+средняя энтропия или новый Info не входят в operator determinant.
+Он уже принадлежит Book03§03.3.2, но остаётся компонентом whole stack.
+
+Обычный trace сам даёт weights D_j/K: это ТОЧНО pullback uniform
+defining LEFT trace уровня2N+6. Его происхождение не требует RIGHT
+measurement или physical tracial preparation. На geometric READY cells
+одной стоимости finite weights пропорциональны PF одним общим числом,
+так что прежняя полная fixed-collar vacuum family переносится точно
+при конечном t>0. Для этой J-стрелки исчезают прежние требования
+s*, leaf-simplex и b=1/2. Они не исчезают из других выбранных цен.
+
+Если B не движется или переносится целиком изоспектрально, монотонность
+g_B′>0 даёт `DJ₂=a_N M_J*DP_w`, а_N=νKp²t²g_B′(p²)>0.
+Если B действительно меняется, остаётся EXACT дополнительный source
+νH_B:DB. На f=0
+
+    H_B=zK[(I−zB)⁻¹+p⁶(I−z(LI+p⁶B))⁻¹].              (7.20)
+
+Balanced occupied state его не зануляет. Owned product factorization
+работает при actual radial variations Z_xB=0 и собственном critical
+baseline K_scene; существование этой scene-критической ветви также
+нужно доказать. Если B=B(q,D,m), сохраняем весь pullback. Это конкретная
+оставшаяся строка, а не требование сначала выбрать единственный spectrum.
+
+Новый analytic consumer: для fixed z и actual return projector P,
+rankP=r, complete unitary word U имеет pencil floor1−z. Поэтому
+
+    ||DJ_U−DJ_V||≤4zrLε/(1−z)²,
+    ||J_U−J_V||_(C³)≤2¹⁴zrL⁶ε/(1−z)⁴,                (7.21)
+
+при whole-output operator jet error ε до соответствующего порядка.
+В отличие от Shannon qlogq здесь нет entropy second-derivative barrier
+на zero modes. Work leakage сохраняется. Для clean-work compiler
+нужен actual cut P_AF⊗Π_s⊗|0><0|_work; старый cut с I_work этого
+результата не даёт. Если новый return test ещё не исполнялся, его
+физический record/price admission остаётся явным. Нельзя проверить
+один clock seed вместо all-data/CAR columns или reset междуticks.
+
+У полного word r=1056νK. Нормировка всем тем же а_N сокращает
+K и reference multiplicity: relative error не растёт с AF memory.
+Остаются настоящий t⁻² budget и field/spatial/M_J inverse jets.
+Это C² source consumer, не raw #216 или доказательство exact finite
+compiled roots без устойчивости критического множества.
+
+Для varied WHOLE price следующий переход записан точно:
+
+    a_N DP_w+(M_J⁻¹)*[νH_B:DB+DS_rest]=0.              (7.22)
+
+При moving B это pointwise covector transport; нормировать действие
+можно одним fixed reference a_ref, не field-dependent a_N(B).
+Требуется native geometric SELECT и действительный remaining source
+той же программы. Старый Julia128/H+J+R нельзя заменить новым word.
+S_rest не зануляется Ward-словами и не назначается материей как разность.
+
+Для genuine spectator lift heat и normalized matter дают source bounds
+без AF-размерности, но прежний feedback ведёт себя иначе:
+`J_v8,N=m_N J_v8`, `m_N=dim H_(N+6)=F_(2N+15)=O(K)`.
+Значит рост AF не подавляет весь прежний remainder. Exact flat-scaling
+control также различает НАЗВАННЫЕ программы: u=δu⁰,links I даёт
+F_v8→0 на его собственном cut при fixed n, тогда как flat-star active
+block имеет F≥L_scene I>0. Общность Julia primitives не является
+same-program heat/feedback interface. При реальном добавлении scene
+к v8 его предел уже I⊗B; это отдельное изменение программы.
+
+Параллельный [paired-GNS owner, §11](A4D_RAW_JULIA_BLANK_SHARP_LEAF_POSTPROCESS_NOGO_2026_10_18.md)
+на `742840ab` даёт другой positive preparation consumer: retained seed
+управляет real LEFT cyclic shifts, активируя все пары без Ψ(g) oracle.
+Его frozen-input geometric source после сравнения по c=p²t² отличается
+от free paired source на O(p^(2N)+t²). Это не exact joint roots;
+actual LEFT+RIGHT readout, seed/work admission и вся их цена остаются
+входами. Прямая operator-J стрелка выше этих preparations не требует.
+Оба результата сохраняют свой price/cut и не складываются в новое действие.
+
+Exact scalar-factorization конечного compiled word также не наследуется.
+На independent family e=s⁻¹e₀, A₁=exp(s²a qJ₀₁) native finite-word
+a-source real-analytic и O(s³), тогда как star a-source в flat links
+не зависит от s и может иметь ненулевую weighted сумму. Поэтому
+никакой fixed finite word из этих Julia queries/constant controls не
+имеет тождества J=const+Σw g(p²+cf) на такой открытой области при
+c g′(p²)≠0. Это не запрет отдельных roots или growing-word limits.
+Compact C³ compiler остаётся полезным; actual constrained-root
+stability должна быть доказана отдельно вместо подстановки ideal
+radial identity для каждого finite word.
+
+Проверка подготовки тоже дала конкретное ограничение: fixed nine-word
+сохраняет spatial-degree≥2 массу1/2 исходного seed, потому b≤2p³<1/2.
+Новый raw m₀ из§7.8 требует настоящей charge-changing операции.
+Все четыре actual Julia(C_r) при невырожденном coframe имеют scalar
+CAR-only complex-linear commutant; этот fixed-word charge не является
+full-Cartan superselection и не даёт независимого T. Для J state
+irrelevant, но actual matter/remaining price обязаны учесть эту операцию.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

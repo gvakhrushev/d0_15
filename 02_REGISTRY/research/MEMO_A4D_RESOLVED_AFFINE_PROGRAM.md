@@ -23,7 +23,30 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-Latest consumer, input `ce063b4d`: [strategic §7.8](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+Latest consumer, input `423836c7`: [strategic §7.9](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+uses the existing Book03 feedback price directly, rather than choosing a
+new mean. The full two-tick AF/scene word has a monotone geometric source,
+intrinsic regular trace weights and the exact weighted-star vacuum
+consumer. It needs no tracial preparation or RIGHT-copy. A new smooth
+clean-return compiler estimate reaches C3 even at zero feedback modes;
+its normalized error is independent of AF/reference multiplicity.
+The ACTUAL return projector and all-data output norm remain mandatory.
+The next source is explicitly nu*H_B:DB+D S_rest of the WHOLE varied
+programme, with a fixed action normalization and genuine geometric
+SELECT. Prove this source or its physical limit. Do not set moving scene
+to zero by balance, drop heat/matter/controller terms, or identify the
+new AF word with the unchanged native128/HJR programme. The direct
+feedback theorem was already owned on17 October; the new work consumes
+it and removes the Shannon zero-mode regularity barrier for this component.
+The whole remainder cannot be suppressed just by AF amplification: the
+honestly retained old v8 feedback also scales as O(K). The named v8 and
+AF-star feedbacks differ already under homogeneous flat scaling. Establish
+their actual same-program interface, rather than remove a native price term.
+Fixed finite query words also do not inherit an exact scalar star-price
+identity on the full open field domain (§6.22). Keep the positive compact
+C3 transfer and prove actual constrained critical-family stability.
+
+Previous preparation consumer, input `ce063b4d`: [strategic §7.8](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 constructs a fixed-past preparation branch with the actual PF weights,
 without free variations of immutable RIGHT probabilities. Its complete
 gradient is right-conormal; all admitted preparation first equations
