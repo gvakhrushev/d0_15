@@ -331,3 +331,109 @@ f_{\star,h}=0,\quad q=\alpha^2,\quad J=s.
 **Синтез:** математически одна и та же заданная D0 Book03 feedback **(a)** имеет точную конечную NONVACUUM Ricci/matter pp-wave при ВСЕХ допустимых t и **(b)** приближается в полном C² source к ОБЩЕМУ Einstein–scalar first-order действию при \(t\to0\) с ПРАВИЛЬНЫМ scalar pressure, и оба канала имеют одну forced inverse-golden refinement normalization. Больше не требуется выводить новый source tensor или сначала исполнить физически несуществующую квантильную карту для САМОГО геометрического вариационного источника. Физическая compulsory selection, полноценные CAR16 matter/spin, clock и весь D0 Book stack остаются честными условиями принятия.
 
 **Reproducible proof controls:** [direct-source checker](certificates/a4d_direct_densitized_left_feedback_source_check.py) uses original p,z,L, both Q/R terms, fixed native scene rank and Huv, pressure no-go, exact pp-wave tangent scaling, and rigorous algebraic formula controls. It deliberately does not claim original all-128/whole-Book runtime execution or a physical GR proof.
+
+
+## 9. Точная golden-tower naturality и новый ИСПОЛНИМЫЙ архивный second-source residual
+
+Здесь перспектива (D5–D6) даёт неожиданный ответ на десятую гипотезу пользователя (M1/tower source), но **не требует отождествлять π₀ phase residual и гравитацию**. На одних и тех же old AF LEFT labels определим coarser parent из группы реальных fine projectors. При фиксированном общем \(W=\sum_\alpha w_\alpha>0\), \(A=\sum_\alpha A_\alpha\), \(M=\sum_\alpha M_\alpha\) получаем соответствующие два controlled J₂ source programmes с ТОЙ ЖЕ \(\Phi_t\): coarser argument \((A/W,M/W)\), fine arguments \((A_\alpha/w_\alpha,M_\alpha/w_\alpha)\). Пределы они не предполагают.
+
+**Точная совместимость с исходным золотым расщеплением.** Для настоящей PF F/R границы \(w_F=pW,\ w_R=p^2W\), \(p+p^2=1\). Если физические cell contributions на этих двух дочерних участках пропорциональны их настоящим долям веса,
+
+\[
+A_F=pA,\ A_R=p^2A,\quad
+M_F=pM,\ M_R=p^2M,
+\]
+
+то буквальная identity ОДНОГО nonlinear native feedback:
+
+\[
+\boxed{
+pW\Phi_t(A/W,M/W)+p^2W\Phi_t(A/W,M/W)
+=W\Phi_t(A/W,M/W).
+}
+\tag{D18}
+\]
+
+Она справедлива при КАЖДОМ admissible t и ВСЕХ orders fields, без \(t\to0\), для любого числа последовательных golden F/R расщеплений. Pending branch, carried unchanged across next cost cut, сохраняет identity trivially. Доказательство использует только \(\Phi\) и золотую сумму \(p+p^2=1\). Если actual fine regular-trace weights не равны PF proportions на разных N, нельзя заменять их на p,p²: сравнение **на одном финальном полном GNS level** сохраняет \(W=\sum w_\alpha\) ровно, тогда (D18) верно с фактическими положительными долями \(w_\alpha/W\) вместо p,p². Across different defining trace levels требуется original Binet comparison или exact reweighting, не fictitious trace consistency.
+
+**Неоднородные потомки: явный НЕНОВЫЙ residual второй производной.** Пусть
+\(\xi_\alpha=(A_\alpha/w_\alpha,M_\alpha/w_\alpha)\),
+\(\bar\xi=(A/W,M/W)=\sum_\alpha(w_\alpha/W)\xi_\alpha\).
+Цена сравнения fine versus coarse same-feedback слова
+
+\[
+\mathfrak R_{\rm archive}
+:=\sum_\alpha w_\alpha\Phi_t(\xi_\alpha)
+-W\Phi_t(\bar\xi)
+\tag{D19}
+\]
+
+имеет точное integral Hessian representation
+
+\[
+\boxed{
+\mathfrak R_{\rm archive}
+=\sum_\alpha w_\alpha
+ \int_0^1(1-s)\,
+ (\xi_\alpha-\bar\xi)^T
+ D^2\Phi_t(\bar\xi+s(\xi_\alpha-\bar\xi))
+ (\xi_\alpha-\bar\xi)\,ds.
+}
+\tag{D20}
+\]
+
+Линейный член исчезает по \(\sum_\alpha w_\alpha(\xi_\alpha-\bar\xi)=0\), НЕ по предположению M1 или Einstein. Формула exact для любых fixed regular weights same cut. При малом \(t^2\) Hessian \(D^2\Phi_t=t^4H_0+O(t^6)\), поэтому
+
+\[
+\mathfrak R_{\rm archive}
+=\frac{t^4}{2}\sum_\alpha w_\alpha
+(\xi_\alpha-\bar\xi)^TH_0(\xi_\alpha-\bar\xi)
++O(t^6\sum_\alpha w_\alpha|\xi_\alpha|^3).
+\tag{D21}
+\]
+
+После собственно source-normalization \(g_t=O(t^2)\) ARCHIVE defect становится порядка \(O(t^2)\) и не подменяет ведущие Einstein–scalar Euler equations. **Это математически вынужденная cross-scale covariance всех двух старых аргументов, а не новая цена памяти.**
+
+**Действительный знак, не только heuristic.** При diagnostic \(z=2^{-20},\sigma=+\), (D10) строго negative definite в нулевой точке. Это можно доказать рациональными интервальными bounds: из
+\(61803398/10^8<p<61803400/10^8\) (знаки \(p^2+p-1\)) с рациональным \(z=1/2^{20}\) и обычной exact interval arithmetic следуют
+
+\[
+\begin{aligned}
+-6.20317682\cdot10^{-8}&<H_{AA}/t^4<-6.20317480\cdot10^{-8},\\
+-1.53350968\cdot10^{-7}&<H_{AM}/t^4<-1.53350913\cdot10^{-7},\\
+-1.51804953\cdot10^{-6}&<H_{MM}/t^4<-1.51804920\cdot10^{-6},\\
+7.06507264\cdot10^{-14}
+&<\det H/t^8<7.06507935\cdot10^{-14}.
+\end{aligned}
+\tag{D22}
+\]
+
+Все четыре interval signs строгие; вследствие непрерывности при каждом fixed t>0 существует общая открытая convex source window вокруг (u,v)=0, где \(D^2\Phi_t\prec0\). Поэтому Jensen даёт **НЕПЕРТУРБАТИВНО в этом source window**
+
+\[
+\boxed{
+\sum_\alpha w_\alpha\Phi_t(\xi_\alpha)
+\le W\Phi_t(\bar\xi),
+}
+\tag{D23}
+\]
+
+со строгим знаком для разных дочерних source density pairs. При истинных двух golden весах \(w_F=p^2,w_R=p^3,W=p\) и \(\xi_F=(0.1,-0.08)\), \(\xi_R=-(w_F/w_R)\xi_F\) полный \(t^2=1\) даёт \(W\Phi_t(\bar\xi)-\sum w\Phi_t(\xi_\alpha)=4.18057244\cdot10^{-9}>0\). Два фактически сравниваемых *controlled words* имеют разные field-address angles: inequality не доказывает, что исходный runtime обязан исполнять оба, и не означает физическую монотонность времени в каждом history.
+
+**Главный синтез с hypotheses 1/5/8/9/10:** есть один определённый, напрямую вычислимый из настоящей двухтактовой Book03 цены archive/cell variance defect, который является строго вторым source jet и связывает geometric и CAR kinetic fluctuations. Он *не равен* старому cochain/π₀ phase residual из merged #369: у того провал спуска на address marginal, а здесь два сравниваемых полных effect programmes определены на SAME regular LEFT cut. Пока нет physical same-word cochain readout и Score identity, их нельзя объединять. Зато сам ведущий Einstein–scalar source впервые защищён от любого неравномерного positive golden REFINE первого порядка на всех конечных уровнях, без smooth limit tower.
+
+## 10. Единая причина универсальности и единственная оставшаяся физическая стрелка
+
+На **любом** конечном уровне N с его TRUE positive regular w_(N,x), K_N, ν_N, одни и те же dressed physical macro cell contributions \((A_{h,x},M_{h,x})\) дают
+
+\[
+\boxed{
+D\left[\frac{J_N-J_{N,0}}{\nu_N528K_Ng_t}\right]_{A=M=0}
+ =D\sum_x(A_{h,x}+\Lambda_{\rm mat}M_{h,x})
+}
+\tag{D24}
+\]
+
+**EXACT, независимо от N, K_N, их AF tail counts и μ/PF mismatch.** Если сравниваемые физические источники действительно отождествлены на одном dressed coframe chart, эта identity защищает первые nonvacuum Einstein/matter Euler одновременно. Это сильнее фразы «golden weights асимптотически сходятся»: Binet не нужен для именно этого первого источника и его exact null roots. При ненулевых source densities отличие определяется (D20)/(D21), контролируемым настоящей signal/reconstruction norm и \(\min w\); raw #216 всё ещё требует собственного сравнения.
+
+**ВАРЬИРУЕМЫЙ весь D0 stack остаётся физической границей.** Наличие этой source universality означает, что большинство привычных чисто геометрических проверок теперь повторять незачем. Оставшаяся проверка должна предъявить реальное SAME native operation с теми же (D2) operands, approved return cut и true full Cost−Info/Book source, а затем показать, что physical preparation/clock/observer/v8/controllers либо совместно стационарны, либо их honest source образует допустимую invertible response map для тех же девяти null/Einstein equations. Ни Jensen-дефект, ни убывание source error, ни конечная pp-wave сами не выбирают gate programme. Это честный предел положительного синтеза.
