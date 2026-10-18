@@ -2122,6 +2122,35 @@ Original raw#216 и независимый полный spin source остают
 старые expensive suites не переигрывались.
 
 
+### 7.18. Периодическая Hodge-материя: fixed-g exact Einstein + conserved charge
+
+**Положительный full-source consumer, тот же Draft #334:** [A4D_NATIVE_HODGE_CHARGED_NULL_MATTER_FIXED_METRIC_EINSTEIN_2026_10_18.md](A4D_NATIVE_HODGE_CHARGED_NULL_MATTER_FIXED_METRIC_EINSTEIN_2026_10_18.md). Исправленная локальная LEFT-coded scene J₂ из §7.15, с настоящими **двумя** золотыми сценовыми тактами \(B=4b(1-b)\), теперь имеет не только one-component \(\psi=su\) root, но и ДИНАМИЧЕСКУЮ periodic matter wave на ИСХОДНОЙ CAR16 Hodge-плоскости \(H_{0,4}=\Lambda^0\oplus\Lambda^4\). Собственный Lorentz Hodge \(*^2=-I\) задаёт real SO(2); \(\det h_{\rm obs}=1\) делает norm scalar/top равным без нового аппарата. По Lorentz+Hodge naturality единственный quadratic first-derivative invariant этой объявленной scalar-плоскости имеет форму
+\(q=g^{\mu\nu}(D_\mu\psi_0D_\nu\psi_0+D_\mu\psi_4D_\nu\psi_4)\), и он точно реализован ДВУМЯ original full16 Clifford squares, **в том же** J₂, без независимого \(S_{\rm m}\).
+
+**Новый точный fixed-g nonvacuum recovery:** пусть \(h=1/L,\kappa=2\pi m,L>2m\), и при каждом h берём имеющуюся normalized old-CAR scalar/top пару
+\[
+(\psi_0,\psi_4)_j
+ =\frac{a\kappa h}{2\sin(\kappa h/2)}
+    (\cos\kappa jh,\sin\kappa jh).
+\]
+Её действительный finite forward energy \(|D_u^+\Psi|^2=a^2\kappa^2=:E\) постоянен EXACT при любом h, но обе амплитуды периодически меняются. На исходной nonflat pp-wave \(q=0,\ D_{v_v^+}q=-2E/h\), все остальные15 coframe matter rows0. Обе свободные скалярные Euler из **same feedback** зануляются настоящей v-Stokes; настоящий half-step connection решает все24 links. Выбираем ОДНИ И ТЕ ЖЕ для ВСЕХ h коэффициенты metric H:
+\[
+A+D=-2\lambda_-(z)E=+46.832813503768\ldots E,\quad
+A-D=2W_+,\ B=W_\times,\quad\lambda_-(2^{-20})=-23.416406751884\ldots.
+\]
+Все независимые coframe16/link24/scalar2 interior rows равны0 на КАЖДОЙ решётке, при полном AF regular LEFT, true golden uneven cell masses, OLD RIGHT/CAR16/reference128 и scene528+22448. Исходная совместная плотность \(\widehat e=\sqrt{w/\bar w}e\) даёт одну и ту же фиксированную гладкую sampled metric \(\widehat g\) при ВСЕХ h, а не только limit; x/y collar фиксирован, оба null directions u,v могут быть periodic как МАТЕМАТИЧЕСКИЙ регулятор, не физическая глобальная причинность. Weyl поляризации остаются независимы.
+
+**Matter self-consistency/observable prediction:** вся J₂-цена в этом scalar-sector EXACT invariant under constant Hodge rotations. Её настоящая local parameter variation даёт nonzero finite \(j_h^v=2a_h^2\sin(\kappa h)/h\), \(D_v^-j_h^v=0\), и smooth-limit \(j^v=2a^2\kappa\). Metric variation даёт НАСТОЯЩИЙ \(T_{\mu\nu}=2\partial_\mu\Psi\cdot\partial_\nu\Psi-g_{\mu\nu}(\partial\Psi)^2\) с источником того же J₂, а independently varied matter Euler ⇒ \(\nabla^\mu T_{\mu\nu}=2(\Box_g\Psi)\cdot\partial_\nu\Psi=0\). Исключая ВСЮ неизвестную амплитуду, конечный источник фиксирует
+\[
+\boxed{\operatorname{Ric}_{uu}/j_h^v
+ =-2\lambda_-(z)\tan(\kappa h/2)/h
+ \longrightarrow-\lambda_-(z)\kappa.}
+\]
+Это одно точное amplitude-free отношение кривизны и сохраняемого внутреннего CAR-заряда; оно НЕ fitted Newton constant. Нормированный full-J prefactor из Book price учтён отдельно. Прямой bounded контроль по настоящим 1597/10946 Fibonacci READY words покрывает все81/256 ячеек (n16,L3 и n20,L4), неравномерные веса, полный двухтактовый logdet, нетривиальную материальную норму и независимые scalar Euler. Проверочный Python-файл source зарегистрирован, full symbolic40 rows потребляются от прежнего owner, без заявления свежего CI.
+
+**Научное значение для original GR:** отпадает необходимость ограничивать материю аффинной ψ=su или менять гладкую g при каждом refinement. Есть действительная заряженная massless null wave, собственный conserved current/stress и одна sourced Einstein metric ВНУТРИ сконструированного D0 J₂-programme. Физический compulsory Book/control/code/admission, старый v8 H/R, независимый spin/other matter и original unweighted all10 fixed-g/tau h⁻² #216 всё ещё требуют своей общей native source. Новую цену или задачу для этой теоремы не создаём.
+
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября
