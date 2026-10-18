@@ -116,7 +116,14 @@
         }
       },
       "review": {
-        "state": "proposed"
+        "state": "accepted",
+        "by": "Codex CONTROL independent reviewer (2026-10-18)",
+        "digest": "be2a1df1433c745633d08d61aee0cf932a794e57bfa2138ca66eae2ead09a921",
+        "decision": {
+          "ref": "6dbabf6c775b7c26f73f6a84cecc1f713652a752",
+          "path": "02_REGISTRY/gr_assembly/reviews/endpoint-probe-to-geometric-law.md",
+          "sha256": "fe54ff42fd59626d06db4b91b55ed219fbeb6402a61a4f70ca7c46bc60d1530a"
+        }
       }
     }
   ],
