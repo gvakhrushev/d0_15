@@ -19,7 +19,8 @@ refinement limit**. This target remains open.
 | [Native price comparison, §§8.8–8.9](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Derives the coherent amplitude/Gram event source. An exact full finite H+J+R mixed variation is zero where the same star stencil is nonzero; direct source identification fails. Book03's remaining named stack blocks are not yet one defined geometric functional. |
 | [Full-Lorentz stationary reduction, §§8.10–8.12](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Solves observer, all24 link and full preparation equations above every nearby constant metric. The same finite price retains its flat-shape potential. One spatial mode lifts all ten metric slots, but another has an exact metric obstruction, so this faithful section cannot cover all nearby metric fields. |
 | [Full first metric lift, §§8.13–8.15](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | The existing real vacuum-plus-top preparation lifts all ten metric components on every Fourier mode at the owned gapped root. Its homogeneous internal source is solved with full reference128 retained. |
-| Next consuming proof | Solve the actual nonlinear preparation/source compatibility. The full q1100 diagnostic resolves13 linear internal equations and finds a second-order residual; other neutral frequencies and rigorous bounds remain. The first metric lift is now an input to this step. |
+| [Section-independent source comparison, §§8.16–8.18](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Every C¹ full-internal stationary section through the same faithful or real-even root has the same constant-metric Hessian. Two exact first-source probes exclude EH+Lambda+the same matter term for this finite price, retaining all neutral modes and rank births. |
+| Next consuming proof | Derive the actual complete history/price and its calibration law, or a source-controlled admissible limit. Another internal section through these roots cannot repair the exact finite Einstein comparison; completing its nonlinear lift is no longer a prerequisite for that decision. |
 
 The latest composition recovers the full metric and Lorentz transport from
 the actual raising operators, including the null directions of the curved
@@ -40,8 +41,12 @@ flat-shape source. An exact nonzero-mode preparation equation prevents
 extension of that faithful section to arbitrary metric fields. This
 locates a branch obstruction, not a general D0/GR no-go. The existing real
 vacuum-plus-top state now removes that first preparation obstruction on
-all Fourier modes at the owned root. Its actual source and second-order
-compatibility are retained as separate equations; full GR remains open.
+all Fourier modes at the owned root. The subsequent section-independence
+theorem now excludes an exact finite EH+Lambda+same-matter source through
+either root, even if a different nonlinear lift exists. The already proved
+scale balance also excludes controlled beta→0 with fixed positive feedback
+coupling. These scoped results direct the next work to the actual complete
+price/history and its admissible limit; physical GR remains open.
 
 The original fixed-g/fixed-tau, all-ten unweighted raw h^-2/#216 task remains
 **OPEN with its exact terminal unchanged**. The [source-norm comparison](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md#5-точное-различие-двух-требований-к-пределу)

@@ -12,6 +12,47 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: consume the nonlinear boundary and stop branch substitution
+
+Input `e989bc01`. Test the actual full source of the already stationary
+momentum-sign alternative, then determine which metric response can change
+under a different internal stationary section through the SAME root. The
+consumer is the GR source comparison, not a census of Fourier kernels or
+preparation ranks. Keep the normalized full128 amplitude chart, all CAR16
+outputs, all24 links, observer3 and the signed full-shell resolvent. Prove
+the section-independent total Hessian directly from the differentiated
+internal equations; do not assume that averaging a nonlinear section
+preserves stationarity, or transfer this uniqueness to a separately
+evaluated matter term without proof. Same-real-density purifications must
+be compared in their full real amplitude chart, including rank births.
+
+Root owns the existing source owner and shared consumers. One bounded
+assistant owns only `check_even_memory_timeflip_lift.py`,
+`EVEN_MEMORY_TIMEFLIP_LIFT_DATA.json` and
+`EVEN_MEMORY_TIMEFLIP_LIFT_RESULT.json` in the existing source directory;
+another owns only the existing `diagnostic_even_memory_source.py` and new
+`EVEN_MEMORY_TIMEFLIP_SOURCE_DIAGNOSTIC.json`. The latter keeps the original
+default preparation and adds an explicit time-sign alternative. Read-only
+review covers the realification, averaging and stationary-Hessian argument.
+Decisive checks: the two missing exact mixed-sign minors and the actual
+source-compatible second jet of that candidate. The general Hessian
+argument is analytical and consumes the already proved homogeneous
+function/convexity; no old thermal/root suite is replayed. All finite-price,
+same-matter, physical-selection and refinement scopes remain distinct.
+
+Consumed: §§8.16–8.18 prove that every C¹ full-internal stationary
+section through the same faithful/real-even root has the same total
+constant-metric Hessian and first Rayleigh source. Two exact probes
+exclude finite EH+Lambda+the same R independently of all Fourier zeros.
+Same-Re-density complex-rank changes are exactly equivalent; the real
+eight-mode χ density is fixed by its coframe source. The time-sign
+alternative passes the exact first lift and fails its fixed-Q numerical
+second-source test. Its data are preserved in the named files; the
+original diagnostic receipt remains byte-identical in the default mode.
+The next GR consumer is actual complete history/price/calibration or a
+proved admissible source limit, not another local lift through these
+roots. No global physical closure or nonlinear spatial existence is claimed.
+
 ### 18 October: consume the complete labelled history source
 
 At published `275244e5`, consume the operational CAR-clock reading, exact

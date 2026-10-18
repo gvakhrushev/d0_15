@@ -90,9 +90,33 @@ Reference128, все16 grades и rank-birth variations сохраняются.
 обнаруживает ненулевой preparation residual второго порядка. Точное
 cokernel-условие уже выписано; результат одной частоты не исключает
 другие neutral Fourier modes и пока не является строгим no-go.
-Следующий шаг — эта nonlinear совместимость с тем же источником и
-подготовкой. Ни полный первый подъём, ни homogeneous IFT по отдельности
-не доказывают ОТО, а повторять их заново для дальнейшего движения не нужно.
+Это остаётся задачей существования nonlinear section, но следующий
+результат снимает её с критического пути конечного GR comparison.
+
+На входе `e989bc01` §§8.16–8.18 доказывают более сильное утверждение.
+У ЛЮБОЙ C¹ секции всех внутренних уравнений через тот же faithful или
+real-even root постоянный metric Hessian одинаков:7+/3zero. Формула
+`L A+B=0` даёт `B*ker L=0` без обращения L. Отдельно полное translation
+действие, homogeneous rank27 и eigenpreparation доказывают
+`DR|ker L=0`, включая все rank births и reference128. Поэтому первый
+источник настоящего R на любой секции равен γDd. Две постоянные
+метрические вариации исключают `DΓ=c_EH DI_EH+ΛDVol+DR_same`:
+off-diagonal variation требует Λ=0, diagonal variation даёт γ≠0.
+Это точное препятствие источника всех таких секций, а не численный
+остаток одного выбранного подъёма.
+
+Тем самым дальнейший перебор Fourier kernels и подготовок вокруг этих
+корней не может исправить данный exact finite GR переход. Смена complex
+rank при том же Reρ вообще даёт эквивалентную вариационную задачу;
+на фиксированном real χ carrier весь source уже фиксирует R_shell=I₈/8.
+Реально иная time-sign подготовка сохранена с exact first lift и actual
+численным second-source obstruction; это потреблённый тест, не новый
+маршрут. Вместе с уже доказанным `M z c<beta` при controlled small-heat
+refinement следующий шаг теперь строго направлен на actual complete
+history/price, её native calibration law и допустимую оценку предела.
+Новая цена, counterterm или residual-defined matter не добавлены.
+Иные корни, independent physical matter и controlled limits этим конечным
+утверждением не исключены; физическое D0→ОТО остаётся открытым.
 
 ## 1. Итог сборки
 

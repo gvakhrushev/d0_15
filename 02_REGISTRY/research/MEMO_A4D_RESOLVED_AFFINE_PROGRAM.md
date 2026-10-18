@@ -23,6 +23,27 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+At input `e989bc01`, §§8.16–8.18 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+close a route that otherwise invites repeated local lifts. Any C¹
+full-internal stationary section through the SAME faithful or real-even
+root has the same constant-metric Hessian,7+/3zero, and the same first
+Rayleigh source `DR_red=gamma Dd`. All neutral modes, coherences and
+rank births remain in the proof. Two exact first-source probes exclude
+EH+Lambda+the same R for this finite conditional price, regardless of
+whether a different nonlinear spatial section exists.
+
+Changing complex rank at fixed Reρ is an exact variational symmetry;
+real coherences in the fixed χ carrier cannot change its source while
+reducing rank. The time-sign candidate was consumed by an exact first
+lift and a full-source second-order diagnostic, without opening another
+catalogue. A Fourier-kernel census is therefore no longer the GR consumer
+for these roots. The next step is the actual complete history/price and
+its native calibration law, or a source-controlled admissible limit.
+The existing `M z c<beta` theorem already rules out controlled beta→0
+with fixed positive feedback coupling. Other roots, fixed-beta limits,
+independent physical matter and other derived prices remain separate.
+
 At input `7966c217`, §§8.13–8.15 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 replace the fixed faithful preparation by its existing balanced stationary
@@ -40,10 +61,9 @@ matrix-valued matter, the second Dirac jet and the signed full-shell
 resolvent. The q1100 diagnostic solves the13 linear internal equations
 at the owned root center, then finds a nonzero second-order preparation
 residual. This is a numerical fixed-frequency result, not an all-branch
-no-go or a proved nonlinear metric section. The next step must solve the
-actual nonlinear compatibility with the remaining neutral frequencies,
-or establish its precisely scoped obstruction. Repeating the first metric
-lift cannot supply it. Physical price/preparation selection, independent
+no-go or a proved nonlinear metric section. Its nonlinear existence
+problem remains open, but the later section-independence theorem removes
+it as a prerequisite of the finite GR comparison. Physical price/preparation selection, independent
 matter, refinement and the original raw #216 closure remain open.
 
 At input `8c3a615c`, the same owner's §§8.10–8.12 perform the stationary

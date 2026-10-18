@@ -3,6 +3,8 @@
 Portable numeric diagnostic only; default read-only, --output explicitly saves JSON. All4096 momenta/full16 CAR, full-Z dd,
 rho_cat rank8 in reference128, signed off-shell inverse, actual second
 Dirac jet for u linear and Lorentz links exp(Omega). No old run() is called.
+--timeflip uses chi- on the two temporal shell momenta and chi+ on the six
+spatial shell momenta; the default remains the original constant chi+.
 """
 import os
 for name in ('OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','OMP_NUM_THREADS',
@@ -24,6 +26,10 @@ np.seterr(all='ignore')  # Every operator/result array is checked finite below.
 START=time.perf_counter()
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[3]
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--timeflip',action='store_true',help='reverse the top-state sign on the temporal shell axis')
+parser.add_argument('--output',type=Path)
+args=parser.parse_args()
 BASE='02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/'
 SPECTRAL=BASE+'full_symbol_diagnostic.py'
 HELPER='02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py'
@@ -31,13 +37,18 @@ CURVED='02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py'
 RECEIPT='02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json'
 WAVE='02_REGISTRY/research/sources/d0_native_field_transport_2026-10-16/stored_rotational_wave.py'
 CROSS_DATA='02_REGISTRY/research/sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_CROSS_LIFT_DATA.json'
-PINS={CROSS_DATA:'d5f0dbeec44af8f375039a8a7bb392541bb8f8bb7a6cd0deb69d3a62c5be7e2e',SPECTRAL:'6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25',
+cross_digest='d5f0dbeec44af8f375039a8a7bb392541bb8f8bb7a6cd0deb69d3a62c5be7e2e'
+if args.timeflip:
+    CROSS_DATA='02_REGISTRY/research/sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_TIMEFLIP_LIFT_DATA.json'
+    cross_digest='64a6d796ecabe3e8a807927efcb65c23096a11460495182cd507c0ab30aba983'
+PINS={CROSS_DATA:cross_digest,SPECTRAL:'6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25',
       HELPER:'0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9',
       CURVED:'bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da',
       RECEIPT:'da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9',
       WAVE:'2b12f26d814a57cc99084e904deeac69a8f64a8d9a0eb9ee765e8104ef50bc37'}
 for path,digest in PINS.items():
     assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
+cross_data=json.loads((ROOT/CROSS_DATA).read_text())
 
 # Definitions only: never import or execute the old diagnostic run().
 names={'require','exact_features','_spectral_data'}
@@ -95,6 +106,14 @@ tk=roots[modes];tq=roots[q];D=L*(np.einsum('kr,rij->kij',tk-1,cu)
 lambda_error=np.max(np.abs(D@D-sp['lambda'][:,None,None]*np.eye(16)))
 assert lambda_error<2e-11
 shell=sp['rho']>0;assert shell.sum()==8
+if args.timeflip:
+    cat_by_mode=np.tile(cat,(len(modes),1))
+    assert cross_data['memory_sign_by_axis']==[-1,1,1,1]
+    for k in modes[shell]:
+        active=np.flatnonzero(k)
+        assert len(active)==1 and k[active[0]]in(1,7)
+        cat_by_mode[lookup[tuple(k)],15]*=cross_data['memory_sign_by_axis'][active[0]]
+    assert np.max(abs(np.sum(abs(cat_by_mode[shell])**2,axis=1)-1))<1e-15
 shell_modes=[k for k in modes if shell[lookup[tuple(k)]]]
 ordered=[(k,l)for k in shell_modes for l in shell_modes if np.all((l-k-q)%8==0)]
 assert len(ordered)==2
@@ -117,14 +136,17 @@ def jets(field,indices):
 
 shell_in=np.array([lookup[tuple(k)]for k,l in ordered])
 _,Xraw=jets(np.eye(40),shell_in)
-Traw=np.einsum('akij,j->kia',Xraw,cat).reshape(32,40)
+if args.timeflip:
+    Traw=np.einsum('akij,kj->kia',Xraw,cat_by_mode[shell_in]).reshape(32,40)
+else:
+    Traw=np.einsum('akij,j->kia',Xraw,cat).reshape(32,40)
 Y=np.zeros((40,27),complex);Y[16:,:24]=np.eye(24)
 for j in range(3):
     B=np.zeros((4,4));B[0,j+1]=B[j+1,0]=1
     Y[:16,24+j]=(-u@B.T).ravel()
 Ty=Traw@Y
 minor_source=ROOT/CROSS_DATA
-minor_record=next(x for x in json.loads(minor_source.read_text())['cases']if x['q']==q.tolist())
+minor_record=next(x for x in cross_data['cases']if x['q']==q.tolist())
 rs,cs=minor_record['rows'],minor_record['columns'];free=[j for j in range(27)if j not in cs]
 minor=Ty[np.ix_(rs,cs)]
 N=np.zeros((27,13),complex);N[free,:]=np.eye(13)
@@ -153,9 +175,14 @@ assert constraint_error<2e-9
 
 # W_k is MATRIX-valued on shell. Precompute actual source moments for seagull.
 kappa=sp['kappa'];occ=shell.astype(float)/8
-Dcat=np.einsum('kij,j->ki',D,cat)
-ED=2*kappa[:,None,None]*D+occ[:,None,None]*(Dcat[:,:,None]*cat[None,None,:]
-                      +cat[None,:,None]*Dcat[:,None,:].conj())
+if args.timeflip:
+    Dcat=np.einsum('kij,kj->ki',D,cat_by_mode)
+    ED=2*kappa[:,None,None]*D+occ[:,None,None]*(Dcat[:,:,None]*cat_by_mode[:,None,:]
+                          +cat_by_mode[:,:,None]*Dcat[:,None,:].conj())
+else:
+    Dcat=np.einsum('kij,j->ki',D,cat)
+    ED=2*kappa[:,None,None]*D+occ[:,None,None]*(Dcat[:,:,None]*cat[None,None,:]
+                          +cat[None,:,None]*Dcat[:,None,:].conj())
 assert np.isfinite(ED).all()
 Kmom=np.einsum('kr,kij->rij',tk,ED);K0=ED.sum(axis=0)
 Kscalar=np.einsum('kr,kij->rij',tk,2*(kappa+sp['rho'])[:,None,None]*D)
@@ -173,8 +200,13 @@ for start in range(0,len(modes),128):
     J,X=jets(field,ix);assert np.isfinite(J).all()and np.isfinite(X).all()
     jf,xf=J.reshape(nb,len(ix),256),X.reshape(nb,len(ix),256)
     HJheat+=gram(jf,kappa[ix]+kappa[out]);HXheat+=gram(xf,sp['dd'][ix])
-    jc=np.einsum('akij,j->aki',J,cat);jr=np.einsum('i,akij->akj',cat,J)
-    xc=np.einsum('akij,j->aki',X,cat);xr=np.einsum('i,akij->akj',cat,X)
+    if args.timeflip:
+        # Column grams use input chi_k; row grams use output chi_(k+Q).
+        jc=np.einsum('akij,kj->aki',J,cat_by_mode[ix]);jr=np.einsum('ki,akij->akj',cat_by_mode[out],J)
+        xc=np.einsum('akij,kj->aki',X,cat_by_mode[ix]);xr=np.einsum('ki,akij->akj',cat_by_mode[out],X)
+    else:
+        jc=np.einsum('akij,j->aki',J,cat);jr=np.einsum('i,akij->akj',cat,J)
+        xc=np.einsum('akij,j->aki',X,cat);xr=np.einsum('i,akij->akj',cat,X)
     HJmatter+=gram(jc,occ[ix])+gram(jr,occ[out])
     HXm=gram(xc,-occ[ix]*sp['resolvent'][out])+gram(xr,-occ[out]*sp['resolvent'][ix])
     HXmatter+=HXm
@@ -236,7 +268,8 @@ result={'status':'NUMERIC_DIAGNOSTIC','q':q.tolist(),'root_center':root,'a':sp['
 # Ward rows are kept, not inverted. Transverse rows pair with actual shell
 # amplitude duals; neither these nor the remaining neutral amplitudes are frozen.
 assert field.shape==(40,40) and np.linalg.matrix_rank(field)==40
-assert np.isfinite(H).all() and ward<1e-10 and ward_without>1e-4
+assert np.isfinite(H).all() and ward<1e-10
+assert ward_without>(1e-6 if args.timeflip else 1e-4)
 assert max(abs(x)for x in gradient)<1e-9
 assert np.linalg.norm(Hseagull_scalar)<1e-7
 assert np.min(abs(eig))>1e-3  # Diagnostic at this CENTER, not an interval claim.
@@ -303,7 +336,8 @@ def second_test(vector):
             gaps.append(float(gap))
             adjoint_error=max(adjoint_error,float(np.linalg.norm(J(target,k,-sign)-j.conj().T)))
             K+=2*(j.conj().T@j-x.conj().T@x/gap)
-        r=projector@K@cat
+        input_cat=cat_by_mode[lookup[tuple(k%8)]]if args.timeflip else cat
+        r=projector@K@input_cat
         obstruction=(r-star@r.conj())/2
         assert np.isfinite(obstruction).all()and adjoint_error<2e-10
         values.append({'k':k.tolist(),'gaps_minus_plus':gaps,'adjoint_error':adjoint_error,
@@ -331,9 +365,12 @@ result['source_formulas']={'W':'kappa(lambda_k) I16 + 1_Omega(k)|chi><chi|/8',
     'Hred':'Tr[W({Dv,Dw}+{D,Dvw})]+Tr[Dkappa[Xv]Xw]-2ReTr[rho_cat Xw R_Q Xv]',
     'R_Q':'Q(Delta-epsilon)^-1 Q, Q excludes entire128 spectral shell, signed inverse',
     'seagull':'K_r=sum_allk t_r(k){D_k,W_k}; Z_ab=ell^-1 sum_r Tr K_r(C(conj(w_a))Gamma(Omega_b)+C(w_b)Gamma(conj(Omega_a))+.5 C(u_r){Gamma(conj(Omega_a)),Gamma(Omega_b)}); Hseagull=Z+Z*'}
-parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--output',type=Path)
-args=parser.parse_args()
+if args.timeflip:
+    result['rho']='sum_(k in Omega) |k,chi_k><k,chi_k| /8; temporal chi-, spatial chi+'
+    result['memory_sign_by_axis']=cross_data['memory_sign_by_axis']
+    result['shell_memory']=[{'k':k.tolist(),'chi_real':cat_by_mode[lookup[tuple(k)]].tolist()}
+                            for k in modes[shell]]
+    result['source_formulas']['W']='kappa(lambda_k) I16 + 1_Omega(k)|chi_k><chi_k|/8'
 rendered=json.dumps(result,indent=2)+'\n'
 if args.output is not None:
     args.output.write_text(rendered)

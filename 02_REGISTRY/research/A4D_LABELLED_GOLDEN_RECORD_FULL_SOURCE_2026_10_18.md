@@ -25,6 +25,18 @@ Julia interface построены coherent geometric query и перенос п
 finite first source с учётом work leakage. Отдельный U-oracle не нужен.
 Прежний Role-selector уже вынуждает star-тип внутри своего класса.
 
+**Стратегическое продолжение §§8.16–8.18, вход `e989bc01`:** смена
+внутренней стационарной секции через тот же faithful или real-even root
+не меняет однородный метрический Hessian полной условной H+J+R цены.
+Более того, её первый источник не может совпасть с
+`c_EH DI_EH+Lambda DVol+D R_same` ни на одной такой C¹ секции.
+Доказательство сохраняет все нейтральные моды и rank births и не требует
+решать оставшийся spatial Kuranishi census. Это меняет маршрут: другие
+подъёмы через эти корни больше не являются способом получить точную
+конечную ОТО из этой цены. Вопрос существования таких подъёмов остаётся
+математически отдельным. Настоящая полная цена/история и контролируемый
+предел должны пройти собственное сравнение источников.
+
 **Физический D0→ОТО ещё не доказан:** physical admission исходных
 Julia/resources и обязательность именно этого процесса не выведены; не доказаны
 независимый общий matter-source, native constraint compatibility и глобальное
@@ -2048,10 +2060,223 @@ nonlinear metric section или её общий запрет отсюда не �
 Однако (78) зависит от выбранного first lift v. При одной и той же
 metric wave остаются13 complex internal first directions; их вклад
 в (78) квадратичен. Ненулевой residual одного произвольного right inverse
-не исключает весь metric fibre. Следующий конкретный шаг — довести полученный source lift до
-строгого вывода и разрешить (77)–(78) с остальными neutral frequencies
-и amplitudes. Простого повторения linear rank/right inverse недостаточно. Физический выбор цены/подготовки, independent matter/spin,
+не исключает весь metric fibre. Для существования nonlinear section
+нужно разрешить (77)–(78) с остальными neutral frequencies и amplitudes.
+Но §8.16 ниже уже решает её exact finite GR comparison независимо от
+этого существования; поэтому такой census больше не предшествует GR
+consumer. Простого повторения linear rank/right inverse недостаточно.
+Физический выбор цены/подготовки, independent matter/spin,
 refinement и глобальное D0→GR closure этим первым подъёмом не заявлены.
+
+### 8.16. Внутренняя секция не может изменить метрический ответ того же корня
+
+Вход `e989bc01`. Ниже сильнее проверяется именно конечный GR consumer;
+не объявляется решённой нелинейная spatial compatibility из §8.15.
+Берём ту же полностью заданную conditional H+J+R, actual L=8 root,
+исходную физическую метрику и fixed calibrations. Утверждение действует
+как для faithful P/128 (§8.10), так и для real-even χ₊ (§8.14).
+
+**Полная карта.** Пишем S(h,z)=F_price(Δ)+R, где h — физические metric
+coordinates, а z содержит все остальные поля и всю нормированную
+complex amplitude C с reference128. R=Tr(C*ΔC), Tr(C*C)=1. Сфера
+амплитуд гладкая и при rank8: пустые120 reference columns и rank births
+не удаляются и не заменяются фиксированной PSD rank stratum. В owned
+open positivity/gap chart S гладкая; в исходном joint root S_h=S_z=0.
+
+Пусть s₁(h),s₂(h) — любые C¹ секции через ОДНУ И ТУ ЖЕ полную точку,
+решающие все внутренние rows S_z(h,s_i(h))=0. Достаточно секций над
+постоянными метриками; любую spatial metric section можно ограничить
+на это десятимерное подпространство. Уже построенная homogeneous section
+решает также все nonzero-frequency internal rows и служит s₁.
+Обозначим L=S_zz, B=S_zh, A_i=Ds_i. Тогда
+
+    L A_i+B=0, K=A₂−A₁, L K=0,
+    B* K=−A₁* L K=0,
+    Hess Γ_i=S_hh+B* A_i, Γ_i(h)=S(h,s_i(h)).         (79)
+
+Последняя формула следует из envelope gradient S_h(h,s_i(h)), который
+имеет класс C¹. Поэтому Γ_i имеет Hessian уже при C¹ секции. Никакая
+обратимость L, pseudoinverse, equivariance секции или гладкость всего
+stationary locus не предполагаются. По (79) все такие секции имеют
+**один и тот же** constant-metric Hessian: owned inertia7+/0−/3zero.
+Это не доказывает существование пространственной секции, но исключает
+исправление её метрического Hessian выбором иного tangent в ker L.
+
+**Отдельный первый источник настоящего R тоже фиксирован.** Нужен
+дополнительный аргумент; единственность TOTAL Hessian сама по себе
+не даёт единственности Hessian(R∘s).
+
+В обоих корнях ρ₀=C₀C₀* translation-invariant. Для каждого lattice
+translation T_g существует reference representation V_g, такая что
+T_g C₀ V_g*=C₀: переносим T_g через polar isometry C₀ на active
+reference support и продолжаем представление на весь его комплемент.
+Действие C↦T_g C V_g* сохраняет S, R и нормировку и фиксирует корень.
+Следовательно L коммутирует с этим конечным real representation, а
+усреднение любого k∈ker L остаётся в ker L. Его geometry homogeneous.
+Это усреднение КАСАТЕЛЬНОГО вектора, не нелинейной стационарной секции.
+
+При fixed physical metric однородный frame tangent можно устранить
+точным совместным Lorentz representation change; R отдельно invariant.
+После этого δF=0. Полное linearized preparation equation даёт
+
+    (Δ₀−ε₀)δC+(X_k−δε)C₀=0,
+    P(X_k−δε)C₀=0.                                 (80)
+
+P здесь полный128 shell, поэтому первая строка уничтожается при
+projecting независимо от coherences, reference rotations и rank births.
+Owned homogeneous rank27 заставляет все24 link jets равняться0:
+для faithful это full16 grade2 tensor identity §8.10; для χ₊ —
+доказанный actual-root r>30 rank §8.14. Observer не компенсирует grade2.
+Затем равенство четырёх diagonal G jets и обратимый J_obs из (54)
+дают δn=0, δε=0. Таким образом, homogeneous fixed-metric kernel не
+содержит genuine geometry после representation quotient. Все его
+amplitude/reference directions сохраняются.
+
+На eigenpreparation любой нормированный amplitude tangent удовлетворяет
+
+    D_C R[δC]=2 Re Tr(δC*Δ₀C₀)
+             =2ε₀ Re Tr(δC*C₀)=0.
+
+Из translation invariance DR[k]=DR[average(k)] и (80) следует
+
+    DR|ker L=0,
+    D(R∘s₂)−D(R∘s₁)=DR K=0,
+    D R_red=γ Dd, γ=128−64√2>0.                     (81)
+
+Все other-frequency field zeros учтены усреднением; их отсутствие
+не утверждается. (81) относится к FIRST derivative R. Отдельный
+Hessian R_red не объявляется единственным.
+
+**Два точных источника исключают finite EH+Lambda+same R.** У корня
+
+    G*=c²I+κ_G11ᵀ, c=a−b>0, κ_G=2bc+4b²>0,
+    G*⁻¹=A I+D 11ᵀ,
+    A=1/c², D=−κ_G/[c²(c²+4κ_G)]<0.
+
+Каждый symmetric equal-diagonal δG имеет настоящий constant physical
+metric lift (§8.10 и homogeneous owner §4). Для исходного q и g=q⁻¹
+
+    |det q|=det G,
+    Vol=V_coord|det q|^(−1/2),
+    DVol[δG]=−(Vol/2)Tr(G*⁻¹δG).                    (82)
+
+Предположим равенство первых источников на одной из секций выше:
+
+    DΓ=c_EH DI_EH+Λ DVol+D R_red,                   (83)
+
+с постоянными couplings и ТЕМ ЖЕ Rayleigh term на этой же секции.
+Все постоянные метрики flat, значит DI_EH=0 на этих directions;
+в joint root DΓ=0. Для δG=E01+E10 имеем Dd=0, DR_red=0, но
+DVol=−Vol D≠0. Поэтому (83) требует Λ=0. Для δG=I₄ имеем Dd=1,
+DR_red=γ≠0. С Λ=0 получено противоречие уже первых источников.
+Аргумент также действует при любом фиксированном ненулевом коэффициенте
+перед тем же R. При pure EH+ΛVol без R stationarity требует Λ=0,
+а (79) противоречит тождественно нулевому constant-metric EH Hessian.
+
+**Итог теоремы:** ни одна C¹ full-internal stationary section через
+данный faithful или χ₊ joint root не даёт (83). Все16 grades,
+reference128, observer3, links24 и возможные пространственные neutral
+directions сохранены. Не требуется ни nonlinear averaging, ни отсутствие
+всех Fourier zeros, ни завершение Kuranishi equations из §8.15.
+
+Scope точный: конечная fixed-parameter conditional цена и эти полные
+корни. Иная цена, другой root/real density, независимая физическая материя,
+дополнительный выведенный геометрический сектор или controlled limit
+не исключаются этим утверждением. Они должны предъявить свой источник,
+а не называться иной секцией уже исключённой идентичности.
+
+### 8.17. Какие изменения подготовки действительно меняют задачу
+
+**Смена complex rank при том же real density не даёт новую ветвь.**
+В position/exterior basis все actual real field configurations имеют
+реальный симметричный Δ. Если C=A+iB, положим W=[A B] — real matrix
+с256 columns. Тогда точно, во всей геометрической окрестности,
+
+    R=Tr(WᵀΔW), ||W||²_HS=1, Re(CC*)=WWᵀ.          (84)
+
+Для двух W с одинаковым WWᵀ существует O∈O(256), W₂=W₁O:
+их row isometries продолжаются ортогонально на полный reference carrier.
+W↦WO — точная real variational symmetry этой S, включая все amplitudes
+и rank births. Это не утверждение физического допуска нового gate.
+Одинаковый Reρ задаёт изоморфные полные stationary germs и полный Hessian.
+В частности, на real eight-mode χ carrier можно формально понизить
+complex rank с8 до4: R_shell=(I+iJ)/8, Jᵀ=−J, J²=−I. Но
+Re R_shell=I/8 и real prepared support остаётся8; это не обход (83).
+
+**Даже real shell coherences не уменьшают rank в том же χ carrier.**
+На Ω={±e_i} возьмём любую Hermitian R_shell с position-reality
+R_(−k,−l)=conj R_(k,l), сохраняющую все исходные field sources.
+Thermal baseline сокращается. Уже coframe rows вынуждают R_shell=I₈/8;
+PSD для этой linear uniqueness даже не требуется. Пусть d_i —
+Euclidean dual к u_i, δ=2−√2, ζ=exp(iπ/4)−1. Actual probe δu_i=d_i
+имеет на χ-compressed X следующие coefficients:
+
+    Q=0, k=±e_i:          2δ/ell²;
+    Q=2e_i:               conj(ζ)(ζ+conj(ζ))/ell²≠0;
+    Q=e_i±e_j, i≠j:       δ/(2ell²) на обеих ordered pairs.  (85)
+
+Reality и Hermiticity делают два density coefficients mixed pair равными,
+поэтому их source не сокращается. Mixed probes зануляют все cross-axis
+coherences; axial probes зануляют R_(−e_i,e_i). Homogeneous probes
+фиксируют paired weights1/4; reality делит их поровну. Получены все
+36 real components symmetric eight-dimensional density. Это injective
+подсистема полного source: link/observer rows не удалены и не могут
+отменить отдельное coframe equation. Exact control включён в checker
+ниже. Вывод относится к выбранному χ carrier, не ко всей E0 family.
+
+**Действительно иная подготовка была проверена.** В уже stationary104
+family §8.13 допустима χ_(±e0)=(vac−top)/√2, χ_(±ei)=χ₊ для i=1,2,3.
+Она тоже имеет все первые metric lifts на shell при a>b>0; complete
+external lift отдельно использует owned gap. Два новых time/spatial
+минорных gcd равны `(r−1)^7(r+1)^2(r²+1)` и
+`(r−1)^7(r+1)(r²+1)`; spatial minors и axial lifts уже принадлежат §8.14.
+Mixed signs меняют только top relation в W14 на v_top=−w_top.
+
+Однако её actual full-source diagnostic на Q1100 даёт nonsingular A13
+с inertia12+/1− и после internal-source elimination оставляет metric00
+second residual norms9876.17105 и20382.62525 на inactive ±e2,±e3.
+Actual ell=1/8, full4096×16, momentum-dependent preparations, D_vw и
+signed R_Q сохранены. Это NUMERIC_DIAGNOSTIC данного tangent, не exact
+all-branch theorem для новой density. Он не отменяет §8.16: тот относится
+к faithful/χ₊ roots и вообще не зависит от этого численного теста.
+Timeflip кандидат сохранён как потреблённый тест, не как новый маршрут
+перебора. Комплексный rank и ещё один первый lift сами по себе не дают
+нужной смены полного геометрического закона.
+
+### 8.18. Изменение маршрута: настоящий источник вместо смены секции
+
+Для exact finite GR сравнения через owned faithful/χ₊ roots шаг (83)
+теперь закрыт отрицательно. Nonlinear spatial lifting остаётся отдельной
+задачей существования, но больше не является недостающей предпосылкой
+положительного Einstein source этой цены в этих корнях. Поэтому
+дальнейший Fourier-kernel census не стоит перед GR consumer.
+
+Уже имеется и независимая граница простого heat-limit обхода:
+[полный scale-source theorem](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement)
+сохраняет все calibrations и даёт на actual joint roots
+
+    M z beta Z<1,
+    Z>=c/beta²  при owned uniform coefficient hypotheses,
+    M z c<beta.                                     (86)
+
+Поэтому fixed positive Mz не допускает controlled stationary beta→0
+при этих гипотезах. Это потребление уже доказанного minmax результата,
+не новый спектральный replay. Fixed-beta refinement, другие реальные
+калибровочные законы и иные корни не исключены ни (83), ни (86).
+
+Положительный configured golden-source результат §§3–6 сохраняется:
+он уже композиционно приводит к Einstein consumer в своей объявленной
+программе. Но нельзя подменять им H+J+R после (83), скрывая изменение
+цены. Следующий стратегический переход — вывести actual complete
+geometry/history price и её native calibration/record law либо доказать
+источниковую оценку для реально допустимого предела. Сохраняются
+coherent interference, preparation и normalization, весь источник старых
+labels, independent matter/spin и исходный raw #216. Неопределённые
+функции Book03 из §8.9 нельзя заполнить выбранными Einstein terms.
+
+Таким образом, локальные positive first lifts потреблены, а их ошибочный
+повторный вход в GR route устранён точной теоремой. Физическое
+D0→ОТО closure остаётся открытым на указанном variational переходе.
 
 ## 9. Проверка
 
@@ -2155,3 +2380,16 @@ ratio и observer Jacobian. [Receipt](sources/d0_labelled_golden_record_full_sou
 read-only default и opt-in --output; historical suites не повторялись.
 Отдельный source diagnostic выше намеренно сохраняет численный статус;
 его residual не повышен до физического/no-go theorem.
+
+[Time-sign lift and real-density control](sources/d0_labelled_golden_record_full_source_2026-10-18/check_even_memory_timeflip_lift.py)
+проверяет два новых mixed-sign minors, полный W14, оба направления и
+реальную −Q пару, затем literal coframe moments (85) и invertible
+36×36 real-density map. [Receipt](sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_TIMEFLIP_LIFT_RESULT.json)
+содержит1140 exact identities; Python3.9.6/SymPy1.14.0, read-only default,
+opt-in --output и pinned inputs. Общий source diagnostic теперь принимает
+`--timeflip`; его [новый результат](sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_TIMEFLIP_SOURCE_DIAGNOSTIC.json)
+сохраняет численный статус. Старый default receipt совпал побайтно после
+обобщения. Теорема (79)–(83), realification и потребление (86) доказаны
+аналитически и независимо проверены; старые root/thermal/Lean suites
+для них не воспроизводились. Численный timeflip результат не является
+предпосылкой отрицательного exact finite source theorem.

@@ -56,8 +56,17 @@ The same rank8 state has a proved homogeneous rank27 source reduction;
 full reference128 and all grades remain. The actual spatial source has
 13/19 internal directions. A full-carrier q1100 diagnostic solves its
 linear internal equations but finds a second-order preparation residual.
-The next consumer is nonlinear compatibility, including neutral modes;
-this numerical fixed-frequency result is not a general obstruction.
+That numerical fixed-frequency result is not a general obstruction.
+Sections8.16–8.18 now resolve the GR comparison independently of that
+nonlinear problem: any C¹ full-internal stationary section through the
+same faithful or real-even root has the same total constant-metric
+Hessian and the same first Rayleigh source. Two exact probes exclude
+finite EH+Lambda+the same R, with all neutral modes/rank births retained.
+The next consumer is the actual complete history/price and calibration
+law, or a proved source-controlled limit. Changing the internal section
+through these roots cannot repair the excluded identity. A time-sign
+alternative and its failed second-order diagnostic are preserved as
+consumed evidence, without launching another preparation census.
 The [CAR/clock readout](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
 recovers the original metric, without an Einstein-frame rescaling. The
 [regular-natural-source classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)

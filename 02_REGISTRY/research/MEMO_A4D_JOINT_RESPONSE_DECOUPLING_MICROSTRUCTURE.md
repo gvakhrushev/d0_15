@@ -2,7 +2,29 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `7966c217`:** §§8.13–8.15 of the
+**Latest consumed transition, input `e989bc01`:** §§8.16–8.18 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+resolve the finite GR comparison without an all-frequency kernel census.
+For any C¹ full-internal stationary section through the SAME faithful or
+real-even root, `L A+B=0` fixes the total constant-metric Hessian to7+/3zero.
+The homogeneous rank27 and exact full-amplitude translation action also
+give `DR|ker L=0`, retaining every neutral mode and rank birth. Two exact
+constant-metric probes then exclude `DΓ=c_EH DI_EH+Lambda DVol+DR_same`.
+Thus a different nonlinear internal section cannot supply the missing
+finite Einstein source at these roots. A source-controlled limit, other
+root or physically derived price requires its own argument.
+
+The complex-rank escape at fixed Reρ is eliminated by an exact O(256)
+amplitude symmetry. Real coherences in the fixed eight-mode χ carrier
+are also fixed by the coframe source. A genuinely different time-sign
+preparation has an exact first lift, but its actual full-source diagnostic
+still has a second-order residual. These are consumed tests, not a new
+preparation catalogue. Together with the existing controlled small-heat
+bound `M z c<beta`, the next strategic consumer is the complete actual
+history/price and native calibration law, or a proved admissible source
+limit. No new action, counterterm or matter defined as a residual is added.
+
+**Prior positive first lift, input `7966c217`:** §§8.13–8.15 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 replace the fixed faithful preparation by its existing balanced stationary
 fibre. Independent momentum preparations give104 real parameters; the
@@ -19,10 +41,9 @@ matrix-valued matter, the second Dirac jet and the signed full-shell
 resolvent. The q1100 diagnostic solves the13 linear internal equations
 at the owned root center, then finds a nonzero second-order preparation
 residual. This is a numerical fixed-frequency result, not an all-branch
-no-go or a proved nonlinear metric section. The next step must solve the
-actual nonlinear compatibility with the remaining neutral frequencies,
-or establish its precisely scoped obstruction. Repeating the first metric
-lift cannot supply it. Physical price/preparation selection, independent
+no-go or a proved nonlinear metric section. Its nonlinear existence
+problem remains open, but the later section-independence theorem removes
+it as a prerequisite of the finite GR comparison. Physical price/preparation selection, independent
 matter, refinement and the original raw #216 closure remain open.
 
 **Prior faithful-branch transition, input `8c3a615c`:** the same source owner's
