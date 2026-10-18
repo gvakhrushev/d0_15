@@ -1,6 +1,6 @@
 # D0 → GR: native Julia blank support forbids passive sharp AF-leaf readout
 
-**Date:** 18 October 2026. **Consumer:** existing Draft [#334](https://github.com/gvakhrushev/d0_15/pull/334), \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`.
+**Date:** 18 October 2026. **Consumer:** existing Draft [#334](https://github.com/gvakhrushev/d0_15/pull/334), `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`.
 **Status:** EXACT FINITE POVM THEOREM / NATIVE WEAK-HISTORY APPLICATION / PHYSICAL LEFT ADMISSION OPEN.
 No CORE/BOOK/claim promotion, no new action, scalar counterterm, chosen prior, independent matter or Einstein conclusion.
 
@@ -111,6 +111,6 @@ The next **positive** consuming proof is now sharp: provide an admitted *active*
 
 ## 6. Exact reproducibility and negative controls
 
-\`python3 02_REGISTRY/research/certificates/a4d_raw_julia_blank_leaf_postprocessing_check.py\`
+`python3 02_REGISTRY/research/certificates/a4d_raw_julia_blank_leaf_postprocessing_check.py`
 
 The script verifies the literal Julia two-leading-row completeness identity in \(\mathbb Q(\sqrt5)\), strict finite blank floors, the nonzero finite-\(T\) limit, the optimal 2-leaf saturating POVM control and the nonzero entropy-source contrast. The analytic proofs above apply to arbitrary finite-dimensional POVMs and every native 128 Kraus word, not just its two-mode diagonal test. No full Lean, huge raw-history enumeration or unrelated GR suite is claimed.
