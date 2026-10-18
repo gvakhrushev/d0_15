@@ -136,3 +136,51 @@ to derive the bindings from the existing verification/preparation/composition
 owners, or classify their complete admissible fiber, before carrying this
 source to the ten metric components. G0, Ward, curved roots, GR and all parent
 terminals remain open.
+
+## Exact finite-cylinder fiber and its surviving source direction
+
+The Lean certificate
+[`a4d_native_history_weight_fiber.lean`](certificates/a4d_native_history_weight_fiber.lean)
+now classifies the complete **finite-cylinder interface** over the owned
+golden weights. A positive assignment `q(w)` to every finite history, with
+unit root and exact refinement under appending either outcome, is equivalent
+to a positive likelihood `L(w)=q(w)/μ(w)` satisfying the golden-cylinder
+martingale identity. Multiplication by `μ` is the inverse map. This is a
+classification of consistent finite-cylinder assignments; it does not by
+itself construct or select an infinite-path measure.
+
+The same certificate proves the sharp singleton condition: if each
+chronological extension is already bound to the measured direct/return
+probabilities `p=φ⁻¹` and `p²`, then `q=μ` and `L=1` at every finite history.
+That is exactly the typed premise needed to remove the martingale freedom at
+this interface. The premise must be established for the complete measured
+Book/D0 history, not inferred from the separate existence of the golden
+cylinder owner.
+
+Conversely, positivity and refinement alone leave a concrete one-parameter
+family. At every extension it uses branch masses
+`p+t p²` and `p²(1−t)`, with `−1/p<t<1`; it is normalized and positive at all
+finite depths, equals `μ` at `t=0`, and differs from `μ` for every nonzero
+`t`. Its two local base-`φ` log-likelihood increments have exact derivatives
+`p/log φ` and `−1/log φ` at zero. Thus the constrained cylinder law has a
+nonzero information-source direction before any field-to-history map is
+imposed.
+
+This family is not asserted to be a physically admitted native D0
+perturbation. No map from the family parameter to the common native
+`(q,D,b,m)` preparation, instrument, matter readout, or refinement has been
+proved. The critical next edge remains that actual common-owner map and the
+derivation (or failure) of the measured `p,p²` binding from the existing
+Book, verification, preparation, and composition owners. Only after that edge
+is settled should its joint derivative be carried to the ten metric
+components and compared with `ρ₀`. This result closes the finite-cylinder
+classification question, not G0, the physical source, Ward identity, curved
+roots, soundness/recovery, GR, or any parent terminal.
+
+Replay from `03_FORMALIZATION` with
+`lake env lean ../02_REGISTRY/research/certificates/a4d_native_history_weight_fiber.lean`.
+The imported owner `DetectorSupportGoldenWeight.lean` is pinned to Git blob
+`d7f7f170815cc3ad2052ad48280ae5919652b314`; the toolchain is Lean `v4.30.0`,
+with Mathlib commit `6988106320cbae4bcbd5d142075946f7fe08a7b7` in the pinned
+`lake-manifest.json`. The compiler receipt prints the checked declarations
+and their transitive axioms; no `sorryAx` occurs.
