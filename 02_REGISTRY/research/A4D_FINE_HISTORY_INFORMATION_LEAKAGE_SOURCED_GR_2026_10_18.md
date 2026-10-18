@@ -202,3 +202,31 @@ Equations (17)–(20) are reproducible from the full five-output probabilities, 
 At the common vacuum, the measured log odds are the same at every leaf. At finite t with inhomogeneous matter, (19) tests universality directly: distinct success-weighted log-odds coefficients signal the non-Einstein source deformation of §3. Conversely a future physical clock/matter register must be tested against (19) rather than against one integrated static sum. This observed-source criterion is stronger than comparing the value of Gamma alone.
 
 **Strategic consumption:** after solving preparation using the full old fine record, one needs only the existing global failure flag to evaluate the stationary geometric source; one must still retain the full past leaf record as the *selector* of the stationary preparation. This may reduce the downstream source-readout resources, but cannot remove the cost of obtaining and storing Y, the detector/controller source or the independent matter/clock equations. The two roles must not be conflated.
+
+
+## 9. A physically decisive source test for the retained compiler/work register
+
+The existing native compilation programme retains work/history resources and their preparation/execution; merely copying a leaf or adding a fixed CNOT does NOT authorize erasing that physical price. But the **complete same-history Shannon part** has an exact structural source criterion.
+
+Let J=(Y,K) denote all already measured fine leaves and five flags of (1). Let an extra complete **classical measured** work label W have a conditional probability kernel c(w|i,j;y), normalized for every (i,j) and depending on genuine fields/preparation y. On their *actual complete joint partition*,
+
+    q_full(i,j,w;y)=q(i,j;y)c(w|i,j;y).
+
+Then Shannon's chain rule gives exactly
+
+    ell S_full=H(Y,K,W)
+      =ell Gamma+sum_(i,j) q(i,j) H[c(.|i,j)],           (21)
+
+and its **full geometric first source** is
+
+    ell D S_full=ell D Gamma
+      +sum_(i,j) Dq(i,j) H[c(.|i,j)]
+      +sum_(i,j) q(i,j) D H[c(.|i,j)].                  (22)
+
+The same-history Book action agrees with Gamma in first variation **if and only if** the complete last two terms sum to zero on its admitted geometric tangent space. This is an exact, testable outcome-source condition; fixed instruction words or a fixed conditional kernel alone do not ensure it.
+
+**Positive, native-palette-compatible mathematical case.** An addressed one-way copy that maps a freshly prepared blank register to the already registered computational label W=f(Y,K), retains every failed/successful exit, and is read in that basis is an isometry of classical labels with conditional c a point mass. Then H[c]=0, so (21)–(22) reduce identically to Gamma and D Gamma, even if the original fine-leaf distribution moves. The copy is NOT free as physical circuit preparation/execution; its additional Book code and work cost must still be identified in the original complete programme, and this argument does not cover extra coherent work amplitude entropy or unmeasured environment channels. The point is narrower: a deterministic *retained label copy does not itself change the measured same-history Shannon law* when work is included rather than erased.
+
+**Strict negative control.** A field-independent extra work coin with Bernoulli conditional probabilities (.2,.8) for leaf1 and (.4,.6) for leaf2 has different conditional entropies. On two leaves with f=(+1,-1), a_i=a0+c f_i and c=.02, the second term of (22) is nonzero (~-0.000661501819), even though all its conditional work probabilities are field-independent. If instead every branch had the same constant conditional entropy, the extra entropy would be a field-independent constant and its first source would disappear; this is a different sufficient condition and still needs an actual source/effect proof. The check is numerical only; nonvanishing follows symbolically from z'(a)>0, f1!=f2 and h(.2)!=h(.4).
+
+**CRITICAL qualification.** The complete native memory may be a coherent quantum record rather than this classical measured work partition, with noncommuting conditional effects and rank births. Equations (21)–(22) do not identify von Neumann entropy, quantum conditional entropy or original H+J+R with measured Shannon by name. They define the **next exact admission/source test** for the already owned compiler: establish its actual retained work outcome channel (if any), its conditional entropy/source, and whether the full Book Cut is this same joint classical partition, BEFORE using the successful geometric \`-D log P_failure/ell\` reduction as physical gravity.
