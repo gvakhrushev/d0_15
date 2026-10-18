@@ -210,6 +210,40 @@ under its actual strict-good gap, full marked FAILURE record and admitted effect
 
 The full upstream old Book history/source, original v8 H+J+R, moving cut/code/normalizer, truly independent clock/preparation/observer corrections and original fixed-g/tau unweighted raw#216 remain distinct. The result solves a genuinely MUCH larger **time-dependent, sourced, infinite-dimensional Lorentz Einstein sector** within the one ACTUALLY specified mathematical complete AF×scene feedback programme; it is not promoted to a theorem that EVERY foundationally allowed D0 programme must choose this instrument.
 
+### 5.1. The entire arbitrary-Brinkmann family requires ONLY the two native source jets, not an infinite action expansion
+
+The same mathematical principle now holds on a vastly larger curved sector than the preceding constant-flux polygon. Consider ANY true complete same-carrier measured price \(\mathcal S_h\) whose genuine full first source, after *its independently resolved additional internal Euler rows*, satisfies the following **one** common-null/star identity on all 16+24+2 independent field directions:
+\[
+D\mathcal S_h\big|_{\{f_i=q_i=0\}}
+ =a_hD\sum_{z}\widehat f_z+b_hD\sum_zq_z,\qquad a_h\ne0,
+\tag{18}
+\]
+with site-independent coefficients (true PF/site masses already transported into the single operational metric), all old-history/work/clock effects included, and positive regular link/solder chart. The two numbers \(a_h,b_h\) are **measured derivatives of that ACTUAL price**, not adjustable Einstein coefficients. Then the EXACT original 40→3→1 proof implies that every Brinkmann + original CAR16 scalar/top history solves the entire reduced complete-price Euler if and only if, on its interior,
+\[
+\boxed{\begin{aligned}
+K_a(u,x,y)&=\tfrac12[H(u+h,x,y)-H(u+h,x-h\hat a,y)],\\
+\Delta_h^\perp H(u+h,x,y)&=-4(b_h/a_h)\,
+                         |D_u^+\Psi(u)|^2 ,
+\end{aligned}}\tag{19}
+\]
+where the first line is read separately for x,y and every other free link, coframe and scalar Euler row is zero as calculated, **provided all distinct actual internal full-programme Euler have been solved**. The forward solution is the same unique native Cartan stagger and the same Poisson solver with \(\lambda=b_h/a_h\). ALL higher nonlinear functional derivatives, arbitrary full operator spectral actions and different positive smooth scalar aggregator functions enter the finite stationary equations ONLY through the two genuine measured first derivatives at this common stratum; their off-null behavior is neither discarded nor claimed equal.
+
+Therefore the user's sought **universality** is a well-defined exact field-equation statement on a genuine infinite-dimensional sourced Einstein sector: the gravitational geometry of all distinguishable microhistorical records depends on their local null energy \(E(u)\) and two true native source-jet coefficients, while all phase and harmonic data inhabit different fibres of the same solution bundle. A different full price not satisfying (18) is **not** thereby shown to belong to the same class. The compulsory D0 source itself has yet to be identified with a member of this theorem's class; the explicitly constructed and fully differentiated Book J2 is ONE proven mathematical representative.
+
+### 5.2. Conservation is part of the same material/metric source, not an axiom
+
+For every smooth \(\Psi(u)\), the native full16 Clifford kinetic metric source has on the resulting Lorentz metric the symmetric null stress
+\[
+\mathcal T_{\mu\nu}=2E(u)\,(\mathrm du)_\mu(\mathrm du)_\nu,
+\quad E(u)=|\Psi'(u)|^2.
+\]
+For the exact Brinkmann metric \(g=2du\,dv+H(u,x,y)du^2-dx^2-dy^2\), \(k=\mathrm du\) is covariantly constant and \(k^\mu\partial_\mu=\partial_v\). Hence
+\[
+\boxed{\nabla^\mu\mathcal T_{\mu\nu}
+=2(k^\mu\partial_\mu E)k_\nu=2(\partial_vE)k_\nu=0,}
+\]
+for ARBITRARY u-dependent E, and the TWO independently varied original scalar/top matter equations give \(\Box_g\Psi=0\) since \(\partial_v\Psi=0\). The discrete source is consistent with this Ward identity already at finite h by its exact v-Stokes equation. Thus metric dynamics and its matter-current conservation arise from the SAME one feedback-source construction on the entire widened class, without inserting an independent stress by using the Einstein equations backward.
+
 ## 6. One decisive reverse GR→D0 construction (and what it really closes)
 
 Given ANY smooth sufficiently small REAL scalar/top matter waveform \(\Psi(u)\) on a local unwrapped null chart and ANY smooth classical harmonic W(u,x,y) on a bounded transverse Dirichlet rectangle:
