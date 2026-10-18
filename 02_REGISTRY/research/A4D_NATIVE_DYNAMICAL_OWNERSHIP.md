@@ -904,3 +904,45 @@ nonuniqueness. The missing datum remains an admitted map from the constrained
 field tangent to unitary-return Lie-algebra tangents, compatible with native
 refinement. Consequently `physical_response_nonuniqueness_proved` remains
 false, G0 stays open, and the source/Ward/refinement/GR obligations are unchanged.
+
+## 10. Minimum description length does not supply the native variation
+
+Book 03 ([finite action operators and scene dynamics](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md))
+§03.3.0a states `most probable = shortest code = δS = 0` as a tautology,
+and §03.3.0b identifies this with the smooth least-action law.
+The first equality can hold on a discrete history set: if
+`w(γ)=φ^{-S(γ)}` with `φ>1` and a common counting measure, maximizing `w`
+is exactly minimizing `S`. The second equality does not follow. The owned
+finite cost is a map on histories, not a differentiable map on a tangent
+space; `δS` is not defined by the probability ordering.
+
+This remains false as an unconditional implication after adding an ambient
+smooth coordinate. On `[0,1]`, let `S₀(x)=x` and `S₁(x)=x²`. These smooth
+costs agree on the two sampled histories `0,1`; both have the same unique
+minimum at `0`, and both make `φ^{-Sᵢ}` largest there. Yet
+`S₀′(0)=1` while `S₁′(0)=0`. More generally, for any sampled values `a,b`
+and any prescribed derivative `d`, the polynomial
+
+```math
+S_d(x)=a+(b-a)x+(b-a-d)x(x-1)
+```
+
+has `S_d(0)=a`, `S_d(1)=b`, and `S_d′(0)=d`. The proof is the adjacent
+Lean capsule `certificates/a4d_book03_mdl_variation_boundary.lean`; its
+generic theorem `every_first_jet_extends_two_samples` establishes the full
+first-jet freedom, while the concrete minimum example is separately checked.
+
+This refutes only the claimed tautological step, not the separate finite
+stationarity equation written in §03.8 or the full D0 core. A legitimate
+stationarity theorem needs an owned field domain `X_N`, a lift of histories
+and the full `S_stack` to that domain, its differentiability, the admitted
+tangent directions and boundary/constraint law, and compatibility of those
+objects with refinement. If the maximizing history is a constrained boundary
+point, the correct conclusion is a constrained first-order condition; zero
+ambient derivative requires an interior hypothesis. The current MDL identity
+does not provide any of these data, so it cannot close the G0 action-to-Euler
+arrow or replace the separately owned finite equations of motion.
+
+This is a scoped correction to a proposed inference. It does not edit Book 03,
+change a CORE/claim status, or prove that no other native owner supplies the
+missing variation structure.
