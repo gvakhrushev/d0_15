@@ -290,8 +290,13 @@ def test():
             D_mu[i][j] = a_site[y] / a_site[x] * D_count[i][j]
             D_mup[i][j] = aprime[y] / aprime[x] * D_count[i][j]
             assert D_mup[i][j] == T[y] / T[x] * D_mu[i][j]
-            # Weight-correct Hermiticity, NOT frozen counting adjoint.
+    # Both transposed entries must exist before testing the weighted adjoint.
+    for i in range(32):
+        x = i // 16
+        for j in range(32):
+            y = j // 16
             assert a_site[x]**2 * D_mu[i][j] == a_site[y]**2 * D_mu[j][i]
+    assert any(D_mu[i][j] != D_mu[j][i] for i in range(32) for j in range(32))
     # Exactly similar operators have identical traces of powers.
     D2 = mmul(D_mu, D_mu)
     D02 = mmul(D_count, D_count)
