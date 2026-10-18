@@ -1,5 +1,21 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+
+## 18 October 2026 — new POSITIVE closure: AF geometric source and operational CAR16 now read ONE metric
+
+[Exact density-dressed CAR/Einstein metric consumer](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md) consumes the accepted weighted \(\star\) stationarity, the genuine old AF leaf masses and the actual native full16 raising reconstruction. At **EVERY finite anchor**, the measured-weight / relative-tetrad composite \(\widehat e_x=\sqrt{\mu_x/\bar\mu}\,e_x\) gives
+\[
+\sum_x\mu_x{\cal P}_{\star,x}(e,U)=\bar\mu\sum_x{\cal P}_{\star,x}(\widehat e,U)
+\]
+with the FULL 16 tetrad/24 link/independent weight first jets. From the **actual native raising** \(X=C(u)\Lambda M\), with \(F=e^{-1}\), and the **same** measured old AF weights, define \(\widehat X=\sqrt{\bar\mu/\mu}\,X\). Its full CAR16 anticommutator yields precisely \(\widehat q=(\bar\mu/\mu)q\) and \(\widehat g=(\mu/\bar\mu)g\), the SAME metric of the weighted \(\star\)-source. This is a concrete common source/readout identity, not a new curvature action or a free metric-tensor fit; density exponent \(1/2\) is uniquely fixed among homogeneous site-power normalizations by exact compensation.
+
+On the actual free-preparation stationary orbit \((\mu,e)\mapsto(\chi\mu,\chi^{-1/2}e)\), the **gravitational** \(\widehat g\), \(\widehat X\), full10 metric readout and Clifford principal symbol are ALL invariant on the native mathematical carrier. The full nonlinear AF entropy's Weyl defect is \(2\sum_x\sigma_x\mu_x[\Phi(f_x)-f_x\Phi'(f_x)]=O(\sum\mu_x f_x^2)\); therefore on the exact \(f=0\) 40-row roots its first source is precisely proportional to \(D{\cal P}_\star(\widehat e,U)\) at any fixed valid probe t. The already-owned true-golden full-lattice pp-wave family has \(\widehat e_n=\bar e_n\) exactly at each finite level, and its **whole \(\chi\)-family** converges to ONE Ricci-flat nonflat \(\widehat g_{\rm pp}\) in C². This resolves the apparent conformal preparation scalar **inside the gravitational source-defined metric**, without pretending it is gauge of every retained AF/history/matter test.
+
+The mathematical compatibility checker [full16 Fraction test](sources/d0_density_dressed_car_metric_2026-10-18/check_dressed_car_metric.py) exercises a nontrivial proper Lorentz exterior lift, CAR anticommutators, the native vacuum-to-grade1 \(u\) readout, field/weight first jets, two independent weighted \(\star\) sites, finite radial Ward, and quadratic nonlinear AF Weyl defect. Its file is published; current session's independent JS sanity control of CAR16 and weight compensation passes. A fresh Python/Lean/CI run is not claimed.
+
+**Next same-owner physical consumer:** take the declared common retained AF leaf \(\mu_x\) and the original full-Lorentz Julia raising \(X_{x,r}\) in ONE physically admitted stored experiment; show that its physically chosen clock/metric reading is the source-compatible conditional normalization \(\widehat X\) (including the real moving endpoint half-density/observer jets), and transport the true CAR/matter equations through that SAME metric. The parent original fixed-g, independent tau, ten raw rows and unweighted \(h^{-2}\) #216 refinement are preserved. No separate coframe action, Euclidean observer counterterm or freely chosen \(\chi\) potential is installed.
+
+
 ## 18 October 2026 — native source, preparation and nonlinear GR synthesis
 
 **Actual-root reduction, input `bf74b2b9`:**
