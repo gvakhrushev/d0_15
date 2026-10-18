@@ -173,6 +173,42 @@ It does not assert physical nonuniqueness. Reversal invariance is an
 additional restriction and is not satisfied by this witness; it is retained
 as a distinct class in the table, not silently discarded.
 
+### 3.2 A smooth source in the endpoint-invisible direction
+
+The exact kernel witness also gives a smooth family in the actual primitive
+action interface. On each directed edge set
+
+```text
+d(u,v) = 1       for zone(u)=0, zone(v)=1,
+         −9/13   for zone(u)=2, zone(v)=1,
+          0      otherwise,
+w_s(e) = 2 + s d(e).
+```
+
+For every endpoint in zone 1, the incoming sum of `d` is
+`9·1 + 13·(−9/13)=0`; at endpoints in zones 0 and 2 it is also zero.
+Consequently the actual rational endpoint operator satisfies `C1 d=0`.
+Also `|d(e)|≤1`, so for `|s|<1` every edge weight obeys `w_s(e)>1`.
+The existing `protocolFromEdges` therefore extends each member to an actual
+`ActionProtocol` on the verified 33-vertex scene carrier, and `fromEdges`
+extends it to an additive action on **all** valid scene walks.
+
+The constant family `w_s≡2` and this family agree at `s=0` on every history.
+Their source derivatives differ: on the actual edge `0→9`, the constant
+family has derivative zero and `w_s` has derivative one. Yet `C1` annihilates
+that full edge tangent, so the endpoint-averaged source is identical. These
+claims are compiled in Lean; the exact rational checker independently verifies
+the 718-edge kernel vector, positive primitive gap on the open interval, base
+agreement, endpoint projection and nonzero derivative.
+
+This proves nonidentifiability of the first source **from the typed primitive
+history/action and endpoint-average interfaces alone**. The parameter `s` is
+only a probe coordinate for two mathematical completions. It is not a D0
+coframe/metric field, admitted preparation variation, physical action, or
+source. No physical-response NO-GO follows. The missing arrow remains the
+independently owned map from the complete native preparation and its allowed
+variations into the physical field-dependent history weight and full price.
+
 ## 4. All-depth endpoint-central trace: existence and uniqueness
 
 Let A=Adj31, r(v)=1/(rho+n_zone(v)), sum_v r(v)=1, and

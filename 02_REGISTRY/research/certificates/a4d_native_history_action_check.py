@@ -27,9 +27,9 @@ def main():
         checks.append(name)
 
     receipt = json.loads((root/(PREFIX+'_results.json')).read_text())
-    check('COMPILED_20_DECLARATIONS', receipt['status'] == 'PASS'
+    check('COMPILED_29_DECLARATIONS', receipt['status'] == 'PASS'
           and receipt['owner_input_head'] == HEAD and receipt['compiler_exit_code'] == 0
-          and receipt['printed_axiom_dependencies'] == 20 and not receipt['sorryAx']
+          and receipt['printed_axiom_dependencies'] == 29 and not receipt['sorryAx']
           and set(receipt['axioms']) <= {'propext', 'Classical.choice', 'Quot.sound'})
     pins = {**receipt['transitive_d0_source_sha256'], **receipt['toolchain_input_sha256'],
             receipt['capsule']: receipt['capsule_sha256'], receipt['output']: receipt['output_sha256']}
@@ -40,7 +40,13 @@ def main():
     for name in ['completeAdditiveFiber', 'full_positive_edge_fiber',
                  'primitive_cost_cannot_forget_return', 'unit_edge_action_eq_length',
                  'perron_path_log_telescopes', 'perron_root_bounds',
-                 'perron_uniform_two_step_lower_arithmetic', 'normalized_constant_reading']:
+                 'perron_uniform_two_step_lower_arithmetic', 'normalized_constant_reading',
+                 'hidden_history_direction_endpoint_kernel',
+                 'hidden_history_weights_ge_one', 'hidden_history_protocol_edge_cost',
+                 'hidden_history_action_base', 'constant_history_edge_path_hasDerivAt',
+                 'hidden_history_coarse_reading_constant', 'hidden_history_weight_hasDerivAt',
+                 'hidden_history_edge_path_hasDerivAt',
+                 'hidden_history_source_not_selected_by_endpoint_projection']:
         check('BOUND_'+name, "'D0.Research.NativeHistoryAction."+name+"' depends on axioms:" in out)
     check('ACTUAL_PERRON_CAPSTONE_PRINTED',
           'D0.VNext2.SceneHistoryPerronTrace.scene_history_perron_trace_owner :' in out
@@ -139,6 +145,22 @@ def main():
     check('SAME_COARSE_READING_AND_POSITIVE_PROTOCOL_FIBER',
           all(w >= 1 for w in w1.values()) and C1*sp.Matrix([w1[e] for e in edges]) == 2*sp.ones(33, 1)
           and sum(w1.values()) == 2*718)
+    direction = {e: sp.Rational(h[e], 13) for e in edges}
+    direction_vector = sp.Matrix([direction[e] for e in edges])
+    source_parameter = sp.symbols('source_parameter', real=True)
+    source_weights = 2*sp.ones(718, 1) + source_parameter*direction_vector
+    check('HIDDEN_SOURCE_DIRECTION_IS_ENDPOINT_KERNEL',
+          C1*direction_vector == sp.zeros(33, 1) and direction_vector != sp.zeros(718, 1))
+    check('HIDDEN_SOURCE_FAMILY_HAS_UNIT_GAP_ON_OPEN_INTERVAL',
+          max(abs(value) for value in direction.values()) == 1
+          and min(direction.values()) == sp.Rational(-9, 13)
+          and all(sp.expand(source_weights[i] - 2 - source_parameter*direction[e]) == 0
+                  for i, e in enumerate(edges)))
+    check('HIDDEN_SOURCE_FAMILY_BASE_AND_COARSE_READOUT_FIXED',
+          source_weights.subs(source_parameter, 0) == 2*sp.ones(718, 1)
+          and C1*source_weights == C1*(2*sp.ones(718, 1)))
+    check('HIDDEN_SOURCE_FAMILY_NONZERO_EDGE_DERIVATIVE',
+          direction[(0, 9)] == 1 and sp.diff(source_weights[edges.index((0, 9))], source_parameter) == 1)
     p1, p2 = [0, 9, 1, 20], [0, 20, 9, 20]
     check('SAME_LENGTH_ENDPOINTS_DISTINCT_ADDITIVE_ACTION',
           all(A[u, v] == 1 for p in [p1, p2] for u, v in zip(p, p[1:]))
@@ -186,6 +208,8 @@ def main():
         'all_field_lifts_fixed_length_endpoints': False,
         'native_field_map_constructed': False,
         'native_source_constructed': False,
+        'endpoint_kernel_hidden_source_example': 'PROVED_LEAN_INTERFACE_ONLY',
+        'hidden_history_source_physically_admitted': False,
         'G0_closed': False,
         'positive_gr': False,
         'whole_core_no_go': False,

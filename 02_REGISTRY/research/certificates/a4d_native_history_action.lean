@@ -3,6 +3,10 @@ import D0.VNext2.ScenePerronTraceCanonicity
 import D0.VNext2.SceneHistoryPerronTrace
 import D0.Foundation.EndogenousActionQuantum
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
+import Mathlib.Analysis.Calculus.Deriv.Basic
+import Mathlib.Analysis.Calculus.Deriv.Add
+import Mathlib.Analysis.Calculus.Deriv.Mul
+import D0.VNext2.SceneEndpointReynoldsExpectation
 
 /-! Complete additive scalar valuations on the literal scene path carrier.
 Additivity and logarithmic reading are explicit comparison hypotheses, not
@@ -295,6 +299,147 @@ theorem normalized_constant_reading {I : Type*} [Fintype I]
     (weights : I → ℝ) (h : ∑ i, weights i=1) (c : ℝ) :
     (∑ i, weights i*c)=c := by rw [← Finset.sum_mul,h,one_mul]
 
+/-! ## A smooth hidden source in the complete scene-history interface
+
+The next construction combines the complete additive path-action fiber with
+the actual endpoint conditional expectation `C1`. It is deliberately an
+interface countermodel: the real parameter is a mathematical probe of the
+space of typed completions, not an admitted D0 metric field or physical
+selector. -/
+
+/-- A rational direction on the 718 actual oriented scene edges. -/
+def hiddenHistoryDirection (e : Edge) : ℚ :=
+  if zone31 e.val.1 = 0 ∧ zone31 e.val.2 = 1 then 1
+  else if zone31 e.val.1 = 2 ∧ zone31 e.val.2 = 1 then -(9:ℚ)/13
+  else 0
+
+def hiddenDirection (e : Edge) : ℝ := (hiddenHistoryDirection e : ℝ)
+
+/-- The actual endpoint averaging operator annihilates this nonzero direction. -/
+theorem hidden_history_direction_endpoint_kernel :
+    D0.VNext2.SceneEndpointReynoldsExpectation.C1.mulVec hiddenHistoryDirection = 0 := by
+  decide +kernel
+
+theorem hidden_history_direction_bounds (e : Edge) :
+    -1 ≤ hiddenHistoryDirection e ∧ hiddenHistoryDirection e ≤ 1 := by
+  unfold hiddenHistoryDirection
+  split_ifs <;> norm_num
+
+/-- A smooth affine edge-cost completion with the same value 2 at the base point. -/
+def hiddenHistoryWeights (t : ℝ) (e : Edge) : ℝ :=
+  2 + t * (hiddenHistoryDirection e : ℝ)
+
+theorem hidden_history_weights_ge_one {t : ℝ} (ht : |t| < 1) (e : Edge) :
+    1 ≤ hiddenHistoryWeights t e := by
+  have hd := hidden_history_direction_bounds e
+  have hda : |(hiddenHistoryDirection e : ℝ)| ≤ 1 := by
+    exact_mod_cast (abs_le.mpr hd)
+  have hprod : |t * (hiddenHistoryDirection e : ℝ)| < 1 := by
+    rw [abs_mul]
+    calc
+      |t| * |(hiddenHistoryDirection e : ℝ)| ≤ |t| * 1 :=
+        mul_le_mul_of_nonneg_left hda (abs_nonneg t)
+      _ < 1 := by simpa using ht
+  have hlow : -1 < t * (hiddenHistoryDirection e : ℝ) := (abs_lt.mp hprod).1
+  unfold hiddenHistoryWeights
+  linarith
+
+/-- Every point on the open probe interval is an actual `ActionProtocol` on
+the literal verified scene carrier. -/
+def hiddenHistoryProtocol (t : ℝ) (ht : |t| < 1) :
+    ActionProtocol sceneProtocol :=
+  protocolFromEdges (hiddenHistoryWeights t)
+    (hidden_history_weights_ge_one ht)
+
+theorem hidden_history_protocol_edge_cost (t : ℝ) (ht : |t| < 1) (e : Edge) :
+    (hiddenHistoryProtocol t ht).action e.val.1 e.val.2 = hiddenHistoryWeights t e :=
+  protocol_edges_exact _ _ e
+
+/-- The same edge family extends to an additive valuation on every actual
+scene walk, by the already proved complete `fromEdges` construction. -/
+def hiddenHistoryAction (t : ℝ) : AdditiveAction :=
+  fromEdges (hiddenHistoryWeights t)
+
+/-- The second, constant completion of the same additive/action interface. -/
+def constantHistoryAction (_t : ℝ) : AdditiveAction :=
+  fromEdges (fun _ : Edge => 2)
+
+def constantHistoryProtocol : ActionProtocol sceneProtocol :=
+  protocolFromEdges (fun _ : Edge => 2) (by intro e; norm_num)
+
+theorem hidden_history_base_value (e : Edge) :
+    hiddenHistoryWeights 0 e = 2 := by
+  simp [hiddenHistoryWeights]
+
+theorem hidden_history_action_base :
+    hiddenHistoryAction 0 = constantHistoryAction 0 := by
+  unfold hiddenHistoryAction
+  unfold constantHistoryAction
+  congr 1
+  funext e
+  simp [hiddenHistoryWeights]
+
+/-- The endpoint coarse readout is unchanged for every rational probe value:
+the full tangent is in `ker C1`, not merely invisible at one endpoint. -/
+def hiddenHistoryWeightsQ (t : ℚ) (e : Edge) : ℚ :=
+  2 + t * hiddenHistoryDirection e
+
+theorem hidden_history_coarse_reading_constant (t : ℚ) :
+    D0.VNext2.SceneEndpointReynoldsExpectation.C1.mulVec
+      (hiddenHistoryWeightsQ t) =
+    D0.VNext2.SceneEndpointReynoldsExpectation.C1.mulVec (fun _ : Edge => 2) := by
+  rw [show hiddenHistoryWeightsQ t = (fun _ : Edge => (2:ℚ)) + t • hiddenHistoryDirection by
+    funext e
+    simp [hiddenHistoryWeightsQ, Pi.add_apply, Pi.smul_apply, smul_eq_mul]]
+  rw [Matrix.mulVec_add, Matrix.mulVec_smul,
+    hidden_history_direction_endpoint_kernel]
+  simp
+
+/-- The infinitesimal source of this completion is exactly its hidden edge
+direction. -/
+theorem hidden_history_weight_hasDerivAt (e : Edge) :
+    HasDerivAt (fun t : ℝ => hiddenHistoryWeights t e)
+      (hiddenHistoryDirection e : ℝ) 0 := by
+  convert ((hasDerivAt_id (0:ℝ)).const_mul (hiddenHistoryDirection e : ℝ)).const_add 2
+    using 1
+  · funext t
+    dsimp [hiddenHistoryWeights]
+    ring
+  · ring
+
+/-- A proof-level edge witness; unlike the legacy graph-count lemma, this
+certificate does not depend on a `native_decide` axiom. -/
+def hiddenWitnessEdge : Edge :=
+  ⟨(0, 9), by norm_num [SceneStep, Adj31, zone31]⟩
+
+theorem hidden_history_nonzero_source_hasDerivAt :
+    HasDerivAt (fun t : ℝ => hiddenHistoryWeights t hiddenWitnessEdge)
+      1 0 := by
+  simpa [hiddenHistoryWeights, hiddenDirection, hiddenWitnessEdge,
+    hiddenHistoryDirection, SceneStep, Adj31, zone31] using
+      hidden_history_weight_hasDerivAt hiddenWitnessEdge
+
+theorem hidden_history_edge_path_hasDerivAt :
+    HasDerivAt
+      (fun t : ℝ => (hiddenHistoryAction t).value (edgePath hiddenWitnessEdge)) 1 0 := by
+  simpa [hiddenHistoryAction, fromEdges, edgePath, pathSum, edgeReading,
+    hiddenHistoryWeights, hiddenDirection, hiddenWitnessEdge,
+    hiddenHistoryDirection, SceneStep, Adj31, zone31] using
+      hidden_history_nonzero_source_hasDerivAt
+
+theorem constant_history_edge_path_hasDerivAt :
+    HasDerivAt
+      (fun t : ℝ => (constantHistoryAction t).value (edgePath hiddenWitnessEdge)) 0 0 := by
+  simpa [constantHistoryAction, fromEdges, edgePath, pathSum, edgeReading] using
+    (hasDerivAt_const (0:ℝ) (2:ℝ))
+
+theorem hidden_history_source_not_selected_by_endpoint_projection :
+    D0.VNext2.SceneEndpointReynoldsExpectation.C1.mulVec hiddenHistoryDirection = 0 ∧
+    hiddenHistoryDirection hiddenWitnessEdge = 1 := by
+  constructor
+  · exact hidden_history_direction_endpoint_kernel
+  · norm_num [hiddenHistoryDirection, hiddenWitnessEdge, SceneStep, Adj31, zone31]
+
 end
 end D0.Research.NativeHistoryAction
 
@@ -322,3 +467,12 @@ end D0.Research.NativeHistoryAction
 #print axioms D0.Research.NativeHistoryAction.perron_root_bounds
 #print axioms D0.Research.NativeHistoryAction.perron_uniform_two_step_lower_arithmetic
 #print axioms D0.Research.NativeHistoryAction.normalized_constant_reading
+#print axioms D0.Research.NativeHistoryAction.hidden_history_direction_endpoint_kernel
+#print axioms D0.Research.NativeHistoryAction.hidden_history_weights_ge_one
+#print axioms D0.Research.NativeHistoryAction.hidden_history_protocol_edge_cost
+#print axioms D0.Research.NativeHistoryAction.hidden_history_action_base
+#print axioms D0.Research.NativeHistoryAction.constant_history_edge_path_hasDerivAt
+#print axioms D0.Research.NativeHistoryAction.hidden_history_coarse_reading_constant
+#print axioms D0.Research.NativeHistoryAction.hidden_history_weight_hasDerivAt
+#print axioms D0.Research.NativeHistoryAction.hidden_history_edge_path_hasDerivAt
+#print axioms D0.Research.NativeHistoryAction.hidden_history_source_not_selected_by_endpoint_projection
