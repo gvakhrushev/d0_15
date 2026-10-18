@@ -2,7 +2,22 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `3447a184`:** §§8.4–8.6 of the owner
+**Latest consumed transition, input `6c78c60e`:** §§8.8–8.9 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+derive the coherent amplitude/Gram event source and test the actual complete
+finite H+J+R against the existing Palatini stencil. Its matched mixed
+coframe/link derivative is exactly zero, whereas the star derivative is
+nonzero. All finite-B, global heat-normalizer, feedback and fixed full
+matter/reference terms are retained. This excludes direct bare-star source
+identification, not a source-preserving stationary reduction or all D0.
+The same investigation distinguishes real Book03 penalty functions from
+the still unspecified parts of its named stack. An undefined full scalar
+function cannot supply the missing coefficient by naming its blocks.
+The next consuming map is a justified stationary reduction of a specified
+price, or the complete intrinsic geometry-history amplitude/price binding
+with interference, preparation and normalization. No new action is selected.
+
+**Consumed execution transition, input `3447a184`:** §§8.4–8.6 of the owner
 below reconstruct u and full Lorentz transport from the actual raising
 operator, including the active pp-wave null direction and every transverse
 jet. Principal whitening fixes eta while retaining observer jets in X.

@@ -81,6 +81,30 @@ with work leakage. No old replay is needed. Physical oracle/resource
 admission, chiral forcing and exact joint/refinement recovery are not
 consequences of compiler approximation and remain the consuming obligations.
 
+Native forcing continuation at `6c78c60e`: the addressed query/source theorem
+is now an input, not the next task. Consume the existing Role/site selector
+and Books01/03/06 to determine whether the actual complete process has a
+nonzero canonical oriented linear-curvature source. Keep its own full price,
+all graph/observer/preparation/history variables and admission constraints;
+neither test completeness nor a chosen terminal entropy may replace it.
+Bounded assistants read the source/primitive/activation premises within this
+same PR; root composes their actual coefficient or separating witness in
+the existing owner/consumers. Decisive evidence is an explicit source from
+the selected process or a precise failed forcing implication, not another
+query compiler, spectrum census or reread of unchanged heat certificates.
+
+Consumed: the actual complete finite H+J+R mixed coframe/link source is0
+on a family with nonzero existing star mixed source. The literal CAR
+identity and paired Fourier cancellation retain the complete logZ term;
+the new bounded check_native_curvature_probe.py consumes the same star
+density, without replaying old suites. The coherent amplitude/Gram formula
+also gives the full event source with interference and normalization.
+The named Book03 stack leaves scalar blocks unspecified; do not fill them
+with zero or chosen actions. Next consumer: a true source-preserving
+stationary reduction of a specified complete price or the complete native
+geometry-history amplitude/price binding. A partial off-shell mismatch
+does not itself exclude a stationary reduction or global D0/GR.
+
 ### Whole-source synthesis after the local vacuum result
 
 The user's next request is to try an end-to-end breakthrough, rather than

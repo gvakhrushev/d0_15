@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checks": [
+    "pin:02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py",
+    "pin:02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py",
+    "pin:02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/star_euler.py",
+    "only_two_pinned_literal_helpers",
+    "actual_ACDB_order",
+    "actual_blank_block_A_equals_ellD_over16",
+    "all128_outcomes_retained",
+    "full128_operator_probability_normalization",
+    "actual_connection_variation_simplifies_with_occupation",
+    "internal_Js_Jt_anticommutator",
+    "full16_forward_edge_trace_including_sine_i",
+    "actual_reverse_edge_cancellation",
+    "Ds_is_actual_Hermitian_Fourier_tangent",
+    "Dt_is_actual_Hermitian_Fourier_tangent",
+    "forward_trace_pure_imaginary_after_actual_amplitudes",
+    "proper_constant_metric_basis_change",
+    "proper_constant_orientation",
+    "only_generic_star_density_helpers",
+    "actual_star_density_transverse_L4_cycle_nonzero"
+  ],
+  "check_count": 19,
+  "trace_forward_full16": "2*I*nu**4*(z0 - 1)**2*(Q**2*z2**2 + Q*z2**2 - 2*Q*z2*z3**2 - 2*Q*z2 + Q*z3**2 + z3**2)/(Q*ell**4*z0*z2*z3)",
+  "trace_reverse_plus_forward": "0",
+  "full_HJR_mixed_source": "0: analytic divided-difference proof in paired edges",
+  "actual_star_mixed_L4_transverse_cycle": "-2*h**2/nu**2",
+  "full_L4_four_torus_star_mixed": "-128*h**2/nu**2",
+  "all128_probability_normalization_checked": true,
+  "complete128_Shannon_mixed_source_evaluated": false,
+  "native_action_no_go": false,
+  "D0_to_GR_proved": false,
+  "physical_native_palatini_coefficient": null,
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/star_euler.py": "95de1dca7b7ec738a83ff74a74547a26a6e545d0e55ef601b8c1922d8112f5b5"
+  }
+}

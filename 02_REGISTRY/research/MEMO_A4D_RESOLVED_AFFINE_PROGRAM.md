@@ -23,6 +23,25 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+On input `6c78c60e`, the same owner's §§8.8–8.9 now consume the native
+forcing question directly. The coherent amplitude/Gram formula gives a
+complete event source, including interference and normalizer jets. Golden
+chronology and a geometry-retaining data word can coexist with zero feedback
+source; they do not select the required placement. The Book03 stack still
+contains unspecified functions, so the named sum cannot be treated as an
+already evaluable full geometric action.
+
+For the completely specified conditional H+J+R there is a decisive exact
+comparison: one periodic coframe/connection mixed source is zero with all
+finite-B, heat-normalizer, matter and reference terms retained, while the
+same existing star density has nonzero mixed source. Thus the next step
+is a genuine source-preserving stationary reduction of the specified price,
+or construction of the actual complete geometry-history amplitude/price
+map. It is not direct replacement of H+J+R by the compiled star programme.
+The comparison does not exclude reduced Einstein dynamics or compute the
+distinct full128 Shannon source. Do not repeat the solved compiler, tick
+or source classifier to bypass this failed direct identification.
+
 The same owner's §§8.4–8.6 now close a constructive part of this interface.
 The actual raising operator `X=C(u)Lambda(M)` determines u and the full M,
 smoothly even across a nonzero null direction. Principal whitening has
@@ -33,9 +52,9 @@ Julia queries and constant addressed controls; all work outcomes remain.
 An explicit amplitude bound transfers the complete finite Shannon first
 source, including born labels. This is an execution theorem in the stated
 oracle/resource class, not physical selection of that class or programme.
-The next forcing target is its actual nonzero chiral source with the old
-history included; do not reintroduce an independent transport/trace oracle
-or repeat the solved reconstruction.
+Its forcing consumer must now meet the actual price distinction above,
+with the old history included; do not reintroduce an independent
+transport/trace oracle or repeat the solved reconstruction.
 Section8.7 consumes the existing Role/site sign-twisted selector: inside
 the canonical local linear-curvature oriented-density class the insertion
 is already c*star. The remaining question is the native membership and

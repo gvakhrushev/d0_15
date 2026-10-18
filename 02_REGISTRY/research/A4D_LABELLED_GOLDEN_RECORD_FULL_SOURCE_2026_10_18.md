@@ -1130,6 +1130,269 @@ native Cost−Info имеет ненулевую canonical oriented linear-curva
 эти предпосылки не даёт. Независимая matter/spin и непустой exact joint
 limit сохраняются в конечном утверждении, не присоединяются после него.
 
+### 8.8. Собственная цена: когерентный источник события и предел forcing
+
+Продолжение от `6c78c60e` проверяет именно вход последнего абзаца §8.7.
+Восстановление геометрии и компиляция больше не являются этой задачей.
+Есть положительный переход от настоящих амплитуд к полному источнику
+события, но он не отождествляет три разные цены: цену события, среднюю
+цену всех128 исходов и условную спектральную H+J+R.
+
+**Когерентный event source.** Book03 §03.10(c,e) сначала складывает
+амплитуды с holonomy, затем применяет квадратичный readout. На конечном
+наборе путей данного опыта запишем
+
+    Ψ=Σ_γ b_γ u_γ, b_γ=exp(−ℓ a_γ), ℓ=log φ,
+    Γ^E_(γδ)=<u_γ,F_E u_δ>,
+    r_E=b*Γ^E b, N=b*Γ^all b, q_E=r_E/N.                 (38)
+
+F_E — настоящий effect события на полном сохраняемом носителе; all
+суммирует все исходы. В u_γ и Γ уже входят preparation, pairing,
+holonomy, archive и readout. Они могут двигаться. Для смешанной входной
+плотности та же формула действует после её фактической purification,
+включая reference; никакой новый независимый CAR oracle не требуется.
+Рассматривается фиксированная конечная грамматика путей на гладком chart.
+Если кодовые a_γ локально постоянны, их производные ниже просто равны0.
+
+При r_E>0 положим
+
+    π^E_γ=Re[conj(b_γ)(Γ^E b)_γ]/r_E, Σ_γπ^E_γ=1.
+
+Дифференцирование b_γ даёт точное равенство
+
+    D[−log_φ q_E]
+      =2Σ_γ(π^E_γ−π^all_γ) Da_γ
+       −(1/ℓ)[b*(DΓ^E)b/r_E−b*(DΓ^all)b/N].            (39)
+
+Это полная first-source chain rule, а не положительное среднее цен
+альтернатив. Γ^E положительна как матрица, но π^E могут быть отрицательны:
+для двух противоположных unit vectors и b=(p,p²) получаем
+π=(p/(p−p²),−p²/(p−p²)). Поэтому scalar code cancellation не позволяет
+удалить движущийся holonomy Gram или заменить его суммой вероятностей
+внутренних путей. Формула сохраняет оба normalizer и все перекрёстные
+члены. Нулевое r_E не объявляется точкой дифференцируемого logarithm.
+
+Применение не требует нового выбранного опыта. В настоящем full128
+instrument пусть D_0 — прямая blank-column, M — отражённая column после
+Q*(I−2P_blank)Q. Тогда D_0*D_0=M*M=I и
+
+    D_0*M=M*D_0=I−2A², A=ℓ_lattice D_hat/16,
+    K_0=p D_0+p² M, K_1=p sqrt(p)(M−D_0).
+
+Здесь ℓ_lattice — исходный lattice clock, не log φ. Суммирование ВСЕХ64
+label/coefficient исходов каждого порта даёт
+
+    K_1*K_1=4p³ A², K_0*K_0=I−4p³ A²,
+    q_1=4p³ Tr(ρ A²),
+    D[−log_φ q_1]
+      =−[Tr(Dρ A²)+Tr(ρ{A,DA})]/[ℓ Tr(ρ A²)].          (40)
+
+Полная подготовка/reference сохранены. В уже проверенном pure-time
+секторе A=−νβ_0/8 имеем q_1=p³ν²/16 для любой нормированной ρ и
+∂_ν[−log_φ q_1]=−2/(νℓ). Это ненулевой **реальный event source** старого
+прибора, без настроенного f,t. Он не является коэффициентом Палатини.
+Двухпортовая средняя цена есть h(q_1)/ℓ; средняя по128 исходам дополнительно
+содержит [q_0 H(label|0)+q_1 H(label|1)]/ℓ при same-history w=q.
+Их производные нельзя подменять (40). Старые истории вносят собственную
+условную подготовку и полный chain rule §8.6.
+
+Book03 использует φ^(−a_γ) в amplitude sum, а φ^(−S_γ) — в scalar
+history weight. Если ветви ортогональны, нормированы и именно эти два
+интерфейса отождествлены, то S_γ=2a_γ ДО общей нормировки.
+Настоящее golden Hilbert inclusion имеет amplitudes (sqrt(p),p), то есть
+amplitude exponents (1/2,1), и probability code lengths (1,2).
+При когерентном объединении ветвей даже это поэлементное правило не
+заменяет (38)–(39). Ранее условно доказанное w=q не становится теоремой
+об amplitude sum по совпадению букв w,W.
+
+**Почему tick и доступный перенос ещё не выбирают этот source.** Для
+буквального четырёхмерного U=T_(p²), a²=p, price cut P=diag(1,1,0,0)
+и Q=U*PU точные тождества имеют вид
+
+    PQP=pP, P(I−Q)P=p²P,
+    [P,Q]=[[0,0,−ap,0],[0,0,0,−ap],
+           [ap,0,0,0],[0,ap,0,0]],
+    −[P,Q]²=p³ I_4.                                    (41)
+
+Порядок уже различим, когда вся геометрическая производная этого
+неподвижного record равна0. Для действительного AF frame V и полного
+дополнения правая часть последнего равенства есть p³VV*, а на дополнении0.
+Scene, CAR16, reference128 и старые records сохраняются тензорно.
+Это точный контрпример импликации «chronology ⇒ star-sensitive jet» в
+данном интерфейсе, а не утверждение о постоянстве всей native цены.
+Во втором ACTIVE record F_j=W_jG_jM_j имеем F_j*F_j=M_j*M_j:
+его source переносится из настоящего входа M_j. Некоммутирующий dW_j
+сам по себе не создаёт отсутствующего DE.
+
+Есть аналогичный полный feedback контроль. При Q_cut=I−P_cut и
+U(e,0)=I для всех e,
+
+    F=P_cut U*Q_cut U P_cut
+      =(Q_cut U P_cut)*(Q_cut U P_cut)=O(r²),
+    ∂_r[−log det(I−zF)]|_(r=0)=0.                       (42)
+
+Смешанная ∂_e∂_r тоже0. При U=U_φ tensor V(e,ω), любом unitary data-word
+V и неизменённых golden port cuts имеем F=p²P_cut tensor I точно.
+Геометрия остаётся в V, но эта цена от неё не зависит. Это действительный
+placement контроль, не замена полного stack его feedback слагаемым.
+Нужен собственный placement геометрии в процессе; сама реконструкция V
+не выбирает его. Book06 static-to-tick theorem содержит noncommuting J,Y,
+archive-delay index и golden recursion, но не application map из этих
+данных в AF activation с определённым E(e,ω).
+
+**Какой полный функционал уже определён.** Book03 §§03.3,03.8 записывает
+J_clique+S_coeff+S_Λ+S_∂+S_heat+S_terminal. При проверке настоящих
+определений обнаруживается следующая граница, которую нельзя заполнить
+удобными нулевыми продолжениями:
+
+| Вход | Что действительно задано |
+|---|---|
+| Book01 §01.8, J_scene | Четыре квадрата по Ω,n_i и обозначение J_coup; сам текст называет их mnemonic consistency checksum. Функция J_coup не задана этой формулой. |
+| Book03 §03.4, S_coeff | Допустимый класс finite variational penalties, а не одна функция coframe/link/history переменных. |
+| Book03 §§03.6–03.7, S_Λ,S_∂ | Явные суммы квадратов. На их собственных zero sheets DΣR_i²=2ΣR_i DR_i=0 даже при движущихся targets. Из stationarity всей суммы эти zero sheets отдельно не следуют. |
+| [HeatTraceEnergyFunctional](../../03_FORMALIZATION/D0/Cosmology/HeatTraceEnergyFunctional.lean) | Определён конкретный E=−H'/H frozen K(9,11,13); это не отождествление общего S_heat с E, log H или условной v8-ценой. |
+| [TerminalFeedbackModes](../../03_FORMALIZATION/D0/Matter/TerminalFeedbackModes.lean) | Критерий terminal mode, не real-valued S_terminal на геометрическом носителе. |
+| Book03 §03.3.2, feedback | Реальная matrix logdet-функция после задания P,U,Q; её field placement и включение в названный stack ещё должны быть определены. |
+| Book03 §03.10(f), geometry sum | Собственный raw prior φ^(−A(G,J)), где A — минимальная цена кода геометрии. Книга явно отличает его от heat/feedback partition. |
+
+Реальные геометрические направления при этом существуют. На уже
+установленном chart §8.5 q=F_bar ηF_barᵀ, g=q^−1 для любого
+симметричного W положим F_bar,t=F_bar+(t/2)Wq^−1F_bar и
+e_bar,t=F_bar,t^−1. Тогда Dq=W; выбор W=−qVq даёт Dg=V.
+Star-query использует e_bar,t, а не F_bar,t в качестве solder legs.
+Links меняются независимо как exp(tΩ)U.
+На строгом contraction window это настоящие гладкие кинематические
+кривые. Нельзя объяснять отсутствующий полный source «дискретностью
+всех переменных». Не хватает функции и её собственных admissibility/
+preparation связей на этом носителе, а не способности взять производную.
+
+Условная v8 H+J+R, напротив, задана полностью и имеет собственный exact
+source. Её можно проверять прямо; нельзя переименовать результат в
+производную неопределённых оставшихся stack-слагаемых. (39) даёт другой
+положительный потребитель: как только настоящая geometry-history
+amplitude map и её cut заданы, holonomy/preparation/normalizer source
+вычисляется без scalar/probability подмены. Следующий шаг должен либо
+построить эту map из собственных D0 операций вместе с полной ценой,
+либо проверить уже заданный функционал. Ещё один compiler или вывод
+star-типизации не восполняет этот вход.
+
+### 8.9. Настоящий полный H+J+R: нулевая mixed source против ненулевой star
+
+Для уже определённой цены можно пройти следующий шаг до точного
+результата. На полном positive-adjoint matrix domain из
+[full-Lorentz source](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md), §§1–3,
+существует допустимая coframe/link mixed variation, для которой
+
+    ∂_s∂_t S_v8=0, но ∂_s∂_t Σ density_star ≠0.         (43)
+
+Это off-shell tensor entry **всей** данной H+J+R, не подстановка
+chirality expectation вместо источника. Она исключает равенство этой
+цены чистому star-source с ненулевой постоянной на данном carrier.
+Не вычисляется отдельный EH coefficient в возможной сумме с observer,
+torsion или matter terms: их mixed entries могут компенсироваться.
+Иной действительный stationary reduction также требует отдельного
+доказательства. Full128 Shannon — другая цена, (43) к ней не применяется.
+
+На periodic L^4 lattice, L≥3, обозначим θ=2π/L, c_j=cos(θj_2),
+v_j=sin(θj_2). При 0<ν<1 зададим
+
+    e_s(j)=ν^−1 diag(1+s c_j,1,1,1), F_s=e_s^−1,
+    n=e_0, h_n=L_n=I, u_r=η F_r^T,
+    A_3(t,j)=exp[t v_j B_23], B_23=E_23−E_32,
+    A_0=A_1=A_2=I.                                     (44)
+
+e_s — оригинальная coframe, а не inverse coefficients u_r. Малые s,t
+лежат в strict contraction window: связь здесь — spatial rotation.
+Observer и полный matter/reference остаются переменными исходной
+функции; на ЭТОЙ partial curve dn=Dρ=0. Это не удаление их Euler rows
+и не применение envelope theorem. Можно взять fixed preparation с
+timelike P1 по e_0; нулевой Rayleigh mixed source ниже верен для любой
+фиксированной нормированной ρ в matrix domain. Ни её stationarity,
+ни её physical preparation theorem для (43) не нужны.
+
+Пусть ℓ_lattice>0 — исходная Dirac calibration, γ=ν/ℓ_lattice,
+C_r — буквальные ACDB creators, N_3=C_3C_3*, S_r — forward shifts.
+Из **настоящего** raising d и его положительного adjoint получаем
+
+    D_0=γΣ_r η_rr[C_r(S_r−I)+C_r*(S_r*−I)],
+    D_s=−γ c_j[C_0(S_0−I)+C_0*(S_0*−I)],
+    D_t=γ v_j N_3[C_2S_3+C_2*S_3*].                     (45)
+
+Последняя строка следует из C_3 dΛ(B_23)=−C_2N_3 и
+dΛ(B_23)C_3*=N_3C_2*. D_st=0: coframe меняется только в role0,
+link — только в role3. Все множители c_j,v_j коммутируют с S_0,S_3,
+а внутренние нечётные role0 и role2 слова антикоммутируют. Поэтому
+
+    {D_s,D_t}=0, Δ_st=0                                (46)
+
+на ВСЁМ lattice tensor CAR16. Следовательно R_st=Tr(ρΔ_st)=0 для
+любой такой ρ, со всем reference128.
+
+Оставшиеся spectral contributions также вычисляются целиком. На flat
+background Δ_k=λ_k I_16, λ_k=γ²Σ_r(z_r−1)(z_r^−1−1).
+Для l=k+θe_2 положим z_2(l)=Qz_2(k), Q=exp(iθ). Настоящие Fourier
+амплитуды D_s,D_t имеют blocks
+
+    J_s(l,k)=J_s(k,l)=−γ[C_0(z_0−1)+C_0*(z_0^−1−1)]/2=:A,
+    J_t(l,k)=γ N_3[C_2z_3+C_2*z_3^−1]/(2i)=:B,
+    J_t(k,l)=−B.
+
+В частности, коэффициент sine 1/(2i) уже включён. С полными
+X_s(k,l)=D_kA+AD_l и X_t(l,k)=D_lB+BD_k имеем
+
+    T_kl=Tr_16[X_s(k,l)X_t(l,k)]
+      =(2γ⁴/i)|z_0−1|²[(z_2(l)+z_2(k)−2)/z_3
+                       +(z_2(l)^−1+z_2(k)^−1−2)z_3],
+    T_lk=−T_kl=conj(T_kl).                             (47)
+
+Это тождество по всем четырём momentum phases, с actual sine amplitudes,
+а не отмена ещё не вставленного i. Для любого C² scalar f на данном
+finite spectral window noncommuting Fréchet derivative даёт
+
+    ∂_s∂_t Tr f(Δ)
+      =Tr[f'(Δ_0)Δ_st]+Σ_(k,l) f'^[1](λ_k,λ_l)T_kl=0. (48)
+
+Divided difference вещественна и симметрична; при λ_k=λ_l берётся f''.
+(46) и попарная (47) доказывают последнее равенство без heat census.
+
+Используем исходные B=I−αΔ, m=2n, β=mα,
+Z=Tr_all B^m, F_fb=(1−z)I+zB^m,
+
+    S_v8=Tr(ρΔ)+log(CZ)/β−M Tr_all log F_fb.
+
+m,α,β,z,M и C сохраняют настоящие fixed values; в частности M=128,
+C содержит полные reference/workspace multiplicities. По (48) Z_st=0;
+ненулевая Fourier frequency даёт также Z_s=Z_t=0. Значит
+H_st=(Z_st/Z−Z_sZ_t/Z²)/β=0 с ПОЛНОЙ log-normalizer поправкой.
+Для J берём f(λ)=−M log[(1−z)+z(1−αλ)^m] в (48).
+Вместе с (46) получаем (43). Ни B^m не заменено exp(−βΔ), ни
+спектральные или полевые компоненты не отброшены.
+
+На той же (44) единственная нетривиальная based plaquette есть
+P_23(j)=exp[t(v_(j+e_2)−v_j)B_23]. С исходными solder legs h e_0,h e_1
+и **той же** density из full-lattice star owner смешанный результат
+
+    ∂_s∂_t Σ_j density_star
+      =−h²ν^−2 (L⁴/2) sin(2π/L) ≠0.                   (49)
+
+Здесь h — геометрическая длина ребра; она не отождествляется молча с
+ℓ_lattice. При continuum connection amplitude A_3=exp[ht v_jB_23]
+обе t-производные умножаются на h, нулевой/ненулевой вывод сохраняется.
+При L=4 literal density даёт −128h²/ν². Checker использует его настоящие
+шесть plaquettes и orientation-preserving переход в null basis владельца.
+Предсуществующие coupling/quadrature нормировки умножают (49), а не
+делают его нулём. Volume term имеет t-derivative0; bare Holst contraction
+на этой complementary probe тоже0. Поэтому добавление этих двух членов
+не исправляет равенство с ненулевым Palatini source на полном carrier.
+
+**Потребитель результата.** Прежняя H+J+R не может просто получить имя
+«regular pure geometric source» и коэффициент c_AF от нового compiler.
+Нужен реальный source-preserving stationary reduction либо другой
+собственный вклад полной истории с явно заданной amplitude/price map
+§8.8. Ненулевость источника некоторого события (40) тоже не заменяет этот
+шаг. Положительные reconstruction/compiler/Cartan результаты остаются
+готовыми потребителями; повторно доказывать их для обхода (43) не нужно.
+
 ## 9. Проверка
 
 [Новый узкий checker](sources/d0_labelled_golden_record_full_source_2026-10-18/check_labelled_source.py)
@@ -1169,3 +1432,15 @@ preparation gradient, reference rank и source с moving Julia root.
 stdout совпадает с opt-in receipt. Общие reconstruction, product-formula
 и entropy-source bounds доказаны выше аналитически; конечный checker
 не заявляет исполнения физического компилятора или проверки предела.
+
+[Native curvature probe](sources/d0_labelled_golden_record_full_source_2026-10-18/check_native_curvature_probe.py)
+проверяет новый §8.9 по pinned literal CAR/row и существующей star density.
+Обе направленные Fourier-пары содержат actual sine coefficient до trace;
+полный16 trace тождественно сокращается при симметричном spectral weight.
+Тот же stencil даёт ненулевую star-производную. Сохранены полный128
+normalization control и все исходные component types.
+[NATIVE_CURVATURE_PROBE_RESULT.json](sources/d0_labelled_golden_record_full_source_2026-10-18/NATIVE_CURVATURE_PROBE_RESULT.json):
+19 exact controls, Python3.9.6/SymPy1.14.0. Общий all-L/finite-B/logZ
+вывод (46)–(48) доказан аналитически. Default read-only; --output сохраняет
+receipt явно. Старые suites не повторялись. Physical c_native остаётся
+не вычисленным; полный128 Shannon mixed source не объявляется проверенным.

@@ -32,6 +32,14 @@ fixed Lorentz form; moving observer jets remain in its native inputs.
 Addressability, physical preparation/admission and forced chiral selection
 remain explicit inputs. No independent transport oracle or measured-entry
 tomography is required by this conditional execution theorem.
+Sections8.8–8.9 now test the remaining price premise. The coherent Gram
+formula retains the complete event source. A matched finite coframe/link
+probe has full H+J+R mixed source0 and nonzero source in the existing
+star stencil; a direct bare-star identification is excluded. The remaining
+consumer is an actual source-preserving stationary reduction, or the full
+intrinsic geometry-history amplitude/price map. The named Book03 stack
+does not yet specify all its scalar functions. This does not exclude GR
+after a justified reduction or substitute the distinct full128 Shannon price.
 The [CAR/clock readout](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
 recovers the original metric, without an Einstein-frame rescaling. The
 [regular-natural-source classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)
