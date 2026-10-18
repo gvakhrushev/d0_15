@@ -48,8 +48,20 @@ W^{-1}(K_+)\subseteq K_+\Rightarrow u=v=1
 ]
 remains valid, but ordinary variationality/generator existence does not derive its premise.
 
-A homogeneous quadratic cost on the full divisible rational/real gravity carrier cannot directly satisfy the abstract `ActionProtocol` lower bound (S\ge1) on every nontrivial transition: rescaling a nonzero transition by (1/n) drives the cost below one. A future discrete transition alphabet may normalize one overall scale, but it does not select relative moduli.
+The abstract `ActionProtocol` boundary is now formalized in `D0.Foundation.EndogenousActionQuantum`:
 
-The smallest missing selector is a uniqueness theorem deriving one normalized parent law from one owned primitive finite history cost, unique up to overall scale.
+- `action_protocol_has_nonscaling_completions` gives two symmetric costs on the same three-state verification protocol that satisfy every current protocol field but are not related by one positive scale. Thus the action profile, including its transition-cost ratios, is not selected by `ActionProtocol`.
+- `doubledActionProtocol_never_attains_S_min` distinguishes the universal lower bound from attainment: an admissible protocol may assign cost 2 to every nontrivial transition, while `canonicalActionProtocol` is the separate witness attaining 1.
+- `no_degree_two_homogeneous_action_protocol` proves for any nontrivial real vector carrier and any degree-two homogeneous cost that some nonzero rescaling has cost below 1. Therefore the abstract pairwise floor cannot be applied to every field variation with that homogeneous cost.
+
+This is a theorem about the typed interface, not a no-go for discrete native histories and not a physical countermodel. It shows that `S_min=1` does not define the full field action or its variations. The missing G0 arrow is a native map from discrete events/history to the continuous coframe-link-matter carrier and its refinement; only after that map is owned can a primitive history cost be tested for a unique normalized parent law. No relative modulus is selected by the result.
+
+The smallest missing route is now typed explicitly: first derive the event/history-to-field map on the same carrier, then prove whether one owned primitive finite history cost determines a unique normalized parent law up to overall scale.
+
+## Adjacent finite AF recovery result
+
+The AF intake submitted in [PR #334](https://github.com/gvakhrushev/d0_15/pull/334) is pinned at commit [`180ddd1`](https://github.com/gvakhrushev/d0_15/tree/180ddd187b76035b83ba784ce3c0844f3192ba7d/02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17). Its `RECOVERY_COMPOSITION_RU.md` consumes the separately owned all-40 local coframe/link family and proves exact finite stationarity for that family under the original full AF feedback with one fixed scene. It gives a concrete local non-flat Ricci-flat pp-wave family; all internal coframe and link rows vanish on the stated support.
+
+This is positive finite geometry-to-AF-effect-to-feedback evidence and removes the earlier 25m coverage limit for that particular local family. The same intake keeps its scope explicit: the exterior layer is fixed, global closed-torus stationarity is not claimed, and physical selection of the full cost, preparation, matter equations, or observer equations remains open. It does not show that this process is the core `ActionProtocol`, derive its unit transition floor from native event histories, or prove the native event/history-to-field refinement map. Therefore it strengthens the finite recovery side of G0 without resolving the G0 interface boundary above. The intake itself records `GR_closed=false` and does not claim an independent rerun of the earlier geometric owner.
 
 No CORE upgrade of `D0-HODGE-LINKS-001` follows.

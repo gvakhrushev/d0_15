@@ -1697,7 +1697,7 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "killingTest_iff_contract;killingTest_forces_functional_tuple;killingTest_record_injective;killingTest_catalogue_invariant;no_killingTest_single_line;alternative_burden;boolProtocol_killingTest;fin3Protocol_killingTest;silentRecordProtocol_killingTest;killing_test_does_not_fix_line_card;killing_test_does_not_fix_record_card;bool_and_fin3_lines_not_equiv",
       leanStatus := "LEAN_PROVED", releaseStatus := "CORE-FORMALIZED", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ENDOGENOUS-ACTION-QUANTUM-001", moduleName := "D0.Foundation.EndogenousActionQuantum",
-      theoremName := "S_min_pos;canonicalActionProtocol;endogenous_action_quantum_minimal;subquantum_collapse;relative_action_scale_invariant;action_distinction_forcing",
+      theoremName := "S_min_pos;canonicalActionProtocol;endogenous_action_quantum_minimal;markedActionProtocol;action_protocol_has_nonscaling_completions;doubledActionProtocol;doubledActionProtocol_never_attains_S_min;no_degree_two_homogeneous_action_protocol;subquantum_collapse;relative_action_scale_invariant;action_distinction_forcing",
       leanStatus := "LEAN_PROVED", releaseStatus := "CORE-FORMALIZED", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-GHP-GOLDEN-CAUCHY-SEQUENCE-001", moduleName := "D0.Geometry.GHPGoldenCauchySequence",
       theoremName := "goldenTower_cauchySeq;goldenTower_converges;goldenTower_dist_le_limit;golden_tower_limit_owner",
