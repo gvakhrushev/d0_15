@@ -239,6 +239,33 @@ q=0,\qquad
 \]
 This is the SAME matter source that balances the 16 coframe Euler rows in (12), with the original Lorentz-star orientation. Both the Hodge U(1) charge Ward and the Lorentz stress Ward are sourced by the ONE Book-feedback, not postulated as separate matter equations.
 
+### 4.2. Eliminate the prepared matter amplitude: an EXACT FINITE curvature–charge law
+
+The existence proof does NOT need a freely fitted input matter amplitude to state a physical source relation. The SAME finite Hodge rotating wave has
+\[
+E=\frac{4a_h^2}{h^2}\sin^2(\kappa h/2),\quad
+j_h^v=\frac{2a_h^2}{h}\sin(\kappa h).
+\]
+For \(\sin(\kappa h)\ne0\), eliminate the **entire** prepared amplitude \(a_h^2\) algebraically:
+\[
+\boxed{
+E=\frac{\tan(\kappa h/2)}{h}\,j_h^v,\qquad
+\frac{\operatorname{Ric}_{uu}}{j_h^v}
+=-\frac{2\lambda_-(z)}{h}\tan(\kappa h/2).
+}
+\tag{19}
+\]
+This is an **EXACT** source/geometry identity of every finite locally stationary native Golden-feedback wave in the constructed family. The only remaining ingredients are the already-derived **two-tick** feedback coefficient \(\lambda_-(z)\), original Role step h, and integer phase winding \(\kappa=2\pi m\) of the original Hodge CAR0/top plane. No independent material normalization or empirical Newton parameter is fitted. The source-normalized \(j_h^v\) in (15) can be operationally *defined as the first local Hodge-control response of this SAME measured Book feedback* divided by the known full native prefactor \(\nu K\bar w C_\star\lambda_-\); this is a readout definition on the constructed programme, not a guarantee the physical controller can implement it.
+
+In the smooth fixed-g refinement,
+\[
+\boxed{\operatorname{Ric}_{uu}
+=-\lambda_-(z)\,\kappa j^v,\qquad
+j^v=2a^2\kappa,\quad \kappa=2\pi m.}
+\tag{20}
+\]
+Both finite and limiting relations are an amplitude-free, falsifiable **consistency relation** between independently readable Lorentz plaquette curvature and the internal Hodge-current response of ONE declared programme. An orientation/winding reversal changes the signed current and \(\kappa\) together while preserving the positive matter focusing. The physical selection and independently calibrated measurement of that programme remain open; the source relation itself is not a new action or field equation.
+
 ## 5. Verification, reproduction and precise scientific status
 
 **Direct bounded validation (not main CI):** on the original exact-cost native golden word families \(n=16,L=3\) and \(n=20,L=4\), the integer descendant algorithm gives F17=1597 / F21=10946 true positive READY addresses, ALL 81 / 256 Role cells covered, genuinely unequal regular LEFT masses. Using \(a=0.008,\ m=1,\kappa=2\pi\), both levels yield EXACT analytic
