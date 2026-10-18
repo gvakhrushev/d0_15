@@ -153,9 +153,14 @@ The same certificate proves the sharp singleton condition: if each
 chronological extension is already bound to the measured direct/return
 probabilities `p=φ⁻¹` and `p²`, then `q=μ` and `L=1` at every finite history.
 That is exactly the typed premise needed to remove the martingale freedom at
-this interface. The premise must be established for the complete measured
-Book/D0 history, not inferred from the separate existence of the golden
-cylinder owner.
+this interface. It is a sharp conditional control, not a physical postulate:
+the [direct-forcing result](A4D_NATIVE_DIRECT_FORCING_ATTACK.md) explicitly
+says the actual comparator is generally not distributed as `μ`, and instead
+gives the operator-valued
+likelihood `qρ(w)=μ(w) Tr(ρ M_w)` with
+`p M_(w0)+p² M_(w1)=M_w`. Thus the physical target is to derive the particular
+measured law and operator density from the common native owner, not to force
+`q=μ` by assumption.
 
 Conversely, positivity and refinement alone leave a concrete one-parameter
 family. At every extension it uses branch masses
@@ -169,13 +174,16 @@ imposed.
 This family is not asserted to be a physically admitted native D0
 perturbation. No map from the family parameter to the common native
 `(q,D,b,m)` preparation, instrument, matter readout, or refinement has been
-proved. The critical next edge remains that actual common-owner map and the
-derivation (or failure) of the measured `p,p²` binding from the existing
-Book, verification, preparation, and composition owners. Only after that edge
-is settled should its joint derivative be carried to the ten metric
-components and compared with `ρ₀`. This result closes the finite-cylinder
-classification question, not G0, the physical source, Ward identity, curved
-roots, soundness/recovery, GR, or any parent terminal.
+proved. The critical next edge is the actual common-owner map from
+`(q,D,b,m)` through preparation and the complete retained instrument to
+`qρ(w)` and `M_w`, together with Book `Cost/Info` and their full field
+variation. The `p,p²` singleton is one possible outcome of that derivation;
+the already-owned direct-forcing operator likelihood is the more general
+candidate to consume. Only after this edge is settled should its joint
+derivative be carried to the ten metric components and compared with `ρ₀`.
+This result closes the finite-cylinder classification question, not G0, the
+physical source, Ward identity, curved roots, soundness/recovery, GR, or any
+parent terminal.
 
 Replay from `03_FORMALIZATION` with
 `lake env lean ../02_REGISTRY/research/certificates/a4d_native_history_weight_fiber.lean`.
