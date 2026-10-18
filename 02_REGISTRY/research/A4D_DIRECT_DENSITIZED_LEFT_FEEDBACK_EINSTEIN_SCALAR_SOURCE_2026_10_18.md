@@ -492,3 +492,29 @@ w_x=\frac{n_{x,0}D_0+n_{x,1}D_1}{K},\qquad
 Это прямое \((2^{14}zr\mathscr L^6\eta/(1-z)^4)/(\nu528Kg_t)\) с \(g_t=4zp^{11}t^2/R_0\). **И K, и ν, и число old LEFT paths полностью сокращаются.** Однако \(\mathscr L\) включает истинные derivatives всех inverse-weight, determinant, h⁻⁴ star, scalar difference, return/work и polynomial query operations; он может расти при h→0. Поэтому достаточный source condition не «η маленькая», а \(\mathscr L_h^6\eta_h/t_h^2\to0\) наряду с \(t_h^2\to0\) и настоящим spatial source reconstruction budget. Без admitted exact return projector или доказанного resource price (D27) применять к unchanged full programme нельзя.
 
 **Это и есть работа, которую действительно надо поставить у физического admission front:** на существующем original CAR16/AF LEFT label data компилировать ДВА source arguments (D1,D25) как один full clean-return unitary; выписать ВСЕ first-source terms его настоящего Book03+старой истории+clock/observer/v8 цены. Тогда математическая геометрия/общий scalar stress уже потребляются (D9,D17), а корректное proof obligation остаётся не «изобрести ОТО», а admitted same-programme source, его stationarity и recovery. Старый π₀ phase-residual этому оператору не назначается.
+
+
+## 12. Three rigidity gates: why this single source is a genuine universality candidate, not one of many curve fits
+
+Чтобы употреблять слово «вынужденность» строго, зафиксируем ТРИ независимых условия именно на ведущий локальный grade0 материальный источник: (i) real full O(1,3) covariance of the already recovered dressed CAR16, parity-even, one derivative \(\partial\psi\), quadratic in this derivative; (ii) proper 4D coordinate-scalar **density weight one**, without external preassigned matter measure; (iii) exact first-source independence of the actual nonuniform AF address refinement weights, within one LEFT-controlled regular trace.
+
+**Lorentz quadratic uniqueness.** Пусть \(Q^{ab}v_av_b\) — произвольная действительная O(1,3)-инвариантная квадратичная форма одного скалярного градиента. Независимые sign reflections принуждают все off-diagonal coefficients к нулю; пространственные permutations дают один spatial coefficient; genuine Lorentz boost01 даёт relation coefficient_time=−coefficient_space. Значит
+
+\[
+\boxed{\operatorname{Hom}_{O(1,3)}
+(\operatorname{Sym}^2V^*,\mathbb R)=\mathbb R\,\eta^{-1},\quad
+Q^{ab}v_av_b=c\,\eta^{ab}v_av_b.}
+\tag{D28}
+\]
+
+На native CAR16 этот единственный generator буквально \(\operatorname{Tr}\Gamma(v)^2/16\). Другой positive Euclidean form \(\Gamma^\dagger\Gamma\) не проходит нужный полный Lorentz test. Для higher exterior matter grades, potentials, higher derivatives, Hodge pseudoscalars или nonminimal coupling **такой единственности НЕТ**: это именно grade0/leading-derivative representation theorem.
+
+**Coordinate-density uniqueness.** Для любого orientation-preserving local diffeomorphism Jacobian \(D_f>0\), scalar \(q=\widehat g^{-1}(d\psi,d\psi)\) преобразуется как scalar, а \(J=|\det\widehat e|\) — density weight one. Если в классе multiplicative density-power ansatz \(J^\beta q\,d^4x\) полная first-source не зависит от координатной карты, то \(D_f^{\beta-1}=1\) для всех \(D_f\), значит \(\beta=1\). Более широко любая гладкая локальная density, зависящая ТОЛЬКО от (J,q) и однородная по coordinate volume, имеет вид \(Jf(q)\). Для parity-even, derivative-quadratic leading source \(f(q)=cq\). Следовательно \(\boxed{Jq}\) обязателен для минимального scalar source в этом классе; это именно pressure countercontrol §5.
+
+**AF refinement uniqueness.** В полном original LEFT trace one-site contribution \(w_x \Phi_t(u_x,\cdot)\) имеет nonzero \(\partial_u\Phi_t(0)=g_t\). Любое однообразное power encoding \(u_x=cw_x^{-\alpha}A_x\) даёт leading coefficient \(cw_x^{1-\alpha}\) для физического \(\delta A_x\). Независимость source от любого положительного неравномерного golden cover принуждает \(\alpha=1\). Это именно \(\boxed{A_x/w_x}\), не специально выбранный power из таблицы масс.
+
+В совокупности (D28), proper-density law и AF-refinement law задают **один класс ведущего локального scalar matter source** \(w_x^{-1}J_x\,\widehat g^{rs}D_r\psi D_s\psi\). Его единственный оставшийся коэффициент в **названном native two-tick scene word** уже вычислен непосредственно через \((p,z,\sigma)\) формулой (D9); других coefficient fits нет.
+
+Отсюда следует сильное, но ограниченное утверждение: **если D0 физически требует локальный Lorentz/diffeomorphism-ковариантный quadratic grade0 отклик и выбирает именно admitted golden scene+LEFT word, то его линейный IR matter stress и относительная связь с Palatini не могут быть другими.** Это закон REPRESENTATION/SOURCE universality внутри объявленного класса, не вывод того, что M1 принудительно выбирает эту программу, что σ=-1 единственно физична, что все16 exterior grades обладают тем же scalar действием, или что произвольные higher-derivative/higher-t effects запрещены. Эти оставшиеся physical criteria по-прежнему имеют настоящие экспериментальные/операционные условия.
+
+**Наиболее короткий endgame к полной ОТО:** (a) на уже существующем coherent addressed-carrier исполнить BOTH конкретные CAR-вычислимые operands D1/D25 с source-preserving clean work и полной физической ценой, (b) на actual joint critical/clock/source branch доказать, что оставшийся Book stack даёт только нормальный/сохраняющийся matter current и не портит nine null Einstein rows, (c) перейти к genuine joint h→0 с исходным raw source comparator. Нового \(\pi_0\)-тензора, ещё одного Einstein-looking функционала или ещё одной классификации mass lattice для этого **не требуется**. Если один из (a–c) fails, это конкретный физический obstruction, не permission заменить его fit.
