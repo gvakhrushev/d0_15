@@ -1,6 +1,10 @@
 # Упорядоченная композиция примитивного слова и его первый джет
 
-Модуль `D0.Research.PrimitiveJetComposition` фиксирует одно общее тождество для конечного слова в кольце. Голова списка — левый фактор, так что `List.prod` даёт `V_{a_m} ⋯ V_{a_1}`. Для слова `w` остаток `V_w I - I U_w` равен сумме одношаговых остатков: слева стоит произведение предшествующих `V`, справа — произведение последующих `U`. Пустые произведения равны `1`. Слагаемые сложения коммутируют, порядок букв внутри каждого слагаемого сохраняется и совпадает с формулой (B).
+Модуль `D0.Research.PrimitiveJetComposition` фиксирует два разных тождества. Голова списка — левый фактор, так что `List.prod` даёт `V_{a_m} ⋯ V_{a_1}`.
+
+Фиксированный переплётчик — одно и то же `I` на каждой вершине. Для слова `w` остаток `V_w I - I U_w` равен сумме одношаговых остатков: слева стоит произведение предшествующих `V`, справа — произведение последующих `U`. Пустые произведения равны `1`. Это формула (B). Имя `wordResidual_eq_orderedSum` не переименовывалось в теорему о движущемся переплётчике.
+
+Движущийся переплётчик — семейство `I_0, …, I_m`. Индекс `0` — левая вершина, индекс `m` — правая. Буква с индексом `k` даёт `V_k I_{k+1} - I_k U_k`. Остаток слова есть `V_w I_m - I_0 U_w`. При `I_k = I` это определение совпадает с фиксированным остатком; совпадение записано отдельно. Слагаемые сложения коммутируют, порядок букв внутри каждого слагаемого сохраняется.
 
 Первый джет — пара `(value, derivative)`. Умножение задано правилом
 
@@ -47,6 +51,20 @@ PR #334 не сливается.
 - `reversed_order_fails`: сумма с обратным порядком факторов не равна остатку слова.
 - `kept_dI_value`, `frozen_dI_is_zero`, `frozen_dI_fails`: движущийся `dI` сохраняется, замороженный даёт нуль.
 - `branch_sum_does_not_give_each_label`: сумма двух противоположных помеченных остатков равна нулю, и ни один ярлык не равен нулю.
+- `movingWordResidual_eq_orderedSum`: для семейства вершин `V_w I_m - I_0 U_w` равно упорядоченной сумме `V_k I_{k+1} - I_k U_k`. Это не переименование фиксированной теоремы.
+- `jet_movingWordResidual_eq_orderedSum`: то же равенство в кольце джетов, по джету на каждой вершине.
+- `constantVertices_specialize_fixed`: постоянное семейство совпадает с `wordResidual` и `orderedResidualSum`.
+- `movingStepResidual_deriv`: производная шага сохраняет `dI` правой и левой вершины.
+- `movingStepResidual_deriv_eq_frozen_add_vertex_dI`: замороженная формула отличается на `V dI_right - dI_left U`.
+- `movingStepResidual_deriv_const`: один общий джет даёт старую одношаговую производную.
+- `moving_word_intertwining_of_steps`: пошаговое зануление движущегося остатка даёт концевое равенство.
+- `moving_branched_comparison_requires_hypotheses`: нужны ещё `instrumentsAgree` и `ComparisonHypothesis.compared`.
+- `moving_residual_does_not_force_comparison`: нулевой остаток пустого слова не сравнивает носители и не нормализует postselection.
+- `movingWordResidual_norm_le`: `‖R_w‖ ≤ m ε` для движущихся вершин при сжатии и одношаговой границе.
+- `fixed_residual_misses_moving_intertwiner`: на слове длины 2 фиксированный остаток равен `!![1, 0; -2, 0]`, движущийся равен `!![0, 1; -2, 0]`.
+- `moving_vertex_dI_not_fixed_jet`: производная при разных вершинах равна `!![0, 0; 0, 1]` и не равна фиксированной `!![-1, 0; 0, 1]`.
+
+Оценка `‖dR_w‖ ≤ m δ + m(m-1) M ε` по-прежнему относится к одному параметрическому джету `jet_wordDeriv_norm_le`. Для семейства разных вершин доказано точное равенство джетов, а не эта числовая оценка.
 
 ## Отрицательные и положительные контроли
 
@@ -59,6 +77,8 @@ PR #334 не сливается.
 2. Обратный порядок. `reversed_order_fails`: сумма, в которой суффикс `U` стоит слева от остатка, а префикс `V` справа, равна `!![0, 1; 0, 1]` и не равна остатку слова.
 
 3. Замороженный `dI`. Шаг `⟨⟨e10, 0⟩, ⟨e10, 0⟩⟩` и движущийся переплётчик `⟨1, e01⟩`. `kept_dI_value`: производная остатка равна `!![-1, 0; 0, 1]`, то есть `e10 * e01 - e01 * e10`. `frozen_dI_is_zero`: та же формула при `dI = 0` даёт нуль. `frozen_dI_fails`: эти производные различны, замороженное выражение `dV I - I dU` равно нулю, а полная производная равна сохранённому `V dI - dI U`.
+
+4. Разные вершины. `fixed_residual_misses_moving_intertwiner`: при вершинах `sampleI`, `e10`, `e01` движущийся остаток равен `!![0, 1; -2, 0]`, а фиксированный остаток того же слова при `sampleI` равен `!![1, 0; -2, 0]`. `moving_vertex_dI_not_fixed_jet`: левая вершина `⟨1, 0⟩`, правая `⟨1, e01⟩`, оба шага `⟨e10, 0⟩`. Полная производная равна `e10 * e01 = !![0, 0; 0, 1]`. Заморозка обеих вершинных производных даёт нуль. Фиксированная одношаговая производная одного джета `⟨1, e01⟩` равна `!![-1, 0; 0, 1]` и с движущейся не совпадает.
 
 ## Печать аксиом
 
@@ -86,9 +106,23 @@ PR #334 не сливается.
 'D0.Research.PrimitiveJetComposition.frozen_dI_is_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.PrimitiveJetComposition.frozen_dI_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
 'D0.Research.PrimitiveJetComposition.branch_sum_does_not_give_each_label' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PrimitiveJetComposition.movingWordResidual_eq_orderedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PrimitiveJetComposition.jet_movingWordResidual_eq_orderedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PrimitiveJetComposition.constantVertices_specialize_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PrimitiveJetComposition.movingStepResidual_deriv' depends on axioms: [propext]
+'D0.Research.PrimitiveJetComposition.movingStepResidual_deriv_eq_frozen_add_vertex_dI' depends on axioms: [propext]
+'D0.Research.PrimitiveJetComposition.movingStepResidual_deriv_const' depends on axioms: [propext]
+'D0.Research.PrimitiveJetComposition.moving_word_intertwining_of_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PrimitiveJetComposition.moving_branched_comparison_requires_hypotheses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PrimitiveJetComposition.moving_residual_does_not_force_comparison' depends on axioms: [propext]
+'D0.Research.PrimitiveJetComposition.movingWordResidual_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PrimitiveJetComposition.fixed_residual_misses_moving_intertwiner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.PrimitiveJetComposition.moving_vertex_dI_not_fixed_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
 Build completed successfully (1475 jobs).
 EXIT:0
 ```
+
+Повторная узкая сборка после добавления движущихся вершин снова дала `Build completed successfully (1475 jobs).` `sorryAx` нет. Новых аксиом нет. Статус остаётся candidate: скептический проход не запускался.
 
 ## Команды
 

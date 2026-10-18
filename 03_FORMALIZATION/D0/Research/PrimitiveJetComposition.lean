@@ -26,6 +26,19 @@ V_w I - I U_w
 ```
 
 Empty products are `1`. The factors inside each summand stay in the word order.
+That identity uses one and the same intertwiner at every vertex. It is not renamed into
+the moving-vertex theorem.
+
+A moving intertwiner is a family `I_0, …, I_m`. Index `0` is the left vertex and index `m`
+is the right vertex. The letter at index `k` contributes `V_k I_{k+1} - I_k U_k`, and
+
+```text
+V_w I_m - I_0 U_w
+  = ∑_k (V prefix before k) (V_k I_{k+1} - I_k U_k) (U suffix after k).
+```
+
+The fixed formula is only the specialization `I_k = I`. A first jet at each vertex keeps
+both adjacent derivatives `V dI_{k+1} - dI_k U`.
 
 A first jet is the pair `(value, derivative)` with the product rule
 `(x * y).deriv = x.deriv * y.val + x.val * y.deriv`. The summand `x.val * y.deriv` is kept:
@@ -321,6 +334,186 @@ theorem exact_step_does_not_normalize_postselection (I : R) :
     simp [ht]
   exact word_intertwining_of_steps I [{ V := 1, U := 1 }] h
 
+/-- Intertwiners at the vertices of a word. Index `0` is the left vertex.
+Index `w.length` is the right vertex. These may differ. -/
+def movingStepResidual (w : List (Step R)) (I : Fin (w.length + 1) → R)
+    (k : Fin w.length) : R :=
+  (w.get k).V * I k.succ - I (Fin.castSucc k) * (w.get k).U
+
+/-- Ordered summand for a vertex-dependent intertwiner. -/
+def movingInsertTerm (w : List (Step R)) (I : Fin (w.length + 1) → R)
+    (k : Fin w.length) : R :=
+  ((w.take k.1).map Step.V).prod *
+    movingStepResidual w I k *
+    ((w.drop (k.1 + 1)).map Step.U).prod
+
+/-- Word residual between the right vertex and the left vertex. -/
+def movingWordResidual (w : List (Step R)) (I : Fin (w.length + 1) → R) : R :=
+  wordV w * I (Fin.last w.length) - I 0 * wordU w
+
+/-- Ordered telescoping sum for a moving intertwiner. -/
+def movingOrderedResidualSum (w : List (Step R)) (I : Fin (w.length + 1) → R) : R :=
+  ∑ k : Fin w.length, movingInsertTerm w I k
+
+lemma movingInsertTerm_zero (s : Step R) (w : List (Step R))
+    (I : Fin ((s :: w).length + 1) → R) :
+    movingInsertTerm (s :: w) I 0 = movingStepResidual (s :: w) I 0 * wordU w := by
+  simp [movingInsertTerm, wordU]
+
+lemma movingStepResidual_succ (s : Step R) (w : List (Step R))
+    (I : Fin ((s :: w).length + 1) → R) (i : Fin w.length) :
+    movingStepResidual (s :: w) I i.succ =
+      movingStepResidual w (fun k => I k.succ) i := by
+  simp only [movingStepResidual, List.get_cons_succ', Fin.succ_castSucc]
+
+lemma movingInsertTerm_succ (s : Step R) (w : List (Step R))
+    (I : Fin ((s :: w).length + 1) → R) (i : Fin w.length) :
+    movingInsertTerm (s :: w) I i.succ =
+      s.V * movingInsertTerm w (fun k => I k.succ) i := by
+  simp only [movingInsertTerm, movingStepResidual_succ, Fin.val_succ, List.take_succ_cons,
+    List.drop_succ_cons, List.map_cons, List.prod_cons]
+  set left : R := ((w.take i.1).map Step.V).prod
+  set mid : R := movingStepResidual w (fun k => I k.succ) i
+  set right : R := ((w.drop (i.1 + 1)).map Step.U).prod
+  calc
+    (s.V * left) * mid * right = (s.V * (left * mid)) * right := by rw [mul_assoc s.V left mid]
+    _ = s.V * (left * mid * right) := by rw [mul_assoc s.V (left * mid) right]
+
+/-- Exact ordered decomposition for a possibly different intertwiner at each vertex.
+This is not `wordResidual_eq_orderedSum`: that theorem is the constant family. -/
+theorem movingWordResidual_eq_orderedSum :
+    ∀ (w : List (Step R)) (I : Fin (w.length + 1) → R),
+      movingWordResidual w I = movingOrderedResidualSum w I
+  | [], I => by
+      simp [movingWordResidual, movingOrderedResidualSum, wordV_nil, wordU_nil, Fin.last_zero,
+        one_mul, mul_one, sub_self]
+  | s :: w, I => by
+      let J : Fin (w.length + 1) → R := fun k => I k.succ
+      have ih := movingWordResidual_eq_orderedSum w J
+      have hsplit :
+          movingOrderedResidualSum (s :: w) I =
+            movingStepResidual (s :: w) I 0 * wordU w +
+              s.V * movingOrderedResidualSum w J := by
+        unfold movingOrderedResidualSum
+        erw [Fin.sum_univ_succ]
+        rw [movingInsertTerm_zero]
+        congr 1
+        rw [Finset.mul_sum]
+        refine Finset.sum_congr rfl ?_
+        intro i _
+        simpa [J] using movingInsertTerm_succ s w I i
+      have htail :
+          movingWordResidual w J =
+            wordV w * I (Fin.last (w.length + 1)) - I 1 * wordU w := by
+        simp only [movingWordResidual, J]
+        rw [Fin.succ_last]
+        rfl
+      have hstep0 :
+          movingStepResidual (s :: w) I 0 = s.V * I 1 - I 0 * s.U := by
+        simp [movingStepResidual]
+      calc
+        movingWordResidual (s :: w) I
+            = s.V * wordV w * I (Fin.last (w.length + 1)) - I 0 * (s.U * wordU w) := by
+          simp [movingWordResidual, wordV_cons, wordU_cons]
+        _ = (s.V * I 1 - I 0 * s.U) * wordU w +
+              s.V * (wordV w * I (Fin.last (w.length + 1)) - I 1 * wordU w) := by
+          noncomm_ring
+        _ = movingStepResidual (s :: w) I 0 * wordU w + s.V * movingWordResidual w J := by
+          rw [hstep0, htail]
+        _ = movingStepResidual (s :: w) I 0 * wordU w +
+              s.V * movingOrderedResidualSum w J := by
+          rw [ih]
+        _ = movingOrderedResidualSum (s :: w) I := by
+          rw [hsplit]
+
+/-- The same moving identity in the jet ring. Each vertex keeps its own derivative. -/
+theorem jet_movingWordResidual_eq_orderedSum {S : Type*} [Ring S]
+    (w : List (Step (Jet S))) (I : Fin (w.length + 1) → Jet S) :
+    movingWordResidual w I = movingOrderedResidualSum w I :=
+  movingWordResidual_eq_orderedSum w I
+
+/-- Constant vertices recover the fixed residual. The fixed theorem is not renamed. -/
+theorem constantVertices_specialize_fixed (I0 : R) (w : List (Step R)) :
+    movingWordResidual w (fun _ => I0) = wordResidual I0 w ∧
+      movingOrderedResidualSum w (fun _ => I0) = orderedResidualSum I0 w := by
+  constructor <;> rfl
+
+/-- Derivative at one letter. Both adjacent vertex derivatives stay in the formula. -/
+theorem movingStepResidual_deriv {S : Type*} [Ring S]
+    (w : List (Step (Jet S))) (I : Fin (w.length + 1) → Jet S) (k : Fin w.length) :
+    (movingStepResidual w I k).deriv =
+      (w.get k).V.deriv * (I k.succ).val + (w.get k).V.val * (I k.succ).deriv
+        - ((I (Fin.castSucc k)).deriv * (w.get k).U.val +
+            (I (Fin.castSucc k)).val * (w.get k).U.deriv) := by
+  simp [movingStepResidual]
+
+/-- Derivative with both vertex derivatives deleted. -/
+def frozenMovingStepDeriv {S : Type*} [Ring S]
+    (w : List (Step (Jet S))) (I : Fin (w.length + 1) → Jet S) (k : Fin w.length) : S :=
+  (w.get k).V.deriv * (I k.succ).val - (I (Fin.castSucc k)).val * (w.get k).U.deriv
+
+/-- The frozen letter misses `V dI_right - dI_left U`. -/
+theorem movingStepResidual_deriv_eq_frozen_add_vertex_dI {S : Type*} [Ring S]
+    (w : List (Step (Jet S))) (I : Fin (w.length + 1) → Jet S) (k : Fin w.length) :
+    (movingStepResidual w I k).deriv =
+      frozenMovingStepDeriv w I k +
+        ((w.get k).V.val * (I k.succ).deriv -
+          (I (Fin.castSucc k)).deriv * (w.get k).U.val) := by
+  simp only [movingStepResidual_deriv, frozenMovingStepDeriv]
+  abel
+
+/-- One shared jet is the fixed one-step derivative, not a moving pair of vertices. -/
+theorem movingStepResidual_deriv_const {S : Type*} [Ring S]
+    (J : Jet S) (w : List (Step (Jet S))) (k : Fin w.length) :
+    (movingStepResidual w (fun _ => J) k).deriv = (stepResidual J (w.get k)).deriv := by
+  rfl
+
+/-- Supplied one-step moving intertwiners give the endpoint identity. -/
+theorem moving_word_intertwining_of_steps (w : List (Step R))
+    (I : Fin (w.length + 1) → R) (h : ∀ k, movingStepResidual w I k = 0) :
+    wordV w * I (Fin.last w.length) = I 0 * wordU w := by
+  have hres : movingWordResidual w I = 0 := by
+    rw [movingWordResidual_eq_orderedSum, movingOrderedResidualSum]
+    refine Finset.sum_eq_zero ?_
+    intro k _
+    rw [movingInsertTerm, h k]
+    simp
+  simpa [movingWordResidual, sub_eq_zero] using hres
+
+/-- Comparison of adjacent carriers and of the two endpoint readings.
+Neither field is a word residual. -/
+structure ComparisonHypothesis where
+  adjacentCarriersCompared : Prop
+  endpointReadingsCompared : Prop
+
+/-- Both comparison obligations, still to be proved for a branched reading. -/
+def ComparisonHypothesis.compared (C : ComparisonHypothesis) : Prop :=
+  C.adjacentCarriersCompared ∧ C.endpointReadingsCompared
+
+/-- A branched moving reading needs the word identity, instrument agreement, and comparison. -/
+theorem moving_branched_comparison_requires_hypotheses (w : List (Step R))
+    (I : Fin (w.length + 1) → R) (B : BranchAgreement) (C : ComparisonHypothesis)
+    (h : ∀ k, movingStepResidual w I k = 0)
+    (hB : B.instrumentsAgree) (hC : C.compared) :
+    wordV w * I (Fin.last w.length) = I 0 * wordU w ∧
+      B.labelsAgree ∧ B.preparationsAgree ∧ B.testsAgree ∧
+      C.adjacentCarriersCompared ∧ C.endpointReadingsCompared := by
+  obtain ⟨hL, hP, hT⟩ := hB
+  obtain ⟨hA, hE⟩ := hC
+  exact ⟨moving_word_intertwining_of_steps w I h, hL, hP, hT, hA, hE⟩
+
+/-- Vanishing at the only vertex of the empty word does not compare carriers or normalize. -/
+theorem moving_residual_does_not_force_comparison (I0 : R) :
+    movingWordResidual ([] : List (Step R)) (fun _ => I0) = 0 ∧
+      ¬ (ComparisonHypothesis.mk False True).compared ∧
+      ¬ (BranchAgreement.mk False True True False).instrumentsAgree ∧
+      ¬ (BranchAgreement.mk True True True False).postselectionNormalized := by
+  refine ⟨?_, ?_, ?_, ?_⟩
+  · simp [movingWordResidual, wordV_nil, wordU_nil, one_mul, mul_one, sub_self]
+  · simp [ComparisonHypothesis.compared]
+  · simp [BranchAgreement.instrumentsAgree]
+  · simp
+
 end Algebra
 
 private lemma mul_le_mul3 {a b c a' b' c' : ℝ}
@@ -392,6 +585,55 @@ theorem wordResidual_norm_le (I : R) (w : List (Step R)) (ε : ℝ)
       refine Finset.sum_le_sum ?_
       intro k _
       exact insertTerm_norm_le I w ε hV hU hR k
+    _ = (w.length : ℝ) * ε := by
+      simp [Finset.sum_const, Finset.card_univ]
+
+lemma movingInsertTerm_norm_le (w : List (Step R)) (I : Fin (w.length + 1) → R) (ε : ℝ)
+    (hV : ∀ s ∈ w, ‖s.V‖ ≤ 1) (hU : ∀ s ∈ w, ‖s.U‖ ≤ 1)
+    (hR : ∀ k : Fin w.length, ‖movingStepResidual w I k‖ ≤ ε) (k : Fin w.length) :
+    ‖movingInsertTerm w I k‖ ≤ ε := by
+  have hLeft : ‖((w.take k.1).map Step.V).prod‖ ≤ 1 := by
+    refine prod_contraction _ ?_
+    intro x hx
+    obtain ⟨s, hs, rfl⟩ := List.mem_map.mp hx
+    exact hV s (List.mem_of_mem_take hs)
+  have hRight : ‖((w.drop (k.1 + 1)).map Step.U).prod‖ ≤ 1 := by
+    refine prod_contraction _ ?_
+    intro x hx
+    obtain ⟨s, hs, rfl⟩ := List.mem_map.mp hx
+    exact hU s (List.mem_of_mem_drop hs)
+  have hMid : ‖movingStepResidual w I k‖ ≤ ε := hR k
+  have hε0 : 0 ≤ ε := le_trans (norm_nonneg _) hMid
+  calc
+    ‖movingInsertTerm w I k‖ ≤
+        ‖((w.take k.1).map Step.V).prod * movingStepResidual w I k‖ *
+          ‖((w.drop (k.1 + 1)).map Step.U).prod‖ := by
+      simpa [movingInsertTerm] using
+        norm_mul_le
+          (((w.take k.1).map Step.V).prod * movingStepResidual w I k)
+          (((w.drop (k.1 + 1)).map Step.U).prod)
+    _ ≤ (‖((w.take k.1).map Step.V).prod‖ * ‖movingStepResidual w I k‖) *
+          ‖((w.drop (k.1 + 1)).map Step.U).prod‖ :=
+      mul_le_mul_of_nonneg_right (norm_mul_le _ _) (norm_nonneg _)
+    _ ≤ (1 * ε) * 1 := by
+      refine mul_le_mul ?_ hRight (norm_nonneg _) ?_
+      · exact mul_le_mul hLeft hMid (norm_nonneg _) zero_le_one
+      · exact mul_nonneg zero_le_one hε0
+    _ = ε := by ring
+
+/-- Contraction bound for a moving intertwiner, from the one-step moving residuals. -/
+theorem movingWordResidual_norm_le (w : List (Step R)) (I : Fin (w.length + 1) → R) (ε : ℝ)
+    (hV : ∀ s ∈ w, ‖s.V‖ ≤ 1) (hU : ∀ s ∈ w, ‖s.U‖ ≤ 1)
+    (hR : ∀ k : Fin w.length, ‖movingStepResidual w I k‖ ≤ ε) :
+    ‖movingWordResidual w I‖ ≤ (w.length : ℝ) * ε := by
+  rw [movingWordResidual_eq_orderedSum, movingOrderedResidualSum]
+  calc
+    ‖∑ k : Fin w.length, movingInsertTerm w I k‖ ≤
+        ∑ k : Fin w.length, ‖movingInsertTerm w I k‖ := norm_sum_le _ _
+    _ ≤ ∑ _ : Fin w.length, ε := by
+      refine Finset.sum_le_sum ?_
+      intro k _
+      exact movingInsertTerm_norm_le w I ε hV hU hR k
     _ = (w.length : ℝ) * ε := by
       simp [Finset.sum_const, Finset.card_univ]
 
@@ -724,6 +966,80 @@ theorem frozen_dI_fails :
   · simp [frozenStepDeriv, movingI, jetStep, mul_zero]
   · simp only [stepResidual_deriv, movingI, jetStep, zero_mul, mul_zero, add_zero, zero_add]
 
+/-- Three vertices on `[head, tail]`: output `sampleI`, middle `e10`, input `e01`. -/
+def movingSampleI : Fin 3 → M2 := ![sampleI, e10, e01]
+
+theorem fixed_residual_misses_moving_intertwiner :
+    wordResidual sampleI sampleWord = !![1, 0; -2, 0] ∧
+      movingWordResidual sampleWord movingSampleI = !![0, 1; -2, 0] ∧
+      movingOrderedResidualSum sampleWord movingSampleI = !![0, 1; -2, 0] ∧
+      movingWordResidual sampleWord movingSampleI ≠ wordResidual sampleI sampleWord := by
+  have hfixed : wordResidual sampleI sampleWord = !![1, 0; -2, 0] :=
+    sample_ordered_residual.1
+  have hlast : Fin.last sampleWord.length = (2 : Fin 3) := by
+    apply Fin.ext
+    simp [sampleWord, Fin.last]
+  have h0 : movingSampleI (0 : Fin 3) = sampleI := by simp [movingSampleI]
+  have h2 : movingSampleI (Fin.last sampleWord.length) = e01 := by
+    rw [hlast]
+    simp [movingSampleI, Matrix.cons_val_two]
+  have hmov : movingWordResidual sampleWord movingSampleI = !![0, 1; -2, 0] := by
+    unfold movingWordResidual
+    erw [h0, h2]
+    simp only [wordV, wordU, sampleWord, stepHead, stepTail, List.map_cons, List.map_nil,
+      List.prod_cons, List.prod_nil, mul_one, sampleI, e01, e10, e00]
+    have hV : !![0, (1 : ℝ); 0, 0] * !![0, 0; 1, 0] = !![1, 0; 0, 0] := by
+      rw [Matrix.mul_fin_two]; norm_num
+    have hU : !![0, 0; (1 : ℝ), 0] * !![1, 0; 0, 0] = !![0, 0; 1, 0] := by
+      rw [Matrix.mul_fin_two]; norm_num
+    rw [hV, hU]
+    have hL : !![1, (0 : ℝ); 0, 0] * !![0, 1; 0, 0] = !![0, 1; 0, 0] := by
+      rw [Matrix.mul_fin_two]; norm_num
+    have hR : !![1, (0 : ℝ); 0, 2] * !![0, 0; 1, 0] = !![0, 0; 2, 0] := by
+      rw [Matrix.mul_fin_two]; norm_num
+    rw [hL, hR]
+    ext i j
+    fin_cases i <;> fin_cases j <;> simp [Matrix.sub_apply]
+  refine ⟨hfixed, hmov, ?_, ?_⟩
+  · rw [← movingWordResidual_eq_orderedSum]
+    exact hmov
+  · intro h
+    rw [hfixed, hmov] at h
+    have h01 := congr_fun (congr_fun h 0) 1
+    simp at h01
+
+/-- Left vertex frozen at `1`, right vertex `⟨1, e01⟩`. The steps stay `e10`. -/
+def vertexJets : Fin 2 → Jet M2 := ![(⟨(1 : M2), 0⟩ : Jet M2), ⟨1, e01⟩]
+
+theorem moving_vertex_dI_not_fixed_jet :
+    (movingStepResidual [jetStep] vertexJets 0).deriv = !![0, 0; (0 : ℝ), 1] ∧
+      frozenMovingStepDeriv [jetStep] vertexJets 0 = 0 ∧
+      (stepResidual movingI jetStep).deriv = !![(-1 : ℝ), 0; 0, 1] ∧
+      (movingStepResidual [jetStep] vertexJets 0).deriv ≠
+        (stepResidual movingI jetStep).deriv := by
+  have h0 : vertexJets (Fin.castSucc (0 : Fin 1)) = (⟨(1 : M2), 0⟩ : Jet M2) := by
+    simp [vertexJets, Fin.castSucc]
+  have h1 : vertexJets (Fin.succ (0 : Fin 1)) = (⟨(1 : M2), e01⟩ : Jet M2) := by
+    simp [vertexJets, Fin.succ]
+  have hfix : (stepResidual movingI jetStep).deriv = !![(-1 : ℝ), 0; 0, 1] := by
+    have hword : wordResidual movingI [jetStep] = stepResidual movingI jetStep := by
+      simp [wordResidual, wordV, wordU, stepResidual, mul_one]
+    rw [← hword]
+    exact kept_dI_value
+  have hmov : (movingStepResidual [jetStep] vertexJets 0).deriv = !![0, 0; (0 : ℝ), 1] := by
+    rw [movingStepResidual_deriv]
+    simp only [List.get_cons_zero, jetStep, h0, h1, zero_mul, mul_zero, add_zero, zero_add,
+      sub_zero, e10, e01]
+    rw [Matrix.mul_fin_two]
+    ext i j
+    fin_cases i <;> fin_cases j <;> simp
+  refine ⟨hmov, ?_, hfix, ?_⟩
+  · simp [frozenMovingStepDeriv, jetStep, mul_zero, zero_mul, sub_self]
+  · intro h
+    rw [hmov, hfix] at h
+    have h00 := congr_fun (congr_fun h 0) 0
+    simp at h00
+
 /-- A sum of two opposite labelled residuals vanishes without either label vanishing. -/
 theorem branch_sum_does_not_give_each_label :
     ∃ r : Fin 2 → M2, (∑ i, r i) = 0 ∧ r 0 ≠ 0 ∧ r 1 ≠ 0 := by
@@ -755,5 +1071,17 @@ theorem branch_sum_does_not_give_each_label :
 #print axioms frozen_dI_is_zero
 #print axioms frozen_dI_fails
 #print axioms branch_sum_does_not_give_each_label
+#print axioms movingWordResidual_eq_orderedSum
+#print axioms jet_movingWordResidual_eq_orderedSum
+#print axioms constantVertices_specialize_fixed
+#print axioms movingStepResidual_deriv
+#print axioms movingStepResidual_deriv_eq_frozen_add_vertex_dI
+#print axioms movingStepResidual_deriv_const
+#print axioms moving_word_intertwining_of_steps
+#print axioms moving_branched_comparison_requires_hypotheses
+#print axioms moving_residual_does_not_force_comparison
+#print axioms movingWordResidual_norm_le
+#print axioms fixed_residual_misses_moving_intertwiner
+#print axioms moving_vertex_dI_not_fixed_jet
 
 end D0.Research.PrimitiveJetComposition
