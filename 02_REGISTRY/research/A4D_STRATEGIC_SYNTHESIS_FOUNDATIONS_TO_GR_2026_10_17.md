@@ -872,6 +872,23 @@ consumer — принадлежащий D0 source/constraint, который у�
 AF состояния и metric probes могут их различать. Это no-go для
 универсального vacuum claim данного свободного cut, не no-go D0→ОТО.
 
+### 7.4A. Положительный GR-переход: тот же AF source и native CAR16 выбирают ОДНУ одетую метрику
+
+**Новый потреблённый результат 18 октября:** [A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md) усиливает (7.7) не посредством объявления \(\chi\) gauge полного прибора, а через **доказанное совпадение двух независимо построенных геометрических данных**. Точный finite weighted source
+\[
+\sum_x\mu_x\mathcal P_{\star,x}(v,U)
+=\bar\mu\sum_x\mathcal P_{\star,x}(\widehat v,U),\qquad
+\widehat v_x=\sqrt{\mu_x/\bar\mu}\,v_x
+\]
+определяет ту же \(\widehat g=(\mu/\bar\mu)g\), которую можно прочитать из **настоящих** native full16 raising \(X=C(u)\Lambda M\), inverse-coframe \(F=e^{-1}\) и **настоящей** old-AF leaf probability \(\mu_x\): \(\widehat X=\sqrt{\bar\mu/\mu_x}X\),
+\(\{\widehat\Gamma_r,\widehat\Gamma_s\}=2\widehat q^{rs}I_{16}\), \(\widehat g=\widehat q^{-1}\). Это действительное exact CAR16 algebra/measure source equality с первым source, включая \(D\log\mu\), а не свободно введённая метрическая поправка к tensor G.
+
+На старой подготовительной \(\chi\)-орбите (7.7) \(\widehat X,\widehat g\) сохраняются **на каждом конечном уровне**. Поэтому **ВСЯ** допустимая free-preparation curved pp-wave orbit из §7.4 сходится к ОДНОМУ вакуумному решению Эйнштейна для \(\widehat g\), с прежней \(C^2\) скоростью (7.6); «non-Einstein \(\chi\)» была утверждением о raw \(g\), а не о составной source-compatible метрической величине. Единственный homogeneous density exponent, делающий native raising invariant на всех \(\chi\), равен \(-1/2\). Полные десять метрических вариаций сохраняют явную coframe right inverse, а moving-weight edge/observer jets учитываются отдельно.
+
+Более того, нелинейный геометрический AF функционал с \(\Phi(0)=0,\Phi'(0)\ne0\) имеет точную compensator Ward defect \(2\sum\sigma\mu[\Phi(f)-f\Phi'(f)]=O(\sum\mu f^2)\). На **actual exact \(f=0\)** 40-row ветви его source совпадает с \(c\,D\mathcal P_\star(\widehat v,U)\) для любого fixed t. Это закрывает **вакуумную геометрическую** вариационную сцепку операционного кандидата \(\widehat g\) с уже построенной native CAR16, не требуя новый Einstein action, усреднение тепла или фиксацию \(\chi\) по желанию.
+
+Физическая граница становится острее и уже: первоначальная raw \(g\) по §8.5 остаётся допустимым отдельным метрическим probe. Надо доказать, что действительный полный D0 programme, его old-Y archive, observer/clock и independently sourced matter **совместно выбирают нормированное \((\widehat X,\mu)\)** как гравитационно взаимодействующий metric readout; одной invariance гравитационного сектора недостаточно для всей операционной equivalence. Именно ЭТО tested common-record metric/Info coupling теперь является следующим positive consumer §7.5 и §7.9. Нельзя скрыть отличие raw \(g\) или добавить counterterm.
+
 ### 7.5. Полная история замыкает preparation и nonlinear Euler bridge
 
 Продолжение от `4baad450`: теперь выведен конкретный положительный
