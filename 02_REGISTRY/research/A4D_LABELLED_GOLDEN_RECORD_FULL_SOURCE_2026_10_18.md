@@ -3666,7 +3666,7 @@ O(M) в (13du) не является no-go. Есть полный conditional ex
 без удаления flags и без свободного относительного coupling.
 На фиксированной smooth source chart пусть доступны реальные scalar
 clock effects r_j(θ)I и geometry factory с conditional entropy
-g(θ,z), включая все её outputs. Старый полный Y сохраняется один раз.
+g(θ,z)=H_geom(θ,z)/ℓ, включая все её outputs. Старый полный Y сохраняется один раз.
 Для каждого из M испытаний исполняются k FRESH независимых G|0>
 coins, все k бит сохраняются. Только на строке R^k исполняются d clock
 probes. Её вероятность ε=p^(2k), field-independent. Из L successes
@@ -3688,14 +3688,16 @@ controller, его baseline вместо этого √5(1−ε); это дру�
 cut. Повтор старого fullStep на том же active bit НЕ даёт ε=p^(2k).
 
 **Производные распределения не потеряны.** При L=l и K_j независимых
-Bin(l,r_j), E[g(θ,K/l)] — product Bernstein polynomial. Для |α|≤2
+Bin(l,r_j), E[g(θ,K/l)] — product Bernstein polynomial. При l≥2 и |α|≤2
 
     ∂_r^α B_l g=Π_j[(l)_(α_j)/l^(α_j)] E[∂_z^αg(Z)],
     Z_j=[Bin(l−α_j,r_j)+Σ_(a≤α_j)Uniform_a]/l.     (13dw)
 
 Формула получается дифференцированием binomial law и integral finite
 differences; она учитывает все probability-score и controller источники.
-Среднее смещение Z−r и его второй момент O(1/l). При bounded joint
+Случай L=0 использует retained fallback; L=1 оценивается непосредственно
+и включён в общий2B E[1/(L+1)] bound. Среднее смещение Z−r
+и его второй момент O(1/l). При bounded joint
 C⁴ g Taylor даёт C² error≤B/l; B зависит от числа settings и их
 настоящих jets. Более слабое joint C² даёт сходимость через modulus
 непрерывности вторых derivatives, без выдуманной uniform скорости.
@@ -3734,7 +3736,7 @@ error/σ→0. Operator C³ convergence не даёт Shannon C² в rank births.
 H(Y)/M также не исправляет t²log t singularity. Bare nearest-cell
 π_h(X) не smooth: необходим actual smooth query/placement contract.
 При свободных old leaf weights repetition меняет preparation profile:
-H(r)+MΣr_i g_i имеет r_i∝exp(Mg_i), а не прежний single-shot maximum.
+H(r)/ℓ+MΣr_i g_i имеет r_i∝exp(ℓMg_i), а не прежний single-shot maximum.
 Поэтому (13dx) применён на fixed-RIGHT/PF fibre либо требует решения
 всех новых preparation rows. Если t,σ или counts сами freely varied,
 их Euler rows не сохраняются умножением на1/(Mσ). Exact finite joint

@@ -267,10 +267,11 @@
     "actual_prefix": "MAIN: execute all k independent fresh golden coins. A word with j R bits has probability p^(k+j); all 2^k words are retained. Success R^k has probability epsilon=p^(2k).",
     "actual_prefix_cost": "MAIN: E Cost = H(coin bank)/ell = k*(p+2*p^2), field-independent. OPTIONAL stopped causal prefix has E Cost = H(prefix)/ell = sqrt(5)*(1-epsilon), only if that stopping policy is supplied.",
     "complete_factory": "Old measured Y once, M full k-coin banks, d clock probes on each R^k success, deterministic retained record-to-address policy, then M actual scalar geometry calls.",
+    "geometry_price_units": "g_geom=H_geom/ell, including every geometry output.",
     "exact_normalized_price": "H(Y)/(M*ell) + k*h(p^2)/ell + epsilon*sum_j h(r_j)/ell + E[g_geom(theta, Phi_clip(K/L))]. With L=0 use one fixed fallback address. This normalizes the WHOLE action by M.",
     "scalar_scope": "Clock and geometry effects must be scalar conditionally on retained Y, or a separately priced fresh factory must prove the same product law. No arbitrary repeated non-scalar POVM is replaced by iid outcomes.",
     "likelihood_binding": "This is the existing SAME-history w=q binding on the complete finite trace-preserving tree, N identically 1. No physical Book binding is inferred from Born normalization alone.",
-    "bernstein_derivative": "D_r^alpha B_l F = product_j[(l)_(alpha_j)/l^(alpha_j)] * E[D_u^alpha F(Z)]; Z_j=[Bin(l-alpha_j,r_j)+sum_(s<=alpha_j) Uniform_s]/l; total |alpha|<=2.",
+    "bernstein_derivative": "For l>=2 and total |alpha|<=2: D_r^alpha B_l F = product_j[(l)_(alpha_j)/l^(alpha_j)] * E[D_u^alpha F(Z)]; Z_j=[Bin(l-alpha_j,r_j)+sum_(s<=alpha_j) Uniform_s]/l; total |alpha|<=2.",
     "bernstein_C2": "For F in C^4 with norm K and r in C^2, on the compact chart, ||B_l F(theta,r(theta))-F(theta,r(theta))||_C2 <= C/l. All source derivatives through the outcome law are included.",
     "explicit_C2_constant": "Using max-component derivative norms, one safe C is (3+d+d^2)*K*(1+2*d*R1+d*R2+d^2*R1^2), for R1=max |D r_j| and R2=max |D^2 r_j|.",
     "rare_success_bound": "Error <= 2*C/((M+1)*epsilon) + C_fallback*exp(-M*epsilon), because E[1/(L+1)] = [1-(1-epsilon)^(M+1)]/[(M+1)*epsilon].",
@@ -285,7 +286,7 @@
     "golden_budget": "For bounded per-query cost and polynomial(k) arithmetic, total resource poly(k)*phi^(3k) fits phi^(4k) eventually. Without a quantitative actual address/compiler cost bound, only a computable diagonal schedule N_k >= ceil(log_phi(actual_total_cost_k)) is justified; no universal phi-rate is asserted.",
     "remaining_execution_scope": "The actual finite causal record-to-address query policy and all its work must be supplied/compiled. Logical computability of Phi is not a native proper-time actuation law or forcing theorem. Approximate compilation needs its own complete-price C2 error control; C3 unitary approximation alone does not imply it at new zero-probability pointer branches.",
     "root_scope": "C2 convergence of the whole normalized price/source on a smooth positive chart; no exact finite roots, free factory-preparation Euler, physical admission, Einstein dynamics, or source forcing are claimed.",
-    "preparation_boundary": "Use the actual fixed-RIGHT/PF fibre or solve all repeated preparation rows. For free old weights, H(r)+M sum r_i g_i has stationary r_i proportional to exp(M g_i), so the old single-shot capacity profile is not preserved."
+    "preparation_boundary": "Use the actual fixed-RIGHT/PF fibre or solve all repeated preparation rows. For free old weights, H(r)/ell+M sum r_i g_i has stationary r_i proportional to exp(ell M g_i), so the old single-shot capacity profile is not preserved."
   },
   "actual_two_tick_scene": {
     "status": "PASS",
