@@ -156,6 +156,74 @@ D_{\widehat e}\widehat g[W_{\widehat e}(V)]=V
 
 Конкретный физический measurement contract теперь сведен к проверяемой паре: один действительно сохранённый old-leaf AF probability \(\mu_x\) и один его собственный (properly transported) native raising \(X_x\) должны быть доступны **в одном общем эксперименте**. Их измеренные значения позволяют вычислить (9) как постобработку, без физического gate \(\widehat X\) и без eigenvector oracle. Отдельные marginal experiments, не сохраняющие общую reference/preparation, ещё не доказывают этот контракт.
 
+### 2.1. Весь edge/adjoint оператор и его собственный density-jet, не только site metric
+
+Чтобы (9) не осталось поточечным именем метрики, рассмотрим **на том же уже существующем полном lattice×CAR16 носителе** его настоящий counting representation и derived positive weighted representation. Пусть \(\mathscr D_{\widehat X}\) — любое конечное операторное expression из одетых \(\widehat X_{x,r}\), proper Lorentz \(\Lambda M\), их настоящего exterior adjoint и фиксированных ориентированных shift-перестановок, **полностью определённое этими данными** в \(\ell^2(\mathrm{sites})\otimes\Lambda^*\). Оно может быть прежним true-adjoint Dirac construction, когда все его operator/source inputs представлены в этом chart; мы не объявляем другой Dirac уже физически выбранным.
+
+Натуральное weighted скалярное произведение для той же старой вероятностной меры:
+\[
+\langle\psi,\phi\rangle_\mu
+ =\sum_x\frac{\mu_x}{\bar\mu}\langle\psi_x,\phi_x\rangle_{\Lambda^*},
+\qquad
+(\mathcal U_\mu\psi)_x
+=\sqrt{\mu_x/\bar\mu}\,\psi_x .
+\]
+\(\mathcal U_\mu:\mathcal H_\mu\to\mathcal H_{\rm counting}\) — точная **унитарная** карта, с full16 на каждом сайте, без исключения ни одной grade. Определим не новую независимую динамику, а её *однозначно сопряжённое представление*
+\[
+\boxed{\mathscr D_\mu
+=\mathcal U_\mu^{-1}\mathscr D_{\widehat X}\mathcal U_\mu.}
+\tag{10a}
+\]
+Если оператор в counting chart самосопряжён, \(\mathscr D_\mu\) самосопряжён именно в \(\mathcal H_\mu\), хотя не обязан быть Hermitian при ошибочно зафиксированном counting adjoint. Для ориентированного edge \(y\to x\), исходящего из базовой matrix \(\widehat X_{xy}\), элемент (10a) равен
+\[
+\boxed{(\mathscr D_\mu)_{xy}
+=\sqrt{\mu_y/\mu_x}\,(\mathscr D_{\widehat X})_{xy}.}
+\tag{10b}
+\]
+**Ориентация здесь указана явно:** для обратного edge \(x\to y\) endpoint-фактор инвертируется. Это ровно half-density перенос; его derivative нельзя заменить frozen coframe jet.
+
+При той же \(\chi\)-компенсации (5) имеем \(\widehat X'=\widehat X\), значит \(\mathscr D'_{\widehat X}=\mathscr D_{\widehat X}\) как operator в общем counting chart. Пусть
+\(T_\chi=\mathcal U_\mu^{-1}\mathcal U_{\mu'}=\operatorname{diag}_x\sqrt{\chi_x}\).
+Тогда **точно на конечной сетке**:
+\[
+\boxed{
+\mathscr D_{\mu'}=T_\chi^{-1}\mathscr D_\mu T_\chi,\quad
+(\mathscr D_{\mu'})_{xy}
+=\sqrt{\chi_y/\chi_x}\,(\mathscr D_\mu)_{xy}.
+}
+\tag{10c}
+\]
+При \(\chi_x(s)=e^{2s\sigma_x}\) из того же exact family следует весь первый field-jet
+\[
+\boxed{
+\dot{\mathscr D}_\mu=[\mathscr D_\mu,\Sigma],\quad
+(\dot{\mathscr D}_\mu)_{xy}=(\sigma_y-\sigma_x)(\mathscr D_\mu)_{xy}
+=\tfrac12(\dot{\log\mu_y}-\dot{\log\mu_x})(\mathscr D_\mu)_{xy},
+\quad\Sigma=\operatorname{diag}(\sigma_x).
+}
+\tag{10d}
+\]
+
+То есть endpoint-jet является **внутренним commutator-jet точной движущейся Hilbert representation**, а не добавленным observer/matter stress. Для каждого полинома \(F\) на этом конечном carrier
+\[
+\operatorname{Tr}_{\mathcal H_{\mu'}}F(\mathscr D_{\mu'})
+=\operatorname{Tr}_{\rm counting}F(\mathscr D_{\widehat X})
+=\operatorname{Tr}_{\mathcal H_\mu}F(\mathscr D_\mu).
+\tag{10e}
+\]
+Аналогичное spectral statement верно для любых regular matrix functions от \(\mathscr D_\mu^2\), если они определены в общем positive carrier. В первом источнике trace commutator исчезает цикличностью, с настоящими \(\dot\mu\), \(\dot X\) и transported adjoint. Поэтому **на compensator orbit не появляется независимый density-source в самом таком CAR spectrum**.
+
+Вместе (2), (9), (10a–e) дают более сильное точное склеивание:
+\[
+\boxed{
+\text{старые AF вероятности } \mu
++\text{ genuine full16 raising } X
+\ \longrightarrow\
+(\widehat g,\mathscr D_{\widehat X})
+}
+\]
+и **одна** пара \((\widehat g,\mathscr D_{\widehat X})\) одновременно управляет weighted-star вакуумной геометрией, Clifford principal symbol (10) и полным positive CAR spectral carrier (10e) в рассматриваемом representation class. Чтобы потребить это как настоящий материальный source самого D0, необходимо доказать, что **реально выбранный native operator/clock/full price** — именно данная совместно нормированная репрезентация, а не иная positive weighted completion. Но *endpoint factors, their variations and same-carrier spectral consistency* теперь вычислены, а не названы.
+
 ## 3. Вся реальная Book-цена: точная причина, почему это nonlinear Einstein SOURCE, а не только Weyl-переименование
 
 Сконструированная полная AF Book-prepared geometric component в прежних owners имеет действительный finite form
