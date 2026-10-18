@@ -24,8 +24,9 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.32](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.35](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
+[arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 and its separate finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The new owner composes the corrected same two-tick AF×scene feedback, the
@@ -43,7 +44,7 @@ exact finite sourced root for the declared feedback, not a physical
 selection theorem for the complete D0 programme. The separate `C_Y` capacity
 branch already has an exact finite-`t` vacuum transfer on its capacity profile
 (§§6.10–6.17, 6.33), while §6.70 blocks that profile in the stated
-fine-RIGHT-preserving class. Strategic §7.31 now derives a conditional joint
+fine-RIGHT-preserving class. Strategic §7.32 now derives a conditional joint
 pointer for the two pieces: the retained leaf `α` is followed by its own full
 Golden good/failure outcomes. At the common `f=q=0` source, its Shannon price
 has derivative `D H(π)+2κ Σα π_α D J_α`; with a fixed old prefix this is a
@@ -62,7 +63,28 @@ clock and resource rows in the same complete pointer. The fixed-grid
 weak-history collapse and the independent raw `#216` terminal remain separate
 gates.
 
-The new strategic §7.32 contributes a separate preparation candidate: a
+Strategic §7.34 now consumes the arbitrary-Brinkmann owner: the original
+unrestricted 40-row star variation reduces to two staggered Cartan equations
+and one discrete transverse Poisson equation for arbitrary H(u,x,y). The same
+corrected J2 source solves all 42 geometry/matter rows at every mesh for
+arbitrary nonnegative E(u) and harmonic W(u,x,y), with a conditional smooth
+Einstein–null-scalar limit. The two new checkers pass, including full symbolic
+H/link variation and actual unequal F/R source tests. This closes a broad
+constructed Einstein existence/recovery sector. It does not establish
+compulsory D0 selection: the complete upstream Book/old-history, physical
+controller, clock/PREP/observer and raw #216 obligations remain open. The
+main route has moved from building more geometries to testing the full source.
+Strategic §7.35 gives the exact criterion: after solving all distinct internal
+rows, any actual complete same-carrier price whose full source on f=q=0 is
+a_h DΣwidehat f+b_h DΣq has the entire finite Brinkmann equation with
+measured ratio b_h/a_h; its null-stress Ward identity comes from the same CAR
+matter variation. This theorem does not prove that the compulsory D0 price has
+that form. The next decisive calculation is the full D S_whole on every
+independent geometry, matter, old-history, query, work, observer, clock and
+preparation variation at this common source. A nonzero remainder is the exact
+blocker; two measured coefficients close this constructed sector.
+
+The new strategic §7.33 contributes a separate preparation candidate: a
 coherent equal-energy null sideband in the literal flat old-v8 symbol gives a
 CAR-only Rayleigh root and a nonzero null Hodge readout. It escapes the same-row
 pure-section ansatz of §6.63 without contradicting that scoped no-go. Its
