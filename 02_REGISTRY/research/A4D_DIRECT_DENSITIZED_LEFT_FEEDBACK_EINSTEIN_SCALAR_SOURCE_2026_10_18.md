@@ -255,7 +255,7 @@ f_{\star,h}=0,\quad q=\alpha^2,\quad J=s.
 \boxed{
 \partial_sJ_{\rm new}
 =\nu528K\,h^4\alpha^2
-\sum_i\pi_i\,\partial_v\Phi_t(0,v_i^{new})
+\sum_{x}\partial_v\Phi_t(0,v_x^{new})
 \ \ne0.
 }
 \tag{D14}
