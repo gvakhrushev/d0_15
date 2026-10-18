@@ -211,6 +211,27 @@ assert source_plus==times(mul(diag_n(pplus),mul(dplus,dplus)),mesh)
 assert source_minus==times(mul(diag_n(pminus),mul(dminus,dminus)),-mesh)
 assert any(v for row in source_plus for v in row)
 
+# EXACT eigenpreparation/metric-kernel Ward control with NO fitted T.
+# Six-site periodic D, Delta=D*D and normalized eigenstate v/sqrt(12)
+# distinguish an eigenstate from an on-shell conserved matter current.
+six=(2,1,-1,-2,-1,1)
+nn=len(six)
+mass_norm=sum(x*x for x in six)
+assert mass_norm==12
+assert all(2*six[i]-six[(i+1)%nn]-six[(i-1)%nn]==six[i]
+           for i in range(nn))
+geomxi=(0,1,0,0,0,0)
+a6=tuple(geomxi[(i+1)%nn]-geomxi[i] for i in range(nn))
+current=tuple(FQ((six[(i+1)%nn]-six[i])**2,mass_norm)
+              for i in range(nn))
+source6=-2*sum(a6[i]*current[i] for i in range(nn))
+div6=tuple(current[i]-current[(i-1)%nn] for i in range(nn))
+assert source6==2*sum(geomxi[i]*div6[i] for i in range(nn))
+assert source6==FQ(1,2)
+# Translation invariant thermal density has circulant D*tau*h'(Delta)*D
+# and constant diagonal; sum_i D xi_i=0, so no thermal source here.
+assert sum(a6)==0
+
 print(json.dumps({
     "terminal":"PASS: exact Q(phi) sourced feedback/isocoupling",
     "golden_test_z":"p^2 (research evaluation, not physical selection)",
