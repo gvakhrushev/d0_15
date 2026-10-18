@@ -163,6 +163,22 @@ assert comm[0][0] == comm[1][1] == 0
 assert sum((W(L).value(),W(L3).value())[i]*comm[i][i]
            for i in range(2))==0
 
+# Exact full-metric-null source discriminator on a 2x2 eigenpreparation.
+# Delta=diag(1,3); rho=diag(1,0), tau=diag(1/4,3/4),
+# h'=I. A=rho-tau=diag(3/4,-3/4) commutes with Delta.
+# A true conjugacy direction [K,Delta] is symmetric/offdiagonal and
+# has ZERO source; the spectral diagonal direction has 3/4 source.
+from fractions import Fraction as FQ
+At=(FQ(3,4),-FQ(3,4))
+commutator_delta=((0,2),(2,0))
+metric_diagonal=((1,0),(0,0))
+source_offdiag=sum(At[i]*commutator_delta[i][i] for i in range(2))
+source_diagonal=sum(At[i]*metric_diagonal[i][i] for i in range(2))
+assert source_offdiag==0
+assert source_diagonal==FQ(3,4)
+# The spectral pinch of the first direction is zero, whereas the
+# second is unchanged: no Hessian inverse or spectral-gap premise.
+
 print(json.dumps({
     "terminal":"PASS: exact Q(phi) sourced feedback/isocoupling",
     "golden_test_z":"p^2 (research evaluation, not physical selection)",
