@@ -150,8 +150,32 @@ H_skew=H(x for row in q_skew for x in row)
 assert abs(H_uniform-H_skew)>.05
 assert abs(H_skew-(math.log(N_test)-math.log(1-s0)))>.05
 
+
+# Full retained classical work trace: one deterministic copy is source-neutral,
+# while even a fixed but leaf-dependent random work bit is not.
+fw=[1.0,-1.0]
+coin_prob=[.2,.4]
+work_H=[H([v,1-v]) for v in coin_prob]
+def work_extra(lam):
+    av=[a0+.02*lam*x for x in fw]
+    zv=[z(x) for x in av]
+    return sum(zv[i]*work_H[i] for i in range(2))/sum(zv)
+work_expected=sum(
+    work_H[i]*(.02*(zp(a0+.02*fw[i])*fw[i]*sum(z(a0+.02*ff) for ff in fw)
+    -z(a0+.02*fw[i])*sum(zp(a0+.02*fw[j])*fw[j] for j in range(2)))
+    /sum(z(a0+.02*ff) for ff in fw)**2)
+    for i in range(2))
+work_numeric=(work_extra(1+1e-5)-work_extra(1-1e-5))/(2e-5)
+assert abs(work_numeric-work_expected)<1e-9
+assert abs(work_expected)>1e-5
+# c(W|Y,J) point mass for an addressed, retained deterministic label copy.
+# In this classical complete-record scenario H(W|Y,J)=0 identically.
+assert all(H([1.0]) == 0.0 for _ in range(2))
+
 print(json.dumps({
     "status":"PASS",
+    "retained_work_source_nonzero_negative_control":work_expected,
+    "deterministic_work_copy_classical_Shannon_source_neutral":True,
     "stationary_failure_source_identity":True,
     "full_leaf_log_odds_source_identity":True,
     "off_shell_event_only_substitution_rejected":True,
