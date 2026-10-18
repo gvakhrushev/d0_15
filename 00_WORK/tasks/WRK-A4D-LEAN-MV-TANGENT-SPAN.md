@@ -7,6 +7,7 @@ Base: `main`
 Branch: `wrk/a4d-lean-mv-span`
 Primary artifact: `02_REGISTRY/research/sources/d0_rank_lean_mv_span_2026-10-16/RESULT_RU.md`
 Execution: `GitHub-first`
+Assembly: `WRK-A4D-LEAN-MV-TANGENT-SPAN`
 
 ## R08. Ранговый сертификат
 

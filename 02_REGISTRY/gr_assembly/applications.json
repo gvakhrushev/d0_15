@@ -1,0 +1,319 @@
+{
+  "schema": "d0-gr-applications/1",
+  "results": [
+    {
+      "id": "normal-chart-estimator",
+      "owner": "existing CONTROL/main research owner",
+      "statement": "The centered normal-chart estimator reconstructs -2G with O(epsilon_N^2) for the stated smooth Lorentz inputs.",
+      "interface": "normal-chart-estimator-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {},
+      "evidence": [
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/ATORUS_NORMAL_JET_EINSTEIN_BRIDGE.md",
+          "sha256": "ad1a72868ca3122314661695943664a5e4f7377413b416c3ccef43ea2ad531b6"
+        }
+      ],
+      "reported_state": "ACCEPT AS RESEARCH / NORMAL-JET-EINSTEIN-ESTIMATOR-REACHED"
+    },
+    {
+      "id": "metric-provenance",
+      "owner": "existing CONTROL/main research owner",
+      "statement": "The selected nondegenerate star-action quotient has Q=Theta eta Theta^T and the owned Einstein flat metric tangent.",
+      "interface": "star-metric-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {},
+      "evidence": [
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+          "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc"
+        }
+      ],
+      "reported_state": "Main-owned metric provenance; global all-mode elimination remains obstructed."
+    },
+    {
+      "id": "smooth-parametrix",
+      "owner": "existing CONTROL/main research owner",
+      "statement": "The fixed smooth realization has the stated Fourier-tail, normal-center and IR parametrix controls; exact coupled normal rescue remains open.",
+      "interface": "star-metric-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {},
+      "evidence": [
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
+          "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a"
+        }
+      ],
+      "reported_state": "PARTIAL / refinement-uniform full coupled stationary estimate unresolved"
+    },
+    {
+      "id": "phase-count-counterexample",
+      "owner": "existing CONTROL/main research owner",
+      "statement": "At (-1,-1,i,i) the actual character Hessian has exact rank 22 and nullity 2, refuting the proposed phase-count rule which predicts 4.",
+      "interface": "resonance-divisor-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {},
+      "evidence": [
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md",
+          "sha256": "2a688da86de46be7c2220b8a1fe00e13d8e9b5535805ed59c9052823db5cfd8e"
+        }
+      ],
+      "reported_state": "Exact finite counterexample on main; full divisor classification remains open."
+    },
+    {
+      "id": "endpoint-probe-law",
+      "owner": "registered native response research owner #334",
+      "statement": "Under the named endpoint hypotheses, the finite action contrast reconstructs the geometric Einstein observable with O(h/epsilon+epsilon^2), hence O(h^(2/3)) at epsilon=h^(1/3).",
+      "interface": "endpoint-probe-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "metric_pencil": "One fixed smooth periodic oriented/time-oriented nondegenerate metric, smooth solder and smooth symmetric probe in a compact Gram section.",
+        "endpoint_domain": "h=1/L, L in 4N; endpoint log bounds Rh and all 24 physical Euler residual bounds Mh^2, for fixed R,M.",
+        "literal_action": "The unchanged literal naked-star counting action and the owner curvature/index/density convention."
+      },
+      "evidence": [
+        {
+          "ref": "180ddd187b76035b83ba784ce3c0844f3192ba7d",
+          "path": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/finite_probe_completion.md",
+          "sha256": "77079fb2fa8da001ca259ebef432ae7001a15d18f73cde04b8ba3380b9b1cbcf"
+        }
+      ],
+      "reported_state": "Published analytic observable theorem; native admission and the original raw terminal remain open."
+    }
+  ],
+  "applications": [
+    {
+      "id": "endpoint-probe-to-geometric-law",
+      "result": "endpoint-probe-law",
+      "obligation": "probe_law",
+      "method": "direct",
+      "consumer_location": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#two-linked-scientific-fronts",
+      "hypothesis_map": {
+        "metric_pencil": {
+          "target_hypothesis": "metric_pencil"
+        },
+        "endpoint_domain": {
+          "target_hypothesis": "endpoint_domain"
+        },
+        "literal_action": {
+          "target_hypothesis": "literal_action"
+        }
+      },
+      "review": {
+        "state": "proposed"
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "id": "phase-count-shortcut",
+      "result": "phase-count-counterexample",
+      "interface": "resonance-divisor-v1",
+      "work_key": "phase-count-nullity-shortcut",
+      "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+      "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+      "review": {
+        "state": "proposed"
+      },
+      "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+      "question": {
+        "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+        "assumes": []
+      }
+    }
+  ],
+  "migration": {
+    "constitutive": {
+      "result": "legacy:constitutive",
+      "obligation": "constitutive"
+    },
+    "native_sector": {
+      "result": "legacy:native_sector",
+      "obligation": "native_sector"
+    },
+    "canonical_archive_gate": {
+      "result": "legacy:canonical_archive_gate",
+      "obligation": null
+    },
+    "affine_profile_bridge": {
+      "result": "legacy:affine_profile_bridge",
+      "obligation": null
+    },
+    "homogeneous_parent_bridge": {
+      "result": "legacy:homogeneous_parent_bridge",
+      "obligation": null
+    },
+    "signed_quadratic_gram_bridge": {
+      "result": "legacy:signed_quadratic_gram_bridge",
+      "obligation": null
+    },
+    "literal_flux_joint_gate": {
+      "result": "legacy:literal_flux_joint_gate",
+      "obligation": null
+    },
+    "weighted_trace_volume_bridge": {
+      "result": "legacy:weighted_trace_volume_bridge",
+      "obligation": null
+    },
+    "free_linear_lift_gate": {
+      "result": "legacy:free_linear_lift_gate",
+      "obligation": null
+    },
+    "weighted_compensator_full_gate": {
+      "result": "legacy:weighted_compensator_full_gate",
+      "obligation": null
+    },
+    "volume_only_native_bridge": {
+      "result": "legacy:volume_only_native_bridge",
+      "obligation": null
+    },
+    "probe_law": {
+      "result": "legacy:probe_law",
+      "obligation": "probe_law"
+    },
+    "record_arrow": {
+      "result": "legacy:record_arrow",
+      "obligation": null
+    },
+    "contrast_refinement_transfer": {
+      "result": "legacy:contrast_refinement_transfer",
+      "obligation": "contrast_refinement_transfer"
+    },
+    "matter_source_ward": {
+      "result": "legacy:matter_source_ward",
+      "obligation": "matter_source_ward"
+    },
+    "on_shell_stationarity": {
+      "result": "legacy:on_shell_stationarity",
+      "obligation": "on_shell_stationarity"
+    },
+    "gauge_range": {
+      "result": "legacy:gauge_range",
+      "obligation": "gauge_range"
+    },
+    "joint_nonlinear_solve": {
+      "result": "legacy:joint_nonlinear_solve",
+      "obligation": "joint_nonlinear_solve"
+    },
+    "soundness": {
+      "result": "legacy:soundness",
+      "obligation": "soundness"
+    },
+    "recovery": {
+      "result": "legacy:recovery",
+      "obligation": "recovery"
+    },
+    "physical_constraints": {
+      "result": "legacy:physical_constraints",
+      "obligation": "physical_constraints"
+    },
+    "positive_gr": {
+      "result": "legacy:positive_gr",
+      "obligation": "positive_gr"
+    },
+    "binding_diagnostics": {
+      "result": "legacy:binding_diagnostics",
+      "obligation": null
+    },
+    "cochain_refinement_construction": {
+      "result": "legacy:cochain_refinement_construction",
+      "obligation": null
+    },
+    "composed_frozen_readout": {
+      "result": "legacy:composed_frozen_readout",
+      "obligation": null
+    },
+    "reference_weight_lorentz": {
+      "result": "legacy:reference_weight_lorentz",
+      "obligation": null
+    },
+    "reference_weight_range": {
+      "result": "legacy:reference_weight_range",
+      "obligation": null
+    },
+    "spectral_flux_descent": {
+      "result": "legacy:spectral_flux_descent",
+      "obligation": null
+    },
+    "vector_commutator_source": {
+      "result": "legacy:vector_commutator_source",
+      "obligation": null
+    },
+    "mixed_parent_pointwise_source": {
+      "result": "legacy:mixed_parent_pointwise_source",
+      "obligation": null
+    },
+    "verification_process_refinement": {
+      "result": "legacy:verification_process_refinement",
+      "obligation": null
+    },
+    "local_source_quotient_range": {
+      "result": "legacy:local_source_quotient_range",
+      "obligation": null
+    },
+    "canonical_phase_variational_source": {
+      "result": "legacy:canonical_phase_variational_source",
+      "obligation": null
+    },
+    "logdet_source_class": {
+      "result": "legacy:logdet_source_class",
+      "obligation": null
+    },
+    "convex_profile_bridge": {
+      "result": "legacy:convex_profile_bridge",
+      "obligation": null
+    },
+    "direct_coordinate_local_operator": {
+      "result": "legacy:direct_coordinate_local_operator",
+      "obligation": null
+    },
+    "bounded_logdet_flat_transfer": {
+      "result": "legacy:bounded_logdet_flat_transfer",
+      "obligation": null
+    },
+    "native_point_volume_recovery": {
+      "result": "legacy:native_point_volume_recovery",
+      "obligation": null
+    },
+    "native_centered_metric_lift": {
+      "result": "legacy:native_centered_metric_lift",
+      "obligation": null
+    },
+    "native_transported_connection": {
+      "result": "legacy:native_transported_connection",
+      "obligation": null
+    },
+    "native_connection_action": {
+      "result": "legacy:native_connection_action",
+      "obligation": null
+    },
+    "native_coupled_hodge_scale": {
+      "result": "legacy:native_coupled_hodge_scale",
+      "obligation": null
+    },
+    "native_weighted_dirac": {
+      "result": "legacy:native_weighted_dirac",
+      "obligation": null
+    },
+    "native_mixed_spectral_contrast": {
+      "result": "legacy:native_mixed_spectral_contrast",
+      "obligation": null
+    }
+  }
+}

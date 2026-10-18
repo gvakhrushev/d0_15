@@ -7,6 +7,7 @@ Base: `main`
 Branch: `wrk/a4d-w2-primitive-jet-lean`
 Primary artifact: `02_REGISTRY/research/sources/d0_w2_primitive_jet_lean_2026-10-16/RESULT_RU.md`
 Execution: `GitHub-first`
+Assembly: `WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION`
 
 ## N04. Lean: перенос всех конечных программ и их первых jets
 

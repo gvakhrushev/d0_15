@@ -54,9 +54,13 @@ execution uses the existing `00_WORK` manifest, briefs and dispatch flow.
 
 These are pinned input snapshots, not live runtime status or a claim that all
 research is independently reproduced. Use live PR dispatch for current heads.
-The [research dependency graph](https://github.com/gvakhrushev/d0_15/blob/f0a6a85111c28f21a18ebf6ad9276eaa713abbd8/02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json)
+The [historical research dependency graph](https://github.com/gvakhrushev/d0_15/blob/f0a6a85111c28f21a18ebf6ad9276eaa713abbd8/02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json)
 retains scientific history; its root source pin and older next-step prose lag
-later packets. It is not copied into main as a competing current task registry.
+later packets. The [composition layer](../gr_assembly/README.md) preserves all
+44 historical IDs in a frozen source catalogue, separately from the current
+obligations and reviewed applications. It does not import historical statuses
+as accepted premises or task authorization. This page remains the scientific
+route; `00_WORK` and live PRs remain the execution authorities.
 
 ### Two linked scientific fronts
 
@@ -86,10 +90,23 @@ not supply an independently fixed-source joint metric/matter solution.
    independent mathematical work on declared inputs.
 3. Executors work in isolated branches/worktrees; the integrator substitutes
    each usable result immediately and records the remaining premise in the
-   existing parent memo/PR. No parallel progress registry or new census is needed.
+   existing parent memo/PR. Its assembly application names the exact substitution,
+   carries every remaining hypothesis and pins independent acceptance. The
+   generated overview derives composition state from those applications; it
+   does not create another task queue or demand a new census.
 
-Reuse the existing #310 execution for its registered native/response obligation;
-do not open a competing execution under a new label. #202 keeps its full-affine
+Use `python tools/gr_assembly.py next` for live owners and pending scoped intake,
+`why positive_gr` for the missing composition premises, and `search QUERY` or
+`attempts QUERY` for existing scoped work. An input mismatch is resolved before
+dependent execution; it does not stop an independent conditional lemma on the
+declared interface. The original raw contract has its own goal and completion
+premise. Neither its classification nor a bridge/passport is positive native GR.
+
+Resolve `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE` with the live dispatcher
+and continue its existing execution. Historical #310 closed without merge;
+its published input snapshots remain evidence, not a runtime to reopen. The
+composition binding preserves the original raw terminal alongside the positive
+native route. Do not open a competing execution under a new label. #202 keeps its full-affine
 stationarity scope; #317 keeps its full complex stratification scope. Use their
 proved inputs, and request only the additional lemma consumed by the current
 argument. Do not falsely retire them or require an exhaustive classification
