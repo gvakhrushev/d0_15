@@ -24,6 +24,29 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-18
 
 Current full-source consumer:
+[strategic7.22](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.66–6.71](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The SAME retained failure word gives a positive mean/MAP Euler equivalence
+on all full inputs at fixed prefix/normalizer. Its actual D3 finite-copy
+effect still has a two-copy preparation normal invisible to all one-copy
+readings; address the full correlated-preparation source/recovery rather
+than choosing another polarization. A NEW interval-certified HJR root on
+the ORIGINAL carrier/reference128 uses a rank128 parity graph with three
+energies; full-CAR moments solve all local metric/link/observer rows at
+fixed calibration. Literal Golden recording distinguishes its free odd
+coherences. No AF2, dropped J multiplicity, selected physical price or
+Einstein matter interpretation is introduced. The C_Y attachment is already
+consumed in6.33 and keeps its own native PREP/Book-price obligation.
+The two-Hodge definite quadratic clock sector now has an EXACT
+correlated eigenpreparation and quantitative marginal/source recovery.
+The next transfer retains full Lorentz/site/RIGHT and coherent grade14,
+which a pureclock qutrit does not cover. Actual spectral-rank/overlap and
+source-jet criteria are given for the constrained-query matter operator.
+Next derive ONE actual complete history/price/PREP/clock map and its
+controlled correlated joint solutions/refinement. Physical GR and raw#216
+remain open; current disjoint05767255 is integrated.
+
+Preceding full-source consumer:
 [strategic§7.21](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source§§6.63–6.65](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The locally pure Hodge/clock section has a uniform oldflat-v8

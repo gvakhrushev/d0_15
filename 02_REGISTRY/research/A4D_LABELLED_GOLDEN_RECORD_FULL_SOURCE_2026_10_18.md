@@ -5821,6 +5821,406 @@ Book цену без actual full-source mixed jets, stationary normal descent,
 physical continuum domain и self-stress coupling. Это конкретный следующий
 bootstrap test, а не разрешение поставить Einstein source извне.
 
+### 6.66. Одна полная pointer law: mean и MAP имеют одинаковый Euler
+
+Input31f7926; concurrent05767255 сохранён вместе с его narrow Lean и
+источником в kernel endpoint-average. Его probe s не объявляется
+метрическим полем: здесь нужны actual sources конкретного прежнего word.
+
+Для ТОГО ЖЕ E_N из6.62/6.64 и уже исполненных bad-seed coins положим
+β_z=(p⁶)^(#0)(4p³)^(#1), Σβ_z=1, maxβ_z=(4p³)^T.
+Полные retained Kraus maps имеют вид L_good=√E_N и
+L_z=α_z√(I−E_N), |α_z|²=β_z; настоящие signed amplitudes α_z
+не заменяются положительными. Quantum data/work retained. Эти effects
+суммируются в I на ВСЕХ input columns. Для arbitrary correlated full
+input R_N, g=Tr(E_N R_N), pointer law ровно
+
+    q_good=g, q_bad,z=(1−g)β_z,
+    H_det=h₂(g)+(1−g)H_β, H_β=T h₂(p⁶).          (13gz)
+
+Born normalizer здесь тождественно1, включая jets. Это не равенство
+ещё не идентифицированного Book raw normalizer единице. При уже
+выбранном strict-good gap g>(1−g)β_z для всехz получаем
+
+    H_det′=Σ_z β_z log[(1−g)β_z/g]<0,
+    κ(g)=g[H_β−log((1−g)/g)]>0,
+    DH_det=κ(g)D[−logg].                         (13ha)
+
+Следовательно detector-only mean и MAP имеют ТОЧНО одинаковые Euler
+zeros на всём actual full input carrier, включая entangling preparation,
+query, metric и continuous-clock tangents данного фиксированного word.
+Это положительный operator/equation consumer, не требование равенства
+действий и не назначение новой цены. На Dg=0 Hessians κ-пропорциональны;
+вне critical set D²H_det=κD²(−logg)−(κ′/g)Dg⊗Dg,
+κ′=H_β−log((1−g)/g)+1/(1−g). Если E_N≥μI и
+r_gap=(1−μ)(4p³)^T/μ<1, то κ≥−μlogr_gap>0. Это bound данного
+finite word; при refinement μ и κ могут исчезать. Approximate source
+error делится также на настоящий κ и исходный physical signal.
+
+**Полная история не потеряна.** Для common fresh apparatus после
+старого prefix с actual law π_y имеем q_(y,s)=π_y q_s. Тогда
+DH_joint=DH(π)+κD(−logg), а strict MAP source равен
+D(−logπ_max)+D(−logg). Остаток DH(π)−κD(−logπ_max) вообще ненулевой.
+Conditional banks g_y несут все π_y′ и невыигрышные g_y′ terms.
+На correlated старом input исходная формула есть
+q_(y,s)=Tr[R_0(B_y⊗L_s*L_s)], без фиктивного product factorization.
+Все настоящие word jets вычисляются product rule:
+q_w′=Tr(R_0′B_w+R_0B_w′),
+q_w″=Tr(R_0″B_w+2R_0′B_w′+R_0B_w″), B_w=K_w*K_w.
+Anchored-query normalization и input whitening denominator из6.64
+сохраняют собственные first/second terms; discrete N,T не варьируются
+как continuous поля. Дополнительное измерение work меняет сам cut.
+
+Если independently owned SAME Book histories действительно дают
+μ_w=φ^(−C_w), w_w=𝒩q_w и Info_w=log_φ(w_w/μ_w), то ТОЧЕЧНО
+
+    C_w−Info_w=[−logq_w−log𝒩]/logφ,
+    E_q(C−Info)=[H(q)−log𝒩]/logφ.               (13hb)
+
+Moving/noncanonical code сокращается ДО expectation; остатка E_q DC
+здесь нет. Это не делает PREP/copy/controller histories бесплатными:
+они сначала должны попасть в этот же history/weight/pointer map.
+Moving −Dlog𝒩 добавляется обеим ценам без множителяκ, поэтому также
+остаётся своим Euler. Book01 squared-norm/Born theorem определяет law
+заданного effect frame; Book03 §03.3.0a–b говорит most-probable history,
+но не отождествляет coarse pointer с complete γ. Golden conditional
+expectation и ActionProtocol не содержат этого физического cost-map.
+Новая(13ha) снимает aggregation препятствие на stated fixed-prefix
+domain, сохраняя actual native/Book binding и все остальные источники.
+
+Повторно присланный C_Y текст побайтно уже сохранён в6.33
+(SHA d5706efac0dc8791f010557810a1e1ad835b3fdc2f8578432e5f13f883bd2570).
+Его CNOT/address theorem и finite-t capacity vacuum consumer остаются
+6.13/6.15–17. Они не перенесены на другой детектор. В частности C_Y
+capacity law имеет moving conditional success proportions и ties;
+premises(13gz–ha) там не выполнены. Γ=logD/logφ — stationary entropy
+envelope своего preparation chart, не доказанный strict MAP. Его
+собственный nonlinear Euler bridge уже есть; actual native preparation
+этого профиля и полная Book цена остаются указанным в6.33 переходом.
+
+### 6.67. Именно SAME D3 имеет ненулевой two-copy preparation source
+
+Теперь проверяется E_N из6.64, а не diagnostic counter из6.62.
+Зафиксируем globally defined marginal-feature polynomial g_ℓ на ВСЕХ
+complex-Hermitian density matrices. Для любого Hermitian effect E с
+Tr(Eσ^⊗N)=g_ℓ(σ) на этой области permutation twirl T_N(E) единственен
+и равен E_N. Действительно, homogeneous zero polynomial на positive
+cone имеет все symmetric Hermitian tensor coefficients нулевыми.
+Agreement лишь на real/physical code manifold этой uniqueness не даёт.
+
+В scalar-free vacuum/null-star codepoint A_h=M_h=0 actual D1 kinetic
+operand равен M_h(φ)=φᵀL_hφ, L_h=L_hᵀ≠0. Constant mode может лежать
+в kerL_h; spatial forward gradient даёт ненулевой quadratic test.
+Из ТОГО ЖЕ D3, при r=p³/4, следует
+
+    g_ℓ=g₀[1−c_* φᵀL_hφ+O(φ⁴)],
+    c_*=2ν528K g_t(r)λ_mat(r)≠0.                 (13hc)
+
+Проверка использует оба прежних Q/R factors, не новый scalar F:
+b(v)=(p+p²t²v)², B=4b(1−b), L=4p³,
+Q=1−rB, R=1−r(L+p⁶B), G(v)=(1−p⁶)^4 Q²R².
+При v=0: (G′/G)(0)=−2m_t,
+m_t=8rp⁶t²(1/Q₀+p⁶/R₀)=g_tλ_mat≠0. Полные integer multiplicities
+затем умножают log. Taylor degreeℓ≥2 сохраняет именно этот второй jet.
+
+Пусть Ψ — полная purification clock/three-form input из13gi при
+ψ₀=ψ₄=0, со всеми AF/RIGHT/reference128. Её actual scalar observable
+A_x=S(|x0><x1|+transpose)/(2√p) имеет a_x=A_xΨ вне исходного
+support, <a_x,a_y>=δ_xy β_x. На owned uniform section β_x=S/4>0.
+Query χ_V и его reference не меняются. Для C_N=binom(N,2) положим
+
+    u₂=C_N^−1 Σ_(r<s),xy (L_h)_xy
+                 a_x^(r) a_y^(s) Ψ^(other copies),
+    ||u₂||=||Β^½ L_h Β^½||_F/√C_N>0,
+    Π₂(E_N⊗I_RIGHT)(χ_V⊗Ψ)^⊗N
+                 =−g₀c_* χ_V^⊗N⊗u₂.           (13hd)
+
+Π₂ оставляет query stateχ_V на каждой копии и ровно две scalar-excited
+matter copies. Centered query factors убиваются query projection;
+каждый centered scalar factor действует на ОТДЕЛЬНОЙ copy. Поэтому
+matter degree≥4 не может дать этот сектор, и quadratic coefficient
+не сокращается higher terms. Это proof для marginal-feature extension
+6.64; другая extension off code manifold требует отдельного источника.
+
+Оба vectors в matrix element(13hd) invariant под совместными data/ref
+permutations. Потому для ВСЕХ effects с тем же all-mixed-IID g_ℓ
+matrix element с u₂ тот же: nonsymmetric zero-IID freedom и Naimark
+completion его не исправляют. В частности [E,ρ_code^⊗N]≠0.
+Data-only real skew generator T=P₂B_hP₀−P₀B_hP₂,
+B_h=C_N^−1Σ_(r<s),xy L_xy A_x^(r)A_y^(s), реализует TΨ^⊗N=u₂.
+exp(sT) сохраняет весь joint RIGHT/reference EXACTLY, а первые
+вариации ВСЕХ one-copy marginals равны0. Поэтому additive one-copy
+old costs, current и clock readings не дают встречного first source.
+Это допустимая normal лишь при stated full-preparation domain;
+её физическое исполнение не постулируется. Для unit state velocity
+
+    sup|DS_mode|≥2|c_*| ||Β^½L_hΒ^½||_F
+                       /(logφ √binom(N,2))>0.   (13he)
+
+По(13ha) тот же normal ненулевой и у полной refined detector mean.
+Таким образом полученный physical two-jet не доказывает preparation
+root; менять polarization того же g недостаточно. Настоящие multi-copy
+Book costs/constraints могут иметь собственный source и здесь не
+объявлены нулевыми. Bound имеет1/N: это finite-N obstruction, НЕ
+refinement no-go. Correlated exact stationary preparation с controlled
+finite marginals/source — содержательный следующий recovery consumer.
+
+### 6.68. Положительный SAME-price joint root на исходном carrier
+
+Чтобы не оставлять preparation только препятствием, построим exact
+finite control прежней H+J+R без добавления AF2 или иных priced labels.
+На L8 берём K={±1}⁴ из16 momenta. K⊗CAR16 имеет две parity halves
+E_± dimension128. Для unitary U:E_-→E_+ положим
+
+    W_U=2^−½(I;U*), P_U=½[[I,U],[U*,I]],
+    C_U=W_U/√128, C_U*C_U=I128/128,
+    ρ_U=P_U/128, Trρ_U X=Tr[(I_K/256)X]         (13hf)
+
+для КАЖДОГО parity-even full operator X, включая произвольные local
+geometric/link/observer jets старого Δ. Full exterior D и его field jets
+odd; Δ и actual α_i currents even. Virtual rank256 bath справа не
+может сам быть purified reference128: actual rank128 graph слева
+решает именно эту проблему, сохраняя все original grades и вариации.
+
+Flat G=(d−o)I+o11*, Δ(k)=(z*Gz)I16 имеет λ(k)=λ(−k).
+U смешивает лишь equal-energy k↔−k и CAR parities, откуда ΔC_U=C_UΞ,
+Ξ=Ξ*, и выполнен весь canonical fixedRIGHT preparation Euler.
+Есть ТРИ energy classes с counts2,8,6; Ξ не scalar. Это не full-sphere
+common-eigenvalue root. Для произвольного correlated FULLRIGHT σ
+дополнительно нужно [σ,I_oldAF⊗Ξ]=0; один uniform ref marginal
+этого не доказывает. Никакого нового AF identity factor не добавлено.
+
+С χ=2−√2 и h=1/8 uniform K Rayleigh cost равен
+R_K=(4χd+3χ²o)/h². В ПРЕЖНЕЙ цене сохраняются n8192,
+α=p²/8192, β=2p², z=2^−20, feedback multiplicity16×128=2048
+и весь workspace thermal factor. Новые source equations:
+
+    F_i=μ_i−2048βr_i−v_i=0, v=(256χ,192χ²),
+    μ_i=Σ_k e_k f_i(k)/B_k /Σ_k e_k,
+    r_i=Σ_k[z e_k/(1−z+z e_k)]f_i(k)/B_k,
+    B_k=1−α[f_1(k)d+f_2(k)o], e_k=B_k^16384.   (13hg)
+
+Все4096 modes сгруппированы в119 exact Q(√2) orbits. Новый rational
+centre d=0.01949758334103003317092566892816507257820191136677009607,
+o=0.00040050669416411222018794758451775636074764672518266514
+имеет interval certificate radius10^−12. Явный rational inverse-Jacobian
+preconditioner в checker даёт row contraction<10^−6 и self-mapping,
+поэтому внутри box существует ЕДИНСТВЕННЫЙ root этих двух equations.
+G transverse eigenvalue>.019, longitudinal в(.020,.021), все B>p³,
+coefficient dilation strict. Старый shellroot сюда не переносится.
+Добавление AF2 удвоило бы J, сохраняя H лишь с log2/β shift;
+negative control это отвергает вместо молчаливого смены цены.
+
+**Все local geometric rows.** Even-source identity(13hf) переносит
+источник actual graph к translation-invariant virtual bath. S4 symmetry
+сводит10 homogeneous metric covectors к двум(13hg); local sources
+равны homogeneous/S. Пусть W(k) — их combined heat/feedback/R weight
+на один CAR component, R contribution1_K/256. Из обеих equations
+следует M_sr=ΣW z_s* z_r=0. Inversion k↔−k делает M symmetric real
+и B_s=ΣW z_s* real. Re z_s*=−h|z_s|²/2 даёт
+B_s=−hM_ss/2=0 и ΣW z_s* exp(ik_rh)=B_s+hM_sr=0.
+Full-CAR identity Tr(c_i* c_j ΓN)=4(δijTrN−N_ij) затем убивает
+каждый proper-link covector, включая24 Lorentz rows. Это positive
+adjoint extension прежнего full-Lorentz owner, не frozen inverse-return.
+Его actual observer/whitening jets сводятся к тем же δu/endpoint δM.
+При fixedRIGHT geometry tangent используем horizontal δC=0,
+δΨ=−I^−1δIΨ; constrained preparation Euler убивает все остальные
+Gram-preserving δC. Нельзя писать (Δ−R)C=0 при трёх energies.
+Даже local even whitening term отдельно равен0, поскольку onsite bath
+Σ_K(λ_k−R_K)=0. Affine b отсутствует в этой цене, не решая иной b-source.
+
+Итак есть exact finite joint-critical family ЭТОЙ условной цены по
+metric/link/observer/canonical-preparation при FIXED β/ell/n/z.
+Это не stationary calibration/clock-scale theorem, stable minimum,
+native PREP admission, curved Einstein family или raw#216 closure.
+
+### 6.69. Та же Golden запись видит свободную coherence joint root
+
+Зададим U явно: default (k,b_even)→(k,b xor2); для k_+=(1,1,1,1),
+k_-=−k_+ заменим два disjoint blocks, c=cosτ,s=sinτ:
+rows[(k+,0),(k−,3)], cols[(k+,2),(k−,1)] имеют [[c,s],[s,−c]],
+rows[(k−,15),(k+,3)], cols[(k−,13),(k+,1)] имеют [[c,is],[−is,−c]].
+Они unitary и смешивают только equal λ. При θ=2π(u+v+x+y)
+local normalized CAR density имеет ρ01=s exp(2iθ)/256 и
+ρ15,1=is exp(−2iθ)/256. Все even readings и цена(13hg) неизменны.
+Первый grade block остаётся I4/16: это density control, не pure P1 clock
+или перенос amplitude-Hodge readout на произвольное mixed state.
+
+Literal Golden occupation instrument различает его. На mode0
+G₀=√p I+p(c₀−c₀*) и N₀=c₀c₀* дают
+G₀*N₀G₀=p²I+(p−p²)N₀+p√p(c₀+c₀*).
+У literal fullStep на высоких spatial grades есть дополнительные
+OUTPUT row signs: U_record=S_sign G₀ с diagonal S_sign. Они
+коммутируют со ВСЕМИ occupation projectors, поэтому полная
+occupation law равна G₀ law для ЛЮБОГО input, не только этой семьи.
+Retaining site и все16mask outcomes получаем
+
+    q(j,0)=q(j,2)=1/(16S)−p√p sinτ cos(2θ_j)/(128S),
+    q(j,1)=q(j,3)=1/(16S)+p√p sinτ cos(2θ_j)/(128S),
+    q(j,other)=1/(16S), H_record″(0)=−p³/512<0.   (13hh)
+
+Забывание site стирает волну occupation bit: его marginal1/2.
+Полная retained-site law и её Shannon цена всё же меняются, тогда
+как oldHJR constant alongτ. Это concrete source/second-source
+различие на настоящем finite joint-root carrier, без смены J trace
+multiplicity. Additional Golden history не подменяет old128-round
+U/P и его failures; равенство Book price этой энтропии всё ещё требует
+самого history binding(13hb). Независимая физическая материя и её
+Einstein stress этим примером не назначаются.
+
+
+### 6.70. C_Y preparation: точный native-class bound вместо ещё одного профиля ёмкости
+
+Продолжение actual13an, а не новая цена или запрет управления.
+На regular H_(N+6), restricted к OLD RIGHT A_N, data decomposes
+⊕_j K_j⊗C^(d_j), dim_AF K_j=(M¹²d)_j, M=[[1,1],[1,0]].
+Data-only oldRIGHT-commutant isometry действует как O_j⊗I_(d_j).
+Её необходимый и достаточный finite критерий для двух preparations —
+равенство Gram matrices ВСЕХ multiplicity columns u_(j,b,a) по old
+right b и reference a. При равенстве Gram изометрия u→v корректно
+определена на spans и extends к orthogonal bases K_j. Для13an
+Gram entries μ_jδ_bb′δ_aa′/128 совпадают с seed; ideal oldRIGHT lift
+уже существует. Его не надо снова предполагать отсутствующим.
+
+Но фактический более узкий класс имеет собственный supply bound.
+Пусть incoming seed — CANONICAL fine trace на A_(N+6), и операции
+сохраняют ВСЮ FINE RIGHT алгебру, не только старую A_N. Это включает
+именованные left A_(N+6), scene/CAR/query placements tensor I_fineRIGHT
+и C_Y controlled from LEFT. Fresh retained work не снимает инвариант,
+пока его coupling тоже commutes fineRIGHT. Это следует из placements,
+а не устанавливается как новый физический запрет всем D0 operations.
+
+У каждого old leaf i типаj successΠ L(P_i) расположен лишь в fine
+blockj. M⁶=[[13,8],[8,5]], fine trace weights p^(N+7),p^(N+8).
+При LEFT/oldRIGHT matching точный conditional success supply поэтому
+
+    s_i≤13p⁶  (typeX), s_i≤5p⁶  (typeY),
+    s_*=2φ^(2−p)/(1+2φ^(2−p))>2p²>13p⁶.        (13hi)
+
+Последнее strictly exact: x↦2x/(1+2x) increasing, 2−p>1,
+2φ/(1+2φ)=2p², а 13p⁴<2. Reference128 trace равен1 и не добавляет
+ложного множителя. Получен obstruction actual capacity profile без
+повторения old finite-Golden transcendence proof.
+
+Даже unmatched approximants его не обходят. Для наследуемых commuting
+projectors Q_match=Σ_i L(P_i)R_old(P_i), A_match=ΠQ_match имеем
+A_match≤Σ_j Z_fine,j R_old(Z_old,j). Поэтому на ЛЮБОМ output этого
+fineRIGHT-preserving class
+
+    <A_match>≤p⁶(13W_X+5W_Y)≤13p⁶,
+    W_j=d_jμ_j, W_X+W_Y=1,
+    ||Ψ_out−Ψ_13an||≥(s_*−13p⁶)/2>0.           (13hj)
+
+Это не no-go для oldRIGHT-only13an: его больший commutant как раз
+может менять fresh right-copy indices внутри K_j. Широкий encoded
+G/CNOT compiler также не объявлен равным fineLEFT multiplication.
+Нужный следующий native actuator теперь точен: менять свежую
+fineRIGHT descendant supply на actual K_j wires, сохраняя ВЕСЬ old
+jointRIGHT/reference и учитывая собственную retained history/price.
+Пассивная лента и одна address-copy C_Y этого не дают. Уже supplied
+target seed меняет ресурс и требует его preparation provenance. Иная
+native algebra/подготовка вне named class не исключена.
+
+
+### 6.71. Коррелированный stationary consumer: точный критерий и положительный two-Hodge сектор
+
+Finite-N normal(13he) не оставляется конечным ответом. При actual
+geometry queryχ_V(g) независимая matter-preparation equation использует
+
+    A_N(g)=<χ_V(g)^⊗N|E_N|χ_V(g)^⊗N>,
+    [A_N(g),τ_N]=0, μI≤A_N≤MI.                 (13hk)
+
+Query здесь CONSTRAINED к реальному V(g), а не свободная preparation
+variable. Более сильное [E_N,τ_ALL]=0 потребовало бы свободных query
+нормалей; оно не подставляется вместо actual matter Euler. Источник
+геометрии после matter stationarity остаётся Tr[(DA_N)τ_N] и не обязан
+быть нулевым. Остальные старые цены и constraints по-прежнему добавляются.
+
+**Exact fixedRIGHT spectral criterion.** В каждом действительно
+разрешённом multiplicity block запишем τ₀=Σ_a λ_aP_a, rankP_a=r_a,
+Σλ_ar_a=1. Пусть A_N имеет mutually orthogonal spectral projectors
+R_a ТОЧНО этих ranks. Тогда τ_*=Σλ_aR_a isospectralτ₀, [A_N,τ_*]=0,
+а data unitary UP_aU*=R_a переводит исходную purification C₀ в UC₀,
+сохраняя ВЕСЬ joint RIGHT/ref Gram. Если oldRIGHT включён отдельным
+block constraint, U должен иметь именно этот commutant block form.
+Для ε_a=Tr[P_a(I−R_a)]/r_a, ε=Σλ_ar_aε_a имеем
+
+    ||τ_*−τ₀||₁≤Σλ_a·2r_a√ε_a≤2√ε,
+    ||(τ_*)_k−(τ₀)_k||₁≤2√ε.                   (13hl)
+
+Первая оценка следует из principal-angle Frobenius bound для равных
+ranks и weighted Cauchy–Schwarz. При residual
+δ_a²=Tr[P_a(A_N−e_a)²]/r_a и spectral distance≥Δ_a вне R_a
+получаем ε_a≤δ_a²/Δ_a². Нужны ACTUAL exact ranks и gaps: широкая
+полоса неверной размерности не сохраняет nontracial RIGHT spectrum.
+Малый residual не заменяет ratioδ/Δ. Dephasing quasimode внутри band
+может на порядок1 менять marginals; band projection сама не есть root.
+Native actuation и цена spectral unitary этими matrix facts не выведены.
+
+Для subset lift fixed-degree kernel H_k компрессия actual query также
+есть subset average H_k,eff(g); поэтому ||D^j A_N||≤||D^jH_k,eff||.
+Не нужно искусственно получать factorN из всех unused query copies.
+При genuinely smooth stationary τ_*(g) и δ=||τ_*−τ₀||₁, B₁=||DA_N||
+его conditional log-source отличается от Tr[(DA_N)τ₀]/q₀ не более
+B₁δ(1/μ+M/μ²). Исходный total encoder также содержит
+Tr(A_NDτ₀)/q₀, пока не доказана его тишина. Pointwise marginals не
+дают C²: нужны actual Dτ differences/reduced-resolvent estimates,
+kernel derivative bounds и собственный physical normalization.
+
+**Положительный exact stationary механизм с ОБОИМИ Hodge scalars.**
+Рассмотрим definite quadratic clock-qutrit sector с actual restricted
+A₀=|0><1|+h.c., A₄=|15><1|+h.c. На N copies положим
+H_N=Σ_(r<s)(A₀^rA₀^s+A₄^rA₄^s), N_exc=Σ_r(P₀+P₁₅)^r.
+Имеем точное операторное равенство
+
+    K_N=H_N+NI
+       =½[(ΣA₀)²+(ΣA₄)²+N_exc]≥N_exc/2.       (13hm)
+
+В symmetric SO2-radial reducing block |j> пропорциональны
+(a₀†²+a₄†²)^j(c†)^(N−2j)|vac>, j=0..floor(N/2).
+Jacobi matrix K_N имеет diagonal N+2j(N−2j), off-diagonal
+(j+1)√[(N−2j)(N−2j−1)]. Это invariant reducing block всего данного
+qutrit H_N, не только compression eigenvalue. Берём normalized trial
+с amplitudes(−r)^j, r=1−1/√N. Truncated geometric mean obeys
+<j>≤r²/(1−r²). Используя √[a(a−1)]≥a−1 на nonterminal links,
+получаем для N≥4
+
+    <K_N>≤N(1−r)/(1+r)+6r³/(1−r²)+2r≤5√N.      (13hn)
+
+Последний missing link при evenN добавляет лишь положительный
+upper-bound correction, при oddN ноль. В явном polynomial check
+числитель(5x−upper)x(2x−1), x=√N≥2, равен
+3x³+9x²−12x+4; при x=y+2 это3y³+27y²+60y+40>0.
+Минимальный eigenvector K_N в radial block существует при каждомN
+и есть ТОЧНЫЙ eigenvector полного ЭТОГО qutrit H_N. Его energy
+≤min(N,5√N); по(13hm) <N_exc>≤10√N. Permutation symmetry и
+pure-state fidelity bound дают для fixedk
+
+    ||ρ_k−|clock><clock|^⊗k||₁
+           ≤min(2,2√(10k) N^−1/4).             (13ho)
+
+Таким образом product-code normal не запрещает exact correlated
+preparation с восстановлением локального clock code. Для narrow actual
+compression вида A_N(g)=a(g)I+b(g)H_N/binom(N,2) этот eigenvector
+не зависит отg и stationarity exact. Его H_N/binom(N,2) eigenvalue
+лежит в[−2/(N−1),0], так что probability и geometric query2jet
+отличаются отa(g) на≤2||b||C²/(N−1). Log-source сохраняет настоящий
+positive-floor divisor. Это constructive stationary/source family,
+а не вывод корня из vanishing residual или искусственно free query.
+
+**Точная оставшаяся область.** Данный quadratic sector НЕ объявлен
+равным всему A_N(g) из6.64. Нужен перенос на Lorentz-indefinite L_h,
+все site/AF/RIGHT blocks, exact spectral multiplicities и higher-degree
+g_ℓ terms. Они не являются globally O(1/N) operators лишь оттого, что
+scalar amplitudes нулевые в одной точке. Также actual vacuum carrier
+имеет coherent m₀=√p|1>+√(1−p)|14>, а не pureclock: grade14 —
+DIRECT-SUM coherence, её нельзя tensor-append как spectator к этому
+qutrit eigenstate. Полный old price/Book source может дополнительно
+менять normal equations. Поэтому(13hm–ho) снимает конкретное
+quadratic product-preparation препятствие и даёт recovery mechanism,
+но full-code/source transfer, native PREP и forced ОТО остаются работой.
+
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

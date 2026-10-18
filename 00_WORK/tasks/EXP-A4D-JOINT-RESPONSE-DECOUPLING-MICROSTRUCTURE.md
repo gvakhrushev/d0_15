@@ -12,6 +12,29 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: complete SAME-law price and correlated preparation consumer
+
+Input31f7926, companion05767255; previous goal turn PROGRESS. The same
+owned full-source/strategy/primary/route/checker paths continue in Draft334.
+Read-only /tmp premises now consume the SAME Choi/D3 word: (1) complete
+retained bad-seed/prefix/Born/Book law and equation-level mean/MAP relation;
+(2) actual scalar-kinetic two-copy normal of its globally specified polynomial,
+including all RIGHT/ref and possible representation freedom; (3) a positive
+rank128 parity-graph preparation on the ORIGINAL site×CAR16 carrier with
+its own NEW same-price K-bath metric/root and full proper-link/observer
+transfer. Parent consumer6.64→full price/source→joint recovery. Preserve
+fixed-calibration scope, all old feedback trace factors, complete history
+and full correlated normals. Root alone edits shared paths. Smallest
+checks: exact full-law derivative and actual quadratic-sector normal,
+one interval box for the NEW two-variable source, and full-CAR trace/
+literal fullStep occupation controls. No new action, frozen matter, AF2,
+independent task or expensive unchanged-suite replay. Consume the actual
+C_Y fineRIGHT supply bound and the correlated TWO-Hodge radial
+eigenpreparation/source estimate; transfer preserves coherent grade14
+and all Lorentz/site/RIGHT and nonlinear terms. Continue with native
+Book/PREP admission and controlled correlated-state recovery; physical GR
+and original raw#216 are not promoted by this finite checkpoint.
+
 ### 18 October: actual preparation Euler and same-source nonlinear stress
 
 Input318f0891; previous goal turn PROGRESS: full archived history,

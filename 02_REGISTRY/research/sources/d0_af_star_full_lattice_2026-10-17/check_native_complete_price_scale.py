@@ -1756,6 +1756,520 @@ def targeted_choi_source_controls(root=None):
       source_scope='Exact first/second source equality is on the supplied internal-principal-frame scalar input section. It does not assert independent observer/preparation normals, coordinate top-form conversion, unknown site-weight access, physically forced t, native controlled-query/PREP/copy admission or equality with full Book history/oldHJR.')
 
 
+def targeted_full_failure_euler(root=None):
+    from pathlib import Path
+    import hashlib
+    import sympy as s
+    root = Path.cwd() if root is None else Path(root)
+    checks = []
+    def ck(name, test):
+        if not bool(test):
+            raise ArithmeticError(name)
+        checks.append(name)
+    pins = {
+      '01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md':
+        'dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d',
+      '02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md':
+        'cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a',
+      '02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md':
+        'a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c'}
+    for path, sha in pins.items():
+        ck('actual unchanged owner '+Path(path).name,
+           hashlib.sha256((root/path).read_bytes()).hexdigest() == sha)
+
+    p = (s.sqrt(5)-1)/2
+    a, b = s.simplify(p**6), s.simplify(4*p**3)
+    ck('actual controlled-G^2 coin complete on both retained outputs',
+       s.simplify(a+b-1) == 0)
+    ck('actual maximum bad-seed weight is b^T', 0 < a < b < 1)
+    g, pi = s.symbols('g pi', positive=True)
+    T = s.symbols('T', positive=True, integer=True)
+    HB = T*(-a*s.log(a)-b*s.log(b))
+    H = -g*s.log(g)-(1-g)*s.log(1-g)+(1-g)*HB
+    S = -s.log(g)
+    L = s.log((1-g)/g)-HB
+    # expand_log(force=True) is legitimate here only on the declared 0<g<1
+    # strict-input chart. It proves algebraic equalities, not positivity.
+    simp = lambda x: s.simplify(s.expand_log(x, force=True))
+    kappa = -g*L
+    ck('complete refined mean derivative includes every bad seed',
+       simp(s.diff(H,g)-L) == 0)
+    ck('SAME full pointer mean and MAP sources are kappa-collinear',
+       simp(s.diff(H,g)-kappa*s.diff(S,g)) == 0)
+    ck('all field/preparation/clock Hessian terms retained off critical set',
+       simp(s.diff(H,g,2)-kappa*s.diff(S,g,2)+s.diff(kappa,g)/g) == 0)
+    d2 = s.symbols('d2', real=True)
+    ck('at a critical point the Hessians are positive-factor proportional',
+       simp(s.diff(H,g)*d2-kappa*(-d2/g)) == 0)
+    ck('full complete source mass is identically one with arbitrary prefix',
+       s.expand(pi*g+pi*(1-g)+(1-pi)*g+(1-pi)*(1-g)-1) == 0)
+
+    # Counter-consumer of the same probability law, not a new detector.
+    # Separate prefix and detector variations need not share kappa.
+    Hjoint = -pi*s.log(pi)-(1-pi)*s.log(1-pi)+H
+    Sjoint = -s.log(pi)+S  # only on the strict old-winner chart pi>1/2
+    wedge = s.diff(Hjoint,pi)*s.diff(Sjoint,g)-s.diff(Hjoint,g)*s.diff(Sjoint,pi)
+    expected = -s.log((1-pi)/pi)/g+L/pi
+    ck('moving-prefix obstruction is an explicit two-source wedge', simp(wedge-expected) == 0)
+    qC, qI, N = s.symbols('qC qI N', positive=True)
+    C = -s.log(qC)
+    I = s.log(qI/qC)+s.log(N)
+    ck('same-history moving code cancels before expectation',
+       simp(C-I+s.log(qI)+s.log(N)) == 0)
+    return {
+      'status':'PASS', 'checks':checks, 'source_sha256':pins,
+      'positive_theorem': 'For actual q_good=g and every retained q_bad,z=(1-g) beta_z, beta_z fixed, strict good mode implies L=sum beta_z log(q_bad,z/g)<0. Thus kappa=-g L>0 and D H=kappa D(-log g) on all admitted geometry, preparation and continuous-clock tangents of the same fixed word, including full correlated-code inputs. At Dg=0 the Hessians are kappa-proportional.',
+      'uniform_gap': 'If E_N>=mu I and r_gap=(1-mu)b^T/mu<1, then kappa>=-mu log(r_gap)>0 for this finite programme. This is not uniform under refinement; errors must be divided by the actual kappa and original physical signal.',
+      'raw_Book_binding': 'Only if independently owned SAME histories have w=N_Book q and C=-log_phi mu does Info=log_phi(q/mu)+log_phi N_Book follow. Then expected Cost-Info=(H(q)-log N_Book)/log phi; no residual expectation of code cost survives, even for moving/noncanonical codes. This does not identify pointer events with Book gamma or make extra execution/preparation histories free.',
+      'scope': 'Fixed common prefix law and fixed field-independent seed coins give identical detector Euler zero sets, NOT action equality. Moving prefix, conditional g_y, moving Book normalizer, emitted work and extra H/J/R costs remain separate joint sources; no physical selector, native admission, nonempty root or GR limit is claimed.'}
+
+def targeted_effect_preparation_normal(root=None):
+    import sympy as s
+    p,v,T=s.symbols('p v t_squared',real=True)
+    checks={}
+    def ck(name,test):
+        checks[name]=bool(test)
+        if not checks[name]: raise AssertionError(name)
+    def golden_zero(expr):
+        numerator=s.cancel(expr).as_numer_denom()[0]
+        return s.rem(s.Poly(numerator,p),s.Poly(p*p+p-1,p)).as_expr()==0
+    a=p**6
+    w0=1-a; w1=a; r=p**3/4; L=4*p**3
+    b=(p+p*p*T*v)**2
+    B=4*b*(1-b)
+    Q=1-r*B
+    R=1-r*(L+a*B)
+    # One ORIGINAL D3 paired spectral factor; multiplicities multiply log.
+    G=w0**4*Q**2*R**2
+    G0=G.subs(v,0)
+    G1=s.diff(G,v).subs(v,0)
+    Q0=1-r*L
+    R0=1-r*(1-p**12)
+    mt=8*r*p**6*T*(1/Q0+p**6/R0)
+    ck('actual_golden_three_coin_ratio',golden_zero(w1/w0-r))
+    ck('actual_D3_AF_blank_second_eigenvalue',golden_zero(L+a*L-(1-p**12)))
+    ck('same_D3_scene_first_matter_jet',golden_zero(s.diff(B,v).subs(v,0)-8*p**6*T))
+    ck('same_D3_good_probability_constant',golden_zero(G0-w0**4*Q0**2*R0**2))
+    ck('same_D3_nonzero_quadratic_scalar_coefficient',golden_zero(G1/G0+2*mt))
+    # Exact native source ratio, as normalized in the direct-density owner.
+    gt=4*r*p**11*T/R0
+    lam=2*p**(-5)*(R0/Q0+p**6)
+    ck('same_D3_matter_coefficient_is_gt_times_lambda',golden_zero(mt-gt*lam))
+    ck('derived_r_Q0_is_original_w0',golden_zero(Q0-w0))
+    ck('derived_r_R0_retains_both_D3_terms',golden_zero(R0-(1-p**6-p**12)))
+    p0=(s.sqrt(5)-1)/2
+    mt0=s.simplify(mt.subs({p:p0,T:p0**4}))
+    ck('strict_native_golden_clock_gives_nonzero_source',float(mt0)>0)
+    # An actual forward spatial gradient on eight periodic sites has a
+    # nonzero real symmetric kinetic matrix. This is only a restriction of
+    # D1's scalar block, not a new target F or a full grid/certificate replay.
+    n=8; hh=s.Rational(1,n)
+    D=s.zeros(n)
+    for j in range(n):D[j,j]=-1/hh;D[j,(j+1)%n]=1/hh
+    K=-hh*D.T*D # constant in other three coordinates, flat Lorentz scalar
+    ck('actual_forward_scalar_kinetic_block_is_nonzero',K==K.T and K!=s.zeros(n))
+    ck('kinetic_block_keeps_constant_scalar_zero_mode',K*s.ones(n,1)==s.zeros(n,1))
+    ck('actual_forward_scalar_has_nonzero_quadratic_response',(s.eye(n)[:,0].T*K*s.eye(n)[:,0])[0]!=0)
+    # Orthogonal scalar excitation vectors have beta>0. For each input-copy
+    # pair the actual D3 quadratic sector is -G0*cstar sum K_ab a_a x a_b.
+    beta=s.symbols('beta',positive=True)
+    pair_norm2=beta**2*sum(x*x for x in K)
+    ck('actual_kinetic_two_excitation_vector_cannot_vanish',pair_norm2>0)
+    N=s.symbols('N',integer=True,positive=True)
+    pairs=N*(N-1)/2
+    ck('uniform_subset_pair_sector_norm_exact',s.simplify(pairs*pair_norm2/pairs**2-pair_norm2/pairs)==0)
+    # Keep the complete Hermitian domain in polarization: symmetric Pauli
+    # products span all permutation-invariant 2-copy Hermitian operators.
+    I=s.eye(2); X=s.Matrix([[0,1],[1,0]]);Y=s.Matrix([[0,-s.I],[s.I,0]]);Z=s.diag(1,-1)
+    paulis=[I,X,Y,Z]
+    ops=[(s.kronecker_product(paulis[i],paulis[j])+s.kronecker_product(paulis[j],paulis[i]))/2 for i in range(4) for j in range(i,4)]
+    vecs=s.Matrix.hstack(*(M.reshape(16,1) for M in ops))
+    ck('all_mixed_state_polarization_has_no_symmetric_operator_freedom',vecs.rank()==10)
+    # Exact one-marginal silence for two-copy off-support excitation is a
+    # tensor inner-product statement: every traced pair has one <base|a>=0.
+    e0=s.Matrix([1,0]); e1=s.Matrix([0,1])
+    base=s.kronecker_product(e0,e0)
+    pair=s.kronecker_product(e1,e1)
+    delta=pair*base.T+base*pair.T
+    partial0=s.Matrix(2,2,lambda i,j:sum(delta[2*i+k,2*j+k] for k in range(2)))
+    partial1=s.Matrix(2,2,lambda i,j:sum(delta[2*k+i,2*k+j] for k in range(2)))
+    ck('pair_normal_first_marginals_are_both_exactly_zero',partial0==s.zeros(2) and partial1==s.zeros(2))
+    return {'status':'PASS','checks':len(checks),'check_results':checks,
+      'actual_source':'Original D3 Q/R spectral factor at A=M=0, r=p^3/4; m_t=8 r p^6 t^2(1/Q0+p^6/R0)=g_t lambda_mat, not a diagnostic H or new F.',
+      'statement':'For the fixed marginal-feature polynomial of6.64 on ALL IID mixed states, permutation twirl fixes E_N uniquely. At a scalar-free vacuum/null-star code, its nonzero original scalar kinetic Hessian creates a two-copy scalar outside-support component. No same-g polarization/Naimark freedom removes the complete fixed-RIGHT preparation normal at finiteN if those data-only entangling variations are admitted.',
+      'normal_bound':'||Pi2 E_N Psi^tensorN|| = |g0 cstar|/sqrt(binom(N,2))*||Beta^(1/2) L_h Beta^(1/2)||_F; cstar=2nu528K g_t(r)lambda_mat(r). Price-source norm >=2|cstar|/(log(phi)sqrt(binom(N,2)))*the same kinetic norm.',
+      'scope':'Original marginal-feature extension and scalar-free null/star code; no new global claim about all nonvacuum codes. All data/reference are retained. Full Book multi-copy costs/constraints might contribute. FiniteN exact obstruction decays as1/N at fixed source, so no refinement no-go or physical preparation-admission claim.'}
+
+def parity_graph_original_carrier_control(root):
+    import ast
+    import hashlib
+    from pathlib import Path
+    from types import SimpleNamespace
+    import sympy as s
+    root=Path(root); checks=[]
+    def ck(name,v):
+        if not bool(v):raise ArithmeticError(name)
+        checks.append(name)
+    def simp(x):return s.simplify(s.trigsimp(s.expand_complex(x)))
+    def zero(M):return M.applyfunc(simp)==s.zeros(*M.shape)
+    cp=root/'02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py'
+    creator=next(n for n in ast.parse(cp.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=='creator')
+    cpin=hashlib.sha256(ast.dump(creator,include_attributes=False).encode()).hexdigest()
+    ck('original creator AST pin',cpin=='801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4')
+    ns={'s':s,'SUBS':[tuple(i for i in range(4) if m&(1<<i)) for m in range(16)]}
+    exec(compile(ast.Module(body=[creator],type_ignores=[]),str(cp),'exec'),ns)
+    cs=[ns['creator'](s.eye(4)[:,i]) for i in range(4)]
+    parity=s.diag(*[(-1)**bin(m).count('1') for m in range(16)])
+    for i,C in enumerate(cs):ck('actual creator is parity odd '+str(i),zero(parity*C+C*parity))
+    alphas=[(cs[0]+cs[0].T)*(cs[i]-cs[i].T) for i in range(1,4)]
+    for i,A in enumerate(alphas):ck('actual current is parity even '+str(i+1),zero(parity*A-A*parity))
+    gp=root/'03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean'
+    gpin=hashlib.sha256(gp.read_bytes()).hexdigest()
+    ck('literal existing golden gate definition present','def gate (a p : ℝ) : Matrix (Fin 2) (Fin 2) ℝ := !![a,-p; p,a]' in gp.read_text())
+    # E contains all8 first-axis momenta times the full16 CAR masks.
+    from itertools import product
+    moms=list(product((1,-1),repeat=4))
+    even=[m for m in range(16) if bin(m).count('1')%2==0]
+    odd=[m for m in range(16) if bin(m).count('1')%2]
+    E=[(0,k,m) for k in moms for m in even]
+    O=[(0,k,m) for k in moms for m in odd]
+    ei={x:i for i,x in enumerate(E)};oi={x:i for i,x in enumerate(O)}
+    ck('original16 momenta give128 modes of each parity without an auxiliary factor',len(E)==len(O)==128 and len(even)==len(odd)==8)
+    c,t=s.symbols('cos_tau sin_tau',real=True)
+    U=s.MutableSparseMatrix(128,128,{(i,oi[(af,k,m^2)]):1 for i,(af,k,m) in enumerate(E)})
+    ku=(1,1,1,1); km=(-1,-1,-1,-1)
+    blocks=[(0,[(ku,0),(km,3)],[(ku,2),(km,1)],s.Matrix([[c,t],[t,-c]])),
+            (0,[(km,15),(ku,3)],[(km,13),(ku,1)],s.Matrix([[c,s.I*t],[-s.I*t,-c]]))]
+    for af,rr,cc,B in blocks:
+        for i,(k,m) in enumerate(rr):
+            row=ei[(af,k,m)]
+            for j,(l,n) in enumerate(cc):U[row,oi[(af,l,n)]]=B[i,j]
+    gram=U.conjugate().T*U-s.eye(128)
+    ck('explicit full128 parity pairing is unitary on c2+t2=1',all(s.simplify(s.rem(s.expand(v),c*c+t*t-1,c))==0 for v in gram.values()))
+    # Generic 2x2 graph isometry/projection control; the actual U above has
+    # the same block algebra at N128, avoiding a dense256 symbolic square.
+    B=blocks[0][3]
+    W=s.Matrix.vstack(s.eye(2),B.T)/s.sqrt(2)
+    P=W*W.T
+    ck('graph W is isometric',all(s.simplify(s.rem(s.expand(v),c*c+t*t-1,c))==0 for v in W.T*W-s.eye(2)))
+    ck('graph projector is idempotent',all(s.simplify(s.rem(s.expand(v),c*c+t*t-1,c))==0 for v in P*P-P))
+    ck('graph parity diagonals independent of unitary',P[:2,:2]==s.eye(2)/2 and all(s.simplify(s.rem(s.expand(v),c*c+t*t-1,c))==0 for v in P[2:,2:]-s.eye(2)/2))
+    # Normalized LOCAL CAR density after tracing the two auxiliary labels;
+    # site probability is1/S. Only same-AF matrix elements survive the trace.
+    theta=s.symbols('theta',real=True)
+    rho=s.eye(16)/16
+    for (i,j),v in U.todok().items():
+        af,k,m=E[i];ag,l,n=O[j]
+        if af==ag:
+            value=v*s.exp(s.I*(k[0]-l[0])*theta)/256
+            rho[m,n]+=value;rho[n,m]+=s.conjugate(value)
+    rho=rho.applyfunc(simp)
+    ck('all local same-parity entries equal original full CAR bath',all(simp(rho[i,j]-(s.Rational(1,16) if i==j else 0))==0 for i in range(16) for j in range(16) if (bin(i).count('1')-bin(j).count('1'))%2==0))
+    ck('scalar01 coherence carries the doubled phase',simp(rho[0,1]-t*s.exp(2*s.I*theta)/256)==0)
+    ck('top151 coherence carries the quadrature doubled phase',simp(rho[15,1]-s.I*t*s.exp(-2*s.I*theta)/256)==0)
+    ck('all three local actual current numerators unchanged',all(simp(s.trace(rho*A))==0 for A in alphas))
+    ck('first-grade density remains isotropic old bath not pure clock',rho.extract([1,2,4,8],[1,2,4,8])==s.eye(4)/16)
+    ck('full local trace is one',simp(s.trace(rho)-1)==0)
+    # A generic parity-even16 matrix has arbitrary same-parity entries.
+    X=s.Matrix(16,16,lambda i,j:s.Symbol('x_'+str(i)+'_'+str(j),real=True) if (bin(i).count('1')-bin(j).count('1'))%2==0 else 0)
+    ck('every full16 even operator source equals original bath',simp(s.trace((rho-s.eye(16)/16)*X))==0)
+    p=(s.sqrt(5)-1)/2;a=s.sqrt(p)
+    G=a*s.eye(16)+p*(cs[0]-cs[0].T)
+    ck('literal G on every mode0 pair is orthogonal',zero(G.T*G-s.eye(16)))
+    occ=cs[0]*cs[0].T
+    ck('literal golden occupation effect has odd coherence term',zero(G.T*occ*G-(p*p*s.eye(16)+(a*a-p*p)*occ+a*p*(cs[0]+cs[0].T))))
+    q=(G*rho*G.T).diagonal()
+    delta=a*p*t*s.cos(2*theta)/128
+    target=[s.Rational(1,16)-delta if m in (0,2) else s.Rational(1,16)+delta if m in (1,3) else s.Rational(1,16) for m in range(16)]
+    ck('complete occupation law has only four asserted deviations',all(simp(q[m]-target[m])==0 for m in range(16)))
+    qocc=simp(sum(q[m] for m in range(16) if m&1))
+    ck('site-resolved golden bit detects the parity graph',simp(qocc-s.Rational(1,2)-a*p*t*s.cos(2*theta)/64)==0)
+    # Eight-site exact phase average. Other3 coordinates may be uniform.
+    co=[s.cos(s.pi*j/2) for j in range(8)]
+    ck('forgetting site erases the detected bit signal',sum(co)==0)
+    ck('retained-site phase has nonzero variance',sum(x*x for x in co)/8==s.Rational(1,2))
+    # At tau0, t=sin(tau)=0, q=1/16. Entropy Hessian uses
+    # H''=-sum(q'^2/q), because all total-q second derivatives sum to0.
+    entropy_curvature=s.simplify(-4*(a*p/128)**2*16*s.Rational(1,2))
+    ck('complete site-plus-CAR occupation entropy curvature nonzero',s.simplify(entropy_curvature+p**3/512)==0 and entropy_curvature<0)
+    # Scalar flat Delta is exactly lambda on ALL original +/-axis modes.
+    # The full graph range, not only its mean, therefore remains isospectral.
+    d,o,h=s.symbols('d o h',positive=True)
+    zeta=(1+s.I)/s.sqrt(2)
+    Gmetric=(d-o)*s.eye(4)+o*s.ones(4)
+    energy={}
+    for k in moms:
+        zz=s.Matrix([(zeta**kr-1)/h for kr in k])
+        energy[k]=s.simplify((zz.conjugate().T*Gmetric*zz)[0])
+    ck('all mixed momentum pairs have exactly equal native energy',all(s.simplify((energy[E[i][1]]-energy[O[j][1]])*v)==0 for (i,j),v in U.todok().items()))
+    counts={sum(k)**2:sum(1 for q in moms if sum(q)**2==sum(k)**2) for k in moms}
+    ck('all three native energy classes retain exact multiplicity',counts=={16:2,4:8,0:6})
+    av=s.simplify(sum(energy.values())/16)
+    ar=2-s.sqrt(2)
+    ck('uniform K bath exact Rayleigh metric source',s.simplify(av-(4*ar*d+3*ar**2*o)/h**2)==0)
+    ck('originalcarrier dimensions reference128 and shell256',len(moms)*16==256 and len(E)==128)
+    return {'status':'PASS','checks':checks,'source_sha256':{'creator_AST':cpin,str(gp.relative_to(root)):gpin},
+      'exact_statement':'On the ORIGINAL site times CAR16 carrier take K={+/-1}^4. Each parity sector of K times CAR16 has128 dimensions. The explicit U mixes only k and -k and intertwines their exact native Delta energies. C=W_U/sqrt128 has canonical fixedRIGHT I128/128 and solves Delta C=C L, L=L*. Its even operator sources and current are exactly those of uniform K bath I_K/256.',
+      'full_price':'For the SAME priced carrier, U/P and reference128, H and J remain unchanged by preparation, and R plus every compared CAR-even field jet agrees with the uniform K bath. Thus any actually certified geometric/full-source root of that uniform bath transfers to this canonical fixed-RIGHT family. The old first-shell root is not that certificate.',
+      'actual_record':'The literal existing G=aI+p(c0-c0*) followed by complete site-resolved16-mask occupation detects the constructed odd coherence. Its joint-law entropy Hessian is -p^3/512 nats at tau0. Forgetting site erases the single occupation-bit signal.',
+      'input_boundary':'The local first-grade density is I4/16, as in the uniform CAR bath. This is not a pure amplitude Hodge chart or a single-vector timelike P1 clock. The two density-coherence readings do not extend the original amplitude readout.',
+      'fullright_boundary':'K has three energy classes. Arbitrary correlated FULLRIGHT sigma with uniform ref marginal is not automatically a preparation root: the canonical graph right energy L must commute with sigma (after the actual oldAF tensor embedding). In contrast to the old single shell, L is not scalar.',
+      'scope':'No new AF tensor factor, no extra J multiplicity, no claimed geometric root before its actual certificate, no full-sphere common-energy stationarity, no PREP admission, no full Book stationarity or GR.'}
+
+def parity_graph_joint_source_root(root):
+    import ast, hashlib, itertools
+    from collections import Counter
+    from pathlib import Path
+    import mpmath as mp
+    root=Path(root); checks=[]
+    def ck(name, value):
+        if not bool(value): raise ArithmeticError(name)
+        checks.append(name)
+    path='02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/verify.py'
+    raw=(root/path).read_bytes()
+    tree=ast.parse(raw)
+    nodes=[n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name in ('add','sub','mul','features')]
+    pin=hashlib.sha256(ast.dump(ast.Module(body=nodes,type_ignores=[]),include_attributes=False).encode()).hexdigest()
+    env={'Counter':Counter,'itertools':itertools}
+    exec(compile(ast.Module(body=nodes,type_ignores=[]),path,'exec'),env)
+    rows=env['features']()
+    ck('original orbit-generator AST unchanged',pin=='5a2d5fb0b8b437cf86ec4b0b502d8a4b5d65b9f94959b5dcfed3779774431172')
+    ck('all4096 original Fourier modes retained',sum(n for _,n in rows)==4096)
+    ck('all119 original exact orbits retained',len(rows)==119)
+    iv=mp.iv; old_dps=iv.dps; iv.dps=60
+    try:
+        val=lambda x:iv.mpf(x[0])+iv.mpf(x[1])*iv.sqrt(2)
+        p=(iv.sqrt(5)-1)/2;alpha=p*p/8192;beta=2*p*p;fug=iv.mpf(1)/1048576
+        chi=2-iv.sqrt(2);target=[256*chi,192*chi*chi]
+        def equations(x,multiplicity=2048):
+            Z=iv.mpf(0);u=[iv.mpf(0)]*2;r=[iv.mpf(0)]*2
+            v=[[iv.mpf(0) for _ in range(2)] for _ in range(2)]
+            t=[[iv.mpf(0) for _ in range(2)] for _ in range(2)]
+            for (aa,bb),count in rows:
+                f=[val(aa),val(bb)];B=1-alpha*(f[0]*x[0]+f[1]*x[1]);e=B**16384
+                w=count*e;R=fug*e/(1-fug+fug*e);Z+=w
+                for i in range(2):
+                    u[i]+=w*f[i]/B;r[i]+=count*R*f[i]/B
+                    for j in range(2):
+                        v[i][j]+=w*f[i]*f[j]/B**2
+                        t[i][j]+=count*R*(alpha-beta*(1-R))*f[i]*f[j]/B**2
+            mu=[q/Z for q in u]
+            F=[mu[i]-multiplicity*beta*r[i]-target[i] for i in range(2)]
+            J=[[(alpha-beta)*v[i][j]/Z+beta*mu[i]*mu[j]-multiplicity*beta*t[i][j] for j in range(2)] for i in range(2)]
+            return F,J
+        center=['0.01949758334103003317092566892816507257820191136677009607',
+                '0.00040050669416411222018794758451775636074764672518266514']
+        pre=[['-0.0002433677011353035622652980155415483907662487225453670281',
+              '0.00009783576742887514654789839309394121309488098381619586804'],
+             ['0.00009783576742887514654789839309394121309488098381619586804',
+              '-0.0001000974351489880688978291567769098415801868400069437612']]
+        C0=list(map(iv.mpf,center));rad=iv.mpf('1e-12');X=[v+iv.mpf(['-1e-12','1e-12']) for v in C0]
+        P=[[iv.mpf(v) for v in row] for row in pre]
+        f0,_=equations(C0);_,JI=equations(X)
+        C=[[iv.mpf(int(i==j))-sum(P[i][k]*JI[k][j] for k in range(2)) for j in range(2)] for i in range(2)]
+        for i in range(2):
+            q=sum(abs(v) for v in C[i]);err=abs(sum(P[i][j]*f0[j] for j in range(2)))
+            ck('new K-bath interval contraction '+str(i),q<iv.mpf('1e-6'))
+            ck('new K-bath interval self-mapping '+str(i),err+q*rad<rad)
+        ck('new root transverse positive',X[0]-X[1]>iv.mpf('.019'))
+        ck('new root longitudinal positive',X[0]+3*X[1]>iv.mpf('.020'))
+        ck('new root longitudinal upper',X[0]+3*X[1]<iv.mpf('.021'))
+        ck('all pointwise coefficient dilations strict',X[0]<1)
+        for (aa,bb),count in rows:
+            B=1-alpha*(val(aa)*X[0]+val(bb)*X[1])
+            ck('actual survivor B strict '+str((aa,bb)),B>p**3 and B<=1)
+        wrong,_=equations(C0,multiplicity=4096)
+        ck('REJECT adding an unpriced AF2 factor',abs(wrong[0])>iv.mpf('.01'))
+        old_target=128-64*iv.sqrt(2)
+        ck('REJECT transferring the old first-shell root equation',abs(target[0]-old_target)>100 and target[1]>60)
+        return dict(status='PASS',checks=checks,source_sha256={path:hashlib.sha256(raw).hexdigest(),'features_AST':pin},
+          root_center=center,root_radius='1e-12',preconditioner=pre,contraction_upper='1e-6',
+          same_price='Original old-v8 H+J+R; L8, n8192, alpha=p²/8192, beta=2p², z=2^-20, CAR16, reference128, J multiplicity2048. No new AF factor.',
+          Rayleigh_K='[4 chi d+3 chi² o]/h², chi=2-sqrt2, h=1/8; targets [256chi,192chi²].',
+          source_scope='Unique zero in this two-variable box. Translation plus S4 reduces all10 actual local metric rows to these two equations. Proper-link/current extension requires the analytic full-CAR moment proof in the owner; the interval certificate by itself does not check those rows.',
+          preparation_scope='Canonical fixedRIGHT I128/128 parity graph; three occupied energy classes, not a common eigenvalue or full-sphere root. Arbitrary correlated sigma also requires [sigma,L]=0.',
+          physical_native_admission=False,stable_minimum=False,native_AF_refinement=False,GR_closed=False)
+    finally:
+        iv.dps=old_dps
+
+def parity_graph_proper_link_transfer(root):
+    import ast, hashlib
+    from pathlib import Path
+    import sympy as s
+    root=Path(root); checks=[]
+    def ck(name,v):
+        if not bool(v):raise ArithmeticError(name)
+        checks.append(name)
+    def zero(M):return M.applyfunc(s.simplify)==s.zeros(*M.shape)
+    f=root/'02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py'
+    tree=ast.parse(f.read_text())
+    creator=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='creator')
+    basis=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='record_basis')
+    pin=hashlib.sha256(ast.dump(creator,include_attributes=False).encode()).hexdigest()
+    ck('original16 creator AST pin',pin=='801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4')
+    ns={'s':s,'SUBS':[tuple(i for i in range(4) if m&(1<<i)) for m in range(16)]}
+    exec(compile(ast.Module(body=[creator,basis],type_ignores=[]),str(f),'exec'),ns)
+    cr=[ns['creator'](s.eye(4)[:,i]) for i in range(4)]
+    kk=s.Matrix(4,4,lambda i,j:s.Symbol('K'+str(i)+str(j),real=True))
+    Gamma=sum((kk[i,j]*cr[i]*cr[j].T for i in range(4) for j in range(4)),s.zeros(16))
+    for i in range(4):
+        for j in range(4):
+            ck('full CAR16 link trace '+str(i)+str(j),s.simplify(s.trace(cr[i].T*cr[j]*Gamma)-4*((s.trace(kk) if i==j else 0)-kk[i,j]))==0)
+    ck('raising-raising link trace identically zero',all(s.simplify(s.trace(cr[i]*cr[j]*Gamma))==0 for i in range(4) for j in range(4)))
+    h=s.symbols('h',positive=True)
+    cs,ss,ct,st,w=s.symbols('cos_s sin_s cos_r sin_r w',real=True)
+    zs=(cs-1+s.I*ss)/h;zr=(ct-1+s.I*st)/h
+    bpair=s.expand(w*(s.conjugate(zs)+zs))
+    mss=s.expand(2*w*s.conjugate(zs)*zs)
+    ck('inversion-paired B is real',s.simplify(s.im(bpair))==0)
+    ck('true h factor in B equals minus hMss over2',s.simplify(s.rem(s.expand(bpair+h*mss/2),cs*cs+ss*ss-1,cs))==0)
+    msr=s.expand(w*(s.conjugate(zs)*zr+zs*s.conjugate(zr)))
+    ck('inversion-paired metric moment is real',s.simplify(s.im(msr))==0)
+    linkpair=s.expand(w*(s.conjugate(zs)*(1+h*zr)+zs*(1+h*s.conjugate(zr))))
+    ck('full forward link phase is B plus hM',s.simplify(linkpair-bpair-h*msr)==0)
+    la,lb,lc=s.symbols('lambda_A lambda_B lambda_C',real=True)
+    R=(2*la+8*lb+6*lc)/16
+    ck('all three energy classes cancel local normalized whitening source',s.expand(2*(la-R)+8*(lb-R)+6*(lc-R))==0)
+    # Exact relation with the literal coherent fullStep, not a substitute G.
+    a,p=s.symbols('a p',real=True)
+    U4=s.Matrix([[a,0,-p,0],[0,a,0,-p],[0,p,0,a],[p,0,a,0]])
+    T=s.Matrix([[1,0,1,0],[1,0,-1,0],[0,1,0,1],[0,1,0,-1]])/s.sqrt(2)
+    B0=ns['record_basis']()
+    UR=B0*s.kronecker_product(T.T*U4*T,s.eye(4))*B0.T
+    G0=a*s.eye(16)+p*(cr[0]-cr[0].T)
+    sign=s.diag(*[(-1 if (m&1 and sum(bool(m&(1<<i)) for i in (1,2,3))>=2) else 1) for m in range(16)])
+    ck('literal fullStep differs from G only by occupation-diagonal signs',zero(UR-sign*G0))
+    ck('diagonal sign is exactly orthogonal',sign.T*sign==s.eye(16))
+    ck('all16 fullStep occupation effects equal literal G effects',all(zero(UR.T*s.diag(*[int(j==m) for j in range(16)])*UR-G0.T*s.diag(*[int(j==m) for j in range(16)])*G0) for m in range(16)))
+    return {'status':'PASS','checks':checks,'source_sha256':{'creator_AST':pin},
+      'proper_link_statement':'For real inversion-symmetric scalar weights W, vanishing metric moments M_sr=sum W z_s* z_r forces B_s=sum W z_s*=-h M_ss/2=0 and sum W z_s* exp(ik_rh)=B_s+hM_sr=0. The full16 trace identity therefore kills all linear matrix link covectors, including all24 proper Lorentz rows, in the actual positive-adjoint whitening chart.',
+      'whitening_statement':'Do not use a common-eigenvalue claim for the three-energy K bath. FixedRIGHT admissible variations make the preparation term zero via Delta C=C L and delta(C*C)=0. Separately, for fixed raw input at the flat uniform bath, every onsite whitening term cancels by the exact weighted identity sum_K(lambda_k-R)=0. Parity graph transfers this even expectation.',
+      'fullstep_statement':'The literal16 fullStep equals S times G0, where S changes the sign only on time-occupied masks whose spatial degree>=2. S is diagonal, hence every16-mask occupation effect is IDENTICAL for fullStep and G0 for every input state. The previous parity-graph full Golden occupation law can therefore use literal fullStep, not only the bare gate.',
+      'scope':'No numerical new-root verification, no actual Book-price identification, no full-sphere preparation claim, no frozen adjoint, no dropped normalizer or grades.'}
+
+
+def cy_fine_right_capacity_controls(root=None):
+    from pathlib import Path
+    import hashlib
+    import sympy as s
+    root=Path.cwd() if root is None else Path(root)
+    checks=[]
+    def ck(name,test):
+        if not bool(test):raise ArithmeticError(name)
+        checks.append(name)
+    path='02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md'
+    sha='012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6'
+    ck('actual native Fibonacci multiplicity/trace owner unchanged',
+       hashlib.sha256((root/path).read_bytes()).hexdigest()==sha)
+    p=(s.sqrt(5)-1)/2;phi=1/p
+    M=s.Matrix([[1,1],[1,0]])
+    ck('actual six-step multiplicities, not arbitrary added copies',M**6==s.Matrix([[13,8],[8,5]]))
+    ck('actual failure multiplicities retain every complementary column',
+       M**12-M**6==s.Matrix([[220,136],[136,84]]))
+    ck('old typeX PF mass includes all fine right descendants',s.simplify(p**6*(13+8*p)-1)==0)
+    ck('old typeY PF mass includes all fine right descendants',s.simplify(p**6*(8+5*p)-p)==0)
+    x=s.symbols('x',positive=True)
+    F=lambda z:2*z/(1+2*z)
+    ck('capacity sigmoid monotonic comparison is exact',
+       s.simplify(F(x)-F(phi)-2*(x-phi)/((1+2*x)*(1+2*phi)))==0)
+    ck('h(p^2) exponent 2-p exceeds one',2-p>1)
+    ck('capacity lower comparator F(phi) is exactly 2p^2',s.simplify(F(phi)-2*p**2)==0)
+    ck('strict capacity gap exceeds every typeX diagonal right supply',2*p**2>13*p**6)
+    ck('typeY supply is strictly smaller still',13*p**6>5*p**6>0)
+    w=s.symbols('w',real=True)
+    supply=p**6*(13*w+5*(1-w))
+    ck('aggregate matched-success supply never exceeds13p^6',
+       s.simplify(13*p**6-supply-8*p**6*(1-w))==0)
+    return dict(status='PASS',checks=checks,source_sha256={path:sha},
+      exact_scope='Canonical fineRIGHT trace on A_(N+6), with JOINT fineRIGHT/reference unchanged. Actual C_Y matched branch has success Pi oldLEFT_i only in fine block of type(i). Its conditional success is bounded by13p^6 or5p^6. Capacity s*=F(phi^(2-p))>F(phi)=2p^2>13p^6, so this matched capacity state is impossible in that class.',
+      operator_proof='Qmatch=sum_i L(P_i)R_old(P_i), A=Pi Qmatch<=sum_j Z_fine,j R_old(Z_j). This gives the aggregate bound even for outputs not already matched. Reference128 is untouched and cancels in its trace.',
+      oldRIGHT_escape='The actual13an hypothesis fixes only oldRIGHT A_N/reference. Its ideal larger commutant can change fresh fineRIGHT multiplicities and is not contradicted. A native active placement changing that fresh sector, with full price, is precisely the missing operation. The declared broad encoded G/CNOT controls may permit such placements conditionally; one must not identify all of them with fineLEFT A_(N+6).',
+      no_overclaim='The bound holds for fineLEFT multiplication, C_Y LEFT-controlled fresh recording, and scene/CAR/query gates tensor identity on fineRIGHT. It is not a no-go for every native oldRIGHT-compatible operation, a different prepared fineRIGHT seed, another capacity branch or all D0.')
+
+
+def hodge_polar_radial_trial(root=None):
+    import sympy as s
+    checks=[]
+    def ck(name,v):
+        if not bool(v):raise ArithmeticError(name)
+        checks.append(name)
+    def zero(M):return M.applyfunc(s.simplify)==s.zeros(*M.shape)
+    A0=s.Matrix([[0,1,0],[1,0,0],[0,0,0]])
+    A4=s.Matrix([[0,0,0],[0,0,1],[0,1,0]])
+    exc=s.diag(1,0,1)
+    ck('actual clock0top qutrit local square identity',A0*A0+A4*A4==2*s.eye(3)-exc)
+    X=s.kronecker_product(A0,s.eye(3))+s.kronecker_product(s.eye(3),A0)
+    Y=s.kronecker_product(A4,s.eye(3))+s.kronecker_product(s.eye(3),A4)
+    Ne=s.kronecker_product(exc,s.eye(3))+s.kronecker_product(s.eye(3),exc)
+    H2=s.kronecker_product(A0,A0)+s.kronecker_product(A4,A4)
+    ck('original two-copy H plusN equals positive square identity',H2+2*s.eye(9)==(X*X+Y*Y+Ne)/2)
+    # Symmetric3-mode Schwinger representation: basis(n_clock,n_0,n_top).
+    # This is polynomially small and is not a full3^N eigensolve.
+    for N in (2,3):
+        basis=[(nc,nx,N-nc-nx) for nc in range(N+1) for nx in range(N-nc+1)]
+        ix={x:j for j,x in enumerate(basis)};D=len(basis)
+        def hop(dst,src):
+            M=s.zeros(D)
+            for col,b in enumerate(basis):
+                if b[src]:
+                    v=list(b);v[dst]+=1;v[src]-=1
+                    M[ix[tuple(v)],col]=s.sqrt((b[dst]+1)*b[src])
+            return M
+        Jx=hop(0,1)+hop(1,0);Jy=hop(0,2)+hop(2,0)
+        NE=s.diag(*[b[1]+b[2] for b in basis])
+        K=(Jx*Jx+Jy*Jy+NE)/2
+        last=N//2;V=s.zeros(D,last+1)
+        for k in range(last+1):
+            for j in range(k+1):
+                V[ix[(N-2*k,2*j,2*(k-j))],k]=s.binomial(k,j)*s.sqrt(s.factorial(2*j)*s.factorial(2*(k-j)))/(2**k*s.factorial(k))
+        T=s.zeros(last+1)
+        for k in range(last+1):
+            T[k,k]=N+2*k*(N-2*k)
+            if k<last:
+                T[k,k+1]=T[k+1,k]=(k+1)*s.sqrt((N-2*k)*(N-2*k-1))
+        ck('radial states orthonormal N'+str(N),zero(V.T*V-s.eye(last+1)))
+        ck('radial block is genuinely reducing N'+str(N),zero(K*V-V*T))
+        ck('exact excitation count on radial basis N'+str(N),zero(V.T*NE*V-s.diag(*[2*k for k in range(last+1)])))
+        ck('endpoint lower-root sign N'+str(N),N-2*last-1==(-1 if N%2==0 else 0))
+    n,k,r=s.symbols('N k r',real=True)
+    expanded=s.expand(n+2*k*(n-2*k)-2*r*(k+1)*(n-2*k-1))
+    target=n*(1-2*r+2*(1-r)*k)-4*(1-r)*k*k+6*r*k+2*r
+    ck('exact geometric-trial upper-bound polynomial',s.expand(expanded-target)==0)
+    q=s.symbols('q',positive=True);m=s.symbols('m',integer=True,nonnegative=True)
+    Z=(1-q**(m+1))/(1-q)
+    mean=s.simplify(q*s.diff(Z,q)/Z)
+    expected=q/(1-q)-(m+1)*q**(m+1)/(1-q**(m+1))
+    ck('truncated geometric mean formula with positive tail correction',s.simplify(mean-expected)==0)
+    upper=s.simplify(n*(1-2*r+2*(1-r)*r*r/(1-r*r))+6*r**3/(1-r*r)+2*r)
+    advertised=n*(1-r)/(1+r)+6*r**3/(1-r*r)+2*r
+    ck('moment bound gives advertised finite formula',s.simplify(upper-advertised)==0)
+    x,y=s.symbols('x y',positive=True)
+    U=s.factor(advertised.subs({n:x*x,r:1-1/x}))
+    num=s.factor((5*x-U)*x*(2*x-1))
+    ck('finiteN bound has exact positive polynomial numerator',s.expand(num-(3*x**3+9*x*x-12*x+4))==0)
+    ck('bound manifestly positive for sqrtN at least2',s.expand(num.subs(x,y+2))==3*y**3+27*y*y+60*y+40)
+    # Supplemental finite witnesses: exact arithmetic, no diagonalization.
+    for N in (4,5):
+        rr=1-1/s.sqrt(N);last=N//2
+        f=s.Matrix([(-rr)**j for j in range(last+1)]);f=f/s.sqrt((f.T*f)[0])
+        T=s.zeros(last+1)
+        for j in range(last+1):
+            T[j,j]=N+2*j*(N-2*j)
+            if j<last:T[j,j+1]=T[j+1,j]=(j+1)*s.sqrt((N-2*j)*(N-2*j-1))
+        val=s.simplify((f.T*T*f)[0])
+        rhs=s.simplify(advertised.subs({n:N,r:rr}))
+        ck('finite trial lower square-root upper estimate N'+str(N),s.simplify(rhs-val)>0)
+        ck('finite trial5sqrtN bound N'+str(N),s.simplify(5*s.sqrt(N)-rhs)>0)
+    return {'status':'PASS','checks':checks,
+      'operator':'On the original clock+scalar0+top qutrit H_N=sum_r<s(A0r A0s+A4r A4s) and K=H_N+NI=1/2[(sum A0)^2+(sum A4)^2+N_exc].',
+      'radial_block':'In the permutation-symmetric SO2-invariant radial block |k> proportional to (a0dag^2+a4dag^2)^k(cdag)^(N-2k)|vac>, K diagonal=N+2k(N-2k), offdiagonal=(k+1)sqrt[(N-2k)(N-2k-1)]. This is a reducing block, so its exact eigenstates are eigenstates of full H_N.',
+      'trial_bound':'For N>=4 and r=1-N^-1/2, normalized amplitudes(-r)^k give <K><=N(1-r)/(1+r)+6r^3/(1-r^2)+2r<=5sqrtN. The finite endpoint correction is nonnegative for evenN and zero for oddN.',
+      'exact_eigen_consumer':'Choose the lowest K eigenvector in this finite radial block. It is an exact full-H_N eigenstate with 0<=lambda_N<=min(N,5sqrtN), <N_exc><=10sqrtN. It is not claimed to be the global full-Hilbert ground state.',
+      'marginal_bound':'Permutation symmetry gives ||rho_k-|clock><clock|^tensor k||_1<=min(2,2sqrt(10k)N^-1/4).',
+      'source_consumer':'For an actually owned definite quadratic E_eff(g)=a(g)I+b(g)H_N/binomial(N,2), the fixed eigenvector has e_N in[-2/(N-1),0], so its query value and C2 geometric source differ from a(g) by at most2||b||_C2/(N-1). No inverse-gap differentiation is used.',
+      'scope':'Only this definite quadratic single-site two-Hodge qutrit block. Its marginals recover the pure CLOCK conditional block, not the full13gh vacuum sqrt(p)|1>+sqrt(1-p)|14>. Grade14 is a coherent direct-sum spectator, not a tensor factor. No full Lorentz indefinite grid, fullCAR16/source transfer, canonicalRIGHT128, higher-query/source, native PREP or full Book-price claim.'}
+
+
 def append_only_source_provenance(root):
     owner='02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md'
     raw=(Path(root)/owner).read_bytes()
@@ -1798,6 +2312,13 @@ def main():
         full_hodge_preparation_normal=hodge_fixed_right_spectral_normal(args.root),
         mixed_hodge_preparation=hodge_mixed_preparation_control(args.root),
         targeted_query_code=targeted_choi_source_controls(args.root),
+        same_pointer_mean_MAP=targeted_full_failure_euler(args.root),
+        targeted_entangling_normal=targeted_effect_preparation_normal(args.root),
+        original_carrier_parity_graph=parity_graph_original_carrier_control(args.root),
+        same_price_K_bath_root=parity_graph_joint_source_root(args.root),
+        full_K_bath_source_transfer=parity_graph_proper_link_transfer(args.root),
+        actual_CY_preparation_supply=cy_fine_right_capacity_controls(args.root),
+        correlated_two_Hodge_radial=hodge_polar_radial_trial(args.root),
         full_D0_price_selected=False, generic_joint_recovery=False, GR_closed=False)
     output = json.dumps(result, ensure_ascii=False, indent=2, default=str)+'\n'
     if args.output:

@@ -1,5 +1,43 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — SAME-law Euler equivalence and complete preparation/root consumer
+
+[Strategic7.22](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.66–6.71](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+remove the detector mean/MAP equation-choice premise: its actual retained
+failure word gives DH=κD(−logg), κ>0, on all correlated inputs under its
+strict mode gap. Prefix/Book normalization/work/clock sources remain explicit.
+On the SAME targeted D3 polynomial, however, an actual two-copy scalar
+normal prevents full fixedRIGHT preparation stationarity at the null/star
+vacuum code. Same-g effect or Naimark freedom cannot remove this normal;
+its1/N decay leaves controlled correlated-state recovery open.
+
+A positive control now solves the original conditional H+J+R jointly on
+its ORIGINAL priced site×CAR16/reference128 carrier. A rank128 parity graph
+realizes all even sources of a virtual rank256 K={±1}⁴ bath. A NEW interval
+root at d≈.01949758334103,o≈.0004005066941641 proves metric stationarity;
+full-CAR moments also kill all local proper-link/observer rows. Preparation
+is canonical fixedRIGHT with three energies, not a common-eigenvalue or
+arbitrary correlated-RIGHT root. Fixed calibration and actual admission
+boundaries are retained. Literal fullStep distinguishes a free odd-coherence
+family of these roots through a complete record entropy curvature −p³/512.
+No AF2 factor or feedback multiplicity change is hidden.
+
+There is also a positive exact correlated preparation in the definite
+TWO-Hodge quadratic clock sector: a radial reducing eigenstate recovers
+fixed-k marginals at O(N^-1/4), with O1/N moving-coefficient query2jets.
+The exact fixedRIGHT spectral-rank/overlap criterion and source bounds
+are stated for the actual constrained-query matter operator. Transfer
+to the Lorentzian grid, higher-degree effect and coherent grade14 of the
+real vacuum remains explicit; the pureclock lemma is not that full code.
+
+The latest C_Y attachment is already preserved byte-for-byte and consumed
+in6.33. Its finite-t conditional vacuum theorem remains its OWN instrument's
+result. It supplies neither native capacity PREP nor the other detector's
+full-price binding. Concurrent05767255 is integrated without overwriting
+its history-source/Lean owners. Continue the actual native/Book/PREP and
+correlated-recovery transition; GR_closed=false, original raw#216 OPEN.
+
 ## 18 October 2026 — actual preparation normal, both query sources and nonlinear stress test
 
 [Strategic§7.21](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

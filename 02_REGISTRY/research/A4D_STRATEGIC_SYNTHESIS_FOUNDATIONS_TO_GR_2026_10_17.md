@@ -2408,6 +2408,100 @@ field→instrument→measured-law diagram. Native generation ресурсов и
 физическое Info/Book binding к этому RN likelihood всё ещё нужны;
 само существование M_w не выбирает нужную цену или её станционарность.
 
+### 7.22. Полная цена: общий Euler, actual entangling normal и same-carrier joint root
+
+Input31f7926; preceding goal turn PROGRESS. Concurrent05767255 integrated
+without rewriting its disjoint history/Lean owners. Its endpoint-invisible
+action tangent is an interface result, not an admitted metric source.
+[Full-source6.66–6.71](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now consumes the complete SAME-word price/preparation transition.
+
+**Положительный equation bridge.** У actual Choi/fixed-effect detector
+с retained failure coins q_good=g, q_bad,z=(1−g)β_z, β fixed.
+Strictgood mode gives DH=κ(g)D(−logg), κ>0, on the WHOLE correlated-input
+carrier. Mean and MAP have exactly the same detector Euler zeros and
+κ-proportional critical Hessians. Thus their different action values are
+no longer a blocker on a genuinely fixed-prefix/raw-normalizer branch.
+Moving prefix, Book normalizer, clock, query and emitted work have their
+own explicit terms. In a same-history raw binding w=𝒩q, any moving code
+cancels pointwise: E(C−Info)=[H(q)−log𝒩]/logφ. No leftover mean code-cost
+term is invented, and no extra execution history is made free.
+
+**The next normal is actual, not diagnostic.** At the SAME6.64 null/star
+code with scalar/top zero, D3 has g=g0[1−c_*φᵀL_hφ+O(φ⁴)], c_*≠0.
+Its unique permutation-twirled all-mixed-IID effect has an unavoidable
+two-scalar-copy outside-support component. A data-only entangling unitary
+preserves all RIGHT/reference and has zero first variation of every
+one-copy marginal, yet gives nonzero detector source bounded by
+2|c_*|||Β^½L_hΒ^½||F/[logφ sqrt(binom(N,2))]. Changing same-g
+polarization/Naimark cannot remove it; additive one-copy old costs cannot
+cancel it. This applies to the specified marginal-feature extension and
+full preparation domain. Genuinely multi-copy costs/constraints remain.
+The bound decays1/N; it is not a limit no-go. Exact correlated stationary
+preparations with controlled finite marginals/source are the next recovery
+construction, not an imposed IID variation restriction.
+
+**A real positive preparation/root control on the ORIGINAL carrier.**
+K={±1}⁴ times CAR16 has parity halves128. Rank128 graph
+P_U=½[[I,U],[U*,I]], C_U=W_U/sqrt128, fits the existing reference128
+and has every even source of the virtual rank256 uniform K bath.
+No AF2 factor is added; doubling the priced carrier would change J.
+For equal-energy k↔−k mixing its canonical fixedRIGHT Euler holds
+with three energy classes2,8,6, rather than one eigenvalue. The NEW
+same-price K-bath metric equations have an interval-certified root
+d≈.01949758334103, o≈.0004005066941641, radius10^−12,
+contraction<10^−6, preserving feedback multiplicity2048 and n8192.
+Translation/S4 and exact full-CAR moments prove all local coframe,
+24proper-link and true observer equations there. FixedRIGHT whitening
+is handled without the false (Δ−R)C=0 shortcut. The root is conditional
+at fixed old calibration; dynamic clock/PREP/Book selection is not claimed.
+
+Its U can carry odd scalar/top coherence waves while evenHJR is constant.
+The LITERAL fullStep occupation law sees them and has complete retained-
+site entropy curvature −p³/512. Thus the difference between that extra
+Golden record source and oldHJR is demonstrated on a real constrained
+joint-root family without omitting grades, reference or J multiplicity.
+This is not independent physical matter, a new amplitude clock readout,
+or an Einstein stress assigned to a diagnostic density.
+
+The newly attached C_Y dialogue is byte-identical to the already preserved
+6.33 source. Its own finite-t capacity/cotangent Euler bridge is retained.
+It has moving conditional output proportions and ties, so the OTHER
+detector's strict-mode κ theorem cannot identify its mean with MAP.
+Its actual immutable-RIGHT PREP and Book binding remain a separate
+constructive route; its vacuum root is not transplanted into E_N.
+
+The C_Y PREP step now has a sharp actual-class test, beyond the old
+arithmetic obstruction. If canonical incoming fineRIGHT is preserved,
+matched success is at most13p6 (typeY5p6), whereas its vacuum capacity
+requires s*>2p2>13p6. A projector bound even separates unmatched
+approximants. The ideal oldRIGHT-only13an remains possible by exact
+Gram equality. Its missing actuator must change FRESH right-descendant
+multiplicities while preserving the entire OLD jointRIGHT/reference;
+C_Y and the named fineLEFT/scene placements cannot do that. This is
+not a ban on the broader encoded commutant or an assumed physical rule.
+
+A constructive correlated-preparation consumer now exists. With query
+constrained to actualV(g), diagonalize the matter compression A_N(g), not
+an independently free query. Exact spectral projectors of the required
+RIGHT ranks and overlap epsilon give a stationary isospectral density
+with marginal error<=2sqrt(epsilon); source and C2 transfer keep their
+own derivative/gap terms. More concretely the TWO-Hodge quadratic
+clock qutrit has a radial reducing eigenstate with excitation<=10sqrtN,
+fixed-k marginal error<=2sqrt(10k)N^-1/4, and O1/N geometric2jet error
+for its moving-coefficient compression. This is exact correlated
+stationarity rather than an approximate residual. It is not yet the full
+Lorentzian/site/RIGHT nonlinear effect: coherent grade14 in actualm0
+cannot be tensor-appended to the pureclock proof. Carry that full-code
+and complete-price transfer into the next calculation.
+
+Continue with ONE actually admitted full execution: derive its history/
+raw-price/PREP law and solve the corresponding correlated-preparation
+and clock normals with controlled source/refinement. Existing nonlinear
+Einstein–scalar, direct-density cubic Ward and geometric readout remain
+consumed premises. Finite joint-root control and equation equivalence
+do not establish forced physical GR; raw#216 and end-to-end closure stay OPEN.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября
