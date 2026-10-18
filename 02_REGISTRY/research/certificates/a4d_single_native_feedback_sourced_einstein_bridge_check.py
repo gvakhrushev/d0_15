@@ -179,6 +179,38 @@ assert source_diagonal==FQ(3,4)
 # The spectral pinch of the first direction is zero, whereas the
 # second is unchanged: no Hessian inverse or spectral-gap premise.
 
+# Exact lattice Leibniz/metric-kernel defect at finite mesh h=1/2;
+# no assertion that this scalar toy already is the full D0 operator.
+n=8
+mesh=FQ(1,2)
+profile=(0,1,3,2,-1,0,4,3)
+def mul(A,B):
+    return [[sum(A[i][k]*B[k][j] for k in range(n))
+             for j in range(n)] for i in range(n)]
+def diff(A,B):
+    return [[A[i][j]-B[i][j] for j in range(n)] for i in range(n)]
+def times(A,x):
+    return [[x*v for v in row] for row in A]
+def diag_n(v):
+    return [[v[i] if i==j else 0 for j in range(n)]
+            for i in range(n)]
+identity=diag_n([1]*n)
+forward=[[int(j==(i+1)%n) for j in range(n)] for i in range(n)]
+backward=[[int(j==(i+n-1)%n) for j in range(n)] for i in range(n)]
+dplus=times(diff(forward,identity),1/mesh)
+dminus=times(diff(identity,backward),1/mesh)
+pplus=[(profile[(i+1)%n]-profile[i])/mesh for i in range(n)]
+pminus=[(profile[i]-profile[(i+n-1)%n])/mesh for i in range(n)]
+def comm(A,B):
+    return diff(mul(A,B),mul(B,A))
+source_plus=diff(times(mul(diag_n(pplus),dplus),-1),
+                 comm(mul(diag_n(profile),dplus),dplus))
+source_minus=diff(times(mul(diag_n(pminus),dminus),-1),
+                  comm(mul(diag_n(profile),dminus),dminus))
+assert source_plus==times(mul(diag_n(pplus),mul(dplus,dplus)),mesh)
+assert source_minus==times(mul(diag_n(pminus),mul(dminus,dminus)),-mesh)
+assert any(v for row in source_plus for v in row)
+
 print(json.dumps({
     "terminal":"PASS: exact Q(phi) sourced feedback/isocoupling",
     "golden_test_z":"p^2 (research evaluation, not physical selection)",
