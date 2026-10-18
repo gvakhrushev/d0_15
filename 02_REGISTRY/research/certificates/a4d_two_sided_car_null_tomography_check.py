@@ -241,19 +241,44 @@ for i in range(N):
     require(RHO_SMALL[i,i]>sum(abs(RHO_SMALL[i,j]) for j in range(N) if j!=i),
             'positive exact nine-direction preparation')
 
-# A measured address distribution can *conditionally* fix the chi-mode without
-# any fitted Einstein counterterm, if and only if the native complete-code
-# probabilities/source actually equal these addresses. The Hessian is Fisher,
-# not part of the five-flag price unless an inherited record supplies it.
+# REAL Book pathwise Cost-Info is H_phi(w), while the EXPECTED Info gain
+# is D_KL(w||mu)/ln(phi). They have OPPOSITE Hessian signs. A KL-as-action
+# term is an explicitly rejected shortcut unless a different action is proved.
 mu1,mu2,muc=sp.Rational(1,8),sp.Rational(1,4),sp.Rational(5,8)
 xi1,xi2=sp.symbols('xi1 xi2',real=True)
 FISHER=sp.Matrix([[mu1+mu1**2/muc,mu1*mu2/muc],
                   [mu1*mu2/muc,mu2+mu2**2/muc]])
 require(FISHER[0,0]>0 and FISHER.det()>0,
-        'conditional address Code-Info strictly convex in conformal preparation')
+        'conditional KL/Info Fisher Hessian positive')
+BOOK_HESSIAN=-FISHER
+require(BOOK_HESSIAN[0,0]<0 and BOOK_HESSIAN.det()>0,
+        'genuine Book Cost-Info entropy Hessian negative definite')
 require(sp.expand((sp.Matrix([xi1,xi2]).T*FISHER*sp.Matrix([xi1,xi2]))[0]
              -mu1*xi1**2-mu2*xi2**2-(mu1*xi1+mu2*xi2)**2/muc)==0,
         'exact Fisher Hessian')
+chi1,chi2=sp.symbols('chi1 chi2',positive=True)
+w1,w2=mu1*chi1,mu2*chi2
+wc=1-w1-w2
+H_BOOK=-w1*sp.log(w1)-w2*sp.log(w2)-wc*sp.log(wc)
+KL_INFO=w1*sp.log(w1/mu1)+w2*sp.log(w2/mu2)+wc*sp.log(wc/muc)
+book_at_ref={chi1:1,chi2:1}
+book_grad=sp.Matrix([sp.simplify(sp.diff(H_BOOK,x).subs(book_at_ref))
+                     for x in (chi1,chi2)])
+kl_grad=sp.Matrix([sp.simplify(sp.diff(KL_INFO,x).subs(book_at_ref))
+                   for x in (chi1,chi2)])
+require(book_grad[0]!=0 and book_grad[1]!=0 and kl_grad==sp.zeros(2,1),
+        'old history entropy source does not select PF profile')
+require(sp.Matrix(2,2,lambda i,j:sp.diff(H_BOOK,(chi1,chi2)[i],
+                                       (chi1,chi2)[j]).subs(book_at_ref))==BOOK_HESSIAN,
+        'Book source Hessian is the *negative* Fisher')
+require(sp.Matrix(2,2,lambda i,j:sp.diff(KL_INFO,(chi1,chi2)[i],
+                                       (chi1,chi2)[j]).subs(book_at_ref))==FISHER,
+        'KL/Info Hessian positive')
+# Narrow true positive premise: the already-owned compatible AF trace,
+# IF physically imposed on these exact address observables, forces chi=1.
+require(sp.simplify((w1/mu1).subs(book_at_ref)-1)==0 and
+        sp.simplify((w2/mu2).subs(book_at_ref)-1)==0,
+        'tracial marginal fixes every positive AF address weight')
 
 # Negative control: duplicated ninth ray loses one independent off-diagonal shear component.
 Hbad=sp.Matrix([hrow(s) for s in DIRECTIONS[:8]+DIRECTIONS[:1]])
@@ -315,19 +340,24 @@ res={
     'cross_setting_noncommutation':True,
     'singlet_complete_law':'(0,1/2,1/2,0)',
     'exact_state_response_local_surjectivity':True,
-    'address_binding_conditional_Fisher_Hessian':str(FISHER),
+    'address_KL_Info_Fisher_Hessian':str(FISHER),
+    'genuine_Book_Cost_Info_entropy_Hessian':str(BOOK_HESSIAN),
+    'Book_entropy_source_at_nonuniform_PF':'NONZERO',
+    'conditional_tracial_AF_marginal_fixes_chi':True,
     'raw_chirality_eigenspaces':'(-3)^2,(-1)^6,(+1)^6,(+3)^2',
     'triplet_isotropic_q':'1/3',
     'tracefree_lorentz_null_tensor_matches':True,
     'conformal_focusing':'G[chi^-1 g](k,k)-G[g](k,k)=2 r^-1 Hess_g(r)(k,k), r=sqrt(chi)',
-    'negative_controls':['cannot combine nine different directions as one commuting measurement',
+    'negative_controls':['cannot identify KL information gain with native Cost-Info action',
+                         'native entropy source at unequal PF reference is not zero',
+                         'cannot combine nine different directions as one commuting measurement',
                          'naive raw relative-chirality split has four eigenvalues',
                          'opposite central orientation has no silent subspace',
                          'one-sided span rank 4, not 9',
                          'duplicated mixed sample drops rank to 8',
                          'nonconstant conformal chi leaves nonzero Einstein null defect'],
     'unproved':['physical admission of left/right projector measurements in the original Julia128 words',
-                'independent inherited-address complete code prior and its source',
+                'physical tracial-compatibility of actual prepared AF marginal at inherited address effects',
                 'same-full-price geometric/matter source identification',
                 'dynamical selection or sourcing of the conformal GNS amplitude',
                 'real null-flux normalization, local stress conservation and spacetime refinement']
