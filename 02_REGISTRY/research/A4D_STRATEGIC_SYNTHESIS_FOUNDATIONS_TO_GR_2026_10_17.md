@@ -1463,6 +1463,101 @@ material consumer — реальный independently varied native M либо
 Произвольный spectral-controller witness не является материей и не
 заменяет ни (7.25), ни metric-family reduced equations.
 
+### 7.11. Полная цена действительно различает metric family: actual pinching и материальный jet
+
+Вход `bd646b76`; [full-source §§6.26–6.27](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+потребляет spectral-pinching identity параллельного [same-feedback owner, §8](A4D_SINGLE_NATIVE_FEEDBACK_SOURCED_EINSTEIN_BRIDGE_2026_10_18.md)
+на исходном full-Lorentz D_can. На ψ-family меняется inverse-frame
+coefficient только v-роли; coframe legs и native creation coefficients
+нельзя отождествлять. При fixed observer/clock/counting measure
+
+    dot D=ell⁻¹[C(dot u_v)(S_v−I)+(S_v*−I)C(dot u_v)*],
+    dot Δ={D,dot D}.                                (7.26)
+
+Это уже определённый actual source, а не Δ, выбранный из star E.
+На плоском допустимом strict-window background есть точные resonant
+Fourier blocks внутри ОДНОГО eigenvalue Δ. Для k_v=θ,l_v=−θ,
+q=−2θ, z=e^(iθ)−1,w=−(1−e^(2iθ))ψ_q/h,
+
+    (dot Δ)_(l,k)=2ν²w ell⁻²[|z|²cc*+z²c*c],
+    norm=16ν²|sinθ|sin²(θ/2)|ψ_q|/(h ell²).         (7.27)
+
+Все16 CAR modes сохранены. Поэтому Pinch_Δ(dot Δ)≠0 и нет
+тождественного conjugacy Ward для fixed-label ψ-family. При ell=h,
+θ=κ_phys h norm→4ν²|κ_phys|³|ψ_q|: источник может пережить
+smooth resolved limit, а не только grid-scale oscillation. В одном
+flat energy shell есть явная eigenpreparation с full reference128,
+для которой thermal И весь v8 feedback trace sources0, а R-source
+равен−6ν²/(h ell²). Она не постулируется физически выбранной; это
+точный counter к переносу ВСЕХ star roots через одну eigenprep/Ward.
+Другие joint preparations/roots этим не исключаются.
+
+Последующий disjoint вход `0a949bf3` с scalar current model потреблён
+сильнее: в full-source (13bx1–2) source-divergence identity выведена
+для самого full-CAR D_can и всей данной conditional H+J_v8+R цены.
+При fixed observer/measure/clock, A={D,W}, W=dS/dΔ,
+
+    j_r(x)=2Re tr_CAR[((S_v−I)A C(LηFᵀe_r))_(x,x)],
+    DS[ψ]=(h ell)⁻¹Σ_x ψ(x)Σ_rD_r⁺j_r(x).          (7.27a)
+
+Значит metric-family stationarity — ТОЧНО actual current-divergence
+equation, без новой Einstein density или inverse Hessian. Доказательство
+есть cyclic trace и backward summation by parts, со всеми noncommuting
+links/preparation/resolvents. Narrow full16 witness даёт DS=2 обоими
+способами при eigenprep: её одной недостаточно для conservation.
+Теперь нужно потребить independent matter/embedding Euler ТОЙ ЖЕ
+программы в(7.27a). Moving observer, clocks и upstream controller
+sources сохраняют собственные дополнительные строки.
+
+Есть положительный диагностический результат: ЕСЛИ actual operator
+имел бы geometric siteweight ω=det e/det e₀, его собственный whitening
+добавляет [dot(logω)/2,d]. Для ТОГО ЖЕ resonant block norm становится
+|sin(θ/2)| умножить на(7.27), то есть O(h) в resolved scaling.
+Точной finite отмены нет и UV operator-norm estimate не утверждается.
+Counting-site owner прямо отделяет свою меру, AF/PF и geometric volume;
+этой связи пока нет. Следующий положительный шаг — вывести её из
+исходного sampling/comparison execution вместе с полным source, а не
+вписать нужную density в действие. Full-experiment Ward, одновременно
+переносящий embedding X, сохраняет label arrays и сам не даёт этого
+fixed-label operator equality.
+
+Материальный consumer также теперь конкретен. Для буквальных двух
+последовательных записей с next observer и СТАРЫМ cut существует
+normalized whole-blank raw16 curve (13by). После удаления настоящего
+cut-preserving linear conjugacy её normal feedback имеет
+
+    B_hat(c)=B₀+cM+O(c²), c=ε²,
+    M_diag=(4−7p)_(0,2),(6−10p)_(4,8),p⁴_(12),(2+p)_(14).  (7.28)
+
+Остальные entries0, complement сохранён. Это настоящий nonisospectral
+operator jet исходной chronology, с двумя рождающимися eigenchannels;
+не произвольный spectral controller. Even normal form analytic по c
+доказана через её existing finite blocks/parity, не физическим допуском
+дополнительного diagonalizing gate. На actual star c=p²t² выбор ε=p tχ
+даёт математическому same-feedback composite член μχ² с
+μ(2⁻²⁰)=0.4635248654, μ(p²)=0.2127014244. Его коэффициент выведен
+из resolvent, не fitted. При ε=tχ был бы μ/p²: общая нормировка сохранена.
+
+Это снимает нулевой-M препятствие для chronology, но её retained8
+scene не есть fixed nine-word scene528. Composite word и полная
+rest-price должны принадлежать тому же исполнению. Сам μχ² — local
+potential, и без действительного compensating rest source его matter
+Euler снова зануляет малую χ-ветвь. Независимая on-shell материя не
+объявляется из off-shell jet. Owned same-Q heat здесь постоянно;
+неизвестный remaining R нельзя заменить Rayleigh из другого programme.
+
+Наконец actual creation/transport query имеет общий rational inverse
+без деления на Lorentz norm u: cofactor identity даёт положительный
+denominator (uᵀu)det(LᵀL) для любого u≠0, включая null. Это усиливает
+алгебраический compiler interface §7.10, но не превращает его C³
+предел в exact finite polynomial-amplitude oracle.
+
+**Изменение маршрута:** оставшийся reduced source уже не абстрактный
+«проверить Ward». Требуются actual measure/sampling binding и совместные
+matter/rest equations одной программы, затем source-controlled roots
+и spatial limit. Этот checkpoint не добавляет действия и не закрывает
+physical/global ОТО; старые root/heat/Lean suites не переигрываются.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

@@ -2313,6 +2313,246 @@ control, конечную determinant/metric формулу, non-skew Gram trans
 root suite. [Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_CRITICAL_FAMILY_SOURCE_RESULT.json)
 сохраняет physical_GR=false и exact_compiled_roots=false.
 
+**Рациональное усиление чтения, без null-ветви.** Для principal
+whitening и actual query X=C(u)ΛM, M∈SO(1,3), u≠0, достаточно
+настоящих grade0→1 и grade1→2 блоков:
+
+    u=X|vac>, B_(ab),j=u_a M_bj−u_b M_aj,
+    s=uᵀu>0, T_aj=Σ_b u_b B_(ba),j,
+    T=sM−u aᵀ, a=Mᵀu.                              (13br1)
+
+Пусть R_j=u e_jᵀ, cof означает adjᵀ, а столбцы матрицы L размера16×4
+равны vec[cof(T+R_j)−cof(T)−s²ηR_jη]. При
+r=vec[s²ηTη−cof(T)], H=LᵀL имеем ТОЧНО
+
+    H>0, a=H⁻¹Lᵀr,
+    M=[det(H)T+u(adj(H)Lᵀr)ᵀ]/[s det(H)].           (13br2)
+
+Доказательство: cof(T+u aᵀ) аффинен по a; у каждого minor две
+колонки rank-one update пропорциональны. Уравнение cof(M)=ηMη
+после умножения на s³ даёт La=r. Если Lb=0, то
+δM=u bᵀ/s и K=M⁻¹δM удовлетворяют
+tr(K)I−Kᵀ=ηKη. Следовательно tr K=0, ηK антисимметрична и имеет
+ранг≤1, значит K=0 и b=0. Поэтому det H>0. Деления на uᵀηu
+нет; формула охватывает timelike, spacelike и ненулевые null u.
+При u=0 сам X=0 для любого M: граница существенна.
+
+На невырожденном coframe chart конечная star-сумма теперь имеет
+общий положительный polynomial denominator D и числитель N=D P_w
+в actual query entries. На критическом семействе P_w=DP_w=0 также
+N=DN=0. Это снимает branch-root препятствие алгебраического чтения.
+Точное конечное исполнение polynomial amplitude из исходных gates
+отсюда НЕ следует: controlled-query построение выше остаётся C³
+пределом. Echo V*(I−2Q)V даёт F=4A*A(I−A*A), A=QVP, но само
+требуемое точное A нельзя объявить новым oracle.
+
+### 6.26. Actual metric-kernel source: спектральная мода сохраняется в полном Dirac
+
+Потребляем [spectral-pinching identity, §8](A4D_SINGLE_NATIVE_FEEDBACK_SOURCED_EINSTEIN_BRIDGE_2026_10_18.md),
+вход `bd646b76`, на действительном D_can из [full-Lorentz owner](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md),
+а не на Δ, определённом из желаемого star E. Это broad true-adjoint
+matrix domain; прежние stored own-leg/parallel-observer constraints
+исключают ненулевую компактную ψ-кривую с неизменными links.
+
+Типы различны: star использует h-scaled coframe legs, native creation
+использует u_r=LηF_rᵀ, F=e⁻¹. На null pp-wave family §6.24,
+d_r=D_r⁻ψ и t=τ/h, формула Sherman–Morrison даёт
+
+    e_τ=e+t e_−dᵀ,
+    F_τ=F−t e_v dᵀF/(1+t d_v),
+    dot u_v=−h⁻¹ LηFᵀd, dot u_(r≠v)=0.             (13bs)
+
+При fixed observer, counting-site measure, clock и U_v=I настоящий jet:
+
+    dot D=ell⁻¹[C(dot u_v)(S_v−I)
+                       +(S_v*−I)C(dot u_v)*],
+    dot Δ={D,dot D}.                                (13bt)
+
+Значит remaining row есть Tr[(ρ−τ_heat B⁻¹)dot Δ] на genuine
+eigenpreparation для H+R; для всей условной v8 цены добавляется её
+собственный feedback derivative. Это конкретный операторный consumer.
+
+**Точный finite counter к автоматическому Ward.** Берём плоскую
+периодическую решётку размера L, кратного4, null η с η_+−=1,
+n=(e_++e_−)/sqrt(2), h_n=I, links I. Для strict Julia window вводим
+фиксированное 0<ν<κ<1: e_τ=ν⁻¹(I+(τ/h)e_−dᵀ), так что u_r(0)=νηe_r.
+Малые τ обоих знаков принадлежат открытому matrix domain. Это
+также точная flat star-critical family, не утверждение о свободном
+глобальном замыкании прежней искривлённой семьи.
+Сохраняется actual α=p²ell²/128 владельца: max αΔ₀=p²ν²/8<1−p³,
+так что heat/feedback pencil также остаётся внутри своего окна.
+
+Пусть k_v=θ, l_v=−θ, q=l−k=−2θ, остальные momentum одинаковы.
+Для Fourier coefficient ψ_q≠0 положим
+z_θ=e^(iθ)−1, w_q=−(1−e^(2iθ))ψ_q/h,
+c=C(ηe_v). Все16 CAR grades сохраняются. Тогда
+
+    Δ₀(k)=Δ₀(l)=ν² ell⁻² Σ_r |e^(ik_r)−1|² I_16,
+    (dot Δ)_(l,k)=2ν² w_q ell⁻²
+                         [|z_θ|² cc*+z_θ² c*c].    (13bu)
+
+Обратный блок сопряжён. Оба cc*,c*c — rank8 complementary
+projectors, поэтому этот блок имеет rank16 и norm
+
+    b=16ν² |sin θ| sin²(θ/2)|ψ_q|/(h ell²)>0.       (13bv)
+
+Он лежит ВНУТРИ одного eigenspace Δ₀: Pinch_Δ(dot Δ)≠0. Следовательно
+dot Δ не является [K,Δ] ни при каком K. Для smooth compact ψ с
+ненулевым соответствующим Fourier coefficient тот же блок читается
+без замены fixed collar; alternating ψ — лишь точный периодический
+контроль. При ell=h и θ=κ_phys h он даёт
+b→4ν²|κ_phys|³|ψ_q|, а не исчезающий Nyquist-only defect.
+
+**Источник полной данной цены, с reference128.** При θ=π/2,
+ψ(v)=(-1)^v имеем b=8ν²/(h ell²). В shell Δ=4ν²/ell² для L=4
+28 momentum states×16=448 coordinates. Шесть resonant momentum pairs
+дают96 отрицательных и96 положительных собственных значений pinched
+jet, остальные256 нулевые. Для любого L, кратного4, этот448-dimensional
+подноситель остаётся. Берём ρ=(Π_(−,96)+Π_(0,32))/128:96
+отрицательных vectors и32 нулевых, и её pure Schmidt purification
+на настоящем reference128. Все normalized preparation first rows
+равны0, поскольку это eigenpreparation Δ. Thermal и весь v8 feedback
+trace derivatives равны0: dot Δ имеет только nonzero-momentum blocks.
+Но истинный source условной цены (8) владельца равен
+
+    D(H+J_v8+R)[ψ]=DR=−6ν²/(h ell²)≠0.             (13bw)
+
+Это явный matrix/preparation witness, не выбор данной подготовки
+исходным Book и не запрет других совместных корней. Он запрещает
+переносить ВСЕ star roots в полную цену только по eigenprep/Ward.
+
+**Положительный measure diagnostic, без подмены программы.** Если
+ОТДЕЛЬНО принадлежит weight ω_τ=det(e_τ)/det(e₀), то на fixed Hilbert
+whitening raising operator есть sqrt(ω)d sqrt(ω)⁻¹. Его дополнительный
+jet [−w/2,d₀] меняет (13bu) в
+
+    (dot Δ_ω)_(l,k)=ν² w_q(z_θ+bar z_θ)ell⁻²
+                            [bar z_θ cc*+z_θ c*c],
+    ||(dot Δ_ω)_(l,k)||=|sin(θ/2)| b.               (13bx)
+
+Для fixed resolved κ_phys, ell=h, это O(h); при θ=π/2 точной
+конечной отмены всё ещё нет. Это оценка данного resonant block, НЕ
+полная operator-norm/raw-#216 оценка всех UV modes. Counting-site owner
+явно отделяет ω, geometric volume и AF/PF measure. Пока их actual
+execution binding не доказан, (13bx) нельзя подставлять вместо (13bu).
+Следующий source consumer — именно принадлежащий measure/sampling
+и оставшиеся совместные уравнения, а не новая симметрия по аналогии.
+
+**Положительное замыкание reduced source в действительный current.**
+Последующий disjoint вход `0a949bf3`, [§10 того же source owner](A4D_SINGLE_NATIVE_FEEDBACK_SOURCED_EINSTEIN_BRIDGE_2026_10_18.md),
+дал scalar difference model. Для НАСТОЯЩЕГО full-CAR D_can здесь
+тождество также выводится точно, без product-rule approximation.
+Сохраняем fixed observer L, counting measure, α,β,z и U_v=I данной
+ψ-кривой. Для принадлежащей условной цены (8) на eigenpreparation
+полный fixed-field covector имеет вид
+
+    DS=Tr(W dot Δ),
+    W=ρ−τ_heat B⁻¹+M_feedback zβ B^(m−1)F_price⁻¹,
+    B=I−αΔ, F_price=(1−z)I+zB^m.                  (13bx1)
+
+Все thermal/feedback modes и multiplicities здесь сохранены.
+Пусть A={D,W}, a_r(x)=L_xηF_xᵀe_r и C(a_r) — actual onsite
+creation multiplication. ρ может не коммутировать с D внутри
+вырожденного Δ-shell; заменять A на2DW нельзя. Из (13bt)
+следует точный current и summation-by-parts source:
+
+    j_r(x)=2Re tr_CAR[((S_v−I) A C(a_r))_(x,x)],
+    DS[ψ]=−(h ell)⁻¹ Σ_(x,r)(D_r⁻ψ)(x) j_r(x)
+         =(h ell)⁻¹ Σ_x ψ(x) Σ_r D_r⁺j_r(x),
+    D_r⁺j(x)=j(x+r)−j(x).                         (13bx2)
+
+Доказательство: DS=Tr{D,W}dot D=2ReTr A dot d; затем один cyclic
+trace переносит scalar D_r⁻ψ в site diagonal, а backward summation
+by parts даёт последний знак. Noncommuting links, все CAR grades,
+настоящий marginal/reference и price resolvents остаются внутри D,W.
+Удобная local expression для j не постулирует его физическую
+локальность: W может содержать весь heat/history operator.
+
+Это заменяет неизвестную ψ-equation конкретной строкой
+Σ_rD_r⁺j_r=0 на free interior, equivalent стационарности по всем
+компактным ψ. В actual transverse-zero full16 block при ν=1/2,h=ell=1,
+φ=(1,1,−1,−1)/2 tensor vacuum и ψ=(1,−1,1,−1) получаем DS=2≠0,
+несмотря на eigenpreparation; прямой operator jet и divergence дают
+одинаковое число. Это не новый scalar Laplacian вместо D_can.
+
+Итак, для ЭТОЙ условной полной цены metric-family equation и source
+current divergence — одна точная задача. Пока independent matter/
+embedding Euler не вынудили её, conservation не объявляется теоремой.
+Если actual observer связан с m и движется, добавляется его собственная
+строка; clock/measure/controller и upstream Book price также нельзя
+потерять. Это конкретный следующий joint consumer вместо нового
+постулированного stress или требуемого Hessian inverse.
+
+### 6.27. У двух исходных записей есть настоящий nonisospectral material jet
+
+В отличие от fixed nine-word сцены §6.23, [буквальная chronology](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md)
+с next observer и СТАРЫМ price cut зависит от raw matter. Уточняем
+её operator jet, не повторяя прежнее доказательство J=J(γ).
+В mask basis0…15 при a=sqrt(p), Q=I,n=e₀ берём whole-blank raw curve
+
+    m₀=m₁₄=(sqrt(1−ε²)−a)/p,
+    m₁=m₁₅=1, m₃=m₁₃=ε/p, остальные0,
+    ||m||²=4(1−a sqrt(1−ε²))/p².                   (13by)
+
+Нормируем ВСЕ16 компоненты; old archive/reference state можно оставить
+тензорным множителем без изменения. Actual first recorded observer
+n₊=(sqrt(1−ε²),−ε,0,0). Для K=U_(n₊)U_(e₀), неизменного P=P_(e₀),
+B=P K*(I−P)KP, L=4p³, имеем B=B₀+εB₁+ε²B₂+…,
+B₀=L diag_(0,2,4,8), а
+
+    B₁=2a p³(E₄₆+E₆₄+E₈,₁₀+E₁₀,₈),
+    S=(a/2)(E₆₄−E₄₆+E₁₀,₈−E₈,₁₀),
+    S*=-S, [S,P]=0, [S,B₀]=B₁,
+    M=B₂−[S,B₁]/2.                                (13bz)
+
+M диагонален: entries0,2 равны4−7p;4,8 равны6−10p;12 равенp⁴;
+14 равен2+p; остальные0. В частности, это НЕ commutator jet:
+в настоящих zero-feedback channels12,14 рождаются два eigenvalues.
+Ни один из16 input/output rows и complement не удаляется.
+
+Есть точная even normal form B_hat(c)=B₀+cM+O(c²), c=ε².
+Старые owned blocks (0),(2),(4,6),(8,10),(12,14) имеют parity
+B(−ε)=Λdiag(1,−1,1,1) B(ε) Λdiag(1,−1,1,1).
+В первых двух2-blocks gap L>0; в последнем после деления на ε²
+leading gap4p>0. Real analytic odd-angle diagonalizers дают eigenvalues
+analytic по c, commute со старым P и сохраняют весь carrier.
+Это representation isometry, НЕ дополнительно разрешённый native gate.
+В исходном basis B(c) не объявляется C¹ при c=0.
+
+Можно точно потребить этот jet в [same-feedback normal form](A4D_SINGLE_NATIVE_FEEDBACK_SOURCED_EINSTEIN_BRIDGE_2026_10_18.md),
+ЕСЛИ фактический composite word использует именно эту chronology:
+её retained scene8+complement8 не отождествляется с fixed scene528.
+При a₀=p⁶, q=1−zL, r=1−z+za₀²,
+W_L=q⁻¹+a₀/r, W₀=1+a₀/q, A=p²+7p⁵, B_c=4−2p получаем
+
+    C₀=4W_L, Tr(W M)=−A W_L+B_c W₀,
+    μ=Tr(W M)/(L C₀).                              (13ca)
+
+Для прежнего star E=p²+p²t²f берём c=p²t² и ε=p tχ. Тогда сцена
+даёт μχ² в ТОЙ ЖЕ нормировке weak action. При ε=tχ вместо этого
+получился бы коэффициент μ/p²; его нельзя потерять. Это настоящий
+материальный operator response исходной записи, без fitted stress.
+Числа μ(2⁻²⁰)=0.4635248654 и μ(p²)=0.2127014244 положительны.
+На0<z<1 знак меняется ровно один раз, при z≈0.7054969625; это
+вычисленный diagnostic, не новая физическая калибровка.
+
+Однако μχ² само по себе даёт локальный potential: при этих z свободное
+χ-уравнение зануляет малую χ-ветвь. Ненулевой off-shell M ещё не даёт
+независимого on-shell stress. Это согласуется с уже owned scalar
+chronology matter reduction. Её same-Q heat постоянно на данной кривой;
+оставшийся R у этого owner — сохранённая неизвестная цена, НЕ Rayleigh
+оператор v8. Смешивать эти H/R между программами нельзя. Нужны actual
+компенсирующий rest source, spatial/connection dependence и совместный
+nonlinear limit ТОЙ ЖЕ программы. Новое M снимает нулевой-jet барьер
+для chronology, но не выбирает требуемую физическую цену.
+
+[Новый bounded consumer](sources/d0_af_star_full_lattice_2026-10-17/check_native_operator_kernel_source.py)
+проверяет actual16CAR pinching, conditional measure correction,
+reference128 witness, chronology normal jet и rational query inverse.
+Он читает только определения старых creator/ext/record; старые suites
+не запускаются. [Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_OPERATOR_KERNEL_SOURCE_RESULT.json)
+сохраняет границы physical_GR=false и whole_joint_roots=false.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

@@ -23,7 +23,23 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-Latest root consumer, input `c5d7662e`: [strategic §7.10](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+Latest actual-source consumer, input `bd646b76`: [strategic §7.11](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+computes a nonzero resonant Dirac pinch on the metric family, including
+an explicit full-reference128 eigenpreparation with a nonzero source of
+the conditional full price. Eigenprep and geometric Ward alone therefore
+do not transfer all star roots. A separately supplied geometric measure
+reduces the resolved resonant block to O(h), but its actual D0 binding
+is still required. The original two-record chronology has a genuine
+nonisospectral material jet; its weak quadratic potential alone returns
+the small matter branch to zero. Continue through actual sampling/measure
+and joint matter/rest equations of ONE programme. Do not identify the
+chronology scene8 with intrinsic scene528 or borrow its heat/Rayleigh.
+The later0a949bf3 input is consumed on the actual full-CAR operator:
+the reduced metric source is exactly a discrete current divergence.
+Continue by deriving that conservation from the same programme's
+independent matter/embedding equations, including moving observer costs.
+
+Previous root consumer, input `c5d7662e`: [strategic §7.10](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 proves the literal scene/whole-frame source zero and identifies an exact
 SAME-collar metric critical family, beyond internal Lorentz gauge.
 It constructs a C3-convergent compiler with EXACT finite Lorentz Ward

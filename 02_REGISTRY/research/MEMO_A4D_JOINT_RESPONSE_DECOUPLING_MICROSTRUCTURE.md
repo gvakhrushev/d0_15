@@ -2,6 +2,30 @@
 
 ## 18 October 2026 — native source, preparation and nonlinear GR synthesis
 
+**Actual metric-source consumer, input `bd646b76`:**
+[Strategic §7.11](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+computes the true inverse-coframe Dirac jet on the star metric family.
+A nonzero resonant spectral pinch survives resolved scaling in the
+fixed-counting programme; an explicit full-reference128 eigenpreparation
+has zero thermal/feedback trace source but nonzero Rayleigh source.
+This excludes automatic transfer of all star roots by eigenprep/Ward,
+not other joint roots. An independently supplied geometric siteweight
+reduces that resonant block to O(h); its physical measure binding and
+uniform source limit are still required. The original two-record CAR16
+chronology also has an actual nonisospectral normal material jet,
+including two born feedback channels. Its weak contribution is a local
+quadratic potential, which does not alone produce on-shell matter.
+Retained8 chronology is not identified with the intrinsic scene528;
+no rest-price or native gate is added. The next parent step is the
+actual measure/sampling and matter/rest source of ONE programme.
+The subsequent disjoint0a949bf3 scalar-current input is consumed by an
+exact identity for the actual full-CAR conditional price: its metric
+family source equals the discrete divergence of a current built from
+{D,dS/dDelta}. The remaining conservation equation is now explicit;
+eigenpreparation alone does not enforce it.
+One new bounded source check covers these rows and rational query
+reconstruction; older mathematical suites are reused unchanged.
+
 **Exact critical-family consumer, input `c5d7662e`:**
 [Full-source §§6.23–6.25](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 proves zero ordinary-trace scene source for the actual intrinsic word and

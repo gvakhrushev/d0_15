@@ -12,6 +12,48 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: actual operator sources on the metric critical family
+
+Input `bd646b76`; the preceding goal turn published the exact fixed-collar
+star family and a Lorentz-covariant compiler. Consume the disjoint
+single-feedback owner's spectral-pinching identity, rather than derive
+another abstract Ward theorem. Read-only assistants calculate the actual
+full-Lorentz Dirac variation on that family, the nonisospectral operator
+jet of the original two-record CAR16 chronology, and the rational inverse
+of the already supplied creation/transport query. Root owns this brief,
+the same full-source/strategic/primary/current-route consumers and one
+bounded source check in the existing full-lattice packet. Foreign source
+owners and the untracked field-inverse experiment remain untouched.
+
+The consumer is the remaining metric-family reduced source, including
+the genuine full carrier and return cut. Keep the distinction between
+star coframe legs and native inverse-frame coefficients; the literal
+stored-positive domain and the full-Lorentz true-adjoint matrix domain
+are different. The decisive check is an actual pinched Dirac jet on a
+finite flat Fourier resonance, with all16 CAR components, plus the
+chronology's normal operator jet after removing its genuine conjugacy.
+Do not infer a whole-price cancellation, independent on-shell matter,
+physical gate admission or exact roots from a trace identity. No old
+certificate, root suite or Lean replay is needed for these new rows.
+
+Consumed in full-source §§6.26–6.27 / strategic §7.11: the actual
+fixed-counting Dirac has a nonzero metric-family resonant pinching
+source, with a full-reference128 eigenpreparation witness. The optional
+geometric-density correction reduces the resolved block to O(h), but
+is not borrowed into the programme. The original two-record chronology
+has a real nonisospectral normal material jet; its weak quadratic
+potential alone does not sustain a nonzero matter branch. Rational
+query reconstruction now has one positive denominator including null
+legs; exact finite amplitude execution remains separate. Independent
+review fixed the common star/chronology scaling and checked the full
+source witness. Continue with actual measure/sampling and matter/rest
+equations of one programme, not another coefficient/Ward catalogue.
+The subsequent disjoint0a949bf3 scalar-current input is consumed by an
+exact source-divergence formula for the ACTUAL full-CAR D_can and its
+conditional H+J+R covector, at fixed observer/measure/clock. Independent
+matter/embedding Euler must still enforce this current equation; the
+bounded witness distinguishes it from eigenpreparation stationarity.
+
 ### 18 October: exact critical-family and covariant compilation consumer
 
 Input `c5d7662e`; the preceding goal turn made progress by publishing
