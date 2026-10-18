@@ -155,6 +155,32 @@ Consequently (F9–F12) give a **new admissible-candidate source architecture**,
 
 **Physical fork:** (a) if the native full verification programme ALREADY registers both path ends as classical data (with the required physical price), then unfold that exact entire history and consume (F9–F13); (b) if it preserves the entire RIGHT matrix algebra as an untouched spectator, (F11) is not established and the existing LEFT-only conditional branch remains the owner. Check the actual original native tape before choosing. The source equalities alone do not force an Einstein gravitational law or an independent stress tensor.
 
+### 4.1. Positive geometry-source preservation despite RIGHT-record disturbance
+
+The negative control above has a **precise positive companion** on the actual bimodule geometry subalgebra. Let `Q_beta^R=R(P_beta)` be the full orthogonal RIGHT path projections and let the unselective complete RIGHT readout be
+
+```
+Delta_R(rho) = sum_beta Q_beta^R rho Q_beta^R.
+```
+
+For every effect `A(y)` in the **commutant of these RIGHT projections** on one fixed field chart, `Delta_R(A)=A`. By self-adjointness of this finite conditional expectation in the trace pairing,
+
+```
+Tr[Delta_R(rho) A(y)] = Tr[rho A(y)]                   (F14)
+```
+
+EXACTLY, for **every** full GNS density and every field. If the RIGHT projectors are field-independent in the declared transported frame and both `A(y)` and `D_y A(y)` commute with them, then
+
+```
+D Tr[Delta_R(rho) A]
+ = Tr[Delta_R(D rho) A]+Tr[Delta_R(rho) D A]
+ = Tr[D rho A]+Tr[rho D A].                           (F15)
+```
+
+Thus a complete RIGHT-copy/readout changes its own full retained classical history and generally dephases the noncommutative RIGHT archive, **but cannot change any geometric first source probed entirely through the original LEFT/bimodule effects commuting with RIGHT**. This is the exact operator-level criterion needed by the current #334 diagonal E and coframe source, not a vague claim that old RIGHT observations are unchanged. For example, in the exact 2×2 LEFT⊗RIGHT toy, a rational density has RIGHT offdiagonal expectation changed by `7/15` under dephasing while its full LEFT-effect probability and LEFT-effect first derivative stay identical. The criterion applies to the **specified** effects; a later CAR/query instrument with RIGHT-sensitive operations or a field-moving frame must be checked separately.
+
+Crucially, (F14–F15) do **not** say the complete **Book** Cost−Info source stays unchanged. The newly retained RIGHT outcome contributes the physically meaningful `H(R|L,J)` and its first variation, whose stationary effect is (F11–F12). That is the intended selection mechanism. No price is fitted: the geometry readout is nondemolition only **relative to its actual commuting observable algebra**, while the old quantum RIGHT archive is not. This also gives a decidable experiment: compare true geometric effects and their field jets with `Delta_R`; reject a claimed same-source binding at the first noncommuting or field-dependent `Q_beta^R` source.
+
 ## 5. Decisive checker and immediate parent consumer
 
 Run the new [exact path/source checker](certificates/a4d_gns_two_sided_path_unfolding_check.py). It enumerates all Bratteli paths for N=0..7, constructs the actual matched matrix-unit pairs, checks the **bijective midpoint fold**, every coarse prefix and arbitrary positive rational prefix-dependent partition weights, then independently checks the Fibonacci integer identities for N≤23 and all k≤N. Its hostile controls distinguish LEFT-only from LEFT×RIGHT finite preparations, verify the extra conditional RIGHT entropy and reject no-disturbance of coherent RIGHT matrix units. Integer, rational and path equalities are exact; reported asymptotic TV values are diagnostic, not a substitute for (F6).
