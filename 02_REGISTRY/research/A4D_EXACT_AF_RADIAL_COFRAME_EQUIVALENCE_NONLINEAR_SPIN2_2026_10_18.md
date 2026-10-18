@@ -181,6 +181,51 @@ For a genuinely MOVING scene B, (17) is an exact fibrewise equality at every B b
 
 The theorem therefore applies to TWO independently owned price consumers on the same full geometric AF effect. More generally, any linear combination of these with a nonzero common weighted first derivative and no independent extra field dependence has the SAME finite Palatini vacuum critical set by (2)–(11). Which one is physically selected matters for matter/clock coupling, but **within this geometric star sector it does NOT change the vacuum Einstein dynamics**.
 
+### 4.1. A genuine **nonempty stationary SCENE** for the actual two-tick feedback, with a positive transverse Hessian
+
+The geometric identity (17) need not freeze scene as an extra unvaried background. Let its already-owned full scene return cut be \(P_s\), rank528, inside the full22976-dimensional scene carrier. For a genuinely independently variable **complete** scene unitary \(W_s\), its original two-tick feedback effect is
+\[
+B(W_s)=P_sW_s^\dagger(I-P_s)W_sP_s
+      =K_s(W_s)^\dagger K_s(W_s),\quad
+K_s(W_s)=(I-P_s)W_sP_s.
+\tag{17a}
+\]
+Choose the **existing identity unitary programme** \(W_s=I\) on that FULL carrier: this keeps all528 retained modes, 22448 complementary modes and spectators, and has \(B=0\) without postselection or a new matter state. For EVERY admissible unitary variation \(W_s(\epsilon)=I+\epsilon V+O(\epsilon^2)\), \(V^\dagger=-V\),
+\[
+K_s(I)=0,\quad DB|_{W_s=I}=0,\quad
+D^2B[V,V]=2(P_sV^\dagger(I-P_s)VP_s).
+\tag{17b}
+\]
+Thus the **actual full scene Euler** of \(J_2\) vanishes at \(W_s=I\), even though the operator derivative \(D_BJ_2\) is positive. The latter is not an independent Euler row: B is the real quadratic feedback effect of the original scene word.
+
+On the geometrically curved star vacuum \(f_x=0\), every activated AF leaf has \(e_0=p^2,\lambda(e_0)=L=4p^3,\ 1-L=p^6\). Using the original full trace (15),
+\[
+H_B:=\frac{\partial J_2}{\partial B}\bigg|_{W_s=I,f=0}
+=\nu zK\left(1+\frac{p^6}{1-zL}\right)I_{P_s}>0.
+\tag{17c}
+\]
+No higher correction enters the scene Hessian because \(DB=0\), so
+\[
+\boxed{
+D^2_{W_s}J_2[V,V]=
+2\nu zK\left(1+\frac{p^6}{1-zL}\right)
+\left\|(I-P_s)VP_s\right\|_{\rm HS}^2\ge0.
+}
+\tag{17d}
+\]
+It is STRICTLY positive on all actual scene cut-mixing directions; block-preserving scene rotations are exact unexcited orbit directions, not spectral modes thrown away. At the same vacuum root the mixed geometric/scene Hessian vanishes because \(DB|_I=0\) and \(D_eP_w=0\). Thus the joint Hessian is **block diagonal** there between the full weighted-star geometry and the genuine independent scene cut-mixing sector. At fixed \(\nu,K,z\) the scene curvature coefficient is computable; no new stabilizing scene potential is inserted.
+
+The same scene choice still has **NONZERO GR sensitivity** when the geometry moves:
+\[
+g'_0(p^2)=\frac{528\cdot4z(1-2p^2)}
+                    {1-4zp^3}
+         =\frac{2112zp^3}{1-4zp^3}>0.
+\tag{17e}
+\]
+Hence the ORIGINAL full nonflat pp-wave with all independent interior \(16+24\) star rows zero, combined with the full unperturbed identity scene word, gives an **exact joint vacuum stationary point of the SAME complete two-tick feedback functional on geometry × scene-unitary variables**, with a strictly stable scene mixing sector. This is a sharper positive conclusion than fixing B as an arbitrary supplied matrix. All scene complements and AF spectators remain physically present. Operator \(J_2\) does not depend on an independently chosen preparation density, so its preparation variations are zero for this specific price term.
+
+The statement is **not** that the older physically fixed autonomous scene word must be replaced by identity; selecting a new executable scene word changes the full historical process and its costs. Nor does this make the separate \(H_{\rm v8}+R_{\rm matter}\) terms vanish. It gives a concrete stationary scene branch of the actual \(J_2\) formula that can now be consumed in a legitimate joint-programme selection, rather than assuming an unproved generic \(D_BJ_2=0\).
+
 ## 5. Full nonlinear spin-2 bootstrap is ALREADY closed on this geometric carrier, at finite n
 
 Equation (5) is an equality of functions on a **full open field domain**, so it automatically matches EVERY higher variation, not just quadratic or cubic Taylor coefficients. At any actual common critical point y0, write \(\mathcal F(y)=(\widetilde e,U)\), \(L=D\mathcal F_{y0}\). Then
