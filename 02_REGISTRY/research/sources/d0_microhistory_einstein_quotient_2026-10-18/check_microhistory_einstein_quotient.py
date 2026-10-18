@@ -138,8 +138,8 @@ def test():
             L,RATE,[2*pi*j/L for j in range(L//2)])
         assert max(abs(a-b) for a,b in zip(current,current_circle))>1e-6
         assert max(abs(a-b) for a,b in zip(E,E_circle))<1e-13
-        assert max(abs(a-b) for a,b in zip(psi,psi_circle)
-                   for a,b in zip(a,b))>1e-5 if False else True
+        assert max(abs(x-y) for v,w in zip(psi,psi_circle)
+                   for x,y in zip(v,w))>1e-5
         trace=full_native_book_source(weights,mean,RATE)
         # 2 full original scalar Euler rows at every (u,v) vanish:
         # at q=0 the first source is Σ_{u,v} D_u Psi D_v deltaPsi;
