@@ -393,6 +393,13 @@ class AssemblyTests(unittest.TestCase):
         with self.assertRaisesRegex(gr.AssemblyError, "ambiguous"):
             gr.next_actions(self.model(), [self.pr(), self.pr(number=13)])
 
+    def test_retired_binding_does_not_reappear_as_unfinished_work(self):
+        self.queue["tasks"] = [t for t in self.queue["tasks"] if t["id"] != TASK]
+        model = self.model()
+        self.assertNotIn(TASK, {a["task"] for a in gr.next_actions(model, [])})
+        actions = gr.next_actions(model, [self.pr(draft=False, lifecycle="REVIEW")])
+        self.assertEqual(next(a for a in actions if a["task"] == TASK)["action"], "review")
+
     def test_offline_next_does_not_call_github_or_authorize_launch(self):
         self.save()
         with patch.object(task_dispatch, "open_prs") as gh:

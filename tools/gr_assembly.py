@@ -491,10 +491,14 @@ def downstream(model: dict, name: str) -> set:
 def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
     state = evaluate(model)
     before = readiness(model, state["closed"])
+    queue = json.loads((model["root"] / "00_WORK/manifest.json").read_text())
+    queued = {t["id"]: t for t in queue["tasks"]}
     actions = []
     for tid, binding in model["contract"]["task_bindings"].items():
         live = [p for p in (prs or []) if task_for_pr(p) == tid]
         require(len(live) <= 1, f"ambiguous live execution for {tid}")
+        if not live and tid not in queued:
+            continue  # Retired semantic bindings remain provenance, not new work.
         if live:
             p = live[0]
             lifecycle = metadata(p.get("body") or "", "Lifecycle")
@@ -511,8 +515,7 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
             action, reasons = "unverified-planning", ["GitHub status is unknown; no launch authorized"]
         else:
             checked = launch_check(model, tid, prs)
-            queue = json.loads((model["root"] / "00_WORK/manifest.json").read_text())
-            task = next((t for t in queue["tasks"] if t["id"] == tid), None)
+            task = queued.get(tid)
             if task is None or task["state"] != "PLANNED":
                 action, reasons = "reconcile-queue", ["no live execution; queue is absent or not PLANNED"]
             else:
