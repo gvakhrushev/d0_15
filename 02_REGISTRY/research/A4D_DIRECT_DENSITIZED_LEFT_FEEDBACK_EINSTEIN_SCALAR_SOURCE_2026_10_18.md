@@ -437,3 +437,58 @@ D\left[\frac{J_N-J_{N,0}}{\nu_N528K_Ng_t}\right]_{A=M=0}
 **EXACT, независимо от N, K_N, их AF tail counts и μ/PF mismatch.** Если сравниваемые физические источники действительно отождествлены на одном dressed coframe chart, эта identity защищает первые nonvacuum Einstein/matter Euler одновременно. Это сильнее фразы «golden weights асимптотически сходятся»: Binet не нужен для именно этого первого источника и его exact null roots. При ненулевых source densities отличие определяется (D20)/(D21), контролируемым настоящей signal/reconstruction norm и \(\min w\); raw #216 всё ещё требует собственного сравнения.
 
 **ВАРЬИРУЕМЫЙ весь D0 stack остаётся физической границей.** Наличие этой source universality означает, что большинство привычных чисто геометрических проверок теперь повторять незачем. Оставшаяся проверка должна предъявить реальное SAME native operation с теми же (D2) operands, approved return cut и true full Cost−Info/Book source, а затем показать, что physical preparation/clock/observer/v8/controllers либо совместно стационарны, либо их honest source образует допустимую invertible response map для тех же девяти null/Einstein equations. Ни Jensen-дефект, ни убывание source error, ни конечная pp-wave сами не выбирают gate programme. Это честный предел положительного синтеза.
+
+
+## 11. No independent metric/volume primitive: exact CAR16 formula for the missing operand, and the true compiler scale
+
+Можно сократить physical SELECT premise ещё сильнее, чем «вычислить J по тетраде»: полная Lorentz CAR16 уже хранит 10 independent principal Gram entries. В одном зафиксированном Lorentz/coframe chart положим
+
+\[
+Q^{rs}_x=\widehat g^{rs}_x
+=\frac1{32}\operatorname{Tr}_{16}
+ \{\widehat\Gamma_{x,r},\widehat\Gamma_{x,s}\},\qquad
+\det Q_x<0.
+\]
+
+Это не новая метрическая переменная: \(\widehat\Gamma=C(\widehat u)+\iota_{\eta\widehat u}\) принадлежит native 16-grade reconstruction, а \(Q=\widehat g^{-1}\) уже proved в [dressed-CAR owner](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md). Поэтому требуемый материальный argument (D2) можно записать **как определённую функцию исходных CAR coefficients и старой golden памяти**:
+
+\[
+\boxed{
+v_i(\widehat\Gamma,\psi)
+=\frac{h^4}{w_x}\,
+ \frac{\sum_{r,s}Q_x^{rs}D^+_r\psi_xD^+_s\psi_x}
+      {\sqrt{-\det Q_x}},
+\qquad
+i\in Q_x.
+}
+\tag{D25}
+\]
+
+Здесь \(1/\sqrt{-\det Q_x}=|\det\widehat e_x|=J_x\). На strictly nondegenerate orientation chart \(-\det Q_x\ge\delta>0\), reciprocal positive square root и её первые 3 field jets являются analytic, имеют uniform polynomial approximants, как в owned full-CAR Julia scalar compiler. **Никакого независимого clock, determinant measurement, continuum R-oracle или \(\widehat g\)-field input в (D25) нет.** НО физический CODE \(D\psi\), его контролируемое чтение и стоимость запросов/памяти всё ещё должны быть admitted; unknown quantum amplitudes из произвольной подготовки без исполняемого эффекта не превращаются в бесплатный data oracle.
+
+Собственный inverse-AF coefficient также **exact finite rational**, не новая golden константа. Для каждого covered x
+
+\[
+w_x=\frac{n_{x,0}D_0+n_{x,1}D_1}{K},\qquad
+\boxed{\frac1{w_x}=\frac K{n_{x,0}D_0+n_{x,1}D_1}\in\mathbb Q_{>0},}
+\tag{D26}
+\]
+
+где \(n_{x,j}\) — действительные целочисленные counts старых LEFT-путей по двум defining blocks, D_j и K — те же Fibonacci integers из native regular trace. Таким образом классическое кодирование именно ЭТОГО веса не требует вычислять неизвестное состояние или новую \(\pi_0\) фазу. Физические resource/blank costs рациональной arithmetic и address control НЕ объявляются нулевыми.
+
+**Whole-output source-normalised native compiler budget.** При ACTUAL clean-work return cut \(P=P_{\rm old}\otimes|0_{\rm work}\rangle\langle0_{\rm work}|\), rank \(r=1056\nu K\), и C³ whole-output norm error η исходный [logdet estimate §6.19](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) даёт для ТОЙ ЖЕ field-independent source normalization \(\nu528Kg_t\):
+
+\[
+\boxed{
+\left\|\frac{J_{\rm compiled}-J_{\rm ideal}}
+{\nu528Kg_t}\right\|_{C^3}
+\le
+\frac{2^{13}R_0\,\mathscr L^6}
+{(1-z)^4p^{11}t^2}\,\eta.
+}
+\tag{D27}
+\]
+
+Это прямое \((2^{14}zr\mathscr L^6\eta/(1-z)^4)/(\nu528Kg_t)\) с \(g_t=4zp^{11}t^2/R_0\). **И K, и ν, и число old LEFT paths полностью сокращаются.** Однако \(\mathscr L\) включает истинные derivatives всех inverse-weight, determinant, h⁻⁴ star, scalar difference, return/work и polynomial query operations; он может расти при h→0. Поэтому достаточный source condition не «η маленькая», а \(\mathscr L_h^6\eta_h/t_h^2\to0\) наряду с \(t_h^2\to0\) и настоящим spatial source reconstruction budget. Без admitted exact return projector или доказанного resource price (D27) применять к unchanged full programme нельзя.
+
+**Это и есть работа, которую действительно надо поставить у физического admission front:** на существующем original CAR16/AF LEFT label data компилировать ДВА source arguments (D1,D25) как один full clean-return unitary; выписать ВСЕ first-source terms его настоящего Book03+старой истории+clock/observer/v8 цены. Тогда математическая геометрия/общий scalar stress уже потребляются (D9,D17), а корректное proof obligation остаётся не «изобрести ОТО», а admitted same-programme source, его stationarity и recovery. Старый π₀ phase-residual этому оператору не назначается.
