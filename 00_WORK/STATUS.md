@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 6 | 0 | 0 | 0 | 6 | 0 / 10 |
-| **Total** | **9** | **0** | **0** | **1** | **10** | **1 / 15** |
+| WORKER | 5 | 1 | 0 | 0 | 6 | 1 / 10 |
+| **Total** | **8** | **1** | **0** | **1** | **10** | **2 / 15** |
 
 ## Repository Queue / Control Tasks
 
@@ -23,7 +23,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-LEAN-MV-TANGENT-SPAN | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-LEFT-RESIDUAL-EXECUTED-SOURCE | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-HODGE-LINKS-001 |
 | WRK-A4D-QUANTILE-CLOCK-EXECUTION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-HODGE-LINKS-001 |
-| WRK-A4D-MATTER-ON-DRESSED-METRIC | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-HODGE-LINKS-001 |
+| WRK-A4D-MATTER-ON-DRESSED-METRIC | WORKER | IN_PROGRESS | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-HODGE-LINKS-001 |
 | WRK-A4D-LAPSE-REYNOLDS-RESIDUAL | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
