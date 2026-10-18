@@ -132,7 +132,7 @@ def test():
     for n,L in ((20,4),(24,8)):
         hits,weights,mean=exact_cost_golden_cells(n,L)
         ang=[2*pi*j/L+.4*sin(4*pi*j/L)+.17*cos(8*pi*j/L)
-             for j in range(L//2)]
+             +.13*cos(4*pi*j/L) for j in range(L//2)]
         psi,d,E,current=polygon(L,RATE,ang)
         psi_circle,_,E_circle,current_circle=polygon(
             L,RATE,[2*pi*j/L for j in range(L//2)])
