@@ -2848,7 +2848,7 @@ D S_{\rm mean}=\kappa(g)D S_{\rm MAP}=2\kappa(g)D[J/\log\varphi],
 
 
 
-### 7.29. Прорыв: вся нестационарная Brinkmann-ОТО сводится к 2 Cartan rows и одной Poisson
+### 7.30. Прорыв: вся нестационарная Brinkmann-ОТО сводится к 2 Cartan rows и одной Poisson
 
 [Exact general Brinkmann all40 Cartan–Einstein theorem](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md) / [independent symbolic checker](sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py) / [true Golden/variable-material numerical source](sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_time_dependent_golden_source.py). This is the next **POSITIVE** reverse-Einstein result from the old exact microhistory quotient, consuming the user's challenge to go beyond the quadratic pp-wave and not inventing another GR-looking action.
 
@@ -2882,7 +2882,7 @@ On a local unwrapped null chart any smooth weak Ψ(u) is allowed with true bound
 **Theory class instead of a chosen history:** on this broad nonempty sector ANY *actual selected* complete D0 price whose genuinely resolved full FIRST source has the two-number form \(a_hD\sum\hat f+b_hD\sum q\), \(a_h\neq0\), with other real internal Euler solved, has the SAME all-field 40→3→1 reduction with \(\lambda=b_h/a_h\). ALL higher offshell powers drop from its FIRST field equation ON this stratum. The SAME admitted full good/bad Golden determinant detector also has \(DS_{\rm mean}=\kappa(g)DS_{\rm MAP}=2\kappa(g)DJ/\log\varphi\), with a SINGLE constant \(\kappa(g)>0\) across its whole f=q=0 family at fixed cut; their metric jets are NOT numerically equal until divided by this factor, but their source ratio and roots coincide. THIS is the precise double quotient by microhistory and same-detector aggregation and makes the user's synthesis a theorem rather than a slogan.
 
 **What this DOES NOT claim:** all possible D0 programmes force this particular field-code query/controller or matching first source; historical upstream H/J/R and raw #216 source are different, site/RIGHT/reference/clock/preparation equations and physical controller/source costs must still be solved on the compulsory full native programme. The original full 40 field equations ARE solved exactly on the constructed same-operator mathematical carrier; no global arbitrary-metric GR claim is promoted. This is a genuinely new, independently reproducible **time-dependent infinite-dimensional Einstein sector** in the original geometric/matter first-response problem, and the route to physical GR is now an explicit full source-identification problem rather than more local curvature coefficient fitting.
-### 7.30. Повторный вывод «поле → прибор» уже имеет точный аудит
+### 7.31. Повторный вывод «поле → прибор» уже имеет точный аудит
 
 Новый присланный текст побайтно совпадает с сохранённым входом
 `sources/d0_record_source_pullback_2026-10-15/INPUT_FIELD_INSTRUMENT_PROPOSAL_RU.txt`
@@ -2932,7 +2932,7 @@ On a local unwrapped null chart any smooth weak Ψ(u) is allowed with true bound
 `H+J+R`, нормировку и все разрешённые поля; равенство по одной скалярной
 материйной вариации не заменяет эти уравнения.
 
-### 7.31. Последний конечный потребитель полного источника — link-система
+### 7.32. Последний конечный потребитель полного источника — link-система
 
 Более поздние full-source §§8.29–8.36 теперь потребляются рядом с §§6.79–6.81.
 Для фиксированной условной code−coherent цены и конечного `n` получены
@@ -2964,7 +2964,7 @@ resource/controller цена, независимая материя и совм�
 восстановление. Ветка остаётся условной и не заменяет основной same-source
 Palatini/Einstein маршрут.
 
-### 7.32. Один complete-record source соединяет точный Einstein–CAR корень с полной материей
+### 7.33. Один complete-record source соединяет точный Einstein–CAR корень с полной материей
 
 Главный новый потребитель — [direct densitized LEFT feedback](A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md).
 В одном и том же исправленном двухтактовом AF×scene `J₂` он подаёт
@@ -3100,7 +3100,7 @@ Einstein–scalar уже построены; compulsory native selection и по
 физическая D0→ОТО-теорема остаются OPEN.
 
 
-### 7.33. Когерентная null-sideband подготовка открывает плоский вход в pp-wave ветвь
+### 7.34. Когерентная null-sideband подготовка открывает плоский вход в pp-wave ветвь
 
 В full source добавлена узкая точная конструкция: исходная локально чистая CAR16-запись использует две вырожденные Fourier-моды \(m=(1,-1,-1,-1)\) и \(m'=(-1,1,-1,-1)\). Их энергию старый flat символ не различает, а исходные density-coherences читают \((\psi_0,\psi_4)=a(\cos 2\pi qX,\sin 2\pi qX)\) при \(q=(-2,2,0,0)\). Поэтому одновременно получены собственное состояние CAR-only плоской preparation equation и ненулевой null Hodge stress. Профиль имеет точно постоянный конечный Hodge-инкремент и подходит к matter-shape уже построенной обратной pp-wave конструкции.
 
@@ -3109,302 +3109,64 @@ Einstein–scalar уже построены; compulsory native selection и по
 Следующий решающий тест теперь узкий и физически содержательный: подставить ту же запись в **actual curved** pp-wave preparation operator и проверить все retained full-source строки на одном carrier. Требуемый первый equality — \((\Delta_{\widehat e,U}-\Xi)C=0\) для фактических coframe/link/frame terms; затем отдельно проверяются полные \(H+J+R\), complete Book history и действительный coherence-query/clean-work price. Flat eigenstate не разрешает заменить любой из этих операторов спектральным компаратором. Если curved eigen-equation не сохраняется, её точный residual будет конкретным препятствием этой ветви; если сохраняется, появится кандидат на объединённый корень, который всё ещё должен пройти same-source stationarity/admission и physical limit. До этих шагов полная физическая D0→ОТО остаётся OPEN.
 
 
-### 7.34. Произвольная sourced Brinkmann-геометрия уже сведена к одной native J₂-цене
+### 7.35. Один измеримый endgame: совместная запись C_Y–J₂ и полный native источник
 
-Новый full-source owner [A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md) существенно расширяет обратную стрелку. Для произвольного независимого finite \(H(u,x,y)\) исходная шестигранная Palatini-star цена варьируется по всем 16 coframe- и 24 link-направлениям. При этом 40 строк тождественно сводятся к трём: две реальные link-строки сами определяют сдвинутую на один u-шаг nilpotent connection; оставшаяся coframe-строка становится точным дискретным поперечным уравнением Пуассона. \(H\) не предполагается квадратичным, гладким, гармоническим или близким к фиксированному фону.
+Теперь есть две сильные, но пока не слитые математические ветви. Первая —
+условный вакуумный переход `C_Y → H(Y,J) → Crit P → G=0` из
+§§6.10–6.17 и §6.33: при подготовленном capacity-профиле он точен при
+фиксированном `t>0`. Сам `C_Y` только копирует существующий LEFT-адрес и
+не создаёт этот профиль; §6.70 доказывает его недостижимость в заявленном
+классе, сохраняющем всю fine-RIGHT-алгебру. Это scoped obstruction к
+этому классу исполнений, не общий запрет для D0. Буквальный `fullStep`
+также остаётся геометрически слепым.
 
-На том же operational density-dressed метрике уже принадлежащий исправленный двухтактный AF×scene \(J_2\) даёт настоящий full-CAR null-matter source с \(\lambda_-=-23.416406751884\ldots\), используя истинные неравномерные Fibonacci/F-R веса и все исходные failure modes. Для произвольной периодической материальной истории \(\Psi(u)\) остаются \(q=0\), \(D_v^+q=-2|D_u^+\Psi|^2/h\) и независимые scalar/top Euler, зануляемые настоящей v-суммой-телескопом. В итоге точная finite equation одного и того же feedback имеет вид
-\[
-\Delta_h^\perp H(u+h,x,y)=-4\lambda_-\,|D_u^+\Psi(u)|^2.
-\]
-Все 40 геометрических и обе материальные interior-строки решены на каждом конечном mesh; здесь не добавляется EH-функционал или независимо подогнанный стресс.
+Вторая ветвь — тот же исправленный полный AF×scene `J₂` с настоящим
+CAR16-источником. §7.30 даёт точное конечное сжатие всех 40 геометрических
+строк для произвольной Brinkmann-функции и решает совместную Poisson-задачу
+для произвольного `E(u)=|D_u^+Ψ|²` и transverse-harmonic профиля. Источник
+материи здесь приходит из `q` той же цены; отдельный тензор не вставлен.
+Это закрывает широкую конечную конструктивную Einstein–CAR-семью, но не
+утверждает, что D0 выбирает или оплачивает данный `J₂` как обязательную
+программу.
 
-Свободная часть решения — любая transverse harmonic \(W(u,x,y)\). Для гладких данных на ограниченном поперечном прямоугольнике настоящая finite Dirichlet-задача \(\Delta_h^\perp W_h=0\) даёт равномерное \(C^0\)-восстановление \(O(h^2)\); staggering связи и материального источника даёт metric recovery \(O(h)\). Тем самым получена бесконечномерная time-dependent Einstein–null-scalar Brinkmann-семья, включая произвольный \(E(u)\), гладкие гармоники с поперечными граничными данными и множество различимых CAR16-историй с тем же гравитационным source.
+§7.33 уже выводит точный источник их **одной совместной записи**, а не
+сумму двух действий. Если полный pointer действительно имеет закон
+`P(Y=α,J=good)=π_α g_α` и
+`P(Y=α,J=ζ)=π_α(1−g_α)β_ζ`, где
+`g_α=exp(−2J_α)` и все failure-исходы сохранены, то при общем
+`f=q=0` листовой Shannon source равен
 
-Два новых потребителя проверяют точное сжатие исходных 40 строк и actual full-J₂ конечный source на неравномерных golden weights. Оба завершились PASS: all40 checker проверяет 18 независимых H-коэффициентов и 16 link-переменных, forced staggering и произвольные harmonic controls; time-dependent checker на \(L=4,8\) получил \(E\in[0.0004,0.0009]\), source residual не выше \(5.9\cdot10^{-15}\) и полный J₂ Euler residual не выше \(2.4\cdot10^{-14}\).
+    D H(Y,J) = D H(π) + 2 κ(g_*) Σ_α π_α D J_α.
 
-Это закрывает основной геометрический и null-matter **existence/reconstruction сектор** гораздо шире прежнего квадратичного pp-wave корня. Оно не доказывает, что исходные аксиомы D0 обязуют выбирать именно этот complete AF×scene feedback, его controller и Book-цену; не решает обязательные полные upstream \(H+J+R\), clock/PREP/observer и moving-history строки; и не подменяет отдельный raw \(\#216\) терминал. Новый sideband результат §7.33 остаётся лишь отдельным кандидатом для плоской CAR-only части R-подготовки и не склеивается с этим корнем без общей AF/RIGHT факторизации и полного источника.
+На независимых геометрических и CAR-направлениях с фиксированным старым
+префиксом `Dπ=0`; остаётся положительный множитель уже измеренного `J₂`
+источника и его ненулевой материальный коэффициент. Это конкретный мост
+между сохранением адреса `C_Y` и sourced Einstein-уравнением. При движущейся
+истории член `D H(π)` остаётся частью вариации; копия его не убирает.
 
-Поэтому следующий стратегический шаг теперь не поиск ещё одной метрики или ещё одного Einstein-подобного тензора. Он — точная **forcing/admission стрелка** на одном carrier: вывести из операционных D0-правил actual complete Book/source, выполнить full controller/clean-work, разрешить branchwise positive effect и решить preparation, observer, clock и сохранённые старые history rows. Если эти условия вынуждают два уже вычисленных first-source коэффициента этого \(J_2\), установленный geometric quotient сразу даёт всю указанную Einstein-семью; если нет, требуется конкретный native контрпример или obstruction. До этой forcing-стрелки полная физическая D0→ОТО остаётся OPEN.
+До полной D0→ОТО остаются четыре связанные проверки на **одном** носителе:
 
+1. Вывести `g_α` как реальный полный good/failure effect именно из
+   существующего feedback-исполнения, включая все неудачи и его work/Book
+   цену. Формула trace-log сама по себе не задаёт Born-эффект; общий
+   полиномиальный consumer §6.62 требует глобального encoding/bound, который
+   для `D1/D25` ещё не доказан.
+2. Вывести из native refinement физический доступ к нужному query и свежим
+   потомкам, сохранив старые LEFT/RIGHT/reference-записи. §6.70 и §6.73
+   точно ограничивают пассивный fine-RIGHT-preserving класс и называют
+   недостающий placement; они не запрещают более широкую реализацию.
+3. Решить вместе `D H(π)`, подготовку, clock, observer, controller/work,
+   старые history rows и полный `H+J+R`, если он обязателен; затем проверить
+   двухкоэффициентную форму полного источника из критерия §5.1
+   [arbitrary-Brinkmann owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md)
+   на всех независимых полях.
+4. Провести тот же источник через нормированный joint `h→0` recovery и
+   отдельно закрыть исходный raw `#216` терминал.
 
-### 7.35. Для переноса на полную цену нужны только два измеренных source-коэффициента
-
-Разделы 5.1–5.2 arbitrary-Brinkmann owner усиливают результат §7.34 до точного критерия для **любого** полного same-carrier функционала \(\mathcal S_h\). На общей null/star-стратификации \(f_i=q_i=0\), после решения его независимых внутренних строк, предположим тождество всех coframe, link и двух matter first sources
-\[
-D\mathcal S_h
-=a_hD\sum_z\widehat f_z+b_hD\sum_zq_z,\qquad a_h\ne0,
-\]
-где \(a_h,b_h\) — измеренные коэффициенты этой фактической цены, а не подставленные параметры; site/PF-меры, полный upstream record и Book normalizer уже включены. Тогда собственные исходные finite Palatini rows принуждают
-\[
-K_a(z)=\tfrac12[H(z+\hat u)-H(z+\hat u-h\hat a)],\qquad
-\Delta_h^\perp H(z+\hat u)=-4(b_h/a_h)|D_u^+\Psi|^2
-\]
-для произвольной time-dependent CAR16 истории \(\Psi(u)\) и любого transverse harmonic \(W(u,x,y)\). Все независимые 40 геометрических и две scalar/top строки закрыты на этом секторе. Higher nonlinearities полного \(\mathcal S_h\) на этом первом stationary source не требуют отдельного равенства действий. Условие остаётся условием: цена, не удовлетворяющая ему, теоремой не поглощается.
-
-Тот же CAR источник порождает Ward identity. В continuum \(T_{\mu\nu}=2E(u)(du)_\mu(du)_\nu\) с \(E=|\Psi'|^2\); \(du\) ковариантно постоянен в Brinkmann-метрике, а \(E\) не зависит от \(v\), поэтому \(\nabla^\mu T_{\mu\nu}=0\). Независимые scalar/top Euler дают \(\Box_g\Psi=0\). На finite lattice тот же баланс обеспечен точной v-суммой-телескопом. Сохранение источника здесь выводится из той же native matter variation.
-
-Это превращает endgame в один decisive whole-source test. На original совместном carrier надо вычислить \(D\mathcal S_{\rm whole}\) **включая** complete Book/history, старую цену при её обязательности, query/clean-work, moving normalizer, observer, clock и preparation. Затем решить дополнительные Euler-строки и проверить двухкоэффициентную форму на всех независимых полях. Если форма верна, \(b_h/a_h\) и исходный Cartan theorem дают весь sourced Brinkmann GR-sector; если нет — точный ненулевой остаток меняет вывод и локализует препятствие. Нельзя объявить source condition выполненным самим существованием конечного J₂-root. Физическая compulsory D0→ОТО-теорема остаётся OPEN ровно до этого исполнения/отождествления полного источника.
-### 7.30. Повторный вывод «поле → прибор» уже имеет точный аудит
-
-Новый присланный текст побайтно совпадает с сохранённым входом
-`sources/d0_record_source_pullback_2026-10-15/INPUT_FIELD_INSTRUMENT_PROPOSAL_RU.txt`
-(SHA-256 `7e963d3b926ac1ed93aac86fb338efd3ac6ccdea0e45ba604a9a19460d33b0ca`).
-Его не импортируем второй раз. Действующий [source pullback owner](A4D_NATIVE_RECORD_SOURCE_JOINT_CONTINUATION.md),
-§§2–5, уже отделяет полезный критерий спуска от неподтверждённой
-томографии:
-
-* Для указанного семейства `sigma(w)` член `dot sigma=i[H,sigma]` был бы
-  касательной к унитарной орбите и сохранял бы спектр. Но при `w₀=(0,3/5,0)`
-  имеем `d_xi Tr(sigma²)=12p⁴/5 != 0` и
-  `d_xi D(sigma||mu)=p² log 4 != 0`. Значит, эта вариация состояния не
-  реализуется предложенным унитарным джетом. Томография не создаёт эту
-  отсутствующую операцию.
-* Число `540672` при `L=4` считает пространство возможных первых джетов
-  `Hom_R(T_xX,Herm(4)⊕Herm(4))`. Число `523776=2046L⁴` относится к ядру
-  отображения **из пространства джетов в физический ковектор** при фиксированном
-  ненулевом ковекторе чтения; это не размер ядра `D pi_h` на физических
-  вариациях. Точный критерий — совместимость цены со всеми реально достижимыми
-  физическими tangents, формула (9) в source pullback owner. Инъективность
-  read-out не устанавливается и не нужна.
-* Соседний first-jet владелец по-прежнему даёт две унитарные реализации с
-  одинаковыми reference returns и разными полными производными цены. Его
-  33 exact controls повторно прошли в этой сессии. Остаются физическое
-  допущение field-to-return map и его refinement law; ни один Einstein source
-  этим не выбран.
-
-Тепловой расчёт из того же входа даёт полезное количественное усиление, но
-не выбирает полный Cost−Info. На кривой
-`Q(t)=diag(4e^(2t),e^(-2t)/4,1,1)` производная равна
-`2(E_4−E_(1/4))`. В фиксированном `beta=log 2` пределе положим
-`r=2^(-144)`. Из `9<pi²<10`, сохранения обоих модов `+n` и `−n` и
-`sum n²r^n=r(1+r)/(1-r)^3` следует
-
-    2(E_4−E_(1/4)) > 511/14592 − 640 r(1+r)/(1−r)^3 > 1/30.
-
-Коэффициент `640` сохраняет оба знака Fourier-моды в малом отрицательном
-энергетическом хвосте. Оценка относится к континуальному пределу данного
-положительного heat-компонента; существующие полные десять heat-коэффициентов
-и fixed-`beta` граница уже принадлежат
-[positive heat owner](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md). Она не
-показывает, что этот компонент есть выбранная физическая цена или что остальные
-источники его не компенсируют.
-
-Хронологическая формула в предложении также остаётся условным частным
-уравнением. Полный хронологический owner уже дифференцирует настоящие
-`H+J+R`, нормировку и все разрешённые поля; равенство по одной скалярной
-материйной вариации не заменяет эти уравнения.
-
-### 7.31. Последний конечный потребитель полного источника — link-система
-
-Более поздние full-source §§8.29–8.36 теперь потребляются рядом с §§6.79–6.81.
-Для фиксированной условной code−coherent цены и конечного `n` получены
-настоящие минимумы с положительным CAR Gram и точными preparation equations;
-на aligned family решены все 16 coframe, observer и ненулевые Fourier rows.
-Для предельных минимумов доказан shape gap `min_chi x_(chi,n) >= gamma`
-при фиксированном supplied code. Это не физическое допущение кода и не
-равномерная нижняя граница на плотность подготовки.
-
-Однородные Lorentz links остаются: их полный источник сведен к точным
-`B_r(v)` формулы (190), а шесть link rows — к условиям §§8.33–8.34.
-Наличие четырёх/шести чисел не доказывает общего корня. §8.36 даёт точный
-CAR16 контрпример: even-block determinant
-`(x^4+10x^3−10x^2−2x+5)^2/16` имеет корень при
-`x in (−1,−1/2)`, поэтому требуемой положительной uniform link curvature
-нет даже на `L=4,G=I`. Это опровергает простой saddle/IFT ход, но не
-существование совместных корней.
-
-Есть и отдельная физическая граница. При найденном weak-history пределе
-`nu_n² ~ t*/n` исходное операционное чтение метрики равно
-`q_n=nu_n² U_n^T eta U_n -> 0` на фиксированной решётке. Деление на `nu_n²`
-не выводится как калибровка или закон часов. Поэтому конечные корни пока не
-дают регулярной макроскопической метрики.
-
-Следующий решающий шаг этой ветви — source-preserving выбор подготовки более
-высокого порядка либо прямое совместное решение шести link equations на том
-же полном коде. Затем ещё требуются physical code/Info admission, полная
-resource/controller цена, независимая материя и совместное пространственное
-восстановление. Ветка остаётся условной и не заменяет основной same-source
-Palatini/Einstein маршрут.
-
-### 7.32. Один complete-record source соединяет точный Einstein–CAR корень с полной материей
-
-Главный новый потребитель — [direct densitized LEFT feedback](A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md).
-В одном и том же исправленном двухтактовом AF×scene `J₂` он подаёт
-`A_{h,x}=h⁴ f_{⋆,x}` и `M_{h,x}=h⁴ J_x q_x` через настоящий
-неравномерный golden вес `w_x`: leaf arguments равны `A/w_x,M/w_x`.
-Это сохраняет full CAR16, old LEFT/RIGHT, reference128, scene rank528 и
-все failure/complement outcomes. Проверка тензорных строк даёт один
-конечный source `DΣ[A+Λ_mat M]`, с `Λ_mat=±23.416406751884…`; на
-flat time-gradient control только новый `Jq` input даёт правильную
-ненулевую pressure variation. Его C² источник условно сходится к
-Einstein–scalar уравнениям с тем же scalar stress и Cartan-row, без
-добавленного EH или matter действия. Сертификат
-`a4d_direct_densitized_left_feedback_source_check.py` прошёл; сам владелец
-отмечает `GR_physically_derived=false`.
-
-Независимый [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md)
-потребляет совместимый null/star сектор того же `J₂` и ту же исходную
-40-строчную Lorentz-star таблицу. На каждом чётном конечном Role-торе он
-даёт точные `16+24+2` корни с ненулевым `Ric_uu`; links зануляются
-half-step поправкой, а единственная coframe-строка фиксирует
-`A+D=−2 λ₋(z) s²=46.832813503768…s²`. Периодическая Hodge-материя
-образует growing torus различных CAR-предысторий и бесконечномерное
-гладкое семейство с тем же стрессом и той же Einstein-геометрией. Это
-одна построенная цена и один CAR source, а не подстановка `T=G`.
-
-На этой же метрике точные anti-paired CAR-инкременты дают тор решений с
-`L/2−1` различимыми не-глобальными Hodge-модулями; их число растёт без
-границы с уточнением. Любая гладкая полупериодическая фаза задаёт
-континуальную периодическую материю с тем же постоянным `|Ψ′|²`, тем же
-стрессом и той же Einstein-геометрией. Цена видит общий источник, а
-исходная CAR-запись сохраняет различие историй. Общая theorem сводит
-перенос на иную complete price к двум первым коэффициентам `a_h,b_h` на
-непустом `f=q=0` слое и решённым внутренним Euler-строкам.
-
-Здесь есть ещё один точный шаг к native-контроллеру: для конечного корня
-не нужно компилировать полные `arcsin`-кривые исходного source-owner.
-Обозначим `θ₀=arcsin p`. Геометрический input можно заменить локальным
-поворотом `θ₀+(√p/2)t²u`, материальный — `θ₀+σp^(3/2)t²v`, где
-`u=A/w_x`, `v=M/w_x`. Они дают те же значения и первые производные:
-
-    E(0)=b(0)=p²,
-    E′(0)=p²t²,
-    b′(0)=2σp³t²,
-    B′(0)=4(1−2p²)b′(0)=8σp⁶t²,
-    1−2p²=p³.
-
-Это ровно все тензорные source-коэффициенты, использованные конечным
-`16+24+2` root, при любом фиксированном `t>0`; off-root higher jets
-изменятся. Значит, для этой Einstein–matter стационарности достаточно
-проверить native linear controlled rotation, с генератором, пропорциональным
-исходному CAR-квадрату `q=Γ(k)²`, а не весь inverse-sine controller.
-Физическое право D0 выполнять такое CAR×scene взаимодействие, кодирование
-`u,v` и его полная Book/source цена всё ещё нужно доказать; формула сама не
-назначает новую операцию.
-
-Присланная стрелка `C_Y → H(Y,J) → Crit P → G=0` верна только для
-условного capacity-вакуумного разреза и уже потреблена полным владельцем
-§§6.10–6.17 и §6.33. Там `C_Y` — точная field-independent копия старого
-LEFT-адреса; при полном same-history binding `w=q` получается
-`Γ=H(Y,J)/log φ`. На соответствующем capacity-профиле и фиксированном
-`t>0` радиальные строки действительно дают `Crit Γ=Crit P`; построенная
-fixed-collar семья с `f_x=0` поэтому уже является точным конечным
-вакуумным корнем, без аргумента `t→0`. Но CNOT-копия не подготавливает
-сам профиль. Свободное максимизирование leaf-вероятностей — отдельное
-условие вариационного образа; §6.70 доказывает точную недостижимость
-нужного профиля в заявленном классе, сохраняющем всю fine-RIGHT-алгебру.
-Более широкое управление свежими потомками не запрещено этим результатом,
-но ещё не выведено из native fullStep. Компилятор даёт лишь свой
-приближённый source-transfer contract, а не точные roots или `C²`
-кривизну.
-
-Есть точное source-level соединение с записью `C_Y` — без сложения
-capacity- и feedback-функционалов. Пусть `α=(j,i)` — старый LEFT-leaf,
-`π_α=D_j/K` его сохранённый золотой вес,
-`u_α=A_{h,x}/w_x`, `v_α=M_{h,x}/w_x`, и
-`J_α=−528(log Q(v_α)+log R(u_α,v_α))` — его блоковый source текущего
-двухтактового feedback. Тогда точно `J_loc=νK Σ_α π_α J_α`. Если для
-каждого блока тот же native input допускает полный good/failure указатель
-с условным законом
-
-    P(Y=α,J=good) = π_α g_α,
-    P(Y=α,J=ζ)    = π_α(1−g_α) β_ζ,
-    g_α=exp(−2J_α),  Σ_ζ β_ζ=1.
-
-Здесь `Y` — буквально сохранённый `C_Y`-адрес, а все золотые failure
-слова `ζ` остаются в записи. Это одна joint POVM и одна цена
-`H(Y,J)/ℓ`. При `A=M=0` все блоки имеют одинаковое `g_*`; для
-`H_β=−Σβ_ζ logβ_ζ` и
-`κ(g_*)=g_*[H_β−log((1−g_*)/g_*)]>0` прямое дифференцирование полной
-энтропии даёт
-
-    D H(Y,J) = D H(π) + 2κ(g_*) Σ_α π_α D J_α.
-
-Значит, при фиксированном прошлом (`Dπ=0`) её полный first source на
-независимых `16+24+2` field-строках равен
-`2κ(g_*)/(ℓ ν K) · D J_loc`. На этом непустом секторе условная полная
-Cost−Info цена поэтому имеет те же Einstein+matter критические точки,
-включая правильный volume-weighted CAR источник; global mean/MAP identity
-для этого вывода не требуется. При движущемся прошлом остаётся отдельный
-`D H(π)` preparation-source; копия `C_Y` его не зануляет. Bounded control
-проверяет chain rule на неравномерных `π_α` и различных локальных first
-jets.
-Контроль конечной chain-rule алгебры включён в
-[bounded checker](sources/d0_microhistory_einstein_quotient_2026-10-18/check_microhistory_einstein_quotient.py);
-он проверяет условную цену и не сертифицирует физическую реализацию
-positive effect.
-
-Это соединяет trace-log и полный same-history Shannon source на первом
-джете, но пока условно. Требуется физически реализовать именно leaf-условный
-`g_α=exp(−2J_α)` как positive complete good effect с теми же золотыми
-failure outcomes. §6.62 требует глобально контролируемый
-density-matrix polynomial и реальные independent copies; новый
-microhistory-owner отдельно предупреждает, что inverse-coframe/
-density/CAR controller пока не доказан в этом классе. Само исполнение
-`C_Y` и двухтактного unitary не доказывает вероятностный закон `g_α`.
-Операнд `D25` выражен через исходные CAR principal-Gram coefficients и
-старую память, но полное его исполнение, clean-work source/price и budget
-`L_h^6 η_h/t_h²→0` ещё не закрыты. Matter в этом кандидате входит через
-тот же `J₂`; остаётся доказать, что native D0 физически выбирает и
-оплачивает этот query и решает переменные контроллера.
-
-Стрелка `C_Y → H(Y,J) → Crit P → G=0` остаётся отдельным conditional
-capacity-vacuum результатом §§6.10–6.17 и 6.33: `C_Y` точно копирует
-LEFT-адрес, но не готовит нужный capacity-профиль; §6.70 блокирует его в
-fine-RIGHT-preserving class. Его не нужно превращать в источник материи:
-source уже присутствует в same-feedback `J₂`. Следующий решающий gate —
-доказать или опровергнуть admitted branchwise good effect для `D1/D25` на
-actual native code, затем решить old-history `D H(π)`, preparation,
-observer, clock, resource и весь `H+J+R`, если он обязателен. После этого
-нужны source-normalized joint refinement/recovery и исходный `#216`
-терминал. Итак: точный конечный sourced сектор и условный continuum
-Einstein–scalar уже построены; compulsory native selection и полная
-физическая D0→ОТО-теорема остаются OPEN.
-
-
-### 7.33. Когерентная null-sideband подготовка открывает плоский вход в pp-wave ветвь
-
-В full source добавлена узкая точная конструкция: исходная локально чистая CAR16-запись использует две вырожденные Fourier-моды \(m=(1,-1,-1,-1)\) и \(m'=(-1,1,-1,-1)\). Их энергию старый flat символ не различает, а исходные density-coherences читают \((\psi_0,\psi_4)=a(\cos 2\pi qX,\sin 2\pi qX)\) при \(q=(-2,2,0,0)\). Поэтому одновременно получены собственное состояние CAR-only плоской preparation equation и ненулевой null Hodge stress. Профиль имеет точно постоянный конечный Hodge-инкремент и подходит к matter-shape уже построенной обратной pp-wave конструкции.
-
-Это выходит за same-row pure-section класс §6.63, не отменяя его точного no-go. Новый bounded checker пересчитал old-symbol degeneracy, полную CAR16 current compression, нормировку/readout и конечные null identities на всех 24 832 узлах \(N=8,12\).
-
-Следующий решающий тест теперь узкий и физически содержательный: подставить ту же запись в **actual curved** pp-wave preparation operator и проверить все retained full-source строки на одном carrier. Требуемый первый equality — \((\Delta_{\widehat e,U}-\Xi)C=0\) для фактических coframe/link/frame terms; затем отдельно проверяются полные \(H+J+R\), complete Book history и действительный coherence-query/clean-work price. Flat eigenstate не разрешает заменить любой из этих операторов спектральным компаратором. Если curved eigen-equation не сохраняется, её точный residual будет конкретным препятствием этой ветви; если сохраняется, появится кандидат на объединённый корень, который всё ещё должен пройти same-source stationarity/admission и physical limit. До этих шагов полная физическая D0→ОТО остаётся OPEN.
-
-
-### 7.34. Произвольная sourced Brinkmann-геометрия уже сведена к одной native J₂-цене
-
-Новый full-source owner [A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md) существенно расширяет обратную стрелку. Для произвольного независимого finite \(H(u,x,y)\) исходная шестигранная Palatini-star цена варьируется по всем 16 coframe- и 24 link-направлениям. При этом 40 строк тождественно сводятся к трём: две реальные link-строки сами определяют сдвинутую на один u-шаг nilpotent connection; оставшаяся coframe-строка становится точным дискретным поперечным уравнением Пуассона. \(H\) не предполагается квадратичным, гладким, гармоническим или близким к фиксированному фону.
-
-На том же operational density-dressed метрике уже принадлежащий исправленный двухтактный AF×scene \(J_2\) даёт настоящий full-CAR null-matter source с \(\lambda_-=-23.416406751884\ldots\), используя истинные неравномерные Fibonacci/F-R веса и все исходные failure modes. Для произвольной периодической материальной истории \(\Psi(u)\) остаются \(q=0\), \(D_v^+q=-2|D_u^+\Psi|^2/h\) и независимые scalar/top Euler, зануляемые настоящей v-суммой-телескопом. В итоге точная finite equation одного и того же feedback имеет вид
-\[
-\Delta_h^\perp H(u+h,x,y)=-4\lambda_-\,|D_u^+\Psi(u)|^2.
-\]
-Все 40 геометрических и обе материальные interior-строки решены на каждом конечном mesh; здесь не добавляется EH-функционал или независимо подогнанный стресс.
-
-Свободная часть решения — любая transverse harmonic \(W(u,x,y)\). Для гладких данных на ограниченном поперечном прямоугольнике настоящая finite Dirichlet-задача \(\Delta_h^\perp W_h=0\) даёт равномерное \(C^0\)-восстановление \(O(h^2)\); staggering связи и материального источника даёт metric recovery \(O(h)\). Тем самым получена бесконечномерная time-dependent Einstein–null-scalar Brinkmann-семья, включая произвольный \(E(u)\), гладкие гармоники с поперечными граничными данными и множество различимых CAR16-историй с тем же гравитационным source.
-
-Два новых потребителя проверяют точное сжатие исходных 40 строк и actual full-J₂ конечный source на неравномерных golden weights. Оба завершились PASS: all40 checker проверяет 18 независимых H-коэффициентов и 16 link-переменных, forced staggering и произвольные harmonic controls; time-dependent checker на \(L=4,8\) получил \(E\in[0.0004,0.0009]\), source residual не выше \(5.9\cdot10^{-15}\) и полный J₂ Euler residual не выше \(2.4\cdot10^{-14}\).
-
-Это закрывает основной геометрический и null-matter **existence/reconstruction сектор** гораздо шире прежнего квадратичного pp-wave корня. Оно не доказывает, что исходные аксиомы D0 обязуют выбирать именно этот complete AF×scene feedback, его controller и Book-цену; не решает обязательные полные upstream \(H+J+R\), clock/PREP/observer и moving-history строки; и не подменяет отдельный raw \(\#216\) терминал. Новый sideband результат §7.33 остаётся лишь отдельным кандидатом для плоской CAR-only части R-подготовки и не склеивается с этим корнем без общей AF/RIGHT факторизации и полного источника.
-
-Поэтому следующий стратегический шаг теперь не поиск ещё одной метрики или ещё одного Einstein-подобного тензора. Он — точная **forcing/admission стрелка** на одном carrier: вывести из операционных D0-правил actual complete Book/source, выполнить full controller/clean-work, разрешить branchwise positive effect и решить preparation, observer, clock и сохранённые старые history rows. Если эти условия вынуждают два уже вычисленных first-source коэффициента этого \(J_2\), установленный geometric quotient сразу даёт всю указанную Einstein-семью; если нет, требуется конкретный native контрпример или obstruction. До этой forcing-стрелки полная физическая D0→ОТО остаётся OPEN.
-
-
-### 7.35. Для переноса на полную цену нужны только два измеренных source-коэффициента
-
-Разделы 5.1–5.2 arbitrary-Brinkmann owner усиливают результат §7.34 до точного критерия для **любого** полного same-carrier функционала \(\mathcal S_h\). На общей null/star-стратификации \(f_i=q_i=0\), после решения его независимых внутренних строк, предположим тождество всех coframe, link и двух matter first sources
-\[
-D\mathcal S_h
-=a_hD\sum_z\widehat f_z+b_hD\sum_zq_z,\qquad a_h\ne0,
-\]
-где \(a_h,b_h\) — измеренные коэффициенты этой фактической цены, а не подставленные параметры; site/PF-меры, полный upstream record и Book normalizer уже включены. Тогда собственные исходные finite Palatini rows принуждают
-\[
-K_a(z)=\tfrac12[H(z+\hat u)-H(z+\hat u-h\hat a)],\qquad
-\Delta_h^\perp H(z+\hat u)=-4(b_h/a_h)|D_u^+\Psi|^2
-\]
-для произвольной time-dependent CAR16 истории \(\Psi(u)\) и любого transverse harmonic \(W(u,x,y)\). Все независимые 40 геометрических и две scalar/top строки закрыты на этом секторе. Higher nonlinearities полного \(\mathcal S_h\) на этом первом stationary source не требуют отдельного равенства действий. Условие остаётся условием: цена, не удовлетворяющая ему, теоремой не поглощается.
-
-Тот же CAR источник порождает Ward identity. В continuum \(T_{\mu\nu}=2E(u)(du)_\mu(du)_\nu\) с \(E=|\Psi'|^2\); \(du\) ковариантно постоянен в Brinkmann-метрике, а \(E\) не зависит от \(v\), поэтому \(\nabla^\mu T_{\mu\nu}=0\). Независимые scalar/top Euler дают \(\Box_g\Psi=0\). На finite lattice тот же баланс обеспечен точной v-суммой-телескопом. Сохранение источника здесь выводится из той же native matter variation.
-
-Это превращает endgame в один decisive whole-source test. На original совместном carrier надо вычислить \(D\mathcal S_{\rm whole}\) **включая** complete Book/history, старую цену при её обязательности, query/clean-work, moving normalizer, observer, clock и preparation. Затем решить дополнительные Euler-строки и проверить двухкоэффициентную форму на всех независимых полях. Если форма верна, \(b_h/a_h\) и исходный Cartan theorem дают весь sourced Brinkmann GR-sector; если нет — точный ненулевой остаток меняет вывод и локализует препятствие. Нельзя объявить source condition выполненным самим существованием конечного J₂-root. Физическая compulsory D0→ОТО-теорема остаётся OPEN ровно до этого исполнения/отождествления полного источника.
+Если эти проверки дают измеренные `a_h,b_h` и зануляют остальные строки,
+уже доказанный 40→3→1 theorem переносит всю нестационарную sourced
+Brinkmann-семью с `λ=b_h/a_h`; если появляется остаток, он локализует точный
+блокер. Полная физическая D0→ОТО пока **OPEN**: есть точный vacuum bridge
+при условной preparation, точная sourced Einstein–CAR family на `J₂` и
+условный мост между их записями, но native forcing/admission полной цены
+ещё не доказаны.

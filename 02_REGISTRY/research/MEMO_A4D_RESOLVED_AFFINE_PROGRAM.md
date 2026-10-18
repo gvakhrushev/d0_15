@@ -44,7 +44,7 @@ exact finite sourced root for the declared feedback, not a physical
 selection theorem for the complete D0 programme. The separate `C_Y` capacity
 branch already has an exact finite-`t` vacuum transfer on its capacity profile
 (§§6.10–6.17, 6.33), while §6.70 blocks that profile in the stated
-fine-RIGHT-preserving class. Strategic §7.32 now derives a conditional joint
+fine-RIGHT-preserving class. Strategic §7.33 now derives a conditional joint
 pointer for the two pieces: the retained leaf `α` is followed by its own full
 Golden good/failure outcomes. At the common `f=q=0` source, its Shannon price
 has derivative `D H(π)+2κ Σα π_α D J_α`; with a fixed old prefix this is a
@@ -63,7 +63,7 @@ clock and resource rows in the same complete pointer. The fixed-grid
 weak-history collapse and the independent raw `#216` terminal remain separate
 gates.
 
-Strategic §7.34 now consumes the arbitrary-Brinkmann owner: the original
+Strategic §7.30 now consumes the arbitrary-Brinkmann owner: the original
 unrestricted 40-row star variation reduces to two staggered Cartan equations
 and one discrete transverse Poisson equation for arbitrary H(u,x,y). The same
 corrected J2 source solves all 42 geometry/matter rows at every mesh for
@@ -84,7 +84,7 @@ independent geometry, matter, old-history, query, work, observer, clock and
 preparation variation at this common source. A nonzero remainder is the exact
 blocker; two measured coefficients close this constructed sector.
 
-The new strategic §7.33 contributes a separate preparation candidate: a
+The new strategic §7.34 contributes a separate preparation candidate: a
 coherent equal-energy null sideband in the literal flat old-v8 symbol gives a
 CAR-only Rayleigh root and a nonzero null Hodge readout. It escapes the same-row
 pure-section ansatz of §6.63 without contradicting that scoped no-go. Its

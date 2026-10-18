@@ -59,7 +59,7 @@ Thus the **SAME actually admitted complete detector** gives EXACTLY the same *en
 
 ## 19 October 2026 — repeated field-to-instrument proposal audited; finite frontier integrated
 
-[Strategic §§7.30–7.31](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+[Strategic §§7.31–7.32](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 records that the new pasted text is byte-identical to the archived 15 October
 input. Its proposed unitary tangent cannot generate its own coherence-changing
 `sigma` family; tomography does not supply an admitted field-to-return map.
