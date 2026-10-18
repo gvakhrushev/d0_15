@@ -112,6 +112,74 @@ mixed_difference=(
 )/(4*h*h)
 assert abs(mixed_difference-H_uv*T2*T2)<4e-11
 
+# CERTIFIED ARCHIVE JENSEN CONTROL: same full J2, actual p,p² split,
+# on ONE common regular/PF projective source chart. Across different
+# defining GNS trace N, separate weight comparison remains required.
+wparent=p;wF=p*p;wR=p**3
+assert abs(wF+wR-wparent)<3e-16
+for probe2 in (.1,1.):
+    u0,v0=.13,-.09
+    coarse=wparent*potential(u0,v0,1,probe2)
+    fine=wF*potential(u0,v0,1,probe2)+wR*potential(u0,v0,1,probe2)
+    assert abs(coarse-fine)<3e-16
+for dg,dm in ((.02,-.02),(.1,-.08),(.2,-.15)):
+    uF,vF=dg,dm
+    uR,vR=-wF/wR*dg,-wF/wR*dm
+    assert abs(wF*uF+wR*uR)<2e-16
+    assert abs(wF*vF+wR*vR)<2e-16
+    fine=wF*potential(uF,vF,1,1)+wR*potential(uR,vR,1,1)
+    assert fine<0
+    if dg==.1:
+        assert abs(-fine-4.1805724395e-9)<1e-12
+
+# Rational enclosure for exact golden p, with p²+p−1 sign isolation.
+# All following interval endpoints remain Fraction, not floating output.
+from fractions import Fraction as F
+class I:
+    def __init__(self,lo,hi=None):
+        self.lo=F(lo);self.hi=F(lo if hi is None else hi)
+        assert self.lo<=self.hi
+    @staticmethod
+    def cv(x):
+        return x if isinstance(x,I) else I(x)
+    def __add__(self,o):
+        o=self.cv(o);return I(self.lo+o.lo,self.hi+o.hi)
+    __radd__=__add__
+    def __neg__(self):
+        return I(-self.hi,-self.lo)
+    def __sub__(self,o):
+        return self+-self.cv(o)
+    def __rsub__(self,o):
+        return self.cv(o)+-self
+    def __mul__(self,o):
+        o=self.cv(o)
+        v=[a*b for a in (self.lo,self.hi) for b in (o.lo,o.hi)]
+        return I(min(v),max(v))
+    __rmul__=__mul__
+    def __truediv__(self,o):
+        o=self.cv(o)
+        assert o.lo>0
+        return self*I(1/o.hi,1/o.lo)
+    def __rtruediv__(self,o):
+        return self.cv(o)/self
+    def __pow__(self,n):
+        assert n>=0
+        res=I(1)
+        for _ in range(n):
+            res=res*self
+        return res
+
+ip=I(F(61803398,10**8),F(61803400,10**8))
+assert ip.lo*ip.lo+ip.lo<1 and ip.hi*ip.hi+ip.hi>1
+iz=I(F(1,2**20));iL=4*ip**3;ia=ip**6
+iQ=1-iz*iL;iR=1-iz*iL*(1+ia)
+ig1=ip**2*iL;im1=8*ip**6;im2=8*ip**6*(ip-4)
+ihgg=-8*iz*ia*ip**4/iR+(iz*ia*ig1/iR)**2
+ihgm=-iz*(1-iz)*ig1*im1/iR**2
+ihmm=iz*im2*(1/iQ+ia/iR)+iz*iz*im1*im1*(1/iQ**2+ia*ia/iR**2)
+ideter=ihgg*ihmm-ihgm**2
+assert ihgg.hi<0 and ihmm.hi<0 and ideter.lo>0
+
 print(json.dumps({
   "status":"PASS",
   "scope":"single full J2 source; physical selection and whole Book OPEN",
@@ -125,5 +193,8 @@ print(json.dumps({
   "mixed_feedback_hessian_det_per_t8":det,
   "null_ppwave_all_Euler_transfer":"exact same first-source up to h^4/wbar",
   "uniform_C2_GR_scalar_source_limit":"conditional on bounded cell/weight ratios",
+  "archive_refinement_concavity_certified": True,
+  "archive_variance_sign":"fine price <= coarse price within negative-Hessian window",
+  "interval_hessian_determinant":[float(ideter.lo),float(ideter.hi)],
   "GR_physically_derived":False
 },indent=2,sort_keys=True))
