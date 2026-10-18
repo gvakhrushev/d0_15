@@ -84,7 +84,7 @@ It obeys `P_silent P(s)=0` for **every** direction, and is supported on `P_activ
 Tr_16[P(s)P(t)] = (1+s·t)^2.                             (N1)
 ```
 
-The overlap is not an arbitrarily chosen kernel: it follows from the commuting Clifford halves, full trace and the chiral orientation. This is the spin-1 coherent-state overlap times its original fourfold CAR multiplicity. Its spherical polynomial has the harmonics `l=0,1,2`, with dimensions `1+3+5=9`. One-sided `P^L_-(s)=(I-A(s))/2` sees only `1+3=4` operators and cannot reproduce nine tensor components.
+The overlap is not an arbitrarily chosen kernel: it follows from the commuting Clifford halves, full trace and the chiral orientation. This is the spin-1 coherent-state overlap times its original fourfold CAR multiplicity. Its spherical polynomial has the harmonics `l=0,1,2`, with dimensions `1+3+5=9`. One-sided `P^L_-(s)=(I-A(s))/2` sees only `1+3=4` operators and cannot reproduce nine tensor components. **Crucial resource limit:** the nine settings are NOT a single compatible measurement. For the two orthogonal axis directions `s=e1`, `t=e2`, `[P(s),P(t)] != 0` and `Tr([P(s),P(t)]^T[P(s),P(t)])=3/2` exactly. Nine settings require separately registered runs or a physically admitted controller/setting register. Their setting probabilities, all four exit outcomes, preparation, work and complete source must be retained. One unknown state cannot be read in nine incompatible bases without such a protocol.
 
 Choose the nine *rational* future null directions `k=(1,s)`:
 
