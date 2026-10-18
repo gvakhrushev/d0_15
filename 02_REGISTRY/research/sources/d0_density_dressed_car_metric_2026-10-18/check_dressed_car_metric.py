@@ -267,7 +267,45 @@ def test():
         defect = 2 * mu * (phi - f * phi_prime)
         assert defect == -2 * mu * d * f * f
         assert 2 * mu * (c * ZERO - ZERO * c) == ZERO
+    # Explicit complete 2-site x 16-grade weighted-Hilbert representation.
+    # D_count is symmetric by construction. The proper nontrivial boost
+    # acts inside its full raising block; the old reference128 may tensor I.
+    edge = raising(F[0], M)
+    D_count = matzero(32, 32)
+    for i in range(16):
+        for j in range(16):
+            D_count[i][16 + j] = edge[i][j]
+            D_count[16 + j][i] = edge[i][j]
+    a_site = list(sqrtmu_by_mubar)          # U_mu: weighted -> counting
+    aprime = [a_site[i] * sqrtchi[i] for i in range(2)]
+    D_mu = matzero(32, 32)
+    D_mup = matzero(32, 32)
+    T = list(sqrtchi)
+    for i in range(32):
+        x = i // 16
+        for j in range(32):
+            y = j // 16
+            D_mu[i][j] = a_site[y] / a_site[x] * D_count[i][j]
+            D_mup[i][j] = aprime[y] / aprime[x] * D_count[i][j]
+            assert D_mup[i][j] == T[y] / T[x] * D_mu[i][j]
+            # Weight-correct Hermiticity, NOT frozen counting adjoint.
+            assert a_site[x]**2 * D_mu[i][j] == a_site[y]**2 * D_mu[j][i]
+    # Exactly similar operators have identical traces of powers.
+    D2 = mmul(D_mu, D_mu)
+    D02 = mmul(D_count, D_count)
+    Dp2 = mmul(D_mup, D_mup)
+    assert sum(D2[i][i] for i in range(32)) == sum(D02[i][i] for i in range(32))
+    assert sum(Dp2[i][i] for i in range(32)) == sum(D02[i][i] for i in range(32))
+    sigmas = (Q(2, 7), Q(-3, 11))
+    dD = matzero(32, 32)
+    for i in range(32):
+        for j in range(32):
+            dD[i][j] = (sigmas[j//16] - sigmas[i//16]) * D_mu[i][j]
+    antiderivative = madd(mmul(D_mu, dD), mmul(dD, D_mu))
+    assert sum(antiderivative[i][i] for i in range(32)) == ZERO
+
     print("EXACT full16 exterior Lorentz lift / CAR anticommutator / dressed metric")
+    print("EXACT 2-site weighted CAR32 endpoint conjugacy and trace(D^2) source invariance")
     print("EXACT two-site star density invariance + finite compensator Ward")
     print("EXACT nonlinear Phi(f) Weyl-source defect quadratic in f")
     print(f"EXAMPLE unweighted star densities {f1}, {f2}; weighted sum {weighted}")
