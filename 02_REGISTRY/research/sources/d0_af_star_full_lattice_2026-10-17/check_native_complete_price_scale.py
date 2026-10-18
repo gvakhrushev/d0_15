@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Full native price scale, noncommuting return and native inverse-word controls.
+"""Full native price/source, golden MDL mode and structured exterior controls.
 
 Only new exact identities are evaluated. The accepted old amplification
 receipt is pinned and reused, never replayed. Default output is read-only.
@@ -9,7 +9,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
-from itertools import product
+from itertools import permutations, product
 import sympy as s
 
 
@@ -523,6 +523,622 @@ def equalized_full_radial(root=None):
         design_scope='The fixed programme law M(S,Q) is a different variation domain from independently free M. Its source includes the actual DM(S,Q); selection/admission remains unproved. If the input Rayleigh operator, code, clock, cut or other actual source varies with M, retain that source and solve the corresponding full equation. This is not a whole-D0 no-go.')
 
 
+def equalized_linked_rayleigh(root=None):
+    checks=[]
+    def ck(name, test):
+        if not bool(test):
+            raise ArithmeticError(name)
+        checks.append(name)
+    def zero(x):
+        if isinstance(x, s.MatrixBase):
+            return all(s.factor(v)==0 for v in x)
+        return s.factor(x)==0
+    beta,m,nu,z,c,eps,r0,r=s.symbols(
+        'beta m nu z c epsilon r0 r',positive=True)
+    b1,b2,w=s.symbols('b1 b2 w',positive=True)
+    t=s.symbols('t',real=True)
+    alpha=beta/m
+    aa=1-z
+    # Near t=0, M(t)=(1+t)M implies L(t)=(1+t)^2 L and
+    # Bnew(t)=(1+t)^(2/m) Bnew, without any commutation premise.
+    Z=b1**m+b2**m
+    meanB=w*b1+(1-w)*b2
+    H=s.log((1+t)**2*Z)/beta
+    J=-nu*(s.log(aa+z*(1+t)**2*b1**m)
+            +s.log(aa+z*(1+t)**2*b2**m))
+    Rin=(1-(1+t)**(2/m)*meanB)/alpha
+    ck('generated_heat_radial_2_over_beta',
+       zero(s.diff(H,t).subs(t,0)-2/beta))
+    ck('linked_input_Rayleigh_radial_minus_2_meanB_over_beta',
+       zero(s.diff(Rin,t).subs(t,0)+2*meanB/beta))
+    fbtrace=nu*z*(b1**m/(aa+z*b1**m)+b2**m/(aa+z*b2**m))
+    ck('complete_linked_radial_balance',
+       zero(s.diff(H+J+Rin,t).subs(t,0)
+            -(2*(1-meanB)/beta-2*fbtrace)))
+    theta=z*c*eps/(aa+z*c)
+    g=lambda x:z*c*x/(aa+z*c*x)
+    ck('spectral_source_monotonicity',
+       zero(g(r)-g(r0)-z*c*aa*(r-r0)
+            /((aa+z*c*r)*(aa+z*c*r0))))
+    ratio=(aa+z*c*r0)/(r0*(aa+z*c))
+    u=aa/(aa+z*c)
+    ck('sharp_signal_bound_convex_factor',zero(ratio-(u/r0+1-u)))
+    ck('source_to_full_rank_signal_ratio',
+       zero(theta/g(r0)-eps*ratio))
+    # Conditional B has a genuine positive interior full-root fixture:
+    # m=2, nu=1, z=1/2, beta=5/2, L=1/4, Bnew=1/2.
+    ell=s.symbols('ell',positive=True)
+    scalar=s.log(ell)/s.Rational(5,2)-s.log((1+ell)/2) \
+           +(1-s.sqrt(ell))/s.Rational(5,4)
+    ck('linked_full_scalar_interior_root_exists',
+       zero(s.diff(scalar,ell).subs(ell,s.Rational(1,4))))
+    ck('linked_scalar_signal_bound_is_sharp',
+       zero((theta-eps/beta*(1-b1)).subs(
+           {z:s.Rational(1,2),c:s.Rational(1,4),
+            beta:s.Rational(5,2),b1:s.Rational(1,2)})))
+    # Exact noncommuting 2x2 Frechet derivative of the positive root.
+    B=s.diag(s.Rational(1,2),s.Rational(3,4)); L=B*B
+    rho=s.Matrix([[s.Rational(1,2),s.Rational(1,4)],
+                  [s.Rational(1,4),s.Rational(1,2)]])
+    X=s.Matrix([[2,3],[3,5]])
+    Dsqrt=lambda Y:s.Matrix(2,2,lambda i,j:Y[i,j]/(B[i,i]+B[j,j]))
+    ck('noncommuting_root_Frechet_Sylvester_equation',
+       zero(B*Dsqrt(X)+Dsqrt(X)*B-X))
+    ck('noncommuting_root_Frechet_is_trace_selfadjoint',
+       zero(s.trace(rho*Dsqrt(X))-s.trace(Dsqrt(rho)*X)))
+    A=aa*s.eye(2)+z*L
+    alpha2=beta/2
+    G=s.eye(2)/(beta*s.trace(L))-nu*z*A.inv()-Dsqrt(rho)/alpha2
+    Lprime=-alpha2*(B*X+X*B)
+    oldsource=rho-B/s.trace(L)+nu*beta*z*B*A.inv()
+    ck('linked_gradient_pulls_back_to_LITERAL_v8_formula_4',
+       zero(s.trace(G*Lprime)-s.trace(oldsource*X)))
+    ck('noncommuting_rho_cannot_satisfy_full_free_matrix_Euler',
+       zero(G[0,1]+s.Rational(1,5)/alpha2))
+    # Joint preparation row on fixed RIGHT: left-unitary variations preserve
+    # C*C exactly; their energy source is i Tr K[rho,Delta].
+    x,y,k=s.symbols('x y k',real=True)
+    C=s.Matrix([[s.sqrt(s.Rational(1,2)),0],
+                [0,s.sqrt(s.Rational(1,2))],[0,0]])
+    ck('fixed_RIGHT_exact_uniform_marginal_retained',
+       zero(C.T*C-s.eye(2)/2))
+    Pc=C*C.T
+    K=s.Matrix([[0,0,-s.I*k],[0,0,0],[s.I*k,0,0]])
+    DC=s.I*K*C
+    ck('fixed_RIGHT_left_unitary_tangent_is_admissible',
+       zero(DC.conjugate().T*C+C.conjugate().T*DC))
+    Delta=s.Matrix([[x,0,y],[0,0,0],[y,0,0]])
+    prep=s.trace(DC.conjugate().T*Delta*C+C.conjugate().T*Delta*DC)
+    ck('fixed_RIGHT_prep_source_is_full_commutator',
+       zero(prep-s.I*s.trace(K*(Pc*Delta-Delta*Pc))))
+    ck('fixed_RIGHT_prep_source_not_frozen',zero(prep+k*y))
+    # Each occupied eigenweight obeys this scalar equation at a matrix root.
+    q=s.symbols('q',positive=True)
+    Acoef,Bcoef,l=s.symbols('Acoef Bcoef l',positive=True)
+    phi=l**(1-q)*(Acoef-Bcoef/(aa+z*l))
+    derivative=(1-q)*l**(-q)*(Acoef-Bcoef/(aa+z*l)) \
+               +l**(1-q)*Bcoef*z/(aa+z*l)**2
+    ck('positive_occupation_band_law_is_strictly_monotone',
+       zero(s.diff(phi,l)-derivative))
+    pins=[]
+    if root is not None:
+        base=Path(root)
+        owners=[
+            ('02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md',
+             ['The matter\nreading below remains <Delta>, NOT <Lambda>',
+              'R=<Psi,D_matter Psi>, ||Psi||=1',
+              'b beta z B^(2n-1)']),
+            ('01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md',
+             ['S_fb = -log det(I - z F_N)'])]
+        for path,fragments in owners:
+            text=(base/path).read_text()
+            ck('literal_owner_typing:'+path,all(f in text for f in fragments))
+            pins.append(path)
+    return dict(
+        status='PASS_EXACT_LINKED_HEAT_INPUT_RAYLEIGH',checks=checks,
+        source_owners=pins,
+        literal_typing='Old v8 RESULT3-5 proves B=I-alpha*Delta from the actual 32-word/128-output circuit, Lambda_alpha=-log(B)/alpha, L=B^(2n), beta=2n*alpha, and INPUT R=<Psi,Delta Psi>, not <Lambda_alpha> or an output-energy average. Reference multiplicity nu=128 belongs in ordinary feedback trace.',
+        case_A='If the canonical old geometric Delta and old heat/Hodge Lambda are retained and only the new word feedback is appended, old H and input R are M-independent. The full independent radial M row is DJ<0 unless other actual M-sources are present. Replacing H by Hgen already changes this tuple.',
+        conditional_case_B='Setting Bnew=L^(1/m), Delta_new=(I-Bnew)/alpha, beta=m*alpha is an operator reconstruction. It is not native merely because L=M*SM is a real return Gram. The actual new word must separately be identified with the geometric/CAR/Hodge Delta that the physical input reads.',
+        complete_radial='For fixed prep, fixed alpha,beta,m,cut and no other radial source: D(Hgen+J+Rnew)[deltaM=M]=2*(1-Tr(rho*Bnew))/beta-2*nu*z*Tr[L*((1-z)I+zL)^-1]. This admissible fixed-prep direction remains necessary when preparation is also varied or has fixed RIGHT128.',
+        signal_bound='At L=cRtarget, Rtarget>=r0 I, theta=zc epsilon/(1-z+zc), d_full=nu*dim(data), a stationary radial row forces d_full*theta <=epsilon/beta*(1-Tr(rho*Bnew))*(1-z+zc*r0)/(r0*(1-z+zc)) <=epsilon/beta*max(1,1/r0). This uses the genuine contraction 0<L<=I and normalized rho. Thus linking the input Rayleigh does not restore unbounded free-control signal.',
+        full_matrix_gradient='Let m>=1, q=1/m, Z=TrL. For independently free invertible strict-interior M in the data algebra, G=I/(beta Z)-nu*z*((1-z)I+zL)^-1-alpha^-1*D(L^q)_L(rho)=0. Frechet power is selfadjoint under trace. In an L eigenbasis its rho coefficient is the strictly positive divided difference f^[1](li,lj). Hence G=0 implies [rho,L]=0 and rho_i=li^(1-q)*[1/Z-beta*nu*z/(1-z+zli)]. Degenerate L blocks must have scalar rho.',
+        fixed_RIGHT128='With C_adjoint*C=sigma and Tr sigma=1 all columns remain. Its joint prep Euler is [rho,Delta_new]=0, rho=C*C_adjoint, equivalently range invariance together with the actual right-marginal constraint. For sigma=I128/128, rho=Poccupied/128. Combined with full free-matrix M Euler there is at most one positive survival eigenvalue per positive occupation weight for 0<q<=1, since the displayed scalar law is strictly increasing wherever its right hand side is positive. Every unoccupied eigenvalue solves one common scalar equation. Thus uniform occupied band and unoccupied complement have at most two values; no occupied directions were frozen.',
+        scope='These are conditional matrix/calculus statements, not a full-D0 refusal or a selected geometric source. Nonuniform sigma, restricted physical M tangents, actual R/control/clock/code dependencies and retained-history costs must keep their own rows. Native equality of reconstructed Delta_new to the geometric matter operator is still unproved.')
+
+
+def native_nb_controller_cost_source_controls(root):
+    import hashlib
+    from pathlib import Path
+    import sympy as s
+    root=Path(root)
+    owners=[
+        '01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md',
+        '01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md',
+        '02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md',
+        '02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md']
+    pins={f:hashlib.sha256((root/f).read_bytes()).hexdigest() for f in owners}
+    checks=[]
+    def ck(label,value):
+        if not value: raise ArithmeticError(label)
+        checks.append(label)
+    p=(s.sqrt(5)-1)/2
+    a=s.symbols('a',real=True)
+    b=s.sqrt(1-a*a)
+    G=s.Matrix([[s.sqrt(p),-p],[p,s.sqrt(p)]])
+    V=s.Matrix([[a,-b],[b,a]])
+    ck('original golden splitter is unitary', (G.T*G-s.eye(2)).applyfunc(s.simplify)==s.zeros(2))
+    ck('controlled target is unitary', (V.T*V-s.eye(2)).applyfunc(s.simplify)==s.zeros(2))
+    W=s.kronecker_product(G.T,s.eye(2))*s.diag(s.eye(2),V)*s.kronecker_product(G,s.eye(2))
+    q=[s.simplify(W[i,0]**2) for i in range(4)]
+    expected=[(p+p*p*a)**2,p**4*(1-a*a),p**3*(1-a)**2,p**3*(1-a*a)]
+    ck('all four coherent final outcomes retained',all(s.simplify(x-y)==0 for x,y in zip(q,expected)))
+    ck('complete coherent probability is one',s.simplify(sum(q)-1)==0)
+    ck('clean compression is positive LCU, not incoherent mean',s.simplify(W[0,0]-(p+p*p*a))==0)
+    q0=[s.simplify(x.subs(a,0)) for x in q]
+    dq0=[s.simplify(s.diff(x,a).subs(a,0)) for x in q]
+    ck('counter has no rank birth',all(x>0 for x in q0))
+    ck('counter probability jet exact',all(s.simplify(x-y)==0 for x,y in zip(dq0,[2*p**3,0,-2*p**3,0])))
+    # At a=0, q_00=p^2 and q_10=p^3. All other derivatives vanish.
+    Hprime=s.simplify(-sum(dq0[i]*s.expand_log(s.log(q0[i]),force=True) for i in range(4)))
+    Hprime=s.simplify(s.expand_log(Hprime,force=True))
+    ck('complete final pointer entropy has nonzero source',s.simplify(Hprime/(2*p**3*s.log(p))-1)==0)
+    c=s.symbols('c00 c01 c10 c11',real=True)
+    Cprime=s.simplify(sum(c[i]*dq0[i] for i in range(4)))
+    ck('fixed code lengths still have probability source',s.simplify(Cprime-2*p**3*(c[0]-c[2]))==0)
+    # Copying the prepared coin into a retained record destroys no probability,
+    # but removes the interference needed for clean compression.
+    record_blank=p**2+p**4*a*a
+    coherent_blank=q[0]
+    ck('unreversed retained coin changes the actual return effect',s.simplify(coherent_blank-record_blank-2*p**3*a)==0)
+    ck('alloutcome record is not coherent erasure at a=1',s.simplify(record_blank.subs(a,1)-(1-2*p**3))==0)
+    # Scalar tail integration used in the universal amplitude-source lemma.
+    u,A=s.symbols('u A',nonnegative=True)
+    tail=s.integrate(2*(A+u)*s.exp(-u),(u,0,s.oo))
+    ck('uniform log probability second moment tail integral',s.simplify(tail-(2*A+2))==0)
+    return dict(status='PASS',checks=checks,owners_sha256=pins,
+        alloutcome_counter='One existing golden splitter G, controlled real rotation V(a), then G*: q00=(p+p²a)², q01=p⁴(1-a²), q10=p³(1-a)², q11=p³(1-a²). All outcomes retained. At a=0: D H_phi=-2p³, D ECost=2p³(c00-c10). Tensor identity on all CAR16/reference128, arbitrary normalized whole-carrier preparation.',
+        record_control='An unreversed copy of the coin into a retained archive changes the all-new-work-blank mass to p²+p⁴a². The missing interference is 2p³a; at a=1 the coherent mass is1 but retained-record mass is1-2p³. Thus coherent scratch and immutable history record cannot be identified silently.',
+        universal_C1_bound='For complete smooth amplitudes v_a, sum||v_a||²=1, q_a=||v_a||² and V1²=sum||D v_a||²: |D H(q)| <= 2 V1 sqrt(log(M)²+2log(M)+2), including q_a=0 by amplitude-C1 continuation. Divide by log(phi) for phi units. This is not a C2 entropy bound.',
+        fixed_code_bound='For any fixed costs c_a: |D ECost| <= 2 V1 std_q(c) <= V1 (max c-min c). Fixed costs do not imply zero source.',
+        budget_consumer='For actual finite word U_L...U_1, V1 <= ||D Psi||+sum_j||D U_j||. A sufficient controller source suppression is V1(1+log M)=o(d theta), and for uncancelled actual fixed code also V1 range(c)=o(d theta). This is conditional on the full physical cost/Info and all-readout interface; generic C3 compiler existence supplies no such resource bound.',
+        price_scope='Same-history physical w=q would make TOTAL mean Cost-Info equal H(q)/log(phi), not H+J+R plus an automatically separate controller entropy. If only an incremental decomposition is owned, apply its genuine chain rule/source. No new price, code, source selection or stochastic coarse-graining is introduced.')
+
+def copy_antisymmetric_mdl(root=None):
+    checks=[]
+    def ck(name,test):
+        if not bool(test):raise ArithmeticError(name)
+        checks.append(name)
+    simp=lambda A:A.applyfunc(s.simplify)
+    expand=lambda A:A.applyfunc(s.expand)
+    def parity(perm):
+        return (-1)**sum(perm[i]>perm[j] for i in range(len(perm)) for j in range(i+1,len(perm)))
+    def anti(d):
+        v=s.zeros(d**d,1)
+        for pp in permutations(range(d)):
+            index=0
+            for a in pp:index=index*d+a
+            v[index]=parity(pp)/s.sqrt(s.factorial(d))
+        return v
+    def tensor_many(matrices):
+        out=s.ones(1,1)
+        for M in matrices:out=s.kronecker_product(out,M)
+        return out
+    # A full old unitary, not merely an assumed positive effect. At t=0 its
+    # compression is nonnormal; the physical tangent is noncommuting with F.
+    t,z=s.symbols('t z',real=True)
+    rot=lambda a:s.Matrix([[(1-a*a)/(1+a*a),-2*a/(1+a*a)],[2*a/(1+a*a),(1-a*a)/(1+a*a)]])
+    a=t+s.Rational(1,3)
+    ca=(1-a*a)/(1+a*a);sa=2*a/(1+a*a)
+    cb,sb=s.Rational(3,5),s.Rational(4,5)
+    G=s.diag(ca,cb);D=s.diag(sa,sb)
+    Jold=G.row_join(-D).col_join(D.row_join(G))
+    Rin=s.diag(rot(t+s.Rational(1,7)),s.eye(2))
+    U=Jold*Rin
+    ck('old_unitary_all4_input_columns',simp(U.T*U-s.eye(4))==s.zeros(4))
+    C=U[:2,:2];B=U[2:4,:2]
+    F=simp(B.T*B)
+    ck('old_failure_amplitude_full_Gram',simp(C.T*C+F-s.eye(2))==s.zeros(2))
+    F0=simp(F.subs(t,0));F1=simp(s.diff(F,t).subs(t,0))
+    ck('actual_noncommuting_field_tangent',F0*F1-F1*F0!=s.zeros(2))
+    ck('old_return_is_nonnormal',simp((C.T*C-C*C.T).subs(t,0))!=s.zeros(2))
+    A=s.eye(2)-z*F
+    v2=anti(2)
+    ck('known_AS2_normalization',(v2.T*v2)[0]==1)
+    det_event=s.factor((v2.T*s.kronecker_product(A,A)*v2)[0])
+    ck('exact_two_copy_determinant_event',s.factor(det_event-A.det())==0)
+    # Good Kraus sqrt(A) has a smooth rectangular full-unitary realization
+    # T=sqrt(z)B. Prove its algebra for an EXACT rational native-window sample.
+    # Use B at t=-1/7: the input rotation is identity, so all defect roots
+    # commute and are explicit scalars; no input column is thrown away.
+    zz=s.Rational(9,25)
+    Bdiag=simp(B.subs(t,-s.Rational(1,7)))
+    T=s.Rational(3,5)*Bdiag
+    kh=s.diag(*[s.sqrt((s.eye(2)-T.T*T)[i,i]) for i in range(2)])
+    kk=s.diag(*[s.sqrt((s.eye(2)-T*T.T)[i,i]) for i in range(2)])
+    W=kh.row_join(-T.T).col_join(T.row_join(kk))
+    ck('rectangular_Halmos_full_unitarity',simp(W.T*W-s.eye(4))==s.zeros(4))
+    ck('good_Luders_without_sqrt_F',simp(kh.T*kh-(s.eye(2)-zz*Bdiag.T*Bdiag))==s.zeros(2))
+    ck('all_original_bad_labels_retained',simp(T.T*T-zz*Bdiag.T*Bdiag)==s.zeros(2))
+    ck('all_good_data_return_to_known_AS',simp(s.kronecker_product(kh,kh)*v2-kh.det()*v2)==s.zeros(4,1))
+    # Negative effective triangle: the known actual native scene principal
+    # entries 1-23/480 on diagonal and -23/480 offdiagonal. It is a diagnostic
+    # block, not replacement of the original full33 or CAR16 carrier.
+    f=s.Rational(23,480)
+    F3=s.eye(3)-f*s.ones(3)
+    ck('negative_native_effective_entry_cycle',F3[0,1]*F3[1,2]*F3[2,0]==-f**3)
+    A3=s.eye(3)-z*F3
+    v3=anti(3)
+    ck('known_AS3_normalization',(v3.T*v3)[0]==1)
+    g3=s.factor((v3.T*tensor_many([A3,A3,A3])*v3)[0])
+    ck('coherent_three_copy_probability_keeps_negative_cycles',s.factor(g3-A3.det())==0)
+    # Every binary pattern includes the full fine bad output space. Permutation
+    # invariance of |AS><AS| makes equal-k patterns equiprobable.
+    x=s.symbols('x',real=True)
+    byk={}
+    for bits in product((0,1),repeat=3):
+        op=tensor_many([z*F3 if b else A3 for b in bits])
+        mass=s.factor((v3.T*op*v3)[0]);k=sum(bits)
+        if k in byk:ck('same_k_patterns_equal_'+''.join(map(str,bits)),s.factor(mass-byk[k])==0)
+        else:byk[k]=mass
+    generating=s.expand((A3+x*z*F3).det())
+    for k,mass in byk.items():
+        ck('exact_pattern_coefficient_'+str(k),s.factor(s.binomial(3,k)*mass-generating.coeff(x,k))==0)
+    ck('all_binary_and_fine_outcomes_complete',s.factor(sum(s.binomial(3,k)*v for k,v in byk.items())-1)==0)
+    ck('all_good_pattern_is_exact_g3',s.factor(byk[0]-g3)==0)
+    # Elementary symmetric bound, represented as a positive ordered-subset
+    # identity on relative odds ri in[0,rmax]. Each omitted term is positive.
+    r1,r2,r3,rmax=s.symbols('r1 r2 r3 rmax',nonnegative=True)
+    ck('degree1_odds_bound_decomposition',s.expand(3*rmax-(r1+r2+r3)-sum(rmax-r for r in (r1,r2,r3)))==0)
+    ck('degree2_odds_bound_decomposition',s.expand(3*rmax**2-(r1*r2+r1*r3+r2*r3)-sum(rmax*(rmax-a)+a*(rmax-b) for a,b in ((r1,r2),(r1,r3),(r2,r3))))==0)
+    ck('degree3_odds_bound_decomposition',s.expand(rmax**3-r1*r2*r3-((rmax-r1)*rmax**2+r1*(rmax-r2)*rmax+r1*r2*(rmax-r3)))==0)
+    for k in range(1,4):
+        ck('strict_mode_fixture_z_lt_half_'+str(k),s.simplify((g3-byk[k]).subs(z,s.Rational(9,25)))>0)
+    # This is a genuine field source, not only the scalar event identity.
+    g0=s.factor(det_event.subs(t,0));dg0=s.factor(s.diff(det_event,t).subs(t,0))
+    dJ0=s.factor(z*s.trace((s.eye(2)-z*F0).inv()*F1))
+    ck('noncommuting_full_mode_source',s.factor(-dg0/g0-dJ0)==0)
+    ck('mode_source_is_nonzero',s.simplify(dJ0.subs(z,zz))!=0)
+    F2=simp(s.diff(F,t,2).subs(t,0))
+    inv=(s.eye(2)-z*F0).inv()
+    second_expected=s.factor(z*s.trace(inv*F2)+z*z*s.trace(inv*F1*inv*F1))
+    second_actual=s.factor((-s.diff(det_event,t,2)/det_event+(s.diff(det_event,t)/det_event)**2).subs(t,0))
+    ck('noncommuting_second_mode_source',s.factor(second_actual-second_expected)==0)
+    e=s.symbols('relative_amplitude_error',real=True)
+    ck('mode_log_relative_first_jet',s.factor(s.diff(-2*s.log(1+e),e)+2/(1+e))==0)
+    ck('mode_log_relative_second_jet',s.factor(s.diff(-2*s.log(1+e),e,2)-2/(1+e)**2)==0)
+    lam=s.symbols('lambda',real=True)
+    odds=z*lam/(1-z*lam)
+    ck('uniform_odds_upper_bound',s.factor(z/(1-z)-odds-z*(1-lam)/((1-z)*(1-z*lam)))==0)
+    # Mean entropy remains a different complete-law aggregation; no history
+    # loss or event conditioning is used to identify it with the mode.
+    gg=s.symbols('g',positive=True)
+    h=-gg*s.log(gg)-(1-gg)*s.log(1-gg)
+    ck('mean_and_mode_sources_differ',s.factor(s.diff(h,gg)+s.log(gg)-s.log(1-gg))==0 and s.simplify(s.diff(h,gg)+1/gg)!=0)
+    return dict(status='PASS_EXACT_COPY_ANTISYMMETRIC_MDL',checks=checks,
+      exact_instrument='Old failure amplitude B=Qold Uold Pold, F=B*B. With T=sqrt(z)B, use rectangular Halmos W=[[sqrt(I-T*T),-T*],[T,sqrt(I-TT*)]]. Both roots have uniform gap1-z>0, including zero eigenvalues of F. Good K0=sqrt(I-zF); every old failure output label remains in T. No sqrtF or replacement by a presumed Luders bad map is needed.',
+      copy_test='Let d=rankPold. Prepare the KNOWN AS_d on d whole return-carrier probe copies, including all16/reference128 components. W on every copy; read all good/bad flags and a complete data basis with AS_d as a fixed basis vector on the all-good sector. All-good data amplitude is sqrt(det(I-zF))*AS_d. One complete pointer outcome has probability g=det(I-zF). All other all-good data probabilities vanish.',
+      full_mode_theorem='For a binary failure pattern I of sizek, q_I=g*e_k(r_1,...,r_d)/binom(d,k), ri=z lambda_i/(1-z lambda_i). Thus q_I<=g*[z/(1-z)]^k. Every finer retained bad-output history has probability<=q_I. For0<z<1/2, the all-good+AS outcome is the UNIQUE mode of the ENTIRE complete pointer law, not a postselected success event. The relative gap is at least1-z/(1-z). z>=1/2 has no such universal theorem.',
+      MDL_consumer='Under the EXISTING but still physical-binding-dependent w(history)=q(history), Info=log_phi(q/mu) and the Book03 MDL mode reading, the COMPLETE most-likely-history action is exactly J/log(phi), J=-logdet(I-zF). No scalar J or curvature was programmed as a price. This is distinct from the expected action H(q)/log(phi); neither aggregation is declared forced from matrix existence alone.',
+      source='At fixedcut/rank/z, D J=zTr[(I-zF)^-1 DF] and D2J[V,W]=zTr[A^-1 D2F[V,W]]+z²Tr[A^-1 DF[V] A^-1 DF[W]], without [F,DF]=0. Norm bounds J1<=zd F1/(1-z), J2<=zd F2/(1-z)+z²d F1²/(1-z)². A movingz adds Tr[(I-zF)^-1 F] Dz. A movingP requires the actual moving-AS preparation/cut jets; no frozen-frame statement is made.',
+      C2_birth_boundary='The unique mode is one fixed complete pointer coordinate with amplitude sqrt(g)>0; births of any OTHER output have no logarithm in S_MAP. Uniform mode-gap and positive g_min permit ordinary C2 source transfer. This removes the Shannon-birth obstruction for this particular mode-price map, not for H(q) or an unbound whole H+J+R action.',
+      finite_compilation='Let rho=z/(1-z)<1 and g_min=(1-z)^d. Ideal good amplitude=sqrt(g)>=sqrt(g_min); each competing complete amplitude has norm<=sqrt(rho)*sqrt(g). A whole-output state error eta0<0.5*(1-sqrt(rho))*sqrt(g_min) preserves the unique mode. For physical jet normJ2=norm+normD+0.5normD2, define J1,J2 as actual bounds on DJ,D2J. If the compiled good-amplitude error has J2 norm eta, then u=error/sqrt(g) has J2 norm<=eta*g_min^-1/2*(1+J1/2+J2/4+J1^2/8). For ||u||J2<=1/2 the mode-price J2 error is <=4||u||J2. Include actual whole-word/copy/AS-preparation errors: no polynomial gate-cost claim, eta may need exponentially small precision in d.',
+      analytic_query='sqrt(I-X) at ||X||<=z<1/2 has an absolutely convergent binomial series. Both Halmos roots use X=T*T or TT*, so no inverse small-gap oracle occurs. With rho=(1+z)/(2z)>1, j<=3 derivative tail after degreeL is bounded by rho^(-(L+1-j))*|D^j[1-sqrt(1-x)] at x=rho*z| (j0 uses the positive series sum<1). Physical B jets multiply by the chain rule. Native control/cost admission is still required.',
+      resource_boundary='The copied antisymmetric probe is known apparatus, not cloning unknown physical matter and not the original four-role CAR16 renamed as a new Fock field. Its d copies, coherent permutations/signs, preparation, full-data basis readout, old-field queries, z coin, fresh coherent work, and compiler leakage need genuine native admission and actual complete price. No measured old immutable archive is erased. Individual probe marginals need not satisfy the original arbitrary fixed-RIGHT preparation constraint; this is a new comparison test whose actual preparation interface must be typed.',
+      original_owner_boundary='The old signed native-cycle quotient and old filled-Slater determinant event already exist. New here is the smooth old-failure-amplitude Halmos realization on ordinary tensor copies plus a proof that its determinant outcome is the unique COMPLETE fine-history mode, which supplies a conditional MDL source bridge. It does not prove physical programme selection, common source with the old unmodified v8 experiment, independent spin matter, exact joint roots or GR closure.')
+
+def golden_copy_mdl_lcu(root=None):
+    checks=[]
+    def ck(name,test):
+        if not bool(test):raise ArithmeticError(name)
+        checks.append(name)
+    simp=lambda M:M.applyfunc(s.simplify)
+    p=(s.sqrt(5)-1)/2;a=s.sqrt(p)
+    w1=p**6;w0=1-w1;r=s.simplify(w1/w0)
+    ck('three_return_coins_weight',s.simplify(w1+4*p**3-1)==0)
+    ck('golden_fugacity_is_derived',s.simplify(r-p**3/4)==0)
+    kmin=1-2*w1
+    ck('uniform_good_effect_above_half',s.simplify(kmin*kmin-s.Rational(1,2))>0)
+    ck('all_good_contraction_below_one',s.simplify(1-w0)>0)
+    coin=s.Matrix([[a,-p],[p,a]])
+    ck('actual_golden_coin_full_unitarity',simp(coin.T*coin-s.eye(2))==s.zeros(2))
+    PREP=s.kronecker_product(coin,coin,coin)
+    ck('three_coin111_amplitude',s.simplify(PREP[7,0]-p**3)==0)
+    ck('all_other_seven_histories_kept',s.simplify(sum(PREP[j,0]**2 for j in range(7))-w0)==0)
+    # Actual old unitary with nonnormal return compression; every old input
+    # column and all old failure output columns remain.
+    c0=s.diag(s.Rational(4,5),s.Rational(3,5))
+    s0=s.diag(s.Rational(3,5),s.Rational(4,5))
+    rot=s.Matrix([[s.Rational(3,5),-s.Rational(4,5)],[s.Rational(4,5),s.Rational(3,5)]])
+    U=(c0.row_join(-s0).col_join(s0.row_join(c0)))*s.diag(rot,s.eye(2))
+    ck('old_word_unitary_all_input_columns',U.T*U==s.eye(4))
+    P=s.diag(1,1,0,0);Q=s.eye(4)-P
+    C=U[:2,:2];B=U[2:4,:2]
+    Ffull=P*U.T*Q*U*P;F=Ffull[:2,:2]
+    ck('old_actual_failure_Gram',F==B.T*B)
+    ck('old_return_is_nonnormal',C.T*C!=C*C.T)
+    # A projector encoder flips one FRESH flag iff the data lies outside Pi.
+    # Three separate flags encode P U* Q U P; no square root or matrix oracle.
+    def encoder(pi,flag):
+        out=s.zeros(32)
+        for f0,f1,f2,data in product(range(2),range(2),range(2),range(4)):
+            bits=[f0,f1,f2];col=4*(4*f0+2*f1+f2)+data
+            bits[flag]^=int(1-pi[data,data])
+            row=4*(4*bits[0]+2*bits[1]+bits[2])+data
+            out[row,col]=1
+        return out
+    EP0,EQ1,EP2=encoder(P,0),encoder(Q,1),encoder(P,2)
+    ck('three_projector_encoders_are_complete_unitaries',all(E.T*E==s.eye(32) for E in (EP0,EQ1,EP2)))
+    UU=s.kronecker_product(s.eye(8),U)
+    VF=EP2*UU.T*EQ1*UU*EP0
+    ck('actual_three_bank_F_query_full_unitarity',VF.T*VF==s.eye(32))
+    ck('actual_three_bank_clean_compression_is_F',VF[:4,:4]==Ffull)
+    E=s.zeros(32,2);E[0,0]=E[1,1]=1
+    VE=VF*E
+    # SELECT is identity on seven full branches and -VF on branch111; it is
+    # unitary on all8*32=256 inputs. PREP and its SAME exact inverse sandwich
+    # it. These are ALL256 output rows for both old input columns.
+    out=s.zeros(256,2)
+    for j in range(8):
+        hj=s.simplify(PREP[7,0]*PREP[7,j])
+        block=(E if j==0 else s.zeros(32,2))-hj*(E+VE)
+        out[32*j:32*(j+1),:]=block
+    K=simp(out[:2,:])
+    expected=simp(w0*s.eye(2)-w1*F)
+    ck('complete_three_coin_LCU_compression',simp(K-expected)==s.zeros(2))
+    ck('all256_output_rows_normalized',simp(out.T*out-s.eye(2))==s.zeros(2))
+    bad=out[2:,:]
+    ck('every_old_coin_query_failure_is_retained',simp(bad.T*bad-(s.eye(2)-K.T*K))==s.zeros(2))
+    ck('golden_good_is_positive_function_of_F',simp(K-w0*(s.eye(2)-r*F))==s.zeros(2))
+    # Ordinary AS2 input and all-good complete-data return. No new Fock field.
+    AS=s.Matrix([0,1,-1,0])/s.sqrt(2)
+    ck('all_good_data_return_to_known_AS',simp(s.kronecker_product(K,K)*AS-K.det()*AS)==s.zeros(4,1))
+    g=s.factor(K.det()**2)
+    ck('whole_mode_action_is_twice_derived_feedback',s.simplify(g-w0**4*(s.eye(2)-r*F).det()**2)==0)
+    Ag=simp(K.T*K);Bg=simp(s.eye(2)-Ag)
+    patterns=[]
+    for bits in product((0,1),repeat=2):
+        effect=s.kronecker_product(Bg if bits[0] else Ag,Bg if bits[1] else Ag)
+        patterns.append(s.simplify((AS.T*effect*AS)[0]))
+    ck('complete_pattern_probabilities_sum_one',s.simplify(sum(patterns)-1)==0)
+    ck('golden_complete_allgood_is_strict_global_mode',all(s.simplify(g-mass)>0 for mass in patterns[1:]))
+    # Generic field jets at the same positive fixture; no commutativity is used.
+    t=s.symbols('t',real=True);X=s.Matrix([[s.Rational(1,9),s.Rational(1,13)],[s.Rational(1,13),-s.Rational(1,17)]])
+    Ft=F+t*X;tK=w0*s.eye(2)-w1*Ft;tG=s.factor(tK.det()**2)
+    jrprime=r*s.trace((s.eye(2)-r*F).inv()*X)
+    ck('noncommuting_F_field_jet',F*X-X*F!=s.zeros(2))
+    ck('mode_source_is_computed_overall_factor2',s.simplify((-s.diff(tG,t)/tG).subs(t,0)-2*jrprime)==0)
+    # Coherent approximate PREP coefficients preserve the functional form if
+    # PREP^* is the actual inverse and SELECT/query identities remain exact.
+    u=s.symbols('identity_branch_weight',real=True)
+    ck('structured_weight_margin_factorization',s.expand((2*u-1)**2-s.Rational(1,2)-(2*u-1-1/s.sqrt(2))*(2*u-1+1/s.sqrt(2)))==0)
+    # Exterior implementation: known FILLED BASIS state removes the global
+    # antisymmetric-probe preparation, PROVIDED the actual programme is lifted
+    # as Gamma(W) and this structure is preserved by its primitive compiler.
+    # A small nonnormal good block checks all6 occupation outputs at N=4,d=2;
+    # the old8-mode/70-output determinant owner is reused, never replayed.
+    from itertools import combinations
+    cc=s.diag(s.Rational(12,13),s.Rational(15,17))
+    dd=s.diag(s.Rational(5,13),s.Rational(8,17))
+    WW=(cc.row_join(-dd).col_join(dd.row_join(cc)))*s.diag(rot,s.eye(2))
+    KK=WW[:2,:2];BB=WW[2:4,:2];Z=BB*KK.inv()
+    ck('exterior_fixture_all_input_columns_unitary',WW.T*WW==s.eye(4))
+    ck('exterior_good_fixture_nonnormal',KK.T*KK!=KK*KK.T)
+    ck('Thouless_full_bad_Gram',Z.T*Z==(KK*KK.T).inv()-s.eye(2))
+    gamma=KK.det()**2;rm=s.Rational(64,225)
+    masses=[]
+    for chosen in combinations(range(4),2):
+        missing=[i for i in range(2) if i not in chosen]
+        badrows=[i-2 for i in chosen if i>=2]
+        kk=len(badrows)
+        minor=WW.extract(chosen,[0,1]).det()
+        zm=Z.extract(badrows,missing).det() if kk else s.Integer(1)
+        ck('complete_occupation_minor_ratio_'+''.join(map(str,chosen)),s.factor(minor**2-gamma*zm**2)==0)
+        if kk:
+            ck('individual_occupation_mode_bound_'+''.join(map(str,chosen)),minor**2<=gamma*rm**kk and minor**2<gamma)
+        masses.append(minor**2)
+    ck('all_six_occupation_outputs_complete',sum(masses)==1)
+    # Reuse the already-owned same-J2 source ratio; changing the readout
+    # fugacity is explicit, so this is not the old z=2^-20 coupling.
+    L=4*p**3;Q0=1-r*L;R0=1-r*(1-p**12)
+    coupling=2*p**(-5)*(R0/Q0+p**6)
+    ck('derived_golden_same_J2_material_ratio',s.simplify(coupling-(33+27*s.sqrt(5))/4)==0)
+    return dict(status='PASS_EXACT_GOLDEN_COPY_MODE_LCU',checks=checks,
+      exact_weights=dict(p=str(p),identity_weight=str(s.simplify(w0)),negative_F_weight=str(s.simplify(w1)),derived_fugacity=str(s.simplify(r)),minimum_good_amplitude=str(s.simplify(kmin))),
+      derived_same_J2_ratio='If this readout is applied to the SAME already-owned two-tick geometric/scalar J2 operator, its retained source ratio lambda(z)=2*sigma*p^-5*[R0/Q0+p6], Q0=1-z*4p3,R0=1-z*(1-p12), specializes at the derived r=p3/4 to lambda=sigma*(33+27sqrt5)/4. The overall computed mode factor2/logphi cancels in this relative ratio. This does not give the old z=2^-20 numerical coupling or derive a new independent native matter sector; old pp/root suites are reused.',
+      full_old_query='On the ENTIRE old carrier, encode each projector by a fresh-flag flip on its complement. With three flags, P_out U_old* Q_mid U_old P_in has clean compression F=P U*QUP. All flags and every old failure label remain. The query is unitary on all32 fixture inputs; the3-coin SELECT(I on7 branches,-VF on111) is unitary on all256 inputs.',
+      exact_macro='Three original Golden coins have branch111 probability p6; all other7 branches weightw0=1-p6=4p3. Coherent PREP, SELECT, and the SAME inverse PREP produce exact good K=w0 I-p6 F=w0(I-rF), r=p3/4. All coin and query work must be blank on good; all nonblank outputs are retained. This requires exact controlled-query/projector/sign interfaces, not merely an approximation by an arbitrary unitary.',
+      complete_mode='K is positive with kmin I<=K<=w0 I, kmin=1-2p6 and kmin²>1/2. On d known antisymmetric probe copies, all-good+AS is ONE complete output with g=detK². All competing complete fine outputs are <=g Rmax^k for k>=1, where Rmax=(1-kmin²)/kmin²<1. Thus the same unique complete-mode theorem applies STRUCTURALLY for everyd. No exponentially small mode-gap test is needed when this functional structure and exact AS are preserved.',
+      action='Under the same actual history w=q and Book03 MDL MODE binding, S_MAP*logphi=-logg=-2dlogw0+2J_r(F), J_r=-logdet(I-rF), r=p3/4 derived from the actual3Golden coins. This is a NEW comparison readout at derivedr, not a claim that r equals the old experimentalz=2^-20. Factor2 and constant are computed, not fitted; movingp/d sources cannot discard the constant.',
+      structured_robustness='For any actual coherent PREP, its same inverse, and exact SELECT, K=u0 I-sum_uj F^j with uj>=0 and sumuj=1. If u0>(1+1/sqrt2)/2, then Kmin>=2u0-1>1/sqrt2 and unique-mode structure persists at all d. The exact3coin case has onlyu1. Structured replacement F_actual for F_target retains the determinant/mode identity. Generic Golden errors which destroy SELECT, same-adjoint, projector or AS identities require the previous absolute mode-gap/C2 budget.',
+      source_error_per_rank='At fixedr<1, F,G in[0,I], F/G first jets<=M1,secondjets<=M2, let delta_j bound D^j(F-G), j<=2. The twice-Jr mode first-source difference divided byd is <=2[r delta1/(1-r)+r² M1 delta0/(1-r)²]. The second-source difference/d is <=2[r delta2/(1-r)+r² M2 delta0/(1-r)²+2r² M1 delta1/(1-r)²+2r³ M1² delta0/(1-r)³]. No1/g factor occurs for STRUCTURE-PRESERVING errors. Normalized geometric signal still divides these actual errors; require delta relative to the real c*epsilon scale.',
+      exterior_mode='A structure-preserving exterior simulation gives a stronger implementation: lift the ENTIRE finite one-particle word W to Gamma(W) on N new apparatus occupation qubits and prepare the exact filled-P BASIS vector. Keep every exterior grade in Gamma, every output occupation label and every new work register. If W|P=[K;B] and K invertible, set Z=B K^-1. Every other d-occupation output replaces k retained rows by bad rows, so its amplitude is +/-detK times the corresponding k-by-k minor of Z. Thus q_other/g=|detZ_minor|²<=||Z||^(2k). Since Z*Z=(K K*)^-1-I, K*K>0.5I implies every individual occupation outcome is strictly below g=detK². No combinatorial enhancement occurs for an INDIVIDUAL minor; total failed mass is not required small. The small N4,d2 fixture verifies all6 outputs with nonnormal K and all bad rows retained.',
+      exact_exterior_gate_interface='The filled basis state needs no 1/sqrt(d!) amplitude preparation. If the ACTUAL old finite word is decomposed into real two-mode rotations and mode permutations, Gamma respects products. A plane rotation lifts to the two-occupation-qubit gate diag(1,R,1), obtainable by parity CNOT, controlled R, inverse parity CNOT. A mode swap lifts to FSWAP=SWAP times CZ, retaining its fermionic sign. Exact controlled rotations and FSWAP/CZ must be genuinely admitted; they are not deduced from plain G/CNOT availability. For structure-preserving approximations lift the ACTUAL approximate one-particle unitary, not an arbitrary approximation to Gamma(W). The derived mode identity and margin then hold exactly; errors transfer through ordinary logdet resolvent bounds without 1/g. This is a simulated auxiliary representation, not the original CAR16 matter or a new fundamental occupation field.',
+      unclosed='Known AS preparation and its readout must be genuinely admitted and counted. A generic finite Golden approximation to AS is not exactly antisymmetric and still needs the exponentially small absolute state-gap budget. No measured/immutable old archive may be erased as scratch. Old U, U*, controlled queries, projector tests and sign control require actual coherent admission. The final pointer/history w=q and MDL aggregation binding, physical programme selection, independent matter and exact joint physical recovery are not inferred from this construction.')
+
+def golden_mdl_densitized_source_controls(root):
+    import hashlib
+    import subprocess
+    import sympy as S
+    commit='c7ff2233e2f5ee06e4c94c0d949b21210a746bd4'
+    owners={
+        '02_REGISTRY/research/A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md':'26a3d1b8e626f7cce4945cba5b4bfad11bcddfc4',
+        '02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md':'75c40d133a23973a36ba5b95d34b4eb36ca96663',
+        '02_REGISTRY/research/certificates/a4d_direct_densitized_left_feedback_source_check.py':'3be801d6a483a36614478937063f9b4b46072edf'}
+    for path,pin in owners.items():
+        raw=subprocess.check_output(['git','show',commit+':'+path],cwd=root)
+        actual=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
+        if actual!=pin: raise ArithmeticError('source pin '+path)
+    checks=[]
+    def ck(label,val):
+        if not val: raise ArithmeticError(label)
+        checks.append(label)
+    p=(S.sqrt(5)-1)/2
+    z=S.symbols('z',real=True)
+    T=S.symbols('t_squared',positive=True)
+    h,w,wbar=S.symbols('h w wbar',positive=True)
+    da,dm=S.symbols('dA dM',real=True)
+    ss,aa,dd,ww=S.symbols('s A_wave D_wave W_cross',real=True)
+    r=S.simplify(p**3/4); L=4*p**3; a=p**6
+    Q=1-z*L; R=1-z*L*(1+a)
+    ck('golden derived readout is strictly inside symbolic z window',r>0 and r<1)
+    ck('generic Q positive convex pencil',S.simplify(Q-((1-z)+z*a))==0)
+    ck('generic R positive convex pencil',S.simplify(R-((1-z)+z*a*a))==0)
+    Qr=S.simplify(Q.subs(z,r));Rr=S.simplify(R.subs(z,r))
+    ck('derived r Q baseline',S.simplify(Qr-(1-p**6))==0)
+    ck('derived r R baseline',S.simplify(Rr-(1-p**6-p**12))==0)
+    g=4*z*p**11*T/R
+    gr=S.simplify(g.subs(z,r))
+    ck('derived r exact positive geometric coefficient',S.simplify(gr-p**14*T/(1-p**6-p**12))==0 and Rr>0)
+    lamplus=S.simplify((2/p**5)*(Rr/Qr+p**6))
+    target=(33+27*S.sqrt(5))/4
+    ck('derived coupling exact radical',S.simplify(lamplus-target)==0)
+    for sigma in (1,-1):
+        m=8*sigma*z*p**6*T*(1/Q+p**6/R)
+        ck('same full two-log ratio for orientation '+str(sigma),S.simplify((m/g).subs(z,r)-sigma*target)==0)
+        lam=sigma*target
+        trace=-2*lam*ss**2
+        ck('all nonzero coframe rows balance for orientation '+str(sigma),S.simplify((-(aa+dd)/h-2*lam*ss**2/h).subs(dd,trace-aa))==0)
+        ck('continuum owned orientation gamma=+1/2 agrees '+str(sigma),S.simplify(S.Rational(1,2)*trace+lam*ss**2)==0)
+    cx,cy=S.symbols('c_x c_y',real=True)
+    ck('both only potentially nonzero link rows vanish',S.simplify((aa+2*cx).subs(cx,-aa/2))==0 and S.simplify((dd+2*cy).subs(cy,-dd/2))==0)
+    old_u=wbar*da/w;old_v=wbar*dm/w
+    new_u=h**4*da/w;new_v=h**4*dm/w
+    ck('all-tangent old to densitized first-source scale',S.simplify(new_u+target*new_v-h**4/wbar*(old_u+target*old_v))==0)
+    return dict(status='PASS',checks=checks,source_commit=commit,source_blobs=owners,
+        r=str(r),coupling_over_sigma=str(target),positive_focusing_coefficient=str(2*target),
+        exact_statement='For every fixed admissible finite old AF cut with positive real weights, fixed coordinate grid/collar, every t>0 with its strict local chart, and bounded nonzero scalar slope s: take the pinned pp tetrad H=A x²+2Wcross xy+D y², backward-half-step Lorentz links, psi=s u, A+D=-2 sigma Lambda_plus(r)s². Then every A_cell=M_cell=0 and all independent interior coframe16, Lorentz-link24 and compact-support scalar Euler rows of the SAME densitized J_r vanish. Golden occupation MDL multiplies all these rows by 2/log(phi), so the zeros are unchanged.',
+        scalar_row_proof='At J=1,q=0, Dpsi sum M=2s h^4 sum D_v^+delta_psi=0 for arbitrary compact-supported delta_psi. Positive uneven AF weights cancel before integration by parts. Scalar has no Lorentz spin-current; its link derivatives vanish, leaving the pinned 24 geometric link rows.',
+        existing_vs_new='Remote prose D3-D17 gives symbolic 0<z<1 first-source/limit and null-root transfer. Its checker pins z=2^-20. Only this helper makes the new exact substitution z=r and radical simplification; the old full lattice proof is consumed by source pin and not replayed.',
+        scope='Conditional new detector MODE action, not total mean entropy or unchanged numerical z=2^-20 experiment. Original preparation/fixedRIGHT/observer/H/R/clock/controllers and all remaining CAR grades are not solved; genuinely free scene E,b have nonzero source. General offshell Einstein-scalar limit still requires t->0/source and full spatial/compile/recovery budgets.')
+
+def adjacent_even_exterior(root=None):
+    import math
+    import numpy as np
+    import sympy as sp
+    checks = {}
+    def ck(name, value):
+        checks[name] = bool(value)
+        if not checks[name]:
+            raise AssertionError(name)
+    c, s = sp.symbols('c s', real=True)
+    R = sp.Matrix([[c, -s], [s, c]])
+    I2 = sp.eye(2)
+    # Basis 00,01,10,11.  C01: first controls second.
+    C01 = sp.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+    C10 = sp.Matrix([[1,0,0,0],[0,0,0,1],[0,0,1,0],[0,1,0,0]])
+    def red(x):
+        return sp.reduced(sp.expand(x), [c*c+s*s-1], c, s)[1]
+    def ze(M):
+        return all(red(x)==0 for x in M)
+    square = sp.Matrix([[c*c-s*s, -2*c*s], [2*c*s,c*c-s*s]])
+    # Rightmost factor acts first.  Reversed R signs correct the wedge
+    # ordering: one-particle modes are 10,01, whereas the odd bit block is01,10.
+    lift = C01 * sp.kronecker_product(R.T,I2) * C10 * sp.kronecker_product(R,I2) * C10 * C01
+    target = sp.zeros(4)
+    target[0,0]=target[3,3]=1
+    for a in range(2):
+        for b in range(2):
+            target[1+a,1+b]=square[1-a,1-b]
+    ck('exact_adjacent_even_lift_all_four_basis_columns', ze(lift-target))
+    ck('exact_lift_orthogonal',ze(lift.T*lift-sp.eye(4)))
+    ck('vacuum_and_filled_pair_return_exactly',ze(lift[:,0]-sp.eye(4)[:,0]) and ze(lift[:,3]-sp.eye(4)[:,3]))
+    X=sp.Matrix([[0,1],[1,0]])
+    ck('inverse_uses_retained_basis_one_X_echo',X*R*X==R.T)
+    ck('one_particle_block_is_R_squared',ze(sp.Matrix([[lift[2,2],lift[2,1]],[lift[1,2],lift[1,1]]])-square))
+
+    # One actual finite word on four adjacent apparatus modes.  All sixteen
+    # occupation directions are checked, including empty/full grades.
+    p=(math.sqrt(5)-1)/2
+    a=math.sqrt(p)
+    G=np.array([[a,-p],[p,a]],float)
+    C01n=np.array(C01,float)
+    C10n=np.array(C10,float)
+    B=C01n @ np.kron(G.T,np.eye(2)) @ C10n @ np.kron(G,np.eye(2)) @ C10n @ C01n
+    G2=G@G
+    def occup(i,N):
+        return tuple(j for j in range(N) if (i>>(N-1-j))&1)
+    def exterior(U):
+        N=U.shape[0]
+        out=np.zeros((2**N,2**N))
+        for i in range(2**N):
+            ii=occup(i,N)
+            for j in range(2**N):
+                jj=occup(j,N)
+                if len(ii)==len(jj):
+                    out[i,j]=np.linalg.det(U[np.ix_(ii,jj)]) if ii else 1.
+        return out
+    N=4
+    word=[(0,1),(1,5),(2,2),(0,-2),(1,-7),(2,3)]
+    W=np.eye(N)
+    Q=np.eye(2**N)
+    for edge,m in word:
+        local=np.linalg.matrix_power(G2,m)
+        full=np.eye(N)
+        full[edge:edge+2,edge:edge+2]=local
+        W=full@W
+        pair=np.linalg.matrix_power(B,m)
+        gate=np.kron(np.kron(np.eye(2**edge),pair),np.eye(2**(N-edge-2)))
+        Q=np.einsum('ij,jk->ik',gate,Q,optimize=False)
+    ext=exterior(W)
+    tol=2e-12
+    ck('actual_word_all_entries_finite',np.isfinite(Q).all() and np.isfinite(W).all())
+    ck('actual_four_mode_word_matches_all_sixteen_exterior_columns',np.max(np.abs(Q-ext))<tol)
+    ck('actual_word_all_grades_retained_and_invariant',all(abs(Q[i,j])<tol for i in range(16) for j in range(16) if len(occup(i,N))!=len(occup(j,N))))
+    ck('actual_word_unitary_on_full_occupation_carrier',np.linalg.norm(np.einsum('ij,jk->ik',Q.T,Q,optimize=False)-np.eye(16),2)<tol)
+    ck('actual_inverse_is_reversed_exact_gate_word',np.linalg.norm(Q.T-exterior(W.T),2)<tol)
+    P=(0,1)
+    K=W[np.ix_(P,P)]
+    sigma_min=float(np.linalg.svd(K,compute_uv=False)[-1])
+    ck('actual_compression_structural_mode_margin',sigma_min**2>0.5)
+    filled=12 # modes0,1 occupied
+    prob=Q[:,filled]**2
+    good=float(prob[filled])
+    ck('filled_basis_input_is_single_exact_computational_state',occup(filled,N)==P)
+    ck('return_probability_is_det_K_squared',abs(good-np.linalg.det(K)**2)<tol)
+    ck('all_six_grade_two_outcomes_normalize',abs(sum(prob[i] for i in range(16) if len(occup(i,N))==2)-1)<tol)
+    ck('one_complete_occupation_history_is_unique_mode',all(prob[i]<good for i in range(16) if i!=filled))
+    Z=W[2:,:2]@np.linalg.inv(K)
+    odds=float(np.linalg.norm(Z,2)**2)
+    ck('Thouless_odds_equal_sigma_min_inverse_square_minus_one',abs(odds-(sigma_min**-2-1))<tol)
+    for k in (1,2):
+        ck('every_individual_replacement_minor_bound_k'+str(k),all(prob[i]/good<=odds**k+tol for i in range(16) if len(occup(i,N))==2 and len(set(occup(i,N))-set(P))==k))
+
+    # The gate polynomial is valid for every smooth admitted local query,
+    # not merely at golden constants.  Check full first/second query jets.
+    t=sp.symbols('t',real=True)
+    tr={c:sp.cos(t),s:sp.sin(t)}
+    jetdiff=(lift-target).subs(tr)
+    ck('smooth_local_query_first_jet_exact',all(sp.trigsimp(sp.diff(x,t))==0 for x in jetdiff))
+    ck('smooth_local_query_second_jet_exact',all(sp.trigsimp(sp.diff(x,t,2))==0 for x in jetdiff))
+
+    # Hostile control: generic real operator compilation need not preserve
+    # grades.  A one-qubit G on the first occupation wire leaks the vacuum.
+    unstructured=np.kron(G,np.eye(8))
+    ck('generic_G_word_does_not_automatically_preserve_exterior_grades',abs(unstructured[8,0])>0.1)
+
+    # Existing mod2 invariant detects the tempting odd lift, without search.
+    x=sp.symbols('x')
+    modpoly=sp.Poly(x**4+x**2+1,x,modulus=2)
+    b=sp.Poly(x+x*x,x,modulus=2)
+    ck('mod2_golden_sum_is_not_vacuum_sum',b.rem(modpoly)!=sp.Poly(1,x,modulus=2))
+    ck('mod2_even_golden_sum_is_vacuum_sum',(b*b).rem(modpoly)==sp.Poly(1,x,modulus=2))
+    # No inference of sufficient exact word synthesis from this necessary
+    # invariant; it only rejects the explicitly odd clean lift.
+
+    result={
+      'status':'PASS','checks':len(checks),'check_results':checks,
+      'exact_word': 'C01 (G^T tensor I) C10 (G tensor I) C10 C01 = Gamma(G^2)',
+      'basis_order':'00,01,10,11; mode order0,1; rightmost factor acts first',
+      'fixture':{'modes':N,'full_exterior_dimension':16,'word_edges_even_powers':word,
+                 'sigma_min_K':sigma_min,'good_complete_mode_probability':good,
+                 'max_other_probability':float(max(prob[i] for i in range(16) if i!=filled)),
+                 'replacement_odds_norm_squared':odds,
+                 'full_matrix_lift_error':float(np.max(np.abs(Q-ext))),
+                 'all_grade_two_probabilities':{''.join(map(str,occup(i,N))):float(prob[i]) for i in range(16) if len(occup(i,N))==2}},
+      'scope':'Exact structure for actual adjacent-even word; constant target approximation only unless a smooth native local-query interface is supplied. No exact odd-G lift, no old LCU sign/control identity, no immutable record erasure, no physical MDL/Info selection or GR closure.'}
+    return result
+
 def append_only_source_provenance(root):
     owner='02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md'
     raw=(Path(root)/owner).read_bytes()
@@ -535,7 +1151,7 @@ def append_only_source_provenance(root):
     return dict(status='PASS_UNCHANGED_PRIOR_SOURCE_BYTES',base_commit='622d96b68f0195aaed4ae856e90429225de9c580',
         source_path=owner, prior_owner_sha256=old_sha,
         current_owner_sha256=hashlib.sha256(raw).hexdigest(),
-        prior_math='All pre-existing source bytes including6.46-6.52 are identical after removing only inserted6.53-6.55. Prior null/source math receipt is reused; only this owner fingerprint is refreshed.')
+        prior_math='All pre-existing source bytes including6.46-6.52 are identical after removing only inserted6.53 onward. Prior null/source math receipt is reused; only this owner fingerprint is refreshed.')
 
 
 def main():
@@ -552,6 +1168,12 @@ def main():
         one_full_return=equalized_return(args.root),
         native_inverse_word=native_negative_binomial_controls(args.root),
         full_control_balance=equalized_full_radial(args.root),
+        linked_input_R=equalized_linked_rayleigh(args.root),
+        actual_control_cost=native_nb_controller_cost_source_controls(args.root),
+        complete_history_mode=copy_antisymmetric_mdl(args.root),
+        golden_mode_word=golden_copy_mdl_lcu(args.root),
+        golden_mode_density_source=golden_mdl_densitized_source_controls(args.root),
+        structured_even_exterior=adjacent_even_exterior(args.root),
         full_D0_price_selected=False, generic_joint_recovery=False, GR_closed=False)
     output = json.dumps(result, ensure_ascii=False, indent=2, default=str)+'\n'
     if args.output:

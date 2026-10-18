@@ -1,5 +1,55 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — a finite golden determinant MODE and its actual history price
+
+[Strategic §7.18](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.56–6.58](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the full linked heat/input source and then construct a positive
+Book-MDL price consumer. Linked Rayleigh does not free the amplified
+control signal; the full matrix Euler permits occupied/unoccupied bands
+with all fixed-RIGHT128 preparation rows retained. Actual controller
+mean Cost−Info is not an automatic extra term alongside spectral J.
+
+Three original golden coins, actual old failure query and matched
+unprepare give K=(1−p6)I−p6F, derived r=p3/4. Its least singular
+value exceeds1/sqrt2. In the full exterior detector every competing
+occupation amplitude is detK times a minor of B_bad K^-1; each is
+strictly smaller than detK. Thus filled-P is the UNIQUE complete final
+detector mode. Under actual w=q and the existing Book MDL-history
+rule, S_mode*logphi=−2dlog(1−p6)+2J_r(F), with no determinant oracle
+or fitted fugacity. Its positive mode price is C2 despite other-outcome
+births. Structure-preserving exterior compilation has per-rank source
+bounds without1/g; arbitrary output approximations still require the
+explicit exponential absolute-gap budget.
+There is now an exact G/CNOT exterior lift for the adjacent-EVEN
+subclass, on all occupation grades, without FSWAP/CZ or an AS ray.
+Its fixed-target approximation is not a C2 field-dependent programme:
+an actual C2 field-input/query/cut family remains required. A constant
+word with fixed input/cut has no field source; moving preparation/cut
+sources remain present. This resolves a concrete gate interface, not native forcing.
+
+The [same two-source direct-density owner](A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md)
+has symbolic z-dependent source identities, giving
+lambda_mat(r)=sigma*(33+27sqrt5)/4 at this derived parameter. All actual
+AF weights, dressed-CAR operands and physical volume density remain.
+No old numerical z=2^-20 receipt is relabelled as a new root.
+The new exact symbolic substitution transfers the owned pp family to
+A_wave+D_wave=−sigma*(33+27sqrt5)*s²/2, with all16+24+scalar interior
+Euler rows zero at every admissible fixedt>0 and two free Weyl modes.
+This is a solution of the constructed mode/J_r action. Native field
+stationarity and the old preparation/clock/controller rows remain their
+own equations; maximizing a finite history label does not supply them
+([concurrent MDL boundary §10](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)).
+
+The remaining consumer is precise: admit the coherent queries and
+actual exterior/history frame, show its physical w=q/MDL binding and
+account for all retained old-history, preparation, control and clock
+sources. Final detector outcome alone is not the full old microhistory;
+immutable intermediate records can destroy its interference. The new
+known probe is not a frozen old physical matter state. Mean H(q), mode
+price and the original whole H+J+R are distinct. Then establish exact
+joint roots/refinement of that SAME admitted price. GR remains OPEN.
+
 ## 18 October 2026 — one full return word and complete-source scale
 
 [Strategic §7.17](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

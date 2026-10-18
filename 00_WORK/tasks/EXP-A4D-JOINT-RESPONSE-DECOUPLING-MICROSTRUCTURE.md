@@ -12,6 +12,49 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: the genuinely linked heat/Rayleigh control source
+
+Input14cdcf28; prior turn made progress: one-feedback construction,
+actual inverse from the old32-word query, full heat/feedback free-control
+balance and exact-head Draft CI are published. The next consumer is the
+actual heat/input-Delta interface left in6.55, not another saturation or
+rank census. Read literal v8/Book03 to decide whether changing whole
+return L also changes the matter Delta. Keep the old geometric Delta,
+effective logarithmic Lambda and a reconstructed Delta(L) distinct.
+Where the SAME native construction really ties them, derive the full
+H+J+R radial/matrix source and fixed-RIGHT preparation rows, retaining
+all CAR16/reference128 directions and the physical normalizer. Do not
+postulate Delta(L) as a new native constitutive law. Use any linked-model
+calculation only with its exact admission boundary. In parallel derive
+what actual history/code cost the new bounded inverse/control circuit
+contributes; affine equivalence or field-independent syntax alone is
+not price/source equality. Root alone edits shared owners/intakes and
+the existing bounded checker; read-only assistants use /tmp. The parent
+consumer is6.55's control-law/whole-price→joint-recovery transition.
+Smallest decisive checks: exact same-event chain rule, actual preparation
+normal and one radial/source identity. Reuse unchanged prior receipts;
+no new task, action, frozen matter or replacement of raw#216.
+A third read-only premise tests Book03's claimed history-partition/logdet
+binding constructively: closed loops/symmetric histories, forced cyclic
+1/k and permutation1/r! counts, finite truncation/source error, and actual
+positive cut/provenance. A formal Sym/Fock determinant identity is not
+native execution. Do not quotient history-sensitive roots, equate
+Tr(F^k) with arbitrary Kraus survival, or introduce an unexplained
+occupation field. The consumer is the same6.55 whole-price arrow.
+The surviving positive consumer is now6.58: use the owned determinant
+event to prove a UNIQUE complete detector mode, derive its fugacity
+from actual3golden coins, and test the existing Book MDL rule on it.
+Read-only premises pressure-test the nonnormal exterior-minor proof,
+structured G/CNOT lift and the SAME two-source/pp-wave at derivedr.
+The whole final detector frame is not automatically the full old Book
+microhistory; retained intermediate archive and old preparation/clock
+rows must be typed. Do not replace the mean action by its mode or
+freeze physical matter to the new known apparatus preparation. Consume
+the concurrent direct-density owner atc7ff2233 without editing its files.
+The parent route changes from free-control amplification to this actual
+history/price binding and its own joint recovery, with no new registry.
+
+
 ### 18 October: the ONE complete feedback and the remaining heat/preparation source
 
 Input `622d96b6`; the previous goal turn made progress: published the

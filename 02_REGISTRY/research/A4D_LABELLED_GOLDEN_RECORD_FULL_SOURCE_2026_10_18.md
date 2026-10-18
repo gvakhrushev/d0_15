@@ -4787,6 +4787,419 @@ Raw#216 и прежние native source obstructions не переименовы
 Прежние §§6.46–6.52 сохранены byte-identical; в их старом receipt
 обновлён только fingerprint этого дополненного prose owner.
 
+### 6.56. Связанный Rayleigh: полный источник, а не замена geometric Δ логарифмом
+
+Потребляем literal v8 RESULT §§3–5, не переигрываем прежние roots.
+Оригинальное слово доказало B=I−αΔ, Δ=D², L=B^m, m=2n,
+Λ_α=−α⁻¹logB и β=mα. Его R_in=Tr(ρΔ), Trρ=1, есть INPUT
+Rayleigh именно Δ, не Λ_α. Новый return Gram сам по себе не доказывает
+связь нового heat generator с тем geometric D², который читает материя.
+
+Поэтому различаем три РЕАЛЬНО разных conditional tuple.
+A сохраняет старые Δ,Λ_α и меняет только feedback word: тогда для
+независимого M имеем DH_old[M]=DR_old[M]=0, и остаётся отрицательная
+DJ[M] без иных actual controller sources. Hybrid §6.55 заменяет H
+на H_gen нового Gram, оставляя R_old; именно к нему относится(13fj).
+B восстанавливает ОБА оператора из нового L=M*SM>0:
+
+    q=1/m, B_new=L^q, Δ_new=(I−B_new)/α, β=mα.    (13fm)
+
+Это корректная operator reconstruction. Native equality Δ_new=D²
+требует такого же настоящего word/operator diagram, как старый v8;
+она не является следствием существования positive L.
+
+В B при fixed prep и calibrations радиальное M(t)=(1+t)M даёт
+L(t)=(1+t)²L, B_new(t)=(1+t)^(2/m)B_new. Reference multiplicity
+ν=128 сохраняется в feedback trace, heat multiplicity field-independent:
+
+    D(H_gen+J+R_new)[M]
+      =2(1−TrρB_new)/β
+         −2νzTr[L((1−z)I+zL)^(−1)].               (13fn)
+
+Это необходимая joint row даже при свободной подготовке/fixed RIGHT:
+можно варьировать M, удерживая подготовку фиксированной. При
+L=cR_target, R_target≥r₀I, θ из(13fe), d_full=ν dim(data),
+
+    d_full θ ≤ (ε/β)(1−TrρB_new)
+                   (1−z+zc r₀)/(r₀(1−z+zc))
+             ≤ (ε/β)max(1,1/r₀).                 (13fo)
+
+Использовано настоящее 0<L≤I. Связанный input source усиливает прежний
+bound; unbounded free-control amplification не появляется. Additional
+M-dependent clock/code/control sources остаются в собственном Euler.
+При этом внутренние полные roots существуют: m2,ν1,z1/2,β5/2,
+α5/4,L1/4,B_new1/2,ρ1 даёт точный scalar root. Это не общий no-go.
+
+**Полный некоммутирующий matrix source.** Для Z=TrL,A=(1−z)I+zL
+и f(x)=x^q Frechet derivative Df_L самосопряжён относительно trace.
+При independently free invertible interior M все Hermitian δL допустимы:
+
+    G_L=I/(βZ)−νz A^(−1)−α^(−1)Df_L(ρ)=0.       (13fp)
+
+В eigenbasis L off-diagonal Df_L(ρ)_ij=f^[1](l_i,l_j)ρ_ij с positive
+divided differences. Поэтому [ρ,L]=0 следует из полного Euler,
+а не наложено перед вариацией. В каждом degenerate L block ρ scalar;
+
+    ρ_i=l_i^(1−q)[1/Z−βνz/(1−z+z l_i)].          (13fq)
+
+Для arbitrary normalized C с C*C=σ_RIGHT все left-unitary variations
+сохраняют правый marginal. Prep source=iTr K[ρ,Δ_new], ρ=CC*;
+собственная prep row есть [ρ,Δ_new]=0. При σ=I128/128 имеем
+ρ=P_occupied/128, и occupied plane может свободно поворачиваться.
+Ни reference, ни entangling/preparation rows не заморожены. При0<q≤1
+правая часть(13fq) строго растёт на positive branch: каждый fixed
+positive occupation допускает не больше одного survival value. Empty
+rows имеют общий l₀=βνZ−(1−z)/z. Таким образом для uniform RIGHT
+возможны occupied и unoccupied bands, а не прежнее одно scalar L.
+
+Новый bounded noncommuting check использует Sylvester root derivative
+при q=1/2. Pullback(13fp) через L=B², δL=−α(BX+XB) даёт БУКВАЛЬНО
+исходную v8 source formula(4) для произвольных noncommuting ρ,X иν.
+Это строгая связка формул на одном tuple, не новый geometric input.
+Область physical M tangents, nonuniform σ, новый Δ_new=D² diagram,
+полная история и controller costs всё ещё требуют своих owners.
+
+### 6.57. Цена полного NB-control: source budget без замены действия энтропией
+
+Book03 задаёт path weight φ^(−S) и S=Cost−Info. Actual
+[branch cocycle](A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md) даёт
+при physical SAME-history w=q на complete normalized cut
+
+    S(a)=−log_φ q_a,
+    Info(a)=log_φ(q_a/μ_a),
+    E(Cost−Info)=H(q)/logφ.                     (13fr)
+
+Последняя строка — СРЕДНЯЯ цена полной программы. Она не равна
+автоматически H+J+R и не является автоматически дополнительной
+малой controller поправкой к этой сумме. Нужна owned additive
+partition одной и той же action. Mean(13fr) также не есть минимум
+историй −log_φ max q; этот MDL consumer рассматривается ниже.
+
+Полный код новых label/coefficient/controller/archive исходов не
+задан одной старой port code(1,2). Поэтому gate count не подставляется
+как цена. Но field-independent NB substage оплачивается точно:
+при T fixed triples, всех8^T microscopic histories с golden probabilities
+и code cylinder μ=q получаем ECost=H_φ=3T(2−p), EInfo=0,
+source=0. Count K/timeout — функция ВСЕЙ ленты; семь failure types
+и conditional tape не исчезают. Эта identity не оплачивает будущий
+field-dependent SELECT и unprepare.
+
+**Uncompute не означает zero source.** Для настоящего golden
+G=[[sqrt p,−p],[p,sqrt p]], одного controlled real rotation V(a)
+и последующего G* из blank получаются ВСЕ четыре probabilities
+
+    q=((p+p²a)², p⁴(1−a²), p³(1−a)², p³(1−a²)).
+
+Их сумма1, вa0 все positive, но D_aH_φ|0=−2p³≠0.
+Для любого fixed code c имеем D_aECost|0=2p³(c00−c10).
+Если до SELECT скопировать coin в IMMUTABLE archive, новый blank mass
+есть p²+p⁴a²; coherent mass отличается на2p³a. Приa1 чистый
+coherent return=1, recorded return=1−2p³. Все outcomes сохранены.
+Tensor identity на полных CAR16/reference128 сохраняет этот exact
+counter при любой normalized подготовке. Coherent temporary scratch
+и уже измеренная неизменяемая история имеют разные actual effects.
+
+**Uniform first-source lemma, включая births.** Пусть v_a — ВСЕ
+final record amplitudes в полном system/reference carrier,
+Σ||v_a||²=1, q_a=||v_a||², V₁²=Σ||Dv_a||². Тогда
+
+    |DH_φ(q)|≤(2V₁/logφ) sqrt((log M)²+2log M+2),
+    |DECost|≤2V₁ std_q(c)≤V₁(max c−min c),
+    V₁≤||DΨ||+Σ_j||DU_j||.                       (13fs)
+
+Proof: normalization удаляет linear entropy term, Cauchy–Schwarz даёт
+2V₁ sqrt(Σq log²q). Для q-distributed L=−logq имеем
+Pr[L≥logM+u]≤e^(−u); интегрирование tail даёт момент в(13fs).
+При q=0 новая amplitude создаёт −x²logx² с first derivative0;
+probability floor не нужен. Fixed-code bound следует после вычитания
+ECost и variance≤range²/4. Все preparation/observer/control jets
+сохранены, multiplicity не заменяется unexplained factor16/128.
+
+Для существующего coherent candidate V=[v_a], ρ_out=VV*, ||V||_F=1
+имеем DS_vN=−2ReTr[(DV)*log(ρ_out)V]. Та же оценка действует с
+M→r≤min(dim(system×reference),M). Поэтому actual coherent price
+ECost−S_vN/logφ получает сумму bounds(13fs) без dephasing или выбора
+нового Info. Эти два candidate price не объявлены одним действием.
+
+Достаточный actual controller FIRST-source budget есть
+V₁(1+logM+range(c))=o(dθ), когда соответствующая fixed-code term
+действительно принадлежит physical price. Polynomial record width,
+word/query jets и code range подавляются exponential dθ приN≥2m;
+один generic C³ compiler НЕ доказывает этот resource bound.
+Если(13fs) применяется к TOTAL mean(13fr), его источник /dθ исчезнет
+ЦЕЛИКОМ: одновременно объявить surviving spectral DJ нельзя. Если
+price owner задаёт H+J+R плюс настоящий incremental history cost,
+нужно применить его actual chain rule со всеми moving probabilities.
+Ни новое действие, ни код, ни stochastic coarse-graining не выбраны.
+
+Это C¹ amplitude theorem. Uniform C² entropy на births из него не
+следует: вторая derivative −x²logx² расходится. Positive smooth
+контроль выше уже имеет nonzero first source без rank birth. Для
+second-source/recovery нужен actual support либо другая выведенная
+полная цена с соответствующей регулярностью.
+
+### 6.58. Детерминант как единственная MDL-мода: три golden монеты и полный exterior readout
+
+Это положительный consumer прежнего
+[determinant compiler §§2–3](A4D_GOLDEN_DETERMINANT_COMPILER.md),
+а не повтор его Slater identity или старого70-output suite. Book03
+§§03.3.0–03.3.0a уже связывает least path action с наиболее вероятной
+полной историей. Теперь строится полный новый опыт, у которого
+determinant outcome — ЕДИНСТВЕННАЯ мода всех конечных detector outcomes.
+При его действительном history/weight binding не нужно назначать цену
+редкого выбранного события. Средняя цена(13fr) остаётся другой.
+
+**Из старого слова в конечный compression, без determinant oracle.**
+Пусть U — ACTUAL whole old unitary, P — его fixed return cut,
+Q=I−P, F=P U*Q U P|ranP, 0≤F≤I, d=rankP. Унитарный encoder
+E_Π=Π⊗I+(I−Π)⊗X переворачивает свежий флаг на дополнении Π.
+ТРИ разные flag banks в слове
+
+    V_F=E_(P,out) U* E_(Q,mid) U E_(P,in)
+
+дают clean compression P U*Q U P=F на ВСЁМ старом carrier. Нельзя
+получить product compression повторным использованием одного грязного
+флага. Все старые и новые failure rows остаются в unitary.
+
+Подготовим три исходные golden монеты
+G=[[√p,−p],[p,√p]], p=φ⁻¹. Ветка111 имеет weight w₁=p⁶, остальные
+семь — w₀=1−p⁶=4p³. Coherent SELECT есть I на семи ветвях и −V_F
+на111; затем применяется ТОЧНО обратная PREP*. Good cut требует
+старый P и blank всех новых coin/query registers. Его compression
+
+    K=w₀I−p⁶F=w₀(I−rF),
+    r=p⁶/(1−p⁶)=p³/4,
+    K≥k₀I, k₀=1−2p⁶, k₀²>1/2.                  (13ft)
+
+r ВЫВЕДЕН из трёх монет, а не подогнан и не отождествлён со старым
+experimental z=2⁻²⁰. Не используются sqrtF, matrix-value action
+control или новая материйная переменная. Exact fixture вычисляет
+все256 output rows двух старых input columns, whole32 query unitary,
+нормировку и bad Gram I−K*K. Sign, coherent controlled queries и
+projector encoders пока остаются точными execution interfaces.
+
+**Новая mode theorem для полного exterior detector.** Для произвольного
+whole one-particle unitary W с input columns W|P=[K;B_bad], K invertible,
+положим Z=B_bad K⁻¹. Факторизация [K;B_bad]=[I;Z]K показывает:
+любой другой d-occupation outcome заменяет k≥1 good rows bad rows и
+имеет amplitude ±detK det Z_(selected minor). Из унитарности
+
+    Z*Z=(KK*)⁻¹−I,
+    q_other/g=|det Z_minor|²≤||Z||^(2k),
+    g=|detK|²,
+    ||Z||²≤σ_min(K)⁻²−1<1  при K*K>(1/2)I.       (13fu)
+
+Следовательно filled-P — единственный наиболее вероятный occupation
+outcome. Это bound КАЖДОГО отдельного minor; binomial enhancement
+суммарной bad probability не меняет моду. g может стремиться к0 с d:
+концентрация полной массы на моде НЕ утверждается. Формула использует
+KK*, а не K*K для nonnormal K; у positive K из(13ft) они совпадают.
+Малый nonnormal N4,d2 control проверяет все6 occupation outcomes,
+их minors и полную нормировку. Старый70-output suite не повторяется.
+
+Полный Γ(W)=⊕_j exterior^j W действует на N НОВЫХ apparatus occupation
+qubits, input Ω_P — точный filled computational BASIS state. Все2^N
+outcomes и все grades в unitary сохранены; grades другого particle
+number просто имеют нулевую probability на этой подготовке. Это
+simulation representation опыта, не исходный CAR16 переименованный
+в Fock matter, не клонирование неизвестного Ψ и не фиксация старой
+физической подготовки. Преимущество перед ordinary d-copy AS_d:
+не требуется exact preparation коэффициента1/√(d!).
+
+**Цена и оба источника.** Если этот complete coherent detector frame
+действительно является Book history cut, его actual weights w=q,
+и применяется исходная MDL least-history action, то
+
+    S_mode logφ=−log max_S q_S
+       =−2dlog w₀+2J_r(F),
+    J_r(F)=−logdet(I−rF),
+    DS_mode=(2/logφ)DJ_r  при fixed p,P,d.       (13fv)
+
+Это actual unique-mode consumer, а не объявление event surprisal
+действием. Constant и factor2 вычислены; varying p/rank/cut/clock
+обязаны сохранить их source. При fixed r
+
+    DJ_r[V]=rTr[A⁻¹ DF[V]], A=I−rF,
+    D²J_r[V,W]=rTr[A⁻¹ D²F[V,W]]
+            +r²Tr[A⁻¹ DF[V] A⁻¹ DF[W]].         (13fw)
+
+Здесь не требуется [F,DF]=0. Единственная positive мода гладкая C²
+при smooth W, даже когда другие outcomes рождаются из0. Старый
+entropy-birth obstruction(13fs) для ЭТОГО mode source устранён;
+Shannon mean H(q)/logφ от этого гладкой или равной J_r не становится.
+Важна также [native variation boundary §10](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md),
+опубликованная в533bf317: минимум по конечным labels S не влечёт
+δ_g S_mode=0 по полям. Здесь гладкий source вычислен из ЯВНОЙ family
+W(g) и fixed cut, а не восстановлен интерполяцией sampled prices.
+Применить его Euler rows физически можно лишь при admitted field
+domain/tangents и самостоятельном native stationarity law на нём.
+
+**Структурная компиляция и её реальные пределы.** Exact Γ preserves
+products. Lift real two-mode rotation есть diag(1,R,1) на соседних
+occupation qubits; parity CNOT, controlled R, inverse parity CNOT дают
+его буквально. Lift transposition требует FSWAP=SWAP·CZ с правильным
+fermionic sign. Это sufficient gate interface, не доказательство, что
+одних слов «G/CNOT» достаточно. Компилировать надо ACTUAL one-particle
+word с последующим exact exterior lift. Независимое generic
+приближение Γ(W) этого invariant не сохраняет.
+
+Matched inverse rotations могут сохранять invariant даже при
+приближённых angles: в parity encoding пара V/CNOT/V*/CNOT отменяет
+even block ТОЧНО, а odd block получает удвоенный actual angle.
+Admission parity controls, phase/sign operations и их полная цена
+всё равно должны принадлежать исполнению. Exact Γ с actual K*K>1/2I
+сохраняет mode theorem для любого d, без exponential absolute-gap test.
+
+При coherent PREP, ЕЁ actual inverse и exact SELECT подписанных powers
+получается K=u₀I−Σ_(j≥1)u_jF^j, u_j≥0, Σu_j=1. Достаточно
+u₀>(1+1/√2)/2 для K>(1/√2)I. Это разрешает structured coefficient
+errors; arbitrary leakage/broken adjoint/projector structure не разрешена.
+**Один exact primitive interface теперь снят конструктивно.** В порядке
+occupation bits00,01,10,11, с one-particle mode order10,01, C₀₁ и C₁₀
+два направленных CNOT дают polynomial identity на ВСЕХ входах
+
+    C₀₁(R(−θ)⊗I)C₁₀(R(θ)⊗I)C₁₀C₀₁
+       =Γ(R(2θ)).                               (13gb)
+
+Middle odd block в computational order есть R(−2θ); empty/full
+возвращаются точно. Для θ=golden angle это два G/G* и четыре CNOT.
+В forward-only palette G*=XGX добавляет два CNOT с предоставленным
+retained basis-one scratch: итого2G+6CNOT. Его preparation/address и
+полная цена остаются действительными inputs. На соседних modes lift
+локален, strings/FSWAP/CZ не нужны. Поэтому ЛЮБОЕ actual finite word
+из adjacent G^(2m) имеет exact exterior implementation на всех grades,
+с exact filled-basis input и без factorial AS preparation.
+
+Irrational golden angle из §6.14 означает density EVEN powers в SO(2).
+Adjacent Givens elimination тогда приближает любой FIXED target SO(N)
+таким actual word; для det−1 достаточно одного empty spectator и
+target diag(O,−1)∈SO(N+1). Можно включить constant SELECT/sign/
+projector matrices в ОДИН target. При one-particle error<k₀−1/√2
+actual compression K_η всё ещё имеет K_η*K_η>1/2I; его unique mode
+и action −logdet(K_η*K_η) ТОЧНЫ для actual word. Нельзя назвать его
+compression старым exact w₀I−p⁶F: при приближении он изменился.
+Clean odd lift Γ(G) сам запрещён прежним mod2 uniform-column-sum
+invariant, поэтому доказан именно even subclass, не generic exact lift.
+
+Для ACTUAL C² families K и K̃ с inverse norms≤1/s, first/second
+jets≤M₁,M₂, differences δ_j, actual mode action S(K)=−2log|detK| имеет
+
+    DS=−2ReTr(K⁻¹DK),
+    D²S[V,W]=2ReTr(K⁻¹DK[W]K⁻¹DK[V])
+                   −2ReTr(K⁻¹D²K[V,W]),
+    ||ΔDS||/d≤2(δ₁/s+M₁δ₀/s²),
+    ||ΔD²S||/d≤2(δ₂/s+M₂δ₀/s²
+                    +2M₁δ₁/s²+2M₁²δ₀/s³).     (13gc)
+
+Так устраняется exponential probability precision для actual structural
+family. Но FIXED golden word при fixed input/cut не зависит от полей, его D_g=0; выбор
+разного discrete word в каждой g-точке даёт только pointwise density.
+Нужна уже admitted smooth rotation query R(θ(g)), к которой(13gb)
+применяется ТОЧНО со всеми jets, либо независимый C² one-particle
+query compiler. Отказ от FSWAP/exterior oracle не подменяет эту
+native field-input стрелку. Новая проверка доказывает(13gb) символически
+с обоими jets, а отдельный four-mode word проверяет все16 occupation
+columns и все6 grade2 outputs; generic one-qubit G нарушает grade
+invariant и служит hostile control. Старые suites не запускались.
+
+Для positive contractions F,G с ||DF||,||DG||≤M₁,
+||D²F||,||D²G||≤M₂ и δ_j=||D^j(F−G)|| resolvent identity даёт
+
+    ||D(2J_r(F)−2J_r(G))||/d
+       ≤2[rδ₁/(1−r)+r²M₁δ₀/(1−r)²],
+    ||D²(2J_r(F)−2J_r(G))||/d
+       ≤2[rδ₂/(1−r)+r²M₂δ₀/(1−r)²
+          +2r²M₁δ₁/(1−r)²+2r³M₁²δ₀/(1−r)³].   (13fx)
+
+Здесь нет1/g. При geometric signal cε ошибки всё ещё должны быть
+малы ОТНОСИТЕЛЬНО cε и actual reconstruction norm; finite widths,
+word costs и все field jets не исчезают. C² близость без SAME-variable
+transverse inverse и собственных normals не доказывает exact roots.
+
+Для generic full-output compiler существует отдельный fallback.
+На ordinary AS_d copies actual failure amplitude T=√z QUP имеет
+smooth rectangular Halmos unitary с good map √(I−zF), 0<z<1/2.
+Каждый pattern k failures имеет probability/g≤[z/(1−z)]^k, поэтому
+all-good+AS также уникальная полная мода, g≥g_min=(1−z)^d.
+Whole-output amplitude error η₀ сохраняет её, если
+
+    η₀<(1/2)(1−√(z/(1−z)))√g_min.              (13fy)
+
+При a=√g, norm ||·||_J2=||·||+||D·||+(1/2)||D²·|| и actual J₁,J₂
+для DJ,D²J имеем
+
+    ||a⁻¹||_J2≤g_min⁻¹/²(1+J₁/2+J₂/4+J₁²/8),
+    ||−2Re log(1+e/a)||_J2≤4||e/a||_J2
+                         при ||e/a||_J2≤1/2.   (13fz)
+
+Это честная exponential-in-d precision цена generic fallback, включая
+AS preparation и final readout errors. Её нельзя подменить structured
+bound(13fx), если соответствующее exterior invariant не сохранено.
+
+**Потребление уже существующей Einstein–scalar source.** При применении
+именно к SAME two-tick scene/AF operator из
+[direct density owner](A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md),
+его символическая относительная связь(13ef)/(D9)
+
+    λ_mat(z)=2σp⁻⁵[R₀/Q₀+p⁶],
+    Q₀=1−z4p³, R₀=1−z(1−p¹²)
+
+при derived r=p³/4 равна λ_mat(r)=σ(33+27√5)/4. Общий2/logφ
+сокращается в relative geometry/matter source. Это новое значение,
+не старое23.4164 при z2⁻²⁰. Прежние numerical interval signs не
+переименованы. Новый exact symbolic control подставляет r в исходные
+аналитические D9/D13 и получает Q₀=1−p⁶, R₀=1−p⁶−p¹²>0,
+g_t(r)=p¹⁴t²/(1−p⁶−p¹²)>0. Для каждого fixed finite old AF cut,
+true positive w_x, fixed coordinate grid/collar и t>0 в strict chart,
+на всех A_x=M_x=0 имеем одновременно для ВСЕХ interior tangents
+
+    DS_mode=(2ν528K g_t(r)/logφ)
+              DΣ_x[A_x+λ_mat(r)M_x].             (13ga)
+
+Поэтому из owned pp proof получается и НОВОЕ exact finite решение:
+ψ=su, H=A_wave x²+2W_cross xy+D_wave y², прежние backward-half-step
+Lorentz links и A_wave+D_wave=−σ(33+27√5)s²/2. Две Weyl polarizations
+свободны; bounded s≠0, collar фиксирован. f_star=q=0,J=1 на каждой
+ячейке, но first source не0. Единственная возможная coframe row
+есть −(A_wave+D_wave+2λ_mat(r)s²)/h; она0. Две возможные link rows
+A_wave+2c_x и D_wave+2c_y зануляются c_x=−A_wave/2,c_y=−D_wave/2;
+остальные22 уже0. Любая compact-supported scalar variation даёт
+2s h⁴ΣD_v^+δψ=0 после exact cancellation true AF weights. Это все
+16+24+scalar rows, не только вариации внутри pp ansatz. На reverse
+σ=−1 получаем Ric_uu=(33+27√5)s²/2>0,R=0. Старый lattice suite
+использован по exact source pins, не переигран; новая подстановка
+и full-row scale(13ga) проверены отдельно.
+
+Own preparation/clock/controller и independently free E_i,b_i rows
+этим НЕ решены: уже ∂_E j_r=4rp⁹/R₀>0 и
+∂_b j_r=4rp³(1/Q₀+p⁶/R₀)>0. Для общего off-shell источника D15
+при z=r даёт logφ(S_mode−S_mode,0)/(2ν528K g_t(r))
+=Σ(A+λ_mat(r)M)+O_Cj(t²), j≤3, только с actual cell/weight/jet
+bounds и последующим spatial/compilation/recovery limit. Fixed-t
+точный pp корень не снимает weak-input condition с общих полей.
+Direct owner D24/D27 потребляет
+все actual regular weights и полную clean-work source norm; source
+identity не требует снова вычислять old null spectra или AF rank census.
+
+**Точное оставшееся native binding.** Final occupation label ещё не
+автоматически полная Book microhistory. Если coin branch измерить и
+сохранить в immutable archive ДО unprepare, уже при scalar F=a good
+mass станет w₀²+w₁²a² вместо (w₀−w₁a)²: cross уничтожен. Мы не
+стираем старые records и не называем их coherent scratch. Если опыт
+имеет реальные прежние records h, максимум берётся по full q(h,S);
+его условный множитель может иметь дополнительный field source.
+Новая Ω_P также не решает собственные строки старой Ψ/preparation.
+Доказать надо допустимость именно coherent queries/lift/frame, actual
+history w=q+MDL aggregation, полную цену подготовки/controls/старой
+истории и совместную стационарность того же carrier. Ни замены mean
+на mode, ни замены всего H+J+R этим детектором здесь не сделано.
+
+Итак детерминантный C²-source теперь имеет конкретный finite golden
+unique-mode consumer. Следующая стрелка — его actual history/price
+admission и joint recovery с retained matter/preparation/clock rows,
+а не новый подбор эйнштейновского функционала. Raw#216 и физическое
+принуждение программы остаются отдельными обязательствами.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

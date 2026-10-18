@@ -2122,6 +2122,98 @@ Original raw#216 и независимый полный spin source остают
 старые expensive suites не переигрывались.
 
 
+### 7.18. Полная история против средней: точный golden MDL consumer детерминанта
+
+[Full-source §§6.56–6.58](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+продолжают именно whole-price arrow, а не ещё одну геометрическую
+классификацию. Связанный heat/input Rayleigh не снимает free-control
+bound §7.17: при настоящем Δ_new=(I−L^(1/m))/α его radial row есть
+2(1−TrρL^(1/m))/β−2νzTr[L/(1−z+zL)]. Поэтому dθ остаётся bounded.
+Полный noncommuting Euler выводит [ρ,L]=0; fixed-RIGHT128 даёт
+occupied/unoccupied bands, а не scalar L всего carrier. Reconstruction
+Δ_new сама по себе не доказывает native equality Δ_new=D². Никакая
+подготовка, grade или reference при этом не заморожена.
+
+Actual controller cost также не равен gate count. Полный same-history
+w=q даёт mean(Cost−Info)=H(q)/logφ. Если это TOTAL action, нельзя
+одновременно оставлять surviving J и объявлять весь mean малой
+поправкой. Exact uncompute counter имеет nonzero entropy source;
+измерение промежуточного coin уничтожает cross. Amplitude C¹ budget
+сохраняет все нулевые outcomes, но не чинит Shannon C²-birth singularity.
+
+**Положительный синтез использует ДРУГОЕ уже принадлежащее Book03
+правило: least action полной истории есть её MDL-мода.** Из actual
+U,P,Q и трёх fresh projector flags исполняется clean compression
+F=P U*Q U P. Три golden coins и coherent SELECT(I на7ветвях, −V_F
+на111), затем SAME inverse PREP дают
+
+    K=(1−p⁶)I−p⁶F,
+    r=p³/4,
+    σ_min(K)²≥(1−2p⁶)²>1/2.
+
+В complete exterior detector Γ(W) с точной filled-P BASIS подготовкой
+каждый другой occupation amplitude равен ±detK·detZ_minor,
+Z=B_badK⁻¹, Z*Z=(KK*)⁻¹−I. Поэтому его probability/g≤||Z||^(2k)<1:
+filled-P — ЕДИНСТВЕННАЯ мода ВСЕХ конечных occupation outcomes,
+сохранённых вместе со всеми exterior grades. Она не выбрана из
+редких success событий. Но концентрация общей массы на ней не нужна
+и не доказана. Auxiliary apparatus не заменяет original CAR16/ref128.
+
+При реальном history w=q+MDL binding эта цена вычислена точно:
+
+    S_mode logφ=−2dlog(1−p⁶)+2J_r(F),
+    DS_mode=(2/logφ)DJ_r при fixed p,P,d.
+
+Constant/factor/fugacity из слова, не fits. Positive mode source C²
+гладок, несмотря на births других исходов. Для exact exterior lift
+ACTUAL approximate one-particle word достаточно gap K*K>1/2I;
+per-rank resolvent source error не содержит1/g. Generic compiler,
+разрушающий exterior/adjoint structure, всё ещё требует exponential
+absolute-gap budget. Exact controlled/parity/phase implementation и
+вся ресурсная цена остаются явными интерфейсами, не именем oracle.
+При этом новый конечный primitive lemma уже снимает FSWAP/CZ и
+factorial AS preparation для actual adjacent-even subclass:
+C₀₁(G*⊗I)C₁₀(G⊗I)C₁₀C₀₁=Γ(G²) на ВСЕХ occupation grades.
+EVEN golden powers плюс adjacent Givens дают fixed-target density;
+empty spectator покрывает det−1. Exact structure удерживает моду
+при one-particle approximation с singular gap>1/√2, без1/g accuracy.
+Pointwise density НЕ C² field programme: fixed word с fixed input/cut
+имеет D_g=0. Действительно moving input/preparation/cut должны
+поставить свои реальные jets; они не полагаются нулевыми.
+Нужны настоящие admitted smooth query/field inputs и их whole price.
+
+Это уже потребляется SAME двухтактовым geometry/scalar operator из
+[concurrent direct-density owner](A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md).
+Его source identities аналитичны по z, а не только по diagnostic
+z=2⁻²⁰; новая относительная связь при derived r равна
+λ_mat(r)=σ(33+27√5)/4. Common2/logφ сокращается. Его dressed-CAR
+operands, inverse actual AF mass и physical density уже определены;
+нового scalar-curvature readout придумывать не нужно. Старые fixed-z
+numerical signs/roots не объявляются автоматически новыми.
+Новая symbolic подстановка в D9/D13 даёт собственную конечную pp-wave:
+A_wave+D_wave=−σ(33+27√5)s²/2, ψ=su, те же backward-half-step links.
+Все16+24+scalar interior rows зануляются при каждом fixed admissible
+t>0, на fixed collar, с двумя свободными Weyl polarizations. Это
+положительное решение constructed MODE/J_r source, не полных старых
+preparation/clock/free spectral controls. Последние имеют свои
+ненулевые rows и требуют actual binding/compensation.
+Принят также [параллельный MDL variation boundary §10](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md),
+533bf317: least label action не задаёт field derivative или закон
+δ_gS=0. Наш явный smooth W(g) вычисляет source, но его native field
+domain/tangents и stationarity/refinement всё ещё надо предъявить.
+
+**Изменение маршрута.** Вместо попытки спасти amplification свободного
+фильтра теперь есть конкретный coherent detector и проверяемая стрелка
+Book history/price→его smooth mode source. Осталось предъявить её
+именно в native исполнении. Final occupation label не автоматически
+полная старая microhistory: если real old records h сохранены, нужен
+max_(h,S)q(h,S) со всеми его источниками. Immutable intermediate coin
+не uncomputable scratch. Новая Ω_P не решает старые Ψ/clock rows.
+После actual admission надо решить SAME full joint normals и перейти
+к собственному controlled refinement. Это сильнее прежней выбранной
+logdet-функции, но не замена полной H+J+R и не утверждение закрытой
+физической ОТО. Original raw#216 остаётся своим сравнением.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

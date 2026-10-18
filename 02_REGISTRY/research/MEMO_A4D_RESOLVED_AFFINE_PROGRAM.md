@@ -23,6 +23,33 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+The current whole-price consumer is now
+[strategic §7.18](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.56–6.58](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The full linked Rayleigh/control Euler retains the signal bound and
+allows occupied/unoccupied bands; it does not select an amplified GR
+query. Three golden coins instead construct K=(1−p6)I−p6F at derived
+r=p3/4. The complete exterior detector has a unique filled-P mode,
+whose actual MDL price, IF its full history w=q binding is admitted,
+is constant+2J_r/logphi. The selected positive mode has a smooth C2
+source despite births of other outcomes. Exact exterior structure of
+the ACTUAL one-particle word gives source bounds without1/g; generic
+compiler leakage still needs the exponential mode-gap budget.
+An explicit G/CNOT echo gives the exact full-grade exterior lift of
+adjacent EVEN golden words, avoiding FSWAP/CZ and an AS preparation.
+Fixed-target density alone supplies no smooth field source. Keep the
+actual field-query/input/cut and variation admission explicit; a constant
+word with fixed input/cut has D=0.
+
+Consume this in the [same direct-density Einstein–scalar operator](A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md),
+whose symbolic source ratio becomes sigma*(33+27sqrt5)/4 at derivedr.
+Do not add its mode price to the total mean entropy or replace the
+old whole H+J+R by it. The next hard step is coherent query/lift and
+ACTUAL full history/price admission, including old records and their
+conditional factors, all preparation/clock/control normals; then exact
+joint recovery/refinement on that same carrier. Immutable archives
+cannot be uncomputed. Raw#216 and physical forcing remain OPEN.
+
 One actual return programme and complete-source scale:
 [strategic §7.17](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source §§6.53–6.55](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
