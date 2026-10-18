@@ -120,6 +120,28 @@ history/price, её native calibration law и допустимую оценку 
 
 ## 1. Итог сборки
 
+На входе `36ad880c` §§8.27–8.28 дают следующий положительный шаг:
+полный coherent-memory source сходится в C¹ даже через rank births,
+без spectral floor, на фиксированном полном data/reference носителе.
+Доказательство использует uniform C² native-channel jets; одна лишь
+сходимость канала раньше этого не давала. Return normalizer также
+вычислен с обеими preparation/return-projector derivatives. Entropy-only
+критические точки допускают ненулевые eigenvalues, но имеют нулевой
+полный первый источник; их нельзя принять за корни всей цены.
+
+Уже определённая полная code−coherent цена даёт иной результат.
+Из двух настоящих leading exit rows выведен fixed-code коэффициент β;
+предельный функционал равен `βT TrρA²−S(R_T)/logφ`. Для любого
+заданного β>0 balanced ±λ подготовка решает ВСЕ operator/preparation/
+clock first equations при единственном положительном Tλ². Actual
+flat-shell Bell state использует исходный reference128, а поперечные
+вариации поля и подготовки не удалены. Таким образом есть ненулевой
+совместный предельный корень полной условной цены, а не только баланс
+одной scale строки. Теперь требуются physical code/Info binding со всеми
+controller источниками и finite native stationary continuation; C¹ limit
+не даёт его автоматически при logarithmic transverse Hessian. Ни новое
+действие, ни физическое закрытие ОТО этим результатом не назначаются.
+
 На входе `420f6545` §8.26 проверяет буквальное MDL-чтение Book03
 отдельно от Shannon mean. На полном tagged golden законе наибольшая
 вероятность всегда у field-independent bypass; разрыв до остальных

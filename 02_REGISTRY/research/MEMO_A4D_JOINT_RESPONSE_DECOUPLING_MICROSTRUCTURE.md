@@ -2,7 +2,30 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `420f6545`:** §8.26 of the
+**Latest consumed transition, input `36ad880c`:** §§8.27–8.28 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+prove C¹ convergence of the complete coherent-memory entropy and source
+on fixed data, even through preparation and spectral rank births. Uniform
+C² native-channel jets supply the missing small-eigenvalue control. The
+actual return probability and its full moving-preparation source are also
+explicit. Entropy alone has every single-eigenvalue preparation as a
+critical point, including nonzero energy; its full first source is zero.
+
+The consuming full-code calculation gives a positive result. For a fixed
+supplied additive code, the already defined relative-entropy price has
+limit `βT TrρA²−S(R_T)/logφ`, with β derived from the two actual leading
+exit labels. For any β>0, a balanced ±λ preparation solves ALL operator,
+preparation and clock first equations when
+`logφ β=4p² r log((1+r)/(1−r))`, `r=exp(−8p²Tλ²)`.
+The equation has a unique r∈(0,1). The original flat-shell Bell state
+with reference128 realizes the preparation, and transverse variations
+are included. This is a nonzero limiting joint root of a declared full
+conditional price, not merely a scalar stationary point. Physical
+code/Info binding, extra controller sources and a finite native stationary
+continuation remain the next inputs; singular rank-birth second derivatives
+prevent an automatic IFT lift. Physical GR and the raw terminal remain open.
+
+**Prior consumed transition, input `420f6545`:** §8.26 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 tests the literal Book03 minimal-code reading separately from the mean.
 On the complete tagged golden law, one central bypass is the unique MAP

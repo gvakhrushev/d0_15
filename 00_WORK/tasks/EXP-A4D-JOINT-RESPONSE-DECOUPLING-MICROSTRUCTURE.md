@@ -12,6 +12,39 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: consume the full coherent memory and return source
+
+Input `36ad880c`. Use the existing exact native channel, retained-history
+Schmidt identity and return owner, preserving all data/CAR16 grades,
+reference128 and the complete growing record. On fixed finite C² charts
+with δ=ν² and nδ→T>0, derive the coherent-memory entropy and return
+normalizer of the actual weak-strength limit. Prove the full source
+through preparation/spectral rank births without a positive spectral
+floor; distinguish this regime from fixed-strength spatial refinement.
+Determine the entire entropy-only critical set when independent strength
+scaling is admitted, and consume the result in the physical price arrow.
+Root owns the existing full-source owner, brief and strategic consumers;
+bounded assistants check the entropy regularization, actual return cut
+and price binding read-only. Decisive check: analytic native-channel C²
+bounds, Gaussian Gram positivity, Duhamel sources and the two-eigenvalue
+rank-birth control. No new action, Info law, terminal tester admission,
+finite Euler-root lift, numerical census or old mathematical replay.
+
+Consumed in §§8.27–8.28: uniform C² native output jets and entropy
+regularization give C¹ coherent-source convergence through rank births,
+including the relative strength source. Entropy-only critical points
+are all single-eigenvalue preparations, whose full first source is zero;
+return mass has its full moving-preparation Duhamel source. The parent
+then consumes the already defined full-code relative-entropy price:
+its actual code coefficient β gives the limit βT TrρA²−S(R_T)/logφ.
+For any fixed supplied β>0, balanced ±λ preparations solve ALL its
+operator/preparation/clock first equations at a unique positive Tλ².
+The actual flat-shell Bell preparation uses the original reference128;
+all transverse variations remain. Independent analytic review checked
+the full derivative, not just scale stationarity. Physical code/Info
+binding, calibration sources and finite native stationary continuation
+remain open; no new physical action or finite-root claim is introduced.
+
 ### 18 October: consume the literal MDL and coarse-history price rule
 
 Input `420f6545`. Book03 §§03.3.0–03.3.0b speaks about a minimal-code

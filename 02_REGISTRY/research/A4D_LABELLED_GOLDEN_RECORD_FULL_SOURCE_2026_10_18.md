@@ -3391,7 +3391,380 @@ pointer sum, ни (139) не подменяет эти два объекта. Т
 вычислены на одном исходном процессе. Положительная conditional
 Einstein composition сохраняется; её physical selection остаётся открытой.
 
+### 8.27. Полная когерентная память: источник через изменение ранга и настоящий return
+
+Вход `36ad880c`. Переход к memory classes должен сохранять cross-history
+Gram terms. Для исходной native программы они доступны без нового
+суммирования амплитуд: это её полное состояние записи. Уже принадлежащие
+[Schmidt/source owner](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md)
+и [return owner](A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md)
+дают соответственно равенство ненулевых спектров записи и data/reference
+output и событие возврата data/reference при сохранённой записи.
+Ни одна из этих исходных тождественных связок здесь не объявляется новой.
+Новый consumer — полный C¹ weak-strength предел, его критическое множество
+и source возвращения для ВСЕХ исходных подготовок, включая rank births.
+
+**Носитель и предел.** Data H конечномерно и фиксировано, dim H=d;
+сохраняются все исходные CAR16/spatial компоненты и reference128.
+Подготовка — нормированный Ψ∈H⊗C¹²⁸, ρ=Tr_ref|Ψ><Ψ|, без нового
+очищения I_d/d. Положим P=|Ψ><Ψ|, A=A_0=A_0*, κ=4p², δ=ν²,
+t=nδ. Используем ровно native scaling §8.21, а не fixed-ν spatial
+refinement из прежнего complete-channel owner. На ограниченном C²
+chart полей и normalized amplitudes внутри strict Julia-root domain:
+
+    Φ_ν=Id+δ G_A+O_C²(δ²),
+    G_A(X)=κ[A X A−{A²,X}/2]=−(κ/2)[A,[A,X]],
+    R_ν=(Φ_ν^n⊗Id_ref)P,
+    R_T=(exp(TG_A)⊗Id_ref)P,  nδ→T>0.             (140)
+
+C² remainder следует из тех же конечномерных analytic Julia roots:
+в этом scaling recycling map равен Id+O_C²(δ). Подвижное positive
+pairing переносится в гладкую ортонормированную тривиализацию; все его
+jets включаются в A и Ψ. Это не замораживание observer или adjoint.
+Нормы ниже — фиксированные конечномерные operator/trace norms на
+компактных subcharts; константы могут зависеть от d и chart. Результат
+не заявляет равномерности при d→∞ или пространственном измельчении.
+
+Полная tape state имеет вид Σ_ω|ω>⊗(K_ω⊗I)Ψ. Она чистая, поэтому
+энтропия её полного coherent record равна S(R_ν), где S(X)=−Tr X log X.
+Это включает все128^n историй и их взаимные фазы. Pointer measurement
+этой записи даёт другую энтропию H_n; память не заменяется диагональю.
+
+**Точная матрица предельной записи.** Для различных собственных значений
+λ оператора A возьмём его проекторы P_λ и векторы
+v_λ=(P_λ⊗I)Ψ, w_λ=||v_λ||²=TrρP_λ. Они взаимно ортогональны.
+На span{v_λ:w_λ>0} ненулевой спектр R_T совпадает со спектром
+
+    M_λμ=√(w_λ w_μ) exp[−κT(λ−μ)²/2].             (141)
+
+Gaussian kernel в (141) — Gram функций exp(iλx) в Gaussian measure
+с дисперсией κT. При T>0 разные exponential functions линейно
+независимы, поэтому Gram строго положителен. Следовательно
+rank R_T=#{λ:w_λ>0}≤d. Это доказательство не требует [ρ,A]=0:
+reference и исходные coherences остаются в v_λ. Формула со спектральными
+проекторами служит значению, а полный source ниже не замораживает их.
+
+**C¹ через rank births без spectral floor.** Пусть X(x)≥0 — C²
+matrix family на открытом двустороннем real chart, с равномерным
+вторым jet на окрестности компактного subchart. Для каждого unit u
+положительность scalar function u*X(x+sv)u и Taylor bound дают
+
+    |u*DX[v]u|≤C√(u*Xu) ||v||.                    (142)
+
+Для малых u*Xu выбирается |s| порядка √(u*Xu); для остальных
+используются ограниченные first jets и расстояние до границы chart.
+Константа едина по u,x,v. В частности diagonal derivative на ker X
+равен0. Пусть D_dim — фиксированная размерность X. Регуляризация
+S_ε(X)=−Tr X log(X+εI) имеет гладкий differential
+
+    DS_ε=−Tr[log(X+εI)+X(X+εI)^−1]DX.
+
+Для λ>0 разность scalar derivatives относительно −λlogλ равна
+log(1+ε/λ)−ε/(λ+ε). В eigenbasis X её вклад умножен на
+u*DXu, ограниченный (142). Неравенства
+√λ log(1+ε/λ)≤C₀√ε и √λ ε/(λ+ε)≤√ε/2 дают
+
+    |S−S_ε|≤D_dim ε,
+    ||DS−DS_ε||≤C₁ D_dim √ε.                     (143)
+
+Здесь DS сначала определяется спектральной формулой с нулевым вкладом
+ker X. Производные гладких S_ε равномерно сходятся к этой формуле;
+равномерная сходимость значений и производных доказывает именно C¹,
+а не предполагает его. На trace-one family итоговая формула:
+
+    DS(X)=−Tr_supp(X)[(P_supp DX P_supp) log(X|_supp)].
+
+Член −Tr DX равен0; kernel diagonal derivative равен0. Никакая
+положительная нижняя граница ненулевых eigenvalues не используется.
+Односторонняя произвольная density mixture не заменяет двусторонний
+amplitude chart: без (142) утверждение было бы неверным.
+
+Применим это к (140) в размерности D_dim=128d, независимо от128^n.
+Native CP/TP powers сжимаются в Hermitian trace norm. Так как
+DΦ_ν,D²Φ_ν=O(δ), first/second insertion sums ограничены величинами
+O(nδ) и O(nδ+(nδ)²). Вместе с C² preparation это даёт единый C²
+bound для R_ν при nδ≤T_max. Product formula и differentiated
+telescoping дают R_ν→R_T в C¹ с ошибкой O(δ+|nδ−T|).
+Для fixed ε отсюда следует C¹ convergence S_ε(R_ν)→S_ε(R_T).
+Затем (143), равномерное по ν, позволяет ε→0:
+
+    S(R_ν)→S(R_T) в C¹ по всем base-field/preparation jets, (144)
+
+включая spectral degeneracies, появление новых occupied eigenspaces и
+изменение ранга ρ. Это положительный перенос ПОЛНОГО первого coherent
+source. Он не следует из одной C¹ channel convergence: равномерный C²
+bound здесь является существенным дополнительным доказанным входом.
+Не заявляется скорость C¹ entropy convergence без оптимизации ε.
+В каждой finite derivative n и δ фиксированы; (144) не дифференцирует
+integer schedule n(ν) и не доказывает существование finite Euler roots.
+
+Сам native strength source тоже переносится в относительной координате:
+для каждой последовательности ν_j→0, n_jν_j²→T положим
+ν=ν_j e^y, сохраняя n_j фиксированным при differentiation. На общем
+двустороннем |y|≤r снова D_yΦ,D_y²Φ=O(ν_j²), и предельный канал
+равен exp(T e^(2y)G_A). Поэтому тот же аргумент даёт
+ν_j∂_ν S(R_ν)|_(ν_j,n_j)→2T∂_T S(R_T), включая rank births.
+Обычная ∂_ν²Φ имеет порядок O(1), а не O(δ); C² bound выше
+не заявлялся в этой несмасштабированной координате.
+
+Полный предельный source задаётся без выбора eigenvector chart:
+
+    DR_T=(e^(TG_A)⊗I)DP
+          +∫₀ᵀ(e^((T−u)G_A) DG_A e^(uG_A)⊗I)P du,
+    DG_A(X)=−(κ/2)([DA,[A,X]]+[A,[DA,X]]),
+    DS(R_T)=−Tr_supp(R_T)[(P_supp DR_T P_supp)log(R_T|_supp)]. (145)
+
+DP сохраняет обе amplitude derivatives. Если T — отдельный гладкий
+параметр предельного процесса, добавляется DT (G_A⊗I)R_T.
+C¹ по этому времени утверждается на T>0: у T=0 при ненулевой
+variance возможен T log(1/T), поэтому endpoint не включается.
+
+**Все entropy-only критические точки.** Support в (141) инвариантен
+относительно A⊗I; на нём R_T>0. Дифференцирование и cyclic trace дают
+
+    ∂_T S(R_T)=−(κ/2)Tr[A⊗I,R_T][A⊗I,log R_T]
+      =(κ/2)Σ_ij(r_i−r_j)(log r_i−log r_j)|A_ij|²≥0. (146)
+
+Сумма берётся на этом support. Она равна0 тогда и только тогда, когда
+[A⊗I,R_T]=0. В (141) любой cross entry между двумя occupied distinct
+λ ненулевой, поэтому равенство эквивалентно одному occupied eigenvalue.
+Если независимо допустимо A↦e^s A при fixed Ψ,T, то
+∂_sS|₀=2T∂_TS. Поэтому полное множество критических точек ЭТОГО
+энтропийного функционала при указанной scale variation равно
+
+    (A⊗I_ref)Ψ=λΨ,  λ может быть ненулевым.         (147)
+
+Обратная часть тоже доказана: в каждой такой точке R_T=P, S=0 —
+глобальный минимум. По (143) все двусторонние field/preparation first
+sources равны0, в том числе поперёк eigenspace stratum. Условие
+[ρ,A]=0 слабее (147) и не достаточно для нулевой энтропии.
+
+На одной и той же nonzero-eigenvalue подготовке имеем
+S(R_ν)→0 в C¹, но H_n=κTλ²log(1/δ)+O(1). Таким образом
+pointer-only blank-root theorem не переносится на coherent memory.
+Однако новая nonzero-energy критическая подготовка сама по себе
+всё равно НЕ даёт ненулевого геометрического первого source.
+
+Первый источник регулярнее второго. Для нормированных собственных
+подготовок Ψ_λ,Ψ_μ, λ≠μ, и
+Ψ_s=√(1−s²)Ψ_λ+sΨ_μ, (141) даёт
+
+    S(R_T(Ψ_s))=[1−e^(−κT(λ−μ)²)]s²log(1/s²)+O(s²). (148)
+
+Первый derivative в s=0 нулевой, но Hessian логарифмически расходится.
+Поэтому ни C² source, ни finite stationary lift/IFT из (144) не следуют.
+
+**Возврат на том же полном процессе.** Уже заданный terminal ray P
+сохраняет все записанные истории. Его probability равна
+r_ν=Σ_ω|TrρK_ω|²=Tr[P(Φ_ν^n⊗I)P]; это сумма квадратов,
+а не square of a summed history amplitude. Двигаются и начальная
+подготовка, и её return ray. Для B≥b₀I>0 blank contribution даёт
+
+    r_ν≥|TrρB^n|²≥b₀^(2n)>0.
+
+В (140) получаем глобально при конечном T
+
+    r_T=Tr(P R_T)=Σ_λμ w_λ w_μ e^(−κT(λ−μ)²/2)
+        =Tr R_(T/2)²≥Σ_λ w_λ²>0.                 (149)
+
+Последнее purity identity относится именно к этому dephasing limit.
+Оно не является тождеством произвольного native fixed-strength channel.
+Его полный first source, с E_T=e^(TG_A), равен
+
+    Dr_T=2Tr[DP(E_T⊗I)P]+Tr[P(DE_T⊗I)P],
+    DE_T=∫₀ᵀe^((T−u)G_A) DG_A e^(uG_A)du,
+    D[−log_φ r_T]=−Dr_T/(ℓ r_T).                 (150)
+
+Здесь E_T самосопряжён в Hilbert–Schmidt pairing. При moving T
+добавляется DT G_A E_T. Duhamel сохраняет noncommuting geometry jets,
+а первый член сохраняет ДВЕ preparation/return-projector derivatives.
+При A↦sA, s>0, fixed Ψ,T,
+
+    ∂_s r_T=−κTs Σ_λμ w_λw_μ(λ−μ)²e^(−κTs²(λ−μ)²/2)≤0,
+    r_T=1−κT Var_ρ(A)+O(T²).                      (151)
+
+Строгость снова эквивалентна двум occupied distinct eigenvalues.
+На (147) r_T=1 и весь normalizer source равен0, хотя λ² может быть
+ненулевым. Таким образом и actual return cut не наследует kernel-only
+критическое множество pointer mean/MAP. Сходимость r_ν и его source
+следует непосредственно из (140), без энтропийной регуляризации.
+
+Finite Liouville identity Tr_super Φ_ν^n=d² F_e(I_d/d,Φ_ν^n)
+сохраняет свой carrier: это supertrace на B(H), не на B(H⊗ref).
+Реальная reference128 очищает I_d/d только при d≤128; уже owned
+faithful flat shell имеет d=128. При curved leakage нельзя подменять
+полную Φ степенями shell compression. На полном grid новый Bell
+reference большей размерности не предоставлен этим вычислением.
+
+**Потребление в выводе ОТО.** Недостающий coherent first-source limit
+для fixed-data weak history теперь получен с rank births, без spectral
+floor. Следующий шаг уже не требует повторного вычисления этого
+источника. Для полной физической цены требуется доказать, какая часть
+execution/code price вычитается реально допустимым Info/gain и какие
+источники остаются. Только если уже выведенная полная цена на данном
+carrier действительно равна S(R_T)/ℓ, (147) описывает её критические
+точки; если остаётся code/controller/constraint term, его derivative
+должна участвовать в совместных уравнениях. Энтропия не назначается
+новым действием. Наличие ненулевой энергии при (147) не заменяет
+ненулевой Einstein source, а (148) запрещает молчаливый Hessian lift.
+
+Return mass (149) тоже ещё не является полной ценой closed memory:
+она не сохраняет conditional record law r_ω/r_ν и execution cost.
+Нужен source-preserving оплаченный readout/coarse-memory map; factor1/n,
+сумма по depths и logdet из одного return trace не следуют. Допуск
+terminal tester, physical maximal gain, растущая память, пространственный
+предел и independent matter остаются явными входами следующей связки.
+Это уточняет actual price/source arrow, сохраняя positive configured
+Einstein composition и исходный raw h^-2 terminal открытыми.
+
+### 8.28. Полная code−coherent цена: ненулевое совместное предельное решение
+
+Теперь (144) потребляется непосредственно в уже определённой full-code
+relative-entropy цене complete-channel owner §7, formulas (18)–(19).
+Она условна на заданном code и данном Info binding; это не выбор новой
+физической цены. Пусть c_j — фиксированные конечные φ-costs всех128
+исходов, c_B — стоимость blank. Для нормированного code prior
+μ_j=φ^(−c_j) его полная цена в φ-единицах равна
+
+    J_ν=C_n−S(R_ν)/ℓ,
+    C_n=Σ_(k=0)^(n−1)Tr[ρ_k Σ_j c_j K_j* K_j],  ℓ=logφ. (152)
+
+При Kraft subnormalization s=Σμ_j нормированный relative entropy
+имеет дополнительно n log_φ s. Для fixed code это field-independent
+константа; при moving code её derivative, как и n Dc_B, сохраняется.
+Эта гипотеза не утверждает, что restricted native gain достигает полного
+quantum relative entropy. Его physical admission остаётся отдельным.
+
+В literal Julia rows (89) только i_*=(label4,coefficient1) имеет
+N_(i_*)=I+O_C²(δ). Два leading nonblank Kraus равны
+
+    K_(0,i_*)=−2p²ν A+O_C²(ν³),
+    K_(1,i_*)=−2p^(3/2)ν A+O_C²(ν³).
+
+Остальные125 nonblank effects имеют порядок O_C²(δ²) или меньше.
+Completeness, включая blank, поэтому даёт
+
+    Σ_j c_j K_j* K_j=c_B I+δ β A²+O_C²(δ²),
+    β=4[p⁴(c_(0,i_*)−c_B)+p³(c_(1,i_*)−c_B)].      (153)
+
+Это коэффициент данного полного code, а не подогнанный counterterm.
+G_A* A²=0. Подстановка (140) в cost sum, со всеми preparation и
+operator jets, даёт при t=nδ≤T_max
+
+    C_n−n c_B=β t TrρA²+O_C¹(δ).
+
+Например, уже принадлежащая портовая часть cost имеет β_port=4p³;
+она сама по себе не назначает остальной label-code. При moving c_j
+формула включает T a Dβ и baseline derivatives. Используя (144),
+получаем полный источник уже заданной (152):
+
+    J_ν−n c_B → J_β:=βT a−S(R_T)/ℓ в C¹,
+    a=TrρA²,
+    DJ_β=β D(Ta)−DS(R_T)/ℓ.                       (154)
+
+Здесь fixed baseline удалён только для записи конечного значения;
+при fixed n,c_B его полный field source был нулевым до удаления.
+Физическая перенормировка цены не вводится. Statement о времени
+относится к предельному T или к относительному strength chart §8.27,
+а не к производной целого n.
+
+На single-eigenvalue preparation (147) entropy source равен0, но
+независимая scale строка полной (154) равна2βTλ². Следовательно при
+β>0 ненулевые eigenpreparations не являются решениями полной цены.
+Из этого, однако, НЕ следует отсутствие других ненулевых joint roots:
+coherent entropy может дать ровно нужную противоположную производную.
+
+**Явное полное решение, без замораживания подготовки.** Пусть X=A⊗I_ref
+имеет нормированные ψ_+,ψ_- с Xψ_±=±λψ_±, λ>0. Возьмём
+Ψ=(ψ_++ψ_-)/√2; оба вектора лежат в исходном полном data/reference.
+На W=span{ψ_+,ψ_-} имеем
+
+    P=(I+σ_x)/2,
+    R_T=(I+rσ_x)/2,  r=exp(−2κTλ²),
+    S(R_T)=h_bin((1+r)/2),  a=λ².                 (155)
+
+Ни один другой data mode или reference component не удалён из
+вариационного пространства. W используется только для вычисления
+ненулевого спектра в данной точке. Для ВСЕХ selfadjoint DA,
+нормированных двусторонних DΨ и DT справедливо
+
+    DS(R_T)=κr log((1+r)/(1−r)) D(Ta),
+    DJ_β=[β−(κ/ℓ)r log((1+r)/(1−r))] D(Ta).       (156)
+
+Для проверки полной строки подготовки write
+log(R_T|W)=αI+γσ_x, γ=½log((1+r)/(1−r)). Channel e^(TG_A)
+умножает off-diagonal block W на r. Поэтому его adjoint, применённый
+к support-log, действует на Ψ как scalar α+rγ. Tr DP=0 даёт
+нулевой entropy preparation source; X²Ψ=λ²Ψ даёт также Da[DΨ]=0.
+Поперечные W направления не исключены: они дают только off-support
+first blocks, а новые eigenvalues имеют нулевые first derivatives (143).
+
+Для произвольного DA полный Duhamel integral (145), с обеими
+commutator terms, на W даёт
+DS=κT r log((1+r)/(1−r)) Trρ{A,DA}. Off-W blocks не вносят
+diagonal first source; support W инвариантен относительно X.
+Эквивалентно в basis {Ψ,χ=XΨ/λ} величина
+(DR_T)_(χχ)=κT r Da, Da=2λ Re<χ,(DA⊗I)Ψ>.
+Разность двух support-log eigenvalues даёт ту же (156).
+Это сохраняет noncommuting link/coframe/observer jets и вырождения
+собственных пространств ±λ. Проверка одной только ∂_λ была бы слабее.
+
+При ЛЮБОМ заданном β>0 equation
+
+    ℓβ=κ r_β log((1+r_β)/(1−r_β)),
+    λ²=−log r_β/(2κT)                              (157)
+
+имеет ровно одно r_β∈(0,1): правая часть непрерывно и строго
+возрастает от0 до∞. Таким образом (155),(157) — ненулевое совместное
+решение ВСЕХ первых operator/preparation/clock уравнений (154) при
+fixed code. Вдоль λ² оно строго минимально, поскольку r убывает и
+функция r log((1+r)/(1−r)) возрастает. Полная Hessian-устойчивость
+не заявляется: transverse rank-birth directions сохраняют (148).
+
+**Реальный native witness.** На уже принадлежащей flat first shell
+размерности128 actual A_0 удовлетворяет A_0²=λ²I_shell и Tr_shell A_0=0.
+Исходный reference128 даёт Ψ=Bell_shell, ρ=I_shell/128, поэтому
+weights двух eigenspaces ±λ равны1/2. Это именно (155), помещённое
+в полный data carrier, а не Bell state на всём grid и не новый
+matter reset. Для fixed native λ>0 выбрать T по (157) можно
+математически; physical admission этого времени не следует из расчёта.
+Все transverse field/preparation first jets всё равно покрыты (156),
+включая выход из flat shell. Независимые чужие code/calibration rows
+не объявляются решёнными.
+
+**Что этот результат меняет в сборке.** Полная условная coherent цена
+уже не исключается pointer-only знаком: её actual expected code source
+и coherent entropy source имеют ненулевой совместный баланс на
+исходном carrier. Это конкретное положительное решение того first-source
+interface, который нельзя было получить одной сменой MAP или mean.
+Нельзя объявлять один лишь nonzero-energy entropy minimum решением
+полной цены; решение даётся именно (156)–(157).
+
+Дальнейший переход имеет два точных входа. Во-первых, физически вывести
+данный full-code/Info binding и полный resource/controller source.
+Во-вторых, построить finite native stationary continuation и его
+геометрический, затем spatial-refinement source. C¹ convergence (154)
+не гарантирует finite roots и не даёт нужного second-source control
+поперёк rank births. Нелинейная ОТО, independent matter и raw #216
+этой предельной stationary family не закрыты; positive configured
+Einstein composition остаётся отдельным потребителем будущего полного
+source-preserving перехода.
+
 ## 9. Проверка
+
+§8.28 независимо проверен по literal two-leading-row code coefficient,
+cost telescoping и полному Duhamel/preparation differential. Balanced
+root проверен для произвольных selfadjoint operator jets, со всеми
+поперечными preparation directions и reference128; это не только
+scalar scale test. Fixed code и limiting/finite boundaries сохранены.
+
+§8.27 проверен аналитически: uniform C² channel-power jets, entropy
+regularization через rank births, Gaussian Gram strictness, все
+entropy-only критические подготовки и logarithmic second-source control.
+Отдельная проверка retained-history return сохраняет обе preparation
+derivatives, noncommuting Duhamel, reference128 и отличие от blank-tape
+возврата. Fixed-data weak-strength и spatial fixed-strength пределы
+различены. Нового numerical/Lean replay для этих доказательств нет.
 
 §8.26 проверен аналитически на полном pointer carrier: uniform
 nonblank-word bound, matrix-log/Duhamel C¹ limit, отсутствие mass

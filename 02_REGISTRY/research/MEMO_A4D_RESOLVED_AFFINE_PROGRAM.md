@@ -23,6 +23,20 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+Input `36ad880c`, §§8.27–8.28 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
+closes the fixed-data coherent first-source limit through rank births.
+It then consumes the actual additive code source in the already defined
+code−coherent-entropy price. For a fixed supplied positive code coefficient
+β, a balanced ±λ preparation has a unique positive Tλ² at which ALL
+operator/preparation/clock first equations vanish. The actual flat-shell
+Bell state uses reference128; transverse field and preparation jets remain.
+This supplies a nonzero limiting joint root, where the pointer-only sign
+argument could not. It does not select the physical Info binding or lift
+the root to finite native rounds. Those full-price/controller and finite
+stationary-continuation proofs are now the consuming steps; a source limit
+alone cannot bypass the singular transverse entropy Hessian.
+
 Input `420f6545`, §8.26 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
 now consumes the separate Book03 minimal-code-history reading. The tagged

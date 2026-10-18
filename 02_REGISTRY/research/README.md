@@ -6,7 +6,16 @@ Current integrator entrypoint: [D0 → GR strategic synthesis, updated 18 Octobe
 It connects foundational theorem owners to the positive AF-star nonlinear
 Einstein composition and states the remaining native/source and recovery
 premises. This is research in Draft #334, not a new accepted CORE claim.
-Latest consumer: §8.26 of the
+Latest consumer: §§8.27–8.28 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+prove the coherent entropy/source limit through rank births and consume
+it in the existing full-code relative-entropy price. A supplied positive
+code coefficient admits an explicit nonzero joint root for every operator,
+preparation and clock first variation, using the original flat-shell Bell
+state and reference128. Physical price binding and finite native stationary
+continuation remain open; a limiting root is not yet an Einstein solution.
+
+Prior consumer: §8.26 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 computes the minimal-code/MAP reading separately from the mean. The tagged
 law has a globally constant bypass MAP. The native long-history MAP has
