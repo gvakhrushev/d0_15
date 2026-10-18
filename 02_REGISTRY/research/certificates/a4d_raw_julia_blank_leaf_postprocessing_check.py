@@ -76,3 +76,20 @@ receipt = {
     "scope":"NOT active LEFT gates; NOT exact D0-to-GR"
 }
 print(json.dumps(receipt, indent=2, sort_keys=True))
+
+# Stronger independent AF/GNS test: every old-left-neutral effect F must have
+# ||F-P_i||_op >= 1/2 for a noncentral leaf P_i.
+P_old0 = sp.kronecker_product(sp.diag(1, 0), sp.eye(2))
+P_old1 = sp.kronecker_product(sp.diag(0, 1), sp.eye(2))
+U_swap = sp.kronecker_product(sp.Matrix([[0,1],[1,0]]), sp.eye(2))
+assert U_swap*P_old0*U_swap == P_old1
+assert P_old0*P_old1 == sp.zeros(4)
+for xx, yy in [(sp.Rational(1,2), sp.Rational(1,2)),
+               (sp.Rational(1,4), sp.Rational(3,4)),
+               (sp.Rational(9,10), sp.Rational(7,10))]:
+    F_old_neutral = sp.kronecker_product(sp.eye(2), sp.diag(xx,yy))
+    assert U_swap*F_old_neutral*U_swap == F_old_neutral
+    op_error = max(abs(eig) for eig in (F_old_neutral-P_old0).eigenvals())
+    assert op_error >= sp.Rational(1,2)
+assert U_swap*P_old0 != P_old0*U_swap
+print("AF_BIMODULE_COMMUTANT_NO_GO: EXACT PASS, sharp error floor 1/2")
