@@ -3827,6 +3827,373 @@ derived matter. Прежняя [homogeneous reduction](A4D_HOMOGENEOUS_PHYSICAL_
 одна кинематическая volume identity её цену не исправляет.
 Новый bounded consumer проверяет (13dz), не повторяя старый root suite.
 
+### 6.46. Все24 настоящие normal rows решаются; ядро full27 теперь известно целиком
+
+Вход `2f02612a`. Для первого time Fourier mode q=e₀, ω=2π, можно
+закрыть оставленный full normal quotient без нового спектрального
+census. На том же continuum root U=√d η, gamma_a=C_a−I_a,
+V_Ω=√d W_Ω, где W_Ω=Σ_r[η_rr C_r Γ(Ω_r)+transpose] — реальные
+симметричные16×16 matrices всех proper-Lorentz links. Положим
+
+    A_ab=Tr W_aW_b, T_ab=Tr W_aγ₀W_bγ₀,
+    S_ab=Σ_i Tr W_aγ_iW_bγ_i.
+
+Из literal Q_a=D_lV_a+V_aD_k и независимых spatial signs получается
+K_link=a_N A+b_N T+c_N S. Для dd=(w_l−w_k)/(E_l−E_k)
+
+    a_N=Σ[d(w_k+w_l)+d²dd((x+ω)²+x²+2|y|²)],
+    b_N=−2d²Σdd x(x+ω), c_N=−(2d²/3)Σdd |y|².
+
+Точная shift identity Σdd d²(2x+ω)²=−2dΣw даёт
+a_N+3c_N−b_N=0. Сохраняются все thermal terms и full128 Riesz
+weights из(13dh), а не только первый heat coefficient. Уже
+сертифицированные(13di) дают B_lapse=24ω b_N>0,
+C_lapse=24(4b_N−c_N)<0, следовательно c_N>4b_N>0.
+
+Разложим пространственные boost/rotation arrays на trace, antisymmetric
+и traceless-symmetric parts. Полный24 coefficient space имеет блоки
+1+1+(2×3)+(2×3)+5+5. Exact full16 traces дают
+
+| Sector | Jacobi block |
+| --- | --- |
+| boost trace | 24(4b_N−c_N) |
+| rotation pseudoscalar | 48(2b_N−5c_N) |
+| polar pair, каждый i | 8[[b_N,−2b_N],[−2b_N,6b_N−2c_N]] |
+| axial pair, каждый i | diag(−16c_N,16(b_N−c_N)) |
+| оба traceless5 | 8(b_N−c_N) times Frobenius Gram |
+
+Все cross blocks нулевые. Поэтому inertia_link24=(3+,21−,0zero).
+Ни один pure-link generator не удалён как gauge. Это вывод из двух
+прежних interval signs, не численная гипотеза об обратимости.
+
+Остаются ровно три совместных normal kernels z_i:
+δU=B_iU, Ω₀=−iωB_i, B_i=E₀ᵢ+Eᵢ₀. Для них exact all16 identity
+V_z=T_iD_k−D_lT_i, T_i=2y_i/ω−Γ(R₀ᵢ). Mixed link rows telescope;
+mixed metric rows сводятся к genuine homogeneous source moments(13dc).
+Значит normal27 inertia=(3+,21−,3zero) и все три kernel directions
+совместимы со всеми десятью metric columns. Их subtraction позволяет
+зафиксировать observer-relative boosts0, затем решить все24 link rows
+без pseudoinverse. Для других частот signs ещё не установлены:
+возможные resonance factors b_N,c_N,b_N−c_N,2b_N−5c_N,4b_N−c_N.
+Это continuum linear quotient, пока не nonlinear section или finite
+Schur limit. Ни полная SO3 symmetry metric fourth moments, ни finite
+forward reflection symmetry из этого разложения не следуют.
+
+### 6.47. Вычислен настоящий null source после этого полного quotient
+
+Возьмём физический Kerr–Schild germ k=(1,1,0,0), ℓ=ηk,
+e_s=d⁻¹/²(I+s kℓᵀ/2). В действительной convention U=ηe⁻ᵀ
+
+    U_s=√d(η−s kkᵀ/2), S=−kℓᵀ/2,
+    g_s=d⁻¹(η+sℓℓᵀ), det e_s=d⁻².             (13ea)
+
+Здесь s имеет Fourier mode e₀; обе реальные фазы сохранены.
+V_S=−i√d[(x+y₁)C(k)−(x+y₁+ω)I(k)]/2. Pure second coframe jet0
+точно. Actual mixed metric/link и proper second-link jets сокращаются
+по тем же root moments(13dc); links не заменены линейными матрицами.
+
+После деления физических momenta на ω положим ξ=t+1/2,
+Y₂=Σ_i y_i², Y₄=Σ_i y_i⁴, C=a_∞/β. Это Y₄, НЕ Y₂².
+Для V=√C Vbar, Q=C Qbar exact signed/permutation averages дают
+
+    Tr Vbar*Vbar=2+8ξ²+8Y₂/3,
+    Tr Qbar*Qbar=2+4ξ²+16ξ⁴+4Y₂/3
+                         −32ξ²Y₂/3+16Y₄/3.       (13eb)
+
+Среди всех24 links null row может связываться лишь с
+L₀=Σ_iZ_(i,B_i), L₂=2Z_(1,B₁)−Z_(2,B₂)−Z_(3,B₃),
+L_v=Z_(0,B₁), L_r=Z_(2,R₁₂)+Z_(3,R₁₃).
+Оба mixed trace vectors равны i(−6,0,2,−4); поэтому L₂ тоже
+не возбуждается. Нужны один scalar и один2×2 vector block.
+При bbar=ω²b_N,cbar=ω²c_N полный reduced null coefficient равен
+
+    K_null^red=A_null−2bbar−6bbar²/(4bbar−cbar).
+
+Новый outward interval calculation использует прежний pin actual root,
+rectangle t=−8…7,y_i=−7…7 и bound всех omitted matrix entries<10⁻²⁵.
+Новая сумма включает весь истинный H+J+R spectrum, CAR16 и Riesz
+preparation response; старый root/heat suite не переигрывается.
+Получено строго
+
+    −0.4455993 < K_null^red < −0.4455991.        (13ec)
+
+Physical unit-cosine Hessian — половина этого числа. Точный Einstein
+comparator для того же null germ имеет DG=diag(0,0,−ω²/2,−ω²/2),
+но δg^{μν}DG_{μν}=0 для ЛЮБОГО Fourier covector. Поэтому нулевая
+self-Hessian EH не означает, что все Einstein rows данной вариации0.
+(13ec) показывает ненулевую собственную null response conditional
+цены после решения ВСЕХ bounded normal Jacobi rows. Один volume
+counterterm её не устраняет, поскольку(13ea) сохраняет volume точно.
+Но это ещё не сравнение с независимо выведенным полным T_own:
+ненулевой H+J+R source нельзя автоматически называть материей.
+Finite soft-channel limit и нелинейная joint section остаются отдельными.
+
+### 6.48. Общая материя: точная строка давления и положительный mean-price Einstein consumer
+
+В старом [local inverse-PF J₂ word](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md)
+null pp-wave действительно решает свой finite source. Вне f=q=0
+полная производная этого же determinant есть
+
+    DJ₂/(νK)=Σ_iπ_i[a_i Df_i+c_i Dq_i], π_i=D_type(i)/K,
+    a_i=528z p²t²(1−B_i)λ_AF′(E_i)/R_i,
+    c_i=528z B_i′(q_i)[Q_i⁻¹+(1−λ_AF(E_i))R_i⁻¹],
+    B_i′=8σp²t²(p+σp²t²q_i)(1−2b_i).           (13ed)
+
+Это genuine general source, не только on-shell values. У него есть
+точный pressure control: ehat_s=diag(1,s,1,1), linksI, ψ=a x⁰.
+Тогда f=0, q=a², Γ(Dψ)²=a²I16, все E_i,b_i,B_i и полный J₂
+независимы от s при любом допустимом t. Но covariant kinetic density
+Jq=s a² имеет derivative a²≠0. Следовательно прежний word сам по
+себе не даёт общего minimal scalar stress. На null q=0,J=const
+это различие невидимо; старый точный pp-result им не опровергнут.
+
+**Конструктивная общая композиция без нового price law.** На физической
+source-compatible coframe ehat обозначим J=|det ehat|, V=∫J. Для
+полного старого cost cut C_m с READY и PENDING и Q_w=wFR∪wRF имеем
+τ_PF(Q_w)=c_AF μ(w), c_AF=2p³. На каждом таком actual LEFT address
+зададим два operands ТОГО ЖЕ двухтактового J₂:
+
+    r_h=[h⁻⁴P_star,h(ehat,U)]/J,
+    q_h=ghat^{μν}D_μψ D_νψ,
+    sample at T_(J/V)(c_w),                      (13ee)
+
+где T — уже выведенный inverse quantile. E=p²(1+t²r_h),
+b=(p+σp²t²q_h)², B=4b(1−b); complement остаётся при baseline.
+Это новое specified query programme на существующем carrier, не
+утверждение, что unchanged native v8 уже исполняет эти operands.
+Деление на J типизирует star как scalar для physical-volume sampling;
+сам P_star,h уже density. Sampling J·P_star вместо(13ee) дал бы
+ошибочный второй determinant.
+
+Finite price сохраняет настоящие regular π_i, НЕ подставляет PF μ_i.
+Для old AF level N≥declared query level точное Binet discrepancy
+из §6.18 ограничено ε_reg=[p^(2N+14)+p^(4N+18)]/[1−p^(4N+18)].
+Его source error умножается на actual C² norm of the composed query.
+При a₀=528z·4p¹¹/R₀, R₀=1−z(L+p⁶L), L=4p³, имеем условный
+полный source limit
+
+    (J₂−J₂,0)/(νK a₀c_AF t²) → Γ=A/V,
+    A=∫[P_star+λ_mat J q],
+    λ_mat=2σp⁻⁵(R₀/Q₀+p⁶), Q₀=1−zL.          (13ef)
+
+На actual smooth/gap chart его C² error содержит O(t²), геометрический
+finite-stencil error, moving golden quadrature error, ε_reg times
+query C² norm/c_AF и whole compiler error/t². Все h⁻⁴ factors и
+производные адреса сохраняются. Bare nearest-cell assignment не
+заменяет smooth query germ. Macro support иной, чем полный C_m,
+требует СВОЕГО нормирующего множителя вместо c_AF.
+
+**Важное отличие от выбора действия:** Γ — mean, не A. Истинный
+источник DΓ=(DA−ΓDV)/V. После собственной Cartan row T^a=0
+пусть исходная star contraction даёт P_star=γ_star J R, γ_star≠0.
+Этот coefficient принадлежит G₂/star normalization; численно подгонять
+его по pp-wave нельзя. Тогда все metric/scalar rows есть
+
+    γ_star G_{μν}+λ_mat(∂_μψ∂_νψ−g_{μν}q/2)
+                                  +Γ g_{μν}/2=0,
+    ∂_μ(J g^{μν}∂_νψ)=0.                       (13eg)
+
+Scalar не зависит от independent connection: её24 Euler rows дают
+torsion0 через исходную Palatini lemma. Собственный Ward
+∇^μT_{μν}=(Box_g ψ)∂_νψ следует из этих же scalar rows, не из
+подставленного T. Если global coframe scaling реально допустим,
+A(se)=s²A(e), V(se)=s⁴V(e), Γ(se)=s⁻²Γ(e), поэтому собственная
+radial row вынуждает Γ=0. Тогда получены все10 Einstein–scalar
+уравнений с κ=−λ_mat/γ_star. Если scale фиксирован collar/calibration
+или варьируется только volume-preserving family, этот шаг запрещён:
+остаётся постоянный cosmological/volume multiplier. Нельзя отбросить
+ΓDV как «нормировку», поскольку V зависит от поля.
+
+Это общий nonlinear first-source consumer построенной программы,
+с независимым исходным scalar-code ψ, а не только null solution.
+Он допускает неплоские continuum Einstein–scalar pp-waves. Но прежний
+EXACT finite40-row pp-root остаётся у ПРЕЖНЕГО inverse-PF word.
+У нового(13ee) веса и jets изменились: f=q=0 и J=1 сами по себе
+не переносят конечный root. Нужны совпадение ENTIRE query jet и
+реальных weights (включая inverse-PF factors), отдельная cancellation
+либо доказательство новых exact finite roots. Native moving-query
+admission, общий controller/clock source, другие реальные компоненты
+полной цены и физическое refinement остаются открыты. Shannon binding
+из §6.43 не подставляется вместо этого J₂ и не позволяет бесплатно
+прибавить entropy метролого-контроллера к determinant.
+
+Новый [null/full-source consumer](sources/d0_af_star_full_lattice_2026-10-17/check_native_null_source.py)
+проверяет literal CAR/physical KS map, parity reductions, весь24 block
+congruence, три observer kernels, interval(13ec), общий J₂ source,
+полный macro cut, pressure и mean-action/own-scalar Ward controls.
+Он использует pin прежнего root receipt и не вызывает старые suites.
+
+### 6.49. Полный finite Schur limit: мягкие observer rows оставляют конечный вклад
+
+Предупреждение §6.47 теперь разрешено на той же actual native root
+branch: предел Hessian и решение normal equations НЕ коммутируют.
+Нельзя сначала удалить три continuum observer kernels, а затем
+назвать результат пределом конечного исполнения. Используются
+α=p²h²/128, m=256/h², β=2p², z=2⁻²⁰, CAR16/RIGHT128 и весь
+occupied first-axis cluster. Proper link coordinate есть N=hΩ.
+Никакой heat-time limit β→0 здесь нет.
+
+**Почему достаточны конечные моменты.** Положим ω=2π,
+d₀=a∞/(βω²), C=d₀ω²=a∞/β и dimensionless momentum k=(x,y).
+Тот же native finite-B background имеет
+G_h=(d_h−o_h)I+o_h11ᵀ, d_h=d₀+d₂h²+o(h²), o_h=o₂h²+o(h²).
+Leading proper-root moments равны Σw₀κ_aκ_b=0. Второй порядок
+НАСТОЯЩИХ root equations, а не назначенный фон, даёт
+
+    Σw₂κ_a²=(1/12)Σw₀κ_a⁴,
+    Σw₂κ_aκ_b=−(1/4)Σw₀κ_a²κ_b², a≠b.         (13eh)
+
+Здесь w₂ содержит finite-B survival correction и изменение полного
+Z_h. Для A_c=p²/128, E_h=E₀+h²E₂+o(h²):
+
+    ξ₂=E₂+A_c E₀²/2, Z₂=−16βΣexp(−βE₀)ξ₂,
+    w₂=κ_price′(E₀)ξ₂+A_c E₀κ_price(E₀)
+                               +exp(−βE₀)Z₂/Z₀²,
+    κ_price(E)=−exp(−βE)/Z₀
+                 +128zβexp(−βE)/(1−z+zexp(−βE)).     (13ei)
+
+Riesz indicator всего cluster постоянен ВДОЛЬ homogeneous(d_h,o_h)
+branch. При nonzero-Fourier variation cluster движется; его response
+уже сохранён в настоящих divided differences, не заморожен.
+При frozen isotropic U₀=√d₀η exact CAR half-edge conjugation переводит
+D_h в(2i√d₀/h)Ση_r sin(hκ_r/2)γ_r. Его lattice Δ_h не имеет
+линейного h-члена и даёт второй член −d₀Σκ_r⁴/12. Полный E₂
+содержит также d₂|κ|²+o₂[(Σ_rκ_r)²−|κ|²] от движения background.
+Все U₂ terms вместе с изменением
+divided-difference denominator сворачиваются в
+32d₂Σw₀(κ₀²−Σ_iκ_i²) на диагонали и −32o₂Σw₀Σ_iκ_i² вне её,
+то есть в НУЛЬ по leading root moments. Оставшиеся weight₂ terms
+суть32d₀Σw₂(κ₀²−3κ_i²) и −96d₀Σw₂κ_iκ_j. По(13eh) они равны
+−(16/3)d₀Σw₀κ₀⁴ и24d₀Σw₀κ_i²κ_j². Таким образом d₂,o₂ и w₂
+исключены ТОЧНО. Их численный подбор не является premise результата.
+
+Для прохождения к этим coefficient sums достаточно weighted moment
+domination, и здесь она следует из actual finite grid. При малом h
+G_h uniformly positive; sin²(hκ/2)≥h²κ²/π² в Brillouin chart.
+Для A_c=p²/128 имеем αE_max≤16A_c(d_h+3|o_h|)<0.004
+в окрестности d₀,o₀. Поэтому настоящий B_h=1−αE_h>0.996,
+а B_h^m≤exp(−βE_h). Его нужные jets имеют только bounded B_h⁻ʲ
+factors и polynomial moments. Следовательно weights ограничены polynomial
+times exp(−c|κ|²), c>0 независимо от h; Riesz shell конечен и отделён.
+На низких modes используется Taylor, на оставшихся — этот majorant.
+Сам native root branch получается из невырожденных двух homogeneous
+root moments: для каждого native integer L smooth map F_L(d,o)
+есть C¹-close к F_∞, с uniform expansion F_L=F_∞+h²F₂+o(h²).
+Невырожденный Jac F_∞ даёт nearby unique root и указанное разложение
+d_h,o_h. High-mode остаток экспоненциально мал. Это асимптотика по
+КОНЕЧНЫМ Brillouin grids с m=256L² integer, не расходящаяся
+infinite-Z⁴ sin-sum при fixed h. Ветви joint nonlinear metric roots
+этим не конструируются.
+
+Невырожденность не выводится из одной uniqueness: на a∈[1.80,1.82]
+one-dimensional θ<1.4, M₂<0.35, M₄<0.36. Для настоящего radial F
+из(13dg) F′=−Var(|k|²)+2048βΣ|k|⁴r_k(1−r_k)<−0.64:
+Var(|k|²)≥8exp(−1.82)/1.4², а feedback ограничен
+2048·0.77·z/(1−z)[4·0.36·1.4³+12·0.35²·1.4²]. В transverse
+row global Z_o=0 по parity, а
+κ_price′(E)/exp(−βE)≥β[1/(16·1.4⁴)−128z·0.77/(1−z)]>0.012.
+Следовательно ∂_oM₀₁=2Σκ_price′κ₀²κ₁²>0; cross Jacobian entries
+равны0. Эти explicit bounds вместе с uniform finite-grid C¹ convergence
+дают близкую homogeneous native root для всех достаточно больших L.
+Нового numerical root fit или предположения joint-metric IFT нет.
+
+**Семь скалярных сумм вместо28×28 инверсии.** В следующих формулах
+w(k)=−exp(−a∞|k|²)/Z₀+128zβexp(−a∞|k|²)/(1−z+zexp(−a∞|k|²))
++χ_axis(k)/128, L(k)=[w(k+e₀)−w(k)]/(2x+1),
+Y₂=Σ_i y_i², Y₄=Σ_i y_i⁴, Y₂₂=Σ_{i<j}y_i²y_j². Определим
+
+    m₀=Σw, m₄=Σwx⁴, m₂₂=Σwy₁²y₂²,
+    (L₀,L₂,L₄,L₂₂)=ΣL(1,Y₂,Y₄,Y₂₂),
+    A=L₀+2m₀, D=3A+L₂.
+
+После всех24 proper-link equations exact full16 trace reduction даёт
+
+    s_s=(16/3)(L₄+2L₂₂)+128m₂₂+32m₄−12L₂²/D,
+    s_t=(16/3)(L₄−L₂₂)+32m₂₂+32m₄,
+    τ=L₂(3A+4L₂)/(3D),
+    n₂₄=A+(4/3)L₂+(16/3)L₄−9A²/(4D).           (13ej)
+
+Пусть P_s=11ᵀ/3, P_t=I−P_s. В оставшемся metric/observer block
+после link Schur, ε=hω:
+
+    S_h=Cε²(s_sP_s+s_tP_t)+o(ε²),
+    t_h=iCετ·1+o(ε), r_h→Cn₂₄,
+    H_null,red(h)→C[n₂₄−3τ²/s_s],
+    h·y_observer→−iτ/(ωs_s)·1.                 (13ek)
+
+На старом accepted root interval новая outward interval evaluation
+семи сумм даёт
+
+    physical S₂,s ∈(−10.670715,−10.670714),
+    physical S₂,t ∈(−35.813010,−35.813008),
+    physical T₁/i∈(−0.641005,−0.641004),
+    C·3τ²/s_s∈(−0.1155182,−0.1155180),
+    lim H_null,red∈(−0.3300812,−0.3300809),
+    h·y_observer/i∈(−0.0600715,−0.0600713)·1.  (13el)
+
+Сумма взята на x∈[−9,8], y_i∈[−8,8], grouped в164 spatial shells.
+Root и Z enclosure переиспользованы с SHA pin. Для каждого из семи
+хвостов использована одна явная bound: C_w=1/16+128zβ/(1−z),
+1000C_wΣ_{j≥9}j⁸exp[−1.80(j−1)²]<10⁻³⁵. Она покрывает shifted
+pair, polynomial degree≤4 и число sup-shell points≤81j⁴; geometric
+ratio ≤(10/9)⁸exp(−1.80·17). Occupied Riesz term целиком внутри.
+Receipt содержит раздельно exact CAR reduction и outward sums.
+
+Это разрешает конкретный loophole §6.47: finite soft correction
+НЕ нулевая, но не восстанавливает EH null self-Hessian=0. Требуемая
+observer-relative first response растёт как1/h, поэтому uniformly
+C¹-bounded normal section на fixed physical coframe/observer chart
+здесь невозможна. Native edge N=hΩ может иметь bounded derivative;
+это другая норма. Finite-h sections на shrinking charts не исключены.
+Один этот локальный символ не устанавливает generic nonlinear
+recovery, independent matter stress, compulsory price или D0-wide
+NO-GO. Он устанавливает actual full finite-source obstruction к
+названной bounded Einstein-vacuum реконструкции этой H+J+R цены.
+
+### 6.50. Нормировка гравитации с материей теперь вычислена без pp-wave fit
+
+В(13eg) оставлен coefficient γ_star от исходного G₂/star, чтобы не
+подменить его подгонкой. Он теперь получен независимо. Literal
+matrices из check_full_lattice.py удовлетворяют G₂·STAR=−ε на pair
+basis +---. Для каждого из36 независимых curvature coefficients и
+произвольного16-variable coframe точная adjugate polynomial identity
+даёт для continuum curvature density при исходном c_star=1
+
+    P_star=−(1/2)det(e)R(e,ω),
+    γ_star=−sgn(det e)/2 относительно J=|det e|,
+    κ=−λ_mat/γ_star=2sgn(det e)λ_mat.             (13em)
+
+Контроль независим от стационарной волны: e=I, единственная face01
+с F₀₁=B₀₁ даёт P_star=1, R=−2. Полиномиальная identity доказывает
+равенство полного источника по всем16 coframe components и curvature
+components, а не только это значение. Все16 Clifford grades дают
+Tr₁₆Γ(v)²/16=vᵀηv; дополнительного множителя16 или reference128 нет.
+Положительный density dressing сохраняет orientation и γ_star.
+Finite P_star,h сохраняет свой stencil/holonomy error: это exact
+algebra его curvature coefficient, а не утверждение, что при fixed h
+plaquette уже равна непрерывной Levi-Civita кривизне.
+
+В старой null-frame family e_owned=T e_null, detT=−1, det e_null=1,
+поэтому γ_star=+1/2 и κ=−2λ_mat. Прежняя Ric_uu=−2λ_mat s²
+теперь подтверждена независимым oriented contraction. Другая
+orientation component имеет противоположный coefficient относительно
+положительного J; это не разрешение менять ориентацию/coupling для
+получения желаемого знака в одном физическом исполнении. Choice σ,
+physical orientation и empirical Newton normalization не выведены.
+
+Заодно исправлен transpose в displayed scalar query старого local
+owner: при g=eᵀηe внутренний covector есть e⁻ᵀDψ. Тогда q=g⁻¹(Dψ,Dψ)
+на всём chart, не только на null solution. Его numerical owner и ранее
+использовал g⁻¹; ошибочна была именно matrix запись e⁻¹Dψ. Exact
+контроль различает их на несимметричной null coframe.
+
+Таким образом общий mean-price Einstein–scalar consumer(13ee–eg)
+теперь имеет собственную полностью вычисленную относительную coupling,
+без нового action и fitted stress. Остались прежние существенные
+premises: admission moving scalar-query/controller, entire price/cut,
+его free-scale row при Γ=0, exact joint roots и physical refinement.
+Эта algebra не переносит старый finite pp-root на другой query word.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

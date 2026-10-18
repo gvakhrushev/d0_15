@@ -21,10 +21,12 @@ w_x=\sum_{\mathcal I_x}\pi_{j,i}>0,\quad
 В full16 на том же site используется неотрицательно-нормированный true CAR input \(\psi_x\) — scalar grade0 старой raw/matter записи (на bounded smooth chart), с настоящим \(\Gamma_a=c_a+\eta_{aa}c_a^\top\):
 \[
 q_x:=\frac1{16}\operatorname{Tr}_{16}
- \big[\Gamma((\widehat e_x^{-1})D^+\psi)^2\big]
+ \big[\Gamma((\widehat e_x^{-T})D^+\psi)^2\big]
 =\widehat g_x^{\mu\nu}D^+_\mu\psi D^+_\nu\psi.
 \tag{2}
 \]
+При convention \\(\\widehat g=\\widehat e^T\\eta\\widehat e\\) координатный covector переводится во внутренний через inverse transpose \\(\\widehat e^{-T}D^+\\psi\\); запись (2) уточнена именно в этом matrix convention.
+
 Это **оригинальная Clifford algebra scalar square**, а не \(+\Gamma^\dagger\Gamma\). Она имеет нулевое значение на ненулевом null градиенте и ненулевой метрический источник. Ее \(\Gamma(k)^2=q_xI_{16}\) делает чтение независимым от произвольного spectator/ref128 density: физически неизвестную квантовую амплитуду не нужно **копировать** в новый независимый CAR16. Для coherent controlled-unitary execution значение \(\psi_x\) и neighbor differences должны быть реально представлены НА СОХРАНЁННОМ исходном коде/области native-field arguments; произвольное считывание UNKNOWN wavefunction amplitudes без измерения этим не разрешается.
 
 Для i из \(\mathcal I_x\) задаём **одну и ту же** вычислимую inverse-PF local input-пару:

@@ -12,6 +12,42 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: actual null-projected source after the full normal equations
+
+Input `2f02612a`; the previous goal turn made progress by publishing
+the priced adaptive/clock composition, correcting the two-tick sourced
+scene and integrating the nine-null criterion. It did not establish
+its actual dynamical contractions. This turn tests that missing row
+directly: one null Kerr–Schild metric germ on the same isotropic native
+continuum H+J+R root, CAR16/reference128, both real Fourier phases,
+all proper Lorentz-link normals and observer-relative coframe normals.
+Use the owned exact full-spectrum Hessian and cluster weights, not a
+new heat truncation or bare volume price. Solve only compatible normal
+quotients; prove their kernel/mixed compatibility before eliminating
+anything. The consumer is full-source §6.45's Ricci/matter null-source
+comparison and its native clock boundary. Root owns shared files and a
+bounded new calculation in the existing packet. Read-only assistants
+derive the exact CAR contractions, pressure-test actual matter/price
+composition and review the full normal quotient. No free price, chosen
+stress, removed grade or altered raw#216 terminal is admitted. Any
+numerical scout remains exploratory until an exact or bounded argument
+supports its claimed conclusion; unchanged suites are reused.
+
+Consumed in full-source §§6.46–6.50 / strategic §7.16: exact full24
+normal congruence/inertia and compatible three-kernel full27 quotient;
+strict bounded-null source; exact seven-moment finite soft reduction
+with full finite null limit(-0.3300812,-0.3300809) and observer response
+growing1/h. The finite-Schur rate is now proved for that conditional
+price. A general sameJ2 mean-source programme, including own scalar
+stress, true volume derivative and regular/PF error, is conditional on
+its admitted moving query; it does not transfer the old finite pp-root.
+Three newly merged/retired worker comparisons are consumed without rerun:
+quantile execution gap, cell-mass/source type mismatch and non-descending
+phase residual. Next: one actual retained-address/query programme, its
+whole price and own joint roots/refinement. The original oriented star contraction now fixes gamma_star=-sgn(det e)/2
+and kappa=2*sgn(det e)*lambda_mat at c_star=1, independently of the
+pp-wave; full16 inverse-transpose query is corrected. No new execution launched.
+
 ### 18 October: close the native clock and adaptive-query source interfaces
 
 Input `135206e7`; the previous goal turn made progress by publishing the

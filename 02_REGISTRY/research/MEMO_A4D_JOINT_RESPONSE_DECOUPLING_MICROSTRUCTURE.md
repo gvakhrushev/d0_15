@@ -1,5 +1,46 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — actual full normal source, finite soft limit and general matter
+
+[Strategic §7.16](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.46–6.50](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the null-source step on the actual H+J+R CAR16/reference128 root.
+All24 proper link rows have exact inertia(3+,21−,0); the full27 normal
+kernel has exactly three compatible observer directions. Their finite
+soft modes survive elimination: S_h~h²S₂ and t_h~hT₁. Exact CAR/root
+moment reduction leaves seven scalar spectral sums, whose bounded tails
+give the full finite reduced null limit in(−0.3300812,−0.3300809).
+The EH null self-Hessian is zero. A uniformly C1-bounded physical
+observer normal section is unavailable because its first response grows
+as1/h. This is a source obstruction for this conditional price, not a
+D0-wide no-go, nonlinear shrinking-chart exclusion or independent matter.
+
+There is also a positive general Einstein–scalar source programme using
+the SAME J2 price law. The old inverse-PF scalar word fails an exact
+off-null pressure test. Querying r_h=h^-4*Pstar,h/J and q_h at the
+moving physical-volume quantile, with the actual regular/PF discrepancy,
+instead gives the conditional C2 mean-price limit Gamma=A/V. Own Cartan,
+scalar and metric rows give Einstein–scalar with its true mean-volume
+term; a genuinely free global scale forces Gamma=0. Fixed scale retains
+a constant volume multiplier. The coefficient gamma_star is retained
+from the original oriented contraction: full-source §6.50 now independently
+proves gamma_star=-sgn(det e)/2 and kappa=2*sgn(det e)*lambda_mat
+at the actual c_star=1, on all36 arbitrary-coframe curvature coefficients.
+No extra16/ref128 normalization enters. The displayed local Clifford
+query uses the correct inverse transpose. No fitting, discarded volume
+jet or automatic transfer of the old finite pp-root is used.
+
+The three merged/retired worker comparisons from main `bba70fe5` are
+consumed: old fixed golden splits do not execute density-dependent
+quantiles; cell-mass Reynolds Ward differs from the complete-price
+lapse source; the proposed RG residual does not descend to phase LEFT
+fibres, and phase/coframe sites require a real binding. The concrete
+next premise is one admitted retained-address/scalar-query controller
+with actual branch law, whole price/source and normalized error, then
+its own joint roots and physical refinement. The bounded new entrypoint
+and receipt separate exact symbols from interval sums; unchanged suites
+are reused. Task IN_PROGRESS, physical GR and original raw#216 OPEN.
+
 ## 18 October 2026 — complete adaptive source, priced proper clock and corrected sourced wave
 
 [Strategic §7.15](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

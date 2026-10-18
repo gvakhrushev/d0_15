@@ -1942,6 +1942,93 @@ Shannon и J₂, composite principal metric и operator-measure variation
 не отождествлены. Конструкции и source bound заменили два неявных
 предположения, но физический D0→ОТО ещё требует названного binding.
 
+### 7.16. Весь normal quotient, finite soft limit и общий источник материи
+
+Вход `2f02612a`. [Full-source §§6.46–6.50](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+разрешают оставленный в §7.15 null-source тест на собственном native
+H+J+R background, CAR16/reference128. Все24 proper Lorentz-link rows
+имеют точную block congruence и inertia(3+,21−,0); full27 observer/link
+ядро ровно трёхмерно, и все metric mixed rows совместимы с ним.
+Сначала получен continuum bounded-normal KS coefficient в
+(−0.4455993,−0.4455991), тогда как EH self-Hessian этого null germ=0.
+
+Решающая поправка: три continuum kernels становятся мягкими finite
+observer modes с S_h=h²S₂+o(h²), t_h=hT₁+o(h). Все24 link equations
+решены ПЕРЕД пределом. Exact CAR reduction и собственные вторые
+root moments исключают неизвестные d₂,o₂,w₂; ответ зависит только
+от семи спектральных сумм прежней полной цены. Outward intervals дают
+
+    lim H_null,red∈(−0.3300812,−0.3300809),
+    h·y_observer/i∈(−0.0600715,−0.0600713)·(1,1,1).
+
+Finite correction сохраняется, а observer response расходится1/h.
+Тем самым не только bounded continuum compensation, но и actual
+finite-source limit этой reconstruction не даёт EH vacuum. Нельзя
+перенести это в D0-wide no-go, назвать остаток самостоятельно выведенной
+материей или исключить nonlinear sections на shrinking charts. Native
+edge N=hΩ и physical observer/coframe norm различны. Прежняя
+entrywise Hessian convergence не давала нужного Schur limit; теперь
+эта конкретная missing-rate premise закрыта аналитически и interval sums.
+
+Положительный материальный синтез существенно общий, чем прежняя
+null pp-wave. Вне q=0 прежний sameJ₂ word НЕ имеет полного minimal
+stress: exact e=diag(1,s,1,1), ψ=ax⁰ делает весь J₂ constant поs,
+хотя D_s(Jq)=a². Это не устраняется scalar Ward или одной pp-family.
+Тот же price law допускает другой specified query programme:
+
+    r_h=h⁻⁴P_star,h/J, q_h=g⁻¹(Dψ,Dψ),
+    sample at T_(J/V)(c_w), J=|det e|, V=∫J.
+
+Полный macro cut имеет фиксированную mass c_AF=2p³. При настоящих
+regular-left weights и их Binet→PF bound нормированная цена сходится
+в C² к Γ=A/V, A=∫[P_star+λ_mat Jq]. Все moving-cell jets, weak t²,
+stencil, compiler error/t² и regular/PF discrepancies сохранены.
+После собственной Cartan row общие уравнения этой программы:
+
+    γ_star G_{μν}+λ_mat(∂_μψ∂_νψ−g_{μν}q/2)+Γg_{μν}/2=0,
+    ∂_μ(Jg^{μν}∂_νψ)=0.
+
+При реально свободной общей coframe scale собственная radial row
+Γ(se)=s⁻²Γ(e) вынуждает Γ=0. Получены все10 Einstein–scalar rows
+с κ=−λ_mat/γ_star; γ_star — owned oriented contraction, не fit по
+pp-wave. При fixed collar/scale остаётся постоянный volume multiplier.
+Новый independent [literal normalization §6.50](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+проверяет все36 curvature coefficients на произвольном coframe:
+P_star=−det(e)R/2, γ_star=−sgn(det e)/2 и
+κ=2sgn(det e)λ_mat. В старой det e<0 family γ_star=+1/2.
+Это точная относительная нормировка при c_star=1, не эмпирическое G
+и не новая свобода знака. Full16 normalized Clifford trace не вносит
+дополнительного16/ref128; inverse-transpose query исправлен.
+Старый exact finite pp-root относится к СТАРОМУ inverse-PF word:
+изменение query weights требует совпадения всего jet либо новых roots.
+Этот положительный continuum consumer не выдаётся за новый exact finite
+root и не заменяет whole native H+J+R или Shannon binding.
+
+**Новые параллельные результаты из main `bba70fe5`** также потреблены.
+[Quantile execution](A4D_QUANTILE_CLOCK_EXECUTION_2026_10_18.md)
+сохраняет верную CDF algebra, но старый fixed p/p² engine сам не
+исполняет density-dependent split/moving walls. Поэтому T_(J/V)
+остаётся именно specified controller/query programme. [Lapse Reynolds](A4D_LAPSE_REYNOLDS_RESIDUAL_2026_10_18.md)
+доказывает cell-mass Ward с boundary term; это другой тип variation,
+чем same-price lapse Hessian, и их численная разность не физический
+source residual. Новый null test сохраняет volume точно и уже
+сравнивает один и тот же price после всех normal rows. [LEFT residual](A4D_LEFT_RESIDUAL_EXECUTED_SOURCE_2026_10_18.md)
+не спускается на phase fibres: R_phi(0,1)−R_phi(4,1)=−1 при одном
+P. Считать его old LEFT observable нельзя; phase P и coframe Q_x
+также требуют настоящего интерфейса. Это не запрет field-dependent
+query после retained address copy и не опровержение построенного mean
+programme. Три worker tasks уже retired в main, здесь они не перезапущены.
+
+Следующий общий шаг один: выполнить на том же retained carrier
+(e,U,ψ,address)↦(r_h,q_h,T_(J/V)(c_w)), доказать его actual branch
+law и whole price/source/error bound. Затем — его собственные finite
+joint roots и refinement. Нельзя заменить этот шаг доступностью CDF,
+копированием адреса, формальной covariance или знанием готового EH.
+Исходный raw#216 и другие material/spin sectors остаются своими
+обязательствами. [Один новый bounded consumer](sources/d0_af_star_full_lattice_2026-10-17/check_native_null_source.py)
+с exact/interval receipt проверяет только эти новые несущие переходы;
+старые root/heat/Lean suites повторно не запускаются.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

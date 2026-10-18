@@ -1,0 +1,1815 @@
+{
+  "status": "PASS",
+  "null_symbol": {
+    "status": "PASS",
+    "checks": [
+      "null",
+      "coframe_nilpotent",
+      "native_inverse_coframe_convention",
+      "det_coframe_constant",
+      "contravariant_metric_exact",
+      "covariant_metric_exact",
+      "null_jet_closed_form",
+      "Lorentz_generator_01",
+      "Lorentz_generator_02",
+      "Lorentz_generator_03",
+      "Lorentz_generator_12",
+      "Lorentz_generator_13",
+      "Lorentz_generator_23",
+      "eight_three_dimensional_parity_sectors",
+      "forbidden_parity_null_cross_0:B02",
+      "forbidden_parity_null_cross_0:B03",
+      "forbidden_parity_null_cross_0:R12",
+      "forbidden_parity_null_cross_0:R13",
+      "forbidden_parity_null_cross_0:R23",
+      "forbidden_parity_null_cross_1:B02",
+      "forbidden_parity_null_cross_1:B03",
+      "forbidden_parity_null_cross_1:R12",
+      "forbidden_parity_null_cross_1:R13",
+      "forbidden_parity_null_cross_1:R23",
+      "forbidden_parity_null_cross_2:B01",
+      "forbidden_parity_null_cross_2:B03",
+      "forbidden_parity_null_cross_2:R13",
+      "forbidden_parity_null_cross_2:R23",
+      "forbidden_parity_null_cross_3:B01",
+      "forbidden_parity_null_cross_3:B02",
+      "forbidden_parity_null_cross_3:R12",
+      "forbidden_parity_null_cross_3:R23",
+      "active_irrep_block_01",
+      "active_irrep_block_02",
+      "active_irrep_block_03",
+      "active_irrep_block_10",
+      "active_irrep_block_12",
+      "active_irrep_block_13",
+      "active_irrep_block_20",
+      "active_irrep_block_21",
+      "active_irrep_block_30",
+      "active_irrep_block_31",
+      "null_decouples_even_difference23",
+      "null_decouples_odd_difference23",
+      "link_character_0:B01_1",
+      "link_character_0:B01_2",
+      "link_character_0:B01_3",
+      "link_character_0:B02_1",
+      "link_character_0:B02_2",
+      "link_character_0:B02_3",
+      "link_character_0:B03_1",
+      "link_character_0:B03_2",
+      "link_character_0:B03_3",
+      "link_character_0:R12_1",
+      "link_character_0:R12_2",
+      "link_character_0:R12_3",
+      "link_character_0:R13_1",
+      "link_character_0:R13_2",
+      "link_character_0:R13_3",
+      "link_character_0:R23_1",
+      "link_character_0:R23_2",
+      "link_character_0:R23_3",
+      "link_character_1:B01_1",
+      "link_character_1:B01_2",
+      "link_character_1:B01_3",
+      "link_character_1:B02_1",
+      "link_character_1:B02_2",
+      "link_character_1:B02_3",
+      "link_character_1:B03_1",
+      "link_character_1:B03_2",
+      "link_character_1:B03_3",
+      "link_character_1:R12_1",
+      "link_character_1:R12_2",
+      "link_character_1:R12_3",
+      "link_character_1:R13_1",
+      "link_character_1:R13_2",
+      "link_character_1:R13_3",
+      "link_character_1:R23_1",
+      "link_character_1:R23_2",
+      "link_character_1:R23_3",
+      "link_character_2:B01_1",
+      "link_character_2:B01_2",
+      "link_character_2:B01_3",
+      "link_character_2:B02_1",
+      "link_character_2:B02_2",
+      "link_character_2:B02_3",
+      "link_character_2:B03_1",
+      "link_character_2:B03_2",
+      "link_character_2:B03_3",
+      "link_character_2:R12_1",
+      "link_character_2:R12_2",
+      "link_character_2:R12_3",
+      "link_character_2:R13_1",
+      "link_character_2:R13_2",
+      "link_character_2:R13_3",
+      "link_character_2:R23_1",
+      "link_character_2:R23_2",
+      "link_character_2:R23_3",
+      "link_character_3:B01_1",
+      "link_character_3:B01_2",
+      "link_character_3:B01_3",
+      "link_character_3:B02_1",
+      "link_character_3:B02_2",
+      "link_character_3:B02_3",
+      "link_character_3:B03_1",
+      "link_character_3:B03_2",
+      "link_character_3:B03_3",
+      "link_character_3:R12_1",
+      "link_character_3:R12_2",
+      "link_character_3:R12_3",
+      "link_character_3:R13_1",
+      "link_character_3:R13_2",
+      "link_character_3:R13_3",
+      "link_character_3:R23_1",
+      "link_character_3:R23_2",
+      "link_character_3:R23_3",
+      "individual_boost_kernel_dirac",
+      "individual_boost_kernel_Delta",
+      "null_metric_mixed_kernel_closes_in_actual_rows",
+      "centered_null_cross_vectors_identical",
+      "EH_null_self_contraction_zero",
+      "EH_full_rows_nonzero_transverse",
+      "EH_null_self_zero_for_every_Fourier_covector"
+    ],
+    "creator_AST_sha256": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "physical": {
+      "U": "eta e^-T",
+      "e": "c^-1 (I+t k(eta k)^T/2)",
+      "k": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "S": [
+        [
+          "-1/2",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "metric": "g=c^-2[eta+t(eta k)(eta k)^T]",
+      "inverse_metric": "q=c^2[eta-t k k^T]",
+      "det_e": "c^-4",
+      "observer": "n=e0 fixed"
+    },
+    "momenta": "incoming (x,y1,y2,y3), outgoing (x+omega,y1,y2,y3); physical Fourier q=(omega,0,0,0)",
+    "null_jet": "V=-i c/2[(x+y1)C(k)-(x+y1+omega)I(k)]",
+    "raw_self": {
+      "Vnorm_div_c2": "4*(omega**2 + 2*omega*x + 2*omega*y1 + 2*x**2 + 4*x*y1 + 2*y1**2)",
+      "Qnorm_div_c4": "4*(omega**4 + 3*omega**3*x + omega**3*y1 + 7*omega**2*x**2 + 2*omega**2*x*y1 - omega**2*y1**2 + 8*omega*x**3 - 8*omega*x*y1**2 + 4*x**4 - 8*x**2*y1**2 + 4*y1**4)"
+    },
+    "averaged_self": {
+      "Vnorm_div_c2": "4*(2*Y2 + 3*omega**2 + 6*omega*x + 6*x**2)/3",
+      "Qnorm_div_c4": "4*(-Y2*omega**2 - 8*Y2*omega*x - 8*Y2*x**2 + 4*Y4 + 3*omega**4 + 9*omega**3*x + 21*omega**2*x**2 + 24*omega*x**3 + 12*x**4)/3"
+    },
+    "parity_sectors": {
+      "000": [
+        "1:B01",
+        "2:B02",
+        "3:B03"
+      ],
+      "001": [
+        "0:B03",
+        "1:R13",
+        "2:R23"
+      ],
+      "010": [
+        "0:B02",
+        "1:R12",
+        "3:R23"
+      ],
+      "011": [
+        "0:R23",
+        "2:B03",
+        "3:B02"
+      ],
+      "100": [
+        "0:B01",
+        "2:R12",
+        "3:R13"
+      ],
+      "101": [
+        "0:R13",
+        "1:B03",
+        "3:B01"
+      ],
+      "110": [
+        "0:R12",
+        "1:B02",
+        "2:B01"
+      ],
+      "111": [
+        "1:R23",
+        "2:R13",
+        "3:R12"
+      ]
+    },
+    "null_to_all24_before_average": {
+      "0:B01": [
+        "2*I*omega",
+        "2*I*omega**3"
+      ],
+      "0:B02": [
+        "0",
+        "0"
+      ],
+      "0:B03": [
+        "0",
+        "0"
+      ],
+      "0:R12": [
+        "0",
+        "-4*I*omega*y2*(omega + 2*x + 2*y1)"
+      ],
+      "0:R13": [
+        "0",
+        "-4*I*omega*y3*(omega + 2*x + 2*y1)"
+      ],
+      "0:R23": [
+        "0",
+        "0"
+      ],
+      "1:B01": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "1:B02": [
+        "0",
+        "0"
+      ],
+      "1:B03": [
+        "0",
+        "0"
+      ],
+      "1:R12": [
+        "0",
+        "0"
+      ],
+      "1:R13": [
+        "0",
+        "0"
+      ],
+      "1:R23": [
+        "0",
+        "0"
+      ],
+      "2:B01": [
+        "0",
+        "0"
+      ],
+      "2:B02": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "2:B03": [
+        "0",
+        "0"
+      ],
+      "2:R12": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "2:R13": [
+        "0",
+        "0"
+      ],
+      "2:R23": [
+        "0",
+        "0"
+      ],
+      "3:B01": [
+        "0",
+        "0"
+      ],
+      "3:B02": [
+        "0",
+        "0"
+      ],
+      "3:B03": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "3:R12": [
+        "0",
+        "0"
+      ],
+      "3:R13": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "3:R23": [
+        "0",
+        "0"
+      ]
+    },
+    "null_to_all24_after_average": {
+      "0:B01": [
+        "2*I*omega",
+        "2*I*omega**3"
+      ],
+      "0:B02": [
+        "0",
+        "0"
+      ],
+      "0:B03": [
+        "0",
+        "0"
+      ],
+      "0:R12": [
+        "0",
+        "0"
+      ],
+      "0:R13": [
+        "0",
+        "0"
+      ],
+      "0:R23": [
+        "0",
+        "0"
+      ],
+      "1:B01": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "1:B02": [
+        "0",
+        "0"
+      ],
+      "1:B03": [
+        "0",
+        "0"
+      ],
+      "1:R12": [
+        "0",
+        "0"
+      ],
+      "1:R13": [
+        "0",
+        "0"
+      ],
+      "1:R23": [
+        "0",
+        "0"
+      ],
+      "2:B01": [
+        "0",
+        "0"
+      ],
+      "2:B02": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "2:B03": [
+        "0",
+        "0"
+      ],
+      "2:R12": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "2:R13": [
+        "0",
+        "0"
+      ],
+      "2:R23": [
+        "0",
+        "0"
+      ],
+      "3:B01": [
+        "0",
+        "0"
+      ],
+      "3:B02": [
+        "0",
+        "0"
+      ],
+      "3:B03": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "3:R12": [
+        "0",
+        "0"
+      ],
+      "3:R13": [
+        "-2*I*omega",
+        "-2*I*omega**3"
+      ],
+      "3:R23": [
+        "0",
+        "0"
+      ]
+    },
+    "centered": {
+      "convention": "omega=1,x=xi-1/2; c=sqrt(C), physical link amplitudes rescaled by physical omega",
+      "self_traces": {
+        "V": "2*(4*Y2 + 12*xi**2 + 3)/3",
+        "Q": "-2*(16*Y2*xi**2 - 2*Y2 - 8*Y4 - 24*xi**4 - 6*xi**2 - 3)/3"
+      },
+      "V_Gram": [
+        [
+          "48",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "24",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "8",
+          "-8"
+        ],
+        [
+          "0",
+          "0",
+          "-8",
+          "24"
+        ]
+      ],
+      "Q_Gram": [
+        [
+          "16*(Y2 + 3)",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "8*(4*Y2 + 3)",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "4*(4*xi**2 + 1)",
+          "-8"
+        ],
+        [
+          "0",
+          "0",
+          "-8",
+          "8*(4*Y2 + 9)/3"
+        ]
+      ],
+      "V_cross": [
+        "-6*I",
+        "0",
+        "2*I",
+        "-4*I"
+      ],
+      "Q_cross": [
+        "-6*I",
+        "0",
+        "2*I",
+        "-4*I"
+      ]
+    },
+    "kernel": {
+      "direction": "physical observer/coframe boost B01 with link correction -i omega Z_0B01",
+      "T": "2*y1/omega*I-Gamma(R01)",
+      "mixed_null": "T^* V_S(k)-V_S(k-q) T^* = homogeneous_coframe_jet(dv) + i omega*(V_0B01+V_1B01)/2",
+      "dv": "dv_r=R01*(S eta_r)+2 delta_r1*(S eta_0)",
+      "scope": "Mixed Hessian compatibility follows only at the owned full homogeneous coframe/link stationary background and with the proper second jet/root-moment cancellation. This is not an off-shell gauge identity or a finite-h forward-stencil theorem."
+    },
+    "active_order": [
+      "boost_trace",
+      "boost_traceless_11",
+      "boost_temporal_01",
+      "rotation_spatial_vector1"
+    ],
+    "active_V_gram_div_c2": [
+      [
+        "48",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "24",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "8",
+        "-8"
+      ],
+      [
+        "0",
+        "0",
+        "-8",
+        "24"
+      ]
+    ],
+    "active_Q_gram_div_c4": [
+      [
+        "16*(Y2 + 3*omega**2)",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "8*(4*Y2 + 3*omega**2)",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "8*(omega**2 + 2*omega*x + 2*x**2)",
+        "-8*omega**2"
+      ],
+      [
+        "0",
+        "0",
+        "-8*omega**2",
+        "8*(4*Y2 + 9*omega**2)/3"
+      ]
+    ],
+    "null_active_V_cross_div_c2": [
+      "-6*I*omega",
+      "0",
+      "2*I*omega",
+      "-4*I*omega"
+    ],
+    "null_active_Q_cross_div_c4": [
+      "-6*I*omega**3",
+      "0",
+      "2*I*omega**3",
+      "-4*I*omega**3"
+    ],
+    "averaging": "Independent spatial signs followed by permutations; Y2=sum yi^2,Y4=sum yi^4,Y22=sum_{i<j}yi^2 yj^2. No replacement of actual spectral/Riesz weights by scalar constants; averaging requires those weights share these symmetries.",
+    "Einstein": {
+      "full_covariant_linearized_G": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-omega**2/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-omega**2/2"
+        ]
+      ],
+      "self": "zero for every q",
+      "sign": "Fourier derivative=i q; standard G=Ricci-1/2 g R",
+      "action": "EH metric Hessian self-contraction is zero at flat background, despite nonzero all-row Einstein response"
+    },
+    "scope": "Exact continuum fullCAR16 symbol only. No finite-forward-stencil Ward, spectral sum, Schur inverse, seagull cancellation or full native critical root asserted. Actual proper second jet and source weights still belong to the native price."
+  },
+  "full_normal_blocks": {
+    "status": "PASS_EXACT_FULL24_BLOCKS_AND_3_KERNEL_SYMBOLS",
+    "creator_pin": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "full_basis": [
+      "scalar_boost",
+      "pseudo_scalar_rotation",
+      "polar_time_1",
+      "polar_anti_1",
+      "polar_time_2",
+      "polar_anti_2",
+      "polar_time_3",
+      "polar_anti_3",
+      "axial_time_1",
+      "axial_anti_1",
+      "axial_time_2",
+      "axial_anti_2",
+      "axial_time_3",
+      "axial_anti_3",
+      "tensor_0",
+      "tensor_1",
+      "tensor_2",
+      "tensor_3",
+      "tensor_4",
+      "pseudo_tensor_0",
+      "pseudo_tensor_1",
+      "pseudo_tensor_2",
+      "pseudo_tensor_3",
+      "pseudo_tensor_4"
+    ],
+    "matrix_sha256": "01145533010b55f394145e8210867eca90745fda1b77618996e4eaa7c70e0abc",
+    "full24_block_dimension": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "spectral_shift_identity": "a+3c-b=0; B_lapse=24*omega*b; C_lapse=24*(4b-c)",
+    "certified_inertia_if_owned_B_positive_C_negative": {
+      "positive": 3,
+      "negative": 21,
+      "zero": 0
+    },
+    "whole27_kernel_after_owned_mixed_Ward": 3,
+    "no_new_spectral_sum": true
+  },
+  "continuum_null_interval": {
+    "status": "PASS_INTERVAL",
+    "checks": [
+      "reuse actual root enclosure",
+      "rescaled full-CAR normal operator bound",
+      "Gaussian shell ratio",
+      "all omitted full-spectrum matrix entries bounded",
+      "full24 nonresonant spectral chamber",
+      "coupled vector block invertible",
+      "simplified normal quotient overlaps direct interval result",
+      "bare_null rational enclosure",
+      "U rational enclosure",
+      "scalar_normal rational enclosure",
+      "vector00 rational enclosure",
+      "vector01 rational enclosure",
+      "vector11 rational enclosure",
+      "vector_determinant rational enclosure",
+      "full_normal_reduced_null rational enclosure"
+    ],
+    "accepted_root_SHA256": "d81ad34e47829ed0361c9d954d744f2a41d816ee7fb666407e8817431bca3aa6",
+    "actual_price": "full fixed-beta heat+feedback+fixedRIGHT Riesz H+J+R; beta=2p^2,z=2^-20,M128,CAR16/reference128",
+    "normal_order": [
+      "L0",
+      "L2 (uncoupled)",
+      "Lv",
+      "Lr"
+    ],
+    "spectral_trace_convention": "centered xi=t+1/2; Y2=sum yi^2; Y4=sum yi^4; C=a_root/beta and physical links rescaled by omega=2pi",
+    "coefficients_enclosed": {
+      "bare_null": [
+        "-0.4442906",
+        "-0.4442905"
+      ],
+      "U": [
+        "0.00136970",
+        "0.00136972"
+      ],
+      "scalar_normal": [
+        "-1.106243",
+        "-1.106242"
+      ],
+      "vector00": [
+        "0.0054788",
+        "0.0054789"
+      ],
+      "vector01": [
+        "-0.0109577",
+        "-0.0109576"
+      ],
+      "vector11": [
+        "-0.748453",
+        "-0.748452"
+      ],
+      "vector_determinant": [
+        "-0.00422073",
+        "-0.00422071"
+      ],
+      "full_normal_reduced_null": [
+        "-0.4455993",
+        "-0.4455991"
+      ]
+    },
+    "tail_bound": "1e-25",
+    "spatial_shell_pairs": 120,
+    "sum_rectangle": {
+      "time": [
+        -8,
+        7
+      ],
+      "space": [
+        -7,
+        7
+      ]
+    },
+    "complete_proper_link_inertia": {
+      "positive": 3,
+      "negative": 21,
+      "zero": 0
+    },
+    "observer_link_kernel_dimension": 3,
+    "physical_real_cosine_Hessian": "half the complex base coefficient",
+    "comparison": "EH null self-Hessian is zero, but this complete conditional price has nonzero null self-response after every bounded normal correction.",
+    "limitations": [
+      "not a finite native Schur limit without the soft-channel rate",
+      "not a nonlinear generic joint-critical section",
+      "nonzero full-price response alone does not identify independent matter stress",
+      "not a full-D0 GR no-go or physical action selection theorem"
+    ]
+  },
+  "finite_soft_symbol": {
+    "status": "PASS_EXACT_FINITE_SOFT_SYMBOL",
+    "checks": [
+      "halfedge_creator_0",
+      "halfedge_creator_1",
+      "halfedge_creator_2",
+      "halfedge_creator_3",
+      "halfedge_D1",
+      "halfedge_D2",
+      "no_linear_Delta_term",
+      "quartic_Delta_term",
+      "all24_link_K1_Z_entries",
+      "null_K1_Z_raw",
+      "U2_DD_moment_00",
+      "U2_DD_vanish_00",
+      "weight2_exact_fold_00",
+      "U2_DD_moment_01",
+      "U2_DD_vanish_01",
+      "weight2_exact_fold_01",
+      "U2_DD_moment_02",
+      "U2_DD_vanish_02",
+      "weight2_exact_fold_02",
+      "U2_DD_moment_10",
+      "U2_DD_vanish_10",
+      "weight2_exact_fold_10",
+      "U2_DD_moment_11",
+      "U2_DD_vanish_11",
+      "weight2_exact_fold_11",
+      "U2_DD_moment_12",
+      "U2_DD_vanish_12",
+      "weight2_exact_fold_12",
+      "U2_DD_moment_20",
+      "U2_DD_vanish_20",
+      "weight2_exact_fold_20",
+      "U2_DD_moment_21",
+      "U2_DD_vanish_21",
+      "weight2_exact_fold_21",
+      "U2_DD_moment_22",
+      "U2_DD_vanish_22",
+      "weight2_exact_fold_22",
+      "all_nine_K2_ZZ_entries",
+      "scalar_gap_block",
+      "standard_gap_block",
+      "vector_gap_block",
+      "vector_elimination_identity",
+      "soft_singlet_schur",
+      "soft_standard_schur",
+      "metric_soft_common_source",
+      "metric_soft_anisotropy_cancel",
+      "continuum_null_schur"
+    ],
+    "reduced": {
+      "moments": "m0=sum w; m4=sum w*x^4; m22=sum w*y1^2*y2^2; Lj=sum L*{1,Y2,Y4,Y22}. Y2=sum yi^2,Y4=sum yi^4,Y22=sum_i<j yi^2*yj^2. L=(w_l-w_k)/(2*x+1).",
+      "A": "L0 + 2*m0",
+      "K1_links_Z": [
+        [
+          "-2*(L0 + 2*m0)",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-2*(L0 + 2*m0)",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2*(L0 + 2*m0)"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "8*L2/3",
+          "8*L2/3",
+          "8*L2/3"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-2*(L0 + 2*m0)",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2*(L0 + 2*m0)"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "8*L2/3",
+          "8*L2/3",
+          "8*L2/3"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "2*(L0 + 2*m0)",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2*(L0 + 2*m0)"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "8*L2/3",
+          "8*L2/3",
+          "8*L2/3"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "2*(L0 + 2*m0)",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2*(L0 + 2*m0)",
+          "0"
+        ]
+      ],
+      "K1_null_Z": [
+        [
+          "-I*(3*L0 + 4*L2 + 6*m0)/3"
+        ],
+        [
+          "-4*I*L2/3"
+        ],
+        [
+          "-4*I*L2/3"
+        ]
+      ],
+      "K2_ZZ": [
+        [
+          "-16*m4/3 + (3*L0 + 16*L4 + 6*m0 + 192*m22 + 112*m4)/3",
+          "24*m22 + 8*(2*L22 + 3*m22)/3",
+          "24*m22 + 8*(2*L22 + 3*m22)/3"
+        ],
+        [
+          "24*m22 + 8*(2*L22 + 3*m22)/3",
+          "-16*m4/3 + (3*L0 + 16*L4 + 6*m0 + 192*m22 + 112*m4)/3",
+          "24*m22 + 8*(2*L22 + 3*m22)/3"
+        ],
+        [
+          "24*m22 + 8*(2*L22 + 3*m22)/3",
+          "24*m22 + 8*(2*L22 + 3*m22)/3",
+          "-16*m4/3 + (3*L0 + 16*L4 + 6*m0 + 192*m22 + 112*m4)/3"
+        ]
+      ],
+      "gap_scalar": "16*(3*L0 + L2 + 6*m0)",
+      "gap_standard": "4*(3*L0 + 4*L2 + 6*m0)/3",
+      "gap_vector": [
+        [
+          "4*(L0 + 2*m0)",
+          "-8*(L0 + 2*m0)"
+        ],
+        [
+          "-8*(L0 + 2*m0)",
+          "8*(9*L0 + 4*L2 + 18*m0)/3"
+        ]
+      ],
+      "soft_singlet": "-12*L2**2/(3*L0 + L2 + 6*m0) + 32*L22/3 + 16*L4/3 + 128*m22 + 32*m4",
+      "soft_standard": "-16*L22/3 + 16*L4/3 + 32*m22 + 32*m4",
+      "T1_imag": "L2*(3*L0 + 4*L2 + 6*m0)/(9*L0 + 3*L2 + 18*m0)",
+      "null24": "L0 + 4*L2/3 + 16*L4/3 + 2*m0 - (L0 + 2*m0)*(9*L0 + 18*m0)/(12*L0 + 4*L2 + 24*m0)",
+      "full_null_limit_div_C": "L0 - 3*L2**2*(3*L0 + 4*L2 + 6*m0)**2/((9*L0 + 3*L2 + 18*m0)**2*(-12*L2**2/(3*L0 + L2 + 6*m0) + 32*L22/3 + 16*L4/3 + 128*m22 + 32*m4)) + 4*L2/3 + 16*L4/3 + 2*m0 - (L0 + 2*m0)*(9*L0 + 18*m0)/(12*L0 + 4*L2 + 24*m0)",
+      "scale": "For physical Fourier omega, C=c^2*omega^2, epsilon=h*omega. Metric and link variables both use dimensionless normal basis: physical link Omega=omega times this coordinate. K0=C*Kbar0; metric-soft t_h=C*epsilon*i*tau*ones+o(epsilon); soft S_h=C*epsilon^2*(ss*Psinglet+st*Pstandard)+o(epsilon^2). Full null Schur tends C*(null24-3*tau^2/ss). h times original observer response=-i*tau/(omega*ss)*ones.",
+      "scope": "Assumes the owned exact proper-root moments, U_h=c eta+O(h^2), fixed-beta finite-B weight and stable Riesz shell convergence with enough weighted moments to pass this Taylor limit. No root existence or dominated convergence is proved by the algebra checker; no physical GR closure. No d2/o2, fit, heat-time truncation, dropped grades, or independent matter source is used."
+    },
+    "creator_pin": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "halfedge": "D_h(p)=exp(i h sum p_r N_r/2) [(2i/h)sum eta_r sin(h p_r/2)(C_r-I_r)] exp(-i h sum p_r N_r/2). The transformed symbol has no O(h) term; Delta_h=sum 4sin^2(hp_r/2)/h^2 is scalar.",
+    "convention": "c=omega=1; x incoming time, outgoing x+1; each pair multiplies W=w_k+w_l, L=(w_l-w_k)/(2x+1). Outside c^2; replace L by c^2 Lphysical. avg independent signs of xi=x+1/2,y plus spatial permutations.",
+    "K1_field_Z": [
+      {
+        "label": "null",
+        "coeffs": [
+          [
+            "-I*(4*Y2 + 12*xi**2 + 3)/6",
+            "-I*(32*Y2*xi**2 + 4*Y2 + 3)/3"
+          ],
+          [
+            "-2*I*Y2/3",
+            "-4*I*Y2/3"
+          ],
+          [
+            "-2*I*Y2/3",
+            "-4*I*Y2/3"
+          ]
+        ]
+      },
+      {
+        "label": "obs1",
+        "coeffs": [
+          [
+            "I*(4*xi**2 + 1)",
+            "2*I*(32*Y2*xi**2 + 3)/3"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "obs2",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "I*(4*xi**2 + 1)",
+            "2*I*(32*Y2*xi**2 + 3)/3"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "obs3",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "I*(4*xi**2 + 1)",
+            "2*I*(32*Y2*xi**2 + 3)/3"
+          ]
+        ]
+      },
+      {
+        "label": "0:B01",
+        "coeffs": [
+          [
+            "-4*xi**2 - 1",
+            "-2*(32*Y2*xi**2 + 3)/3"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "0:B02",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-4*xi**2 - 1",
+            "-2*(32*Y2*xi**2 + 3)/3"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "0:B03",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-4*xi**2 - 1",
+            "-2*(32*Y2*xi**2 + 3)/3"
+          ]
+        ]
+      },
+      {
+        "label": "0:R12",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "0:R13",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "0:R23",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "1:B01",
+        "coeffs": [
+          [
+            "-4*Y2/3",
+            "-8*Y2*(8*xi**2 - 1)/3"
+          ],
+          [
+            "4*Y2/3",
+            "8*Y2/3"
+          ],
+          [
+            "4*Y2/3",
+            "8*Y2/3"
+          ]
+        ]
+      },
+      {
+        "label": "1:B02",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "1:B03",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "1:R12",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "(2*xi - 1)*(2*xi + 1)",
+            "2*(2*xi - 1)*(2*xi + 1)"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "1:R13",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "(2*xi - 1)*(2*xi + 1)",
+            "2*(2*xi - 1)*(2*xi + 1)"
+          ]
+        ]
+      },
+      {
+        "label": "1:R23",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "2:B01",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "2:B02",
+        "coeffs": [
+          [
+            "4*Y2/3",
+            "8*Y2/3"
+          ],
+          [
+            "-4*Y2/3",
+            "-8*Y2*(8*xi**2 - 1)/3"
+          ],
+          [
+            "4*Y2/3",
+            "8*Y2/3"
+          ]
+        ]
+      },
+      {
+        "label": "2:B03",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "2:R12",
+        "coeffs": [
+          [
+            "-(2*xi - 1)*(2*xi + 1)",
+            "-2*(2*xi - 1)*(2*xi + 1)"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "2:R13",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "2:R23",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "(2*xi - 1)*(2*xi + 1)",
+            "2*(2*xi - 1)*(2*xi + 1)"
+          ]
+        ]
+      },
+      {
+        "label": "3:B01",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "3:B02",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "3:B03",
+        "coeffs": [
+          [
+            "4*Y2/3",
+            "8*Y2/3"
+          ],
+          [
+            "4*Y2/3",
+            "8*Y2/3"
+          ],
+          [
+            "-4*Y2/3",
+            "-8*Y2*(8*xi**2 - 1)/3"
+          ]
+        ]
+      },
+      {
+        "label": "3:R12",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "3:R13",
+        "coeffs": [
+          [
+            "-(2*xi - 1)*(2*xi + 1)",
+            "-2*(2*xi - 1)*(2*xi + 1)"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "label": "3:R23",
+        "coeffs": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-(2*xi - 1)*(2*xi + 1)",
+            "-2*(2*xi - 1)*(2*xi + 1)"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      }
+    ],
+    "K2_ZZ_raw": [
+      [
+        [
+          "-(16*Y4 + 48*xi**4 - 72*xi**2 - 9)/36",
+          "-(256*Y2*xi**4 - 192*Y2*xi**2 + 256*Y4*xi**2 - 48*Y4 + 96*xi**4 + 12*xi**2 - 9)/9"
+        ],
+        [
+          "4*Y22/3",
+          "16*Y22/3"
+        ],
+        [
+          "4*Y22/3",
+          "16*Y22/3"
+        ]
+      ],
+      [
+        [
+          "4*Y22/3",
+          "16*Y22/3"
+        ],
+        [
+          "-(16*Y4 + 48*xi**4 - 72*xi**2 - 9)/36",
+          "-(256*Y2*xi**4 - 192*Y2*xi**2 + 256*Y4*xi**2 - 48*Y4 + 96*xi**4 + 12*xi**2 - 9)/9"
+        ],
+        [
+          "4*Y22/3",
+          "16*Y22/3"
+        ]
+      ],
+      [
+        [
+          "4*Y22/3",
+          "16*Y22/3"
+        ],
+        [
+          "4*Y22/3",
+          "16*Y22/3"
+        ],
+        [
+          "-(16*Y4 + 48*xi**4 - 72*xi**2 - 9)/36",
+          "-(256*Y2*xi**4 - 192*Y2*xi**2 + 256*Y4*xi**2 - 48*Y4 + 96*xi**4 + 12*xi**2 - 9)/9"
+        ]
+      ]
+    ],
+    "weight2_folded": [
+      [
+        "32*(x**2 - 3*y1**2)",
+        "-96*y1*y2",
+        "-96*y1*y3"
+      ],
+      [
+        "-96*y1*y2",
+        "32*(x**2 - 3*y2**2)",
+        "-96*y2*y3"
+      ],
+      [
+        "-96*y1*y3",
+        "-96*y2*y3",
+        "32*(x**2 - 3*y3**2)"
+      ]
+    ],
+    "U2_E2background": [
+      [
+        [
+          "4*d2*(4*Y2 + 12*xi**2 + 3)/3",
+          "32*d2*xi**2*(8*Y2 + 3)/3"
+        ],
+        [
+          "16*Y2*o2/3",
+          "256*Y2*o2*xi**2/3"
+        ],
+        [
+          "16*Y2*o2/3",
+          "256*Y2*o2*xi**2/3"
+        ]
+      ],
+      [
+        [
+          "16*Y2*o2/3",
+          "256*Y2*o2*xi**2/3"
+        ],
+        [
+          "4*d2*(4*Y2 + 12*xi**2 + 3)/3",
+          "32*d2*xi**2*(8*Y2 + 3)/3"
+        ],
+        [
+          "16*Y2*o2/3",
+          "256*Y2*o2*xi**2/3"
+        ]
+      ],
+      [
+        [
+          "16*Y2*o2/3",
+          "256*Y2*o2*xi**2/3"
+        ],
+        [
+          "16*Y2*o2/3",
+          "256*Y2*o2*xi**2/3"
+        ],
+        [
+          "4*d2*(4*Y2 + 12*xi**2 + 3)/3",
+          "32*d2*xi**2*(8*Y2 + 3)/3"
+        ]
+      ]
+    ],
+    "lattice_E2_DD": [
+      [
+        "4*xi**2*(8*Y2 + 3)*(4*xi**2 + 1)/9",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "4*xi**2*(8*Y2 + 3)*(4*xi**2 + 1)/9",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "4*xi**2*(8*Y2 + 3)*(4*xi**2 + 1)/9"
+      ]
+    ]
+  },
+  "finite_soft_interval": {
+    "status": "PASS_INTERVAL",
+    "checks": [
+      "accepted actual root",
+      "uniform homogeneous moment bounds",
+      "strict radial root derivative",
+      "strict transverse root Jacobian",
+      "degree8 Gaussian shell ratio",
+      "all seven omitted moment tails",
+      "normal scalar denominator is separated from zero",
+      "all three soft eigenvalues nonzero",
+      "physical_S2_singlet",
+      "physical_S2_standard",
+      "physical_T1_imag",
+      "bounded_normal_null",
+      "finite_soft_correction",
+      "actual_finite_full_null_limit",
+      "h_times_observer_response_imag"
+    ],
+    "accepted_root_SHA256": "d81ad34e47829ed0361c9d954d744f2a41d816ee7fb666407e8817431bca3aa6",
+    "coefficients_enclosed": {
+      "physical_S2_singlet": [
+        "-10.670715",
+        "-10.670714"
+      ],
+      "physical_S2_standard": [
+        "-35.813010",
+        "-35.813008"
+      ],
+      "physical_T1_imag": [
+        "-0.641005",
+        "-0.641004"
+      ],
+      "bounded_normal_null": [
+        "-0.4455993",
+        "-0.4455991"
+      ],
+      "finite_soft_correction": [
+        "-0.1155182",
+        "-0.1155180"
+      ],
+      "actual_finite_full_null_limit": [
+        "-0.3300812",
+        "-0.3300809"
+      ],
+      "h_times_observer_response_imag": [
+        "-0.0600715",
+        "-0.0600713"
+      ]
+    },
+    "tail_bound": "1e-35",
+    "homogeneous_root_Jacobian": {
+      "radial_derivative_upper": "-0.64",
+      "transverse_price_derivative_over_exp_lower": "0.012",
+      "cross_terms": "zero by parity",
+      "consumer": "uniform finite-grid C1 convergence plus local implicit continuation"
+    },
+    "moment_intervals": {
+      "m0": "[0.0002914482319502318459129545567458693156228740017201901650361319082414818495238979393474, 0.0002914482319502318459129545569976461982311988582240254722961896163945514577895871308951]",
+      "m4": "[-0.0008144566495309576905452414889940993685394308232081584443209412216436921795794594665919, -0.0008144566495309576905452414888961152457853375452602696476286858328210145517591013714118]",
+      "m22": "[-0.003924550858914903591184841406971603875624416743894321848720472264848765765406547871887, -0.003924550858914903591184841406943009936390428498692590069795747638336156667842011392264]",
+      "L0": "[-0.000003963279612317309227528829163192932150028887960460391390956499425233792869785419408882, -0.000003963279612317309227528828717712054435071125858258133329385356606271338038690418462146]",
+      "L2": "[-0.03096017274786988127927960153438146205635550952551923500573379667918511718479187559976, -0.03096017274786988127927960153390678725165064039306211466960520887368512827684295671287]",
+      "L4": "[-0.02768723883930985376723798309623727297439772926176451393531221028765193461887718077383, -0.02768723883930985376723798309571115921089509051070506479576780248828765722896159699026]",
+      "L22": "[0.01577099970853817560874143431188315599629185999210685578329728014638348784424526996272, 0.01577099970853817560874143431203730691198973634514879885315551328060536756810685657528]"
+    },
+    "spatial_shells": 164,
+    "sum_rectangle": {
+      "time": [
+        -9,
+        8
+      ],
+      "space": [
+        -8,
+        8
+      ]
+    },
+    "actual_price": "unchanged finite-B H+J+R at beta=2p^2,z=2^-20; full CAR16/RIGHT128",
+    "conclusion": "finite soft correction survives; full finite Schur and bounded continuum normal quotient have different limits; physical observer first response grows as 1/h",
+    "asymptotic_domain": "finite Brillouin grids with Gaussian high-mode domination; never an infinite fixed-h sine spectrum",
+    "limitations": [
+      "no uniform fixed-chart C1-bounded joint-normal section",
+      "does not exclude finite-h sections on shrinking charts",
+      "native edge h*Omega and physical Omega use different norms",
+      "not nonlinear joint-critical recovery or native action selection"
+    ]
+  },
+  "general_matter_source": {
+    "status": "PASS",
+    "checks": 44,
+    "checked_identities": [
+      "literal full two-tick J2 general star derivative",
+      "literal full two-tick J2 general scalar derivative",
+      "full16 Lorentz CAR (0,0)",
+      "full16 Lorentz CAR (0,1)",
+      "full16 Lorentz CAR (0,2)",
+      "full16 Lorentz CAR (0,3)",
+      "full16 Lorentz CAR (1,1)",
+      "full16 Lorentz CAR (1,2)",
+      "full16 Lorentz CAR (1,3)",
+      "full16 Lorentz CAR (2,2)",
+      "full16 Lorentz CAR (2,3)",
+      "full16 Lorentz CAR (3,3)",
+      "off-null full16 Clifford square",
+      "spatial-scale CAR scalar has no hidden volume factor",
+      "exact complete J2 has zero off-null spatial pressure row",
+      "minimal covariant kinetic density has nonzero pressure row",
+      "full16 oriented pseudoscalar square",
+      "available CAR volume is a separate central contraction",
+      "global coframe radial Ward forces zero mean at a full root",
+      "integrated mean metric trace is Gamma",
+      "own scalar Ward component 0",
+      "own scalar Ward component 1",
+      "own scalar Ward component 2",
+      "own scalar Ward component 3",
+      "actual regular to PF relative bound N=2,k=1,x",
+      "actual regular to PF relative bound N=2,k=1,y",
+      "actual regular to PF relative bound N=2,k=2,x",
+      "actual regular to PF relative bound N=2,k=2,y",
+      "actual regular to PF relative bound N=4,k=1,x",
+      "actual regular to PF relative bound N=4,k=1,y",
+      "actual regular to PF relative bound N=4,k=4,x",
+      "actual regular to PF relative bound N=4,k=4,y",
+      "actual regular to PF relative bound N=7,k=3,x",
+      "actual regular to PF relative bound N=7,k=3,y",
+      "actual regular to PF relative bound N=7,k=7,x",
+      "actual regular to PF relative bound N=7,k=7,y",
+      "complete PF macro cut m=1",
+      "exact Q-tail normalization m=1",
+      "complete PF macro cut m=2",
+      "exact Q-tail normalization m=2",
+      "complete PF macro cut m=3",
+      "exact Q-tail normalization m=3",
+      "complete PF macro cut m=4",
+      "exact Q-tail normalization m=4"
+    ],
+    "source_sha256": {
+      "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b",
+      "02_REGISTRY/research/sources/d0_local_null_scalar_einstein_2026-10-18/check_local_null_scalar_source.py": "9ddaeb45812ca65e63f39f7631593ed53e7097f5ddf102586f2376bcf987f40e",
+      "02_REGISTRY/research/A4D_GOLDEN_QUANTILE_CLOCK_SAME_CAR_VOLUME_BRIDGE_2026_10_18.md": "ddee771f3b55180f0144260b3fd9985fb735b7d34fa9dc0964a6f82493a98f76",
+      "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md": "cbb885152a664bef37086563aef6fa2b53710d05c1b5f3faeec4f4db779016a1",
+      "02_REGISTRY/research/A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md": "a8a4f74f19f31bb7e36850de40c75e5a6198c813159494f79d727047f5ffb44e",
+      "02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/check_full_lattice.py": "d772e589dcbbd55c421acbc35b3e3b55593ee2fcc5f4f429b1b7d0260071ecfa"
+    },
+    "actual_general_source": "DJ2/(nu*K)=sum_i pi_i [a_i Df_i+c_i Dq_i], a_i=528 z p^2 t^2(1-B_i) lambda_AF_prime(E_i)/R_i; c_i=528 z Bq_i[1/Q_i+(1-lambda_AF_i)/R_i]. Bq_i=8 sigma p^2 t^2(p+sigma p^2 t^2 q_i)(1-2b_i).",
+    "existing_limit": "The current finite J2 has actual regular-left weights pi_i=D_j/K. Its untransported weak query is f_h+lambda*q, with f_h=h^(-4)*Pstar,h. Only after the owned regular-to-PF and physical quadrature estimates does it tend to a constant multiple of integral(Pstar_density+lambda*q_scalar) dx. Its null pp-wave theorem is valid, but this is not the full covariant minimal scalar source away from q=0.",
+    "exact_off_null_control": "e=diag(1,s,1,1), links I, psi=amplitude*x0. All16 Clifford square = amplitude^2 I, f=0, q=amplitude^2, so complete J2 has Ds J2=0 for every admissible t. Covariant density J*q=s*amplitude^2 has Ds=amplitude^2.",
+    "positive_same_price_composite": "Use the SAME finite J2 with its actual regular weights pi_i=D_j/K. Query r_h=f_h/J=h^(-4)*Pstar,h/J and q_h on physical moving quantile samples T_(J/V)(word_address). Consume the regular-to-PF estimate and the existing golden quadrature; do not replace pi by PF mu as an exact equality. The weak limit after its owned fixed normalization is Gamma=A/V, A=integral[Pstar_density+lambda*J*q], V=integral J. Sampling f_h itself with J would double the gravity volume factor and is incorrect.",
+    "complete_mean_source": "D Gamma=(D A-Gamma*D V)/V. Actual cell motion and J-variation are both retained through the inverse quantile jet.",
+    "full_Euler_after_own_Cartan": "gamma_star*G_munu+lambda*(dmu psi*dnu psi-0.5*g_munu*q)+0.5*Gamma*g_munu=0; dmu(J*g^munu*dnu psi)=0; D_omega(e wedge e)=0. Here Pstar_density=gamma_star*J*R after the connection equation.",
+    "free_scale_consumer": "If global coframe scaling e->s e is genuinely admitted with links and psi fixed, A has degree 2 and V degree 4. Gamma has degree -2, so its own radial Euler forces Gamma=A=0. Then all full mean-price equations equal D A=0. If global scaling is fixed by a collar/calibration/volume constraint, this step cannot be used and a volume multiplier remains.",
+    "coupling": "kappa=-lambda/gamma_star. Exact literal G2/Hodge contraction gives gamma_star=-sgn(det e)/2 for c_star=1. Hence kappa=2*sgn(det e)*lambda; the old det(e)<0 null-frame family has kappa=-2*lambda. No pp-wave fit, independent matter normalization or empirical Newton constant is selected.",
+    "gamma_owner": "AF Palatini composition lines 153-168 explicitly defines f_h=gamma_star*P_P+O_C2(h), with gamma_star computed from c,G2,star,b. Full-lattice owner lines 94-100 fixes c=1 for its displayed density. Literal G2 and Hodge STAR are check_full_lattice.py lines 49-58, and their contraction lines 94-99. Orientation det T=-1 is explicitly retained; no gamma value is fitted here.",
+    "own_scalar_Ward": "nabla^mu T_munu=(Box psi)*partial_nu psi. The scalar Euler supplies its stress conservation; no independent T is assigned.",
+    "existing_exact_null_root_transfer": "The old exact pp-wave remains proved for the OLD inverse-PF word. It does not transfer automatically to the new regular/PF quantile programme: the old operands rho_AF^(-1)*f_hat and rho_AF^(-1)*q_hat produced bar_w*sum(Df_hat+lambda*Dq_hat), while changing to the scalar operands can leave sum_x w_x*(Df_hat+lambda*Dq_hat). Even at J=1,T=I,f=q=0, equality of profile values is insufficient. Exact finite transfer requires equality of the ENTIRE actual query jet together with its true weights, including inverse-PF normalization, or an independent source cancellation proof. The new general programme currently has the conditional C2 source limit and nonempty continuum Einstein-scalar solutions, not a claimed exact finite 40-row pp root.",
+    "finite_exact_price": "J2=-nu*528*K*sum_i pi_i[log Q_i+log R_i], pi_i=D_type(i)/K. With full canonical PF macro cut C_m and genuine Q_w=FR+RF tails, tau(Q_w)=2*p^3*mu(w); c_AF=2*p^3 is an actual fixed cylinder mass, not a fitted probability. If a different supported old cut is used, its own exact normalization/quadrature constant must be retained.",
+    "regular_to_PF": "For A_k subset A_N: x=F_(2N-k+8)/F_(2N+9), y=F_(2N-k+7)/F_(2N+9); PF minimal weights p^(k+1),p^(k+2). Relative discrepancy <=epsilon_reg(N)=[p^(2N+14)+p^(4N+18)]/[1-p^(4N+18)]. Hence every fixed diagonal H(theta) has C2 trace error <=epsilon_reg*||H||_C2, since actual trace coefficients and PF coefficients are field-independent and the total PF mass is 1.",
+    "normalized_weak_price": "Let a0=528*z*4*p^11/R0, R0=1-z*(L+p^6*L), L=4*p^3. Set Phi_t(r,q)=[j_t(r,q)-j_0]/(a0*t^2). Its Taylor jet is r+lambda*q+O_C2(t^2), with actual input-derivative bounds. For the specified full macro cut c_AF, compare (J2-J20)/(nu*K*a0*c_AF*t^2) to Gamma=A/V. Only field-independent constants are used; the original price/cut is unchanged.",
+    "C2_source_bound": "For the actual smooth chart, the normalized weak-price error is bounded by C_K,h*t^2 + E_geometry(h) + delta_m*max_(j<=2) Lip_u D_theta^j[(r_h+lambda*q_h) composed with T_(J/V)] + epsilon_reg(N)/c_AF*||Phi_t(r_h,q_h) composed with T||_C2 + C_compile*eta/t^2. Here r_h=h^(-4)*Pstar,h/J, delta_m<=2*p^floor(m/8), E_geometry(h)=O_C2(h) only under the owners smooth-chart assumptions, and all h,t-dependent derivative constants remain explicit. Add E_controller/sigma only if a SAME actual aggregation/source theorem proves that correction; no Shannon price is automatically added to J2. There is no leaf-count factor and no assertion pi=mu.",
+    "price_and_execution_scope": "This is the specified full feedback trace-log J2. SAME-history Shannon w=q is a separate binding and is not substituted for J2. Physical admission of the moving query/whole tuple, fixed native prior, controller and additional full-price terms remains conditional; no fixed-grid diffeomorphism theorem, exact generic finite roots, or native forcing is claimed."
+  },
+  "exact_star_normalization": {
+    "status": "PASS",
+    "checks": [
+      "literal_star_pin",
+      "literal_G2STAR_minus_epsilon",
+      "literal_null_orientation_T",
+      "arbitrary_coframe_curvature_01_01",
+      "arbitrary_coframe_curvature_01_02",
+      "arbitrary_coframe_curvature_01_03",
+      "arbitrary_coframe_curvature_01_12",
+      "arbitrary_coframe_curvature_01_13",
+      "arbitrary_coframe_curvature_01_23",
+      "arbitrary_coframe_curvature_02_01",
+      "arbitrary_coframe_curvature_02_02",
+      "arbitrary_coframe_curvature_02_03",
+      "arbitrary_coframe_curvature_02_12",
+      "arbitrary_coframe_curvature_02_13",
+      "arbitrary_coframe_curvature_02_23",
+      "arbitrary_coframe_curvature_03_01",
+      "arbitrary_coframe_curvature_03_02",
+      "arbitrary_coframe_curvature_03_03",
+      "arbitrary_coframe_curvature_03_12",
+      "arbitrary_coframe_curvature_03_13",
+      "arbitrary_coframe_curvature_03_23",
+      "arbitrary_coframe_curvature_12_01",
+      "arbitrary_coframe_curvature_12_02",
+      "arbitrary_coframe_curvature_12_03",
+      "arbitrary_coframe_curvature_12_12",
+      "arbitrary_coframe_curvature_12_13",
+      "arbitrary_coframe_curvature_12_23",
+      "arbitrary_coframe_curvature_13_01",
+      "arbitrary_coframe_curvature_13_02",
+      "arbitrary_coframe_curvature_13_03",
+      "arbitrary_coframe_curvature_13_12",
+      "arbitrary_coframe_curvature_13_13",
+      "arbitrary_coframe_curvature_13_23",
+      "arbitrary_coframe_curvature_23_01",
+      "arbitrary_coframe_curvature_23_02",
+      "arbitrary_coframe_curvature_23_03",
+      "arbitrary_coframe_curvature_23_12",
+      "arbitrary_coframe_curvature_23_13",
+      "arbitrary_coframe_curvature_23_23",
+      "positive_orientation_unit_curvature",
+      "negative_orientation_unit_curvature",
+      "literal_standard_Palatini_unit",
+      "creator_pin",
+      "full16_Clifford_trace_00",
+      "full16_Clifford_trace_01",
+      "full16_Clifford_trace_02",
+      "full16_Clifford_trace_03",
+      "full16_Clifford_trace_10",
+      "full16_Clifford_trace_11",
+      "full16_Clifford_trace_12",
+      "full16_Clifford_trace_13",
+      "full16_Clifford_trace_20",
+      "full16_Clifford_trace_21",
+      "full16_Clifford_trace_22",
+      "full16_Clifford_trace_23",
+      "full16_Clifford_trace_30",
+      "full16_Clifford_trace_31",
+      "full16_Clifford_trace_32",
+      "full16_Clifford_trace_33",
+      "coframe_inverse_transpose_null",
+      "old_displayed_inverse_is_not_valid_column_convention",
+      "density_dressing_same_gamma"
+    ],
+    "literal_star_AST_sha256": "eab41dd2fbc14213356d461dfe587f7f0443e95d0102c09c401d3a2a601ed467",
+    "creator_AST_sha256": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "unit": {
+      "face": "01",
+      "F": "B01=E01+E10",
+      "e": "I",
+      "Pstar": 1,
+      "R": -2,
+      "Palatini": -2
+    },
+    "identity": "Pstar=-(c_star/2) det(e) R(e,omega); normalized checker has c_star=1. Equivalently Pstar=-(c_star/2)*(1/2 epsilon_abcd e^a wedge e^b wedge F^cd).",
+    "density_gamma": "For J=abs(det e), gamma_star=-(c_star/2)*sgn(det e) on each nondegenerate orientation component. Positive density dressing preserves this sign.",
+    "old_local": "The literal old null-frame e has owned-diagonal representative T*e_null, det T=-1 and det e_null=+1. Thus its gamma_star=+1/2 relative to J R, and kappa=-2 lambda_mat, matching old Ric_uu=-2 Lambda_sigma s^2 without a pp-wave fit.",
+    "full16": "Tr16 Gamma(v)^2 /16=v^T eta v; no extra16 or128 enters gamma. With column coframe, v=e^-T Dpsi.",
+    "source": "The 36 exact arbitrary-coframe curvature coefficient identities imply the full16 coframe first-source identity and all independent curvature/connection sources by differentiation. This is a local algebraic normalization, not finite-root existence or native whole-price admission."
+  },
+  "GR_closed": false,
+  "native_execution_forced": false,
+  "generic_joint_critical_recovery": false
+}
