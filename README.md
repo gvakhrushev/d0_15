@@ -18,7 +18,8 @@ refinement limit**. This target remains open.
 | [Common research / Draft #334](02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md) | Retains the full source, history, matter, preparation, geometry and joint-root results with their scopes. Scoped obstructions change the consuming arrow; they do not erase the positive construction or establish a general GR no-go. |
 | [Native price comparison, §§8.8–8.9](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Derives the coherent amplitude/Gram event source. An exact full finite H+J+R mixed variation is zero where the same star stencil is nonzero; direct source identification fails. Book03's remaining named stack blocks are not yet one defined geometric functional. |
 | [Full-Lorentz stationary reduction, §§8.10–8.12](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Solves observer, all24 link and full preparation equations above every nearby constant metric. The same finite price retains its flat-shape potential. One spatial mode lifts all ten metric slots, but another has an exact metric obstruction, so this faithful section cannot cover all nearby metric fields. |
-| Next consuming proof | Establish an actual spatial stationary/source branch with its native preparation and complete price. The faithful branch's failed metric lift cannot be repaired by repeating observer elimination. Preserve the different positive spatial lift and all matter/history sources; the existing compiler and Cartan theorem consume a justified physical branch. |
+| [Full first metric lift, §§8.13–8.15](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | The existing real vacuum-plus-top preparation lifts all ten metric components on every Fourier mode at the owned gapped root. Its homogeneous internal source is solved with full reference128 retained. |
+| Next consuming proof | Solve the actual nonlinear preparation/source compatibility. The full q1100 diagnostic resolves13 linear internal equations and finds a second-order residual; other neutral frequencies and rigorous bounds remain. The first metric lift is now an input to this step. |
 
 The latest composition recovers the full metric and Lorentz transport from
 the actual raising operators, including the null directions of the curved
@@ -37,9 +38,10 @@ the Palatini source does not. The subsequent full-Lorentz reduction now
 solves the actual internal equations for constant metrics, retaining the
 flat-shape source. An exact nonzero-mode preparation equation prevents
 extension of that faithful section to arbitrary metric fields. This
-locates a branch obstruction, not a general D0/GR no-go. A different mode
-has a constructive all-ten metric lift with five internal equations still
-to solve; the old restricted-link classification does not cover it.
+locates a branch obstruction, not a general D0/GR no-go. The existing real
+vacuum-plus-top state now removes that first preparation obstruction on
+all Fourier modes at the owned root. Its actual source and second-order
+compatibility are retained as separate equations; full GR remains open.
 
 The original fixed-g/fixed-tau, all-ten unweighted raw h^-2/#216 task remains
 **OPEN with its exact terminal unchanged**. The [source-norm comparison](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md#5-точное-различие-двух-требований-к-пределу)

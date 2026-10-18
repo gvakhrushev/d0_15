@@ -1733,6 +1733,326 @@ source-preserving редукция на этой моде обязана реш�
 first-order lift не снимает §8.11 на другой моде, не является нелинейной
 joint family и не повышает conditional H+J+R до выбранной цены D0.
 
+## 8.13. Balanced memory is a stationary fibre, not a fixed faithful state
+
+Вход `7966c217` разделил homogeneous reduction и faithful spatial
+obstruction. Для следующего шага нужна настоящая другая подготовка того
+же источника. Она уже содержится в full-Lorentz source owner, §§4–5.
+В role-ordered exterior basis положим
+
+    E₀=span{|0>,|1>,|14>,|15>},
+    σ≥0, Trσ=1, σ₀₀=σ₁₅,₁₅, σ₁₁=σ₁₄,₁₄.       (67)
+
+Все комплексные coherences внутри E₀ допускаются при сохранении PSD.
+Эта spectrahedron имеет real dimension13. Для каждой из восьми
+occupied momenta можно независимо выбрать σ_k из (67):
+
+    ρ=(1/8) Σ_(k∈Ω) |k><k|⊗σ_k.                  (68)
+
+Это **104-dimensional convex family точных совместных стационарных
+подготовок в прежней однородной геометрии**. Здесь фиксированы веса1/8;
+более широкая классификация всех stationary densities не утверждается.
+
+Доказательство не переносит старый averaged boost test на каждый k
+по предположению. При homogeneous field jet D_k линеен в C,A=Cᵀ,
+а J_k=δD_k содержит linear и normal-ordered cubic terms. CAR даёт
+
+    {C_a,C_i C_j A_l}=δ_al C_i C_j,
+    {A_a,C_i C_j A_l}=δ_ai C_j A_l−δ_aj C_i A_l.
+
+Вместе с adjoint identities это сокращает quartic terms в
+X_k={D_k,J_k} по отдельности, поэтому X_k лежит в quadratic CAR space
+span{I,C_a A_b,C_a C_b,A_a A_b}. Для любого (67)
+
+    Trσ_k C_a A_b=δ_ab/2,
+    Trσ_k C_a C_b=Trσ_k A_a A_b=0.                 (69)
+
+Все E₀ coherences здесь невидимы: quadratic operators не соединяют
+разные basis vectors E₀. Следовательно, Trσ_k X_k=Tr16 X_k/16
+**на каждом k**. Полные homogeneous field rows совпадают с уже
+стационарными faithful rows. Nonzero Fourier field rows имеют нулевой
+trace с momentum-diagonal (68); полные preparation rows равны нулю,
+поскольку ΔP=εP на всей128-dimensional shell. Это сохраняет все24
+Lorentz-link rows и observer3. На spatial off-diagonal X_lk тождество
+quadratic degree не переносится: там quartic cancellation иная.
+
+Особенно важная точка этой существующей семьи:
+
+    χ₊=(|0>+|15>)/√2,
+    ρ₊=P_Ω⊗|χ₊><χ₊|/8,
+    C₀=(1/√8) Σ_(k∈Ω) |k,χ₊><ref_k|.             (70)
+
+C₀ использует восемь столбцов пространства reference128; все остальные
+120 столбцов и все16 grades остаются допустимыми вариациями. Rank8
+означает ранг базовой подготовки, а не урезание носителя. Γ(Ω)χ₊=0
+для любого traceless Ω, в частности всех proper Lorentz generators.
+Ни новая цена, ни физический принцип выбора χ₊ здесь не вводятся.
+
+## 8.14. A complete first preparation lift above every metric Fourier mode
+
+**Теорема.** В точке (70) на owned root window с уже доказанным
+внешним spectral gap любая real symmetric physical metric variation
+допускает первый подъём полного preparation equation.
+Это верно для произвольного поля на данном finite periodic lattice,
+а не только homogeneous или axial сектора. Связи, observer и reference
+сохраняются. Утверждение относится к первому preparation equation;
+все field-source equations рассматриваются отдельно в §8.15.
+
+Для nonzero Q требуется прямоугольное равенство
+
+    P_(Ω⊗16) X_Q C₀=0,
+    Q_shell δC=−R_Q X_Q C₀,                       (71)
+
+где Q_shell=I−P, R_Q=Q_shell(Δ−ε)⁻¹Q_shell — прежний signed resolvent.
+Нельзя заменять первую строку компрессией C₀*X_Q C₀=0. Сопряжённая
+мода требует также левые ограничения каждого occupied transfer.
+
+Полиномиальная P-to-P совместимость ниже верна для всех a>b>0, но
+внешний resolvent требует своего gap. Это существенная оговорка:
+при r=√2+√(2√2−1)>1 мода k=(1,−1,0,0) имеет ту же ε, что Ω,
+и inverse на I−P128 не существует. Такой параметр не входит в owned
+root window. All-parameter shell algebra не заменяет spectral-gap premise.
+
+**Смешанные моды.** Если Q=±e_i±e_j, i≠j, имеются два ordered shell
+transfers. Для actual stencil (60) их matrices удовлетворяют
+X_B=X_Aᵀ; −Q даёт conjugation, reverse endpoints — Hermitian adjoint.
+X меняет exterior degree только на0,±2, поэтому X₀,₁₅=X₁₅,₀=0.
+Отсюда два полных выхода X_Aχ₊,X_Bχ₊ принадлежат одному пространству
+
+    W={(v,w)∈Λeven(C⁴)²: v₀=w₀, v₁₅=w₁₅},
+    dim_C W=14.                                  (72)
+
+Это два общих scalar entries и по шесть grade2 entries каждого выхода;
+все odd outputs равны нулю тождественно. Связи дают нулевой vacuum
+scalar. Observer дополняет его, а конкретные13 link columns и один
+observer дают изоморфизм A(r):C¹⁴→W, r=a/b.
+
+Точные columns, rows и determinant coefficients находятся в
+[данных правого обратного](sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_CROSS_LIFT_DATA.json).
+Ненулевость на всём r>1 доказана не fixture/rank tolerance:
+
+| Представитель Q | monic gcd(det A, conjugate(det A)) |
+| --- | --- |
+| e₀+e₁ | (r−1)⁷(r²+1) |
+| e₀−e₁ | (r−1)⁹(r+1)(r²+1) |
+| e₁+e₂ | (r−1)⁷(r+1) |
+| e₁−e₂ | (r−1)⁹(r+1)² |
+
+Любой real zero det A был бы zero его coefficient conjugate и этого
+gcd; перечисленные factors строго положительны при r>1. Для forcing
+f=T_u δũ ответ конструктивен: выбранные retained coordinates равны
+−A(r)⁻¹ f|_14rows, остальные нулевые. Равенство в W доказывает ВСЕ
+32 output equations, включая левые, а не только выбранные14.
+
+Здесь u=bũ, δu=bδũ, и общий factor X равен b²/ℓ². При row convention
+U=Fη, physical q=UηUᵀ, для заданного V=δq можно взять
+δU=V F⁻¹/2, то есть δũ=V Ftilde⁻¹/(2b²). Observer columns записаны
+как δu_r=−B(ν)u_r modulo independent links. Если используются исходные
+observer coordinates, из найденных link coefficients вычитается
+(exp(iπQ_r/4)−1)B(ν); это именно ранее учтённая link part observer jet.
+Эквивалентно можно работать в n=e₀ gauge с boost coframe variations.
+
+Остальные смешанные моды получаются spatial3-cycle и real conjugation.
+Цикл имеет determinant+1 и сохраняет χ₊. Нечётная spatial permutation
+меняет знак верхней формы и для этого вывода не используется.
+
+**Осевые моды.** На Q=2e_i faithful full16 lift (64)–(66) уже даёт
+X=0, следовательно, (71) для χ₊. Тот же Cartan inverse работает на
+каждой из четырёх осей. Inactive coframes поднимают девять slots с
+V_ii=0; положительный CAR rotation S₀j даёт оставшийся slot:
+2u_iᵀηS₀j u_i=4(u_i)₀(u_i)_j≠0 при выборе ненулевой spatial component.
+Для i=0 это снова −4ab, для spatial i берём j=i. Это SO(4) rotation
+CAR, не подмена proper Lorentz link: настоящие links восстанавливаются
+через (64).
+
+На χ₊ axial kernel шире faithful kernel. В occupation decomposition
+вдоль u_i, с ζ=exp(−iπ/4)−1, запишем actual active28 jet как
+
+    J=[[A,B],[Bᵀ,D]],
+    A=β(v)+Z, D=−β(v)−Z+β(R),
+    B=v₀I+Γ(M)ᵀ+P₂.
+
+Здесь M — произвольная3×3 matrix, P₂ — pair creator на оставшихся
+трёх modes, Z — raising spatial cubic plus transpose. Полные16 outputs
+Xχ₊=0 эквивалентны
+
+    v₀=0, TrM=0, P₂ vac₃=Z top₃,
+    R=−(ζ̄−ζ)v/ζ−ζ̄ P₂ᵀtop₃/ζ.                  (73)
+
+Свободны traceless M8, v3, Z9: kernel dimension20 и rank8. При v=0
+получаем17 pure-link directions, а не удаление14 matter components.
+SO(4) CAR rotation сохраняет χ₊ и переносит normal form на всякий
+ненулевой actual u_i; invertible Cartan map возвращает все24 links.
+
+**Оставшиеся моды.** При Q≠0, Q∉Ω−Ω, occupied-to-occupied transfers
+отсутствуют, так что первая строка (71) пуста, а внешние amplitudes
+поднимаются тем же signed R_Q. При Q=0 equal-diagonal observer section
+§8.10 с M=I даёт ΔP=ε(q)P независимо от σ: это достаточный nonlinear
+preparation lift всех десяти constant metric components. Сумма этих
+Fourier lifts доказывает заявленную первую вариацию для любого real
+metric field. Никакой uniform continuum bound этим finite Fourier
+сложением не доказан. Полный source lift из него не следует.
+
+**Полный homogeneous internal source на actual root.** Для χ₊ этот
+случай решается сильнее первого preparation lift. Положим r=a/b и для
+real homogeneous links определим two-forms
+
+    M_j=Σ_r u_r∧Ω_r u_j, N_j=u_j∧Ω_j u_j.
+
+Vacuum grade2 response пропорционален ζM_j+ζ²N_j. Для χ₊ Hermiticity
+добавляет *_E conjugate этого выражения. Его зануление эквивалентно
+
+    B_j=M_j+(√2−1)N_j+*_E N_j=0.                 (73a)
+
+Real24×24 map B коммутирует с simultaneous spatial3-cycle на roles
+и internal indices. Его decomposition даёт три8×8 blocks: real и два
+complex-conjugate. Оба независимых determinant polynomials имеют
+degree16. Точные coefficient bounds показывают при r≥30
+
+    Σ_(j<16) |d_j/d₁₆| r^(j−16) <0.055
+    или <0.158 соответственно.
+
+По leading-term triangle inequality оба determinants ненулевые.
+Owned root enclosure d=0.0636351915943445350±10⁻¹²,
+o=0.0040167350432317253±10⁻¹² удовлетворяет 248d>3612o.
+При c=√(d−o), s=√(d+3o), b=(s−c)/4 это эквивалентно
+33c>29s, то есть r>30. Поэтому link map injective на actual root.
+Observer/coframe responses не имеют grade2; после зануления links
+тот же invertible observer Jacobian (54) даёт retained real rank27.
+Для этого дополнительного source результата область r≥30 существенна;
+all-r>1 theorem первого preparation lift выше шире.
+
+Используем normalized amplitude chart из восьми full16 vectors ψ_k
+в тех же восьми reference columns: real sphere dimension255.
+Нормируется только сумма Σ_k‖ψ_k‖²=1; отдельные веса momenta свободны.
+Именно их вариации дают observer dual directions. Fixed weights1/8
+из (68) относятся к исходной stationary fibre, а не ко всему IFT chart.
+Adjoint source vectors (X_y−mean)C₀ лежат в этих columns; rank27 даёт
+27 dual amplitude directions. На equal-diagonal section M=I,
+ΔP=ε(q)P, так что ВСЕ preparation Euler rows занулены точно,
+включая outside-chart/rank-birth/reference directions. Обычная IFT
+решает все27 retained internal source rows, оставляя228 свободных
+координат данного amplitude chart. PSD-interior density assumption
+не требуется. Momentum-diagonal density также зануляет все nonzero
+Fourier field rows; representation rows следуют из full Ward identity.
+Так получается настоящая local homogeneous internal stationary section
+через pure rank8 root.
+
+На ней reduced price снова буквально Γ(q)=F_price(G(q,n(q)))+γd(q),
+поскольку normalized R=ε(q) независимо от выбранной подготовки.
+Поэтому именно прежние homogeneous7+/3zero и flat-shape comparison
+§8.10 переносятся и сюда. Положительное решение внутренних уравнений
+само по себе не превращает эту finite price в Einstein–Hilbert law.
+
+## 8.15. The remaining source equations and a genuine second-order test
+
+Новый положительный переход снимает faithful spatial obstruction для
+существующей подготовки (70). Он не разрешает обращаться с материей
+как со скалярной плотностью. После signed Q-amplitude elimination
+настоящая bilinear form на preparation-compatible field jets равна
+
+    H_red(v,w)=Tr[(κ+ρ₊)({D_v,D_w}+{D,D_vw})]
+              +Tr[Dκ[X_v] X_w]
+              −2 ReTr[ρ₊ X_w R_Q X_v].             (74)
+
+Dκ содержит полный moving heat normalizer. Второй Dirac jet D_vw
+сохраняется. В shell W_k=κ(λ_k)I16+|χ₊><χ₊|/8 не скалярен;
+прежнее scalar-W сокращение curvature term и прежние Hessian signatures
+не переносятся. R_Q исключает ВСЮ128-dimensional spectral shell,
+а не только rank8 support C₀.
+
+На смешанной моде retained27 map имеет rank14, на осевой rank8.
+После удаления шести representation directions и сохранения всех десяти
+метрических остаются соответственно **13 и19 внутренних направлений**.
+На осевой моде explicit19 — это17 pure-link directions из (73) и два
+coframe directions δu_r=K_vu_r, Ω_r=δn=0, где u_i=(c,s), v⊥s,
+
+    K_v=[[0,vᵀ],[v,−c(vsᵀ−svᵀ)/|s|²]], K_vu_i=0. (75)
+
+Они metric-zero и независимы modulo representation: две boost parts
+независимы, а чистые links не являются frame transformation с δu=0.
+Inactive coframes, напротив, содержат физические metric variations и
+не могут целиком исключаться как внутренние переменные.
+
+Пусть I_α — genuine internal basis, L_A — все десять metric lifts.
+Подстановка (74) определяет A_αβ=H_red(I_α,I_β),
+B_αA=H_red(I_α,L_A), C_AB=H_red(L_A,L_B). После собственного paired
+elimination14/8 constraint directions с dual amplitude coordinates
+оставшиеся уравнения имеют вид
+
+    A z+B h=0, B* z+C h=0.                         (76)
+
+Первый source lift требует решения ПЕРВОЙ строки. Только доказанная
+обратимость A даёт reduced metric operator C−B*A⁻¹B. При singular A
+сохраняются его kernel и n*Bh=0. На nonresonant Fourier modes retained
+constraint rank0 и все27 внутренних field rows остаются; они также
+не исчезают из полной задачи.
+
+**Нелинейная проверка после первого подъёма.** Возьмём уже существующий
+rank-free Feshbach E(geometry,ε) и C в полной shell/reference128. При
+E₀=0 и expansions E=tE₁+t²E₂/2+…, C=C₀+tC₁+… необходимы
+
+    E₁C₀=0,
+    E₂C₀+2E₁C₁=0,
+    E₂=P X₂P−2P X₁R_QX₁P−ε₂P.                   (77)
+
+Здесь nonzero single Fourier wave имеет ε₁=0. В initially empty
+reference columns вторая строка требует E₁C₁,new=0; rank births не
+могут отменять residual в других active columns. Поскольку global E₁ для real ±Q variation Hermitian,
+Π_ker E₁ E₂C₀=0 — необходимое условие независимо от C₁. Далее требуется
+его совместимость с actual second field acceleration, не просто
+обратимость paired block первого порядка.
+
+Есть явный consumer этого условия для ±Q=±(e₀+e₁). При inactive occupied
+k=±e₂,±e₃ весь row/column E₁,k,* равен нулю. Диагональная часть любой
+linear field acceleration X_y₂,k={D_k,J_y₂,k} Hermitian quadratic по
+доказательству §8.13. Её grade2 output на χ₊ удовлетворяет
+r=*_E conjugate(r), где *_E — ориентированная Euclidean Hodge star
+на CAR two-forms. Поэтому
+
+    Π₋= (I−*_E conjugation)/2,
+    Π₋ P_grade2 [(P X₂P−2P X₁R_QX₁P)_kk χ₊]=0    (78)
+
+не может исправляться ни C₁, ни second field acceleration, ни ε₂.
+Это real-linear cokernel test, а не тождество, будто вся nonlinear
+path curvature quadratic. X₂ содержит и genuine second Dirac jet.
+
+**Первый source consumer уже вычислен, с численным статусом.**
+[Один полный q1100 diagnostic](sources/d0_labelled_golden_record_full_source_2026-10-18/diagnostic_even_memory_source.py)
+подставляет именно (70),(74) на owned root center, все4096 momenta,
+CAR16, field40 и actual ℓ=1/8. Ни старый thermal run, ни spectrum sweep
+не вызываются; извлекаются только pinned scalar/CAR definitions.
+В выбранном internal13 basis обнаружена обратимая A с inertia11+/2−,
+min|eigenvalue|≈0.07790925 и condition≈35.846. Получен явный
+source-compatible first field lift L−I A⁻¹B всех десяти metric slots.
+Ошибка внутренней линейной системы ≤1.81·10⁻¹⁴; это numerical residual,
+а не rigorous inverse/error bound на root enclosure.
+
+Для Fourier coefficient V₀₀=1, остальных V=0, с real ±Q partner
+этот подъём даёт в (78) norm≈717.58005 при k=±e₂ и≈521.90302 при
+k=±e₃. Здесь χ₊ нормирован и используется actual ℓ; common factor
+1/√8 отдельного reference column не меняет условие нулевого residual.
+Inactive-coframe control даёт ≤4.18·10⁻¹⁵. Полный Ward residual имеет
+relative norm≤1.9·10⁻¹⁶, тогда как удаление D_vw оставляет≈0.00477;
+подмена ρ₊ скалярной плотностью также меняет seagull. Поэтому этот
+расчёт потребляет настоящий second-jet source, а не прежнюю scalar-W
+формулу. [Результат и явный40×10 lift](sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_SOURCE_DIAGNOSTIC.json)
+сохранены как NUMERIC_DIAGNOSTIC.
+
+Ненулевой результат пока относится к данному fixed-Q first tangent.
+Он не является interval-certified obstruction на exact root. Кроме
+того, другие Fourier frequencies могут содержать internal zero modes;
+их отсутствие не доказано, а их смешение может менять (78). Полная
+nonlinear metric section или её общий запрет отсюда не следуют.
+
+Однако (78) зависит от выбранного first lift v. При одной и той же
+metric wave остаются13 complex internal first directions; их вклад
+в (78) квадратичен. Ненулевой residual одного произвольного right inverse
+не исключает весь metric fibre. Следующий конкретный шаг — довести полученный source lift до
+строгого вывода и разрешить (77)–(78) с остальными neutral frequencies
+и amplitudes. Простого повторения linear rank/right inverse недостаточно. Физический выбор цены/подготовки, independent matter/spin,
+refinement и глобальное D0→GR closure этим первым подъёмом не заявлены.
+
 ## 9. Проверка
 
 [Новый узкий checker](sources/d0_labelled_golden_record_full_source_2026-10-18/check_labelled_source.py)
@@ -1815,3 +2135,23 @@ independence шести представителей подтверждают а
 все internal Euler rows и nonlinear metric section в нём остаются false.
 Оба checker имеют read-only default и явный --output для receipt; все
 три новых receipts сверены с выводом отдельных default запусков.
+
+
+[Even-memory mixed-mode lift](sources/d0_labelled_golden_record_full_source_2026-10-18/check_even_memory_cross_lift.py)
+проверяет полный W14, обе ordered пары, real −Q/reversed-adjoint и четыре
+polynomial minors с conjugate gcd. [Receipt](sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_CROSS_LIFT_RESULT.json)
+содержит1470 exact identities; утверждение all a>b>0 касается shell
+compatibility. Внешний lift использует отдельно owned spectral gap.
+[Axial kernel](sources/d0_labelled_golden_record_full_source_2026-10-18/check_even_memory_axial_kernel.py)
+проверяет normal form (73), full16 rank8, complete20 kernel и explicit19
+internal directions, с phase controls и reference128.
+[Receipt](sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_AXIAL_KERNEL_RESULT.json)
+содержит179 exact checks, без thermal Hessian claim.
+[Homogeneous pure-memory reduction](sources/d0_labelled_golden_record_full_source_2026-10-18/check_even_memory_homogeneous_reduction.py)
+проверяет C₃-decomposition, leading-term determinant bounds, actual root
+ratio и observer Jacobian. [Receipt](sources/d0_labelled_golden_record_full_source_2026-10-18/EVEN_MEMORY_HOMOGENEOUS_RESULT.json)
+содержит169 exact checks. Amplitude IFT и all-mode composition изложены
+аналитически выше и независимо проверены. Все три checker используют
+read-only default и opt-in --output; historical suites не повторялись.
+Отдельный source diagnostic выше намеренно сохраняет численный статус;
+его residual не повышен до физического/no-go theorem.

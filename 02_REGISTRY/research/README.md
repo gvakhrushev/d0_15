@@ -49,6 +49,15 @@ construction lifts all ten metric slots at Q=2e1. Thus the faithful section
 does not cover all nearby metric fields; the latter mode still needs five
 internal source equations. These are branch-specific results, with no
 transfer of the old full stored Hessian or declaration of physical GR.
+Sections8.13–8.15 now use the existing real vacuum-plus-top preparation.
+It lifts all ten physical metric components through the complete first
+preparation equation on EVERY Fourier mode at the owned gapped root.
+The same rank8 state has a proved homogeneous rank27 source reduction;
+full reference128 and all grades remain. The actual spatial source has
+13/19 internal directions. A full-carrier q1100 diagnostic solves its
+linear internal equations but finds a second-order preparation residual.
+The next consumer is nonlinear compatibility, including neutral modes;
+this numerical fixed-frequency result is not a general obstruction.
 The [CAR/clock readout](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
 recovers the original metric, without an Einstein-frame rescaling. The
 [regular-natural-source classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)

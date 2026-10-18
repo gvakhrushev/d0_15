@@ -139,6 +139,51 @@ equations remain there. The next branch must address this spatial lifting
 boundary, keeping all physical metric directions, rather than repeating
 homogeneous elimination or assigning a new price.
 
+Balanced-memory continuation at `7966c217`: test the existing exact
+full-Lorentz rank8 endpoint and its stationary E0 family as actual alternatives
+to the now-obstructed faithful section. Use the full rectangular resonance
+equation P_full-shell X P_prepared=delta-epsilon P_prepared, including all16
+output grades, rather than compression onto the smaller prepared support.
+Inputs: full-Lorentz source §§4–5, balanced-memory path, and complete-source
+§§8.10–8.12. Root owns the same existing owner/consumers; assistants work
+read-only on distinct endpoint, E0-family and fixed-metric-kernel questions
+until a bounded write is assigned. Keep reference128, observer3, link24,
+positive-adjoint jets and all physical metric slots. Consumer: an actual
+spatial preparation/stationary branch capable of feeding the full source;
+decisive check is a general-parameter metric lift or a separating identity,
+not another numerical rank census. The positive Q=2e1 mode independently
+requires its five internal, physical-metric-zero directions and equations;
+inactive coframe12 must not be substituted for that internal block.
+
+Pure real even-memory continuation: the existing balanced E0 stationary
+family contains chi_plus=(vacuum+top)/sqrt2; test it with the full shell
+on the output side and reference128 retained. The integrator owns the
+same source owner and consumers. Bounded assistants own only
+check_even_memory_cross_lift.py, EVEN_MEMORY_CROSS_LIFT_RESULT.json and
+optional EVEN_MEMORY_CROSS_LIFT_DATA.json; separately
+check_even_memory_axial_kernel.py and EVEN_MEMORY_AXIAL_KERNEL_RESULT.json
+in the existing labelled-source directory. Exact consumer: an all-mode
+physical metric first lift, then the actual retained source and nonlinear
+preparation compatibility. Neither the support compression nor the old
+faithful scalar-density Hessian may replace the pure-state equations.
+No new price, physical selection or final GR claim is introduced.
+The homogeneous reviewer additionally owns only
+check_even_memory_homogeneous_reduction.py, EVEN_MEMORY_HOMOGENEOUS_RESULT.json
+and any small named determinant data in the same directory. The source
+assistant owns diagnostic_even_memory_source.py and
+EVEN_MEMORY_SOURCE_DIAGNOSTIC.json: one full-source q1100 consumer with
+its actual second-order residual, not a physical/nonlinear theorem.
+
+Consumed: the existing real even cat now has an exact complete first
+metric/preparation lift on every Fourier mode at the owned gapped root,
+and an actual homogeneous rank27 amplitude/source reduction. Its full
+spatial source has13 mixed/19 axial internal directions. The q1100
+full-carrier numerical consumer solves the13 linear internal equations
+and detects a nonzero second-order preparation residual. Next consume
+the explicit nonlinear compatibility and remaining neutral frequencies;
+do not promote this diagnostic to an all-branch no-go or repeat the
+completed first-lift calculation. Physical selection and GR remain open.
+
 ### Whole-source synthesis after the local vacuum result
 
 The user's next request is to try an end-to-end breakthrough, rather than
@@ -215,6 +260,8 @@ Smallest decisive checks: analytic proofs with all quantifiers and norm
 factors explicit; existing-owner/link consistency and the affected document
 guards. No new action, source fitting, claim promotion, agent dispatch or
 unchanged mathematical/Lean replay is part of this synthesis.
+
+
 
 ## Bounded continuation — 2026-10-17
 

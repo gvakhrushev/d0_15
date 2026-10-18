@@ -23,6 +23,29 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+At input `7966c217`, §§8.13–8.15 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+replace the fixed faithful preparation by its existing balanced stationary
+fibre. Independent momentum preparations give104 real parameters; the
+real vacuum-plus-top state provides a full first preparation lift of all
+ten metric components on every Fourier mode at the owned gapped root.
+The mixed-mode right inverse is exact for all a>b>0 on the128 shell;
+the external amplitude lift separately uses the owned spectral gap.
+At the actual root, a new rank27 amplitude theorem also solves all
+homogeneous internal source equations through this rank8 state.
+
+The spatial source now has an explicit consumer:13 genuine internal
+directions on a mixed mode and19 on an axial mode. Its full Hessian keeps
+matrix-valued matter, the second Dirac jet and the signed full-shell
+resolvent. The q1100 diagnostic solves the13 linear internal equations
+at the owned root center, then finds a nonzero second-order preparation
+residual. This is a numerical fixed-frequency result, not an all-branch
+no-go or a proved nonlinear metric section. The next step must solve the
+actual nonlinear compatibility with the remaining neutral frequencies,
+or establish its precisely scoped obstruction. Repeating the first metric
+lift cannot supply it. Physical price/preparation selection, independent
+matter, refinement and the original raw #216 closure remain open.
+
 At input `8c3a615c`, the same owner's §§8.10–8.12 perform the stationary
 reduction rather than leave it as a premise. A vacuum-grade tensor identity
 gives exact rank27 for observer3 plus all24 Lorentz links. Their dual-density
