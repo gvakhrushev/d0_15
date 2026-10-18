@@ -399,16 +399,25 @@ def chronological_and_spin():
     require(sp.simplify(contracted_square - step ** 2) == 0, "electric_bivector_enters_E2")
     contracted = sp.simplify(sp.diff(angle, e2).subs({alpha: a, e2: 1}))
     require(sp.simplify(contracted) != 0, "contracted_grade2_has_scalar_angle_jet")
-    # Density dressing multiplies every grade by the same square root.
-    # The chronological frame law multiplies grade g by chi**(1 - g/2).
+    # Owned grade law, A4D_NATIVE_MATTER_OBSERVER_PAIRING.md:226-228:
+    # on q(t)=exp(2t)q, W_k(t)=exp((4-2k)t) W_k. With chi=exp(2t)
+    # the scale is chi**(2-k). The square-root scale chi**(1-k/2) is not
+    # that law. Density dressing multiplies every grade by sqrt(chi).
     chi = Q(4)
     density_scale = sp.sqrt(sp.Integer(chi))
+    owned_grade_scale = {}
     for grade in (0, 2, 3):
-        frame_scale = sp.Integer(chi) ** (1 - sp.Rational(grade, 2))
+        owned_scale = sp.Integer(chi) ** (2 - grade)
+        root_scale = sp.Integer(chi) ** (1 - sp.Rational(grade, 2))
         require(
-            sp.simplify(frame_scale - density_scale) != 0,
-            "frame_law_differs_from_density_dressing_grade_%d" % grade,
+            sp.simplify(root_scale ** 2 - owned_scale) == 0,
+            "square_root_scale_is_not_a_second_owned_law_grade_%d" % grade,
         )
+        require(
+            sp.simplify(owned_scale - density_scale) != 0,
+            "owned_grade_law_differs_from_density_dressing_grade_%d" % grade,
+        )
+        owned_grade_scale[str(grade)] = str(sp.simplify(owned_scale))
     frozen = sp.simplify(
         (-2 * a * p ** 2 * sp.Rational(1, 4))
     )
@@ -420,6 +429,8 @@ def chronological_and_spin():
         "joint_factor_jet": str(joint),
         "grade3_coefficient": "0",
         "angle_support_masks": [0, 1, 3],
+        "owned_grade_scale": owned_grade_scale,
+        "density_scale": str(density_scale),
     }
 
 

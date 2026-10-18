@@ -45,6 +45,8 @@ def main():
     require(flags["spin_in_owned_source"] is False, "spin absent")
     require(flags["scoped_nogo"] != flags["stress_on_dressed_metric"], "xor")
     require(result["chronology"]["joint_factor_jet"] == "0", "factor jet")
+    require(result["chronology"]["owned_grade_scale"] == {"0": "16", "2": "1", "3": "1/4"}, "owned grade scale")
+    require(result["chronology"]["density_scale"] == "2", "density scale")
     require(result["raw_defect"]["dressed_einstein"] == "0", "dressed einstein")
     require(result["raw_defect"]["raw_einstein_at_0"][0] == "-3/4", "raw residual")
     require(result["grade0_only"]["spin_arguments"] == 0, "grade0 spin count")

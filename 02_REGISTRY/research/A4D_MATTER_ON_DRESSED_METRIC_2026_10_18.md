@@ -42,7 +42,7 @@ has, on the null chart, one nonzero coframe row, \(-2s^2/h\). At \(s=1/3\), \(h=
 
 The owned angle jet (9b) on the factor curve has metric partial \(-a p^2\neq 0\) and joint value \(0\). Mask 13 moves and is outside that linear form. The contraction \(e=B^T n\) at \(n=e_0\), \(G=I\), sees \(B_{01}\) and misses \(B_{12}\). The nonzero \(\partial_{E_2}c\) is one scalar, not a symmetric tensor on \(\widehat g\).
 
-The chronological frame law and the density dressing are different representations. At \(\chi=4\), grade \(g\) scales by \(\chi^{1-g/2}\) in the frame law and by \(\sqrt\chi\) in the dressing. Grades 0, 2 and 3 disagree. The zero factor jet does not transfer onto \(\widehat g\).
+The owned grade law is not the square-root scale \(\chi^{1-g/2}\). On \(q(t)=\exp(2t)q\), `A4D_NATIVE_MATTER_OBSERVER_PAIRING.md:226-228` gives \(W_k(t)=\exp((4-2k)t)W_k\). With \(\chi=\exp(2t)\) the scale is \(\chi^{2-k}\). Density dressing multiplies every grade by \(\sqrt\chi\). At \(\chi=4\) the owned scales on grades 0, 2 and 3 are \(16\), \(1\) and \(1/4\), and \(\sqrt\chi=2\). All three differ. The square of \(\chi^{1-g/2}\) recovers \(\chi^{2-g}\), so that older expression is the square root of the owned weight, not a second law. The zero factor jet does not transfer onto \(\widehat g\).
 
 A rational spacetime-dependent profile of the same representative type as dressed-memo §4, not the profile \(\chi=e^{2ku}\),
 
@@ -67,7 +67,7 @@ The checker raises `StressRefusal` on each operational attack below. The note do
 3. Copy \(G_{\mu\nu}\) into \(T_{\mu\nu}\), including the zero tensor of \(\widehat g\), the raw tensor, and a nonzero multiple. The checker raises `stress_defined_as_einstein`.
 4. Infer equal sources from \(g_{\mathrm{raw}}(0)=\widehat g\). The Einstein tensors differ at that point.
 5. Add \(\int\sqrt{|g|}(\partial\psi)^2\), or choose a measure that pushes the raw defect onto \(\widehat g\). Both raise. The factor \(\bar\mu/\mu\) is the already fixed dressing, not a measure selected here.
-6. Identify the chronological frame law with the density unitary. At \(\chi=4\) the grade weights differ, so the cancellation does not land on \(\widehat g\).
+6. Identify the owned grade law with the density unitary. At \(\chi=4\) the scales \(16\), \(1\), \(1/4\) differ from \(\sqrt\chi=2\), so the cancellation does not land on \(\widehat g\).
 7. Read the two-site Fraction witness as admission of tape, cost or clock. The dressed-checker scope still refuses that binding.
 8. Recompute \(\Lambda\) or the 40-row stationarity, or call the finite certificate a derivation of GR. Neither is done. `gr_derived` is false.
 
