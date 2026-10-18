@@ -105,10 +105,16 @@ respectively. Since `z/(1-z/2)>0`, the unspecified smooth lift can give any real
 
 ## 4. G0 disposition and exact boundary
 
-The primary books determine the finite support split and the feedback formula. For that constrained operator component, all mathematical tangents, its complete first source, its isolated stationary equations, and its exact representation redundancy are now explicit. What remains unowned is the pullback from the common geometric/matter state `(q,D,b,m)` and its retained history to the admitted `P,U,z` variation, together with the corresponding refinement/composition law. The operator law alone cannot choose that pullback or transfer its derivative to the native metric/matter source.
+The primary books determine the finite support split and the feedback formula. For that constrained operator component, all mathematical tangents, its complete first source, its isolated stationary equations, and its exact representation redundancy are now explicit. A separate Lean bridge also identifies the blank one-tick `fullStep` branch masses with the owned golden cylinder weights. A positive normalized two-tick control with the same gate marginals but a different joint weight proves that this first tick does not determine the multi-tick law. What remains unowned is the pullback from the common geometric/matter state `(q,D,b,m)` and its retained history to the admitted `P,U,z` variation, together with the corresponding refinement/composition law. The operator law and one-tick gate alone cannot choose that pullback or transfer its derivative to the native metric/matter source.
 
 This is a scoped G0 boundary, not a completeness proof for every D0 primitive owner and not a no-go for all of D0. It does not establish the total cost, matter Ward identity, native stationarity, a coupled curved root, soundness/recovery, or GR. The existing parent obligations remain open.
 
 ## 5. Reproducible controls
 
 `certificates/a4d_book03_feedback_variation_check.py` pins both primary books and checks the complement constraint and tangent, the full `P,U,z` product rule, the constrained source contraction, the `Q`-stabilizer redundancy, and the equal-base/different-source witness. The exact checker validates finite matrix controls only; the all-dimensions tangent characterization and Euler equivalence are proved analytically above. Ordinary and optimized runs must produce byte-identical output.
+
+## 6. One-tick golden gate and the two-tick boundary
+
+`D0.Research.GoldenCylinderOneStepBridge.blank_gate_matches_one_step_cylinders` proves that the two recorded squared amplitudes of the existing blank-input `fullStep` are exactly `cylWeight [true] = φ⁻¹` and `cylWeight [false] = φ⁻²`; `p = φ⁻¹` follows from the gate's owned equations `a²=p` and `p+p²=1`. No probability is fitted. The theorem only identifies the one-step marginal.
+
+The same module constructs a strictly positive normalized joint table on two readouts. Each coordinate has exactly the gate marginals `(p,p²)`, yet its `true,true` mass differs from the product cylinder by `p⁴/2`. Thus one-step agreement cannot establish independent repeated refinement or the full event-history law. The table is a mathematical counterexample to that inference, not a claim that this correlated completion is physically admitted by D0. A native multi-tick record/refinement map remains necessary.
