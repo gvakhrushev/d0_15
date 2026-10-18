@@ -14,6 +14,14 @@ now exactly the mixed detector/embedding source; no new action is chosen.
 The supplied Λ is preserved as a conditional coefficient, with its
 stationary-background and controlled-IR boundaries.
 
+Newest positive bridge: [§7.5](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+derives AF weights from the inherited fine-history entropy equation and
+solves the full off-shell preparation profile. Its actual reduced price
+has an exact invertible source map to star, giving conditional nonlinear
+vacuum closure and the same full10 IR seed at fixed t. Physical LEFT
+fine-leaf/history-price binding remains an explicit execution premise;
+coarse prefix/right-archive conservation does not replace it.
+
 Latest same-price consumer: [§7.4](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 uses exact fixed-t vacuum equations rather than demanding a t(h) law.
 The full local40-row AF family now has explicit C² metric recovery and

@@ -12,6 +12,42 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: solve the inherited-history weight consumer
+
+Input `4baad450`. Previous turn made progress: exact fixed-t recovery,
+quantitative C² metric convergence and an actual preparation compensator
+were published. Root now computes the full inherited-record source on
+that SAME configured carrier. Read-only assistants inspect actual AF
+pointer/projector identity, complete-history variations and the nonlinear
+weighted-Palatini consumer. Root owns the existing source/synthesis/brief
+and one decisive new calculation if needed. No new measurement, action,
+state prior or observer restriction is selected. The test must distinguish
+old prefix masses from within-prefix AF weights, and retain the full
+complement and reference128. A candidate history closure succeeds only
+if its actual retained effects constrain the geometric Q weights, with
+all conditional preparation directions and the source included.
+
+Consumed in full-source §§6.7–6.10 / strategic §7.5: an inherited LEFT
+fine-leaf cut derives a uniform positive terminal probability profile
+from its own source, including both cost-block masses. Actual Fibonacci
+embeddings then fix spatial Q weights without a τ prior. The explicit
+off-shell balanced profile gives a scalar full POVM gradient and
+Γ=logΣ_i[1+2exp h(e_i)]/logφ. The existing radial M-intertwiner proves
+full vacuum Euler equivalence to star at fixed t; its correction preserves
+the full10 IR seed, but not proportionality of finite Hessians. Fixed-collar
+root transfer and unrestricted-tangent/kernel statements are separated.
+Scene eigenbranches and physical old-effect/price binding remain open.
+The opposite unselected-weight branch has exact weighted metric/scalar
+equations with T=2w j_w. One bounded checker covers the new AF embeddings,
+source, all-preparation POVM cancellation and actual10D retained-work
+control; no historical suites are replayed. Same Draft/branch/owner.
+Parallel disjoint intake `c207066e..94374b0a` was preserved by rebasing
+this unpublished integrator commit onto its published head. Its CAR16
+null tomography and genuine Shannon-vs-KL source correction are consumed
+in strategic §7.5; neither its scientific owner nor checker is rewritten.
+Uniform fine-leaf stationary probabilities are not unequal PF reference
+weights. Their coarse relation is derived from actual AF descendants.
+
 ### 18 October: consume fixed-t full-root recovery and the AF weight mode
 
 Input `0e7ad4d9`, followed by the user's explicit AF–Palatini limit

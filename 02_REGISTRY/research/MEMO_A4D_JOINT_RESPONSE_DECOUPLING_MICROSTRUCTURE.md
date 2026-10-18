@@ -2,6 +2,24 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
+**New positive bridge, input `4baad450`:** [full-source §§6.7–6.10](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+derive the missing weight equation and an explicit OFF-SHELL stationary
+profile for the complete inherited-fine-history plus five-cut law. Its
+full POVM gradient is scalar; Γ=logΣ_i[1+2exp h(e_i)]/logφ solves all
+preparation tangents on the balanced scene submersion branch, with the
+same reference128. An exact invertible radial source map makes its
+full geometric vacuum equations equivalent to the existing star equations.
+Fixed-t root recovery and the all10 IR Schur seed now have a SAME-price
+consumer; no EH vertex or τ prior is inserted. The required remaining
+execution premise is actual inherited LEFT fine-leaf/effect/price binding.
+Coarse prefixes or a preserved right marginal do not establish it. If
+that binding fails, the retained scalar has the explicit weighted-Palatini
+metric/scalar equations and matter trace condition T=2w j_w. See the
+[integrated §7.5](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md).
+This is conditional nonlinear vacuum closure of the specified complete
+cut, not physical D0→GR, a classification of eigen-preparation branches,
+or elimination of whole-work/matter/global sources.
+
 **Latest same-price consumer, input `0e7ad4d9`:** the user's AF–Palatini
 limit has been consumed beyond its sufficient t²=h schedule. Exact vacuum
 Euler equivalence needs only fixed t>0. The [full-lattice §5.2](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)

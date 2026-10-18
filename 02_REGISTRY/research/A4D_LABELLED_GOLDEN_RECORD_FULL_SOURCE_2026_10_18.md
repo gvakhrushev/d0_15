@@ -546,6 +546,331 @@ mass всех cost/PF blocks entropy equations требуют uniformity все�
 золотая матрица сама не фиксирует physical probabilities произвольной
 разрешённой подготовки равными своему canonical PF reference.
 
+### 6.7. Веса из собственной полной истории, включая массы обоих AF-блоков
+
+Продолжение от `4baad450`, 18 октября. Условие §6.6 можно усилить:
+не нужно заранее фиксировать массы cost-секторов или постулировать
+traciality физической подготовки. Достаточен ТОЧНЫЙ следующий вход
+исполнения: ранее измеренный полный Y-cut различает все диагональные
+path leaves уровня A_N, его projectors совпадают с наследуемыми AF
+проекторами, и Y сохраняется также на неудаче последующего five-cut.
+Его настоящая цена входит в тот же SAME-history закон §7. Это явная
+предпосылка, не заявление, что нынешние пять флагов уже измеряют Y.
+Нужны также эти реальные допустимые preparation variations. Само
+отождествление AF level с variable-cost stopping time не переносит
+сюда цену: если physical Y получен остановкой raw word, его полный
+normalizer/stopping-source должен пройти тот же binding отдельно.
+
+Обозначим `d_N=a_N+b_N=F_(N+3)` — число этих исходов, НЕ размер
+GNS `a_N²+b_N²`. На f=0 balanced five-cut имеет одну и ту же law
+на каждом Y, поэтому буквально
+
+    q_(i,F)=r_i(1−s_*), q_(i,ab)=r_i s_* p_a/2,
+    S_all=H(r)/ℓ+K/ℓ, K=log(1+2 exp h(p²)).             (13e)
+
+На полной положительной ветви свободные normalized preparation
+variations покрывают simplex r. Разность двух строк её собственного
+уравнения равна `log(r_j/r_i)/ℓ=0`. Следовательно
+
+    r_i=1/d_N для ВСЕХ i, включая READY и PENDING.        (13f)
+
+Это решение источника, не выбранный prior. Canonical PF probabilities
+не являются этим конечным root: перенос массы ε из pending leaf
+`p^(N+2)` в ready leaf `p^(N+1)` даёт `DS_all=−ε`. Нельзя объявлять
+две block masses фиксированными только ради старой τ.
+
+Root (13f) реализуется на том же полном GNS центральным вектором
+
+    ζ_N=d_N^(−1/2)(p^(−(N+1)/2) I_a ⊕ p^(−(N+2)/2) I_b),
+    τ_N(ζ_N*ζ_N)=1.
+
+В исходной тонкой алгебре используется полный вектор
+`[sqrt(s_*)Π/p³+sqrt(1−s_*)(I−Π)/sqrt(1−p⁶)] α⁶(ζ_N)`.
+Тождество activation owner `τ(Π α⁶(A))=p⁶τ_N(A)` доказывает
+нормировку и одинаковый r_i в обеих ветвях. Bimodule frame
+intertwines старые left/right actions, поэтому Π коммутирует с
+унаследованными leaf projectors. Диагональный E и его full Julia
+record также с ними коммутируют. Старая метка действительно может
+пережить и успех, и неудачу; нового внешнего conditioning здесь нет.
+
+Полнота источника сильнее diagonal simplex проверки. Буквальный
+POVM-gradient полного cut в этой точке равен
+
+    G_all=[log d_N−log(1−s_*)−1] I.                     (13g)
+
+Следовательно зануляются ВСЕ нормированные preparation tangents,
+включая off-diagonal, entangling, rank и reference128 направления.
+Scene lift и h′(1/2)=0 работают как в §§4–5. Тождество не требует,
+чтобы произвольные другие состояния с теми же диагоналями были tracial.
+
+Теперь выводим geometric weights, вместо назначения τ. Пусть
+`k=m+2≤N`, `r=N−k`; Q_w двух продолжений FR/RF слова стоимости m
+имеет rank2 в READY block A_k. Настоящая Fibonacci inclusion даёт
+
+    x_(k,N)=F_(r+2)/F_(N+3), y_(k,N)=F_(r+1)/F_(N+3),
+    μ_N(Q_w)=2x_(k,N) для КАЖДОГО w.                    (13h)
+
+Это точный подсчёт потомков terminal leaves; off-diagonal coherences
+его не меняют. Поэтому вес ячейки есть `2x_(k,N) N_(m,x)` — настоящие
+counts, с ОДНИМ общим положительным множителем. Все finite weighted
+star rows и root family прежнего владельца переносятся без подгонки
+пространственных весов. Полный геометрический источник на f=0 равен
+`s_*p²t²Σ_w μ_N(Q_w) Df_w`.
+
+Более того, при q=−p² точная формула Бине даёт
+
+    x_(k,N)/p^(k+1)=(1−q^(r+2))/(1−q^(N+3)),
+    y_(k,N)/p^(k+2)=(1−q^(r+1))/(1−q^(N+3)).            (13i)
+
+Для Q_w относительная ошибка относительно canonical τ не больше
+`[p^(2r+4)+p^(2N+6)]/[1−p^(2N+6)]`. Она равномерна по всем w.
+При r→∞ golden coefficient выводится из finite preparation equations
+и refinement; физическая τ не была предпосылкой. Spatial weights
+фиксированы точно уже при каждом конечном r. Нормализация этого
+источника потребляет прежнюю C² recovery §5.2 full-lattice owner.
+
+В частности, χ-мода §6.5 больше не сохраняет такой полный cut:
+каждый Q_w — сумма РЕАЛЬНО измеренных fine leaf projectors. На
+строго положительной ветви (13f) фиксирует его вероятность, а Hessian
+старой энтропии по probabilities есть `−Σ_i(Dr_i)²/(ℓ r_i)`.
+Более конкретно, для Q_w внутри Π_w положим
+`q=μ_N(Q_w)/μ_N(Π_w)`, `c=(1−qχ)/(1−q)`. Компенсация (13j)
+сохраняет prefix mass и f=0, но её полный fine-history source равен
+`dS_all/dχ=−μ_N(Q_w)log(χ/c)/ℓ`. Он исчезает только при χ=c=1;
+вторая производная там `−μ_N(Q_w)/[ℓ(1−q)]<0`.
+Это замкнутое математическое решение weight consumer при указанном
+inherited-effect/price binding. Его physical исполнение и выбор этой
+ветви не выводятся из самого entropy maximum; граничные preparation
+ветви с нулевыми вероятностями не классифицированы.
+
+### 6.8. Какие именно архивные данные достаточны
+
+Более грубый старый prefix не заменяет fine cut из (13e). Пусть
+`Π_w=1_w`, `Q_w=1_wFR+1_wRF`, `R_w=Π_w−Q_w` и `r₀=2p³`.
+Тогда оператор
+
+    T=Σ_w[sqrt(χ_w)Q_w+sqrt(c_w)R_w]+Π_out,
+    c_w=(1−r₀χ_w)/(1−r₀)>0,
+    τ(T²Π_w)=τ(Π_w), τ(T²)=1                           (13j)
+
+сохраняет каждую prefix probability, но меняет Q_w weight в χ_w раз.
+Все более грубые diagonal cylinders также сохранены. Это НЕ сохраняет
+весь fine right archive: right Q_w expectation у TΩ меняется. Поэтому
+одинаковый prefix entropy не даёт (13f); вдоль этих χ directions
+его источник нулевой, а стационарность остальных строк ещё требуется.
+
+Общий конечный критерий прост: вероятности старого POVM {A_j}
+определяют TrρQ для ВСЕХ ρ тогда и только тогда, когда Q лежит в
+их real linear span. Если нет, `H=Q−P_span Q` имеет `TrH=0`,
+`TrHA_j=0`, `TrHQ=TrH²>0`; при faithful ρ достаточно малые ρ±εH
+остаются положительными. Для prefix PVM строгая под-проекция Q_w
+не лежит в этом span; для full fine path PVM (13e) лежит.
+
+Нельзя также вывести canonical LEFT data state лишь из сохранения
+всего RIGHT архива при наличии рабочих регистров. В уже предоставленном
+addressed G/CNOT class есть точный retained-word контроль на настоящем
+`A₁=M₂⊕M₁`, `Ωτ=p(|00>+|11>)⊕p sqrt(p)|ss>`, с fresh work W=0.
+В M₂ block исполняем `CNOT_(W→L) G_W CNOT_(L→W)`, identity на M₁.
+Все outputs остаются. Right marginal по-прежнему `p²I₂⊕p³I₁`,
+а left probabilities стали `(2p³,2p⁴,p³)` вместо `(p²,p²,p³)`.
+Такой counter опровергает общую reduced-channel unitality, но не
+утверждает, что штатный star word выполняет этот preprocessing.
+Его work/preparation/record price сохраняет собственный источник.
+Physical адресность двух CNOT placements остаётся условием исходного
+compiler, не новым доказанным v8 opcode.
+
+У САМОГО диагонального штатного W_E есть более узкий положительный
+инвариант: при [E,Q]=0 full four-copy formula и bimodule V дают
+`[W_E,α⁶(Q)]=0`. Prepared Π также коммутирует с α⁶(Q). Поэтому
+этот record сохраняет входной Q marginal и все его field derivatives;
+он не выбирает исходный marginal. Нельзя использовать этот invariant
+одновременно как закон всех addressed preprocessing words. Условие
+(13e) связывает конкретные прошлые outcomes с Q; ни общий commutant,
+ни одно имя «архив» его не заменяет.
+
+### 6.9. Точное нелинейное уравнение выжившего weight sector
+
+Пока (13e) не предъявлено для physical same-history programme,
+нужно сохранить действительный w=χ>0. В typed coframe domain §§8.5,
+(30a), F=e⁻¹; поэтому g=eᵀηe и g_χ=χ⁻¹g прежней семьи.
+Здесь больше не требуется альтернативная трактовка raised coefficients.
+Предел ТОГО ЖЕ weighted-star источника имеет вид
+
+    S_geo=½∫w ε_abcd e^a∧e^b∧F^cd
+         =S_P(ẽ,ω), ẽ=sqrt(w)e, ĝ=w g.                 (13k)
+
+Ненулевой общий coefficient вынесен в источник, не выбран заново.
+Это точное нелинейное тождество. Independent connection equations дают
+`ω=ω_LC(ẽ)`, `T^a(e)=−½dlog w∧e^a`. После их устранения
+
+    S_geo=∫sqrt|g|[wR+3(∂w)²/(2w)−3□w].               (13l)
+
+Последний член — boundary; допустимые compact-supported variations
+его зануляют. По g^{μν} и w получаем все10 и scalar строки
+
+    E_μν=wG_μν+(g_μν□−∇_μ∇_ν)w
+          +3/(2w)[∂_μw∂_νw−½g_μν(∂w)²],
+    E_w=R+3(∂w)²/(2w²)−3□w/w,
+    g^{μν}E_μν+wE_w=0.                                (13m)
+
+Следовательно это не произвольно добавленная одиннадцатая независимая
+геометрическая строка. Identity следует из exact Weyl symmetry
+`w→exp(2σ)w,e→exp(−σ)e,ω fixed`. Такая compensated form обычно
+называется Brans–Dicke ω_BD=−3/2; стандартный контекст:
+[Dabrowski–Denkiewicz–Blaschke](https://arxiv.org/abs/hep-th/0507068),
+[Olmo–Sanchis-Alepuz](https://arxiv.org/abs/1101.3403).
+Здесь (13k–m) выведены непосредственно из принадлежащего источника,
+а не импортированы как физическое действие.
+
+Weyl symmetry геометрического functional не доказана gauge полного
+процесса. CAR/clock tests §8.5 читают исходный g; field redefinition
+`(g,w)↔(ĝ,w)` переносит этот meter в `g=ĝ/w`, а не удаляет w.
+π₀/операционная эквивалентность требует совпадения всех допустимых
+продолжений; одинаковых пяти флагов недостаточно.
+
+Есть и острый matter consumer. Если остальная РЕАЛЬНАЯ цена имеет
+`δS_ret=∫sqrt|g|[−½T_μν δg^{μν}+j_w δw]`, совместные equations
+и (13m) требуют `T=2w j_w`. Если matter минимально связана только
+с исходным g и не имеет w-source, это требует T=0. Нельзя добавить
+массивную материю к metric-only Einstein equation, потеряв эту строку.
+Доказанное universal coupling к ĝ либо собственный selector (13e)
+снимают разные входы; их physical forcing ещё должно принадлежать D0.
+
+### 6.10. Полный off-shell stationary profile и точная нелинейная source equivalence
+
+У (13e) есть более сильное продолжение, которое действительно решает
+AF stationary-fibre consumer на указанном old-fine-cut интерфейсе.
+Сохраняем его полную цену; профиль вычисляется также при f≠0.
+На leaf i истинный E скалярен, с eigenvalue e_i. Поэтому для ЛЮБОЙ
+conditional input, включая correlations, полная law имеет вид
+
+    q_iF=r_i(1−s_i),
+    q_iab=r_i s_i p_a(e_i) p_b(b_i).
+
+Здесь s_i и b_i теперь не заморожены общими значениями. Работаем
+в локальном balanced chart, где `Var(B|i,S)>0`; собственный seed §5
+даёт это строгое условие и независимые normalized lifts всех b_i.
+Вероятности r_i,s_i также имеют независимые normalized amplitude
+вариации в ортогональных leaf/corner sectors. Одна положительность
+q не заменяет этот submersion input: scene eigenstates дают другие
+критические ветви. Их этот результат не классифицирует.
+
+Собственные preparation equations полной энтропии дают явно
+
+    b_i=1/2, Z_i=1+2 exp h(e_i), D=Σ_i Z_i,
+    s_i=(Z_i−1)/Z_i, r_i=Z_i/D,
+    q_iF=1/D, q_iab=exp h(e_i) p_a(e_i)/D,
+    Γ(e,U)=log D/ℓ.                                    (13n)
+
+Это не frozen-auxiliary approximation. У literal полного POVM
+`G=(log D−1)I` на ВСЁМ carrier: на failure coefficient равен
+`log D−1`, а на success сумма по AF-flag вычитает h(e_i) и тут же
+восстанавливает его через `−Σ_a p_a log p_a`. Scene coefficients
+сокращаются по b_i=1/2. Поэтому все остальные preparation equations
+тоже решены, а не только r_i,s_i,b_i. Conditional balanced scene
+lifts могут использовать один и тот же reference128; прямые суммы
+по leaf i не требуют новых независимых reference копий.
+
+Можно предъявить section явно. Нормируем ортогональные AF-векторы
+`η_i^S=Π α⁶(P_i)/||Π α⁶(P_i)||` и
+`η_i^F=(I−Π)α⁶(P_i)/||(I−Π)α⁶(P_i)||`. Тогда
+`Σ_i sqrt(r_i)[sqrt(s_i)η_i^S+sqrt(1−s_i)η_i^F]⊗Ψ_i(B)`
+имеет norm1 и те же probabilities. Каждый прежний balanced Ψ_i
+содержит тот же reference128 с marginal I128/128; ортогональные
+AF labels сохраняют его и в сумме. Когда B общий, достаточно одного Ψ.
+
+Полученный профиль гладок; его все q_i строго положительны. Γ —
+аналитическая функция e_i в interior window. Нейтральные внутренние
+фазы/представления не требуют обратимого AF Hessian: на этой локальной
+ветви они дают одну и ту же law/value/source. (13n) предъявляет
+stationary section и её envelope напрямую. Оно не переносится на
+прежнюю unmeasured five-cut law или на coherent von Neumann price.
+При e_i на фиксированном interior compact имеем 3≤Z_i≤5;
+`Γ=log d_N/ℓ+log[(Σ_i Z_i)/d_N]/ℓ` даёт uniform geometric C³
+bounds через normalized average, не через обратный smallest input
+eigenvalue. Field jets e_i должны оставаться ограниченными в этом
+chart; эта оценка не заявлена для всех independent raw lattice jets.
+
+Пусть n_x — число fine leaves, принадлежащих geometric Q_x;
+complement имеет e₀=p². Тогда
+
+    D=d_N Z₀+Σ_x n_x[Z(e₀+p²t²f_x)−Z₀],
+    Z(e)=1+2 exp h(e), Z₀=Z(e₀),
+    c₀=p²t² Z′(e₀)>0,
+    Φ(f)=[Z(e₀+p²t²f)−Z₀]/c₀, Φ′(0)=1.               (13o)
+
+В окне 0<e_i<1/2 все Φ′(f_x)>0. Положим P=Σ_x n_x f_x,
+R_x — прежняя локальная радиальная вариация ног, `Df_y[R_x]=2δ_xy f_x`.
+Теперь ПРЯМО потребляется точное rank-one преобразование full-lattice
+§2.1, без решения ещё одной nonlinear system:
+
+    N_x=R_x⊗Df_x, b_x=[Φ′(f_x)−1]/(2f_x),
+    b_x|_(f_x=0)=Φ″(0)/2,
+    M=I+Σ_x b_x N_x,
+    M⁻¹=I−Σ_x [b_x/Φ′(f_x)]N_x,
+    DΓ=[c₀/(ℓD)] M* DP.                                (13p)
+
+Следствие N_xN_y=2δ_xy f_x N_x доказывает inverse также при f_x=0.
+Все40 coframe/link directions сохранены. На полном независимом
+носителе, где все затрагиваемые R_x допустимы,
+
+    Crit Γ=Crit P.                                     (13q)
+
+Радиальные equations дают f_x=0; на них все коэффициенты одинаковы.
+Для локальной fixed-collar семьи сохраняется точный forward transfer,
+поскольку её f=0 глобально; generic boundary rows не объявляются
+решёнными. Это nonlinear Euler equivalence ПОЛНОЙ reduced цены (13n)
+при fixed t, а не назначение Palatini action вместо источника.
+
+Утверждение о quadratic seed теперь тоже можно проверять на этой цене.
+На общем root того же полного носителя, a₀=c₀/(ℓD₀)>0,
+
+    H_Γ=a₀ M₀* H_P
+        =a₀[H_P+Φ″(0)Σ_x n_x Df_x⊗Df_x],
+    ker H_Γ=ker H_P.                                   (13r)
+
+Для restricted fixed-collar Hessians последнее равенство требует,
+чтобы M сохранял их допустимый tangent. Один перенос построенных
+корней этого дополнительного утверждения не доказывает.
+
+Гессианы НЕ пропорциональны: новая строка сохранена. В homogeneous
+flat star chart D_e f=0 и D_ω f=O(k), поскольку первая plaquette
+variation есть разность соседних links. Добавка (13r) меняет только
+connection block на O(k²), не его A₀ и не leading C₁. Поэтому regular
+LOW-momentum connection reduction даёт
+
+    K_Γ,Schur^[2]=a₀ K_P,Schur^[2]
+                 =−a_IR K_Einstein^(1)/2               (13s)
+
+a_IR включает a₀ и явную field-independent нормировку P к
+canonical star из full-lattice(4.3); это ненулевой вычисляемый
+множитель, не fitted coupling. При actual golden
+counts сначала применяется явная finite field map full-lattice(4.3);
+её asymptotic identity в физических coframe charts обеспечена C²
+recovery, а не постулированной uniform заменой counts. (13s) не есть
+равенство произвольных finite-UV symbols и не даёт uniform UV inverse,
+propagation/positive-pole theorem или native physical admission.
+
+Есть и exact Noether consumer: всякий уже принадлежащий generator
+DP[R_P]=0 переносится как `R_Γ=M⁻¹R_P`, поскольку DΓ[R_Γ]=0.
+Для конечного star это его actual exact symmetries; continuum
+diffeomorphisms применяются после контролируемого Palatini limit,
+не объявляются точной симметрией произвольной finite lattice. Таким
+образом conditional old-fine-cut price имеет прямое all-order vacuum
+Euler замыкание на star; выбирать EH cubic/quartic vertex не пришлось.
+Прочие retained matter/controller/whole-work sources этим не удалены.
+
+[Новый узкий расчёт](sources/d0_af_star_full_lattice_2026-10-17/check_inherited_history_weight_source.py)
+проверяет буквальные AF inclusions и Binet factors, источник fine
+истории и coarse-prefix отрицательный контроль, scalar POVM-gradient
+на actual GNS M₂⊕M₁ с недиагональной сценой, полный retained-word
+на его10-мерном GNS/work carrier, и все weighted tensor/scalar rows
+на (13c). Двумерная сцена checker — не замена native22976 carrier:
+общее доказательство использует B+(I−B)=I на настоящем полном B.
+Пропуск kinetic source отвергается. Старые root/heat/Lean
+серии не исполняются. [Результат](sources/d0_af_star_full_lattice_2026-10-17/INHERITED_HISTORY_WEIGHT_SOURCE_RESULT.json)
+сохраняет явно не закрытое physical inherited-cut binding.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

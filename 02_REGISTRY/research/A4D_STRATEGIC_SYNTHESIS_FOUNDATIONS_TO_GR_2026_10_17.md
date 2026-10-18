@@ -872,6 +872,111 @@ consumer — принадлежащий D0 source/constraint, который у�
 AF состояния и metric probes могут их различать. Это no-go для
 универсального vacuum claim данного свободного cut, не no-go D0→ОТО.
 
+### 7.5. Полная история замыкает preparation и nonlinear Euler bridge
+
+Продолжение от `4baad450`: теперь выведен конкретный положительный
+source consumer, который в §7.4 ещё был условием. Он потребляет
+СОБСТВЕННУЮ цену уже измеренного старого Y, без нового Info/prior.
+Оставшаяся предпосылка исполнения указана точно: inherited LEFT
+fine-leaf projectors должны быть настоящими прошлыми outcomes и
+входить в тот же полный cut также при неудаче preparation. Нынешние
+пять флагов сами по себе такой Y не измеряют. См. [full-source
+§§6.7–6.10](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+
+**Уравнение весов решено.** На f=0 полная энтропия равна H(r)+K;
+её свободные probability equations требуют r_i=1/d_N для всех
+измеренных fine leaves. Это включает READY/PENDING masses; они
+больше не заморожены как canonical τ. Истинная Fibonacci inclusion
+даёт для rank2 READY Q_w уровня k=m+2
+
+    μ_N(Q_w)=2F_(N−k+2)/F_(N+3),
+    μ_N(Q_w)/(2p^(k+1))
+      =[1−(−p²)^(N−k+2)]/[1−(−p²)^(N+3)].              (7.9)
+
+Веса всех одинаковых address words совпадают точно, cell weights
+пропорциональны actual counts. Относительная ошибка PF coefficient
+имеет явную golden bound O(p^(2(N−k)+4)). Coarse traciality не
+предположена; достаточно измеренных diagonal probabilities. Полный
+POVM-gradient скалярен на всей preparation sphere, включая scene и
+reference128. Within-prefix χ теперь имеет собственный source
+`−μ_N(Q_w)log(χ/c)/ℓ`, который исчезает только при χ=1.
+
+**Получен настоящий off-shell stationary descent.** В локальном
+balanced scene chart Var(B|i,S)>0 для произвольных близких полей
+выведены все retained probability profiles:
+
+    Z_i=1+2exp h(e_i), D=Σ_iZ_i,
+    b_i=1/2, s_i=1−1/Z_i, r_i=Z_i/D,
+    Γ(e,U)=log D/ℓ, G_POVM=(log D−1)I.                 (7.10)
+
+Это явная smooth section со всеми нормированными preparation
+вариациями, без обращения singular AF Hessian. Сохраняется один
+reference128. Output probabilities положительны; нормированное
+среднее D/d_N даёт uniform geometric C³ bounds на compact source
+charts. Scene eigenbranches, где Db_i теряет ранг, отдельно не
+классифицированы и не объявляются balanced автоматически.
+
+**Замкнута нелинейная вакуумная стрелка для ЭТОЙ цены.** Из той же
+радиальной однородности star и точного full-lattice M-intertwiner:
+
+    DΓ=[c₀/(ℓD)]M*DP,  M обратим при 0<e_i<1/2,
+    Crit Γ=Crit P                                     (7.11)
+
+на полном независимом coframe/link носителе. Fixed-collar curved
+семья переносится точно благодаря глобальному f=0. Тем самым
+предыдущая C² recovery даёт локальный nonlinear Einstein limit при
+fixed t с найденной скоростью; исчезнувший weight source не был
+добавлен для компенсации Эйнштейна.
+
+На общем root H_Γ=aM₀*H_P, с сохранённой поправкой
+`a Φ″(0)Σ n_x Df_x⊗Df_x`; Hessians не пропорциональны. В homogeneous
+flat IR chart эта поправка меняет только connection block на O(k²).
+Его invertible A₀ и C₁ сохраняются, поэтому all10 degree-two Schur
+есть ненулевой фиксированный множитель прежнего Einstein symbol.
+Actual counts требуют своего явного weight chart/refinement; полного
+UV inverse и propagation theorem этот вывод не даёт. Exact Noether
+generators P переносятся как M⁻¹R_P. Finite lattice не объявляется
+точно diffeomorphism invariant: continuum generators потребляются
+на контролируемом Palatini limit. Это прямой conditional nonlinear
+source bridge, не вставленный EH cubic/quartic.
+
+**Исполнение нельзя заменить словом «архив».** Старые coarse prefix
+probabilities не определяют Q_w внутри prefix. Сохранение полного
+RIGHT marginal также не фиксирует активный LEFT marginal, когда
+разрешён coherent work: три собственных addressed G/CNOT gates на
+actual A₁ GNS/work сохраняют весь right archive и меняют left weights.
+Полная цена их work не объявляется нулевой. Сам диагональный W_E
+сохраняет входной Q marginal операторно; он его не выбирает. Поэтому
+остаётся именно реальное LEFT leaf/effect/history-price binding (7.9),
+а не общая ссылка на trace или refinement.
+
+Если такого binding нет, источник (7.7) надо оставить взвешенным.
+Он теперь полностью расшифрован: `ẽ=sqrt(w)e`, `ĝ=w g`,
+`ω=ω_LC(ẽ)`, а исходная метрика удовлетворяет exact compensated
+metric/scalar equations (13m) full-source. Scalar equation связана
+со следом по Weyl identity. Это геометрическая форма Brans–Dicke
+−3/2, не доказанная Weyl gauge всего D0. Operational meter продолжает
+читать g. Для настоящего остального source требуется T=2w j_w;
+massive matter нельзя подключать, потеряв эту строку. Так следующий
+native consumer и его противоположная ветвь имеют явные equations.
+Physical D0→GR и whole-work/matter/global obligations остаются открыты.
+
+**Параллельный intake `94374b0a` интегрирован без потери.**
+[CAR16 null-tomography/source owner](A4D_TWO_SIDED_CAR_NULL_TOMOGRAPHY_AND_CONFORMAL_CONTROL_2026_10_18.md)
+даёт собственную chiral correction,4+12 split и nine independent null
+effects, с явным cross-setting noncommutation. Это полезный полный16
+кинематический интерфейс, не уже matter stress. Его N5 совпадает с
+null contraction exact conformal formula для (13m). Born null zeros
+не заменяют Einstein equations или полный Shannon source.
+Его N6–N8 предупреждение о KL/Info потреблено точно: нынешний selector
+использует H(r) с ОТРИЦАТЕЛЬНЫМ Hessian, не KL. Finite uniform
+fine-leaf r_N не отождествляется с unequal PF reference; геометрические
+PF веса выводятся через descendants (7.9). Поэтому coarse-address
+entropy-контроль intake не опровергнут и не обходится подменой цены.
+Оба пакета оставляют physical effect/valuation/admissible-tangent
+binding открытым; variable-cost raw stopping cut не отождествлён с
+этим finite fixed-measurement cut по одному имени AF level.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября
