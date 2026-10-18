@@ -67,6 +67,21 @@ law, or a proved source-controlled limit. Changing the internal section
 through these roots cannot repair the excluded identity. A time-sign
 alternative and its failed second-order diagnostic are preserved as
 consumed evidence, without launching another preparation census.
+Sections8.19–8.20 now prove a whole-carrier source sign for the distinct
+complete Julia/golden mean: every nonblank preparation has positive
+strength derivative at νR≤1/64. Every fixed finite retained-history
+depth has a preparation-uniform weak window. With an admitted independent
+strength variation, its joint critical set is exactly blank, with zero
+first source. The next full-price input must supply the explicit opposing
+source; stationary elimination and satisfied squares cannot replace it.
+The exact code/Born binding defect is retained, without selecting a new
+price or claiming a joint long-history/refinement limit.
+Section8.21 separately proves the fixed-data long-history source:
+`H_n=4p²(nν²)Tr(ρ A_0²)log(1/ν²)+O_C¹(1)`. All128^n outcomes remain;
+the actual count and full-tape Fisher bound control the derivative.
+The fixed-integer-n scale source stays positive along nν²→T>0 for
+nonvacuum mass bounded below. Physical memory admission, mass→0 and
+spatial refinement remain distinct; no subtraction or new action is used.
 The [CAR/clock readout](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
 recovers the original metric, without an Einstein-frame rescaling. The
 [regular-natural-source classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)

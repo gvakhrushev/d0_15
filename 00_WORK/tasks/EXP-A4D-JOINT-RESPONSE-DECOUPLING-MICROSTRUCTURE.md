@@ -12,6 +12,67 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: consume the full native record-mean preparation and scale source
+
+Input `4838004d`. Test the actual 128-outcome Julia/golden mean on the
+whole data carrier and normalized data⊗reference128 amplitude sphere,
+including zero probabilities, coherences and rank births. Use the literal
+duplicated Julia rows and their moving square roots, not the earlier
+pure-time support alone. Exact target: a preparation-uniform weak-strength
+source sign, the deterministic-blank preparation saddle direction, and
+its extension to every fixed finite number of fully retained native
+rounds. A scale derivative is an Euler row only if that independent scale
+variation is actually admitted. No long-history/refinement uniformity is
+assumed. The consumer is the existence of nonzero-source joint roots of
+this actual mean, followed by the exact opposing source required from an
+already defined complete-price remainder or native constraint.
+
+Root owns the existing full-source owner, this brief and its existing
+strategic consumers. Bounded assistants review the operator estimates,
+full-amplitude saddle, finite-history extension and source binding
+read-only. The decisive check is an analytic proof from the literal Kraus
+maps with all outcomes retained; no preparation/rank census, old thermal
+replay, new action, information law, calibration or physical admission is
+introduced. Code-price/Born-probability binding and the full price
+aggregation remain explicit premises rather than supplied conclusions.
+
+Consumed in §§8.19–8.20: the explicit νR≤1/64 bound is uniform over
+every full-carrier preparation; the fixed-finite-depth theorem is uniform
+over preparation in a depth-dependent window. The complete mean has only
+blank joint critical points if scale is independently admitted. The exact
+preparation saddle preserves reference128 and all rank births. The parent
+now requires an actual negative remainder/constraint source; the code/Born
+binding defect identifies it without choosing a new price. Both analytic
+arguments received independent review. No physical admission, large-strength
+or joint long-history/refinement claim follows.
+
+Immediate continuation uses the exact existing full-pointer chain rule
+and actual channel, with δ=ν² and nδ bounded on a fixed data carrier.
+Determine the leading complete-history entropy AND its source on bounded
+smooth geometry/preparation charts. Keep the growing128^n record space;
+do not differentiate an integer schedule n(ν), subtract a divergence or
+choose a new normalization as a physical action. The decisive argument
+is the actual count observable and a full-tape entropy-remainder/Fisher
+bound, independently reviewed. Consumer: test whether long histories
+restore the missing nonzero Einstein source or give another specified
+leading functional. Spatial refinement and resource admission remain
+separate from this fixed-data result.
+
+Consumed in §8.21: the actual count is 4p²(nδ)Tr(ρ A_0²)+O_C¹(δ).
+The full128^n entropy has this coefficient times log(1/δ) with O_C¹(1)
+remainder. Fisher and weighted-tape tail bounds retain all outcomes and
+give the geometric/preparation source. The fixed-integer-n scale row
+stays positive along nδ→T>0 for a≥a_0>0. Independent review verified
+the horizontal-insertion orthogonality and C¹ telescoping count bound.
+Mass→0 uniformity, physical growing-memory admission and spatial
+refinement are not supplied. No new computation or physical action is used.
+
+Read-only intake of stacked #363 at33911def preserves its positive tagged
+exit/double-clock curvature ratio (1,1,−1), including volume3/2. Its
+selected logdet has not been bound to the actual whole-record mean;
+the next consumer is full price/admission, not another ratio test. The
+separate producer keeps ownership; no duplicate implementation is started.
+
 ### 18 October: consume the nonlinear boundary and stop branch substitution
 
 Input `e989bc01`. Test the actual full source of the already stationary

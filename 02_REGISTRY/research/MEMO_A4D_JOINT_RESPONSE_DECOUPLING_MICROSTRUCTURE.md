@@ -2,7 +2,41 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `e989bc01`:** §§8.16–8.18 of the
+**Latest consumed transition, input `4838004d`:** §§8.19–8.20 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+prove a preparation-uniform source obstruction for the actual complete
+Julia/golden record mean. For every nonblank preparation on the full
+data⊗reference128 carrier, its strength derivative is strictly positive
+when νR≤1/64, including all zero outcomes and moving defect roots. Every
+fixed finite number of retained rounds has the same property in its own
+uniform weak-strength window. If strength is an independently admitted
+variation, the joint critical set is exactly the blank preparations,
+whose full first source is zero. A separate exact vacuum rotation makes
+every positive stationary preparation a saddle when blank dominates;
+the critical-set theorem uses the scale sign, not that saddle alone.
+
+This removes a whole preparation/finite-history search from the GR route.
+A genuinely complete price H/ℓ+B must supply B_ν=−H_ν/ℓ<0 at a nonblank
+joint root; internal stationary elimination cannot manufacture it. The
+actual code/Born binding defect and normalizer source are written exactly.
+Book03 square blocks on their zero sheets do not compensate; the defined
+negative v8 heat source is not thereby identified with this B. No new
+action, Info law or constraint is added. Physical scale admission, the
+native price binding, other strengths and joint long-history/refinement
+limits remain explicit. Operational verifiability alone does not supply
+the missing nonzero source.
+
+Section8.21 separately resolves the long-history source on a fixed data
+carrier: for δ=ν², nδ bounded, the COMPLETE128^n pointer entropy is
+`H_n=4p²(nδ)Tr(ρ A_0²)log(1/δ)+O_C¹(1)`. The proof uses the actual
+exit count and a full-tape Fisher/remainder bound, preserving the growing
+record space. Its leading source is Rayleigh/count; the scale derivative
+at each fixed integer n remains positive along nδ→T>0 when a≥a_0>0.
+No integer schedule is differentiated and no divergence is subtracted.
+This is stronger than a value or first-exit estimate, but does not prove
+uniform positivity as a→0 or a spatial/data-carrier refinement theorem.
+
+**Prior consumed transition, input `e989bc01`:** §§8.16–8.18 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 resolve the finite GR comparison without an all-frequency kernel census.
 For any C¹ full-internal stationary section through the SAME faithful or

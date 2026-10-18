@@ -23,6 +23,43 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+At input `4838004d`, the same source owner's §§8.19–8.20 now settle
+the complete Julia/golden mean on the whole preparation carrier. Its
+strength source is positive for every nonblank preparation at νR≤1/64;
+the statement extends to every fixed finite depth of fully retained
+histories in a depth-dependent weak window. Under an admitted independent
+strength variation, all joint critical points are blank and have zero
+first source. All reference128 directions, rank births and zero outcomes
+remain. A different preparation or fixed finite depth cannot repair this
+candidate there. The theorem does not cover a joint long-history limit.
+
+The next positive consumer is quantitative: an already derived complete
+price H/ℓ+B or actual native constraint must supply the opposing source
+B_ν=−H_ν/ℓ (with the actual constraint source when present). The exact
+code-price/Born binding defect identifies this missing term. Internal
+stationary reduction and satisfied square penalties do not provide it;
+the negative v8 heat term belongs to its separately specified price.
+Do not import it as a counterterm. Preserve the physical scale-admission,
+full-history aggregation, independent-matter and refinement obligations.
+
+Section8.21 now computes the separate long-history regime on a fixed
+data carrier: `H_n=4p²(nν²)Tr(ρ A_0²)log(1/ν²)+O_C¹(1)` for bounded
+nν². The actual full exit count and a full-tape Fisher bound control its
+geometric/preparation source. At each fixed integer n, the scale source
+also remains positive along nν²→T>0 with nonvacuum mass bounded below.
+This consumes the long-history escape in that precise class; it does not
+choose a normalization/subtraction, cover mass→0 uniformly or prove
+spatial refinement and physical admission of the growing record space.
+
+The separate positive
+[tagged-exit producer in #363 at33911def](https://github.com/gvakhrushev/d0_15/blob/33911defe1607b94a895b455d3357ad2f3039e12/02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md)
+supplies the conditional independent curvature-source ratio (1,1,−1)
+for its selected double-clock logdet, retaining volume coefficient3/2.
+Its tagged programme is distinct from the repeated native pointer mean;
+physical tag/clock resources and complete Cost−Info binding remain open.
+Consume it at that interface; do not repeat its solved ratio or discard
+the positive construction with the earlier failed serial comparison.
+
 At input `e989bc01`, §§8.16–8.18 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 close a route that otherwise invites repeated local lifts. Any C¹
