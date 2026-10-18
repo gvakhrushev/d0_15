@@ -181,6 +181,33 @@ Thus a complete RIGHT-copy/readout changes its own full retained classical histo
 
 Crucially, (F14–F15) do **not** say the complete **Book** Cost−Info source stays unchanged. The newly retained RIGHT outcome contributes the physically meaningful `H(R|L,J)` and its first variation, whose stationary effect is (F11–F12). That is the intended selection mechanism. No price is fitted: the geometry readout is nondemolition only **relative to its actual commuting observable algebra**, while the old quantum RIGHT archive is not. This also gives a decidable experiment: compare true geometric effects and their field jets with `Delta_R`; reject a claimed same-source binding at the first noncommuting or field-dependent `Q_beta^R` source.
 
+### 4.2. A quantitative RIGHT-access wall for the existing right-module grammar
+
+The old [AF activation §4](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md) uses actual `End_(right A_N)(H)` operations: every admitted `W_E`, LEFT address copy and old-work-only operation in this **declared** grammar commutes with `R(A_N)`, even after adjoining spectator work wires. Therefore no sequence of such words can implement the RIGHT copier from §4.
+
+The failure is **quantitative, not only a formal noncommutation**. Choose two distinct RIGHT path labels `beta,gamma` in one nontrivial matrix block and let `T=R(E_(beta,gamma))`, normalized so `||T||_op=1`. The ideal controlled RIGHT copy to a full fresh binary tape is `C_R=sum_j R(P_j)⊗X^(c_j)`, with distinct bitstrings `c_beta!=c_gamma`. Its commutator has
+
+```
+[C_R,T⊗I_Y] = T⊗(X^(c_beta)-X^(c_gamma)),
+||[C_R,T⊗I_Y]||_op = 2.                              (F16)
+```
+
+Since `X^(c_beta)−X^(c_gamma)` has norm 2 for different binary words, every operator `V` commuting with `T⊗I_Y` obeys
+
+```
+||C_R−V||_op >= 1.                                   (F17)
+```
+
+Hence **even an arbitrarily long finite circuit and its full-operator-norm closure inside the old RIGHT-commutant palette cannot approximate** this RIGHT recording in norm error <1. The #334 fixed-width real-operator compiler does not evade this: it allows arbitrary orthogonal controls only on *separately declared coherent addressable wires*, not on an immutable RIGHT archive that its physical word must commute with. A pointwise estimate on one prepared diagonal input is not full source or operator implementation.
+
+This identifies precisely the missing operation. On the chosen real matrix-unit basis the permutation `S_N e_(alpha,beta)=e_(beta,alpha)` is an involutive orthogonal operator; it **exchanges the diagonal** LEFT and RIGHT path projectors. If this swap were separately physically admitted, then
+
+```
+C_R=(S_N⊗I_Y) C_L (S_N⊗I_Y),                        (F18)
+```
+
+using **the already built LEFT CNOT copy**. This is a mathematical single-swap interface, NOT proof that D0 permits such a path-end reversal. The linear basis permutation S_N must not be confused with the canonical **antiunitary** Tomita involution `X↦X^*` on arbitrary complex amplitudes, or promoted to physical time reversal from its name. Neither S_N nor the postcopy RIGHT observable transport is supplied by the old right-module grammar. The next decisive native check is whether an existing actual comparison/return operation already realizes this orientation exchange with its own retained work/price. Without that new fact, the two-sided source cannot be consumed as the original physical D0 history.
+
 ## 5. Decisive checker and immediate parent consumer
 
 Run the new [exact path/source checker](certificates/a4d_gns_two_sided_path_unfolding_check.py). It enumerates all Bratteli paths for N=0..7, constructs the actual matched matrix-unit pairs, checks the **bijective midpoint fold**, every coarse prefix and arbitrary positive rational prefix-dependent partition weights, then independently checks the Fibonacci integer identities for N≤23 and all k≤N. Its hostile controls distinguish LEFT-only from LEFT×RIGHT finite preparations, verify the extra conditional RIGHT entropy and reject no-disturbance of coherent RIGHT matrix units. Integer, rational and path equalities are exact; reported asymptotic TV values are diagnostic, not a substitute for (F6).
