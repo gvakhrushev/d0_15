@@ -1365,6 +1365,90 @@ CAR-only complex-linear commutant; этот fixed-word charge не являет�
 full-Cartan superselection и не даёт независимого T. Для J state
 irrelevant, но actual matter/remaining price обязаны учесть эту операцию.
 
+### 7.10. Exact-root consumer: сцена решена, Lorentz Ward можно сохранить, metric kernel остаётся
+
+Продолжение от `c5d7662e`; [full-source §§6.23–6.25](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+меняет следующий шаг, не повторяя C³ feedback calculation.
+
+У literal nine-word scene нет аргументов F,U_e,q,D,b,m: её B₀
+постоянно. Genuine whole-tuple frame transport даёт B=T B₀T⁻¹ и
+DB=[K,B], включая noncommuting Gram/observer jets и moving cut.
+Так как H_B коммутирует с B, Tr(H_B DB)=0 ТОЧНО в ordinary trace.
+Для ЭТОГО исполненного scene word неизвестная scene-critical branch
+больше не требуется. Это не прежний state-conditioned chronology при
+fixed readout и не произвольная новая physical-link сцена.
+
+Для exact compiled roots проверена сама finite critical family.
+В null frame actual pp-wave решётки
+
+    δv_r(z)=[ψ(z)−ψ(z−hr)]e_−, δU=0                 (7.23)
+
+с компактным ψ сохраняет ВСЕ40 Euler rows при конечном v→v+τδv.
+Один point-source проверен символически при свободных восьми pp-wave
+параметрах:150 mixed rows равны0; forward-difference контроль −h.
+Общий proof — commuting backward derivatives; quadratic wedge change0.
+Тот же fixed collar сохранён. В физической метрике
+`δg_rs=(δ_s0D_r⁻ψ+δ_r0D_s⁻ψ)/h`, так что internal Lorentz quotient
+его не удаляет. Для smooth ψ это v-coordinate diffeomorphism в пределе,
+не независимая материя. Golden-weight pullback сохраняет тождество
+и прежнюю C² rate O(h_n) при ψ∈C⁴.
+
+Значит Hessian не становится обратимым после одного Lorentz gaugefix.
+Прямой IFT здесь неприменим. Perturbation ετ нестационарно на самой
+семье, но nearby full root может восстановиться при поперечном
+смещении. Нужны actual reduced source по (7.23) и normal equations
+либо собственная off-shell symmetry; эту строку нельзя пропустить
+как gauge. Одна C³ proximity не является таким normal argument.
+
+Для internal Lorentz Ward построен положительный compiler. После
+clock whitening gauge действует как local SO(3) на полном CAR16.
+Invariant signed-permutation reflection/SWAP Q приближается completed
+словами с общим Walsh angle α:
+
+    Q_α=e^(αJ_s⊗I)e^(−αJ_s⊗Q),
+    [Q_α,T_g]=0, ||Q_α−I_s⊗Q||≤2|cosα|.              (7.24)
+
+Каждая конечная точность сохраняет Ward точно. В forward-only G
+отрицательные степени требуют retained scalar c=1 и его ACTUAL return
+cut. c=0 operator остаётся в carrier, но его heat/source не объявляется
+equivariant. Все spectator leakage outputs остаются. Intermediate gates
+не измеряются, full return cut invariant; fixed CAR bit readout не подходит.
+
+Fixed-basis tomography заменена unnormalized moving-coframe query
+contractions. Full compound Gram, time row, orientation и relational
+edge entries отделяют localSO3 orbits; polynomial inverse/C³ compilation
+не требует Ψ(g), Bell preparation или inverse oracle. Entries можно
+centralize на ВСЕХ16 input columns:
+`Σ_K E_K0 A_IJ V_r* E_0K/d_r=z_IJ I_CAR`. Тогда неизвестная материя
+не нуждается в CAR parking. Controlled Julia также строится из actual
+uncontrolled query: scalar echo даёт controlled O², strict contraction
+отделяет spectrum от −1, skew-Laurent log и product formula дают
+controlled O на clean scalar work с C³ convergence. Это синтез
+unitary из scalar controls/query words, не новый polynomial oracle.
+Все scalar leakage и actual c=1 cut сохраняются; прежний dark-top
+storage interface остаётся другим достаточным входом.
+Full-return logdet нового конечного compiler имеет exact Lorentz Ward
+и сходится в C³. Exact scalar-factorization §7.9 и metric-null Ward
+(7.23) этим не следуют.
+
+Следующий full-price шаг можно ставить ТОЧНЕЕ, чем глобальное Δ=g(E).
+Для fixed calibration heat H=β⁻¹logTr exp(−βh(Δ)) и R=<Ψ,ΔΨ>
+actual eigenpreparation (Δ⊗I)Ψ=RΨ зануляет все normalized preparation/
+reference first rows. На этой точке полный field source равен
+
+    D(H+R)=Tr[(ρ_m−τ h′(Δ₀))DΔ],
+    τ=exp(−βh(Δ₀))/Tr exp(−βh(Δ₀)).                 (7.25)
+
+Для actual v8 h′(Δ₀)=(I−αΔ₀)⁻¹; для прямого Book03 h′=I.
+Нужен actual full-carrier root/first-jet bridge этого covector с DP_w
+на целевой семье, плюс остальные реальные work/controller equations.
+Определить новый Δ из обратной функции E нельзя: star E=p²I при f=0,
+а прежний nativeD² имеет zero momentum и разные spectral levels;
+AF price cut также отличается от его blank. Эти уже принадлежащие
+TYPE controls остаются. Whole native source/admission, metric-kernel
+reduction, независимая материя и совместный physical/global limit
+по-прежнему обязательны для D0→ОТО.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

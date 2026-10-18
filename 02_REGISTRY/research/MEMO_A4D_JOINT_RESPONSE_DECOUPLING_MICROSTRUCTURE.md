@@ -2,6 +2,27 @@
 
 ## 18 October 2026 — native source, preparation and nonlinear GR synthesis
 
+**Exact critical-family consumer, input `c5d7662e`:**
+[Full-source §§6.23–6.25](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+proves zero ordinary-trace scene source for the actual intrinsic word and
+its genuine whole-tuple frame transport. A new exact SAME-collar null
+translation preserves all40 star Euler rows at finite amplitude while
+changing the metric; Lorentz gauge-fixing alone cannot invert this Hessian.
+Its smooth limit is a coordinate diffeomorphism, not independent matter.
+A constructive completed-control compiler preserves exact internal
+Lorentz Ward at every finite accuracy while converging in C3. The
+forward-only gate palette requires a retained scalar c=1 and its actual
+return cut; off-code heat is not transported by this theorem. Invariant
+moving-frame contractions replace CAR-basis tomography. Their scalar
+target acts on all16 inputs without physical vacuum preparation or CAR
+parking. Controlled queries themselves have a scalar-echo/skew-log
+construction from the supplied uncontrolled Julia queries, with all
+scalar return/leakage resources retained. The next consumer is the
+actual metric-family reduced source and full heat/matter first-jet bridge
+of the SAME programme, with work/resource costs retained. One new
+bounded calculation checks symbolic mixed rows, the nonzero forward
+control, whole-Gram source and all16 scalarization. No old suite replay.
+
 **Direct Book-feedback consumer, input `423836c7`:**
 [full-source §§6.18–6.22](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consumes the ALREADY owned feedback price/source of17 October. The

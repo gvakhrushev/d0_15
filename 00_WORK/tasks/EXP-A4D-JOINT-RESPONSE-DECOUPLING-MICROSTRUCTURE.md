@@ -12,6 +12,41 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: exact critical-family and covariant compilation consumer
+
+Input `c5d7662e`; the preceding goal turn made progress by publishing
+the full two-tick feedback and C3 transfer, with the actual remaining
+whole-price covector. Root now checks exact-root persistence rather
+than replaying that calculation. Read-only assistants own: the literal
+scene/whole-frame source; actual SAME-collar Jacobi directions of the
+star family; and a gauge-equivariant compiler within the supplied
+Julia/G/CNOT class. Root edits this brief and the same full-source,
+strategic, primary/current-route consumers, plus one narrow helper
+check_native_critical_family_source.py and its result in the existing
+full-lattice packet. Keep the full carrier, return cut, all work exits,
+actual forward-gate palette and the separate heat/Dirac owner.
+
+The smallest decisive checks are the symbolic backward-null coframe
+translation against the literal star stencil and its forward-difference
+negative control; ordinary-trace cancellation under genuine whole-tuple
+Gram transport; and exact covariance of completed invariant controls.
+No old root/heat/Lean suite or rank census. Any fresh scalar work flag
+and its actual return test must be priced and kept. A conditional
+equivariant approximation is not physical admission, a full-price root,
+or an independently derived matter source.
+
+Consumed in full-source §§6.23–6.25 / strategic §7.10: the actual
+scene/frame source is zero; a symbolic SAME-collar backward-null
+translation preserves all40 Euler rows and identifies the remaining
+metric critical-family equation. Completed invariant controls preserve
+exact Lorentz Ward at every compiler precision on the actual c=1 return
+cut. All-input CAR scalarization plus scalar-echo/skew-log synthesis
+remove a separate controlled-query oracle and CAR parking from the
+supplied coherent Julia class. Scalar work/leakage, whole-price and
+physical admission remain explicit. The new helper checks the precise
+null/mixed row, full-Gram transport, all16 scalarization and echo algebra;
+no old suite was replayed. A kernel is not a no-nearby-root theorem.
+
 ### 18 October: consume the native feedback price instead of choosing a mean
 
 Input `423836c7`; the preceding goal turn made progress by publishing

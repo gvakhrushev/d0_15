@@ -23,7 +23,22 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-Latest consumer, input `423836c7`: [strategic §7.9](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+Latest root consumer, input `c5d7662e`: [strategic §7.10](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+proves the literal scene/whole-frame source zero and identifies an exact
+SAME-collar metric critical family, beyond internal Lorentz gauge.
+It constructs a C3-convergent compiler with EXACT finite Lorentz Ward
+for the full return feedback, using completed invariant controls and
+moving-frame scalar contractions. Forward-only inverse gates require
+an explicit retained scalar c=1/return-test interface; full off-code
+heat and physical preparation costs are not removed. The scalar target
+acts on all16 data columns without CAR parking; a scalar-echo/skew-log
+lemma constructs controlled queries from actual uncontrolled Julia
+queries with C3 clean-scalar convergence. Continue with the reduced source on the metric
+family and SAME-program heat/matter root/first-jet bridge. Do not infer
+exact roots from C3 proximity or erase the coordinate-like null rows
+through Lorentz gauge-fixing. No native price or physical action is added.
+
+Previous direct-feedback consumer, input `423836c7`: [strategic §7.9](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 uses the existing Book03 feedback price directly, rather than choosing a
 new mean. The full two-tick AF/scene word has a monotone geometric source,
 intrinsic regular trace weights and the exact weighted-star vacuum

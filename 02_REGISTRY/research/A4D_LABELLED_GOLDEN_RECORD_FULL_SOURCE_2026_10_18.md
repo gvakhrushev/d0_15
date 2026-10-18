@@ -2041,6 +2041,278 @@ nondegenerate chart s≥s_min>0 остаётся допустима и имен�
 constrained critical-family argument, не автоматическое наследование
 идеального radial scalar identity.
 
+### 6.23. У буквальной сцены whole-frame source действительно равен нулю
+
+В (13bc) не нужно требовать неизвестную scene-critical branch для
+ТОГО intrinsic word, который уже исполнен. [Nine-word owner](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md),
+§§2–4, имеет параметры p, fixed CAR clock/spatial-grade operations и
+intrinsic Γ reversal. F,U_e,q,D,b,m не являются аргументами этого
+слова. Следовательно его B₀ буквально постоянно; fixed intrinsic
+scene здесь не дополнительный физический постулат.
+
+Его уже принадлежащее продолжение — [genuine endpoint transport](A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md#5-genuine-endpoint-pairing-and-the-complete-transported-price).
+При положительном Gram G и T*GT=G₀ переносится ВЕСЬ tuple:
+
+    U=T U₀T⁻¹, Π=TΠ₀T⁻¹, U^(†G)=T U₀^(†G₀)T⁻¹,
+    B=T B₀T⁻¹, DB=[K,B], K=DT T⁻¹.                  (13bk)
+
+Например, T=G⁻¹ᐟ²G₀¹ᐟ²; derivative √G задаётся полным Sylvester
+equation, без commutativity. K*G+GK=−DG, поэтому K не обязан быть
+skew в counting pairing. В native clock frame L=√h_n, Ln=e₀,
+полная coordinate/density изометрия равна
+`E=ω⁻¹ᐟ²Λ(FL⁻¹)` и
+`E*[ωΛ(F⁻ᵀh_nF⁻¹)]E=I`. Все16, reference128 и complement сохранены.
+
+В (13ax) H_B коммутирует с B: R_j коммутирует с I⊗B и partial trace
+это сохраняет. Поэтому ordinary trace, а не occupied expectation,
+даёт ТОЧНО
+
+    Tr(H_B DB)=Tr([B,H_B]K)=0.                       (13bl)
+
+Итак, для literal scene и genuine whole-tuple transport (13bc)
+содержит только DS_rest сверх star source. Это не право сохранять
+старый cut при обновлении gate/observer. [Chronology owner](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md#4-actual-two-step-price-with-the-original-readout-retained)
+владеет другим state-conditioned опытом с движущейся относительной
+рамкой и ненулевым source. Не построенный общий physical-link
+B(q,D,b,m) также не отождествляется с (13bk).
+
+### 6.24. Точное SAME-collar семейство и настоящий kernel сверх Lorentz gauge
+
+Нужный inverse для exact compiled roots нельзя получить одним
+Lorentz gauge-fixing. Возьмём actual pp-wave coframe/link family
+[full-lattice owner, §3](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md).
+В его null frame ℓ=e_−. Для любой ψ с компактным support вместе
+с её stencil halo внутри свободной области положим
+
+    D_r⁻ψ(z)=ψ(z)−ψ(z−hr),
+    v_r^τ(z)=v_r(z)+τ D_r⁻ψ(z)ℓ, U_r^τ=U_r.          (13bm)
+
+Все40 Euler rows исходной uniform star задачи НЕ МЕНЯЮТСЯ при
+конечном τ, пока тетрада невырождена. Доказательство:
+фоновые odd curvatures лежат в span(N₂,N₃), их bivectors содержат
+ℓ. Insertion δv∥ℓ убивает изменение каждой плотности и coframe row.
+У link row quadratic term δv_u∧δv_v равен0. Линейная часть wedge
+равна h[(D_u⁻ψ)ℓ∧e_v+(D_v⁻ψ)e_u∧ℓ]; H-terms сокращаются.
+Для plaquettes без Role0 background links I. Для plaquettes с0
+проверяются только (+,i) компоненты δRη; все prefix/suffix — null
+rotations с неизменной plus-row и X^+_−=0 для Lorentz X. Поэтому
+полный mixed link source совпадает с flat/constant-coframe выражением.
+Оно содержит лишь antisymmetrized D_r⁻D_s⁻ψ и равно0. Это доказывает
+тождество для произвольной ψ, не только одной проверенной функции.
+
+Символический consumer на literal stencil зануляет все150 затронутых
+link covectors point-ψ при свободных A,B,D,c_x,c_y,h,x,y, БЕЗ vacuum
+substitution. Point superposition даёт весь compact family.
+Forward difference — неверная замена: одна точная mixed row равна −h.
+
+При v=h e и физической g=h⁻²vᵀηv получаем
+
+    det v^τ=h⁴[1+τ D_1⁻ψ/h],
+    g^τ_rs−g_rs=(τ/h)[δ_s0 D_r⁻ψ+δ_r0 D_s⁻ψ].         (13bn)
+
+Нет quadratic metric term, так как ℓ null. Метрика меняется, поэтому
+обычный internal Lorentz quotient эту моду не удаляет. При smooth ψ
+и 1+τ∂_vψ>0 предел — pullback исходной pp-wave по
+`(u,v,x,y)↦(u,v+τψ(u,v,x,y),x,y)`: это diffeomorphism, не новая
+материя. Для ψ∈C⁴ backward gradient сходится в C² с ошибкой O(h).
+Golden-weight координатная замена (4.2–4.3) того же владельца
+переносит всё тождество: δv_n=ρ_n⁻¹ᐟ²δvbar; в (13bn) metric row
+дополнительно умножается на ρ_n⁻¹. На прежнем schedule сохраняется
+C² rate O(h_n) для этого smooth compact семейства.
+
+Каждый f_x вдоль семейства неизменен, поэтому оно сохраняет и
+идеальный nonlinear J₂. В Hessian после Lorentz gauge-fixing остаются
+эти SAME-collar metric null directions. Это ещё не off-shell symmetry
+произвольного compiler или новый physical quotient. Perturbation ετ
+нестационарно НА САМОЙ семье; отсутствие nearby full roots из этого
+не следует: поперечное смещение может их восстановить. Уже сам kernel
+исключает прямое применение IFT после одного Lorentz gauge-fixing.
+Для persistence нужно решить actual reduced source вместе с normal
+equations либо вывести соответствующую off-shell symmetry. Ряд из
+(13bm) должен остаться среди проверяемых уравнений, а не исчезнуть
+через gauge label. Одна C³ proximity такого normal argument не заменяет.
+
+### 6.25. Equivariant compiler: точная Lorentz Ward строка при конечной ошибке
+
+Для internal Lorentz строки есть положительная конструкция, сильнее
+generic real-operator approximation. При одновременном native gauge
+переносе coframe, observer и links whitened action имеет вид
+
+    O_x=L(n'_x)g_xL(n_x)⁻¹∈SO(4), O_xe₀=e₀,
+    T_g=⊕_x Λ(O_x), O_x=diag(1,R_x), R_x∈SO(3).       (13bo)
+
+Использованы h_(gn)=g⁻ᵀh_ng⁻¹ и Ln=e₀. Это gauge orbit всего tuple,
+не объявление произвольной matter/observer вариации gauge. Actual
+Julia(C_r), Julia(P_r), их adjoints и addressed projectors ковариантны
+под T_g. Bare address shift сам по себе НЕ intertwiner.
+
+**Constant controls без нарушения Ward.** Для любого invariant
+real signed-permutation involution Q=Qᵀ=Q⁻¹ добавим один scalar
+spectator s и J=[[0,−1],[1,0]]. K_Q=J_s⊗Q — skew signed permutation,
+K_Q²=−I. Его disjoint two-plane rotations можно реализовать с ОДНИМ
+общим углом α=2^(m−1)kθ₀: CNOT-linear map переводит difference
+двух basis words в один target bit; exact Walsh identity (13af)
+изолирует любой оставшийся control pattern. Никакой affine X для
+перевода первого word в0 не нужен. У всех elementary angles ±kθ₀.
+
+При доступном exact inverse G обе экспоненты ниже — completed
+exact-equivariant words. В FORWARD-ONLY классе используем уже
+объявленный retained scalar resource c=1:
+`CNOT(c→target) G^k CNOT(c→target)=G^(−k)` НА c=1.
+c никогда не меняется. Поэтому на ВСЕХ остальных input columns
+этого сектора, а не на одном удобном состоянии, получаем
+
+    Q_α=exp(αJ_s⊗I)exp(−αJ_s⊗Q),
+    [Q_α,I_s⊗T_g]=0, ||Q_α−I_s⊗Q||≤2|cosα|.          (13bp)
+
+Irrationality θ₀/π из §6.14 даёт точности→0. Intermediate gates
+не измеряются: exact covariance относится к completed macro.
+c=0 block в forward-only repair вообще другой; его covariance и
+heat-price НЕ утверждаются. Поэтому ACTUAL return projector обязан
+содержать |1><1|_c. Тогда весь F снаружи c=1 равен0, внутри
+использует covariant U_ηP; все leakage outputs остаются в I−P.
+Это реальный cut/resource interface, не стирание wrong-flag records.
+Полная цена снабжения c=1 также не выводится из (13bp).
+
+Подходящие Q — vacuum/time/top reflections, full-query-register SWAP,
+controlled SWAP и address transpositions ТОЛЬКО на invariant vacuum
+sector с identity на его complement. У ordinary address permutation
+всей CAR fibre такого свойства нет. Full query register includes
+address, когда фактический oracle multiplexed. Все parked copies
+несут ту же T_g; occupied reference128 не становится свободной work.
+Banks — полноценные copies address⊗CAR (или одного site fibre), не
+gauge-trivial storage. Ordinary register SWAP не путается с fermionic
+mode SWAP: последний имеет знак (−1)^(|I||J|). Vacuum/top bank делает
+этот знак единицей; иначе требуется явная parity correction.
+
+**Invariant amplitudes вместо fixed CAR basis.** Пусть U_x=[u₀…u₃]
+невырождена и V_x=ΛU_x; её columns — настоящие unnormalized
+`C(u_i1)…C(u_ik)|vac>`. Тогда G_x=V_xᵀV_x=Λ(U_xᵀU_x),
+V_x⁻¹=G_x⁻¹V_xᵀ. Это compound16 Gram, не один 4×4 inverse.
+Следующие скаляры получаются конечными coherent query products:
+
+    U_xᵀU_x,
+    b_r=<time|C(u_r)|vac>=e₀ᵀu_r,
+    d_x=<top|Π_(r=0..3)C(u_r)|vac>=det U_x,
+    Z_xy=V_xᵀ Q_x P_r Q_y V_y.                       (13bq)
+
+Здесь P_r — actual addressed edge query x←y, Q_x — address projector.
+В глобальной формуле V_x означает iota_xΛU_x, включая embedding
+локальной fibre в общий query carrier.
+Moving columns НЕ подаются как готовая Ψ(g): они являются blocks
+произведений исходных Julia queries. Vacuum/time/top tests invariant
+при (13bo). Endpoint amplitudes замыкаются vacuum-only addressed
+transpositions, реализованными через (13bp), а не bare shift oracle.
+Альтернативно сам P_r выводит ненулевой vacuum transporter: при
+orthonormalized moving creators a_i=Σ_rC(u_r)(UᵀU)^(-1/2)_ri
+получаем `E_0,{r}^x P_r E_00^y=(sqrt(U_xᵀU_x))_rr |x,vac><y,vac|`.
+Его положительный коэффициент обратим на том же compact chart;
+это derived matrix identity, не новая физическая операция inverse.
+
+Есть и all-input усиление без CAR parking, если controlled Julia
+queries уже предоставлены. Moving matrix units
+`E_IJ=a_I P_vac a_J*` строятся теми же algebraic products. Если
+A_IJ=E_0I^x P_r E_J0^y=z_IJ |x,vac><y,vac| и
+V_r=d_r |x,vac><y,vac| с d_r>0, то ТОЧНО
+
+    Σ_K E_K0^x A_IJ V_r* E_0K^x /d_r=z_IJ I_CAR,x.   (13bq1)
+
+Vacuum-only address transpositions распространяют этот scalar на
+полный query register. Значит unnormalized contractions можно
+centralize в operator z_IJ I_query НА ВСЕХ input columns, не
+готовя неизвестную материю в blank. P_vac остаётся algebraic
+projector в Laurent expansion; никакой vacuum measurement нет.
+Inverses d_r,Gram по-прежнему заменяются polynomial approximation.
+
+**Controlled query без CAR bank.** Этот вход также можно построить,
+а не объявлять unitary Laurent polynomial готовым oracle. Положим
+
+    O=σ_x J(X)=[[sqrt(I−X*X),−X*],[X,sqrt(I−XX*)]],
+    Z=diag(I,−I), ZOZ=O*,
+    O CZ_(flag,coeff) O* CZ_(flag,coeff)
+      =|0><0|⊗I+|1><1|⊗O².                         (13bq2)
+
+Все новые controls действуют только по scalar flag/coefficient wires.
+При ||X||≤κ<1 спектр S=O² отделён от −1; O=exp(½Log S) на одном
+real branch. Выберем smooth odd periodic extension функции θ/2
+с содержащей спектр дуги. Её Fourier series даёт real-skew
+`L_N=Σ_(k=1..N)a_k(S^k−S^(−k))→½Log S` вместе с C³ field jets:
+smooth coefficients имеют summable |a_k|k³, а три производные S^k
+растут не быстрее C(1+k)³ на данном chart.
+
+Это ещё не физическое исполнение полинома. Для W=S^k формула (33)
+даёт `K(W)−K(Wᵀ)=−X_f⊗(W−Wᵀ)`. Scalar basis rotation X_f→Z_f
+и finite product formula с коэффициентами −a_k поэтому реализуют
+`diag(exp L_N,exp(−L_N))` в пределе product precision. На clean
+scalar f=0 получаем O с whole-output C³ convergence НА ВСЕХ query
+input columns. Controlled S по добавочному scalar predicate строится
+тем же echo (13bq2), с соответствующим scalar controlled-Z;
+controlled O получается применением того же log branch к diag(I,S).
+В самом product formula для этого берём W=ctrl_cond(S^k),
+получая на f=0 именно exp(P_cond L_N), а не просто O без control.
+Наконец ctrl J(X)=ctrl σ_x · ctrl O; первый factor — scalar control.
+Нужные scalar controls можно приближать G/CNOT: при каждой конечной
+точности они commute gauge точно. Их errors включаются в общий C³
+budget, f leakage сохраняется. Это clean-SCALAR-return lemma, не
+all-spectator unitary identity или новая цена outside cut.
+
+Таким образом (13bq1–2) убирают CAR parking и независимо предоставленный
+controlled-query oracle из этого invariant route. Нужны actual coherent
+Julia queries и объявленные scalar work/c=1 records с их price/cut;
+physical preparation/actuation по-прежнему не выводится. Старый dark-top
+storage contract §8.6 остаётся другим достаточным интерфейсом.
+
+Gram, time row b и sign d отделяют coframe орбиты именно localSO3:
+равенство Gram даёт orthogonal O, b фиксирует time axis, sign d
+фиксирует orientation. G_x⁻¹Z_xy задаёт edge operator в moving
+Role/exterior basis. Уже принадлежащая inverse карта §8.5 затем
+восстанавливает ту же geometry quotient. В частности только Euclidean
+Gram без time row потерял бы Lorentz metric `2bbᵀ−UᵀU`.
+
+На compact invariant chart с gap знаменателей и branch roots целевой
+star angle — analytic функция этих invariant amplitudes. Геометрические/
+биномиальные ряды дают scalar polynomial с C³ jets. Double-P
+Laurent expansion (32)–(34) применяется с invariant work blank;
+после centralization это P_work⊗I_query, rank-one только по scalar
+work. Это алгебраическое разложение, не серия postselections.
+В ней fixed CAR-entry permutations заменены (13bq), а invariant
+reflections/controlled SWAP — macros (13bp). Constant scalar rotations
+приближаются forward G powers; они commute gauge точно при любой
+точности. Дифференцированное finite product formula до порядка3
+даёт C³ convergence при фиксированном polynomial, затем diagonal
+polynomial/word limit. Work width фиксирована до product-formula
+precision; все offblank и spectator outputs retained.
+
+Actual query carrier тоже должен быть объявлен: site-address×CAR для
+multiplexed oracle либо общий CAR16 для явно addressed onsite calls.
+Если он является отдельным tensor factor, его ordinary-trace кратность
+входит в actual ν и return rank, не удаляется centralization. Здесь
+нет идентификации intrinsic Γ с физической metric mesh или выдачи
+новой независимой matter copy бесплатно.
+
+Таким образом внутри ЯВНО предоставленного addressed Julia/record
+класса существует последовательность complete finite programmes с
+actual invariant return cut (включая c=1), для которой
+
+    U_ηP ковариантен ТОЧНО, J_η gauge-invariant ТОЧНО,
+    ||J_η−J_ideal||_(C³)→0.                          (13br)
+
+Полный source estimate (13ba–bb) остаётся действующим; finite
+spectator не объявляется точно returned. Для pointer price detector
+также должен быть invariant или transported, произвольная fixed
+CAR bit-basis запись не покрыта. (13br) снимает Lorentz Ward defect
+этого feedback compiler. Он не доказывает exact scalar-factorization
+§6.22, backward-null-translation Ward §6.24, persistence exact roots,
+whole heat/price covariance вне cut или physical gate/resource admission.
+
+[Bounded consumer](sources/d0_af_star_full_lattice_2026-10-17/check_native_critical_family_source.py)
+проверяет новые symbolic null-translation rows, точный forward negative
+control, конечную determinant/metric формулу, non-skew Gram transport
+и completed invariant macro с ненулевой retained spectator ошибкой.
+Он импортирует только определения старого stencil, без запуска его
+root suite. [Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_CRITICAL_FAMILY_SOURCE_RESULT.json)
+сохраняет physical_GR=false и exact_compiled_roots=false.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная
