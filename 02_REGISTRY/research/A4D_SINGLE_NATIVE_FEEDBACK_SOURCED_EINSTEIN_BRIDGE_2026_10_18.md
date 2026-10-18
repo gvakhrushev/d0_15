@@ -264,3 +264,49 @@ dot D_geom-[K,D] = h M_(Dpsi) D².                     (17)
 Данный identity не доказывает (14) для actual 4D Lorentz-CAR16/Julia operator: в нём имеются mixed creators, true adjoints, observer, proper noncommuting links, full measure и real return effects. Но он задаёт точный next full GR consumer: вычислить operator covariance residual под конечной backwards-null `delta v`, отделить его commutator и оценить только spectral diagonal against actual tau/rho, в настоящих h- и spatial-reconstruction norms.
 
 **Стратегическое следствие:** два прежних препятствия — noninvertible metric kernel и UV failure exact covariance — не требуют двух новых постулатов. Общий источник этих препятствий один: отсутствие конечного product rule для непрерывной координатной диффеоморфной вариации. Его actual thermal *first-source* residue (14) и есть математическая проверка, снимающая оба в пределе, если она положительна. Действительный независимый matter source из §§2–6 и полный native Book binding остаются другой обязательной стрелкой к ОТО.
+
+
+## 10. Истинный reduced metric-kernel source = discrete divergence of the SAME matter-current (not another Einstein tensor)
+
+§9 still gave a quantitative commutator/source criterion. A sharper **exact finite identity** in the corresponding periodic scalar forward-difference model shows which native matter equation should close this entire obstruction, rather than treating metric-kernel and matter conservation as unrelated tasks.
+
+On one N-site periodic ring let `T` shift, `D=(T-I)/h`, `Delta=D†D`. Choose any smooth coordinate-like scalar `xi` and set `a_x=(D xi)_x`. Variation of the *inverse-solder coefficient of this actual same difference* is `dot D=-M_a D`, and therefore
+
+```
+dot Delta=(dot D)† D+D† dot D = -2 D† M_a D.            (18)
+```
+
+At a normalised eigenpreparation `rho=|Psi><Psi|`, `Delta Psi=lambda Psi`, fixed beta, the **actual same-price** `A=rho-tau h'(Delta)` from (9) gives a real local current
+
+```
+j_x := <x|D A D†|x>,     real, generally signed.         (19)
+```
+
+Its full first source along the coordinate-like mode is **exactly**
+
+```
+D(H+R)[delta_xi]
+   = -2 Σ_x (D xi)_x j_x
+   = +2 Σ_x xi_x (D^- j)_x,                            (20)
+```
+
+with `D^-=(I-T^-1)/h`. The second equality is periodic discrete summation by parts, not continuum approximation. Therefore stationarity for ALL permitted compact-supported xi is **equivalent** to the discrete local conservation condition `D^-j=0` in this declared model. It is simultaneously the condition that removes the null metric-kernel source and the matter-current Ward law: no separate Hessian invertibility or chosen energy tensor required.
+
+**Important full-D0 scope:** `j_x` in (19) is a model-specific exact current obtained from genuine `H+R` data; it is NOT yet the Lorentz four-current of CAR16 or physical `T^mu_nu`. For the true D0 source, retain ALL shifts, coframe/observer jets, proper links, graded CAR operators, full work/source and X embedding. The next decisive proof is to establish the corresponding source-as-divergence identity ON THAT operator and let its independent material/embedding Euler rows enforce the divergence, rather than inserting `div j=0` as an external axiom. This would jointly consume strategic §7.10's metric-null obstruction and the conservation premise in the nine-null Einstein reconstruction.
+
+**Exact negative control against false promotion from eigenpreparation alone.** On a length-six ring with `h=1`, `xi=(0,1,0,0,0,0)` and REAL normalized eigenstate
+
+```
+Psi=(2,1,-1,-2,-1,1)/sqrt(12),     Delta Psi=1*Psi,
+```
+
+the `rho` current `j_R` from D rho D† has values
+`(1,4,1,1,4,1)/12`. The thermal `tau h'(Delta)` is translation invariant and has constant diagonal current, hence contributes zero to (20). But the **full H+R** source is
+
+```
+D(H+R)[delta_xi] = +1/2 !=0.                           (21)
+```
+
+By contrast a complex momentum eigenpreparation has constant current `j_x`, so its source is 0 identically for EVERY periodic xi. Thus *both* outcomes occur at the SAME Laplacian eigenvalue under a different eigenpreparation: mere eigenstate criticality does NOT prove physical conservation. The missing physical input really is the common complete programme's current/embedding equation.
+
+This test is a direct strategic fork. If the native same-price CAR16 current satisfies a true local divergence Ward on the admitted joint-critical branch, the metric-null family can be quotiented **on shell** and the eventual Bianchi/matter conservation premise is consumed by the SAME argument. If it fails, the explicitly computed divergence source is the obstruction to physical GR; assigning a compensating `T=G/kappa` is forbidden.
