@@ -270,7 +270,9 @@ def test():
     # Explicit complete 2-site x 16-grade weighted-Hilbert representation.
     # D_count is symmetric by construction. The proper nontrivial boost
     # acts inside its full raising block; the old reference128 may tensor I.
-    edge = raising(F[0], M)
+    edge = raising([sqrtmubar_by_mu[0] * x for x in F[0]], M)
+    # This is the same physically recovered density-normalized \u005Chat X
+    # on both compensated preparations; it is not a second independent gate.
     D_count = matzero(32, 32)
     for i in range(16):
         for j in range(16):
