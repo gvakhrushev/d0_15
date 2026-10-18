@@ -175,6 +175,10 @@ for i,s in enumerate(DIRECTIONS):
 K=sp.Matrix(9,9,lambda i,j: (1+dot(DIRECTIONS[i],DIRECTIONS[j]))**2)
 Kc=K-sp.ones(9,9) # Gram of effects P-I/4 in the 16D Hilbert-Schmidt inner product.
 require(K.det()!=0 and Kc.det()!=0,'full nine signal directions')
+# Distinct settings are NOT a jointly measurable single-system POVM.
+commutator = P[0]*P[2]-P[2]*P[0]
+require(commutator != Z and sp.trace(commutator.T*commutator)==sp.Rational(3,2),
+        'nine settings are noncommuting alternatives, not simultaneous readout')
 
 # l=0,1,2 harmonic basis. On the sphere s^2=1 it is 1+3+5 dimensional.
 def hrow(s):
@@ -308,6 +312,7 @@ res={
     'null_harmonic_decomposition':'l=0+1+2, ranks 1+3+5',
     'null_singlet_effect_zero':True,
     'complete_four_outcomes':True,
+    'cross_setting_noncommutation':True,
     'singlet_complete_law':'(0,1/2,1/2,0)',
     'exact_state_response_local_surjectivity':True,
     'address_binding_conditional_Fisher_Hessian':str(FISHER),
@@ -315,7 +320,8 @@ res={
     'triplet_isotropic_q':'1/3',
     'tracefree_lorentz_null_tensor_matches':True,
     'conformal_focusing':'G[chi^-1 g](k,k)-G[g](k,k)=2 r^-1 Hess_g(r)(k,k), r=sqrt(chi)',
-    'negative_controls':['naive raw relative-chirality split has four eigenvalues',
+    'negative_controls':['cannot combine nine different directions as one commuting measurement',
+                         'naive raw relative-chirality split has four eigenvalues',
                          'opposite central orientation has no silent subspace',
                          'one-sided span rank 4, not 9',
                          'duplicated mixed sample drops rank to 8',
