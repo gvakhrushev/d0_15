@@ -2797,6 +2797,236 @@ binding и upstream history/controller пока остаются отдельн�
 либо решить actual connection/normal equations и доказать его on-shell
 компенсацию. Последнюю возможность этот counter не исключает.
 
+### 6.30. Настоящий fixed-RIGHT Euler и положительное расширение source estimate
+
+Вход `af0a6d07`. Для неизменной положительной RIGHT density σ,
+Trσ=1, подготовка записывается C=V√σ, V*V=I, ρ=C C*.
+Это genuine Stiefel domain, а не полная нормированная сфера.
+Все left-unitary variations дают точное условие
+
+    D_prep S=0 ⇔ [ρ,Δ]=0,
+    ΔC=CΛ, Λ*=Λ, [Λ,σ]=0.                         (13cq)
+
+Доказательство: δρ=[K,ρ] для всех K*=-K, так что δR=Tr[ρ,Δ]K.
+Это весь tangent fixed-Schmidt orbit; right rotations с неизменной
+σ не добавляют источник. Эквивалентно support ρ инвариантен для Δ,
+а V*ΔV коммутирует с σ. Для σ=I_r/r условие есть [Δ,P]=0,
+ρ=P/r. **Общий eigenvalue на P не требуется.** При геометрическом
+движении admissible preparation lift по-прежнему сохраняет σ;
+его источник равен TrΛ δ(C*C)=0. Необработанный moving-whitening
+term нельзя объявить tangent, если он сам меняет RIGHT density.
+
+Это снимает лишнюю common-energy гипотезу предыдущего положительного
+source estimate. Действительная свободная coframe dilation при fixed
+observer/links/calibrations даёт Δ→s²Δ. Из полной цены(8), не только R,
+
+    0=DS_scale/2=R−Tr(Δ B^(m−1))/Z
+                   +Mzβ Tr(F_price⁻¹ Δ B^(m−1)),
+    0≤R≤Tr(Δ B^(m−1))/Z≤R_* .                    (13cr)
+
+Последняя uniform bound — уже принадлежащие full thermal moment и
+Z-lower estimates [finite-heat owner §7.1](A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md).
+Условия: B≥b₀I>0, fixed-positive β, M≥0, 0≤z<1 и действительно
+допустимая scale row; это не следствие одной preparation stationarity.
+Если σ≥σ_min I с uniform σ_min>0, то ρ≥σ_min P и (13cq) дают
+
+    E_max,occupied ≤ R_*/σ_min,
+    |DS_matter,nat[ψ]| ≤ 2Ch||ψ||_(C^m)
+                       √R_* (1+R_*/σ_min).        (13cs)
+
+В самом деле R≥σ_min Tr(PΔ)≥σ_min E_max; для graph residual §6.28
+используем Σw_a√E_a≤√R, а не общий E_a. Spectral commutator trace
+равен0 уже из [ρ,Δ]=0; [ρ,D]=0 не нужен. Thermal часть (13cg)
+не меняется. Поэтому полный finite-B O(h) bound и конечный spectral
+compactness consumer распространяются на stationary multi-energy
+fixed-RIGHT preparations. При RIGHT=I128/128 E_max≤128R_*.
+Сохраняются все CAR grades и ±Dirac coherences. Если минимальный
+Schmidt weight убывает при refinement, uniform cutoff отсюда не следует.
+Ни geometric measure, ни physical preparation этим не выбираются.
+
+**Actual link rows прежнего resolved counter.** Он не является joint
+root: на q=−2θ(1,1,1,1), ζ=(e^(iθ)−1)/|e^(iθ)−1|,
+для Ω_r(x)=2Re(ωe^(iqx))B_(0i) имеем
+
+    DS=2Re(ω J_ri),
+    J_ri=−μ u_ri ζ e^(iθ)/(32ell).                 (13ct)
+
+Все12 sine-boost rows ненулевые; все12 rotation rows на этой q равны0.
+При real cos и sin amplitudes источники равны соответственно
+μu_ri sin(3θ/2)/(32ell) и −μu_ri cos(3θ/2)/(32ell).
+Это буквальная сумма восьми full-CAR standing contributions с ρ=P/128;
+thermal/feedback часть q≠0 точно0. Таким образом компенсацию нужно
+искать на иной совместной ветви, не объявлять уже сделанной здесь.
+
+Важна и правильная совместимость подготовки. Пусть E — ВЕСЬ μ² shell,
+а P — rank128 из(13cl). Дифференцирование [Δ,P]=0 требует
+(E−P)δΔP=0, но не PδΔP=δλP. Для η_in=(c_empty+s_empty)/√2
+и η_out=(c_empty−s_empty)/√2∈E−P действительный metric jet даёт
+
+    <η_out,δΔ_metric η_in>=Re m
+       =512ν³r⁴(1−r²)/[(1+r²)^(11/2)h ell²]≠0.    (13cu)
+
+Любой local link jet имеет Π_≤1 δD_link Π_≤1=0; clock compression
+всех observer jets также0. Поэтому эти normal corrections не дают
+C¹ lift при ИМЕННО заданной полной coframe tangent через этот partial
+root. Дополнительная coframe correction здесь не исключается.
+В resolved scaling(13cp) Re m=O(h): это конечная compatibility boundary,
+**не** uniform continuum no-go. Диагональный Im m=O(1) запрещал бы
+только более сильное common-eigenvalue sphere условие; для fixed RIGHT
+такой аргумент неверен. [Literal check](sources/d0_af_star_full_lattice_2026-10-17/check_native_link_preparation_source.py)
+и [receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_LINK_PREPARATION_SOURCE_RESULT.json)
+сохраняют эту разницу и все24 link directions.
+
+### 6.31. Ведущий источник компенсируется связью; полный normal symbol теперь вычислен
+
+Нужно различать операторное равенство и источник на normal solution.
+Из уже принадлежащего (6) [coframe/heat owner](A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md)
+допустимый trace lift
+
+    T^a_bc=(δ_ab b_c−δ_ac b_b)/3, h₃=0, v=b,
+    A₂,red=−(4/3)∫R_G dV_G                         (13cv)
+
+действительно убирает ведущий density source. Это положительная
+source-level компенсация, несмотря на (13ch). Tensor16 можно положить0
+для данного lift; a₂ не выбирает его0. R_G здесь curvature ПОЛОЖИТЕЛЬНОЙ
+principal metric G; Lorentz g не переименовывается в G.
+
+После conjugation measure оставшийся Z_eff — правая Clifford-связь:
+W_i=(1/6)Σ_j b_j(hatγ_i hatγ_j−δ_ij I). Она коммутирует с левыми γ,
+но имеет кривизну. При flat fixed G, независимом b=df и продольном v
+полный16 quadratic coefficient следующего порядка равен
+
+    A₄^(2)=∫[2|∂(v−b)|²+(4/9)|∂v|²]dV,
+    v=b ⇒ A₄^(2)=(4/9)∫(Δf)²dV.                  (13cw)
+
+Все tensor16 mixed coefficients с этим продольным сектором равны0.
+Другие mixed sectors исключаются стабилизатором ξ и spatial reflection.
+Расчёт интегральный: periodic/compact support или zero boundary flux
+удаляет ∫tr∇²E/6. Это fixed-G density slice; при настоящей вариации e
+также меняются G и curvature/mixed coefficients. (13cw) не объявляется
+полным scalar coframe Schur или no-go для всей цены.
+
+Для u=v−b, k²=|ξ|_G² ненулевая normal row обрезания C₂A₂+C₄A₄ есть
+
+    (−4C₂+(22/9)C₄k²)u=−(4/9)C₄k² b,
+    Q_density,red=(4/9)C₄k²
+       (−4C₂+2C₄k²)/(−4C₂+(22/9)C₄k²)|b|².       (13cx)
+
+Итак leading lift не зануляет автоматически следующий источник.
+Но, в отличие от постоянного tensor sector, все НЕнулевые tensor
+Fourier modes уже имеют невырожденный A₄ quadratic form:
+
+    spec G₄,tensor(ξ)={(4/9)k²:6, (4/3)k²:10}.
+    det(G₂+xG₄)=−(2^36/3^21)x^16(x−2)^3(x−6)^3
+                                      (x+18)(11x−18),
+    x=C₄k²/C₂, C₂≠0.                              (13cy)
+
+Норма здесь Σ_(a,b<c)(T^a_bc)². Это Gram: настоящий Hessian равен
+2(C₂G₂+C₄k²G₄), его determinant дополнительно имеет множитель
+2^24 C₂^24; Cartan coordinate change добавляет квадрат Jacobian.
+Резонансы обрезанного24-symbol ровно {0,2,6,−18,18/11}.
+Постоянный tensor sector остаётся quartic при T=0.
+
+Коэффициенты C₂,C₄ берутся из ПОЛНОЙ spectral цены, equation(11)
+владельца; C₄=β/A₀−M log(1/(1−z))/(4π)². Его знак не универсален.
+При F=νI и coordinate volume V знак меняется при
+ν⁴=MV log(1/(1−z))/(π²β). При рабочих калибровках, V=1 и Julia margin
+κ>ν_*≈0.0634 эта смена знака лежит внутри strict domain.
+Даже отсутствие резонанса (13cy) не даёт fixed-β обращения полной цены:
+R, global normalizer, higher heat remainder и их mixed rows сохранены.
+В частности large βk² нельзя использовать для подавления heat remainder.
+
+[New exact coefficient check](sources/d0_af_star_full_lattice_2026-10-17/check_native_connection_normal_source.py)
+читает только pinned creator AST и уже принадлежащий G₂; прежний suite
+не запускается. [Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_CONNECTION_NORMAL_SOURCE_RESULT.json)
+фиксирует normal24, tensor16 и границу применения обрезания.
+
+### 6.32. Точный finite-B normal Hessian вместо предположения о heat remainder
+
+Следующий consumer можно вычислять прямо для неизменной цены(8).
+Пусть a(E)=(1−αE)^(m−1), F(E)=1−z+z(1−αE)^m и
+κ_Z(E)=−a(E)/Z+Mzβ a(E)/F(E). Для actual selfadjoint D-path,
+Q=Δ′={D,D′}, R₂=Δ″=2(D′)²+{D,D″}, получаем ТОЧНО
+
+    S″|ρfixed =Tr[(ρ+κ_Z(Δ))R₂]
+      +Σ_ab κ_Z^[1](E_a,E_b)|Q_ab|²
+      −β Z⁻²[Tr(a(Δ)Q)]².                         (13cz)
+
+Divided differences берутся при Z=Z₀ только в этом коэффициенте;
+отдельный последний член есть настоящая производная global normalizer.
+При совпадении energies используется κ_Z′. Сумма по всем ordered pairs
+уже включает обе conjugate строки: дополнительного2 нет.
+Это прямое дифференцирование logZ/β−MTrlogF+TrρΔ, а не новая action.
+Для mixed jets формула поляризуется в Q_a,Q_b,R_ab.
+
+На flat links proper chart M_r(x)=exp N_r(x), K_r=Γ(N_r) даёт
+для l=k+q, t_r(k)=exp(ik_r)
+
+    V_q(l,k)=ell⁻¹Σ_r[t_r(k)C(u_r)K_r(q)
+                  +bar(t_r(l))K_r(q)^t C(u_r)^t],
+    Q_q(l,k)=D₀(l)V_q+V_qD₀(k).                    (13cz1)
+
+Здесь t — комплексно-линейный transpose real fiber basis: Fourier
+coefficient не сопрягается второй раз. Reality даёт V_−q=V_q* на
+переставленных endpoints. Mixed second link jet содержит
+{K_a,K_b}/2 из exp(Σs_aK_a); его вклад {D,D_ab} в R_ab не полагается
+нулевым по определению. Линейная link chart I+N потеряла бы этот term.
+
+Подготовка также не замораживается. Для существующего fixed-RIGHT
+stationary lift выберем общий Δ,ρ basis с energies E_a, весами w_a.
+Дифференцирование [Δ,ρ]=0 даёт при E_a≠E_b
+
+    (ρ′)_ab=(w_a−w_b)Q_ab/(E_a−E_b),
+    S″_red=S″|ρfixed
+             +Σ_(E_a≠E_b)(w_a−w_b)|Q_ab|²/(E_a−E_b). (13cz2)
+
+Это действительный preparation Schur term, включая нулевые weights
+вне support. Его знак не постулируется. При E_a=E_b и w_a≠w_b
+необходимо Q_ab=0; деление0 запрещено. При равных weights внутреннее
+energy splitting разрешено, preparation contribution этого блока0.
+При неодинаковых весах внутри degenerate shell это лишь necessary
+compatibility, не existence theorem для smooth под-проекторов.
+
+Положительный sufficient lift: occupied spectral clusters изолированы,
+каждому ПОЛНОМУ cluster соответствует один постоянный Schmidt weight.
+Тогда Riesz projectors P_j(s) гладкие и unitary transport
+ρ(s)=Σ_j w_j P_j(s) имеет exact purification с исходной RIGHT σ.
+Для uniform refinement требуются uniform cluster gaps и допустимость
+этого lift в реальной программе. Partial shell(13cl) такой gap не имеет;
+его actual finite obstruction показан (13cu). Полная sphere preparation
+имеет иное, более сильное common-energy условие и не подставляется сюда.
+
+Новые exact rational jet controls в том же checker независимо проверяют
+(13cz), repeated energies с сохранённой ±Dirac coherence, знак и ordered
+counting (13cz2). Удаление normalizer, proper D″ или prep response даёт
+ненулевые ошибки. Эти3×3 controls проверяют общее функциональное
+тождество, не заменяют actual CAR16/reference128; normal24 расчёт выше
+выполнен на полном exterior carrier.
+
+**Конкретный следующий шаг:** (13cz–cz2) на существующем actual full-price
+joint root с proper24 link jets, истинными spectral clusters и fixed-RIGHT
+compatibility; затем reduced metric/current row, существование curved
+корней и controlled refinement. Нельзя заменить этот шаг одним
+положительным A₄-symbol или выбранной Einstein action.
+
+### 6.33. Присланный инструмент: сохранён и сопоставлен с уже доказанными переходами
+
+[Полный новый текст](sources/d0_af_star_full_lattice_2026-10-17/USER_NATIVE_PRICE_SYNTHESIS_2026_10_18.txt)
+уже сохранён byte-for-byte как исследовательский вход. Повторно присланный
+файл имеет тот же SHA256 `d5706efac0dc8791f010557810a1e1ad835b3fdc2f8578432e5f13f883bd2570`;
+вторая копия не создаётся. Его C_Y уже исполнен
+в §6.13; capacity/radial vacuum consumer принадлежит §§6.10,6.15–17.
+На полном свободном radial domain CritΓ=CritP выводится из radial rows,
+которые сами заставляют f_x=0. На fixed collar перенесена конкретная
+уже доказанная семья f_x=0, не все возможные stationary configurations.
+Γ=logD/ell есть цена ПОСЛЕ устранения balanced preparation на данной
+ветви; сама копия C_Y сохраняет входной law и не создаёт этот профиль.
+Уникален law внутри указанного submersion chart, не вся quantum state.
+Прямой Book-feedback §6.18 уже даёт положительный star-source transfer
+без назначения entropy maximum; moving scene H_B:DB и whole rest price
+из §6.19 при этом остаются. Поэтому этот вход не объявляется новым
+доказательством native admission, независимой материи или всей ОТО.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

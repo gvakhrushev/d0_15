@@ -2,6 +2,29 @@
 
 ## 18 October 2026 — native source, preparation and nonlinear GR synthesis
 
+**Actual connection/normal consumer, input `af0a6d07`:**
+[Strategic §7.13](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+proves that the leading density source really cancels after the trace-torsion
+lift. The full24 nonzero-frequency A2+A4 normal Gram, its exact resonances,
+tensor16 ellipticity and independent-density Schur coefficient are now
+computed. This is a coefficient truncation; no fixed-beta domination over
+R or the heat remainder is assumed. Instead the exact finite-B H+J+R
+normal Hessian is derived, including the global normalizer, proper second
+link jets and the genuine fixed-RIGHT preparation Schur term. Its consumer
+is the existing full-price joint root, with actual spectral projection/gaps,
+followed by the reduced metric/current equation and curved recovery.
+
+The full weak O(h) source and spectral-compactness result also extends
+to multi-energy fixed-RIGHT stationary preparations: [rho,Delta]=0 plus
+the actual scale row and uniform positive minimum Schmidt weight gives
+a uniform occupied-energy cutoff. Common energy is unnecessary. All24
+actual link rows of the earlier resolved partial counter are now explicit;
+its finite preparation-lift obstruction is O(h), not a continuum no-go.
+The supplied C_Y/capacity synthesis is preserved and mapped to its existing
+owners; it does not provide a new native preparation or independent matter.
+Two new bounded calculations test these exact consumers; older suites
+are reused. Physical/native GR closure is not claimed.
+
 **Full spectral quotient consumer, input `61737b24`:**
 [Strategic §7.12](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 proves an O(h) weak metric-family source bound for the actual finite-B

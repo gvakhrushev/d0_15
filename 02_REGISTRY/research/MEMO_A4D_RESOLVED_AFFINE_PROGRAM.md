@@ -23,6 +23,23 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+Latest actual-normal consumer, input `af0a6d07`:
+[strategic §7.13](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+proves leading source compensation by a genuine trace-torsion lift,
+computes the full24 A2+A4 Fourier normal symbol and its exact resonances,
+and derives the exact finite-B full-price Hessian needed to proceed
+without an uncontrolled heat truncation. Keep the global normalizer,
+proper link second jets and genuine fixed-RIGHT preparation response.
+The weak-source bound now covers multi-energy stationary fixed-RIGHT
+preparations with uniform positive minimum Schmidt weight; common energy
+is unnecessary. The earlier counter's actual boost rows are nonzero;
+its finite O(h) lift obstruction is not a continuum no-go. Continue on
+the existing full-price joint root with its true spectral cluster projection,
+then solve the reduced metric/current row and curved recovery. Native
+admission, independent matter and nonlinear physical GR are still required.
+The new C_Y/capacity input is preserved and mapped to already owned
+proofs; copying the leaf does not supply its preparation law.
+
 Latest full-spectrum consumer, input `61737b24`: [strategic §7.12](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 proves O(h) weak current-source control for the actual finite-B price
 on a globally smooth elliptic chart with an independently supplied

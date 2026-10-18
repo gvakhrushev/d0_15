@@ -12,6 +12,43 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: solve the actual connection/normal source, not just the measure operator
+
+Input `af0a6d07`; the preceding goal turn made progress by publishing
+the full finite-B weak-source estimate, exact measure costate and a
+bounded-energy fixed-RIGHT counter to the prep/observer shortcut.
+This turn tests the alternative left open there: cancellation after
+the genuine connection/normal equations. Read-only assistants derive
+the actual full Lorentz-link rows on that resolved family, examine
+the reduced connection Schur problem without assuming invertibility,
+and test whether the full on-shell variational identities supply the
+missing scalar measure row. The consumer is (13cc)/(7.30), followed
+by actual joint roots and Einstein recovery; operator equality is not
+required if the true source cancels. Keep all16 CAR, reference128,
+every fixed-calibration spectral term, proper link tangents and the
+same source normalization. Root alone edits the shared scientific
+owners and one decisive bounded calculation if needed. No new measure,
+connection restriction, conservation law, stress or action is admitted.
+Use the existing heat/torsion/source theorems; do not replay them or
+promote a partial stationary witness to a full joint counterexample.
+
+Consumed in full-source §§6.30–6.33 / strategic §7.13: a true trace-torsion
+lift cancels the leading source; the entire24 A2+A4 Fourier normal symbol,
+tensor16 ellipticity and independent-density Schur coefficient are exact.
+Full-price domination of that truncation is not assumed. The replacement
+consumer is the exact finite-B Hessian with global normalizer, proper link
+second jets and the genuine Stiefel preparation Schur term. Fixed-RIGHT
+stationarity requires [rho,Delta]=0, not common energy; the actual scale
+row plus uniform minimum Schmidt weight extends source/compactness bounds
+to multi-energy preparations. The resolved counter's boost rows are nonzero;
+its protected fixed-RIGHT lifting obstruction is O(h), not a continuum
+no-go. Two new portable bounded checks verify these inputs without old
+suite replay. The new supplied C_Y/capacity text is preserved byte-for-byte
+and mapped to its already owned proofs. Next: evaluate the exact normal
+matrix on the actual joint root with its spectral cluster compatibility,
+then the reduced metric/current equation and curved recovery. All physical
+admission/matter/full-refinement obligations and original terminal remain.
+
 ### 18 October: close the current equation through its native matter and measure
 
 Input `61737b24`; the preceding goal turn made progress by publishing

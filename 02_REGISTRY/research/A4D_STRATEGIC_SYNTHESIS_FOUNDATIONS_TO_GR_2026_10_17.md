@@ -1623,6 +1623,77 @@ source. Невозможность cancellation всего оператора н
 применим без ещё одного общего Ward-постулата. Он не заменяет source
 выбора physical action, nonlinear joint recovery и Lorentz-matter binding.
 
+### 7.13. Компенсация leading source и переход к точному normal Hessian всей цены
+
+Вход `af0a6d07`; [full-source §§6.30–6.33](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+потребляют оставленную в §7.12 возможность on-shell компенсации.
+Положительный результат: trace-torsion lift v=b,h₃=0 действительно
+даёт A₂,red=−(4/3)∫R_G dV_G. Операторное неравенство (13ch) этому
+не препятствует. Но R_G относится к положительной principal metric,
+а не автоматически к операционному Lorentz g.
+
+Впервые вычислен весь nonzero-Fourier normal24 symbol следующего
+coefficient. Tensor16 имеет eigenvalues (4/9)|ξ|² с multiplicity6 и
+(4/3)|ξ|² с multiplicity10. Quartic degeneracy относится к constant
+tensor modes. В исходной torsion Gram норме
+
+    det(G₂+xG₄)=−(2^36/3^21)x^16(x−2)^3(x−6)^3
+                         (x+18)(11x−18), x=C₄|ξ|²/C₂. (7.32)
+
+При fixed flat G и независимом b=df normal reduction оставляет
+вычисленный density Schur coefficient(13cx), а не тождественный0.
+Это coefficient truncation; ни полный coframe source, ни превосходство
+над actual R и heat remainder этим не утверждаются. C₄ может менять
+знак даже при неизменном β. Поэтому нельзя получать full IFT из
+«a₂ rank8 плюс a₄ lifts16» или выбирать large β|ξ|² как small remainder.
+
+Вместо этого получен точный normal consumer самой конечной цены.
+Для Q=Δ′, R₂=Δ″, a(E)=(1−αE)^(m−1),
+κ_Z(E)=−a(E)/Z+Mzβa(E)/F(E), при fixed normalized preparation:
+
+    S″=Tr[(ρ+κ_Z(Δ))R₂]+Σ_abκ_Z^[1](E_a,E_b)|Q_ab|²
+                           −βZ⁻²[Tr(a(Δ)Q)]².        (7.33)
+
+Divided differences используют fixed Z₀, последний term возвращает
+его действительную производную. Proper link exponentials дают настоящий
+D″ в R₂=2(D′)²+{D,D″}; его нельзя обнулить линейной link chart.
+Действительный fixed-RIGHT stationary lift добавляет ordered sum
+Σ_(E_a≠E_b)(w_a−w_b)|Q_ab|²/(E_a−E_b), а при equal-energy unequal-weight
+block требует Q_ab=0. Ни общего λ, ни inverse нулевого gap здесь нет.
+Изолированные полные spectral clusters с постоянным весом на cluster
+имеют smooth Riesz-projector lift с той же RIGHT density; partial
+degenerate shell требует отдельной subprojector compatibility.
+
+Есть и положительное расширение §7.12: genuine fixed-RIGHT preparation
+stationarity есть [ρ,Δ]=0, а не общая eigenpreparation. Свободная
+coframe scale row полной цены уже ограничивает R≤R_*. Если неизменная
+RIGHT σ имеет uniform σ_min>0, occupied energies≤R_*/σ_min и полный
+finite-B O(h) bound сохраняется с matter factor
+√R_*(1+R_*/σ_min). Для RIGHT=I128/128 это cutoff128R_*.
+Геометрическая мера остаётся отдельной предпосылкой положительной оценки.
+
+У resolved counter §7.12 теперь вычислены все24 link rows: rotations0,
+boosts на диагональной q ненулевые. Это partial root, как и было заявлено.
+Для prescribed coframe tangent правильный fixed-RIGHT obstruction —
+off-support Re m=O(h), а не common-λ diagonal Im m=O(1).
+Поэтому finite C¹ lifting boundary не превращается в continuum no-go.
+
+Присланный C_Y/capacity синтез сохранён полностью; точные переходы уже
+принадлежат §§6.10,6.13,6.15–18 владельца. Active copy не создаёт входной
+law и сама не выводит capacity preparation. На full radial domain
+vacuum forcing не круговой; fixed-collar результат переносит известную
+семью. Actual Book-feedback source transfer уже сильнее предположения
+об entropy maximum; moving scene и whole rest source не удаляются.
+
+**Следующий consuming step** — вычислить (7.33) вместе с настоящей
+preparation projection на существующем full-price joint root, затем
+его reduced metric/current source и curved recovery. Это заменяет
+необоснованное обращение heat truncation одной точной конечной задачей.
+Два новых bounded calculations проверяют normal coefficients, actual
+CAR link/prep rows и exact finite-B functional identity; старые root,
+heat и Lean suites не переигрываются. Native dynamics, независимый
+источник и полный D0→ОТО остаются целью, не объявляются доказанными.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября
