@@ -9,6 +9,7 @@ Base: `main`
 Branch: `exp/a4d-resolved-curved-stationary-closure`
 Primary artifact: `02_REGISTRY/research/MEMO_A4D_RESOLVED_CURVED_STATIONARY_CLOSURE.md`
 Execution: `GitHub-first`
+Assembly: `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`
 
 ## Why delegated
 

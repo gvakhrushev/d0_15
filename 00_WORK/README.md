@@ -21,7 +21,9 @@ acceptance. These are roles, not additional permanent task classes or slots.
 Read-only assistants and implementation subtasks inside an owned PR do not
 need their own queue rows. Independently owned scientific obligations do.
 
-Before delegating, put the interface in the existing brief (no new registry):
+Before delegating, put the interface in the existing brief and bind its shared
+definition in the [gravity assembly](../02_REGISTRY/gr_assembly/README.md).
+This is composition data, not a second queue or claim-status registry:
 
 | Field | Required content |
 |---|---|
@@ -31,12 +33,20 @@ Before delegating, put the interface in the existing brief (no new registry):
 | Consumer | Parent lemma/equation; where this output is substituted and which premise it removes |
 | Write surface | Disjoint paths and one branch/worktree owner |
 | Decisive check | Smallest calculation/proof and negative control that can decide the claim |
+| Assembly | One `Assembly: TASK-ID` line, a registered interface/work key and separate start/completion premises |
 
 If no parent consumer can be named, keep the idea out of the active wave.
 If interfaces conflict, the integrator resolves them before dependent work
 starts. An exact obstruction changes the parent route; do not answer it with
 another exhaustive census unless that census is needed by a named estimate.
 A free WIP slot alone does not establish prerequisites.
+
+For route selection run `python tools/gr_assembly.py next`; it resolves live
+executions once and shows the consuming step and reviewable result applications.
+For a named task use the ordinary dispatcher below. `why OBLIGATION`, `search
+QUERY` and `attempts QUERY` return the exact missing inputs and prior scoped
+results without a corpus audit. Potential downstream reach is separate from
+the number of newly ready consumers; neither is a probability of success.
 
 ## Start or resume once
 
@@ -63,6 +73,11 @@ A free WIP slot alone does not establish prerequisites.
    prerequisites and WIP including live executions. Start from current `main`;
    run `python tools/task_lifecycle.py start TASK-ID`; open a Draft PR before
    substantive work. Continue in that PR until Ready.
+
+   Gravity start checks also reject a different task with the same scientific
+   work key/interface, unresolved actual start prerequisites and live WIP
+   overflow. They run before any lifecycle mutation. Conditional lemmas can
+   proceed on declared interfaces while their physical assumptions remain open.
 
 Portable dispatch includes both repository and task ID. CI checks brief metadata:
 
@@ -96,6 +111,19 @@ actually revised, not a bulk cosmetic migration.
    parent argument. Local experiments do not need a remote commit each time.
    Record either the discharged premise or the exact obstruction and route change.
 
+   Record an application with `python tools/gr_assembly.py template TASK-ID`.
+   Pin the result, map every hypothesis, name the parent location and obtain
+   independent acceptance on the exact application digest. Different interfaces
+   require proved maps for carrier, action, variations, source, normalization,
+   refinement and scope. A finite check cannot fill a uniform-family premise.
+   A scoped no-go can classify the original target or exclude its stated route;
+   it cannot fill a positive existence slot. The original raw response and
+   positive physical GR remain separate goals.
+
+   Retirement and the Ready PR gate require the binding's accepted completion
+   premises. Parent research can remain open while a narrower result application
+   is accepted. Do not retire an unresolved parent to publish a useful slice.
+
 Preserve all specified components, source terms and resonant directions.
 Compare actions only when action equality is necessary; equality of physical
 operators or a controlled response remainder may suffice. Do not identify
@@ -125,6 +153,8 @@ Useful structural commands (select those affected by the change):
 python tools/validate_repo.py
 python tools/validate_work.py
 python tools/validate_agent_protocol.py
+python tools/gr_assembly.py check
+python tools/gr_assembly.py render --check
 python tools/render_work_status.py --check
 python tools/generate_lean_views.py --check
 ```

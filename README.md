@@ -30,6 +30,12 @@ before launching another execution. Iterate with the smallest relevant check;
 run the affected integration checks at Ready. See the
 [validation matrix](00_WORK/README.md#validation-budget).
 
+The [D0 to GR assembly overview](02_REGISTRY/gr_assembly/VIEW.md) connects
+obligations, exact interfaces and accepted applications. Run
+`python tools/gr_assembly.py next` for live owners and the next consuming steps,
+or `why` / `search` / `attempts` for a bounded lookup. Historical research stays
+searchable with its original scope; it does not automatically close a premise.
+
 ---
 
 > **How can a closed finite system produce reproducible facts without an external classical observer?**
@@ -46,6 +52,7 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
 
 - [Current objective and scientific route](#current-objective-derive-general-relativity-ото)
 - [Parallel execution and validation](00_WORK/README.md)
+- [Gravity assembly and result intake](02_REGISTRY/gr_assembly/README.md)
 - [1. The Core Inversion (Read This First)](#1-the-core-inversion-read-this-first)
   - [The Foundational Premise](#the-foundational-premise)
 - [2. Architecture & Flow of Forcing](#2-architecture--flow-of-forcing)

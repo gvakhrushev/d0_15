@@ -79,6 +79,12 @@ jobs:
           python tools/validate_agent_protocol.py --self-test
           python tools/validate_agent_protocol.py
 
+      - name: Gravity composition contracts and generated overview
+        run: |
+          python tools/test_gr_assembly.py
+          python tools/gr_assembly.py check
+          python tools/gr_assembly.py render --check
+
       - name: Python syntax
         run: python -m compileall -q tools 04_CERTIFICATES
 

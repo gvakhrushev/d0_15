@@ -10,6 +10,7 @@ Base: `main`
 Branch: `exp/a4d-resonance-divisor-stratification`  
 Primary artifact: `02_REGISTRY/research/A4D_RESONANCE_DIVISOR_STRATIFICATION.md`  
 Execution: `GitHub-first`
+Assembly: `EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION`
 
 ## Why delegated
 
