@@ -23,6 +23,11 @@ preparation catalogue. Together with the existing controlled small-heat
 bound `M z c<beta`, the next strategic consumer is the complete actual
 history/price and native calibration law, or a proved admissible source
 limit. No new action, counterterm or matter defined as a residual is added.
+The immediate calibration test is also consumed: making feedback z a
+free interior variable would give `S_z=M Tr[E(I-zE)^-1]>0`, so it cannot
+determine a stationary calibration of this same price. Native freedom of
+z is not assumed. An actual constraint/controller must supply its own
+source, and any derived z(fields) contributes `S_z Dz` to geometry.
 
 **Prior positive first lift, input `7966c217`:** §§8.13–8.15 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)

@@ -43,6 +43,11 @@ its native calibration law, or a source-controlled admissible limit.
 The existing `M z c<beta` theorem already rules out controlled beta→0
 with fixed positive feedback coupling. Other roots, fixed-beta limits,
 independent physical matter and other derived prices remain separate.
+The next calibration shortcut is already resolved by the owned source:
+if z were independently variable, `S_z=M Tr[E(I-zE)^-1]>0` would preclude
+an interior joint root. The required input is therefore an actual native
+constraint/controller and its full source; a derived z(fields) adds
+`S_z Dz`. Native z-freedom or a convenient new schedule is not postulated.
 
 At input `7966c217`, §§8.13–8.15 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)

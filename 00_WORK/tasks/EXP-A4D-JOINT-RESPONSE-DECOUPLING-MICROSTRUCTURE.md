@@ -53,6 +53,15 @@ The next GR consumer is actual complete history/price/calibration or a
 proved admissible source limit, not another local lift through these
 roots. No global physical closure or nonlinear spatial existence is claimed.
 
+Immediate calibration consumer: use the existing full moving-calibration
+source to test independent z-stationarity, without asserting that native
+z is free. The positive derivative `S_z=M Tr[E(I-zE)^-1]>0` excludes
+this shortcut. An actual native constraint z=f(fields) contributes
+`S_z Df`; an actual controller must supply its own opposing z-source.
+Zero-sheet squared penalties and complete-history normalization do not
+provide it. This is an analytical consequence of owned formulas, with
+independent review; no new numerical replay, calibration or action is added.
+
 ### 18 October: consume the complete labelled history source
 
 At published `275244e5`, consume the operational CAR-clock reading, exact
