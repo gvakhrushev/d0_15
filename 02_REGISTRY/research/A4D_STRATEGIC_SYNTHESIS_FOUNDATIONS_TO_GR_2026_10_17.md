@@ -2846,3 +2846,40 @@ D S_{\rm mean}=\kappa(g)D S_{\rm MAP}=2\kappa(g)D[J/\log\varphi],
 
 **Новая стратегия одной задачи:** exact microscopically inequivalent histories with one Einstein metric снимают требование искать специальное состояние или полный nonlinear action для этого null-sector. Значит физический финал теперь — доказать, что истинная **compulsory** whole-book/full-history first source имеет \(a_h,b_h\), и что оставшиеся REAL oscillator/clock/preparation/old archive source rows зануляются на jointly admitted lift. Затем их же analytic source/norm перенос к общему GR+matter. Не подменять этот переход выбором MAP вместо mean, затёртой old price, отдельным stress или произвольной E-подготовкой. Оригинальные fixed-g/tau/raw#216 и all-time physical selection остаются OPEN.
 
+
+
+### 7.29. Прорыв: вся нестационарная Brinkmann-ОТО сводится к 2 Cartan rows и одной Poisson
+
+[Exact general Brinkmann all40 Cartan–Einstein theorem](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md) / [independent symbolic checker](sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py) / [true Golden/variable-material numerical source](sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_time_dependent_golden_source.py). This is the next **POSITIVE** reverse-Einstein result from the old exact microhistory quotient, consuming the user's challenge to go beyond the quadratic pp-wave and not inventing another GR-looking action.
+
+The OWNED literal based Lorentz six-plaquette star coframe \(e^+=du,\ e^-=dv+\tfrac12H(u,x,y)du,\ e^{2,3}=dx,dy\) is now tested with **arbitrary symbolically independent \(H(u,x,y)\) values**, rather than quadratic H or fixed u. Before solving, use independent original proper Lorentz u-link coefficients K₂(u,x,y),K₃(u,x,y) along the SAME already-owned nilpotent N₂,N₃; ALL OTHER original 16 coframe and24 link directions are independently varied against the full action. A new exact symbolic calculation of the ENTIRE original action finds \(\mathcal P_\star(z)=0\), and **37 of 40 independent Euler entries IDENTICALLY 0**, with the other THREE EXACTLY
+\[
+\begin{gathered}
+E_{v_v^+}=h(K_2-K_{2,+x}+K_3-K_{3,+y}),\\
+E_{U_v,+2}=h²(K_2(u-h)-\tfrac12[H-H_{-x}]),\
+E_{U_v,+3}=h²(K_3(u-h)-\tfrac12[H-H_{-y}]).
+\end{gathered}
+\]
+THE TWO ACTUAL Cartan/link equations uniquely force the one-u-tick staggered connection
+\(K_a(u,\mathbf x)=\tfrac12[H(u+h,\mathbf x)-H(u+h,\mathbf x-h\hat e_a)]\), \(a=x,y\).
+Thus all24 Lorentz link rows and other15 coframe rows vanish EXACTLY, and the last Euler is
+\[
+\boxed{E_{v_v^+}=-\tfrac{h^3}{2}\Delta_h^\perp H(u+h,x,y).}
+\]
+**Crucial:** earlier attempts with \(A=A(u)\) kept the OLD same-u connection and found two leftover link rows. This result SOLVES those rows; they are not an unremovable pp-wave boundary. The one-step shift is FORCED by Palatini, not guessed from an external causal delay, although actual D0 physical clock/source scheduling still requires a real programme.
+
+The SAME CORRECT twice-ticked one-Golden LEFT-controlled Book03 J₂ supplies its real Lorentz Clifford scalar/top matter source \(q=0,\ D_{v_v^+}q=-2E(u)/h\) even for arbitrary nonconstant \(E(u)=|D_u^+\Psi(u)|²\), while both independent scalar Euler rows vanish by literal v-Stokes. With the OWNED full feedback \(\lambda_-(2^{-20})=-23.416406751884...\), true site PF weights/counterbalanced dressed operational metric and every real scene528+22448 return/complement, all **16+24+2** free field equations become ONE exact general time-dependent sourced Poisson equation
+\[
+\boxed{\Delta_h^\perp H(u+h,\mathbf x)=-4\lambda_-(2^{-20})\,E(u).}
+\]
+There is a closed-form particular solution \(H_j=-\lambda_-E_{j-1}(x²+y²)\) and an ENTIRE arbitrary transverse discrete harmonic \(W_{h,j}\) for each time j. Genuine analytic exact harmonics include \(x³-3xy²\), \(x⁴-6x²y²+y⁴-h²(x²+y²)\), \(e^{\alpha_h x}\cos ky,\ \cosh(\alpha_hh)+\cos(kh)=2\). By discrete Dirichlet maximum principle plus quadratic barrier, **ANY smooth harmonic W(u,x,y)** on a fixed transverse rectangle has an exact discrete W_h with O(h²) uniform reconstruction; the Cartan shift adds O(h) for smooth E. Therefore the smooth limit is an infinite-dimensional CLASS of genuine nonlinear Einstein–CAR-null-scalar pp-wave geometries with **arbitrary null time dependence and arbitrary harmonic transverse wave content**, not only the old two constant Weyl polarizations:
+\[
+\operatorname{Ric}_{uu}=\tfrac12\Delta_\perp H
+=-2\lambda_-|\Psi'(u)|²,\quad \Box_g\Psi=0,\quad\nabla^\mu T_{\mu\nu}=0.
+\]
+On a local unwrapped null chart any smooth weak Ψ(u) is allowed with true boundary collar; on periodic u regulator, arbitrary anti-paired half-history increments with nonconstant speeds give exact closure. At fixed true golden cut f=q=0 the returned operator PRICE and the source ratio are insensitive to any hidden CAR phase and to harmonic W, while those raw histories remain physically distinguishable.
+
+**Theory class instead of a chosen history:** on this broad nonempty sector ANY *actual selected* complete D0 price whose genuinely resolved full FIRST source has the two-number form \(a_hD\sum\hat f+b_hD\sum q\), \(a_h\neq0\), with other real internal Euler solved, has the SAME all-field 40→3→1 reduction with \(\lambda=b_h/a_h\). ALL higher offshell powers drop from its FIRST field equation ON this stratum. The SAME admitted full good/bad Golden determinant detector also has \(DS_{\rm mean}=\kappa(g)DS_{\rm MAP}=2\kappa(g)DJ/\log\varphi\), with a SINGLE constant \(\kappa(g)>0\) across its whole f=q=0 family at fixed cut; their metric jets are NOT numerically equal until divided by this factor, but their source ratio and roots coincide. THIS is the precise double quotient by microhistory and same-detector aggregation and makes the user's synthesis a theorem rather than a slogan.
+
+**What this DOES NOT claim:** all possible D0 programmes force this particular field-code query/controller or matching first source; historical upstream H/J/R and raw #216 source are different, site/RIGHT/reference/clock/preparation equations and physical controller/source costs must still be solved on the compulsory full native programme. The original full 40 field equations ARE solved exactly on the constructed same-operator mathematical carrier; no global arbitrary-metric GR claim is promoted. This is a genuinely new, independently reproducible **time-dependent infinite-dimensional Einstein sector** in the original geometric/matter first-response problem, and the route to physical GR is now an explicit full source-identification problem rather than more local curvature coefficient fitting.
+
