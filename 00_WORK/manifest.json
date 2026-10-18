@@ -79,6 +79,50 @@
       ],
       "exit_condition": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
       "brief": "00_WORK/tasks/WRK-A4D-LEAN-MV-TANGENT-SPAN.md"
+    },
+    {
+      "id": "WRK-A4D-LEFT-RESIDUAL-EXECUTED-SOURCE",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The owned LEFT recording word is compared with the owned address marginal. The record states an exact identity in which the residual golden or pi0 defect equals an executed stress on the identified dressed metric, or a scoped no-go naming the missing owned primitive. No new functional is introduced.",
+      "brief": "00_WORK/tasks/WRK-A4D-LEFT-RESIDUAL-EXECUTED-SOURCE.md"
+    },
+    {
+      "id": "WRK-A4D-QUANTILE-CLOCK-EXECUTION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The golden quantile-to-CAR volume clock map is compared with the moving sampling effect of the existing recording engine on one nonconstant proper lapse and one shearing four-dimensional density. The record states pass or fail on that tangent and writes the explicit residual when the Jacobian source and the engine costate differ. No new gate is added.",
+      "brief": "00_WORK/tasks/WRK-A4D-QUANTILE-CLOCK-EXECUTION.md"
+    },
+    {
+      "id": "WRK-A4D-MATTER-ON-DRESSED-METRIC",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The owned CAR16 and Fock chronological feedback metric response is evaluated on the density-dressed metric and on the raw metric. The record states an explicit stress built from owned correlators on the dressed metric, or a scoped no-go. The stress is not defined to equal the Einstein tensor.",
+      "brief": "00_WORK/tasks/WRK-A4D-MATTER-ON-DRESSED-METRIC.md"
+    },
+    {
+      "id": "WRK-A4D-LAPSE-REYNOLDS-RESIDUAL",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "On the fixed-beta H+J+R root, the reduced lapse coefficient inside (0.0057230, 0.0057231) is compared with the boundary jet of the Reynolds ward for moving cells. The record states exact cancellation or a quantitative residual. No coefficient is chosen to force cancellation.",
+      "brief": "00_WORK/tasks/WRK-A4D-LAPSE-REYNOLDS-RESIDUAL.md"
     }
   ]
 }
