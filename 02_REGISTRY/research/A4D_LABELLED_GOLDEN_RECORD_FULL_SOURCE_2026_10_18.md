@@ -3027,6 +3027,126 @@ compatibility; затем reduced metric/current row, существование
 из §6.19 при этом остаются. Поэтому этот вход не объявляется новым
 доказательством native admission, независимой материи или всей ОТО.
 
+### 6.34. У actual joint root preparation lift уже существует; остаётся точная field matrix
+
+Предпосылка isolated FULL cluster из §6.32 не оставляется абстрактной.
+Она уже доказана для [исходного v8 root, §§6–7](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md)
+и перенесена [full-Lorentz owner §4](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md).
+Его occupied пространство — ровно8 first-axis momenta × CAR16,
+rank128, все другие положительные eigenvalues отделены на >0.5.
+Vacuum отделён первым положительным eigenvalue. Gap сохраняется на
+уже принадлежащей flat refining family; старый root search не запускается.
+Здесь spectral inverse-coframe Gram FFᵀ, который v8 называет G,
+отличается от ковариантной положительной G=eᵀh_ne в §6.31.
+
+Поэтому на настоящем существующем joint root, а не partial counter,
+для всех достаточно малых finite-field perturbations имеем точную секцию
+
+    ρ(s)=P_cluster(Δ(s))/128,
+    S_red=Tr[P_cluster(Δ)Δ]/128
+                 +log(CZ)/β−MTrlogF_price.          (13da)
+
+Это та же цена после решения fixed-RIGHT preparation Euler, не новая
+цена и не oracle подготовки. Секция имеет purification с той же RIGHT
+I128/128. Eigenvalues внутри cluster могут расщепляться; все128
+направлений остаются заняты. Full-sphere/common-energy stationarity
+за пределами base этим НЕ утверждается. Uniform spectral gap также
+не даёт автоматически uniform radius в полевых нормах: ||δD_h||
+может расти при h→0. Operational preparation admission не следует из
+математического существования секции.
+
+На base положим E_k=Δ₀(k), Ω={±e_r},
+
+    w_k=κ_Z(E_k)+1_Ω(k)/128,
+    L_kl=(w_k−w_l)/(E_k−E_l), E_k≠E_l,
+    L_kl=κ_Z′(E_k), E_k=E_l.                        (13db)
+
+При равных energies индикаторы совпадают, потому что занят ВЕСЬ cluster.
+Так (13cz2) объединяется с spectral divided difference точно, без
+нулевого gap inverse. Эти w_k — те же полные веса root moments
+M_rs=ReΣ_kw_kζ_r barζ_s=0, ζ_r=t_r−1.
+
+Есть специальное сокращение proper second-link jet. Веса вещественны
+и w_−k=w_k, поэтому root moments дают КОМПЛЕКСНОЕ равенство
+Σ_kw_kt_r barζ_s=M_rs−M_ss/2=0. Второй exterior-link jet H_r
+сохраняет степень. В Tr[D₀ C(u_r)H_r] два creation/annihilation
+одного знака имеют нулевой trace по grade; остальные terms умножаются
+ровно на эти моменты. Следовательно
+
+    Tr[w(Δ₀){D₀,D_ab}]=0                            (13dc)
+
+для paired Fourier q,−q; для ненулевой суммарной q trace0 по translation.
+Это доказанное сокращение на ДАННОМ faithful root, а не линейная замена
+proper links. В общей формуле(13cz) second jet обязательно остаётся.
+
+Итак actual reduced normal Hessian здесь вычисляется по
+Tr[w(Δ₀){V_a,V_b}] плюс полной ordered L_kl contraction Q_a Q_b
+и −βZ⁻² A_aA_b, A_a=Tr[a(Δ₀)Q_a]. При q≠0 A_a=0 по translation.
+При q=0 preparation projector точно постоянен: homogeneous perturbation
+сохраняет momentum, а каждый occupied momentum содержит все16 components.
+Тогда preparation response0 и L в этом блоке заменяется на κ_Z′.
+Ни одна thermal мода, CAR-компонента или reference multiplicity не удалена.
+
+**Первый scalar consumer сокращается до4×4.** При q=(q₀,0,0,0)
+совместные spatial role/internal permutations S₃ сохраняют actual root,
+full conditional matrix price и Riesz section. На24 link directions
+
+    24=4·trivial ⊕4·sign ⊕8·standard.               (13dd)
+
+Поэтому normal blocks имеют размеры4×4,4×4 и8×8⊗I₂; spatially
+S₃-invariant scalar source потребляет только первый4×4. Его явный базис:
+
+| Направление | Ненулевые link jets |
+| --- | --- |
+| 1 | Ω₀=B₀₁+B₀₂+B₀₃ |
+| 2 | Ω_i=B₀ᵢ, i=1,2,3 |
+| 3 | Ω_i=Σ_(j≠i) B₀ⱼ, i=1,2,3 |
+| 4 | Ω_i=Σ_(j≠i) Rᵢⱼ, i=1,2,3; Rⱼᵢ=−Rᵢⱼ |
+
+Неуказанные legs0; Gram=diag(3,3,6,6). Все24 направления остаются
+в полной задаче, а не объявляются отсутствующими. Generic q такой
+редукции не имеет. Это symmetry самой conditional matrix price; из неё
+не выводится symmetry произвольного physical label-code/controller.
+
+При fixed invertible coframe чистого link gauge направления НЕТ:
+ωu_r=0 для всех r требует ω=0. Шесть local Lorentz gauge directions
+двигают одновременно coframe, observer и preparation; вычитать6 из
+fixed-coframe24-block неверно. После настоящего whitening boosts имеют
+Γ(B)*=Γ(B), rotations Γ(R)*=−Γ(R); raw boost gauge компенсируется
+движением L, а не объявляется anti-Hermitian rotation.
+[Exact S₃/CAR check](sources/d0_af_star_full_lattice_2026-10-17/check_native_scalar_link_block.py)
+и [receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_SCALAR_LINK_BLOCK_RESULT.json)
+проверяют этот basis, projectors ranks4,4,16 и gauge distinction без
+momentum census. Следующий расчёт — actual4×4 scalar normal matrix и
+его mixed metric row по(13db–dc), затем допустимая совместная ветвь.
+Невырожденность блока и полные curved roots ещё не доказаны.
+
+### 6.35. Материальный consumer требует обновлённого tuple, а не ещё одного состояния старого слова
+
+Уже принадлежащий chronology jet §6.27 имеет конкретный SAME-carrier
+product: I_(Γ,c)⊗U_(n+)U_n на прежнем scene cut rank33·2·8=528.
+Для центрального W_E на идеальном AF interface два stages W_E⊗U_n,
+затем W_E⊗U_(n+) дают tensor feedback; произвольный finite compiled
+SELECT с work leakage этим exact factorization не получает. Scene
+multiplicity66 сокращается в коэффициенте μ(13ca). На retained528 cut
+baseline этого другого слова — L×264 и0×264; остальной22976 carrier
+сохраняется. Его нельзя подставлять в fixed nine-word
+B₀ со spectrum184,36,44. Новая независимая tensor matter не добавляется.
+
+Конкретная недостающая runtime map — retained first record → updated
+(q₊,n₊) → второе применение native query. На кривой(13by) начальные
+q=η,Q=I,n=e₀ и все initial Julia/SELECT operands постоянны. Любое
+фиксированное слово из них с фиксированным return cut имеет постоянный
+оператор B; его ordinary-trace J не получает источник от одного движения
+input state. Поэтому B₁ и M chronology не возникают такой заменой.
+[Chronology owner](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md) задаёт
+нелинейную map updated tuple, но autonomous nine-word исполняет её только
+в ±e₀ sign sector. Для noncollinear (13by) требуется настоящее повторное
+предоставление обновлённых arguments. Это конкретный physical execution
+consumer, не запрет всякого adaptive/coherent protocol и не новый oracle
+из одних неизменных входов. Материальный источник этой программы остаётся
+невыведенным, пока данный переход не исполнен и не оценена его полная цена.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

@@ -49,6 +49,18 @@ matrix on the actual joint root with its spectral cluster compatibility,
 then the reduced metric/current equation and curved recovery. All physical
 admission/matter/full-refinement obligations and original terminal remain.
 
+Further consumer, input `bf74b2b9`: the already owned full128 cluster
+gap supplies the Riesz fixed-RIGHT preparation section at the actual
+joint root. Root moments cancel the weighted proper second-link jet;
+nonzero Fourier grading cancels its normalizer Hessian term. S3 symmetry
+reduces the puretime scalar consumer to an explicit4x4 normal block,
+checked by a new bounded representation calculation. Next compute this
+block with its mixed metric row, not another rank catalogue or assumed
+heat inverse. No pure-link gauge is deleted at fixed coframe. The same
+carrier chronology consumer requires a real update/requery of(q+,n+)
+after the first retained record; fixed initial queries/cut cannot supply
+its normal material jet by changing only the input preparation.
+
 ### 18 October: close the current equation through its native matter and measure
 
 Input `61737b24`; the preceding goal turn made progress by publishing

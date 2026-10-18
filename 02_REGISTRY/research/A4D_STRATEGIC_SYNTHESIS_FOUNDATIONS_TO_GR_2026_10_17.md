@@ -1685,10 +1685,39 @@ vacuum forcing не круговой; fixed-collar результат перен
 семью. Actual Book-feedback source transfer уже сильнее предположения
 об entropy maximum; moving scene и whole rest source не удаляются.
 
-**Следующий consuming step** — вычислить (7.33) вместе с настоящей
-preparation projection на существующем full-price joint root, затем
-его reduced metric/current source и curved recovery. Это заменяет
-необоснованное обращение heat truncation одной точной конечной задачей.
+**Actual-root consumer, вход `bf74b2b9`:** [full-source §6.34](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+использует уже доказанный v8 gap: occupied128 — ПОЛНЫЙ isolated cluster.
+Riesz preparation ρ=P_cluster/128 потому действительно существует
+локально на actual joint root при том же RIGHT; common-energy ограничение
+снимается, internal energies могут расщепляться. Это не новая физическая
+подготовка и не автоматически uniform field radius при refinement.
+
+Prep Schur объединяется с κ_Z в divided difference полных root weights
+w_k=κ_Z(E_k)+1_Ω(k)/128. Root moments дополнительно зануляют weighted
+trace proper D_ab: степень исключает creation/creation terms, а остальные
+имеют точно Σw_kt_r barζ_s=0. При q≠0 global normalizer Hessian term
+также0 по translation. Оба сокращения специальные для этого root;
+из общей формулы(7.33) эти terms не выбрасываются. При q=0 preparation
+projector точно постоянен, поскольку occupied momentum содержит все16.
+
+Для puretime q=(q₀,0,0,0) actual S₃ symmetry даёт4 trivial,4 sign и8
+standard copies на24 link directions. Invariant scalar source требует
+лишь actual4×4 block; его literal basis и Gram приведены в(13dd).
+Никакие6 link directions не вычитаются как gauge при fixed coframe:
+истинный gauge двигает и coframe, и observer, и preparation. Новый
+bounded S₃/CAR check проверяет этот quotient без lattice/root replay.
+
+Материальный маршрут тоже получил конкретный runtime consumer §6.35:
+исходный двухзаписный U_(n+)U_n вкладывается в тот же528 cut, но требует
+повторного запроса tuple(q₊,n₊), реально обновлённого первым record.
+На собственной noncollinear кривой initial query operands постоянны;
+фиксированное слово и fixed cut не создают chronology B₁ и normal M
+одним изменением input state. Это не новый внешний matter tensor и не
+запрет всякого adaptive protocol; нужно исполнить данный native update.
+
+**Следующий consuming step** — actual4×4 scalar normal matrix с mixed
+metric row, затем допустимая совместная ветвь и curved recovery. Это
+заменяет необоснованное обращение heat truncation точной конечной задачей.
 Два новых bounded calculations проверяют normal coefficients, actual
 CAR link/prep rows и exact finite-B functional identity; старые root,
 heat и Lean suites не переигрываются. Native dynamics, независимый

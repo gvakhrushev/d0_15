@@ -23,6 +23,18 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+Actual-root reduction, input `bf74b2b9`: [full-source §§6.34–6.35](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the existing full-shell gap to obtain an exact local fixed-RIGHT
+preparation section on the actual joint root. Root moments cancel the
+proper second-link jet after trace; nonzero Fourier grading removes the
+normalizer term there. The actual S3 scalar consumer now needs one4x4
+normal block with its mixed metric row, retaining all24 directions in
+the general problem. No pure-link gauge directions are deleted at fixed
+coframe. Compute this exact block next; no heat truncation is needed.
+The chronology source needs a concrete runtime operation: first retained
+record to updated tuple to second native query. The fixed initial word
+does not execute the noncollinear update by preparation changes alone.
+
 Latest actual-normal consumer, input `af0a6d07`:
 [strategic §7.13](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 proves leading source compensation by a genuine trace-torsion lift,

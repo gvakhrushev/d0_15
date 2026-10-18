@@ -2,6 +2,23 @@
 
 ## 18 October 2026 — native source, preparation and nonlinear GR synthesis
 
+**Actual-root reduction, input `bf74b2b9`:**
+[Full-source §§6.34–6.35](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the already proved full rank128 shell gap. The exact fixed-RIGHT
+Riesz preparation section exists on the actual faithful joint root;
+internal energies may split. Its response combines with the full spectral
+divided differences. Root moments cancel the weighted proper second-link
+jet; nonzero Fourier grading cancels the normalizer Hessian term there.
+The remaining scalar consumer at puretime q needs one explicit4x4 block,
+by the actual S3 decomposition of all24 link directions. Its basis/Gram
+are checked without root or lattice replay; invertibility is not asserted.
+Pure-link gauge deletion at fixed coframe is forbidden by the actual
+joint gauge equations. The independent chronology source also has a
+concrete next native operation: requery the tuple updated by the first
+retained record. A fixed initial-query word/cut does not generate that
+normal material jet merely by changing the input state. Full curved
+joint recovery and physical admission remain open.
+
 **Actual connection/normal consumer, input `af0a6d07`:**
 [Strategic §7.13](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 proves that the leading density source really cancels after the trace-torsion
