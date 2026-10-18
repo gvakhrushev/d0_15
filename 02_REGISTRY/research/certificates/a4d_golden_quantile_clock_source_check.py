@@ -189,6 +189,34 @@ assert matched[-1]["weighted_transport_cost"] < matched[0]["weighted_transport_c
 # An AF finite permutation is DISCRETE: no differentiable nonzero
 # generator t->sigma_n(t) exists without additional coherent controls.
 # This does not prevent C1 convergence from moving quantile sources Q15.
+# EXACT 4D null Kerr-Schild source bypass: no det/J/quantile clock jet.
+eta=sp.diag(1,-1,-1,-1)
+kk=sp.Matrix([1,sp.Rational(3,5),sp.Rational(4,5),0])
+ell=eta*kk
+Nnull=kk*ell.T
+assert Nnull**2==sp.zeros(4)
+assert sp.trace(Nnull)==0
+ks=sp.symbols("ks",real=True)
+Et=sp.eye(4)+ks*Nnull/2
+assert (Et.T*eta*Et-(eta+ks*ell*ell.T)).applyfunc(sp.simplify)\
+        ==sp.zeros(4)
+assert sp.simplify(Et.det()-1)==0
+assert sp.simplify((Et.T*eta*Et).det()-eta.det())==0
+knull=[
+ (1,1,0,0),(1,-1,0,0),
+ (1,0,1,0),(1,0,-1,0),
+ (1,0,0,1),(1,0,0,-1),
+ (5,3,4,0),(5,3,0,4),(5,0,3,4)]
+assert all(v[0]*v[0]==sum(a*a for a in v[1:]) for v in knull)
+columns=[(i,j) for i in range(4) for j in range(i,4)]
+probe=sp.Matrix([[(1 if i==j else 2)*v[i]*v[j]
+                  for i,j in columns] for v in knull])
+assert probe.rank()==9
+null_tensor=sp.Matrix([1 if i==j==0 else
+                       (-1 if i==j else 0) for i,j in columns])
+assert probe*null_tensor==sp.zeros(9,1)
+assert len(probe.nullspace())==1
+
 print(json.dumps({
  "status":"PASS: exact quantile Jacobian/source, golden types, AF matching",
  "sympy":"Q(sqrt5) identities and exact 4D source",
