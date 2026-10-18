@@ -84,7 +84,7 @@
       "id": "WRK-A4D-LEFT-RESIDUAL-EXECUTED-SOURCE",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
