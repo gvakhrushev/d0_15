@@ -18,8 +18,11 @@ recorder. A literal old128-output counter proves these energies differ.
 With the genuine four-Role bounds, m~h^-2 and sufficient actual AF
 level N>=2m, the H+R normalized source is O(h^-4 p^m). Applying this
 to the owned moving-volume mean query still requires its real native
-binding and all controller/history sources. Free M has no nonzero
-interior stationary row; arbitrary Q programmability does not select GR.
+binding and all controller/history sources. Free M has a nonzero feedback radial source. SAME-blank heat adds
+2/beta and can balance it; with other M-independent terms, its own full
+radial equation bounds rank*theta by (epsilon/beta)*max(1,1/r0),
+excluding the amplified-signal limit. Actual other control/input sources
+must be solved. Arbitrary Q programmability does not select GR.
 Exact joint recovery and compulsory physical control remain OPEN.
 The parallel nonlinear Einstein-frame/two-band results are preserved;
 their auxiliary Hessian does not replace a gap for the whole price.

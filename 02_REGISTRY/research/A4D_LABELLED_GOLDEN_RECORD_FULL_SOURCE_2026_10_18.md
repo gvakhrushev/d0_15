@@ -4730,9 +4730,48 @@ D0 пока не вынуждает её реализовать и оплати�
 
     DJ[δM]=−2z Re Tr[A^(−1)M*S δM].            (13fi)
 
-Для interior variation δM=M и M≠0 эта строка строго отрицательна.
-Нужный ненулевой M НЕ является свободным stationary normal. Требуется
-actual control-law binding; нельзя назвать его найденной Euler section.
+Для interior variation δM=M и M≠0 эта FEEDBACK строка строго
+отрицательна. Это не полная Euler row, если другие terms зависят от M.
+В частности SAME-blank H_gen из(13fg′) даёт DH_gen[M]=2/β. При
+R_in и остальных sources, действительно независимых от M, полный
+radial Euler есть
+
+    D(H_gen+J+R_in)[M]
+       =2/β−2z Tr[L((1−z)I+zL)^(−1)], L=M*SM. (13fj)
+
+Он МОЖЕТ зануляться при M≠0. Поэтому из DJ[M]<0 нельзя заключать
+отсутствие stationary normals всей цены. Но в equalized family L=cR,
+при 0<r₀I≤R≤r₁I и θ из(13fe) его собственная стационарность
+вынуждает точный верхний bound для сигнала
+
+    dθ≤ ε/(βr₀)·(1−z+zc r₀)/(1−z+zc)
+       ≤ (ε/β)max(1,1/r₀).                    (13fk)
+
+Следует из monotonicity zr c/(1−z+zcr) поr и bound
+zTr[L/A]≥zc d r₀/(1−z+zc r₀). Значит при fixed β,
+fixed ε и uniform positive r₀ СВОБОДНОЕ radial управление
+не допускает dθ→∞, необходимое данному suppression estimate для
+H/R. Дополнительные настоящие M-dependent R_in/control/history
+sources или moving clock могут изменить эту row и должны быть
+посчитаны. Они не были запрещены новой D0-wide теоремой.
+
+Тем самым M(S,Q) нельзя объявить найденной stationary section: нужен
+actual bound control law либо решённые Euler ВСЕЙ суммы. Для
+свободного invertible M, fixed S>0 и именно H_gen+J без иных
+M-dependent terms полный matrix Euler ещё сильнее:
+
+    I/(βTrL)−z[(1−z)I+zL]^(−1)=0
+      ⇒ L=λI, λ=(1−z)/[z(βd−1)].               (13fl)
+
+Когда эта λ положительна и помещается в настоящий contraction interior,
+получается ненулевой stationary control. Например S=I допускает его
+при βdz>1; тогда dθ=ε/β для R=I. Непостоянный Q не является таким
+free-control solution. Значение H_gen+J в этом inner stationary fibre
+зависит только от d,β,z и field-independent multiplicity: его envelope
+source по старому S равен нулю. Нельзя назвать этот свободно снятый
+источник самовыбранной Einstein dynamics. Иные R_in/controller sources
+требуют собственной полной row, а не исключаются этим условным result.
+
 Более того, та же construction исполняет любые bounded Q, −Q и Q+Q⁴
 на bounded charts. Поэтому native palette/return positivity НЕ выбирают
 Palatini/Einstein source. Это строгий constructive analytic ONE-feedback

@@ -34,8 +34,11 @@ Dimension-free C2 H/R bounds include all16/reference128 preparation
 normals and correct INPUT Rayleigh/observer whitening. Sufficient
 N>=2m suppresses these sources for m~h^-2; actual costs and schedule
 still need native binding. The finite compiler error is divided by this
-small real signal. Free control M is not a stationary normal, and the
-construction implements arbitrary Q. Continue through physical control
+small real signal. Free M has a nonzero feedback radial row; the
+SAME-blank heat can balance it, but with other M-independent terms its
+full radial stationarity bounds rank*theta and excludes this amplified
+limit. Solve actual control/input/clock sources; the construction itself
+implements arbitrary Q. Continue through physical control
 law and exact joint recovery; programmable geometry is not forced GR.
 The parallel two-band Einstein-frame algebra remains preserved.
 

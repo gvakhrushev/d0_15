@@ -37,7 +37,11 @@ The constructive consumer now also includes the exact analytic
 noncommuting return equalizer M=sqrt(c) S^-1/2 R^1/2 and finite
 full-cut compilation. Prove its actual signal, scaled-inverse jets and
 free-control Euler obstruction. Bound controls must not be treated as
-free stationary normals. At fixed epsilon, c=p^(3m+4) supplies the
+free stationary normals. Feedback-only DJ[M]<0 is not the full row:
+same-blank heat adds2/beta. Its full radial balance with other
+M-independent terms bounds the signal and prevents the amplified
+regime; actual control/input source dependence must be included.
+At fixed epsilon, c=p^(3m+4) supplies the
 weak-price limit from the old survival clock; sufficient N>=2m is a
 resource family, not a forced physical law. Consume concurrent published
 two-band/Einstein-frame work without editing its owners. Only root
