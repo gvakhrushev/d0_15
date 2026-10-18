@@ -120,6 +120,25 @@ history/price, её native calibration law и допустимую оценку 
 
 ## 1. Итог сборки
 
+На входе `c4e78035` §§8.29–8.30 переносят решение на конечный
+исходный процесс: при заданном полном коде с β>0 для всех достаточно
+больших фиксированных n существуют точные решения всех preparation
+и strength строк. Доказательство использует compactness и уже owned
+finite preparation theorem, без uniform inverse сингулярной Hessian.
+Внешние amplitude directions и reference128 сохранены. Ковариантность
+переносов дополнительно обнуляет все nonzero-Fourier field sources.
+
+Первое слабое рождение ранга теперь выбирает явное moment fibre:
+Bell максимизирует его коэффициент, и все cluster points настоящих
+конечных minimizers входят в это fibre. Единственность Bell не заявлена.
+Получены actual shifted recycling, Euler-clock correction и следующий
+полный code source; их transverse derivatives не заменены плоскими
+scalar identities. Оставшийся конечный геометрический шаг — homogeneous
+covector после решённых scale/Ward строк. Physical code/Info binding,
+controller sources, independent matter и пространственный вывод ОТО
+остаются явными задачами. Это потреблённый finite partial lift, а не
+объявление полной физической стационарности.
+
 На входе `36ad880c` §§8.27–8.28 дают следующий положительный шаг:
 полный coherent-memory source сходится в C¹ даже через rank births,
 без spectral floor, на фиксированном полном data/reference носителе.

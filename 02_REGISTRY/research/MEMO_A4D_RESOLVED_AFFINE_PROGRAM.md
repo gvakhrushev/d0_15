@@ -23,6 +23,19 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+Input `c4e78035`, §§8.29–8.30 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
+now gives exact finite native preparation/strength solutions using
+compactness and the owned finite preparation theorem. Translation
+covariance kills every nonzero-Fourier field row, retaining all external
+amplitude variations and reference128. The first actual weak-birth term
+forces limiting preparations into an explicit moment fibre containing
+Bell; it does not choose a unique density. The next code/source correction
+is computed on the general primitive chart so transverse field sources
+are retained. The remaining finite geometric step is the homogeneous
+covector with the actual full code and calibration rows. Physical price
+binding, independent matter and spatial GR refinement remain open.
+
 Input `36ad880c`, §§8.27–8.28 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
 closes the fixed-data coherent first-source limit through rank births.

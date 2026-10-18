@@ -12,6 +12,37 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: continue the coherent joint root toward finite native rounds
+
+Input `c4e78035`. Consume the actual finite preparation-descent,
+complete-channel and code-cost owners before attempting to lift the
+balanced weak-limit root of §§8.27–8.28. Test which finite preparations
+and field sources persist for a supplied fixed full code, retaining all
+original grades, reference128, off-shell modes and native Julia rows.
+Distinguish fixed-strength spatial refinement from weak-strength history
+scaling. Determine whether the singular rank-birth layer permits a finite
+stationary continuation, or derive its exact solvability condition and
+consume it in the parent route. Root owns the existing source owner,
+brief and consumers; bounded assistants inspect finite preparation,
+full-code symmetry and the rank-birth continuation read-only. The
+decisive check is a source-preserving analytic argument or one targeted
+native calculation that distinguishes a true full root from a scalar
+scale extremum. No invented full-code prior, physical Info selection,
+generic replacement channel, replay of old suites or new task queue.
+
+Consumed in §§8.29–8.30: uniform values and finite preparation convexity
+give exact native preparation/strength solutions for all sufficiently
+large fixed n, without a uniform inverse or an IFT. External amplitude
+directions and reference128 remain; translation covariance solves every
+nonzero-Fourier field row. The actual first weak birth selects a proved
+affine moment fibre containing Bell, and every cluster point of these
+finite minimizers belongs to it. Bell itself is not forced. The actual
+code correction and Euler-clock term are explicit, including transverse
+derivatives of quantities scalar only on the flat sheet. The remaining
+finite geometric consumer is the homogeneous covector, with the supplied
+full code and any real calibration sources; physical price admission,
+independent matter and spatial GR refinement remain open.
+
 ### 18 October: consume the full coherent memory and return source
 
 Input `36ad880c`. Use the existing exact native channel, retained-history

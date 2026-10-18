@@ -6,7 +6,16 @@ Current integrator entrypoint: [D0 → GR strategic synthesis, updated 18 Octobe
 It connects foundational theorem owners to the positive AF-star nonlinear
 Einstein composition and states the remaining native/source and recovery
 premises. This is research in Draft #334, not a new accepted CORE claim.
-Latest consumer: §§8.27–8.28 of the
+Latest consumer: §§8.29–8.30 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+give exact finite preparation/strength solutions and solve every
+nonzero-Fourier field row by actual translation covariance. The first
+weak rank-birth term constrains the limiting preparation to an explicit
+moment fibre, and the next complete code source is computed. All external
+amplitude directions and reference128 remain. The homogeneous geometric
+covector and physical price binding are still open.
+
+Prior consumer: §§8.27–8.28 of the
 [full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 prove the coherent entropy/source limit through rank births and consume
 it in the existing full-code relative-entropy price. A supplied positive

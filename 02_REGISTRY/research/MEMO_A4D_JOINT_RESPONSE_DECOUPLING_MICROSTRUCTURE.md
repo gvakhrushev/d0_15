@@ -2,7 +2,27 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `36ad880c`:** §§8.27–8.28 of the
+**Latest consumed transition, input `c4e78035`:** §§8.29–8.30 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+continue the limiting solution to EXACT finite preparation and strength
+equations for every sufficiently large fixed history length. Compactness,
+uniform values and the existing finite preparation theorem replace an
+unjustified IFT. All external amplitude and reference128 first variations
+remain. Translation covariance additionally solves every nonzero-Fourier
+field row for address-independent supplied code costs.
+
+The first actual weak rank-birth term selects an explicit moment fibre:
+Bell maximizes its coefficient, and every cluster point of the finite
+minimizers belongs to that fibre. Bell is not uniquely selected. The
+full shifted recycling, Euler-clock correction and actual next code
+source are now explicit; scalar flat identities cannot be differentiated
+as if their transverse sources vanished. The remaining finite field
+equations are the complete homogeneous geometric covector beyond the
+solved strength and true Ward rows. The full physical code/Info binding,
+extra calibration sources, independent matter and GR refinement remain
+open. A finite partial solution is not labelled a full Einstein solution.
+
+**Prior consumed transition, input `36ad880c`:** §§8.27–8.28 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 prove C¹ convergence of the complete coherent-memory entropy and source
 on fixed data, even through preparation and spectral rank births. Uniform

@@ -3750,7 +3750,262 @@ interface, который нельзя было получить одной см
 Einstein composition остаётся отдельным потребителем будущего полного
 source-preserving перехода.
 
+### 8.29. Конечное продолжение: вся подготовка, scale и неоднородные поля
+
+Вход `c4e78035`. Теперь предельный корень (157) потребляется в
+настоящей конечной задаче, без применения IFT к сингулярной entropy
+Hessian. Используем [preparation-descent owner](A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md),
+§§6–8, и exact finite span22 из complete-channel owner §11.
+Их fixed-strength spatial limit не подменяет наш ν→0 предел;
+потребляются только конечные algebra/convexity утверждения.
+
+Фиксируем grid L≥3, все восемь first-shell momenta и все16 CAR grades.
+На этой shell H_sh, dim128, actual A_0²=λ²I, Tr_sh A_0=0,
+λ=|exp(2πi/L)−1|/16>0. Полный data carrier НЕ сокращается:
+H_sh задаёт подготовку, а все внешние first variations сохраняются.
+Все исходные128 round labels и reference128 остаются. Код задан,
+конечен, additive и не зависит от spatial address; β из (153) положителен.
+Это сохраняет условный Info/code контракт (152).
+
+Для каждого фиксированного integer n положим ν=√(t/n) и
+
+    F_n(t,ρ)=C_n(t,ρ)−n c_B−S(R_(n,t,ρ))/ℓ,
+    ρ≥0 на H_sh, Trρ=1.                            (158)
+
+Выбор purification не меняет значение, reference128 достаточен для
+каждой такой ρ. При t на положительном compact interval сходимость
+(154) равномерна по ВСЕМ этим плотностям, включая boundary. Доказать
+это можно на компактной purification sphere, не требуя гладкости √ρ.
+Пусть w=TrρP_+. Предельный entropy равен энтропии матрицы
+
+    [[w, √(w(1−w))r], [√(w(1−w))r, 1−w]],
+    r=exp(−2κtλ²).
+
+Её determinant w(1−w)(1−r²) максимален ровно при w=1/2;
+trace равен1, поэтому entropy тоже максимален ровно там. Отсюда
+
+    min_ρ F_0(t,ρ)=f(t):=βtλ²−h_bin((1+r)/2)/ℓ.    (159)
+
+У f один строгий минимум t_*>0, заданный (157): f' меняет знак с
+отрицательного на положительный, поскольку r log((1+r)/(1−r))
+строго убывает при росте t. Выберем t_-<t_*<t_+. Разрыв значений
+f на endpoints относительно f(t_*) положителен. Компактность и
+равномерная сходимость (158) дают настоящий минимум (t_n,ρ_n),
+который при всех достаточно больших n лежит внутри (t_-,t_+).
+Кроме того,
+
+    t_n→t_*,  Trρ_nP_±→1/2,
+    ∂_t F_n(t_n,ρ_n)=0.                            (160)
+
+Это exact finite source equation, а не только исчезающий residual.
+При этом n фиксирован и ∂_t=(ν/(2t))∂_ν, поэтому решена настоящая
+strength строка. Целая длина истории не дифференцируется.
+
+При n≥22 actual Kraus-word span на shell равен ⊕₈M₁₆.
+По конечному preparation-descent утверждению минимизирующая наблюдаемая
+block-diagonal плотность единственна и строго положительна на каждом
+из восьми блоков. Это конечная положительность при каждом n, без
+несуществующей uniform ν→0 BKM нижней границы. Возьмём именно этот
+block-diagonal представитель ρ_n; все межимпульсные когерентности
+остаются разрешёнными направлениями, их не измеряют и не удаляют.
+
+Таким образом все shell density/preparation Euler rows решены точно.
+Более того, решены ВСЕ normalized amplitude/reference128 first rows
+полного carrier. Действительно, каждый flat K_ω и K_ω'*K_ω сохраняет
+momentum, а полная запись Γ(ρ) и cost зависят только от momentum
+diagonal. Внешний по отношению к shell amplitude jet создаёт только
+cross-momentum Dρ, поскольку внутри каждого её momentum уже взяты
+все16 grades. Поэтому DΓ=DC=0. Возможные новые output eigenvalues
+рождаются квадратично по амплитуде и имеют нулевой первый entropy
+source по (143). Это не утверждает минимальности против квадратичных
+out-of-shell perturbations или устойчивости найденного состояния.
+
+**Неоднородный field source тоже решён, а не отброшен.** Для native
+translation g, с operator U_g на data, полный labelled instrument
+удовлетворяет K_j(gx)=U_gK_j(x)U_g*, без перестановки code labels.
+У homogeneous x₀ и выбранной ρ_n имеем U_gρ_nU_g*=ρ_n.
+Следовательно полная конечная цена при fixed ρ_n инвариантна при
+x↦gx. Её C¹ field covector ℛ_n удовлетворяет
+
+    ℛ_n[V]=ℛ_n[|G|^−1 Σ_g gV].                    (161)
+
+Все field variations с нулевым translation average — в частности
+каждая nonzero-Fourier coframe/link/observer компонента — имеют
+ТОЧНО нулевой source. Подготовка здесь решена, а не заморожена;
+её envelope contribution нулевой по полным preparation equations.
+Нужна covariance самого прибора/кода, а не только его предельной
+матрицы. Address-dependent code или внешняя неоднородная calibration
+в (161) не входят.
+
+**Оставшийся конечный source выписан точно.** Для actual complement
+Γ_n и code operator C_n^op=Σ_(j<n)(Φ_ν*)^j G_c:
+
+    ℛ_n[V]=Tr[ρ_n D C_n^op[V]]
+       +ℓ^−1 Tr[(log Γ_n(ρ_n)+I)(DΓ_n[V])ρ_n].     (162)
+
+Логарифм понимается на support; полный C¹ amplitude extension сохраняет
+rank births. Все native pairing, coframe, link и observer jets входят
+в DΓ_n и DC_n^op. После (160)–(161) неизвестен именно homogeneous
+геометрический covector, кроме уже решённой общей scale строки и
+реальных Ward identities. Ни convexity подготовки, ни scalar strength
+minimum не доказывают его равенства0. Независимые code/controller
+rows и physical price admission тоже не включаются без определения.
+Это конечное продолжение существенной части совместных уравнений,
+не объявление полного finite joint root или ОТО.
+
+### 8.30. Как конечная запись разрешает вырождение подготовки
+
+Чтобы (162) не остался формальным требованием, вычислим первый
+действительный weak correction полной цены. Его нельзя брать из
+fixed-ν spatial h² birth owner: здесь малый параметр δ=ν²,
+data carrier фиксирован, а leading output имеет rank2.
+
+В (3) complete-channel owner сохраняются ВСЕ shifted P_r0 и
+unshifted C_r0. Для Q∈{P_r0,C_r0}, r=0,…,3, их разложение даёт
+
+    T_ν=Id+δ ℛ+O_C²(δ²),
+    ℛ(X)=1/16 Σ_Q[Q*XQ+QXQ*−{QQ*+Q*Q,X}/2],
+    Φ_ν=Id+δ G+δ² G_1+O_C²(δ³),
+    G=−(κ/2)ad_A², G_1(X)=κ ℛ(A X A).             (163)
+
+Здесь A=A_0, все operators действуют также с Id_ref. При matched
+t=nδ, для fixed fields/preparation конечное разложение равно
+
+    R_ν=R_t+δ Y_t+O_C²(δ²),
+    Y_t=∫₀ᵗ e^((t−s)G)[G_1−G²/2]R_s ds.          (164)
+
+Term −G²/2 — реальная Euler-clock поправка; замена конечных раундов
+непрерывным semigroup с generator G+δG_1 её потеряла бы.
+
+На scalar-energy shell A=λU, U²=I, для balanced ρ, TrρU=0,
+пусть W=span{Ψ,UΨ}, Π=I−P_W. Тогда
+
+    B=ΠY_tΠ≥0, b=Tr B,
+    b=κ/16 ∫₀ᵗ Σ_Q (||Π Q A R_s^(1/2)||HS²
+                              +||Π Q* A R_s^(1/2)||HS²) ds. (165)
+
+Anticommutators и G² не имеют Π-diagonal: W инвариантно относительно
+A. Off-diagonal Schur correction начинается на δ², поэтому здесь
+не нужно вычитать его из B на первом δ-порядке. Формула (165)
+сохраняет полную запись; это не вероятность одного выбранного выхода.
+
+Обозначим q₀=TrρQ, q₁=TrρUQ, q₂=TrρQU, q₃=TrρUQU и
+bar r=(1−exp(−2κtλ²))/(2κtλ²). Буквальная flat CAR даёт
+
+    b(ρ)=κtλ²/16 [8−Σ_Q(|q₁|²+|q₂|²
+                      +(1+bar r)|q₃|²+(1−bar r)|q₀|²)]. (166)
+
+Здесь Σ_Q(QQ*+Q*Q)=8I, но P_r0 сохраняют exp(±2πi/L) фазы.
+Для Bell128, ρ_B=I_shell/128,
+
+    q₀=q₃=0, q₁=q₂=z_Q,
+    z_(P_r0)=λ, z_(C_r0)=−λ,
+    b_B=κtλ²(1/2−λ²)>0.                            (167)
+
+Это следует из A=Σ_r(P_r0+P_r0*−C_r0−C_r0*)/16 и actual
+finite θ=2π/L. Для общей подготовки (166) сохраняет shifted/unshifted
+phases; momentum-diagonal T0 не определяет их полный source. Совпадение
+одного Bell trace не разрешает такую подмену. Замена также самого U
+его spatial-limit символом изменила бы использованные моменты z_Q.
+Для λ²≤1/64 положительность (167) строгая.
+
+Полное разрешение первого preparation correction получается без census.
+Поскольку Σ_Q z_Q(Q+Q*)=16λA, все linear terms по ρ−ρ_B
+в (166) сокращаются при Tr(ρ−ρ_B)=0. На balanced family ТОЧНО
+
+    b(ρ)=b_B−κtλ²/16 Σ_Q[|q₁−z_Q|²+|q₂−z_Q|²
+                         +(1+bar r)|q₃|²+(1−bar r)|q₀|²]. (168)
+
+Следовательно Bell максимизирует b, и полный первый логарифмический
+preparation source в нём равен0. Balanced строки следуют из (168).
+Оставшееся trace-zero направление U/128 меняет знак при CAR parity,
+которая фиксирует ρ_B и сохраняет birth functional; поэтому его
+derivative тоже равен0. Все balanced максимизаторы описаны actual
+affine moment conditions q₁=q₂=z_Q, q₀=q₃=0. Единственность полной
+плотности отсюда не следует: на observable2047-real-dimensional
+simplex имеется не более65 real linear constraints вместе с balance,
+и в faithful neighbourhood остаются направления внутри moment fibre.
+
+**Перенос на настоящую конечную подготовку.** High eigenvalues R_t
+равномерно отделены от0 на balanced compact t interval. Их contour
+projection даёт low block δB_δ с B_δ=B+O(δ), B_δ≥0 и bounded C²
+jets на двусторонних normalized amplitude charts этой preparation
+stratum. Это не density-mass derivatives на односторонней boundary.
+Finite-dimensional entropy bounds
+и (143) поэтому дают
+
+    S(R_ν)=S(R_t)+δlog(1/δ)b+O_C¹(δ).              (169)
+
+Для сравнения минимизаторов достаточно uniform value-версии, включая
+boundary ρ. Она остаётся uniform в neighbourhood w≈1/2: rank ведущего
+output там всё ещё2 и оба high eigenvalues имеют общий gap.
+Сравнивая точные minimizers из (160) с Bell trial при t_*, получаем:
+любой cluster point ρ_n принадлежит moment fibre (168).
+Действительно, leading gap F_0−f(t_*) неотрицателен, а после деления
+на δlog(1/δ) минимизатор должен максимизировать b; O(δ) code terms
+исчезают в этом сравнении. При t_n→t_* matched δ_n=t_n/n отличается
+от trial δ_*=t_*/n лишь множителем, стремящимся к1.
+Это уже ограничение РЕАЛЬНЫХ конечных решений, а не только выбранной
+предельной подготовки. Оно не доказывает ρ_n→ρ_B или uniform density gap.
+
+**Следующий source сохраняет полный заданный code.** Для всех64
+label/coefficient indices i из (89) положим
+
+    d_i=p⁴(c_(0,i)−c_B)+p³(c_(1,i)−c_B),
+    Q_c=Σ_i d_i N_iN_i*, G_c=c_B I+4ν² A Q_c A.    (170)
+
+На full scaled primitive chart N_(i,0)=ν n_i,
+R_c=Σ_i n_i n_i*, N_*=I−δ R_c/2+O_C²(δ²), β=4d_*.
+Completeness, включая все dark и defect rows, даёт
+
+    G_c=c_B I+δβ A²+δ² W_c+O_C¹(δ³),
+    W_c=4A Σ_i(d_(i,0)−d_*)n_i n_i* A,
+    C_n^op−n c_B I=βt A²+δ C_1^op+O_C¹(δ²),
+    C_1^op=∫₀ᵗ e^(sG*)W_c ds
+           +β∫₀ᵗ(t−s)e^(sG*)G_1*(A²)ds.           (171)
+
+Это не свободный counterterm: каждый коэффициент следует из настоящих
+помеченных Kraus и заданного code. На flat scalar-energy sheet
+R_c=I/2 и G_1*(A²)=0 в значении; поперечные derivatives этих равенств
+не обязаны быть0. Для homogeneous field source (162) нужно
+дифференцировать полную (171), сохраняя второе слагаемое.
+Unitality канала не делает G_c скаляром для произвольных c_j.
+Это уже различает actual effect строки (label6,coefficient1),
+пропорциональный (−Z₀+Z₁+Z₂+Z₃)², на vacuum и one-form входах.
+Исходный golden port code задаёт только свою часть; полного label/
+coefficient prior и его role symmetry он пока не определяет.
+
+На faithful fixed-shell preparation chart B имеет постоянный
+положительный support — one-insertion operator span modulo {I,U},
+действующий на обратимый √ρ. Там regular finite part также имеет C¹:
+
+    S(R_ν)=S(R_t)+δlog(1/δ)b+δs₁+o_C¹(δ),
+    s₁=b−Tr(P_WY_tP_W log(R_t|W))−Tr(B log B).      (172)
+
+Внутри уже выбранного moment fibre следующий preparation equation
+есть D_ρ[Tr(ρ C_1^op)−s₁/ℓ]=0. Условие относится к такой faithful
+continuation; если limiting density выходит на boundary, нужен её
+действительный дополнительный birth analysis, а не эта frozen-support
+формула. Для всех finite preparations exact equation (162) сохраняется.
+Scalar β сам по себе не задаёт (171)–(172).
+
+**Потребитель:** finite подготовка, scale и все nonzero-Fourier field
+rows теперь решены существованием (160)–(161); её leading moment
+selection доказан (168)–(169). Первый unresolved finite geometric
+шаг — homogeneous covector (162) с actual code/source (170)–(171).
+Предельный balanced корень больше не требует гипотетического IFT для
+решённых строк. Но role symmetry кода, оставшиеся homogeneous Euler
+rows, physical code/Info admission, independent matter и spatial GR
+refinement не добавляются как предпосылки без собственного вывода.
+
 ## 9. Проверка
+
+§§8.29–8.30 проверены аналитически по finite compactness/convexity,
+actual span22, full-carrier preparation и translation sources. Независимо
+проверены shifted/unshifted recycling, Euler correction, Bell moment
+identity и source-preserving code correction. Положительность конечного
+preparation Hessian не повышается до uniform ν→0 gap. Новый numerical
+rank census, старые suites и Lean replay для этих выводов не требуются.
 
 §8.28 независимо проверен по literal two-leading-row code coefficient,
 cost telescoping и полному Duhamel/preparation differential. Balanced
