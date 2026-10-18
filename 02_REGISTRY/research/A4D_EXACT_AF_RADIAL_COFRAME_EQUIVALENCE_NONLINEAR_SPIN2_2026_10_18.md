@@ -205,6 +205,31 @@ No \(D^3\mathcal F\) term survives because \(D{\cal P}(y_0)=0\). The three expli
 
 The target of [strategic §7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) is the full native-price spin-2 Ward/Schur germ. Equations (18)–(19) **solve its all-order self-interaction algebra for the displayed AF gravity subprogram**, consuming the already proved selected \(\star\) quadratic Fierz-Pauli/Einstein Schur owner. They do NOT infer that a different full128 literal programme or independent native matter has the same Hessian from matching one spectrum. On the continuum smooth chart the selected star tends to the full nonlinear Lorentz Palatini functional; its 24 spin-connection equations yield torsion zero, its tetrad equations yield all TEN nonlinear vacuum Einstein rows, and the on-shell metric is the original (not merely dressed) metric by (11).
 
+### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source
+
+This is a **positive operational consumer** of an already constructed native source chain, not a geometric oracle. [Actual full-CAR operator reconstruction §§8.4–8.5](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) recovers all four coframe legs and the original proper Lorentz links from the actual full16 raising/Julia entries \(X_r=C(u_r)\Lambda M_r\), even at the pp-wave's NULL u-leg. The map admits a smooth left inverse on the full nondegenerate bounded window, with complete 16+24 jets and actual moving-clock/observer data. In particular, **the inserted f_x of (1) is an explicitly computable smooth function of existing Julia queries**, not an external \(R\)- or \(G_{\mu\nu}\)-oracle.
+
+[Native coherent query construction §8.6](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) supplies a word realization of the required golden angle \(\theta_x=\arcsin[p\sqrt{1+t^2f_x}]-\arcsin p\) by finite entry-polynomial operations, real flag rotations, and addressed Julia/G/CNOT controls. It keeps the entire query/control complement, CAR16, full reference128 and paid work blank as a complete output; no intermediate postselection/tomography is used. Its published C² polynomial/Trotter approximation extends to **C³ on any fixed compact strict-interior chart**: the same rational maps, square roots and \(\arcsin\) are analytic there, polynomial approximation is uniform through three derivatives, and a product of N steps with uniformly bounded derivatives through order3 has a one-step C³ defect O(N^-2) and total C³ defect O(N^-1). Constant control compilation then requires the original native C³ word/source estimate, not new field-dependent angles.
+
+For the actual two-tick operator feedback, [§6.19 (13ay)–(13ba)](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) proves the all-data/full-work RETURN-CUT bound, with \(r\) the true full return rank and \(\epsilon\) the **whole-output** C³ operator deviation:
+\[
+\boxed{
+\|J_{2,\epsilon}-J_{2,\rm ideal}\|_{C^3}
+\le \frac{2^{14}zrL^6}{(1-z)^4}\epsilon .
+}\tag{20a}
+\]
+For the actual AF×scene carrier \(r=1056\nu K\) and the exact field-independent GR coupling normalizer \(a_N=\nu Kp^2t^2g'_B(p^2)>0\), **both AF multiplicity and spectator reference multiplicity cancel**:
+\[
+\boxed{
+\left\|\frac{J_{2,\epsilon}-J_{2,\rm ideal}}{a_N}\right\|_{C^3}
+\le \frac{2^{14}\cdot1056\,z L^6}
+           {(1-z)^4p^2t^2g'_B(p^2)}\,\epsilon .
+}\tag{20b}
+\]
+All 528 real scene return modes and 22448 scene complement positions remain as in the actual owner; work leakage is in \(I-P\). If an additional work-blank return is NOT part of the admissible physical test, its cost/cut must be derived and (20a) is not applied to an unchanged cut.
+
+Combine (20b) with the **exact action equality** (5), not with an approximate curvature coefficient: on every fixed finite native operator chart the ideal graviton Hessian AND cubic native feedback response are those of the original Lorentz star in an invertible local field coordinate; the actually compiled query's first three source jets converge to that exact nonlinear relation with error controlled by (20b). This gives a concrete FULL16 all-ten spin-2 cubic construction using only the already-owned indexed native Julia/golden apparatus **under its stated addressed-access/work-return contract**. At any fixed finite lattice, a prescribed \(\epsilon\) sufficiently small compared with \(t^2\) controls the cubic response; after a chosen spatial reconstruction one must further multiply its genuine raw norm factors. This is a compiled-source theorem, not permission to omit programme overhead or claim exact compiled stationary roots without the actual full-field inverse/gauge conditions.
+
 ## 6. An exact finite GR *observable*: both physical wave polarizations from the SAME nonflat joint root
 
 Use the already-owned FULL-INTERIOR exact stationary pp-wave in [A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md). Its null tetrad has
