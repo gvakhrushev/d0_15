@@ -12,6 +12,38 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: construct the LEFT instrument and full-carrier compiler
+
+Input `919a7d11`; the preceding goal turn made progress by publishing
+the actual stopped-price law and persistent SAME-qubit obstruction.
+Root now constructs the missing operator interface rather than repeating
+that control. Read-only assistants check exact READY/PENDING words,
+retained factory/work source and the fixed-width full-operator compiler.
+Root owns this brief, the existing full-source/strategic/primary owners,
+and one bounded exact calculation if it decides the interface. Required
+consumer: (13e–13q) on the SAME complete pointer and admissible input
+image. Retain full GNS, right archive, reference128 and all work outcomes.
+No new field-state oracle, physical action or opaque controller is
+admitted. Distinguish an exact fixed-level LEFT recording word from a
+clean cost-refinement word, and a full-operator approximation from a
+prepared-subspace theorem. Approximation must transfer the normalized
+source, not silently assert exact native finite roots.
+
+Consumed in full-source §§6.13–6.14 / strategic §7.7 and the scientific
+route: active LEFT bit-copy realizes the PVM on full GNS and supplies
+all pure offblank first-source equations. Clean refinement is unnecessary
+for this fixed-level consumer. SAME code overhead cancels pathwise;
+gate count is not endpoint action. Walsh/Gray/Givens plus golden powers
+gives a fixed-width full-operator compiler for real constants. The new
+C1 entropy-source modulus covers zero outcomes and transfers normalized
+first residuals on the configured real curved family with reference128.
+No oracle, physical actuation/Book binding, efficiency, ambient C2
+regularity or exact native finite-root promotion is claimed.
+Concurrent disjoint intake `ef7ba66d..e3f37459` is preserved: its capacity
+defect, work/source and stronger relative leaf-source bounds are consumed
+in strategic §7.7, together with its finite-t independent-matter boundary.
+Its two scientific paths are not edited or replayed by this checkpoint.
+
 ### 18 October: construct the actual inherited-leaf interface
 
 Input `afab5f09`. Previous goal turn made progress by publishing the

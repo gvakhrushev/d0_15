@@ -2,6 +2,22 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
+**Constructed LEFT instrument, input `919a7d11`:**
+[full-source §§6.13–6.14](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now gives an exact n-CNOT recording word for the fixed-level active LEFT
+path address. It realizes the inherited PVM on full GNS, preserves RIGHT
+and reference128, composes to the actual POVM of (13n), and solves the
+additional pure offblank-Y first equations. No clean READY refinement is
+needed. Under SAME Book binding actual code overhead cancels pathwise.
+A fixed-width FULL real-operator compiler removes the prepared-subspace
+and precision-growing-ancilla restriction for constant controls. A new
+C1 first-source estimate includes ALL zero outcomes without a floor;
+it transfers vanishing normalized Euler residuals on the configured real
+root family, with the same reference128. This is not ambient C2 entropy,
+exact finite compiled roots or an unknown Ψ(g) oracle. See strategic §7.7.
+Physical LEFT address/resource admission, complete actual Book binding
+and field/matter preparation constraints remain before this bridge.
+
 **Actual execution gate, input `afab5f09`:**
 [full-source §§6.11–6.12](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 construct the raw-leaf/AF diagonal-code isometry and prove exact complete

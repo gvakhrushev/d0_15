@@ -23,6 +23,22 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+Latest consumer, input `919a7d11`: [strategic §§7.5–7.7](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+now composes the complete-price profile, nonlinear star source equivalence
+and an exact fixed-level LEFT recording word. Copying n active path bits
+through n CNOTs realizes the PVM on full GNS, preserves RIGHT/reference128
+and solves the additional pure preparation first equations. Clean READY
+refinement is unnecessary for this instrument. A fixed-width full real
+operator compiler and a zero-outcome-safe C1 estimate give a controlled
+first-source approximation on the configured curved family, with the true
+relative normalization/reconstruction budget. The remaining native step
+is physical LEFT/resource admission and actual Book/preparation/matter
+binding to this recorded programme. It is not physical GR, exact finite
+compiled roots or the raw h^-2/#216 terminal. Do not repeat another
+Einstein readout or clean-refinement search in place of that binding.
+The earlier spin-2 Ward route below remains a separate test for a
+different actual full native price.
+
 The user now prioritizes consistent nonlinear spin-2 interaction as the
 forcing route. Consume [strategic synthesis §§7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md):
 the Schur seed is a complete10-slot Lorentz principal symbol, but belongs

@@ -1114,6 +1114,250 @@ finite basis compiler не реализует (13n). Следующий positive
 Перебирать новые Einstein readouts, повторно назначать t(h) или
 заменять native source одним uniform prior для этого не требуется.
 
+### 6.13. Точное LEFT-копирование исполняет нужный фиксированный разрез
+
+Продолжение от `919a7d11`. Для потребителя (13e) задача оказалась
+проще, чем clean READY/PENDING refinement: требуется зарегистрировать
+LEFT leaves на УЖЕ заданном уровне, а не исполнить следующий cost tick.
+Ни controlled G, ни новый stopping counter для этого не нужны.
+
+Используем существующий path encoding golden refinement owner: первые
+n forbid-11 bits определяют весь cost-n leaf, включая pending return.
+AF уровень есть A_(n−1). На более тонком уровне full orthonormal GNS
+basis e_ij кодируется ПАРОЙ допустимых paths |enc(i)>_L|enc(j)>_R
+с общим конечным block. Это сохраняет все matrix units, включая i≠j.
+Включение AF продолжает paths, поэтому старый LEFT leaf определяется
+первыми n LEFT bits. Весь RIGHT index остаётся своим архивом.
+
+При доступности этих active LEFT wires присоединим n fresh blank bits
+Y и исполним точное слово из уже предоставленных recording CNOT:
+
+    C_Y=∏_(j=1)^n CNOT_(L_j→Y_j)
+       =Σ_i P_i⊗X^(c_i), c_i=enc(old leaf i),
+    J_Yψ=C_Y(ψ⊗|0>)=Σ_i P_iψ⊗|c_i>,
+    J_Y*(I⊗|c_i><c_i|)J_Y=P_i,
+    [C_Y,R(A_old)⊗I_Y]=0.                              (13aa)
+
+P_i — НАСЛЕДУЕМЫЕ LEFT projectors на полном тонком GNS. C_Y —
+permutation/involution на всём data⊗Y, не только blank input map.
+Он не меняет data bits или legal same-block condition. Все остальные
+Y codes сохранены; на legal blank input их вероятности нулевые.
+Это снимает ограничение diagonal-correlated image (13t): уже E_01
+регистрируется по LEFT0, хотя его RIGHT index равен1.
+
+Точное число ресурсов здесь n CNOT и n blank record bits. Право
+управлять ими с ACTIVE LEFT path bits остаётся явным execution premise;
+passive RIGHT tape не предоставляет его автоматически. Формула (13aa)
+даёт собственное слово и полный эффект в declared addressed-recording
+class, а не повышает координатное кодирование до физической actuation.
+
+Теперь поместим C_Y ДО success/failure split. Для последующего полного
+terminal instrument {T_α} его effects A_α=T_α* T_α сохраняют старые
+leaves: [A_α,P_i]=0. Это следует из bimodule frame/Π, diagonal E
+и scene на собственном факторе; для движущихся носителей используется
+соответствующее exact intertwining. Тогда полный исходный POVM есть
+
+    M_(i,α)=T_α P_i,
+    F_(i,α)=P_i A_α P_i=P_i A_α, Σ_(i,α)F_(i,α)=I.    (13ab)
+
+Таким образом (13ab) БУКВАЛЬНО реализует instrument, использованный
+в (13n), на всём исходном carrier. Y сохраняется на неудаче также.
+Регистрировать его сразу или в конце, пока он не действует на данные,
+даёт ту же joint law. C_Y field-independent; дополнительных field jets
+в (13ab) нет. После копирования прежний профиль есть
+
+    Σ_i sqrt(r_i)[sqrt(s_i)η_i^S+sqrt(1−s_i)η_i^F]
+       ⊗Ψ_i(B)⊗|c_i> .                               (13ac)
+
+Один прежний reference128 и его marginal сохраняются. Это не алгоритм
+приготовления (13ac): finite-basis obstruction §6.12 по-прежнему
+действует. Изготовлен именно дополнительный instrument старой стадии
+данной расширенной программы; Y не объявлен уже измеренным исходом
+неизменённого пятифлагового опыта §3.
+
+Можно снять и потенциальный НОВЫЙ first-source от Y preparations.
+Для полного input tangent δΞ=Σ_y δψ_y⊗|y> pulled-back effects
+C_Y*(A_α⊗|c_i><c_i|)C_Y блочно-диагональны по INITIAL Y.
+Действительно, их Y_(y,z) block содержит P_k A_α P_l с
+y⊕c_k=z⊕c_l=c_i. При k≠l он нулевой; при k=l имеем y=z.
+На occupied Y=0 block это ровно (13ab). При нулевых probabilities
+определим G_full^amp как positive-support amplitude-gradient
+representative: сумма по q_h>0, нулевые ветви дают нулевую первую
+amplitude derivative. Это НЕ finite density-gradient на всём Y.
+Следовательно в root
+
+    G_full^amp(ψ_*⊗|0>)=(G_clean ψ_*)⊗|0>
+                   =λ(ψ_*⊗|0>).                       (13ad)
+
+Все normalized PURE input tangents, включая offblank Y и entangling
+data/Y/reference направления, имеют нулевой первый источник.
+Scalar density-operator identity вне occupied block не утверждается.
+Новые invalid outcomes
+рождаются квадратично в smooth amplitude variation и дают нулевой
+первый Shannon derivative. Это не faithful-density linear-birth theorem
+и не C² regularity полного ambient entropy; restricted smooth Γ section
+и её геометрические jets из (13n) остаются отдельным результатом.
+
+Цена также имеет точный consumer, без выдуманной action=n. При прежнем
+SAME binding w_Book=q ДЛЯ ВСЕЙ программы (Y,α) и любого действительного
+положительного кода ν_h=φ^(−C_h) на varied support:
+
+    I_h=log_φ(q_h/ν_h), C_h−I_h=−log_φ q_h,
+    S_all=H(q_(Y,α))/ℓ.                                (13ae)
+
+Любой зависимый от leaf copy-overhead сокращается ДО вариации, если
+его Cost и gain действительно принадлежат этому же коду. При
+ν′=p^κν к Cost и Info прибавляется одна и та же κ; остатка κ в S нет.
+Это точное применение [complete-history owner](A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md),
+§1, и [event owner](sources/d0_cost_info_event_source_2026-10-17/RESULT_RU.md),
+§2. Нормировка ν не нужна. Реальные factory/controller расходы или
+raw normalizer, не связанные этим SAME равенством, остаются источниками.
+Фиксированное число CNOT не доказывает state-independent endpoint cost:
+ActionProtocol задаёт identity cost0 и nonidentity cost≥1, без
+word-additivity. Код новых outcomes должен быть определён также вне
+clean support; reference с произвольно назначенными там нулями не нужен.
+
+**Потреблённая стрелка:** внутри declared active-address/blank-resource
+grammar (13aa–ae) дают actual LEFT effects, ту же полную цену и все
+новые pure first-source rows. Поэтому условный nonlinear vacuum bridge
+(13p–q) теперь имеет явную instrument realization. Остаток — physical
+LEFT address/resource admission, полный actual Book binding, достижимая
+входная preparation и её связь с независимой native matter. Сам copy
+не выбирает эту программу как вынужденную динамику D0.
+
+### 6.14. Полный real-operator compiler с фиксированной шириной
+
+Следующий реальный пробел §6.12 тоже устраняется конструктивно внутри
+того же addressed coherent gate class: precision не требует растущих
+ancillas или ограничения operator estimate одним blank input.
+Пусть O — уже заданный REAL orthogonal constant control на k bits.
+Положим J_t=[[0,−1],[1,0]] на target t, Z_S — произведение control Z.
+Для pattern b остальных k−1 bits
+
+    P_b=2^(−(k−1))Σ_S (−1)^(b·S) Z_S,
+    C_S=∏_(s∈S)CNOT_(s→t), C_S J_t C_S=Z_S J_t,
+    exp(θP_b J_t)
+      =∏_S C_S exp[2^(−(k−1))(−1)^(b·S)θ J_t] C_S.    (13af)
+
+Все генераторы справа коммутируют. Это ровно одна соседняя two-level
+rotation, identity на прочих basis states. Signed π/2 rotations вдоль
+Gray path переносят произвольную пару к соседней, не трогая второй
+фиксированный endpoint. Сопряжение (13af) даёт любую two-level rotation;
+Givens QR разлагает произвольный SO(2^k). Нелинейный Toffoli или новый
+classical controller при этом не подставляется как primitive.
+
+Пишем G=exp(θ₀J), cosθ₀=a=sqrt(p). θ₀/π irrational: a имеет
+irreducible a⁴+a²−1 с nonreal conjugates, а cos рационального кратного
+π totally real. Поэтому положительные powers G плотны в SO(2).
+Каждую из конечного числа M rotations в (13af)/QR можно приблизить
+forward G powers с operator error≤η/M. Unitary telescope даёт
+
+    ||O_η−O||_op≤η НА ВСЁМ carrier.                    (13ag)
+
+Если det O=−1, используем один FIXED retained spectator с ideal
+O⊗I₂∈SO(2^(k+1)). Queries также extend tensor I. Число wires после
+этого НЕ зависит от precision; все offblank spectator/input directions
+покрыты (13ag). Physical old records не вращаются: gates разрешены
+только на объявленных coherent wires. Теорема не разрешает адресацию
+immutable archive, не создаёт неизвестную complex-unitary interface
+или orthogonal dilation для нового contraction.
+
+Для уже существующего native-query germ каждый constant control
+заменяется именно таким word. Поэтому (13y) теперь имеет явный
+FULL-carrier compiler, а b можно фиксировать до выбора precision.
+Near-fair final G powers на ещё coherent work не добавляют wires.
+Формула (13z) применима ТОЛЬКО к germ с указанным positive floor;
+новый LEFT pointer имеет retained invalid codes с ideal q=0, и такой
+floor не следует из (13ag). Полная ideal effect factorization для
+all-work gradient также остаётся требованием §6.12.
+
+Для FIRST-source, необходимого здесь, нулевые outcomes можно включить
+без floor. Для полных outcome-amplitudes v_h положим
+
+    Φ(v)=−||v||²log||v||²,
+    ∇Φ(v)=−2(log||v||²+1)v, ∇Φ(0)=0.
+
+На unit ball при ||v−w||≤ε≤1/4 непрерывный amplitude gradient
+имеет modulus≤C ε(1+|log ε|), C=64 достаточно. Если обе нормы≤2ε,
+это следует из r|log r|; иначе короткий segment остаётся на расстоянии
+≥ε от нуля и Hessian bound даёт ту же оценку. Для K полного числа
+pointer outcomes, C¹ amplitude error≤ε и C¹ norms≤L≥1 получаем
+
+    ||DS_η−DS_0||≤64 K L ε(1+|log ε|)/ℓ.              (13ah)
+
+Все нулевые outputs и entangling pure input directions включены.
+(13y)/(13ag) дают нужный C¹ bound уже при фиксированной ширине.
+Это не C² source theorem или faithful-density birth derivative.
+Для refining GR consumer правая часть (13ah) должна стремиться к0
+ПОСЛЕ умножения на ||spatial reconstruction|| ||M_n⁻¹||/a_n.
+Так переносится vanishing normalized Euler residual на перенесённых
+точках, а не существование exact finite native critical roots.
+
+Для уже построенной REAL root family это имеет непосредственный
+pointwise consumer без Ψ_*(g) oracle. В каждой точке X_n её подготовка
+известна явно. С supplied reference marginal I128/128 она задаётся128
+orthonormal data vectors; real data-only O_n переводит в них128
+стандартных входных vectors и extends orthogonally на complement.
+O_n фиксирован при ambient variations X около ЭТОЙ точки. Его полный
+compiler O_(n,η) действует тензорно с I_ref, поэтому сохраняет тот же
+reference marginal ТОЧНО. (13ah) сравнивает все pure preparation и
+field first equations, а не только направление вдоль выбранной семьи.
+При необходимом относительном accuracy budget получается sequence
+vanishing Euler residuals на configured curved geometric points.
+Это ещё не алгоритм решения физических constraints field↔matter,
+не physical selection этой семьи и не exact roots compiled prices.
+
+Это снимает прежние prepared-subspace и precision-growing-width
+ограничения для REAL constant controls заданного germ. Здесь нет
+эффективной оценки длины слова, endogenous physical clock schedule,
+отсутствующей Ψ_*(g) oracle, exact finite stationary-family theorem
+или доказательства physical forcing. Для refining family accuracy
+по-прежнему выбирается относительно собственной source normalization,
+M⁻¹ и spatial reconstruction, как после (13z).
+
+Для полноты exact READY/PENDING gate имеет строгую иную границу.
+В R=Z[a] после reduction modulo2:
+
+    R/2R=F₂[a]/((a²+a+1)²), ε=a²+a+1≠0, ε²=0,
+    b=a+a²=1+ε, b²=1, b≠1.
+
+У каждого размещённого G,G⁻¹ или fullStep ВСЕ row/column sums равны
+b, у CNOT/X/signed permutations —1. Поэтому любой finite word с N_G
+golden gates имеет uniform sums b^(N_G). Clean READY column имеет
+sum a+p=b, а carried PENDING column sum1. Они не могут принадлежать
+одному такому word, даже с basis ancillas, возвращёнными в basis.
+Exact controlled G исключён; controlled G² имеет echo
+(I⊗G)CNOT(I⊗G⁻¹)CNOT, но probabilities (p⁶,4p³), не(p,p²).
+
+Есть exact coarse refinement с retained work: fullStep на fresh pair
+исполняется для ОБОИХ старых типов; на READY его bit различает F/R,
+на PENDING остаётся work. Для старой law r полная entropy H(r)+h₀,
+а coarse AF entropy H(r)+Pr(READY)h₀. Разность sources равна
+h₀DPr(PENDING)/ℓ и не стирается. Modulo2 invariant не continuous
+в real operator norm, поэтому не противоречит (13ag).
+Главное: этот clean-refinement gate НЕ требуется для fixed-level
+LEFT recording (13aa), уже исполнимого точными CNOT.
+
+[Новый bounded checker](sources/d0_af_star_full_lattice_2026-10-17/check_left_record_and_full_operator_compiler.py)
+проверяет full A₁ GNS⊗Y dimension20, все LEFT effects и пять RIGHT
+matrix-unit generators, non-diagonal terminal effects и offblank block
+orthogonality. Затем проверяются Walsh/Gray identities на2–3 bits
+и mod2 primitive invariant. Общие доказательства даны выше, без
+finite-word enumeration или повторения root/heat/Lean replay.
+[Результат](sources/d0_af_star_full_lattice_2026-10-17/LEFT_RECORD_FULL_OPERATOR_COMPILER_RESULT.json)
+также сохраняет zero-outcome контроль: первый pure source равен0,
+а второй расходится, отвергая false ambient C² promotion.
+
+Параллельный [fine-history intake](A4D_FINE_HISTORY_INFORMATION_LEAKAGE_SOURCED_GR_2026_10_18.md),
+`ef7ba66d..e3f37459`, сохранён отдельно. Его §§9–11 дают conditional
+work-source identity, global Shannon capacity defect и leaf-count-uniform
+relative C¹ leaf-source estimate. Последняя требует существенно более
+сильных relative probability/derivative hypotheses, чем (13ah), и не
+заменяет его all-output/pure-source scope. Его finite-t sourced weights
+не универсальны при неоднородном f; fixed-t vacuum theorem не объявляется
+полным Einstein–matter законом. Отдельные source/norm/clock premises
+его weak-probe limit сохраняются. Чужие owner и checker не изменяются.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

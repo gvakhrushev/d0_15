@@ -1045,6 +1045,96 @@ critical family и физический закон выбора ею не док
 Материя, controller и global source по-прежнему должны принадлежать
 той же полной программе.
 
+### 7.7. Исполненный LEFT-разрез и полный compiler
+
+На входе `919a7d11` сняты две конкретные предпосылки предыдущего
+раздела ВНУТРИ declared coherent-address class. См. [full-source
+§§6.13–6.14](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+Для фиксированного уровня достаточно зарегистрировать active LEFT
+path bits. Cost-n leaf определяется первыми n forbid-11 bits, поэтому
+
+    C_Y=∏_(j=1)^n CNOT_(L_j→Y_j),
+    J_Yψ=Σ_i P_i^Lψ⊗|enc(i)>,
+    J_Y*(I⊗|enc(i)><enc(i)|)J_Y=P_i^L.                 (7.13)
+
+Это точное слово на всём full GNS, включая offdiagonal matrix units,
+с n fresh blank bits. Весь RIGHT algebra и reference128 сохраняются.
+Физический допуск ACTIVE LEFT controls остаётся входом; passive RIGHT
+tape его не предоставляет. Нужный effect interface больше не требует
+неизвестного controlled G или clean READY/PENDING refinement.
+
+Регистрация Y до success/failure split даёт полный POVM
+F_(i,α)=P_i T_α* T_α P_i. Actual bimodule/diagonal structure сохраняет
+старые leaves, поэтому это ТОЧНО instrument профиля (7.10), с Y
+на обоих исходах. Под SAME Book w=q вся цена H(q_(Y,α))/ℓ:
+любой actual code overhead сокращается между Cost и Info до вариации.
+Иные factory/controller источники не объявляются включёнными только
+по названию операции. Считать action числом CNOT для этого не нужно.
+
+Все новые PURE preparation first equations решены: pulled-back POVM
+блочно-диагонален по INITIAL Y, а на Y=0 равен исходному. Его
+positive-support amplitude-gradient representative удовлетворяет
+G_full^amp(ψ⊗0)=λ(ψ⊗0), включая offblank/entangling directions.
+Invalid outcomes сохранены и рождаются квадратично. Это не finite
+density-gradient или C² entropy theorem при rank births.
+
+Вторая снятая предпосылка — full-carrier fixed-width approximation
+REAL constant controls. Walsh decomposition controlled rotations через
+CNOT, затем signed Gray rotations и Givens QR дают любой SO(2^k).
+Golden powers плотны в one-bit rotations; M angles с ошибкой η/M
+дают ||O_η−O||_op≤η на ВСЁМ carrier. При det O=−1 достаточно одного
+fixed retained spectator. Precision не увеличивает число work wires.
+Нет efficiency bound, physical clock law или Ψ_*(g) oracle.
+
+Это само по себе не даёт C³ entropy при retained invalid codes.
+Но first-source допускает более сильную нужную здесь оценку без floor:
+
+    ||DS_η−DS_0||≤64 K L ε(1+|log ε|)/ℓ,               (7.14)
+
+если complete outcome-amplitude germs C¹-близки с ошибкой ε≤1/4
+и C¹ norms≤L, K — ВСЕ outcomes, включая нулевые. Она следует из
+непрерывности ∇[−||v||²log||v||²] при v=0. Поэтому full operator
+compiler сравнивает ambient pure-preparation и field first equations
+также через rank births, без обещания C²/C³ source.
+
+В каждой точке существующей REAL curved root family её известную
+подготовку можно реализовать идеальным CONSTANT real data operator;
+его approximation тензорно с I_ref сохраняет I128/128 точно. Здесь
+не требуется программа для неизвестной field-dependent Ψ_*(g).
+После умножения ошибки (7.14) на собственные inverse source coefficient,
+M⁻¹ и spatial reconstruction получается vanishing normalized Euler
+residual на тех же configured geometric points. Точные конечные
+compiled roots или физический выбор этой семьи этим не доказаны.
+
+**Потреблённый переход:** (7.13) реализует LEFT POVM (7.10), к которому
+применяется nonlinear (7.11); (7.14) даёт source-preserving limiting
+approximation route. Остаток находится перед этой собранной стрелкой:
+physical active-LEFT/blank admission, actual полный Book binding и
+stationary preparation/field↔matter constraints из того же исполнения.
+Сам copy не готовит профиль и не выбирает опыт как native закон D0.
+Новая Einstein-проба, clean READY gate или назначение t(h) не заменяют
+этих obligations. Matter/global и raw/#216 границы сохранены.
+
+**Параллельный intake `ef7ba66d..e3f37459` сохранён и потреблён.**
+[Fine-history information/source owner](A4D_FINE_HISTORY_INFORMATION_LEAKAGE_SOURCED_GR_2026_10_18.md)
+даёт exact global capacity-defect decomposition: Γ−S есть сумма
+KL leaf/success/scene defects и conditional mutual information.
+Это характеризует Shannon MAXIMUM данного positive probability
+polytope, не физический выбор maximum и не новую KL-action.
+Его относительная leafwise C¹ source bound независима от числа leaves,
+но требует pointwise relative error и её derivative, сверх одной
+глобальной operator approximation. Она дополняет (7.14), которая
+покрывает также success/scene и нулевые исходы с более грубым K factor.
+
+Детерминированный дополнительный W=f(Y,α) имеет H(W|Y,α)=0;
+наш НОВЫЙ первичный Y всё равно вносит H(Y) в Γ и не стирается.
+Этот же intake показывает строго различные finite-t source coefficients
+при неоднородном f. Поэтому conditional fixed-t VACUUM equivalence
+не завершает inhomogeneous Einstein equation с независимой материей.
+Его weak-probe C³ comparison требует своих source norms, t→0 и
+реального относительного matter coupling; физический clock law оттуда
+не следует. Обе ветви сведены к одной цене, без потери этих границ.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября
