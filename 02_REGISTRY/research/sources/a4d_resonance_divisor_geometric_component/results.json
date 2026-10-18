@@ -1,0 +1,35 @@
+{
+  "status": "CANDIDATE",
+  "carrier": "owned holomorphic connection Hessian A(z) on (C*)^4",
+  "object": "geometric hypersurface components V(P+) and V(conjugate(P+))",
+  "numerator_term_count": 671,
+  "chart_u_degree": 18,
+  "chart_leading_coefficient": [
+    -1024,
+    0
+  ],
+  "specialization": {
+    "y2": 1,
+    "y3": 4
+  },
+  "gao": [
+    {
+      "prime": 1009,
+      "y_degree": 6,
+      "dimension": 1
+    },
+    {
+      "prime": 1021,
+      "y_degree": 6,
+      "dimension": 1
+    }
+  ],
+  "generic_rank_on_each_geometric_component": 23,
+  "generic_nullity_on_each_geometric_component": 1,
+  "phase_count_at_(-1,-1,i,i)": {
+    "predicted_nullity": 4,
+    "exact_rank": 22,
+    "exact_nullity": 2
+  },
+  "missing_stratum": "nullity >= 2 locus, including the conjugate intersection V(P+) \u2229 V(conjugate(P+)) and any Fitting component where one chiral block has rank <= 10"
+}

@@ -1,8 +1,9 @@
 # A4D exact resonance divisor and rank strata
 
 **Task:** `EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION`  
-**Status:** `IN_PROGRESS / OPEN`  
+**Status:** `IN_PROGRESS / OPEN` (geometric codimension-one step is CANDIDATE; higher-codimension strata are not certified)  
 **Primary certificate:** [`certificates/a4d_resonance_divisor_slice_check.py`](certificates/a4d_resonance_divisor_slice_check.py)  
+**Candidate geometric certificate:** [`sources/a4d_resonance_divisor_geometric_component/check.py`](sources/a4d_resonance_divisor_geometric_component/check.py)  
 **Exact output:** [`certificates/a4d_resonance_divisor_slice_results.json`](certificates/a4d_resonance_divisor_slice_results.json)
 
 ## Current exact result
@@ -31,7 +32,7 @@ The sparse coefficient ledger is [`certificates/a4d_resonance_divisor_chiral_num
 
 The same certificate proves `P_+` irreducible over `Q(i)`. Use the determinant-one coordinate change `z_0=u`, `z_1=u+y_1`, `z_2=u+y_2`, `z_3=u+y_3`; in these variables the coefficient of `u^18` is the nonzero scalar `-1024`. Specializing `(y_1,y_2,y_3)=(1,4,8)` and reducing modulo the prime ideal `(13,i-5)` gives the degree-18 polynomial whose descending coefficients are stored in the results JSON. The common coefficient denominator is coprime to 13, and the reduced leading coefficient is `3`, so this reduction is well-defined and preserves degree. The exact Rabin irreducibility test over `F_13` succeeds. A factorization over `Q(i)` would, by Gauss's lemma and the constant leading coefficient in `u`, reduce to a nontrivial factorization of this polynomial; its irreducibility rules that out. Two coefficients (`512` and `-512 i`) have different conjugation ratios, so `P_+` and `\overline{P_+}` are nonassociate. Their product is therefore irreducible over `Q` by the quadratic Galois action. Thus, up to a Laurent unit, the rational determinant has one irreducible factor `P_+\overline{P_+}`; over `Q(i)` it splits into those two distinct conjugate factors, each with multiplicity one.
 
-Over `Q(i)`, the two distinct irreducible arithmetic divisor factors are `P_+` and `\overline{P_+}`. At the generic point of either arithmetic prime divisor, the corresponding 12-by-12 block has determinant valuation one, so its rank is 11 over that divisor's function field (Smith form over the local DVR); the other block is invertible there. Hence the full 24-by-24 matrix has generic rank 23 on each arithmetic codimension-one component. Irreducibility over `Q(i)` does **not** establish absolute irreducibility over `C`, so the number of geometric components after extending constants remains unproved. This is a generic component result, not a classification of higher-codimension intersections.
+Over `Q(i)`, the two distinct irreducible arithmetic divisor factors are `P_+` and `\overline{P_+}`. At the generic point of either arithmetic prime divisor, the corresponding 12-by-12 block has determinant valuation one, so its rank is 11 over that divisor's function field (Smith form over the local DVR); the other block is invertible there. Hence the full 24-by-24 matrix has generic rank 23 on each arithmetic codimension-one component. The Rabin test above is only an irreducibility proof over `Q(i)`. It does not by itself prove absolute irreducibility over `C`. That geometric step is the candidate in the next section. Neither statement classifies higher-codimension intersections.
 
 The exact #314 control point `(-1,-1,i,i)` lies on both conjugate components: the certificate evaluates both factors to zero there, and both 12-by-12 chiral blocks have rank 11, giving full rank 22. This is one certified intersection point, not the intersection ideal or its full rank stratification.
 
@@ -110,11 +111,37 @@ The polynomial `-1024 w^6(w+i)^6(w+2i)^6` is instead the determinant after multi
 
 This replay also embeds the exact complex rank-23 witness from the earlier review in the direct owner reconstruction. Therefore no universal complex even-rank theorem follows from the Hodge split: coefficient conjugation acts on coefficients while keeping `Z` fixed and does not preserve a zero at the same non-real character. The exact general formula remains `rank A=rank M+rank σ(M)`, with doubling only on the physical unit torus.
 
+## Candidate geometric components
+
+**Status:** CANDIDATE. No skeptic pass has been run. This section does not close the task and does not use a finite character grid as a stratification.
+
+**Claim.** On the carrier of the owned holomorphic connection Hessian `A(z)` for `z in (C*)^4`, the numerator `P_+` of `det A_+` is absolutely irreducible in `C[z_0,z_1,z_2,z_3]`, and so is its coefficient conjugate. These are the only two geometric irreducible components of the determinant divisor on the torus. The generic rank of `A` on each is 23 (nullity 1). The count law `nullity = 2 max(n_{+i}, n_{-i})` remains false.
+
+**Owned pre-facts.** The phase-count counterexample is already owned, not recomputed as a new theorem. `02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md` lines 11–17 say, verbatim:
+
+> exact elimination over \(\mathbb Q(i)\) gives
+> \[\operatorname{rank}A=22,\qquad \operatorname{nullity}A=2.\]
+> Here \(n_{+i}=2\) and \(n_{-i}=0\), so the proposed rule
+> \(\operatorname{nullity}=2\max(n_{+i},n_{-i})\) predicts 4. This is an
+> exact counterexample on the full character torus.
+
+The arithmetic factorization `P_+ \overline{P_+}` over `Q(i)`, with multiplicity one and generic arithmetic rank 23, is the earlier certificate in this memo. The new check recomputes the numerator by an independent matching expansion and requires it to equal that Bareiss ledger.
+
+**Computation.** `A_+` has 48 nonzero entries. Its support has 2304 perfect matchings. The signed expansion is the Laurent polynomial `(z_0 z_1 z_2 z_3)^{-3} P_+`, with `P_+` of 671 terms in `Z[i][z]`, degree at most 6 in each variable, and not divisible by any `z_r`. After `z_0=u`, `z_1=u+y_1`, `z_2=u+y_2`, `z_3=u+y_3` (determinant 1), the coefficient of `u^{18}` is the constant `-1024`. The image `H(u,y)=P_+(u,u+y,u+1,u+4)` therefore still has `u`-degree 18. For `p in {1009,1021}`, both larger than `(2·18-1)·deg_y H` and both splitting `i`, the Ruppert system
+
+`H(∂g/∂y - ∂h/∂u) + h ∂H/∂u - g ∂H/∂y = 0`,
+
+with `deg g ≤ (17, deg_y H)` and `deg h ≤ (18, deg_y H - 1)`, has solution dimension 1, and `gcd(H, ∂H/∂u)=1` over `F_p`. Dimension 1 means there is no second solution over an algebraic closure: a factor of positive `u`-degree with nonzero `u`-derivative would give one, and matrix rank does not grow under field extension. A proper power is excluded by the gcd. So `H`, and then `P_+`, is absolutely irreducible. The same holds for the coefficient conjugate. The witnesses `512` and `-512 i` have conjugation ratios `+1` and `-1`, so the two polynomials are nonassociate. On `(C*)^4` the denominator `(z_0 z_1 z_2 z_3)^6` is a unit, and `det A = P_+ \overline{P_+} / (4096^2 (z_0 z_1 z_2 z_3)^6)`. The zero set therefore has exactly these two geometric codimension-one components. Along the DVR at the generic point of `V(P_+)`, `det A_+` has valuation 1 and `det A_-` has valuation 0, so the generic rank is `11+12=23`.
+
+**Negative controls.** The same Ruppert matrix returns dimension 2 for `u^2+y^2` over the inert prime `1031` (irreducible over `F_p`, reducible over the algebraic closure) and dimension 1 for `u^2+y^2-1`. The owned point `(1,1,1,1)` has rank 24. The owned point `(-1,-1,i,i)` has rank 22, lies on both components, and is the counterexample to predicted nullity 4. These controls can fail the claim: a blind solver that always returned dimension 1 would fail the sum-of-squares control, and a dropped `u`-degree would fail the leading-coefficient check.
+
+**Pre-registered attack.** The strongest attack is to treat this codimension-one result as the full rank stratification, or to read the nullity-2 point `(-1,-1,i,i)` as the generic rank on `V(P_+)`. It is not. That point is an intersection point. A second attack is that a Gao dimension computed in small characteristic, or a specialization that kills a factor, was mistaken for absolute irreducibility. The certificate uses primes above the degree bound, a constant leading coefficient `-1024`, a square-free gcd, and a control that sees an absolutely reducible polynomial. A third attack is carrier drift onto `[A(z)|C(\bar z)]`, a phase-count replacement, a finite grid, or a diagonal germ. None of those is used.
+
+**What this does not show.** It does not compute the nullity-`≥ 2` stratum. The missing stratum is the closed locus in `(C*)^4` where `nullity(A) ≥ 2`. That locus contains the conjugate intersection `V(P_+) ∩ V(\overline{P_+})`. Every irreducible component of the intersection that passes through `(-1,-1,i,i)` has generic nullity 2, because the intersection lies in `{nullity ≥ 2}` and `{nullity ≥ 3}` is Zariski-closed, but the ideal of the intersection is not computed and other components are not listed. Also missing is the Fitting locus inside `V(P_+)` where `rank(A_+) ≤ 10` while `\overline{P_+} ≠ 0`, and the symmetric locus on the conjugate component. No coefficient, no action, and no physical source is chosen. This is not a statement about the conjugated slot `[A(z)|C(\bar z)]`.
+
 ## Exact computation boundary
 
-The global Laurent factorization over `Q` and generic rank on both arithmetic codimension-one components over `Q(i)` are now certified. The remaining open steps are the absolute geometric factor boundary and exact higher-codimension rank-drop locus: certify whether either arithmetic factor splits over `C`, then certify the ideals/strata where a chiral block drops below generic rank 11 or where the conjugate zero sets meet, and determine the resulting full-matrix ranks. The certificate uses sparse fraction-free Bareiss elimination for one 12-by-12 block and an exact finite-field irreducibility test; it does not rely on a heuristic symbolic `factor` result.
-
-The task remains open for absolute geometric factorization and exact higher-codimension rank-drop ideals/strata and their ranks. The global rational Laurent factorization and generic arithmetic codimension-one ranks are exact algebraic results; no finite character scan substitutes for the remaining ideal-theoretic classification.
+The rational Laurent factorization, the two arithmetic codimension-one ranks, and — as a candidate, by the certificate below — the two geometric codimension-one components with generic rank 23, are exact algebraic statements. The task stays open at the first missing stratum: the nullity-`≥ 2` locus, including the conjugate-intersection ideal and the chiral Fitting ideals of corank at least 2. No finite character sample, diagonal germ, or phase count is that stratum. The count law `nullity = 2 max(n_{+i}, n_{-i})` stays refuted, and `(-1,-1,i,i)` stays a counterexample rather than a generic point.
 
 ## Scope firewall
 
@@ -128,4 +155,5 @@ The broader theoretical continuation is specified in [`A4D_THEORY_CLOSURE_HANDOF
 python3 02_REGISTRY/research/certificates/a4d_resonance_divisor_slice_check.py
 python3 02_REGISTRY/research/certificates/a4d_hodge_structural_review_check.py
 python3 02_REGISTRY/research/certificates/a4d_sd_asd_reduction_check.py
+python3 02_REGISTRY/research/sources/a4d_resonance_divisor_geometric_component/check.py
 ```
