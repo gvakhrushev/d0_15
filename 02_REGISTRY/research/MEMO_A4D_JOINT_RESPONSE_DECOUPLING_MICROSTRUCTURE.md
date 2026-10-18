@@ -2,6 +2,23 @@
 
 ## 18 October 2026 — native source, preparation and nonlinear GR synthesis
 
+**Full spectral quotient consumer, input `61737b24`:**
+[Strategic §7.12](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+proves an O(h) weak metric-family source bound for the actual finite-B
+conditional programme on a globally smooth elliptic chart, IF its
+geometric measure is independently supplied. All thermal modes and
+reference components remain. The actual measure costate is now explicit;
+fixed word-to-cell/PF counts do not generate its determinant jet.
+Leading torsion equations cancel one a2 square, not the full density
+operator. The next consuming step is the genuine sampling/embedding
+variation and its equation, rather than another abstract Ward or a new
+siteweight. This is not the raw h^-2 terminal or a physical GR closure.
+An exact rank128 fixed-RIGHT preparation satisfies every independent
+preparation/observer row while retaining a nonzero metric current source
+in a bounded-energy C-infinity refinement. This rules out that narrower
+matter/observer implication; full coframe/link roots and P1 admission
+are explicitly not claimed.
+
 **Actual metric-source consumer, input `bd646b76`:**
 [Strategic §7.11](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 computes the true inverse-coframe Dirac jet on the star metric family.

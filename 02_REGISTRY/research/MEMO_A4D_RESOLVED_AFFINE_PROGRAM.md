@@ -23,7 +23,22 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
-Latest actual-source consumer, input `bd646b76`: [strategic §7.11](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+Latest full-spectrum consumer, input `61737b24`: [strategic §7.12](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+proves O(h) weak current-source control for the actual finite-B price
+on a globally smooth elliptic chart with an independently supplied
+geometric measure. Full thermal/CAR/reference modes are retained.
+Its exact measure costate is computed; fixed AF/label counts and a2
+torsion stationarity do not supply or remove it. Continue with the
+actual sampling/embedding equation of the original programme. Do not
+install geometric volume, infer a raw h^-2 estimate or claim joint roots.
+The alternative is an actual on-shell cancellation after solving the
+full connection/normal equations; operator noncancellation does not
+exclude this source-level route.
+The independent preparation and observer equations alone are insufficient:
+an exact fixed-RIGHT128 smooth bounded-energy family retains nonzero
+metric current source. Its missing coframe/link/P1 equations stay open.
+
+Previous actual-source consumer, input `bd646b76`: [strategic §7.11](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 computes a nonzero resonant Dirac pinch on the metric family, including
 an explicit full-reference128 eigenpreparation with a nonzero source of
 the conditional full price. Eigenprep and geometric Ward alone therefore

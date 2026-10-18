@@ -2553,6 +2553,250 @@ reference128 witness, chronology normal jet и rational query inverse.
 не запускаются. [Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_OPERATOR_KERNEL_SOURCE_RESULT.json)
 сохраняет границы physical_GR=false и whole_joint_roots=false.
 
+### 6.28. Actual measure costate и полный спектральный O(h) quotient
+
+Вход `61737b24`; предыдущий checkpoint получил actual current (13bx2).
+Теперь недостающий measure-source вычислен из ТОЙ ЖЕ цены, а положительный
+O(h) переход доказан для всего finite-B carrier при явных smooth/measure
+гипотезах. Ни ω, ни conservation law не добавляются в native programme.
+
+**Measure row.** Пусть именно операторная мера действительно варьируется,
+f_x=δlogω_x. На fixed whitened Hilbert space её raising jet есть
+δd=[M_f/2,d], δD=[M_f/2,d−d*]. При том же W и A={D,W} из(13bx1)
+
+    DS_ω=Σ_x f_x k_x,
+    k_x=Re tr_CAR([d,A]_(x,x)), Σ_xk_x=0.           (13cb)
+
+Это следует из DS=2ReTr Aδd и cyclic trace, без [ρ,D]=0.
+Если physical execution действительно свяжет ω с det e, то на ψ-family
+f=D_v⁻ψ/h, и точная finite строка станет
+
+    DS_nat[ψ]=(h ell)⁻¹Σ_xψ(x)
+                      [Σ_rD_r⁺j_r(x)−ell D_v⁺k(x)]. (13cc)
+
+Таким образом требуемая компенсация не скрыта в слове «мера»: её
+costate есть(13cb). Простая half-density смена ПРЕДСТАВЛЕНИЯ всего
+tuple не создаёт этого физического source: simultaneous Δ,ρ transport
+сокращается в trace по уже принадлежащему whole-frame identity.
+
+**Почему имеющиеся AF/label counts не дают f.** В [AF composition, §2](A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md)
+π_h(X_w) фиксирован, а q_w — weights той же истории. Поэтому
+μ_x=Σ_(π_h(X_w)=x)q_w и Dμ_x=0 на fixed-history/cut field curve.
+В то же время Dlog|det e|=D_v⁻ψ/h вообще ненулевое. Детерминированное
+перераспределение КОНЕЧНЫХ words по fixed cells также локально постоянно
+между crossings, а не имеет этот smooth jet. В continuum e=DY перенос
+исходного dx в y=Y(x) даёт J⁻¹dy, J=|det DY|; он не превращает
+его в равномерное dy. В исходных координатах остаётся
+dx=J⁻¹dV_G, как у counting heat owner. Uniform density по archive labels
+или conditioning уже заданной меры этого Jacobian не устанавливают.
+Нужны actual sampling/reweighting/variable-density equations исходного
+процесса, а не переименование уже фиксированного pushforward.
+
+**Положительная теорема для actual pp-wave stencil.** Положим ell=h;
+fixed inverse-coframe scale ν сохраняет strict Julia margin и uniform
+ellipticity. На support/halo ψ коэффициенты base pp-wave не зависят
+от v и M_v=I. Обозначим T_r=Λ(M_r)S_r, C_r=C(u_r),
+∇_v⁺=(S_v−I)/h, ∇_v⁰=(S_v−S_v*)/(2h),
+∇_r⁻ψ=(ψ−S_r*ψ)/h. Тогда actual d_h=Σ_r C_r(T_r−I)/h.
+ЕСЛИ отдельно принадлежит ω_τ=det e_τ/det e₀, её натуральный
+fixed-Hilbert jet и конечный skew generator равны
+
+    δd_nat=−Σ_r C_r M_(∇_r⁻ψ)∇_v⁺+[s_h,d_h],
+    s_h=M_(∇_v⁻ψ)/2,
+    K_h=(M_ψ∇_v⁰+∇_v⁰M_ψ)/2, K_h*=-K_h.           (13cd)
+
+Все proper links сохраняются. Их v-independence даёт ТОЧНО
+
+    [M_ψ∇_v⁰,d_h]=−Σ_r C_r M_(∇_r⁺ψ)T_r∇_v⁰,
+    R_d:=δd_nat−[K_h,d_h]
+       =Σ_rC_r[M_(∇_r⁺ψ)T_r∇_v⁰−M_(∇_r⁻ψ)∇_v⁺]
+        +[s_h−[∇_v⁰,M_ψ]/2,d_h].                   (13ce)
+
+Порядок T_r не заменяется коммутирующими числами. При globally bounded C⁶
+coframe/observer/connection chart на fixed periodic torus с uniform
+ellipticity и ψ с bounded требуемыми derivatives
+разности ∇⁺ψ−∇⁻ψ=O(h), T_r−I=O(h):H¹→L²,
+∇_v⁰−∇_v⁺=O(h):H²→L² и последний commutator дают
+||R_df||≤Ch||ψ||_(C^m)||f||_(H²_h). То же верно для R_d*.
+Здесь используется полноценный discrete H² graph estimate:
+
+    ||f||_(H²_h)≤C||(1+Δ_h)f||,
+    R_h=δD_nat−[K_h,D_h]=R_d+R_d*,
+    ||R_h(1+Δ_h)⁻¹||≤Ch||ψ||_(C^m).               (13cf)
+
+H² estimate следует из owned whole-band H¹ Gårding bound
+[finite-source owner, §§3,5](A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md):
+применить его к lattice differences f и к D_hf. Коммутатор
+[D_h,∇_j⁺] имеет uniformly bounded first-order coefficients при C²
+sampling/transport bounds. Поэтому H²_h≤C(||D_h²f||+||D_hf||+||f||),
+а selfadjoint spectral estimate поглощает средний член в||(1+Δ_h)f||.
+Nyquist modes в этой graph norm и в приборе остаются.
+
+**Именно finite-B цена, без подмены теплом.** Пусть α=c₀h²,
+m_hα=β_h лежит в fixed positive compact interval, B≥b₀I>0, M,z фиксированы,
+и genuine eigenpreparation имеет E_h≤E_*. Calibrations постоянны внутри
+каждой field variation. Тогда [W,Δ_h]=0, включая все ±D coherences,
+так что Tr W[K_h,Δ_h]=0 точно. Следовательно
+
+    DS_nat=Tr W{D_h,R_h},
+    |DS_nat[ψ]|≤2Ch||ψ||_(C^m)[sqrt(E_*)(1+E_*)
+        +b₀⁻¹(Z_K⁻¹+Mzβ/(1−z))
+                     Tr(1+Δ_h)²exp(−βΔ_h)].          (13cg)
+
+Для heat используется B^(m−1)≤b₀⁻¹exp(−βΔ_h); для feedback также
+F_price⁻¹≤(1−z)⁻¹I. Cyclic trace переносит(1+Δ_h) из relative estimate
+на spectral weight, а bounded-energy matter остаётся trace-one.
+Owned full thermal-moment bounds и positive lower Z_K делают bracket
+uniform. Поэтому DS_nat=O(h) для ВСЕХ thermal modes и полного CAR16;
+reference128 и существующие multiplicities не отбрасываются.
+
+Это настоящий weak ψ-source quotient на declared smooth refinement.
+Он НЕ является raw h⁻²/#216 estimate, β→0 theorem, physical ω-admission
+или доказательством joint roots. Одной C² compactness golden family
+недостаточно для uniform higher bounds(13cf); fixed ν margin тоже
+нельзя послать к0 без нового estimate. В continuum full natural pullback
+имеет generator K_ξ=ξ·∂+divξ/2; на этой base ψ-кривой δn=δΩ=0.
+Для исходной counting programme в этом continuum limit остаётся точный source
+DS_count[ψ]=−D_logμ S[∂_vψ]. Его нельзя занулить preparation/observer
+Euler без действительного measure/embedding source equation.
+
+**Попытка заменить measure row уравнением связи проверена и не замыкает
+полный оператор.** У [heat owner, (6)](A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md)
+L₂=−4R_G/3+2|h₃|²−4|v−b|², b=−dlog|det e| для counting measure.
+Ведущие link rows дают v=b,h₃=0. Однако для ЛЮБОГО torsion
+Q_T=ΣT C_bC_cI_a, и Q_Tvac=Q_T*vac=0. Поэтому
+
+    (Z_T−hatγ(b)/2)vac=−C(b)vac/2,
+    norm=|b|/2.                                    (13ch)
+
+Даже pure trace решение имеет
+Z_T=[C(b)N+N I(b)]/3, а не hatγ(b)/2. Завершение a₂-квадрата не
+отменяет весь density operator, a₄, R или current; иной physical metric
+оно не выбирает. Отсутствие operator cancellation СИЛЬНЕЕ нужного
+source утверждения: возможность компенсации после решения ВСЕХ
+connection/normal equations здесь не исключена. Следующий consumer —
+(13cb–cc) из native measure/sampling процесса ЛИБО действительное
+on-shell source identity после этих уравнений. Ни новая connection,
+ни новый action не подставляются для получения нужного ответа.
+
+[Bounded density/current check](sources/d0_af_star_full_lattice_2026-10-17/check_native_density_current_source.py)
+проверяет exact full16 costate, combined backward/forward row,
+неполную finite отмену и все24 torsion-vacuum directions.
+[Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_DENSITY_CURRENT_SOURCE_RESULT.json)
+отделяет доказанный mathematical source estimate от physical admission.
+
+### 6.29. Даже bounded-energy preparation и ВСЕ observer rows не вынуждают current conservation
+
+Ниже проверен более сильный предел, чем прежний alternating/Nyquist
+контроль §6.26. Это actual conditional matrix price(8), не изменённое
+действие. Все16 CAR grades и full reference128 сохраняются. Пример
+не удовлетворяет всем coframe/link equations и не объявляется физически
+выбранным P1/readout-процессом; он исключает ровно вывод missing metric
+row только из независимых preparation и observer equations.
+
+Пусть H — orthogonal Hadamard matrix с первой строкой(1,1,1,1)/2,
+остальные строки(1,1,−1,−1)/2,(1,−1,1,−1)/2,(1,−1,−1,1)/2.
+При 0<ν<κ<1 и малом θ>0 положим
+
+    c=cos(θ/2), σ=sqrt((4−c²)/3),
+    U=ν diag(c,σ,σ,σ)H, F=Uᵀη, e=F⁻¹,
+    n=e₀, links I, u_r=Ue_r.                       (13ci)
+
+Каждый creation norm равенν; coframe постоянен в пространстве,
+невырожден и uniformly smooth. Δ(k)=ell⁻²|U z(k)|² I_16,
+z_r(k)=e^(ik_r)−1. Именно два следующих множества momentum имеют
+ОДИН и тот же eigenvalue μ²:
+
+    k=±2θ e_r, r=0,…,3;
+    k_+=(θ,θ,θ,θ), k_-=−k_+,
+    μ=2νsinθ/ell.                                   (13cj)
+
+Это точное finite identity, не continuum degeneracy approximation.
+В отличие от этих states, все16 смешанных sign patterns(±θ)^4 при
+θ≠0 НЕ один shell; их использовать для preparation Euler нельзя.
+
+**Exact projector и настоящие prep rows.** На восьми axis momenta
+берём полный CAR16 projector P_axis, rank128. В каждом из них удаляем
+один normalized positive-D vector
+v_k=(vac+C(w_k/|w_k|)vac)/sqrt2, w_k=Uz(k).
+Добавляем восемь orthonormal standing positive-D vectors между k_+,k_-.
+Они индексируются I⊂{1,2,3}, spatial spectator basis. При
+z=e^(iθ)−1, t=z/|z| положим
+
+    v_+^I=(|I>+t C₀|I>)/sqrt2, v_-^I=conjugate(v_+^I),
+    c_I=(v_+^I,v_-^I)/sqrt2,
+    s_I=(−i v_+^I,i v_-^I)/sqrt2.                  (13ck)
+
+Добавляем(c_empty+s_empty)/sqrt2 и c_I для остальных семи I.
+Все удалённые и добавленные vectors принадлежат ТОЙ ЖЕ μ² shell,
+support axis и special pairs раздельны. Поэтому
+
+    P=P_axis−P_removed,8+P_added,8,
+    P²=P=P*, rankP=128, ΔP=μ²P,
+    ρ=P/128.                                      (13cl)
+
+P реален в position basis, поскольку conjugate momenta сохранены.
+Pure purification на reference128 имеет marginal I_128/128 ТОЧНО.
+Все normalized preparation Euler rows, включая entangling и fixed-RIGHT
+rows, равны0. Здесь НЕ утверждается DΨ=μΨ: axis base содержит оба
+Dirac signs, как разрешает настоящее Δ-eigen уравнение.
+
+**Все local observer rows.** У actual n/L variation при n=e₀
+δL=−B_(0i), и с K(k)=d(k)−d(k)*
+
+    δD_n(l,k)=Γ(δL)K(k)−K(l)Γ(δL).                 (13cm)
+
+Это включает moving endpoint/link-whitening и adjoint terms.
+Density имеет только Fourier0 и q=±2θ(1,1,1,1). При q=0 полный
+axis orbit, как и восемь удалённых axis vectors, даёт нулевые observer
+moments по role-permutation symmetry. В special pair w_spatial=0.
+При q≠0 Γ(δL) меняет одно spatial occupation; все occupied blocks
+имеют одинаковое I с обеих сторон, поэтому каждый из трёх sources0.
+Другие q отсутствуют. Thermal/feedback q≠0 trace0; при q=0 их полная
+momentum covariance имеет вид aI+b11ᵀ и contraction с time/spatial
+rows U равен0. Следовательно ВСЕ независимые observer rows исходной
+conditional цены равны0, без замораживания n или heat.
+
+**Но metric-family source не исчезает.** Берём flat null-gradient
+family e_τ=e+(τ/h)ℓ_null(D⁻ψ)ᵀ, ℓ_null=(1,1,0,0),
+ψ=cos(2θΣ_r site_r). Это general constant-coframe версия star critical
+family; Fℓ_null здесь не один coordinate vector, поэтому её нельзя
+выдавать за одноролевой случай(13bs). На special positive-D block
+
+    m=<v_-^I,dot Δ v_+^I>
+      =−8ν³c³(1−e^(2iθ))(e^(iθ)−1)²/(h ell²).     (13cn)
+
+Fourier amplitude ψ_q=1/2 включена. Полный price source равен
+(Im m+7Re m)/128: axis projections translation-invariant, а spectral
+thermal/feedback terms не видят q≠0. При r=tan(θ/2) это ТОЧНО
+
+    DS_count[ψ]=ν³ r³[−1+28r+6r²−28r³−r⁴]
+                       /[(1+r²)^(11/2) h ell²].     (13co)
+
+Он отрицателен при0<r≤1/32. Для fixed physical κ_phys>0,
+θ=κ_phys h, ell=h получаем
+
+    μ_h→2νκ_phys, e_h→e₀ в C^∞,
+    DS_count[ψ]→−ν³κ_phys³/8 ≠0.                  (13cp)
+
+На unit torus можно взять h=1/L,θ=2π/L; достаточно больших L нет
+aliasing совпадений, ψ_h есть sampling одной fixed smooth cosine.
+Native α=c₀h² и m_h с fixed-positive β не меняют этот source, поскольку
+его thermal/feedback contributions точно нулевые. Таким образом это
+НЕ только high-energy lattice control: preparation energy ограничена,
+coframes/ψ гладкие, reference полный, а current source сохраняется.
+
+Положительная natural-measure оценка §6.28 с этим совместима: она
+добавляет настоящий costate(13cb), которого у counting programme нет.
+Нельзя заменить его ссылкой на eigenstate, stronger Dirac law или
+observer stationarity. Full link/coframe equations, operational observer
+binding и upstream history/controller пока остаются отдельными joint
+условиями; этот пример НЕ является их stationary counterexample и
+НЕ опровергает весь D0→ОТО. Он меняет именно следующий consuming step:
+нужно получить missing measure/embedding source из исходного исполнения
+либо решить actual connection/normal equations и доказать его on-shell
+компенсацию. Последнюю возможность этот counter не исключает.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная

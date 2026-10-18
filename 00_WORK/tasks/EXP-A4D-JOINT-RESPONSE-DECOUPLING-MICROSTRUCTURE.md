@@ -12,6 +12,41 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: close the current equation through its native matter and measure
+
+Input `61737b24`; the preceding goal turn made progress by publishing
+the actual full-CAR source-divergence identity and chronology normal
+operator jet, not merely a conditional Ward criterion. Root now tests
+whether the remaining current equation follows from the independently
+owned matter/embedding equations, and whether the programme supplies
+the required measure. Read-only assistants examine (i) Book01/03 and
+the native counting/PF/geometric measure interfaces; (ii) the full
+conditional programme's actual preparation/observer equations on a
+nonempty branch; and (iii) the full coframe/connection natural-operator
+limit with its genuine weighted adjoint. Their consumer is (13bx2) /
+strategic (7.27a), retaining all16 CAR grades, reference128, full price
+and fixed source normalization. Root alone owns the existing shared
+files and a bounded calculation only if it decides that transition.
+Do not add siteweight, conservation law, selector or rest action as an
+axiom. Separate exact finite equations, source-weighted continuum
+estimates and physical admission. No unchanged old certificate replay.
+
+Consumed in full-source §§6.28–6.29 / strategic §7.12: the measure
+costate is explicit; fixed word-to-cell counts do not supply its
+determinant variation. Actual pp-wave stencil identities and a whole-band
+H2 graph estimate give O(h) source for the full finite-B price with
+independently supplied geometric measure and controlled smooth refinement.
+Leading torsion equations cannot cancel the full density operator.
+An exact rank128 fixed-RIGHT family obeys all preparation/observer
+rows, has bounded energy and a C-infinity smooth refinement, but keeps
+a nonzero metric-family source. Independent review checks normalization,
+all local observer rows and the true thermal/finite-B scope. This changes
+the parent route to a genuine sampling/embedding source equation, not a
+new conservation axiom, or an actual cancellation after all connection/
+normal equations are solved. Operator noncancellation does not exclude
+that second source-level route. Full coframe/link/P1 stationarity remains open;
+the bounded counter is not promoted to a full joint or global no-go.
+
 ### 18 October: actual operator sources on the metric critical family
 
 Input `bd646b76`; the preceding goal turn published the exact fixed-collar

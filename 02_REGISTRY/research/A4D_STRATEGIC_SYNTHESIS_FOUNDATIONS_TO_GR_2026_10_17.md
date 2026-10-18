@@ -1558,6 +1558,71 @@ matter/rest equations одной программы, затем source-controlle
 и spatial limit. Этот checkpoint не добавляет действия и не закрывает
 physical/global ОТО; старые root/heat/Lean suites не переигрываются.
 
+### 7.12. Полный thermal-source quotient и точная мера, которой не хватает
+
+Вход `61737b24`; [full-source §6.28](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+не повторяет прежний Fourier witness. Для настоящего D_can теперь
+построен skew finite generator K_h и exact stencil residual с сохранением
+порядка всех proper links. На globally smooth uniform elliptic chart
+
+    ||[δD_nat−[K_h,D_h]](1+Δ_h)⁻¹||≤Ch||ψ||_(C^m). (7.29)
+
+Здесь δD_nat включает independently supplied geometric measure; она
+не постулируется для исходного counting programme. Из whole-band H¹
+Gårding получается нужный H² graph estimate. Для ACTUAL finite-B
+H+J+R, bounded-energy eigenpreparation и fixed-positive β полный source
+вдоль natural ψ variation равен O(h). Full thermal moments контролируют
+все UV modes: ни truncation, ни замены logdet, ни удаления reference128
+нет. Это quantitative weak-current quotient, не raw h⁻²/#216 estimate
+и не перенос C² golden family в неустановленную uniform C⁶ chart.
+
+Недостающий source исходной меры тоже вычислен точно. При подлинной
+measure variation f=δlogω и прежнем W=dS/dΔ
+
+    k_x=Re tr_CAR[d,{D,W}]_(x,x), Σ_xk_x=0,
+    DS_ω=Σ_x f_xk_x,
+    DS_nat[ψ]=(h ell)⁻¹Σ_xψ[Σ_rD_r⁺j_r−ell D_v⁺k]. (7.30)
+
+Это определяет ровно тот costate, который обязан прийти из native
+sampling/embedding. Pure half-density re-representation всего tuple
+сокращается в trace и не создаёт его. Фиксированная AF map word→cell
+даёт Dμ_x=0, тогда как determinant имеет Dlog|det e|=D_v⁻ψ/h.
+Перенос прежнего dx под y=Y(x) также даёт J⁻¹dy, не новую равномерную
+меру dy. Поэтому «равномерный архив» или тот же PF trace не закрывают
+этот physical measure binding.
+
+Другая возможность — получить компенсацию из native link equations —
+проверена на уровне полного оператора. Из leading heat rows v=b следует
+лишь completion одного a₂ square. Любой torsion Z_T убивает vacuum,
+а measure term оставляет −C(b)vac/2. Ни a₄/R/current, ни иной physical
+metric этим не выводятся. Значит новый measure current нельзя удалить
+ссылкой на прежний leading torsion coefficient.
+
+Проверена и предполагаемая компенсация только через matter/observer
+Euler. [Full-source §6.29](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+строит exact rank128 projector на общем Δ-shell с неизменным
+RIGHT=I128/128. Все preparation и ВСЕ локальные observer rows равны0.
+После smooth refinement energy ограничена, coframe converges в C^∞,
+а ψ есть sampling одной fixed smooth cosine. Тем не менее
+
+    DS_count[ψ]→−ν³κ_phys³/8≠0.                     (7.31)
+
+Конструкция использует8 axis momenta со всеми16 grades и exact
+удаление/добавление8 eigenvectors; spectral heat/feedback sources0.
+Она не удовлетворяет всем coframe/link rows и не объявляется physical
+P1-binding, поэтому это не counterexample к полным совместным корням.
+Но missing current equation не следует из подготовки/наблюдателя даже
+в bounded-energy smooth пределе. В частности её нельзя списать на UV
+или добавить conservation отдельным постулатом.
+
+**Следующий consuming step** — действительное variational sampling/
+embedding исполнение, которое поставляет(7.30), ЛИБО решение полных
+connection/normal equations с доказанной on-shell компенсацией того же
+source. Невозможность cancellation всего оператора не исключает второй
+путь. Готовый positive estimate(7.29) затем
+применим без ещё одного общего Ward-постулата. Он не заменяет source
+выбора physical action, nonlinear joint recovery и Lorentz-matter binding.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября
