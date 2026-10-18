@@ -18,6 +18,23 @@ The mathematical compatibility checker [full16 Fraction test](sources/d0_density
 
 ## 18 October 2026 — native source, preparation and nonlinear GR synthesis
 
+
+### Exact all-order AF→Lorentz-star→Einstein completion on the original finite geometrical carrier (18 October)
+
+**New direct consumer:** [A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md](A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md). The preceding AF–star Palatini construction and exact all-interior pp-wave roots now have ONE finite **identity of entire functionals**:
+\[
+{\cal A}_{AF}(e,U)-B=\sum_x w_x\Phi(f_x(e,U))
+=c\sum_x w_x f_x(\widetilde e,U),\quad
+\widetilde e_x=\sqrt{\Phi(f_x)/(cf_x)}e_x,\quad c=\Phi'(0)\ne0.
+\]
+On the honest 16 relative-solder coordinates at each site the dressing Jacobian is \(\chi_x^7\Phi'(f_x)/c>0\), with an explicit scalar inverse. Thus ALL independent finite coframe/link Euler equations, full gauge-transported Hessian and all-order graviton self-interaction vertices are those of the already-selected Lorentz-star action under a locally invertible field change. On vacuum critical points with independent radial rows \(f_x=0\), dressing is identity: \(g=\widetilde g\) in the original operational metric.
+
+This applies to BOTH the conditional complete Book \(w=q\) entropy **and the independently owned literal Book03 two-tick AF×scene determinant \(J_2\)**, whose actual \(g'_B(p^2)>0\); no Shannon-vs-feedback ambiguity changes the vacuum Einstein equations of this scalar star-sensitive sector. Moving scene, original v8 H+J+R and other whole-history prices keep their actual sources. Existing full-CAR reconstruction and coherent Julia/G/CNOT query plus the genuine whole-work \(C^3\) feedback estimate give a compiled **cubic** source transfer. This is an all-order positive completion for the constructed geometry-sensitive AF programme, NOT a claim that this programme is already compulsory physical full D0.
+
+On the already-owned exactly curved full-interior lattice roots, both wave polarizations are read at every finite h from literal proper-Lorentz plaquettes: the h⁻² normalized tidal holonomy matrix is exactly \(\left(\begin{smallmatrix}A&B\\B&-A\end{smallmatrix}\right)\), Ricci=0 and nonzero Weyl. Thus the same roots have a physical proper-link transport signal, not merely zero scalar action. Independent matter/observer/scene, compulsory full-programme selection and fixed-g/tau raw #216 remain separate.
+
+
+
 **Actual-root reduction, input `bf74b2b9`:**
 [Full-source §§6.34–6.35](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consume the already proved full rank128 shell gap. The exact fixed-RIGHT
