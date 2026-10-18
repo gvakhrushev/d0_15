@@ -57,6 +57,24 @@ Thus the **SAME actually admitted complete detector** gives EXACTLY the same *en
 
 **New strategic theorem:** on the nonempty \(f_x=q_x=0\) Einstein null sector, any actual complete measured price whose resolved full first source equals \(a_h D\sum_x\widehat f_x+b_hD\sum_xq_x\), \(a_h\ne0\), has the SAME entire growing matter-moduli Einstein family with trace \(A+D=-2(b_h/a_h)s^2\), regardless of all higher nonlinear action coefficients. This collapses the required D0⇒OTO identification ON THIS SOLUTION SECTOR from choosing an unlimited functional/operator expansion to a **two-number genuine source jet + solved independent history/clock/preparation Euler**. Real physical compulsory programme/Cost−Info binding, non-null general matter/Einstein universality and full original fixed-g/tau raw#216 remain OPEN. This is an actual mathematically proved reduction of the physics question, not a declaration of full physical GR.
 
+## 19 October 2026 — repeated field-to-instrument proposal audited; finite frontier integrated
+
+[Strategic §§7.29–7.30](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+records that the new pasted text is byte-identical to the archived 15 October
+input. Its proposed unitary tangent cannot generate its own coherence-changing
+`sigma` family; tomography does not supply an admitted field-to-return map.
+The exact first-jet checker passes 33 controls, while physical admission and
+refinement compatibility remain open. A fixed-`beta` continuum heat bound is
+sharpened to `>1/30` for the stated volume-preserving shear, as a property of
+that heat component only.
+
+The latest separate conditional finite-price branch is full-source §§8.29–8.36:
+finite preparation, all coframe/observer rows and nonzero Fourier rows are
+solved; the remaining homogeneous Lorentz-link source is explicit, but its
+joint root is not. Exact CAR16 splitting disproves a uniform link-curvature
+bound, and the weak-history metric collapses on a fixed grid. Physical
+code/Info admission, complete resource price, link closure and spatial recovery
+remain open; this branch does not replace the main same-source GR route.
 
 ## 18 October 2026 — full polynomial at the actual root, native clock and complete copy price
 

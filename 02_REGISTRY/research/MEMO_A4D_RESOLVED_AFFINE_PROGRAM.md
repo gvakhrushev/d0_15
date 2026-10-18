@@ -24,8 +24,9 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-18 checkpoint
 
 Current full-source consumer:
-[strategic §§7.25–7.28](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
-and [full-source §§6.79–6.81](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+[strategic §§7.25–7.30](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[full-source §§6.79–6.81](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+and its separate conditional finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The full-polynomial vacuum bound now transfers to the actual mixed-CAR
 §6.68 root while retaining every RIGHT/reference128. The free-equalizer
 CASE A has a native-clock C² obstruction, so return rank alone cannot make
@@ -35,6 +36,15 @@ copy lower bound and compiler/recovery errors in one source estimate. The
 reattached C_Y text is byte-identical to its archived owner and adds no new
 actuator or price theorem. Both new narrow checkers pass; the unchanged full
 price receipt preserves its prior outputs and updates only the source hash.
+
+The latest full-source continuation proves finite conditional preparation,
+coframe, observer and nonzero-Fourier stationarity, then reduces the remaining
+homogeneous Lorentz-link equations to the exact source in §§8.33–8.36. A
+CAR16 counterexample rules out the assumed uniform link-curvature bound, and
+the weak-history operational metric collapses on a fixed grid. This branch
+does not close the link root, physical code/Info admission or spatial metric
+recovery. The repeated field→instrument proposal is already byte-identical
+to its archived input; §§7.29–7.30 record its tangent and dimension audit.
 
 These results refine the current price and preparation route but do not
 select a physical action or establish an exact finite root of the combined

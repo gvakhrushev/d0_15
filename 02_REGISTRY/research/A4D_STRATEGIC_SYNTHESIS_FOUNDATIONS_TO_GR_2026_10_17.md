@@ -2883,3 +2883,84 @@ On a local unwrapped null chart any smooth weak Ψ(u) is allowed with true bound
 
 **What this DOES NOT claim:** all possible D0 programmes force this particular field-code query/controller or matching first source; historical upstream H/J/R and raw #216 source are different, site/RIGHT/reference/clock/preparation equations and physical controller/source costs must still be solved on the compulsory full native programme. The original full 40 field equations ARE solved exactly on the constructed same-operator mathematical carrier; no global arbitrary-metric GR claim is promoted. This is a genuinely new, independently reproducible **time-dependent infinite-dimensional Einstein sector** in the original geometric/matter first-response problem, and the route to physical GR is now an explicit full source-identification problem rather than more local curvature coefficient fitting.
 
+### 7.30. Повторный вывод «поле → прибор» уже имеет точный аудит
+
+Новый присланный текст побайтно совпадает с сохранённым входом
+`sources/d0_record_source_pullback_2026-10-15/INPUT_FIELD_INSTRUMENT_PROPOSAL_RU.txt`
+(SHA-256 `7e963d3b926ac1ed93aac86fb338efd3ac6ccdea0e45ba604a9a19460d33b0ca`).
+Его не импортируем второй раз. Действующий [source pullback owner](A4D_NATIVE_RECORD_SOURCE_JOINT_CONTINUATION.md),
+§§2–5, уже отделяет полезный критерий спуска от неподтверждённой
+томографии:
+
+* Для указанного семейства `sigma(w)` член `dot sigma=i[H,sigma]` был бы
+  касательной к унитарной орбите и сохранял бы спектр. Но при `w₀=(0,3/5,0)`
+  имеем `d_xi Tr(sigma²)=12p⁴/5 != 0` и
+  `d_xi D(sigma||mu)=p² log 4 != 0`. Значит, эта вариация состояния не
+  реализуется предложенным унитарным джетом. Томография не создаёт эту
+  отсутствующую операцию.
+* Число `540672` при `L=4` считает пространство возможных первых джетов
+  `Hom_R(T_xX,Herm(4)⊕Herm(4))`. Число `523776=2046L⁴` относится к ядру
+  отображения **из пространства джетов в физический ковектор** при фиксированном
+  ненулевом ковекторе чтения; это не размер ядра `D pi_h` на физических
+  вариациях. Точный критерий — совместимость цены со всеми реально достижимыми
+  физическими tangents, формула (9) в source pullback owner. Инъективность
+  read-out не устанавливается и не нужна.
+* Соседний first-jet владелец по-прежнему даёт две унитарные реализации с
+  одинаковыми reference returns и разными полными производными цены. Его
+  33 exact controls повторно прошли в этой сессии. Остаются физическое
+  допущение field-to-return map и его refinement law; ни один Einstein source
+  этим не выбран.
+
+Тепловой расчёт из того же входа даёт полезное количественное усиление, но
+не выбирает полный Cost−Info. На кривой
+`Q(t)=diag(4e^(2t),e^(-2t)/4,1,1)` производная равна
+`2(E_4−E_(1/4))`. В фиксированном `beta=log 2` пределе положим
+`r=2^(-144)`. Из `9<pi²<10`, сохранения обоих модов `+n` и `−n` и
+`sum n²r^n=r(1+r)/(1-r)^3` следует
+
+    2(E_4−E_(1/4)) > 511/14592 − 640 r(1+r)/(1−r)^3 > 1/30.
+
+Коэффициент `640` сохраняет оба знака Fourier-моды в малом отрицательном
+энергетическом хвосте. Оценка относится к континуальному пределу данного
+положительного heat-компонента; существующие полные десять heat-коэффициентов
+и fixed-`beta` граница уже принадлежат
+[positive heat owner](A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md). Она не
+показывает, что этот компонент есть выбранная физическая цена или что остальные
+источники его не компенсируют.
+
+Хронологическая формула в предложении также остаётся условным частным
+уравнением. Полный хронологический owner уже дифференцирует настоящие
+`H+J+R`, нормировку и все разрешённые поля; равенство по одной скалярной
+материйной вариации не заменяет эти уравнения.
+
+### 7.31. Последний конечный потребитель полного источника — link-система
+
+Более поздние full-source §§8.29–8.36 теперь потребляются рядом с §§6.79–6.81.
+Для фиксированной условной code−coherent цены и конечного `n` получены
+настоящие минимумы с положительным CAR Gram и точными preparation equations;
+на aligned family решены все 16 coframe, observer и ненулевые Fourier rows.
+Для предельных минимумов доказан shape gap `min_chi x_(chi,n) >= gamma`
+при фиксированном supplied code. Это не физическое допущение кода и не
+равномерная нижняя граница на плотность подготовки.
+
+Однородные Lorentz links остаются: их полный источник сведен к точным
+`B_r(v)` формулы (190), а шесть link rows — к условиям §§8.33–8.34.
+Наличие четырёх/шести чисел не доказывает общего корня. §8.36 даёт точный
+CAR16 контрпример: even-block determinant
+`(x^4+10x^3−10x^2−2x+5)^2/16` имеет корень при
+`x in (−1,−1/2)`, поэтому требуемой положительной uniform link curvature
+нет даже на `L=4,G=I`. Это опровергает простой saddle/IFT ход, но не
+существование совместных корней.
+
+Есть и отдельная физическая граница. При найденном weak-history пределе
+`nu_n² ~ t*/n` исходное операционное чтение метрики равно
+`q_n=nu_n² U_n^T eta U_n -> 0` на фиксированной решётке. Деление на `nu_n²`
+не выводится как калибровка или закон часов. Поэтому конечные корни пока не
+дают регулярной макроскопической метрики.
+
+Следующий решающий шаг этой ветви — source-preserving выбор подготовки более
+высокого порядка либо прямое совместное решение шести link equations на том
+же полном коде. Затем ещё требуются physical code/Info admission, полная
+resource/controller цена, независимая материя и совместное пространственное
+восстановление. Ветка остаётся условной и не заменяет основной same-source
+Palatini/Einstein маршрут.
