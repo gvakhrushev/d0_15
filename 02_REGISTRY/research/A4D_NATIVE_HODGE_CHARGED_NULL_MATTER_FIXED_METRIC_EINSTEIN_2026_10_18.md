@@ -45,6 +45,21 @@ q_x=\frac1{16}\mathrm{Tr}_{16}
 \]
 Это не обычный положительный Euclidean grad²: обе Clifford squares — ЛОРЕНЦЕВЫ. Действие \(\Psi\mapsto e^{\alpha J_H}\Psi\) при ПОСТОЯННОЙ \(\alpha\) оставляет (3) **точно** неизменным при каждом конечном h, поскольку используется собственная равная CAR-норма на \(H_{0,4}\). Следовательно тот же J₂ ниже имеет настоящее непрерывное SO(2) internal symmetry на заявленном classical encoded \(0\oplus4\) chart: никакой новый charged field/dimension не добавлен.
 
+### 1.1. Uniqueness of this Hodge-scalar kinetic type, without an independent matter action
+
+The two true scalar coefficients are each Lorentz singlets under proper local SO⁺(1,3), and the internal real complex structure \(J_H\) in (1) commutes with that representation. Work in the finite symbolic continuum/low-jet class of **local, quadratic first-derivative principal matter sources**, with no extrinsic vector, density, new gauge gauge field or parity catalog. Every real Lorentz-invariant contraction of two scalar gradients has the form
+\[
+Q[g,\Psi]=g^{\mu\nu}M_{AB}\,\partial_\mu\Psi_A\,\partial_\nu\Psi_B
+\]
+because the only invariant rank-two spacetime tensor supplied by this carrier is \(g^{\mu\nu}\); an antisymmetric spacetime rank-two invariant does not exist without extra datum. The antisymmetric part of M drops out by the symmetry of the contracted gradient product. Invariance under **the existing internal Hodge rotation** \(e^{\theta J_H}\) demands
+\(J_H^T M+M J_H=0\), which for real symmetric \(2\times2\) matrices forces \(M=cI_2\). Thus
+\[
+\boxed{Q[g,\Psi]\propto
+ g^{\mu\nu}(\partial_\mu\psi_0\partial_\nu\psi_0+
+           \partial_\mu\psi_4\partial_\nu\psi_4)}
+\]
+is **the only quadratic first-derivative principal scalar coupling in this declared Lorentz+Hodge type**, up to overall response. Equation (3) supplies that relative 1:1 response from the original positive CAR pairing and the two original Clifford squares. The overall material-versus-gravitational coefficient comes from the SAME two-tick full feedback derivative (6), not a fitted field coefficient. This scoped naturality result does NOT say the complete physical D0 requires Hodge SO(2) as a separate physical symmetry, excludes higher-derivative interactions, or eliminates additional matter representations.
+
 ## 2. РОВНО тот же исправленный двухтактовый feedback: сильное равенство полных источников
 
 Берём прежнюю original old LEFT READY/PENDING regular пробу с positive native weights \(\pi_i=D_{{\rm type}(i)}/K\), \(w_x=\sum_{i\in Q_x}\pi_i>0\), \(\bar w=L^{-4}\sum_xw_x\) и **одну** полную J₂-операцию из исправленного owner (нельзя забывать второй такт):
