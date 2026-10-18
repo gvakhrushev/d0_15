@@ -2767,3 +2767,49 @@ criticality, not exact finite joint roots, free query-normal stationarity,
 upstreamHJR cancellation or native Book/PREP/copy admission. Those complete
 price/source equations remain the next physical transition. GR_closed=false;
 original raw#216 and the existing scope/norm are preserved.
+
+
+### 7.25. C_Y handoff уже сохранён; новая копия не меняет границу цены
+
+Полученный текст про C_Y побайтно совпадает с
+`USER_NATIVE_PRICE_SYNTHESIS_2026_10_18.txt` в архиве
+`d0_af_star_full_lattice_2026-10-17` (SHA-256
+`d5706efac0dc8791f010557810a1e1ad835b3fdc2f8578432e5f13f883bd2570`).
+Поэтому он не импортируется вторым дублирующим пакетом. Его доказанное
+содержание остаётся полезным: word-level CNOT-кандидат и условный
+capacity-vacuum bridge уже описаны в полном source §§6.13, 6.15–6.17,
+6.33; граница §6.70 и физическая адресуемость §6.73 сохраняются.
+Число CNOT не является действием, а bridge не доказывает физическую
+полную цену или выбор программы.
+
+### 7.26. Вакуумный полиномиальный потребитель работает на фактическом корне
+
+Новый full-source §6.79 переносит exact first-projection cancellation
+§6.78 с pure-local CAR section на фактическую смешанную плотность корня
+§6.68, сохраняя odd coherences и каждый полный RIGHT/reference128.
+Условная оценка полного polynomial preparation нормали проходит на
+цельной purification; checker `check_vacuum_old_price_bridge.py` прошёл
+15 точных проверок. Остались физическая query/PREP admission, полные
+истории и конечный совместный корень.
+
+### 7.27. Нативный целый clock не спасает свободный equalizer
+
+Full-source §6.80 даёт для CASE A точное отношение
+`R_old''/σ_J ≥ p² m d/(16ε)` при literal
+`β=m p²h²/128`, m≥1. Поэтому увеличение return/scene rank не подавляет
+старый Rayleigh источник даже при минимальном native clock. Это узкая
+граница free-M модели; связанный M(S,Q) и иные действительные полные
+источники остаются отдельной веткой, не объявленной невозможной.
+
+### 7.28. N-копийная нормаль считается вместе с полной ценой истории
+
+Full-source §6.81 отделяет точную положительную факторизацию внешних
+записей от полного Book binding. Доставленный код X включает query,
+Choi-reference, matter и ВСЮ RIGHT/reference128; только внешняя цена Y
+факторизуется. Mean и MAP сохраняют `log N_raw`, а независимая native
+фабрика сохраняет N-кратный источник, пока не доказано иное.
+Совместная оценка имеет окно
+`max{2,N_effect,min,1+ceil(A_h²/ε_h²)} ≤ N ≤ ε_h/P_h`.
+Она задаёт следующий количественный тест, но сама по себе не даёт
+совместной физической последовательности корней: нужны bounded full
+price jets, admission, общие источники и recovery.

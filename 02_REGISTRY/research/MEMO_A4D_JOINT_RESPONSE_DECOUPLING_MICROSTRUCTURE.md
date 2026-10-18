@@ -1,5 +1,22 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — full polynomial at the actual root, native clock and complete copy price
+
+[Strategic §§7.25–7.28](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.79–6.81](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+advance three distinct premises. First, the exact full-polynomial overlap
+cancellation now applies to the actual mixed-CAR §6.68 root with its complete
+RIGHT128 purification; the focused checker passes 15 controls. Second, the
+free-equalizer CASE A retains a native-clock C² obstruction
+`R_old''/σ_J ≥ p² m d/(16ε)`, including m=1; its checker passes 20 controls.
+Third, whole-code purity factors only external histories. The full Book
+normalizer, actual N-copy factory histories, MAP/mean distinction and the
+integer source-budget window remain explicit. These results do not select a
+physical action or establish a finite combined root. Full history binding,
+physical admission, bounded source jets, Lorentz-link closure, noncollapsing
+metric recovery and GR remain OPEN; `GR_closed=false`, raw #216 OPEN.
+
+
 ## 18 October 2026 — whole-polynomial vacuum preparation source with exact original input
 
 [Strategic7.24](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)

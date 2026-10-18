@@ -5,7 +5,7 @@
     "base_commit": "622d96b68f0195aaed4ae856e90429225de9c580",
     "source_path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
     "prior_owner_sha256": "ee5ce8bf76882dc02fada7cfeb9b2371eac1626979c09e84119a322368362169",
-    "current_owner_sha256": "e69f5f83eba403a3f195bd27f446f40bbe0e9ed617697abab8b04d114498e506",
+    "current_owner_sha256": "3c41b00de7e14fde9b736630edf1d4a7a5393c0939ee45060fd511f4e57263e3",
     "prior_math": "All pre-existing source bytes including6.46-6.52 are identical after removing only inserted6.53 onward. Prior null/source math receipt is reused; only this owner fingerprint is refreshed."
   },
   "checker_sha256": "31024712b79e6b0a1902dff62f6d478d5f84937b58536d1004bb42ea0fa98c88",
