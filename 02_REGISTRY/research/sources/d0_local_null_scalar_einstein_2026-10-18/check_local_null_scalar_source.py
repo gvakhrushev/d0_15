@@ -14,8 +14,8 @@ M_SCENE = 528
 E0 = P*P
 L = 4.*P**3
 A = P**6
-Q0 = 1.-Z*E0
-R0 = 1.-Z*(L+A*E0)
+Q0 = 1.-Z*L
+R0 = 1.-Z*(L+A*L)
 SIGMA = -1.
 AMP = .13
 H = .2
@@ -84,7 +84,7 @@ def full16_clifford_control():
         for mask in range(16):
             if mask&(1<<a):
                 continue
-            preceding = (mask&((1<<a)-1)).bit_count()
+            preceding = bin(mask&((1<<a)-1)).count('1')
             C[mask|(1<<a)][mask] = -1. if preceding&1 else 1.
         G.append(plus(C, transpose(C), eta[a]))
     id16=eye(16)
@@ -133,12 +133,12 @@ def actual_coframe_null_source():
 
 
 def coupling():
-    Cstar=M_SCENE*Z*4*P**3*(1-E0)*E0*T2/R0
-    Cmat=SIGMA*M_SCENE*Z*2*P**3*T2*(1/Q0+A/R0)
+    Cstar=M_SCENE*Z*4*P**3*(1-L)*E0*T2/R0
+    Cmat=SIGMA*M_SCENE*Z*8*P**6*T2*(1/Q0+A/R0)
     lam=Cmat/Cstar
-    analytic=SIGMA*(R0/Q0+A)/(2*P**3)
+    analytic=SIGMA*2*(R0/Q0+A)/P**5
     assert_near(lam,analytic,1e-12)
-    assert_near((1+P**6)/(2*P**3),sqrt(5.),1e-12)
+    assert_near(2*(1+P**6)/P**5,10+6*sqrt(5.),1e-12)
     if lam>=0:
         raise AssertionError("reverse native Golden had wrong null-energy sign")
     return lam, Cstar, Cmat
@@ -155,10 +155,11 @@ def full_feedback_per_normalized_af_trace(site, perturb, lam):
         fi=fhat/rho
         qi=qhat/rho
         e=E0*(1+T2*fi)
-        b=(P+SIGMA*P*P*T2*qi)**2
+        single_b=(P+SIGMA*P*P*T2*qi)**2
+        b=4*single_b*(1-single_b)
         l=4*e*(1-e)
         out+=w*(log1p(-Z*b)+log1p(-Z*(l+(1-l)*b)))
-    out+=REST*(log1p(-Z*E0)+log1p(-Z*(L+A*E0)))
+    out+=REST*(log1p(-Z*L)+log1p(-Z*(L+A*L)))
     return -M_SCENE*out
 
 
@@ -179,7 +180,7 @@ def exact_source_cancellation_and_hostile_tests():
         wrong=[Cmat*(-2*AMP*AMP/H)*(w-AVG) for w in WEIGHTS]
         assert max(abs(r) for r in wrong)>1e-7
     # The original -K logQ term is needed for the actual relative coupling.
-    truncated=SIGMA*(A/R0)*R0/(2*P**3)
+    truncated=SIGMA*2*A/P**5
     assert abs(lam-truncated)>1.
     # Existing exact 40-row star table + independently derived Clifford source.
     Astar=ricci/2+.21
@@ -221,11 +222,29 @@ def golden_angle_control():
     print("PASS one actual Golden rotation axis for both grav/matter controllers.")
 
 
+def actual_two_tick_scene_control():
+    """B is the actual two-tick effect, not the one-tick rotation setting."""
+    for raw_b in (P*P, .17, .63):
+        G=[[sqrt(1-raw_b),-sqrt(raw_b)],
+           [sqrt(raw_b),sqrt(1-raw_b)]]
+        G2=multiply(G,G)
+        B=G2[1][0]**2
+        assert_near(B,4*raw_b*(1-raw_b),1e-14)
+        if abs(B-raw_b)<1e-3:
+            raise AssertionError("hostile one-tick substitution failed")
+    assert_near(4*P*P*(1-P*P),L,1e-14)
+    raw_derivative=2*SIGMA*P**3*T2
+    assert_near(4*(1-2*P*P)*raw_derivative,
+                8*SIGMA*P**6*T2,1e-14)
+    print("PASS actual repeated scene word: B=4b(1-b), full two-tick matter jet.")
+
+
 def main():
     full16_clifford_control()
     actual_coframe_null_source()
     scalar_discrete_euler_control()
     golden_angle_control()
+    actual_two_tick_scene_control()
     exact_source_cancellation_and_hostile_tests()
     print("PASS one LOCAL complete golden feedback with nonvacuum Einstein null-scalar first source.")
     print("SCOPE: selected mathematical AF×scene word and owned finite star table;")

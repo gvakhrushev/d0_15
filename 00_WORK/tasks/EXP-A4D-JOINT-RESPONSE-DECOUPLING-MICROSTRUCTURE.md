@@ -12,6 +12,37 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: close the native clock and adaptive-query source interfaces
+
+Input `135206e7`; the previous goal turn made progress by publishing the
+full scalar-source result, exact time-pullback compensator and noncollinear
+coded/query family, integrating the parallel density/CAR and radial-price
+results, and correcting their source/mesh normalization. This turn works
+on the remaining execution laws, not their already proved Ward identities.
+The geometric consumer is actual history-to-proper-clock placement and
+its genuine measure/adjoint source. The material consumer is retained
+record/code to the varying creator-Julia operand, including full controller
+history and price. Keep the original state/event distinction: a known
+conditional state computed from a fully specified seed/history differs
+from reading unknown input amplitudes. Root alone edits this brief and
+the existing scientific owners/packet; read-only assistants trace those
+two constructions and independently test their complete-price composition.
+Retain full CAR16/reference128, every output and the original refinement
+terminal. No externally assigned clock, gate, action or stress is accepted
+as the desired native derivation. Use the smallest decisive calculation
+for a new load-bearing transition; unchanged suites are reused.
+
+Consumed clock/adaptive interface in full-source §§6.41–6.45 / strategic
+§7.15: native measured-axis word/inverses, corrected intrinsic/occupation
+law with HALT, full adaptive cocycle, CAR proper-clock/inverse jets, and
+a fully retained rare-clock / repeated-geometry bound at the actual signal.
+Parallel quantile-clock and local CAR null-matter owners are preserved;
+the latter's two-tick scene effect and dependent source/wave coefficients
+are corrected. One new bounded consumer plus the changed local-wave
+checker are sufficient; unchanged suites are reused. Next: actual scalar/
+addressed query admission, whole controller price, repeated preparation/
+clock rows, normalized compilation/runtime and joint physical recovery.
+
 ### 18 October: evaluate the actual scalar normal matrix and its metric source
 
 Input `8b331ce8`; the preceding goal turn made progress by publishing the

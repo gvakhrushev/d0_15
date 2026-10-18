@@ -4,6 +4,8 @@
 
 Это **точный математический finite-source / exact local nonflat Einstein-null-scalar stationary theorem** на выбранном carrier. Обязательная физическая селекция именно этого controlled-word/cut, стоимость исполнения, ранние истории и полный original H+J+R/материя D0 не выводятся из одного существования unitary. Ни новую самостоятельную scalar kinetic action, ни свободный знак coupling не вводим.
 
+**Исправление полного двухтактового слова (18 октября):** параметр одного вращения \(b_i\) и его двухтактовый feedback различны: \(B_i=4b_i(1-b_i)\). Ниже сохранён один и тот же \(G_i\) в обоих тактах, пересчитаны весь source, coupling и точная sourced-wave ветвь. При нулевом поле каждый такт остаётся исходным золотым вращением. LEFT-проектор продолжается на все четыре AF tail copies, поэтому коммутирует с \(W_E\); не вводится асимметричный clock или новое half-angle слово.
+
 ## 1. Сохраняем тот же реальный операторный носитель, убираем нелинейный average-controlled scene
 
 На исходной полной old LEFT defining AF базе \(|j,i\rangle\) с истинными positive regular weights \(\pi_{j,i}=D_j/K,\ K=\sum_j d_jD_j=F_{2N+9}\) выбраны **настоящие** READY-проекции \(Q_x=\sum_{(j,i)\in\mathcal I_x}|j,i\rangle\langle j,i|\). Для каждой покрытой Role-ячейки
@@ -68,12 +70,12 @@ Composing (7) with the original four-copy \(W_E\) and fixed same two-tick return
 \boxed{
 J_{\rm loc}=-\nu\,528\sum_{j,i}D_j
    \bigg\{\log Q_i+\log R_i\bigg\},\quad
-Q_i=1-zb_i,\quad
-R_i=1-z[\lambda_{\rm AF}(E_i)+(1-\lambda_{\rm AF}(E_i))b_i],
+B_i=4b_i(1-b_i),\quad Q_i=1-zB_i,\quad
+R_i=1-z[\lambda_{\rm AF}(E_i)+(1-\lambda_{\rm AF}(E_i))B_i],
 }
 \tag{8}
 \]
-\(\lambda_{\rm AF}(e)=4e(1-e)\), \(z=2^{-20}\). No new action law: (8) is exactly the original source owner (13at) with a **field- and LEFT-path-controlled scene word** instead of its former tensor-spectator B. At constant \(B_i=bI\) it reduces **literally** to (13at). The displayed sum is **matrix determinant factorization** of a *single* operator, not an axiom that separate recording prices can be summed. Every complement has unit return pencil and remains in the complete Hilbert space; no old outcome is postselected. Physical compiler/admission of this new address-controlled scene word remains the named input.
+\(\lambda_{\rm AF}(e)=4e(1-e)\), \(z=2^{-20}\). No new action law: (8) is exactly the original source owner (13at) with a **field- and LEFT-path-controlled scene word** instead of its former tensor-spectator B. At constant \(B_i=BI\) it reduces **literally** to (13at). The displayed sum is **matrix determinant factorization** of a *single* operator, not an axiom that separate recording prices can be summed. Every complement has unit return pencil and remains in the complete Hilbert space; no old outcome is postselected. Physical compiler/admission of this new address-controlled scene word remains the named input.
 
 The two local angles are both changes of the **SAME original golden two-dimensional rotation**:
 \[
@@ -92,10 +94,10 @@ The two local angles are both changes of the **SAME original golden two-dimensio
 
 At the **finite** common-null/star configuration \(f_i=q_i=0\) define
 \[
-L=4p^3,\quad a=p^6,\quad b=p^2,\quad
-Q=1-zb,\quad R=1-z(L+ab).
+L=4p^3,\quad a=p^6,\quad B_0=L,\quad
+Q=1-zL,\quad R=1-z(L+p^6 L).
 \]
-Because (8) is the complete original trace over every AF and scene mode, differentiation with all source jets gives
+The true scene jet is \(DB_i=8\sigma p^6t^2Dq_i\) at the background. Because (8) is the complete original trace over every AF and scene mode, differentiation with all source jets gives
 \[
 \boxed{
 \frac{DJ_{\rm loc}}{\nu K}
@@ -105,19 +107,20 @@ Because (8) is the complete original trace over every AF and scene mode, differe
 \]
 **for ANY genuine independently varied coframe, Lorentz-link and recorded scalar-source direction**, where
 \[
-C_\star=\frac{528z(4p^3)(1-b)p^2t^2}{R}>0,\quad
-\Lambda_\sigma=\sigma\,\frac{R/Q+p^6}{2p^3}.
+C_\star=\frac{528z\,4p^{11}t^2}{R}>0,\quad
+C_{\rm mat}=\sigma\,528z\,8p^6t^2(1/Q+p^6/R),\quad
+\Lambda_\sigma=\frac{C_{\rm mat}}{C_\star}=\frac{2\sigma}{p^5}(R/Q+p^6).
 \tag{11}
 \]
 Nothing was frozen on the scene; its source is the first derivative of EVERY \(Q_i\) and \(R_i\). Equations (4), not an imposed uniform probability law, remove golden weight inhomogeneity **from the exact first source**.
 
 At the actual original \(z=2^{-20}\):
 \[
-\Lambda_+=2.236066798693\ldots,\qquad
-\Lambda_-=-2.236066798693\ldots.
+\Lambda_+=23.416406751884\ldots,\qquad
+\Lambda_-=-23.416406751884\ldots.
 \tag{12}
 \]
-The *leading zero-z ratio* is exactly \(\lim_{z\to0}\Lambda_\sigma=\sigma\sqrt5\), but this is not the exact finite-z equation. The minus sign uses an existing reverse-golden orientation; its physical compulsory selection is NOT proved by constructing both rotations.
+The *leading zero-z ratio* is exactly \(\lim_{z\to0}\Lambda_\sigma=\sigma(10+6\sqrt5)\), but this is not the exact finite-z equation. The minus sign uses an existing reverse-golden orientation; its physical compulsory selection is NOT proved by constructing both rotations.
 
 Unlike the global-scene variant, the **whole off-shell action (8)** is a sum of independent path-local functions of \((f_i,q_i)\) only because the underlying *one* genuine block-diagonal operator has these blocks. Its spatial source is thus LOCALLY generated to all orders: there is no extra \((\sum_xq_x)^2\) cross-site interaction from a global scalar control. A local nonlinear matter sector, with a definite \(C^1\)-response, is available on the same finite golden-book device.
 
@@ -169,7 +172,7 @@ c_x=-A/2,\quad c_y=-D/2.
 }
 \tag{17}
 \]
-With the positive-null **reverse recording \(\sigma=-1\)**, \(A+D=+4.472133597386\ldots\,s^2>0\). Every interior original coframe16, proper-Lorentz-link24 and independent scalar-matter Euler row of the SAME J_loc vanishes; the actual w_x are uneven, all AF/scene dark sectors remain. Fix the boundary/collar as in the existing pp-wave owner. No global periodic \(\psi=s u\) is claimed.
+With the positive-null **reverse recording \(\sigma=-1\)**, \(A+D=+46.832813503768\ldots\,s^2>0\). Every interior original coframe16, proper-Lorentz-link24 and independent scalar-matter Euler row of the SAME J_loc vanishes; the actual w_x are uneven, all AF/scene dark sectors remain. Fix the boundary/collar as in the existing pp-wave owner. No global periodic \(\psi=s u\) is claimed.
 
 The smooth limit is an actual sourced Einstein pp-wave, with TWO free Weyl polarizations:
 \[

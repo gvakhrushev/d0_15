@@ -1,0 +1,318 @@
+{
+  "status": "PASS",
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527"
+  },
+  "adaptive": {
+    "status": "PASS",
+    "checks": [
+      "branch0_actual_first_grade",
+      "branch1_actual_first_grade",
+      "complete_first_probabilities",
+      "positive_mass_singular_branch_at_r0",
+      "actual_whole_blank_input",
+      "first_readout_is_actual_record_outcome",
+      "axis_rotation_is_signed_basis_permutation",
+      "axis_gate_exact_literal_intertwining",
+      "axis_cut_exact_literal_intertwining",
+      "native_G_transpose_echo",
+      "native_U0_majority_phase_exact",
+      "derived_CZ01_without_assumed_CZ",
+      "derived_Z0_without_assumed_reflection",
+      "exact_all16_axis_word",
+      "recording_by_old_P0_cut_then_restore",
+      "family_specific_retained_one_from_initial_copy",
+      "retained_one_exact_all16_clean_code_axis_word",
+      "all_offcode_buffer_complement_retained_unitarily",
+      "axis_inverse_without_U0_adjoint_primitive",
+      "inverse_word_offcode_complement_unitary",
+      "entire_second_axis_word_on_retained_buffer",
+      "all16_Kraus_completeness",
+      "all_four_actual_history_probabilities",
+      "all_history_probabilities_sum_one",
+      "strict_branch_probability_gap",
+      "entropy_first_source_zero_at_r1",
+      "entropy_second_source_coefficient",
+      "all_N0_first_leaf_normalized_effect_is_projector",
+      "four_coefficient_projector_block",
+      "all_N0_other_leaf_effects",
+      "exact_nonzero_all_amplitude_normal",
+      "amplitude_normal_is_sphere_tangent",
+      "full_amplitude_expectation_derivative",
+      "whole_blank_and_buffer_sector_commute",
+      "whole_blank_projection_kills_normal",
+      "normal_keeps_branch_observer_axes_locally",
+      "normal_is_outside_original_blank_readout_identification",
+      "intrinsic_and_occupation_second_cuts_commute",
+      "literal_intrinsic_four_history_law",
+      "literal_intrinsic_history_has_zero_r_source",
+      "complete_intrinsic_plus_occupation_eight_history_law",
+      "joint_instrument_all16_completeness",
+      "joint_marginals_recover_both_retained_laws",
+      "new_occupation_readout_is_literal_CNOT",
+      "second_intrinsic_readout_differs_in_both_branches",
+      "original_intrinsic_code_cost_constant",
+      "explicit_extra_readout_code_cost",
+      "literal_U0_inverse_word",
+      "retained_buffer_realizes_full16_U0_inverse",
+      "inverse_realization_retains_offcode_complement",
+      "selected_occupation_view_binary_code_cost",
+      "port_cost_second_source_at_r1",
+      "singular_halt_complete_prefix_cut",
+      "singular_halt_matches_native_intrinsic_labels"
+    ],
+    "source_definition_pins": {
+      "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": {
+        "creator": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+        "ext": "765d4a2bc391340857f93680945542e051522209e5205e4f788984b590d1ca1d",
+        "record_basis": "2b668156055dd15f9150c2fb1b60cf457497f1dbcd1f9132b1699a6f944c33dd"
+      },
+      "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": {
+        "record": "bf4d35fb9e1223a26016bda1a5d5a3d56e1567961d134460431eafb63172390b"
+      }
+    },
+    "domain": "r>0; known initial whole-blank ray m_r/sqrt(2(1+r^2)); read first native pointer before selecting the second axis gate",
+    "branch_observers": {
+      "0": "-e1",
+      "1": "e0"
+    },
+    "probabilities": {
+      "00": "p^2*s(r)",
+      "01": "p^2*(1-s(r))",
+      "10": "p^3",
+      "11": "p^2"
+    },
+    "s": "1/2+2*a*p*r/(1+r^2)",
+    "entropy": {
+      "H": "(1+p)*h(p^2)+p^2*h(s)",
+      "Hprime": "p^2*log((1-s)/s)*sprime",
+      "Hsecond": "p^2*(log((1-s)/s)*ssecond-sprime^2/(s*(1-s)))",
+      "at_r1_first": "0",
+      "at_r1_second": "-a*p^3*log((1/2-a*p)/(1/2+a*p)) >0"
+    },
+    "preparation_scope": {
+      "N0_effect": "E00|N0=p^2*A, A^2=A; E01=p^2*(I-A), E10=p^3*I, E11=p^2*I",
+      "ordered_four_subspace": "(e0,e01,e023,Omega): A=diag(P2,P2), P2=[[p,a*p],[a*p,p^2]]",
+      "r1_normal": "raw m1=(1,1,1,1), delta_m=(A-s1)*m1=(p-1/2)*(1,-1,1,-1), s1=1/2+a*p",
+      "normalized_source": "For psi=m1/2 and delta_psi=delta_m/2, D s=2*(p-1/2)^2 and D H=2*p^2*(p-1/2)^2*log((1/2-a*p)/(1/2+a*p))<0",
+      "blank_constraint": "The actual whole-blank projector annihilates delta_m exactly and commutes with N0. Therefore this is a preparation-normal row outside the whole-blank code, not an admissible whole-blank tangent. The fixed-policy entropy gradient projects to zero on the whole-blank sphere at m1.",
+      "scope": "This preparation-normal calculation concerns the extended fixed P0 occupation-cut protocol, not the intrinsic-plus-copy instrument off its blank input code. Hsecond(r1)>0 is not full native preparation Euler. On larger preparation changes the branch-dependent tuple can also change its axis, requiring the actual controller and field derivatives. The original first-record/active-cut equality is not extended off the blank code."
+    },
+    "intrinsic_record": {
+      "probabilities": [
+        "p^2/2",
+        "p^2/2",
+        "p^2",
+        "p^3"
+      ],
+      "H": "(1+p)*h(p^2)+p^2*log(2)",
+      "r_source": "0",
+      "original_two_port_code_mean": "(3+5*p)/2"
+    },
+    "complete_joint_record": {
+      "order": "first intrinsic, second intrinsic, added occupation copy",
+      "probabilities": {
+        "000": "p^2*s/2",
+        "001": "p^2*(1-s)/2",
+        "010": "p^2*s/2",
+        "011": "p^2*(1-s)/2",
+        "100": "0",
+        "101": "p^2",
+        "110": "p^3",
+        "111": "0"
+      },
+      "H": "(1+p)*h(p^2)+p^2*h(s)+p^2*log(2)",
+      "r_source": "Same as selected occupation marginal, because the additional conditional intrinsic entropy is the constant p^2*log(2).",
+      "all_three_binary_lengths_1_2_mean": "(9+p)/2-p^2*s",
+      "resource": "Added active-occupation output is explicitly copied by CNOT mode0 to a distinct fresh-zero readout bit. It does not replace either intrinsic record. The additional code/reading and its physical selection must be declared."
+    },
+    "exact_inverse_resource": {
+      "identity": "U0^T=G0^T U0 G0^T; G0^T=X0 G0 X0",
+      "cost": "One initial CNOT supplies the retained-one buffer on the specified input family. Each inverse G uses one forward G and two CNOTs; each inverse U0 uses one forward U0, two G and four CNOTs. CNOT is its own inverse.",
+      "scope": "Closes the inverse-supply premise of the already owned fixed-width addressed compiler class on this prepared subspace, not all-state basis preparation, density, derivative compilation or full-price admission by itself."
+    },
+    "selected_occupation_code": {
+      "expected_cost": "4-p-p^2*s",
+      "first_source": "-p^2*sprime",
+      "second_source_r1": "a*p^3",
+      "scope": "Selected occupation-view binary lengths1,2 only; these are not the original intrinsic two-port law. No assertion that this pays controller, labels, normalization computation or archive storage."
+    },
+    "singular_cut": {
+      "native_intrinsic_r0": {
+        "0H": "p^2",
+        "10": "p^2",
+        "11": "p^3"
+      },
+      "occupation_marginal_r0": {
+        "0H": "p^2",
+        "10": "p^3",
+        "11": "p^2"
+      },
+      "complete_joint_r0": {
+        "0H": "p^2",
+        "101": "p^2",
+        "110": "p^3"
+      },
+      "entropy": "(1+p)*h(p^2)",
+      "warning": "No silently chosen U at zero first grade. Continuation from r>0 is a different instrument; its full joint entropy has an extra 2*p^2*log(2), while either separate marginal adds p^2*log(2)."
+    },
+    "reference": "The four all16 Kraus maps tensor I_reference128. Completeness preserves the full RIGHT marginal after summing histories; individual conditioned RIGHT marginals need not equal the initial one. A product initial known m preserves its spectator reference in each branch.",
+    "history_carrier": "Complete joint law: eight retained histories times CAR16 times the explicit retained control buffer =256 dimensions before tensoring reference128. The selected four-history marginal alone has logical dimension64. The extra occupation readout and control buffer are separate declared record resources; old intrinsic outputs, all complements and costs are retained.",
+    "execution": "Exact axis word: D=U0 G0^T, A=D X2 D X2, CZ01=CX(3,1) A CX(3,1), Z0=A X3 A X3, Lambda(S)=SWAP01 Z0 CZ01. All16 and the full32 retained-buffer completion are verified. One fresh-zero bit is copied from initial occupation bit0, which equals one on the specified seed family; it remains a constant control and implements X with CNOT. The branch0 second round is Lambda(S)^T, U0, old P0 readout, Lambda(S). This is a classical history-address policy, not arbitrary coherent controlled-word generation. The input-family premise, extra retained bit, all offcode unitary action and controller cost remain explicit.",
+    "whole_price": "If and only if the actual complete raw Book weight is the normalized Born history law and its full code/reference is supplied, expected Cost-Info=H/log(phi). Deterministic controller metadata is a function of history and adds no Shannon entropy, but this does not set its physical cost to zero or prove that binding.",
+    "distinction": "This is not the unmeasured chronology U_(a,-pr)/sqrt(p+p^2*r^2) U_e0. Measuring the first record changes both its conditional state and its next metric/query."
+  },
+  "clock": {
+    "status": "PASS",
+    "owned_clock_identity": "b=Fn,q=FetaF^T,g=q^-1;alpha=gb=F^-Teta n;alpha^Tqalpha1",
+    "clock_source": "Dalpha=-g(Dq)alpha+gDb;actualq,bjetsincludeclockandcoframevariations",
+    "direction_vs_scale": "beta_n/nu constantalonglapse n=e0;scalecomesfromactualCARcoefficientu0andclockcalibration,notpointeralone",
+    "lapse_b": "b0=c/J;J=1+epsilon cos2pi t;alpha0=J/c",
+    "normalized_proper_time": "epsilon*sin(2*pi*t)/(2*pi) + t",
+    "inverse_first_jet": "-sin(2*pi*u)/(2*pi)",
+    "inverse_second_jet": "sin(4*pi*u)/(2*pi)",
+    "general_inverse_jet": "Xa=-tau_a/tau_t;Xab=-(tau_ab+tau_ta Xb+tau_tb Xa+tau_tt XaXb)/tau_t",
+    "C2_bound_scope": "positiveclockgap tau_t>=kappa andboundedC3time/C2fieldjetsgiveC2stableinverse;quadratureandpolynomialqueryerrorsmustcontrolthesejets",
+    "conditional_coherent_availability": "alphaandinverseareanalyticfunctionsalreadyownedCAR/clockqueryinvariantsoncompactgapchart;existingall-outputC3compilerappliesifthoseaddressedqueriesareactuallysupplied",
+    "actual_metrology_flag_law": "r=delta^2 b0^2=r_star/J^2;scalar rI16 effectmakesfreshflaglawsBernoulliproductevenwithsameunknownmatter/fulloldhistory/reference128",
+    "probe_count": "fourquarter-periodsettings,Meach:4Mretainedcoframeflags;clocknormalizationflagsmayberetainedtooandarefieldindependenthere",
+    "full_same_history_price": "meanCostInfo=H(fullflags)/ell=M sum_j h(rj)/ell forcompletecutN1;fixedcodeanditsgaincancelasowned,notasassumedzerohardwarecost",
+    "at_background_first_source": "0",
+    "at_background_second_source": "4*M*r_star*(3*(r_star - 1)*log((1 - r_star)/r_star) + 2)/(ell*(r_star - 1))",
+    "strict_positive_scope": "0<r_star<=1/16;6log((1-r_star)/r_star)-4/(1-r_star)>=6log15-64/15>116/15;log15>2sincee<3",
+    "price_consequence": "finitefrequencyclockcanapproximateplacementbutthisretainedmeasurementpricehasnonvanishingO(M)lapseHessian;mustnotdropflagsorpriceitonlybyfixedgatecount",
+    "old_RIGHT": "operationsonactivequery/freshworkcommutewithfixedoldRIGHTandreference;newrecordretained,noresetorunknownstatecloning",
+    "minimal_native_primitive_consumer": "bindactualelapsedtime/addressactuationtointegralofalphaandX=tau^-1(wordseed),includingallwork/outcomecontrollerprice;currentgatepointeridentitydoesnotstateit",
+    "scope": "measuredmetrologyrouteonly;coherentqueryrouteisnotexcluded;computabilityisnotnativeexecutionselectionorfullsourcepreservation",
+    "native_clock_law_claimed": false,
+    "full_physical_price_preservation_claimed": false
+  },
+  "complete_price_and_quantile": {
+    "status": "PASS",
+    "checks": [
+      "nonseparable four-role triangular Jacobian",
+      "true moving-density first source",
+      "conditional CDF keeps both endpoints",
+      "complete adaptive two-level law",
+      "whole-code Cost-Info cancellation before variation",
+      "conditional entropy retains branch-weight derivative",
+      "deterministic metadata alone does not cancel unpaid cost"
+    ],
+    "scope": "Exact conditional quantile/source identities and full-code cocycle; no physical actuation, full-price binding or independent matter selection inferred."
+  },
+  "retained_factory": {
+    "status": "PASS",
+    "checks": 53,
+    "checked_identities": [
+      "golden normalization",
+      "complete unconditional coin bank k=1",
+      "coin bank success k=1",
+      "coin bank entropy and actual mean golden cost k=1",
+      "complete unconditional coin bank k=2",
+      "coin bank success k=2",
+      "coin bank entropy and actual mean golden cost k=2",
+      "complete unconditional coin bank k=3",
+      "coin bank success k=3",
+      "coin bank entropy and actual mean golden cost k=3",
+      "complete unconditional coin bank k=4",
+      "coin bank success k=4",
+      "coin bank entropy and actual mean golden cost k=4",
+      "complete unconditional coin bank k=5",
+      "coin bank success k=5",
+      "coin bank entropy and actual mean golden cost k=5",
+      "complete retained prefix k=1",
+      "prefix entropy divided by ell equals actual golden mean cost k=1",
+      "complete retained prefix k=2",
+      "prefix entropy divided by ell equals actual golden mean cost k=2",
+      "complete retained prefix k=3",
+      "prefix entropy divided by ell equals actual golden mean cost k=3",
+      "complete retained prefix k=4",
+      "prefix entropy divided by ell equals actual golden mean cost k=4",
+      "complete retained prefix k=5",
+      "prefix entropy divided by ell equals actual golden mean cost k=5",
+      "exact Bernstein law derivative l=2, order=0",
+      "exact Bernstein law derivative l=2, order=1",
+      "exact Bernstein law derivative l=2, order=2",
+      "full second field derivative includes likelihood derivative l=2",
+      "exact Bernstein law derivative l=3, order=0",
+      "exact Bernstein law derivative l=3, order=1",
+      "exact Bernstein law derivative l=3, order=2",
+      "full second field derivative includes likelihood derivative l=3",
+      "exact Bernstein law derivative l=4, order=0",
+      "exact Bernstein law derivative l=4, order=1",
+      "exact Bernstein law derivative l=4, order=2",
+      "full second field derivative includes likelihood derivative l=4",
+      "exact rare-success reciprocal moment M=1",
+      "exact rare-success reciprocal moment M=2",
+      "exact rare-success reciprocal moment M=3",
+      "exact rare-success reciprocal moment M=4",
+      "exact rare-success reciprocal moment M=5",
+      "exact rare-success reciprocal moment M=6",
+      "all nine complete clock histories retained",
+      "complete clock normalizer",
+      "two actual geometry calls and all thirty-six full histories",
+      "full factory normalizer",
+      "two-call geometry entropy at e=1/4",
+      "two-call geometry entropy at e=5/16",
+      "two-call geometry entropy at e=3/8",
+      "whole-price signal-normalized field derivative order=1",
+      "whole-price signal-normalized field derivative order=2"
+    ],
+    "source_sha256": {
+      "02_REGISTRY/research/sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md": "070cc5d4a2d924b309e101b96cd871938f9f0fba4ebf520ad0d47ba63c442552",
+      "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+      "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md": "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3"
+    },
+    "actual_prefix": "MAIN: execute all k independent fresh golden coins. A word with j R bits has probability p^(k+j); all 2^k words are retained. Success R^k has probability epsilon=p^(2k).",
+    "actual_prefix_cost": "MAIN: E Cost = H(coin bank)/ell = k*(p+2*p^2), field-independent. OPTIONAL stopped causal prefix has E Cost = H(prefix)/ell = sqrt(5)*(1-epsilon), only if that stopping policy is supplied.",
+    "complete_factory": "Old measured Y once, M full k-coin banks, d clock probes on each R^k success, deterministic retained record-to-address policy, then M actual scalar geometry calls.",
+    "exact_normalized_price": "H(Y)/(M*ell) + k*h(p^2)/ell + epsilon*sum_j h(r_j)/ell + E[g_geom(theta, Phi_clip(K/L))]. With L=0 use one fixed fallback address. This normalizes the WHOLE action by M.",
+    "scalar_scope": "Clock and geometry effects must be scalar conditionally on retained Y, or a separately priced fresh factory must prove the same product law. No arbitrary repeated non-scalar POVM is replaced by iid outcomes.",
+    "likelihood_binding": "This is the existing SAME-history w=q binding on the complete finite trace-preserving tree, N identically 1. No physical Book binding is inferred from Born normalization alone.",
+    "bernstein_derivative": "D_r^alpha B_l F = product_j[(l)_(alpha_j)/l^(alpha_j)] * E[D_u^alpha F(Z)]; Z_j=[Bin(l-alpha_j,r_j)+sum_(s<=alpha_j) Uniform_s]/l; total |alpha|<=2.",
+    "bernstein_C2": "For F in C^4 with norm K and r in C^2, on the compact chart, ||B_l F(theta,r(theta))-F(theta,r(theta))||_C2 <= C/l. All source derivatives through the outcome law are included.",
+    "explicit_C2_constant": "Using max-component derivative norms, one safe C is (3+d+d^2)*K*(1+2*d*R1+d*R2+d^2*R1^2), for R1=max |D r_j| and R2=max |D^2 r_j|.",
+    "rare_success_bound": "Error <= 2*C/((M+1)*epsilon) + C_fallback*exp(-M*epsilon), because E[1/(L+1)] = [1-(1-epsilon)^(M+1)]/[(M+1)*epsilon].",
+    "full_source_bound": "Let A_n=||sum h(r_nj)/ell||_C2, B_n=actual Bernstein C2 constant, D_n=fallback bound, Y_n=||H(Y_n)/ell||_C2 and sigma_n>0 be the actual field-independent geometric signal. After retaining the exact field-independent coin-bank constant, the signal-normalized C2 error is <= [epsilon*A_n + 2*B_n/((M+1)*epsilon) + D_n*exp(-M*epsilon) + Y_n/M]/sigma_n. Every constant is allowed to depend on h_n,t_n and actual query derivatives.",
+    "arbitrary_signal_conditions": "Require epsilon*A_n/sigma_n -> 0, B_n/(M*epsilon*sigma_n) -> 0, D_n*exp(-M*epsilon)/sigma_n -> 0 and Y_n/(M*sigma_n) -> 0. Unit-level weak-clock convergence alone is insufficient.",
+    "only_C2_variant": "No uniform C4 hypothesis is needed for qualitative convergence. With joint C2 F_n, let K_n bound all mixed derivatives through order 2 and omega_n be their uniform spatial modulus. For l>=2 and eta>0, the Bernstein error before the r-chain factor is <= K_n/l + omega_n(eta) + 2*K_n*(d/4+1)/(l*eta^2). Choose eta_n,L0_n so this is o(sigma_n). If M*epsilon>=2*L0_n, the remaining low-L tail is <=2*C_r*K_n*exp(-M*epsilon/8), with C_r=1+2*d*R1+d*R2+d^2*R1^2.",
+    "regularity_scope": "The actual clock-to-address-to-query profile F_n must be joint C2 on its chart; a bare nearest-cell map pi_h(X) is a step function. Existing C2 Palatini estimates do not supply an arbitrary uniform C4 address bound.",
+    "existing_AF_signal": "The existing AF Palatini owner defines f_h=h^(-4)*P_star and normalizes the actual price by t^2, so sigma=t^2 on that supplied normalized query family. If execution instead uses raw P_star without that gain, sigma=t^2*h^4. The gain and its h-dependent query cost must be actually supplied.",
+    "conservative_signal_schedule": "If actual derivative bounds A_n,B_n,D_n,Y_n grow at most polynomially and h_n=ceil(phi^(n/16))^(-1), t_n^2=h_n, even the smaller raw signal sigma_n=h_n^5 works with k_n=ceil(n/4), epsilon_n=p^(2*k_n), M_n=ceil(phi^n): epsilon_n/sigma_n<=32*p^(3*n/16), 1/(M_n*epsilon_n*sigma_n)<=32*p^(3*n/16-2), 1/(M_n*sigma_n)<=32*p^(11*n/16). Thus all source errors vanish under those stated derivative bounds. Relabel total resource budget N=2n: polynomial(n)*phi^n fits phi^N eventually for bounded/polynomial per-query cost.",
+    "fixed_dimension_schedule": "M_k=ceil(phi^(3k)), epsilon_k=p^(2k). Then M_k*epsilon_k >= phi^k, source error O(p^k), retained clock source O(p^(2k)), and old-history source O(p^(3k)).",
+    "resource_count": "MAIN uses exactly M*k fresh coin flags, at most d*M clock flags, and M actual geometry calls; expected clock calls are d*M*epsilon. All old RIGHT/reference128 and all raw CAR16 retained; no matter reset is used for the scalar product law.",
+    "golden_budget": "For bounded per-query cost and polynomial(k) arithmetic, total resource poly(k)*phi^(3k) fits phi^(4k) eventually. Without a quantitative actual address/compiler cost bound, only a computable diagonal schedule N_k >= ceil(log_phi(actual_total_cost_k)) is justified; no universal phi-rate is asserted.",
+    "remaining_execution_scope": "The actual finite causal record-to-address query policy and all its work must be supplied/compiled. Logical computability of Phi is not a native proper-time actuation law or forcing theorem. Approximate compilation needs its own complete-price C2 error control; C3 unitary approximation alone does not imply it at new zero-probability pointer branches.",
+    "root_scope": "C2 convergence of the whole normalized price/source on a smooth positive chart; no exact finite roots, free factory-preparation Euler, physical admission, Einstein dynamics, or source forcing are claimed.",
+    "preparation_boundary": "Use the actual fixed-RIGHT/PF fibre or solve all repeated preparation rows. For free old weights, H(r)+M sum r_i g_i has stationary r_i proportional to exp(M g_i), so the old single-shot capacity profile is not preserved."
+  },
+  "actual_two_tick_scene": {
+    "status": "PASS",
+    "checks": [
+      "literal two-tick scene effect",
+      "two-tick background is L not p squared",
+      "actual two-tick material first jet",
+      "full geometric coefficient",
+      "full material coefficient including normalizer",
+      "ratio of actual full sources",
+      "exact golden zero-fugacity ratio"
+    ],
+    "Lambda_plus_fixed_z": "23.41640675188407497289558206489525274426",
+    "scope": "One repeated scene word and its full source; supports conditional local null-scalar construction, not compulsory native scene choice."
+  },
+  "null_volume_and_clock": {
+    "status": "PASS",
+    "checks": [
+      "null rank-one endomorphism is nilpotent",
+      "exact same-volume coframe path",
+      "all-order Kerr-Schild metric identity",
+      "proper clock remains unit",
+      "proper clock actually moves despite fixed volume"
+    ],
+    "scope": "Volume/quantile placement source vanishes on this exact null path; the actual CAR clock one-form still varies. Its full-price source requires the real observer/clock/controller equations."
+  },
+  "GR_closed": false,
+  "native_clock_forced": false,
+  "exact_compiled_roots": false
+}

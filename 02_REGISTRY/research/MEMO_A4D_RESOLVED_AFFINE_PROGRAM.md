@@ -23,6 +23,28 @@ connection root alone establishes the full native gravitational law.
 
 ### Consuming strategic synthesis — 2026-10-18
 
+Actual execution/source composition, input `135206e7` with parallel
+`3e433023`: [strategic §7.15](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.41–6.45](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+execute the measured adaptive axis query in the old palette, distinguishing
+the intrinsic pointer from an explicitly added occupation output. All
+eight histories, singular HALT and control resources remain. The actual
+CAR clock supplies inverse-placement jets; the 4D quantile map retains
+its moving-cell source. A complete retained rare-clock / repeated-geometry
+experiment gives a positive conditional source limit, with error divided
+by the REAL geometric signal and all estimator-law derivatives included.
+Actual scalar-query availability, whole controller code binding, source
+regularity, repeated-preparation equations and runtime remain explicit.
+The parallel single-feedback null-matter wave is preserved after correcting
+its literal two-tick scene effect to4b(1-b). Its source ratio is now
+lambda+=23.41640675188407497 at fixed z; the nonvacuum finite-Euler wave
+persists. This constructed programme is not compulsory full-D0 matter.
+The parallel nine-null volume bypass is retained, but actual proper-clock
+alpha moves even on a determinant-preserving null coframe. Test the full
+null-projected source after genuine inner equations; volume invariance
+alone is insufficient. Continue through the record/address/query interface,
+not a new heat coefficient or unrelated action. Original raw#216 remains.
+
 Full scalar-source result, input `8b331ce8`: [strategic §7.14](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 and [full-source §§6.36–6.40](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 consume the actual-root matrix problem. Retaining the observer-relative

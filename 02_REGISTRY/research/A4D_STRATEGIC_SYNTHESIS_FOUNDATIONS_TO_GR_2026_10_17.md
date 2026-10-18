@@ -1856,6 +1856,92 @@ relative legs — h⁻¹. Phi-radial dressing исчезает при f=0, densi
 dressing при nonconstant weights остаётся. Оба результата требуют
 того же native execution law, затем полного metric/matter source.
 
+### 7.15. Adaptive запись, proper-clock source и тот же sourced feedback
+
+Вход `135206e7`, с сохранением параллельного `3e433023`.
+[Full-source §§6.41–6.45](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+продолжают два native consumer §7.14. После ЧТЕНИЯ первой записи
+на m_r новый conditional observer действительно −e₁ или e₀. Для
+него выписано exact U₀/G/CNOT слово и constant-cost inverse, с
+retained one-bit control и all32 completion. Нечитанная updated-tuple
+суперпозиция — другой protocol. Два старых intrinsic pointer имеют
+r-independent law; ненулевой r-source получается только с ЯВНО
+добавленной occupation-copy, при сохранении двух прежних outputs.
+Все eight histories и стоимость новой записи остаются. При нулевом
+first grade retained HALT обязателен. Полный adaptive cocycle даёт
+E(C−I)=H/ℓ только при настоящем WHOLE-code w=q, включая controller.
+Deterministic metadata сами по себе не доказывают отсутствие cost;
+непокрытый cocycle остаток A даёт source ΣDq·A+Σq·DA.
+
+Clock scale теперь читается из прежних CAR данных: α=gb, αᵀqα=1,
+Dα=−g(Dq)α+gDb. На lapse family интеграл α даёт ровно proper-clock
+τ и inverse placement со всеми first/second jets. Параллельный
+[4D quantile-clock map](A4D_GOLDEN_QUANTILE_CLOCK_SAME_CAR_VOLUME_BRIDGE_2026_10_18.md)
+сохраняет золотые массы с exact Jacobian/Reynolds source. Это
+вычисленный physical placement, пока не закон native actuation.
+Обычная измерительная реализация вносит положительный O(M) lapse
+Hessian; её точность не бесплатна.
+
+**Положительный source bridge:** в одном полном conditional scalar
+experiment M banks из k свежих golden coins управляют редкими clock
+probes с ε=p^(2k). Все coins/failures сохраняются; затем исполняются
+M настоящих геометрических calls. Тогда
+
+    S_full/M=H_old/(Mℓ)+k h(p²)/ℓ
+            +εΣh(r_j)/ℓ+E g(θ,K/L).                (7.36)
+
+Все производные распределения оценок учитывает exact Bernstein
+identity. Для настоящего geometric signal σ_n полная ошибка C²≤
+
+    [ε A_n+2B_n/((M+1)ε)+D_n exp(−Mε)+Y_n/M]/σ_n. (7.37)
+
+Измерительная цена может исчезнуть ОТНОСИТЕЛЬНО полезного сигнала
+без удаления flags и свободного relative prefactor. При фактической
+факторизации g=B_blank+σG Bernstein error тоже содержит σ; это
+усиление нельзя переносить на произвольную scene/controller price.
+Достаточные golden counts существуют при указанных derivative bounds.
+Actual constants, growing clock dimension, repeated preparation rows
+и compiled runtime считаются отдельно. Scalar ideal не равен всему
+five-cut; finite C³ operator error также не даёт C² Shannon при rank
+births. Native t(h), fixed-g/tau raw#216 и exact finite roots не
+провозглашаются. Repetition меняет свободный leaf profile, поэтому
+нужен тот же fixed-RIGHT/PF fibre либо решение его новых Euler rows.
+
+**Материальный consumer сохранён и исправлен:** новый
+[local CAR null-source](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md)
+связывает recorded grade0 scalar с тем же J₂ через Γ(Dψ)²=qI16.
+У literal двухтактового слова истинный scene effect B=4b(1−b), не
+one-tick setting b. После исправления всего источника
+
+    λ_mat=2σp⁻⁵(R/Q+p⁶),
+    Q=1−zL, R=1−z(L+p⁶L), L=4p³,
+    λ_+(2⁻²⁰)=23.41640675188407497… .              (7.38)
+
+Точная неплоская finite pp-wave с ψ=su сохраняется:
+A+D=−2λ_mat s²; все40 geometric и scalar Euler rows этой controlled
+family решены, обе Weyl polarizations свободны. Это положительный
+источниковый результат выбранного прибора, не выбор compulsory native
+control и не вся сцена с независимыми spectral directions. λ_mat
+не является cosmological Λ или эмпирическим Newton constant.
+
+Параллельный `50a2729c` даёт также nine-null volume bypass: Kerr–Schild
+coframe paths сохраняют determinant, а matched fixed-RIGHT root имеет
+Dμ_LEFT=0 без замораживания pure preparation. При настоящих девяти
+Ricci/matter source equations и material Ward весь Einstein tensor
+восстанавливается с постоянной Λ. Но volume clock и proper-clock
+различны: exact e_s=I+s k⊗ηk/2 сохраняет det1, тогда как actual
+α_s=e_sᵀηn=e₀+sηk/2 движется. Полный clock/observer price нужно
+учесть и на null tangents. Этот тест может обойти отдельную volume
+selection, но не genuine nine-row dynamics или её normal equations.
+
+Следующий общий consumer конкретен: исполнить record→proper-address
+и code→scene/query управление на ОДНОМ admitted carrier, вывести его
+whole price и preparation/observer/clock rows, проверить (7.37) после
+реальной compilation, затем совместный physical limit. Новые программы,
+Shannon и J₂, composite principal metric и operator-measure variation
+не отождествлены. Конструкции и source bound заменили два неявных
+предположения, но физический D0→ОТО ещё требует названного binding.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября

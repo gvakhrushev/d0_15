@@ -1,5 +1,31 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 18 October 2026 — complete adaptive source, priced proper clock and corrected sourced wave
+
+[Strategic §7.15](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+consumes [full-source §§6.41–6.45](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The measured first record supplies an exact native axis-query word,
+distinct from the unmeasured nonlinear update. True intrinsic and added
+occupation cuts are separated, retaining every outcome/control bit and
+positive-mass HALT at zero first grade. The full adaptive cocycle shows
+when controller cost cancels and when its genuine source remains.
+
+The CAR-derived proper clock and inverse placement are composed with the
+parallel quantile map. Metrology has its actual price; a full rare-clock /
+M-fold geometric experiment instead has a conditional normalized C2 source
+limit with ALL failures retained. Its bound keeps the true geometric signal,
+estimator-law derivatives, old source, preparation and compiler/resource
+premises. Exact finite joint roots and native actuation remain open.
+
+The parallel local LEFT-controlled CAR null-matter J2 construction remains
+a positive nonvacuum finite-Euler family. Its one-tick setting b had been
+substituted for the actual repeated scene effect4b(1-b); the literal word,
+full source, checker and dependent wave coefficient are corrected together.
+The fixed-z source ratio is now23.41640675188407497 in magnitude. Independent
+scene directions, compulsory controller/price, general matter/spin, physical
+refinement and the original raw#216 are not inferred from this local wave.
+The next consumer is one actual address/query programme and its full price.
+
 
 ## 18 October 2026 — FIRST exact nonvacuum CAR16 Einstein source from ONE locally controlled Book feedback
 
@@ -16,20 +42,20 @@ This unique inverse-density matter readout removes real unequal golden weights a
 
 On **one** original old×scene feedback carrier, scene is controlled by actual old LEFT address (not forbidden RIGHT archive):
 \(E_i=p²(1+t²f_i)\),
-\(B_i=(p+\sigma p²t²(\bar w/w_x)q_x)^2I_{528}\),
+\(b_i=(p+\sigma p²t²(\bar w/w_x)q_x)^2,\ B_i=4b_i(1-b_i)I_{528}\),
 with 22448 scene complement modes and all AF/dark events retained. Its **single complete operator trace-log** factorizes into the original two \(Q_i,R_i\) return pencils, includes genuine \(-K\mathrm{Tr}\log Q_i\), and gives on \(f_i=q_i=0\)
 \[
 DJ_{2,\mathrm{local}}/(\nu K)
 =\bar w C_\star D\sum_x(\widehat f_x+\lambda_\sigma q_x),\quad
-\lambda_\sigma(z)=\sigma\frac{1+p^6-z(4p³+2p^8)}{2p³(1-zp²)}.
+\lambda_\sigma(z)=\frac{2\sigma}{p^5}\frac{1+p^6-z(4p³)(1+2p^6)}{1-z(4p³)}.
 \]
-For actual \(z=2^{-20}\), the two existing Golden orientation signs give \(\lambda_\pm=\pm2.236066798693\ldots\); the strict \(z\to0\) SOURCE RATIO, not exact finite coefficient, is \(\pm\sqrt5\). Both controller angles are on the original same Golden G-axis with derivative ratio \(2\sigma p\)—no fitted matter coupling or new gate matrix type.
+For actual \(z=2^{-20}\), the two existing Golden orientation signs give \(\lambda_\pm=\pm23.416406751884\ldots\); the strict \(z\to0\) SOURCE RATIO, not exact finite coefficient, is \(\pm(10+6\sqrt5)\). Both controller angles are on the original same Golden G-axis with derivative ratio \(2\sigma p\)—no fitted matter coupling or new gate matrix type.
 
 **Genuine EXACT FINITE sourced root:** on the already-owned full-independent Lorentz pp-wave coframe/link family with \(H=A x²+2W_\times xy+D y²\), set the original scalar matter profile \(\psi=s\,u\) (nonzero null gradient). Then every \(q_x=0\) while its true first coframe source has ONLY \(\partial q_x/\partial\widehat v_v^+=-2s²/h\); \(\sum_xD_\psi q_x=2s\sum_x D_v^+\delta\psi=0\) by exact discrete Stokes. The star owner's EXACT 40-row Euler table gives the remaining coframe source \(-(A+D)/h\), two proper-link rows killed by \(c_x=-A/2,c_y=-D/2\), all other rows0. Hence the SAME complete locally controlled J₂ has all 16 coframe, 24 connection AND independent scalar matter Euler rows exactly zero whenever
 \[
 A+D=-2\lambda_\sigma(z)s².
 \]
-For the reverse Golden orientation \(\sigma=-1\), \(\operatorname{Ric}_{uu}=A+D=+4.472133597386\ldots s²>0\), and the two tracefree Weyl polarizations \(W_+,W_\times\) remain free. All true golden weights and full16/reference128 remain. This is **nonvacuum Lorentz Einstein-null-scalar recovery** on fixed-collar local lattice at EVERY h, not just a curvature coefficient or restricted 25-dimensional IFT. At the mathematical level the native matter term has zero on-shell VALUE but nonzero on-shell METRIC SOURCE; it is produced by \(\Gamma(k)^2\) and the scene variation of the SAME original logdet.
+For the reverse Golden orientation \(\sigma=-1\), \(\operatorname{Ric}_{uu}=A+D=+46.832813503768\ldots s²>0\), and the two tracefree Weyl polarizations \(W_+,W_\times\) remain free. All true golden weights and full16/reference128 remain. This is **nonvacuum Lorentz Einstein-null-scalar recovery** on fixed-collar local lattice at EVERY h, not just a curvature coefficient or restricted 25-dimensional IFT. At the mathematical level the native matter term has zero on-shell VALUE but nonzero on-shell METRIC SOURCE; it is produced by \(\Gamma(k)^2\) and the scene variation of the SAME original logdet.
 
 **Scope:** exact one-operator mathematical AF×scene programme with specified LEFT-coded field-to-scene control, NOT the compulsory whole D0 Cost−Info including original v8 heat/R, nor a claim that a fixed physical D0 decoder reads unknown quantum amplitudes without measurement. Native material/source code generation, real work/cut/old-history price, sign/orientation selection, independent other matter/spin dynamics and original all-site raw h⁻² fixed-g/tau #216 are not promoted. The new result *closes a previously absent nonzero sourced Einstein solution* in the very same geometric programme, ready to be consumed by whole-programme native admission.
 

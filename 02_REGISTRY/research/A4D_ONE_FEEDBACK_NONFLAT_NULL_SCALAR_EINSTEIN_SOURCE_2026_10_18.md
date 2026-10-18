@@ -2,6 +2,8 @@
 
 18 октября 2026 · POSITIVE MATHEMATICAL CONSTRUCTION / DIRECT consumer существующего Draft #334, без нового физического action, нового независимого matter tensor, дополнительного поля D0 или внешней константы. Впервые на собственном одном двухтактовом операторном Book-feedback \(-\mathrm{Tr}\log(I-zF)\) построена **ненулевая производная настоящего CAR16-материального источника** и явная **неплоская стационарная решётка**, на которой одновременно выполняются ВСЕ 16 тетрадных, 24 связевых и независимые скалярные matter Euler rows в каждом внутреннем узле. Это НЕ утверждение, что всё физическое self-verification D0 уже выбирает данную сценовую программу: построены её полный конечный прибор и математический source, а истинное compulsory native admission/old history + whole-stack остаётся своим требованием. Исходный фиксированный nonconstant-g/fixed independent tau/unweighted raw h^-2 #216 terminal не заменяется.
 
+**Исправление native word/source (18 октября):** оба такта исполняют то же золотое scene-вращение. Поэтому его параметр \(b_\sigma\) даёт \(B_\sigma=4b_\sigma(1-b_\sigma)I\), а не \(b_\sigma I\). Исправлены полный source, нормировка связи и sourced pp-wave; ни дополнительный управляющий такт, ни half-angle oracle не добавлены.
+
 ## 0. Уже принадлежащие входы, без нового Einstein-looking действия
 
 - [Оригинальная finite Lorentz star и 40 Euler rows](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md) §§2–4. На pp-wave с \(H=A x²+2Cxy+D y²\) старое звёздное действие даёт только coframe row \(v_v^+=-h³(A+D)\) и две link rows \(h⁴(A+2c_x)/2,\ h⁴(D+2c_y)/2\). Все остальные coframe/link first rows нулевые. Её **scalar value равен0 и при A+D≠0**.
@@ -70,7 +72,7 @@ Unlike a free independent scene field, \(\bar q\) is a specific REAL scalar func
 Use EXACTLY the already-owned 2-tick feedback price, not a sum \(J_{\rm AF}+S_{\rm scalar}\). On its true \(528+22448\) scene carrier choose the complete one-golden-rotation scene unitary by pairing every retained scene direction with one existing complementary direction (there is ample space), leaving the rest of the complement identity. Its on-retained feedback effect is
 \[
 \boxed{
-B_\sigma(\bar q)=b_\sigma(\bar q)I_{528},
+B_\sigma(\bar q)=\lambda_{\rm AF}(b_\sigma(\bar q))I_{528},
 \quad b_\sigma(\bar q)=(p+\sigma p²t²\bar q)^2,
 \quad\sigma=\pm1,\quad 0<B_\sigma<I
 }
@@ -88,9 +90,9 @@ The true complete operator price (all old defining multiplicities and all scene 
 \[
 \boxed{
 \frac{J_2(E,B_\sigma)}{\nu K}
-=-528\log(1-zb_\sigma)
+=-528\log(1-zB_\sigma)
 -\frac1K\sum_{j,i\in j}D_j\,528\log\bigl(1-z[\lambda_{\rm AF}(E_i)
-                         +(1-\lambda_{\rm AF}(E_i))b_\sigma]\bigr).
+                         +(1-\lambda_{\rm AF}(E_i))B_\sigma]\bigr).
 }
 \tag{8}
 \]
@@ -100,10 +102,10 @@ This is the exact §6.18 native operator determinant at the **new completely spe
 
 At the finite null-star configuration \(f_x=0\) for EVERY site and \(q_x=0\) for EVERY site, put
 \[
-L=4p³,\quad a=1-L=p^6,\quad b=p²,\quad
-Q=1-zb,\quad R=1-z(L+ab)>0 .
+L=4p³,\quad a=1-L=p^6,\quad B_0=L,\quad
+Q=1-zL,\quad R=1-z(L+p^6 L)>0 .
 \]
-Differentiate ALL terms of the one J₂, including its original \(-K\mathrm{Tr}\log(1-zB)\) scene normalizer. With the full 528 trace and regular AF counts the first variation on **arbitrary jointly admissible** coframe/link/matter directions is **exactly**
+At this point \(DB_\sigma=8\sigma p^6t^2D\bar q\). Differentiate ALL terms of the one J₂, including its original \(-K\mathrm{Tr}\log(1-zB)\) scene normalizer. With the full 528 trace and regular AF counts the first variation on **arbitrary jointly admissible** coframe/link/matter directions is **exactly**
 \[
 \frac{DJ_2}{\nu K}
 =C_\star\,\sum_xw_x\,Df_x+
@@ -114,8 +116,8 @@ Differentiate ALL terms of the one J₂, including its original \(-K\mathrm{Tr}\
 \]
 where
 \[
-C_\star=\frac{528z\,4p³(1-b)p²t²}{R}>0,\qquad
-C_{\rm mat}=\sigma\,528z\,2p³t²\left(\frac1Q+\frac{a}{R}\right)\ne0.
+C_\star=\frac{528z\,4p^{11}t²}{R}>0,\qquad
+C_{\rm mat}=\sigma\,528z\,8p^6t²\left(\frac1Q+\frac{a}{R}\right)\ne0.
 \tag{10}
 \]
 No moving \(w\) was frozen after differentiating a field-dependent coframe: \(D\widehat e\) is part of \(D\widehat f,Dq\). Normalized matter amplitude variations, proper links and full CAR observer frames are considered along their actual coframe representation; the scalar \(q\) is Clifford invariant.
@@ -125,23 +127,22 @@ Therefore the same finite J has an **independently derived** source ratio
 \boxed{
 \Lambda_{\rm null}(z)
 =\frac{C_{\rm mat}}{C_\star}
-=\sigma\,\frac{R/Q+p^6}{2p³}
-=\sigma\,\frac{1+p^6-z(4p³+2p^8)}
-              {2p³(1-zp²)}.
+=\frac{2\sigma}{p^5}(R/Q+p^6)
+=\frac{2\sigma}{p^5}\,\frac{1+p^6-zL(1+2p^6)}{1-zL}.
 }
 \tag{11}
 \]
 All \(K,\nu,528,t²,\bar w\) CANCEL. No new Newton-coupling fit, extra matter tensor or second action appears. At the actual \(z=2^{-20}\),
 \[
 \Lambda_{\rm null}^{(+)}
-=2.236066798693078\ldots,\quad
-\Lambda_{\rm null}^{(-)}=-2.236066798693078\ldots .
+=23.416406751884075\ldots,\quad
+\Lambda_{\rm null}^{(-)}=-23.416406751884075\ldots .
 \]
 In the *mathematical* \(z\to0\) ratio, NOT at fixed physical z, the exact golden identity is
 \[
 \lim_{z\to0}\Lambda_{\rm null}^{(\sigma)}
-=\sigma\frac{1+p^6}{2p³}
-=\sigma\,\sqrt5 .
+=\frac{2\sigma(1+p^6)}{p^5}
+=\sigma(10+6\sqrt5) .
 \tag{12}
 \]
 This is the relative coefficient of the TWO derived geometric and Clifford channels of ONE feedback. It is not an empirical prediction for G_N or a claim that both \(\sigma\) are compulsory physical theories.
@@ -219,7 +220,7 @@ Therefore choose the **positive-energy reverse-golden orientation \(\sigma=-1\)*
 \[
 \boxed{
 A+D=-2\Lambda_{\rm null}^{(-)}(z)\,s²
-=+4.47213359738616\ldots\,s².                       \tag{21}
+=+46.83281350376815\ldots\,s².                       \tag{21}
 }
 \]
 No other free coframe, link or scalar Euler survives. The natural two traceless gravity polarizations stay independent:

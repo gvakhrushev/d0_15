@@ -3548,6 +3548,283 @@ sampling ω, subprincipal/clock jets или actually varying Julia operand.
 sources одного исполнения; математические positive AF-star результаты
 при этом сохранены, а fixed-counting counter не перенесён на них.
 
+### 6.41. Измеренная первая запись исполняет другой adaptive instrument
+
+Вход `135206e7`, с сохранением параллельного `3e433023`. На настоящем
+whole-blank семействе m_r=e₀+Ω+r(e₀₁+e₀₂₃), r>0, после ЧТЕНИЯ
+первого intrinsic pointer conditional first grades равны
+(0,−pr,0,0) и (a,0,0,0), a²=p. Поэтому следующий observer — −e₁
+или e₀. Это не нечитанная суперпозиция (a,−pr)/sqrt(p+p²r²)
+из §6.39. Для осевого adaptive перехода достаточно точного старого
+U₀/G/CNOT слова, без continuous updated-query oracle.
+
+Пусть D=U₀G₀ᵀ, A=D X₂ D X₂. Прямой all16 расчёт даёт
+
+    CZ₀₁=CX_(3→1) A CX_(3→1), Z₀=A X₃ A X₃,
+    ΛS=SWAP₀₁ Z₀ CZ₀₁, S e₀=−e₁, S e₁=e₀,
+    U₀⁻¹=G₀⁻¹ U₀ G₀⁻¹, G₀⁻¹=X₀G₀X₀.            (13dp)
+
+На данном seed occupation bit0=1. Одна первоначальная CNOT-копия
+в явно добавленный fresh bit даёт сохраняемый constant-one control;
+каждый X далее — CNOT от этого bit. All32 completion унитарна,
+неудобный off-code block не удалён. Inverse G стоит1G+2CX, inverse
+U₀ —1U₀+2G+4CX. Это снимает inverse-supply premise существующего
+fixed-width compiler contract, но не доказывает его admission/price
+и не задаёт uniform constants для растущей ширины.
+
+**Разрез существенно важен.** При втором чтении прежний intrinsic
+pointer НЕ совпадает с active occupation cut. Две настоящие intrinsic
+записи дают law (p²/2,p²/2,p²,p³), независимо от r, и
+H_intr=(1+p)h(p²)+p²log2. Поэтому у них нет r-источника.
+Можно ЯВНО добавить CNOT occupation-copy в отдельный fresh output,
+сохранив оба прежних исхода. Тогда при s=1/2+2ap r/(1+r²)
+
+    q₀₀₀=q₀₁₀=p²s/2, q₀₀₁=q₀₁₁=p²(1−s)/2,
+    q₁₀₁=p², q₁₁₀=p³, q₁₀₀=q₁₁₁=0,
+    H_joint=(1+p)h(p²)+p²h(s)+p²log2.             (13dq)
+
+Это полный eight-leaf instrument, all16 Kraus completeness; logical
+carrier16×2_control×8_history до tensor reference128. Его r-source
+равен p²log((1−s)/s)s′, а H_joint″(1)>0. Но это источник РАСШИРЕННОЙ
+записи, не исчезнувшей цены прежнего pointer. При binary lengths1,2
+mean code cost двух intrinsic ports=(3+5p)/2; с явно добавленным
+occupation port=(9+p)/2−p²s. Controller, blanks и storage также
+нуждаются в своём полном code/gain binding. В r=0 ветвь0 имеет
+ненулевую массу p² и нулевой first grade: её надо HALT, а не выбирать
+observer. Intrinsic HALT law=(p²,p²,p³) с labels(0H,10,11);
+продолжение (13dq) из r>0 — другой instrument с дополнительной
+2p²log2 энтропией в этом пределе. H″(1)>0 не доказывает полного
+preparation Euler: найденное sphere-normal направление с DH<0
+аннигилируется настоящим whole-blank projector и не является его
+допустимым tangent. При общих изменениях preparation движется и policy.
+Unconditioned RIGHT сохраняется completeness; arbitrary conditioned
+RIGHT не объявляется прежним на этом non-scalar instrument.
+
+**Полная adaptive цена.** Для конечного дерева действительных
+instruments L_vj с Σ_j L_vj*L_vj=I на том же CAR16⊗reference128,
+произведений K_vj=L_vjK_v и retained bounded stopping cut normalizer
+N=1. Все DK включают actual controller/query/clock derivatives.
+Детерминированные metadata M=f(seed,Y) имеют H(Y,M)=H(Y), однако
+не обнуляют свою физическую стоимость. Только если ВЕСЬ code C_full
+имеет actual Book cocycle w_full=q, то до дифференцирования
+
+    E(C_full−I_full)=H(q)/ℓ, ℓ=logφ.             (13dr)
+
+Если прежний cocycle не покрывает новый controller и остаётся A_Y,
+его источник Σ(Dq_Y)A_Y+Σq_Y DA_Y сохраняется. Пример q=(1−r,r),
+A=(0,1) даёт derivative1 при совершенно deterministic metadata.
+Обрезание уже исполненного suffix Z также оставляет H(Z|Y)/ℓ.
+Так composition theorem отделяет полный code binding от предположения
+«число gates — постоянное, значит controller бесплатен».
+
+### 6.42. Proper-clock читается из CAR; измерение этого чтения имеет свою цену
+
+Owned clock/CAR identity q=FηFᵀ, b=Fn даёт не только направление:
+
+    α=gb=F⁻ᵀηn, αᵀqα=1,
+    Dα=−g(Dq)α+gDb.                             (13ds)
+
+На lapse семье §6.40 b₀=c/J, α₀=J/c. Normalized clock
+τ(t)=∫₀ᵗα₀/∫₀¹α₀=t+εsin(2πt)/(2π) имеет τ′=J. Для X=τ⁻¹
+первые jets X_ε|₀=−sin(2πu)/(2π), X_εε|₀=sin(4πu)/(2π).
+Общие inverse jets следуют из τ(X,θ)=u:
+
+    X_a=−τ_a/τ_t,
+    X_ab=−(τ_ab+τ_ta X_b+τ_tb X_a+τ_tt X_aX_b)/τ_t. (13dt)
+
+Positive gap τ_t≥κ и соответствующие uniform time/field derivatives
+дают устойчивую обратную карту. Это conditional вычисление из actual
+CAR queries, не отдельный готовый clock oracle. Параллельный
+[quantile-clock owner](A4D_GOLDEN_QUANTILE_CLOCK_SAME_CAR_VOLUME_BRIDGE_2026_10_18.md)
+уже усилил его до четырёх lower-triangular conditional CDF: det DR=ρ,
+ρ=|det ehat|/∫|det ehat|, moving cells сохраняют все golden masses.
+Его Reynolds source и Diff address cocycle сохраняются. Unique map
+в указанном классе ещё не является физическим sampling actuator;
+полный источник этого управления нужен отдельно.
+
+Измерительный способ получить α не бесплатен. Scalar-effect flag
+r(t)=δ²b₀²=r_*/J², при четырёх quarter-period settings и M flags
+на каждом, имеет полный SAME-history source
+
+    H_clock′(0)/ℓ=0,
+    H_clock″(0)/ℓ=(2M r_*/ℓ)
+            [6log((1−r_*)/r_*)−4/(1−r_*)]>0          (13du)
+
+для0<r_*≤1/16. Нормировочные flags здесь field-independent, но
+также retained. Эффекты rI16 дают product law без копии unknown
+matter и сохраняют conditional RIGHT даже для entangled input.
+Вообще K_j*K_j=q_jI сохраняет RIGHT в каждом исходе, но может менять
+active data; только K_j=α_jI сохраняет всё состояние. Это нельзя
+переносить на (13dq) или весь старый five-cut. Простая частотная
+оценка часов оставляет ненулевой O(M) источник; Hoeffding при каждом
+фиксированном поле также не доказывает samplewise C² control.
+
+### 6.43. Положительный мост: редкие часы и повторённая геометрия сохраняют весь источник
+
+O(M) в (13du) не является no-go. Есть полный conditional experiment,
+в котором clock source исчезает ОТНОСИТЕЛЬНО геометрического сигнала,
+без удаления flags и без свободного относительного coupling.
+На фиксированной smooth source chart пусть доступны реальные scalar
+clock effects r_j(θ)I и geometry factory с conditional entropy
+g(θ,z), включая все её outputs. Старый полный Y сохраняется один раз.
+Для каждого из M испытаний исполняются k FRESH независимых G|0>
+coins, все k бит сохраняются. Только на строке R^k исполняются d clock
+probes. Её вероятность ε=p^(2k), field-independent. Из L successes
+и K_j счётчиков получается zhat_j=K_j/L. При L=0 используется
+допустимый фиксированный fallback; все прочие estimator values также
+должны вести в legal query посредством smooth gap-preserving map.
+После калибровки исполняются M НАСТОЯЩИХ geometry calls с этим address.
+
+Если их эффекты scalar на каждом retained fibre, chain rule даёт
+ТОЧНО для всего конечного опыта, при actual full binding (13dr),
+
+    S_full/M = H(Y)/(Mℓ)+ k h(p²)/ℓ
+             + ε Σ_j h(r_j)/ℓ + E[g(θ,zhat)].     (13dv)
+
+M геометрических calls действительно входят в программу; делится
+ВСЯ цена, не только clock term. Coin bank имеет mean cost/entropy
+k(p+2p²), постоянный по полям. Если отдельно допущен stopped-prefix
+controller, его baseline вместо этого √5(1−ε); это другой retained
+cut. Повтор старого fullStep на том же active bit НЕ даёт ε=p^(2k).
+
+**Производные распределения не потеряны.** При L=l и K_j независимых
+Bin(l,r_j), E[g(θ,K/l)] — product Bernstein polynomial. Для |α|≤2
+
+    ∂_r^α B_l g=Π_j[(l)_(α_j)/l^(α_j)] E[∂_z^αg(Z)],
+    Z_j=[Bin(l−α_j,r_j)+Σ_(a≤α_j)Uniform_a]/l.     (13dw)
+
+Формула получается дифференцированием binomial law и integral finite
+differences; она учитывает все probability-score и controller источники.
+Среднее смещение Z−r и его второй момент O(1/l). При bounded joint
+C⁴ g Taylor даёт C² error≤B/l; B зависит от числа settings и их
+настоящих jets. Более слабое joint C² даёт сходимость через modulus
+непрерывности вторых derivatives, без выдуманной uniform скорости.
+L~Bin(M,ε) имеет exact E[1/(L+1)]=[1−(1−ε)^(M+1)]/[(M+1)ε].
+
+Теперь σ_n>0 — НАСТОЯЩИЙ геометрический signal, постоянный на данной
+вариационной карте. Пусть A_n=||Σh(r_j)/ℓ||_C²,
+B_n — actual Bernstein constant, D_n — fallback bound,
+Y_n=||H(Y)/ℓ||_C². После одной общей нормировки1/(Mσ_n)
+и удаления только field-independent coin baseline получаем
+
+    error_C² ≤ [ε A_n+2B_n/((M+1)ε)
+                   +D_n exp(−Mε)+Y_n/M]/σ_n.     (13dx)
+
+Это положительный source-preserving consumer (13dt), а не назначенная
+нулевая стоимость измерения. Требуются все четыре правые отношения→0.
+Если реально g=B_blank+σ_n G_n и B_blank field/address-independent,
+Bernstein error сам содержит σ_n; его член после нормировки становится
+2B^G_n/((M+1)ε). Такую факторизацию нельзя переносить на произвольный
+scene/controller price. В прежнем Palatini owner сигнал σ=t², поскольку
+query уже содержит h⁻⁴P_star. Для raw P_star без этого gain сигнал
+t²h⁴; source/compiled-query cost gain также надо сохранить.
+
+Для fixed d и bounded normalized C⁴ G, t²=h,
+ε≈h²,M≈h⁻³ (normalized query) дают error O(h), кроме отдельно
+учтённых old/compilation terms. Для raw signal h⁵ достаточно
+ε≈h⁶,M≈h⁻⁷. k целочисленный: golden rounding меняет только
+постоянные. Это sufficient counts, НЕ выведенный физический t(h).
+При растущем d≈h⁻⁴ константа B не uniform автоматически; conservative
+bound содержит dimension sums и может быть O(d³). Actual compiler,
+адресная арифметика и ВСЕ fresh records также входят в общий бюджет.
+
+**Сохранённые границы:** exact scalar ideal (13bq1) и finite C³
+compiler (13br) — разные входы; весь M-fold price требует собственного
+error/σ→0. Operator C³ convergence не даёт Shannon C² в rank births.
+H(Y)/M также не исправляет t²log t singularity. Bare nearest-cell
+π_h(X) не smooth: необходим actual smooth query/placement contract.
+При свободных old leaf weights repetition меняет preparation profile:
+H(r)+MΣr_i g_i имеет r_i∝exp(Mg_i), а не прежний single-shot maximum.
+Поэтому (13dx) применён на fixed-RIGHT/PF fibre либо требует решения
+всех новых preparation rows. Если t,σ или counts сами freely varied,
+их Euler rows не сохраняются умножением на1/(Mσ). Exact finite joint
+roots, native proper-time actuation, whole-price selection и физический
+D0→ОТО из этой conditional source convergence ещё не следуют.
+
+### 6.44. Один sourced feedback: исправлен literal two-tick scene и сохранена непустая ветвь
+
+Параллельные `c3ae03b7..3e433023` построили
+[local LEFT-controlled CAR null source](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md),
+потребляющий именно J₂(13at). Его scalar ψ — представленный исходным
+кодом grade0 argument; Γ(k)²=qI16 читает q=ĝ⁻¹(Dψ,Dψ) на полном CAR,
+не копируя unknown wavefunction. Scene control должен реально получить
+этот код. One controlled scene word повторяется в двух тактах.
+Поэтому параметр вращения b_i=(p+σp²t²q_i)² имеет feedback
+B_i=4b_i(1−b_i), не b_i. У родительских формул и bounded checker
+исправлены именно этот пропущенный переход и все зависимые коэффициенты.
+
+При f=q=0, L=4p³, Q=1−zL,R=1−z(L+p⁶L), actual source даёт
+
+    C_star=528z·4p¹¹t²/R,
+    C_mat=σ528z·8p⁶t²(1/Q+p⁶/R),
+    λ_mat=C_mat/C_star=2σp⁻⁵(R/Q+p⁶).             (13dy)
+
+При z=2⁻²⁰ λ_+=23.41640675188407497…; z→0 даёт10+6√5,
+а не √5. Это отношение двух источников выбранного прибора, НЕ
+космологическая постоянная и не эмпирический Newton coupling.
+All four AF tail copies используют тот же LEFT projector, который
+коммутирует с W_E: блок всего слова действительно T_E²⊗G_b².
+Сохраняются оба trace-log terms, все528 retained scene modes и22448
+complements. Inverse-PF compensation и literal40-row star table
+дают ту же непустую sourced pp-wave семью ψ=su с
+A+D=−2λ_mat s². Обе свободные Weyl polarizations сохранены.
+
+Это exact finite coframe/link/scalar stationarity внутри указанного
+controlled programme и его fixed collar. Произвольные независимые
+scene variations не объявлены решёнными: B здесь связан с кодом.
+Off-shell local null construction не является теоремой о всей
+материи/спине D0 или universal source coupling. Физическое admission,
+orientation selection, полный H+J+R/старые истории и исходный raw#216
+остаются собственными consumer. Новый источник не называется
+прежней native ценой только потому, что существует unitary dilation.
+
+Новый [bounded consumer](sources/d0_af_star_full_lattice_2026-10-17/check_native_adaptive_clock_source.py)
+проверяет (13dp–dy), corrected pointer cuts, proper-clock inverse jets,
+nonseparable quantile/source, whole-code cancellation, retained factory
+и Bernstein/source-scale identities. Он извлекает только pinned старые
+definitions; их root/heat/Lean suites не вызывает.
+[Receipt](sources/d0_af_star_full_lattice_2026-10-17/NATIVE_ADAPTIVE_CLOCK_SOURCE_RESULT.json)
+оставляет GR_closed=false и exact_compiled_roots=false. Исправленный
+local sourced-wave checker отдельно проверяет действительный G²,
+новые coupling/source и зависимый finite-Euler balance.
+
+### 6.45. Девять null rows убирают volume ambiguity; proper-clock source проверяется отдельно
+
+Параллельный `50a2729c` [quantile owner §§8–11](A4D_GOLDEN_QUANTILE_CLOCK_SAME_CAR_VOLUME_BRIDGE_2026_10_18.md)
+добавил genuine moving-C² quadrature, quantitative type-preserving AF
+approximation of Diff, exact Kerr–Schild volume path и matched-RIGHT
+first-source identity. Эти результаты сохранены без нового выбора цены.
+При e_s=e(I+s k⊗g(k,·)/2), g(k,k)=0, имеем det e_s=det e точно.
+Поэтому density-based quantile placement не движется. На matched
+(P_i^L−P_i^R)Ψ*=0 genuine fixed-RIGHT tangent также имеет Dμ_i^L=0.
+Последнее — conormal first-jet, не решение остальных joint Euler rows.
+
+Девять null contractions имеют kernel ровно span(g). Если ACTUAL
+полный reduced source даёт девять уравнений Ric(k,k)=κT_own(k,k),
+а собственные material equations дают ∇T_own=0, то tensor algebra
+и contracted Bianchi действительно дают все10 G+Λg=κT_own, Λ constant.
+Это полезный обход отдельного volume selector, условный на именно
+этих динамических источниках; положительный CAR detector не является
+уже решённым gravitational equation.
+
+У обхода есть точная clock граница. Уже на e=I, k=(1,1,0,0),
+ℓ=ηk=(1,−1,0,0), fixed internal n=e₀ путь выше имеет
+
+    det e_s=1, g_s=η+sℓℓᵀ,
+    α_s=e_sᵀηn=e₀+sℓ/2, D_sα=ℓ/2≠0.           (13dz)
+
+Unit proper-clock identity αᵀqα=1 при этом сохраняется. Значит
+исчезновение volume/quantile source не обнуляет actual clock/observer
+price. Owner §11 сам сохраняет эту границу; nine-null route и
+source-priced clock consumer §6.43 дополняют друг друга. Type-preserving
+finite permutations также нельзя дифференцировать в nonzero Ward flow.
+Следующий решающий тест — SAME полного источника на этих null tangents
+после настоящих внутренних equations, с actual clock и independently
+derived matter. Прежняя [homogeneous reduction](A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md)
+уже исключила pure EH+volume+sameR на своём условном stored chart;
+одна кинематическая volume identity её цену не исправляет.
+Новый bounded consumer проверяет (13dz), не повторяя старый root suite.
+
 ## 7. Вся более ранняя история остаётся своим источником
 
 Пятиисходный cut выше полон для указанного испытания. Если реальная
