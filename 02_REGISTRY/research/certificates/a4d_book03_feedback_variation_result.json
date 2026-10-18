@@ -1,0 +1,32 @@
+{
+  "book03_git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+  "book03_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+  "check_count": 18,
+  "checks": [
+    "projector_P_tangent",
+    "projector_P_tangent_hermitian",
+    "projector_P_tangent_diagonal_blocks",
+    "projector_Q_tangent",
+    "projector_Q_tangent_hermitian",
+    "projector_Q_tangent_diagonal_blocks",
+    "unitary_tangent_skew",
+    "full_P_U_Q_product_rule",
+    "base_feedback_operator",
+    "wrong_unitary_commutator_sign_rejected",
+    "full_feedback_source_including_dz",
+    "dropping_fugacity_leg_rejected",
+    "finite_UQ_representation_redundancy",
+    "tangent_UQ_redundancy",
+    "same_base_pullback_operator",
+    "constant_pullback_zero_source",
+    "moving_pullback_nonzero_source_exact",
+    "same_base_formula_control"
+  ],
+  "full_book_price_closed": false,
+  "matter_ward_derived": false,
+  "native_field_map_derived": false,
+  "physical_gr_closed": false,
+  "python": "3.9.6",
+  "status": "PASS_SCOPED_BOOK03_OPERATOR_VARIATION",
+  "sympy": "1.14.0"
+}
