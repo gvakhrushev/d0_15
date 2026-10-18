@@ -358,3 +358,98 @@ In particular the inability of right-preserving dynamics to change the center **
 **Exact independent control:** symbolically
 \(D\Gamma_{\rm fixed}-D\Gamma_{\rm free}=(u-D_X/D)(D D_X/D_X-D D_Y/D_Y)/\ell\) and
 \(\ell(\Gamma_{\rm free}-\Gamma_{\rm fixed})=D_{\rm KL}(u\|D_X/D)\). The checker verifies both algebraically and the exact Fibonacci ratio (A25) for levels \(N=0,\dots,11\). This is a real source-composition lemma, not a second matter stress or another 40-row root catalogue.
+
+
+## 11. Concrete fixed, field-independent REAL preparation on the full paired GNS: shift seed instead of a \(\Psi(g)\) oracle
+
+The doubled-GNS §10 suggests a stronger **positive mathematical preparation**: produce the *canonical-right-center, uniform-within-center paired law* by a finite controlled **LEFT permutation**, retaining a coherent work seed. This uses no cross-center mixer, no independent matter copy and no field-dependent state preparation. It closes the within-center probability-accessibility problem on the supplied addressed real controller class; native physical gate/seed admission and cost remain open.
+
+### 11.1. Right marginal exactly unchanged, all pair labels active
+
+On one actual block of size \(a\), let \(H_a=\mathbb C^a_L\otimes\mathbb C^a_R\), with canonical trace vector
+\[
+|\Omega_a\rangle=a^{-1/2}\sum_{j=0}^{a-1}|j\rangle_L|j\rangle_R.
+\]
+For \(s\in\mathbb Z/a\mathbb Z\), let \(V_s|j\rangle_L=|j+s\bmod a\rangle_L\); \(V_s\) is a REAL permutation. Prepare one \(\lceil\log_2a\rceil\)-bit work seed in the state \(a^{-1/2}\sum_s|s\rangle_W\), apply the controlled LEFT shift \(V_s\otimes I_R\), and **retain** the work seed:
+\[
+|\Xi_a\rangle=\frac1{\sqrt a}\sum_{s=0}^{a-1}
+  |s\rangle_W\otimes(V_s\otimes I_R)|\Omega_a\rangle.
+\tag{A28}
+\]
+Both maps are isometries of the **full** matrix-unit GNS carrier plus work (complete them on invalid seed words, rather than discarding those words). The RIGHT reduced state is still \(I_a/a\) exactly, because every conditional \(V_s\) acts only on LEFT.
+
+Measuring BOTH original path indices \((i,j)\) in their common block gives
+\[
+\boxed{\Pr(i,j)=a^{-2}\quad\text{for all }i,j=0,\ldots,a-1.}
+\tag{A29}
+\]
+This is not the unjustified assumption of a real Hadamard with all entries equal magnitude: it is a **recorded mixture of cyclic permutations**. Indeed every pair \((i,j)\) corresponds to the **unique** seed \(s=i-j\bmod a\). Thus, even if the work seed is read as an additional complete classical word, it is a deterministic function of \((i,j)\):
+\[
+H(S,i,j)=H(i,j),\qquad H(S|i,j)=0.                  \tag{A30}
+\]
+The work *execution/preparation price* has not been shown field-independent or free; (A30) is solely a fact about the true measured same-history Shannon partition.
+
+Do the same in the X and Y blocks using the **one existing canonical AF trace vector** with center amplitudes \(\sqrt{u_N}\), \(\sqrt{v_N}\), \(u_N=a_Np^{N+1}\), \(v_N=b_Np^{N+2}\). The block-controlled seed carries its block type, and no cross-block operator is used. On the original full paired GNS the resulting field-independent **measured probabilities** are
+\[
+r_i^0=
+\begin{cases}
+u_N/a_N^2, & i=(\alpha,\beta)\in I_X,\\
+v_N/b_N^2, & i=(\alpha,\beta)\in I_Y.
+\end{cases}\tag{A31}
+\]
+The entire noncommutative RIGHT marginal stays the canonical one until the physical paired readout. The latter dephases RIGHT path coherences; the independent [two-sided owner (F14–F15)](A4D_GNS_TWO_SIDED_PATH_UNFOLDING_AND_ARCHIVE_SOURCE_2026_10_18.md) proves that the already identified **commuting LEFT geometric effects and their derivatives** are source-preserved under this complete RIGHT readout. There is no claim of full right-archive non-disturbance.
+
+This replaces the false shortcut “a right-linear REAL orthogonal on the original maximally entangled GNS cyclic vector can produce arbitrary new left probabilities”: a *single unconditioned right-linear unitary* on \(H_a\) preserves the maximally mixed LEFT marginal \(I_a/a\). The recorded seed in (A28) instead generates the required uniform **paired matrix-unit outcomes**, keeping that LEFT marginal uniform while activating all right indices. Field-independent preparation needs no \(\Psi(g)\) oracle.
+
+### 11.2. Fixed preparation already has the correct leading geometric first source
+
+Keep the **actual geometry-dependent AF effect** \(a_i=a_0+c f_i(y)\) in the already owned five-outcome terminal programme; \(a_0=p^2\), \(c=p^2t^2\). Fix the success preparation at its flat-vacuum balanced value
+\[
+s_*=\frac{2e^{h(a_0)}}{1+2e^{h(a_0)}},\qquad
+b_*=1/2,
+\]
+rather than assuming a field-dependent preparation solver. Under the conditional physical registration of the paired leaves, the complete measured **Book SAME-history Shannon** price of this explicitly fixed input is
+\[
+\boxed{
+\ell S_{\rm seed}(y)
+ =H(r^0)+h(s_*)+s_*\log2
+ +s_*\sum_i r_i^0 h(a_0+c f_i(y)),
+\quad \ell=\log\varphi.
+}
+\tag{A32}
+\]
+All failure and four success flags, the real work seed, and both AF blocks remain registered; by (A30), the seed does not add an *independent measured word entropy* after the complete pair record. Other true programme/controller costs cannot be dropped by this identity.
+
+For every smooth field tangent \(V\), **without differentiating any prepared state**,
+\[
+\boxed{
+D_VS_{\rm seed}
+=\frac{s_*c}{\ell}\sum_i r_i^0 h'(a_i)D_V f_i.
+}
+\tag{A33}
+\]
+The free fully stationary paired-history source from [two-sided (F9–F10)](A4D_GNS_TWO_SIDED_PATH_UNFOLDING_AND_ARCHIVE_SOURCE_2026_10_18.md) is
+\[
+D_V\Gamma_{\rm pair}
+=\frac c\ell\sum_i\frac{z(a_i)}{\sum_jz(a_j)}
+s(a_i)h'(a_i)D_V f_i,\quad
+s(a)=\frac{2e^{h(a)}}{z(a)},\quad z(a)=1+2e^{h(a)}.
+\tag{A34}
+\]
+At \(f_i=0\), \(s_*h'(a_0)=s_*\ell\), and the only source difference is the small canonical-vs-uniform paired-center defect (A25). On a common compact field chart with uniformly bounded \(|f_i|,|D_V f_i|\) and \(a_i\) in an interior positive interval, bounded derivatives of \(z,h',s\) and the normalized pair probabilities imply
+\[
+\boxed{
+|D_V(S_{\rm seed}-\Gamma_{\rm pair})|
+\le C_V\,c\bigl(p^{2N}+c\bigr),
+}
+\tag{A35}
+\]
+where \(C_V\) is independent of the number \(a_N^2+b_N^2\) of paired GNS outcomes. After the already owned positive geometric *source-comparison normalization* by \(c\), the difference is \(O(p^{2N}+t^2)\). This is a **positive explicit, field-independent state and preparation recipe**, not a statement of exact finite joint-criticality: at nonzero \(f_i\), frozen \(r_i,s_*\) do not solve all preparation Euler equations. Their positive-probability stationary contrasts are \(O(p^{2N}+c)\); source-controlled GR recovery must still keep the complete work/factory rows and their inverse/reconstruction factors.
+
+This route therefore does NOT require either a physically exact cross-block mixer at every \(N\) or an external \(\Psi_*(g)\) preparation oracle to approximate the **geometric** source on the declared two-sided readout class. It requires physical **admission and source-priced compilation** of (A28), the actual LEFT+RIGHT classical pair readout and the same-history Book binding, and independent matter/clock equations. Importantly the work register can no longer be described as “free”: (A30) addresses pointer entropy alone, not the energetic/ActionProtocol execution cost.
+
+### 11.3. Decisive checks, not a new catalogue
+
+The local exact combinatorial control runs on the original block sizes \(a_N=F_{N+2},b_N=F_{N+1}\), \(N=1,\ldots,7\): every shift/pair relation is bijective, \(\sum r_i^0=1\), every RIGHT marginal equals the canonical one, and the work seed is determined by the measured pair. It then compares (A33) to (A34) for small, bounded inhomogeneous sources and verifies the \(\delta_N+c\) source budget. This verifies a **fixed-state, full paired-pointer** source result; it is not a C² theorem across invalid-word rank births, an exact physical native gate synthesis, or an Einstein-with-matter theorem.
+
+**Next physical consumer:** find an admitted addressable implementation of the controlled LEFT shift on the *legal path-code*, prepare and retain the uniform finite seed without smuggling a new prior, and compute its actual complete work/source under the same Book cost. The existing full-operator REAL compiler can approximate supplied controls but does not authorize LEFT wires or select the seed. If those source terms vanish or are controlled in the normalized joint limit, consume (A35) together with the full-lattice C² geometric recovery; otherwise this mathematically successful route must remain conditional.
