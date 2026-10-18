@@ -114,3 +114,47 @@ The next **positive** consuming proof is now sharp: provide an admitted *active*
 `python3 02_REGISTRY/research/certificates/a4d_raw_julia_blank_leaf_postprocessing_check.py`
 
 The script verifies the literal Julia two-leading-row completeness identity in \(\mathbb Q(\sqrt5)\), strict finite blank floors, the nonzero finite-\(T\) limit, the optimal 2-leaf saturating POVM control and the nonzero entropy-source contrast. The analytic proofs above apply to arbitrary finite-dimensional POVMs and every native 128 Kraus word, not just its two-mode diagonal test. No full Lean, huge raw-history enumeration or unrelated GR suite is claimed.
+
+
+## 7. Stronger same-AF theorem: the old bimodule recorder cannot see noncentral LEFT leaves
+
+The previous blank theorem addresses the raw **Julia128** tape and requires a stated common-carrier pullback. There is a distinct, stronger exact obstruction already on the **native Fibonacci AF/GNS carrier**, with no Julia/AF identification.
+
+In [A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md), §2–3, the four native maps \(V_j\) intertwine *both* old left and old right matrix multiplication. Their range projection \(R=VV^\dagger\) therefore reduces the two old represented *-algebras. The actual full working-operator maps are
+\[
+W=V(U\otimes I)V^\dagger+(I-R),\qquad
+P_f=V(P\otimes I)V^\dagger,\qquad
+B_f=V(B_0\otimes I)V^\dagger .
+\tag{A9}
+\]
+Consequently all three operators commute with the entire old LEFT algebra \(L(A_n)\) **and** old RIGHT algebra \(R(A_n)\). So does every finite word or instrument effect built solely from them and apparatus-only controls that also commute with the old LEFT action. This is exact for every number of rounds, not an IR statement.
+
+For \(A_n=M_a(\mathbb C)\oplus M_b(\mathbb C)\), consider two distinct diagonal minimal projections \(P_i,P_j\) in one simple block of size at least two, transported into the fine GNS. Choose the old LEFT unitary \(U_{ij}=L(\mathrm{swap}_{ij})\). It exchanges their subspaces:
+\[
+U_{ij}P_iU_{ij}^\dagger=P_j,\qquad P_iP_j=0.
+\]
+Any effect \(F_i\) constructed by classical postprocessing of the neutral recorder satisfies \([F_i,U_{ij}]=0\). The operator norm therefore obeys
+\[
+\boxed{
+1=\|P_i-P_j\|_{\rm op}
+\le\|P_i-F_i\|_{\rm op}+\|F_i-P_j\|_{\rm op}
+=2\|P_i-F_i\|_{\rm op}.
+}
+\tag{A10}
+\]
+Thus
+\[
+\boxed{\|F_i-P_i\|_{\rm op}\ge\tfrac12}
+\]
+for **every** old-bimodule-neutral recording protocol, no matter how many neutral rounds are executed. Some normalized input then differs in the target Born probability by at least \(1/2\). This is a stronger obstruction than (A5), but applies to the narrower, genuinely old-bimodule-neutral AF apparatus class. It does not prohibit measuring central block projectors, which already commute with all old LEFT operators; it requires a noncentral leaf and thus a block with dimension at least two.
+
+This identifies the minimal algebraic type of an admissible repair without demanding new physics by notation. A real LEFT-addressing operation \(C_Y=\sum_iP_i\otimes X^{c_i}\), with distinct codes, satisfies
+\[
+[C_Y,R(A_n)\otimes I_Y]=0,\qquad
+[C_Y,L(A_n)\otimes I_Y]\ne0.                             \tag{A11}
+\]
+It is **RIGHT-linear but not LEFT-neutral**. Exactly this class is realized *conditionally on active LEFT wire addressability* by [full-source §6.13](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md). The canonical unmodified \(W,P_f,B_f\) cannot substitute for it; the full right-module endomorphism algebra permits the operation mathematically but does not select its physical performance or whole-work price.
+
+**Strategic fork:** the remaining execution/admission lemma is no longer “does Fibonacci memory exist?” or “does Julia have enough outcomes?”. It is the specific operational forcing/admission of a **RIGHT-preserving, LEFT-sensitive** test, plus the actual SAME-history price and its stationary preparation. If D0 only admits old-bimodule-neutral record operations, its full fine-leaf source (13n) is not physically derivable by passive recording, and the non-Einstein \(\chi\) branch remains. If such an active test is admitted and physically selected, the previously proved source-preserving construction supplies the needed next conditional step; matter and global GR still remain.
+
+**Independent exact control:** on \(H=\mathbb C^2\otimes\mathbb C^2\) set \(P_i=|i\rangle\langle i|\otimes I\), \(U=X\otimes I\), \(F=I\otimes D\), \(0\preceq D\preceq I\). Then \([F,U]=0\), \(UP_0U^\dagger=P_1\) and \(\|F-P_0\|_{\rm op}\ge1/2\), with equality at \(D=I/2\). This is a finite control of (A10), not a replacement for the general bimodule intertwining already proved upstream.
