@@ -14,8 +14,8 @@ Scientific acceptance and live execution are separate. Historical research does 
 |---|---|---|---|
 | constitutive | native | none; conclusion still needs accepted evidence | none |
 | native_sector | native | constitutive | none |
-| probe_law | geometry | none; conclusion still needs accepted evidence | none |
-| contrast_refinement_transfer | native | native_sector, probe_law | none |
+| probe_law | geometry | none; conclusion still needs accepted evidence | endpoint-probe-to-geometric-law |
+| contrast_refinement_transfer | native | native_sector | none |
 | matter_source_ward | native | native_sector, constitutive | none |
 | on_shell_stationarity | native | contrast_refinement_transfer, matter_source_ward | none |
 | gauge_range | refinement | native_sector, matter_source_ward | none |
