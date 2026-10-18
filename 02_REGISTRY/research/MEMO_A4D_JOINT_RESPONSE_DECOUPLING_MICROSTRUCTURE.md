@@ -1,6 +1,40 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
 
+## 18 October 2026 — FIRST exact nonvacuum CAR16 Einstein source from ONE locally controlled Book feedback
+
+**Direct positive consuming result, SAME executing integrator #334:** [A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md), with [finite CAR16 and full-trace source checker](sources/d0_local_null_scalar_einstein_2026-10-18/check_local_null_scalar_source.py). A prior [global scene source](A4D_ONE_FEEDBACK_NONFLAT_NULL_SCALAR_EINSTEIN_SOURCE_2026_10_18.md) is superseded as the preferred **LOCAL** operator composition. Unlike the previous vacuum-only 40-row pp-wave, there is now an independent nonzero **matter source from the SAME Book03 two-tick J₂ determinant**—not from an added scalar Lagrangian:
+\[
+q_x=\tfrac1{16}\mathrm{Tr}_{16}\Gamma((\widehat e_x^{-1})D^+\psi)^2
+=\widehat g_x^{\mu\nu}D^+_\mu\psi D^+_\nu\psi,\quad
+\Gamma_a=c_a+\eta_{aa}c_a^\top.
+\]
+Here \(\psi\) is the already available scalar grade0 raw matter input on a declared smoothly coded field chart; every other CAR16 component and reference128 remains. Native old LEFT path probabilities \(w_x>0\) and the source-compatible CAR metric \(\widehat e_x=\sqrt{w_x/\bar w}\,e_x\) give the **exact finite** source identities
+\(\sum_i\pi_i f_i=\bar w\sum_x\widehat f_x\) AND
+\(\sum_i\pi_i (\bar w/w_{x(i)})q_x=\bar w\sum_xq_x\).
+This unique inverse-density matter readout removes real unequal golden weights at the level of true metric/matter Euler, not by replacing the Born distribution.
+
+On **one** original old×scene feedback carrier, scene is controlled by actual old LEFT address (not forbidden RIGHT archive):
+\(E_i=p²(1+t²f_i)\),
+\(B_i=(p+\sigma p²t²(\bar w/w_x)q_x)^2I_{528}\),
+with 22448 scene complement modes and all AF/dark events retained. Its **single complete operator trace-log** factorizes into the original two \(Q_i,R_i\) return pencils, includes genuine \(-K\mathrm{Tr}\log Q_i\), and gives on \(f_i=q_i=0\)
+\[
+DJ_{2,\mathrm{local}}/(\nu K)
+=\bar w C_\star D\sum_x(\widehat f_x+\lambda_\sigma q_x),\quad
+\lambda_\sigma(z)=\sigma\frac{1+p^6-z(4p³+2p^8)}{2p³(1-zp²)}.
+\]
+For actual \(z=2^{-20}\), the two existing Golden orientation signs give \(\lambda_\pm=\pm2.236066798693\ldots\); the strict \(z\to0\) SOURCE RATIO, not exact finite coefficient, is \(\pm\sqrt5\). Both controller angles are on the original same Golden G-axis with derivative ratio \(2\sigma p\)—no fitted matter coupling or new gate matrix type.
+
+**Genuine EXACT FINITE sourced root:** on the already-owned full-independent Lorentz pp-wave coframe/link family with \(H=A x²+2W_\times xy+D y²\), set the original scalar matter profile \(\psi=s\,u\) (nonzero null gradient). Then every \(q_x=0\) while its true first coframe source has ONLY \(\partial q_x/\partial\widehat v_v^+=-2s²/h\); \(\sum_xD_\psi q_x=2s\sum_x D_v^+\delta\psi=0\) by exact discrete Stokes. The star owner's EXACT 40-row Euler table gives the remaining coframe source \(-(A+D)/h\), two proper-link rows killed by \(c_x=-A/2,c_y=-D/2\), all other rows0. Hence the SAME complete locally controlled J₂ has all 16 coframe, 24 connection AND independent scalar matter Euler rows exactly zero whenever
+\[
+A+D=-2\lambda_\sigma(z)s².
+\]
+For the reverse Golden orientation \(\sigma=-1\), \(\operatorname{Ric}_{uu}=A+D=+4.472133597386\ldots s²>0\), and the two tracefree Weyl polarizations \(W_+,W_\times\) remain free. All true golden weights and full16/reference128 remain. This is **nonvacuum Lorentz Einstein-null-scalar recovery** on fixed-collar local lattice at EVERY h, not just a curvature coefficient or restricted 25-dimensional IFT. At the mathematical level the native matter term has zero on-shell VALUE but nonzero on-shell METRIC SOURCE; it is produced by \(\Gamma(k)^2\) and the scene variation of the SAME original logdet.
+
+**Scope:** exact one-operator mathematical AF×scene programme with specified LEFT-coded field-to-scene control, NOT the compulsory whole D0 Cost−Info including original v8 heat/R, nor a claim that a fixed physical D0 decoder reads unknown quantum amplitudes without measurement. Native material/source code generation, real work/cut/old-history price, sign/orientation selection, independent other matter/spin dynamics and original all-site raw h⁻² fixed-g/tau #216 are not promoted. The new result *closes a previously absent nonzero sourced Einstein solution* in the very same geometric programme, ready to be consumed by whole-programme native admission.
+
+
+
 ## 18 October 2026 — new POSITIVE closure: AF geometric source and operational CAR16 now read ONE metric
 
 [Exact density-dressed CAR/Einstein metric consumer](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md) consumes the accepted weighted \(\star\) stationarity, the genuine old AF leaf masses and the actual native full16 raising reconstruction. At **EVERY finite anchor**, the measured-weight / relative-tetrad composite \(\widehat e_x=\sqrt{\mu_x/\bar\mu}\,e_x\) gives
