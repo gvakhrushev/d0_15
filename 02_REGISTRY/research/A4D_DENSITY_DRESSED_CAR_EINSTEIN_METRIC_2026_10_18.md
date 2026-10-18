@@ -118,6 +118,30 @@ X'_{x,r}=\sqrt{\chi_x}\,X_{x,r},
 
 Следуя (8), \(\widehat X'=\widehat X\), \(\widehat q'=\widehat q\), \(\widehat g'=\widehat g\) **точно на всей finite site family (5)**. Таким образом метрика, выбранная *weighted gravitational source* (1)–(4), **совпадает с составной метрикой, считываемой из настоящего полного CAR16 и настоящих old-history probabilities после (единственной) site-normalization (9)**. Её не нужно объявлять равной внешне выбранной metric g и не требуется добавлять ten correction components к Einstein.
 
+**Полные действительные first jets (без frozen site weights).** При любом движущемся \(\mu\), coframe, Lorentz \(M\), observer \(J\) и подготовке, с фиксированным \(\bar\mu\), обычное chain rule даёт
+\[
+\boxed{
+D\widehat X[V]=\sqrt{\bar\mu/\mu}
+       \left(DX[V]-\tfrac12 X\,D\log\mu[V]\right),}
+\]
+\[
+\boxed{
+D\widehat q^{rs}[V]=\frac{\bar\mu}{\mu}
+   \left(Dq^{rs}[V]-q^{rs}D\log\mu[V]\right),\quad
+D\widehat g_{rs}[V]=\frac{\mu}{\bar\mu}
+   \left(Dg_{rs}[V]+g_{rs}D\log\mu[V]\right).
+}\tag{9a}
+\]
+Здесь \(Dq\) включает **оба** полных \(Du\) и \(DJ\); \(DX\) содержит \(\Lambda(DM)\), а не лишь frozen-Riemannian metric variation. Эти формулы сохраняют весовой edge-jet и его moving-preparation часть при подстановке настоящего источника. Если \(\bar\mu\) сам меняется физически, добавляется \(\tfrac12D\log\bar\mu\) в \(D\widehat X/\widehat X\); обозначение «фиксированный \(\bar\mu\)» является частью этого source chart.
+
+**Все десять метрических вариаций остаются реальными.** При невырожденном \(\widehat e\), линейная карта \(\delta\widehat e\mapsto\delta\widehat g\) имеет прежнюю явную правую обратную
+\[
+W_{\widehat e}(V)=\frac12\widehat e\,\widehat g^{-1}V,
+\qquad
+D_{\widehat e}\widehat g[W_{\widehat e}(V)]=V
+\]
+для любой симметричной \(V_{\mu\nu}\) (из-за \(e^T\eta e\)). При фиксированной \(\mu\) требуемая \(\delta e=\sqrt{\bar\mu/\mu}\,W_{\widehat e}(V)\) реализует такой \(V\), поэтому \(\chi\)-компенсатор не уничтожает lapse/shift или одну из шести пространственных metric rows. Он только отделяет лишнее **представление** одного gravitational source от десяти действительных ковекторов. Физический native image этих тестов требует собственного readout/admission contract, как и в исходном owner.
+
 **Уникальность показателя.** В классе local density-power normalizations \(Y_x=\mu_x^\alpha X_x\) точная компенсационная инвариантность при ВСЕХ \(\chi_x>0\) требует \(\chi_x^{\alpha+1/2}=1\), значит \(\alpha=-1/2\) **однозначно**. Глобальный \(\sqrt{\bar\mu}\) фиксирует исходную normalization convention этого golden cost cut; он НЕ fit Newton constant и не добавляется в физическое действие. Источник выбрал scale weight \(1/2\), а не удобное после-факта metric dressing.
 
 Ещё сильнее: на полном 16-grade CAR, пусть
