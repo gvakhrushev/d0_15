@@ -63,6 +63,32 @@ axis, with exact jet `(sqrt(p)/2)t² T_(p²)J DF_star`. Its native geometric
 SELECT and complete execution source remain the primitive interface;
 fixed-gate approximation cannot manufacture a moving query.
 
+The same owner's §§7.1–8.3 now resolve the actual composition test.
+The scene's528-dimensional cut belongs to a full22976-dimensional
+scene-history/CAR space; it is not a separate matter factor. Two literal
+old-v8 outcomes exclude simultaneous b_y=1/2 on a proposed gluing that
+preserves that CAR and its pure-time block. The correct next equation is
+the single full-history preparation Euler, not independent branch lifts.
+A genuine causal prefix would remove its old-weight source, but rounds
+of a global four-dimensional Dirac instrument do not supply that causal
+embedding. Geometrically, the star query is exactly a full16 chiral trace
+of eight CAR conjugation words. Its trace resource and actual inverse
+must be retained. Nonidentity pp-wave unipotent loops cannot occur in the
+old positive-isometric return domain, even with moving pairings. The
+existing full-Lorentz positive-adjoint/Julia interface is therefore the
+required consumer of that curved family; old-unitary compilation cannot
+serve as its admission proof.
+
+Section7.3 now solves one actual native128 preparation equation directly:
+I16/16 has a scalar full entropy gradient, with every label retained and
+a rank16 purification in the full reference128 space. Its complete
+pure-time source is strictly positive in ν for every preparation on that
+block. Thus this real preparation branch is not a free-ν joint root;
+independent branch balancing is unnecessary and cannot repair that row.
+This is an exact finite UV-block statement, not a continuum exclusion or
+a result for arbitrary momentum supports. The next common-carrier source
+must preserve the full constraints and use the actual full-Lorentz domain.
+
 The [whole-source normal form](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
 now joins the full AF/scene feedback to the existing exact logdet and
 density/coframe owners. It preserves all joint stationary equations away

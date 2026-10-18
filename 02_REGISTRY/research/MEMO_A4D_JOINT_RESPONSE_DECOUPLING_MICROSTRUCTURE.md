@@ -43,6 +43,26 @@ equations cannot cancel that term. This is a solved full source for the
 declared configured experiment, not a claim that every native history has
 that source. The original fixed-g/tau/all-ten raw h^-2 terminal remains OPEN.
 
+The actual native-interface continuation in the same owner, §§7.1–8.3,
+now prevents two invalid compositions. The scene cut528 sits inside the
+full22976 scene-history/CAR carrier; two genuine v8 outcomes rule out
+independent b_y=1/2 balancing under a CAR-preserving pure-time gluing.
+The full retained-history operator Euler must be solved instead.
+The geometric star query has an exact eight-word full16 CAR expression,
+with a required trace readout and algebraic inverse. A nonflat pp-wave
+loop is unipotent and cannot preserve any positive pairing, so it cannot
+enter the old stored-unitary domain. Its remaining execution/source
+consumer is the existing full-Lorentz positive-adjoint/Julia interface,
+including every defect/failure outcome.
+
+The same continuation also solves the actual full128 pure-time
+preparation equation: I16/16 gives a scalar entropy gradient, retaining
+all outcomes and reference128 (marginal rank16). The complete ν-source
+is strictly positive for every density on this one Fourier block.
+Consequently no free-ν joint root is hidden in a different preparation
+of that block. Other supports, constraints and the continuum are outside
+this finite UV statement; full GR is not inferred or excluded.
+
 ## 17 October 2026 — whole-source synthesis beyond vacuum equivalence
 
 The [full AF source normal form](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)

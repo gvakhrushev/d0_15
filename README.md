@@ -18,6 +18,14 @@ refinement limit**. This target remains open.
 | [Common research / Draft #334](02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md) | Retains the full source, history, matter, preparation, geometry and joint-root results with their scopes. Scoped obstructions change the consuming arrow; they do not erase the positive construction or establish a general GR no-go. |
 | Next consuming proof | Derive the geometry-controlled programme from the **actual native operations and complete history**, retaining every earlier record and execution source. Use the solved configured preparation equations and existing Palatini/Cartan consumers. Establish independent matter coupling and global physical recovery on that same carrier. |
 
+The latest native-interface calculation solves a complete preparation equation
+for the real128-outcome instrument. Its full source rules out a free scale
+root on that pure-time block for every preparation. The geometric query
+also has an exact CAR-word expression, while the curved pp-wave family
+requires the full-Lorentz Julia interface: the older positive-unitary
+returns cannot carry its nontrivial unipotent loops. These results change
+the next consuming step; full GR remains open.
+
 The original fixed-g/fixed-tau, all-ten unweighted raw h^-2/#216 task remains
 **OPEN with its exact terminal unchanged**. The [source-norm comparison](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md#5-точное-различие-двух-требований-к-пределу)
 distinguishes that stronger microscopic requirement from the separately stated

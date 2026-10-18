@@ -49,6 +49,20 @@ along one existing golden axis, with exact first jet
 physical choice and global/matter closure remain open. The checker consumes
 the actual controlled-gate and compiler owners, with a read-only default.
 
+Native-interface continuation: consume literal CAR/64 row definitions,
+the actual full22976 scene operator with cut528, the stored-unitary domain
+and full-Lorentz positive-adjoint owner. The eight-word star identity
+retains its full trace resource and inverse/adjoint distinction. Two actual
+Kraus outcomes disprove independent branchwise scene balancing for the
+specified CAR-preserving pure-time gluing; a nonidentity pp-wave loop
+cannot preserve a positive pairing. The next consumer is the single
+complete native-history preparation/source on the actual common carrier,
+and the existing full-Lorentz Julia extension with its defect outcomes.
+The disjoint bounded implementation adds only check_native_interfaces.py,
+check_native_pure_time_source.py and their named receipts in the same
+source directory. No historical replay or new task is required. Pure-time
+source scope, reference rank and all zero outcomes must remain explicit.
+
 ### Whole-source synthesis after the local vacuum result
 
 The user's next request is to try an end-to-end breakthrough, rather than

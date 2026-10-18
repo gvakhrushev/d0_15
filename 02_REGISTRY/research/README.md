@@ -17,6 +17,13 @@ Its full first source is a nonzero multiple of the existing weighted-star
 source on the vacuum family. The same periodic extension has scalar f=0
 globally; its fixed exterior geometric rows are not claimed stationary.
 Native programme selection, earlier history and physical matter remain open.
+Its native-interface continuation now solves the full128 pure-time
+preparation Euler and proves a strictly positive ν-source for every
+preparation on that block. It also gives the exact CAR-word star query
+and rules out embedding the curved unipotent family in old positive
+unitary returns. The current consumer is the full-Lorentz Julia source
+with its retained defect branches; the finite UV result is not a general
+GR no-go or a physical admission theorem.
 The [CAR/clock readout](sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md)
 recovers the original metric, without an Einstein-frame rescaling. The
 [regular-natural-source classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)
