@@ -49,8 +49,13 @@ def main() -> None:
         fail("field jet")
     if verdict["pin"] != chk.PIN:
         fail("pin")
+    if verdict["phase_fiber_versus_dressed_address"] is not True:
+        fail("index gap")
+    if verdict["phase_index"] == verdict["dressed_index"]:
+        fail("indexes collapsed")
 
     expect_fraud("rename", renamed=True)
+    expect_fraud("index identification", identify_phase_with_dressed_site=True)
     expect_fraud("force identity", force_identity=True)
     expect_fraud("q renamed to mu", claim_q_equals_mu=True)
     expect_fraud("equation 20 closed", close_equation_20=True)

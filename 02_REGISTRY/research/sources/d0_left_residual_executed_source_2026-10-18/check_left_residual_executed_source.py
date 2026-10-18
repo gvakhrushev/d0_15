@@ -89,7 +89,8 @@ def cocycle_gap() -> sp.Expr:
 def compare(force_identity: bool = False, renamed: bool = False,
             stress=None, einstein=None, claim_q_equals_mu: bool = False,
             close_equation_20: bool = False,
-            close_equation_28: bool = False) -> dict:
+            close_equation_28: bool = False,
+            identify_phase_with_dressed_site: bool = False) -> dict:
     phi = sp.simplify((1 + sp.sqrt(5)) / 2)
     pi0 = sp.simplify(sp.Rational(6, 5) * phi ** 2)
     must_zero(phi ** 2 - phi - 1, "phi is the golden unit")
@@ -176,6 +177,10 @@ def compare(force_identity: bool = False, renamed: bool = False,
         )
     if stress is not None and einstein is not None and same_tensor(stress, einstein):
         raise LeftResidualFraud("Einstein tensor copied into the stress")
+    if identify_phase_with_dressed_site:
+        raise LeftResidualFraud(
+            "phase fiber i mod 4 identified with the coframe site of (9)"
+        )
     if identity_holds == scoped_nogo or gr_derived:
         raise CheckFailure("verdict flags are inconsistent")
 
@@ -197,6 +202,9 @@ def compare(force_identity: bool = False, renamed: bool = False,
         "residual_descends_to_address": False,
         "row_sum_depends_on_sampling_measure": False,
         "word_field_jet": "0",
+        "phase_fiber_versus_dressed_address": True,
+        "phase_index": "archive phase i mod 4",
+        "dressed_index": "coframe site x of (9)",
     }
 
 
