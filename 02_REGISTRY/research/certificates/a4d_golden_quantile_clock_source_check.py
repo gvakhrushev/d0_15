@@ -212,6 +212,7 @@ columns=[(i,j) for i in range(4) for j in range(i,4)]
 probe=sp.Matrix([[(1 if i==j else 2)*v[i]*v[j]
                   for i,j in columns] for v in knull])
 assert probe.rank()==9
+assert probe[:,1:].det()==884736  # drop E_00: integer exact 9x9 minor
 null_tensor=sp.Matrix([1 if i==j==0 else
                        (-1 if i==j else 0) for i,j in columns])
 assert probe*null_tensor==sp.zeros(9,1)
