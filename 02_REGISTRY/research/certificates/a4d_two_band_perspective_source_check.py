@@ -67,6 +67,13 @@ for x in list(direct-H):
 require(s.sign(HFF)==-1 and s.sign(H.det())==1,
         "strict concavity at native diagnostic z")
 require(s.sign(HQQ)==-1, "strict negative matter diagonal")
+# In the two-variable Legendre representation the exact auxiliary
+# normal Hessian at the null point is -rho * H^(-1), positive definite
+# for every rho>0. No new physical degree of freedom is installed.
+Hdual=-H.inv()
+require(s.sign(Hdual[0,0])==1 and s.sign(Hdual.det())==1,
+        "no flat auxiliary normal mode at fixed fugacity/probe")
+
 
 # A genuine density perspective w*phi(F/rho,Q/rho):
 # density has NO first and NO mixed second source on the NULL star shell.
@@ -74,8 +81,6 @@ x, y, rho=s.symbols("x y rho",positive=True,real=True)
 g1,g2,h11,h12,h22=s.symbols("g1 g2 h11 h12 h22",real=True)
 quadratic = g1*x+g2*y+(h11*x*x+2*h12*x*y+h22*y*y)/(2*rho)
 zero={x:0,y:0}
-for der in [rho, rho,rho]:
-    pass
 require(s.simplify(s.diff(quadratic,rho).subs(zero))==0,
         "no direct density first source")
 require(s.simplify(s.diff(quadratic,rho,rho).subs(zero))==0,
@@ -172,6 +177,7 @@ receipt={
  "native_single_leaf_gradient":[float(s.N(GF,18)),float(s.N(GQ.subs(sigma,1),18))],
  "native_single_leaf_Hessian":[[float(s.N(vv,18)) for vv in row] for row in H.tolist()],
  "negative_definite_at_z_2^-20":True,
+ "positive_auxiliary_normal_Hessian":True,
  "Einstein_frame_gamma_at_null":"1 exact",
  "Legendre_Palatini_auxiliary_elimination":"PASS exact two-variable proof control",
  "density_null_first_and_cross_second_source":"ZERO",
