@@ -120,6 +120,33 @@ history/price, её native calibration law и допустимую оценку 
 
 ## 1. Итог сборки
 
+На входе `2bfb8974` §§8.22–8.25 потребляют положительную tagged-exit
+конструкцию #363 (`33911def`). Её exits реализуются конечным CNOT
+копированием сохранённой истории, а golden coin не требует нового угла.
+Выведен весь закон нефильтрованного сравнения с central/spatial failures.
+Его полная entropy mean имеет положительный endpoint scale source в
+доказанном weak window; selected logdet на той же вариации имеет
+отрицательный source. Central survival term усиливает положительный
+общий scale ответ. При fixed coins/controllers joint roots этой mean
+лежат в общем blank kernel; free controller rows остаются отдельными.
+Длинная история даёт явный положительный weighted count-source на
+фиксированном data carrier. Возможная фильтрация меняет весь закон;
+одной условной нормировкой это сравнение не исправляется.
+
+Таким образом, условный curvature ratio (1,1,−1) сохранён и execution
+стал конкретнее, но прямое связывание полной mean с logdet исключено
+для данного readout. Собственные normalization/clock строки logdet
+также не вынуждают double clock; volume coefficient3/2 сохраняется.
+Следующая необходимая связка — настоящая полная valuation либо native
+constraint с собственным источником. Она не заменяется назначенным
+остатком, другой stationary section или повторным подбором heat ratio.
+Проверка буквальных Book01/cocycle definitions уточняет эту связку:
+при complete w=q binding остаток B равен0. Реальное условное событие
+может иметь отрицательный normalization source, но вместе со всем
+взвешенным дополнением снова даёт прежнюю полную entropy mean.
+Перебор success cuts не добавляет независимый компенсатор. Настоящий
+другой physical raw partition или закон агрегации всё ещё требует вывода.
+
 На входе `4838004d` §§8.19–8.20 того же source owner потребляют полную
 native Julia/golden среднюю: при νR≤1/64 её scale source положителен
 для ЛЮБОЙ nonblank подготовки на полном data⊗reference128. Для каждой

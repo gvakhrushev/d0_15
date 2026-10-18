@@ -12,6 +12,47 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: execute and price the positive tagged comparator
+
+Input parent `2bfb8974` and disjoint producer #363 at
+`33911defe1607b94a895b455d3357ad2f3039e12`. Consume its positive
+orthogonal-exit/double-clock construction: give an explicit reversible
+word routing actual complete records, then derive the FULL golden
+comparison probability law and source, retaining every success/failure
+label, original data/CAR16 and reference128. Compare the complete mean
+with the selected normalized logdet on the same independent programme
+variations. Keep computational gate construction separate from physical
+admission and its resource cost. No new Info/action is introduced.
+
+An independent bounded review derives actual finite z and integer-depth
+price comparisons with the required raw normalizer, and checks common
+clock counterexamples before claiming a sign. Read-only assistants may
+work on these disjoint premises; root owns this brief, the existing
+full-source owner and strategic consumers. Decisive proof: native
+Kraus/golden algebra plus explicit label permutations, full normalization
+and a signed endpoint derivative; no repeated heat-ratio census, generic
+PSD replacement or old thermal/root/Lean replay. The consumer is the
+missing physical price/admission arrow for the positive (1,1,−1) source.
+
+Consumed in §§8.22–8.25: a copied history bank supplies the exact exit
+routing word; golden coins need no new angle preparation. The complete
+unfiltered comparison law, including both central exit sectors, is now
+explicit. Its endpoint strength source has the opposite sign to the
+selected logdet, and its common weak-strength source is positive away
+from the common blank kernel. The long-history leading count source is
+also explicit. Fixed coins/controllers are retained in the critical-set
+statement; free controller rows are separate. Raw conditioning is not
+matrix whitening. The selected logdet's normalization and clock rows
+do not force the double clock. Independent analytic review checked these
+identities and their boundaries without another numerical certificate.
+Next consume the literal existing Cost−Info definitions: derive the
+required negative binding/constraint source if owned, or exhibit precisely
+what those definitions leave free. Consumed in §8.25: complete w=q fixes
+B=0; a conditional negative normalizer returns to the same full entropy
+when every complement and moving branch weight is restored. The physical
+history/raw-response and aggregation binding remains unproved. No second
+valuation at the same fixed frame or fitted residual is introduced.
+
 ### 18 October: consume the full native record-mean preparation and scale source
 
 Input `4838004d`. Test the actual 128-outcome Julia/golden mean on the

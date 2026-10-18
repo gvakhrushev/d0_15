@@ -2,7 +2,34 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
-**Latest consumed transition, input `4838004d`:** §§8.19–8.20 of the
+**Latest consumed transition, input `2bfb8974`:** §§8.22–8.25 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the positive tagged-exit producer #363 at `33911def`. An explicit
+CNOT history-copy word replaces the new exit oracle, preserving every
+native outcome and reference128. For its complete unfiltered golden
+comparison, the entire probability law and entropy source are derived.
+Its endpoint strength derivative is positive in the owned weak window;
+the selected normalized logdet has a strictly negative derivative on
+that same variation. The central survival contribution also has the
+positive common-scale sign. With fixed coins/controllers, a joint root
+in that window must lie in the common blank kernel. The fixed-data
+long-history source is an explicit positive weighted count/Rayleigh term.
+
+Thus actual execution and the positive conditional curvature ratio are
+preserved, but direct complete-mean/logdet source binding is excluded for
+this readout. A filtered readout changes the law and requires its own
+complete calculation. Full raw normalization and clock rows do not select
+m=2n; the retained IR volume source still needs its actual compensator.
+The next consumer is the native valuation/constraint and its own source,
+including execution/preparation resources. No new Info or action is
+assigned. Physical GR, independent matter and global recovery remain open.
+The literal Book01/cocycle consumer fixes B=0 under complete w=q binding.
+A real conditional event can have a negative normalizer source, but
+restoring and weighting its complement gives the original full entropy;
+it does not provide an independent compensating B. The tagged success
+cut's own normalizer instead has a positive endpoint source.
+
+**Prior consumed transition, input `4838004d`:** §§8.19–8.20 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 prove a preparation-uniform source obstruction for the actual complete
 Julia/golden record mean. For every nonblank preparation on the full

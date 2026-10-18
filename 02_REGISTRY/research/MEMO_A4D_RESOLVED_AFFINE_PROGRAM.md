@@ -55,10 +55,24 @@ The separate positive
 [tagged-exit producer in #363 at33911def](https://github.com/gvakhrushev/d0_15/blob/33911defe1607b94a895b455d3357ad2f3039e12/02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md)
 supplies the conditional independent curvature-source ratio (1,1,−1)
 for its selected double-clock logdet, retaining volume coefficient3/2.
-Its tagged programme is distinct from the repeated native pointer mean;
-physical tag/clock resources and complete Cost−Info binding remain open.
-Consume it at that interface; do not repeat its solved ratio or discard
-the positive construction with the earlier failed serial comparison.
+Sections8.22–8.25 of the full-source owner now consume that interface.
+Exact CNOT copying of retained history bits realizes the exit tags; z=p²
+uses the existing golden coin. Addressability and supplied moving queries
+remain physical premises. The COMPLETE unfiltered golden comparison law
+is computed: its endpoint strength source has the opposite sign to the
+selected logdet. The central exit entropy cannot hide a compensator;
+the common weak-scale source is positive away from the common blank
+kernel, with fixed controllers. Its long-history count source is explicit.
+Raw success conditioning is not matrix whitening, and a filtered programme
+requires a different complete law. The selected logdet's full normalizer
+and clock rows do not force m=2n; its IR volume term remains. Consume the
+actual native valuation/constraint next, including its resource source.
+Actual conditional event normalizers have now been consumed as well:
+with their complements retained, their weighted prices reassemble the
+same full entropy and supply no independent remainder. A separately
+defined physical raw partition/aggregation is still an explicit premise.
+Do not repeat the solved curvature ratio or discard the positive
+construction with the earlier failed serial comparison.
 
 At input `e989bc01`, §§8.16–8.18 of the
 [same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)

@@ -6,6 +6,15 @@ Current integrator entrypoint: [D0 → GR strategic synthesis, updated 18 Octobe
 It connects foundational theorem owners to the positive AF-star nonlinear
 Einstein composition and states the remaining native/source and recovery
 premises. This is research in Draft #334, not a new accepted CORE claim.
+Latest consumer: §§8.22–8.25 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+give an exact history-copy routing word and the entire unfiltered golden
+law for #363's positive tagged comparison. Its complete entropy mean and
+selected logdet have opposite endpoint strength sources. All central
+exits, normalization and controller boundaries remain. The next proof is
+the actual native price/constraint binding; the conditional Einstein
+curvature ratio is preserved, but it does not establish that binding.
+
 Its [full local lattice recovery consumer](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
 now gives exact nonflat vacuum roots in every interior coframe/link direction,
 with fixed boundary data and actual golden weights; physical admission remains open.

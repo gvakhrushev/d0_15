@@ -37,6 +37,14 @@ finite first source с учётом work leakage. Отдельный U-oracle н
 математически отдельным. Настоящая полная цена/история и контролируемый
 предел должны пройти собственное сравнение источников.
 
+**Потреблённый tagged consumer §§8.22–8.25, вход `2bfb8974`:**
+положительный producer #363 получает явное CNOT exit-routing слово
+и полный golden pointer law. Его complete mean и selected logdet имеют
+противоположные endpoint scale sources. Сохранение всех central exits
+также даёт положительный общий weak-scale источник; необоснованная
+нормировка или выбор clock не устраняют это различие. Следующий
+переход требует выведенной полной valuation либо native constraint.
+
 **Физический D0→ОТО ещё не доказан:** physical admission исходных
 Julia/resources и обязательность именно этого процесса не выведены; не доказаны
 независимый общий matter-source, native constraint compatibility и глобальное
@@ -2775,7 +2783,403 @@ observer/matter/clock rows остаются явными предпосылка�
 Её отдельный owner/PR сохраняется; результаты не копируются под нового
 владельца и не повышаются до full physical GR.
 
+### 8.22. Положительная tagged-компарация: явное обратимое слово
+
+Вход parent `2bfb8974` и закреплённый producer #363 `33911def` выше.
+Его правильный условный curvature ratio (1,1,−1) сохраняется.
+Теперь снимем конкретный новый gate в его реализации: разделение
+полного blank и всех complementary records не требует спектрального
+оракула или вычисления square root от полного exit effect.
+
+Пусть U_(4,m) исполняет m настоящих Julia/golden rounds. Вся история
+h занимает L=7m bits, и единственный all-blank — h=0^L: port1 с
+blank label тоже является exit. Добавим один подготовленный blank-bank
+T из L bits, сохраняя исходный H. В объявленном
+[addressed G/CNOT grammar](A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md)
+два точных field-independent words имеют вид
+
+    R_0=Π_(j=1)^L CX(H_j→T_j), R_1=I,
+    R_0:(h,0)→(h,h), R_1:(h,0)→(h,0).              (112)
+
+В совместном (H,T) пространстве их ranges совпадают только при h=0;
+при h≠0 private0 и private1 ортогональны. Ни одна исходная метка не
+стирается. OR, blank-test и новый matter register здесь не нужны.
+
+Выберем уже имеющийся golden coin, то есть именно z=p², a=1−z=p,
+`G|0>=sqrt(p)|0>+p|1>`. На fresh coin c определим logical word
+`Y_i=R_i controlled_c(U_(4,m)) G_c`. Здесь U исполняется при c=1;
+при c=0 все history/tag registers остаются blank и сохраняются.
+Тогда на подготовленном code
+
+    Y_i*Y_i=I, Y_1*Y_0=aI+z B_4^(2m)=E_4.           (113)
+
+Это следует из суммы ВСЕХ native history Kraus; surviving cross
+содержит только истинное blank word B_4^m. Complement не заменён
+независимым sqrt(I−B_4^(2m)). Для отдельного overlap register
+`γ_0=|0>`, `γ_1=G|0>` имеем `<γ_1,γ_0>=sqrt(p)`.
+
+На outer coin b приготовим тем же G central/spatial ветвь. В b=0
+исполним γ_i⊗Y_i, в b=1 — весь настоящий endpoint U_(i,n), включая
+его complementary words. Один private flag f отмечает endpoint i:
+для i=0 он остаётся0, для i=1 применяется CX(b→f).
+Полученные полные code isometries Z_i удовлетворяют
+
+    Z_i*Z_i=I, Z_1*Z_0=a sqrt(p) E_4.                (114)
+
+Выделенный raw cut P_raw сохраняет всю b=0 ветвь и только настоящее
+spatial blank в b=1. Для `X_i=P_raw Z_i`:
+
+    G_i=X_i*X_i=aI+z B_i^(2n),
+    X_1*X_0=a sqrt(p) E_4.                           (115)
+
+Spatial failures остаются в I−P_raw. Private endpoint flag убирает
+их cross вместе со spatial success cross; производные по endpoint
+программам в (114)–(115) поэтому точно нулевые. Это реализация
+algebraic tagging producer, а не новый выбор curvature insertion.
+
+Логическая ширина сверху:14m+7n+4 fresh bits сверх прежних data и
+reference128 (central history, его tag copy, spatial history и четыре
+coin/flag), плюс comparison selector, inverse-preparation и compiler
+scratch по фактическому контракту. Дополнительный exit routing имеет
+не более7m CNOT на одну программу. Контролируемый выбор целых
+U_(i,n) использует supplied controlled queries или их уже принадлежащую
+конструкцию §8.6; constant controls компилируются по
+[source/resource owner](A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md).
+Результат точен для идеального logical word; approximate compilation
+требует его существующих full-state/source bounds, включая leakage.
+
+Сняты новые exit-oracle и golden-coin preparation gates. Физическая
+адресуемость CNOT, supply blank banks, controlled spatial programmes,
+raw cut и полная execution/preparation price остаются предпосылками.
+Занятый reference128 не используется как scratch. При z=2^-20 этот
+coin не равен G: соответствующая подготовка и её стоимость отдельно
+требуются. Из одного matrix word M1 admission не следует.
+
+### 8.23. Полная цена этого же tagged-опыта вычисляется и имеет другой source
+
+Теперь возьмём законченный pointer protocol: приготовим comparison
+selector посредством G, когерентно исполним Z_0 либо Z_1 и recombine
+посредством G*. Сохраним selector-port и ВСЕ logical history, tag,
+overlap и failure coordinates. Его полные Kraus columns:
+
+    L_0=pZ_0+p²Z_1,
+    L_1=p^(3/2)(Z_1−Z_0), Σ_b L_b*L_b=I,
+    q_(bα)=Tr[ρ L_(bα)*L_(bα)].                      (116)
+
+Cross terms точно сокращаются при суммировании ports:
+`Σ L_bρL_b*=pZ_0ρZ_0*+p²Z_1ρZ_1*`. Здесь ρ — actual data
+marginal с сохранённым reference128. Никакая независимая matter state
+для endpoint не вводится. Далее цена H_full/ℓ использует тот же
+явно условный complete Cost−Info/Born binding, что §§8.19–8.21;
+новая Info law не предполагается.
+
+Пусть H_0,H_1 — энтропии полных128^n исходных endpoint histories,
+H_4 — энтропия всех128^m central histories и
+`v_4=Tr ρ B_4^(2m)` — вероятность полного central blank.
+Постоянный закон по comparison-port и overlap-bit на общем секторе:
+
+    U=((p+p^(5/2))², p^6, p³(sqrt(p)−1)², p^5), ΣU=1.
+
+На private central exits сохраняется также programme tag i:
+
+    V=(p²,0,p³,0, p^5,p^6,p^4,p^5), ΣV=1,
+    H_V=(2+p²)h(p)=(7−6p)ℓ, H_U=H(U).               (117)
+
+Здесь h — binary entropy с natural log. Эти коэффициенты получены
+не fitting: на общем секторе это квадраты координат
+`pγ_0+p²γ_1` и `p^(3/2)(γ_1−γ_0)`; на приватных секторах
+cross исчезает. Нулевые координаты V не удаляются.
+
+Условно внутри central packet все вероятности буквально имеют вид
+`aU` на bypass, `zv_4U` на central blank и
+`zq_4(ω)V` для каждого ω≠blank. Следовательно
+
+    H_c=h(z)+zH_4+(a+zv_4)H_U+z(1−v_4)H_V.
+
+У полного опыта masses central/private0/private1 равны (a,zp,zp²).
+В каждом private spatial packet дополнительный outer port имеет
+entropy h(p), независимо от его настоящего полного внутреннего слова.
+Поэтому точно
+
+    H_full=H(a,zp,zp²)+aH_c+z[pH_0+p²H_1]+z h(p)
+          =K+az[H_4+v_4(H_U−H_V)]+z[pH_0+p²H_1],
+    K=(1+a)h(z)+2z h(p)+a²H_U+azH_V.                (118)
+
+Формула верна также для другого предоставленного coin z∈(0,1);
+конкретное exact G-word (112)–(116) использует z=p².
+При фиксированных p,z полный source равен
+
+    D S_mean={az[DH_4+(H_U−H_V)Dv_4]
+                   +z[pDH_0+p²DH_1]}/ℓ,            (119)
+    Dv_4=Tr[(Dρ)B_4^(2m)]
+       +Σ_(j=0)^(2m−1)Tr[ρ B_4^j(DB_4)B_4^(2m−1−j)].
+
+Все preparation, observer и noncommuting matrix jets включены.
+При moving z дифференцируется вся (118), включая K; его нельзя
+объявить постоянным тогда, когда меняется сам coin.
+
+Есть точный знак, полезный для полного, а не endpoint-only consumer:
+`H_U≤log4<H_V`. Действительно p<2/3 даёт `(7−6p)ℓ>3ℓ`, а
+`φ³=2φ+1>4`. Поэтому survival contribution в (119) положителен
+вдоль усиления настоящего central прибора, где v_4'<0.
+
+**Физически существенная проверка источника.** На независимом
+endpoint programme tangent central maps и ρ фиксированы, поэтому
+`D_i S_mean=zπ_i DH_i/ℓ`, `(π_0,π_1)=(p,p²)`.
+Selected logdet producer, напротив, требует
+`D_i S_tag=Tr(G_i^-1 DG_i)`. При
+`A_i=νA_i0`, `B_i=I−2p²ν²A_i0²>0`, n≥1:
+
+    ∂_ν log det G_i
+      =−8np²zν Tr[A_i0² B_i^(2n−1)G_i^-1]<0        (120)
+
+для A_i0≠0. Полный H_i имеет противоположный, положительный source
+в (90)/(97) при `Trρ A_i0²>0`. Исчезновение endpoint jets ИЗ CROSS
+не удалило их из полной записи. Для равенства sources
+`H_full/ℓ+𝓑` и `S_tag/ℓ` реальный remainder должен удовлетворять
+
+    D_i𝓑=[Tr(G_i^-1 DG_i)−zπ_i DH_i]/ℓ.             (121)
+
+В указанном scale направлении это строго отрицательный источник,
+который нельзя назначить как residual. Это exact mismatch конкретного
+нефильтрованного complete golden readout с selected logdet, не no-go
+для всех возможных физически допущенных сравнений.
+
+**Совместный scale consumer.** Если реальная geometry family допускает
+общую независимую scale variation `A_i=νA_i0` всех трёх программ
+(сохранены actual pulls of observer/spatial references), то
+`v_4'=−8mp²ν Tr[ρ A_40² B_4^(2m−1)]≤0`. В общих fixed-finite-depth
+weak windows каждый вклад (119) неотрицателен и хотя бы один строго
+положителен, если хотя бы одно `a_i=Trρ A_i0²>0`.
+Таким образом, в этой объявленной вариационной семье все joint roots
+полной средней находятся в `Ψ∈⋂_(i=0,1,4)ker(A_i0⊗I_ref)`.
+Там все исходные histories blank; при фиксированных coins/controllers
+оставшаяся запись имеет постоянную цену и нулевые geometry и
+data/reference-amplitude first sources. Если coin z независимо свободен,
+это ещё не полный joint root: из (118)
+`H_blank=(1+a)h(z)+2z h(p)+aH_U`, поэтому
+`∂_z H_blank=−h(z)+(2−z)log(a/z)+2h(p)−H_U`
+обычно ненулевой. Другие свободные controller preparations также
+сохраняют собственные Euler rows. В exact word z=p² фиксирован.
+Независимость трёх private scale variations для этого вывода не нужна;
+достаточна указанная общая variation. Её physical admission не выводится
+из algebraic execution.
+
+Для m=2n, δ=ν², nδ→T>0 на fixed data charts §8.21 и (118) дают
+более сильный long-history consumer:
+
+    H_full=4p²z(nδ)[2a a_4+p a_0+p²a_1]log(1/δ)
+           +O_C¹(1).                               (122)
+
+Survival probability и её base-field/scaled-ν jets здесь O(1).
+Внутри каждой derivative n,m фиксированы. Scaled-ν source ведущего
+члена вдвое больше его коэффициента; он положителен вдоль таких
+последовательностей при weighted mass `2a a_4+p a_0+p²a_1≥c>0`.
+Область a_i→0 не закрыта абсолютным остатком. Все coefficients
+этого полного count-source положительны; (122) не приравнивается
+к IR/Hodge curvature expansion выбранного logdet. Пространственный
+носитель в (122) фиксирован. Native history registers имеют размерность
+128^(m+n); дополнительно сохраняются tag-copy bank и coins, то есть
+полное logical workspace имеет размерность16·128^(2m+n) до comparison
+selector и compiler scratch, в согласии с бюджетом §8.22.
+
+**Условная нормировка не является matrix whitening.** В raw cut (115)
+успех при данной ρ имеет `g_i=Trρ G_i`, а у общего golden опыта
+`g=pg_0+p²g_1`. Например conditional port1 имеет вероятность
+`p³(g_0+g_1−2ReTrρ K_10)/g`. Это не операция
+`G_1^-1/2 K_10 G_0^-1/2` над неизвестной входной материей.
+При сохранении failures и 0<g<1 точно
+
+    H_full=h(g)+gH_s+(1−g)H_f,
+    DH_full=gDH_s+(1−g)DH_f
+             +Dg[log((1−g)/g)+H_s−H_f].             (123)
+
+При g=0 или1 условные H_s/H_f могут быть не определены; первый источник
+считается из полного amplitude law и его C¹ предела, а не подстановкой
+в логарифмы (123).
+
+Один дополнительный способ получить heralded scaled isometry — сначала
+реализовать contraction `F_i=sqrt(a)G_i^-1/2`, затем X_i.
+Последовательный общий success effect равен aI, но два настоящих
+failure effects равны `I−aG_i^-1` и `a(G_i^-1−I)`. Их сумма zI
+постоянна, а отдельные probabilities/source движутся. Оба положительны
+потому, что aI≤G_i≤I. С G_i коммутирует его собственный F_i;
+коммутирования с E_4 или другим G_j не предполагается.
+После conditioning на постоянную success probability a нормированная
+изометрия равна `X_iG_i^-1/2`.
+Такая фильтрация меняет подготовку, central law и веса ветвей, поэтому
+(118) нельзя использовать для неё без нового полного расчёта.
+Её исполнение и цена не получены из (112). Она не исключена (120).
+
+Наконец, single-system success `Trρ C*C` не равен `det(C*C)`.
+Reference purification также даёт trace, а не determinant. Реализация
+determinant через exterior action требует antisymmetric state на d
+system copies, d=dim(data); это не имеющийся внутренний CAR16 самого
+data operator. Другой determinant algorithm обязан предъявить свои
+queries/resources. Даже реальное determinant event даёт surprisal,
+тогда как полная binary mean равна h(q_det)/ℓ. Ни одно из этих
+ценовых связываний не следует из одной matrix determinant identity.
+
+### 8.24. Собственные calibration rows выбранного logdet не выбирают double clock
+
+Эта проверка относится к selected S_tag, отдельно от полной средней
+(118). Сохраняем необходимую raw normalization constant producer:
+
+    F_i=B_i^(2n), F_4=B_4^(2m), D_j=I−F_j,
+    G_i=I−zD_i, E_4=I−zD_4, a=1−z,
+    S_tag=−2d log(a sqrt(p))+Σ_(i=0,1)Tr log G_i
+                                  −2Tr log E_4.     (124)
+
+При фиксированных d,B_j,m,n настоящая z derivative имеет знак
+
+    ∂_z S_tag=2d/a−Σ_i Tr(G_i^-1D_i)+2Tr(E_4^-1D_4)
+      =(1/a)Σ_i Tr(G_i^-1 F_i)+2Tr(E_4^-1D_4)>0.     (125)
+
+Использовано `G_i−aD_i=F_i`. При finite positive B_i величины F_i
+положительно определены, поэтому знак строгий. Ни commuting geometry,
+ни heat limit здесь не нужны. Если z действительно свободен, interior
+joint root исключён. В exact golden word z=p² фиксирован: (125) не
+объявляет его свободным. Отбрасывать constant в (124) при moving z
+нельзя — это изменило бы саму source equation.
+
+Для integer depths есть сравнение реальных конечных цен, без
+несуществующей derivative целого n. При fixed z и B_4 positive
+contraction `E_(m+1)≤E_m`, откуда
+
+    S_tag(m+1,n)−S_tag(m,n)
+         =2Tr[log E_m−log E_(m+1)]≥0.               (126)
+
+Неравенство строго при хотя бы одной nontrivial spectral mode.
+Увеличение каждого endpoint depth, напротив, уменьшает его Tr log G_i.
+Selected цена сама по себе не имеет interior programme-cost minimum,
+выбирающего m=2n: она предпочитает shorter central/longer endpoint
+reads среди сравниваемых программ. Настоящая resource price или
+native constraint может изменить это сравнение, но должна быть выведена.
+
+На условной heat-clock карте independent durations t_0,t_1,t_4 дают
+`∂_(t_i)S_tag=−zTr(G_i^-1 Δ_i exp(−t_iΔ_i))<0` и
+`∂_(t_4)S_tag=2zTr(E_4^-1 Δ_4 exp(−t_4Δ_4))>0`
+для nonzero Δ. Эти continuous variations не подставляются вместо
+integer counts. Общий связанный clock НЕ имеет универсального знака:
+на coincident scalar shell Δ_j=λI и t_4=2β, t_i=β, x=exp(−βλ),
+
+    S_tag=const+2d log(a+zx)−2d log(a+zx²).
+
+Его clock critical point `x_*=sqrt(a)/(1+sqrt(a))` существует и
+является максимумом. Более того, для каждого fixed ratio r>1 функция
+`2L_β−2L_(rβ)` на nonzero конечном совпадающем spectrum имеет
+положительный derivative при β=0 и отрицательный при большом β,
+следовательно critical point. Общая clock stationarity не выбирает2.
+Этот контроль предотвращает ложное усиление (125)–(126).
+
+Наконец, в уже заявленном C¹ proper-field IR chart producer volume
+coefficient3/2 даёт при общей coframe dilation e→exp(σ)e:
+
+    D_σ S_tag|_0=
+      6 F_3(z/a) R^4 A_0/[(4π)²β²]+O(R²)>0.        (127)
+
+Здесь A_0=16Vol>0, F_3(q)>0 для0<q<1, β,z фиксированы;
+это field derivative, поддержанная именно его C¹ heat hypothesis.
+Clock jets из этой fixed-clock гипотезы не выводятся. Как и в уже
+принадлежащем [spatial source owner](A4D_TWO_SIDED_SPATIAL_RECORD_EINSTEIN_SOURCE.md),
+§5, крупномасштабная stationary family выбранной цены требует реального
+дополнительного volume/matter/clock source. Правильный curvature ratio
+не решает эту собственную строку, и volume term не вычитается.
+
+**Потреблённый переход.** У positive tagged programme теперь есть
+конечное exit-routing слово, полный нефильтрованный golden pointer law
+и вычисленные источники обоих обсуждаемых функционалов. Его direct
+complete-mean binding к selected logdet исключён точным знаком (120),
+а свободная scale строка полной mean разрешена в (119)/(122).
+Дальнейшая работа должна предъявить действительную другую valuation/
+filtered programme с ПОЛНОЙ ценой или native constraint, включая
+ресурсы (112) и собственные строки (125)–(127). Повторный подбор
+curvature ratio или formal normalization C этого не поставляет.
+Positive conditional EH composition остаётся сохранённой; физическое
+D0→ОТО, independent matter и global raw #216 по-прежнему открыты.
+
+### 8.25. Нормировка настоящих событий не добавляет недостающий полный source
+
+Проверим требуемый (121) остаток в уже определённых исходных правилах,
+прежде чем назначать новую valuation. Book01 §01.17.1 фиксирует raw
+responses одного detector frame и их единственный Born readout.
+[Принадлежащий branch cocycle](A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md)
+и его [partition continuation](A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md)
+дают точную развилку, а не свободу подобрать источник:
+
+    S_h=C_h−I_h, μ_h=φ^(−C_h), w_h=φ^(−S_h),
+    w_h=q_h ⇒ I_h=log_φ(q_h/μ_h), B=0;
+    w_h=r_h, q_h=r_h/N ⇒ B=−log_φ N.               (128)
+
+Здесь mean aggregation та же, что в (99), и каждая формула требует
+указанного history-to-response binding. При fixed q, μ и w=q второго
+I_h нет: это также буквальное `pathInfo_unique` существующей Lean
+капсулы. Полный прибор (116) имеет N=1 из ΣL*L=I и нормировки входа.
+Если Book weight связан с этими responses, его полный B тождественно0.
+Это условный вывод, не доказательство самого physical binding.
+
+**Настоящий tagged raw cut даёт противоположный знак.** Для (115)
+`g=pg_0+p²g_1`, и при независимой endpoint variation, fixed ρ:
+
+    ∂_(ν_i)g=−8np²zπ_iν_i
+       Tr[ρ A_i0² B_i^(2n−1)]<0, (π_0,π_1)=(p,p²),
+    ∂_(ν_i)[−log_φ g]>0.                           (129)
+
+Строгость требует `Trρ A_i0²>0` и positive B_i, как раньше.
+Этот actual normalizer не даёт отрицательного (121) source. Более того,
+его цена относится к условному cut: `H(q_cond)/ℓ−log_φ g`,
+а не `H(q_full)/ℓ−log_φ g`. Подстановка последней суммы смешала бы
+две разные outcome frames.
+
+**Отрицательный conditional source существует, но остаётся условным.**
+Для настоящего single-round port1 из (89), с сохранением всех его labels,
+полный effect равен `4p³A²`. При `A=νA_0`, fixed ρ и nonzero mass:
+
+    N_1=4p³ν² Trρ A_0²,
+    ∂_ν[−log_φ N_1]=−2/(νℓ)<0.                    (130)
+
+Поэтому нельзя утверждать, что всякая native event normalization имеет
+положительный source. Но (130) не является добавкой к полной mean.
+Для любой фиксированной разбиением полной семьи E_j, с
+`g_j=Σ_(h∈E_j)q_h>0`, `q_(h|j)=q_h/g_j`, имеем точно
+
+    Σ_j g_j[H(q_(·|j))/ℓ−log_φ g_j]=H(q_full)/ℓ,
+    DΣ_j g_j[H(q_(·|j))/ℓ−log_φ g_j]
+                                      =DH(q_full)/ℓ.             (131)
+
+Это простое раскрытие `−Σ_h q_h log(g_j q_(h|j))`, включая
+производные weights g_j. В частности success (130) вместе со всем
+failure снова даёт исходную полную128 mean; отдельный отрицательный
+normalizer не остаётся независимым B. При g_j=0 используется полное
+amplitude-C¹ продолжение суммы, а неопределённые conditional laws не
+дифференцируются по отдельности. Для moving cuts сами effects должны
+иметь свои jets; (131) сохраняется, если они действительно образуют
+полный исходный закон на каждом шаге, с его actual derivatives.
+
+Таким образом, перебор success cuts не решает (121) при сохранении
+того же полного same-history binding. Неопределённым остаётся именно
+отображение Book03 history assembly в actual raw responses и полную
+агрегацию цены, включая execution/preparation. Операционный кортеж и
+`ActionProtocol` этого поля не задают. Произвольное `N(fields)` при уже
+фиксированном response frame было бы новой valuation; настоящая другая
+программа/агрегация должна быть выведена вместе со всем её источником.
+Это не пара двух допущенных D0 theories и не универсальное отрицание
+D0→ОТО. Устранена конкретная попытка получить компенсатор, выделив
+удобное событие из уже вычисленного полного опыта.
+
 ## 9. Проверка
+
+§§8.22–8.24 проверены аналитически независимо по трём интерфейсам:
+буквальное обратимое routing слово и его ресурсы; все golden pointer
+вероятности, U/V/K, central и endpoint sources; calibration/clock и
+общий finite/long-history scale consumer. Проверка actual текста
+сохранила free controller rows на blank inputs, boundary смысл (123)
+и различие scaled/filter-conditioned isometries. Противоположный знак
+endpoint source — решающая проверка прямого price binding, а scalar
+common-clock maximum — контроль против неверного универсального знака.
+Новых numerical receipts или повторов старых mathematical suites нет.
+§8.25 потребляет буквальные Book01/cocycle/partition definitions;
+normalizer signs и полное weighted reassembly проверены отдельно.
 
 §§8.19–8.21 доказаны аналитически из буквальных Julia/golden maps,
 полной подготовки и уже существующего full-pointer chain rule.
