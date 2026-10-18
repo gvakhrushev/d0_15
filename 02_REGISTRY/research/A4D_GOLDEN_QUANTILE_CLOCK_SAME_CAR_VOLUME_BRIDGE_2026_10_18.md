@@ -358,3 +358,93 @@ For **the actual physical D0→ОТО**, the two consuming requirements that rem
 Neither follows merely from the existence of \(T_\rho\) or probability-preserving AF permutations. The point of the new theorem is to supply a *source-preserving clock/refinement interface* that is already nontrivial and checkable on the original golden partition, rather than leave "proper time/volume" as a free choice. The original raw #216 fixed \(h^{-2}\) and full physical action comparison are not promoted.
 
 A matching [bounded checker](certificates/a4d_golden_quantile_clock_source_check.py) now certifies (Q8–Q9), (Q12–Q13), the exact symbolic source derivative (Q18–Q19), the type-mixing (Q20), cut probabilities and the type-preserving matching on actual 4D boxes. It is a local proof control, not a full native physical readout.
+
+
+## 11. Closing GR backwards: EXACT null Kerr–Schild bypass of the still-unselected clock/volume law
+
+There is a stronger consequence than solving the whole physical sampling programme before discussing Einstein equations. On the already-owned **fixed-old-RIGHT** golden preparation branch and the full CAR16 source-compatible metric \(\widehat g\), a special family of nine metric test directions makes BOTH (Q5–Q7) and the entire global-volume ambiguity drop out **identically**. This removes the physical inverse-clock selector from the *critical path for the nine null gravitational equations* — not from a full claim that D0's entire runtime is gauge invariant.
+
+### 11.1. Same-carrier exact volume-preserving deformation, not an assumed Einstein source
+
+Fix the actual positive prepared old-leaf \(\mu_x>0\) and fixed \(\bar\mu\). At a site/continuum smooth chart let \(\widehat e\) be the recovered invertible source-compatible coframe and \(\widehat g=\widehat e^T\eta\widehat e\), \(\eta=\operatorname{diag}(1,-1,-1,-1)\). Pick a null vector \(k\) with \(\widehat g(k,k)=0\) and put \(\ell=\widehat g(k,\cdot)\). The rank-one endomorphism \(N=k\otimes\ell\) satisfies
+
+\[
+N^2=0,\qquad \operatorname{tr}N=0.
+\]
+
+For real \(s\) near zero define the ACTUAL 16-component coframe variation (no new metric as an independent primitive)
+
+\[
+\widehat e_s=\widehat e\circ(I+\tfrac{s}{2}N),\quad
+\widehat g_s=\widehat g+s\,\ell\otimes\ell.
+\tag{Q26}
+\]
+
+The quadratic contribution \(\frac{s^2}{4}N^T\widehat gN\) vanishes because \(k\) is null. The determinant lemma and nilpotence give **exactly for every \(s\) in the chart**
+
+\[
+\det\widehat e_s=\det\widehat e,\qquad
+\det\widehat g_s=\det\widehat g,\quad
+J_s=J,\quad V_s=V,\quad \rho_s=\rho.
+\tag{Q27}
+\]
+
+Consequently the unique fixed Role-ordered quantile map is the SAME function for all \(s\):
+
+\[
+\boxed{R_{\rho_s}=R_\rho,\quad T_{\rho_s}=T_\rho,\quad
+D_sT_\rho=0,\quad D_s\log V=0.}
+\tag{Q28}
+\]
+
+Every existing F/R leaf cell \(T_\rho(B_w)\) is unchanged, and every cell volume retains its original \(\mu(w)=p^{c(w)}\). Thus the entire "moving boundary/clock" term in (Q16) is **zero on these nine directions** (the coframe, proper links, CAR16 operators and matter/preparation tangents still have their real variations). The original raw \(g\) also has a coframe lift at fixed \(\mu\), by multiplying (Q26) by \(\sqrt{\bar\mu/\mu_x}\). The full 16 coframe slots make this a legitimate geometric tangent **of the declared AF/Palatini chart**, not proof that an unchanged native Julia/clock programme admits every such tangent.
+
+**Preparation firewall:** if the physical experiment permits independent \(\delta\mu_x\) or \(\delta\bar\mu\) on the SAME deformation, then \(\delta\widehat g\) contains their extra conformal source. (Q27–Q28) concern genuine held-fixed old-PF marginals, as in §6.15 of the full-source owner; a freely moved upstream archive must satisfy its own Euler/source equations before applying this reduction. Likewise physical proper-time effects and the REAL sampling law may use more than volume alone: (Q28) is about the canonical quantile clock of this owner, not all conceivable D0 clock instruments.
+
+### 11.2. Exactly nine null equations recover ALL10 nonlinear Einstein equations, with no volume-price fit
+
+At any Lorentz-orthonormal point choose the following NINE future-null directions:
+
+\[
+k_{1\pm}=(1,\pm1,0,0),\
+k_{2\pm}=(1,0,\pm1,0),\
+k_{3\pm}=(1,0,0,\pm1),
+\]
+\[
+k_{12}=(5,3,4,0),\quad
+k_{13}=(5,3,0,4),\quad
+k_{23}=(5,0,3,4).                                    \tag{Q29}
+\]
+
+For a real symmetric covariant tensor \(E\), the linear map
+\(E\mapsto(E(k_a,k_a))_{a=1}^9\) has **exact rank nine** and
+\(\ker=\mathbb R\eta\). Proof: the six \(\pm\) probes imply \(E_{0i}=0\) and \(E_{ii}=-E_{00}\); the (3,4,5) null Pythagorean probes then give \(24E_{12}=24E_{13}=24E_{23}=0\). No tensor-component rank sample or kinematic matter positivity is substituted for this exact algebra.
+
+Therefore if the SAME native full-price **joint stationary limit**, with independently derived matter source, actually yields the nine dynamical equations
+
+\[
+R_{\mu\nu}[\widehat g]\,k_a^\mu k_a^\nu
+ =\kappa\,T_{\mu\nu}^{\rm own}k_a^\mu k_a^\nu
+\quad (a=1,\ldots,9)                                 \tag{Q30}
+\]
+
+and its true matter/spin/observer equations imply
+\(\nabla^{\mu}_{\widehat g}T_{\mu\nu}^{\rm own}=0\), then
+\(G[\widehat g]-\kappa T^{\rm own}=\lambda(x)\widehat g\).
+Contracted Bianchi yields \(d\lambda=0\), hence
+
+\[
+\boxed{G_{\mu\nu}[\widehat g]+\Lambda\widehat g_{\mu\nu}
+       =\kappa\,T_{\mu\nu}^{\rm own},\quad
+       \Lambda=-\lambda=\text{constant}.}             \tag{Q31}
+\]
+
+This is an exact mathematical **conditional completion** of the desired nonlinear Einstein law. Physical \(\Lambda\) and \(\kappa\) are not thereby measured or selected. The nine positive CAR16 null effects constructed in the separate tomography owner are *measurement candidates*, not the dynamical equations (Q30).
+
+### 11.3. Even an unknown GLOBAL volume/partition normalization does not obstruct these nine sources
+
+Suppose the true complete action at the end of the SAME experiment is an unknown smooth global scalar \(F(I_{\rm grav},I_{\rm matter},V,\ldots)\) of already OWNED integrated source components, not necessarily literal unnormalized EH, with genuine nonzero derivative \(F_{I_{\rm grav}}\). For (Q26) we have \(\delta V=0\) IDENTICALLY; therefore \(F_V\delta V=0\), whatever its native global normalization. This is why the null equations require no arbitrary volume subtraction. Nonlinear \(\partial F/\partial I_{\rm grav}\) and \(\partial F/\partial I_{\rm matter}\) are *global* coefficients on one configuration; if the true local sources of \(I_{\rm grav},I_{\rm matter}\) have the correct independent tensor forms, their ratio gives the relative coupling and any pure-volume source is invisible until (Q31). This is NOT permission to synthesize a fitted \(F\) or remove the actual H+J+R/controller remainder: it applies only if those already-owned sources have been established on the same programme.
+
+**Strategic new target (one test, not another metric census):** from the ACTUAL complete Book source compute NINE same-cut null Kerr–Schild contractions after solving the existing proper Lorentz, fixed-RIGHT preparation, observer, scene and material Euler rows. Check on those contractions whether the full normalized source has the **correct Lorentz Ricci/matter coefficient** up to errors in the ACTUAL h/raw reconstruction norm. Unlike arbitrary coframe variations, their complete physical sampling/Jacobian has no extra inverse-clock source in the canonical quantile representation by (Q28). If the true source matches (Q30) and the full material Ward is proved, the remaining trace row and cosmological constant close automatically by (Q29–Q31). If even one null comparison retains a genuine non-Einstein source, this same-program attempt fails regardless of the success of the AF/Palatini geometric subaction. That is the decisive falsifier.
+
+**Scope:** neither (Q27) nor (Q31) proves that actual full D0 physically chooses the quantile chart, that the CAR16 history generates an independent \(T\), or that the true complete price has the desired nine-source limit. What is proved is that **full four-dimensional clock selection and separate Λ determination need not be upstream prerequisites to the final Einstein tensor theorem** in the fixed-history null-probe strategy. The mathematical missing input becomes much narrower and testable.
