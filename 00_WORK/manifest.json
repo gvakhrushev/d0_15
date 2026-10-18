@@ -92,17 +92,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-LEFT-RESIDUAL-EXECUTED-SOURCE.md"
     },
     {
-      "id": "WRK-A4D-QUANTILE-CLOCK-EXECUTION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The golden quantile-to-CAR volume clock map is compared with the moving sampling effect of the existing recording engine on one nonconstant proper lapse and one shearing four-dimensional density. The record states pass or fail on that tangent and writes the explicit residual when the Jacobian source and the engine costate differ. No new gate is added.",
-      "brief": "00_WORK/tasks/WRK-A4D-QUANTILE-CLOCK-EXECUTION.md"
-    },
-    {
       "id": "WRK-A4D-MATTER-ON-DRESSED-METRIC",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
