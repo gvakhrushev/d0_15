@@ -399,6 +399,40 @@ D_sT_\rho=0,\quad D_s\log V=0.}
 
 Every existing F/R leaf cell \(T_\rho(B_w)\) is unchanged, and every cell volume retains its original \(\mu(w)=p^{c(w)}\). Thus the entire "moving boundary/clock" term in (Q16) is **zero on these nine directions** (the coframe, proper links, CAR16 operators and matter/preparation tangents still have their real variations). The original raw \(g\) also has a coframe lift at fixed \(\mu\), by multiplying (Q26) by \(\sqrt{\bar\mu/\mu_x}\). The full 16 coframe slots make this a legitimate geometric tangent **of the declared AF/Palatini chart**, not proof that an unchanged native Julia/clock programme admits every such tangent.
 
+**Stronger SAME-root first-source result (no hand-frozen LEFT preparation).**
+The actual full-source fixed-RIGHT owner §6.15 constructs a normalized
+joint purification satisfying \((P_i^L-P_i^R)\Psi_*=0\) for EVERY old
+leaf. Consider an arbitrary differentiable pure preparation curve
+\(\Psi_s\) through this same root, including full CAR/reference/work
+entangling tangents, whose **genuine old RIGHT reduced density** stays
+fixed. In the transported full GNS representation,
+
+\[
+\begin{aligned}
+D_s\mu_i^L
+ &=2\Re\langle \dot\Psi,P_i^L\Psi_*\rangle
+  =2\Re\langle \dot\Psi,P_i^R\Psi_*\rangle\\
+ &=D_s\mu_i^R=0.                                     \tag{Q28a}
+\end{aligned}
+\]
+
+The middle equality uses the actual matched projector vectors at the
+root, **not** an assertion that \(P_i^L=P_i^R\) as operators off
+that section. Therefore even when the admissible pure preparation is
+allowed to MOVE (rather than artificially frozen), every old LEFT
+leaf mass, every coarse \(\mu_x\), and the source-compatible
+\(\widehat g\)'s density factor have ZERO additional first variation
+from preparation at this root. This is precisely the real conormal
+stationarity structure of §6.15, not an assumed uniform preparation.
+Combining (Q28a) with a true null coframe variation of \(\widehat g\)
+gives \(DJ=DV=DT_\rho=0\) to FIRST order on the whole admissible
+fixed-RIGHT tangent fibre. A moving RIGHT reduced state upstream, a
+moving identification of the represented projectors, or a genuine
+different physical clock cut still has its actual source and is not
+covered by (Q28a). Finite-\(s\) exactness (Q27) remains a statement
+about the explicit fixed-\(\mu\) Kerr–Schild path; moving preparation
+is only proved first-order here.
+
 **Preparation firewall:** if the physical experiment permits independent \(\delta\mu_x\) or \(\delta\bar\mu\) on the SAME deformation, then \(\delta\widehat g\) contains their extra conformal source. (Q27–Q28) concern genuine held-fixed old-PF marginals, as in §6.15 of the full-source owner; a freely moved upstream archive must satisfy its own Euler/source equations before applying this reduction. Likewise physical proper-time effects and the REAL sampling law may use more than volume alone: (Q28) is about the canonical quantile clock of this owner, not all conceivable D0 clock instruments.
 
 ### 11.2. Exactly nine null equations recover ALL10 nonlinear Einstein equations, with no volume-price fit
