@@ -708,6 +708,14 @@ det e=0 из [Cartan-classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17
 вершины с тем же flat quadratic seed также требуют контролируемого IR
 подавления; их отсутствие нельзя вывести из (7.1).
 
+
+**Непустая собственная сцена SAME Book-feedback (прямой corollary, §4.1):** в full22976 scene carrier с retained cut P_s rank528 взять допустимое unitary слово W_s=I, не удаляя 22448 complement directions. Его фактический return effect \(B=P_sW_s^\dagger(I-P_s)W_sP_s\) равен0 и \(DB|_{W_s=I}=0\) для ВСЕХ independent unitary/scene variations. Поэтому у той же полной J₂ operator-price одновременно нули ВСЕХ interior geometric 16+24 Euler на exact nonflat pp-wave и ВСЕХ свободных scene rows; причём
+\[
+D^2_{W_s}J_2[V,V]=2\nu zK\bigl(1+p^6/(1-4zp^3)\bigr)\|(I-P_s)VP_s\|_{\rm HS}^2\ge0.
+\]
+Поперечная scene Hessian строго положительна, а mixed geom–scene Hessian на совместном vacuum root тождественно0. **Геометрическая чувствительность НЕ обнуляется**:
+\(g'_0(p²)=2112zp³/(1-4zp³)>0\). Это законченная непустая сцепка geometry+scene именно для operator J₂, а не фиксация \(B\) без его уравнений. Физический fixed autonomous scene word и old \(H+J+R\) whole-stack здесь не переопределяются как тождество; выбранная identity scene — отдельная допустимая полная единичная программа, чьё compulsory execution не доказано.
+
 ### 7.2. Первый расчёт bootstrap: кубический Ward без подбора действия
 
 Пусть S(y,r) — ОДНА самостоятельно определённая полная цена,
