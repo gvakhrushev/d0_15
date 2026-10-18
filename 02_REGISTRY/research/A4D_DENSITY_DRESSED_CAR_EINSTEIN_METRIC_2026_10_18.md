@@ -208,7 +208,8 @@ g_{\rm pp}=2du\,dv+[A(x^2-y^2)+2Bxy]du^2-dx^2-dy^2,\quad
 Её exact finite full40 interior Euler roots с истинными golden counts используют \(\bar\mu\) и sitewise \(\rho_{n,x}=\mu_{n,x}/\bar\mu\); исходная finite coframe есть \(v_{n,x}=\rho_{n,x}^{-1/2}\bar v_{n,x}\). Поэтому наша (1) даёт **тождественно, а не только по пределу**,
 \[
 \boxed{\widehat v_{n,x}=\bar v_{n,x},\qquad
-\widehat g_{n,x}=g(\bar v_{n,x})}.\tag{16}
+\widehat e_{n,x}=h_n^{-1}\bar v_{n,x},\qquad
+\widehat g_{n,x}=g(h_n^{-1}\bar v_{n,x})}.\tag{16}
 \]
 На том же owner \(C^2\) recovery \(\widehat g_n\to g_{\rm pp}\), с точными finite interior 40 Euler rows. Нулевая плотность \(f_x=0\) уже сохраняется во ВСЕХ ячейках из его native null-bivector контрольного продолжения.
 
@@ -234,6 +235,6 @@ v_{n,x}^{(\chi)}=\chi_x^{-1/2}v_{n,x},
 
 ## 5. Следующее положительное сцепление в том же PR
 
-Вместо новых curvature readouts или arbitrary Einstein actions нужно взять **уже принадлежащую полную native operator-to-geometry реконструкцию** (§8.4–8.5) и вывести, что 실제 admissible shared AF/Julia history reads в одном cut имеют данные \((X_{x,r},\mu_x)\) при совместно стационарной подготовке. Тогда (9) не является свободной метрикой: это единственное source-compatible homogeneous normalized CAR чтение, все10 ADM variations и principal Clifford symbol следуют автоматически из (1)–(10). Остаются реальная execution/price и independently derived spin/matter sources, а оригинальная all-site raw \(h^{-2}\) #216 оценка не подменяется этим finite smooth-C² утверждением.
+Вместо новых curvature readouts или arbitrary Einstein actions нужно взять **уже принадлежащую полную native operator-to-geometry реконструкцию** (§8.4–8.5) и вывести, что действительный допустимый общий AF/Julia эксперимент считывает в одном cut имеют данные \((X_{x,r},\mu_x)\) при совместно стационарной подготовке. Тогда (9) не является свободной метрикой: это единственное source-compatible homogeneous normalized CAR чтение, все10 ADM variations и principal Clifford symbol следуют автоматически из (1)–(10). Остаются реальная execution/price и independently derived spin/matter sources, а оригинальная all-site raw \(h^{-2}\) #216 оценка не подменяется этим finite smooth-C² утверждением.
 
 **Статус:** PROVED FINITE GEOMETRIC SOURCE/CAR16 COMPENSATION ON DECLARED CARRIER; EXISTING FULL40 NONFLAT RECOVERY CONSUMED. Not a claim of the literal unchanged v8 physical programme or a complete D0⇒GR theorem. No new physics parameter, no BOOK/Claim promotion, no new PR or task.
