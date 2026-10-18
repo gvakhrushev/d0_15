@@ -116,8 +116,45 @@ assert .2<source_errors[-1]/ts[-1]**2<15
 fisher=lambda t:(a0*t*t)**2*(I_cond*second+(s0*ell)**2*variance)
 assert abs(fisher(.15)/fisher(.30)-1/16)<1e-12
 
+# Stronger on-shell-only source compression: entire optimized entropy equals
+# log(N / P(global failure)), not a guessed event action off the stationary fibre.
+test_a=[.24,.35,.41,.29]
+H_on,MI_on,r_on,q_on=measured(test_a)
+N_test=len(test_a)
+D_test=sum(z(x) for x in test_a)
+P_failure=sum(row[0] for row in q_on)
+assert abs(H_on-(math.log(N_test)-math.log(P_failure)))<1e-12
+assert abs(P_failure-N_test/D_test)<1e-12
+for i,ai in enumerate(test_a):
+    successes=sum(q_on[i][1:])
+    odds=q_on[i][1]/q_on[i][3]
+    grad_counts=successes*math.log(odds)
+    grad_analytic=zp(ai)/D_test
+    assert abs(grad_counts-grad_analytic)<1e-12
+    a_from_counts=(q_on[i][3]+q_on[i][4])/successes
+    assert abs(a_from_counts-ai)<1e-12
+
+# A different old-leaf preparation has the SAME aggregated five flags
+# at the common vacuum but a different Shannon joint action. Therefore
+# (17) is true ONLY after its full fine-population Euler equations.
+leaf_uniform=[1/N_test]*N_test
+leaf_skew=[.1,.2,.3,.4]
+conditional0=[1-s0,s0*(1-a0)/2,s0*(1-a0)/2,s0*a0/2,s0*a0/2]
+q_uniform=[[v*cj for cj in conditional0] for v in leaf_uniform]
+q_skew=[[v*cj for cj in conditional0] for v in leaf_skew]
+for j in range(5):
+    assert abs(sum(row[j] for row in q_uniform)
+               -sum(row[j] for row in q_skew))<1e-12
+H_uniform=H(x for row in q_uniform for x in row)
+H_skew=H(x for row in q_skew for x in row)
+assert abs(H_uniform-H_skew)>.05
+assert abs(H_skew-(math.log(N_test)-math.log(1-s0)))>.05
+
 print(json.dumps({
     "status":"PASS",
+    "stationary_failure_source_identity":True,
+    "full_leaf_log_odds_source_identity":True,
+    "off_shell_event_only_substitution_rejected":True,
     "scope":"conditional recorded fine-left-leaf mathematical cut only",
     "conditional_fisher":I_cond,
     "mutual_information":mutual_information,
