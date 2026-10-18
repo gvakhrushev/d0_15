@@ -558,8 +558,10 @@ path leaves уровня A_N, его projectors совпадают с насле
 предпосылка, не заявление, что нынешние пять флагов уже измеряют Y.
 Нужны также эти реальные допустимые preparation variations. Само
 отождествление AF level с variable-cost stopping time не переносит
-сюда цену: если physical Y получен остановкой raw word, его полный
-normalizer/stopping-source должен пройти тот же binding отдельно.
+сюда цену. §6.11 ниже уже доказывает полноту настоящего bounded
+stopping cut и отсутствие нового normalizer при SAME pathwise w=q;
+совпадение его effects и допустимых variations с (13e) остаётся
+отдельным требованием.
 
 Обозначим `d_N=a_N+b_N=F_(N+3)` — число этих исходов, НЕ размер
 GNS `a_N²+b_N²`. На f=0 balanced five-cut имеет одну и ту же law
@@ -870,6 +872,247 @@ Euler замыкание на star; выбирать EH cubic/quartic vertex н�
 Пропуск kinetic source отвергается. Старые root/heat/Lean
 серии не исполняются. [Результат](sources/d0_af_star_full_lattice_2026-10-17/INHERITED_HISTORY_WEIGHT_SOURCE_RESULT.json)
 сохраняет явно не закрытое physical inherited-cut binding.
+
+### 6.11. Конструктивный raw/AF интерфейс и настоящий stopping source
+
+Продолжение от `afab5f09`, 18 октября. Теперь проверяется именно
+исполнение (13e), а не доступность ещё одного геометрического чтения.
+Пусть C_n — полный first-crossing cost-n cut из
+[golden refinement owner](A4D_NATIVE_GOLDEN_COST_REFINEMENT.md),
+μ_w=p^{cost(w)}, cost(w)∈{n,n+1}. Его AF уровень — A_(n−1).
+В orthonormal GNS basis e_ij=E_ij/sqrt(μ_block) имеется явная изометрия
+
+    D_n|w>=e_ww, D_n Σ_w sqrt(μ_w)|w>=Ω_AF,
+    L(P_w)D_n=R(P_w)D_n=D_n|w><w|,
+    J_n D_n=D_(n+1) K_n,
+    K_n|w>=sqrt(p)|wF>+p|wR>  для READY,
+    K_n|w>=|w>                    для PENDING.         (13t)
+
+Это ТОЧНОЕ state/refinement и diagonal-effect intertwining. Оно
+сохраняет обе метки, а не только right provenance. Но image имеет
+dimension a_n+b_n внутри полного a_n²+b_n². На E_01, например,
+L(P_0)E_01=E_01, R(P_0)E_01=0. Noncommutative L(E_ij) выводит из
+diagonal correlated code. Полные contrast/rectangular complements
+прежнего владельца сохранены; quotient здесь нет. Поэтому (13t)
+не отождествляет старый RIGHT pointer с LEFT PVM на произвольных
+full-GNS preparation variations из (13n).
+
+Один literal fullStep уже даёт sqrt(p)|00>+p|11> из |00>.
+Для whole cost-cut требуется применять этот шаг на READY active
+sector, а PENDING переносить тождественно. Это определённый controlled
+operator; его исполнимое слово не следует из совпадения одной колонки.
+AF recording W из activation owner также не равен пассивному J_n.
+Closed16 engine не создаёт fresh blanks: его refinement — отдельный
+adapter. У addressed compiler есть условный approximation route,
+с его настоящими controller/work ресурсами; нового opcode нет.
+
+Ценовую часть можно закрыть независимо и точно. Для ЛЮБОГО actual
+двухисходного инструмента C_F* C_F+C_R* C_R=I, дерева C_n и
+M_w=C_(w_last)…C_(w_first) конечное раскрытие родителей даёт
+
+    Σ_(w∈C_n) M_w* M_w=I, q_w=Tr(ρ M_w* M_w),
+    E Cost=n+β_n, β_n=Pr(PENDING),
+    E Info=n+β_n−H(q)/ℓ, E(Cost−Info)=H(q)/ℓ,
+    DS=−ℓ⁻¹Σ_w log(q_w)
+           [Tr(Dρ M_w* M_w)+Tr(ρ D(M_w* M_w))].        (13u)
+
+Здесь приняты ровно прежние pathwise SAME binding w_Book=q и
+Info_w=log_φ(q_w/p^{cost(w)}). READY и PENDING сохранены; raw depth
+не больше n. Value identity использует 0log0=0; записанный DS относится
+к положительной ветви varied support. При рождении нулевой probability
+по произвольной density variation конечный differential не обещан.
+В chain rule ниже nodes с q_v=0 дают нулевой вклад, без определения π_v.
+Новый stopping normalizer НЕ требуется. Источники
+overshoot в Cost и Info сокращаются. Если исходный Book frame имел
+w_Book=𝒩q, сохраняется его прежний −Dlog𝒩/ℓ; Born completeness
+не доказывает эту дополнительную binding hypothesis.
+
+Для internal nodes v с cost(v)<n и π_v=q_(vR)/q_v точная chain rule
+есть H(q)=Σ_v q_v h(π_v). Поэтому полный differential содержит
+и Σ_v Dq_v h(π_v), и Σ_v q_v h′(π_v)Dπ_v. Это конкретный stopping
+source, который теряет подстановка fixed-round mean length.
+
+Нужна остановка самого исполнения. Если реально исполнены m raw
+rounds и сохранён suffix Z после prefix Y, цена есть
+H(Y,Z)=H(Y)+H(Z|Y). Для independent fresh golden coins это
+H(Y)+h(p²)Σ_Y μ_Y(m−|Y|)=m h(p²). Parser полного tape не стирает
+цену suffix. Аналогично owned first-unequal preparation с K парами
+сохраняет ВСЕ2K coins, suffix и failures: обратимый routing оставляет
+полную seed entropy 2K h(p²). Conditional fair accepted bit не делает
+её равной log2 или одной log d принятой метки.
+
+Теперь actual primitive решает следующий gate. При повторном
+использовании SAME active qubit и fresh blank records literal fullStep
+даёт C_F=|0><0|G, C_R=|1><1|G. После первой метки сохраняется
+активное basis состояние, а transition probabilities равны
+
+    T=[[p,p²],[p²,p]], r=Tr(ρ C_R* C_R).
+
+При cost2 полная law — (p(1−r),p²(1−r),r) на (FF,FR,R).
+При любом 0<r<1 отношение FF/FR=φ. Её настоящий положительный
+preparation root не является свободным трёхлистным root (13f).
+В частности, свободный contrast (δq_FF,δq_FR,δq_R)=(ε,−ε,0)
+имеет DS=−ε, но такой tangent не доступен одним изменением r.
+Это различие variation image, а не потерянная нормировка.
+
+Для произвольного cost-n cut его source решается без нового action:
+положим h₀=h(p²)=(2−p)ℓ, U_j=V_j=0 при j≤0 и
+
+    U_j=1+p U_(j−1)+p² V_(j−2),
+    V_j=1+p² U_(j−1)+p V_(j−2),
+    H_n(r)=h(r)+h₀[(1−r)U_(n−1)+r V_(n−2)],
+    r_n=1/[1+exp(h₀ d_n)], d_n=U_(n−1)−V_(n−2),
+    d_1=0, d_2=1, d_n=1−p²d_(n−1)+p³d_(n−2).          (13v)
+
+H_n″=−1/[r(1−r)]<0; r_n — единственный positive probability root
+в доступном одномерном image. Это не классификация всех amplitude
+boundary branches или coupled observer/preparation equations.
+У recurrence d_∞=(2+p)/3, λ_±=(−p²±sqrt(p⁴+4p³))/2 и
+ρ=|λ_-|≈0.713039<1. Решение с d_1=0,d_2=1 имеет оба coefficients
+отрицательными и их сумму −d_∞. Поэтому
+
+    |d_n−d_∞|≤d_∞ρ^(n−1),
+    r_∞=1/[1+φ^(1+p/3)]≈0.35885277 < p²,
+    |r_n−r_∞|≤h₀d_∞ρ^(n−1)/4.                        (13w)
+
+Уточнение НЕ превращает этот actual law в uniform terminal AF law.
+Уже u=FFFF и v=FRF имеют одинаковую cost4 и оба READY, но
+q_u=(1−r)p³, q_v=(1−r)p⁴. Любое дальнейшее полное уточнение
+сохраняет эти marginals; uniform terminal AF cut имеет у них равные
+descendant counts, следовательно равные marginals. Поэтому при n≥4
+
+    TV(q_n,uniform_AF_n)≥(1−r_n)(p³−p⁴)/2,
+    liminf TV≥(1−r_∞)(p³−p⁴)/2≈0.0289061.             (13x)
+
+Даже без предельной формулы p≤d_n≤1 при n≥2, что следует
+индукцией из recurrence. Поэтому r_n<1/2 и TV≥(p³−p⁴)/4>0.
+Кроме того, actual q(wFR)+q(wRF)=p²q(w), тогда как independent
+fresh coins дают 2p³q(w). Никакой overshoot limit не меняет эти
+finite-prefix identities. Это исключает конкретную попытку перенести
+(13n) через literal SAME-qubit raw tree даже асимптотически.
+
+Если каждая новая буква использует ОТДЕЛЬНУЮ fresh golden coin,
+то, напротив, q_w=p^{cost(w)}, и получается seed (13t). Но эти
+вероятности фиксированы данным приготовлением: свободного leaf
+simplex и его Euler equations оно тоже не предоставляет. Эти два
+native класса не отождествляются по одинаковым именам F/R.
+
+[Узкий exact checker](sources/d0_af_star_full_lattice_2026-10-17/check_native_stopped_history_interface.py)
+связывает матрицу с literal Lean owner, проверяет complete cuts1–7,
+actual Kraus/Markov effects, overshoot identity, recurrence, сохранение
+coarse масс при refinement и Q-ratio. Общие утверждения доказаны выше,
+а не экстраполированы из этих семи уровней.
+
+### 6.12. Exact native preparation и допустимый предел её источника
+
+Отдельный точный gate относится к прежнему finite addressed G/CNOT
+compiler с BASIS inputs; это не ограничение всех вещественных полей D0.
+a=sqrt(p) удовлетворяет monic a⁴+a²−1=0. Entries G,G⁻¹,CNOT и
+любого их finite retained word лежат в R=Z[a], состоящем из algebraic
+integers. Любая unconditional basis/cylinder Born probability есть
+сумма квадратов элементов R, также algebraic integer. Рациональный
+algebraic integer — целое. Следовательно exact r_i=1/d_N, d_N>1,
+в (13f) НЕ готовится таким finite word из basis seed. Это доказательство
+для всех длин, не finite circuit search. Canonical AF seed имеет в
+orthonormal path basis амплитуды powers a и не обходит этот gate.
+
+Есть и более сильная особенность s_*: exp h(p²)=φ^(2−p).
+По [теореме Гельфонда](https://www.mathnet.ru/rus/im4924)
+это transcendental number, поскольку φ algebraic≠0,1, а 2−p
+algebraic irrational. Поэтому s_*=2φ^(2−p)/(1+2φ^(2−p)) тоже
+transcendental. Finite word с algebraic entries и algebraic input
+не даёт его точно даже после algebraic conditioning. Здесь external
+transcendence theorem — analytic input; checker её не формализует.
+Основной rational-uniform obstruction от этого внешнего входа не зависит.
+
+Conditional fairness не запрещена: fresh pair FR и RF имеют по p³,
+поэтому на их union probabilities равны 1/2. Но retained failure,
+success mass и все suffix остаются в настоящей цене (13u); это не
+unconditional ζ_N и не exact full profile (13n). Almost-sure unbounded
+retry — также другой programme с собственным tail/resource consumer.
+
+Exact finite obstruction НЕ исключает refining approximation. Но
+поточечная плотность circuit states не даёт C¹ section: reachable
+states в этом ring-class счётны, и continuous map связного field chart
+в них постоянен. Уже существующий
+[engine-supported owner](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md)
+отделяет свой вещественный smooth germ от literal Z[a] domain.
+Поэтому нельзя для каждого g отдельно выбрать circuit и затем
+дифференцировать его индекс как физическое состояние.
+
+Положительный source-limit consumer всё же можно сформулировать
+конструктивно. Он переносит УЖЕ существующий smooth native-query
+germ, не производит отсутствующую Ψ_*(g) oracle. В таком germ есть
+n_q actual field-dependent queries с derivatives до3 bounded by L≥1
+и n_c field-independent orthogonal controls. При FULL operator
+approximation каждого control с ошибкой η product telescope даёт
+
+    ||U_η−U_0||_(C³,op)
+       ≤C n_c η(1+n_q L)³.                            (13y)
+
+Все compiler work registers сохраняются. Их нулевые ideal probabilities
+нельзя игнорировать: Shannon entropy не C² при generic rank birth.
+Если work ЕЩЁ coherent и не стал immutable old record, final actual
+G^k на каждом из b work bits может дать |Pr(1)−1/2|≤ν≤1/6,
+без новых ancillas. Действительно θ=acos a имеет θ/π irrational:
+irreducible a⁴+a²−1 имеет nonreal conjugates, тогда как cosine
+рационального кратного π totally real. Powers G плотны в SO(2).
+Это existence конечного approximation word, не physical clock law
+и не новый efficiency bound.
+
+В ideal clean-work extension все outcomes теперь имеют law q_i μ_z,
+μ_z≥3^(−b), H(q⊗μ)=H(q)+Σ_j h(μ_j). Это настоящая полная цена;
+последний член field-independent только при фиксированных controls.
+Для всех work-preparation directions он не нулевой, но
+max_z|log μ_z+b log2|≤4bν. Для all-work вывода дополнительно нужны
+ПОЛНЫЕ ideal effects F_(i,z)=F_i⊗R*|z><z|R, R=⊗_j G^(k_j),
+а не лишь эта law на clean input. Тогда при скалярном logical
+POVM-gradient точное operator тождество
+G_joint=G_log⊗I+I⊗R*diag(−log μ_z)R/ℓ даёт отклонение от
+scalar I не более 4bν/ℓ. Это контролирует также entangling
+preparation variations, не только геометрический source. Из одного
+compressed logical gradient такое full-carrier утверждение не следует.
+
+Пусть D — число logical outcomes, q_min>0 на данном chart,
+δ=q_min3^(−b)/2, а actual и ideal нормированные complete amplitude
+germs имеют C³ norms≤L и расстояние ε≤q_min3^(−b)/4. Тогда все
+actual probabilities≥δ и smooth-log composition даёт безопасную оценку
+
+    ||H(q_actual)−H(q_ideal)||_C³
+        ≤C D 2^b L⁷ ε/δ³.                             (13z)
+
+Та же правая часть, делённая на ℓ, ограничивает C² first-source error.
+Здесь достаточно universal C=2^20 при max по coordinate partial
+derivatives Hilbert-норм полных outcome amplitudes. Условия bν→0
+и правая часть (13z)→0 — достаточный error budget. Существование
+compiler sequence с этим budget при growing b НЕ следует из плотности
+операций: это отдельное error-versus-floor/resource requirement.
+Ни один actual work outcome или его derivative не вычитается.
+
+Полная all-work preparation оценка дополнительно требует uniform
+operator/effect approximation на ВСЁМ объявленном carrier, включая
+offblank work directions. Старый compiler bound только на J-input
+subspace этого не доказывает. Если известен лишь такой bound, (13z)
+переносит только уже заявленный field germ с фиксированной work
+подготовкой. Final rotations старых immutable records недопустимы.
+Также не получены exact joint roots, spatial recovery или source
+реальных factory/controller variations одним C³ bound.
+Для continuum consumer малая абсолютная ошибка тоже недостаточна:
+из (13p) ошибка восстановленного DP равна
+`a_n^(-1)(M_n*)^(-1)(DS_actual−DΓ_n)`, a_n=c₀/(ℓD_n).
+После этого применяется настоящая spatial reconstruction/norm map.
+Её норму и a_n необходимо включить в error budget; (13z) сам по себе
+не даёт vanishing NORMALIZED Einstein residual или raw h⁻²/#216 bound.
+
+**Изменение маршрута:** stopping valuation (13u) закрыт при SAME w=q;
+точная mathematical old-leaf/AF изометрия построена. Literal SAME-qubit
+реализация исключена persistent source/variation gap (13x), а exact
+finite basis compiler не реализует (13n). Следующий positive consumer —
+настоящий READY/PENDING LEFT instrument с разрешёнными preparations
+либо refining FULL-source/query programme, удовлетворяющий (13y–z).
+Он должен сохранить полную историю и действительные variations.
+Перебирать новые Einstein readouts, повторно назначать t(h) или
+заменять native source одним uniform prior для этого не требуется.
 
 ## 7. Вся более ранняя история остаётся своим источником
 

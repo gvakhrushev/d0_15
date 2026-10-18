@@ -2,6 +2,24 @@
 
 ## 18 October 2026 — complete labelled source with solved free preparation
 
+**Actual execution gate, input `afab5f09`:**
+[full-source §§6.11–6.12](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+construct the raw-leaf/AF diagonal-code isometry and prove exact complete
+stopping valuation H(q)/log(phi), with no extra normalizer under SAME
+pathwise Book w=q. But literal SAME-active-qubit fullStep has a different
+Markov law and variation image. Its positive stopped-entropy root is
+solved explicitly; a fixed pair of equal-cost READY prefixes proves a
+persistent TV gap from the uniform fine-AF profile, also after refinement.
+Therefore this concrete raw shortcut cannot supply the bridge below.
+An algebraic-integer theorem excludes exact uniform profiles from finite
+basis G/CNOT preparation; it does not exclude approximation or real field
+inputs. A quantitative C3 full-word/C2 source transfer criterion retains
+all coherent work and its preparation defect, with explicit whole-carrier
+and growing-width requirements. The next consumer is the actual controlled
+LEFT stopping instrument/preparation image or a full-source refining query
+programme, not another selected readout. See strategic §7.6. Physical GR,
+matter/controller and global closure remain open.
+
 **New positive bridge, input `4baad450`:** [full-source §§6.7–6.10](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 derive the missing weight equation and an explicit OFF-SHELL stationary
 profile for the complete inherited-fine-history plus five-cut law. Its

@@ -12,6 +12,37 @@ Execution: `GitHub-first`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 18 October: construct the actual inherited-leaf interface
+
+Input `afab5f09`. Previous goal turn made progress by publishing the
+complete off-shell stationary profile and exact nonlinear source map.
+Now root pursues the remaining execution arrow: retained raw records
+and native AF diagonal effects must be one actual full-history interface,
+with costs/normalizers and admissible variations preserved. Root owns
+this brief, the same source/synthesis and one bounded calculation only
+if it decides that arrow. Read-only assistants inspect (i) the actual
+raw parser/AF diagonal embedding and protected archive, (ii) the physical
+valuation and stopping-time law, and (iii) constructive reachability of
+the positive stationary preparation on the existing primitive class.
+No new measurement is silently inserted, no real-valued state/controller
+oracle is assumed, and no candidate action is chosen. The result must
+construct the interface or give an exact obstruction with a named
+native consumer; repeating conditional projector availability is not
+sufficient. Preserve the full matter/reference and all old/work outcomes.
+
+Consumed in full-source §§6.11–6.12 / strategic §7.6: actual bounded
+stopping valuation is now proved, including overshoot cancellation.
+The correlated raw/AF code is constructed, with its full-GNS limit
+explicit. Literal SAME-active-qubit roots are solved by recurrence;
+their unequal same-cost prefix masses give a persistent refinement gap
+from the required uniform terminal AF law. Exact finite basis G/CNOT
+preparation is excluded by algebraic integrality, without excluding
+continuous field inputs or refining approximation. The latter now has
+an explicit C3-word/C2-source budget retaining coherent work, its
+preparation residual and offblank/full-carrier requirements. Next consume
+an ACTUAL controlled LEFT instrument/preparation image or a full-source
+query sequence meeting that budget. No density-to-physical-root promotion.
+
 ### 18 October: solve the inherited-history weight consumer
 
 Input `4baad450`. Previous turn made progress: exact fixed-t recovery,

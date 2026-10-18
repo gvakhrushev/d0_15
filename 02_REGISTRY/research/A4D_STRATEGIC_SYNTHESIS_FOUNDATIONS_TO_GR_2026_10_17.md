@@ -977,6 +977,74 @@ entropy-контроль intake не опровергнут и не обходи
 binding открытым; variable-cost raw stopping cut не отождествлён с
 этим finite fixed-measurement cut по одному имени AF level.
 
+### 7.6. Проверка самого native исполнения: цена остановки решена, raw shortcut исключён
+
+Продолжение от `afab5f09`, потребитель (7.9–7.11). В
+[full-source §§6.11–6.12](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+построена exact raw-leaf→AF diagonal-code изометрия, согласованная
+с обоими diagonal LEFT/RIGHT effects и настоящими inclusions.
+Дополнение full GNS сохранено. Но LEFT=RIGHT лишь на correlated
+code; произвольные full-GNS preparation variations его не сохраняют.
+Поэтому это необходимая конструктивная часть binding, не весь (7.10).
+
+**Stopping source больше не неизвестная нормировка.** Любой actual
+complete F/R instrument, исполненный до bounded first-crossing cut,
+имеет Σ_w M_w* M_w=I. При прежнем pathwise Book w=q его полная
+ожидаемая Cost−Info точно H(q)/ℓ. Pending overshoot входит в обе
+части и сокращается. Если исполнены дальнейшие rounds, retained
+suffix entropy сохраняется. Эти два опыта не смешиваются.
+
+**Literal SAME-qubit shortcut не работает даже в пределе.** Его
+actual fullStep Kraus дают Markov transition [[p,p²],[p²,p]].
+Полный stopping-price source решён двухсостоянийной recurrence;
+единственный positive probability root имеет first-R mass
+
+    r_n→1/[1+φ^(1+p/3)]≈0.35885277 ≠p².
+
+Существеннее, READY prefixes FFFF и FRF одинаковой cost4 имеют
+ratioφ, тогда как uniform terminal AF law даёт им равные masses.
+У любого полного дальнейшего refinement старые массы сохраняются:
+
+    TV(q_n,uniform_AF_n)≥(1−r_n)(p³−p⁴)/2,
+    liminf TV≥0.0289061… .                              (7.12)
+
+Таким образом исходный root не превращается в (7.10) одним ростом
+глубины. На cost2 уже свободный leaf contrast имеет source −ε,
+хотя actual одномерное preparation equation решено. Это точное
+несовпадение допустимых касательных, не просьба ещё раз проверить CI.
+Fresh independent coins дают canonical PF seed, но фиксированные
+output probabilities также не предоставляют свободный AF simplex.
+
+**Exact finite preparation не подменяет предельный вывод.** Для
+finite G/CNOT words с basis inputs все unconditional probabilities —
+algebraic integers в Z[a]; следовательно exact рациональный r_i=1/d,
+d>1, невозможен. Это scoped gate этой compiler grammar, не запрет
+continuum D0 inputs или refining approximation. Conditional fair
+first-unequal bit — другая retained law с failures и residual records.
+
+Есть положительный количественный consumer для последней возможности:
+constant-control approximation уже существующего smooth native-query
+germ переносит full word в C³ по явному product telescope. Near-fair
+G-powers на ЕЩЁ coherent work дают positive full-pointer floor, не
+стирая ни одного work outcome; явная smooth-log оценка переносит цену
+в C³ и first source в C². Work preparation defect также учтён.
+Для offblank work tangents нужен full-carrier operator bound; один
+старый blank-input compiler theorem недостаточен. Growing work width
+требует собственного error/floor budget, а не объявления density
+теоремой о native jets или exact roots.
+
+Следующая положительная стрелка теперь конкретна: actual READY/PENDING
+LEFT instrument с его разрешённой preparation image либо full retained
+query/compiler sequence с указанным source budget. Exact instrument
+и source identity переносят точные корни через (7.11). Approximate
+compiler route переносит source и Euler residual; exact finite native
+critical family и физический закон выбора ею не доказаны. Для предела
+остаток требуется оценить ПОСЛЕ собственной нормировки и реконструкции
+геометрических equations, не только в абсолютной chart C² norm.
+Новый Einstein readout или назначение t(h) этого перехода не заменяют.
+Материя, controller и global source по-прежнему должны принадлежать
+той же полной программе.
+
 ## 8. Полный source: что теперь вычислено и что ещё требуется
 
 ### 8.1. Потреблённые входы 17–18 октября
