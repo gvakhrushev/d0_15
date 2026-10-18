@@ -44,6 +44,39 @@ def main():
         sp.simplify(dF0 - 2 * lam * p * sp.sqrt(p)) == 0,
     )
 
+    # Directly test Book 03's existing feedback component.  Here zeta is its
+    # fugacity; 0 < zeta < 1 keeps the log-det domain for every unitary U.
+    zeta = sp.symbols("zeta", real=True)
+    F_matrix = sp.simplify(P * U.T * Q * U * P)
+    S_fb = -sp.log(sp.det(identity - zeta * F_matrix))
+    S_fb_base = sp.simplify(S_fb.subs(x, 0))
+    S_fb_source = sp.simplify(sp.diff(S_fb, x).subs(x, 0))
+    expected_S_fb_source = 2 * lam * zeta * p * sp.sqrt(p) / (1 - zeta * p**2)
+    require(
+        "book03_feedback_base_operator",
+        sp.simplify(F_matrix.subs(x, 0) - p**2 * P) == sp.zeros(2),
+    )
+    require(
+        "book03_feedback_base_price",
+        sp.simplify(S_fb_base + sp.log(1 - zeta * p**2)) == 0,
+    )
+    require(
+        "book03_feedback_field_source",
+        sp.simplify(S_fb_source - expected_S_fb_source) == 0,
+    )
+    require(
+        "book03_feedback_constant_map_zero_source",
+        sp.simplify(S_fb_source.subs(lam, 0)) == 0,
+    )
+    require(
+        "book03_feedback_same_base_distinct_source",
+        sp.simplify(S_fb_source.subs(lam, 1)) != 0,
+    )
+    require(
+        "book03_feedback_free_slope_is_response_visible",
+        sp.simplify(S_fb_source.subs(lam, 2) - 2 * S_fb_source.subs(lam, 1)) == 0,
+    )
+
     J_r = -sp.log(1 - r * F)
     S_mode = (-2 * sp.log(w0) + 2 * J_r) / sp.log(phi)
     source = sp.simplify(sp.diff(S_mode, x).subs(x, 0))
@@ -67,6 +100,9 @@ def main():
 
     print("PASS: U_lambda(0)=G and F_lambda(0)=p^2 for every lambda")
     print("PASS: D F_lambda(0)[K]=2*lambda*p*sqrt(p)")
+    print("PASS: Book03 S_fb base is -log(1-zeta*p^2) for every lambda")
+    print("PASS: D S_fb(0)[K]=2*lambda*zeta*p^(3/2)/(1-zeta*p^2)")
+    print("PASS: same Book03 gate and feedback price admit zero and nonzero kinematic source germs")
     print("PASS: D S_mode(0)[K]=lambda*p^(9/2)/(log(phi)*(1-p^5/4))")
     print("PASS: lambda=0 and lambda=1 give zero and nonzero sources")
     print("PASS: exact unique-mode margin remains strictly above 1/2")

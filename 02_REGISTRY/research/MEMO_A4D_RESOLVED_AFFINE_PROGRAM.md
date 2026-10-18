@@ -186,7 +186,12 @@ detectors cannot substitute for physical programme/source selection.
 The concurrent [field-pullback boundary](A4D_GOLDEN_MODE_FIELD_PULLBACK_BOUNDARY_2026_10_18.md)
 at581374fe is consumed here: two same-base smooth germs have different
 sources on a genuine metric tangent, locating the missing native rule
-without asserting two physically admitted programmes.
+without asserting two physically admitted programmes. Its new direct
+Book03 `S_fb=−log det(I−zF_N)` control gives the same result on the primary
+feedback component: at the same golden base gate and same base price,
+`D S_fb[K]=2λzp^(3/2)/(1−zp²)` varies with the unbound field-to-unitary
+slope `λ`. This proves response visibility of the missing kinematic datum,
+not native physical admission or a complete-price source.
 The existing [complete field-source §0.3](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
 already supplies the conditional bounded32-word operator/source map.
 Its native code admission and the independent scalar-input query remain

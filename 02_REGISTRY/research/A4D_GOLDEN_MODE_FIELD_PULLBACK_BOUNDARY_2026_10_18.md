@@ -27,6 +27,12 @@ new gate or action, and does not close G0 or derive ОТО.
   `9e2603039b937d7985da97bc9e4c72a9f433f2363477560806c1bdaee627ae05`.
   It supplies the genuine field tangent and proves completeness only for
   the declared kinematic unitary interface, not physical admission.
+- The primary [BOOK_03 feedback action and golden tick gate]
+  (../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md,
+  §§03.3.2, 03.26), Git blob `ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa`.
+  This pins the existing component `S_fb = -log det(I - z F_N)`,
+  `F_N=P_N U_N* Q_N U_N P_N`, and its golden base splitter; the calculation
+  below does not add an action term.
 
 ## Same base gate, different field source
 
@@ -86,6 +92,46 @@ U_λ(x), 0≤F_λ≤I, so K_good=w₀(I−rF_λ)≥(1−2p⁶)I. Exactly,
 Thus the source-changing germ does not cross the detector's
 K_good²>I/2 uniqueness margin.
 
+## Direct pullback of the existing Book 03 feedback component
+
+The same unbound field-to-unitary derivative is visible in the primary Book
+03 feedback component, without using the later three-coin mode price. Write
+its fugacity as `ζ` to distinguish it from other uses of `z`. On the declared
+golden two-port block, take
+
+```text
+P = diag(1,0), Q = I−P, G = [[√p,−p],[p,√p]],
+U_λ(x) = G R(λx), F_λ(x) = P U_λ(x)* Q U_λ(x) P.
+```
+
+Here `G` is exactly Book 03 §03.26, `p+p²=1`, and `x=ξ(q)` is the already
+owned coordinate with `Dξ[K]=1` on the genuine nongauge joint-field tangent
+`K=diag(1,1,0,0)`. Every `U_λ` is unitary and has the same reference gate
+`U_λ(0)=G`. Direct multiplication gives
+
+```text
+F_λ(x) = (p cos(λx)+√p sin(λx))² P,
+F_λ(0) = p²P,
+DF_λ(0)[K] = 2λp√p P.
+```
+
+Thus the complete base feedback operator and base price agree for every
+`λ`, with `S_fb(0)=−log(1−ζp²)`. For the existing closed component
+`S_fb=−log det(I−ζF_λ)`, on `0<ζ<1` the exact field source is
+
+```text
+DS_fb(0)[K] = 2λζp^(3/2)/(1−ζp²).
+```
+
+The constant germ `λ=0` has zero source and `λ=1` has a strictly positive
+source. The slope is response-visible on the genuine metric tangent; it is
+not a change of the action, golden base gate, projector split, or calibration.
+This is a same-base boundary for the actual Book 03 component. It still does
+**not** prove that either germ is admitted by native D0, and it does not
+identify this component with the complete `Cost−Info`/Book stack. The missing
+datum is still the native rule from `(q,D,b,m,record)` to `U_N` (and its
+admitted tangent/refinement law), followed by the full same-program source.
+
 ## G0 consequence and limit
 
 The determinant theorem supplies the derivative with respect to F; the
@@ -100,5 +146,6 @@ followed by the same program's stationarity law.
 
 The exact checker is
 [`check_golden_mode_field_pullback.py`](sources/d0_golden_mode_field_pullback_2026-10-18/check_golden_mode_field_pullback.py).
-It verifies the two shared-base completions, the exact first derivative, and
-the unique-mode margin in ordinary and optimized Python.
+It verifies the two shared-base completions, both the primary Book 03
+feedback-source derivative and the later mode-price derivative, and the
+unique-mode margin in ordinary and optimized Python.
