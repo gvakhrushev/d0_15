@@ -2813,3 +2813,36 @@ Choi-reference, matter и ВСЮ RIGHT/reference128; только внешняя
 Она задаёт следующий количественный тест, но сама по себе не даёт
 совместной физической последовательности корней: нужны bounded full
 price jets, admission, общие источники и recovery.
+
+
+### 7.25. GR как строгий quotient микроскопических записей: источнику достаточно двух first-jet коэффициентов
+
+Новый positive theorem [A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md) потребляет ТЕ ЖЕ corrected all40 Lorentz-star Euler, original Hodge scalar/top full CAR16, настоящую old AF LEFT/PF меру и один исходный **двухтактовый** scene Book03 \(J_2\). Его смысл для общей D0⇒ОТО стрелки значительно шире очередного конкретного pp-wave.
+
+Для каждого even L=2m, любой произвольный вектор \(m\) углов \(\theta_j\) задаёт в реальном CAR16
+\(D_u^+\Psi_j=s(\cos\theta_j,\sin\theta_j)\), \(D_u^+\Psi_{j+m}=-D_u^+\Psi_j\). Это истинная ЗАМКНУТАЯ native запись: каждый отдельный finite gradient имеет одну и ту же длину \(s\), но форма/фазы материальной истории различны и остаются физически различимыми. На source-compatible \(\widehat g\) из реального density/CAR clock все такие records имеют \(q=g^{uu}s²=0\), одинаковый NONZERO coframe source \(\partial q/\partial v_v^+=-2s²/h\), exact v-Stokes для ОБЕИХ независимо варьируемых scalar/top компонент и SAME fixed full star40 source. Поэтому оригинальный полный локальный J₂ имеет
+\[
+\operatorname{Crit}_{e,U,\Psi}J_2\ \supset\
+  (S^1)^m\times\{\text{one fixed nonflat }\widehat g:
+   R_{uu}=-2\lambda_-(z)s²\}.
+\]
+Все24 independent links, all16 coframe, scalar/top2 материальные строки0 ТОЧНО при каждом h. После global SO2 quotient остаются ≥m−1 истинных микроскопических параметров; Hessian FULL reduced matter+geometry price имеет по меньшей мере соответствующие tangent zero modes, потому что это ГЛАДКОЕ многообразие точных joint roots, а не small-value comparison. При \(\theta(u)=2\pi u+f(u), f(u+1/2)=f(u)\) получается EXPLICIT infinite-dimensional family of smooth null matter records with \(|\Psi'(u)|²=s²\) на ОДНОЙ и той же smooth Einstein metric. Правило q=0 означает, что истинный coarse feedback E/B/price один и тот же, хотя материальное состояние и Hodge current могут различаться. Ранее данное curvature/Noether-charge равенство является специальным следствием CIRCULAR microhistory, не универсальным для произвольной фазы.
+
+**Системное следствие:** на всём этом NONEMPTY null/star sector для полной физической цены достаточен ИСТИННЫЙ measured joint source
+\[
+D S_{\rm whole}|_{f=q=0}=a_hD\sum_x\widehat f_x+b_hD\sum_xq_x,\quad a_h\ne0,
+\]
+с **собственными** независимо решёнными clock/observer/RIGHT/preparation/history rows. Тогда ВЕСЬ многомерный nonlinear GR/matter Euler следует из двух source numbers: \(R_{uu}=-2(b_h/a_h)s²\), в то время как любые higher action powers НЕ влияют на тот же joint first Euler в общем f=q=0 состоянии. Это не автоматическое условие для изначальной H+J+R цены, а резкое reduction of the SAME-source proof target. Вместо бесконечной механики измерений надо доказывать две measured covectors и настоящую stationarity остатка.
+
+**Снята ещё одна независимая price-choice неоднозначность на одном AUTHENTIC complete detector:** собственная Golden fine-bad law owner6.66 для \(g=\det(I-zF)^2=e^{-2J}\) даёт
+\[
+D S_{\rm mean}=\kappa(g)D S_{\rm MAP}=2\kappa(g)D[J/\log\varphi],
+\quad
+\kappa=g[H_\beta-\log((1-g)/g)]>0
+\]
+в strict-good gap. Все complete bad outputs, old defining multiplicities, full input preparations и REAL first jets сохранены. Это равенство FULL Euler zeros для SAME detector, не numerical equality двух действий и не selector physically chosen Book full programme. С genuine fixed old prefix \(D\pi_{\rm old}=0\) оно переживает сохраняемый архив; arbitrary moving old price/normalizer добавляются обратно со своими источниками. Абстрактная E_N polynomial-POVM реализация использует реальные N copies и global polynomial boundedness; их physical preparation/admission не объявлены автоматическими.
+
+**Проверка:** репозиторный standard-library script [check_microhistory_einstein_quotient.py](sources/d0_microhistory_einstein_quotient_2026-10-18/check_microhistory_einstein_quotient.py). Независимая JS сверка: original F/R n20,L4 даёт10946 true READY words и все256 positive uneven sites; n24,L8 даёт75025 и все4096 positive uneven sites. With s=.025, все из произвольных проверенных angles имеют ровно \(E=.000625\), одну Ricci \(R_{uu}=.029270508439855\), а Hodge current НЕ постоянен. Symbolic all40 retained from original certified owner; no claim of new Lean/CI or physical GR closure.
+
+**Новая стратегия одной задачи:** exact microscopically inequivalent histories with one Einstein metric снимают требование искать специальное состояние или полный nonlinear action для этого null-sector. Значит физический финал теперь — доказать, что истинная **compulsory** whole-book/full-history first source имеет \(a_h,b_h\), и что оставшиеся REAL oscillator/clock/preparation/old archive source rows зануляются на jointly admitted lift. Затем их же analytic source/norm перенос к общему GR+matter. Не подменять этот переход выбором MAP вместо mean, затёртой old price, отдельным stress или произвольной E-подготовкой. Оригинальные fixed-g/tau/raw#216 и all-time physical selection остаются OPEN.
+
