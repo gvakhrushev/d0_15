@@ -93,3 +93,31 @@ for xx, yy in [(sp.Rational(1,2), sp.Rational(1,2)),
     assert op_error >= sp.Rational(1,2)
 assert U_swap*P_old0 != P_old0*U_swap
 print("AF_BIMODULE_COMMUTANT_NO_GO: EXACT PASS, sharp error floor 1/2")
+
+# At the SAME terminal AF level, uniform fine-leaf mass and the canonical
+# compatible trace have genuinely different RIGHT-block center marginals.
+# This does NOT contradict fixed-coarse-level PF convergence from descendants.
+phi = 1/p
+for n in range(11):
+    aN, bN = sp.fibonacci(n+2), sp.fibonacci(n+1)
+    dN = aN+bN
+    xPF = sp.simplify(aN*p**(n+1))
+    xUniform = sp.Rational(aN,dN)
+    assert sp.simplify(xPF+bN*p**(n+2)-1)==0
+    assert sp.simplify(xPF-xUniform)!=0
+    if n == 3:
+        # Exhaust all within-block directions on this finite simplex:
+        # source rank d-2. The missing direction changes central X/Y mass.
+        contrasts=[]
+        for j in range(1,int(aN)):
+            vec=[0]*int(dN); vec[0]=1; vec[j]=-1; contrasts.append(vec)
+        for j in range(int(aN)+1,int(dN)):
+            vec=[0]*int(dN); vec[int(aN)]=1
+            vec[j]=-1; contrasts.append(vec)
+        assert sp.Matrix(contrasts).rank()==int(dN)-2
+        assert all(sum(v[:int(aN)])==0 and sum(v[int(aN):])==0
+                   for v in contrasts)
+center_gap = sp.simplify(phi/sp.sqrt(5)-p)
+assert sp.simplify(center_gap-(1-2/sp.sqrt(5)))==0
+print("AF_RIGHT_CENTER_CONSERVATION: EXACT PASS; moving-level TV=",
+      center_gap, float(center_gap))
