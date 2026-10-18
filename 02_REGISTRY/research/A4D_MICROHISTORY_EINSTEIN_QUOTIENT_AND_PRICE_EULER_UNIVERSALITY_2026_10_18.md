@@ -98,6 +98,38 @@ W_+=\tfrac12(A-D),\ W_\times\ \text{independent}.
 \]
 This metric is literally the SAME fixed \(\widehat g\) at EVERY lattice h after actual \(w/\bar w\) dressing; \(A,D,W_\times\) do not have to vary as L grows. Both independent gravitational Weyl polarizations survive. The x/y transverse collar is fixed; periodic u,v are mathematical lattice regulators, not a global physical compact-null causal claim. All free interior Euler rows vanish individually, so their genuine **unweighted raw \(h^{-2}\ell^1\) sum is identically ZERO at every h** for this stated complete J₂ geometry/matter component. The different original v8 whole-price/independent-tau/full-boundary #216 theorem is not renamed.
 
+### 1.1. FIXED full RIGHT128 purification for EVERY nontrivial microscopic history, without changing the CAR clock
+
+The previous source-owner §6.61 used a special site-character basis with L≥8. There is a simpler entirely REAL construction that works for every even L≥4 used in the theorem and keeps the **complete existing reference128 Gram IDENTICAL for every microhistorical angle**. Let S=L⁴≥256 and choose 64 distinct non-self-conjugate lattice wavevector pairs \(\{k,-k\}\) modulo L (at L=4 there are \((256-16)/2=120\) such pairs, so the choice exists; for larger even L there are more). For each pair define two REAL site characters
+\[
+f_{k,c}(x)=\sqrt{2/S}\cos(2\pi k\cdot x/L),\qquad
+f_{k,s}(x)=\sqrt{2/S}\sin(2\pi k\cdot x/L).
+\]
+The 128 real functions are orthonormal by the original finite Fourier orthogonality, and at EVERY site their squared sum is exactly \(64(2/S)=128/S\).
+
+On the ORIGINAL site×full16 CAR carrier, with the truly normalized m_x(\theta) of (4), define the FULL 128-column Schmidt/preparation matrix
+\[
+\boxed{
+C_{(x,\alpha),a}(\theta)
+=\frac1{\sqrt{128}}\;f_a(x)\,m_x(\theta)_\alpha,
+\quad a=1,\ldots,128,\quad\alpha=0,\ldots,15.
+}
+\tag{4a}
+\]
+Then on all 128 RIGHT columns simultaneously,
+\[
+\boxed{
+C(\theta)^T C(\theta)=I_{128}/128,\quad
+\operatorname{Tr}_{\mathrm{site,CAR}}|C\rangle\langle C|
+=I_{128}/128,\quad
+\rho_{\mathrm{site,CAR}}(x)=\frac1S|m_x(\theta)\rangle\langle m_x(\theta)|.
+}
+\tag{4b}
+\]
+**Proof:** the first identity is \(\sum_x f_a f_b\|m_x\|^2/128=\delta_{ab}/128\); the local density uses \(\sum_a f_a(x)^2=128/S\). All derivatives of the RIGHT Gram with respect to the m arbitrary matter-history angles are identically zero, not merely O(h). The locally recovered timelike CAR first-grade and its zero spatial current are the same owned §6.61 kinematics, with the true scalar/top variations unrestricted as encoded. The missing12 grades remain in the variational Hilbert space, and no independent 128-dimensional state has been postulated: this is a real purification USING THE EXISTING reference128.
+
+This is an EXACT **state/reference/normalization compatibility theorem**, not the autonomous original native H+J+R *preparation stationarity*: that price still has its separate full \([\Delta,CC^*]\) source, and physically compiling the chosen site-character preparation also costs an actual native word. It means, however, that increasing the dimension of the gravitationally invisible microscopic history family does NOT force any change in the full fixed-RIGHT128 state or CAR clock marginal. That eliminates an independent kinematic restriction on the constructive reverse Einstein arrow §6.
+
 ## 2. An explicit INFINITE-DIMENSIONAL continuum limit, not only growing finite rank
 
 There is no need to guess which sequence of the huge finite torus approximates a legitimate smooth matter record. Let \(f:\mathbb R\to\mathbb R\) be ANY smooth \(1/2\)-periodic function. Define a smooth unit velocity
