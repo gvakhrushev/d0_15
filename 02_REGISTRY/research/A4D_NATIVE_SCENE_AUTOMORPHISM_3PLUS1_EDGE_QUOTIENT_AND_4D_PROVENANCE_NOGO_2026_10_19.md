@@ -148,3 +148,22 @@ It must retain both (i) the order-sensitive odd cycles and (ii) the original wor
 This is an ORIGINAL-GR PROVENANCE NO-GO and a constructive native 3+1 invariant history quotient, **not** full gravity closure. No additional spectrum census, geometry jet, fitted coupling, Book promotion, or speculative spontaneous symmetry-breaking selector is proposed. \`GR_closed=false\`.
 
 **Reproduction**: [exact zone cubic + all718 Poisson/Fisher code](sources/d0_physical_binary_return_2026-10-19/check_native_scene_invariant_3plus1_no_lorentz.py), independently run locally and passed. The representation-theory proof is elementary and given here; the checker verifies explicit original orbit, graph, quotient, pressure and Hessian identities.
+
+
+## 6. Explicit rank obstruction against the already-built six-Lorentz physical detector
+
+The distinction above can be tested against an EXISTING real D0 observable, not against a wished-for Einstein metric. The current #334 \`A4D_SINGLE_RUN_PERRON_BOOK_CAR16_FRESH_FLAG_SOURCE_WELD_2026_10_19.md\`, §7, owns a **complete positive** fixed CAR16 Julia/Choi detector, with native Golden coupling \(p\), all failure events retained, and local six-generator Jacobian
+\[
+D_\xi\mathcal D(0)=\frac{p^2}{6\sqrt2}\,I_6,\qquad\operatorname{rank}D_\xi\mathcal D(0)=6.
+\]
+This is a mathematically constructed native-*type* readout; actual 4D Role→scene gate/clock/price still lacks physical admission.
+
+Now suppose a claimed graph-only, \(G\)-permutation-natural **gauge-invariant CLOSED-history** compiler from those six local Lorentz variables \(\xi\in\mathbb R^6\) passes **solely through the canonical four-dimensional scalar Cost quotient** in (2). Its six-output detector probabilities have the form \(\mathcal D(\xi)=F(q(\xi))\), with \(q:\mathbb R^6\to\mathbb R^4\). Elementary chain-rule rank gives
+\[
+\boxed{\operatorname{rank}D_\xi(F\circ q)(0)\le4<6.}\tag{7}
+\]
+Therefore it can NEVER equal the already-owned six-independent-source CAR positive detector **as a first-order physical observation**, no matter what nonlinear \(F\) and \(q\) are chosen. In particular, using only the chiral odd cycle would have rank ≤1. This is a strict **no-go for the graph-invariant scalar-closed-history-only interface**, not for the original Book noncommutative memory, whose 327 cycles can carry non-Abelian holonomy matrices and whose CAR16 source already has rank6. It also does not apply to a proposed readout which explicitly retains raw endpoint or non-invariant address data rather than passing through the gauge quotient.
+
+Furthermore the already-owned original Perron/Doob source and target embeddings \(J_0,J_1\), and their feedback \(F_A=I-T^2\), all commute with the natural simultaneous relabeling by \(G\) at constant original primitive Cost: \(P,\pi\) are group-invariant. No word built **only** from the unlabelled scene adjacency, native scalar \(P,\pi,J_0,J_1\) and their spectral functions can silently produce an invariant rank-four orthogonal projector on the original *vertex* carrier. To obtain the measured six independent Lorentz source directions, the original CAR/Hodge/four-Role archive must be connected through a real symmetry-breaking or symmetry-covariant *typed map*, whose preparation and execution are paid and whose action-source is independently derived. A fitted scalar Book pressure or renaming of the 3+1 quotient cannot supply such a map.
+
+This is the strongest diagnostic use of the new theorem: it **refutes a complete physical six-direction detector factorization**, not merely an interpretation of a negative Fisher matrix as Lorentzian geometry. Still no global Einstein Euler identification; \`GR_closed=false\`.
