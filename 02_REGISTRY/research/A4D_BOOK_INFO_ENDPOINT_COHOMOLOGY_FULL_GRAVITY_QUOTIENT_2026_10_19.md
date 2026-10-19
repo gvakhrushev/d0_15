@@ -124,6 +124,35 @@ as a **FULL finite matrix identity**, all amplitude orders, ALL original coframe
 
 **Essential physical typing:** multiplying a proper Lorentz \(U_e\) by a positive scalar generally leaves SO(1,3); a weighted loop's BASELINE value also need not be proper Lorentz. Moreover the rescaling can violate Kraus completeness or change physical Born weights on open paths. Equations (8)–(10) therefore give **invariance to the Info-allocation θ**, NOT an admissible construction of the ORIGINAL geometric links or a reason to identify arbitrary weighted GL loops with the Book03 feedback F. If a physical native programme does NOT feed the Cost/Info cocycle through this central edge-weight interface, no θ-invariance of its own independent geometric source follows from the notation alone. The original six-plaque star \(\mathcal P_\star(e,U)\) is already θ-independent when \(U\) is itself held fixed; the theorem says a compatible central Cost-based loop dressing cannot reintroduce θ-dependence.
 
+### 3.1. NONFLAT two-null GR curvature survives the endpoint quotient EXACTLY
+
+This θ-invariance is not vacuous, flat, or a mere abelian cancellation. On the ORIGINAL noncommuting null Lorentz basis of [two-null crossing owner](A4D_DOUBLE_NULL_CARTAN_CROSSING_RICCI_WEYL_SPLIT_2026_10_19.md), put
+\[
+N_2=E_{-,2}+E_{2,+},\qquad
+\bar N_3=E_{+,3}+E_{3,-}.
+\]
+The actual real 4×4 commutator is
+\[
+\boxed{
+[N_2,\bar N_3]=E_{23}-E_{32}=:J_{23}\ne0 .
+}\tag{10a}
+\]
+Form the same original FOUR edge matrices of the finite based commutator loop (not a separate new gravitational action):
+\[
+P(a,b)=e^{aN_2}e^{b\bar N_3}e^{-aN_2}e^{-b\bar N_3}
+=I+abJ_{23}+O(a^2b,ab^2).
+\]
+For any smooth field-dependent \(I_0,I_1,I_2,I_3\), distribute Book03 transition information with ANY θ among those same four edges as in (1), retaining their actual edge Costs. Equation (9) now gives the EXACT **NONPERTURBATIVE** identity
+\[
+\boxed{
+P_\theta(a,b;I,C)=P_\eta(a,b;I,C)
+\quad\text{for ALL }a,b,\theta,\eta,I,C,
+}\tag{10b}
+\]
+where P_θ is the SAME fully loop-weighted matrix product and both θ share the original Costs. Its \(abJ_{23}\) curvature signal, every higher nonlinear group-commutator term, and every derivative with respect to the coframe/link/Info operands are independent of θ. The closed-loop baseline scalar Cost can survive, so P_θ need not be a proper Lorentz matrix; only **the θ-CONTRAST** is asserted zero.
+
+This is precisely the already-owned **oriented crossed-Weyl** channel \(w=A_xB_y-A_yB_x\) whose first nontrivial proper-Lorentz curvature is quadratic and whose finite Palatini bootstrap is proved in [quadratic original 40-row owner](A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md). It follows that uncertainty over where the original Book03 *vertex information* is booked cannot change that noncommutative closed curvature by itself, including cubic, quartic and higher crossing contributions. This does **NOT** solve their nontrivial genuine coframe/Cartan Euler equations: the equality is an **information-allocation symmetry of the same based loop**, not the Einstein equation for it. The physically executed link/Kraus/Book source must still be shown to belong to this precise central-weight interface.
+
 ## 4. Discrete Hamilton principle: θ is an exact boundary canonical transformation
 
 For any finite-dimensional real internal state coordinate \(q_i\), with its TRUE smooth native edge Cost C(q_i,q_(i+1)) and vertex Info I(q_i), the original transition-distributed edge Lagrangian is \(L_\theta(q_i,q_{i+1})=C(q_i,q_{i+1})-\theta I(q_i)-(1-\theta)I(q_{i+1})\). Differentiate its actual full path action at each independently varied INTERNAL q_i:
