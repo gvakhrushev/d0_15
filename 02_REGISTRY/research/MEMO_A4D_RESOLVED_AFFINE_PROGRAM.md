@@ -1142,12 +1142,20 @@ log(D)-H = KL(r||r*) + sum_i r_i D(s_i||s_i*)
 ```
 
 Free preparation variables minimize these defects to zero; a free defect is
-not an independent stress tensor. Matter requires an actually native,
-non-slack constraint or CAR interaction on this same run whose multiplier
-has a nonzero coframe and connection pullback and satisfies the source/Ward
-equations. Naming a retained bit, polarization or capacity deficit does not
-supply that constraint. The existing fixed-word charge boundary in §6.20
-explicitly does not establish a full-Cartan matter superselection rule.
+not an independent stress tensor. This does not mean that the repository has
+no matter-bearing source candidate. The original Golden binary-return audit
+in [#384](https://github.com/gvakhrushev/d0_15/pull/384) shows that, at
+`k=10` on the common null/star background, the conditional good-history
+surprisal, log-odds and binary-entropy readings have positive first-source
+multiples of the existing full `DJ_trace`. That source already has the
+independent 16 coframe, 24 connection and 2 CAR scalar rows; no tensor is
+fitted to the Einstein target. The `k=10` choice itself is conditional on the
+physical verification requiring uniform `g_min>1/2` and monotone tick cost,
+and `R_bin` is an observable, not a selected action. The same-run Book
+binding, full normalizer and preparation/controller/work source are still
+open. Thus an algebraic matter-bearing source exists; its physical selection
+and matter/Ward completion do not. The fixed-word charge boundary in §6.20
+also does not establish a full-Cartan matter superselection rule.
 
 **Smallest decisive consumer:** on one admitted execution, compute the
 complete Book first source on the actual ordered history, including native
