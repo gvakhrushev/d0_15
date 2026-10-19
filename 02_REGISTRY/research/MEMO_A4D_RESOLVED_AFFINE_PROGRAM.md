@@ -75,10 +75,14 @@ A mathematical obstacle in the preceding **ONE execution test** is now removed *
 
 A second same-owner estimate gives a useful source-control bridge. For one fixed compiled word W approximating one field-independent target U in operator norm by ε and one ACTUALLY moving C² native preparation density ρ(e,U,Ψ,...), all full-record probabilities and their first/second field derivatives differ by at most 2ε times the corresponding trace norm of the actual preparation jet. Thus the active-gate compiler can be source-stable in C² **provided** the real field enters as an admitted moving ACTIVE INPUT to ONE fixed programme. Selecting different finite words for each real field point cannot be a nonconstant continuous native action (the set of finite words is countable). Original raw h^-2 l1 over h^-4 sites needs ε_h M_h=o(h^6) for this gate error alone. Word-depth/work bounds, literal active-CNOT placement and the compulsory full Book H+J+R/oldRIGHT/CAR/preparation/clock/normalizer source remain separate. Do NOT move the physical GR gate to a hardware-spanning problem already solved algebraically; do NOT promote full GR until the actual same-history selected action/source and refining stationary states are proved.
 
+### Same-first-source absolute Book Hessian no-selector — original 718-edge control
+
+[Original fixed-depth same-normalized-outcome Book second-jet witness](A4D_ABSOLUTE_BOOK_COST_SECOND_JET_NONSELECTION_WITH_FULL_GOLDEN_GATE_2026_10_19.md) sharpens the physical source gate: two mathematically admitted primitive ActionProtocol completions on the SAME original 718 edges, C0=1 and C1=1+t², have identical original Golden/CAR gate choices, all normalized one-sided fixed-depth Perron path laws, all P/pi/F/J and complete conditional good/bad laws for EVERY t. Their first absolute Book pressure sources also agree at t=0, yet genuine pressure second derivatives differ by exactly 2. Thus even PERFECT native detector outcome values and FIRST Palatini-source matching at one vacuum point cannot select the whole action. A real original primitive Cost/Info source, its actual stationary internal reductions and second derivative (or a proved vanishing on the admitted curved class) is mandatory. The missing selector is not a gate-span or geometric Taylor obstacle. If the total first-source identity holds on a connected OPEN regular physical chart, integrate it to get total action equivalence up to an additive constant and all higher derivatives. This is the strongest current short route; GR_closed=false.
+
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.94](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.95](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [two-null regular identity-word reverse synthesis](A4D_TWO_NULL_REGULAR_IDENTITY_WORD_REVERSE_GR_SYNTHESIS_2026_10_19.md),
