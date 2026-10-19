@@ -80,3 +80,22 @@ This excludes no genuine D0 full price: nonlinear `s(ω)` contributes `Dp · D²
 Reuse original all40 `840×1008` local rational saved-vector replay from `03bd6fe` (all 15 monomials through amplitude degree 4 on one nonperiodic section). Obtain from **one admitted** physical record an actual typed `(e,U,Psi,clock,prep)→(C_uv,I_v)`. Evaluate native forward/reverse triangle odds and all 960 triple contrasts at both mixed `[ab]` Weyl (`A⊥B,w≠0,d=0`) and parallel `A∥B,d≠0` controls. If nonzero triple contrast appears, classify it as **failure of additive one-edge Cost−Info realization for that proposed triangle readout**, not a GR no-go. If the array is edge-derived by definition, the constraints pass automatically and provide only a regression check; physical admission remains unproved. Compare the actual complete `40+matter` Book source to the *same*-programme star/CAR covector, preserving normalizer and independent preparation/clock. Use `M^{-1}` only in its verified 24 spatially constant directions. An exact match with geometric closed-form `δω(ab),H3,J3,σ4,χ4` must still undergo all 840 finite spatial-row checks; the continuum form and a restricted projected rank do not replace them.
 
 **Status:** EXACT GRAPH-PRICE INTERFACE; pressure-inertia NOGO restricted as above; **not** a physical source or Cartan-to-scene map; `GR_closed=false`.
+
+
+## 5. NEW direct extraction from the actual saved finite quartic representative
+
+This is distinct from the Book triangle theorem, but resolves one immediate requested finite-vs-closed-form comparison without another polynomial solve. Read the actual pinned `quartic_full_spatial_jet_solution.json` at parent `03bd6fe`, using its official ordering (672 link coefficients at spatial degree≤6, then 336 coframe coefficients at degree≤5, coframe entry row-major and monomials x^i y^j ordered by total degree then descending i). At `[a²b²]` exactly 118 link coefficients and 20 coframe coefficients are nonzero.
+
+The saved coframe representative is **not literally** the continuum `sigma4,chi4` closed form from `check_quartic_full_ricci.py` in the same untransformed coframe coordinates. Specifically:
+
+```text
+[2,2]delta e^+_u = (3/128)(x²+xy+y²)
+                  +(3/256)(x³+x²y+xy²+y³)
+[2,2]delta e^2_x = -(7/256)y²-(9/128)xy²-(1/128)y³
+                   +(3/128)x²y²+(1/256)y⁴
+[2,2]delta e^3_y = 0
+```
+
+By contrast, the continuum candidate has `sigma4=-(x²+y²)²/128` in the null-leg scale and `chi4=3(x²+y²)²/1024` in each transverse conformal leg (for `A=(1,0), B=(0,1)`). Thus the saved rational vector is **not already a coefficientwise encoding** of that compact ansatz. One may not infer a no-go for the compact solution: the `840×1008` equation has a solution family, the saved vector is one representative, and a nontrivial kernel/gauge/coordinate transformation may map one to the other. No such transformation has been constructed or tested by this note. The only certified statement is the literal mismatched representative. This is pinned by [the exact checker](sources/d0_book_triangle_odds_2026-10-19/check_saved_quartic_normal_form.py).
+
+The next correct finite task is therefore a **gauge-aware range test**: insert `delta omega(ab),H3,J3,sigma4,chi4` in the original full 40×15 polynomial checker, allow only genuinely owned gauge/kernel lifts, and determine whether the proposed compact coefficient is in the saved solution's affine space. Avoid declaring equality based on the already solved rank alone. Still `GR_closed=false`.
