@@ -107,3 +107,47 @@ This recovers ORIGINAL source components using the same retained nonblank-count 
 The original flat Palatini vacuum has zero independent proper-Lorentz J23 Euler, while the bare original clock/count/port sources above are nonzero. Therefore one cannot declare any of these *bare observables alone* the mandatory fundamental Einstein action. Book03 must supply its actual **same-history** Cost−Info+holonomy class source with complete work/controller/clock/preparation/reference/normalizer and preserve the original 40+CAR variation. The theorem removes one earlier **offscalar first-source blocker on the real J23 flat homogeneous chart**, not the physical admission, action matching, general nonlinear refinement, or raw #216. GR_closed=false.
 
 [Finite reproducible original J23 checker](sources/d0_native_history_class_map_2026-10-19/check_original_J23_clock_position_source.mjs) consumes the pinned exact full128 one-round Q(sqrt5) source. It checks the n-round binomial first jets, the source chain, source ratios, and a nonscalar matrix tangent control, not a new enumeration of the actual 128 Kraus matrices.
+
+
+## 5. Stronger exact first-source law: the ENTIRE original native count generating function, including all cumulants
+
+The original [complete-record channel owner](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md) §2 defines the genuine n-tick native tilted CP operator, WITHOUT a second measurement or fitted scalar fugacity,
+
+\[
+\mathcal T_{s,y}=\mathcal B_y+e^s\mathcal J_y,\qquad
+Z_n(s,y)=\operatorname{Tr}[\mathcal T_{s,y}^{\,n}(\rho_*)],
+\]
+where s is the **existing diagnostic count generating variable**, not the unrelated physical J2 determinant parameter z.
+
+At the same original flat homogeneous Fourier shell and original J23 field tangent V of §1, the exact unperturbed effect and invariant-state properties (1) imply for every real s
+\[
+\mathcal T_{s,0}(\rho_*)=t(s)\rho_*,\quad
+\mathcal T_{s,0}^*(I)=t(s)I,\quad
+t(s)=q+e e^s.
+\]
+
+Differentiate the ORIGINAL n-fold CP composition before specializing the source; by trace cyclicity of the true dual scalar effect at the base, all n insertion locations give the same contribution. The first field source of the **WHOLE native count-generating function** is exactly
+
+\[
+\boxed{
+Z_n(s,0)=[q+e e^s]^n,\qquad
+D_V\log Z_n(s,y)|_0
+=n\dot q\frac{1-e^s}{q+e e^s}.
+}\tag{10}
+\]
+
+This proves (2) again coefficientwise in \(e^s\), but also fixes ALL original count cumulant first responses by derivatives at s=0. No assumption that \(D_V\Delta\) is scalar, no n-round tensor-product iid detector replacement, and no dropped old tape. It is the true native **first source of \(\mathrm{Tr}\mathcal T_s^n\rho_*\)** on the actual homogeneous variation, not the global nonlinear dynamics for arbitrary fields.
+
+For the first two count cumulants of the original actual n-tick exit record,
+
+\[
+\mathbb E K=ne,\qquad {\rm Var}(K)=neq,\quad
+\boxed{
+D_V\mathbb E K=-n\dot q,\qquad
+D_V{\rm Var}(K)=n(e-q)\dot q.
+}\tag{11}
+\]
+
+On the original \(L=4,h=1/4,n=1024,J23\), these are \(-2.19539712850710\) and \(-2.17654963835603\). The logarithmic generating-source values at s=-1,0.3,1 are respectively \(1.39153141090419,-0.766927273628399,-3.74469117230556\), confirmed independently from the finite binomial coefficients. The first field derivative of *every* original count observable whose exponential moments exist is now determined by the one exact original 128-pointer J23 one-round jet.
+
+The full-count generating function (10) does NOT identify the original Book03 H+J+R Cost−Info action with a scalar count cumulant. The latter cannot replace the complete memory-algebra noncommutative holonomy, full field source, 128 fine code cost, clock/work/preparation or Einstein tensor. It is a strong same-instrument source interface and narrows the exact native physical selection test. GR_closed=false.
