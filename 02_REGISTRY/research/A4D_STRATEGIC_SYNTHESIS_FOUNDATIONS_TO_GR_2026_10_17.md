@@ -3714,7 +3714,7 @@ remaining internal Euler rows are solved on the same carrier. A global MAP
 rule has the nonsmooth source above; a fine occupation readout has its own
 source ratio. The physical full-history readout and price remain unselected.
 
-### 7.48. The primitive golden probability weight still needs an amplitude map
+### 7.48. Born forces the primitive square-root lift; Book 03's amplitude type still conflicts
 
 There is a more basic type check before the conditional \(w=q\) identification
 in §7.47. Book 03 §03.3.0 calls \(\varphi^{-S}\) the history weight and reads it
@@ -3733,41 +3733,55 @@ not the unit response, and their normalized Born probabilities would not be
 \((p,p^2)\). The already-owned native gate in Book 03 §03.26 and
 [`GoldenOrderInterferometer.lean`](../../03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean)
 fixes the actual first column as \((\sqrt p,p)\); its Born probabilities are
-exactly \((p,p^2)\). There is a literal same-carrier conflict if Book 03
-§03.10(c)'s \(W(\gamma)=\prod_i p^{a_i}\) is also read as the amplitude
-coefficient on these orthogonal retained branches: its one-step squared norm
-is \(p^2+p^4=5-2\sqrt5<1\), while the native gate's is
-\(p+p^2=1\). Normalizing the literal \(W\) column changes the branch odds
-from \(p:p^2\) to \(p^2:p^4\). The gate therefore supplies the square-root
-weight-to-amplitude map for its own primitive split, but does not derive that
-map for Book 03's separately written coherent path sum.
+exactly \((p,p^2)\). Thus the literal coefficient and the native amplitude
+differ on this primitive orthogonal split: \((p,p^2)\) versus
+\((\sqrt p,p)\).
 
-This is a scoped conflict between Book 03 §03.3.0's statistical weight and
-§03.10(c)'s literal amplitude coefficient on an orthogonal primitive record,
-not a proved inconsistency of the full D0 system: a typed map between the
-algebraic path coefficient and the Hilbert amplitude could still be supplied.
-The [retained Golden preparation](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md)
-proves that squared amplitudes equal cylinder weights on its complete prefix
-tree. It closes that preparation carrier; it does not reconcile the two Book
-03 clauses or transfer automatically to Book 03's general coherent path
-algebra or the AF×scene exterior query. Reading \(W\) as a statistical weight
-and using \(\sqrt W=\varphi^{-S/2}\) as the state amplitude is consistent
-with the primitive gate, but remains an interpretation/bridge to derive for
-composed histories, shared outcomes and retained records. Under the literal
-amplitude reading, the fully resolved Born law instead uses weights
-\(\varphi^{-2S_\gamma}\) and raw normalizer
-\(N=\sum_\gamma\varphi^{-2S_\gamma}\). After paths are merged, the physical
-law is \(q_\omega=|\sum_{\gamma\mapsto\omega}A_\gamma|^2\), which may contain
-cross terms and a field-dependent normalizer. Neither law can be identified
-with raw \(\varphi^{-S_\omega}\) from the shared golden base alone.
+On a complete orthogonal path record, the square-root lift is forced rather
+than selected. For raw path weights \(w_\gamma=\varphi^{-S_\gamma}\), let
+\(N=\sum_\gamma w_\gamma\) and \(q_\gamma=w_\gamma/N\). Born's rule gives
+\[
+q_\gamma=|A_\gamma|^2=\frac{w_\gamma}{N},
+\qquad
+A_\gamma=e^{i\theta_\gamma}\sqrt{\frac{w_\gamma}{N}}.
+\]
+The phase is the owned unit-modulus holonomy representation. For independent
+steps, \(w_\gamma=\prod_i p^{a_i}\) and therefore
+\(\sqrt{w_\gamma}=\prod_i p^{a_i/2}\). Since \(p+p^2=1\), the complete
+primitive tensor tree has \(N=1\), so this normalized lift preserves
+composition with no fitted factor. A field-dependent \(N\) must remain in the
+source through its \(D\log N\) term. The [retained Golden preparation](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md)
+and the gate in §03.26 realize the unit-normalizer equality on their declared
+complete carriers.
 
-This sharpens the next full-price proof: on the actual compiled carrier derive
-the complete amplitudes \(A_\gamma\), group only paths the detector actually
-identifies, compute the Born law of every retained outcome, and compare it
-with the Book cost weight and its refinement/normalizer. If equality holds,
-§7.47's conditional entropy-to-Brinkmann source applies; if not, its exact
-cross-term and \(D\log N\) source must be included. No new gate, exponent, or
-probability law is selected here.
+The remaining conflict is textual and typed: Book 03 §03.10(c) explicitly
+puts \(W(\gamma)=\prod_i p^{a_i}\) in the amplitude vector, whereas the
+Born-consistent coefficient on that same orthogonal record is
+\(\sqrt{W(\gamma)}\). This is not a proved inconsistency of the full D0
+system; §03.10(c) may be treating \(W\) as a pre-Born statistical weight,
+but that type conversion is absent from its displayed amplitude sum. Under
+the literal-amplitude reading, an independent n-step record has unnormalized
+Born responses \(\tilde q_\gamma=\varphi^{-2S_\gamma}\), raw normalizer
+\(N_2=(p^2+p^4)^n\), and normalized law
+\(q_\gamma=\tilde q_\gamma/N_2\), not \(w_\gamma=\varphi^{-S_\gamma}\). The
+native gate therefore resolves the primitive instrument law, while the
+Book's displayed path-sum coefficient still needs a typed reinterpretation
+or correction.
+
+For merged outputs, Born's rule must be applied to the actual retained
+record and pointer. Orthogonal histories ignored by a pointer add as
+probabilities; histories that remain coherent in the same memory sector can
+produce cross terms and a field-dependent normalizer. Neither the resolved
+path law nor the literal §03.10(c) coefficient alone selects the ten-coin
+filled/complement pointer.
+
+This sharpens the next full-price proof: on the actual compiled carrier bind
+each complete path weight to its orthogonal Born amplitude by the forced
+square-root lift, then group paths only according to the detector's actual
+retained record and pointer. Compare that measured law with the Book cost
+weight and its refinement/normalizer. If equality holds, §7.47's conditional
+entropy-to-Brinkmann source applies; if not, include its exact interference
+and \(D\log N\) source. No new gate, exponent, or probability law is selected.
 
 There is an exact positive bridge at the **fully resolved primitive-path**
 level. The owned Golden gate has orthogonal branch amplitudes \((\sqrt p,p)\),
@@ -3780,12 +3794,12 @@ A_\gamma=\prod_{i=1}^n p^{a_i/2}=\varphi^{-S_\gamma/2},
 \qquad \sum_{\gamma\in\{1,2\}^n}|A_\gamma|^2=(p+p^2)^n=1.
 \]
 Thus the resolved path frame has exact \(w_\gamma=q_\gamma\) and raw
-normalizer \(N=1\) under the square-root lift from the statistical weight to
-state amplitude. This is an exact consistency bridge for the primitive gate
-and the independently tensorized, fully recorded word. It does not satisfy
-the literal Book 03 §03.10(c) coefficient \(W(\gamma)=\varphi^{-S_\gamma}\)
-as an amplitude; that clause needs a typed reinterpretation or correction
-before this bridge can be consumed as the Book's physical path law.
+normalizer \(N=1\) under the Born-forced square-root lift. This is an exact
+consistency bridge for the primitive gate and the independently tensorized,
+fully recorded word. It does not satisfy the literal Book 03 §03.10(c)
+coefficient \(W(\gamma)=\varphi^{-S_\gamma}\) as an amplitude; that clause
+needs a typed reinterpretation or correction before this bridge can be
+consumed as the Book's physical path law.
 
 It does not identify a coarser terminal pointer with the resolved path frame.
 For an outcome \(\omega\) that merges path labels, its Born mass is
