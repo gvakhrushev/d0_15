@@ -409,6 +409,13 @@ class AssemblyTests(unittest.TestCase):
         self.assertFalse(check["allowed"])
         self.assertIn("same scientific work", check["reasons"][0])
 
+    def test_different_interface_does_not_avoid_duplicate_gate(self):
+        self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
+        self.contract["task_bindings"][OTHER]["interface"] = "other"
+        check = gr.launch_check(self.model(), OTHER, [self.pr()])
+        self.assertFalse(check["allowed"])
+        self.assertIn("same scientific work", check["reasons"][0])
+
     def test_named_independent_verification_is_allowed(self):
         self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
         self.contract["task_bindings"][OTHER]["mode"] = "verification"
@@ -426,11 +433,16 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual(row["action"], "resume")
         self.assertIn("#12", row["reasons"][0])
 
-    def test_ready_pr_is_review_and_ambiguous_execution_fails(self):
+    def test_ready_pr_is_review_and_duplicate_owners_are_reported(self):
         row = next(a for a in gr.next_actions(self.model(), [self.pr(draft=False, lifecycle="REVIEW")]) if a["task"] == TASK)
         self.assertEqual(row["action"], "review")
-        with self.assertRaisesRegex(gr.AssemblyError, "ambiguous"):
-            gr.next_actions(self.model(), [self.pr(), self.pr(number=13)])
+        actions = gr.next_actions(self.model(), [self.pr(), self.pr(number=13)])
+        row = next(a for a in actions if a["task"] == TASK)
+        self.assertEqual(row["action"], "resolve-overlap")
+        reason = " ".join(row["reasons"])
+        self.assertIn("#12", reason)
+        self.assertIn("#13", reason)
+        self.assertIn(OTHER, {a["task"] for a in actions})
 
     def test_retired_binding_does_not_reappear_as_unfinished_work(self):
         self.queue["tasks"] = [t for t in self.queue["tasks"] if t["id"] != TASK]

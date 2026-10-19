@@ -27,6 +27,9 @@ answers the current question. An existing Draft is resumed; a Ready PR awaits
 review. Offline mode prints **unverified planning** and never authorizes a new
 execution. An unavailable live lookup fails closed. These commands do not
 reserve a task, create branches, message other agents or change statuses.
+If several open PRs claim one task, `next` reports `resolve-overlap` with every
+candidate and continues showing unrelated routes; reconcile that task to one
+owner before dispatching it.
 
 The three goals remain separate: positive native `GR`, the original `RAW-216`
 contract, and global `D0-CLOSURE` classification. A classification or typed
@@ -77,19 +80,23 @@ key, named consumer, disjoint write paths, `start_requires`, retained `assumes`
 and `completion_requires`. These are scientific interface data, not task
 states. Existing classes and WIP limits apply unchanged.
 
-The dispatcher and lifecycle start reject a competing task with the same work
-key/interface, an already discharged objective, unresolved actual start inputs,
-a reviewed scoped no-go or live WIP overflow. Changing a task name does not make
-its science independent. A bounded independent verification uses explicit
-`mode: verification`; it still needs registration, inputs and capacity.
+The dispatcher and lifecycle start reject a competing task with the same
+scientific work key, even if its carrier or interface changes, an already
+discharged objective, unresolved actual start inputs, a reviewed scoped no-go or
+live WIP overflow. Changing a task name or interface does not make its question
+independent. CONTROL assigns a new work key only when the exact question and
+parent consumer are genuinely different. A different interface still needs
+explicit transport maps and pinned proof before a result can be substituted. A
+bounded independent verification uses explicit `mode: verification`; it still
+needs registration, inputs and capacity.
 
 Only `start_requires` gate an otherwise independent conditional lemma's start.
 Logical method requirements gate acceptance. A negative existence result is
 never a satisfied positive existence input. An obstruction is recorded with
-its exact scope and reopening condition; a revised question needs an explicit
-new interface or scientific work key and its parent consumer. For a changed
-question under the same key/interface, record `reopens.attempt` and the actual
-hypothesis/scope `delta`; changing a label alone does not reopen the old question.
+its exact scope and reopening condition. A genuinely different question gets a
+new scientific work key and named consumer. Reopening the same scoped question
+requires `reopens.attempt` and the actual hypothesis/scope `delta`; changing a
+task label or carrier/interface alone does not reopen the old question.
 
 ## Record a result and its actual use
 

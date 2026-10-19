@@ -388,7 +388,9 @@ def task_for_pr(pr: dict) -> str | None:
 
 
 def collision_key(binding: dict) -> tuple:
-    return binding["interface"], binding["work_key"]
+    # The scientific question owns the key; a carrier/interface change alone
+    # does not establish that the proposed work is independent.
+    return (binding["work_key"],)
 
 
 def work_digest(model: dict, binding: dict) -> str:
@@ -496,7 +498,28 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
     actions = []
     for tid, binding in model["contract"]["task_bindings"].items():
         live = [p for p in (prs or []) if task_for_pr(p) == tid]
-        require(len(live) <= 1, f"ambiguous live execution for {tid}")
+        if len(live) > 1:
+            owners = []
+            for pr in sorted(live, key=lambda item: item["number"]):
+                lifecycle = metadata(pr.get("body") or "", "Lifecycle")
+                phase = lifecycle[0] if len(lifecycle) == 1 else "lifecycle-unresolved"
+                state_name = "draft" if pr.get("draft") else "ready"
+                owners.append(f"#{pr['number']} ({state_name}, {phase})")
+            affected = set().union(*(downstream(model, n) for n in binding["obligations"]))
+            actions.append({
+                "task": tid,
+                "action": "resolve-overlap",
+                "reasons": [
+                    "multiple live PRs claim this task: " + ", ".join(owners)
+                    + "; reconcile to one owner before dispatching"
+                ],
+                "consumer": binding["consumer"],
+                "assumes": binding["assumes"],
+                "reuse_results": binding.get("reuse_results", []),
+                "potential_downstream": len(affected),
+                "newly_ready_if_proved": 0,
+            })
+            continue
         if not live and tid not in queued:
             continue  # Retired semantic bindings remain provenance, not new work.
         if live:
@@ -528,7 +551,8 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                         "consumer": binding["consumer"], "assumes": binding["assumes"],
                         "reuse_results": binding.get("reuse_results", []),
                         "potential_downstream": len(affected), "newly_ready_if_proved": len(newly_ready)})
-    priority = {"review": 0, "resume": 1, "resolve-blocker": 2, "eligible-for-control": 3}
+    priority = {"review": 0, "resume": 1, "resolve-blocker": 2,
+                "resolve-overlap": 3, "eligible-for-control": 4}
     return sorted(actions, key=lambda a: (priority.get(a["action"], 4), -a["newly_ready_if_proved"], a["task"]))
 
 
