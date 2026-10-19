@@ -58,4 +58,29 @@ print("PASS exact SO(eta), det=1, gauge invariant noncommutative Wilson memory")
 print("TRACE DIFFERENCE:",diff)
 print("TRACE AT 1/40:",diff.subs(test))
 print("FIRST SOURCE d_a:",simplify(diff.diff(a).subs(test)))
+
+# Same finite witness is distinguishable by a COMPLETE positive Julia/Choi
+# detector of the already-owned mathematical type. The 718-scene hardware
+# assignment remains CONDITIONAL: no native operation is claimed forced.
+# Input |Omega> = (|00>+|11>+|22>+|33>)/2, success T(U)=U/2,
+# mark effect |Omega><Omega|; keep success-unmarked and fail outcomes too.
+T1=UA*UB*UC
+T2=UA*UC*UB
+Qmark1=factor(trace(T1)**2/64)
+Qmark2=factor(trace(T2)**2/64)
+Qdiff=factor(Qmark1-Qmark2)
+assert simplify(Qdiff+a*b*c*(a*a*b*b*c*c+4*a*a*b*b+64)/(16*(c*c+4)**2))==0
+assert Qdiff.subs(test)==-Rational(262144006401,67129837158400000)
+for T in (T1,T2):
+    U=T.subs(test)
+    dU=U-eye(4)
+    delta2=sum(dU[i,j]**2 for i in range(4) for j in range(4))
+    assert delta2<Rational(1,4) # ||U||_op <=1+||U-I||_F<3/2<2
+    Psuccess=sum(U[i,j]**2 for i in range(4) for j in range(4))/16
+    Pmarked=U.trace()**2/64
+    assert 0<Pmarked<=Psuccess<1
+    assert 0<=Psuccess-Pmarked and 0<1-Psuccess
+print("PASS complete positive Julia/Choi mark, success-other, failure kept")
+print("EXACT MARK PROBABILITY GAP:",Qdiff.subs(test))
+
 print("FIREWALL: no native scene-to-Lorentz physical compiler or Book action selection proved")
