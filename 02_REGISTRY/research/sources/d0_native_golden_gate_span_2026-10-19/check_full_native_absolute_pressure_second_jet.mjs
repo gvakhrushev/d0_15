@@ -2,7 +2,7 @@
 "use strict";
 /*
  * Original K(9,11,13), exactly the same original Golden+CNOT gate,
- * oldRIGHT/CAR inputs and ALL normalized native recorded path outcomes.
+ * oldRIGHT/CAR inputs and all FIXED-DEPTH normalized native path outcomes.
  *
  * Two ACTUAL permitted ActionProtocol primitive-cost completions:
  *    C0(u,v;t)=1;
@@ -10,7 +10,7 @@
  * Both have nonidentity cost>=1 on a genuine real chart.
  *
  * For original 718-edge adjacency A,
- * K1(t)=phi^(-t^2) K0. All Perron normalized history path laws,
+ * K1(t)=phi^(-t^2) K0. All fixed-depth Perron normalized history path laws,
  * Doob transfer P, stationary pi, scene F=I-T^T T, any complete
  * Golden/JULIA conditional downstream readouts remain IDENTICAL as
  * functions of t. Yet scalar absolute Book pressure B=-log_phi rho(K)
@@ -68,14 +68,13 @@ for(let t of ts){
     DoobKernelDifference:maxD});
 }
 const d0=0,d1=0,h0=0,h1=2;
-returnValue=0; // no environmental state or callback
 console.log(JSON.stringify({
  status:"PASS_ACTUAL_718_EDGE_ABSOLUTE_COST_SECOND_JET_NONSELECTION",
  originalVertices:N,originalDirectedEdges:718,
  primitiveCosts:["1","1+t²"],
  bothAdmissibleActionProtocols:true,
- identicalFullNormalizedOriginalPathLaw:true,
- identicalAllPerronAndCARConditionalReadouts:true,
+ identicalFullNormalizedFixedDepthPathLaw:true,
+ identicalFixedDepthPerronAndCARConditionalReadouts:true,
  exactBookPressureDifference:"t²",
  sameAtOrigin:{value:true,firstFieldDerivative:true},
  distinctAtOrigin:{nativeBookSecondDerivative:[h0,h1]},
