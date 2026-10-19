@@ -46,7 +46,7 @@ function compute(A,B,z,h){
     const c=-(H*B[i]+J*A[i])/(8*Omega),d=(J*A[i]-H*B[i])/(8*Omega);
     wb[0]=add(wb[0],add(sc(Nplus[i],a),sc(Nminus[i],c)));
     wb[1]=add(wb[1],add(sc(Nplus[i],c),sc(Nminus[i],b)));
-    wb[i+2]=add(wb[i+2],sc(B===null?I:gens[0],d));
+    wb[i+2]=add(wb[i+2],sc(gens[0],d));
   }
   const wc=Array.from({length:4},(_,mu)=>wb.reduce((acc,X,j)=>add(acc,sc(X,e[j][mu])),zero()));
   const ret={e:e.map(row=>row.map(v=>h*v)),U:wc.map(X=>expm(sc(X,h)))};
