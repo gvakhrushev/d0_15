@@ -225,6 +225,37 @@
       "reported_state": "Result-only evidence pinned to #334 head ae82232e. The exact finite checker passes; the Lean certificate was compiled from that pinned source using the existing Lean 4.30/Mathlib cache and reports only standard axioms. No application to native-programme-v1 is registered or accepted."
     },
     {
+      "id": "book-ordered-memory-positive-readout",
+      "owner": "existing #384 exact finite research result",
+      "statement": "On the original K(9,11,13) scene, two distinct closed nine-edge histories have identical edge and vertex multiplicities, so every primitive scalar Book03 Cost-Info law gives them identical weights and field jets. A conditional proper-Lorentz edge assignment nevertheless yields an exact gauge-invariant Wilson-trace gap and a distinct branch-complete positive Julia/Choi marked-event probability.",
+      "interface": "book-ordered-memory-readout-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_histories": "The two paths are the literal L0L1L2 and L0L2L1 loops on the original 718-edge K(9,11,13) carrier, with identical directed-edge and vertex counts.",
+        "conditional_lorentz_assignment": "The three triangle transports use the stated N2, Nbar3 and J23 matrices; this representation-level assignment is not derived as a native physical compiler.",
+        "complete_positive_readout": "The Julia/Choi tester retains marked success, unmarked success and failure outcomes; it is a conditional mathematical tester, not an admitted D0 operation."
+      },
+      "evidence": [
+        {
+          "ref": "59527d90190b2d03e61047466d5e5dad4fd90568",
+          "path": "02_REGISTRY/research/A4D_BOOK_718_EDGE_SCALAR_HISTORY_ORDER_MEMORY_GAUGE_TRACE_NOGO_2026_10_19.md",
+          "sha256": "bed3f818333a696c9a228266a6481ccbfa05c71fd11dddf824d9e8c657235fe6"
+        },
+        {
+          "ref": "59527d90190b2d03e61047466d5e5dad4fd90568",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_order_trace_obstruction.py",
+          "sha256": "3e3eef8c1f8ff7f6cebe96b87ca787875840d40cc736ac1232be1cf6b7b3660e"
+        }
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_BOOK_718_EDGE_SCALAR_HISTORY_ORDER_MEMORY_GAUGE_TRACE_NOGO_2026_10_19.md",
+        "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_order_trace_obstruction.py"
+      ],
+      "reported_state": "Pinned exact conditional finite result from #384. The source PR reports a passing exact checker; this result does not show that D0 physically admits or pays for the Lorentz representation, and no application to native-programme-v1 is accepted."
+    },
+    {
       "id": "original-golden-inverse-pf-moving-mean-j2",
       "owner": "registered native response research owner #334",
       "statement": "On the unchanged original golden-box addresses with true nonuniform native weights, a specified inverse-PF plus moving-volume-quantile operand of the same two-tick AF×scene Book03 J2 transfers the arbitrary-time Brinkmann roots with exact finite first-source equality and derives a conditional off-null Einstein-scalar mean source.",

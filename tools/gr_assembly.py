@@ -498,6 +498,16 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
     actions = []
     for tid, binding in model["contract"]["task_bindings"].items():
         live = [p for p in (prs or []) if task_for_pr(p) == tid]
+        live_executions = []
+        for pr in sorted(live, key=lambda item: item["number"]):
+            lifecycle = metadata(pr.get("body") or "", "Lifecycle")
+            live_executions.append({
+                "number": pr["number"],
+                "title": pr.get("title", ""),
+                "url": pr.get("html_url", ""),
+                "state": "draft" if pr["draft"] else "ready",
+                "lifecycle": lifecycle[0] if len(lifecycle) == 1 else "lifecycle-unresolved",
+            })
         if len(live) > 1:
             owners = []
             for pr in sorted(live, key=lambda item: item["number"]):
@@ -516,6 +526,7 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                 "consumer": binding["consumer"],
                 "assumes": binding["assumes"],
                 "reuse_results": binding.get("reuse_results", []),
+                "live_executions": live_executions,
                 "potential_downstream": len(affected),
                 "newly_ready_if_proved": 0,
             })
@@ -550,10 +561,68 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
         actions.append({"task": tid, "action": action, "reasons": reasons,
                         "consumer": binding["consumer"], "assumes": binding["assumes"],
                         "reuse_results": binding.get("reuse_results", []),
+                        "live_executions": live_executions,
                         "potential_downstream": len(affected), "newly_ready_if_proved": len(newly_ready)})
-    priority = {"review": 0, "resume": 1, "resolve-blocker": 2,
-                "resolve-overlap": 3, "eligible-for-control": 4}
+    priority = {"resolve-overlap": 0, "review": 1, "resolve-blocker": 2,
+                "resume": 3, "eligible-for-control": 4}
     return sorted(actions, key=lambda a: (priority.get(a["action"], 4), -a["newly_ready_if_proved"], a["task"]))
+
+
+def ready_obligations(model: dict, actions: list[dict]) -> list[dict]:
+    """Show open obligations whose declared logical inputs are already accepted.
+
+    This is a read-only planning view. An unowned obligation requires ordinary
+    CONTROL registration; readiness never authorizes task creation or launch.
+    """
+    state = evaluate(model)
+    closed = set(state["closed"])
+    ready = readiness(model, closed)
+    action_by_task = {action["task"]: action for action in actions}
+    proposed_by_obligation: dict[str, list[str]] = {}
+    for app in model["applications"].values():
+        if app["review"]["state"] == "proposed":
+            proposed_by_obligation.setdefault(app["obligation"], []).append(app["id"])
+
+    rows = []
+    for name in ready:
+        after = readiness(model, closed | {name})
+        newly_ready = sorted(after - ready - {name})
+        bindings = []
+        for task_id, binding in model["contract"]["task_bindings"].items():
+            if name not in binding["obligations"] or task_id not in action_by_task:
+                continue
+            action = action_by_task[task_id]
+            bindings.append({"task": task_id, "action": action["action"],
+                             "live_executions": action["live_executions"]})
+
+        proposed = sorted(proposed_by_obligation.get(name, []))
+        task_actions = {item["action"] for item in bindings}
+        next_step = "register-or-reopen-through-control"
+        if proposed:
+            next_step = "independent-scoped-review"
+        elif "resolve-overlap" in task_actions:
+            next_step = "resolve-overlap-through-control"
+        elif "review" in task_actions:
+            next_step = "review-registered-pr"
+        elif "resume" in task_actions:
+            next_step = "resume-registered-pr"
+        elif "resolve-blocker" in task_actions:
+            next_step = "clear-blocker-in-current-pr"
+        elif "blocked" in task_actions:
+            next_step = "resolve-registered-prerequisite"
+        elif "eligible-for-control" in task_actions:
+            next_step = "control-launch-review"
+        elif "unverified-planning" in task_actions:
+            next_step = "verify-live-state-first"
+        elif task_actions:
+            next_step = "reconcile-registered-execution"
+        rows.append({"obligation": name, "statement": model["obligations"][name]["statement"],
+                     "potential_downstream": len(downstream(model, name)),
+                     "newly_ready_if_proved": len(newly_ready), "newly_ready": newly_ready,
+                     "registered_tasks": bindings, "proposed_applications": proposed,
+                     "next_step": next_step})
+    return sorted(rows, key=lambda row: (-row["newly_ready_if_proved"],
+                                         -row["potential_downstream"], row["obligation"]))
 
 
 def diagram(model: dict) -> str:
@@ -781,7 +850,10 @@ def main(argv=None) -> int:
         elif args.command == "next":
             from task_dispatch import open_prs
             prs = None if args.offline else open_prs(args.repo_root)
-            data = {"live_verified": prs is not None, "actions": next_actions(model, prs),
+            actions = next_actions(model, prs)
+            data = {"live_verified": prs is not None, "actions": actions,
+                    "ready_obligations": ready_obligations(model, actions),
+                    "readiness_scope": "Declared dependency inputs only; not proof, physical admission, proof success or launch authorization.",
                     "intakes": [{"application": a["id"], "obligation": a["obligation"],
                                  "consumer": a["consumer_location"], "action": "independent-scoped-review"}
                                 for a in model["applications"].values() if a["review"]["state"] == "proposed"] +

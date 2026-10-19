@@ -432,6 +432,36 @@ class AssemblyTests(unittest.TestCase):
         row = next(a for a in actions if a["task"] == TASK)
         self.assertEqual(row["action"], "resume")
         self.assertIn("#12", row["reasons"][0])
+        self.assertEqual(row["live_executions"][0]["url"], "https://github.com/gvakhrushev/d0_15/pull/12")
+
+    def test_ready_obligations_report_unlock_and_current_registered_owner(self):
+        model = self.model()
+        actions = gr.next_actions(model, [])
+        row = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
+        self.assertEqual(row["newly_ready"], ["B", "C"])
+        self.assertEqual(row["newly_ready_if_proved"], 2)
+        self.assertEqual(row["potential_downstream"], 3)
+        self.assertEqual(row["next_step"], "control-launch-review")
+        self.assertEqual(row["registered_tasks"][0]["task"], TASK)
+        self.assertEqual(row["registered_tasks"][0]["action"], "eligible-for-control")
+
+    def test_ready_obligation_surfaces_overlap_as_its_next_process_step(self):
+        model = self.model()
+        actions = gr.next_actions(model, [self.pr(), self.pr(number=13)])
+        row = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
+        self.assertEqual(row["next_step"], "resolve-overlap-through-control")
+        self.assertEqual(row["registered_tasks"][0]["action"], "resolve-overlap")
+        self.assertEqual([pr["number"] for pr in row["registered_tasks"][0]["live_executions"]], [12, 13])
+
+    def test_unowned_ready_obligation_requires_control_registration(self):
+        self.contract["task_bindings"].pop(TASK)
+        self.queue["tasks"] = [task for task in self.queue["tasks"] if task["id"] != TASK]
+        model = self.model()
+        actions = gr.next_actions(model, [])
+        row = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
+        self.assertEqual(row["next_step"], "register-or-reopen-through-control")
+        self.assertEqual(row["registered_tasks"], [])
+        self.assertEqual(row["newly_ready_if_proved"], 2)
 
     def test_ready_pr_is_review_and_duplicate_owners_are_reported(self):
         row = next(a for a in gr.next_actions(self.model(), [self.pr(draft=False, lifecycle="REVIEW")]) if a["task"] == TASK)
@@ -439,9 +469,12 @@ class AssemblyTests(unittest.TestCase):
         actions = gr.next_actions(self.model(), [self.pr(), self.pr(number=13)])
         row = next(a for a in actions if a["task"] == TASK)
         self.assertEqual(row["action"], "resolve-overlap")
+        self.assertEqual(actions[0]["action"], "resolve-overlap")
         reason = " ".join(row["reasons"])
         self.assertIn("#12", reason)
         self.assertIn("#13", reason)
+        self.assertEqual([pr["number"] for pr in row["live_executions"]], [12, 13])
+        self.assertEqual(row["live_executions"][0]["lifecycle"], "IN_PROGRESS")
         self.assertIn(OTHER, {a["task"] for a in actions})
 
     def test_retired_binding_does_not_reappear_as_unfinished_work(self):

@@ -29,7 +29,16 @@ execution. An unavailable live lookup fails closed. These commands do not
 reserve a task, create branches, message other agents or change statuses.
 If several open PRs claim one task, `next` reports `resolve-overlap` with every
 candidate and continues showing unrelated routes; reconcile that task to one
-owner before dispatching it.
+owner before dispatching it. Overlap resolution is ranked before ordinary resume
+actions, and each live PR is shown with its title, URL and lifecycle.
+
+`next` also lists `ready_obligations`: open obligations whose declared logical
+inputs are already accepted, the downstream obligations that would become
+ready if each were proved, and the current registered task/PR action. An
+unowned obligation points to CONTROL registration or reopening; a proposed
+application points to independent scoped review. This readiness is only a
+dependency calculation. It does not assert evidence, physical admission, proof
+success or launch permission, and unlock counts do not estimate proof success.
 
 The three goals remain separate: positive native `GR`, the original `RAW-216`
 contract, and global `D0-CLOSURE` classification. A classification or typed

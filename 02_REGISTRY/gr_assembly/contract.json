@@ -128,6 +128,15 @@
       "refinement": "Fixed finite-dimensional test and local first/order jets; no uniform refinement or continuum estimate.",
       "scope": "Exact finite order-sensitive Lorentz/CAR readout candidate. Literal fullStep selection, compulsory whole H+J+R price, physical admission, preparation/clock/controller equations and GR closure remain open."
     },
+    "book-ordered-memory-readout-v1": {
+      "carrier": "Original K(9,11,13) with 33 vertices and 718 directed edges; two original closed 9-edge histories and a conditional SO+(1,3) edge-transport assignment.",
+      "action": "Original additive scalar Book03 Cost-Info path law alongside its algebra-valued memory class; no complete physical action is selected.",
+      "variations": "Permutation of the three original triangle loops and exact rational amplitudes a,b,c; primitive scalar edge Cost and vertex Info may depend arbitrarily on fields.",
+      "source": "Gauge-invariant Wilson-trace difference and a branch-complete positive Julia/Choi marked-event probability difference; no full Einstein source is asserted.",
+      "normalization": "At a=b=c=1/40: trace gap -1/32005, first a-source -8/6401, and marked-event gap -262144006401/67129837158400000.",
+      "refinement": "One finite original scene carrier; no refinement-uniform or continuum result.",
+      "scope": "Exact scalar order-blindness and conditional positive order readout; native scene-to-Lorentz admission, paid execution, complete 16+24+CAR source, Ward identity and GR remain open."
+    },
     "book-cost-info-boundary-v1": {
       "carrier": "The exact finite K(9,11,13) scene path carrier with 33 vertices, all 718 directed inter-zone edges and all 15,708 composable two-step paths.",
       "action": "Book 03 Cost-Info path sum over either all listed vertices or a transition-event allocation; the theorem classifies the endpoint accounting only.",
