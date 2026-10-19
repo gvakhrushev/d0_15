@@ -119,3 +119,39 @@ if __name__=="__main__":
     print("PASS symbolic arbitrary orthogonal gradients A=(r,q), B=scale*(-q,r)")
     print("SCOPE: continuum Einstein degree<=3 + finite scalar Poisson only;")
     print("finite third-order 24 Cartan/16 solder and full native Cost-Info are OPEN.")
+
+
+    # 2-Killing vacuum's EXACT orbit-current trace requires Δ rho = 0,
+    # with rho=sqrt(-det lambda)=det(e)>0. After the uniquely sourced
+    # cubic H/J particular solutions in the *minimal* double-null ansatz,
+    # rho4 is inevitably bi-Laplacian-nonharmonic. Arbitrary cubic
+    # harmonic additions do not change its nonzero bi-Laplacian.
+    for AV,BV in tests:
+        normA=AV[0]**2+AV[1]**2
+        normB=BV[0]**2+BV[1]**2
+        HA=AV[0]*x+AV[1]*y
+        JB=BV[0]*x+BV[1]*y
+        rad=x*x+y*y
+        rho4=(normA*JB*JB+normB*HA*HA)*rad/128
+        expected=normA*normB*rad**2/128
+        require(s.expand(rho4-expected)==0,
+                "orthogonal covariant quartic area coefficient")
+        require(s.expand(discrete_lap(discrete_lap(expected))
+                         -normA*normB/2)==0,
+                "nonzero quartic area biharmonic obstruction")
+        sigma4=-expected
+        require(s.expand(discrete_lap(expected+sigma4))==0,
+                "one existing null-coframe scale scalar restores area harmonicity")
+        print("PASS fourth-order area trace obstruction and sigma source",AV,BV)
+
+    F=s.Function("F")(x,y)
+    C=s.Function("C")(x,y)
+    lap=lambda t:s.diff(t,x,2)+s.diff(t,y,2)
+    for L,vec in ((F,(1,2)),(C,(3,4))):
+        linear=vec[0]*x+vec[1]*y
+        ident=lap(lap(linear*L))-linear*lap(lap(L))-4*(
+            vec[0]*s.diff(lap(L),x)+vec[1]*s.diff(lap(L),y))
+        require(s.simplify(ident)==0,
+                "arbitrary smooth harmonic cubic freedom cannot repair biharmonic volume")
+    print("PASS general harmonic freedoms cannot remove the quartic area bi-Laplacian")
+    print("SCOPE: forced fourth-order AREA trace only, not the full fourth-order Einstein system.")
