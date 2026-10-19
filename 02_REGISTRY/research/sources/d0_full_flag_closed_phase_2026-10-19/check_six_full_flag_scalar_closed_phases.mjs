@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 "use strict";
-/* Exact ORIGINAL six proper Lorentz directions from SIX scalar closed
- * phase comparisons on TWO original CAR16 grade-one input preparations.
+/* Exact LOCAL readout of the ORIGINAL six proper Lorentz tangent directions
+ * from SIX scalar closed-phase comparisons on TWO original CAR16 grade-one
+ * input preparations. A nonsingular Jacobian gives local invertibility near
+ * identity; it is not a global link decoder or physical D0 admission proof.
  * Flags are 100% GOOD/BAD DEPHASED; all BAD outcomes are retained.
  * The four fixed CAR anchor projectors are ordinary, known one-body
  * operator expressions; no interhistory quantum interferometer needed.
@@ -38,6 +40,22 @@ const anchors={
  "e0+i e1":{r:[1,0,0,0],i:[0,1,0,0]},
  "e1+i e2":{r:[0,1,0,0],i:[0,0,1,0]}
 };
+const baseTraceLabels=[];
+for(const p of probes)for(const label of p.labels){
+ const c=inner(p.v,anchors[label]);
+ const overlap2=c[0]**2+c[1]**2;
+ const inputNorm=inner(p.v,p.v)[0];
+ const anchorNorm=inner(anchors[label],anchors[label])[0];
+ // At identity C=(qG^3+qB^3)|<psi,anchor>|^2, with qG=1/4,qB=3/4.
+ const trace48=3*overlap2===inputNorm*anchorNorm;
+ const trace96=6*overlap2===inputNorm*anchorNorm;
+ test(inputNorm===3&&(trace48||trace96),
+      "exact complete closed-phase base trace is 7/48 or 7/96");
+ baseTraceLabels.push(`${p.name}/${label}:${trace48?"7/48":"7/96"}`);
+}
+test(baseTraceLabels.filter(x=>x.endsWith(":7/48")).length===4&&
+     baseTraceLabels.filter(x=>x.endsWith(":7/96")).length===2,
+     "four exact base traces are 7/48 and two are 7/96");
 function exact336Row(v,w){
  const c=inner(v,w),c2=c[0]**2+c[1]**2;
  test(c2>0&&inner(v,v)[0]===3,
@@ -78,7 +96,24 @@ function det(A){
 const rawdet=det(rows);
 test(rawdet===84934656n,"exact full SIX original closed-phase scalar-detector integer determinant");
 test(Number(rawdet)/336**6>5.9e-8&&Number(rawdet)/336**6<5.91e-8,
-     "two independent original CAR histories recover six-Lorentz link directions");
+     "two original CAR probes give a nonsingular local six-Lorentz phase Jacobian");
+const inverseNumerator=[
+ [-49,0,49,-63,63,0],
+ [203,28,0,-189,0,0],
+ [63,0,-63,49,-49,0],
+ [-133,28,0,147,0,0],
+ [-336,-336,0,336,0,0],
+ [-42,-14,14,0,14,28]
+].map(row=>row.map(BigInt));
+const integerProduct=(A,B)=>A.map(row=>B[0].map((_,j)=>
+ row.reduce((s,x,k)=>s+x*B[k][j],0n)));
+const scaledIdentity=1344n;
+const isScaledIdentity=A=>A.every((row,i)=>row.every((x,j)=>
+ x===(i===j?scaledIdentity:0n)));
+const integerRows=rows.map(row=>row.map(BigInt));
+test(isScaledIdentity(integerProduct(integerRows,inverseNumerator))&&
+     isScaledIdentity(integerProduct(inverseNumerator,integerRows)),
+     "explicit exact local phase-to-Lorentz inverse on both sides");
 
 function inverse(A){
  let n=A.length,M=A.map((r,i)=>[...r,...I(n)[i]]);
@@ -148,6 +183,9 @@ console.log(JSON.stringify({
  original:"same full CAR16 grade-one Julia with dephased GOOD/BAD and two independent recorded probes",
  phase_anchor_labels:probes.map(p=>p.labels),
  six_by_six_numerator:rows,common_denominator:336,
+ local_inverse_numerator:inverseNumerator.map(row=>row.map(String)),
+ local_inverse_denominator:4,
+ closed_phase_base_traces:baseTraceLabels,
  exact_integer_det:rawdet.toString(),
  normalized_det:Number(rawdet)/336**6,
  max_full_Julia_finite_source_error:maxErr,
