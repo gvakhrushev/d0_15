@@ -132,6 +132,12 @@ assert C4*pack(TTplus) != s.zeros(4,1)
 assert C4*pack(TTcross) != s.zeros(4,1)
 assert C4*pack(eta) != s.zeros(4,1)
 
+# A surviving shear can have zero on-restriction quadratic Einstein action
+# while the full Euler vector remains nonzero: zero action != on-shell.
+SHEAR = s.Matrix.hstack(pack(E1), pack(E2))
+assert SHEAR.T*GE*SHEAR == s.zeros(2,2)
+assert (GE*SHEAR).rank() == 2
+
 print("PASS: exact 96-link modes 24/24/48 and 40 Gram readout")
 print("PASS: all 16 resonant connection nulls confined to quarter-wave")
 print("PASS: eight Fredholm forms = four per real quadrature")
