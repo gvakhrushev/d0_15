@@ -1,5 +1,34 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 19 October 2026 — REAL SCENE PHYSICS: 718-edge complete instrument plus absolute Cost−Info pressure from ONE retained history
+
+**New positive direct physical-source consumers on the SAME #334:** [A4D_NATIVE_SCENE_718_EDGE_COMPLETE_REGISTER_DETERMINANT_BOOK_2026_10_19.md](A4D_NATIVE_SCENE_718_EDGE_COMPLETE_REGISTER_DETERMINANT_BOOK_2026_10_19.md) with [independently executed full edge checker](sources/d0_scene_edge_complete_book_2026-10-19/check_scene_edge_register.py); and [A4D_ONE_HISTORY_SCENE_ABSOLUTE_PRESSURE_FEEDBACK_COMPLETENESS_2026_10_19.md](A4D_ONE_HISTORY_SCENE_ABSOLUTE_PRESSURE_FEEDBACK_COMPLETENESS_2026_10_19.md) with [one actual 220k-original-transition-history source test](sources/d0_one_scene_history_absolute_pressure_2026-10-19/check_one_history_pressure.py). These COMPATIBLY strengthen the existing [one-real-Perron-history feedback readout](A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md) rather than claiming it is a mandatory coherent measurement.
+
+On ALL original 718 directed K(9,11,13) edges, the two explicit complete positive registrations \(S_{uv,u}=\sqrt{P_{uv}}\) and \(R_{uv,v}=\sqrt{\pi_uP_{uv}/\pi_v}\) use the real endogenous Perron stationary \(\pi P=\pi\). Their true Gram SᵀS=RᵀR=I, overlap \(T=SᵀR=D_\pi^{1/2}PD_\pi^{-1/2}\), and full retained good/fail edge projection give
+\[
+\boxed{F=R^T(I-SS^T)R=I-T^TT,\quad0\le F\le I,\quad\ker F=\mathbb R\sqrt\pi,\ \mathrm{rank}F=32.}
+\]
+No separate guessed \(\sqrt F\) oracle or deleted failure branch. A true idle/test selector at the EXISTING z=2⁻²⁰ gives complete three-label good effect G=I−zF and failure zF. To realize the ENTIRE Book03 scalar determinant as ONE explicitly registered event, take the ORIGINAL 33×33 G Cholesky, all33 pivots \(d_i\in[1-z,1]\) and 33 fresh COMPLETE binary flags, retaining all 2³³ possible records; then
+\(\Pr(\mathrm{all\ good})=\prod_i d_i=\det(I-zF)\), and its true \(-\log\) surprisal is \(J=-\operatorname{Tr}\log(I-zF)\), with exact first source \(DJ=z\,\mathrm{Tr}[(I-zF)^{-1}DF]\). This is a constructive complete POSSIBLE instrument in the owned generous addressed active class, NOT proof that literal foundational D0 executes the 718-edge coherent amplitudes, 33 conditional coin angles or their resource costs. In particular the stationary input \(\sqrt\pi\) itself has ZERO F-failure, so a single stationary ket MUST NOT be falsely equated to the determinant event; the already-owned one-actual-classical-history empirical 718-edge counts are a distinct cheaper CLASSICAL readout of the same F/J candidate.
+
+At the REAL original unit-edge-Cost/zero-Info profile the two edge embeddings reduce to \(T=A/\rho\) for the LITERAL symmetric 33-scene adjacency, giving
+\[
+\operatorname{spec}F=\{0(1),1(30),1-(\lambda_1/\rho)^2,1-(\lambda_2/\rho)^2\},
+\quad\det(\xi I-A)=\xi^{30}(\xi^3-359\xi-2574).
+\]
+This is the exact previously LEAN-owned ORIGINAL stationary1/archive30/active2 scene decomposition, now with an independent FULL-POSITIVE outcome-register interpretation, not an identification with the different ordinary row-normalized random walk.
+
+**The missing ABSOLUTE physical Cost source is exactly ONE per-tick spectral pressure, not inferable from F alone.** For every TRUE original primitive Book edge \(s_{uv}=C_{uv}-\theta I_u-(1-\theta)I_v\), with K_uv=φ^(−s), the actual positive Perron/Doob P has the exact *all-edge cohomology*
+\[
+\boxed{s_{uv}=-\log_\varphi P_{uv}-\log_\varphi\lambda
++\log_\varphi r_v-\log_\varphi r_u,\quad
+\log_\varphi\lambda=h_\varphi(\pi,P)-\mathbb E_{\pi P}s.}
+\]
+On the original Lean-owned one-sided Perron start r/Σr, ONE long actual fully retained path with true edge counts and true paid edge Cost measures BOTH (i) the endogenous F/J by the preceding innovation-count owner and (ii) the missing \(\log_\varphi\lambda\) by empirical \(\hat h-\hat{\bar s}\). Independent ORIGINAL-graph seeded N=220000 control estimates5.674971 vs actual5.678455, and reconstructs all718 individual edge prices from P/λ/r to ~10⁻¹⁵. A uniform ADDITIVE physical cost shift leaves P/π/F/J unchanged yet shifts \(\log_\varphi\lambda\) exactly, proving why feedback alone is insufficient for WHOLE Book action/Einstein source. The true moving pressure field source is \(D\log_\varphi\lambda=\sum_v\pi_v DI_v-\sum_{uv}\pi_uP_{uv}DC_{uv}\); recorded integer histograms do NOT carry that derivative unless their true changing probability law and terminal score are differentiated.
+
+**Authoritative real registry remains OPEN:** GR/constitutive/native_sector/matter_source_ward/joint_nonlinear_solve/raw216; CONTROL #375 proves ActionProtocol does not uniquely select the primitive Cost. The new proofs narrow the PHYSICAL forcing to ONE original whole scene native Cost/Info-to-Julia/Lorentz/CAR field-source and one compulsory fully paid state/circuit/cut selector. The 33-flag detector is executable mathematically and successful/failure COMPLETE, not compulsory foundational physics. Its field source is NOT called Einstein until the original 16+24+matter response agrees with the independently proved original Palatini/CAR owner on the SAME actual full D0 action.
+
+
 
 ## 19 October 2026 — ONE ORIGINAL HISTORY identifies full Book-feedback and its own Cost−Info source
 
