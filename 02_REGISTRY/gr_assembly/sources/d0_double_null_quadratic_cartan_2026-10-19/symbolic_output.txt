@@ -1,0 +1,7 @@
+PASS exact flat 24x24 Cartan Hessian det=256, spectrum 2^4 -2^4 1^8 -1^8
+PASS original all 24 links, all 16 coframe, both mixed plaquette signatures: (1, 0) (1, 0) dot 1 wedge 0
+PASS original all 24 links, all 16 coframe, both mixed plaquette signatures: (1, 0) (0, 1) dot 0 wedge 1
+PASS original all 24 links, all 16 coframe, both mixed plaquette signatures: (0, 1) (1, 0) dot 0 wedge -1
+PASS original all 24 links, all 16 coframe, both mixed plaquette signatures: (0, 1) (0, 1) dot 1 wedge 0
+PASS symbolic x,y, four bilinear basis pairs ⇒ arbitrary affine slopes
+SCOPE: exact coefficient [a*b] and linear flat Hessian; no all-order finite root, price, or GR closure.

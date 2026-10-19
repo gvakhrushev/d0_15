@@ -164,6 +164,67 @@
       "reported_state": "Pinned result-only evidence at #334 head a18606f1. The exact checker replays the rank-six positive response, nonzero order contrasts, reused-flag defect and conditional same-history information source. No application to native-programme-v1 is registered or accepted."
     },
     {
+      "id": "book-cost-info-boundary",
+      "owner": "registered native response research owner #334",
+      "statement": "On the exact finite K(9,11,13) scene path carrier, the literal all-vertex Info(v) sum with zero singleton action and additive composition forces Info=0; transition-event allocations are additive for every real theta and differ on open paths only by an endpoint coboundary.",
+      "interface": "book-cost-info-boundary-v1",
+      "outcome": "positive",
+      "kind": "lean",
+      "scope_level": "finite",
+      "hypotheses": {
+        "carrier": "The result is on the actual 33-vertex K(9,11,13) scene path carrier: 718 directed edges and 15,708 two-step paths.",
+        "literal_convention": "The displayed sum is read as charging every listed vertex, including endpoints; singleton identity action is zero and the path action is additive under composition.",
+        "transition_convention": "A branch information value is allocated across each transition by w_theta(u,v)=Cost(u,v)-theta*Info(u)-(1-theta)*Info(v).",
+        "physical_binding": "Book/native owners have not selected theta, a branch-to-record-to-Info law, a measured probability binding, or field derivatives of the same complete physical Cost-Info.",
+        "remaining_equations": "No metric source, Ward identity, nonlinear Einstein system, continuum refinement, or original raw #216 result follows."
+      },
+      "evidence": [
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/A4D_NATIVE_COST_INFO_BOUNDARY.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/theorem.md",
+          "sha256": "993078385389c10fa4f9da38e5e5912f331384d896e78f43713e2fd39ba48246"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/history_action_boundary.md",
+          "sha256": "3ec95e7fb46b0852bccdf8ab64db322a3faef2b87fa64eacfae01ac161f6c2b7"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary.lean",
+          "sha256": "003e648673a1bc7e6e5150be444776687316621923d678099a5eda95e9a2a416"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_check.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary_check.py",
+          "sha256": "58428a30a60a8211b31b818659b12ff33de38c41fd9fe53e4f533f66404e1971"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_certificate.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary_certificate.json",
+          "sha256": "a3944c0c544624f7cd4dbc99e1fd4f287804a0806859a9e3d84aab5eefd2e789"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_results.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary_results.json",
+          "sha256": "286742d3e0201970147ece4ae771f7dc9ea74f0054dbd1b55df5e3e828c2f1ab"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary_output.txt",
+          "sha256": "7d035a0785d036f402141308b26d1819dad661c35e8d3f5b7a09f6e133fbc127"
+        }
+      ],
+      "reported_state": "Result-only evidence pinned to #334 head ae82232e. The exact finite checker passes; the Lean certificate was compiled from that pinned source using the existing Lean 4.30/Mathlib cache and reports only standard axioms. No application to native-programme-v1 is registered or accepted."
+    },
+    {
       "id": "original-golden-inverse-pf-moving-mean-j2",
       "owner": "registered native response research owner #334",
       "statement": "On the unchanged original golden-box addresses with true nonuniform native weights, a specified inverse-PF plus moving-volume-quantile operand of the same two-tick AF×scene Book03 J2 transfers the arbitrary-time Brinkmann roots with exact finite first-source equality and derives a conditional off-null Einstein-scalar mean source.",
@@ -262,6 +323,68 @@
         }
       ],
       "reported_state": "Result-only evidence record; no application is registered. The independent JavaScript control passes BigInt rank/unrank, exact divisibility, near-balance and a sampled moving-volume J2 derivative (relative error 2.44e-8). This verifies finite controls, not native decoder admission, the full physical price or raw #216."
+    },
+    {
+      "id": "double-null-quadratic-cartan-bootstrap",
+      "owner": "registered native response research owner #334",
+      "statement": "For two affine null amplitudes on the original six-plaquette Lorentz-star action, a unique rational h/8 mixed Cartan correction cancels all 24 independent link Euler coefficients at order a*b; the 16 coframe coefficients then reduce to the Einstein dot-product overlap. For perpendicular gradients with nonzero wedge product, every one of the 40 mixed Euler coefficients vanishes while mixed plaquette curvature remains nonzero.",
+      "interface": "double-null-quadratic-cartan-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_action": "Unchanged six based plaquettes, odd Lorentz curvature, fixed star pairing, original eta and original proper-Lorentz generator convention.",
+        "field_variations": "All 16 coframe and all 24 left-link first variations are formed independently before substituting the trial connection and its correction.",
+        "amplitude_germ": "Exact arithmetic in Q[a,b]/(a^2,b^2), with symbolic transverse coordinates and four ordered unit-vector pairs establishing the general bilinear A,B coefficients.",
+        "connection_chart": "Continuum Levi-Civita links are a trial. The exact correction uses the invertible homogeneous flat 24x24 Cartan block at one interior site; this does not establish a uniform correction solving every site at finite amplitudes.",
+        "result_scope": "Only the mixed [a*b] coefficient is solved. Higher-order coefficients and all-order finite roots remain open.",
+        "physical_scope": "No native action/price selection, matter-source binding, complete controller/preparation/clock equations, global Ward identity or recovery theorem follows."
+      },
+      "evidence": [
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+          "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_CARTAN_CROSSING_RICCI_WEYL_SPLIT_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/double_null_cartan_crossing.md",
+          "sha256": "38fbfb92b972ef2e1bf347c2818c9707c343c19575a08765ed2a957568fa2b09"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/check_mixed_cartan_exact.py",
+          "sha256": "05b79065744748d73dfcf55a931cc4d7b4076f70839adb19c5836a1fe892e493"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_finite_all40_two_null.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/check_finite_all40_two_null.mjs",
+          "sha256": "a4d24bf53531815cf8400444ec27dbe02a94757d5601a6a0f5baf7a9f78b93cb"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/symbolic_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/symbolic_output.txt",
+          "sha256": "7e31f534a1162e5723681f50a01db2549b1f027959c20bd52f3b54e2e14a18ea"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/numeric_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/numeric_output.txt",
+          "sha256": "667530a312f0be8b2d48f93e167999d1a272b3cdd923523b727b5ddaf7ca02ea"
+        }
+      ],
+      "reported_state": "Pinned to #334 head d6db28e517278c927efaa425b2ad2fc0511093f5. The exact rational checker passes all 24 link and 16 coframe mixed rows and the mixed plaquette controls; the independent finite-mesh numerical check reproduces the h/8 residual suppression. Result-only graph entry; no application to native-programme-v1 is registered or accepted."
     }
   ],
   "applications": [

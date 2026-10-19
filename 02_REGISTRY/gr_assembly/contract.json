@@ -128,6 +128,15 @@
       "refinement": "Fixed finite-dimensional test and local first/order jets; no uniform refinement or continuum estimate.",
       "scope": "Exact finite order-sensitive Lorentz/CAR readout candidate. Literal fullStep selection, compulsory whole H+J+R price, physical admission, preparation/clock/controller equations and GR closure remain open."
     },
+    "book-cost-info-boundary-v1": {
+      "carrier": "The exact finite K(9,11,13) scene path carrier with 33 vertices, all 718 directed inter-zone edges and all 15,708 composable two-step paths.",
+      "action": "Book 03 Cost-Info path sum over either all listed vertices or a transition-event allocation; the theorem classifies the endpoint accounting only.",
+      "variations": "Universal exact path-composition identities for real edge costs and vertex information assignments on the declared finite carrier; no metric or field variation is included.",
+      "source": "Under the literal all-vertices convention, singleton identity and additive gluing force Info=0. Under transition-event allocation every real theta is additive, and changing theta is an endpoint coboundary.",
+      "normalization": "No probability-to-information, log base, branch probability, or field-dependent normalizer is selected by this result.",
+      "refinement": "Finite carrier only; no infinite-history, continuum, or uniform refinement conclusion.",
+      "scope": "Exact formal boundary classification for the displayed Cost-Info decomposition. Native branch-to-record-to-Info binding, complete physical price, Ward source and GR remain open."
+    },
     "balanced-original-x-j2-v1": {
       "carrier": "Original exact-cost Fibonacci F/R histories retained at their unchanged X_w microaddresses; a canonical-count balanced old-LEFT subset is coarsened to its original Role macro-cell representative, while every unselected history and old RIGHT outcome remains present.",
       "action": "The unchanged corrected two-scene-tick AF×scene Book03 J2 price, compared as two distinct operand/query programmes: the local inverse-PF query and the moving physical-volume J/V mean query.",
@@ -154,6 +163,15 @@
       "normalization": "The selected subrecord’s true regular-LEFT trace and actual two-tick J2 positive source normalization, not the distinct full-prefix AF coefficient.",
       "refinement": "Exact route uses L=2^r and the stated Fibonacci divisibility sequence; the cheaper near-balanced route has a discrepancy bound and does not by itself certify exact roots or the raw #216 norm.",
       "scope": "A mathematically specified decoder-selected AF×scene family with exact finite source roots and a conditional general Einstein-scalar mean source. Physical decoder admission/selection, the original X_w placement, complete D0 price, generic matter and raw #216 remain open."
+    },
+    "double-null-quadratic-cartan-v1": {
+      "carrier": "The original six based plaquettes on the two-affine-null family H=a(A_x x+A_y y), J=b(B_x x+B_y y), with the original Lorentz eta and full independent coframe/link variables.",
+      "action": "The unchanged finite six-plaquette Lorentz-star action with odd curvature and its original fixed star pairing; continuum Levi-Civita links are only a trial before the mixed Cartan repair.",
+      "variations": "All 16 independent coframe and all 24 proper-Lorentz left-link first variations are taken before substituting the mixed-order connection correction.",
+      "source": "Exact [a*b] coefficient in Q[a,b]/(a^2,b^2): a unique homogeneous h/8 Cartan correction cancels all 24 link rows, and the 16 coframe rows reduce to the Einstein dot-product overlap; perpendicular gradients retain nonzero mixed plaquette curvature while all 40 mixed Euler coefficients vanish.",
+      "normalization": "The stated original Euler normalization has mixed link source O(h^4), coframe overlap -h^3(A dot B)/4 in the two transverse diagonal rows, and correction coefficients h/8 from the exact flat Cartan Hessian inverse.",
+      "refinement": "Exact finite coefficientwise statement at order a*b, checked at symbolic x,y and four basis pairs; no uniform h-to-zero or higher-amplitude estimate is claimed.",
+      "scope": "A first nonlinear mixed-order finite Palatini bootstrap on the original field action. Higher orders, cross-site/global all-order roots, native physical price/admission, Ward transfer, refinement and GR closure remain separate."
     }
   },
   "obligations": [
@@ -659,6 +677,18 @@
       "left": "conditional complete Julia/CAR16 mean-Shannon first-source with fresh flags",
       "right": "literal GoldenCoherentMemory.fullStep and compulsory full H+J+R Cost-Info",
       "reason": "The constructed positive instrument, branch binding, physical execution/admission and full retained price are separate premises; this result establishes none of their identity."
+    },
+    {
+      "id": "theta-boundary-vs-native-info",
+      "left": "the additive theta-family of transition-event Cost-Info allocations",
+      "right": "a uniquely selected physical D0 Info map",
+      "reason": "All theta values compose and differ only by endpoint coboundaries on open histories; the finite path theorem supplies no native readout binding or field-dependent source."
+    },
+    {
+      "id": "double-null-quadratic-vs-full-gr",
+      "left": "All 40 original field Euler coefficients vanish at mixed order a*b for orthogonal affine gradients after the exact h/8 Cartan correction, with nonzero mixed Lorentz plaquette curvature.",
+      "right": "An all-order finite nonzero double-null root or physical D0-to-GR closure.",
+      "reason": "The certificate works in Q[a,b]/(a^2,b^2); cubic and higher mixed sources, cross-site compatibility, compulsory native Cost-Info, complete matter/clock/preparation equations, global Ward and recovery are not established."
     }
   ]
 }
