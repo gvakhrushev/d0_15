@@ -199,3 +199,33 @@ with all actual source and prior/collar/clock terms, using the correct singular-
 - Existing exact pretrace source and 12-word/6-direction positive CAR owners are consumed, NOT re-created. No G0 literal-gate CI, full native #334 expensive tests, or physical complete-source admission is claimed from the two new address checkers.
 
 **Result:** exact geometric address bottleneck solved on the literal ORIGINAL all-walks scene, rigorous *separation* from unproved independent control/physical action. The next test can now be executed on a specific same-run two-branch face carrier rather than an unspecified 33→4D map. **GR_closed=false.**
+
+
+## 6. STRATEGIC CORRECTION — The original Golden LEFT already supplies Role addresses; K-scene walks are an OPTIONAL diagnostic
+
+After consuming the stronger [balanced original Golden LEFT → 4D Role cell theorem](A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md) and [exact nonlinear same-J2 AF coframe equivalence](A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md), **do not put the present K(9,11,13) closed-walk address code on the critical path to GR**. The actual D0 native Golden LEFT archive already has the original 4D nested microaddress \(X_w\) and the owned site map \(w\mapsto x(w)\). Equal-cost balancing on that SAME original oldLEFT gives
+\[
+w_x^{\rm PF}=2m p^{n+3}\quad\forall x,\qquad
+\rho_x=w_x/\bar w=1,\quad \widehat e_x=e_x,\quad
+\widehat g_x=g_x.
+\tag{22}
+\]
+Every unactivated historical word, oldRIGHT/ref128 and all failed outcomes remain on the original full carrier. For a controlled refining diagonal the total original active READY-pair probability stays strictly positive, tending to \(0.341640786499874\ldots\), **unlike** the extremely rare optional 21-step scene-loop permutation-address class in §3. The balanced source theorem proves exact first-variation equality (all16+24+2) of the LOCAL J2 and the MOVING PHYSICAL-VOLUME mean-J2 on the accepted common-null/star family, including moving volume. It does NOT select the compulsory full H+J+R price.
+
+The scientifically minimal **candidate** physical event carrier is instead the ORIGINAL Golden-addressed direct-sum of full scene/CAR/old archive fibres:
+\[
+\boxed{
+\bigoplus_{w\in {\cal W}_n^{\rm LEFT}}
+ |w,x(w)\rangle
+ \otimes H_{\rm scene}^{\rm full}
+ \otimes H_{\rm CAR16}
+ \otimes H_{\rm oldRIGHT/ref128}
+ \otimes H_{\rm fresh\ records},
+}
+\tag{23}
+\]
+with its actual allowed clock/preparation/controller/work registers (not asserted to be a free tensor-product of physically independent probabilities). The scene K(9,11,13) is the INTERNAL full 718 directed Cost−Info/feedback register **inside that owned Golden address**, NOT a substitute for the spacetime Role graph. Its 327 fixed-link cycles therefore impose NO global dimension bottleneck on a site-labelled four-dimensional field if the already-required original Golden-conditioned local geometric operations are admitted. The remaining new operator source is a **typed conditional actuator/cotangent map on THIS existing carrier**, not a fresh history-address code.
+
+A further decisive positive input is already owned on THIS particular mathematical geometric subprogramme: for the original TWO-TICK AF×scene J2 at an identity scene unitary \(W_s=I\), its real scene return effect B vanishes quadratically, \(D_{W_s}B=0\), the COMPLETE scene Euler row vanishes, and the mixing-direction scene Hessian is explicitly positive. On the exact curved star vacuum \(f_x=0\) the geometric/scene mixed Hessian is zero. Together with the all-order invertible coframe dressing, this provides a NONEMPTY genuine nonlinear finite geometric+scene J2 stationary sector — **but not the real full original H+J+R/CAR/oldRIGHT/preparation/clock action**. Do not repeat a quartic spin-2 or K-scene address search in place of that missing SAME full-action Euler source.
+
+**Final one-test instruction, now shorter:** use ONE existing BALANCED Golden LEFT Role cell x and ONE of its six original based faces. Consume its literal oldLEFT fullStep, the original full scene good/bad/two-tick J2 and actual CAR16/oldRIGHT/ref128 preparation and clock on that one cut. Verify the complete compulsory original Book03 H+J+R/Cost−Info field and internal first TWO Euler jets; compare its 16+24+matter covector and relaxed Hessian to the already owned geometric AF-star+CAR source, retaining every residual. Once this SAME carrier passes and has uniform boundary/refinement control, the existing all-order finite nonlinear geometry and #377 Einstein consumer can be assembled. The alternative scene-loop rank/unrank and 7!-permutation checks remain useful adversarial **capacity/cost controls**, but are no longer obligatory prerequisites. GR_closed=false.
