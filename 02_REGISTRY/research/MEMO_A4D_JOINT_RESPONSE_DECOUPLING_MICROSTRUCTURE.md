@@ -8189,7 +8189,7 @@ This is an existing outcome of the complete instrument, not the separate
 13-effect test. The zero-momentum control has zero first source. Exact
 derivation, source pins, and the hostile control are in the
 [full128 order-readout packet](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md);
-its expanded 195-check certificate passes, as does the existing 60-check
+its expanded 326-check certificate passes, as does the existing 60-check
 [complete-record channel replay](sources/d0_complete_record_channel_2026-10-17/check_record_channel.py).
 
 This establishes endpoint-link distinguishability in the mathematical
@@ -8231,5 +8231,89 @@ replay. This establishes order readout for that chosen finite repeated
 matrix instrument, beyond the endpoint-link result above. It still does not
 establish a physical D0 rule that admits each Lorentz increment as an
 executable fresh-record step, the native cost of that step, or a GR
-derivation. The updated packet checker passes 195 exact checks; the existing
+derivation. The updated packet checker passes 326 exact checks; the existing
 complete-record replay remains at 60 checks.
+
+### Follow-up: the fixed full128 probability vector sees only six of 24 link jets
+
+The packet now constructs the exact \(128\times24\) first-response matrix of
+all complete-instrument outcome probabilities, varying each of the four
+link roles independently along all six proper-Lorentz generators. On the
+same \(L=4\) background with phases \((1,1,1,i)\) and fixed marginal
+\(I_{16}/16\), its exact rank over \(\mathbb Q(\sqrt5)\) is 6, leaving 18 infinitesimal
+link combinations invisible to this probability readout. All 24 columns
+preserve total probability, and the already certified (J_{23}) pointer
+derivative is recovered as a control.
+
+This narrows the previous positive order-readout claim: the selected pointer
+can detect one opposite-null commutator, while the complete classical
+probability vector on this single background is not an injective readout of
+the full 24-link tangent space. The result concerns only these classical
+probabilities and this preparation/background; it does not rule out retained
+quantum-state information, other physical probes, or a different full native
+Cost--Info price.
+
+### Follow-up: retained conditional output states read all 24 link jets
+
+The exact branch-state response is richer than the 128 scalar probabilities.
+Keeping the unnormalized CAR16 output state for each labelled outcome gives a
+32768-coordinate real first-response matrix. A floating QR selects 24
+candidate coordinates, and the checker verifies the corresponding 24x24
+minor exactly over Q(sqrt(5)); its rank is 24. Hence the full
+outcome-labelled output-state family is locally injective on the four-link,
+24-dimensional Lorentz tangent at this finite background and preparation.
+The exact selected coordinate rows are included in the checker output.
+
+This establishes distinguishability in the mathematical full128 instrument
+when its conditional quantum states are retained. It does not establish
+native D0 access to those state observables or make this state response the
+compulsory Cost-Info price. Physical admission, per-increment execution, and
+full-price selection remain open.
+
+### Follow-up: two rounds of the full128 record expose at least seven link directions
+
+The same original 128-outcome instrument is now applied twice with a fresh
+record each round, and all 16,384 ordered history probabilities are retained.
+Each of the 24 link tangents is shared by the two rounds. Floating QR selects
+24 history rows; the corresponding 24x24 minor has exact rank 7 over
+\(\mathbb Q(\sqrt5)\). Thus the full two-round classical probability
+Jacobian has rank at least 7, one more direction than the exact rank-6
+one-round probability Jacobian. The numerical full-matrix rank diagnostic is
+7, but no exact upper-rank certificate is claimed. The selected history rows
+and exact-minor replay are in the existing
+[full128 order-readout packet](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md);
+the checker now passes 326 exact checks.
+
+This result narrows the gap between retaining conditional states (exact
+rank 24) and observing only one-round classical outcomes (exact rank 6): a
+two-round complete classical record recovers at least seven combinations on
+the same finite background. The remaining directions are not certified as
+classically readable here. Physical admission of repeated per-increment
+execution and selection by the compulsory full Cost-Info price remain open;
+this does not close the #334 normalized metric-response terminal or GR.
+
+## Same-profile #216 comparator for the #232 \(h^2zx_0,h^3zx_0\) jet
+
+The prescribed local comparison is now complete. The slow solder profile
+\(S_h=I+hA+h^2x_0B\) fixes a sampled Gram metric independent of the #232 fast
+amplitude \(z\). The designated #216 smooth sheet depends on that metric and
+its derivatives, so its response has no positive \(z\)-degree. The exact
+#232 joint jet has zero in all ten metric slots at \(h^2zx_0\) and
+\(h^3zx_0\), for each of its 24 free directions. The same-profile response
+difference therefore vanishes at those bidegrees; this jet is not a response-
+gap witness.
+
+The adjacent curvature coefficient \(h^2z^2\) is also jointly compatible on
+the same full phase × role × generator carrier. The explicit two-phase
+\(J_{12}\) connection correction cancels all 96 connection coefficients,
+and its 40 metric Euler coefficients vanish exactly; the stacked joint
+system has rank 88 with an eight-dimensional kernel. This is still a local
+formal coefficient, not a finite periodic root or a refinement-uniform
+response result.
+
+The companion check computes the continuum \(G[g_h]\) for the local extension
+\(X=hx_0\). It is curved at finite \(h\), with its first displayed terms at
+order \(h^2\), and tends to the flat metric. This does not give the fixed
+nonconstant refinement sequence, an exact periodic root, or the owner-sum
+response terminal. See the [slow-lift owner](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md)
+and [same-profile comparator check](certificates/a4d_diagonal_microstructure_same_profile_comparator_check.py).

@@ -758,6 +758,18 @@ for p in (1, 2, 3):
         )
         phase_difference_base[out] = metric_base[p * 10 + k] - metric_base[k]
 
+# Independently test the original connection-only representative against all
+# 40 metric rows; the joint solve above also verifies its own finite root.
+curvature_metric_on_connection_lift = sp.Matrix([
+    coefficient_h2_z2(metric_euler_full(
+        (p, 0, 0, 0), row, col, curvature_corrected_links, metric_solder,
+    ))
+    for p in range(4)
+    for row, col in SYM
+])
+check("H2_Z2_METRIC_ROWS_ZERO_ON_CONNECTION_ONLY_CORRECTION",
+      curvature_metric_on_connection_lift == sp.zeros(40, 1))
+
 joint_slope_matrix = full_jacobian.col_join(phase_difference_map)
 joint_slope_rhs = (-slope_source).col_join(-phase_difference_base)
 joint_slope_rank = sp.polys.matrices.DomainMatrix.from_Matrix(

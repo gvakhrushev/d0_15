@@ -133,3 +133,66 @@ successive applications of the matrix instrument. It does not prove that
 native D0 admits this per-increment operation or fix its compulsory
 Cost–Info price. The checker reports the original endpoint and Julia tests
 plus this two-round certificate; GR remains open.
+
+## Exact rank of the complete 128-outcome probability response to all four links
+
+The same checker now differentiates the full outcome-probability vector with
+respect to all 24 independent Lorentz link tangents: each of the four link
+roles is varied separately along the six-generator basis
+
+\[
+\{N_2,N_3,\bar N_2,\bar N_3,J_{23},B\},\qquad
+B=E_{--}-E_{++}.
+\]
+
+At the same (L=4) background with phases ((1,1,1,i)), the full128
+probability Jacobian is an exact (128\times24) matrix over
+\(\mathbb Q(\sqrt5)\). Its exact rank is 6 and its nullity is 18. Every
+column sums to zero, as required by normalization, and the role-2 (J_{23})
+entry reproduces the exact positive pointer derivative above. This is an exact
+field-rank result, not a numerical singular-value threshold.
+
+The conclusion is limited to the 128 classical outcome probabilities, the
+fixed (I_{16}/16) system marginal, this single Fourier background, and these
+independent link tangents. It does not imply blindness of the retained
+quantum output states, of a different preparation or a joint multi-background
+experiment, and it does not characterize the physically compulsory native
+Cost–Info price. It does show that this particular single-background
+probability readout cannot itself identify all 24 link variations.
+
+The retained quantum outputs carry the missing directions in this same
+finite experiment. For each original outcome j, form the unnormalized branch
+state sigma_j = K_j (I16/16) K_j* and its first variation
+dot_sigma_j = dot_K_j K_j*/16 + K_j dot_K_j*/16. All 128 Hermitian CAR16
+branch-state tangents give 32768 real coordinates. Floating QR selects 24
+candidate coordinates; the checker then verifies their 24x24 minor exactly
+over Q(sqrt(5)), with rank 24. Thus the outcome-labelled conditional CAR16
+states locally distinguish all 24 independent link tangents, although their
+128 scalar probabilities distinguish only six combinations. The checker
+output records the exact minor coordinate indices; floating pivoting is used
+only to choose the minor, not to establish its rank.
+
+This is a statement about the retained mathematical output states and their
+linear distinguishability. It does not prove that native D0 physically
+admits these link variations, permits the required state readout, or selects
+a price that includes it. The exact replay now reports 326 checks. Physical
+admission, sequential D0 word execution, compulsory Cost-Info selection, and
+positive GR closure remain open.
+
+## Two-round complete classical record: one more direction, not full rank
+
+The same 128-outcome instrument was applied twice with a fresh record at each
+round, retaining all 16,384 ordered outcome pairs. Each of the 24 link
+tangents is shared across both rounds. A floating QR chooses 24 history rows;
+the corresponding 24x24 probability-Jacobian minor has exact rank 7 over
+\(\mathbb Q(\sqrt5)\). This certifies a lower bound of seven for the full
+two-round classical Jacobian. The one-round probability Jacobian has exact
+rank 6, so the repeated record resolves at least one additional tangent
+combination. The full Jacobian's exact upper rank is not established; its
+numerical rank diagnostic is 7.
+
+The minor's history indices are emitted by the checker. This remains a
+finite repeated-matrix-instrument result with the fixed \(I_{16}/16\)
+preparation and reference128 spectator. It does not show physical D0
+admission of per-increment execution, selection/pricing by the compulsory
+full Cost-Info law, or positive GR closure.

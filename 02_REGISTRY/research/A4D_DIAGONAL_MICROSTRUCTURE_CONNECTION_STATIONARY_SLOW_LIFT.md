@@ -136,6 +136,9 @@ rows vanish at \(h^2z^2\). Thus this coefficient also gives no vacuum
 joint-lift obstruction. The calculation does not rebuild the full discrete
 #216 smooth comparator even on this flat profile.
 
+An independent direct substitution on the original connection-only
+representative also gives zero in all 40 metric rows.
+
 These are isolated formal Taylor coefficients, not an all-orders root. They
 do not show that the 16-dimensional Jacobian kernel is gauge, solve higher
 connection coefficients, or give a uniformly controlled correction on
@@ -164,10 +167,10 @@ not an obstruction to the #232 continuation. The exact replay is part of
 `a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py`.
 
 This is still only the first amplitude coefficient of one local slow jet. It
-does not test \(h^3zx_0\), finite \(z\), spatially varying neighboring
-solder data, exact periodic roots, or a normalized response gap. The separate
-\(h^2z^2\) coefficient now has its own full joint connection/metric check,
-but the constant-solder cell does not compare against a curved #216 branch.
+does not test finite \(z\), actual neighbor-dependent solder data, exact
+periodic roots, or a normalized response gap. The separate \(h^2z^2\)
+coefficient has its own full joint connection/metric check above, but the
+constant-solder cell does not by itself compare against a curved #216 branch.
 
 ### First-amplitude joint continuation through \(h^3zx_0\)
 
@@ -203,48 +206,89 @@ metric readout through \(h^3x_0\). Keeping all 24 free directions in the
 parametric solution shows that both ten-component common metric coefficient
 vectors, at \(h^2x_0\) and \(h^3x_0\), are identically zero throughout this
 formal solution family. These are the native \(E_Q\) coefficients; this
-calculation does not identify their difference from the independently
-prescribed smooth comparator source.
+jet calculation by itself does not identify their difference from the
+independently prescribed smooth comparator source; that comparison is below.
 
 This remains a local formal jet: it omits the \(h^2\) value (non-slope)
 equations, higher amplitude powers, actual neighbor-dependent solder values,
 an exact periodic root, and the normalized same-source response comparison.
-Along with the joint \(h^2z^2\) check above, it removes these low-order local
-compatibility obstructions but neither proves an exact continuation nor
-closes the #334 target. The first actual curved-profile comparison with the
-designated #216 branch is now recorded below; it obstructs the regular
-first-slow lift of the pinned finite #232 carrier.
+The same-profile comparison below finds no response gap at the two displayed
+mixed bidegrees. Its local continuum extension has a nonzero Einstein tensor
+at finite \(h\), beginning at order \(h^2\), but tends to the flat metric; it
+is not a fixed nonconstant refinement family.
+
+### Same-profile comparison with the designated #216 smooth sheet
+
+This comparison keeps the metric input fixed while varying the fast
+connection amplitude. The sampled solder is
+\[
+S_h(x_0)=I+hA+h^2x_0B,
+\qquad A=(\alpha\eta/2)^T,\quad B=(\beta\eta/2)^T,
+\]
+so its Gram metric \(Q_h=S_h^T\eta S_h\) is independent of the microstructure
+parameter \(z\). The designated #216 smooth sheet is constructed from this
+sampled metric and its smooth derivatives,
+\(A_h^{\rm sm}=\sum_{j\ge1}h^jA_j[Q_h]\); its value is not fitted to the
+candidate connection. Consequently the complete comparator metric response
+\(E_Q(Q_h,K_h^{\rm sm}(Q_h))\) has no positive powers of \(z\), regardless of
+the values of its other coefficients.
+
+The pinned 24-dimensional joint #232 calculation gives zero in all ten metric
+slots for both \(h^2zx_0\) and \(h^3zx_0\), throughout its full formal solution
+family. The #216 comparator has zero coefficients at those same bidegrees by
+its independent dependence on \(Q_h\). Therefore the same-profile response
+difference is exactly zero there in all ten slots, including after the
+owner's \(h^{-2}\) normalization. This local jet is not a nonzero response-gap
+witness.
+
+As a separate continuum check on what this shrinking profile represents, set
+the physical coordinate \(X=h x_0\) and extend the same coframe as
+\(S_h(X)=I+hA+hXB\). Direct symbolic curvature gives
+\[
+G[g_h]=h^2\operatorname{diag}(0,0,\tfrac14,\tfrac14)
+-\tfrac{h^3}{4}(E_{12}+E_{21})+O(h^4)
+\]
+in the standard covariant component convention. This confirms local
+nonflatness at finite \(h\), while the metric tends to \(\eta\); it is an
+\(h\)-dependent slow profile, not the fixed nonconstant metric family required
+by the #334 terminal. The exact 11-check same-profile comparison is
+[`a4d_diagonal_microstructure_same_profile_comparator_check.py`](certificates/a4d_diagonal_microstructure_same_profile_comparator_check.py).
+It uses the #216 smooth-sheet theorem as a pinned input and does not compute a
+discrete Levi-Civita branch or an exact finite smooth root.
 
 ### Curved designated #216 same-source first-slow test
 
 The exact check
 [a4d_y232_designated_warp_same_source_firstslow_check.py](certificates/a4d_y232_designated_warp_same_source_firstslow_check.py)
 uses the fixed smooth warp
+\[
+f(y)=1+\frac{\sin(2\pi y)}{100\pi},\qquad
+S(y)=\operatorname{diag}(1,1,f(y),f(y)).
+\]
+At \(y=0\), \(f=1\), \(f'=1/50\), \(f''=0\), and the scalar curvature
+is \(1/1250\ne0\). The designated #216 first smooth connection coefficient
+is the pinned \(A_1=-f'J_{12}\) on role 2 and \(A_1=-f'J_{13}\) on role 3.
+The same comparator is multiplied by the actual finite #232 wave
+\(W=(U,I,U^{-1},I)\), where \(U=I+4Y/7+2Y^2/7\) and
+\(Y=J_{12}-J_{13}+J_{23}\).
 
-f(y)=1+sin(2*pi*y)/(100*pi), S(y)=diag(1,1,f(y),f(y)).
-
-At y=0, f=1, f'=1/50, f''=0, and the scalar curvature is
-1/1250 != 0. The designated #216 first smooth connection coefficient is
-the pinned A1=-f'*J12 on role 2 and A1=-f'*J13 on role 3. Multiply that
-same comparator by the actual finite #232 wave W=(U,I,U^-1,I),
-U=I+4Y/7+2Y^2/7, Y=J12-J13+J23.
-
-At order h, require all 96 connection rows to vanish and all 40 metric
-rows to equal the #216 smooth source. The latter's coefficient at order
-h is zero. The unknowns include every one of the 96 phase/role/Lorentz
-link corrections and both slow derivatives of the exact flat center fiber
-(the Cayley amplitude and boost-dual center). The complete 136 x 98
-matrix has exact rank 97, while its source-augmented matrix has rank 98.
-An exact left-null witness has support 97 and pairs with the source by
-4105021481/2353113600 != 0. Therefore this specified #232 leading state
-has no regular first-slow same-source lift on this curved profile.
+At order \(h\), all 96 connection rows must vanish and all 40 metric rows
+must equal the #216 smooth source, whose coefficient at this order is zero.
+The unknowns include every phase/role/Lorentz-link correction and both slow
+derivatives of the exact flat-center fiber (the Cayley amplitude and
+boost-dual center). The complete \(136\times98\) matrix has exact rank 97,
+while its source-augmented matrix has rank 98. An exact left-null witness has
+support 97 and pairs with the source by \(4105021481/2353113600\ne0\).
+Therefore this specified #232 leading state has no regular first-slow
+same-source lift on this curved profile.
 
 This is a local formal obstruction, not a theorem excluding every exact
-branch. It assumes the leading fast state is the pinned finite #232 wave and
-admits a regular expansion through order h; nonregular scalings, an
-order-one change of the leading state, and exact finite-mesh branches remain
-open. The result closes the proposed regular first-slow route before any
-higher-order continuation is attempted.
+branch. It assumes the pinned finite #232 leading wave and a regular
+expansion through order \(h\); nonregular scalings, an order-one change to
+the leading state, and exact finite-mesh branches remain open. The #334
+terminal is still unresolved: the next useful result must address one of
+those remaining branches and its normalized response, or derive the
+compulsory physical price that selects the source.
 
 ## 6. Validation
 

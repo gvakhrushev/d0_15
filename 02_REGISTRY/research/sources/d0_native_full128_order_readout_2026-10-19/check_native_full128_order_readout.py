@@ -6,7 +6,11 @@ import ast
 import hashlib
 import json
 
+import numpy as np
 import sympy as s
+from scipy.linalg import qr
+from sympy.polys.domains import QQ
+from sympy.polys.matrices import DomainMatrix
 
 ROOT = Path(__file__).resolve().parents[4]
 CREATORS = "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py"
@@ -64,8 +68,12 @@ def run(repo=None):
         return M
 
     N2 = unit(1, 2) + unit(2, 0)
+    N3 = unit(1, 3) + unit(3, 0)
+    Nbar2 = unit(0, 2) + unit(2, 1)
     Nbar3 = unit(0, 3) + unit(3, 1)
     J23 = unit(2, 3) - unit(3, 2)
+    B = unit(1, 1) - unit(0, 0)
+    lorentz_generators = [N2, N3, Nbar2, Nbar3, J23, B]
     eta = s.Matrix([
         [0, 1, 0, 0],
         [1, 0, 0, 0],
@@ -73,9 +81,14 @@ def run(repo=None):
         [0, 0, 0, -1],
     ])
     eq(N2 * Nbar3 - Nbar3 * N2, J23, "opposite_null_commutator_is_J23")
-    for name, generator in (("N2", N2), ("Nbar3", Nbar3), ("J23", J23)):
+    for name, generator in zip(
+        ("N2", "N3", "Nbar2", "Nbar3", "J23", "B"),
+        lorentz_generators,
+    ):
         eq(generator.T * eta + eta * generator, s.zeros(4),
            "proper_lorentz_tangent_" + name)
+    require(s.Matrix.vstack(*(G.reshape(1, 16) for G in lorentz_generators)).rank() == 6,
+            "six_independent_proper_lorentz_generators")
 
     for r in range(4):
         eq(C[r] * C[r].H + C[r].H * C[r], I16,
@@ -222,7 +235,7 @@ def run(repo=None):
     # Lorentz increments, retaining the fresh outcome after each round.
     # This is a matrix-program history test, not a claim that D0 physically
     # compiles either increment into an onsite memory word.
-    def full128_kraus_and_tangent(generator):
+    def full128_kraus_and_tangent(generator, varying_role=2):
         G = sum(
             (generator[i, j] * C[i] * C[j].H
              for i in range(4) for j in range(4)),
@@ -237,8 +250,8 @@ def run(repo=None):
             L = I16 - s.Rational(1, 5) * Qleft
             R = I16 - s.Rational(1, 5) * Qright
             dP_role = (nu * C[role] * G * z[role]
-                       if role == 2 else s.zeros(16))
-            if role == 2:
+                       if role == varying_role else s.zeros(16))
+            if role == varying_role:
                 rhs_left = -dP_role * P.H - P * dP_role.H
                 rhs_right = -dP_role.H * P - P.H * dP_role
                 dL_role = sylvester_at_base(Qleft, rhs_left)
@@ -342,6 +355,158 @@ def run(repo=None):
     require(sequential_order_jet.is_zero is False,
             "fresh_record_selected_history_reads_increment_order")
 
+    # Use every original full128 outcome as a probability readout and vary all
+    # four links independently along a full proper-Lorentz basis.  The matrix
+    # below is exact over Q(sqrt(5)); it is not a floating-point rank test.
+    probability_columns = []
+    output_state_columns = []
+    all24_tangent_kraus = []
+    common_base_checked = False
+    for role in range(4):
+        for generator in lorentz_generators:
+            base_kraus, tangent = full128_kraus_and_tangent(
+                generator, varying_role=role)
+            all24_tangent_kraus.append(tangent)
+            tangent_completeness = sum(
+                (K.H * dK + dK.H * K
+                 for K, dK in zip(base_kraus, tangent)),
+                s.zeros(16),
+            )
+            eq(tangent_completeness, s.zeros(16),
+               "all24_full128_tangent_completeness")
+            if not common_base_checked:
+                require(all(
+                    s.simplify(left - right) == s.zeros(16)
+                    for left, right in zip(seq_kraus, base_kraus)
+                ), "all24_shared_full128_base_kraus")
+                common_base_checked = True
+            probability_columns.append([
+                s.simplify((s.trace(K.H * dK) + s.trace(dK.H * K)) / 16)
+                for K, dK in zip(base_kraus, tangent)
+            ])
+            state_coordinates = []
+            for K, dK in zip(base_kraus, tangent):
+                d_state = (dK * K.H + K * dK.H) / 16
+                state_coordinates.extend(
+                    s.re(d_state[i, i]) for i in range(16)
+                )
+                for i in range(16):
+                    for j in range(i + 1, 16):
+                        entry = d_state[i, j]
+                        state_coordinates.extend((
+                            s.re(entry),
+                            s.im(entry),
+                        ))
+            output_state_columns.append(state_coordinates)
+    probability_jacobian = s.Matrix(
+        128, 24,
+        lambda row, column: probability_columns[column][row],
+    )
+    require(all(
+        s.simplify(sum(probability_jacobian[row, column]
+                       for row in range(128))) == 0
+        for column in range(24)
+    ), "all24_probability_tangents_conserve_total_probability")
+    eq(
+        probability_jacobian[0, 2 * 6 + 4],
+        expected_source,
+        "all24_jacobian_reproduces_existing_J23_pointer_source",
+    )
+    probability_rank = DomainMatrix.from_Matrix(probability_jacobian).convert_to(
+        QQ.algebraic_field(s.sqrt(5))
+    ).rank()
+    require(probability_rank == 6,
+            "all128_outcome_probability_jacobian_exact_rank_6_of_24")
+
+    # Retaining each unnormalized conditional CAR output state contains more
+    # than its scalar probability. Use a floating pivot only to select rows;
+    # prove the resulting 24x24 minor exactly over Q(sqrt(5)) below.
+    state_coordinate_count = 128 * 16 * 16
+    require(all(len(column) == state_coordinate_count
+                for column in output_state_columns),
+            "all128_conditional_state_coordinates_complete")
+    state_numeric = np.asarray([
+        [float(s.N(value, 16)) for value in column]
+        for column in output_state_columns
+    ], dtype=np.float64).T
+    _, triangular, pivot_rows = qr(
+        state_numeric.T, mode="economic", pivoting=True, check_finite=False
+    )
+    pivot_rows = [int(index) for index in pivot_rows[:24]]
+    state_minor = s.Matrix(
+        24, 24,
+        lambda row, column: s.simplify(
+            output_state_columns[column][pivot_rows[row]]
+        ),
+    )
+    output_state_rank = DomainMatrix.from_Matrix(state_minor).convert_to(
+        QQ.algebraic_field(s.sqrt(5))
+    ).rank()
+    require(output_state_rank == 24,
+            "all128_retained_conditional_states_exact_minor_rank_24_of_24")
+
+    # Read the same 24 link directions through the ordinary classical record
+    # after two fresh applications of the existing full128 instrument.  Each
+    # link tangent is shared between the two rounds, as for one stationary
+    # background; no state tomography or new effect is used.  QR only chooses
+    # candidate history rows, whose 24x24 derivative minor is checked exactly.
+    K_numeric = np.asarray([
+        [[complex(s.N(value, 16)) for value in row] for row in K.tolist()]
+        for K in base_kraus
+    ], dtype=np.complex128)
+    dK_numeric = np.asarray([
+        [[[complex(s.N(value, 16)) for value in row] for row in dK.tolist()]
+         for dK in tangent]
+        for tangent in all24_tangent_kraus
+    ], dtype=np.complex128)
+    history_base = np.einsum(
+        "kac,jcb->jkab", K_numeric, K_numeric, optimize=True
+    )
+    history_numeric = np.empty((128 * 128, 24), dtype=np.float64)
+    for column, dK_column in enumerate(dK_numeric):
+        history_tangent = (
+            np.einsum("kac,jcb->jkab", dK_column, K_numeric,
+                      optimize=True)
+            + np.einsum("kac,jcb->jkab", K_numeric, dK_column,
+                        optimize=True)
+        )
+        history_numeric[:, column] = (
+            np.einsum("jkab,jkab->jk", history_base.conj(),
+                      history_tangent, optimize=True).real / 8
+        ).reshape(-1)
+        del history_tangent
+    _, history_triangular, history_pivot_rows = qr(
+        history_numeric.T, mode="economic", pivoting=True,
+        check_finite=False
+    )
+    history_pivot_rows = [int(index) for index in history_pivot_rows[:24]]
+
+    def history_probability_derivative(flat_index, base_operators,
+                                       tangent_operators):
+        first, second = divmod(flat_index, 128)
+        total = base_operators[second] * base_operators[first]
+        dtotal = (
+            tangent_operators[second] * base_operators[first]
+            + base_operators[second] * tangent_operators[first]
+        )
+        contraction = s.trace(total.H * dtotal)
+        return s.simplify(
+            (contraction + s.conjugate(contraction)) / 16
+        )
+
+    history_minor = s.Matrix(
+        24, 24,
+        lambda row, column: history_probability_derivative(
+            history_pivot_rows[row], base_kraus,
+            all24_tangent_kraus[column]
+        ),
+    )
+    history_rank = DomainMatrix.from_Matrix(history_minor).convert_to(
+        QQ.algebraic_field(s.sqrt(5))
+    ).rank()
+    require(history_rank > 0,
+            "two_round_full128_selected_history_minor_has_nonzero_rank")
+
     return {
         "status": "PASS",
         "exact_checks": len(checks),
@@ -376,6 +541,39 @@ def run(repo=None):
             "BA_mixed_jet": str(sequential_BA_jet),
             "AB_minus_BA_mixed_jet": str(sequential_order_jet),
             "AB_minus_BA_decimal": str(s.N(sequential_order_jet, 16)),
+        },
+        "all24_link_probability_jacobian": {
+            "directions": "four independent links times six proper-Lorentz generators",
+            "outcomes": 128,
+            "exact_rank_over_Q_sqrt5": probability_rank,
+            "nullity": 24 - probability_rank,
+            "background": "L=4; Fourier phases (1,1,1,i)",
+            "preparation": "I16/16 with the original reference128 as spectator",
+        },
+        "all128_conditional_output_state_jacobian": {
+            "directions": 24,
+            "real_coordinates": state_coordinate_count,
+            "exact_rank_over_Q_sqrt5": output_state_rank,
+            "nullity": 24 - output_state_rank,
+            "exact_minor_coordinate_rows": pivot_rows,
+            "numeric_pivot_min_diagonal": float(min(
+                abs(triangular[i, i]) for i in range(24)
+            )),
+            "retained_object": "all 128 unnormalized conditional CAR16 states",
+        },
+        "two_round_full128_probability_jacobian": {
+            "directions": "four shared link roles times six proper-Lorentz generators",
+            "outcome_histories": 128 * 128,
+            "selected_minor_dimension": 24,
+            "selected_minor_exact_rank_over_Q_sqrt5": history_rank,
+            "verified_full_jacobian_rank_lower_bound": history_rank,
+            "numeric_rank": int(np.linalg.matrix_rank(history_numeric)),
+            "exact_minor_history_rows": history_pivot_rows,
+            "numeric_pivot_min_diagonal": float(
+                min(abs(history_triangular[i, i]) for i in range(24))
+            ),
+            "preparation": "I16/16 with the original reference128 as spectator",
+            "retained_object": "all ordered pairs of original full128 outcomes",
         },
         "scope": {
             "endpoint_link_order_readout": True,

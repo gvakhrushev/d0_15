@@ -1600,15 +1600,14 @@ also been continued through \(h^3zx_0\) with all 96 coefficients of each
 layer free: 388 equations and 288 unknowns have rank 264 on both sides, with
 24 surviving directions. Across that entire 24-dimensional formal solution
 family, the ten native metric coefficients at both mixed orders are
-identically zero. This removes a low-order local obstruction, but it does not
-compare them with the independently declared smooth-source comparator, give
-an exact periodic root, or establish a continuum source. The next #334 test is
-not another coefficient comparison on this cell-constant probe: its continuum
-Einstein source is flat, and the full discrete #216 branch has not been
-recomputed here. The missing step is an actually site-dependent smooth metric
-with nonzero curvature, sampled on the same lattice, where the designated
-#216 branch and all full joint Euler rows can be compared. Finite-amplitude
-exact roots and the original raw refinement estimate remain open afterward.
+identically zero. The same-profile comparison is now complete at these two
+mixed bidegrees: the designated #216 smooth sheet depends on the sampled
+metric and its derivatives, not the #232 fast amplitude, so its coefficients
+at \(h^2zx_0\) and \(h^3zx_0\) vanish. The native coefficients vanish across
+the full 24-dimensional formal family as well, so this local jet supplies no
+normalized response gap. Its continuum extension has curvature at finite
+\(h\), beginning at order \(h^2\), but tends to the flat metric and is not a
+fixed nonconstant refinement sequence.
 
 The formerly connection-only \(h^2z^2\) correction has now been tested
 against all ten metric rows as well. On the constant-solder vacuum, the
@@ -1627,8 +1626,13 @@ The exact ranks are 97/98, so the pinned finite #232 carrier has no regular
 first-slow lift with the designated source on this profile. This is a scoped
 formal obstruction, not a nonlinear no-go: nonregular continuations,
 order-one retuning of the leading carrier, and exact finite-mesh roots remain
-open. Replay it with
-[a4d_y232_designated_warp_same_source_firstslow_check.py](certificates/a4d_y232_designated_warp_same_source_firstslow_check.py).
+open. This obstruction closes the regular first-slow route for the pinned
+carrier/profile, not the full #334 target. The next #334 step is a genuine
+finite joint-critical sequence or a different branch on one fixed curved
+metric, with the designated #216 source and all native source/metric/link
+rows evaluated on the same samples. Physical source identification and the
+original raw refinement estimate remain open. Replay the scoped obstruction
+with [a4d_y232_designated_warp_same_source_firstslow_check.py](certificates/a4d_y232_designated_warp_same_source_firstslow_check.py).
 
 For the execution rhythm, checks and handoff, use [00_WORK/README.md](../../00_WORK/README.md).
 The historical task lists below are **not launch instructions**.
