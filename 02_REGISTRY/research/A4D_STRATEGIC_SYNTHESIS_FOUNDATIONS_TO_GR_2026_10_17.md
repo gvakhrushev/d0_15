@@ -4967,3 +4967,84 @@ neither it nor this #232 obstruction supplies the missing native
 Cost–Info/source identity from §7.63. The consuming route therefore stays
 focused on one admitted full-price carrier and its source equality, rather
 than extending the rejected regular #232 branch. `GR_closed=false`.
+
+
+### 7.65. Все полиномиальные 24 Cartan-строки обращаются КОНЕЧНО; quartic h-refinement сохраняет ненулевую Weyl
+
+Новый [original-action all-polynomial Cartan/refinement owner](A4D_POLYNOMIAL_CARTAN_EXACT_INVERSE_AND_QUARTIC_REFINEMENT_2026_10_19.md)
+потребляет exact flat24 Hessian §7.55 и сохранённую exact quartic all40
+локальную ветвь, без повторного большого solve. Линеаризация ИСХОДНЫХ
+six-based-star proper Lorentz link Euler около flat solder/links на
+unwrapped polynomial fields есть конечный оператор сдвигов
+\(L=M+\mathcal N\), где \(M=L(1,1,1,1)\) — уже доказанная 24×24 матрица
+с det256 и собственными ±1,±2. У неё явный exact inverse:
+\[
+M^4-5M^2+4I=0,\qquad M^{-1}=(5M-M^3)/4.
+\]
+Каждый \(T_\delta-I\) снижает полиномиальную степень. Поэтому
+на \(\mathscr P_d^{24}\) оператор \(M^{-1}\mathcal N\) нильпотентен,
+и ВСЯ линейная Cartan-система обращается:
+\[
+\boxed{L^{-1}|_{\mathscr P_d^{24}}
+=\sum_{j=0}^{d}(-M^{-1}\mathcal N)^j M^{-1}.}
+\]
+Это EXACT all-degree polynomial finite inverse: при фиксированном
+coframe и известных более низких амплитудных коэффициентах
+любой polynomial source следующих 24 link-строк устраняется
+явной конечной суммой. Потребляя старый local Lorentz gauge Ward,
+после решения link rows автоматически исчезают ещё6
+антисимметричных coframe rows на невырожденном e.
+Таким образом geometric Schur target на polynomial bulk имеет
+10 метрических, а не40 independent equations. Это не значит,
+что 10 metric equations уже решены, и не переносится на
+periodic Fourier domain: там \(T-I\) не нильпотентно.
+
+В сохранённом unit-grid rational quartic решении solver ДОПУСКАЛ
+link polynomials spatial degree≤6 и coframe≤5, но реально
+использовал только link≤3 и coframe≤4. Все пять quartic
+amplitude sectors проверены: в mixed (2,2) 118 ненулевых
+link coefficients, 20 coframe coefficients. При
+\(X=x/h,\ a_1=ha,\ b_1=hb,\ v_h=h e_1,\ U_h=\exp\mathsf L_1\)
+исходное quadratic-in-solder star действие точно переносится,
+включая 16+24 Euler: \(E_{v,h}=h E_{v,1}\),
+\(E_{U,h}=h² E_{U,1}\). Проверенные строгие степени
+\(\deg e_m\le m\), \(\deg\mathsf L_m\le m-1\) дают
+\[
+e_h^{[\le4]}=e_0^{[\le4]}+O_{C^k(K)}(h),\quad
+h^{-1}\mathsf L_h^{[\le4]}=\omega_0^{[\le4]}+O_{C^k(K)}(h)
+\]
+для всех фиксированных k и компактов K **коэффициентно по
+амплитудам**. Оригинальные 40-Euler полиномиальные джеты
+зануляются во всех15 амплитудных секторах при каждом h,
+а \(h^{-2}[ab]P_{uv,h}=wJ_{\rm rot}/4\ne0\)
+сохраняет nonflat Weyl в continuum. Полный finite fixed-amplitude
+root и равномерный nonlinear tail этим НЕ доказаны.
+
+Явный исходный saved-coframe пример для mixed (2,2):
+\[
+\boxed{
+e^{2}_{x,(2,2)}(h)=
+\frac{3x²y²}{128}+\frac{y⁴}{256}
+-h\left(\frac{9xy²}{128}+\frac{y³}{128}\right)
+-\frac{7h²y²}{256}.
+}
+\]
+Это выбранный exact rational gauge/section, не обязательное
+совпадение с прежней иллюстративной σ₄/χ₄-формой.
+Фиксированный поперечный collar + periodic u/v допустимы
+для коэффициентной локальной ветви; fully periodic x/y нет.
+
+Контроль: [576 constant Jacobian entries + 140 polynomial tests]
+(sources/d0_two_null_crossing_2026-10-19/check_polynomial_cartan_inverse.cjs)
+и [все пять rational quartic sectors + physical h-polynomial]
+(sources/d0_two_null_crossing_2026-10-19/check_quartic_graded_refinement.cjs).
+Старый exact full-spatial 840×1008 source replay не изменён.
+
+**Следующий математический gate:** построить 10-component
+finite metric Schur после явного Cartan inverse, определить
+его image и действительную finite coordinate/Bianchi
+compatibility. Только затем можно заявлять full all-order
+или convergent analytic branch.
+Физические native H+J+R/Cost−Info, подготовка, clock,
+controller/work, CAR16, старые LEFT/RIGHT/ref128, original
+raw #216 остаются OPEN. GR_closed=false.
