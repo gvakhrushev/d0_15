@@ -125,10 +125,79 @@ coefficient, separate from the \(h^2zx_0\) slope correction above.
 
 These are isolated formal Taylor coefficients, not an all-orders root. They
 do not show that the 16-dimensional Jacobian kernel is gauge, solve higher
-connection coefficients, impose the ten metric equations, or give a
-uniformly controlled correction on expanding grids. In particular they do
-not discharge the parent requirement for an exact joint-critical sequence
-containing #232.
+connection coefficients, or give a uniformly controlled correction on
+expanding grids. In particular they do not discharge the parent requirement
+for an exact joint-critical sequence containing #232.
+
+### Joint metric compatibility of the \(h^2 z x_0\) coefficient
+
+The same mixed slope coefficient has now been tested against all ten
+symmetric metric probes, with the complete phase × role × Lorentz-link
+carrier. Stack the 96 connection equations with the 30 phase differences of
+the ten metric outputs. The exact rational coefficient matrix and augmented
+matrix both have rank 88, leaving eight homogeneous directions; the source is
+compatible. One sparse solution adds only to role-0 links at phases 0 and 2:
+
+\[
+\delta K_{0,0}=\tfrac12h^2zx_0(G_{02}-G_{03}),\qquad
+\delta K_{0,2}=-\tfrac12h^2zx_0(G_{02}-G_{03}),
+\]
+
+where \(G_{02},G_{03}\) are the certificate's symmetric boost generators.
+Direct coefficient substitution makes all 96 connection rows and all 40
+phase/component metric coefficients zero at \(h^2zx_0\). Thus this
+coefficient yields no phase-common metric source after the joint lift; it is
+not an obstruction to the #232 continuation. The exact replay is part of
+`a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py`.
+
+This is still only the first amplitude coefficient of one local slow jet. It
+does not test \(h^3zx_0\), finite \(z\), spatially varying neighboring
+solder data, exact periodic roots, or a normalized response gap. The separate
+\(h^2z^2\) connection correction above remains a connection-only coefficient;
+the ten metric equations at that bidegree have not been discharged here.
+
+### First-amplitude joint continuation through \(h^3zx_0\)
+
+The next mixed layer was solved without freezing the earlier kernel
+representatives. Write the first-amplitude link tangent as
+\[
+V_{p,r}=Y_{p,r}+hA_{p,r}+h^2x_0B_{p,r}+h^3x_0C_{p,r},
+\]
+where the full 96 phase × role × generator entries of each of \(A,B,C\) are
+unknown, and take the exact \(z\)-derivative of the original plaquette
+operators at \(z=0\). The 388 equations comprise all 96 connection rows at
+orders \(h,h^2x_0,h^3x_0\), all 40 metric rows at order \(h\), and the 30
+phase differences of the ten metric rows at each of \(h^2x_0,h^3x_0\).
+The coefficient matrix and augmented matrix both have exact rational rank
+264, leaving 24 free directions. The z-linear formulas are cross-checked
+against the full plaquette formulas on all 96 connection and all 40 metric
+components for the pinned first lift.
+
+One sparse joint solution uses role-0 links at phases 0 and 2 only:
+\[
+\begin{aligned}
+A_{0,0}&=\tfrac12(-J_{13}+J_{23}),&
+A_{2,0}&=-A_{0,0},\\
+B_{0,0}&=\tfrac12(G_{02}-G_{03}),&
+B_{2,0}&=-B_{0,0},\\
+C_{0,0}&=-\tfrac14G_{01},&
+C_{2,0}&=-C_{0,0}.
+\end{aligned}
+\]
+All other coefficients in this representative are zero. Thus the #232
+first-amplitude slow jet admits joint connection stationarity and phase-common
+metric readout through \(h^3x_0\). Keeping all 24 free directions in the
+parametric solution shows that both ten-component common metric coefficient
+vectors, at \(h^2x_0\) and \(h^3x_0\), are identically zero throughout this
+formal solution family. These are the native \(E_Q\) coefficients; this
+calculation does not identify their difference from the independently
+prescribed smooth comparator source.
+
+This remains a local formal jet: it omits the \(h^2\) value (non-slope)
+equations, higher amplitude powers, actual neighbor-dependent solder values,
+an exact periodic root, and the normalized same-source response comparison.
+It therefore removes a low-order compatibility obstruction but neither
+proves an exact continuation nor closes the #334 target.
 
 ## 6. Validation
 

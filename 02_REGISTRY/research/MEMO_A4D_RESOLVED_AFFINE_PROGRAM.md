@@ -1590,6 +1590,24 @@ source test. They do not identify the mandatory full Cost−Info price or solve
 the original 40 finite Euler rows; the integrated limits and next test are in
 [strategic synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md), §§7.52–7.54.
 
+A new exact #232 checkpoint in [the diagonal microstructure owner](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md)
+stacks the complete 96 connection rows with all 30 phase-difference constraints
+from the ten symmetric metric probes at the mixed coefficient \(h^2zx_0\).
+The rational matrix and its augmented matrix both have rank 88; one explicit
+four-link-mode correction makes all 96 connection rows and all 40 metric
+coefficients zero at that bidegree. The first-amplitude joint slow jet has
+also been continued through \(h^3zx_0\) with all 96 coefficients of each
+layer free: 388 equations and 288 unknowns have rank 264 on both sides, with
+24 surviving directions. Across that entire 24-dimensional formal solution
+family, the ten native metric coefficients at both mixed orders are
+identically zero. This removes a low-order local obstruction, but it does not
+compare them with the independently declared smooth-source comparator, give
+an exact periodic root, or establish a continuum source. The next #334 test is
+to evaluate the designated #216 smooth branch on this same local slow profile
+and compare its own metric coefficient with the 24-dimensional jet before
+claiming a response gap; finite-amplitude exact roots and refinement remain
+after that comparison.
+
 For the execution rhythm, checks and handoff, use [00_WORK/README.md](../../00_WORK/README.md).
 The historical task lists below are **not launch instructions**.
 
