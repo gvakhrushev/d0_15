@@ -5405,3 +5405,36 @@ source compatibility: в generic rank6 Schur все линейные
 full characteristic dispersion, native physical Book/Cost−Info
 selection, old RIGHT/ref128/CAR, preparation/clock/work или
 raw #216 этот linear TT результат не утверждает. GR_closed=false.
+
+
+### 7.78. Source Ward не тождественен local solvability: Laurent-field/image module seam
+
+[Flat all40 Schur owner §8](A4D_FULL40_EXACT_FLAT_SCHUR_RANK_SIX_GAUGE_AND_CHARACTERISTIC_2026_10_19.md)
+теперь различает два математически РАЗНЫХ gates для любой
+следующей нелинейной амплитуды. Generic finite Schur имеет
+точный rank6 над рациональным Laurent FIELD \(K=\mathbb Q(z)\)
+и 10 левых нулей (6 internal Lorentz + 4 forward discrete
+divergences). По линейной алгебре over K, их зануление
+необходимо И ДОСТАТОЧНО для \(J_n\in\operatorname{im}_K S\).
+Но физически допустимые finite native/local polynomial sources
+живут в MODULE \(R^{16}\), где
+\(R=\mathbb Q[z_u^{\pm1},z_v^{\pm1},z_x^{\pm1},z_y^{\pm1}]\),
+а вообще \(\operatorname{im}_R S\) может быть строго меньше,
+чем \(R^{16}\cap\operatorname{im}_K S\).
+Пример: постоянный source 1 не имеет Laurent-полиномиального
+прообраза у difference \(1-T_u^{-1}\), хотя её generic
+field-rank1 и левое ядро0. На finite periodic/collar carrier
+нужно ещё работать с истинными boundary/characteristic divisors,
+а не делить на формальный propagator pole.
+
+Поэтому для FIRST new fifth-order source исходной saved quartic
+crossed-null family следующая работа идёт ровно в два шага:
+(1) exact all10 Ward source pairing, включая настоящую
+Lorentz+forward-gradient divergence; (2) exact polynomial
+module membership/denominator clearing of reduced Schur,
+прежде чем расширять formal solution. Ранее полученная
+nilpotent terminating Cartan inverse решает локальный 24-link
+блок, но НЕ доказывает второго шага для rank6 metric Schur.
+Это узкий typed endgame, а не новый action или перечень
+пятого-десятого порядков; native 718-edge/Golden complete
+Cost–Info selection и raw #216 остаются OPEN. GR_closed=false.
