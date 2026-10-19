@@ -189,6 +189,39 @@ The first factor is a 686-dimensional gauge quotient (685 normalized mu +1 absol
 
 **Strategic consequence:** in the original edge-local scalar + original Lorentz mathematical subproblem, neither the historical scalar action NOR the Lorentz link is missing once their full correctly typed sources have been admitted as DATA. The full D0→GR obstruction is now exactly the PHYSICAL constitutive equation selecting/pricing this same complete data/circuit, not an abstract reconstruction/rank gap.
 
+## 2.3. The exact remaining CONSTITUTIVE fiber is 65-dimensional, even after both global inverses
+
+The very latest same-owner 2026-10-19 source revision of \`A4D_COMPLETE_718_SCALAR_BOOK_INVERSE_GAUGE_ACTION_FROM_ONE_ABSOLUTE_RECORD_2026_10_19.md\` now proves the important constraint that a complete positive observation should NOT be advertised as fundamental action selection.
+
+For the original declared primitive Book scalar subclass, the actual input is 718 independent directed primitive Costs C_uv and 33 independently priced vertex Info values I_u, a total of 751 coordinates. Their net edge-local price is
+
+    s_uv = C_uv - θ I_u - (1−θ) I_v.
+
+Complete balanced normalized edge observation plus absolute lambda determines the 718 s up to the 32 scalar endpoint-price coboundaries, hence 686 gauge-invariant scalar coordinates. The remaining EXACT 65-dimensional kernel has TWO distinguished parts:
+
+    33 independent primitive Cost-versus-Info reallocations:
+      δI_u = j_u, δC_uv=θj_u+(1−θ)j_v, hence δs=0;
+    32 scalar endpoint gradients:
+      δs_uv=η_u−η_v, η modulo constants.
+
+Our full original Julia Choi programme globally injects the SIX independent proper-Lorentz U link variables into its moving PURE state; it does NOT couple to or distinguish the above 65 scalar constitutive fibers just by having complete Lorentz QFI. Therefore the mathematical combined map has exactly the sharp parameter count
+
+    751 (C,I) + 6 (one Lorentz U)
+      -> 686 (mu,lambda) + 6 (complete Choi U)
+      = 692 observable/geometric coordinates,
+    original fiber dim = 757−692=65
+
+at strict interior Cost charts. This is NOT a proposal for a 757-dimensional fundamental field or a new action; it is a precise identifiability fact for ONE original scene link plus net scalar data. Extra native work/prep/cost records might distinguish those 33 reallocations; if they do, they must be physically derived and paid.
+
+A particularly sharp two-sided countermodel already supplied in that scalar owner is
+
+    Protocol A: C_uv=1,     I_u=0;
+    Protocol B: C_uv=1+t²,  I_u=t²  (on all native original edges/vertices),
+
+for all small positive/negative t, arbitrary θ. BOTH have identical net s_uv=1, the same normalized mu, the same absolute lambda, every balanced scalar action and all its field jets, and may use precisely the same full original Julia programme Choi states. Yet their primitive Cost and original Info separate second derivatives differ by 2. The scalar Book edge price cannot distinguish them. This is only a valid ActionProtocol+declared vertex-Info adversarial pair, NOT proof both are compulsory physical M1/G0 programmes.
+
+**This changes the nature of the missing GR theorem:** it is not 65 more geometric equations to fit. It is the ONE genuinely foundational \`M1/G0/Book03\` constitutive requirement that makes the original Cost/Info/work/preparation splitting and its price **obligatory** on the actual retained history. No amount of Lorentz tomography, scalar pressure or gate universality alone can logically derive that selector. A correct physical law might identify/pin all 33 cost-vs-Info coordinates simultaneously, with the 32 pure endpoint modes remaining boundary/canonical gauge on closed history. If this full law is established on an OPEN field chart, complete FIRST source equality with the actual AF/Palatini+matter action there automatically transports all Hessians; checking an isolated vacuum jet does NOT (e.g. positive C=1+exp(-1/t²) has all flat jets at0 but different off shell).
+
 ## 3. Refit the REVERSE-GR integration using one physically explicit source register
 
 Correct graph of obligations, now with NO mysterious continuously tunable active gate:
