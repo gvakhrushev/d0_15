@@ -8364,3 +8364,57 @@ result narrows the detector/source gap while leaving the full Book
 Cost-Info selection, physical admission, metric source and refinement open.
 See the [full128 source result](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md)
 and its [exact checker](sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py).
+
+## Full-history Golden source audit: binary coarse-graining is not the physical price (2026-10-19)
+
+The reviewed physical-source packet from source PR #384 is now integrated into
+this same #334 execution. Its five research owners and six small checkers are
+listed with SHA-256 provenance in
+[the intake record](sources/d0_physical_binary_return_2026-10-19/INTAKE.json).
+The copied files are byte-identical to source head
+8d78b094efb217af8e8bebc3cea733777b93077e. All six checkers passed both before
+and after transfer.
+
+The intake separates several objects that had been tempting to collapse:
+
+* On the original full128 flat-shell instrument, the unique 1024-step modal
+  history and the complete pointer-Shannon mean have different J23 first
+  sources (-4.581893845... versus -0.0315467843...). The measured tape has
+  hidden-port and blank-port source pieces; the full128, reduced-label, and
+  hidden-port derivatives are not interchangeable.
+* A binary good/failure statistic does not determine the full retained-history
+  price. Exact KL chain rules leave a conditional fine-code source, and the
+  coherent retained-record correction has its own nonzero source. The
+  four-label controls are counterexamples to an inference from fixed binary
+  probabilities to zero fine or coherent source; they do not constitute a
+  full-instrument physical no-go.
+* For the distinct native filled-return binary event, three explicitly
+  defined conditional readouts have proportional geometric/CAR first
+  covectors on the stated fixed-oldRIGHT, common-probability, eligible source
+  directions. This is conditional source equivalence, not equality of their
+  actions. The complete Book normalizer, preparation, clock, work, and other
+  full-source rows remain unaccounted for.
+* On the unrestricted matched AF preparation fibre, a bounded-norm whole-
+  sector transfer has a nonzero entropy source. The exact Gibbs/KL code
+  pressure selects the canonical preparation mathematically, but its identity
+  with the compulsory physical Book action is not established. For the same
+  complete Born instrument, trace normalization gives N=1 and hence no source
+  from log N; the source cannot be attributed to that normalizer while also
+  identifying it with the complete Born trace.
+
+These are results for named Golden/full128 and filled-return programs. No map
+has yet identified their complete physical action with the newly fixed
+full718 Perron reflection U_min. The actual physical history algebra, same-run
+Book Cost-Info binding, full preparation/clock source, and pullback to the
+40+matter Lorentz equations still need one owner on one programme.
+
+The current same-branch preparation boundary sharpens the next step:
+[the full Golden record owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
+§6.70, proves that C_Y address-copy and the declared fineRIGHT-preserving
+class supply at most 13p^6 success, strictly below the required s_* profile.
+This excludes that class for the target preparation, not all native D0
+operations. The next constructive question is a physical actuator that
+changes fresh fineRIGHT descendant supply on the actual K_j wires while
+preserving the whole old jointRIGHT/reference and carrying its complete
+history and price. This integration does not discharge the task's #216/#232
+normalized response terminal, select a physical action, or close GR.

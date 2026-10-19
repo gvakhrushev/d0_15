@@ -5471,3 +5471,43 @@ is a genuine response of original scene prices; at the actual flat scene the 99/
 
 The live claims.csv and gr_assembly/VIEW remain GR/constitutive/native_sector/matter_source_ward OPEN and prior probe_law conditionally accepted. This is a positive new exact finite operator construction in RESEARCH, not formal claim promotion or merge into main.
 
+
+### 7.80. Полная история Golden не сводится к бинарному событию; следующий физический шаг — supply actuator
+
+В тот же #334 интегрирован исследовательский источник #384:
+[полная история и modal/mean source](A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md),
+[разложение J23 по портам](A4D_NATIVE_FULL128_J23_PORT_SOURCE_SPLIT_AND_PHYSICAL_COARSE_READOUT_2026_10_19.md),
+[полная цена бинарного возврата](A4D_PHYSICAL_BINARY_RETURN_BOOK_PRICE_AND_EINSTEIN_SOURCE_GATE_2026_10_19.md),
+[потеря fine/coherent источника при бинарном сжатии](A4D_PHYSICAL_FULL_HISTORY_COHERENCE_SOURCE_AND_BINARY_COMPRESSION_GATE_2026_10_19.md),
+[подготовительный AF-источник и граница Book](A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md).
+Происхождение исходной ветки #384 и SHA-256 всех пяти текстов и шести
+проверок закреплены в
+[INTAKE.json](sources/d0_physical_binary_return_2026-10-19/INTAKE.json);
+копии побайтно совпадают с head 8d78b094.
+
+Сильный итог этого пакета — не новый источник Эйнштейна, а устранение
+нескольких ложных отождествлений. На полном128 одна и та же программа даёт
+разные J23 первые производные для модального исхода и pointer-Shannon mean;
+портовая декомпозиция и условный code-KL дают дополнительные ненулевые
+слагаемые. Бинарные good/failure вероятности не определяют ни полный
+классический кодовый источник, ни когерентный retained-record источник.
+Отдельный бинарный filled-return маршрут условно переносит геометрический
+источник только при fixed-oldRIGHT, общей вероятности и нужной source
+support; полный нормализатор, подготовка, часы и work остаются. Только при доказанной same-history привязке всех Book weights к полным
+исходам trace-preserving Born-инструмента получается N=1 и D log N=0; сама
+нормировка Born не доказывает это Book-равенство и не даёт пропущенный
+гравитационный член. Свободный whole-sector AF
+перенос дополнительно даёт entropy-source -1 на ограниченном GNS направлении;
+слагаемое code-pressure компенсирует его лишь в математическом
+functional; не выведено, что это физическая цена Book.
+
+Это проверяет именно full-history и full-price границу; результаты пакета
+пока не отождествлены с новым full718 U_min, и они не дают response limit
+для #216/#232. Следующий собственный ресурсный рубеж уже количественный:
+в [owner полного Golden record](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
+§6.70, C_Y вместе со всем fineRIGHT-сохраняющим классом ограничен сверху
+13p^6<s_*. Поэтому вместо новой схемы address-copy нужно проверить один
+конкретный actuator, который меняет свежий fineRIGHT descendant supply на
+реальных K_j, сохраняя весь old jointRIGHT/reference и считая собственную
+полную историю/цену. Это NO-GO только для названного класса; никакой новый
+физический запрет, action, task status, BOOK или claim здесь не введён.
