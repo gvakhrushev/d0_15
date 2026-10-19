@@ -82,8 +82,6 @@ B0 = ((F(1), F(0)), (F(2), F(3)))
 v0 = (F(0), F(1))
 allowed_u = (F(3), F(-2))
 allowed_w = (F(-3), F(0))
-assert tuple(dot(row, allowed_w) + dot(row, allowed_u)
-             for row in ()) == ()  # explicit empty shape check only
 assert (dot(L0[0], allowed_w) + dot(B0[0], allowed_u),
         dot(L0[1], allowed_w) + dot(B0[1], allowed_u)) == (0, 0)
 assert dot(v0, (dot(B0[0], allowed_u), dot(B0[1], allowed_u))) == 0
