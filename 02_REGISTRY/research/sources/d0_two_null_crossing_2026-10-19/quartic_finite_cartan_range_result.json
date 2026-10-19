@@ -1,0 +1,66 @@
+{
+  "schema": "d0-exact-research-result/v1",
+  "claim": "mixed [a^2*b^2] coefficient of the original finite 24-link plus 16-coframe Cartan equations",
+  "status": "PASS_SCOPED_LOCAL_PERTURBATIVE_COEFFICIENT",
+  "source_base_commit": "83537e03543ca9b08a7408fcf786e2f3c98a3d3c",
+  "latest_pr_head_seen_before_rebase": "46147621adcbfd64fd639b3ca7f8d6730565b4de",
+  "computation": {
+    "amplitude": "a^2*b^2",
+    "A": [1, 0],
+    "B": [0, 1],
+    "geometry_scale": "sigma=-(x^2+y^2)^2/128",
+    "released_cubic_coframe_modes": 192,
+    "quartic_link_profile_degree": 5,
+    "finite_response_rows": 480,
+    "finite_response_columns": 696,
+    "link_equation_spatial_support_degree": 3,
+    "coframe_equation_spatial_support_degree": 4,
+    "proper_lorentz_verified_through_amplitude_degree": 4,
+    "exact_back_substitution": true
+  },
+  "replay": {
+    "command": "python3 02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py",
+    "runtime": {
+      "python": "3.9.6",
+      "sympy": "1.14.0"
+    },
+    "checker": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py",
+      "sha256": "2660a536bca995a89a17f804deacaddeed07a8b26679d99676c91e6716adf725"
+    },
+    "output": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_finite_cartan_range_output.txt",
+      "sha256": "36ce26b423a20c9bee9ef4aea71fa1bdd1d7465db1841883002cd32edce2d65e"
+    }
+  },
+  "prerequisites": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py",
+      "sha256": "373ee2bf93e46b5513565b2c908cc5f5077b3e0586d727a1c7feda39211c60b6",
+      "result": "PASS: 400 finite Euler coefficient identities through amplitude degree 3 for the symbolic orthogonal affine family"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py",
+      "sha256": "05b79065744748d73dfcf55a931cc4d7b4076f70839adb19c5836a1fe892e493",
+      "result": "PASS: original exact mixed quadratic owner"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py",
+      "sha256": "9d05917a29e73bf3fd6311d11d7652a6e01dfc8e06c645b2802f49a3f5c37c33",
+      "result": "PASS: continuum Ricci through degree 3 and exact finite scalar Poisson identities"
+    }
+  ],
+  "limits": [
+    "Only the [a^2*b^2] coefficient was solved; other degree-4 amplitude sectors were not checked.",
+    "The selected cubic link witness was held fixed; its cubic link-kernel modes were not released.",
+    "The profiles are polynomial on the unwrapped transverse lattice and are not periodic-carrier solutions.",
+    "No convergence, all-order solution, uniform refinement, native complete-price selection, physical matter source, or GR closure follows."
+  ],
+  "closure": {
+    "periodic_carrier_root": false,
+    "all_order_solution": false,
+    "native_price_selection": false,
+    "physical_gr_closure": false,
+    "GR_closed": false
+  }
+}

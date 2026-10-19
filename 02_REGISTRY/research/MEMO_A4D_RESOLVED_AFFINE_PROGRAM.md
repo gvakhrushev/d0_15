@@ -30,6 +30,7 @@ Current consumer:
 [exact crossed-null quadratic all-40 bootstrap](A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md)
 and [cubic continuum Ricci/Poisson completion](sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py),
 [quartic full continuum Ricci completion](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_ricci.py),
+[exact cubic finite link lift and coframe source](sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 and its separate finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The new owner composes the corrected same two-tick AF×scene feedback, the
@@ -46,24 +47,29 @@ rows. A forced `h/8` Cartan correction solves every mixed link row; the
 remaining coframe rows are exactly the Einstein overlap. For orthogonal
 transverse gradients all 40 mixed rows vanish while the crossed Weyl
 curvature stays nonzero. This is an exact `[ab]` coefficient, not an
-all-amplitude spatial root: finite cubic mixed equations, global compatibility and
-the same-programme price/admission remain open.
+all-amplitude spatial root.
 
-The next continuum Ricci order is now resolved in §7.56: source-forced
-cubic profile corrections cancel the full Einstein Ricci through degree 3,
-and the same source is inverted exactly by the original five-point
-transverse Laplacian for every mesh size. The checker verifies the symbolic
-family of perpendicular gradients. The finite original 24-link/16-coframe
-cubic equations and their spatial compatibility remain open, so this does
-not upgrade the coefficientwise quadratic Cartan result to an all-order
-finite root.
+The continuum cubic profile corrections in §7.56 cancel full Ricci through
+degree 3 and invert the source exactly with the five-point stencil. The
+separate [finite cubic Cartan checker](sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py)
+now closes all 24 link and 16 coframe Euler rows at `[a²b]` and `[ab²]` for
+the symbolic orthogonal family `A=(r,q), B=k(-q,r)`. Its exact
+`192 × 240` response has a constructive witness; substitution checks all
+400 Euler row/amplitude identities through total degree 3 together with
+proper-Lorentz links. This is an unwrapped local polynomial perturbative jet,
+not a periodic `L⁴` root or convergent all-order solution. The separate
+[finite mixed-quartic checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py)
+and [its pinned result receipt](sources/d0_two_null_crossing_2026-10-19/quartic_finite_cartan_range_result.json)
+closes `[a²b²]` for the axial orthogonal pair with a `480 × 696` exact local
+response. Other quartic sectors, cubic link-kernel continuation and
+same-programme price/admission remain open.
 
 Strategic §7.58 now closes the local continuum geometry through degree 4:
 the required orbit-area mode and a transverse coframe scale cancel all 16
-Ricci components for the arbitrary orthogonal crossed-null family. This
-extends the degree-3 Ricci result, but the original finite 24+16 cubic and
-quartic Euler equations, spatial compatibility and native physical
-selection remain open.
+Ricci components for the arbitrary orthogonal crossed-null family. The finite
+cubic 24+16 perturbative jet and one mixed finite quartic `[a²b²]` coefficient
+are now solved locally; the remaining quartic sectors, spatial compatibility
+and native physical selection remain open.
 
 The [balanced native-address source seam](A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md),
 now consumed in strategic §7.38, is the main finite-to-continuum bridge. It

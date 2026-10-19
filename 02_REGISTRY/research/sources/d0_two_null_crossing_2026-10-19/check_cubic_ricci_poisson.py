@@ -117,8 +117,9 @@ if __name__=="__main__":
     require(s.expand(discrete_lap(HA*radius)-8*HA)==0,
             "symbolic finite Laplacian must exactly recover second source")
     print("PASS symbolic arbitrary orthogonal gradients A=(r,q), B=scale*(-q,r)")
-    print("SCOPE: continuum Einstein degree<=3 + finite scalar Poisson only;")
-    print("finite third-order 24 Cartan/16 solder and full native Cost-Info are OPEN.")
+    print("SCOPE: this checker proves continuum Einstein degree<=3 and scalar Poisson;")
+    print("the local finite all40 cubic jet is checked separately by check_cubic_finite_cartan_range.py.")
+    print("Neither checker proves periodic all-order dynamics or native Cost-Info selection.")
 
 
     # 2-Killing vacuum's EXACT orbit-current trace requires Δ rho = 0,

@@ -4546,16 +4546,33 @@ Cost−Info. Это prerequisite уже существующего consumer §7.
 Пятиузловой скалярный источник также точен:
 \(\Delta_h(|x|^4-h^2|x|^2)=16|x|^2\).
 
-Итак, формальный continuum metric jet этой локальной семьи решает
-\(R_{\mu\nu}=0\) по всем амплитудным коэффициентам до полной степени4.
-Это не решает конечные исходные 24 link + 16 coframe Euler на
-\([a^2b],[ab^2],[a^2b^2]\), не межузловая совместимость и не предел
-\(h\to0\). Это не доказывает, что D0 выбирает \(\sigma,\chi\): полный
-same-history Cost−Info, native admission/preparation/clock и физическое
-исполнение остаются отдельными открытыми воротами. Следующий решающий шаг —
-поднять эти две моды и cubic profiles в оригинальные конечные 40 уравнений
-и одновременно свести их к уже существующему same-programme price binding;
-не запускать независимый повтор continuum no-go. `GR_closed=false`.
+Финитный [cubic Cartan range checker](sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py)
+поднимает профиль в исходные шесть plaquette и все 24 proper-Lorentz
+link-вариации. Один только source-forced `H_3,J_3` и link-lift оставляют
+четыре ненулевые coframe-строки при осевой ортогональной паре; hostile control
+подтверждает, что настройка только этих двух радиальных профилей не снимает
+остаток. Решающий шаг освобождает все 16 исходных coframe-компонентов и
+одновременно дополняет degree-2 Lorentz-link jets. Получается точная
+`192 × 240` response-система для каждого из `[a²b]` и `[ab²]`. При
+`A=(r,q), B=k(-q,r)` checker строит символический witness: после подстановки
+все 40 link/coframe Euler-строк равны нулю как полиномы по `x,y,r,q,k` для
+всех десяти amplitude-мономов полной степени ≤3; экспоненты links сохраняют
+Lorentz-ограничение до того же порядка. Исходный квадратичный crossed-Weyl
+коэффициент не меняется.
+
+Это закрывает конечный **локальный cubic perturbative jet**, а не периодическое
+решение на `L^4`-торе: профиль не периодичен, сходимость amplitude-ряда и
+uniform refinement не установлены. Continuum Ricci family остаётся нулевой
+до полной степени4. Отдельный [finite mixed-quartic checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py)
+и его [pinned result receipt](sources/d0_two_null_crossing_2026-10-19/quartic_finite_cartan_range_result.json)
+теперь решает `[a²b²]` всех исходных 24+16 строк для `A=(1,0), B=(0,1)`:
+освобождены все 192 кубические coframe-моды, а quartic link-профили взяты
+до пространственной степени5. Полная карта имеет размер `480 × 696`;
+точная подстановка и proper-Lorentz проверка проходят. Это один коэффициент
+на выбранной кубической link-ветви; остальные quartic sectors, cubic
+link-kernels и periodic compatibility остаются открыты. Полный same-history
+Cost−Info, native admission/preparation/clock и физическое исполнение
+остаются отдельными воротами. `GR_closed=false`.
 
 
 ### 7.59. Original Book03 boundary-Info is an EXACT canonical quotient of all nonlinear closed Lorentz curvature
@@ -4586,4 +4603,3 @@ The ENTIRE normalized unconditional endpoint law is θ-independent **IFF the tru
 \(\partial_2C(q_{i-1},q_i)+\partial_1C(q_i,q_{i+1})-dI(q_i)\), independent of θ. Both endpoints' canonical momenta shift by SAME exact 1-form \((\theta-\eta)dI\), so the discrete symplectic form and its full bulk constraints/Euler jets are identical for any smooth source. This is an actual all-order **information-cohomological quotient** for the same completed native path law, not an external Einstein scalar.
 
 **Strategic change:** §7.57 had left choosing θ as an apparently separate physical gate. For a genuinely complete closed/endpoint-conditioned D0 gravitational reading, θ itself is now REMOVED from the *bulk* GR forcing problem; the actual physical choices still needed are the branch Info observable/event, primitive Cost law, full field→native-Lorentz/Kraus and Book historical action/clock/preparation binding, and—in an unconditional open ensemble—the explicit endpoint-event variance/source. This narrows the true original-D0 Cost−Info→nonlinear Lorentz-star source problem without adding another metric term, detector angle, spectrum or readout. The full original D0⇒GR and fixed-g/tau raw#216 remain open.
-

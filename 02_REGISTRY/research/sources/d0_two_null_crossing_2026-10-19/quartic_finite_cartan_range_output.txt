@@ -1,0 +1,33 @@
+{
+  "status": "PASS_QUARTIC_FINITE_40_JET",
+  "scope": "local unwrapped polynomial perturbative jet only",
+  "amplitude": "a^2*b^2",
+  "A": [
+    "1",
+    "0"
+  ],
+  "B": [
+    "0",
+    "1"
+  ],
+  "geometry_sigma": "-(x^2+y^2)^2/128",
+  "link_source_rows": 24,
+  "coframe_source_rows": 16,
+  "cubic_coframe_kernel_modes_released": 192,
+  "max_link_source_spatial_degree": 3,
+  "max_coframe_source_spatial_degree": 2,
+  "operator_shape": [
+    480,
+    696
+  ],
+  "link_input_spatial_degree": 5,
+  "link_output_spatial_degree": 3,
+  "coframe_output_spatial_degree": 4,
+  "periodic_carrier_root": false,
+  "all_order_solution": false,
+  "native_price_selection": false,
+  "physical_gr_closure": false
+}
+PASS all 40 quartic finite Euler equations over complete polynomial support
+PASS exact substitution into the 480-row response system
+PASS proper-Lorentz link constraint through total degree four
