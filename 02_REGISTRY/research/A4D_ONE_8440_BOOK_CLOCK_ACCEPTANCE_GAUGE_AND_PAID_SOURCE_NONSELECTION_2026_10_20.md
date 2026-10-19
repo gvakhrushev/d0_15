@@ -175,3 +175,55 @@ Their sum is \(F_n\) and is identical in both programmes, but separately they di
 Hence the *exact* finite source-preservation gate is: retain and price the ACTUAL clock/preparation-vs-path-verification rejection **STAGE**, or prove its conditional probability law is fixed by the original native programme so the nuisance clock-to-path redistribution cannot occur. Merely labelling the final depth F_n and saving downstream Bell failure does not fix the absolute Book source.
 
 The augmented checker builds ALL 143482 strictly positive full events with \(\kappa=p^{20}\), proves their total probability one and equality under the two programmes on the entire two-sided field chart, and confirms the first-stage reject record breaks equivalence. No extra gravity or physical selector has been installed. \`GR_closed=false\`.
+
+
+## 6. Constructive POSITIVE repair + exact original finite Petz strictness
+
+The same 143482-event finite countermodel also identifies the **minimum extra paid record** needed to reconstruct the scalar source within its declared two-stage instrument: keep the stage bit distinguishing \(E_n\) (early preparation reject) from \(B_n\) (late path verification reject), for each already-kept depth n.
+
+For **arbitrary positive original directed 718-edge K**, positive physically calibrated blank attempts \(g_2=p,g_3=p^2\), arbitrary \(\beta_2,\beta_3\in(0,1)\) and any common filter \(\kappa>0\) satisfying \(\kappa Z_n(K)<1\), the COMPLETE stage-resolved probabilities immediately give
+\[
+\boxed{
+\beta_n=1-\frac{\Pr(E_n)}{g_n},
+\qquad
+\frac{\Pr(\text{successful paths of depth 3})}
+     {\Pr(\text{successful paths of depth 2})}
+=p\frac{\beta_3}{\beta_2}\frac{Z_3(K)}{Z_2(K)}.
+}\tag{15}
+\]
+Both are true finite conditional probability identities with ALL failed flags retained; \(\kappa\) cancels in the success-depth ratio. Hence, using the literal original \(P_{uv}\) obtained by the 8440 positive inverse, the ONE previously invisible absolute Book scalar is recovered by
+\[
+\boxed{
+\lambda=
+\frac{\Pr(\text{success 3})}{\Pr(\text{success 2})}
+\ \frac1p\frac{\beta_2}{\beta_3}\,
+\frac{\operatorname{Tr}P^2}{\operatorname{Tr}P^3}.
+}\tag{16}
+\]
+The full 686-mode original scalar Book variational action and its TRUE moving field jets are then reconstructed from the original 8440 inversion or \((\mu,\lambda)\), with the six independent Lorentz signed CAR readouts still recovered from the same Golden/Bell conditional marker. **No new scalar parameter, price, or field is needed** if the actual native clock internally preserves that early/late distinction. This is a constructive *conditional* complete-record sufficiency theorem. It does not assert that the original G0 fullStep supports exactly the introduced conditional \(\beta,\kappa\) apparatus.
+
+The loss of that one internal stage label is not merely formal. In the two actual finite countermodels of §5 (take 1 as the moving-cost programme and 0 as the constant one), let their genuine **stage-resolved** distributions be \(P_1^{\rm full},P_0^{\rm full}\), and let \(\mathcal F\) coarsen \(E_n,B_n\) to \(F_n=E_n+B_n\) while keeping all 143480 accepted-loop/Golden/Bell records unchanged. Then for every \(t\ne0\),
+\[
+\boxed{
+D_{\rm KL}(\mathcal F P_1^{\rm full}\Vert \mathcal F P_0^{\rm full})
+=0,\qquad
+D_{\rm KL}(P_1^{\rm full}\Vert P_0^{\rm full})
+=\sum_{n=2,3}
+\left[E_n^{(1)}\ln\frac{E_n^{(1)}}{E_n^{(0)}}
++B_n^{(1)}\ln\frac{B_n^{(1)}}{B_n^{(0)}}\right]>0.
+}\tag{17}
+\]
+Positivity is strict because the two early-rejection masses differ, each paired with a compensating late-rejection mass at the same nonzero terminal \(F_n\); it is exactly a sum of positive conditional Bernoulli divergences. Therefore NO single field-independent classical Petz/recovery map from the **coarsened** full 143482-record to the genuine stage-resolved record can recover BOTH families: they have identical coarse images but different full images. This is a strict original \`complete-history Petz/source-sufficiency\` hostile control, not a borrowed analogy.
+
+The independent ALL ORIGINAL 33/718 source checker gives for the base nonuniform directed-cost fixture, in natural KL units,
+\[
+\boxed{
+D_{\rm KL}(P_1^{\rm full}\Vert P_0^{\rm full})
+=0.4363515274908637\ldots\,t^4+O(t^6).
+}\tag{18}
+\]
+For \(t=0.1\) the strict finite loss is \(4.4102983865323703\times10^{-5}\), while the forgotten **primitive absolute action SECOND source remains exactly +2** at \(t=0\). Thus even an \(O(t^4)\) small positive KL loss near the reference can hide a finite nonzero second Euler variation — consistent with the existing #334 Petz-to-source warning that loss values alone do not control action jets without typed \(C^2\) estimates.
+
+**Physical two-outcome decision made exceptionally sharp:** on ONE original actually admitted Golden LEFT/G0/oldRIGHT/M1 programme, EITHER (A) its full retained CLOCK/prepare/archive explicitly supplies a stage-resolved odds/source recovery such as (15)–(16) and pays its work, or (B) the physically compulsory native law independently constrains the acceptance-ratio function \(\beta_3/\beta_2\) (therefore forbids the counterpair). Otherwise the observed complete terminal Book/Golden law is not sufficient for its own absolute primitive scalar Euler Hessian. Once that real G0 clock gate is proved, the **still independent** original Cost-versus-Info (33), noncommutative ordered Book memory, full same-run Einstein–CAR Euler and refinement roots must be discharged. \`GR_closed=false\`.
+
+Reproduction: the companion checker explicitly tests the positive full-stage KL and the exact reconstruction (15)–(16); no full G0 hardware is postulated.
