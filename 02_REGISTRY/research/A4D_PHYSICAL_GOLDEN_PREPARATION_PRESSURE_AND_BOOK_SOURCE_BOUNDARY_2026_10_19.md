@@ -121,3 +121,80 @@ Compare the genuine native full `H+J+R+Book` cost for the **same executed old-LE
 3. Then replay the complete 40+matter+prep+clock first covector, and preserve the existing raw #216 fixed-source terminal and refinement requirements. A root of a merely prescribed `F_task` is not a physical D0 joint root.
 
 The exact companion [finite checker](sources/d0_physical_binary_return_2026-10-19/check_d0_physical_golden_preparation_pressure.py) tests the two-cost identity, whole-sector GNS norm, entropy gradient, code-pressure cancellation, conditional envelope and the normalized Born log-partition no-source boundary. `GR_closed=false`.
+
+
+## 7. Direct **actual operator** cross-owner: the second full AF preparation price preserves the geometric+CAR roots
+
+An abstract `F_code` pressure is **not** necessary even for a mathematically controlled native-preparation candidate: an already-owned literal controlled AF record has its own full operator price. Consume [`A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md`](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md) §§1–6, especially (2)–(8), with its fixed original golden effect `E_j=p² I`, and full faithful scalar-type density `σ_j=c_j I_{d_j}`. Its genuine terminal SECOND (not sum of first and second) price is
+
+```text
+A_E(σ)=6 + D(Φ_E σ || μ_f)/ln(phi)
+      =6 + D(σ||μ)/ln(phi) + sum_j d_j*c_j*f_j(p²),
+```
+
+the second identity holding exactly here because E_j commutes with the scalar σ_j. Its original native transition conditional price, not newly assigned, is
+
+```text
+f_j(e) = D_φ(P_j(e)||ν_j), with
+R=sqrt(1-e), B=sqrt(e), w_j=p^((3-j)/2), v_j=p^((4-j)/2),
+P_j=[(w_j R+B/sqrt(2))², (w_j R-B/sqrt(2))²,
+     (m0_j-2) copies w_j²(1-e), m1_j copies v_j²(1-e)],
+ν_j=[m0_j copies p^(3-j), m1_j copies p^(4-j)],
+(m0_0,m1_0)=(3,2), (m0_1,m1_1)=(2,1).
+```
+
+At the ACTUAL E=p², exact finite arithmetic/evaluation gives
+
+```text
+f0=1.101848122743383...
+f1=1.248281091336616...
+f0-f1=-0.146432968593233...
+```
+
+The **already-owned unique density minimizer** of this genuine finite operator price is
+
+```text
+σ_j^*=μ_j phi^(-f_j)/Z_E * I_(d_j),
+Z_E=A_N phi^(-f0)+B_N phi^(-f1).
+```
+
+This selected density differs from immutable oldRIGHT and changes the class masses, but **retains equal per-leaf weights within each original class**. Since the exact fixed-source geometry+CAR original J₂ owner has `DJ_i=0` on class1 and only class0 READY leaves carry geometric+matter sources, for every independently varied admissible coframe16+proper link24+two scalar direction V, whenever this original effect E and its preparation price are field-fixed on V,
+
+```text
+sum_i σ_i^* DJ_i[V]
+=(phi^(-f0)/Z_E) sum_i μ_i DJ_i[V]
+=c_N sum_i μ_i DJ_i[V], c_N>0.
+```
+
+This is an **exact first-source/root universality theorem under native central optimized preparation**, not an assertion that σ* is physical whole-program preparation. The actual coefficient `c_3=1.01875057477759...` and `c_N→1.01916620084660...` follow from the existing native price. Matter/geometry source *ratio*, as well as their common field Euler zero sets, are unchanged; any absolute physical normalization still includes `c_N` and cannot simply be ignored.
+
+The user-level closure improvement: **canonical fixed RIGHT is not mathematically necessary merely to preserve the Einstein/CAR roots on this specific common null-stratum**. A physically priced prep selector that is type-uniform (including the owned σ*) suffices for the field-source projection. It must still be derived for the whole executed measurement/readout word, not chosen because it has the desired geometry.
+
+## 8. Exact double-counting control: summing two separately 'full' prices is not innocuous
+
+The complete binary pointer mean at a common g* is `H_phi(ν)+h_phi(g*)`. On the diagonal scalar E=p² native AF preparation chart,
+
+```text
+A_E(ν)=6+D_phi(ν||μ)+sum_i ν_i f_(type(i)),
+D_phi(ν||μ)=sum_i ν_i C_i-H_phi(ν).
+```
+
+Therefore the tempting **unproved additive action** `A_E(ν)+H_phi(Y,+/-)` simplifies **exactly** to
+
+```text
+A_E(ν)+H_phi(Y,+/-)
+=6+h_phi(g*)+sum_i ν_i(C_i+f_(type(i))).
+```
+
+Its preparation source along the WHOLE-sector transfer is
+
+```text
+(C0+f0)-(C1+f1) = -1+(f0-f1)
+                = -1.146432968593233... != 0.
+```
+
+All entropy curvature cancels and this proposed sum has no faithful interior preparation stationary point on the unrestricted normalization simplex. This is a **scoped source incompatibility for one naive concatenation of two individually complete prices**, not a failure of the actual full D0 action: the terminal second AF-record price is explicitly NOT defined by the owner as an additive sequence of first and second prices, and the binary pointer cost of another programme cannot be inserted without a SAME-history native composition/clock ownership theorem.
+
+It isolates the real remaining physical lemma: identify the original complete history **composition law and its actual cost normalizer** before combining AF PREP and Golden (J_2)/binary Book, or the supposed stationarity may fail even though both separately valid native operations have correct geometric source readings.
+
+These cross-owner numerical/rational formula checks are added to the companion reproducible checker. No independent work/color/clock/counterterm is introduced, and the verdict remains `GR_closed=false`.
