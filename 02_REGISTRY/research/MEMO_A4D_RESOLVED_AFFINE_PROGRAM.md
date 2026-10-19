@@ -54,6 +54,16 @@ scale Euler equation of the complete price forces it to zero. This closes
 the named mathematical root/source seam for a specified AF×scene `J₂`
 programme, not the physical selection of the original full `H+J+R` or its
 preparation, observer, clock and raw `#216` rows.
+The immediate native gate is now concrete: prove that unchanged D0 operations
+actually execute and price the balanced old-LEFT-controlled query/effect on
+the retained word address. Merely constructing its diagonal projection in
+the AF algebra or a reversible address algorithm does not establish actuation.
+The [retained-record admission boundary](A4D_NATIVE_RETAINED_RECORD_ADMISSION.md)
+shows that its declared one-way generator class does not supply old-record-
+controlled active computation, but it does not classify every D0 operation.
+The next proof must derive the needed actuation from an already owned native
+operation or give a scoped obstruction for the actual palette, while
+preserving all complement and RIGHT records.
 
 The separate [exact Fibonacci LEFT-rank decoder](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md)
 also gives exact cell balance and the same conditional source transfer, but
