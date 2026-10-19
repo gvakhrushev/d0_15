@@ -5359,3 +5359,49 @@ The new [exact rational polarization checker](sources/d0_two_null_crossing_2026-
 The coefficientwise [Laurent Ward checker](sources/d0_two_null_crossing_2026-10-19/check_full40_symbolic_ward_identities.cjs) independently proves the universal gradient, Lorentz, and variational-adjoint identities used for this generic-rank inference. The forward discrete gradient is NOT a right null in general; the left source obeys the adjoint FOUR FORWARD discrete-divergence constraints. This gives a precise FIRST OBSTRUCTION to the next all-order step: once the 24 Cartan coefficients are eliminated by the polynomial inverse, every nonlinear coframe source \(J_n\) of the ORIGINAL star action must lie in the rank-six Schur image. In particular its four genuine \(\sum_\mu D_\mu^+ J_n^{a\mu}=0\) source constraints must hold (plus Lorentz projection), otherwise a new coefficient \(e_n\) cannot remove it. The previous quartic exact solution already passes its full40 check; the first *uncomputed* source is degree FIVE. Test this fifth-order source Ward BEFORE another 40×polynomial undirected rank search. A finite exact failure changes only this analytic/polynomial continuation route, not original D0 or continuum Einstein generally.
 
 **Interpretation:** original flat 40-direction Palatini Hessian has 24 independent link normals and generic reduced Schur rank6 with ten gauge tangents. At \(z=(1,-1,1,1)\), the exact rank-four null-wave kernel is ten gauge directions plus two TT polarizations. This is a finite-lattice linearized polarization count at one wave, not the full continuum spectrum. The proof concerns original star geometry, not the compulsory native Cost−Info action. Same-run original Golden/718-edge/LEFT-RIGHT/ref128/CAR16/clock/preparation and raw #216 remain OPEN; GR_closed=false.
+
+
+### 7.77. Обе физические TT-поляризации существуют уже в ТОЧНОЙ исходной finite-linear системе для ДВУХ null-направлений
+
+Полный [flat all40 Schur owner §6–6.1](A4D_FULL40_EXACT_FLAT_SCHUR_RANK_SIX_GAUGE_AND_CHARACTERISTIC_2026_10_19.md)
+добавляет конструктивную причину снижения rank6→rank4 на
+characteristic null waves, не интерпретируя один modular minor
+как общий finite dispersion. Для ПРОИЗВОЛЬНОГО lattice
+profile f(u) две независимые transverse-traceless coframe волны:
+\(\delta e^2{}_x=f,\ \delta e^3{}_y=-f\) и
+\(\delta e^2{}_y=\delta e^3{}_x=f\).
+Их ОДНОВРЕМЕННО полное original 24-link+16-coframe
+линейное решение имеет строго найденные связи:
+\[
+\begin{array}{lll}
+(+):&\omega_x=(I-T_u^{-1})f\,N_2,&
+\omega_y=-(I-T_u^{-1})f\,N_3,\\
+(\times):&\omega_x=(I-T_u^{-1})f\,N_3,&
+\omega_y=(I-T_u^{-1})f\,N_2,
+\end{array}
+\]
+\(\omega_u=\omega_v=0\). Для противоположной волны f(v)
+заменить \(u\to v,\ N_i\to\bar N_i\).
+Это решение **всех40 линейных конечных Euler**, а не ограниченный
+coframe ansatz; links НЕ навязывались свободным gauge.
+Исходный six-based stencil имеет Laurent степень [-1,1]
+по единственному null shift t, поэтому тождества
+\(L(t)w_0+b_0=0,\ B(t)e=(1-t^{-1})b_0,\ C(t)w_0=0\)
+проверены тремя exact dyadic points t=1,2,4
+как коэффициентная polynomial identity for ALL t≠0,
+а также на t=8 независимым контролем.
+[Actual original40 checker](sources/d0_two_null_crossing_2026-10-19/check_full40_flat_schur_symbol.cjs)
+тестирует обе поляризации на ОБОИХ null-направлениях.
+Наличие двух TT modes следует конструктивно, независимо от
+нумерического представления rank4.
+
+Следующий математический рубеж — взаимодействие двух этих
+направлений в НЕЛИНЕЙНОЙ original star системе и exact finite
+source compatibility: в generic rank6 Schur все линейные
+24 Cartan rows исключены, а четыре левых finite divergence Ward
+должны убивать реальные нелинейные sources на каждом порядке.
+Пятый порядок quartic crossed-null branch остаётся первым
+непроверенным. Общего exact full fixed-amplitude solution,
+full characteristic dispersion, native physical Book/Cost−Info
+selection, old RIGHT/ref128/CAR, preparation/clock/work или
+raw #216 этот linear TT результат не утверждает. GR_closed=false.
