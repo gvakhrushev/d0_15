@@ -296,5 +296,6 @@ Review baseline: `880c8284454b072219f470982963d8dc041957c9`.
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py
+python3 02_REGISTRY/research/certificates/a4d_diagonal_microstructure_same_profile_comparator_check.py
 python3 02_REGISTRY/research/certificates/a4d_y232_designated_warp_same_source_firstslow_check.py
 ```
