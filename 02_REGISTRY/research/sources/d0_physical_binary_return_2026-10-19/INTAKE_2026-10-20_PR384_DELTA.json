@@ -280,5 +280,27 @@
       "line": 179,
       "change": "removed one trailing ASCII space"
     }
-  ]
+  ],
+  "target_head_after_intake": "9b51caa7e80045972aebaae56a97065b02b19e63",
+  "stack_reconciliation": {
+    "source_pr_base": "8f327fcaf38d2579515c94276c6431dbc3f5ce76",
+    "source_pr_head": "1e3c720f14ca88c86e025141f923c492c222c643",
+    "parent_head_at_comparison": "9b51caa7e80045972aebaae56a97065b02b19e63",
+    "child_pr_delta_path_count": 36,
+    "byte_identical_in_parent_count": 34,
+    "source_path_normalized_only_for_whitespace": {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_FLOW_HESSIAN_NATIVE_ARCHIVE_POISSON_AND_RANK32_DARK653_2026_10_19.md",
+      "source_sha256": "1af690aff1637a3d0365f2a2526756068de4296b21fdb3b79b2edc16eb5beed2",
+      "parent_sha256": "ef09cb696509bc983d9899f625d196bf6ccfb27377f4ddb78254e5a156191a54",
+      "normalization": "one trailing ASCII space removed; prose and math otherwise byte-identical"
+    },
+    "status_only_path_not_transferred": {
+      "path": "README.md",
+      "source_sha256": "0d02017af018ebf2d2ab80316279bfe8ba62c93a42c5f9a00cc583baae8715e2",
+      "scope": "two-line physical-source intake status note only",
+      "reason": "not a scientific source; the parent PR description already records the intake and GR_closed=false boundary"
+    },
+    "scientific_source_delta_consumed": true,
+    "typed_independent_scientific_acceptance": "not recorded; finite research evidence remains unaccepted for GR closure"
+  }
 }
