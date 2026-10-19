@@ -5181,8 +5181,8 @@ The connection side of this gate is now algebraically sharper. Given
 original tripartite graph, one can reconstruct all 359 edge transports in
 tree gauge, for any group-valued connection, and the remaining 960 faces are
 exact ordered consistency products. An exact free-group certificate checks
-every identity; the companion finite $SO(1,3)$ checker tests a genuinely
-noncommuting curved sample. This means a native instrument need not expose
+every identity; the companion exact-rational $SO(1,3)$ checker verifies a genuinely
+noncommuting matrix sample. This means a native instrument need not expose
 each edge separately if it supplies those ordered loop matrices in a common
 frame. Scalar triangle odds still do not contain this information, and the
 new theorem does not show D0 actually records, transports, or prices the

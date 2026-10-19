@@ -99,8 +99,9 @@ the face products. Thus 327 appropriately based/transported triangle
 matrices form a complete cycle-coordinate readout of all 359 edge links;
 the only residual ambiguity is the chosen common root frame, i.e. gauge.
 The exact free-group checker verifies all 359 edge reconstructions and all
-960 omitted-face identities without assuming commutativity; the adjacent
-SO(1,3) numerical checker supplies a noncommuting sample and hostile control.
+960 omitted-face identities without assuming commutativity; the companion
+SO(1,3) checker verifies a noncommuting rational matrix sample, exact gauge
+recovery and an independently corrupted-face control.
 
 This closes a *geometric reconstruction* question, not the physical source
 question. Triangle conjugacy classes alone, scalar affinities, or matrices
@@ -128,6 +129,6 @@ This single compulsory physical return-price and ordered-source gate is the new 
 
 [Dependency-free numerical checker](sources/d0_two_three_cycle_tomography_2026-10-19/check_two_three_cycle_tomography.mjs): all 33 nodes, 359 undirected edges, 1287 triangles, Perron–Doob reconstruction after nontrivial diagonal similarity and global scaling, 960 triple contrast identities, single absolute return reconstruction and hostile controls. The theorem is algebraic, not inferred from that numerical fixture.
 
-[Exact free-group checker](sources/d0_nonabelian_triangular_tomography_2026-10-19/check_free_group_reconstruction.py) verifies the noncommutative word identities for the 327-face connection reconstruction and all 960 complementary faces. [The finite \(SO(1,3)\) checker](sources/d0_nonabelian_triangular_tomography_2026-10-19/check_so13_triangle_reconstruction.mjs) checks a noncommuting curved sample, gauge recovery and an independently corrupted omitted face.
+[Exact free-group checker](sources/d0_nonabelian_triangular_tomography_2026-10-19/check_free_group_reconstruction.py) verifies the noncommutative word identities for the 327-face connection reconstruction and all 960 complementary faces. [The exact-rational \(SO(1,3)\) checker](sources/d0_nonabelian_triangular_tomography_2026-10-19/check_so13_triangle_reconstruction.mjs) verifies a noncommuting rational matrix sample, exact gauge recovery and an independently corrupted omitted face.
 
-**New results:** exact 2-/3-cycle scalar history tomography and one absolute pressure scale; exact arbitrary-group reconstruction of all edge links from 327 ordered tree-transported triangle matrices, with 960 complementary identities. The free-group checker certifies the latter word equalities; the SO(1,3) numerical checker tests a noncommuting sample. **Reused:** 327/H1=0, triangle-image 960, Perron/Doob, 9-null/Bianchi, Julia Lorentz, all40 null/CAR and quartic response. **Not proved:** compulsory physical Markov or matrix-holonomy selection, Book/Born same-event equality and full normalizer, J2 equivalence, complete preparation/clock, generic exact uniform joint-root, raw #216 or GR_closed.
+**New results:** exact 2-/3-cycle scalar history tomography and one absolute pressure scale; exact arbitrary-group reconstruction of all edge links from 327 ordered tree-transported triangle matrices, with 960 complementary identities. The free-group checker certifies the latter word equalities; the exact-rational SO(1,3) checker verifies a noncommuting matrix realization. **Reused:** 327/H1=0, triangle-image 960, Perron/Doob, 9-null/Bianchi, Julia Lorentz, all40 null/CAR and quartic response. **Not proved:** compulsory physical Markov or matrix-holonomy selection, Book/Born same-event equality and full normalizer, J2 equivalence, complete preparation/clock, generic exact uniform joint-root, raw #216 or GR_closed.
