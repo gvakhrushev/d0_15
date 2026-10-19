@@ -60,11 +60,61 @@ Therefore the complete normalized positive Markov history plus ONE absolute unno
 
 Use instead the already constructed opposite-null CAR16 six-generator proper Lorentz tester with **TWO fresh retained Julia flags**, preserving every failure outcome and original RIGHT/ref128. Reusing a flag introduces the previously proved spurious 3/4 I contribution. The role of its Lorentz ordered response is separate from, and complementary to, the Markov price theorem. Likewise the current exact density-dressed coframe and new quartic orbit-area correction are separate indispensable geometric inputs, not consequences of scalar cycle odds.
 
+### 3.1. Ordered matrix triangles reconstruct a general group connection up to gauge
+
+Scalar return/triangle statistics do not contain the Lorentz matrix order. A
+different and exact geometric statement is available if the *matrix-valued*
+triangle holonomies are part of the readout. Let the three vertex classes be
+
+\[
+A_0,\ldots,A_8,\qquad B_0,\ldots,B_{10},\qquad C_0,\ldots,C_{12},
+\]
+
+and let every oriented edge carry \(U_{uv}\in\mathcal G\), with
+\(U_{vu}=U_{uv}^{-1}\), for any group \(\mathcal G\) (in particular
+\(SO(1,3)\)). Use the 32-edge spanning tree
+\(A_0B_j, A_0C_k, A_iB_0\ (i>0)\) to choose tree gauge, so all those
+transports are the identity. Write the consistently tree-transported,
+ordered face matrix as
+\[
+H_{ijk}=U_{A_iB_j}U_{B_jC_k}U_{C_kA_i}.
+\]
+
+The following 327 face matrices recover every remaining edge, with products
+kept in their stated noncommutative order:
+\[
+\begin{aligned}
+U_{B_jC_k}&=H_{0jk} &&(11\cdot13=143),\\
+U_{A_iC_k}&=H_{i0k}^{-1}H_{00k} &&(8\cdot13=104),\\
+U_{A_iB_j}&=H_{ij0}U_{A_iC_0}U_{B_jC_0}^{-1} &&(8\cdot10=80).
+\end{aligned}
+\]
+The remaining 960 faces obey the exact ordered identity
+\[
+H_{ijk}=H_{ij0}H_{i00}^{-1}H_{000}H_{0j0}^{-1}
+         H_{0jk}H_{00k}^{-1}H_{i0k},\qquad i,j,k>0.
+\]
+These formulas follow by substituting the tree-gauge edge expressions into
+the face products. Thus 327 appropriately based/transported triangle
+matrices form a complete cycle-coordinate readout of all 359 edge links;
+the only residual ambiguity is the chosen common root frame, i.e. gauge.
+The exact free-group checker verifies all 359 edge reconstructions and all
+960 omitted-face identities without assuming commutativity; the adjacent
+SO(1,3) numerical checker supplies a noncommuting sample and hostile control.
+
+This closes a *geometric reconstruction* question, not the physical source
+question. Triangle conjugacy classes alone, scalar affinities, or matrices
+left in unrelated local frames are insufficient. The native run must supply
+these ordered matrix readouts, their tree-frame transport, and their complete
+record/work/clock price on the same carrier before this reconstruction can
+be used as a D0 field-to-link map. It therefore complements, but does not
+replace, the two-fresh-flag source test above.
+
 ## 4. One decisive same-programme physics gate, not a new catalogue
 
 A genuine positive D0→GR derivation should use ONE admitted complete retained programme and check the following typed composition, retaining all its physical price terms:
 
-**Native events:** an addressable starting old scene label u, real two-step returns u->v->u and opposite fully labelled triangle histories, with ALL alternative outcomes retained. Verify that their **actual** conditional history probabilities coincide with the mathematically reconstructed P. An unconditioned stationary probability pi_u P_uv P_vu is NOT the same as the required conditional return probability. The Slater good/complement event from #381 is an additional distinct sample space; identify it by a genuine same-instrument map or do not equate them.
+**Native events:** an addressable starting old scene label u, real two-step returns u->v->u and opposite fully labelled triangle histories, with ALL alternative outcomes retained. Verify that their **actual** conditional history probabilities coincide with the mathematically reconstructed P. If the geometric route uses the matrix reconstruction in §3.1, retain ordered triangle matrices transported into one tree frame; scalar affinities or unrelated local conjugacy classes do not suffice. An unconditioned stationary probability pi_u P_uv P_vu is NOT the same as the required conditional return probability. The Slater good/complement event from #381 is an additional distinct sample space; identify it by a genuine same-instrument map or do not equate them.
 
 **One true absolute price:** obtain W_Book(u,v,u) and its complete field derivative from the same original Cost−Info; check equation (3), all normalizers, old preparation, clock, control and source/work. If physical Book is not this positive Perron transfer, record a scoped failure of the proposed scene-transfer bridge, not a general D0 or Einstein no-go.
 
@@ -78,4 +128,6 @@ This single compulsory physical return-price and ordered-source gate is the new 
 
 [Dependency-free numerical checker](sources/d0_two_three_cycle_tomography_2026-10-19/check_two_three_cycle_tomography.mjs): all 33 nodes, 359 undirected edges, 1287 triangles, Perron–Doob reconstruction after nontrivial diagonal similarity and global scaling, 960 triple contrast identities, single absolute return reconstruction and hostile controls. The theorem is algebraic, not inferred from that numerical fixture.
 
-**New theorem:** 2-/3-cycle complete normalized-history tomography and exactly one absolute price/pressure scaling factor. **Reused:** 327/H1=0, triangle-image 960, Perron/Doob, 9-null/Bianchi, Julia Lorentz, all40 null/CAR and quartic response. **Not proved:** compulsory physical Markov selection, Book/Born same-event equality and full normalizer, J2 equivalence, complete preparation/clock, generic exact uniform joint-root, raw #216 or GR_closed.
+[Exact free-group checker](sources/d0_nonabelian_triangular_tomography_2026-10-19/check_free_group_reconstruction.py) verifies the noncommutative word identities for the 327-face connection reconstruction and all 960 complementary faces. [The finite \(SO(1,3)\) checker](sources/d0_nonabelian_triangular_tomography_2026-10-19/check_so13_triangle_reconstruction.mjs) checks a noncommuting curved sample, gauge recovery and an independently corrupted omitted face.
+
+**New results:** exact 2-/3-cycle scalar history tomography and one absolute pressure scale; exact arbitrary-group reconstruction of all edge links from 327 ordered tree-transported triangle matrices, with 960 complementary identities. The free-group checker certifies the latter word equalities; the SO(1,3) numerical checker tests a noncommuting sample. **Reused:** 327/H1=0, triangle-image 960, Perron/Doob, 9-null/Bianchi, Julia Lorentz, all40 null/CAR and quartic response. **Not proved:** compulsory physical Markov or matrix-holonomy selection, Book/Born same-event equality and full normalizer, J2 equivalence, complete preparation/clock, generic exact uniform joint-root, raw #216 or GR_closed.

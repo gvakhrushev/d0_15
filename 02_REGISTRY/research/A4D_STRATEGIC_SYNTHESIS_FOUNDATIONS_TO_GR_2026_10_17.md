@@ -5176,6 +5176,19 @@ The physical interpretation has a hard boundary: the scalar Perron pressure Hess
 
 The consuming gate is now precise: on one admitted native run, compare actual **conditional** two-/three-cycle histories to the reconstructed kernel (the stationary joint law $\pi_uP_{uv}P_{vu}$ is not a substitute); obtain the same run's absolute Book return and full derivative, including preparation, clock, controller/work and normalization; then test the full $16+24+2$ coframe/link/CAR source and the ordered Lorentz response against the existing star source. After that same-source match, apply the nine Golden null shears, retained Ward/Bianchi and a separately recorded global scale to classify the nonlinear/global Einstein tensor. Exact joint roots, source refinement and raw #216 still remain open. `GR_closed=false`.
 
+The connection side of this gate is now algebraically sharper. Given
+327 suitably tree-transported **matrix-valued** face holonomies on the
+original tripartite graph, one can reconstruct all 359 edge transports in
+tree gauge, for any group-valued connection, and the remaining 960 faces are
+exact ordered consistency products. An exact free-group certificate checks
+every identity; the companion finite $SO(1,3)$ checker tests a genuinely
+noncommuting curved sample. This means a native instrument need not expose
+each edge separately if it supplies those ordered loop matrices in a common
+frame. Scalar triangle odds still do not contain this information, and the
+new theorem does not show D0 actually records, transports, or prices the
+matrix holonomies. It narrows the physical readout target; it does not replace
+the signed Lorentz-source equation.
+
 ### 7.70. The complete 718-edge feedback source obeys a discrete Kirchhoff Ward identity
 
 For the same-record predictive feedback of §7.68, define its full moving edge-price source by $\mathcal J_{uv}=\partial J_{\rm pred}/\partial s_{uv}$. The exact quotient under a common cost shift and vertex endpoint potentials implies, at every strictly positive edge-price field,
@@ -5241,7 +5254,14 @@ F_{\rm var}=J_{\rm future}^*(I-J_{\rm past}J_{\rm past}^*)J_{\rm future}=I-P_\pi
 
 On the flat equal-cost scene this has the exact $30+2+1$ spectrum $\{1\}^{30}\cup\{0.800314904000112\ldots,0.694037670857683\ldots\}\cup\{0\}$, with $J_{\rm var}(z)=-\operatorname{Tr}\log(I-zF_{\rm var})=0.000030035369315208\ldots$ at the declared $z=2^{-20}$. Under a moving positive edge-cost chart, the owner differentiates the Perron law, stationary measure, variance effect and log determinant together and reports a nonzero finite edge-price source; it is not a fixed trace disguised as a response.
 
-This constructs a canonical mathematical feedback effect and a complete edge-subspace test without choosing an arbitrary positive $F$. It does not identify that test with Book 03's actual $F_N$, the existing full128 instrument, or the local CAR16 exterior. A complete determinant realization uses a 33-mode exterior lift and a separate Bernoulli $z$ selector; physical execution and the cost of both remain open. The decisive bridge is now concrete: derive the old/future edge-subspace operation and determinant from the admitted Golden/Book history, then show that the actual field-to-edge Cost/Info map pulls its complete moving source back to the existing proper-Lorentz Palatini plus matter source. Otherwise this remains a canonical candidate, not the selected D0 action. `GR_closed=false`.
+This constructs a canonical mathematical feedback effect and a complete edge-subspace test without choosing an arbitrary positive $F$. There is also an exact **operator-level W-REC representation** on the same stationary 718-edge Hilbert space. Put $P_E=J_{\rm past}J_{\rm past}^*$, $Q_E=I-P_E$, and choose an orthogonal extension $U_E$ satisfying $U_EJ_{\rm past}=J_{\rm future}$; such an extension exists because both endpoint maps are isometries with 685-dimensional complements. Then
+
+\[
+P_EU_E^*Q_EU_EP_E=J_{\rm past}F_{\rm var}J_{\rm past}^*,\qquad
+\det_{\mathcal H_E}(I-zP_EU_E^*Q_EU_EP_E)=\det_{\mathcal H_V}(I-zF_{\rm var}).
+\]
+
+So the mathematical Book03 log-determinant can be evaluated directly on the original 718-edge carrier. A separate *physical* determinant realization is also now explicit: the existing positive Cholesky of $I-zF_{\rm var}$ yields 33 sequential binary flags with every failure retained and no extra CAR33 exterior; its field-dependent angles and controller/work price still need native admission. The same complete history also has an exact scale/innovation split: a uniform edge-cost shift changes Perron pressure by $-c$ while leaving the normalized law, $F_{\rm var}$ and $J_{\rm var}$ unchanged; the stationary entropy-price identity cancels the expected-cost shift with pressure exactly. Scale and innovation are distinct observable channels from one run, but their actual combination in the physical Book price is still to be derived, never fitted. The operator identity and Cholesky word remove two representation gaps, but not the physical one: existence of $U_E$ is not proof that the admitted finite D0 tick is this extension, that Book03's readout/archive $P_N,Q_N$ are these endpoint/innovation projections, or that the same-history Cost/Info and its work, clock and preparation terms select this price. The owner also derives $\pi$ as the bulk limit of the actual one-sided start $r\ne\pi$, with mixing ratio $0.5531\ldots$; the exact endpoint operator above uses that stationary bulk law, while a typed finite-history version must retain the actual endpoint marginals and their derivatives. The decisive bridge is now a specific equality: prove the native tick's restriction $U_NJ_{\rm past}=J_{\rm future}$ on the admitted retained-history carrier, then pull its complete moving source back through the actual field-to-edge Cost/Info map and compare it with the proper-Lorentz Palatini plus matter source. Until this and the finite one-sided/refinement step are proved, the candidate is not the selected D0 action. `GR_closed=false`.
 
 ### 7.75. The period-four connection spectrum is finite-regular, while its pinned curved slow branch is obstructed
 
