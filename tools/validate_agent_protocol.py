@@ -103,6 +103,16 @@ def validate(root: pathlib.Path) -> None:
             raise ProtocolError(f"{task['id']}: brief missing: {task['brief']}")
         validate_brief(task, brief.read_text(encoding="utf-8"))
 
+    if (root / "02_REGISTRY/gr_assembly/contract.json").is_file():
+        import gr_assembly
+        try:
+            gr_assembly.validate_queue(root, gr_assembly.load(root))
+        except (ValueError, KeyError, OSError) as exc:
+            raise ProtocolError(f"gravity assembly: {exc}") from exc
+    elif any("A4D" in t.get("id", "") and t.get("class") in EXEC_CLASSES
+             for t in manifest.get("tasks", [])):
+        raise ProtocolError("gravity assembly contract required for A4D executions")
+
 
 def self_test() -> int:
     with tempfile.TemporaryDirectory() as td:

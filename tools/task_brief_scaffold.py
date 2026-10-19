@@ -27,12 +27,15 @@ def main() -> int:
         print("ERROR: --why must explain why CONTROL should delegate this task", file=sys.stderr)
         return 2
 
+    assembly_line = f"Assembly: `{args.id}`\n" if "A4D" in args.id else ""
+
     text = f"""# {args.id}
 Repository: `{REPO}`
 Base: `main`
 Branch: `{args.branch}`
 Primary artifact: `{args.artifact}`
 Execution: `GitHub-first`
+{assembly_line}
 
 Class: `{args.cls}`
 Parent: `CTRL-...`
@@ -60,6 +63,9 @@ Replace this paragraph with the exact bounded objective.
 - Consumer: parent lemma/equation where this result is substituted; premise removed.
 - Write paths: disjoint artifact paths owned by this execution.
 - Decisive check: smallest proof/calculation and negative control that decides the step.
+- For gravity work: register this Assembly binding in gr_assembly/contract.json;
+  distinguish start prerequisites from retained proof assumptions, and reuse
+  `python tools/gr_assembly.py template {args.id}` for the result application.
 
 ## Required checks
 

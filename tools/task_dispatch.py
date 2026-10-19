@@ -125,11 +125,27 @@ def main(argv: list[str] | None = None) -> int:
         branches = metadata(brief, "Branch")
         branch = branches[0] if len(branches) == 1 else None
 
+        assembly = None
+        if (root / "02_REGISTRY/gr_assembly/contract.json").is_file():
+            import gr_assembly
+            assembly = gr_assembly.load(root)
+            if task:
+                gr_assembly.brief_binding(root, task, assembly)
+        elif "A4D" in args.task_id:
+            raise ValueError("gravity assembly contract missing; use current main before dispatch")
+
         if not args.offline:
-            pr, matched_by = existing_execution(open_prs(root), args.task_id, branch)
+            prs = open_prs(root)
+            pr, matched_by = existing_execution(prs, args.task_id, branch)
             if pr:
                 print(f"Repository: {REPO}\nTask: {args.task_id}")
                 print_execution(pr, matched_by)
+                if assembly:
+                    print(gr_assembly.context(assembly, args.task_id))
+                    actions = gr_assembly.next_actions(assembly, prs)
+                    action = next((a for a in actions if a["task"] == args.task_id), None)
+                    if action and action["action"] == "resolve-overlap":
+                        raise ValueError("conflicting scientific executions: " + "; ".join(action["reasons"]))
                 return 0
         if task is None:
             qualifier = " (GitHub status UNVERIFIED in --offline mode)" if args.offline else "; no open execution found"
@@ -141,12 +157,18 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Class: {task['class']}; Queue state: {task['state']}")
         print(f"Base: {field(brief, 'Base')}")
         print(f"Brief: {task['brief']}\nBranch: {branch}\nPrimary artifact: {artifact}")
+        if assembly:
+            print(gr_assembly.context(assembly, args.task_id))
         if args.offline:
             print("GitHub status: UNVERIFIED (--offline); no launch authorized.")
             print("Action: Inspect the brief offline; rerun online before starting or resuming execution.")
             return 0
         if task["state"] != "PLANNED":
             raise ValueError(f"queue state is {task['state']} but no open PR exists; reconcile before launching")
+        if assembly:
+            checked = gr_assembly.launch_check(assembly, args.task_id, prs)
+            if not checked["allowed"]:
+                raise ValueError("assembly launch gate: " + "; ".join(checked["reasons"]))
         print("Open execution: none (GitHub checked).")
         print("Execute GitHub-first: read the brief, start its lifecycle and open the Draft PR before substantive work.")
         print("Write the durable result in that PR; return only PR + verdict/PASS-FAIL + blocker.")

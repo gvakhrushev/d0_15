@@ -1,0 +1,613 @@
+{
+  "schema": "d0-gr-assembly/1",
+  "authority": "Composition only; scientific acceptance, claims and task lifecycle retain their existing owners.",
+  "route": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+  "goals": [
+    {
+      "id": "GR",
+      "requires": [
+        "positive_gr"
+      ],
+      "statement": "Positive native GR in an explicit nonempty curved class; soundness and recovery have their declared scope.",
+      "outcome": "positive"
+    },
+    {
+      "id": "RAW-216",
+      "requires": [
+        "raw_response_terminal"
+      ],
+      "statement": "Original exact-source/raw-owner terminal, independently of the positive GR route.",
+      "outcome": "classification"
+    },
+    {
+      "id": "D0-CLOSURE",
+      "requires": [
+        "global_classification"
+      ],
+      "statement": "Existing global CORE/NO-GO/BRIDGE/PASSPORT/EMPIRICAL classification, not positive GR.",
+      "outcome": "positive"
+    }
+  ],
+  "interfaces": {
+    "native-programme-v1": {
+      "carrier": "Independent admitted Omega_h with (q,D,b,m,record) and all retained internal variables",
+      "action": "The same complete native Cost-Info with full history, weights, normalizer and retained terms",
+      "variations": "All independently admitted metric, link, shift, full exterior matter, preparation and clock variations",
+      "source": "Independently defined full matter source and declared smooth comparator; no output-fitted source",
+      "normalization": "Explicit conversion between estimator -2G and sheet -G/2 before composition",
+      "refinement": "One fixed smooth nondegenerate metric, actual interlevel maps, declared topology and uniform estimates",
+      "scope": "Positive nonlinear native dynamics on an explicit nonempty curved class; physical admission remains an obligation"
+    },
+    "raw-216-v1": {
+      "carrier": "Original fixed smooth Q_h, genuine Lorentz quotient and independently fixed smooth tau",
+      "action": "Original designated geometric Euler response and declared source equations",
+      "variations": "Exact joint connection and metric source equations, without dropping components",
+      "source": "Original #216 smooth comparator; Xi(Q_h,K_h)=h^2 tau(hx)",
+      "normalization": "h^-2 times the unweighted raw l1 sum over h^-4 sites",
+      "refinement": "Exact samples of the same g and tau on a refining sequence in the admitted log chart",
+      "scope": "Original response terminal; endpoint testing or a weaker norm cannot substitute"
+    },
+    "full-affine-v1": {
+      "carrier": "Selected four-channel full-affine nondegenerate coframe/link family",
+      "action": "The selected full-affine action of the original stationary task",
+      "variations": "All full-affine stationary rows of that task",
+      "source": "Its declared stationary/source convention",
+      "normalization": "The original task convention, not the naked-star replacement",
+      "refinement": "Finite witness or precisely scoped no-go; no continuum inference",
+      "scope": "Original full-affine stationarity obligation"
+    },
+    "resonance-divisor-v1": {
+      "carrier": "Owned holomorphic A(z) on (C*)^4",
+      "action": "Actual conjugate-polarized character Hessian owner",
+      "variations": "Full matrix and all higher-codimension strata",
+      "source": "No physical source assertion",
+      "normalization": "Exact Laurent/radical arithmetic in the declared coordinate convention",
+      "refinement": "Finite/exact algebraic classification; no continuum inference",
+      "scope": "Original full complex divisor classification; phase-count shortcut is refuted"
+    },
+    "word-jet-v1": {
+      "carrier": "Ordered primitive words with a possibly moving intertwiner",
+      "action": "Existing primitive maps; no new physical action",
+      "variations": "Exact telescoping residual and first jets",
+      "source": "Explicit branching/comparison hypotheses; no physical stress assertion",
+      "normalization": "Exact algebraic convention of the primitive composition brief",
+      "refinement": "Generic theorem with its stated hypotheses",
+      "scope": "Bounded formal premise consumed by native preparation/variation"
+    },
+    "mv-span-v1": {
+      "carrier": "Finite real matrix space with admissible traceless source-neutral tests",
+      "action": "No physical action is selected",
+      "variations": "All admissible real tangent tests",
+      "source": "The specified neutral span and trace pairing",
+      "normalization": "Exact real trace convention of the MV brief",
+      "refinement": "Generic finite-dimensional theorem",
+      "scope": "Bounded algebraic span premise; no physical operator inferred"
+    },
+    "endpoint-probe-v1": {
+      "carrier": "Literal naked-star T4 smooth nondegenerate metric pencils and log-O(h) endpoint preparations",
+      "action": "The literal naked-star action; complete native Cost-Info is not identified",
+      "variations": "The declared smooth metric pencils and endpoint contrasts",
+      "source": "The designated rho0 geometric response; no native matter source identified",
+      "normalization": "The analytic finite-probe contrast convention of its owner",
+      "refinement": "epsilon=h^(1/3) endpoint estimate, with native admission separate",
+      "scope": "Observable law only; it does not supply native state, action or joint recovery"
+    },
+    "star-metric-v1": {
+      "carrier": "Nondegenerate solder quotient Q=Theta eta Theta^T and dressed compatible links",
+      "action": "Selected literal naked star action, including its actual finite metric response",
+      "variations": "Genuine metric quotient tangents; complete coupled normal rescue remains separate",
+      "source": "Geometric Euler response and declared smooth comparator; no full native matter binding",
+      "normalization": "Sheet response -G/2 with the exact owner index/density convention",
+      "refinement": "Fixed smooth realization; parametrix is not an exact full joint refining solution",
+      "scope": "Accepted scoped geometry and partial smooth controls only"
+    },
+    "normal-chart-estimator-v1": {
+      "carrier": "Smooth Lorentz metric and a metric-normal chart with its stated orthonormal frame",
+      "action": "Owned centered-difference Lorentz ray, not an identified complete native action",
+      "variations": "Arbitrary symmetric metric Hessians at a normal center",
+      "source": "Geometric Einstein tensor; matter coupling remains outside this estimator",
+      "normalization": "R_resp E_eta=-2G+O(epsilon_N^2), literal radius-two centered stencil",
+      "refinement": "epsilon_N=(N+2)^-1 with the no-alias domain and fixed smooth metric",
+      "scope": "Analytic estimator theorem with external smooth geometry definitions; no native physical GR closure"
+    }
+  },
+  "obligations": [
+    {
+      "id": "constitutive",
+      "statement": "Derive the admitted complete action/constitutive law from unchanged native D0.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "native_sector",
+      "statement": "Derive nonempty native states, preparation/readout and actual variations.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "constitutive"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "probe_law",
+      "statement": "Under the named endpoint hypotheses, the finite action contrast reconstructs the geometric Einstein observable with O(h/epsilon+epsilon^2), hence O(h^(2/3)) at epsilon=h^(1/3).",
+      "interface": "endpoint-probe-v1",
+      "outcome": "positive",
+      "group": "geometry",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "contrast_refinement_transfer",
+      "scope_level": "family",
+      "hypotheses": {
+        "metric_pencil": "One fixed smooth periodic oriented/time-oriented nondegenerate metric, smooth solder and smooth symmetric probe in a compact Gram section.",
+        "endpoint_domain": "h=1/L, L in 4N; endpoint log bounds Rh and all 24 physical Euler residual bounds Mh^2, for fixed R,M.",
+        "literal_action": "The unchanged literal naked-star counting action and the owner curvature/index/density convention."
+      }
+    },
+    {
+      "id": "contrast_refinement_transfer",
+      "statement": "Transfer the native contrast to the geometric observable with a refinement-uniform bound.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "native_sector",
+            "probe_law"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "matter_source_ward",
+      "statement": "Derive the full independent matter source and joint physical Ward identity.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "native_sector",
+            "constitutive"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "on_shell_stationarity",
+      "statement": "Show native on-shell equations cancel the source-subtracted contrast for all declared probes.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "contrast_refinement_transfer",
+            "matter_source_ward"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "gauge_range",
+      "statement": "Prove the necessary range/quotient estimate for the full joint system.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "refinement",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "native_sector",
+            "matter_source_ward"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "joint_nonlinear_solve",
+      "statement": "Construct nonempty exact joint solutions on a genuine refining family.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "refinement",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "gauge_range"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "soundness",
+      "statement": "Every admitted on-shell limit solves the stated nonlinear sourced Einstein system.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "joint_nonlinear_solve",
+            "on_shell_stationarity"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "recovery",
+      "statement": "Recover each solution in the explicit nonempty curved continuum class by native on-shell states.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "joint_nonlinear_solve",
+            "contrast_refinement_transfer"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "physical_constraints",
+      "statement": "Identify remaining physical constraints, observable modes and causal-time readout.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "native_sector"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "positive_gr",
+      "statement": "Compose the same-source nonlinear native Einstein dynamics in the stated curved class.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "soundness",
+            "recovery",
+            "matter_source_ward",
+            "physical_constraints"
+          ]
+        }
+      ],
+      "consumer": "GR",
+      "scope_level": "family"
+    },
+    {
+      "id": "raw_response_terminal",
+      "statement": "Resolve the original fixed-source raw response contract without changing its quantifiers.",
+      "interface": "raw-216-v1",
+      "outcome": "classification",
+      "group": "original",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "RAW-216",
+      "scope_level": "family"
+    },
+    {
+      "id": "full_affine_stationarity",
+      "statement": "Exact full-affine curved stationary witness or a separately typed scoped no-go.",
+      "interface": "full-affine-v1",
+      "outcome": "classification",
+      "group": "support",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "joint_nonlinear_solve",
+      "scope_level": "finite"
+    },
+    {
+      "id": "resonance_divisor",
+      "statement": "Resolve the registered full complex resonance divisor classification.",
+      "interface": "resonance-divisor-v1",
+      "outcome": "classification",
+      "group": "support",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "gauge_range",
+      "scope_level": "family"
+    },
+    {
+      "id": "primitive_jet_composition",
+      "statement": "Own the generic ordered-word residual and moving first-jet theorem.",
+      "interface": "word-jet-v1",
+      "outcome": "positive",
+      "group": "support",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "native_sector",
+      "scope_level": "family"
+    },
+    {
+      "id": "mv_tangent_span",
+      "statement": "Own the stated generic real tangent-span equivalence.",
+      "interface": "mv-span-v1",
+      "outcome": "positive",
+      "group": "support",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "matter_source_ward",
+      "scope_level": "family"
+    },
+    {
+      "id": "global_classification",
+      "statement": "Classify every load-bearing internal ambiguity under the existing global closure contract.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "separate",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "D0-CLOSURE",
+      "scope_level": "family"
+    }
+  ],
+  "task_bindings": {
+    "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE": {
+      "obligations": [
+        "constitutive",
+        "native_sector",
+        "contrast_refinement_transfer",
+        "matter_source_ward",
+        "raw_response_terminal"
+      ],
+      "interface": "native-programme-v1",
+      "work_key": "native-same-programme-and-original-raw",
+      "mode": "research",
+      "start_requires": [],
+      "assumes": [
+        "Independent physical admission and complete-price identification remain open.",
+        "The original raw terminal remains separate from the positive GR route."
+      ],
+      "consumer": "positive_gr",
+      "write_paths": [
+        "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md"
+      ],
+      "statement": "Prove normalized metric-response decoupling for exact joint-critical sequences including the #232 curved nongauge grid-scale family, with a precise topology and non-tautological source/comparator convention, or give a certified smooth-background joint-critical counterexample with a nonzero normalized response gap.",
+      "additional_interfaces": [
+        "raw-216-v1",
+        "endpoint-probe-v1"
+      ],
+      "completion_requires": [
+        "raw_response_terminal"
+      ],
+      "reuse_results": [
+        "endpoint-probe-law",
+        "metric-provenance",
+        "smooth-parametrix"
+      ]
+    },
+    "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE": {
+      "obligations": [
+        "full_affine_stationarity"
+      ],
+      "interface": "full-affine-v1",
+      "work_key": "full-affine-stationary",
+      "mode": "research",
+      "start_requires": [],
+      "assumes": [
+        "Only the original full-affine class is classified."
+      ],
+      "consumer": "joint_nonlinear_solve",
+      "write_paths": [
+        "02_REGISTRY/research/MEMO_A4D_RESOLVED_CURVED_STATIONARY_CLOSURE.md"
+      ],
+      "statement": "Either exactify a nondegenerate curved stationary witness for the selected four-channel full-affine family, or prove a precisely scoped no-go for the declared carrier; numerical E(2) scouts are not terminal.",
+      "completion_requires": [
+        "full_affine_stationarity"
+      ],
+      "reuse_results": [
+        "metric-provenance"
+      ]
+    },
+    "EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION": {
+      "obligations": [
+        "resonance_divisor"
+      ],
+      "interface": "resonance-divisor-v1",
+      "work_key": "full-complex-resonance-divisor",
+      "mode": "research",
+      "start_requires": [],
+      "assumes": [
+        "A finite grid or diagonal germ is not the full complex stratification."
+      ],
+      "consumer": "gauge_range",
+      "write_paths": [
+        "02_REGISTRY/research/A4D_RESONANCE_DIVISOR_STRATIFICATION.md"
+      ],
+      "statement": "Derive the exact Laurent factorization of the owned holomorphic A(z), certify the generic kernel rank on every irreducible divisor component and the full higher-codimension rank/nullity strata on (C^×)^4, and explicitly reject the refuted phase-count law.",
+      "completion_requires": [
+        "resonance_divisor"
+      ],
+      "reuse_results": [
+        "phase-count-counterexample"
+      ]
+    },
+    "WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION": {
+      "obligations": [
+        "primitive_jet_composition"
+      ],
+      "interface": "word-jet-v1",
+      "work_key": "generic-word-first-jet",
+      "mode": "proof",
+      "start_requires": [],
+      "assumes": [
+        "Branching and comparison hypotheses remain explicit."
+      ],
+      "consumer": "native_sector",
+      "write_paths": [
+        "03_FORMALIZATION/D0/Research/PrimitiveJetComposition.lean",
+        "02_REGISTRY/research/sources/d0_w2_primitive_jet_lean_2026-10-16/"
+      ],
+      "statement": "Formalize ordered-word intertwining, its exact telescoping residual, and its first-jet version with a moving intertwiner; expose branching/comparison hypotheses explicitly and specialize only to already owned primitive maps.",
+      "completion_requires": [
+        "primitive_jet_composition"
+      ],
+      "reuse_results": [
+        "legacy:record_arrow"
+      ]
+    },
+    "WRK-A4D-LEAN-MV-TANGENT-SPAN": {
+      "obligations": [
+        "mv_tangent_span"
+      ],
+      "interface": "mv-span-v1",
+      "work_key": "generic-real-tangent-span",
+      "mode": "proof",
+      "start_requires": [],
+      "assumes": [
+        "No physical operator selection follows."
+      ],
+      "consumer": "matter_source_ward",
+      "write_paths": [
+        "03_FORMALIZATION/D0/Research/MemoryTangentSpan.lean",
+        "02_REGISTRY/research/sources/d0_rank_lean_mv_span_2026-10-16/"
+      ],
+      "statement": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
+      "completion_requires": [
+        "mv_tangent_span"
+      ],
+      "reuse_results": [
+        "legacy:mixed_parent_pointwise_source"
+      ]
+    }
+  },
+  "legacy_import": {
+    "ref": "180ddd187b76035b83ba784ce3c0844f3192ba7d",
+    "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
+    "snapshot": "02_REGISTRY/gr_assembly/sources/native_gravity_dependencies.json",
+    "sha256": "937f5f01294785c787ebe71f1eb4121406f386630056e1bb06b0d6f46a4d58f2",
+    "node_count": 44,
+    "disposition": "historical research catalogue; no automatic scientific acceptance or task authorization"
+  },
+  "route_input": {
+    "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+    "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+    "sha256": "8eacd0480c5bbcf8694fcfd4c39155ce95e7ff62259abdde766f1efe21688ace"
+  },
+  "anti_substitutions": [
+    {
+      "id": "mode-vs-complete-price",
+      "left": "pointer mode",
+      "right": "mean entropy or complete H+J+R",
+      "reason": "Full native history, weights and normalizer sources require their own proof."
+    },
+    {
+      "id": "raw-vs-endpoint",
+      "left": "original raw-216-v1 response",
+      "right": "endpoint-probe-v1 testing",
+      "reason": "Norms, quantifiers and action admission differ."
+    },
+    {
+      "id": "scalar-vs-anisotropic",
+      "left": "lambda I scalar source",
+      "right": "anisotropic Q source",
+      "reason": "A tensor source transport is required."
+    },
+    {
+      "id": "finite-vs-global",
+      "left": "finite Schur or fixed-carrier obstruction",
+      "right": "whole-core D0 or physical GR no-go",
+      "reason": "Scope cannot be broadened from a finite class."
+    },
+    {
+      "id": "probable-vs-concentrated",
+      "left": "unique most probable filled-P",
+      "right": "concentration theorem",
+      "reason": "Mode uniqueness is not concentration."
+    },
+    {
+      "id": "even-vs-odd",
+      "left": "even exterior lift",
+      "right": "odd exterior lift",
+      "reason": "Grade/parity hypotheses must be preserved."
+    },
+    {
+      "id": "fixed-word-vs-family",
+      "left": "zero field derivative of one fixed word",
+      "right": "native C2 field family",
+      "reason": "The actual programme/input jets need a typed realization."
+    },
+    {
+      "id": "label-vs-stationarity",
+      "left": "maximum MDL label",
+      "right": "continuous-field stationarity",
+      "reason": "Actual full-price field variations remain obligations."
+    }
+  ]
+}
