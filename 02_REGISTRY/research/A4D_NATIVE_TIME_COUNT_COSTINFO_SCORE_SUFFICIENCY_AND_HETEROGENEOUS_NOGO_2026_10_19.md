@@ -143,3 +143,25 @@ Book06's "maximum entropy under retained response" only determines the condition
 No new finite Cartan order is needed. Source equality still must hold for the entire genuine full 128 label+port+archive/controller/clock+coherent-memory system and the correct all16+24+CAR Einstein/Palatini source, with native action, true history classes and original #216 constraints. **GR_closed=false.**
 
 Reproduction: [small exact checker](sources/d0_physical_binary_return_2026-10-19/check_native_time_count_score_ward.py) proves homogeneous KL/Fisher equality, strict heterogeneous Fisher loss, Q(sqrt5) original ε/lambda identities, and a hostile alternating count-blind source. The expensive original full128 Kraus/Sylvester parent is consumed, not rerun by this script.
+
+
+## 6. The Lorentz-memory firewall: count sufficiency is NOT Einstein-history sufficiency
+
+The latest #334 already owns a proper-Lorentz **noncommuting ordered primitive pair** and its physical-readout tests; consume [its two-null regular identity atlas](A4D_TWO_NULL_REGULAR_IDENTITY_WORD_REVERSE_GR_SYNTHESIS_2026_10_19.md) and [the Julia order-sensitive full-record source](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md). No Lie algebra rank or new actuation is claimed here. Let \(A=N_2,B=\bar N_3\), with \([A,B]=J_{23}\ne0\), and take two small original ordered primitive histories with the **same two gate counts and the same total tick count**, but reversed gate order:
+\[
+\gamma_{AB}=(e^{aA},e^{bB}),\quad
+\gamma_{BA}=(e^{bB},e^{aA}).
+\]
+The two native ordered geometric transports satisfy
+\[
+U(\gamma_{AB})-U(\gamma_{BA})=ab[A,B]+O(a^2b+ab^2)\ne0
+\]
+for generic small nonzero a,b, while **any quotient retaining just unordered counts** has identical outputs for both words. Hence there is **no function** \(F\) on a count-only history algebra satisfying \(U(\gamma)=F(\mathrm{count}(\gamma))\) for both admissible words. This is a precise **physical-record obstruction** to discarding ordered Lorentz information when the intended retained response is the signed matrix holonomy.
+
+Together with §§1–4 the correct typed synthesis is:
+
+- On the original flat stationary *scalar-shell EXIT* sector the native event count \(K\) preserves all \(\lambda\)-score (and, subject to a genuine homogeneous code reference, net time-indicator Cost−Info price). This closes **that particular clock statistic**.
+- On a *temporally inhomogeneous admitted scalar-shell* programme, count can lose strictly positive field-score, including an exact alternating first-jet complete loss.
+- On any admitted *noncommuting Lorentz word* sector, unordered count cannot preserve the full ordered proper-Lorentz response even without parameter-dependent event probabilities. This conclusion uses only the already-owned nonzero commutator and the meaning of the retained response, not a new field, gauge, or tensor.
+
+Thus a universal physical history quotient adequate for D0→GR must retain **at least** the distinctions necessary for original time-dependent score and ordered Lorentz memory, or provide an independently forced exact compensating archive/source identity. Neither the original M1-forgetting definition nor the current Book03 action supplies that universal quotient automatically; a count-only readout must not be promoted from §1 to the whole D0 physics. This is the remaining physical **test algebra/Cost−Info selection gate**, not a new polynomial-Einstein calculation.
