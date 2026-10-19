@@ -8172,3 +8172,44 @@ The source estimate and its finite standard-library checker are integrated
 in strategic §7.60; internal independent analytical review is recorded in
 the packet. No BOOK/claim/assembly acceptance or lifecycle status changes.
 Physical D0=>GR and the original fixed-source raw-216 terminal stay open.
+
+## The existing full128 pointer reads an opposite-null order jet (2026-10-19)
+
+The proposed native-readout step now has a positive exact finite result.
+Using the original retained-history operator and full golden128 instrument,
+the port-0/blank-label probability responds to the order of
+\(N_2,\bar N_3\) links on the \(L=4\) first Fourier shell. With
+\(h=1/4\), coframe weight \(3/5\), a fixed CAR16 marginal \(I_{16}/16\),
+and the untouched reference128 factor, its mixed order jet is exactly
+\[
+\left.\partial_a\partial_b(q_{00}(AB)-q_{00}(BA))\right|_0
+=\frac{42633-14157\sqrt5}{5120000}>0.
+\]
+This is an existing outcome of the complete instrument, not the separate
+13-effect test. The zero-momentum control has zero first source. Exact
+derivation, source pins, and the hostile control are in the
+[full128 order-readout packet](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md);
+its 55-check certificate passes, as does the existing 60-check
+[complete-record channel replay](sources/d0_complete_record_channel_2026-10-17/check_record_channel.py).
+
+This establishes endpoint-link distinguishability in the mathematical
+full128 program on the declared finite carrier. The configuration is the
+already-composed link \(AB\) or \(BA\); this result does not show that D0
+executes those two links as sequential memory words, that their Julia
+dilations compose, or that the selected pointer probability is the
+compulsory physical Cost--Info source. The current Julia word dilates
+\(P_r=C_rM_r\,\mathrm{shift}_r\), not \(M_r\) itself; a physical composition
+defect needs an admitted per-increment fresh-record operation on the same
+carrier before comparing sequential flags. It does not discharge this
+task's normalized metric-response terminal, nor promote physical D0-to-GR
+closure.
+
+As a controlled algebraic test of the naive single-flag map, the same packet
+also defines \(V(M)=\mathcal J(P(I))^*\mathcal J(P(M))\) on the original
+32-dimensional system-plus-Julia-flag carrier. Its Lorentz Lie defect
+\([D V(N_2),D V(\bar N_3)]-D V(J_{23})\) has rank 10 and exact squared
+Frobenius norm \(1789/500\); the reversed-order Lie defect has the same
+nonzero norm. Thus neither the homomorphic nor anti-homomorphic convention
+works for this relative one-flag Julia map. This rejects only that map; it
+does not exclude a separately admitted fresh-record sequence in the
+complete D0 program.
