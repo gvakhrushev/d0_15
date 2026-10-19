@@ -242,6 +242,57 @@ At \(a=b=.1\) the FULL mean-price order difference is
 
 **Crucial price-mode scope:** the GOOD event of THIS tester is NOT automatically the most-probable fine outcome (the Julia aggregate failure is dominant near identity). Therefore the previously owned *different strict-GOOD determinant detector* mean/MAP Euler theorem §6.66 CANNOT be imported by name. In the present tester (17) is a complete Shannon/Book-mean source only under its explicitly stated same-history mean reading. It does not prove equality to the modal/MDL price or the historical fine Book action. This separation is necessary for a physically correct D0→GR claim.
 
+### 5.1. Strongest consequence: a SINGLE fixed COMPLETE positive experiment reconstructs the WHOLE local proper-Lorentz holonomy, and hence the ORIGINAL six-plaquette star
+
+The full-rank diagonal source (12) is more than a coefficient test. The six signed measured contrasts are REAL-ANALYTIC functions of the ORIGINAL full group element \(P=\exp X\in SO^+(1,3)\) in the chosen strict \(\|X\|\le1/10\) chart, because the Julia success amplitude is \(T_P=\Lambda(P)/2\), and \(\mathcal D_a(P)\) is a quadratic polynomial of its Choi matrix entries. Let \(\mathcal F:\mathbb R^6\to\mathbb R^6\) be
+\[
+\mathcal F(\xi)
+=(\mathcal D_1(\exp\sum_b\xi_bG_b),\ldots,
+  \mathcal D_6(\exp\sum_b\xi_bG_b)).
+\]
+Then exactly \(\mathcal F(0)=0\) and \(D\mathcal F(0)=(24\sqrt2)^{-1}I_6\). Therefore the ANALYTIC inverse-function theorem gives a nonempty positive-radius neighborhood on which
+\[
+\boxed{
+\xi=\mathcal F^{-1}(\mathbf d(P)),\qquad
+P=\exp\left(\sum_a\mathcal F^{-1}(\mathbf d(P))_aG_a\right)
+}
+\tag{20}
+\]
+is an **exact mathematical reconstruction** of the full original proper-Lorentz transport from SIX outcome differences of ONE FULL FIXED positive Julia/POVM experiment. This is not tomography "because enough dimensions": it has a displayed invertible exact derivative and an explicit preparation/POVM with all real 16 grades and all failures retained. Shrinking the strict chart until \(\|D\mathcal F-(24\sqrt2)^{-1}I\|\le(48\sqrt2)^{-1}\) yields a quantitative local inverse Lipschitz constant ≤\(48\sqrt2\) in the declared Euclidean coordinates. This supports actual robust approximate addressed-native compilation/readout without asserting a uniform global Lorentz inverse (the noncompact group has no globally fixed contraction normalization).
+
+For the **ORIGINAL six based proper-Lorentz plaquettes** \(P_{rs}(z)\) from the existing A4D action, apply the SAME fixed positive experiment separately to every actual transported plaquette, with its correct basepoint/frame, and denote its six measured contrasts by \(\mathbf d_{rs,z}\). Where all \(P_{rs,z}\) lie in the local chart, the existing star action is EXACTLY
+\[
+\boxed{
+{\cal P}_{\star,h}(z)
+=\sum_{r<s}\epsilon_{rsuv}
+G_2\left(v_u\wedge v_v,\,
+\star\mathfrak b\Big[
+\tfrac12\big(
+\mathcal P(\mathbf d_{rs,z})
+-\mathcal P(\mathbf d_{rs,z})^{-1}
+\big)\Big]\right)
+}
+\tag{21}
+\]
+with \(\mathcal P(\mathbf d)\) the reconstructed **original** group matrix in (20). This is an IDENTITY on the existing 16-tetrad+24-link field chart, NOT an alternative gravitational functional, a fit of an Einstein coefficient, or a replacement for the underlying original plaquette word. Differentiation of the RIGHT side through the actual measured six probabilities and the coframe gives exactly the original complete geometric first Euler, including the Cartan 24 link-source constraints and six Ward directions, as an ordinary chain rule of identical functions. Thus:
+\[
+\boxed{
+\text{ORIGINAL proper Lorentz plaquettes}
+\leftrightarrow
+\text{one fixed complete positive Julia test per plaquette}
+\longrightarrow
+\text{original finite } {\cal P}_{\star,h}
+\longrightarrow
+\text{actual full40 star Euler}.
+}
+\tag{22}
+\]
+The "one test" here means one 13-effect POVM **type** on each actual provided basepoint plaquette, with multiple real site/face preparations if queried globally. No probability experiment is automatically a zero-cost field-variable oracle, and reconstructing \({\cal P}_\star\) as an observable function of measured outcomes does **not** prove that the mandatory physical Book Cost−Info chooses that exact scalar as its action.
+
+**Gauge/source exactness is typed, not assumed.** A fixed Euclidean Choi/POVM test is calibrated in the original positive REST frame \(h_n=I\). A local proper Lorentz change sends P by basepoint conjugation and coframe by the same transformation; the actual observer/preparation/reference test vectors must be transported coherently with the ORIGINAL full-CAR basis to preserve the relative six contrasts and original \(\star\) Ward. Merely keeping the physical Choi probe frozen while treating the Lorentz change as pure gauge may give apparent nonzero gauge-response and does NOT prove physical local Lorentz covariance. Equation (21) is an exact REST-CHART reconstructibility theorem. Operational covariance/transport of this calibrated tester with the same retained cost, and the one actual full physical programme which selects its return action, remain separate obligations.
+
+The full Lie closure from the four genuine opposite null flows is also a **constructive group-generation principle**: their generated Lie algebra is all \(\mathfrak{so}(1,3)\), so the subgroup reachable by finite products of their two-sided continuously parametrized flows has full connected Lie orbit \(SO^+(1,3)\). This does NOT supply a bounded native Golden/CNOT word length, smooth all-six source parameters at zero (commutator coordinates start at quadratic order), or an autonomous physical gate-selector; the exact positive Julia readout above supplies the missing **informational** six-direction inverse in one tested chart.
+
 ## 6. Finite compilation and the narrow remaining physics
 
 The exact all-grades contraction and complete real Julia/Naimark circuit belong to the owned mathematical **generous all-active orthogonal** class, with all new flags/4-dimensional Choi source actually declared and not deleted. The known addressed real Golden G/CNOT compiler approximates any such fixed real orthogonal finite-dimensional gate once its ACTUAL addressing/preparation/access interface is supplied; it retains ancilla leakage and has a whole-state error. The true group link data \(A,B\) must be computable from the same original finite Lorentz plaquette/coframe source and not supplied as a free geometric oracle.
