@@ -32,7 +32,7 @@ function expm(A){
  while(scaleCount--)sum=mul(sum,sum);
  return sum;
 }
-function compute(A,B,z,h){
+function compute(A,B,z,h,repair=false){
  const cache=new Map(),shift=(p,axis,k=1)=>p.map((x,i)=>x+(axis===i?k*h:0));
  function site(p) {
   const key=p.join(',');
@@ -49,7 +49,18 @@ function compute(A,B,z,h){
     wb[i+2]=add(wb[i+2],sc(gens[0],d));
   }
   const wc=Array.from({length:4},(_,mu)=>wb.reduce((acc,X,j)=>add(acc,sc(X,e[j][mu])),zero()));
-  const ret={e:e.map(row=>row.map(v=>h*v)),U:wc.map(X=>expm(sc(X,h)))};
+  const ret={e:e.map(row=>row.map(v=>h*v)),U:wc.map((X,r)=>{
+  let W=X;
+  if(repair){
+    const wedge=A[0]*B[1]-A[1]*B[0],
+          dx=A[0]*B[0],dy=A[1]*B[1],t=h/8;
+    if(r===0)W=add(W,add(add(sc(gens[1],dx*t),sc(gens[2],dy*t)),sc(gens[5],wedge*t)));
+    if(r===1)W=add(W,add(add(sc(gens[3],dx*t),sc(gens[4],dy*t)),sc(gens[5],-wedge*t)));
+    if(r===2)W=add(W,add(add(sc(gens[2],wedge*t),sc(gens[4],-wedge*t)),sc(gens[5],-dy*t)));
+    if(r===3)W=add(W,add(add(sc(gens[1],-wedge*t),sc(gens[3],wedge*t)),sc(gens[5],dx*t)));
+  }
+  return expm(sc(W,h));
+})};
   cache.set(key,ret);return ret;
  }
  const edges=(p,r,t)=>[[p,r,false],[shift(p,r),t,false],[shift(p,t),r,true],[p,t,true]];
@@ -132,3 +143,21 @@ console.log(JSON.stringify({h,orthogonal:{maxS:a.maxS,maxL:a.maxL,uRot:a.uRot,vR
  half:{maxS:b.maxS,maxL:b.maxL,uRot:b.uRot,vRot:b.vRot},
  parallel:{maxS:parallel.maxS,maxL:parallel.maxL,uRot:parallel.uRot,vRot:parallel.vRot}},null,2));
 console.log('SCOPE: bounded original six-plaquette numeric first sources; NOT finite exact solution.');
+
+const t2=0.1;
+const orth0=compute([t2,0],[0,t2],[0,0,0,0],h);
+const orth1=compute([t2,0],[0,t2],[0,0,0,0],h,true);
+const parallel0=compute([t2,0],[t2,0],[0,0,0,0],h);
+const parallel1=compute([t2,0],[t2,0],[0,0,0,0],h,true);
+assert.ok(orth1.maxL<orth0.maxL/100,
+          'explicit quadratic Cartan correction removes leading crossing link rows');
+assert.ok(parallel1.maxL<parallel0.maxL/100,
+          'explicit quadratic Cartan correction also removes dot-link rows');
+assert.ok(orth1.maxS<1e-7,
+          'orthogonal vacuum retains suppressed solder source beyond ab order');
+assert.ok(parallel1.maxS>1e-6,
+          'parallel source retains its nonzero Einstein-type coframe row');
+console.log('PASS: explicit h/8 mixed Cartan repair reduces both link residuals by >100x at slope=0.1');
+console.log(JSON.stringify({amplitude:t2,
+  perpendicular:{link_before:orth0.maxL,link_after:orth1.maxL,solder_after:orth1.maxS},
+  parallel:{link_before:parallel0.maxL,link_after:parallel1.maxL,solder_after:parallel1.maxS}},null,2));
