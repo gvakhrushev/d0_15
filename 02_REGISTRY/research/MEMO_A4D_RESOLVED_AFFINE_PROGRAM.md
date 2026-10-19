@@ -1235,6 +1235,20 @@ sum contributes no absolute log-partition source. This is a source firewall,
 not a license to add the candidate terms together or select one as the Book
 action; the physical history binding and whole-run cancellation remain open.
 
+The [global 2/3-cycle inverse](A4D_GLOBAL_TWO_THREE_CYCLE_NATIVE_BULK_INVERSE_AND_ENTROPY_WARD_2026_10_19.md)
+now removes the scalar-history inverse as a separate unknown: conditional on
+an admitted strictly positive 718-edge transition, 359 reciprocal returns,
+327 independent triangle affinities, their 960 compatibility identities and
+one Perron normalization reconstruct the full transition and every smooth
+first source. Its current/triangle Stokes identity also reconstructs the
+scalar entropy production. This still does not select the transition or
+recover Lorentz matrix order. More sharply, equilibrium scalar entropy
+production has a positive-semidefinite Hessian under every smooth pullback,
+while the original full 24-link Palatini block has inertia `(12+,12−)`.
+Therefore scalar history thermodynamics alone cannot supply the full Cartan
+source on a regular 24-link carrier; the same physical run must retain an
+ordered, noncommuting/coherent Lorentz source and its complete price.
+
 Nor does `ActionProtocol` choose the missing price. The exact
 [prepared-action fiber theorem](A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md)
 says that for off-diagonal prepared endpoint pairs retaining a field readout
