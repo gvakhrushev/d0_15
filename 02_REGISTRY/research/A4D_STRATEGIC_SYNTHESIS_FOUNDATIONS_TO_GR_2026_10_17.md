@@ -3666,3 +3666,31 @@ The independent audit of the newly supplied field-to-instrument proposal
 remains §7.31: its $32$-dimensional return cannot be injective on the full
 $66L^4$-dimensional field tangent, and the stated Hom-space kernel count
 does not repair that mismatch. No extra tomography postulate is introduced.
+
+**Exact conditional composition with the full Book price.** On one complete
+finite history frame, the existing same-history theorem gives
+\[
+\mathbb E_q(C-I)=\frac{H(q)-\log N}{\log\varphi},
+\qquad
+N=\sum_\omega \varphi^{-S_\omega},\quad
+q_\omega=\frac{\varphi^{-S_\omega}}{N},\quad S_\omega=C_\omega-I_\omega.
+\]
+For the ten-coin binary pointer, on geometric/matter variations with fixed
+old-LEFT PF law, fixed failure outcome and \(D\log N=0\), the actual source
+therefore reduces exactly to
+\[
+D\mathbb E_q(C-I)=\frac{2\kappa(g_{10})}{\log\varphi}
+\sum_\alpha \pi_\alpha DJ_\alpha(r_{10}),
+\qquad \kappa(g_{10})>0.
+\]
+Because the existing all-field consumer already resolves this same two-channel
+source into its complete Brinkmann/Einstein equations, no new action or fitted
+Einstein tensor is needed under these hypotheses. This is a conditional
+source-composition theorem, not physical closure: the native program must
+still prove that its complete output frame is this binary pointer, that its
+Book weights equal its Born probabilities (so the raw normalizer has no
+source), and that preparation, clock, controller/work, observer and all
+remaining internal Euler rows are solved on the same carrier. A global MAP
+rule instead has the nonsmooth source above; a fine occupation readout has
+its own source ratio. Establishing which complete frame the native execution
+uses is now the single price-selection gate for this branch.
