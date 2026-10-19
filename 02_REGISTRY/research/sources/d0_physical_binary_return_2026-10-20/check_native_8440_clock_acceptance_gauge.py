@@ -111,3 +111,39 @@ for t in (0,.05,.1,.2):
  print('PASS full 143482 including BOTH depth-labelled TERMINAL failures',
        t,'max',max(abs(qfull0-qfull1)),
        'DIFFERENT original EARLY-stage reject',early1-early0)
+
+
+# Sharp Petz stage-recovery test: if stage-resolved E_n is truly retained,
+# beta_n=1-P(E_n)/g_n is directly measured. Together with whole positive
+# 8440 Book successes this restores the primitive absolute Perron lambda.
+eig=np.linalg.eigvals(K)
+lam=float(max(eig.real))
+lamall,rightall=np.linalg.eig(K);i=np.argmax(lamall.real)
+r=rightall[:,i].real
+if r.sum()<0:r=-r
+P=K*r[None,:]/(lam*r[:,None])
+T2=float(np.trace(P@P));T3=float(np.trace(P@P@P))
+for t in (.025,.05,.1,.2):
+ c=p**(t*t)
+ beta0=np.array([B,B]);beta1=np.array([B*c**-2,B*c**-3])
+ for beta,scale in ((beta0,1.),(beta1,c)):
+  early=blank*(1-beta)
+  late=blank*beta*(1-kappa*Z*(scale**np.array([2,3])))
+  success=attempt*np.where(length==2,beta[0],beta[1])*kappa*(scale**length)*base
+  assert abs(success.sum()+early.sum()+late.sum()-1)<1e-13
+  recovered_beta=1-early/blank
+  R=success[length==3].sum()/success[length==2].sum()
+  recovered_lambda=R/p*(recovered_beta[0]/recovered_beta[1])*(T2/T3)
+  assert abs(recovered_lambda-lam*scale)<3e-12
+  print('PASS true stage-bit original scalar absolute lambda recovery',
+        t,scale,recovered_lambda)
+ early0=blank*(1-beta0);early1=blank*(1-beta1)
+ late0=blank*beta0*(1-kappa*Z)
+ late1=blank*beta1*(1-kappa*Z*(c**np.array([2,3])))
+ assert max(abs(early0+late0-early1-late1))<1e-13
+ KL=float(sum(early1*np.log(early1/early0)+late1*np.log(late1/late0)))
+ KL_asym=float((ell**2/2)*sum(
+    blank*B*B*np.array([2,3])**2*(1/(1-B)+1/(B*(1-kappa*Z)))))
+ assert KL>0 and abs(KL/t**4-KL_asym)/KL_asym<.3
+ print('PASS STRICT native stage-Petz KL while all coarsened data equal',
+       t,KL,'coefficient_t4',KL_asym)
