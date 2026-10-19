@@ -217,6 +217,15 @@
       "normalization": "Exact rational coefficients; each cubic coefficient system has 400 equations, rank 266 and augmented rank 266, with an explicit particular solution.",
       "refinement": "One fixed spacing h=1; no mesh-uniform estimate or continuum limit is proved.",
       "scope": "A finite perturbative vacuum jet on this crossed-null chart only. Higher amplitude orders, arbitrary slopes, global/boundary roots and physical D0 selection remain open."
+    },
+    "double-null-quartic-selected-cubic-branch-v1": {
+      "carrier": "The perpendicular crossed-null chart H=a*x, J=b*y on the original h=1 lattice, with the explicit degree-at-most-three particular corrections and all cubic free parameters set to zero.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows at symbolic transverse sites are expanded at [a^2*b^2].",
+      "source": "Independent degree-at-most-five spatial-polynomial corrections for all 40 fields give 840 exact rational equations with coefficient rank 580 and augmented rank 581.",
+      "normalization": "Exact rational quartic-amplitude coefficient at h=1; each correction has independent coefficients against all x^i*y^j with i+j<=5.",
+      "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
+      "scope": "An obstruction only around the selected zero-free-parameter cubic representative and this degree-at-most-five correction chart. Other cubic representatives, non-polynomial corrections and native physical selection remain open."
     }
   },
   "obligations": [

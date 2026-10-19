@@ -633,6 +633,57 @@
         }
       ],
       "reported_state": "Both cubic coefficient systems are exactly consistent, and a combined replay verifies all 40 original Euler rows vanish through total amplitude degree three for symbolic x,y. This is a finite crossed-null vacuum jet, not an all-order solution or native D0-to-GR closure."
+    },
+    {
+      "id": "double-null-finite-quartic-selected-cubic-branch-obstruction",
+      "owner": "independent exact finite replay in #379",
+      "statement": "For H=a*x, J=b*y at h=1 on the original six-plaquette action, fixing the explicit degree-at-most-three particular solutions with cubic free parameters set to zero, no degree-at-most-five spatial-polynomial quartic corrections to all 24 Lorentz links and 16 coframe components cancel all 40 Euler rows at [a^2*b^2].",
+      "interface": "double-null-quartic-selected-cubic-branch-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart A=(1,0), B=(0,1), with H=a*x and J=b*y.",
+        "original_action": "Unchanged six based plaquettes, odd Lorentz curvature and fixed star pairing; continuum Levi-Civita links are only the initial trial.",
+        "lower_order_branch": "Uses the explicit degree-at-most-three particular corrections in degree3_output.txt, with all 134 free parameters in each of [a^2*b] and [a*b^2] set to zero; those free modes are not varied here.",
+        "formal_ring": "Exact rational extraction of the [a^2*b^2] coefficient at h=1.",
+        "correction_chart": "All 24 proper-Lorentz link and 16 coframe quartic corrections have independent spatial polynomials of total degree at most five, evaluated at their own sites including shifted plaquette sites.",
+        "equations": "All 40 original Euler rows yield 840 exact rational coefficient equations for 840 correction coefficients; fraction-free reduction gives rank 580 and augmented rank 581.",
+        "scope_fence": "Only this selected cubic representative and polynomial chart are excluded. Other cubic representatives, arbitrary site functions, higher spatial degree, an all-order root, a refinement family, sourced matter and physical D0 selection remain open."
+      },
+      "evidence": [
+        {
+          "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/check_quartic_selected_branch_degree5.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/check_quartic_selected_branch_degree5.py",
+          "sha256": "414652409ccebe47db04023b49ac5d98f97b70b0ba873d0d62d8a1c0483fb9f0"
+        },
+        {
+          "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/output.txt",
+          "sha256": "368719874ba18ae9fdfe4f39e08b536461aba38bb904c39b3dacd0e6078c96c5"
+        },
+        {
+          "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
+          "sha256": "8a7ab9b73ddbeea90452648b1167822c87efb5189900149339a3b86146b5eda3"
+        },
+        {
+          "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_output.txt",
+          "sha256": "44f088293171a818beadbec12add96fb97672cea8f283fa2c9bda25531bd58e3"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        }
+      ],
+      "reported_state": "At the selected cubic particular solution, the 840 by 840 quartic correction system is exactly inconsistent, with coefficient rank 580 and augmented rank 581. The 134 free modes in each cubic coefficient remain untested, so this is not a general obstruction to crossed-null finite roots or a positive D0-to-GR derivation."
     }
   ],
   "applications": [
