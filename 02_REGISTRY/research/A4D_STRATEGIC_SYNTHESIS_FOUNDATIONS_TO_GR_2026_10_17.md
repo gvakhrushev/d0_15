@@ -5531,3 +5531,29 @@ functional; не выведено, что это физическая цена B
 реальных K_j, сохраняя весь old jointRIGHT/reference и считая собственную
 полную историю/цену. Это NO-GO только для названного класса; никакой новый
 физический запрет, action, task status, BOOK или claim здесь не введён.
+
+
+### 7.81. Original ONE recorded Perron path physically reads canonical F/J and its own complete Cost−Info source
+
+**New positive same-science consumer:** [A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md](A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md), [executed one-path/feedback/source check](sources/d0_one_native_history_book_feedback_2026-10-19/check_one_history_book_feedback.mjs), and [executed all15,708 original complete depth2 path score](sources/d0_one_native_history_book_feedback_2026-10-19/check_one_sided_original_score.mjs). This refines §7.74 and §7.79 (canonical conditional variance and minimum-rank full 718×718 reflection) without choosing another F or an independent action.
+
+The formal ORIGINAL Lean all-walk Perron trace is a ONE-SIDED complete path law \(\tau_N(\gamma)=\rho^{-N}r_{\mathrm{last}}\). It is a Markov law with TRUE initial \(\mu_0(v)\propto r_v\neq\pi_v\), transition \(P_{uv}=A_{uv}r_v/(\rho r_u)\), and endogenous stationary bulk \(\pi_u\propto r_u²\). Instead of two independently prepared successor copies, on ONE actually registered native path record only the FULL original 718 directed-edge and 33 state counts. For each literal transition \((Y_t,Y_{t+1})\), its native predictor-error observable \(\epsilon_{t,i}=[1_{Y_{t+1}=i}-P_{Y_ti}]/\sqrt{\pi_i}\) is a genuine one-record martingale difference. Its full covariation equals
+\[
+\mathbb E_\pi[\epsilon\epsilon^T]
+=I-(D_\pi^{1/2}PD_\pi^{-1/2})^T(D_\pi^{1/2}PD_\pi^{-1/2})
+=F_{\rm native}.
+\]
+The self-calibrated \(\hat P=N_{uv}/N_u,\ \hat\pi=N_u/N\) yields finite \(\hat F_N=N^{-1}\sum_t\hat\epsilon_t\hat\epsilon_t^T\succeq0\), with **exact finite null mode \(\sqrt{\hat\pi}\)**. A real complete tripartite native graph with positive edges forces the true F rank32 for ALL positive Cost/Info perturbations, not only at the uniform graph. The ONE original one-sided recorded path almost-surely reconstructs the SAME FULL 33×33 F and therefore the complete scalar Book03 candidate \(-\log\det(I-2^{-20}F)=3.0035369315208\times10^{-5}\). Quantitative reversible original mixing q*=0.5531386 gives oracle innovation covariance mean-square O(1/N), and actual single-history fully empirical estimate is a.s. consistent; no burn-in/reset or fake iid assumption. Direct executed seeded paths length50k/300k give true candidate J errors2.113e−8/3.148e−9. One registered history also INDEPENDENTLY discriminates the Perron native trace from row-degree walk via the exact positive per-edge KL0.000920198932409216 nats.
+
+**Physical SOURCE, not merely a data statistic:** for any genuine smooth original positive edge Cost−Info transfer \(K_y=\varphi^{-s_y}\), the TRUE full one-sided length-N path probability has the exact formula
+\[
+\mathbb P_y(\gamma)=\rho_y^{-N}r_y(Y_N)\prod_{e\in\gamma}K_y(e),
+\quad
+D\log\mathbb P_y=-\log\varphi\sum_eDs_y(e)-ND\log\rho_y+D\log r_y(Y_N).
+\]
+This includes EVERY original terminal/right/probability-normalizer first jet and is NOT an assigned stationary π or frozen sample histogram. For any fixed observed complete-path statistic O_N, the exact field-source of its expectation is \(D E O_N=E[(O_N-E O_N)D\log\mathbb P_N]\). Exhaustive TRUE original 15,708 depth2 histories, all endpoints/failures, with a field-dependent actual 9–11 edge Cost and a nontrivial squared future prediction error, yield original-history source 0.02525998242984 against independent full-probability field derivative0.02525998234415, agreement8.57e−11. Independently the actual canonical feedback J edge-Cost source is nonzero and agrees with its direct matrix finite-difference at6.65e−14.
+
+**One critical interpretation improvement:** computing feedback as a deterministic statistic of ONE already stored complete native history does NOT require executing a 33-mode exterior Fermionic determinant experiment or installing an artificial Bernoulli-z primitive merely to OBSERVE its numerical value; ordinary counters (at most 751⌈log₂(N+1)⌉ raw bits) and determinant arithmetic suffice, but this work/clock is genuine D0 resource, not free. The previous owned canonical complete 718-edge minimal reflection remains the coherent positive-INSTRUMENT implementation. Equality of the empirical scalar with its mathematical \(J(F)\) still does NOT force the compulsory physical BOOK03 selected action \(S_{\mathrm{whole}}\) to be J(F) or yield Einstein by statistical semantics.
+
+**One ONE typed actual GR closure test remains:** bind compulsory full native Book/HJR Cost−Info, its coherent/registered F_N, actual field Cost/Info jets and real old RIGHT/observer/preparation/clock sources to the independently owned \(D S_{\rm physical}=a_h D\sum f_\star+b_h D\sum q_{\rm CAR}\) on the SAME original all16+24+matter tangent, with real nonzero ratio. The original finite all40 Cartan→Poisson and full nonlinear volume-mean Einstein bridges then consume this exact source. Until that physical equality is accepted by CONTROL and reflected in gr_assembly, constitutive/native_sector/matter_source_ward/GR and raw#216 remain OPEN. This is direct positive source-observability progress, not a new Einstein-like action or a claim/BOOK promotion.
+
