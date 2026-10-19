@@ -370,6 +370,15 @@
       "normalization": "Original Golden amplitude choice z=p^2 with p+p^2=1 and the owners’ logdet convention; no coefficient is fitted to Einstein.",
       "refinement": "Conditional fixed-window C1 heat-source limit and the declared macroscopic long-wave limit; not the original unweighted all-ten h^-2 terminal.",
       "scope": "Conditional mathematical source-comparison family only. Literal fullStep/compiler admission, compulsory event/Info/Cost selection, clock/work/preparation/controller price, matter/observer equations, Ward, nonempty physical roots and GR remain open."
+    },
+    "saved-quartic-representative-v1": {
+      "carrier": "The pinned #334 finite [a^2 b^2] 1008-coordinate quartic representative and the compact continuum sigma4/chi4 profile in the same untransformed coframe coordinates.",
+      "action": "Postprocessing of the saved finite quartic representative; the checker does not rerun the 840x1008 Euler system.",
+      "variations": "Exact rational extraction of the declared e+_u, e2_x and e3_y coefficient maps; no quotient by gauge, kernel or coordinate changes.",
+      "source": "The stored maps differ literally from the compact sigma4/chi4 maps, while the checker makes no assertion about their affine solution space or gauge orbit.",
+      "normalization": "Exact Q coefficients at [a^2 b^2], with 672 link entries followed by 336 coframe entries (1008 total).",
+      "refinement": "One pinned finite representative; no mesh-refinement or continuum estimate.",
+      "scope": "Disproves only literal coefficientwise identity of this representative with the compact ansatz; no gauge-aware range, all-40 root, physical D0 or GR no-go."
     }
   },
   "obligations": [
@@ -905,6 +914,12 @@
       "left": "Failure of a spatially uniform cubic link correction with fixed affine coframe.",
       "right": "A global obstruction to spatially varying link/coframe corrections or to finite D0 gravity.",
       "reason": "The exact residual is confined to one correction chart at two nodes; the coupled lattice solve and coframe modes remain open."
+    },
+    {
+      "id": "literal-quartic-representative-vs-gauge-range",
+      "left": "Same-coordinate mismatch of one stored [a^2 b^2] 1008-vector and the compact continuum sigma4/chi4 profile",
+      "right": "Absence of a gauge/kernel lift, failure of the full finite quartic solution space, or a physical D0/GR no-go",
+      "reason": "The exact checker compares one representative only and does not test the affine solution space or an allowed gauge/kernel transformation."
     }
   ]
 }

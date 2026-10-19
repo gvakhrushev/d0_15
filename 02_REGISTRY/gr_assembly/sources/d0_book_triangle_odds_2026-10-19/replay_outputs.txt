@@ -1,0 +1,21 @@
+# PR #380 source-fork replay
+
+Source head: 3ffff0fb76aa86132139c647c883baf240afe3a1
+#334/#380 merge base: 03bd6fed84830e72e55341cc38215c880d287357
+Quartic input SHA-256: 443c6fe34ae9fa8251838f28cebd5705f55ab6add51e1bc38b3b54f3702ef40f
+
+Run from the repository root:
+
+```text
+$ python3 02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/check_d0_triangle_cost_interface.py
+PASS: 33/718/359/1287, 960 triple-contrast equations, 327 image
+PASS: exact edge reconstruction and one-triangle negative control
+PASS: 33 Info cancellation for all 1287 triangles and 4 theta choices
+PASS: reversible scalar pressure even in orientation, curv=0.0036555517
+SCOPED: existing scene homology; no physical D0/GR closure
+
+$ python3 02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/check_saved_quartic_normal_form.py
+PASS: pinned 1008-vector has 118 link + 20 coframe nonzero coefficients
+PASS: literal quartic sigma/chi representatives differ from stored finite vector
+SCOPED: no gauge equivalence, kernel-range or physical GR conclusion
+```
