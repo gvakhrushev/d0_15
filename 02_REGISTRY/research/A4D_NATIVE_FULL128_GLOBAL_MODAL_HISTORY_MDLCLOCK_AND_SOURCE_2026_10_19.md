@@ -98,3 +98,25 @@ so for n=1024 this is `-4.5818938450528...`. The comparison is a **typed theorem
 This is the clearest physical discriminator: to promote the detector to gravity one must now supply at least one of (i) a typed same-history projection which makes the MDL history different from all blank, (ii) an ORIGINAL paid action/counterpart whose J23 source cancels the computed `-4.58189...` at the flat stationary field, or (iii) a native restriction of the tested variation with independent justification. A hand-inserted counterterm or reweighted ensemble is not permitted. An exact residual on this ONE physical tangent can be tested first, before chasing more geometric jets.
 
 Also note that this is **pathwise** MDL and the derivative at a strict finite-n maximum. The full Book path action is algebra/memory-class valued, and there is not yet a proof that its sum is exhausted by the measured tape. Consequently the global physical GR claim remains open.
+
+
+## 6. One source/normalizer component IS exact on the literal complete original instrument
+
+The complete original 128-outcome Kraus family satisfies \(\sum_{z=1}^{128} K_z(y)^*K_z(y)=I\) at every admitted smooth field value y in the instrument chart. Therefore for ANY normalized physical preparation \(\rho(y)\), ANY positive integer n, and the **literal original complete 128^n measured history frame** \(\Omega_n\), its normalized Born cylinder law obeys, identically in y,
+\[
+q_y(\omega)=\operatorname{Tr}[K_\omega(y)\rho(y) K_\omega(y)^*],\qquad
+\sum_{\omega\in\Omega_n}q_y(\omega)=1,\quad
+D_V\sum_\omega q_y(\omega)=0.
+\]
+Consequently, **IF** the native scalar Book weights on EXACTLY this same complete, labelled, clocked history frame are bound to these raw positive probabilities \(w_y(\omega)=q_y(\omega)\), their finite partition normalizer satisfies \(\mathcal N_{\rm Born}(y)=1\) and \(D_V\log_\varphi\mathcal N_{\rm Born}=0\) for ALL native field/preparation tangents, not only at the flat sample. This is a nontrivial positive conditional normalization closure. It does **not** identify this scalar tape total with Book03's memory-algebra-valued statistical sum, nor prove \(w_{\rm Book}=q_{\rm Born}\). If they differ, the Book normalizer can move.
+
+For the **strictly selected** all-blank complete word \(\omega_*=0^n\), the known original Golden *port* code has fixed cost \(C_{\rm port}(\omega_*)=n\) and hence \(D_V C_{\rm port}(\omega_*)=0\). All full-label/controller/archive codes (if any) must remain separately present; they are NOT inferred from the port code. Under the above conditional same-history full-word binding and full primitive code \(C_{\rm full}(\omega_*)\), the partition-corrected original branch information is exactly
+\[
+I_{\rm full}(\omega_*)=C_{\rm full}(\omega_*)+
+\log_\varphi q_y(\omega_*),\qquad
+D_V I_{\rm full}=D_VC_{\rm full}
++\frac{n\,D_V q_0}{q_0\ln\varphi}.
+\]
+The actual modal code action has \(D_VS_{\rm MDL}=-n D_Vq_0/(q_0\ln\varphi)\); on the pinned original J23 source this is approximately \(-4.58189384505\). The **known** fixed port-cost part supplies zero derivative, so it cannot by itself cancel this nonzero path derivative. Any balance must involve correctly admitted original complete Info, other primitive label/work/clock prices, or the physically forced history equivalence/selection. There is no freedom to postulate a new counterterm or silently equate the port-only prior \(p^n\) to the unknown full 128-label prior.
+
+This isolates a *resolved* normalization obligation on one typed chosen history frame and the *still open* compulsory action/label-cost binding without conflating them.
