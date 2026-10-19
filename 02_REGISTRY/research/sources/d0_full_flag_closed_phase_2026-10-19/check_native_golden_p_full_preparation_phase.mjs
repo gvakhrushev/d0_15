@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 /**
- * D0 original CAR16 grade-one (4x4 block), existing Julia T=Lambda(U)/2
+ * D0 original CAR16 grade-one (4x4 block), existing Julia T=p*Lambda(U)
  * + F=sqrt(I-T†T), ORIGINAL two null N2,barN3.
  * Retain entire classical GOOD/BAD flag with BOTH unnormalized CAR blocks.
  * Compute gauge-invariant three-record cyclic trace without ANY coherent
