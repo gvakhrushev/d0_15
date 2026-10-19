@@ -68,6 +68,14 @@ function audit(mixed,old){
   if(L.degree!==3||E.degree!==4)throw Error("unexpected leading mixed quartic");
   const leadingE=E.top.filter(x=>x.component===10).map(x=>
     x.coefficient+"*x^"+x.monomial[0]+"*y^"+x.monomial[1]);
+  // One exact, physically h-rescaled quartic coframe coefficient.
+  // Its degree-five competitor coefficients are all absent.
+  const field10=C5.map((mon,j)=>({mon,coef:mixed.solution[24*L6.length+10*C5.length+j]}))
+    .filter(v=>v.coef!=="0");
+  const exactExpected=[[[0,2],"-7/256"],[[1,2],"-9/128"],
+    [[0,3],"-1/128"],[[2,2],"3/128"],[[0,4],"1/256"]];
+  if(JSON.stringify(field10.map(({mon,coef})=>[mon,coef]))!==JSON.stringify(exactExpected))
+    throw Error("source-selected component (2,2) quartic C2 refinement changed");
   return {
     status:"PASS_QUARTIC_GRADED_C2_JET_REFINEMENT",
     amplitude_order:4,
@@ -75,6 +83,7 @@ function audit(mixed,old){
     mixedLeadingLinks:L.top,
     mixedLeadingCoframe:E.top,
     coframe10Leading:leadingE,
+    exact_refinement_component_2x: "3/128*x^2*y^2+1/256*y^4 -h*(9/128*x*y^2+1/128*y^3)-7/256*h^2*y^2",
     refinement_rule:{
       coframe_m_deg_d:"h^(4-d) P_d(x,y)",
       connection_m_deg_d:"h^(3-d) Q_d(x,y)",
