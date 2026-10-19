@@ -1070,6 +1070,100 @@ from the same admitted native carrier (for example the already-owned
 real Cost−Info, preparation and work source. Inserting `e` only into a
 post-measurement observable would not fix the variational source.
 
+### Same-run gate for the retained `C_Y` instrument
+
+The supplied `C_Y` construction is already preserved byte-for-byte and
+consumed in §6.33 of the [labelled full-source memo](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+It exactly copies an active LEFT address into a fresh record, retains it on
+failure and realizes the old-leaf effects on the full GNS carrier. The copy
+itself is field-independent. For a complete readout with Born law
+`q_omega(x)=Tr(rho_x M_omega(x))`, its source is
+
+```text
+Dq_omega = Tr((D rho) M_omega) + Tr(rho D M_omega).
+```
+
+`C_Y` adds neither a field-dependent preparation nor a field-dependent
+effect. Any geometric source must already be present in the native
+preparation or in the original query/effect. The conditional capacity branch
+does give an exact vacuum consumer after specifying
+`e_i=p^2(1+t^2 f_i)`: its optimized entropy law has
+`Gamma=log(D)/log(phi)` and `Crit Gamma=Crit P` on the stated free radial
+domain at fixed `t`. This proves the conditional nonlinear Euler transfer;
+it does not derive that field-to-probability relation or select the entropy
+price from the native execution. The complete positive Julia tester repairs
+the zero-outcome `C^2` problem for its own readout, but does not select its
+price either.
+
+There is a separate aggregation gate. On a complete same-history cut with
+`w_omega=N q_omega`, the pointwise action is
+`S_omega=-log_phi(q_omega)-log_phi(N)` and its **ensemble mean** is
+`(H(q)-log(N))/log(phi)`. Thus `Gamma=H(q)/log(phi)` requires both the
+whole-history binding and `N=1`, plus a physical rule that varies this mean.
+Book 03's classical-limit condition is pathwise minimum-code stationarity;
+it does not turn that condition into ensemble-mean Shannon stationarity.
+`C_Y` preserves the record but proves neither the binding nor the
+aggregation rule.
+
+The downstream full128 audit in [Draft #384](https://github.com/gvakhrushev/d0_15/pull/384)
+sharpens the distinction on the literal original instrument. Conditional on
+the full-history `w=q` identification, at `L=4`, `h=1/4`, `n=1024` the
+unique modal history is the all-blank word, with Born mass `0.0122163`;
+the other histories retain mass `0.9877837`. In the fixed-clock `J23`
+direction its modal surprisal source is `-4.581893845...`, while the flat
+Palatini link Euler row vanishes. Under `n epsilon -> beta>0` and
+`lambda_h -> lambda>0`, the modal mass tends to `exp(-beta lambda)`, so
+minimum-code selection does not imply concentration of the full record.
+This is a decisive scoped negative control: the bare modal price cannot be
+the flat-vacuum Palatini source on that same tangent if the tested J23
+variation is the admitted one and no other same-run source contributes.
+Those identifications are not established for the full Book sum. This is
+not a no-go for the algebra-valued Book sum or a different physically
+selected history space; any cancellation must come from a real, same-run
+native source, not a fitted counterterm. The full timed record also cannot be silently replaced
+by its count: its clock-position source and the nonabelian order response
+are distinct native directions.
+
+Nor does `ActionProtocol` choose the missing price. The exact
+[prepared-action fiber theorem](A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md)
+says that for off-diagonal prepared endpoint pairs retaining a field readout
+`s`, every nonnegative excess `E(s)` that descends through endpoint-pair
+fibers yields an admissible action `1+E(s)`.
+This is not a global no-go for D0, since Book03 and additional native owners
+may constrain the full history. It proves that endpoint admissibility and
+`C_Y` alone do not determine its field source.
+
+The entropy-capacity defect is equally nonautomatic matter. On its free
+preparation fiber the exact nonnegative decomposition is
+
+```text
+log(D)-H = KL(r||r*) + sum_i r_i D(s_i||s_i*)
+         + sum_i r_i s_i [D(b_i||1/2) + I(A;B)] >= 0.
+```
+
+Free preparation variables minimize these defects to zero; a free defect is
+not an independent stress tensor. Matter requires an actually native,
+non-slack constraint or CAR interaction on this same run whose multiplier
+has a nonzero coframe and connection pullback and satisfies the source/Ward
+equations. Naming a retained bit, polarization or capacity deficit does not
+supply that constraint. The existing fixed-word charge boundary in §6.20
+explicitly does not establish a full-Cartan matter superselection rule.
+
+**Smallest decisive consumer:** on one admitted execution, compute the
+complete Book first source on the actual ordered history, including native
+preparation, full labels, RIGHT/reference, CAR, controller, clock and work;
+then compare its 16 coframe, 24 connection and matter rows with the existing
+independent Palatini/CAR source. Begin with the flat `J23` row above: either
+the admitted history is not the conditional blank modal word, or the same
+program must exhibit the native term that cancels its nonzero source. Do not
+choose mean, modal, binary or count aggregation by whichever matches
+Einstein. At this refresh `#334` is at `ece9c2c`; #384 is a divergent
+downstream review from common base `8f327fc`, overlaps parent source paths,
+and has no reported checks. Treat it as scoped research input, not as an
+accepted parent application or a second execution. `task_dispatch` currently
+reports the live `#334/#384` association as ambiguous; reconcile the shared
+ownership before publishing more edits.
+
 ### Strategic context and preserved inputs
 
 The integrator, or a new chat establishing programme context, reads the full
