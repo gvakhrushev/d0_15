@@ -71,6 +71,22 @@ The next proof must derive the needed actuation from an already owned native
 operation or give a scoped obstruction for the actual palette, while
 preserving all complement and RIGHT records.
 
+There is a second, independent physical gate: derive the full Book's actual
+measurement and aggregation rule. The [Golden modal/PF aggregation result](A4D_MINIMAL_GOLDEN_MODAL_PF_RETURN_AND_BOOK_AGGREGATION_SEAM_2026_10_19.md)
+shows that two Golden coins suffice for a unique filled-return mode on each
+leaf for every positive feedback, and that fixed-RIGHT PF preparation gives
+the same geometric-plus-matter source up to an exact positive factor on its
+declared one-cost READY sector. But a global MAP over old address labels is
+the nonsmooth minimum of local sources, not their `J₂` sum; resolving every
+fine occupation outcome gives a different matter coefficient. A binary
+collective mean gives the `J₂` source only for its specified complete pointer
+and Book `w=q` binding. Its source sign is negative at two coins; ten coins
+make it positive for one `d=1056` defining leaf, while putting reference copies
+inside the determinant changes that threshold. None of these aggregators has
+been selected by the physical D0 programme. The next same-programme check
+must bind the actual complete outcome law, work/preparation cost and full
+history price before using the transferred Einstein roots.
+
 The separate [exact Fibonacci LEFT-rank decoder](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md)
 also gives exact cell balance and the same conditional source transfer, but
 reassigns original words to Role sites and needs depth `n≈3L⁴/4`. It is an
