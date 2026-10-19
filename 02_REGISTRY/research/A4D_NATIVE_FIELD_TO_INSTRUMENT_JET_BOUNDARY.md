@@ -244,11 +244,48 @@ action. The conditional full-action chronology relation is already owned by
 [A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md](A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md),
 §4; the source from the other retained action terms remains required there.
 
-This correction narrows the next GR obligation: derive the same-history native
-map \(\Gamma\), prove that the full action covector annihilates its kernel,
-and establish refinement compatibility before interpreting its ten metric
-components as a physical source. The jet-family dimension, a tomographic
-condition, and the toy entropy do not establish those premises.
+### A restricted native field-to-CAR map is already owned
+
+The same research line already supplies a concrete map on a narrower, typed
+domain. On the open timelike sector of the actual sixteen-component exterior
+matter field, set
+\[
+v=P_1m,\qquad k=v^Tq^{-1}v>0,\qquad n=v/\sqrt{k},\qquad
+Q=-q+2vv^T/k,\qquad G=Q^{-1}.
+\]
+The owned CAR creator \(c_n\) defines the full native gate \(U_n\) by
+[A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md),
+Eq. (3), and the same-history state update is \(m_+=U_nm\). Under that
+owner's endpoint-isometry premise and when \(w=(m_+)^1\ne0\), the next
+metric is solved as \(q_+=-Q+2ww^T/(w^TGw)\). The sources give the complete
+joint derivative on all ten initial metric slots and all sixteen matter
+slots, including \(\dot m_+=\dot U_nm+U_n\dot m\) and the moving-pairing
+identity \(\dot U_n=[\rho_*(A),U_n]\); see Eqs. (4)–(6) and (9) there and
+Eqs. (7)–(9) of
+[A4D_NATIVE_MATTER_OBSERVER_PAIRING.md](A4D_NATIVE_MATTER_OBSERVER_PAIRING.md).
+This is a concrete field-to-operation-to-record map for that sector, not a
+new generator or readout postulate.
+
+Its scope is narrower than the proposed \(X=(q,D,b,m)\) interface. It maps
+\((q,m)\) to the full 16-dimensional CAR gate and record, not to the pair of
+\(U(4)\) return generators in the first-jet owner. The recorded results admit
+a homogeneous spatial extension with \(D_e=I\) and \(b_e=0\), but this does
+not derive the response to general link or affine variations. The map also
+requires a timelike first-grade input, can become singular when the next first
+grade vanishes, and rests on a physical endpoint-isometry/admission premise
+that the cited owners do not prove. Its feedback and heat terms have not been
+shown to be one physically selected complete action. The separate AF coherent
+record witness above does not yet identify its \(\theta\) with this \((q,m)\)
+map.
+
+The next GR obligation is therefore to extend and physically admit this
+existing same-history map across the retained link/affine directions, connect
+its record to the selected complete \(\operatorname{Cost}-\operatorname{Info}\)
+source, and establish refinement compatibility. Then the full constrained
+covector can be compared with all ten metric components and the connection
+and matter equations. The jet-family dimension, a tomographic condition, the
+toy entropy, or the restricted \((q,m)\) map alone do not complete that
+chain.
 
 Reproduce with
 
