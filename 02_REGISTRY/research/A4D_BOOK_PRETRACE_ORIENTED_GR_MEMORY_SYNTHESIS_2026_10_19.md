@@ -153,6 +153,52 @@ This is a **finite nonlinear** signed curvature signal, not merely the \`ab\` co
 
 **Result:** the entire GEOMETRIC 40-row operator weld is algebraically available from ORIGINAL oriented memory *without* knowing the absolute native scalar Cost–Info coefficients; what remains is operational class/face-map admission and equality of the **whole physically selected source**, not a new curvature theorem.
 
+## 4.2. GLOBAL geometric synthesis: the ORIGINAL 718 scalar data and 327 ordered Lorentz loops share ONE cycle basis — but not one scalar action
+
+The preceding face-weld is not an isolated triangle trick. On the ACTUAL K(9,11,13) underlying undirected graph:
+
+\`\`\`
+vertices = 33, undirected edges = 359, directed edges = 718,
+spanning-tree edges = 32, independent graph cycles = 359-33+1 = 327,
+oriented ABC triangles = 9*11*13 = 1287,
+remaining triangle consistency relations = 1287-327 = 960.
+\`\`\`
+
+One explicit 32-edge connected tree uses A0–Bj (11), A0–Ck (13), Ai–B0 for i>0 (8). The exact checker of the previous original scene cycle owners confirms the 327 basis and 960 compatibility equations. An independent 33-node graph count/tree connectivity check in this analysis reproduces all the integers; no new census of research objects is intended.
+
+**Scalar Book cost geometry (an exact vector-space decomposition):** For ANY directed real scalar primitive edge price s_uv, decompose under reversal
+
+\`\`\`
+e_uv = (s_uv+s_vu)/2   (359 reciprocal/backtrack directions),
+a_uv = (s_uv-s_vu)/2   (359 orientation-odd directions).
+\`\`\`
+
+On the connected graph, choose the tree potential chi so that dchi_uv = a_uv on all 32 tree edges. Then a_uv - dchi_uv vanishes on the tree and has exactly 327 independent off-tree cycle coordinates:
+
+\`\`\`
+718 = 359 (reciprocal) + 32 (endpoint gradient) + 327 (cycle).
+\`\`\`
+
+This is the original #380/scene-cochain decomposition in physical geometric language; the numbers are not independent newly fitted theory parameters. Reciprocal returns encode an actual scalar cost of traversing and immediately returning (not necessarily positive for the NET Cost−Info after Information subtraction, though primitive Cost itself is positive); exact endpoint gradients are open-history/normalization data; cycle-odd coordinates are invariant under endpoint-price reallocation. Entropy production belongs only to an admitted stochastic physical reading, not automatically to every antisymmetric cochain.
+
+**The positive endpoint weight discussed in the geometric programme** has precisely the exact-gradient form whenever it is really a node density omega>0:
+
+\`\`\`
+s_uv^(omega) = sqrt(omega_u/omega_v)
+             = exp(chi_u-chi_v),   chi_v=(1/2) ln omega_v,
+product_(e in any closed path) s_e^(omega) = 1.
+\`\`\`
+
+So this scalar transport factor by itself has ZERO closed-loop curvature and cannot generate the oriented nonabelian Lorentz star. It CAN still change the coframe/physical metric if omega is used to dress e or g: this changes solder/Hodge area weights, so do not erase the real geometric effect of a variable physical density. No original theorem forces arbitrary Book scalar Cost or A1 weights to equal this exact omega gradient (A-WEIGHT retains its selector no-go). It is a common-carrier identification to prove, not an assumed equality.
+
+**Lorentz geometry on the SAME original graph:** with physically independent reverse transport U_vu=U_uv^-1, a proper Lorentz tree gauge sets the same 32 tree links to identity. Its other 327 ordered matrix edge holonomies determine all 359 links up to vertex gauge. The previously owned 327 **based, tree-transported** triangle-matrix reconstruction plus 960 ordered identities makes this exact for every nonabelian group, including SO+(1,3). All first link-source jets then follow by differentiating the reconstructed products (assuming one physically common frame). Scalar loop affinities and noncommuting ordered Lorentz triangle matrices are therefore **two distinct channels on one 327-cycle presentation**; scalar cycle odds cannot substitute for the matrix action.
+
+**Do not make the entire scalar Book edge weight an SO/Lorentz transport:** full primitive backtrack costs are positive, so in general w_uv*w_vu != 1, even though U_uv U_vu=I. Only the antisymmetric/endpoint scalar cochain is inverse-compatible as a geometric scale connection; 359 reciprocal costs are independent physical record/work resources. Treating all positive Cost as conformal gauge would incorrectly erase actual path cost.
+
+**One finite joint historical interface instead of separate infinite catalogues:** original scalar directed prices and their field first jets are reconstructible from the true 685-dimensional stochastic Doob law + 32 original old-prior degrees + 1 absolute Book normalizer (the already-owned global two/three-cycle source inverse); the original reversible Lorentz link data and jets are reconstructible up to gauge from 327 ordered triangle matrices in one frame. The exact role of the *physically admitted common programme* is now to make those two reconstructions refer to the SAME actual retained history/clock/observer/CAR cut, and to supply a typed map from original 33-scene-cycle records to the ORIGINAL four-Role based face data. Then the exact PRETRACE odd-curvature extraction of §4.1 and the already-owned #377 Einstein-Hilbert probe can be consumed with the unaltered full Cost–Info/matter Ward.
+
+This is a GLOBAL **DATA/PRESENTATION theorem**, not a decomposition of the mandatory full physical action into four independently selected additive action terms, and not an isomorphism of the 33-vertex scene with the four-dimensional Role lattice. The latter welded physical relation and native selected price remain unproved.
+
 ## 5. What this removes from the GR strategy — and what it does not
 
 **Removed as a geometry/math problem:** a new Lorentz generator is unnecessary (the original two nulls generate so(1,3)); new noncommutative scene paths are unnecessary (original Book03 already retains them); a scalar Perron/determinant compression cannot be the sole signed gravity decoder (proved here on an actual native sublanguage); the exchange-odd readout need not fit an arbitrary θ / scalar code source because both compared paths have identical primitive multiset and endpoints.
