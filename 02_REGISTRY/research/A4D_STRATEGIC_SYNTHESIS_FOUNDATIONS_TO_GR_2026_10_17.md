@@ -3602,3 +3602,67 @@ solve all CAR, observer, metric and link rows and compare that one source with
 the two-coefficient Brinkmann consumer. Until this is done, the current
 native-address/J2 route remains the consuming route, while C_Y/capacity and
 the coherent sideband are conditional vacuum and preparation results.
+
+### 7.47. The Book aggregation choice now has an exact source discriminator
+
+The latest Golden modal/PF calculation is consumed from
+[the finite aggregation owner](A4D_MINIMAL_GOLDEN_MODAL_PF_RETURN_AND_BOOK_AGGREGATION_SEAM_2026_10_19.md)
+and its [exact checker](certificates/a4d_minimal_golden_modal_pf_return_and_aggregation_check.py).
+It removes a tempting but invalid shortcut: a determinant return functional,
+its conditional most probable fine outcome, the entropy of a coarse pointer,
+and the global most probable complete history define different first
+sources. The common appearance of $J_2=-\operatorname{Tr}\log(I-rF)$ does not
+select among them.
+
+For one defining old-LEFT leaf of rank $d=1056$, the exact modal theorem says
+that two original Golden coins are the minimum in the declared coherent
+return-compression class that gives a unique filled-return occupation mode
+for every positive $F\le I$. The forced value is
+\[
+r_2=\frac{p^4}{1-p^4}=\frac{3\sqrt5-5}{10},
+\qquad
+DS_{\mathrm{mode}\mid\alpha}=\frac{2}{\log\varphi}DJ_\alpha(r_2).
+\]
+The fixed old-RIGHT Perron–Frobenius law also gives an exact positive multiple
+of the ordinary regular-trace source on the declared one-cost READY leaves.
+These facts transfer the conditional $J_2$ Einstein roots; they do not turn
+the per-leaf modes into one global physical history.
+
+The distinction is decisive at the common null background. If the Book price
+uses the global MAP over old addresses, equal winning address weights make
+its local expression
+\[
+S_{\mathrm{MAP}}=\mathrm{const}+\frac{2}{\log\varphi}
+\min_{\alpha\in\mathrm{READY}}J_\alpha.
+\]
+Its directional derivative is a minimum of the leaf sources, generally
+nonsmooth when cells vary independently; it is not their distributed
+regular-trace sum. If the detector resolves every exterior occupation,
+the matter-to-geometry source ratio is instead approximately
+\(\sigma\,135.4469\), rather than the two-coin modal
+\(\sigma\,23.1787\). If it records one complete binary good/failure pointer,
+the mean-entropy source is proportional to the $J_2$ source, but its sign
+depends on the number of Golden coins. Ten coins are the exact minimum for
+strictly positive binary entropy response for every $0\le F\le I$ at this
+single-leaf rank; at the owned common background,
+\(g\approx0.75946077\), \(\kappa(g)\approx0.87317139\), and
+\(\lambda_{\mathrm{mat}}\approx\sigma\,23.41633070\). This is still
+conditional on that binary pointer being the actual complete readout and on
+its full history obeying the Book $w=q$ cost contract.
+
+Thus the current bottleneck is now a typed same-carrier identification:
+which complete output law does the native program retain and price? The proof
+must bind old address, old RIGHT/reference, CAR/data, every fine or coarse
+outcome, preparation, clock, controller work and raw normalizer in one
+history frame, and differentiate that full price. Only then can its measured
+source be compared with the two coefficients of the already-proved
+Brinkmann 40→3→1 consumer. Book 03's statistical history sum, geometry sum
+and feedback determinant are distinct typed carriers; the shared golden
+exponential rule does not define maps between them. The carrier maps and Book
+readout/aggregation rule must be supplied by the same native execution. This
+is the next proof target, not another tunable coefficient.
+
+The independent audit of the newly supplied field-to-instrument proposal
+remains §7.31: its $32$-dimensional return cannot be injective on the full
+$66L^4$-dimensional field tangent, and the stated Hom-space kernel count
+does not repair that mismatch. No extra tomography postulate is introduced.
