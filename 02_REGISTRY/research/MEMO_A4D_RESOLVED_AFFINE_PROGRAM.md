@@ -21,6 +21,44 @@ counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
 
+### Route update — nonlinear completion is no longer the open step
+
+For the already-built golden-AF geometric branch, the all-order nonlinear
+spin-2 completion is now exact at finite lattice spacing. The
+[coframe-equivalence theorem](A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md)
+constructs an invertible, Lorentz-equivariant change of the existing coframe
+coordinates such that
+
+```text
+A_Phi(e,U) - B = c P_w(e_tilde,U),
+e_tilde_x = sqrt(Phi(f_x)/(c f_x)) e_x,
+```
+
+with the continuous value at `f_x=0`. It applies to the actual same-history
+second-AF entropy and to the literal Book03 two-tick AF×scene feedback `J2`.
+On the vacuum roots `f_x=0`, the map is the identity: all 16 coframe and 24
+proper-link equations, the full nonlinear Hessian and cubic vertex, and every
+higher interaction transfer from the original finite Lorentz-star Palatini
+action. The existing nonflat finite pp-wave roots and both wave polarizations
+therefore close this geometric sector without a weak-field expansion or
+`t→0`. This is conditional on selecting one of those complete AF prices; it
+does not identify the full physical `H+J+R`, preparation, clock, work or CAR
+price with it. Nonconstant AF weights also require the separately proved
+density/coframe normalization before the raw-original metric is called
+Einstein.
+
+The remaining positive bridge is consequently narrower and physical: on one
+admitted D0 execution, derive a composition-preserving action of the original
+ordered Book memory on the Lorentz/CAR carrier, compute its complete
+Cost−Info source including preparation, full labels, old RIGHT/reference,
+controller, clock and work, and prove that this same source reduces to the
+AF Palatini covector plus the native matter source. Terms not in that source
+must vanish by their own Euler equations, not by omission. The same admitted
+carrier must then supply the stationary family, weight normalization and
+refinement to the original raw `#216` norm. This is now the sole route
+consumer; another independent graviton-vertex search would repeat a closed
+conditional result.
+
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
@@ -1110,7 +1148,8 @@ capacity law and `w=q`. In its full optimized POVM,
 `q_iF=1/D` and `q_iab=exp(h(e_i)) p_a(e_i)/D`, with
 `p_0(e)=1-e`, `p_1(e)=e`, `b=0,1`, and
 `Gamma=log(D)/log(phi)`, `D=sum_i Z(e_i)`, `Z=1+2 exp(h)`. At the flat
-profile `e_i=p^2`, the identities
+profile `e_i=p^2`, with the natural binary entropy
+`h(e)=-e ln(e)-(1-e)ln(1-e)`, the identities
 `exp(h(p^2)) p_0(p^2)=phi^(p^2)>1` and
 `exp(h(p^2)) p_1(p^2)=phi^(-p)<1` show that the modal outcomes are
 the success labels `(i,a=0,b)`; all leaves tie. Put `ell=log(phi)`. On
@@ -1148,8 +1187,26 @@ Those identifications are not established for the full Book sum. This is
 not a no-go for the algebra-valued Book sum or a different physically
 selected history space; any cancellation must come from a real, same-run
 native source, not a fitted counterterm. The full timed record also cannot be
-silently replaced by its count: its clock-position source and the nonabelian
-order response are distinct native directions.
+silently replaced by its count or scalar edge-price law. The exact original
+718-edge witness in [#384](https://github.com/gvakhrushev/d0_15/pull/384)
+uses two nine-edge triangle orders with identical directed-edge and vertex
+multiplicities. Therefore every scalar local `Cost−Info` price and every
+field derivative agree, while a conditional proper-Lorentz representation
+has the exact gauge-invariant Wilson-trace gap `-8abc/(4+c^2)` and a
+complete positive Choi readout has nonzero marked-probability gap
+`-262144006401/67129837158400000` at `a=b=c=1/40`. The representation is a
+mathematical witness, not an admitted D0 compiler. It proves that scalar
+prices cannot carry this ordered memory; the original Book memory-algebra
+factor remains the possible carrier, but its physical representation and
+price are unproved.
+
+The same #384 intake gives an exact native full128 `J23` control: a three-way
+`blank / exceptional seven-label group / remaining exits` readout has Fisher
+information at least `1.63626901123936e-7` above the binary
+`blank / all-exits` statistic. Thus that binary compression is not sufficient
+even on the tested original Lorentz tangent. Neither result selects the
+Book action; both require the same-run ordered memory and full source test
+above.
 
 Nor does `ActionProtocol` choose the missing price. The exact
 [prepared-action fiber theorem](A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md)
@@ -1208,11 +1265,11 @@ the admitted history is not the conditional blank modal word, or the same
 program must exhibit the native term that cancels its nonzero source. Do not
 choose mean, modal, binary or count aggregation by whichever matches
 Einstein. The inspected #384 branch diverges from #334 at common base
-`8f327fc`, overlaps parent source paths, and has no reported checks. Treat
-it as scoped research input, not as an accepted parent application or a
-second execution. `task_dispatch` currently
-reports the live `#334/#384` association as ambiguous; reconcile the shared
-ownership before publishing more edits.
+`8f327fc` and remains a separate, scoped research intake. Treat its exact
+certificates as inputs with their stated scope, not as an accepted application
+to the parent or as a physical execution. The #334 consuming application is
+the same-run admission/source equality above; no wholesale branch merge or
+second execution is needed to state that obligation.
 
 ### Strategic context and preserved inputs
 
