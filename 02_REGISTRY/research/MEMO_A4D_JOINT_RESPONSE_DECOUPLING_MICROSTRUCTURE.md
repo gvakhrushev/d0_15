@@ -1,5 +1,41 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 19 October 2026 — MAIN positive synthesis: ORIGINAL golden boxes, inverse-PF and moving quantile SAME finite roots / general Einstein source
+
+**Direct consuming theorem IN THIS original #334:** [A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md](A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md); **REPRODUCED AND EXECUTED** [exact native original-F/R and moving-volume full two-tick JS checker](sources/d0_original_golden_inverse_pf_quantile_2026-10-19/check_original_inverse_pf_quantile.mjs). This is stronger than the earlier optional [integer-divisible Fib rank LEFT decoder](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md): **NO RELOCATING the original old 4D golden boxes; NO new rank decoder; NO exact Fibonacci divisibility; NO excessive n=3L⁴/4**. It closes the expressly OPEN **finite rooted local J₂ → correct off-null general moving-volume mean J₂ first-SOURCE** in owned full-source §6.48, by composing TWO already-owned kinematic maps, not inventing a new curvature price.
+
+On the ORIGINAL golden nested 4D boxes, exact-cost READY native words w have equal TRUE old AF PF/regular type weight ω; their actual original cell counts \(N_{n,x}\) are generally UNEQUAL. Set \(w_x=\omega N_{n,x}\), \(\bar w=M^{-1}\sum_x w_x\), \(\rho^{AF}_x=w_x/\bar w=MN_{n,x}/F_{n+1}\). On the owned original source-compatible CAR/Einstein metric \(\widehat e_x=\sqrt{\rho^{AF}_x}e_x\) define \(\widehat f_{h,x}=h^{-4}P_{\star,h}(\widehat e,U)\), \(\widehat q_{h,x}=\widehat g^{-1}(D_h\Psi,D_h\Psi)\). The SAME original full two-tick Book03 J₂ LEFT query (528 scene returns+22448 full complement, all old RIGHT/ref128) is now supplied with BOTH the original inverse-PF factor and the original physical-volume quantile:
+\[
+r_w(y)=(\rho_x^{AF})^{-1}
+ \bigl[(\mathcal I_h\widehat f_h)/J_y\bigr](T_{J_y/V_y}(u_x)),\qquad
+q_w(y)=(\rho_x^{AF})^{-1}
+ \bigl[\mathcal I_h\widehat q_h\bigr](T_{J_y/V_y}(u_x)),\quad x=j_{\rm native}(w).
+\]
+Here T is the already PROVED triangular inverse quantile with full Reynolds/observer/clock jet, \(\mathcal I_h\) the fixed nodal moving-query interpolation of full-source §6.52. This is a newly specified **QUERY OPERAND** of the EXISTING unmodified ordinary two-scene-tick \(J_2=-\operatorname{Tr}\log(I-zF)\) price law, not the original old v8 full physical programme automatically executing it.
+
+**Exact finite two-way source bridge:** On EVERY nonflat arbitrary-time Brinkmann+true CAR scalar/top null solution of prior full40→3→1, \(J_y=1,\ T=\mathrm{id},\widehat f=\widehat q=0\) at EVERY original cell. Therefore chain-rule \(\nabla f\cdot DT\) and \(-f DJ/J²\) vanish EXACTLY on these roots for arbitrary real coframe/observer/shear/matter variations (even though DT and DJ may be nonzero). The genuine source of this VOLUME programme on ALL 16 coframe+24 link+2 scalar Euler agrees EXACTLY with the already solved native-local inverse-PF programme:
+\[
+\boxed{\frac{DJ_2^{\rm volume}}{\nu K}
+=\frac{DJ_2^{\rm local}}{\nu K}
+=\bar w C_\star D\sum_x[\widehat f_{h,x}+\lambda_-\widehat q_{h,x}],\quad
+\lambda_-(2^{-20})=-23.416406751884\dots}
+\]
+with \(\sum_w\omega(\rho^{AF}_{j(w)})^{-1}DG_{j(w)}
+=\bar w\sum_xDG_x\) for ACTUAL unequal original counts, NO fake uniform Born probabilities. Hence the SAME **new volume-quantile J₂ macro query** inherits the PREVIOUS exact finite nonvacuum arbitrary-u Brinkmann 16+24+2 roots with time-varying CAR E(u) and ANY transverse discrete harmonic W_h, AT EVERY MESH, not just weak/approximate convergence. The TRUE scene effect is \(B=4b(1-b)\) (not withdrawn one-tick b), all failure/old archives retained.
+
+**General non-null source ON THE SAME programme:** at arbitrary nonzero curvature/matter on the bounded chart, the LINEAR t² coefficient is EXACTLY \(\frac1M\sum_x[(\widehat f/J)+\lambda\widehat q](T_{J/V}u_x)\) by the SAME inverse-PF source cancellation. Owner's genuine smooth-C² quantile/Julia compilation limit therefore gives \(\Gamma=V^{-1}\int(P_\star+\lambda Jq)\), with \(P_\star=\gamma_\star JR\), \(\gamma_\star=-\mathrm{sgn}\det(e)/2\) independently fixed on all36 coframe curvature coefficients. Its own Cartan/metric/scalar Euler are ALL TEN nonlinear Einstein–scalar rows plus TRUE \(\Gamma g/2\) volume pressure. At genuinely free full scale, its own radial Euler forces \(\Gamma=0\); fixed scale/collar retains the term. The two formerly different sources now belong to ONE source-matched volume programme on the same original spatial address and CAR carrier.
+
+**NEW mathematically controlled resource theorem for real original natural spatial boxes:** no equal Fib counts needed. Exact-cost renewal + raw k-prefix boxes yields
+\(\sup_x|\rho^{AF}_{n,x}-1|
+ \le a_n^{-1}[L^4p^{2(n-2k)+1}/\sqrt5+128L\delta_k+|a_n-a_\infty|]\),
+\(k=\lfloor n/4\rfloor,\delta_k=2p^{\lfloor k/4\rfloor}\), whenever \(\delta_k\le1/(2L)\).
+Therefore ANY \(n(L)\ge(16+\gamma)\log_\varphi L+C_\gamma\) has UNIFORMLY \(\rho^{AF}_{n,x}\to1\) and \(\rho^{-1}\le2\) eventually on ALL original native cells; genuine bounded inverse ratios suffice for the full weak t²/C² source on changing grids. This is a log-depth REAL native source schedule rather than the prior O(L⁴) exact-rank construction, not a claim of cheap whole-gate work/query signal/clock.
+
+**Direct full-source checks really EXECUTED in JS:** Original cost20/L4 enumerates10946 native words, all256 cells, unequal N=29..78 and \(\rho=[0.6782,1.8242]\); cost24/L8 has75025 words, all4096 cells, N=4..43. On L4 genuine nonconstant-volume perturbation \(J_\epsilon=1+\epsilon(2x_0-1)\), **nonzero** inverse quantile \(DT_\epsilon(.25)=.1875\), arbitrary nonzero metric/matter source test, ORIGINAL inverse-PF full double-tick normal source is \(-1.210438851307872\cdot10^{-6}\). Exact weighted sum equals this number to displayed precision; the actually evaluated ENTIRE return logdet centered difference yields \(-1.2104388620983245\cdot10^{-6}\), relative source error \(8.9145\cdot10^{-9}\). New checker was RUN through V8 and PASS; prior optional integer-rank script also RUN and PASS. The exact all40 arbitrary Brinkmann matrix source was independently tested on three nontrivial fixtures with max residual <1.1×10⁻17 from genuine six based Lorentz faces. No fresh Lean/CI promotion claimed.
+
+**Original physical frontier, still OPEN:** this is one **explicitly specified** new allowed-matrix/query realization of a full mathematically retained J₂, not compulsory foundational D0 selection of that operand, PREP/Julia/clock/volume decoder with its full physical cost; true old-v8 H+J+R/earlier histories/RIGHT/matter spin source; global physical boundary/scale and original distinct fixed-g/tau/full periodic all-ten raw h⁻² #216. The breakthrough is the **same original spatial-address finite exact-root ↔ general non-null Einstein–scalar first-source bridge**, not a hidden relabeling of physical laws.
+
+
 ## 19 October 2026 — NATIVE BALANCED GOLDEN SEAM: exact finite ROOTS for physical-volume mean J2
 
 
