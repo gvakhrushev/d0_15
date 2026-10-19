@@ -3113,11 +3113,17 @@ finite-cell Taylor facts only. The solder is constant over the cell; there
 is no neighbor-dependent smooth curvature, finite-periodic root, prescribed
 same-source comparison, or raw \(h^{-2}\) refinement estimate. The continuum
 Einstein source is zero on this flat probe, but the designated discrete #216
-branch has not been recomputed here. This calculation does not establish
-response decoupling on a curved background. The next decisive step is to
-place the same carrier on actually sampled nonconstant
-\(g(hx)\), with nonzero curvature, and use the designated #216 branch on
-those exact samples while imposing all joint rows.
+branch has not been recomputed in that cell-constant coefficient calculation.
+The first actual curved-profile comparison is now owned by
+[a4d_y232_designated_warp_same_source_firstslow_check.py](certificates/a4d_y232_designated_warp_same_source_firstslow_check.py).
+For f(y)=1+sin(2*pi*y)/(100*pi) at y=0, it includes the true #216 first
+smooth coefficient and imposes all 96 connection plus all 40 same-source
+metric rows, allowing all 96 local link corrections and both flat-center
+slopes. The exact matrix/augmented ranks are 97/98, with left-null pairing
+4105021481/2353113600. Thus the pinned finite #232 leading carrier has no
+regular first-slow same-source lift on this curved profile. This does not
+exclude nonregular branches, an order-one retuning of the leading carrier,
+or exact finite-mesh roots, so neither #310 nor #334 is closed.
 
 ## Subsequence response law for small link-log deviations
 

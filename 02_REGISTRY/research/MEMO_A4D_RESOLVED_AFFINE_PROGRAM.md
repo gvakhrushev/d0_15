@@ -1618,6 +1618,18 @@ metric coefficients zero. This is another local Taylor compatibility result,
 not a curved-background source or an exact root. The full task status and
 scope are recorded in the [joint-response memo](MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md).
 
+The first same-source comparison on an actually curved sampled profile is
+now certified at first-slow order. For
+\(f(y)=1+\sin(2\pi y)/(100\pi)\) at \(y=0\), the true #216 first smooth
+coefficient is used; all 96 connection and all 40 metric equations are
+imposed, with 96 local link corrections and both flat-center slopes free.
+The exact ranks are 97/98, so the pinned finite #232 carrier has no regular
+first-slow lift with the designated source on this profile. This is a scoped
+formal obstruction, not a nonlinear no-go: nonregular continuations,
+order-one retuning of the leading carrier, and exact finite-mesh roots remain
+open. Replay it with
+[a4d_y232_designated_warp_same_source_firstslow_check.py](certificates/a4d_y232_designated_warp_same_source_firstslow_check.py).
+
 For the execution rhythm, checks and handoff, use [00_WORK/README.md](../../00_WORK/README.md).
 The historical task lists below are **not launch instructions**.
 

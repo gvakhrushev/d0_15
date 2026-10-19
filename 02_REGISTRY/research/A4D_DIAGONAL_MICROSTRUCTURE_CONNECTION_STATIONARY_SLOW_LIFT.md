@@ -211,11 +211,40 @@ equations, higher amplitude powers, actual neighbor-dependent solder values,
 an exact periodic root, and the normalized same-source response comparison.
 Along with the joint \(h^2z^2\) check above, it removes these low-order local
 compatibility obstructions but neither proves an exact continuation nor
-closes the #334 target. The next decisive test must put the same #232 carrier
-on an actually sampled nonconstant metric with nonzero curvature and compare
-its full joint/source equations with the designated #216 smooth branch. The
-continuum Einstein source vanishes on the cell-constant probe, but the full
-discrete #216 branch is not recomputed in this certificate.
+closes the #334 target. The first actual curved-profile comparison with the
+designated #216 branch is now recorded below; it obstructs the regular
+first-slow lift of the pinned finite #232 carrier.
+
+### Curved designated #216 same-source first-slow test
+
+The exact check
+[a4d_y232_designated_warp_same_source_firstslow_check.py](certificates/a4d_y232_designated_warp_same_source_firstslow_check.py)
+uses the fixed smooth warp
+
+f(y)=1+sin(2*pi*y)/(100*pi), S(y)=diag(1,1,f(y),f(y)).
+
+At y=0, f=1, f'=1/50, f''=0, and the scalar curvature is
+1/1250 != 0. The designated #216 first smooth connection coefficient is
+the pinned A1=-f'*J12 on role 2 and A1=-f'*J13 on role 3. Multiply that
+same comparator by the actual finite #232 wave W=(U,I,U^-1,I),
+U=I+4Y/7+2Y^2/7, Y=J12-J13+J23.
+
+At order h, require all 96 connection rows to vanish and all 40 metric
+rows to equal the #216 smooth source. The latter's coefficient at order
+h is zero. The unknowns include every one of the 96 phase/role/Lorentz
+link corrections and both slow derivatives of the exact flat center fiber
+(the Cayley amplitude and boost-dual center). The complete 136 x 98
+matrix has exact rank 97, while its source-augmented matrix has rank 98.
+An exact left-null witness has support 97 and pairs with the source by
+4105021481/2353113600 != 0. Therefore this specified #232 leading state
+has no regular first-slow same-source lift on this curved profile.
+
+This is a local formal obstruction, not a theorem excluding every exact
+branch. It assumes the leading fast state is the pinned finite #232 wave and
+admits a regular expansion through order h; nonregular scalings, an
+order-one change of the leading state, and exact finite-mesh branches remain
+open. The result closes the proposed regular first-slow route before any
+higher-order continuation is attempted.
 
 ## 6. Validation
 
@@ -223,4 +252,5 @@ Review baseline: `880c8284454b072219f470982963d8dc041957c9`.
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py
+python3 02_REGISTRY/research/certificates/a4d_y232_designated_warp_same_source_firstslow_check.py
 ```
