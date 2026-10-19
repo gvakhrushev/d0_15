@@ -61,6 +61,24 @@ The Markov time-reversal relative entropy per transition is not postulated. Diff
 
 Hence \(\sigma(\epsilon)=2\ell^2\mathcal V_{CP}\epsilon^2+O(\epsilon^4)\) and full directed-history Fisher information rate at zero is \(\ell^2\mathcal V_{CP}\). The *conditional test substitution* \(\epsilon=\Delta_\alpha=-0.000415216862356\ldots\) produces \(\sigma=7.9043235222\times10^{-8}\) per transition; it is NOT selected physics or a neutrino mass.
 
+### 2.1. Crucial native boundary: ORIGINAL one-sided initial Perron law does see CP sign
+
+The even stationary \(\pi_\epsilon\) of (3) is **NOT** the native one-sided preparation \(\mu_{0,\epsilon}(u)=r_\epsilon(u)/\sum_vr_\epsilon(v)\). A complete ORIGINAL Perron path starts from the latter; it converges to \(\pi_\epsilon\) only with bulk mixing. Under the same CP Cost family, its actual initial three **zone-total** masses at epsilon=0 are
+
+\[
+\mu_{0,0}=(0.29185356535552,\ 0.33498406985153,\ 0.37316236479295).
+\]
+
+The exact first-order source follows from the SAME Poisson potential \(\xi\) in (6):
+
+\[
+\boxed{\partial_\epsilon\mu_{0,\epsilon}(Z_i)|_0
+=-\ln\varphi\cdot\mu_{0,0}(Z_i)
+\bigl(\xi_i-\mathbb E_{\mu_{0,0}}\xi\bigr).}\tag{3a}
+\]
+
+The true values are \((+0.00536188904515,-0.01310683988815,+0.00774495084300)\), summing to zero, verified against the actual right Perron eigenvector derivative on the original 33-site graph to better than \(3\times10^{-15}\). In contrast \(\partial_\epsilon\pi_\epsilon|_0=0\) **exactly**. Thus an original finite one-sided record can detect sign through its starting endpoint distribution; only the **stationary bulk one-point distribution** is sign-blind. Full directed path ratios remain odd as in (5). Do not silently replace \(\mu_0\) by \(\pi\), or claim that *all* vertex probabilities erase the seam.
+
 ## 3. Exactly one invariant CP current in the actual history dark653
 
 Let \(\bar Z=1287^{-1}\sum_{a\in9,b\in11,c\in13}[a,b,c]\). On the ORIGINAL 359 oriented unoriented-edge cochain carrier, exact rational enumeration gives
