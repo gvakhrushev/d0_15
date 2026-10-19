@@ -4450,7 +4450,40 @@ same-history Cost−Info и face-source binding §§7.47–7.54;
 Book/Controller. Full finite physical D0→ОТО, h→0 recovery,
 upstream H+J+R и raw #216 остаются OPEN; GR_closed=false.
 
-### 7.56. Цена Cost−Info оставляет endpoint-кобордарию на открытой истории
+### 7.56. Кубический crossed-null Ricci устраняется точной пятиузловой Poisson-поправкой
+
+После точного смешанного \([ab]\) результата §7.55 проверен следующий
+непустой порядок для ортогональных поперечных градиентов
+\(A\cdot B=0\).
+До кубических поправок полный continuum Ricci имеет только два источника:
+
+\[
+R_{uu}^{[a^2b]}=\frac{a^2b|A|^2(B\cdot x)}8,\qquad
+R_{vv}^{[ab^2]}=\frac{ab^2|B|^2(A\cdot x)}8.
+\]
+
+Они не подогнаны по действию: явные source-forced поправки профиля
+
+\[
+H=a(A\cdot x)-\frac{a^2b|A|^2}{32}(B\cdot x)|x|^2,\qquad
+J=b(B\cdot x)-\frac{ab^2|B|^2}{32}(A\cdot x)|x|^2
+\]
+
+зануляют все компоненты Ricci до полной степени три. Та же поправка имеет
+точный решёточный источник при любом (h): исходный пятиузловой лапласиан
+удовлетворяет
+\(\Delta_h[(B\cdot x)|x|^2]=8(B\cdot x)\) и симметричному равенству
+для (A). Checker проверяет не только четыре ориентации, но и общий
+символьный ортогональный класс (A=(r,q), B=s(-q,r)).
+
+Это закрывает continuum Ricci до кубического порядка и конечный скалярный
+Poisson-шаг. Это **не** решение исходных конечных 24 Cartan-link и 16
+coframe Euler на кубическом порядке: их межузловая/периодическая совместимость
+остаётся открытой. Не следуют также full Book Cost−Info, native admission,
+global recovery или физическая D0→ОТО. Точный проверяющий артефакт:
+[cubic Ricci/Poisson checker](sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py).
+
+### 7.57. Цена Cost−Info оставляет endpoint-кобордарию на открытой истории
 
 Новый [точный boundary owner](A4D_NATIVE_COST_INFO_BOUNDARY.md) разбирает
 буквальную формулу Book 03 на фактическом пути сцены `K(9,11,13)`. Если

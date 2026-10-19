@@ -68,6 +68,11 @@ def require(condition,label):
     if not condition:
         raise ArithmeticError(label)
 
+def same_matrix(actual,expected):
+    return actual.shape==expected.shape and all(
+        s.simplify(actual[i,j]-expected[i,j])==0
+        for i in range(actual.rows) for j in range(actual.cols))
+
 if __name__=="__main__":
     tests=(((1,0),(0,1)),((0,1),(1,0)),
            ((1,1),(1,-1)),((1,2),(-2,1)))
@@ -80,9 +85,9 @@ if __name__=="__main__":
         target=s.zeros(4)
         target[0,0]=a*a*b*normA*JB/8
         target[1,1]=a*b*b*normB*HA/8
-        require(ricci_cubic(A,B)==target,
+        require(same_matrix(ricci_cubic(A,B),target),
                 "complete uncorrected cubic Ricci tensor")
-        require(ricci_cubic(A,B,repair=True)==s.zeros(4),
+        require(same_matrix(ricci_cubic(A,B,repair=True),s.zeros(4)),
                 "entire Lorentz Ricci through degree 3")
         radius=x*x+y*y
         require(discrete_lap(JB*radius)==8*JB,
@@ -90,5 +95,27 @@ if __name__=="__main__":
         require(discrete_lap(HA*radius)==8*HA,
                 "finite Laplacian must exactly recover second source")
         print("PASS full Ricci cubic cancellation / native five-point Poisson",A,B)
+    r,q,scale=s.symbols("r q scale",real=True)
+    A=(r,q)
+    B=(-scale*q,scale*r)
+    HA=A[0]*x+A[1]*y
+    JB=B[0]*x+B[1]*y
+    normA=A[0]**2+A[1]**2
+    normB=B[0]**2+B[1]**2
+    target=s.zeros(4)
+    target[0,0]=a*a*b*normA*JB/8
+    target[1,1]=a*b*b*normB*HA/8
+    require(s.simplify(A[0]*B[0]+A[1]*B[1])==0,
+            "symbolic gradients must be orthogonal")
+    require(same_matrix(ricci_cubic(A,B),target),
+            "arbitrary orthogonal cubic source")
+    require(same_matrix(ricci_cubic(A,B,repair=True),s.zeros(4)),
+            "arbitrary orthogonal Ricci cancellation through degree 3")
+    radius=x*x+y*y
+    require(s.expand(discrete_lap(JB*radius)-8*JB)==0,
+            "symbolic finite Laplacian must exactly recover first source")
+    require(s.expand(discrete_lap(HA*radius)-8*HA)==0,
+            "symbolic finite Laplacian must exactly recover second source")
+    print("PASS symbolic arbitrary orthogonal gradients A=(r,q), B=scale*(-q,r)")
     print("SCOPE: continuum Einstein degree<=3 + finite scalar Poisson only;")
     print("finite third-order 24 Cartan/16 solder and full native Cost-Info are OPEN.")
