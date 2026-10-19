@@ -276,6 +276,13 @@ class AssemblyTests(unittest.TestCase):
         with self.assertRaisesRegex(gr.AssemblyError, "positive goal"):
             self.model()
 
+    def test_repository_global_closure_is_classification_not_positive_gr(self):
+        root = Path(__file__).resolve().parents[1]
+        model = gr.load(root)
+        d0_goal = next(g for g in model["contract"]["goals"] if g["id"] == "D0-CLOSURE")
+        self.assertEqual(d0_goal["outcome"], "classification")
+        self.assertEqual(model["obligations"]["global_classification"]["outcome"], "classification")
+
     def test_reviewed_no_go_stops_only_its_scoped_attempt(self):
         self.add_result(outcome="negative")
         attempt = {"id": "dead-a", "result": "r", "interface": "native", "work_key": "question-a",

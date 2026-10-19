@@ -25,7 +25,7 @@
         "global_classification"
       ],
       "statement": "Existing global CORE/NO-GO/BRIDGE/PASSPORT/EMPIRICAL classification, not positive GR.",
-      "outcome": "positive"
+      "outcome": "classification"
     }
   ],
   "interfaces": {
@@ -441,7 +441,7 @@
       "id": "global_classification",
       "statement": "Classify every load-bearing internal ambiguity under the existing global closure contract.",
       "interface": "native-programme-v1",
-      "outcome": "positive",
+      "outcome": "classification",
       "group": "separate",
       "methods": [
         {
