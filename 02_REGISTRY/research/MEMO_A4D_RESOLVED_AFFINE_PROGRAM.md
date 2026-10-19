@@ -59,10 +59,20 @@ refinement to the original raw `#216` norm. This is now the sole route
 consumer; another independent graviton-vertex search would repeat a closed
 conditional result.
 
+### One-carrier acceleration: ORIGINAL Golden Role address × original scene × CAR16
+
+The [original scene/address+native-source consolidation](A4D_ORIGINAL_SCENE_FACE_ADDRESS_AND_ONE_SOURCE_CLOSURE_MAP_2026_10_19.md) §6 now removes a needless detour: Golden LEFT already supplies the genuine 4D nested microaddress X_w and site x(w). The 33-state K(9,11,13) scene is an INTERNAL return/cost register over those already-owned Golden-addressed cells, not the four-dimensional Role lattice. Its fixed 327 matrix cycle coordinates need not parameterize 3L^4+1 site-link cycles all by themselves. Physical validity instead requires Golden-conditioned site/face operation and the SAME entire selected historical source.
+
+The two new exact scene-based closed-walk address checkers (four-step 3072 distinct labels at L=4; 21-step 5040 order-distinct but scalar-price-identical words) are ALTERNATIVE mathematical address and hostile cost/source controls. They are NOT requirements for the current fastest native path. Indeed the 21-step selected mass is only 7.50e-27 in the unconditioned Perron run, whereas the existing balanced original Golden archive retains a genuinely positive total READY-pair mass 0.3416407865... on a suitable refining diagonal. The shortcut is to use the latter, not another invented scene-to-spacetime isomorphism.
+
+The existing exact J2 coframe equivalence already closes the entire nonperturbative geometric 40-row sector, and at scene W_s=I its true 528/22448 full-scene Euler is stationary with positive cut-mixing Hessian and zero mixed geometric-scene Hessian at the vacuum. This remains only the OWNED J2 subprogramme, not proof of the full compulsory Book H+J+R/oldRIGHT/ref128/CAR/clock/work price.
+
+**ONE execution test now:** on ONE already balanced GOLDEN LEFT Role face, obtain the actual immutable original fullStep/Book history and its complete two-branch positive p-Golden CAR reading, including conditional indexed ordered holonomy and every failed record; calculate the actual Cost-Info+H/J/R preparation/clock/work first and second sources on all independent link/coframe/matter tangents. Verify the same-action off-shell/effective-source relationship to the EXISTING AF Palatini+CAR equations without fitting a matter/current coefficient, and check the true native internal stationary rows. If no compulsory programme/field-to-price source exists, record exactly that typed missing bridge. Then use the existing finite curved roots and refinement consumers. Original RAW-216 remains a SEPARATE goal and cannot be silently substituted for this positive GR route. GR_closed=false.
+
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.91](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.93](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [two-null regular identity-word reverse synthesis](A4D_TWO_NULL_REGULAR_IDENTITY_WORD_REVERSE_GR_SYNTHESIS_2026_10_19.md),
