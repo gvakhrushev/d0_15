@@ -125,3 +125,59 @@ A diagonal normalized Born logpartition is proven unsuitable; a REAL-only Perron
 **GR_closed=false**. This is a new precise variational route and scoped no-go/positive tests, not a closed physical Einstein theorem.
 
 Companion exact finite checker: [original archive tangent and CAR16 phase](sources/d0_two_history_phase_2026-10-19/check_original_archive_and_car_phase.mjs).
+
+
+## 5. EXACT cross-owner weld: the SAME original J23 is finite Weyl curvature, ordered memory and a coherent detector phase
+
+The original [full 16+24 unrestricted mixed Cartan checker](A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md) calculates the SIX genuine plaquettes of the unchanged Lorentz-star action, *after* the forced Cartan correction \(h/8\), on two independent affine null waves \(H=a(A_xx+A_yy)\), \(J=b(B_xx+B_yy)\). Write their original transverse wedge \(w=A_xB_y-A_yB_x\) and dot \(d=A_xB_x+A_yB_y\). At the EXACT \([ab]\) level the original finite plaquette source is
+
+\[
+\boxed{[ab]P_{uv}=\frac{h^2}{4}(d\,\mathsf B+w J_{23}),\quad
+[ab]P_{xy}=-\frac{h^2w}{4}\mathsf B.}\tag{9}
+\]
+
+This is the *actual original six-face Holonomy*, not a normal-chart continuum substitute or a scalar edge-price analogy. For the representative orthogonal \(A=(1,0), B=(0,1)\), \(d=0,w=1\), **all 16+24 independent original Euler rows vanish at [ab]** while the true finite mixed Weyl curvature is nonzero. Thus nonzero vacuum tidal field can exist with vanishing Einstein source on this precisely delimited perturbative order.
+
+The *separately owned ORIGINAL two-null ordered primitive generators* are
+\(N_2=E_{-,2}+E_{2,+}\), \(\bar N_3=E_{+,3}+E_{3,-}\). The exact 4x4 matrix identity is
+
+\[
+\boxed{[N_2,\bar N_3]=E_{23}-E_{32}=J_{23}.}\tag{10}
+\]
+
+The four-gate ORDERED commutator word
+\[
+W(a,b)=e^{aN_2}e^{b\bar N_3}e^{-aN_2}e^{-b\bar N_3}
+\]
+has ZERO signed primitive generator totals but **does not have identity holonomy**:
+\[
+[ab]W(a,b)=J_{23}.
+\]
+This is the precise original order-memory mechanism that the counting-only archive loses, now sharing the EXACT generator of the corrected finite geometric plaquette (9). No generic identification of all Book histories is made.
+
+Use the SAME already-owned original grade-one CAR16 probe
+\(\psi_{\rm CAR}=(e_0+(e_2+i e_3)/\sqrt2)/\sqrt2\), which has
+\(\langle\psi_{\rm CAR},J_{23}\psi_{\rm CAR}\rangle=i/2\).
+Then the **first mixed coefficient of the actual original finite plaquette as a CAR operator probe** is
+
+\[
+\boxed{
+[ab]\langle\psi_{\rm CAR},P_{uv}\psi_{\rm CAR}\rangle
+=\frac{i h^2 w}{8}\quad(d=0).}\tag{11}
+\]
+For the unit orthogonal wedge w=1 this is EXACTLY \(i h^2/8\), without a fitted angle, Golden coefficient, matter field or arbitrary stress. In the separate original four-control ordered word
+\([ab]\langle\psi_{\rm CAR},W(a,b)\psi_{\rm CAR}\rangle=i/2\).
+
+**Physical typing caveat:** A general SO(1,3) boost is NOT unitary in the standard positive grade-one Hilbert norm. The ordered word \(W(a,b)\) is only guaranteed a proper Lorentz transformation, not a complete CAR Kraus/unity instrument; using the expectation as a physical interference signal requires the already-owned normalized Julia/CAR detector/flags and their actual Cost/Info/work. On the declared [ab] coefficient its rotation \(J_{23}\) is anti-Hermitian for the compact spatial probe, and the imaginary curvature coefficient is exact. A normalized CAR expectation or a genuinely unitary Julia comparison has the same *first mixed phase* only when the physical normalization source at that order is zero (its real part is zero here), which must be checked in the selected detector. Do not promote the raw nonunitary full-word matrix to a physical two-arm probability.
+
+**Decisive geometric distinction:** The phase (11) is a detector of the *Weyl/ordered holonomy* in a mixed **vacuum Einstein** solution, not a value or first variation of the full physically selected gravitational ACTION. It therefore supplies a testable piece of gravitational observability and retained order-memory, but cannot alone select the vacuum equation \(G=0\). The original 40 independent Euler equations and complete native Cost−Info variation retain their separate premises.
+
+This gives the strongest concrete **same-generator reverse bridge so far**:
+\[
+\boxed{\text{original ordered history}\overset{[N_2,\bar N_3]}{\longrightarrow}
+J_{23}\overset{\text{six-face Palatini}}{\longrightarrow}
+\text{finite vacuum Weyl curvature}
+\overset{\rm CAR16}{\longrightarrow}
+\text{phase readout }i h^2ab/8.}
+\]
+The key remaining science is not another rank census but one actual fully costed two-line native execution that carries the original J23/ordered history and Q-archive with correct full source; only then can its *relative-phase variation* be compared with the accepted Einstein operator.
