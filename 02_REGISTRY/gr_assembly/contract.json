@@ -235,6 +235,15 @@
       "normalization": "Exact rational coefficients in Q[a,b]/(a^3,b^3); the selected solution uses two named [a^2*b] coframe modes and 166 nonzero quartic correction coefficients.",
       "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
       "scope": "A finite mixed-amplitude jet through [a^2*b^2] on one perpendicular-slope chart. Pure [a^3] and [b^3], higher orders, arbitrary slopes, global roots and physical D0 selection remain open."
+    },
+    "double-null-asymmetric-order4-v1": {
+      "carrier": "The selected perpendicular crossed-null chart H=a*x, J=b*y on the original h=1 lattice, with the registered mixed-quartic cubic representative.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows are expanded with amplitude cap three.",
+      "source": "The pure [a^3] and [b^3] sources vanish identically. For [a^3*b] and [a*b^3], each 840-variable correction system has exact rank 580 and a non-pivot augmented RHS; four nonzero correction coefficients are selected per order.",
+      "normalization": "Exact rational coefficients. The simultaneous replay checks 13 named amplitude coefficients, including [a^2*b^2], [a^3*b] and [a*b^3].",
+      "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
+      "scope": "A selected finite crossed-null branch only. Pure fourth powers and the fifth- and sixth-order mixed coefficients are not checked; arbitrary slopes, global roots, sourced matter and physical D0 selection remain open."
     }
   },
   "obligations": [

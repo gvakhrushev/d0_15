@@ -731,6 +731,64 @@
         }
       ],
       "reported_state": "The full exact cubic solution families were varied jointly with quartic corrections. An RREF solution with two specified cubic coframe modes and 166 quartic coefficients passes a simultaneous symbolic replay of all 40 original Euler rows through the mixed [a^2*b^2] coefficient. This remains scoped finite evidence and does not discharge native physical obligations."
+    },
+    {
+      "id": "double-null-finite-asymmetric-quartic-euler-jet",
+      "owner": "independent exact finite replay in #379",
+      "statement": "On the selected H=a*x, J=b*y, h=1 crossed-null solution branch of the original six-plaquette action, the pure [a^3] and [b^3] coefficients require no correction, and degree-at-most-five site-dependent corrections at [a^3*b] and [a*b^3] can be chosen so all 40 original Euler rows vanish identically in x,y at 13 specified retained amplitude coefficients, including [a^2*b^2].",
+      "interface": "double-null-asymmetric-order4-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart A=(1,0), B=(0,1), with H=a*x and J=b*y at h=1.",
+        "prior_branch": "Consumes the exact mixed-quartic finite representative with two specified [a^2*b] coframe free modes and degree-at-most-five [a^2*b^2] corrections.",
+        "amplitude_cap": "The Jet cap is raised to three. The checked set is the six lower coefficients, [a^2*b], [a*b^2], [a^2*b^2], [a^3], [b^3], [a^3*b], and [a*b^3].",
+        "pure_cubic": "At [a^3] and [b^3], all 40 source rows are identically zero and zero corrections are selected.",
+        "asymmetric_correction_chart": "At [a^3*b] and [a*b^3], all 24 Lorentz-link and 16 coframe corrections have independent site-dependent spatial polynomials of total degree at most five, including shifted plaquette sites.",
+        "linear_systems": "Each asymmetric order gives 840 exact rational equations and 840 correction variables, with coefficient rank 580 and the augmented RHS non-pivot; the RREF solution has four nonzero field coefficients.",
+        "combined_replay": "All 40 original Euler rows vanish identically in x,y at the 13 checked amplitude coefficients after simultaneous substitution of the prior mixed-quartic branch and both new corrections.",
+        "scope_fence": "This is not a complete fourth-order jet: [a^4], [b^4], [a^3*b^2], [a^2*b^3], and [a^3*b^3] are untested. No arbitrary-slope family, refinement limit, sourced matter, global root or native physical selector follows."
+      },
+      "evidence": [
+        {
+          "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/check_asymmetric_order4_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/check_asymmetric_order4_jet.py",
+          "sha256": "c727f0f8dff5fa02c44e1150955f9ff164ed130ad3eb098fe3ffdb9a748fec41"
+        },
+        {
+          "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/output.txt",
+          "sha256": "afece2027d4c8709edc3c1fc65fb3342b1114b201990bbb05d86f917a314f295"
+        },
+        {
+          "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
+          "sha256": "4776e03dbcb502622fd03644f9628e2eebe47b2417d6d25c8430c7a7024cac00"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "sha256": "36e6312770341bddb44c349c2025e7a3b385bcb7fa6a31f0f68cc778d854e574"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/output.txt",
+          "sha256": "d8abc3907ac8a50ee33ff74c09aaccfa84661b3d325781ce18913c11fa39ef4b"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        }
+      ],
+      "reported_state": "The same selected finite branch passes a combined symbolic replay at 13 specified coefficients: pure cubic sources [a^3] and [b^3] vanish, and both asymmetric quartic coefficients [a^3*b] and [a*b^3] admit exact degree-at-most-five corrections. This extends the mixed [a^2*b^2] jet but remains scoped finite evidence and does not discharge native physical obligations."
     }
   ],
   "applications": [
