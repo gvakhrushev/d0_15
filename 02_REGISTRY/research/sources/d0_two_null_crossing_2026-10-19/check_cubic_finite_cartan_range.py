@@ -530,7 +530,7 @@ def merge_gamma_fields(*fields):
     return get
 
 
-def solve_full_cubic_40(A, B):
+def solve_full_cubic_40(A, B, expose_family=False):
     """Solve the coupled flat-Hessian correction to all 40 cubic Euler rows.
 
     The finite source is first evaluated on the source-forced H/J profile and
@@ -579,10 +579,13 @@ def solve_full_cubic_40(A, B):
             operator.cols == n_link_coeffs + n_coframe_coeffs,
             "coupled cubic polynomial operator has wrong dimensions")
     extra = {}
+    parametric_family = {}
     for amplitude in amplitudes:
         rhs = -response_vector(base_link_rows, base_coframe_rows, amplitude,
                                link_output_monos, coframe_output_monos)
         solution, parameters = operator.gauss_jordan_solve(rhs)
+        if expose_family:
+            parametric_family[amplitude] = (solution, tuple(parameters))
         if parameters.rows:
             solution = solution.subs({parameter: 0 for parameter in parameters})
         link_solution = solution[:n_link_coeffs, :]
@@ -606,6 +609,9 @@ def solve_full_cubic_40(A, B):
                 "coupled cubic solve leaves a finite link Euler source")
         require(all(exact_zero(row.coeff(amplitude)) for row in final_coframe),
                 "coupled cubic solve leaves a finite coframe Euler source")
+    if expose_family:
+        return (operator, extra, final_cache, final_link, final_coframe,
+                parametric_family, base_link_solutions)
     return operator, extra, final_cache, final_link, final_coframe
 
 

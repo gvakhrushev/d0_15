@@ -1,22 +1,57 @@
 {
   "schema": "d0-exact-research-result/v1",
-  "claim": "mixed [a^2*b^2] coefficient of the original finite 24-link plus 16-coframe Cartan equations",
-  "status": "PASS_SCOPED_LOCAL_PERTURBATIVE_COEFFICIENT",
+  "claim": "exact range test for the mixed [a^2*b^2] coefficient in the original finite 24-link plus 16-coframe Cartan system",
+  "status": "EXACT_SCOPED_RANGE_OBSTRUCTION",
   "source_base_commit": "83537e03543ca9b08a7408fcf786e2f3c98a3d3c",
-  "latest_pr_head_seen_before_rebase": "46147621adcbfd64fd639b3ca7f8d6730565b4de",
+  "latest_pr_head_seen_before_rebase": "7887418746b0328a994712ad561cede8ffe0032d",
   "computation": {
-    "amplitude": "a^2*b^2",
-    "A": [1, 0],
-    "B": [0, 1],
-    "geometry_scale": "sigma=-(x^2+y^2)^2/128",
-    "released_cubic_coframe_modes": 192,
-    "quartic_link_profile_degree": 5,
-    "finite_response_rows": 480,
-    "finite_response_columns": 696,
-    "link_equation_spatial_support_degree": 3,
-    "coframe_equation_spatial_support_degree": 4,
-    "proper_lorentz_verified_through_amplitude_degree": 4,
-    "exact_back_substitution": true
+    "status": "EXACT_RANGE_OBSTRUCTION_IN_DECLARED_ANSATZ",
+    "scope": "local unwrapped polynomial perturbative jet only",
+    "quartic_amplitudes_checked": [],
+    "quartic_amplitudes_attempted": [
+      [
+        2,
+        2
+      ]
+    ],
+    "failure_stage": "mixed_quartic_sector",
+    "failure_amplitude": [
+      2,
+      2
+    ],
+    "exact_solver_message": "Linear system has no solution",
+    "mixed_sector_exact_inconsistent": true,
+    "A": [
+      "1",
+      "0"
+    ],
+    "B": [
+      "0",
+      "1"
+    ],
+    "geometry_sigma": "-(x^2+y^2)^2/128",
+    "independent_quartic_coframe_modes": false,
+    "link_source_rows": 24,
+    "coframe_source_rows": 16,
+    "joint_cubic_affine_kernel_parameters_released": 172,
+    "quartic_link_unknowns": 504,
+    "joint_mixed_response_unknowns": 676,
+    "all_joint_cubic_family_members_satisfy_affected_lower_40_rows": true,
+    "max_link_source_spatial_degree": 3,
+    "max_coframe_source_spatial_degree": 2,
+    "operator_shape": [
+      480,
+      676
+    ],
+    "other_quartic_link_response_shape": null,
+    "link_input_spatial_degree": 5,
+    "link_output_spatial_degree": 3,
+    "coframe_output_spatial_degree": 4,
+    "quartic_sectors_with_exact_solutions": 0,
+    "periodic_carrier_root": false,
+    "all_order_solution": false,
+    "native_price_selection": false,
+    "physical_gr_closure": false
   },
   "replay": {
     "command": "python3 02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py",
@@ -26,18 +61,18 @@
     },
     "checker": {
       "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py",
-      "sha256": "2660a536bca995a89a17f804deacaddeed07a8b26679d99676c91e6716adf725"
+      "sha256": "266a84853a96a666294ef0e685703c1284f755d1980c32449080e9d10c14126b"
     },
     "output": {
       "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_finite_cartan_range_output.txt",
-      "sha256": "36ce26b423a20c9bee9ef4aea71fa1bdd1d7465db1841883002cd32edce2d65e"
+      "sha256": "3ac178ae7494e1ddfd278d1e94a7790300a1e5c3a76645a8b1a1bf131c8c97c5"
     }
   },
   "prerequisites": [
     {
       "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py",
-      "sha256": "373ee2bf93e46b5513565b2c908cc5f5077b3e0586d727a1c7feda39211c60b6",
-      "result": "PASS: 400 finite Euler coefficient identities through amplitude degree 3 for the symbolic orthogonal affine family"
+      "sha256": "d900511488b8320c69bf3d0950328caffb270ed20f1dcac44e01e3d72077b9b6",
+      "result": "PASS: 400 finite Euler coefficient identities through amplitude degree 3; this revision additionally verifies the affected cubic rows for every member of the 172-dimensional joint affine family"
     },
     {
       "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py",
@@ -51,9 +86,9 @@
     }
   ],
   "limits": [
-    "Only the [a^2*b^2] coefficient was solved; other degree-4 amplitude sectors were not checked.",
-    "The selected cubic link witness was held fixed; its cubic link-kernel modes were not released.",
-    "The profiles are polynomial on the unwrapped transverse lattice and are not periodic-carrier solutions.",
+    "The obstruction is only for A=(1,0), B=(0,1), the fixed orbit-area mode sigma=-(x^2+y^2)^2/128, degree-five quartic link support, and no independent quartic coframe modes.",
+    "All 172 parameters in the joint cubic link/coframe affine kernel are released; the exact 480x676 rational mixed system reports no solution.",
+    "Other quartic amplitude sectors, larger or periodic support, alternative quartic coframe profiles, and nonpolynomial corrections are not excluded.",
     "No convergence, all-order solution, uniform refinement, native complete-price selection, physical matter source, or GR closure follows."
   ],
   "closure": {

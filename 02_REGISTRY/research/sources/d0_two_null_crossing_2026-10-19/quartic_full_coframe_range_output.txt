@@ -1,0 +1,37 @@
+{
+  "schema": "d0-exact-research-result/v1",
+  "status": "PASS_MIXED_QUARTIC_FULL_COFRAME_40_EULER_JET",
+  "scope": "local unwrapped polynomial perturbative jet only",
+  "amplitude": "a^2*b^2",
+  "A": [
+    1,
+    0
+  ],
+  "B": [
+    0,
+    1
+  ],
+  "geometry_area_scale": "sigma=-(x^2+y^2)^2/128",
+  "joint_cubic_affine_kernel_parameters_released": 172,
+  "quartic_link_unknowns": 504,
+  "independent_quartic_coframe_unknowns": 240,
+  "quartic_coframe_input_spatial_degree": 4,
+  "link_input_spatial_degree": 5,
+  "link_output_spatial_degree": 4,
+  "coframe_output_spatial_degree": 4,
+  "response_shape": [
+    600,
+    916
+  ],
+  "response_is_exact_rational_affine_map": true,
+  "exact_solver_message": null,
+  "periodic_carrier_root": false,
+  "all_order_solution": false,
+  "native_price_selection": false,
+  "physical_gr_closure": false,
+  "GR_closed": false
+}
+PASS exact substitution into all 40 mixed-quartic Euler rows
+PASS proper-Lorentz links through total amplitude degree four
+PASS all 172 joint cubic affine-kernel parameters were released
+PASS all 240 quartic coframe polynomial coefficients were released

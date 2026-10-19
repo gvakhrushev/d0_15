@@ -4563,16 +4563,20 @@ Lorentz-ограничение до того же порядка. Исходны
 Это закрывает конечный **локальный cubic perturbative jet**, а не периодическое
 решение на `L^4`-торе: профиль не периодичен, сходимость amplitude-ряда и
 uniform refinement не установлены. Continuum Ricci family остаётся нулевой
-до полной степени4. Отдельный [finite mixed-quartic checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py)
-и его [pinned result receipt](sources/d0_two_null_crossing_2026-10-19/quartic_finite_cartan_range_result.json)
-теперь решает `[a²b²]` всех исходных 24+16 строк для `A=(1,0), B=(0,1)`:
-освобождены все 192 кубические coframe-моды, а quartic link-профили взяты
-до пространственной степени5. Полная карта имеет размер `480 × 696`;
-точная подстановка и proper-Lorentz проверка проходят. Это один коэффициент
-на выбранной кубической link-ветви; остальные quartic sectors, cubic
-link-kernels и periodic compatibility остаются открыты. Полный same-history
-Cost−Info, native admission/preparation/clock и физическое исполнение
-остаются отдельными воротами. `GR_closed=false`.
+до полной степени4. Restricted [range-контроль mixed quartic](sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py)
+и его [квитанция](sources/d0_two_null_crossing_2026-10-19/quartic_finite_cartan_range_result.json)
+показывают, что фиксация quartic coframe только канонической area-модой
+слишком жёсткая: точная система `480 × 676` несовместна даже при освобождённом
+172-мерном совместном кубическом ядре. [Продолжение с полным coframe](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_coframe_range.py)
+и его [квитанция](sources/d0_two_null_crossing_2026-10-19/quartic_full_coframe_range_result.json)
+освобождают все 240 quartic coframe-коэффициентов (16 компонент, степень≤4)
+и 504 proper-Lorentz link-коэффициента степени≤5. Получается рациональная
+система `600 × 916` с точным решением `[a²b²]` при `A=(1,0), B=(0,1)`;
+все 40 Euler-строк и proper-Lorentz links проходят. Это только один
+неразвёрнутый в периодическую геометрию коэффициент. Остальные quartic-секторы,
+periodic recovery, uniform refinement, полный same-history Cost−Info, native
+admission/preparation/clock и физическое исполнение остаются открыты.
+`GR_closed=false`.
 
 
 ### 7.59. Original Book03 boundary-Info is an EXACT canonical quotient of all nonlinear closed Lorentz curvature

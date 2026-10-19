@@ -1,7 +1,20 @@
 {
-  "status": "PASS_QUARTIC_FINITE_40_JET",
+  "status": "EXACT_RANGE_OBSTRUCTION_IN_DECLARED_ANSATZ",
   "scope": "local unwrapped polynomial perturbative jet only",
-  "amplitude": "a^2*b^2",
+  "quartic_amplitudes_checked": [],
+  "quartic_amplitudes_attempted": [
+    [
+      2,
+      2
+    ]
+  ],
+  "failure_stage": "mixed_quartic_sector",
+  "failure_amplitude": [
+    2,
+    2
+  ],
+  "exact_solver_message": "Linear system has no solution",
+  "mixed_sector_exact_inconsistent": true,
   "A": [
     "1",
     "0"
@@ -11,23 +24,31 @@
     "1"
   ],
   "geometry_sigma": "-(x^2+y^2)^2/128",
+  "independent_quartic_coframe_modes": false,
   "link_source_rows": 24,
   "coframe_source_rows": 16,
-  "cubic_coframe_kernel_modes_released": 192,
+  "joint_cubic_affine_kernel_parameters_released": 172,
+  "quartic_link_unknowns": 504,
+  "joint_mixed_response_unknowns": 676,
+  "all_joint_cubic_family_members_satisfy_affected_lower_40_rows": true,
   "max_link_source_spatial_degree": 3,
   "max_coframe_source_spatial_degree": 2,
   "operator_shape": [
     480,
-    696
+    676
   ],
+  "other_quartic_link_response_shape": null,
   "link_input_spatial_degree": 5,
   "link_output_spatial_degree": 3,
   "coframe_output_spatial_degree": 4,
+  "quartic_sectors_with_exact_solutions": 0,
   "periodic_carrier_root": false,
   "all_order_solution": false,
   "native_price_selection": false,
   "physical_gr_closure": false
 }
-PASS all 40 quartic finite Euler equations over complete polynomial support
-PASS exact substitution into the 480-row response system
-PASS proper-Lorentz link constraint through total degree four
+PASS exact scoped range obstruction in the declared finite polynomial ansatz
+The full joint cubic affine family is released while solving the
+mixed [a^2*b^2] sector with degree-5 quartic Lorentz-link profiles.
+This does not exclude other geometric profiles, larger link support,
+periodic solutions, or nonpolynomial corrections.

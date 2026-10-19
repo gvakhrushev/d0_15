@@ -58,18 +58,26 @@ the symbolic orthogonal family `A=(r,q), B=k(-q,r)`. Its exact
 400 Euler row/amplitude identities through total degree 3 together with
 proper-Lorentz links. This is an unwrapped local polynomial perturbative jet,
 not a periodic `L⁴` root or convergent all-order solution. The separate
-[finite mixed-quartic checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py)
+[finite mixed-quartic range checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py)
 and [its pinned result receipt](sources/d0_two_null_crossing_2026-10-19/quartic_finite_cartan_range_result.json)
-closes `[a²b²]` for the axial orthogonal pair with a `480 × 696` exact local
-response. Other quartic sectors, cubic link-kernel continuation and
+give a scoped negative control: fixing the quartic coframe to the area mode
+leaves the `480 × 676` rational `[a²b²]` system inconsistent, even with all
+172 joint cubic affine-kernel parameters and 504 degree-≤5 quartic link
+coefficients. The [full-coframe checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_coframe_range.py)
+and [receipt](sources/d0_two_null_crossing_2026-10-19/quartic_full_coframe_range_result.json)
+then release all 240 quartic coframe coefficients and solve the mixed sector
+exactly in a `600 × 916` rational system. This is one local coefficient;
+the other quartic sectors, periodic recovery, uniform refinement and
 same-programme price/admission remain open.
 
-Strategic §7.58 now closes the local continuum geometry through degree 4:
-the required orbit-area mode and a transverse coframe scale cancel all 16
-Ricci components for the arbitrary orthogonal crossed-null family. The finite
-cubic 24+16 perturbative jet and one mixed finite quartic `[a²b²]` coefficient
-are now solved locally; the remaining quartic sectors, spatial compatibility
-and native physical selection remain open.
+Strategic §7.58 closes the local continuum geometry through degree 4: the
+required orbit-area mode and a transverse coframe scale cancel all 16 Ricci
+components for the arbitrary orthogonal crossed-null family. The finite
+cubic 24+16 perturbative jet and the full-coframe mixed finite quartic
+`[a²b²]` coefficient are solved locally. The restricted area-only quartic
+coframe control is inconsistent; releasing the original coframe resolves
+it. The other quartic sectors, spatial compatibility and native physical
+selection remain open.
 
 The [balanced native-address source seam](A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md),
 now consumed in strategic §7.38, is the main finite-to-continuum bridge. It
