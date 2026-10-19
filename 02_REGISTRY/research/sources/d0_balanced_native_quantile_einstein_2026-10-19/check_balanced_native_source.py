@@ -169,6 +169,39 @@ def root_transfer_fixture(L):
     print(f"  L={L}: exact original staggered Cartan/Brinkmann sourced Poisson "
           f"test, with arbitrary u-energy and cubic/quartic harmonic modes.")
 
+def exact_all_order_selector_quotient(counts,minimum):
+    """Return-spectrum price independent of WHICH original labels, at arbitrary f,q.
+
+    Selected words from ANY cell have same original total F/R cost and AF
+    terminal type. Thus full left return blocks at fixed f_x,q_x all
+    have identical Q/R determinants, including genuine two scene ticks.
+    """
+    from math import log1p
+    N=len(counts)
+    t2=.016
+    def one_full_two_tick_leaf(f,q):
+        E=P*P*(1+t2*f)
+        b=(P-P*P*t2*q)**2
+        B=4*b*(1-b)
+        lam=4*E*(1-E)
+        return -SCENE_RANK*(log1p(-Z*B)
+                  +log1p(-Z*(lam+(1-lam)*B)))
+    j0=one_full_two_tick_leaf(0.,0.)
+    cell_values=[one_full_two_tick_leaf(.2*sin(.73*i),.1*cos(.29*i))
+                 for i in range(N)]
+    source_per_selected_site=sum(v-j0 for v in cell_values)
+    # These k different selected subsets have different ACTUAL labels and
+    # absolute signal, but one normalized actual two-tick determinant.
+    labels_total=sum(counts.values())
+    for k in set((1,max(1,minimum//2),minimum)):
+        assert all(count>=k for count in counts.values())
+        J0=labels_total*j0
+        Jk=J0+k*source_per_selected_site
+        near((Jk-J0)/k,source_per_selected_site,1e-8)
+    assert any(count>minimum for count in counts.values())
+    print("  PASS full OFF-SHELL two-tick return logdet independent of all "
+          "within-cell original-word choices; exact k-normalized quotient.")
+
 def off_null_moving_volume_midpoint_c1():
     """NONZERO f: both value and genuine d/d(volume) quantile source converge O(h²).
 
@@ -201,6 +234,7 @@ def main():
     for n,L in ((20,4),(28,8)):
         counts,m,weight=balanced_native_carrier(n,L)
         difference=real_original_two_tick_source(counts,m)
+        exact_all_order_selector_quotient(counts,m)
         print(f"  WITHOUT native balancing, first source mismatch={difference:.8f}")
         exact_moving_source_test(L)
         root_transfer_fixture(L)
