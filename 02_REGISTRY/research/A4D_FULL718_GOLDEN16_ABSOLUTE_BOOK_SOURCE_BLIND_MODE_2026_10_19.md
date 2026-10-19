@@ -111,3 +111,57 @@ The incoming #334/new #384 theories now consistently supply:
 Therefore **a positive full native GR derivation must not identify physical Cost−Info with entropy/relative-odds/Fisher computed solely from a NORMALIZED 718×16 record**, even though that record senses every Lorentz direction and all 32 relative vertex Info directions. It must either preserve and physically price an ACTUAL ABSOLUTE original pressure/clock/record-cost channel, OR show that original Kraft/M1/G0 admission fixes the global Info gauge and makes its absolute variation physically inadmissible. In either outcome it must STILL prove the SAME compulsory ordered Book H+J+R+CAR/preparation/oldRIGHT/clock first covector equals original 16+24+matter Einstein–Palatini Euler. None of these physical source selectors is supplied here. \`GR_closed=false\`.
 
 Reproduction: companion \`check_joint_718x16_pressure_kernel.py\` in the current original physical-source script folder. All formulae above are algebraically exact; the checker is a native finite independent control and does NOT replay the full genuine M1/oldRIGHT physical apparatus.
+
+
+## 5. POSITIVE exact native decoder: **one absolute Perron scalar closes the entire 33-Info blind mode** (and six CAR coordinates)
+
+The blindness theorem (4)–(6) is SHARP. If the actual original physical programme additionally retains ONE scalar \(\lambda(I)\), the full normalized 718-edge law \(\mu_I\) reconstructs ALL 33 original vertex Info values **globally**, not just by an inverse-function theorem or a 32-dimensional Fisher rank argument.
+
+Indeed, from the observed positive complete original edge weights form their source marginals
+\[
+\pi_u=\sum_v\mu_I(u,v),\qquad r_u=\sqrt{\pi_u}.
+\]
+Because the ORIGINAL scalar reference on fixed native primitive \(C=1\) is symmetric and \(K_{I,uv}=p\varphi^{(I_u+I_v)/2}\) for every one of the 718 real edges, the exact Perron identity (1) gives
+\[
+\boxed{
+S_{uv}:=2\log_\varphi\left(
+\frac{\lambda\,\mu_I(u,v)}
+     {p\sqrt{\pi_u\pi_v}}\right)
+=I_u+I_v\quad\forall (u,v)\in E.
+}\tag{10}
+\]
+The original graph is connected and has triangles; its **unsigned incidence** has full rank 33 (exact #334 even-Hodge owner). Thus these measured edge sums have a UNIQUE vertex solution. Here is a **literal finite decoder** without an inverse 718 matrix.
+
+Take the ORIGINAL ABC triangle with \(a=0\) in the 9-zone, \(b=9\) in the 11-zone, \(c=20\) in the 13-zone:
+\[
+\boxed{
+I_a=\frac{S_{ab}+S_{ac}-S_{bc}}2,\quad
+I_b=\frac{S_{ab}+S_{bc}-S_{ac}}2,\quad
+I_c=\frac{S_{ac}+S_{bc}-S_{ab}}2.
+}\tag{11}
+\]
+Every other original vertex x in the 9-zone is linked to b, so \(I_x=S_{xb}-I_b\). Every vertex x in the 11- or 13-zone is linked to a, so \(I_x=S_{xa}-I_a\). All 33 values are globally and exactly recovered from ORIGINAL normalized edge frequencies plus ONE original ABSOLUTE scalar \(\lambda\), with no fitting or additional per-vertex source.
+
+**One absolute scalar is also NECESSARY** on a profile family admitting common Info shifts: (4) gives an exact one-parameter ambiguity if it is absent. The complete positive original Golden16 probabilities cannot remove that ambiguity because they are conditionally normalized. Hence the datum \((\mu,\lambda)\) is *minimal with respect to the number of extra real scalar readouts* needed to restore Info globally for this native class.
+
+On the Golden/CAR side, the current #334 exact positive primitive-Golden square-root mark decoder recovers six local SO+(1,3) Lie coordinates from the SAME 16 complete conditional flag law:
+\[
+R_a(U)=\operatorname{Tr}(G_a^TU)
+=\frac{4\sqrt3}{p^2}(\sqrt{q_{a+}(U)}-\sqrt{q_{a-}(U)}),
+\quad DR_a(I)[G_b]=2\delta_{ab}.
+\tag{12}
+\]
+The strict positive 16-outcome chart near identity has a LOCAL inverse for all six link controls. Therefore the combined mathematically complete native readout
+\[
+\boxed{(\underbrace{Q_{718\times16}}_{\text{actual normalized all flags}},
+\ \underbrace{\lambda}_{\text{one native absolute scalar}})
+\quad\longmapsto\quad
+(\underbrace{I_1,\ldots,I_{33}}_{\text{global exact}},
+\ \underbrace{\xi_1,\ldots,\xi_6}_{\text{local exact}})}
+\tag{13}
+\]
+is a **constructively injective 39-parameter finite mathematical native-source chart**: 32 relative scalar history directions + one absolute pressure + six proper-Lorentz readout directions. It is NOT the entire original 40 geometric+2 matter field chart; do not mistake 39 for the spacetime dimension or claim the remaining gravity equations solved.
+
+**Physical cost of the one scalar:** \(\lambda\) is the original ABSOLUTE Perron norm/pressure, already mathematically owned in Book's unnormalized all-history counting; it is NOT determined by any normalized conditional detector alone. Calling it a new "meter" or free primitive would violate the no-new-action condition. The original G0/Book/M1 retained work/clock/Kraft must either produce/pay its actual absolute readout, or prove physical vertex Info has a fixed absolute gauge such that \(\lambda\) is not an independent physical observable. A compulsory native recording of \(\lambda\) is NOT proved in this research memo.
+
+Standalone verified exact decoder: \`sources/d0_physical_binary_return_2026-10-19/check_absolute_book_one_scalar_reconstruction.py\`. On a true random nonlinear 33-Info original background it reconstructs all 33 values with max error < 1.5e-15; checks invariance of the complete edge prior under global Info shift and the original Golden16 positive mark normalization. This independent finite replay consumes, rather than reruns, the #334 six-CAR-generator rank identity. Again \`GR_closed=false\`.
