@@ -3668,7 +3668,9 @@ $66L^4$-dimensional field tangent, and the stated Hom-space kernel count
 does not repair that mismatch. No extra tomography postulate is introduced.
 
 **Exact conditional composition with the full Book price.** On one complete
-finite history frame, the existing same-history theorem gives
+finite history frame, the existing [pathwise information cocycle](A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md)
+and [partition-corrected source](A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md)
+give
 \[
 \mathbb E_q(C-I)=\frac{H(q)-\log N}{\log\varphi},
 \qquad
@@ -3676,24 +3678,41 @@ N=\sum_\omega \varphi^{-S_\omega},\quad
 q_\omega=\frac{\varphi^{-S_\omega}}{N},\quad S_\omega=C_\omega-I_\omega.
 \]
 For the ten-coin binary pointer, on geometric/matter variations with fixed
-old-LEFT PF law, fixed failure outcome and \(D\log N=0\), the actual source
-therefore reduces exactly to
+old-LEFT law \(\mu_\alpha\), fixed failure outcome and \(D\log N=0\),
+differentiating the complete binary joint entropy gives
 \[
 D\mathbb E_q(C-I)=\frac{2\kappa(g_{10})}{\log\varphi}
-\sum_\alpha \pi_\alpha DJ_\alpha(r_{10}),
+\sum_\alpha \mu_\alpha DJ_\alpha(r_{10}).
+\]
+On the existing one-cost READY support, the exact PF-to-regular-trace
+transport \(\sum_\alpha\mu_\alpha DJ_\alpha=\chi_N
+\sum_\alpha\pi_\alpha DJ_\alpha\) then gives
+\[
+D\mathbb E_q(C-I)=\frac{2\kappa(g_{10})\chi_N}{\log\varphi}
+\sum_\alpha \pi_\alpha DJ_\alpha(r_{10})
+=\frac{2\kappa(g_{10})\chi_N}{\nu K\log\varphi}
+DJ_{\rm trace}(r_{10}),
 \qquad \kappa(g_{10})>0.
 \]
-Because the existing all-field consumer already resolves this same two-channel
-source into its complete Brinkmann/Einstein equations, no new action or fitted
-Einstein tensor is needed under these hypotheses. This is a conditional
-source-composition theorem, not physical closure: the native program must
-still prove that its complete output frame is this binary pointer, that its
-Book weights equal its Born probabilities (so the raw normalizer has no
-source), and that preparation, clock, controller/work, observer and all
+Here \(r_{10}=p^{20}/(1-p^{20})=-\tfrac12+\tfrac{123\sqrt5}{550}\),
+\(g_{10}=0.7594607702777649\ldots\), and
+\(\kappa(g_{10})=0.8731713949067889\ldots\). Substituting this measured
+source ratio into the general 40\(\to\)3\(\to\)1 Brinkmann consumer gives
+\(\lambda_-(r_{10})=-23.4163306960748\ldots\). This is close to, but not
+equal to, the separate \(z=2^{-20}\) source
+\(\lambda_-(z)=-23.4164067518841\ldots\); the two finite prices must retain
+their own coefficients. Under the stated hypotheses the positive scalar
+above preserves the geometric/matter critical equations, so the general
+Poisson consumer supplies its corresponding exact conditional root family
+without adding an action or fitting an Einstein tensor.
+
+This remains conditional, not physical closure. The native programme must
+still derive that its complete output frame is this binary pointer, that its
+Book weights equal its Born probabilities (including the full raw
+normalizer), and that preparation, clock, controller/work, observer and all
 remaining internal Euler rows are solved on the same carrier. A global MAP
-rule instead has the nonsmooth source above; a fine occupation readout has
-its own source ratio. Establishing which complete frame the native execution
-uses is now the single price-selection gate for this branch.
+rule has the nonsmooth source above; a fine occupation readout has its own
+source ratio. The physical full-history readout and price remain unselected.
 
 ### 7.48. The primitive golden probability weight still needs an amplitude map
 
@@ -3714,18 +3733,33 @@ not the unit response, and their normalized Born probabilities would not be
 \((p,p^2)\). The already-owned native gate in Book 03 §03.26 and
 [`GoldenOrderInterferometer.lean`](../../03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean)
 fixes the actual first column as \((\sqrt p,p)\); its Born probabilities are
-exactly \((p,p^2)\). Thus the primitive gate is correct, while the map from
-the statistical cost weight to the coherent amplitude coefficient needs an
-explicit owner.
+exactly \((p,p^2)\). There is a literal same-carrier conflict if Book 03
+§03.10(c)'s \(W(\gamma)=\prod_i p^{a_i}\) is also read as the amplitude
+coefficient on these orthogonal retained branches: its one-step squared norm
+is \(p^2+p^4=5-2\sqrt5<1\), while the native gate's is
+\(p+p^2=1\). Normalizing the literal \(W\) column changes the branch odds
+from \(p:p^2\) to \(p^2:p^4\). The gate therefore supplies the square-root
+weight-to-amplitude map for its own primitive split, but does not derive that
+map for Book 03's separately written coherent path sum.
 
-This is a type mismatch under the direct cost-exponent identification, not a
-proved inconsistency of D0. A square-root lift \(W=\varphi^{-S/2}\) matches
-the primitive gate, but the same map must be derived for composed histories,
-coherent paths with shared outcomes, and retained records. Otherwise the
-physical law is \(q_\omega=|\sum_{\gamma\mapsto\omega}A_\gamma|^2\), which may
-contain cross terms and a field-dependent normalizer, rather than the raw
-positive weight \(\varphi^{-S_\omega}\). The two expressions cannot be
-identified from their common golden base alone.
+This is a scoped conflict between Book 03 §03.3.0's statistical weight and
+§03.10(c)'s literal amplitude coefficient on an orthogonal primitive record,
+not a proved inconsistency of the full D0 system: a typed map between the
+algebraic path coefficient and the Hilbert amplitude could still be supplied.
+The [retained Golden preparation](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md)
+proves that squared amplitudes equal cylinder weights on its complete prefix
+tree. It closes that preparation carrier; it does not reconcile the two Book
+03 clauses or transfer automatically to Book 03's general coherent path
+algebra or the AF×scene exterior query. Reading \(W\) as a statistical weight
+and using \(\sqrt W=\varphi^{-S/2}\) as the state amplitude is consistent
+with the primitive gate, but remains an interpretation/bridge to derive for
+composed histories, shared outcomes and retained records. Under the literal
+amplitude reading, the fully resolved Born law instead uses weights
+\(\varphi^{-2S_\gamma}\) and raw normalizer
+\(N=\sum_\gamma\varphi^{-2S_\gamma}\). After paths are merged, the physical
+law is \(q_\omega=|\sum_{\gamma\mapsto\omega}A_\gamma|^2\), which may contain
+cross terms and a field-dependent normalizer. Neither law can be identified
+with raw \(\varphi^{-S_\omega}\) from the shared golden base alone.
 
 This sharpens the next full-price proof: on the actual compiled carrier derive
 the complete amplitudes \(A_\gamma\), group only paths the detector actually
@@ -3734,3 +3768,37 @@ with the Book cost weight and its refinement/normalizer. If equality holds,
 §7.47's conditional entropy-to-Brinkmann source applies; if not, its exact
 cross-term and \(D\log N\) source must be included. No new gate, exponent, or
 probability law is selected here.
+
+There is an exact positive bridge at the **fully resolved primitive-path**
+level. The owned Golden gate has orthogonal branch amplitudes \((\sqrt p,p)\),
+whose Born weights are \((p,p^2)\). For an \(n\)-step tensor product with each
+branch retained in an orthogonal history register, a path \(\gamma\) with
+primitive costs \(a_i\in\{1,2\}\) has
+\[
+A_\gamma=\prod_{i=1}^n p^{a_i/2}=\varphi^{-S_\gamma/2},
+\qquad |A_\gamma|^2=\varphi^{-S_\gamma},
+\qquad \sum_{\gamma\in\{1,2\}^n}|A_\gamma|^2=(p+p^2)^n=1.
+\]
+Thus the resolved path frame has exact \(w_\gamma=q_\gamma\) and raw
+normalizer \(N=1\) under the square-root lift from the statistical weight to
+state amplitude. This is an exact consistency bridge for the primitive gate
+and the independently tensorized, fully recorded word. It does not satisfy
+the literal Book 03 §03.10(c) coefficient \(W(\gamma)=\varphi^{-S_\gamma}\)
+as an amplitude; that clause needs a typed reinterpretation or correction
+before this bridge can be consumed as the Book's physical path law.
+
+It does not identify a coarser terminal pointer with the resolved path frame.
+For an outcome \(\omega\) that merges path labels, its Born mass is
+\[
+q_\omega=\left\|\sum_{\gamma\mapsto\omega}
+A_\gamma|r_\gamma\rangle\right\|^2
+=\sum_{\gamma\mapsto\omega}|A_\gamma|^2
++2\operatorname{Re}\sum_{\gamma<\gamma'}
+A_\gamma\overline{A_{\gamma'}}\langle r_{\gamma'},r_\gamma\rangle,
+\]
+where \(|r_\gamma\rangle\) is the retained holonomy/reference/history state.
+The cross term vanishes for orthogonal retained records, but need not vanish
+when paths land in the same memory sector. The ten-coin filled/complement
+pointer therefore inherits \(w=q\) only after its actual coarse-graining,
+retained record and code costs are bound on that same carrier. That binding,
+not the primitive gate normalization, remains open.
