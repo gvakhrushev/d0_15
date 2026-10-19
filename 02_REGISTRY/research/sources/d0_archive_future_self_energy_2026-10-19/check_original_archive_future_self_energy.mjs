@@ -118,6 +118,22 @@ const clockp=(Math.sqrt(5)-1)/2,eps=clockp**2/1024,lambda=288/25;
 const q=(1-eps*lambda/2)**2;
 need(q>0&&q<1 && (1-eps*0/2)**2===1,
      "original separate full128 detector has dark zero and positive-shell event clocks");
+// ORIGINAL exact 33-mode correlation recurrence, and its detector clock.
+const aa=359/(rho*rho),bb=2574/(rho*rho*rho);
+const T4=mm(T2,T2),rec=T2.map((row,i)=>row.map((v,j)=>aa*v+bb*T[i][j]));
+need(maxdiff(T4,rec)<2e-12 && Math.abs(aa+bb-1)<2e-12,"all original T^4=aT²+bT");
+const lag=[],probe=vA.slice();let future=probe.slice();
+for(let m=0;m<=10;m++){lag.push(dot(probe,future));future=mv(T,future);}
+need(Math.abs(lag[0]-piA)<2e-12 && Math.abs(lag[1])<2e-12,
+ "stationary one-time detector but zero next-step AA correlation");
+for(let m=0;m+4<=10;m++)
+ need(Math.abs(lag[m+4]-aa*lag[m+2]-bb*lag[m+1])<2e-12,"true lagged detector recurrence "+m);
+const nClock=1024,epsClock=clockp**2/1024,positiveLambda=288/25;
+const qDark=1,qGood=(1-epsClock*positiveLambda/2)**2;
+const infoTime=-nClock*Math.log(qGood)/Math.log(1/clockp);
+need(qDark===1 && infoTime>0 && Math.abs(infoTime-9.15393616364622)<1e-10,
+ "native separate full128 dark versus positive blank-history information time");
+
 console.log(JSON.stringify({
  type:"ORIGINAL K(9,11,13) 718-edge exact archive",
  rho,edge_count:E.length,archived_coupling_rank:32,archive_innovation_trace:tr(F),
