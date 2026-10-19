@@ -37,6 +37,31 @@ transfer on that stratum to two first-source coefficients plus solved
 internal Euler rows. Its bounded checker passes after repairing a profile
 control that had accidentally tested only a global rotation at `L=4`.
 
+The [balanced LEFT/quantile bridge](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md)
+now closes a different, precisely scoped source-matching gap. A reversible
+Fibonacci rank decoder assigns equal-cost original F/R histories to Role
+cells; exact divisibility gives equal finite regular trace weight per cell
+while the positive failure complement remains. At the common `f=q=0` curved
+roots, the full first jets of the moving-volume mean queries equal those of
+the local queries, so the same two-tick `J₂` covector transfers the already
+owned exact finite sourced Einstein roots to this balanced mean-query
+programme. Off shell, the same mean query has the conditional general
+Einstein–scalar first source; the mean-value term remains unless a genuine
+unrestricted scale variation of the complete price forces it to zero. This
+is a constructed AF×scene `J₂` branch, not a physical selector for the
+original complete `H+J+R`. Its LEFT rank decoder is not the original 4D
+golden-box placement, and exact balancing uses depth `n≈3L⁴/4`; the cheaper
+near-balanced estimate controls smooth source discrepancy but does not
+establish exact roots or the original raw `#216` bound. These admission, cost,
+controller, preparation and raw-source gates remain on the parent route.
+Keep this construction separate from the conditional Hodge-heat/chronology
+obstruction: on a genuinely shared admitted carrier, scalar stationarity
+forces the complete feedback covector `dJ` to zero while the volume-preserving
+heat shape derivative stays positive, excluding stationarity of that `H+J`
+price. The owners still leave that shared physical preparation open, and the
+two-tick `J₂` construction does not supply it because its complete price and
+decoder are different.
+
 The direct density owner extends the same `J₂` source to the proper cell
 operand `M=h⁴Jq`, passes the volume-pressure control, and proves a conditional
 C² Einstein–scalar source limit; its narrow source checker passes. This is an
