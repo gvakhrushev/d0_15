@@ -128,4 +128,35 @@ assert curvature2<0
 print("PASS directed cycle: g lies in Q archive but orthogonal to ALL future rank32")
 print("PASS 653-dimensional future-dark archive curvature =",curvature2)
 print("CONCLUSION: rank32 universal history-source identification FALSE on all directed Costs")
+
+# EVEN stronger: a single genuine ORIGINAL bidirectional edge pair has an
+# exactly reversal-symmetric native primitive Cost variation. It is NOT
+# a vertex-sum α_source + α_target: one original A×B rectangle violates it.
+def edge_value(ds,x,y):
+    ix=np.flatnonzero((u==x)&(v==y))
+    assert len(ix)==1
+    return ds[ix[0]]
+dsym=((u==0)&(v==9) | (u==9)&(v==0)).astype(float)
+assert np.array_equal(dsym, np.array([
+    edge_value(dsym,int(j),int(i)) for i,j in edges]))
+rectangle=(edge_value(dsym,0,9)+edge_value(dsym,1,10)
+           -edge_value(dsym,0,10)-edge_value(dsym,1,9))
+assert rectangle==1.
+csp,xisp,msp,gsp,curv_sp=response(dsym)
+# The original future operator R has rank32, its unique null Perron
+# singular direction must be excluded by a rank-aware pseudoinverse.
+proj32=R@(np.linalg.pinv(R,rcond=1e-10)@gsp)
+dark653=gsp-proj32
+whole=ell*float(gsp@gsp)
+future=ell*float(proj32@proj32)
+dark=ell*float(dark653@dark653)
+assert abs(whole-future-dark)<1e-12
+assert dark>0. and abs(dark-0.0013000035359633177)<1e-12
+assert abs(future-0.0002498010821445919)<1e-12
+assert abs(whole-0.0015498046181079107)<1e-12
+print("PASS exact reversible-pair rectangle excludes vertex-sum Cost factorization")
+print(f"PASS symmetric local Cost first source={csp:.16g}")
+print(f"PASS symmetric local Book Schur total={-whole:.16g} "
+      f"future32={-future:.16g} dark653={-dark:.16g}")
+print(f"PASS dark fraction={dark/whole:.9%}, not an odd-Cost artifact")
 print("SCOPE: actual scalar Book history rate, not full noncommutative D0 action, physical reversal rule, or GR")
