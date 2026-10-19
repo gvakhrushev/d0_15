@@ -1006,6 +1006,18 @@ composition with the existing six-positive Julia readout has a nonzero
 Jacobian, so the ordered geometric transport is locally distinguishable by
 positive outcomes.
 
+The standard complete 128-outcome pointer at that same endpoint has a
+different first-order response: its exact 128-by-6 probability Jacobian has
+rank 3 over Q(sqrt(5)), with 42 positive and 86 dark baseline outcomes; all
+dark outcomes have zero first jet. Its complete Shannon derivative is one
+six-component covector, recorded with rational intervals in §4.2 of the same
+owner. Thus the rank-six distinguishability belongs to the separately
+constructed six-positive-contrast tester; it does not transfer to the
+standard full128 pointer. The [scoped full128 checker](sources/d0_two_null_regular_atlas_2026-10-19/check_regular_atlas_full128_pointer_response.py)
+passes 105 assertions, with its [receipt](sources/d0_two_null_regular_atlas_2026-10-19/REGULAR_ATLAS_FULL128_POINTER_RESPONSE.json).
+This is still a final-endpoint probe with fixed coframe, not the twelve
+sequential fresh-flag execution or its complete physical Cost−Info price.
+
 This is a representation and readout result, not the physical dynamics.
 The final-`U` tester after the composed word is not the same experiment as
 executing twelve sequential Julia gates. Native admission and pricing of the
@@ -1016,6 +1028,12 @@ the chosen success attenuation, not selected by Book as the native action.
 The next physical gate is to evaluate that complete admitted history on the
 same full tangent and determine whether its source descends to the existing
 `S_star` and independently derived matter source. `GR_closed` remains false.
+On this PR snapshot, `python3 tools/gr_assembly.py why positive_gr` also reports
+no accepted application and four still-open direct obligations:
+`matter_source_ward`, `physical_constraints`, `recovery`, and `soundness`.
+The atlas and endpoint-response certificates do not discharge any of them;
+the next composition must supply these from the same admitted carrier and
+complete source.
 
 There is also a precise scoped obstruction for the **current fixed-probe
 mean-Shannon term** of the [positive Lorentz Julia tester](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md).
