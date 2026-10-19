@@ -3292,3 +3292,40 @@ EXACT: \(-f_0 DJ\) and \(D T\cdot\nabla f_0,D T\cdot\nabla q_0\) vanish by TRUE 
 
 **Physical endgame remains one SAME programme:** real compulsory D0 detector/Book code selection of balanced LEFT macro effect, source-complete moving-quantile/clock/old history and actual observer/preparation/RIGHT Euler, old v8 H+J+R if physically present, plus old raw fixed-g/independent-tau #216. Separate §7.36 full EXTERIOR occupation Shannon readout still has a different genuinely computed source (not the same J₂): this balancing identity does NOT silently equate its coefficients with the determinant or make all native aggregation/readout schemes identical. It DOES close the previously named purely mathematical *finite-root ↔ volume-mean general-OTO* seam on a single original source-compatible golden AF carrier.
 
+
+
+### 7.39. Ещё сильнее balanced subset: original ALL GOLDEN histories, inverse-PF + moving volume дают exact finite roots и general Einstein
+
+**Stronger principal positive theorem, SAME #334:** [A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md](A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md); [REAL original-golden, double-tick J₂, moving-volume checker](sources/d0_original_golden_inverse_pf_quantile_2026-10-19/check_original_inverse_pf_quantile.mjs) was EXECUTED and PASSED. It improves the balanced-subset strategy §7.38: **NO lexicographic readdressing, NO discarding activation of excess old native histories, NO requirement that F_(n+1) be divisible L⁴, and NO n∼L⁴ exact-cost depth**. Activate ALL original equal-cost READY Q_w=wFR∪wRF in THEIR OWN original 4D golden boxes X_w and Role cells j(w), retaining all nonselected pending/overshoot/F/R and old RIGHT/reference128 as the complete failure complement. Their TRUE native regular defining LEFT masses \(w_x=\omega N_{n,x}\) are unequal, and their original source-compatible CAR coframe is \(\widehat e_x=\sqrt{w_x/\bar w}\,e_x\). This is NOT setting the Born distribution uniform.
+
+**The decisive composition was missing despite both its factors already existing:** use original AF inverse-PF \((\rho_x^{AF})^{-1}=\bar w/w_x\) TOGETHER WITH the actual 4D inverse physical-volume quantile \(T_{J/V}\) and the correct pressure operand \(r=(P_\star/J)\), q=CAR16 Clifford scalar. On EVERY original Q_w, x=j(w), the **one original double-tick** Book03 query is
+\[
+r_w=(\rho_x^{AF})^{-1}[(I_h\widehat f_h)/J](T_{J/V}(c_x)),\qquad
+q_w=(\rho_x^{AF})^{-1}[I_h\widehat q_h](T_{J/V}(c_x)),
+\]
+with \(\widehat f_h=h^{-4}P_{\star,h}(\widehat e,U)\), \(\widehat q_h=\widehat g^{-1}(D\Psi,D\Psi)\). Every old scene B really equals4b(1−b), every original 528 retained and22448 complements and two true Q/R pencils are kept, with untouched old archive. For ANY null/star Brinkmann REAL root and ANY independent coframe16, link24, scalar/top2 variation, \(J=1,T={\rm id},\widehat f=\widehat q=0\), so the FULL moving \(DT,DJ,DV\) contributions have coefficient zero rather than being frozen. Hence the ENTIRE first source equals the old exact native LOCAL inverse-PF J₂ source on the SAME original unequal cells:
+\[
+\boxed{\frac{D J_{2}^{\rm new-volume}}{\nu K}
+ =\frac{D J_2^{\rm old-local}}{\nu K}
+ =\bar w C_\star\,D\sum_x(\widehat f_{h,x}+\lambda_\sigma\widehat q_{h,x}),
+\qquad
+\sum_w\omega(\rho_{j(w)}^{AF})^{-1}DG_{j(w)}
+=\bar w\sum_xDG_x.}
+\]
+No separate Einstein tensor, arbitrary uniform prior, root perturbation/Hessian IFT or fitted cancellation appears. **Thus the SAME specified physically-volume-aware J₂ has exact finite ALL 16+24+2 Euler nonvacuum Brinkmann roots at EVERY mesh, with arbitrary u-dependent scalar/top E(u) and arbitrary harmonic W_h(u,x,y)**, consuming §7.30's genuine full40→3→1 Cartan theorem. Exactly the explicit finite/root-vs-general-mean mismatch named by full-source §6.48 is resolved on ORIGINAL native addresses, in a stronger way than thinning/subselecting §7.38.
+
+**Offnull/all-ten functional belongs to SAME operator query:** the full first weak t² coefficient is **EXACT** \(\frac1{L⁴}\sum_x[(\widehat f/J)+\lambda\widehat q](T_{J/V}(c_x))\) even when N_{n,x} unequal, because the old actual weights cancel its original inverse-PF factor AT EVERY FIELD VALUE in the linear term. The same 4D moving quantile then gives \(\Gamma=V^{-1}\int[P_\star+\lambda J q]\), own \(\Gamma g/2\) pressure and owned oriented Cartan \(\gamma_\star=-\operatorname{sgn}\det e/2\). With genuine free scale Γ=0, all TEN nonlinear Einstein–two-scalar equations result in the owner's smooth-C² source limit; fixed scale retains the true Γ term. Higher logdet nonlinear remainders are \(O(t²\sup(\rho^{AF})^{-2})\), not silently discarded at finite t.
+
+**Quantitative all-site native coverage with O(logL) depth was now PROVED, not merely extrapolated:** partition original F/R infinite histories by k=floor(n/4) raw-letter prefixes, use exact renewal \(a_{n-c(v)}\), true 4D prefix box diameter \(\delta_k=2p^{\lfloor k/4\rfloor}\), and 4D cell-boundary strip volume ≤64δ_k/L³. For original REAL site counts \(N_{n,x}\),
+\[
+\boxed{\sup_x|\rho^{AF}_{n,x}-1|
+\le a_n^{-1}\!\left[
+ L⁴p^{2(n-2k)+1}/\sqrt5+128L\delta_k+|a_n-a_\infty|
+\right].}
+\]
+Thus \(n(L)\ge(16+\gamma)\log_\varphi L+C_\gamma\) is a SUFFICIENT exact-cost schedule for **uniform** all-site native positivity and inverse ratios \(\sup1/\rho^{AF}\le2\) eventually, preserving every original word at its own original X_w—far cheaper than §7.38's equal-subset high-depth or first exact divisible-Fibonacci rank approach. Physical source/clock/compilation cost still belongs to whole programme, not to the algebraic count proof.
+
+**Actually RUN controls:** original n20,L4: 10946 words ALL activated (not only balanced min29×256=7424), 256 cells, min/max counts29/78, \(\rho=[.6782,1.8242]\). Original n24,L8: 75025 words ALL activated (versus balanced m=4×4096=16384), 4096 cells, min/max4/43, \(\rho=[.21838,2.34759]\). Original Q_w PF success mass stays \(\approx.34164079\) vs real failed complement≈.65835921; NO silent postselection. Algebraic original-weight source cancellation residual=0 to displayed precision. On a NONTRIVIAL moving 4D proper-volume test with DT(.25)=.1875, full double-tick logdet direct derivative −1.2104388620983245×10⁻6 vs exact native first source −1.210438851307872×10⁻6, relative ≈8.9145×10⁻9. The bundled checker was executed via JS; no unrun binary/file claimed as verified.
+
+**Precise status:** this is a definite *same-source-experiment* bridge for the constructed native AF/LEFT×scene J₂ PRICE, with true old spatial golden addresses, general moving physical-volume pressure and exact finite nonflat roots, not the theorem that ALL foundational D0 admissible histories must physically select it. The native queried operands/real work/CAR and clock/controller PREP, actual complete old v8 H/J/R/RIGHT spin/history and original independent fixed-g/tau raw#216 still need compulsory whole-programme source/normal/recovery. Avoid starting another parallel alternative after this quantitative source bridge.
+
