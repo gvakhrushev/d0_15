@@ -1,0 +1,158 @@
+D0.Research.NativeHistoryFieldCoupling.scene_protocol_verified : VerificationContract sceneProtocol
+D0.Research.NativeHistoryFieldCoupling.fieldAction {N : ℕ} {B : Type} (J : NativeBackground N × B → ℝ) (m : ℝ)
+  (E : ArchiveCochain N → ℝ) (read : Vertex33 → NativeJointPayload N B) (hJ : ∀ (g : NativeBackground N × B), m ≤ J g)
+  (hE : ∀ (psi : ArchiveCochain N), 0 ≤ E psi) : ActionProtocol sceneProtocol
+D0.Research.NativeHistoryFieldCoupling.fieldHistoryPrice {N : ℕ} {B : Type} (J : NativeBackground N × B → ℝ) (m : ℝ)
+  (E : ArchiveCochain N → ℝ) (read : Vertex33 → NativeJointPayload N B) : AdditiveAction
+D0.Research.NativeHistoryFieldCoupling.fieldHistoryPrice_refines {N : ℕ} {B : Type} (J₀ : NativeBackground N × B → ℝ)
+  (J₁ : NativeBackground (N + 1) × B → ℝ) (m : ℝ) (E₀ : ArchiveCochain N → ℝ) (E₁ : ArchiveCochain (N + 1) → ℝ)
+  (read : Vertex33 → NativeJointPayload N B) (RG : NativeBackground N × B → NativeBackground (N + 1) × B)
+  (R : ArchiveCochain N → ArchiveCochain (N + 1)) (hJ : ∀ (g : NativeBackground N × B), J₁ (RG g) = J₀ g)
+  (hE : ∀ (psi : ArchiveCochain N), E₁ (R psi) = E₀ psi) (p : Path) :
+  (fieldHistoryPrice J₁ m E₁ (refineReadout RG R read)).value p = (fieldHistoryPrice J₀ m E₀ read).value p
+D0.Research.NativeHistoryFieldCoupling.one_anchor_history_price_refines {N : ℕ} {B : Type}
+  (J₀ : NativeBackground N × B → ℝ) (J₁ : NativeBackground (N + 1) × B → ℝ) (m : ℝ)
+  (read : Vertex33 → NativeJointPayload N B) (RG : NativeBackground N × B → NativeBackground (N + 1) × B)
+  (R : ArchiveCochain N → ArchiveCochain (N + 1)) (hJ : ∀ (g : NativeBackground N × B), J₁ (RG g) = J₀ g)
+  (hR : ScalarRefinementCompatible N R) (p : Path) :
+  (fieldHistoryPrice J₁ m (oneAnchorEnergy (N + 1)) (refineReadout RG R read)).value p =
+    (fieldHistoryPrice J₀ m (oneAnchorEnergy N) read).value p
+D0.Research.NativeHistoryFieldCoupling.two_anchor_history_price_refines {N : ℕ} {B : Type}
+  (J₀ : NativeBackground N × B → ℝ) (J₁ : NativeBackground (N + 1) × B → ℝ) (m : ℝ)
+  (read : Vertex33 → NativeJointPayload N B) (RG : NativeBackground N × B → NativeBackground (N + 1) × B)
+  (R : ArchiveCochain N → ArchiveCochain (N + 1)) (hJ : ∀ (g : NativeBackground N × B), J₁ (RG g) = J₀ g)
+  (hR : ScalarRefinementCompatible N R) (p : Path) :
+  (fieldHistoryPrice J₁ m (twoAnchorEnergy (N + 1)) (refineReadout RG R read)).value p =
+    (fieldHistoryPrice J₀ m (twoAnchorEnergy N) read).value p
+D0.Research.NativeHistoryFieldCoupling.same_full_history_different_matter_response {N : ℕ} {B : Type}
+  (J : NativeBackground N × B → ℝ) (m : ℝ) (e : Edge) (g : NativeBackground N × B) :
+  deriv
+        (fun t =>
+          (fieldHistoryPrice J m (oneAnchorEnergy N)
+                (movingReadout e g (anchorDirection N 1) (anchorDirection N 1) t)).value
+            (edgePath e))
+        0 =
+      0 ∧
+    deriv
+        (fun t =>
+          (fieldHistoryPrice J m (twoAnchorEnergy N)
+                (movingReadout e g (anchorDirection N 1) (anchorDirection N 1) t)).value
+            (edgePath e))
+        0 =
+      2
+D0.Research.NativeHistoryFieldCoupling.concrete_nonempty_history_response (N : ℕ) :
+  deriv
+        (fun t =>
+          (fieldHistoryPrice (fun x => 0) 0 (oneAnchorEnergy N)
+                (movingReadout concreteEdge (flatNativeBackground N, anchorDirection N 0) (anchorDirection N 1)
+                  (anchorDirection N 1) t)).value
+            (edgePath concreteEdge))
+        0 =
+      0 ∧
+    deriv
+        (fun t =>
+          (fieldHistoryPrice (fun x => 0) 0 (twoAnchorEnergy N)
+                (movingReadout concreteEdge (flatNativeBackground N, anchorDirection N 0) (anchorDirection N 1)
+                  (anchorDirection N 1) t)).value
+            (edgePath concreteEdge))
+        0 =
+      2
+D0.Research.NativeHistoryFieldCoupling.anchorDirection_ne_zero (N : ℕ) (k : Fin 2) : anchorDirection N k ≠ 0
+D0.Research.NativeHistoryFieldCoupling.matched_baseline_action_protocols {N : ℕ} {B : Type}
+  (J : NativeBackground N × B → ℝ) (m : ℝ) (read : Vertex33 → NativeJointPayload N B)
+  (hJ : ∀ (g : NativeBackground N × B), m ≤ J g) : ActionProtocol sceneProtocol × ActionProtocol sceneProtocol
+D0.Research.NativeHistoryFieldCoupling.native_scalar_block_preserves_matched_baseline_energies (N : ℕ)
+  (R : ArchiveCochain N → ArchiveCochain (N + 1)) (hR : ScalarRefinementCompatible N R) (psi : ArchiveCochain N) :
+  matchedBaselineQuadraticEnergy (N + 1) (R psi) = matchedBaselineQuadraticEnergy N psi ∧
+    matchedBaselineExponentialEnergy (N + 1) (R psi) = matchedBaselineExponentialEnergy N psi
+D0.Research.NativeHistoryFieldCoupling.matched_baseline_history_price_refines {N : ℕ} {B : Type}
+  (J₀ : NativeBackground N × B → ℝ) (J₁ : NativeBackground (N + 1) × B → ℝ) (m : ℝ)
+  (read : Vertex33 → NativeJointPayload N B) (RG : NativeBackground N × B → NativeBackground (N + 1) × B)
+  (R : ArchiveCochain N → ArchiveCochain (N + 1)) (hJ : ∀ (g : NativeBackground N × B), J₁ (RG g) = J₀ g)
+  (hR : ScalarRefinementCompatible N R) (p : Path) :
+  (fieldHistoryPrice J₁ m (matchedBaselineQuadraticEnergy (N + 1)) (refineReadout RG R read)).value p =
+      (fieldHistoryPrice J₀ m (matchedBaselineQuadraticEnergy N) read).value p ∧
+    (fieldHistoryPrice J₁ m (matchedBaselineExponentialEnergy (N + 1)) (refineReadout RG R read)).value p =
+      (fieldHistoryPrice J₀ m (matchedBaselineExponentialEnergy N) read).value p
+D0.Research.NativeHistoryFieldCoupling.matched_baseline_same_value_different_response {N : ℕ} {B : Type}
+  (J : NativeBackground N × B → ℝ) (m : ℝ) (e : Edge) (g : NativeBackground N × B) :
+  (fieldHistoryPrice J m (matchedBaselineQuadraticEnergy N) (movingReadout e g 0 (anchorDirection N 1) 0)).value
+        (edgePath e) =
+      (fieldHistoryPrice J m (matchedBaselineExponentialEnergy N) (movingReadout e g 0 (anchorDirection N 1) 0)).value
+        (edgePath e) ∧
+    deriv
+          (fun t =>
+            (fieldHistoryPrice J m (matchedBaselineQuadraticEnergy N)
+                  (movingReadout e g 0 (anchorDirection N 1) t)).value
+              (edgePath e))
+          0 =
+        0 ∧
+      deriv
+          (fun t =>
+            (fieldHistoryPrice J m (matchedBaselineExponentialEnergy N)
+                  (movingReadout e g 0 (anchorDirection N 1) t)).value
+              (edgePath e))
+          0 =
+        1
+D0.Research.NativeHistoryFieldCoupling.concrete_nonzero_memory_same_value_different_response (N : ℕ) :
+  (fieldHistoryPrice (fun x => 0) 0 (matchedBaselineQuadraticEnergy N)
+            (movingReadout concreteEdge (flatNativeBackground N, anchorDirection N 0) 0 (anchorDirection N 1) 0)).value
+        (edgePath concreteEdge) =
+      (fieldHistoryPrice (fun x => 0) 0 (matchedBaselineExponentialEnergy N)
+            (movingReadout concreteEdge (flatNativeBackground N, anchorDirection N 0) 0 (anchorDirection N 1) 0)).value
+        (edgePath concreteEdge) ∧
+    deriv
+          (fun t =>
+            (fieldHistoryPrice (fun x => 0) 0 (matchedBaselineQuadraticEnergy N)
+                  (movingReadout concreteEdge (flatNativeBackground N, anchorDirection N 0) 0 (anchorDirection N 1)
+                    t)).value
+              (edgePath concreteEdge))
+          0 =
+        0 ∧
+      deriv
+          (fun t =>
+            (fieldHistoryPrice (fun x => 0) 0 (matchedBaselineExponentialEnergy N)
+                  (movingReadout concreteEdge (flatNativeBackground N, anchorDirection N 0) 0 (anchorDirection N 1)
+                    t)).value
+              (edgePath concreteEdge))
+          0 =
+        1
+'D0.Research.NativeHistoryFieldCoupling.scene_protocol_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.path_sum_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.fieldAction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.fieldHistoryPrice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.fieldHistoryPrice_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.one_anchor_history_price_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.two_anchor_history_price_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.same_full_history_different_matter_response' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.concrete_nonempty_history_response' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.anchorDirection_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.matched_baseline_action_protocols' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.native_scalar_block_preserves_matched_baseline_energies' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.matched_baseline_history_price_refines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.matched_baseline_same_value_different_response' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeHistoryFieldCoupling.concrete_nonzero_memory_same_value_different_response' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

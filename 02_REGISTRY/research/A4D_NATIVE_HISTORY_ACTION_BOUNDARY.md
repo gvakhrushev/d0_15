@@ -330,3 +330,80 @@ The [Lean capsule](certificates/a4d_native_history_action.lean),
 [immutable control ledger](certificates/a4d_native_history_action_certificate.json)
 separate compiled statements, analytic universal proofs and finite controls.
 No supported source, claim, BOOK entry or task lifecycle is changed.
+
+## 7. Joint typed field/history boundary
+
+The supplementary Lean capsule
+[`a4d_native_history_field_coupling.lean`](certificates/a4d_native_history_field_coupling.lean)
+composes the actual `Vertex33` scene-walk carrier with a full typed native
+payload:
+
+```text
+((nondegenerate raw coframe, Lorentz-affine links), memory B, ArchiveCochain N).
+```
+
+For any supplied vertex-to-payload readout, nonnegative matter energy `E`,
+and background/memory price `J ≥ m`, `fieldAction` is an actual
+`ActionProtocol` on the owned scene protocol. Its restriction to every legal
+scene edge agrees with an additive valuation on **all** valid scene walks;
+`path_sum_composition` proves the concatenation law. Thus the certificate
+consumes history composition and keeps the coframe, links, memory type and
+full matter cochain in the same interface.
+
+The exact hostile control uses
+
+```text
+E_Q(psi) = 1 + sigma_0(psi)^2,
+E_exp(psi) = exp(sigma_1(psi)).
+```
+
+Both are nonnegative on the full cochain space. At the same state and on the
+same one-edge history they have the same price, `2 + J(g) - m`, while the
+same variation in the second scalar archive direction gives derivatives `0`
+and `1`. The result `matched_baseline_same_value_different_response` is
+uniform in the native background and memory value; an explicit nonzero memory
+instance is also provided. This rules out recovering a unique matter Euler
+response from the typed protocol, path additivity, positivity and a shared
+baseline value alone.
+
+The two prices commute with a refinement whenever its supplied background /
+memory map preserves `J` and its cochain map preserves the scalar anchor
+readouts. The latter is an explicit `ScalarRefinementCompatible` hypothesis;
+the certificate does **not** construct or admit the complete D0 refinement
+map. The vertex readout is also an input, not a D0-derived state transition.
+Consequently this is a countermodel to uniqueness for the stated interface,
+not a no-go theorem for every D0 process and not a selected physical action.
+The displayed variation changes the matter cochain while holding the other
+coordinates fixed; it does not prove that this direction is in the native
+admissible variation image.
+
+### Relation to the re-supplied AF/recovery packet
+
+The supplied `RECOVERY_COMPOSITION_RU.md` and `RESULT_RU.md` were already
+preserved byte-for-byte, together with the ZIP's source, manifests, receipts
+and checkers, in the existing
+[PR #334 source intake](https://github.com/gvakhrushev/d0_15/tree/512fbe37448675ed498dea4343e1520b2d2397e8/02_REGISTRY/research/sources/d0_af_full_feedback_first_source_2026-10-17).
+This re-submission matches the published source blobs: recovery SHA-256
+`6f06b3c2b2fbe99aa504970e2489055f43cd8a01e3c7bdb31805441d81840467`, result
+SHA-256 `4b3b78274de1cc700dbdae605bb8fe0047e121ef55b611034162e41cea338086`.
+No duplicate copy was added. The existing packet reports 78+11 exact checks
+and explicitly keeps `complete_cost_info_identified=false`,
+`joint_nonlinear_roots_constructed=false`, `physical_program_selected=false`,
+and `GR_closed=false`.
+
+Its additional recovery argument claims a local nonflat Ricci-flat pp-wave
+family stationary for the specified original AF feedback, by an exact
+cellwise rescaling of the existing weights. It is a meaningful curved
+vacuum result for that named process. The packet also says that its earlier
+geometric calculation was not independently replayed in this supplement and
+does not claim a global torus solution. More importantly for this G0
+interface, it does not derive the missing common history-to-field readout,
+select the full D0 price, or provide the coupled matter/geometry variation
+law. The AF recovery and the two-price Lean countermodel therefore remain
+separate evidence with separate owners; neither is used as a premise for the
+other.
+
+The next G0 obligation is now precise: derive the admitted D0 history-to-full-
+payload map and its actual variation/refinement image, or prove a complete
+independence boundary for that admitted class. Another classification of
+scene paths or another isolated cost ratio cannot discharge this obligation.

@@ -1,0 +1,65 @@
+{
+  "status": "PASS_SCOPED_TYPED_HISTORY_BOUNDARY",
+  "verification_base_head": "e59050d347819d2bbbe9f1423bf109b9ed9f9440",
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_history_field_coupling.lean",
+  "capsule_sha256": "7c2e48b490cc19ddb2a637bc694dcf1f13eab3ab938378a29560e7db44b71ef8",
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_history_field_coupling.lean",
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "output": "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_output.txt",
+  "output_sha256": "8467f5d720a0fd60682c7ce343dfed576a439c63d7d78ba044a8d6f5c25d0109",
+  "checker": "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_check.py",
+  "checker_sha256": "1c45ea9351076137ee0031b6d596a3fcc981b1297ec2bd398f53b559e0f32ebb",
+  "printed_axiom_declarations": 15,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "sorryAx": false,
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md": "f2e2f2e2db9e63047f9d85f6daa8a18e31b363b0ffe8df6a22bd66f617dfeb3f",
+    "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": "692f2b5929b001361a2f22d7dc224fba46a80738036f26a1ff7bdd5175fc80c4",
+    "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean": "e851960cf5ed7c3abdb488dc70a2ed098d9a6bfb2ca0a60d2cbecda9f93da48d",
+    "03_FORMALIZATION/D0/VNext2/ScenePathHistoryCanonicity.lean": "2ed1da971417e0949b9f225ad768d80314fbafe0f930b0fcb8c0a662e0de66e0",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
+    "03_FORMALIZATION/D0/Geometry/A4DNilpotentAffineMatterLift.lean": "643182331ff9ecddb031ea44d829ea3d0900d8e551166bab68706683ad245563",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean": "591b39b7c7f618c08ada52713f8ce490d4e7973a8f54a0991523c2f04d260108"
+  },
+  "toolchain_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "re_supplied_packet": {
+    "pull_request": 334,
+    "head": "512fbe37448675ed498dea4343e1520b2d2397e8",
+    "zip_sha256": "fc92f1ea1e4d5923ce4af66c7af1245f923a293fc5023414e8b7f14335ce4b4a",
+    "source_ref": "cb513f74b3b9ae74d5f2dc02c126d21c9dfbefa7",
+    "recovery_input_ref": "c882fd25edfa9da1cfb861a86f6ef2de33b80967",
+    "recovery_blob_sha": "315519491af69883754d652d5ed3e8ab55d8a134",
+    "recovery_sha256": "6f06b3c2b2fbe99aa504970e2489055f43cd8a01e3c7bdb31805441d81840467",
+    "result_blob_sha": "ae4b985bc7bf59ad707f6046e19bff8b10e607c1",
+    "result_sha256": "4b3b78274de1cc700dbdae605bb8fe0047e121ef55b611034162e41cea338086",
+    "remote_blobs_reverified": true
+  },
+  "declarations": [
+    "scene_protocol_verified",
+    "path_sum_composition",
+    "fieldAction",
+    "fieldHistoryPrice",
+    "fieldHistoryPrice_refines",
+    "matched_baseline_action_protocols",
+    "native_scalar_block_preserves_matched_baseline_energies",
+    "matched_baseline_history_price_refines",
+    "matched_baseline_same_value_different_response",
+    "concrete_nonzero_memory_same_value_different_response"
+  ],
+  "scope": {
+    "G0_closed": false,
+    "GR_closed": false,
+    "D0_readout_derived": false,
+    "full_native_refinement_constructed": false,
+    "physical_action_selected": false
+  }
+}
