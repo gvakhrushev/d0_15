@@ -8510,3 +8510,9 @@ source on the actual stationary section, or the actual doubled variational
 principle. The result is integrated in strategic §7.87 with an exact
 SymPy checker and scoped independent analytical review. Full physical GR
 and original raw-216 remain open.
+
+## Follow-up: the canonical AF GNS already carries Golden live-left / old-right addresses (2026-10-19)
+
+The new [AF GNS live-prefix owner](A4D_AF_GNS_LIVE_LEFT_GOLDEN_PREFIX_2026_10_19.md) identifies the exact cost-n Golden F/R words with the type-A path rows of the existing level-(n-1) Fibonacci algebra. Its normalized GNS matrix units are `|u>_LIVE |v>_RIGHT`, and the canonical cyclic vector is the diagonal correlated sum with the already owned `p^n` and `p^(n+1)` cylinder weights. Therefore an active-row-controlled complete query commutes with every old-right matrix unit; a column-controlled hostile query fails. The exact AF complement can carry the baseline complete query without removing any modes. The pinned replay checks the complete cost cut through n=20, all tested right matrix units through n=6, and the existing balanced n=20,L=4 masses: 7424 selected prefixes, 3522 other exact-cost words retained, and READY-pair mass 0.2317139780019033.
+
+This closes the representation-level need to posit an extra live prefix register within the canonical AF GNS. The latest full 718×16 owner independently proves that the complete normalized joint record is blind to the common original Info shift even though the absolute Book pressure changes, so the AF GNS vector does not supply that absolute cost/clock channel. Nor does it identify the vector with the physically prepared G0 state or show that literal `fullStep` executes the 4D addressed CAR/scene query or pays its full Book/preparation/clock/work source. The same one-face, one-run physical comparison remains the consuming GR gate; `GR_closed=false`.

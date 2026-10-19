@@ -1,0 +1,38 @@
+{
+  "pins": {
+    "base_head": "940f150c160c13341b2a6cb933ff7e9e1f7e327f",
+    "inputs": {
+      "02_REGISTRY/research/A4D_FULL718_GOLDEN16_ABSOLUTE_BOOK_SOURCE_BLIND_MODE_2026_10_19.md": "e0cbc68c49baeda5819c0c7e4d10a3a7fd93f1a538d16c968935a33d4bc5f5f5",
+      "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md": "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3",
+      "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
+      "02_REGISTRY/research/A4D_GOLDEN_LEFT_LIVE_PREFIX_BEFORE_OLD_RIGHT_G0_ACTUATION_2026_10_19.md": "018510bd16d5a22e32146c310cb18ddf065a0a475f8a022ad1370123b477df6f",
+      "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+      "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json": "875200fb8337d1f4d9f1361bbc3f73c22c43b039c584371ea11be1a1710aea9c"
+    }
+  },
+  "cost_cut": {
+    "n": 20,
+    "type_A_exact_cost_words": 10946,
+    "type_B_pending_return_words": 6765,
+    "full_prefix_labels": 17711,
+    "exact_source_mass": 0.7236067989578545,
+    "pending_source_mass": 0.2763932010421472,
+    "total_source_mass_exact_Zp_pair": [
+      1,
+      0
+    ]
+  },
+  "commutant": {
+    "exact_right_matrix_unit_intertwinings": 76400,
+    "oldRIGHT_read_control_rejected": 1
+  },
+  "balanced_fixture": {
+    "n": 20,
+    "L": 4,
+    "words_per_role_cell": 29,
+    "selected_original_cost_n_words": 7424,
+    "unselected_original_cost_n_words_retained": 3522,
+    "selected_prefix_mass": 0.4907780810764765,
+    "ready_pair_mass": 0.2317139780019033
+  }
+}
