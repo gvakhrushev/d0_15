@@ -219,4 +219,98 @@ theorem same_endpoints_different_history_costs :
     return090.val.2.2 = return020.val.2.2 := by
   exact ⟨history_return090_cost, history_return020_cost, rfl, rfl⟩
 
+/-- A non-strict response of a complete two-tick path weight to its additive edge cost. -/
+theorem book03PathWeight_antitone_in_cost
+    (A B : ActionProtocol sceneProtocol) (p : Depth2Walk) (info : ℝ)
+    (hcost : twoStepCost A p ≤ twoStepCost B p) :
+    book03PathWeight B p info ≤ book03PathWeight A p info := by
+  unfold book03PathWeight
+  apply Real.exp_le_exp.mpr
+  have hlog : 0 < Real.log φ := Real.log_pos one_lt_goldenRatio
+  nlinarith
+
+/-- The coefficient of one memory class in the complete finite two-tick history sum.
+The `if` is the coefficient extraction for the basis element `[q(γ)]`; every valid
+two-edge history is included, not just a selected witness path. -/
+noncomputable def book03MemoryClassCoefficient
+    {Memory : Type*} [DecidableEq Memory]
+    (A : ActionProtocol sceneProtocol)
+    (memory : Depth2Walk → Memory)
+    (info : Depth2Walk → ℝ) (memClass : Memory) : ℝ :=
+  ∑ p : Depth2Walk,
+    if memory p = memClass then book03PathWeight A p (info p) else 0
+
+/-- If one action completion raises every directed edge cost, a full memory-class coefficient
+cannot cancel that response: it decreases strictly whenever the class contains one path on which
+the cost rose strictly. This is the whole finite depth-two `Z_D` coefficient, for arbitrary
+memory-class and fixed-information maps. -/
+theorem complete_two_tick_memory_coefficient_strictly_decreases
+    {Memory : Type*} [DecidableEq Memory]
+    (A B : ActionProtocol sceneProtocol)
+    (memory : Depth2Walk → Memory) (info : Depth2Walk → ℝ)
+    (memClass : Memory)
+    (hcosts : ∀ x y, A.action x y ≤ B.action x y)
+    (p₀ : Depth2Walk) (hclass : memory p₀ = memClass)
+    (hstrict : twoStepCost A p₀ < twoStepCost B p₀) :
+    book03MemoryClassCoefficient B memory info memClass <
+      book03MemoryClassCoefficient A memory info memClass := by
+  unfold book03MemoryClassCoefficient
+  apply Finset.sum_lt_sum
+  · intro p _
+    by_cases hmem : memory p = memClass
+    · simp [hmem]
+      apply book03PathWeight_antitone_in_cost
+      exact add_le_add (hcosts p.val.1 p.val.2.1)
+        (hcosts p.val.2.1 p.val.2.2)
+    · simp [hmem]
+  · refine ⟨p₀, Finset.mem_univ _, ?_⟩
+    simp [hclass]
+    exact book03PathWeight_strictly_decreases_with_cost A B p₀ (info p₀) hstrict
+
+/-- Raising just the owned directed edge `0 → 9` from the uniform cost 2 to 3 changes the
+complete two-tick coefficient of the class containing `[0,9,0]`, for every memory labelling and
+every fixed information assignment. All other path contributions in that class are unchanged or
+decrease, so the full sum has no cancellation loophole. -/
+noncomputable def raisedOneEdgeAction : ActionProtocol sceneProtocol where
+  action x y := if x = y then 0 else if x = (0 : Vertex) ∧ y = (9 : Vertex) then 3 else 2
+  action_refl := by intro x; simp
+  action_nontrivial := by
+    intro x y hxy
+    simp only [if_neg hxy]
+    split_ifs <;> norm_num
+
+theorem uniform_cost_le_raised_one_edge_cost :
+    ∀ x y, uniformHistoryAction.action x y ≤ raisedOneEdgeAction.action x y := by
+  intro x y
+  by_cases hxy : x = y
+  · subst y
+    simp [uniformHistoryAction, uniformHistoryCost, raisedOneEdgeAction]
+  · simp [uniformHistoryAction, uniformHistoryCost, raisedOneEdgeAction, hxy]
+    split_ifs <;> norm_num
+
+theorem raised_one_edge_return090_cost :
+    twoStepCost raisedOneEdgeAction return090 = 5 := by
+  change (if (0 : Vertex) = 9 then 0 else
+      if (0 : Vertex) = 0 ∧ (9 : Vertex) = 9 then 3 else 2) +
+    (if (9 : Vertex) = 0 then 0 else
+      if (9 : Vertex) = 0 ∧ (0 : Vertex) = 9 then 3 else 2) = 5
+  have h09 : (0 : Vertex) ≠ 9 := by decide
+  have h90 : (9 : Vertex) ≠ 0 := by decide
+  simp [h09, h90]
+  norm_num
+
+/-- The finite full-sum response certificate for every possible assignment of Book 03
+memory classes and fixed vertex-information terms. -/
+theorem full_two_tick_ZD_response (Memory : Type*) [DecidableEq Memory]
+    (memory : Depth2Walk → Memory) (info : Depth2Walk → ℝ) :
+    book03MemoryClassCoefficient raisedOneEdgeAction memory info
+        (memory return090) <
+      book03MemoryClassCoefficient uniformHistoryAction memory info
+        (memory return090) := by
+  apply complete_two_tick_memory_coefficient_strictly_decreases
+    uniformHistoryAction raisedOneEdgeAction memory info (memory return090)
+    uniform_cost_le_raised_one_edge_cost return090 rfl
+  rw [uniform_return090_cost, raised_one_edge_return090_cost]
+  norm_num
+
 end D0.Research.NativeHistoryActionResponse

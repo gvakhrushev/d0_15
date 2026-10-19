@@ -125,7 +125,7 @@ The same module constructs a strictly positive normalized joint table on two rea
 
 The admitted return walks `[0,9,0]` and `[0,20,0]` have the same endpoints and tick count. The uniform protocol assigns costs `4` and `4`; the second protocol assigns `5` and `4`. Therefore Book 03's coefficient `w(γ)=exp((Info(γ)−Cost(γ)) log φ)` for `[0,9,0]` changes by the exact factor `φ`: `w_uniform = φ · w_second`, for every fixed real `Info(γ)`. Lean also proves that the `[0,20,0]` control coefficient is unchanged. The module checks the two protocols, walk validity, exact costs, the strict weight change, the exact ratio, and the control.
 
-This removes only the narrower possibility that the abstract cost freedom is invisible at every fixed path coefficient under this explicit diagnostic identification. It is not the full group-algebra sum `Z_D`, whose memory classes and combined response are not evaluated here; it does not prove that the identification is physically admitted, that `Info` is independent in a native preparation, or that a metric/matter variation maps to either protocol. The unresolved G0 arrow remains the owned map from a common native state and its admitted variations to the path-level `Cost`, `Info`, memory class, and refinement transitions. No metric source, stationarity, curved root, or GR result follows.
+This per-path result alone did not evaluate the full group-algebra sum `Z_D`. Section 9 below now closes that finite depth-two response under a fixed memory map and fixed total-information assignment. Neither result proves that the diagnostic identification is physically admitted, that `Info` is fixed under a native preparation, or that a metric/matter variation maps to either protocol. The unresolved G0 arrow remains the owned map from a common native state and its admitted variations to the path-level `Cost`, `Info`, memory class, and refinement transitions. No metric source, stationarity, curved root, or GR result follows.
 
 ## 8. Exact parameterization of the formal action-protocol family
 
@@ -133,4 +133,36 @@ The new `actionProtocolExcessEquiv` theorem classifies **every** inhabitant of t
 
 The generic theorems `book03PathWeight_strictly_decreases_with_cost` and `book03PathWeight_eq_iff_cost_eq` show that, under the already explicit diagnostic identification `Cost(x,y) := ActionProtocol.action x y`, a fixed path's Book 03 coefficient with fixed `Info` changes strictly with its additive cost; equal coefficients are equivalent to equal path costs. The `[0,9,0]`/`[0,20,0]` witness is therefore one concrete response-visible slice of the exact formal family, rather than the basis for extrapolating to it.
 
-This closes the full **formal protocol fiber** and establishes that its free excess data can affect an owned single-path coefficient. It still does not classify the full native D0 action family: `ActionProtocol` has no field identifying its transition cost with the Book 03 `Cost(e)`, nor does it include `Info(v)`, memory classes, the complete `Z_D` sum, or the native refinement map. The next G0 theorem must construct these together from one admitted `Σ`/history/readout object and prove how its allowed variations act on `(q,D,b,m)`. M1 must be applied only after that readout map is built: if the native distinguishability test changes, the change must be recorded in `R`; if all distinctions remain fixed, `D_min` must canonize the representations. Until this map and quotient are derived, G1's matter source/Ward identity has no native action to differentiate.
+This closes the full **formal protocol fiber** and establishes response-visible free excess data both at a fixed path and in the finite depth-two `Z_D` coefficient of any fixed memory class. It still does not classify the full native D0 action family: `ActionProtocol` has no field identifying its transition cost with the Book 03 `Cost(e)`, nor does it include the native `Info(v)`, memory assignment, or refinement map. The next G0 theorem must construct these together from one admitted `Σ`/history/readout object and prove how its allowed variations act on `(q,D,b,m)`. M1 must be applied only after that readout map is built: if the native distinguishability test changes, the change must be recorded in `R`; if all distinctions remain fixed, `D_min` must canonize the representations. Until this map and quotient are derived, G1's matter source/Ward identity has no native action to differentiate.
+
+## 9. Full finite two-tick `Z_D` response has no cancellation loophole
+
+`D0.Research.NativeHistoryActionResponse.full_two_tick_ZD_response` evaluates the
+coefficient of a memory class in the complete finite sum over **all** valid two-edge
+walks on the actual `K(9,11,13)` carrier. Let `q(γ)` be any map of those walks into
+any discrete memory-class type, and let `Info(γ)` be any real total-information term
+held fixed between the two protocol completions. The coefficient is
+
+\[
+C_A(q_0)=\sum_{\substack{\gamma\in\Gamma_D(2)\\q(\gamma)=q_0}}
+\exp\!\left((\operatorname{Info}(\gamma)-\operatorname{Cost}_A(\gamma))\log\varphi\right),
+\qquad
+\operatorname{Cost}_A(u,v,w)=A(u,v)+A(v,w).
+\]
+
+The uniform protocol assigns cost 2 to each non-identity directed edge. The second
+admissible protocol raises only `0 → 9` to cost 3. It is pointwise no cheaper on any
+edge, and the admitted return walk `[0,9,0]` has cost 5 instead of 4. Therefore every
+path weight in every memory class is unchanged or decreases, while the class containing
+`[0,9,0]` contains at least one strictly decreased positive term. Its **complete**
+coefficient strictly decreases, for every choice of `q` and every fixed `Info`; no
+cancellation among other histories in that class can hide the response. This is stronger
+than the selected-path factor calculation in §7 and is a Lean theorem over the full finite
+`Depth2Walk` carrier.
+
+The hypotheses are still diagnostic: the theorem identifies `Cost(u,v)` with the
+abstract `ActionProtocol.action u v`, fixes `Info` and the memory map across completions,
+and uses the finite Book 03 weight. It does not prove that D0 admits either cost profile,
+that its native `Σ` selects these `q` and `Info` maps, or that the action variation pulls
+back to a physical field variation. The native history/readout-to-field map, completeness
+of its action family, and physical response visibility remain open G0 obligations.
