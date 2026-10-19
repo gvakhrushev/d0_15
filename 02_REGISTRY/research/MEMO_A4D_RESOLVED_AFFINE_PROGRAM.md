@@ -1017,6 +1017,21 @@ The next physical gate is to evaluate that complete admitted history on the
 same full tangent and determine whether its source descends to the existing
 `S_star` and independently derived matter source. `GR_closed` remains false.
 
+There is also a precise scoped obstruction for the **current fixed-probe
+mean-Shannon term** of the [positive Lorentz Julia tester](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md).
+Its gates, Choi preparation and POVM depend on the
+ordered Lorentz links, not on an independent coframe variation. At fixed
+links, `D H(q)[delta e]=0`. The original star functional instead contains
+`e wedge e`; under `e -> (1+s)e` it scales as `(1+s)^2`, so its coframe
+source is nonzero on generic off-shell configurations. Therefore this
+Lorentz-only readout price cannot be a nonzero multiple of the full
+Palatini source on the 16+24 tangent. This rejects only the stated
+fixed-probe price, not D0: a positive route must derive the coframe response
+from the same admitted native carrier (for example the already-owned
+`X_{x,r}=C(u_{x,r}) Lambda M_{x,r}` and history mass `mu_x`) and include its
+real Cost−Info, preparation and work source. Inserting `e` only into a
+post-measurement observable would not fix the variational source.
+
 ### Strategic context and preserved inputs
 
 The integrator, or a new chat establishing programme context, reads the full
