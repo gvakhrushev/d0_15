@@ -4,4 +4,4 @@ Start with the Russian integration note: [README_RU.txt](README_RU.txt). The pre
 
 This is a scoped readout-source result. It does not select the full native D0 price or replace the two-tick feedback action.
 
-The separate [basis-completion control](check_exterior_basis_ambiguity.py) gives an exact same-compression counterexample: a Hadamard rotation inside the failure space changes the full Shannon source. Its receipt is [BASIS_COMPLETION_CONTROL.json](BASIS_COMPLETION_CONTROL.json). This identifies the output-basis selection as load-bearing; it does not claim that both completions are physically native-admissible.
+The separate [basis-completion control](check_exterior_basis_ambiguity.py) gives an exact same-compression counterexample: applying the existing golden two-port gate (G) inside the failure space changes the full Shannon source. Its receipt is [BASIS_COMPLETION_CONTROL.json](BASIS_COMPLETION_CONTROL.json). This identifies the output-basis selection as load-bearing; it does not claim that both completions are physically native-admissible at the same Book cost.

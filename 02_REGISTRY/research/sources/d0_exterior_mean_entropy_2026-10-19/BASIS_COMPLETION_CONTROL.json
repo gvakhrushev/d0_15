@@ -1,17 +1,18 @@
 {
   "status": "PASS_SAME_COMPRESSION_BASIS_AMBIGUITY",
-  "check_count": 11,
+  "check_count": 12,
   "checks": [
     "pinned check_exterior_mean_source.py",
     "pinned RESULT.json",
     "both completions preserve the same good compression",
     "polar completion is an isometry",
-    "Hadamard failure completion is an isometry",
+    "golden-gate failure completion is an isometry",
     "all six polar occupation outcomes retained exactly",
-    "all six rotated occupation outcomes retained exactly",
+    "all six golden-gate occupation outcomes retained exactly",
     "both complete laws normalize",
     "general entropy shift has exact closed form",
     "same K has a nonzero first-source shift",
+    "golden gate split probabilities are p and p squared",
     "golden failure-basis source gap is nonzero"
   ],
   "input_sha256": {
@@ -37,23 +38,23 @@
       "0",
       "21/64"
     ],
-    "hadamard_failure_completion_probabilities": [
+    "golden_gate_failure_completion_probabilities": [
       "9/64",
-      "27/128",
-      "27/128",
-      "7/128",
-      "7/128",
+      "81/128 - 27*sqrt(5)/128",
+      "-27/128 + 27*sqrt(5)/128",
+      "-7/128 + 7*sqrt(5)/128",
+      "21/128 - 7*sqrt(5)/128",
       "21/64"
     ],
-    "entropy_gap_exact": "17*log(2)/32",
-    "entropy_gap_first_derivative_wrt_a_exact": "log(2)/2 at b=1/4"
+    "entropy_gap_exact": "17/32 * [-p*log(p)-p^2*log(p^2)]",
+    "entropy_gap_first_derivative_wrt_a_exact": "[-p*log(p)-p^2*log(p^2)]/2 at b=1/4"
   },
   "golden_control": {
     "a_Q": "41216 - 18432*sqrt(5)",
     "a_R": "16491664 - 7375296*sqrt(5)",
-    "dH_gap_for_DaQ": "(1-2*a_R)*log(2)*Da_Q",
-    "coefficient_value": "-0.4017726585829970"
+    "dH_gap_for_DaQ": "(1-2*a_R)*H(p)*Da_Q",
+    "coefficient_value": "-0.3854682131323698"
   },
-  "scope": "Two valid complete isometries with identical good compression have different full occupation laws and different Shannon first sources. This does not show both completions are native-admissible; it shows the compression alone does not select the polar readout basis or its mean entropy.",
-  "checker_sha256": "cf9a53858b68963344d778328f3e52cff8c6687ccaa826b328ca1e49ab77ab30"
+  "scope": "Two valid complete isometries with identical good compression have different full occupation laws and different Shannon first sources. The second completion uses the existing golden two-port G on the failure subspace. This is a kinematic allowed-gate control, not proof that a post-feedback failure rotation is admitted or has the same native Book cost; the compression alone does not select the polar readout basis or its mean entropy.",
+  "checker_sha256": "8aab0653b87dc15a3c5aefec24958cfc05b40e822328aa94b8c9be46d3c9a3a9"
 }
