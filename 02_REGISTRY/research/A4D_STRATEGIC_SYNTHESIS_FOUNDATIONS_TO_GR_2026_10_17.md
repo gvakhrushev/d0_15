@@ -4603,3 +4603,50 @@ The ENTIRE normalized unconditional endpoint law is θ-independent **IFF the tru
 \(\partial_2C(q_{i-1},q_i)+\partial_1C(q_i,q_{i+1})-dI(q_i)\), independent of θ. Both endpoints' canonical momenta shift by SAME exact 1-form \((\theta-\eta)dI\), so the discrete symplectic form and its full bulk constraints/Euler jets are identical for any smooth source. This is an actual all-order **information-cohomological quotient** for the same completed native path law, not an external Einstein scalar.
 
 **Strategic change:** §7.57 had left choosing θ as an apparently separate physical gate. For a genuinely complete closed/endpoint-conditioned D0 gravitational reading, θ itself is now REMOVED from the *bulk* GR forcing problem; the actual physical choices still needed are the branch Info observable/event, primitive Cost law, full field→native-Lorentz/Kraus and Book historical action/clock/preparation binding, and—in an unconditional open ensemble—the explicit endpoint-event variance/source. This narrows the true original-D0 Cost−Info→nonlinear Lorentz-star source problem without adding another metric term, detector angle, spectrum or readout. The full original D0⇒GR and fixed-g/tau raw#216 remain open.
+
+### 7.60. Whole-code-class first-source universality and a C1 exact-root consumer
+
+The [complete code-class theorem](A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md)
+now strengthens §7.43's fixed-universal-encoder result. For ONE fixed
+injective description of all outcomes, let its cost obey
+`L_N<=c_universal+d_N`. It need not be prefix-free: the count of golden
+F/R words of cost j is at most phi^j, so costs bounded by M_N have total
+code mass at most M_N+1. The exact negative-redundancy tail and complete
+history score then give
+
+\[
+ \left|D_V[(\mathbb E L_N-H_\varphi(P_N))/N]\right|
+ \le C_N\sqrt{I_N(V)}/N,
+\]
+
+with explicit C_N=O(log N) for the fixed-alphabet competitive family.
+Thus the source converges at O(log N/sqrt N) under bounded per-step Fisher.
+No separate probability floor, a uniquely implemented optimal code, or IID
+is needed where the actual sequential score bound and competitor are owned.
+The complete-history entropy, its normalization and all source norms remain
+explicit; no one-site entropy is substituted for a correlated history.
+
+Two sharp boundaries prevent false closure. First, canonicity alone does not
+give the needed semantic competition: the actual shortest-description
+language/cost and an admitted decoder must identify the compressed word
+with the SAME full history under Delta. The literal F->0,R->10 comparison
+interface has code-rate derivative 1 at an equal-probability split, while
+the Shannon derivative is 0. Second, fixed code weights cannot themselves
+equal a moving Book law on a fixed frame. Native statistical price,
+`D log Z_raw`, preparation, clock and execution work still need their own
+same-programme binding.
+
+A complete-code negative control also rules out universal C2 promotion:
+one extra F on a central binomial window changes the mean rate by at most
+1/N and has vanishing first-source difference, but its second-source
+difference tends to -8 times the standard Gaussian density at 1.
+Nevertheless the new owner proves an exact-root alternative: uniform first
+sources plus a genuine invertible FULL reference source on a closed
+admissible ball imply an exact finite perturbed root by Brouwer. No
+derivative of the perturbed source is required. This conditional theorem
+can consume the code-source estimate; it does NOT supply the full inverse
+for the existing degenerate Brinkmann/preparation family. That inverse,
+the same physical price and the source/readout/refinement scales remain
+open. The mathematical premise removed is the demand for exact optimal
+encoder realization or arbitrary C2 code universality, not a physical GR
+obligation. Original raw#216 and full D0=>GR are unchanged.

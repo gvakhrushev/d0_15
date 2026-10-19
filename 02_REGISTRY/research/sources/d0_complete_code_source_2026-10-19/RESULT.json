@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "scope": "finite code/source controls; analytic proofs in owner; physical GR open",
+  "exact_golden_cost_levels": 31,
+  "iid_code_source_fixtures": 36,
+  "iid_small_probability_example": [
+    {
+      "N": 6,
+      "q": "1/100",
+      "code": "prefix",
+      "source_error": -6.135853452338815,
+      "source_bound": 32.99066245304328,
+      "fisher": 606.060606060606,
+      "cost_max": 13,
+      "code_mass_bound": 1
+    },
+    {
+      "N": 6,
+      "q": "1/100",
+      "code": "injective_nonprefix",
+      "source_error": 0.521076896961184,
+      "source_bound": 44.47970693084969,
+      "fisher": 606.060606060606,
+      "cost_max": 13,
+      "code_mass_bound": 14
+    }
+  ],
+  "correlated_complete_markov": {
+    "steps": 6,
+    "complete_histories": 128,
+    "types": 44,
+    "martingale_fisher_exact": "73061/3402",
+    "source_error": -0.8971754918575776,
+    "source_bound": 9.021313080248738,
+    "fisher": 21.475896531452086,
+    "cost_max": 15,
+    "code_mass_bound": 1
+  },
+  "second_jet_hostile": [
+    {
+      "m": 1,
+      "N": 4,
+      "second_source_difference": -1.5
+    },
+    {
+      "m": 2,
+      "N": 16,
+      "second_source_difference": -1.8328857421875
+    },
+    {
+      "m": 3,
+      "N": 36,
+      "second_source_difference": -1.8905517412349582
+    },
+    {
+      "m": 4,
+      "N": 64,
+      "second_source_difference": -1.9104327619127752
+    },
+    {
+      "m": 8,
+      "N": 256,
+      "second_source_difference": -1.9294565098099803
+    },
+    {
+      "m": 32,
+      "N": 4096,
+      "second_source_difference": -1.935371932503384
+    },
+    {
+      "m": 128,
+      "N": 65536,
+      "second_source_difference": -1.9357411814967413
+    }
+  ],
+  "second_jet_limit": -1.935765796153147,
+  "literal_description_hostile": {
+    "literal_rate": "3/2",
+    "literal_source": "1",
+    "entropy_source": 0.0,
+    "missing_premise": "competitive same-object decoder equivalence"
+  },
+  "full_D0_price_selected": false,
+  "generic_joint_recovery": false,
+  "GR_closed": false
+}

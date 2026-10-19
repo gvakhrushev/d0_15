@@ -13,6 +13,28 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 19 October: code-class first-source synthesis on the complete history
+
+Input `46147621adcbfd64fd639b3ca7f8d6730565b4de`; continue existing Draft
+#334 and `native-programme-v1`, without creating an independent execution.
+Consumer: strategic §7.43's D_min-to-complete-history first-source bridge,
+then §7.29's two-source Einstein stratum. The fixed universal golden code
+already has a faithful-chart C1 theorem. Test the stronger whole-code-class
+statement: a field-independent, Kraft-valid description dominated pointwise
+by that code has the same limiting source, with its ACTUAL full-history
+Fisher norm and no discarded outcomes. Do not assume prefix validity or the
+domination for the foundations' D_min. Preserve raw normalizer, encoder,
+copy/preparation/clock sources, signal and original raw-216 norm.
+Root owns the proof, bounded checker and consuming appendices; read-only
+assistants may inspect the analytical estimate and its D_min applicability
+in scratch only. Smallest decisive checks: exact Kraft negative-tail/score
+identities, actual F/R code fixtures, and a second-jet hostile control.
+Write surface: new `A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md`,
+`sources/d0_complete_code_source_2026-10-19/`, and append-only intake in the
+existing primary and strategic synthesis. No BOOK, claim, acceptance,
+workflow or lifecycle promotion. Physical native GR stays open unless its
+remaining premises are separately proved on the SAME programme.
+
 ### 18 October: whole-polynomial vacuum preparation consumer
 
 Inputfbe3613c; same Draft334 and eight owned paths. Consume the ACTUAL

@@ -8111,3 +8111,32 @@ Cost--Info law. On the geometry side, the crossed continuum-LC trial is not
 an exact finite root; constructing or excluding a genuine sourced two-sided
 root remains open. Neither conditional result selects a physical source or
 closes general GR.
+
+## 19 October: competitive complete descriptions and a full-source root criterion
+
+New disjoint consumer of strategic §7.43:
+[complete code-class first-source universality](A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md).
+The existing single-code C1 result now extends to every fixed competitive
+injective description in the same cost language. A finite code-mass bound
+and an exponential negative-redundancy tail give the exact source estimate
+`C_N sqrt(I_N(V))/N`; golden word counts remove the prefix-free hypothesis.
+The estimate keeps the entire moving record law, admits an actual correlated
+history score bound, and has no separate probability-floor parameter.
+
+The next minimal D_min bridge is one same-object admitted decoder with a
+competitive cost bound and the actual description-language growth rate.
+Exact computation or implementation of the minimizing encoder is unnecessary.
+An explicit literal-history comparison interface demonstrates that
+canonicity alone does not prove this bridge. Nor can a fixed description's
+constant Boltzmann weights select the moving native detector law; the
+complete Book normalizer, work, clock and preparation sources remain.
+
+The owner also proves a conditional exact-root transfer using uniform first
+sources and Brouwer on a genuine full-system stationary chart. It avoids
+demanding C2 convergence of arbitrary code choices, which a complete
+one-extra-F binomial control explicitly disproves. It does not furnish the
+missing full inverse/physical preparation for the all-40 geometric roots.
+The source estimate and its finite standard-library checker are integrated
+in strategic §7.60; internal independent analytical review is recorded in
+the packet. No BOOK/claim/assembly acceptance or lifecycle status changes.
+Physical D0=>GR and the original fixed-source raw-216 terminal stay open.
