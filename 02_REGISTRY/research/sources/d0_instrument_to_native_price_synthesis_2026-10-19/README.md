@@ -20,7 +20,7 @@ Repository owners support the following scoped results:
   finite t vacuum critical-set identity is conditional on the prepared
   capacity profile and query; it does not select that profile or provide an
   independent matter source. See strategic §§7.40, 7.49–7.50 and the
-  [response-preserving boundary](../../A4D_CY_RESPONSE_PRESERVING_CAPACITY_BOUNDARY_2026_10_19.md).
+  [response-preserving boundary](https://github.com/gvakhrushev/d0_15/blob/459b41fd091ce608d5086615e518247677859e1b/02_REGISTRY/research/A4D_CY_RESPONSE_PRESERVING_CAPACITY_BOUNDARY_2026_10_19.md).
 - The original 33-node/718-edge positive scalar transfer has a unique
   Perron–Doob stationary preparation, an exact all-field first-source formula,
   and a one-correlated-history Golden code/source limit. See the
