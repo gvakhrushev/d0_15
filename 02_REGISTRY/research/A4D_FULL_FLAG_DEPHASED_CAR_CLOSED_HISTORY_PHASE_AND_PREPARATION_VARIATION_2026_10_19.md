@@ -186,7 +186,7 @@ An integer Bareiss determinant, with NO tolerance-based rank argument, yields
 \det[336D_\xi\boldsymbol{\Phi}]=84\,934\,656,\qquad
 \det D_\xi\boldsymbol{\Phi}
 =\frac{84\,934\,656}{336^6}
-=5.90268038355\cdot10^{-8}>0.
+=\frac1{16\,941\,456}\approx5.90268038355\cdot10^{-8}>0.
 }\tag{10}
 \]
 
