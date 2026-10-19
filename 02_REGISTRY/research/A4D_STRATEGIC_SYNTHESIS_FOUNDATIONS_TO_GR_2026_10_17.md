@@ -4863,6 +4863,12 @@ D\log_\varphi\lambda[V]
 -\sum_{u\to v}\pi_uP_{uv}DC_{uv}[V].
 \]
 
+There is no extra source hidden in the moving Perron eigenvectors: if all
+primitive \(DI_v[V]\) and \(DC_{uv}[V]\) vanish on a field tangent, this
+whole pressure source vanishes on that tangent. Any nonzero gravitational or
+CAR response in this route must therefore be derived from the actual
+field-dependence of the native edge Cost/Info on the same execution.
+
 The same owner proves a one-correlated-history Golden code whose per-step
 value and first source converge to this pressure, including the moving
 stationary preparation. The arbitrary-simplex \(W(\pi,g)\) question in §7.62
