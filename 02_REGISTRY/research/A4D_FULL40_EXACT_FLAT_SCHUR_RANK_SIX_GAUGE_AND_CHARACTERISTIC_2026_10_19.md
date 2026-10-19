@@ -111,3 +111,69 @@ For a fixed infinite polynomial/unwrapped carrier, the Lorentz and backward-grad
 The previous finite exact \([ab]\), cubic and quartic polynomial solutions are now connected to an **all-field flat Schur theorem**: rank 24 link + rank6 generic reduced coframe on 40 independent variables, with ten generic gauge nulls. At the exact period-two null point \(z=(1,-1,1,1)\), the rank-four degeneration has precisely two TT directions after quotienting those ten gauges. The opposite null direction has an additional unclassified null. This is a finite-lattice polarization result at a specific wave, not the full continuum on-shell spectrum. The final null-plus-matter theorem still needs one compulsory Book/Cost−Info execution to select these source equations. The geometric statement is explicitly linear and exact finite, not physical closure.
 
 **Next smallest decisive gate**: compute the exact fifth-order four-component divergence of the native cubic/quartic coframe source on the saved rational branch, with a boundary-collar convention, and the first rank-six minor/denominator in the limit h→0. If both are controlled, the existing terminating Cartan inverse plus rank-six Schur pave a principled all-order analytic existence route. Otherwise the first nonzero Ward defect identifies precisely the missing coframe/source compatibility. Do NOT launch another undirected bulk rank census or claim GR_closed=true.
+
+
+## 6. Constructive exact TWO finite transverse-traceless wave solutions on the original linearized star, for any null u-profile
+
+The rank-four special point z=(2,1,1,1) in §3 has a *structural* explanation rather than being merely a characteristic minor. Keep the same flat null coframe, ORIGINAL 16 coframe plus24 independent link Euler, and take an arbitrary real lattice function \(f(u)\) in one original null direction u; no dependence on v,x,y. Put \(D_u^-:=1-T_u^{-1}\). There are TWO linearly independent transverse-traceless coframe directions:
+\[
+\begin{array}{lll}
+(+):&
+\delta e^2{}_x=f(u),&\delta e^3{}_y=-f(u),\\
+(\times):&
+\delta e^2{}_y=f(u),&\delta e^3{}_x=f(u).
+\end{array}
+\tag{11}
+\]
+All other 16 coframe perturbations are zero. Their **original proper-Lorentz** link corrections are fixed, with NO free profile fit:
+\[
+\boxed{
+\begin{array}{lll}
+(+):&\omega_x=D_u^-f\,N_2,&\omega_y=-D_u^-f\,N_3,\\
+(\times):&\omega_x=D_u^-f\,N_3,&\omega_y=D_u^-f\,N_2,
+\end{array}
+\quad\omega_u=\omega_v=0.
+}\tag{12}
+\]
+In the exact original generator order \(X_{ij}=(E_{ij}-E_{ji})\eta\) for
+\((01,02,03,12,13,23)\), \(X_{12}=-N_2\) and \(X_{13}=-N_3\).
+For a Laurent u-wave \(f(u)\sim t^{j_u}\), its two Euler blocks are
+\[
+\boxed{L(t)\omega(t)+B(t)\delta e(t)=0,\qquad
+C(t)\omega(t)=0,\qquad\forall t\ne0.}\tag{13}
+\]
+This is an EXACT rational-Laurent identity in \(t\), not only a modular
+rank4 witness. Derivation: \(L(t)\) depends on \(t^{-1},1,t\) only, by
+the two based adjacent faces and linearity in the one-site u-wave.
+For each of the two constant TT vectors, the true
+\(B(t)e=(1-t^{-1})b_0\), while their constant link seed \(w_0\)
+satisfies \(L(t)w_0=-b_0\).
+The latter Laurent degree≤1 identity is proved coefficientwise by
+three exact dyadic substitutions t=1,2,4, which determine every
+coefficient of \(tL(t)w_0+t b_0\), a degree≤2 polynomial.
+The old \(\epsilon\)-contracted solder return obeys
+\(C(t)w_0=0\) because \(C(t)=(t-1)C_1\) in the u-only sector
+and the explicit direct contraction \(C_1w_0=0\).
+Thus \(w(t)=(1-t^{-1})w_0\) solves both original Euler blocks.
+By discrete Fourier/Laurent superposition, every polynomial or finitely
+supported u-profile satisfies (13) wherever its original site and
+boundary/collar equations are defined.
+
+**Interpretation:** The exact flat finite-star principal system
+already has BOTH spin-two TT polarisations, with native proper-Lorentz
+connections determined by the same Cartan source. This explains
+constructively why the reduced rank drops from 6 to4 on this null
+characteristic, while the ten generic gauge directions are retained.
+The two linearized TT waves are NOT an all-amplitude nonlinear vacuum
+family, do NOT establish a general Lorentz-invariant finite lattice
+dispersion relation, and do NOT select a compulsory historical D0 price.
+They complement the earlier NONLINEAR exact pp-wave root, whose coframe
+gauge is different.
+
+The bounded dyadic interpolation/proper-link and 16-coframe direct check
+is added to the independent [full40 ordinary Laurent checker]
+(sources/d0_two_null_crossing_2026-10-19/check_full40_flat_schur_symbol.cjs)
+as exactTwoNullTT(). It uses both original TT polarisation fields
+and checks all 24+16 Euler coefficients, not just the Schur rank.
+The exact finite-field checker still supplies the separate generic
+rank6 witness.
