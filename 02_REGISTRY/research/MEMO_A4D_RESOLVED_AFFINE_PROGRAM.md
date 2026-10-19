@@ -24,7 +24,7 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.38](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.45](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
@@ -98,7 +98,12 @@ Keep this construction separate from the conditional Hodge-heat/chronology
 obstruction: on a genuinely shared admitted carrier, scalar stationarity
 forces the complete feedback covector `dJ` to zero while the volume-preserving
 heat shape derivative stays positive, excluding stationarity of that `H+J`
-price. The owners still leave that shared physical preparation open, and the
+price. Synthesis §7.45 sharpens its link boundary: the owned affine-linked
+CAR transports are exactly blind to the `16v` affine-shift subspace, so under
+a matching heat binding that block must be sourced by the remaining native
+price `R`; the binding and `R` remain open. This is a necessary source check
+within the complete native-address/admission route, not a competing route.
+The owners still leave that shared physical preparation open, and the
 two-tick `J₂` construction does not supply it because its complete price and
 decoder are different.
 

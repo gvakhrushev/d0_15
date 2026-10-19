@@ -3506,3 +3506,53 @@ remaining parent blocker is an exact same-source joint-critical continuation
 at nonconstant \(Q_h\), not another coefficient-range check. Thus neither the
 positive response-decoupling terminal nor the valid joint-critical
 counterexample is established; #334 stays on its registered route.
+
+
+### 7.45. Existing CAR heat is exactly blind to the affine-shift part of the link fiber
+
+On the regular point of §7.31, keep \(q,m,D_e\) fixed and vary only the
+affine shifts \(b_e\). This is a \(16v\)-dimensional subspace of the stated
+\(40v\)-dimensional quotient tangent: there are \(4v\) positive edges and
+four independent shift components on each.
+
+The existing Lean owner proves more than a vanishing first derivative. For
+both `archiveAffineLinkedHodgeDirac` and the coframe-soldered
+`archiveSolderedDirac`, equality of the linear parts of two affine links
+implies exact equality of the resulting operators, for every input cochain
+and every fixed solder/observer. See
+[`ArchiveAffineExteriorLink.lean`](../../03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean),
+theorems `archiveAffineLinkedHodgeDirac_shift_irrelevant` and
+`archiveSolderedDirac_shift_irrelevant`. Thus any scalar functional built
+from either of these exact operators—including a finite spectral trace of
+its square—is exactly constant along these shifts, whenever that functional
+is defined.
+
+The chronological determinant price is separately owned as \(J(c(q,m))\);
+its owner explicitly leaves links and shifts out. Hence \(dJ[\delta b]=0\)
+on the same subspace. The conclusion for the heat term has a necessary
+boundary: the current bootstrap has not identified its native \(\Delta\)
+with either affine-linked CAR operator (`bootstrap_heat_identification` is
+`OPEN` in the soldered-heat certificate). The core Book 03 defines its
+primitive triple and \(\Delta_G=D^2\) on the scene, then writes
+\(\Delta_N(V)\) in the master action; those definitions do not supply a map
+from that scene operator to the affine field quotient \((q,D,b,m)\). See
+[`BOOK_03`](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md),
+§§03.1.1–03.1.2 and 03.25. The homogeneous heat certificate uses identity
+links and cannot itself supply a native link jet. So the exact result is
+conditional: **if** this CAR operator is the selected heat
+operator, then \(d(H+J)[\delta b]=0\), and stationarity of the complete
+\(H+J+R\) price on an admitted shift fiber forces
+
+\[
+ dR[\delta b]=0\qquad\text{for every edge shift }\delta b_e\in\mathbb R^4.
+\]
+
+This is a concrete necessary source-descent test on \(16v\) directions, not
+a physical no-go: the full remainder and physical admission are not fixed.
+It also does not settle the other \(24v\) Lorentz-linear link directions;
+their heat derivative still needs the same-process positive pairing,
+moving-adjoint terms, and bootstrap binding. Any candidate complete source
+used by the current native-address/admission route must be evaluated on the
+shift block and then the Lorentz-link block; this is a necessary interface
+test, not a replacement for that route or the separate §7.44 joint-critical
+continuation. No Einstein closure is promoted.
