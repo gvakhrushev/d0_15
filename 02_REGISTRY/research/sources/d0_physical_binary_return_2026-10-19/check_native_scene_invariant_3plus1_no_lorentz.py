@@ -80,4 +80,23 @@ print("PASS all718 original Book Fisher Hessian rank3, 4D inertia (0,3,1)")
 print("PASS exact odd transfer cubic x^3-359*x-1287*(q^3+q^-3)")
 print("PASS exact original chiral second source",format(chiral,'.15f'))
 print("PASS eigenvalues of 4D quotient",eig4)
+
+# Original native CURRENT/FUTURE edge embeddings J0,J1 and the rank32
+# feedback archive. The ONLY invariant odd cost history direction is
+# incoming- and outgoing-conditionally centered: rank32-future DARK.
+J0=np.zeros((len(u),33))
+J1=np.zeros((len(u),33))
+J0[np.arange(len(u)),u]=np.sqrt(P[u,v])
+J1[np.arange(len(u)),v]=np.sqrt(f/pi[v])
+Tsite=J0.T@J1
+R=J1-J0@Tsite
+godd=G@B[:,3]
+assert np.linalg.norm(J0.T@godd)<2e-12
+assert np.linalg.norm(J1.T@godd)<2e-12
+assert np.linalg.norm(R.T@godd)<2e-12
+assert np.linalg.matrix_rank(R,tol=1e-10)==32
+assert len(u)-33-32==653
+assert abs(-ell*(godd@godd)-chiral)<2e-12
+print("PASS invariant chiral cost source entirely inside original dark653 archive")
+
 print("SCOPE: no physical A4D role compiler, Lorentz metric or GR closure")
