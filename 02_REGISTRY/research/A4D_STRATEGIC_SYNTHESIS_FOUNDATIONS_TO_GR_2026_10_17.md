@@ -5213,39 +5213,6 @@ state-to-metric Lipschitz premise nor that degree has yet been established on
 the admitted full carrier, and this does not select Shannon, `J₂`, or `H+J+R`
 as the complete physical price. `GR_closed=false`.
 
-### 7.69.2. The original flat Palatini Schur symbol has generic rank exactly six
-
-The 40-row flat Hessian of the original six-based star action now has an
-exact Laurent-symbol audit. The coefficientwise checker proves the four
-backward-coframe gradient Wards, all six local-Lorentz link/coframe Wards,
-and the variational-adjoint identities
-\(L(z)^T=L(z^{-1})\), \(C(z)=B(z^{-1})^T\). Thus, wherever \(L\) is
-invertible, the reduced coframe Schur symbol \(S=-CL^{-1}B\) has ten
-independent gauge nulls at generic \(z\).
-
-The separate exact \(\mathbb F_{1009}\) witness at \(z=(2,3,5,7)\) has
-\(\operatorname{rank}L=24\), \(\operatorname{rank}S=6\), and rank ten for
-those Ward vectors. Nonzero minors at this specialization prove that \(L\)
-is generically invertible, the ten nulls are generically independent, and
-the Schur rank is generically at least six. Together with the symbolic Ward
-upper bound this gives \(\operatorname{rank}_{\mathbb Q(z)}S=6\), with a
-ten-dimensional coframe kernel. The exact-symbol and modular witnesses are
-replayed by
-[`check_full40_symbolic_ward_identities.cjs`](sources/d0_two_null_crossing_2026-10-19/check_full40_symbolic_ward_identities.cjs)
-and
-[`check_full40_schur_rank_modular.cjs`](sources/d0_two_null_crossing_2026-10-19/check_full40_schur_rank_modular.cjs).
-The complete action-to-Schur proof and source boundary are consolidated in
-[the exact full40 Schur theorem](A4D_FULL40_EXACT_FLAT_SCHUR_RANK_SIX_GAUGE_AND_CHARACTERISTIC_2026_10_19.md).
-
-This closes the generic *linearized geometric rank* question for this
-operator; it does not identify the six-dimensional quotient with two
-propagating polarizations, determine the full characteristic variety, or
-prove nonlinear refinement. In particular the rank-four result at the
-equal-coordinate \(\mathbb F_{1009}\) sample is only a modular exceptional
-point, not yet a characteristic equation over \(\mathbb Q\). The original
-native price/action selection, independent matter source, and full physical
-Ward remain separate. `GR_closed=false`.
-
 ### 7.69.3. The original Golden return carries a conditional null-CAR source on a curved family
 
 The same original two-tick AF/scene return, with its mandatory k-Golden
@@ -5387,6 +5354,6 @@ The latter is exact by commutativity of based lattice shifts/antisymmetric face 
 \]
 EXACTLY. No floating-rank assumption. Two genuine characteristic example points z=(2,2,2,2) and (2,1,1,1) have finite-field rank4, whereas generic off-characteristic z retain rank6. The **full characteristic variety and uniform small-divisor control are not classified** by these examples.
 
-The forward discrete gradient is NOT a right null in general; the left source obeys the adjoint FOUR FORWARD discrete-divergence constraints. This gives a precise FIRST OBSTRUCTION to the next all-order step: once the 24 Cartan coefficients are eliminated by the polynomial inverse, every nonlinear coframe source \(J_n\) of the ORIGINAL star action must lie in the rank-six Schur image. In particular its four genuine \(\sum_\mu D_\mu^+ J_n^{a\mu}=0\) source constraints must hold (plus Lorentz projection), otherwise a new coefficient \(e_n\) cannot remove it. The previous quartic exact solution already passes its full40 check; the first *uncomputed* source is degree FIVE. Test this fifth-order source Ward BEFORE another 40×polynomial undirected rank search. A finite exact failure changes only this analytic/polynomial continuation route, not original D0 or continuum Einstein generally.
+The coefficientwise [Laurent Ward checker](sources/d0_two_null_crossing_2026-10-19/check_full40_symbolic_ward_identities.cjs) independently proves the universal gradient, Lorentz, and variational-adjoint identities used for this generic-rank inference. The forward discrete gradient is NOT a right null in general; the left source obeys the adjoint FOUR FORWARD discrete-divergence constraints. This gives a precise FIRST OBSTRUCTION to the next all-order step: once the 24 Cartan coefficients are eliminated by the polynomial inverse, every nonlinear coframe source \(J_n\) of the ORIGINAL star action must lie in the rank-six Schur image. In particular its four genuine \(\sum_\mu D_\mu^+ J_n^{a\mu}=0\) source constraints must hold (plus Lorentz projection), otherwise a new coefficient \(e_n\) cannot remove it. The previous quartic exact solution already passes its full40 check; the first *uncomputed* source is degree FIVE. Test this fifth-order source Ward BEFORE another 40×polynomial undirected rank search. A finite exact failure changes only this analytic/polynomial continuation route, not original D0 or continuum Einstein generally.
 
 **Interpretation:** original flat 40-direction Palatini Hessian has 24 independent link normals, reduced metric Schur rank6, 10 free gauge tangents (6 internal Lorentz+4 discrete gradient). The characteristic rank4 represents an extra null response in selected wave directions; this is NOT the count of propagating physical degrees without boundary and actual time evolution. The proof concerns original star geometry, not the compulsory native Cost−Info action. Same-run original Golden/718-edge/LEFT-RIGHT/ref128/CAR16/clock/preparation and raw #216 remain OPEN; GR_closed=false.

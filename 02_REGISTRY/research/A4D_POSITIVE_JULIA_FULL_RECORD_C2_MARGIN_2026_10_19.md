@@ -128,8 +128,9 @@ nonzero Brouwer degree and
 
 then the straight homotopy avoids zero on \(\partial B\), the degrees agree,
 and the compiled map \(F_\epsilon\) has a zero in \(B\). The positive outcome
-margin above makes the mean-entropy Euler map continuous on the chart; the
-argument does not require a finite second derivative at a discarded outcome.
+margin above makes the mean-entropy Euler map continuous on the chart; this
+degree argument needs the uniform first-source comparison, not a second
+derivative of the compiled price.
 
 The attached input's proposed bound has not been replayed for this 52/53-outcome instrument, and
 the degree hypothesis is also open. The next
