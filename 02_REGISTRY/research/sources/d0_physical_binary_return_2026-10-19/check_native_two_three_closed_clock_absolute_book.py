@@ -47,7 +47,8 @@ for a in range(n):
 assert abs(literal2-Z2)<1e-10 and abs(literal3-Z3)<1e-9
 # Mathematical positive two-depth mixture with DECLARED, known
 # attempt coefficients: NOT asserted a compulsory Golden physical clock.
-a2,a3=.37,.63
+a2,a3=p,p*p
+assert abs(a2+a3-1)<2e-15
 clock3=a3*Z3/(a2*Z2+a3*Z3);clock2=1-clock3
 from_clock=(clock3/clock2)*(a2/a3)*(T2/T3)
 assert abs(from_clock-lam)<1e-12
