@@ -207,3 +207,76 @@ All 12 positive labelled tester outcomes at flat are now exactly p²/24 each, po
 **Executable control:** The companion checker now uses C=pΛ(L), checks (10) at machine precision, the genuine full16 conditional Julia isometry, noncommuting three-step all-good amplitude \(p^3\Lambda(L_\gamma)\), full eight-flag normalization, and direct finite differences against (11)–(12). On the original 718-supported test it reports Golden Shannon source 0.381966011273 (analytic p²=0.381966011250), Golden Fisher 0.618033988824 (analytic p=0.618033988750), both within finite-difference tolerance.
 
 **GR interface is still one source-selection question.** This pins a previously free test normalization to the actual original Golden gate at zero connection, and constructs a finite positive Lorentz detector with genuine native flat amplitudes and no postselection. It does NOT prove that the full composed Book Cost−Info + H+J+R chooses this detector or that it has the exact Einstein–CAR first source. Any claim to GR still requires a genuine 4D Role→scene controller, compulsory price, complete oldRIGHT/clock/prep/copy costs and jointly refining all40 roots.
+
+
+## 8. MARKED ORIGINAL full128 RARE CLOCK: SIX GOLDEN LORENTZ MODES STAY DISTINGUISHABLE UNDER REFINEMENT
+
+This is a new **conditional joint asymptotic theorem** from THREE already-owned positive mathematical carriers, not a claim that literal G0 executes their composition: (i) original CAR16 six-generator fixed positive Choi/Julia with native p (7); (ii) original native full128 IID first-shell blank0/complement event at \(h=1/L\), with \(\epsilon_h=p^2h^2/64\) and controlled scalar event probability \(e_h=\epsilon_h\lambda_h(1-h^2\lambda_h/256)\); (iii) Book06's already-owned maximum-entropy quotient conditioned on genuinely retained event counts. Unlike an arbitrary discrete-time model, both the Golden mark and epsilon clock are actual existing numerical D0 primitives, with NO fitted event-rate or attenuation parameter.
+
+**THEOREM (full fourteen labels at one event).** On the ORIGINAL rest-CAR16 Choi preparation and owned fixed 13-effect positive tester following the native-p Julia success/failure, its **complete** 14-outcome distribution at flat link is
+
+\[
+q_{a,\pm}=\frac{p^2}{24}\ (a=1,\ldots,6),\qquad
+q_{\rm success,rest}=\frac{p^2}{2},\quad
+q_{\rm failedJulia}=p.
+\tag{14}
+\]
+
+Each is strictly positive and their sum equals 1. For the six proper Lorentz coordinates \(\xi_b\), with the previous physical owned generator basis,
+
+\[
+\partial_{\xi_b}q_{a,\pm}|_0
+=\pm\frac{p^2}{12\sqrt2}\delta_{ab},\quad
+\partial_\xi q_{\rm success,rest}|_0
+=\partial_\xi q_{\rm failedJulia}|_0=0.
+\]
+
+It follows immediately, using **all** outcomes in Fisher, that
+
+\[
+\boxed{I_{ab}^{\rm one\ marked\ event}
+=\sum_{j=1}^{14}\frac{\partial_a q_j\,\partial_b q_j}{q_j}
+=\frac{p^2}{6}\delta_{ab}.}\tag{15}
+\]
+
+This is not a guessed information metric; it follows from the existing original six full-CAR Lie directions, the fixed positive 13-effect POVM and the newly exact \(XG\) Golden attenuation.
+
+**Exact finite n source/Fisher sufficiency under the original IID scalar first-shell.** In the DECLARED conditional experiment, each of n original native scalar first-shell ticks is either blank with probability \(1-e_h\), or truly nonblank with probability \(e_h\); in the latter case one complete native-p 14-outcome CAR tester is executed, with every Lorentz Julia failure retained. For \(\xi\)-independent event probability e_h, a tick has the honest 15-outcome law
+
+\[
+Q_0=1-e_h,\qquad Q_j=e_h\,q_j(\xi)\quad(1\le j\le14).
+\]
+
+The entire labelled n-word is preserved in the old memory. Its retained *count vector* \(N=(N_0,N_1,\ldots,N_{14})\), \(\sum N_j=n\), has the exact multinomial law
+
+\[
+\mathbb P_\xi(N)
+=\frac{n!}{\prod_{j=0}^{14}N_j!}
+(1-e_h)^{N_0}\prod_{j=1}^{14}
+(e_h q_j(\xi))^{N_j}.
+\tag{16}
+\]
+
+For ANY smooth jointly moving parameters of the identical per-tick probabilities Q_j (including moving e_h), the full time-word law conditioned on this SAME count vector is **uniform on its \(n!/\prod N_j!\) arrangements and completely field independent**. This is exactly the UNIQUE maximum-entropy Book06 conditional forgetting kernel for this *declared* count-retention quotient. The full chronological archive is not deleted. Therefore the complete per-word and count-event log first sources, second jets and Fisher information are **identical at matched counts**, differing only by the FIELD-INDEPENDENT combinatorial log multiplicity. Argmax/MAP over all fine words vs argmax over counts can still select DIFFERENT counts (#384), so one must NOT infer equality of their distinct MAP-source values from this sufficient-statistic theorem.
+
+At the true flat Golden/Lorentz point and the six independent \(\xi\) coordinates that do not themselves change the event intensity e_h, this gives EXACTLY for every finite n
+
+\[
+\boxed{I^{(n,h)}_{\xi\xi}
+=n e_h\,\frac{p^2}{6}\,I_6.}\tag{17}
+\]
+
+If the owned scalar shell has \(\lambda_h\to\lambda>0\) and its native tick regime has \(n_h\epsilon_h\to\beta>0\), the marked count vector converges to INDEPENDENT Poisson numbers \(N_j\) with rates \(\beta\lambda q_j(\xi)\), while the probability of no mark stays \(e^{-\beta\lambda}>0\). Its **six Lorentz Fisher eigenvalues** converge without any new normalization to
+
+\[
+\boxed{\lim_{h\to0}I_{\xi\xi}^{(n_h,h)}
+=\frac{\beta\lambda p^2}{6}\,I_6>0.}\tag{18}
+\]
+
+The finite covariance formula is exact for the declared IID composition; the asymptotic has ordinary binomial→Poisson control. At the original \(n=1024,h=1/4,\lambda=288/25\), all six eigenvalues are **0.279336375...**; at \(n=65536,h=1/32\), **0.280111915...**; limit with \(\beta=p^2\) is \(\lambda p^4/6=0.280124224801...\). The standard elementary Poisson approximation bound \(2n e_h^2\) decreases from **0.0376044** to **0.0005908** along these two fixtures. A direct full real six-generator, 14-outcome, six-by-six Fisher finite-difference check is performed in the research session; the committed small checker replays the exact baseline scores and the rare clock.
+
+**Critical scope:** The fixed native original full128 uniform scalar first-shell actually supplies the IID no-exit/exit Bernoulli experiment and epsilon. It does NOT supply for free a 14-outcome Lorentz Julia test triggered at each exit, nor the actual compulsory Book03 controller, preparation or cost of that test. These are the remaining joint physical actuation and ActionProtocol binding obligations. The successful six-dimensional Fisher is a *positive observable* metric, NOT the indefinite Einstein–Palatini quadratic action. The actual original J23 field variation changes e_h; the formula (16) differentiates its moving intensity as well, and there is no license to freeze that source.
+
+**Non-Abelian order firewall:** If the underlying Lorentz matrices change from step to step, the ordered CAR state and noncommuting holonomy may distinguish temporal permutations with the SAME count vector. Then the time-word conditional kernel is no longer field-independent and (16)'s sufficiency does NOT apply. Book06 may forget only those coordinates whose retention tests are preserved; full ordered CAR/JULIA memory and old RIGHT must be retained when curvature/order depends on them.
+
+This closes a precise mathematical *refinement signal* question for one physically plausible complete typed experiment: all six Lorentz directions survive the actual native Golden rare-event clock at finite nonzero Fisher strength, while the original count-forgetting type can eliminate divergent slot-position coding **without** removing its admitted homogeneous local response. It does NOT close the GR first-source, the original physical programme's selector or the full \(h^{-2}\) coupled Einstein recovery.
