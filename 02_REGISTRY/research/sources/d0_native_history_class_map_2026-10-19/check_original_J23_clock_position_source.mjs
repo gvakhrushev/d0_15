@@ -72,6 +72,23 @@ check(close(-n*dq,-2.1953971285070955)
       &&close(n*(e-q)*dq,-2.1765496383560343),
       "original first two count cumulants on J23");
 
+// The ORIGINAL epsilon_h = p^2 h^2/64 and an illustrative constant
+// controlled shell lambda/dlambda fixture. NOT a native all-mesh spectrum.
+const beta=p*p,lambda=288/25,dlambda=-144/25,sref=.3;
+const goal=beta*dlambda*(Math.exp(sref)-1);
+let errorPrev=Infinity;
+for(const h of [.5,.25,.125,.0625]){
+ const eps=p*p*h*h/64,nref=Math.round(beta/eps);
+ const qref=(1-eps*lambda/2)**2;
+ const dqref=-eps*(1-eps*lambda/2)*dlambda;
+ const tt=qref+(1-qref)*Math.exp(sref);
+ const dlog=nref*dqref*(1-Math.exp(sref))/tt;
+ const err=Math.abs(dlog-goal);
+ check(nref*eps>beta-1e-12&&nref*eps<beta+1e-12
+       &&err<errorPrev&&err<.012,"original-count Poisson source refinement h="+h);
+ errorPrev=err;
+}
+
 const dP=(-42957+14319*Math.sqrt(5))/5120000;
 const dN=n*dP,dKL=n*p**3*dP,dSh=n*(2-p)*dP;
 check(close(dN,-2.187748526036102)
