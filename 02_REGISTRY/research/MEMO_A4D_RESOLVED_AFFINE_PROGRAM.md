@@ -63,21 +63,32 @@ and [its pinned result receipt](sources/d0_two_null_crossing_2026-10-19/quartic_
 give a scoped negative control: fixing the quartic coframe to the area mode
 leaves the `480 × 676` rational `[a²b²]` system inconsistent, even with all
 172 joint cubic affine-kernel parameters and 504 degree-≤5 quartic link
-coefficients. The [full-coframe checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_coframe_range.py)
-and [receipt](sources/d0_two_null_crossing_2026-10-19/quartic_full_coframe_range_result.json)
-then release all 240 quartic coframe coefficients and solve the mixed sector
-exactly in a `600 × 916` rational system. This is one local coefficient;
-the other quartic sectors, periodic recovery, uniform refinement and
-same-programme price/admission remain open.
+coefficients. The earlier [full-coframe checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_coframe_range.py)
+solved only a `600 × 916` projection with spatial output degree≤4. A direct
+shared-branch audit found a degree-five mixed link residual, so that projected
+PASS was not a full polynomial identity. A degree-six-only tail is also
+inconsistent if lower quartic coefficients are held fixed; this is a narrow
+control, not a no-go for the full response.
+
+The [full-spatial checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_spatial_jet.py)
+now solves the mixed sector in an exact `840 × 1008` rational system, with
+all 672 degree-≤6 link and 336 degree-≤5 coframe coefficients released.
+Together with four other quartic sectors on the same valid cubic affine
+section, direct substitution verifies every spatial coefficient of the 40
+Euler rows for all 15 amplitude monomials through degree 4. The
+[saved-vector replay](sources/d0_two_null_crossing_2026-10-19/verify_quartic_full_spatial_jet.py)
+and [SHA receipt](sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_receipt.json)
+independently repeat and pin that check. The 172 cubic-kernel parameters are
+fixed to zero in this one section; no physical selector is inferred. Periodic
+recovery, uniform refinement and same-programme price/admission remain open.
 
 Strategic §7.58 closes the local continuum geometry through degree 4: the
 required orbit-area mode and a transverse coframe scale cancel all 16 Ricci
 components for the arbitrary orthogonal crossed-null family. The finite
-cubic 24+16 perturbative jet and the full-coframe mixed finite quartic
-`[a²b²]` coefficient are solved locally. The restricted area-only quartic
-coframe control is inconsistent; releasing the original coframe resolves
-it. The other quartic sectors, spatial compatibility and native physical
-selection remain open.
+24+16 Cartan system now has a local unwrapped quartic amplitude jet in all
+five sectors, with full spatial polynomial identities on one cubic section.
+Periodicity, refinement, native physical source selection and positive GR
+closure remain open.
 
 The [balanced native-address source seam](A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md),
 now consumed in strategic §7.38, is the main finite-to-continuum bridge. It

@@ -4560,23 +4560,48 @@ link-вариации. Один только source-forced `H_3,J_3` и link-lif
 Lorentz-ограничение до того же порядка. Исходный квадратичный crossed-Weyl
 коэффициент не меняется.
 
-Это закрывает конечный **локальный cubic perturbative jet**, а не периодическое
-решение на `L^4`-торе: профиль не периодичен, сходимость amplitude-ряда и
-uniform refinement не установлены. Continuum Ricci family остаётся нулевой
-до полной степени4. Restricted [range-контроль mixed quartic](sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py)
+Это закрывает локальный **cubic perturbative jet**, но изначально не
+периодическое решение на `L^4`-торе: профиль не периодичен, сходимость
+amplitude-ряда и uniform refinement не установлены. Continuum Ricci family
+остаётся нулевой до полной степени4. Restricted [range-контроль mixed
+quartic](sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py)
 и его [квитанция](sources/d0_two_null_crossing_2026-10-19/quartic_finite_cartan_range_result.json)
 показывают, что фиксация quartic coframe только канонической area-модой
 слишком жёсткая: точная система `480 × 676` несовместна даже при освобождённом
-172-мерном совместном кубическом ядре. [Продолжение с полным coframe](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_coframe_range.py)
-и его [квитанция](sources/d0_two_null_crossing_2026-10-19/quartic_full_coframe_range_result.json)
-освобождают все 240 quartic coframe-коэффициентов (16 компонент, степень≤4)
-и 504 proper-Lorentz link-коэффициента степени≤5. Получается рациональная
-система `600 × 916` с точным решением `[a²b²]` при `A=(1,0), B=(0,1)`;
-все 40 Euler-строк и proper-Lorentz links проходят. Это только один
-неразвёрнутый в периодическую геометрию коэффициент. Остальные quartic-секторы,
-periodic recovery, uniform refinement, полный same-history Cost−Info, native
-admission/preparation/clock и физическое исполнение остаются открыты.
-`GR_closed=false`.
+172-мерном совместном кубическом ядре.
+
+Предыдущий [full-coframe mixed-quartic checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_coframe_range.py)
+решал лишь `600 × 916` проекцию: 40 Euler-строк с пространственным выходом
+степени≤4, 172 совместных cubic-kernel параметра, 504 link-моды степени≤5
+и 240 coframe-мод степени≤4. Поэтому его PASS относился только к этим 600
+коэффициентам. Последующий [shared-branch audit](sources/d0_two_null_crossing_2026-10-19/check_quartic_all_sectors_shared_cubic_branch.py)
+решил все пять amplitude-секторов в этой проекции, но точная подстановка
+обнаружила в смешанном `[a²b²]` секторе degree-5 хвост в девяти link-строках.
+Попытка убрать его одним [homogeneous degree-6 link-хвостом](sources/d0_two_null_crossing_2026-10-19/check_quartic_degree6_tail_control.py)
+при фиксированных низших коэффициентах дала узкую несовместность; она не
+исключала изменения всего quartic-ответа.
+
+Новый [full-spatial checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_spatial_jet.py),
+[точный вектор решения](sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_solution.json)
+и [result](sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_result.json)
+освобождают все 672 link-коэффициента степени≤6 и 336 coframe-коэффициентов
+степени≤5 для смешанного сектора в рациональной системе `840 × 1008`;
+[квитанция](sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_receipt.json)
+прикрепляет SHA solve и direct replay.
+Совместно с четырьмя ранее найденными секторами на той же допустимой cubic
+affine section прямой exact check зануляет **каждый пространственный
+коэффициент всех 40 Euler-строк во всех 15 amplitude-мономах полной степени≤4**;
+proper-Lorentz links также проходят. Отдельный [direct replay verifier](sources/d0_two_null_crossing_2026-10-19/verify_quartic_full_spatial_jet.py)
+загружает сохранённые рациональные коэффициенты и повторяет полиномиальную
+подстановку без response/Jacobian solve; его [SHA-pinned receipt](sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_receipt.json)
+фиксирует PASS. В этой секции 172 cubic-kernel параметра фиксированы нулём;
+это конкретная допустимая секция, а не физический селектор. Получен
+нетривиальный local crossed-Weyl jet, но всё ещё не периодическое решение и
+не all-order решение.
+
+Periodic recovery, uniform refinement, сходимость, полный same-history
+Cost−Info, native admission/preparation/clock, физическая source selection и
+положительное закрытие ОТО остаются открыты. `GR_closed=false`.
 
 
 ### 7.59. Original Book03 boundary-Info is an EXACT canonical quotient of all nonlinear closed Lorentz curvature
@@ -4654,3 +4679,147 @@ the same physical price and the source/readout/refinement scales remain
 open. The mathematical premise removed is the demand for exact optimal
 encoder realization or arbitrary C2 code universality, not a physical GR
 obligation. Original raw#216 and full D0=>GR are unchanged.
+
+
+### 7.61. The capacity preparation is a strict entropy maximum, not yet a native least-price selector
+
+There is a sign-of-variation check before the capacity profile can be called
+the preparation forced by the full Book price. Fix a finite address set
+`i=1,...,N` and the complete conditional output laws `q_i(s;g)` of the
+retained readout; write their natural entropies as
+`H_i(g)=-sum_s q_i(s;g) log q_i(s;g)`. For an independently variable
+normalized address preparation `pi_i>0`, the complete joint Shannon source is
+
+\[
+H(\pi,g)=H(\pi)+\sum_i\pi_iH_i(g).
+\]
+
+Its simplex Euler equation is
+`-log(pi_i)-1+H_i=constant`, so the unique interior critical preparation is
+
+\[
+\pi_i^*(g)=\frac{e^{H_i(g)}}{Z_c(g)},\qquad
+Z_c(g)=\sum_j e^{H_j(g)},\qquad H(\pi^*,g)=\log Z_c(g).
+\]
+
+For every tangent `delta pi` with `sum_i delta pi_i=0`,
+
+\[
+D_\pi^2H(\delta\pi,\delta\pi)
+=-\sum_i\frac{(\delta\pi_i)^2}{\pi_i^*}<0
+\quad(\delta\pi\ne0).
+\]
+
+Thus the capacity preparation is a strict **maximum** of the proposed price
+`H/ell` on the free preparation simplex. More exactly, for every normalized
+`pi` on that simplex,
+
+\[
+\log Z_c(g)-H(\pi,g)
+=D_{\rm KL}(\pi\Vert\pi^*(g))\ge0.
+\]
+
+The right side is the unused-capacity deficit. Minimizing that deficit is
+equivalent to maximizing the complete Shannon price; it is not the same
+functional as the Book expected action `E[S]=H/ell` obtained after the
+same-history `w=q` binding and the complete-frame `N=1` normalization.
+Consequently the stationarity calculation alone
+does not prove that least description selects `pi^*`. If the old address is
+fixed boundary data, its `D H(pi)` is absent on the interior metric chart and
+the conditional Einstein source of §7.49 remains the relevant one. If the
+preparation is varied, an independently derived preparation/work price must
+either stabilize this maximum or change the Euler equation and its metric
+source. If the preparation is varied, its same-program work/readout term
+must enter both the address Euler equation and the metric source. Only a
+least-price selector specifically requires that term to stabilize the
+entropy maximum. A deterministic `C_Y` copy preserves the old marginal and
+supplies neither term.
+
+At the constrained entropy maximum, the envelope derivative is exactly
+`D_g H( pi^*(g),g )=sum_i pi_i^*(g) D_g H_i(g)`; the moving-address terms
+cancel by the preparation Euler equation. This gives a clean native-source
+test: derive whether the address is fixed by the initial-history boundary or
+solve its actual preparation/work Euler in the same complete program, then
+carry the resulting source into the existing `16+24+2` consumer. The current
+full-history and exterior-source results provide the conditional field
+source, including its independent CAR term, but do not decide this
+preparation selector. No GR closure is promoted.
+
+
+### 7.62. Exact stability threshold for a least-price capacity preparation
+
+The sign check in §7.61 can be sharpened into a necessary native-price test.
+Assume the Book same-history binding and complete-frame normalization that
+identify the retained Shannon term, and write the actual candidate price in
+golden cost units as
+
+\[
+J_{\rm nat}(\pi,g)=\frac{H(\pi,g)}{\ell}+W(\pi,g),
+\qquad \ell=\log\varphi,
+\]
+
+where `W` contains every preparation, clock, work, and old-record term not
+already counted in the Shannon readout. At the capacity profile `pi^*(g)` of
+§7.61, the Shannon simplex gradient vanishes and its tangent Hessian is
+
+\[
+D_\pi(H/\ell)=0,\qquad
+D_\pi^2(H/\ell)[\delta\pi,\delta\pi]
+=-\frac1\ell\sum_i\frac{(\delta\pi_i)^2}{\pi_i^*},
+\quad \sum_i\delta\pi_i=0.
+\]
+
+Therefore a freely varied `pi^*` can even be stationary for the complete
+least-price problem only if
+`D_pi W(pi^*,g)[delta pi]=0` for every simplex tangent. A necessary
+second-order condition for a local minimum is the exact curvature bound
+
+\[
+D_\pi^2W(\pi^*,g)[\delta\pi,\delta\pi]
+\ge \frac1\ell\sum_i\frac{(\delta\pi_i)^2}{\pi_i^*}
+\quad\hbox{for every }\sum_i\delta\pi_i=0.
+\]
+
+Strict inequality on every nonzero tangent is a sufficient nondegenerate
+local-stability condition. If `W` is independent of `pi`, the proposed
+capacity profile remains a strict maximum of `J_nat`; a `pi`-affine `W`
+cannot repair this unless it first satisfies the tangent stationarity
+condition, and even then has zero curvature. Thus the attachment's exact
+vacuum identity `Crit Gamma = Crit P` is a valid conditional field statement
+at the imposed capacity profile, but it does not establish that the native
+least-price execution selects that profile.
+
+If the native Euler actually selects `pi^*(g)` (so the tangent first
+variation of `W` vanishes there), the envelope derivative of the complete
+price is also fixed:
+
+\[
+D_gJ_{\rm nat}(\pi^*(g),g)
+=\frac1\ell\sum_i\pi_i^*D_gH_i+D_gW(\pi^*,g).
+\]
+
+So the preparation/work term can alter or cancel the conditional exterior
+CAR source; it cannot be dropped while claiming the full native Einstein
+equation. The next decisive D0 obligation is now concrete: derive `W` and its
+address derivatives from the admitted preparation and complete execution,
+then carry the same `D_gW` through the existing `16+24+2` field equations.
+The existing finite AF preparation-price owners are not yet identified with
+this retained-address variable in the same complete program, and no current
+owner proves the stated curvature bound. The retained copy `C_Y`, code
+theorem, and current Book `Info` interface do not fill that joint-source
+edge. Full physical GR closure remains open.
+
+Book III §§03.3.0a–b require pathwise `δS=0` and identify the dominant
+minimum-code history; they do not say that the ensemble mean `E[S]` is to be
+minimized over an arbitrary preparation simplex. The negative `pi`-Hessian
+therefore does not refute D0 stationarity. It rules out only the narrower
+claim that `pi^*` follows by unconstrained minimization of `H/ell` as a mean
+preparation price. The native derivation must instead establish one of two
+routes: (i) the old address is fixed by the initial-history boundary, so no
+address Euler row is imposed; or (ii) `pi` is generated by the complete
+normalized path weight `w=varphi^(-S)`, in which case the actual `Cost/Info`
+law supplies the address equation and normalization. The current `Info`
+audit and finite-cylinder fiber do not select route (ii), and `C_Y` only
+preserves `pi`. The exact unresolved edge is therefore the native
+preparation-to-complete-history map, not the conditional equality of the
+geometric field roots.

@@ -1,0 +1,84 @@
+{
+  "schema": "d0-exact-research-replay-receipt/v1",
+  "status": "PASS_LOCAL_FULL_SPATIAL_DEGREE4_40_EULER_JET",
+  "direct_replay_status": "PASS_DIRECT_FULL_SPATIAL_EULER_REPLAY",
+  "claim": "local unwrapped finite Cartan vacuum jet through total amplitude degree 4 on one cubic affine section; all spatial coefficients checked",
+  "scope_limits": {
+    "A": [
+      1,
+      0
+    ],
+    "B": [
+      0,
+      1
+    ],
+    "cubic_kernel_parameters_fixed_to_zero": 172,
+    "periodic_carrier_root": false,
+    "uniform_refinement": false,
+    "native_price_selection": false,
+    "physical_gr_closure": false,
+    "GR_closed": false
+  },
+  "commands": {
+    "exact_solve": "python3 02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_full_spatial_jet.py",
+    "direct_saved_vector_replay": "python3 02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/verify_quartic_full_spatial_jet.py"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "artifacts": {
+    "solve_checker": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_full_spatial_jet.py",
+      "sha256": "0ef085edf572639dae553ababc6b5b10bfcc0a5f9a8508049cd22dcd5d7bfb67"
+    },
+    "replay_verifier": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/verify_quartic_full_spatial_jet.py",
+      "sha256": "b5d95c3126ba2abca029d2c07fbc24440dbe755e1a3b247dd7fcbcf6f67a1f5d"
+    },
+    "solve_output": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_output.txt",
+      "sha256": "c3e8943471c2d7a02fa335ea98570b6965e6306c7563860d77d20e03330bb8da"
+    },
+    "replay_output": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_replay_output.txt",
+      "sha256": "40aaf8f2a8b175336d1b872f67b0e72f4d23189c76c34b09c9c8b16f65cf9028"
+    },
+    "result": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_result.json",
+      "sha256": "535da096c0530491add7b94ed3d74ec3bc49d36bfb921d2142fba221de1add50"
+    },
+    "solution": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_solution.json",
+      "sha256": "443c6fe34ae9fa8251838f28cebd5705f55ab6add51e1bc38b3b54f3702ef40f"
+    },
+    "prior_four_sector_solution": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_all_sectors_shared_cubic_branch_solution.json",
+      "sha256": "afc4e6a80611d23bdc1c0c165b13b2525f2e3affbe3f98777626321d0eacbddc"
+    },
+    "prior_shared_branch_checker": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_all_sectors_shared_cubic_branch.py",
+      "sha256": "bfbd6525c82918e86b7446b5f1e9d12710438e5a6a331d7cb801bc41a5a54ba0"
+    },
+    "prior_shared_branch_output": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_all_sectors_shared_cubic_branch_output.txt",
+      "sha256": "6241d77a86f38ff86b940ce9cdee6273f2c022824471f1029757d5a57eacb4cf"
+    },
+    "prior_shared_branch_result": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_all_sectors_shared_cubic_branch_result.json",
+      "sha256": "d1446405e48dd94fd302f35166fae7c8a609d90bd0894ccef33ccef6ac34383c"
+    },
+    "degree6_tail_control_checker": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_degree6_tail_control.py",
+      "sha256": "d1b989225f597c24e01cd651d0ceedcebbe7d2bd54f653c81eb5c759b51d152a"
+    },
+    "degree6_tail_control_output": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_degree6_tail_control_output.txt",
+      "sha256": "fc8ec853651d249c241a50aba8640a6afb6426e842c518b7735ad99c144a3292"
+    },
+    "degree6_tail_control_result": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_degree6_tail_control_result.json",
+      "sha256": "fa49d72a9c4aae60a41003d527bb1d307456bb1f49d36caf397034534d6b84ed"
+    }
+  }
+}
