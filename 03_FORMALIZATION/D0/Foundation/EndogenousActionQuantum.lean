@@ -35,7 +35,11 @@ namespace D0.Foundation.EndogenousActionQuantum
 open D0.Foundation.VerifiabilityNecessity
 open D0.Foundation.PopperianBootstrap
 
+/-- The canonical endogenous action quantum is 1. -/
+def S_min : ℝ := 1
+
 /-- An action assignment over a verification protocol `P`. -/
+@[ext]
 structure ActionProtocol (P : VerificationProtocol) where
   /-- Action cost of a transition between two states. -/
   action : P.State → P.State → ℝ
@@ -44,8 +48,68 @@ structure ActionProtocol (P : VerificationProtocol) where
   /-- Non-trivial transitions cost at least the endogenous action quantum S_min = 1. -/
   action_nontrivial : ∀ x y, x ≠ y → 1 ≤ action x y
 
-/-- The canonical endogenous action quantum is 1. -/
-def S_min : ℝ := 1
+/-- The exact free data left by `ActionProtocol`: an independent nonnegative excess on
+each ordered non-identity transition. -/
+@[ext]
+structure ActionExcessProfile (P : VerificationProtocol) where
+  excess : P.State → P.State → ℝ
+  excess_refl : ∀ x, excess x x = 0
+  excess_nontrivial : ∀ x y, x ≠ y → 0 ≤ excess x y
+
+/-- Extract the amount above the forced unit floor on every non-identity transition. -/
+def actionExcessOf {P : VerificationProtocol} (A : ActionProtocol P) :
+    ActionExcessProfile P where
+  excess x y := if x = y then 0 else A.action x y - S_min
+  excess_refl := by intro x; simp
+  excess_nontrivial := by
+    intro x y hxy
+    simp [hxy]
+    have h := A.action_nontrivial x y hxy
+    unfold S_min at h ⊢
+    linarith
+
+/-- Reconstruct an action protocol from an arbitrary admissible excess profile. -/
+def actionProtocolOfExcess {P : VerificationProtocol} (E : ActionExcessProfile P) :
+    ActionProtocol P where
+  action x y := if x = y then 0 else S_min + E.excess x y
+  action_refl := by intro x; simp
+  action_nontrivial := by
+    intro x y hxy
+    simp [hxy, S_min]
+    exact E.excess_nontrivial x y hxy
+
+/-- Every protocol is exactly its unit floor plus its extracted excess profile. -/
+theorem actionProtocol_excess_reconstruction {P : VerificationProtocol}
+    (A : ActionProtocol P) (x y : P.State) :
+    (actionProtocolOfExcess (actionExcessOf A)).action x y = A.action x y := by
+  by_cases hxy : x = y
+  · subst y
+    simp [actionProtocolOfExcess, actionExcessOf, S_min, A.action_refl]
+  · simp [actionProtocolOfExcess, actionExcessOf, S_min, hxy]
+
+/-- Every admissible excess profile is recovered after reconstruction. -/
+theorem actionExcessOf_reconstruction {P : VerificationProtocol}
+    (E : ActionExcessProfile P) (x y : P.State) :
+    (actionExcessOf (actionProtocolOfExcess E)).excess x y = E.excess x y := by
+  by_cases hxy : x = y
+  · subst y
+    simp [actionExcessOf, actionProtocolOfExcess, E.excess_refl]
+  · simp [actionExcessOf, actionProtocolOfExcess, S_min, hxy]
+
+/-- Exact classification of the full `ActionProtocol` fiber. It has no symmetry,
+composition, refinement, or field-source constraint beyond the unit floor. -/
+def actionProtocolExcessEquiv {P : VerificationProtocol} :
+    ActionProtocol P ≃ ActionExcessProfile P where
+  toFun := actionExcessOf
+  invFun := actionProtocolOfExcess
+  left_inv := by
+    intro A
+    ext x y
+    exact actionProtocol_excess_reconstruction A x y
+  right_inv := by
+    intro E
+    ext x y
+    exact actionExcessOf_reconstruction E x y
 
 theorem S_min_pos : 0 < S_min := by unfold S_min; norm_num
 

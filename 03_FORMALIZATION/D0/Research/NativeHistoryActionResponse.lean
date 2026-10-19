@@ -151,6 +151,36 @@ noncomputable def book03PathWeight (A : ActionProtocol sceneProtocol) (p : Depth
     (info : ℝ) : ℝ :=
   Real.exp ((info - twoStepCost A p) * Real.log φ)
 
+/-- On any fixed path and fixed vertex-information term, Book 03's exponential readout is
+strictly decreasing in its additive transition cost. Thus cost excess is response-visible. -/
+theorem book03PathWeight_strictly_decreases_with_cost
+    (A B : ActionProtocol sceneProtocol) (p : Depth2Walk) (info : ℝ)
+    (hcost : twoStepCost A p < twoStepCost B p) :
+    book03PathWeight B p info < book03PathWeight A p info := by
+  unfold book03PathWeight
+  apply Real.exp_lt_exp.mpr
+  have hlog : 0 < Real.log φ := Real.log_pos one_lt_goldenRatio
+  nlinarith
+
+/-- At fixed `Info`, equality of a path coefficient is equivalent to equality of its path cost. -/
+theorem book03PathWeight_eq_iff_cost_eq
+    (A B : ActionProtocol sceneProtocol) (p : Depth2Walk) (info : ℝ) :
+    book03PathWeight A p info = book03PathWeight B p info ↔
+      twoStepCost A p = twoStepCost B p := by
+  constructor
+  · intro hweight
+    unfold book03PathWeight at hweight
+    have hexp := Real.exp_injective hweight
+    have hfactor : (twoStepCost B p - twoStepCost A p) * Real.log φ = 0 := by
+      nlinarith [hexp]
+    have hlog : Real.log φ ≠ 0 := ne_of_gt (Real.log_pos one_lt_goldenRatio)
+    rcases mul_eq_zero.mp hfactor with hcost | hzero
+    · linarith
+    · exact (hlog hzero).elim
+  · intro hcost
+    unfold book03PathWeight
+    rw [hcost]
+
 /-- The same complete two-tick history changes weight under two admitted primitive costs,
 for every shared information term. -/
 theorem same_history_weight_changes (info : ℝ) :
