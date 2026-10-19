@@ -127,3 +127,53 @@ is an EXACT global bijection, and it determines EVERY scalar stationary history 
 **Sharp next test:** on the actual live original Golden LEFT addressed programme already owned in #334, derive its true physical edge marginal and absolute source. Check (1)–(7) (NO fitted coefficient), then use original CAR16 marked ordered-phase probability for the missing nonabelian channel. Finally compare the UNMODIFIED selected complete Book–Cost/Info–Golden/clock Euler form to the accepted full40+matter finite star functional. A residual open cost-selector or missing original oldRIGHT control is NOT resolved by another scalar action computation.
 
 Exact 33×718 native asymmetric-cost nonlinear replay: \`sources/d0_physical_binary_return_2026-10-19/check_full718_scalar_inverse_native_gauge_action.py\`. Independently rerun locally before GitHub upload, checks inverse/gauge/closed cycles, general positive balanced-flow action, odd current, field variations and all16 conditional marginal. No new Lean claim, no new physical G0 link.
+
+
+## 6. Exact residual dimension **65**, with an admissible two-sided original ActionProtocol Cost/Info ambiguity
+
+The inversion theorem above can be strengthened to a precisely dimensioned CONSTITUTIVE nonselection. Take the ORIGINAL primitive edge Costs \(C\in\mathbb R^{718}\) (interior \(C_e>1\) if one needs honest two-sided Cost perturbations) and vertex Info \(I\in\mathbb R^{33}\), with the actual declared original scalar edge-local/vertex-Info allocation
+\[
+s_{uv}=C_{uv}-\theta I_u-(1-\theta)I_v.
+\]
+The linear map \((C,I)\mapsto s\) has rank 718 and an EXACT 33-dimensional kernel
+\[
+\boxed{\delta I_u=j_u,\quad
+\delta C_{uv}=\theta j_u+(1-\theta)j_v.}\tag{8}
+\]
+For already reconstructed \((\mu,\lambda)\), the further exact endpoint-price gauge on s has 32 dimensions:
+\[
+\delta s_{uv}=\eta_u-\eta_v,\quad
+\eta\in\mathbb R^{33}/\mathbb R\mathbf1.
+\]
+There is no other kernel (the global inverse §2 proves it), so the map from ALL original net primitive Cost/Info coordinates to full normalized positive edge history PLUS absolute Perron scalar has, at every strict interior point,
+\[
+\boxed{
+751=(718\ C+33\ I)
+\ \longrightarrow\
+686=(685\ \mathrm{positive\ balanced\ edge\ flow}+1\ \lambda),
+\quad
+\dim\ker=65=33+32.
+}\tag{9}
+\]
+This is a sharp GLOBAL local fiber dimension, not a rank estimate from approximate numerical eigenvalues. The 32-dimensional part is ordinary scalar endpoint gauge. The OTHER 33 dimensions are **physically potentially charged** Cost-versus-Info reallocations and MUST NOT silently be declared gauge of complete Golden/M1/G0 verification.
+
+A concrete ORIGINAL TWO-SIDED admissible ActionProtocol control exists EVEN AT canonical C=1: for any real t in an open interval, compare
+\[
+\begin{array}{ll}
+\text{Protocol A}:&C_{uv}^{A}(t)=1,\ I_u^{A}(t)=0;\\
+\text{Protocol B}:&C_{uv}^{B}(t)=1+t^2,\ I_u^{B}(t)=t^2
+\qquad(\text{ALL original edges and vertices}).
+\end{array}
+\tag{10}
+\]
+Both satisfy the actual nonidentity quantum \(C_e\ge1\) for BOTH signs of t. For EVERY endpoint allocation θ, the original edge-local net scalar Book transfer is EXACTLY identical at every t:
+\[
+\boxed{s^A_{uv}(t)=s^B_{uv}(t)=1,\quad
+K^A(t)=K^B(t)=pA,\quad
+(\mu,\lambda)^A(t)=(\mu,\lambda)^B(t).}\tag{11}
+\]
+Thus EVERY stationary balanced-flow scalar action, all scalar bulk/closed-cycle prices, and ALL their field jets coincide, including first and second. Yet the primitive Cost and vertex Info second derivatives are separately \(0\) in A and \(2\) in B: \((C^{B})''=(I^{B})''=2\). The exact original *relative scalar net* Price cancels; the physical preparation, controller/work, vertex endpoint and full history archive do NOT automatically cancel, because their compulsory original charging and Kraft domain are separate owners.
+
+**TYPING:** Equation (10) is an admissible pair for the ORIGINAL \`ActionProtocol\` nonidentity COST inequalities together with unrestricted mathematically declared vertex Info. It has NOT been proved a pair of full Golden coherent-memory M1/Kraft/oldRIGHT physically executable experiments. A literal full Book03 open-path Info prescription may contain distinct endpoint terms (the original edge-local scalar rate is the present theorem's declared domain); any such endpoint-price difference MUST be retained and paid, not dropped. Therefore the nonselection (9) is an EXACT theorem for the whole primitive **scalar edge-local Price subclass**, and (10) is a valid adversarial test of any claimed automatic operational selection, not a global D0 physical no-go.
+
+**Unification implication:** the scalar action reconstruction is COMPLETE modulo the 32 legitimate endpoint gradients, so attempting another 718 scalar inverse/rank project cannot produce the missing theory. The remaining constitutive task is to make the 33 Cost-versus-Info degrees compulsory and observable/priceable via ACTUAL M1/G0 retained work, reference/Kraft and preparation. Separately, the original noncommutative \([q(\gamma)]\) path-order memory and CAR16 signed detector must be physically composed. This is the shortest typed reason a normalized 718×16 record, even with \(\lambda\), is NOT an Einstein action by itself. GR_closed=false.
