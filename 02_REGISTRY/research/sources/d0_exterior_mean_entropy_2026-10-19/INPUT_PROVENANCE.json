@@ -1,0 +1,38 @@
+{
+  "format": "d0-exterior-mean-entropy-input-provenance-v1",
+  "status": "INTEGRATED_AS_SCOPED_SOURCE_CONSUMER",
+  "source_artifacts": [
+    {
+      "path": "RESULT_RU.md",
+      "sha256": "577af3c6b1f50928dcd2c15b587b3675ab92adaf53c8e7025dbb4a92b015dcc9",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "check_exterior_mean_source.py",
+      "sha256": "56bda572b4156bbafbb0b4b0985f8014497fbde47d9b3963b3d5b52930cbeef6",
+      "preserved_byte_for_byte": true
+    }
+  ],
+  "owners": [
+    {
+      "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+      "sha256": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ONE_FEEDBACK_NONFLAT_NULL_SCALAR_EINSTEIN_SOURCE_2026_10_18.md",
+      "sha256": "80bdb2a3ab6189b37ea9cebe1545cfebea2d7300037f4d3e21fa5e1479a5ce84"
+    }
+  ],
+  "checker": {
+    "path": "check_exterior_mean_source.py",
+    "result_receipt": {
+      "path": "RESULT.json",
+      "sha256": "6076080dcb366af20ecbaa8825357e555226b16e482d2d47426244bfc82ef175"
+    },
+    "normal": "PASS_EXACT_COMPLETE_SHANNON_FIRST_SOURCE",
+    "optimized": "PASS_EXACT_COMPLETE_SHANNON_FIRST_SOURCE",
+    "check_count": 25,
+    "normal_and_optimized_receipts_identical": true
+  },
+  "scope_boundary": "The checker validates the complete occupation-law first jet and golden two-block coefficient algebra. It does not replay the historical 40-row lattice certificate or prove physical price selection, native admission, the full Cost-Info source, Ward, or refinement."
+}

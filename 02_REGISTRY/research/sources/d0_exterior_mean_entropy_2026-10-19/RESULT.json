@@ -1,0 +1,59 @@
+{
+  "status": "PASS_EXACT_COMPLETE_SHANNON_FIRST_SOURCE",
+  "checks": [
+    "pinned owner A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+    "pinned owner A4D_ONE_FEEDBACK_NONFLAT_NULL_SCALAR_EINSTEIN_SOURCE_2026_10_18.md",
+    "polar-root tangent preserves isometry to first order",
+    "polar-root tangent zero-support outcome has zero first jet (0, 2)",
+    "polar-root tangent zero-support outcome has zero first jet (1, 3)",
+    "polar-root tangent all six occupation outcomes normalize",
+    "polar-root tangent complete-law probability derivative sums to zero",
+    "polar-root tangent fixture has four positive and two born-zero outcomes",
+    "polar-root tangent full Shannon first jet equals weighted determinant source",
+    "admissible bad-space rotation preserves isometry to first order",
+    "admissible bad-space rotation zero-support outcome has zero first jet (0, 2)",
+    "admissible bad-space rotation zero-support outcome has zero first jet (1, 3)",
+    "admissible bad-space rotation all six occupation outcomes normalize",
+    "admissible bad-space rotation complete-law probability derivative sums to zero",
+    "admissible bad-space rotation fixture has four positive and two born-zero outcomes",
+    "admissible bad-space rotation full Shannon first jet equals weighted determinant source",
+    "noncommuting tangent retained",
+    "all 2^d paired outputs sum to one",
+    "golden weight equals 4p^3",
+    "Q block is 1-p^6",
+    "R block is 1-p^6-p^12",
+    "second AF x scene eigenvalue is 1-p^12",
+    "all golden mode probabilities exceed one half",
+    "both retained block mean weights are positive",
+    "reweighted two-block source has the stated exact coupling"
+  ],
+  "check_count": 25,
+  "owner_sha256": {
+    "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
+    "02_REGISTRY/research/A4D_ONE_FEEDBACK_NONFLAT_NULL_SCALAR_EINSTEIN_SOURCE_2026_10_18.md": "80bdb2a3ab6189b37ea9cebe1545cfebea2d7300037f4d3e21fa5e1479a5ce84"
+  },
+  "instrument": "Gamma(W) on a filled d-mode input; complete occupation-basis readout of every d-particle output; no outcome is discarded.",
+  "first_source_identity": "DH = 2 sum_i kappa(a_i) D[-log(1-r f_i)], a_i=[w0(1-r f_i)]^2, kappa(a)=a log(a/(1-a)); evaluated in a fixed output polar basis at the reference point.",
+  "golden_blocks": {
+    "r": "p^3/4",
+    "w0": "1-p^6=4p^3",
+    "Q0": "1-p^6",
+    "R0": "1-p^6-p^12=1-r(1-p^12)",
+    "good_probability_Q": 0.7950387238763158,
+    "good_probability_R": 0.7898177110512322,
+    "kappa_Q": 1.0777304508507894,
+    "kappa_R": 1.0455819924315226,
+    "kappa_Q_over_kappa_R": 1.03074695112576,
+    "lambda_mean_sigma_plus": 24.023193714740728,
+    "lambda_mode_sigma_plus": 23.343458848123582,
+    "lambda_mean_exact": "sigma*2*p^(-5)*[(kappa_Q/kappa_R)*(R0/Q0)+p^6]"
+  },
+  "finite_pp_root": "A+D=-2*lambda_mean*s^2 with psi=s*u, c_x=-A/2, c_y=-D/2; at s=0 this gives the exact vacuum trace A+D=0. Reverse sigma gives positive Ric_uu in the owned convention.",
+  "scope": [
+    "The first variation uses the entire exterior occupation law, including outcomes with zero base probability; such outcomes contribute o(||delta||), so the statement is C1, not C2.",
+    "The complete occupation basis is fixed at the reference root and aligned with the polar mode pairs. Implementing and pricing that readout remains an execution premise.",
+    "This is a detector-only mean-source consumer on the owned two-tick AF x scene branch. It does not establish the full same-history H+J+R price, native compulsory selection, joint preparation/clock/observer/work stationarity, physical refinement, or raw #216 closure.",
+    "Existing exact finite all-row pp-wave identities are reused with the two independent spectral source blocks reweighted by positive kappa_Q and kappa_R; this checker validates the full-law first jet and coefficient algebra, not the historical 40-row lattice replay."
+  ],
+  "checker_sha256": "56bda572b4156bbafbb0b4b0985f8014497fbde47d9b3963b3d5b52930cbeef6"
+}
