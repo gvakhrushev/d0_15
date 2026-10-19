@@ -1144,6 +1144,135 @@
         }
       ],
       "reported_state": "Pinned to open Draft #380 head 3ffff0fb76aa86132139c647c883baf240afe3a1, based on #334 commit 03bd6fed84830e72e55341cc38215c880d287357 while current #334 head is 0e1849bd7bf6a87e9731801206fd5ccd1041bb63. Both scoped checkers replayed successfully in the current task. GitHub guards for #380 currently fail only because its PR body lacks exactly one Repository metadata line. Indexed result-only; no native-programme application or scientific promotion."
+    },
+    {
+      "id": "full128-opposite-null-two-round-shannon-order-source",
+      "owner": "same-branch #334 full128 order-readout research result; indexed result-only",
+      "statement": "For the original CAR16/full128 instrument at the pinned L=4 nonzero Fourier mode, the retained port-0/blank-label event distinguishes the opposite-null J23 commutator with exact positive derivative (42633-14157*sqrt(5))/5120000. Applying the same assigned instrument twice with separate fresh outcome records and retaining every one of the 16,384 ordered histories gives a strictly positive complete Golden-Shannon mixed order source in [8.0230437693961338, 8.0230437693961339]*10^-8.",
+      "interface": "full128-opposite-null-order-source-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "carrier": "The original 16-component CAR and 128-outcome full instrument are fixed, with reference128 retained as an unchanged full-rank spectator.",
+        "fixture": "L=4, h=1/4, nu=3/5, mode (0,0,0,1), and system marginal I16/16; only the role-2 link is varied by N2 and Nbar3.",
+        "assigned_sequence": "The two Lorentz increments are inputs to two successive evaluations of the existing matrix instrument; a fresh retained 128-outcome record is used per round. This does not prove that D0 physically admits this per-increment operation.",
+        "complete_history": "The Shannon calculation retains all 16,384 ordered outcomes in both orders. There are 1,764 positive-support histories and 14,620 zero-support histories per order; each zero-history q log q contribution has zero mixed derivative by the pinned factorization control.",
+        "source_scope": "The interval is the mixed derivative of the complete pointer Shannon law only. The assigned two-round instrument is not thereby identified with the full Book Cost-Info law or its controller/work/preparation/clock source.",
+        "physical_boundary": "No physical field-to-increment compiler, literal fullStep admission, native fresh-record execution, compulsory action selection, Einstein-source equality, Ward identity, refinement or GR closure is established."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/owner.md",
+          "sha256": "4f32d226dcf38284cae32ec78937915ae6f149271097107f3078efc0ba5545f0"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/RESULT.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/result.md",
+          "sha256": "a69ff3093d9f16c66903b7692e809a3f46abda15ee6d74962d10fc08b5750c68"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_full128_pointer.py",
+          "sha256": "176739372e85d8cbd2ba48f7cc28cfe508395ae84007d8462a3f502d596a87a2"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_two_round_complete_shannon_order_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_two_round_shannon.py",
+          "sha256": "3759eb9a7826efdb167c73d2185acc5c8c82d271b5dde1b208d4e74db85f18ae"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/TWO_ROUND_COMPLETE_SHANNON_SOURCE.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/two_round_shannon_source.json",
+          "sha256": "a0207ca49665062c04e8dcb9cf072aa20daa15df9eef7533a686beb8ea6b9de3"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_complete_shannon.py",
+          "sha256": "26424be5c2278828af81d331b8edc110dd8c4eefad4fc97e2c2e5fa813de178a"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/COMPLETE_SHANNON_SOURCE.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/complete_shannon_source.json",
+          "sha256": "3111d22f61d3c03ae7ed34c114a53ef69f1c8a9fe5b6102e197dfe2cd9be5ddd"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/SOURCE_PINS.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/SOURCE_PINS.json",
+          "sha256": "d58f481dcc57f0c98a841f09df885e21d144538a21b02e858528be9abad2250c"
+        }
+      ],
+      "reported_state": "Pinned to live Draft #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63; all 7 replayed source files match that exact head. The full128 pointer checker passes 326 exact controls and the complete two-round Shannon checker passes 1,803 controls, including all 16,384 ordered histories and zero-support mixed-derivative checks. This remains finite assigned-instrument evidence only: no physical per-increment admission or complete Cost-Info action is shown, and there is no accepted application to constitutive, native_sector, matter_source_ward or positive_gr and no scientific promotion."
+    },
+    {
+      "id": "native-retained-record-oneway-actuation-gap",
+      "owner": "#334 retained-record admission proof; exact checker replayed in current task",
+      "statement": "For every finite word generated by active complete orthogonals U_A tensor I_R and controlled additive record updates C_f, and every faithful complete isometric extension retaining the same old-record translation probe, the probe charge is invariant. The actual fixed p0 complete golden-record preparation and its first-unequal target differ by the exact positive charge gap Delta=2*a*p*q^3/(1+q+q^2+q^3), so every operation in that class stays at least Delta/2 (about 0.03658) from the target. Any epsilon-accurate complete actuation must satisfy ||[X,U]|| >= Delta-2*epsilon.",
+      "interface": "native-retained-record-oneway-actuation-boundary-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "generated_class": "Only active complete orthogonals tensored with record identity, controlled additive record translations, their words/reversals, and faithful complete extensions are classified.",
+        "fixed_experiment": "Use the declared complete p0 raw preparation, first-unequal route, actual common-record target, all 33 scene vertices and the transported old-record probe.",
+        "complete_state": "All failure/old-record coordinates remain present; no reset, trace, postselection, change of probe or initial target preparation is used.",
+        "escape_routes": "First-odd routing and coherent actuation on an old record break the invariant and are outside the restricted class; their physical admission is not established.",
+        "scope_fence": "This is not a no-go for every D0 operation, the broader addressed G/CNOT compiler, the full native core, or positive GR. It identifies a necessary actuation property for this target."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_NATIVE_RETAINED_RECORD_ADMISSION.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/owner.md",
+          "sha256": "05c50904b149fcffcc93d8d52ffa66da260654cf9bfc47b80354d59fef4fe336"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/retained_record_admission.lean",
+          "sha256": "60315f9b6069e4e10fabd9db5b230d241e6b13e53054d7c492fd722c95000123"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_check.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/check_retained_record_admission.py",
+          "sha256": "0fedfee8a287a0bfa70b842b064ae49d56bc3456073c3957a4412202e5bd3f4a"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_certificate.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/certificate.json",
+          "sha256": "0bfbb02423f28dbbf1baaf014729e9e313cbadbae976f36dbf4ca4b2ed830dd1"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_results.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/results.json",
+          "sha256": "8aca3f581f68326310b6edf5539aa92d595457ce36a7a2fd9458198b5e9fa8c6"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/lean_output.txt",
+          "sha256": "ca6cc9098256c4abfe8869723ed44372e278e76d90e907c033c72a1122a0ca6c"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/SOURCE_PINS.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/SOURCE_PINS.json",
+          "sha256": "6af2d9537afb46bae51f53cf03d2df24ce7441949d101430d4f463e354739b25"
+        }
+      ],
+      "reported_state": "Pinned to #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63. The exact checker passed with its pinned certificate: 296 controls. It is a restricted-class actuation boundary only; no physical D0 obstruction, accepted native application or positive GR closure is inferred."
     }
   ],
   "applications": [

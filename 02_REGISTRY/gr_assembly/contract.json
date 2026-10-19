@@ -325,6 +325,24 @@
       "normalization": "Original golden unit log_phi for complete-history weights and the positive scalar transfer pressure log_phi(rho(K)).",
       "refinement": "Exact finite original scene and its 1287 triangle array only; no continuum or refining-family statement.",
       "scope": "Scoped NO-GO only for affine edge-price maps followed by scalar positive Perron pressure as the entire Lorentz action. Nonlinear price maps, full H+J+R, CAR/memory, measurement, preparation, clock and work terms are outside this obstruction; no native field-to-price binding or GR conclusion is proved."
+    },
+    "full128-opposite-null-order-source-v1": {
+      "carrier": "Original CAR16/full128 128-outcome instrument and a fixed full-rank reference128 spectator; L=4, h=1/4, nu=3/5 and Fourier mode (0,0,0,1).",
+      "action": "Two assigned Lorentz increments N2 and Nbar3 are evaluated by the already-owned full128 matrix instrument, with a distinct fresh retained 128-outcome record on each round. This is not a physically admitted D0 step or the compulsory complete Book Cost-Info action.",
+      "variations": "Compare the endpoint orders exp(a*N2)exp(b*Nbar3) and exp(b*Nbar3)exp(a*N2), then the corresponding sequential two-round histories. The two-round law retains all 128^2 ordered outcome pairs.",
+      "source": "The original port-0/blank-label pointer has exact positive J23 order jet (42633-14157*sqrt(5))/5120000. The complete two-round Golden Shannon mixed-order difference lies in [8.0230437693961338, 8.0230437693961339]*10^-8; exact zero-support controls make this particular mixed derivative well-defined.",
+      "normalization": "Pointer probabilities use the original full128 instrument; the complete Shannon source is measured in Golden information units with log(phi).",
+      "refinement": "One finite L=4 Fourier fixture only; no uniform refinement or continuum statement.",
+      "scope": "Finite order-sensitive endpoint and assigned two-round readout only. Physical per-increment admission, Julia-dilation composition by the native program, the complete controller/work/preparation/clock/reference price, full Euler source, Ward transfer and GR closure remain open."
+    },
+    "native-retained-record-oneway-actuation-boundary-v1": {
+      "carrier": "The complete active carrier A tensored with a finite abelian retained-record group R, including the stated original golden raw record and all 33 common-record scene targets.",
+      "action": "Generated class consisting of every complete active orthogonal U_A tensor I_R, every controlled additive record translation C_f:(a,r)->(a,r+f(a)), arbitrary words and reversals, and faithful complete isometric extensions retaining the same old-record probe.",
+      "variations": "All finite word lengths and record sizes in that generated class; the actual fixed p0 initial state and complete first-unequal target states are compared without resetting, tracing, postselection or changing the initial preparation.",
+      "source": "Every generator commutes with the old-record translation probe X, so its quadratic charge is invariant. The actual target changes the charge by Delta=2*a*p*q^3/(1+q+q^2+q^3)>0, giving complete-state distance at least Delta/2; an epsilon-accurate full actuation requires operator commutator norm at least Delta-2*epsilon.",
+      "normalization": "p=p0=phi^-1, a=sqrt(p), q=a^4+p^4=3-4p; the exact archive gap is positive and Delta/2 is approximately 0.03658.",
+      "refinement": "The invariant and error floor hold for all finite generated word lengths and all faithful isometric record extensions; no infinite matrix or word class is numerically enumerated.",
+      "scope": "A quantitative obstruction only for the stated one-way active-orthogonal plus additive-record class. The class does not exhaust D0; first-odd routing and coherent old-record actuation can leave it. No physical D0 no-go or GR closure is claimed."
     }
   },
   "obligations": [

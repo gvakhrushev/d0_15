@@ -1,0 +1,671 @@
+../02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean:671:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean:684:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean:959:4: warning: 'change Complex.normSq (fullAmplify U z χ w i z) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean:1383:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+../02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean:1812:28: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean:2310:10: warning: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+../02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean:2560:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean:2560:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D0.Research.GoldenProgramCompilation.golden_square_formula (a p : ℝ) :
+  D0.Research.GoldenProgramCompilation.G a p ^ 2 = !![a ^ 2 - p ^ 2, -2 * a * p; 2 * a * p, a ^ 2 - p ^ 2]
+'D0.Research.GoldenProgramCompilation.golden_square_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenProgramCompilation.native_root_interval (p : ℝ) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) : 1 / 2 < p ∧ p < 1
+'D0.Research.GoldenProgramCompilation.native_root_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenProgramCompilation.owned_golden_square_changes_basis (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) :
+  (D0.Research.GoldenProgramCompilation.G a p ^ 2) 0 0 ≠ 0 ∧
+    (D0.Research.GoldenProgramCompilation.G a p ^ 2) 1 0 ≠ 0 ∧
+      (D0.Research.GoldenProgramCompilation.G a p ^ 2) 0 1 ≠ 0 ∧
+        (D0.Research.GoldenProgramCompilation.G a p ^ 2) 1 1 ≠ 0
+'D0.Research.GoldenProgramCompilation.owned_golden_square_changes_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.literal_p0_square_changes_basis :
+  have p := D0.primitiveRoot;
+  have a := √p;
+  (D0.Research.GoldenProgramCompilation.G a p ^ 2) 0 0 ≠ 0 ∧
+    (D0.Research.GoldenProgramCompilation.G a p ^ 2) 1 0 ≠ 0 ∧
+      (D0.Research.GoldenProgramCompilation.G a p ^ 2) 0 1 ≠ 0 ∧
+        (D0.Research.GoldenProgramCompilation.G a p ^ 2) 1 1 ≠ 0
+'D0.Research.GoldenProgramCompilation.literal_p0_square_changes_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.retained_copy_is_involutive :
+  D0.Research.GoldenProgramCompilation.copy * D0.Research.GoldenProgramCompilation.copy = 1
+'D0.Research.GoldenProgramCompilation.retained_copy_is_involutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.forward_copy_echo_formula (a p : ℝ) :
+  D0.Research.GoldenProgramCompilation.copy * D0.Research.GoldenProgramCompilation.recordGate a p *
+      D0.Research.GoldenProgramCompilation.copy =
+    !![a, -p, 0, 0; p, a, 0, 0; 0, 0, a, p; 0, 0, -p, a]
+'D0.Research.GoldenProgramCompilation.forward_copy_echo_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.forward_copy_echo_retains_one_and_inverts_pointer (a p u v : ℝ) :
+  (D0.Research.GoldenProgramCompilation.copy * D0.Research.GoldenProgramCompilation.recordGate a p *
+          D0.Research.GoldenProgramCompilation.copy).mulVec
+      ![0, 0, u, v] =
+    ![0, 0, (D0.Research.GoldenProgramCompilation.G a p).transpose.mulVec ![u, v] 0,
+      (D0.Research.GoldenProgramCompilation.G a p).transpose.mulVec ![u, v] 1]
+'D0.Research.GoldenProgramCompilation.forward_copy_echo_retains_one_and_inverts_pointer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.eval_empty.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E] (x : E) :
+  (D0.Research.GoldenProgramCompilation.evalWord []) x = x
+'D0.Research.GoldenProgramCompilation.eval_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenProgramCompilation.eval_cons.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  (U : E →L[ℝ] E) (w : List (E →L[ℝ] E)) (x : E) :
+  (D0.Research.GoldenProgramCompilation.evalWord (U :: w)) x = U ((D0.Research.GoldenProgramCompilation.evalWord w) x)
+'D0.Research.GoldenProgramCompilation.eval_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_word_isometry.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [NormedSpace ℝ E] (w : List (E →L[ℝ] E)) (hw : ∀ U ∈ w, ∀ (x : E), ‖U x‖ = ‖x‖) (x : E) :
+  ‖(D0.Research.GoldenProgramCompilation.evalWord w) x‖ = ‖x‖
+'D0.Research.GoldenProgramCompilation.complete_word_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenProgramCompilation.one_compiled_step_error.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [NormedSpace ℝ E] (U V : E →L[ℝ] E) (δ : ℝ) (hU : ∀ (x : E), ‖U x‖ = ‖x‖) (hUV : ‖U - V‖ ≤ δ) (x y : E) :
+  ‖U x - V y‖ ≤ ‖x - y‖ + δ * ‖y‖
+'D0.Research.GoldenProgramCompilation.one_compiled_step_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.whole_compiled_word_error.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [NormedSpace ℝ E] (w v : List (E →L[ℝ] E)) (δ : ℝ) (hw : ∀ U ∈ w, ∀ (x : E), ‖U x‖ = ‖x‖)
+  (hv : ∀ V ∈ v, ∀ (x : E), ‖V x‖ = ‖x‖) (hpaired : List.Forall₂ (fun U V => ‖U - V‖ ≤ δ) w v) (x : E) :
+  ‖(D0.Research.GoldenProgramCompilation.evalWord w) x - (D0.Research.GoldenProgramCompilation.evalWord v) x‖ ≤
+    ↑w.length * δ * ‖x‖
+'D0.Research.GoldenProgramCompilation.whole_compiled_word_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.compiled_word_preserves_every_record_norm.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [NormedSpace ℝ E] (v : List (E →L[ℝ] E)) (hv : ∀ V ∈ v, ∀ (x : E), ‖V x‖ = ‖x‖) (x : E) :
+  ‖(D0.Research.GoldenProgramCompilation.evalWord v) x‖ = ‖x‖
+'D0.Research.GoldenProgramCompilation.compiled_word_preserves_every_record_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.calibrated_complete_state_error.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [NormedSpace ℝ E] (x t : E) (C A : E →L[ℝ] E) (ε δ : ℝ) (hC : ∀ (y : E), ‖C y‖ = ‖y‖) (hx : ‖x‖ = 1)
+  (hprep : ‖x - t‖ ≤ ε) (hcompile : ‖A - C‖ ≤ δ) : ‖A x - C t‖ ≤ ε + δ
+'D0.Research.GoldenProgramCompilation.calibrated_complete_state_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.native_fifth_resolution_scale (p : ℝ) (hp : p + p ^ 2 = 1) :
+  (1 + p) ^ 5 = 8 + 5 * p
+'D0.Research.GoldenProgramCompilation.native_fifth_resolution_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.native_fifth_scale_separates_cost_and_accuracy (p : ℝ) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) : 9 < (1 + p) ^ 5 ∧ (1 + p) ^ 5 < 16
+'D0.Research.GoldenProgramCompilation.native_fifth_scale_separates_cost_and_accuracy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.precision_has_native_resolution_bound (p : ℝ) (hp : p + p ^ 2 = 1) (hp0 : 0 < p)
+  (m : ℕ) : D0.Research.GoldenProgramCompilation.precision m ≤ (D0.Research.GoldenProgramCompilation.resolution p m)⁻¹
+'D0.Research.GoldenProgramCompilation.precision_has_native_resolution_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.expanded_compiler_cost_div_resolution_tends_zero (p A : ℝ) (c : ℕ)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  Filter.Tendsto (fun m => A * ↑m ^ c * 9 ^ m / D0.Research.GoldenProgramCompilation.resolution p m) Filter.atTop
+    (nhds 0)
+'D0.Research.GoldenProgramCompilation.expanded_compiler_cost_div_resolution_tends_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.every_fixed_compiler_polynomial_eventually_fits (p A : ℝ) (c : ℕ)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  ∀ᶠ (m : ℕ) in Filter.atTop, A * ↑m ^ c * 9 ^ m ≤ D0.Research.GoldenProgramCompilation.resolution p m
+'D0.Research.GoldenProgramCompilation.every_fixed_compiler_polynomial_eventually_fits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_owned_phi_is_one_plus_primitive : D0.phi = 1 + D0.primitiveRoot
+'D0.Research.GoldenProgramCompilation.actual_owned_phi_is_one_plus_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_resolution_is_owned_phi_level (m : ℕ) :
+  D0.Research.GoldenProgramCompilation.resolution D0.primitiveRoot m = D0.phi ^ (5 * m)
+'D0.Research.GoldenProgramCompilation.actual_resolution_is_owned_phi_level' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_owned_code_scale_and_accuracy (m : ℕ) :
+  D0.Research.GoldenProgramCompilation.precision m ≤ (D0.phi ^ (5 * m))⁻¹
+'D0.Research.GoldenProgramCompilation.actual_owned_code_scale_and_accuracy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_expanded_compiler_cost_eventually_fits_owned_phi (A : ℝ) (c : ℕ) :
+  ∀ᶠ (m : ℕ) in Filter.atTop, A * ↑m ^ c * 9 ^ m ≤ D0.phi ^ (5 * m)
+'D0.Research.GoldenProgramCompilation.actual_expanded_compiler_cost_eventually_fits_owned_phi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.success_phase_unit (b : ℂ) (hb : b ≠ 0) :
+  Complex.normSq (D0.Research.GoldenProgramCompilation.successPhase b) = 1
+'D0.Research.GoldenProgramCompilation.success_phase_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenProgramCompilation.success_correction_unit (b : ℂ) (hb : b ≠ 0) :
+  Complex.normSq (D0.Research.GoldenProgramCompilation.successCorrection b) = 1
+'D0.Research.GoldenProgramCompilation.success_correction_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.success_phase_times_own_norm (b : ℂ) (hb : b ≠ 0) :
+  ↑‖b‖ * D0.Research.GoldenProgramCompilation.successPhase b = b
+'D0.Research.GoldenProgramCompilation.success_phase_times_own_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.success_correction_times_phase (b : ℂ) (hb : b ≠ 0) :
+  D0.Research.GoldenProgramCompilation.successCorrection b * D0.Research.GoldenProgramCompilation.successPhase b = 1
+'D0.Research.GoldenProgramCompilation.success_correction_times_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.success_correction_makes_own_success_positive (b : ℂ) (hb : b ≠ 0) :
+  D0.Research.GoldenProgramCompilation.successCorrection b * b = ↑‖b‖
+'D0.Research.GoldenProgramCompilation.success_correction_makes_own_success_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.success_correction_is_unique (b c : ℂ) (hb : b ≠ 0) (hc : c * b = ↑‖b‖) :
+  c = D0.Research.GoldenProgramCompilation.successCorrection b
+'D0.Research.GoldenProgramCompilation.success_correction_is_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.success_distance_from_unit_phase (b : ℂ) (hb : b ≠ 0) :
+  Complex.normSq (b - D0.Research.GoldenProgramCompilation.successPhase b) = (‖b‖ - 1) ^ 2
+'D0.Research.GoldenProgramCompilation.success_distance_from_unit_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_calibrated_distance_identity.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (b : ℂ) (hb : b ≠ 0) (x t : ι → ℂ) :
+  (D0.Research.GoldenCoherentAmplification.vectorWeight fun i =>
+      D0.Research.GoldenProgramCompilation.successCorrection b * x i - t i) =
+    D0.Research.GoldenCoherentAmplification.vectorWeight fun i =>
+      x i - D0.Research.GoldenProgramCompilation.successPhase b * t i
+'D0.Research.GoldenProgramCompilation.complete_calibrated_distance_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.balanced_success_ne_zero (b : ℂ) (e : ℝ) (hbalance : Complex.normSq b + e = 1)
+  (he : e < 1) : b ≠ 0
+'D0.Research.GoldenProgramCompilation.balanced_success_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.balanced_success_radial_error (b : ℂ) (e : ℝ) (hbalance : Complex.normSq b + e = 1)
+  (he0 : 0 ≤ e) : (‖b‖ - 1) ^ 2 ≤ e
+'D0.Research.GoldenProgramCompilation.balanced_success_radial_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_full_calibrated_column_fixed_target_error.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ fun i => U i z) (k : ℕ)
+  (he :
+    (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+        D0.Research.GoldenCoherentAmplification.fullWord U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i z) <
+      1) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (D0.Research.GoldenProgramCompilation.calibratedColumn a p U z χ k -
+        D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ fun i => U i z) ≤
+    2 *
+      D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+        D0.Research.GoldenCoherentAmplification.fullWord U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i z
+'D0.Research.GoldenProgramCompilation.actual_full_calibrated_column_fixed_target_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_full_calibrated_column_has_complete_unit_weight.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ fun i => U i z) (k : ℕ)
+  (he :
+    (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+        D0.Research.GoldenCoherentAmplification.fullWord U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i z) <
+      1) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (D0.Research.GoldenProgramCompilation.calibratedColumn a p U z χ k) =
+    1
+'D0.Research.GoldenProgramCompilation.actual_full_calibrated_column_has_complete_unit_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.native_full_calibrated_column_rate.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he0 : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+        (D0.Research.GoldenProgramCompilation.calibratedColumn a p U z χ (k + 2)) =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.vectorWeight
+        (D0.Research.GoldenProgramCompilation.calibratedColumn a p U z χ (k + 2) -
+          D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ fun i => U i z) ≤
+      (1 / 16) ^ k / 5
+'D0.Research.GoldenProgramCompilation.native_full_calibrated_column_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.calibration_is_one_complete_pointer_operation.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (k : ℕ) :
+  D0.Research.GoldenFixedCalibration.fullRealVector
+      (D0.Research.GoldenProgramCompilation.calibratedColumn a p U z χ k) =
+    (Matrix.kroneckerMap (fun x1 x2 => x1 * x2) 1
+          (D0.Research.GoldenCoherentAmplification.phaseRealMatrix
+            (D0.Research.GoldenProgramCompilation.successCorrection
+              (D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k)))).mulVec
+      (D0.Research.GoldenFixedCalibration.fullRealVector
+        (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k))
+'D0.Research.GoldenProgramCompilation.calibration_is_one_complete_pointer_operation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.all_33_literal_scene_calibrated_columns_have_fixed_real_targets (k : ℕ)
+  (v : Fin 33) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+        (D0.Research.GoldenProgramCompilation.calibratedColumn (√D0.primitiveRoot) D0.primitiveRoot
+          (D0.Research.GoldenCoherentAmplification.routedGoldenSeed (√D0.primitiveRoot) D0.primitiveRoot 4 5)
+          (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+          (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+            (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+          (k + 2)) =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.vectorWeight
+        (D0.Research.GoldenProgramCompilation.calibratedColumn (√D0.primitiveRoot) D0.primitiveRoot
+            (D0.Research.GoldenCoherentAmplification.routedGoldenSeed (√D0.primitiveRoot) D0.primitiveRoot 4 5)
+            (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+            (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+              (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+            (k + 2) -
+          D0.Research.GoldenFixedCalibration.actualSceneAlignedSeed v) ≤
+      (1 / 16) ^ k / 5
+'D0.Research.GoldenProgramCompilation.all_33_literal_scene_calibrated_columns_have_fixed_real_targets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.real_hilbert_norm_sq_is_complete_weight.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (x : ι → ℝ) :
+  ‖D0.Research.GoldenProgramCompilation.realHilbert x‖ ^ 2 = D0.Research.GoldenFixedCalibration.realVectorWeight x
+'D0.Research.GoldenProgramCompilation.real_hilbert_norm_sq_is_complete_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.real_hilbert_subtracts.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x y : ι → ℝ) :
+  D0.Research.GoldenProgramCompilation.realHilbert (x - y) =
+    D0.Research.GoldenProgramCompilation.realHilbert x - D0.Research.GoldenProgramCompilation.realHilbert y
+'D0.Research.GoldenProgramCompilation.real_hilbert_subtracts' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenProgramCompilation.matrix_operator_acts_on_every_complete_coordinate.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (A : Matrix ι ι ℝ) (x : ι → ℝ) :
+  (D0.Research.GoldenProgramCompilation.matrixOperator A) (D0.Research.GoldenProgramCompilation.realHilbert x) =
+    D0.Research.GoldenProgramCompilation.realHilbert (A.mulVec x)
+'D0.Research.GoldenProgramCompilation.matrix_operator_acts_on_every_complete_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.whole_real_orthogonal_operator_preserves_weight.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (A : Matrix ι ι ℝ) (hA : A.transpose * A = 1) (x : ι → ℝ) :
+  D0.Research.GoldenFixedCalibration.realVectorWeight (A.mulVec x) =
+    D0.Research.GoldenFixedCalibration.realVectorWeight x
+'D0.Research.GoldenProgramCompilation.whole_real_orthogonal_operator_preserves_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.whole_real_orthogonal_operator_is_hilbert_isometry.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (A : Matrix ι ι ℝ) (hA : A.transpose * A = 1) (x : EuclideanSpace ℝ ι) :
+  ‖(D0.Research.GoldenProgramCompilation.matrixOperator A) x‖ = ‖x‖
+'D0.Research.GoldenProgramCompilation.whole_real_orthogonal_operator_is_hilbert_isometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.faithful_full_complex_norm_is_hilbert_norm_sq.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (x : ι → ℂ) :
+  ‖D0.Research.GoldenProgramCompilation.realHilbert (D0.Research.GoldenFixedCalibration.fullRealVector x)‖ ^ 2 =
+    D0.Research.GoldenCoherentAmplification.vectorWeight x
+'D0.Research.GoldenProgramCompilation.faithful_full_complex_norm_is_hilbert_norm_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_calibrated_matrix_column_is_actual_calibrated_state.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (k : ℕ) :
+  (fun i => D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ k i z) =
+    D0.Research.GoldenProgramCompilation.calibratedColumn a p U z χ k
+'D0.Research.GoldenProgramCompilation.complete_calibrated_matrix_column_is_actual_calibrated_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_calibrated_matrix_is_unitary.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] {k : ℕ} (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hb : D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k ≠ 0) :
+  (D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ k).conjTranspose *
+        D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ k =
+      1 ∧
+    D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ k *
+        (D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ k).conjTranspose =
+      1
+'D0.Research.GoldenProgramCompilation.complete_calibrated_matrix_is_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_calibrated_real_matrix_is_orthogonal.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] {k : ℕ} (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hb : D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k ≠ 0) :
+  (D0.Research.GoldenFixedCalibration.fullRealMatrix
+          (D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ k)).transpose *
+      D0.Research.GoldenFixedCalibration.fullRealMatrix
+        (D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ k) =
+    1
+'D0.Research.GoldenProgramCompilation.complete_calibrated_real_matrix_is_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_calibrated_matrix_blank_hilbert_action.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (k : ℕ) :
+  (D0.Research.GoldenProgramCompilation.matrixOperator
+        (D0.Research.GoldenFixedCalibration.fullRealMatrix
+          (D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ k)))
+      (D0.Research.GoldenProgramCompilation.realHilbert
+        (D0.Research.GoldenFixedCalibration.fullRealVector (D0.Research.GoldenCoherentAmplification.blankVector z))) =
+    D0.Research.GoldenProgramCompilation.realHilbert
+      (D0.Research.GoldenFixedCalibration.fullRealVector
+        (D0.Research.GoldenProgramCompilation.calibratedColumn a p U z χ k))
+'D0.Research.GoldenProgramCompilation.actual_calibrated_matrix_blank_hilbert_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_blank_is_complete_unit_hilbert_state.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (z : ι) :
+  ‖D0.Research.GoldenProgramCompilation.realHilbert
+        (D0.Research.GoldenFixedCalibration.fullRealVector (D0.Research.GoldenCoherentAmplification.blankVector z))‖ =
+    1
+'D0.Research.GoldenProgramCompilation.actual_blank_is_complete_unit_hilbert_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_target_seed_is_complete_unit_hilbert_state.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (x : ι → ℂ) (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x) :
+  ‖D0.Research.GoldenProgramCompilation.realHilbert
+        (D0.Research.GoldenFixedCalibration.fullRealVector
+          (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ x))‖ =
+    1
+'D0.Research.GoldenProgramCompilation.actual_target_seed_is_complete_unit_hilbert_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_compilation_and_preparation_error.{u_2} {E : Type u_2}
+  [NormedAddCommGroup E] [NormedSpace ℝ E] (A U : E →L[ℝ] E) (z t : E) (ε δ : ℝ) (hz : ‖z‖ = 1) (hprep : ‖U z - t‖ ≤ ε)
+  (hcompile : ‖A - U‖ ≤ δ) : ‖A z - t‖ ≤ ε + δ
+'D0.Research.GoldenProgramCompilation.complete_compilation_and_preparation_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.entire_literal_word_and_preparation_error.{u_2} {E : Type u_2}
+  [NormedAddCommGroup E] [NormedSpace ℝ E] (w v : List (E →L[ℝ] E)) (z t : E) (ε δ : ℝ)
+  (hw : ∀ U ∈ w, ∀ (x : E), ‖U x‖ = ‖x‖) (hv : ∀ U ∈ v, ∀ (x : E), ‖U x‖ = ‖x‖)
+  (hpaired : List.Forall₂ (fun U V => ‖U - V‖ ≤ δ) w v) (hz : ‖z‖ = 1)
+  (hprep : ‖(D0.Research.GoldenProgramCompilation.evalWord w) z - t‖ ≤ ε) :
+  ‖(D0.Research.GoldenProgramCompilation.evalWord v) z - t‖ ≤ ε + ↑w.length * δ
+'D0.Research.GoldenProgramCompilation.entire_literal_word_and_preparation_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.finite_compilation_budget_can_be_shared (ε : ℝ) (N : ℕ) (hN : 0 < N) :
+  ↑N * (ε / (2 * ↑N)) = ε / 2
+'D0.Research.GoldenProgramCompilation.finite_compilation_budget_can_be_shared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.two_error_halves_give_fixed_complete_rate.{u_2} {E : Type u_2}
+  [NormedAddCommGroup E] [NormedSpace ℝ E] (x t : E) (ε : ℝ) (h : ‖x - t‖ ≤ ε / 2 + ε / 2) : ‖x - t‖ ≤ ε
+'D0.Research.GoldenProgramCompilation.two_error_halves_give_fixed_complete_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_native_preparation_norm_fits_half_precision.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he0 : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) (m : ℕ) :
+  ‖D0.Research.GoldenProgramCompilation.realHilbert
+          (D0.Research.GoldenFixedCalibration.fullRealVector
+            (D0.Research.GoldenProgramCompilation.calibratedColumn a p U z χ (2 * m + 2))) -
+        D0.Research.GoldenProgramCompilation.realHilbert
+          (D0.Research.GoldenFixedCalibration.fullRealVector
+            (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ fun i => U i z))‖ ≤
+    D0.Research.GoldenProgramCompilation.precision m / 2
+'D0.Research.GoldenProgramCompilation.actual_native_preparation_norm_fits_half_precision' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_compiled_native_state_has_fixed_complete_rate.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he0 : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) (m : ℕ)
+  (A : Matrix (ι × Fin 2) (ι × Fin 2) ℝ)
+  (hcompile :
+    ‖D0.Research.GoldenProgramCompilation.matrixOperator A -
+          D0.Research.GoldenProgramCompilation.matrixOperator
+            (D0.Research.GoldenFixedCalibration.fullRealMatrix
+              (D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ (2 * m + 2)))‖ ≤
+      D0.Research.GoldenProgramCompilation.precision m / 2) :
+  ‖(D0.Research.GoldenProgramCompilation.matrixOperator A)
+          (D0.Research.GoldenProgramCompilation.realHilbert
+            (D0.Research.GoldenFixedCalibration.fullRealVector
+              (D0.Research.GoldenCoherentAmplification.blankVector z))) -
+        D0.Research.GoldenProgramCompilation.realHilbert
+          (D0.Research.GoldenFixedCalibration.fullRealVector
+            (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ fun i => U i z))‖ ≤
+    D0.Research.GoldenProgramCompilation.precision m
+'D0.Research.GoldenProgramCompilation.actual_compiled_native_state_has_fixed_complete_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.every_real_projector_reading_follows_complete_compilation_rate.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (P : Matrix ι ι ℝ) (hs : P.transpose = P) (hp : P * P = P) (x t : ι → ℝ)
+  (hx : D0.Research.GoldenFixedCalibration.realVectorWeight x = 1)
+  (ht : D0.Research.GoldenFixedCalibration.realVectorWeight t = 1) (ε : ℝ) (he : 0 ≤ ε)
+  (herror :
+    ‖D0.Research.GoldenProgramCompilation.realHilbert x - D0.Research.GoldenProgramCompilation.realHilbert t‖ ≤ ε) :
+  (D0.Research.GoldenFixedCalibration.realQuadraticReading P x -
+        D0.Research.GoldenFixedCalibration.realQuadraticReading P t) ^
+      2 ≤
+    4 * ε ^ 2
+'D0.Research.GoldenProgramCompilation.every_real_projector_reading_follows_complete_compilation_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.entire_refinement_preserves_compiled_error.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (n : ℕ) (x t : ι → ℂ) (ε : ℝ)
+  (he : D0.Research.GoldenCoherentAmplification.vectorWeight (x - t) ≤ ε) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n x -
+        D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n t) ≤
+    ε
+'D0.Research.GoldenProgramCompilation.entire_refinement_preserves_compiled_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.one_ancilla_retaining_compiled_step_error.{u_1, u_2} {E : Type u_1} {F : Type u_2}
+  [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F] (J : E →L[ℝ] F) (U : E →L[ℝ] E)
+  (V : F →L[ℝ] F) (δ : ℝ) (hV : ∀ (y : F), ‖V y‖ = ‖y‖) (hcompile : ‖V ∘SL J - J ∘SL U‖ ≤ δ) (x : E) (y : F) :
+  ‖V y - J (U x)‖ ≤ ‖y - J x‖ + δ * ‖x‖
+'D0.Research.GoldenProgramCompilation.one_ancilla_retaining_compiled_step_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.whole_compiled_word_keeps_all_ancilla_leakage.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F] (J : E →L[ℝ] F)
+  (w : List (E →L[ℝ] E)) (v : List (F →L[ℝ] F)) (δ : ℝ) (hw : ∀ U ∈ w, ∀ (x : E), ‖U x‖ = ‖x‖)
+  (hv : ∀ V ∈ v, ∀ (y : F), ‖V y‖ = ‖y‖) (hpaired : List.Forall₂ (fun U V => ‖V ∘SL J - J ∘SL U‖ ≤ δ) w v) (x : E) :
+  ‖(D0.Research.GoldenProgramCompilation.evalWord v) (J x) - J ((D0.Research.GoldenProgramCompilation.evalWord w) x)‖ ≤
+    ↑w.length * δ * ‖x‖
+'D0.Research.GoldenProgramCompilation.whole_compiled_word_keeps_all_ancilla_leakage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.whole_ancilla_retaining_program_has_complete_unit_norm.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F] (J : E →L[ℝ] F)
+  (hJ : ∀ (x : E), ‖J x‖ = ‖x‖) (v : List (F →L[ℝ] F)) (hv : ∀ V ∈ v, ∀ (y : F), ‖V y‖ = ‖y‖) (x : E) (hx : ‖x‖ = 1) :
+  ‖(D0.Research.GoldenProgramCompilation.evalWord v) (J x)‖ = 1
+'D0.Research.GoldenProgramCompilation.whole_ancilla_retaining_program_has_complete_unit_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.ancilla_retaining_compiler_and_preparation_error.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F] (J : E →L[ℝ] F)
+  (hJ : ∀ (x : E), ‖J x‖ = ‖x‖) (U : E →L[ℝ] E) (A : F →L[ℝ] F) (z t : E) (ε δ : ℝ) (hz : ‖z‖ = 1)
+  (hprep : ‖U z - t‖ ≤ ε) (hcompile : ‖A ∘SL J - J ∘SL U‖ ≤ δ) : ‖A (J z) - J t‖ ≤ ε + δ
+'D0.Research.GoldenProgramCompilation.ancilla_retaining_compiler_and_preparation_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.literal_ancilla_retaining_word_and_preparation_error.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F] (J : E →L[ℝ] F)
+  (hJ : ∀ (x : E), ‖J x‖ = ‖x‖) (w : List (E →L[ℝ] E)) (v : List (F →L[ℝ] F)) (z t : E) (ε δ : ℝ)
+  (hw : ∀ U ∈ w, ∀ (x : E), ‖U x‖ = ‖x‖) (hv : ∀ V ∈ v, ∀ (y : F), ‖V y‖ = ‖y‖)
+  (hpaired : List.Forall₂ (fun U V => ‖V ∘SL J - J ∘SL U‖ ≤ δ) w v) (hz : ‖z‖ = 1)
+  (hprep : ‖(D0.Research.GoldenProgramCompilation.evalWord w) z - t‖ ≤ ε) :
+  ‖(D0.Research.GoldenProgramCompilation.evalWord v) (J z) - J t‖ ≤ ε + ↑w.length * δ
+'D0.Research.GoldenProgramCompilation.literal_ancilla_retaining_word_and_preparation_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.every_compilation_choice_with_vanishing_error_has_same_fixed_limit.{u_2}
+  {F : Type u_2} [NormedAddCommGroup F] [NormedSpace ℝ F] (x y : ℕ → F) (t : F) (ε : ℕ → ℝ)
+  (hx : ∀ (m : ℕ), ‖x m - t‖ ≤ ε m) (hy : ∀ (m : ℕ), ‖y m - t‖ ≤ ε m) (hε : Filter.Tendsto ε Filter.atTop (nhds 0)) :
+  Filter.Tendsto x Filter.atTop (nhds t) ∧ Filter.Tendsto y Filter.atTop (nhds t)
+'D0.Research.GoldenProgramCompilation.every_compilation_choice_with_vanishing_error_has_same_fixed_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_ancilla_retaining_compiled_native_state_rate.{u_1, u_2} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] {F : Type u_2} [NormedAddCommGroup F] [NormedSpace ℝ F] (a p : ℝ) (U : Matrix ι ι ℂ)
+  (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he0 : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) (m : ℕ)
+  (J : EuclideanSpace ℝ (ι × Fin 2) →L[ℝ] F) (hJ : ∀ (x : EuclideanSpace ℝ (ι × Fin 2)), ‖J x‖ = ‖x‖) (A : F →L[ℝ] F)
+  (hcompile :
+    ‖A ∘SL J -
+          J ∘SL
+            D0.Research.GoldenProgramCompilation.matrixOperator
+              (D0.Research.GoldenFixedCalibration.fullRealMatrix
+                (D0.Research.GoldenProgramCompilation.calibratedFullMatrix a p U z χ (2 * m + 2)))‖ ≤
+      D0.Research.GoldenProgramCompilation.precision m / 2) :
+  ‖A
+          (J
+            (D0.Research.GoldenProgramCompilation.realHilbert
+              (D0.Research.GoldenFixedCalibration.fullRealVector
+                (D0.Research.GoldenCoherentAmplification.blankVector z)))) -
+        J
+          (D0.Research.GoldenProgramCompilation.realHilbert
+            (D0.Research.GoldenFixedCalibration.fullRealVector
+              (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ fun i => U i z)))‖ ≤
+    D0.Research.GoldenProgramCompilation.precision m
+'D0.Research.GoldenProgramCompilation.actual_ancilla_retaining_compiled_native_state_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.native_compiled_precision_tends_zero :
+  Filter.Tendsto D0.Research.GoldenProgramCompilation.precision Filter.atTop (nhds 0)
+'D0.Research.GoldenProgramCompilation.native_compiled_precision_tends_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.whole_common_raw_record_mass (a p : ℝ) (n m : ℕ) :
+  ∑ w, D0.Research.GoldenProgramCompilation.commonRawRecord a p n m w ^ 2 =
+    D0.Research.GoldenProgramCompilation.commonRecordMass a p n m
+'D0.Research.GoldenProgramCompilation.whole_common_raw_record_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.common_record_has_complete_unit_mass (a p : ℝ) (n m : ℕ)
+  (hm : 0 < D0.Research.GoldenProgramCompilation.commonRecordMass a p n m) :
+  ∑ w, D0.Research.GoldenProgramCompilation.commonRecord a p n m w ^ 2 = 1
+'D0.Research.GoldenProgramCompilation.common_record_has_complete_unit_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_common_record_mass_is_native_value (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) :
+  D0.Research.GoldenProgramCompilation.commonRecordMass a p 4 5 =
+    D0.Research.GoldenHistoryPreparation.jointGoodWeight a p / 32
+'D0.Research.GoldenProgramCompilation.actual_common_record_mass_is_native_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_common_record_mass_positive (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) : 0 < D0.Research.GoldenProgramCompilation.commonRecordMass a p 4 5
+'D0.Research.GoldenProgramCompilation.actual_common_record_mass_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_retained_target_has_one_common_record_factor (a p : ℝ) (n m : ℕ)
+  (S : Finset (Fin m → Bool)) (hs : 0 < S.card) (hm : 0 < D0.Research.GoldenProgramCompilation.commonRecordMass a p n m)
+  (w : Fin m → D0.Research.GoldenHistoryPreparation.Word n) (b : Fin m → Bool) :
+  (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector
+      (D0.Research.GoldenCoherentAmplification.codeValidity n m S)
+      (fun s =>
+        D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m s
+          (D0.Research.GoldenCoherentAmplification.completeBlank n m))
+      fun i => (w i, b i)) =
+    ↑(D0.Research.GoldenProgramCompilation.uniformCode S b *
+        D0.Research.GoldenProgramCompilation.commonRecord a p n m w)
+'D0.Research.GoldenProgramCompilation.complete_retained_target_has_one_common_record_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.every_actual_scene_target_has_same_retained_record (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) (w : Fin 5 → D0.Research.GoldenHistoryPreparation.Word 4)
+  (b : Fin 5 → Bool) :
+  (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector
+      (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+        (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+      (fun s =>
+        D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5 s
+          (D0.Research.GoldenCoherentAmplification.completeBlank 4 5))
+      fun i => (w i, b i)) =
+    ↑(D0.Research.GoldenProgramCompilation.uniformCode (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v)
+          b *
+        D0.Research.GoldenProgramCompilation.commonRecord a p 4 5 w)
+'D0.Research.GoldenProgramCompilation.every_actual_scene_target_has_same_retained_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.actual_p0_common_retained_record_has_unit_mass :
+  ∑ w, D0.Research.GoldenProgramCompilation.commonRecord (√D0.primitiveRoot) D0.primitiveRoot 4 5 w ^ 2 = 1
+'D0.Research.GoldenProgramCompilation.actual_p0_common_retained_record_has_unit_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_common_record_preserves_every_mixed_gram.{u_1, u_2, u_3} {H : Type u_1}
+  {V : Type u_2} {Ω : Type u_3} [Fintype H] [DecidableEq H] [Fintype V] [DecidableEq V] [Fintype Ω] [DecidableEq Ω]
+  (J K : Matrix H V ℝ) (η : Ω → ℝ) (hη : ∑ w, η w ^ 2 = 1) :
+  (D0.Research.GoldenProgramCompilation.retainedFrame J η).transpose *
+      D0.Research.GoldenProgramCompilation.retainedFrame K η =
+    J.transpose * K
+'D0.Research.GoldenProgramCompilation.complete_common_record_preserves_every_mixed_gram' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_common_record_preserves_history_frame_isometry.{u_1, u_2, u_3}
+  {H : Type u_1} {V : Type u_2} {Ω : Type u_3} [Fintype H] [DecidableEq H] [Fintype V] [DecidableEq V] [Fintype Ω]
+  [DecidableEq Ω] (J : Matrix H V ℝ) (η : Ω → ℝ) (hJ : J.transpose * J = 1) (hη : ∑ w, η w ^ 2 = 1) :
+  (D0.Research.GoldenProgramCompilation.retainedFrame J η).transpose *
+      D0.Research.GoldenProgramCompilation.retainedFrame J η =
+    1
+'D0.Research.GoldenProgramCompilation.complete_common_record_preserves_history_frame_isometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_reverse_acts_without_forgetting_common_record.{u_1, u_2, u_3}
+  {H : Type u_1} {V : Type u_2} {Ω : Type u_3} [Fintype H] [DecidableEq H] [Fintype V] [DecidableEq V] [Fintype Ω]
+  [DecidableEq Ω] (R : Matrix H H ℝ) (J : Matrix H V ℝ) (η : Ω → ℝ) :
+  Matrix.kroneckerMap (fun x1 x2 => x1 * x2) R 1 * D0.Research.GoldenProgramCompilation.retainedFrame J η =
+    D0.Research.GoldenProgramCompilation.retainedFrame (R * J) η
+'D0.Research.GoldenProgramCompilation.complete_reverse_acts_without_forgetting_common_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.complete_common_record_preserves_every_history_return.{u_1, u_2, u_3}
+  {H : Type u_1} {V : Type u_2} {Ω : Type u_3} [Fintype H] [DecidableEq H] [Fintype V] [DecidableEq V] [Fintype Ω]
+  [DecidableEq Ω] (R : Matrix H H ℝ) (J : Matrix H V ℝ) (η : Ω → ℝ) (hη : ∑ w, η w ^ 2 = 1) :
+  (D0.Research.GoldenProgramCompilation.retainedFrame J η).transpose * Matrix.kroneckerMap (fun x1 x2 => x1 * x2) R 1 *
+      D0.Research.GoldenProgramCompilation.retainedFrame J η =
+    J.transpose * R * J
+'D0.Research.GoldenProgramCompilation.complete_common_record_preserves_every_history_return' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.native_common_record_preserves_owned_history_return.{u_1, u_2} {H : Type u_1}
+  {V : Type u_2} [Fintype H] [DecidableEq H] [Fintype V] [DecidableEq V] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (R : Matrix H H ℝ) (J : Matrix H V ℝ) :
+  (D0.Research.GoldenProgramCompilation.retainedFrame J
+            (D0.Research.GoldenProgramCompilation.commonRecord a p 4 5)).transpose *
+        Matrix.kroneckerMap (fun x1 x2 => x1 * x2) R 1 *
+      D0.Research.GoldenProgramCompilation.retainedFrame J (D0.Research.GoldenProgramCompilation.commonRecord a p 4 5) =
+    J.transpose * R * J
+'D0.Research.GoldenProgramCompilation.native_common_record_preserves_owned_history_return' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.exact_full_preparation_cost_at_resolution_schedule (seed phase m : ℕ) :
+  D0.Research.GoldenCoherentAmplification.expandedCost seed phase (2 * m + 2) + phase = 9 * (seed + phase) * 9 ^ m
+'D0.Research.GoldenProgramCompilation.exact_full_preparation_cost_at_resolution_schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenProgramCompilation.literal_expanded_code_schedule_eventually_fits_owned_resolution (seed phase c : ℕ)
+  (A : ℝ) :
+  ∀ᶠ (m : ℕ) in Filter.atTop,
+    ↑(D0.Research.GoldenCoherentAmplification.expandedCost seed phase (2 * m + 2) + phase) * A * ↑m ^ c ≤
+      D0.phi ^ (5 * m)
+'D0.Research.GoldenProgramCompilation.literal_expanded_code_schedule_eventually_fits_owned_resolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
