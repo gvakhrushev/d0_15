@@ -133,3 +133,48 @@ This is a structural synthesis, **not** permission to SUM three independently de
 **Next explicit mathematical target:** a typed natural transformation between (i) the original 718-edge archive defect \(Q_AJ_1\), (ii) the actually executed full128 history/clock, and (iii) the same ordered full16+24+CAR geometric action whose coframe source is the owned Einstein-type response. This map has to preserve ordered record composition AND native price, not merely equal two numeric spectra. A genuinely nonzero mixed original-source estimate would establish archive backreaction rather than inferred analogy. GR_closed=false.
 
 Reproduce: [original 718-edge archive/Schur/clock checker](sources/d0_archive_future_self_energy_2026-10-19/check_original_archive_future_self_energy.mjs). The checker reconstructs original 718 edge isometries and uses no external data or extra gate. Native action/physical run is not claimed executed by that calculation.
+
+
+## 5. Original endogenous two-time clock: exact correlation recurrence
+
+On the FULL original 33-dimensional visible carrier, the native symmetric transition T=A/rho obeys the global polynomial
+\[
+\boxed{T^4=aT^2+bT,\quad a=359/\rho^2=0.752823712571102\ldots,\quad b=2574/\rho^3=0.247176287428897\ldots,\quad a+b=1.}\tag{9}
+\]
+This includes ALL THIRTY zero eigenmodes; omitting the prefactor T from the native original characteristic polynomial would fail on those modes.
+
+For any two real native vertex detector observables f,g, the true stationary two-time recorded correlation is
+\[
+C_m(f,g)=\sum_{u,v}\pi_u f(u)(P^m)_{uv}g(v)=\langle rf,T^m(rg)\rangle .
+\]
+It follows directly, without a selected external clock dynamics or fitted coefficients, that
+\[
+\boxed{C_{m+4}=aC_{m+2}+bC_{m+1}\qquad(m\ge0).}\tag{10}
+\]
+In addition to the one unchanged Perron eigenvalue1, the two propagating scene eigenvalues are -0.44686138342878584 and -0.5531386165712147. These produce decaying and sign-alternating TWO-TIME distinctions. The thirty zero modes supply single-transition innovation; they do not propagate into nonzero positive-lag correlations. The two active decays are NOT proved to be graviton polarizations (different carrier).
+
+The original stationary K9-zone binary detector has constant one-time probability \(\pi_9=0.311559320058301\ldots\) at EVERY n, but consecutive K9 readings can never both equal1 since there is no original edge inside the same zone:
+\[
+C_0=\pi_9,\quad C_1=0,\quad \operatorname{Cov}(f_n,f_{n+1})=-\pi_9^2\ne0.
+\]
+**An unchanging one-time distribution is not an absence of observable changes.** A detector comparing consecutive original records sees transitions even when no snapshot histogram changes. Conversely, if all actually admissible present/future ordered records are statistically indistinguishable (including memory and a true tick counter), that detector cannot operationally distinguish elapsed time; this is not a proof that the entire closed world has stopped evolving. The Perron walk is reversible, so the irreversible arrow needs the original record-writing archive, not the symmetric transition probability alone.
+
+## 6. A detector-relative information time already implicit in Book03 histories
+
+For any COMPLETE actual recorded sequence with conditional probabilities, define the mathematical on-support information-clock reading
+\[
+\boxed{\tau_D(y_{1:n})=\sum_{j=1}^{n}-\log_\varphi q(y_j|y_{<j})=-\log_\varphi q(y_{1:n})\ge0.}\tag{11}
+\]
+This increases along any non-deterministic prefix because every conditional probability lies in (0,1]. No postulated physical time or new coefficient was inserted. It is **identical to the native Book03 Cost-minus-Info history price only IF the original same-history Book/Born cocycle is physically selected**. It is not yet proper time, and an event with probability1 contributes zero.
+
+A blank outcome may give a POSITIVE information-time increment when the detector knows that competing outcomes could have occurred: absence of a detection is informative. If the original dark sector deterministically emits only blank0, with no stored apparatus counter changing, the event-based clock has no distinguishable increment. If the physical apparatus WRITES another deterministic tick, that write changes the actual record and must not be omitted.
+
+The existing actual original full128 Golden detector (a DIFFERENT native carrier from original 718-edge scene) supplies the exact example:
+\[
+q_{\rm blank}=(1-\epsilon_h\lambda_h/2)^2,\quad
+\tau_D(\mathrm{blank}^n)=-n\log_\varphi q_{\rm blank}
+\to\beta\lambda/\ln\varphi
+\quad(n\epsilon_h\to\beta>0).
+\tag{12}
+\]
+The zero-energy shell lambda=0 has no field-sensitive event-clock reading, whereas a positive shell does. The Perron-archive Schur memory and original full128 detector-clock are now TWO concrete manifestations of retained future distinguishability, not yet a proved common physical execution. **The outstanding GR proof is their SAME-HISTORY physical cost/field/clock binding with ordered six-Lorentz/CAR source, not another geometric ansatz.** GR_closed=false.
