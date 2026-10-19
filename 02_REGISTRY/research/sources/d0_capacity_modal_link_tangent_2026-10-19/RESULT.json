@@ -12,10 +12,10 @@
     "d_positive_for_h_t_positive": true,
     "sum_upper_bound": "-2*d"
   },
-  "git_head": "f7975c146ae6ea6d592c1b656f3048463cbca526",
+  "git_head": "116bff9fc8511e7ed5a2abc25044c42ca2560829",
   "input_sha256": {
     "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
-    "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md": "a44fbfd250afc72ac66d4f63c85695b623230fd57df45be3c58bbe4b55ab601d",
+    "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md": "8d4af7037d3acd644fdef64f230f6bf55f7f0f4da87941a33b96f99b3a6746cf",
     "02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/star_euler.py": "95de1dca7b7ec738a83ff74a74547a26a6e545d0e55ef601b8c1922d8112f5b5"
   },
   "link_variation": "delta U_0(0)=X_01 U_0(0), X_01=(E_01-E_10) eta",
