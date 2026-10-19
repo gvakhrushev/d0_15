@@ -16,6 +16,13 @@ const edge=[],triangle=[];for(let u=0;u<n;u++)for(let v=u+1;v<n;v++)
 for(let a=0;a<9;a++)for(let b=9;b<20;b++)for(let c=20;c<33;c++)
  triangle.push([a,b,c]);
 ok(edge.length===359&&triangle.length===1287,"TRUE original 359 undirected edges, 1287 ABC triangles");
+const directedEdgeCount=2*edge.length;
+const endpointGaugeDimension=n-1;
+const scalarQuotientDimension=directedEdgeCount-endpointGaugeDimension;
+const costInfoFiberDimension=directedEdgeCount+n-scalarQuotientDimension;
+ok(directedEdgeCount===718&&endpointGaugeDimension===32&&
+   scalarQuotientDimension===686&&costInfoFiberDimension===65,
+ "exact 718−32=686 scalar quotient and 751−686=65 unselected Cost/Info fiber dimensions");
 const matrix=()=>Array.from({length:n},()=>Array(n).fill(0));
 const dot=(x,y)=>x.reduce((s,v,j)=>s+v*y[j],0);
 function KNative(t){
@@ -195,18 +202,29 @@ for(let i=0;i<6;i++){
  ok(Math.abs(rec-gr(G4[i],U))<3e-12,
  "CONDITIONAL full recorded positive native Golden/Bell probabilities invert original Lorentz marker "+i);
 }
-ok(G4.every((G,i)=>G4.every((H,j)=>Math.abs(gr(G,H)-(i===j?2:0))<2e-14)),
- "six signed properly oriented original Lie labels give invertible exact Jacobian 2I6");
-ok(Math.abs(Math.log(sample.Z)-Math.log(1/sample.d[0].q*0+sample.Z))<1e-14,
- "original short-clock absolute partition held throughout full CAR conditional apparatus");
+const lorentzJacobian=G4.map(G=>G4.map(H=>gr(G,H)));
+ok(lorentzJacobian.every((row,i)=>row.every((v,j)=>Math.abs(v-(i===j?2:0))<2e-14)),
+ "six recorded Lorentz markers have exact vacuum Jacobian 2I6 and rank six");
+const lorentzObservationRank=lorentzJacobian.length;
+const jointObservationRank=scalarQuotientDimension+lorentzObservationRank;
+ok(jointObservationRank===692,
+ "factorized positive joint record has a constructive 686+6=692 local inverse modulo endpoint gauge");
+const q2=new Map(sample.d.map(x=>[x.u+","+x.v,x.q]));
+const qPair=(u,v)=>q2.get(Math.min(u,v)+","+Math.max(u,v));
+const tri=sample.t.find(x=>x.a===0&&x.b===9&&x.c===20);
+const inversePartition=(a3*a3/(a2*a2*a2))*
+ qPair(0,9)*qPair(9,20)*qPair(0,20)/(tri.qf*tri.qr);
+ok(Math.abs(inversePartition-1/sample.Z)<1e-13,
+ "same complete 143480-outcome record retains the exact absolute original Book clock partition");
 console.log(JSON.stringify({
  full_physical_type_record:"all original based 2/3-short Book histories × two-Golden flags+Bell, mathematical admission target",
  complete_outcomes:nEvents,
  all_positive_minimum:allMin,
- original_scalar_invertible_gauge_quotient:686,
- observed_original_Lorentz_generator_directions:6,
- local_full_positive_history_observation_rank:692,
- cost_vs_Info_unselected_null_fiber:65,
+ original_scalar_invertible_gauge_quotient:scalarQuotientDimension,
+ observed_original_Lorentz_generator_directions:lorentzObservationRank,
+ local_full_positive_history_observation_rank:jointObservationRank,
+ cost_vs_Info_unselected_null_fiber:costInfoFiberDimension,
+ recovered_absolute_book_partition:inversePartition,
  native_G0_joint_2_3_attempt_clock_admitted:false,
  native_field_dependent_program_state_prepared:false,
  original_whole_Book_HplusJplusR_action_selected:false,

@@ -11,6 +11,12 @@ phi=(1+sqrt(5.0))/2.0; ell=log(phi)
 zones=np.array([0]*9+[1]*11+[2]*13)
 support=zones[:,None]!=zones[None,:]
 assert int(support.sum())==718
+edge_u,edge_v=np.where(support)
+def apply(K,x):
+    # Reduce only over the 718 allowed directed edges. This is the exact
+    # sparse action of K and avoids dense BLAS work on the 371 structural
+    # zero entries of the original Book matrix.
+    return np.bincount(edge_u,weights=K[edge_u,edge_v]*x[edge_v],minlength=33)
 u,v=np.indices((33,33))
 def matrix(y):
     C=1.28+.1*np.sin(.117*(u+1)+.167*(v+1))
@@ -25,14 +31,14 @@ def perron(y):
     if np.sum(r)<0:r=-r
     assert np.min(r)>0
     r=r/np.sum(r)
-    assert np.max(np.abs(K@r-lam*r))<1e-11
+    assert np.max(np.abs(apply(K,r)-lam*r))<1e-11
     return K,lam,r
 def rate(y,n):
     K,lam,r=perron(y)
     # Complete finite original weighted walks with terminal factor r_end.
     # Matrix multiplication sums EVERY allowed path, not a sample.
     vec=r.copy()
-    for _ in range(n): vec=K@vec
+    for _ in range(n): vec=apply(K,vec)
     B=float(np.sum(vec))
     assert abs(B-lam**n)<2e-9*max(1.0,lam**n)
     return -log(B)/(ell*n),-log(lam)/ell

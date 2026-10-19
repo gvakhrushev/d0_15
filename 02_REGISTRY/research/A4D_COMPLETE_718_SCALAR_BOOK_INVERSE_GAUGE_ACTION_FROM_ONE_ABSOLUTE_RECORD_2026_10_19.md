@@ -126,7 +126,7 @@ is an EXACT global bijection, and it determines EVERY scalar stationary history 
 
 **Sharp next test:** on the actual live original Golden LEFT addressed programme already owned in #334, derive its true physical edge marginal and absolute source. Check (1)–(7) (NO fitted coefficient), then use original CAR16 marked ordered-phase probability for the missing nonabelian channel. Finally compare the UNMODIFIED selected complete Book–Cost/Info–Golden/clock Euler form to the accepted full40+matter finite star functional. A residual open cost-selector or missing original oldRIGHT control is NOT resolved by another scalar action computation.
 
-Exact 33×718 native asymmetric-cost nonlinear replay: \`sources/d0_physical_binary_return_2026-10-19/check_full718_scalar_inverse_native_gauge_action.py\`. Independently rerun locally before GitHub upload, checks inverse/gauge/closed cycles, general positive balanced-flow action, odd current, field variations and all16 conditional marginal. No new Lean claim, no new physical G0 link.
+Exact 33×718 native asymmetric-cost nonlinear replay: \`sources/d0_physical_binary_return_2026-10-19/check_full718_scalar_inverse_native_gauge_action.py\`. Local ordinary-Python replay passes with warnings promoted to errors; its Perron identities use sparse reductions on the original 718-edge support. SHA-256: \`f88edb9120dd21e3c7c71a075af809b335ffa7650d505cb08d12bc728b060bb3\`. It checks inverse/gauge/closed cycles, general positive balanced-flow action, odd current, field variations and all16 conditional marginal. No new Lean claim, no new physical G0 link.
 
 
 ## 6. Exact residual dimension **65**, with an admissible two-sided original ActionProtocol Cost/Info ambiguity

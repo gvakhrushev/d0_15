@@ -201,13 +201,16 @@ assert(Math.abs(qBase.slice(0,16).reduce((s,x)=>s+x,0)-herald)<1e-14,
 assert(Math.abs(qBase[16]-(4095/4096))<1e-14,
  "original fixed processor all failed Bell outcomes are retained in a register");
 
+let maxSixLorentzMarkerError=0;
 for(let k=0;k<6;k++){
  let x=x0.slice();x[k]=.07;
  const U=exp4(G4.reduce((M,G,i)=>add(M,G,x[i]),zeros(4)));
  const outcomes=q17(U);
  const plus=outcomes[2*k],minus=outcomes[2*k+1];
  const decoded=4*Math.sqrt(3)*dBell/(p*p)*(Math.sqrt(plus)-Math.sqrt(minus));
- assert(Math.abs(decoded-ip4(G4[k],U))<2e-13,
+ const markerError=Math.abs(decoded-ip4(G4[k],U));
+ maxSixLorentzMarkerError=Math.max(maxSixLorentzMarkerError,markerError);
+ assert(markerError<2e-13,
    "fixed BELL processor + GOLDEN full16 recover exact finite Lorentz marker "+k);
  assert(Math.abs(outcomes.slice(0,16).reduce((s,z)=>s+z,0)-herald)<1e-14,
    "all success/failure full-record probabilities normalize and herald source=0 "+k);
@@ -219,11 +222,13 @@ const CS=p*p/2+(p4/lnphi)*(Math.log(2)/2+Math.log(12)/4);
 const expectPositive=herald*(CN+2*CS),expectNegative=herald*(CN-2*CS);
 const qRotate=t=>{let x=x0.slice();x[4]=t;return entropy(qSource(x));};
 const qBoost=t=>{let x=x0.slice();x[5]=t;return entropy(qSource(x));};
+let observedJ23Hessian=null,observedBoostHessian=null;
 for(let h of [.03,.01,.003]){
  const hr=(qRotate(h)+qRotate(-h)-2*h0)/(h*h);
  const hb=(qBoost(h)+qBoost(-h)-2*h0)/(h*h);
  assert(Math.abs(hr-expectNegative)<5e-6&&Math.abs(hb-expectPositive)<5e-6,
    "FULL Bell+Golden17 signed Shannon Lorentz Hessian is herald-scaled but NONZERO "+h);
+ if(h===.003){observedJ23Hessian=hr;observedBoostHessian=hb;}
 }
 const hIdentity=-herald*Math.log(herald)/lnphi-(1-herald)*Math.log(1-herald)/lnphi;
 assert(Math.abs(h0-hIdentity-herald*entropy(q16(eye(4))))<1e-12,
@@ -254,6 +259,7 @@ function Perron(t){
  return weights;
 }
 const xCurved=x0.map((v,i)=>i===4?.024:0),nativeConditional=qSource(xCurved);
+let maxMovingPerronMarkerError=0;
 for(let t of [0,.02,.04]){
  const W=Perron(t);
  assert(Math.abs(W.reduce((s,x)=>s+x,0)-1)<1e-13,
@@ -261,7 +267,9 @@ for(let t of [0,.02,.04]){
  const w=W[0],QP=nativeConditional[8]*w,QM=nativeConditional[9]*w;
  const U=exp4(G4.reduce((M,G,i)=>add(M,G,xCurved[i]),zeros(4)));
  const recovered=4*Math.sqrt(3)*dBell/(p*p*Math.sqrt(w))*(Math.sqrt(QP)-Math.sqrt(QM));
- assert(Math.abs(recovered-ip4(G4[4],U))<2e-12,
+ const markerError=Math.abs(recovered-ip4(G4[4],U));
+ maxMovingPerronMarkerError=Math.max(maxMovingPerronMarkerError,markerError);
+ assert(markerError<2e-12,
    "full recorded Bell/Golden positive native oriented marker cancels actual moving Perron weight t="+t);
 }
 
@@ -334,6 +342,8 @@ for(let h of [.02,.007,.003]){
  assert(Math.abs(pr-expectNegative)<5e-6&&Math.abs(pb-expectPositive)<5e-6,
   "complete original 12206 native positive history has 3+3 signed six-Lorentz pointer curvature");
 }
+const maxBookLorentzFisherCross=Math.max(...tensor[0].slice(1).map(Math.abs));
+const sixLorentzFisherDiagonal=tensor.slice(1).map((row,i)=>row[i+1]);
 
 
 // Strong same-Golden PROGRAMME information theorem. In the full 64d
@@ -369,6 +379,23 @@ console.log(JSON.stringify({
  candidateGoldenSurprisalSuccess:cost,
  programOverlapDifferentLorentz:overlap,
  flatBell:flat,rotatedLorentzBell:curved,
+ twoFreshFullRecord:{
+  processorCarrierDimension:dBell,
+  exactHeraldProbability:herald,
+  exactFailureProbability:1-herald,
+  completeGoldenBellCategories:qBase.length,
+  jointBookOutcomeCount:718*qBase.length,
+  successMass:qBase.slice(0,16).reduce((s,x)=>s+x,0),
+  failureMass:qBase[16],
+  maxSixLorentzMarkerRecoveryError:maxSixLorentzMarkerError,
+  signedShannonHessian:{J23:observedJ23Hessian,boost:observedBoostHessian,
+   expectedJ23:expectNegative,expectedBoost:expectPositive},
+  jointShannonChainResidual:wholeH-trueBookH-h0,
+  nativeBookPreparationFisher:scalarFirstStepFisher,
+  maxBookLorentzFisherCross,
+  sixLorentzFisherDiagonal,
+  maxMovingPerronMarkerRecoveryError:maxMovingPerronMarkerError
+ },
  deterministicExactFiniteNoProgramming:"obstruction for continuum of non-phase-equivalent J; proof in companion memo",
  hasPhysicalG0ProgramPreparation:false,hasBookCostSelector:false,
  hasPhysicalGRSource:false,GR_closed:false

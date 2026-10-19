@@ -9,6 +9,12 @@ p=(sqrt(5)-1)/2;ell=log(1/p)
 zone=np.array([0]*9+[1]*11+[2]*13)
 u,v=np.where(zone[:,None]!=zone[None,:]);n=33
 assert len(u)==718
+def closed2(M):
+ return sum(M[a,b]*M[b,a] for a,b in zip(u,v))
+def closed3(M):
+ return sum(M[a,b]*M[b,c]*M[c,a]
+            for a,b in zip(u,v) for c in range(n)
+            if zone[c]!=zone[a] and zone[c]!=zone[b])
 rng=np.random.default_rng(19102026)
 C=1.21+rng.uniform(.01,.26,len(u))
 I=rng.normal(0,.23,n);theta=.4
@@ -24,8 +30,10 @@ def read(s):
  P=np.zeros((n,n));P[u,v]=K[u,v]*right[v]/(lam*right[u])
  mu=pi[u]*P[u,v]
  assert abs(mu.sum()-1)<1e-12
- Z2=np.trace(K@K);Z3=np.trace(K@K@K)
- T2=np.trace(P@P);T3=np.trace(P@P@P)
+ # Evaluate the closed-walk traces directly on the original directed edge
+ # support; this avoids dense products through 371 structural zero entries.
+ Z2=closed2(K);Z3=closed3(K)
+ T2=closed2(P);T3=closed3(P)
  assert min(Z2,Z3,T2,T3)>0
  assert abs(Z2-lam**2*T2)<1e-10
  assert abs(Z3-lam**3*T3)<1e-9

@@ -39,8 +39,12 @@ g=-np.log(np.sqrt(piobs)/r)/ell
 assert max(abs(scan-s-(g[u]-g[v])))<1e-11
 Kcan=np.zeros_like(K);Kcan[u,v]=np.exp(-ell*scan)
 root=np.sqrt(piobs)
-assert np.linalg.norm(Kcan@root-lam*root)<2e-11
-assert np.linalg.norm(Kcan.T@root-lam*root)<2e-11
+# Check the Perron equations on the original 718-edge support. Sparse edge
+# reductions avoid a dense BLAS matmul over the 371 structural zero entries.
+right_res=np.bincount(u,weights=Kcan[u,v]*root[v],minlength=n)-lam*root
+left_res=np.bincount(v,weights=Kcan[u,v]*root[u],minlength=n)-lam*root
+assert np.linalg.norm(right_res)<2e-11
+assert np.linalg.norm(left_res)<2e-11
 # All original closed scalar prices and true odd cycle affinities.
 idx={(int(a),int(b)):i for i,(a,b) in enumerate(zip(u,v))}
 cycles=[[(0,9),(9,20),(20,0)],[(1,10),(10,21),(21,1)]]

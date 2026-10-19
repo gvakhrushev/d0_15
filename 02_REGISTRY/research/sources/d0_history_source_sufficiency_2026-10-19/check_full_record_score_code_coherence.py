@@ -22,8 +22,10 @@ print('PASS original full128 Golden nonblank port KL exact p^3 =',hidden_one)
 # not a fabricated native full128 empirical likelihood.
 alpha=.3
 ref_nonblank=.32
+e_base=.42
+e_slope=.17
 def pair(y):
-    e=.42+.17*y
+    e=e_base+e_slope*y
     q=np.array([1-e,e*alpha*p*p,e*alpha*p,e*(1-alpha)*p*p,e*(1-alpha)*p])
     mu=np.array([1-ref_nonblank, ref_nonblank*alpha*p,
                  ref_nonblank*alpha*p*p,ref_nonblank*(1-alpha)*p,
@@ -42,25 +44,28 @@ for y in [-.2,0,.2]:
     Q,M=group(q,mu,blank_vs_exit)
     Qp,Mp=group(q,mu,blank_vs_port)
     extra=KL(q,mu)-KL(Q,M)
-    assert abs(extra-(.42+.17*y)*p**3)<3e-14
+    assert abs(extra-(e_base+e_slope*y)*p**3)<3e-14
     assert abs(KL(q,mu)-KL(Qp,Mp))<3e-14
 print('PASS exact Golden nonblank source gap E(y)*p^3 and port-retaining repair')
 
-y0=0.;h=1.e-5
-q,mu=pair(y0)
-qp,mup=pair(y0+h);qm,mum=pair(y0-h)
-dq=(qp-qm)/(2*h)
+de=e_slope
+# The nonblank labels have fixed conditional proportions c_i. Evaluate both
+# Fisher norms from the complete probability vectors and their exact
+# analytic tangent instead of subtracting nearby finite-difference values.
+q,mu=pair(0.)
+dq=de*np.array([-1.,alpha*p*p,alpha*p,(1-alpha)*p*p,(1-alpha)*p])
 Q,M=group(q,mu,blank_vs_exit)
-Qp,_=group(qp,mup,blank_vs_exit)
-Qm,_=group(qm,mum,blank_vs_exit)
-dQ=(Qp-Qm)/(2*h)
-Ifull=sum(dq*dq/q)
-Icoarse=sum(dQ*dQ/Q)
-assert abs(Ifull-Icoarse)<1e-12
-source_full=(KL(qp,mup)-KL(qm,mum))/(2*h)
-source_coarse=(KL(*group(qp,mup,blank_vs_exit))
-               -KL(*group(qm,mum,blank_vs_exit)))/(2*h)
-assert abs(source_full-source_coarse-p**3*.17)<1.e-8
+dQ,_=group(dq,np.zeros_like(dq),blank_vs_exit)
+Ifull=float(sum(dq*dq/q))
+Icoarse=float(sum(dQ*dQ/Q))
+assert abs(Ifull-Icoarse)<3e-15
+
+# The moving Bernoulli term cancels in the KL derivative; the remaining
+# exact source is de times the actual Golden conditional port KL. alpha and
+# ref_nonblank remain illustrative marginals, not native full128 evidence.
+source_full=float(sum(dq*(np.log(q/mu)+1.))/ell)
+source_coarse=float(sum(dQ*(np.log(Q/M)+1.))/ell)
+assert abs(source_full-source_coarse-de*p**3)<1e-14
 print('PASS all classical field Fisher unchanged by blank-vs-exit forgetting')
 print('PASS true CLASSICAL code source still lost:',source_full-source_coarse)
 
@@ -76,9 +81,12 @@ def quantumKL(t):
 base=KL(pointer,prior)
 t=.08
 coherent_price=quantumKL(t)-base
-coh_source=(quantumKL(t+h)-quantumKL(t-h))/(2*h)
+disc=sqrt(.09+4*t*t)
+lam_plus=(1+disc)/2
+lam_minus=(1-disc)/2
+coh_source=(2*t/disc)*log(lam_plus/lam_minus)/ell
 assert abs(coherent_price-.027572064175238)<2e-12
-assert abs(coh_source-.69255063855078)<2e-8
+assert abs(coh_source-.692550638440915)<2e-12
 print('PASS pointer classical source exactly zero while coherent quantum source is',coh_source)
 print('PASS hidden coherent Cost-Info at same pointer q:',coherent_price)
 print('NOTE: 2x2 coherence example is mathematical; actual native full128 coherent data remain separately owned')

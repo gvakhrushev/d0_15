@@ -286,4 +286,4 @@ Finite exact-integer original CAR16 operator lifts reproduce all entries of the 
 
 Script: \`node 02_REGISTRY/research/sources/d0_golden_program_state_2026-10-19/check_original_car16_golden_program_teleportation.mjs\`.
 
-The newly committed code is self-contained, its mathematical ingredients have independent V8 numerical controls. The actual new FILE remote CI/script execution has not yet been confirmed; prior original Golden/CAR/AF/Book owner receipts remain consumed, not silently rerun here. No changes to Book/CORE/claim/ActionProtocol. \`GR_closed=false\`.
+The latest 64D × 718 × 17 complete-record checker passed locally with the bundled Node runtime; its replay receipt and hash are pinned in \`A4D_FIXED_BELL_GOLDEN64_TWO_FRESH_FULL_LORENTZ_PROGRAMME_SOURCE_2026_10_19.md\`. The original two/three-depth closed-clock inverse and literal Golden idle/change checks also pass locally with warnings promoted to errors; see \`A4D_NATIVE_TWO_THREE_TICK_CLOSED_BOOK_ODDS_ABSOLUTE_ACTION_INVERSE_2026_10_19.md\`. These are local mathematical replays; current GitHub CI execution has not been confirmed. No changes to Book/CORE/claim/ActionProtocol. \`GR_closed=false\`.
