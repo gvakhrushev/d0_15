@@ -3171,3 +3171,131 @@ be a different row; that is not the quoted integrand.
 Certificate:
 `02_REGISTRY/research/sources/a4d_rational_segment_solder_hessian/check.py`.
 It exits 0. Candidate only.
+
+### 9.40 Candidate: real roots of the degree-70 cofactor
+
+Status of this section: **candidate**, pre-skeptic. No registry row was edited. This is not a DEF-0.2.2 forcing: nothing here is reduced to an exogenous parameter, and the word "forced" is not claimed. The skeptic pass was not run, because this continuation cannot spawn one. The task stays `IN_PROGRESS`. L=3 stays unopened. No coefficient, temperature, or action is chosen.
+
+**Pre-flight.** The skill paths `03_THEORY_MAP/`, `09_LEAN_FORMALIZATION/`, `05_CERTS/`, and `_TASKS_CENTER_ATTACK/` are absent in this checkout. Substitute greps of `02_REGISTRY/claims.csv`, `03_FORMALIZATION/`, and the research memos find no owner of a real-root count for this cofactor. The only owner is §9.39, which stops at the rational points and leaves the real roots open. This section does not recompute that rational classification.
+
+**Claim.** On the one Cayley segment of §9.39, the primitive cofactor `q` has exactly 18 distinct real roots. Each is simple. None lies on a chart wall. Each lies in an explicit rational open interval on which all four Cayley charts stay open, and that interval contains no other root of `q`. These are zeros of `det H` on this segment. They are not stationary witnesses.
+
+**Owned pre-facts, quoted.**
+
+§9.39 defines the segment (`:3085`), its chart denominators (`:3091-3094`), and the rational walls (`:3097-3100`):
+
+```text
+G(s) = generators0 + s*(G_chart - generators0).
+```
+
+```text
+role 0: -2*(2*s-1)*(2*s+1)
+role 1: 2
+role 2: -(233*s^2+16*s-36)/36
+role 3: -(s-2)*(s+2)/4.
+```
+
+```text
+The quadratic `233*s^2+16*s-36` has discriminant `33808`, which is not a
+square, so its roots are irrational. The only rational parameters where a
+chart closes are `s=±1/2` and `s=±2`. Those four rationals are not points
+of this Cayley family.
+```
+
+The same section factors the cleared determinant (`:3114-3116`) and then states the cofactor, the pole valuations, and the rational restriction (`:3119-3126`). The displayed vanishing line is `:3129`:
+
+```text
+det(M) = C * s^12 * (s-2)^16 * (s+2)^16 * (2*s-1)^18 * (2*s+1)^18
+         * (233*s^2+16*s-36)^16 * q(s),
+C = 3117343613342156762592422345852808301028220510142464,
+```
+
+```text
+with `q` primitive of degree 70, nonzero constant term, and no rational
+root. The last point is the factorization of `q` modulo `104729`: the
+factor degrees are `7,10,11,42`, the leading coefficient is nonzero modulo
+that prime, and a rational root of a primitive polynomial would reduce to a
+linear factor. Each chart factor of `det(M)` has valuation strictly below
+its valuation in `Delta^16` (`16<32` or `18<32`), so those factors are poles
+of `det H`, not zeros. Therefore, for rational `s` with all four charts
+open,
+```
+
+```text
+det H(s) = 0  if and only if  s = 0.
+```
+
+The last display is explicitly for rational open `s`. It is not a statement about irrational roots. The rational certificate records the same three fingerprints, at separate lines
+(`02_REGISTRY/research/sources/a4d_rational_segment_solder_hessian/check.py:216`, `:220`, and `:235`):
+
+```text
+check("COFACTOR_DEGREE_70", q_poly.degree() == 70)
+```
+
+```text
+check("COFACTOR_CONSTANT_TERM_NONZERO", q_primitive.TC() != 0)
+```
+
+```text
+check("NO_LINEAR_FACTOR_MOD_104729", degrees and min(degrees) > 1)
+```
+
+The pre-registered hook, including the sentences that keep it from being a closure, is
+(`MEMO_A4D_RESOLVED_CURVED_STATIONARY_CLOSURE.md:3159-3169`):
+
+```text
+**Pre-registered strongest attack.** The primitive cofactor `q` may have
+real roots. Any such root whose four Cayley charts stay open is a singular
+Hessian point of this same segment and is unclassified here. Isolating one
+real root of `q`, then testing whether its kernel contains an invertible
+coframe, is the reopening hook. Separately, `s=±1/2` and `s=±2` are
+chart walls, not counterexamples. This line is not the selected
+four-channel family: other supports, other backgrounds, and site-dependent
+links off `s=1` and `s=3` stay open. A zero on a different carrier does not
+close this segment, and this segment does not close the obligation. A
+normalization in which the channels depended on the absolute solder would
+be a different row; that is not the quoted integrand.
+```
+
+This section takes only the isolating half of that hook. It does not test a kernel and does not choose an invertible coframe.
+
+**Exact count.** The new certificate rebuilds the same cleared matrix `M = Delta H` and the same primitive `q`. It checks the published content `C`, the valuations `12,16,16,18,18,16`, degree 70, constant term nonzero, square-freeness, coprimeness to every chart factor, the mod-`104729` degrees `7,10,11,42`, and the §9.38 value of `det H(1)`. The polynomial identity `det(M) = C * (chart factors) * q` is checked exactly; adding 1 to that identity fails, so the comparison is not vacuous.
+
+`q` is square-free, so every real root is simple. Every coefficient of `q(256+y)` is positive, and every coefficient of `q(-(8+y))` is positive. Hence `q` has no real root outside the open interval `(-8, 256)`. The same shift test on `s-300` has a sign change, so the test can see a root beyond 256.
+
+Inside `(-8, 256)`, roots are isolated by the exact change of coordinate `x = (b + a y)/(1+y)`, `y>0`, which sends positive `y` onto `(a,b)`. Descartes' rule says that the number of positive roots, counted with multiplicity, equals the number of sign variations minus a nonnegative even integer. Zero variations means no root in `(a,b)`. One variation means exactly one root, and square-freeness makes it simple. Bisection continues while the variation count is at least 2. The search returns 18 disjoint isolating intervals and no rational root. Evaluation shows `q(±1/2) ≠ 0` and `q(±2) ≠ 0`. Coprimeness to `233*s^2+16*s-36`, whose discriminant `33808` is not a square, shows that `q` also does not vanish at the two irrational chart walls. The wall-root count is 0.
+
+The walls sit in the order `-2 < -1/2 < s- < s+ < 1/2 < 2`, where `s± = (-16 ± sqrt(33808))/466`. The left comparison is `217^2 = 47089 > 33808`; the right comparison is `249^2 = 62001 > 33808`. Role 1 contributes the constant denominator `2` and no wall. Each isolating interval below has both rational endpoints in the same open component, a sign change of `q`, and exactly one sign variation after the coordinate change.
+
+| Interval | Open component |
+|---|---|
+| `(-9/4, -17/8)` | `(-∞, -2)` |
+| `(-7/4, -3/2)` | `(-2, -1/2)` |
+| `(-3/4, -5/8)` | `(-2, -1/2)` |
+| `(-513/1024, -1025/2048)` | `(-2, -1/2)` |
+| `(-11/32, -21/64)` | `(s-, s+)` |
+| `(-21/64, -5/16)` | `(s-, s+)` |
+| `(-1/4, -3/16)` | `(s-, s+)` |
+| `(-3/16, -1/8)` | `(s-, s+)` |
+| `(0, 1/4)` | `(s-, s+)` |
+| `(1/4, 9/32)` | `(s-, s+)` |
+| `(9/32, 19/64)` | `(s-, s+)` |
+| `(19/64, 5/16)` | `(s-, s+)` |
+| `(33/64, 17/32)` | `(1/2, 2)` |
+| `(17/32, 9/16)` | `(1/2, 2)` |
+| `(1, 3/2)` | `(1/2, 2)` |
+| `(17/8, 9/4)` | `(2, ∞)` |
+| `(32, 64)` | `(2, ∞)` |
+| `(128, 256)` | `(2, ∞)` |
+
+That is one root in `(-∞,-2)`, three in `(-2,-1/2)`, eight in `(s-,s+)`, three in `(1/2,2)`, and three in `(2,∞)`. None lie in `(-1/2, s-)` or `(s+, 1/2)`. The interval `(0, 1/4)` is not the seed: the constant term of `q` is nonzero, so the unique root of that interval is not `s=0`. The zero of `det H` at the seed still comes from the factor `s^12` in `det(M)`, not from `q`.
+
+**Negative controls.** The same classifier reports no real root for `s^2+1`, reports the root of `2s-1` as the chart wall `s=1/2` rather than as an open-chart root, and reports both roots of `s^2-2` as open-chart roots, one in `(-2,-1/2)` and one in `(1/2,2)`. A component test places `0` and `-1/3` between the quadratic walls, `-9/20` in `(-1/2, s-)`, and `3/8` in `(s+, 1/2)`.
+
+**What this does not show.** A root of `q` makes the homogeneous solder Hessian singular. It does not produce a coframe, invertible or otherwise, and it does not solve the link or translation Euler equations. No root is a stationary witness. The kernel is not classified. The one-site identity `H/16` remains checked only at `s=1` and `s=3`. This segment is not the whole full-affine family, and it does not close `full_affine_stationarity`. Numerical E(2) is not used. Other supports, other backgrounds, and site-dependent links off `s=1` and `s=3` stay open.
+
+**Pre-registered strongest attack.** The reopening hook named in §9.39 is still open, and it is now pointed at these 18 intervals: take one interval, pass to the kernel of `H` at that real root, and test whether the kernel contains an invertible coframe. This note supplies the interval only. A sign variation is not that kernel test. A zero of `q` on this carrier still does not close the obligation, and a zero on another carrier still does not close this segment.
+
+Certificate:
+`02_REGISTRY/research/sources/a4d_rational_segment_solder_hessian/real_root_check.py`.
+It exits 0 with 61 PASS lines. Candidate only.
