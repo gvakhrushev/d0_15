@@ -184,3 +184,36 @@ No one may ASSIGN (13) as a definition of the real \(D^2C\); it is an exact fals
 **Strategic leverage:** The **scalar** complete scene history and its entire 685-dimensional real archive have now been classified to the Hessian. Do not scan more scalar edge Cost tensors to "find" the indefinite Einstein kinetic operator. The physical GR bridge must be a SAME-RUN action/source on (i) this archived scalar history and absolute clock, (ii) the owned 327 ordered/noncommutative cycle memory and original six-link CAR/Julia readout, and (iii) the 16+24+matter geometric coframe/link variation. Compute its first Euler and second transverse source, preserving all actual full histories/oldRIGHT/ref128 and work. The earlier exact nonlinear AF coframe-equivalence and Brinkmann/nonflat results can THEN consume the matched source. Full selection and GR remain open.
 
 **Reproduction:** [independent 718-edge oracle-free checker](sources/d0_archive_book_hessian_global_decomposition_2026-10-19/check_original_book_archive_all718.mjs). It verifies source, three-orbit Hessian, rank incidence over an exact finite field, row source, all718 archive, pressure finite differences, and odd-cycle hostile controls. This is not a new native 4D cost map. **GR_closed=false.**
+
+
+## 6. Detector-relative time criterion: precisely when a cost deformation makes NO new recorded distinction
+
+The same source equality (3) has a direct rigorous reading of the D0 claim that physical time requires a detector, without asserting that a stationary one-time histogram means nothing happened. On the ORIGINAL complete positive native recorded-history graph,
+
+\[
+\boxed{
+D^2\mathcal A_{\rm Book}[d,d]=0
+\ \Longleftrightarrow\
+m_{uv}=0\ \forall 718\ {\rm edges}
+\ \Longleftrightarrow\
+d_{uv}=c+\xi_u-\xi_v .
+}\tag{14}
+\]
+
+On any original complete path \(\gamma:u_0\to\cdots\to u_n\), such a deformation changes the TOTAL recorded Cost only by
+\[
+\sum_{j<n}d_{u_ju_{j+1}}=nc+\xi_{u_0}-\xi_{u_n}.
+\]
+It changes no relative Cost of TWO complete histories with the SAME length and endpoints. Therefore all native closed-loop odds and every source-sensitive comparison of those relative path weights are blind to the non-uniform part of that deformation. A common shift c DOES change the absolute cost per written tick (its first source remains c), but it has zero second fluctuation/Hessian. A physically stored tick counter is itself a record and cannot be declared absent simply because conditional state histograms are invariant.
+
+Conversely if \(m\ne0\) the complete native archive has strictly positive innovation variance, so SOME source-relevant original fully resolved repeated-history comparison distinguishes the deformation to second order. A narrower detector can still be blind to it: the immediate \(F_A\) detector accesses only 32 of the 685 directions and the other 653 require finer/multi-step retained records. This is an operational no-change condition for a specified history algebra, **not** an asserted universal definition of cosmological/proper time.
+
+This yields a finite, exact version of the user's central insight:
+\[
+\boxed{
+\text{No resolved CHANGE in the complete history comparison}
+\ \Longleftrightarrow\
+\text{pure clock/end-point reallocation, no native archive Hessian}.
+}
+\]
+The irreversible arrow remains associated with the actual ordered record-writing operation, not the reversible stationary Perron bulk. It is not an Einstein equation until the physically selected source is pulled back to a genuine four-dimensional coframe/Lorentz/CAR evolution. GR_closed=false.
