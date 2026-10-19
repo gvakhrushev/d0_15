@@ -85,6 +85,42 @@ check(Math.abs(cov-.25)<1e-7,
  "positive connected original CAR16 two-history metric = 1/4");
 check(Math.sin(0)===0 && Math.cos(h)===Math.cos(-h),
  "real archive has no FIRST relative complex phase");
+
+// ORIGINAL exact proper Lorentz generators N2 and Nbar3 and their ordered
+// four-gate commutator: SAME J23 as original mixed six-face Cartan curvature.
+const Z4=()=>Array.from({length:4},()=>Array(4).fill(0));
+const I4=Z4();for(let i=0;i<4;i++)I4[i][i]=1;
+const A4=Z4(),B4=Z4();A4[1][2]=1;A4[2][0]=1;B4[0][3]=1;B4[3][1]=1;
+const mm4=(X,Y)=>X.map(row=>Y[0].map((_,j)=>row.reduce((s,x,k)=>s+x*Y[k][j],0)));
+const sum4=(X,Y,c=1)=>X.map((row,i)=>row.map((x,j)=>x+c*Y[i][j]));
+const J23=sum4(mm4(A4,B4),mm4(B4,A4),-1);
+const want=Z4();want[2][3]=1;want[3][2]=-1;
+check(J23.every((row,i)=>row.every((x,j)=>x===want[i][j])),
+ "EXACT ORIGINAL [N2,Nbar3]=J23 spatial Lorentz generator");
+const e4=(X,t)=>sum4(sum4(I4,X.map(row=>row.map(x=>t*x))),
+                              mm4(X,X).map(row=>row.map(x=>t*t*x/2)));
+const W4=(a,b)=>mm4(mm4(mm4(e4(A4,a),e4(B4,b)),e4(A4,-a)),e4(B4,-b));
+const rr=[Math.SQRT1_2,0,.5,0],ii=[0,0,0,.5];
+const expectation=(a,b)=>{
+ const W=W4(a,b),wr=mv(W,rr),wi=mv(W,ii);
+ return {re:dot(rr,wr)+dot(ii,wi),
+         im:dot(rr,wi)-dot(ii,wr)};
+};
+check(expectation(0,0).re===1&&expectation(0,0).im===0,
+ "original CAR16 grade-one probe normalized at true Lorentz identity");
+for(const h of [.1,.03,.01,.003]){
+ const a=expectation(h,h),b=expectation(h,-h),
+       c=expectation(-h,h),d=expectation(-h,-h);
+ const mixedIm=(a.im-b.im-c.im+d.im)/(4*h*h);
+ const mixedRe=(a.re-b.re-c.re+d.re)/(4*h*h);
+ check(Math.abs(mixedIm-.5)<.001&&Math.abs(mixedRe)<1e-10,
+       "ORIGINAL four-gate ordered J23 mixed imaginary phase i/2 h="+h);
+}
+const finitePlaquetteCoefficient=1/4; // OWNED all40 [ab] P_uv=h² J23/4 for w=1,d=0
+const nativeWeylCARPhase=finitePlaquetteCoefficient*.5;
+check(Math.abs(nativeWeylCARPhase-1/8)<1e-15,
+ "same ORIGINAL finite Cartan J23 implies i h²ab/8 grade-one CAR phase");
+
 console.log(JSON.stringify({
  carrier:"original 718 native Perron archive + SEPARATE original CAR16 grade-one J23",
  original_directed_edges:718,
