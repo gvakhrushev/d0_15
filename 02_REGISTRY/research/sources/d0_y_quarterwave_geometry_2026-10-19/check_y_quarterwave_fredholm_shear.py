@@ -70,7 +70,6 @@ C4 = s.Matrix([
 C8 = s.diag(C4, C4)
 assert C8.shape == (8,20) and C8.rank() == 8
 assert s.Matrix.vstack(R.T, C8).rank() == 8
-assert C8 * s.Matrix.hstack(*[s.Matrix.eye(20)[:,i] for i in range(20)]) == C8
 
 coords = [(a,b) for a in range(4) for b in range(a,4)]
 k = [1,1,1,1]
