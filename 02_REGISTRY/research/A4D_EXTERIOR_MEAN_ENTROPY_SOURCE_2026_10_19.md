@@ -35,6 +35,29 @@ DH_{\rm ext}=2\sum_i\kappa(a_i)\,D[-\log(1-rf_i)].
 
 Есть ещё более точная граница выбора базиса. Новый hostile control [`check_exterior_basis_ambiguity.py`](sources/d0_exterior_mean_entropy_2026-10-19/check_exterior_basis_ambiguity.py) держит то же good compression \(K=\operatorname{diag}(3/4,1/2)\), но сравнивает полярное failure-размещение с применением исходного golden двухпортового \(G\) к тем же failure singular modes. Все шесть occupation-исходов в обоих законах сохранены и нормированы. Для общего двухмодового закона с good-массами \((a,b)\) Shannon-сдвиг равен \([a(1-b)+(1-a)b]H(p)\), где \(H(p)=-p\log p-p^2\log p^2\); при \((a,b)=(9/16,1/4)\) он равен \(17H(p)/32\). Разность first-source коэффициентов по \(Da\) равна \((1-2b)H(p)\); на golden \(R\)-блоке это примерно \(-0.385468\,Da_Q\ne0\). Значит, полярный output basis — нагрузочная часть mean-source, не следствие одного сжатия \(K\) или determinant \(F\). Контроль показывает kinematic-допустимость этой golden completion, но не доказывает native-допустимость с той же полной Book-ценой; это точная граница выбора полного прибора, не общий no-go.
 
+### Условный внутренний селектор: полярная completion минимизирует полный Shannon
+
+Пусть \(K=\operatorname{diag}(\sqrt{a_1},\ldots,\sqrt{a_d})\), \(0<a_i<1\), и все изометрические completions одного good-сжатия имеют вид
+\[
+V_U=\begin{bmatrix}K\\ U D\end{bmatrix},\qquad
+D=\operatorname{diag}(\sqrt{1-a_i}),\qquad U^*U=I_d,
+\]
+где \(U:\mathbb C^d\to\mathbb C^m\) — изометрия в failure-пространство.
+Для occupation-исхода с good-набором \(I\subseteq[d]\) и bad-набором \(J\), \(|J|=|I^c|\), блочная структура minors даёт
+\[
+q_{I,J}=\left(\prod_{i\in I}a_i\prod_{i\notin I}(1-a_i)\right)
+       |\det U_{J,I^c}|^2.
+\]
+По Cauchy–Binet \(\sum_J|\det U_{J,I^c}|^2=1\); следовательно, coarse-закон good-набора
+\(q_I=\prod_{i\in I}a_i\prod_{i\notin I}(1-a_i)\) не зависит от failure-completion. Chain rule тогда даёт точное разложение
+\[
+H(q)=\sum_i h(a_i)+\sum_I q_I\,H\bigl(J\mid I;U\bigr),\qquad
+h(a)=-a\log a-(1-a)\log(1-a).
+\]
+Все условные слагаемые неотрицательны. Парная полярная completion \(U_0\), чьи столбцы являются выделенными координатами соответствующих failure-мод (при \(m=d\), \(U_0=I\)), делает \(J=I^c\) детерминированным и достигает минимума \(\sum_i h(a_i)\). При всех \(q_I>0\) равенство требует нулевой энтропии для каждого одноэлементного \(I^c=\{j\}\), то есть каждый столбец \(U\) поддержан на одной failure-строке; ортогональность оставляет только перестановки строк и фазы. Это доказывает минимальность polar readout **для Shannon-компонента на completion-fiber**, а не его физический выбор D0.
+
+Так hostile control становится не тупиком, а критерием. Если native ActionProtocol действительно минимизирует именно \(H_{\rm ext}/\log\varphi\) по всей этой completion-fiber и остальные operation/work costs либо общие, либо не компенсируют положительную условную энтропию, парный полярный readout следует внутренне с точностью до переименования исходов. Пока не доказано, что эта fiber допускается и варьируется в native процессе, что его цена — именно этот полный mean, и что все добавочные preparation/clock/work/history строки имеют указанное сравнение. Только после этого выбранный first source можно переносить в all-row GR consumer.
+
 ## Воспроизведение
 
 ```sh
