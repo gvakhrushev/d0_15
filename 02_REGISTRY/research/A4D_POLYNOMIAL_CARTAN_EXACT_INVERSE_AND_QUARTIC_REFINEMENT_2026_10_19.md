@@ -99,6 +99,19 @@ The mixed (2,2) branch has only 118 nonzero rational link polynomial coefficient
 \]
 It is one chosen gauge/section from the exact rational solver; it need not equal the earlier illustrative \(\sigma_4,\chi_4\) gauge or serve as physical matter normalization.
 
+**Explicit ALL-mesh coefficient in the same saved gauge (no uncomputed term):**
+\[
+\boxed{
+[e^2{}_x]^{(2,2)}_h(x,y)=
+\frac{3x^2y^2}{128}+\frac{y^4}{256}
+-h\left(\frac{9xy^2}{128}+\frac{y^3}{128}\right)
+-\frac{7h^2y^2}{256}.}\tag{9a}
+\]
+All five rational source coefficients of the unit-grid coframe component
+were inspected exactly. Eq.(9a) gives a transparent O(h) physical
+reconstruction; it is a coefficient of a formal (a,b)-amplitude jet, not
+a standalone full finite root.
+
 The cubic coframe source ansatz has degree≤3 from the explicit corrected \(H_3,J_3\), the 16-component cubic lift has degree≤2, the continuum-LC finite link jet has degree≤2, and its exact further cubic link lift has degree≤2. The quadratic mixed correction has coframe degree≤2 and link degree≤1. The linear profiles have degrees1 and0 respectively. Therefore the **ENTIRE degree≤4 local formal solution** satisfies (8), not merely its last mixed column.
 
 For every fixed compact physical rectangle \(K\) and every fixed derivative order k, each finite amplitude coefficient in (6) has a smooth polynomial limit, with the lower-degree terms controlled by nonnegative powers of h:
