@@ -109,3 +109,60 @@ The three ingredients therefore have noninterchangeable roles:
 **A complete D0→Einstein proof is still missing the executable natural transformation on ONE physical history** that carries these original records, pays its FULL Book03 Cost−Info/controller/clock/preparation/oldRIGHT/ref128 and produces the exact original all40+CAR stationary Euler source. In particular the mathematical rank6 projective map is not a ready-made original POVM, the Bargmann product is not the selected gravitational action, and the accepted radial coframe-equivalence theorem is conditional on the native AF/J2 price. If the compulsory actual program does not realize the coherent three-history comparison, this candidate is killed. No GR/RAW-216 status changes. \`GR_closed=false\`.
 
 **Exact certificate:** [two native CAR comparison-line rank and Bargmann phase control](sources/d0_two_history_phase_2026-10-19/check_native_two_line_projective_lorentz.mjs).
+
+
+## 4. Stronger PHYSICAL-OBSERVABLE theorem — six actual CAR number/coherence readouts, determinant 8/6561
+
+The projective rank6 theorem above still used abstract horizontal complex coordinates. We can now avoid even THAT hidden phase-reference assumption: measure only original **one-body CAR operators**, all already present in the unchanged CAR16 algebra. For a pure normalized grade-one state \(\rho_\pm=|\psi_\pm\rangle\langle\psi_\pm|\), the original grade-one restrictions of the CAR observables
+\[
+n_i=c_i^\dagger c_i,\qquad
+I_{ij}=(c_j^\dagger c_i-c_i^\dagger c_j)/(2i)
+\]
+are respectively \(\rho_{ii}\) and \(\operatorname{Im}\rho_{ij}\) (with this exact index/sign convention). Both are Hermitian, number-conserving and phase-gauge independent. No non-native phase meter, fictitious one-complex-dimensional group character, or new gauge group is introduced.
+
+Use EXACTLY TWO original normalized grade-one input lines (3), each with a real-Lorentz transformed output ray normalized to trace1. Define six explicitly measurable scalar responses in the following order:
+\[
+\boxed{
+\mathcal R(X)=
+\left(
+\langle n_0\rangle_+,\,
+\langle n_2\rangle_+,\,
+\langle I_{01}\rangle_+,\,
+\langle I_{02}\rangle_+,\,
+\langle n_1\rangle_-,\,
+\langle I_{01}\rangle_-
+\right).}\tag{10}
+\]
+These are original CAR densities/coherences, not the arbitrary complex coordinates of a ray. They still require an actually admitted original apparatus/readout to be physically accessible; existence of their operators alone does not select the compulsory D0 full programme.
+
+At the exact identity coframe/link and in ORIGINAL Lie coordinate order (N2,N3,barN2,barN3,J23,B), differentiate the properly normalized density:
+\[
+D_X\rho_\pm
+={Xv_\pm v_\pm^\dagger+v_\pm(Xv_\pm)^\dagger\over3}
+-{2\operatorname{Re}(v_\pm^\dagger Xv_\pm)\over9}v_\pm v_\pm^\dagger,
+\quad v_\pm=\sqrt3\psi_\pm.
+\]
+Its six true source rows have the exact **integer** numerator matrix
+\[
+\boxed{
+9D\mathcal R=
+\begin{pmatrix}
+-2&0&4&0&0&-4\\
+4&0&-2&0&0&2\\
+0&-3&0&0&0&0\\
+0&0&0&3&-3&0\\
+4&0&-2&0&0&4\\
+0&0&0&3&0&0
+\end{pmatrix}.}\tag{11}
+\]
+Integer Bareiss elimination, with no numerical rank tolerance, gives
+\[
+\boxed{\det(9D\mathcal R)=648,\qquad
+\det D\mathcal R={648\over9^6}={8\over6561}\ne0.}\tag{12}
+\]
+
+This is a **local inverse-function theorem for six physical CAR number/coherence expectations**, not merely an immersion in projective coordinates. It establishes a local analytic reconstruction of the complete six-parameter proper-Lorentz link near identity from precisely SIX native-type real detector readings on TWO original independent lines, without comparing any unobservable bare global phases. Unlike the earlier six-contrast Julia POVM construction, this theorem uses a compact list of actual standard CAR bilinears and two grade-one preparations; a D0-selected sequence preparing both and paying their cost remains an explicit independent physical question.
+
+The second key datum is the already proved **gauge-free signed closed history phase** (8): the same two rays distinguish the ORIENTATION of the original ordered N2/barN3 comparison with coefficients -1/9,+1/9. Together (10)-(12) and (8) yield a mathematically complete **six-dimensional detector plus order-sensitive loop invariant** from the SAME two original CAR16 rays. This is strictly stronger than identifying a tensor's rank or naming the archive "matter."
+
+The exact covariance/closed-phase and density-observable certificates have one dependency-free original-CAR checker. Neither the positive Fisher/observable Jacobian, nor the antisymmetric closed Berry curvature, alone equals the symmetric indefinite Lorentz–Palatini Hessian: the true original 40-Euler still requires a selected same-action cost and connection/history stationary elimination. GR_closed=false.
