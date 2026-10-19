@@ -85,6 +85,17 @@ for(const J of [J0,Jt]){
 }
 assert(fs(add(J0,Jt,-1),add(J0,Jt,-1))>1e-6,
   "nontrivial genuinely moving native Lorentz programme");
+
+// GLOBAL exact mathematical inverse of the COMPLETE native Choi programme:
+// in the canonical positive Julia square-root branch the state vector
+// coefficients are J[k][i]/sqrt(32), so all J are directly recovered.
+// Its ORIGINAL CAR16 grade-one sector is p * U4 on masks 1,2,4,8.
+const grade1=[1,2,4,8],theta=.1;
+const X4=gen[4],RX4=add(add(eye(4),X4,Math.sin(theta)),mm(X4,X4),1-Math.cos(theta));
+const recoveredU=grade1.map(maskI=>grade1.map(maskJ=>Jt[maskI][maskJ]/p));
+const inverseError=Math.max(...recoveredU.flatMap((row,i)=>row.map((v,j)=>Math.abs(v-RX4[i][j]))));
+assert(inverseError<2e-13,"complete original CAR16 Choi programme globally recovers actual Lorentz U via grade-one top-left block");
+assert(Jt[0][n]>0,"real pure-programme global sign fixed by canonical positive Julia sqrt offdiagonal");
 const overlap=fs(J0,Jt)/d;
 assert(overlap>0.98&&overlap<1,
  "different Julia unitaries have NONORTHOGONAL Choi programmes");
@@ -137,6 +148,7 @@ console.log(JSON.stringify({
  QFI_determinant:determinant,
  candidateGoldenSurprisalSuccess:cost,
  programOverlapDifferentLorentz:overlap,
+ globalGrade1LorentzRecoveryError:inverseError,
  flatBell:flat,rotatedLorentzBell:curved,
  deterministicExactFiniteNoProgramming:"obstruction for continuum of non-phase-equivalent J; proof in companion memo",
  hasPhysicalG0ProgramPreparation:false,hasBookCostSelector:false,
