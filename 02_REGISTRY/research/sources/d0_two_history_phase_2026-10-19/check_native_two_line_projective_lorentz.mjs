@@ -126,6 +126,51 @@ const gaugeChanged=comparison(.7,phasePlain);
 check(Math.abs(Math.atan2(gaugeChanged.im,gaugeChanged.re)
                -Math.atan2(phasePlain.im,phasePlain.re))>.5,
       "HOSTILE single two-arm phase shifts under arbitrary projective gauge");
+
+// Stronger EXACT native CAR16 one-body bilinear observables; these are
+// actual Hermitian number/coherence operators, not bare phase coordinates.
+// For v with norm²=3, matrix numerator 9 d(rho_ij) is integer.
+function nativeDensityRows(real,imag){
+ const obs=[];
+ for(let a=0;a<4;a++)obs.push({id:"n"+a,a,b:a,part:"real"});
+ for(let a=0;a<4;a++)for(let b=a+1;b<4;b++){
+  obs.push({id:"R"+a+b,a,b,part:"real"});
+  obs.push({id:"I"+a+b,a,b,part:"imag"});
+ }
+ const cols=G.map(X=>{
+  const ar=mv(X,real),ai=mv(X,imag);
+  const cr=dot(real,ar)+dot(imag,ai);
+  return obs.map(({a,b,part})=>{
+    const vvRe=real[a]*real[b]+imag[a]*imag[b];
+    const vvIm=imag[a]*real[b]-real[a]*imag[b];
+    const avRe=ar[a]*real[b]+ai[a]*imag[b]+real[a]*ar[b]+imag[a]*ai[b];
+    const avIm=ai[a]*real[b]-ar[a]*imag[b]+imag[a]*ar[b]-real[a]*ai[b];
+    return part==="real"?3*avRe-2*cr*vvRe:3*avIm-2*cr*vvIm;
+  });
+ });
+ return obs.map((item,i)=>({...item,row:cols.map(c=>c[i])}));
+}
+const densPlus=nativeDensityRows([1,0,1,0],[0,0,0,1]);
+const densMinus=nativeDensityRows([0,1,1,0],[0,0,0,1]);
+const readouts=[
+ densPlus.find(x=>x.id==="n0"),
+ densPlus.find(x=>x.id==="n2"),
+ densPlus.find(x=>x.id==="I01"),
+ densPlus.find(x=>x.id==="I02"),
+ densMinus.find(x=>x.id==="n1"),
+ densMinus.find(x=>x.id==="I01")
+];
+const observed=readouts.map(r=>r.row);
+const wantReadouts=[[-2,0,4,0,0,-4],[4,0,-2,0,0,2],
+ [0,-3,0,0,0,0],[0,0,0,3,-3,0],
+ [4,0,-2,0,0,4],[0,0,0,3,0,0]];
+check(JSON.stringify(observed)===JSON.stringify(wantReadouts),
+ "all six ORIGINAL CAR n_i/Im-rho_ij physical observable derivatives exactly");
+check(det(observed)===648n,
+ "EXACT original six native CAR bilinear detector responses have integer det 648");
+check(Math.abs(648/9**6-8/6561)<1e-16,
+ "normalized six-source Jacobian is exactly 8/6561, no arbitrary scale");
+
 console.log(JSON.stringify({source:"original CAR16 grade1 and six true proper Lorentz generators",
 exact_two_ray_minor_det:"-54",single_ray_ranks:[4,4],joined_rank:6,
 closed_mixed_Bargmann_phases:["-1/9","+1/9"],
