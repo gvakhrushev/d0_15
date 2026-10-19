@@ -41,6 +41,11 @@ def fib_table(nmax: int) -> list[int]:
     return fib
 
 
+def ceil_log2(value: int) -> int:
+    assert value > 0
+    return (value - 1).bit_length()
+
+
 def all_prefixes(n: int) -> list[str]:
     words = [""]
     for _ in range(n):
@@ -90,7 +95,7 @@ def decode_prefix(bits: str) -> tuple[str, bool]:
 
 def source_pins() -> dict[str, str]:
     pins = json.loads(PIN_FILE.read_text())
-    assert pins["base_head"] == "940f150c160c13341b2a6cb933ff7e9e1f7e327f"
+    assert pins["base_head"] == "6e59c6f41025814b367f12cc5c5d80c795c55505"
     for relative, expected in pins["inputs"].items():
         actual = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
         assert actual == expected, (relative, actual, expected)
@@ -193,6 +198,8 @@ def check_balanced_golden_left_fixture() -> dict[str, float | int]:
     p = (math.sqrt(5.0) - 1.0) / 2.0
     n, L, m = 20, 4, 29
     a, b = fib_table(n + 2)[n + 1], fib_table(n + 2)[n]
+    gns_dimension = a * a + b * b
+    gns_qubits = ceil_log2(gns_dimension)
     selected = m * L**4
     assert a == 10946 and b == 6765
     assert selected == 7424 and a - selected == 3522
@@ -200,6 +207,9 @@ def check_balanced_golden_left_fixture() -> dict[str, float | int]:
     ready_mass = 2 * selected * p ** (n + 3)
     assert abs(prefix_mass - 0.4907780810764765) < 2e-14
     assert abs(ready_mass - 0.2317139780019033) < 2e-14
+    assert gns_dimension == 165_580_141
+    assert gns_qubits == 28
+    assert 2 ** (gns_qubits - 1) < gns_dimension <= 2**gns_qubits
     return {
         "n": n,
         "L": L,
@@ -208,6 +218,8 @@ def check_balanced_golden_left_fixture() -> dict[str, float | int]:
         "unselected_original_cost_n_words_retained": a - selected,
         "selected_prefix_mass": prefix_mass,
         "ready_pair_mass": ready_mass,
+        "full_gns_complex_dimension": gns_dimension,
+        "binary_registers_for_padded_gns_vector": gns_qubits,
     }
 
 
@@ -226,6 +238,7 @@ def main() -> None:
     print("PASS column-controlled hostile operation fails old-right commutation")
     print("PASS all 3522 unselected words and pending-return sector are retained")
     print("PASS original n=20,L=4 balanced Golden LEFT masses")
+    print("PASS full n=20 GNS cyclic vector fits in the stated 28-register padded carrier")
     print(json.dumps(result, indent=2))
     print("SCOPE: AF/GNS and generous active-control representation only; physical G0/fullStep selection, query admission, and full Book price remain OPEN; GR_closed=false")
 

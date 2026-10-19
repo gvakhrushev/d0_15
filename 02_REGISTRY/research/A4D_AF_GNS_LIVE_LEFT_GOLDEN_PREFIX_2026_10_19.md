@@ -48,6 +48,16 @@ The left and right copies are the row and column indices of the **same** full GN
 
 The latest [full 718×16 source-blind-mode owner](A4D_FULL718_GOLDEN16_ABSOLUTE_BOOK_SOURCE_BLIND_MODE_2026_10_19.md) supplies a necessary hostile control. Its entire normalized joint law is invariant under the common original Info shift \(I\mapsto I+s\mathbf1\), while the absolute scalar Book action changes by \(-s\); the normalized law has an exact one-dimensional blind mode although its Fisher rank is 38. The AF vector \(\Omega_N\) above is also normalized and carries no such independent scale variable. Without a separately owned map from the absolute Book scale into AF preparation, its exact live-row/old-column correlation cannot reconstruct that pressure or replace a physical cost/clock register. This is another reason the GNS address construction is only a representation theorem, not the complete native action.
 
+The current [one-scalar decoder](A4D_FULL718_GOLDEN16_ABSOLUTE_BOOK_SOURCE_BLIND_MODE_2026_10_19.md#5-positive-exact-native-decoder-one-absolute-perron-scalar-closes-the-entire-33-info-blind-mode-and-six-car-coordinates) makes this boundary exact. From \(\mu\) and its one absolute \(\lambda\), the 718 edge sums recover all 33 Info values. Its first jet is
+\[
+\delta S_{uv}=\frac{2}{\log\varphi}\left(\delta\log\lambda+\delta\log\mu_{uv}-\frac{\delta\log\pi_u+\delta\log\pi_v}{2}\right)=\delta I_u+\delta I_v.
+\]
+The original ABC triangle inverts this jet on three vertices, and the owned edge links recover the remaining 30. Thus this finite field-to-record differential has full rank 33 on vertex-Info coordinates once the absolute scalar is present; normalized \(\mu\) alone has rank 32. It still supplies neither a map from native \((q,D,b,m)\) into these coordinates nor evidence that D0 physically reads and pays \(\lambda\).
+
+The latest exact [rank-three pressure compiler](A4D_FULL718_GOLDEN16_ABSOLUTE_BOOK_SOURCE_BLIND_MODE_2026_10_19.md#6-new-exact-nonlinear-rank-three-absolute-pressure-compiler-for-arbitrary-all-33-vertex-info) further reduces how this scalar is computed. For the existing complete tripartite \(K(9,11,13)\) support and canonical primitive cost, the full 33×33 transfer has rank exactly three for every heterogeneous Info profile. Its Perron scalar is the largest positive root of the exact cubic in the three zone sums \(W_A,W_B,W_C\). This eliminates an opaque 33-dimensional spectral solve; it does not establish that the physical record contains those sums or the absolute scalar. An independent ActionProtocol control also shows why selection remains essential: two permitted primitive-cost families can have the same normalized fixed-depth histories and same vacuum first source but different absolute-pressure second derivatives.
+
+The full 718×16 pointer law cannot be collapsed to its Shannon entropy as a candidate Einstein action. Its exact flat six-link Hessian is signed with inertia \((3+,3-)\), and the same complete positive 16-outcome instrument's pointer Shannon has zero first oriented \([ab]\) face source where the pretrace positive \(J_{23}\) marker retains the Cartan coefficient. This is a scoped counterexample to that entropy substitution, not a no-go for every complete source built from the retained records. Keep the ordered positive marks and all failure branches in the live-left query.
+
 ## A live-left query preserves every old-right operation
 
 For each path row \(w\), let \(P_w^L=L(E_{ww})\) be its left matrix-unit projection. Let \(J_w\) be any complete orthogonal query on the CAR16 plus fresh output flags, with every success, failure, work, and inactive outcome retained. The finite operator
@@ -61,6 +71,21 @@ is orthogonal. The selected physical-candidate words may use their existing \(J_
 The live prefix controls the query; the old RIGHT column is untouched. The exact same statement extends to the full fine AF module after refinement: use \(J L(E_{ww})J^*\) on the inherited subspace, the baseline query on the entire orthogonal complement, and retain the right-module action there. This does not compress away any complementary sector.
 
 The hostile control is decisive: if \(J\) instead depends on the old column, it fails to commute with right matrix units. The replay checks every right matrix unit through the tested finite levels and rejects that column-controlled version. The existing oldRIGHT no-go is therefore preserved; this construction uses the live LEFT index rather than weakening the archive constraint.
+
+## What the literal Golden+CNOT alphabet can prepare, conditionally
+
+The latest [literal gate-span theorem](A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md) proves that the existing Golden gate and active CNOTs are dense in \(SO(2^k)\) for every active width \(k\ge3\). This has a direct finite-cut consequence without postulating a new preparation primitive. Put \(d=a_n^2+b_n^2\), the complex dimension of the full AF GNS carrier. The real unit vector \(\Omega_N\) embeds in \(\mathbb C^{2^k}\) for \(k=\lceil\log_2d\rceil\). Since \(SO(2^k)\) acts transitively on its real unit sphere, there is \(U\in SO(2^k)\) with \(Ue_0=\Omega_N\), after zero-padding the carrier; density then gives, for each \(\varepsilon>0\), a finite word \(W_\varepsilon\) in the existing Golden+CNOT alphabet with
+\[
+\|W_\varepsilon e_0-\Omega_N\|_2<\varepsilon.
+\]
+For the \(n=20\) fixture, \(d=165{,}580{,}141\), so its vector fits in 28 active binary registers. This proves approximate controllability of the fixed AF vector at each finite cut, conditional on active gate placement. It does not prove G0 admits those placements, bounds the word length or its paid work/clock, or makes the absolute \(\lambda\) part of the preparation.
+
+There is also a direct moving-source estimate. For a field-independent prepared vector \(\psi_\varepsilon=W_\varepsilon e_0\) and a moving complete-record effect \(E(y)\),
+\[
+\left|D\langle\psi_\varepsilon,E(y)\psi_\varepsilon\rangle[V]-D\langle\Omega_N,E(y)\Omega_N\rangle[V]\right|
+\le 2\varepsilon\|DE(y)[V]\|,
+\]
+and the same estimate holds for the second derivative with \(DE[V]\) replaced by \(D^2E[V,Z]\); the probability error is at most \(2\varepsilon\|E\|\). Thus a fixed preparation approximation controls the true first and second sources when the same effect moves smoothly. On the raw \(h^{-2}\), \(O(h^{-4})\)-site functional, a sufficient aggregate condition remains \(\varepsilon_h M_h=o(h^6)\), for a bound \(M_h\) on the relevant effect derivatives. Gate density supplies no uniform word-length or paid-resource estimate.
 
 ## The actual balanced Golden LEFT mass is already present
 

@@ -1,11 +1,15 @@
 {
-  "base_head": "940f150c160c13341b2a6cb933ff7e9e1f7e327f",
+  "base_head": "6e59c6f41025814b367f12cc5c5d80c795c55505",
   "inputs": {
-    "02_REGISTRY/research/A4D_FULL718_GOLDEN16_ABSOLUTE_BOOK_SOURCE_BLIND_MODE_2026_10_19.md": "e0cbc68c49baeda5819c0c7e4d10a3a7fd93f1a538d16c968935a33d4bc5f5f5",
+    "02_REGISTRY/research/A4D_FULL718_GOLDEN16_ABSOLUTE_BOOK_SOURCE_BLIND_MODE_2026_10_19.md": "7541fd2acbd9d94ecc2e828854d8678c9bc61015a6a32b548db3d1484c45587b",
+    "02_REGISTRY/research/A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md": "4e6a9b41bd5cd0bd19d9946a77a2418d1844574b79fad9d0ed540577dc8bcb46",
     "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md": "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3",
     "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
     "02_REGISTRY/research/A4D_GOLDEN_LEFT_LIVE_PREFIX_BEFORE_OLD_RIGHT_G0_ACTUATION_2026_10_19.md": "018510bd16d5a22e32146c310cb18ddf065a0a475f8a022ad1370123b477df6f",
     "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
-    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json": "875200fb8337d1f4d9f1361bbc3f73c22c43b039c584371ea11be1a1710aea9c"
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json": "875200fb8337d1f4d9f1361bbc3f73c22c43b039c584371ea11be1a1710aea9c",
+    "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_absolute_book_one_scalar_reconstruction.py": "5ba298e3bc4398f2045fe6813d19444011a4e202bfadfa588be7e4bf38859076",
+    "02_REGISTRY/research/sources/d0_native_golden_gate_span_2026-10-19/check_literal_golden_cnot_so_generators.mjs": "5426d8ab7a8f096757e992d91cee0ee858e2669085320fdc622105d518d27e2a",
+    "02_REGISTRY/research/sources/d0_native_golden_gate_span_2026-10-19/check_fixed_word_source_stability.mjs": "35b12e3b7772b632098b09840644a1ec61722497c42126942677d53ed3fc4525"
   }
 }
