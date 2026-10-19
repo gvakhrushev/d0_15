@@ -934,6 +934,178 @@
         }
       ],
       "reported_state": "The exact finite literal-description control in the #334 owner gives rate 3/2 and source 1 at theta=1/2 while the entropy source is zero; the bounded checker reproduces the control. This refutes only the inference from the specified abstract interfaces, not actual D0 semantics. No physical no-go or native-programme application is claimed."
+    },
+    {
+      "id": "original-scene-rooted-n4-depth-four-sharpness",
+      "owner": "research owner #334; replayed in current task",
+      "statement": "On the original K(9,11,13) scene, full matrix-valued root-frame products of the 327 original triangle loops reconstruct all chord transports for arbitrary noncommuting proper-Lorentz edge assignments. Under the restriction to one root and no nonroot co-transport, 143 rooted depth-three loops see at most 858 of 1962 chord Lie directions; the 184 original root-based depth-four paths are sufficient and necessary to expose the remaining 1104.",
+      "interface": "original-scene-rooted-n4-lorentz-atlas-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_graph": "The carrier is the original 33-vertex K(9,11,13) scene with 359 physical undirected edges and 718 orientations.",
+        "proper_lorentz_links": "Each directed edge is assigned a genuine SO+(1,3) matrix and reverse edges are exact inverses; nonidentity tree links and noncommuting curved links are allowed.",
+        "rooted_detector": "All products are compared in one fixed root frame; no physically paid nonroot co-transport is included.",
+        "sharp_depth": "The 143 available rooted three-step loops expose at most 858 of 1962 Lie coordinates; the 184 root-based four-step paths span the remaining 1104 under the stated detector restriction.",
+        "scope_fence": "This is finite scene-group observability. It does not identify the scene graph with the 4D Role lattice, select a native detector, or prove physical Einstein dynamics."
+      },
+      "evidence": [
+        {
+          "ref": "4b78c41a06da0353a0247b9da4646baf80ed9929",
+          "path": "02_REGISTRY/research/A4D_NATIVE_SCENE_FULL_NONABELIAN_327_LOOP_INVERSE_AND_BOOK_SOURCE_2648_2026_10_20.md",
+          "sha256": "88d9534eb21954a3937499b3fb51d10692ddc8374b0b3217b44fb901e80e99c6"
+        },
+        {
+          "ref": "4b78c41a06da0353a0247b9da4646baf80ed9929",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_nonabelian_327_triangle_scene_holonomy_inverse.mjs",
+          "sha256": "aff52c0ad7c570bc7ce24cc02145fefb34757401b233f20f61a4d729170c2904"
+        }
+      ],
+      "reported_state": "Pinned to commit 4b78c41a06da0353a0247b9da4646baf80ed9929 in the current #334 history; live PR head is 01b047a188a4b41590949cea096d68e4e922dac4. The root-frame mod-prime replay passes at three primes. The 4D Role action and paid nonroot reference remain unselected."
+    },
+    {
+      "id": "original-scene-234-book-lorentz-source-atlas-2648",
+      "owner": "research owner #334; replayed in current task",
+      "statement": "For the declared complete positive 2/3/4 Book × Golden/Bell17 construction on the original 33-vertex scene, a finite inverse recovers 686 scalar net-price coordinates and 1962 rooted SO+(1,3) coordinates, for a combined 2648-coordinate source chart, from the complete original history family.",
+      "interface": "original-scene-234-book-lorentz-source-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "history_set": "The complete based closed original histories are retained at depths 2, 3, and 4: 718, 7722, and 257762 paths respectively.",
+        "clock": "The construction uses one common mathematical normalizer and attempt factors p, p^2, and p^3; the depth-four factor is hypothetical pending physical G0 selection.",
+        "complete_outcomes": "All 17 Golden/Bell categories, including the failure outcome, are retained; the declared path-conditioned CAR programme and common root frame are mathematical inputs.",
+        "coordinates": "The inverse reports 686 scalar directed-weight coordinates modulo 32 endpoint gauges and 1962 Lie coordinates from 327 rooted loop matrices; the finite checker uses floating-point residual tolerances.",
+        "scope_fence": "No physical Cost-Info/preparation/clock/work selector, independent L=4 Role-lattice control, same-action Einstein source, Ward, or physical refinement is proved."
+      },
+      "evidence": [
+        {
+          "ref": "4b78c41a06da0353a0247b9da4646baf80ed9929",
+          "path": "02_REGISTRY/research/A4D_NATIVE_SCENE_FULL_NONABELIAN_327_LOOP_INVERSE_AND_BOOK_SOURCE_2648_2026_10_20.md",
+          "sha256": "88d9534eb21954a3937499b3fb51d10692ddc8374b0b3217b44fb901e80e99c6"
+        },
+        {
+          "ref": "4b78c41a06da0353a0247b9da4646baf80ed9929",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_full_234_book_lorentz_2648_source.mjs",
+          "sha256": "e6f59a153743b3964414fe5976648b7eeabb357e303ddf33f6d5434964fd94b4"
+        }
+      ],
+      "reported_state": "Pinned to commit 4b78c41a06da0353a0247b9da4646baf80ed9929 in the current #334 history; live PR head is 01b047a188a4b41590949cea096d68e4e922dac4. The finite checker passes with numerical inverse residuals near machine precision; its output explicitly says GR_closed=false and lists the unproved physical inputs."
+    },
+    {
+      "id": "original-stage-resolved-book-selector-143484",
+      "owner": "research owner #334; replayed in current task",
+      "statement": "For the original two-depth (n=2,3) Book event law with one shared positive path-verification factor and the complete 143484-event record, the analytic inverse recovers both depth attempts, both acceptances, the common verifier, every closed-path scalar weight, and the absolute Perron Book action up to the original 32 endpoint similarities. Hence equality of the full record implies equality of the action as a smooth field function and of all its source jets.",
+      "interface": "original-stage-resolved-book-selector-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "full_stage_record": "All 8440 original 2/3 paths, all 17 Golden/Bell outcomes per path, and the four separately labelled early/late rejection outcomes are retained.",
+        "positive_chart": "The directed Book weights are strictly positive; g_2,g_3>0 with g_2+g_3=1; beta_2,beta_3 lie in (0,1); and the shared kappa is positive with kappa*Z_n(K)<1 for both depths.",
+        "shared_verifier": "The same unknown path-verification factor kappa is used at depths 2 and 3; this is a substantive selector hypothesis, not inferred from fixed gates.",
+        "inverse": "The full record first determines g_n and beta_n from stage counts, then kappa from five original loop outcomes, then every closed-path weight; the existing backtrack/odd-cycle inverse recovers K modulo 32 endpoint similarities.",
+        "source_jets": "For any smooth admissible field family within this positive chart, differentiating the same inverse recovers the first, second, and higher derivatives of the absolute scalar Book action.",
+        "scope_fence": "This recovers only the scalar net Book source. It does not identify the complete H+J+R Cost/Info/work action, admit physical G0 execution, supply the native 4D Role map, or close Einstein dynamics."
+      },
+      "evidence": [
+        {
+          "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+        },
+        {
+          "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
+        }
+      ],
+      "reported_state": "The analytic inverse and its common-verifier hypothesis are pinned to prior #334 commit 518ee207d790fdf9c13692a784ba3255625fd001, ancestor of live head 01b047a188a4b41590949cea096d68e4e922dac4. The checker replay passes; actual physical common-filter selection, complete H+J+R admission, and GR remain open."
+    },
+    {
+      "id": "original-stage-depth-specific-verifier-source-nonidentifiability",
+      "owner": "research owner #334; current-task audit",
+      "statement": "If the two original Book depths have independent unknown verification factors kappa_2 and kappa_3, then for any smooth positive scalar c(y), the transformation K_uv→c(y)K_uv and kappa_n→kappa_n*c(y)^(-n) leaves every accepted and early/late stage-labelled probability unchanged while shifting the absolute Perron Book action by -log_phi(c(y)). Thus even the complete 143484-event archive does not identify its absolute scalar source without a common or independently calibrated cross-depth filter.",
+      "interface": "original-stage-resolved-book-selector-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "depth_specific_filters": "The probability model permits independent positive verification factors kappa_2(y) and kappa_3(y), each satisfying its corresponding normalization bound.",
+        "smooth_scaling": "A smooth positive scalar c(y) rescales every directed Book edge weight by c(y) and each depth-n verification factor by c(y)^(-n), within the admissible positive chart.",
+        "complete_record": "All accepted path outcomes and all four early/late rejection labels are observed; the invariance therefore holds for the entire two-stage record, not merely its terminal marginal.",
+        "consequence": "The complete record remains identical while the absolute Book Perron action and its field derivatives can change; source recovery needs one common verifier or an independently fixed/calibrated cross-depth rule.",
+        "scope_fence": "This is a no-go for unconditional absolute scalar Book-source identification under depth-specific filters. It is not a no-go for actual D0 if the native programme enforces a common filter, and it does not classify the full H+J+R action."
+      },
+      "evidence": [
+        {
+          "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+        },
+        {
+          "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
+        }
+      ],
+      "reported_state": "The source document proves the scaling invariance analytically on the declared positive chart; the companion checker includes a finite hostile control. This pins the exact remaining scalar selector input: the physical verifier must be common across depths or independently calibrated."
+    },
+    {
+      "id": "original-staged-234-book-lorentz-source-4525440",
+      "owner": "research owner #334; current-task replay",
+      "statement": "For a constructed positive three-depth original-scene event model, the complete 2/3/4 Book histories with all 17 Golden/Bell outcomes and six early/late failure labels form 4525440 possible labels. The checker verifies normalization, recovery of the three attempt masses, early acceptances and one common verifier, plus the combined 686 scalar and 1962 rooted Lorentz source dimensions; a depth-specific-verifier control preserves the full staged law while hiding absolute Book scale.",
+      "interface": "original-staged-234-book-lorentz-source-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_history_counts": "The original K(9,11,13) graph has 718, 7722 and 257762 based closed paths at depths 2, 3 and 4, respectively, for 266202 total.",
+        "attempt_and_acceptance_fixture": "The finite fixture uses Golden attempt masses (p^2,p^3,p^2) and early acceptances beta_n=p^2; it also checks recovery of these quantities from retained stages, but does not establish their physical execution by G0.",
+        "stage_record": "All 17 conditional Golden/Bell outcomes per accepted path and the six separately labelled early/late failures are retained; the common verifier satisfies kappa*Z_n(K)<1 at each depth.",
+        "source_coordinates": "The script reports 686 scalar transfer coordinates modulo endpoint gauge and 327*6=1962 rooted Lie coordinates. Its probability and inverse controls are floating-point checks; the dimension sum is not a symbolic Jacobian-rank proof.",
+        "scope_fence": "The script explicitly reports actual_G0_fullStep_234_preparation=false, native_4D_Role_Palatini_source_selected=false, and GR_closed=false. No physical action, source, Ward, or refinement is established."
+      },
+      "evidence": [
+        {
+          "ref": "01b047a188a4b41590949cea096d68e4e922dac4",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_staged_234_rooted_2648_book_source.mjs",
+          "sha256": "c9e89ac5e0773d99636ec563c4026476639ca73ab5e71622f9148ee1a2b3d54b"
+        }
+      ],
+      "reported_state": "Pinned to the current #334 head 01b047a188a4b41590949cea096d68e4e922dac4. Current-task checker replay passes. Its output preserves the actual-G0, native 4D source, and GR closure boundaries."
+    },
+    {
+      "id": "original-role40-six-root-triangle-star-pullback",
+      "owner": "research owner #334; exact checker replayed in current task",
+      "statement": "Mapping the six original based plaquette matrices at each Golden LEFT Role site to six original rooted three-step triangle words gives exact off-shell equality of the unchanged nonlinear six-face Palatini star observable and its scene pullback. Consequently the full 16 coframe plus 24 shared-link source derivatives agree; an independent three-prime L=2 replay checks all 640 genuine source directions.",
+      "interface": "original-role40-six-root-triangle-pullback-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_geometry": "The carrier is the original six-based SO+(1,3) Role Palatini star on the existing Golden LEFT 4D Role lattice, with the unchanged coframe, eta, Hodge and orientation conventions.",
+        "rooted_encoding": "At each Role site, six distinct original K(9,11,13) rooted three-edge loops encode the six based plaquette matrices; the same scene chords may vary by Role address in the mathematical map.",
+        "variation_rule": "Role coframe and globally shared proper-Lorentz links are the independent Euler coordinates. A shared Role link is differentiated through every adjacent face exactly once; mapped scene chords are not extra independent Euler fields.",
+        "finite_replay": "The regression uses an L=2 periodic Role carrier with 16 sites, 64 actual links and 96 faces and checks 256 coframe plus 384 link directions over three finite fields; the algebraic observable identity is the general statement.",
+        "physical_boundary": "The address-conditioned scene control, same-run Book03 Cost-Info/H+J+R selection, full failure and reference costs, matter source, native stationarity and continuum/refinement remain unproved."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_MINIMAL_SIX_ORIGINAL_SCENE_TRIANGLES_REPRODUCE_FULL_ROLE40_PALATINI_2026_10_20.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_role_root_triangles_2026-10-20/six_root_triangles_owner.md",
+          "sha256": "8ec694e47077de7e1c908052242957144d041a045e072aead0e71c4512a7d5ca"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_six_original_scene_triangles_full_role_40_euler.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_role_root_triangles_2026-10-20/check_six_original_scene_triangles_full_role_40_euler.mjs",
+          "sha256": "088bcb8860307e20b216f2a0a035b6d2adcabf3c936dff89a6a1ad1c285ed2e5"
+        }
+      ],
+      "reported_state": "Pinned to #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63 and independently replayed in the current task with the bundled Node runtime. The checker reports PASS_SIX_ORIGINAL_ROOTED_TRIANGLES_PRESERVE_ALL_40_ROLE_EULER and GR_closed=false. This is a sufficient mathematical geometry interface; physical G0 actuation and action selection remain open."
     }
   ],
   "applications": [

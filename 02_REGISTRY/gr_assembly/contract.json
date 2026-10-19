@@ -271,6 +271,51 @@
       "normalization": "Uses the pre-existing Julia scale 1/2 and normalized grade-one probes; the determinant is a local observability invariant, not an Einstein coupling.",
       "refinement": "Finite local first-response theorem only; no refinement or continuum transfer is asserted.",
       "scope": "Conditional response-capacity result. Physical selection and price of the preparations/readouts, oldRIGHT/reference, routing, work, clock, complete H+J+R source and original Einstein Euler equality remain open."
+    },
+    "original-scene-rooted-n4-lorentz-atlas-v1": {
+      "carrier": "The original K(9,11,13) scene: 33 vertices, 359 undirected/718 directed edges, with genuine SO+(1,3) transports and U_vu=U_uv^{-1}.",
+      "action": "Rooted parallel transport and ordered products of original based loops; no added group, curvature action, or physically selected nonroot reference.",
+      "variations": "327 original chord matrices after fixing a 32-edge spanning-tree gauge, with six real Lorentz coordinates per chord; one fixed root frame and no nonroot co-transport.",
+      "source": "Full matrix-valued rooted loop products, not Wilson traces or spectra; all independent chord data are recoverable only when the declared depth-four histories are included.",
+      "normalization": "A common root frame fixes endpoint gauge; the result is group reconstruction and has no probabilistic or Cost-Info normalization.",
+      "refinement": "One finite 33-vertex scene only; it is not the independent four-dimensional Role lattice and carries no refinement theorem.",
+      "scope": "Finite group-theoretic observability theorem. With root-only transport, 143 rooted depth-three loops see at most 858 of 1962 Lie directions; 184 root-based depth-four histories expose the remaining 1104. This is not a selected physical detector or GR closure."
+    },
+    "original-scene-234-book-lorentz-source-v1": {
+      "carrier": "The original 33-vertex, 718-directed-edge scene with all positive based closed Book histories of lengths 2, 3, and 4, together with rooted Lorentz loop labels and a complete 17-category Golden/Bell record.",
+      "action": "A finite mathematical Book transfer on the original scene with a common normalizer and declared depth-attempt factors p, p^2, p^3; the depth-four factor and path-conditioned CAR programme are not selected as compulsory G0.",
+      "variations": "718 directed scalar transfer weights modulo 32 endpoint gauges (686 coordinates), jointly with 327 rooted SO+(1,3) chord matrices (1962 local Lie coordinates).",
+      "source": "Complete positive Book × Golden/Bell17 path record, including the Bell failure outcome, on the declared common-root chart; the constructed inverse has combined input rank 2648.",
+      "normalization": "One mathematical common clock normalizer over 266202 original histories. The checker uses finite numerical reconstruction; the common 2/3/4 clock and physical attempt weights remain unselected inputs.",
+      "refinement": "Finite original scene and local source chart only; no map to the independently varied L=4 Role lattice is established.",
+      "scope": "Conditional finite source-atlas/observability result only. Physical root reference, field-dependent co-transport, complete Cost/Info/preparation/clock/work, native Role controls, same-action Einstein source, Ward, and refinement remain open."
+    },
+    "original-stage-resolved-book-selector-v1": {
+      "carrier": "The original 33-vertex, 718-directed-edge Book scene, all 8440 original depth-2/3 histories, all 17 Golden/Bell categories, and four explicitly labelled early/late rejection outcomes.",
+      "action": "A constructed positive finite event law with Golden attempt factors p and p^2 and one shared unknown path-verification factor across depths 2 and 3; this does not establish compulsory native G0 admission.",
+      "variations": "A moving positive directed Book transfer K, two depth acceptances beta_2/beta_3, Golden attempt weights g_2/g_3, and either one shared path-verification factor kappa or independent depth-specific factors.",
+      "source": "The complete 143484-outcome record includes all accepted Book × Golden/Bell17 outcomes and four typed early/late rejection labels; with one shared kappa it analytically recovers the scalar Book action and its smooth source jets.",
+      "normalization": "All accepted outcomes and early/late rejections are retained under the common event law. A hostile control shows that independently varying depth-specific verifiers destroys absolute-cost identifiability.",
+      "refinement": "Finite constructed 33-vertex scene and numerical source replay only; no continuum or all-history theorem is asserted.",
+      "scope": "Analytic source sufficiency on the strict-positive two-depth chart with one shared verifier, plus a depth-specific-verifier non-identifiability theorem. The finite checker replays constructed controls; physical full D0 price, H+J+R admission, and GR closure remain open."
+    },
+    "original-staged-234-book-lorentz-source-v1": {
+      "carrier": "The original 33-vertex K(9,11,13) graph, all positive based closed histories of lengths 2, 3, and 4, rooted proper-Lorentz loop marks, and the complete 17-outcome Golden/Bell conditional record.",
+      "action": "A constructed positive event law with depth weights (p^2,p^3,p^2), per-depth early acceptance beta_n, and one shared path-verification factor kappa; it is not an admitted compulsory G0 execution.",
+      "variations": "Directed positive edge transfers K_uv, three clock attempts and early acceptances, one common verifier kappa, and 327 rooted SO+(1,3) chord matrices.",
+      "source": "The complete staged record retains every accepted history/outcome and six early/late rejection labels; the finite control combines 686 scalar gauge-quotient coordinates and 1962 Lorentz coordinates.",
+      "normalization": "266202 original paths and 17 conditional labels per path give 4525440 positive event labels after adding six stage failures; probabilities are normalized under kappa*Z_n(K)<1 for every depth.",
+      "refinement": "One finite original scene and a constructed numerical event-law fixture only; no continuum or 4D Role-lattice transfer is established.",
+      "scope": "Finite staged-source observability control with a shared-verifier assumption. The script uses floating-point tolerances and does not establish physical G0/fullStep execution, selected H+J+R price, 4D Palatini/CAR source, Ward, refinement, or GR closure."
+    },
+    "original-role40-six-root-triangle-pullback-v1": {
+      "carrier": "The existing Golden LEFT addressed 4D Role lattice and a conditional copy of the original K(9,11,13) scene for each Role-site word execution; the 33-vertex scene is not identified with spacetime.",
+      "action": "The unchanged six-face original Palatini star observable pulled back through six rooted three-edge proper-Lorentz triangle words at each Role site. This is an observable functional map, not a selected Book03/G0 action and not an added independent scene variation.",
+      "variations": "All 16 original coframe components and 24 shared proper-Lorentz link tangents per Role site; each Role link is varied once through its adjacent based faces. Scene chord matrices are mapped inputs, not independent Euler coordinates.",
+      "source": "Exact off-shell equality of the original Role star functional and its rooted-scene pullback, so their coframe and globally shared link derivatives agree. The finite checker independently replays 640 source directions on its L=2 fixture.",
+      "normalization": "The unchanged original finite-h Palatini star with its original eta, Hodge, epsilon signs and coframe normalization.",
+      "refinement": "The functional identity is algebraic at finite h. The independent regression uses 16 Role sites, 64 links and 96 faces over three finite fields; no refinement family is asserted.",
+      "scope": "Does not establish physical Golden LEFT address-conditioned actuation, a common verifier, retained failure/oldRIGHT/ref128/full128/clock/work price, selected full H+J+R/Cost-Info action, independent matter/Ward source, physical stationarity, continuum recovery or GR closure."
     }
   },
   "obligations": [
