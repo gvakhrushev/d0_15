@@ -92,9 +92,18 @@ function transversePolarizations(k){
 function oneRay(k){
  const [S2,S3,S4]=schurTaylor(k);
  if(gauss(S2).rank!==4)throw Error("continuum principal null rank is not4: "+k);
- const u=schurTaylor(k.map((v,i)=>v+(i===1?1:0)))[0];
- const v=schurTaylor(k.map((w,i)=>w-(i===1?1:0)))[0];
- const derivative=madd(u,v,-1).map(row=>row.map(x=>mul(x,inv(2))));
+ // S2(k)=-C1(k) L0^(-1) B1(k) is EXACTLY quadratic in k.
+ // Differentiate it directly; do not recompute two 24x24 complete
+ // Schur series at k±e_v. This is algebraically the same derivative.
+ const k1=flatTaylorBlocks(k,1),ev=flatTaylorBlocks([0,1,0,0],1);
+ const L0=flatTaylorBlocks(k,0).L;
+ const joined=k1.B.map((row,i)=>[...row,...ev.B[i]]);
+ const solved=gauss(L0,joined);
+ if(solved.rank!==24)throw Error("flat L0 not invertible");
+ const Xk=solved.solution.map(row=>row.slice(0,16)),
+       Xe=solved.solution.map(row=>row.slice(16));
+ const derivative=madd(mprod(ev.C,Xk),mprod(k1.C,Xe))
+   .map(row=>row.map(x=>md(-x)));
  const waves=transversePolarizations(k),out=[];
  for(let j=0;j<2;j++){
   const e=waves[j],q2=applied(S2,e),q3=applied(S3,e);
