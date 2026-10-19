@@ -115,7 +115,7 @@ D_y^k S_{\rm Book}(\gamma_\sigma)=D_y^k S_{\rm Book}(\gamma_{\sigma'})
 }
 \tag{14}
 \]
-This is an exact scalar source identity on the literal ORIGINAL Book path words — stronger than (7)'s equal-probability origin, requiring NO restriction on DC, DI or the native image of geometric variations. The complete 5040-word integer checker independently compares every complete directed-edge and node count, full fixed first/second nontrivial test sources and all endpoints.
+This is an exact scalar source identity for the ORIGINAL DECLARED *edge-local Cost plus vertex-local Info* additive history model — stronger than (7)'s equal-probability origin and requiring NO restriction on its DC or DI. It does NOT prove equality for prefix-conditional code length, history-position-dependent Info, a different D_min/Can quotient, adaptive clock/work charges, coherent record phases or an actual execution's order-dependent resource price. Those extra contributions are part of the missing full-history selected action and must NOT be equated to simple vertex/edge additive Cost−Info. The complete 5040-word integer checker independently compares every complete directed-edge and node count, full fixed first/second nontrivial test sources and all endpoints.
 
 Noncommutative geometry is **not** erased by the source identity: assign the two distinct triangle holonomies \(U_0=\exp(aN_2)\), \(U_1=\exp(b\bar N_3)\), the others identity, with actual inverse-directed scene links. Exchanging these two loop orders changes the actual Lorentz history by \([U_0,U_1]\). The exact oriented original rotation mark has
 \[
