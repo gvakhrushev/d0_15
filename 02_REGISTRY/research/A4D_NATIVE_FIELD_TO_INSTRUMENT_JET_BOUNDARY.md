@@ -232,8 +232,15 @@ D_\xi\sigma=p^2\begin{pmatrix}0&1\\1&0\end{pmatrix}\oplus0,
 whereas \(\operatorname{tr}(\sigma\,i[H,\sigma])=0\) by cyclicity of trace.
 The diagonal-readout example remains a valid abstract illustration that a
 functional derivative can fail to factor through a coarse readout; it does not
-supply the missing D0 field-to-return map. The conditional full-action
-chronology relation is already owned by
+supply the missing D0 field-to-return map. A more relevant existing D0 witness
+is the [coherent AF Cost−Info owner](A4D_NATIVE_COHERENT_AF_COST_INFO.md): its
+actual golden direct/return instrument has the native golden probabilities at
+every cost cut, while the classical net-cost source vanishes and the coherent
+source at \(\cos\theta=3/5\) is strictly nonzero. This establishes that
+coherence changes the response of that native candidate. It still does not map
+\(\theta\) to the joint field tangent, select operator entropy as native
+\(\operatorname{Info}(v)\), or identify the full Cost−Info with one physical
+action. The conditional full-action chronology relation is already owned by
 [A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md](A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md),
 §4; the source from the other retained action terms remains required there.
 
