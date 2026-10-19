@@ -32,7 +32,9 @@ pi=r*ell
 pi/=pi.sum()
 P=K*r[np.newaxis,:]/(lam*r[:,np.newaxis])
 assert np.max(abs(P.sum(1)-1))<1e-12
-assert np.max(abs(pi@P-pi))<1e-12
+# Use an explicit elementwise reduction here: some macOS BLAS builds emit
+# spurious floating-point overflow warnings for this small finite row vector.
+assert np.max(abs(np.sum(pi[:,None]*P,axis=0)-pi))<1e-12
 price=C-theta*I[:,None]-(1-theta)*I[None,:]
 valid=P>0
 entropy=-np.sum(pi[:,None]*P*np.log(np.where(valid,P,1)))/LOGPHI
