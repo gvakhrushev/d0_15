@@ -128,6 +128,29 @@ The state overlap is determined exactly by original orthogonal matrices:
 In particular the graded native J23 Euclidean rotation in original CAR16 has
 QFI(J23)=2p², verified by independent rotated finite overlap calculations. Different U have generally NONORTHOGONAL programme states, just as exact deterministic no-programming demands: heralding is ESSENTIAL.
 
+## 2.1. Latest Petz/full-record gate and original Golden LEFT event-rate composition
+
+The newest #334 \`A4D_COMPLETE_HISTORY_PETZ_SCORE_CODE_COHERENCE_SOURCE_GATE_2026_10_19.md\` gives the strictly typed additional rule: legitimate physical forgetting must preserve score, conditional CODE likelihood ratios and coherent quantum source (or possess the exact full-record relative-entropy/Petz recovery on an ACTUALLY selected physical cut). The present heralded programme exhibits a decisive exact hostile control:
+
+    Q_Bell(Good)=1/1024,  Q_Bell(Bad)=1023/1024
+
+for EVERY bounded original U. Therefore the classical Bell Good/Bad BIT ALONE has ZERO first Lorentz score and ZERO Fisher information in ALL SIX geometric directions. Yet the full 1024-amplitude TRUE prepared \`|J(U)>><<J(U)|\` programme has strictly positive rank-six native QFI with eigenvalues \`2p\` (3) and \`2p²\` (3). No field-independent recovery map from the **bit-only** distribution can recover this nonconstant family of original programmed densities. Reading only the flag is NOT score-sufficient for its Lorentz source; output CAR state B, the original failure archive and programme/reference are essential. The Bell instrument itself retains ALL its outputs in the mathematical theorem; the statement is a warning against subsequently discarding their information.
+
+One quantitative combination with an ALREADY-OWNED original scene constant, **without inventing a 4D addressing scheme**, is possible. The real Golden LEFT balancing theorem gives complete selected READY mass on controlled refinement
+
+    Pr(original selected READY history) -> 0.341640786499874...
+
+For the explicitly declared conditional mathematical experiment that tries one Bell processor on each selected READY event, the UNCONDITIONED joint event rate is
+
+    Pr(READY and Bell-Good) -> 0.341640786499874... /1024
+                             = 0.000333633580566283... > 0.
+
+So a fixed active 32-dimensional Julia programme does not by itself force successful *all-site* event mass to vanish as h→0. Under independent repeats in this mathematically specified subprotocol the expected original native attempts per all-site success would be 2997.3, while a PRESELECTED individual Role site still contributes its honest h^4 address factor. A full 4D reconstruction must price actual repeated trials and clock/work; physical G0 execution of the Bell processor, the programme preparation and cost selection are NOT established.
+
+The single-success outcome has mathematical surprisal \`log_phi(1024)=14.404200904...\` Golden units, field-independent because the fixed Julia target is orthogonal. This is NOT an asserted compulsory primitive Book03 Cost, nor does it cancel nonconstant full-historical preparation/record/failure expenses. For four-link face words use a real four-fresh-flag complete local programme and keep all complements.
+
+**Pre-existing external technique:** the deterministic exact unitary programme obstruction and probabilistic universal programme strategy are known in Nielsen–Chuang, *Programmable Quantum Gate Arrays*, Phys. Rev. Lett. 79 (1997) 321, DOI 10.1103/PhysRevLett.79.321. The mathematical d^-2 Bell projection is standard teleportation. The specific NEW D0 result here is the explicit original p-Golden CAR16/Julia binding, its exact six-direction 3+3 resource QFI and source-preserving fixed-processor interface, NOT invention of quantum gate teleportation.
+
 ## 3. Refit the REVERSE-GR integration using one physically explicit source register
 
 Correct graph of obligations, now with NO mysterious continuously tunable active gate:
