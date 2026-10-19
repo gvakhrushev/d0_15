@@ -213,8 +213,9 @@ Along with the joint \(h^2z^2\) check above, it removes these low-order local
 compatibility obstructions but neither proves an exact continuation nor
 closes the #334 target. The next decisive test must put the same #232 carrier
 on an actually sampled nonconstant metric with nonzero curvature and compare
-its full joint/source equations with the designated #216 smooth branch; a
-cell-constant solder probe has a trivial flat comparator.
+its full joint/source equations with the designated #216 smooth branch. The
+continuum Einstein source vanishes on the cell-constant probe, but the full
+discrete #216 branch is not recomputed in this certificate.
 
 ## 6. Validation
 
