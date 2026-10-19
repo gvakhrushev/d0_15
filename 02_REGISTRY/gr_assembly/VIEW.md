@@ -83,7 +83,7 @@ flowchart TD
     o17 --> g2
 ```
 
-Historical catalogue: 44 preserved IDs; 21 indexed scoped negative results including typed input.
+Historical catalogue: 44 preserved IDs; 22 indexed scoped negative results including typed input.
 Use `search` for their exact scope and owners. No historical result is accepted automatically.
 
 ## Agent entry
