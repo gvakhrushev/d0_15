@@ -151,6 +151,44 @@ The single-success outcome has mathematical surprisal \`log_phi(1024)=14.4042009
 
 **Pre-existing external technique:** the deterministic exact unitary programme obstruction and probabilistic universal programme strategy are known in Nielsen–Chuang, *Programmable Quantum Gate Arrays*, Phys. Rev. Lett. 79 (1997) 321, DOI 10.1103/PhysRevLett.79.321. The mathematical d^-2 Bell projection is standard teleportation. The specific NEW D0 result here is the explicit original p-Golden CAR16/Julia binding, its exact six-direction 3+3 resource QFI and source-preserving fixed-processor interface, NOT invention of quantum gate teleportation.
 
+## 2.2. NEW global mathematical inverse: complete scalar Book price + one prepared Lorentz link need no hidden geometric parameter
+
+The just-integrated #334 \`A4D_COMPLETE_718_SCALAR_BOOK_INVERSE_GAUGE_ACTION_FROM_ONE_ABSOLUTE_RECORD_2026_10_19.md\` proves a stronger statement than earlier 33-Info or 38-rank local Fisher claims: for arbitrary positive original 718 edge-local NET scalar prices \`s_uv=Cost_uv−Info_uv\`, original balanced normalized stationary edge frequencies \`mu_uv\` PLUS one original ABSOLUTE Perron scalar \`lambda\` reconstruct THE ENTIRE scalar Book transfer up to its true endpoint coboundary:
+
+    pi_u = sum_v mu_uv,
+    K_can,uv = lambda mu_uv / sqrt(pi_u pi_v),
+    s_can,uv = -log_phi K_can,uv,
+    D_V s_can,uv =
+      -D_V log_phi(lambda) -D_V log_phi(mu_uv)
+      +(1/2)D_V log_phi(pi_u)+(1/2)D_V log_phi(pi_v).
+
+It follows that EVERY original closed scalar history price and balanced all-walk scalar Euler/Hessian/Schur is determined by \`(mu,lambda)\`, with no primitive Cost-vs-Info *split* selected. Normalized probabilities alone do not recover lambda; two ActionProtocol-permitted Cost models can have the same normalized full history and still differ at SECOND absolute source.
+
+Our COMPLETE native-Julia programme has an equally direct (and **GLOBAL**, not just IFT-local) mathematical inverse for its original proper Lorentz U as long as the strict contraction chart and canonical positive Julia square roots hold:
+
+    |J(U)>>_(A,B) = (1/sqrt32) sum_i |i>_A ⊗ J(U)|i>_B,
+    J(U)_(row, col) = sqrt32 * <col|_A <row|_B J(U)>>.
+
+The pure density \`|J>><<J|\` determines the real state vector up to ± sign, and the ORIGINAL canonical positive square-root block \`sqrt(I-CC^T)>0\` fixes that sign. The true original top-left block is \`C=p Lambda(U)\`. In the original grade-one exterior basis \`|1>,|2>,|4>,|8>\` (single occupied indices) \`Lambda^1(U)=U\`, so
+
+    U_ij = J(U)_(CARgrade1 i,CARgrade1 j)/p
+
+coefficientwise, FOR EVERY bounded admissible SO+(1,3) U, not only infinitesimally or at a selected Cartan flat chart. Its independent actual J23 finite theta=.1 replay has reconstruction error <2e-13. This is a **mathematical state-coordinate inverse**, NOT exact one-shot tomography or an M1-accepted native Choi preparation.
+
+Consequently the separated mathematical native data
+
+    (full original 718 normalized mu, one true absolute lambda,
+     one FULL ORIGINAL normalized Choi/JULIA programme pure state)
+
+are jointly **injective** on
+
+    (original arbitrary 718 positive NET scalar prices / 32 endpoint gradients,
+     one original bounded proper-Lorentz edge U).
+
+The first factor is a 686-dimensional gauge quotient (685 normalized mu +1 absolute lambda); the second is one six-dimensional SO+(1,3) chart. This is NOT a physical 692-parameter fundamental field theory, not the 4D Role-link graph, and NOT a claim that those data are already collected on one G0 whole history. For an actual original 4D Role lattice the programme must supply/price one U resource for every independently controlled local link and true Golden LEFT address. The original finite Palatini geometric action still requires independent coframe e and proper based FACE assembly. The full Book H+J+R may include non-edge-local code/coherence, clock and work not reconstructible from \`(mu,lambda,J)\`.
+
+**Strategic consequence:** in the original edge-local scalar + original Lorentz mathematical subproblem, neither the historical scalar action NOR the Lorentz link is missing once their full correctly typed sources have been admitted as DATA. The full D0→GR obstruction is now exactly the PHYSICAL constitutive equation selecting/pricing this same complete data/circuit, not an abstract reconstruction/rank gap.
+
 ## 3. Refit the REVERSE-GR integration using one physically explicit source register
 
 Correct graph of obligations, now with NO mysterious continuously tunable active gate:
