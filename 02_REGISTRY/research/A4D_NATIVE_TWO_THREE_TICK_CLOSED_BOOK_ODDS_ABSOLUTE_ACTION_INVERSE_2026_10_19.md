@@ -111,3 +111,27 @@ This is a STRICT physical admission firewall: **raw positive path sums** in Book
 **PROVED:** (1)–(6), (the exact all718 mathematical inverse), with independent true original two-depth closed-loop sums and moving-field replay. **NOT PROVED:** actual G0 admission and physical same-clock selection (7), true original H+J+R source/root, RAW-216 and refinement. \`GR_closed=false\`.
 
 Replay: \`sources/d0_physical_binary_return_2026-10-19/check_native_two_three_closed_clock_absolute_book.py\`. Exact matrix identities plus independent all718 directed asymmetric nonlinear numeric and first Euler finite differences, no Lean/promoted claim or original full G0 unitary simulation.
+
+
+## 5. No free CLOCK PRIOR in the original Golden idle/step conditional construction
+
+The newest independently owned #334 \`check_golden_book_idle_step_clock_absolute_source.mjs\` has the ACTUAL original GoldenCoherentMemory.fullStep blank-input literal outcomes
+\[
+\Pr(\mathrm{idle})=p,\quad
+\Pr(\mathrm{new\ record})=p^2,\quad p+p^2=1,
+\]
+with their relative odds \(p\), precisely the original nonidentity quantum Cost=1 versus idle Cost=0. Consequently there is a **fully specified mathematical native-Golden two-depth attempt** with
+\[
+a_2=p,\quad a_3=p^2,\quad a_3/a_2=p.
+\]
+Its *declared* complete common-normalizer Book closed-depth mixture would have
+\[
+\boxed{
+\lambda=\frac{\Pr(n=3)}{\Pr(n=2)}\,
+\frac1p\,
+\frac{\operatorname{Tr}P^2}{\operatorname{Tr}P^3}.
+}\tag{8}
+\]
+The bounded checker uses precisely these **original** positive weights, not arbitrary 0.37/0.63 or any fitted clock ratio, and confirms (8) with all full 718 directed Costs and moving Info.
+
+**Important distinguishing assumption:** The literal one-step Golden IDLE/CHANGE result fixes ONLY the native attempt probabilities. It does **not** by itself prove that the same actual G0 \`fullStep\` subsequently routes the active system through EITHER exactly two or exactly three original paid scene transitions and samples their raw positive complete Book weight \(Z_2\) or \(Z_3\) under one common normalization without an extra conditional-preparation/source term. That is precisely the remaining original physical binding, not a coefficient to invent. If an actual closed-depth-aware oldRIGHT/Kraft/active-controller program realizes that binding, the canonical original Golden clock gives the missing absolute scalar immediately by (8), and hence the entire scalar Book variational action by (4).
