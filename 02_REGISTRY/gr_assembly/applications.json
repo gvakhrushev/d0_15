@@ -1346,6 +1346,150 @@
         }
       ],
       "reported_state": "Pinned to exact open PR #375 head 34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a. Its guards and Lean build pass. The feedback checker reports PASS_SCOPED_BOOK03_CONSTRAINED_OPERATOR_VARIATION with 20 controls; the Lean path-response result is conditional on the diagnostic cost identification. No application to native-programme-v1 or positive_gr is accepted."
+    },
+    {
+      "id": "original-binary-event-geometric-car-source-proportionality",
+      "owner": "registered physical-source research owner #334",
+      "statement": "On the declared k=10,d=1056 common null/star fixture, the conditional binary expected surprisal, modal-good cost and odds contrast have positive multiples of the existing DJ_trace on the fixed-oldRIGHT eligible geometry+CAR tangent slice. This preserves that finite source projection’s roots; preparation/clock directions, full Book price and normalizer, event admission and physical selection remain open.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "binary_event": "The measured outcomes are the original complete good/failure binary verification event at k=10,d=1056.",
+        "common_base": "The common null/star base has equal addresswise good probability and the owner’s actual matched oldRIGHT weights.",
+        "eligible_tangent": "The equality is restricted to the owner-declared geometric+CAR directions; preparation and clock rows are not included."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_PHYSICAL_BINARY_RETURN_BOOK_PRICE_AND_EINSTEIN_SOURCE_GATE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_BINARY_RETURN_BOOK_PRICE_AND_EINSTEIN_SOURCE_GATE_2026_10_19.md",
+          "sha256": "8c02f6bd280dceb7323e7b590496a43e8950589664ee0358af2659ce8e725f0b"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_binary_native_price_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_binary_native_price_source.py",
+          "sha256": "d9b71f9f82d8ea5f60ea5764476e3883def01072d0ec26a763099e76947e0b8f"
+        }
+      ],
+      "reported_state": "Conditional finite source equivalence only; not a selected physical action or GR closure."
+    },
+    {
+      "id": "full128-modal-surprisal-flat-source-mismatch",
+      "owner": "registered full128 modal-history research owner #334",
+      "statement": "In the original flat-shell full1024 modal fixture, the conditional modal surprisal has a nonzero J23 first source (about -4.581893845), while the original Palatini flat-vacuum Lorentz-link row is zero. This is a mismatch only if that bare modal surprisal is the complete action on the same tangent with no compensating native term; it is not a general D0 no-go.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "bare_action": "The modal surprisal alone is identified with the complete action.",
+        "same_variation": "The modal derivative and Palatini row use the same original flat-shell J23 tangent.",
+        "no_compensation": "No other native source or price term contributes on that tangent."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md",
+          "sha256": "21d5e9a289abd32aa955d80ce4a7909d99b7335048795de83a0b255ca4340811"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full128_global_map_native_history.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_full128_global_map_native_history.py",
+          "sha256": "7cbe15c11182cfec2ba35546d9e35cabca3fd47073e2328b952c91056afcfb83"
+        }
+      ],
+      "reported_state": "Conditional mismatch; full physical action identity is unestablished."
+    },
+    {
+      "id": "full-history-binary-source-loss",
+      "owner": "registered full-history coherence research owner #334",
+      "statement": "In the checked original full-history fixture, fixing the coarse binary statistics leaves nonzero hidden classical and coherent source derivatives (-2.440420090455 and +1.173585686469). The binary aggregation therefore loses source information in this fixture; this is not a universal obstruction to other complete readouts.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "fixture": "Use the owner’s original flat-shell Golden full-history channel and declared source tangent.",
+        "coarse_record": "Only the binary aggregation is retained when comparing source statistics."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_PHYSICAL_FULL_HISTORY_COHERENCE_SOURCE_AND_BINARY_COMPRESSION_GATE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_FULL_HISTORY_COHERENCE_SOURCE_AND_BINARY_COMPRESSION_GATE_2026_10_19.md",
+          "sha256": "87e44b774107e714c3cc6f1cc0419bf9e78028f56117ed0a0d4b75da2244c0fd"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full_history_binary_information_loss.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_full_history_binary_information_loss.py",
+          "sha256": "d6a93b00a65eb7ed140f093341ee57e2e001481878c6cd1b7ac84aa7b27af0f0"
+        }
+      ],
+      "reported_state": "Fixture-specific information-loss result; no universal binary-readout no-go."
+    },
+    {
+      "id": "native-af-preparation-source-preserving-optimizer",
+      "owner": "registered Golden AF preparation research owner #334",
+      "statement": "For the declared second full AF-record price, its finite optimizer has positive READY factor 1.018750574778 and preserves the source-bearing geometry+CAR ratio on the owner’s field-fixed effect/class-support slice. It does not establish compulsory whole-program preparation selection or cancel preparation, clock and controller rows.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "price": "Use the owner’s actual second AF-record price, not a sum of first- and second-record prices.",
+        "field_support": "The effect and class support are field-fixed on the tested geometry+CAR directions.",
+        "source_support": "Only the declared source-bearing READY class contributes to the compared field source."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+          "sha256": "a9fa5d31145aba5e02156f872c2ceaa53f684a11e1742e433f4c8000a0dac8de"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+          "sha256": "172ec9090de93ec80fe4f41d570aa9738e24084f384e3c701f94cf5cadae0e96"
+        }
+      ],
+      "reported_state": "Conditional finite source-preserving preparation optimizer; not a physical selector."
+    },
+    {
+      "id": "naive-af-plus-binary-mean-no-preparation-root",
+      "owner": "registered Golden AF preparation research owner #334",
+      "statement": "On the declared unrestricted AF preparation simplex, the naive sum of the second AF-record price and binary pointer mean has preparation derivative -1.146432968593 along the tested whole-sector tangent and is linear rather than stationary. This excludes only that additive concatenation, not the actual complete D0 action.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "additive_composition": "Treat the second AF-record price and the binary pointer mean as additive terms of one action.",
+        "domain": "Use the owner’s unrestricted normalized AF preparation simplex and whole-sector tangent.",
+        "binary_mean": "The binary term is the declared complete pointer mean for the same common-base fixture."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+          "sha256": "a9fa5d31145aba5e02156f872c2ceaa53f684a11e1742e433f4c8000a0dac8de"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+          "sha256": "172ec9090de93ec80fe4f41d570aa9738e24084f384e3c701f94cf5cadae0e96"
+        }
+      ],
+      "reported_state": "Scoped incompatibility of one naive sum; actual D0 composition law remains open."
     }
   ],
   "applications": [
