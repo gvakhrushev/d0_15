@@ -165,3 +165,47 @@ Together with §§1–4 the correct typed synthesis is:
 - On any admitted *noncommuting Lorentz word* sector, unordered count cannot preserve the full ordered proper-Lorentz response even without parameter-dependent event probabilities. This conclusion uses only the already-owned nonzero commutator and the meaning of the retained response, not a new field, gauge, or tensor.
 
 Thus a universal physical history quotient adequate for D0→GR must retain **at least** the distinctions necessary for original time-dependent score and ordered Lorentz memory, or provide an independently forced exact compensating archive/source identity. Neither the original M1-forgetting definition nor the current Book03 action supplies that universal quotient automatically; a count-only readout must not be promoted from §1 to the whole D0 physics. This is the remaining physical **test algebra/Cost−Info selection gate**, not a new polynomial-Einstein calculation.
+
+
+## 7. NEW ACTUAL native full128 control: proper-Lorentz J23 source strictly exceeds blank/exit count information
+
+No speculative time-dependent schedule is needed for this result. Consume the exact **original all128 Kraus-output J23 first-source certificate** from #334: [\`COMPLETE_SHANNON_SOURCE.json\`](sources/d0_native_full128_order_readout_2026-10-19/COMPLETE_SHANNON_SOURCE.json), whose original SHA-pinned content blob is \`d5f816d6e77532d91950fa3f99598844a5349a6f\`. The carrier is original L=4, h=1/4, momentum (0,0,0,1), role2 proper-Lorentz \(J_{23}=[N_2,\bar N_3]\), and full I16/16 input; all 128 measured labels remain. Of these, 42 have positive base probability and 86 have zero base probability **and zero first source**. The latter are NOT discarded; source/Fisher claims apply to fixed positive-support first jets only, not to newly born second-order branches.
+
+There is ONE exact original blank-label/port0 outcome with
+\[
+Q_0=(5034167+28557\sqrt5)/5120000,\quad
+\dot Q_0=(42633-14157\sqrt5)/5120000.
+\]
+The original receipt also gives a distinguished group \(E\) of precisely SEVEN original nonblank outcomes with identical base probability \(q_E=(567-243\sqrt5)/5120000\) and aggregate first derivative \(\dot Q_E=(-1701+729\sqrt5)/5120000\). Take \(Q_E=7q_E\) and let \(R\) include **all remaining positive-probability original exits**, with \(Q_R=1-Q_0-Q_E\), \(\dot Q_R=-\dot Q_0-\dot Q_E\). The two groups are defined as fixed original label subsets at the base, not a new detector instrument or an oracle deciding geometry after seeing field values.
+
+The exact original first scores have the **different constants**
+\[
+\boxed{\dot Q_E/Q_E=-3/7,\qquad \dot Q_R/Q_R=-1/2.} \tag{8}
+\]
+Each is a genuine aggregate first-score of existing physical labels. Thus a THREE-category deterministic readout \(T=(\mathrm{blank0},E,R)\) contains strictly more **physical proper-Lorentz J23** Fisher information than the SINGLE original blank0/exit bit \(B=(\mathrm{blank0},E\cup R)\):
+\[
+\boxed{
+\mathcal I_{\rm 128}(J_{23})\ \ge\
+\mathcal I_{T}(J_{23})\
+=\frac{\dot Q_0^2}{Q_0}+\frac{\dot Q_E^2}{Q_E}+\frac{\dot Q_R^2}{Q_R}\
+>\ \mathcal I_B(J_{23})=
+\frac{\dot Q_0^2}{Q_0(1-Q_0)}. }\tag{9}
+\]
+The first inequality is exact Cauchy–Schwarz / information monotonicity for deterministic grouping. It is a LOWER bound on the actual full128 Fisher: the pinned source receipt gives aggregate first derivatives within equal-probability groups, not all individual scores, so do NOT claim exact \(\mathcal I_{\rm 128}\) without replaying all 128 individual \(dq_j\). In fact the grouped receipt is sufficient to calculate the displayed bound.
+
+Even the GAP is an exact positive \(\mathbb Q(\sqrt5)\) expression:
+\[
+\boxed{
+\mathcal I_T-\mathcal I_B
+=\frac{Q_EQ_R}{196(Q_E+Q_R)}
+=\frac{97562961}{25993423360000}
+-\frac{292105683\sqrt5}{181953963520000}
+=1.63626901123936\cdot10^{-7}>0. }\tag{10}
+\]
+Numerically \(\mathcal I_B=0.00107543472401812...\), \(\mathcal I_T=0.00107559835091924...\). This is small but CERTIFIABLY nonzero and **occurs on the already registered original \(J_{23}\) geometric field tangent, with no hypothesized alternating time profile**.
+
+Physical implication: a blanket rule "original full 128-record physics may be reduced to its blank0-versus-exit count without losing Lorentz field sources" is FALSE already at one native round. It does not contradict §§1–2: their score sufficiency is for a restricted **one-dimensional uniform scalar-shell energy** chart, whereas the actual signed Lorentz \(J_{23}\) perturbation changes the distribution inside the exit class. That distinction is exactly what a physical GR derivation needs.
+
+A port-only Golden reference still cannot fix the full native 128-label Cost−Info price; Fisher difference is not automatically a nonzero difference in Euler source of an action. Nevertheless the detector's actual **field score** imposes a positive, parameter-free **retained-test obligation** on the Book06 observation/forgetting map if it is to preserve original ordered Lorentz response. A three-way *observational witness* suffices to refute the unrestricted binary score claim, though it is not proven to be the minimum sufficient original GR observation algebra for all 16+24+CAR tangents.
+
+[Exact Q(√5) parent-receipt consumer](sources/d0_physical_binary_return_2026-10-19/check_native_full128_j23_fisher_coarsening.py) checks the original group counts and derivative sums, positivity and exact gap (10). It does NOT rerun the expensive original 16×16×128 generator or impose a new full Book action. \`GR_closed=false\`.
