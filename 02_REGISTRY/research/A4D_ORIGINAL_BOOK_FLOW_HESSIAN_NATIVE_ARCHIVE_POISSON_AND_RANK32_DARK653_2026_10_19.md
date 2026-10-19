@@ -165,3 +165,51 @@ The original present-only archive has rank 685; the future-populated \(\mathcal 
 A sharp two-outcome physical theorem gate now replaces more census: identify the original field→directed primitive Cost source map \(V\mapsto d_V\); either its image in the native Poisson archive is proved to live in \(\operatorname{ran}\mathcal R\) (then scalar history Schur is exactly the existing F_A on every admitted field tangent), or it has a nonzero component in the 653 dark archive (which is a necessary additional native physical source, unless an independently proved same-programme cancellation removes it). Both are finite operator checks. The full noncommutative Book memory-price gate remains separate and unavoidable.
 
 Standalone replay: [\`check_native_book_archive_poisson_exact_source.py\`](sources/d0_physical_binary_return_2026-10-19/check_native_book_archive_poisson_exact_source.py). It builds the original all718 P,π,J0,J1 from native canonical Cost=1, computes unique Poisson solutions, checks original α/χ identity and archive norms, and verifies the exactly signed antisymmetric cycle dark-channel witness. This is a 33+718 finite calculation, NOT a native 4D Einstein action computation.
+
+
+## 6. NEW stronger terminal: even reversal-SYMMETRIC original Cost sources are future-dark unless they come from vertex sums
+
+The directed cyclic counterexample §4 could in principle be excluded if the physical Cost law forced \(d_{uv}=d_{vu}\). This DOES **NOT** remove the problem. We now prove an exact necessary-and-sufficient visibility theorem on the actual connected reversible original scene.
+
+**Theorem.** At the existing equal-cost symmetric K(9,11,13) reference, for ANY original real symmetric primitive edge Cost variation \(d_{uv}=d_{vu}\), with Poisson innovation \(g\) of §2 and original rank32 future channel \(\mathcal R=Q_AJ_1\):
+\[
+\boxed{
+g\in\operatorname{ran}\mathcal R
+\quad\Longleftrightarrow\quad
+\exists\alpha:V\to\mathbb R,\ \forall(u,v)\in E,\ 
+d_{uv}=\alpha_u+\alpha_v.}\tag{9}
+\]
+The **if** direction is §3: take \(\chi=\alpha+\xi\), use the Poisson equation and obtain \(m_{uv}=\chi_v-(P\chi)_u\), i.e. \(g=\mathcal R(\sqrt\pi\chi)\).
+
+For **only if**, if \(g=\mathcal R h\), define \(\chi_v=h_v/\sqrt{\pi_v}\). Then \(m_{uv}=\chi_v-(P\chi)_u\), and the recovered original Cost derivative is
+\[
+d_{uv}=c+\xi_u-\xi_v+\chi_v-(P\chi)_u
+      =a_u+b_v,\quad
+a_u=c+\xi_u-(P\chi)_u,\quad b_v=\chi_v-\xi_v.
+\]
+Symmetry \(d_{uv}=d_{vu}\) on each actual original bidirectional edge gives \(a_u-b_u=a_v-b_v\). Connectivity of ORIGINAL K(9,11,13) forces a common constant \(k\), so \(d_{uv}=b_u+b_v+k=(b_u+k/2)+(b_v+k/2)\), precisely the asserted vertex sum. No continuum assumption, gauge, controller, extra field or nonoriginal graph is used.
+
+**Hostile original REVERSAL-SYMMETRIC local Cost pair:** increase \(s_{0,9}\) and \(s_{9,0}\) by t, with ALL other primitive directed-edge prices unchanged. This is a genuine *probe of the existing primitive Cost fiber*, preserves edge reversal symmetry, but is NOT proven to be an admitted fundamental coframe/Lorentz field direction. It violates vertex-sum representability on the original induced 2×2 rectangle: \(d_{0,9}+d_{1,10}-d_{0,10}-d_{1,9}=1\ne0\). Therefore a nonzero dark653 historical Schur term is **forced analytically**, without relying on a floating-point result.
+
+Full original all718 replay (using the exact existing S,J1, Perron pi,P and the UNIQUE Poisson solution) gives:
+\[
+\begin{aligned}
+c_{\{0,9\}}&=0.0029773962030634022\ldots,\\
+-\mathcal A_{\rm eff}''(0)
+&=0.0015498046181079107\ldots,\\
+\ln\varphi\,\|\operatorname{Proj}_{\mathrm{ran}\mathcal R}g\|^2
+&=0.0002498010821445919\ldots,\\
+\boxed{\ln\varphi\,\|\operatorname{Proj}_{\mathrm{dark653}}g\|^2
+&=0.0013000035359633177\ldots>0.}
+\end{aligned}\tag{10}
+\]
+Thus 83.8817694% of the relaxation curvature in this particular local symmetric source is outside the native 32 future-feedback operator. The projector is computed with the mathematically justified rank32 singular spectral gap (discarding the exact stationary zero singular value); an unrestricted floating-point pseudoinverse across this zero mode would be invalid.
+
+**Stronger finite physical two-outcome gate:** even a claim that **all reversal-even** original Book Cost sources can be integrated using ONLY current 33-visible→future rank32 \(F_A\) is FALSE. To obtain that reduction on an actual 4D/coframe/CAR tangent domain, independently prove the stronger **vertex-sum factorization**
+\[
+D_Vs_{uv}=\alpha_V(u)+\alpha_V(v)
+\quad\text{for every original physical field tangent }V,
+\]
+or else include and physically price the proven dark archive term. Imposing only \(D_Vs_{uv}=D_Vs_{vu}\) is not enough. The requisite physical 4D field→original edge-cost ownership and full Book03 noncommutative history/action selection are STILL OPEN; therefore this is not an Einstein or global D0 no-go. \`GR_closed=false\`.
+
+The finite companion script now includes this reversal-even hostile case, its original 2×2 rectangle violation, and the stable rank32/dark653 orthogonal Schur split.
