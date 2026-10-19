@@ -121,7 +121,7 @@ assert np.max(abs(dcirc+np.array([
 cc,xi2,m2,g2,curvature2=response(dcirc)
 assert abs(cc)<1e-12
 assert np.linalg.norm(J1.T@g2)<1e-11
-projection32=R@(np.linalg.pinv(R)@g2)
+projection32=R@(np.linalg.pinv(R,rcond=1e-10)@g2)
 assert np.linalg.norm(projection32)<2e-11
 assert abs(curvature2+0.4763744515526456)<4e-12
 assert curvature2<0
