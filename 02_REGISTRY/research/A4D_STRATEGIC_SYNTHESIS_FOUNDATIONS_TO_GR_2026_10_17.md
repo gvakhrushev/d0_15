@@ -4931,3 +4931,33 @@ existing star/CAR source; (iii) solve the same program's remaining preparation,
 clock/work and Lorentz-link equations; (iv) establish periodic recovery and
 the original raw \(h^{-2}\) terminal. Until those links are proved,
 `GR_closed=false`.
+
+### 7.64. Curved same-source control closes the regular first-slow route for the pinned #232 wave
+
+The new [designated-warp checker](certificates/a4d_y232_designated_warp_same_source_firstslow_check.py),
+integrated in the [#232 slow-lift owner](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md),
+uses an actually curved smooth comparator
+\(f(y)=1+\sin(2\pi y)/(100\pi)\). At \(y=0\), its exact jet is
+\(f=1, f'=1/50, f''=0\), with \(R=1/1250\). The pinned #216 first smooth
+link coefficient is imposed on roles 2 and 3, and the same finite #232
+period-four wave \(W=(U,I,U^{-1},I)\) is tested against it.
+
+All 96 connection equations and all 40 designated same-source metric
+equations are imposed together. The unknowns include all 96 first-order
+link corrections and both slow tangents of the exact flat center fiber.
+The exact \(136\times98\) system has rank 97, while its source-augmented
+matrix has rank 98; a left-null witness annihilates every correction and
+pairs with the source by \(4105021481/2353113600\ne0\). The checked
+conclusion is precise: this pinned wave has **no regular first-slow
+same-source lift on this curved profile**.
+
+This is a scoped local obstruction, not a no-go for GR, all #232 states, or
+exact finite-mesh roots. It closes the regular first-slow continuation of
+this candidate before higher orders; do not repeat it as if a new low-order
+coefficient could remove the witness. Nonregular scaling and order-one
+retuning are different branches and remain unproved. The positive local
+crossed-null quartic Palatini jet in §7.58 is a separate geometric result;
+neither it nor this #232 obstruction supplies the missing native
+Cost–Info/source identity from §7.63. The consuming route therefore stays
+focused on one admitted full-price carrier and its source equality, rather
+than extending the rejected regular #232 branch. `GR_closed=false`.
