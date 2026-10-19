@@ -217,3 +217,93 @@ This yields a finite, exact version of the user's central insight:
 }
 \]
 The irreversible arrow remains associated with the actual ordered record-writing operation, not the reversible stationary Perron bulk. It is not an Einstein equation until the physically selected source is pulled back to a genuine four-dimensional coframe/Lorentz/CAR evolution. GR_closed=false.
+
+
+## 7. The decisive full variational weld: eliminating 685 history frequencies = 685 archived Fisher scores
+
+The entire historical sector is not merely a similarity between two Hessian matrices: the 685-dimensional original ARCHIVE is the precise tangent dimension of **ALL admissible stationary edge-frequency histories** in the ORIGINAL 718-edge Markov record.
+
+Define the original finite stationary-flow polytope
+\[
+\mathfrak F=\{\nu_{uv}>0:\sum_{uv}\nu_{uv}=1,\quad
+\sum_v\nu_{uv}=\sum_v\nu_{vu}=:\nu_u\ \forall u\}.
+\]
+Its affine tangent has \(718-32-1=\boxed{685}\) dimensions because the original directed graph is connected and the balance constraints have rank32. Define the complete native rate-entropy/Cost price in original golden units:
+\[
+\mathscr B(C,\nu)
+=\sum_{uv}\nu_{uv}C_{uv}
++\sum_{uv}\nu_{uv}\log_\varphi{\nu_{uv}\over\nu_u}.
+\tag{15}
+\]
+For the original Book exponential edge transfer \(K_{uv}=\varphi^{-C_{uv}}\), let \(P^C_{uv}=K_{uv}r_v/(\rho r_u)\) be its TRUE Perron–Doob law. No Gibbs state or new cost is inserted. The exact finite conditional KL identity is
+\[
+\boxed{
+\mathscr B(C,\nu)+\log_\varphi\rho(K)
+=\sum_{uv}\nu_{uv}\log_\varphi
+\frac{\nu_{uv}/\nu_u}{P^C_{uv}}
+\ge0 .
+}\tag{16}
+\]
+All endpoint terms cancel because \(\nu\) satisfies original flow conservation. Equality holds exactly at the TRUE native stationary flow
+\(\nu=\mu^C=\pi^C P^C\). Consequently
+\[
+\boxed{
+\min_{\nu\in\mathfrak F}\mathscr B(C,\nu)
+=-\log_\varphi\rho(K)
+=\mathcal A_{\rm Book}(C).
+}\tag{17}
+\]
+The optimization eliminates EXACTLY 685 permitted history-frequency variables; these are mathematically the same number of degrees as \(\ker J_0^\dagger\), but we do NOT infer equality from dimension counting alone.
+
+Instead differentiate the ORIGINAL eigenvector equation and Perron–Doob normalization. With the Poisson \(\xi\) of (1), at ANY positive owner law (reversibility is unnecessary for the first identity),
+\[
+\boxed{
+D_d\log P^C_{uv}=-\ln\varphi
+(d_{uv}-c-\xi_u+\xi_v)
+=-\ln\varphi\,m_{uv}.}\tag{18}
+\]
+Thus the EXACT conditional classical Fisher quadratic form of the SAME original native stationary history is
+\[
+\boxed{
+\mathcal I_{\rm native}(d,e)
+=\sum_{uv}\pi_uP_{uv}
+(D_d\log P_{uv})(D_e\log P_{uv})
+=(\ln\varphi)^2\langle\mathsf M(d),\mathsf M(e)\rangle.
+}\tag{19}
+\]
+Combining (3), (17) and (19) yields the previously missing DOUBLE-SCHUR / DETECTOR identity
+\[
+\boxed{
+-D^2\mathcal A_{\rm Book}[d,e]
+={\mathcal I_{\rm native}(d,e)\over\ln\varphi}
+=\ln\varphi\,\langle\mathsf M(d),\mathsf M(e)\rangle.
+}\tag{20}
+\]
+This is exactly source/curvature of one complete original scalar Book/Doob history written as (i) variational reduction over ALL 685 genuine stationary frequencies, (ii) a COMPLETE conditional detector Fisher metric, and (iii) the squared norm of the current-invisible original archive.
+
+For the actual **K9↔K11** cost direction, the independently executed native 718-edge checker gives
+\[
+\boxed{
+\operatorname{Var}_{\rm archive}(m)=0.2695869442534487,\quad
+\mathcal I_{\rm native}=0.06242685237600396,\quad
+\mathcal A_{\rm Book}''=-0.1297284254564436.
+}
+\]
+On the vertex-additive original three-orbit cost subset, (20) further equals the ORIGINAL rank32 \(F_A=I-T^2\) quadratic form from (6). On all other edge-price variations the orthogonal 653-dimensional genuine history term in (9) must be retained.
+
+**Not freezing preparation:** for \(\dot P_{uv}=-\ln\varphi P_{uv}m_{uv}\), the TRUE induced stationary preparation source obeys
+\[
+\dot\pi(I-P)=\pi\dot P,\quad\dot\pi\mathbf1=0,\qquad
+\dot\mu_{uv}=\dot\pi_uP_{uv}+\pi_u\dot P_{uv}.
+\tag{21}
+\]
+The map \(m\mapsto(\dot P,\dot\pi,\dot\mu)\) is an ACTUAL linear isomorphism from the full row-centered archive space (dimension685) onto the original stationary-frequency tangent of \(\mathfrak F\). Its inverse starts from any genuine \(\dot\mu\) by \(\dot\pi_u=\sum_v\dot\mu_{uv}\) and
+\(m_{uv}=-(\dot\mu_{uv}-P_{uv}\dot\pi_u)/(\ln\varphi\,\pi_uP_{uv})\). The 685=685 equivalence is therefore **constructive**, not an analogy. Its \(\dot\pi\) and special prep/clock are not silently replaced by a uniform prior.
+
+**Measurement firewall:** \(\mathcal I_{\rm native}\) is the **conditional given-present-state transition Fisher** for the original 33-state Perron–Doob history. The Fisher of the complete JOINT stationary edge record \(\mu=\pi P\) also includes the real moving prior \(\pi\); cross terms vanish by conditional score normalization, so
+\[
+\mathcal I_{\rm joint\ edge}=\mathcal I_\pi+\mathcal I_{\rm native}.
+\]
+Do not call the conditional Fisher the full128 Golden detector Fisher, nor omit the genuine preparation source of another admitted history. This theorem is about the exact native 718-edge scalar Book carrier.
+
+**GR implication sharpened:** This finishes the **complete finite scalar Cost−Info minimization, original archive and its detector response, all first/second source directions and moving stationary-history preparation** on the specified native scene. It remains NEGATIVE semidefinite and therefore cannot magically become the already-owned signed Lorentz–Palatini kinetic Hessian (12+,12−). The specific remaining physical bridge is now the ORIGINAL field-to-price 2-jet (12) plus independently paid ordered/complex 327-cycle/Julia/CAR action, on ONE compulsory scene/4D common execution. No free normalization, added Einstein action or fitted source is allowed. GR_closed=false.
