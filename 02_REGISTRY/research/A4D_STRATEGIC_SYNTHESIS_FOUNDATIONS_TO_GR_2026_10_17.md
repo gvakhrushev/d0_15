@@ -5268,3 +5268,28 @@ So the mathematical Book03 log-determinant can be evaluated directly on the orig
 The latest [period-four resonance and slow-lift owner](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md) closes a finite census for the original connection Hessian at flat solder and the pinned #232 Y wave on the complete periodic $4^4$ carrier. Its 64 Bloch sectors have one zero-momentum block of exact rational rank 94, with kernel exactly the two owned stationary-center tangents; each of the other 63 blocks has exact rank 96, certified by the full-rank reduction over $\mathbb F_{1009}$. There is no additional exact nonzero-Bloch connection zero mode on this cell.
 
 The same owner also tests the pinned #232 wave against a curved #216 comparator and finds no regular first-slow same-source lift: the joint $136\times98$ matrix has rank 97 and its source augmentation rank 98, with left-null pairing $4105021481/2353113600\ne0$. This rules out extending that specific regular branch by adding more low-order coefficients. It does not rule out an order-one retuning, nonregular scaling, or exact finite-mesh roots. The bounded $4^4$ census supplies no growing-volume lower bound, no control of near-zero Bloch momenta, and no nonlinear continuation. The next geometric proof is therefore a refinement-uniform resolvent/center-cokernel estimate or a genuinely different exact branch; the already constructed crossed-null quartic Cartan jet remains a separate route. Neither result supplies the missing native action or source selection. `GR_closed=false`.
+
+
+### 7.76. Flat original all40 Schur has generic rank6 AND exact 4D lattice gradient Ward
+
+The new [actual full40 flat Schur rank-six owner](A4D_FULL40_EXACT_FLAT_SCHUR_RANK_SIX_GAUGE_AND_CHARACTERISTIC_2026_10_19.md) is the decisive direct consumer of the terminating polynomial inverse in §7.65. It does NOT introduce a continuum Fierz–Pauli price: it differentiates the SAME original six-based Lorentz-star action in all16 coframe and24 proper-Lorentz independent directions, including both adjacent based faces of every varied link. The flat joint Hessian is
+\[
+\mathcal H=\begin{pmatrix}0&C\\B&L\end{pmatrix},\qquad
+S(z)=-C(z)L(z)^{-1}B(z).
+\]
+The first solder–solder block vanishes at the flat zero-curvature background by the original coframe-quadratic density. The original homogeneous 24 matrix has det256, therefore \(L\) is invertible as a rational Laurent matrix GENERICALLY (not on every Fourier mode). The true variational adjoint is \(S(z)^T=S(z^{-1})\), explicitly tested on both the real stencil and exact F1009 finite matrix.
+
+There are exactly **TEN independent generic Schur right-null directions**: SIX from the ORIGINAL local proper Lorentz gauge and FOUR from the strict BACKWARD lattice gradient
+\[
+\delta_\xi e^a{}_\mu=(I-T_\mu^{-1})\xi^a,\qquad
+B(z)(\xi\otimes(1-z^{-1}))=S(z)(\xi\otimes(1-z^{-1}))=0.
+\]
+The latter is exact by commutativity of based lattice shifts/antisymmetric face incidence, not a continuum log-gradient approximation. Thus generic rank S≤6. [Independent true finite-field source checker](sources/d0_two_null_crossing_2026-10-19/check_full40_schur_rank_modular.cjs) constructs the entire original action's L,B,C and proves over F1009 that L rank24, ten null vectors independent and S rank6 at z=(2,3,5,7). This nonzero modular minor proves the rational Laurent rank is≥6 over characteristic0. Therefore
+\[
+\boxed{\operatorname{rank}_{\mathbb Q(z_u,z_v,z_x,z_y)} S=6}
+\]
+EXACTLY. No floating-rank assumption. Two genuine characteristic example points z=(2,2,2,2) and (2,1,1,1) have finite-field rank4, whereas generic off-characteristic z retain rank6. The **full characteristic variety and uniform small-divisor control are not classified** by these examples.
+
+The forward discrete gradient is NOT a right null in general; the left source obeys the adjoint FOUR FORWARD discrete-divergence constraints. This gives a precise FIRST OBSTRUCTION to the next all-order step: once the 24 Cartan coefficients are eliminated by the polynomial inverse, every nonlinear coframe source \(J_n\) of the ORIGINAL star action must lie in the rank-six Schur image. In particular its four genuine \(\sum_\mu D_\mu^+ J_n^{a\mu}=0\) source constraints must hold (plus Lorentz projection), otherwise a new coefficient \(e_n\) cannot remove it. The previous quartic exact solution already passes its full40 check; the first *uncomputed* source is degree FIVE. Test this fifth-order source Ward BEFORE another 40×polynomial undirected rank search. A finite exact failure changes only this analytic/polynomial continuation route, not original D0 or continuum Einstein generally.
+
+**Interpretation:** original flat 40-direction Palatini Hessian has 24 independent link normals, reduced metric Schur rank6, 10 free gauge tangents (6 internal Lorentz+4 discrete gradient). The characteristic rank4 represents an extra null response in selected wave directions; this is NOT the count of propagating physical degrees without boundary and actual time evolution. The proof concerns original star geometry, not the compulsory native Cost−Info action. Same-run original Golden/718-edge/LEFT-RIGHT/ref128/CAR16/clock/preparation and raw #216 remain OPEN; GR_closed=false.
