@@ -475,6 +475,28 @@ def stacked_pr_chain(prs: list[dict]) -> list[dict] | None:
     return sorted(relations, key=lambda item: (item["parent"], item["child"]))
 
 
+def stacked_descendants(root: dict, prs: list[dict]) -> list[dict]:
+    """Find open same-repository PRs based transitively on a registered owner.
+
+    A child can be a useful source without repeating the parent's Task metadata.
+    Keep that relation visible to route selection instead of silently ignoring
+    it or misclassifying the child as an independently registered owner.
+    """
+    selected = {root["number"]: root}
+    changed = True
+    while changed:
+        changed = False
+        parent_heads = {_repo_branch(pr, "head") for pr in selected.values()}
+        parent_heads.discard(None)
+        for pr in prs:
+            if pr.get("number") in selected:
+                continue
+            if _repo_branch(pr, "base") in parent_heads:
+                selected[pr["number"]] = pr
+                changed = True
+    return [pr for number, pr in selected.items() if number != root["number"]]
+
+
 def work_digest(model: dict, binding: dict) -> str:
     interfaces = model["contract"]["interfaces"]
     return digest({"work_key": binding["work_key"], "statement": binding["statement"],
@@ -650,6 +672,88 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
             continue  # Retired semantic bindings remain provenance, not new work.
         if live:
             p = live[0]
+            related = stacked_descendants(p, prs or [])
+            if related:
+                stack = stacked_pr_chain([p, *related])
+                related_prs = []
+                for child in sorted(related, key=lambda item: item["number"]):
+                    lifecycle = metadata(child.get("body") or "", "Lifecycle")
+                    related_prs.append({
+                        "number": child["number"],
+                        "title": child.get("title", ""),
+                        "url": child.get("html_url", ""),
+                        "state": "draft" if child.get("draft") else "ready",
+                        "lifecycle": lifecycle[0] if len(lifecycle) == 1 else "lifecycle-unresolved",
+                        "task": task_for_pr(child),
+                        "head_branch": (child.get("head") or {}).get("ref"),
+                        "head_sha": (child.get("head") or {}).get("sha"),
+                        "base_branch": (child.get("base") or {}).get("ref"),
+                        "base_sha": (child.get("base") or {}).get("sha"),
+                    })
+                affected = set().union(*(downstream(model, n) for n in binding["obligations"]))
+                if stack is None and len(related) > 1:
+                    actions.append({
+                        "task": tid,
+                        "action": "reconcile-source-fork",
+                        "reasons": [
+                            "multiple open same-repository PRs descend from the registered owner through separate "
+                            "source branches. Compare their exact scientific questions and child-only deltas; do not "
+                            "treat branch dependence alone as duplicate ownership or accept a child result"
+                        ],
+                        "consumer": binding["consumer"],
+                        "assumes": binding["assumes"],
+                        "reuse_results": binding.get("reuse_results", []),
+                        "live_executions": live_executions,
+                        "related_prs": related_prs,
+                        "potential_downstream": len(affected),
+                        "newly_ready_if_proved": 0,
+                    })
+                    continue
+                if stack is None:
+                    actions.append({
+                        "task": tid,
+                        "action": "resolve-overlap",
+                        "reasons": [
+                            "open PR descendants of the registered owner do not form one unambiguous linear source chain; "
+                            "reconcile the related branches before using any child result"
+                        ],
+                        "consumer": binding["consumer"],
+                        "assumes": binding["assumes"],
+                        "reuse_results": binding.get("reuse_results", []),
+                        "live_executions": live_executions,
+                        "related_prs": related_prs,
+                        "potential_downstream": len(affected),
+                        "newly_ready_if_proved": 0,
+                    })
+                    continue
+                details = []
+                for relation in stack:
+                    sha_state = ("child base SHA matches the current parent head" if relation["base_matches_parent_head"]
+                                 else "child base SHA differs from the current parent head")
+                    details.append(
+                        f"#{relation['child']} is based on #{relation['parent']}'s branch "
+                        f"({sha_state}; child base {relation['child_base_sha']}, "
+                        f"parent head {relation['parent_head_sha']}, child head {relation['child_head_sha']})"
+                    )
+                actions.append({
+                    "task": tid,
+                    "action": "reconcile-stacked-source",
+                    "reasons": [
+                        "open PR descendants are surfaced by their exact same-repository branch relation even when "
+                        "they omit or differ in Task metadata: " + "; ".join(details)
+                        + ". Compare each child-only delta with its parent and pin the consumed child head; "
+                        "the relation does not accept the result or authorize another execution"
+                    ],
+                    "consumer": binding["consumer"],
+                    "assumes": binding["assumes"],
+                    "reuse_results": binding.get("reuse_results", []),
+                    "live_executions": live_executions,
+                    "related_prs": related_prs,
+                    "stacked_relations": stack,
+                    "potential_downstream": len(affected),
+                    "newly_ready_if_proved": 0,
+                })
+                continue
             lifecycle = metadata(p.get("body") or "", "Lifecycle")
             action = "resume" if p["draft"] and lifecycle == ["IN_PROGRESS"] else "resolve-blocker" if p["draft"] and lifecycle == ["BLOCKED"] else "review" if not p["draft"] and lifecycle == ["REVIEW"] else "reconcile-lifecycle"
             reasons = [f"existing #{p['number']}"]
@@ -678,7 +782,8 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                         "reuse_results": binding.get("reuse_results", []),
                         "live_executions": live_executions,
                         "potential_downstream": len(affected), "newly_ready_if_proved": len(newly_ready)})
-    priority = {"resolve-overlap": 0, "reconcile-stacked-source": 0, "review": 1, "resolve-blocker": 2,
+    priority = {"resolve-overlap": 0, "reconcile-stacked-source": 0, "reconcile-source-fork": 0,
+                "review": 1, "resolve-blocker": 2,
                 "resume": 3, "eligible-for-control": 4}
     return sorted(actions, key=lambda a: (priority.get(a["action"], 4), -a["newly_ready_if_proved"], a["task"]))
 
@@ -717,6 +822,8 @@ def ready_obligations(model: dict, actions: list[dict]) -> list[dict]:
             next_step = "independent-scoped-review"
         elif "reconcile-stacked-source" in task_actions:
             next_step = "reconcile-stacked-source-through-control"
+        elif "reconcile-source-fork" in task_actions:
+            next_step = "reconcile-source-fork-through-control"
         elif "resolve-overlap" in task_actions:
             next_step = "resolve-overlap-through-control"
         elif "review" in task_actions:

@@ -1106,6 +1106,44 @@
         }
       ],
       "reported_state": "Pinned to #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63 and independently replayed in the current task with the bundled Node runtime. The checker reports PASS_SIX_ORIGINAL_ROOTED_TRIANGLES_PRESERVE_ALL_40_ROLE_EULER and GR_closed=false. This is a sufficient mathematical geometry interface; physical G0 actuation and action selection remain open."
+    },
+    {
+      "id": "original-book-triangle-odds-960-affine-pressure-no-go",
+      "owner": "research owner #380; exact controls replayed in current task",
+      "statement": "For the original K(9,11,13) scene, opposite rooted triangle Book-weight odds cancel all 33 vertex Info terms and isolate oriented directed-edge Cost differences; a triangle signal comes from additive directed-edge prices exactly when its 960 mixed triple contrasts vanish. Further, an affine 24-coordinate Lorentz-to-edge-price map followed by positive scalar Perron pressure has positive-semidefinite Hessian and cannot equal the original Palatini Hessian of inertia (12,12). The no-go is limited to this affine pressure-only action.",
+      "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "original_scene": "The finite carrier is the original K(9,11,13) scene, with all 718 directed edges and 1287 original A-B-C triangles.",
+        "additive_book_price": "History weights are the original phi powers of directed-edge Cost minus theta-split endpoint Info; opposite complete rooted triangles share their endpoints.",
+        "pressure_only": "The candidate entire action is positive scalar Perron pressure of the 718-edge transfer matrix, with no additional H+J+R, memory, measurement or preparation/work/clock source.",
+        "affine_map": "The 24 independent original homogeneous Lorentz coordinates map affinely into the directed edge prices.",
+        "target_hessian": "The compared original Palatini Hessian is the owned 24-direction matrix with inertia (12 positive, 12 negative).",
+        "physical_boundary": "No actual native field-to-edge-price or Born/Book binding is supplied; this result is not a physical D0 or GR no-go."
+      },
+      "evidence": [
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/research/A4D_BOOK_TRIANGLE_ODDS_960_COST_COMPATIBILITY_AND_CARTAN_HESSIAN_BOUNDARY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/owner.md",
+          "sha256": "e3543a4b4b1d1b8f1006d060d326a4c20e17f88588bf73af098da591a74c5afa"
+        },
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_d0_triangle_cost_interface.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/check_d0_triangle_cost_interface.py",
+          "sha256": "afff085aba287c671dec2ddb58b00fa2260dd069f552c292fa077e6542ae3293"
+        },
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/original_palatinistar_hessian_owner.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        }
+      ],
+      "reported_state": "Pinned to open Draft #380 head 3ffff0fb76aa86132139c647c883baf240afe3a1, based on #334 commit 03bd6fed84830e72e55341cc38215c880d287357 while current #334 head is 0e1849bd7bf6a87e9731801206fd5ccd1041bb63. Both scoped checkers replayed successfully in the current task. GitHub guards for #380 currently fail only because its PR body lacks exactly one Repository metadata line. Indexed result-only; no native-programme application or scientific promotion."
     }
   ],
   "applications": [
@@ -1173,6 +1211,26 @@
       },
       "review": {
         "state": "proposed"
+      }
+    },
+    {
+      "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+      "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+      "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+      "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+      "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+      "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+      "review": {
+        "state": "proposed"
+      },
+      "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+      "question": {
+        "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+        "assumes": [
+          "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+          "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+          "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+        ]
       }
     }
   ],

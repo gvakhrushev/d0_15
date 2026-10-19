@@ -37,6 +37,14 @@ multiple-owner patterns remain `resolve-overlap` and require reconciliation to
 one owner before dispatch. Both actions are ranked ahead of ordinary resume,
 and neither authorizes another execution.
 
+`next` also checks each registered live owner's exact same-repository branch
+descendants, even when a child PR omits or uses different `Task` metadata. It
+reports one linear chain as `reconcile-stacked-source`; separate child branches
+are reported as `reconcile-source-fork` so CONTROL can compare their exact
+questions and child-only deltas without calling them duplicates by default.
+Related PRs appear under `related_prs`. Branch relations do not register a child
+as an owner, accept its result, or authorize another execution.
+
 `next` also lists `ready_obligations`: open obligations whose declared logical
 inputs are already accepted, the downstream obligations that would become
 ready if each were proved, and the current registered task/PR action. An

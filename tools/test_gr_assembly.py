@@ -487,6 +487,49 @@ class AssemblyTests(unittest.TestCase):
         row = next(item for item in gr.next_actions(self.model(), [parent, foreign_base, sibling]) if item["task"] == TASK)
         self.assertEqual(row["action"], "resolve-overlap")
 
+    def test_unregistered_child_pr_is_surfaced_by_exact_branch_relation(self):
+        parent = self.pr(branch="exp/gr-parent", head_sha="c" * 40)
+        child = self.pr(number=13, task="", branch="research/gr-child", base_branch="exp/gr-parent",
+                        base_sha="b" * 40, head_sha="d" * 40)
+        child["body"] = "Repository: `gvakhrushev/d0_15`\nA research-only source without Task metadata.\n"
+        actions = gr.next_actions(self.model(), [parent, child])
+        row = next(item for item in actions if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-stacked-source")
+        self.assertEqual([item["number"] for item in row["live_executions"]], [12])
+        self.assertEqual(row["related_prs"][0]["task"], None)
+        self.assertEqual(row["related_prs"][0]["head_sha"], "d" * 40)
+        self.assertEqual(row["stacked_relations"][0]["child_base_sha"], "b" * 40)
+        self.assertFalse(row["stacked_relations"][0]["base_matches_parent_head"])
+        self.assertIn("omit or differ in Task metadata", " ".join(row["reasons"]))
+        ready = next(item for item in gr.ready_obligations(self.model(), actions) if item["obligation"] == "A")
+        self.assertEqual(ready["next_step"], "reconcile-stacked-source-through-control")
+
+    def test_unregistered_child_on_foreign_repository_is_not_attributed_to_owner(self):
+        parent = self.pr(branch="exp/gr-parent")
+        child = self.pr(number=13, branch="research/gr-child", base_branch="exp/gr-parent",
+                        base_repo="someone-else/d0_15")
+        child["body"] = "Research-only source without Task metadata.\n"
+        row = next(item for item in gr.next_actions(self.model(), [parent, child]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "resume")
+        self.assertNotIn("related_prs", row)
+
+    def test_distinct_unregistered_children_are_a_source_fork_not_duplicate_owners(self):
+        parent = self.pr(branch="exp/gr-parent", head_sha="c" * 40)
+        child_a = self.pr(number=13, branch="research/gr-source-a", base_branch="exp/gr-parent",
+                          base_sha="b" * 40, head_sha="d" * 40)
+        child_b = self.pr(number=14, branch="research/gr-source-b", base_branch="exp/gr-parent",
+                          base_sha="b" * 40, head_sha="e" * 40)
+        child_a["body"] = "A separately scoped source.\n"
+        child_b["body"] = "A different separately scoped source.\n"
+        actions = gr.next_actions(self.model(), [parent, child_a, child_b])
+        row = next(item for item in actions if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+        self.assertEqual([item["number"] for item in row["related_prs"]], [13, 14])
+        self.assertEqual([item["number"] for item in row["live_executions"]], [12])
+        self.assertIn("do not treat branch dependence alone as duplicate ownership", " ".join(row["reasons"]))
+        ready = next(item for item in gr.ready_obligations(self.model(), actions) if item["obligation"] == "A")
+        self.assertEqual(ready["next_step"], "reconcile-source-fork-through-control")
+
     def test_unowned_ready_obligation_requires_control_registration(self):
         self.contract["task_bindings"].pop(TASK)
         self.queue["tasks"] = [task for task in self.queue["tasks"] if task["id"] != TASK]
