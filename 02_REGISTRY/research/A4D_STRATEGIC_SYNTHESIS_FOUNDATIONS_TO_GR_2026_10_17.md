@@ -5234,6 +5234,8 @@ replayed by
 [`check_full40_symbolic_ward_identities.cjs`](sources/d0_two_null_crossing_2026-10-19/check_full40_symbolic_ward_identities.cjs)
 and
 [`check_full40_schur_rank_modular.cjs`](sources/d0_two_null_crossing_2026-10-19/check_full40_schur_rank_modular.cjs).
+The complete action-to-Schur proof and source boundary are consolidated in
+[the exact full40 Schur theorem](A4D_FULL40_EXACT_FLAT_SCHUR_RANK_SIX_GAUGE_AND_CHARACTERISTIC_2026_10_19.md).
 
 This closes the generic *linearized geometric rank* question for this
 operator; it does not identify the six-dimensional quotient with two
@@ -5243,6 +5245,46 @@ equal-coordinate \(\mathbb F_{1009}\) sample is only a modular exceptional
 point, not yet a characteristic equation over \(\mathbb Q\). The original
 native price/action selection, independent matter source, and full physical
 Ward remain separate. `GR_closed=false`.
+
+### 7.69.3. The original Golden return carries a conditional null-CAR source on a curved family
+
+The same original two-tick AF/scene return, with its mandatory k-Golden
+prefix, has now been evaluated on the full nonflat Brinkmann family with an
+independent two-component null CAR field. At every point of that family the
+scalar inputs satisfy \(f_i=q_i=0\), while their ambient variations \(Df_i\)
+and \(Dq_i\) need not vanish. Because all old-address leaves have the same
+GOOD probability there, derivatives of a moving normalized preparation
+cancel exactly. The measured binary-odds source is therefore
+
+\[
+DR_{\rm bin}[V]=
+\frac{2}{(1-g_*)\ln\varphi}
+\sum_{i\in\mathcal I}\mu_i
+\left(\alpha_{f,k}Df_i[V]+\alpha_{q,k}Dq_i[V]\right),
+\]
+
+with both coefficients obtained by differentiating the same original return
+determinant. For the original \(k=10\) example, the checker gives
+\(g_*=0.7594607702778701\) and
+\(\alpha_{q,k}/\alpha_{f,k}=-23.41633069607479\), without a fitted matter
+coupling. Applying the existing unrestricted 40-row Brinkmann theorem then
+gives the finite-mesh sourced equation
+\(\Delta_h^\perp H(u+h,x,y)=-4\Lambda_{-,k}|D_u^+\Psi(u)|^2\) for that
+detector source, while retaining the original link, coframe, and CAR rows.
+The moving-prior identity, Lorentz Hessian, and three k-controls were replayed
+locally; see the [binary-source transfer](A4D_BACKWARD_GR_BINARY_OFFNULL_SOURCE_TRANSFER_AND_LORENTZ_HESSIAN_2026_10_19.md)
+and its [checkers](sources/d0_binary_source_transfer_2026-10-19/).
+
+This is the first same-instrument curved-family calculation in this route
+where an independent CAR field contributes through its own ambient source
+jet, rather than being inserted as an external \(T_{\mu\nu}\). It closes the
+off-null transfer error on this family because \(f_i=q_i=0\) identically
+there, not because the source is proven universal. The binary odds are still
+not shown to be the compulsory complete Book \(H+J+R\) price: fine-record
+coherence, preparation, clock, controller, work, and normalization sources
+may add terms. This supplies a conditional matter-source bridge, not the
+native source/Ward selection or a general Einstein equation.
+`GR_closed=false`.
 
 ### 7.70. The complete 718-edge feedback source obeys a discrete Kirchhoff Ward identity
 
