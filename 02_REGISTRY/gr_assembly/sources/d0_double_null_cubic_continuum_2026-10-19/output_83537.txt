@@ -1,0 +1,14 @@
+PASS full Ricci cubic cancellation / native five-point Poisson (1, 0) (0, 1)
+PASS full Ricci cubic cancellation / native five-point Poisson (0, 1) (1, 0)
+PASS full Ricci cubic cancellation / native five-point Poisson (1, 1) (1, -1)
+PASS full Ricci cubic cancellation / native five-point Poisson (1, 2) (-2, 1)
+PASS symbolic arbitrary orthogonal gradients A=(r,q), B=scale*(-q,r)
+SCOPE: continuum Einstein degree<=3 + finite scalar Poisson only;
+finite third-order 24 Cartan/16 solder and full native Cost-Info are OPEN.
+PASS fourth-order area trace obstruction and sigma source (1, 0) (0, 1)
+PASS fourth-order area trace obstruction and sigma source (0, 1) (1, 0)
+PASS fourth-order area trace obstruction and sigma source (1, 1) (1, -1)
+PASS fourth-order area trace obstruction and sigma source (1, 2) (-2, 1)
+PASS symbolic arbitrary orthogonal fourth-order area and coframe-scale cancellation
+PASS general harmonic freedoms cannot remove the quartic area bi-Laplacian
+SCOPE: forced fourth-order AREA trace only, not the full fourth-order Einstein system.
