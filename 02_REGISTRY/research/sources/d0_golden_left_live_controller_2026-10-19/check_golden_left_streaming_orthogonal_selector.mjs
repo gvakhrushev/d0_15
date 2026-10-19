@@ -35,7 +35,7 @@ let fib=[1,1];
 for(let k=2;k<=25;k++)fib[k]=fib[k-1]+fib[k-2];
 for(let n=1;n<=20;n++){
  const words=allWords(n);
- check(words.length===fib[n+1],"Fibonacci-native count cost "+n);
+ check(words.length===fib[n],"Fibonacci-native count cost "+n);
  check(new Set(words).size===words.length,"full Golden F/R old LEFT word labels distinct");
  check(words.every(w=>[...w].reduce((s,c)=>s+costs[c],0)===n),"original weighted F/R Cost fixed");
  // Every n-cost word has exactly the SAME original primitive probability p^n.
