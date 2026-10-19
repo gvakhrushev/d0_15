@@ -3407,3 +3407,27 @@ D\!\left[\frac{J_{\rm AF\otimes scene}}{2N_n t^2}\right][V]
 This is exact finite-mesh transfer of the all-40 local vacuum stationarity to the stated AF feedback with all scene modes retained. Along the owner's refining family \(L_m=m\), the positive weight correction ρ tends to 1 with every fixed derivative order, while \((a,b)\ne(0,0)\) gives a fixed nonflat Ricci-flat pp-wave on the interior. The recovery is local with a fixed collar: it does not assert unrestricted free stationarity on the closed periodic torus, nor does it independently recompute the geometric owner's checker.
 
 **Consumed premise and remaining boundary.** The local vacuum nonemptiness and full independent coframe/link variation premise is now closed for this constructed AF experiment; the old 25m-direction limitation no longer applies to this family. The feedback \(J_{\rm AF\otimes scene}\) is still only a component of the complete physical D0 action. Physical selection/admission of the AF program and preparation, the complete Cost–Info source, independent matter/observer equations and Ward identity, global boundary closure, and the fixed-​g/raw-source #216 terminal remain open. This result is not positive closure of D0\(\Rightarrow\)GR.
+
+
+### 7.42. A linear spin-2 match forces GR only after the native second jet is fixed
+
+The proposed pivot from direct metric differentiation to a massless spin-2 bootstrap is mathematically useful, but the linear operator alone cannot select its nonlinear completion. Grant the strongest current reading of the finite TT/Schur results: around a flat reference \(g=\eta+\epsilon h\), the native free source agrees with the linearized Einstein operator. Write the complete selected physical source as
+
+\[
+E_{\rm D0}(\eta+\epsilon h)=\epsilon E^{(1)}_{\rm D0}[h]
+ +\epsilon^2E^{(2)}_{\rm D0}[h,h]+O(\epsilon^3).
+\]
+
+The Einstein target has the corresponding expansion \(G=\epsilon G^{(1)}[h]+\epsilon^2G^{(2)}[h,h]+O(\epsilon^3)\). Equality of the free operators, \(E^{(1)}_{\rm D0}=cG^{(1)}\), does **not** imply \(E^{(2)}_{\rm D0}=cG^{(2)}\). For an exact counterexample, add \(\alpha\int\sqrt{|g|}R^3\) to Einstein–Hilbert: around flat space this term starts at cubic order in the action, so it leaves the free graviton operator unchanged while changing the quadratic nonlinear field source. It is local and diffeomorphism invariant; a linear match cannot rule it out unless D0 also proves the required derivative/readout cutoff.
+
+The established spin-2 bootstrap literature makes the missing hypothesis explicit: consistent nonlinear self-coupling is generated from the conserved current of the *same* free gauge theory, under locality and consistency conditions; multi-spin-2 uniqueness additionally assumes a Pauli–Fierz free limit and at most two derivatives ([Deser](https://arxiv.org/abs/gr-qc/0411023), [Boulanger–Damour–Gualtieri–Henneaux](https://arxiv.org/abs/hep-th/0009109)). Likewise, the four-dimensional [Lovelock classification](https://doi.org/10.1063/1.1665613) yields the Einstein tensor plus a cosmological term only after one has a local metric-only, second-order, symmetric, divergence-free natural source. These are conditional uniqueness results, not selectors for which D0 experiment supplies \(E_{\rm D0}\).
+
+The D0 discriminator is therefore the **same-history second-jet/Noether test**, not another free-wave calculation:
+
+1. Identify one compulsory complete D0 programme and its actual \(S_{\rm D0}\), including the record, preparation, reference/old tape, observer, links, and all native Cost–Info terms. Its source must be a derivative of that programme, not a chosen spectral surrogate.
+2. On one regular flat reference, compute the joint first and second source jets in all metric, link, matter, and observer directions. Test \(E^{(1)}_{\rm D0}=cG^{(1)}\) and then \(E^{(2)}_{\rm D0}=cG^{(2)}\), modulo only already-owned gauge identities and boundary terms. The latter is equivalently the cubic-vertex test, with the nonlinear Ward identity checked on that same carrier.
+3. Prove the D0 locality/derivative bound (or quantify the surviving higher-curvature terms), the full Ward identity, and nonempty physical recovery. Only then does the bootstrap constrain the higher vertices; the normalization \(c\), cosmological term, and matter source still have to come from D0's own programme.
+
+Current evidence sharpens both sides of this test. The original golden AF inverse-PF/moving-volume \(J_2\) has exact finite all-\(16+24+2\) sourced roots and its smooth limit yields the Einstein–scalar equations, while the all-40 AF feedback has a nonempty local Ricci-flat family. Both remain constructed AF experiments, not a proof that the complete D0 price must select either one. Independently, the full chronological \(H+J\) candidate has a nonzero derivative on a flat, fixed-volume congruence where every Einstein–Hilbert-plus-\(\Lambda\) variation vanishes; that candidate alone cannot be the native vacuum action. Any proposed completion must supply the missing same-process term and its exact Ward source, rather than name it \(R\).
+
+**Status:** this pivot exposes a precise route and a decisive falsifier. The remaining load-bearing object is the selected complete D0 source through its quadratic field jet, with the physical programme and Ward identity attached. Neither the linear TT certificate nor an AF-specific Einstein action closes that selection gap.
