@@ -354,11 +354,13 @@ This is a concrete inverse-reconstruction candidate for the Palatini
 first-source covector, not a derivation of it from D0. The native programme
 must still force the face-to-pointer assignment and \(\kappa_h\), pay for
 six preparations, observer transport and every retained record, and keep the same
-price under arbitrary coframe variations. The test establishes neither
-nonlinear equality of the full entropy price and the star action nor a
-uniform refinement estimate. Its next use is to test whether the actual native
-complete source supplies this exact six-face jet and scale without adding a
-selector from outside D0.
+price under arbitrary coframe variations. Matching the action gradient at the
+flat point does not establish the linearized Einstein operator: that requires
+the full second variation, including mixed coframe-link derivatives. The test
+establishes neither nonlinear equality of the full entropy price and the star
+action nor a uniform refinement estimate. Its next use is to derive the
+coframe-transported POVM from the native programme and compare the complete
+\(C^2\) source to the star action without adding a selector from outside D0.
 
 ## 6. Finite compilation and the narrow remaining physics
 
