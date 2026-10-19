@@ -91,3 +91,49 @@ The actual native Book/verification/clock and admissible record test algebra mus
 Do not choose either option merely because its source matches GR. The exact missing input is **the physically admitted observation/history algebra and its same-programme cost aggregation**; `GR_closed=false`.
 
 Reproduction: [standalone exact/finite control](sources/d0_physical_binary_return_2026-10-19/check_full_history_binary_information_loss.py). Upstream full128 C¹ result is cited from its actual proof and not claimed to be executed by that small fixture.
+
+
+## 5. Positive owner-native source: the original Golden nonblank port has exactly p³ conditional information per event
+
+The separation is **not** only a toy-countermodel warning. On the **actual** original full128 Golden round, [`A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md`](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md) §3 equations (7)–(9) explicitly gives the two-port conditional distribution on **every nonblank label** as `q_port=(p²,p)`, while its ORIGINAL Golden code prior is `mu_port=(p,p²)`. The normalized later state and future outcomes are unchanged by which port occurred on a nonblank label. Therefore a complete classical reference-code KL chain **must** include for each such label exactly
+
+```text
+D_phi(q_port || mu_port)
+ = p² log_phi(p²/p) + p log_phi(p/p²)
+ = -p²+p = p³.
+```
+
+This is an existing owner coefficient now **consumed as a distinct full-history source gate**. Its contribution to the conditional fine KL `K_cond` in (1), whenever the binary aggregation hides the port but the full primitive label code is retained, is
+
+```text
+K_nonblank_port = p³ E[N_nonblank_label],
+D K_nonblank_port = p³ D E[N_nonblank_label].       (5)
+```
+
+The other code labels, special blank label port, archive, coefficient, reference, clock and possible quantum coherence are **not** thrown away or deemed source-free. The exact (5) refers to this original full128 experiment; it cannot automatically be transplanted onto the separate ten-Golden filled-return detector without a same-programme identification.
+
+More strongly, the exact original nonblank label operator at a given round is, by `L_k=-2p N_k^* A`, `A=hD_h/16`, and `sum N_k N_k^*=I, N_blank=A`:
+
+```text
+E_nonblank= sum_{k != blank, ports} K_{port,k}* K_{port,k}
+          =4p² A²(I-A²)
+          =epsilon Delta_h [I-h² Delta_h/256],
+epsilon=p² h²/64.
+```
+
+At the original flat first shell `Delta_h=lambda_h I`, the full internal state remains in that shell, `beta_h=n epsilon` at fixed integer n, and the entire native count expectation is
+
+```text
+E N_nonblank = beta_h lambda_h (1-h² lambda_h/256).
+K_nonblank_port = p³ beta_h lambda_h (1-h² lambda_h/256).
+D K_nonblank_port[V]
+ = p³ beta_h (1-h² lambda_h/128) D lambda_h[V].    (6)
+```
+
+This is an exact finite-h *source from the old, actual port/code/clock*, including its spatial/coframe-dependent Rayleigh source when that field tangent is actually allowed. It is **not fitted to GR**. If `beta_h→beta>0`, `lambda_h→lambda>0`, and a true admitted tangent has `D lambda_h→Dlambda !=0`, the information source converges to `p³ beta Dlambda`, **not zero**. No arbitrary trace coefficient has been introduced.
+
+The original *special blank label / port1* remains separate: the actual full port1 expectation is `p beta_h lambda_h` by original (7), whereas nonblank port1 contributes `p beta_h lambda_h(1-h²lambda_h/256)`. Their difference is exactly `p beta_h lambda_h(h²lambda_h/256)`. It vanishes at the controlled flat-shell leading order but cannot be erased in the finite original record.
+
+**Physical decision sharpened:** even inside the native primitive Golden alphabet, the complete history contains a nonzero, compulsory **conditional code-KL** signal that a generic coarse binary good/failure source discards. To prove GR from a *full-code* D0 price, the remaining nonblank-port Rayleigh source and coherent source must be included, shown to cancel by the actual full native law, or demonstrated to be excluded by the literally selected physical test/history algebra. It is NOT legitimate to change original code priors `(p,p²)` to actual conditional outcomes `(p²,p)` to make this term vanish.
+
+Reproduction: [exact symbolic p²+p−1, finite nonblank operator and flat-shell source check](sources/d0_physical_binary_return_2026-10-19/check_native_golden_port_hidden_source.py). The calculation consumes exact original operator factors from the cited owner; it is not a new full128 enumeration or a joint 40-field replay. Still `GR_closed=false`.
