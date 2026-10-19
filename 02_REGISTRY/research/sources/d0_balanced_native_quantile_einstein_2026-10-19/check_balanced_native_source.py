@@ -169,6 +169,32 @@ def root_transfer_fixture(L):
     print(f"  L={L}: exact original staggered Cartan/Brinkmann sourced Poisson "
           f"test, with arbitrary u-energy and cubic/quartic harmonic modes.")
 
+def off_null_moving_volume_midpoint_c1():
+    """NONZERO f: both value and genuine d/d(volume) quantile source converge O(h²).
+
+    This is the analytic 4D Rosenblatt case depending only on coordinate0:
+    rho(y)=1+eps*.3*cos(2*pi*y0), other 3 coordinates unchanged.
+    Query F(y)=y0², so integral rho F = 1/3+eps*.3/(2*pi²)
+    and its nontrivial physical-volume first source is .3/(2*pi²).
+    """
+    eps=.4
+    de=1e-5
+    value_target=1/3+eps*.3/(2*pi*pi)
+    source_target=.3/(2*pi*pi)
+    for L in (8,16,32,64):
+        def macro_mean(t):
+            return sum(inverse_volume_quantile((j+.5)/L,t)**2
+                       for j in range(L))/L
+        value=macro_mean(eps)
+        grad=(macro_mean(eps+de)-macro_mean(eps-de))/(2*de)
+        e_value=abs(value-value_target)
+        e_grad=abs(grad-source_target)
+        assert e_value*L*L<.1, ("midpoint value",L,e_value)
+        assert e_grad*L*L<.03, ("full moving volume source",L,e_grad)
+        print(f"  OFF-NULL 4D volume transport L={L}: "
+              f"|mean-Gamma|={e_value:.3e}, |real dGamma|={e_grad:.3e}")
+    print("PASS C1 physical-volume source O(h²), NOT merely null-cancellation.")
+
 def main():
     near(MATTER_RATIO,-23.416406751884,1e-11)
     print(f"TRUE corrected two-tick J2 CAR matter/gravity ratio={MATTER_RATIO:.12f}")
@@ -178,6 +204,7 @@ def main():
         print(f"  WITHOUT native balancing, first source mismatch={difference:.8f}")
         exact_moving_source_test(L)
         root_transfer_fixture(L)
+    off_null_moving_volume_midpoint_c1()
     print("PASS: original F/R address, EXACT balanced positive native source, "
           "moving physical volume FIRST jets, nonquadratic sourced Einstein root.")
     print("SCOPE: constructed complete AF×scene Book J2, not compulsory FULL D0 "
