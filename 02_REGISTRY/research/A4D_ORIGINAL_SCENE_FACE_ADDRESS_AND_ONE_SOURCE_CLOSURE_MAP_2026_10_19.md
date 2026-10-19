@@ -172,13 +172,13 @@ Define the full physical programme's REAL selected scalar or algebra-valued acti
 D_{e,U,\Psi} S_h^{\rm native}
  \big|_{\nu=\nu_h}
  \stackrel{?}{=}
-c_h\,D_{e,U,\Psi}
-  \bigl[P_{\star,h}+P_{{\rm CAR},h}\bigr],
-\qquad c_h\ne0,
+c_{\star,h}\,D_{e,U,\Psi}P_{\star,h}
++c_{{\rm CAR},h}\,D_{e,U,\Psi}P_{{\rm CAR},h},
+\qquad c_{\star,h}\ne0,
 }
 \tag{20}
 \]
-with the exact original normalization and no fitted coupling, on a declared nonempty physically admitted curved class. For full dynamic/normal response one must ALSO compute the selected SAME-ACTION effective Hessian and control its history-after-connection Schur
+with BOTH coefficients required to follow from the actual native selected programme and its original normalization (and with their physical ratio fixed, not fitted), on a declared nonempty physically admitted curved class. If that programme has other genuine sectors, their real complete sources must appear in the left and be solved, not dropped. For full dynamic/normal response one must ALSO compute the selected SAME-ACTION effective Hessian and control its history-after-connection Schur
 \[
 H_{\rm eff}=H_{\rm geom}-R^T J_{\rm hist}^{-1}R
 \tag{21}
