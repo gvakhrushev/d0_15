@@ -111,7 +111,12 @@ Its exact reduced geometry Hessian is
             = (17/64)ln3-1/6
             = 0.12515222251080... >0.
 
-This is a genuine nontrivial same-positive-instrument Schur calculation, no invented toy quadratic coefficients. In phi units divide all H derivatives by ln(phi). The reduction changes geometry's second response even though ALL internal histories compile to the same final Lorentz link. It does not claim the reduced H is an Einstein action (it is not); rather it is a counterexample to deriving pure Einstein geometry by *uncontrolled* elimination of fully retained record costs.
+This is a genuine nontrivial same-positive-instrument Schur calculation, no invented toy quadratic coefficients.
+
+**Additional first-Euler negative control:** the optimized pointer response retains
+  d_x H(x,a*(x))|_(x=0) = ln(3)/4 != 0,
+because d_a H=0 at the stationary baseline. The unchanged geometric Lorentz-star action has zero link Euler at the flat identity. Therefore using THIS complete two-flag Shannon observable as the ONLY native vacuum action would select a DIFFERENT flat link Euler zero set, even after exactly eliminating its internal history. This is a scoped mathematical witness, NOT proof that the compulsory Book03 action equals this Shannon functional or that its missing controller/work/clock terms cannot compensate. It sharpens the test: matching a metric Hessian or retaining full positive histories is insufficient; actual FIRST Euler and full stationary preparation/clock rows must coincide before claiming Einstein.
+ In phi units divide all H derivatives by ln(phi). The reduction changes geometry's second response even though ALL internal histories compile to the same final Lorentz link. It does not claim the reduced H is an Einstein action (it is not); rather it is a counterexample to deriving pure Einstein geometry by *uncontrolled* elimination of fully retained record costs.
 
 ## 4. Strong strategic implication: distinguish three noninterchangeable maps
 
