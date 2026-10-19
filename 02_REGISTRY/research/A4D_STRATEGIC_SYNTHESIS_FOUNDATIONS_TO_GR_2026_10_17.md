@@ -3694,3 +3694,43 @@ remaining internal Euler rows are solved on the same carrier. A global MAP
 rule instead has the nonsmooth source above; a fine occupation readout has
 its own source ratio. Establishing which complete frame the native execution
 uses is now the single price-selection gate for this branch.
+
+### 7.48. The primitive golden probability weight still needs an amplitude map
+
+There is a more basic type check before the conditional \(w=q\) identification
+in §7.47. Book 03 §03.3.0 calls \(\varphi^{-S}\) the history weight and reads it
+as a probability weight in the classical limit. Section §03.10(b) fixes the
+primitive direct/return weights as \((p,p^2)\), where \(p=\varphi^{-1}\) and
+\(p+p^2=1\). But §03.10(c) writes the **amplitude** vector with coefficients
+\(W(\gamma)=\prod_i\varphi^{-a_i}\), and §03.10(e) then applies the Born
+quadratic readout.
+
+Under the direct identification \((a_+,a_-)=(1,2)\), the two orthogonal
+primitive branches would therefore have squared norm
+\[
+\|W\|^2=p^2+p^4=5-2\sqrt5<1,
+\]
+not the unit response, and their normalized Born probabilities would not be
+\((p,p^2)\). The already-owned native gate in Book 03 §03.26 and
+[`GoldenOrderInterferometer.lean`](../../03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean)
+fixes the actual first column as \((\sqrt p,p)\); its Born probabilities are
+exactly \((p,p^2)\). Thus the primitive gate is correct, while the map from
+the statistical cost weight to the coherent amplitude coefficient needs an
+explicit owner.
+
+This is a type mismatch under the direct cost-exponent identification, not a
+proved inconsistency of D0. A square-root lift \(W=\varphi^{-S/2}\) matches
+the primitive gate, but the same map must be derived for composed histories,
+coherent paths with shared outcomes, and retained records. Otherwise the
+physical law is \(q_\omega=|\sum_{\gamma\mapsto\omega}A_\gamma|^2\), which may
+contain cross terms and a field-dependent normalizer, rather than the raw
+positive weight \(\varphi^{-S_\omega}\). The two expressions cannot be
+identified from their common golden base alone.
+
+This sharpens the next full-price proof: on the actual compiled carrier derive
+the complete amplitudes \(A_\gamma\), group only paths the detector actually
+identifies, compute the Born law of every retained outcome, and compare it
+with the Book cost weight and its refinement/normalizer. If equality holds,
+§7.47's conditional entropy-to-Brinkmann source applies; if not, its exact
+cross-term and \(D\log N\) source must be included. No new gate, exponent, or
+probability law is selected here.

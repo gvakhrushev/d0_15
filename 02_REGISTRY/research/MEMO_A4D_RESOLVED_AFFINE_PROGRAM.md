@@ -24,7 +24,7 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.47](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.48](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
@@ -86,6 +86,14 @@ inside the determinant changes that threshold. None of these aggregators has
 been selected by the physical D0 programme. The next same-programme check
 must bind the actual complete outcome law, work/preparation cost and full
 history price before using the transferred Einstein roots.
+
+Strategic §7.48 identifies a more basic exponent boundary in that check:
+Book 03 treats \(\varphi^{-S}\) as a history probability weight but writes
+\(\varphi^{-a_i}\) as an amplitude coefficient in §03.10(c). For primitive
+costs \((1,2)\), the latter gives squared norm \(p^2+p^4<1\); the owned
+golden gate uses amplitudes \((\sqrt p,p)\). This is a scoped type mismatch,
+not a D0 no-go, and it must be resolved before identifying Book weights with
+the Born law of the complete history.
 
 The separate [exact Fibonacci LEFT-rank decoder](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md)
 also gives exact cell balance and the same conditional source transfer, but
