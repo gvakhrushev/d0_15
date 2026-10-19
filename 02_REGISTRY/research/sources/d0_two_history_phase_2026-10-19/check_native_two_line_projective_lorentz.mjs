@@ -171,6 +171,36 @@ check(det(observed)===648n,
 check(Math.abs(648/9**6-8/6561)<1e-16,
  "normalized six-source Jacobian is exactly 8/6561, no arbitrary scale");
 
+
+// ORIGINAL complete fresh-flag Julia instrument lift:
+// T=Lambda(U)/2, BAD F=sqrt(I-T†T), q_GOOD=q_BAD=(1/4,3/4) at identity.
+// Do not condition/reweight GOOD; measure joint E[1_GOOD * native CAR O].
+// Exact integer numerator of the 1/12 first unnormalized density jet.
+function JuliaGoodJointRows(real,imag,pairs){
+ return pairs.map(([a,b,part])=>G.map(X=>{
+  const ar=mv(X,real),ai=mv(X,imag);
+  const dre=ar[a]*real[b]+ai[a]*imag[b]+real[a]*ar[b]+imag[a]*ai[b];
+  const dim=ai[a]*real[b]-ar[a]*imag[b]+imag[a]*ar[b]-real[a]*ai[b];
+  return part==="r"?dre:dim;
+ }));
+}
+const goodJulia=[
+ ...JuliaGoodJointRows([1,0,1,0],[0,0,0,1],[[0,0,"r"],[2,2,"r"],[0,1,"i"],[0,2,"i"]]),
+ ...JuliaGoodJointRows([0,1,1,0],[0,0,0,1],[[1,1,"r"],[0,1,"i"]])
+];
+const expectedJulia=[[0,0,2,0,0,-2],[2,0,0,0,0,0],
+ [0,-1,0,0,0,0],[0,0,0,1,-1,0],
+ [2,0,0,0,0,2],[0,0,0,1,0,0]];
+check(JSON.stringify(goodJulia)===JSON.stringify(expectedJulia),
+ "ORIGINAL full GOOD/BAD Julia CAR source: exact six joint-E[1_GOOD O] numerator rows");
+check(det(goodJulia)===8n,
+ "actual unconditioned Julia GOOD-joint six-Lorentz detector integer det 8");
+check(Math.abs(8/12**6-1/373248)<1e-18,
+ "full two-line native Julia CAR six-readout Jacobian det 1/373248");
+const nativeGoodAtIdentity=.25,nativeBadAtIdentity=.75;
+check(nativeGoodAtIdentity+nativeBadAtIdentity===1,
+ "complete pre-existing Julia GOOD and BAD effect normalize without postselection");
+
 console.log(JSON.stringify({source:"original CAR16 grade1 and six true proper Lorentz generators",
 exact_two_ray_minor_det:"-54",single_ray_ranks:[4,4],joined_rank:6,
 closed_mixed_Bargmann_phases:["-1/9","+1/9"],
