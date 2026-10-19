@@ -111,6 +111,34 @@ J_{\rm native}=-\log\det(I-zF_{\rm native})
 
 The existing complete-history owner separately supplies two full implementations of the mathematical return effect and determinant event, including a 33-step complete binary tree with all failures retained. Our new result removes the **arbitrary orthogonal-extension** ambiguity inside that effect. It does NOT identify the actual native Golden work/controller cost, binary angles, flags, witness/right memory, or sitewise gravitational source; these remain physical interfaces.
 
+### 3.1. The operator is ALREADY encoded in actual depth-two native histories, with a fully positive classical loss measurement
+
+The canonical original-scene polynomial in (7) has a still more primitive provenance: for all native scene vertices u,v,
+\[
+\boxed{F_{\rm native}(u,v)
+=\delta_{uv}-\frac{N_2(u,v)}{\rho^2},\qquad
+N_2(u,v)=\#\{\gamma:u\to w\to v\text{ in TWO ORIGINAL native steps}\}.}
+\tag{14a}
+\]
+This is exactly the ACTUAL native adjacency-square path-count operator \(A^2\), not a continuum estimator or an unrelated spectral generator. Its all-row count sums are precisely the Lean-owned 502/476/458 on the three original zones, and the total two-step count is **15708**. Its diagonal trace is the TRUE 718 one-step directed-edge count:
+\[
+\boxed{\operatorname{Tr}F_{\rm native}=33-\frac{718}{\rho^2}
+=31.494352574857793\ldots .}\tag{14b}
+\]
+The one zero mode is the old Perron history \(r\). Thus the rank32 feedback observable can be reconstructed entirely from the already owned complete depth-two counted history, with no chosen operator-valued Einstein analogue.
+
+This same exact effect also has an **entirely positive outcome-level measurement formula**, requiring no arbitrary detector POVM to define its EXPECTED value. For ANY original real future-scene observable \(f\),
+\[
+\boxed{
+\begin{aligned}
+\langle f,F_{\rm native}f\rangle_\pi
+&=\sum_u\pi_u\operatorname{Var}_{P(u,\cdot)}(f(Y))\\
+&=\frac12\sum_{u,v,w}
+ \pi_uP_{uv}P_{uw}\,[f(v)-f(w)]^2 .
+\end{aligned}}\tag{14c}
+\]
+The right side uses ONLY the ORIGINAL positive stationary two-descendant history statistics: condition on one retained past vertex u and compare two genuine continued outcomes v,w under the SAME derived Perron transition law. Every possible v,w event is included. This is a physical **distinguishability-loss observable** available from complete recorded outcome frequencies once those conditional continuations can actually be executed and priced; one need not silently prepare a new 33-grade CAR or know an unknown quantum amplitude to estimate its scalar value. The full coherent Book03 \(P U^\dagger Q U P\) measurement and determinant SOURCE are STRONGER: to identify them as the actual compulsory physical action still requires the real native controller, complete resource/clock and same-history Cost-Info binding. Neither counting two histories nor classical conditional variance alone supplies an Einstein coframe source.
+
 ## 4. Field-sensitive exact source with true symmetric native Cost variation
 
 The same MINIMAL full reflection is uniquely defined and smooth for any positive **symmetric** real edge-cost family \(C_{uv}(y)=C_{vu}(y)\) on the original graph. Let \(K_{uv}(y)=\varphi^{-C_{uv}(y)}\) on actual edges (and zero on nonedges), \(\rho(y),r(y)\) be its Perron eigenpair with \(r^Tr=1\), \(T(y)=K(y)/\rho(y)\), and \(\Pi=r r^T\). Define J0(y),J1(y) from the actual Perron/Doob history edge law. The complete canonical reflection is
