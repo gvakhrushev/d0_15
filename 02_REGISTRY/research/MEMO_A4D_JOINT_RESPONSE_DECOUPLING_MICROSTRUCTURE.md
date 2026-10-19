@@ -8317,3 +8317,32 @@ order \(h^2\), and tends to the flat metric. This does not give the fixed
 nonconstant refinement sequence, an exact periodic root, or the owner-sum
 response terminal. See the [slow-lift owner](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md)
 and [same-profile comparator check](certificates/a4d_diagonal_microstructure_same_profile_comparator_check.py).
+
+## Complete full128 pointer Shannon source along the opposite-null commutator (2026-10-19)
+
+The original (L=4), first-shell full128 instrument has a nonzero first
+source for its **complete 128-outcome Shannon term** along the same role-2
+Lorentz generator (J_{23}=[N_2,\bar N_3]) whose finite pointer already reads
+the opposite-null commutator. With the fixed (I_{16}/16) system marginal,
+the exact grouped-log derivative is enclosed by rational interval arithmetic
+as follows:
+
+\[
+D_{J_{23}}H_\varphi(q)\in[-0.031546784312485733440439,
+-0.031546784312485733440438].
+\]
+
+All 128 outcomes are retained; 86 have zero base probability and zero Kraus
+operator, so they add no first entropy jet. The original port code's known
+length-(1/2) contribution has derivative
+\(9/800-9\sqrt5/1600=-0.00132788237\ldots\), different from this complete
+pointer Shannon source. The difference is only a port-code partial
+Cost-minus-Info comparison: costs for the other record labels, controller,
+work and normalization are not supplied here.
+
+Because of the zero-probability branches, this certifies a first source but
+does **not** certify a (C^2) Shannon readout or its mixed order jet. The
+result narrows the detector/source gap while leaving the full Book
+Cost-Info selection, physical admission, metric source and refinement open.
+See the [full128 source result](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md)
+and its [exact checker](sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py).

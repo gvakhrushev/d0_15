@@ -196,3 +196,60 @@ finite repeated-matrix-instrument result with the fixed \(I_{16}/16\)
 preparation and reference128 spectator. It does not show physical D0
 admission of per-increment execution, selection/pricing by the compulsory
 full Cost-Info law, or positive GR closure.
+
+## Complete 128-outcome Shannon first source along the opposite-null commutator
+
+At the same (L=4), (h=1/4), mode (k=(0,0,0,1)), role-2 link and
+(I_{16}/16) preparation, differentiate the **entire original 128-outcome
+probability law** along (J_{23}=[N_2,\bar N_3]). The exact checker verifies
+all Kraus effects sum to (I_{16}), all 128 probability derivatives sum to
+zero, and each of the 86 zero-probability outcomes at the base has a zero
+Kraus operator. Thus those zero branches contribute zero to the first entropy
+jet: their probabilities are (O(t^2)), and (q\log q=o(t)).
+
+For the complete pointer Shannon term
+
+\[
+H_\varphi(q)=-\frac{1}{\log\varphi}\sum_{j=1}^{128}q_j\log q_j,
+\]
+
+the remaining 42 positive outcomes give the exact grouped-log derivative
+\[
+D_{J_{23}}H_\varphi
+=-\frac{1}{\log\varphi}\sum_{q_j>0}\dot q_j\log q_j
+=-0.0315467843124857334404386750261\ldots .
+\]
+The JSON receipt lists the exact algebraic base probabilities and summed
+derivatives for every probability class. Rational interval arithmetic using
+atanh-series bounds for the logarithms encloses this source in
+\([-0.031546784312485733440439,
+-0.031546784312485733440438]\), proving its sign without relying on a
+floating-point evaluation. This establishes a nonzero first information
+source on the actual complete finite pointer law at the stated background.
+
+The already-owned binary golden port code assigns lengths (1,2) to
+port-0/port-1. Its known code-cost contribution has first source
+\[
+D\mathbb E[C_{\rm port}]
+=\frac{9}{800}-\frac{9\sqrt5}{1600}
+=-0.0013278823734363170\ldots .
+\]
+Subtracting the complete pointer Shannon source from **this port-code piece
+alone** leaves (+0.0302189019390494164\ldots). The other 64-record-label
+costs, controller/work cost, normalization and physical event binding are not
+assigned by this calculation, so this difference is not the full Book
+Cost-Info source.
+
+The zero branches also prevent promoting this first-jet result to a smooth
+second-order Shannon order jet. In particular, the general mixed
+\((a,b)\)-order identity for a (C^2) scalar readout cannot be applied here
+without a separate rank-birth analysis. The result therefore supplies a
+first-source bridge from the complete finite record toward the geometric
+commutator, while keeping physical admission, the total price and the
+second-order order test open.
+
+Exact replay:
+
+```text
+python3 02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py
+```
