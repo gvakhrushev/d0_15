@@ -163,5 +163,56 @@ function audit(){
       B_backward_gauge_max:Math.max(...Bgrad.map(w=>maxAbs(mv(v.B,w))))};
   });
 }
-module.exports={audit,symbol,matrices,rank};
+
+
+/* Exact closed TT null-wave connection for z=(t,1,1,1).
+ * In the original generator ordering (01,02,03,12,13,23),
+ * generators #3=-N2 and #4=-N3. The true independent linear
+ * coframe and link equations are L(t)w+B(t)e=0, C(t)w=0.
+ *
+ * L(t) has Laurent degree -1,0,+1, B(t)e=(1-t^-1)b0,
+ * and C(t)=(t-1)C1 on this axis. Thus checking
+ * L(t)w0+b0 at t=1,2,4 is an EXACT Laurent interpolation proof,
+ * not an extrapolation to other grid wavelengths. These 3
+ * samples and all operations are integer/binary dyadic, exact in
+ * IEEE-754 due the bounded integer coefficients.
+ */
+function exactTwoNullTT(){
+  let checks=[];
+  for(let type of ["plus","cross"]){
+    const e=Array(16).fill(0),w0=Array(24).fill(0);
+    if(type==="plus"){
+      e[10]=1;e[15]=-1;
+      // physical w_x=+D_u^- N2, w_y=-D_u^- N3
+      w0[15]=-1;w0[22]=1;
+    }else{
+      e[11]=1;e[14]=1;
+      // physical w_x=+D_u^- N3, w_y=+D_u^- N2
+      w0[16]=-1;w0[21]=-1;
+    }
+    const B2=matrices([2,1,1,1]).B,
+      b0=mv(B2,e).map(x=>2*x);
+    for(let t of [1,2,4,8]){
+      const {L,B,C}=matrices([t,1,1,1]);
+      const linked=mv(L,w0).map((v,i)=>v+b0[i]);
+      const scale=mv(B,e).map((v,i)=>v-(1-1/t)*b0[i]);
+      const solder=mv(C,w0);
+      if(maxAbs(linked)!==0 || maxAbs(scale)!==0 ||
+         maxAbs(solder)!==0)
+        throw Error("exact one-null TT failed "+type+" t="+t);
+      checks.push({type,t,link_identity:true,coframe_identity:true});
+    }
+  }
+  return {
+    status:"PASS_EXACT_ALL_T_TT_LINEARIZED_40_EULER",
+    role_wave:"(t,1,1,1) with arbitrary nonzero t",
+    plus:"delta e^2_x=f, delta e^3_y=-f; omega_x=D_u^- f N2, omega_y=-D_u^- f N3",
+    cross:"delta e^2_y=delta e^3_x=f; omega_x=D_u^- f N3, omega_y=D_u^- f N2",
+    algebraic_proof:"Laurent degree [-1,1] for L(t); three dyadic exact values fix each coefficient; C(t)=(t-1)C1",
+    samples:checks,
+    scope:"linearized vacuum all40 on original star carrier, not finite-amplitude nonlinear wave or compulsory native history"
+  };
+}
+
+module.exports={audit,symbol,matrices,rank,exactTwoNullTT};
 if(require.main===module)console.log(JSON.stringify(audit(),null,2));
