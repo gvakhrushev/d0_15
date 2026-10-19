@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>D0 · Отображение поле → прибор</title>
+<meta name="description" content="Требование к явному отображению физических полей в операции записи: формула, однозначность отклика, согласованность с тепловым тестом и хронологией.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eceff4; --surface:#fbfcfd; --surface-2:#f4f6f9;
+  --ink:#12181f; --ink-soft:#3b4650; --muted:#63707c;
+  --rule:#d3dae2; --rule-strong:#b8c3cd;
+  --teal:#0d5c68; --teal-soft:#e2eef0; --teal-deep:#083f48;
+  --amber:#a86a12; --amber-soft:#f6ecda;
+  --step--1:clamp(.76rem,.73rem + .15vw,.84rem);
+  --step-0:clamp(.97rem,.94rem + .2vw,1.06rem);
+  --step-1:clamp(1.15rem,1.08rem + .4vw,1.34rem);
+  --step-2:clamp(1.45rem,1.3rem + .9vw,1.95rem);
+  --step-3:clamp(1.95rem,1.55rem + 2.1vw,3.2rem);
+  --sp:clamp(1rem,.85rem + .8vw,1.5rem);
+  --radius:10px;
+  --shadow:0 1px 1px rgba(18,24,31,.03),0 10px 30px -18px rgba(18,24,31,.28);
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans","Hiragino Sans","Yu Gothic","Noto Sans JP",system-ui,sans-serif;
+  font-size:var(--step-0);line-height:1.68;
+  font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:66rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+
+/* ---------- header ---------- */
+header.top{border-bottom:1px solid var(--rule);background:
+  linear-gradient(180deg,#f7f9fb 0%,var(--bg) 100%);padding:clamp(1.6rem,4vw,3rem) 0 clamp(1.2rem,3vw,2rem)}
+.eyebrow{font-family:var(--mono);font-size:var(--step--1);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teal);display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:center}
+.eyebrow .sep{color:var(--rule-strong)}
+h1{font-family:"Spectral","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;font-weight:600;
+  font-size:var(--step-3);line-height:1.06;letter-spacing:-.02em;margin:.55rem 0 .5rem;max-width:24ch}
+h1 .arrow{color:var(--teal);font-weight:400}
+.lede{max-width:62ch;color:var(--ink-soft);font-size:var(--step-1);line-height:1.5;margin:0 0 1.1rem}
+.pins{display:flex;flex-wrap:wrap;gap:.4rem .5rem;font-family:var(--mono);font-size:var(--step--1)}
+.pin{background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:.18rem .62rem;color:var(--muted)}
+.pin b{color:var(--ink);font-weight:500}
+
+/* ---------- verdict ---------- */
+.verdict{margin:clamp(1.4rem,3.5vw,2.4rem) 0;background:var(--surface);border:1px solid var(--rule);
+  border-left:4px solid var(--amber);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:clamp(1rem,2.6vw,1.6rem) clamp(1rem,3vw,1.9rem)}
+.verdict h2{margin:0 0 .5rem}
+.verdict p{margin:0 0 .7rem}
+.verdict p:last-child{margin-bottom:0}
+
+/* ---------- sections ---------- */
+main{padding:clamp(1rem,3vw,2rem) 0 0}
+section{display:grid;grid-template-columns:4.2rem 1fr;gap:0 clamp(.6rem,2vw,1.6rem);
+  padding:clamp(1.5rem,4vw,2.6rem) 0;border-top:1px solid var(--rule)}
+section:first-of-type{border-top:none}
+.rail{font-family:var(--mono);font-size:var(--step--1);color:var(--teal);
+  letter-spacing:.08em;padding-top:.45rem;position:relative}
+.rail::after{content:"";position:absolute;left:.42rem;top:2.1rem;bottom:-2.6rem;width:1px;background:var(--rule)}
+section:last-of-type .rail::after{display:none}
+.body{min-width:0}
+h2{font-family:"Spectral",Georgia,serif;font-weight:600;font-size:var(--step-2);line-height:1.18;
+  letter-spacing:-.01em;margin:0 0 .7rem;font-feature-settings:"palt"}
+h3{font-size:var(--step-1);font-weight:600;margin:1.5rem 0 .45rem;line-height:1.3}
+h3:first-child{margin-top:0}
+p{margin:0 0 .85rem;max-width:74ch}
+ul,ol{margin:0 0 .9rem;padding-left:1.15rem;max-width:74ch}
+li{margin-bottom:.32rem}
+li::marker{color:var(--teal)}
+strong{font-weight:600}
+a{color:var(--teal);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--teal-deep)}
+code{font-family:var(--mono);font-size:.9em;background:var(--surface-2);
+  border:1px solid var(--rule);border-radius:4px;padding:.06em .3em}
+
+/* ---------- status chips ---------- */
+.chip{display:inline-block;font-family:var(--mono);font-size:var(--step--1);letter-spacing:.06em;
+  text-transform:uppercase;border-radius:4px;padding:.1rem .45rem;vertical-align:.08em;white-space:nowrap}
+.c-ok{background:var(--teal-soft);color:var(--teal-deep);border:1px solid #bcd6da}
+.c-cond{background:var(--surface-2);color:var(--muted);border:1px solid var(--rule)}
+.c-open{background:var(--amber-soft);color:#7d4d06;border:1px solid #e6d3ae}
+
+/* ---------- math ---------- */
+.m{font-family:"Spectral",Georgia,serif;font-style:italic;white-space:nowrap}
+.mn{font-style:normal}
+.eq{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:.9rem clamp(.8rem,2.5vw,1.3rem);margin:1rem 0;overflow-x:auto;font-size:1.06em;line-height:2}
+.eq .tag{float:right;font-family:var(--mono);font-style:normal;font-size:var(--step--1);color:var(--muted)}
+.eq-hero{background:var(--teal-deep);border-color:var(--teal-deep);color:#eaf2f3;
+  box-shadow:var(--shadow);padding:clamp(1rem,3vw,1.5rem) clamp(.9rem,3vw,1.6rem)}
+.eq-hero .tag{color:#9dc0c6}
+.eq-hero .sub{display:block;font-family:"IBM Plex Sans",sans-serif;font-style:normal;font-size:var(--step--1);
+  color:#a9c8cd;margin-top:.5rem;letter-spacing:.02em}
+.fn{font-family:var(--mono);font-style:normal}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.94em;min-width:30rem}
+caption{caption-side:top;text-align:left;font-family:var(--mono);font-size:var(--step--1);
+  color:var(--muted);letter-spacing:.05em;text-transform:uppercase;padding-bottom:.5rem}
+th,td{text-align:left;padding:.5rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{font-family:var(--mono);font-size:var(--step--1);text-transform:uppercase;letter-spacing:.07em;
+  color:var(--muted);font-weight:500;border-bottom:1px solid var(--rule-strong)}
+tbody tr:hover{background:var(--surface-2)}
+td.num{font-family:var(--mono);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.mid{text-align:center}
+tr.hi td{background:var(--teal-soft)}
+tr.warn td{background:var(--amber-soft)}
+
+/* ---------- svg ---------- */
+figure{margin:1.2rem 0}
+.figbox{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:clamp(.6rem,2vw,1.1rem);box-shadow:var(--shadow)}
+figure svg{display:block;width:100%;height:auto}
+figcaption{font-size:var(--step--1);color:var(--muted);margin-top:.55rem;max-width:70ch}
+.gl{stroke:var(--rule);stroke-width:1}
+.gv{stroke-dasharray:2 4}
+.axis{stroke:var(--rule-strong);stroke-width:1.2}
+.cont{stroke:var(--teal);stroke-width:1.6;stroke-dasharray:6 3}
+.bnd{stroke:var(--amber);stroke-width:1.6;stroke-dasharray:2 3}
+.line{fill:none;stroke:var(--teal);stroke-width:2.4;stroke-linejoin:round}
+.dot{fill:var(--surface);stroke:var(--teal);stroke-width:2}
+.gt{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+.ct{font-family:var(--mono);font-size:11px;fill:var(--teal);font-weight:500}
+.ct.gold{fill:#8a5606}
+.cts{font-family:var(--mono);font-size:9.5px;fill:var(--muted);display:block}
+.mid{text-anchor:middle}.end{text-anchor:end}
+.bx{fill:var(--surface-2);stroke:var(--rule-strong);stroke-width:1.2}
+.kerbx{fill:var(--amber-soft);stroke:#e6d3ae;stroke-width:1}
+.bl{font-family:"IBM Plex Sans",sans-serif;font-size:13px;font-weight:600;fill:var(--ink);text-anchor:middle}
+.bs{font-family:var(--mono);font-size:10.5px;fill:var(--muted);text-anchor:middle}
+.kl{font-family:var(--mono);font-size:10.5px;fill:#7d4d06}
+.ar{stroke:var(--teal);stroke-width:1.6}
+.ar2{fill:none;stroke:var(--amber);stroke-width:1.4;stroke-dasharray:4 3}
+.ah{fill:var(--teal)}
+
+/* ---------- misc blocks ---------- */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.9rem;margin:1rem 0}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:.9rem 1rem;box-shadow:var(--shadow)}
+.card h4{margin:0 0 .3rem;font-size:var(--step-0);font-weight:600}
+.card p{margin:0;font-size:.94em;color:var(--ink-soft);max-width:none}
+.card .tagline{font-family:var(--mono);font-size:var(--step--1);color:var(--muted);display:block;margin-bottom:.35rem}
+.note{border-left:3px solid var(--teal);background:var(--teal-soft);border-radius:0 var(--radius) var(--radius) 0;
+  padding:.8rem 1rem;margin:1rem 0}
+.note.warn{border-left-color:var(--amber);background:var(--amber-soft)}
+.note p:last-child{margin-bottom:0}
+.note p{margin:0 0 .5rem;font-size:.96em}
+pre{background:#0f1b1e;color:#d6e6e8;border-radius:var(--radius);padding:.9rem 1.05rem;overflow-x:auto;
+  font-family:var(--mono);font-size:.86em;line-height:1.75;margin:1rem 0}
+pre .cm{color:#7fa3a8}
+
+footer{border-top:1px solid var(--rule);margin-top:1rem;padding:clamp(1.4rem,4vw,2.4rem) 0 3rem;
+  color:var(--muted);font-size:var(--step--1)}
+footer p{max-width:80ch}
+footer .sig{font-family:var(--mono);letter-spacing:.05em;color:var(--ink-soft)}
+
+@media (max-width:640px){
+  section{grid-template-columns:1fr}
+  .rail{padding-top:0;padding-bottom:.35rem}
+  .rail::after{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .reveal{animation:rise .55s cubic-bezier(.2,.7,.2,1) both}
+  .reveal:nth-of-type(2){animation-delay:.06s}
+  @keyframes rise{from{opacity:.001;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+@media print{
+  body{background:#fff;font-size:10.5pt}
+  .figbox,.eq,.card,.verdict{box-shadow:none}
+  section{break-inside:avoid}
+  a{color:var(--ink)}
+  @page{size:A4;margin:16mm}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow reveal">
+      <span>D0 · независимая проверка</span><span class="sep">/</span>
+      <span>задача: вывод отображения поле&nbsp;→&nbsp;прибор</span>
+    </div>
+    <h1 class="reveal">Поля <span class="arrow">→</span> операции записи <span class="arrow">→</span> отклик</h1>
+    <p class="lede reveal">Требование к тому единственному звену, отсутствие которого не даёт информационному действию D0 однозначной физической вариации: явное отображение вариации полей в вариацию операций записи.</p>
+    <div class="pins reveal">
+      <span class="pin">main <b>fa2b04b9…</b></span>
+      <span class="pin">SOURCE&nbsp;#310 <b>f0a6a851…</b></span>
+      <span class="pin">записка <b>15.10.2026</b></span>
+      <span class="pin">репозиторий <b>gvakhrushev/d0_15</b></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="verdict reveal">
+    <h2>Короткий ответ</h2>
+    <p>Отображение <span class="m">Φ</span> можно записать явно и оно определяется однозначно — <em>если</em> принять одно минимальное операционное условие: рид-аут прибора разделяет касательное пространство состояния записи. При этом условии ковектор отклика един, не зависит от внутренней реализации и согласован с уже полученными точными результатами.</p>
+    <p>Без этого условия отображение не единственно, и это не дефект вывода, а точное измерение разрыва: размерность ядра интерфейса превышает размерность пространства отклика на множитель <span class="m">2046</span> на каждые <span class="m">L</span><sup>4</sup>.</p>
+    <p><span class="chip c-open">граница</span> Само <span class="m">Φ</span> в этой работе не <em>выводится</em> из существующих артефактов D0 — оно задаётся как требование к интерфейсу и проверяется на согласованность с тремя владельцами.</p>
+  </div>
+
+  <section>
+    <div class="rail">§1</div>
+    <div class="body">
+      <h2>Владельцы и что каждый из них фиксирует</h2>
+      <p>Три источника на <code>SOURCE&nbsp;f0a6a851</code> задают границу интерфейса. Ни один из них не задаёт само отображение — важно видеть, что именно остаётся открытым в каждом.</p>
+      <div class="tw">
+        <table>
+          <caption>Вход: три владельца границы</caption>
+          <thead><tr><th>Владелец</th><th>Что фиксирует точно</th><th>Что оставляет открытым</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>A4D_NATIVE_FIELD_TO_<br>INSTRUMENT_JET_BOUNDARY</code></td>
+              <td>Полную область первых производных двух унитарных возвратов: <span class="m">Hom</span><sub>ℝ</sub>(<span class="m">T<sub>x</sub>X</span>, <span class="m">Herm</span>(4)⊕<span class="m">Herm</span>(4)).</td>
+              <td>Какая точка этой области физически допустима. Размерность области характеризует интерфейс, а не число физических свободных параметров.</td>
+            </tr>
+            <tr>
+              <td><code>A4D_NATIVE_POSITIVE_<br>HEAT_RADIAL_BALANCE</code></td>
+              <td>Точный положительный Hodge/CAR-спектр, функционал <span class="m">H<sub>L</sub></span>(<span class="m">Q</span>) и его производную; строгую границу <span class="m">&gt;&nbsp;1/30</span>.</td>
+              <td>Связь этого теплового отклика с источником полного действия и режим, в котором он подавляется.</td>
+            </tr>
+            <tr>
+              <td><code>A4D_NATIVE_CHRONOLOGICAL_<br>STATIONARY_DESCENT</code></td>
+              <td>Форму <span class="m">dJ</span>&nbsp;=&nbsp;<span class="m">j</span>(<span class="m">c</span>)&thinsp;<span class="m">dc</span> и существование <span class="m">V<sub>s</sub></span> с <span class="m">dc</span>[<span class="m">V<sub>s</sub></span>]&nbsp;=&nbsp;<span class="m">κ</span>&nbsp;&gt;&nbsp;0.</td>
+              <td>Производную остальных слагаемых <span class="m">H</span>+<span class="m">J</span>+<span class="m">R</span> — она должна следовать из того же физически допущенного процесса.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">
+        <p>Общий знаменатель всех трёх: <strong>фиксированные опорные данные не определяют отклик.</strong> Это уже показано точным примером <span class="m">S′<sub>λ</sub></span>(0)&nbsp;=&nbsp;<span class="m">λ</span>·3.719311223468523533… на настоящей бесследовой метрико-полевой вариации при одной подготовке, приборе, событии и калибровке.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">§2</div>
+    <div class="body">
+      <h2>Что требуется вывести</h2>
+      <p>Цель — замкнуть одну цепочку, а не перечислить её звенья. Вход: физические поля (<span class="m">q</span>,&nbsp;<span class="m">D</span>,&nbsp;<span class="m">b</span>,&nbsp;<span class="m">m</span>). Выход: однозначный физический ковектор.</p>
+      <figure>
+        <div class="figbox"><svg viewBox="0 0 760 232" role="img" aria-label="Схема: поля, отображение в операции записи, состояние, рид-аут, ковектор отклика">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker></defs>
+<rect x="8" y="58" width="128" height="60" rx="8" class="bx"/><text x="72.0" y="85.0" class="bl">поля</text><text x="72.0" y="103.0" class="bs">(q, D, b, m)</text>
+<line x1="136" y1="88" x2="166" y2="88" class="ar" marker-end="url(#ah)"/>
+<rect x="166" y="58" width="150" height="60" rx="8" class="bx"/><text x="241.0" y="85.0" class="bl">операции записи</text><text x="241.0" y="103.0" class="bs">U_r(q) = exp(iH_r(q))</text>
+<line x1="316" y1="88" x2="346" y2="88" class="ar" marker-end="url(#ah)"/>
+<rect x="346" y="58" width="128" height="60" rx="8" class="bx"/><text x="410.0" y="85.0" class="bl">состояние</text><text x="410.0" y="103.0" class="bs">σ(q) на M</text>
+<line x1="474" y1="88" x2="504" y2="88" class="ar" marker-end="url(#ah)"/>
+<rect x="504" y="58" width="120" height="60" rx="8" class="bx"/><text x="564.0" y="85.0" class="bl">рид-аут π_h</text><text x="564.0" y="103.0" class="bs">наблюдаемые</text>
+<line x1="624" y1="88" x2="652" y2="88" class="ar" marker-end="url(#ah)"/>
+<rect x="652" y="58" width="100" height="60" rx="8" class="bx"/><text x="702.0" y="85.0" class="bl">ковектор τ_h</text><text x="702.0" y="103.0" class="bs">отклик dS</text>
+<path d="M180,118 L180,150 L580,150 L580,124" class="ar2" marker-end="url(#ah)"/>
+<text x="380" y="170" class="bs mid">Φ: вариация поля → вариация оператора   (что именно требуется вывести)</text>
+<rect x="8" y="196" width="744" height="30" rx="6" class="kerbx"/>
+<text x="20" y="215" class="kl">ker Dπ_h — направления вариации полей, невидимые для прибора: ровно там отклик τ_h остаётся неопределённым</text>
+</svg></div>
+        <figcaption>Пунктирная стрелка <span class="m">Φ</span> — то единственное звено, которое требуется задать. Нижняя полоса — множество направлений, невидимых прибору; именно на нём отклик остаётся неопределённым.</figcaption>
+      </figure>
+      <p>Критерий приёмки формулируется ровно так, как в задаче, но с одним уточнением: одного условия <em>исчезновения производной вдоль скрытых направлений</em> недостаточно. Контрпример элементарен:</p>
+      <div class="eq">
+        <span class="tag">(1)</span>
+        <span class="m">S</span>(<span class="m">q</span>,&nbsp;<span class="m">c</span>) = <span class="m">q</span>·<span class="m">c</span>
+        &nbsp;&nbsp;⟹&nbsp;&nbsp;
+        ∂<sub><span class="m">c</span></sub><span class="m">S</span>|<sub><span class="m">q</span>=0</sub> = 0&nbsp;&nbsp;<span class="mn">для любого</span>&nbsp;<span class="m">c</span>,
+        &nbsp;&nbsp;<span class="mn">но</span>&nbsp;&nbsp;∂<sub><span class="m">q</span></sub><span class="m">S</span> = <span class="m">c</span>.
+      </div>
+      <p>Внутренняя стационарность выполнена при любой ветви, горизонтальный отклик — нет. Поэтому требуются <strong>оба</strong> условия: внутренняя стационарность <em>и</em> независимость горизонтального отклика от выбора внутренней ветви.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">§3</div>
+    <div class="body">
+      <h2>Формула отображения</h2>
+      <p>Внутреннее состояние записи живёт на многообразии <span class="m">M</span> с фиксированным положительным скалярным произведением; прибор возвращает геометрические данные через <span class="m">π<sub>h</sub></span>. Отображение задаётся своим дифференциалом.</p>
+      <div class="eq eq-hero">
+        <span class="tag">Φ</span>
+        <span class="fn">Dπ<sub>h</sub></span>|<sub><span class="m">x</span></sub> : <span class="m">T<sub>x</sub>X</span> ⟶ <span class="m">T<sub>π<sub>h</sub>(x)</sub>Y</span>,
+        &nbsp;&nbsp;
+        <span class="fn">Φ</span>[<span class="m">V</span>] := <span class="fn">Dπ<sub>h</sub></span>|<sub><span class="m">x</span></sub>&thinsp;<span class="m">V</span>
+        <span class="sub">вариация поля <span class="m">V</span> ∈ <span class="m">T<sub>x</sub>X</span> отображается в вариацию наблюдаемых операций прибора; сама вариация состояния записи есть <span class="fn">Dσ</span>|<sub><span class="m">x</span></sub>[<span class="m">V</span>] = <span class="m">i</span>[<span class="m">H</span>(<span class="m">V</span>),&thinsp;σ(<span class="m">x</span>)]</span>
+      </div>
+      <p>В компонентах, если через <span class="m">H</span>(<span class="m">V</span>) обозначено эрмитово поле генератора возврата, полная вариация действия вдоль физического направления равна</p>
+      <div class="eq">
+        <span class="tag">(2)</span>
+        <span class="m">dS</span>[<span class="m">V</span>] = ⟨<span class="m">τ<sub>h</sub></span>(<span class="m">π<sub>h</sub></span>(<span class="m">x</span>)),&nbsp;<span class="fn">Dπ<sub>h</sub></span>|<sub><span class="m">x</span></sub><span class="m">V</span>⟩
+        &nbsp;=&nbsp;
+        <span class="m">D</span><sub><span class="m">c</span></sub><span class="m">A</span><sub>op</sub>[<span class="m">i</span>[<span class="m">H</span>(<span class="m">V</span>),&thinsp;σ]].
+      </div>
+      <h3>Ядро интерфейса — источник неопределённости</h3>
+      <p>Область интерфейса — это <span class="m">Hom</span><sub>ℝ</sub>(<span class="m">T<sub>x</sub>X</span>,&nbsp;<span class="m">Herm</span>(4)⊕<span class="m">Herm</span>(4)). Её размерность и размерность пространства отклика считаются точно.</p>
+      <div class="tw">
+        <table>
+          <caption>Размерности: интерфейс против отклика (L = 4)</caption>
+          <thead><tr><th>Объект</th><th class="mid">Формула</th><th class="num">L = 4</th></tr></thead>
+          <tbody>
+            <tr><td>Область интерфейса</td><td class="mid"><span class="m">32</span>·<span class="m">66</span>·<span class="m">L</span><sup>4</sup> = 2112·<span class="m">L</span><sup>4</sup></td><td class="num">540 672</td></tr>
+            <tr><td>Пространство отклика <span class="m">T<sub>x</sub>X</span>*</td><td class="mid"><span class="m">66</span>·<span class="m">L</span><sup>4</sup></td><td class="num">16 896</td></tr>
+            <tr class="warn"><td>Ядро <span class="fn">ker</span>&nbsp;Φ (невидимые направления)</td><td class="mid">≥ 2046·<span class="m">L</span><sup>4</sup></td><td class="num">523 776</td></tr>
+            <tr><td>Доля невидимых направлений</td><td class="mid">≥ 31/32</td><td class="num">0.96875</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Это и есть точная мера разрыва: не «недостающий расчёт», а целое ядро, вдоль которого вариация полей не видна прибору. Следствие — условие однозначности, которое нужно принять явно, а не подразумевать.</p>
+      <div class="note warn">
+        <p><strong>Условие (R).</strong> Дифференциал рид-аута <span class="fn">Dπ<sub>h</sub></span>|<sub><span class="m">x</span></sub> инъективен на касательном пространстве состояния записи: рид-аут разделяет когерентные компоненты, а не только диагональ.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">§4</div>
+    <div class="body">
+      <h2>Однозначность отклика</h2>
+      <p>Возьмём конкретную модель, воспроизводящую собственный срез D0. Состояние записи — плотность на трёхмерном пространстве историй; <span class="m">μ</span> — золотая мера.</p>
+      <div class="eq">
+        <span class="tag">(3)</span>
+        σ(<span class="m">η</span>,<span class="m">ξ</span>,<span class="m">ζ</span>) =
+        <span class="fn">p</span><sup>2</sup>[[1+<span class="m">η</span>,&nbsp;<span class="m">ξ</span>+<span class="m">iζ</span>],[<span class="m">ξ</span>−<span class="m">iζ</span>,&nbsp;1−<span class="m">η</span>]] ⊕ <span class="fn">p</span><sup>3</sup>,
+        &nbsp;&nbsp;
+        μ = <span class="fn">diag</span>(<span class="fn">p</span><sup>2</sup>, <span class="fn">p</span><sup>2</sup>, <span class="fn">p</span><sup>3</sup>),
+        &nbsp;&nbsp;
+        <span class="fn">p</span>+<span class="fn">p</span><sup>2</sup> = 1.
+      </div>
+      <p>Три вещественных параметра — это и есть <span class="m">T<sub>x</sub>M</span>: изменение заселённостей (<span class="m">η</span>) и две когерентные компоненты (<span class="m">ξ</span>,&nbsp;<span class="m">ζ</span>). Информационное слагаемое — относительная энтропия полного матричного состояния записи, нормированная на <span class="m">ln&nbsp;φ</span>. Через <span class="m">r</span>&nbsp;=&nbsp;√(<span class="m">η</span><sup>2</sup>+<span class="m">ξ</span><sup>2</sup>+<span class="m">ζ</span><sup>2</sup>) она равна</p>
+      <div class="eq">
+        <span class="tag">(4)</span>
+        <span class="m">A</span><sub>op</sub>(<span class="m">w</span>) =
+        <span class="fn">p</span><sup>2</sup>[(1+<span class="m">r</span>)&thinsp;<span class="fn">ln</span>(1+<span class="m">r</span>) + (1−<span class="m">r</span>)&thinsp;<span class="fn">ln</span>(1−<span class="m">r</span>)] / <span class="fn">ln</span>&thinsp;φ,
+        &nbsp;&nbsp;
+        <span class="fn">∇A</span><sub>op</sub>|<sub><span class="m">w</span>=<span class="m">w</span><sub>0</sub></sub> = (0,&nbsp;<span class="m">a</span>,&nbsp;0),
+        &nbsp;&nbsp;
+        <span class="m">a</span> = <span class="fn">p</span><sup>2</sup>&thinsp;<span class="fn">ln</span>&thinsp;4 / <span class="fn">ln</span>&thinsp;φ.
+      </div>
+      <p>Ключевое: при <span class="m">w</span><sub>0</sub> = (0,&nbsp;3/5,&nbsp;0) диагональ состояния не зависит от <span class="m">ξ</span>, поэтому <span class="m">∂<sub>η</sub>A</span><sub>op</sub> = <span class="m">∂<sub>ζ</sub>A</span><sub>op</sub> = 0, а <span class="m">∂<sub>ξ</sub>A</span><sub>op</sub> = <span class="m">a</span> ≠ 0. Градиент целиком лежит в направлениях, которые диагональная статистика не видит.</p>
+
+      <h3>Два рид-аута, один и тот же вывод</h3>
+      <div class="grid2">
+        <div class="card">
+          <span class="tagline">рид-аут 1 · только вероятности</span>
+          <h4>Отклик не представим</h4>
+          <p><span class="fn">Dπ</span><sub>1</sub> отображает <span class="m">w</span> в <span class="fn">diag</span>&thinsp;σ, имеет ранг 1, ядро — span{<span class="m">e<sub>ξ</sub></span>,&nbsp;<span class="m">e<sub>ζ</sub></span>}. Образ — span{(<span class="fn">p</span><sup>2</sup>,&nbsp;−<span class="fn">p</span><sup>2</sup>,&nbsp;0)}. Никакое <span class="m">τ</span> не даёт <span class="m">τ</span>∘<span class="fn">Dπ</span><sub>1</sub> = (0,&nbsp;<span class="m">a</span>,&nbsp;0) при <span class="m">a</span> ≠ 0.</p>
+        </div>
+        <div class="card">
+          <span class="tagline">рид-аут 2 · диагональ + когерентности</span>
+          <h4>Отклик единствен</h4>
+          <p><span class="fn">Dπ</span><sub>2</sub> обратим, ранг 3. Тогда <span class="m">τ<sub>h</sub></span> = <span class="fn">∇A</span><sub>op</sub> и <span class="m">dS</span>[<span class="m">V</span>] = ⟨<span class="fn">∇A</span><sub>op</sub>,&nbsp;<span class="fn">Dπ</span><sub>h</sub><span class="m">V</span>⟩ — одно и то же число в любых внутренних координатах.</p>
+        </div>
+      </div>
+      <div class="note">
+        <p><strong>Независимая проверка.</strong> Для произвольного обратимого <span class="m">M</span> и <span class="m">π<sub>B</sub></span> = <span class="m">M</span><span class="m">w</span> вычислено <span class="m">τ<sub>B</sub></span> = <span class="m">M</span><sup>−⊤</sup><span class="fn">∇A</span><sub>op</sub>. Совпадение <span class="m">dS</span> на двух пробных вариациях: расхождение <span class="fn">1.4·10</span><sup>−17</sup> и <span class="fn">0.0</span> — машинная точность.</p>
+      </div>
+      <p>Это и есть содержательная версия требования 2: <strong>однозначность отклика, а не однозначность микроскопического оператора.</strong> При выполнении (R) разные внутренние реализации одинаковых наблюдаемых данных дают один и тот же ковектор на физических вариациях.</p>
+      <p>Обратите внимание на структуру доказательства: оно условное. Само (R) — это требование к прибору, а не следствие уже принятых утверждений D0. Но (R) не произвольно: оно необходимо, если D0 намерен использовать собственный результат о когерентной записи, и оно же является ровно тем, чего не хватает для представления отклика при классическом рид-ауте.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">§5</div>
+    <div class="body">
+      <h2>Согласованность с тепловым тестом</h2>
+      <p>Требование 3 проверяется независимым пересчётом опубликованного положительного Hodge/CAR-функционала при <span class="m">β</span> = <span class="fn">ln</span>&nbsp;2 вдоль объёмосохраняющей кривой <span class="m">Q</span>(<span class="m">t</span>) = <span class="fn">diag</span>(4<span class="m">e</span><sup>2<span class="m">t</span></sup>, <span class="m">e</span><sup>−2<span class="m">t</span></sup>/4, 1, 1), det&nbsp;<span class="m">Q</span> = 1. Производная равна <span class="m">2</span>(<span class="m">E</span><sub>1,<span class="m">L</span></sub> − <span class="m">E</span><sub>2,<span class="m">L</span></sub>).</p>
+      <figure>
+        <div class="figbox"><svg viewBox="0 0 760 330" role="img" aria-label="Сходимость теплового отклика dH/dt по размеру сетки L к континуальному значению 0.04211">
+<g class="gridlines"><line x1="58" y1="284.0" x2="674" y2="284.0" class="gl"/><text x="48" y="288.0" class="gt">0.03</text><line x1="58" y1="232.6" x2="674" y2="232.6" class="gl"/><text x="48" y="236.6" class="gt">0.05</text><line x1="58" y1="181.3" x2="674" y2="181.3" class="gl"/><text x="48" y="185.3" class="gt">0.07</text><line x1="58" y1="129.9" x2="674" y2="129.9" class="gl"/><text x="48" y="133.9" class="gt">0.09</text><line x1="58" y1="78.5" x2="674" y2="78.5" class="gl"/><text x="48" y="82.5" class="gt">0.11</text><line x1="58" y1="27.1" x2="674" y2="27.1" class="gl"/><text x="48" y="31.1" class="gt">0.13</text><line x1="58.0" y1="22" x2="58.0" y2="284" class="gl gv"/><text x="58.0" y="302" class="gt mid">4</text><line x1="146.0" y1="22" x2="146.0" y2="284" class="gl gv"/><text x="146.0" y="302" class="gt mid">8</text><line x1="234.0" y1="22" x2="234.0" y2="284" class="gl gv"/><text x="234.0" y="302" class="gt mid">16</text><line x1="322.0" y1="22" x2="322.0" y2="284" class="gl gv"/><text x="322.0" y="302" class="gt mid">32</text><line x1="410.0" y1="22" x2="410.0" y2="284" class="gl gv"/><text x="410.0" y="302" class="gt mid">64</text><line x1="498.0" y1="22" x2="498.0" y2="284" class="gl gv"/><text x="498.0" y="302" class="gt mid">128</text><line x1="586.0" y1="22" x2="586.0" y2="284" class="gl gv"/><text x="586.0" y="302" class="gt mid">256</text><line x1="674.0" y1="22" x2="674.0" y2="284" class="gl gv"/><text x="674.0" y="302" class="gt mid">512</text></g>
+<line x1="58" y1="22" x2="58" y2="284" class="axis"/>
+<line x1="58" y1="284" x2="674" y2="284" class="axis"/>
+<line x1="58" y1="252.9" x2="674" y2="252.9" class="cont"/>
+<text x="682" y="256.9" class="ct">0.04211<tspan class="cts">континуум</tspan></text>
+<line x1="58" y1="275.4" x2="674" y2="275.4" class="bnd"/>
+<text x="682" y="279.4" class="ct gold">1/30<tspan class="cts">строгая граница</tspan></text>
+<polyline points="58.0,41.2 146.0,216.2 234.0,244.5 322.0,250.9 410.0,252.4 498.0,252.8 586.0,252.9 674.0,252.9" class="line"/>
+<circle cx="58.0" cy="41.2" r="3.4" class="dot"/><circle cx="146.0" cy="216.2" r="3.4" class="dot"/><circle cx="234.0" cy="244.5" r="3.4" class="dot"/><circle cx="322.0" cy="250.9" r="3.4" class="dot"/><circle cx="410.0" cy="252.4" r="3.4" class="dot"/><circle cx="498.0" cy="252.8" r="3.4" class="dot"/><circle cx="586.0" cy="252.9" r="3.4" class="dot"/><circle cx="674.0" cy="252.9" r="3.4" class="dot"/>
+<text x="58" y="16" class="gt">dH_L/dt</text>
+<text x="674" y="318" class="gt end">размер сетки L (лог. шкала)</text>
+</svg></div>
+        <figcaption>Отклик <span class="m">dH<sub>L</sub></span>/<span class="m">dt</span> по размеру сетки (логарифмическая шкала). Сходимость к континуальному значению 0.042110004806… сверху; строгая аналитическая граница 0.035019188596… остаётся выше <span class="m">1/30</span>.</figcaption>
+      </figure>
+      <div class="tw">
+        <table>
+          <caption>Тепловой отклик: независимый пересчёт</caption>
+          <thead><tr><th class="mid">L</th><th class="num">dH<sub>L</sub>/dt</th><th class="mid">L</th><th class="num">dH<sub>L</sub>/dt</th></tr></thead>
+          <tbody>
+            <tr><td class="mid">4</td><td class="num">0.124513618677</td><td class="mid">64</td><td class="num">0.042307453804</td></tr>
+            <tr><td class="mid">8</td><td class="num">0.056387458747</td><td class="mid">128</td><td class="num">0.042159295183</td></tr>
+            <tr><td class="mid">16</td><td class="num">0.045362567733</td><td class="mid">256</td><td class="num">0.042122322912</td></tr>
+            <tr><td class="mid">32</td><td class="num">0.042904417032</td><td class="mid">512</td><td class="num">0.042113084052</td></tr>
+            <tr class="hi"><td class="mid">∞</td><td class="num">0.042110004806</td><td class="mid">граница</td><td class="num">0.035019188596</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Что из этого следует для Φ</h3>
+      <ul>
+        <li><strong>Чисто метрический сдвиг исключён.</strong> Если бы <span class="m">Φ</span> сводилось к вариации метрики, объёмный множитель преобразования Пуассона дал бы постоянный вклад, а отклик формы — нулевой. Наблюдаемый отклик ненулевой.</li>
+        <li><strong>Объёмная добавка бессильна.</strong> Вдоль тестовой кривой det&nbsp;<span class="m">Q</span> = 1 точно, поэтому любое слагаемое, зависящее только от объёма, имеет нулевую производную и не может скомпенсировать <span class="m">dH</span>/<span class="m">dt</span>.</li>
+        <li><strong>Единственное совместимое чтение.</strong> С отображением, устроенным как «поле → генератор операции записи → полное информационное действие», тепловой отклик входит в <span class="m">A</span><sub>op</sub> как положительное слагаемое теплового типа и переносится в полный источник. Требование 3 выполняется по построению, а не по совпадению чисел.</li>
+        <li><strong>Чего это не означает.</strong> Отклик не обязан исчезать при измельчении сетки: <span class="m">L</span>→∞ и <span class="m">β</span>→0 — разные пределы. Глобальная спектральная зависимость компактного тора остаётся. Это тепловой или нелокальный вклад, который надо вывести именно так и включить в источник.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">§6</div>
+    <div class="body">
+      <h2>Согласованность с хронологией</h2>
+      <p>Здесь формулируется ловушка, в которую нельзя попасть при сборке полного действия. В хронологическом классе <span class="m">dJ</span> = <span class="m">j</span>(<span class="m">c</span>)&thinsp;<span class="m">dc</span>, и существует нормированная скалярная вариация материи <span class="m">V<sub>s</sub></span> с <span class="m">dc</span>[<span class="m">V<sub>s</sub></span>] = <span class="m">κ</span> &gt; 0.</p>
+      <div class="eq">
+        <span class="tag">(5)</span>
+        <span class="m">dJ</span>[<span class="m">V<sub>s</sub></span>] = <span class="m">j</span>(<span class="m">c</span>)·<span class="m">κ</span> = 0
+        &nbsp;⟹&nbsp;
+        <span class="m">j</span>(<span class="m">c</span>) = 0
+        &nbsp;⟹&nbsp;
+        <span class="m">dJ</span>[<span class="m">V</span>] = 0
+        &nbsp;<span class="mn">для всех совместных</span>&nbsp;<span class="m">V</span>.
+      </div>
+      <p>Собственное уравнение материи обнуляет обратную связь целиком, включая метрические направления. Нельзя сначала потребовать стационарности материи, а затем свободно использовать тот же вклад для компенсации оставшегося источника.</p>
+      <h3>Как это разрешается</h3>
+      <p>Для более полного действия <span class="m">S</span> = <span class="m">H</span>+<span class="m">J</span>+<span class="m">R</span> вывод становится определённым, а не свободным:</p>
+      <div class="eq">
+        <span class="tag">(6)</span>
+        <span class="m">dJ</span>[<span class="m">V</span>] = − (<span class="m">dR</span>[<span class="m">V<sub>s</sub></span>] / <span class="m">κ</span>)&thinsp;<span class="m">dc</span>[<span class="m">V</span>].
+      </div>
+      <p>Коэффициент обратной связи <em>определён</em> через производную <span class="m">R</span> по той же вариации — и <span class="m">R</span> должна порождаться тем же физически допущенным процессом, а не назначаться равной недостающему ответу. Золотой двухтактовый блок при этом проверяется точно: <span class="m">F</span> = 4<span class="fn">p</span><sup>3</sup><span class="m">vv</span><sup>⊤</sup>, det(<span class="m">I</span>−<span class="m">zF</span>) = 1 − 4<span class="m">z</span><span class="fn">p</span><sup>3</sup>, при <span class="m">z</span> = 1 множитель 1 − 4<span class="fn">p</span><sup>3</sup> = 0.05572809… не мал, то есть сокращения не происходит.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">§7</div>
+    <div class="body">
+      <h2>Проверенные константы</h2>
+      <p>Все величины ниже пересчитаны независимо в этой сессии: символьные тождества — точно, численные — с рабочей точностью не ниже 50 значащих цифр, кроме таблицы сходимости по <span class="m">L</span>, которая считается в плавающей точке.</p>
+      <div class="tw">
+        <table>
+          <caption>Сводка независимых проверок</caption>
+          <thead><tr><th>Величина</th><th class="num">Значение</th><th>Статус</th></tr></thead>
+          <tbody>
+            <tr><td>Золотая рекурсия <span class="m">x<sub>n</sub></span> = <span class="m">x</span><sub><span class="m">n</span>+1</sub> + <span class="m">x</span><sub><span class="m">n</span>+2</sub>, <span class="m">x</span><sub>0</sub>+<span class="m">y</span><sub>0</sub> = 1</td><td class="num">выполняется точно</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td><span class="fn">p</span> + <span class="fn">p</span><sup>2</sup>, &nbsp; <span class="fn">p</span> = (√5−1)/2</td><td class="num">1.000000000000000000</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td>Множитель золотого двухтактового блока 4<span class="fn">p</span><sup>3</sup></td><td class="num">0.944271909999158786</td><td><span class="chip c-ok">точно</span></td></tr>
+            <tr><td><span class="m">A</span><sub>op</sub>(<span class="m">ξ</span> = 3/5, <span class="m">u</span> = 0)</td><td class="num">0.305985606317353003</td><td><span class="chip c-ok">совпадает</span></td></tr>
+            <tr><td>∂<sub><span class="m">ξ</span></sub><span class="m">A</span><sub>op</sub> в этой точке</td><td class="num">1.100383032918800056</td><td><span class="chip c-ok">совпадает</span></td></tr>
+            <tr><td>∂<sub>θ</sub><span class="m">A</span><sub>op</sub> = −4<span class="fn">p</span><sup>2</sup><span class="fn">ln</span>4 / (5<span class="fn">ln</span>φ)</td><td class="num">−0.880306426335040045</td><td><span class="chip c-ok">совпадает</span></td></tr>
+            <tr><td>∂<sup>2</sup><sub><span class="m">u</span></sub><span class="m">A</span><sub>op</sub></td><td class="num">1.173741901780053393</td><td><span class="chip c-ok">совпадает</span></td></tr>
+            <tr><td>Тепловой отклик, континуальный предел</td><td class="num">0.042110004806201643</td><td><span class="chip c-ok">совпадает</span></td></tr>
+            <tr><td>Строгая граница теплового отклика</td><td class="num">0.035019188596491231</td><td><span class="chip c-ok">&gt; 1/30</span></td></tr>
+            <tr class="warn"><td>Отклик при классическом рид-ауте</td><td class="num">не представим</td><td><span class="chip c-open">предел</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">§8</div>
+    <div class="body">
+      <h2>Что осталось открытым</h2>
+      <p>Границы этой работы перечисляются так же явно, как результаты. Ни одна из них не является «недостающим расчётом»: каждая требует вывода, а не подстановки.</p>
+      <ul>
+        <li><span class="chip c-open">открыто</span> <strong>Физический допуск <span class="m">Φ</span>.</strong> Отображение задано как требование к интерфейсу и проверено на согласованность. Вывод его из более элементарного принципа регистрации не выполнен.</li>
+        <li><span class="chip c-open">открыто</span> <strong>Условие (R).</strong> Требование, чтобы рид-аут разделял когерентности, обосновано необходимостью, но не выведено из полного набора операций, допустимых в D0.</li>
+        <li><span class="chip c-open">открыто</span> <strong>Равномерность по <span class="m">L</span>.</strong> Обратимость гессиана связности на одной сетке не доказывает устойчивость при уточнении; искривлённый лист решений и полный интервальный пакет в этой сессии не перезапускались.</li>
+        <li><span class="chip c-open">открыто</span> <strong>Однозначность <span class="m">τ<sub>h</sub></span> на всём классе решений.</strong> Проверено на выбранной модели состояния записи; общий случай требует, чтобы горизонтальный отклик не зависел от выбора внутренней ветви во всей непустой области полных решений.</li>
+        <li><span class="chip c-open">открыто</span> <strong>Предел Эйнштейна.</strong> Только после предыдущего пункта имеет смысл доказывать переход к эйнштейновскому отклику с действительно выведенным материальным источником.</li>
+      </ul>
+      <div class="note warn">
+        <p>Полная сборка Lean и большой интервальный пакет искривлённого решения в этой сессии не запускались. Численные результаты не являются интервальными сертификатами, кроме строгой границы <span class="m">&gt; 1/30</span>, полученной в точных рациональных числах.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail">§9</div>
+    <div class="body">
+      <h2>Воспроизведение</h2>
+      <p>Проверки выполнены в обычном и оптимизированном режимах; результаты совпадают. Тесты используют явные исключения, а не отключаемый <code>assert</code>.</p>
+<pre><span class="cm"># золотой след, когерентная запись, тепловой тест, хронология</span>
+python independent_checks.py --output independent_results.json
+python -O independent_checks.py --output independent_results_optimized.json</pre>
+      <p>Точные рациональные проверки границы теплового отклика, символьная проверка лоренцевой квадратичной формы и пересчёт собственных значений состояния записи выполнены отдельно и не зависят от таблицы с плавающей точкой.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p class="sig">D0 · поле → прибор · независимая проверка · main fa2b04b9… · SOURCE #310 f0a6a851…</p>
+  <p>Эта работа — ограниченная математическая проверка, а не новая версия D0, не результат CONTROL и не закрытие задач #310/#202/#317. Репозиторий <span class="fn">gvakhrushev/d0_15</span> этой работой не изменялся. Результаты исследовательской ветки не смешаны с принятыми утверждениями <span class="fn">main</span>.</p>
+</footer>
+
+</body>
+</html>
