@@ -489,6 +489,93 @@
         }
       ],
       "reported_state": "Exact rational control at h=1: the uniform correction makes all 24 cubic link rows vanish at the origin, but two coframe rows remain; the same correction gives nonzero link rows at (1,0). This is restricted to the fixed-coframe, spatially uniform chart and is not a no-go for spatially varying corrections or physical D0-to-GR."
+    },
+    {
+      "id": "double-null-cubic-polynomial-chart-obstruction",
+      "owner": "independent exact finite-control replay in #379",
+      "statement": "For H=a*x, J=b*y at h=1 with the published exact order-a*b repair, no site-dependent corrections for all 24 Lorentz links and 16 coframe components that are polynomials of total spatial degree at most two make all original finite Euler rows vanish at order a^2*b.",
+      "interface": "double-null-cubic-polynomial-chart-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null affine chart A=(1,0), B=(0,1), with H=a*x and J=b*y.",
+        "base_connection": "The exact mixed a*b Cartan repair from the original six-plaquette theorem, continued with the continuum Levi-Civita link trial.",
+        "formal_ring": "Exact rational [a^2 b] extraction in Q[a,b]/(a^3,b^3).",
+        "correction_chart": "All 24 proper-Lorentz link and 16 coframe corrections have independent degree-at-most-two polynomials in x,y, evaluated at each link/coframe site including shifted plaquette sites.",
+        "equations": "All 24 original left-link and all 16 independent coframe Euler rows; 240 coefficients against 1,x,y,x^2,x*y,y^2.",
+        "scope_fence": "Rank separation excludes this polynomial chart only. Arbitrary site functions, higher-degree/nonpolynomial corrections, alternate branches, an exact nonlinear root and native D0 price remain open."
+      },
+      "evidence": [
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/check_cubic_polynomial_chart.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/check_cubic_polynomial_chart.py",
+          "sha256": "6f1500d291d43773c92053051971ac0610d273879722c9c9787840c0edbd7cb5"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/output.txt",
+          "sha256": "73fc385734a7f3f39f874658b06d5d6aabcd12f9b1a49b2354ee69bfff7f4d4f"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
+          "sha256": "3d0f2424cf5c9fb7f54bbcba0d2dd3fe351fc607d2d5f99525481d5a5f937200"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        }
+      ],
+      "reported_state": "The exact 240 by 240 coefficient system has rank 154 and augmented rank 155. This is a scoped finite-chart obstruction, not a general no-go for the crossed-null branch."
+    },
+    {
+      "id": "double-null-continuum-fourth-order-ricci-jet",
+      "owner": "independent exact symbolic replay in #379",
+      "statement": "For arbitrary real orthogonal slopes A=(p,q), B=kappa*(-q,p), a transverse conformal profile with coefficient k=3/1024 cancels all 16 continuum Ricci entries through total amplitude degree four, and the two-Killing area radius is harmonic to that order.",
+      "interface": "double-null-continuum-fourth-order-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "geometry": "Continuum crossed-null metric with g_uv=1+H*J/4, g_uu=H, g_vv=J and a flat transverse plane.",
+        "slopes": "A=(p,q), B=kappa*(-q,p) with real symbolic p,q,kappa.",
+        "lower_order_profiles": "The source-forced cubic H and J corrections with coefficient -1/32 are retained.",
+        "fourth_order_mode": "phi=k*(a*b)^2*|A|^2*|B|^2*(x^2+y^2)^2; the exact cancellation value is k=3/1024.",
+        "scope_fence": "Continuum jet only. No original finite link/coframe Euler rows, all-order solution, native price or physical selector is established."
+      },
+      "evidence": [
+        {
+          "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/check_crossed_null_ricci_degree4.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/check_crossed_null_ricci_degree4.py",
+          "sha256": "6e68fbfaa3ada4c33770c92ed46276e5c4acd379953b11dd14bb9b7b72be3440"
+        },
+        {
+          "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/output.txt",
+          "sha256": "08e7b9df5078e1fd8bda0a4f63b81fce9d3d8e34bf77399809cef8bb38a30382"
+        },
+        {
+          "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
+          "sha256": "9f37c24c8223e7e352e6799c3f0f69e51ae14a4759153491daaa095567e4c5f9"
+        }
+      ],
+      "reported_state": "All 16 Ricci entries vanish and the two-Killing area-radius Laplacian is zero through total amplitude degree four. This is separate from the finite cubic polynomial-chart obstruction and does not establish a finite D0 root."
     }
   ],
   "applications": [

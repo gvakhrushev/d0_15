@@ -190,6 +190,24 @@
       "normalization": "Exact rational coefficients in Q[a,b]/(a^3,b^3) at h=1; the flat homogeneous Cartan Hessian has determinant 256.",
       "refinement": "Finite exact coefficient test at two transverse nodes only; no uniform mesh or boundary limit.",
       "scope": "A negative control for a spatially uniform cubic connection correction with the affine coframe fixed. It does not exclude spatially varying link corrections, coframe modes or a coupled lattice solve."
+    },
+    "double-null-cubic-polynomial-chart-v1": {
+      "carrier": "The perpendicular affine crossed-null family H=a*x, J=b*y on the original h=1 lattice, with the exact published order-a*b Cartan repair.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows at every symbolic transverse site are formed before the cubic corrections are solved.",
+      "source": "At [a^2 b], degree-at-most-two site-dependent corrections for all 40 fields yield a 240-equation rational system with coefficient rank 154 and augmented rank 155.",
+      "normalization": "Exact Q[a,b]/(a^3,b^3) coefficients at h=1; each correction has independent rational coefficients against 1,x,y,x^2,x*y,y^2.",
+      "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
+      "scope": "An obstruction only to this joint quadratic-polynomial correction chart for the selected crossed-null background. Arbitrary lattice corrections and native physical selection remain open."
+    },
+    "double-null-continuum-fourth-order-v1": {
+      "carrier": "The continuum crossed-null two-Killing metric with arbitrary real orthogonal transverse slopes A=(p,q), B=kappa*(-q,p), including the derived cubic H/J profile corrections.",
+      "action": "Continuum Levi-Civita Ricci tensor, truncated by total amplitude degree four; no finite plaquette action is varied.",
+      "variations": "All 16 Ricci matrix entries and the two-Killing area-radius Laplacian are evaluated exactly in the declared amplitude jet.",
+      "source": "A transverse conformal factor phi=k*(a*b)^2*|A|^2*|B|^2*(x^2+y^2)^2 leaves only equal transverse residuals proportional to 1024*k-3; k=3/1024 cancels all entries.",
+      "normalization": "Exact symbolic coefficients over Q[p,q,kappa] with rational k=3/1024.",
+      "refinement": "Continuum calculation only; no finite-mesh refinement estimate is asserted.",
+      "scope": "An exact continuum Einstein jet through degree four for the stated family, not a finite 40-row root or a native D0 source law."
     }
   },
   "obligations": [
