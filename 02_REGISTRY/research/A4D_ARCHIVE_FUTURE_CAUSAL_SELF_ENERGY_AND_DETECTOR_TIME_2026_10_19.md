@@ -8,9 +8,9 @@ On the ORIGINAL complete directed edge space H_E of dimension718 with its native
 \[
 J_0^\dagger J_0=J_1^\dagger J_1=I_{33},\quad
 J_0^\dagger J_1=T=A/\rho=T^\dagger,\quad
-U_{\min}J_0=J_1,\quad U_{\min}^2=U_{\min}=U_{\min}^\dagger\ \text{ONLY IF }U_{\min}=I\text{ (FALSE)}.
+U_{\min}J_0=J_1,\quad U_{\min}^2=I_{718},\quad U_{\min}=U_{\min}^\dagger.
 \]
-**Correct involution statement** is \(U_{\min}^2=I,\ U_{\min}=U_{\min}^\dagger\); U_min is NOT an idempotent projection. Here A is the ORIGINAL unweighted adjacency K9,11,13; \(\rho>0\) solves \(\rho^3-359\rho-2574=0\), not the degree random walk.
+U_min is a self-adjoint involution, NOT an idempotent projection. Here A is the ORIGINAL unweighted adjacency K9,11,13; \(\rho>0\) solves \(\rho^3-359\rho-2574=0\), not the degree random walk.
 
 Define the PRESENT detector-visible projection and genuine invisible archive complement
 \[
