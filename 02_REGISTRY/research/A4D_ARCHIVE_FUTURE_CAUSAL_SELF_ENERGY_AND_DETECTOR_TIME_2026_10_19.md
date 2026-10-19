@@ -221,3 +221,32 @@ An independent central difference on the SAME original full-cost family gives
 where every field variation includes the moving original Perron normalization and both changing past/future isometries. This follows identically from the original full unitary \(U_{\min}(y)\) and \(T^\dagger T+R^\dagger R=I\); it expresses an exact balance between visible survival and hidden future information. It is NOT by itself a four-dimensional diffeomorphism Ward or Einstein identity.
 
 The nonzero original Cost source makes the archive-backreaction picture concrete, but its physical promotion still requires the **same paid and executed original Book/geometry/clock map**.
+
+
+## 8. Exact obstruction to an archive-free explanation, and the nontrivial alternative to a normalized Born sum
+
+A purely present-only model of this ORIGINAL finite transition would require the archived coupling R=Q_AU_minJ0 to vanish. But exact full unitarity then forces
+\[
+R=0\ \Longrightarrow\ T^\dagger T=I_{33}.
+\]
+This is IMPOSSIBLE for the original scene: T has thirty exactly zero eigenvalues and two further eigenvalues of modulus below1. Therefore
+\[
+\boxed{\text{The actual finite original scene FORCES a nonzero hidden-to-future archive channel of rank 32.}}\tag{16}
+\]
+There is no choice of the original current 33-coordinate detector representation that eliminates this prescribed \(Q_A\) coupling while preserving all the existing J0,J1 and U_min operators. This is a no-go for the **specified present-only compression**, not a universal theorem about every conceivable D0 detector.
+
+This identifies precisely why the earlier trivial-Born-partition objection does not exhaust the physics. The original complete closed channel has \(\sum_\omega q_\omega=1\) and therefore \(\log\sum q_\omega=0\): taking its full normalized scalar sum eliminates all source. Instead, project the SAME full unitary record comparison onto CURRENT distinguishable coordinates **while RETAINING the archived complement during elimination**. The resulting actual conditional propagator has nonzero \(\Sigma_A(s)\) in (3) even though the original total norm is conserved. This is NOT a new action: it is an exact original finite projection/resolvent identity. Identifying its induced Book detector price as the selected physical D0 gravitational action remains the one missing owner.
+
+**Backward-GR synthesis in one arrow:** 
+\[
+\boxed{
+\text{retained invisible future distinctions}
+\ \xrightarrow{\ Q_A U_{\min}J_0\ }\ 
+\text{archive self-energy } \Sigma_A
+\ \xrightarrow{\ \text{original detector + Cost source}\ }\ 
+\text{measurable response}.
+}
+\]
+The corresponding Lorentz/Einstein interpretation requires the already-owned
+**noncommuting ordered** six-link holonomy, its original full Price/Info/work
+and the SAME field/preparation/clock variation. The positive scalar F alone is NOT a signed Einstein tensor. This is now a typed single physical-source map to establish, not a request for more fitted curvature solutions or an archive-as-dark-matter name.
