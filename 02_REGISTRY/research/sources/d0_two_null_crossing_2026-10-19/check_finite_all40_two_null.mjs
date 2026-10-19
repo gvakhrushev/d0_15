@@ -112,6 +112,20 @@ assert.ok(a.uRot*a.vRot<0,'rotation link rows have opposite signs');
 assert.ok(Math.abs((a.maxS/b.maxS)-8)<0.3,'solder source scales h^3 locally');
 assert.ok(Math.abs((a.maxL/b.maxL)-16)<0.8,'link source scales h^4 locally');
 const parallel=compute([1,0],[1,0],z,h);
+const origin=[0,0,0,0];
+const crossing=compute([1,0],[0,1],origin,h),
+      crossingHalf=compute([1,0],[0,1],origin,h/2),
+      crossingParallel=compute([1,0],[1,0],origin,h);
+const leadingRot=h**4/4;
+assert.ok(Math.abs(crossing.uRot-leadingRot)<leadingRot*1e-4);
+assert.ok(Math.abs(crossing.vRot+leadingRot)<leadingRot*1e-4);
+assert.ok(Math.abs(crossingParallel.uRot)<1e-12&&Math.abs(crossingParallel.vRot)<1e-12);
+assert.ok(Math.abs(crossing.maxS/crossingHalf.maxS-16)<0.3);
+assert.ok(Math.abs(crossingParallel.maxS/h**3-0.25)<0.01);
+console.log('PASS: exact crossing isolates h^3 Ricci overlap from h^4 rotation link defect');
+console.log(JSON.stringify({crossing:{h,maxS:crossing.maxS,uRot:crossing.uRot,vRot:crossing.vRot,
+ halfMaxS:crossingHalf.maxS,halfURot:crossingHalf.uRot,
+ parallelMaxS:crossingParallel.maxS,parallelURot:crossingParallel.uRot}},null,2));
 console.log('PASS: each one-sided affine pp geometry is an exact 16+24 finite root');
 console.log('PASS: crossed continuum-LC trial is NOT finite stationary');
 console.log(JSON.stringify({h,orthogonal:{maxS:a.maxS,maxL:a.maxL,uRot:a.uRot,vRot:a.vRot},
