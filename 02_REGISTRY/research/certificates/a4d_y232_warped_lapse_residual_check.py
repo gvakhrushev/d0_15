@@ -360,6 +360,51 @@ def all_root_of_unity_gate() -> None:
     )
 
 
+def amplitude_retuning_gate() -> None:
+    """Check the exact lapse residual along the full real Cayley Y orbit."""
+    Y = OWNER.GEN[3] - OWNER.GEN[4] + OWNER.GEN[5]
+    amplitude = sp.symbols("amplitude", real=True)
+    U = OWNER.cayley_simple(Y, 3, amplitude)
+    check("ARBITRARY_AMPLITUDE_CAYLEY_LORENTZ", OWNER.reduced(U * OWNER.linv(U)) == OWNER.I4)
+
+    wave = [U, OWNER.I4, OWNER.linv(U), OWNER.I4]
+
+    def link(site, role):
+        return wave[sum(site) % 4] if role == 0 else OWNER.I4
+
+    lapse = {n: sp.symbols(f"N_{n}", real=True) for n in range(-4, 5)}
+
+    def solder(site):
+        result = OWNER.I4.copy()
+        result[0, 0] = lapse[site[1]]
+        return result
+
+    expected = {
+        (2, 3): lapse[-1] - lapse[0],
+        (3, 4): lapse[-1] - lapse[0],
+    }
+    for phase in range(4):
+        site = (phase, 0, 0, 0)
+        check(
+            f"ARBITRARY_AMPLITUDE_PHASE_{phase}_ALL_16_SOLDER_ROWS",
+            OWNER.solder_euler(solder, link, site) == sp.zeros(4),
+        )
+        actual = {}
+        for role in range(4):
+            for generator_index, generator in enumerate(OWNER.GEN):
+                value = sp.factor(OWNER.edge_euler(solder, link, site, role, generator))
+                if value != 0:
+                    actual[(role, generator_index)] = value
+        check(
+            f"ARBITRARY_AMPLITUDE_PHASE_{phase}_EXACT_CONNECTION_ROWS",
+            actual == expected,
+        )
+    print(
+        "AMPLITUDE_RETUNING_RESULT: for every real Cayley amplitude and all four phases, "
+        "the only connection residuals are E_omega(2,J_12)=E_omega(3,J_13)=N_-1-N_0."
+    )
+
+
 def main() -> None:
     # This is the literal #232 generator and its pinned Cayley point.
     Y = OWNER.GEN[3] - OWNER.GEN[4] + OWNER.GEN[5]
@@ -413,6 +458,7 @@ def main() -> None:
     check("CONSTANT_LAPSE_RESIDUAL_ZERO", all(
         value.subs(constant_profile) == 0 for value in expected.values()))
     print("RESULT: only E_omega(role 2,J_12)=E_omega(role 3,J_13)=N_{-1}-N_0 remain.")
+    amplitude_retuning_gate()
     first_order_joint_gate()
     finite_character_gate()
     all_root_of_unity_gate()
