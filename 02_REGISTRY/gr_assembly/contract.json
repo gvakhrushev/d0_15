@@ -208,6 +208,15 @@
       "normalization": "Exact symbolic coefficients over Q[p,q,kappa] with rational k=3/1024.",
       "refinement": "Continuum calculation only; no finite-mesh refinement estimate is asserted.",
       "scope": "An exact continuum Einstein jet through degree four for the stated family, not a finite 40-row root or a native D0 source law."
+    },
+    "double-null-cubic-finite-jet-v1": {
+      "carrier": "The perpendicular crossed-null affine family H=a*x, J=b*y on the original h=1 lattice.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing; continuum Levi-Civita links are only the initial trial.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows are expanded at symbolic transverse sites.",
+      "source": "Site-dependent degree-at-most-three corrections solve both [a^2*b] and [a*b^2]; a final simultaneous replay makes all 40 rows vanish identically through total amplitude degree three.",
+      "normalization": "Exact rational coefficients; each cubic coefficient system has 400 equations, rank 266 and augmented rank 266, with an explicit particular solution.",
+      "refinement": "One fixed spacing h=1; no mesh-uniform estimate or continuum limit is proved.",
+      "scope": "A finite perturbative vacuum jet on this crossed-null chart only. Higher amplitude orders, arbitrary slopes, global/boundary roots and physical D0 selection remain open."
     }
   },
   "obligations": [

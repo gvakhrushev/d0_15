@@ -550,7 +550,7 @@
           "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
         }
       ],
-      "reported_state": "The exact 240 by 240 coefficient system has rank 154 and augmented rank 155. This is a scoped finite-chart obstruction, not a general no-go for the crossed-null branch."
+      "reported_state": "The degree-at-most-two 240 by 240 coefficient system has rank 154 and augmented rank 155. This is only a lower-degree chart obstruction: the companion degree-at-most-three systems now solve both cubic amplitude coefficients and pass a combined all-40-row replay. Arbitrary site functions and higher amplitude orders remain open."
     },
     {
       "id": "double-null-continuum-fourth-order-ricci-jet",
@@ -588,6 +588,51 @@
         }
       ],
       "reported_state": "All 16 Ricci entries vanish and the two-Killing area-radius Laplacian is zero through total amplitude degree four. This is separate from the finite cubic polynomial-chart obstruction and does not establish a finite D0 root."
+    },
+    {
+      "id": "double-null-finite-cubic-euler-jet",
+      "owner": "independent exact finite replay in #379",
+      "statement": "For H=a*x, J=b*y at h=1 on the original six-plaquette action, there exist site-dependent degree-at-most-three corrections for all 24 Lorentz links and 16 coframe components that make every original Euler row vanish identically in x,y through total amplitude degree three, including both [a^2*b] and [a*b^2].",
+      "interface": "double-null-cubic-finite-jet-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart A=(1,0), B=(0,1), with H=a*x and J=b*y.",
+        "base_connection": "The continuum Levi-Civita link trial plus the published exact mixed a*b Cartan repair; all higher link and coframe corrections are solved as independent fields.",
+        "formal_ring": "Exact rational amplitude coefficients; the claim covers every monomial of total amplitude degree at most three and does not cover a^2*b^2.",
+        "correction_chart": "All 24 directed proper-Lorentz link components and all 16 coframe components have independent site-dependent spatial polynomials of total degree at most three, evaluated at each shifted site.",
+        "linear_systems": "For each cubic coefficient, 400 rational coefficient equations have rank 266 and augmented rank 266; an explicit solution is obtained by setting the 134 free parameters to zero.",
+        "combined_check": "Both particular solutions are substituted at once; all 40 original Euler rows vanish symbolically in x,y at every amplitude order through total degree three.",
+        "scope_fence": "This is a finite perturbative jet at h=1 for one orthogonal slope pair, not an all-order root, arbitrary-slope family, refinement theorem, sourced matter solution or native physical selector."
+      },
+      "evidence": [
+        {
+          "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/check_cubic_polynomial_degree3.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/check_cubic_polynomial_degree3.py",
+          "sha256": "5748a1e4f18fe3e09bff805fa5a243ede2efb098d10fd31ee69be75ad85f9817"
+        },
+        {
+          "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_output.txt",
+          "sha256": "44f088293171a818beadbec12add96fb97672cea8f283fa2c9bda25531bd58e3"
+        },
+        {
+          "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
+          "sha256": "5ceb5f2ffe107391154797c64e463bb708dac073ea91255d0b0eae19c91249e6"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        }
+      ],
+      "reported_state": "Both cubic coefficient systems are exactly consistent, and a combined replay verifies all 40 original Euler rows vanish through total amplitude degree three for symbolic x,y. This is a finite crossed-null vacuum jet, not an all-order solution or native D0-to-GR closure."
     }
   ],
   "applications": [
