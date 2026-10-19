@@ -218,6 +218,130 @@ def run(repo=None):
     require(julia_anti_defect_norm2 > 0,
             "reversed_order_does_not_restore_representation")
 
+    # Reapply the same original full128 Kraus instrument at two assigned
+    # Lorentz increments, retaining the fresh outcome after each round.
+    # This is a matrix-program history test, not a claim that D0 physically
+    # compiles either increment into an onsite memory word.
+    def full128_kraus_and_tangent(generator):
+        G = sum(
+            (generator[i, j] * C[i] * C[j].H
+             for i in range(4) for j in range(4)),
+            s.zeros(16),
+        )
+        words = []
+        dwords = []
+        for role in range(4):
+            Qleft = C[role] * C[role].H
+            Qright = C[role].H * C[role]
+            P = nu * C[role] * z[role]
+            L = I16 - s.Rational(1, 5) * Qleft
+            R = I16 - s.Rational(1, 5) * Qright
+            dP_role = (nu * C[role] * G * z[role]
+                       if role == 2 else s.zeros(16))
+            if role == 2:
+                rhs_left = -dP_role * P.H - P * dP_role.H
+                rhs_right = -dP_role.H * P - P.H * dP_role
+                dL_role = sylvester_at_base(Qleft, rhs_left)
+                dR_role = sylvester_at_base(Qright, rhs_right)
+                eq(L * dL_role + dL_role * L, rhs_left,
+                   "sequential_left_Julia_root_tangent")
+                eq(R * dR_role + dR_role * R, rhs_right,
+                   "sequential_right_Julia_root_tangent")
+            else:
+                dL_role = s.zeros(16)
+                dR_role = s.zeros(16)
+            fixed_left = I16 - s.Rational(1, 5) * Qleft
+            fixed_right = I16 - s.Rational(1, 5) * Qright
+            items = (
+                ((P, L), (dP_role, dL_role)),
+                ((P.H, R), (dP_role.H, dR_role)),
+                ((-nu * C[role], -fixed_left),
+                 (s.zeros(16), s.zeros(16))),
+                ((-nu * C[role].H, -fixed_right),
+                 (s.zeros(16), s.zeros(16))),
+            )
+            for item, derivative in items:
+                for _ in range(2):
+                    words.append(item)
+                    dwords.append(derivative)
+
+        rows = []
+        drows = []
+        for label in range(32):
+            signs = [s.Rational((-1) ** bin(label & j).count("1"), 32)
+                     for j in range(32)]
+            for coefficient in range(2):
+                rows.append(sum(
+                    (signs[j] * words[j][coefficient]
+                     for j in range(32)), s.zeros(16)))
+                drows.append(sum(
+                    (signs[j] * dwords[j][coefficient]
+                     for j in range(32)), s.zeros(16)))
+
+        eq(rows[0], A, "sequential_blank_row_matches_owned_full128_A")
+        base_kraus = []
+        tangent = []
+        dA_role = drows[0]
+        a = s.sqrt(p)
+        for row, drow in zip(rows, drows):
+            port0 = (I16 if not base_kraus else s.zeros(16)) \
+                - 2 * p**2 * row.H * A
+            dport0 = -2 * p**2 * (drow.H * A + row.H * dA_role)
+            port1 = -2 * a * p * row.H * A
+            dport1 = -2 * a * p * (drow.H * A + row.H * dA_role)
+            base_kraus.extend((port0, port1))
+            tangent.extend((dport0, dport1))
+        completeness = sum(
+            (K.H * K for K in base_kraus), s.zeros(16))
+        eq(completeness, I16, "sequential_original_full128_complete")
+        return base_kraus, tangent
+
+    seq_kraus, dseq_N2 = full128_kraus_and_tangent(N2)
+    seq_kraus_bar, dseq_Nbar3 = full128_kraus_and_tangent(Nbar3)
+    for index, (left, right) in enumerate(zip(seq_kraus, seq_kraus_bar)):
+        eq(left, right, "sequential_shared_base_kraus_" + str(index))
+
+    def selected_history_mixed_jet(first_tangent, second_tangent):
+        # Event 0 = blank-label/coefficient-0/port-0. Event 19 is
+        # label-4/coefficient-1/port-1 in the original 128-output round.
+        first_base = seq_kraus[0]
+        second_base = seq_kraus[19]
+        first_derivative = first_tangent[0]
+        second_derivative = second_tangent[19]
+        total = second_base * first_base
+        total_a = second_base * first_derivative
+        total_b = second_derivative * first_base
+        total_ab = second_derivative * first_derivative
+        real = lambda value: s.simplify(
+            (value + s.conjugate(value)) / 2)
+        return s.simplify((
+            real(s.trace(total.H * total_ab))
+            + real(s.trace(total_a.H * total_b))
+        ) / 8)
+
+    sequential_AB_jet = selected_history_mixed_jet(
+        dseq_N2, dseq_Nbar3)
+    sequential_BA_jet = selected_history_mixed_jet(
+        dseq_Nbar3, dseq_N2)
+    sequential_order_jet = s.simplify(
+        sequential_AB_jet - sequential_BA_jet)
+    expected_sequential_BA = (
+        -s.Rational(12640131, 3276800000000)
+        + s.Rational(5746707, 3276800000000) * s.sqrt(5)
+    )
+    expected_sequential_order = (
+        s.Rational(12640131, 3276800000000)
+        - s.Rational(5746707, 3276800000000) * s.sqrt(5)
+    )
+    eq(sequential_AB_jet, 0,
+       "fresh_record_selected_history_AB_mixed_jet")
+    eq(sequential_BA_jet, expected_sequential_BA,
+       "fresh_record_selected_history_BA_mixed_jet")
+    eq(sequential_order_jet, expected_sequential_order,
+       "fresh_record_selected_history_order_jet")
+    require(sequential_order_jet.is_zero is False,
+            "fresh_record_selected_history_reads_increment_order")
+
     return {
         "status": "PASS",
         "exact_checks": len(checks),
@@ -245,8 +369,17 @@ def run(repo=None):
         "reversed_order_Julia_defect_norm_squared": str(
             julia_anti_defect_norm2
         ),
+        "fresh_record_history": {
+            "round_1_outcome_index": 0,
+            "round_2_outcome_index": 19,
+            "AB_mixed_jet": str(sequential_AB_jet),
+            "BA_mixed_jet": str(sequential_BA_jet),
+            "AB_minus_BA_mixed_jet": str(sequential_order_jet),
+            "AB_minus_BA_decimal": str(s.N(sequential_order_jet, 16)),
+        },
         "scope": {
             "endpoint_link_order_readout": True,
+            "chosen_two_round_full128_history_order_readout": True,
             "relative_same_flag_Julia_map_is_a_representation": False,
             "physical_admission_of_this_probe": False,
             "sequential_memory_word_execution": False,

@@ -67,12 +67,12 @@ python3 02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/
 The general 128-outcome Kraus completeness replay is:
 python3 02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_record_channel.py
 
-This closes only the finite endpoint-link readout test. It does not show
-that native D0 physically admits this preparation or these link variations,
-that two Lorentz steps are executable as sequential memory words, that
-their Julia dilations compose, or that this pointer outcome is selected and
-priced by the compulsory full Cost–Info law. The actual same-programme
-composition and price remain the next physical bridge; GR remains open.
+This endpoint calculation alone does not show that native D0 physically
+admits this preparation or these link variations. A second exact test below
+reapplies the same full128 rule at two assigned increments and retains both
+round records. It establishes a finite sequential matrix history, while
+physical admission of that step, Julia-dilation composition, and selection
+and pricing by the compulsory full Cost–Info law remain separate bridges.
 
 There is now an exact controlled defect for the naive one-flag candidate.
 On the role-2 link with shift phase \(1\), put
@@ -106,3 +106,30 @@ to an executable fresh-record step on this same carrier, a direct comparison
 of the Julia dilation of \(P_{AB}\) with the product of the dilations of
 \(P_A,P_B\) remains only a chosen matrix comparison, not a certified
 physical composition defect.
+
+There is also an exact two-round fresh-record readout for one chosen repeated
+matrix program. In round 1 apply the original full128 instrument at
+\(M_A=\exp(aN_2)\) or \(M_B=\exp(b\bar N_3)\); in round 2 apply it at the
+other link, with a fresh original controller/output record. Start from
+\(I_{16}/16\) and retain both records. For the history whose first outcome is
+index 0 (blank label, coefficient 0, port 0) and second outcome is index
+19 (label 4, coefficient 1, port 1), exact differentiation gives
+\[
+\left.\partial_a\partial_b
+  (q_{A\to B}(0,19)-q_{B\to A}(0,19))\right|_{a=b=0}
+=\frac{12640131-5746707\sqrt5}{3276800000000}
+\approx -6.405532799495970\times10^{-8}\ne0.
+\]
+The individual mixed jets are 0 in the \(A\to B\) order and
+\(-12640131/3276800000000+5746707\sqrt5/3276800000000\) in the reverse
+order. The exact replay builds the 128 Kraus operators from the owned
+positive Julia/Walsh/golden definitions, checks their completeness, and
+differentiates the two-record history. Thus this selected repeated matrix
+instrument is not blind to the assigned increment order, even though the
+naive relative single-flag Julia map is not a representation.
+
+This is a scoped finite readout: the two link increments are assigned to
+successive applications of the matrix instrument. It does not prove that
+native D0 admits this per-increment operation or fix its compulsory
+Cost–Info price. The checker reports the original endpoint and Julia tests
+plus this two-round certificate; GR remains open.

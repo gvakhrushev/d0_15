@@ -8189,7 +8189,7 @@ This is an existing outcome of the complete instrument, not the separate
 13-effect test. The zero-momentum control has zero first source. Exact
 derivation, source pins, and the hostile control are in the
 [full128 order-readout packet](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md);
-its 55-check certificate passes, as does the existing 60-check
+its expanded 195-check certificate passes, as does the existing 60-check
 [complete-record channel replay](sources/d0_complete_record_channel_2026-10-17/check_record_channel.py).
 
 This establishes endpoint-link distinguishability in the mathematical
@@ -8213,3 +8213,23 @@ nonzero norm. Thus neither the homomorphic nor anti-homomorphic convention
 works for this relative one-flag Julia map. This rejects only that map; it
 does not exclude a separately admitted fresh-record sequence in the
 complete D0 program.
+
+### Follow-up: a selected two-round full128 history reads assigned increment order
+
+The exact test now re-applies the original 128-outcome instrument at two
+assigned links, with a fresh existing controller/output record in each round
+and both outputs retained. From \(I_{16}/16\), the history `0` in round 1
+(blank label/coefficient 0/port 0) followed by `19` in round 2 (label 4,
+coefficient 1/port 1) has
+\[
+\partial_a\partial_b(q_{A\to B}(0,19)-q_{B\to A}(0,19))\big|_0
+=\frac{12640131-5746707\sqrt5}{3276800000000}
+\approx-6.405532799495970\times10^{-8}\ne0.
+\]
+The complete 128 Kraus family is checked for normalization in the exact
+replay. This establishes order readout for that chosen finite repeated
+matrix instrument, beyond the endpoint-link result above. It still does not
+establish a physical D0 rule that admits each Lorentz increment as an
+executable fresh-record step, the native cost of that step, or a GR
+derivation. The updated packet checker passes 195 exact checks; the existing
+complete-record replay remains at 60 checks.
