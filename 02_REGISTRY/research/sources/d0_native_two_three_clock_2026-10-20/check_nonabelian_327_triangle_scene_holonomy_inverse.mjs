@@ -23,9 +23,13 @@
  * Every based 2-step loop equals I and every original 3-step loop
  * is recovered up to its CORRECT base-frame conjugation.
  *
+ * STRONGER: exactly 327 ROOTED complete paths of only 3 or 4
+ * original scene edges recover these chords DIRECTLY, with no
+ * transported local nonroot reference: 143 root-0 BC triangles
+ * plus 104 root-0 AC quadrilaterals and 80 root-0 AB quadrilaterals.
  * This is a mathematical FULL-GROUP global inverse in rooted-tree
- * gauge, not an actual physically admitted 4D Role-connection or
- * native Golden detector. The 327 original scene cycle group
+ * gauge, not an actually physically admitted 4D Role-connection,
+ * root-aligned Golden/CAR marker or selected native clock.  The 327 original scene cycle group
  * variables have 327*6=1962 independent near-identity Lie tangent
  * directions. The already-owned fixed-Bell Golden17 six-coordinate
  * inverse, if admitted and properly co-transported to the same
@@ -168,6 +172,52 @@ function runOne(prime){
     triGroup.push(hol);
   }
   require(triGroup.length===1287,"original triangle count failed");
+
+  // STRONGER ROOTED COMPLETE-HISTORY THEOREM, requiring NO
+  // unknown frame at any non-root vertex. All 327 original
+  // fundamental loops can be based at the SAME original vertex 0:
+  //
+  // 143 BC:   0 -> b -> c -> 0      (THREE original edges)
+  // 104 AC:   0 -> 9 -> a -> c -> 0 (FOUR original edges)
+  //  80 AB:   0 -> 9 -> a -> b -> 0 (FOUR original edges).
+  //
+  // The original root gauge g0=I makes each product EXACTLY the
+  // corresponding chord U'_bc, U'_ac or U'_ab. No local 33-vertex
+  // Choi reference-frame transport is required if every loop is
+  // measured against ONE actual root reference; original directed
+  // edges along the known tree are PAID word operations, not set
+  // to I in the physical run.
+  function pathProduct(word){
+    let result=I();
+    for(let i=1;i<word.length;i++){
+      require(siteZone(word[i-1])!==siteZone(word[i]),
+        "proposed rooted path not original K9,11,13");
+      result=M(result,raw(word[i-1],word[i]));
+    }
+    require(word[0]===0&&word[word.length-1]===0,
+      "not one original rooted based history");
+    return result;
+  }
+  let rooted3=0,rooted4=0,rootedMismatch=0;
+  for(let b=9;b<20;b++)for(let c=20;c<33;c++){
+    if(!equal(pathProduct([0,b,c,0]),chords.get(b+","+c)))
+      rootedMismatch++;
+    rooted3++;
+  }
+  for(let a=1;a<9;a++)for(let c=20;c<33;c++){
+    if(!equal(pathProduct([0,9,a,c,0]),chords.get(a+","+c)))
+      rootedMismatch++;
+    rooted4++;
+  }
+  for(let a=1;a<9;a++)for(let b=10;b<20;b++){
+    if(!equal(pathProduct([0,9,a,b,0]),chords.get(a+","+b)))
+      rootedMismatch++;
+    rooted4++;
+  }
+  require(rooted3===143&&rooted4===184&&rootedMismatch===0,
+    "original rooted 3/4 entire scene connection inverse failed");
+  require(rooted3+rooted4===327,"did not cover every original chord");
+
   const backtracks=originalEdges.reduce((n,[u,v])=>{
     require(equal(M(chords.get(u+","+v),chords.get(v+","+u)),I()),
       "original 2-step inverse-edge holonomy not identity");
@@ -200,6 +250,11 @@ function runOne(prime){
     allOriginalABCtriangles:triGroup.length,
     allOriginalBasedBacktracks:backtracks,
     noncommutingOriginalTrianglePair:pair,
+    originalCommonRootVertex:0,
+    noLocalNonrootFrameTransportNeeded:true,
+    independentRootedThreeStepLoopWords:rooted3,
+    independentRootedFourStepLoopWords:rooted4,
+    rootedHistoryGroupMismatches:rootedMismatch,
     allGroupMultiplicationsExactModPrime:true,
     originalNullLorentzEtaPreserved:true
   };
@@ -213,7 +268,8 @@ const result={
  originalBookScalarIndependentQuotient686:686,
  possibleMathematicalJointScalarAndBasedLorentzSourceRank:686+327*6,
  full8440ClockWith17OutcomeMarkerLabels:8440*17,
- typedCaveat:"Root-frame co-transported pretrace full SO holonomies for every ABC triple AND real path-conditioned fixed-Bell Golden17 input/controller assumed. Unmarked Wilson traces do not determine matrices; scalar Book price does not select this programme. K913 scene group gauge variables are NOT 4D Golden LEFT Role links. GR_closed=false",
+ additionalRootedFourStepHistoryLabelsNeededWithoutNonrootFrameReference:184,
+ typedCaveat:"Either a physically selected nonroot co-transport of the original 2/3 based ABC holonomies or 184 extra ORIGINAL root-0 based 4-step histories are needed to read all327 group-chord matrices in ONE root-frame. Fixed-Bell Golden17 path controls, same-run Book clock/cost/work, and 4D Golden LEFT Role interface are NOT selected. Unmarked Wilson traces do not determine matrices. GR_closed=false",
  GR_closed:false
 };
 console.log(JSON.stringify(result,null,2));
