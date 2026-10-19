@@ -69,6 +69,16 @@ assert max(abs(Rmark))==0
 # exact six-dimensional inverse-function theorem, det DR(I)=2**6.
 assert abs(np.linalg.det(2*np.eye(6))-64)<1e-12
 
+# Nonlinear ALL-33 Info original native operator: exact rank3 reduction.
+W=np.array([np.sum(np.exp(ell*I[zone==idx])) for idx in range(3)])
+zone_operator=p*(1-np.eye(3))*np.sqrt(W[:,None]*W[None,:])
+lam3=float(np.linalg.eigvalsh(zone_operator)[-1])
+assert np.linalg.matrix_rank(K,tol=1e-10)==3
+assert abs(lam3-lam)<1e-11
+poly=lam**3-p*p*(W[0]*W[1]+W[0]*W[2]+W[1]*W[2])*lam-2*p**3*np.prod(W)
+assert abs(poly)<1e-9
+print('PASS all 33 heterogeneous Info: original full native K has rank3')
+print('PASS absolute lambda exact three-zone Golden Info cubic',W,lam3)
 print('PASS native actual 718 edge stationary law plus ONE absolute lambda')
 print('PASS original ABC triangle reconstructs ALL 33 nonlinear Info globally')
 print('max reconstruction error',max(abs(rec-I)))
