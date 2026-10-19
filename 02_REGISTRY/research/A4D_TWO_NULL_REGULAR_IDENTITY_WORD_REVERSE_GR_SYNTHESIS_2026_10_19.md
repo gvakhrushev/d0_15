@@ -184,6 +184,21 @@ Therefore the mathematical composite \`t -> W(t) -> (single FINAL U Julia tester
 
 This is a full-rank **positive-measurement statistical distinguishability** statement for the final ordered holonomy, with no fitted detector coefficients and no new POVM. The existing #334 owner already proves the actual nonnegative POVM effects and six-direction coefficient; this memo adds the chain-rule composition with the regular two-primitive identity atlas. It does **not** equate a FINAL-U Julia operation to the native execution or cost of all twelve internal primitive gates. That exact process map, flags, oldRIGHT-preservation and resource accounting are the remaining physical question.
 
+### 4.2. Pull back the standard complete full128 Shannon pointer
+
+As a separate observable, feed the same endpoint U = W(t) into the existing original 128-outcome CAR16 instrument and differentiate its **complete normalized probability law** at t₀, retaining all outcomes. The exact 128 × 6 probability Jacobian has rank 3 over Q(√5), despite the geometric endpoint Jacobian having rank 6. At the same point there are 42 positive and 86 dark outcomes; every dark outcome has zero first jet. The full φ-Shannon first covector, bounded with rational logarithm intervals, is:
+
+| Atlas control | Exact-source interval |
+| --- | ---: |
+| t₁ | 0 |
+| t₂ | [−0.000788669607812143336011, −0.000788669607812143336010] |
+| t₃ | [0.000788669607812143336010, 0.000788669607812143336011] |
+| t₄ | [−0.001577339138605770284118, −0.001577339138605770284117] |
+| t₅ | [0.001577338830531704732498, 0.001577338830531704732499] |
+| t₆ | [−0.003154674965415365973694, −0.003154674965415365973693] |
+
+This gives a precise warning about source typing: the deliberately constructed six-positive-contrast tester in §4.1 has an invertible six-response Jacobian, while the standard full128 law at this fixed probe carries only three independent first-order probability directions, and its Shannon differential is one covector. These are different readouts, and neither is the complete physical Cost–Info source. The calculation is for one final endpoint link W(t); it does not model twelve sequential fresh-flag operations, their physical admission, or their full cost. Replay with the checker at sources/d0_two_null_regular_atlas_2026-10-19/check_regular_atlas_full128_pointer_response.py; the JSON receipt is sources/d0_two_null_regular_atlas_2026-10-19/REGULAR_ATLAS_FULL128_POINTER_RESPONSE.json.
+
 ## 5. Whole-GR reverse assembly and one decisive physical gate
 
 A valid end-to-end route would now read:
