@@ -26,6 +26,29 @@ assert sp.simplify(sp.trace(U0*U1-U1*U0))==0
 assert sp.factor(sp.trace(C.T*(U0*U1-U1*U0))/2)==a*b
 print("PASS: pretrace J23 odd marker = ab, but scalar trace commutator = 0")
 
+# ORIGINAL proper Lorentz 4-edge based commutator plaquette.
+# Its odd holonomy is the finite source actually read by the naked star;
+# C^T is the algebraic matching reference control (actual e,Hodge typed later).
+U0inv=I-a*A+a*a*A*A/2
+U1inv=I-b*B+b*b*B*B/2
+Pla=U0*U1*U0inv*U1inv
+Pla_inv=U1*U0*U1inv*U0inv
+assert sp.simplify(Pla*Pla_inv-I)==sp.zeros(4)
+odd_face=(Pla-Pla_inv)/2
+marked_face=sp.factor(sp.trace(C.T*odd_face)/2)
+assert marked_face==a*b*(1-a*a*b*b/8)
+print("PASS: exact oriented original four-link odd-plaquette source =",marked_face)
+
+# Algebra-valued Book face coefficients w_plus*[P], w_minus*[P^-1]
+# have field-moving scalar weights; NORMALIZE each recorded class first.
+wplus,wminus=sp.symbols("wplus wminus",nonzero=True)
+pretrace=(wplus*Pla/wplus-wminus*Pla_inv/wminus)/2
+assert sp.simplify(pretrace-odd_face)==sp.zeros(4)
+assert sp.simplify(sp.diff(pretrace,wplus))==sp.zeros(4)
+assert sp.simplify(sp.diff(pretrace,wminus))==sp.zeros(4)
+print("PASS: two resolved Book class weights cancel before odd face/Hodge readout, including source jets")
+
+
 # All ORIGINAL 718 directed edges of K(9,11,13).
 part={v:(0 if v<9 else (1 if v<20 else 2)) for v in range(33)}
 edges={(u,v) for u in part for v in part if part[u]!=part[v]}
