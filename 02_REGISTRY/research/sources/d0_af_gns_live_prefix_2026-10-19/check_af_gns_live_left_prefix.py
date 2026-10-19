@@ -95,7 +95,7 @@ def decode_prefix(bits: str) -> tuple[str, bool]:
 
 def source_pins() -> dict[str, str]:
     pins = json.loads(PIN_FILE.read_text())
-    assert pins["base_head"] == "40a98c1b121b6032c1f7470972aebc9730563bfb"
+    assert pins["base_head"] == "93b2892574804959778bf1520fdace6b8d4b8918"
     for relative, expected in pins["inputs"].items():
         actual = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
         assert actual == expected, (relative, actual, expected)
