@@ -1,0 +1,284 @@
+{
+  "intake": "append-only research delta from source PR #384 into existing #334 execution",
+  "source_pr": "https://github.com/gvakhrushev/d0_15/pull/384",
+  "source_base_at_delta": "8d78b094efb217af8e8bebc3cea733777b93077e",
+  "source_head": "1e3c720f14ca88c86e025141f923c492c222c643",
+  "target_pr": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "target_head_before_intake": "ad09d6a44700a624a965ab6df0e776506f1f62ba",
+  "transfer_summary": "Of 25 source-delta paths, 21 absent files were copied byte-for-byte, one absent memo was copied with a single trailing-space normalization, two files were already byte-identical in #334, and one existing memo was extended by the source head exact appended section 6. The target memo before intake was byte-identical to the source-base memo.",
+  "transfer_counts": {
+    "already_present_byte_identical": 2,
+    "copied_exact_source_blob": 21,
+    "copied_source_blob_with_whitespace_normalized": 1,
+    "appended_exact_source_section_6": 1
+  },
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_ALL_INFO_PREPARATION_CHIRAL_SCALAR_BOOK_NOGO_AND_UNIFIED_GR_SOURCE_GATE_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "already_present_byte_identical",
+      "source_sha256": "81e86889e25b25cb4696d2e0fcf49581a1642f8bae20fbab7129f94be2fb19d6",
+      "target_sha256": "81e86889e25b25cb4696d2e0fcf49581a1642f8bae20fbab7129f94be2fb19d6"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK_718_EDGE_SCALAR_HISTORY_ORDER_MEMORY_GAUGE_TRACE_NOGO_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "bed3f818333a696c9a228266a6481ccbfa05c71fd11dddf824d9e8c657235fe6",
+      "target_sha256": "bed3f818333a696c9a228266a6481ccbfa05c71fd11dddf824d9e8c657235fe6"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK_FLOW_HESSIAN_EQUALS_ORIGINAL_ARCHIVE_METRIC_AND_FUTURE_SOURCE_SELECTOR_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "fb22e6afbf20b471e71e80b1f8bc2c9425106eed7cd72b428d9ac3ef14318a7c",
+      "target_sha256": "fb22e6afbf20b471e71e80b1f8bc2c9425106eed7cd72b428d9ac3ef14318a7c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_BOOK_PATH_ARCHIVE_GROWTH_AND_PERRON_PRESSURE_FORCING_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "ac4893ce9921c19e43ff1ab23b0a0c18e77367ab55625384260be9c3dc383726",
+      "target_sha256": "ac4893ce9921c19e43ff1ab23b0a0c18e77367ab55625384260be9c3dc383726"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_CLOCK_LOCATION_ENTROPY_VERSUS_BOOK_MDL_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "6a24b1ff233adfa15221caa2c67a113a81f0ef8e1b95d38395624c4cc6c4d5ae",
+      "target_sha256": "6a24b1ff233adfa15221caa2c67a113a81f0ef8e1b95d38395624c4cc6c4d5ae"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md",
+      "source_status": "M",
+      "transfer": "appended_exact_source_section_6",
+      "source_sha256": "21d5e9a289abd32aa955d80ce4a7909d99b7335048795de83a0b255ca4340811",
+      "target_sha256": "21d5e9a289abd32aa955d80ce4a7909d99b7335048795de83a0b255ca4340811",
+      "source_base_sha256": "0ff7f65c59d8c341afd954b9d383754b312cd94bcba44976d7108ac3cefea728"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_SCENE_AUTOMORPHISM_3PLUS1_EDGE_QUOTIENT_AND_4D_PROVENANCE_NOGO_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "0fa69fdf1e13ce2397736af4dfd35d41a1f4ff9c7efb5dd558ed00f791c277e3",
+      "target_sha256": "0fa69fdf1e13ce2397736af4dfd35d41a1f4ff9c7efb5dd558ed00f791c277e3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_TIME_COUNT_COSTINFO_SCORE_SUFFICIENCY_AND_HETEROGENEOUS_NOGO_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "83164802f2ebee03810aa859d9a9a610b54aca652afde00b20d9f3d05a0911f1",
+      "target_sha256": "83164802f2ebee03810aa859d9a9a610b54aca652afde00b20d9f3d05a0911f1"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_ALL_PATHS_FLOW_PRESSURE_ACTION_AND_EXACT_HISTORY_SCHUR_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "21300f0d518581bf32f2bfb82e4eece9724f84d454b17db474daa3bc1d4ed778",
+      "target_sha256": "21300f0d518581bf32f2bfb82e4eece9724f84d454b17db474daa3bc1d4ed778"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_FLOW_HESSIAN_NATIVE_ARCHIVE_POISSON_AND_RANK32_DARK653_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_source_blob_with_whitespace_normalized",
+      "source_sha256": "1af690aff1637a3d0365f2a2526756068de4296b21fdb3b79b2edc16eb5beed2",
+      "target_sha256": "ef09cb696509bc983d9899f625d196bf6ccfb27377f4ddb78254e5a156191a54",
+      "normalization": "Removed the single trailing space at line 179; no other source bytes changed."
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_CP_BOOK_COSH_FLUCTUATION_DARK_HISTORY_2026_10_19.md",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "34b239c77d3143d3f85ebb340cf27190aea154c9ddb29ad5c9fe6508b038a728",
+      "target_sha256": "34b239c77d3143d3f85ebb340cf27190aea154c9ddb29ad5c9fe6508b038a728"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_book_archive_hessian_isometry.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "8d8dfd3f33db657710363af3d879cef41aaab346791f37afcf4a61f6ff77fef7",
+      "target_sha256": "8d8dfd3f33db657710363af3d879cef41aaab346791f37afcf4a61f6ff77fef7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full_history_archive_capacity.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "dc23e61f04e2e399b0bc535cbc11929942a99e542107a5635603230cf211ac48",
+      "target_sha256": "dc23e61f04e2e399b0bc535cbc11929942a99e542107a5635603230cf211ac48"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_all_info_chiral_pressure.py",
+      "source_status": "A",
+      "transfer": "already_present_byte_identical",
+      "source_sha256": "1343817229d06eb33c69880f16438fada615960c06abe43cebe3d5f38e23b653",
+      "target_sha256": "1343817229d06eb33c69880f16438fada615960c06abe43cebe3d5f38e23b653"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_archive_poisson_exact_source.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "6df6208e8a7797d8a4c8e53efbc6d6faf9ea43831d6356afc538bc1188bcfd1b",
+      "target_sha256": "6df6208e8a7797d8a4c8e53efbc6d6faf9ea43831d6356afc538bc1188bcfd1b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_flow_pressure_action.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "0fac67f18207681c049037f068c6088c00e00124e9af4161c6eb11bc8c818425",
+      "target_sha256": "0fac67f18207681c049037f068c6088c00e00124e9af4161c6eb11bc8c818425"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_order_trace_obstruction.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "3e3eef8c1f8ff7f6cebe96b87ca787875840d40cc736ac1232be1cf6b7b3660e",
+      "target_sha256": "3e3eef8c1f8ff7f6cebe96b87ca787875840d40cc736ac1232be1cf6b7b3660e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_full128_clock_slot_entropy.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "adebc6af659e3685c93b0b5c3d63d770a1a52baa63ceb4825240768a6c07fc2d",
+      "target_sha256": "adebc6af659e3685c93b0b5c3d63d770a1a52baa63ceb4825240768a6c07fc2d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_full128_j23_fisher_coarsening.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "0572922975ea73a8591733059398e2f2a2d2229b19b8f2cfc93193dbad817963",
+      "target_sha256": "0572922975ea73a8591733059398e2f2a2d2229b19b8f2cfc93193dbad817963"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_scene_invariant_3plus1_no_lorentz.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "cf9e6b95f1001dfb1ddccbd1a3799af187ca361ba478d89adaaa7ac0aab440c9",
+      "target_sha256": "cf9e6b95f1001dfb1ddccbd1a3799af187ca361ba478d89adaaa7ac0aab440c9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_time_count_score_ward.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "5c1a6391d44cd185cec7aba823160f0fbc8d50ad575dfda4851d1156a4050c51",
+      "target_sha256": "5c1a6391d44cd185cec7aba823160f0fbc8d50ad575dfda4851d1156a4050c51"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_count_forgetting_modal_instability.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "015d3cb614037510c8bd0ea0d702fbf5b1a9832416386c57622aab5fde4c7697",
+      "target_sha256": "015d3cb614037510c8bd0ea0d702fbf5b1a9832416386c57622aab5fde4c7697"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_cp_book_cosh_dark_history.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "1d18037248df1d8be6c678b828b901514c255e5971d18d9574ddc154e3d99a54",
+      "target_sha256": "1d18037248df1d8be6c678b828b901514c255e5971d18d9574ddc154e3d99a54"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_cp_book_two_arm.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "97099fe2d96e5b55f864499a5432104c52a4c6ca3cef1531530842980102c464",
+      "target_sha256": "97099fe2d96e5b55f864499a5432104c52a4c6ca3cef1531530842980102c464"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_cp_one_circulation_source.py",
+      "source_status": "A",
+      "transfer": "copied_exact_source_blob",
+      "source_sha256": "84aad31474cdb184c8910627265bc0459b57dd75abbab4b93c808db0c1de310a",
+      "target_sha256": "84aad31474cdb184c8910627265bc0459b57dd75abbab4b93c808db0c1de310a"
+    }
+  ],
+  "validation": {
+    "checker_count": 14,
+    "target_runtime": "CPython 3.11 via uv with numpy, sympy, and mpmath",
+    "result": "All 14 source-head checkers passed after intake in the target checkout.",
+    "warnings": "Zero RuntimeWarning, DeprecationWarning, or UserWarning messages.",
+    "scope": "Research-only finite source controls; no Book action selection, physical admission, task acceptance, or GR closure.",
+    "checker_results": [
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_book_archive_hessian_isometry.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full_history_archive_capacity.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_all_info_chiral_pressure.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_archive_poisson_exact_source.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_flow_pressure_action.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_order_trace_obstruction.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_full128_clock_slot_entropy.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_full128_j23_fisher_coarsening.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_scene_invariant_3plus1_no_lorentz.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_time_count_score_ward.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_count_forgetting_modal_instability.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_cp_book_cosh_dark_history.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_cp_book_two_arm.py",
+        "result": "PASS",
+        "warnings": 0
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_cp_one_circulation_source.py",
+        "result": "PASS",
+        "warnings": 0
+      }
+    ]
+  },
+  "explicit_nonclaims": [
+    "No source PR was merged and no physical D0 action was selected.",
+    "The transferred finite controls do not prove the compulsory native Book/scene-to-Lorentz compiler or full GR closure."
+  ],
+  "normalizations": [
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_FLOW_HESSIAN_NATIVE_ARCHIVE_POISSON_AND_RANK32_DARK653_2026_10_19.md",
+      "line": 179,
+      "change": "removed one trailing ASCII space"
+    }
+  ]
+}
