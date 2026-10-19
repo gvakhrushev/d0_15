@@ -232,6 +232,151 @@ def entropy_first_jet(probabilities, axis):
     return sp.simplify(-raw / LOG_PHI)
 
 
+def add_matrix_jets(left, right, right_sign=1):
+    return tuple(left[i] + right_sign * right[i] for i in range(4))
+
+
+def transpose_matrix_jet(jet):
+    return tuple(matrix.T for matrix in jet)
+
+
+def group_factor_jet(generator, variable, sign=1):
+    jet = [I4, ZERO4, ZERO4, ZERO4]
+    jet[1 if variable == "a" else 2] = sign * generator
+    return tuple(jet)
+
+
+def direct_julia_instrument(group_word_jet):
+    """First/mixed jet of the direct Julia instrument T=U/2, D=sqrt(I-T^T T)."""
+    success = tuple(matrix / 2 for matrix in group_word_jet)
+    t_transpose_t = jet_product(transpose_matrix_jet(success), success)
+    slack = add_matrix_jets((I4, ZERO4, ZERO4, ZERO4), t_transpose_t, -1)
+    require(slack[0] == sp.Rational(3, 4) * I4,
+            "direct Julia slack has positive 3/4 identity base")
+
+    # Solve D^2=slack order by order around D_0=(sqrt(3)/2)I.
+    failure = (
+        SQRT3 * I4 / 2,
+        slack[1] / SQRT3,
+        slack[2] / SQRT3,
+        slack[3] / SQRT3
+        - (slack[1] * slack[2] + slack[2] * slack[1]) / (3 * SQRT3),
+    )
+    return success, failure
+
+
+def assert_complete_kraus_jets(branches, label):
+    total = zero_jet()
+    for _, kraus_jet in branches:
+        total = add_matrix_jets(
+            total, jet_product(transpose_matrix_jet(kraus_jet), kraus_jet)
+        )
+    require(total == (I4, ZERO4, ZERO4, ZERO4),
+            f"{label} is complete through mixed order")
+
+
+def record_probability_jets(branches, label):
+    """Evaluate all 13 positive tester outcomes on supplied Kraus histories."""
+    output = []
+    for history, kraus_jet in branches:
+        states = tuple(sp.kronecker_product(k, I4) * OMEGA for k in kraus_jet)
+        probs = []
+        for vec in POVM_VECTORS:
+            amps = tuple(sp.simplify(vec.dot(state)) for state in states)
+            probs.append(probability_jet(amps))
+        norm = dot_jet(states, states)
+        rest = tuple(sp.simplify(norm[i] - sum(q[i] for q in probs))
+                     for i in range(4))
+        branch = probs + [rest]
+        require(all(sp.simplify(q[0]) > 0 for q in branch),
+                f"{label} has positive complete tester baselines")
+        output.append((history, branch))
+    total = tuple(sp.simplify(sum(q[i] for _, branch in output for q in branch))
+                  for i in range(4))
+    require(total == (sp.S.One, sp.S.Zero, sp.S.Zero, sp.S.Zero),
+            f"{label} complete tester normalizes through mixed order")
+    return output
+
+
+def branch_outcomes(records, history):
+    return next(branch for candidate, branch in records if candidate == history)
+
+
+def branch_mass(records, history):
+    branch = branch_outcomes(records, history)
+    return tuple(sp.simplify(sum(q[i] for q in branch)) for i in range(4))
+
+
+def composition_defect_check():
+    """Compare one dilation of a product with two sequential fresh dilations."""
+    summary = []
+    for pair, g1, g2 in (("J", N2, BAR_N3), ("B", N2, BAR_N2)):
+        for order in ("AB", "BA"):
+            if order == "AB":
+                first, second = (g1, "a"), (g2, "b")
+            else:
+                first, second = (g2, "b"), (g1, "a")
+            group_word = jet_product(
+                group_factor_jet(second[0], second[1]),
+                group_factor_jet(first[0], first[1]),
+            )
+            direct_success, direct_failure = direct_julia_instrument(group_word)
+            direct_branches = (("success", direct_success),
+                               ("failure", direct_failure))
+            assert_complete_kraus_jets(direct_branches, f"direct {pair} {order}")
+            direct_records = record_probability_jets(
+                direct_branches, f"direct {pair} {order}"
+            )
+
+            sequential_branches = []
+            for failures in product((False, True), repeat=2):
+                first_kraus = factor_jet(first[0], first[1], 1, failures[0])
+                second_kraus = factor_jet(second[0], second[1], 1, failures[1])
+                sequential_branches.append(
+                    (failures, jet_product(second_kraus, first_kraus))
+                )
+            assert_complete_kraus_jets(
+                sequential_branches, f"sequential {pair} {order}"
+            )
+            sequential_records = record_probability_jets(
+                sequential_branches, f"sequential {pair} {order}"
+            )
+
+            direct_all_success = branch_mass(direct_records, "success")
+            sequential_all_success = branch_mass(
+                sequential_records, (False, False)
+            )
+            require(direct_all_success == tuple(4 * q for q in sequential_all_success),
+                    f"{pair} {order} all-success record has exact factor-four composition defect")
+            direct_events = branch_outcomes(direct_records, "success")
+            sequential_events = branch_outcomes(sequential_records, (False, False))
+            require(len(direct_events) == len(sequential_events) == 13,
+                    f"{pair} {order} compares all 13 common tester effects")
+            require(all(tuple(sp.simplify(qd[i] - 4 * qs[i]) for i in range(4))
+                        == (sp.S.Zero,) * 4
+                        for qd, qs in zip(direct_events, sequential_events)),
+                    f"{pair} {order} every positive effect resolves the composition defect")
+            direct_defect = tuple(
+                sp.simplify(direct_all_success[i] - sequential_all_success[i])
+                for i in range(4)
+            )
+            expected = ((sp.Rational(3, 16), 0, 0, 0) if pair == "J"
+                        else (sp.Rational(3, 16), 0, 0, sp.Rational(3, 16)))
+            require(direct_defect == expected,
+                    f"{pair} {order} measurable all-success composition defect jet")
+
+            sequential_success = next(k for history, k in sequential_branches
+                                      if history == (False, False))
+            operator_defect = tuple(
+                sp.simplify(direct_success[i] - sequential_success[i])
+                for i in range(4)
+            )
+            require(operator_defect == tuple(matrix / 4 for matrix in group_word),
+                    f"{pair} {order} success-operator defect is the composed word divided by four")
+            summary.append((pair, order, direct_defect))
+    return summary
+
+
 def face_geometry_check():
     def commutator_curvature(g1, g2):
         require(g1 * g2 - g2 * g1 != ZERO4, "noncommuting gate pair")
@@ -401,6 +546,7 @@ def run():
     b_first, b_mixed = branch_resolved_readout(
         N2, BAR_N2, B_MINUS_INDEX, h, face_b, "B"
     )
+    composition = composition_defect_check()
 
     print("PASS [N2,barN3]=J and original crossed-null plaquette coefficient=-h^2")
     print("PASS 16 fresh-flag histories x 13 complete POVM outcomes = 208 coarse outcomes")
@@ -416,6 +562,12 @@ def run():
     print("PASS one branch-local scale 64*h^2/c_Sh matches both J and B face jets")
     print("SCOPE: the uniform-history refinement fails C2; the all-good refinement matches two Lorentz face jets only")
     print("SCOPE: neither readout is thereby selected by physical native D0")
+    print("PASS direct and sequential Julia instruments are each complete on the full positive 13-effect record")
+    print("PASS AB/BA composition defect is measured in both retained flags and the full POVM")
+    print("PASS each of the 13 all-success effects has the exact factor-four probability defect")
+    for pair, order, defect in composition:
+        print(f"COMPOSITION {pair} {order}: all-success probability defect jet = {sp.sstr(defect)}")
+    print("SCOPE: defect concerns this T(U)=U/2 Julia candidate; it is not a no-go for other native D0 actuation")
 
 
 if __name__ == "__main__":

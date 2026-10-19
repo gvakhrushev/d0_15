@@ -464,6 +464,48 @@ step remains that physical same-program binding, now with a concrete local
 first-plus-mixed-jet target rather than an unresolved coefficient on this
 candidate.
 
+
+### 5.5. The direct-product and sequential Julia records have an exact composition defect
+
+The two-face match in §5.4 uses four separately flagged edge dilations. The
+composition caveat in the supplied synthesis can be tested directly. For
+one operation with group element \(U\), the owned positive Julia candidate
+uses \(T(U)=U/2\) and \(D(U)=\sqrt{I-T(U)^T T(U)}\). A single dilation of the
+product \(U_2U_1\) therefore has success operator \(U_2U_1/2\), while two
+sequential fresh-flag dilations have all-success operator
+\[
+T(U_2)T(U_1)=U_2U_1/4.
+\]
+The operator difference is exactly \(U_2U_1/4\), already at the flat point.
+
+This is checked for both orders \(AB\) and \(BA\), for the \(J\) pair
+\((N_2,\bar N_3)\) and the \(B\) pair \((N_2,\bar N_2)\). The direct failure
+jet is obtained by solving \(D^2=I-T^TT\) through the mixed \(ab\) term.
+Both the direct and sequential Kraus families separately satisfy
+\(\sum K^T K=I\) and normalize every branch of the complete 13-effect
+positive tester through mixed order. Yet on the measurable all-success
+flag event, the direct probability is exactly four times the sequential
+probability for each of the 13 effects. The difference in the total event
+probability has exact jets
+\[
+\begin{array}{c|cc}
+& AB & BA\\ \hline
+J &(3/16,\,0,\,0,\,0)&(3/16,\,0,\,0,\,0)\\
+B &(3/16,\,0,\,0,\,3/16)&(3/16,\,0,\,0,\,3/16)
+\end{array}
+\]
+in the coefficient order \((1,a,b,ab)\). Thus the composition defect survives
+the full measurable quotient; it is not a missing-failure or
+normalization error.
+
+This is a defect of the specified \(T(U)=U/2\) Julia implementation, not a
+no-go for native D0 or for a different physically derived actuation. It
+shows why the §5.4 local source match cannot yet be promoted to a physical
+memory law: D0 must select whether a plaquette is one joint operation or a
+sequence of paid edge operations, and supply the associated Cost−Info source.
+The exact audit is included in
+[check_four_gate_commutator_c2.py](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_four_gate_commutator_c2.py).
+
 ## 6. Finite compilation and the narrow remaining physics
 
 The exact all-grades contraction and complete real Julia/Naimark circuit belong to the owned mathematical **generous all-active orthogonal** class, with all new flags/4-dimensional Choi source actually declared and not deleted. The known addressed real Golden G/CNOT compiler approximates any such fixed real orthogonal finite-dimensional gate once its ACTUAL addressing/preparation/access interface is supplied; it retains ancilla leakage and has a whole-state error. The true group link data \(A,B\) must be computable from the same original finite Lorentz plaquette/coframe source and not supplied as a free geometric oracle.
