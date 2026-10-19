@@ -172,3 +172,78 @@ It is NOT enough to check rank32 future Book feedback; it loses *both* a 326-dim
 (c) ALL 16+24+matter Euler variations, with true conditional archive blocks above and the original source-normalized refinement. The existing exactly balanced original Golden LEFT J₂ and physical-volume mean-J₂ owner has an exact common-null ALL 16+24+2 first jet, but is not automatically the mandatory physical compiler. If this last binding holds, the already-owned nonlinear Cartan and nine-null/full-Ward theorems consume it. That bridge, real joint roots, and raw #216 remain unproved.
 
 **Status:** exact finite native reversible-history Hodge theorem and nonzero Book cubic, locally checked on all 718 edges; original G0 physical action selector, noncommutative same-run Cost−Info, generic Lorentz/Einstein closure and refinement OPEN; GR_closed=false.
+
+
+## 5. MAJOR POSITIVE GLOBAL CONSEQUENCE: ALL ORIGINAL VERTEX-INFO FIRST/SECOND BOOK SOURCES LIVE IN 32 FUTURE MODES — NEVER IN DARK653
+
+The original scalar Book03 Cost−Info owner has the actual endpoint allocation
+
+\[
+ s_{uv}=C_{uv}-\theta I_u-(1-\theta)I_v
+\]
+
+for original vertex Info \(I_v\) and original directed primitive Cost \(C_{uv}\). **This section makes NO assumption that the physical canonical Cost choice is selected.** It treats the mathematically specified original constant-Cost (=one) subfamily and admits arbitrary smooth vertex-Info profiles on exactly those original 33 vertices.
+
+Fix original native Golden primitive scalar \(p=\varphi^{-1}\) and original adjacency \(A_{uv}\in\{0,1\}\). For ANY \(I\in\mathbb R^{33}\), ANY endpoint allocation \(\theta\), and ALL 718 actual directed edges, define the existing-type original Book scalar transfer
+
+\[
+ \boxed{K_{\theta,I}(u,v)=p A_{uv}
+  \exp[(\ln\varphi)(\theta I_u+(1-\theta)I_v)].}\tag{10}
+\]
+
+**THEOREM (global vertex-Info future-source universality).** For all real I, the entire original 33+718 transfer has the following exact properties:
+
+1. Put \(K_{1/2,I}=p D_{I/2} A D_{I/2}\), \(D_{I/2}=\mathrm{diag}(\varphi^{I_u/2})\). The operator \(K_{1/2,I}\) is real symmetric and primitive. Let \(D_{\theta,I}=\mathrm{diag}(\varphi^{(\theta-1/2)I_u})\). Then
+\[
+ \boxed{K_{\theta,I}
+ =D_{\theta,I}\,K_{1/2,I}\,D_{\theta,I}^{-1}.}\tag{11}
+\]
+Therefore the actual Perron pressure \(\rho(I)\), its entire all-path effective scalar action \(F(I)=-\log_\varphi\rho(I)\), and the actual normalized Doob Markov **P(I)** are independent of \(\theta\) for EVERY I, not only up to first order at I=0. The one-sided original initial prior r_\theta and open history ENDPOINT factors are NOT \(\theta\)-independent: DO NOT call \(\theta\) an equivalence of full physical old memory.
+
+2. The true full normalized stationary bulk is \(\pi_u(I)=r_u(I)^2/\sum r(I)^2\), with r the positive Perron vector of the symmetric \(K_{1/2,I}\). The original scalar all-path Book **absolute pressure** has exact global first-source and Hessian, for arbitrary vertex Info tangent V,W:
+\[
+ \boxed{DF(I)[V]=-\sum_u\pi_u(I)V_u,}\tag{12}
+\]
+\[
+ \boxed{D^2F(I)[V,W]
+ =-(\ln\varphi)\,
+ \left\langle V-\pi V,\ 
+   (I+P)(I-P)^{-1}_{\pi^\perp}
+   (W-\pi W)\right\rangle_\pi .}\tag{13}
+\]
+The resolvent is only on the π-mean-zero subspace; the primitive original P has no other eigenvalue 1 and is reversible at EVERY \(I\) in this vertex-Info family. Equation (13) is the EXACT finite Green–Kubo/asymptotic-covariance response of the physically typed ORIGINAL Markov history, not a newly assigned kinetic term. For V=W it is strictly negative unless V is a constant vertex-Info shift. At original I=0 the smallest eigenvalue of the covariance kernel \((I+P)/(I-P)\) on the 32 nonconstant modes is **0.2877150684819744...** and its maximum is exactly 1, derived from native cubic spectrum \(\rho^3-359\rho-2574\). Thus ALL 32 physical scalar Info *shape* tangents remain observable in history Hessian: no extra dark-sector inverse is needed for this class.
+
+3. Under a real vertex Info perturbation \(I(y)\), the original primitive scalar edge-cost differential for ANY \(\theta\) is
+\[
+ d_{uv}=-\theta V_u-(1-\theta)V_v
+       =-\frac{V_u+V_v}{2}
+        +(\tfrac12-\theta)(V_u-V_v).
+\]
+The θ-dependent term is an **exact vertex coboundary**, with zero source on balanced historical flow. Hence the original archive force g(d) is θ-independent and lies in precisely the original rank32 FUTURE archive \(\mathcal F\); it has **ZERO projection into the even-dark326 and odd-cycle327**. This holds along the whole real Info family, not just at the original flat seed.
+\[
+ \boxed{g(d)=R h,\quad
+ h_u=-\sqrt{\pi_u}\,
+       [(I-P)^{-1}_{\pi^\perp}(V-\pi V)]_u,\quad
+ P_{\rm even-dark}g=P_{\rm cycle}g=0.}\tag{14}
+\]
+4. Consequently the FULL SCALAR history Schur correction for **Info-only** physical cost motion is reproduced exactly by the already-owned 33-state future instrument: it is
+\[
+ \boxed{(\ln\varphi)\|Rh\|^2
+ =(\ln\varphi)
+ \langle V-\pi V,(I+P)(I-P)^{-1}_{\pi^\perp}
+           (V-\pi V)\rangle_\pi .}\tag{15}
+\]
+Its \(\theta\)-independent field-source can be differentiated again, with ALL moving stationary preparation/source terms retained. No independent 326/327-dimensional scalar Cost field is needed in this subfamily.
+
+**Proof:** (11) is a direct diagonal similarity. Because its central representative is symmetric, the Doob P is reversible for every I. Differentiating the symmetric Perron Rayleigh quotient gives \(\partial_{I_u}\log_\varphi\rho=\pi_u\), hence (12). For one actual tangent V, the native edge cost-source is \(d_{uv}=-(V_u+V_v)/2\) modulo the θ coboundary. With \(V_c=V-\pi V\), the original Markov–Poisson equation from §2 gives \(\chi=\alpha+\xi=-(I-P)^{-1}_{\pi^\perp}V_c\). From the already PROVED rank32 vertex-sum source identity \(g=Rh\). Then
+\[
+ \|Rh\|^2=\langle\chi,(I-P^2)\chi\rangle_\pi
+ =\langle V_c,(I+P)(I-P)^{-1}_{\pi^\perp}V_c\rangle_\pi
+\]
+because P is reversible and commutes with (I−P)^{-1} on centered modes. Inserting in the exact ORIGINAL native Book Hessian (5), and using \(D^2s=0\) for affine vertex Info variation, proves (13)–(15). Polarization gives all mixed V,W. For a nonlinear physical \(I(y)\), the full chain rule also retains \(DF[ D^2_y I]\); this is not silently suppressed.
+
+**Executed original 718-edge numerical hostile check.** For one fixed nonuniform original-vertex Info tangent, five θ values 0,.23,.5,.9,1 produce **max absolute error 9.60e−16** between full 718-original Markov–Poisson cost forces and the reconstructed 32-future \(Rh\). The full history archive Schur and the 33-state Green–Kubo form differ by **6.66e−16**. Actual Perron finite-difference second derivatives at θ=0,.5,1 agree with the analytic same-action Book curvature −0.631401742599... to 2.3e−7. No extra 653-dimensional remainder is introduced.
+
+**D0/GR meaning (strictly scoped):** If the literal physically selected original D0 scalar Book edge Cost is its canonical unit transition quantum and ONLY original vertex Info supplies the field-dependent scalar weights, then the complete scalar history sector is universally reduced to \(1\) absolute pressure source + \(32\) future source shapes, with exact smooth Green–Kubo response. THIS IS A REAL GLOBAL SOURCE REDUCTION, not an arbitrary rank-32 approximation. It does **NOT** follow from the current G0 axioms that this particular canonical Cost is the compulsory physical selector: the existing exact \`A4D_NATIVE_DYNAMICAL_OWNERSHIP.md\` proves a nontrivial full ActionProtocol relative-Cost fiber. If actual edge Costs move with physical fields, even-dark326 and odd-cycle327 remain real and must be priced.
+
+The signed Lorentz–Palatini **linear oriented holonomy source** is also NOT generated by reversible scalar pressure alone: by §3 the odd scalar sector has zero FIRST pressure source. The original Book03 noncommutative pretrace ordered memory, the already-built original complete CAR16 Lorentz Julia readout and the 16+24+matter physical source are still necessary. Thus a clean possible single-action architecture is **canonical scalar native Info → exact rank32 future archive**, **ordered matrix memory → orientation-sensitive Lorentz curvature**, and **actual complete Golden preparation/clock/work/CAR → total source and normalization**, with one compulsory admitted history pricing all of them. This is the precise missing P0 CONSTITUTIVE binding; do NOT claim it already follows from the Book name. GR_closed=false.
