@@ -7982,3 +7982,60 @@ shell axis and momentum sign. See
 This closes the combinatorial language for those four leading rows, while
 their first-jet weights and the complete pointer $h^2 log$ source, count
 correction, strips and raw normalizer remain open.
+
+## 19 October 2026 — two-null crossing: curvature normalization and native-readout boundary
+
+The double-null route has a consistent finite-curvature normalization, with
+one factor that must be made explicit. Let
+\(C_h^{\rm log}\) be the raw coefficient matrix in the oriented plaquette
+logarithms,
+\((C_h^{\rm log})_{ab}=K_b(z)-K_b(z+\hat a)\), and define the
+area-normalized matrix by \(\mathcal C_h=hC_h^{\rm log}\). For the existing
+backward links \(K_2=(H-H_{-x})/(2h)\),
+\(K_3=(H-H_{-y})/(2h)\), exact stencil algebra gives
+
+\[
+\operatorname{tr}C_h^{\rm log}=-\frac h2\Delta_h^\perp H,
+\qquad
+\operatorname{tr}\mathcal C_h=-\frac{h^2}{2}\Delta_h^\perp H,
+\qquad
+E_{v_v^+}=h\operatorname{tr}\mathcal C_h.
+\]
+
+Thus the attachment's equations for \(E_{v_v^+}\), the \(h^{-2}\) curvature
+limit, the cubic harmonic matrix, and the summed boundary flux all use
+\(\mathcal C_h=hC_h^{\rm log}\). The plaquette logarithm itself contains
+\(C_h^{\rm log}\); the scale factor belongs in the definition of the
+curvature matrix. With \(\Delta_h\) the standard \(h^{-2}\)-normalized
+central Laplacian, \(W=x^3-3xy^2\) gives
+
+\[
+\mathcal C_h=h^2\begin{pmatrix}
+-3x&3y-\tfrac32h\\
+3y+\tfrac32h&3x
+\end{pmatrix},\qquad
+\operatorname{tr}\mathcal C_h=0,\quad \mathcal C_h\ne0.
+\]
+
+Consequently \(\sum_D\operatorname{tr}\mathcal C_h
+=2\lambda E(u)\,h^2\#D\) on the sourced root, matching
+\(2\lambda E(u)\operatorname{Area}_h(D)\) for
+\(\operatorname{Area}_h(D)=h^2\#D\). The raw logarithmic coefficient matrix
+would instead require an extra factor \(h\) in that flux. The exact check is
+[here](sources/d0_two_null_crossing_2026-10-19/check_discrete_curvature_scaling.py).
+For a smooth profile, \(\mathcal C_h/h^2=C_h^{\rm log}/h\to
+-\tfrac12\nabla_\perp^2H\); its trace-free part retains the two Weyl
+polarizations while its trace supplies the Ricci source.
+
+The updated [two-null Cartan 2-jet check](sources/d0_two_null_crossing_2026-10-19/check_two_null_cartan.mjs)
+exactly verifies the four opposite-null commutators and a rank-six pivot
+minor; it also passes its bounded torsion and crossed Ricci/Weyl fixtures.
+It verifies the continuum local coframe calculation; its own scope excludes
+the original finite 40-row action, physical D0 admission, and global GR. The
+algebraic commutator identity for a smooth scalar readout is valid, but the existing
+[positive-adjoint owner](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md) does not
+add tomography or a commutator-only outcome law, and expressly leaves native
+gate generation and the complete Cost--Info price open. The next consuming
+test must therefore use the same actual full outcome map for both word orders
+and report its composition defect; a matrix-interface curvature check alone
+does not close the geometry-to-record arrow or select the physical source.
