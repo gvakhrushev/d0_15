@@ -177,3 +177,31 @@ as exactTwoNullTT(). It uses both original TT polarisation fields
 and checks all 24+16 Euler coefficients, not just the Schur rank.
 The exact finite-field checker still supplies the separate generic
 rank6 witness.
+
+
+### 6.1. Opposite v-null wave is equally exact — no chiral preference was inserted
+
+The SAME complete 16+24 original finite-star linearized Euler system admits
+the opposite null Role \(v\)-dependent wave without a different action
+or calibrated coupling. Preserve the two TT coframe profiles (11), but
+replace \(D^-_u f(u)\) by \(D^-_v f(v)\) and \(N_i\) by their original
+proper-Lorentz OPPOSITE generators \(\bar N_i\):
+\[
+\boxed{
+\begin{array}{lll}
+(+):&\omega_x=D_v^- f\,\bar N_2,&
+\omega_y=-D_v^-f\,\bar N_3,\\
+(\times):&\omega_x=D_v^-f\,\bar N_3,&
+\omega_y=D_v^-f\,\bar N_2.
+\end{array}}\tag{14}
+\]
+The based all-40 stencil checks exact dyadic Laurent closure at
+\((z_u,z_v,z_x,z_y)=(1,t,1,1)\), with the same degree-bound
+coefficientwise argument for EVERY nonzero t.
+Consequently the ORIGINAL linearized finite gravitational
+source contains both helicity/TT polarizations on each of
+the two opposite characteristic null directions. Their simultaneous
+NONLINEAR interactions are NOT solved by superposing these linear
+waves; the quadratic crossed-null and quartic Palatini consumers
+address that distinction separately. This result adds no chirality
+selection, extra field, native preparation or physical history action.
