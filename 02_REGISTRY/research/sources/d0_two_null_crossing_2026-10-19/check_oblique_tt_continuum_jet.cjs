@@ -47,12 +47,12 @@ function solve(M,rhs){
   return {possible:true,x,rank:r};
 }
 function choose(m,n){let v=1;for(let i=0;i<n;i++)v=times(v,times(mod(m-i),inverse(i+1)));return v;}
-function coefficientSeries(){
+function coefficientSeries(ray=[1,2,2,0]){
  const N=16,D=4;let omega=0;
  for(let w=2;w<prime;w++)if(power(w,N)===1&&power(w,N/2)!==1){omega=w;break;}
  if(!omega)throw Error("no primitive 16th root");
  const samples=Array.from({length:N},(_,j)=>{
-   let w=power(omega,j);return matrices([w,power(w,2),power(w,2),1]);
+   let w=power(omega,j);return matrices(ray.map(x=>power(w,x)));
  });
  const shape={L:[24,24],B:[24,16],C:[16,24]};
  function coeff(type){
@@ -65,7 +65,7 @@ function coefficientSeries(){
          out[k][a][b]=sum(out[k][a][b],times(c,T[a][b]));
      }
    }
-   const independently=matrices([2,4,4,1])[type];
+   const independently=matrices(ray.map(x=>power(2,x)))[type];
    for(let a=0;a<m;a++)for(let b=0;b<n;b++){
      let v=0;for(let k=0;k<N;k++){
        const ex=k<=8?k:k-N;
@@ -121,6 +121,10 @@ function audit(){
  if(rankS[0]!==0||rankS[1]!==0||rankS[2]!==4)
    throw Error("wrong continuum null principal symbol");
  const pol=TT(),out=[];
+ const plusV=coefficientSeries([1,3,2,0]).S[2];
+ const minusV=coefficientSeries([1,1,2,0]).S[2];
+ const dv=addMatrix(plusV,minusV,-1).map(row=>
+   row.map(v=>times(v,inverse(2))));
  for(let j=0;j<2;j++){
    const v=pol[j],y2=applied(S[2],v),y3=applied(S[3],v);
    if(y2.some(x=>x))throw Error("TT not null at order2");
@@ -128,7 +132,12 @@ function audit(){
    if(!e1.possible)throw Error("unremovable cubic TT defect");
    let y4=applied(S[4],v).map((x,i)=>sum(x,applied(S[3],e1.x)[i]));
    const e2=solve(S[2],y4.map(x=>mod(-x)));
+   const dvSource=applied(dv,v);
+   const S2Extended=S[2].map((row,i)=>[...row,dvSource[i]]);
+   const moved=solve(S2Extended,y4.map(x=>mod(-x)));
    out.push({polarization:j===0?"plus":"cross",S2_zero:true,
+     dispersion_correction_solvable:moved.possible,
+     dispersion_shift_gamma:moved.possible?moved.x[16]:null,
      S3_zero:y3.every(x=>x===0),
      cubic_removed:e1.possible,corrector:e1.x.map((x,i)=>x?{i,v:x}:null).filter(Boolean),
      quartic_removed_by_polarization_alone:e2.possible,
