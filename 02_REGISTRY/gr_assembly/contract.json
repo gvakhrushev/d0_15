@@ -262,6 +262,15 @@
       "normalization": "D[(E L_N-H_phi(P))/N] with the owner’s C_N*sqrt(I_N)/N estimate.",
       "refinement": "The owner’s fixed finite-history families and stated uniform first-source/full-system root hypotheses; no general D0 refinement is inferred.",
       "scope": "Analytical code/source result and conditional exact-root transfer; no admitted native decoder, compulsory full-price selection or GR closure."
+    },
+    "two-line-full-julia-car-v1": {
+      "carrier": "The original CAR16 exterior representation with two specified normalized grade-one probe states; the response test is local to this preparation pair and does not restrict the underlying 16-dimensional carrier.",
+      "action": "The already-owned positive Julia dilation T=Lambda(U)/2 and its complete failure complement F=sqrt(I-T†T); this interface does not select a Cost-Info action.",
+      "variations": "Six original proper-Lorentz link directions at the identity in the sufficiently small contraction chart.",
+      "source": "Six unconditioned GOOD-event one-body CAR bilinear response values, with GOOD and BAD both retained; the exact six-by-six Jacobian determinant is 1/373248.",
+      "normalization": "Uses the pre-existing Julia scale 1/2 and normalized grade-one probes; the determinant is a local observability invariant, not an Einstein coupling.",
+      "refinement": "Finite local first-response theorem only; no refinement or continuum transfer is asserted.",
+      "scope": "Conditional response-capacity result. Physical selection and price of the preparations/readouts, oldRIGHT/reference, routing, work, clock, complete H+J+R source and original Einstein Euler equality remain open."
     }
   },
   "obligations": [
@@ -767,6 +776,12 @@
       "left": "conditional complete Julia/CAR16 mean-Shannon first-source with fresh flags",
       "right": "literal GoldenCoherentMemory.fullStep and compulsory full H+J+R Cost-Info",
       "reason": "The constructed positive instrument, branch binding, physical execution/admission and full retained price are separate premises; this result establishes none of their identity."
+    },
+    {
+      "id": "julia-observability-vs-native-source",
+      "left": "two-line complete Julia/CAR rank-six response observability on specified grade-one probes",
+      "right": "the compulsory same-history full H+J+R Cost-Info source and original 40-plus-matter Euler system",
+      "reason": "The nonzero Jacobian certifies local response capacity only. It does not select or price the preparations/readouts, bind oldRIGHT/reference, routing, controller, work or clock, or identify the response with stationary geometric and matter sources."
     },
     {
       "id": "theta-boundary-vs-native-info",

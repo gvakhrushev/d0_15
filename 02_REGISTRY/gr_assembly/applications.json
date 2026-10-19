@@ -164,6 +164,36 @@
       "reported_state": "Pinned result-only evidence at #334 head a18606f1. The exact checker replays the rank-six positive response, nonzero order contrasts, reused-flag defect and conditional same-history information source. No application to native-programme-v1 is registered or accepted."
     },
     {
+      "id": "two-line-full-julia-car-observability",
+      "owner": "registered native response research owner #334",
+      "statement": "For two specified grade-one probe states in the original CAR16, the existing complete positive Julia GOOD/BAD instrument has an exact nonsingular six-by-six Jacobian from the six original proper-Lorentz directions to six unconditioned CAR response values, with determinant 1/373248.",
+      "interface": "two-line-full-julia-car-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "local_chart": "The proper-Lorentz transformation lies in the small chart where T=Lambda(U)/2 is a strict contraction; this is local response observability, not a global group inverse.",
+        "probe_states": "The two explicit normalized probes lie in grade one. The result does not establish that D0 selects or prepares them; the full16 operator and its failure complement are retained.",
+        "complete_instrument": "Both the GOOD contraction and the BAD square-root complement are retained; the six responses are unconditioned and do not condition on success.",
+        "measurement_binding": "The six CAR bilinear responses are mathematical detector coordinates. A physically admitted compatible measurement schedule and its recording cost are not proved.",
+        "native_action": "No same-history Cost-Info, controller, clock, work, preparation, oldRIGHT/reference or full H+J+R source identity is derived.",
+        "remaining_equations": "No original 40-row stationary source match, Ward transfer, joint-root refinement, generic matter recovery or raw #216 closure follows."
+      },
+      "evidence": [
+        {
+          "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
+          "path": "02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md",
+          "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7"
+        },
+        {
+          "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
+          "path": "02_REGISTRY/research/sources/d0_two_history_phase_2026-10-19/check_native_two_line_projective_lorentz.mjs",
+          "sha256": "33a2fe74e255cbcf0bb0973392480eba9b8578bcf17bb6a743db414fb6e42e0f"
+        }
+      ],
+      "reported_state": "Pinned to #334 head a6668722. The exact dependency-free checker passes the projective rank, gauge-invariant Bargmann phase, CAR bilinear and complete GOOD/BAD Julia response controls. This is a result-only pointer; no native-programme-v1 application is registered or accepted."
+    },
+    {
       "id": "book-cost-info-boundary",
       "owner": "registered native response research owner #334",
       "statement": "On the exact finite K(9,11,13) scene path carrier, the literal all-vertex Info(v) sum with zero singleton action and additive composition forces Info=0; transition-event allocations are additive for every real theta and differ on open paths only by an endpoint coboundary.",
