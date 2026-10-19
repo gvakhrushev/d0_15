@@ -33,21 +33,7 @@ and [cubic continuum Ricci/Poisson completion](sources/d0_two_null_crossing_2026
 [exact cubic finite link lift and coframe source](sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 and its separate finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
-Continue from strategic [§§7.63–7.66](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md):
-the scalar scene-Perron source is exact only after its complete history carrier
-is identified; a conditional 264-state K(9,11,13) × Q₈ lift can preserve
-terminal order memory. The original full128 instrument now has an exact
-rank-24 retained-CAR state response to the 24 independent link jets at one
-finite background (its one-round probability response has rank 6), but the
-physical field-to-link rule and compulsory Cost--Info selection remain open.
-The next composition is the actual memory-resolved native source against the
-existing full star/CAR covector, with preparation, clock and work included.
-Separately, the [original 24-link Cartan checker](sources/d0_two_null_crossing_2026-10-19/check_polynomial_cartan_inverse.cjs)
-verifies the exact constant block and finite degree controls; strategic §7.66
-uses its translation-stencil structure to solve the original 24 link equations
-formally at every finite polynomial degree for a prescribed polynomial
-coframe on an unwrapped chart. The 16 reduced coframe rows, periodic recovery,
-and convergence remain open.
+Continue from strategic [§§7.63–7.70](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md): the exact Lorentz Ward and terminating link inverse reduce the formal polynomial bulk equations to ten metric rows; the nonflat quartic branch solves all free interior rows through degree four, with a pinned coefficientwise (h\)-polynomial. The complete full128 Shannon term has a nonzero first source along one opposite-null link commutator, distinct from the port-code derivative. The complete 718-edge Perron record yields a canonical conditional-variance feedback and a formal Book03-type Julia realization, but still omits the ordered (Q_8) memory and physical execution/selection. A short-cycle scalar-route test is now explicit: conditional 2-cycle returns plus oriented triangle ratios reconstruct the unique positive Doob kernel exactly when the 960 compatibility relations and one pressure condition hold; a calibrated absolute return then gives its Perron scale. The next geometric step is the ten-row reduced metric source and its first exact obstruction or controlled all-order solve. The next physical step is to test those cycle observables on the actual memory-resolved native record, then compare its complete source with the full (16+24+2) star/CAR covector, including preparation, clock and work.
 
 The new owner composes the corrected same two-tick AF×scene feedback, the
 original exact 40-row Lorentz-star table and full CAR16 Hodge matter into a

@@ -5194,3 +5194,77 @@ preparation/clock/work stationarity, and the original raw (h^{-2}) terminal
 remain open. The next mathematical target is therefore the reduced coframe
 source on this same formal branch; the next physical target remains the
 same-carrier source identity from §7.63. `GR_closed=false`.
+### 7.67. The exact Lorentz Ward reduces the formal bulk problem from 40 rows to ten metric rows
+
+The [polynomial Cartan inverse and refinement owner](A4D_POLYNOMIAL_CARTAN_EXACT_INVERSE_AND_QUARTIC_REFINEMENT_2026_10_19.md) now consumes the exact local proper-Lorentz transformation of the original star variables,
+\[
+\delta_K v_{z,r}=K_zv_{z,r},\qquad
+\delta_K U_{z,r}=K_zU_{z,r}-U_{z,r}K_{z+\hat r}.
+\]
+The six-based-plaquette finite action is invariant under this transformation at every lattice spacing. Its Ward identity contains both the coframe Euler rows and the adjacent-link Euler rows. Only after all 24 free link rows are solved may the link terms be set to zero; the six internal-Lorentz directions then annihilate the 16 coframe Euler covector.
+
+For a nondegenerate coframe, those six gauge directions have rank six. The remaining quotient has dimension ten and is exactly the symmetric metric tangent. Combined with the terminating polynomial inverse in §7.66, this gives a coefficientwise formal reduction of the original 40 equations: solve the 24 link coefficients uniquely at each amplitude order, use the same finite Ward identity to remove the six antisymmetric coframe rows, and leave precisely ten metric equations. This does not solve those ten equations and does not invoke a finite-lattice coordinate/diffeomorphism Ward to remove four more.
+
+The existing nonflat quartic branch is stronger than a single formal jet at one spacing: because its transverse polynomial profile is independent of the null coordinates, it restricts to any finite transverse box with a fixed collar, and the null directions may be periodic. It solves every free interior original Euler coefficient through amplitude degree four. It is still a coefficientwise local formal solution, not an exact finite-amplitude stationary root, a convergent all-order series, or a fully periodic transverse solution. One coefficient is now pinned explicitly by the graded checker:
+\[
+v^{(4)}_{10,(2,2)}=
+\frac{3}{128}x^2y^2+\frac{1}{256}y^4
+-h\left(\frac{9}{128}xy^2+\frac{1}{128}y^3\right)
+-\frac{7}{256}h^2y^2.
+\]
+Its degree-four, degree-three, and degree-two pieces have exactly the powers needed for the stated coefficientwise refinement; no degree-five competitor remains in that component.
+
+This changes the next geometric step. Do not spend more effort on repeated link inversions or the six Lorentz-redundant coframe rows. Compute the ten-row reduced metric source on this same formal branch; then either construct a controlled all-order solution with stated boundary conditions or exhibit its first exact cokernel. The nonzero Weyl quartic signal shows the branch is not merely flat gauge, but neither it nor the Ward identity proves the full Einstein equation. The selected D0 price, native source, physical recovery, and original raw \(h^{-2}\) terminal remain open; `GR_closed=false`.
+
+### 7.68. The complete original full128 Shannon term has a measured first source, distinct from the known port code
+
+The [complete Shannon source certificate](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md) differentiates all 128 outcomes of the original full128 pointer on the fixed \(L=4\), \(h=1/4\), mode \(k=(0,0,0,1)\), maximally mixed CAR16 preparation, along the role-2 opposite-null commutator \(J_{23}=[N_2,\bar N_3]\). Exact grouped-log arithmetic encloses the complete Shannon derivative in
+\[
+[-0.031546784312485733440439,\;-0.031546784312485733440438].
+\]
+All 128 outcomes stay in the record. The 86 zero-probability branches have zero Kraus operators and zero first probability jet, so they contribute no first entropy derivative; because of these branches, this does not provide a \(C^2\) Shannon jet.
+
+The already known original golden port-code contribution on this direction is \(9/800-9\sqrt5/1600\approx-0.00132788237\), different from the complete pointer Shannon source. Thus the port term cannot stand in for the full record price. This closes one actual readout derivative, not the total Cost--Info derivative: code costs for the other outcomes and controller/work/normalization terms are still needed, as are physical admission of this link tangent and its map to the full star/CAR metric source. `GR_closed=false`.
+
+### 7.69. One complete 718-edge Perron record yields a canonical feedback candidate, not yet the selected D0 action
+
+The new [same-history scene feedback owner](A4D_NATIVE_SCENE_COMPLETE_RECORD_PREDICTIVE_FEEDBACK_PHYSICAL_SOURCE_2026_10_19.md) constructs a second exact finite bridge from the original \(K(9,11,13)\) history. A positive real price on each of its 718 directed edges determines a Perron/Doob law; modulo vertex endpoint coboundaries and one common scale, the price space is exactly the 685-dimensional space of positive row-stochastic kernels on those edges. The actual unweighted all-walk trace starts from its owned nonstationary Perron preparation and converges in the bulk to the derived invariant measure; it is not the degree-normalized walk.
+
+From the complete edge-labelled record \(q_{uv}=\pi_uP_{uv}\), the unique least-squares conditional-prediction loss is
+\[
+F_{\rm pred}=I-P_\pi^\dagger P,\qquad
+\langle f,F_{\rm pred}f\rangle_\pi=\sum_{u\to v}\pi_uP_{uv}\bigl(f(v)-(Pf)(u)\bigr)^2.
+\]
+It is positive, has only constants in its kernel, and has rank 32 on this finite graph. In Euclidean coordinates, with \(T=\Pi^{1/2}P\Pi^{-1/2}\), write \(\widehat F=I-T^TT\). A direct Julia dilation
+\[
+U_T=\begin{pmatrix}T&(I-TT^T)^{1/2}\\(I-T^TT)^{1/2}&-T^T\end{pmatrix}
+\]
+obeys \(P_0U_T^TQ_0U_TP_0=\operatorname{diag}(\widehat F,0)\), where \(P_0=\operatorname{diag}(I,0)\) and \(Q_0=\operatorname{diag}(0,I)\). So this candidate has exactly the feedback-return operator type used by Book 03, and the same owner constructs a complete positive 33-flag determinant event with all failures retained and its full moving Perron source.
+
+The type match is not physical identity: \(U_T\) is a constructed dilation, not yet the compulsory original D0 \(U_N\); the abstract flags and arbitrary real edge prices are not shown to be Golden-executable or selected by the complete native Cost--Info law. This 33-state candidate also has not carried the ordered \(Q_8\) memory resolved conditionally in §7.65. The decisive test is to derive the actual memory-resolved edge price, preparation and executable record from one native run, then pull its complete source onto every original coframe/link/CAR, observer, clock and work tangent and compare it with the existing 16+24+2 star/CAR covector. The current assembly still leaves `constitutive`, `native_sector`, `matter_source_ward`, and `positive_gr` open; `GR_closed=false`.
+
+### 7.70. Two-cycle returns and oriented triangles reconstruct the scalar Doob law
+
+A new [finite cycle-tomography checker](sources/d0_two_three_cycle_tomography_2026-10-19/check_two_three_cycle_tomography.mjs) points to a sharper operational test of the scalar 33-state Perron route. The exact statement is elementary but useful. On the bidirected complete tripartite graph $K(9,11,13)$, let $P$ be any strictly positive row-stochastic kernel on the 718 directed edges. For every undirected edge observe its two-cycle return
+\[
+B_{uv}=P_{uv}P_{vu},
+\]
+and for every oriented triangle observe its cycle affinity
+\[
+A_{uvw}=\log\frac{P_{uv}P_{vw}P_{wu}}{P_{uw}P_{wv}P_{vu}}.
+\]
+These data determine $P$ uniquely. There are 359 symmetric edge logs and 327 independent antisymmetric cycle coordinates. The tripartite clique complex is the join of three discrete vertex sets: its 1-skeleton cycle rank is $359-33+1=327$, its triangle-boundary map spans that cycle space, and its 960 independent triangle relations are the $(9-1)(11-1)(13-1)$ mixed contrasts.
+
+For reconstruction, set $b_{uv}=\tfrac12\log B_{uv}$, and choose an antisymmetric edge field $a_{uv}$ whose oriented triangle sums equal $A_{uvw}$. The 960 compatibility relations are precisely the existence test for this lift; any two lifts differ by a vertex gradient. Form $W_{uv}=\exp(b_{uv}+a_{uv}/2)$. For data from a stochastic kernel, $W$ is diagonally similar to $P$, so its Perron root is one. Conversely, if the cycle compatibilities hold and $\rho(W)=1$, the positive Perron vector $r$ gives
+\[
+P_{uv}=W_{uv}\frac{r_v}{r_u},
+\]
+which is stochastic and independent of the chosen vertex-gradient representative. This proves uniqueness; the single nonlinear pressure condition $\rho(W)=1$ is the one compatibility among the 686 cycle-return coordinates for the 685-dimensional stochastic kernel.
+
+If $K$ is the underlying positive scalar Book transfer and $P_{uv}=K_{uv}r_v/(\lambda r_u)$, then one calibrated absolute two-edge transfer return fixes the remaining pressure scale:
+\[
+\lambda=\sqrt{\frac{K_{uv}K_{vu}}{P_{uv}P_{vu}}}.
+\]
+The bounded checker confirms the counts, gauge and scale invariance, all 960 contrasts on a sample kernel, detection of a hostile row perturbation, and this one-edge scale formula. It is a numerical control, not the structural proof above.
+
+This creates a direct scalar-route go/no-go test: obtain the admitted record's conditional two-cycle returns and oriented three-cycle ratios; check the 960 compatibility relations and pressure condition; if they pass, reconstruct the unique scalar Doob law and compare its complete moving source with the star/CAR covector. If they fail, the scalar 33-state transfer is the wrong carrier and the conditional ordered-memory lift of §7.65 must be used. Neither outcome alone proves physical selection: the actual Book Born law must expose these cycle statistics with its true preparation and memory, and the absolute return must include the real code/work normalization. `GR_closed=false`.
