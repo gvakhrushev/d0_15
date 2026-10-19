@@ -131,7 +131,46 @@ assert(cost>0,"conditional successful branch has nonzero positive surprisal");
 // Golden-p 16-outcome positive Choi mark on the original CAR16 grade-one.
 // This uses the true complete operator J_C acting on the 32d carrier,
 // with a single unchanged processor and NONORTHOGONAL programme states.
-const dBell=32,herald=1/(dBell*dBell);
+
+// The original full 16-outcome Choi mark has TWO distinct freshly
+// recorded Golden flags. One Julia(C) is 32d CAR16×flag; their chronological
+// complete operator is on CAR16×flag1×flag2 (dimension 64).
+const dBell=64,herald=1/(dBell*dBell);
+function twoFlagOriginalJulia(theta){
+ const index=(i,f1,f2)=>4*i+2*f1+f2;
+ const first=JuliaRot(0),second=JuliaRot(theta);
+ const J1=zeros(64),J2=zeros(64);
+ for(let i=0;i<16;i++)for(let j=0;j<16;j++)
+ for(let old=0;old<2;old++)for(let next=0;next<2;next++){
+  const a=first[i+16*next][j+16*old];
+  const b=second[i+16*next][j+16*old];
+  for(let f2=0;f2<2;f2++)J1[index(i,next,f2)][index(j,old,f2)]=a;
+  for(let f1=0;f1<2;f1++)J2[index(i,f1,next)][index(j,f1,old)]=b;
+ }
+ return mm(J2,J1);
+}
+for(let theta of [0,.1]){
+ const J=twoFlagOriginalJulia(theta),Id=eye(64);
+ assert(fs(add(mm(transpose(J),J),Id,-1),
+           add(mm(transpose(J),J),Id,-1))<1e-24,
+     "complete 64D two-fresh-Golden Julia programmable operation is orthogonal");
+ const v=Array.from({length:64},(_,j)=>Math.sin(.29*(j+1))+.4*Math.cos(.13*(j+1)));
+ const nrm=Math.hypot(...v);for(let j=0;j<64;j++)v[j]/=nrm;
+ const exact=J.map(row=>row.reduce((s,x,k)=>s+x*v[k],0)/64);
+ const signal=Array(64).fill(0);
+ let totalNorm=0;
+ for(let i=0;i<64;i++)for(let j=0;j<64;j++)for(let k=0;k<64;k++){
+  let wave=v[i]*J[k][j]/8;
+  totalNorm+=wave*wave;
+  if(i===j)signal[k]+=wave/8;
+ }
+ assert(Math.max(...signal.map((x,k)=>Math.abs(x-exact[k])))<3e-14,
+        "real FIXED 64D Bell processor applies exact original 2-fresh-gate operator /64");
+ const prob=signal.reduce((s,x)=>s+x*x,0);
+ assert(Math.abs(prob-herald)<2e-14&&Math.abs(totalNorm-1)<2e-13,
+        "full TRUE two-flag programme herald rate 1/4096, failed Bell complement 4095/4096");
+}
+
 const G4=gen;
 const trace4=M=>tr(M), ip4=(X,Y)=>tr(mm(transpose(X),Y));
 function exp4(X){let S=eye(4),T=eye(4);for(let k=1;k<25;k++){T=mm(T,X).map(r=>r.map(x=>x/k));S=add(S,T)}return S;}
@@ -158,8 +197,8 @@ assert(qBase.length===17&&qBase.every(x=>x>0)&&
  Math.abs(qBase.reduce((s,x)=>s+x,0)-1)<1e-14,
  "complete 17-way Bell/GOLDEN positive instrument, 16 success + all failures");
 assert(Math.abs(qBase.slice(0,16).reduce((s,x)=>s+x,0)-herald)<1e-14,
- "native program herald EXACT field-independent 1/1024");
-assert(Math.abs(qBase[16]-(1023/1024))<1e-14,
+ "native complete two-fresh-flag programme herald EXACT 1/4096");
+assert(Math.abs(qBase[16]-(4095/4096))<1e-14,
  "original fixed processor all failed Bell outcomes are retained in a register");
 
 for(let k=0;k<6;k++){
