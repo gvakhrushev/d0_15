@@ -99,6 +99,45 @@ const clockSamples=tlist.map(t=>{
   return {t,relativeUniformExtra:c,clockShortProbability:C.q0,
     clockLongProbability:C.q1,relativeLogOddsShift:-c,recovered};
 });
+
+const varLength=clock0.q0*clock0.q1; // n and n+1 only
+require(varLength>0,"multi-depth length Fisher must be positive");
+const costFisher=ell*ell*varLength;
+const primitiveGoldenLengthFisher=ell*ell*p**3;
+require(Math.abs(probs[0]*probs[3]-p**3)<1e-14,"true literal primitive Golden length variance mismatch");
+// ALL ORIGINAL vertices of each native path are charged in the BOOK03
+// vertex sum. A uniform edge Cost excess c and a uniform vertex-Info
+// increase i change every full path of length m by:
+//       Delta S = m*c − (m+1)*i = m*(c−i)−i.
+// Thus full normalized ANY-depth laws sense only c−i. The extra
+// global i is an absolute unnormalised partition factor, invisible even
+// to complete positive clock flags.
+const prior0=alpha*Number(rawPathCounts[depth])*p**depth;
+const prior1=beta*Number(rawPathCounts[depth+1])*p**(depth+1);
+function costInfoJoint(c,i){
+  const z0=prior0*Math.exp(-ell*(depth*c-(depth+1)*i)),
+        z1=prior1*Math.exp(-ell*((depth+1)*c-(depth+2)*i)),
+        z=z0+z1;
+  return {q0:z0/z,q1:z1/z,relativeAbsolutePartitionAction: -Math.log(z/(prior0+prior1))/ell};
+}
+const jointControls=[0.01,0.04,0.11].map(c=>{
+  const gain=costInfoJoint(c,c),costOnly=costInfoJoint(c,0);
+  require(Math.abs(gain.q0-clock0.q0)<4e-15&&
+    Math.abs(gain.q1-clock0.q1)<4e-15,
+    "uniform Cost+Info gauge affected true recorded clock law");
+  require(Math.abs(gain.relativeAbsolutePartitionAction+c)<4e-14,
+    "finite whole-path Book partition did not retain endpoint Info absolute scale");
+  require(Math.abs(costOnly.q1-clock0.q1)>1e-5,
+    "clock failed to reveal unpaired real Cost excess");
+  return {c,normalizedClockUnchangedWhenInfoAlsoMoves:true,
+    sameCostInfoWholeBookActionShift:-c,
+    recordedUnpairedCostFlagChange:costOnly.q1-clock0.q1};
+});
+const fisherCostInfo=[
+  [costFisher,-costFisher],
+  [-costFisher,costFisher]
+];
+
 const kthFlatControls=[];
 for(let m of [2,3,4,5]){
   const c=t=>t**(2*m), h=.2;
@@ -142,7 +181,14 @@ const result={
     canonicalClockLongProbability:clock0.q1,
     extraCostIdentity:"log_phi(odds(c)/odds(0))=-c for adjacent depths",
     trueNormalizedAllOutcomes:true,
-    samples:clockSamples
+    samples:clockSamples,
+    exactLengthVariance:varLength,
+    exactUniformCostFisher:costFisher,
+    primitiveGoldenOneTickCostFisher:primitiveGoldenLengthFisher,
+    FisherCostInfoMatrix:fisherCostInfo,
+    exactFisherRankWithCostAndInfo:1,
+    fullBook03UniformShiftIdentity:"Delta S_gamma=m*(c-i)-i for m edges, m+1 visited vertices",
+    jointCostInfoGaugeControls:jointControls
   },
   deepJetWarning:{
     admissibleAnalyticExcessFamilies:kthFlatControls,
