@@ -36,7 +36,7 @@ Pla_inv=U1*U0*U1inv*U0inv
 assert sp.simplify(Pla*Pla_inv-I)==sp.zeros(4)
 odd_face=(Pla-Pla_inv)/2
 marked_face=sp.factor(sp.trace(C.T*odd_face)/2)
-assert marked_face==a*b*(1-a*a*b*b/8)
+assert sp.simplify(marked_face-a*b*(1-a*a*b*b/8))==0
 print("PASS: exact oriented original four-link odd-plaquette source =",marked_face)
 
 # Algebra-valued Book face coefficients w_plus*[P], w_minus*[P^-1]

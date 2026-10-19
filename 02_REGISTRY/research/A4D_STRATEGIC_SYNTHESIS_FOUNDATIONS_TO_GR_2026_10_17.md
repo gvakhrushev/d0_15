@@ -5696,3 +5696,47 @@ D\log W_K=nD\log\rho+D\log p_y(\gamma)-D\log r_{u_n},
 Геометрический consumer тоже уже существует: balanced native Golden owner даёт совпадение локального и физического moving-volume J2 первого источника на полном 16+24+2 chart и неплоской Brinkmann/CAR-null семье. Там Gamma-scale имеет Gamma(s e, omega, Psi)=s^-2 Gamma(e, omega, Psi); если именно эта scale variation допущена в одном полном stationary programme, она влечёт Γ=0, после чего остальные вариации дают исходные Palatini+scalar equations. Допуск этой вариации при настоящем collar/clock/complete price сам остаётся условием.
 
 **Единственный оставшийся физический weld:** (i) отобразить compulsory native programme на исходный 4D site/six-face controller вместе с complete CAR/flag/history lift; (ii) вывести из него whole Book (H+J+R)+preparation/RIGHT/ref128/clock/work covector; (iii) доказать его on-shell/quotient equality с уже принадлежащим balanced δJ2 source и показать, что нужная global scale допустима. Только после этого нужны принадлежащие joint-root/refinement и nine-null/Bianchi consumers. Вакуумное уравнение и независимая материя требуют отдельных собственных Euler rows: запись order-source сама по себе не есть independent T_munu source. До такого weld `GR_closed=false`.
+
+### 7.90. Book03 pretrace: одинаковая скалярная цена не стирает порядок, а положительный логарифм шансов даёт точный источник-свидетель
+
+Ключевой сдвиг относительно попыток выводить гравитацию из одного scalar Perron/logdet: BOOK_03 §§03.1.3 и 03.3.0 задают алгебраическую сумму классов памяти `[q(γ)]`; сведение к вероятностям или следу до чтения класса уничтожает различие путей, которое полнота запрещает терять. Новый [pretrace source owner](A4D_BOOK_PRETRACE_ORIENTED_GR_MEMORY_SYNTHESIS_2026_10_19.md) проверяет это на исходном `K(9,11,13)`, а не на новом графе.
+
+Возьмём три исходных направленных треугольника `L_j=(a0,b_j,c_j,a0)` и два девятишаговых пути `γ012=L0L1L2`, `γ021=L0L2L1`. У них тождественны направленные кратности всех рёбер, кратности вершин, начало и конец. Поэтому для **любого** исходного аддитивного primitive Cost/Info, endpoint allocation и их полевых производных скалярные path weights совпадают. Scalar-only conditional score этих двух путей ровно нулевой; различие остаётся только в сохранённом algebra-valued порядке.
+
+На контроле `A=N2`, `B=N̄3`, `C=[A,B]=J23` назначенные Lorentz words `U0=exp(aA)`, `U1=exp(bB)`, `U2=(I−cC/2)⁻¹(I+cC/2)` дают
+
+\[
+\operatorname{Tr}(U_0U_1U_2)-\operatorname{Tr}(U_0U_2U_1)=-\frac{8abc}{4+c^2}.
+\]
+
+Обычный скалярный trace и смешанный коэффициент scalar `logdet` усредняют обе циклические перестановки и стирают этот exchange-odd компонент. Напротив, уже принадлежащая complete-positive Julia/Choi mark `Q(U)=(Tr U)^2/64` сохраняет все failure outcomes; у двух путей цена `w` и общий normalizer сокращаются в относительном likelihood. Потенциал
+
+\[
+\Xi=\log\frac{Q(U_0U_1U_2)}{Q(U_0U_2U_1)}
+\]
+
+является точной скалярной функцией, а не неинтегрируемой one-arm Berry 1-form. На исходном рациональном контроле `a=b=c=1/40` обе mark-вероятности лежат строго между 0 и 1, их дополнения сохранены, а
+
+\[
+Q_{012}-Q_{021}=-\frac{abc(a^2b^2c^2+4a^2b^2+64)}{16(4+c^2)^2},\qquad
+\partial_a\Xi=-\frac{42949671911260160000}{68719480090918952972801}\ne0.
+\]
+
+Это сильный конечный **положительный witness порядка** без подгонки скалярного path cost. Отдельный исходный четырёхзвенный Lorentz commutator даёт ориентированный `J23`-маркер `ab(1−a²b²/8)` и совпадает по типу с odd face, читаемым шестилицевой star; однако `Cᵀ` в checker пока только алгебраический control, не доказанный физический solder/Hodge controller. Три пути и `U_j` также являются исходным graph sublanguage и условным scene→Lorentz assignment, не уже выведенным 4D link map.
+
+Последний [all-order face-weld](A4D_BOOK_PRETRACE_ORIENTED_GR_MEMORY_SYNTHESIS_2026_10_19.md) поднимает witness до точного конечного геометрического тождества. Если исходная память действительно сохраняет ориентированное слово исходной 4-Role грани `γ_f` и обратное, а физически типизированное представление даёт `P_f=ρ(γ_f)`, то при положительных весах классов `w_±` их раздельный pretrace-нормализованный контраст равен
+
+\[
+\tfrac12\left(\frac{w_+P_f}{w_+}-\frac{w_-P_f^{-1}}{w_-}\right)
+=\tfrac12(P_f-P_f^{-1})=C_f^{\star}.
+\]
+
+Это off-shell тождество для всех полей и всех конечных шагов; производные движущихся `w_±` сокращаются до вариации. После исходного solder/Hodge pairing получается ровно исходное шестилицевое действие, следовательно, все 16 coframe и 24 link Euler-строки совпадают как функции. Это сильнее совпадения отдельных Taylor-коэффициентов. Но class-normalization — операция сравнения, а её полный аппаратный и ценовой вклад остаётся в физической программе; тождество условно на admission исходной пары и representation.
+
+Глобальный [718-cycle synthesis](A4D_BOOK_PRETRACE_ORIENTED_GR_MEMORY_SYNTHESIS_2026_10_19.md) объясняет, почему эта связка структурно естественна. В исходном `K(9,11,13)` число независимых циклов равно `359−33+1=327`. На одном и том же цикловом базисе scalar edge-price раскладывается в reciprocal часть, 32 endpoint-gradient и 327 цикл-нечётных координат; proper-Lorentz links после tree gauge восстанавливаются по 327 упорядоченным матричным holonomy. Эти последние два канала живут на одной презентации, но scalar cycle odds не равны Lorentz action. Сопоставление шести исходных 4D face words с путями исходного 33-вершинного Book-графа всё ещё не доказано.
+
+Новый [полный Book Hessian/Fisher owner](A4D_COMPLETE_BOOK_HESSIAN_ARCHIVE_718_SOURCE_DECOMPOSITION_2026_10_19.md) закрывает весь scalar-pressure сектор: для любого edge-cost tangent `d`, `D²A_Book[d,d]=−ln(φ)||M(d)||²`, где `M(d)` — полный 685-мерный Doob/Fisher archive source. Его cochain split — `1+32+326+32+327`; соответствие архивных возмущений и допустимых стационарных flow-frequency вариаций конструктивно, с движущейся подготовкой. Это не только аргумент против прежнего logdet-сокращения: отрицательно полуопределённый scalar Hessian сам не может дать требуемую сигнатуру исходного Lorentz–Palatini `12+ / 12−`. Положительные link-направления должны прийти из реального nonlinear `D²Cost` того же controller либо из выбранного ordered/coherent канала; назначать такой второй jet извне нельзя.
+
+Независимая материя тоже уже имеет сильного математического носителя: [local LEFT-coded CAR16 Book03 owner](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md) строит из исходного Clifford-квадрата ненулевой CAR-источник и точное конечное nonvacuum Einstein-null-scalar решение на одной полной двухтактной trace-log цене, с коэффициентом из `p,z`, без добавленного скалярного действия. Это отвечает на вопрос, может ли такая цена нести материальную Euler-строку. Не отвечает на вопрос, выбирает ли и оплачивает ли mandatory native execution именно этот LEFT-controlled word, код поля, CAR readout и все H+J+R/RIGHT/ref128/preparation/clock/work terms. Аналогично `C_Y` может дать конечное-`t` вакуумное равенство на выбранном capacity-профиле; сам профиль и слово копирования не следуют из одной записи, а компиляторный остаток не заменяет точный корень или `C²` перенос.
+
+**Стратегический выигрыш:** больше не нужно искать ещё один graph, Lorentz generator, условное уравнение Эйнштейна или конечный источник-свидетель. Геометрический 40-row operator weld, 327-cycle nonabelian data, полный scalar-history Hessian и условный CAR-matter Euler уже имеют владельцев. Остался один общий физический weld: на одной compulsory D0 execution вывести admission ориентированных face histories, точную Role↔Book path map, actual `C_Y`/CAR preparation, полный `H+J+R` и resource price; затем вычислить совместный `16+24+CAR+prep+clock/work` covector и без подгонки приравнять его к исходному star/Palatini+matter source на общем carrier. В этот weld входят reflection/failure branches, moving Perron start, reference128/oldRIGHT, refinement и допустимость global scale. Затем можно потребить уже имеющиеся joint-root, nine-null/Bianchi и recovery results. Пока он не сделан, это условный синтез, а `GR_closed=false`.
