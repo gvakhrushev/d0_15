@@ -38,9 +38,14 @@ const D=edge.map(([u,v])=>{
 });
 // Fully correct coordinate pullback isometries on the ORIGINAL 718 edges.
 const cross=Array.from({length:n},(_,i)=>Array.from({length:n},(_,j)=>{
- let sum=0;for(let h=0;h<edge.length;h++){const[u,v]=edge[h];if(u===i&&v===j)sum+=r[v]/(rho*r[u]);}return sum;
+ let sum=0;
+ for(let h=0;h<edge.length;h++){
+  const [u,v]=edge[h];
+  if(u===i&&v===j)sum+=Math.sqrt(r[v]/(rho*r[u]))*Math.sqrt(r[u]/(rho*r[v]));
+ }
+ return sum;
 }));
-for(let i=0;i<n;i++)for(let j=0;j<n;j++)near(cross[i][j],A[i][j]*r[j]/(rho*r[i]));
+for(let i=0;i<n;i++)for(let j=0;j<n;j++)near(cross[i][j],T[i][j]);
 function actU(q){
  const adj=Array(n).fill(0);
  for(let h=0;h<edge.length;h++)for(let i=0;i<n;i++)adj[i]+=D[h][i]*q[h];
