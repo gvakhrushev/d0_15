@@ -229,3 +229,46 @@ Direct differentiation gives the following EXACT change of the imaginary mixed c
 So the complete recorded-history observable gives an independently NONZERO preparation response automatically. In particular, silently freezing its original input would change the sign of the measured mixed source in BOTH detector lines. This verifies the user's suggested **criterion repair**: the preparation response should be tested after varying the WHOLE closed record, not demanded as an arbitrary extra exact one-form added to a bare gauge-dependent phase.
 
 The attached independently executed same-source checker now includes the full direct positive \(F(a,b)=\sqrt{I-T^\dagger T}\) at nonzero controls, true normalization of \(\psi_\pm(a)\), all dephased GOOD/BAD branch density blocks and \(h\to0\) finite-difference convergence to (12): 106 PASS groups. This verifies the finite mathematical original-carrier statement, **not** full native M1 prep admission or the physical full Book action. GR_closed=false.
+
+
+## 8. The real synthesis: the observed closed phase is LITERALLY original retained-memory noncommutativity
+
+The three-record result has a deeper exact operator identity, not a name-based analogy. For any three Hermitian, complete, normalized original recorded densities (here all GOOD/BAD flags dephased),
+\[
+\boxed{
+\begin{aligned}
+\operatorname{Re}\operatorname{Tr}(R_0R_1R_2)
+ &=\tfrac12\operatorname{Tr}(R_0\{R_1,R_2\}),\\
+\operatorname{Im}\operatorname{Tr}(R_0R_1R_2)
+ &=\frac{1}{2i}\operatorname{Tr}(R_0[R_1,R_2]).
+\end{aligned}}\tag{13}
+\]
+The proof is simply
+\((\operatorname{Tr}R_0R_1R_2)^*
+=\operatorname{Tr}R_2R_1R_0=\operatorname{Tr}R_0R_2R_1\).
+In particular the measured phase is **exactly an observable witness of NONCOMMUTATIVITY of the recorded CAR density operators**, not an arbitrary phase attached to a history. The GOOD/BAD block diagonal form (3) implies
+\[
+\boxed{
+\operatorname{Tr}R_0[R_1,R_2]
+=\sum_{b=G,B}\operatorname{Tr}
+\bigl(R_{0,b}[R_{1,b},R_{2,b}]\bigr).
+}\tag{14}
+\]
+Thus no cross-flag coherence is needed: the original CAR/Julia memory is already noncommutative **inside each ordinary classical recorded flag**. If the detector algebra is restricted to commuting (fully CAR-dephased) number registers, ALL commutators in (14) vanish and there can be no such phase. The supplied original negative controls verify exactly that, including both failure branches.
+
+At the complete common base this yields the manifestly gauge-free antisymmetric curvature-like response
+\[
+\boxed{
+\Omega_{VW}^{\rm recorded}
+=\frac{1}{2i\,\operatorname{Tr}R_0^3}
+\operatorname{Tr}\!\bigl(R_0[D_VR,D_WR]\bigr).
+}\tag{15}
+\]
+This is the precise information-geometric counterpart to the ORIGINAL scene's **symmetric** archived Book/Fisher quadratic form
+\[
+\mathscr G_{VW}^{\rm Book}
+=-\ln\varphi\,\langle\mathsf M(DC[V]),\mathsf M(DC[W])\rangle.
+\]
+Both are made from genuine recorded-history first jets, but on presently DISTINCT original scene and CAR/Julia carriers. The first is a signed antisymmetric \(\Omega\); the second is a symmetric negative-semidefinite Hessian. They must NOT be mistaken for two terms of one selected action, nor can one antisymmetric commutator be a symmetric Einstein Hessian by itself.
+
+**Practical next and only real physical contraction:** Find, on ONE compulsory original D0 execution, the actual composition-preserving map from Book03's noncommutative original memory classes into the observed CAR density *algebra* so that (14) is its physical closed-loop readout, and simultaneously from its paid original scalar costs to the archived scene \(\mathsf M\). Then compute the WHOLE H+J+R stationary action derivative, including actual cost of flagging, preparation and clock; only an equality of that derivative to the independent all40 original Palatini–CAR Euler constitutes GR progress. This is now a concrete same-run algebra/cost mapping problem, not a demand for \(d(w\,d\theta)=0\), not a request for extra phase coherence, and not another numerical graviton coefficient fit. GR_closed=false.
