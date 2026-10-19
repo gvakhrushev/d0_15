@@ -384,7 +384,7 @@
           "sha256": "667530a312f0be8b2d48f93e167999d1a272b3cdd923523b727b5ddaf7ca02ea"
         }
       ],
-      "reported_state": "Pinned to #334 head d6db28e517278c927efaa425b2ad2fc0511093f5. The exact rational checker passes all 24 link and 16 coframe mixed rows and the mixed plaquette controls; the independent finite-mesh numerical check reproduces the h/8 residual suppression. Result-only graph entry; no application to native-programme-v1 is registered or accepted."
+      "reported_state": "Pinned to exact theorem source commit d6db28e517278c927efaa425b2ad2fc0511093f5, subsequently integrated into the #334 strategic route at commit 588b701a38d0f1fa821cc6b3fb64048d5c593ce2. The exact rational checker passes all 24 link and 16 coframe mixed rows and the mixed plaquette controls; the independent finite-mesh numerical check reproduces the h/8 residual suppression. Result-only graph entry; no application to native-programme-v1 is registered or accepted."
     }
   ],
   "applications": [
