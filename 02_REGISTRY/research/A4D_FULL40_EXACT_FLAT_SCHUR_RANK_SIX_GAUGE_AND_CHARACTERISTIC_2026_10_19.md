@@ -205,3 +205,49 @@ NONLINEAR interactions are NOT solved by superposing these linear
 waves; the quadratic crossed-null and quartic Palatini consumers
 address that distinction separately. This result adds no chirality
 selection, extra field, native preparation or physical history action.
+
+
+## 8. Essential algebraic distinction: rational-field image versus LOCAL polynomial/periodic image
+
+The exact generic rank-six theorem (8) proves a **field-valued** target statement. Let
+\(R=\mathbb Q[z_u^{\pm1},z_v^{\pm1},z_x^{\pm1},z_y^{\pm1}]\)
+and \(K=\operatorname{Frac}(R)\). On the open locus det L≠0, the
+six Lorentz and four discrete-divergence left-null conditions
+span the ten-dimensional K-left-kernel. Therefore they are
+**necessary and sufficient** for a source \(J\in K^{16}\)
+to belong to \(\operatorname{im}_K S\):
+\[
+\boxed{J\in\operatorname{im}_K S
+\ \Longleftrightarrow\
+J\perp \ker_K S^{\mathsf T}.}\tag{15}
+\]
+This follows exactly by ordinary finite-dimensional linear algebra
+over the rational function field K, not by assuming a global Bianchi
+identity. However, even when \(J\in R^{16}\), (15) does NOT imply
+\(J\in\operatorname{im}_R S\). The rational inverse may require division
+by a nonunit Fourier/shift polynomial (a propagator pole or a finite
+characteristic factor). That additional polynomial divisibility/source
+locality is a **module/image problem**, not a missing left Ward.
+
+Concrete scalar caution: multiplication by \(1-T_u^{-1}\)
+has generic rank1 and zero left kernel over K, but the constant
+Laurent polynomial 1 is not in its image over R. It can be inverted
+rationally, but not with a finite Laurent polynomial. The same
+distinction applies to a rank-six matrix Schur: no claim of
+polynomially local, periodic or causal inverse follows from (8).
+The previous terminating 24-Cartan inverse is a separate
+stronger result precisely because its shift remainder is
+nilpotent on the fixed-degree POLYNOMIAL-coordinate class.
+The ten-metric reduced Schur does not inherit that
+nilpotence or invertibility for free.
+
+Hence the correct all-order fifth-source test has TWO serial gates:
+(1) satisfy ALL ten exact left Ward/source constraints;
+(2) test membership in the desired polynomial/analytic/fixed-collar
+module, with the true characteristic denominators and boundary
+flux, rather than allowing a nonlocal K-rational solution and
+promoting it as finite native recovery. If (1) fails, the chosen
+homogeneous continuation is algebraically blocked. If (1) passes
+but (2) fails, the obstruction is locality/refinement/periodic
+rather than Bianchi. Keep these distinct in the parent research
+route and physical D0→GR closure.
