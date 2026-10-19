@@ -90,11 +90,13 @@ function run(){
   const f=Array.from({length:n},(_,i)=>Math.sin((i+1)*trial*.117));
   const Pf=base.P.map(row=>row.reduce((s,v,j)=>s+v*f[j],0));
   const risk=E.reduce((s,[u,v])=>s+base.pi[u]*base.P[u][v]*(f[v]-Pf[u])**2,0);
-  const quadratic=f.reduce((s,x,i)=>s+base.pi[i]*x*base.F[i].reduce((q,w,j)=>q+w*f[j],0),0);
+  const fpi=f.map((x,i)=>Math.sqrt(base.pi[i])*x);
+  const quadratic=fpi.reduce((s,x,i)=>s+x*base.F[i].reduce((q,w,j)=>q+w*fpi[j],0),0);
   varianceError=Math.max(varianceError,Math.abs(risk-quadratic));
  }
  assert(varianceError<1e-12,"full recorded conditional variance identity");
- const constantKernel=Math.max(...base.F.map(row=>Math.abs(row.reduce((s,v)=>s+v,0))));
+ const sqrtPi=base.pi.map(x=>Math.sqrt(x));
+ const constantKernel=Math.max(...base.F.map(row=>Math.abs(row.reduce((s,v,i)=>s+v*sqrtPi[i],0))));
  assert(constantKernel<1e-11,"wrong constant null record");
  let lo=20,hi=25;for(let k=0;k<85;k++){const mid=(lo+hi)/2;if(mid**3-359*mid-2574>0)hi=mid;else lo=mid;}
  const rho=(lo+hi)/2,sumActive=3-718/rho**2,prodActive=3-1436/rho**2+359**2/rho**4;
