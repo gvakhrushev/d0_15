@@ -247,3 +247,133 @@ the old generic "is there any signed source from a positive detector" question:
 
 The exact directional Hessian in (10) is a positive scientific intermediate,
 NOT full dynamical D0→GR. **GR_closed=false**.
+
+
+## 6. EXACT nonflat ALL-h field-source transfer: the original binary odds on the full Brinkmann/CAR fibre
+
+This removes the **off-null source-transfer premise** in (3) on ONE large,
+already-owned **nonflat** solution class without taking a limit or restricting
+the actual field variations to the ansatz. Import, as a proven independent
+geometric input, the original
+[unrestricted all40→3→1 Brinkmann theorem](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md)
+of #334. Its field family has arbitrary lattice
+\(H(u,x,y)\), the original two nilpotent proper-Lorentz links \(K_2,K_3\),
+and genuine two-component u-dependent null CAR \(\Psi(u)\).
+Crucially, at *every point* of that original coframe/link/matter family,
+
+\[
+\boxed{
+f_i(\vartheta)=h^{-4}\mathcal P_{\star,h}(\vartheta)=0,\qquad
+q_i(\vartheta)=\widehat g^{\mu\nu}D_\mu^+\Psi D_\nu^+\Psi=0,
+}
+\tag{11}
+\]
+
+for all active old LEFT addresses, with f=q=0 for the untouched old-address
+complement by actual baseline construction. The ORIGINAL six-face density
+vanishes **identically on the Brinkmann ansatz even before its independent
+24-link and 16-coframe equations are imposed**, and the CAR scalar q is
+null because \(g^{uu}=0\). The original full Euler DIFFERENTIAL of these
+zero-valued functions is NOT zero in independently varied ambient field
+directions; it is exactly the 40+matter force used in the existing
+finite source theorem. On the balanced true-cost AF subset, the weights
+and metric match at finite mesh; otherwise carry the already owned
+positive inverse-PF local-source map instead of assuming equal priors.
+
+For a fixed integer k, genuine return rank d=1056 and fixed original
+controller parameter t, the SAME original two-tick k-Golden probability
+(1a),(8) is therefore
+
+\[
+g_i(\vartheta)=g_*(k)
+=A_k\,[Q_0R_0]^{1056},
+\qquad\text{for EVERY }\vartheta\text{ in this entire curved fibre.}
+\tag{12}
+\]
+
+It follows for **every independent original ambient 16+24+2 field tangent V
+at every such point**, even if an admitted preparation law \(\mu_i(\vartheta)\)
+moves, that the complete measured conditional GOOD/BAD odds obey
+
+\[
+\boxed{
+DR_{\rm bin}(\vartheta)[V]
+=\frac{2}{(1-g_*(k))\ln\varphi}
+\sum_{i\in\mathcal I}\mu_i(\vartheta)
+\left[\alpha_{f,k}Df_i[V]+\alpha_{q,k}Dq_i[V]\right].
+}\tag{13}
+\]
+
+Inactive leaves have zero field jet by the declared original block
+construction; the moving-normalized-prior term cancels *because all full
+GOOD/BAD odds have the same value*, not because the preparation was
+frozen. The two REAL coefficients of the same original return determinant
+are, at f=q=0,
+
+\[
+\boxed{
+\begin{aligned}
+\alpha_{f,k}&=\frac{528\,r_k\,4p^{11}t^2}{R_0}>0,\\
+\alpha_{q,k}&=
+ 528\,r_k\,8\sigma p^6 t^2
+ \left(\frac1{Q_0}+\frac{p^6}{R_0}\right),\\
+\Lambda_{\sigma,k}:=\frac{\alpha_{q,k}}{\alpha_{f,k}}
+&=\frac{2\sigma}{p^5}\left(\frac{R_0}{Q_0}+p^6\right).
+\end{aligned}}\tag{14}
+\]
+
+They come from BOTH genuine q-dependent scene Golden rotations and ALL
+original f-dependent AF return terms; no coefficient is inserted to
+make Einstein hold. For the existing \(\sigma=-1\) orientation and one
+defining leaf, \(\Lambda_{-,10}=-23.41633069607479\),
+whereas the separately constructed \(z=2^{-20}\) J₂ has
+\(-23.416406751884\). These two cuts must **not be confused**: the
+fixed-mesh sourced metric amplitude is set by the actual selected
+\(r_k\), not borrowed from the earlier other-detector result.
+
+The original unrestricted 40→3→1 theorem now applies with this exact
+unmodified J₂ field-source ratio (all original independent link and
+coframe first variations are taken **before** the ansatz substitution).
+For arbitrary small/bounded u-dependent CAR energy
+\(\mathcal E(u)=|D_u^+\Psi(u)|^2\), fixed transverse boundary collar, and
+ANY finite-grid harmonic \(W_{h,j}\),
+
+\[
+\boxed{
+\begin{aligned}
+\Delta_h^\perp H(u+h,x,y)&=-4\Lambda_{-,k}\,\mathcal E(u),\\
+H(u_j,x,y)
+&=-\Lambda_{-,k}\,\mathcal E(u_{j-1})(x^2+y^2)
+ +W_{h,j}(x,y),\\
+\Delta_h^\perp W_{h,j}&=0.
+\end{aligned}}\tag{15}
+\]
+
+The original two independent link equations determine \(K_2,K_3\)
+with the existing one-u-tick stagger; (15) kills the remaining
+coframe source; CAR scalar/top Euler rows vanish for the original
+u-only null matter. Multiplying **all** these field derivatives by
+the positive common factor in (13) leaves their joint field-root
+set unchanged. The same exact statement holds for smooth arbitrary
+u-dependent compact harmonic profiles via the original finite
+Dirichlet recovery theorem.
+
+In particular, the previously derived *off-null* error bound of §1
+has \(\delta=0\) identically on this **curved** solution family
+for every h: the transfer is EXACT at finite h, not a limiting or
+linearized agreement. Nevertheless the full physical Cost−Info
+**action** is not proved equal to the conditional odds, and full original
+PREP/controller/clock/coherent-fine-record/normalizer sources may
+remain nonzero. This is a conditional finite **field**-Euler solution
+class, NOT a whole-programme D0 physical solution, generic nonlinear
+GR theorem or raw #216 terminal. \(\mathrm{GR\_closed}=\mathrm{false}\).
+
+**Executed independent reproducible checks:** genuine two-tick
+\(E(f),B(q),Q,R\) centered field jets vs (14), all three original
+GOOD probabilities at k=2,9,10, correct \(r_k\)-dependent
+\(\Lambda_{-,k}\), and the exact discrete Poisson identity (15)
+for nonconstant positive u-energy and a nonzero cubic Weyl plus
+lattice-corrected quartic Weyl at three spacings and three sites.
+See [the positive finite-family checker](sources/d0_binary_source_transfer_2026-10-19/check_real_golden_brinkmann_field_family.py).
+The owned all40 symbolic theorem is imported by reference, not
+silently claimed re-executed in this scalar-source checker.
