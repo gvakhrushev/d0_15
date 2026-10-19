@@ -67,6 +67,14 @@ assert positive_six_readout_abs_det==s.Rational(1,26214400000000)/(24*s.sqrt(2))
 for j in range(6):
     x=s.Matrix(4,4,list(J[:,j]))
     assert x.T*eta+eta*x==s.zeros(4)
+# The abelianized history of these SAME controls remembers only total A/B
+# signed amplitudes. Four tangent directions are invisible to it.
+Abelian=s.Matrix([[1,0,1,0,1,0],[0,1,0,1,0,1]])
+assert Abelian.rank()==2 and len(Abelian.nullspace())==4
+invisible=s.Matrix([1,0,-1,0,0,0])
+assert Abelian*invisible==s.zeros(2,1)
+assert J*invisible!=s.zeros(16,1)
+assert (J*invisible)[11]==s.Rational(1,40)
 print("REGULAR_IDENTITY_WORD_12", closed==I)
 print("ENDPOINT_JACOBIAN_RANK", J.rank())
 print("EXACT_NONZERO_PIVOT_MINOR",minor)
