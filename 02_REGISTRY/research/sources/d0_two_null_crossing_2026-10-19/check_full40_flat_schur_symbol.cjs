@@ -179,35 +179,38 @@ function audit(){
  */
 function exactTwoNullTT(){
   let checks=[];
-  for(let type of ["plus","cross"]){
+  for(let role of [0,1])for(let type of ["plus","cross"]){
     const e=Array(16).fill(0),w0=Array(24).fill(0);
+    const gen2=role===0?3:1,gen3=role===0?4:2;
     if(type==="plus"){
       e[10]=1;e[15]=-1;
-      // physical w_x=+D_u^- N2, w_y=-D_u^- N3
-      w0[15]=-1;w0[22]=1;
+      // w_x=+D_role^- N2 (or opposite M2), w_y=-D_role^- N3
+      w0[12+gen2]=-1;w0[18+gen3]=1;
     }else{
       e[11]=1;e[14]=1;
-      // physical w_x=+D_u^- N3, w_y=+D_u^- N2
-      w0[16]=-1;w0[21]=-1;
+      // w_x=+D_role^- N3, w_y=+D_role^- N2
+      w0[12+gen3]=-1;w0[18+gen2]=-1;
     }
-    const B2=matrices([2,1,1,1]).B,
+    const coord=t=>role===0?[t,1,1,1]:[1,t,1,1];
+    const B2=matrices(coord(2)).B,
       b0=mv(B2,e).map(x=>2*x);
     for(let t of [1,2,4,8]){
-      const {L,B,C}=matrices([t,1,1,1]);
+      const {L,B,C}=matrices(coord(t));
       const linked=mv(L,w0).map((v,i)=>v+b0[i]);
       const scale=mv(B,e).map((v,i)=>v-(1-1/t)*b0[i]);
       const solder=mv(C,w0);
       if(maxAbs(linked)!==0 || maxAbs(scale)!==0 ||
          maxAbs(solder)!==0)
-        throw Error("exact one-null TT failed "+type+" t="+t);
-      checks.push({type,t,link_identity:true,coframe_identity:true});
+        throw Error("exact one-null TT failed "+role+"/"+type+" t="+t);
+      checks.push({role:role===0?"u":"v",type,t,link_identity:true,coframe_identity:true});
     }
   }
   return {
     status:"PASS_EXACT_ALL_T_TT_LINEARIZED_40_EULER",
-    role_wave:"(t,1,1,1) with arbitrary nonzero t",
+    role_wave:"(t,1,1,1) OR (1,t,1,1) with arbitrary nonzero t",
     plus:"delta e^2_x=f, delta e^3_y=-f; omega_x=D_u^- f N2, omega_y=-D_u^- f N3",
-    cross:"delta e^2_y=delta e^3_x=f; omega_x=D_u^- f N3, omega_y=D_u^- f N2",
+    cross:"delta e^2_y=delta e^3_x=f; omega_x=D_role^- f N3, omega_y=D_role^- f N2",
+    opposite_v:"replace u→v, N_i→barN_i (all other TT entries unchanged)",
     algebraic_proof:"Laurent degree [-1,1] for L(t); three dyadic exact values fix each coefficient; C(t)=(t-1)C1",
     samples:checks,
     scope:"linearized vacuum all40 on original star carrier, not finite-amplitude nonlinear wave or compulsory native history"
