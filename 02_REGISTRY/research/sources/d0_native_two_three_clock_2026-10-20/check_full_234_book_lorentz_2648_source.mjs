@@ -55,7 +55,7 @@ function transfer(t){
   return Array.from({length:n},(_,i)=>Array.from({length:n},(_,j)=>
     A[i][j]?Math.exp(-ell*(s(i,j,t)-.5*(I(i)+I(j)))):0));
 }
-function clock(K){
+function clock(K,t){
  const K2=prod(K,K),K3=prod(K2,K),K4=prod(K3,K);
  const Z2=trace(K2),Z3=trace(K3),Z4=trace(K4),
        Z=alpha[2]*Z2+alpha[3]*Z3+alpha[4]*Z4;
@@ -102,7 +102,7 @@ function clock(K){
    maxEvenLogError:maxEven,maxOddLogError:maxOdd,
    conditionalDepthMass};
 }
-const experiments=[0,.013,.04].map(t=>clock(transfer(t)));
+const experiments=[0,.013,.04].map(t=>clock(transfer(t),t));
 const fieldDerivative=(Math.log(experiments[1].Z)-Math.log(experiments[0].Z))/.013;
 require(Math.abs(fieldDerivative)>.01,"nontrivial true original moving cost source absent");
 const fib=[0n,1n];for(let j=2;j<=40;j++)fib.push(fib[j-1]+fib[j-2]);
