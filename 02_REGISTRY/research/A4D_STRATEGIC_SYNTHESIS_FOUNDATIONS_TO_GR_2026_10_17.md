@@ -3570,10 +3570,10 @@ J_Y^*(I\otimes|enc(i)\rangle\langle enc(i)|)J_Y=P_i^L,
 \qquad \Pr(Y=i)=\pi_i.
 \]
 Thus on the response-preserving bridge the copied leaf keeps the input
-marginal. For conditional terminal law `$q_i(s)$`, its actual joint entropy
-is `$H(π) + Σ_i π_i H(q_i)$`, not generally `$log D$`. The capacity
-profile `$π_i = Z_i/Σ_j Z_j$` is a different preparation-state variation;
-if that variation is admitted, its `$D H(π)$` is part of the same source.
+marginal. For conditional terminal law $q_i(s)$, its actual joint entropy
+is $H(π) + Σ_i π_i H(q_i)$, not generally $\log D$. The capacity
+profile $π_i = Z_i/Σ_j Z_j$ is a different preparation-state variation;
+if that variation is admitted, its $D H(π)$ is part of the same source.
 This is the exact boundary in [the C_Y response-preserving result](A4D_CY_RESPONSE_PRESERVING_CAPACITY_BOUNDARY_2026_10_19.md)
 and §7.40, not a no-go for operations outside its declared class.
 
