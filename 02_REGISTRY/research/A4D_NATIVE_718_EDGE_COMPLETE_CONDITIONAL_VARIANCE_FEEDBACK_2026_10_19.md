@@ -209,6 +209,38 @@ D_{\rm edge}J_{\rm var}=-9.53029\times10^{-9}\ne0
 \]
 for one declared smooth positive 718-edge Cost chart, and the independently computed finite-difference source agrees with the matrix-resolvent source (17) within \(5\times10^{-12}\); the original stationary preparation really MOVES. This proves that the constructed positive feedback has a genuine **field-sensitive** source, not just a fixed invariant trace. It emphatically does NOT prove its 16+24+matter source is the Lorentz-Einstein one: that requires a real field→edge Cost/Info physical compiler, not assignment of the desired Einstein tensor to an unknown Cost.
 
+### 5.1. The SAME complete recorded history supplies both SCALE and INNOVATION — no invented coupling
+
+The one-backwards/one-forwards edge geometry (9) has an exact complementary response: its canonical normalization pressure \(\log_\varphi\lambda\). This is essential to a **physical** Einstein/trace-mode reading. Let the genuine primitive Book Cost be shifted by the SAME scalar c(y) on EVERY one of the 718 original directed edges, while the original vertex Info I_v and actual edge pattern are unchanged:
+\[
+C_{uv}(y)\mapsto C_{uv}(y)+c(y).
+\]
+Then the ORIGINAL full transfer is scaled exactly,
+\(K\mapsto\varphi^{-c(y)}K\),
+and thus for all actual field derivatives
+\[
+\boxed{
+\lambda\mapsto\varphi^{-c}\lambda,\quad
+D\log_\varphi\lambda\mapsto D\log_\varphi\lambda-Dc,\quad
+P\mapsto P,\quad\pi\mapsto\pi,\quad F_{\rm var}\mapsto F_{\rm var},
+\quad J_{\rm var}\mapsto J_{\rm var}.
+}\tag{19}
+\]
+This is a **positive decomposition**, not a reason to discard the uniform source as irrelevant. The one original complete K(9,11,13) registered scene yields the two **intrinsic observable responses**
+\[
+\boxed{\mathscr O_{\rm scene}(K)
+   =\left(\underbrace{\log_\varphi\lambda(K)}_{\rm absolute\ native\ cost\ scale},
+            \underbrace{I-P_\pi^\dagger P}_{\rm distinguishable\ transition\ innovation}\right).}
+\tag{20}
+\]
+They transform differently under a real *common cost shift*: the first has derivative -Dc and the second is exactly unchanged. The original unique pressure principle in [A4D_SCENE_PERRON_DOOB_SINGLE_HISTORY_GOLDEN_INFO_SOURCE_2026_10_19.md](A4D_SCENE_PERRON_DOOB_SINGLE_HISTORY_GOLDEN_INFO_SOURCE_2026_10_19.md) fixes the pressure response from the same complete history; the conditional projection theorem fixes the innovation response. **Neither observable is fitted to the Einstein tensor.**
+
+Moreover the actual stationary Golden entropy-price identity on the **SAME original complete edge law** is
+\(h_\varphi(\pi,P)=\mathbb E_{\pi P}s+\log_\varphi\lambda\).
+Under a real uniform shift C→C+c, \(\mathbb E s\) increases by c and \(\log_\varphi\lambda\) decreases by c, so the entropy remains unchanged exactly. This is a nontrivial **complete normalization consistency check**, not two independently selected physical actions.
+
+For the genuine new physical GR constitutive proof the resulting ONE price must preserve its own real absolute cost/source and its conditional innovation/source **in the combination ACTUALLY selected by Book03**. A conditional source defined only by \(J_{\rm var}\) necessarily misses a field direction that enters the primitive edge Cost as a uniform common shift. One must NOT add \(\log_\varphi\lambda\) with an arbitrary fitted coefficient to make it Einstein; the historical whole Book Cost−Info selection is required to determine whether and how these two outputs enter its true field Euler. This narrows the load-bearing physics question from an unspecified positive spectral action to a **two-channel actual-record source** on a single original 718-edge measure.
+
 ## 6. The exact GR interface is now MUCH sharper
 
 The earlier registry/assembly [GR interface](../gr_assembly/contract.json) requires one compulsory admitted native field→action/source map, not just a family of positive mathematical operators. We now have an explicit **finite, fully indexed original 718-edge candidate**:
