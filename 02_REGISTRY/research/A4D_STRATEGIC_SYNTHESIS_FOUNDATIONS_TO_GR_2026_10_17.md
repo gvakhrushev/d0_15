@@ -4556,3 +4556,34 @@ same-history Cost−Info, native admission/preparation/clock и физическ
 поднять эти две моды и cubic profiles в оригинальные конечные 40 уравнений
 и одновременно свести их к уже существующему same-programme price binding;
 не запускать независимый повтор continuum no-go. `GR_closed=false`.
+
+
+### 7.59. Original Book03 boundary-Info is an EXACT canonical quotient of all nonlinear closed Lorentz curvature
+
+**Direct positive endgame consumer of the original native Cost−Info, same Draft #334:** [A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md](A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md), exact sourced test [check_bulk_endpoint_quotient.mjs](sources/d0_book_info_bulk_gravity_quotient_2026-10-19/check_bulk_endpoint_quotient.mjs). It does NOT modify foundational cost law, introduce arbitrary θ as a physical field, or reclassify the entire original 685-dimensional edge source fiber as a gauge.
+
+The ALREADY proved §7.57 single-event transition information allocation \(s_\theta(u,v)=C(u,v)-\theta I(u)-(1-\theta)I(v)\) differs for any two global θ only by a genuine endpoint coboundary. The breakthrough is the ALL-COMPLETE-RECORD consumption of this identity. For the SAME old retained endpoint pair (a,b), **EVERY alternative original path, including all native failed/terminal histories**, acquires the same factor \(\varphi^{-(\theta-\eta)(I_b-I_a)}\). Therefore
+\[
+\boxed{\mathbb P_\theta(\gamma|a,b)=\mathbb P_\eta(\gamma|a,b)}
+\]
+EXACTLY off shell and through ALL coframe/observer/connection/matter/clock/preparation field derivatives. The original endpoint-conditioned complete Shannon/strict MAP/Fisher sources are independent of the global Info allocation, without physically discarding any endpoint, inventing a postselection resource or changing a single F/R/LEFT/RIGHT event.
+
+On any already OWNED closed based finite Lorentz face/loop, the same central edge-weight difference is a conjugation by positive vertex scalar \(g_v=\varphi^{(\theta-\eta)I_v/2}\). Thus the ENTIRE noncommuting Wilson/plaquette matrix \(P_\theta=P_\eta\) on a closed loop, for arbitrary moving \(I_v\) and arbitrary curved proper-Lorentz link data. This is not merely linearized Einstein: using the TRUE crossed-null native generators \(N_2=E_{-,2}+E_{2,+}\) and \(\bar N_3=E_{+,3}+E_{3,-}\) gives
+\([N_2,\bar N_3]=E_{23}-E_{32}\ne0\). The original 4×4 crossed-Weyl matrix group commutator has nonzero rotation source O(ab), and all of its higher nonlinear terms are STILL θ-independent as EXACT finite matrix functions. Its original full 16+24 geometric Euler derivatives are unaffected by the endpoint bookkeeping convention PROVIDED the physical link/Cost response enters only through that admitted central edge-weight interface. This does NOT by itself make scalar-multiplied GL links proper Lorentz Kraus instruments or prove the two-null quartic finite source.
+
+**CRITICAL SHARP boundary criterion for WHOLE unconditioned physical Book:** write \(\Delta I_e=I_b-I_a\) for each positively weighted endpoint pair. Their true full positive partition is a finite exponential tilt
+\[
+Z_\theta=\sum_e Z_\eta^e \exp[-\ell(\theta-\eta)\Delta I_e],\quad\ell=\log\varphi.
+\]
+Hence
+\[
+\boxed{\partial_\theta\log Z_\theta=-\ell E_\theta\Delta I,\quad
+\partial_\theta^2\log Z_\theta=\ell^2\operatorname{Var}_{P_\theta(e)}(\Delta I)\ge0.}
+\]
+The ENTIRE normalized unconditional endpoint law is θ-independent **IFF the true endpoint jumps are CONSTANT over its positive support**; the full absolute action first FIELD source is also allocation-independent only if the common jump is fixed under the actual field variations or true endpoints are fixed. At a full old history with changing endpoints, positive variance generates a genuine measurable residual; it cannot be dismissed as boundary gauge by analogy. Independent moving-original-Info finite checker found \(\mathrm{Var}\Delta I=0.043838779960645\), genuine θ Hessian0.01015151921591 and source residual <5×10⁻9; actual 4×4 nonflat null-crossed loop θ contrast<6×10⁻17.
+
+**Even canonical source dynamics exactly preserved:** the original finite path variational Euler at each interior q_i is
+\(\partial_2C(q_{i-1},q_i)+\partial_1C(q_i,q_{i+1})-dI(q_i)\), independent of θ. Both endpoints' canonical momenta shift by SAME exact 1-form \((\theta-\eta)dI\), so the discrete symplectic form and its full bulk constraints/Euler jets are identical for any smooth source. This is an actual all-order **information-cohomological quotient** for the same completed native path law, not an external Einstein scalar.
+
+**Strategic change:** §7.57 had left choosing θ as an apparently separate physical gate. For a genuinely complete closed/endpoint-conditioned D0 gravitational reading, θ itself is now REMOVED from the *bulk* GR forcing problem; the actual physical choices still needed are the branch Info observable/event, primitive Cost law, full field→native-Lorentz/Kraus and Book historical action/clock/preparation binding, and—in an unconditional open ensemble—the explicit endpoint-event variance/source. This narrows the true original-D0 Cost−Info→nonlinear Lorentz-star source problem without adding another metric term, detector angle, spectrum or readout. The full original D0⇒GR and fixed-g/tau raw#216 remain open.
+
