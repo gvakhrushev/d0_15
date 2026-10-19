@@ -93,8 +93,10 @@ def real_original_two_tick_source(counts,minimum):
                         for j in range(nsites))/(minimum*nsites)
     near(native_balanced,avg_exact,1e-12)
     # The UNBALANCED original F/R cell counts must NOT be called uniform.
+    # Preserve the original lattice-cell order while reading ORIGINAL counts.
+    ordered_counts=[counts[key] for key in sorted(counts)]
     weighted_old=sum(c*(arbitrary_f[j]+MATTER_RATIO*arbitrary_q[j])
-                    for j,c in enumerate(counts.values()))/sum(counts.values())
+                    for j,c in enumerate(ordered_counts))/sum(ordered_counts)
     assert abs(weighted_old-avg_exact)>1e-5
     return abs(weighted_old-avg_exact)
 
