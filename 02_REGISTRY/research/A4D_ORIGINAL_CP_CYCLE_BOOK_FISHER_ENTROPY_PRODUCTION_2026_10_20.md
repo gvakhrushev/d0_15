@@ -113,3 +113,14 @@ Because K_−t=K_t^T, this satisfies the EXACT Gallavotti–Cohen symmetry
 The same identity holds already at the *finite closed-trace* level, before long-time limits, as Tr(K_t^n)=Tr(K_−t^n). In the smooth long-history rate-function regime it gives Iε(j)−Iε(−j)=2 lnφ ε j. This is a standard stochastic fluctuation-relation mechanism demonstrated **on the original D0 graph with the original Book scalar weights**, not proof that the physical full128/CAR detector supplies the comparison.
 
 Independent checker: sources/d0_cp_book_fdt_2026-10-20/check_native_book_closed_history_fluctuation.py, which enumerates original graph zone-coded legal closed words of lengths 2 through 6 with exact vertex multiplicities and verifies the exact n=3 rooted triangle factor. Longer n follow algebraically from the reversal involution. **Neither actual native physical clock nor alpha/neutrino amplitude is selected by this proof; GR_closed=false.**
+
+
+## 7. Stronger scoped physical no-go: the CP-only geometric 2-jet is rank ONE, even under nonlinear field reparameterization
+
+If, conditionally, all of a proposed geometric field y∈R^m enters THIS scalar CP macro-sector via just one smooth native Cost bias ε(y), and ε(y0)=0, then A'(0)=0 by (1). The FULL field-chain-rule Hessian is therefore
+
+    D²_y(A∘ε)|y0=A''(0)·(Dε|y0)⊗(Dε|y0).
+
+The term A'(0)D²ε vanishes EVEN WHEN ε(y) is nonlinear. Since A''(0)<0, the resulting quadratic form is negative semidefinite of rank ≤1. It cannot, by itself, reproduce the original nondegenerate 24-link Palatini Hessian with 12 positive and 12 negative directions. A SymPy control with ε=x+2y+3x²+xy gives A''(0)*[[1,2],[2,4]] at the origin, rank one. This strengthens the prior affine-pressure-only no-go within the **single CP scalar channel** and does NOT forbid a genuine joint original CAR/Lorentz/ordered-memory action.
+
+Sharp parent decision: if native actual geometric Lorentz tangent V has Dε(V)≠0, this scalar history sector contributes A''(0)[Dε(V)]² and cannot be silently removed; prove either Dε vanishes on the admitted Lorentz subspace or a cancellation by another **actually selected** native source on the SAME complete programme. No fitted Einstein counterterm and no GR promotion.
