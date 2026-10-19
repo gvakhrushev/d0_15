@@ -3775,6 +3775,17 @@ produce cross terms and a field-dependent normalizer. Neither the resolved
 path law nor the literal §03.10(c) coefficient alone selects the ten-coin
 filled/complement pointer.
 
+The exact v8 variational unfolding
+([`A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md`](A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md))
+does not supply this missing selector. Its unique profile
+\(\sigma_*=K/\operatorname{Tr}K\) is an auxiliary optimizer that evaluates
+the already-defined scalar price; its owner explicitly does not identify it
+with a physically prepared Gibbs state or the Book history law. Identifying
+its spectral weights with path outcomes would still require a same-carrier
+POVM/event map, the complete retained records and their costs, and the full
+normalizer derivative. Auxiliary uniqueness closes the representation of
+that conditional price, not physical readout selection.
+
 This sharpens the next full-price proof: on the actual compiled carrier bind
 each complete path weight to its orthogonal Born amplitude by the forced
 square-root lift, then group paths only according to the detector's actual
