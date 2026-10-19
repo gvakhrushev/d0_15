@@ -24,7 +24,7 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.84](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.85](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [two-null regular identity-word reverse synthesis](A4D_TWO_NULL_REGULAR_IDENTITY_WORD_REVERSE_GR_SYNTHESIS_2026_10_19.md),
@@ -34,9 +34,15 @@ and [cubic continuum Ricci/Poisson completion](sources/d0_two_null_crossing_2026
 [exact cubic finite link lift and coframe source](sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 and its separate finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
-Continue from strategic [§§7.63–7.75, 7.81–7.83](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) and the [two-/three-cycle physical-source gate](A4D_TWO_THREE_CYCLE_DOOB_OBSERVABILITY_AND_GR_PHYSICAL_SOURCE_GATE_2026_10_19.md). The binary Golden-return result has positive field-source proportionality to the existing full $16+24+2$ covector on its common null base. An independently owned second AF preparation price has a unique type-uniform optimizer that preserves those field-source zeros up to a positive factor, but its selection for the same complete binary execution remains unproved; naive addition to the binary mean entropy has no interior preparation root. More sharply, the full-history decomposition in §7.73 proves that binary compression omits conditional fine-label and coherent-record source terms, which can be nonzero even when binary statistics are fixed. Book 03's pathwise minimum-code condition is not yet identified with the ensemble-mean binary source used in these comparisons. The 718-edge conditional-variance theorem and §7.81 now give a one-history Perron/Doob feedback candidate with its full moving source; §7.82 adds a branch-resolved complete Lorentz readout whose first and crossed-null mixed Shannon jets match on the J and B faces. Its comparison scale and branch-conditioned measurement remain unselected. §7.83 proves an exact factor-four all-success composition defect between one product dilation and sequential fresh-flag actuation on the same positive tester; physical D0 actuation granularity remains open. §7.84 shows that the 64-fold face-normalization is exactly the sequential four-success attenuation, so its physical selection is still the decisive missing premise. The physical field-to-edge Cost/Info jet, its pullback on the full coframe/link/CAR/preparation/clock tangent, and equality to the whole source are still open. The native observation algebra and complete same-history price must therefore be identified before any of these matching sources can count as physical GR.
+Continue from strategic [§§7.63–7.75, 7.81–7.85](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) and the [two-/three-cycle physical-source gate](A4D_TWO_THREE_CYCLE_DOOB_OBSERVABILITY_AND_GR_PHYSICAL_SOURCE_GATE_2026_10_19.md). The binary Golden-return result has positive field-source proportionality to the existing full $16+24+2$ covector on its common null base. An independently owned second AF preparation price has a unique type-uniform optimizer that preserves those field-source zeros up to a positive factor, but its selection for the same complete binary execution remains unproved; naive addition to the binary mean entropy has no interior preparation root. More sharply, the full-history decomposition in §7.73 proves that binary compression omits conditional fine-label and coherent-record source terms, which can be nonzero even when binary statistics are fixed. Book 03's pathwise minimum-code condition is not yet identified with the ensemble-mean binary source used in these comparisons. The 718-edge conditional-variance theorem and §7.81 now give a one-history Perron/Doob feedback candidate with its full moving source; §7.82 adds a branch-resolved complete Lorentz readout whose first and crossed-null mixed Shannon jets match on the J and B faces. Its comparison scale and branch-conditioned measurement remain unselected. §7.83 proves an exact factor-four all-success composition defect between one product dilation and sequential fresh-flag actuation on the same positive tester; physical D0 actuation granularity remains open. §7.84 shows that the 64-fold face-normalization is exactly the sequential four-success attenuation; §7.85 adds the absolute original edge-pressure source. The physical field-to-edge Cost/Info jet, its pullback on the full coframe/link/CAR/preparation/clock tangent, and equality to the whole source are still open. The native observation algebra and complete same-history price must therefore be identified before any of these matching sources can count as physical GR.
 
 The geometry side now also has a finite period-four Bloch census: no extra exact nonzero-momentum connection kernel occurs on that cell, while the pinned regular first-slow #232 branch has an exact curved-source incompatibility. Neither gives a refinement-uniform inverse or an exact curved root. The saved quartic branch also needs one gauge-aware exact-range comparison with the compact continuum profile before those two coordinate representatives can be identified. The exact Lorentz Ward and terminating polynomial link inverse reduce the unwrapped formal geometry to ten metric rows; the nonflat quartic branch solves all free interior Euler coefficients through degree four with coefficientwise $O(h)$ refinement, but no all-order root. The complete full128 Shannon term has a nonzero first source along an opposite-null commutator, distinct from the known port-code term. The complete 718-edge predictive feedback has an exact 685-dimensional Kirchhoff/Ward source and short-cycle tomography reconstructs its scalar Doob law plus one absolute Book pressure. A further exact group-valued reconstruction now shows that 327 suitably tree-transported, ordered matrix triangle holonomies determine every one of the 359 edge links up to gauge, with all 960 remaining faces fixed by ordered identities; scalar cycle odds alone still do not reveal this Lorentz data, and D0's physical matrix-readout admission is open. The same 718-edge source now has a pressure/innovation pair under a common edge-cost shift; the full determinant has a 33-binary-flag Cholesky realization without extra CAR33, but its field-dependent gates and complete work price are not yet native-selected. Neither scalar pressure nor variance can replace the signed $(12,12)$ Lorentz–Palatini response; the ordered two-fresh-flag Lorentz source remains essential. The next geometric step is the ten-row reduced metric Schur and its first obstruction or controlled all-order solve. The decisive physical step is one admitted same-run test of conditional cycle histories, ordered matrix holonomies, absolute Book return and the complete $16+24+2$ source, including preparation, clock, work and all remaining Euler rows. Periodic recovery and raw #216 remain open.
+
+The newest one-history and double-Schur results turn that gate into a same-action source calculation. On the original 718-edge Perron/Doob candidate, one retained history with its actually paid edge costs reconstructs both the feedback \((F,J)\) and the absolute pressure \(\log_\varphi\lambda=h_\varphi-\bar s\), up to the owned endpoint coboundary. These reconstruction results are conditional on that transfer and do not show that it is the compulsory D0 cut. Its pressure source is
+\(D\log_\varphi\lambda=\sum_v\pi_vDI_v-\sum_{uv}\pi_uP_{uv}DC_{uv}\).
+A common edge-cost shift leaves (P,\pi,F,J) unchanged while changing this pressure, so the feedback detector alone is not the complete Book action. CONTROL #375 also shows that ActionProtocol alone does not choose the primitive Cost; it must come from the admitted original Book process, not a fit. For one selected \(C^2\) action on the regular stationary quotient, eliminating the connection and history gives
+\(H_{\rm eff}=H_{\rm geom}-R^T J_{\rm hist}^{-1}R\),
+where \(R\) is the history source after connection relaxation; singular centers require the owned range/center treatment. This is the next target: derive \((DC,DI)\) and \(R\) from the same compulsory native cut, retain its full preparation, clock, work, normalizer and Born/Book branches, then compare the full coframe/link/matter source with the accepted geometric consumer. The exact [one-history pressure owner](A4D_ONE_HISTORY_SCENE_ABSOLUTE_PRESSURE_FEEDBACK_COMPLETENESS_2026_10_19.md) and [double-Schur synthesis](A4D_UNIFIED_BOOK_GEOMETRY_DOUBLE_SCHUR_RESPONSE_SYNTHESIS_2026_10_19.md) state the hypotheses and scope. If a candidate weights the complete normalized Born cylinder law, its partition is identically one and its log-partition source is zero; kill that route rather than naming it gravity. The double-Schur regression uses toy costs and proves only the algebraic elimination identity, not physical action selection.
 
 The new owner composes the corrected same two-tick AF×scene feedback, the
 original exact 40-row Lorentz-star table and full CAR16 Hodge matter into a
@@ -1006,17 +1012,31 @@ composition with the existing six-positive Julia readout has a nonzero
 Jacobian, so the ordered geometric transport is locally distinguishable by
 positive outcomes.
 
-The standard complete 128-outcome pointer at that same endpoint has a
-different first-order response: its exact 128-by-6 probability Jacobian has
-rank 3 over Q(sqrt(5)), with 42 positive and 86 dark baseline outcomes; all
-dark outcomes have zero first jet. Its complete Shannon derivative is one
-six-component covector, recorded with rational intervals in §4.2 of the same
-owner. Thus the rank-six distinguishability belongs to the separately
-constructed six-positive-contrast tester; it does not transfer to the
-standard full128 pointer. The [scoped full128 checker](sources/d0_two_null_regular_atlas_2026-10-19/check_regular_atlas_full128_pointer_response.py)
-passes 105 assertions, with its [receipt](sources/d0_two_null_regular_atlas_2026-10-19/REGULAR_ATLAS_FULL128_POINTER_RESPONSE.json).
-This is still a final-endpoint probe with fixed coframe, not the twelve
-sequential fresh-flag execution or its complete physical Cost−Info price.
+The original J23 clock/count analysis now gives an exact **native first-source
+law**, but only on its flat homogeneous shell. There the whole count tilt
+factors through one covector,
+`D_t log Z_n(s)=n(1-exp(s))/(q+(1-q)exp(s))*D_t q`; every count-only
+first-source readout has rank at most one across the six Lorentz controls.
+Its controlled refinement has source limit `beta*dot(lambda)*(exp(s)-1)`.
+Compare the three typed response maps:
+
+| Readout | Response rank on 6 controls | Scope |
+| --- | ---: | --- |
+| Original clock/count source | at most 1 of 6 | Flat homogeneous J23 shell; full count tilt and cumulants |
+| Standard full128 pointer | 3 of 6 | Exact 128-by-6 probability Jacobian over Q(sqrt(5)); one endpoint, 42 positive and 86 dark outcomes |
+| Ordered six-positive Julia/POVM | 6 of 6 | Designed final-endpoint contrast tester |
+
+These are scoped response capacities, not inclusions between physical
+experiments. The clock/count/port sources are nonzero on the J23 variation
+where the vacuum Palatini Lorentz-J23 Euler row is zero; none of these bare
+readouts alone is the selected Einstein action. The [original J23 source
+owner](A4D_ORIGINAL_J23_CLOCK_SOURCE_OFFSCALAR_FIRST_JET_2026_10_19.md)
+records the exact finite and refining formulas; its [finite checker](sources/d0_native_history_class_map_2026-10-19/check_original_J23_clock_position_source.mjs)
+passes at `s=1` and on four `epsilon_h` refinement fixtures using the
+explicitly illustrative `lambda_h,dot(lambda)` values, not a verified
+all-mesh native spectrum. The rank-3 entry is replayed by the [full128 endpoint
+checker](sources/d0_two_null_regular_atlas_2026-10-19/check_regular_atlas_full128_pointer_response.py)
+with its [receipt](sources/d0_two_null_regular_atlas_2026-10-19/REGULAR_ATLAS_FULL128_POINTER_RESPONSE.json).
 
 This is a representation and readout result, not the physical dynamics.
 The final-`U` tester after the composed word is not the same experiment as
