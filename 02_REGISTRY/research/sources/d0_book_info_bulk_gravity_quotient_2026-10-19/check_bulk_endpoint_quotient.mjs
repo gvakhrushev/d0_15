@@ -116,6 +116,22 @@ const h=1e-5;
 const curl=(gradI2(.21,.36+h)[0]-gradI2(.21,.36-h)[0])/(2*h)
  -(gradI2(.21+h,.36)[1]-gradI2(.21-h,.36)[1])/(2*h);
 close(curl,0,1e-9);
+// Exact full ORIGINAL endpoint-variance criterion, without dropping failures.
+// Full Z(θ) changes with θ; first two accounting derivatives are mean/variance.
+function endpointStats(theta,t){
+ const W0=firstPair.reduce((s,p)=>s+raw(p,theta,t),0),
+       W1=secondPair.reduce((s,p)=>s+raw(p,theta,t),0);
+ const P=W0/(W0+W1),i0=info(3,t)-info(0,t),
+       i1=info(3,t)-info(1,t),mean=P*i0+(1-P)*i1;
+ return {Z:W0+W1,P,mean,var:P*(i0-mean)**2+(1-P)*(i1-mean)**2};
+}
+const e=.37,hTheta=1e-4,stats=endpointStats(.5,tt);
+const lnZ=t=>Math.log(endpointStats(t,tt).Z);
+const thetaSource=(lnZ(.5+hTheta)-lnZ(.5-hTheta))/(2*hTheta);
+const thetaHessian=(lnZ(.5+hTheta)-2*lnZ(.5)+lnZ(.5-hTheta))/(hTheta*hTheta);
+close(thetaSource,-ell*stats.mean,1e-8);
+close(thetaHessian,ell*ell*stats.var,1e-6);
+if(!(stats.var>0))throw Error("genuine complete endpoint susceptibility unexpectedly zero");
 console.log(JSON.stringify({
  status:"PASS",
  actualNativeBookPhi:phi,
@@ -129,5 +145,8 @@ console.log(JSON.stringify({
  closedHolonomyMovingInfoJetMaxDifference:maxLoopJet,
  discreteInteriorEulerMaxError:maxEuler,
  canonicalMomentumShiftAndSymplecticCurl:"PASS",
+ trueUnconditionedEndpointInfoVariance:stats.var,
+ dThetaLogPartition:thetaSource,
+ dTheta2LogPartition:thetaHessian,
  scope:"Original Book edge allocation convention and declared path/weighted-loop carriers. NOT compulsory native whole Cost−Info/GR."
 },null,2));
