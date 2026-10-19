@@ -1,0 +1,59 @@
+{
+  "status": "PASS_SAME_COMPRESSION_BASIS_AMBIGUITY",
+  "check_count": 11,
+  "checks": [
+    "pinned check_exterior_mean_source.py",
+    "pinned RESULT.json",
+    "both completions preserve the same good compression",
+    "polar completion is an isometry",
+    "Hadamard failure completion is an isometry",
+    "all six polar occupation outcomes retained exactly",
+    "all six rotated occupation outcomes retained exactly",
+    "both complete laws normalize",
+    "general entropy shift has exact closed form",
+    "same K has a nonzero first-source shift",
+    "golden failure-basis source gap is nonzero"
+  ],
+  "input_sha256": {
+    "02_REGISTRY/research/sources/d0_exterior_mean_entropy_2026-10-19/check_exterior_mean_source.py": "56bda572b4156bbafbb0b4b0985f8014497fbde47d9b3963b3d5b52930cbeef6",
+    "02_REGISTRY/research/sources/d0_exterior_mean_entropy_2026-10-19/RESULT.json": "6076080dcb366af20ecbaa8825357e555226b16e482d2d47426244bfc82ef175"
+  },
+  "finite_control": {
+    "good_compression": [
+      [
+        "3/4",
+        "0"
+      ],
+      [
+        "0",
+        "1/2"
+      ]
+    ],
+    "polar_occupation_probabilities": [
+      "9/64",
+      "0",
+      "27/64",
+      "7/64",
+      "0",
+      "21/64"
+    ],
+    "hadamard_failure_completion_probabilities": [
+      "9/64",
+      "27/128",
+      "27/128",
+      "7/128",
+      "7/128",
+      "21/64"
+    ],
+    "entropy_gap_exact": "17*log(2)/32",
+    "entropy_gap_first_derivative_wrt_a_exact": "log(2)/2 at b=1/4"
+  },
+  "golden_control": {
+    "a_Q": "41216 - 18432*sqrt(5)",
+    "a_R": "16491664 - 7375296*sqrt(5)",
+    "dH_gap_for_DaQ": "(1-2*a_R)*log(2)*Da_Q",
+    "coefficient_value": "-0.4017726585829970"
+  },
+  "scope": "Two valid complete isometries with identical good compression have different full occupation laws and different Shannon first sources. This does not show both completions are native-admissible; it shows the compression alone does not select the polar readout basis or its mean entropy.",
+  "checker_sha256": "cf9a53858b68963344d778328f3e52cff8c6687ccaa826b328ca1e49ab77ab30"
+}
