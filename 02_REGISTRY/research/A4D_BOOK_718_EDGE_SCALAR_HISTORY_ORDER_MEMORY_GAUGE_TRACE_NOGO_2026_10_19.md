@@ -84,3 +84,35 @@ The map must preserve memory of history order (as (2) forces), and every actual 
 **Decision:** Stop promoting scalar normalized Born pressure, Perron \((P,\lambda)\), scalar innovation determinant, or primitive edge-count MDL as the COMPLETE Einstein action. They remain real native scalar components, but are demonstrably insufficient for ordered memory. Focus the strongest research effort on Book03's ORIGINAL noncommutative memory-class *physical representation* and its joint full 16+24+CAR source. \`GR_closed=false\`.
 
 Reproducible exact certificate: [\`check_native_book_order_trace_obstruction.py\`](sources/d0_physical_binary_return_2026-10-19/check_native_book_order_trace_obstruction.py). It enumerates the 718 original directed edges, verifies both literal complete paths have identical 9-edge and 10-vertex counts, verifies SO(η) constraints and the exact rational gauge-invariant trace obstruction. This is an exact finite **representation-level** witness, not an execution of original G0 native source/clock.
+
+
+## 4. POSITIVE FULL DETECTOR completion: the order-memory gap changes a measurable probability with ALL outcomes retained
+
+Equation (2) is not merely an unobservable matrix coordinate. Consume the ALREADY-owned **mathematical Julia/Choi complete positive tester**, as in the original #334 opposite-null order-memory source. A finite real Lorentz matrix \(U\) sufficiently near identity has \(\|U\|_{\rm op}<2\). Therefore the existing Julia dilation construction for the contraction \(T(U)=U/2\) has a complete success/failure isometry:
+\[
+V_U:|\psi\rangle\mapsto
+|{\rm good}\rangle (U/2)|\psi\rangle
++|{\rm fail}\rangle\sqrt{I-U^TU/4}\,|\psi\rangle.
+\]
+No postselection is made in the **overall** observed probability law: the failure port, good-with-unmarked outcome, and good-with-marked outcome are ALL retained. Prepare the standard normalized maximally entangled original real 4×4 Choi test vector \(|\Omega\rangle=(|00\rangle+|11\rangle+|22\rangle+|33\rangle)/2\), apply \(V_U\) on the first factor, and on good test the rank-one marked effect \(|\Omega\rangle\langle\Omega|\) versus its orthogonal complement. The positive **joint** success-and-mark probability is exactly
+\[
+\boxed{Q_{\rm mark}(U)=|\langle\Omega|(U/2\otimes I)|\Omega\rangle|^2
+       =[\mathrm{Tr}\,U]^2/64.}
+\]
+The total original good mass is \(\mathrm{Tr}(U^TU)/16\), and the three complete probabilities are \(Q_{\rm mark}\), \(\mathrm{Tr}(U^TU)/16-Q_{\rm mark}\), and \(1-\mathrm{Tr}(U^TU)/16\): all nonnegative. At \(a=b=c=1/40\) the checker gives \(\|U_{012}-I\|_F^2,\|U_{021}-I\|_F^2<1/4\), implying \(\|U\|_{\rm op}<3/2<2\) and strictly positive failure probabilities on BOTH histories.
+
+The SAME scalar-Book-equal ordered histories now have **different positive event probabilities**:
+\[
+\boxed{\begin{aligned}
+Q_{\rm mark}(U_{012})-Q_{\rm mark}(U_{021})
+&=-\frac{abc\,[a^2b^2c^2+4a^2b^2+64]}{16(c^2+4)^2},\\
+\left.\Delta Q_{\rm mark}\right|_{a=b=c=1/40}
+&=-\frac{262144006401}{67129837158400000}
+=-3.905029678270235\times10^{-6}\ne0.
+\end{aligned}}\tag{3}
+\]
+This is **a fully positive, branch-complete mathematical experiment** with finite rational verified rates, reusing existing Julia/Choi ingredients rather than inserting an arbitrary signed probe. Its input is a **conditional graph-edge Lorentz transport representation**; the native G0 scene-to-original physical device compiler, execution, full paid controller/clock and compulsory Book history weight are STILL NOT admitted. Do not call this already physically executed on G0.
+
+The exact falsification question for full native D0→GR now has a single concrete shape: does the original complete physically **admitted, paid** Book memory map carry these order-sensitive effects, or does it factor only through scalar edge/vertex histories? If it factors through scalars, this witness and the accepted native six-Lorentz readout exhibit a strict obstruction to reconstructing original signed Palatini geometric responses. If it preserves the noncommutative memory, the scalar Cost-only objection is avoided, and the remaining (genuine) gate is showing that this SAME full native action's 16 coframe+24 proper links+CAR+prep+clock first source equals the original Einstein owner. No fresh tensor, coefficient, face-normalization or geometry jet is proposed.
+
+**Accepted result:** exact all-Cost scalar order-blindness + exact finite gauge-invariant difference + a positive complete distinguishability witness. **Unproved:** actual D0 compiler/selection/equality to Einstein. \`GR_closed=false\`.
