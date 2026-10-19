@@ -144,3 +144,41 @@ This is a rigorous **readout-dependent first-source separator**, not merely a di
 The physical GR bridge must now **commute the original forgetting/verification algebra with classical MDL selection and the same-history Cost−Info source** or identify and price the exact noncommutativity. This is a focused native experimental/operational obligation and does not call for any new polynomial Cartan jet.
 
 [Exact count-MAP and first-source checker](sources/d0_physical_binary_return_2026-10-19/check_original_count_forgetting_modal_instability.py), in addition to the existing time-slot entropy checker, verifies the Q(sqrt5) inequalities and both normalized actions. `GR_closed=false`.
+
+
+## 7. Book06 consumer: unique entropy-selected forgetting on the original physical clock record
+
+Book06 §§06.5, 06.24–06.25 ([original Book](../../01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md)) requires a TYPED finite forgetting quotient that preserves declared observed responses, with its compatible conditional kernel selected by **maximizing entropy**, not by an arbitrary discard. The original full128 native detector already keeps the FULL original chronological register and also has its own actual repeated exit-count observable from the tilted instrument.
+
+Declare for THIS scoped physical consumer that the retained coarse response is exactly the number K of nonblank0 clock ticks. The fiber of the counting quotient on n time-indicator words has precisely M_k=binom(n,k) elements. Since the native strict flat first-shell blank0/complement indicators are IID Bernoulli with the same e, their real conditional distribution given K=k is **exactly uniform** on this fiber.
+
+For every alternative normalized conditional kernel r_k supported on the same fiber,
+
+\[
+H_\varphi(r_k)=\log_\varphi M_k-D_\varphi(r_k\Vert U_k)
+\le \log_\varphi M_k,
+\qquad U_k(i)=1/M_k.
+\]
+
+Equality holds **only** for the actual native conditional kernel U_k. Thus the Book06 maximum-entropy forgetting rule, **provided its retained response is this original count**, has the UNIQUE, physically attained answer. No extra Gibbs preparation, controller, observer weighting, source coupling or erasure is inserted; original chronological archive information remains in the complete tape. The exact conditional entropy is the already proved source
+
+\[
+H_\varphi(\text{time positions}\mid K)=
+\mathbb E_K\log_\varphi\binom nK,
+\]
+
+whose finite first scalar-shell variation was established in equation (2).
+
+There is an exact compatible SCALAR probability-level Book03 exponential-weight pushforward on this particular indicator quotient IF the same-history scalar binding w_Book=q_Born is admitted:
+
+\[
+\varphi^{-S_{\rm count}(k)}
+=\sum_{i^n:\,\#\mathrm{exit}(i^n)=k}
+ \varphi^{-S_{\rm ordered}(i^n)},
+\qquad
+S_{\rm count}(k)=S_{\rm ordered}(i^n)-\log_\varphi\binom nk.
+\]
+
+This is the **unique correctly multiplicity-priced effective history cost** on the declared count readout. It does not claim that Book03's true role-memory-algebra-valued partition is scalar, that its fundamental M1 forgetting is exactly this event-count map, or that Cost−Info is experimentally selected as this Born surprisal. The earlier failure of argmax to commute with forgetting remains real, and is now accounted for by the induced binomial degeneracy information rather than by an arbitrary external counterterm.
+
+**Physical progress:** given the original 128-channel instrument and the declared native count response, the readout quotient, full archive conservation, maximum-entropy conditional kernel and induced scalar log-weight source are mutually compatible, exact and parameter-free. **Open compulsory gate:** prove that the D0 original action/verification history actually uses this or another pinned retained-response quotient, including 128 labels, Lorentz memory classes, preparation, controller/work and clock, then replay the full Einstein–CAR source. Still GR_closed=false.
