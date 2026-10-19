@@ -5672,3 +5672,27 @@ recovery or raw-216 terminal is closed.
 Предшествующий §7.87 даёт ещё одно ограничение на синтез: изолированный diagonal one-arm phase source имеет contact curl 1 на полном CAR16 chart и не является градиентом скалярной цены. Поэтому gauge-free Bargmann-фаза и полный ранг detector показывают наблюдаемость, но сами по себе не задают действие. Физическая цена должна включить движущуюся preparation/history вариацию либо другой native-допущенный variational principle; frozen preparation не закрывает этот член.
 
 **Единый решающий физический узел теперь узок:** для одной и той же compulsory native-history надо получить её law `q`, pathwise code `w`, полную цену с `H/J/R`, Golden/Julia-провалом, `C_Y`-подготовкой, CAR, clock, controller и work; вывести все совместные вариации и сравнить полученный covector с исходным `16+24+CAR+prep+clock` Palatini source. Нельзя заменить это совпадением отдельного бинарного или Shannon-источника. Независимая материя должна возникнуть как удерживаемая native CAR/record-переменная с собственной Euler-строкой; если свободная ёмкость зануляет её источник, это вакуум, а не скрытый `T_{μν}`. До этого шага вакуумное `G_{μν}=0` на условном профиле и чтение шести связей остаются сильными scoped results, но `GR_closed=false`.
+
+### 7.89. Один-run Perron–Book–CAR16 source weld сужает физическое замыкание до одного interface
+
+Новый [one-run Perron/Book/CAR16 owner](A4D_SINGLE_RUN_PERRON_BOOK_CAR16_FRESH_FLAG_SOURCE_WELD_2026_10_19.md) соединяет исходные 718 scalar transitions, 16-grades CAR, proper-Lorentz order и fresh good/bad records в одном trace-preserving isometry. На положительном scene kernel (P) с исходным moving start r его edge map имеет вид
+
+\[
+V(|u\rangle|\psi\rangle)=\sum_{v:u\to v}\sqrt{P_{uv}}|u,v\rangle\bigl(|G\rangle C_{uv}|\psi\rangle+|B\rangle F_{uv}|\psi\rangle\bigr),
+\quad C_{uv}=\tfrac12\Lambda(L_{uv}),\quad F_{uv}=(I-C_{uv}^{\dagger}C_{uv})^{1/2}.
+\]
+
+Тогда V†V=I, полный marginal каждого good/bad edge остаётся r_u P_uv, старые RIGHT/ref128 остаются spectators, а последовательные шаги используют отдельные flag banks и сохраняют порядок. Это **точное native-type construction** с полной записью неудач; L_uv на scene edges пока test input, а не доказанное отображение исходных 4D sites/six-face Role controller. Exact Golden/Book gate, decoder, clock/work и mandatory action не выбраны.
+
+Для исходного one-sided Perron cylinder автор выводит moving endpoint/clock identity
+
+\[
+W_K(\gamma)=\frac{\rho^n}{r_{u_n}}p_y(\gamma),\qquad
+D\log W_K=nD\log\rho+D\log p_y(\gamma)-D\log r_{u_n},
+\]
+
+и на том же полном event разлагает score на path probability, conditional Lorentz/Julia record, absolute pressure и endpoint preparation. Это устраняет прежнюю абстрактность фразы «нужен тот же history»: exact ingredients теперь типизированы и имеют владельца. Но для полного normalized Born law D log Σq = 0, а pointer Shannon не тождественен Book03 Cost−Info; ни (1)–(8), ни detector Jacobian не являются выбранным действием.
+
+Геометрический consumer тоже уже существует: balanced native Golden owner даёт совпадение локального и физического moving-volume J2 первого источника на полном 16+24+2 chart и неплоской Brinkmann/CAR-null семье. Там Gamma-scale имеет Gamma(s e, omega, Psi)=s^-2 Gamma(e, omega, Psi); если именно эта scale variation допущена в одном полном stationary programme, она влечёт Γ=0, после чего остальные вариации дают исходные Palatini+scalar equations. Допуск этой вариации при настоящем collar/clock/complete price сам остаётся условием.
+
+**Единственный оставшийся физический weld:** (i) отобразить compulsory native programme на исходный 4D site/six-face controller вместе с complete CAR/flag/history lift; (ii) вывести из него whole Book (H+J+R)+preparation/RIGHT/ref128/clock/work covector; (iii) доказать его on-shell/quotient equality с уже принадлежащим balanced δJ2 source и показать, что нужная global scale допустима. Только после этого нужны принадлежащие joint-root/refinement и nine-null/Bianchi consumers. Вакуумное уравнение и независимая материя требуют отдельных собственных Euler rows: запись order-source сама по себе не есть independent T_munu source. До такого weld `GR_closed=false`.
