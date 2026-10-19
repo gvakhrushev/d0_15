@@ -17,10 +17,10 @@ stationary-background and controlled-IR boundaries.
 Latest conditional full-readout bridge and actuator boundary: [§§7.49–7.50](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 transfers the complete exterior Shannon first source through the original
 nonuniform golden addresses under an explicit common branch-query condition.
-It identifies an independent CAR source for the Einstein–scalar consumer and
-proves that a nontrivial branch-controlled query is unavailable in the owned
-one-way record class. A two-way/coherent native actuator, full Book-price
-binding and preparation sources remain open.
+It separates the capacity-vacuum branch from the independent CAR source and
+combines the full-exterior query with the §6.13 active-address copy as one
+conditional full Book price and Einstein–matter source. Native execution,
+whole-programme Book binding, preparation rows and recovery remain open.
 
 Newest positive bridge: [§7.5](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
 derives AF weights from the inherited fine-history entropy equation and

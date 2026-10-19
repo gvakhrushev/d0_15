@@ -98,15 +98,16 @@ that its full Book price is `H(Y,S)/log(phi)`, or that the compiled-path
 normalizer is identically one. Those remain part of the same-programme gate.
 
 Strategic §7.50 separates the capacity-vacuum argument from the CAR matter
-source already present in the complete exterior readout, then proves a
-scoped admission obstruction: every word in the owned one-way retained-record
-generators commutes with address translations, while a nontrivial
-address-controlled query does not. Thus `C_Y` preserves and copies the
-address but does not itself provide branch-to-active-query control. A native
-two-way/coherent actuator, or another same-source native query, is now the
-precise missing operation. The result is not a no-go for broader D0
-primitives; full Book binding, `DH(pi)`, preparation/observer/clock/work,
-old-history source and raw `#216` remain open.
+source in the full exterior readout. The archived copy Y cannot itself
+control a nontrivial branch query in the one-way retained-record class, but
+keeping L active while copying it to Y permits an exact block-diagonal
+dilation. Substituting the full exterior branch POVM into the generic §6.13
+terminal-instrument construction gives one joint full Book price
+H(Y,S)/log(phi), conditionally on same-programme binding w=q, and its
+two-source Einstein–matter gradient. This closes the conditional
+instrument/source composition; it does not establish native execution or
+selection. Full Book binding, DH(pi), preparation/observer/clock/work,
+old-history source and raw #216 remain to be proved on that carrier.
 
 Strategic §7.48 identifies a more basic exponent boundary in that check:
 Book 03 treats \(\varphi^{-S}\) as a history probability weight but writes
