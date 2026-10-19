@@ -4389,3 +4389,63 @@ coframe-link производные и зависимость POVM-калибр�
 native-протокола, затем сравнить полный \(C^2\) источник цены с Palatini на
 одном carrier. Пока это кандидат на leading jet, не вывод полной нелинейной
 ОТО.
+
+
+### 7.55. Точный конечный квадратичный Einstein bootstrap: все 40 Palatini-строк после вынужденной двух-null Cartan-поправки
+
+Новый [exact quadratic owner](A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md)
+потребляет §7.52–7.53 и повторяет главный успешный ход §7.30, но впервые
+в некоммутативном секторе ДВУХ противоположных null-волн. Исходное действие,
+шесть based-плакеток, все 16 независимых кофреймных и24 оригинальных
+proper-Lorentz link-вариаций сохранены; одна лишь continuum Levi-Civita
+связность из §7.52 НЕ назначается решением.
+
+Для H=a(A_xx+A_yy), J=b(B_xx+B_yy) вычислена точная одновременная
+амплитудная производная [ab] *всех* 40 полевых Euler в
+Q[a,b]/(a²,b²). Однородный flat 24×24 Cartan Hessian собственно этого
+основанного star-действия имеет det=256, rk=24 и спектр
+2[4], −2[4], 1[8], −1[8]. Значит на любом фиксированном h>0
+однородная локальная Cartan-подсистема имеет невырожденный exact first
+normal, а одно-узловое nonperturbative continuation следует из IFT.
+Полный пространственный оператор и общая physical preparation
+этим НЕ разрешены.
+
+У sampled continuum ω все mixed [ab] link-строки, кроме четырёх
+вращательных X23=-J_rot, равны нулю. Их точные значения:
+u:−h⁴ w/4, v:+h⁴ w/4, x:+h⁴ A_yB_y/4,
+y:−h⁴ A_xB_x/4, где w=A_xB_y−A_yB_x. Реальные исходные
+уравнения Картана однозначно в однородном chart определяют correction
+δω=ab h/8 times original N2,N3,opposite N2,N3,J_rot, согласно
+формуле (7) owner. Нет нового gauge group, torsion multiplier,
+вариационной цены или подбора источника Эйнштейна.
+
+После подстановки САМОГО решения Cartan все24 mixed link Euler=0
+на произвольном символическом transverse узле. Все16 кофреймных
+Euler на этом порядке зануляются КРОМЕ двух:
+[ab]E(v_x^2)=[ab]E(v_y^3)=−h³(A·B)/4. Это ТОТ ЖЕ
+Einstein overlap: у crossing Ric_uv=−ab(A·B)/4,
+R=−ab(A·B)/2, G_xx=G_yy=−ab(A·B)/4.
+Когда A⊥B, все40 mixed [ab] Euler равны0, но сами исходные plaquettes
+имеют P_uv^{[ab]}=h² w J_rot/4 и P_xy^{[ab]}=−h² w Boost/4,
+то есть ненулевую Weyl-кривизну. Две по отдельности плоские
+null-ветви порождают НЕПЛОСКОЙ вакуумный Einstein-гравитон
+на первом квадратичном взаимодействии, а не только линейную pp-wave.
+
+Exact SymPy checker
+[sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py](sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py)
+сохраняет независимые x,y, вычисляет рациональный Hessian, 24 link,
+16 coframe, шесть plaquettes и четыре базисные билinear-пары.
+Независимый actual-full40 numeric checker при slopes=0.1 показывает
+подавление на >300 раз ведущих link-дефектов после вынужденной h/8
+поправки; transverse Einstein-source при параллельных градиентах
+не обнуляется. Это не exact finite all-amplitude root.
+
+**Следующий интеграторский шаг теперь не очередной no-go или
+численная сертификация:** вычислить [a²b], [ab²] реальные Cartan и
+coframe источники, решить их согласованно на оригинальной spatial
+решётке, не теряя nonzero w и настоящих old RIGHT/scene/clock/material
+первых вариаций. На отдельном native канале продолжить полный
+same-history Cost−Info и face-source binding §§7.47–7.54;
+положительный квадратичный Palatini sector НЕ выбирает обязательный
+Book/Controller. Full finite physical D0→ОТО, h→0 recovery,
+upstream H+J+R и raw #216 остаются OPEN; GR_closed=false.
