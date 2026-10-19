@@ -73,6 +73,47 @@ for(const h of [.02,.008,.003,.001]){
 const Fisher=p**4/6;
 need(Fisher>0&&positive+Fisher/L>0&&negative+Fisher/L<0,
  "positive Fisher term by itself does NOT force signed measured-Shannon Hessian");
+
+// STRONG NEGATIVE CONTROL: a genuine FOUR-GATE original based face has
+// P-I=ab J23+O(a²b,ab²), so whole unmarked 16-outcome Shannon has
+// ZERO first curvature mixed [ab]. Yet the native positive sqrt-mark
+// recovers the actual oriented Lie component 2ab exactly to leading order.
+// Hence the signed native Hess of one LINK cannot itself be declared a
+// selected plaquette/EH action without PRETRACE ordered marker/cost source.
+function qOriginalU(U){
+ const avg=trace(U)/4,norm=ip(U,U)/4;
+ const mark=generators.flatMap(J=>{
+  const y=ip(J,U)/(2*Math.SQRT2);
+  return [p**4/24*(avg+y)**2,p**4/24*(avg-y)**2];
+ });
+ const GG=p**4*norm,GB=p*p*(1-p*p*norm),BG=p**3*norm;
+ return [...mark,GG-mark.reduce((a,b)=>a+b,0),GB,BG,1-GG-GB-BG];
+}
+function face(a,b){
+ let E=t=>expM(generators[0].map(r=>r.map(v=>t*v)));
+ let F=t=>expM(generators[3].map(r=>r.map(v=>t*v)));
+ return times(times(times(E(a),F(b)),E(-a)),F(-b));
+}
+function faceEntropy(a,b){
+ return qOriginalU(face(a,b)).reduce((s,q)=>s-q*Math.log(q)/L,0);
+}
+let lastFace=Infinity;
+for(const h of [.16,.08,.04,.02]){
+ const ppf=face(h,h),pmf=face(h,-h),
+       mpf=face(-h,h),mmf=face(-h,-h);
+ const he=(faceEntropy(h,h)-faceEntropy(h,-h)
+      -faceEntropy(-h,h)+faceEntropy(-h,-h))/(4*h*h);
+ const marker=(ip(generators[4],ppf)-ip(generators[4],pmf)
+              -ip(generators[4],mpf)+ip(generators[4],mmf))/(4*h*h);
+ need(Math.abs(he)<1e-10,
+      "TRUE complete 16-outcome Shannon loses FIRST oriented [ab] face order at h="+h);
+ need(Math.abs(marker-2)<lastFace&&Math.abs(marker-2)<.001,
+      "SAME native Golden positive J23 marker retains FIRST Cartan [ab]=2 at h="+h);
+ lastFace=Math.abs(marker-2);
+}
+need(Math.abs(faceEntropy(0,0)-H0)<1e-13,
+     "Shannon and oriented positive marker negative controls use IDENTICAL full Golden instrument");
+
 console.log(JSON.stringify({
  full_golden_16_outcome_base:q0,
  pointer_entropy_Hphi_flat:H0,
