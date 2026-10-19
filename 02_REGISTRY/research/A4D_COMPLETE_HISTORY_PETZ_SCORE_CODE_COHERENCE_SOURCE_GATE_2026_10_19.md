@@ -170,3 +170,46 @@ D_\lambda\Delta_h^{\rm port}
 The single-tick O(h²) size is NOT a refinement suppression; the full genuine number of native ticks is O(h^{-2}). At the already used original n=64L² schedule, \(n\epsilon=p²\), so the full limiting \(\lambda\)-source equals \(p^5=\varphi^{-5}=0.090169943749\ldots\) golden units for this **declared scalar first-shell parameter**. It cannot be transplanted unchanged to the offscalar J23/42-field Euler without the original full source map. It is nevertheless an exact physical-owner-supported COUNTERCONTROL to discarding port code when compressing a long native record.
 
 **Decision:** Either retain the original port label and the other score/coherent sufficient responses with their actual Book code and flags, or carry the explicit nonzero \(\Delta_h^{\rm port}\) and its REAL source through the one full selected action. The missing GR source cannot be made small by declaring any O(h²) per-tick difference to vanish.
+
+
+## 8. ONE FINITE BOOK ALL-PATH COEFFICIENT RECOVERS THE ABSOLUTE PRESSURE — NO EXTRA SCALAR METER
+
+The newest original 718×16 full-record inverse owner proves \((\mu,\lambda)\) determines the ENTIRE original scalar Book balanced-flow action modulo true open-endpoint cohomology, whereas all **normalized** 718×16 probabilities are blind to the required absolute \(\lambda\). A useful further exact finite construction eliminates any need to postulate an *independent measuring apparatus* for \(\lambda\), PROVIDED the selected physical Book cut itself includes actual weighted paths and the native true **one-sided** Perron terminal preparation. It does not eliminate the G0 selection problem.
+
+Let \(K_y\) be ANY strictly positive-on-original-718-edge nonconstant Book scalar Cost−Info transfer (no symmetric/vertex-only assumption), let \(K_yr_y=\lambda_y r_y\), \(r_y>0\), and set \(\sum_u r_y(u)=1\). For ALL integer depths \(n\ge1\), define the **complete finite original directed-history coefficient with original PF terminal**:
+
+\[
+\boxed{
+B_n(y)=\sum_{\gamma=(u_0,\ldots,u_n)\in\Gamma_n}
+ \left(\prod_{j=0}^{n-1}K_y(u_j,u_{j+1})\right)r_y(u_n).
+}\tag{12}
+\]
+
+Every allowed original path (including immediate backtracks and failure-analog edges in the scalar scene) contributes; no arbitrary normalizer/counterterm is added. Simply sum matrix powers:
+
+\[
+\boxed{B_n(y)=\mathbf1^\top K_y^n r_y=\lambda_y^n.}\tag{13}
+\]
+
+Hence for **any** finite native depth, with all true moving code/preparation jets included,
+
+\[
+\boxed{
+-\frac1n\log_\varphi B_n(y)=-\log_\varphi\lambda_y,
+\qquad
+D_V\log_\varphi B_n(y)=n D_V\log_\varphi\lambda_y,
+\qquad
+D^k\log_\varphi B_n=nD^k\log_\varphi\lambda_y\quad(k\ge1).
+}\tag{14}
+\]
+
+There is no long-clock limit or \(O(1/n)\) endpoint error: the PF-terminal completion cancels it **at every finite depth**. Do not freeze Dr. E.g., for n=1 differentiate \(K r=\lambda r\), \(\mathbf1^\top r=1\):
+\(\mathbf1^\top(DK)r+\mathbf1^\top K Dr=D\lambda\);
+the \(\lambda \mathbf1^\top Dr\) term vanishes after the FULL differentiated PF equation, not by pretending the preparation is constant. Similar all-order identities follow because (13) is an equality of complete smooth functions.
+
+**CONSUME original Book03 strictly as owned:** original Book03 \(Z_D=\sum_\gamma w_\gamma[q(\gamma)]\) is *algebra-valued*. Formula (12) is a well-defined positive scalar coefficient of the SAME finite path set only after a physically permitted scalar readout/augmentation of memory classes, terminal PF preparation and absolute n-clock/cut are established on that original G0 run. Nor does the normalized \(B_n/\lambda^n\equiv1\) yield a gravity source: that ratio has zero first derivative, precisely the already-owned Born-normalizer no-go. The genuine absolute \(\lambda\) is visible to the unnormalized sum, NOT the normalized conditional path probability.
+
+Thus a prospective **same-run physical source** can be reconstructed from:
+(A) complete observed \(\mu_{uv}\) (or original positive path statistics) **plus** the full unnormalized PF-terminal coefficient \(B_n\) from its admitted Book path-memory price; (B) full retained *ordered* CAR/Lorentz class effects, with actual oldRIGHT/failure/prep/clock/work; (C) code- and coherence-source sufficiency/recovery (1)–(11). Under (A) no new absolute pressure *parameter* or independent scalar meter is required: \(\lambda=B_n^{1/n}\) and all its true derivatives follow. This is a positive conditional reduction of the constitutive *interface*, NOT proof that compulsory M1/G0 selects the specified Price/terminal r, that the actual Book memory algebra permits this scalar functional as a GR action, or that the true one physical \(DS_{\rm full}\) equals the original 16+24+CAR Golden-J₂ Euler.
+
+**Repro:** \`sources/d0_history_source_sufficiency_2026-10-19/check_native_absolute_price_full_path_sum.py\`. Independent full-33/718 locally executed controls on nonconstant asymmetric positive original Cost/Info K(y) verify n=1,2,3,4,6,10 all give EXACT same absolute Book action and moving first source for five distinct y, numerical residual <2e−12. All symbols \(\lambda,r\) are from the SAME K, not a separate invented preparation.
