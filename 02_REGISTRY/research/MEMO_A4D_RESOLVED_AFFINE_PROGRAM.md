@@ -24,7 +24,7 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.37](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.38](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
@@ -37,23 +37,31 @@ transfer on that stratum to two first-source coefficients plus solved
 internal Euler rows. Its bounded checker passes after repairing a profile
 control that had accidentally tested only a global rotation at `L=4`.
 
-The [balanced LEFT/quantile bridge](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md)
-now closes a different, precisely scoped source-matching gap. A reversible
-Fibonacci rank decoder assigns equal-cost original F/R histories to Role
-cells; exact divisibility gives equal finite regular trace weight per cell
-while the positive failure complement remains. At the common `f=q=0` curved
-roots, the full first jets of the moving-volume mean queries equal those of
-the local queries, so the same two-tick `J₂` covector transfers the already
-owned exact finite sourced Einstein roots to this balanced mean-query
-programme. Off shell, the same mean query has the conditional general
-Einstein–scalar first source; the mean-value term remains unless a genuine
-unrestricted scale variation of the complete price forces it to zero. This
-is a constructed AF×scene `J₂` branch, not a physical selector for the
-original complete `H+J+R`. Its LEFT rank decoder is not the original 4D
-golden-box placement, and exact balancing uses depth `n≈3L⁴/4`; the cheaper
-near-balanced estimate controls smooth source discrepancy but does not
-establish exact roots or the original raw `#216` bound. These admission, cost,
-controller, preparation and raw-source gates remain on the parent route.
+The [balanced native-address source seam](A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md),
+now consumed in strategic §7.38, is the main finite-to-continuum bridge. It
+selects the same minimum number of original equal-cost F/R histories inside
+each original Role cell, keeps each word's original microaddress, and leaves
+all unactivated histories, pending events and old RIGHT/reference records on
+their original baseline. Thus each active cell has exactly the same positive
+native PF and finite regular weight without fabricated uniform probabilities.
+On every common-null/star finite curved root, the moving physical-volume
+quantile and local two-tick `J₂` queries have the same complete first source,
+so the already-owned 16-coframe+24-link+2-scalar Einstein roots transfer
+exactly to the distinct volume-mean query at every mesh. The same balanced
+mean query has the conditional general nonlinear Einstein–scalar continuum
+source; its mean-value term remains unless a genuine unrestricted global
+scale Euler equation of the complete price forces it to zero. This closes
+the named mathematical root/source seam for a specified AF×scene `J₂`
+programme, not the physical selection of the original full `H+J+R` or its
+preparation, observer, clock and raw `#216` rows.
+
+The separate [exact Fibonacci LEFT-rank decoder](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md)
+also gives exact cell balance and the same conditional source transfer, but
+reassigns original words to Role sites and needs depth `n≈3L⁴/4`. It is an
+alternative mathematical realization, not part of the original-address
+bridge above; its cheaper near-balanced estimate controls smooth-source
+discrepancy but does not establish exact roots or the original raw `#216`
+bound. The native-address bridge is therefore the current consuming route.
 Keep this construction separate from the conditional Hodge-heat/chronology
 obstruction: on a genuinely shared admitted carrier, scalar stationarity
 forces the complete feedback covector `dJ` to zero while the volume-preserving
