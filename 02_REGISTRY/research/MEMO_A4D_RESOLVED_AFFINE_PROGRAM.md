@@ -24,7 +24,7 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.35](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.37](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
@@ -51,17 +51,39 @@ has derivative `D H(π)+2κ Σα π_α D J_α`; with a fixed old prefix this is 
 positive multiple of the exact two-tick source, including the CAR matter
 row. This resolves the source-level composition without adding two prices,
 but the branchwise good effect `g_α=exp(−2J_α)` is not yet shown to meet the
-global positive-effect/copy premise of §6.62. For the direct density query,
-the two operands are the star density and the CAR principal-Gram formula
-`D25`; their admission and compiler/source budget remain open. Moving
-old-history probabilities also retain their own `D H(π)` source. Physical
-query/PREP and controller
-admission, the entire `H+J+R` if retained, and global spatial/causal recovery
-remain open. For the D1/D25 branch, the next route step is to prove or refute that branchwise effect
-from the native execution and solve its old-history, preparation, observer,
-clock and resource rows in the same complete pointer. The fixed-grid
-weak-history collapse and the independent raw `#216` terminal remain separate
-gates.
+global positive-effect/copy premise of §6.62. Strategic §§7.36–7.37 now add a
+second algebraic composition: if the native execution admits the full
+exterior POVM `{A_s}` after `C_Y`, acting as identity on its retained `Y`
+register and preserving every outcome, then the joint law is
+`P(Y=α,S=s)=π_αq_{αs}` and
+`D H(Y,S)=D H(π)+Σ_αDπ_αH(q_α)+Σ_απ_αD H(q_α)`. If each branch is the same
+occupied-`d`-mode protocol with pinned `F`-readout jets, its already-derived
+full mean-source applies without a scalar `g_α`; additional input,
+preparation or query jets contribute separately. However, the same-carrier
+execution and full-history price have not been admitted. The known `C_Y` theorem proves the copy and one particular
+commuting terminal instrument, not this full-exterior POVM. The current
+[retained-record admission result](A4D_NATIVE_RETAINED_RECORD_ADMISSION.md)
+supplies a scoped one-way-copy class but does not by itself select a
+field-dependent query or its Book price.
+The full exterior mean coefficient and the two-tick trace-log `J₂`
+coefficient belong to different candidate prices and cannot be substituted
+for one another. Branchwise polar minimality selects only the Shannon
+component at fixed `π,K_α`, not the physical programme.
+
+For the direct density query, the operands remain the star density and the
+CAR principal-Gram formula `D25`; their admission and compiler/source budget
+are open. Moving old-history probabilities retain their own `D H(π)` source.
+The decisive next step is one same-carrier admission-and-source calculation:
+test whether the actual native record supports the full exterior POVM after
+`C_Y`, retains every outcome and charges its complete `H(Y,S)` history; if it does, compute every address,
+readout, preparation, observer, clock, work and geometry row from that law.
+If the admitted instrument is instead the two-tick feedback, prove or refute
+its branchwise complete good/failure effect and compute those same rows. In
+either case compare the resulting full source with the two-coefficient
+Brinkmann consumer; a residual identifies the blocker. This is one parent
+route with two candidate readouts, not two independent programmes. Full
+`H+J+R` selection, global spatial/causal recovery, fixed-grid weak-history
+collapse and the independent raw `#216` terminal remain separate open gates.
 
 Strategic §7.30 now consumes the arbitrary-Brinkmann owner: the original
 unrestricted 40-row star variation reduces to two staggered Cartan equations
