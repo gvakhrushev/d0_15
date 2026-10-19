@@ -173,6 +173,13 @@ theorem same_history_weight_ratio (info : ℝ) :
   rw [hshift, Real.exp_add, Real.exp_log (by positivity : 0 < φ)]
   ring
 
+/-- The control return has the same path coefficient under both protocols. -/
+theorem control_history_weight_unchanged (info : ℝ) :
+    book03PathWeight uniformHistoryAction return020 info =
+      book03PathWeight historyAction return020 info := by
+  unfold book03PathWeight
+  rw [uniform_return020_cost, history_return020_cost]
+
 /-- On this fixed return fiber, the second path is unaffected; the cost change is carried by
 the ordered intermediate history, not by either endpoint or the tick count. -/
 theorem same_endpoints_different_history_costs :
