@@ -127,6 +127,26 @@ require(Math.abs(probs.reduce((a,b)=>a+b,0)-1)<1e-14,
 require(Math.min(...probs)>0,"not all complete Golden16 outcomes positive");
 // P=(P_history>0)(Q_marker>0). For each independent tangent,
 // E_book(score_book)=E_car(score_car)=0; cross Fisher exactly 0.
+// Consume the stronger parallel original FULL TWO-FRESH Julia+BELL
+// owner. The fixed 64D Bell-programme extraction succeeds with EXACT
+// probability 1/4096 independent of the unknown Lorentz U. The 4095/4096
+// Bell failure is a real SEVENTEENTH event, not a discarded output.
+// Its full conditional Fisher on six Lie coordinates is suppressed by
+// 1/4096 but remains strictly positive and full rank. Actual preparation
+// of the field-dependent programme vector and G0 paid Bell actuation
+// are NOT implied by this mathematical composite.
+const BellSuccess=1/4096;
+const Bell17=[
+  ...probs.map(q=>BellSuccess*q),
+  1-BellSuccess
+];
+require(Math.abs(Bell17.reduce((a,b)=>a+b,0)-1)<1e-14
+  &&Math.min(...Bell17)>0,"full native-type 17 Bell/Golden output not positive complete");
+const BellSixLieFisher=BellSuccess*fisherSixPerDirection;
+require(BellSixLieFisher>0,"fixed-programme Bell marker erased all Lorentz source");
+const fullBellOutcomes=8440*Bell17.length;
+require(fullBellOutcomes===143480,"not genuine full 8440×17 Bell Golden register");
+
 const CARrank=6,joint=nativeScalarRank+CARrank,
       jointOutcomes=(counts.backtrackBased+counts.triangleBased)*probs.length;
 require(joint===692&&jointOutcomes===135040,
@@ -140,10 +160,10 @@ require(joint===692&&jointOutcomes===135040,
 const fib=[0n,1n];
 for(let i=2;i<=32;i++)fib.push(fib[i-1]+fib[i-2]);
 const nativeGoldenCost=Array.from({length:30},(_,i)=>i)
-  .find(i=>fib[i+1]>=BigInt(jointOutcomes));
+  .find(i=>fib[i+1]>=BigInt(fullBellOutcomes));
 require(nativeGoldenCost===26&&fib[27]===196418n,
   "original Golden F/R native recording code insufficient at 26");
-const minimumFreshBinaryBits=Math.ceil(Math.log2(jointOutcomes));
+const minimumFreshBinaryBits=Math.ceil(Math.log2(fullBellOutcomes));
 const fullGNSDimension=fib[27]**2n+fib[26]**2n;
 require(minimumFreshBinaryBits===18&&
   fullGNSDimension===53316291173n,
@@ -170,6 +190,16 @@ const summary={
     sixLieSourceRank:CARrank},
   mathematicalJoinedRecord:{
     totalOutcomeLabels:jointOutcomes,
+    strengthenedOriginalFixedBellProgramme:{
+      fullOutcomesPerSceneHistory:17,
+      jointPathAndFlagLabels:fullBellOutcomes,
+      completeBellSuccessProbability:BellSuccess,
+      retainedBellFailureProbability:1-BellSuccess,
+      completeOriginalGolden17StrictlyPositive:true,
+      sixLieFisherEigenvalue:BellSixLieFisher,
+      jointBookAndFullProgrammeFisherRank:692,
+      physicallySelected:false
+    },
     minimumFreshBinaryBits,
     minimumOriginalGoldenExactCostWordDepth:nativeGoldenCost,
     existingGoldenTypeAExactCost26Words:String(fib[27]),
