@@ -199,6 +199,8 @@ As a separate observable, feed the same endpoint U = W(t) into the existing orig
 
 This gives a precise warning about source typing: the deliberately constructed six-positive-contrast tester in §4.1 has an invertible six-response Jacobian, while the standard full128 law at this fixed probe carries only three independent first-order probability directions, and its Shannon differential is one covector. These are different readouts, and neither is the complete physical Cost–Info source. The calculation is for one final endpoint link W(t); it does not model twelve sequential fresh-flag operations, their physical admission, or their full cost. Replay with the checker at sources/d0_two_null_regular_atlas_2026-10-19/check_regular_atlas_full128_pointer_response.py; the JSON receipt is sources/d0_two_null_regular_atlas_2026-10-19/REGULAR_ATLAS_FULL128_POINTER_RESPONSE.json.
 
+Only Lorentz-link coordinates vary in this probe; the coframe is held fixed, so its coframe derivative is identically zero here. The [current route memo](MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md) records why such a link-only information term cannot match the generic coframe Euler row of S_star. This calculation therefore clarifies the readout's link response and supplies no coframe source.
+
 ## 5. Whole-GR reverse assembly and one decisive physical gate
 
 A valid end-to-end route would now read:
