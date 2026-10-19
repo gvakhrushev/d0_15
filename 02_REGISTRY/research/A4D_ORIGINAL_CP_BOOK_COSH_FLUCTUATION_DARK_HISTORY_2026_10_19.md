@@ -37,6 +37,36 @@ The corresponding stationary additive-history variance is exactly
 \(\mathcal V_{CP}=23166/[\rho_0(3\rho_0^2-359)]=0.98994751738206263285\ldots\).
 It is the *same* native history Schur norm of #384 on this specific CP tangent, not a different fitted feedback operator.
 
+### 1A. Exact graph-imbalance correction; why the native quadratic coefficient is nearly 1, but NOT fitted to 1
+
+For a GENERAL positive complete tripartite \(K(a,b,c)\), let \(S=ab+bc+ca\), \(T=abc\) and \(\rho^3-S\rho-2T=0\) be its native positive adjacency Perron root. The same CP-cycle bias argument gives, with no symmetry of the *sizes* assumed,
+
+\[
+\boxed{\mathcal V_{CP}(a,b,c)
+=\frac{18T}{\rho(3\rho^2-S)}
+=\frac{9abc}{(ab+bc+ca)\rho+3abc}.}\tag{2a}
+\]
+
+The second equality uses only the original Perron cubic. Independently, with three true one-direction stationary macro-edge masses \(m_i>0\), \(\sum m_i=1/2\), the previously derived exact native harmonic formula is \(\mathcal V_{CP}=18/(\sum_i1/m_i)\). Cauchy-Schwarz / AM-HM gives **universally**
+
+\[
+0<\mathcal V_{CP}\le1
+\]
+
+with equality iff the three stationary macro-edge masses are equal. In the original symmetric complete tripartite family this happens exactly when \(a=b=c\): equal macro masses force equal zone stationary masses, and the positive Perron eigenvector equation then forces equal cardinalities.
+
+For the D0 arithmetic progression \(a=n-d,b=n,c=n+d\), the positive Perron root and native CP coefficient have **no linear imbalance correction**:
+
+\[
+\frac{\rho}{n}=2-\frac49(d/n)^2-\frac{20}{243}(d/n)^4+O((d/n)^6),
+\]
+
+\[
+\boxed{\mathcal V_{CP}=1-\frac8{27}(d/n)^2-\frac{56}{243}(d/n)^4+O((d/n)^6).}\tag{2b}
+\]
+
+In D0 \(n=11,d=2\), this explains the *internally generated* response \(0.989947517382\ldots\). The near-one coefficient arises from mild zone-size imbalance, NOT an externally chosen unit sterile probability. It remains a native scalar-history fluctuation coefficient, not the exact Book04 neutrino mass-pole normalization.
+
 ## 2. One FULL directed original path sees the sign that scalar pressure erases
 
 The original Perron–Doob chain \(P_\epsilon\), **true stationary bulk** \(\pi_\epsilon\) (distinct from the actual one-sided initial \(\mu_0\)), and complete stationary edge law \(\mu_\epsilon=\pi_\epsilon P_\epsilon\) obey EXACTLY:
