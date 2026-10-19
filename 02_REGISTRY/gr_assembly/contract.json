@@ -379,6 +379,24 @@
       "normalization": "Exact Q coefficients at [a^2 b^2], with 672 link entries followed by 336 coframe entries (1008 total).",
       "refinement": "One pinned finite representative; no mesh-refinement or continuum estimate.",
       "scope": "Disproves only literal coefficientwise identity of this representative with the compact ansatz; no gauge-aware range, all-40 root, physical D0 or GR no-go."
+    },
+    "stage-resolved-book-common-filter-source-v1": {
+      "carrier": "Original K(9,11,13) scene: 33 vertices, 718 directed edges, 8440 based two-/three-step return words, 17 Golden/Bell outcomes per accepted path and four early/late rejection labels.",
+      "action": "Mathematical complete two-stage scalar Book path law with literal Golden depth weights g2=p,g3=p^2 and one shared unknown path-verification filter kappa; not a selected G0/H+J+R action.",
+      "variations": "Positive moving directed-edge weights, moving depth acceptances beta2,beta3 and shared kappa, retaining all accepted paths and early/late rejection outcomes.",
+      "source": "The complete 143484-outcome record self-calibrates g,beta,kappa and reconstructs the 718-edge scalar Perron Book action/source modulo 32 endpoint gauges under the shared-filter assumption.",
+      "normalization": "p=phi^-1, p+p^2=1; all 17 Golden/Bell outcomes and four stage labels normalized; logarithms in base phi.",
+      "refinement": "One finite original scene carrier; no mesh-refinement or 4D Role limit.",
+      "scope": "Conditional scalar Book source-sufficiency theorem under one shared verification filter. Physical fullStep admission/payment, compulsory H+J+R, matter, Ward, refining roots and GR remain open."
+    },
+    "stage-resolved-book-depth-filter-countermodel-v1": {
+      "carrier": "Original K(9,11,13) scene: 33 vertices, 718 directed edges, 8440 based two-/three-step return words, 17 Golden/Bell outcomes per accepted path and four early/late rejection labels.",
+      "action": "The same complete stage-resolved scalar Book model, now allowing separate unknown path-verification filters kappa2 and kappa3.",
+      "variations": "A smooth positive uniform rescaling K->cK with compensating independent filters kappa_n->kappa_n c^-n and fixed beta_n.",
+      "source": "All 143484 stage-labelled probabilities remain invariant while the absolute scalar Perron Book action changes by -log_phi(c).",
+      "normalization": "The original p=phi^-1, p+p^2=1 depth weights and the full 143484-outcome normalization.",
+      "refinement": "Counterfamily on the fixed finite original scene; no continuum or refining-family claim.",
+      "scope": "Refutes unconditional absolute-source recovery when depth-specific filters may move independently; it does not refute the shared-filter theorem or physical D0."
     }
   },
   "obligations": [
@@ -920,6 +938,18 @@
       "left": "Same-coordinate mismatch of one stored [a^2 b^2] 1008-vector and the compact continuum sigma4/chi4 profile",
       "right": "Absence of a gauge/kernel lift, failure of the full finite quartic solution space, or a physical D0/GR no-go",
       "reason": "The exact checker compares one representative only and does not test the affine solution space or an allowed gauge/kernel transformation."
+    },
+    {
+      "id": "stage-resolved-book-inverse-vs-physical-full-action",
+      "left": "Mathematical absolute scalar Book source inverse under a declared common verification filter",
+      "right": "Physical selection of literal fullStep, the common verifier, and compulsory full H+J+R/Cost-Info on the geometric carrier",
+      "reason": "The finite inverse assumes a complete two-stage event law and shared filter; it does not derive their admission, payment or field-to-link map from D0."
+    },
+    {
+      "id": "common-verifier-vs-depth-specific-verifiers",
+      "left": "One shared unknown path-verification filter kappa for depths 2 and 3",
+      "right": "Two independently moving unknown filters kappa2 and kappa3",
+      "reason": "The exact rescaling symmetry with independent filters preserves every stage-labelled probability while changing absolute scalar Book pressure."
     }
   ]
 }

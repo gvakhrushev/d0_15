@@ -1593,6 +1593,78 @@
         }
       ],
       "reported_state": "Replayed in the current task from #380 head 3ffff0fb76aa86132139c647c883baf240afe3a1 and the quartic vector at the #334/#380 common base. Exact rational checks confirm stored-vector support and literal sigma4/chi4 mismatch. The output is pinned in replay_outputs.txt. Result-only; no gauge-aware finite range, physical admission or GR closure is inferred."
+    },
+    {
+      "id": "complete-stage-resolved-book-source-inverse-143484",
+      "owner": "Existing scientific owner #334; checker replayed independently in current task",
+      "statement": "In the declared two-stage original-scene model with one shared unknown path filter, the complete 143484-outcome record self-calibrates both moving depth acceptances and the filter, then reconstructs the full scalar Perron Book action and its source jets modulo 32 endpoint gauges.",
+      "interface": "stage-resolved-book-common-filter-source-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "two_stage_model": "The 8440 original two-/three-step return words, 17 Golden/Bell outputs per accepted word and four early/late depth-rejection labels follow the exact probability law in the pinned owner.",
+        "shared_filter": "The unknown path-verification filter kappa is the same function at depths 2 and 3; beta2 and beta3 may vary independently and move with fields.",
+        "complete_record": "Every accepted history and each early/late rejection stage is retained; no event is discarded.",
+        "physical_boundary": "The checker and owner do not show that native D0 admits or pays this law, selects a common filter, or identifies it with compulsory full H+J+R."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/owner.md",
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/replay_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/replay_output.txt",
+          "sha256": "219efdeda0310cfa63d8e1f36f35fbe661fe61c2c59fbda017c77a90aee0ca4f"
+        }
+      ],
+      "reported_state": "The #334 owner gives the analytic inverse and its hypotheses. The self-contained checker was replayed with Node v24.19.0: all printed controls pass, including full 143484-event normalization, 718-edge reconstruction, all 1287 triangle products and absolute Perron recovery. Its output explicitly records actual_full_G0_HJR_admission=false and GR_closed=false. Result-only; no positive-GR application."
+    },
+    {
+      "id": "depth-specific-filter-book-source-nonidentifiability",
+      "owner": "Existing scientific owner #334; hostile control replayed independently in current task",
+      "statement": "If the two depths have independent unknown filters, K->cK and kappa_n->kappa_n c^-n leave all 143484 accepted and early/late stage probabilities unchanged while shifting the absolute scalar Book action; a complete staged record alone is therefore insufficient without a common-filter or independent calibration premise.",
+      "interface": "stage-resolved-book-depth-filter-countermodel-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "complete_record": "All 143484 accepted and early/late stage probabilities are observed, including all original based histories and Golden/Bell labels.",
+        "independent_filters": "The allowed model includes separate positive moving verification filters kappa2 and kappa3.",
+        "rescaling": "A common positive edge-weight scaling c is compensated by kappa_n->kappa_n c^-n while beta_n is unchanged.",
+        "physical_boundary": "This counterfamily diagnoses what must be selected or calibrated in the mathematical program; it is not a no-go for native D0."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/owner.md",
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/replay_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/replay_output.txt",
+          "sha256": "219efdeda0310cfa63d8e1f36f35fbe661fe61c2c59fbda017c77a90aee0ca4f"
+        }
+      ],
+      "reported_state": "The exact scaling symmetry is derived in the #334 owner; the pinned checker reproduces the hidden-source control with all stage-labelled outcomes retained. This is a scoped failure of unconditional scalar Book identifiability, not a physical D0 or GR no-go."
     }
   ],
   "applications": [
