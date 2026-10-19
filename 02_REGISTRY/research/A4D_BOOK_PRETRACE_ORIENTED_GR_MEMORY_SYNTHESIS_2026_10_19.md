@@ -110,6 +110,49 @@ Both complete success+marked probabilities are positive and strictly less than 1
 
 Thus there exists a complete POSITIVE mathematical observation whose **source distinguishes the two ordered histories without ANY scalar primitive-price selector or fitted source coefficient**. This is what the original algebra-valued Book memory can carry before scalarization. It is NOT proved to be a physically admitted literal G0 fullStep/oldRIGHT/ref128/clock/CAR apparatus; the Julia success and complement costs remain real resource terms.
 
+## 4.1. CONSTRUCTIVE all-order face-weld: Book weights disappear from geometry after class-resolved normalization
+
+Here is the positive converse to the scalarization no-go. Assume that the ORIGINAL Book algebra-valued memory and one *physically typed* representation \`rho\` separate an oriented **original four-Role face word** \`gamma_f=\partial f\` from its inverse \`gamma_f^{-1}\`, including their positive scalar weights \`w_+(y),w_-(y)\` on the SAME retained execution. Let \`P_f(y)=rho(gamma_f)\` be the actual original ordered proper-Lorentz plaquette. Then the two labelled operator-valued record contributions are \`w_+(y) P_f(y)\` and \`w_-(y) P_f(y)^{-1}\`.
+
+Normalize **each own original class** by its OWN positive scalar coefficient, before summing or taking any trace:
+
+\`\`\`
+  C_f^pretrace(y)
+    := (1/2)[ (w_+ P_f)/w_+ - (w_- P_f^(-1))/w_- ]
+     = (P_f-P_f^(-1))/2 = C_f^star.
+\`\`\`
+
+This identity is exact OFF SHELL for every original proper-Lorentz edge, arbitrary coframe, arbitrary fields, any h and any nonconstant native primitive Cost/Info weights. It has **all-order** field equality and source equality, because the quotients eliminate the moving weights *before differentiation*:
+
+\`\`\`
+  D_y C_f^pretrace[V] = D_y C_f^star[V]
+\`\`\`
+
+including every \`D w_±\` term; no \`D w=0\`, no fixed oldRIGHT prior and no fitted source factor is required for this GEOMETRIC observable. It is not the claim that the physical FULL Cost−Info action has discarded its weight source: weight-normalization is a comparison operation and the physical price to implement it remains separate.
+
+The owned six-based-face action is **literally** the coframe/Hodge pairing of these \`C_f\`:
+
+\`\`\`
+  S_star(e,U) = sum_(original based f)
+    orientation(f) < e_(complement u) wedge e_(complement v),
+                     STAR b(C_f^star) >_(G2).
+\`\`\`
+
+Thus, under the actual typed face-word representation and a physically admitted class-resolved readout, substituting \`C_f^pretrace\` reconstructs the complete ORIGINAL geometric action function, not just an Einstein Taylor coefficient. Since it is identical before variation, **all sixteen independent solder and all twenty-four independent Lorentz-link Euler rows** agree as mathematical functions at every finite mesh. There is no new continuum Lagrangian or Holst/torsion term.
+
+On the explicit ORIGINAL four-edge face \`P_f=exp(aA) exp(bB) exp(-aA) exp(-bB)\`, the exact odd-curvature marked component is
+
+\`\`\`
+  (1/2) Tr[J23^T (P_f-P_f^(-1))/2]
+    = ab (1-a²b²/8).
+\`\`\`
+
+This is a **finite nonlinear** signed curvature signal, not merely the \`ab\` coefficient. Both original class weights disappear exactly under the same quotient, including their field jets. The certificate checks all these equalities.
+
+**Minimal new physical obligation, precisely typed:** the original memory algebra \`[q(gamma)]\` must retain/distinguish the two oriented face classes, its oldLEFT/RIGHT plus CAR observer must actually supply a composition-preserving proper-Lorentz representation and complete positive two-line readout, and the original mandatory Book/G0 programme must price that operation with its true flags, controller, preparation and clock. This is NOT established by the algebra-valued notation alone. In particular the face words of the 4D Role lattice must be related by a proved map to the ORIGINAL 33-vertex scene path carrier rather than silently treating the two graphs as identical.
+
+**Result:** the entire GEOMETRIC 40-row operator weld is algebraically available from ORIGINAL oriented memory *without* knowing the absolute native scalar Cost–Info coefficients; what remains is operational class/face-map admission and equality of the **whole physically selected source**, not a new curvature theorem.
+
 ## 5. What this removes from the GR strategy — and what it does not
 
 **Removed as a geometry/math problem:** a new Lorentz generator is unnecessary (the original two nulls generate so(1,3)); new noncommutative scene paths are unnecessary (original Book03 already retains them); a scalar Perron/determinant compression cannot be the sole signed gravity decoder (proved here on an actual native sublanguage); the exchange-odd readout need not fit an arbitrary θ / scalar code source because both compared paths have identical primitive multiset and endpoints.
