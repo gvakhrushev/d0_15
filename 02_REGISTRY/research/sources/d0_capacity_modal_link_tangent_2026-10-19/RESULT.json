@@ -12,7 +12,7 @@
     "d_positive_for_h_t_positive": true,
     "sum_upper_bound": "-2*d"
   },
-  "git_head": "452c95ab0673298e3969194a113c454ec92e87d0",
+  "git_head": "faa99e0ffe6ce639c92f39c0643d75634ff83ff4",
   "input_sha256": {
     "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
     "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md": "7ecdcbba3a6a7221288be6caa66c315509bad11612ad29a87b1865f5bac9eea7",
