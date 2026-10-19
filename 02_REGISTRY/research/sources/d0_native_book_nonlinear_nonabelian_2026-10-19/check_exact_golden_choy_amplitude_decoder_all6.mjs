@@ -127,7 +127,7 @@ function pathWeight(t){
  }
  return {weight,lambda,nativeR0};
 }
-const weights=[-.04,0,.03].map(t=>({t,...pathWeight(t)}));
+const weights=[0,.02,.04].map(t=>({t,...pathWeight(t)}));
 for(const w of weights){
  need(w.weight>0&&w.weight<1,
       "TRUE original moving one-sided Book/Doob probability positive at t="+w.t);
@@ -136,13 +136,13 @@ for(const w of weights){
  need(Math.abs(recovered-a*b)<3e-13,
       "finite native Golden marker independent of ALL moving scalar Book history weights t="+w.t);
 }
-const h=.0001,mp=pathWeight(h).weight,mm=pathWeight(-h).weight;
+const h=.0001;
 const marker=t0=>{let x=pathWeight(t0).weight,q=qab[4];
  return 4*Math.sqrt(3)/(p*p*Math.sqrt(x))*
     (Math.sqrt(x*q.qPlus)-Math.sqrt(x*q.qMinus));
 };
-need(Math.abs((marker(h)-marker(-h))/(2*h))<2e-10,
- "exact all-order cancellation of moving original scalar Book source in conditional curvature decoding");
+need(Math.abs((marker(h)-marker(0))/h)<2e-10,
+ "exact all-order cancellation of moving original scalar Book source in one-sided ADMISSIBLE Cost>=1 family");
 
 console.log(JSON.stringify({
  original:"33-vertex/718-edge actual Perron paths + original CAR16 two-loop native Golden-p full16 marked flag instrument",
