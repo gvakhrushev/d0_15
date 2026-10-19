@@ -362,6 +362,58 @@ action nor a uniform refinement estimate. Its next use is to derive the
 coframe-transported POVM from the native programme and compare the complete
 \(C^2\) source to the star action without adding a selector from outside D0.
 
+### 5.3. The four-gate crossed-null commutator misses the original \(C^2\) face source by exactly eight
+
+The first-jet match above has now been tested on the actual composed crossed-null
+plaquette, not on a tensor-product catalogue of independently measured links.
+Take
+\[
+A(a)=e^{aN_2},\qquad B(b)=e^{b\bar N_3},\qquad
+P(a,b)=A(a)B(b)A(a)^{-1}B(b)^{-1}.
+\]
+Execute its four edges chronologically as \(B^{-1},A^{-1},B,A\), with a
+separate fresh Julia flag at each edge. At the end, apply the same fixed
+13-effect Choi/Julia POVM on every flag history and retain all 16 histories;
+the four-gate record therefore has 208 strictly positive coarse outcomes.
+The \(J^-\) pointer is Golden-refined on every flag history, retaining both
+labels, for 224 strictly positive fine outcomes. The exact jet checker is
+[`check_four_gate_commutator_c2.py`](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_four_gate_commutator_c2.py).
+It computes the exact grade-one restriction of the original full-CAR16 probe;
+the other CAR grades remain spectators on this prepared Choi state.
+
+The geometry side is the original face: \([N_2,\bar N_3]=J\), and the
+\((2,3)\) Palatini face has \(\partial_a\partial_b\mathcal P_{\star,h}(P)|_0
+=-h^2\). On the price side, the four-gate one-link \(J^-\) Golden refinement
+has first source \(-c_{\rm Sh}\), exactly as in §5.2, so the same scale
+\(\kappa_h=h^2/c_{\rm Sh}\) matches that first face jet. But for the actual
+crossed-null four-gate composition the unmarked all-outcome mean-Shannon
+mixed source is exactly zero, while the retained \(J^-\) pointer has
+\[
+\partial_a\partial_b q_{J^-}(P)|_0=-\frac{\sqrt2}{768}
+=-\frac{1}{384\sqrt2}.
+\]
+Consequently the Golden-refined complete mean-Shannon price has exact mixed
+source
+\[
+\boxed{\partial_a\partial_b S_{\rm mean}(P)|_0
+=-\frac{c_{\rm Sh}}8,\qquad
+\kappa_h\,\partial_a\partial_b S_{\rm mean}(P)|_0=-\frac{h^2}{8}.}
+\]
+The original face coefficient is \(-h^2\). Thus this fixed positive,
+complete Julia/POVM/Golden candidate matches the flat first jet but fails the
+crossed-null \(C^2\) face test by a factor of eight. The probability law is
+normalized through mixed order and has strict positive baseline probabilities;
+the result is not caused by dropping failures or differentiating at a zero
+outcome.
+
+This is a scoped rejection of this particular composed mean-Shannon price,
+not a no-go for the native D0 Cost−Info functional. A physical programme cost,
+controller/clock source, or a different forced same-history readout could
+contribute additional terms, but each must be derived from the admitted native
+action and paid record rather than fitted to repair the coefficient. The
+physical same-history price and its full coframe/link variation remain the
+smallest source-side blocker to the positive GR route.
+
 ## 6. Finite compilation and the narrow remaining physics
 
 The exact all-grades contraction and complete real Julia/Naimark circuit belong to the owned mathematical **generous all-active orthogonal** class, with all new flags/4-dimensional Choi source actually declared and not deleted. The known addressed real Golden G/CNOT compiler approximates any such fixed real orthogonal finite-dimensional gate once its ACTUAL addressing/preparation/access interface is supplied; it retains ancilla leakage and has a whole-state error. The true group link data \(A,B\) must be computable from the same original finite Lorentz plaquette/coframe source and not supplied as a free geometric oracle.
