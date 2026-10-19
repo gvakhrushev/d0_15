@@ -130,3 +130,72 @@ Thus (10) is not a sequence collapsing to pure gauge/flat geometry. This is a ge
 - The earlier exact fixed-h source owners retain their own independent coefficients, scalar/top CAR, OLD LEFT/RIGHT/reference and failure-probability law. The algebra above neither identifies different readout costs nor physically forces the AF-star field code.
 
 **Next consuming move**: replace all repeated polynomial 24-link coefficient solves by formula (5), compute the TRUE 16-component reduced finite Einstein Schur operator and its polynomial image/Noether consistency **in the same graded carrier**. Then either build an all-order convergent section by a controlled elliptic/analytic inverse with specified boundary, or report its first exact cokernel. Only thereafter can full same-programme Book/PREP/CAR16/source/clock/old-history/refinement and raw #216 be tested for physical GR selection. GR_closed=false.
+
+
+## 4. SAME finite gauge Ward: 24 solved Cartan rows leave TEN metric equations, not sixteen
+
+Consume the already owned exact proper-Lorentz local field transformation from
+[the native joint field quotient](A4D_NATIVE_JOINT_FIELD_QUOTIENT.md).
+For each interior site z and \(K_z\in\mathfrak{so}(1,3)\), the ORIGINAL
+star variables transform
+\[
+\delta_Kv_{z,r}=K_zv_{z,r},\qquad
+\delta_KU_{z,r}=K_zU_{z,r}-U_{z,r}K_{z+\hat r}.\tag{12}
+\]
+Every plaquette transforms by \(P_{rs}(z)\mapsto S_zP_{rs}(z)S_z^{-1}\)
+and the based solder bivectors transform in the same proper internal Lorentz
+frame. Thus the original six-term star density and the full finite action are
+EXACTLY invariant at every h (not a continuum approximation). Its first
+variation gives the full six-dimensional per-site Lorentz Ward relation
+\[
+\boxed{\sum_r E_{v_{z,r}}[K_zv_{z,r}]
+ +\sum_r E_{U_{z,r}}[K_zU_{z,r}]
+ -\sum_r E_{U_{z-\hat r,r}}[U_{z-\hat r,r}K_z]
+ =0.}\tag{13}
+\]
+Here each link term is the actual cotangent pairing with the indicated
+matrix velocity; fixed-collar gauge transformations vanish on the collar.
+Do not delete the link terms off shell or replace the original star action
+by a coframe-only ansatz.
+
+AFTER the 24 original link Euler equations are solved at every free link,
+the final two sums vanish. The six independent site Lorentz generators
+then annihilate the 16-component solder source:
+\[
+\boxed{\sum_r E_{v_{z,r}}[K_zv_{z,r}]=0\quad\forall K_z\in
+\mathfrak{so}(1,3).}\tag{14}
+\]
+For nondegenerate 4×4 v_z, this six-dimensional gauge orbit has rank6;
+the quotient of 16 original coframe tangents is exactly the 10-dimensional
+symmetric metric tangent. Hence (5)+(14) yield an **exact coefficientwise
+formal \(40\to10\) reduction** on the unwrapped polynomial bulk: solve the
+24 Cartan coefficients explicitly with a terminating finite inverse; the
+six antisymmetric coframe equations then vanish identically by the SAME
+proper-Lorentz Ward; solve the remaining ten metric/Einstein Schur equations.
+This consumes the known gauge-quotient owner. It is NOT a claim that
+all ten metric equations are solved at arbitrary amplitude, or that a
+finite-lattice coordinate/diffeomorphism Ward kills another four rows.
+At each perturbation order the reduced metric equation carries its exact
+previous-order source, including noncommuting nonlinear terms.
+
+### 4.1. The existing finite-box carrier, without false global periodicity
+
+The saved quartic branch and its new grading use transverse polynomials in
+x,y and are **independent of the null Role coordinates u,v**. Therefore
+they can be restricted from the infinite unwrapped lattice to ANY finite
+transverse rectangle on which the original six-based local stencils are
+defined, with a sufficiently thick fixed collar holding the corresponding
+polynomial values. Null u/v directions can be taken periodic because the
+profile is independent of both. Every genuinely free interior based-face
+Euler coefficient through amplitude degree4 is exactly the SAME polynomial
+identity as in the unwrapped proof, at every physical h after (6).
+This is a bona fide **finite-box local formal 40-Euler solution through
+amplitude order4**, not a fixed-amplitude exact stationary root. A fully
+periodic transverse torus would require the nonconstant polynomial boundary
+values to match and is NOT covered.
+
+This is stronger than checking the formal jet at a single h, but it
+does not supply a uniform radius of convergence for the infinite amplitude
+series or a physical Golden/native controller. The actual full-state
+preparation, matter, old RIGHT/ref128, clock, Cost–Info, and raw #216 remain
+distinct mandatory obligations.
