@@ -278,14 +278,42 @@ shown to be one physically selected complete action. The separate AF coherent
 record witness above does not yet identify its \(\theta\) with this \((q,m)\)
 map.
 
-The next GR obligation is therefore to extend and physically admit this
-existing same-history map across the retained link/affine directions, connect
-its record to the selected complete \(\operatorname{Cost}-\operatorname{Info}\)
-source, and establish refinement compatibility. Then the full constrained
-covector can be compared with all ten metric components and the connection
-and matter equations. The jet-family dimension, a tomographic condition, the
-toy entropy, or the restricted \((q,m)\) map alone do not complete that
-chain.
+### The same-process heat and chronology terms already expose a residual
+
+The heat and feedback checks need not be combined by assumption. The existing
+[A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md](A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md),
+§5, evaluates them on one congruently transported full-state path. It keeps all
+sixteen matter components moving, uses the actual first and second gates and
+original readout, and has \(D_e=I\), \(b_e=0\) on the spatial carrier. Along
+that path \(c_t=c_0\), so the chronological feedback price has
+\(\dot J=0\), while the before/after positive Hodge operators share the same
+\(Q_t=\operatorname{diag}(4e^{2t},e^{-2t}/4,1,1)\). At fixed
+\(\beta=\log 2\), the owned all-\(L\) result is
+\[
+\frac{d}{dt}\left[\beta^{-1}\log\operatorname{Tr}e^{-\beta\Delta_{Q_t}}+J_t\right]
+=2(E_1-E_2)>\frac1{10000},\qquad L\ge2.
+\]
+The tangent is volume-preserving; the flat geometric \(\rho_0\) comparator and
+the constraint multiplier both vanish on it. Thus this specified \(H+J\)
+candidate is not stationary at the tested configuration. This extends the same-process obstruction to every finite \(L\); the
+uniform \(>1/10000\) margin is numerically weaker than the sharper
+continuum-only \(>1/30\) bound above. It still does not prove that all
+matter stress vanishes or yield a source-subtracted native equation.
+
+For an enlarged same-process action \(H+J+R\), stationarity on this tangent
+requires \(\dot R=-2(E_1-E_2)\). That is a necessary source value, not a
+licensed counterterm: \(R\) must be derived from the same physically admitted
+record process. This coalesced result removes another loop: the isolated heat
+calculation and isolated chronological descent do not need to be repeated to
+show why feedback alone cannot cancel this heat source in the stated binding.
+
+The next GR obligation is therefore to extend and physically admit the
+existing same-history map across the retained link/affine directions, derive
+any additional \(R\) from the same record, and establish refinement
+compatibility. Then the full constrained covector can be compared with all
+ten metric components and the connection and matter equations. The
+jet-family dimension, a tomographic condition, the toy entropy, or the
+restricted \((q,m)\) map alone do not complete that chain.
 
 Reproduce with
 
