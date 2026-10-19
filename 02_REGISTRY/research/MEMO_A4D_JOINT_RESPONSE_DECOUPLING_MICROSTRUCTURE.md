@@ -8181,6 +8181,16 @@ Cost--Info selection remain separate. The inverse is local to the declared
 rest chart; it does not itself force the original programme to execute or
 price that reconstruction.
 
+The same owner now gives a hard second-source control for this candidate:
+the six independent one-face Golden refinements match the flat Palatini
+first jet after a common scale, but the complete four-gate crossed-null
+Julia/Shannon record produces exactly \(-h^2/8\) where the original face
+produces \(-h^2\). The factor-eight mismatch rejects this specified complete
+mean-Shannon price at the crossed-null \(C^2\) source. It is a scoped
+candidate rejection, not a no-go for the compulsory D0 Cost-Info law.
+The all-failure, positive-outcome control is in
+[`check_four_gate_commutator_c2.py`](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_four_gate_commutator_c2.py).
+
 Thus the first remaining physical bridge is no longer an abstract detector
 formula: the same compulsory D0 program must generate and price this full
 fresh-flag record, with its complete retained Book history and actual
