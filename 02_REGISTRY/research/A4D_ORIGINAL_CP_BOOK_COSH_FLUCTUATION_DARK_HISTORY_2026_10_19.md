@@ -117,6 +117,56 @@ The exact rank is30, multiplicities (8,10,12), and numerical eigenvalues (0.0389
 
 **Strong negative control:** since every primitive \(K_\epsilon\) block remains constant within zones, \(K_\epsilon Q=QK_\epsilon=0\) for ALL epsilon. Neither the CP orientation nor the exact alpha numbers alone dynamically couples the history dark653 to vertex Ker30. Real zone-internal spatial/record-field variations and a complete native selected Book→Lorentz actuation remain necessary. The scalar real-positive \(\cosh\) is not a CAR-unitary \(\cos\) neutrino oscillation.
 
+## 4A. NEW: exact SAME original Book quadratic source = the registered full718 two-arm contrast Hessian
+
+This eliminates the previous gap between "archive variational norm" and an actually normalized complete-edge RECORD on THIS same scalar programme, without selecting a new field or action. On the already-owned **current 718-edge register** \(S_\epsilon:H_{33}\to H_{718}\) of #334 set
+
+\[
+\chi_\epsilon:=S_\epsilon\sqrt{\pi_\epsilon},\qquad
+\chi_\epsilon(u,v)=\sqrt{\mu_\epsilon(u,v)},\quad \|\chi_\epsilon\|=1.
+\]
+
+This is the canonical square-root amplitude encoding of the TRUE original complete positive stationary bulk **edge law**. It is a mathematical faithful encoding, not a claim that the compulsory full128 quantum detector coherently prepares it. Define the genuine all-outcome two-line statistical overlap (Bhattacharyya affinity)
+
+\[
+\mathcal Z(\epsilon_+,\epsilon_-)
+=\sum_{(u,v)\in E}\sqrt{\mu_{\epsilon_+}(u,v)\mu_{\epsilon_-}(u,v)}
+=\langle\chi_{\epsilon_-},\chi_{\epsilon_+}\rangle.
+\]
+
+Because the ORIGINAL CP bias has \(\partial_\epsilon\pi_\epsilon|_0=0\), its complete Markov score on every actual edge is \(\partial_\epsilon\log\mu_\epsilon|_0=-\ell h_{uv}\), with \(h\) the already-owned **dark653** Poisson innovation of (6). Thus
+
+\[
+\boxed{\partial_\epsilon\chi_\epsilon|_0
+=-\frac{\ell}{2}(\sqrt{\mu_0}\,h),\qquad
+J_0^\top\partial_\epsilon\chi|_0=J_1^\top\partial_\epsilon\chi|_0=0.}\tag{8}
+\]
+
+The derivative lies in the ACTUAL original edge archive's future-invisible dark653. The same Book Hessian in (2) is EXACTLY the **two-line statistical distinguishability second source**:
+
+\[
+\boxed{
+\partial_{\epsilon_+}\partial_{\epsilon_-}
+\log\mathcal Z|_{(0,0)}
+=\|\partial_\epsilon\chi|_0\|^2
+=\frac{\ell^2}{4}\mathcal V_{CP},
+\qquad
+\mathcal A_{\rm Book}''(0)
+=-\frac{4}{\ell}\,\partial_{\epsilon_+}\partial_{\epsilon_-}
+\log\mathcal Z|_0.}\tag{9}
+\]
+
+There is NO fitted proportionality constant: \(4\) comes from the square-root record amplitude, \(\ell=\ln\varphi\) from the original Book Cost base. This identity is **not** asserted for arbitrary original Cost tangents with moving \(\pi'\ne0\); CP antisymmetric first-source and (3) are necessary.
+
+Moreover, EXACT time reversal (3) gives \(\chi_{-\epsilon}(u,v)=\chi_\epsilon(v,u)\), and the full direct/reverse record overlap obeys
+
+\[
+\boxed{1-\mathcal Z(\epsilon,-\epsilon)
+=\frac{\ell^2\mathcal V_{CP}}2\epsilon^2+O(\epsilon^4).}\tag{10}
+\]
+
+At the **conditional** comparison \(\epsilon=\Delta_\alpha\), direct ALL718 sum gives \(\mathcal Z=0.9999999802391912621409198\ldots\), loss \(1.9760808737859080\times10^{-8}\); the tangent norm-square is \(0.05730925481085409018\ldots\). The original Book Hessian reconstructed from (9) is \(-0.47637445155264586669\ldots\), identical to (2) without a source fit. The two-arm overlap here is a **REAL classical Hellinger/Bhattacharyya comparison**, not a nonzero imaginary CAR/Weyl relative phase. The latter and all full128 native physical Cost−Info remain open.
+
 ## 5. Parent consumption and reproducibility
 
 **This resolves one existing scalar-history CP sector**, not the full physical action. The consuming live parent #384/#334 must still map the *same admitted original full128 Julia/CAR/oldRIGHT/reference/controller/clock* to actual 718 directed Cost/Info **field derivatives**, preserve ordered Lorentz memory and full preparation sources, and compare the SAME full action's 16 coframe+24 Lorentz+matter variational Euler to the already-owned finite Einstein comparator. No \(\epsilon=\Delta_\alpha\) selection, passport promotion, #216 closure or GR claim.
