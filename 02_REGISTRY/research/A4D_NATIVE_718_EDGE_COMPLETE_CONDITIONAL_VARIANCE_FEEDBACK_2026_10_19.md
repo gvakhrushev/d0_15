@@ -163,6 +163,10 @@ The already OWNED 718 directed outcomes support a loss-of-predictability tester 
 
 The Book factor \(z\) can be included by a separate real Bernoulli selector if its physical source/price is actually admitted: scale the innovation branch by \(\sqrt z\) and keep ALL other branches, giving effects \(zF\) and \(I-zF\) exactly. The physical origin of a Bernoulli probability precisely \(z=2^{-20}\) and its complete implementation is NOT inferred from the single Golden p/p² gate: their arithmetic is different.
 
+**Physical-resource improvement, consuming existing native §4 owner rather than assuming new CAR33.** [A4D_NATIVE_SCENE_COMPLETE_RECORD_PREDICTIVE_FEEDBACK_PHYSICAL_SOURCE_2026_10_19.md](A4D_NATIVE_SCENE_COMPLETE_RECORD_PREDICTIVE_FEEDBACK_PHYSICAL_SOURCE_2026_10_19.md) already proves a smaller complete single-history determinant implementation: for the SAME strictly positive \(G=I-zF\) take its full positive Cholesky \(G=LL^T\), and set
+\(d_k=L_{kk}^2=\det G_{1:k}/\det G_{1:k-1}\in[1-z,1)\).
+Perform 33 sequential full binary REAL flag readouts with true probabilities \(d_k,1-d_k\), retaining the first-failure label and ALL other fresh flags/old edge data. The all-success probability is EXACTLY \(\prod_kd_k=\det G\), all failure probabilities telescope to \(1-\det G\); no new exterior CAR33 is necessary. This is one 33-step COMPLETE measurement, not a presumption that the 33 events are independently prepared native experiments. **Its field-dependent binary angles and their work/controller cost still require ACTUAL native Golden/Book admission.** The alternative exterior lift below is a mathematical check, not the preferred physical realization.
+
 **Subtle determinant gate:** a one-particle complete two-outcome measurement yields ONE probability \(\langle f,(I-zF)f\rangle\), NOT automatically \(\det(I-zF)\). A concrete mathematical full-determinant detector is the full exterior (fermionic) lift of the isometry
 \[
 V:\mathbb R^{33}\longrightarrow
