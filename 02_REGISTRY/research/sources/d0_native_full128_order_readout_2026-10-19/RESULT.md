@@ -253,3 +253,73 @@ Exact replay:
 ```text
 python3 02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py
 ```
+
+## Complete two-round Shannon order source
+
+The sequential matrix-instrument test now retains the **entire** fresh-record
+history, not a selected pair of outcomes. The reference128 factor is a fixed
+full-rank spectator, and its state is not varied. Let `K_i^A(a)` and
+`K_i^B(b)` be the 128 Kraus outcomes of the already-defined full128
+instrument at the assigned increments `A(a)=exp(a N2)` and
+`B(b)=exp(b Nbar3)`. For the maximally mixed CAR16 input, define
+
+\[
+q_{ij}^{AB}(a,b)=\frac1{16}\|K_j^B(b)K_i^A(a)\|_F^2,
+\qquad
+q_{ij}^{BA}(a,b)=\frac1{16}\|K_j^A(a)K_i^B(b)\|_F^2.
+\]
+
+The checker differentiates the complete `128^2 = 16,384`-history Shannon
+terms in both orders. There are exactly 1,764 positive histories at the base
+point and 14,620 zero histories. Every zero history has at least one exactly
+zero one-round Kraus operator; the exact check also confirms that every pair
+of nonzero one-round Kraus operators has a nonzero product. If first outcome
+`i` has a zero Kraus operator, its history amplitude factors through the
+first-step increment (`a` in AB, `b` in BA); if second outcome `j` is zero,
+the factor is the second-step increment (`b` in AB, `a` in BA). Two zero
+outcomes give both factors. Consequently each zero-history
+`q log q` term has zero mixed `(a,b)` derivative. The full Shannon
+functional need not be `C^2` in all directions, but this particular mixed
+partial exists and its zero-support contribution is exactly zero.
+
+On the positive support, the exact formula is
+
+\[
+\partial_{ab}H_\varphi
+=-\frac1{\log\varphi}\sum_{q_{ij}>0}
+\left(q_{ij,ab}\log q_{ij}
++\frac{q_{ij,a}q_{ij,b}}{q_{ij}}\right),
+\]
+
+with `sum q_{ij,ab} = 0` checked separately for each order. The complete
+order response is
+
+\[
+\boxed{\partial_{ab}
+  \bigl(H_\varphi^{AB}-H_\varphi^{BA}\bigr)
+\in[8.0230437693961338,\;8.0230437693961339]\times10^{-8}>0.}
+\]
+
+This interval uses rational atanh-series log bounds with exact
+\(\mathbb Q(\sqrt5)\) probability coefficients. The nonlog term
+\(\sum q_aq_b/q\) cancels to zero **within each order**. As a useful control,
+the selected history `(0,19)` has a negative probability mixed-order jet
+\(-6.4055\times10^{-8}\), while the full Shannon source is positive; one
+history therefore does not stand in for the complete record.
+
+Replay the complete two-round result with:
+
+```text
+python3 02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_two_round_complete_shannon_order_source.py
+```
+
+The replay output is preserved in
+`TWO_ROUND_COMPLETE_SHANNON_SOURCE.json`.
+
+This closes a scoped complete-record order-readout calculation. Both steps are
+assigned applications of the existing matrix instrument; the result does not
+prove that the physical D0 program admits those per-increment memory
+operations, that the Julia dilations compose physically, or that this Shannon
+term is selected by the complete Book Cost-Info law. Controller/work,
+preparation, normalization and physical event binding remain outside the
+calculation; `GR_closed=false`.

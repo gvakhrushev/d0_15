@@ -5147,9 +5147,29 @@ The [complete Shannon source certificate](sources/d0_native_full128_order_readou
 \[
 [-0.031546784312485733440439,\;-0.031546784312485733440438].
 \]
-All 128 outcomes stay in the record. The 86 zero-probability branches have zero Kraus operators and zero first probability jet, so they contribute no first entropy derivative; because of these branches, this does not provide a \(C^2\) Shannon jet.
+All 128 outcomes stay in the record. The 86 zero-probability branches have zero Kraus operators and zero first probability jet, so they contribute no first entropy derivative; this one-link first-source calculation does not provide a \(C^2\) Shannon jet. The separate sequential mixed-order result is below.
 
 The already known original golden port-code contribution on this direction is \(9/800-9\sqrt5/1600\approx-0.00132788237\), different from the complete pointer Shannon source. Thus the port term cannot stand in for the full record price. This closes one actual readout derivative, not the total Cost--Info derivative: code costs for the other outcomes and controller/work/normalization terms are still needed, as are physical admission of this link tangent and its map to the full star/CAR metric source. `GR_closed=false`.
+
+The separate [complete two-round Shannon certificate](sources/d0_native_full128_order_readout_2026-10-19/check_two_round_complete_shannon_order_source.py)
+now computes the mixed order response for this existing 128-outcome matrix
+instrument with two fresh retained records and the fixed reference128
+spectator. Across all 16,384 histories,
+1,764 have positive base probability; the other 14,620 factor through at
+least one zero one-round Kraus operator, so each zero-history \(q\log q\)
+term has zero mixed \((a,b)\) derivative. The exact grouped-log interval is
+\[
+\partial_{ab}(H_\varphi^{AB}-H_\varphi^{BA})
+\in[8.0230437693961338,\;8.0230437693961339]\times10^{-8}>0.
+\]
+The mixed derivative exists for this two-step observable although global
+\(C^2\) regularity is not claimed. Its sign differs from the selected
+\((0,19)\) probability jet, confirming that complete-record aggregation
+matters. This closes the assigned matrix-process order readout, not physical
+execution of per-increment memory words, Julia-dilation composition, or the
+total Cost--Info derivative. Controller/work, preparation, normalization,
+physical event binding and the source match to the full star/CAR variations
+remain open; `GR_closed=false`.
 
 ### 7.68. One complete 718-edge Perron record yields a canonical feedback candidate, not yet the selected D0 action
 
