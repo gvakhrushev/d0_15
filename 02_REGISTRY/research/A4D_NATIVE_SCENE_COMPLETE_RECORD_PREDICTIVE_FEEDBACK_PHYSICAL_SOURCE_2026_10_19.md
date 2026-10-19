@@ -211,6 +211,39 @@ This differentiates the SAME positive determinant event (19), includes **all mov
 \]
 with moving \(\pi\) derivative magnitude up to \(\sim6.6453\times10^{-4}\). For numerical source discrimination the identical original native programme at a TEST z=.01 gives \(\partial_tJ_{\rm pred}\approx-1.39365\times10^{-6}\); z=.01 is diagnostic only, NOT a changed physical fugacity. These are derivatives of supplied original edge Cost, not an arbitrary variation of F. **They are not Einstein metric Euler components:** one must still derive the actual native coframe/link/CAR→edge Cost/Info source map on the SAME process to pull (23) onto the original 16+24+2 target.
 
+### 5.1. A genuine CONSERVED 718-edge native source: Book information gauge ⇒ exact discrete Ward identity
+
+The quotient theorem (3) is not only an invariance of a scalar J. Treat the **ACTUAL** full feedback's response as a real 718-component edge-source covector
+\[
+\mathcal J_{uv}(s)=\frac{\partial J_{\rm pred}}{\partial s_{uv}}.
+\]
+The actual source is defined by (21)–(23) from ONE complete recorded joint law, no Einstein-like tensor selected. Differentiate the EXACT all-field identity
+\(J_{\rm pred}(s+a+\delta\psi)=J_{\rm pred}(s)\)
+once with respect to the scalar common-cost calibration a and independently to each of the 33 ORIGINAL vertex potentials \(\psi_v\), **at arbitrary strictly positive scene weights**, not merely at s=1. It yields
+\[
+\boxed{
+\sum_{u\to v}\mathcal J_{uv}=0,\qquad
+\sum_{u:u\to v}\mathcal J_{uv}
+-\sum_{w:v\to w}\mathcal J_{vw}=0
+\quad\text{for EACH of the 33 original vertices }v.
+}\tag{24a}
+\]
+This is an EXACT finite **native Kirchhoff/Ward law for the feedback COST SOURCE itself**. It automatically includes all stationary-preparation and Perron eigenvector variations, because those were already part of J. The 33 divergence equations have one linear dependency (their sum vanishes); adding the independent total-source neutral condition gives exactly 33 linear conditions on the original 718 edge covectors and a 685-dimensional allowed signed source space, matching precisely the Markov quotient dimension (4).
+
+**Why this matters physically:** source variations due ONLY to changing endpoint allocation of the old recorded Info, to a pure vertex-code/calibration change, or to a common primitive action unit do not create a fake gravitational force. Genuine native feedback forces can arise ONLY from non-coboundary **loop-sensitive** relative edge Cost/Info source. If the actual physical coframe/link/observer gauge tangent is mapped by the same admitted native field-to-edge interface into such a vertex coboundary, (24a) produces its Ward identity **without postulating a Bianchi tensor or frozen observable**. Such an intertwiner is NOT proved by the present lemma; a divergence-free source on the 33-vertex scene is NOT automatically the spacetime 4D contracted Bianchi identity.
+
+The mathematically decisive full GR source test on ONE proposed field-to-edge map \(s_{uv}(e,U,\Psi,\rho,\text{clock})\) is therefore **small and explicit**:
+\[
+\boxed{
+\forall V\in T_{\rm admitted}\!:\quad
+\sum_{u\to v}\mathcal J_{uv}(s)\,D s_{uv}[V]
++D S_{\rm genuinely\ other\ price}[V]
+\stackrel{?}{=}
+c_h\,D\!\sum_x(\widehat f_{h,x}+\lambda_{\rm mat}q_{h,x})[V].
+}\tag{24b}
+\]
+Here every 16 coframe, 24 link, two CAR and the actual preparation/clock/old-history directions belong to the SAME admitted programme. The source coefficients on the LEFT of (24b) are **fully derived from the complete 718-event recorded statistical test**; no coefficient is allowed to be fitted to the right side. Equation (24b) is a transparent physical acceptance interface, NOT itself proof of equality or permission to invent the field-to-edge map.
+
 ## 6. Exact intrinsic 30+2+1 feedback spectrum from the ALREADY OWNED SCENE, no foreign operator
 
 At the pointwise LEAST admissible real native edge-price reference \(s_{uv}=1\), the transfer is exactly \(K=p A_{\rm native}\), with A the literal undirected complete tripartite adjacency. This is a **reference member of the ActionProtocol admissible fiber**, not the assertion that D0 physically SELECTS the least member in a varying gravitational field. The resulting Perron–Doob P is reversible with \(\pi_v=r_v^2/\|r\|²\). By the ACCEPTED LEAN-OWNED all-walks Perron trace in §2, this is the canonical native bulk of its actual original cylinder measure.
