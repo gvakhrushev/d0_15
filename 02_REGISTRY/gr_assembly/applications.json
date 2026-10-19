@@ -385,6 +385,110 @@
         }
       ],
       "reported_state": "Pinned to exact theorem source commit d6db28e517278c927efaa425b2ad2fc0511093f5, subsequently integrated into the #334 strategic route at commit 588b701a38d0f1fa821cc6b3fb64048d5c593ce2. The exact rational checker passes all 24 link and 16 coframe mixed rows and the mixed plaquette controls; the independent finite-mesh numerical check reproduces the h/8 residual suppression. Result-only graph entry; no application to native-programme-v1 is registered or accepted."
+    },
+    {
+      "id": "double-null-cubic-continuum-ricci-poisson",
+      "owner": "registered native response research owner #334; independently normalized replay in #379",
+      "statement": "For arbitrary real orthogonal transverse slopes A=(p,q), B=kappa*(-q,p), the continuum crossed-null Ricci tensor through total amplitude degree three has only the stated uu and vv cubic sources. Source-forced cubic profile corrections cancel the entire Ricci jet, and the central five-point Laplacian reproduces both cubic source identities exactly for every h.",
+      "interface": "double-null-cubic-continuum-poisson-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "geometry": "The continuum metric uses H=a(A dot x), J=b(B dot x), g_uv=1+HJ/4 and a flat transverse plane.",
+        "orthogonality": "A dot B=0, parameterized symbolically by A=(p,q), B=kappa*(-q,p).",
+        "correction": "H is shifted by -a^2 b |A|^2(B dot x)(x^2+y^2)/32 and J by -a b^2 |B|^2(A dot x)(x^2+y^2)/32.",
+        "checker_status": "The upstream checker at a76ffeb0680827745558c9c864242303b51a9223 exits nonzero on two rotated fixtures because its SymPy matrix equality is structural. A locally normalized exact replay compares simplified entrywise differences and passes all four fixtures plus symbolic arbitrary orthogonal slopes.",
+        "finite_action_boundary": "This is not the original six-plaquette third-order Cartan/coframe Euler system and does not establish a finite nonlinear D0 root."
+      },
+      "evidence": [
+        {
+          "ref": "a76ffeb0680827745558c9c864242303b51a9223",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/upstream_check_cubic_ricci_poisson.py",
+          "sha256": "7c935702d78bae518eb0e4e6c8908e2cc6c3c1fc5af3dc0d663dd77f2dc2f78b"
+        },
+        {
+          "ref": "35f3b5e1ddff9fbb9d76fda3f5c8d0fd79275668",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/check_cubic_ricci_poisson_normalized.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/check_cubic_ricci_poisson_normalized.py",
+          "sha256": "127b442f2688d406ebd7fe90b465f1817570e996f07f288adf408c92fe2a23e8"
+        },
+        {
+          "ref": "35f3b5e1ddff9fbb9d76fda3f5c8d0fd79275668",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/normalized_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/normalized_output.txt",
+          "sha256": "dafed2dcf3c656980d7e0590b6ae110ce516c2570ab4ad6d076e2c0b0c53ffe5"
+        },
+        {
+          "ref": "35f3b5e1ddff9fbb9d76fda3f5c8d0fd79275668",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/upstream_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/upstream_output.txt",
+          "sha256": "a1257ccae5b28763ad87cc1b086bb4e93784baf4a8cbb3b843fccb281a016960"
+        },
+        {
+          "ref": "35f3b5e1ddff9fbb9d76fda3f5c8d0fd79275668",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/scope.md",
+          "sha256": "d8e751842d39dbbf108d8d8b6bd4b48087779f1a891dbb51e4cfc961933308ad"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        }
+      ],
+      "reported_state": "The exact upstream source was rerun and its committed entrywise equality check fails at two rotated fixtures. The normalized copy passes all four exact fixtures and a symbolic arbitrary-real orthogonal family. This certifies only the continuum cubic Ricci jet and scalar stencil; no finite all40 third-order root or native-programme application is registered."
+    },
+    {
+      "id": "double-null-cubic-uniform-control",
+      "owner": "independent exact finite-control replay in #379",
+      "statement": "For the perpendicular affine crossed-null profile H=a x, J=b y with the coframe fixed, an exact cubic expansion of the original six-plaquette equations shows that a site-independent cubic connection correction chosen to cancel all 24 link rows at the origin leaves nonzero coframe rows there and nonzero link rows at the adjacent node (x,y)=(1,0), for both [a^2 b] and [a b^2].",
+      "interface": "double-null-cubic-uniform-control-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "A=(1,0), B=(0,1), h=1, fixed affine coframe.",
+        "base_connection": "Full continuum Levi-Civita link exponential plus the published order-ab h/8 Cartan correction.",
+        "correction_chart": "The cubic correction is spatially uniform and is obtained from the exact homogeneous flat Cartan Hessian at the origin.",
+        "formal_ring": "Exact rational arithmetic in Q[a,b]/(a^3,b^3), retaining coefficients [a^2 b] and [a b^2].",
+        "scope_fence": "No spatially varying cubic link correction or lower-order coframe mode is tested; no general no-go follows."
+      },
+      "evidence": [
+        {
+          "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        },
+        {
+          "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/output.txt",
+          "sha256": "4f2c440274449ce8e5837cc9919b415b86317c30665011e3f326b77eacf97aaa"
+        },
+        {
+          "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
+          "sha256": "4a37dd52888e8062dd9073b8961a91c0faca9f805e3264332b923853594cd298"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/check_mixed_cartan_exact.py",
+          "sha256": "05b79065744748d73dfcf55a931cc4d7b4076f70839adb19c5836a1fe892e493"
+        }
+      ],
+      "reported_state": "Exact rational control at h=1: the uniform correction makes all 24 cubic link rows vanish at the origin, but two coframe rows remain; the same correction gives nonzero link rows at (1,0). This is restricted to the fixed-coframe, spatially uniform chart and is not a no-go for spatially varying corrections or physical D0-to-GR."
     }
   ],
   "applications": [

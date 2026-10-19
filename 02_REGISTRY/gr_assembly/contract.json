@@ -172,6 +172,24 @@
       "normalization": "The stated original Euler normalization has mixed link source O(h^4), coframe overlap -h^3(A dot B)/4 in the two transverse diagonal rows, and correction coefficients h/8 from the exact flat Cartan Hessian inverse.",
       "refinement": "Exact finite coefficientwise statement at order a*b, checked at symbolic x,y and four basis pairs; no uniform h-to-zero or higher-amplitude estimate is claimed.",
       "scope": "A first nonlinear mixed-order finite Palatini bootstrap on the original field action. Higher orders, cross-site/global all-order roots, native physical price/admission, Ward transfer, refinement and GR closure remain separate."
+    },
+    "double-null-cubic-continuum-poisson-v1": {
+      "carrier": "The continuum crossed-null metric g_uv=1+HJ/4, g_uu=H, g_vv=J, g_xx=g_yy=-1 with H=a(A dot x), J=b(B dot x), and orthogonal real transverse gradients.",
+      "action": "Continuum Levi-Civita curvature and Ricci tensor through total amplitude degree three; the five-point transverse Laplacian is checked as an exact scalar identity for the cubic correction profiles.",
+      "variations": "Exact symbolic Ricci components in the stated two-null family; no finite link or coframe Euler rows are varied in this result.",
+      "source": "The cubic Ricci source has only uu and vv components. Profile corrections proportional to |A|^2(B dot x)(x^2+y^2) and |B|^2(A dot x)(x^2+y^2) cancel them; the central five-point Laplacian yields the same source exactly for every h.",
+      "normalization": "The verified coefficients are Ric_uu=a^2 b |A|^2(B dot x)/8 and Ric_vv=a b^2 |B|^2(A dot x)/8 before correction, with correction coefficient -1/32.",
+      "refinement": "The scalar stencil identity is exact for these cubic polynomials at every h; no general smooth-profile refinement estimate is included.",
+      "scope": "Continuum Einstein jet through degree three plus a finite scalar Poisson identity. The original finite 24 Cartan plus 16 coframe cubic equations and native complete price remain open."
+    },
+    "double-null-cubic-uniform-control-v1": {
+      "carrier": "The fixed affine crossed-null coframe H=a x, J=b y at h=1, with the exact order-ab Cartan correction from the original six-plaquette theorem.",
+      "action": "The original six-plaquette Lorentz-star field equations expanded through cubic amplitude coefficients using the continuum Levi-Civita links as a trial.",
+      "variations": "All 24 original proper-Lorentz link rows and all 16 original coframe rows are evaluated at the origin and one adjacent transverse node.",
+      "source": "At [a^2 b] and [a b^2], the flat homogeneous 24x24 Cartan block can cancel the 24 link rows at the origin with one site-independent correction, but coframe rows remain there and link rows remain at (x,y)=(1,0).",
+      "normalization": "Exact rational coefficients in Q[a,b]/(a^3,b^3) at h=1; the flat homogeneous Cartan Hessian has determinant 256.",
+      "refinement": "Finite exact coefficient test at two transverse nodes only; no uniform mesh or boundary limit.",
+      "scope": "A negative control for a spatially uniform cubic connection correction with the affine coframe fixed. It does not exclude spatially varying link corrections, coframe modes or a coupled lattice solve."
     }
   },
   "obligations": [
@@ -689,6 +707,18 @@
       "left": "All 40 original field Euler coefficients vanish at mixed order a*b for orthogonal affine gradients after the exact h/8 Cartan correction, with nonzero mixed Lorentz plaquette curvature.",
       "right": "An all-order finite nonzero double-null root or physical D0-to-GR closure.",
       "reason": "The certificate works in Q[a,b]/(a^2,b^2); cubic and higher mixed sources, cross-site compatibility, compulsory native Cost-Info, complete matter/clock/preparation equations, global Ward and recovery are not established."
+    },
+    {
+      "id": "continuum-cubic-poisson-vs-finite-palatiniall40",
+      "left": "A continuum cubic Ricci correction with an exact five-point scalar Poisson identity.",
+      "right": "Third-order stationarity of the original six-plaquette 24+16 finite Euler system.",
+      "reason": "The finite scalar stencil only reproduces the cubic Poisson source; it does not solve finite link/coframe Cartan rows or bind the source to the complete native Cost-Info."
+    },
+    {
+      "id": "uniform-cubic-control-vs-global-no-go",
+      "left": "Failure of a spatially uniform cubic link correction with fixed affine coframe.",
+      "right": "A global obstruction to spatially varying link/coframe corrections or to finite D0 gravity.",
+      "reason": "The exact residual is confined to one correction chart at two nodes; the coupled lattice solve and coframe modes remain open."
     }
   ]
 }
