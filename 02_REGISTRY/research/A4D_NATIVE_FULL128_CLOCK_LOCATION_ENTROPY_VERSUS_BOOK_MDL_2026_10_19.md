@@ -92,3 +92,55 @@ If Book03's physical classical limit means **concentration in Born measure of th
 - A different clock/refinement regime is physically selected and controls both the modal mass and its actual source; choosing a degenerate `beta lambda→0` makes the all-blank mass concentrate but also extinguishes its positive Rayleigh signal under bounded actual source jets. This is not a new adjustable clock.
 
 The decisive same-programme check remains full Book history weight and aggregation (NOT choosing mean vs modal to fit Einstein), actual preparation/clock/work plus all 16+24+CAR signed source rows, original microstructure/resonance/refinement, and raw #216. The result is a **scoped no-concentration theorem and exact native time-position source**, not physical GR closure. `GR_closed=false`.
+
+
+## 6. NEW: native counting and full timed-history MDL pick DIFFERENT "classical" outcomes
+
+A further, sharper theorem follows from the SAME original full128 instrument, without inventing another experiment. The original `A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md` §2 has the ACTUAL repeated total-exit counter by its tilted map `Phi_s=Bmap+e^s Jmap`, while §6 proves the indicators are iid Bernoulli `e_h` on the original strict flat scalar shell. The time-resolved indicator string `I^n=(I_1,...,I_n)` and its native count `K=Σ I_j` are TWO genuinely available deterministic observables of exactly the SAME retained complete 128-round record.
+
+**Literal pathwise finite-source identity on the time-indicator alphabet.** For any particular indicator word `i^n` with exactly k exits,
+```text
+Pr(i^n)=e^k (1−e)^(n−k),
+Pr(K=k)=choose(n,k) Pr(i^n),
+S_phi(i^n)=−log_phi Pr(i^n),
+S_phi(K=k)=−log_phi Pr(K=k).
+```
+Hence for EVERY individual original indicator word, with no averaging,
+```text
+boxed: S_phi(i^n) = S_phi(K=k)+log_phi choose(n,k).        (7)
+```
+This is the exact combinatorial cost of forgetting EVENT TIMES while keeping their number, **conditional on identifying cost with Born surprisal on this indicator readout**. The original FULL 128-letter word may have further label/reference relative entropy and is not falsely equated to the indicator word here. Equation (7) is the pointwise counterpart of the expectation source in (1), with the coefficient of the time-position term unambiguously fixed to 1 by the original probability law, not fitted to GR.
+
+The two most likely outcomes are DIFFERENT at the same actual finite probe:
+
+- Among all **full 128-letter timed histories**, the previous theorem `q0^n>1−q0` makes `blank0^n` the unique global maximum, hence count K=0.
+- Among the actual **native total event counts**, `K∼Bin(n,e)`, whose unique mode is `floor((n+1)e)` when `(n+1)e` is noninteger.
+
+For the pinned original `L=4,h=1/4,n=1024,lambda=288/25` with exact `e=1−q0`, rational-Q(sqrt5) inequalities certify
+```text
+4 < (1025)e < 5,
+count-mode K*=4 (UNIQUE),
+Pr(full timed MAP blank0^1024)=0.012216322302382...,
+Pr(count K=4)=0.192174653906956... .
+```
+Therefore the exact native deterministic counting quotient `π(i^n)=Σ_j i_j` has
+```text
+boxed: argmax [π_* Pr] = 4  !=  π[argmax Pr] = 0.           (8)
+```
+In the full128 case `π` is the genuine original counter of blank0-complement exits. **Maximum-code selection is not stable under the physically available forgetting-to-count readout.** This is a specific counterexample to claiming that one observer-independent classical state follows solely from maximizing probabilities in whichever available readout frame is chosen. It is NOT a no-go for the Book03 memory-class history action, nor an identification of its original M1 forgetting with counting: that exact physical bridge must be proved.
+
+The action of the most likely *count* is `S_phi(K=4)=3.427494044791...` while for any single timed indicator word with four exits the additional clock multiplicity price is exactly `log_phi choose(1024,4)=51.000341330123...` Golden units. The fine all-blank modal price remains `9.153936163646...`.
+
+On a genuine *flat scalar-shell family* at fixed h, n, epsilon the two strict modes have different first sources, without arbitrary normalization:
+```text
+D_lambda S_phi(full chronological MAP)
+ = n e'(lambda)/[(1−e) ln phi] ≈ 0.795467681433,
+D_lambda S_phi(MAP count K=4)
+ = −[4/e−(n−4)/(1−e)] e'(lambda)/ln phi
+ ≈ 0.071578415524.
+```
+This is a rigorous **readout-dependent first-source separator**, not merely a difference of event values. Do **NOT** multiply this scalar-shell count source by the original J23 `Dlambda_tr` as though J23 preserved the scalar-shell condition off the base; the moving full128 channel recursion is still required for that physical off-scalar variation.
+
+The physical GR bridge must now **commute the original forgetting/verification algebra with classical MDL selection and the same-history Cost−Info source** or identify and price the exact noncommutativity. This is a focused native experimental/operational obligation and does not call for any new polynomial Cartan jet.
+
+[Exact count-MAP and first-source checker](sources/d0_physical_binary_return_2026-10-19/check_original_count_forgetting_modal_instability.py), in addition to the existing time-slot entropy checker, verifies the Q(sqrt5) inequalities and both normalized actions. `GR_closed=false`.
