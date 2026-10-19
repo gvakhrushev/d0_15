@@ -1164,12 +1164,30 @@ For example, on the declared independent leaf chart the tangent
 competing modal path derivatives are opposite and nonzero. The lower
 envelope over those tied minimum-code paths has a nonzero one-sided source
 in both directions, so it is not the smooth stationary functional `Gamma`
-on that chart. This is conditional on that leaf tangent belonging to the
-admitted geometric image; if native field constraints remove it, their exact
-image must be proved. Otherwise the capacity argument establishes a mean
-entropy Euler transfer, not Book03 pathwise stationarity. A memory-class
-aggregation could change the functional, but must be derived on this same
-record rather than inserted to recover `Gamma`.
+on that chart. The tangent is now realized by an actual original geometric
+link variation, not merely an abstract leaf-coordinate choice: at the flat
+coframe/link point, vary only `U_0(0)` by the original proper-Lorentz
+generator `X_01=(E_01-E_10) eta`. The exact six-plaquette density gives
+`D f_0=+h^-2`, `D f_(-e_1)=-h^-2`, and zero in every other cell. On any
+covered address cut with leaves in both cells, `e_i=p^2(1+t^2 f_x)` therefore
+has two tied modal branches with opposite nonzero slopes. Writing
+`A=D Gamma[V]` and
+`d=((phi-log(phi))/log(phi))*p^2*t^2/h^2>0`, their slopes are `A+d` and
+`A-d`; hence the one-sided derivatives of the pathwise minimum `m` obey
+`D^+m(V)+D^+m(-V) <= -2d < 0`, for any value of `A` and any cell weights.
+The covered full 40-variable AF geometric carrier does not remove this
+direction. An additional native restriction excluding it would need its own
+execution theorem. Otherwise the capacity argument establishes a mean-entropy Euler
+transfer, not Book03 pathwise stationarity. A memory-class aggregation could
+change the functional, but must be derived on this same record rather than
+inserted to recover `Gamma`.
+
+The exact local calculation and its scope are recorded in
+[the capacity/modal link-tangent result](A4D_CAPACITY_MODAL_ACTUAL_LINK_TANGENT_OBSTRUCTION_2026_10_19.md),
+with a reproducible symbolic checker. This kills only the direct identification
+of the capacity mean with the Book03 minimum-code action on these pointer
+histories; it is not a no-go for the full algebra-valued Book sum or for a real
+same-run preparation/clock/work source that has not yet been computed.
 
 The downstream full128 audit in [Draft #384](https://github.com/gvakhrushev/d0_15/pull/384)
 sharpens the distinction on the literal original instrument. Conditional on
