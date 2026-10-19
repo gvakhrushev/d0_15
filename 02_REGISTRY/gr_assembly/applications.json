@@ -684,6 +684,53 @@
         }
       ],
       "reported_state": "At the selected cubic particular solution, the 840 by 840 quartic correction system is exactly inconsistent, with coefficient rank 580 and augmented rank 581. The 134 free modes in each cubic coefficient remain untested, so this is not a general obstruction to crossed-null finite roots or a positive D0-to-GR derivation."
+    },
+    {
+      "id": "double-null-finite-mixed-quartic-euler-jet",
+      "owner": "independent exact finite replay in #379",
+      "statement": "For H=a*x, J=b*y at h=1 on the original six-plaquette action, there exist site-dependent degree-at-most-three cubic corrections and degree-at-most-five [a^2*b^2] corrections for all 24 Lorentz links and 16 coframe components that make all 40 original Euler rows vanish identically in x,y at every checked coefficient in Q[a,b]/(a^3,b^3).",
+      "interface": "double-null-cubic-free-mode-quartic-jet-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart A=(1,0), B=(0,1), with H=a*x and J=b*y.",
+        "original_action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing; the continuum Levi-Civita links are only the initial trial and the published order-a*b Cartan correction is retained.",
+        "formal_ring": "Exact rational coefficients in Q[a,b]/(a^3,b^3); the replay checks all lower retained coefficients and [a^2*b^2], but not the pure [a^3] or [b^3] coefficients.",
+        "cubic_systems": "Both 400-equation cubic systems have exact coefficient rank 266 and augmented rank 266, with 134 free parameters apiece.",
+        "free_mode_selection": "The selected [a^2*b] coframe modes are e_2_1_1_0_1_2=1/64 and e_2_1_1_0_0_3=-1/64; the other cubic free modes are zero in the selected joint RREF solution.",
+        "quartic_chart": "All 24 Lorentz-link and 16 coframe corrections at [a^2*b^2] are independent site-dependent spatial polynomials of total degree at most five, evaluated at their own and shifted plaquette sites.",
+        "joint_system": "The exact joint system has 840 equations and 1108 unknowns; coefficient rank and augmented rank are both 582, with the RHS column non-pivot. The selected solution has two nonzero cubic free modes and 166 nonzero quartic coefficients.",
+        "combined_replay": "All 40 original Euler rows vanish identically in x,y at the checked lower coefficients and at [a^2*b^2] after simultaneous substitution.",
+        "scope_fence": "This is one finite mixed-amplitude jet at h=1 for a single orthogonal slope pair. It is not an all-order root, arbitrary-slope family, refinement theorem, sourced matter solution or native physical selector."
+      },
+      "evidence": [
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "sha256": "36e6312770341bddb44c349c2025e7a3b385bcb7fa6a31f0f68cc778d854e574"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/output.txt",
+          "sha256": "d8abc3907ac8a50ee33ff74c09aaccfa84661b3d325781ce18913c11fa39ef4b"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
+          "sha256": "7dd2736ddd5d28a391bc21a4124f6d74deef898d495cad9b1778c8dffbc845f5"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        }
+      ],
+      "reported_state": "The full exact cubic solution families were varied jointly with quartic corrections. An RREF solution with two specified cubic coframe modes and 166 quartic coefficients passes a simultaneous symbolic replay of all 40 original Euler rows through the mixed [a^2*b^2] coefficient. This remains scoped finite evidence and does not discharge native physical obligations."
     }
   ],
   "applications": [

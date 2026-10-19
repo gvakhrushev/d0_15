@@ -226,6 +226,15 @@
       "normalization": "Exact rational quartic-amplitude coefficient at h=1; each correction has independent coefficients against all x^i*y^j with i+j<=5.",
       "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
       "scope": "An obstruction only around the selected zero-free-parameter cubic representative and this degree-at-most-five correction chart. Other cubic representatives, non-polynomial corrections and native physical selection remain open."
+    },
+    "double-null-cubic-free-mode-quartic-jet-v1": {
+      "carrier": "The perpendicular crossed-null profile H=a*x, J=b*y on the original h=1 lattice.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing, with the published order-a*b Cartan correction.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows are expanded at symbolic transverse coordinates.",
+      "source": "The 840-equation [a^2*b^2] system jointly varies all 268 free cubic modes and all degree-at-most-five quartic corrections; exact rank 582 with no augmented RHS pivot gives a solution, followed by a combined all-40-row replay.",
+      "normalization": "Exact rational coefficients in Q[a,b]/(a^3,b^3); the selected solution uses two named [a^2*b] coframe modes and 166 nonzero quartic correction coefficients.",
+      "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
+      "scope": "A finite mixed-amplitude jet through [a^2*b^2] on one perpendicular-slope chart. Pure [a^3] and [b^3], higher orders, arbitrary slopes, global roots and physical D0 selection remain open."
     }
   },
   "obligations": [
