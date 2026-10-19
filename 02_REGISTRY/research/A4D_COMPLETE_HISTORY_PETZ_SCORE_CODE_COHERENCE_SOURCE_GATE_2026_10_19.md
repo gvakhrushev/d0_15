@@ -122,3 +122,51 @@ All fields are actual independent coframe16/link24/CAR matter/oldRIGHT/AF prepar
 **Executable:** \`sources/d0_history_source_sufficiency_2026-10-19/check_full_record_score_code_coherence.py\`; uses exact native Golden p, the actual conditional nonblank port/code values from original full128, analytic finite source, strict Fisher equality and quantum hostile coherences; no original full128 Kraus array is re-created by this bounded consumer.
 
 **External mathematics:** D. Petz, equality in relative-entropy data processing, and finite-dimensional sufficiency/recovery (e.g. Carlen–Vershynina, arXiv:1710.02409; and the finite quantum recovery theorem of Petz). Their mathematical guarantees do not select D0's physical instrument or Book price.
+
+
+## 7. NEW QUANTITATIVE REFINEMENT BRIDGE: when a small Petz/Code loss really gives a small GR first source
+
+An exact value equality is the best physical result, but original Golden/G/CNOT compilers may only approximate a full retained sufficient channel. To avoid the false inference "small discarded information ⇒ small Einstein source", let the actual source-residual for a **physically selected relative-excess component** be
+\[
+\Delta_h(y)=D_\varphi(\rho_h(y)\Vert\sigma_h(y))
+-D_\varphi(\Phi_h\rho_h(y)\Vert\Phi_h\sigma_h(y))\ge0.
+\]
+Both physical states/reference, the actual coarse readout and the complete old archive are on ONE carrier; \(\Delta_h\) is a real field FUNCTION, not an ad hoc new action. Assume it is C² on a two-sided genuine admissible field ball \(B(y,r_h)\), with
+\[
+0\le\Delta_h(z)\le\varepsilon_h,\qquad
+|D^2\Delta_h(z)[V,V]|\le M_h\|V\|^2
+\]
+throughout that ball. Then for every unit admitted tangent V and every \(0<t\le r_h\), the two-sided Taylor inequality plus \(\Delta_h(y\pm tV)\ge0\) imply the exact **source-stability estimate**
+\[
+\boxed{|D\Delta_h(y)[V]|
+\le\frac{\varepsilon_h}{t}+\frac{M_h t}{2}.}\tag{8}
+\]
+If \(\sqrt{2\varepsilon_h/M_h}\le r_h\), optimize t:
+\[
+\boxed{\|D\Delta_h(y)\|_*\le\sqrt{2\varepsilon_h M_h}.}\tag{9}
+\]
+This is a deterministic elementary smooth-calculus theorem; Petz data processing supplies positivity of the actual *relative-entropy* loss, not the differentiability/curvature bounds, which are separate original source owners. The formula is valid without selecting an arbitrary gravitational metric, only the actual admitted field norm.
+
+**Refinement consumer.** To ensure a **single total normalized \(h^{-2}\) first-source error** \(h^{-2}\|D\Delta_h\|_*\to0\), it suffices that
+\[
+\boxed{\varepsilon_h M_h=o(h^4),\quad
+\sqrt{2\varepsilon_h/M_h}\le r_h.}\tag{10}
+\]
+On a raw grid of \(O(h^{-4})\) independent site terms with the \(\ell^1\) source norm **sum of raw site absolute covectors divided by \(h^2\)**, the conservative independent per-site sufficient condition is \(\varepsilon_h^{\rm site}M_h^{\rm site}=o(h^{12})\), with compatible two-sided admissible radii. If the physical owner uses a different summed/weak norm, apply (8)–(9) to THAT norm; never transplant \(h^{-2}\) or a per-site estimate without specifying the carrier and signal normalization.
+
+The curvature hypothesis is essential. The strictly nonnegative analytic fixture \(\Delta_h(y)=h^4(1+\sin(y/h^4))\) satisfies \(0\le\Delta_h\le2h^4\to0\) uniformly while \(\Delta_h'(0)=1\), so \(h^{-2}\Delta_h'(0)\to\infty\). Its second derivative is unbounded at rate \(h^{-4}\). Small KL VALUES alone give no source convergence or full Einstein Euler proof.
+
+### 7.1. Original Golden hidden-port signal stays finite under the actual native rare-event clock
+
+The actual owned original full128 strict scalar first-shell gives \(\epsilon_h=p^2h^2/64\), a genuine event probability \(e_h=\epsilon_h\lambda_h-\tfrac14(\epsilon_h\lambda_h)^2\), and controlled n-tick regime \(n_h\epsilon_h\to\beta>0\). The ORIGINAL Golden port conditional code mismatch is exactly \(p^3\) per exit. On the declared full relative-excess price class with the original port-forgetting map, the hidden code contribution is therefore
+\[
+\Delta_h^{\rm port}=n_h p^3 e_h
+\longrightarrow p^3\beta\lambda,
+\quad
+D_\lambda\Delta_h^{\rm port}
+=n_hp^3\epsilon_h\Bigl(1-\frac{\epsilon_h\lambda_h}{2}\Bigr)
+\longrightarrow p^3\beta>0.\tag{11}
+\]
+The single-tick O(h²) size is NOT a refinement suppression; the full genuine number of native ticks is O(h^{-2}). At the already used original n=64L² schedule, \(n\epsilon=p²\), so the full limiting \(\lambda\)-source equals \(p^5=\varphi^{-5}=0.090169943749\ldots\) golden units for this **declared scalar first-shell parameter**. It cannot be transplanted unchanged to the offscalar J23/42-field Euler without the original full source map. It is nevertheless an exact physical-owner-supported COUNTERCONTROL to discarding port code when compressing a long native record.
+
+**Decision:** Either retain the original port label and the other score/coherent sufficient responses with their actual Book code and flags, or carry the explicit nonzero \(\Delta_h^{\rm port}\) and its REAL source through the one full selected action. The missing GR source cannot be made small by declaring any O(h²) per-tick difference to vanish.
