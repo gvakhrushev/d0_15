@@ -194,7 +194,8 @@ def split_pointer_on_history(probabilities, pointer_index,
         else:
             split.extend(branch)
     require(selected is not None, "target flag history exists")
-    require(len(split) == 209, "one branch-local Golden refinement")
+    require(len(split) == len(probabilities) * 13 + 1,
+            "one branch-local Golden refinement")
     require(all(q[0] > 0 for q in split), "positive branch-local fine outcomes")
     total = tuple(sp.simplify(sum(q[i] for q in split)) for i in range(4))
     require(total == (sp.S.One, sp.S.Zero, sp.S.Zero, sp.S.Zero),
@@ -377,6 +378,95 @@ def composition_defect_check():
     return summary
 
 
+def four_gate_composition_defect_check():
+    """Tie the C2 face source scale to one vs four sequential Julia successes."""
+    summary = []
+    cases = (("J", BAR_N3, J_MINUS_INDEX),
+             ("B", BAR_N2, B_MINUS_INDEX))
+    for label, opposite_null, pointer_index in cases:
+        gates = ((opposite_null, "b", -1), (N2, "a", -1),
+                 (opposite_null, "b", 1), (N2, "a", 1))
+        group_word = (I4, ZERO4, ZERO4, ZERO4)
+        for generator, variable, sign in gates:
+            group_word = jet_product(
+                group_factor_jet(generator, variable, sign), group_word
+            )
+
+        direct_success, direct_failure = direct_julia_instrument(group_word)
+        direct_branches = (("success", direct_success),
+                           ("failure", direct_failure))
+        assert_complete_kraus_jets(direct_branches, f"direct four-edge {label}")
+        direct_records = record_probability_jets(
+            direct_branches, f"direct four-edge {label}"
+        )
+        sequential_branches = []
+        for failures in product((False, True), repeat=4):
+            word = (I4, ZERO4, ZERO4, ZERO4)
+            for (generator, variable, sign), failed in zip(gates, failures):
+                word = jet_product(
+                    factor_jet(generator, variable, sign, failed), word
+                )
+            sequential_branches.append((failures, word))
+        assert_complete_kraus_jets(
+            sequential_branches, f"sequential four-edge {label}"
+        )
+        sequential_records = record_probability_jets(
+            sequential_branches, f"sequential four-edge {label}"
+        )
+        direct_mass = branch_mass(direct_records, "success")
+        sequential_mass = branch_mass(
+            sequential_records, (False, False, False, False)
+        )
+        require(direct_mass == tuple(64 * q for q in sequential_mass),
+                f"four-edge {label} direct/sequential all-success mass ratio is 64")
+        defect = tuple(sp.simplify(direct_mass[i] - sequential_mass[i])
+                       for i in range(4))
+        require(defect == (sp.Rational(63, 256), 0, 0, 0),
+                f"four-edge {label} measurable composition defect")
+
+        direct_events = branch_outcomes(direct_records, "success")
+        sequential_events = branch_outcomes(
+            sequential_records, (False, False, False, False)
+        )
+        require(all(tuple(sp.simplify(qd[i] - 64 * qs[i]) for i in range(4))
+                    == (sp.S.Zero,) * 4
+                    for qd, qs in zip(direct_events, sequential_events)),
+                f"all 13 four-edge {label} effects resolve the factor-64 defect")
+        direct_pointer = direct_events[pointer_index]
+        sequential_pointer = sequential_events[pointer_index]
+        require(direct_pointer[3] == -SQRT2 / 96
+                and sequential_pointer[3] == -SQRT2 / 6144,
+                f"four-edge {label} pointer mixed jets exhibit the factor 64")
+
+        direct_fine, _ = split_pointer_on_history(
+            direct_records, pointer_index, "success"
+        )
+        sequential_fine, _ = split_pointer_on_history(
+            sequential_records, pointer_index
+        )
+        direct_raw = entropy_mixed_jet(
+            [q for _, branch in direct_records for q in branch]
+        )
+        sequential_raw = entropy_mixed_jet(
+            [q for _, branch in sequential_records for q in branch]
+        )
+        require(direct_raw == sequential_raw == 0,
+                f"unmarked four-edge {label} complete mixed sources vanish")
+        direct_increment = sp.simplify(
+            entropy_mixed_jet(direct_fine) - direct_raw
+        )
+        sequential_increment = sp.simplify(
+            entropy_mixed_jet(sequential_fine) - sequential_raw
+        )
+        require(sp.simplify(direct_increment + C_SH) == 0
+                and sp.simplify(sequential_increment + C_SH / 64) == 0,
+                f"four-edge {label} Golden source increments differ exactly by 64")
+        require(sp.simplify(direct_increment - 64 * sequential_increment) == 0,
+                f"four-edge {label} Golden source scale is exactly the composition factor")
+        summary.append((label, defect, -C_SH, -C_SH / 64))
+    return summary
+
+
 def face_geometry_check():
     def commutator_curvature(g1, g2):
         require(g1 * g2 - g2 * g1 != ZERO4, "noncommuting gate pair")
@@ -547,6 +637,7 @@ def run():
         N2, BAR_N2, B_MINUS_INDEX, h, face_b, "B"
     )
     composition = composition_defect_check()
+    four_edge_composition = four_gate_composition_defect_check()
 
     print("PASS [N2,barN3]=J and original crossed-null plaquette coefficient=-h^2")
     print("PASS 16 fresh-flag histories x 13 complete POVM outcomes = 208 coarse outcomes")
@@ -567,6 +658,9 @@ def run():
     print("PASS each of the 13 all-success effects has the exact factor-four probability defect")
     for pair, order, defect in composition:
         print(f"COMPOSITION {pair} {order}: all-success probability defect jet = {sp.sstr(defect)}")
+    for pair, defect, direct_source, sequential_source in four_edge_composition:
+        print(f"FOUR-EDGE {pair}: all-success defect={sp.sstr(defect)}; Golden source increment direct/sequential={sp.sstr(direct_source)} / {sp.sstr(sequential_source)}")
+    print("SCOPE: the common factor 64 in the two-face match exactly compensates this four-success attenuation, but native D0 has not selected it")
     print("SCOPE: defect concerns this T(U)=U/2 Julia candidate; it is not a no-go for other native D0 actuation")
 
 

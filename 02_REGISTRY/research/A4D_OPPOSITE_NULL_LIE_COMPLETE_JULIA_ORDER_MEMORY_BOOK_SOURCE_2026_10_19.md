@@ -498,6 +498,22 @@ in the coefficient order \((1,a,b,ab)\). Thus the composition defect survives
 the full measurable quotient; it is not a missing-failure or
 normalization error.
 
+
+The same test on the actual four-edge commutator words used in §5.4 is
+stronger. A direct dilation of the composed plaquette has success operator
+\(P/2\), whereas four sequential fresh-flag dilations have all-success
+operator \(P/16\). At the flat point the all-success masses are \(1/4\) and
+\(1/256\), with defect \(63/256\); every one of the 13 positive tester
+outcomes has direct/sequential probability-jet ratio exactly 64. For the
+selected \(J^-\) or \(B^-\) outcome, the crossed-null mixed probability jets
+are \(-\sqrt2/96\) and \(-\sqrt2/6144\), respectively. The unmarked full
+mixed Shannon sources vanish, while the isolated Golden-refinement
+increments are exactly \(-c_{\rm Sh}\) and \(-c_{\rm Sh}/64\). Hence the
+factor 64 in the §5.4 face-matching scale exactly compensates the four-step
+success attenuation of this sequential instrument. The comparison scale
+would differ for a single direct product dilation and remains physically
+unselected.
+
 This is a defect of the specified \(T(U)=U/2\) Julia implementation, not a
 no-go for native D0 or for a different physically derived actuation. It
 shows why the §5.4 local source match cannot yet be promoted to a physical
