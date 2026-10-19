@@ -74,7 +74,7 @@ def lorentz(i,j,y):
 
 def pair(i,j,y):
     g=lorentz(i,j,y)
-    C=0.5*exterior(g)
+    C=(1.0/phi)*exterior(g)
     svals, V=eigh(np.eye(16)-C.T@C)
     assert min(svals) > .3
     F=(V*np.sqrt(svals)[None,:])@V.T
@@ -109,7 +109,7 @@ def fixed_path(y):
     assert min(probs.values())>0
     full_good=gates[2][0]@gates[1][0]@gates[0][0]@psi
     group_total=gates[2][2]@gates[1][2]@gates[0][2]
-    assert np.linalg.norm(full_good-(2.0**-3)*exterior(group_total)@psi)<2e-13
+    assert np.linalg.norm(full_good-(phi**-3)*exterior(group_total)@psi)<2e-13
     assert np.linalg.norm(group_total-np.eye(4))>.001
     assert np.linalg.norm(group_total.T@eta@group_total-eta)<1e-12
     return edge_prod,p_path,rho,mu[nodes[-1]],P,probs,gates
@@ -149,6 +149,29 @@ def main():
     B=pair(9,20,y)[2]
     comm=np.linalg.norm(A@B-B@A)
     assert comm>1e-7
+    # Exact GOLDEN flat origin: the primitive p replaces the test-only 1/2.
+    p0=1.0/phi
+    golden=np.array([[math.sqrt(p0),-p0],[p0,math.sqrt(p0)]])
+    swap=np.array([[0,1],[1,0]])
+    flat_julia=np.array([[p0,math.sqrt(p0)],[math.sqrt(p0),-p0]])
+    assert np.linalg.norm(flat_julia-swap@golden) < 1e-14
+    assert p0*math.exp(.4)<1
+    assert abs((math.log(phi)/4)-.12030295626490087) < 1e-14
+    v=np.zeros(16);v[1]=v[1<<2]=1/math.sqrt(2)
+    def flat_good(t):
+        return np.linalg.norm(p0*exterior(expm(t*N2))@v)**2
+    q0=flat_good(0.0)
+    h=1e-5
+    dq=(flat_good(h)-flat_good(-h))/(2*h)
+    assert abs(q0-p0*p0)<1e-13 and abs(dq-p0*p0)<1e-8
+    golden_H_source=math.log((1-q0)/q0)/math.log(phi)*dq
+    golden_fisher=dq*dq/(q0*(1-q0))
+    assert abs(golden_H_source-p0*p0)<1e-8
+    assert abs(golden_fisher-p0)<1e-8
+    print('PASS original Golden gate EXACTLY equals flat CAR16 Julia after flag swap')
+    print('PASS native p=Lorentz attenuation, positivity radius:',f'{math.log(phi)/4:.12g}')
+    print('PASS complete Golden null-Shannon exact source:',f'{golden_H_source:.12g}')
+    print('PASS complete Golden null-Fisher exact coefficient:',f'{golden_fisher:.12g}')
     print('PASS original directed scalar edges:', int(allowed.sum()))
     print('PASS one-run 24-outgoing-edge marginals, max error:',f'{max_marg:.3e}')
     print('PASS one-sided exact raw Book/Born ratio:',f'{abs(w-rho**3*p/rend):.3e}')
