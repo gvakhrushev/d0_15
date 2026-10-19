@@ -138,6 +138,42 @@ const fisherCostInfo=[
   [-costFisher,costFisher]
 ];
 
+
+// Exact original full K9/11/13 path-count Perron growth: at each n
+// Z_n = 1_(start a0)^T (p A)^n 1. Since K=p A is primitive
+// (both 2- and 3-return cycles), Z_(n+1)/Z_n -> lambda=p*rho.
+// If a PHYSICAL common-clock complete law compares consecutive n
+// with field-INDEPENDENT known priors alpha_n, the ratio of their
+// absolute depth marginals estimates lambda without a NEW meter:
+//    lambda = lim (alpha_n/alpha_(n+1)) q(n+1)/q(n).
+// Existing Golden/GNS mathematical levels do NOT prove native scene
+// G0 actually retains such a compulsory clock mixture.
+const countsAll=[1n];
+let tails=Array(N).fill(0n);tails[0]=1n;
+for(let n=1;n<=24;n++){
+  const next=Array(N).fill(0n);
+  for(let u=0;u<N;u++)if(tails[u])for(let v of neighbors[u])next[v]+=tails[u];
+  tails=next;
+  countsAll.push(tails.reduce((s,x)=>s+x,0n));
+}
+const originalRho=(function(){
+  let lo=20,hi=24;
+  for(let j=0;j<90;j++){
+    const m=(lo+hi)/2;
+    if(m**3-359*m-2574>0)hi=m;else lo=m;
+  }
+  return (lo+hi)/2;
+})();
+const nativeLambda=p*originalRho;
+const perronRatios=[4,8,12,16,20,23].map(n=>({
+  depth:n,
+  exactTotalPaths:String(countsAll[n]),
+  ratioRawBookDepths:p*Number(countsAll[n+1])/Number(countsAll[n]),
+  nativeAbsolutePerronLambda:nativeLambda
+}));
+require(Math.abs(perronRatios.at(-1).ratioRawBookDepths-nativeLambda)<1e-4,
+  "absolute original pressure not recovered from true all-path depth ratio");
+
 const kthFlatControls=[];
 for(let m of [2,3,4,5]){
   const c=t=>t**(2*m), h=.2;
@@ -182,6 +218,9 @@ const result={
     extraCostIdentity:"log_phi(odds(c)/odds(0))=-c for adjacent depths",
     trueNormalizedAllOutcomes:true,
     samples:clockSamples,
+    PerronDepthRatios:perronRatios,
+    nativeAbsoluteLambda:nativeLambda,
+    PerronRecoveryAssumptions:"true shared clock-depth marginal + known relative preparation; original K positive primitive; physical G0 clock law not proved",
     exactLengthVariance:varLength,
     exactUniformCostFisher:costFisher,
     primitiveGoldenOneTickCostFisher:primitiveGoldenLengthFisher,
