@@ -398,7 +398,7 @@
         "geometry": "The continuum metric uses H=a(A dot x), J=b(B dot x), g_uv=1+HJ/4 and a flat transverse plane.",
         "orthogonality": "A dot B=0, parameterized symbolically by A=(p,q), B=kappa*(-q,p).",
         "correction": "H is shifted by -a^2 b |A|^2(B dot x)(x^2+y^2)/32 and J by -a b^2 |B|^2(A dot x)(x^2+y^2)/32.",
-        "checker_status": "The upstream checker at a76ffeb0680827745558c9c864242303b51a9223 exits nonzero on two rotated fixtures because its SymPy matrix equality is structural. A locally normalized exact replay compares simplified entrywise differences and passes all four fixtures plus symbolic arbitrary orthogonal slopes.",
+        "checker_status": "The historical checker at a76ffeb0680827745558c9c864242303b51a9223 failed two rotated fixtures because SymPy matrix equality was structural. The fixed upstream checker at current #334 head 83537e03543ca9b08a7408fcf786e2f3c98a3d3c simplifies entries before comparison and passes all four fixtures, the symbolic arbitrary-orthogonal family, and its additional area-trace controls. The independent normalized replay also passes.",
         "finite_action_boundary": "This is not the original six-plaquette third-order Cartan/coframe Euler system and does not establish a finite nonlinear D0 root."
       },
       "evidence": [
@@ -427,19 +427,31 @@
           "sha256": "a1257ccae5b28763ad87cc1b086bb4e93784baf4a8cbb3b843fccb281a016960"
         },
         {
-          "ref": "35f3b5e1ddff9fbb9d76fda3f5c8d0fd79275668",
+          "ref": "0eaf637bf4b631587e0f72ce23f12901317493c1",
           "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/scope.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/scope.md",
-          "sha256": "d8e751842d39dbbf108d8d8b6bd4b48087779f1a891dbb51e4cfc961933308ad"
+          "sha256": "e6a26d575a73df3d77241c4253efb68feb8de7f1a4063896ff4f1c304cc8d27e"
         },
         {
           "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
           "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
           "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
           "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        },
+        {
+          "ref": "83537e03543ca9b08a7408fcf786e2f3c98a3d3c",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/check_cubic_ricci_poisson_83537.py",
+          "sha256": "248177ab783a38d9dee8c04ad91e9948dc301cdff1ce2ae8571f17e145133d55"
+        },
+        {
+          "ref": "0eaf637bf4b631587e0f72ce23f12901317493c1",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/output_83537.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/output_83537.txt",
+          "sha256": "1fff1391bea0cf3b95616b5cc292255b4826e39d120f5932d91d5d71f5d4fa6b"
         }
       ],
-      "reported_state": "The exact upstream source was rerun and its committed entrywise equality check fails at two rotated fixtures. The normalized copy passes all four exact fixtures and a symbolic arbitrary-real orthogonal family. This certifies only the continuum cubic Ricci jet and scalar stencil; no finite all40 third-order root or native-programme application is registered."
+      "reported_state": "The historical a76 checker failure was fixed upstream: the checker at current #334 head 83537e03543ca9b08a7408fcf786e2f3c98a3d3c passes four exact fixtures, the arbitrary orthogonal family and added area-trace controls; the independent normalized replay also passes. This result remains a continuum cubic Ricci jet plus exact scalar finite-difference identity. It does not establish the finite 40-row cubic system or compulsory native Cost-Info."
     },
     {
       "id": "double-null-cubic-uniform-control",
