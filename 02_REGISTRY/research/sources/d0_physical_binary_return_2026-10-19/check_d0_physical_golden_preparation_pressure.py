@@ -108,3 +108,61 @@ print("PASS: task-pressure unique optimizer at mu and binary Einstein-CAR envelo
 print("PASS: complete normalized Born log-partition has zero source")
 print(f"DEBUG: dmean={dmean:.12f}, dcode={dpres:.4e}, field={source:.12f}, envelope={env:.12f}")
 print("SCOPE: NOT proof of native physical Book action, actuator, clock or GR closure")
+
+
+# CROSS-OWNER: actual full SECOND AF-record operator preparation cost, not F_task.
+# See A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md equations (2)-(8).
+def native_conditional_f(j):
+    e=p*p
+    root=sqrt(1-e)
+    b=sqrt(e)
+    w=p**((3-j)/2)
+    v=p**((4-j)/2)
+    m0=(3,2)[j]
+    m1=(2,1)[j]
+    probs=[(w*root+b/sqrt(2))**2,(w*root-b/sqrt(2))**2]
+    probs += [w*w*(1-e)]*(m0-2)
+    probs += [v*v*(1-e)]*m1
+    ref=[p**(3-j)]*m0 + [p**(4-j)]*m1
+    assert abs(sum(probs)-1)<1e-13
+    assert abs(sum(ref)-1)<1e-13
+    return sum(x*log(x/y)/ell for x,y in zip(probs,ref))
+
+f0=native_conditional_f(0)
+f1=native_conditional_f(1)
+assert abs(f0-1.101848122743383)<1e-12
+assert abs(f1-1.248281091336616)<1e-12
+
+types,old_mu,old_cost=original_af(3)
+fvals=[f0 if typ==0 else f1 for typ in types]
+def actual_second_af_price(nu):
+    return 6+sum(v*log(v/u)/ell+v*f for v,u,f in zip(nu,old_mu,fvals))
+
+Zprep=sum(u*exp(-ell*f) for u,f in zip(old_mu,fvals))
+opt=[u*exp(-ell*f)/Zprep for u,f in zip(old_mu,fvals)]
+assert abs(sum(opt)-1)<1e-13
+assert abs(opt[0]/opt[-1]-(old_mu[0]/old_mu[-1])*exp(-ell*(f0-f1)))<1e-12
+assert actual_second_af_price(opt)<actual_second_af_price(old_mu)
+ready_source_factor=opt[0]/old_mu[0]
+assert ready_source_factor>0
+assert abs(ready_source_factor-1.0187505747775942)<1e-10
+# type1 source is inactive, type0 has uniform factor:
+assert abs(sum(v*r for v,r in zip(opt,rates))
+           -ready_source_factor*sum(v*r for v,r in zip(old_mu,rates)))<1e-11
+
+# A tempting sum of two full prices (NOT an admitted D0 whole-word action)
+# exactly cancels entropy and is linear in the normalized preparation:
+for t in (-1e-6,0.,1e-6):
+    nu=old_mu.copy()
+    aa=types.index(0);bb=types.index(1)
+    nu[aa]+=t;nu[bb]-=t
+    lhs=actual_second_af_price(nu)+joint_entropy(nu,[gstar]*len(nu))
+    rhs=6+sum(v*(c+f) for v,c,f in zip(nu,old_cost,fvals))+h(gstar)
+    assert abs(lhs-rhs)<2e-12
+assert abs((-1+f0-f1)+1.146432968593233)<2e-12
+
+print(f"PASS: second native AF f0={f0:.12f}, f1={f1:.12f}")
+print(f"PASS: native AF-optimal READY source factor={ready_source_factor:.12f}>0")
+print("PASS: source-bearing type0 Einstein/CAR ratio invariant under native optimized prep")
+print("PASS: naive sum of second-AF full price and full pointer mean is linear, not stationary")
+print("SCOPE: neither this naive sum nor F_task is claimed as full compulsory D0 action")
