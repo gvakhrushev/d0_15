@@ -72,6 +72,50 @@ No fitted cell weights or artificially new total probability is introduced. For 
 **Actual bounded enumeration (unaltered original w and X_w):**
 at (n,L)=(20,4), 10946 exact-cost native histories cover all256 cells with min29/max78, so 7424 original histories are uniformly activated while 3522 remain on baseline; native raw prefix mass activated =0.490778081..., PF READY-pair activated mass =0.2317.... At (28,8), 514229 native words cover all4096 cells with min45/max232, 184320 activated, 329909 preserved but unactivated; native prefix mass activated=0.2593692789815 and PF pair mass =0.12245.... The exact fraction tends to 1 only for larger n relative to L, not at these small fixtures.
 
+### 1.2. The WHOLE J₂ is a quotient under original within-cell LEFT permutations — all orders, not only its first source
+
+The finite balanced construction is **not a hidden choice of special microscopic outcomes**. Suppose \(S=\{S_x\}\) and \(S'=\{S'_x\}\) are TWO different selections of \(k\le m=\min_x N_{n,x}\) ACTUAL cost-n words per original native macro cell. Each selected word supplies the SAME two original suffixes wFR,wRF, with the SAME terminal type0 and the SAME finite regular defining LEFT multiplicity. Let \(U_x\) be ANY permutation of the original *word labels within the same C_x* mapping \(S_x\) to \(S'_x\); it acts on their two READY suffixes by
+\[
+U_x|wFR\rangle=|U_x(w)FR\rangle,\quad
+U_x|wRF\rangle=|U_x(w)RF\rangle
+\]
+and can be extended to a unitary of the original full old LEFT defining block, with identity on the retained RIGHT/reference and untouched pending/complement histories. The group \(\prod_x S_{N_{n,x}}\) is a group of **mathematical within-cell history relabelings**, not a claim that every such permutation is a zero-cost native physical gate.
+
+On the ORIGINAL full active RETURN space, all original two-Golden-tick feedback pencils are block diagonal in these old LEFT labels and depend on label w only through its true site x(w) and whether it was activated. Their repeated full512/528 etc per-label scene blocks have the SAME dimension and default baseline for every word of the same terminal type. Thus the appropriate lift \(\mathcal U\) of U_x to the returned LEFT×scene carrier satisfies
+\[
+\boxed{
+\mathcal F_{S'}(\vartheta)=\mathcal U\mathcal F_S(\vartheta)\mathcal U^\dagger
+}
+\tag{5a}
+\]
+for EVERY field configuration \(\vartheta\) in the strict positive operator chart, for BOTH controlled query choices (LOCAL \(f_x,q_x\), or MOVING-VOLUME \(r_x,q_x^{vol}\) sampled at their common macro representative c_x). The original complete failure/identity-complement blocks and old RIGHT tensor factors remain. If the full underlying actual unitary preparation differs when switching U_x, (5a) is a precise **RETURN-PENCIL conjugacy/spectral price** theorem, not an assertion that the two physical execution paths have equal code/work prices.
+
+Taking the unchanged original ordinary trace-log,
+\[
+J_{2,S'}(\vartheta)=
+-\operatorname{Tr}\log(I-z\mathcal F_{S'})
+=-\operatorname{Tr}\log(I-z\mathcal F_S)=J_{2,S}(\vartheta)
+\tag{5b}
+\]
+EXACTLY **OFF SHELL**, at any fixed native h, not merely at Einstein roots. Hence ALL the true return-price field derivatives agree to ALL orders, including full Hessian and cubic vertices, for any two selections with the SAME site counts k, even when their individual raw F/R history labels differ. This is an operator-spectrum quotient of a real finite complete record, not erasure of the old raw histories.
+
+More explicitly, for either fixed local or moving-volume operands \(f_x(\vartheta),q_x(\vartheta)\) common per macroscopic cell and the actual one-leaf two-tick scene price \(j_\vartheta(f,q)\) (including BOTH \(Q=1-zB\) and \(R=1-z[\lambda(E)+(1-\lambda(E))B]\)), the FULL detector price satisfies
+\[
+\boxed{
+J_{2,S}(\vartheta)-J_{\rm baseline}
+=\nu K\,\omega_{n,N}\,k
+  \sum_{x\in\Lambda_L}\big[j_\vartheta(f_x,q_x)-j_\vartheta(0,0)\big].
+}
+\tag{5c}
+\]
+The original base price includes ALL original old LEFT labels and pending/scene complements; its field-independent scalar may be large but contributes ZERO geometry/matter first source on this fixed chart. Equation (5c) proves the full return J₂ price depends **only** on the integer number k of activated SAME-COST original histories per Role site, not which histories carry the signal.
+
+**Two distinct universality statements, both exact:**
+- At FIXED k, every choice of the original selected microhistories gives EXACTLY the SAME full return-feedback functional and all its field jets. At the maximal k=m the amplitude \(\omega k\) is as large as possible subject to exact equal site masses, and the native positive signal remains nonzero in the genuine refining diagonal (4)–(5).
+- Varying k from1 to m changes the absolute source magnitude linearly, as it must; AFTER normalization by the TRUE native selected support \(\sigma=k L^4\omega_{n,N}\), the full return \(J_2-J_{\rm baseline}\) is identical for every k. Its finite Euler zero set and its genuine matter-to-gravity first-source RATIO are therefore EXACTLY k-independent. This does **NOT** make different k physically cost-equivalent if the foundational native programme values the control resources, code, prior history or total unnormalized response strength.
+
+In this fully specified golden AF×scene sector, gravity is therefore invariant under **THREE different changes of microscopic description**: (i) the arbitrary original Hodge-CAR matter phases with the same null energy \(E(u)\), (ii) any replacement of selected old F/R histories inside their original macro cells preserving counts k, and (iii) the previously proven SAME COMPLETE GOOD/BAD detector mean-vs-MAP valuation at the level of their Euler zero sets, conditional on its actual admission. The distinct microscopic original CAR/F/R data remain stored; the gravitational/macroscopic quotient is an exact observable/property of THIS priced detector, not the theorem that foundational D0 automatically selects it.
+
 ## 2. The SAME native macro site representative is enough to match MOVING-PHYSICAL-VOLUME source EXACTLY on common null/star
 
 For every original word w keep its original X_w for microhistory identity, but let its *macroscopic Role query label* be the **canonical cell representative**
