@@ -178,3 +178,46 @@ q_{\rm blank}=(1-\epsilon_h\lambda_h/2)^2,\quad
 \tag{12}
 \]
 The zero-energy shell lambda=0 has no field-sensitive event-clock reading, whereas a positive shell does. The Perron-archive Schur memory and original full128 detector-clock are now TWO concrete manifestations of retained future distinguishability, not yet a proved common physical execution. **The outstanding GR proof is their SAME-HISTORY physical cost/field/clock binding with ordered six-Lorentz/CAR source, not another geometric ansatz.** GR_closed=false.
+
+
+## 7. Nonzero ORIGINAL hidden-history source on a genuine edge-price direction (not an invented matter term)
+
+A true current detector can have stationary one-point histograms and still have a **field-sensitive** future-archive response. To remove any ambiguity that (3) is only a matrix re-labelling, evaluate the ALREADY OWNED source (8) on an actual symmetric original 718-edge Cost variation: change the primitive Cost of EVERY actual K9↔K11 edge pair by one real test parameter t, keeping K9↔K13 and K11↔K13 at their original Golden Cost. The complete original weighted transfer is
+\[
+K_{uv}(t)=
+\begin{cases}
+p\,\varphi^{-t},&u,v\text{ in opposite K9/K11},\\
+p,&u,v\text{ in the other native cross-zone pairs},\\
+0,&\text{same zone},
+\end{cases}\qquad p=\varphi^{-1}.
+\]
+This is a source-probe of **existing native Book edge Cost**, not a physical metric→Cost identification, controller or additional parameter in the action.
+
+Compute its genuine moving Perron root \(\rho(t)\), stationary bulk \(\pi(t)\), and \(T(t)=K(t)/\rho(t)\). Evaluate the ORIGINAL fixed positive feedback candidate
+\(F(t)=I-T(t)^2\) and its already-owned return price at the previously selected \(z=2^{-20}\):
+\[
+J_A(t)=-\ln\det[I-zF(t)] .
+\]
+
+Exactly from differentiation of the ORIGINAL normalized symmetric source (8), with no fitted coupling,
+\[
+\boxed{
+D_tJ_A(0)=-2z\,\operatorname{Tr}\left[
+((1-z)I+zT^2)^{-1}T
+\left(K'/\rho-T\rho'/\rho\right)\right]\ne0.
+}\tag{13}
+\]
+On the native tripartite zone-constant block (full remaining thirty zero modes retained analytically), the value is approximately
+\[
+\boxed{D_t J_A(0)=-2.6251653530\cdot10^{-8}.}\tag{14}
+\]
+An independent central difference on the SAME original full-cost family gives
+\(-2.6250888903\cdot10^{-8}\) at step \(t=0.01\), converging toward the exact differential for smaller t. This source belongs to the original 718-edge archival feedback; it is **not** yet the signed Lorentz–Palatini/Einstein stress tensor.
+
+**The finite native unitarity response Ward is**
+\[
+\boxed{D_V(T^\dagger T)+D_V(R^\dagger R)=0,}\tag{15}
+\]
+where every field variation includes the moving original Perron normalization and both changing past/future isometries. This follows identically from the original full unitary \(U_{\min}(y)\) and \(T^\dagger T+R^\dagger R=I\); it expresses an exact balance between visible survival and hidden future information. It is NOT by itself a four-dimensional diffeomorphism Ward or Einstein identity.
+
+The nonzero original Cost source makes the archive-backreaction picture concrete, but its physical promotion still requires the **same paid and executed original Book/geometry/clock map**.
