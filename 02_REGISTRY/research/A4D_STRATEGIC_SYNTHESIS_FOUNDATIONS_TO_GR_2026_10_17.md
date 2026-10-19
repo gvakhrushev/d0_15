@@ -5048,3 +5048,79 @@ compatibility. Только затем можно заявлять full all-orde
 Физические native H+J+R/Cost−Info, подготовка, clock,
 controller/work, CAR16, старые LEFT/RIGHT/ref128, original
 raw #216 остаются OPEN. GR_closed=false.
+
+### 7.66. Keep terminal order memory inside the Perron carrier
+
+Section 7.63 correctly leaves one unresolved typing edge: the scalar 33-state
+transfer has not been identified with Book 03's ordered memory-class sum.
+Book 03 §03.1.3 rules out a faithful one-dimensional character of the
+noncommutative \(Q_8\) terminal memory, and explicitly distinguishes a faithful
+representation of group elements from a faithful reading of their full group
+algebra. This does not rule out a positive Perron construction that carries
+the memory as state. It does rule out silently replacing the memory by one
+scalar character.
+
+There is an exact finite lift, conditional on a typed edge-memory cocycle.
+Suppose the admitted terminal quotient supplies a finite group \(G\) (for the
+existing terminal quotient, \(G=Q_8\)) and edge labels \(a_e\in G\) such that
+the label of every path \(\gamma=e_1\cdots e_N\) is the ordered product
+
+\[
+ m(\gamma)=a_{e_1}a_{e_2}\cdots a_{e_N}.
+\]
+
+Let \(\widehat s_{(u,g),(v,ga_e)}(y)\) be the **actual** additive native
+Cost--Info increment on this memory-resolved transition, and set
+\(\widehat K_{(u,g),(v,ga_e)}=\varphi^{-\widehat s_{(u,g),(v,ga_e)}}\),
+zero on illegal transitions. If the actual increment is independent of \(g\),
+this reduces to the scalar \(K_\theta(u,v)\) in §7.63. The lift has
+\(|V||G|=264\) states for \(K(9,11,13)\times Q_8\). By multiplying sparse
+matrices,
+
+\[
+ (\widehat K^N)_{(u,1),(v,g)}
+ =\sum_{\substack{\gamma:u\to v,\ |\gamma|=N\\m(\gamma)=g}}
+       \prod_{j=0}^{N-1}
+          \varphi^{-\widehat s_{(u_j,g_j),(u_{j+1},g_{j+1})}}.
+\]
+
+Thus the row indexed by \((u,1)\) retains the coefficient of every terminal
+memory class separately; it does not apply a one-dimensional character to
+\(Q_8\). This identity is finite and exact. It is a representation of the
+existing terminal quotient only; it does not prove that the unrestricted
+Book path algebra is finite-dimensional or that this quotient contains every
+native record distinction.
+
+If the resulting nonnegative matrix is primitive, its Perron root gives a
+unique positive Doob chain on the lifted states. For
+\(\widehat P_{xy}=\widehat K_{xy}\widehat r_y/(\widehat\lambda\widehat r_x)\)
+and \(\widehat\pi_x=\widehat\ell_x\widehat r_x\), normalized by
+\(\widehat\ell^T\widehat r=1\), the same exact Hellmann--Feynman calculation
+as in §7.63 gives
+
+\[
+ D\log_\varphi\widehat\lambda[V]
+ =-\sum_{x\to y}\widehat\pi_x\widehat P_{xy}
+                     D\widehat s_{xy}[V].
+\]
+
+When the lifted price has the transition allocation
+\(\widehat s_{(u,g),(v,ga_e)}=C_{e,g}-\theta I_{u,g}-(1-\theta)I_{v,ga_e}\),
+the stationary-flow identity cancels the endpoint allocation exactly, even
+when the information values move with every admitted field. The surviving
+source is the lifted stationary average of \(DI\) minus that of \(DC\); it
+must still match the existing complete star/CAR source with its native
+normalization. Primitivity is a separate check: the scene graph's 2- and
+3-cycles alone do not prove that an edge-labelled \(Q_8\) cover is primitive.
+
+This sharpens, but does not discharge, the physical bridge in §7.63. The
+remaining input is now concrete: derive the actual edge-memory cocycle and
+the full \(g\)-resolved Cost, Info, and preparation from the same admitted
+Book/native execution; prove its lifted support primitive (or identify the
+native recurrent classes); then compare its source on every coframe, proper
+link, CAR/matter, observer, preparation, clock, and work tangent with
+\(a_hD\sum_x\widehat f_x+b_hD\sum_x q_x\). Choosing labels or costs merely
+to make that equality true would be an external selector. Until this map,
+source identity, remaining Euler equations, and periodic recovery are proved,
+the finite lift is a conditional route to the composition, not D0\(\to\)GR;
+`GR_closed=false`.
