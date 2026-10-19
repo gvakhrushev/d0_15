@@ -80,6 +80,36 @@ Since Pr(succ)=1/1024 INDEPENDENT of all U(y),rho_D(y), the field derivative of 
 
 This is a general finite *observable/source compiler theorem*, valid for all 16 CAR grades and every moving correctly prepared input, not just at the flat generator source. It transports the already-owned full 16-event native-p positive 6-Lorentz decoding and its pretrace/closed phase witnesses to one FIXED processing scheme after successful programming. It DOES NOT transport the fundamental physical action: the actual whole history contains a 1023/1024 failure sector, costly preparation of |J(U(y))>>, native Book pressure/oldRIGHT and clock. A Book expectation, logdet or minimization over ALL outcomes can acquire a different first/second source from these retained terms. This is why the "one-programme" action theorem remains open even though its geometric detector source can be compiled exactly on a declared success class.
 
+### 1.2. REQUIRED two fresh original Golden flags: use 64d, NOT the preceding 32d single-link subexperiment
+
+The concurrent existing #334 scientific consumer has now strengthened the present single-Julia lemma to the **literal mathematical original TWO-FRESH-FLAG full Golden 16-outcome CAR/Choi readout**. That protocol has genuine active CAR16×flag1×flag2 dimension **64**, NOT 32. It must not be represented as a re-used single flag.
+
+On that complete 64d carrier define the TWO distinct original Golden-p Julia full dilations in chronological order, each tensored with identity on the other fresh flag:
+
+    J_total(U)= J_(flag2)(U) J_(flag1)(I) ∈ SO(64).
+
+Both 64×64 factors use the original p-Golden/CAR16 Julia blocks, with the first flag left untouched by the second. This is a complete orthogonal extension of the original 16-outcome record rather than a postselected successful word. One normalized real Choi programme for J_total has dimension 64²=4096 (twelve active binary digits); the data+programme tensor size is 64³=262144. The SAME FIXED Bell projection gives
+
+    (<Omega_64|⊗I)(|psi>⊗|J_total(U)>>)
+      = (1/64) J_total(U)|psi>,
+
+with TRUE Good rate 1/4096 and fully retained Bell-Bad rate 4095/4096, independent of U. The original 16 Golden outcomes are kept CONDITIONED within Bell-Good, and the true Bell-Bad is an ADDITIONAL 17th coarse flag category (its full internal residual wavefunction is retained).
+
+**Exact original 3+3 information remains UNCHANGED.** Because J_(flag1)(I) is fixed and the first flag is a true spectator to the varying second factor,
+
+    (1/64)Tr[J_total(U)^T J_total(V)]
+       = (1/32)Tr[J_one(U)^T J_one(V)]
+
+for every two U,V in the shared strict Julia chart. Thus the 64d pure-programme six-parameter QFI is EXACTLY the 32d QFI in §2, with 2p (3), 2p² (3), det64p^9. Doubling the actual number of fresh flags costs programme/Hilbert capacity and reduces herald rate, **not Lorentz information rank or local metric**. This is an identity on the original correctly typed complete 16-outcome readout, not an assumption.
+
+The other-owned independently checked scientific implementation \`sources/d0_golden_program_state_2026-10-19/check_fixed_bell_full_golden_16_mark_all40_source.mjs\` now performs the true 64d two-fresh isometry, Bell success, all 17 categories and the entire 718-edge ×17 = 12206 joint original positive labels. It also verifies a nonzero moving original Book/Perron source and exactly vanishing conditional CAR/Book Fisher cross score on that mathematical same-conditional law; a signed 3+3 full-17-pointer Hessian is a possible READOUT derivative, not the selected Palatini action.
+
+For the DECLARED mathematical composition with the already owned original Golden LEFT READY-mass refining limit, the correctly typed two-fresh joint Bell-Good event rate is
+
+    0.341640786499874... /4096 = 0.00008340839514157077... > 0,
+
+and mathematical successful-event surprisal is log_phi 4096=17.28504108... Golden units (NOT compulsory Book Cost). This corrects the one-flag 1/1024 rate in §2.1 for any application to the true two-fresh 16-outcome apparatus. Per-site source rates still carry the honest h^4 address mass and native attempt/work prices.
+
 ## 2. NEW exact Golden 3+3 metric of the GEOMETRIC PREPARATION SOURCE
 
 The programme is a normalized PURE state. Therefore its REAL quantum Fisher metric in coordinates of the original six Lorentz generators X_a=(N2,N3,barN2,barN3,J23,B) can be computed WITHOUT ANY fitted metric or action.
