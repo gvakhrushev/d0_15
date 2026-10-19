@@ -166,3 +166,56 @@ This is a **local inverse-function theorem for six physical CAR number/coherence
 The second key datum is the already proved **gauge-free signed closed history phase** (8): the same two rays distinguish the ORIENTATION of the original ordered N2/barN3 comparison with coefficients -1/9,+1/9. Together (10)-(12) and (8) yield a mathematically complete **six-dimensional detector plus order-sensitive loop invariant** from the SAME two original CAR16 rays. This is strictly stronger than identifying a tensor's rank or naming the archive "matter."
 
 The exact covariance/closed-phase and density-observable certificates have one dependency-free original-CAR checker. Neither the positive Fisher/observable Jacobian, nor the antisymmetric closed Berry curvature, alone equals the symmetric indefinite Lorentz–Palatini Hessian: the true original 40-Euler still requires a selected same-action cost and connection/history stationary elimination. GR_closed=false.
+
+
+## 5. NEW full-instrument lift: six-direction reconstruction WITHOUT success postselection or a fitted reference phase
+
+The projective proof §§1–4 required mathematical normalization after each Lorentz transform. That is not a physical quantum gate by itself because a generic proper Lorentz boost has a **nonunitary** exterior action in positive CAR Hilbert norm. Here is a materially stronger lift directly into the already-owned full fresh-flag Julia instrument in [the complete two-flag original history](A4D_ONE_RUN_NATIVE_SOURCE_AND_COMPLETE_HISTORY_SCHUR_SYNTHESIS_2026_10_19.md), §2.
+
+For any sufficiently small original six-parameter proper Lorentz matrix \(U(\xi)\), let \(\Lambda(U)\) act on the COMPLETE original CAR16 exterior algebra. Retain the already-owned **fixed** successful contraction and its original full failure complement
+\[
+\boxed{T(\xi)=\frac12\Lambda(U(\xi)),\qquad
+F(\xi)=\sqrt{I_{16}-T(\xi)^\dagger T(\xi)}.}\tag{13}
+\]
+The 1/2 is the pre-existing Julia source scale, NOT a chosen normalization for gravity. The owner's bound \(\|T\|\le e^{4\max|\xi_j|}/2<1\) on a sufficiently small chart ensures both maps are genuine positive Kraus branches and
+\(T^\dagger T+F^\dagger F=I_{16}\) identically. Both GOOD and BAD records are preserved. At identity \(T=I/2,\ F=\sqrt3 I/2\), hence the actual output weights are 1/4 and 3/4 for EITHER original grade-one preparation.
+
+Use the SAME two independent grade-one probes (3) and exactly the six original CAR Hermitian one-body observables (10), but now define each response as the **UNCONDITIONED joint recorded GOOD-and-CAR statistic**
+\[
+\mathcal R^{\rm full}_j(\xi)
+:=\operatorname{Tr}\left[T(\xi)\rho_{\pm}T(\xi)^\dagger O_j\right]
+=\mathbb E_\xi[\,1_{\mathrm{GOOD}}\,O_j\,].
+\tag{14}
+\]
+This is not the conditional mean \(E[O|\mathrm{GOOD}]\), and it is not a postselected-only experiment; the BAD outcome is retained in the same full normalized instrument and its complete price still must be paid. At identity \(\rho_{\pm}=v_\pm v_\pm^\dagger/3\), and exactly in the grade-one sector
+\[
+D_X(T\rho_\pm T^\dagger)
+=\frac1{12}\bigl[(Xv_\pm)v_\pm^\dagger
++v_\pm(Xv_\pm)^\dagger\bigr].\tag{15}
+\]
+This derivative retains the actual variation of the GOOD probability rather than subtracting it by renormalizing the successful branch.
+
+For the same original Lie basis and the SAME choices of six measured native one-body number/coherence operators (10), direct integer CAR matrix multiplication gives
+\[
+\boxed{
+12\,D\mathcal R^{\rm full}(0)
+=\begin{pmatrix}
+0&0&2&0&0&-2\\
+2&0&0&0&0&0\\
+0&-1&0&0&0&0\\
+0&0&0&1&-1&0\\
+2&0&0&0&0&2\\
+0&0&0&1&0&0
+\end{pmatrix}
+,\quad
+\det(12 D\mathcal R^{\rm full})=8.
+}\tag{16}
+\]
+Therefore
+\[
+\boxed{\det D\mathcal R^{\rm full}=\frac8{12^6}=\frac1{373248}\ne0.}\tag{17}
+\]
+
+**Conclusion:** even for a COMPLETE positive two-line fresh-flag Julia apparatus, with its actual BAD channels retained and no hidden renormalization of success, exactly six true native-CAR joint observables recover ALL SIX infinitesimal proper-Lorentz directions locally. Four original lattice link directions per vertex have a block-diagonal 24×24 measurement map with nonzero determinant \((1/373248)^4\) if their original independent link inputs receive independent original fresh flags. This is a mathematical source-observability theorem on an already-owned Julia instrument type, stronger than a bare ray/phase atlas. The physical D0 programme has NOT been proved to compulsorily select these TWO input states, the six CAR observable readouts, the four-edge routing or their clock/work cost. No claim that the joint GOOD statistics by themselves equal the full Book action or original independent Palatini link Euler is made.
+
+**Critical distinction:** rank6 readout capacity removes the informational *underdetermination of the Lorentz link* **conditional on this admitted apparatus**. It does NOT eliminate the absolute Cost−Info, preparation, clock, reference or hidden-archive source. The latter remains the compulsory *dynamical* GR bridge. GR_closed=false.
