@@ -89,6 +89,35 @@ At \(z=0\) the lift is zero and every connection component of the identity-link 
 
 \(E_K=0\) through the order that carried the #241 normalized obstruction. This is not an exact same-source joint solution, and it does not identify a continuum Einstein tensor. No new density, Holst term, torsion constraint, or selector is introduced.
 
+### Full-carrier correction of the next slope coefficient
+
+The first-order lift leaves a definite next coefficient on the same valued
+slow profile. In the 96 connection Euler rows, the \(h^2 z x_0\) slope source
+is supported only on role 0 at phases 1 and 3:
+
+\[
+\begin{array}{c|rrr}
+ & J_{12} & J_{13} & J_{23}\\\hline
+p=1 & -\tfrac12 & \tfrac12 & 1\\
+p=3 & \tfrac12 & -\tfrac12 & -1
+\end{array}
+\]
+
+The four modes used for the first-order lift do not span this source. The
+complete phase × role × Lorentz-link Jacobian has exact rational rank 80; when
+the six-component source is appended, its rank remains 80. The exact RREF
+therefore supplies a second-order link correction on the full 96-dimensional
+carrier, and substituting it makes all 96 \(h^2 z x_0\) Euler coefficients
+zero. The checker also verifies that the restricted four-mode augmented rank
+increases, so the added roles and link directions are doing real work.
+
+This is one formal Taylor coefficient, not an all-orders root. It does not
+show that the 16-dimensional Jacobian kernel is gauge, solve the remaining
+\(h^2 z^2\) and higher coefficients, impose the ten metric equations, or give
+a uniformly controlled correction on expanding grids. In particular it does
+not discharge the parent requirement for an exact joint-critical sequence
+containing #232.
+
 ## 6. Validation
 
 Review baseline: `880c8284454b072219f470982963d8dc041957c9`.

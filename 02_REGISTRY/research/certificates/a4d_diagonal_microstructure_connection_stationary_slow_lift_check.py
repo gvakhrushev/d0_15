@@ -118,6 +118,43 @@ def edge_euler(site, role, generator, wave, solder):
     return result
 
 
+def edge_euler_full(site, role, generator, waves, solder):
+    """Same Euler row with an independent phase/role link on every edge."""
+    result = 0
+    for a, b in PAIRS:
+        if role == a:
+            corners = [(site, 0), (shift(site, b, -1), 2)]
+        elif role == b:
+            corners = [(shift(site, a, -1), 1), (site, 3)]
+        else:
+            continue
+        for base, corner in corners:
+            places = [
+                (base, a, False),
+                (shift(base, a), b, False),
+                (shift(base, b), a, True),
+                (base, b, True),
+            ]
+            factors = []
+            for loc, rel, inverted in places:
+                link = waves[rel][phase(loc)]
+                factors.append(lorentz_inverse(link) if inverted else link)
+            plaquette = factors[0] * factors[1] * factors[2] * factors[3]
+            pinv = lorentz_inverse(plaquette)
+            varied = list(factors)
+            if corner < 2:
+                varied[corner] = factors[corner] * generator
+            else:
+                varied[corner] = -generator * factors[corner]
+            dp = varied[0] * varied[1] * varied[2] * varied[3]
+            dc = (dp + pinv * dp * pinv) / 2
+            u, v = [j for j in range(4) if j not in (a, b)]
+            result += orientation(a, b) * (
+                wedge(solder[:, u], solder[:, v]).T * G2 * STAR * bivector(dc)
+            )[0]
+    return sp.expand(result)
+
+
 alpha = sp.zeros(4)
 alpha[1, 2] = alpha[2, 1] = 1
 beta = sp.zeros(4)
@@ -248,6 +285,110 @@ for scaling in (h, h**2):
     ).removeO()
     slope = sp.series((h**2 * x0 * z / D).subs(z, scaling) / h**2, h, 0, 1).removeO()
     check(f"NORMALIZED_LIMIT_{scaling}", normalized == 0 and slope == 0)
+
+# The remaining h^2*z slope term is not in the four lift modes above.  Solve
+# its exact coefficient on the complete 4 phases x 4 roles x 6 Lorentz-link
+# carrier, then replay the corrected coefficient in every connection row.
+full_rows = [(p, r, gi) for p in range(4) for r in range(4) for gi in range(6)]
+epsilon_full = sp.symbols("epsilon_full")
+identity_links = [[I4 for _ in range(4)] for _ in range(4)]
+full_columns = []
+for vp, vr, vg in full_rows:
+    links = [list(row) for row in identity_links]
+    links[vr][vp] = I4 + epsilon_full * GENERATORS[vg]
+    column = []
+    for p, r, gi in full_rows:
+        value = edge_euler_full(
+            (p, 0, 0, 0), r, GENERATORS[gi], links, I4
+        )
+        column.append(sp.diff(value, epsilon_full).subs(epsilon_full, 0))
+    full_columns.append(column)
+full_jacobian = sp.Matrix(full_columns).T
+
+alpha_probe = [I4 for _ in range(4)]
+alpha_probe[0] = I4 + z * Y - h * z * GENERATORS[3] / 2
+alpha_probe[2] = I4 - z * Y + h * z * GENERATORS[3] / 2
+beta_slope = sp.zeros(4)
+beta_slope[0, 1] = beta_slope[1, 0] = 1
+probe_solder = (
+    I4
+    + h * (alpha * ETA / 2).T
+    + h**2 * x0 * (beta_slope * ETA / 2).T
+)
+slope_source = sp.Matrix([
+    sp.Poly(
+        edge_euler_full(
+            (p, 0, 0, 0), r, GENERATORS[gi],
+            [[alpha_probe[phase] if role == 0 else I4 for phase in range(4)]
+             for role in range(4)],
+            probe_solder,
+        ),
+        h, z, x0,
+    ).coeff_monomial(h**2 * z * x0)
+    for p, r, gi in full_rows
+])
+check(
+    "FULL_ORDER_H2_Z_SLOPE_SUPPORT",
+    slope_source == sp.Matrix([
+        -sp.Rational(1, 2) if row == (1, 0, 3) else
+        sp.Rational(1, 2) if row == (1, 0, 4) else
+        1 if row == (1, 0, 5) else
+        sp.Rational(1, 2) if row == (3, 0, 3) else
+        -sp.Rational(1, 2) if row == (3, 0, 4) else
+        -1 if row == (3, 0, 5) else 0
+        for row in full_rows
+    ]),
+)
+
+four_mode_jacobian = operator.subs(z, 0)
+four_mode_rank = sp.polys.matrices.DomainMatrix.from_Matrix(
+    four_mode_jacobian
+).rank()
+four_mode_augmented_rank = sp.polys.matrices.DomainMatrix.from_Matrix(
+    four_mode_jacobian.row_join(-slope_source)
+).rank()
+check(
+    "SLOPE_NEEDS_FULL_LINK_CARRIER",
+    four_mode_augmented_rank > four_mode_rank,
+)
+
+full_augmented = full_jacobian.row_join(-slope_source)
+full_rref, full_pivots = sp.polys.matrices.DomainMatrix.from_Matrix(
+    full_augmented
+).rref()
+check(
+    "FULL_96_ROW_SLOPE_COMPATIBILITY",
+    len(full_pivots) == 80 and 96 not in full_pivots,
+)
+full_rref_matrix = full_rref.to_Matrix()
+second_order_solution = sp.zeros(96, 1)
+for row_index, pivot in enumerate(full_pivots):
+    if pivot < 96:
+        second_order_solution[pivot] = full_rref_matrix[row_index, 96]
+check(
+    "FULL_96_ROW_SECOND_ORDER_LINK_CORRECTION",
+    sp.simplify(full_jacobian * second_order_solution + slope_source)
+    == sp.zeros(96, 1),
+)
+
+corrected_links = [[I4 for _ in range(4)] for _ in range(4)]
+corrected_links[0] = list(alpha_probe)
+for (p, r, gi), coefficient in zip(full_rows, second_order_solution):
+    corrected_links[r][p] += h**2 * z * x0 * coefficient * GENERATORS[gi]
+all_roles_wave = corrected_links
+check(
+    "FULL_96_ROW_CORRECTED_H2_Z_SLOPE_ZERO",
+    all(
+        sp.Poly(
+            edge_euler_full(
+                (p, 0, 0, 0), r, GENERATORS[gi], all_roles_wave,
+                probe_solder,
+            ),
+            h, z, x0,
+        ).coeff_monomial(h**2 * z * x0) == 0
+        for p, r, gi in full_rows
+    ),
+)
 
 # At z=0 the order-h lift vanishes with z, and the identity-link Euler is zero
 # through h^2 for every phase, role and generator.

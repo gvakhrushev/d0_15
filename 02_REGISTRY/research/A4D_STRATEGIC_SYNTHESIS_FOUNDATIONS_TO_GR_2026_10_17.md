@@ -3444,3 +3444,28 @@ The existing evidence does **not** yet prove that identification. The golden the
 The narrow deciding theorem should bind one composed native AF history \(X_N\) to its actual F/R event word and prove, on the same complete record including failures and old memory, that (i) its admissible reversible encoder realizes the \(D_{\min}\) code class, (ii) the normalized expected code length and its first field derivative converge to \(H_\varphi(q)\) on the native probability chart, and (iii) this source is the derivative of the full physically admitted programme, including its preparation and clock. The existing Kraft bound supplies the lower side; the admitted compiler and the \(D_{\min}\)-to-history identity are the missing positive side.
 
 **Status:** promising selector candidate, not a selector theorem. If the bridge fails, Book 00–01's unique code magnitude alone does not choose the AF record action. If it passes, it gives a concrete bottom-up route to the same source that the AF Einstein bridge already consumes, while leaving the full old-v8 and raw #216 checks in force.
+
+
+### 7.44. The #232 slow-lift source is range-cancelable only on the full link carrier
+
+The diagonal period-four #232 probe initially appeared to leave a nonzero
+normalized metric response on a valued slow background. The exact order-
+\(h\) connection correction removes that apparent obstruction pointwise;
+its metric partial is \(O(h^2 z)\), hence vanishes after \(h^{-2}\) when
+\(z=h\) or \(h^2\). The next connection coefficient is more informative:
+the \(h^2 z x_0\) slope source is supported on six role-0 rows at phases 1
+and 3. The four-mode correction used at first order cannot absorb it, but the
+full 96 phase-role-Lorentz link Jacobian has exact rational rank 80 and its
+augmented rank stays 80. Its canonical exact RREF therefore constructs a
+second-order link correction whose substitution cancels all 96 coefficients.
+See the [full-carrier slow-lift owner](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md)
+and its [exact checker](certificates/a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py).
+
+This closes one local Taylor range question: the next slope source is not a
+finite-cell cokernel obstruction, and the additional link directions cannot
+be discarded as gauge by response-nullity alone. It does **not** provide an
+exact joint-critical sequence: the \(h^2 z^2\) and higher connection rows,
+all ten metric rows, the matter equations, and a uniform large-grid estimate
+remain open. Thus neither the positive response-decoupling terminal nor the
+valid joint-critical counterexample is established; #334 stays on its
+registered route.
