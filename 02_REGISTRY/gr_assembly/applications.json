@@ -133,6 +133,37 @@
       "reported_state": "Pinned evidence commit 8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba: symbolic all40 and finite Golden-source checker replays pass. This is a searchable result record only; no native-programme-v1 application is registered or accepted. Physical action selection, complete D0 history/clock/preparation equations, generic matter and raw #216 remain open."
     },
     {
+      "id": "opposite-null-julia-order-memory",
+      "owner": "registered native response research owner #334",
+      "statement": "Two opposite null families span the proper Lorentz algebra; a complete positive Julia/CAR16 test has full-rank six-generator response and detects noncommuting AB-versus-BA order with a nonzero conditional Golden mean-information first source.",
+      "interface": "opposite-null-order-memory-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "lorentz_chart": "The original real null basis and CAR16 exterior representation are used, with ||X||_2<=1/10; the result is a local finite-dimensional test.",
+        "complete_instrument": "Each ordered link uses a distinct fresh retained Julia flag; the fixed 13-outcome POVM and every failure branch are retained. Reusing one flag has the certified 3/4 I identity-point defect.",
+        "book_source": "The nonzero mean-Shannon source is conditional on the stated registered Golden p,p^2 pointer branch and same-history probability binding; it is not established for literal fullStep.",
+        "physical_admission": "The native programme has not been shown to select, execute or pay for this tester, its fresh references, flags, preparation and decoder.",
+        "remaining_equations": "No complete H+J+R/preparation/clock/controller source, nonlinear full40 equality, Ward transfer, refinement or raw #216 closure is proved."
+      },
+      "evidence": [
+        {
+          "ref": "a18606f1c9cdcb2aa47dd3619fe4aa657077c47e",
+          "path": "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_opposite_null_julia_order_memory_2026-10-19/theorem.md",
+          "sha256": "acc07f37a16ec5aa99421252f49fd1b7a08b61d3f0f47e46a48c29c069a87463"
+        },
+        {
+          "ref": "a18606f1c9cdcb2aa47dd3619fe4aa657077c47e",
+          "path": "02_REGISTRY/research/sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py",
+          "sha256": "48a9692675fbe46c68c4d902d3069ac2c717e2370761508983db2e3245497cb8"
+        }
+      ],
+      "reported_state": "Pinned result-only evidence at #334 head a18606f1. The exact checker replays the rank-six positive response, nonzero order contrasts, reused-flag defect and conditional same-history information source. No application to native-programme-v1 is registered or accepted."
+    },
+    {
       "id": "original-golden-inverse-pf-moving-mean-j2",
       "owner": "registered native response research owner #334",
       "statement": "On the unchanged original golden-box addresses with true nonuniform native weights, a specified inverse-PF plus moving-volume-quantile operand of the same two-tick AF×scene Book03 J2 transfers the arbitrary-time Brinkmann roots with exact finite first-source equality and derives a conditional off-null Einstein-scalar mean source.",

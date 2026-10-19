@@ -119,6 +119,15 @@
       "refinement": "Smooth local unwrapped-u family and bounded transverse Dirichlet rectangle; one-u-step lag O(h), harmonic recovery O(h^2).",
       "scope": "Exact finite equations and smooth Einstein-scalar Brinkmann sector for this named instrument only; physical admission, full D0 selection, generic matter and raw #216 remain separate."
     },
+    "opposite-null-order-memory-v1": {
+      "carrier": "The original proper-Lorentz null basis acting on the complete CAR16 exterior representation, on the declared small chart ||X||_2<=1/10.",
+      "action": "A constructed full16 positive Julia instrument with two distinct fresh retained flags and one fixed complete 13-outcome POVM; no compulsory native price is selected.",
+      "variations": "Exact six-generator first-response matrix and finite AB-versus-BA order contrasts at the identity; no nonlinear full40 Hessian match is asserted.",
+      "source": "Conditional complete mean-Shannon Cost-Info source after one registered original Golden p,p^2 branch split; all declared outcomes and Julia failures remain retained.",
+      "normalization": "T_X=Lambda(exp X)/2 with the declared finite witness normalization; source is in Golden logarithmic units and is not calibrated to an Einstein coupling.",
+      "refinement": "Fixed finite-dimensional test and local first/order jets; no uniform refinement or continuum estimate.",
+      "scope": "Exact finite order-sensitive Lorentz/CAR readout candidate. Literal fullStep selection, compulsory whole H+J+R price, physical admission, preparation/clock/controller equations and GR closure remain open."
+    },
     "balanced-original-x-j2-v1": {
       "carrier": "Original exact-cost Fibonacci F/R histories retained at their unchanged X_w microaddresses; a canonical-count balanced old-LEFT subset is coarsened to its original Role macro-cell representative, while every unselected history and old RIGHT outcome remains present.",
       "action": "The unchanged corrected two-scene-tick AF×scene Book03 J2 price, compared as two distinct operand/query programmes: the local inverse-PF query and the moving physical-volume J/V mean query.",
@@ -644,6 +653,12 @@
       "left": "maximum MDL label",
       "right": "continuous-field stationarity",
       "reason": "Actual full-price field variations remain obligations."
+    },
+    {
+      "id": "conditional-julia-source-vs-native-price",
+      "left": "conditional complete Julia/CAR16 mean-Shannon first-source with fresh flags",
+      "right": "literal GoldenCoherentMemory.fullStep and compulsory full H+J+R Cost-Info",
+      "reason": "The constructed positive instrument, branch binding, physical execution/admission and full retained price are separate premises; this result establishes none of their identity."
     }
   ]
 }
