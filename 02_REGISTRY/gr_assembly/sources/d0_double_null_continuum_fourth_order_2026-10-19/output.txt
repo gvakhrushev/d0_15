@@ -1,0 +1,6 @@
+PASS before transverse conformal correction: only R_xx=R_yy remain
+  residual: -a**2*b**2*kappa**2*(1024*k - 3)*(p**2 + q**2)**2*(x**2 + y**2)/64
+PASS k=3/1024 cancels all 16 Ricci matrix entries through degree 4
+PASS the two-Killing area radius is harmonic through degree 4
+  rho: (-a*b*kappa*p**2*x*y + a*b*kappa*p*q*x**2 - a*b*kappa*p*q*y**2 + a*b*kappa*q**2*x*y + 4)/4
+SCOPE: exact continuum jet only; finite 24+16 Palatini and native Cost-Info remain open.
