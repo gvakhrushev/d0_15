@@ -109,6 +109,17 @@ No fitting was used: all entries are 0,+1,−1. This identity is an **algebraic 
 
 Hostile check: a usual spatial transverse/traceless plus/cross tensor relative to the diagonal spatial direction has nonzero C4; hence the two shears above cannot be promoted to gravitational-wave polarizations.
 
+
+### Hostile shear-action control
+
+The two remaining diagonal shears are **not stationary Einstein perturbations**. With \`H=(H1,H2)\` and the same exact standard symbol \`K_G(k)\`, the independently checked rational identities are
+
+\`\`\`
+H^T K_G(k) H = 0_(2×2),   rank(K_G(k) H)=2.
+\`\`\`
+
+Thus the **quadratic Einstein action restricted to this shear plane is zero** while both full Euler forces are nonzero. This is precisely why counting two remaining modes, or testing a restricted action value, is insufficient to claim two physical graviton polarizations or a nonlinear stationary lift. The checker includes this strict negative control.
+
 ## 5. Precise consuming use in #334, not another research census
 
 1. **Leading geometric ease:** the smooth phase-constant ten-vector is fully unobstructed by Y quarter-wave resonance, exactly and without inversion. Thus nine independent phase-constant null coframe probes, where already physically admitted, do not face this specific *flat first-symbol* Fredholm obstruction. This does **not** supply nine native action sources, weak Ward, or full nonlinear GR.
