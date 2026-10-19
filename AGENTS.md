@@ -67,10 +67,13 @@ Every queued gravity execution has one `Assembly: TASK-ID` line and a semantic
 binding in `02_REGISTRY/gr_assembly/contract.json`. CONTROL records the exact
 statement, interface, work key, start prerequisites, retained assumptions,
 consumer and completion premises. Different task names do not authorize the
-same scientific work. Independent verification is an explicit mode. Logical
-dependencies constrain acceptance; only `start_requires` constrain an otherwise
-independent conditional lemma's start. Live WIP and existing executions still
-apply. Lifecycle start and Ready checks enforce these boundaries.
+same scientific work: the duplicate key is checked even when a proposed task
+changes carrier/interface. A new key requires a genuinely different exact
+question and named consumer; a changed carrier alone does not establish that
+difference. Independent verification is an explicit mode. Logical dependencies
+constrain acceptance; only `start_requires` constrain an otherwise independent
+conditional lemma's start. Live WIP and existing executions still apply.
+Lifecycle start and Ready checks enforce these boundaries.
 
 At a result checkpoint, use `python tools/gr_assembly.py template TASK-ID` and
 record the precise parent substitution. An independent pinned acceptance binds

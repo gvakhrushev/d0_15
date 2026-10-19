@@ -388,7 +388,9 @@ def task_for_pr(pr: dict) -> str | None:
 
 
 def collision_key(binding: dict) -> tuple:
-    return binding["interface"], binding["work_key"]
+    # The scientific question owns the key; changing its carrier/interface is
+    # not by itself evidence that the proposed work is independent.
+    return (binding["work_key"],)
 
 
 def work_digest(model: dict, binding: dict) -> str:

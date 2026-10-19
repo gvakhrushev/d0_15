@@ -75,9 +75,10 @@ the number of newly ready consumers; neither is a probability of success.
    substantive work. Continue in that PR until Ready.
 
    Gravity start checks also reject a different task with the same scientific
-   work key/interface, unresolved actual start prerequisites and live WIP
-   overflow. They run before any lifecycle mutation. Conditional lemmas can
-   proceed on declared interfaces while their physical assumptions remain open.
+   work key even when its interface changes, unresolved actual start
+   prerequisites and live WIP overflow. They run before any lifecycle mutation.
+   Conditional lemmas can proceed on declared interfaces while their physical
+   assumptions remain open.
 
 Portable dispatch includes both repository and task ID. CI checks brief metadata:
 

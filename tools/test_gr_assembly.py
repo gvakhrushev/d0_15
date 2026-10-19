@@ -370,6 +370,13 @@ class AssemblyTests(unittest.TestCase):
         self.assertFalse(check["allowed"])
         self.assertIn("same scientific work", check["reasons"][0])
 
+    def test_different_interface_does_not_avoid_duplicate_gate(self):
+        self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
+        self.contract["task_bindings"][OTHER]["interface"] = "other"
+        check = gr.launch_check(self.model(), OTHER, [self.pr()])
+        self.assertFalse(check["allowed"])
+        self.assertIn("same scientific work", check["reasons"][0])
+
     def test_named_independent_verification_is_allowed(self):
         self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
         self.contract["task_bindings"][OTHER]["mode"] = "verification"
