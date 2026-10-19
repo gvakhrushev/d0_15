@@ -3170,3 +3170,27 @@ Brinkmann-семью с `λ=b_h/a_h`; если появляется остато
 при условной preparation, точная sourced Einstein–CAR family на `J₂` и
 условный мост между их записями, но native forcing/admission полной цены
 ещё не доказаны.
+
+
+### 7.36. Полная exterior-энтропия даёт свой Einstein-источник
+
+Подробная интеграция и границы результата записаны в
+[отдельном owner memo](A4D_EXTERIOR_MEAN_ENTROPY_SOURCE_2026_10_19.md), а
+полный bounded packet — в
+[`d0_exterior_mean_entropy_2026-10-19`](sources/d0_exterior_mean_entropy_2026-10-19/README.md).
+Он вычисляет первый джет **полной** occupation Shannon-энтропии для прибора
+§6.58, сохраняя нулевые исходы. На двух активных AF×scene блоках полный
+mean-source даёт \(\lambda_{\rm mean}\approx24.0231937147\), тогда как
+determinant/MAP того же прибора даёт `23.3434588481`. Сертификат проверяет
+25 точных контролей, но не переигрывает исторические 40 lattice-уравнений;
+результат — `C1` и использует фиксированный polar output basis.
+
+Это отдельная цена от двухтактового Book trace-log `J₂` с коэффициентом
+\(\lambda_-(2^{-20})\) из §7.30. Нельзя подменить ими друг друга, пока не
+выведено единое native history binding с полной подготовкой, basis/readout,
+старыми записями и controller/work. На одном carrier нужно показать, что
+эта полная native вариация сводится на всех `16+24+2` направлениях к
+двухкоэффициентному источнику, совместимому с уже доказанной
+Brinkmann–Einstein theorem. До этого native selection и физическая
+D0→ОТО остаются **OPEN**; условный `C_Y` capacity-vacuum result §7.35 эту
+границу не снимает.
