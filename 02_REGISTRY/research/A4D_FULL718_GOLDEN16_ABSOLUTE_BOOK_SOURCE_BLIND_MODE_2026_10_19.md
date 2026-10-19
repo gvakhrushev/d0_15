@@ -165,3 +165,47 @@ is a **constructively injective 39-parameter finite mathematical native-source c
 **Physical cost of the one scalar:** \(\lambda\) is the original ABSOLUTE Perron norm/pressure, already mathematically owned in Book's unnormalized all-history counting; it is NOT determined by any normalized conditional detector alone. Calling it a new "meter" or free primitive would violate the no-new-action condition. The original G0/Book/M1 retained work/clock/Kraft must either produce/pay its actual absolute readout, or prove physical vertex Info has a fixed absolute gauge such that \(\lambda\) is not an independent physical observable. A compulsory native recording of \(\lambda\) is NOT proved in this research memo.
 
 Standalone verified exact decoder: \`sources/d0_physical_binary_return_2026-10-19/check_absolute_book_one_scalar_reconstruction.py\`. On a true random nonlinear 33-Info original background it reconstructs all 33 values with max error < 1.5e-15; checks invariance of the complete edge prior under global Info shift and the original Golden16 positive mark normalization. This independent finite replay consumes, rather than reruns, the #334 six-CAR-generator rank identity. Again \`GR_closed=false\`.
+
+
+## 6. NEW exact nonlinear **rank-three absolute pressure compiler** for arbitrary all-33 vertex Info
+
+The full original 718 supported K(9,11,13) canonical-Cost transfer does NOT require an opaque 33×33 eigenvalue computation to determine its one missing absolute scalar. For ANY heterogeneous actual original vertex Info profile \(I\in\mathbb R^{33}\), put \(d_u=\varphi^{I_u/2}\) and the THREE original zone sums
+\[
+\boxed{
+W_A=\sum_{u\in A}\varphi^{I_u},\quad
+W_B=\sum_{u\in B}\varphi^{I_u},\quad
+W_C=\sum_{u\in C}\varphi^{I_u}.}\tag{14}
+\]
+At canonical primitive Cost=1 and symmetric endpoint split the ACTUAL original full transfer has
+\[
+K_{uv}=p\,d_ud_v\,1_{\mathrm{zone}(u)\ne\mathrm{zone}(v)}
+=p D A D .
+\]
+The original unweighted complete-tripartite adjacency A has rank3 (all within-zone zero-sum vectors lie in its kernel). Since D is invertible, **K has rank exactly3** for every I, with 30 ACTUAL zero eigenvalues. Its three nonzero eigenvalues equal those of the symmetric 3×3 matrix
+\[
+\mathbb K_3(I)=p
+\begin{pmatrix}
+0&\sqrt{W_AW_B}&\sqrt{W_AW_C}\\
+\sqrt{W_AW_B}&0&\sqrt{W_BW_C}\\
+\sqrt{W_AW_C}&\sqrt{W_BW_C}&0
+\end{pmatrix}.
+\]
+Consequently the ORIGINAL absolute Perron scalar \(\lambda(I)\) is the UNIQUE positive largest real root of the **exact full all33 nonlinear characteristic polynomial**
+\[
+\boxed{
+\lambda^3-p^2(W_AW_B+W_AW_C+W_BW_C)\lambda
+-2p^3W_AW_BW_C=0.}\tag{15}
+\]
+At zero Info, \(W=(9,11,13)\) and the cubic becomes the already-owned native \(\rho^3-359\rho-2574=0\) after \(\lambda=p\rho\). At any global Info shift \(I\mapsto I+s\mathbf1\) all \(W\) scale by \(\varphi^s\), and the same polynomial gives \(\lambda\mapsto\varphi^s\lambda\), exactly the full-record blind-mode theorem (4)–(6). Endpoint allocations other than 1/2 are similar to this symmetric transfer and have the same \(\lambda\).
+
+Thus the complete native **absolute Book scalar readout is a three-zone nonlinear function of existing Golden/Info weights**, not an extra 718-dimensional fitting degree of freedom. The decoder (10)–(13) supplies the exact converse: if one such **absolute** \(\lambda\) is physically preserved alongside the full normalized edge law, ALL 33 individual site Info are reconstructible, even though \(\lambda\) alone depends only on the three aggregate sums. This is a precise factorization of the full 39-parameter local mathematical input:
+\[
+I_{33}\ \xrightarrow{\mathrm{native\ raw\ zone\ Info}}\ (W_A,W_B,W_C)
+\xrightarrow{\mathrm{exact\ cubic}}\ \lambda
+\quad+\quad
+\mu_{718}
+\quad+\quad q^{\rm Golden16}_{6\rm\ Lorentz}.
+\]
+It does NOT mean the full original physical M1/Book/G0 records these three zone sums or \(\lambda\) without work/clock/reference costs. That ACTUAL admission and the same-run Einstein–CAR Euler remain the undischarged physical source bridge.
+
+Independent 33×33 vs 3×3 native replay at strongly heterogeneous original Info gave \(W\approx(9.66614911,10.53075285,13.20190699)\), \(\lambda_{33}=\lambda_3=13.67886524372044\), full rank3, and cubic residual \(<2\times10^{-12}\). The companion absolute reconstruction checker now verifies this exact structural algebra in addition to recovering ALL 33 Info. No Book/CORE theorem is promoted. GR_closed=false.
