@@ -31,5 +31,5 @@
     "exact_rank": 22,
     "exact_nullity": 2
   },
-  "missing_stratum": "nullity >= 2 locus, including the conjugate intersection V(P+) \u2229 V(conjugate(P+)) and any Fitting component where one chiral block has rank <= 10"
+  "missing_stratum": "nullity >= 2 locus, including the conjugate intersection V(P+) \u2229 V(conjugate(P+)) and any Fitting component where one chiral block has rank <= 10; candidate partial in stratum_results.json: intersection dimension 2, generic rank 22 on equal-spatial components and on components through (-1,-1,i,i); still unseen: generic rank of residual components that avoid that point and of Fitting components that avoid it"
 }

@@ -40,13 +40,12 @@ The refuted count law nullity = 2 max(n_+i, n_-i) predicts 4 at
 (-1,-1,i,i) and the exact rank there is 22. That point lies on both
 components; it is not a generic point of either.
 
-Missing stratum, not certified here. The nullity >= 2 locus. It contains
-the conjugate intersection V(P+) intersect V(conjugate(P+)). Components of
-that intersection through (-1,-1,i,i) have generic nullity 2, because
-nullity is at least 2 everywhere on the intersection and the set
-{nullity >= 3} is closed. The ideal of the intersection, its irreducible
-decomposition, the Fitting locus inside V(P+) where rank(A+) <= 10 while
-the conjugate factor is nonzero, and every deeper nullity are not computed.
+The nullity >= 2 locus is not settled by this file. stratum_check.py is the
+candidate partial certificate: the conjugate intersection is pure dimension 2,
+and generic rank 22 is checked on the equal-spatial components and on every
+component through (-1,-1,i,i). Still unseen there: the generic rank of every
+residual component of V(R, Q), and any Fitting component where one chiral
+block has rank at most 10 and avoids (-1,-1,i,i).
 """
 from __future__ import annotations
 
@@ -539,7 +538,11 @@ def main() -> None:
         "missing_stratum": (
             "nullity >= 2 locus, including the conjugate intersection "
             "V(P+) ∩ V(conjugate(P+)) and any Fitting component where one "
-            "chiral block has rank <= 10"
+            "chiral block has rank <= 10; candidate partial in "
+            "stratum_results.json: intersection dimension 2, generic rank 22 "
+            "on equal-spatial components and on components through "
+            "(-1,-1,i,i); still unseen: generic rank of residual components "
+            "that avoid that point and of Fitting components that avoid it"
         ),
     }
     output = Path(__file__).with_name("results.json")

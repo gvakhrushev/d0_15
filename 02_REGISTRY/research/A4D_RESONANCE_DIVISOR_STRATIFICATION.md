@@ -1,9 +1,10 @@
 # A4D exact resonance divisor and rank strata
 
 **Task:** `EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION`  
-**Status:** `IN_PROGRESS / OPEN` (geometric codimension-one step is CANDIDATE; higher-codimension strata are not certified)  
+**Status:** `IN_PROGRESS / OPEN` (geometric codimension-one step is CANDIDATE; the nullity-at-least-2 step is a partial CANDIDATE with an explicit obstruction)  
 **Primary certificate:** [`certificates/a4d_resonance_divisor_slice_check.py`](certificates/a4d_resonance_divisor_slice_check.py)  
 **Candidate geometric certificate:** [`sources/a4d_resonance_divisor_geometric_component/check.py`](sources/a4d_resonance_divisor_geometric_component/check.py)  
+**Candidate stratum certificate:** [`sources/a4d_resonance_divisor_geometric_component/stratum_check.py`](sources/a4d_resonance_divisor_geometric_component/stratum_check.py)  
 **Exact output:** [`certificates/a4d_resonance_divisor_slice_results.json`](certificates/a4d_resonance_divisor_slice_results.json)
 
 ## Current exact result
@@ -120,7 +121,9 @@ This replay also embeds the exact complex rank-23 witness from the earlier revie
 **Owned pre-facts.** The phase-count counterexample is already owned, not recomputed as a new theorem. `02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md` lines 11–17 say, verbatim:
 
 > exact elimination over \(\mathbb Q(i)\) gives
-> \[\operatorname{rank}A=22,\qquad \operatorname{nullity}A=2.\]
+> \[
+> \operatorname{rank}A=22,\qquad \operatorname{nullity}A=2.
+> \]
 > Here \(n_{+i}=2\) and \(n_{-i}=0\), so the proposed rule
 > \(\operatorname{nullity}=2\max(n_{+i},n_{-i})\) predicts 4. This is an
 > exact counterexample on the full character torus.
@@ -137,11 +140,54 @@ with `deg g ≤ (17, deg_y H)` and `deg h ≤ (18, deg_y H - 1)`, has solution d
 
 **Pre-registered attack.** The strongest attack is to treat this codimension-one result as the full rank stratification, or to read the nullity-2 point `(-1,-1,i,i)` as the generic rank on `V(P_+)`. It is not. That point is an intersection point. A second attack is that a Gao dimension computed in small characteristic, or a specialization that kills a factor, was mistaken for absolute irreducibility. The certificate uses primes above the degree bound, a constant leading coefficient `-1024`, a square-free gcd, and a control that sees an absolutely reducible polynomial. A third attack is carrier drift onto `[A(z)|C(\bar z)]`, a phase-count replacement, a finite grid, or a diagonal germ. None of those is used.
 
-**What this does not show.** It does not compute the nullity-`≥ 2` stratum. The missing stratum is the closed locus in `(C*)^4` where `nullity(A) ≥ 2`. That locus contains the conjugate intersection `V(P_+) ∩ V(\overline{P_+})`. Every irreducible component of the intersection that passes through `(-1,-1,i,i)` has generic nullity 2, because the intersection lies in `{nullity ≥ 2}` and `{nullity ≥ 3}` is Zariski-closed, but the ideal of the intersection is not computed and other components are not listed. Also missing is the Fitting locus inside `V(P_+)` where `rank(A_+) ≤ 10` while `\overline{P_+} ≠ 0`, and the symmetric locus on the conjugate component. No coefficient, no action, and no physical source is chosen. This is not a statement about the conjugated slot `[A(z)|C(\bar z)]`.
+**What this does not show.** It does not classify the nullity-at-least-2 stratum. The next section is the candidate partial certificate of that stratum and the obstruction that remains. No coefficient, no action, and no physical source is chosen. This is not a statement about the conjugated slot `[A(z)|C(\bar z)]`.
+
+## Candidate nullity-at-least-2 stratum
+
+**Status:** DRAFT candidate; no registry row edited. Pre-flight on `resonance_divisor`, `nullity >= 2`, `(-1,-1,i,i)`, `gauge_range`, and `GR_closed` found no theory-map row in this checkout. The owned cross-references are this memo, `A4D_RESONANCE_DIVISOR_RANK_LAW.md`, and the research-boundary claim `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001` (no claim-status change). No skeptic pass has been run. This section does not close the task.
+
+**Claim.** On the carrier of the owned holomorphic connection Hessian `A(z)` for `z in (C*)^4`, the conjugate intersection `V(P_+) ∩ V(\overline{P_+})` is pure dimension 2. Its three equal-spatial components are absolutely irreducible of generic rank 22 (generic nullity 2). Every irreducible component of the intersection through `(-1,-1,i,i)` has dimension 2 and generic rank 22. At that point the rank is 22 and the nullity is 2. The nullity-at-least-2 locus has dimension 2. This checker does not determine one generic rank on every residual component or on every Fitting component.
+
+**Owned pre-facts.** `02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md` lines 11–17 say, verbatim:
+
+> exact elimination over \(\mathbb Q(i)\) gives
+> \[
+> \operatorname{rank}A=22,\qquad \operatorname{nullity}A=2.
+> \]
+> Here \(n_{+i}=2\) and \(n_{-i}=0\), so the proposed rule
+> \(\operatorname{nullity}=2\max(n_{+i},n_{-i})\) predicts 4. This is an
+> exact counterexample on the full character torus.
+
+Lines 6–7 of that note record rank 24 at `(1,1,1,1)`. Lines 19–24 record that the zero set is a hypersurface whose rank strata still require classification, and that the counterexample lies on a finite subset. Lines 26–30 give rank 20 for a normalized cube-root sample. Those facts stay outside the generic rank claimed here. `MEMO_A4D_WARD_DIVISOR_SMITH_POLE.md` line 36 says, verbatim: `At \(z=i\), \(\operatorname{rank}A(i)=16\), so the nullity is eight, and`. That is the diagonal germ, not a generic rank on the intersection. Line 14 of this memo owns the spatial symmetry, verbatim: "Swapping either adjacent pair of spatial characters `(z_1,z_2)` or `(z_2,z_3)` lifts to a determinant-one congruence of `A`; these generate the full spatial `S_3` symmetry." The executable form is `certificates/a4d_resonance_divisor_slice_check.py` lines 170–176. The codimension-one absolute irreducibility, the constant chart leading coefficient `-1024`, the 671-term numerator, generic rank 23, and generic nullity 1 are the previous candidate section. `results.json` in the geometric-component directory names the locus this section takes up.
+
+**Computation.** Write `P_+ = R + i S` with `R, S` in `Z[z]`. Then `S = (z_1-z_2)(z_1-z_3)(z_2-z_3) Q`, and `Q` is not identically zero on `z_1=z_2`. A degree-preserving specialization `(z_1,z_2,z_3)=(-1,2,3)` has univariate gcd degree 0 for both `(R,S)` and `(R,Q)`, and the `z_0`-contents of each pair have constant gcd, so both pairs are coprime in `Q[z]`. In the Cohen-Macaulay ring `C[z_0,z_1,z_2,z_3]`, a regular sequence of length 2 is unmixed of height 2, so `V(R,S)` and `V(R,Q)` are pure dimension 2. The same specialization with `z_1=z_2` returns a positive-degree gcd, so the coprime test can fail. Resultants of `(R,Q)` at `(1,2,3)` and `(2,2,3)` are nonzero and unequal, so the eliminant is nonconstant and `V(R,Q)` is nonempty over `C`. On `z_1=z_2`, `R = 256 z_1^2 F` with `F` of total degree 16 not divisible by `z_0`, `z_1`, or `z_3`. The chart `z_0=u`, `z_1=u+y`, `z_3=u+1` keeps total degree 16 and `u`-degree 16 with leading coefficient the constant `-4`. Gao dimension is 1 at 251 and 257, both larger than `(2·16-1)·8`, and the chart is square-free against `∂/∂u`. The same matrix returns dimension 2 for `u^2+y^2` at 1031. Thus `F` is absolutely irreducible, and `V(z_1-z_2, F)` is one geometric component. The verified determinant-one congruences transport that component to `z_1=z_3` and `z_2=z_3`.
+
+The slice `z_0=1`, `z_1=z_2=2` of `F` is a primitive irreducible sextic with nonzero constant term. Deleting row 0 and column 0 of each chiral block gives an 11×11 minor whose numerator is coprime to that sextic and whose denominator is invertible on it. Both blocks therefore have rank 11 at those points. Rank at most 10 is closed and misses them, so the generic rank on each equal-spatial component is `11+11=22`.
+
+The point `(-1,-1,i,i)` kills `R`, `S`, and `Q`. Its linear Taylor terms vanish. The quadratic parts satisfy
+
+\[
+Q_++Q_-=-32768\,(w_0-w_1-w_2-w_3)(w_0-w_1+w_2+w_3),
+\]
+\[
+Q_+-Q_-=-32768\,i\,(w_0-w_1)(w_2-w_3).
+\]
+
+The initial form vanishes on four independent planes, so the tangent cone has dimension at most 2. Combined with the pure dimension already obtained, every component through the point has dimension 2. Exact rank at the point is 22, with block ranks 11 and 11. On the whole intersection each block has rank at most 11, so the rank is at most 22. The set where the rank is at most 21 is closed and misses the point, so every component through the point has generic rank 22 and generic nullity 2. The phase-count prediction at the same point is 4.
+
+The already certified generic rank 11 on each absolutely irreducible hypersurface makes `{rank of one chiral block ≤ 10}` a proper closed subset, hence of dimension at most 2. The intersection meets the torus in dimension 2, so the nullity-at-least-2 locus has dimension 2.
+
+**Obstruction.** On the fiber `(z_2,z_3)=(2,3)`, the resultant in `z_0` of `(R,Q)` has degree 54 as a polynomial in `z_1`, modulo both 251 and 257, with nonzero leading divided difference. Rank at most 10 is the vanishing of the 11×11 minors of one chiral block. This checker does not reduce those minors on that degree-54 scheme. It therefore cannot see the generic rank of every residual component of `V(R,Q)`, nor a Fitting component that avoids `(-1,-1,i,i)`. The intersection is not empty: the displayed point lies on it.
+
+**Negative controls.** The equal-spatial specialization makes the gcd test return a positive degree. Gao dimension on `u^2+y^2` is 2. Rank at `(1,1,1,1)` is 24. The phase-count law predicts 4 where the exact nullity is 2. Each of these fails the corresponding conclusion if the checker is blind.
+
+**Pre-registered attack.** The strongest attack is to paste generic nullity 1 onto `(-1,-1,i,i)`, or to paste nullity 8 at `(i,i,i,i)` as the generic intersection rank. A second attack is to keep only the equal-spatial components and call `V(R,Q)` empty, or to call the intersection empty. A third is to treat a finite torsion grid, the diagonal Smith exponents, or one generic rank, as the whole stratum. A fourth is carrier drift onto `[A(z)|C(\bar z)]`, `gauge_range`, `positive_gr`, raw #216, or `GR_closed`. None of those is the certificate.
+
+**What this does not show.** It does not give one generic rank for every component of the nullity-at-least-2 locus. It does not reduce the Fitting ideal. It does not choose a coefficient, an action, or a physical source. It does not close `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001`. Scope remains the holomorphic square symbol `A(z)`.
 
 ## Exact computation boundary
 
-The rational Laurent factorization, the two arithmetic codimension-one ranks, and — as a candidate, by the certificate below — the two geometric codimension-one components with generic rank 23, are exact algebraic statements. The task stays open at the first missing stratum: the nullity-`≥ 2` locus, including the conjugate-intersection ideal and the chiral Fitting ideals of corank at least 2. No finite character sample, diagonal germ, or phase count is that stratum. The count law `nullity = 2 max(n_{+i}, n_{-i})` stays refuted, and `(-1,-1,i,i)` stays a counterexample rather than a generic point.
+The rational Laurent factorization, the two arithmetic codimension-one ranks, and — as a candidate — the two geometric codimension-one components with generic rank 23, are exact algebraic statements. The conjugate intersection is a candidate pure dimension-2 complete intersection, with generic rank 22 on its equal-spatial components and on every component through `(-1,-1,i,i)`. The task stays open at the obstruction above: the degree-54 residual fiber and any Fitting component where one chiral block has rank at most 10 and avoids that point. No finite character sample, diagonal germ, or phase count is that stratum. The count law `nullity = 2 max(n_{+i}, n_{-i})` stays refuted, and the nullity at `(-1,-1,i,i)` stays 2.
 
 ## Scope firewall
 
@@ -156,4 +202,5 @@ python3 02_REGISTRY/research/certificates/a4d_resonance_divisor_slice_check.py
 python3 02_REGISTRY/research/certificates/a4d_hodge_structural_review_check.py
 python3 02_REGISTRY/research/certificates/a4d_sd_asd_reduction_check.py
 python3 02_REGISTRY/research/sources/a4d_resonance_divisor_geometric_component/check.py
+python3 02_REGISTRY/research/sources/a4d_resonance_divisor_geometric_component/stratum_check.py
 ```

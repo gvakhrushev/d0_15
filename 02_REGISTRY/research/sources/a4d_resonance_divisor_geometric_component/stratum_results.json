@@ -1,0 +1,29 @@
+{
+  "status": "CANDIDATE",
+  "carrier": "owned holomorphic connection Hessian A(z) on (C*)^4",
+  "intersection_dimension": 2,
+  "intersection_decomposition": "V(z1-z2,F12) U V(z1-z3,F13) U V(z2-z3,F23) U V(R,Q)",
+  "equal_spatial_component": {
+    "absolute_irreducibility": "Gao dimension 1 at 251 and 257",
+    "generic_rank": 22,
+    "generic_nullity": 2
+  },
+  "components_through_(-1,-1,i,i)": {
+    "dimension": 2,
+    "generic_rank": 22,
+    "generic_nullity": 2,
+    "rank_at_the_point": 22,
+    "nullity_at_the_point": 2
+  },
+  "phase_count_at_(-1,-1,i,i)": {
+    "predicted_nullity": 4,
+    "exact_rank": 22,
+    "exact_nullity": 2
+  },
+  "residual_fiber": {
+    "z2": 2,
+    "z3": 3,
+    "degree_in_z1": 54
+  },
+  "obstruction": "The residual complete intersection V(R,Q) is pure dimension 2, and its fiber (z2,z3)=(2,3) is a degree-54 scheme in z1. Rank at most 10 is the vanishing of the 11x11 minors of one chiral block. This checker does not reduce those minors on that scheme, so it cannot see the generic rank of every residual component, nor a Fitting component that avoids (-1,-1,i,i)."
+}
