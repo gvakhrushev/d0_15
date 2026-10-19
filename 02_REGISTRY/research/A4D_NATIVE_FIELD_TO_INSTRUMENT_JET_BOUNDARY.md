@@ -180,6 +180,69 @@ therefore closes the mathematical first-jet classification of this interface,
 while leaving physical admission and G0 open, along with the positive ОТО
 path and the original #310 response-decoupling terminal.
 
+## Typed field-to-readout factorization audit (19 October 2026)
+
+The first-jet space above is a space of candidate maps, not the kernel of one
+map. For the declared pointwise output
+\(Y=\operatorname{Herm}(4)\oplus\operatorname{Herm}(4)\),
+\(\dim_{\mathbb R}Y=32\). With \(\dim T_xX=66L^4\), the family
+\(\operatorname{Hom}_{\mathbb R}(T_xX,Y)\) has dimension
+\(32\cdot66L^4=2112L^4\); at \(L=4\), this is 540,672 possible jet
+parameters. For any one selected \(\Gamma:T_xX\to Y\), rank-nullity instead
+gives
+\[
+\dim\ker\Gamma=66L^4-\operatorname{rank}\Gamma\ge66L^4-32.
+\]
+At \(L=4\), the lower bound is 16,864. The exact rank and invisible
+subspace are not fixed because this owner does not select an admitted
+\(\Gamma\). If a different model uses site-indexed outputs, its actual target
+dimension must be substituted before applying rank-nullity.
+
+The factorization claim also has a precise dual criterion. Given a physical
+first variation \(\alpha=dS_x\in T_x^*X\), a readout covector
+\(\tau\in Y^*\) satisfying \(\alpha=\Gamma^*\tau\) exists exactly when
+\(\alpha\) vanishes on \(\ker\Gamma\). When it exists, its restriction to
+\(\operatorname{im}\Gamma\) is fixed; an extension to all of \(Y\) is unique
+exactly when \(\Gamma\) is surjective. Injectivity is neither the existence
+criterion nor the uniqueness criterion for \(\tau\). Even if the
+state-level readout \(D\pi_h\) is injective on \(T_{\sigma(x)}M\), an
+extension of \(\tau\) to all of \(T_y^*Y\) is unique only when that
+readout is also surjective. For the declared composite field-to-two-return
+type, injectivity is impossible at \(L=4\) because the domain has dimension
+16,896 and the target dimension is 32.
+
+If \(\sigma:X\to M\) is the field-to-state map and
+\(\pi_h:M\to Y\) is the readout, the physical map is the composite
+\(\Gamma=D\pi_h|_{\sigma(x)}\circ D\sigma|_x\). Writing \(D\pi_h[V]\) for
+\(V\in T_xX\) skips the state map unless \(X=M\). Likewise,
+\(D\sigma[V]=i[H(V),\sigma]\) covers only a unitary-orbit tangent and
+preserves every spectral moment of \(\sigma\). There is also a carrier
+mismatch in the proposed example: its density is \(3\times3\), while each
+owned return generator acts on \(\mathbb C^4\); no channel or representation
+connecting those carriers is specified.
+
+This last restriction excludes the proposed three-parameter density example
+as a realization of that unitary-return formula. At
+\((\eta,\xi,\zeta)=(0,3/5,0)\),
+\[
+D_\xi\sigma=p^2\begin{pmatrix}0&1\\1&0\end{pmatrix}\oplus0,
+\qquad
+\operatorname{tr}(\sigma D_\xi\sigma)=\frac65p^4\ne0,
+\]
+whereas \(\operatorname{tr}(\sigma\,i[H,\sigma])=0\) by cyclicity of trace.
+The diagonal-readout example remains a valid abstract illustration that a
+functional derivative can fail to factor through a coarse readout; it does not
+supply the missing D0 field-to-return map. The conditional full-action
+chronology relation is already owned by
+[A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md](A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md),
+§4; the source from the other retained action terms remains required there.
+
+This correction narrows the next GR obligation: derive the same-history native
+map \(\Gamma\), prove that the full action covector annihilates its kernel,
+and establish refinement compatibility before interpreting its ten metric
+components as a physical source. The jet-family dimension, a tomographic
+condition, and the toy entropy do not establish those premises.
+
 Reproduce with
 
 ```sh
