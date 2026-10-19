@@ -5438,3 +5438,36 @@ nilpotent terminating Cartan inverse решает локальный 24-link
 Это узкий typed endgame, а не новый action или перечень
 пятого-десятого порядков; native 718-edge/Golden complete
 Cost–Info selection и raw #216 остаются OPEN. GR_closed=false.
+
+
+### 7.79. Canonical ORIGINAL Perron history admits a unique rank-minimal FULL 718-edge Book feedback transition
+
+**NEW physically targeted ORIGINAL scene consumer, SAME #334:** [A4D_NATIVE_PERRON_HISTORY_CANONICAL_MINIMAL_REFLECTION_2026_10_19.md](A4D_NATIVE_PERRON_HISTORY_CANONICAL_MINIMAL_REFLECTION_2026_10_19.md) and its [ACTUALLY EXECUTED full718 checker](sources/d0_perron_history_canonical_reflection_2026-10-19/check_canonical_reflection.mjs). The existing §7.74 owned a positive canonical conditional-variance effect \(F=I-P_\pi^\dagger P\) and mathematical existence of some full orthogonal \(U_E\) sending past→future, but not the actual unique full extension. This is now constructed **without arbitrary matrix/gate choices** on the ORIGINAL all-walk Perron 33-state/718-directed-edge carrier.
+
+From actual one-sided native \(Ar=\rho r\), \(\rho³-359\rho-2574=0\), actual stationary bulk \(\pi=r²\) and two original complete coordinate readings J0,J1 into the same 718 registered edges, their Euclidean cross is EXACTLY \(T=A/\rho\). The actual ORIGINAL symbolic graph polynomial sets \(k=2574/\rho³\), \(D=J0-J1\),
+\[
+\boxed{U_{\min}=I_{718}-D[I+(2T+T²)/(2+k)]D^\dagger,\quad
+U_{\min}²=I,\quad U_{\min}J0=J1.}
+\]
+This uses only a DEGREE-TWO polynomial in the TRUE original scene adjacency, original node→edge embeddings and its already owned \(\rho\); NO arbitrary orthogonal continuation or 718-dimensional inverse. The changed subspace is **exactly32** and the UNCHANGED whole-edge complement686; no other orthogonal continuation mapping J0 to J1 can change fewer than32 directions. It uniquely fixes the reflected old/future action when the complement is required untouched; the rank-minimality is a proven property, not a newly imposed physical D0 optimization axiom.
+
+Consequently the SAME full Book03-type return compression is
+\[
+F=J0^\dagger U_{\min}^\dagger(I-J0J0^\dagger)U_{\min}J0
+=I-A²/\rho²\succeq0,
+\]
+the LITERAL **native depth-TWO history counting operator**. Its original all-step counts are (502,476,458) and15708 total, \(\mathrm{Tr}A²=718\); \(\operatorname{rank}F=32\), spectrum30 archive eigenvalues1, one stationary0, two active0.800314904000112 and0.694037670857683. **Do not confuse with the separate Lean degree-row random walk and its different active spectrum.** The complete candidate logdet at the already owned \(z=2^{-20}\) is the exact algebraic
+\(-30\log(1-z)-\log[1-(1+2k)z+(2k+k²)z²]=3.0035369315\cdot10^{-5}\).
+Its measurable quadratic form is the full positive \(\frac12\sum_{u,v,w}\pi_uP_{uv}P_{uw}[f(v)-f(w)]²\), from actual TWO conditional descendants and all original outcomes, not a freely postulated geometric F.
+
+**ACTUAL moving edge-price first source, no frozen Perron:** for ANY true symmetric native weighted edge Costs \(K(y)\), \(T(y)=K(y)/\rho(y)\) and the same full minimal reflection defined by \(I-2D[2(I-T)+rr^T]^{-1}D^\dagger\) are smooth. The complete source
+\[
+DJ=-2z\operatorname{Tr}\left[G^{-1}T(DK/\rho-T D\rho/\rho)\right],
+\quad G=(1-z)I+zT²,\ D\rho=r^\dagger DK r
+\]
+is a genuine response of original scene prices; at the actual flat scene the 99/117/143 undirected orbit edge derivatives are nonzero and their exact uniform-cost Ward is \(99J'_{9,11}+117J'_{9,13}+143J'_{11,13}=0\). That is **two true relative orbit responses**, not an invented40-component GR tensor. The all718 numeric test ACTUALLY RAN in this session: polynomial identity residual6.25×10⁻17, UJ0→J1 1.11×10⁻16, U² 5.55×10⁻16, true two-successor variance/F quadratic match ~10⁻15, feedback determinant identity2×10⁻17 and source-Ward error5.1×10⁻22.
+
+**One-way archive admissibility sharpened:** the previous native record admission explicitly permits arbitrary orthogonal operations only on ACTIVE workspaces, with OLD RIGHT archives untouched. This U_min can be executed in THAT owned generous class on one FRESH active 718-address edge workspace, followed by an allowed active→fresh-record C_f after the ORIGINAL complete past embedding J0 and with every innovation/failed output retained. It CANNOT be applied to already ARCHIVED edge memory or declared a literal GoldenCoherentMemory.fullStep without a real native controller/work/clock/cost proof. This is now a concrete typed physical-primitives construction, not just an abstract operator existence. It does not establish that Book03's compulsory full memory and price choose this U, its determinant flags, z, or that the native field→symmetric edge Cost mapping sources original all40+CAR Lorentz Euler. In the full zone-automorphism-invariant cost sector there are only2 independent relative responses; local GR requires genuine site-/orientation-sensitive native Lorentz Julia queries or extra typed noncommuting connection response. The physical D0→GR obligation is **one same selected full-execution field-to-edge Cost/Info + native unitary source identity**, including full observer, clock, RIGHT/reference128, CAR and old H+J+R.
+
+The live claims.csv and gr_assembly/VIEW remain GR/constitutive/native_sector/matter_source_ward OPEN and prior probe_law conditionally accepted. This is a positive new exact finite operator construction in RESEARCH, not formal claim promotion or merge into main.
+
