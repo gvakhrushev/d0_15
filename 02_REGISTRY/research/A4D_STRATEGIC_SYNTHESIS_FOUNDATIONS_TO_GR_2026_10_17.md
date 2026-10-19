@@ -5034,7 +5034,7 @@ e^{2}_{x,(2,2)}(h)=
 Фиксированный поперечный collar + periodic u/v допустимы
 для коэффициентной локальной ветви; fully periodic x/y нет.
 
-Контроль: [576 constant Jacobian entries + 140 polynomial tests]
+Контроль: [576 constant Jacobian entries + 168 four-Role polynomial tests]
 (sources/d0_two_null_crossing_2026-10-19/check_polynomial_cartan_inverse.cjs)
 и [все пять rational quartic sectors + physical h-polynomial]
 (sources/d0_two_null_crossing_2026-10-19/check_quartic_graded_refinement.cjs).
