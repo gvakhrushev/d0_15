@@ -131,6 +131,68 @@
         }
       ],
       "reported_state": "Pinned evidence commit 8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba: symbolic all40 and finite Golden-source checker replays pass. This is a searchable result record only; no native-programme-v1 application is registered or accepted. Physical action selection, complete D0 history/clock/preparation equations, generic matter and raw #216 remain open."
+    },
+    {
+      "id": "balanced-original-x-j2-mean-source-seam",
+      "owner": "registered native response research owner #334",
+      "statement": "On the balanced subset selected from the original X_w-addressed golden histories, the corrected local two-tick J2 and moving physical-volume mean J2 have identical complete finite values and first field jets on the common nonempty null/star Brinkmann roots, yielding the same normalized finite source.",
+      "interface": "balanced-original-x-j2-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "balanced_selection": "At fixed exact cost, the selected old LEFT histories have equal counts in every original Role macro cell; unselected histories and old RIGHT outcomes remain in the archive.",
+        "cell_query": "A fixed C2 cardinal interpolation has exact nodal values at canonical macro-cell representatives; smooth-source transfer retains the owner’s stated interpolation and actual work/return budget assumptions.",
+        "common_background": "The compared first jets are evaluated on the declared nonempty common null/star roots where the sampled geometric and CAR source scalars f and q vanish and J=1.",
+        "physical_admission": "A real native LEFT-gate realization and compulsory physical selection of this balanced subset are not proved.",
+        "remaining_price": "The result does not include the full historical H+J+R price or independent preparation, clock, controller, observer, right/code variations, and does not discharge raw #216."
+      },
+      "evidence": [
+        {
+          "ref": "7e2452e7d4f25d608c8fd7f30dcd4a18ec0c84d7",
+          "path": "02_REGISTRY/research/A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_balanced_original_x_j2_2026-10-19/theorem.md",
+          "sha256": "9fc57e5a0622a7762acd2e927a7c278f7de7d7811343e52e111a2523e26579f7"
+        },
+        {
+          "ref": "7e2452e7d4f25d608c8fd7f30dcd4a18ec0c84d7",
+          "path": "02_REGISTRY/research/sources/d0_balanced_native_quantile_einstein_2026-10-19/check_balanced_native_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_balanced_original_x_j2_2026-10-19/check_balanced_native_source.py",
+          "sha256": "c88c40c151ae7c1e112835d50b06aa6e88b02c16a9f40b18bf0db929c88f463d"
+        }
+      ],
+      "reported_state": "Result-only evidence record; no application is registered. Both published source files and the Python control were independently rechecked. Original X_w microaddresses are preserved, but physical LEFT-gate admission and compulsory D0 selection remain open; first-source agreement is not off-shell action equality."
+    },
+    {
+      "id": "balanced-rank-decoder-j2-mean-source",
+      "owner": "registered native response research owner #334",
+      "statement": "An explicit deterministic Fibonacci rank/unrank LEFT decoder gives exactly balanced Role-cell counts for L=2^r; on its selected AF×scene J2 programme the owner proves exact finite common-root source matching to the moving-volume mean query and a conditional smooth Einstein-scalar mean source.",
+      "interface": "balanced-rank-decoder-j2-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "decoder": "The stated rank-to-site decoder is selected; it changes the assignment of words to sites and is not the original X_w physical address map.",
+        "exact_balance": "The exact finite theorem uses the declared Fibonacci divisibility sequence L=2^r; the separate near-balanced variant supplies a source-discrepancy estimate, not exact roots by itself.",
+        "mean_source": "The smooth off-null limit retains the owner’s bounded C2 query, true moving-volume quantile, actual J2 compile/work/return and smooth-chart assumptions.",
+        "physical_admission": "Native D0 does not yet derive or compel admission/selection of this decoder, and its full cost must include any required physical selector.",
+        "remaining_price": "No result is claimed for the complete historical H+J+R, preparation/clock/controller/right/code price, generic CAR stress, or original raw #216 terminal."
+      },
+      "evidence": [
+        {
+          "ref": "7e2452e7d4f25d608c8fd7f30dcd4a18ec0c84d7",
+          "path": "02_REGISTRY/research/A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_balanced_rank_quantile_j2_2026-10-19/theorem.md",
+          "sha256": "e3eacd663d5453412a53b4ec1a9e3f0b386dff6c7089dfb79f6741a063292559"
+        },
+        {
+          "ref": "7e2452e7d4f25d608c8fd7f30dcd4a18ec0c84d7",
+          "path": "02_REGISTRY/research/sources/d0_balanced_fibonacci_left_quantile_2026-10-19/check_balanced_left_quantile.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_balanced_rank_quantile_j2_2026-10-19/check_balanced_left_quantile.mjs",
+          "sha256": "ecb771e7127f4fba0417feeb606563e9a1c6bc4e1cdffa4269938eed1d9067ce"
+        }
+      ],
+      "reported_state": "Result-only evidence record; no application is registered. The independent JavaScript control passes BigInt rank/unrank, exact divisibility, near-balance and a sampled moving-volume J2 derivative (relative error 2.44e-8). This verifies finite controls, not native decoder admission, the full physical price or raw #216."
     }
   ],
   "applications": [
