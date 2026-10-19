@@ -146,7 +146,7 @@
         "composite_query": "The source-compatible inverse-PF factors and field-dependent T_{J/V} operand are specified inside the existing J2 law; the off-node interpolation, query execution and its real work/cost must be part of that programme.",
         "finite_source": "Exact full first-source equality is at the common nonvacuum null/star roots with f=q=0, J=1 and T=id; it is not an off-shell equality of the two query actions.",
         "mean_source": "The off-null volume-normalized Palatini/CAR source retains the owner's bounded C2 field/query, smooth sampling and compiled-work assumptions; ten metric equations additionally require the stated free constant-scaling condition, otherwise the volume term remains.",
-        "physical_admission": "The foundational D0 programme has not been shown to compel or admit this query, its inverse-PF ratios, its moving-volume map, or their full execution cost."
+        "physical_admission": "Physical admission and compulsory D0 selection of this query, its inverse-PF ratios, moving-volume map and complete execution cost have not been derived."
       },
       "evidence": [
         {
@@ -168,7 +168,7 @@
           "sha256": "582b165c51fc6c96016344ab1e9ec5f59bfc0a2bc8a9bafa502f43f00c997c09"
         }
       ],
-      "reported_state": "Pinned at PR #334 head 2f930abe5dca9b8753609384cdab22f93155405a; exact all40 and moving-source controls were replayed. This result-only record removes the balancing/decoder requirement for this specified route, not the physical-selection premise. No native-programme-v1 application is registered or accepted; full D0 cost/clock/preparation, generic matter, global recovery and raw #216 remain open."
+      "reported_state": "Pinned at PR #334 head 2f930abe5dca9b8753609384cdab22f93155405a; exact all40 and moving-source controls were replayed. This result-only record removes the balancing/decoder requirement for this specified route, but does not prove physical admission or compulsory selection. No native-programme-v1 application is registered or accepted; full D0 cost/clock/preparation, generic matter, global recovery and raw #216 remain open."
     },
     {
       "id": "balanced-original-x-j2-mean-source-seam",
