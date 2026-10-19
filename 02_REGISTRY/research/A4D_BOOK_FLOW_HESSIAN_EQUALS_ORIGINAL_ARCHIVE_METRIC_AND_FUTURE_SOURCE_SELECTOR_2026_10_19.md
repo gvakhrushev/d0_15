@@ -193,3 +193,12 @@ This directly answers the "which classes must be excluded or retained?" physical
 
 Reproducible full718 computational control:
 \`sources/d0_physical_binary_return_2026-10-19/check_book_archive_hessian_isometry.py\`. It replays exact identities to machine precision on the actual 33/718 original matrices, both class-homogeneous and a hostile single-edge price source. Formal symbolic proofs are in §§1–5; numerical replay does not claim actual original 4D geometry-to-Cost admission. \`GR_closed=false\`.
+
+
+## 7. Why this still cannot be falsely stamped FULL GR: the remaining source-selector is a provably independent original interface
+
+The original actual compiled [\`A4D_NATIVE_DYNAMICAL_OWNERSHIP.md\`](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md) §2 establishes a FULL ActionProtocol fiber \(A_c(x,y)=0\) on identities, \(1+c(x,y)\) on distinct states with arbitrary nonnegative \(c\), including two actual verified three-state symmetric triangle-compatible countermodels with different relative costs and identical verification; M1 does not force their relative cost from the primitive transition-verification axioms alone. This makes the last arrow an independently OPEN theorem, not a request to evaluate one missing large matrix.
+
+Our exact operator identity (2) and future criterion (8) work for **EVERY** given positive original Book edge Cost \(s_{uv}(y)\). They therefore CANNOT, simply by being true, determine the physically compulsory coframe+Lorentz+CAR→edge-Cost derivative. In particular (8) MUST be checked on the TRUE original physical Cost selection (including noncommutative history class, work, old RIGHT, clock) rather than imposed to force rank32 or Einstein. The existing PR #334 geometric Einstein/PALATINI owner is also a separate already-defined action; equality to it cannot be inferred from a general theorem about arbitrary edge prices. None of these limitations invalidates the exact historical/archival isometry.
+
+This closes the scientific question of **what the original scalar Book archive response is and precisely when it is readable**. It does NOT close the independently missing actual native field-to-Cost selection, which is necessary before any honest full D0→GR theorem; the original exact G0 countermodels rule out inferring it solely from bare verification/ActionProtocol. \`GR_closed=false\`.
