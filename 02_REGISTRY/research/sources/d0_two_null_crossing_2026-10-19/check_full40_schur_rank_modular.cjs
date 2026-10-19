@@ -15,7 +15,9 @@
  * It does NOT prove physical native Book action selection, nonflat
  * all-order root, or finite Fourier-mode dispersion on every torus.
  */
-const prime=1009,n=4;
+const prime=Number(process.env.D0_SCHUR_PRIME||1009),n=4;
+if(![1009,2017,65537].includes(prime))
+  throw Error("choose exact verified prime 1009, 2017, or 65537");
 const md=x=>((x%prime)+prime)%prime;
 const addn=(a,b)=>md(a+b),subn=(a,b)=>md(a-b),muln=(a,b)=>md(a*b);
 function pow(a,k){
