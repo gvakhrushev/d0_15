@@ -174,9 +174,25 @@ function audit(){
   }
   if(out[0].SchurRank!==6||out[2].SchurRank!==4)
     throw Error("missing generic rank6 or characteristic rank4 witness");
+  // Two genuine source-free TRANSVERSE-TRACELESS linearized graviton
+  // polarisations on an exact discrete null Role wave z=(2,1,1,1).
+  // They are not in the ten generic gauge directions: the nullspace
+  // expands from dimension10 to dimension12 on this mode.
+  const nullWave=Ssymbol([2,1,1,1]);
+  const ttPlus=Array(16).fill(0),ttCross=Array(16).fill(0);
+  ttPlus[4*2+2]=1;ttPlus[4*3+3]=prime-1;
+  ttCross[4*2+3]=1;ttCross[4*3+2]=1;
+  if(apply(nullWave.S,ttPlus).some(v=>v!==0)||
+     apply(nullWave.S,ttCross).some(v=>v!==0))
+    throw Error("exact transverse-traceless null polarisations are absent");
+  const ttOriginalLinkSources=[apply(nullWave.B,ttPlus),
+                               apply(nullWave.B,ttCross)];
+  if(ttOriginalLinkSources.some(row=>row.every(v=>v===0)))
+    throw Error("TT mode should have nontrivial link response before elimination");
   return {
     status:"PASS_EXACT_F1009_GENERIC_SCHUR_RANK6_AND_NULL_WARDS",
     prime,identity:"S=-C L^-1 B, S(z)^T=S(z^-1)",
+    two_exact_TT_null_polarizations:true,TT_plane_wave:[2,1,1,1],
     input:"Original all six based plaquettes and 16+24 variations",
     proof_scope:"Generic Laurent rational rank 6: analytic ten gauge nulls + exact finite-field rank6 witness",
     results:out,
