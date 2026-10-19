@@ -24,9 +24,10 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.50](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.56](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
+[exact crossed-null quadratic all-40 bootstrap](A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 and its separate finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The new owner composes the corrected same two-tick AF×scene feedback, the
@@ -36,6 +37,15 @@ distinct CAR histories with one metric and reduces any further complete-price
 transfer on that stratum to two first-source coefficients plus solved
 internal Euler rows. Its bounded checker passes after repairing a profile
 control that had accidentally tested only a global rotation at `L=4`.
+
+The exact crossed-null bootstrap in strategic §7.55 adds a noncommuting
+quadratic interaction on the same six plaquettes and all 16+24 independent
+rows. A forced `h/8` Cartan correction solves every mixed link row; the
+remaining coframe rows are exactly the Einstein overlap. For orthogonal
+transverse gradients all 40 mixed rows vanish while the crossed Weyl
+curvature stays nonzero. This is an exact `[ab]` coefficient, not an
+all-amplitude spatial root: cubic mixed sources, global compatibility and
+the same-programme price/admission remain open.
 
 The [balanced native-address source seam](A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md),
 now consumed in strategic §7.38, is the main finite-to-continuum bridge. It
@@ -86,6 +96,17 @@ inside the determinant changes that threshold. None of these aggregators has
 been selected by the physical D0 programme. The next same-programme check
 must bind the actual complete outcome law, work/preparation cost and full
 history price before using the transferred Einstein roots.
+
+The exact [Cost−Info path-boundary result](A4D_NATIVE_COST_INFO_BOUNDARY.md)
+further refines this same gate: literal vertex-attached `Info` is incompatible
+with nonzero information plus zero singleton price and additive composition,
+while transition-attached `Info` admits a one-parameter endpoint allocation.
+Closed paths erase that parameter; open retained histories carry an exact
+endpoint weight and generally a field-dependent source. The native
+same-programme binding must specify which branch event pays `Info`, whether
+initial/terminal records contribute, and how the endpoint term varies under
+admitted fields and refinement. This is a prerequisite of complete-price
+identification, not a new selector; see strategic §7.56.
 
 Strategic §7.49 closes one narrower mathematical seam: if the same complete
 two-block exterior POVM is applied conditionally on every retained original
