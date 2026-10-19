@@ -393,6 +393,88 @@ def collision_key(binding: dict) -> tuple:
     return (binding["work_key"],)
 
 
+def _repo_branch(pr: dict, side: str) -> tuple[str, str] | None:
+    value = pr.get(side)
+    if not isinstance(value, dict):
+        return None
+    branch, repo = value.get("ref"), value.get("repo")
+    repo_name = repo.get("full_name") if isinstance(repo, dict) else None
+    if not isinstance(branch, str) or not branch or not isinstance(repo_name, str) or not repo_name:
+        return None
+    return repo_name, branch
+
+
+def stacked_pr_chain(prs: list[dict]) -> list[dict] | None:
+    """Return an explicitly ordered same-repository PR stack, if unambiguous.
+
+    A shared Task field alone means duplicate ownership. A child PR whose base
+    branch is exactly another live PR's head branch is a different process
+    shape: it may be a stacked source, but its current changes still need to
+    be reconciled into the parent. We report that relation without accepting
+    the child or authorizing another execution.
+    """
+    if len(prs) < 2:
+        return None
+    by_head: dict[tuple[str, str], list[dict]] = {}
+    for pr in prs:
+        identity = _repo_branch(pr, "head")
+        if identity is None:
+            return None
+        by_head.setdefault(identity, []).append(pr)
+    if any(len(items) != 1 for items in by_head.values()):
+        return None
+
+    parent_for: dict[int, dict] = {}
+    for child in prs:
+        base = _repo_branch(child, "base")
+        candidates = by_head.get(base, []) if base is not None else []
+        if len(candidates) == 1 and candidates[0].get("number") != child.get("number"):
+            parent_for[child["number"]] = candidates[0]
+    if len(parent_for) != len(prs) - 1:
+        return None
+
+    # Accept only a single linear chain. Sibling stacks or missing links need
+    # ordinary CONTROL reconciliation, not an inferred ordering.
+    child_count: dict[int, int] = {}
+    for parent in parent_for.values():
+        child_count[parent["number"]] = child_count.get(parent["number"], 0) + 1
+    if any(count > 1 for count in child_count.values()):
+        return None
+    # A root is the one PR which is not itself based on another live PR.
+    roots = [pr for pr in prs if pr["number"] not in parent_for]
+    if len(roots) != 1:
+        return None
+    root_number = roots[0]["number"]
+    for pr in prs:
+        seen = set()
+        number = pr["number"]
+        while number in parent_for:
+            if number in seen:
+                return None
+            seen.add(number)
+            number = parent_for[number]["number"]
+        if number != root_number:
+            return None
+
+    relations = []
+    for child_number, parent in parent_for.items():
+        child = next(pr for pr in prs if pr["number"] == child_number)
+        parent_head = parent.get("head") or {}
+        child_base = child.get("base") or {}
+        child_head = child.get("head") or {}
+        relations.append({
+            "parent": parent["number"],
+            "child": child_number,
+            "parent_branch": parent_head.get("ref"),
+            "child_branch": child_head.get("ref"),
+            "parent_head_sha": parent_head.get("sha"),
+            "child_base_sha": child_base.get("sha"),
+            "child_head_sha": child_head.get("sha"),
+            "base_matches_parent_head": child_base.get("sha") == parent_head.get("sha"),
+        })
+    return sorted(relations, key=lambda item: (item["parent"], item["child"]))
+
+
 def work_digest(model: dict, binding: dict) -> str:
     interfaces = model["contract"]["interfaces"]
     return digest({"work_key": binding["work_key"], "statement": binding["statement"],
@@ -507,8 +589,41 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                 "url": pr.get("html_url", ""),
                 "state": "draft" if pr["draft"] else "ready",
                 "lifecycle": lifecycle[0] if len(lifecycle) == 1 else "lifecycle-unresolved",
+                "head_branch": (pr.get("head") or {}).get("ref"),
+                "head_sha": (pr.get("head") or {}).get("sha"),
+                "base_branch": (pr.get("base") or {}).get("ref"),
+                "base_sha": (pr.get("base") or {}).get("sha"),
             })
         if len(live) > 1:
+            stacked = stacked_pr_chain(live)
+            if stacked is not None:
+                details = []
+                for relation in stacked:
+                    sha_state = ("child base SHA matches the current parent head" if relation["base_matches_parent_head"]
+                                 else "child base SHA differs from the current parent head")
+                    details.append(
+                        f"#{relation['child']} is based on #{relation['parent']}'s branch "
+                        f"({sha_state}; child base {relation['child_base_sha']}, "
+                        f"parent head {relation['parent_head_sha']}, child head {relation['child_head_sha']})"
+                    )
+                affected = set().union(*(downstream(model, n) for n in binding["obligations"]))
+                actions.append({
+                    "task": tid,
+                    "action": "reconcile-stacked-source",
+                    "reasons": [
+                        "same-task PRs form one explicit same-repository branch stack: "
+                        + "; ".join(details)
+                        + ". Compare the child-only delta with the parent and pin the consumed child head before resolving; no new execution is authorized"
+                    ],
+                    "consumer": binding["consumer"],
+                    "assumes": binding["assumes"],
+                    "reuse_results": binding.get("reuse_results", []),
+                    "live_executions": live_executions,
+                    "stacked_relations": stacked,
+                    "potential_downstream": len(affected),
+                    "newly_ready_if_proved": 0,
+                })
+                continue
             owners = []
             for pr in sorted(live, key=lambda item: item["number"]):
                 lifecycle = metadata(pr.get("body") or "", "Lifecycle")
@@ -563,7 +678,7 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                         "reuse_results": binding.get("reuse_results", []),
                         "live_executions": live_executions,
                         "potential_downstream": len(affected), "newly_ready_if_proved": len(newly_ready)})
-    priority = {"resolve-overlap": 0, "review": 1, "resolve-blocker": 2,
+    priority = {"resolve-overlap": 0, "reconcile-stacked-source": 0, "review": 1, "resolve-blocker": 2,
                 "resume": 3, "eligible-for-control": 4}
     return sorted(actions, key=lambda a: (priority.get(a["action"], 4), -a["newly_ready_if_proved"], a["task"]))
 
@@ -600,6 +715,8 @@ def ready_obligations(model: dict, actions: list[dict]) -> list[dict]:
         next_step = "register-or-reopen-through-control"
         if proposed:
             next_step = "independent-scoped-review"
+        elif "reconcile-stacked-source" in task_actions:
+            next_step = "reconcile-stacked-source-through-control"
         elif "resolve-overlap" in task_actions:
             next_step = "resolve-overlap-through-control"
         elif "review" in task_actions:

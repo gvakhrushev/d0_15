@@ -124,10 +124,14 @@ class AssemblyTests(unittest.TestCase):
     def git(self, *args):
         return subprocess.check_output(["git", *args], cwd=self.root, stderr=subprocess.PIPE, text=True)
 
-    def pr(self, task=TASK, number=12, draft=True, lifecycle="IN_PROGRESS"):
+    def pr(self, task=TASK, number=12, draft=True, lifecycle="IN_PROGRESS", *,
+           branch=None, base_branch="main", head_sha="a" * 40, base_sha="b" * 40,
+           head_repo="gvakhrushev/d0_15", base_repo="gvakhrushev/d0_15"):
+        branch = branch or "wrk/" + task.lower()
         return {"number": number, "state": "open", "draft": draft,
                 "html_url": f"https://github.com/gvakhrushev/d0_15/pull/{number}",
-                "head": {"ref": "wrk/" + task.lower(), "sha": "a" * 40},
+                "head": {"ref": branch, "sha": head_sha, "repo": {"full_name": head_repo}},
+                "base": {"ref": base_branch, "sha": base_sha, "repo": {"full_name": base_repo}},
                 "body": f"Task: `{task}`\nClass: `WORKER`\nLifecycle: `{lifecycle}`\n"}
 
     def cli(self, *args):
@@ -452,6 +456,36 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual(row["next_step"], "resolve-overlap-through-control")
         self.assertEqual(row["registered_tasks"][0]["action"], "resolve-overlap")
         self.assertEqual([pr["number"] for pr in row["registered_tasks"][0]["live_executions"]], [12, 13])
+
+    def test_stacked_pr_is_routed_for_source_reconciliation_not_called_a_competing_owner(self):
+        parent = self.pr(branch="exp/gr-parent", head_sha="c" * 40)
+        child = self.pr(number=13, branch="exp/gr-child", base_branch="exp/gr-parent",
+                        base_sha="b" * 40, head_sha="d" * 40)
+        actions = gr.next_actions(self.model(), [parent, child])
+        row = next(item for item in actions if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-stacked-source")
+        self.assertEqual(row["stacked_relations"], [{
+            "parent": 12, "child": 13,
+            "parent_branch": "exp/gr-parent", "child_branch": "exp/gr-child",
+            "parent_head_sha": "c" * 40, "child_base_sha": "b" * 40,
+            "child_head_sha": "d" * 40, "base_matches_parent_head": False,
+        }])
+        reason = " ".join(row["reasons"])
+        self.assertIn("child base SHA differs", reason)
+        self.assertIn("no new execution is authorized", reason)
+        ready = next(item for item in gr.ready_obligations(self.model(), actions) if item["obligation"] == "A")
+        self.assertEqual(ready["next_step"], "reconcile-stacked-source-through-control")
+
+    def test_stacked_pr_detection_requires_same_repository_and_single_chain(self):
+        parent = self.pr(branch="exp/gr-parent")
+        foreign_base = self.pr(number=13, branch="exp/gr-child", base_branch="exp/gr-parent",
+                               base_repo="someone-else/d0_15")
+        row = next(item for item in gr.next_actions(self.model(), [parent, foreign_base]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "resolve-overlap")
+
+        sibling = self.pr(number=14, branch="exp/gr-sibling", base_branch="exp/gr-parent")
+        row = next(item for item in gr.next_actions(self.model(), [parent, foreign_base, sibling]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "resolve-overlap")
 
     def test_unowned_ready_obligation_requires_control_registration(self):
         self.contract["task_bindings"].pop(TASK)

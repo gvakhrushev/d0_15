@@ -27,10 +27,15 @@ answers the current question. An existing Draft is resumed; a Ready PR awaits
 review. Offline mode prints **unverified planning** and never authorizes a new
 execution. An unavailable live lookup fails closed. These commands do not
 reserve a task, create branches, message other agents or change statuses.
-If several open PRs claim one task, `next` reports `resolve-overlap` with every
-candidate and continues showing unrelated routes; reconcile that task to one
-owner before dispatching it. Overlap resolution is ranked before ordinary resume
-actions, and each live PR is shown with its title, URL and lifecycle.
+If several open PRs claim one task, `next` checks whether they form one direct,
+same-repository branch stack. A stack is reported as
+`reconcile-stacked-source`, with parent/child branches and the relevant head
+SHAs, so CONTROL can compare the child-only delta and pin the exact child head
+consumed by its parent. This relation is only GitHub branch structure; it does
+not prove that the parent contains or accepts the child's result. Other
+multiple-owner patterns remain `resolve-overlap` and require reconciliation to
+one owner before dispatch. Both actions are ranked ahead of ordinary resume,
+and neither authorizes another execution.
 
 `next` also lists `ready_obligations`: open obligations whose declared logical
 inputs are already accepted, the downstream obligations that would become
