@@ -133,6 +133,44 @@
       "reported_state": "Pinned evidence commit 8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba: symbolic all40 and finite Golden-source checker replays pass. This is a searchable result record only; no native-programme-v1 application is registered or accepted. Physical action selection, complete D0 history/clock/preparation equations, generic matter and raw #216 remain open."
     },
     {
+      "id": "original-golden-inverse-pf-moving-mean-j2",
+      "owner": "registered native response research owner #334",
+      "statement": "On the unchanged original golden-box addresses with true nonuniform native weights, a specified inverse-PF plus moving-volume-quantile operand of the same two-tick AF×scene Book03 J2 transfers the arbitrary-time Brinkmann roots with exact finite first-source equality and derives a conditional off-null Einstein-scalar mean source.",
+      "interface": "original-golden-mean-j2-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "geometric_core": "Consumes brinkmann-j2-null-family for the unrestricted six-plaquette 40-to-3-to-1 equations and the corrected two-tick null CAR source.",
+        "original_addresses": "The native exact-cost F/R words keep their original X_w locations and generally unequal positive regular-LEFT counts; the theorem proves all-site support and a uniform inverse-weight bound only along its stated logarithmic depth schedule.",
+        "composite_query": "The source-compatible inverse-PF factors and field-dependent T_{J/V} operand are specified inside the existing J2 law; the off-node interpolation, query execution and its real work/cost must be part of that programme.",
+        "finite_source": "Exact full first-source equality is at the common nonvacuum null/star roots with f=q=0, J=1 and T=id; it is not an off-shell equality of the two query actions.",
+        "mean_source": "The off-null volume-normalized Palatini/CAR source retains the owner's bounded C2 field/query, smooth sampling and compiled-work assumptions; ten metric equations additionally require the stated free constant-scaling condition, otherwise the volume term remains.",
+        "physical_admission": "The foundational D0 programme has not been shown to compel or admit this query, its inverse-PF ratios, its moving-volume map, or their full execution cost."
+      },
+      "evidence": [
+        {
+          "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
+          "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md",
+          "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8"
+        },
+        {
+          "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
+          "path": "02_REGISTRY/research/sources/d0_original_golden_inverse_pf_quantile_2026-10-19/check_original_inverse_pf_quantile.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/check_original_inverse_pf_quantile.mjs",
+          "sha256": "92551677423abc8b404fa55f598de05716aa04875cde67d329b24e96a7e56883"
+        },
+        {
+          "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
+          "path": "02_REGISTRY/research/sources/d0_balanced_native_quantile_einstein_2026-10-19/check_balanced_native_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/check_balanced_native_source.py",
+          "sha256": "582b165c51fc6c96016344ab1e9ec5f59bfc0a2bc8a9bafa502f43f00c997c09"
+        }
+      ],
+      "reported_state": "Pinned at PR #334 head 2f930abe5dca9b8753609384cdab22f93155405a; exact all40 and moving-source controls were replayed. This result-only record removes the balancing/decoder requirement for this specified route, not the physical-selection premise. No native-programme-v1 application is registered or accepted; full D0 cost/clock/preparation, generic matter, global recovery and raw #216 remain open."
+    },
+    {
       "id": "balanced-original-x-j2-mean-source-seam",
       "owner": "registered native response research owner #334",
       "statement": "On the balanced subset selected from the original X_w-addressed golden histories, the corrected local two-tick J2 and moving physical-volume mean J2 have identical complete finite values and first field jets on the common nonempty null/star Brinkmann roots, yielding the same normalized finite source.",
