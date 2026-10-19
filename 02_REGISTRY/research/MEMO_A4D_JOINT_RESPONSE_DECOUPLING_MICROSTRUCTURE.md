@@ -1,5 +1,30 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+
+## 19 October 2026 — ONE ORIGINAL HISTORY identifies full Book-feedback and its own Cost−Info source
+
+**New positive physical-readout theorem in SAME executing PR #334:** [A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md](A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md), with TWO directly executed controls: [one actual simulated Perron history](sources/d0_one_native_history_book_feedback_2026-10-19/check_one_history_book_feedback.mjs) and [all15,708 genuine 2-edge history source](sources/d0_one_native_history_book_feedback_2026-10-19/check_one_sided_original_score.mjs). It consumes the formalized ORIGINAL one-sided all-walks law and the already-owned unique 718×718 minimal reflection to the canonical Book candidate \(F=I-P_\pi^\dagger P\), WITHOUT postulating two independent futures or a stationarity reset.
+
+Given ONE complete native recorded path \(Y_0,\ldots,Y_N\) with its ORIGINAL \(\mu_0\propto r\), keep all 718 original directed transition counts \(N_{uv}\) and 33 original state counts \(N_u\). With \(\widehat P_{uv}=N_{uv}/N_u,\ \widehat\pi_u=N_u/N\), define the actual **one-history predictor-error** vector \(\widehat\epsilon_{t,i}=[1_{Y_{t+1}=i}-\widehat P_{Y_ti}]/\sqrt{\widehat\pi_i}\) and its ONE empirical Gram \(\widehat F_N=N^{-1}\sum_t\widehat\epsilon_t\widehat\epsilon_t^T\). It is positive for EVERY finite N and \(\widehat F_N\sqrt{\widehat\pi}=0\) exactly; its genuine one-sided ergodic limit is the SAME original positive conditional-variance feedback \(F=I-(D_\pi^{1/2}PD_\pi^{-1/2})^T(D_\pi^{1/2}PD_\pi^{-1/2})\). On ANY strictly positive 718-edge K(9,11,13) Markov law, this operator has EXACT rank32 (all neighboring zone supports overlap, so only the constant observable has zero future uncertainty).
+
+Thus at original Book fugacity \(z=2^{-20}\), a SINGLE genuine recorded path identifies the FULL scalar native return price
+\[
+\boxed{-\log\det(I-z\widehat F_N)\xrightarrow{a.s.}
+J_{\rm native}=0.000030035369315208\ldots .}
+\]
+There is NO re-preparation of an independently stationary π and NO quantum clone. The actual one-sided mixing parameter q=0.5531386166 implies O(N^-1) covariance mean-square error for an oracle-normalized source on the ORIGINAL chart and almost-sure consistency of its fully data-derived version. Executed deterministic one-path tests of length50,000 and300,000 yield feedback absolute errors2.1133494e-8 and3.1475966e-9. Native Perron and the WRONG row-degree random walk can be distinguished from ONE registered stream: exact asymptotic edge log-likelihood-ratio drift0.000920198932409216 nats, not a fitted probability.
+
+**Direct SAME-history physical first-source identity:** for the ORIGINAL one-sided Perron cylinder with true Cost−Info edge weights \(K_y=\varphi^{-s_y}\), the full complete depth-N recorded path law is
+\[
+\mathbb P_y(\gamma)=\rho_y^{-N}r_y(v_N)\prod_{e\in\gamma}K_y(e),\qquad
+\boxed{D\log\mathbb P_y
+=-\log\varphi\sum_{e\in\gamma}Ds_y(e)-N D\log\rho_y+D\log r_y(v_N).}
+\]
+Every allowed endpoint/failure/clock information source and the Perron normalizer are retained; moving transition probabilities are NOT frozen. For ANY fixed complete one-history observable O_N, the full statistical field source is the exact score covariance
+\(D E O_N=E[(O_N-E O_N)D\log\mathbb P_N]\). Enumerating ALL original15,708 depth2 scene histories for a varying TRUE 9-11 cost orbit gives nonzero source0.02525998242984, agreeing with the independent derivative of the whole moving full-path distribution0.02525998234415 to 8.57e-11. The original candidate J's independently computed symmetric-orbit cost first jet agrees with matrix finite difference to6.65e-14.
+
+**Physics/registry:** this closes the mathematical and observable need for chosen F, unpriced independent future copies, imposed stationary initial data, or an unknown 718×718 unitary just to READ the complete positive feedback. It still DOES NOT demonstrate that mandatory Book03 physically prices this reconstructed J, that the original quantum Golden/Julia gate executes its F, or that its actual complete field source equals the independent original 16+24+CAR Einstein/Palatini source. One measured history never by itself makes its own statistical observable the physical action. The real gr_assembly register still has constitutive, native_sector, matter_source_ward and GR OPEN. Keep this accepted-as-research, not a claims.csv/BOOK/CORE promotion.
+
 ## 19 October 2026 — canonical ORIGINAL 718-edge reflection: exact history-to-Book operator without arbitrary extension
 
 **NEW strictly positive concrete native-history synthesis, same executing #334:** [A4D_NATIVE_PERRON_HISTORY_CANONICAL_MINIMAL_REFLECTION_2026_10_19.md](A4D_NATIVE_PERRON_HISTORY_CANONICAL_MINIMAL_REFLECTION_2026_10_19.md) and [genuinely executed independent 718-edge original-scene checker](sources/d0_perron_history_canonical_reflection_2026-10-19/check_canonical_reflection.mjs). This consumes the original formal owner D0.VNext2.SceneHistoryPerronTrace and the existing full718 conditional-variance positive-effect owner, eliminating the previously **ARBITRARY choice of full orthogonal extension U_E**. It is **NOT** a new physical selected Book03 action or CORE claim; claims.csv and gr_assembly/VIEW correctly keep full GR, constitutive, native_sector and matter source OPEN.
