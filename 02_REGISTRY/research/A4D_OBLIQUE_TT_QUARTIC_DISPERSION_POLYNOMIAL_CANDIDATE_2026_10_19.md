@@ -1,6 +1,6 @@
-# D0 → GR: quartic oblique-graviton dispersion polynomial — exact sampled source, universal identity OPEN
+# D0 → GR: exact arbitrary-null quartic TT Taylor completion; finite-h dispersion and native action remain open
 
-19 October 2026. **RESEARCH / EXACT F1009 AND F65537 FINITE-FIELD SAMPLES / UNIVERSAL FORMULA HYPOTHESIS-TO-CERTIFY.** Same existing scientific integrator Draft #334. Original six-based proper-Lorentz star action, all 16+24 independent Euler, old Book/native actions and all accepted owners remain unchanged. No GR promotion; GR_closed=false.
+19 October 2026. **RESEARCH / EXACT RATIONAL IDENTITY THROUGH THE h^4 TT JET, WITH ORIGINAL-SOURCE REPLAY.** Same existing scientific integrator Draft #334. The earlier F1009/F65537 reconstruction is now superseded at quartic Taylor order by an exact corrector construction over the rational-function field \(\mathbb Q(u,x,y)\) on the real null cone, including both null-exponent branches and exceptional real charts. Original six-based proper-Lorentz star action, all 16+24 independent Euler, old Book/native actions and accepted owners remain unchanged. No GR promotion; GR_closed=false.
 
 **Consumption:** [the original full40 generic rank-six Schur](A4D_FULL40_EXACT_FLAT_SCHUR_RANK_SIX_GAUGE_AND_CHARACTERISTIC_2026_10_19.md), [the already-owned full-ten Schur–Einstein direct polynomial theorem](A4D_SCHUR_EINSTEIN_DIRECT_IDENTIFICATION.md), and [the two-null quartic exact amplitude jet](A4D_DOUBLE_NULL_CUBIC_EINSTEIN_QUARTIC_AREA_WARD_2026_10_19.md). The previously known flat S2=Einstein identity is not claimed anew here.
 
@@ -45,11 +45,11 @@ With \(Q=x^2+y^2=2uv\), \(P=xy\), define the compact homogeneous quartic polynom
 -6(u+v)(x+y)Q
 +2(u^2+v^2)Q.}\tag{4}
 \]
-Then the proposed universal directional coefficient is
+The directional correction inferred from the original Schur equations is
 \[
 \boxed{\gamma_{\rm cand}(k)=\mathscr D_4(k)/(48u),\qquad u\ne0.}\tag{5}
 \]
-The actual original finite all40 Schur/TT equations (1) give the **same gamma for both PLUS and CROSS** on each of 28 original reconstruction directions and 16 genuinely independent held-out rays. All 44 rays pass in BOTH exact fields F1009 and F65537, i.e. 88 ray tests, 176 checked polarization answers. No floating-rank tolerance or second physical detector/source enters this comparison.
+The actual original finite all40 Schur/TT equations (1) give the **same gamma for both PLUS and CROSS** on each of 28 original reconstruction directions and 16 genuinely independent held-out rays. All 44 rays pass in BOTH exact fields F1009 and F65537, i.e. 88 ray tests, 176 checked polarization answers. No floating-rank tolerance or second physical detector/source enters this comparison. The later exact rational proof is recorded in §4.
 
 Representative EXACT rational values inferred consistently from two exact finite fields and the proposed (5):
 
@@ -70,15 +70,39 @@ Previous experimental working notation \(+1/4\) for (2,1,2,0) was a SIGN ERROR; 
 
 The degree-four polynomial space separately invariant under swapping u/v and x/y has dimension14. On the invariant null hypersurface \(2uv=x^2+y^2\), its degree-four quotient has dimension 14−5=**9**: multiply the invariant null quadratic by each of the five independent invariant degree-two polynomials. The 44-row, 14-column invariant evaluation matrix has exactly rank9 over both F1009 and F65537, and the actual measured \(-2u\gamma\) lies in its column space. Solving within this explicit **9-dimensional declared hypothesis class** gives one compact representative (4), unique on the null hypersurface up to adding a quartic multiple of the null relation.
 
-**Crucial logical firewall:** the finite source evidence does NOT prove that the TRUE arbitrary-k gamma belongs to that 9-dimensional quartic-invariant polynomial class instead of being a rational homogeneous function with an extra denominator. The universal formula is therefore **HYPOTHESIS-TO-CERTIFY**, despite 44 independent exact finite samples and rigorous uniqueness conditional on the class.
+**Historical logical firewall:** those finite samples alone did NOT prove that the arbitrary-k correction belonged to the 9-dimensional polynomial class. Section §4 closes that specific quartic Taylor-jet question by constructing exact rational correctors directly from the original Schur equations. It does not turn the displayed coefficient into an all-order lattice dispersion law.
 
-## 3. Reproducibility and next single theorem
+## 3. Reproducibility and remaining gates
 
 The [44-direction checker](sources/d0_two_null_crossing_2026-10-19/check_oblique_tt_quartic_polynomial.cjs) reads the ORIGINAL all40 source and checks two TT polarisations, 28 reconstruction rays, 16 unseen holdouts, quartic invariant rank9 and first-corrector freedom. Run in this directory with Node.js, optionally setting D0_SCHUR_PRIME=65537. It independently reported PASS_QUARTIC_CANDIDATE_44_NULL_RAYS_AND_CORRECTOR_INDEPENDENCE on BOTH moduli. The [parent direct momentum derivative](sources/d0_two_null_crossing_2026-10-19/check_oblique_tt_directional_dispersion.cjs) uses exact equation (2). These scripts do not rerun old Lean/refinement/native physical cost owners.
 
-**Next decisive mathematical step:** prove, by symbolic rational cancellation for arbitrary \(k\) on \(2uv=Q\), the complete physical TT solvability of (1) after inserting (5), including the TWO independent transverse projections and actual denominator clearing. In exact symbolic terms the source
+The arbitrary-null quartic Taylor identity is now proved in §4. The next geometric steps are to determine the actual finite-h characteristic pole/residue and a refinement-uniform estimate. The nonlinear finite-root and authentic full-native retained-history Book/Cost−Info selection remain separate open inputs. GR_closed=false.
+
+## 4. Exact rational completion on both null-exponent branches
+
+The new [symbolic checker](sources/d0_two_null_crossing_2026-10-19/check_oblique_tt_quartic_symbolic.py) rebuilds the original six-face \(L/B/C\) Taylor blocks through order three, forms the exact \(S_2,S_3,S_4\) Schur coefficients using the original \(\det L_0=256\) inverse, and substitutes \(v=Q/(2u)\). Before restricting to the cone, it verifies both exact momentum-derivative identities
+
 \[
-\Pi_{\rm TT}^{\rm left}
- [S_4e_0+S_3e_1+\gamma_{\rm cand}\,\partial_vS_2e_0]
+\partial_uS_2=-C_1(e_u)L_0^{-1}B_1(k)-C_1(k)L_0^{-1}B_1(e_u),\qquad
+\partial_vS_2=-C_1(e_v)L_0^{-1}B_1(k)-C_1(k)L_0^{-1}B_1(e_v).
 \]
-must vanish as a polynomial/rational identity, modulo the null quadratic, with no fitted extra source. This is stronger than another ray test. Then establish the real complex-wave characteristic pole/residue and uniform h-refinement; the original nonlinear degree-four crossed-Weyl vacuum jet, all-order joint roots and authentic full-native retained-history Book/Cost−Info selection remain separate OPEN inputs. GR_closed=false.
+
+For each of the two TT polarizations it constructs rational \(e_1,e_2\) over \(\mathbb Q(u,x,y)\) and exactly verifies
+
+\[
+S_2e_0=0,\qquad S_2e_1+S_3e_0=0,
+\]
+\[
+S_2e_2+S_3e_1+S_4e_0+\gamma_v(\partial_vS_2)e_0=0,\quad
+\gamma_v=\frac{\mathscr D_4}{48u},
+\]
+and, when \(v\ne0\),
+\[
+S_2e_2+S_3e_1+S_4e_0+\gamma_u(\partial_uS_2)e_0=0,\quad
+\gamma_u=\frac{\mathscr D_4}{48v}.
+\]
+Here \(\mathscr D_4\) is the same numerator in (4), not a newly fitted source. Exact checks on the real exceptional strata \(y=0\) and \(x=y=0\) cover the denominators of the generic correctors: for every real null ray in the \(u\ne0\) chart, the \(v\)-branch works, and for \(v\ne0\) the \(u\)-branch works as well. On the null axis \(x=y=0\), only the \(v\)-branch is asserted. The checker reports rank \(4\) for \(S_2\) and for each augmented corrector system, with every residual identically zero in the corresponding rational-function field.
+
+As a hostile source control, the symbolic \(L/B/C\) Taylor blocks and \(S_2,S_3,S_4\) are compared to the original JavaScript implementation at four independent null rays modulo \(1009\); both branch coefficients are compared there too. The receipt pins the checker and both source owners by SHA-256. This exact calculation replaces the 44-ray polynomial-class hypothesis for the stated Taylor equations.
+
+**Scope boundary:** this proves formal TT solvability through \(h^4\), not convergence of the Taylor series, an all-order finite-\(h\) pole or residue, a nonlinear periodic root, a refinement-uniform continuum limit, or selection of the same-run physical Book/Cost−Info action. The detector and complete-instrument sources in the linked CAR owners are information/readout candidates until their preparation, clock, work, and full history price are bound to the compulsory native execution. GR_closed=false.
