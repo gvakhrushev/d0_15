@@ -117,10 +117,61 @@ Since the LITERAL Golden blank probabilities satisfy \(g_3/g_2=p\), the correct 
 \frac{\operatorname{Tr}P^2}{\operatorname{Tr}P^3}.
 }\tag{10}
 \]
-Hence the actual original scalar \(\mathcal A_{\rm abs}=-\log_\varphi\lambda\) and ALL Euler jets are physically identifiable from the accepted 8,440 law **IF AND ONLY IF** the actual **effective acceptance odds \(\beta_3/\beta_2\)** are determined/retained independently by the native same-run preparation/clock/cost programme (or the physical admissible class pins an equivalent unique ratio). There is exactly ONE unknown scalar function — not a new 686-dimensional selector — and the clock-depth rejected-attempt labels are a concrete sufficient registered datum in the declared model.
+Hence the actual original scalar \(\mathcal A_{\rm abs}=-\log_\varphi\lambda\) and ALL Euler jets are physically identifiable from the accepted 8,440 law **IF AND ONLY IF** the actual **effective acceptance odds \(\beta_3/\beta_2\)** are determined/retained independently by the native same-run preparation/clock/cost programme (or the physical admissible class pins an equivalent unique ratio). There is exactly ONE unknown scalar function — not a new 686-dimensional selector — and the rejection STAGE labels (before versus after the depth preparation gate), or an independently selected effective acceptance ratio, are concrete sufficient data in the declared model. A final reject-depth label WITHOUT the stage can still be insufficient, as proved in §5.
 
 The 143480 observed Golden/Bell probabilities have rank692 in the restricted mathematical parameter chart where \(\beta\) is FIXED/KNOWN. When the physically unknown one-dimensional acceptance-ratio input is added as a parameter, an extra exact zero-source clock/pressure gauge direction appears: the tape still determines 692 combinations but does not separately identify the Book absolute Euler source. In particular the claimed 692 positive Fisher rank is NOT false; it is **a conditional parameter-domain rank** and must not be promoted to physical \(40+\mathrm{matter}\) identifiability before clock-admission.
 
 This gauge is in addition to the already-owned 65-dimensional original primitive \((718\ Cost+33\ Info)\to686\ scalar\ Book\) constitutive kernel. Even after fixing clock, the true original Cost-vs-Info/oldRIGHT/paid-work split and noncommutative pretrace \([q(\gamma)]\) remain independently mandatory for full Einstein–CAR action selection. The actual same-run 16+24+matter Euler and uniform #216/refinement gates are STILL open. \`GR_closed=false\`.
 
 **Exact independently executed** full native 8440×17 checker: \`sources/d0_physical_binary_return_2026-10-20/check_native_8440_clock_acceptance_gauge.py\`. It builds all actual original ABC 2/3 paths, nonuniform directed net original Costs, all16 complete Golden marks plus the 17th Bell-failure, checks the fieldwise equality over 143480 cells, genuine Golden p,p² blank preservation, bounded accepted/rejected rates, and the exact +2 absolute scalar Book Hessian defect. This is NOT an executable compulsory GoldenCoherentMemory physical programme, and does not assert a G0 no-go.
+
+
+## 5. STRONGER complete-instrument NO-GO: even ALL terminal rejected-depth labels can be identical
+
+To remove any hidden objection that the complete 143480 law forgot the CLOCK failure, we explicitly construct a **FULLY NORMALIZED POSITIVE FINITE INSTRUMENT** with **143482 outcomes**, all original 8440 successful paths times the exact original Golden/Bell 17 full outcomes plus TWO independently labelled terminal failures \(F_2,F_3\) (one per attempted depth). Both counterprogramme laws remain EXACTLY the same as field functions on **EVERY one** of these 143482 outcomes.
+
+Consume the same literally fixed original Golden blank depth attempt law \(g_2=p,\ g_3=p^2\). Choose the finite positive **conditional mathematical filter** \(\kappa=p^{20}\) (an existing Golden power/cost word; this is a declared finite test filter, NOT claimed to be an admitted/compulsory G0 implementation). On the actual original canonical or higher positive-Cost graph, for depths \(n=2,3\) its supported closed path weights \(W_\gamma(K)=\prod K_e\) satisfy \(\kappa Z_n(K)\le1\) in the stated tested chart; at canonical Cost=1 this is explicitly verified. Introduce TWO physically distinct, conditionally positive stages:
+- after the literal Golden depth flag n, a clock/preparation gate accepts with \(\beta_n\in(0,1)\); its early failure is \(E_n\);
+- after clock preparation succeeds, a native-type literal-path test accepts individual supported closed word γ with probability \(\kappa W_\gamma(K)\), rejecting everything else as \(B_n\).
+
+The TRUE normalized FULL recorded positive probabilities, if the instrument keeps the path labels but **coarsens the two internal failure causes to one final failed-depth label**, are
+\[
+\boxed{
+\Pr(\gamma,r)=g_{|\gamma|}\beta_{|\gamma|}\kappa W_\gamma(K)\,
+\mathfrak q_r(U),\quad
+\Pr(F_n)=g_n\,[1-\beta_n\kappa Z_n(K)].
+}\tag{11}
+\]
+All 17 original Bell/Golden outcomes r are retained on successful paths, INCLUDING Bell failure (its mass is 4095/4096), and both clock terminal failure depth labels are retained. Positivity and **total normalization exactly one** follow immediately by summing over γ at each depth then over n, with \(g_2+g_3=1\). No 'successful event conditioning' is used in this §5 full law.
+
+Now take the ORIGINAL cost floor \(C_e^{(0)}=1,\ C_e^{(1)}(t)=1+t^2\) on all 718 edges, and fixed original Info. Thus \(K_1(t)=c(t)K_0\), \(c(t)=\varphi^{-t^2}\), while the LITERAL Golden depth probabilities \(g_2=p,g_3=p^2\) remain EXACTLY fixed for every t. Use \(\beta_n^{(0)}=p^2\), \(\beta_n^{(1)}(t)=p^2c(t)^{-n}=p^2\varphi^{nt^2}\) (bounded by 1 for \(|t|\le1/5\)). Then
+\[
+\boxed{
+\Pr_1(\gamma,r;t)=\Pr_0(\gamma,r;t),\quad
+\Pr_1(F_n;t)=\Pr_0(F_n;t)
+\quad\forall 143482\ {\rm outcomes},\ \forall |t|\le1/5,
+}\tag{12}
+\]
+because \(\beta_n^{(1)}W_\gamma(K_1)=\beta_n^{(0)}W_\gamma(K_0)\) for each path and also for each complete total \(Z_n\). Yet the genuine primitive absolute Book pressure has
+\[
+\boxed{\mathcal A_1(t)-\mathcal A_0(t)=t^2,\quad
+\mathcal A_1''(0)-\mathcal A_0''(0)=2.}\tag{13}
+\]
+
+The 143482-label detector is a perfectly normalized **mathematical finite positive instrument** with literal original Golden p,p², Bell17 FULL flag (including failure), real native 2/3 paths and both final clock failure depths. But it is NOT the original G0 executable instrument until actual preparation/decoder/work admissions are proved. Its existence shows that **even observing every FINAL depth-labelled failure can be insufficient to select absolute primitive Book Cost**, because an internal redistribution of two serial filter losses can survive the final coarse recording.
+
+The TRUE distinguishable full internal archive retains separately
+\[
+\Pr(E_n)=g_n(1-\beta_n),\quad
+\Pr(B_n)=g_n\beta_n[1-\kappa Z_n(K)].
+\]
+Their sum is \(F_n\) and is identical in both programmes, but separately they differ:
+\[
+\boxed{
+\bigl[\Pr_1(E_n)-\Pr_0(E_n)\bigr]''(0)
+=-2g_np^2 n\ln\varphi\ne0.
+}\tag{14}
+\]
+Hence the *exact* finite source-preservation gate is: retain and price the ACTUAL clock/preparation-vs-path-verification rejection **STAGE**, or prove its conditional probability law is fixed by the original native programme so the nuisance clock-to-path redistribution cannot occur. Merely labelling the final depth F_n and saving downstream Bell failure does not fix the absolute Book source.
+
+The augmented checker builds ALL 143482 strictly positive full events with \(\kappa=p^{20}\), proves their total probability one and equality under the two programmes on the entire two-sided field chart, and confirms the first-stage reject record breaks equivalence. No extra gravity or physical selector has been installed. \`GR_closed=false\`.
