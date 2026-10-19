@@ -98,6 +98,8 @@ The subsequent all-order face result is stronger than that finite witness: condi
 
 There is already a conditional nonvacuum matter consumer: [the local LEFT-coded CAR16 Book03 result](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md) derives a nonzero Clifford-square metric source and exact finite sourced Einstein-null-scalar Euler solution from one complete two-tick trace-log. This means a mathematical CAR matter row exists; it does not establish that mandatory native execution selects and pays for that controlled word or its full H+J+R, oldRIGHT/ref128, preparation, clock and work. Therefore the remaining task is the one-run physical weld, not discovery of another candidate Einstein equation. `GR_closed=false`.
 
+The refinement side is also sharper: the complete positive 52/53-event Julia owner gives a conditional spatial C² compiler subsequence, and the new marked-Poisson replay keeps a nonzero six-Lorentz Fisher limit with O(h⁻²) marked ticks. Neither theorem selects the physical clock or proves the same full Cost−Info source; exact roots still need the stated nonzero-degree and uniform Euler-error hypotheses or another root argument.
+
 The new owner composes the corrected same two-tick AF×scene feedback, the
 original exact 40-row Lorentz-star table and full CAR16 Hodge matter into a
 nonempty finite Einstein+matter sector. It constructs a growing torus of
