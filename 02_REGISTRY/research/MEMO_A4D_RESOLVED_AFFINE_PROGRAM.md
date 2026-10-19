@@ -75,8 +75,9 @@ CAR principal-Gram formula `D25`; their admission and compiler/source budget
 are open. Moving old-history probabilities retain their own `D H(π)` source.
 The decisive next step is one same-carrier admission-and-source calculation:
 test whether the actual native record supports the full exterior POVM after
-`C_Y`, retains every outcome and charges its complete `H(Y,S)` history; if it does, compute every address,
-readout, preparation, observer, clock, work and geometry row from that law.
+`C_Y`, retains every outcome and charges its complete `H(Y,S)` history; if it
+does, compute every address, readout, preparation, observer, clock, work and
+geometry row from that law.
 If the admitted instrument is instead the two-tick feedback, prove or refute
 its branchwise complete good/failure effect and compute those same rows. In
 either case compare the resulting full source with the two-coefficient
