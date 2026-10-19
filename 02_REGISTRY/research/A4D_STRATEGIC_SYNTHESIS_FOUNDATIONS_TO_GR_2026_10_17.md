@@ -4828,9 +4828,10 @@ geometric field roots.
 
 The latest attached [`C_Y` synthesis input](sources/d0_instrument_to_native_price_synthesis_2026-10-19/INPUT_CY_PERRON_GR_SYNTHESIS_RU.txt),
 preserved byte-for-byte with its digest in the adjacent README, contains a
-real finite-\(t\) vacuum result: on the already prepared capacity profile, its exact query source has
-the same vacuum critical set as the geometric source. That is stronger than
-the earlier \(C^1\) compiler estimate, which concerns approximate words.
+real finite-\(t\) vacuum result: on the prepared capacity profile, its exact
+query source has the same vacuum critical set as the geometric source. That is
+stronger than the earlier \(C^1\) compiler estimate, which concerns
+approximate words.
 It does not select the capacity profile. `C_Y` copies an existing LEFT
 address and preserves its marginal; the response-preserving result in §7.40
 does not let this copy reweight that marginal; see the [response-preserving
@@ -4840,9 +4841,11 @@ owner §7.49 does carry an independent CAR variation, but its physical
 admission and its complete preparation/clock/work price remain conditional.
 
 The exact [scene-Perron owner](A4D_SCENE_PERRON_DOOB_SINGLE_HISTORY_GOLDEN_INFO_SOURCE_2026_10_19.md)
-now gives a principled alternative to treating
-the address law as a freely minimized \(H/\ell\). For the specified positive
-scalar edge transfer
+gives an endogenous law and source for the **33 scene states** under a
+specified positive scalar edge transfer. This is a candidate route for the
+complete-history branch (ii) in §7.62, but it does not identify scene states
+with the retained LEFT addresses whose distribution is \(\pi\) there. For
+that transfer,
 
 \[
 K_\theta(u,v)=\varphi^{-s_\theta(u,v)},\qquad
@@ -4862,11 +4865,13 @@ D\log_\varphi\lambda[V]
 
 The same owner proves a one-correlated-history Golden code whose per-step
 value and first source converge to this pressure, including the moving
-stationary preparation. Thus the arbitrary-simplex \(W(\pi,g)\) question in
-§7.62 can be replaced by one typed question: does the *actual complete D0
-history* induce this positive transfer and its normalized law? If yes, the
+stationary preparation. The arbitrary-simplex \(W(\pi,g)\) question in §7.62
+is replaced only if the native preparation-to-history map identifies its
+retained-address law with this 33-state scene law and the complete record
+really has these scalar path weights. Under that typed identification, the
 bulk preparation is Perron-selected by the history weights; no separate
-capacity maximization or fitted prior is needed for that scalar sector.
+capacity maximization or fitted prior is needed for that sector. The current
+owners have not proved the identification.
 
 The bulk-selection implication itself is exact under that scalar hypothesis.
 If every length-\(N\) legal scene walk is present with weight
@@ -4884,9 +4889,10 @@ primitivity and Perron–Frobenius give
 \]
 
 So route (ii) of §7.62 is not an independent entropy-maximization postulate
-once this is the actual scalar full-history law: its bulk preparation is
-forced by the normalized Book weights. This derivation does not replace the
-ordered role-algebra factor in Book 03's actual sum.
+once this is the actual scalar full-history law on the same address carrier:
+its bulk preparation is forced by the normalized Book weights. This
+derivation does not itself identify the retained-address carrier or replace
+the ordered role-algebra factor in Book 03's actual sum.
 
 That antecedent is still the decisive gap. [Book 03 §03.3.0](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md)
 defines the full sum as
@@ -4915,7 +4921,8 @@ that the full preparation Euler is free to remove.
 The geometry side has also advanced: §7.58 and the [exact quartic
 owner](A4D_DOUBLE_NULL_CUBIC_EINSTEIN_QUARTIC_AREA_WARD_2026_10_19.md) solve
 the original 40 finite Cartan/coframe rows through total crossed-null
-amplitude degree four on one local unwrapped section, retaining nonzero Weyl curvature.
+amplitude degree four on one local unwrapped section, retaining nonzero Weyl
+curvature.
 This is a nonlinear consistency jet, not a periodic finite root, an all-order
 solution, or uniform refinement. The endgame is now one composition on one
 carrier: (i) identify the complete native history transfer including
