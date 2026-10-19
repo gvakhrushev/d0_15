@@ -129,6 +129,20 @@ function audit(){
       throw Error("first corrector changes quartic source at "+k);
     gaugeControls.push({k,TT_zero_modes:12,rankS2:4,rankS2_plus_S3_ker:4});
   }
+  // Branch-independence: the same characteristic quartic polynomial
+  // arises if k_u, rather than k_v, is corrected. This is a separate
+  // ORIGINAL-SCHUR solve, not a gauge change of the prior output.
+  const branchControls=[];
+  for(const k of [[1,2,2,0],[1,4,2,2],[1,5,1,-3],
+    [1,5,-1,-3],[2,5,2,4],[4,5,2,6],[3,3,3,3],[5,5,1,7]]){
+    const vu=oneRay(k,0),expect=times(numerator(k),inv(48*k[1]));
+    const oldV=observed.find(row=>row.k.every((x,i)=>x===k[i]));
+    const gammaV=oldV?oldV.gamma_mod_p:oneRay(k,1).plus.gamma_mod_p;
+    if(vu.plus.gamma_mod_p!==expect||vu.cross.gamma_mod_p!==expect||
+       times(k[1],expect)!==times(k[0],gammaV))
+      throw Error("physical null-branch dispersion mismatch "+k);
+    branchControls.push({k,gamma_u:expect,gamma_v:gammaV});
+  }
   return {
     status:"PASS_QUARTIC_CANDIDATE_44_NULL_RAYS_AND_CORRECTOR_INDEPENDENCE",
     prime,training_rays:training.length,independent_holdouts:holdouts.length,
@@ -138,6 +152,8 @@ function audit(){
     gamma_formula:"(5Q²+12PQ−4P²−6(u+v)(x+y)Q+2(u²+v²)Q)/(48u), Q=x²+y², P=xy",
     no_tested_plus_cross_birefringence:true,
     null_corrector_ambiguity:gaugeControls,
+    null_branch_equivalence_controls:branchControls,
+    same_scalar_characteristic_numerator:true,
     observed:observed,
     status_scope:"EXACT FINITE-FIELD SAMPLED HYPOTHESIS, NOT UNIVERSAL POLYNOMIAL IDENTITY; GR_closed=false"
   };
