@@ -49,8 +49,14 @@ quantile and local two-tick `J₂` queries have the same complete first source,
 so the already-owned 16-coframe+24-link+2-scalar Einstein roots transfer
 exactly to the distinct volume-mean query at every mesh. The same balanced
 mean query has the conditional general nonlinear Einstein–scalar continuum
-source; its mean-value term remains unless a genuine unrestricted global
-scale Euler equation of the complete price forces it to zero. This closes
+source, normalized by the selected subrecord's own regular mass rather than
+the old full-prefix factor. Exact balance makes its moving-query sample the
+composite midpoint rule; under uniform spatial `C²` bounds for the query and
+its field derivative, the sampling contribution to the `C¹` source error is
+`O(h²)`. Stencil, compiler and regular/PF multiplicity errors remain separate
+and can still be `O(h)`. Its mean-value term remains unless a genuine
+unrestricted global scale Euler equation of the complete price forces it to
+zero. This closes
 the named mathematical root/source seam for a specified AF×scene `J₂`
 programme, not the physical selection of the original full `H+J+R` or its
 preparation, observer, clock and raw `#216` rows.
