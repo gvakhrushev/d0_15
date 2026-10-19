@@ -3556,3 +3556,49 @@ used by the current native-address/admission route must be evaluated on the
 shift block and then the Lorentz-link block; this is a necessary interface
 test, not a replacement for that route or the separate §7.44 joint-critical
 continuation. No Einstein closure is promoted.
+
+### 7.46. The complete C_Y history price still needs its native preparation law
+
+The latest supplied C_Y/Book synthesis is already preserved byte-for-byte as
+[`USER_NATIVE_PRICE_SYNTHESIS_2026_10_18.txt`](sources/d0_af_star_full_lattice_2026-10-17/USER_NATIVE_PRICE_SYNTHESIS_2026_10_18.txt)
+(SHA-256 `d5706efac0dc8791f010557810a1e1ad835b3fdc2f8578432e5f13f883bd2570`).
+Its exact vacuum calculation remains useful, but the implication
+`C_Y → H(Y,J)=log D` needs a preparation hypothesis. The owned effect identity
+is
+\[
+J_Y^*(I\otimes|enc(i)\rangle\langle enc(i)|)J_Y=P_i^L,
+\qquad \Pr(Y=i)=\pi_i.
+\]
+Thus on the response-preserving bridge the copied leaf keeps the input
+marginal. For conditional terminal law `$q_i(s)$`, its actual joint entropy
+is `$H(π) + Σ_i π_i H(q_i)$`, not generally `$log D$`. The capacity
+profile `$π_i = Z_i/Σ_j Z_j$` is a different preparation-state variation;
+if that variation is admitted, its `$D H(π)$` is part of the same source.
+This is the exact boundary in [the C_Y response-preserving result](A4D_CY_RESPONSE_PRESERVING_CAPACITY_BOUNDARY_2026_10_19.md)
+and §7.40, not a no-go for operations outside its declared class.
+
+The supplied full-history price also cannot be replaced by detector entropy
+alone. Full-source §6.81 gives separate expected-code and MAP identities only
+after fixing one complete history frame, its raw normalizer, all measured
+prefix/factory/work records and their field dependence. It explicitly leaves
+the link from Book03's statistical sum to that same physical frame open.
+Separately, §6.70 proves a positive preparation gap for the capacity target
+inside the named fine-RIGHT-preserving class; `C_Y` copying does not supply
+the missing fresh-descendant actuation.
+
+The new §6.82 coherent sideband is a real flat old-v8 CAR Rayleigh state with
+a nonzero null two-field readout. It improves the matter-preparation
+candidate, but it is not yet an eigenstate of the curved full CAR/AF/RIGHT
+operator and has no same-carrier full `H+J+R+Book` Euler proof. It therefore
+does not yet furnish the independent source for the selected native price.
+The arbitrary Brinkmann all-40/J2 family remains the exact conditional
+Einstein–matter consumer; its controller, full history price and preparation
+are still to be derived from native execution.
+
+**Next same-process theorem:** derive the field-dependent old-leaf law, the
+complete terminal outcome law and the entire Book Cost–Info price (including
+preparation, clock, work and retained history) on one admitted carrier; then
+solve all CAR, observer, metric and link rows and compare that one source with
+the two-coefficient Brinkmann consumer. Until this is done, the current
+native-address/J2 route remains the consuming route, while C_Y/capacity and
+the coherent sideband are conditional vacuum and preparation results.
