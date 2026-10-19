@@ -144,6 +144,35 @@ const second=2;
 const d2Early=[2,3].map(j=>-2*g[j]*p*p*j*ell);
 check(d2Early.every(v=>v<0)&&Math.abs(second-2)<1e-15,
       "COMPLETE native-stage source has genuine nonzero second derivative despite identical terminal-law jets");
+
+// NECESSARY hostile control: this source inverse requires the SAME
+// path-verification filter κ at both depths. If unknown depth-specific
+// κ2 and κ3 are allowed, even full EARLY/LATE archive-stage records
+// fail to determine the absolute Book pressure.
+const ambiguous=(()=>{
+ const K=makeK(t,true),c=phi**(-t*t);
+ const kappan={2:kappa/c**2,3:kappa/c**3},beta={2:p*p,3:p*p};
+ const Z={2:0,3:0},qPath=patterns.map(word=>{
+  const n=word.length-1,
+   w=word.slice(0,-1).reduce((s,u,j)=>s*K[u][word[j+1]],1);
+  Z[n]+=w;return g[n]*beta[n]*kappan[n]*w;
+ });
+ const early={2:g[2]*(1-beta[2]),3:g[3]*(1-beta[3])};
+ const late={2:g[2]*beta[2]*(1-kappan[2]*Z[2]),
+             3:g[3]*beta[3]*(1-kappan[3]*Z[3])};
+ return {K,kappan,beta,early,late,qPath};
+})();
+let maxUnseen=0;
+for(let i=0;i<8440;i++)
+ maxUnseen=Math.max(maxUnseen,Math.abs(ambiguous.qPath[i]-control.qPath[i]));
+for(let j of [2,3])
+ maxUnseen=Math.max(maxUnseen,Math.abs(ambiguous.early[j]-control.early[j]),
+                    Math.abs(ambiguous.late[j]-control.late[j]));
+check(maxUnseen<3e-15&&Math.abs(PF(ambiguous.K)-PF(control.K))>.01,
+ "HOSTILE: depth-dependent verifier κ2,κ3 hides absolute Book Cost even with ALL full staged records");
+check(Math.abs(ambiguous.kappan[2]-ambiguous.kappan[3])>1e-8,
+ "one shared unknown original verifier κ versus independently varying κ2/κ3 is the true physical selection boundary");
+
 console.log(JSON.stringify({
  status:"ORIGINAL 143484-OUTCOME COMPLETE STAGE-RESOLVED BOOK/GOLDEN SCALAR SELECTOR INVERSE",
  true_original_directed_edges:718,true_original_clock_words:8440,
