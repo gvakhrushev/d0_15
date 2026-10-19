@@ -11,7 +11,7 @@ This is NOT an original finite six-plaquette all40 Cartan root;
 the finite cubic link equations and native complete price remain open.
 """
 import sympy as s
-a,b,x,y,h=s.symbols("a b x y h",real=True,nonzero=False)
+a,b,x,y,h=s.symbols("a b x y h",real=True)
 R=s.Rational
 
 def cut(expr):
