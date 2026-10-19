@@ -127,3 +127,32 @@ Original raw #216, true physical M1/G0 Book action, clock/Cost selector and nonl
 - [one TRUE 8440 original raw 2/3 return law, absolute partition via five normalized events, exact all718 gauge reconstruction and Book first source](sources/d0_native_two_three_clock_2026-10-19/check_full_book_closed_2_3_gauge_inverse.mjs).
 - [one complete 143,480 outcome joint 8440×17 source and 692-rank conditional/marginal inverse](sources/d0_native_two_three_clock_2026-10-19/check_whole_143480_book_golden_joint_inverse.mjs).
 - [one full64 original two-fresh Golden/Bell moving CAR programme, exact field-independent success and true 12206 finite-source Fisher controls](sources/d0_golden_program_state_2026-10-19/check_fixed_bell_full_golden_16_mark_all40_source.mjs).
+
+
+## 6. Exact universal full-positive FISHER rank, independent of tested numerical source
+
+The explicit inverse (2)–(5) implies local full rank, but the following stronger **original source score kernel theorem** directly identifies the rank at EVERY strictly positive K, without differentiating the nonlinear inverse or using a floating matrix rank. Let d_uv be any first variation of original log K_uv. Because all 8440 recorded probabilities are positive, its Fisher norm vanishes exactly when its entire normalized score is zero, equivalently when every full based loop of lengths2 or3 has the SAME log-weight first variation c (the derivative of their ONE shared log partition). For every original backtrack uvu,
+\[
+d_{uv}+d_{vu}=c.
+\tag{6.1}
+\]
+Write d_uv=c/2+a_uv, a_vu=−a_uv. For BOTH oriented versions of ANY original ABC triangle, its first log weight is \(3c/2\pm(a_{ab}+a_{bc}+a_{ca})\). Equating each to c forces c=0 and every triangle circulation to zero. Consequently all 359 reversal-EVEN edge variations vanish, and all reversal-ODD circulations vanish. The original 32-tree plus 327 independent triangles in §3 then forces d_uv=χ_u−χ_v, an ORIGINAL endpoint coboundary. Conversely every such coboundary telescopes to 0 on every based loop, so it is exactly the entire Fisher kernel. Therefore
+\[
+\boxed{
+\ker\mathcal I_{\rm closed\,8440}
+=\{\chi_u-\chi_v:\chi\in\mathbb R^{33}/\mathbb R\},
+\qquad \operatorname{rank}\mathcal I_{\rm closed\,8440}
+=718-32=\mathbf{686}.
+}
+\tag{6.2}
+\]
+The result holds for **ALL** positive original directed K, ANY fixed positive a2,a3 and all 8440 actual paths, not merely the three asymmetric numerical controls. The full score rank includes 359 symmetric reciprocal edge sources plus 327 oriented triangular cycle sources. This is a statistically exact *observability* result, not a physical Book Hessian identity: do NOT identify the positive Fisher form here with the indefinite signed Palatini dynamics or with the separately-owned 685-dimensional fixed-pressure conditional archive Hessian.
+
+For the original complete TWO-FRESH Golden/Bell programme in §4, the 17th explicit Bell-failure probability is 4095/4096, and the other 16 entire Good/Bad/Choi categories sum to 1/4096. Their original six-Lie Fisher at flat is \((p^4/(6\cdot4096))I_6\ne0\). On a mathematical product chart of *independent* original 718 log K and ONE shared local six-Lie U, \(Q_{\gamma,r}=q_\gamma(K)q_r(U)\) has exactly zero cross-score expectation. Therefore the complete 143480-event Fisher is the direct sum of positive rank686 and positive rank6:
+\[
+\boxed{\operatorname{rank}\mathcal I_{\rm all\,143480}=\mathbf{692}.}
+\tag{6.3}
+\]
+For actual coupled moving physical fields, the correct operation is to PULL BACK that full positive source through the **still unowned** joint field→Cost/Lorentz programme, not to assume the independent source ranks add after pullback. Existing Bell failure and its work cannot be dropped. This exact algebraic rank check is independently executable at [check_joint_8440_golden16_fisher_rank692.mjs](sources/d0_native_two_three_clock_2026-10-19/check_joint_8440_golden16_fisher_rank692.mjs), including the ORIGINAL exact 327 triangle basis and the 17-outcome Bell completion. It also verifies original Golden exact-cost label capacity: 143480 distinct complete-record outcomes fit into 196418 native type-A words at cost26, with all type-B and old RIGHT retained. Label capacity is NOT an admitted physical recording protocol.
+
+**Main consuming point remains §5:** in the original Golden LEFT GNS, one mathematically complete retained loop-clock plus complete positive CAR mark carries the whole gauge-invariant ORIGINAL scene Book scalar source and one six-dimensional Lorentz source. What has NOT been derived is the compulsory G0 preparation/decoder/cost or the selected total H+J+R variational action. GR_closed=false.
