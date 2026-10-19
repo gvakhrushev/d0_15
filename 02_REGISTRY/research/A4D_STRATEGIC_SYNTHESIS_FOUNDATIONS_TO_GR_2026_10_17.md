@@ -5189,6 +5189,61 @@ new theorem does not show D0 actually records, transports, or prices the
 matrix holonomies. It narrows the physical readout target; it does not replace
 the signed Lorentz-source equation.
 
+### 7.69.1. The complete ordered-Lorentz tester has a strict positive tape margin
+
+The [full CAR16 Julia/POVM tester](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md)
+can be read on all four two-step success/failure flag branches, not only on
+the all-good branch. On the explicit `||X|| ≤ 1/100` chart, an exact rational
+bound proves that all 52 flag/pointer outcomes remain positive: rank-one
+outcomes exceed `1/768`, and each positive-rest outcome exceeds `1/40`.
+Retaining the already specified Golden split gives 53 outcomes, each above
+`1/2048`. The mean Shannon readout is therefore analytic there; the infinite
+`D²(q log q)` at zero probabilities is specific to the older readout and does
+not apply to this complete tester. See the [positive-margin proof and
+checker](A4D_POSITIVE_JULIA_FULL_RECORD_C2_MARGIN_2026_10_19.md).
+
+This also gives a route around two earlier limits. A pointwise
+operational-metric reconstruction error `O(ε_h)` yields second-difference
+error `O(ε_h/h²)`; the owned `ε_m=16⁻ᵐ`, `h_m=p^(5m/16)` schedule makes it
+vanish while keeping compiler overhead below the Golden scale. A uniformly
+small first-source error can produce an exact approximate-program root by
+Brouwer degree, without differentiating the compiled source twice, once the
+exact gauge-fixed source has nonzero local degree. Neither the pointwise
+state-to-metric Lipschitz premise nor that degree has yet been established on
+the admitted full carrier, and this does not select Shannon, `J₂`, or `H+J+R`
+as the complete physical price. `GR_closed=false`.
+
+### 7.69.2. The original flat Palatini Schur symbol has generic rank exactly six
+
+The 40-row flat Hessian of the original six-based star action now has an
+exact Laurent-symbol audit. The coefficientwise checker proves the four
+backward-coframe gradient Wards, all six local-Lorentz link/coframe Wards,
+and the variational-adjoint identities
+\(L(z)^T=L(z^{-1})\), \(C(z)=B(z^{-1})^T\). Thus, wherever \(L\) is
+invertible, the reduced coframe Schur symbol \(S=-CL^{-1}B\) has ten
+independent gauge nulls at generic \(z\).
+
+The separate exact \(\mathbb F_{1009}\) witness at \(z=(2,3,5,7)\) has
+\(\operatorname{rank}L=24\), \(\operatorname{rank}S=6\), and rank ten for
+those Ward vectors. Nonzero minors at this specialization prove that \(L\)
+is generically invertible, the ten nulls are generically independent, and
+the Schur rank is generically at least six. Together with the symbolic Ward
+upper bound this gives \(\operatorname{rank}_{\mathbb Q(z)}S=6\), with a
+ten-dimensional coframe kernel. The exact-symbol and modular witnesses are
+replayed by
+[`check_full40_symbolic_ward_identities.cjs`](sources/d0_two_null_crossing_2026-10-19/check_full40_symbolic_ward_identities.cjs)
+and
+[`check_full40_schur_rank_modular.cjs`](sources/d0_two_null_crossing_2026-10-19/check_full40_schur_rank_modular.cjs).
+
+This closes the generic *linearized geometric rank* question for this
+operator; it does not identify the six-dimensional quotient with two
+propagating polarizations, determine the full characteristic variety, or
+prove nonlinear refinement. In particular the rank-four result at the
+equal-coordinate \(\mathbb F_{1009}\) sample is only a modular exceptional
+point, not yet a characteristic equation over \(\mathbb Q\). The original
+native price/action selection, independent matter source, and full physical
+Ward remain separate. `GR_closed=false`.
+
 ### 7.70. The complete 718-edge feedback source obeys a discrete Kirchhoff Ward identity
 
 For the same-record predictive feedback of §7.68, define its full moving edge-price source by $\mathcal J_{uv}=\partial J_{\rm pred}/\partial s_{uv}$. The exact quotient under a common cost shift and vertex endpoint potentials implies, at every strictly positive edge-price field,
