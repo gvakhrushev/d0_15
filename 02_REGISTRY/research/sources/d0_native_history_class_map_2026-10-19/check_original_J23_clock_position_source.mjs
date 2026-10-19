@@ -57,16 +57,27 @@ for(const s of [-1,-.2,0,.3,1]){
  const t=q+e*Math.exp(s);
  const Z=t**n;
  const dlog=n*dq*(1-Math.exp(s))/t;
- // direct finite count distribution generating function and its field jet
- let sum=0,der=0,pk=q**n;
+ // Direct finite count distribution and its field jet, evaluated with
+ // log-sum-exp. The unscaled exp(s*k) overflows at s=1 before multiplying
+ // tiny binomial tails (0*Infinity -> NaN), despite the finite partition.
+ let lnChoose=0,maxLog=-Infinity;
+ const terms=[];
  for(let k=0;k<=n;k++){
-   const w=Math.exp(s*k),score=(n-k)*dq/q-k*dq/e;
-   sum+=pk*w;der+=pk*w*score;
-   if(k<n)pk*=((n-k)/(k+1))*(e/q);
+   const logTerm=lnChoose+(n-k)*Math.log(q)+k*(Math.log(e)+s);
+   const score=(n-k)*dq/q-k*dq/e;
+   terms.push([logTerm,score]);
+   maxLog=Math.max(maxLog,logTerm);
+   if(k<n)lnChoose+=Math.log(n-k)-Math.log(k+1);
  }
+ let sum=0,der=0;
+ for(const [logTerm,score] of terms){
+   const weight=Math.exp(logTerm-maxLog);
+   sum+=weight;der+=weight*score;
+ }
+ const logDirectZ=maxLog+Math.log(sum);
  // Direct derivative-to-partition ratio, not a fitted finite difference.
- check(close(sum,Z,1e-7*Math.max(1,Z))
-       &&close(der/Z,dlog,1e-8),"native full-count tilt J23 source s="+s);
+ check(close(logDirectZ,n*Math.log(t),1e-10)
+       &&close(der/sum,dlog,1e-8),"native full-count tilt J23 source s="+s);
 }
 check(close(-n*dq,-2.1953971285070955)
       &&close(n*(e-q)*dq,-2.1765496383560343),
