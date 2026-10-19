@@ -225,3 +225,61 @@ the respective absolute errors are
 This checks the analytic asymptotic without substituting the
 illustrative family for a verified original all128 curved/refinement
 root. GR_closed=false.
+
+
+## 7. Backward GR synthesis: the exact native information-capacity HIERARCHY
+
+The original [regular two-null identity-word source](A4D_TWO_NULL_REGULAR_IDENTITY_WORD_REVERSE_GR_SYNTHESIS_2026_10_19.md) has an analytically invertible **six**-dimensional Lorentz endpoint chart, while its original standard full128 pointer at one endpoint has exact probability-Jacobian rank **three**; its separate already-owned complete order-sensitive six-contrast Julia/POVM tester has rank **six**. These are different existing instruments/cuts, with no unproved physical selection or free combination.
+
+On the SAME flat homogeneous shell to which equations (10)–(12) apply, suppose six original Lorentz controls t vary one endpoint link while all native old clock/code inputs are fixed. The **entire original count family** \(s\mapsto D_t\log Z_n(s)\), for every real s, factors through the ONE covector \(D_tq\):
+
+\[
+D_t\log Z_n(s)
+=\frac{n(1-e^s)}{q+(1-q)e^s}\,D_tq .
+\tag{14}
+\]
+
+Hence the Jacobian of ANY finite collection of count cumulants, native
+time-indicator distributions, or count-only Bernoulli sources has
+\[
+\boxed{\operatorname{rank}D_t(\text{all count-source readouts})\le1.}
+\tag{15}
+\]
+
+It cannot itself reconstruct the six-dimensional ordered Lorentz holonomy
+or its all24 independent link Euler source as a complete local
+field-observer system. The stronger original full128 pointer in the
+separately owned fixed endpoint atlas has rank 3, whereas the true
+six-direction positive order-sensitive readout has rank 6.
+This creates a strict typed *information-capacity route*:
+
+\[
+\boxed{
+\text{clock/count (at most 1)}
+\quad\longrightarrow\quad
+\text{standard full128 pointer (3)}
+\quad\longrightarrow\quad
+\text{ordered six-direction Julia/POVM (6)} .
+}
+\tag{16}
+\]
+
+The arrows mean **comparison of scoped linear response capacity**,
+NOT inclusion of the physical sigma algebras, equality of the
+experiments or an automatic progression selected by D0.
+The six-source result is consumed from the owner, not re-proved here.
+Its physical execution involves an ordered 12-primitive gate history;
+its full Book Cost−Info/work/controller/RIGHT/reference source is
+NOT fixed by the existence of the endpoint POVM.
+
+**Strategic consequence:** the scalar Golden clock/counter already
+determines a complete source for its own count distribution, but
+cannot by itself be the *sole* differentiable detector of six
+Lorentz directions. A full Einstein-source proof must exploit
+the ORIGINAL order-sensitive retained Lorentz/CAR history, not
+attempt to promote a scalar total-exit count or its entropy to
+a tensorial geometric source. The unresolved bridge is now
+a specific SAME-EXECUTION **ordered history → full physically paid Book
+action → all40+CAR first source**, keeping the already proved
+nonlinear geometry and the native clock/count derivative as
+subcomponents. GR_closed=false.
