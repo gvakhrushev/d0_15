@@ -97,6 +97,20 @@ h_\varphi(\pi,P)=\mathbb E_{\pi P}s_\theta+\log_\varphi\lambda.
 \]
 No stationary prior or normalizer was fitted. This is an exact mathematical VARIATIONAL SELECTION from any GIVEN original Book edge prices. It does NOT mean Book03 requires optimizing this extra pressure functional; that physical identification remains an explicit hypothesis. The spectral normalizer logφλ is REAL and must not be silently discarded as a constant when moving fields vary it.
 
+### 3.1. A closed source formula for native node information — no moving 33-state prior
+
+The result (6) has a particularly useful **actual Book field-source form**. Insert the SAME original transition Price \(s_\theta=C_{uv}-\theta I_u-(1-\theta)I_v\) and use the real stationarity \(\sum_u\pi_u P_{uv}=\pi_v=\sum_w\pi_vP_{vw}\), including genuine moving \(I_v(y)\). At EVERY field configuration and for EVERY physical tangent V,
+\[
+\boxed{
+D_y\log_\varphi\lambda[V]
+=\underbrace{\sum_{v=1}^{33}\pi_v\,D_yI_v[V]}_{\text{genuine recorded node information source}}
+-\underbrace{\sum_{u\to v}\pi_uP_{uv}\,D_yC_{uv}[V]}_{\text{genuine original transition-cost source}}.
+}\tag{9a}
+\]
+There is NO undetermined θ, no fitted stationary preparation vector, and no frozen \(D\pi\). In particular if the actual 718 primitive edge Costs are field-INDEPENDENT on one coframe/link/CAR variation chart, its **whole stationary Book PRESSURE metric-source is the weighted first jet of exactly 33 native vertex information values**; the TRUE weights are the endogenous \(\pi\), not a chosen uniform catalogue. Any field-dependent native Cost remains in the second displayed term, as it must.
+
+This sharpens the only still-needed GR source bridge. If a physical self-reading owner can derive the ACTUAL 33 information jets \(D I_v\) from the already known full16 Julia/crossed-null positive detector and the actual primitive \(D C_{uv}\), the entire stationary-scene pressure source is then explicitly fixed by (9a) in ALL native coframe/link/matter directions. Compare THIS one 40+matter covector with the independently proved original star/CAR native source; no choice of θ, separate measure π, fitted relative coupling or hidden path entropy can be used in that comparison. The formula is a **sufficient observable computation interface**, not a proof that the resulting vector already equals the Einstein source or that the full D0 universe uses this pressure readout.
+
 ## 4. A SINGLE correlated real 33-scene history has a UNIVERSAL native F/R encoder and source
 
 The previous Golden coding owner assumed N independent detector copies. We remove that assumption: take one canonical Markov path y=(Y_0,...,Y_N) under (4). Its real complete law is
