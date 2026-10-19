@@ -510,3 +510,5 @@ Repository: https://github.com/gvakhrushev/d0_15
 Registry:   02_REGISTRY/claims.csv
 Contact:    g.vakhrushev1993@gmail.com
 ```
+
+> **Physical-source research intake (2026-10-19):** The native full128 MDL/Born price, complete retained information and clock source are under review against the exact Einstein–CAR owner. This does not promote `GR_closed`, add a field or alter the original action.
