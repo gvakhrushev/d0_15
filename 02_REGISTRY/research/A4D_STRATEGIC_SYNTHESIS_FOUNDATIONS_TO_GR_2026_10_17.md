@@ -5614,3 +5614,40 @@ Thus the pair (P,lambda) is a COMPLETE physical bulk Cost-Info invariant modulo 
 **Precise scope:** separately symmetric quartic invariants dimension14, modulo invariant null quadratic times degree2 invariants dim5 ⇒ only9 independent on-cone quartic classes. Наш 44x14 characteristic evaluation имеет rank9, source принадлежит этому span на проверенных rays. НЕЛЬЗЯ повышать это до theorem of universal gamma: actual all-k correction может быть рациональной homogeneous функцией с additional denominators, не принадлежащей polynomial class. Смена order-h e1 на любой principal 12-dimensional null-vector не меняет quartic cokernel лишь на проверенных control rays, поскольку \(S_3(\ker S_2)\subseteq\mathrm{im}S_2\) там. Отсутствие tested birefringence не доказывает универсальную exact lattice dispersion или physical parity prediction.
 
 [Live 44-ray exact checker](sources/d0_two_null_crossing_2026-10-19/check_oblique_tt_quartic_polynomial.cjs), default F1009 and D0_SCHUR_PRIME=65537, checks 28 training,16 holdout, plus/cross and rank9. [Actual original Taylor Schur](sources/d0_two_null_crossing_2026-10-19/check_oblique_tt_directional_dispersion.cjs) avoids old expensive duplicate derivative. The next ONE mathematical target is the exact symbolic null-quotient identity proving coefficientwise over Q(k) that both physical order-four Schur residues vanish after substituting this gamma and solving order3; *then* evaluate genuine poles/residues and growing-volume refinement. The nontrivial native physical target remains the SAME [history/geometry double-Schur source] (A4D_UNIFIED_BOOK_GEOMETRY_DOUBLE_SCHUR_RESPONSE_SYNTHESIS_2026_10_19.md): actual Book/H+J+R/Cost−Info programme must SELECT this geometric Schur first source after retained history/preparation/clock/controller elimination. A geometric dispersion formula cannot substitute that compulsory physical selection. GR_closed=false.
+
+### 7.87. A relative phase needs the full variational source: exact CAR16 integrability and preparation test
+
+The [two-history phase integrability owner](A4D_TWO_HISTORY_PHASE_HELMHOLTZ_AND_NATIVE_ACTION_GATE_2026_10_19.md)
+consumes the newly established CAR16 J23/Weyl reading BEFORE it is inserted
+into the single-action double Schur. The diagonal one-arm phase
+`alpha=-i<chi,dchi>` is a connection covector. On the original proper-Lorentz
+rotations `X=N2-Nbar2`, `Y=N3-Nbar3`, `J=J23`, with the unchanged circular
+grade-one probe, exact exterior16 algebra gives
+`(alpha wedge d alpha)(X,Y,J)=1`. Consequently no smooth nonzero multiplier
+and no ordinary scalar-price gradient can make that isolated phase source
+the derivative of one instantaneous scalar action on this full chart.
+The fixed-reference Arg-overlap IS a scalar, but its Hessian differs from
+the moving-reference source Jacobian. Full doubled/path-dependent actions
+and constrained physical sections remain possible and need their own
+admitted variational rule.
+
+This is not an automatic continuum obstruction: for fixed input and an
+actually unitary small-face family `U_h=I+h²R+O_C2(h³)`, the normalized phase
+source is a gradient up to O_C1(h), and its normalized curl is O(h²).
+However full preparation cannot be frozen in that argument. On the SAME
+CAR16 rotation, the exact normalized family
+`chi_h=sqrt(1-w)e_+ +sqrt(w)exp(i h² theta)h_circular` gives
+`alpha_h=h² w dtheta` and `h^-2 d alpha_h=dw wedge dtheta`.
+Thus a genuine moving-preparation source may survive at leading order.
+The missing `theta dw` component must be derived from the actual complete
+comparison/preparation/history source, rather than inserted to force a
+chosen geometric scalar. A real independent 718-edge archive factor has
+zero local phase curvature and cannot provide this cancellation.
+
+The next phase-to-action consumer is now concrete: either prove vanishing
+pullback of the FULL source curvature on the actually solved stationary
+section, with the required signal/norm/refinement bounds, or derive the
+physical doubled/history action and vary its correct variables before
+reduction. The new exact checker passes; internal analytical review is
+scoped to these formulas. No physical action, whole native Euler, geometric
+recovery or raw-216 terminal is closed.

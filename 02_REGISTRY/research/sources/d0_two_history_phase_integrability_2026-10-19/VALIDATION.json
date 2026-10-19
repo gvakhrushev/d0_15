@@ -1,0 +1,40 @@
+{
+  "input_ref": "a95927fac939230a8e9d3e124c420fb2e3929a22",
+  "command": "python 02_REGISTRY/research/sources/d0_two_history_phase_integrability_2026-10-19/check_phase_integrability.py",
+  "environment": "Python3.12.14, SymPy1.14.0 in isolated check-env",
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_TWO_HISTORY_ARCHIVE_CAR_PHASE_GR_SOURCE_SYNTHESIS_2026_10_19.md": "e0729fcde690f6664d2da491730093506262611e9b8d47bf59ea5e49ff937370",
+    "02_REGISTRY/research/sources/d0_two_history_phase_2026-10-19/check_original_archive_and_car_phase.mjs": "eca72e36d69fb07f07e0fd439311f700e2a54b07461e99f268c61172aa8a4c34",
+    "02_REGISTRY/research/A4D_UNIFIED_BOOK_GEOMETRY_DOUBLE_SCHUR_RESPONSE_SYNTHESIS_2026_10_19.md": "19d6e5858deb6f9c990e2ceb7f74f7b5939d1f8907520316d40c72536a3a8866",
+    "02_REGISTRY/research/A4D_ONE_RUN_NATIVE_SOURCE_AND_COMPLETE_HISTORY_SCHUR_SYNTHESIS_2026_10_19.md": "23e8c6625251c29eeb5ab1dd603dd5067dbf4d3cdb008dbbfd92e3fdf58c1094",
+    "02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7"
+  },
+  "artifact_sha256": {
+    "02_REGISTRY/research/A4D_TWO_HISTORY_PHASE_HELMHOLTZ_AND_NATIVE_ACTION_GATE_2026_10_19.md": "e2fefc4b92a0e61e5e48cd2f3db47934a87b62ee0696042aa918ba6dc5a6bbb1",
+    "02_REGISTRY/research/sources/d0_two_history_phase_integrability_2026-10-19/check_phase_integrability.py": "ed844fb9f7c801220c9a6b6e3535b9e2f72295a8cabe6c3cf69529bc1a4660bc",
+    "02_REGISTRY/research/sources/d0_two_history_phase_integrability_2026-10-19/RESULT.json": "0d62262e749b57169a1e40919f98caae35cb4490c0631d49b5b4d9ca9ba515c7"
+  },
+  "exact_checker": "PASS",
+  "independent_analytical_review": {
+    "generator_and_exterior16": "PASS",
+    "phase_jacobian_and_fixed_reference": "PASS",
+    "contact_and_circulation": "PASS",
+    "fixed_input_IR_and_moving_preparation": "PASS",
+    "independent_checker_replay": "PASS",
+    "corrections": "Square-unitary Maurer identity distinguished from isometry; state normalization distinguished from source multiplier."
+  },
+  "review_is_registry_acceptance": false,
+  "whole_research_replay": false,
+  "full_Lean_replay": false,
+  "GR_closed": false,
+  "raw216_closed": false,
+  "publication_base": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
+  "latest_two_ray_test": "Exact exterior16 contact4/3 for each native ray and positive constant-combination polynomial; root checker PASS.",
+  "structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "integrated_full_instrument_readout": "Latest two-line owner \u00a75: unconditional GOOD-and-CAR determinant 1/373248 with BAD retained; not identified with a scalar source. The new exact checker concerns the compact unitary restriction, not the full Julia phase source."
+}

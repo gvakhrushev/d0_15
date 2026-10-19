@@ -13,6 +13,27 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 19 October: two-history phase integrability on the same CAR16 carrier
+
+Input `a95927fac939230a8e9d3e124c420fb2e3929a22`; resume existing Draft334,
+`native-programme-v1`. Consume the new two-history CAR/archive phase,
+original opposite-null generators, and same-action double-Schur owner.
+Before treating a nonzero diagonal relative-arm phase as the source of one
+scalar Book action, test its field-space Helmholtz symmetry on the actual
+rotation subspace of the original proper-Lorentz carrier. Root owns
+`A4D_TWO_HISTORY_PHASE_HELMHOLTZ_AND_NATIVE_ACTION_GATE_2026_10_19.md`,
+`sources/d0_two_history_phase_integrability_2026-10-19/` and append-only
+primary/strategic intake. A read-only assistant may check the exact
+curvature and reference/preparation boundary in scratch. Consumer: the
+two-history phase-to-native-action arrow, before full geometric/history
+Schur substitution. Smallest decisive check: original CAR16 generators,
+positive normalized full echo, and the antisymmetric mixed phase source
+on two genuine independent proper-Lorentz directions. Retain fixed versus
+moving comparison reference, all grades, old archive, preparation and price.
+Any scoped obstruction changes only this phase-source substitution; it
+does not exclude a full same-run variational history action, alter BOOK or
+promote/retire the original GR/raw-216 task.
+
 ### 19 October: code-class first-source synthesis on the complete history
 
 Input `46147621adcbfd64fd639b3ca7f8d6730565b4de`; continue existing Draft

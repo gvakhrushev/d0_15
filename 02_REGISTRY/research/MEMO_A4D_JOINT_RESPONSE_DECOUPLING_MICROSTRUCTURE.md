@@ -8484,3 +8484,29 @@ changes fresh fineRIGHT descendant supply on the actual K_j wires while
 preserving the whole old jointRIGHT/reference and carrying its complete
 history and price. This integration does not discharge the task's #216/#232
 normalized response terminal, select a physical action, or close GR.
+
+## 19 October: phase-to-action integrability after the full source update
+
+The new [CAR16 phase/source owner](A4D_TWO_HISTORY_PHASE_HELMHOLTZ_AND_NATIVE_ACTION_GATE_2026_10_19.md)
+supplies a missing type check between the two-history/Weyl reading and the
+same-action double Schur. On three actual compact proper-Lorentz directions
+of the unchanged full exterior16 representation, the diagonal one-arm
+phase has contact coefficient `alpha wedge d alpha=1`. Its two-coordinate
+source Jacobian is `[[0,-1],[0,0]]`, whereas the actual fixed-reference
+scalar phase has symmetric Hessian `[[0,-1/2],[-1/2,0]]`.
+Consequently that isolated moving-reference covector, even with a nonzero
+scalar multiplier and ordinary gradient costs, is not the source of one
+scalar action on this full chart. The doubled echo and path-action options
+remain correctly typed alternatives requiring their physical programme.
+
+The same proof preserves the viable weak-face route: fixed preparation and
+unitary `U_h=I+h²R+O_C2(h³)` give an integrable leading normalized phase.
+It also identifies a leading-order failure of freezing preparation: the
+exact original J23 family has `alpha_h=h²w dtheta`, so its h^-2-normalized
+curvature `dw wedge dtheta` does not shrink. A real independent archive
+factor cannot cancel it. The physical consuming identity is vanishing
+pullback curvature of the full retained reference/preparation/history
+source on the actual stationary section, or the actual doubled variational
+principle. The result is integrated in strategic §7.87 with an exact
+SymPy checker and scoped independent analytical review. Full physical GR
+and original raw-216 remain open.
