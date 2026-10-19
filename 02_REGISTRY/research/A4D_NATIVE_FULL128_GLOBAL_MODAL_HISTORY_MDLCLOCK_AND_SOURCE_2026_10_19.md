@@ -83,3 +83,18 @@ This is the strongest original-observation bridge we can obtain from the current
 3. Even under the conditional binding the modal Rayleigh response is NOT a full Einstein+matter tensor and is no proof of universal gravity: it computes only an exact original instrument source in one controlled class. Coherent record, code cost, source of ordinary history selection, field/geometric Ward, moving prep/clock, full 40 rows, physical selector and raw #216 remain independent gates. `GR_closed=false`.
 
 Reproduce [`check_full128_global_map_native_history.py`](sources/d0_physical_binary_return_2026-10-19/check_full128_global_map_native_history.py), including integer rational MAP certificate and original J23 first-source reconstruction.
+
+
+## 5. Flat-source incompatibility for a **bare** modal-detector-to-Palatini identification
+
+The original flat constant-coframe / identity-link finite Palatini vacuum has zero first Lorentz-link Euler source. The **actual** full128 readout's J23 link tangent above, however, has
+```text
+D_J23[-log_phi P(0^n)] = -n dot q0/(q0 ln phi)
+  = [n/(ln phi)](-21519+7200sqrt(5))/2516881
+  ≈ -0.004474505708059377... * n != 0,
+```
+so for n=1024 this is `-4.5818938450528...`. The comparison is a **typed theorem target**: if (a) the original detector J23 variation is the SAME admitted original proper-Lorentz variation on the flat Palatini field carrier, (b) the physical compulsory Book source is precisely this bare normalized full128 modal surprisal at fixed clock, and (c) no separate admissible preparation/controller/work/normalizer term contributes a compensating derivative, then this bare action **cannot equal** the original Palatini action's first source even at a flat vacuum. This is not a no-go for Book03's algebra-valued multi-history sum, for a history test with different physical `Γ_D(k)`, or for the separately owned ten-Golden Slater verification action. None of (a)–(c) has been established as the compulsory original physics.
+
+This is the clearest physical discriminator: to promote the detector to gravity one must now supply at least one of (i) a typed same-history projection which makes the MDL history different from all blank, (ii) an ORIGINAL paid action/counterpart whose J23 source cancels the computed `-4.58189...` at the flat stationary field, or (iii) a native restriction of the tested variation with independent justification. A hand-inserted counterterm or reweighted ensemble is not permitted. An exact residual on this ONE physical tangent can be tested first, before chasing more geometric jets.
+
+Also note that this is **pathwise** MDL and the derivative at a strict finite-n maximum. The full Book path action is algebra/memory-class valued, and there is not yet a proof that its sum is exhausted by the measured tape. Consequently the global physical GR claim remains open.
