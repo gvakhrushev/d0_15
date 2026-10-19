@@ -3329,3 +3329,51 @@ Thus \(n(L)\ge(16+\gamma)\log_\varphi L+C_\gamma\) is a SUFFICIENT exact-cost sc
 
 **Precise status:** this is a definite *same-source-experiment* bridge for the constructed native AF/LEFT×scene J₂ PRICE, with true old spatial golden addresses, general moving physical-volume pressure and exact finite nonflat roots, not the theorem that ALL foundational D0 admissible histories must physically select it. The native queried operands/real work/CAR and clock/controller PREP, actual complete old v8 H/J/R/RIGHT spin/history and original independent fixed-g/tau raw#216 still need compulsory whole-programme source/normal/recovery. Avoid starting another parallel alternative after this quantitative source bridge.
 
+
+### 7.40. `C_Y` preserves the old leaf response; the §7.5 capacity profile is a separate variational domain
+
+The exact effect identity of the existing `C_Y` owner is
+\[
+J_Y^*(I\otimes |enc(i)\rangle\langle enc(i)|)J_Y=P_i^L,
+\qquad \Pr(Y=enc(i))=\operatorname{Tr}(\rho P_i^L)=\pi_i.
+\]
+Consequently, when all old LEFT-leaf projectors are retained as Book 02
+response coordinates, a response-preserving stochastic bridge cannot
+reweight the leaves: its full leaf kernel is the identity. Mixing is allowed
+only after a declared loss quotient removes the corresponding distinctions.
+
+The fine-history capacity extremum in §7.5 instead optimizes over independently
+variable leaf masses \(r_i^*=Z_i/\sum_j Z_j\), uniform at equal vacuum
+\(Z_i\). It cannot be silently substituted for the fixed-input `C_Y`
+marginal when \(\pi\) is nonuniform. A separate native preparation-state law
+could admit that change, but must carry its complete changing response and
+preparation/clock source. The full finite statement, exact entropy derivative,
+input SHA pins and hostile normalization-only control are recorded in
+[the response-preserving `C_Y` boundary](A4D_CY_RESPONSE_PRESERVING_CAPACITY_BOUNDARY_2026_10_19.md)
+and its [exact checker](sources/d0_cy_response_preserving_capacity_2026-10-19/check_cy_response_preserving_capacity.py).
+
+For the retained joint law \(P(i,s)=\pi_iq_i(s)\), with
+\(g_i=e^{-2J_i}\) and a common normalized failure law \(\beta\), the full
+Shannon source is
+\[
+DH(P)=DH(\pi)+\sum_iD\pi_iH(q_i)
+       +2\sum_i\pi_i\kappa(g_i)DJ_i
+       +\sum_i\pi_i(1-g_i)DH(\beta),
+\quad \kappa(g)=g\left[H_\beta-\log\frac{1-g}{g}\right].
+\]
+At a common base \(g_i=g_*\) and fixed \(\beta\), the middle moving-leaf
+term cancels by \(\sum_iD\pi_i=0\), leaving
+\(DH(\pi)+2\kappa(g_*)\sum_i\pi_iDJ_i\). Thus the fixed-past source used
+in §7.33 is recovered when \(D\pi=0\), while preparation/clock directions
+retain \(DH(\pi)\).
+
+This result leaves §7.39's constructed AF inverse-PF source and its exact
+finite roots intact; it does not identify that instrument-specific factor
+with a license for `C_Y` to alter its old leaf response. The supplied AF
+feedback/recovery packet is already expanded with provenance and exact
+source files under
+[`d0_af_full_feedback_first_source_2026-10-17`](sources/d0_af_full_feedback_first_source_2026-10-17/README_RU.txt).
+Physical admission of the `C_Y` controller, the same-carrier native
+good/failure law, its full preparation source/Ward identity, and positive
+GR closure remain open.
+
