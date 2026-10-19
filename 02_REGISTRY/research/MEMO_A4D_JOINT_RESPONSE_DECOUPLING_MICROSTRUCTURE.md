@@ -1,5 +1,30 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 19 October 2026 — ENDPOINT INFO QUOTIENT: original Book allocation does NOT change full nonlinear closed GR holonomies
+
+**New original-Book03 EXACT positive reduction in SAME scientific #334:** [A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md](A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md); [complete-path/real-crossed-null bounded control](sources/d0_book_info_bulk_gravity_quotient_2026-10-19/check_bulk_endpoint_quotient.mjs). Consumes previous exact finite scene graph and action owner [A4D_NATIVE_COST_INFO_BOUNDARY.md](A4D_NATIVE_COST_INFO_BOUNDARY.md), the ORIGINAL 16+24 Palatini based loops, and newly constructed **genuine noncommuting opposite-null** Lorentz pair \(N_2,\bar N_3\) from §7.52–7.58. It does NOT change the original Book03 Cost−Info law or declare full historical D0 physics closed.
+
+For TRUE original transition-edge Book allocation
+\(s_\theta(u,v)=C(u,v)-\theta I(u)-(1-\theta)I(v)\),
+where ALL field-dependent full time/observer/material information jets remain, any complete original finite history a→b has
+\[
+\boxed{S_\theta(\gamma)-S_\eta(\gamma)
+=(\theta-\eta)[I(b)-I(a)]}
+\]
+OFF SHELL and at every derivative order. This is already an owned exact endpoint coboundary; the NEW physical consumer is the FULL complete endpoint-conditioned observed law: for EVERY recorded path γ with the SAME retained (a,b), its true native positive Book history weight is multiplied by ONE common positive factor, so **every normalized conditional path probability and all its source jets are IDENTICAL for θ,η**, including full conditional Shannon, MAP and Fisher geometry. No failure path is thrown away and mathematical conditioning is NOT declared free physical postselection.
+
+For the ORIGINAL closed based Lorentz plaquettes, if the accounting weight dresses each actual edge transfer as a CENTRAL scalar, the two θ choices are related by vertex scalar conjugation. ALL intermediate endpoint weights telescope on EVERY closed loop, so **the entire NONCOMMUTING holonomy matrix, odd curvature (P−P⁻¹)/2, all 16+24 geometric source jets and all higher nonlinear crossed-null terms are EXACTLY θ-INDEPENDENT**. Concrete native \([N_2,\bar N_3]=E_{23}-E_{32}\ne0\) and crossed four-link group commutator have nontrivial Weyl-type rotation. Independent JS direct check found closed 4×4 θ holonomy error <6×10⁻17 and source derivative error <6×10⁻12 for four different θ with moving node Info, while the nonflat original commutator contrast is0.0221. This does not claim that scalar-weighted individual links are themselves proper-Lorentz Kraus operations; real physical edge-field map and whole output completeness are distinct.
+
+**SHARP remaining FULL unconditional Book endpoint source, not handwaving:** for actual positive endpoint pair weights, \(Z_\theta=\sum_e Z_\eta^e e^{-(\theta-\eta)\ell\Delta I_e}\), \(\ell=\log\varphi\), hence
+\[
+\boxed{\partial_\theta\log Z_\theta=-\ell E_\theta[\Delta I],
+\quad \partial_\theta^2\log Z_\theta=\ell²\mathrm{Var}_{P_\theta(e)}(\Delta I)\ge0 .}
+\]
+Normalized complete endpoint distribution is θ-independent **iff all actual endpoint info jumps \(\Delta I_e\) are equal on positive support**. Full source of the UNNORMALIZED partition is θ-independent only if that common jump also has ZERO genuine field derivative (e.g. fixed original endpoint records); otherwise it retains exactly the boundary source. A genuinely measured native endpoint-difference variance is thus a finite discriminator of what part of the original complete history price still depends on the convention; no invented source or hidden physical gauge. A direct moving-info JS check gives variance0.043838779960645 and log-partition second θ source0.01015151921591, with independent centered finite-difference residual <5×10⁻9.
+
+**New route to GR:** the elementary allocation ambiguity \(\theta\) of vertex Info is eliminated from the FULL geometric closed-loop source, from ALL conditional interior histories, and (under fixed actual endpoint information) from the complete bulk discrete Euler/canonical symplectic structure. This is an **all-order information/cohomology quotient** that remains valid in the noncommuting two-null 4×4 setting instead of only the previously solved Brinkmann/constant-pp sector. The original full 718-edge additive-action fiber is much BIGGER than this θ family; Book03 does not yet select the genuine Info event, numerical cost, native Lorentz-link readout or compulsory detector and the true open-history endpoint sector. Therefore this theorem REMOVES exactly one physical allocation ambiguity **conditional on the same complete Cost−Info event binding**, not all constitutive/native selection, full H+J+R/clock/preparation, finite crossed-null roots or raw fixed-g/tau #216. A proper Lorentz physical source still must be derived from the true selected full action, not from a postulated GL scalar dressing.
+
+
 ## 19 October 2026 — MAIN positive synthesis: ORIGINAL golden boxes, inverse-PF and moving quantile SAME finite roots / general Einstein source
 
 **Direct consuming theorem IN THIS original #334:** [A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md](A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md); **REPRODUCED AND EXECUTED** [exact native original-F/R and moving-volume full two-tick JS checker](sources/d0_original_golden_inverse_pf_quantile_2026-10-19/check_original_inverse_pf_quantile.mjs). This is stronger than the earlier optional [integer-divisible Fib rank LEFT decoder](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md): **NO RELOCATING the original old 4D golden boxes; NO new rank decoder; NO exact Fibonacci divisibility; NO excessive n=3L⁴/4**. It closes the expressly OPEN **finite rooted local J₂ → correct off-null general moving-volume mean J₂ first-SOURCE** in owned full-source §6.48, by composing TWO already-owned kinematic maps, not inventing a new curvature price.
