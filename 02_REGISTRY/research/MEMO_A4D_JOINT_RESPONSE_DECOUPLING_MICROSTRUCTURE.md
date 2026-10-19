@@ -8043,6 +8043,18 @@ halving \(h\) reduces them by approximately 8 and 16. This bounded numerical
 check rejects that link lift as an exact finite root; it does not exclude
 other two-sided roots or prove a no-go.
 
+The latest finite diagnostic separates the source orders at the origin.
+For orthogonal gradients, it reports a maximum solder residual of
+\(7.6294\times10^{-6}\),
+\(J_{u,\mathrm{rot}}=+6.1035\times10^{-5}\), and
+\(J_{v,\mathrm{rot}}=-6.1035\times10^{-5}\) at \(h=1/8\); halving \(h\)
+reduces the solder residual by 16 and the rotation rows by 16. With parallel
+gradients the rotation rows vanish to numeric tolerance and the maximum
+solder residual divided by \(h^3\) is \(1/4\). These are
+bounded numeric diagnostics, consistent with separating a Ricci-type
+\(h^3\) solder source from a crossed rotation defect, not an exact formula
+for a solved two-sided root.
+
 The separate [opposite-null Julia order-memory result](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md)
 now constructs the abstract readout step: one fixed complete 13-effect POVM
 on the original CAR16 grade-1 sector and a fresh four-dimensional test
@@ -8060,7 +8072,9 @@ program and cost. The latest continuation also proves a local analytic
 inverse from those six contrasts and reconstructs the existing Palatini star
 as the same function on its rest chart, so the chart-level Euler follows by
 chain rule. Gauge transport of the calibrated test and compulsory physical
-Cost--Info selection remain separate.
+Cost--Info selection remain separate. The inverse is local to the declared
+rest chart; it does not itself force the original programme to execute or
+price that reconstruction.
 
 Thus the first remaining physical bridge is no longer an abstract detector
 formula: the same compulsory D0 program must generate and price this full
