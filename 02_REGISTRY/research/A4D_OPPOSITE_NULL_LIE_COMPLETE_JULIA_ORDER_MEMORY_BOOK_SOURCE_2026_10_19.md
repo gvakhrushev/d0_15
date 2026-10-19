@@ -414,6 +414,56 @@ action and paid record rather than fitted to repair the coefficient. The
 physical same-history price and its full coframe/link variation remain the
 smallest source-side blocker to the positive GR route.
 
+### 5.4. Refining only the all-success history matches two crossed-null (C^2) faces
+
+The factor-eight failure depends on applying the extra Golden refinement to
+the selected negative pointer in **every** flag history. The actual Lorentz
+plaquette product is carried by the all-success Kraus word: its amplitude
+is \(2^{-4}\Lambda(P(a,b))\). Keep all 16 flag histories and all 13 POVM
+outcomes, but Golden-refine only the (J^-) pointer for the rotation test or
+the (B^-) pointer for the boost test on the all-success history; the other
+15 histories and every one of their outcomes remain unchanged. Each is a
+complete block-diagonal output refinement with 209 strictly positive fine
+outcomes, checked by the same
+[check_four_gate_commutator_c2.py](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_four_gate_commutator_c2.py).
+
+For \([N_2,\bar N_3]=J\), the original face is \((2,3)\); for
+\([N_2,\bar N_2]=B\), it is \((0,1)\). Both original Palatini faces have
+mixed coefficient \(-h^2\). For a one-link variation by the corresponding
+curvature generator with the other three gates flat, and for its actual
+crossed-null four-gate plaquette, respectively, the selected all-success
+negative-pointer event has the same exact jets in both tests:
+\[
+\partial_a q_{\mathrm{good},X^-}|_0
+=-\frac{\sqrt2}{6144},\qquad
+\partial_a\partial_b q_{\mathrm{good},X^-}(P)|_0
+=-\frac{\sqrt2}{6144},\qquad X\in\{J,B\}.
+\]
+The unmarked complete Shannon first and mixed sources vanish. The retained
+Golden split therefore contributes, for each test,
+\[
+D_X S_{\rm mean}=-\frac{c_{\rm Sh}}{64},\qquad
+\partial_a\partial_b S_{\rm mean}(P)|_0=-\frac{c_{\rm Sh}}{64}.
+\]
+The same positive scale \(\kappa_h=64h^2/c_{\rm Sh}\) matches the one-link
+first source and crossed-null mixed source to the original coefficient on
+both faces. Thus the all-success-resolved price removes the factor-eight
+obstruction on these two faces and these two jet orders; it does not
+establish the other coframe/link variations or a full40 nonlinear price
+identity.
+
+The refinement is branch-complete: it keeps every failure history and both
+Golden labels, and the success branch is distinguished by the same four
+retained Julia flags that carry the ordered plaquette. That makes it a more
+geometrically aligned candidate than refining the same pointer on unrelated
+failure branches. It remains a conditional mathematical readout, however.
+Native D0 has not yet been shown to select this branch-dependent refinement,
+execute and price its controller/work, or bind its complete Cost−Info source
+to the same coframe/link/CAR/preparation/clock tangent. The load-bearing next
+step remains that physical same-program binding, now with a concrete local
+first-plus-mixed-jet target rather than an unresolved coefficient on this
+candidate.
+
 ## 6. Finite compilation and the narrow remaining physics
 
 The exact all-grades contraction and complete real Julia/Naimark circuit belong to the owned mathematical **generous all-active orthogonal** class, with all new flags/4-dimensional Choi source actually declared and not deleted. The known addressed real Golden G/CNOT compiler approximates any such fixed real orthogonal finite-dimensional gate once its ACTUAL addressing/preparation/access interface is supplied; it retains ancilla leakage and has a whole-state error. The true group link data \(A,B\) must be computable from the same original finite Lorentz plaquette/coframe source and not supplied as a free geometric oracle.

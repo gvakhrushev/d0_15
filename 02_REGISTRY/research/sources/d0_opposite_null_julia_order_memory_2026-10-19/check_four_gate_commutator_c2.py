@@ -98,6 +98,7 @@ POVM_VECTORS = tuple(
     for k in range(6) for eps in (1, -1)
 )
 J_MINUS_INDEX = 2 * 4 + 1
+B_MINUS_INDEX = 2 * 5 + 1
 
 
 def probability_jet(amplitude):
@@ -158,20 +159,47 @@ def instrument_probability_jets(gates):
     return output
 
 
-def split_j_minus(probabilities):
-    """Refine the J- pointer in every history; retain both Golden labels."""
+def split_pointer(probabilities, pointer_index):
+    """Refine one pointer in every history; retain both Golden labels."""
     split = []
-    coarse_jminus = [sp.S.Zero] * 4
+    coarse_pointer_jets = [sp.S.Zero] * 4
     for _, branch in probabilities:
-        q = branch[J_MINUS_INDEX]
-        coarse_jminus = [coarse_jminus[i] + q[i] for i in range(4)]
-        split.extend(branch[:J_MINUS_INDEX])
+        q = branch[pointer_index]
+        coarse_pointer_jets = [coarse_pointer_jets[i] + q[i] for i in range(4)]
+        split.extend(branch[:pointer_index])
         split.extend((tuple(P * x for x in q),
                       tuple(P**2 * x for x in q)))
-        split.extend(branch[J_MINUS_INDEX + 1:])
+        split.extend(branch[pointer_index + 1:])
     require(len(split) == 224, "one retained Golden split per flag history")
     require(all(q[0] > 0 for q in split), "strictly positive fine outcomes")
-    return split, tuple(sp.simplify(x) for x in coarse_jminus)
+    total = tuple(sp.simplify(sum(q[i] for q in split)) for i in range(4))
+    require(total == (sp.S.One, sp.S.Zero, sp.S.Zero, sp.S.Zero),
+            "all-history refinement preserves complete probability jets")
+    return split, tuple(sp.simplify(x) for x in coarse_pointer_jets)
+
+
+def split_pointer_on_history(probabilities, pointer_index,
+                              target=(False, False, False, False)):
+    """Refine one pointer in one flag history; leave every sibling intact."""
+    split = []
+    selected = None
+    for history, branch in probabilities:
+        if history == target:
+            q = branch[pointer_index]
+            selected = tuple(sp.simplify(x) for x in q)
+            split.extend(branch[:pointer_index])
+            split.extend((tuple(P * x for x in q),
+                          tuple(P**2 * x for x in q)))
+            split.extend(branch[pointer_index + 1:])
+        else:
+            split.extend(branch)
+    require(selected is not None, "target flag history exists")
+    require(len(split) == 209, "one branch-local Golden refinement")
+    require(all(q[0] > 0 for q in split), "positive branch-local fine outcomes")
+    total = tuple(sp.simplify(sum(q[i] for q in split)) for i in range(4))
+    require(total == (sp.S.One, sp.S.Zero, sp.S.Zero, sp.S.Zero),
+            "branch-local refinement preserves complete probability jets")
+    return split, selected
 
 
 def entropy_mixed_jet(probabilities):
@@ -190,74 +218,162 @@ def entropy_mixed_jet(probabilities):
     return sp.simplify(-raw / LOG_PHI)
 
 
+def entropy_first_jet(probabilities, axis):
+    """Exact first Shannon jet; axis=1 selects a, axis=2 selects b."""
+    grouped_logs = defaultdict(lambda: sp.S.Zero)
+    total_derivative = sp.S.Zero
+    for q0, qa, qb, _ in probabilities:
+        derivative = qa if axis == 1 else qb
+        total_derivative += derivative
+        grouped_logs[q0] += derivative
+    raw = total_derivative + sum(coef * sp.log(base)
+                                 for base, coef in grouped_logs.items())
+    raw = sp.expand_log(sp.expand(raw), force=True)
+    return sp.simplify(-raw / LOG_PHI)
+
+
 def face_geometry_check():
-    commutator = N2 * BAR_N3 - BAR_N3 * N2
-    require(commutator == J, "[N2,barN3]=J exactly")
+    def commutator_curvature(g1, g2):
+        require(g1 * g2 - g2 * g1 != ZERO4, "noncommuting gate pair")
 
-    # Differentiate the actual four factors in the original based-face
-    # convention; the opposite product is its inverse at the required jet.
-    def link_jet(g, variable, sign):
-        out = [I4, ZERO4, ZERO4, ZERO4]
-        out[1 if variable == "a" else 2] = sign * g
-        return tuple(out)
+        # Differentiate the actual four factors in the based-face convention;
+        # the opposite product is its inverse at the required jet.
+        def link_jet(g, variable, sign):
+            out = [I4, ZERO4, ZERO4, ZERO4]
+            out[1 if variable == "a" else 2] = sign * g
+            return tuple(out)
 
-    product_jet = (I4, ZERO4, ZERO4, ZERO4)
-    for factor in (link_jet(N2, "a", 1), link_jet(BAR_N3, "b", 1),
-                   link_jet(N2, "a", -1), link_jet(BAR_N3, "b", -1)):
-        product_jet = jet_product(product_jet, factor)
-    inverse_jet = (I4, ZERO4, ZERO4, ZERO4)
-    for factor in (link_jet(BAR_N3, "b", 1), link_jet(N2, "a", 1),
-                   link_jet(BAR_N3, "b", -1), link_jet(N2, "a", -1)):
-        inverse_jet = jet_product(inverse_jet, factor)
-    mixed_product = product_jet[3]
-    require(mixed_product == commutator == J,
-            "actual crossed-null plaquette mixed derivative")
-    mixed_inverse = inverse_jet[3]
-    require(mixed_inverse == -J, "inverse plaquette mixed derivative")
-    mixed_curvature = (mixed_product - mixed_inverse) / 2
-    require(mixed_curvature == J, "original R(P) mixed curvature derivative")
+        product_jet = (I4, ZERO4, ZERO4, ZERO4)
+        for factor in (link_jet(g1, "a", 1), link_jet(g2, "b", 1),
+                       link_jet(g1, "a", -1), link_jet(g2, "b", -1)):
+            product_jet = jet_product(product_jet, factor)
+        inverse_jet = (I4, ZERO4, ZERO4, ZERO4)
+        for factor in (link_jet(g2, "b", 1), link_jet(g1, "a", 1),
+                       link_jet(g2, "b", -1), link_jet(g1, "a", -1)):
+            inverse_jet = jet_product(inverse_jet, factor)
+        commutator = g1 * g2 - g2 * g1
+        require(product_jet[3] == commutator,
+                "actual based plaquette mixed derivative")
+        require(inverse_jet[3] == -commutator,
+                "inverse plaquette mixed derivative")
+        curvature = (product_jet[3] - inverse_jet[3]) / 2
+        require(curvature == commutator,
+                "original R(P) mixed curvature derivative")
+        return curvature
+
+    curvature_j = commutator_curvature(N2, BAR_N3)
+    curvature_b = commutator_curvature(N2, BAR_N2)
+    require(curvature_j == J, "[N2,barN3]=J exactly")
+    require(curvature_b == B, "[N2,barN2]=B exactly")
 
     h = sp.symbols("h", positive=True)
     coframe = h * I4
     eta = sp.Matrix([[0, 1, 0, 0], [1, 0, 0, 0],
                      [0, 0, -1, 0], [0, 0, 0, -1]])
     epsilon = sp.LeviCivita
-    # This is the original accepted G_2(e_u wedge e_v, star b(R)) convention:
-    # the bivector pair a<b is summed once and the complementary c<d once.
-    face = (2, 3)
-    u, v = (i for i in range(4) if i not in face)
-    curvature_dual = mixed_curvature * eta
-    palatini_pair = sp.S.Zero
-    for a in range(4):
-        for b in range(a + 1, 4):
-            c, d = (i for i in range(4) if i not in (a, b))
-            bivector = coframe[a, u] * coframe[b, v] - coframe[b, u] * coframe[a, v]
-            palatini_pair += epsilon(a, b, c, d) * bivector * curvature_dual[c, d]
-    face_mixed = sp.expand(epsilon(*face, u, v) * palatini_pair)
-    require(sp.simplify(face_mixed + h**2) == 0,
-            "original (2,3) star-face mixed coefficient")
-    return h, face_mixed
+
+    def palatini_face_mixed(face, curvature):
+        u, v = (i for i in range(4) if i not in face)
+        curvature_dual = curvature * eta
+        palatini_pair = sp.S.Zero
+        # Original accepted G_2 convention: sum a<b and complementary c<d once.
+        for a in range(4):
+            for b in range(a + 1, 4):
+                c, d = (i for i in range(4) if i not in (a, b))
+                bivector = (coframe[a, u] * coframe[b, v]
+                            - coframe[b, u] * coframe[a, v])
+                palatini_pair += epsilon(a, b, c, d) * bivector * curvature_dual[c, d]
+        return sp.expand(epsilon(*face, u, v) * palatini_pair)
+
+    face_j = palatini_face_mixed((2, 3), curvature_j)
+    face_b = palatini_face_mixed((0, 1), curvature_b)
+    require(sp.simplify(face_j + h**2) == 0,
+            "original (2,3) star-face J mixed coefficient")
+    require(sp.simplify(face_b + h**2) == 0,
+            "original (0,1) star-face B mixed coefficient")
+    return h, face_j, face_b
+
+
+def branch_resolved_readout(g1, g2, pointer_index, h, face_mixed, label):
+    """Check one complete all-success record against a Lorentz face's two jets."""
+    curvature = g1 * g2 - g2 * g1
+    loop_gates = ((g2, "b", -1), (g1, "a", -1),
+                  (g2, "b", 1), (g1, "a", 1))
+    allgood_word = (I4, ZERO4, ZERO4, ZERO4)
+    for generator, variable, sign in loop_gates:
+        allgood_word = jet_product(
+            factor_jet(generator, variable, sign, failure=False), allgood_word
+        )
+    require(allgood_word[0] == I4 / 16 and allgood_word[3] == curvature / 16,
+            f"all-success {label} word is 1/16 times its plaquette jet")
+
+    loop = instrument_probability_jets(loop_gates)
+    unmarked_mixed = entropy_mixed_jet(
+        [q for _, branch in loop for q in branch]
+    )
+    require(unmarked_mixed == 0, f"unmarked {label} complete Shannon mixed source vanishes")
+    allgood_fine, allgood_q = split_pointer_on_history(loop, pointer_index)
+    require(allgood_q[3] == -SQRT2 / 6144,
+            f"all-success {label}-minus crossed-loop probability mixed derivative")
+    mixed_source = entropy_mixed_jet(allgood_fine)
+    require(sp.simplify(mixed_source + C_SH / 64) == 0,
+            f"all-success {label} Shannon mixed source")
+
+    one_edge = instrument_probability_jets(
+        ((None, None, 1), (curvature, "a", 1),
+         (None, None, 1), (None, None, 1))
+    )
+    one_unmarked = entropy_first_jet(
+        [q for _, branch in one_edge for q in branch], axis=1
+    )
+    require(one_unmarked == 0, f"unmarked {label} one-link source vanishes")
+    one_fine, one_q = split_pointer_on_history(one_edge, pointer_index)
+    require(one_q[1] == -SQRT2 / 6144,
+            f"all-success {label}-minus one-link probability first derivative")
+    first_source = entropy_first_jet(one_fine, axis=1)
+    require(sp.simplify(first_source + C_SH / 64) == 0,
+            f"all-success {label} Shannon first source")
+    require(sp.simplify(first_source - mixed_source) == 0,
+            f"all-success {label} first and mixed sources agree")
+
+    kappa = 64 * h**2 / C_SH
+    require(sp.simplify(kappa * first_source - face_mixed) == 0,
+            f"branch-local {label} scale matches original face first jet")
+    require(sp.simplify(kappa * mixed_source - face_mixed) == 0,
+            f"same branch-local {label} scale matches original face C2 jet")
+    return first_source, mixed_source
 
 
 def run():
-    h, face_mixed = face_geometry_check()
+    h, face_j, face_b = face_geometry_check()
 
     # Four gates in chronological order B^-1,A^-1,B,A yield the actual
     # matrix product A B A^-1 B^-1.  Each has its own retained Julia flag.
     loop_gates = ((BAR_N3, "b", -1), (N2, "a", -1),
                   (BAR_N3, "b", 1), (N2, "a", 1))
     loop = instrument_probability_jets(loop_gates)
-    fine, q_jminus = split_j_minus(loop)
+    fine, q_jminus = split_pointer(loop, J_MINUS_INDEX)
 
     one_edge = instrument_probability_jets(
         ((None, None, 1), (J, "a", 1), (None, None, 1), (None, None, 1))
     )
-    _, one_q_jminus = split_j_minus(one_edge)
-    require(one_q_jminus[1] == -1 / (48 * SQRT2),
-            "four-gate one-link J- pointer first derivative")
-    one_source = sp.simplify(GOLDEN_GAIN * one_q_jminus[1])
-    require(sp.simplify(one_source + C_SH) == 0,
-            "one-link complete Golden mean-Shannon source")
+    one_unmarked_first = entropy_first_jet(
+        [q for _, branch in one_edge for q in branch], axis=1
+    )
+    require(one_unmarked_first == 0,
+            "unmarked complete one-link Shannon first source vanishes")
+    allhistory_one_fine, allhistory_one_q = split_pointer(one_edge, J_MINUS_INDEX)
+    allhistory_one_source = sp.simplify(GOLDEN_GAIN * allhistory_one_q[1])
+    require(allhistory_one_q[1] == -SQRT2 / 96,
+            "all-history one-link J- probability derivative")
+    require(sp.simplify(allhistory_one_source + C_SH) == 0,
+            "all-history one-link Golden mean-Shannon source")
+    one_allgood_fine, one_allgood_q = split_pointer_on_history(one_edge, J_MINUS_INDEX)
+    one_allgood_source = entropy_first_jet(one_allgood_fine, axis=1)
+    require(one_allgood_q[1] == -SQRT2 / 6144,
+            "all-success J- one-link probability derivative")
+    require(sp.simplify(one_allgood_source + C_SH / 64) == 0,
+            "all-success complete Golden mean-Shannon first source")
 
     loop_q_source = q_jminus[3]
     require(sp.simplify(loop_q_source + 1 / (384 * SQRT2)) == 0,
@@ -274,10 +390,17 @@ def run():
 
     # Per-face scale is already fixed by the first jet; it cannot repair C2.
     kappa = h**2 / C_SH
-    matched_first = sp.simplify(kappa * (-C_SH) - face_mixed)
+    matched_first = sp.simplify(kappa * (-C_SH) - face_j)
     require(matched_first == 0, "flat first-jet normalization matches")
-    mismatch = sp.simplify(kappa * fine_mixed - face_mixed / 8)
+    mismatch = sp.simplify(kappa * fine_mixed - face_j / 8)
     require(mismatch == 0, "scaled mixed source is exactly one eighth")
+
+    j_first, j_mixed = branch_resolved_readout(
+        N2, BAR_N3, J_MINUS_INDEX, h, face_j, "J"
+    )
+    b_first, b_mixed = branch_resolved_readout(
+        N2, BAR_N2, B_MINUS_INDEX, h, face_b, "B"
+    )
 
     print("PASS [N2,barN3]=J and original crossed-null plaquette coefficient=-h^2")
     print("PASS 16 fresh-flag histories x 13 complete POVM outcomes = 208 coarse outcomes")
@@ -288,7 +411,11 @@ def run():
     print(f"PASS crossed-loop J- probability mixed derivative = {sp.sstr(loop_q_source)}")
     print(f"PASS Golden-refined Shannon mixed source = -c_Sh/8 = {sp.sstr(-C_SH/8)}")
     print("PASS first-jet-fixed scale leaves exact 1/8 crossed-null face source")
-    print("SCOPE: rejects this complete mean-Shannon candidate at C2 only; no native-D0 no-go")
+    print("PASS one all-success J- or B- Golden refinement gives 209 positive outcomes")
+    print(f"PASS both branch-resolved first/mixed sources agree = -c_Sh/64 = {sp.sstr(-C_SH/64)}")
+    print("PASS one branch-local scale 64*h^2/c_Sh matches both J and B face jets")
+    print("SCOPE: the uniform-history refinement fails C2; the all-good refinement matches two Lorentz face jets only")
+    print("SCOPE: neither readout is thereby selected by physical native D0")
 
 
 if __name__ == "__main__":
