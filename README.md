@@ -510,3 +510,5 @@ Repository: https://github.com/gvakhrushev/d0_15
 Registry:   02_REGISTRY/claims.csv
 Contact:    g.vakhrushev1993@gmail.com
 ```
+
+> **Physical-source research intake (2026-10-19):** The original full128 detector's pathwise modal Book/Born identification, complete information/clock price and joint Einstein–CAR source remain a Draft research obligation; no GR closure or source selector is claimed. See the active `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE` task.
