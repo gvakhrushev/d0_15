@@ -297,8 +297,14 @@ The tangent is volume-preserving; the flat geometric \(\rho_0\) comparator and
 the constraint multiplier both vanish on it. Thus this specified \(H+J\)
 candidate is not stationary at the tested configuration. This extends the same-process obstruction to every finite \(L\); the
 uniform \(>1/10000\) margin is numerically weaker than the sharper
-continuum-only \(>1/30\) bound above. It still does not prove that all
-matter stress vanishes or yield a source-subtracted native equation.
+continuum-only \(>1/30\) bound above. Along the same path every \(q_t\)
+is a constant flat metric with fixed determinant, so both the Einstein–Hilbert
+vacuum variation and any cosmological-volume variation vanish. The nonzero
+\(H+J\) derivative therefore rules out identifying this candidate alone
+with vacuum Einstein–Hilbert plus \(\Lambda\); a volume-only correction
+cannot remove the residual. This is scoped to this candidate and path; it does
+not prove that all matter stress vanishes or yield a source-subtracted native
+equation.
 
 For an enlarged same-process action \(H+J+R\), stationarity on this tangent
 requires \(\dot R=-2(E_1-E_2)\). That is a necessary source value, not a
