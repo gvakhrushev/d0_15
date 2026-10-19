@@ -8033,6 +8033,16 @@ minor; it also passes its bounded torsion and crossed Ricci/Weyl fixtures.
 It verifies the continuum local coframe calculation; its own scope excludes
 the original finite 40-row action, physical D0 admission, and global GR.
 
+The [finite plaquette trial check](sources/d0_two_null_crossing_2026-10-19/check_finite_all40_two_null.mjs)
+then varies the original six-based star through all 16 solder and 24 link
+directions on that crossed affine coframe, using continuum Levi-Civita links
+as a trial. Each one-sided affine pp branch has zero finite rows, but the
+orthogonally crossed trial does not: at \(h=1/8\), its largest solder and
+link residuals are \(7.5713\times10^{-5}\) and \(6.0785\times10^{-5}\);
+halving \(h\) reduces them by approximately 8 and 16. This bounded numerical
+check rejects that link lift as an exact finite root; it does not exclude
+other two-sided roots or prove a no-go.
+
 The separate [opposite-null Julia order-memory result](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md)
 now constructs the abstract readout step: one fixed complete 13-effect POVM
 on the original CAR16 grade-1 sector and a fresh four-dimensional test
@@ -8046,12 +8056,16 @@ passes these controls. This closes the
 positive order-readout construction only in the declared generous
 active-orthogonal / one-way fresh-registration class; the extra test
 preparation, actuation and Golden branch still need their actual native
-program and cost.
+program and cost. The latest continuation also proves a local analytic
+inverse from those six contrasts and reconstructs the existing Palatini star
+as the same function on its rest chart, so the chart-level Euler follows by
+chain rule. Gauge transport of the calibrated test and compulsory physical
+Cost--Info selection remain separate.
 
 Thus the first remaining physical bridge is no longer an abstract detector
 formula: the same compulsory D0 program must generate and price this full
 fresh-flag record, with its complete retained Book history and actual
-Cost--Info law. The double-null result also remains a continuum local Cartan
-2-jet; it has not yet been substituted into the original finite 40-row
-plaquette equations. Neither conditional result selects a physical source or
+Cost--Info law. On the geometry side, the crossed continuum-LC trial is not
+an exact finite root; constructing or excluding a genuine sourced two-sided
+root remains open. Neither conditional result selects a physical source or
 closes general GR.
