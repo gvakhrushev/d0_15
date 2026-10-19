@@ -1,0 +1,43 @@
+PASS [2 1] system: 400 exact equations, rank 266, augmented rank 266
+  free parameters=134; selected nonzero coefficients=18
+  w_2_1_0_0_0_0 = 1/64
+  w_2_1_0_3_1_1 = 1/8
+  w_2_1_0_4_0_0 = 1/32
+  w_2_1_0_4_2_0 = 1/16
+  w_2_1_0_5_0_0 = -1/32
+  w_2_1_0_5_1_0 = -1/32
+  w_2_1_2_3_0_0 = -1/64
+  w_2_1_2_3_0_1 = -3/32
+  w_2_1_2_4_0_0 = 3/32
+  w_2_1_2_4_1_0 = 1/16
+  w_2_1_2_5_0_0 = 1/64
+  w_2_1_3_0_0_0 = -1/64
+  w_2_1_3_3_0_0 = -1/32
+  w_2_1_3_3_1_0 = -1/16
+  w_2_1_3_4_0_0 = 3/64
+  w_2_1_3_4_0_1 = 1/32
+  e_2_1_1_0_2_1 = -1/16
+  e_2_1_1_2_1_1 = -5/16
+PASS [1 2] system: 400 exact equations, rank 266, augmented rank 266
+  free parameters=134; selected nonzero coefficients=19
+  w_1_2_1_0_0_0 = -1/64
+  w_1_2_1_1_0_0 = 5/96
+  w_1_2_1_1_1_0 = -1/16
+  w_1_2_1_1_2_0 = 1/16
+  w_1_2_1_2_1_0 = 1/16
+  w_1_2_1_5_0_0 = -3/64
+  w_1_2_1_5_0_1 = 1/32
+  w_1_2_2_0_0_0 = 1/64
+  w_1_2_2_1_0_0 = 3/64
+  w_1_2_2_1_1_0 = 1/32
+  w_1_2_2_2_0_0 = 3/64
+  w_1_2_2_2_0_1 = -1/16
+  w_1_2_3_1_0_0 = 1/64
+  w_1_2_3_1_0_1 = 1/16
+  w_1_2_3_2_0_0 = -1/64
+  w_1_2_3_2_1_0 = -3/32
+  w_1_2_3_5_0_0 = -1/64
+  e_1_2_0_1_3_0 = -1/48
+  e_1_2_0_2_0_2 = 5/32
+PASS combined corrected state: all 40 original Euler rows vanish identically in x,y through total amplitude degree three
+SCOPE: h=1, H=a*x, J=b*y, fixed crossed-null chart. Higher amplitude orders, arbitrary slopes, refinement, boundaries and native D0 price remain open.
