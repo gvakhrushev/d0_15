@@ -164,6 +164,41 @@ for(const v of probes){
       v.name+" reversed complete chronological density ordering flips gauge-free phase");
 }
 
+
+// Exact moving-preparation source: the same full Julia history itself
+// differentiates ψ(a)=normalize(exp(a*N2) ψ0). No external preparation
+// counterterm is appended to the original complete GOOD/BAD record.
+function fullMovingPrep(a,b,r,i){
+ const e=expNil(Ah,a);
+ return fullRecord(a,b,mv(e,r),mv(e,i));
+}
+function triangleMovingPrep(a,b,r,i){
+ const x=fullRecord(0,0,r,i),y=fullMovingPrep(a,0,r,i),
+       z=fullMovingPrep(a,b,r,i);
+ const g=tri(x.GOOD,y.GOOD,z.GOOD);
+ const bad=tri(x.BAD,y.BAD,z.BAD);
+ return [g[0]+bad[0],g[1]+bad[1]];
+}
+const prepTargets={plus:-11/576,minus:-7/576};
+for(const v of probes){
+ const expected=prepTargets[v.name];
+ const original=v.full;
+ const derivativeOfPrep=expected-original;
+ const computed=connectedImag(v.re,v.im,Ah,Bh)/64
+                 +27*connectedImag(v.re,v.im,Ah,
+                   add(Bh,tr(Bh)).map(row=>row.map(x=>-x/6)))/64;
+ test(Math.abs(derivativeOfPrep-computed)<1e-13,
+      v.name+" exact nonzero moving-preparation contribution to full closed source");
+ let prev=Infinity;
+ for(const h of [.1,.03,.01,.003]){
+   const val=triangleMovingPrep(h,h,v.re,v.im)[1]/(h*h);
+   const err=Math.abs(val-expected);
+   test(err<prev && err<.003,
+        v.name+" FULL GOOD/BAD record automatically includes moving CAR prep, h="+h);
+   prev=err;
+ }
+}
+
 console.log(JSON.stringify({
  original_carrier:"full CAR16 grade-one block, original two-null Lorentz/Julia",
  classical_flags:true,
