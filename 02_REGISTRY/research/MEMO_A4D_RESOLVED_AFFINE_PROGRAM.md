@@ -1105,6 +1105,33 @@ it does not turn that condition into ensemble-mean Shannon stationarity.
 `C_Y` preserves the record but proves neither the binding nor the
 aggregation rule.
 
+There is an exact source check even **after** granting the proposed complete
+capacity law and `w=q`. In its full optimized POVM,
+`q_iF=1/D` and `q_iab=exp(h(e_i)) p_a(e_i)/D`, with
+`p_0(e)=1-e`, `p_1(e)=e`, `b=0,1`, and
+`Gamma=log(D)/log(phi)`, `D=sum_i Z(e_i)`, `Z=1+2 exp(h)`. At the flat
+profile `e_i=p^2`, the identities
+`exp(h(p^2)) p_0(p^2)=phi^(p^2)>1` and
+`exp(h(p^2)) p_1(p^2)=phi^(-p)<1` show that the modal outcomes are
+the success labels `(i,a=0,b)`; all leaves tie. Put `ell=log(phi)`. On
+each such path, direct differentiation gives
+
+```text
+d S_(i,0,b) = d Gamma + (phi-ell)/ell * d e_i.
+```
+
+For example, on the declared independent leaf chart the tangent
+`d e_i=1`, `d e_j=-1` for two leaves has `d Gamma=0`, while the two
+competing modal path derivatives are opposite and nonzero. The lower
+envelope over those tied minimum-code paths has a nonzero one-sided source
+in both directions, so it is not the smooth stationary functional `Gamma`
+on that chart. This is conditional on that leaf tangent belonging to the
+admitted geometric image; if native field constraints remove it, their exact
+image must be proved. Otherwise the capacity argument establishes a mean
+entropy Euler transfer, not Book03 pathwise stationarity. A memory-class
+aggregation could change the functional, but must be derived on this same
+record rather than inserted to recover `Gamma`.
+
 The downstream full128 audit in [Draft #384](https://github.com/gvakhrushev/d0_15/pull/384)
 sharpens the distinction on the literal original instrument. Conditional on
 the full-history `w=q` identification, at `L=4`, `h=1/4`, `n=1024` the
@@ -1120,9 +1147,9 @@ variation is the admitted one and no other same-run source contributes.
 Those identifications are not established for the full Book sum. This is
 not a no-go for the algebra-valued Book sum or a different physically
 selected history space; any cancellation must come from a real, same-run
-native source, not a fitted counterterm. The full timed record also cannot be silently replaced
-by its count: its clock-position source and the nonabelian order response
-are distinct native directions.
+native source, not a fitted counterterm. The full timed record also cannot be
+silently replaced by its count: its clock-position source and the nonabelian
+order response are distinct native directions.
 
 Nor does `ActionProtocol` choose the missing price. The exact
 [prepared-action fiber theorem](A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md)
@@ -1157,6 +1184,21 @@ open. Thus an algebraic matter-bearing source exists; its physical selection
 and matter/Ward completion do not. The fixed-word charge boundary in §6.20
 also does not establish a full-Cartan matter superselection rule.
 
+The new [archive self-energy synthesis](A4D_ARCHIVE_FUTURE_CAUSAL_SELF_ENERGY_AND_DETECTOR_TIME_2026_10_19.md)
+adds a precise operator target to this same-run gate. On the original
+718-edge scene its hidden archive has `F_A=I-T^2` and the exact formal
+resolvent correction `Sigma_A(s)=s^2 F_A (I+sT)^(-1)`. This proves a
+nonzero archive-mediated future response without treating a currently
+invisible record as empty. It does **not** identify the formal `s` with the
+physical tick, nor weld this scene archive to the separate full128 clock,
+ordered Lorentz record, or full16+CAR matter carrier. The same source also
+shows why the pieces cannot be assigned coefficients independently:
+`F_A` carries shape but not the common-cost Perron pressure, while a scalar
+positive edge transfer does not carry all six signed Lorentz directions.
+The needed map must preserve the full record composition **and** the
+native Cost−Info price on one execution; adding `Sigma_A`, Perron pressure,
+Lorentz response and CAR source as separate fitted terms is not a derivation.
+
 **Smallest decisive consumer:** on one admitted execution, compute the
 complete Book first source on the actual ordered history, including native
 preparation, full labels, RIGHT/reference, CAR, controller, clock and work;
@@ -1165,10 +1207,10 @@ independent Palatini/CAR source. Begin with the flat `J23` row above: either
 the admitted history is not the conditional blank modal word, or the same
 program must exhibit the native term that cancels its nonzero source. Do not
 choose mean, modal, binary or count aggregation by whichever matches
-Einstein. At this refresh `#334` is at `ece9c2c`; #384 is a divergent
-downstream review from common base `8f327fc`, overlaps parent source paths,
-and has no reported checks. Treat it as scoped research input, not as an
-accepted parent application or a second execution. `task_dispatch` currently
+Einstein. The inspected #384 branch diverges from #334 at common base
+`8f327fc`, overlaps parent source paths, and has no reported checks. Treat
+it as scoped research input, not as an accepted parent application or a
+second execution. `task_dispatch` currently
 reports the live `#334/#384` association as ambiguous; reconcile the shared
 ownership before publishing more edits.
 
