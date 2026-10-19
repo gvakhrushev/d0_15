@@ -1517,6 +1517,15 @@ argument. Do not falsely retire them or require an exhaustive classification
 when a narrower uniform bound is sufficient. New independently owned scientific
 tasks require CONTROL registration, prerequisites and the existing WIP limits.
 
+Recent exact inputs in the active #334 now provide a full-CAR16 positive
+Julia/POVM with invertible first response on all six proper-Lorentz generators,
+a nonzero conditional Golden order-information source, and an exact local
+two-sided-null Cartan crossing with separate Ricci and Weyl channels. These
+are instrument and geometry candidates for the existing same-carrier
+source test. They do not identify the mandatory full Cost−Info price or solve
+the original 40 finite Euler rows; the integrated limits and next test are in
+[strategic synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md), §§7.52–7.53.
+
 For the execution rhythm, checks and handoff, use [00_WORK/README.md](../../00_WORK/README.md).
 The historical task lists below are **not launch instructions**.
 

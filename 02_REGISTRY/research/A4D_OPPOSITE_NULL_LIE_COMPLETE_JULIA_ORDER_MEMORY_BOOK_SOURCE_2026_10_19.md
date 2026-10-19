@@ -228,6 +228,18 @@ D_{\xi_J}S_{\rm mean}(0)
 \]
 The parent symmetric pointer has zero first source in the tracefree Lorentz tangent; the added **original** golden conditional record contributes precisely its actual conditional entropy, not a fitted signal.
 
+The full six-direction derivative audit sharpens the scope: in the ordered
+basis \((N_2,N_3,\bar N_2,\bar N_3,J,B)\), this specified complete mean-Shannon
+price has first-source covector
+\[
+\left(0,0,0,0,\frac{h_2(p)}{48\sqrt2\,\log\varphi},0\right).
+\]
+The symmetric \(+/-\) pointer pairs, rest outcome and Julia failure cancel at
+the identity; only the added split of \(J+\) survives. Thus the POVM is
+informationally complete on six Lie directions, while this scalar price has a
+one-direction first source there. It is not yet the complete 40-row
+Palatini/Einstein source. The reproducible checker tests all six derivatives.
+
 More decisively, run the SAME fine-Golden/Julia/POVM apparatus under TWO orders \(AB\) and \(BA\) of the opposite null pair \(N_2,\bar N_3\). Because all 15 coarse outcomes have strictly positive probabilities on the flat seed, the mixed derivatives of their actual Shannon price exist. Differentiating the real whole probability law (not an invented signed action) gives
 \[
 \boxed{

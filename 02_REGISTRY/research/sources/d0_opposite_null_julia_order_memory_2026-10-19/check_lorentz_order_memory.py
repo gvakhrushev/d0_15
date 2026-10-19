@@ -221,11 +221,18 @@ def book_order_price():
     raw=complete_book(ab,.25,False)-complete_book(ba,.25,False)
     near(raw,0.,1e-11)
     # A single finite Julia input with an actual GOLDEN split on its J+
-    # pointer produces a nonzero FIRST information source on J.
+    # pointer produces a first source only on J. The six symmetric +/- pairs,
+    # rest and failure outcomes have zero first Shannon source at identity;
+    # the conditional Golden entropy contributes only through q_{J+}.
     h=1e-5
-    deriv=(complete_book(expm(J,h),.5)-complete_book(expm(J,-h),.5))/(2*h)
-    near(deriv,H_GOLDEN/(48*sqrt(2)*ELL),1e-9)
-    print(f"BOOK same-history mean Golden/J source={deriv:.12g}")
+    gradient=[(complete_book(expm(g,h),.5)-complete_book(expm(g,-h),.5))/(2*h)
+              for g in G]
+    expected_j=H_GOLDEN/(48*sqrt(2)*ELL)
+    for i,value in enumerate(gradient):
+        near(value,expected_j if i==4 else 0.,1e-9)
+    print("BOOK complete mean-Info gradient [N2,N3,M2,M3,J,B]="+
+          str([round(x,12) for x in gradient]))
+    print(f"BOOK same-history mean Golden/J source={gradient[4]:.12g}")
     print(f"BOOK order mixed source={expected:.12g} golden units, all branches retained")
     print("PASS full-support mean-Info price has nonzero original Golden order source")
     print("NOT a proof that the ORIGINAL compulsory fine D0 Book action selects this coarse cut")
