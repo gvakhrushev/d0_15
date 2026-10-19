@@ -8032,6 +8032,9 @@ exactly verifies the four opposite-null commutators and a rank-six pivot
 minor; it also passes its bounded torsion and crossed Ricci/Weyl fixtures.
 It verifies the continuum local coframe calculation; its own scope excludes
 the original finite 40-row action, physical D0 admission, and global GR.
+The companion [crossing Ricci/Weyl note](A4D_DOUBLE_NULL_CARTAN_CROSSING_RICCI_WEYL_SPLIT_2026_10_19.md)
+records the exact continuum Cartan normal form and the local curvature
+invariants, with the same finite-root and native-selection boundaries.
 
 The [finite plaquette trial check](sources/d0_two_null_crossing_2026-10-19/check_finite_all40_two_null.mjs)
 then varies the original six-based star through all 16 solder and 24 link
