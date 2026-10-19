@@ -135,9 +135,14 @@ function audit(){
    const dvSource=applied(dv,v);
    const S2Extended=S[2].map((row,i)=>[...row,dvSource[i]]);
    const moved=solve(S2Extended,y4.map(x=>mod(-x)));
+   const dispersionCoefficient=mod(-inverse(2));
+   if(!moved.possible||moved.x[16]!==dispersionCoefficient)
+     throw Error("exact shared oblique spin2 dispersion -1/2 coefficient missing");
    out.push({polarization:j===0?"plus":"cross",S2_zero:true,
      dispersion_correction_solvable:moved.possible,
      dispersion_shift_gamma:moved.possible?moved.x[16]:null,
+     dispersion_shift_rational:"-1/2",
+     dispersion_shift_unique:gauss(S2Extended).rank===gauss(S[2]).rank+1,
      S3_zero:y3.every(x=>x===0),
      cubic_removed:e1.possible,corrector:e1.x.map((x,i)=>x?{i,v:x}:null).filter(Boolean),
      quartic_removed_by_polarization_alone:e2.possible,
