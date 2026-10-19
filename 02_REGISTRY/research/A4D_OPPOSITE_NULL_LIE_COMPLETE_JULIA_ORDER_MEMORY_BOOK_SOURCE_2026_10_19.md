@@ -341,10 +341,19 @@ Golden splits, the mapped negative pointer is the unique one with the required
 direction and sign on each face. The existing checker now verifies the six
 face/generator matches and that uniqueness.
 
+If a separate fresh complete tester is prepared for each face, the joint
+pointer law is a product and its full Shannon price is the sum of the six
+face prices. Summing the six identities then gives the same **40-component
+first Euler vector at the flat lattice point**: every one of the 24 link rows
+matches by face incidence, while the 16 coframe rows vanish on both sides at
+\(P_{rt}=I\) with the flat-frame probe held fixed. This is a constructed
+linearized full40 match for a six-probe product experiment, not the original
+single-carrier D0 price.
+
 This is a concrete inverse-reconstruction candidate for the Palatini
 first-source covector, not a derivation of it from D0. The native programme
 must still force the face-to-pointer assignment and \(\kappa_h\), pay for
-preparation, observer transport and every retained record, and keep the same
+six preparations, observer transport and every retained record, and keep the same
 price under arbitrary coframe variations. The test establishes neither
 nonlinear equality of the full entropy price and the star action nor a
 uniform refinement estimate. Its next use is to test whether the actual native
