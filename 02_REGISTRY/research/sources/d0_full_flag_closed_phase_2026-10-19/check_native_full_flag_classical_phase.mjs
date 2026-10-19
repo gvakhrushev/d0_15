@@ -119,6 +119,51 @@ test(Math.abs((7/1152)-(11/1152)+1/288)<1e-15,
  "full dephased two-line imaginary coefficient difference exactly -1/288");
 test(Math.abs((1/72)-(11/504)+1/126)<1e-15,
  "full dephased normalized closed-phase difference exactly -1/126");
+
+// Independent literal block-diagonal DENSITY-MATRIX control. This is
+// reconstructed from original conditional CAR one-body coherences and
+// classical flag probabilities, without ANY GOOD/BAD coherence.
+const ketDensity=u=>{
+ const [r,i]=u;
+ return Array.from({length:4},(_,a)=>
+  Array.from({length:4},(_,b)=>[
+   r[a]*r[b]+i[a]*i[b],i[a]*r[b]-r[a]*i[b]
+  ]));
+};
+const cmul2=(u,v)=>[u[0]*v[0]-u[1]*v[1],u[0]*v[1]+u[1]*v[0]];
+const cMatrixProduct=(A,B)=>A.map(row=>
+ B[0].map((_,j)=>row.reduce((sum,x,k)=>{
+  const y=cmul2(x,B[k][j]);return [sum[0]+y[0],sum[1]+y[1]];
+ },[0,0])));
+const cyclicDensity=(x,y,z)=>{
+ const A=cMatrixProduct(cMatrixProduct(x,y),z);
+ return A.reduce((s,r,j)=>[s[0]+r[j][0],s[1]+r[j][1]],[0,0]);
+};
+const diagOnly=M=>M.map((row,j)=>row.map((v,k)=>j===k?[v[0],0]:[0,0]));
+for(const v of probes){
+ const a=fullRecord(0,0,v.re,v.im),b=fullRecord(.03,0,v.re,v.im),
+       c=fullRecord(.03,.03,v.re,v.im);
+ const block=(name)=>cyclicDensity(
+  ketDensity(a[name]),ketDensity(b[name]),ketDensity(c[name]));
+ const g=block("GOOD"),f=block("BAD");
+ const ref=cyclic(.03,.03,v.re,v.im);
+ test(Math.abs(g[0]-ref.good[0])<1e-13&&
+      Math.abs(g[1]-ref.good[1])<1e-13&&
+      Math.abs(f[0]-ref.bad[0])<1e-13&&
+      Math.abs(f[1]-ref.bad[1])<1e-13,
+      v.name+" literal CLASSICAL-FLAG block density trace agrees with full complete Julia output");
+ const dg=cyclicDensity(
+  diagOnly(ketDensity(a.GOOD)),diagOnly(ketDensity(b.GOOD)),diagOnly(ketDensity(c.GOOD)));
+ const df=cyclicDensity(
+  diagOnly(ketDensity(a.BAD)),diagOnly(ketDensity(b.BAD)),diagOnly(ketDensity(c.BAD)));
+ test(dg[1]===0&&df[1]===0,
+      v.name+" HOSTILE: removing WITHIN-CAR coherence kills both full-flag phase terms");
+ const gr=cyclicDensity(ketDensity(c.GOOD),ketDensity(b.GOOD),ketDensity(a.GOOD));
+ const br=cyclicDensity(ketDensity(c.BAD),ketDensity(b.BAD),ketDensity(a.BAD));
+ test(Math.abs(gr[1]+g[1])<1e-13&&Math.abs(br[1]+f[1])<1e-13,
+      v.name+" reversed complete chronological density ordering flips gauge-free phase");
+}
+
 console.log(JSON.stringify({
  original_carrier:"full CAR16 grade-one block, original two-null Lorentz/Julia",
  classical_flags:true,
