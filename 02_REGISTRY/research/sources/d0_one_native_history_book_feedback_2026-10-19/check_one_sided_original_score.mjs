@@ -25,26 +25,56 @@ function scene(t){
 const h=1e-4,base=scene(0),up=scene(h),down=scene(-h);
 const f=Array.from({length:n},(_,i)=>Math.sin(.3*i)+.2*Math.cos(.17*i));
 const forecast=base.P.map(row=>row.reduce((s,a,j)=>s+a*f[j],0));
-const dLogRho=(Math.log(up.rho)-Math.log(down.rho))/(2*h);
-const dLogTerminal=base.r.map((_,i)=>(Math.log(up.r[i])-Math.log(down.r[i]))/(2*h));
+// Exact analytic field derivative from the three-zone Perron cubic.  For
+// q=exp(-ell*t), lambda=rho/p satisfies
+// lambda^3-(260+99*q^2)*lambda-2574*q=0.  Its positive right eigenvector is
+// proportional to (143*q+13*lambda, 117*q+13*lambda, lambda^2-99*q^2).
+const lambda=base.rho/p;
+near(lambda**3-359*lambda-2574,0,2e-10);
+const lambdaDot=-(198*lambda+2574)*ell/(3*lambda*lambda-359);
+const raw=[143+13*lambda,117+13*lambda,lambda*lambda-99];
+const rawDot=[-143*ell+13*lambdaDot,-117*ell+13*lambdaDot,
+              2*lambda*lambdaDot+198*ell];
+const total=raw.reduce((s,x,i)=>s+parts[i]*x,0);
+const totalDot=rawDot.reduce((s,x,i)=>s+parts[i]*x,0);
+const c=raw.map(x=>x/total),cDot=raw.map((x,i)=>(rawDot[i]*total-x*totalDot)/(total*total));
+const dLogRho=lambdaDot/lambda;
+const dLogTerminal=c.map((x,i)=>cDot[i]/x);
+for(let i=0;i<n;i++)near(base.r[i],c[zone[i]],2e-13);
 const W=(s,u,v,w)=>s.K[u][v]*s.K[v][w]*s.r[w]/(s.rho*s.rho);
-let count=0,normal=0,scoreTotal=0,mean=0,scoreSource=0,plus=0,minus=0;
+let count=0,normal=0,scoreTotal=0,mean=0,scoreSource=0,directSource=0,
+    noTerminalSource=0,noPerronSource=0,plus=0,minus=0;
 for(let u=0;u<n;u++)for(let v=0;v<n;v++)if(zone[u]!==zone[v])
 for(let w=0;w<n;w++)if(zone[v]!==zone[w]){
- const n9_11=+((zone[u]===0&&zone[v]===1)||(zone[u]===1&&zone[v]===0))
-             + +((zone[v]===0&&zone[w]===1)||(zone[v]===1&&zone[w]===0));
- const score=-ell*n9_11-2*dLogRho+dLogTerminal[w];
+ const crossUV=+((zone[u]===0&&zone[v]===1)||(zone[u]===1&&zone[v]===0));
+ const crossVW=+((zone[v]===0&&zone[w]===1)||(zone[v]===1&&zone[w]===0));
+ const n9_11=crossUV+crossVW;
+ const terminalDot=dLogTerminal[zone[w]];
+ const score=-ell*n9_11-2*dLogRho+terminalDot;
  const observable=(f[w]-forecast[v])**2;
  const prob=W(base,u,v,w);
+ const KdotUV=-ell*crossUV*base.K[u][v];
+ const KdotVW=-ell*crossVW*base.K[v][w];
+ // Independent product-rule derivative of rho^-2 K_uv K_vw r_w.
+ const directProbability=(KdotUV*base.K[v][w]*base.r[w]
+     +base.K[u][v]*KdotVW*base.r[w]
+     +base.K[u][v]*base.K[v][w]*base.r[w]*terminalDot)
+     /(base.rho*base.rho)-2*dLogRho*prob;
  count++;normal+=prob;scoreTotal+=prob*score;mean+=prob*observable;
- scoreSource+=prob*observable*score;
+ scoreSource+=prob*observable*score;directSource+=directProbability*observable;
+ noTerminalSource+=prob*observable*(score-terminalDot);
+ noPerronSource+=prob*observable*(score+2*dLogRho);
  plus+=W(up,u,v,w)*observable;minus+=W(down,u,v,w)*observable;
 }
 near(count,15708,0);near(normal,1,2e-9);
 if(Math.abs(scoreTotal)>2e-9)throw Error("full history score mean nonzero");
 const derivative=(plus-minus)/(2*h);
-near(scoreSource,derivative,2e-8);
-if(Math.abs(scoreSource)<.01)throw Error("genuine Book price source vanished");
+near(scoreSource,directSource,2e-12);
+near(scoreSource,0.0252599823924,2e-10);
+near(scoreSource,derivative,2e-9);
+if(Math.abs(scoreSource)<.01)throw Error("genuine one-history observable source vanished");
+if(Math.abs(noTerminalSource-scoreSource)<1e-3)throw Error("terminal Perron record term is not load-bearing");
+if(Math.abs(noPerronSource-scoreSource)<1e-3)throw Error("Perron pressure term is not load-bearing");
 // A complete native Book Cost price with true terminal Perron trace is
 // normalized at EVERY field value, not just at the base.
 const normalization=s=>{let mass=0;for(let u=0;u<n;u++)for(let v=0;v<n;v++)
@@ -57,8 +87,12 @@ console.log(JSON.stringify({
  trueNativeOneSidedNormalization:normal,
  genuineBaselineDistinctionLossMean:mean,
  firstSourceByFullRecordedCostInfoScore:scoreSource,
- firstSourceByIndependentWholeHistoryFieldPerturbation:derivative,
- sourceAbsoluteDifference:Math.abs(scoreSource-derivative),
+ firstSourceByIndependentAnalyticProductRule:directSource,
+ firstSourceByCentralFieldDifference:derivative,
+ analyticScoreProductRuleDifference:Math.abs(scoreSource-directSource),
+ centralDifferenceError:Math.abs(scoreSource-derivative),
+ sourceWithoutTerminalRecord: noTerminalSource,
+ sourceWithoutPerronPressure: noPerronSource,
  totalHistoryScoreMean:scoreTotal,
  scope:"Original one-sided Perron full-path first source, not selected Book03 physical Einstein action"
 },null,2));
