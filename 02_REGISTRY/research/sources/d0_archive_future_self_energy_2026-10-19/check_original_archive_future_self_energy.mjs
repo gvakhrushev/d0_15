@@ -24,7 +24,7 @@ for(let n=0;n<1500;n++){
  r=next;if(dist<3e-16)break;
 }
 rho=dot(r,mv(A,r));
-need(err(rho**3-359*rho-2574)<1e-7,"ORIGINAL scene cubic rho^3-359rho-2574");
+need(Math.abs(rho**3-359*rho-2574)<1e-7,"ORIGINAL scene cubic rho^3-359rho-2574");
 const T=A.map(row=>row.map(v=>v/rho)),T2=mm(T,T),I=eye(N);
 const F=I.map((row,i)=>row.map((v,j)=>v-T2[i][j]));
 const pi=r.map(v=>v*v);
@@ -95,9 +95,9 @@ const rootsA=359,rootsB=2574,amplitude=2*Math.sqrt(rootsA/3);
 const ang=Math.acos((3*rootsB/(2*rootsA))*Math.sqrt(3/rootsA))/3;
 const lam=[0,1,2].map(i=>amplitude*Math.cos(ang-2*Math.PI*i/3)).sort((a,b)=>b-a);
 const archiveEigs=[1-(lam[1]/rho)**2,1-(lam[2]/rho)**2];
-need(err(tr(F)-31.494352574857793)<2e-12 &&
-     err(archiveEigs[0]-0.800314904000112)<2e-12 &&
-     err(archiveEigs[1]-0.694037670857683)<2e-12,
+need(Math.abs(tr(F)-31.494352574857793)<2e-12 &&
+     Math.abs(archiveEigs[0]-0.800314904000112)<2e-12 &&
+     Math.abs(archiveEigs[1]-0.694037670857683)<2e-12,
      "native archive F has rank32, thirty innovation eigenvalues 1");
 const P=A.map((row,u)=>row.map((x,v)=>x?r[v]/(rho*r[u]):0));
 need(P.every(row=>err(row.reduce((a,b)=>a+b,0),1)<1e-12),
@@ -109,9 +109,9 @@ const trueVar=P.reduce((acc,row,u)=>{
  return acc+pi[u]*(ex-ex*ex);
 },0);
 const piA=pi.slice(0,9).reduce((a,b)=>a+b,0);
-need(err(archiveNorm-trueVar)<2e-12 && archiveNorm>0,
+need(Math.abs(archiveNorm-trueVar)<2e-12 && archiveNorm>0,
      "actual FUTURE conditional variance equals invisible archive norm");
-need(err(piA-.3115593200583015)<2e-12 && P.every((row,u)=>
+need(Math.abs(piA-.3115593200583015)<2e-12 && P.every((row,u)=>
  row.every((v,w)=>u<9&&w<9?v===0:true)),
      "same stationary histogram but zero adjacent AA transitions");
 const clockp=(Math.sqrt(5)-1)/2,eps=clockp**2/1024,lambda=288/25;
