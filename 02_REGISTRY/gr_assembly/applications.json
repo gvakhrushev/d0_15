@@ -838,6 +838,41 @@
         }
       ],
       "reported_state": "Pinned result-only to #334 commit bd36badebdd2989f866c70eaaf49733d3f5ca0f1. The analytic theorem is in theorem.md; the bounded checker replays with exact Q(sqrt(5))/rational controls and floating logarithmic estimates. Local numeric output agrees with the pinned RESULT.json within 1e-12 (last-bit floating variation only). The owner’s read-only analytical reviews are not independent registry acceptance. No application to native-programme-v1 is registered; physical decoder/cost admission, full-price source equality, and genuine full-system recovery remain open."
+    },
+    {
+      "id": "dmin-canonicality-source-bound-countermodel",
+      "owner": "complete-code-class research owner #334",
+      "statement": "In the declared literal-comparison interface, D_min canonicality, injectivity and golden F/R word costs alone do not imply a normalized code-minus-entropy source bound: at theta=1/2 the expected cost rate is 3/2 with derivative 1, while golden Shannon entropy has derivative 0.",
+      "interface": "complete-history-code-source-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "comparison_interface": "Complete histories are distinguished by equality of their complete literal binary words; Can is identity on those classes.",
+        "missing_equivalence": "The compressed universal history is not assumed Delta-equivalent to the expanded Enc(X_N); every literal history remains represented.",
+        "scope_limit": "This is a countermodel to the implication from the listed canonicality/injectivity/counting premises alone, not a counterexample to the full D0 foundation or its actual physical Delta."
+      },
+      "evidence": [
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/theorem.md",
+          "sha256": "843c71731fdfc6ea4291996793ed304ffc90372e2ccf9c5e3ee4bf3421c8c78b"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/check_code_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/check_code_source.py",
+          "sha256": "7c13c56a0b9b7761298a5ea960f9983082ccf3499a23d9325f13f9cc05f0673d"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/RESULT.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/RESULT.json",
+          "sha256": "ca381fac000d1b91f81754e108592d20115534336c796e8245888db592d763b6"
+        }
+      ],
+      "reported_state": "The exact finite literal-description control in the #334 owner gives rate 3/2 and source 1 at theta=1/2 while the entropy source is zero; the bounded checker reproduces the control. This refutes only the inference from the specified abstract interfaces, not actual D0 semantics. No physical no-go or native-programme application is claimed."
     }
   ],
   "applications": [
@@ -885,6 +920,26 @@
       "question": {
         "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
         "assumes": []
+      }
+    },
+    {
+      "id": "dmin-canonicality-source-bound-inference",
+      "result": "dmin-canonicality-source-bound-countermodel",
+      "interface": "complete-history-code-source-v1",
+      "work_key": "dmin-same-object-competitive-source",
+      "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+      "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+      "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+      "question": {
+        "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+        "assumes": [
+          "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+          "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+          "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+        ]
+      },
+      "review": {
+        "state": "proposed"
       }
     }
   ],
