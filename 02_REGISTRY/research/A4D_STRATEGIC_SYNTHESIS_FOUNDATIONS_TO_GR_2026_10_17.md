@@ -5060,6 +5060,22 @@ algebra. This does not rule out a positive Perron construction that carries
 the memory as state. It does rule out silently replacing the memory by one
 scalar character.
 
+There is also a newly exact finite instrument result on the same #334 route:
+the [original full128 order-readout packet](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md)
+has probability-response rank 6 on the 24 independent Lorentz-link jets at
+its fixed (L=4) background, while the 128 outcome-labelled CAR16 branch
+states have an exact rank-24 minor. Two rounds of classical outcomes certify
+rank at least 7. This is concrete evidence that the retained quantum record
+contains first-order link information that the one-round probability vector
+loses. On this 24-dimensional link tangent the output-state map has zero
+kernel, so by the dual criterion in §7.31 any specified first covector
+descends uniquely to its image. This is the exact finite substitute for
+requiring tomography of all physical fields: it is sufficient for every source
+covector on this restricted link tangent. It does not validate the generic
+unitary-joint-tangent claim in §7.31, nor identify an admitted D0 field-to-link
+rule, a refinement law, or the compulsory full price; it does identify the
+actual finite output carrier to use in those tests.
+
 There is an exact finite lift, conditional on a typed edge-memory cocycle.
 Suppose the admitted terminal quotient supplies a finite group \(G\) (for the
 existing terminal quotient, \(G=Q_8\)) and edge labels \(a_e\in G\) such that
