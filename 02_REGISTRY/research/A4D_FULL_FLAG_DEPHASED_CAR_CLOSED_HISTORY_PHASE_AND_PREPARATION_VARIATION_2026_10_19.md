@@ -131,3 +131,71 @@ The two calculations use different original D0 carriers. Do NOT add their number
 **The one actual GR theorem to establish next:** a SINGLE physically selected, paid, composition-preserving D0 Book03 history realization that carries the true 718 scalar/ordered memory, all six original proper Lorentz links and both Julia flag copies, source-compatible CAR, original oldRIGHT/ref128 and native clock, with full preparation. For THAT same physical programme show the actual fundamental Cost−Info FIRST covector (and its full stationary-history double Schur) equals the owned original finite star–CAR 40-field source, including the BRINKMANN and generic refined sector. The closed full-flag phase is now a concrete gauge-free detector witness of the ordered curvature of that programme, not a standalone candidate EH action.
 
 Reproduction: [complete dephased-original-Julia three-history source checker](sources/d0_full_flag_closed_phase_2026-10-19/check_native_full_flag_classical_phase.mjs), with direct 4×4 FULL positive Julia square-root matrix controls and all 16 grades retained in the mathematical carrier. Locally 54 PASS groups, including exact rational analytic mixed covariances, true qG/qB, direct finite h convergence, positive flag completeness, raw BAD and GOOD branch separation. It is original-grade-one restricted INPUT, not a new full16 cross-grade replay. **GR_closed=false.**
+
+
+## 6. EXTRAORDINARILY STRONG CONSUMER: ALL SIX proper-Lorentz link components from SIX scalar CLOSED phases with only TWO dynamic original preparations and classical flags
+
+We can remove one more unnecessary observability premise, rather than merely record a nonzero phase for a chosen two-generator rectangle. Fix the original six REAL proper-Lorentz generators
+\((N_2,N_3,\bar N_2,\bar N_3,J_{23},B)\)
+and the two original grade-one inputs \(\psi_\pm\) of §2. For each, let the **complete classically flagged Julia density** \(R_\pm(\xi)\) come from the SAME actual mathematical original \(\Lambda(U(\xi))/2,F=\sqrt{I-T^\dagger T}\). Retain GOOD and BAD; do NOT use postselected conditional weights.
+
+Choose FIVE simple FIXED CAR grade-one analyzer rays, all expressible in the ORIGINAL one-body CAR \((c_i^\dagger c_j)\) algebra on the declared one-particle support:
+\[
+|e_0\rangle,\quad |e_1\rangle,\quad |e_2\rangle,\quad
+|e_0+i e_1\rangle/\sqrt2,\quad
+|e_1+i e_2\rangle/\sqrt2.
+\]
+The first three are basis vectors; the last two are phase-sensitive one-body CAR projector references. No extra dynamical D0 input line is required for this mathematical readout: at identity their full classical-flagged density \(R_\chi(0)\) is known explicitly from the unchanged original Julia protocol. Whether the physical controller can calibrate exactly these CAR analyzers is an independent native operational obligation.
+
+For each dynamic preparation \(\psi\in\{\psi_+,\psi_-\}\) and reference anchor \(\chi\), define ONE real scalar closed comparison, built entirely from complete flag-dephased density matrices,
+\[
+\boxed{
+\Phi_{\psi,\chi}(\xi):=
+\arg\operatorname{Tr}[R_\psi(0)R_\psi(\xi)R_\chi(0)].
+}\tag{8}
+\]
+Because the trace is scalar, its phase is exactly gauge invariant under any separate rephasing of all CAR preparation vectors. Its baseline is
+\[
+\operatorname{Tr}[R_\psi(0)^2R_\chi(0)]
+=\frac7{16}|\langle\psi,\chi\rangle|^2>0
+\]
+for all selected anchored tests, so the phase is locally smooth, not an arbitrary branch cut. Each \(R\) is block diagonal in the ORIGINAL GOOD/BAD flag, with both failure branches retained.
+
+Choose exactly SIX scalar phase readings in this order:
+
+1. On \(\psi_+\): anchors \(e_0,\ e_2,\ (e_0+i e_1)/\sqrt2\).
+2. On \(\psi_-\): anchors \(e_1,\ (e_0+i e_1)/\sqrt2,\ (e_1+i e_2)/\sqrt2\).
+
+The direct ORIGINAL Julia density derivative, with correct full BAD Sylvester jet (4) and actual GOOD probability source, gives the EXACT rational Jacobian in original six Lie coordinates:
+\[
+\boxed{
+336\,D_\xi\boldsymbol{\Phi}(0)=
+\begin{pmatrix}
+0&50&0&46&8&0\\
+0&-4&0&4&-4&0\\
+-42&50&-54&46&8&0\\
+0&46&0&50&8&0\\
+54&46&42&50&8&0\\
+-6&25&6&23&2&48
+\end{pmatrix}.
+}\tag{9}
+\]
+An integer Bareiss determinant, with NO tolerance-based rank argument, yields
+\[
+\boxed{
+\det[336D_\xi\boldsymbol{\Phi}]=84\,934\,656,\qquad
+\det D_\xi\boldsymbol{\Phi}
+=\frac{84\,934\,656}{336^6}
+=5.90268038355\cdot10^{-8}>0.
+}\tag{10}
+\]
+
+**This is the precise original-D0 mathematical positive result:** Six scalar, true gauge-free **CLOSED comparison phases**, each computed from the COMPLETE original GOOD/BAD classically recorded CAR history via one-body density tomography, are locally sufficient to recover ALL SIX infinitesimal original proper-Lorentz link directions. Only the TWO main original CAR preparations vary with the geometry. Reference CAR analyzer projectors are fixed known operators. There is NO coherence between complete historical experiments or between success/failure flags. Original WITHIN-CAR coherences are still necessary and are measured by ordinary CAR bilinear expectations.
+
+The exact 6×6 is not merely asserted: a separate [six-scalar-phase native full Julia checker](sources/d0_full_flag_closed_phase_2026-10-19/check_six_full_flag_scalar_closed_phases.mjs) verifies every rational row, the exact 84,934,656 integer determinant, and independently reconstructs each of its 36 derivatives by central variation of the FULL positive original 4×4 Julia-success and BAD square-root matrices. All 36 central derivative errors are below \(8.1\cdot10^{-9}\); the locally executed control reports 82 PASS groups. The grade-one calculation is an exact invariant block of the full CAR16 exterior operator (all other grades remain physically carried but are unexcited by these chosen one-particle inputs). This does NOT identify a compulsory physical M1 preparation or a Book03 Cost.
+
+### One coherent synthesis and the correct integrability test
+
+The original archived scalar Book entropy supplies the symmetric native Fisher Hessian, while (9) provides an **independent full six-direction phase-invariant detector response** on the original flagged CAR memory. The bare one-arm connection's non-exactness is not an obstruction to making (8) a single-valued local measured scalar. The complete real phase observable has an ordinary differential as a scalar on the three-record comparison chart, and all moving preparation components follow from the TRUE density derivative (7). The six scalar phase observables are **not** automatically six gradients of one and the same fundamental action; they are six independently calibrated measurement functions. A full-rank source/detector Jacobian establishes only observability/local inversion, never physical stationarity.
+
+Thus the remaining fundamental GR question has changed sharply. It is NOT whether a detector can see the six Lorentz components and order-curvature after properly accounting for failures and preparation; on this original mathematical Julia apparatus, it **can**. The single missing native selection theorem is whether D0's own complete executable/paid Book03 H+J+R/Cost−Info picks this same history-readout/clock/controller and whether its resultant **first source** matches the original all40+CAR stationary Palatini covector. Any attempt to reconstruct EH by simply adding the six phase functions, the scalar archive Fisher quadratic form and a chosen matter action would violate the same-history requirement and is not licensed by this result. \`GR_closed=false\`.
