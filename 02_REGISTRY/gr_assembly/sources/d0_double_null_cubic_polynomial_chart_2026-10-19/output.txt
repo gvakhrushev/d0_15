@@ -1,0 +1,5 @@
+PASS exact original six-plaquette [a^2 b] Euler expansion: 24 link + 16 coframe rows
+PASS site-dependent quadratic polynomial corrections: 240 rational equations
+INCONSISTENT chart: coefficient rank=154, augmented rank=155
+SCOPE: excludes only this degree<=2 polynomial correction chart at h=1 for H=a*x, J=b*y.
+SCOPE: arbitrary spatial lattice modes, higher-order/nonpolynomial corrections, other coframe branches, and native D0 price remain open.
