@@ -4,8 +4,10 @@
 The order-h connection Euler on the #241 valued solder is a four-component
 forcing. It is solved by a phase-uniform rotation correction on the curved
 role-0 edges. After that substitution every order-h metric component vanishes
-pointwise. The substituted metric jet through h^2 is divisible by z, so both
-declared scalings z=h and z=h^2 have vanishing normalized limit.
+pointwise. The full link carrier also cancels the next h^2*z*x0 and h^2*z^2
+connection coefficients. The substituted metric jet through h^2 is
+divisible by z, so both declared scalings z=h and z=h^2 have vanishing
+normalized limit.
 """
 from __future__ import annotations
 
@@ -386,6 +388,81 @@ check(
             ),
             h, z, x0,
         ).coeff_monomial(h**2 * z * x0) == 0
+        for p, r, gi in full_rows
+    ),
+)
+
+# The curvature-only h^2*z^2 coefficient is independent of the x0 slope.
+# Reinsert the complete rational first-order lift (not only its O(z) germ),
+# then solve this next coefficient on the same full link carrier.
+full_order_h_lift = [
+    corrected(U, corr0), I4, corrected(Ui, corr2), I4
+]
+full_order_h_links = [
+    [full_order_h_lift[p] if r == 0 else I4 for p in range(4)]
+    for r in range(4)
+]
+metric_solder = I4 + h * (alpha * ETA / 2).T
+
+
+def coefficient_h2_z2(value):
+    h2 = sp.diff(value, h, 2).subs(h, 0) / 2
+    return sp.series(sp.cancel(h2), z, 0, 3).removeO().coeff(z, 2)
+
+
+curvature_source = sp.Matrix([
+    coefficient_h2_z2(edge_euler_full(
+        (p, 0, 0, 0), r, GENERATORS[gi], full_order_h_links,
+        metric_solder,
+    ))
+    for p, r, gi in full_rows
+])
+check(
+    "FULL_ORDER_H2_Z2_CURVATURE_SOURCE",
+    curvature_source == sp.Matrix([
+        -sp.Rational(1, 8) if row == (1, 0, 0) else
+        sp.Rational(1, 8) if row == (1, 0, 1) else
+        sp.Rational(1, 8) if row == (3, 0, 0) else
+        -sp.Rational(1, 8) if row == (3, 0, 1) else 0
+        for row in full_rows
+    ]),
+)
+curvature_augmented = full_jacobian.row_join(-curvature_source)
+curvature_rref, curvature_pivots = sp.polys.matrices.DomainMatrix.from_Matrix(
+    curvature_augmented
+).rref()
+check(
+    "FULL_96_ROW_H2_Z2_CURVATURE_COMPATIBILITY",
+    len(curvature_pivots) == 80 and 96 not in curvature_pivots,
+)
+curvature_rref_matrix = curvature_rref.to_Matrix()
+curvature_solution = sp.zeros(96, 1)
+for row_index, pivot in enumerate(curvature_pivots):
+    if pivot < 96:
+        curvature_solution[pivot] = curvature_rref_matrix[row_index, 96]
+check(
+    "FULL_96_ROW_H2_Z2_CURVATURE_LINK_CORRECTION",
+    sp.simplify(full_jacobian * curvature_solution + curvature_source)
+    == sp.zeros(96, 1),
+)
+check(
+    "H2_Z2_CORRECTION_IS_TWO_PHASE_J12",
+    curvature_solution == sp.Matrix([
+        sp.Rational(1, 8) if row == (0, 0, 3) else
+        -sp.Rational(1, 8) if row == (2, 0, 3) else 0
+        for row in full_rows
+    ]),
+)
+curvature_corrected_links = [list(row) for row in full_order_h_links]
+for (p, r, gi), coefficient in zip(full_rows, curvature_solution):
+    curvature_corrected_links[r][p] += h**2 * z**2 * coefficient * GENERATORS[gi]
+check(
+    "FULL_96_ROW_CORRECTED_H2_Z2_CURVATURE_ZERO",
+    all(
+        coefficient_h2_z2(edge_euler_full(
+            (p, 0, 0, 0), r, GENERATORS[gi],
+            curvature_corrected_links, metric_solder,
+        )) == 0
         for p, r, gi in full_rows
     ),
 )

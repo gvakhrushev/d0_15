@@ -3446,7 +3446,7 @@ The narrow deciding theorem should bind one composed native AF history \(X_N\) t
 **Status:** promising selector candidate, not a selector theorem. If the bridge fails, Book 00–01's unique code magnitude alone does not choose the AF record action. If it passes, it gives a concrete bottom-up route to the same source that the AF Einstein bridge already consumes, while leaving the full old-v8 and raw #216 checks in force.
 
 
-### 7.44. The #232 slow-lift source is range-cancelable only on the full link carrier
+### 7.44. Two next #232 slow-lift coefficients are range-cancelable on the full link carrier
 
 The diagonal period-four #232 probe initially appeared to leave a nonzero
 normalized metric response on a valued slow background. The exact order-
@@ -3461,11 +3461,20 @@ second-order link correction whose substitution cancels all 96 coefficients.
 See the [full-carrier slow-lift owner](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md)
 and its [exact checker](certificates/a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py).
 
-This closes one local Taylor range question: the next slope source is not a
-finite-cell cokernel obstruction, and the additional link directions cannot
-be discarded as gauge by response-nullity alone. It does **not** provide an
-exact joint-critical sequence: the \(h^2 z^2\) and higher connection rows,
-all ten metric rows, the matter equations, and a uniform large-grid estimate
-remain open. Thus neither the positive response-decoupling terminal nor the
-valid joint-critical counterexample is established; #334 stays on its
-registered route.
+The curvature-only \(h^2z^2\) coefficient is also in range after the full
+rational first-order lift. Its source has only four entries:
+\((-1/8,+1/8)\) on the phase-1 role-0 \((b_{01},b_{02})\) rows and the
+opposite pair at phase 3. The full-carrier RREF cancels it with
+\(\delta A_0=+h^2z^2J_{12}/8\) and
+\(\delta A_2=-h^2z^2J_{12}/8\); exact substitution verifies all 96 rows.
+
+This closes two local Taylor range questions: neither the next slope source
+nor the curvature-only \(h^2z^2\) source is a finite-cell cokernel
+obstruction, and the additional link directions cannot be discarded as gauge
+by response-nullity alone. It does **not** provide an exact joint-critical
+sequence: higher connection coefficients, all ten metric rows, the matter
+equations, and a uniform large-grid estimate remain open. The smallest
+remaining parent blocker is an exact same-source joint-critical continuation
+at nonconstant \(Q_h\), not another coefficient-range check. Thus neither the
+positive response-decoupling terminal nor the valid joint-critical
+counterexample is established; #334 stays on its registered route.

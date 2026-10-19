@@ -111,10 +111,22 @@ carrier, and substituting it makes all 96 \(h^2 z x_0\) Euler coefficients
 zero. The checker also verifies that the restricted four-mode augmented rank
 increases, so the added roles and link directions are doing real work.
 
-This is one formal Taylor coefficient, not an all-orders root. It does not
-show that the 16-dimensional Jacobian kernel is gauge, solve the remaining
-\(h^2 z^2\) and higher coefficients, impose the ten metric equations, or give
-a uniformly controlled correction on expanding grids. In particular it does
+The curvature-only coefficient \(h^2z^2\), computed with the full rational
+first-order lift, is also in range. Its only nonzero connection rows are
+\(E_K(p=1,\mathrm{role}=0,b_{01})=-1/8\),
+\(E_K(p=1,\mathrm{role}=0,b_{02})=1/8\), and the opposite pair at phase 3.
+The full-carrier correction is
+\[
+\delta A_0=\tfrac18 h^2z^2J_{12},\qquad
+\delta A_2=-\tfrac18 h^2z^2J_{12}.
+\]
+Exact substitution cancels all 96 coefficients. This is a second bidegree
+coefficient, separate from the \(h^2zx_0\) slope correction above.
+
+These are isolated formal Taylor coefficients, not an all-orders root. They
+do not show that the 16-dimensional Jacobian kernel is gauge, solve higher
+connection coefficients, impose the ten metric equations, or give a
+uniformly controlled correction on expanding grids. In particular they do
 not discharge the parent requirement for an exact joint-critical sequence
 containing #232.
 
