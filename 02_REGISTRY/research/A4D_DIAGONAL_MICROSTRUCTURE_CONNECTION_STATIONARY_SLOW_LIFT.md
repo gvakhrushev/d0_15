@@ -299,3 +299,33 @@ python3 02_REGISTRY/research/certificates/a4d_diagonal_microstructure_connection
 python3 02_REGISTRY/research/certificates/a4d_diagonal_microstructure_same_profile_comparator_check.py
 python3 02_REGISTRY/research/certificates/a4d_y232_designated_warp_same_source_firstslow_check.py
 ```
+
+## Bounded period-four Bloch resonance control in the #334 continuation
+
+The exact [period-four Bloch checker](certificates/a4d_y_period_four_bloch_resonance_check.py)
+decomposes the original connection Hessian at the flat solder and the exact
+#232 Y wave with Cayley amplitude z=1 on the complete periodic 4^4 carrier.
+The 4-phase background gives 64 Bloch sectors, represented by
+
+```text
+k = (0,m1,m2,m3),  mj in {0,1,2,3},
+```
+
+after quotienting momenta by the reciprocal period vector
+`(1,1,1,1)`. Each sector is a 96-by-96 Hermitian block on the four phases,
+four link roles and six original Lorentz generators. The zero sector matches
+the pinned phase-uniform Hessian exactly and has rational rank 94; its kernel
+is exactly the two owned stationary center tangents. Every other sector has
+rank 96, certified by reduction from Q(i) to the split prime field F_1009:
+the reduced rank is 96 in all 63 sectors, so each exact determinant over
+Q(i) is nonzero. The [saved receipt](certificates/a4d_y_period_four_bloch_resonance_results.json)
+records every representative and modular rank.
+
+This closes only the finite L=4 linear resonance census for the connection
+Hessian at fixed flat solder. It shows that this cell has no extra exact
+nonzero-Bloch connection kernel beyond the two zero-momentum centers. It
+does not give a lower bound as L grows, control near-zero Bloch momenta or
+aliases on larger grids, impose the metric/source equations, or continue the
+nonlinear branch. The next missing analytic object is still a
+refinement-uniform resolvent and nonlinear center/cokernel estimate on the
+larger periodic carriers; this bounded census cannot replace it.
