@@ -28,8 +28,8 @@ const applied=(A,v)=>A.map(row=>mod(row.reduce((s,x,i)=>s+x*v[i],0)));
 const rank=A=>gauss(A).rank;
 const addMatrix=(A,B,sgn=1)=>A.map((row,i)=>row.map((v,j)=>
   mod(v+sgn*B[i][j])));
-function solve(M,v){
-  const rows=M.length,cols=M[0].length,A=M.map((row,i)=>[...row,mod(v[i])]);
+function solve(M,rhs){
+  const rows=M.length,cols=M[0].length,A=M.map((row,i)=>[...row,mod(rhs[i])]);
   let r=0,pivots=[];
   for(let j=0;j<cols&&r<rows;j++){
     let p=r;while(p<rows&&!A[p][j])p++;
@@ -43,7 +43,7 @@ function solve(M,v){
   }
   for(let i=r;i<rows;i++)if(A[i][cols])return {possible:false,rank:r,augRank:r+1};
   let x=Array(cols).fill(0);for(let i=0;i<r;i++)x[pivots[i]]=A[i][cols];
-  if(applied(M,x).some((v,i)=>v!==mod(v[i])))throw Error("solution verification");
+  if(applied(M,x).some((v,i)=>v!==mod(rhs[i])))throw Error("solution verification");
   return {possible:true,x,rank:r};
 }
 function choose(m,n){let v=1;for(let i=0;i<n;i++)v=times(v,times(mod(m-i),inverse(i+1)));return v;}
