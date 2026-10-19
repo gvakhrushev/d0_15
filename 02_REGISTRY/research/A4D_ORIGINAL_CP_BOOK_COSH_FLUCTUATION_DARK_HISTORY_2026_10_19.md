@@ -197,6 +197,45 @@ Moreover, EXACT time reversal (3) gives \(\chi_{-\epsilon}(u,v)=\chi_\epsilon(v,
 
 At the **conditional** comparison \(\epsilon=\Delta_\alpha\), direct ALL718 sum gives \(\mathcal Z=0.9999999802391912621409198\ldots\), loss \(1.9760808737859080\times10^{-8}\); the tangent norm-square is \(0.05730925481085409018\ldots\). The original Book Hessian reconstructed from (9) is \(-0.47637445155264586669\ldots\), identical to (2) without a source fit. The two-arm overlap here is a **REAL classical Hellinger/Bhattacharyya comparison**, not a nonzero imaginary CAR/Weyl relative phase. The latter and all full128 native physical Cost−Info remain open.
 
+## 4B. DECISIVE ONE-SCALAR CONSUMER: CP ↔ physical field same-Book Hessian is one directed Cost circulation
+
+The full original 718-edge scalar Book-flow Hessian, already proved in this PR, now yields a sharper selection rule for an **ARBITRARY** original geometric field tangent \(V\), not just a zone-homogeneous perturbation. Let \(d_{uv}(V)=D_V s_{uv}\) be its **actual** original primitive directed edge Cost−Info derivative, with no fit, and let \(\bar d_{AB}\) denote the mean of \(d_{uv}\) over the **99 real directed AB edges**, likewise the five other ordered zone pairs. Define
+
+\[
+\boxed{\Gamma(V)=(\bar d_{AB}-\bar d_{BA})+
+(\bar d_{BC}-\bar d_{CB})+(\bar d_{CA}-\bar d_{AC}).}\tag{11}
+\]
+
+This is the orbit-averaged directed cycle circulation of the *given* 718-dimensional field source. It is invariant under original vertex endpoint Cost allocation: for arbitrary actual Info jets \(D I_u\) (not assumed constant within zones) and ANY Book theta, \(s_{uv}=C_{uv}-\theta I_u-(1-\theta)I_v\) gives **exactly** \(\Gamma(Ds)=\Gamma(DC)\), because the three zone-mean Info gradients telescope. It also annihilates any vertex coboundary and all reversal-even edge-Cost tangents.
+
+The same ORIGINAL Markov-Poisson harmonic CP score \(h_{uv}\) from §3 satisfies \(\mu_{uv}h_{uv}=j/(n_i n_j)\) on the forward i→j macro-orbit, with reversed sign on j→i, where
+
+\[
+j=\frac3{m_{AB}^{-1}+m_{BC}^{-1}+m_{CA}^{-1}}
+=0.16499125289701043881\ldots
+\]
+
+is fixed by the ORIGINAL full Book stationary edge-flow masses. Consequently the **exact mixed Schur Hessian of the SAME scalar Book macroaction** has a universal 718→1 reduction:
+
+\[
+\boxed{H_{\epsilon V}
+=\mathbb E_\mu[D_{\epsilon V}^2s]
+-(\ln\varphi)\sum_{uv}\mu_{uv}h_{uv}d_{uv}(V)
+=\mathbb E_\mu[D_{\epsilon V}^2s]-(\ln\varphi)j\,\Gamma(V).}\tag{12}
+\]
+
+There is no loss of vertex-resolution information in this statement about THIS particular CP mixed Hessian: all 718 arbitrary field costs enter but only **one gauge-invariant circulation** survives the contraction against the unique \(G\)-invariant CP harmonic.
+
+For jointly AFFINE primitive edge Costs with independently varied epsilon and V (so \(D_{\epsilon V}^2s=0\)), the coefficient is fixed with no free normalization:
+
+\[
+\boxed{H_{\epsilon V}=-0.07939574192544097778\ldots\,\Gamma(V).}\tag{13}
+\]
+
+Negative controls passed on all actual718 edges: symmetric original AB Cost tangent has \(\Gamma=0,H=0\); arbitrary genuine 33-vertex Info derivative at theta=2/5 has \(\Gamma=0,H=0\); any vertex-gradient has zero; arbitrary **non-zone-symmetric** deterministic 718-edge field source agrees with (12) to ~\(10^{-67}\) using 65-digit arithmetic. Positive CP self-source has \(\Gamma(d_{CP})=6\) and \(H_{\epsilon\epsilon}=-6\ell j=-0.47637445155264586669\ldots\), exactly the original independent cubic/Hellinger result. If the physical full128 J23-induced *original* edge price derivative is reversal-even, the scalar CP coupling is provably ZERO at this order; a nonzero \(\Gamma(J_{23})\) produces a completely determined native scalar Book cross term.
+
+**This is a necessary-and-sufficient scalar-CP source discriminator modulo actual mixed primitive Cost second jets**, NOT the full Lorentz/Einstein selection. No original full128/CAR/clock-to-edge derivative has yet been physically established, and the real original full128 J23 detector's nonzero first covector must not be replaced with this positive-scalar macroaction.
+
 ## 5. Parent consumption and reproducibility
 
 **This resolves one existing scalar-history CP sector**, not the full physical action. The consuming live parent #384/#334 must still map the *same admitted original full128 Julia/CAR/oldRIGHT/reference/controller/clock* to actual 718 directed Cost/Info **field derivatives**, preserve ordered Lorentz memory and full preparation sources, and compare the SAME full action's 16 coframe+24 Lorentz+matter variational Euler to the already-owned finite Einstein comparator. No \(\epsilon=\Delta_\alpha\) selection, passport promotion, #216 closure or GR claim.
