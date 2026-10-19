@@ -303,6 +303,38 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual((code, err), (0, ""))
         self.assertIn("Assembly-Acceptance: dead", out)
 
+    def test_attempt_search_includes_exact_question_and_assumptions(self):
+        self.add_result(outcome="negative")
+        self.add_result(name="unrelated-zero-mode", outcome="negative")
+        self.intake["results"][-1]["statement"] = "For every zero mode, the synthetic source vanishes."
+        question = {"statement": "For every z in the declared carrier, nullity A(z)=2.",
+                    "assumes": ["The full complex torus domain is retained."]}
+        binding = {"interface": "native", "work_key": "question-z",
+                   "statement": question["statement"], "assumes": question["assumes"]}
+        attempt = {"id": "nullity-counterexample", "result": "r", "interface": "native",
+                   "work_key": "question-z", "scope": "A finite exact obstruction",
+                   "reopen_when": "The domain excludes the witness", "question": question,
+                   "question_digest": gr.work_digest(self.model(), binding),
+                   "review": {"state": "proposed"}}
+        self.intake["attempts"].append(attempt)
+        model = self.model()
+
+        by_question = gr.attempts(model, "For every z")
+        by_assumption = gr.attempts(model, "complex torus domain")
+
+        self.assertEqual([row["id"] for row in by_question], ["nullity-counterexample"])
+        self.assertEqual([row["id"] for row in by_assumption], ["nullity-counterexample"])
+
+    def test_search_includes_pinned_evidence_and_snapshot_paths(self):
+        self.add_result(name="source-result")
+        model = self.model()
+
+        rows = gr.search(model, "sources/proof.md")
+
+        self.assertEqual([row["id"] for row in rows], ["source-result"])
+        self.assertEqual(rows[0]["evidence_paths"],
+                         ["02_REGISTRY/gr_assembly/sources/proof.md", "proof.md"])
+
     def test_changed_hypothesis_reopens_only_with_explicit_delta(self):
         self.add_result(outcome="negative")
         question = gr.work_digest(self.model(), self.contract["task_bindings"][TASK])
@@ -537,6 +569,41 @@ class AssemblyTests(unittest.TestCase):
         selector.assert_called_once_with(self.root.resolve(), "head", "base")
         self.assertEqual(report["certificate_selection"][0]["path"], "consumer.py")
         self.assertFalse(report["ran"])
+
+    def test_impact_marks_snapshot_and_parent_consumer_changes(self):
+        import research_input_closure
+        self.add_result()
+        app = self.add_app()
+        model = self.model()
+        changes = [self.proof["path"], self.proof["snapshot"], "route.md",
+                   self.contract["route_input"]["snapshot"]]
+        for path in changes:
+            with self.subTest(path=path), patch.object(
+                    research_input_closure, "select",
+                    return_value={"changed": [path], "selected": [], "provenance_ok": True}):
+                report = gr.impact(model, "base", "head")
+            self.assertEqual([row["application"] for row in report["applications_to_review"]], [app["id"]])
+            row = report["applications_to_review"][0]
+            self.assertEqual(row["changed_paths"], [path])
+            if path == "route.md":
+                self.assertEqual(row["change_kinds"][path],
+                                 ["named parent consumer", "pinned route input"])
+            if path == self.contract["route_input"]["snapshot"]:
+                self.assertEqual(row["change_kinds"][path], ["pinned route input"])
+
+    def test_impact_marks_pinned_acceptance_decision_changes(self):
+        import research_input_closure
+        self.add_result()
+        app = self.add_app()
+        self.sign(app)
+        model = self.model()
+        path = "decisions.md"
+        with patch.object(research_input_closure, "select", return_value={
+                "changed": [path], "selected": [], "provenance_ok": True}):
+            report = gr.impact(model, "base", "head")
+        self.assertEqual([row["application"] for row in report["applications_to_review"]], [app["id"]])
+        self.assertEqual(report["applications_to_review"][0]["change_kinds"][path],
+                         ["pinned acceptance decision"])
 
     def test_generated_view_mutation_is_detected(self):
         self.assertEqual(self.cli("render")[0], 0)

@@ -95,6 +95,42 @@
         }
       ],
       "reported_state": "Published analytic observable theorem; native admission and the original raw terminal remain open."
+    },
+    {
+      "id": "brinkmann-j2-null-family",
+      "owner": "registered native response research owner #334",
+      "statement": "On the declared six-plaquette Lorentz-star Brinkmann family, the unrestricted 16+24 geometric Euler rows reduce exactly to three rows; the two link rows force the one-u-step connection, leaving a transverse Poisson equation. Composing the owned corrected two-tick Golden AF×scene Book03 J2 null source gives the stated finite roots and smooth Einstein-scalar Brinkmann family.",
+      "interface": "brinkmann-j2-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "geometric_carrier": "Independent H(u,x,y) at lattice sites; original six based plaquettes; independent full 16+24 field variations; fixed transverse collar.",
+        "constructed_price": "The matter coupling is the corrected two-tick Golden AF×scene Book03 J2, not an action shown to be compulsory in foundational D0.",
+        "matter_sector": "The source applies to the declared scalar/top CAR16 null histories with E(u)=|D_u+Psi(u)|^2, not arbitrary full-CAR16 stress tensors.",
+        "refinement_domain": "Smooth local unwrapped-u profiles and bounded transverse Dirichlet data; exact periodic-u roots are an explicit antipodal subfamily."
+      },
+      "evidence": [
+        {
+          "ref": "8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba",
+          "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_brinkmann_j2_2026-10-19/theorem.md",
+          "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+        },
+        {
+          "ref": "8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba",
+          "path": "02_REGISTRY/research/sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_brinkmann_j2_2026-10-19/check_all40_arbitrary_brinkmann.py",
+          "sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026"
+        },
+        {
+          "ref": "8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba",
+          "path": "02_REGISTRY/research/sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_time_dependent_golden_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_brinkmann_j2_2026-10-19/check_time_dependent_golden_source.py",
+          "sha256": "c89c690f54f11e166dd1a9a6315c80da5089659598f943aef03d3732f71a2d98"
+        }
+      ],
+      "reported_state": "Pinned evidence commit 8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba: symbolic all40 and finite Golden-source checker replays pass. This is a searchable result record only; no native-programme-v1 application is registered or accepted. Physical action selection, complete D0 history/clock/preparation equations, generic matter and raw #216 remain open."
     }
   ],
   "applications": [

@@ -580,19 +580,51 @@ def overview(model: dict) -> str:
     return "\n".join(lines)
 
 
+def result_evidence_paths(result: dict) -> set[str]:
+    paths = set()
+    for evidence in result.get("evidence", []):
+        if not isinstance(evidence, dict):
+            continue
+        for key in ("path", "snapshot"):
+            value = evidence.get(key)
+            if isinstance(value, str) and value:
+                paths.add(value)
+    return paths
+
+
+def query_matches(haystack: str, words: list[str]) -> bool:
+    for word in words:
+        if len(word) <= 2 and word.isalnum():
+            if re.search(rf"(?<!\w){re.escape(word)}(?!\w)", haystack) is None:
+                return False
+        elif word not in haystack:
+            return False
+    return True
+
+
 def attempts(model: dict, query: str) -> list[dict]:
     words = query.casefold().split()
     found, typed = [], set()
     for attempt in model["attempts"].values():
-        hay = (attempt["id"] + " " + attempt["scope"] + " " + attempt["work_key"]).casefold()
-        if all(w in hay for w in words):
+        result = model["results"][attempt["result"]]
+        question = attempt.get("question", {})
+        fields = [attempt["id"], attempt["scope"], attempt["work_key"], attempt["interface"],
+                  attempt["reopen_when"], question.get("statement", ""), *question.get("assumes", []),
+                  result["id"], result["statement"], *result.get("owners", []),
+                  *result.get("hypotheses", {}).values(), *result_evidence_paths(result)]
+        hay = " ".join(fields).casefold()
+        if query_matches(hay, words):
             found.append({k: attempt[k] for k in ["id", "scope", "work_key", "interface", "question", "question_digest", "reopen_when"]} |
-                         {"enforced": attempt.get("_accepted", False), "review": attempt["review"]["state"]})
+                         {"evidence_paths": sorted(result_evidence_paths(result)),
+                          "enforced": attempt.get("_accepted", False), "review": attempt["review"]["state"]})
         typed.add(attempt["result"])
     for result in model["results"].values():
-        hay = (result["id"] + " " + result["statement"]).casefold()
-        if result["outcome"] == "negative" and result["id"] not in typed and all(w in hay for w in words):
+        fields = [result["id"], result["statement"], *result.get("owners", []),
+                  *result.get("hypotheses", {}).values(), *result_evidence_paths(result)]
+        hay = " ".join(fields).casefold()
+        if result["outcome"] == "negative" and result["id"] not in typed and query_matches(hay, words):
             found.append({"id": result["id"], "scope": result["statement"], "reported_state": result.get("reported_state"),
+                          "evidence_paths": sorted(result_evidence_paths(result)),
                           "enforced": False, "acceptance": "historical; typed independent intake required",
                           "owners": result.get("owners", [])[:3]})
     return found
@@ -617,11 +649,15 @@ def search(model: dict, query: str) -> list[dict]:
     require(bool(words), "search query cannot be empty")
     found = []
     for result in model["results"].values():
-        fields = [result["id"], result["statement"], *result.get("owners", []), *result.get("hypotheses", {}).values()]
+        evidence_paths = result_evidence_paths(result)
+        fields = [result["id"], result["statement"], result.get("owner", ""),
+                  *result.get("owners", []), *result.get("hypotheses", {}).values(), *evidence_paths]
         hay = " ".join(fields).casefold()
-        if all(word in hay for word in words):
+        if query_matches(hay, words):
             item = {k: result.get(k) for k in ["id", "statement", "outcome", "reported_state"]}
+            item["owner"] = result.get("owner")
             item["owners"] = result.get("owners", [])[:5]
+            item["evidence_paths"] = sorted(evidence_paths)
             found.append(item)
     return found[:20]
 
@@ -633,9 +669,29 @@ def impact(model: dict, base: str, ref: str) -> dict:
     affected = []
     for app in model["applications"].values():
         result = model["results"][app["result"]]
-        paths = {r["path"] for r in result.get("evidence", [])}
-        if paths & changed or DIRECTORY + "/contract.json" in changed:
+        paths = result_evidence_paths(result)
+        kinds: dict[str, set[str]] = {}
+
+        def watch(path: object, kind: str) -> None:
+            if isinstance(path, str) and path:
+                kinds.setdefault(path, set()).add(kind)
+
+        for path in paths:
+            watch(path, "pinned result evidence")
+        decision = app.get("review", {}).get("decision", {})
+        if isinstance(decision, dict) and isinstance(decision.get("path"), str):
+            watch(decision["path"], "pinned acceptance decision")
+        consumer = app["consumer_location"].split("#", 1)[0]
+        watch(consumer, "named parent consumer")
+        route_input = model["contract"].get("route_input", {})
+        for path in (route_input.get("path"), route_input.get("snapshot")):
+            watch(path, "pinned route input")
+        watch(DIRECTORY + "/contract.json", "assembly contract")
+        hits = sorted(path for path in kinds if path in changed)
+        if hits:
             affected.append({"application": app["id"], "obligation": app["obligation"],
+                             "changed_paths": hits,
+                             "change_kinds": {path: sorted(kinds[path]) for path in hits},
                              "reason": "review compatibility with the proposed new inputs; the pinned old theorem is unchanged"})
     return {"changed": selection["changed"], "applications_to_review": affected,
             "certificate_selection": [{"path": c["certificate"], "reasons": c["reasons"]} for c in selection["selected"]],

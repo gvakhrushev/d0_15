@@ -109,6 +109,15 @@
       "normalization": "R_resp E_eta=-2G+O(epsilon_N^2), literal radius-two centered stencil",
       "refinement": "epsilon_N=(N+2)^-1 with the no-alias domain and fixed smooth metric",
       "scope": "Analytic estimator theorem with external smooth geometry definitions; no native physical GR closure"
+    },
+    "brinkmann-j2-v1": {
+      "carrier": "Six-plaquette null Brinkmann coframe with independent site values H(u,x,y), proper u-links in span N2,N3, and a fixed transverse collar.",
+      "action": "The literal six-plaquette Lorentz-star geometry composed with the specifically corrected two-tick Golden AF×scene Book03 J2; this is a constructed programme, not the compulsory complete D0 price.",
+      "variations": "All 16 independent relative-solder and 24 proper-Lorentz link rows; the stated two scalar/top null CAR16 matter rows.",
+      "source": "The owned J2 null-source identity with E(u)=|D_u+Psi|^2 and its fixed lambda_-(2^-20); no fitted stress source.",
+      "normalization": "Geometric row E_vv+=-h^3 Delta_h H(u+h)/2; J2 composition yields Delta_h H(u+h)=-4 lambda_- E(u).",
+      "refinement": "Smooth local unwrapped-u family and bounded transverse Dirichlet rectangle; one-u-step lag O(h), harmonic recovery O(h^2).",
+      "scope": "Exact finite equations and smooth Einstein-scalar Brinkmann sector for this named instrument only; physical admission, full D0 selection, generic matter and raw #216 remain separate."
     }
   },
   "obligations": [

@@ -57,6 +57,12 @@ boundaries. Their indexing introduces no scientific acceptance. An existing
 proof can be reused in multiple applications; a new owner does not require
 re-proving the mathematics.
 
+A load-bearing result may be indexed before a compatible application is ready.
+It remains searchable context only and closes no obligation until a typed,
+independently accepted application records the exact substitution. Keep such a
+result on its own interface when it does not yet transport to
+`native-programme-v1`.
+
 ## Register or revise an execution
 
 CONTROL adds the semantic binding in `contract.json` while registering the
@@ -155,11 +161,12 @@ an intermediate positive construction.
 
 ## Prior attempts and input changes
 
-`search` exposes the historical statements, hypotheses and owner paths without
-printing accumulated verification prose. `attempts` lists reported negative
-results with their original scope; historical entries require a typed intake
-before automatic enforcement. A new typed attempt in `applications.json` names
-the exact work key/interface, negative result, scope and reopening condition.
+`search` indexes result statements, hypotheses, owners and pinned evidence paths
+without printing accumulated verification prose. `attempts` also searches the
+exact typed question and its assumptions, alongside the reported scope; historical
+entries require a typed intake before automatic enforcement. A new typed attempt
+in `applications.json` names the exact work key/interface, negative result, scope
+and reopening condition.
 Its independent acceptance uses the same pinned marker/digest discipline.
 The intake template supplies the readable scientific question and its digest;
 include both in an attempt. A reviewed obstruction applies to that frozen
@@ -170,10 +177,12 @@ python tools/gr_assembly.py impact --base origin/main --ref HEAD
 ```
 
 `impact` reuses `research_input_closure.select` for changed scientific files,
-transitive inputs and unknown dependencies. It separately identifies result
-applications needing compatibility review against proposed inputs. Old pinned
-theorems do not become false because a new version is proposed. Selection is
-not replay: the query never executes certificates or rewrites receipts.
+transitive inputs and unknown dependencies. It identifies applications whose
+pinned result source or snapshot, acceptance decision, route input or named
+parent consumer changed, so CONTROL can review compatibility and refresh any
+affected provenance. Old pinned theorems do not become false because a new
+version is proposed. Selection is not replay: the query never executes
+certificates or rewrites receipts.
 
 `potential_downstream` counts reachable obligations;
 `newly_ready_if_proved` assumes the specified output and checks the actual AND
