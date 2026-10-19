@@ -57,6 +57,13 @@ J=s.Matrix.hstack(*cols)
 assert J.shape==(16,6) and J.rank()==6
 minor=s.factor(J[[0,2,3,6,7,11],:].det())
 assert minor==s.Rational(1,26214400000000),minor
+Lie_basis=s.Matrix.hstack(*(vec(x) for x in basis))
+assert Lie_basis[[0,2,3,6,7,11],:].det()==1
+# Existing original positive six-Lorentz Julia/POVM Jacobian in its
+# signed-permutation basis is (24 sqrt(2))^-1 I6.
+from_existing_owner=s.Rational(1,24)/s.sqrt(2)
+positive_six_readout_abs_det=abs(minor)*from_existing_owner**6
+assert positive_six_readout_abs_det==s.Rational(1,26214400000000)/(24*s.sqrt(2))**6
 for j in range(6):
     x=s.Matrix(4,4,list(J[:,j]))
     assert x.T*eta+eta*x==s.zeros(4)
