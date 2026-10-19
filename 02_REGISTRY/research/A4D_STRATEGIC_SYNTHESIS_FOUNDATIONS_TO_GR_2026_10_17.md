@@ -4823,3 +4823,104 @@ audit and finite-cylinder fiber do not select route (ii), and `C_Y` only
 preserves `pi`. The exact unresolved edge is therefore the native
 preparation-to-complete-history map, not the conditional equality of the
 geometric field roots.
+
+### 7.63. Perron closes the free-prior ambiguity only after the complete native history is typed
+
+The latest attached [`C_Y` synthesis input](sources/d0_instrument_to_native_price_synthesis_2026-10-19/INPUT_CY_PERRON_GR_SYNTHESIS_RU.txt),
+preserved byte-for-byte with its digest in the adjacent README, contains a
+real finite-\(t\) vacuum result: on the already prepared capacity profile, its exact query source has
+the same vacuum critical set as the geometric source. That is stronger than
+the earlier \(C^1\) compiler estimate, which concerns approximate words.
+It does not select the capacity profile. `C_Y` copies an existing LEFT
+address and preserves its marginal; the response-preserving result in §7.40
+does not let this copy reweight that marginal; see the [response-preserving
+boundary](A4D_CY_RESPONSE_PRESERVING_CAPACITY_BOUNDARY_2026_10_19.md). Nor does
+a zero vacuum defect produce an independent matter source. The full-source
+owner §7.49 does carry an independent CAR variation, but its physical
+admission and its complete preparation/clock/work price remain conditional.
+
+The exact [scene-Perron owner](A4D_SCENE_PERRON_DOOB_SINGLE_HISTORY_GOLDEN_INFO_SOURCE_2026_10_19.md)
+now gives a principled alternative to treating
+the address law as a freely minimized \(H/\ell\). For the specified positive
+scalar edge transfer
+
+\[
+K_\theta(u,v)=\varphi^{-s_\theta(u,v)},\qquad
+s_\theta=C_{uv}-\theta I_u-(1-\theta)I_v,
+\]
+
+the unique stationary preparation and the full first field source are
+endogenous:
+
+\[
+P_{uv}=K_\theta(u,v)\frac{r_v}{\lambda r_u},\quad
+\pi_u=\ell_u r_u,\quad
+D\log_\varphi\lambda[V]
+=\sum_v\pi_vDI_v[V]
+-\sum_{u\to v}\pi_uP_{uv}DC_{uv}[V].
+\]
+
+The same owner proves a one-correlated-history Golden code whose per-step
+value and first source converge to this pressure, including the moving
+stationary preparation. Thus the arbitrary-simplex \(W(\pi,g)\) question in
+§7.62 can be replaced by one typed question: does the *actual complete D0
+history* induce this positive transfer and its normalized law? If yes, the
+bulk preparation is Perron-selected by the history weights; no separate
+capacity maximization or fitted prior is needed for that scalar sector.
+
+The bulk-selection implication itself is exact under that scalar hypothesis.
+If every length-\(N\) legal scene walk is present with weight
+\(\prod_{j=0}^{N-1}K_{y_jy_{j+1}}\), then
+\(Z_N=\mathbf1^TK^N\mathbf1\). For a fixed window
+\((i_0,\ldots,i_d)\) whose distances from both endpoints tend to infinity,
+primitivity and Perron–Frobenius give
+
+\[
+\mathbb P_N(Y_m=i_0,\ldots,Y_{m+d}=i_d)
+\longrightarrow
+\ell_{i_0}r_{i_d}\,\lambda^{-d}
+\prod_{j=0}^{d-1}K_{i_ji_{j+1}}
+=\pi_{i_0}\prod_{j=0}^{d-1}P_{i_ji_{j+1}}.
+\]
+
+So route (ii) of §7.62 is not an independent entropy-maximization postulate
+once this is the actual scalar full-history law: its bulk preparation is
+forced by the normalized Book weights. This derivation does not replace the
+ordered role-algebra factor in Book 03's actual sum.
+
+That antecedent is still the decisive gap. [Book 03 §03.3.0](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md)
+defines the full sum as
+\(Z_D(k)=\sum_\gamma\varphi^{-S(\gamma)}[q(\gamma)]\); the ordered memory
+class \([q(\gamma)]\) is part of the object. The scalar `K` theorem does not
+show that this operator-valued sum reduces to `K`, or that its actual
+complete-record Born law is the same stationary Markov process. The needed
+same-carrier source identity is therefore explicit, not rhetorical: on every
+admitted coframe, proper-link, CAR/matter, observer, preparation, clock and
+work tangent \(V\), derive the original Book source and compare it with the
+already owned full star/CAR covector
+
+\[
+\sum_v\pi_vDI_v[V]-\sum_{u\to v}\pi_uP_{uv}DC_{uv}[V]
+\quad\stackrel{?}{=}\quad
+a_hD\sum_x\widehat f_x[V]+b_hD\sum_xq_x[V],
+\]
+
+with \(a_h,b_h\) fixed by the existing golden/native program. This single
+comparison must include the complete operator memory and its physical
+preparation, not just the 33 scene labels. Any independent matter source must
+appear as an admitted CAR/order-memory component of these same variations;
+it cannot be appended as a stress tensor or inferred from a nonzero defect
+that the full preparation Euler is free to remove.
+
+The geometry side has also advanced: §7.58 and the [exact quartic
+owner](A4D_DOUBLE_NULL_CUBIC_EINSTEIN_QUARTIC_AREA_WARD_2026_10_19.md) solve
+the original 40 finite Cartan/coframe rows through total crossed-null
+amplitude degree four on one local unwrapped section, retaining nonzero Weyl curvature.
+This is a nonlinear consistency jet, not a periodic finite root, an all-order
+solution, or uniform refinement. The endgame is now one composition on one
+carrier: (i) identify the complete native history transfer including
+\([q(\gamma)]\); (ii) prove its first-source identity above against the
+existing star/CAR source; (iii) solve the same program's remaining preparation,
+clock/work and Lorentz-link equations; (iv) establish periodic recovery and
+the original raw \(h^{-2}\) terminal. Until those links are proved,
+`GR_closed=false`.
