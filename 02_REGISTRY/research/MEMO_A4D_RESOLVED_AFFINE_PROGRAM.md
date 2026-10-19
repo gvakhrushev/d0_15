@@ -1226,6 +1226,15 @@ even on the tested original Lorentz tangent. Neither result selects the
 Book action; both require the same-run ordered memory and full source test
 above.
 
+The focused [single-execution source check](sources/d0_native_one_run_source_2026-10-19/check_original_full128_single_execution_source.py)
+keeps the original full128 `J23` readings separate on that same channel:
+complete pointer entropy, blank modal surprisal, Golden-port code cost,
+conditional port information, and the candidate exit-feedback determinant
+have distinct first derivatives. It also confirms that a normalized full Born
+sum contributes no absolute log-partition source. This is a source firewall,
+not a license to add the candidate terms together or select one as the Book
+action; the physical history binding and whole-run cancellation remain open.
+
 Nor does `ActionProtocol` choose the missing price. The exact
 [prepared-action fiber theorem](A4D_NATIVE_PREPARED_ACTION_COMPLETENESS.md)
 says that for off-diagonal prepared endpoint pairs retaining a field readout
