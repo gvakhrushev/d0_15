@@ -1,0 +1,4 @@
+source coefficient [a^2*b^2]: 40 rows, max spatial degree 3
+matrix assembled; starting fraction-free exact ranks
+quartic system: 840 equations, 840 unknowns, rank 580, augmented rank 581
+INCONSISTENT for quartic corrections of spatial degree at most five with the selected cubic representative.
