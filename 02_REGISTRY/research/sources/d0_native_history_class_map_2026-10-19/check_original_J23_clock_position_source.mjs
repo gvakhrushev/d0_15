@@ -51,6 +51,27 @@ for(let m=2;m<=6;m++)for(let mask=0;mask<(1<<m);mask++){
 }
 check(true,"all finite nonscalar Kraus first-source controls");
 
+// Entire ORIGINAL n-tick tilted CP count generator first source on the
+// homogeneous offscalar J23 tangent, not the separate physical J2 parameter.
+for(const s of [-1,-.2,0,.3,1]){
+ const t=q+e*Math.exp(s);
+ const Z=t**n;
+ const dlog=n*dq*(1-Math.exp(s))/t;
+ // direct finite count distribution generating function and its field jet
+ let sum=0,der=0,pk=q**n;
+ for(let k=0;k<=n;k++){
+   const w=Math.exp(s*k),score=(n-k)*dq/q-k*dq/e;
+   sum+=pk*w;der+=pk*w*score;
+   if(k<n)pk*=((n-k)/(k+1))*(e/q);
+ }
+ // Direct derivative-to-partition ratio, not a fitted finite difference.
+ check(close(sum,Z,1e-7*Math.max(1,Z))
+       &&close(der/Z,dlog,1e-8),"native full-count tilt J23 source s="+s);
+}
+check(close(-n*dq,-2.1953971285070955)
+      &&close(n*(e-q)*dq,-2.1765496383560343),
+      "original first two count cumulants on J23");
+
 const dP=(-42957+14319*Math.sqrt(5))/5120000;
 const dN=n*dP,dKL=n*p**3*dP,dSh=n*(2-p)*dP;
 check(close(dN,-2.187748526036102)
