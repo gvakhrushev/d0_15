@@ -60,6 +60,26 @@ In the mathematical fixed complete processor, the success likelihood has D_y log
 
 For a four-link based plaquette, a bounded fixed-size complete four-fresh-flag Julia word may also be embedded into a larger O(256) dilation and one Choi programme of dimension 256²=65536 (sixteen active binary digits), with success1/65536; alternatively four 32×32 programmes each have success1/1024, with an all-four-good rate 2^-40. Both are finite and independent of lattice spacing, but very different work and attempt budgets. The true native source must choose and price an ACTUAL experiment; none of these is free or forced by Book03.
 
+### 1.1. ALL-ORDER detector-source transport, not merely a programmable gate value
+
+Let rho_D(y) be any true trace-one original data density on the CAR16+flag 32-dimensional carrier (it may itself move, with its own preparation derivative). Denote by M_succ(y) the UNNORMALIZED density on the surviving B system after the EXACT fixed Bell rank-one outcome. The operator contraction above yields, WITHOUT approximating or selecting an input ray,
+
+    M_succ(y) = (1/1024) J(U(y)) rho_D(y) J(U(y))^T.
+
+For ANY actual downstream fixed original CAR/Julia POVM effect E, whose range is [0,I], the joint event probability is EXACTLY
+
+    q_(succ,E)(y)
+       = (1/1024) Tr[E J(U(y)) rho_D(y) J(U(y))^T],
+
+and the conditional observed probability after successful Bell is exactly
+
+    q_(E|succ)(y)
+       = Tr[E J(U(y)) rho_D(y) J(U(y))^T].
+
+Since Pr(succ)=1/1024 INDEPENDENT of all U(y),rho_D(y), the field derivative of the conditional probability is exactly the derivative of the original ideal full-Julia experiment. The JOINT first, second, third and every existing analytic finite-order source jet differ only by the KNOWN constant 1/1024; no artificially specified Lorentz-dependent normalization or additional scalar source is required FOR THIS CONDITIONAL OBSERVABLE.
+
+This is a general finite *observable/source compiler theorem*, valid for all 16 CAR grades and every moving correctly prepared input, not just at the flat generator source. It transports the already-owned full 16-event native-p positive 6-Lorentz decoding and its pretrace/closed phase witnesses to one FIXED processing scheme after successful programming. It DOES NOT transport the fundamental physical action: the actual whole history contains a 1023/1024 failure sector, costly preparation of |J(U(y))>>, native Book pressure/oldRIGHT and clock. A Book expectation, logdet or minimization over ALL outcomes can acquire a different first/second source from these retained terms. This is why the "one-programme" action theorem remains open even though its geometric detector source can be compiled exactly on a declared success class.
+
 ## 2. NEW exact Golden 3+3 metric of the GEOMETRIC PREPARATION SOURCE
 
 The programme is a normalized PURE state. Therefore its REAL quantum Fisher metric in coordinates of the original six Lorentz generators X_a=(N2,N3,barN2,barN3,J23,B) can be computed WITHOUT ANY fitted metric or action.
