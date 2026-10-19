@@ -2934,6 +2934,86 @@ for exact joint-critical sequences, with the #216 smooth branch evaluated on the
 
 The exact #232 period-four Y family is a curved nongauge joint vacuum at the flat metric. It rules out a universal claim that every zero-residual connection lies in one smooth/LC-like fiber. The response question is whether its stationary center can remain compatible with a genuinely curved metric background.
 
+#### Exact warped-lapse control for the uncorrected #232 field
+
+The exact local control `certificates/a4d_y232_warped_lapse_residual_check.py`
+replays the pinned #232 Cayley field on the fixed smooth metric samples
+`S_n=diag(N_n,1,1,1)` while keeping all four fast phases at one slow
+transverse site. With the flat #232 links left unchanged, all 16 solder
+Euler rows vanish, but the only nonzero connection rows are exactly
+
+\[
+E_{\omega_{2},J_{12}}=E_{\omega_{3},J_{13}}=N_{n-1}-N_n.
+\]
+
+The constant-lapse hostile control returns the exact #232 joint vacuum. For
+`N_n=N(hn)` on a smooth nonconstant positive lapse, the residual is
+`-h N'(hn)+O(h^2)` and is nonzero on an open set for generic curved profiles.
+This rejects the uncorrected flat-link substitution on a curved `Q_h`; it
+does not rule out a joint range/center correction, establish a response gap,
+or close either task terminal. The remaining finite-amplitude question is
+the nonlinear curved-background continuation of the #232 center with the
+uniform response comparison to #216.
+
+The same helper computes the exact first regular slow-order compatibility
+test at the flat-solder #232 point. Let `A0,Q0` be the period-four connection
+and metric blocks from the pinned `z=1` rational stencil, `A1,Q1` their first
+shift moments in the lapse direction, `T=(tY,tD)` the two exact connection
+center tangents, and `Dph` the 30 phase-difference rows of the metric output.
+The first-order unknowns are an arbitrary 96-component fast-cell range
+correction and both slow center slopes. For a phase-common prescribed source,
+the exact rational ranks are
+
+\[
+\operatorname{rank}\begin{pmatrix}A_0\\D_{ph}Q_0\end{pmatrix}=95,
+\quad
+\operatorname{rank}\left[\begin{pmatrix}A_0\\D_{ph}Q_0\end{pmatrix},
+\begin{pmatrix}A_1T\\D_{ph}Q_1T\end{pmatrix}\right]=97,
+\quad
+\operatorname{rank}[\cdots\mid b_{\rm lapse}]=98.
+\]
+
+An exact left-null row witness pairs with the normalized lapse forcing as
+`-220912187/1561479`. Thus no regular first-order phase-common lift cancels
+the mixed `epsilon*h*N'` forcing, even after both center slopes and every
+fast-cell range correction are allowed. This is a local perturbative
+compatibility obstruction, not an exact finite-lattice no-go: it assumes the
+regular first-order expansion and phase-common source at this order. It
+leaves nonregular exact roots, phase-dependent source jets, and any resulting
+normalized response gap open.
+
+The helper also checks actual nonzero Bloch frequencies without a slow Taylor
+truncation. For the sampled smooth lapse mode `N_n=1+epsilon*cos(2*pi*n/L)`,
+the exact first-variation system at each displayed root of unity has
+`rank(J_L)=96` and `rank([J_L|b_L])=97`, where `J_L` contains all connection
+equations and the 30 phase-difference metric equations. Reduction modulo the
+good prime `1000033`, with denominator `14` cleared and a root of exact order
+`L`, certifies this characteristic-zero inconsistency for
+`L=4,8,12,16,24,32,44,48,88,96,132,176,264,352,528,1056`; the conjugate Fourier
+mode has the same rank. The all-order certificate below removes the finite-list
+limitation for this same one-coordinate lapse family.
+
+An exact cyclotomic argument now covers every nonconstant periodic lapse mode
+in that coordinate. After clearing denominator `14` and multiplying rows by
+nonzero Laurent monomials, the augmented first-variation system is an integer
+polynomial matrix. The fixed minor on rows `0..96` has degree at most `141` and
+is nonzero; if it vanished at a primitive root of order `n`, then
+`phi(n)<=141`. The bound `phi(n)^2>=n/2` leaves only `268` candidate orders,
+with maximum `510`. A second fixed minor, on rows `0..94,96,97`, covers the
+orders where the first modular reduction is inconclusive. For each candidate
+order, a prime field containing a primitive `n`th root gives a nonzero
+determinant for at least one minor; the two inconclusive sets are respectively
+`{183,336}` and `{16,42,106}`, with no uncovered order. Since a characteristic-
+zero cyclotomic zero would reduce to zero in every such field, this certifies
+rank `96` for the correction system and augmented rank `97` for the source at
+every nonconstant root of unity. Thus no differentiable phase-common-source
+root branch passes through the flat #232 field for any periodic refinement in
+this one-coordinate lapse family. It still does not exclude disconnected or
+nonanalytic finite-amplitude roots, other lapse directions or phase-dependent
+source jets, and it supplies no normalized response gap; the #334 terminal
+remains open. Replay the [exact certificate](certificates/a4d_y232_warped_lapse_residual_check.py)
+with `python3 02_REGISTRY/research/certificates/a4d_y232_warped_lapse_residual_check.py`.
+
 The [quantitative pure-Y transport theorem](A4D_Y_PURE_CENTER_QUANTITATIVE_TRANSPORT.md)
 now derives a nonlinear gradient estimate directly from two literal boost
 Euler rows on each graph edge. It also reconstructs all 136 joint Euler rows
