@@ -199,3 +199,33 @@ The exact 6×6 is not merely asserted: a separate [six-scalar-phase native full 
 The original archived scalar Book entropy supplies the symmetric native Fisher Hessian, while (9) provides an **independent full six-direction phase-invariant detector response** on the original flagged CAR memory. The bare one-arm connection's non-exactness is not an obstruction to making (8) a single-valued local measured scalar. The complete real phase observable has an ordinary differential as a scalar on the three-record comparison chart, and all moving preparation components follow from the TRUE density derivative (7). The six scalar phase observables are **not** automatically six gradients of one and the same fundamental action; they are six independently calibrated measurement functions. A full-rank source/detector Jacobian establishes only observability/local inversion, never physical stationarity.
 
 Thus the remaining fundamental GR question has changed sharply. It is NOT whether a detector can see the six Lorentz components and order-curvature after properly accounting for failures and preparation; on this original mathematical Julia apparatus, it **can**. The single missing native selection theorem is whether D0's own complete executable/paid Book03 H+J+R/Cost−Info picks this same history-readout/clock/controller and whether its resultant **first source** matches the original all40+CAR stationary Palatini covector. Any attempt to reconstruct EH by simply adding the six phase functions, the scalar archive Fisher quadratic form and a chosen matter action would violate the same-history requirement and is not licensed by this result. \`GR_closed=false\`.
+
+
+## 7. The original whole-record phase REALLY produces a nonzero PREPARATION source, with no inserted cancellation
+
+For a particularly sharp direct control, change the original source preparation on the first comparison coordinate by the EXISTING native \(N_2\) Lorentz tangent before executing its own full Julia programme:
+\[
+\psi_\pm(a)=
+\frac{e^{aN_2}\psi_\pm(0)}
+{\|e^{aN_2}\psi_\pm(0)\|}.
+\tag{11}
+\]
+This is a mathematical moving one-particle input path in the original CAR16 grade-one chart, **not** a claim that native oldRIGHT physically allows arbitrary such a preparation. Keep every original GOOD and BAD outcome and use the SAME fully dephased density formula (3), replacing \(\psi_\pm(0)\) by \(\psi_\pm(a)\) at each changed vertex of the closed comparison.
+
+At the common base, \(D_a u_G\) now contains \(N_2\psi\) from the original Julia change **and another genuine normalized-preparation tangent**; \(D_a u_B\) contains the full Sylvester \(DF\psi\) plus the same preparation derivative. Horizontal covariance automatically discards the normalization/phase direction, with no fitted term.
+
+Direct differentiation gives the following EXACT change of the imaginary mixed cyclic source:
+\[
+\begin{array}{c|cc}
+&\psi_+&\psi_-\\\hline
+[ab]\Im\mathcal C\ \text{fixed input}
+&7/1152&11/1152\\
+\text{actual preparation-source addition}
+&-29/1152&-25/1152\\\hline
+[ab]\Im\mathcal C\ \text{moving input}
+&\boxed{-11/576}&\boxed{-7/576}
+\end{array}\tag{12}
+\]
+So the complete recorded-history observable gives an independently NONZERO preparation response automatically. In particular, silently freezing its original input would change the sign of the measured mixed source in BOTH detector lines. This verifies the user's suggested **criterion repair**: the preparation response should be tested after varying the WHOLE closed record, not demanded as an arbitrary extra exact one-form added to a bare gauge-dependent phase.
+
+The attached independently executed same-source checker now includes the full direct positive \(F(a,b)=\sqrt{I-T^\dagger T}\) at nonzero controls, true normalization of \(\psi_\pm(a)\), all dephased GOOD/BAD branch density blocks and \(h\to0\) finite-difference convergence to (12): 106 PASS groups. This verifies the finite mathematical original-carrier statement, **not** full native M1 prep admission or the physical full Book action. GR_closed=false.
