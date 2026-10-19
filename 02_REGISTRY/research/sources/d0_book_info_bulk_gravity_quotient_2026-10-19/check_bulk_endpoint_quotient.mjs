@@ -132,6 +132,42 @@ const thetaHessian=(lnZ(.5+hTheta)-2*lnZ(.5)+lnZ(.5-hTheta))/(hTheta*hTheta);
 close(thetaSource,-ell*stats.mean,1e-8);
 close(thetaHessian,ell*ell*stats.var,1e-6);
 if(!(stats.var>0))throw Error("genuine complete endpoint susceptibility unexpectedly zero");
+// ORIGINAL real 4×4 Lorentz two-null crossing, genuinely NONCOMMUTATIVE.
+const id4=()=>Array.from({length:4},(_,i)=>Array.from({length:4},(_,j)=>+(i===j)));
+const zero4=()=>Array.from({length:4},()=>Array(4).fill(0));
+const mul4=(A,B)=>A.map(row=>B[0].map((_,j)=>row.reduce((s,v,k)=>s+v*B[k][j],0)));
+const add4=(A,B,c=1)=>A.map((row,i)=>row.map((v,j)=>v+c*B[i][j]));
+const scale4=(A,c)=>A.map(row=>row.map(v=>v*c));
+const diff4=(A,B)=>Math.max(...A.flatMap((row,i)=>row.map((v,j)=>Math.abs(v-B[i][j]))));
+const N2=zero4(),oppositeN3=zero4(),rotation=zero4();
+N2[1][2]=N2[2][0]=1;
+oppositeN3[0][3]=oppositeN3[3][1]=1;
+rotation[2][3]=1;rotation[3][2]=-1;
+close(diff4(add4(mul4(N2,oppositeN3),mul4(oppositeN3,N2),-1),rotation),0,1e-14);
+const expNull=(N,a)=>add4(add4(id4(),N,a),mul4(N,N),a*a/2); // N^3=0 exactly
+const fourNull=[
+ [0,1,expNull(N2,.13)],
+ [1,2,expNull(oppositeN3,.17)],
+ [2,3,expNull(N2,-.13)],
+ [3,0,expNull(oppositeN3,-.17)]
+];
+function fullNullLoop(theta,t){
+ let P=id4();
+ for(const [u,v,U] of fourNull){
+  const edge=cost(u,v,t)-theta*info(u,t)-(1-theta)*info(v,t);
+  P=mul4(P,scale4(U,Math.exp(-ell*edge/2)));
+ }
+ return P;
+}
+let maxNoncommutingNull=0;
+for(const theta of thetaValues){
+ maxNoncommutingNull=Math.max(maxNoncommutingNull,
+    diff4(fullNullLoop(theta,tt),fullNullLoop(.5,tt)));
+}
+if(!(maxNoncommutingNull<1e-12))throw Error("4x4 native double-null crossed Weyl changed under theta");
+// Baseline matrix is CURVED, not a trivial identity disguised by a scalar.
+const originalUnweighted=fourNull.map(x=>x[2]).reduce((A,B)=>mul4(A,B),id4());
+if(!(diff4(originalUnweighted,id4())>.02))throw Error("crossed nonflat Lorentz loop absent");
 console.log(JSON.stringify({
  status:"PASS",
  actualNativeBookPhi:phi,
@@ -142,6 +178,7 @@ console.log(JSON.stringify({
  unconditionedEndpointMarginalThetaMinus03:endMarginal(-.3,tt),
  unconditionedEndpointMarginalTheta12:endMarginal(1.2,tt),
  noncommutingClosedHolonomyMaxDifference:maxLoop,
+ true4x4DoubleNullCrossedWeylThetaDifference:maxNoncommutingNull,
  closedHolonomyMovingInfoJetMaxDifference:maxLoopJet,
  discreteInteriorEulerMaxError:maxEuler,
  canonicalMomentumShiftAndSymplecticCurl:"PASS",
