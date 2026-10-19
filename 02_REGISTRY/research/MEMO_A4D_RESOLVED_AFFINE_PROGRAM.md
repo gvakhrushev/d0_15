@@ -24,7 +24,7 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.49](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.50](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
@@ -96,6 +96,17 @@ conditional base laws agree, but leaves `D H(pi)` for preparation changes.
 This does not show that the native decoder executes that branchwise query,
 that its full Book price is `H(Y,S)/log(phi)`, or that the compiled-path
 normalizer is identically one. Those remain part of the same-programme gate.
+
+Strategic §7.50 separates the capacity-vacuum argument from the CAR matter
+source already present in the complete exterior readout, then proves a
+scoped admission obstruction: every word in the owned one-way retained-record
+generators commutes with address translations, while a nontrivial
+address-controlled query does not. Thus `C_Y` preserves and copies the
+address but does not itself provide branch-to-active-query control. A native
+two-way/coherent actuator, or another same-source native query, is now the
+precise missing operation. The result is not a no-go for broader D0
+primitives; full Book binding, `DH(pi)`, preparation/observer/clock/work,
+old-history source and raw `#216` remain open.
 
 Strategic §7.48 identifies a more basic exponent boundary in that check:
 Book 03 treats \(\varphi^{-S}\) as a history probability weight but writes
